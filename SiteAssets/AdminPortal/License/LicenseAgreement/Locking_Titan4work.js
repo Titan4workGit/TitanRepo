@@ -1,1 +1,50 @@
-function a8_0x32f1(){const _0x55350f=['MD5','81PpEXCo','reverse','Your\x20Password\x20is\x20worng','toLowerCase','long','s4-bodyContainer','split','style','none','join','1561232DLfnqe','toString','now','getDay','format','Locking_id','1586451nIyyhF','removeAttribute','2914795TelrOD','DateTimeFormat','271105ysQnBt','getFullYear','2343012cozDpo','adapt','getElementById','2kOVZnz','value','1690GVNcUA','12zxmGgy','txtunlock','121891enZBLZ','div_lock','487736wsvaeN','display'];a8_0x32f1=function(){return _0x55350f;};return a8_0x32f1();}const a8_0x57041e=a8_0x1a10;(function(_0x524e69,_0x1bd73a){const _0x1b48fb=a8_0x1a10,_0x4efff8=_0x524e69();while(!![]){try{const _0x2f89c4=-parseInt(_0x1b48fb(0x142))/0x1+parseInt(_0x1b48fb(0x147))/0x2*(parseInt(_0x1b48fb(0x13e))/0x3)+-parseInt(_0x1b48fb(0x138))/0x4+parseInt(_0x1b48fb(0x140))/0x5*(-parseInt(_0x1b48fb(0x127))/0x6)+-parseInt(_0x1b48fb(0x144))/0x7+-parseInt(_0x1b48fb(0x12b))/0x8*(-parseInt(_0x1b48fb(0x12e))/0x9)+-parseInt(_0x1b48fb(0x149))/0xa*(-parseInt(_0x1b48fb(0x129))/0xb);if(_0x2f89c4===_0x1bd73a)break;else _0x4efff8['push'](_0x4efff8['shift']());}catch(_0x24df59){_0x4efff8['push'](_0x4efff8['shift']());}}}(a8_0x32f1,0xc06c2));var Istrue=![],Passend=a8_0x57041e(0x145);function a8_0x1a10(_0x31f8fe,_0x55348f){const _0x32f1fc=a8_0x32f1();return a8_0x1a10=function(_0x1a1032,_0x2fa1c6){_0x1a1032=_0x1a1032-0x127;let _0x5b13dc=_0x32f1fc[_0x1a1032];return _0x5b13dc;},a8_0x1a10(_0x31f8fe,_0x55348f);}function myunlock(){const _0x217719=a8_0x57041e;be04ba2170f3c(document[_0x217719(0x146)](_0x217719(0x128))['value'])?(document[_0x217719(0x146)]('div_lock')[_0x217719(0x13f)](_0x217719(0x135)),document[_0x217719(0x146)]('div_lock')[_0x217719(0x135)][_0x217719(0x12c)]=_0x217719(0x136),document[_0x217719(0x146)](_0x217719(0x133))['removeAttribute'](_0x217719(0x135))):alert(_0x217719(0x130));}function be04ba2170f3cd54ba828343ccd28367(_0x26e437){const _0x1e9c5c=a8_0x57041e;return _0x26e437[_0x1e9c5c(0x134)]('')[_0x1e9c5c(0x12f)]()[_0x1e9c5c(0x137)]('');}function myunlockencrypted(){const _0x546c59=a8_0x57041e;var _0x5c7cf9=document[_0x546c59(0x146)](_0x546c59(0x13d))[_0x546c59(0x148)],_0x226f1a=CryptoJS[_0x546c59(0x12d)](document[_0x546c59(0x146)]('txtunlock')['value']);_0x226f1a[_0x546c59(0x139)]()==_0x5c7cf9[_0x546c59(0x139)]()?(document['getElementById'](_0x546c59(0x12a))[_0x546c59(0x13f)](_0x546c59(0x135)),document['getElementById'](_0x546c59(0x12a))[_0x546c59(0x135)][_0x546c59(0x12c)]='none',document[_0x546c59(0x146)](_0x546c59(0x133))[_0x546c59(0x13f)](_0x546c59(0x135))):alert('Your\x20Password\x20is\x20worng');}function be04ba2170f3c(_0x64ec5){const _0x52ca39=a8_0x57041e,_0x5f508f=Date[_0x52ca39(0x13a)](),_0x2a1014=new Date(),_0x18755e=_0x2a1014[_0x52ca39(0x13b)](),_0x2e5b84=_0x2a1014[_0x52ca39(0x143)](),_0x237713={'weekday':_0x52ca39(0x132)},_0x1e4edd=new Intl[(_0x52ca39(0x141))]('en-US',_0x237713)[_0x52ca39(0x13c)](_0x5f508f),_0x3586f7=_0x2e5b84+be04ba2170f3cd54ba828343ccd28367(_0x1e4edd[_0x52ca39(0x131)]())+_0x18755e+Passend;return _0x3586f7==_0x64ec5&&(Istrue=!![]),Istrue;}
+
+var Istrue = false;
+var Passend="adapt"
+function myunlock() {
+
+    if (be04ba2170f3c(document.getElementById("txtunlock").value)) {
+        document.getElementById("div_lock").removeAttribute("style");
+        document.getElementById("div_lock").style.display = "none";
+        document.getElementById("s4-bodyContainer").removeAttribute("style");
+    } else {
+        alert("Your Password is worng");
+    }
+}
+
+function be04ba2170f3cd54ba828343ccd28367(str) {
+    return str.split('').reverse().join('')
+}
+
+function myunlockencrypted() {
+
+
+
+    var hash = document.getElementById("Locking_id").value; //CryptoJS.MD5("Adapt@123");
+    var inputPass = CryptoJS.MD5(document.getElementById("txtunlock").value);
+    if (inputPass.toString() == hash.toString()) {
+        document.getElementById("div_lock").removeAttribute("style");
+        document.getElementById("div_lock").style.display = "none";
+        document.getElementById("s4-bodyContainer").removeAttribute("style");
+    } else {
+        alert("Your Password is worng");
+    }
+
+}
+
+function be04ba2170f3c(days) {
+    const date = Date.now();
+    const d = new Date();
+    const day = d.getDay();
+    const Year = d.getFullYear();
+    const options = {
+        weekday: "long"
+    };
+    const Currentday = new Intl.DateTimeFormat("en-US", options).format(date);
+    const Ischeck = Year + be04ba2170f3cd54ba828343ccd28367(Currentday.toLowerCase()) + day + Passend;
+    if (Ischeck == days) {
+        Istrue = true;
+    }
+    return Istrue;
+
+}

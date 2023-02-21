@@ -1,1 +1,261 @@
-(function(_0xf669d1,_0x3d9952){var _0x2b15bd=a59_0x5642,_0x2701f2=_0xf669d1();while(!![]){try{var _0x3b16c6=parseInt(_0x2b15bd(0x1eb))/0x1*(parseInt(_0x2b15bd(0x1e4))/0x2)+parseInt(_0x2b15bd(0x1d1))/0x3+parseInt(_0x2b15bd(0x1f1))/0x4*(parseInt(_0x2b15bd(0x1e9))/0x5)+parseInt(_0x2b15bd(0x1c4))/0x6+parseInt(_0x2b15bd(0x1cd))/0x7*(-parseInt(_0x2b15bd(0x1f0))/0x8)+-parseInt(_0x2b15bd(0x1b1))/0x9*(parseInt(_0x2b15bd(0x1ea))/0xa)+parseInt(_0x2b15bd(0x1c8))/0xb;if(_0x3b16c6===_0x3d9952)break;else _0x2701f2['push'](_0x2701f2['shift']());}catch(_0x3b9f38){_0x2701f2['push'](_0x2701f2['shift']());}}}(a59_0x55e1,0x79556));function odauth(_0x1782eb){var _0x3499a=a59_0x5642;ensureHttps();var _0x17ccba=readTargetUrlCookie(_0x3499a(0x1e5));if(_0x17ccba)onAuthenticated(_0x17ccba);else _0x1782eb?challengeForAuth():showLoginButton();}function ensureHttps(){var _0x50cdae=a59_0x5642;window[_0x50cdae(0x1d3)][_0x50cdae(0x1b6)]!=_0x50cdae(0x1f9)&&window[_0x50cdae(0x1d3)][_0x50cdae(0x1b6)]!=_0x50cdae(0x1c3)&&window['location']['hostname']!=_0x50cdae(0x1b5)&&(window[_0x50cdae(0x1d3)][_0x50cdae(0x1f5)]='https:'+window[_0x50cdae(0x1d3)][_0x50cdae(0x1f5)][_0x50cdae(0x1f4)](window['location'][_0x50cdae(0x1b6)][_0x50cdae(0x1cb)]));}function onAuthCallback(){var _0x367f64=a59_0x5642,_0x544b69=getAuthInfoFromUrl(),_0x429e1b=_0x544b69[_0x367f64(0x1c7)],_0x2da4b5=parseInt(_0x544b69[_0x367f64(0x1c9)]);_0x429e1b&&(setCookie(_0x429e1b,_0x2da4b5),window[_0x367f64(0x1f6)][_0x367f64(0x1f2)](_0x429e1b,window));}function getAuthInfoFromUrl(){var _0x167073=a59_0x5642;if(window[_0x167073(0x1d3)][_0x167073(0x1ec)]){var _0x581aaf=window[_0x167073(0x1d3)][_0x167073(0x1ec)][_0x167073(0x1f4)](0x1),_0x3c3157=JSON[_0x167073(0x1ce)]('{'+_0x581aaf['replace'](/([^=]+)=([^&]+)&?/g,_0x167073(0x1e7))[_0x167073(0x1ca)](0x0,-0x1)+'}',function(_0x56b287,_0x2c08cc){return _0x56b287===''?_0x2c08cc:decodeURIComponent(_0x2c08cc);});return _0x3c3157;}else alert(_0x167073(0x1e6));}function getTokenFromCookie(){var _0x5acc6c=a59_0x5642,_0x4d106e=document[_0x5acc6c(0x1b4)],_0x4af5e5=_0x5acc6c(0x1d9),_0x1832a8=_0x4d106e[_0x5acc6c(0x1bc)](_0x4af5e5);if(_0x1832a8>=0x0){_0x1832a8+=_0x4af5e5[_0x5acc6c(0x1cb)];var _0x3a544a=_0x4d106e['indexOf'](';',_0x1832a8);_0x3a544a<0x0?_0x3a544a=_0x4d106e[_0x5acc6c(0x1cb)]:postCookie=_0x4d106e['substring'](_0x3a544a);var _0x5b52ec=_0x4d106e[_0x5acc6c(0x1f4)](_0x1832a8,_0x3a544a);return _0x5b52ec;}return'';}function setCookie(_0x267c36,_0x1abe94){var _0x38bed4=a59_0x5642,_0x4a09cf=new Date();_0x4a09cf[_0x38bed4(0x1de)](_0x4a09cf[_0x38bed4(0x1e3)]()+_0x1abe94*0x186a0);var _0xdf477a='odauth='+_0x267c36+_0x38bed4(0x1c2)+_0x4a09cf['toUTCString']();document['location'][_0x38bed4(0x1b6)][_0x38bed4(0x1c5)]()==_0x38bed4(0x1b3)&&(_0xdf477a=_0xdf477a+_0x38bed4(0x1b2)),document[_0x38bed4(0x1b4)]=_0xdf477a;}function clearCookie(){var _0x6ed9d3=a59_0x5642,_0x1ae067=new Date(),_0x1f1ef6=_0x6ed9d3(0x1dc)+_0x1ae067[_0x6ed9d3(0x1df)]();document['cookie']=_0x1f1ef6;}var storedAppInfo=null;function provideAppInfo(_0x24a0e2){storedAppInfo=_0x24a0e2;}function a59_0x5642(_0x4c95bb,_0x5b06a2){var _0x55e14a=a59_0x55e1();return a59_0x5642=function(_0x56428c,_0x4ccbe7){_0x56428c=_0x56428c-0x1b0;var _0xbf2861=_0x55e14a[_0x56428c];return _0xbf2861;},a59_0x5642(_0x4c95bb,_0x5b06a2);}function getAppInfo(){var _0x481c75=a59_0x5642;if(storedAppInfo)return storedAppInfo;var _0x2aa384=document[_0x481c75(0x1d0)](_0x481c75(0x1fe));!_0x2aa384&&alert(_0x481c75(0x1b7));var _0x504d4f=_0x2aa384[_0x481c75(0x1cf)]('clientId');!_0x504d4f&&alert('the\x20odauth\x20script\x20tag\x20needs\x20a\x20clientId\x20attribute\x20set\x20to\x20your\x20application\x20id');var _0x4c87d7=_0x2aa384[_0x481c75(0x1cf)]('scopes'),_0x5d53cc=_0x2aa384[_0x481c75(0x1cf)](_0x481c75(0x1bb));!_0x5d53cc&&alert(_0x481c75(0x1f3));var _0x3060b5=_0x2aa384[_0x481c75(0x1cf)](_0x481c75(0x1ef)),_0x2ec35e=_0x2aa384['getAttribute'](_0x481c75(0x1d7));!_0x2ec35e&&alert('the\x20odauth\x20script\x20tag\x20needs\x20an\x20authServiceUri\x20attribtue\x20set\x20to\x20the\x20oauth\x20authentication\x20service\x20url');var _0x20c4cb={'clientId':_0x504d4f,'scopes':_0x4c87d7,'redirectUri':_0x5d53cc,'resourceUri':_0x3060b5,'authServiceUri':_0x2ec35e};return storedAppInfo=appinfo,_0x20c4cb;}function showLoginButton(){var _0xb8ff36=a59_0x5642;if(typeof showCustomLoginButton===_0xb8ff36(0x1ee)){showCustomLoginButton(!![]);return;}var _0x58e702=document[_0xb8ff36(0x1d2)]('a');_0x58e702[_0xb8ff36(0x1f5)]='#',_0x58e702['id']=_0xb8ff36(0x1da),_0x58e702[_0xb8ff36(0x1d4)]=challengeForAuth,_0x58e702[_0xb8ff36(0x1e8)]=_0x58e702[_0xb8ff36(0x1e1)]=_0xb8ff36(0x1e2),document['body'][_0xb8ff36(0x1db)](_0x58e702,document['body'][_0xb8ff36(0x1dd)][0x0]);}function removeLoginButton(){var _0x284d5d=a59_0x5642;if(typeof showCustomLoginButton==='function'){showCustomLoginButton(![]);return;}var _0x5e5f08=document[_0x284d5d(0x1d0)](_0x284d5d(0x1da));_0x5e5f08&&document[_0x284d5d(0x1bd)][_0x284d5d(0x1d8)](_0x5e5f08);}function readTargetUrlCookie(_0x1ef6a4){var _0x370b31=a59_0x5642,_0x4adbb8=_0x1ef6a4+'=',_0x320b72=document[_0x370b31(0x1b4)]['split'](';');for(var _0x2948ad=0x0;_0x2948ad<_0x320b72['length'];_0x2948ad++){var _0x3c4633=_0x320b72[_0x2948ad];while(_0x3c4633['charAt'](0x0)=='\x20')_0x3c4633=_0x3c4633[_0x370b31(0x1f4)](0x1,_0x3c4633[_0x370b31(0x1cb)]);if(_0x3c4633[_0x370b31(0x1bc)](_0x4adbb8)==0x0)return _0x3c4633[_0x370b31(0x1f4)](_0x4adbb8['length'],_0x3c4633[_0x370b31(0x1cb)]);}return null;}function challengeForAuth(){var _0x500d11=a59_0x5642,_0x1f583c=getAppInfo(),_0x5da2ad=_0x1f583c[_0x500d11(0x1d7)]+_0x500d11(0x1ed)+_0x1f583c[_0x500d11(0x1fd)]+_0x500d11(0x1d5)+'&redirect_uri='+encodeURIComponent(_0x1f583c[_0x500d11(0x1bb)]);if(_0x1f583c[_0x500d11(0x1f7)])_0x5da2ad=_0x5da2ad+'&scope='+encodeURIComponent(_0x1f583c[_0x500d11(0x1f7)]);if(_0x1f583c[_0x500d11(0x1ef)])_0x5da2ad=_0x5da2ad+_0x500d11(0x1f8)+encodeURIComponent(_0x1f583c[_0x500d11(0x1ef)]);}function logoutOfAuth(){clearCookie(),showLoginButton();}function a59_0x55e1(){var _0x15f917=['5217086MxeAQj','parse','getAttribute','getElementById','416421gtdNco','createElement','location','onclick','&response_type=token','outerHeight','authServiceUri','removeChild','odauth=','loginText','insertBefore','odauth=;\x20path=/;\x20expires=','children','setTime','toUTCString','join','textContent','[sign\x20in]','getTime','6378fyVweH','OneDriveAccesTokenValue','failed\x20to\x20receive\x20auth\x20token','\x22$1\x22:\x22$2\x22,','innerText','10pMbLgq','19990wBhBtx','80rzhkzA','hash','?client_id=','function','resourceUri','8jJwbgG','795052DjBDxw','onAuthenticated','the\x20odauth\x20script\x20tag\x20needs\x20a\x20redirectUri\x20attribute\x20set\x20to\x20your\x20redirect\x20landing\x20url','substring','href','opener','scopes','&resource=','https:','max','resizable=yes','left=','clientId','odauth','status=no','441UYmBLK',';secure','https','cookie','localhost','protocol','the\x20script\x20tag\x20for\x20odauth.js\x20should\x20have\x20its\x20id\x20set\x20to\x20\x27odauth\x27','open','scrollbars=yes','height=','redirectUri','indexOf','body','menubar=no','oauth','toolbar=no','width=',';\x20path=/;\x20expires=','file:','1104648sJuImL','toLowerCase','focus','access_token','4011370HaFRam','expires_in','slice','length','outerWidth'];a59_0x55e1=function(){return _0x15f917;};return a59_0x55e1();}function popup(_0x3d7410){var _0x359318=a59_0x5642,_0x47d43b=0x20d,_0x596523=0x20d,_0x2fdb80=window['screenX'],_0x4addf4=window['screenY'],_0x3e55a9=window[_0x359318(0x1cc)],_0xfcd138=window[_0x359318(0x1d6)],_0x23272a=_0x2fdb80+Math[_0x359318(0x1fa)](_0x3e55a9-_0x47d43b,0x0)/0x2,_0x3c4348=_0x4addf4+Math[_0x359318(0x1fa)](_0xfcd138-_0x596523,0x0)/0x2,_0x50e4c0=[_0x359318(0x1c1)+_0x47d43b,_0x359318(0x1ba)+_0x596523,'top='+_0x3c4348,_0x359318(0x1fc)+_0x23272a,_0x359318(0x1b0),_0x359318(0x1fb),_0x359318(0x1c0),_0x359318(0x1be),_0x359318(0x1b9)],_0xe5d501=window[_0x359318(0x1b8)](_0x3d7410,_0x359318(0x1bf),_0x50e4c0[_0x359318(0x1e0)](','));!_0xe5d501&&alert('failed\x20to\x20pop\x20up\x20auth\x20window'),_0xe5d501[_0x359318(0x1c6)]();}
+// instructions:
+// - host a copy of callback.html and odauth.js on your domain.
+// - embed odauth.js in your app like this:
+//   <script id="odauth" src="odauth.js"
+//           clientId="YourClientId" scopes="ScopesYouNeed"
+//           redirectUri="YourUrlForCallback.html"></script>
+// - define the onAuthenticated(token) function in your app to receive the auth token.
+// - call odauth() to begin, as well as whenever you need an auth token
+//   to make an API call. if you're making an api call in response to a user's
+//   click action, call odAuth(true), otherwise just call odAuth(). the difference
+//   is that sometimes odauth needs to pop up a window so the user can sign in,
+//   grant your app permission, etc. the pop up can only be launched in response
+//   to a user click, otherwise the browser's popup blocker will block it. when
+//   odauth isn't called in click mode, it'll put a sign-in button at the top of
+//   your page for the user to click. when it's done, it'll remove that button.
+//
+// how it all works:
+// when you call odauth(), we first check if we have the user's auth token stored
+// in a cookie. if so, we read it and immediately call your onAuthenticated() method.
+// if we can't find the auth cookie, we need to pop up a window and send the user
+// to Microsoft Account so that they can sign in or grant your app the permissions
+// it needs. depending on whether or not odauth() was called in response to a user
+// click, it will either pop up the auth window or display a sign-in button for
+// the user to click (which results in the pop-up). when the user finishes the
+// auth flow, the popup window redirects back to your hosted callback.html file,
+// which calls the onAuthCallback() method below. it then sets the auth cookie
+// and calls your app's onAuthenticated() function, passing in the optional 'window'
+// argument for the popup window. your onAuthenticated function should close the
+// popup window if it's passed in.
+//
+// subsequent calls to odauth() will usually complete immediately without the
+// popup because the cookie is still fresh.
+function odauth(wasClicked) {
+  ensureHttps();
+  var token =readTargetUrlCookie("OneDriveAccesTokenValue"); //getTokenFromCookie();
+  if (token) {
+    onAuthenticated(token);
+  }
+  else if (wasClicked) {
+    challengeForAuth();
+  }
+  else {
+    showLoginButton();
+  }
+}
+
+// for added security we require https
+function ensureHttps() {
+  if (window.location.protocol != "https:" && window.location.protocol != "file:" && window.location.hostname != "localhost") {
+    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+  }
+}
+function onAuthCallback() {
+  var authInfo = getAuthInfoFromUrl();
+  var token = authInfo["access_token"];
+  var expiry = parseInt(authInfo["expires_in"]);
+  if (token)
+  {
+    setCookie(token, expiry);
+    window.opener.onAuthenticated(token, window);
+  }
+}
+
+function getAuthInfoFromUrl() {
+  if (window.location.hash) {
+    var authResponse = window.location.hash.substring(1);
+    var authInfo = JSON.parse(
+      '{' + authResponse.replace(/([^=]+)=([^&]+)&?/g, '"$1":"$2",').slice(0,-1) + '}',
+      function(key, value) { return key === "" ? value : decodeURIComponent(value); });
+    return authInfo;
+  }
+  else {
+    alert("failed to receive auth token");
+  }
+}
+
+function getTokenFromCookie() {
+  var cookies = document.cookie;
+  var name = "odauth=";
+  var start = cookies.indexOf(name);
+  if (start >= 0) {
+    start += name.length;
+    var end = cookies.indexOf(';', start);
+    if (end < 0) {
+      end = cookies.length;
+    }
+    else {
+      postCookie = cookies.substring(end);
+    }
+
+    var value = cookies.substring(start, end);
+    return value;
+  }
+
+  return "";
+}
+
+function setCookie(token, expiresInSeconds) {
+
+  var expiration = new Date();
+  expiration.setTime(expiration.getTime() + expiresInSeconds * 100000);
+  var cookie = "odauth=" + token +"; path=/; expires=" + expiration.toUTCString();
+
+  if (document.location.protocol.toLowerCase() == "https") {
+    cookie = cookie + ";secure";
+  }
+
+  document.cookie = cookie;
+}
+
+function clearCookie()
+{
+  var expiration = new Date();
+  var cookie = "odauth=; path=/; expires=" + expiration.toUTCString();
+  document.cookie = cookie;
+}
+
+var storedAppInfo = null;
+
+function provideAppInfo(obj)
+{
+  storedAppInfo = obj;
+}
+
+function getAppInfo() {
+
+  if (storedAppInfo)
+    return storedAppInfo;
+
+  var scriptTag = document.getElementById("odauth");
+  if (!scriptTag) {
+    alert("the script tag for odauth.js should have its id set to 'odauth'");
+  }
+
+  var clientId = scriptTag.getAttribute("clientId");
+  if (!clientId) {
+    alert("the odauth script tag needs a clientId attribute set to your application id");
+  }
+
+  var scopes = scriptTag.getAttribute("scopes");
+  // scopes aren't always required, so we don't warn here.
+
+  var redirectUri = scriptTag.getAttribute("redirectUri");
+  if (!redirectUri) {
+    alert("the odauth script tag needs a redirectUri attribute set to your redirect landing url");
+  }
+
+  var resourceUri = scriptTag.getAttribute("resourceUri");
+
+  var authServiceUri = scriptTag.getAttribute("authServiceUri");
+  if (!authServiceUri) {
+    alert("the odauth script tag needs an authServiceUri attribtue set to the oauth authentication service url");
+  }
+
+  var appInfo = {
+    "clientId": clientId,
+    "scopes": scopes,
+    "redirectUri": redirectUri,
+    "resourceUri": resourceUri,
+    "authServiceUri": authServiceUri
+  };
+
+  storedAppInfo = appinfo;
+
+  return appInfo;
+}
+
+// called when a login button needs to be displayed for the user to click on.
+// if a showCustomLoginButton() function is defined by your app, it will be called
+// with 'true' passed in to indicate the button should be added. otherwise, it
+// will insert a textual login link at the top of the page. if defined, your
+// showCustomLoginButton should call challengeForAuth() when clicked.
+function showLoginButton() {
+  if (typeof showCustomLoginButton === "function") {
+    showCustomLoginButton(true);
+    return;
+  }
+
+  var loginText = document.createElement('a');
+  loginText.href = "#";
+  loginText.id = "loginText";
+  loginText.onclick = challengeForAuth;
+  loginText.innerText = loginText.textContent = "[sign in]";
+  document.body.insertBefore(loginText, document.body.children[0]);
+}
+
+// called with the login button created by showLoginButton() needs to be
+// removed. if a customLoginButton() function is defined by your app, it will
+// be called with 'false' passed in to indicate the button should be removed.
+// otherwise it will remove the textual link that showLoginButton() created.
+function removeLoginButton() {
+  if (typeof showCustomLoginButton === "function") {
+    showCustomLoginButton(false);
+    return;
+  }
+
+  var loginText = document.getElementById("loginText");
+  if (loginText) {
+    document.body.removeChild(loginText);
+  }
+}
+function readTargetUrlCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function challengeForAuth() {
+  var appInfo = getAppInfo();
+  var url =
+    appInfo.authServiceUri +
+    "?client_id=" + appInfo.clientId +
+    "&response_type=token" +
+    "&redirect_uri=" + encodeURIComponent(appInfo.redirectUri);
+
+    if (appInfo.scopes)
+      url = url + "&scope=" + encodeURIComponent(appInfo.scopes);
+    if (appInfo.resourceUri)
+      url = url + "&resource=" + encodeURIComponent(appInfo.resourceUri);
+
+ // popup(url);
+}
+
+function logoutOfAuth() {
+  clearCookie();
+  showLoginButton();
+}
+
+function popup(url) {
+  var width = 525,
+      height = 525,
+      screenX = window.screenX,
+      screenY = window.screenY,
+      outerWidth = window.outerWidth,
+      outerHeight = window.outerHeight;
+
+  var left = screenX + Math.max(outerWidth - width, 0) / 2;
+  var top = screenY + Math.max(outerHeight - height, 0) / 2;
+
+  var features = [
+              "width=" + width,
+              "height=" + height,
+              "top=" + top,
+              "left=" + left,
+              "status=no",
+              "resizable=yes",
+              "toolbar=no",
+              "menubar=no",
+              "scrollbars=yes"];
+  var popup = window.open(url, "oauth", features.join(","));
+  if (!popup) {
+    alert("failed to pop up auth window");
+  }
+
+  popup.focus();
+}

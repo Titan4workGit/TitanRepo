@@ -67,54 +67,21 @@ text-overflow: ellipsis;
     width: 16px;
     height: 10px;
 }
-span.Approved {
+.colorlist li span.Approved {
     background-color: #299439;
 }
-span.Rejected {
+.colorlist li span.Rejected {
     background-color: #db4035;
 }
-span.Forwarded {
+.colorlist li span.Forwarded {
     background-color: #ff9933;
 }
-span.Initiated {
+.colorlist li span.Initiated {
     background-color: #14aaf5;
 }
 
-span.cancelled {
+.colorlist li span.cancelled {
     background-color: #333;
-}
-
-span.overdue{
-    background-color:#ffff08;
-}
-
-
-#export_pops .modal-footer{
- padding:10px;	
-}
-
-#export_pops .modal-dialog{
-  width:98%;
-  margin:5px auto;	
-}
-
-.countingrun.overdue,
-.countingrun.Initiated,
-.countingrun.Approved,
-.countingrun.Rejected,
-.countingrun.Forwarded,
-.countingrun.cancelled{
- background:transparent;
- font-size:15px !important;
- font-weight:600;	
-}
-
-#export_pops .modal-body{
- height: calc(100vh - 125px);	
-}
-
-.table-striped>tbody>tr:nth-child(odd)>td{
- border-bottom: 1px solid #d7d2d2;	
 }
 
 
@@ -127,9 +94,16 @@ span.overdue{
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5112</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">e01f52d0-0115-4d7e-b8db-e30d955484fd</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5112, ADMIN-1645029823-5112</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">511200.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-</head>
+<title></title></head>
 <body>
 
 <div class="container-fluid" style="padding:0 0;">
@@ -179,17 +153,8 @@ span.overdue{
 				        <a class="btn dropdown-toggle" type="button" onclick="ExportToExcel();">
 				            <img class="dashboard-icon-info mr2"
 				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
-				                data-themekey="#" style="min-width:24px; width:24px; opacity:0.8;">
-				            <span>Summarize Report</span>
-				        </a>
-				      </div>
-				      
-				      <div class="dropdown dashboard-table-btn" id="ExportFullBtnDiv" style="display:none">
-				        <a class="btn dropdown-toggle" type="button" onclick="ExportToExcelfull();">
-				            <img class="dashboard-icon-info mr2"
-				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
-				                data-themekey="#" style="min-width:24px; width:24px; opacity:0.8;">
-				            <span>Detail Report</span>
+				                data-themekey="#">
+				            <span>Export</span>
 				        </a>
 				      </div>
 				      
@@ -244,34 +209,26 @@ span.overdue{
 		    </div>
 		   	
 		   	<div class="total_requestbx">
-			   	<!------<div class="total_sects">
+			   	<div class="total_sects">
 			    	<span class="small_titles">Pending</span>
 			    	<div class="countingbox pendingbx">0</div>
-			    </div>------->
-			    
-			    <!----<div class="total_sects">
+			    </div>
+			    <div class="total_sects">
 			    	<span class="small_titles">Overdue</span>
 			    	<div class="countingbox overduebx">0</div>
-			    </div>------->
-			    
-			    <div class="colorListing_wth_val">
-  				  <ul>
-				   <li><span class="overdue"></span> Overdue <span class="countingbox overduebx overdue">0</span></li>
-				   <li><span class="Initiated"></span> Open <span class="countingrun Initiated">0</span></li>
-				   <li><span class="Approved"></span> Approved <span class="countingrun Approved">0</span></li>
-				  </ul>
-				
-				  <ul>
-				    <li><span class="Rejected"></span> Rejected <span class="countingrun Rejected">0</span></li>
-				    <li><span class="Forwarded"></span> Forwarded <span class="countingrun Forwarded">0</span></li>
-				    <li><span class="cancelled"></span> Cancelled <span class="countingrun cancelled">0</span></li>
-				 </ul>
-				</div><!----colist----->
-		    
+			    </div>
 		    </div>
 		    
 		    <div class="pieboxarea" style="position:relative">
 		    	<div id="pie"></div>
+		    	<ul class="colorlist">
+				  <li><span class="Approved"></span> Approved</li>
+				  <li><span class="Rejected"></span> Rejected</li>
+				  <li><span class="Forwarded"></span> Forwarded</li>
+				  <li><span class="Initiated"></span> Initiated</li>
+				  <li><span class="cancelled"></span> Cancelled</li>
+
+				</ul>
 		    </div>
 		</div><!---topsec--->
 		<!--<div class="form-group custom-form-group search-box" style="width:210px;">
@@ -286,9 +243,7 @@ span.overdue{
 		        
 		     </tbody>
 		    </table>
-		    
 		</div>
-		<div id="AssociateTableData"  class="table-responsive scrollbar-panel ajustingtable" style="margin-top:12px; display:none;"></div>
 		
 		<div class="total_items">
 		 <span>Total Items :</span> <span class="subtotals" id="TotalReq"></span>
@@ -462,39 +417,6 @@ span.overdue{
 <!-- process_action ed -->
 
 
-<!----- Export ---->
-
-<!-- Modal -->
-<div id="export_pops" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-	<!-- Modal content-->
-    	<div class="modal-content">
-      		<div class="modal-header">
-        		<button type="button" class="close close-round" data-dismiss="modal">
-        			<span class="close-icon">&times;</span>
-       			</button>
-        		<h4 class="modal-title" id="HeadTitle">Export</h4>
-      		</div>
-      		<div class="modal-body" id="ExpBody">
-      		
-        		<div class="container">
-  					<table class="table table-striped">
-    					<thead>    	  					
-    					</thead>
-    					<tbody>      					
-    					</tbody>
-  					</table>
-				</div>
-      		</div>
-      		<div class="modal-footer" style="text-align: center; margin-top: 5px;">      			
-				<a type="button" class="btn custom-btn" data-dismiss="modal">Close</a>
-				<a href="#" type="button" class="btn custom-btn" id="exportpopbtn">Export</a>
-      		</div>
-    	</div>
-  	</div>
-</div>
-
-<!----- Export ---->
 
 
   

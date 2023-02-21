@@ -1,1 +1,2339 @@
-function a12_0x2723(_0x4e1ff2,_0x763041){var _0x3de16c=a12_0x3de1();return a12_0x2723=function(_0x272383,_0x3cd44a){_0x272383=_0x272383-0x6e;var _0x59cbab=_0x3de16c[_0x272383];return _0x59cbab;},a12_0x2723(_0x4e1ff2,_0x763041);}var a12_0x23e28b=a12_0x2723;(function(_0x40fe4d,_0x506fd5){var _0x20f919=a12_0x2723,_0x2bba50=_0x40fe4d();while(!![]){try{var _0x3d5d2e=parseInt(_0x20f919(0xa1))/0x1*(-parseInt(_0x20f919(0x182))/0x2)+-parseInt(_0x20f919(0x206))/0x3+parseInt(_0x20f919(0xce))/0x4*(parseInt(_0x20f919(0x2d1))/0x5)+-parseInt(_0x20f919(0x1fe))/0x6+parseInt(_0x20f919(0x167))/0x7*(parseInt(_0x20f919(0x177))/0x8)+parseInt(_0x20f919(0x175))/0x9*(-parseInt(_0x20f919(0x1cd))/0xa)+-parseInt(_0x20f919(0x20a))/0xb*(-parseInt(_0x20f919(0x1de))/0xc);if(_0x3d5d2e===_0x506fd5)break;else _0x2bba50['push'](_0x2bba50['shift']());}catch(_0x1c3af6){_0x2bba50['push'](_0x2bba50['shift']());}}}(a12_0x3de1,0x400be),$(document)['ready'](function(){var _0x538079=a12_0x2723;$('#liManagement')[_0x538079(0x1e9)](function(){var _0x4faf1f=_0x538079;$(_0x4faf1f(0x127))['hide'](),$(_0x4faf1f(0x16d))['show']();}),$('#liDefination')['click'](function(){var _0x52f24d=_0x538079;$(_0x52f24d(0x127))[_0x52f24d(0x29f)](),$(_0x52f24d(0x16d))[_0x52f24d(0x251)]();}),$(_0x538079(0x22c))[_0x538079(0x164)](function(_0x716f92){var _0xd374df=_0x538079,_0x9128b8=new RegExp(_0xd374df(0x2cd)),_0x35d7e1=String[_0xd374df(0x12b)](!_0x716f92[_0xd374df(0x11e)]?_0x716f92[_0xd374df(0x19d)]:_0x716f92[_0xd374df(0x11e)]);if(_0x9128b8[_0xd374df(0x188)](_0x35d7e1))return!![];return _0x716f92[_0xd374df(0x27a)](),![];}),$('#txtTitle,#txtTemplate,#txtReqFor,#txtLabel,#txtTELabel,#txtHeader,#txtEHeader')[_0x538079(0x181)](function(_0x57b94a){var _0x21e993=_0x538079,_0x473a28=new RegExp(_0x21e993(0x275),'g'),_0x2e5768=String['fromCharCode'](!_0x57b94a[_0x21e993(0x11e)]?_0x57b94a[_0x21e993(0x19d)]:_0x57b94a[_0x21e993(0x11e)]),_0x22aa59=new String($(this)['val']()),_0x41900e='';if(_0x473a28[_0x21e993(0x188)](_0x2e5768))return!![];return _0x57b94a[_0x21e993(0x27a)](),![];});}));var procButtonStyle='';$(document)[a12_0x23e28b(0x216)](function(){var _0x9bb716=a12_0x23e28b,_0x31084e=_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=*,Contributors/Title,Department/DepartmentName,Department/ID&$expand=Contributors,Department&$filter=CompanyId\x20eq\x20\x27'+titanForWork[_0x9bb716(0x207)](_0x9bb716(0xd6))+_0x9bb716(0x1c3)+_spPageContextInfo[_0x9bb716(0x151)]+_0x9bb716(0x120);QueryResultProcessAdmin=getdata(_0x31084e),QueryResultProcessAdmin['length']==0x0&&(alert(_0x9bb716(0x17c)),window[_0x9bb716(0x88)][_0x9bb716(0x2bf)](_0x9bb716(0x11a))),$(_0x9bb716(0x2b9))[_0x9bb716(0x1e9)](function(){var _0x2bab3e=_0x9bb716;formula=_0x2bab3e(0x13b),$('.normalFormula')[_0x2bab3e(0x251)](),$(_0x2bab3e(0x91))['show']();var _0x534393=$(_0x2bab3e(0x171))[_0x2bab3e(0xd0)](),_0xf378b9=$(_0x2bab3e(0x132))[_0x2bab3e(0xd0)]();$(_0x2bab3e(0x1a0))[_0x2bab3e(0xd0)](_0x534393),$(_0x2bab3e(0xd7))[_0x2bab3e(0xd0)](_0xf378b9);}),$(_0x9bb716(0x10a))[_0x9bb716(0x1e9)](function(){var _0x511be4=_0x9bb716,_0x414fa7=$(_0x511be4(0x1ec))['val'](),_0x360d6c=$(_0x511be4(0x2a1))[_0x511be4(0xd0)]();if(_0x414fa7==''&&_0x360d6c==''){}else{formula=_0x511be4(0x13b),$(_0x511be4(0x2b0))[_0x511be4(0x251)](),$(_0x511be4(0x91))[_0x511be4(0x29f)]();var _0x414fa7=$('#txtFormula')[_0x511be4(0xd0)](),_0x360d6c=$(_0x511be4(0x2a1))[_0x511be4(0xd0)]();$('#txtDisFormula')['val'](_0x414fa7),$(_0x511be4(0xd7))[_0x511be4(0xd0)](_0x360d6c);}}),$(_0x9bb716(0x178)+DynamicId+'\x22]')['on'](_0x9bb716(0x1db),function(){var _0x22f01e=_0x9bb716;alert(_0x22f01e(0x1c6));}),$(_0x9bb716(0xf3))['on'](_0x9bb716(0x109),function(){var _0x1c07c9=_0x9bb716;$(_0x1c07c9(0x140))['prop'](_0x1c07c9(0x235),![]);}),$(_0x9bb716(0xcb))['on'](_0x9bb716(0x1db),function(){var _0x7ce790=_0x9bb716;if($(this)[_0x7ce790(0xd0)]()==_0x7ce790(0x281)&&$('#ddlColumn')[_0x7ce790(0x1f2)]()==_0x7ce790(0x13f)){var _0x14bc78='',_0x1b764b='',_0x4d8f76='';$('#txtNumMin')['val']()!=''&&(_0x14bc78=Math['trunc']($(_0x7ce790(0x16f))[_0x7ce790(0xd0)]())),$(_0x7ce790(0xfa))[_0x7ce790(0xd0)]()!=''&&(_0x1b764b=Math['trunc']($(_0x7ce790(0xfa))[_0x7ce790(0xd0)]())),$(_0x7ce790(0x1fb))[_0x7ce790(0xd0)]()!=''&&(_0x4d8f76=Math[_0x7ce790(0xa3)]($(_0x7ce790(0x1fb))[_0x7ce790(0xd0)]())),$(_0x7ce790(0x16f))['val'](_0x14bc78),$(_0x7ce790(0xfa))[_0x7ce790(0xd0)](_0x1b764b),$(_0x7ce790(0x1fb))[_0x7ce790(0xd0)](_0x4d8f76);}}),$(_0x9bb716(0xdb))['keyup'](function(){var _0xbeddfd=_0x9bb716;$(_0xbeddfd(0xcb))[_0xbeddfd(0xd0)]()==_0xbeddfd(0x281)&&($(this)[_0xbeddfd(0xd0)]()=='0'&&$(this)[_0xbeddfd(0xd0)](''),this['value'][_0xbeddfd(0x139)](/[^0-9]/g)&&(this[_0xbeddfd(0xcf)]=this[_0xbeddfd(0xcf)][_0xbeddfd(0x2bf)](/[^0-9]/g,'')));}),$('#ddlTENumVal')['on'](_0x9bb716(0x1db),function(){var _0x1b1f52=_0x9bb716;if($(this)['val']()==_0x1b1f52(0x281)&&$(_0x1b1f52(0x92))[_0x1b1f52(0xd0)]()==_0x1b1f52(0x13f)){var _0xa1c670='',_0x10b25b='',_0x2746bb='';$(_0x1b1f52(0x2ae))['val']()!=''&&(_0xa1c670=Math[_0x1b1f52(0xa3)]($(_0x1b1f52(0x2ae))['val']())),$(_0x1b1f52(0x29b))[_0x1b1f52(0xd0)]()!=''&&(_0x10b25b=Math['trunc']($(_0x1b1f52(0x29b))['val']())),$(_0x1b1f52(0x2a0))[_0x1b1f52(0xd0)]()!=''&&(_0x2746bb=Math[_0x1b1f52(0xa3)]($(_0x1b1f52(0x2a0))[_0x1b1f52(0xd0)]())),$(_0x1b1f52(0x2ae))['val'](_0xa1c670),$('#txtTENumMax')[_0x1b1f52(0xd0)](_0x10b25b),$('#numTEDefVal')[_0x1b1f52(0xd0)](_0x2746bb);}}),$(_0x9bb716(0x2ab))['keyup'](function(){var _0x44ff92=_0x9bb716;$(_0x44ff92(0x142))[_0x44ff92(0xd0)]()=='Integer'&&($(this)[_0x44ff92(0xd0)]()=='0'&&$(this)[_0x44ff92(0xd0)](''),this[_0x44ff92(0xcf)][_0x44ff92(0x139)](/[^0-9]/g)&&(this['value']=this[_0x44ff92(0xcf)][_0x44ff92(0x2bf)](/[^0-9]/g,'')));}),$(_0x9bb716(0x9a))[_0x9bb716(0xd5)]('disabled',!![]),$(_0x9bb716(0x267))['on'](_0x9bb716(0x1db),function(){var _0x20893d=_0x9bb716;if($(this)['val']()==_0x20893d(0x2c9)||$(this)[_0x20893d(0xd0)]()=='Manager')$(_0x20893d(0x9a))['val']('Single'),$('#ddlPersonValid')[_0x20893d(0xd5)](_0x20893d(0xbd),!![]);else{if($(this)['val']()==_0x20893d(0x107))$(_0x20893d(0x9a))[_0x20893d(0xd0)](_0x20893d(0xcc)),$(_0x20893d(0x9a))[_0x20893d(0xd5)](_0x20893d(0xbd),!![]);else $(this)['val']()=='Anyone'&&$(_0x20893d(0x9a))[_0x20893d(0xd5)](_0x20893d(0xbd),![]);}}),$(_0x9bb716(0x141))[_0x9bb716(0xd5)](_0x9bb716(0xbd),!![]),$(_0x9bb716(0x104))['on'](_0x9bb716(0x1db),function(){var _0x1d2651=_0x9bb716;if($(this)['val']()=='Initiator'||$(this)[_0x1d2651(0xd0)]()=='Manager')$('#ddlTEPersonValid')[_0x1d2651(0xd0)](_0x1d2651(0x85)),$(_0x1d2651(0x141))[_0x1d2651(0xd5)]('disabled',!![]);else{if($(this)[_0x1d2651(0xd0)]()=='HOD')$(_0x1d2651(0x141))[_0x1d2651(0xd0)](_0x1d2651(0xcc)),$(_0x1d2651(0x141))[_0x1d2651(0xd5)](_0x1d2651(0xbd),!![]);else $(this)[_0x1d2651(0xd0)]()==_0x1d2651(0x21e)&&$('#ddlTEPersonValid')[_0x1d2651(0xd5)]('disabled',![]);}}),$(_0x9bb716(0x241))['on']('change',function(){var _0x3aa2d3=_0x9bb716;if($(this)[_0x3aa2d3(0xd0)]()=='Any\x20Date')$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0x261)]({'max':'','min':''}),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd5)](_0x3aa2d3(0xbd),![]),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)]('');else{if($(this)[_0x3aa2d3(0xd0)]()==_0x3aa2d3(0x257))$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)](0x0),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd5)](_0x3aa2d3(0xbd),!![]),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0x261)]({'max':'','min':''});else{if($(this)['val']()==_0x3aa2d3(0x1ef))$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0x261)]({'max':-0x1,'min':''}),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd5)]('disabled',![]),$('#numDefVal')[_0x3aa2d3(0xd0)]('');else{if($(this)['val']()==_0x3aa2d3(0x226))$('#numDefVal')[_0x3aa2d3(0x261)]({'max':0x0,'min':'','value':''}),$('#numDefVal')[_0x3aa2d3(0xd5)](_0x3aa2d3(0xbd),![]),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)]('');else{if($(this)['val']()==_0x3aa2d3(0x215))$('#numDefVal')['attr']({'max':'','min':0x1}),$('#numDefVal')[_0x3aa2d3(0xd5)](_0x3aa2d3(0xbd),![]),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)]('');else $(this)[_0x3aa2d3(0xd0)]()==_0x3aa2d3(0x2aa)?($('#numDefVal')['attr']({'max':'','min':0x0}),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd5)](_0x3aa2d3(0xbd),![]),$(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)]('')):($(_0x3aa2d3(0x1fb))[_0x3aa2d3(0xd0)](''),$(_0x3aa2d3(0x1fb))['prop'](_0x3aa2d3(0xbd),![]));}}}}}),$('#ddlTEDateVal')['on'](_0x9bb716(0x1db),function(){var _0x29aecb=_0x9bb716;if($(this)[_0x29aecb(0xd0)]()==_0x29aecb(0xa6))$(_0x29aecb(0x2a0))[_0x29aecb(0x261)]({'max':'','min':''}),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)](_0x29aecb(0xbd),![]),$('#numTEDefVal')[_0x29aecb(0xd0)]('');else{if($(this)[_0x29aecb(0xd0)]()=='Today\x20Only')$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)](0x0),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)](_0x29aecb(0xbd),!![]),$('#numTEDefVal')[_0x29aecb(0x261)]({'max':'','min':''});else{if($(this)[_0x29aecb(0xd0)]()==_0x29aecb(0x1ef))$(_0x29aecb(0x2a0))[_0x29aecb(0x261)]({'max':-0x1,'min':''}),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)](_0x29aecb(0xbd),![]),$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)]('');else{if($(this)['val']()==_0x29aecb(0x226))$(_0x29aecb(0x2a0))['attr']({'max':0x0,'min':''}),$('#numTEDefVal')[_0x29aecb(0xd5)](_0x29aecb(0xbd),![]),$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)]('');else{if($(this)[_0x29aecb(0xd0)]()==_0x29aecb(0x215))$(_0x29aecb(0x2a0))[_0x29aecb(0x261)]({'max':'','min':0x1}),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)]('disabled',![]),$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)]('');else $(this)[_0x29aecb(0xd0)]()==_0x29aecb(0x2aa)?($(_0x29aecb(0x2a0))['attr']({'max':'','min':0x0}),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)]('disabled',![]),$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)]('')):($('#numTEDefVal')[_0x29aecb(0xd0)](''),$(_0x29aecb(0x2a0))[_0x29aecb(0xd5)](_0x29aecb(0xbd),![]),$(_0x29aecb(0x2a0))[_0x29aecb(0xd0)](''));}}}}});});function maxLengthCheck(_0x2807cd){var _0x546c51=a12_0x23e28b;if(_0x2807cd[_0x546c51(0xcf)][_0x546c51(0xf4)]('+')||_0x2807cd[_0x546c51(0xcf)][_0x546c51(0xf4)]('-')){if(_0x2807cd[_0x546c51(0xcf)]['length']>_0x2807cd[_0x546c51(0x244)]+0x1)_0x2807cd[_0x546c51(0xcf)]=_0x2807cd[_0x546c51(0xcf)][_0x546c51(0xe4)](0x0,_0x2807cd['maxLength']+0x1);}else{if(_0x2807cd[_0x546c51(0xcf)]['length']>_0x2807cd[_0x546c51(0x244)])_0x2807cd[_0x546c51(0xcf)]=_0x2807cd['value']['slice'](0x0,_0x2807cd[_0x546c51(0x244)]);}}function addNotedyanamic(){var _0x5ef9b4=a12_0x23e28b,_0x161fef=!![],_0x2c9bb3=_0x5ef9b4(0x222),_0x323118='',_0x530c13=quill[_0x5ef9b4(0x153)][_0x5ef9b4(0x97)]['innerHTML'];if($(_0x5ef9b4(0x110))['is'](':visible'))_0x323118=_0x5ef9b4(0x191),_0x2c9bb3=_0x5ef9b4(0x222),countFixedText++;else{if($(_0x5ef9b4(0x286))['is'](_0x5ef9b4(0x133))){_0x323118=_0x5ef9b4(0x2b1);var _0x3e260b=$(_0x5ef9b4(0x263))['find']('tbody\x20td.tdType')[_0x5ef9b4(0x1d1)](function(){var _0x5f4247=_0x5ef9b4;return $(this)[_0x5f4247(0x1f2)]()==_0x5f4247(0x155);}),_0x1289b8=_0x3e260b[_0x5ef9b4(0x7a)];_0x2c9bb3=_0x5ef9b4(0x222);}}if($(_0x5ef9b4(0x25f))[_0x5ef9b4(0xd0)]()=='')return _0x161fef=![],alert('Please\x20enter\x20sequence'),![];else{if($(_0x5ef9b4(0x1e5))[_0x5ef9b4(0xd0)]()=='')return _0x161fef=![],alert(_0x5ef9b4(0x296)),![];else{if(_0x530c13[_0x5ef9b4(0x7a)]<0x11)return _0x161fef=![],alert(_0x5ef9b4(0x2d4)),![];else{if($(_0x5ef9b4(0x12e))['val']()==''&&$(_0x5ef9b4(0x12e))['is'](':visible'))return _0x161fef=![],alert('Please\x20enter\x20Note'),![];else{var _0x3e260b=$('#'+_0x323118)[_0x5ef9b4(0x172)](_0x5ef9b4(0x137)),_0x4b3fc6=![];$(_0x3e260b)['each'](function(_0x384d62){var _0xa2a7a8=_0x5ef9b4,_0x3a3081=$(this)[_0xa2a7a8(0x172)]('td.tdLabel')[_0xa2a7a8(0x1f2)]();_0x3a3081==$(_0xa2a7a8(0x1e5))[_0xa2a7a8(0xd0)]()&&(_0x161fef=![],_0x4b3fc6=!![]);});if(_0x4b3fc6)return alert(_0x5ef9b4(0x2a9)),![];}}}}var _0x1a46d0=document[_0x5ef9b4(0x277)](_0x323118),_0x52b4b3=_0x1a46d0[_0x5ef9b4(0x118)]['length']-0x1,_0x2e21cd='',_0x180468=_0x5ef9b4(0x15b),_0x46171e='';_0x161fef&&($(_0x5ef9b4(0x83))[_0x5ef9b4(0x1f1)](_0x5ef9b4(0x251))[_0x5ef9b4(0x1d7)](_0x5ef9b4(0x8c),null),$(_0x5ef9b4(0x83))['on'](_0x5ef9b4(0x1f9),function(){}));var _0x30d73b='';$('#ddlDRWN')['is'](':visible')&&$(_0x5ef9b4(0x2d6))[_0x5ef9b4(0x1f2)]()==_0x5ef9b4(0xe8)?_0x30d73b=$(_0x5ef9b4(0x2d6))[_0x5ef9b4(0x1f2)]():_0x30d73b='';var _0x56efee='No',_0x48e46b=$(_0x5ef9b4(0x224))[_0x5ef9b4(0xd0)]();$(_0x5ef9b4(0x1ce))['is'](':visible')&&(_0x56efee=$(_0x5ef9b4(0x285))[_0x5ef9b4(0x1f2)]());var _0x2099ef='<tr>\x20<td\x20class=\x27tdColumn\x20d-none\x27>'+_0x2c9bb3+_0x5ef9b4(0x125)+_0x48e46b+_0x5ef9b4(0x2ac)+$(_0x5ef9b4(0x25f))[_0x5ef9b4(0xd0)]()+'</td>\x20<td\x20class=\x27tdLabel\x27>'+$(_0x5ef9b4(0x1e5))['val']()+_0x5ef9b4(0x2c3)+_0x56efee+_0x5ef9b4(0x1b0)+_0x46171e+'</td>\x20<td\x20class=\x27tdVal\x27>'+_0x180468+'</td>\x20<td\x20class=\x27tdDRWN\x27>'+_0x30d73b+_0x5ef9b4(0x26e)+_0x2e21cd+_0x5ef9b4(0x2d0)+_0x323118+')\x27\x20>\x20<i\x20class=\x27fa\x20fa-pencil\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#edit-Note-modal\x27></i></a><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20\x20tt\x27\x20onclick=\x27deleteRow(this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></td><td\x20style=\x27display:none;\x27>'+_0x530c13+_0x5ef9b4(0x1a2);$('#'+_0x323118+_0x5ef9b4(0x169))['append'](_0x2099ef);}$(a12_0x23e28b(0x83))['on']('hidden.bs.modal',function(){var _0x20acb1=a12_0x23e28b;if(![]);e[_0x20acb1(0x27a)]();var _0x361125=$(this);_0x361125['find'](_0x20acb1(0x212))[_0x20acb1(0xd0)]('');});function editNoteRow(_0x109ac4,_0x456e56){var _0x1febb5=a12_0x23e28b,_0xad3990='';if($('#new-process-modal')['is'](_0x1febb5(0x133)))_0xad3990='tblApTemp';else $(_0x1febb5(0x286))['is'](_0x1febb5(0x133))&&(_0xad3990=_0x1febb5(0x2b1));var _0x11a76f=_0x109ac4[_0x1febb5(0x1b6)][_0x1febb5(0x1b6)]['rowIndex'];$(_0x1febb5(0xc2))[_0x1febb5(0xd0)](_0x11a76f);var _0x530307=document[_0x1febb5(0x277)](_0x456e56['id'])[_0x1febb5(0x118)][_0x11a76f][_0x1febb5(0x19a)][0x1][_0x1febb5(0x124)],_0x15f3e1=document[_0x1febb5(0x277)](_0x456e56['id'])[_0x1febb5(0x118)][_0x11a76f][_0x1febb5(0x19a)][0x2][_0x1febb5(0x124)],_0x22acd0=document['getElementById'](_0x456e56['id'])[_0x1febb5(0x118)][_0x11a76f]['cells'][0xa]['innerHTML'],_0x45ddf5=document[_0x1febb5(0x277)](_0x456e56['id'])[_0x1febb5(0x118)][_0x11a76f][_0x1febb5(0x19a)][0x0][_0x1febb5(0x21b)][0x2][_0x1febb5(0xcf)];$('#txtENoteSqno')[_0x1febb5(0xd0)](_0x530307),$('#txtENoteLabel')[_0x1febb5(0xd0)](_0x15f3e1),$(_0x1febb5(0x21c)+_0x45ddf5+'\x27]')[_0x1febb5(0xd5)](_0x1febb5(0x235),!![]),quillE[_0x1febb5(0x153)]['firstChild']['innerHTML']=_0x22acd0;}function editNoteSubmit(_0x337c59){var _0x482a8d=a12_0x23e28b,_0x56b2b5='',_0x259f19=quillE[_0x482a8d(0x153)][_0x482a8d(0x97)][_0x482a8d(0x124)];if($(_0x482a8d(0x110))['is'](_0x482a8d(0x133)))_0x56b2b5=_0x482a8d(0x191);else $(_0x482a8d(0x286))['is'](_0x482a8d(0x133))&&(_0x56b2b5='tblEApTemp');var _0x3d1cbf=$(_0x482a8d(0x14c))[_0x482a8d(0xd0)](),_0x4d38b4=document[_0x482a8d(0x277)](_0x56b2b5),_0x5c419a=_0x337c59['value'];if($('#txtENoteSqno')[_0x482a8d(0xd0)]()=='')return alert('Please\x20enter\x20sequence'),![];else{if($(_0x482a8d(0x20b))[_0x482a8d(0xd0)]()=='')return alert(_0x482a8d(0x296)),![];else{if(_0x259f19[_0x482a8d(0x7a)]<=0x11)return flag=![],alert(_0x482a8d(0x2d4)),![];else{if(quillE['container']['firstChild'][_0x482a8d(0x124)]=='')return flag=![],alert('Please\x20enter\x20value\x20for\x20Fixed\x20Text'),![];else{var _0x3beb01=$('#'+_0x56b2b5)[_0x482a8d(0x172)](_0x482a8d(0x137))[_0x482a8d(0x1d1)](function(){var _0x3a5965=_0x482a8d;return $(this)[_0x3a5965(0x172)](_0x3a5965(0x8f))[_0x3a5965(0x1f2)]()==$(_0x3a5965(0x20b))[_0x3a5965(0xd0)]();});if(_0x3beb01[_0x482a8d(0x7a)]>0x1)return alert(_0x482a8d(0x2a9)),![];$(_0x482a8d(0x243))[_0x482a8d(0x1f1)](_0x482a8d(0x251))[_0x482a8d(0x1d7)](_0x482a8d(0x8c),null),$(_0x482a8d(0x243))['on']('hidden',function(){var _0x2522ee=_0x482a8d;$(this)[_0x2522ee(0x1d7)]('modal',null);});}}}}var _0x36a552=$(_0x482a8d(0x20b))[_0x482a8d(0xd0)](),_0x428026=$(_0x482a8d(0x75))[_0x482a8d(0xd0)](),_0x26fffe=$(_0x482a8d(0x84))[_0x482a8d(0xd0)]();_0x4d38b4['rows'][_0x5c419a][_0x482a8d(0x19a)][0x0][_0x482a8d(0x21b)][0x2][_0x482a8d(0xcf)]=_0x26fffe,_0x4d38b4[_0x482a8d(0x118)][_0x5c419a]['cells'][0x1]['innerHTML']=_0x428026,_0x4d38b4[_0x482a8d(0x118)][_0x5c419a]['cells'][0x2][_0x482a8d(0x124)]=_0x36a552,_0x4d38b4['rows'][_0x5c419a][_0x482a8d(0x19a)][0xa][_0x482a8d(0x124)]=_0x259f19['replace'](_0x482a8d(0x198),'');}function addHeaderdyanamic(){var _0x5022eb=a12_0x23e28b,_0xa36cf1='',_0x2d7a62='';if($('#new-process-modal')['is'](_0x5022eb(0x133))){_0xa36cf1=_0x5022eb(0x191);var _0x7ab97c=$(_0x5022eb(0xb9))[_0x5022eb(0x172)](_0x5022eb(0x8e))[_0x5022eb(0x1d1)](function(){var _0x320238=_0x5022eb;return $(this)[_0x320238(0x1f2)]()==_0x320238(0x1e4)||$(this)['text']()==_0x320238(0x2cb);});_0x2d7a62='Header';}else{if($(_0x5022eb(0x286))['is'](_0x5022eb(0x133))){_0xa36cf1=_0x5022eb(0x2b1);var _0x7ab97c=$(_0x5022eb(0x263))[_0x5022eb(0x172)](_0x5022eb(0x8e))[_0x5022eb(0x1d1)](function(){var _0x17ebd5=_0x5022eb;return $(this)['text']()==_0x17ebd5(0x1e4)||$(this)[_0x17ebd5(0x1f2)]()=='Text';});_0x2d7a62=_0x5022eb(0x1e4);}}var _0x170107=!![],_0x5404ae=document[_0x5022eb(0x277)](_0xa36cf1),_0x2e2231=_0x5404ae[_0x5022eb(0x118)]['length']-0x1,_0x154818='';if($('#txtHeaderSqno')[_0x5022eb(0xd0)]()=='')return _0x170107=![],alert(_0x5022eb(0xca)),![];else{if($(_0x5022eb(0x1e6))['val']()=='')return _0x170107=![],alert(_0x5022eb(0x297)),![];else{var _0x7ab97c=$('#'+_0xa36cf1)[_0x5022eb(0x172)]('tbody\x20tr'),_0x570fcf=![];$(_0x7ab97c)[_0x5022eb(0x13d)](function(_0x3d5ffb){var _0x349108=_0x5022eb,_0x556b2a=$(this)[_0x349108(0x172)](_0x349108(0x8f))[_0x349108(0x1f2)]();_0x556b2a==$(_0x349108(0x1e6))[_0x349108(0xd0)]()&&(_0x170107=![],_0x570fcf=!![]);});if(_0x570fcf)return alert('Duplicate\x20label'),![];}}var _0x42180d=_0x5022eb(0x15b),_0x55efd1='',_0x105abd=$('#txtNote')['val']();_0x170107&&($(_0x5022eb(0x1a3))[_0x5022eb(0x1f1)](_0x5022eb(0x251))[_0x5022eb(0x1d7)](_0x5022eb(0x8c),null),$('#new-Header-modal')['on'](_0x5022eb(0x1f9),function(){}));var _0xe5d984='';$(_0x5022eb(0x205))['is'](_0x5022eb(0x133))&&$(_0x5022eb(0x2d6))[_0x5022eb(0x1f2)]()==_0x5022eb(0xe8)?_0xe5d984=$('#ddlDRWN\x20:selected')[_0x5022eb(0x1f2)]():_0xe5d984='';var _0x280a35='No';$(_0x5022eb(0x1ce))['is'](_0x5022eb(0x133))&&(_0x280a35=$(_0x5022eb(0x285))['text']());var _0x2be9d='<tr>\x20<td\x20class=\x27tdColumn\x20d-none\x27>'+_0x2d7a62+'</td>\x20<td\x20class=\x27tdSqno\x27>'+$(_0x5022eb(0x21d))['val']()+_0x5022eb(0x233)+$(_0x5022eb(0x1e6))[_0x5022eb(0xd0)]()+_0x5022eb(0x161)+_0x280a35+'</td>\x20<td\x20class=\x27tdDefVal\x27>'+_0x55efd1+_0x5022eb(0xa2)+_0x42180d+_0x5022eb(0x266)+_0xe5d984+'</td>\x20<td\x20style=\x27display:none\x27>'+_0x154818+_0x5022eb(0x20f)+_0xa36cf1+_0x5022eb(0x145)+_0x105abd+'</td>\x20<td\x20style=\x27display:none;\x27></td><td\x20style=\x27display:none;\x27><input\x20type=\x27hidden\x27\x20class=\x27disFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27actualFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27personValidation\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27serialStartFrom\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27prefix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27sufix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMin\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMax\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numSuffix\x27\x20value=\x27\x27></td></tr>';$('#'+_0xa36cf1+_0x5022eb(0x169))[_0x5022eb(0xbf)](_0x2be9d);}$(a12_0x23e28b(0x1a3))['on'](a12_0x23e28b(0x109),function(_0xfc00){var _0x4fd581=a12_0x23e28b;if(![])_0xfc00[_0x4fd581(0x27a)]();var _0xbe4164=$(this);_0xbe4164[_0x4fd581(0x172)](_0x4fd581(0x136))[_0x4fd581(0xd0)]('');});function editHeaderRow(_0x17573b,_0x1a7b00){var _0x2037c5=a12_0x23e28b,_0x42fa85=_0x17573b['parentNode'][_0x2037c5(0x1b6)][_0x2037c5(0x1bf)];$(_0x2037c5(0x1b1))[_0x2037c5(0xd0)](_0x42fa85);var _0xc46ad7=document['getElementById'](_0x1a7b00['id'])['rows'][_0x42fa85][_0x2037c5(0x19a)][0x1][_0x2037c5(0x124)],_0x431acc=document[_0x2037c5(0x277)](_0x1a7b00['id'])['rows'][_0x42fa85][_0x2037c5(0x19a)][0x2][_0x2037c5(0x124)];$('#txtEHeaderSqno')[_0x2037c5(0xd0)](_0xc46ad7),$(_0x2037c5(0x77))[_0x2037c5(0xd0)](_0x431acc);}function editHeaderSubmit(_0x220c98){var _0x17fdfa=a12_0x23e28b,_0x270140=$(_0x17fdfa(0x14c))[_0x17fdfa(0xd0)](),_0x40655e='';if($(_0x17fdfa(0x110))['is'](_0x17fdfa(0x133)))_0x40655e='tblApTemp';else $(_0x17fdfa(0x286))['is'](':visible')&&(_0x40655e='tblEApTemp');var _0xd46f18=document[_0x17fdfa(0x277)](_0x40655e),_0x1a7a39=_0x220c98[_0x17fdfa(0xcf)];if($(_0x17fdfa(0x28c))[_0x17fdfa(0xd0)]()=='')return alert(_0x17fdfa(0xca)),![];else{if($(_0x17fdfa(0x77))[_0x17fdfa(0xd0)]()=='')return alert(_0x17fdfa(0x297)),![];else{var _0x5ec690=$('#'+_0x40655e)[_0x17fdfa(0x172)]('tbody\x20tr')[_0x17fdfa(0x1d1)](function(){var _0x17ec5e=_0x17fdfa;return $(this)[_0x17ec5e(0x172)]('td.tdLabel')[_0x17ec5e(0x1f2)]()==$(_0x17ec5e(0x77))[_0x17ec5e(0xd0)]();});if(_0x5ec690[_0x17fdfa(0x7a)]>0x1)return alert(_0x17fdfa(0x2a9)),![];$(_0x17fdfa(0x245))['modal'](_0x17fdfa(0x251))[_0x17fdfa(0x1d7)]('bs.modal',null),$(_0x17fdfa(0x245))['on'](_0x17fdfa(0x1f9),function(){var _0x37ce26=_0x17fdfa;$(this)[_0x37ce26(0x1d7)](_0x37ce26(0x1f1),null);});}}var _0x15a546=$(_0x17fdfa(0x77))[_0x17fdfa(0xd0)](),_0x5b5cd1=$(_0x17fdfa(0x28c))['val']();_0xd46f18[_0x17fdfa(0x118)][_0x1a7a39][_0x17fdfa(0x19a)][0x1]['innerHTML']=_0x5b5cd1,_0xd46f18['rows'][_0x1a7a39][_0x17fdfa(0x19a)][0x2]['innerHTML']=_0x15a546;}function a12_0x3de1(){var _0xe90017=['parentNode','PublishedOn','</div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-initFilt\x27\x20style=\x27display:none\x27>','#editTableRow','webAbsoluteUrl','#txtQRWebURL','options','LogonName','<option\x20value=','rowIndex','.modal-body\x20select.ColVal','Web\x20Link','QRCode','\x27\x20and\x20ContributorsId\x20eq\x20\x27','#ddlPorcFilt','</td>\x20<td\x20class=\x27tdType\x27>Table</td>\x20<td\x20class=\x27tdMand\x27>','People\x20Picker\x20Value\x20Changed','ariaPressed','#UpdateTempRow','td:eq(12)\x20:nth-child(1)','ddlOfficeFilt','td:eq(3)','\x27\x20class=\x27btn\x20btn-sm\x20btn-secondary\x20btn-toggle\x20','80kBvqXp','#ddlMand\x20','Column','Active','filter','removeClass','Created','Top','slide\x20slideN\x20image-active','#ddlColumn\x20:selected','data','\x20alt=\x22user\x22></div>','Edit','#ddlTextValid','change','#btnClearFilter','#divSelImg','60fxdHzl','#tblTableRow\x20tbody\x20tr','SPListName','#btnActive','empty','ddlClientFilt','Header','#txtNoteLabel','#txtHeader','DueDate','trial','click','</a></div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-1\x20sortTempName\x27>','.filterOffice','#txtFormula','Value','#txtValidDate','Past\x20Date','Steps','modal','text','defaultselect','#secEDrdn','td:eq(1)\x20select','stringify','trim','Please\x20enter\x20Label','hidden','Active(Trial)','#numDefVal','null','td:eq(1)\x20input','242682fQxZAZ','.optNotTable','get_stackTrace','#optCal','Char\x20Limit','AttachmentFiles','87px','#ddlDRWN','17841UFiZxy','getQueryStringParameter','NumberValidation','label','858077QQrJCU','#txtENoteLabel','ApprovalTemplateTable','.coverbox_fullTE','#txtThm','\x20</td><td\x20class=\x27approval-process-edit-lock-btn-box\x27><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20tt\x27\x20onclick=\x27editHeaderRow(this,','td.tdType','input:eq(1)','.modal-body\x20#txtNoteLabel,#txtNote','.slideN\x20img','\x20type\x20Column.','Future\x20Date','ready','.btnDef','#txtTemplate','block','#optSumm','children','input[name=optnoteradiosE][value=\x27','#txtHeaderSqno','Anyone','#ddlTEColumn\x20:selected','#ddlIniFilt','reverse','Note','spnPreocessOwner_TopSpan','input[name=\x27optnoteradios\x27]:checked','#bindTblData\x20.tdSqno','Past\x20Date\x20included\x20Today','selectedIndex','Given\x20Values','Under\x20Trial','LastName','#documentapprovalsec','#txtStepName','Trial\x20Expired','td:eq(0)','Custom','.filterDept','ThemeColor','MERGE','</td>\x20<td\x20class=\x27tdLabel\x27>','</td>\x20</tr>','checked','Sequence','#txtTableSqno','input[name=QRWeb][value=\x27Top\x27]','OfficeLocation','#Tab-Documents-Btn','allTemplateData','getAttribute','Inactive','<tr>\x20<td\x20class=\x27w-7\x27>\x20<img\x20src=\x27','\x20and\x20ColumnType\x20eq\x20\x27Table\x27','EMail','#ddlDateVal','#blah','#edit-Note-modal','maxLength','#edit-Header-modal','td:eq(1)','done','input[type=radio][name=QRWeb]','NumberOfRequest_Active','#secTEDrdn,.optionBoxTE,.drOptTypeTE','activate','#secTEDrdn','#txtStatus','</div><div\x20class=\x27table-title-pera\x20ellipsis-initFilt\x27\x20style=\x27display:none\x27>','application/json;odata=verbose','#edit-Table-modal','hide','css','(\x5c:\x5cd+)?(\x5c/[-a-z\x5cd%_.~+]*)*','closest','#tmpName','getItemById','Today\x20Only','<div\x20class=\x22groups-card-body\x22><div\x20class=\x22groups-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22member-name\x20text-ellipsis\x22>','Initiation','toggle','</table>','td:eq(1)\x20div.ellipsis-initFilt','#txtTableSqno,#txtSqno,#txtNoteSqno,#txtHeaderSqno','#totalFlag','#txtNoteSqno','\x27\x20alt=\x27process\x27\x20class=\x27table-icon-box\x27>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27table-title\x20mb10\x20ellipsis-2\x20sortProcName\x27><a\x20href=\x27#\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#new_Procesing_tbs\x27\x20onclick=\x27showMngtTab(','attr','</div>\x20</td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27approval-process-edit-lock-btn-box\x27\x20style=\x27display:none\x27>\x20<input\x20type=\x27hidden\x27\x20value=\x27','#tblEApTemp','SummarizedValue','Error\x20in\x20getdata.','</td>\x20<td\x20class=\x27tdDRWN\x27>','#ddlPerson','0px','ddlGroupFilt','#editTableCol','<tr>\x20<td\x20class=\x27tdColumn\x20d-none\x27>','td.tdColumn','tagName','</td>\x20<td\x20style=\x27display:none\x27>','#333','\x20</td><td\x20class=\x27approval-process-edit-lock-btn-box\x27><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20tt\x27\x20onclick=\x27editQRWebRow(this,','td:eq(1)\x20div.ellipsis-2','get','QR\x20Code','You\x20exeed\x20maximum\x20limit\x20of\x20','[a-z,A-Z,0-9,_,@,(,),[,\x5c],{,},#,\x20$,&,\x27\x20,.,\x20\x20;,\x20\x20?\x20,\x20%\x20]','This\x20process\x20has\x20been\x20activated\x20as\x20an\x20Trial.','getElementById','get_lists','split','preventDefault','ColumnName','Modified','FileIcon','Expired','#tblTableRow\x20tbody','#secDrdn,.optionBox,.drOptType','Integer','td\x20input.actualFormula','Live','#txtSqno','#ddlMand\x20:selected','#edit-process-modal','Please\x20insert\x20atleast\x20one\x20column.','#txtRunReq','\x27)/items','DefaultValue','Formula','#txtEHeaderSqno','.bindCol\x20option:contains(\x27','Appearance','</td>\x20<td\x20class=\x27tdSqno\x27>','?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email\x20eq\x20\x27','</h3>','log','#docProcessData\x20tbody','SPListFilter','input[name=\x27QRWeb\x27]:checked','Please\x20enter\x20label','Please\x20enter\x20Header','PublishedBy','SELECT','getDate','#txtTENumMax','#txtTECharLimit','#bindTblData\x20tbody\x20tr','aria-pressed','show','#numTEDefVal','#actualFormula',')\x27\x20>\x20<div\x20class=\x27handle\x27></div>\x20</button><div\x20class=\x27\x27></div>\x20</td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27approval-process-edit-lock-btn-box\x27>\x20<a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#documentapproval\x27\x20onclick=\x27getDocToEdit(','#txtInstruct','#txtCharLimit','Template\x20activated','td:eq(12)\x20:nth-child(14)','DateValidation','SPListColumn','Duplicate\x20label','Future\x20Date\x20included\x20Today','#txtTENumMin,#txtTENumMax,#numTEDefVal','\x27></td>\x20<td\x20class=\x27tdSqno\x27>','ClientMaster','#txtTENumMin','Group','.normalFormula','tblEApTemp','Please\x20enter\x20QR\x20Code','querySelectorAll','</td>\x20<td\x20class=\x27tdType\x27>',')\x27\x20>\x20<div\x20class=\x27handle\x27></div>\x20</button>\x20<div\x20class=\x27\x27></div></td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27approval-process-edit-lock-btn-box\x27\x20style=\x27display:none\x27>\x20<input\x20type=\x27hidden\x27\x20value=\x27','txtEFormula','^(https?:\x5c/\x5c/)?','td:eq(12)\x20:nth-child(17)','#spTEFormula','toLowerCase','.modal-body\x20select','td:eq(7)','#txtQRWebSqno','Office','replace','TrialStatus','#txtETableLabel','/_layouts/15/userphoto.aspx?accountname=','</td>\x20<td\x20class=\x27tdType\x27>FixedText</td>\x20<td\x20class=\x27tdMand\x27>','ListItemCreationInformation','100','/_api/web/lists/getbytitle(\x27ApprovalProcessMaster\x27)/getItemById(','Trial\x20till\x20',',this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></div>\x20</td><td\x20style=\x27display:none\x27>','Initiator','Please\x20select\x20column','Text','td:eq(8)','^[a-zA-Z0-9@\x20[\x5c]\x20(\x20)\x20_\x20{\x20}]*$','get_message','.filterOffice,.filterClient,.filterGroup','\x20</td><td\x20class=\x27approval-process-edit-lock-btn-box\x27><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20tt\x27\x20onclick=\x27editNoteRow(this,','25qUZiyd','themeselect','Title','Please\x20enter\x20minimum\x2010\x20characters','TemplateName','#ddlDRWN\x20:selected','#ddlOfficeFilt\x20option:selected','MinNumber','GuestClient','\x22,\x22','</div>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27ellipsis-3\x27>Document\x20Approval</div>\x20</td>\x20<td\x20class=\x27w-10\x27><div\x20class=\x27table-title-pera\x20ellipsis-Initiation\x27>Initiator\x20:<a\x20data-toggle=\x27modal\x27\x20href=\x27#\x27\x20data-target=\x27#stepsapprover\x27\x20onclick=\x27getTempID(','className','#ddlTETextValid','#secDrdn','d-none','toString','.filterClient','\x20getComp\x22></select><input\x20type=\x22number\x22\x20style=\x22display:none\x22\x20class=\x22form-control\x20getComp\x22></div></td></tr></tr>','map','none','#tblFormula','.bindCol','#txtENoteSqno','#secEDrdn,.optionBoxE','#txtEHeader','option:selected','SequenceNo','length','.customselect','input[name=themopts][value=\x27','NeedTotal','\x22)\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#activation\x27>\x20<div\x20class=\x27handle\x27></div>\x20</button><div\x20class=\x27\x27>',')\x27\x20>\x20<i\x20class=\x27fa\x20fa-pencil\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#edit-Table-modal\x27></i></a><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20\x20tt\x27\x20onclick=\x27deleteRow(this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></td><td\x20style=\x27display:none;\x27\x20id=\x27\x27>','</option>','#ddlPorcFilt\x20option:selected','<option>Select</option>','#new-Note-modal','input[name=\x27optnoteradiosE\x27]:checked','Single','d-block','PersonValidation','location','#Tab-Process-Btn','</td>\x20<td\x20class=\x27tdMand\x27>','#processapproval','bs.modal','<p\x20class=\x22member-email\x20text-ellipsis\x22><a\x20href=\x22mailto:','tbody\x20td.tdType','td.tdLabel','#add-formula-modal','.advanceFormula','#ddlTEColumn','td:eq(12)\x20:nth-child(7)','max','/_api/web/lists/getbytitle(\x27ApprovalTemplateSetup\x27)/getItemById(\x27','Departments','firstChild','#addENew','#tmpIcon','#ddlPersonValid','#ddlReqFor\x20option','SetupID','#addTableCol','#txtPublishOn','#txtQRWeb','.modal-body\x20input','2LXWtDm','</td>\x20<td\x20class=\x27tdVal\x27>','trunc','Licence\x20not\x20available.!!','Default','Any\x20Date','</div>\x20</td>\x20<td\x20class=\x27w-10\x27><div\x20class=\x27table-title-pera\x20ellipsis-Initiation\x27>Initiator\x20:<a\x20data-toggle=\x27modal\x27\x20href=\x27#\x27\x20data-target=\x27#stepsapprover\x27\x20onclick=\x27getTempID(','#liDefination','getMonth','NumberOfSteps','SP.Data.ApprovalTemplateSetupListItem','some','GET','<div\x20class=\x22col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22groups-card\x22><div\x20class=\x22groups-card-head\x22><img\x20src=','Checkbox','Table','td:eq(4)','FormulaDispaly','PATCH','Instructions','rgb(84,\x20141,\x20203)','</div>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27ellipsis-3\x27>','input[name=QRWeb][value=\x27Sequence\x27]','</div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-1\x20sortTempName\x27>','#tblApTemp','td:eq(12)\x20:nth-child(8)','remove','#submitFormula','disabled','/_api/web/lists/getbytitle(\x27ApprovalTemplateSetup\x27)/items?$filter=TemplateID/ID\x20eq\x20\x27','append','parentElement','td:eq(6)','#editNoteRow','\x27\x20aria-pressed=\x27','false','.filterGroup','.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept','#QR-WeblinkHeading','results','ProcessOwnerId','Please\x20enter\x20sequence','#ddlNumVal','Multiple','#ddlClientFilt\x20option:selected','369940JHzubr','value','val','.coverbox_full','WebLink','#txtDetails','Template\x20deactivated','prop','CompanyId','#txtActFormula','#newDocProcess','LoginName','re-trial','#txtNumMin,#txtNumMax,#numDefVal','.filterDept,.filterClient,.filterOffice','focus','\x20Steps</a></div></td>\x20\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27ellipsis-2\x20\x27><span\x20class=\x27sortMaxReq\x27>','#ddlDeptFilt\x20option:selected','Process','getFullYear','#ddlStatusFilt','.modal-body\x20input.getComp,.advanceFormula','slice','Guest\x20User','ApproversGroups','#addCol','Yes','</a></div><div\x20class=\x27table-title-pera\x20ellipsis-Init\x27>Steps\x20:<a\x20class=\x27add-column-btn\x27\x20data-toggle=\x27modal\x27\x20href=\x27#\x27\x20data-target=\x27#stepsapprover\x27\x20onclick=\x27getTempID(','</div></div></div>','sort','\x20,\x22','tr:gt(2)','#txtETableSqno','?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20LogonName/EMail\x20eq\x20\x27','#btnAddQRWeb','\x27\x20autocomplete=\x27off\x27\x20onclick=\x27UpdateListItem1(','\x27\x20/>\x20<a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x27\x20onclick=\x27deletetemp(','#activation','includes','keyup',')\x27>\x20<i\x20class=\x27fa\x20fa-pencil\x27></i>\x20</a><input\x20type=\x27hidden\x27\x20value=\x27','SPListSortColumn','#__REQUESTDIGEST','#ddlReqFor','#txtNumMax','\x27\x20\x20aria-pressed=\x27','ExternalUsers','PublishedById','#btnUpdateAPM','txtPublishBy_TopSpan','((([a-z\x5cd]([a-z\x5cd-]*[a-z\x5cd])*)\x5c.)+[a-z]{2,}|','#txtPre','<tr><td></td><td><div\x20class=\x22form-group\x20custom-form-group\x22><select\x20class=\x22form-control\x20getComp\x22><option\x20value=\x22+\x22>+</option><option\x20value=\x22-\x22>-</option><option\x20value=\x22*\x22>*</option><option\x20value=\x22/\x22>/</option><option\x20value=\x22%\x22>%</option></select></div></td><tr><td><div\x20class=\x22form-group\x20custom-form-group\x22><select\x20class=\x22form-control\x20ColVal\x22><option\x20value=\x22Column\x22>Column</option><option\x20value=\x22Value\x22>Value</option></select></div></td><td><div\x20class=\x22form-group\x20custom-form-group\x22><select\x20class=\x22form-control\x20bindCol','ProcessType','#ddlTEPerson','.getComp:visible','#ddlETextValid','HOD','td:eq(12)\x20:nth-child(13)','hidden.bs.modal','#spFormula','TrialDate','<option\x20value=\x27\x27>Select</option>','#updateTableRow','#txtCustomThm','#ddlGroupFilt\x20option:selected','#new-process-modal','#newProcess','(\x5c#[-a-z\x5cd_]*)?$','<tr>\x20<td\x20class=\x27w-7\x27>\x20<img\x20src=\x27https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png\x27\x20alt=\x27document\x27\x20class=\x27table-icon-box\x27>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27table-title\x20mb10\x20ellipsis-2\x20sortProcName\x27>','</div>\x20\x20</td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27approval-process-edit-lock-btn-box\x27>\x20<a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#edit-process-modal\x27\x20onclick=\x27getDataToEdit(','</td><td\x20style=\x27display:none;\x27></td><td\x20style=\x27display:none;\x27><input\x20type=\x27hidden\x27\x20class=\x27disFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27actualFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27personValidation\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27serialStartFrom\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27prefix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27sufix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMin\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMax\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numSuffix\x27\x20value=\x27\x27></td>\x20</tr>','td:eq(2)','input[name=UpdateEmpN][value=\x27Upload\x27]','rows','select.ColVal','approvals.aspx','Licenced','</a></p></div>','#defination_tab,.btnDef','charCode','Department','\x27\x20and\x20(WebPartName\x20eq\x20\x27Process\x20Admin\x27)','TextValidation','executeQueryAsync','Client','innerHTML','<input\x20type=\x27hidden\x27><input\x20type=\x27hidden\x27><input\x20type=\x27hidden\x27\x20value=\x27','#Upload-user-imageN','#defination_tab','Theme','format','#QR-WeblinkStat','fromCharCode','\x20tr','#txtLabel,#txtTELabel','#txtFixedText','Please\x20enter\x20formula','Employee','ServerRelativeUrl','#actualTEFormula',':visible','#txtCharLimit,.coverbox_full','slide\x20slideN','.modal-body\x20#txtHeader','tbody\x20tr','td:eq(12)\x20:nth-child(16)','match','#ddlIniFilt\x20option:selected','AdvFormula','min','each','New','Number','input:radio[name=\x27active_option\x27]','#ddlTEPersonValid','#ddlTENumVal','active\x20blue_active','Link',')\x27\x20>\x20<i\x20class=\x27fa\x20fa-pencil\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#edit-Header-modal\x27></i></a><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20\x20tt\x27\x20onclick=\x27deleteRow(this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></td><td\x20style=\x27display:none;\x27>','</span>\x20Total\x20Requests</div>\x20<div\x20class=\x27ellipsis-2\x20sortMaxActReq\x27>','#chkReqFor','</span>\x20Total\x20Requests</div>\x20<div\x20class=\x27ellipsis-2\x20sortMaxActReq\x27>\x20','#txtPublishBy','RequestFor','/_api/lists/getbytitle(\x27ApprovalProcessMaster\x27)/getItemById(','#tblEditRow','</li>','#addNewTE\x20li','#liManagement','update','userId','addClass','container','#bindTbls','FixedText','{0:yyyy}-{0:MM}-{0:dd}','Request\x20failed.\x20','NumberOfRequest','.stepprev','Document','<label\x20for=\x27Text\x27>No</label>',')\x27\x20>\x20<i\x20class=\x27fa\x20fa-pencil\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#new-QR-Weblink-modal\x27></i></a><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20\x20tt\x27\x20onclick=\x27deleteRow(this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></td><td\x20style=\x27display:none;\x27>','#tblFilter','\x20Steps</a></div></td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27ellipsis-2\x20\x27><span\x20class=\x27sortMaxReq\x27>','\x22\x20,\x22','true','</td>\x20<td\x20class=\x27tdType\x27>Header</td>\x20<td\x20class=\x27tdMand\x27>','#txtReqFor','#txtTableLabel','keypress','Temp','.modal-body\x20#tblTableRow\x20tbody','1653414aexgOI','MaxNumber','\x20tbody','#tblId','</div></td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27ellipsis-3\x27>','addItem','#Management_tab','Select','#txtNumMin','input[name=QRWeb][value=\x27Bottom\x27]','#txtTEFormula','find','\x20Active\x20Requests</div>\x20</td><td\x20class=\x27w-10\x27>\x20<button\x20type=\x27button\x27\x20value=\x27','SPListSiteAddress','366714kQZmZi','SPClientPeoplePicker','8appjMl','input[id$=\x22','setDate','td:eq(12)\x20:nth-child(3)','src','Unauthorized\x20Access.\x0aYou\x20don\x27t\x20have\x20permissions.','Prerequisite','display','td:eq(10)','active','blur','453966lEFKAH','.changemeN','when','#new-Table-modal','td:eq(1)\x20div.ellipsis-filtActive','</div><div\x20class=\x27ellipsis-filtActive\x27\x20style=\x27display:none\x27>','test','set_item','ddlDeptFilt','Please\x20enter\x20valid\x20url!!','deactivate','#txtECharLimit','index','input[name=UpdateEmpN][value=\x27Choose\x20from\x20gallery\x27]','#btnQRWebEditSubmit','tblApTemp','.themeselect','ajax','table-row','#new-QR-Weblink-modal','/_api/Web/Lists/GetByTitle(\x27ApprovalTemplateSetup\x27)/items?$filter=\x20TemplateID/ID\x20eq\x20','#tblApTemp\x20.tdSqno','/ï»¿/','Bottom','cells','#bindTblData\x20tbody','CalculatedValue','which','\x22)\x27>\x20','SP.Data.ApprovalProcessMasterListItem','#txtDisFormula','Email','</td>\x20<td\x20style=\x27display:none;\x27></td><td\x20style=\x27display:none;\x27><input\x20type=\x27hidden\x27\x20class=\x27disFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27actualFormula\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27personValidation\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27serialStartFrom\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27prefix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27sufix\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMin\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numMax\x27\x20value=\x27\x27><input\x20type=\x27hidden\x27\x20class=\x27numSuffix\x27\x20value=\x27\x27></td></tr>','#new-Header-modal','FirstName','undefined','\x27\x20/>\x20\x20<a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x27\x20onclick=\x27deletetemp(','#filter_pops','DropdownFrom','html','#btnUpdateDetails','Url','join','Running','AddUserKeys','customselect','</td>\x20<td\x20class=\x27tdDefVal\x27>','#editHeaderRow','{0:dd}\x20{0:MMM}\x20{0:yyyy}','Not\x20Active','Active(Live)','#btnFilter'];a12_0x3de1=function(){return _0xe90017;};return a12_0x3de1();}function addTableRowDyanamic(){var _0x54ce01=a12_0x23e28b,_0x2b225b='';if($(_0x54ce01(0x110))['is'](_0x54ce01(0x133)))_0x2b225b=_0x54ce01(0x191);else $(_0x54ce01(0x286))['is'](_0x54ce01(0x133))&&(_0x2b225b='tblEApTemp');var _0x3738aa=!![],_0x29abb8=document[_0x54ce01(0x277)](_0x2b225b),_0x2d7d09=_0x29abb8[_0x54ce01(0x118)][_0x54ce01(0x7a)]-0x1,_0x2c4a4c='';if($('#txtTableSqno')[_0x54ce01(0xd0)]()=='')return _0x3738aa=![],alert(_0x54ce01(0xca)),![];else{if($(_0x54ce01(0x163))[_0x54ce01(0xd0)]()=='')return _0x3738aa=![],alert(_0x54ce01(0x296)),![];else{var _0x1153c5=$('#'+_0x2b225b)[_0x54ce01(0x172)]('tbody\x20tr'),_0x3b65af=![];$(_0x1153c5)[_0x54ce01(0x13d)](function(_0x415a1d){var _0x18158f=_0x54ce01,_0x55a1b3=$(this)['find'](_0x18158f(0x8f))['text']();_0x55a1b3==$(_0x18158f(0x163))[_0x18158f(0xd0)]()&&(_0x3738aa=![],_0x3b65af=!![]);});if(_0x3b65af)return alert(_0x54ce01(0x2a9)),![];}}var _0x4690a2=$(_0x54ce01(0x1df))['length'];if(_0x4690a2==0x0)return _0x3738aa=![],alert(_0x54ce01(0x287)),![];var _0x56065c=_0x54ce01(0x15b),_0x28ecec='',_0x5dcb43='Table';_0x3738aa&&($(_0x54ce01(0x185))[_0x54ce01(0x1f1)](_0x54ce01(0x251))[_0x54ce01(0x1d7)](_0x54ce01(0x8c),null),$(_0x54ce01(0x185))['on'](_0x54ce01(0x1f9),function(){}));var _0x4c83c7=$(_0x54ce01(0x27f))[_0x54ce01(0x1a9)](),_0x4e4779='',_0x3eea1c=new Date(),_0x1f4970=_0x3eea1c[_0x54ce01(0x29a)](),_0x3de9cf=_0x3eea1c[_0x54ce01(0xa9)](),_0x4f6928=_0x3eea1c[_0x54ce01(0xe1)](),_0xf066a4=_0x3eea1c['getTime'](),_0x471afb=_0x1f4970+''+_0x3de9cf+''+_0x4f6928+''+_0xf066a4;$(_0x54ce01(0x205))['is'](_0x54ce01(0x133))&&$(_0x54ce01(0x2d6))[_0x54ce01(0x1f2)]()=='Yes'?_0x4e4779=$(_0x54ce01(0x2d6))['text']():_0x4e4779='';var _0x3aebb4='No';$(_0x54ce01(0x1ce))['is'](_0x54ce01(0x133))&&(_0x3aebb4=$('#ddlMand\x20:selected')[_0x54ce01(0x1f2)]());var _0xbb6e1f='<tr>\x20<td\x20class=\x27tdColumn\x20d-none\x27>'+_0x5dcb43+_0x54ce01(0x28f)+$(_0x54ce01(0x237))['val']()+'</td>\x20<td\x20class=\x27tdLabel\x27>'+$(_0x54ce01(0x163))[_0x54ce01(0xd0)]()+_0x54ce01(0x1c5)+_0x3aebb4+_0x54ce01(0x1b0)+_0x28ecec+'</td>\x20<td\x20class=\x27tdVal\x27>'+_0x56065c+'</td>\x20<td\x20class=\x27tdDRWN\x27>'+_0x4e4779+_0x54ce01(0x26e)+_0x2c4a4c+'\x20</td><td\x20class=\x27approval-process-edit-lock-btn-box\x27><a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x20tt\x27\x20onclick=\x27editTableRow(this,'+_0x2b225b+','+_0x471afb+_0x54ce01(0x7f)+_0x471afb+_0x54ce01(0x1a2);$('#'+_0x2b225b+_0x54ce01(0x169))[_0x54ce01(0xbf)](_0xbb6e1f),$(_0x54ce01(0x154))[_0x54ce01(0xbf)]('<table\x20id=\x22'+_0x471afb+'\x22\x20class=\x22table\x20custom-table\x22>'+_0x4c83c7+_0x54ce01(0x25b));}function editTableRow(_0x3ccbe5,_0x500b7f,_0x5224d3){var _0x49a289=a12_0x23e28b;$('#updateTableRow')[_0x49a289(0x251)](),$(_0x49a289(0x1b9))[_0x49a289(0x29f)]();var _0x441748=_0x3ccbe5[_0x49a289(0x1b6)]['parentNode']['rowIndex'];$('#UpdateTempRow')['val'](_0x441748);var _0x5af052=document[_0x49a289(0x277)](_0x500b7f['id'])[_0x49a289(0x118)][_0x441748][_0x49a289(0x19a)][0x1][_0x49a289(0x124)],_0x5b2712=document[_0x49a289(0x277)](_0x500b7f['id'])[_0x49a289(0x118)][_0x441748][_0x49a289(0x19a)][0x2][_0x49a289(0x124)],_0x54a96d=document[_0x49a289(0x277)](_0x500b7f['id'])['rows'][_0x441748][_0x49a289(0x19a)][0xa][_0x49a289(0x124)];$('#editTableRow')[_0x49a289(0xd0)](_0x54a96d),$('#txtETableSqno')[_0x49a289(0xd0)](_0x5af052),$(_0x49a289(0x2c1))[_0x49a289(0xd0)](_0x5b2712);var _0x2833dd=$('#'+_0x54a96d+'\x20tbody')[_0x49a289(0x1a9)]();$('#bindTblData\x20tbody')['html'](_0x2833dd);}function editTableSubmit(_0x1b4d88){var _0x22bec3=a12_0x23e28b,_0x4809b2=$(_0x22bec3(0x14c))['val'](),_0x516d56='';if($('#new-process-modal')['is'](_0x22bec3(0x133)))_0x516d56=_0x22bec3(0x191);else $(_0x22bec3(0x286))['is'](_0x22bec3(0x133))&&(_0x516d56=_0x22bec3(0x2b1));var _0xd76cec=document['getElementById'](_0x516d56),_0x1c4581=$(_0x22bec3(0x1c8))[_0x22bec3(0xd0)](),_0x53a171=_0x1b4d88[_0x22bec3(0xcf)];const _0xd9667d=$(_0x22bec3(0x19b))[_0x22bec3(0x1a9)]();var _0x59595e=$(_0x22bec3(0x29d))[_0x22bec3(0x7a)];if($('#txtETableSqno')['val']()=='')return alert(_0x22bec3(0xca)),![];else{if($(_0x22bec3(0x2c1))[_0x22bec3(0xd0)]()=='')return alert(_0x22bec3(0x1f8)),![];else{if(_0x59595e==0x0)return alert(_0x22bec3(0x287)),![];else{var _0x5ac2ad=$('#'+_0x516d56)[_0x22bec3(0x172)]('tbody\x20tr')[_0x22bec3(0x1d1)](function(){var _0xb29ac6=_0x22bec3;return $(this)[_0xb29ac6(0x172)](_0xb29ac6(0x8f))[_0xb29ac6(0x1f2)]()==$(_0xb29ac6(0x2c1))[_0xb29ac6(0xd0)]();});if(_0x5ac2ad[_0x22bec3(0x7a)]>0x1)return alert(_0x22bec3(0x2a9)),![];$(_0x22bec3(0x250))[_0x22bec3(0x1f1)]('hide')[_0x22bec3(0x1d7)](_0x22bec3(0x8c),null),$('#edit-Table-modal')['on'](_0x22bec3(0x1f9),function(){var _0x485d7d=_0x22bec3;$(this)[_0x485d7d(0x1d7)]('modal',null);});}}}var _0x1cd5ee=$(_0x22bec3(0x2c1))[_0x22bec3(0xd0)](),_0x169da7=$(_0x22bec3(0xee))['val']();_0xd76cec[_0x22bec3(0x118)][_0x1c4581][_0x22bec3(0x19a)][0x1][_0x22bec3(0x124)]=_0x169da7,_0xd76cec[_0x22bec3(0x118)][_0x1c4581][_0x22bec3(0x19a)][0x2][_0x22bec3(0x124)]=_0x1cd5ee,console[_0x22bec3(0x292)](_0xd76cec),$('#'+_0x53a171+'\x20tbody')[_0x22bec3(0x1a9)](_0xd9667d);}var tblOrTemp='';$(document)[a12_0x23e28b(0x216)](function(){var _0x419755=a12_0x23e28b;$(_0x419755(0x111))[_0x419755(0x1e9)](function(){var _0x1118aa=_0x419755;$(_0x1118aa(0x11d))['show'](),$('.btnMngt,.activating')[_0x1118aa(0x251)](),$('#Management_tab')[_0x1118aa(0x251)]();});var _0x32a3c9=0x0,_0x3bb67d=0x0,_0x3f5b6f=0x0;$('#addTableCol')['click'](function(){var _0x1eaf5d=_0x419755;$(_0x1eaf5d(0x16a))['val']('tblTableRow'),$(_0x1eaf5d(0x201))[_0x1eaf5d(0x152)](_0x1eaf5d(0x86)),$(_0x1eaf5d(0x201))[_0x1eaf5d(0x1d2)]('d-none'),$(_0x1eaf5d(0x1ff))[_0x1eaf5d(0x1d2)](_0x1eaf5d(0x2df)),$(_0x1eaf5d(0x1ff))[_0x1eaf5d(0x152)](_0x1eaf5d(0x2df)),$(_0x1eaf5d(0x21a))[_0x1eaf5d(0x152)](_0x1eaf5d(0x2df)),tblOrTemp=_0x1eaf5d(0xb0);}),$(_0x419755(0xe7))[_0x419755(0x1e9)](function(){var _0x2825fc=_0x419755;$(_0x2825fc(0x16a))[_0x2825fc(0xd0)](_0x2825fc(0x191));}),$('#addECol')[_0x419755(0x1e9)](function(){var _0x5e501d=_0x419755;$('#tblId')[_0x5e501d(0xd0)](_0x5e501d(0x2b1));}),$(_0x419755(0x26a))[_0x419755(0x1e9)](function(){var _0x5d4dd4=_0x419755;$(_0x5d4dd4(0x21a))[_0x5d4dd4(0x152)](_0x5d4dd4(0x2df)),$(_0x5d4dd4(0x201))[_0x5d4dd4(0x152)](_0x5d4dd4(0x86)),$(_0x5d4dd4(0x201))[_0x5d4dd4(0x1d2)](_0x5d4dd4(0x2df)),$(_0x5d4dd4(0x1ff))['removeClass'](_0x5d4dd4(0x2df)),$(_0x5d4dd4(0x1ff))['addClass']('d-none'),$(_0x5d4dd4(0x16a))['val']('bindTblData');var _0x4937c0=0x0;$(_0x5d4dd4(0x225))[_0x5d4dd4(0x13d)](function(){$this=parseInt($(this)['text']());if($this>_0x4937c0)_0x4937c0=$this;}),$(_0x5d4dd4(0x284))[_0x5d4dd4(0xd0)](_0x4937c0+0x1),tblOrTemp=_0x5d4dd4(0xb0);}),$('#btnAdd')['click'](function(){var _0x39cdef=_0x419755;$(_0x39cdef(0x201))['removeClass'](_0x39cdef(0x86)),$(_0x39cdef(0x201))['addClass'](_0x39cdef(0x2df)),$(_0x39cdef(0x1ff))['removeClass'](_0x39cdef(0x2df)),$(_0x39cdef(0x1ff))[_0x39cdef(0x152)](_0x39cdef(0x86)),$(_0x39cdef(0x25e))[_0x39cdef(0x1d2)](_0x39cdef(0x86)),$(_0x39cdef(0x25e))[_0x39cdef(0x152)](_0x39cdef(0x2df)),$(_0x39cdef(0x21a))[_0x39cdef(0x1d2)]('d-none'),$(_0x39cdef(0x21a))['addClass'](_0x39cdef(0x86)),tblOrTemp=_0x39cdef(0x165);}),$(_0x419755(0x98))[_0x419755(0x1e9)](function(){var _0x3a6bb5=_0x419755;$(_0x3a6bb5(0x190))[_0x3a6bb5(0x251)](),$(_0x3a6bb5(0xf0))[_0x3a6bb5(0x29f)](),$('#optCal')[_0x3a6bb5(0x1d2)](_0x3a6bb5(0x86)),$(_0x3a6bb5(0x201))[_0x3a6bb5(0x152)](_0x3a6bb5(0x2df)),$(_0x3a6bb5(0x1ff))[_0x3a6bb5(0x1d2)](_0x3a6bb5(0x2df)),$('.optNotTable')[_0x3a6bb5(0x152)]('d-block'),$(_0x3a6bb5(0x25e))['removeClass']('d-block'),$(_0x3a6bb5(0x25e))['addClass'](_0x3a6bb5(0x2df)),$('#optSumm')['removeClass'](_0x3a6bb5(0x2df)),$(_0x3a6bb5(0x21a))['addClass']('d-block'),tblOrTemp=_0x3a6bb5(0x165);}),$(document)['on']('change',_0x419755(0x119),function(){var _0x22f4a7=_0x419755,_0x3703d4=$(this)[_0x22f4a7(0x254)]('tr');this[_0x22f4a7(0xcf)]==_0x22f4a7(0x1ed)?(_0x3703d4['find'](_0x22f4a7(0x1fd))[_0x22f4a7(0x29f)](),_0x3703d4[_0x22f4a7(0x172)]('td:eq(1)\x20select')[_0x22f4a7(0x251)]()):(_0x3703d4[_0x22f4a7(0x172)]('td:eq(1)\x20input')[_0x22f4a7(0x251)](),_0x3703d4[_0x22f4a7(0x172)](_0x22f4a7(0x1f5))[_0x22f4a7(0x29f)]());}),$(_0x419755(0x185))['on'](_0x419755(0x109),function(_0x3af063){var _0x1fa821=_0x419755;if(![])_0x3af063[_0x1fa821(0x27a)]();var _0x28be43=$(this);_0x28be43['find']('.modal-body\x20#txtTableLabel')['val'](''),_0x28be43[_0x1fa821(0x172)](_0x1fa821(0x166))['html']('');}),$(_0x419755(0x83))['on'](_0x419755(0x109),function(_0x2eabe1){var _0x1a9242=_0x419755;if(![])_0x2eabe1['preventDefault']();var _0x28fb6d=$(this);_0x28fb6d[_0x1a9242(0x172)](_0x1a9242(0x212))[_0x1a9242(0xd0)](''),quill[_0x1a9242(0x153)][_0x1a9242(0x97)]['innerHTML']='';}),$('#new-Header-modal')['on'](_0x419755(0x109),function(_0x533051){var _0x37f0a6=_0x419755;if(![])_0x533051[_0x37f0a6(0x27a)]();var _0x3aa5fe=$(this);_0x3aa5fe[_0x37f0a6(0x172)]('.modal-body\x20#txtHeader')[_0x37f0a6(0xd0)]('');}),$(_0x419755(0x90))['on'](_0x419755(0x109),function(_0x45f41c){var _0x1b7331=_0x419755;if(![])_0x45f41c['preventDefault']();var _0x154495=$(this);_0x154495['find'](_0x1b7331(0xa0))['val'](''),_0x154495['find'](_0x1b7331(0x1c0))[_0x1b7331(0xd0)](_0x1b7331(0x1cf)),_0x154495[_0x1b7331(0x172)]('.modal-body\x20select,.normalFormula')[_0x1b7331(0x29f)](),_0x154495[_0x1b7331(0x172)](_0x1b7331(0xe3))[_0x1b7331(0x251)](),_0x154495[_0x1b7331(0x172)]('.modal-body\x20#txtActFormula')[_0x1b7331(0xd0)](''),$(_0x1b7331(0x73))[_0x1b7331(0x172)](_0x1b7331(0xed))['remove'](),formula=_0x1b7331(0x28b);}),$(_0x419755(0x195))['on']('hidden.bs.modal',function(_0x57f49c){var _0x2b2569=_0x419755;if(![])_0x57f49c[_0x2b2569(0x27a)]();var _0x82034=$(this);_0x82034[_0x2b2569(0x172)]('.modal-body\x20#txtQRWeb,#txtQRWebURL,#txtQRWebSqno')[_0x2b2569(0xd0)](''),$(_0x2b2569(0x170))[_0x2b2569(0xd5)]('checked',!![]);}),$('#addNew\x20li')[_0x419755(0x1e9)](function(_0x4ffa81){var _0x1ea9ce=_0x419755;$(_0x1ea9ce(0x190))[_0x1ea9ce(0x251)](),$('#btnAddQRWeb')[_0x1ea9ce(0x29f)](),$(_0x1ea9ce(0x12a))[_0x1ea9ce(0xd0)](_0x1ea9ce(0x13e));if($(this)[_0x1ea9ce(0x1f2)]()==_0x1ea9ce(0x273))$(_0x1ea9ce(0xc7))[_0x1ea9ce(0x1f2)](_0x1ea9ce(0x273));else $(this)['text']()=='Link'&&$(_0x1ea9ce(0xc7))[_0x1ea9ce(0x1f2)](_0x1ea9ce(0x144));var _0x593448=0x0;$(_0x1ea9ce(0x197))[_0x1ea9ce(0x13d)](function(){$this=parseInt($(this)['text']());if($this>_0x593448)_0x593448=$this;}),$(_0x1ea9ce(0x25d))['val'](_0x593448+0x1);}),$(_0x419755(0x14e))['click'](function(_0x2642b1){var _0x46d8cb=_0x419755;$(_0x46d8cb(0x190))['hide'](),$(_0x46d8cb(0xf0))[_0x46d8cb(0x29f)](),$(_0x46d8cb(0x12a))[_0x46d8cb(0xd0)]('New');if($(this)[_0x46d8cb(0x1f2)]()==_0x46d8cb(0x273))$(_0x46d8cb(0xc7))[_0x46d8cb(0x1f2)](_0x46d8cb(0x273));else $(this)[_0x46d8cb(0x1f2)]()=='Link'&&$('#QR-WeblinkHeading')[_0x46d8cb(0x1f2)]('Link');var _0x1cfcff=0x0;$('#tblEApTemp\x20.tdSqno')[_0x46d8cb(0x13d)](function(){var _0x3f0ab3=_0x46d8cb;$this=parseInt($(this)[_0x3f0ab3(0x1f2)]());if($this>_0x1cfcff)_0x1cfcff=$this;}),$(_0x46d8cb(0x25d))[_0x46d8cb(0xd0)](_0x1cfcff+0x1);}),$(_0x419755(0x9d))[_0x419755(0x1e9)](function(_0x1079ee){var _0x52f68c=_0x419755,_0x4056df=0x0;$('#tblTableRow\x20.tdSqno')[_0x52f68c(0x13d)](function(){$this=parseInt($(this)['text']());if($this>_0x4056df)_0x4056df=$this;}),$(_0x52f68c(0x284))['val'](_0x4056df+0x1);}),$(_0x419755(0x10a))[_0x419755(0x1e9)](function(){var _0x3c148d=_0x419755,_0x5ee792=$(_0x3c148d(0x16a))[_0x3c148d(0xd0)](),_0x10b10e=$(_0x3c148d(0x1d6))[_0x3c148d(0x1f2)](),_0x2c2f9a=bindOptionsToDr(_0x5ee792,_0x10b10e);$(_0x3c148d(0x74))[_0x3c148d(0x1a9)](_0x2c2f9a),$('#submitFormula')['val']('txtFormula');}),$('#spEFormula')['click'](function(){var _0x36afb1=_0x419755,_0x3fb3d4=$(_0x36afb1(0x14c))['val'](),_0x5983d0=bindOptionsToDr(_0x3fb3d4);$(_0x36afb1(0x74))[_0x36afb1(0x1a9)](_0x5983d0),$('#submitFormula')[_0x36afb1(0xd0)](_0x36afb1(0x2b6)),$('.bindCol\x20option:contains(\x27'+calColAsOpt+'\x27)')[_0x36afb1(0xbb)]();}),$(_0x419755(0x2b9))[_0x419755(0x1e9)](function(){var _0x21e271=_0x419755,_0x159cdb=$(_0x21e271(0x14c))[_0x21e271(0xd0)](),_0x36bfac=$(_0x21e271(0x21f))['text'](),_0x22ae68=bindOptionsToDr(_0x159cdb,_0x36bfac);$('.bindCol')['html'](_0x22ae68),$(_0x21e271(0xbc))['val']('txtTEFormula'),$(_0x21e271(0x28d)+calColAsOpt+'\x27)')[_0x21e271(0xbb)]();}),$(_0x419755(0x248))[_0x419755(0x1db)](function(){var _0x44bbb8=_0x419755;if(this[_0x44bbb8(0xcf)]==_0x44bbb8(0x1d4))$(_0x44bbb8(0x2bd))[_0x44bbb8(0xd0)]('');else{if(this[_0x44bbb8(0xcf)]==_0x44bbb8(0x199))$(_0x44bbb8(0x2bd))[_0x44bbb8(0xd0)]('');else{if(this['value']==_0x44bbb8(0x236)){if($(_0x44bbb8(0x110))['is'](_0x44bbb8(0x133)))tempTblId='tblApTemp';else $(_0x44bbb8(0x286))['is'](_0x44bbb8(0x133))&&(tempTblId=_0x44bbb8(0x2b1));var _0x585761=0x0;$('#'+tempTblId+'\x20.tdSqno')[_0x44bbb8(0x13d)](function(){var _0x4c91dd=_0x44bbb8;$this=parseInt($(this)[_0x4c91dd(0x1f2)]());if($this>_0x585761)_0x585761=$this;}),$(_0x44bbb8(0x2bd))[_0x44bbb8(0xd0)](_0x585761+0x1);}}}}),$(_0x419755(0x12d))['keyup'](function(){var _0x574982=_0x419755,_0x36901f=$('#tblId')[_0x574982(0xd0)](),_0x7c1896=$(_0x574982(0x14c))[_0x574982(0xd0)]();if(_0x36901f=='tblApTemp'||_0x36901f==_0x574982(0x2b1))return![];else{if(_0x7c1896=='tblEApTemp'||_0x7c1896=='tblApTemp')return![];}this[_0x574982(0xcf)][_0x574982(0x139)](/[^a-zA-Z0-9-_()#$@%]/g)&&(this[_0x574982(0xcf)]=this[_0x574982(0xcf)][_0x574982(0x2bf)](/[^a-zA-Z0-9-_ ()#$@%]/g,''));});});function addQRWebdyanamic(){var _0x30e6b6=a12_0x23e28b,_0x204cae='',_0x55114f,_0x13ff80,_0x110517='';if($(_0x30e6b6(0xc7))[_0x30e6b6(0x1f2)]()==_0x30e6b6(0x273))_0x13ff80=_0x30e6b6(0x273),_0x55114f=_0x30e6b6(0x1c2);else $(_0x30e6b6(0xc7))[_0x30e6b6(0x1f2)]()==_0x30e6b6(0x144)&&(_0x13ff80=_0x30e6b6(0x1c1),_0x55114f=_0x30e6b6(0xd2));if($(_0x30e6b6(0x110))['is'](_0x30e6b6(0x133))){_0x204cae='tblApTemp';var _0x4497bf=$(_0x30e6b6(0xb9))[_0x30e6b6(0x172)](_0x30e6b6(0x8e))['filter'](function(){return $(this)['text']()==_0x13ff80;}),_0x4de611=_0x4497bf[_0x30e6b6(0x7a)];if(_0x4de611>=0x1)return _0x49bc42=![],alert(_0x30e6b6(0x274)+_0x13ff80+'\x20type\x20Column.'),![];}else{if($(_0x30e6b6(0x286))['is'](':visible')){_0x204cae=_0x30e6b6(0x2b1);var _0x4497bf=$(_0x30e6b6(0x263))['find'](_0x30e6b6(0x8e))['filter'](function(){var _0x22d5b6=_0x30e6b6;return $(this)[_0x22d5b6(0x1f2)]()==_0x13ff80;}),_0x4de611=_0x4497bf[_0x30e6b6(0x7a)];if(_0x4de611>=0x1)return _0x49bc42=![],alert(_0x30e6b6(0x274)+_0x13ff80+_0x30e6b6(0x214)),![];}}if($(_0x30e6b6(0xc7))[_0x30e6b6(0x1f2)]()==_0x30e6b6(0x144)){var _0x470be3=checkURL($('#txtQRWebURL')[_0x30e6b6(0xd0)]());if(_0x470be3==![])return alert(_0x30e6b6(0x18b)),![];}else{if($('#QR-WeblinkHeading')['text']()==_0x30e6b6(0x273)){var _0x470be3=$(_0x30e6b6(0x1bb))[_0x30e6b6(0xd0)]();if(_0x470be3=='')return alert(_0x30e6b6(0x2b2)),![];}}var _0x49bc42=!![],_0x1c817f=document['getElementById'](_0x204cae),_0x5abe84=_0x1c817f[_0x30e6b6(0x118)][_0x30e6b6(0x7a)]-0x1,_0xa50e3c='',_0x438bd2=$(_0x30e6b6(0x295))[_0x30e6b6(0xd0)](),_0x2750da='';if(_0x438bd2==_0x30e6b6(0x236))_0x2750da=$(_0x30e6b6(0x2bd))[_0x30e6b6(0xd0)]();else{if(_0x438bd2==_0x30e6b6(0x1d4))_0x2750da=_0x30e6b6(0x1d4);else _0x438bd2==_0x30e6b6(0x199)&&(_0x2750da=_0x30e6b6(0x199));}if($(_0x30e6b6(0x2bd))[_0x30e6b6(0xd0)]()==''&&_0x438bd2==_0x30e6b6(0x236))return _0x49bc42=![],alert(_0x30e6b6(0xca)),![];else{if($(_0x30e6b6(0x9f))[_0x30e6b6(0xd0)]()=='')return _0x49bc42=![],alert(_0x30e6b6(0x296)),![];else{var _0x4497bf=$('#'+_0x204cae)[_0x30e6b6(0x172)](_0x30e6b6(0x137)),_0xc9f601=![];$(_0x4497bf)[_0x30e6b6(0x13d)](function(_0x36b54a){var _0xb8e55a=_0x30e6b6,_0x1685aa=$(this)[_0xb8e55a(0x172)](_0xb8e55a(0x8f))[_0xb8e55a(0x1f2)]();_0x1685aa==$('#txtQRWeb')[_0xb8e55a(0xd0)]()&&(_0x49bc42=![],_0xc9f601=!![]);});if(_0xc9f601)return alert('Duplicate\x20label'),![];}}var _0x609a81='<label\x20for=\x27Text\x27>No</label>',_0x1229a3='',_0x32fe2c=$('#txtQRWebURL')[_0x30e6b6(0xd0)]();_0x49bc42&&($(_0x30e6b6(0x195))['modal'](_0x30e6b6(0x251))[_0x30e6b6(0x1d7)]('bs.modal',null),$('#new-QR-Weblink-modal')['on'](_0x30e6b6(0x1f9),function(){}));var _0x4734b1='';$(_0x30e6b6(0x205))['is'](_0x30e6b6(0x133))&&$(_0x30e6b6(0x2d6))['text']()==_0x30e6b6(0xe8)?_0x4734b1=$(_0x30e6b6(0x2d6))[_0x30e6b6(0x1f2)]():_0x4734b1='';var _0x35c164='No';$(_0x30e6b6(0x1ce))['is'](_0x30e6b6(0x133))&&(_0x35c164=$(_0x30e6b6(0x285))[_0x30e6b6(0x1f2)]());var _0x4ab8ba=_0x30e6b6(0x26b)+_0x55114f+_0x30e6b6(0x28f)+_0x2750da+_0x30e6b6(0x233)+$('#txtQRWeb')[_0x30e6b6(0xd0)]()+_0x30e6b6(0x2b4)+_0x13ff80+_0x30e6b6(0x8a)+_0x35c164+_0x30e6b6(0x1b0)+_0x1229a3+'</td>\x20<td\x20class=\x27tdVal\x27>'+_0x609a81+_0x30e6b6(0x266)+_0x4734b1+_0x30e6b6(0x26e)+_0xa50e3c+_0x30e6b6(0x270)+_0x204cae+_0x30e6b6(0x15c)+_0x32fe2c+_0x30e6b6(0x115);$('#'+_0x204cae+_0x30e6b6(0x169))[_0x30e6b6(0xbf)](_0x4ab8ba);}function editQRWebRow(_0x3db37a,_0x218b19){var _0x2f9851=a12_0x23e28b,_0x5891ca=_0x3db37a[_0x2f9851(0x1b6)]['parentNode']['rowIndex'];$(_0x2f9851(0x190))[_0x2f9851(0xd0)](_0x5891ca),$(_0x2f9851(0x190))[_0x2f9851(0x29f)](),$('#btnAddQRWeb')[_0x2f9851(0x251)](),$(_0x2f9851(0x12a))[_0x2f9851(0xd0)](_0x2f9851(0x1d9));var _0x4397d3=document[_0x2f9851(0x277)](_0x218b19['id'])[_0x2f9851(0x118)][_0x5891ca][_0x2f9851(0x19a)][0x1][_0x2f9851(0x124)],_0x321eb9=document[_0x2f9851(0x277)](_0x218b19['id'])[_0x2f9851(0x118)][_0x5891ca]['cells'][0x2][_0x2f9851(0x124)],_0x49df46=document['getElementById'](_0x218b19['id'])['rows'][_0x5891ca][_0x2f9851(0x19a)][0xa][_0x2f9851(0x124)];if(_0x4397d3==_0x2f9851(0x1d4))$(_0x2f9851(0x238))['prop'](_0x2f9851(0x235),!![]);else _0x4397d3==_0x2f9851(0x199)?$('input[name=QRWeb][value=\x27Bottom\x27]')[_0x2f9851(0xd5)](_0x2f9851(0x235),!![]):($(_0x2f9851(0xb7))['prop']('checked',!![]),$(_0x2f9851(0x2bd))[_0x2f9851(0xd0)](_0x4397d3));$('#txtQRWeb')[_0x2f9851(0xd0)](_0x321eb9),$('#txtQRWebURL')[_0x2f9851(0xd0)](_0x49df46);}function editQRWebSubmit(_0x7068bc){var _0x30ca4a=a12_0x23e28b,_0x24a13c=$(_0x30ca4a(0x14c))[_0x30ca4a(0xd0)](),_0x20e0d3='',_0x1974f7=$(_0x30ca4a(0x295))[_0x30ca4a(0xd0)]();if($(_0x30ca4a(0x110))['is'](_0x30ca4a(0x133)))_0x20e0d3=_0x30ca4a(0x191);else $(_0x30ca4a(0x286))['is'](_0x30ca4a(0x133))&&(_0x20e0d3=_0x30ca4a(0x2b1));if($(_0x30ca4a(0xc7))[_0x30ca4a(0x1f2)]()==_0x30ca4a(0x144)){var _0x236eca=checkURL($(_0x30ca4a(0x1bb))[_0x30ca4a(0xd0)]());if(_0x236eca==![])return alert(_0x30ca4a(0x18b)),![];}else{if($(_0x30ca4a(0xc7))[_0x30ca4a(0x1f2)]()==_0x30ca4a(0x273)){var _0x236eca=$('#txtQRWebURL')[_0x30ca4a(0xd0)]();if(_0x236eca=='')return alert(_0x30ca4a(0x2b2)),![];}}var _0x5ee75b=document[_0x30ca4a(0x277)](_0x20e0d3),_0x20b89b=_0x7068bc['value'];if($('#txtQRWebSqno')[_0x30ca4a(0xd0)]()==''&&_0x1974f7=='Sequence')return alert('Please\x20enter\x20sequence'),![];else{if($(_0x30ca4a(0x9f))[_0x30ca4a(0xd0)]()=='')return alert(_0x30ca4a(0x296)),![];else{var _0x91f194=$('#'+_0x20e0d3)[_0x30ca4a(0x172)](_0x30ca4a(0x137))['filter'](function(){var _0x3fcfdb=_0x30ca4a;return $(this)[_0x3fcfdb(0x172)](_0x3fcfdb(0x8f))[_0x3fcfdb(0x1f2)]()==$('#txtEHeader')['val']();});if(_0x91f194[_0x30ca4a(0x7a)]>0x1)return alert('Duplicate\x20label'),![];$(_0x30ca4a(0x195))[_0x30ca4a(0x1f1)](_0x30ca4a(0x251))[_0x30ca4a(0x1d7)]('bs.modal',null),$(_0x30ca4a(0x195))['on'](_0x30ca4a(0x1f9),function(){var _0x42a095=_0x30ca4a;$(this)[_0x42a095(0x1d7)](_0x42a095(0x1f1),null);});}}var _0xbe65b3=$(_0x30ca4a(0x9f))[_0x30ca4a(0xd0)](),_0x4f59b8=$(_0x30ca4a(0x2bd))[_0x30ca4a(0xd0)](),_0x355013=$(_0x30ca4a(0x1bb))['val'](),_0xa169a0='';if(_0x1974f7==_0x30ca4a(0x236))_0xa169a0=$('#txtQRWebSqno')['val']();else{if(_0x1974f7=='Top')_0xa169a0=_0x30ca4a(0x1d4);else _0x1974f7==_0x30ca4a(0x199)&&(_0xa169a0='Bottom');}_0x5ee75b[_0x30ca4a(0x118)][_0x20b89b][_0x30ca4a(0x19a)][0x1][_0x30ca4a(0x124)]=_0xa169a0,_0x5ee75b[_0x30ca4a(0x118)][_0x20b89b][_0x30ca4a(0x19a)][0x2][_0x30ca4a(0x124)]=_0xbe65b3,_0x5ee75b[_0x30ca4a(0x118)][_0x20b89b][_0x30ca4a(0x19a)][0xa][_0x30ca4a(0x124)]=_0x355013;}function updateTableColumn(_0x4343a5){var _0x1f2aa7=a12_0x23e28b,_0x44edd6=$(_0x1f2aa7(0x10d))['val'](),_0x346865='';if($(_0x1f2aa7(0x110))['is'](_0x1f2aa7(0x133)))_0x346865=_0x1f2aa7(0x191);else $(_0x1f2aa7(0x286))['is'](_0x1f2aa7(0x133))&&(_0x346865='tblEApTemp');var _0x40300d=$('#bindTblData\x20tbody\x20tr')[_0x1f2aa7(0x7a)];if($(_0x1f2aa7(0xee))[_0x1f2aa7(0xd0)]()=='')return alert('Please\x20enter\x20sequence'),![];else{if($('#txtETableLabel')['val']()=='')return alert('Please\x20enter\x20Label'),![];else{if(_0x40300d==0x0)return alert(_0x1f2aa7(0x287)),![];}}var _0x294c43=document[_0x1f2aa7(0x277)](_0x346865),_0x13c770=$(_0x1f2aa7(0x1c8))[_0x1f2aa7(0xd0)](),_0x445e5c=$('#txtETableLabel')[_0x1f2aa7(0xd0)](),_0x2f43b3=$(_0x1f2aa7(0xee))[_0x1f2aa7(0xd0)]();_0x294c43[_0x1f2aa7(0x118)][_0x13c770][_0x1f2aa7(0x19a)][0x1]['innerHTML']=_0x2f43b3,_0x294c43[_0x1f2aa7(0x118)][_0x13c770]['cells'][0x2][_0x1f2aa7(0x124)]=_0x445e5c,$(_0x1f2aa7(0x29d))['each'](function(){var _0x2b2126=_0x1f2aa7,_0x1a41f1=$(this)[_0x2b2126(0x172)]('td')['eq'](0x0)['find'](_0x2b2126(0x211))[_0x2b2126(0xd0)](),_0x562c3b=$(this)[_0x2b2126(0x172)](_0x2b2126(0x22e))['text'](),_0x3bffa4=$(this)['find'](_0x2b2126(0x246))[_0x2b2126(0x1f2)](),_0x16e419=$(this)[_0x2b2126(0x172)](_0x2b2126(0x116))[_0x2b2126(0x1f2)](),_0x203738=$(this)[_0x2b2126(0x172)](_0x2b2126(0x1cb))[_0x2b2126(0x1f2)](),_0x564acb=$(this)[_0x2b2126(0x172)](_0x2b2126(0xb1))[_0x2b2126(0x1f2)](),_0x4c7aa9=$(this)[_0x2b2126(0x172)]('td:eq(5)')[_0x2b2126(0x1f2)](),_0x2cc902=$(this)[_0x2b2126(0x172)](_0x2b2126(0xc1))[_0x2b2126(0x1f2)](),_0x2ea235=$(this)['find'](_0x2b2126(0x2bc))[_0x2b2126(0x1f2)](),_0x53d80c=$(this)['find'](_0x2b2126(0x2cc))['text'](),_0x58d163=$(this)['find']('td')['eq'](0x6)[_0x2b2126(0x172)](_0x2b2126(0x209))[_0x2b2126(0xd5)]('for'),_0x46a04b=$(this)[_0x2b2126(0x172)](_0x2b2126(0x17f))[_0x2b2126(0x1f2)](),_0x24e0e6=$(this)[_0x2b2126(0x172)]('td:eq(11)')[_0x2b2126(0x1f2)](),_0x419554=$(this)['find'](_0x2b2126(0x1c9))[_0x2b2126(0xd0)](),_0x5ce92d=$(this)['find']('td:eq(12)\x20:nth-child(2)')[_0x2b2126(0xd0)](),_0x3414be=$(this)[_0x2b2126(0x172)](_0x2b2126(0x17a))[_0x2b2126(0xd0)](),_0x1e7480=$(this)[_0x2b2126(0x172)](_0x2b2126(0x108))[_0x2b2126(0xd0)](),_0x1163ae=$(this)[_0x2b2126(0x172)](_0x2b2126(0x2a6))[_0x2b2126(0xd0)](),_0x1ce013=$(this)[_0x2b2126(0x172)]('td:eq(12)\x20:nth-child(15)')[_0x2b2126(0xd0)](),_0x4f5eb3=$(this)[_0x2b2126(0x172)](_0x2b2126(0x138))[_0x2b2126(0xd0)](),_0x2f1b8c=$(this)[_0x2b2126(0x172)](_0x2b2126(0x2b8))[_0x2b2126(0xd0)](),_0x3517f0=$(this)['find'](_0x2b2126(0x2b8))[_0x2b2126(0xd0)](),_0x1d199d=$(this)[_0x2b2126(0x172)](_0x2b2126(0x93))[_0x2b2126(0xd0)](),_0x5eaa65=$(this)[_0x2b2126(0x172)](_0x2b2126(0xba))[_0x2b2126(0xd0)](),_0x45021d=$(this)[_0x2b2126(0x172)]('td:eq(0)\x20:nth-child(4)')[_0x2b2126(0xd0)]();(_0x1d199d==_0x2b2126(0x1fc)||_0x1d199d==null||_0x1d199d==''||_0x1d199d==_0x2b2126(0x1a5)||_0x1d199d==undefined)&&(_0x1d199d=null);(_0x5eaa65==_0x2b2126(0x1fc)||_0x5eaa65==null||_0x5eaa65==''||_0x5eaa65=='undefined'||_0x5eaa65==undefined)&&(_0x5eaa65=null);(_0x5ce92d==_0x2b2126(0x1fc)||_0x5ce92d==null||_0x5ce92d==''||_0x5ce92d==_0x2b2126(0x1a5)||_0x5ce92d==undefined)&&(_0x5ce92d='');(_0x45021d=='null'||_0x45021d==null||_0x45021d==''||_0x45021d==_0x2b2126(0x1a5)||_0x45021d==undefined)&&(_0x45021d='');var _0x2c9e09=![];_0x562c3b=='CalculatedValue'&&(_0x2c9e09=!![],_0x4c7aa9='');_0x203738=='Number'&&$(_0x2b2126(0x29d))['each'](function(){var _0x2bc19e=_0x2b2126,_0x32753e=$(this)[_0x2bc19e(0x172)]('td:eq(12)\x20:nth-child(2)')[_0x2bc19e(0xd0)]();_0x32753e[_0x2bc19e(0xf4)](_0x562c3b)&&(_0x2c9e09=!![]);});var _0x55ae9e='',_0x54a862='';if(_0x203738=='Number')_0x55ae9e=_0x2cc902;else(_0x203738=='Date'||_0x203738==_0x2b2126(0x1e7))&&(_0x54a862=_0x2cc902);_0x564acb==_0x2b2126(0xe8)?_0x564acb=!![]:_0x564acb=![];_0x2ea235==_0x2b2126(0xe8)?_0x2ea235=!![]:_0x2ea235=![];if(_0x203738==_0x2b2126(0xaf)){if(_0x4c7aa9==_0x2b2126(0xe8))_0x4c7aa9=0x1;else _0x4c7aa9=='No'&&(_0x4c7aa9=0x0);}var _0x5330b5=new SP['ClientContext'](),_0x2b7dae=_0x5330b5['get_web']()[_0x2b2126(0x278)]()['getByTitle'](_0x2b2126(0x20c));if(_0x1a41f1==null||_0x1a41f1==''||_0x1a41f1==undefined){var _0x3c4ecf=new SP[(_0x2b2126(0x2c4))](),_0x48d46a=_0x2b7dae[_0x2b2126(0x16c)](_0x3c4ecf);_0x48d46a['set_item'](_0x2b2126(0x27b),_0x562c3b),_0x48d46a['set_item']('ColumnType',_0x203738),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x2d3),_0x16e419),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x208),_0x55ae9e),_0x48d46a['set_item']('DateValidation',_0x54a862),_0x48d46a[_0x2b2126(0x189)]('DropdownValues',_0x2ea235),_0x48d46a[_0x2b2126(0x189)]('DefaultValue',_0x4c7aa9),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x9c),_0x44edd6),_0x48d46a['set_item'](_0x2b2126(0x79),_0x3bffa4),_0x48d46a['set_item']('Mandatory',_0x564acb),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x7d),_0x24e0e6),_0x48d46a[_0x2b2126(0x189)]('FormulaDispaly',_0x419554),_0x48d46a[_0x2b2126(0x189)]('Formula',_0x5ce92d),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x19c),_0x2c9e09),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x121),_0x45021d),_0x48d46a['set_item'](_0x2b2126(0x2d8),_0x1d199d),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x168),_0x5eaa65),_0x48d46a['set_item'](_0x2b2126(0x87),_0x3414be),_0x48d46a['set_item'](_0x2b2126(0x1a8),_0x1e7480),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x174),_0x1163ae),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x1e0),_0x1ce013),_0x48d46a['set_item']('SPListColumn',_0x4f5eb3),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0xf7),_0x2f1b8c),_0x48d46a[_0x2b2126(0x189)]('SPListFilter',_0x3517f0),_0x48d46a[_0x2b2126(0x150)](),_0x5330b5['executeQueryAsync'](function _0x25daf4(){var _0x37eb29=_0x2b2126,_0x3eac0a=_0x48d46a['get_id']();if(_0x2ea235==!![]&&_0x1e7480==_0x37eb29(0x228)){var _0x1f7fb8=$(_0x37eb29(0xfe))[_0x37eb29(0xd0)]();insertDropDNOptions(_0x53d80c,_0x1f7fb8,_0x44edd6,_0x3eac0a);}},function _0x1cee6d(_0x52f7e8,_0x2d1aad){var _0x5e948c=_0x2b2126;alert(_0x5e948c(0x157)+_0x2d1aad[_0x5e948c(0x2ce)]()+'\x0a'+_0x2d1aad[_0x5e948c(0x200)]());});}else{var _0x48d46a=_0x2b7dae[_0x2b2126(0x256)](_0x1a41f1);_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x27b),_0x562c3b),_0x48d46a[_0x2b2126(0x189)]('ColumnType',_0x203738),_0x48d46a['set_item'](_0x2b2126(0x2d3),_0x16e419),_0x48d46a['set_item'](_0x2b2126(0x208),_0x55ae9e),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x2a7),_0x54a862),_0x48d46a[_0x2b2126(0x189)]('DropdownValues',_0x2ea235),_0x48d46a['set_item'](_0x2b2126(0x28a),_0x4c7aa9),_0x48d46a['set_item'](_0x2b2126(0x79),_0x3bffa4),_0x48d46a[_0x2b2126(0x189)]('Mandatory',_0x564acb),_0x48d46a[_0x2b2126(0x189)]('NeedTotal',_0x24e0e6),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0xb2),_0x419554),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x28b),_0x5ce92d),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x19c),_0x2c9e09),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x121),_0x45021d),_0x48d46a[_0x2b2126(0x189)]('MinNumber',_0x1d199d),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x168),_0x5eaa65),_0x48d46a[_0x2b2126(0x189)]('PersonValidation',_0x3414be),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x1a8),_0x1e7480),_0x48d46a[_0x2b2126(0x189)]('SPListSiteAddress',_0x1163ae),_0x48d46a[_0x2b2126(0x189)]('SPListName',_0x1ce013),_0x48d46a['set_item'](_0x2b2126(0x2a8),_0x4f5eb3),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0xf7),_0x2f1b8c),_0x48d46a[_0x2b2126(0x189)](_0x2b2126(0x294),_0x3517f0),_0x48d46a[_0x2b2126(0x150)](),_0x5330b5[_0x2b2126(0x122)](function _0x138efb(){},function _0x41acfe(_0x53df30,_0x3b212b){var _0x4043c0=_0x2b2126;alert(_0x4043c0(0x157)+_0x3b212b[_0x4043c0(0x2ce)]()+'\x0a'+_0x3b212b[_0x4043c0(0x200)]());});}}),$(_0x1f2aa7(0x250))[_0x1f2aa7(0x1f1)](_0x1f2aa7(0x251))[_0x1f2aa7(0x1d7)](_0x1f2aa7(0x8c),null),$(_0x1f2aa7(0x250))['on']('hidden',function(){var _0x17b929=_0x1f2aa7;$(this)[_0x17b929(0x1d7)](_0x17b929(0x1f1),null);});}var formulaCounter=0x0;function addFormula(){var _0x2ebe26=a12_0x23e28b;$('#tblFormula')[_0x2ebe26(0xbf)](_0x2ebe26(0x102)+formulaCounter+_0x2ebe26(0x70));var _0x2606f5=$(_0x2ebe26(0x14c))['val'](),_0x539989=$('#'+_0x2606f5)['find']('tbody\x20tr')['filter'](function(){var _0x2e922f=_0x2ebe26;return $(this)[_0x2e922f(0x172)](_0x2e922f(0x210))[_0x2e922f(0x1f2)]()[_0x2e922f(0xf4)](_0x2e922f(0x13f));}),_0xd41404='';$(_0x539989)[_0x2ebe26(0x13d)](function(_0x49b9e7){var _0x449ea7=_0x2ebe26,_0x31d052=$(this)['find'](_0x449ea7(0x8f))[_0x449ea7(0x1f2)](),_0x12ea32=$(this)[_0x449ea7(0x172)](_0x449ea7(0x26c))['text']();_0xd41404+=_0x449ea7(0x1be)+_0x12ea32+'>'+_0x31d052+_0x449ea7(0x80);}),$(_0x2ebe26(0x74)+formulaCounter)[_0x2ebe26(0x1a9)](html),formulaCounter++;}function getFormula(_0x3c82d4){var _0x98d48=a12_0x23e28b;console[_0x98d48(0x292)]($('#txtDisFormula')['is'](_0x98d48(0x133)));if(formula=='AdvFormula'){if($('#txtActFormula')[_0x98d48(0xd0)]()==''||$(_0x98d48(0x1a0))['val']()=='')return alert(_0x98d48(0x12f)),![];return $('.'+_0x3c82d4[_0x98d48(0xcf)])[_0x98d48(0xd0)]($(_0x98d48(0xd7))[_0x98d48(0xd0)]()[_0x98d48(0x6e)]()),$('#'+_0x3c82d4[_0x98d48(0xcf)])[_0x98d48(0xd0)]($(_0x98d48(0x1a0))[_0x98d48(0xd0)]()[_0x98d48(0x2bf)](/,/g,'')),$(_0x98d48(0x90))['modal']('hide')['data']('bs.modal',null),![];}var _0x527fcb=!![];$('.getComp:visible')[_0x98d48(0x13d)](function(){var _0x1695a8=_0x98d48;if($(this)['val']()=='')return _0x527fcb=![],alert('Please\x20fill\x20details'),![];else{if(this[_0x1695a8(0x26d)]==_0x1695a8(0x299)&&this['selectedIndex']==0x0&&$(this)['val']()==_0x1695a8(0x16e))return _0x527fcb=![],alert(_0x1695a8(0x2ca)),![];}});if(_0x527fcb==![])return![];var _0x924aa3=$(_0x98d48(0x105))[_0x98d48(0x71)](function(){var _0x176e59=_0x98d48;if(this['value']!='')return this['tagName']==_0x176e59(0x299)?this['options'][this[_0x176e59(0x227)]][_0x176e59(0x1f2)]:this[_0x176e59(0xcf)];})[_0x98d48(0x272)](),_0x4235e3,_0x2f71df=$(_0x98d48(0x105))[_0x98d48(0x71)](function(){var _0x20ff8a=_0x98d48;if(this[_0x20ff8a(0xcf)]!='')return this[_0x20ff8a(0x26d)]==_0x20ff8a(0x299)?this[_0x20ff8a(0x1bc)][this['selectedIndex']]['value']=='%'?(_0x4235e3='%','*'):_0x4235e3=='%'?(_0x4235e3='',this[_0x20ff8a(0x1bc)][this['selectedIndex']][_0x20ff8a(0xcf)]+','+'/'+','+_0x20ff8a(0x2c5)):this[_0x20ff8a(0x1bc)][this[_0x20ff8a(0x227)]][_0x20ff8a(0xcf)]:_0x4235e3=='%'?(_0x4235e3='',this[_0x20ff8a(0xcf)]/0x64):this['value'];})[_0x98d48(0x272)]();$('.'+_0x3c82d4[_0x98d48(0xcf)])[_0x98d48(0xd0)](_0x2f71df['toString']()),$('#'+_0x3c82d4['value'])[_0x98d48(0xd0)](_0x924aa3[_0x98d48(0x6e)]()[_0x98d48(0x2bf)](/,/g,'')),$(_0x98d48(0x73))[_0x98d48(0x172)](_0x98d48(0xed))[_0x98d48(0xbb)](),_0x527fcb&&($('#add-formula-modal')[_0x98d48(0x1f1)]('hide')[_0x98d48(0x1d7)](_0x98d48(0x8c),null),$('#add-formula-modal')['on'](_0x98d48(0x1f9),function(){var _0x432200=_0x98d48;$(this)[_0x432200(0x1d7)]('modal',null);}));}var html='';function bindOptionsToDr(_0x1471e0,_0x8d4258){var _0x56150e=a12_0x23e28b;html=_0x56150e(0x82);var _0x529d11='';if(_0x8d4258==_0x56150e(0x264))_0x529d11=$('#'+_0x1471e0)[_0x56150e(0x172)](_0x56150e(0x137))['filter'](function(){var _0x237419=_0x56150e;return $(this)[_0x237419(0x172)](_0x237419(0x210))[_0x237419(0x1f2)]()[_0x237419(0xf4)]('Number')||$(this)[_0x237419(0x172)](_0x237419(0x210))[_0x237419(0x1f2)]()[_0x237419(0xf4)]('CalculatedValue')||$(this)[_0x237419(0x172)](_0x237419(0x210))[_0x237419(0x1f2)]()[_0x237419(0xf4)](_0x237419(0x264));});else _0x8d4258=='CalculatedValue'&&(_0x529d11=$('#'+_0x1471e0)['find'](_0x56150e(0x137))[_0x56150e(0x1d1)](function(){var _0x5f50df=_0x56150e;return $(this)[_0x5f50df(0x172)](_0x5f50df(0x210))[_0x5f50df(0x1f2)]()[_0x5f50df(0xf4)](_0x5f50df(0x13f))||$(this)[_0x5f50df(0x172)](_0x5f50df(0x210))[_0x5f50df(0x1f2)]()['includes'](_0x5f50df(0x19c));}));return $(_0x529d11)['each'](function(_0x13e6e9){var _0x5f0581=_0x56150e,_0x35b09d=$(this)['find'](_0x5f0581(0x8f))[_0x5f0581(0x1f2)](),_0x131410=$(this)[_0x5f0581(0x172)]('td.tdColumn')[_0x5f0581(0x1f2)](),_0x79b00=$(this)[_0x5f0581(0x172)](_0x5f0581(0x210))['text'](),_0x51a792=$(this)['find'](_0x5f0581(0x282))[_0x5f0581(0xd0)]();if(_0x131410[_0x5f0581(0xf4)]('ColumnNumber'))html+='<option\x20value='+_0x131410+'>'+_0x35b09d+_0x5f0581(0x80);else{if(_0x131410[_0x5f0581(0xf4)](_0x5f0581(0x19c)))html+=_0x5f0581(0x1be)+_0x51a792+'>'+_0x35b09d+'</option>';else _0x131410[_0x5f0581(0xf4)](_0x5f0581(0x264))&&(html+=_0x5f0581(0x1be)+_0x51a792+'>'+_0x35b09d+_0x5f0581(0x80));}}),html;}function checkURL(_0x586801){var _0xcd19f8=a12_0x23e28b,_0x4e99f8=new RegExp(_0xcd19f8(0x2b7)+_0xcd19f8(0x100)+'((\x5cd{1,3}\x5c.){3}\x5cd{1,3}))'+_0xcd19f8(0x253)+'(\x5c?[;&a-z\x5cd%_.~+=-]*)?'+_0xcd19f8(0x112),'i');return!!_0x4e99f8['test'](_0x586801);}$(document)[a12_0x23e28b(0x216)](function(){var _0x310ad2=a12_0x23e28b;$(_0x310ad2(0x1da))[_0x310ad2(0x1db)](function(){var _0xf271f1=_0x310ad2,_0x5b5054=$(_0xf271f1(0x78),this)[_0xf271f1(0xd0)]();if(_0x5b5054==_0xf271f1(0x16e))$(_0xf271f1(0x2a4))[_0xf271f1(0x251)](),$('#secDrdn')[_0xf271f1(0x1d2)](_0xf271f1(0x2df)),$(_0xf271f1(0x2de))[_0xf271f1(0x152)](_0xf271f1(0x86)),$('#ddlDRWN')[_0xf271f1(0xd0)]('No');else{if(_0x5b5054=='Link')$(_0xf271f1(0x134))[_0xf271f1(0x251)](),$(_0xf271f1(0x280))[_0xf271f1(0x1d2)]('d-block'),$(_0xf271f1(0x280))[_0xf271f1(0x152)](_0xf271f1(0x2df));else{if(_0x5b5054==_0xf271f1(0x202))$(_0xf271f1(0x134))[_0xf271f1(0x29f)](),$(_0xf271f1(0xd1))[_0xf271f1(0x251)](),$(_0xf271f1(0x280))[_0xf271f1(0x1d2)](_0xf271f1(0x86)),$(_0xf271f1(0x280))[_0xf271f1(0x152)](_0xf271f1(0x2df));else _0x5b5054==_0xf271f1(0x1a1)&&($(_0xf271f1(0x134))[_0xf271f1(0x251)](),$(_0xf271f1(0x280))[_0xf271f1(0x1d2)]('d-block'),$(_0xf271f1(0x280))[_0xf271f1(0x152)](_0xf271f1(0x2df)));}}}),$(_0x310ad2(0x2dd))['change'](function(){var _0x27ca22=_0x310ad2,_0x4d5288=$(_0x27ca22(0x78),this)[_0x27ca22(0xd0)]();if(_0x4d5288==_0x27ca22(0x16e))$(_0x27ca22(0x29c))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$(_0x27ca22(0x29c))['removeClass'](_0x27ca22(0x86)),$('#secTEDrdn')[_0x27ca22(0x1d2)]('d-none'),$(_0x27ca22(0x24c))[_0x27ca22(0x152)]('d-block'),$('#ddlTEDRWN')['val']('No');else{if(_0x4d5288==_0x27ca22(0x144))$(_0x27ca22(0x29c))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$('#txtTECharLimit')['removeClass']('d-block'),$(_0x27ca22(0x24a))[_0x27ca22(0x1d2)]('d-block'),$(_0x27ca22(0x24a))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$(_0x27ca22(0x20d))['hide']();else{if(_0x4d5288==_0x27ca22(0x202))$('#txtTECharLimit')['removeClass'](_0x27ca22(0x2df)),$(_0x27ca22(0x29c))[_0x27ca22(0x152)](_0x27ca22(0x86)),$(_0x27ca22(0x24a))[_0x27ca22(0x1d2)](_0x27ca22(0x86)),$(_0x27ca22(0x24a))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$('.coverbox_fullTE')[_0x27ca22(0x251)]();else _0x4d5288==_0x27ca22(0x1a1)&&($(_0x27ca22(0x29c))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$(_0x27ca22(0x29c))[_0x27ca22(0x1d2)](_0x27ca22(0x86)),$('#secTEDrdn,.optionBoxTE,.drOptTypeTE')['removeClass'](_0x27ca22(0x86)),$(_0x27ca22(0x24a))[_0x27ca22(0x152)](_0x27ca22(0x2df)),$(_0x27ca22(0x20d))['hide']());}}}),$(_0x310ad2(0x106))[_0x310ad2(0x1db)](function(){var _0x5b761b=_0x310ad2,_0x5a1cfa=$(_0x5b761b(0x78),this)[_0x5b761b(0xd0)]();if(_0x5a1cfa=='Select')$('#txtECharLimit')[_0x5b761b(0x152)](_0x5b761b(0x2df)),$(_0x5b761b(0x18d))[_0x5b761b(0x1d2)]('d-block'),$(_0x5b761b(0x1f4))[_0x5b761b(0x1d2)](_0x5b761b(0x2df)),$(_0x5b761b(0x1f4))[_0x5b761b(0x152)](_0x5b761b(0x86));else{if(_0x5a1cfa==_0x5b761b(0x144))$('#txtECharLimit')[_0x5b761b(0x152)]('d-none'),$(_0x5b761b(0x18d))[_0x5b761b(0x1d2)](_0x5b761b(0x86)),$(_0x5b761b(0x76))[_0x5b761b(0x1d2)](_0x5b761b(0x86)),$(_0x5b761b(0x76))[_0x5b761b(0x152)](_0x5b761b(0x2df));else _0x5a1cfa==_0x5b761b(0x202)&&($(_0x5b761b(0x18d))[_0x5b761b(0x1d2)]('d-none'),$(_0x5b761b(0x18d))[_0x5b761b(0x152)](_0x5b761b(0x86)),$(_0x5b761b(0x76))['removeClass'](_0x5b761b(0x86)),$('#secEDrdn,.optionBoxE')[_0x5b761b(0x152)](_0x5b761b(0x2df)));}});});function lengthRange(_0x5be2bc){var _0x1fdb61=a12_0x23e28b,_0x297f4a=[/\D/g['test'](_0x5be2bc[_0x1fdb61(0xcf)]),_0x5be2bc[_0x1fdb61(0xcf)]>0xff,_0x5be2bc[_0x1fdb61(0xcf)]==0x0];_0x297f4a[_0x1fdb61(0xac)](Boolean)&&($(_0x5be2bc)['prop'](_0x1fdb61(0xbd),!![]),setTimeout(function(){var _0xcef60a=_0x1fdb61;_0x297f4a[0x0]&&(_0x5be2bc['value']=_0x5be2bc[_0xcef60a(0xcf)][_0xcef60a(0x2bf)](/\D/g,''));_0x297f4a[0x1]&&(_0x5be2bc[_0xcef60a(0xcf)]=_0x5be2bc['value'][_0xcef60a(0xe4)](0x0,0x2));;_0x297f4a[0x2]&&(_0x5be2bc['value']=_0x5be2bc[_0xcef60a(0xcf)][_0xcef60a(0xe4)](0x0,0x0));;$(_0x5be2bc)['prop'](_0xcef60a(0xbd),![])[_0xcef60a(0xd0)](_0x5be2bc['value'])[_0xcef60a(0xdd)]();},0x64));}function tempActivation(_0x3b039d){var _0x16a2b2=a12_0x23e28b,_0x587702=_0x3b039d[_0x16a2b2(0xcf)],_0x379335=$('input[name=\x27active_option\x27]:checked')[_0x16a2b2(0xd0)](),_0x44aae8='',_0x3fd4f6=new Date(),_0xf3a11a=String[_0x16a2b2(0x129)](_0x16a2b2(0x156),new Date());_0x3fd4f6[_0x16a2b2(0x179)](_0x3fd4f6[_0x16a2b2(0x29a)]()+0xf);var _0x5851f2=arr[_0x16a2b2(0x1d1)](function(_0xb6e286){var _0x436182=_0x16a2b2;return _0xb6e286[_0x436182(0x1d0)]==!![]&&_0xb6e286[_0x436182(0x2c0)]==_0x436182(0x11b);}),_0x37f201=_spPageContextInfo[_0x16a2b2(0x151)];if(_0x379335==_0x16a2b2(0x1e8)){_0x44aae8='This\x20process\x20has\x20been\x20activated\x20as\x20an\x20Trial\x20Run\x20for\x2015\x20days.';var _0x33e54f={'__metadata':{'type':_0x16a2b2(0x19f)},'Active':!![],'TrialStatus':_0x16a2b2(0x1ad),'TrialDate':_0x3fd4f6,'PublishedById':_0x37f201,'PublishedOn':_0xf3a11a};}else{if(_0x379335==_0x16a2b2(0xda)){_0x44aae8=_0x16a2b2(0x276);var _0x33e54f={'__metadata':{'type':_0x16a2b2(0x19f)},'Active':!![],'TrialStatus':_0x16a2b2(0x1ad),'PublishedById':_0x37f201,'PublishedOn':_0xf3a11a};}else{if(_0x379335==_0x16a2b2(0x24b)){_0x44aae8=_0x16a2b2(0x2a5);if(LicBPaas<=_0x5851f2[_0x16a2b2(0x7a)])return alert(_0x16a2b2(0xa4)),![];var _0x33e54f={'__metadata':{'type':_0x16a2b2(0x19f)},'Active':!![],'TrialStatus':_0x16a2b2(0x11b),'PublishedById':_0x37f201,'PublishedOn':_0xf3a11a};}else{if(_0x379335==_0x16a2b2(0x18c)){_0x44aae8=_0x16a2b2(0xd4);var _0x33e54f={'__metadata':{'type':_0x16a2b2(0x19f)},'Active':![],'PublishedById':null,'PublishedOn':null};}}}}var _0x3f9ca5=_spPageContextInfo[_0x16a2b2(0x1ba)],_0x5245b7=_0x3f9ca5+_0x16a2b2(0x14b)+_0x587702+')';$[_0x16a2b2(0x193)]({'url':_0x3f9ca5+_0x16a2b2(0x2c6)+_0x587702+')','type':_0x16a2b2(0xb3),'headers':{'accept':_0x16a2b2(0x24f),'X-RequestDigest':$(_0x16a2b2(0xf8))['val'](),'content-Type':'application/json;odata=verbose','X-Http-Method':'PATCH','If-Match':'*'},'data':JSON[_0x16a2b2(0x1f6)](_0x33e54f),'success':function(_0x3db450){var _0x278e32=_0x16a2b2;getAllTemplate(),alert(_0x44aae8),$(_0x278e32(0xf3))[_0x278e32(0x1f1)](_0x278e32(0x251))[_0x278e32(0x1d7)](_0x278e32(0x8c),null);},'error':function(_0x3d61ff){}});}$(document)['ready'](function(){var _0x441955=a12_0x23e28b;if(IsBpassModules==!![]&&IsDMSModules==!![])$(_0x441955(0x89))[_0x441955(0x29f)](),$(_0x441955(0x8b))[_0x441955(0x29f)](),$(_0x441955(0x23a))[_0x441955(0x29f)](),$(_0x441955(0xd8))[_0x441955(0x251)](),procButtonStyle=_0x441955(0xe0);else{if(IsBpassModules==![]&&IsDMSModules==!![])$('#Tab-Process-Btn')['hide'](),$(_0x441955(0x8b))['hide'](),$(_0x441955(0x23a))[_0x441955(0x251)](),$(_0x441955(0x22b))[_0x441955(0x29f)](),$(_0x441955(0x111))[_0x441955(0x251)](),procButtonStyle='Document';else{if(IsBpassModules==!![]&&IsDMSModules==![])$(_0x441955(0x89))[_0x441955(0x251)](),$('#processapproval')['show'](),$(_0x441955(0x23a))[_0x441955(0x251)](),$(_0x441955(0x22b))['hide'](),$('#newDocProcess')[_0x441955(0x251)](),procButtonStyle=_0x441955(0xe0);else IsBpassModules==![]&&IsDMSModules==![]&&($(_0x441955(0x89))['hide'](),$(_0x441955(0x8b))[_0x441955(0x251)](),$(_0x441955(0x23a))['hide'](),$(_0x441955(0x22b))['hide'](),$(_0x441955(0xd8))[_0x441955(0x251)](),$('#newProcess')['hide']());}}});function tempActivationDoc(_0x8be135,_0x28c930){var _0x132262=a12_0x23e28b,_0x22d7bf=_0x8be135[_0x132262(0x1c7)],_0x2dfcde=![];_0x22d7bf==_0x132262(0x160)?_0x2dfcde=![]:_0x2dfcde=!![];siteURL=_spPageContextInfo[_0x132262(0x1ba)];var _0x376717=siteURL+_0x132262(0x14b)+_0x28c930+')';$['ajax']({'url':siteURL+_0x132262(0x2c6)+_0x28c930+')','type':_0x132262(0xb3),'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x132262(0xf8))[_0x132262(0xd0)](),'content-Type':_0x132262(0x24f),'X-Http-Method':_0x132262(0xb3),'If-Match':'*'},'data':JSON['stringify']({'__metadata':{'type':_0x132262(0x19f)},'Active':_0x2dfcde}),'success':function(_0x1c71e6){var _0x386b69=_0x132262;_0x22d7bf==_0x386b69(0x160)?alert(_0x386b69(0xd4)):alert(_0x386b69(0x2a5)),getAllTemplate();},'error':function(_0xeda478){}});}var formula=a12_0x23e28b(0x28b);$(function(){var _0x3cec4a=a12_0x23e28b;$('.stepnext')['click'](function(){var _0x395319=a12_0x2723;formula=_0x395319(0x13b),$(_0x395319(0x2b0))['hide'](),$(_0x395319(0x91))[_0x395319(0x29f)]();}),$(_0x3cec4a(0x159))[_0x3cec4a(0x1e9)](function(){var _0x507fd7=_0x3cec4a;formula=_0x507fd7(0x28b),$(_0x507fd7(0x91))[_0x507fd7(0x251)](),$(_0x507fd7(0x2b0))['show']();});}),$(document)[a12_0x23e28b(0x216)](function(){var _0x2128f3=a12_0x23e28b;$('#numDefVal,#txtFileSize,#txtTEFileSize')[_0x2128f3(0xf5)](function(){var _0x38ef5d=_0x2128f3;this[_0x38ef5d(0xcf)]!=''&&(parseInt(this[_0x38ef5d(0xcf)])<parseInt(this['min'])&&(this['value']=this['min']),parseInt(this[_0x38ef5d(0xcf)])>parseInt(this[_0x38ef5d(0x94)])&&(this[_0x38ef5d(0xcf)]=this[_0x38ef5d(0x94)]));}),$('#numTEDefVal')[_0x2128f3(0xf5)](function(){var _0x1892ac=_0x2128f3;this['value']!=''&&(parseInt(this[_0x1892ac(0xcf)])<parseInt(this[_0x1892ac(0x13c)])&&(this[_0x1892ac(0xcf)]=this[_0x1892ac(0x13c)]),parseInt(this[_0x1892ac(0xcf)])>parseInt(this[_0x1892ac(0x94)])&&(this[_0x1892ac(0xcf)]=this[_0x1892ac(0x94)]));});});var tblArr=[];function updateTableColId(_0x4f089d){var _0x5abaf6=a12_0x23e28b;getTableColIdToUpdate(_0x4f089d),console[_0x5abaf6(0x292)](tblArr);for(var _0x428732=0x0;_0x428732<tblArr['length'];_0x428732++){getTableId(tblArr[_0x428732][_0x5abaf6(0x2d3)],_0x4f089d,tblArr[_0x428732]['Id']);}}function getTableColIdToUpdate(_0x3784b1){var _0x2a3bfd=a12_0x23e28b;$[_0x2a3bfd(0x193)]({'async':![],'url':_spPageContextInfo[_0x2a3bfd(0x1ba)]+_0x2a3bfd(0x196)+_0x3784b1+_0x2a3bfd(0x23f),'type':_0x2a3bfd(0xad),'headers':{'accept':_0x2a3bfd(0x24f)},'success':function(_0x3dc1e3){var _0x30f7fb=_0x2a3bfd;tblArr=_0x3dc1e3['d'][_0x30f7fb(0xc8)],$('#edit-process-modal')[_0x30f7fb(0x1f1)]('hide')[_0x30f7fb(0x1d7)]('bs.modal',null),$(_0x30f7fb(0x286))['on'](_0x30f7fb(0x1f9),function(){var _0x521ca1=_0x30f7fb;$(this)[_0x521ca1(0x1d7)](_0x521ca1(0x1f1),null);});},'error':function(_0x83d327){var _0x5c4fff=_0x2a3bfd;console[_0x5c4fff(0x292)](JSON['stringify'](_0x83d327));}});}function getTableId(_0x3d54b5,_0x4064f9,_0x4d412b){var _0x5e17b2=a12_0x23e28b;$[_0x5e17b2(0x193)]({'url':_spPageContextInfo[_0x5e17b2(0x1ba)]+_0x5e17b2(0xbe)+_0x4064f9+'\x27\x20and\x20TableIName\x20eq\x20\x27'+_0x3d54b5+'\x27','type':_0x5e17b2(0xad),'async':![],'headers':{'accept':_0x5e17b2(0x24f)},'success':function(_0x432dea){var _0x1653df=_0x5e17b2,_0x4bde6e=_0x432dea['d'][_0x1653df(0xc8)];for(i=0x0;i<_0x4bde6e[_0x1653df(0x7a)];i++){updateSummTblId(_0x4bde6e[i]['Id'],_0x4d412b);}},'error':function(_0x20a1d3){var _0x1d6ed2=_0x5e17b2;console[_0x1d6ed2(0x292)](_0x20a1d3),alert(_0x20a1d3);}});}function updateSummTblId(_0x3cd994,_0x355cf7){var _0x2434ed=a12_0x23e28b,_0xa92ad7={'__metadata':{'type':_0x2434ed(0xab)},'TableIName':_0x355cf7[_0x2434ed(0x6e)]()};$[_0x2434ed(0x193)]({'url':_spPageContextInfo[_0x2434ed(0x1ba)]+_0x2434ed(0x95)+_0x3cd994+'\x27)','type':_0x2434ed(0xb3),'async':![],'headers':{'accept':_0x2434ed(0x24f),'X-RequestDigest':$(_0x2434ed(0xf8))[_0x2434ed(0xd0)](),'content-Type':_0x2434ed(0x24f),'X-Http-Method':_0x2434ed(0x232),'If-Match':'*'},'data':JSON[_0x2434ed(0x1f6)](_0xa92ad7),'success':function(_0x5e49c3){},'error':function(_0x2acd71){console['log'](_0x2acd71),alert(_0x2acd71);}});}function getdata(_0x56afd9){var _0x56983a=a12_0x23e28b,_0x4fac7f=[],_0x278cec=_0x56afd9;return $[_0x56983a(0x193)]({'url':_0x278cec,'headers':{'Accept':_0x56983a(0x24f)},'async':![],'success':function(_0x2b62d7){var _0x3532ee=_0x56983a;_0x4fac7f=_0x2b62d7['d'][_0x3532ee(0xc8)];},'error':function(_0x3364b1){var _0x3e334e=_0x56983a;console[_0x3e334e(0x292)](_0x3e334e(0x265)),console[_0x3e334e(0x292)](_0x3364b1);}}),_0x4fac7f;}$(document)[a12_0x23e28b(0x216)](function(){var _0x3299eb=a12_0x23e28b;$(_0x3299eb(0x15d))[_0x3299eb(0x1e9)](function(){var _0x457b33=_0x3299eb,_0xcda879=$(_0x457b33(0x81))[_0x457b33(0x1f2)]()[_0x457b33(0x2ba)]();$(_0x457b33(0x81))[_0x457b33(0x18e)]()==0x0&&(_0xcda879='');var _0x2cc5c3=$('#ddlIniFilt')[_0x457b33(0xd0)]()['toLowerCase']();$(_0x457b33(0x13a))[_0x457b33(0x18e)]()==0x0&&(_0x2cc5c3='');var _0x2b6d44='';if($(_0x457b33(0x220))[_0x457b33(0xd0)]()==_0x457b33(0x11f))_0x2b6d44=$(_0x457b33(0xdf))[_0x457b33(0x1f2)]()['toLowerCase'](),$(_0x457b33(0xdf))[_0x457b33(0x18e)]()==0x0&&(_0x2b6d44='');else{if($('#ddlIniFilt')[_0x457b33(0xd0)]()=='Office')_0x2b6d44=$('#ddlOfficeFilt\x20option:selected')[_0x457b33(0x1f2)]()['toLowerCase'](),$(_0x457b33(0x2d7))[_0x457b33(0x18e)]()==0x0&&(_0x2b6d44='');else{if($(_0x457b33(0x220))['val']()=='Group')_0x2b6d44=$(_0x457b33(0x10f))[_0x457b33(0x1f2)]()['toLowerCase'](),$(_0x457b33(0x10f))[_0x457b33(0x18e)]()==0x0&&(_0x2b6d44='');else $(_0x457b33(0x220))[_0x457b33(0xd0)]()==_0x457b33(0x123)&&(_0x2b6d44=$('#ddlClientFilt\x20option:selected')[_0x457b33(0x1f2)]()[_0x457b33(0x2ba)](),$(_0x457b33(0xcd))[_0x457b33(0x18e)]()==0x0&&(_0x2b6d44=''));}}var _0x531934='';if(procButtonStyle==_0x457b33(0xe0))_0x531934=_0x457b33(0x23b);else procButtonStyle==_0x457b33(0x15a)&&(_0x531934='docProcessData');var _0xb4be79=$(_0x457b33(0xe2))[_0x457b33(0xd0)]()[_0x457b33(0x2ba)]();$('#ddlStatusFilt\x20option:selected')[_0x457b33(0x18e)]()==0x0&&(_0xb4be79=''),$('#'+_0x531934+'\x20tr')[_0x457b33(0x1d1)](function(){var _0xe3abeb=_0x457b33;$(this)[_0xe3abeb(0x25a)](($(this)[_0xe3abeb(0x172)](_0xe3abeb(0x271))[_0xe3abeb(0x1f2)]()['toLowerCase']()==_0xcda879||_0xcda879=='')&&($(this)[_0xe3abeb(0x172)]('td:eq(3)\x20div.ellipsis-Initiation\x20a')[_0xe3abeb(0x1f2)]()[_0xe3abeb(0x2ba)]()[_0xe3abeb(0x1f7)]()==_0x2cc5c3||_0x2cc5c3=='')&&($(this)[_0xe3abeb(0x172)](_0xe3abeb(0x25c))[_0xe3abeb(0x1f2)]()[_0xe3abeb(0x2ba)]()['indexOf'](_0x2b6d44)>-0x1||_0x2b6d44=='')&&($(this)['find'](_0xe3abeb(0x186))['text']()['toLowerCase']()==_0xb4be79||_0xb4be79==''));});}),$(_0x3299eb(0x1b5))['click'](function(){var _0x4eb9fd=_0x3299eb;$('#ddlPorcFilt')[_0x4eb9fd(0x1e2)](),$(_0x4eb9fd(0x1c4))[_0x4eb9fd(0xbf)](_0x4eb9fd(0x10c));for(i=0x0;i<arr[_0x4eb9fd(0x7a)];i++){arr[i][_0x4eb9fd(0x103)]==procButtonStyle&&$(_0x4eb9fd(0x1c4))['append'](_0x4eb9fd(0x1be)+arr[i]['ID']+'>'+arr[i]['Title']+'</option>');}}),$(_0x3299eb(0x1dc))[_0x3299eb(0x1e9)](function(){var _0x3877fd=_0x3299eb,_0x143d7b='';if(procButtonStyle=='Process')_0x143d7b=_0x3877fd(0x23b);else procButtonStyle==_0x3877fd(0x15a)&&(_0x143d7b='docProcessData');$('#'+_0x143d7b+_0x3877fd(0x12c))[_0x3877fd(0x1d1)](function(){var _0x1ba67d=_0x3877fd;$(this)['css']('display',_0x1ba67d(0x194));});}),$(_0x3299eb(0x1a7))['on'](_0x3299eb(0x109),function(){var _0xff85de=_0x3299eb,_0x31c327=$(this);_0x31c327[_0xff85de(0x172)](_0xff85de(0x2bb))['prop']('selectedIndex',0x0),$(_0xff85de(0xc6))[_0xff85de(0x252)](_0xff85de(0x17e),_0xff85de(0x72));});});function getOptInitComp(_0x31ce48,_0x35485c,_0x4cbb33){var _0xdc0ed1=a12_0x23e28b;$['ajax']({'url':_spPageContextInfo[_0xdc0ed1(0x1ba)]+'/_api/web/lists/getbytitle(\x27'+_0x31ce48+_0xdc0ed1(0x289),'type':_0xdc0ed1(0xad),'async':![],'headers':{'accept':'application/json;odata=verbose','content-type':_0xdc0ed1(0x24f)},'success':function(_0x525166){var _0x277fa2=_0xdc0ed1,_0x18879f=_0x525166['d'][_0x277fa2(0xc8)],_0x5c00f0='',_0x15e2cd='';$('#'+_0x35485c)[_0x277fa2(0x1e2)](),$('#'+_0x35485c)['append'](_0x277fa2(0x10c));for(i=0x0;i<_0x18879f[_0x277fa2(0x7a)];i++){$('#'+_0x35485c)['append']('<option\x20class=\x22Company\x22\x20value='+_0x18879f[i]['ID']+'>'+_0x18879f[i][_0x277fa2(0x2d3)]+_0x277fa2(0x14d));}},'error':function(_0x4b48d6){var _0x3e1fa0=_0xdc0ed1;console[_0x3e1fa0(0x292)](JSON[_0x3e1fa0(0x1f6)](_0x4b48d6));}});}function setDisInit(_0x46ded4){var _0x1b472f=a12_0x23e28b;if(_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x21e)||_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x130)||_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0xe5))_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x130)?$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept')[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x72)):$(_0x1b472f(0xc6))[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x72));else{if(_0x46ded4[_0x1b472f(0xcf)]=='Selective')$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept')[_0x1b472f(0x252)]('display',_0x1b472f(0x72));else{if(_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x11f))getOptInitComp(_0x1b472f(0x96),_0x1b472f(0x18a),''),$(_0x1b472f(0x230))[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x219)),$(_0x1b472f(0x2cf))[_0x1b472f(0x252)](_0x1b472f(0x17e),'none');else{if(_0x46ded4['value']==_0x1b472f(0x2be))getOptInitComp(_0x1b472f(0x239),_0x1b472f(0x1ca),''),$(_0x1b472f(0x1eb))[_0x1b472f(0x252)](_0x1b472f(0x17e),'block'),$('.filterDept,.filterClient,.filterGroup')['css'](_0x1b472f(0x17e),_0x1b472f(0x72));else{if(_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x2af))getOptInitComp(_0x1b472f(0xe6),_0x1b472f(0x269),''),$(_0x1b472f(0xc5))[_0x1b472f(0x252)]('display',_0x1b472f(0x219)),$(_0x1b472f(0xdc))[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x72));else{if(_0x46ded4[_0x1b472f(0xcf)]==_0x1b472f(0x123))getOptInitComp(_0x1b472f(0x2ad),_0x1b472f(0x1e3),''),$(_0x1b472f(0x6f))[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x219)),$('.filterDept,.filterOffice,.filterGroup')[_0x1b472f(0x252)](_0x1b472f(0x17e),_0x1b472f(0x72));else _0x46ded4[_0x1b472f(0x227)]==0x0&&$(_0x1b472f(0xc6))[_0x1b472f(0x252)](_0x1b472f(0x17e),'none');}}}}}}function showMngtTab(_0x1ad7d2,_0x3e132e){var _0x181adc=a12_0x23e28b;$(_0x181adc(0x217))[_0x181adc(0x251)](),$('.activating,.btnMngt,#defination_tab')[_0x181adc(0x29f)](),$(_0x181adc(0x16d))[_0x181adc(0x251)](),$(_0x181adc(0x14f))[_0x181adc(0x1d2)](_0x181adc(0x180)),$(_0x181adc(0xa8))['addClass'](_0x181adc(0x180)),$('.activating\x20span.slidesec')['css']({'width':_0x181adc(0x204),'left':_0x181adc(0x268)}),$(_0x181adc(0xa8))[_0x181adc(0x252)]({'color':_0x181adc(0xb5)}),$(_0x181adc(0x14f))[_0x181adc(0x252)]({'color':_0x181adc(0x26f)}),$(_0x181adc(0x1aa))[_0x181adc(0xd0)](_0x1ad7d2);var _0x519629=arr[_0x181adc(0x172)](_0x148365=>_0x148365['Id']===_0x1ad7d2),_0x42697a=_0x519629['NumberOfRequest']==null?0x0:_0x519629[_0x181adc(0x158)],_0x1dc593=_0x519629['NumberOfRequest_Active']==null?0x0:_0x519629[_0x181adc(0x249)],_0x172c3d='';if(_0x519629['Active']==!![]){if(_0x3e132e=='Licenced')_0x172c3d=_0x181adc(0x1b4),$(_0x181adc(0x1ee))['val'](_0x181adc(0x283));else{if(_0x3e132e==_0x181adc(0x1ad)){_0x172c3d=_0x181adc(0x1fa);var _0x5b2706=String[_0x181adc(0x129)]('{0:dd}\x20{0:MMM}\x20{0:yyyy}',new Date(_0x519629[_0x181adc(0x10b)]));$(_0x181adc(0x1ee))[_0x181adc(0xd0)](_0x5b2706);}}}else _0x519629['Active']==![]&&(_0x172c3d=_0x181adc(0x1b3),$(_0x181adc(0x1ee))[_0x181adc(0xd0)](''));var _0xdc761f=this[_0x181adc(0x176)]['SPClientPeoplePickerDict'][_0x181adc(0xff)];if(_0x519629[_0x181adc(0xfd)]!=null)var _0x3adb92=getUserDetails(_0x519629[_0x181adc(0x298)][_0x181adc(0x240)]);if(_0x519629[_0x181adc(0x1b7)]!=null&&_0x519629[_0x181adc(0x1b7)]!=''){var _0x599547=String[_0x181adc(0x129)]('{0:dd}\x20{0:MMM}\x20{0:yyyy}',new Date(_0x519629['PublishedOn']));$(_0x181adc(0x9e))[_0x181adc(0xd0)](_0x599547);}else $(_0x181adc(0x9e))['val']('');$(_0x181adc(0x24d))['val'](_0x172c3d),$('#txtTotalReq')['val'](_0x42697a),$(_0x181adc(0x288))[_0x181adc(0xd0)](_0x1dc593);let _0xa34db2=document[_0x181adc(0x2b3)](_0x181adc(0x213));for(let _0x5a4fe4=0x0;_0x5a4fe4<_0xa34db2[_0x181adc(0x7a)];_0x5a4fe4++){let _0x42e4d3=0x0;var _0x43d563=_0xa34db2[_0x5a4fe4][_0x181adc(0x23c)](_0x181adc(0x17b))[_0x181adc(0xe4)](0x3)[_0x181adc(0x279)]('?')[0x0][_0x181adc(0x279)]('?')[0x0],_0x8936ff='_vti_bin/afdcache.ashx/authitem/',_0x345a20=_0x43d563[_0x181adc(0x2bf)](_0x8936ff,'');if(_0x519629[_0x181adc(0x27d)][_0x181adc(0x1ab)]['includes'](_0x345a20)){$(_0x181adc(0x242))[_0x181adc(0x261)](_0x181adc(0x17b),''),$('.changemeN')['addClass'](_0x181adc(0x86)),$(_0x181adc(0x183))[_0x181adc(0x1d2)](_0x181adc(0x2df)),$(_0x181adc(0x126))[_0x181adc(0x1d2)](_0x181adc(0x86)),$(_0x181adc(0x126))['addClass'](_0x181adc(0x2df)),$(_0x181adc(0x1dd))[_0x181adc(0x251)]();let _0x425e68=document[_0x181adc(0x2b3)](_0x181adc(0x213));for(let _0x5a9d3c=0x0;_0x5a9d3c<_0x425e68['length'];_0x5a9d3c++){_0x425e68[_0x5a9d3c][_0x181adc(0xc0)][_0x181adc(0x2dc)]=_0x181adc(0x135);}$(_0x181adc(0x18f))[_0x181adc(0xd5)](_0x181adc(0x235),!![]),_0x425e68[_0x5a4fe4][_0x181adc(0x17b)]=_0x425e68[0x0][_0x181adc(0x23c)](_0x181adc(0x17b)),_0x425e68[0x0][_0x181adc(0x17b)]=_0x519629['FileIcon'][_0x181adc(0x1ab)],_0x425e68[0x0][_0x181adc(0xc0)][_0x181adc(0x2dc)]=_0x181adc(0x1d5);break;}else $(_0x181adc(0x117))[_0x181adc(0xd5)](_0x181adc(0x235),!![]),_0xa34db2[_0x5a4fe4][_0x181adc(0xc0)]['className']=_0x181adc(0x135),$(_0x181adc(0x242))[_0x181adc(0x261)](_0x181adc(0x17b),_0x519629[_0x181adc(0x27d)]['Url']),$(_0x181adc(0x1dd))[_0x181adc(0x29f)](),$(_0x181adc(0x183))['removeClass']('d-block'),$(_0x181adc(0x183))[_0x181adc(0x152)](_0x181adc(0x2df)),$(_0x181adc(0x126))['addClass']('d-block'),$('#Upload-user-imageN')[_0x181adc(0x1d2)](_0x181adc(0x2df));}$('#ddlPageColumn')['val'](_0x519629['PageColumn']),$('#txtTitle')[_0x181adc(0xd0)](_0x519629['Title']),$(_0x181adc(0x218))[_0x181adc(0xd0)](_0x519629[_0x181adc(0x2d5)]),$('#tmpTitle')[_0x181adc(0x1f2)](_0x519629[_0x181adc(0x2d3)]),$(_0x181adc(0x255))[_0x181adc(0x1f2)](_0x519629[_0x181adc(0x2d5)]),$(_0x181adc(0x99))[_0x181adc(0x261)](_0x181adc(0x17b),_0x519629[_0x181adc(0x27d)]['Url']),$(_0x181adc(0xd3))[_0x181adc(0xd0)](_0x519629['Details']),$(_0x181adc(0x2a3))[_0x181adc(0xd0)](_0x519629[_0x181adc(0xb4)]),$(_0x181adc(0x101))[_0x181adc(0xd0)](_0x519629[_0x181adc(0x17d)]);var _0xedcd82=_0x519629[_0x181adc(0x28e)],_0xcddfb1='';if(_0xedcd82==_0x181adc(0x128))$(_0x181adc(0x20e))['val'](_0x519629['ThemeColor']),$(_0x181adc(0x192))[_0x181adc(0x29f)](),$('.customselect')['hide'](),_0xcddfb1=_0x181adc(0x2d2);else{if(_0xedcd82==_0x181adc(0x22f))$(_0x181adc(0x10e))[_0x181adc(0xd0)](_0x519629[_0x181adc(0x231)]),$(_0x181adc(0x7b))[_0x181adc(0x29f)](),$(_0x181adc(0x192))['hide'](),_0xcddfb1=_0x181adc(0x1af);else _0xedcd82==_0x181adc(0xa5)&&(_0xcddfb1=_0x181adc(0x1f3),$('.customselect')[_0x181adc(0x251)](),$(_0x181adc(0x192))[_0x181adc(0x251)]());}$(_0x181adc(0x7c)+_0xcddfb1+'\x27]')[_0x181adc(0xd5)](_0x181adc(0x235),!![]);if(_0x519629[_0x181adc(0xc9)]!=null)for(i=0x0;i<_0x519629[_0x181adc(0xc9)][_0x181adc(0xc8)][_0x181adc(0x7a)];i++){var _0xdc761f=this[_0x181adc(0x176)]['SPClientPeoplePickerDict'][_0x181adc(0x223)],_0x3adb92=GetUserLogin(_0x519629['ProcessOwnerId']['results'][i]);_0xdc761f[_0x181adc(0x1ae)](_0x3adb92);}_0x519629[_0x181adc(0x1d0)]==!![]?($('#btnActive')[_0x181adc(0x152)](_0x181adc(0x180)),$('#btnActive')[_0x181adc(0x261)]('aria-pressed',_0x181adc(0x160))):($(_0x181adc(0x1e1))[_0x181adc(0x1d2)](_0x181adc(0x180)),$(_0x181adc(0x1e1))[_0x181adc(0x261)](_0x181adc(0x29e),_0x181adc(0xc4))),$(_0x181adc(0x9b))['each'](function(){var _0x578e7f=_0x181adc;if($(this)[_0x578e7f(0xd0)]()==_0x519629[_0x578e7f(0x14a)])return $(_0x578e7f(0x147))[_0x578e7f(0xd5)]('checked',![]),$(_0x578e7f(0xf9))[_0x578e7f(0xd0)](_0x519629['RequestFor']),$(_0x578e7f(0xf9))[_0x578e7f(0x29f)](),$('#txtReqFor')['hide'](),![];else $('#chkReqFor')['prop']('checked',!![]),$(_0x578e7f(0x162))[_0x578e7f(0xd0)](_0x519629[_0x578e7f(0x14a)]),$(_0x578e7f(0xf9))['hide'](),$(_0x578e7f(0x162))[_0x578e7f(0x29f)]();});}function sortTemplate(_0xcf88eb){var _0x3e2292=a12_0x23e28b,_0xf9f8e6;_0xf9f8e6=arr;if(_0xcf88eb==_0x3e2292(0x2d3))_0xf9f8e6[_0x3e2292(0xeb)](function(_0x4b57bf,_0x5e9f3d){var _0x4ef79f=_0x3e2292;if(_0x4b57bf['Title']!=null&&_0x5e9f3d[_0x4ef79f(0x2d3)]!=null){let _0x1e6d39=_0x4b57bf[_0x4ef79f(0x2d3)]['toLowerCase'](),_0x263a96=_0x5e9f3d[_0x4ef79f(0x2d3)][_0x4ef79f(0x2ba)]();if(_0x1e6d39<_0x263a96)return-0x1;if(_0x1e6d39>_0x263a96)return 0x1;return 0x0;}});else{if(_0xcf88eb==_0x3e2292(0x2d5))_0xf9f8e6['sort'](function(_0x49f9a3,_0x42ce2a){var _0x41751f=_0x3e2292;if(_0x49f9a3[_0x41751f(0x2d5)]!=null&&_0x42ce2a['TemplateName']!=null){let _0x101bf9=_0x49f9a3[_0x41751f(0x2d5)][_0x41751f(0x2ba)](),_0x4e834b=_0x42ce2a['TemplateName']['toLowerCase']();if(_0x101bf9<_0x4e834b)return-0x1;if(_0x101bf9>_0x4e834b)return 0x1;return 0x0;}});else{if(_0xcf88eb==_0x3e2292(0x158))_0xf9f8e6[_0x3e2292(0xeb)](function(_0x12bd75,_0x2b746a){var _0xd24ffe=_0x3e2292;return _0x12bd75[_0xd24ffe(0x158)]-_0x2b746a[_0xd24ffe(0x158)];}),_0xf9f8e6[_0x3e2292(0x221)]();else{if(_0xcf88eb==_0x3e2292(0x249))_0xf9f8e6[_0x3e2292(0xeb)](function(_0x1b1936,_0x515315){var _0x2763fa=_0x3e2292;return _0x1b1936[_0x2763fa(0x249)]-_0x515315[_0x2763fa(0x249)];}),_0xf9f8e6['reverse']();else{if(_0xcf88eb==_0x3e2292(0x27c))_0xf9f8e6[_0x3e2292(0xeb)](function(_0x54fe83,_0x53365e){var _0x1c5544=_0x3e2292;return new Date(_0x54fe83['Modified'])-new Date(_0x53365e[_0x1c5544(0x27c)]);}),_0xf9f8e6[_0x3e2292(0x221)]();else _0xcf88eb=='Created'&&(_0xf9f8e6[_0x3e2292(0xeb)](function(_0x3ec2ab,_0x3234da){var _0x16ddfa=_0x3e2292;return new Date(_0x3ec2ab[_0x16ddfa(0x1d3)])-new Date(_0x3234da[_0x16ddfa(0x1d3)]);}),_0xf9f8e6[_0x3e2292(0x221)]());}}}}if(_0xf9f8e6!=null){var _0x73f0e0='',_0x43991a='';$['each'](_0xf9f8e6,function(_0x592eca,_0x1ea562){var _0x502de9=_0x3e2292,_0x4e30f2='',_0x59aef5;console[_0x502de9(0x292)](_0x1ea562[_0x502de9(0x2d3)]);_0x1ea562['NumberOfSteps']==null||_0x1ea562['NumberOfSteps']==null?_0x59aef5=0x0:_0x59aef5=_0x1ea562[_0x502de9(0xaa)];var _0x218e16=_0x1ea562['NumberOfRequest']==null?0x0:_0x1ea562['NumberOfRequest'],_0xcc9cb3=_0x1ea562['NumberOfRequest_Active']==null?0x0:_0x1ea562[_0x502de9(0x249)],_0x142812=new Date(_0x1ea562['TrialDate']),_0x453f78=new Date(),_0x1210f7='',_0x48d9e2='';if(_0x1ea562['Active']==!![]&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0xe0)&&(_0x1ea562['TrialStatus']==_0x502de9(0x11b)||_0x1ea562[_0x502de9(0x2c0)]=='Not\x20Applied'||_0x1ea562['TrialStatus']==''||_0x1ea562[_0x502de9(0x2c0)]==null))_0x4e30f2=_0x502de9(0x180),_0x48d9e2=_0x502de9(0x1d0);else _0x1ea562[_0x502de9(0x1d0)]==!![]&&_0x1ea562['TrialStatus']=='Running'&&_0x142812>_0x453f78&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0xe0)&&(_0x4e30f2=_0x502de9(0x143),_0x1210f7=_0x502de9(0x2c7)+String[_0x502de9(0x129)](_0x502de9(0x1b2),_0x142812),_0x48d9e2=_0x502de9(0x229));if(_0x1ea562[_0x502de9(0x1d0)]==![]&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0xe0)&&(_0x1ea562[_0x502de9(0x2c0)]==_0x502de9(0x11b)||_0x1ea562[_0x502de9(0x2c0)]=='Not\x20Applied'||_0x1ea562[_0x502de9(0x2c0)]==''||_0x1ea562[_0x502de9(0x2c0)]==null))_0x4e30f2='',_0x48d9e2=_0x502de9(0x23d);else{if(_0x1ea562['Active']==![]&&_0x1ea562[_0x502de9(0x2c0)]==_0x502de9(0x27e)&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0xe0))_0x4e30f2='',_0x1210f7=_0x502de9(0x22d),_0x48d9e2=_0x502de9(0x23d);else{if(_0x1ea562[_0x502de9(0x1d0)]==!![]&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0x15a))_0x4e30f2='active',_0x48d9e2=_0x502de9(0x1d0);else _0x1ea562[_0x502de9(0x1d0)]==![]&&_0x1ea562[_0x502de9(0x103)]==_0x502de9(0x15a)&&(_0x4e30f2='',_0x48d9e2=_0x502de9(0x23d));}}if(_0x1ea562[_0x502de9(0x2c0)]=='Running'&&_0x142812>_0x453f78){}else{if(_0x1ea562['TrialStatus']=='Running'&&_0x142812<_0x453f78){}}var _0x1a24a1;if(_0x1ea562[_0x502de9(0x259)]==_0x502de9(0x11f))_0x1a24a1=_0x1ea562[_0x502de9(0x11f)]['results']['map'](function(_0x51b1bb){var _0x1188ce=_0x502de9;return _0x51b1bb[_0x1188ce(0x2d3)];})[_0x502de9(0x1ac)](',');else{if(_0x1ea562['Initiation']==_0x502de9(0x2be))_0x1a24a1=_0x1ea562[_0x502de9(0x239)]['results']['map'](function(_0x1d9dda){return _0x1d9dda['Title'];});else{if(_0x1ea562[_0x502de9(0x259)]=='Group')_0x1a24a1=_0x1ea562[_0x502de9(0x2af)][_0x502de9(0xc8)][_0x502de9(0x71)](function(_0x333da1){var _0x4cceba=_0x502de9;return _0x333da1[_0x4cceba(0x2d3)];});else _0x1ea562[_0x502de9(0x259)]==_0x502de9(0x123)&&(_0x1a24a1=_0x1ea562[_0x502de9(0x2d9)]['results'][_0x502de9(0x71)](function(_0x373d41){var _0x2d6382=_0x502de9;return _0x373d41[_0x2d6382(0x2d3)];}));}}var _0xbebf72=_0x1ea562[_0x502de9(0x2c0)];if(_0x1ea562[_0x502de9(0x103)]==_0x502de9(0x15a)&&_0xcc9cb3>0x0)_0x43991a+=_0x502de9(0x113)+_0x1ea562[_0x502de9(0x2d3)]+_0x502de9(0xb8)+_0x1ea562['TemplateName']+_0x502de9(0x24e)+_0x1a24a1+'</div><div\x20class=\x27ellipsis-filtActive\x27\x20style=\x27display:none\x27>'+_0x48d9e2+_0x502de9(0x2db)+_0x1ea562['ID']+',\x22'+_0x502de9(0x259)+'\x22)\x27>\x20'+_0x1ea562[_0x502de9(0x259)]+_0x502de9(0xe9)+_0x1ea562['ID']+',\x22'+_0x502de9(0x1f0)+_0x502de9(0x19e)+_0x59aef5+'\x20Steps</a></div></td>\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27ellipsis-2\x20\x27><span\x20class=\x27sortMaxReq\x27>'+_0x218e16+_0x502de9(0x148)+_0xcc9cb3+_0x502de9(0x173)+_0x1ea562['TrialStatus']+_0x502de9(0x1cc)+_0x4e30f2+'\x27\x20\x20aria-pressed=\x27'+_0x1ea562[_0x502de9(0x1d0)]+'\x27\x20autocomplete=\x27off\x27\x20onclick=\x27tempActivationDoc(this,'+_0x1ea562['ID']+_0x502de9(0x2b5)+_0x1ea562['ID']+'\x27\x20/>\x20<a\x20type=\x27button\x27\x20href=\x27#\x27\x20class=\x27custom-edit-btn\x27\x20onclick=\x27deletetemp('+_0x1ea562['ID']+_0x502de9(0x2c8)+_0x1ea562[_0x502de9(0x1d3)]+'</td>\x20</tr>';else{if(_0x1ea562[_0x502de9(0x103)]=='Document'&&_0xcc9cb3==0x0)_0x43991a+=_0x502de9(0x113)+_0x1ea562[_0x502de9(0x2d3)]+_0x502de9(0xb8)+_0x1ea562['TemplateName']+_0x502de9(0x1b8)+_0x1a24a1+_0x502de9(0x187)+_0x48d9e2+'</div>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27ellipsis-3\x27>Document\x20Approval</div>\x20</td>\x20<td\x20class=\x27w-10\x27><div\x20class=\x27table-title-pera\x20ellipsis-Initiation\x27>Initiator\x20:<a\x20data-toggle=\x27modal\x27\x20href=\x27#\x27\x20data-target=\x27#stepsapprover\x27\x20onclick=\x27getTempID('+_0x1ea562['ID']+',\x22'+_0x502de9(0x259)+_0x502de9(0x19e)+_0x1ea562[_0x502de9(0x259)]+'</a></div><div\x20class=\x27table-title-pera\x20ellipsis-Init\x27>Steps\x20:<a\x20class=\x27add-column-btn\x27\x20data-toggle=\x27modal\x27\x20href=\x27#\x27\x20data-target=\x27#stepsapprover\x27\x20onclick=\x27getTempID('+_0x1ea562['ID']+',\x22'+_0x502de9(0x1f0)+_0x502de9(0x19e)+_0x59aef5+_0x502de9(0x15e)+_0x218e16+'</span>\x20Total\x20Requests</div>\x20<div\x20class=\x27ellipsis-2\x20sortMaxActReq\x27>\x20'+_0xcc9cb3+_0x502de9(0x173)+_0x1ea562[_0x502de9(0x2c0)]+_0x502de9(0x1cc)+_0x4e30f2+_0x502de9(0xfb)+_0x1ea562[_0x502de9(0x1d0)]+'\x27\x20autocomplete=\x27off\x27\x20onclick=\x27tempActivationDoc(this,'+_0x1ea562['ID']+_0x502de9(0x2a2)+_0x1ea562['ID']+_0x502de9(0xf6)+_0x1ea562['ID']+_0x502de9(0x1a6)+_0x1ea562['ID']+',this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></div>\x20</td><td\x20style=\x27display:none\x27>'+_0x1ea562[_0x502de9(0x1d3)]+_0x502de9(0x234);else{if(_0x1ea562[_0x502de9(0x103)]=='Process'&&_0xcc9cb3>0x0)_0x73f0e0+=_0x502de9(0x23e)+_0x1ea562[_0x502de9(0x27d)][_0x502de9(0x1ab)]+'\x27\x20alt=\x27process\x27\x20class=\x27table-icon-box\x27>\x20</td>\x20<td\x20class=\x27w-20\x27>\x20<div\x20class=\x27table-title\x20mb10\x20ellipsis-2\x20sortProcName\x27><a\x20href=\x27#\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#new_Procesing_tbs\x27\x20onclick=\x27showMngtTab('+_0x1ea562['ID']+')\x27>'+_0x1ea562['Title']+_0x502de9(0x1ea)+_0x1ea562[_0x502de9(0x2d5)]+'</div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-initFilt\x27\x20style=\x27display:none\x27>'+_0x1a24a1+_0x502de9(0x187)+_0x48d9e2+_0x502de9(0xb6)+_0x1ea562[_0x502de9(0x14a)]+_0x502de9(0xa7)+_0x1ea562['ID']+',\x22'+_0x502de9(0x259)+_0x502de9(0x19e)+_0x1ea562[_0x502de9(0x259)]+_0x502de9(0xe9)+_0x1ea562['ID']+',\x22'+_0x502de9(0x1f0)+'\x22)\x27>\x20'+_0x59aef5+_0x502de9(0xde)+_0x218e16+'</span>\x20Total\x20Requests</div>\x20<div\x20class=\x27ellipsis-2\x20sortMaxActReq\x27>'+_0xcc9cb3+'\x20\x20Active\x20Requests\x20</div>\x20</td>\x20<td\x20class=\x27w-10\x27>\x20<button\x20type=\x27button\x27\x20value=\x27\x27\x20class=\x27btn\x20btn-sm\x20btn-secondary\x20btn-toggle\x20'+_0x4e30f2+_0x502de9(0xc3)+_0x1ea562[_0x502de9(0x1d0)]+_0x502de9(0xf1)+_0x1ea562[_0x502de9(0x1d0)]+','+_0x1ea562['Id']+',\x22'+_0xbebf72+_0x502de9(0x2da)+_0x1ea562[_0x502de9(0x10b)]+_0x502de9(0x7e)+_0x1210f7+_0x502de9(0x262)+_0x1ea562['ID']+_0x502de9(0x1a6)+_0x1ea562['ID']+',this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a></div>\x20</td><td\x20style=\x27display:none\x27>'+_0x1ea562[_0x502de9(0x1d3)]+_0x502de9(0x234);else _0x1ea562[_0x502de9(0x103)]==_0x502de9(0xe0)&&_0xcc9cb3==0x0&&(_0x73f0e0+='<tr>\x20<td\x20class=\x27w-7\x27>\x20<img\x20src=\x27'+_0x1ea562['FileIcon']['Url']+_0x502de9(0x260)+_0x1ea562['ID']+')\x27>'+_0x1ea562['Title']+'</a></div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-1\x20sortTempName\x27>'+_0x1ea562[_0x502de9(0x2d5)]+'</div>\x20<div\x20class=\x27table-title-pera\x20ellipsis-initFilt\x27\x20style=\x27display:none\x27>'+_0x1a24a1+'</div><div\x20class=\x27ellipsis-filtActive\x27\x20style=\x27display:none\x27>'+_0x48d9e2+_0x502de9(0x16b)+_0x1ea562[_0x502de9(0x14a)]+_0x502de9(0xa7)+_0x1ea562['ID']+',\x22'+_0x502de9(0x259)+_0x502de9(0x19e)+_0x1ea562['Initiation']+_0x502de9(0xe9)+_0x1ea562['ID']+',\x22'+'Steps'+_0x502de9(0x19e)+_0x59aef5+'\x20Steps</a></div></td>\x20\x20<td\x20class=\x27w-10\x27>\x20<div\x20class=\x27ellipsis-2\x20\x27><span\x20class=\x27sortMaxReq\x27>'+_0x218e16+_0x502de9(0x146)+_0xcc9cb3+'\x20\x20Active\x20Requests\x20</div>\x20</td>\x20<td\x20class=\x27w-10\x27>\x20<button\x20type=\x27button\x27\x20value=\x27\x27\x20class=\x27btn\x20btn-sm\x20btn-secondary\x20btn-toggle\x20'+_0x4e30f2+_0x502de9(0xc3)+_0x1ea562[_0x502de9(0x1d0)]+_0x502de9(0xf1)+_0x1ea562['Active']+','+_0x1ea562['Id']+_0x502de9(0xec)+_0xbebf72+_0x502de9(0x15f)+_0x1ea562[_0x502de9(0x10b)]+_0x502de9(0x7e)+_0x1210f7+_0x502de9(0x114)+_0x1ea562['ID']+_0x502de9(0xf6)+_0x1ea562['ID']+_0x502de9(0xf2)+_0x1ea562['ID']+',this)\x27>\x20<i\x20class=\x27fa\x20fa-trash-o\x27\x20></i>\x20</a>\x20</div>\x20</td><td\x20style=\x27display:none\x27>'+_0x1ea562[_0x502de9(0x1d3)]+_0x502de9(0x234));}}});if($(_0x3e2292(0x8b))['is'](':visible'))$('#allTemplateData\x20tbody')['html'](_0x73f0e0);else $(_0x3e2292(0x22b))['is'](_0x3e2292(0x133))&&$(_0x3e2292(0x293))[_0x3e2292(0x1a9)](_0x43991a);}}function getUserDetails(_0xa5c92){var _0x406842=a12_0x23e28b,_0x5ba1ed=_0x406842(0xef)+_0xa5c92+'\x27\x20',_0x3d0fb3='';$[_0x406842(0x184)](getItemsWithQueryItems('Employees',_0x5ba1ed))[_0x406842(0x247)](function(_0x121a19){var _0x2712e5=_0x406842;UResults=_0x121a19[_0x2712e5(0xc8)];var _0x14c66b=UResults[0x0];if(UResults[_0x2712e5(0x7a)]>0x0)_0x14c66b[_0x2712e5(0x203)][_0x2712e5(0xc8)][_0x2712e5(0x7a)]>0x0?attachmentUrl=_0x14c66b[_0x2712e5(0x203)][_0x2712e5(0xc8)][0x0][_0x2712e5(0x131)]:attachmentUrl=_spPageContextInfo[_0x2712e5(0x1ba)]+_0x2712e5(0x2c2)+escapeProperly(_0x14c66b[_0x2712e5(0x1bd)][_0x2712e5(0x240)]),_0x3d0fb3+=_0x2712e5(0xae)+attachmentUrl+_0x2712e5(0x1d8),_0x3d0fb3+=_0x2712e5(0x258)+_0x14c66b[_0x2712e5(0x1bd)][_0x2712e5(0x1a4)]+'\x20'+_0x14c66b['LogonName'][_0x2712e5(0x22a)]+_0x2712e5(0x291),_0x3d0fb3+=_0x2712e5(0x8d)+_0xa5c92+'\x22>'+_0xa5c92+_0x2712e5(0x11c),_0x3d0fb3+=_0x2712e5(0xea);else{var _0x3f96ba=_0x2712e5(0x290)+_0xa5c92+'\x27&$top=5000';$['when'](getItemsWithQueryItems(_0x2712e5(0xfc),_0x3f96ba))[_0x2712e5(0x247)](function(_0x415835){var _0x3bb0d0=_0x2712e5;UResults=_0x415835['results'];var _0x319430=UResults[0x0];UResults[_0x3bb0d0(0x7a)]>0x0&&(_0x319430['AttachmentFiles'][_0x3bb0d0(0xc8)][_0x3bb0d0(0x7a)]>0x0?attachmentUrl=_0x319430[_0x3bb0d0(0x203)][_0x3bb0d0(0xc8)][0x0][_0x3bb0d0(0x131)]:attachmentUrl=_spPageContextInfo[_0x3bb0d0(0x1ba)]+_0x3bb0d0(0x2c2)+escapeProperly(_0x319430['email']),_0x3d0fb3+=_0x3bb0d0(0xae)+attachmentUrl+_0x3bb0d0(0x1d8),_0x3d0fb3+=_0x3bb0d0(0x258)+_0x319430[_0x3bb0d0(0xd9)][_0x3bb0d0(0x2d3)]+'\x20</h3>',_0x3d0fb3+='<p\x20class=\x22member-email\x20text-ellipsis\x22><a\x20href=\x22mailto:'+_0xa5c92+'\x22>'+_0xa5c92+_0x3bb0d0(0x11c),_0x3d0fb3+='</div></div></div>');});}}),$(_0x406842(0x149))[_0x406842(0x1a9)](_0x3d0fb3);}
+ $(document).ready(function(){
+     $("#liManagement").click(function(){
+	  $('#defination_tab').hide();$('#Management_tab').show();
+	});
+	$("#liDefination").click(function(){
+	  $('#defination_tab').show();$('#Management_tab').hide();
+	});
+	$('#txtStepName').keypress(function (e) {
+	   var regex = new RegExp("^[a-zA-Z0-9@ [\\] ( ) _ { }]*$");
+	   // var regex = new RegExp('[a-z,A-Z,0-9,~,-,_,\',",;,:,!,@,#,$,,^,&,*,(,),[,\\],\?,{,},|,+,=,<,>,~,`,\\\\,\,,\/,.]', 'g');
+	   // var regex = new RegExp('[a-z,A-Z,0-9,_,@,(,),[,\\],{,}]', 'g');
+
+	    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+	    if (regex.test(str)) {
+	        return true;
+	    }	
+	    e.preventDefault();
+	    return false;
+	});
+	$('#txtTitle,#txtTemplate,#txtReqFor,#txtLabel,#txtTELabel,#txtHeader,#txtEHeader').blur(function (e) {
+	   // var regex = new RegExp("^[a-zA-Z0-9~@ # $ \[\]\ & ( ) _  { } ' ,  .  ;  ?  %]*$");
+	   // var regex = new RegExp('[a-z,A-Z,0-9,~,-,_,\',",;,:,!,@,#,$,,^,&,*,(,),[,\\],\?,{,},|,+,=,<,>,~,`,\\\\,\,,\/,.]', 'g');
+	    var regex = new RegExp('[a-z,A-Z,0-9,_,@,(,),[,\\],{,},#, $,&,\' ,.,  ;,  ? , % ]', 'g');
+
+	    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+		     var checkValue = new String($(this).val());
+			 var newValue = '';		
+			
+	    if (regex.test(str)) {
+	        return true;
+	    }	
+	    e.preventDefault();
+	    return false;
+	});
+});
+
+var procButtonStyle="";
+$(document).ready(function(){
+	var QueryGetProcessAdmin =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=*,Contributors/Title,Department/DepartmentName,Department/ID&$expand=Contributors,Department&$filter=CompanyId eq '" +titanForWork.getQueryStringParameter('CompanyId')+ "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and (WebPartName eq 'Process Admin')";
+		QueryResultProcessAdmin = getdata(QueryGetProcessAdmin);
+		if(QueryResultProcessAdmin.length == 0)
+		{
+			alert("Unauthorized Access.\nYou don't have permissions.")
+			window.location.replace("approvals.aspx");
+		}
+	
+
+		$("#spTEFormula").click(function(){
+			formula="AdvFormula";
+			$(".normalFormula").hide();
+		    $(".advanceFormula").show();
+		    var disFormula =$("#txtTEFormula").val();
+		    var actFormula=$("#actualTEFormula").val();
+		    $("#txtDisFormula").val(disFormula);
+		    $("#txtActFormula").val(actFormula);  	
+		}); 
+		$("#spFormula").click(function(){
+		var disFormula =$("#txtFormula").val();
+		    var actFormula=$("#actualFormula").val();
+		    if(disFormula=="" && actFormula==""){}
+		    else{
+				formula="AdvFormula";
+				$(".normalFormula").hide();
+			    $(".advanceFormula").show();
+			    var disFormula =$("#txtFormula").val();
+			    var actFormula=$("#actualFormula").val();
+			    $("#txtDisFormula").val(disFormula);
+			    $("#txtActFormula").val(actFormula);
+		    }  	
+		});
+$('input[id$="'+DynamicId+'"]').on('change', function(){
+    alert('People Picker Value Changed');
+});
+	 $('#activation').on('hidden.bs.modal', function() {
+	 	$("input:radio[name='active_option']").prop('checked',false);
+	 });
+	$("#ddlNumVal").on("change",function(){
+		if($(this).val()=="Integer" && $("#ddlColumn").text()=="Number"){
+		   var minNum="";
+		   var maxNum="";
+		   var defNum="";
+			if($("#txtNumMin").val()!=""){
+				minNum=Math.trunc($("#txtNumMin").val())
+			}
+			if($("#txtNumMax").val()!=""){
+				maxNum=Math.trunc($("#txtNumMax").val())
+			}
+			if($("#numDefVal").val()!=""){
+				defNum=Math.trunc($("#numDefVal").val())
+			}
+			$("#txtNumMin").val(minNum);
+			$("#txtNumMax").val(maxNum);
+			$("#numDefVal").val(defNum);
+			  
+		}
+	}); 
+	$('#txtNumMin,#txtNumMax,#numDefVal').keyup(function(){
+		if($("#ddlNumVal").val()=="Integer"){
+			if($(this).val() == '0'){
+		      $(this).val('');  
+		    }
+		    if (this.value.match(/[^0-9]/g)) {
+		      this.value = this.value.replace(/[^0-9]/g, '');
+		 	}
+		}	    
+ 	});
+ 	$("#ddlTENumVal").on("change",function(){
+		if($(this).val()=="Integer" && $("#ddlTEColumn").val()=="Number"){
+		   var minNum="";
+		   var maxNum="";
+		   var defNum="";
+			if($("#txtTENumMin").val()!=""){
+				minNum=Math.trunc($("#txtTENumMin").val())
+			}
+			if($("#txtTENumMax").val()!=""){
+				maxNum=Math.trunc($("#txtTENumMax").val())
+			}
+			if($("#numTEDefVal").val()!=""){
+				defNum=Math.trunc($("#numTEDefVal").val())
+			}
+			$("#txtTENumMin").val(minNum);
+			$("#txtTENumMax").val(maxNum);
+			$("#numTEDefVal").val(defNum);
+			  
+		}
+	}); 
+	$('#txtTENumMin,#txtTENumMax,#numTEDefVal').keyup(function(){
+		if($("#ddlTENumVal").val()=="Integer"){
+			if($(this).val() == '0'){
+		      $(this).val('');  
+		    }
+		    if (this.value.match(/[^0-9]/g)) {
+		      this.value = this.value.replace(/[^0-9]/g, '');
+		 	}
+		}	    
+ 	});
+ 	$('#ddlPersonValid').prop('disabled', true);
+ 	$("#ddlPerson").on("change",function(){
+		if($(this).val()=="Initiator" || $(this).val()=="Manager"){
+			$("#ddlPersonValid").val("Single");
+			$('#ddlPersonValid').prop('disabled', true);
+		}else if($(this).val()=="HOD"){
+			$("#ddlPersonValid").val("Multiple");
+			$('#ddlPersonValid').prop('disabled', true);
+		}else if($(this).val()=="Anyone"){
+			$('#ddlPersonValid').prop('disabled', false);
+		}
+	});
+	$('#ddlTEPersonValid').prop('disabled', true);
+	$("#ddlTEPerson").on("change",function(){
+		if($(this).val()=="Initiator" || $(this).val()=="Manager"){
+			$("#ddlTEPersonValid").val("Single");
+			$('#ddlTEPersonValid').prop('disabled', true);
+		}else if($(this).val()=="HOD"){
+			$("#ddlTEPersonValid").val("Multiple");
+			$('#ddlTEPersonValid').prop('disabled', true);
+		}else if($(this).val()=="Anyone"){
+			$('#ddlTEPersonValid').prop('disabled', false);
+		}
+	}); 
+	$("#ddlDateVal").on("change",function(){
+		if($(this).val()=="Any Date"){
+			$("#numDefVal").attr({
+			   "max" : "",
+			   "min" : "",
+			});
+			$('#numDefVal').prop('disabled', false);
+			$("#numDefVal").val("");
+		}
+		else if($(this).val()=="Today Only"){
+			$("#numDefVal").val(0);
+			$('#numDefVal').prop('disabled', true);
+			$("#numDefVal").attr({
+			   "max" : "",
+			   "min" : ""			   
+			});
+		}else if($(this).val()=="Past Date"){
+			$("#numDefVal").attr({
+			   "max" : -1,
+			   "min": ""
+			});
+			$('#numDefVal').prop('disabled', false);
+			$("#numDefVal").val("");
+		}else if($(this).val()=="Past Date included Today"){
+			$("#numDefVal").attr({
+			   "max" : 0,
+			   "min": "",
+			   "value" : ""
+			});
+			$('#numDefVal').prop('disabled', false);
+			$("#numDefVal").val("");
+		}else if($(this).val()=="Future Date"){
+			$("#numDefVal").attr({
+			   "max" : "",
+			   "min": 1
+			});
+			$('#numDefVal').prop('disabled', false);
+			$("#numDefVal").val("");
+		}else if($(this).val()=="Future Date included Today"){
+			$("#numDefVal").attr({
+			   "max" : "",
+			   "min" :0
+			});
+			$('#numDefVal').prop('disabled', false);
+			$("#numDefVal").val("");
+		}else{
+			$("#numDefVal").val("");
+			$('#numDefVal').prop('disabled', false);
+			
+		}
+		
+	});
+	$("#ddlTEDateVal").on("change",function(){
+		if($(this).val()=="Any Date"){
+			$("#numTEDefVal").attr({
+			   "max" : "",
+			   "min" : "",
+			});
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}
+		else if($(this).val()=="Today Only"){
+			$("#numTEDefVal").val(0);
+			$('#numTEDefVal').prop('disabled', true);
+			$("#numTEDefVal").attr({
+			   "max" : "",
+			   "min" : ""
+			});
+		}else if($(this).val()=="Past Date"){
+			$("#numTEDefVal").attr({
+			   "max" : -1,
+			   "min": "",
+			});
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}else if($(this).val()=="Past Date included Today"){
+			$("#numTEDefVal").attr({
+			   "max" : 0,
+			   "min": "",
+			});
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}else if($(this).val()=="Future Date"){
+			$("#numTEDefVal").attr({
+			   "max" : "",
+			   "min": 1,
+			});
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}else if($(this).val()=="Future Date included Today"){
+			$("#numTEDefVal").attr({
+			   "max" : "",
+			   "min" :0,
+			});
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}else{
+			$("#numTEDefVal").val("");
+			$('#numTEDefVal').prop('disabled', false);
+			$('#numTEDefVal').val("");
+		}
+
+	}); 							
+});
+
+  function maxLengthCheck(object) {
+    if(object.value.includes("+")|| object.value.includes("-"))
+    {
+	    if (object.value.length > object.maxLength+1)
+	      object.value = object.value.slice(0, object.maxLength+1)
+	 }else{
+		if (object.value.length > object.maxLength)
+	      object.value = object.value.slice(0, object.maxLength)
+	 }
+  }
+  
+function addNotedyanamic() {
+		var flag = true;
+		var txtArr = "Note";
+		var tempTblId='';
+		var fixedText = quill.container.firstChild.innerHTML;
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+			
+			//if (countFixedText > 1) { flag = false; alert("You exeed maximum limit of Note type Column."); return false; }
+			txtArr = "Note";
+			countFixedText++;
+			
+			
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+			var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return ($(this).text() == "FixedText" );
+			});
+			var typeLen=$aTag.length;
+		  	//if(typeLen>=1){flag=false;alert("You exeed maximum limit of type type Column.");return false;}
+		  	txtArr = "Note";
+			//countTEFixedText++;
+		}
+
+		if ($("#txtNoteSqno").val() == "") {
+			flag = false;
+			alert("Please enter sequence"); return false;
+		}
+		else if ($("#txtNoteLabel").val() == "") {
+			flag = false;
+			alert("Please enter label"); return false;
+		}else if (fixedText.length<17) {
+			flag = false;
+			alert("Please enter minimum 10 characters"); return false;
+		}
+		else if ($("#txtFixedText").val() == "" && $("#txtFixedText").is(":visible")) {
+			flag = false;
+			alert("Please enter Note"); return false;
+		}else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr');
+ 		  		var dup=false;
+		        $($aTag).each(function( j ) {			
+		            var label=$(this).find("td.tdLabel").text();
+		            if(label==$("#txtNoteLabel").val()){
+		            	flag=false;	
+		            	dup=true;            
+		            }
+		        });
+		        if(dup){ alert("Duplicate label");return false;}
+
+ 		  }
+
+		var table = document.getElementById(tempTblId);
+		var table_len = (table.rows.length) - 1;
+		var valueArray = '';
+		var validation = "<label for='Text'>No</label>";
+		var DefVal = ''; 
+		
+			
+		if (flag) {
+			$('#new-Note-modal').modal('hide').data('bs.modal', null);
+			// event after hidden
+			$('#new-Note-modal').on('hidden', function () {
+				//$(this).data('modal', null);  // destroys modal			
+			});
+		}
+		var dropDown = '';
+		if ($('#ddlDRWN').is(":visible")&&$('#ddlDRWN :selected').text()=="Yes") { dropDown = $('#ddlDRWN :selected').text(); }
+		else { dropDown = ""; }
+		var mandatory = 'No';
+		var widthType = $("input[name='optnoteradios']:checked").val();
+		if ($('#ddlMand ').is(":visible")) { mandatory = $('#ddlMand :selected').text(); }
+		var html = "<tr> <td class='tdColumn d-none'>" + txtArr + "<input type='hidden'><input type='hidden'><input type='hidden' value='"+ widthType +"'></td> <td class='tdSqno'>" + $('#txtNoteSqno').val() + "</td> <td class='tdLabel'>" + $("#txtNoteLabel").val() + "</td> <td class='tdType'>FixedText</td> <td class='tdMand'>" + mandatory + "</td> <td class='tdDefVal'>" + DefVal + "</td> <td class='tdVal'>" + validation + "</td> <td class='tdDRWN'>" + dropDown + "</td> <td style='display:none'>" + valueArray + " </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editNoteRow(this,"+tempTblId+")' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-Note-modal'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)'> <i class='fa fa-trash-o' ></i> </a></td><td style='display:none;'>" + fixedText + "</td> <td style='display:none;'></td><td style='display:none;'><input type='hidden' class='disFormula' value=''><input type='hidden' class='actualFormula' value=''><input type='hidden' class='personValidation' value=''><input type='hidden' class='serialStartFrom' value=''><input type='hidden' class='prefix' value=''><input type='hidden' class='sufix' value=''><input type='hidden' class='numMin' value=''><input type='hidden' class='numMax' value=''><input type='hidden' class='numSuffix' value=''></td></tr>";
+		$("#"+tempTblId+" tbody").append(html);
+		//SeqCount = SeqCount + 1;
+		//$('#txtNoteSqno').val(SeqCount);
+		//$("#txtNoteSqno").attr("value", SeqCount);
+
+	}
+		
+		$('#new-Note-modal').on('hidden.bs.modal', function() {
+			  if(false);	    
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtNoteLabel,#txtNote').val("");	 
+		});
+
+
+		function editNoteRow(row,tName) {
+			var tempTblId='';
+			if($("#new-process-modal").is(":visible")){
+				tempTblId='tblApTemp';
+			}else if($("#edit-process-modal").is(":visible")){
+				tempTblId='tblEApTemp';
+			}
+		    var i=row.parentNode.parentNode.rowIndex;
+		    $("#editNoteRow").val(i);
+			
+			var $SeqNo = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	        var $FixedText = document.getElementById(tName.id).rows[i].cells[10].innerHTML;
+	       	var $width= document.getElementById(tName.id).rows[i].cells[0].children[2].value;
+
+			$("#txtENoteSqno").val($SeqNo);  
+			$("#txtENoteLabel").val($Label);	        
+			$("input[name=optnoteradiosE][value='"+$width+"']").prop('checked', true);		                
+			quillE.container.firstChild.innerHTML=$FixedText;		      
+		}
+		
+	function editNoteSubmit(val){
+		var tempTblId='';
+		var fixedText= quillE.container.firstChild.innerHTML;
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+
+		var tblId=$("#tblEditRow").val();
+		var table = document.getElementById(tempTblId);
+		var i=val.value;
+ 		  
+ 		  if($("#txtENoteSqno").val()==""){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtENoteLabel").val()==""){		            
+
+ 		  	alert("Please enter label");return false;
+ 		  }else if (fixedText.length<=17) {
+			flag = false;
+			alert("Please enter minimum 10 characters"); return false;
+		  }else if(quillE.container.firstChild.innerHTML==""){
+ 		    flag=false;	            
+ 		  	alert("Please enter value for Fixed Text");return false;
+ 		  }
+ 		  else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr').filter(function() {
+						    return $(this).find("td.tdLabel").text()== $("#txtENoteLabel").val();
+				}); 		  	
+		        if($aTag.length>1){ alert("Duplicate label");return false;}
+
+ 		  	$( '#edit-Note-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#edit-Note-modal').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }	  
+	  	 
+		var Label=$('#txtENoteLabel').val();
+		var seqNo=$('#txtENoteSqno').val();
+		var width=$("input[name='optnoteradiosE']:checked").val();
+		table.rows[i].cells[0].children[2].value=width;	
+	 	table.rows[i].cells[1].innerHTML=seqNo;
+		table.rows[i].cells[2].innerHTML=Label;
+		table.rows[i].cells[10].innerHTML=fixedText.replace("/\xEF\xBB\xBF/", "");
+	}
+function addHeaderdyanamic() {
+		var tempTblId='';
+		var txtArr = "";
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+			var $aTag = $("#tblApTemp").find('tbody td.tdType').filter(function() {
+			    return ($(this).text() == "Header" || $(this).text() == "Text");
+			});
+			//var typeLen=$aTag.length;
+		  	//if(typeLen>=20){flag=false;alert("You exeed maximum limit of Header type Column.");return false;}
+		  	txtArr="Header";
+		
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+			var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return ($(this).text() == "Header" || $(this).text() == "Text");
+			});
+			//var typeLen=$aTag.length;
+		  	//if(typeLen>=20){flag=false;alert("You exeed maximum limit of Header type Column.");return false;}
+		  	txtArr="Header";
+		}
+		var flag = true;
+		var table = document.getElementById(tempTblId);
+		var table_len = (table.rows.length) - 1;
+		var valueArray = '';
+		if ($("#txtHeaderSqno").val() == "") {
+			flag = false;
+			alert("Please enter sequence"); return false;
+		}
+		else if ($("#txtHeader").val() == "") {
+			flag = false;
+			alert("Please enter Header"); return false;
+		}else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr');
+ 		  		var dup=false;
+		        $($aTag).each(function( j ) {			
+		            var label=$(this).find("td.tdLabel").text();
+		            if(label==$("#txtHeader").val()){
+		            	flag=false;	
+		            	dup=true;            
+		            }
+		        });
+		        if(dup){ alert("Duplicate label");return false;}
+
+ 		  }
+		
+		var validation = "<label for='Text'>No</label>";
+		var DefVal = ''; var fixedText = $('#txtNote').val();
+		
+			
+		if (flag) {
+			$('#new-Header-modal').modal('hide').data('bs.modal', null);
+			// event after hidden
+			$('#new-Header-modal').on('hidden', function () {
+				//$(this).data('modal', null);  // destroys modal			
+			});
+		}
+		var dropDown = '';
+		if ($('#ddlDRWN').is(":visible")&& $('#ddlDRWN :selected').text()=="Yes") { dropDown = $('#ddlDRWN :selected').text(); }
+		else { dropDown = ""; }
+		var mandatory = 'No';
+		if ($('#ddlMand ').is(":visible")) { mandatory = $('#ddlMand :selected').text(); }
+		var html = "<tr> <td class='tdColumn d-none'>" + txtArr + "</td> <td class='tdSqno'>" + $('#txtHeaderSqno').val() + "</td> <td class='tdLabel'>" + $("#txtHeader").val() + "</td> <td class='tdType'>Header</td> <td class='tdMand'>" + mandatory + "</td> <td class='tdDefVal'>" + DefVal + "</td> <td class='tdVal'>" + validation + "</td> <td class='tdDRWN'>" + dropDown + "</td> <td style='display:none'>" + valueArray + " </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editHeaderRow(this,"+tempTblId+")' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-Header-modal'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)'> <i class='fa fa-trash-o' ></i> </a></td><td style='display:none;'>" + fixedText + "</td> <td style='display:none;'></td><td style='display:none;'><input type='hidden' class='disFormula' value=''><input type='hidden' class='actualFormula' value=''><input type='hidden' class='personValidation' value=''><input type='hidden' class='serialStartFrom' value=''><input type='hidden' class='prefix' value=''><input type='hidden' class='sufix' value=''><input type='hidden' class='numMin' value=''><input type='hidden' class='numMax' value=''><input type='hidden' class='numSuffix' value=''></td></tr>";
+		$("#"+tempTblId+" tbody").append(html);
+		//SeqCount = SeqCount + 1;
+		//$('#txtHeaderSqno').val(SeqCount);
+		//$("#txtHeaderSqno").attr("value", SeqCount);
+
+	}
+		$('#new-Header-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtHeader').val("");			  
+
+		});
+
+		function editHeaderRow(row,tName) {
+		    var i=row.parentNode.parentNode.rowIndex;
+		    $("#editHeaderRow").val(i);
+			
+			var $SeqNo = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	       
+			$("#txtEHeaderSqno").val($SeqNo);  
+			$("#txtEHeader").val($Label);	        
+		}
+		
+	function editHeaderSubmit(val){
+		var tblId=$("#tblEditRow").val();
+		var tempTblId='';
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+
+		var table = document.getElementById(tempTblId);
+		var i=val.value;
+ 		  
+ 		  if($("#txtEHeaderSqno").val()==""){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtEHeader").val()==""){		            
+
+ 		  	alert("Please enter Header");return false;
+ 		  }		  
+ 		  else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr').filter(function() {
+						    return $(this).find("td.tdLabel").text()== $("#txtEHeader").val();
+				}); 		  	
+		        if($aTag.length>1){ alert("Duplicate label");return false;}
+
+ 		  	$( '#edit-Header-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#edit-Header-modal').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }	  
+		var Label=$('#txtEHeader').val();
+		var seqNo=$('#txtEHeaderSqno').val();
+			
+	 	table.rows[i].cells[1].innerHTML=seqNo;
+		table.rows[i].cells[2].innerHTML=Label;
+	}
+	
+
+
+
+
+function addTableRowDyanamic() { 
+		var tempTblId='';
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+		var flag = true;
+		var table = document.getElementById(tempTblId);
+		var table_len = (table.rows.length) - 1;
+		var valueArray = '';
+		if ($("#txtTableSqno").val() == "") {
+			flag = false;
+			alert("Please enter sequence"); return false;
+		}
+		else if ($("#txtTableLabel").val() == "") {
+			flag = false;
+			alert("Please enter label"); return false;
+		}else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr');
+ 		  		var dup=false;
+		        $($aTag).each(function( j ) {			
+		            var label=$(this).find("td.tdLabel").text();
+		            if(label==$("#txtTableLabel").val()){
+		            	flag=false;	
+		            	dup=true;            
+		            }
+		        });
+		        if(dup){ alert("Duplicate label");return false;}
+
+ 		  }
+
+		var tblRowCount=$('#tblTableRow tbody tr').length;
+      	if(tblRowCount==0 ){flag = false;alert("Please insert atleast one column.");return false;}//return false;
+
+		var validation = "<label for='Text'>No</label>";
+		var DefVal = ''; 
+		var txtArr = "Table";
+			
+		if (flag) {
+			$('#new-Table-modal').modal('hide').data('bs.modal', null);
+			// event after hidden
+			$('#new-Table-modal').on('hidden', function () {
+				//$(this).data('modal', null);  // 
+			});
+		}
+		var fixedText=$("#tblTableRow tbody").html();
+		
+		var dropDown = '';
+		var stamp = new Date()
+		var date=stamp.getDate();
+		var month=stamp.getMonth();
+		var year=stamp.getFullYear();
+		var time=stamp.getTime();
+		var timeStamp=date+""+month+""+year+""+time;
+		
+		if ($('#ddlDRWN').is(":visible")&&$('#ddlDRWN :selected').text()=="Yes") { dropDown = $('#ddlDRWN :selected').text(); }
+		else { dropDown = ""; }
+		var mandatory = 'No';
+		if ($('#ddlMand ').is(":visible")) { mandatory = $('#ddlMand :selected').text(); }
+		var html = "<tr> <td class='tdColumn d-none'>" + txtArr + "</td> <td class='tdSqno'>" + $('#txtTableSqno').val() + "</td> <td class='tdLabel'>" + $("#txtTableLabel").val() + "</td> <td class='tdType'>Table</td> <td class='tdMand'>" + mandatory + "</td> <td class='tdDefVal'>" + DefVal + "</td> <td class='tdVal'>" + validation + "</td> <td class='tdDRWN'>" + dropDown + "</td> <td style='display:none'>" + valueArray + " </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editTableRow(this,"+tempTblId+"," + timeStamp + ")' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-Table-modal'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)'> <i class='fa fa-trash-o' ></i> </a></td><td style='display:none;' id=''>" + timeStamp + "</td> <td style='display:none;'></td><td style='display:none;'><input type='hidden' class='disFormula' value=''><input type='hidden' class='actualFormula' value=''><input type='hidden' class='personValidation' value=''><input type='hidden' class='serialStartFrom' value=''><input type='hidden' class='prefix' value=''><input type='hidden' class='sufix' value=''><input type='hidden' class='numMin' value=''><input type='hidden' class='numMax' value=''><input type='hidden' class='numSuffix' value=''></td></tr>";
+		$("#"+tempTblId+" tbody").append(html);
+		$('#bindTbls').append('<table id="'+timeStamp+'" class="table custom-table">'+fixedText+'</table>');
+		
+
+	}
+		
+
+		function editTableRow(row,tName,id) {
+		    $("#updateTableRow").hide();
+    		$("#editTableRow").show();
+
+		    var i=row.parentNode.parentNode.rowIndex;
+			$("#UpdateTempRow").val(i);
+			var $SeqNo = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	       	var $TblData=document.getElementById(tName.id).rows[i].cells[10].innerHTML;
+	        $("#editTableRow").val($TblData);
+
+			$("#txtETableSqno").val($SeqNo);  
+			$("#txtETableLabel").val($Label);
+			var tblRows=$("#"+$TblData+" tbody").html();
+			$("#bindTblData tbody").html(tblRows);	
+		}
+		
+	function editTableSubmit(val){
+		var tblId=$("#tblEditRow").val();
+		var tempTblId='';
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+
+		var table = document.getElementById(tempTblId);
+		var i=$("#UpdateTempRow").val();
+		var tid=val.value;
+ 		const fixedText=$("#bindTblData tbody").html();
+		var tblRowCount=$('#bindTblData tbody tr').length;
+
+ 		  if($("#txtETableSqno").val()==""){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtETableLabel").val()==""){		            
+
+ 		  	alert("Please enter Label");return false;
+ 		  }	
+ 		  else if(tblRowCount==0 ){alert("Please insert atleast one column.");return false;}//return false;	  
+ 		  
+ 		  else{
+				var $aTag = $('#'+tempTblId).find('tbody tr').filter(function() {
+						    return $(this).find("td.tdLabel").text()== $("#txtETableLabel").val();
+				}); 		  	
+		        if($aTag.length>1){ alert("Duplicate label");return false;}
+
+ 		  	$( '#edit-Table-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#edit-Table-modal').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }	  
+		var Label=$('#txtETableLabel').val();
+		var seqNo=$('#txtETableSqno').val();
+			
+	 	table.rows[i].cells[1].innerHTML=seqNo;
+		table.rows[i].cells[2].innerHTML=Label;console.log(table)
+		//table.rows[i].cells[10].innerHTML="<table>"+fixedText+"</table>";
+		$("#"+tid+" tbody").html(fixedText)
+	}
+	
+	var tblOrTemp="";
+	$(document).ready(function(){
+		$('#newProcess').click(function(){
+			$('#defination_tab,.btnDef').show();
+			$('.btnMngt,.activating').hide();$('#Management_tab').hide();
+			$('#processModTitle').text("New Process");
+		});
+
+		var tempRowCount=0;
+		var tempERowCount=0;
+		var tempTableRowCount=0;
+		
+	 	$("#addTableCol").click(function(){
+		  	$("#tblId").val("tblTableRow");
+		  	$("#optCal").addClass('d-block');
+			$("#optCal").removeClass('d-none');
+			$(".optNotTable").removeClass('d-none');
+			$(".optNotTable").addClass('d-none');
+			$("#optSumm").addClass('d-none');
+			tblOrTemp="Table";
+			//$("#totalFlag").addClass('d-block');
+			//$("#totalFlag").removeClass('d-none');
+		});
+		$("#addCol").click(function(){
+		  $("#tblId").val("tblApTemp");
+		  
+		});
+		$("#addECol").click(function(){
+		  $("#tblId").val("tblEApTemp");
+		});
+		$("#editTableCol").click(function(){
+			$("#optSumm").addClass('d-none');
+			$("#optCal").addClass('d-block');
+			$("#optCal").removeClass('d-none');
+			$(".optNotTable").removeClass('d-none');
+			$(".optNotTable").addClass('d-none');
+
+		  $("#tblId").val("bindTblData");
+		  var seq=0;
+				$("#bindTblData .tdSqno").each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#txtSqno").val(seq+1);
+		  tblOrTemp="Table";
+		});
+		$("#btnAdd").click(function(){
+		  	$("#optCal").removeClass('d-block');
+			$("#optCal").addClass('d-none');
+			$(".optNotTable").removeClass('d-none');
+			$(".optNotTable").addClass('d-block');
+			$("#totalFlag").removeClass('d-block');
+			$("#totalFlag").addClass('d-none');
+			$("#optSumm").removeClass('d-none');
+			$("#optSumm").addClass('d-block');
+			tblOrTemp="Temp";
+		});
+		$("#addENew").click(function(){
+			$("#btnQRWebEditSubmit").hide();
+		    $("#btnAddQRWeb").show();
+		  	$("#optCal").removeClass('d-block');
+			$("#optCal").addClass('d-none');
+			$(".optNotTable").removeClass('d-none');
+			$(".optNotTable").addClass('d-block');
+			$("#totalFlag").removeClass('d-block');
+			$("#totalFlag").addClass('d-none');
+			$("#optSumm").removeClass('d-none');
+			$("#optSumm").addClass('d-block');
+			tblOrTemp="Temp";
+		});
+		$(document).on('change', 'select.ColVal' ,function(){
+			 var $tr = $(this).closest("tr");
+		    if(this.value=="Value"){
+		        $tr.find("td:eq(1) input").show();
+				$tr.find("td:eq(1) select").hide();
+			}else{
+				$tr.find("td:eq(1) input").hide();
+				$tr.find("td:eq(1) select").show();
+			}
+		});
+
+		
+		$('#new-Table-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtTableLabel').val("");	
+			  modal.find('.modal-body #tblTableRow tbody').html("");		  
+
+		});
+		$('#new-Note-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtNoteLabel,#txtNote').val("");	
+			  quill.container.firstChild.innerHTML="";
+
+
+		});
+		$('#new-Header-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtHeader').val("");	
+
+		});
+		$('#add-formula-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body input').val("");	
+	    	  modal.find('.modal-body select.ColVal').val("Column");
+	    	  modal.find('.modal-body select,.normalFormula').show();
+	    	  modal.find('.modal-body input.getComp,.advanceFormula').hide();
+			  modal.find('.modal-body #txtActFormula').val("");
+			  $("#tblFormula").find("tr:gt(2)").remove();
+			  formula="Formula";		 		
+			      
+		});
+		$('#new-QR-Weblink-modal').on('hidden.bs.modal', function(e) {	if(false)	  
+		      e.preventDefault();
+			  var modal = $(this);
+			  modal.find('.modal-body #txtQRWeb,#txtQRWebURL,#txtQRWebSqno').val("");		
+			  $("input[name=QRWeb][value='Bottom']").prop('checked', true);	  
+
+		});
+		$('#addNew li').click(function(e) 
+	    { 		$("#btnQRWebEditSubmit").hide();
+		    	$("#btnAddQRWeb").show();
+				$("#QR-WeblinkStat").val("New");
+
+	    		if($(this).text()=="QR Code"){
+	    			$("#QR-WeblinkHeading").text("QR Code");
+	    		}else if($(this).text()=="Link"){
+	    			$("#QR-WeblinkHeading").text("Link");
+	    		}
+
+				var seq=0;
+				$("#tblApTemp .tdSqno").each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#txtTableSqno,#txtSqno,#txtNoteSqno,#txtHeaderSqno").val(seq+1);	    
+		});
+		
+		$('#addNewTE li').click(function(e) 
+	    { 		$("#btnQRWebEditSubmit").hide();
+		    	$("#btnAddQRWeb").show();
+				$("#QR-WeblinkStat").val("New");
+
+	    		if($(this).text()=="QR Code"){
+	    			$("#QR-WeblinkHeading").text("QR Code");
+	    		}else if($(this).text()=="Link"){
+	    			$("#QR-WeblinkHeading").text("Link");
+	    		}
+				var seq=0;
+				$("#tblEApTemp .tdSqno").each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#txtTableSqno,#txtSqno,#txtNoteSqno,#txtHeaderSqno").val(seq+1);	    
+		});
+		$('#addTableCol').click(function(e) 
+	    { 
+				var seq=0;
+				$("#tblTableRow .tdSqno").each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#txtSqno").val(seq+1);	    
+		});
+		
+		$("#spFormula").click(function(){
+					var tblId=$("#tblId").val();
+						
+			var selType=$('#ddlColumn :selected').text()
+			var html=bindOptionsToDr(tblId,selType);
+			
+			$(".bindCol").html(html);
+			$("#submitFormula").val("txtFormula");
+		});
+		$("#spEFormula").click(function(){
+			var tblId=$("#tblEditRow").val();
+			//var $aTag = $('#bindTblData').find('tbody tr').filter(function() {
+			//    return $(this).find("td.tdType").text().includes("Number");
+			//});
+			var html=bindOptionsToDr(tblId);
+			//$($aTag).each(function( j ) {			
+			//	var label=$(this).find("td.tdLabel").text();
+			//	var colName=$(this).find("td.tdColumn").text();
+			//	html+="<option value="+colName+">"+label+"</option>";
+			//});
+			$(".bindCol").html(html);
+			$("#submitFormula").val("txtEFormula");
+			$(".bindCol option:contains('"+calColAsOpt+"')").remove();
+
+			//$(".bindCol option[text='"+calColAsOpt+"']").remove();
+			
+		});
+		 $("#spTEFormula").click(function(){
+			var tblId=$("#tblEditRow").val();
+			var selType=$('#ddlTEColumn :selected').text()
+			var html=bindOptionsToDr(tblId,selType);			
+			$(".bindCol").html(html);
+			$("#submitFormula").val("txtTEFormula");
+			$(".bindCol option:contains('"+calColAsOpt+"')").remove();
+		});
+		
+		//$("#txtQRWebSqno").val(99999)
+		$('input[type=radio][name=QRWeb]').change(function() {
+		    if (this.value == 'Top') {
+		        $("#txtQRWebSqno").val('')
+		    }else if (this.value == 'Bottom') {
+		        $("#txtQRWebSqno").val('')
+		    }else if (this.value == 'Sequence') {
+		    	if($("#new-process-modal").is(":visible")){
+					tempTblId='tblApTemp';
+				}else if($("#edit-process-modal").is(":visible")){
+					tempTblId='tblEApTemp';
+				}
+		        var seq=0;
+				$("#"+tempTblId+" .tdSqno").each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#txtQRWebSqno").val(seq+1);
+		    }
+		});
+		$('#txtLabel,#txtTELabel').keyup(function() {
+			var tId=$("#tblId").val();
+			var tblId=$("#tblEditRow").val();
+			if(tId=="tblApTemp" || tId=="tblEApTemp" ){return false;}
+			else if(tblId=="tblEApTemp" || tblId=="tblApTemp"){return false;}
+			if (this.value.match(/[^a-zA-Z0-9-_()#$@%]/g)) {
+			  this.value = this.value.replace(/[^a-zA-Z0-9-_ ()#$@%]/g, '');
+			} 
+		});
+	});
+	function addQRWebdyanamic() {
+		var tempTblId='';
+		var txtArr,type,name = "";
+		if($("#QR-WeblinkHeading").text()=="QR Code"){
+			type="QR Code";
+			txtArr="QRCode";		
+		}else if($("#QR-WeblinkHeading").text()=="Link"){
+			type="Web Link";
+			txtArr="WebLink";			
+		}
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+			var $aTag = $("#tblApTemp").find('tbody td.tdType').filter(function() {
+			    return $(this).text() == type ;
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of "+type+" type Column.");return false;}
+		  	//txtArr="QRCode";
+			
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+			var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == type;
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of "+type+" type Column.");return false;}
+		  	//txtArr="QR Code";
+		}
+		if($("#QR-WeblinkHeading").text()=="Link"){
+			var validateURL=checkURL($('#txtQRWebURL').val());
+			if(validateURL==false){alert("Please enter valid url!!");return false;}			
+		}else if($("#QR-WeblinkHeading").text()=="QR Code"){
+			var validateURL=($('#txtQRWebURL').val());
+			if(validateURL==''){alert("Please enter QR Code");return false;}			
+		}
+		var flag = true;
+		var table = document.getElementById(tempTblId);
+		var table_len = (table.rows.length) - 1;
+		var valueArray = '';
+		var sqNo = $("input[name='QRWeb']:checked").val();
+		var sequence='';
+		if(sqNo=='Sequence'){
+			sequence=$("#txtQRWebSqno").val();
+		}else if(sqNo=='Top'){
+			sequence='Top'	;
+		}else if(sqNo=='Bottom'){
+			sequence='Bottom';
+		}
+
+		
+		if ($("#txtQRWebSqno").val() == "" && sqNo=='Sequence') {
+			flag = false;
+			alert("Please enter sequence"); return false;
+		}
+		else if ($("#txtQRWeb").val() == "") {
+			flag = false;
+			alert("Please enter label"); return false;
+		}else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr');
+ 		  		var dup=false;
+		        $($aTag).each(function( j ) {			
+		            var label=$(this).find("td.tdLabel").text();
+		            if(label==$("#txtQRWeb").val()){
+		            	flag=false;	
+		            	dup=true;            
+		            }
+		        });
+		        if(dup){ alert("Duplicate label");return false;}
+
+ 		  }
+		
+		var validation = "<label for='Text'>No</label>";
+		var DefVal = ''; var fixedText = $('#txtQRWebURL').val();
+		
+			
+		if (flag) {
+			$('#new-QR-Weblink-modal').modal('hide').data('bs.modal', null);
+			// event after hidden
+			$('#new-QR-Weblink-modal').on('hidden', function () {
+				//$(this).data('modal', null);  // destroys modal			
+			});
+		}
+		var dropDown = '';
+		if ($('#ddlDRWN').is(":visible")&& $('#ddlDRWN :selected').text()=="Yes") { dropDown = $('#ddlDRWN :selected').text(); }
+		else { dropDown = ""; }
+		var mandatory = 'No';
+		if ($('#ddlMand ').is(":visible")) { mandatory = $('#ddlMand :selected').text(); }
+		var html = "<tr> <td class='tdColumn d-none'>" + txtArr + "</td> <td class='tdSqno'>" + sequence + "</td> <td class='tdLabel'>" + $("#txtQRWeb").val() + "</td> <td class='tdType'>"+type+"</td> <td class='tdMand'>" + mandatory + "</td> <td class='tdDefVal'>" + DefVal + "</td> <td class='tdVal'>" + validation + "</td> <td class='tdDRWN'>" + dropDown + "</td> <td style='display:none'>" + valueArray + " </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editQRWebRow(this,"+tempTblId+")' > <i class='fa fa-pencil' data-toggle='modal' data-target='#new-QR-Weblink-modal'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)'> <i class='fa fa-trash-o' ></i> </a></td><td style='display:none;'>" + fixedText + "</td><td style='display:none;'></td><td style='display:none;'><input type='hidden' class='disFormula' value=''><input type='hidden' class='actualFormula' value=''><input type='hidden' class='personValidation' value=''><input type='hidden' class='serialStartFrom' value=''><input type='hidden' class='prefix' value=''><input type='hidden' class='sufix' value=''><input type='hidden' class='numMin' value=''><input type='hidden' class='numMax' value=''><input type='hidden' class='numSuffix' value=''></td> </tr>";
+		$("#"+tempTblId+" tbody").append(html);
+	}
+		
+function editQRWebRow(row,tName) {
+		    var i=row.parentNode.parentNode.rowIndex;
+		    $("#btnQRWebEditSubmit").val(i);
+		    $("#btnQRWebEditSubmit").show();
+		    $("#btnAddQRWeb").hide();
+			$("#QR-WeblinkStat").val("Edit");
+
+			var $SeqNo = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	        var $URL =document.getElementById(tName.id).rows[i].cells[10].innerHTML;
+	        if($SeqNo=='Top'){
+	        	$("input[name=QRWeb][value='Top']").prop('checked', true);
+	        }
+	        else if($SeqNo=='Bottom'){
+	        	$("input[name=QRWeb][value='Bottom']").prop('checked', true);
+	        }
+	        else {
+		        $("input[name=QRWeb][value='Sequence']").prop('checked', true);
+		        $("#txtQRWebSqno").val($SeqNo);
+	        }
+			
+			  
+			$("#txtQRWeb").val($Label);
+			$("#txtQRWebURL").val($URL);	        
+				        
+		}
+function editQRWebSubmit(val){
+		var tblId=$("#tblEditRow").val();
+		var tempTblId='';
+		var sqNo = $("input[name='QRWeb']:checked").val();
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+		if($("#QR-WeblinkHeading").text()=="Link"){
+			var validateURL=checkURL($('#txtQRWebURL').val());
+			if(validateURL==false){alert("Please enter valid url!!");return false;}			
+		}else if($("#QR-WeblinkHeading").text()=="QR Code"){
+			var validateURL=($('#txtQRWebURL').val());
+			if(validateURL==''){alert("Please enter QR Code");return false;}			
+		}
+
+		var table = document.getElementById(tempTblId);
+		var i=val.value;
+ 		  
+ 		  if($("#txtQRWebSqno").val()=="" && sqNo=='Sequence'){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtQRWeb").val()==""){		            
+
+ 		  	alert("Please enter label");return false;
+ 		  }		  
+ 		  else{
+ 		  		var $aTag = $('#'+tempTblId).find('tbody tr').filter(function() {
+						    return $(this).find("td.tdLabel").text()== $("#txtEHeader").val();
+				}); 		  	
+		        if($aTag.length>1){ alert("Duplicate label");return false;}
+
+ 		  	$( '#new-QR-Weblink-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#new-QR-Weblink-modal').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }	  
+		var Label=$('#txtQRWeb').val();
+		var seqNo=$('#txtQRWebSqno').val();
+		var QRWebURL=$('#txtQRWebURL').val();
+		
+		var sequence='';
+		if(sqNo=='Sequence'){
+			sequence=$("#txtQRWebSqno").val();
+		}else if(sqNo=='Top'){
+			sequence='Top'	;
+		}else if(sqNo=='Bottom'){
+			sequence='Bottom';
+		}
+	 	table.rows[i].cells[1].innerHTML=sequence;
+		table.rows[i].cells[2].innerHTML=Label;
+		table.rows[i].cells[10].innerHTML=QRWebURL;
+
+	}
+	function updateTableColumn(t){
+		var tId=$("#updateTableRow").val();
+		var tempTblId='';
+		if($("#new-process-modal").is(":visible")){
+			tempTblId='tblApTemp';
+		}else if($("#edit-process-modal").is(":visible")){
+			tempTblId='tblEApTemp';
+		}
+		var tblRowCount=$('#bindTblData tbody tr').length;
+ 		  if($("#txtETableSqno").val()==""){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtETableLabel").val()==""){		            
+
+ 		  	alert("Please enter Label");return false;
+ 		  }	
+ 		  else if(tblRowCount==0 ){alert("Please insert atleast one column.");return false;}
+		var table = document.getElementById(tempTblId);
+		var i=$("#UpdateTempRow").val();
+		var Label=$('#txtETableLabel').val();
+		var seqNo=$('#txtETableSqno').val();
+
+	 	table.rows[i].cells[1].innerHTML=seqNo;
+		table.rows[i].cells[2].innerHTML=Label;
+
+        $("#bindTblData tbody tr").each(function () {
+			var Id= $(this).find("td").eq(0).find('input:eq(1)').val();
+            var ColumnName= $(this).find("td:eq(0)").text();
+            var seqNo= $(this).find("td:eq(1)").text();
+            var Label= $(this).find("td:eq(2)").text();
+            var Type= $(this).find("td:eq(3)").text();
+            var Mandatory= $(this).find("td:eq(4)").text();
+            var defVal= $(this).find("td:eq(5)").text();
+
+            var Validation= $(this).find("td:eq(6)").text();
+            var Dropdown= $(this).find("td:eq(7)").text();
+            var DropdownOptios= $(this).find("td:eq(8)").text();
+           	var Validation1=$(this).find("td").eq(6).find("label").prop('for');
+           	var FixedText= $(this).find("td:eq(10)").text();
+           	var needTot= $(this).find("td:eq(11)").text();
+           	var disFormula= $(this).find("td:eq(12) :nth-child(1)").val();
+           	var actualFormula= $(this).find("td:eq(12) :nth-child(2)").val();
+           	var personValidation= $(this).find("td:eq(12) :nth-child(3)").val();
+           	
+			var drType= $(this).find("td:eq(12) :nth-child(13)").val();
+           	var siteAddr= $(this).find("td:eq(12) :nth-child(14)").val();
+           	var listName=$(this).find("td:eq(12) :nth-child(15)").val(); 
+           	var colName= $(this).find("td:eq(12) :nth-child(16)").val();
+           	var drFilter=$(this).find("td:eq(12) :nth-child(17)").val();
+           	var drSort=$(this).find("td:eq(12) :nth-child(17)").val();
+           	
+           	var numMin=$(this).find("td:eq(12) :nth-child(7)").val(); 
+           	var numMax= $(this).find("td:eq(12) :nth-child(8)").val();
+           	var textValid= $(this).find("td:eq(0) :nth-child(4)").val();
+           	if(numMin=='null' || numMin==null || numMin =="" || numMin=='undefined' || numMin==undefined){numMin=null;}
+           	if(numMax=='null' || numMax==null || numMax =="" || numMax=='undefined' || numMax==undefined){numMax=null;}
+			if(actualFormula=='null' || actualFormula==null || actualFormula=="" || actualFormula=='undefined' || actualFormula==undefined){actualFormula="";}
+			if(textValid=='null' || textValid==null || textValid=="" || textValid=='undefined' || textValid==undefined){textValid="";}
+			var calValue=false;
+			if(ColumnName=="CalculatedValue"){calValue=true;defVal="";}
+			if(Type=="Number"){
+				$("#bindTblData tbody tr").each(function () {				
+					var input2= $(this).find("td:eq(12) :nth-child(2)").val();
+					
+						if(input2.includes(ColumnName)){
+							calValue=true;
+						}
+					
+				});
+			}
+           	var valNum='';
+           	var valDate='';
+	       	  if(Type=='Number'){
+	           	valNum=Validation;
+	           }
+	           else if(Type=='Date' || Type=='DueDate'){
+	           valDate=Validation;
+	           }           
+			if(Mandatory=="Yes"){Mandatory=true;}
+			else{Mandatory=false;}
+			if(Dropdown=="Yes"){Dropdown=true;}
+			else{Dropdown	=false;}
+			if(Type=='Checkbox'){if(defVal=="Yes"){defVal=1}else if(defVal=="No"){defVal=0}}
+
+               var clientContextPR1 = new SP.ClientContext();
+
+				var listPR1 = clientContextPR1.get_web().get_lists().getByTitle('ApprovalTemplateTable');
+				if(Id==null||Id==""||Id==undefined){
+					var itemInfo = new SP.ListItemCreationInformation();
+					var listItem1 = listPR1.addItem(itemInfo);
+					listItem1.set_item('ColumnName', ColumnName);
+					listItem1.set_item('ColumnType', Type);
+					listItem1.set_item('Title', Label);
+					listItem1.set_item('NumberValidation', valNum);
+					listItem1.set_item('DateValidation', valDate);
+					listItem1.set_item('DropdownValues', Dropdown);
+					listItem1.set_item('DefaultValue', defVal);
+					listItem1.set_item('SetupID', tId);
+					listItem1.set_item('SequenceNo', seqNo);
+					listItem1.set_item('Mandatory', Mandatory);
+					listItem1.set_item('NeedTotal', needTot);
+					listItem1.set_item('FormulaDispaly', disFormula);
+					listItem1.set_item('Formula', actualFormula);
+					listItem1.set_item('CalculatedValue', calValue);
+					listItem1.set_item('TextValidation', textValid);
+					listItem1.set_item('MinNumber', numMin);
+					listItem1.set_item('MaxNumber', numMax);
+					listItem1.set_item('PersonValidation', personValidation);
+					listItem1.set_item('DropdownFrom', drType);
+					listItem1.set_item('SPListSiteAddress', siteAddr);
+					listItem1.set_item('SPListName', listName);
+					listItem1.set_item('SPListColumn', colName);
+					listItem1.set_item('SPListSortColumn', drFilter);
+					listItem1.set_item('SPListFilter', drSort);
+					
+					listItem1.update();
+			    	clientContextPR1.executeQueryAsync(function onAddSucceeded(){
+			    		    var newItemId = listItem1.get_id();
+			    		    if(Dropdown==true && drType=="Given Values"){
+			    		    	var tempId=$("#btnUpdateAPM").val();  
+			    		    	insertDropDNOptions(DropdownOptios,tempId,tId,newItemId);
+			    		    }
+			    		    //get Id of newly create item
+			    	},function onAddFailed(sender, args) {
+					    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+					});
+					}
+				else{
+					var listItem1 = listPR1.getItemById(Id);
+					listItem1.set_item('ColumnName', ColumnName);
+					listItem1.set_item('ColumnType', Type);
+					listItem1.set_item('Title', Label);
+					listItem1.set_item('NumberValidation', valNum);
+					listItem1.set_item('DateValidation', valDate);
+					listItem1.set_item('DropdownValues', Dropdown);
+					listItem1.set_item('DefaultValue', defVal);
+					listItem1.set_item('SequenceNo', seqNo);
+					listItem1.set_item('Mandatory', Mandatory);
+					listItem1.set_item('NeedTotal', needTot);
+					listItem1.set_item('FormulaDispaly', disFormula);
+					listItem1.set_item('Formula', actualFormula);
+					listItem1.set_item('CalculatedValue', calValue);
+					listItem1.set_item('TextValidation', textValid);
+					listItem1.set_item('MinNumber', numMin);
+					listItem1.set_item('MaxNumber', numMax);
+					listItem1.set_item('PersonValidation', personValidation);
+					listItem1.set_item('DropdownFrom', drType);
+					listItem1.set_item('SPListSiteAddress', siteAddr);
+					listItem1.set_item('SPListName', listName);
+					listItem1.set_item('SPListColumn', colName);
+					listItem1.set_item('SPListSortColumn', drFilter);
+					listItem1.set_item('SPListFilter', drSort);
+
+					listItem1.update();
+					clientContextPR1.executeQueryAsync(function onUpdateSucceeded(){
+			    		   
+			    	},function onUpdateFailed(sender, args) {
+					    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+					});
+				}				
+
+				
+
+			});
+				$( '#edit-Table-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+			  	$('#edit-Table-modal').on('hidden', function(){
+					$(this).data('modal', null);  // destroys modal
+				});
+            
+      }
+     var formulaCounter =0;
+      function addFormula(){
+		$("#tblFormula").append('<tr><td></td><td><div class="form-group custom-form-group"><select class="form-control getComp"><option value="+">+</option><option value="-">-</option><option value="*">*</option><option value="/">/</option><option value="%">%</option></select></div></td><tr><td><div class="form-group custom-form-group"><select class="form-control ColVal"><option value="Column">Column</option><option value="Value">Value</option></select></div></td><td><div class="form-group custom-form-group"><select class="form-control bindCol'+formulaCounter+' getComp"></select><input type="number" style="display:none" class="form-control getComp"></div></td></tr></tr>');	
+		var tblId=$("#tblEditRow").val();
+		var $aTag = $('#'+tblId).find('tbody tr').filter(function() {
+			    return $(this).find("td.tdType").text().includes("Number");
+			});
+			var html1='';
+			$($aTag).each(function( j ) {			
+				var label=$(this).find("td.tdLabel").text();
+				var colName=$(this).find("td.tdColumn").text();
+				html1+="<option value="+colName+">"+label+"</option>";
+			});
+			$(".bindCol"+formulaCounter).html(html);
+			formulaCounter++;
+	  }  
+	  
+	  function getFormula(val) {console.log($('#txtDisFormula').is(":visible"));
+		  if(formula=="AdvFormula"){
+		  	if($('#txtActFormula').val()=="" || $('#txtDisFormula').val()==""){alert("Please enter formula");return false;}
+			  	$("." +val.value).val($('#txtActFormula').val().toString());	  
+				$("#"+val.value).val($('#txtDisFormula').val().replace(/,/g, ''));
+			  	
+			  	$( '#add-formula-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+				return false;
+		  }
+	  	var flag=true;
+		$('.getComp:visible').each(function(){
+		   if($(this).val()=="" ){
+		   	  
+		   		flag=false;
+		   		alert("Please fill details");
+		   		return false;
+		   	  
+		   }
+		   else if(this.tagName=="SELECT" && this.selectedIndex==0 && $(this).val()=="Select"){
+		   		flag=false;
+		   		alert("Please select column");
+		   		return false;
+		   }
+		})
+		if(flag==false){return false;}
+		var displayFormula = $('.getComp:visible').map(function() {
+			     if(this.value!=""){
+			     	if(this.tagName=="SELECT"){
+			      		return this.options[this.selectedIndex].text;
+			      	}else {
+			      		return this.value;
+			      	}
+			      }
+			  }).get();//.join(",");
+			  var mod;
+		var actualFormula = $('.getComp:visible').map(function() {
+			     if(this.value!=""){
+			     
+			     	if(this.tagName=="SELECT"){
+			     	
+			     		if(this.options[this.selectedIndex].value=="%"){
+			     			mod="%";
+			     			return "*"
+			      		}else{ 
+				      		if(mod=="%"){mod='';
+			      			return (this.options[this.selectedIndex].value)+","+"/"+","+"100";
+				      		}else{ 
+			      			return this.options[this.selectedIndex].value;
+				      		}
+			      		}
+			      	}else{
+			      	 	if(mod=="%"){mod='';
+			      	 		return  this.value/100;
+			      		}else{ 
+			      			return this.value;
+			      		}
+			      	}
+			      }
+			  }).get();
+			
+		$("." +val.value).val(actualFormula.toString());	  
+		$("#"+val.value).val(displayFormula.toString().replace(/,/g, ''));
+		$("#tblFormula").find("tr:gt(2)").remove();
+			if(flag){				
+				$( '#add-formula-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+			  	$('#add-formula-modal').on('hidden', function(){
+					$(this).data('modal', null);  // destroys modal
+				});			
+			}
+
+      }
+      		var html='';
+
+       function bindOptionsToDr(tblId,selType){
+  
+          html='<option>Select</option>';
+        var $aTag="";
+		if(selType=="SummarizedValue"){
+			$aTag= $('#'+tblId).find('tbody tr').filter(function() {
+            	return $(this).find("td.tdType").text().includes("Number") || $(this).find("td.tdType").text().includes("CalculatedValue")  || $(this).find("td.tdType").text().includes("SummarizedValue");
+        	});
+		}else if(selType=="CalculatedValue"){
+			$aTag= $('#'+tblId).find('tbody tr').filter(function() {
+            	return $(this).find("td.tdType").text().includes("Number") || $(this).find("td.tdType").text().includes("CalculatedValue");
+        	});
+		}
+         
+        $($aTag).each(function( j ) {			
+            var label=$(this).find("td.tdLabel").text();
+            var colName=$(this).find("td.tdColumn").text();
+            var colType=$(this).find("td.tdType").text();
+            var calFormula=$(this).find("td input.actualFormula").val()
+            if(colName.includes("ColumnNumber")){
+                html+="<option value="+colName+">"+label+"</option>";
+            }else if(colName.includes("CalculatedValue")){
+                html+="<option value="+calFormula+">"+label+"</option>";
+            }else if(colName.includes("SummarizedValue")){
+                html+="<option value="+calFormula+">"+label+"</option>";
+            }
+        });
+        return html;
+  }
+function checkURL(str){
+var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+		    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+		    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+		    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+		    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+		    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+		  return !!pattern.test(str);
+
+}
+
+$(document).ready(function(){
+
+	$("#ddlTextValid").change(function() {
+		var txtValid=$('option:selected', this).val();
+		if(txtValid=="Select"){
+			$("#txtCharLimit").hide();
+			$("#secDrdn").removeClass('d-none');
+			$("#secDrdn").addClass('d-block');
+			$("#ddlDRWN").val("No");
+		}
+		else if(txtValid=="Link"){
+			$("#txtCharLimit,.coverbox_full").hide();
+			$("#secDrdn,.optionBox,.drOptType").removeClass('d-block');
+			$("#secDrdn,.optionBox,.drOptType").addClass('d-none');
+		}
+		else if(txtValid=="Char Limit"){
+			$("#txtCharLimit,.coverbox_full").show();
+			$(".coverbox_full").hide();
+
+			$("#secDrdn,.optionBox,.drOptType").removeClass('d-block');
+			$("#secDrdn,.optionBox,.drOptType").addClass('d-none');
+		}else if(txtValid=="Email"){
+			$("#txtCharLimit,.coverbox_full").hide();
+			$("#secDrdn,.optionBox,.drOptType").removeClass('d-block');
+			$("#secDrdn,.optionBox,.drOptType").addClass('d-none');
+		}		
+    });
+    $("#ddlTETextValid").change(function() {
+		var txtValid=$('option:selected', this).val();
+		if(txtValid=="Select"){
+			$("#txtTECharLimit").addClass('d-none');
+			$("#txtTECharLimit").removeClass('d-block');
+			$("#secTEDrdn").removeClass('d-none');
+			$("#secTEDrdn").addClass('d-block');
+			$("#ddlTEDRWN").val("No");
+		}
+		else if(txtValid=="Link"){
+			$("#txtTECharLimit").addClass('d-none');
+			$("#txtTECharLimit").removeClass('d-block');
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").removeClass('d-block');
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").addClass('d-none');
+			$(".coverbox_fullTE").hide();
+		}
+		else if(txtValid=="Char Limit"){
+			$("#txtTECharLimit").removeClass('d-none');
+			$("#txtTECharLimit").addClass('d-block');
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").removeClass('d-block');
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").addClass('d-none');
+			$(".coverbox_fullTE").hide();
+		}else if(txtValid=="Email"){
+			$("#txtTECharLimit").addClass('d-none');
+			$("#txtTECharLimit").removeClass('d-block');			
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").removeClass('d-block');
+			$("#secTEDrdn,.optionBoxTE,.drOptTypeTE").addClass('d-none');
+			$(".coverbox_fullTE").hide();
+			
+		}		
+    });
+    $("#ddlETextValid").change(function() {
+		var txtValid=$('option:selected', this).val();
+		if(txtValid=="Select"){
+			$("#txtECharLimit").addClass('d-none');
+			$("#txtECharLimit").removeClass('d-block');
+			$("#secEDrdn").removeClass('d-none');
+			$("#secEDrdn").addClass('d-block');
+		}
+		else if(txtValid=="Link"){
+			$("#txtECharLimit").addClass('d-none');
+			$("#txtECharLimit").removeClass('d-block');
+			$("#secEDrdn,.optionBoxE").removeClass('d-block');
+			$("#secEDrdn,.optionBoxE").addClass('d-none');
+		}
+		else if(txtValid=="Char Limit"){
+			$("#txtECharLimit").removeClass('d-none');
+			$("#txtECharLimit").addClass('d-block');
+			$("#secEDrdn,.optionBoxE").removeClass('d-block');
+			$("#secEDrdn,.optionBoxE").addClass('d-none');
+		}		
+    });
+});
+
+	function lengthRange(el) {
+  // create array of checks on `el.value`
+  var checks = [/\D/g.test(el.value), el.value > 255, el.value==0];
+  // if `el.value` contains non-digit character,
+  // or is greater than 255 ;
+  // `Array.prototype.some()` checks for `true` value
+  // if either `checks[0]`, or `checks[1]` is `true` do stuff
+  // else set `el.value` to user input
+  if (checks.some(Boolean)) {
+    // disable input
+    $(el).prop("disabled", true)
+    // delay 1 second
+    setTimeout(function() {
+      if (checks[0]) {
+        // Filter non-digits from input value.
+        el.value = el.value.replace(/\D/g, '');
+      }
+      // if `this.value` greater than 255 , set `this.value` to 
+      // first two characters of input
+      if (checks[1]) {
+        el.value = el.value.slice(0,2);
+      };
+      if (checks[2]) {
+        el.value = el.value.slice(0,0);
+      };
+      $(el).prop("disabled", false).val(el.value).focus()
+    }, 100)
+  }      
+
+}
+function tempActivation(elm){
+		var id=elm.value;
+		var active	=	$("input[name='active_option']:checked").val();
+		var strActive='';
+		var trialDateTill= new Date();
+		var publishedDate= String.format('{0:yyyy}-{0:MM}-{0:dd}',new Date());		
+
+		trialDateTill.setDate(trialDateTill.getDate() + 15);
+		var newArray = arr.filter(function (el) {
+		  return el.Active== true &&
+		         el.TrialStatus== "Licenced";
+		});
+		var userid = _spPageContextInfo.userId;
+		if(active=="trial"){
+			strActive='This process has been activated as an Trial Run for 15 days.';
+
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+				        Active:true,                 
+				        TrialStatus:"Running",
+				        TrialDate:trialDateTill,
+				        PublishedById:userid,
+				        PublishedOn:publishedDate
+				                                  		                       
+				};
+		}else if(active=="re-trial"){
+			strActive='This process has been activated as an Trial.';
+
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+				        Active:true,                 
+				        TrialStatus:"Running",
+				        PublishedById:userid ,
+				        PublishedOn:publishedDate		                       
+				};
+		}else if(active=="activate"){
+			strActive='Template activated';
+			if(LicBPaas <= newArray.length){alert("Licence not available.!!");return false}
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+				        Active:true,                 
+				        TrialStatus:"Licenced",
+				        PublishedById:userid,
+				        PublishedOn:publishedDate
+				};
+		}else if(active=="deactivate"){
+			strActive='Template deactivated';
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+				        Active:false,                 
+				        PublishedById:null,
+				        PublishedOn:null
+				};
+		}
+
+		var siteURL = _spPageContextInfo.webAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalProcessMaster')/getItemById("+id+")";  
+		$.ajax({
+	        url: siteURL + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/getItemById(" +id+ ")",
+	        type: "PATCH",
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify(listItem),
+	        success: function (data) {
+	        getAllTemplate();
+	         
+			 	alert(strActive);
+			$( '#activation' ).modal( 'hide' ).data( 'bs.modal', null );
+	        },
+	        error: function (error) {
+	        }
+	    });
+}
+$(document).ready(function(){
+	
+	if(IsBpassModules ==true && IsDMSModules==true){
+		$("#Tab-Process-Btn").show();
+		$("#processapproval").show();
+		$("#Tab-Documents-Btn").show();
+		//$("#documentapprovalsec").show();	
+		$("#newDocProcess").hide();
+		procButtonStyle="Process";
+	}else if(IsBpassModules ==false && IsDMSModules==true){
+		$("#Tab-Process-Btn").hide();
+		$("#processapproval").hide();
+		$("#Tab-Documents-Btn").hide();
+		$("#documentapprovalsec").show();
+				
+		$("#newProcess").hide();
+		procButtonStyle="Document";
+	}else if(IsBpassModules ==true && IsDMSModules==false ){
+		$("#Tab-Process-Btn").hide();
+		$("#processapproval").show();
+		$("#Tab-Documents-Btn").hide();
+		$("#documentapprovalsec").hide();
+		
+		$("#newDocProcess").hide();	
+		procButtonStyle="Process";
+	}else if(IsBpassModules ==false  && IsDMSModules==false ){
+		$("#Tab-Process-Btn").hide();
+		$("#processapproval").hide();
+		$("#Tab-Documents-Btn").hide();
+		$("#documentapprovalsec").hide();
+		
+		$("#newDocProcess").hide();	
+		$("#newProcess").hide();
+	}
+});
+function tempActivationDoc(ths,id) { 				
+		 var active	=	ths.ariaPressed;
+		 var setActive=false;
+		 if(active=="true"){
+			 setActive=false;
+		 }
+		 else{
+		 	 setActive=true;
+		 }
+        siteURL = _spPageContextInfo.webAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalProcessMaster')/getItemById("+id+")";  
+		$.ajax({
+	        url: siteURL + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/getItemById(" +id+ ")",
+	        type: "PATCH",
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify({'__metadata': { type: "SP.Data.ApprovalProcessMasterListItem" },  'Active':setActive}),
+	        success: function (data) {
+	         if(active=="true"){
+				 alert("Template deactivated");
+			 }
+			 else{
+			 	 alert("Template activated");
+			 }
+			getAllTemplate();
+	        },
+	        error: function (error) {
+	        }
+	    });
+	 } 
+/*-----step form------*/
+	var formula='Formula';
+   $(function(){
+    $('.stepnext').click(function(){
+      formula="AdvFormula";
+      $('.normalFormula').hide();
+      $('.advanceFormula').show();
+      //var store_lg = $('.stapwraping').scrollLeft();
+     // var ste_width = $('.steps_wrap').width();
+     // $('.stapwraping').animate({
+    //    scrollLeft: store_lg + ste_width  
+     // });
+    });
+
+    $('.stepprev').click(function(){
+      formula="Formula";
+      $('.advanceFormula').hide();
+      $('.normalFormula').show();
+     // var store_lg = $('.stapwraping').scrollLeft();
+     /// var ste_width = $('.steps_wrap').width();
+    //  $('.stapwraping').animate({
+      //  scrollLeft: store_lg - ste_width  
+    //  });
+    });
+
+  });	
+  $(document).ready(function(){
+	   $("#numDefVal,#txtFileSize,#txtTEFileSize").keyup(function () {
+		    // Check correct, else revert back to old value.
+		    if(this.value != ""){
+			    if(parseInt(this.value) < parseInt(this.min)){
+			      this.value = this.min;
+			    }
+			    if(parseInt(this.value) > parseInt(this.max)){
+			      this.value = this.max;
+			    }
+		    }
+		  
+	   });
+	   $("#numTEDefVal").keyup(function () {
+		    // Check correct, else revert back to old value.
+		    if(this.value != ""){
+			    if(parseInt(this.value) < parseInt(this.min)){
+			      this.value = this.min;
+			    }
+			    if(parseInt(this.value) > parseInt(this.max)){
+			      this.value = this.max;
+			    }
+		    }		   
+	   });
+   });    
+   var tblArr=[];
+   function updateTableColId(tempId){
+	   getTableColIdToUpdate(tempId);console.log(tblArr);
+	   for(var i=0;i<tblArr.length;i++){
+	   	  getTableId(tblArr[i].Title,tempId,tblArr[i].Id)
+	   }	
+   }
+   function getTableColIdToUpdate(tempId){
+	   $.ajax({
+	        async: false,
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ApprovalTemplateSetup')/items?$filter= TemplateID/ID eq "+tempId+" and ColumnType eq 'Table'",
+	        type: "GET",
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	        },
+	        success: function (data) {
+	        	tblArr=data.d.results;
+	        	$( '#edit-process-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+	        	$('#edit-process-modal').on('hidden', function(){
+					$(this).data('modal', null);  // destroys modal
+				});
+	        },
+	        error: function (error) {
+	            console.log(JSON.stringify(error));
+	        }
+	
+	    });   
+   }
+   function getTableId(title,tempId,tblId){ 
+   
+    $.ajax({
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateID/ID eq '"+tempId+"' and TableIName eq '"+title+"'",
+	        type: "GET",
+	        async: false,	        
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	        },	
+	        success: function (data) { 
+	        	var arrT=data.d.results;
+	        	for(i=0;i<arrT.length;i++){
+	        		updateSummTblId(arrT[i].Id,tblId);
+	        	}    		      
+	        }, 			
+	        error: function (error) { 
+		        console.log(error); 
+		        alert(error);
+	        }
+     });   
+   	 	
+   }
+   
+   function updateSummTblId(id,tblId){
+   		var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateSetupListItem" },		
+		TableIName:	tblId.toString(),		
+		};
+	    $.ajax({
+		        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/getItemById('" +id+ "')",
+		        type: "PATCH",
+		        async: false,
+		        headers: {
+		            "accept": "application/json;odata=verbose",
+		            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+		            "content-Type": "application/json;odata=verbose",
+		            "X-Http-Method": "MERGE",
+		            "If-Match": "*"
+		        },
+		        data: JSON.stringify(listItem),	
+		        success: function (data) { 
+		        }, 			
+		        error: function (error) { 
+			        console.log(error); 
+			        alert(error);
+		        }
+	     });
+   
+   }
+   
+   
+function getdata(Query)
+{
+    var ResultItems=[];
+    var Ownurl =Query;// _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ContactCenter')/items?"+Query+"";  
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) 
+        { 			
+            ResultItems = data.d.results;  
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        	console.log(data); 
+        }  
+    });
+    return ResultItems;
+}
+$(document).ready(function(){
+	$("#tblFilter").click(function(){
+		var PorcFilt=$("#ddlPorcFilt option:selected").text().toLowerCase();
+		if($("#ddlPorcFilt option:selected").index()==0){PorcFilt="";}
+		var IniFilt=$("#ddlIniFilt").val().toLowerCase();
+		if($("#ddlIniFilt option:selected").index()==0){IniFilt="";}
+
+		var DeptFilt="";
+		if($("#ddlIniFilt").val()== 'Department')
+		{	
+			DeptFilt=$("#ddlDeptFilt option:selected").text().toLowerCase();
+			if($("#ddlDeptFilt option:selected").index()==0){DeptFilt="";}
+		}else if($("#ddlIniFilt").val()== 'Office')
+		{	
+			DeptFilt=$("#ddlOfficeFilt option:selected").text().toLowerCase();
+			if($("#ddlOfficeFilt option:selected").index()==0){DeptFilt="";}			
+		}else if($("#ddlIniFilt").val()== 'Group')
+		{	
+			DeptFilt=$("#ddlGroupFilt option:selected").text().toLowerCase();
+			if($("#ddlGroupFilt option:selected").index()==0){DeptFilt="";}	
+		}else if($("#ddlIniFilt").val()== 'Client')
+		{	
+			DeptFilt=$("#ddlClientFilt option:selected").text().toLowerCase();
+			if($("#ddlClientFilt option:selected").index()==0){DeptFilt="";}			
+		}
+		var filtTblId="";
+		if(procButtonStyle=="Process"){filtTblId="allTemplateData"; }
+		else if(procButtonStyle=="Document"){filtTblId="docProcessData"; }
+		var StatusFilt=$("#ddlStatusFilt").val().toLowerCase();
+		if($("#ddlStatusFilt option:selected").index()==0){StatusFilt="";}
+		$("#"+filtTblId+" tr").filter(function() {
+	    	$(this).toggle(($(this).find('td:eq(1) div.ellipsis-2').text().toLowerCase()==PorcFilt ||PorcFilt =="")&&($(this).find('td:eq(3) div.ellipsis-Initiation a').text().toLowerCase().trim()==IniFilt ||IniFilt=="") && ($(this).find('td:eq(1) div.ellipsis-initFilt').text().toLowerCase().indexOf(DeptFilt) > -1 ||DeptFilt=="" )&&($(this).find('td:eq(1) div.ellipsis-filtActive').text().toLowerCase()==StatusFilt ||StatusFilt==""))
+	    });
+	    //$("#filter_pops").hide()
+	    
+		/* var items; // Data will have user object  
+                var results; // console.log(data);
+                
+                    if (dataAsArr!= null) {  
+                        var html='';var docHtml='';
+                        
+					var activeCount = dataAsArr.filter(val => {
+					    return val.Active==true && val.ProcessType=="Process" && val.TrialStatus!="Running";
+					});$("#activeCount").text(activeCount.length);
+					
+					var inactiveCount = dataAsArr.filter(val => {
+					    return val.Active==false && val.ProcessType=="Process";
+					})
+					$("#inactiveCount").text(inactiveCount.length);
+					
+					var trialCount = dataAsArr.filter(val => {
+					    return val.Active==true && val.ProcessType=="Process" && val.TrialStatus=="Running";
+					})
+					$("#trialCount").text(trialCount.length);
+					
+					var licensedCount = dataAsArr.filter(val => {
+					    return val.Active==true && val.ProcessType=="Process" && val.TrialStatus=="Licenced";
+					})
+					$("#licensedCount").text(LicBPaas-(licensedCount.length));
+					var activeDocCount = dataAsArr.filter(val => {
+					    return val.Active==true && val.ProcessType=="Document";
+					})
+					$("#activeDocCount").text(activeDocCount.length);
+					var inactiveCount = dataAsArr.filter(val => {
+					    return val.Active==false && val.ProcessType=="Document";
+					})
+					var dataAsArr1 = dataAsArr.filter(val => {
+					    return val.ID==PorcFilt || val.Initiation==IniFilt && val.DepartmentId.results==DeptFilt;
+					})
+					$("#inactiveDocCount").text(inactiveCount.length);
+					    $.each(dataAsArr1, function (index, result) {
+					    var Active='';
+					    var steps;
+					    
+					    if(result.NumberOfSteps==null||result.NumberOfSteps==null){steps=0;}
+					    else{steps=result.NumberOfSteps;}
+					    var TotalRequst = result.NumberOfRequest == null ? 0 : result.NumberOfRequest;
+					    var ActiveRequst = result.NumberOfRequest_Active == null ? 0 : result.NumberOfRequest_Active;
+					    var trialDate= new Date(result.TrialDate);
+  						//trialDate.setDate(trialDate.getDate() + 15);
+  						
+  						var trialDateTill= new Date();
+  						//trialDateTill.setDate(trialDateTill.getDate() + 15);
+						var trailText='';
+						if(result.Active==true && result.ProcessType == 'Process' && (result.TrialStatus=="Licenced" || result.TrialStatus=="Not Applied" || result.TrialStatus=="" || result.TrialStatus==null)){Active="active";}
+					    else if(result.Active==true && result.TrialStatus=="Running" && trialDate>trialDateTill && result.ProcessType == 'Process'){Active="active blue_active";trailText="Trial till "+ String.format('{0:dd} {0:MMM} {0:yyyy}',trialDate);}
+						if(result.Active==false && result.ProcessType == 'Process' && (result.TrialStatus=="Licenced" || result.TrialStatus=="Not Applied" || result.TrialStatus=="" || result.TrialStatus==null)){Active="";}
+					    else if(result.Active==false && result.TrialStatus=="Expired" && result.ProcessType == 'Process'){Active="";trailText="Trial Expired";}
+					    
+					    else if(result.Active==true && result.ProcessType == 'Document'){Active="active";}
+					    else if(result.Active==false && result.ProcessType == 'Document'){Active="";}
+					    
+					    if(result.TrialStatus=="Running" && trialDate>trialDateTill){
+					   		
+					    }else if(result.TrialStatus=="Running" && trialDate<trialDateTill){
+					   		
+					    }
+					    var TrialStatus=result.TrialStatus;
+					    if(result.ProcessType == 'Document' && ActiveRequst >0){
+					    	docHtml+="<tr> <td class='w-7'> <img src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>Document Approval</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'><p id='StepsCounts"+result.ID+"'>"+steps+" Steps</p></a></td> <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' value='"+result.TrialStatus+"' class='btn btn-sm btn-secondary btn-toggle "+Active+"'  aria-pressed='"+result.Active+"' autocomplete='off' onclick='tempActivationDoc(this,"+result.ID+")' > <div class='handle'></div> </button> <div class=''></div></td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box' style='display:none'> <input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Document'&& ActiveRequst ==0){
+					    	docHtml+="<tr> <td class='w-7'> <img src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>Document Approval</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'><p id='StepsCounts"+result.ID+"'>"+steps+" Steps</p></a></td> <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' value='"+result.TrialStatus+"' class='btn btn-sm btn-secondary btn-toggle "+Active+"'  aria-pressed='"+result.Active+"' autocomplete='off' onclick='tempActivationDoc(this,"+result.ID+")' > <div class='handle'></div> </button><div class=''></div> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#documentapproval' onclick='getDocToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Process' && ActiveRequst >0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.RequestFor+"</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'><p id='StepsCounts"+result.ID+"'>"+steps+" Steps</p></a></td>  <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +"  Total Requests</div> <div class='ellipsis-2'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' value='' class='btn btn-sm btn-secondary btn-toggle "+Active+"' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem1("+result.Active+","+result.Id+",\""+TrialStatus+"\",\""+result.TrialDate+"\",\""+result.Title+"\")' data-toggle='modal' data-target='#activation'> <div class='handle'></div> </button><div class=''>"+trailText+"</div> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box' style='display:none'> <input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+  						 else if(result.ProcessType == 'Process' && ActiveRequst ==0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.RequestFor+"</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'><p id='StepsCounts"+result.ID+"'>"+steps+" Steps</p></a></td>  <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' value='' class='btn btn-sm btn-secondary btn-toggle "+Active+"' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem1("+result.Active+","+result.Id+" ,\""+TrialStatus+"\" ,\""+result.TrialDate+"\",\""+result.Title+"\")' data-toggle='modal' data-target='#activation'> <div class='handle'></div> </button><div class=''>"+trailText+"</div>  </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#edit-process-modal' onclick='getDataToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a> </div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+
+					    });
+                      //  itemsArray=itemsArray.concat(results);
+                        $("#allTemplateData tbody").html(html);
+                        $("#docProcessData tbody").html(docHtml);
+
+                    }  */
+	});
+	$("#btnFilter").click(function(){
+		$('#ddlPorcFilt').empty();
+		$('#ddlPorcFilt').append("<option value=''>Select</option>");
+		 for (i = 0; i < arr.length; i++) {
+		 		if(arr[i].ProcessType==procButtonStyle){
+                    $('#ddlPorcFilt').append('<option value=' + arr[i].ID + '>' + arr[i].Title + '</option>');                    
+                }
+         }
+	});
+	$("#btnClearFilter").click(function(){
+		var filtTblId="";
+		if(procButtonStyle=="Process"){filtTblId="allTemplateData"; }
+		else if(procButtonStyle=="Document"){filtTblId="docProcessData"; }
+		$("#"+filtTblId+" tr").filter(function() {
+	    	$(this).css("display","table-row");
+	    });
+	});
+	$('#filter_pops').on('hidden.bs.modal', function() {
+			var modal = $(this);	
+	    	modal.find('.modal-body select').prop('selectedIndex', 0);	
+			$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept').css("display", "none");
+	});
+});
+function getOptInitComp(LstName,DropdownId,state){
+		
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('"+LstName+"')/items",
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	var option ='';
+        	var className='';
+				$('#'+DropdownId).empty();
+				$('#'+DropdownId).append("<option value=''>Select</option>");
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<option class="Company" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title + '</li>')
+                }				
+        	 	
+                			
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+function setDisInit(Init) {    
+	if(Init.value == 'Anyone' || Init.value  == 'Employee' || Init.value  == 'Guest User')
+	{	
+		if(Init.value == 'Employee'){
+			$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept').css("display", "none");
+
+		}else{
+			$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept').css("display", "none");
+		}
+		
+	}
+	else if(Init.value  == 'Selective')
+	{		
+		$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept').css("display", "none");
+		
+	}else if(Init.value  == 'Department')
+	{	
+		getOptInitComp("Departments","ddlDeptFilt","");
+		$('.filterDept').css("display", "block");
+		$('.filterOffice,.filterClient,.filterGroup').css("display", "none");
+		
+		
+	}else if(Init.value  == 'Office')
+	{	
+		getOptInitComp("OfficeLocation","ddlOfficeFilt","");
+		$('.filterOffice').css("display", "block");
+		$('.filterDept,.filterClient,.filterGroup').css("display", "none");
+		
+	}else if(Init.value  == 'Group')
+	{
+		getOptInitComp("ApproversGroups","ddlGroupFilt","");
+		$('.filterGroup').css("display", "block");
+		$('.filterDept,.filterClient,.filterOffice').css("display", "none");
+
+
+	}else if(Init.value  == 'Client')
+	{	
+		getOptInitComp("ClientMaster","ddlClientFilt","");
+		$('.filterClient').css("display", "block");
+		$('.filterDept,.filterOffice,.filterGroup').css("display", "none");
+
+	}else if(Init.selectedIndex == 0)
+	{		
+		$('.filterOffice,.filterClient,.filterGroup,.filterClient,.filterDept').css("display", "none");
+		
+	}
+
+}
+
+function showMngtTab(id,sts) {
+	$('.btnDef').hide();$('#processModTitle').text("Process Parameter");
+	$('.activating,.btnMngt,#defination_tab').show();//$('#Management_tab').css({propertyName: 'Display'});
+	$('#Management_tab').hide();$('#liManagement').removeClass('active');$('#liDefination').addClass('active');
+	$(".activating span.slidesec").css({"width": "87px", "left": "0px"});
+	$("#liDefination").css({"color": "rgb(84, 141, 203)"});
+	$("#liManagement").css({"color": "#333"});
+
+	/*$('#Management_tab').addClass('fade');
+	$('#Management_tab').removeClass('active');
+	
+
+$('#definition_tab').removeClass('fade');
+	$('#liDefination').addClass('active');*/
+
+	$('#btnUpdateDetails').val(id);
+	var slectedrow=arr.find(x => x.Id === id);	
+	var TotalRequst = slectedrow.NumberOfRequest == null ? 0 : slectedrow.NumberOfRequest;
+	var ActiveRequst = slectedrow.NumberOfRequest_Active == null ? 0 : slectedrow.NumberOfRequest_Active;
+	var status='';
+	if(slectedrow.Active==true){
+		if(sts=="Licenced"){
+			status="Active(Live)";
+			$("#txtValidDate").val("Live");
+		}else if(sts=="Running"){
+			status="Active(Trial)";
+			var TrialDate= String.format('{0:dd} {0:MMM} {0:yyyy}',new Date(slectedrow.TrialDate));
+
+			$("#txtValidDate").val(TrialDate);
+		}
+		
+	}else if(slectedrow.Active==false){status="Not Active";$("#txtValidDate").val("");}
+		var peoplePickerteamleaderDiv = this.SPClientPeoplePicker.SPClientPeoplePickerDict.txtPublishBy_TopSpan;
+	    //	peoplePickerteamleaderDiv.AddUserKeys(SavedStpApprovers[index-1].StUser[i].Key.split('|')[2]);
+	    if(slectedrow.PublishedById!=null){
+	    	var UserTitle = getUserDetails(slectedrow.PublishedBy.EMail);
+	    	//peoplePickerteamleaderDiv.AddUserKeys(UserTitle);
+	    }
+	    //peoplePickerteamleaderDiv.SetEnabledState(false); 
+	if(slectedrow.PublishedOn!=null && slectedrow.PublishedOn!=""){
+		var publishedDate= String.format('{0:dd} {0:MMM} {0:yyyy}',new Date(slectedrow.PublishedOn));
+		$("#txtPublishOn").val(publishedDate);		
+	}else{$("#txtPublishOn").val("");}
+	$('#txtStatus').val(status);
+	$('#txtTotalReq').val(TotalRequst);$('#txtRunReq').val(ActiveRequst);
+	
+	let list = document.querySelectorAll('.slideN img');
+			for (let i=0; i<list.length; i++){
+				let j = 0;
+				var stringURL = list[i].getAttribute('src').slice(3).split("?")[0].split("?")[0]
+      		    var avoid = "_vti_bin/afdcache.ashx/authitem/";
+				var avoided = stringURL.replace(avoid,'');  
+					if((slectedrow.FileIcon.Url).includes(avoided)){
+						$('#blah').attr("src",'');
+						$('.changemeN').addClass('d-block');
+	                    $('.changemeN').removeClass('d-none');
+	                    $('#Upload-user-imageN').removeClass('d-block');
+	                    $('#Upload-user-imageN').addClass('d-none');
+						$('#divSelImg').hide();
+						let list = document.querySelectorAll('.slideN img');
+						for (let j=0; j<list.length; j++){
+							list[j].parentElement.className = 'slide slideN';
+						}
+						$("input[name=UpdateEmpN][value='Choose from gallery']").prop('checked', true);
+						list[i].src=list[0].getAttribute('src');
+
+						list[0].src=slectedrow.FileIcon.Url;
+						list[0].parentElement.className = 'slide slideN image-active';
+						break; 
+
+					}
+					else{ 			
+						$("input[name=UpdateEmpN][value='Upload']").prop('checked', true);
+
+						list[i].parentElement.className = 'slide slideN';      
+						$('#blah').attr("src",slectedrow.FileIcon.Url);
+			 			$('#divSelImg').show();
+			 			$('.changemeN').removeClass('d-block');
+                    	$('.changemeN').addClass('d-none');
+
+                    	$('#Upload-user-imageN').addClass('d-block');
+                    	$('#Upload-user-imageN').removeClass('d-none');
+			 		}
+				
+			}
+
+	
+	$("#ddlPageColumn").val(slectedrow.PageColumn);
+
+	$("#txtTitle").val(slectedrow.Title);
+	$("#txtTemplate").val(slectedrow.TemplateName);
+	$("#tmpTitle").text(slectedrow.Title);
+	$("#tmpName").text(slectedrow.TemplateName);
+	$('#tmpIcon').attr("src",slectedrow.FileIcon.Url);
+	$("#txtDetails").val(slectedrow.Details);
+	$("#txtInstruct").val(slectedrow.Instructions);
+	$('#txtPre').val(slectedrow.Prerequisite);
+	var themeopts= slectedrow.Appearance;
+    var thm="";
+      	if(themeopts=="Theme"){$("#txtThm").val(slectedrow.ThemeColor);$(".themeselect").show();$(".customselect").hide();thm="themeselect";}
+      	else if(themeopts=="Custom"){$("#txtCustomThm").val(slectedrow.ThemeColor);$(".customselect").show();$(".themeselect").hide();thm="customselect";}
+      	else if(themeopts=="Default"){thm="defaultselect";$(".customselect").hide();$(".themeselect").hide();}
+		$("input[name=themopts][value='"+thm+"']").prop('checked', true);
+			if(slectedrow.ProcessOwnerId!=null){
+				for(i=0;i<slectedrow.ProcessOwnerId.results.length;i++)
+				{
+					var peoplePickerteamleaderDiv = this.SPClientPeoplePicker.SPClientPeoplePickerDict.spnPreocessOwner_TopSpan;
+		    	 //	peoplePickerteamleaderDiv.AddUserKeys(SavedStpApprovers[index-1].StUser[i].Key.split('|')[2]);
+		    	 	var UserTitle = GetUserLogin(slectedrow.ProcessOwnerId.results[i]);
+		    	 	peoplePickerteamleaderDiv.AddUserKeys(UserTitle);
+	     		}
+			}
+	if(slectedrow.Active==true){
+		$("#btnActive").addClass('active');
+		$("#btnActive").attr('aria-pressed', 'true');	}
+	else{
+		$("#btnActive").removeClass('active');
+		$("#btnActive").attr('aria-pressed', 'false');	
+	}
+
+
+	$("#ddlReqFor option").each(function()
+	{
+		if($(this).val()==slectedrow.RequestFor){
+			$("#chkReqFor").prop('checked', false);
+			$("#ddlReqFor").val(slectedrow.RequestFor);
+			$("#ddlReqFor").show();
+			$("#txtReqFor").hide();
+			return false;
+		}
+		else{
+			$("#chkReqFor").prop('checked', true);
+			$("#txtReqFor").val(slectedrow.RequestFor);
+			$("#ddlReqFor").hide();
+			$("#txtReqFor").show();
+		}
+	});
+
+}
+function sortTemplate(txt) {     
+     
+                var results; 
+                results=arr;
+                    
+                if(txt=='Title'){
+                	results.sort(function (a, b) {
+                	if(a.Title!=null && b.Title!=null){
+					let fa = a.Title.toLowerCase(),
+					        fb = b.Title.toLowerCase();
+					
+					    if (fa < fb) {
+					        return -1;
+					    }
+					    if (fa > fb) {
+					        return 1;
+					    }
+					    return 0;	
+					    }				
+				    });
+                }
+                else if(txt=='TemplateName'){
+                	results.sort(function (a, b) {
+                	if(a.TemplateName!=null && b.TemplateName!=null){
+					let fa = a.TemplateName.toLowerCase(),
+					        fb = b.TemplateName.toLowerCase();
+					
+					    if (fa < fb) {
+					        return -1;
+					    }
+					    if (fa > fb) {
+					        return 1;
+					    }
+					    return 0;	
+					    }				
+				    });
+                }
+                else if(txt=='NumberOfRequest'){
+                	results.sort(function (a, b) {
+						return a.NumberOfRequest- b.NumberOfRequest;
+					});
+					results.reverse();
+                }
+                else if(txt=='NumberOfRequest_Active'){
+                	results.sort(function (a, b) {
+						return a.NumberOfRequest_Active- b.NumberOfRequest_Active;
+					});
+					results.reverse();
+                }
+                else if(txt=='Modified'){
+                	results.sort(function (a, b) {
+						return new Date(a.Modified) - new Date(b.Modified);
+
+					});
+					results.reverse();
+                }
+                else if(txt=='Created'){
+                	results.sort(function (a, b) {
+						return new Date(a.Created) - new Date(b.Created);
+
+					});
+					results.reverse();
+                }             
+
+                    if (results!= null) {  
+                    var html='';var docHtml='';                        
+					 $.each(results, function (index, result) {
+					    var Active='';
+					    var steps;
+					    console.log(result.Title);
+					    if(result.NumberOfSteps==null||result.NumberOfSteps==null){steps=0;}
+					    else{steps=result.NumberOfSteps;}
+					    var TotalRequst = result.NumberOfRequest == null ? 0 : result.NumberOfRequest;
+					    var ActiveRequst = result.NumberOfRequest_Active == null ? 0 : result.NumberOfRequest_Active;
+					    var trialDate= new Date(result.TrialDate);  						
+  						var trialDateTill= new Date();
+						var trailText='';
+						var filtActive="";
+						if(result.Active==true && result.ProcessType == 'Process' && (result.TrialStatus=="Licenced" || result.TrialStatus=="Not Applied" || result.TrialStatus=="" || result.TrialStatus==null)){Active="active";filtActive="Active";}
+					    else if(result.Active==true && result.TrialStatus=="Running" && trialDate>trialDateTill && result.ProcessType == 'Process'){Active="active blue_active";trailText="Trial till "+ String.format('{0:dd} {0:MMM} {0:yyyy}',trialDate);filtActive="Under Trial";}
+						if(result.Active==false && result.ProcessType == 'Process' && (result.TrialStatus=="Licenced" || result.TrialStatus=="Not Applied" || result.TrialStatus=="" || result.TrialStatus==null)){Active="";filtActive="Inactive";}
+					    else if(result.Active==false && result.TrialStatus=="Expired" && result.ProcessType == 'Process'){Active="";trailText="Trial Expired"; filtActive="Inactive";}
+					    
+					    else if(result.Active==true && result.ProcessType == 'Document'){Active="active";filtActive="Active";}
+					    else if(result.Active==false && result.ProcessType == 'Document'){Active="";filtActive="Inactive";}
+					    
+					    if(result.TrialStatus=="Running" && trialDate>trialDateTill){
+					   		
+					    }else if(result.TrialStatus=="Running" && trialDate<trialDateTill){
+					   		
+					    }
+					    var initFiltType;
+					    if(result.Initiation=="Department"){
+						    initFiltType= result.Department.results.map(function(item) {
+							  return item['Title'];
+							}).join(",");					    	
+					    }else if(result.Initiation=="Office"){
+						    initFiltType= result.OfficeLocation.results.map(function(item) {
+							  return item['Title'];
+							});					    	
+					    }else if(result.Initiation=="Group"){
+						    initFiltType= result.Group.results.map(function(item) {
+							  return item['Title'];
+							});					    	
+					    }else if(result.Initiation=="Client"){
+						    initFiltType= result.GuestClient.results.map(function(item) {
+							  return item['Title'];
+							});					    	
+					    }
+					    
+					    var TrialStatus=result.TrialStatus;
+					    if(result.ProcessType == 'Document' && ActiveRequst >0){
+					    	docHtml+="<tr> <td class='w-7'> <img src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2 sortProcName'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1 sortTempName'>"+result.TemplateName+"</div><div class='table-title-pera ellipsis-initFilt' style='display:none'>"+initFiltType+"</div><div class='ellipsis-filtActive' style='display:none'>"+filtActive+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>Document Approval</div> </td> <td class='w-10'><div class='table-title-pera ellipsis-Initiation'>Initiator :<a data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Initiation'+"\")'> "+result.Initiation+"</a></div><div class='table-title-pera ellipsis-Init'>Steps :<a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Steps'+"\")'> "+steps+" Steps</a></div></td> <td class='w-10'> <div class='ellipsis-2 '><span class='sortMaxReq'>"+TotalRequst +"</span> Total Requests</div> <div class='ellipsis-2 sortMaxActReq'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' value='"+result.TrialStatus+"' class='btn btn-sm btn-secondary btn-toggle "+Active+"'  aria-pressed='"+result.Active+"' autocomplete='off' onclick='tempActivationDoc(this,"+result.ID+")' > <div class='handle'></div> </button> <div class=''></div></td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box' style='display:none'> <input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Document'&& ActiveRequst ==0){
+					    	docHtml+="<tr> <td class='w-7'> <img src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2 sortProcName'>"+result.Title+"</div> <div class='table-title-pera ellipsis-1 sortTempName'>"+result.TemplateName+"</div> <div class='table-title-pera ellipsis-initFilt' style='display:none'>"+initFiltType+"</div><div class='ellipsis-filtActive' style='display:none'>"+filtActive+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>Document Approval</div> </td> <td class='w-10'><div class='table-title-pera ellipsis-Initiation'>Initiator :<a data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Initiation'+"\")'> "+result.Initiation+"</a></div><div class='table-title-pera ellipsis-Init'>Steps :<a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Steps'+"\")'> "+steps+" Steps</a></div></td> <td class='w-10'> <div class='ellipsis-2 '><span class='sortMaxReq'>"+TotalRequst +"</span> Total Requests</div> <div class='ellipsis-2 sortMaxActReq'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' value='"+result.TrialStatus+"' class='btn btn-sm btn-secondary btn-toggle "+Active+"'  aria-pressed='"+result.Active+"' autocomplete='off' onclick='tempActivationDoc(this,"+result.ID+")' > <div class='handle'></div> </button><div class=''></div> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#documentapproval' onclick='getDocToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Process' && ActiveRequst >0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2 sortProcName'><a href='#' data-toggle='modal' data-target='#new_Procesing_tbs' onclick='showMngtTab("+result.ID+")'>"+result.Title+"</a></div> <div class='table-title-pera ellipsis-1 sortTempName'>"+result.TemplateName+"</div> <div class='table-title-pera ellipsis-initFilt' style='display:none'>"+initFiltType+"</div><div class='ellipsis-filtActive' style='display:none'>"+filtActive+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.RequestFor+"</div> </td> <td class='w-10'><div class='table-title-pera ellipsis-Initiation'>Initiator :<a data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Initiation'+"\")'> "+result.Initiation+"</a></div><div class='table-title-pera ellipsis-Init'>Steps :<a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Steps'+"\")'> "+steps+" Steps</a></div></td>  <td class='w-10'> <div class='ellipsis-2 '><span class='sortMaxReq'>"+TotalRequst +"</span> Total Requests</div> <div class='ellipsis-2 sortMaxActReq'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' value='' class='btn btn-sm btn-secondary btn-toggle "+Active+"' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem1("+result.Active+","+result.Id+",\""+TrialStatus+"\",\""+result.TrialDate+"\")' data-toggle='modal' data-target='#activation'> <div class='handle'></div> </button><div class=''>"+trailText+"</div> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box' style='display:none'> <input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+  						 else if(result.ProcessType == 'Process' && ActiveRequst ==0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2 sortProcName'><a href='#' data-toggle='modal' data-target='#new_Procesing_tbs' onclick='showMngtTab("+result.ID+")'>"+result.Title+"</a></div> <div class='table-title-pera ellipsis-1 sortTempName'>"+result.TemplateName+"</div> <div class='table-title-pera ellipsis-initFilt' style='display:none'>"+initFiltType+"</div><div class='ellipsis-filtActive' style='display:none'>"+filtActive+"</div></td> <td class='w-20'> <div class='ellipsis-3'>"+result.RequestFor+"</div> </td> <td class='w-10'><div class='table-title-pera ellipsis-Initiation'>Initiator :<a data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Initiation'+"\")'> "+result.Initiation+"</a></div><div class='table-title-pera ellipsis-Init'>Steps :<a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+",\""+'Steps'+"\")'> "+steps+" Steps</a></div></td>  <td class='w-10'> <div class='ellipsis-2 '><span class='sortMaxReq'>"+TotalRequst +"</span> Total Requests</div> <div class='ellipsis-2 sortMaxActReq'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' value='' class='btn btn-sm btn-secondary btn-toggle "+Active+"' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem1("+result.Active+","+result.Id+" ,\""+TrialStatus+"\" ,\""+result.TrialDate+"\")' data-toggle='modal' data-target='#activation'> <div class='handle'></div> </button><div class=''>"+trailText+"</div>  </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#edit-process-modal' onclick='getDataToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a> </div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+
+					    });
+                      if($("#processapproval").is(":visible")){
+                      	$("#allTemplateData tbody").html(html);
+                      }else if($("#documentapprovalsec").is(":visible")){
+                        $("#docProcessData tbody").html(docHtml);                        
+                      }
+
+                    }  
+            
+    }
+    
+    function getUserDetails(userNamecurretn){
+                            var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and PrimaryCompany eq 'Primary' and LogonName/EMail eq '" + userNamecurretn + "' ";
+                            var defaultRows='';
+                            $.when(getItemsWithQueryItems('Employees', Query)).done(function (UserResults) {
+                                UResults = UserResults.results;
+                                var value = UResults[0];
+                                if (UResults.length > 0) {
+                                    if (value.AttachmentFiles.results.length > 0) {
+                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+                                    }
+                                    else {
+                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                                    }
+                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LogonName.FirstName + ' ' + value.LogonName.LastName + '</h3>';
+                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+
+                                }
+                                else {
+                                	//External Users
+                                	var Query = "?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email eq '" + userNamecurretn + "'&$top=5000";
+		                            $.when(getItemsWithQueryItems('ExternalUsers', Query)).done(function (UserResults) {
+		                                UResults = UserResults.results;
+		                                var value = UResults[0];
+		                                if (UResults.length > 0) {
+		                                    if (value.AttachmentFiles.results.length > 0) {
+		                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+		                                    }
+		                                    else {
+		                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.email);
+		                                    }
+		                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+		                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LoginName.Title+ ' </h3>';
+		                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+		                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+		
+		                                }
+		                            });
+                                }
+                            });
+                       $("#txtPublishBy").html(defaultRows);
+                
+}

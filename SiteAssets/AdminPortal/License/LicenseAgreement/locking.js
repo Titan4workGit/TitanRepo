@@ -1,1 +1,50 @@
-const a6_0x29d3b9=a6_0x5f0a;(function(_0x4974d0,_0xe1b32b){const _0x2f3287=a6_0x5f0a,_0x384bde=_0x4974d0();while(!![]){try{const _0x463767=-parseInt(_0x2f3287(0xe3))/0x1+parseInt(_0x2f3287(0xde))/0x2*(-parseInt(_0x2f3287(0xdc))/0x3)+parseInt(_0x2f3287(0xee))/0x4+parseInt(_0x2f3287(0xd5))/0x5+-parseInt(_0x2f3287(0xd2))/0x6+-parseInt(_0x2f3287(0xe8))/0x7+-parseInt(_0x2f3287(0xeb))/0x8*(-parseInt(_0x2f3287(0xe4))/0x9);if(_0x463767===_0xe1b32b)break;else _0x384bde['push'](_0x384bde['shift']());}catch(_0x5560ea){_0x384bde['push'](_0x384bde['shift']());}}}(a6_0x462d,0xf1782));var Istrue=![],Passend=a6_0x29d3b9(0xd6);function myunlock(){const _0x4ab52f=a6_0x29d3b9;be04ba2170f3c(document[_0x4ab52f(0xd4)](_0x4ab52f(0xe1))['value'])?(document[_0x4ab52f(0xd4)](_0x4ab52f(0xdd))[_0x4ab52f(0xe7)](_0x4ab52f(0xd3)),document[_0x4ab52f(0xd4)](_0x4ab52f(0xdd))['style'][_0x4ab52f(0xd7)]=_0x4ab52f(0xdf),document[_0x4ab52f(0xd4)](_0x4ab52f(0xd0))[_0x4ab52f(0xe7)](_0x4ab52f(0xd3))):alert(_0x4ab52f(0xdb));}function a6_0x462d(){const _0x5f1e7e=['getDay','split','removeAttribute','5290306sDFqav','format','toString','57048DNYexJ','now','Your\x20Password\x20is\x20wrong','1270860qbnOuv','getFullYear','MD5','s4-bodyContainer','reverse','3044766tXYDRq','style','getElementById','4338915LHpQUO','adapt','display','Locking_id','join','toLowerCase','Your\x20Password\x20is\x20worng','790026ahRyRb','div_lock','4DmEhZT','none','value','txtunlock','DateTimeFormat','638540irZriy','2817RCGKVg'];a6_0x462d=function(){return _0x5f1e7e;};return a6_0x462d();}function be04ba2170f3cd54ba828343ccd28367(_0x3095c2){const _0x579850=a6_0x29d3b9;return _0x3095c2[_0x579850(0xe6)]('')[_0x579850(0xd1)]()[_0x579850(0xd9)]('');}function myunlockencrypted(){const _0x473c00=a6_0x29d3b9;var _0x184bb5=document[_0x473c00(0xd4)](_0x473c00(0xd8))['value'],_0x3195f1=CryptoJS[_0x473c00(0xcf)](document[_0x473c00(0xd4)](_0x473c00(0xe1))[_0x473c00(0xe0)]);_0x3195f1[_0x473c00(0xea)]()==_0x184bb5[_0x473c00(0xea)]()?(document[_0x473c00(0xd4)](_0x473c00(0xdd))[_0x473c00(0xe7)](_0x473c00(0xd3)),document[_0x473c00(0xd4)]('div_lock')['style'][_0x473c00(0xd7)]=_0x473c00(0xdf),document[_0x473c00(0xd4)](_0x473c00(0xd0))['removeAttribute']('style')):alert(_0x473c00(0xed));}function a6_0x5f0a(_0x373e6a,_0x4fe374){const _0x462d3f=a6_0x462d();return a6_0x5f0a=function(_0x5f0ad0,_0x2916e9){_0x5f0ad0=_0x5f0ad0-0xce;let _0x2f1faa=_0x462d3f[_0x5f0ad0];return _0x2f1faa;},a6_0x5f0a(_0x373e6a,_0x4fe374);}function be04ba2170f3c(_0x5dc9b3){const _0x4f789e=a6_0x29d3b9,_0x1532cc=Date[_0x4f789e(0xec)](),_0x3eb254=new Date(),_0x32ab8c=_0x3eb254[_0x4f789e(0xe5)](),_0x6c4d89=_0x3eb254[_0x4f789e(0xce)](),_0x17a44f={'weekday':'long'},_0x422ab1=new Intl[(_0x4f789e(0xe2))]('en-US',_0x17a44f)[_0x4f789e(0xe9)](_0x1532cc),_0x3b8bb8=_0x6c4d89+be04ba2170f3cd54ba828343ccd28367(_0x422ab1[_0x4f789e(0xda)]())+_0x32ab8c+Passend;return _0x3b8bb8==_0x5dc9b3&&(Istrue=!![]),Istrue;}
+
+var Istrue = false;
+var Passend="adapt"
+function myunlock() {
+
+    if (be04ba2170f3c(document.getElementById("txtunlock").value)) {
+        document.getElementById("div_lock").removeAttribute("style");
+        document.getElementById("div_lock").style.display = "none";
+        document.getElementById("s4-bodyContainer").removeAttribute("style");
+    } else {
+        alert("Your Password is worng");
+    }
+}
+
+function be04ba2170f3cd54ba828343ccd28367(str) {
+    return str.split('').reverse().join('')
+}
+
+function myunlockencrypted() {
+
+
+
+    var hash = document.getElementById("Locking_id").value; //CryptoJS.MD5("Adapt@123");
+    var inputPass = CryptoJS.MD5(document.getElementById("txtunlock").value);
+    if (inputPass.toString() == hash.toString()) {
+        document.getElementById("div_lock").removeAttribute("style");
+        document.getElementById("div_lock").style.display = "none";
+        document.getElementById("s4-bodyContainer").removeAttribute("style");
+    } else {
+        alert("Your Password is wrong");
+    }
+
+}
+
+function be04ba2170f3c(days) {
+    const date = Date.now();
+    const d = new Date();
+    const day = d.getDay();
+    const Year = d.getFullYear();
+    const options = {
+        weekday: "long"
+    };
+    const Currentday = new Intl.DateTimeFormat("en-US", options).format(date);
+    const Ischeck = Year + be04ba2170f3cd54ba828343ccd28367(Currentday.toLowerCase()) + day + Passend;
+    if (Ischeck == days) {
+        Istrue = true;
+    }
+    return Istrue;
+
+}

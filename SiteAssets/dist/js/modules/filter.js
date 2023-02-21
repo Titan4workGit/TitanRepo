@@ -1,1 +1,747 @@
-var a16_0x34d26b=a16_0x15ee;function a16_0x15ee(_0x1f6818,_0x43b904){var _0xf2b994=a16_0xf2b9();return a16_0x15ee=function(_0x15eef9,_0x302f0e){_0x15eef9=_0x15eef9-0x7b;var _0x3f1153=_0xf2b994[_0x15eef9];return _0x3f1153;},a16_0x15ee(_0x1f6818,_0x43b904);}(function(_0x4c89a4,_0x1e205d){var _0xfa395e=a16_0x15ee,_0x2dd8c7=_0x4c89a4();while(!![]){try{var _0x36a46c=-parseInt(_0xfa395e(0x85))/0x1+parseInt(_0xfa395e(0x9d))/0x2+parseInt(_0xfa395e(0xdd))/0x3+parseInt(_0xfa395e(0xf7))/0x4+-parseInt(_0xfa395e(0xba))/0x5*(-parseInt(_0xfa395e(0xaa))/0x6)+-parseInt(_0xfa395e(0xc3))/0x7+-parseInt(_0xfa395e(0x103))/0x8;if(_0x36a46c===_0x1e205d)break;else _0x2dd8c7['push'](_0x2dd8c7['shift']());}catch(_0x49d8b1){_0x2dd8c7['push'](_0x2dd8c7['shift']());}}}(a16_0xf2b9,0x38f6b));var _typeof=typeof Symbol===a16_0x34d26b(0x93)&&typeof Symbol['iterator']===a16_0x34d26b(0xc9)?function(_0x22386a){return typeof _0x22386a;}:function(_0x441431){var _0x401a48=a16_0x34d26b;return _0x441431&&typeof Symbol==='function'&&_0x441431['constructor']===Symbol&&_0x441431!==Symbol['prototype']?_0x401a48(0xc9):typeof _0x441431;},Filter=function Filter(_0x57bc22){var _0x59ea11=a16_0x34d26b;this['table']=_0x57bc22,this[_0x59ea11(0x104)]=[],this[_0x59ea11(0xeb)]={},this[_0x59ea11(0xf4)]=[],this[_0x59ea11(0xb7)]=![];};Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xd5)]=function(_0x1e3e63,_0x5b217d){var _0x5cc20f=a16_0x34d26b,_0x5a761d=this,_0x43fb16=_0x1e3e63[_0x5cc20f(0xb8)](),_0x58b954;function _0x15e06b(_0x5cdea9){var _0x4def00=_0x5cc20f,_0x196932=_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0xaf)]==_0x4def00(0x101)&&_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0x88)]==_0x4def00(0x97)||_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)]['tagType']==_0x4def00(0x9e)?_0x4def00(0xa9):_0x4def00(0x7c),_0x4eaec9='',_0x407387;if(typeof _0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0xfe)]===_0x4def00(0xf3)||_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0xfe)]!==_0x5cdea9){_0x1e3e63[_0x4def00(0xda)]['filter']['prevSuccess']=_0x5cdea9;if(!_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0xb6)](_0x5cdea9)){_0x1e3e63[_0x4def00(0xda)][_0x4def00(0xd2)][_0x4def00(0xa5)]=_0x5cdea9;switch(_typeof(_0x1e3e63[_0x4def00(0x80)][_0x4def00(0x94)])){case'string':_0x5a761d[_0x4def00(0xbf)][_0x1e3e63[_0x4def00(0x80)]['headerFilterFunc']]?(_0x4eaec9=_0x1e3e63[_0x4def00(0x80)][_0x4def00(0x94)],_0x407387=function _0x22f197(_0x5f5df6){var _0xa9fbd5=_0x4def00,_0x4f425e=_0x1e3e63[_0xa9fbd5(0x80)][_0xa9fbd5(0xf6)]||{},_0x3dbe32=_0x1e3e63['getFieldValue'](_0x5f5df6);return _0x4f425e=typeof _0x4f425e===_0xa9fbd5(0x93)?_0x4f425e(_0x5cdea9,_0x3dbe32,_0x5f5df6):_0x4f425e,_0x5a761d[_0xa9fbd5(0xbf)][_0x1e3e63[_0xa9fbd5(0x80)][_0xa9fbd5(0x94)]](_0x5cdea9,_0x3dbe32,_0x5f5df6,_0x4f425e);}):console[_0x4def00(0xcf)](_0x4def00(0xe7),_0x1e3e63[_0x4def00(0x80)][_0x4def00(0x94)]);break;case _0x4def00(0x93):_0x407387=function _0x20e4e4(_0x334c2b){var _0x4999e5=_0x4def00,_0x535aaf=_0x1e3e63[_0x4999e5(0x80)][_0x4999e5(0xf6)]||{},_0x5601d3=_0x1e3e63[_0x4999e5(0xf1)](_0x334c2b);return _0x535aaf=typeof _0x535aaf===_0x4999e5(0x93)?_0x535aaf(_0x5cdea9,_0x5601d3,_0x334c2b):_0x535aaf,_0x1e3e63[_0x4999e5(0x80)]['headerFilterFunc'](_0x5cdea9,_0x5601d3,_0x334c2b,_0x535aaf);},_0x4eaec9=_0x407387;break;}if(!_0x407387)switch(_0x196932){case'partial':_0x407387=function _0x33f640(_0xabe748){var _0x3ef0bb=_0x4def00,_0x8ae70c=_0x1e3e63[_0x3ef0bb(0xf1)](_0xabe748);return typeof _0x8ae70c!==_0x3ef0bb(0xf3)&&_0x8ae70c!==null?String(_0x8ae70c)[_0x3ef0bb(0x82)]()['indexOf'](String(_0x5cdea9)['toLowerCase']())>-0x1:![];},_0x4eaec9=_0x4def00(0xac);break;default:_0x407387=function _0x10c794(_0x2bf77b){return _0x1e3e63['getFieldValue'](_0x2bf77b)==_0x5cdea9;},_0x4eaec9='=';}_0x5a761d[_0x4def00(0xeb)][_0x43fb16]={'value':_0x5cdea9,'func':_0x407387,'type':_0x4eaec9};}else delete _0x5a761d[_0x4def00(0xeb)][_0x43fb16];_0x5a761d['changed']=!![],_0x5a761d[_0x4def00(0x86)][_0x4def00(0xa3)][_0x4def00(0xdf)]();}return!![];}_0x1e3e63[_0x5cc20f(0xda)][_0x5cc20f(0xd2)]={'success':_0x15e06b,'attrType':![],'tagType':![],'emptyFunc':![]},this[_0x5cc20f(0x83)](_0x1e3e63);},Filter[a16_0x34d26b(0xad)]['generateHeaderFilterElement']=function(_0x2e2bc8,_0x38a26f,_0x593e1e){var _0x34b20e=a16_0x34d26b,_0xd1200e=this,_0x1304e4=this,_0x34f802=_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0xfb)],_0x25b25d=_0x2e2bc8['getField'](),_0x4c7094,_0x5d6d98,_0x17047e,_0x4da852,_0x4e6964,_0xa50b1c,_0x1419c;function _0x346d63(){}_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)]['headerElement']&&_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)]['headerElement'][_0x34b20e(0xea)]&&_0x2e2bc8[_0x34b20e(0xee)]['removeChild'](_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0x9b)]['parentNode']);if(_0x25b25d){_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0xb6)]=_0x2e2bc8[_0x34b20e(0x80)]['headerFilterEmptyCheck']||function(_0x3a32bb){return!_0x3a32bb&&_0x3a32bb!=='0';},_0x4c7094=document[_0x34b20e(0xc6)]('div'),_0x4c7094['classList'][_0x34b20e(0x89)](_0x34b20e(0xe5));switch(_typeof(_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)])){case'string':_0x1304e4[_0x34b20e(0x86)][_0x34b20e(0xda)][_0x34b20e(0x99)][_0x34b20e(0xe1)][_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)]]?(_0x5d6d98=_0x1304e4[_0x34b20e(0x86)][_0x34b20e(0xda)]['edit']['editors'][_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)]],(_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)]===_0x34b20e(0xcc)||_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)]===_0x34b20e(0x8d))&&!_0x2e2bc8[_0x34b20e(0x80)]['headerFilterEmptyCheck']&&(_0x2e2bc8['modules'][_0x34b20e(0xd2)][_0x34b20e(0xb6)]=function(_0x44a708){return _0x44a708!==!![]&&_0x44a708!==![];})):console[_0x34b20e(0xcf)](_0x34b20e(0x8c),_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xfd)]);break;case _0x34b20e(0x93):_0x5d6d98=_0x2e2bc8[_0x34b20e(0x80)]['headerFilter'];break;case _0x34b20e(0xd9):_0x2e2bc8[_0x34b20e(0xda)]['edit']&&_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0x99)][_0x34b20e(0xfd)]?_0x5d6d98=_0x2e2bc8['modules'][_0x34b20e(0x99)][_0x34b20e(0xfd)]:_0x2e2bc8['definition'][_0x34b20e(0xf9)]&&_0x1304e4['table'][_0x34b20e(0xda)][_0x34b20e(0x99)][_0x34b20e(0xe1)][_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xf9)]]?(_0x5d6d98=_0x1304e4['table'][_0x34b20e(0xda)]['edit'][_0x34b20e(0xe1)][_0x2e2bc8[_0x34b20e(0x80)]['formatter']],(_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xf9)]===_0x34b20e(0xcc)||_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xf9)]===_0x34b20e(0x8d))&&!_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0x90)]&&(_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0xb6)]=function(_0x1baccc){return _0x1baccc!==!![]&&_0x1baccc!==![];})):_0x5d6d98=_0x1304e4[_0x34b20e(0x86)][_0x34b20e(0xda)][_0x34b20e(0x99)][_0x34b20e(0xe1)][_0x34b20e(0x101)];break;}if(_0x5d6d98){_0x4da852={'getValue':function _0x12436a(){return typeof _0x38a26f!=='undefined'?_0x38a26f:'';},'getField':function _0x5e7b98(){var _0x3d1081=_0x34b20e;return _0x2e2bc8[_0x3d1081(0x80)][_0x3d1081(0xf8)];},'getElement':function _0x2a81af(){return _0x4c7094;},'getColumn':function _0x29ba05(){var _0x2e1283=_0x34b20e;return _0x2e2bc8[_0x2e1283(0x9a)]();},'getRow':function _0x1e819a(){return{'normalizeHeight':function _0x4c80da(){}};}},_0x1419c=_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0x7e)]||{},_0x1419c=typeof _0x1419c==='function'?_0x1419c['call'](_0x1304e4[_0x34b20e(0x86)]):_0x1419c,_0x17047e=_0x5d6d98[_0x34b20e(0xe3)](this['table'][_0x34b20e(0xda)][_0x34b20e(0x99)],_0x4da852,function(){},_0x34f802,_0x346d63,_0x1419c);if(!_0x17047e){console[_0x34b20e(0xcf)](_0x34b20e(0xef)+_0x25b25d+'\x20column,\x20editor\x20returned\x20a\x20value\x20of\x20false');return;}if(!(_0x17047e instanceof Node)){console[_0x34b20e(0xcf)](_0x34b20e(0xef)+_0x25b25d+_0x34b20e(0xb3),_0x17047e);return;}_0x25b25d?_0x1304e4[_0x34b20e(0x86)][_0x34b20e(0xda)]['localize'][_0x34b20e(0xc7)](_0x34b20e(0xbd)+_0x2e2bc8[_0x34b20e(0x80)]['field'],function(_0x2276de){var _0x4ff27e=_0x34b20e;_0x17047e[_0x4ff27e(0x95)]('placeholder',typeof _0x2276de!==_0x4ff27e(0xf3)&&_0x2276de?_0x2276de:_0x1304e4[_0x4ff27e(0x86)][_0x4ff27e(0xda)][_0x4ff27e(0xb4)][_0x4ff27e(0xd7)](_0x4ff27e(0x8a)));}):_0x1304e4[_0x34b20e(0x86)][_0x34b20e(0xda)][_0x34b20e(0xb4)][_0x34b20e(0xc7)](_0x34b20e(0x8a),function(_0x5dd3df){var _0x5a163f=_0x34b20e;_0x17047e[_0x5a163f(0x95)](_0x5a163f(0xf2),typeof _0x1304e4[_0x5a163f(0x8f)]['definition'][_0x5a163f(0xe6)]!=='undefined'&&_0x1304e4[_0x5a163f(0x8f)][_0x5a163f(0x80)][_0x5a163f(0xe6)]?_0x1304e4['column'][_0x5a163f(0x80)][_0x5a163f(0xe6)]:_0x5dd3df);}),_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0xbe),function(_0x4a58c9){var _0x633ec7=_0x34b20e;_0x4a58c9[_0x633ec7(0xe4)](),_0x17047e[_0x633ec7(0xc1)]();}),_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0xc1),function(_0x3e74c3){var _0x921dcd=_0x34b20e,_0x678aef=_0xd1200e['table']['columnManager']['element']['scrollLeft'];_0x678aef!==_0xd1200e[_0x921dcd(0x86)][_0x921dcd(0xa3)][_0x921dcd(0xcb)]['scrollLeft']&&(_0xd1200e[_0x921dcd(0x86)][_0x921dcd(0xa3)][_0x921dcd(0xed)](_0x678aef),_0xd1200e['table'][_0x921dcd(0x9c)]['scrollHorizontal'](_0x678aef));}),_0x4e6964=![],_0xa50b1c=function _0x5710a1(_0x294782){_0x4e6964&&clearTimeout(_0x4e6964),_0x4e6964=setTimeout(function(){_0x34f802(_0x17047e['value']);},0x12c);},_0x2e2bc8['modules'][_0x34b20e(0xd2)][_0x34b20e(0x9b)]=_0x17047e,_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0x88)]=_0x17047e['hasAttribute'](_0x34b20e(0x92))?_0x17047e[_0x34b20e(0xb5)](_0x34b20e(0x92))[_0x34b20e(0x82)]():'',_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)][_0x34b20e(0xaf)]=_0x17047e[_0x34b20e(0xb2)][_0x34b20e(0x82)](),_0x2e2bc8['definition'][_0x34b20e(0x98)]!==![]&&(!(_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xc4)]===_0x34b20e(0x8b)||_0x2e2bc8[_0x34b20e(0x80)]['headerFilter']===_0x34b20e(0x8d)||(_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xfd)]===_0x34b20e(0x8b)||_0x2e2bc8[_0x34b20e(0x80)][_0x34b20e(0xfd)]==='tickCross')&&_0x2e2bc8[_0x34b20e(0x80)]['headerFilter']===!![])&&(_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0xa4),_0xa50b1c),_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0xca),_0xa50b1c),_0x2e2bc8['modules'][_0x34b20e(0xd2)]['attrType']=='number'&&_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0xb1),function(_0x12b87d){var _0x336c1b=_0x34b20e;_0x34f802(_0x17047e[_0x336c1b(0xa5)]);}),_0x2e2bc8['modules'][_0x34b20e(0xd2)][_0x34b20e(0x88)]==_0x34b20e(0x97)&&this[_0x34b20e(0x86)][_0x34b20e(0x7f)]!=='ie'&&_0x17047e[_0x34b20e(0x95)](_0x34b20e(0x92),_0x34b20e(0xca))),(_0x2e2bc8[_0x34b20e(0xda)]['filter']['tagType']=='input'||_0x2e2bc8[_0x34b20e(0xda)][_0x34b20e(0xd2)]['tagType']==_0x34b20e(0xbb)||_0x2e2bc8[_0x34b20e(0xda)]['filter'][_0x34b20e(0xaf)]==_0x34b20e(0x9e))&&_0x17047e[_0x34b20e(0xfc)](_0x34b20e(0x91),function(_0x285cdf){_0x285cdf['stopPropagation']();})),_0x4c7094['appendChild'](_0x17047e),_0x2e2bc8[_0x34b20e(0xee)][_0x34b20e(0xf5)](_0x4c7094),!_0x593e1e&&_0x1304e4[_0x34b20e(0xf4)]['push'](_0x2e2bc8);}}else console[_0x34b20e(0xcf)](_0x34b20e(0x96),_0x2e2bc8['definition'][_0x34b20e(0xc0)]);},Filter[a16_0x34d26b(0xad)]['hideHeaderFilterElements']=function(){var _0x7c97a1=a16_0x34d26b;this[_0x7c97a1(0xf4)][_0x7c97a1(0xfa)](function(_0x26abf0){var _0x3afd7e=_0x7c97a1;_0x26abf0[_0x3afd7e(0xda)][_0x3afd7e(0xd2)]&&_0x26abf0['modules'][_0x3afd7e(0xd2)][_0x3afd7e(0x9b)]&&(_0x26abf0[_0x3afd7e(0xda)][_0x3afd7e(0xd2)]['headerElement']['style'][_0x3afd7e(0xa7)]=_0x3afd7e(0x84));});},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xd3)]=function(){var _0x5b142d=a16_0x34d26b;this[_0x5b142d(0xf4)][_0x5b142d(0xfa)](function(_0x1d12da){var _0x2ca2e4=_0x5b142d;_0x1d12da[_0x2ca2e4(0xda)][_0x2ca2e4(0xd2)]&&_0x1d12da['modules'][_0x2ca2e4(0xd2)][_0x2ca2e4(0x9b)]&&(_0x1d12da[_0x2ca2e4(0xda)][_0x2ca2e4(0xd2)]['headerElement'][_0x2ca2e4(0xdc)][_0x2ca2e4(0xa7)]='');});},Filter['prototype'][a16_0x34d26b(0xbc)]=function(_0x5ea13d){var _0x3e37bf=a16_0x34d26b;_0x5ea13d['modules'][_0x3e37bf(0xd2)]&&_0x5ea13d['modules']['filter'][_0x3e37bf(0x9b)]?_0x5ea13d[_0x3e37bf(0xda)]['filter']['headerElement'][_0x3e37bf(0xc1)]():console[_0x3e37bf(0xcf)]('Column\x20Filter\x20Focus\x20Error\x20-\x20No\x20header\x20filter\x20set\x20on\x20column:',_0x5ea13d[_0x3e37bf(0xb8)]());},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xb9)]=function(_0x530ac9,_0x373fb7){var _0x28735a=a16_0x34d26b;_0x530ac9&&(_0x530ac9[_0x28735a(0xda)][_0x28735a(0xd2)]&&_0x530ac9['modules'][_0x28735a(0xd2)][_0x28735a(0x9b)]?(this['generateHeaderFilterElement'](_0x530ac9,_0x373fb7,!![]),_0x530ac9[_0x28735a(0xda)][_0x28735a(0xd2)][_0x28735a(0xfb)](_0x373fb7)):console[_0x28735a(0xcf)](_0x28735a(0xe0),_0x530ac9[_0x28735a(0xb8)]()));},Filter[a16_0x34d26b(0xad)]['reloadHeaderFilter']=function(_0x21d42f){var _0x52a65c=a16_0x34d26b;_0x21d42f&&(_0x21d42f[_0x52a65c(0xda)][_0x52a65c(0xd2)]&&_0x21d42f[_0x52a65c(0xda)][_0x52a65c(0xd2)][_0x52a65c(0x9b)]?this[_0x52a65c(0x83)](_0x21d42f,_0x21d42f[_0x52a65c(0xda)][_0x52a65c(0xd2)][_0x52a65c(0xa5)],!![]):console[_0x52a65c(0xcf)](_0x52a65c(0xe0),_0x21d42f[_0x52a65c(0xb8)]()));},Filter[a16_0x34d26b(0xad)]['hasChanged']=function(){var _0x48ae41=a16_0x34d26b,_0x4e1402=this[_0x48ae41(0xb7)];return this['changed']=![],_0x4e1402;},Filter['prototype']['setFilter']=function(_0x256db7,_0x3c5352,_0x1e2b90){var _0x3a1484=a16_0x34d26b,_0x564961=this;_0x564961[_0x3a1484(0x104)]=[],!Array[_0x3a1484(0x102)](_0x256db7)&&(_0x256db7=[{'field':_0x256db7,'type':_0x3c5352,'value':_0x1e2b90}]),_0x564961[_0x3a1484(0xd0)](_0x256db7);},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xd0)]=function(_0x113249,_0x58ec07,_0x16c1b9){var _0x2b87c6=a16_0x34d26b,_0x111aef=this;!Array[_0x2b87c6(0x102)](_0x113249)&&(_0x113249=[{'field':_0x113249,'type':_0x58ec07,'value':_0x16c1b9}]),_0x113249[_0x2b87c6(0xfa)](function(_0x1f00e7){var _0x34cd72=_0x2b87c6;_0x1f00e7=_0x111aef[_0x34cd72(0x9f)](_0x1f00e7),_0x1f00e7&&(_0x111aef[_0x34cd72(0x104)][_0x34cd72(0xec)](_0x1f00e7),_0x111aef['changed']=!![]);}),this[_0x2b87c6(0x86)][_0x2b87c6(0xa6)][_0x2b87c6(0xa1)]&&this['table'][_0x2b87c6(0x100)]('persistence',!![])&&this[_0x2b87c6(0x86)][_0x2b87c6(0xda)][_0x2b87c6(0xa1)][_0x2b87c6(0xd8)]['filter']&&this[_0x2b87c6(0x86)][_0x2b87c6(0xda)]['persistence'][_0x2b87c6(0xa0)](_0x2b87c6(0xd2));},Filter['prototype'][a16_0x34d26b(0x9f)]=function(_0x564921){var _0x3e996b=a16_0x34d26b,_0x4af9db=this,_0x20c8d3;if(Array[_0x3e996b(0x102)](_0x564921))return this[_0x3e996b(0xde)](_0x564921);var _0x414ab0=![];return typeof _0x564921[_0x3e996b(0xf8)]==_0x3e996b(0x93)?_0x414ab0=function _0x17f6a6(_0x62e57a){var _0x32f606=_0x3e996b;return _0x564921[_0x32f606(0xf8)](_0x62e57a,_0x564921[_0x32f606(0x92)]||{});}:_0x4af9db[_0x3e996b(0xbf)][_0x564921['type']]?(_0x20c8d3=_0x4af9db[_0x3e996b(0x86)][_0x3e996b(0x9c)][_0x3e996b(0xcd)](_0x564921[_0x3e996b(0xf8)]),_0x20c8d3?_0x414ab0=function _0x262c23(_0x1a685d){var _0x27a34b=_0x3e996b;return _0x4af9db[_0x27a34b(0xbf)][_0x564921[_0x27a34b(0x92)]](_0x564921[_0x27a34b(0xa5)],_0x20c8d3[_0x27a34b(0xf1)](_0x1a685d));}:_0x414ab0=function _0x1ffbc6(_0x515896){var _0x3cb17c=_0x3e996b;return _0x4af9db['filters'][_0x564921[_0x3cb17c(0x92)]](_0x564921[_0x3cb17c(0xa5)],_0x515896[_0x564921[_0x3cb17c(0xf8)]]);}):console[_0x3e996b(0xcf)](_0x3e996b(0xa8),_0x564921[_0x3e996b(0x92)]),_0x564921['func']=_0x414ab0,_0x564921[_0x3e996b(0x8e)]?_0x564921:![];},Filter[a16_0x34d26b(0xad)]['findSubFilters']=function(_0x43e828){var _0x36475d=a16_0x34d26b,_0x1fc313=this,_0x50abfb=[];return _0x43e828[_0x36475d(0xfa)](function(_0x52ac42){var _0x5f2471=_0x36475d;_0x52ac42=_0x1fc313[_0x5f2471(0x9f)](_0x52ac42),_0x52ac42&&_0x50abfb['push'](_0x52ac42);}),_0x50abfb[_0x36475d(0xd1)]?_0x50abfb:![];},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xd6)]=function(_0x4c6c17,_0x476bb7){var _0x5b542a=a16_0x34d26b,_0x1f7e14=[];return _0x4c6c17&&(_0x1f7e14=this[_0x5b542a(0xe2)]()),_0x476bb7&&_0x1f7e14[_0x5b542a(0xfa)](function(_0x294d13){var _0x4daa46=_0x5b542a;typeof _0x294d13[_0x4daa46(0x92)]==_0x4daa46(0x93)&&(_0x294d13[_0x4daa46(0x92)]=_0x4daa46(0x93));}),_0x1f7e14=_0x1f7e14[_0x5b542a(0xf0)](this[_0x5b542a(0xab)](this[_0x5b542a(0x104)],_0x476bb7)),_0x1f7e14;},Filter[a16_0x34d26b(0xad)]['filtersToArray']=function(_0x2e1a80,_0x1b9e04){var _0x514518=a16_0x34d26b,_0x39ad02=this,_0x500d47=[];return _0x2e1a80[_0x514518(0xfa)](function(_0xda03df){var _0x564495=_0x514518,_0x1f44ed;Array['isArray'](_0xda03df)?_0x500d47['push'](_0x39ad02[_0x564495(0xab)](_0xda03df,_0x1b9e04)):(_0x1f44ed={'field':_0xda03df[_0x564495(0xf8)],'type':_0xda03df[_0x564495(0x92)],'value':_0xda03df[_0x564495(0xa5)]},_0x1b9e04&&(typeof _0x1f44ed['type']==_0x564495(0x93)&&(_0x1f44ed[_0x564495(0x92)]='function')),_0x500d47[_0x564495(0xec)](_0x1f44ed));}),_0x500d47;},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xe2)]=function(){var _0x31308c=a16_0x34d26b,_0x279fba=this,_0x4f3a2d=[];for(var _0x1494d6 in this[_0x31308c(0xeb)]){_0x4f3a2d[_0x31308c(0xec)]({'field':_0x1494d6,'type':this[_0x31308c(0xeb)][_0x1494d6]['type'],'value':this[_0x31308c(0xeb)][_0x1494d6][_0x31308c(0xa5)]});}return _0x4f3a2d;},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0x81)]=function(_0x2249c7,_0x3a838c,_0x2c887b){var _0x50a99b=a16_0x34d26b,_0x461dc4=this;!Array[_0x50a99b(0x102)](_0x2249c7)&&(_0x2249c7=[{'field':_0x2249c7,'type':_0x3a838c,'value':_0x2c887b}]),_0x2249c7[_0x50a99b(0xfa)](function(_0x2c0176){var _0x42722f=_0x50a99b,_0x18ac5f=-0x1;_typeof(_0x2c0176[_0x42722f(0xf8)])==_0x42722f(0xb0)?_0x18ac5f=_0x461dc4[_0x42722f(0x104)][_0x42722f(0xff)](function(_0x47eb13){return _0x2c0176===_0x47eb13;}):_0x18ac5f=_0x461dc4[_0x42722f(0x104)][_0x42722f(0xff)](function(_0x526d8b){var _0x333ae5=_0x42722f;return _0x2c0176[_0x333ae5(0xf8)]===_0x526d8b[_0x333ae5(0xf8)]&&_0x2c0176['type']===_0x526d8b[_0x333ae5(0x92)]&&_0x2c0176[_0x333ae5(0xa5)]===_0x526d8b[_0x333ae5(0xa5)];}),_0x18ac5f>-0x1?(_0x461dc4['filterList']['splice'](_0x18ac5f,0x1),_0x461dc4[_0x42722f(0xb7)]=!![]):console[_0x42722f(0xcf)]('Filter\x20Error\x20-\x20No\x20matching\x20filter\x20type\x20found,\x20ignoring:\x20',_0x2c0176[_0x42722f(0x92)]);}),this[_0x50a99b(0x86)][_0x50a99b(0xa6)][_0x50a99b(0xa1)]&&this[_0x50a99b(0x86)][_0x50a99b(0x100)](_0x50a99b(0xa1),!![])&&this[_0x50a99b(0x86)][_0x50a99b(0xda)]['persistence'][_0x50a99b(0xd8)][_0x50a99b(0xd2)]&&this[_0x50a99b(0x86)]['modules'][_0x50a99b(0xa1)][_0x50a99b(0xa0)](_0x50a99b(0xd2));},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0x7d)]=function(_0x4e65ff){var _0x4a3e7c=a16_0x34d26b;this[_0x4a3e7c(0x104)]=[],_0x4e65ff&&this[_0x4a3e7c(0x7b)](),this['changed']=!![],this[_0x4a3e7c(0x86)]['options'][_0x4a3e7c(0xa1)]&&this[_0x4a3e7c(0x86)][_0x4a3e7c(0x100)](_0x4a3e7c(0xa1),!![])&&this[_0x4a3e7c(0x86)][_0x4a3e7c(0xda)][_0x4a3e7c(0xa1)][_0x4a3e7c(0xd8)][_0x4a3e7c(0xd2)]&&this[_0x4a3e7c(0x86)][_0x4a3e7c(0xda)][_0x4a3e7c(0xa1)]['save']('filter');},Filter['prototype'][a16_0x34d26b(0x7b)]=function(){var _0x5d9c16=a16_0x34d26b,_0x4bd977=this;this['headerFilters']={},this[_0x5d9c16(0xf4)]['forEach'](function(_0x16ea0d){var _0x1d6480=_0x5d9c16;_0x16ea0d[_0x1d6480(0xda)][_0x1d6480(0xd2)][_0x1d6480(0xa5)]=null,_0x16ea0d[_0x1d6480(0xda)][_0x1d6480(0xd2)][_0x1d6480(0xfe)]=undefined,_0x4bd977['reloadHeaderFilter'](_0x16ea0d);}),this['changed']=!![];},Filter[a16_0x34d26b(0xad)]['search']=function(_0x4369e0,_0x48985d,_0x1e98d7,_0x482555){var _0x1b5861=a16_0x34d26b,_0x59405e=this,_0x1190d9=[],_0x53871a=[];return!Array[_0x1b5861(0x102)](_0x48985d)&&(_0x48985d=[{'field':_0x48985d,'type':_0x1e98d7,'value':_0x482555}]),_0x48985d[_0x1b5861(0xfa)](function(_0x15e438){var _0x3f3a9b=_0x1b5861;_0x15e438=_0x59405e[_0x3f3a9b(0x9f)](_0x15e438),_0x15e438&&_0x53871a['push'](_0x15e438);}),this[_0x1b5861(0x86)]['rowManager'][_0x1b5861(0xe9)]['forEach'](function(_0x44226c){var _0x5f5722=_0x1b5861,_0x23dfaf=!![];_0x53871a[_0x5f5722(0xfa)](function(_0x557a7e){var _0x4ee416=_0x5f5722;!_0x59405e[_0x4ee416(0x87)](_0x557a7e,_0x44226c['getData']())&&(_0x23dfaf=![]);}),_0x23dfaf&&_0x1190d9['push'](_0x4369e0===_0x5f5722(0xa2)?_0x44226c[_0x5f5722(0xce)](_0x5f5722(0xa2)):_0x44226c[_0x5f5722(0x9a)]());}),_0x1190d9;},Filter[a16_0x34d26b(0xad)]['filter']=function(_0x1c1cfb,_0x44be17){var _0x521f77=a16_0x34d26b,_0x2d3932=this,_0x3ca7a0=[],_0x444aba=[];return _0x2d3932[_0x521f77(0x86)][_0x521f77(0xa6)][_0x521f77(0xdb)]&&_0x2d3932['table']['options'][_0x521f77(0xdb)]['call'](_0x2d3932[_0x521f77(0x86)],_0x2d3932[_0x521f77(0xd6)]()),!_0x2d3932[_0x521f77(0x86)][_0x521f77(0xa6)][_0x521f77(0xc2)]&&(_0x2d3932[_0x521f77(0x104)][_0x521f77(0xd1)]||Object['keys'](_0x2d3932[_0x521f77(0xeb)])[_0x521f77(0xd1)])?_0x1c1cfb[_0x521f77(0xfa)](function(_0x2bc4da){var _0xb03002=_0x521f77;_0x2d3932[_0xb03002(0xe8)](_0x2bc4da)&&_0x3ca7a0[_0xb03002(0xec)](_0x2bc4da);}):_0x3ca7a0=_0x1c1cfb[_0x521f77(0xc8)](0x0),_0x2d3932['table'][_0x521f77(0xa6)][_0x521f77(0xd4)]&&(_0x3ca7a0[_0x521f77(0xfa)](function(_0x2f488a){var _0x38f369=_0x521f77;_0x444aba['push'](_0x2f488a[_0x38f369(0x9a)]());}),_0x2d3932[_0x521f77(0x86)]['options'][_0x521f77(0xd4)][_0x521f77(0xe3)](_0x2d3932[_0x521f77(0x86)],_0x2d3932[_0x521f77(0xd6)](),_0x444aba)),_0x3ca7a0;},Filter['prototype'][a16_0x34d26b(0xe8)]=function(_0x5d490c,_0x19842d){var _0x34d4d0=a16_0x34d26b,_0x29a2f3=this,_0x49ccc0=!![],_0x3dee60=_0x5d490c[_0x34d4d0(0xce)]();_0x29a2f3[_0x34d4d0(0x104)][_0x34d4d0(0xfa)](function(_0x399a8c){!_0x29a2f3['filterRecurse'](_0x399a8c,_0x3dee60)&&(_0x49ccc0=![]);});for(var _0x47ac42 in _0x29a2f3[_0x34d4d0(0xeb)]){!_0x29a2f3[_0x34d4d0(0xeb)][_0x47ac42][_0x34d4d0(0x8e)](_0x3dee60)&&(_0x49ccc0=![]);}return _0x49ccc0;},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0x87)]=function(_0x44b07f,_0x384745){var _0xd9e25d=a16_0x34d26b,_0x4e2774=this,_0x1d735a=![];return Array['isArray'](_0x44b07f)?_0x44b07f[_0xd9e25d(0xfa)](function(_0xedbfb1){var _0x3e96fb=_0xd9e25d;_0x4e2774[_0x3e96fb(0x87)](_0xedbfb1,_0x384745)&&(_0x1d735a=!![]);}):_0x1d735a=_0x44b07f['func'](_0x384745),_0x1d735a;},Filter[a16_0x34d26b(0xad)][a16_0x34d26b(0xbf)]={'=':function _(_0x1a0003,_0x5e22d8,_0x386a8b,_0x456490){return _0x5e22d8==_0x1a0003?!![]:![];},'<':function _(_0x43e7c0,_0x88a4c1,_0xcd66be,_0x1baddb){return _0x88a4c1<_0x43e7c0?!![]:![];},'<=':function _(_0x4a1e96,_0x1bb6de,_0x4a690f,_0x127056){return _0x1bb6de<=_0x4a1e96?!![]:![];},'>':function _(_0x14f1cf,_0x41fdac,_0x1a1907,_0x39a49f){return _0x41fdac>_0x14f1cf?!![]:![];},'>=':function _(_0x3f7e4e,_0x44288b,_0x354192,_0x268e83){return _0x44288b>=_0x3f7e4e?!![]:![];},'!=':function _(_0x4e69cb,_0x509afe,_0x2ebfe8,_0x1c2b23){return _0x509afe!=_0x4e69cb?!![]:![];},'regex':function regex(_0xbdf4d8,_0x1b79dd,_0xc9bd9c,_0x27e08c){var _0x5ba6c3=a16_0x34d26b;return typeof _0xbdf4d8==_0x5ba6c3(0xc5)&&(_0xbdf4d8=new RegExp(_0xbdf4d8)),_0xbdf4d8['test'](_0x1b79dd);},'like':function like(_0x1806b7,_0x54f19f,_0xc61c4c,_0x49ae0e){var _0x4cafe1=a16_0x34d26b;return _0x1806b7===null||typeof _0x1806b7===_0x4cafe1(0xf3)?_0x54f19f===_0x1806b7?!![]:![]:typeof _0x54f19f!=='undefined'&&_0x54f19f!==null?String(_0x54f19f)[_0x4cafe1(0x82)]()[_0x4cafe1(0xae)](_0x1806b7['toLowerCase']())>-0x1:![];},'in':function _in(_0x117e7c,_0x10f12f,_0x7a995b,_0x17d396){var _0x138412=a16_0x34d26b;return Array[_0x138412(0x102)](_0x117e7c)?_0x117e7c[_0x138412(0xae)](_0x10f12f)>-0x1:(console['warn']('Filter\x20Error\x20-\x20filter\x20value\x20is\x20not\x20an\x20array:',_0x117e7c),![]);}},Tabulator[a16_0x34d26b(0xad)]['registerModule'](a16_0x34d26b(0xd2),Filter);function a16_0xf2b9(){var _0x314dca=['select','setHeaderFilterFocus','headerFilters|columns|','click','filters','title','focus','ajaxFiltering','788830JSdLgY','headerFilter','string','createElement','bind','slice','symbol','search','element','tick','getColumnByField','getData','warn','addFilter','length','filter','showHeaderFilterElements','dataFiltered','initializeColumn','getFilters','getText','config','boolean','modules','dataFiltering','style','1315563qRVtPU','findSubFilters','filterRefresh','Column\x20Filter\x20Error\x20-\x20No\x20header\x20filter\x20set\x20on\x20column:','editors','getHeaderFilters','call','stopPropagation','tabulator-header-filter','headerFilterPlaceholder','Header\x20Filter\x20Error\x20-\x20Matching\x20filter\x20function\x20not\x20found:\x20','filterRow','rows','parentNode','headerFilters','push','scrollHorizontal','contentElement','Filter\x20Error\x20-\x20Cannot\x20add\x20filter\x20to\x20','concat','getFieldValue','placeholder','undefined','headerFilterColumns','appendChild','headerFilterFuncParams','1147192DSPrqW','field','formatter','forEach','success','addEventListener','editor','prevSuccess','findIndex','modExists','input','isArray','3989304iyrNmk','filterList','clearHeaderFilter','match','clearFilter','headerFilterParams','browser','definition','removeFilter','toLowerCase','generateHeaderFilterElement','none','464008RTKhUS','table','filterRecurse','attrType','add','headerFilters|default','autocomplete','Filter\x20Error\x20-\x20Cannot\x20build\x20header\x20filter,\x20No\x20such\x20editor\x20found:\x20','tickCross','func','column','headerFilterEmptyCheck','mousedown','type','function','headerFilterFunc','setAttribute','Filter\x20Error\x20-\x20Cannot\x20add\x20header\x20filter,\x20column\x20has\x20no\x20field\x20set:','text','headerFilterLiveFilter','edit','getComponent','headerElement','columnManager','693014PWkzCV','textarea','findFilter','save','persistence','data','rowManager','keyup','value','options','display','Filter\x20Error\x20-\x20No\x20such\x20filter\x20type\x20found,\x20ignoring:\x20','partial','6ODXGTb','filtersToArray','like','prototype','indexOf','tagType','object','change','tagName','\x20column,\x20editor\x20should\x20return\x20an\x20instance\x20of\x20Node,\x20the\x20editor\x20returned:','localize','getAttribute','emptyFunc','changed','getField','setHeaderFilterValue','1184290OXrwpP'];a16_0xf2b9=function(){return _0x314dca;};return a16_0xf2b9();}
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Filter = function Filter(table) {
+
+	this.table = table; //hold Tabulator object
+
+	this.filterList = []; //hold filter list
+	this.headerFilters = {}; //hold column filters
+	this.headerFilterColumns = []; //hold columns that use header filters
+
+	this.changed = false; //has filtering changed since last render
+};
+
+//initialize column header filter
+Filter.prototype.initializeColumn = function (column, value) {
+	var self = this,
+	    field = column.getField(),
+	    params;
+
+	//handle successfull value change
+	function success(value) {
+		var filterType = column.modules.filter.tagType == "input" && column.modules.filter.attrType == "text" || column.modules.filter.tagType == "textarea" ? "partial" : "match",
+		    type = "",
+		    filterFunc;
+
+		if (typeof column.modules.filter.prevSuccess === "undefined" || column.modules.filter.prevSuccess !== value) {
+
+			column.modules.filter.prevSuccess = value;
+
+			if (!column.modules.filter.emptyFunc(value)) {
+				column.modules.filter.value = value;
+
+				switch (_typeof(column.definition.headerFilterFunc)) {
+					case "string":
+						if (self.filters[column.definition.headerFilterFunc]) {
+							type = column.definition.headerFilterFunc;
+							filterFunc = function filterFunc(data) {
+								var params = column.definition.headerFilterFuncParams || {};
+								var fieldVal = column.getFieldValue(data);
+
+								params = typeof params === "function" ? params(value, fieldVal, data) : params;
+
+								return self.filters[column.definition.headerFilterFunc](value, fieldVal, data, params);
+							};
+						} else {
+							console.warn("Header Filter Error - Matching filter function not found: ", column.definition.headerFilterFunc);
+						}
+						break;
+
+					case "function":
+						filterFunc = function filterFunc(data) {
+							var params = column.definition.headerFilterFuncParams || {};
+							var fieldVal = column.getFieldValue(data);
+
+							params = typeof params === "function" ? params(value, fieldVal, data) : params;
+
+							return column.definition.headerFilterFunc(value, fieldVal, data, params);
+						};
+
+						type = filterFunc;
+						break;
+				}
+
+				if (!filterFunc) {
+					switch (filterType) {
+						case "partial":
+							filterFunc = function filterFunc(data) {
+								var colVal = column.getFieldValue(data);
+
+								if (typeof colVal !== 'undefined' && colVal !== null) {
+									return String(colVal).toLowerCase().indexOf(String(value).toLowerCase()) > -1;
+								} else {
+									return false;
+								}
+							};
+							type = "like";
+							break;
+
+						default:
+							filterFunc = function filterFunc(data) {
+								return column.getFieldValue(data) == value;
+							};
+							type = "=";
+					}
+				}
+
+				self.headerFilters[field] = { value: value, func: filterFunc, type: type };
+			} else {
+				delete self.headerFilters[field];
+			}
+
+			self.changed = true;
+
+			self.table.rowManager.filterRefresh();
+		}
+
+		return true;
+	}
+
+	column.modules.filter = {
+		success: success,
+		attrType: false,
+		tagType: false,
+		emptyFunc: false
+	};
+
+	this.generateHeaderFilterElement(column);
+};
+
+Filter.prototype.generateHeaderFilterElement = function (column, initialValue, reinitialize) {
+	var _this = this;
+
+	var self = this,
+	    success = column.modules.filter.success,
+	    field = column.getField(),
+	    filterElement,
+	    editor,
+	    editorElement,
+	    cellWrapper,
+	    typingTimer,
+	    searchTrigger,
+	    params;
+
+	//handle aborted edit
+	function cancel() {}
+
+	if (column.modules.filter.headerElement && column.modules.filter.headerElement.parentNode) {
+		column.contentElement.removeChild(column.modules.filter.headerElement.parentNode);
+	}
+
+	if (field) {
+
+		//set empty value function
+		column.modules.filter.emptyFunc = column.definition.headerFilterEmptyCheck || function (value) {
+			return !value && value !== "0";
+		};
+
+		filterElement = document.createElement("div");
+		filterElement.classList.add("tabulator-header-filter");
+
+		//set column editor
+		switch (_typeof(column.definition.headerFilter)) {
+			case "string":
+				if (self.table.modules.edit.editors[column.definition.headerFilter]) {
+					editor = self.table.modules.edit.editors[column.definition.headerFilter];
+
+					if ((column.definition.headerFilter === "tick" || column.definition.headerFilter === "tickCross") && !column.definition.headerFilterEmptyCheck) {
+						column.modules.filter.emptyFunc = function (value) {
+							return value !== true && value !== false;
+						};
+					}
+				} else {
+					console.warn("Filter Error - Cannot build header filter, No such editor found: ", column.definition.editor);
+				}
+				break;
+
+			case "function":
+				editor = column.definition.headerFilter;
+				break;
+
+			case "boolean":
+				if (column.modules.edit && column.modules.edit.editor) {
+					editor = column.modules.edit.editor;
+				} else {
+					if (column.definition.formatter && self.table.modules.edit.editors[column.definition.formatter]) {
+						editor = self.table.modules.edit.editors[column.definition.formatter];
+
+						if ((column.definition.formatter === "tick" || column.definition.formatter === "tickCross") && !column.definition.headerFilterEmptyCheck) {
+							column.modules.filter.emptyFunc = function (value) {
+								return value !== true && value !== false;
+							};
+						}
+					} else {
+						editor = self.table.modules.edit.editors["input"];
+					}
+				}
+				break;
+		}
+
+		if (editor) {
+
+			cellWrapper = {
+				getValue: function getValue() {
+					return typeof initialValue !== "undefined" ? initialValue : "";
+				},
+				getField: function getField() {
+					return column.definition.field;
+				},
+				getElement: function getElement() {
+					return filterElement;
+				},
+				getColumn: function getColumn() {
+					return column.getComponent();
+				},
+				getRow: function getRow() {
+					return {
+						normalizeHeight: function normalizeHeight() {}
+					};
+				}
+			};
+
+			params = column.definition.headerFilterParams || {};
+
+			params = typeof params === "function" ? params.call(self.table) : params;
+
+			editorElement = editor.call(this.table.modules.edit, cellWrapper, function () {}, success, cancel, params);
+
+			if (!editorElement) {
+				console.warn("Filter Error - Cannot add filter to " + field + " column, editor returned a value of false");
+				return;
+			}
+
+			if (!(editorElement instanceof Node)) {
+				console.warn("Filter Error - Cannot add filter to " + field + " column, editor should return an instance of Node, the editor returned:", editorElement);
+				return;
+			}
+
+			//set Placeholder Text
+			if (field) {
+				self.table.modules.localize.bind("headerFilters|columns|" + column.definition.field, function (value) {
+					editorElement.setAttribute("placeholder", typeof value !== "undefined" && value ? value : self.table.modules.localize.getText("headerFilters|default"));
+				});
+			} else {
+				self.table.modules.localize.bind("headerFilters|default", function (value) {
+					editorElement.setAttribute("placeholder", typeof self.column.definition.headerFilterPlaceholder !== "undefined" && self.column.definition.headerFilterPlaceholder ? self.column.definition.headerFilterPlaceholder : value);
+				});
+			}
+
+			//focus on element on click
+			editorElement.addEventListener("click", function (e) {
+				e.stopPropagation();
+				editorElement.focus();
+			});
+
+			editorElement.addEventListener("focus", function (e) {
+				var left = _this.table.columnManager.element.scrollLeft;
+
+				if (left !== _this.table.rowManager.element.scrollLeft) {
+					_this.table.rowManager.scrollHorizontal(left);
+					_this.table.columnManager.scrollHorizontal(left);
+				}
+			});
+
+			//live update filters as user types
+			typingTimer = false;
+
+			searchTrigger = function searchTrigger(e) {
+				if (typingTimer) {
+					clearTimeout(typingTimer);
+				}
+
+				typingTimer = setTimeout(function () {
+					success(editorElement.value);
+				}, 300);
+			};
+
+			column.modules.filter.headerElement = editorElement;
+			column.modules.filter.attrType = editorElement.hasAttribute("type") ? editorElement.getAttribute("type").toLowerCase() : "";
+			column.modules.filter.tagType = editorElement.tagName.toLowerCase();
+
+			if (column.definition.headerFilterLiveFilter !== false) {
+
+				if (!(column.definition.headerFilter === 'autocomplete' || column.definition.headerFilter === 'tickCross' || (column.definition.editor === 'autocomplete' || column.definition.editor === 'tickCross') && column.definition.headerFilter === true)) {
+					editorElement.addEventListener("keyup", searchTrigger);
+					editorElement.addEventListener("search", searchTrigger);
+
+					//update number filtered columns on change
+					if (column.modules.filter.attrType == "number") {
+						editorElement.addEventListener("change", function (e) {
+							success(editorElement.value);
+						});
+					}
+
+					//change text inputs to search inputs to allow for clearing of field
+					if (column.modules.filter.attrType == "text" && this.table.browser !== "ie") {
+						editorElement.setAttribute("type", "search");
+						// editorElement.off("change blur"); //prevent blur from triggering filter and preventing selection click
+					}
+				}
+
+				//prevent input and select elements from propegating click to column sorters etc
+				if (column.modules.filter.tagType == "input" || column.modules.filter.tagType == "select" || column.modules.filter.tagType == "textarea") {
+					editorElement.addEventListener("mousedown", function (e) {
+						e.stopPropagation();
+					});
+				}
+			}
+
+			filterElement.appendChild(editorElement);
+
+			column.contentElement.appendChild(filterElement);
+
+			if (!reinitialize) {
+				self.headerFilterColumns.push(column);
+			}
+		}
+	} else {
+		console.warn("Filter Error - Cannot add header filter, column has no field set:", column.definition.title);
+	}
+};
+
+//hide all header filter elements (used to ensure correct column widths in "fitData" layout mode)
+Filter.prototype.hideHeaderFilterElements = function () {
+	this.headerFilterColumns.forEach(function (column) {
+		if (column.modules.filter && column.modules.filter.headerElement) {
+			column.modules.filter.headerElement.style.display = 'none';
+		}
+	});
+};
+
+//show all header filter elements (used to ensure correct column widths in "fitData" layout mode)
+Filter.prototype.showHeaderFilterElements = function () {
+	this.headerFilterColumns.forEach(function (column) {
+		if (column.modules.filter && column.modules.filter.headerElement) {
+			column.modules.filter.headerElement.style.display = '';
+		}
+	});
+};
+
+//programatically set value of header filter
+Filter.prototype.setHeaderFilterFocus = function (column) {
+	if (column.modules.filter && column.modules.filter.headerElement) {
+		column.modules.filter.headerElement.focus();
+	} else {
+		console.warn("Column Filter Focus Error - No header filter set on column:", column.getField());
+	}
+};
+
+//programatically set value of header filter
+Filter.prototype.setHeaderFilterValue = function (column, value) {
+	if (column) {
+		if (column.modules.filter && column.modules.filter.headerElement) {
+			this.generateHeaderFilterElement(column, value, true);
+			column.modules.filter.success(value);
+		} else {
+			console.warn("Column Filter Error - No header filter set on column:", column.getField());
+		}
+	}
+};
+
+Filter.prototype.reloadHeaderFilter = function (column) {
+	if (column) {
+		if (column.modules.filter && column.modules.filter.headerElement) {
+			this.generateHeaderFilterElement(column, column.modules.filter.value, true);
+		} else {
+			console.warn("Column Filter Error - No header filter set on column:", column.getField());
+		}
+	}
+};
+
+//check if the filters has changed since last use
+Filter.prototype.hasChanged = function () {
+	var changed = this.changed;
+	this.changed = false;
+	return changed;
+};
+
+//set standard filters
+Filter.prototype.setFilter = function (field, type, value) {
+	var self = this;
+
+	self.filterList = [];
+
+	if (!Array.isArray(field)) {
+		field = [{ field: field, type: type, value: value }];
+	}
+
+	self.addFilter(field);
+};
+
+//add filter to array
+Filter.prototype.addFilter = function (field, type, value) {
+	var self = this;
+
+	if (!Array.isArray(field)) {
+		field = [{ field: field, type: type, value: value }];
+	}
+
+	field.forEach(function (filter) {
+
+		filter = self.findFilter(filter);
+
+		if (filter) {
+			self.filterList.push(filter);
+
+			self.changed = true;
+		}
+	});
+
+	if (this.table.options.persistence && this.table.modExists("persistence", true) && this.table.modules.persistence.config.filter) {
+		this.table.modules.persistence.save("filter");
+	}
+};
+
+Filter.prototype.findFilter = function (filter) {
+	var self = this,
+	    column;
+
+	if (Array.isArray(filter)) {
+		return this.findSubFilters(filter);
+	}
+
+	var filterFunc = false;
+
+	if (typeof filter.field == "function") {
+		filterFunc = function filterFunc(data) {
+			return filter.field(data, filter.type || {}); // pass params to custom filter function
+		};
+	} else {
+
+		if (self.filters[filter.type]) {
+
+			column = self.table.columnManager.getColumnByField(filter.field);
+
+			if (column) {
+				filterFunc = function filterFunc(data) {
+					return self.filters[filter.type](filter.value, column.getFieldValue(data));
+				};
+			} else {
+				filterFunc = function filterFunc(data) {
+					return self.filters[filter.type](filter.value, data[filter.field]);
+				};
+			}
+		} else {
+			console.warn("Filter Error - No such filter type found, ignoring: ", filter.type);
+		}
+	}
+
+	filter.func = filterFunc;
+
+	return filter.func ? filter : false;
+};
+
+Filter.prototype.findSubFilters = function (filters) {
+	var self = this,
+	    output = [];
+
+	filters.forEach(function (filter) {
+		filter = self.findFilter(filter);
+
+		if (filter) {
+			output.push(filter);
+		}
+	});
+
+	return output.length ? output : false;
+};
+
+//get all filters
+Filter.prototype.getFilters = function (all, ajax) {
+	var output = [];
+
+	if (all) {
+		output = this.getHeaderFilters();
+	}
+
+	if (ajax) {
+		output.forEach(function (item) {
+			if (typeof item.type == "function") {
+				item.type = "function";
+			}
+		});
+	}
+
+	output = output.concat(this.filtersToArray(this.filterList, ajax));
+
+	return output;
+};
+
+//filter to Object
+Filter.prototype.filtersToArray = function (filterList, ajax) {
+	var _this2 = this;
+
+	var output = [];
+
+	filterList.forEach(function (filter) {
+		var item;
+
+		if (Array.isArray(filter)) {
+			output.push(_this2.filtersToArray(filter, ajax));
+		} else {
+			item = { field: filter.field, type: filter.type, value: filter.value };
+
+			if (ajax) {
+				if (typeof item.type == "function") {
+					item.type = "function";
+				}
+			}
+
+			output.push(item);
+		}
+	});
+
+	return output;
+};
+
+//get all filters
+Filter.prototype.getHeaderFilters = function () {
+	var self = this,
+	    output = [];
+
+	for (var key in this.headerFilters) {
+		output.push({ field: key, type: this.headerFilters[key].type, value: this.headerFilters[key].value });
+	}
+
+	return output;
+};
+
+//remove filter from array
+Filter.prototype.removeFilter = function (field, type, value) {
+	var self = this;
+
+	if (!Array.isArray(field)) {
+		field = [{ field: field, type: type, value: value }];
+	}
+
+	field.forEach(function (filter) {
+		var index = -1;
+
+		if (_typeof(filter.field) == "object") {
+			index = self.filterList.findIndex(function (element) {
+				return filter === element;
+			});
+		} else {
+			index = self.filterList.findIndex(function (element) {
+				return filter.field === element.field && filter.type === element.type && filter.value === element.value;
+			});
+		}
+
+		if (index > -1) {
+			self.filterList.splice(index, 1);
+			self.changed = true;
+		} else {
+			console.warn("Filter Error - No matching filter type found, ignoring: ", filter.type);
+		}
+	});
+
+	if (this.table.options.persistence && this.table.modExists("persistence", true) && this.table.modules.persistence.config.filter) {
+		this.table.modules.persistence.save("filter");
+	}
+};
+
+//clear filters
+Filter.prototype.clearFilter = function (all) {
+	this.filterList = [];
+
+	if (all) {
+		this.clearHeaderFilter();
+	}
+
+	this.changed = true;
+
+	if (this.table.options.persistence && this.table.modExists("persistence", true) && this.table.modules.persistence.config.filter) {
+		this.table.modules.persistence.save("filter");
+	}
+};
+
+//clear header filters
+Filter.prototype.clearHeaderFilter = function () {
+	var self = this;
+
+	this.headerFilters = {};
+
+	this.headerFilterColumns.forEach(function (column) {
+		column.modules.filter.value = null;
+		column.modules.filter.prevSuccess = undefined;
+		self.reloadHeaderFilter(column);
+	});
+
+	this.changed = true;
+};
+
+//search data and return matching rows
+Filter.prototype.search = function (searchType, field, type, value) {
+	var self = this,
+	    activeRows = [],
+	    filterList = [];
+
+	if (!Array.isArray(field)) {
+		field = [{ field: field, type: type, value: value }];
+	}
+
+	field.forEach(function (filter) {
+		filter = self.findFilter(filter);
+
+		if (filter) {
+			filterList.push(filter);
+		}
+	});
+
+	this.table.rowManager.rows.forEach(function (row) {
+		var match = true;
+
+		filterList.forEach(function (filter) {
+			if (!self.filterRecurse(filter, row.getData())) {
+				match = false;
+			}
+		});
+
+		if (match) {
+			activeRows.push(searchType === "data" ? row.getData("data") : row.getComponent());
+		}
+	});
+
+	return activeRows;
+};
+
+//filter row array
+Filter.prototype.filter = function (rowList, filters) {
+	var self = this,
+	    activeRows = [],
+	    activeRowComponents = [];
+
+	if (self.table.options.dataFiltering) {
+		self.table.options.dataFiltering.call(self.table, self.getFilters());
+	}
+
+	if (!self.table.options.ajaxFiltering && (self.filterList.length || Object.keys(self.headerFilters).length)) {
+
+		rowList.forEach(function (row) {
+			if (self.filterRow(row)) {
+				activeRows.push(row);
+			}
+		});
+	} else {
+		activeRows = rowList.slice(0);
+	}
+
+	if (self.table.options.dataFiltered) {
+
+		activeRows.forEach(function (row) {
+			activeRowComponents.push(row.getComponent());
+		});
+
+		self.table.options.dataFiltered.call(self.table, self.getFilters(), activeRowComponents);
+	}
+
+	return activeRows;
+};
+
+//filter individual row
+Filter.prototype.filterRow = function (row, filters) {
+	var self = this,
+	    match = true,
+	    data = row.getData();
+
+	self.filterList.forEach(function (filter) {
+		if (!self.filterRecurse(filter, data)) {
+			match = false;
+		}
+	});
+
+	for (var field in self.headerFilters) {
+		if (!self.headerFilters[field].func(data)) {
+			match = false;
+		}
+	}
+
+	return match;
+};
+
+Filter.prototype.filterRecurse = function (filter, data) {
+	var self = this,
+	    match = false;
+
+	if (Array.isArray(filter)) {
+		filter.forEach(function (subFilter) {
+			if (self.filterRecurse(subFilter, data)) {
+				match = true;
+			}
+		});
+	} else {
+		match = filter.func(data);
+	}
+
+	return match;
+};
+
+//list of available filters
+Filter.prototype.filters = {
+
+	//equal to
+	"=": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal == filterVal ? true : false;
+	},
+
+	//less than
+	"<": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal < filterVal ? true : false;
+	},
+
+	//less than or equal to
+	"<=": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal <= filterVal ? true : false;
+	},
+
+	//greater than
+	">": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal > filterVal ? true : false;
+	},
+
+	//greater than or equal to
+	">=": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal >= filterVal ? true : false;
+	},
+
+	//not equal to
+	"!=": function _(filterVal, rowVal, rowData, filterParams) {
+		return rowVal != filterVal ? true : false;
+	},
+
+	"regex": function regex(filterVal, rowVal, rowData, filterParams) {
+
+		if (typeof filterVal == "string") {
+			filterVal = new RegExp(filterVal);
+		}
+
+		return filterVal.test(rowVal);
+	},
+
+	//contains the string
+	"like": function like(filterVal, rowVal, rowData, filterParams) {
+		if (filterVal === null || typeof filterVal === "undefined") {
+			return rowVal === filterVal ? true : false;
+		} else {
+			if (typeof rowVal !== 'undefined' && rowVal !== null) {
+				return String(rowVal).toLowerCase().indexOf(filterVal.toLowerCase()) > -1;
+			} else {
+				return false;
+			}
+		}
+	},
+
+	//in array
+	"in": function _in(filterVal, rowVal, rowData, filterParams) {
+		if (Array.isArray(filterVal)) {
+			return filterVal.indexOf(rowVal) > -1;
+		} else {
+			console.warn("Filter Error - filter value is not an array:", filterVal);
+			return false;
+		}
+	}
+};
+
+Tabulator.prototype.registerModule("filter", Filter);

@@ -1,1 +1,141 @@
-var a26_0xe0c8e8=a26_0x5b18;function a26_0x240a(){var _0x96486f=['_rebindRow','23140440DEgNAr','component','call','updateGroupRows','newValue','registerModule','type','warn','row','104435uUQJgv','deleteActual','modules','11FATdsJ','length','redo','index','prototype','2595nUTyTt','2616kNDXsa','modExists','historyRedo','History\x20Undo\x20Error\x20-\x20No\x20more\x20history\x20to\x20undo','setValueProcessData','32276YxQXxr','table','undoers','1450791lMLTZh','slice','rows','data','getCell','redoers','getComponent','options','groupBy','pos','oldValue','column','rowManager','35791irgXxN','History\x20Redo\x20Error\x20-\x20No\x20more\x20history\x20to\x20redo','push','history','forEach','78vHVTbM','groupRows','addRowActual','3364566gvZWqK','moveRowActual','getHistoryRedoSize','584Dlsvge'];a26_0x240a=function(){return _0x96486f;};return a26_0x240a();}(function(_0x4818b5,_0x343078){var _0x3efc4d=a26_0x5b18,_0x881336=_0x4818b5();while(!![]){try{var _0x5a6af5=-parseInt(_0x3efc4d(0x80))/0x1+parseInt(_0x3efc4d(0x8e))/0x2*(-parseInt(_0x3efc4d(0xa3))/0x3)+parseInt(_0x3efc4d(0x89))/0x4*(-parseInt(_0x3efc4d(0x88))/0x5)+-parseInt(_0x3efc4d(0xa6))/0x6+-parseInt(_0x3efc4d(0x9e))/0x7*(parseInt(_0x3efc4d(0xa9))/0x8)+-parseInt(_0x3efc4d(0x91))/0x9+-parseInt(_0x3efc4d(0xab))/0xa*(-parseInt(_0x3efc4d(0x83))/0xb);if(_0x5a6af5===_0x343078)break;else _0x881336['push'](_0x881336['shift']());}catch(_0x2779d7){_0x881336['push'](_0x881336['shift']());}}}(a26_0x240a,0x56c3a));function a26_0x5b18(_0x3356bf,_0x17b4a5){var _0x240a06=a26_0x240a();return a26_0x5b18=function(_0x5b1875,_0x12cf71){_0x5b1875=_0x5b1875-0x7d;var _0x174a8b=_0x240a06[_0x5b1875];return _0x174a8b;},a26_0x5b18(_0x3356bf,_0x17b4a5);}var History=function History(_0x335ec9){var _0xfdf4ac=a26_0x5b18;this['table']=_0x335ec9,this[_0xfdf4ac(0xa1)]=[],this[_0xfdf4ac(0x86)]=-0x1;};History[a26_0xe0c8e8(0x87)]['clear']=function(){var _0x312ee5=a26_0xe0c8e8;this['history']=[],this[_0x312ee5(0x86)]=-0x1;},History['prototype']['action']=function(_0x539e81,_0x419f9e,_0x1b4f90){var _0x1d2478=a26_0xe0c8e8;this['history']=this['history'][_0x1d2478(0x92)](0x0,this['index']+0x1),this[_0x1d2478(0xa1)][_0x1d2478(0xa0)]({'type':_0x539e81,'component':_0x419f9e,'data':_0x1b4f90}),this[_0x1d2478(0x86)]++;},History['prototype']['getHistoryUndoSize']=function(){return this['index']+0x1;},History[a26_0xe0c8e8(0x87)][a26_0xe0c8e8(0xa8)]=function(){var _0x108bac=a26_0xe0c8e8;return this[_0x108bac(0xa1)][_0x108bac(0x84)]-(this[_0x108bac(0x86)]+0x1);},History['prototype']['undo']=function(){var _0x3f8f67=a26_0xe0c8e8;if(this[_0x3f8f67(0x86)]>-0x1){var _0x56cdce=this[_0x3f8f67(0xa1)][this[_0x3f8f67(0x86)]];return this[_0x3f8f67(0x90)][_0x56cdce[_0x3f8f67(0x7d)]][_0x3f8f67(0xad)](this,_0x56cdce),this[_0x3f8f67(0x86)]--,this[_0x3f8f67(0x8f)]['options']['historyUndo'][_0x3f8f67(0xad)](this[_0x3f8f67(0x8f)],_0x56cdce[_0x3f8f67(0x7d)],_0x56cdce[_0x3f8f67(0xac)]['getComponent'](),_0x56cdce[_0x3f8f67(0x94)]),!![];}else return console[_0x3f8f67(0x7e)](_0x3f8f67(0x8c)),![];},History['prototype'][a26_0xe0c8e8(0x85)]=function(){var _0x23d02a=a26_0xe0c8e8;if(this[_0x23d02a(0xa1)][_0x23d02a(0x84)]-0x1>this[_0x23d02a(0x86)]){this['index']++;var _0x5621ae=this['history'][this[_0x23d02a(0x86)]];return this[_0x23d02a(0x96)][_0x5621ae[_0x23d02a(0x7d)]]['call'](this,_0x5621ae),this[_0x23d02a(0x8f)][_0x23d02a(0x98)][_0x23d02a(0x8b)][_0x23d02a(0xad)](this['table'],_0x5621ae[_0x23d02a(0x7d)],_0x5621ae[_0x23d02a(0xac)][_0x23d02a(0x97)](),_0x5621ae[_0x23d02a(0x94)]),!![];}else return console['warn'](_0x23d02a(0x9f)),![];},History[a26_0xe0c8e8(0x87)][a26_0xe0c8e8(0x90)]={'cellEdit':function cellEdit(_0x2d6c2b){var _0x616c86=a26_0xe0c8e8;_0x2d6c2b[_0x616c86(0xac)]['setValueProcessData'](_0x2d6c2b[_0x616c86(0x94)][_0x616c86(0x9b)]);},'rowAdd':function rowAdd(_0x499a0a){var _0x424308=a26_0xe0c8e8;_0x499a0a[_0x424308(0xac)][_0x424308(0x81)]();},'rowDelete':function rowDelete(_0x42f393){var _0x171c04=a26_0xe0c8e8,_0x2134cc=this[_0x171c04(0x8f)]['rowManager'][_0x171c04(0xa5)](_0x42f393['data'][_0x171c04(0x94)],_0x42f393['data']['pos'],_0x42f393['data'][_0x171c04(0x86)]);this['table'][_0x171c04(0x98)][_0x171c04(0x99)]&&this[_0x171c04(0x8f)][_0x171c04(0x8a)](_0x171c04(0xa4))&&this[_0x171c04(0x8f)][_0x171c04(0x82)][_0x171c04(0xa4)][_0x171c04(0xae)](!![]),this['_rebindRow'](_0x42f393[_0x171c04(0xac)],_0x2134cc);},'rowMove':function rowMove(_0x40d89b){var _0x35edd9=a26_0xe0c8e8;this[_0x35edd9(0x8f)]['rowManager']['moveRowActual'](_0x40d89b[_0x35edd9(0xac)],this['table'][_0x35edd9(0x9d)]['rows'][_0x40d89b[_0x35edd9(0x94)][_0x35edd9(0x9a)]],![]),this['table'][_0x35edd9(0x9d)]['redraw']();}},History['prototype'][a26_0xe0c8e8(0x96)]={'cellEdit':function cellEdit(_0x4c0a3e){var _0xc575a0=a26_0xe0c8e8;_0x4c0a3e[_0xc575a0(0xac)][_0xc575a0(0x8d)](_0x4c0a3e['data'][_0xc575a0(0xaf)]);},'rowAdd':function rowAdd(_0x2d7106){var _0x489721=a26_0xe0c8e8,_0x523658=this[_0x489721(0x8f)]['rowManager'][_0x489721(0xa5)](_0x2d7106[_0x489721(0x94)]['data'],_0x2d7106[_0x489721(0x94)][_0x489721(0x9a)],_0x2d7106[_0x489721(0x94)][_0x489721(0x86)]);this[_0x489721(0x8f)][_0x489721(0x98)]['groupBy']&&this[_0x489721(0x8f)][_0x489721(0x8a)](_0x489721(0xa4))&&this[_0x489721(0x8f)][_0x489721(0x82)]['groupRows'][_0x489721(0xae)](!![]),this['_rebindRow'](_0x2d7106[_0x489721(0xac)],_0x523658);},'rowDelete':function rowDelete(_0xf21a0c){var _0x3f2725=a26_0xe0c8e8;_0xf21a0c['component'][_0x3f2725(0x81)]();},'rowMove':function rowMove(_0x17a2b9){var _0x2d1a94=a26_0xe0c8e8;this[_0x2d1a94(0x8f)][_0x2d1a94(0x9d)][_0x2d1a94(0xa7)](_0x17a2b9[_0x2d1a94(0xac)],this[_0x2d1a94(0x8f)][_0x2d1a94(0x9d)][_0x2d1a94(0x93)][_0x17a2b9[_0x2d1a94(0x94)][_0x2d1a94(0x9a)]],![]),this[_0x2d1a94(0x8f)][_0x2d1a94(0x9d)]['redraw']();}},History['prototype'][a26_0xe0c8e8(0xaa)]=function(_0xbc92b8,_0xea1de8){var _0x4e4858=a26_0xe0c8e8;this['history'][_0x4e4858(0xa2)](function(_0x5e8de0){var _0x48b20c=_0x4e4858;if(_0x5e8de0[_0x48b20c(0xac)]instanceof Row)_0x5e8de0[_0x48b20c(0xac)]===_0xbc92b8&&(_0x5e8de0[_0x48b20c(0xac)]=_0xea1de8);else{if(_0x5e8de0[_0x48b20c(0xac)]instanceof Cell){if(_0x5e8de0[_0x48b20c(0xac)][_0x48b20c(0x7f)]===_0xbc92b8){var _0xcfc78b=_0x5e8de0[_0x48b20c(0xac)][_0x48b20c(0x9c)]['getField']();_0xcfc78b&&(_0x5e8de0[_0x48b20c(0xac)]=_0xea1de8[_0x48b20c(0x95)](_0xcfc78b));}}}});},Tabulator[a26_0xe0c8e8(0x87)][a26_0xe0c8e8(0xb0)](a26_0xe0c8e8(0xa1),History);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var History = function History(table) {
+	this.table = table; //hold Tabulator object
+
+	this.history = [];
+	this.index = -1;
+};
+
+History.prototype.clear = function () {
+	this.history = [];
+	this.index = -1;
+};
+
+History.prototype.action = function (type, component, data) {
+
+	this.history = this.history.slice(0, this.index + 1);
+
+	this.history.push({
+		type: type,
+		component: component,
+		data: data
+	});
+
+	this.index++;
+};
+
+History.prototype.getHistoryUndoSize = function () {
+	return this.index + 1;
+};
+
+History.prototype.getHistoryRedoSize = function () {
+	return this.history.length - (this.index + 1);
+};
+
+History.prototype.undo = function () {
+
+	if (this.index > -1) {
+		var action = this.history[this.index];
+
+		this.undoers[action.type].call(this, action);
+
+		this.index--;
+
+		this.table.options.historyUndo.call(this.table, action.type, action.component.getComponent(), action.data);
+
+		return true;
+	} else {
+		console.warn("History Undo Error - No more history to undo");
+		return false;
+	}
+};
+
+History.prototype.redo = function () {
+	if (this.history.length - 1 > this.index) {
+
+		this.index++;
+
+		var action = this.history[this.index];
+
+		this.redoers[action.type].call(this, action);
+
+		this.table.options.historyRedo.call(this.table, action.type, action.component.getComponent(), action.data);
+
+		return true;
+	} else {
+		console.warn("History Redo Error - No more history to redo");
+		return false;
+	}
+};
+
+History.prototype.undoers = {
+	cellEdit: function cellEdit(action) {
+		action.component.setValueProcessData(action.data.oldValue);
+	},
+
+	rowAdd: function rowAdd(action) {
+		action.component.deleteActual();
+	},
+
+	rowDelete: function rowDelete(action) {
+		var newRow = this.table.rowManager.addRowActual(action.data.data, action.data.pos, action.data.index);
+
+		if (this.table.options.groupBy && this.table.modExists("groupRows")) {
+			this.table.modules.groupRows.updateGroupRows(true);
+		}
+
+		this._rebindRow(action.component, newRow);
+	},
+
+	rowMove: function rowMove(action) {
+		this.table.rowManager.moveRowActual(action.component, this.table.rowManager.rows[action.data.pos], false);
+		this.table.rowManager.redraw();
+	}
+};
+
+History.prototype.redoers = {
+	cellEdit: function cellEdit(action) {
+		action.component.setValueProcessData(action.data.newValue);
+	},
+
+	rowAdd: function rowAdd(action) {
+		var newRow = this.table.rowManager.addRowActual(action.data.data, action.data.pos, action.data.index);
+
+		if (this.table.options.groupBy && this.table.modExists("groupRows")) {
+			this.table.modules.groupRows.updateGroupRows(true);
+		}
+
+		this._rebindRow(action.component, newRow);
+	},
+
+	rowDelete: function rowDelete(action) {
+		action.component.deleteActual();
+	},
+
+	rowMove: function rowMove(action) {
+		this.table.rowManager.moveRowActual(action.component, this.table.rowManager.rows[action.data.pos], false);
+		this.table.rowManager.redraw();
+	}
+};
+
+//rebind rows to new element after deletion
+History.prototype._rebindRow = function (oldRow, newRow) {
+	this.history.forEach(function (action) {
+		if (action.component instanceof Row) {
+			if (action.component === oldRow) {
+				action.component = newRow;
+			}
+		} else if (action.component instanceof Cell) {
+			if (action.component.row === oldRow) {
+				var field = action.component.column.getField();
+
+				if (field) {
+					action.component = newRow.getCell(field);
+				}
+			}
+		}
+	});
+};
+
+Tabulator.prototype.registerModule("history", History);

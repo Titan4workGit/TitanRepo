@@ -1,1 +1,599 @@
-var a10_0x17b476=a10_0x5d97;function a10_0x5d97(_0xafcd7,_0x2a7aa1){var _0x4a6d43=a10_0x4a6d();return a10_0x5d97=function(_0x5d97a9,_0x46aa8e){_0x5d97a9=_0x5d97a9-0x6c;var _0x4cb247=_0x4a6d43[_0x5d97a9];return _0x4cb247;},a10_0x5d97(_0xafcd7,_0x2a7aa1);}(function(_0x3ee7a9,_0x2d5af9){var _0x342485=a10_0x5d97,_0x25924d=_0x3ee7a9();while(!![]){try{var _0x43ad0c=parseInt(_0x342485(0xb8))/0x1*(-parseInt(_0x342485(0xc7))/0x2)+parseInt(_0x342485(0x101))/0x3+-parseInt(_0x342485(0xa5))/0x4+-parseInt(_0x342485(0xaa))/0x5+-parseInt(_0x342485(0x118))/0x6+parseInt(_0x342485(0xc9))/0x7*(-parseInt(_0x342485(0x79))/0x8)+parseInt(_0x342485(0x89))/0x9;if(_0x43ad0c===_0x2d5af9)break;else _0x25924d['push'](_0x25924d['shift']());}catch(_0x1240ca){_0x25924d['push'](_0x25924d['shift']());}}}(a10_0x4a6d,0x9624d));var GCompanyId='',GOfficeDays='';$(document)[a10_0x17b476(0x113)](function(){var _0x29f5e6=a10_0x17b476;userActivityNotificationEntry(_spPageContextInfo[_0x29f5e6(0x106)],window[_0x29f5e6(0xb0)]),GCompanyId=titanForWork[_0x29f5e6(0x116)](_0x29f5e6(0x108)),$(_0x29f5e6(0x9d))[_0x29f5e6(0xe1)]({'dateFormat':'dd/mm/yy','maxDate':new Date()})[_0x29f5e6(0xe1)](_0x29f5e6(0x7f),new Date()),$(_0x29f5e6(0xda))[_0x29f5e6(0xe1)]({'dateFormat':_0x29f5e6(0x81)})[_0x29f5e6(0xe1)](_0x29f5e6(0x7f),'-7d'),$(_0x29f5e6(0xee))[_0x29f5e6(0xc1)](formatDateReport(ConvertDateTimeFormat($('#attendance-reportFrom')[_0x29f5e6(0x10c)](),'/'))),$(_0x29f5e6(0x8e))['text'](formatDateReport(ConvertDateTimeFormat($(_0x29f5e6(0x9d))[_0x29f5e6(0x10c)](),'/')));var _0x56a271=$(_0x29f5e6(0xda))['datepicker'](_0x29f5e6(0xd7)),_0x1e1c0d=$(_0x29f5e6(0x9d))['datepicker'](_0x29f5e6(0xd7));days=(_0x1e1c0d-_0x56a271)/(0x3e8*0x3c*0x3c*0x18);var _0x1a9bc5=Math[_0x29f5e6(0xc4)](days);GOfficeDays=Math[_0x29f5e6(0xc4)](days),LoadAllOfficeLocation(),LoadAllDepartment(),LoadAllHolidays(),$(_0x29f5e6(0x8f))['text']($(_0x29f5e6(0x98))[_0x29f5e6(0xc1)]()),initializePeoplePicker(_0x29f5e6(0xcb)),initializePeoplePicker(_0x29f5e6(0xf5)),$('#attendance-report-filter')['modal']('show');});function initializePeoplePicker(_0x367f1c){var _0x2700d0=a10_0x17b476,_0x1783db={};_0x1783db[_0x2700d0(0xf3)]=_0x2700d0(0xdf),_0x1783db[_0x2700d0(0xeb)]=0xf,_0x1783db[_0x2700d0(0x93)]=0xf,_0x1783db['AllowMultipleValues']=![],_0x1783db['MaximumEntitySuggestions']=0x32,_0x1783db[_0x2700d0(0xdb)]=_0x2700d0(0x77),this[_0x2700d0(0x104)](_0x367f1c,null,_0x1783db);}function ensureUser(_0x294fae){var _0x5ba94a=a10_0x17b476,_0x3ed7a5=0x0,_0x154153=_0x294fae,_0xa8be22=this[_0x5ba94a(0xf9)][_0x5ba94a(0xfb)][_0x154153],_0x3f3c21=_0xa8be22['GetAllUserInfo'](),_0x10d466=_0x3f3c21[0x0];if(_0x10d466){var _0x170bdf={'logonName':_0x10d466[_0x5ba94a(0x7a)]};$['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+_0x5ba94a(0x102),'type':'POST','async':![],'contentType':_0x5ba94a(0xe9),'data':JSON[_0x5ba94a(0xae)](_0x170bdf),'headers':{'X-RequestDigest':$(_0x5ba94a(0xaf))[_0x5ba94a(0x10c)](),'accept':'application/json;odata=verbose'},'success':function(_0x138530,_0x27fa46,_0x3ac5ae){_0x3ed7a5=_0x138530['d']['Id'];},'error':function(_0x59df72,_0x350497,_0x304401){}});}else _0x3ed7a5=0x0;return _0x3ed7a5;}function GetUserTitle(_0x24b2d5){var _0x598134=a10_0x17b476,_0x3fc5ee=0x0,_0x289633=_0x24b2d5,_0x1ef307=this[_0x598134(0xf9)][_0x598134(0xfb)][_0x289633],_0x4985bd=_0x1ef307['GetAllUserInfo'](),_0x438369=_0x4985bd[0x0];if(_0x438369){var _0x5a92ed={'logonName':_0x438369['Key']};$[_0x598134(0xb4)]({'url':_spPageContextInfo[_0x598134(0x111)]+_0x598134(0x102),'type':'POST','async':![],'contentType':_0x598134(0xe9),'data':JSON[_0x598134(0xae)](_0x5a92ed),'headers':{'X-RequestDigest':$('#__REQUESTDIGEST')[_0x598134(0x10c)](),'accept':'application/json;odata=verbose'},'success':function(_0x2f35db,_0x17d036,_0x4410eb){var _0x875096=_0x598134;_0x3fc5ee=_0x2f35db['d'][_0x875096(0xde)];},'error':function(_0x307e40,_0x37af5d,_0x5b39a3){}});}else _0x3fc5ee=0x0;return _0x3fc5ee;}function a10_0x4a6d(){var _0x169488=['<td><div\x20class=\x27attendance-report-table-ellipsis-2\x27>','round','\x27\x20and\x20CompanyID\x20eq\x20\x27','AttendanceType','52NPGMgO','href','28swdZCI','D,\x20dd','Manager','format','WorkHours','All','split','</option>','#ReportTableData>tbody\x20>tr','and\x20ManagerLoginName\x20eq\x20\x27','Rependrecord','Apr','ReportTableData','/_api/web/lists/getbytitle(\x27CompanyHoliday\x27)/items?select=*,ID,Title&$filter=OfficeLocationID\x20eq\x20\x27','getDate','#Manager','LeavesDay','#attendance-reportFrom','Width','results','&start=','Title','User,DL,SecGroup,SPGroup','\x27\x20and\x20Holiday_start\x20ge\x20\x27','datepicker','</div>','show','</tr>','<td><div\x20class=\x27attendance-report-table-ellipsis-2\x27>00:00</div></td>','UserId','/Pages/EmployeeReport.aspx?EID=','black','application/json;odata=verbose','empty','SearchPrincipalSource','Jul','\x27\x20and\x20AttendanceDate\x20le\x20\x27','#FromDate','<option\x20value=\x22','indexOf','Jun','LogonName','PrincipalAccountType','#daydate','Employee','getMonth','floor','evenselected','SPClientPeoplePicker','log','SPClientPeoplePickerDict','innerHTML','#TotalHolidays','getFullYear','#totalemp','<tr\x20class=\x27text-center\x27>','644562kRAnrt','/_api/web/ensureuser','columns','SPClientPeoplePicker_InitStandaloneControlWrapper','#officeLocTH','userId','red','CompanyId','<option\x20value=\x22All\x22>All</option>','&sourcelocation=../Pages/Report.aspx#','map','val','join','Feb','hide','data:application/vnd.ms-excel;base64,','webAbsoluteUrl','replace','ready','/_api/lists/getbytitle(\x27EmpAttendance\x27)/items?$select=HrAction,ID,Title,WorkHours,AttendanceDate,AttendanceType,Employee/Title,Employee/ID&$Expand=Employee&$top=5000&$filter=AttendanceDate\x20ge\x20\x27','.NoRecordFound','getQueryStringParameter','percentage','6386082NqKZAK','DepartmentName','Reptotalpages','done','#ReportTable','oddselected','sorter','checked','AttendanceItemId','Jan','ManagerLoginName','btoa','<td><div\x20class=\x27attendance-report-edit-lock-btn-box\x20text-center\x27><a\x20href=\x27','280px','1st\x20Half','2453872ORVXxX','Key','/_api/web/lists/GetByTitle(\x27Employees\x27)/items?$top=5000&$select=ID,FullName,Designation,LogonName/ID,LogonName/Title,ManagerLoginName/Title,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20\x20eq\x20\x27','&WebAppId=','OfficeLocation','and\x20OfficeLocation\x20eq\x20\x27','setDate','webServerRelativeUrl','dd/mm/yy','Designation','#OfficeLoc','Department','and\x20LogonName/ID\x20eq\x20\x27','and\x20Department\x20eq\x20\x27','/_api/web/lists/getbytitle(\x27Departments\x27)/items?select=ID,Title&$filter=CompanyID\x20eq\x20\x27','#DepartmentDDL','42719841dKsvYI','push','nodeType','length','NotActionDays','#ToDate','#SelectedLocation','formatDate','AttendancDays','HrAction','ResolvePrincipalSource','Mar','getTime','AttendanceDate','children','#OfficeLoc\x20option:selected','asc','Repstartrecord','\x27\x20and\x20Holiday_start\x20le\x20\x27','#Employee','#attendance-reportTo','OfficeName','attr','<td><div\x20class=\x27attendance-report-table-ellipsis-2\x27>0</div></td>','selectedrow','Oct','filter','EmpWorkHours','2318456oTAqoB','DD/MM/YYYY','#EdateTH','\x27\x20and\x20Employee\x20eq\x20\x27','table','4782115WjSOUk','Worksheet','<div\x20class=\x27upload-chip\x27>','\x27\x20class=\x27custom-edit-btn\x27><i\x20class=\x27fa\x20fa-chevron-right\x27></i></a></div></td>','stringify','#__REQUESTDIGEST','location','On\x20Leave','oddrow','/_api/web/lists/GetByTitle(\x27OfficeLocation\x27)/items?$select=ID,OfficeName,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=CompanyID/ID\x20eq\x20\x27','ajax','Sept','May','#TotalWorkdayTH','19969esCMVK','YYYY-MM-DD','#FdateTH','append','#HolidaysTH','2nd\x20Half','<td\x20class=\x27text-left\x27><div\x20class=\x27attendance-report-table-ellipsis-2\x27>','#chips','00:00\x20(H:M)','text','</div></td>'];a10_0x4a6d=function(){return _0x169488;};return a10_0x4a6d();}function ConvertDateTimeFormat(_0x24ed60,_0x5dfcd8){var _0x3f1346=a10_0x17b476;return _0x24ed60[_0x3f1346(0xcf)](_0x5dfcd8)[0x1]+''+_0x5dfcd8+''+_0x24ed60[_0x3f1346(0xcf)](_0x5dfcd8)[0x0]+''+_0x5dfcd8+''+_0x24ed60[_0x3f1346(0xcf)](_0x5dfcd8)[0x2];}function formatDateReport(_0xa1f99d){var _0x4afbe8=a10_0x17b476,_0x2d8f2b=new Date(_0xa1f99d);if(isNaN(_0x2d8f2b[_0x4afbe8(0x95)]()))return _0xa1f99d;else{var _0x52f676=new Array();return _0x52f676[0x0]=_0x4afbe8(0x73),_0x52f676[0x1]=_0x4afbe8(0x10e),_0x52f676[0x2]=_0x4afbe8(0x94),_0x52f676[0x3]=_0x4afbe8(0xd4),_0x52f676[0x4]=_0x4afbe8(0xb6),_0x52f676[0x5]=_0x4afbe8(0xf1),_0x52f676[0x6]=_0x4afbe8(0xec),_0x52f676[0x7]='Aug',_0x52f676[0x8]=_0x4afbe8(0xb5),_0x52f676[0x9]=_0x4afbe8(0xa2),_0x52f676[0xa]='Nov',_0x52f676[0xb]='Dec',day=_0x2d8f2b['getDate'](),day<0xa&&(day='0'+day),day+'\x20'+_0x52f676[_0x2d8f2b[_0x4afbe8(0xf6)]()]+'\x20'+_0x2d8f2b[_0x4afbe8(0xfe)]();}}function LoadAllOfficeLocation(){var _0x3df160=a10_0x17b476;$(_0x3df160(0x83))[_0x3df160(0xea)]();var _0x30e185=_spPageContextInfo[_0x3df160(0x111)]+_0x3df160(0xb3)+GCompanyId+'\x27&$orderby=OfficeName\x20asc';$[_0x3df160(0xb4)]({'url':_0x30e185,'headers':{'Accept':_0x3df160(0xe9)},'async':![],'success':function(_0x5ba8b9){var _0x24b70e=_0x3df160;for(var _0x3d691c=0x0;_0x3d691c<_0x5ba8b9['d'][_0x24b70e(0xdc)]['length'];_0x3d691c++){$(_0x24b70e(0x83))[_0x24b70e(0xbb)](_0x24b70e(0xef)+_0x5ba8b9['d']['results'][_0x3d691c]['ID']+'\x22>'+_0x5ba8b9['d'][_0x24b70e(0xdc)][_0x3d691c][_0x24b70e(0x9e)]+_0x24b70e(0xd0));}},'myError':function(_0x57b20a){}});}function LoadAllDepartment(){var _0x4c4428=a10_0x17b476;$('#DepartmentDDL')[_0x4c4428(0xea)]();var _0x5c782d=_spPageContextInfo[_0x4c4428(0x111)]+_0x4c4428(0x87)+GCompanyId+'\x27&$orderby=Title\x20asc';$[_0x4c4428(0xb4)]({'url':_0x5c782d,'headers':{'Accept':_0x4c4428(0xe9)},'async':!![],'success':function(_0x41166a){var _0x5514df=_0x4c4428;$(_0x5514df(0x109))['appendTo'](_0x5514df(0x88));for(var _0x1d64ee=0x0;_0x1d64ee<_0x41166a['d'][_0x5514df(0xdc)][_0x5514df(0x8c)];_0x1d64ee++){$(_0x5514df(0x88))['append']('<option\x20value=\x22'+_0x41166a['d']['results'][_0x1d64ee]['ID']+'\x22>'+_0x41166a['d'][_0x5514df(0xdc)][_0x1d64ee]['Title']+_0x5514df(0xd0));}},'myError':function(_0x250221){}});}var TotalOfficeDays=0x0,GtotalHolidays=0x0;function LoadAllHolidays(){var _0x5a3fdd=a10_0x17b476,_0x3951c7=$(_0x5a3fdd(0x83))[_0x5a3fdd(0x10c)]();TotalOfficeDays=0x0,GtotalHolidays=0x0;var _0x52bb39=new Date(ConvertDateTimeFormat($(_0x5a3fdd(0xda))[_0x5a3fdd(0x10c)](),'/')),_0x412396=_0x52bb39[_0x5a3fdd(0xfe)]()+'-'+(_0x52bb39['getMonth']()+0x1)+'-'+_0x52bb39[_0x5a3fdd(0xd7)](),_0x280329=new Date(ConvertDateTimeFormat($(_0x5a3fdd(0x9d))[_0x5a3fdd(0x10c)](),'/')),_0x3dbaae=_0x280329['getFullYear']()+'-'+(_0x280329[_0x5a3fdd(0xf6)]()+0x1)+'-'+_0x280329[_0x5a3fdd(0xd7)](),_0x4f0344=_spPageContextInfo[_0x5a3fdd(0x111)]+_0x5a3fdd(0xd6)+_0x3951c7+_0x5a3fdd(0xc5)+GCompanyId+_0x5a3fdd(0xe0)+_0x412396+_0x5a3fdd(0x9b)+_0x3dbaae+'\x27';$[_0x5a3fdd(0xb4)]({'url':_0x4f0344,'headers':{'Accept':_0x5a3fdd(0xe9)},'async':![],'success':function(_0x154348){var _0x562973=_0x5a3fdd,_0x50a2d=_0x154348['d'][_0x562973(0xdc)][_0x562973(0x8c)];GtotalHolidays=_0x50a2d,$(_0x562973(0xfd))[_0x562973(0xc1)](_0x50a2d),$('#TotalOfficeDays')[_0x562973(0xc1)](parseInt(GOfficeDays)-parseInt(_0x50a2d)),TotalOfficeDays=parseInt(GOfficeDays)-parseInt(_0x50a2d);},'myError':function(_0xb3f244){}});}function Applyfilter(){var _0x21ff16=a10_0x17b476;$(_0x21ff16(0xee))[_0x21ff16(0xc1)](formatDateReport(ConvertDateTimeFormat($(_0x21ff16(0xda))[_0x21ff16(0x10c)](),'/'))),$(_0x21ff16(0x8e))['text'](formatDateReport(ConvertDateTimeFormat($(_0x21ff16(0x9d))[_0x21ff16(0x10c)](),'/'))),$(_0x21ff16(0x8f))[_0x21ff16(0xc1)]($(_0x21ff16(0x98))[_0x21ff16(0xc1)]()),$(_0x21ff16(0xba))[_0x21ff16(0xc1)](formatDateReport(ConvertDateTimeFormat($(_0x21ff16(0xda))[_0x21ff16(0x10c)](),'/'))),$(_0x21ff16(0xa7))[_0x21ff16(0xc1)](formatDateReport(ConvertDateTimeFormat($('#attendance-reportTo')[_0x21ff16(0x10c)](),'/'))),$(_0x21ff16(0x105))[_0x21ff16(0xc1)]($(_0x21ff16(0x98))['text']()),$(_0x21ff16(0xb7))[_0x21ff16(0xc1)](TotalOfficeDays),$(_0x21ff16(0xbc))[_0x21ff16(0xc1)](GtotalHolidays);var _0x525143=$(_0x21ff16(0xda))['datepicker'](_0x21ff16(0xd7)),_0x4ca7c4=$(_0x21ff16(0x9d))[_0x21ff16(0xe1)](_0x21ff16(0xd7));days=(_0x4ca7c4-_0x525143)/(0x3e8*0x3c*0x3c*0x18),GOfficeDays=Math[_0x21ff16(0xc4)](days)+0x1,LoadAllHolidays(),$('#attendencedateValue')[_0x21ff16(0x10c)]('');var _0x1e4a37=$(_0x21ff16(0xda))[_0x21ff16(0x10c)](),_0x71aeb=moment($(_0x21ff16(0xda))[_0x21ff16(0x10c)](),_0x21ff16(0xa6))[_0x21ff16(0xcc)](_0x21ff16(0xb9)),_0x15b3b5=moment($(_0x21ff16(0x9d))[_0x21ff16(0x10c)](),_0x21ff16(0xa6))[_0x21ff16(0xcc)](_0x21ff16(0xb9));$(_0x21ff16(0xf4))['text']($[_0x21ff16(0xe1)][_0x21ff16(0x90)](_0x21ff16(0xca),new Date(_0x71aeb))),$('#monthhyear')[_0x21ff16(0xc1)]($[_0x21ff16(0xe1)][_0x21ff16(0x90)]('M\x20\x20yy',new Date(_0x71aeb)));var _0x94335f='',_0x5f5483='';$(_0x21ff16(0x83))[_0x21ff16(0x10c)]()!=_0x21ff16(0xce)&&(_0x94335f+=_0x21ff16(0x7e)+$(_0x21ff16(0x83))[_0x21ff16(0x10c)]()+'\x27\x20',_0x5f5483+=_0x21ff16(0xac)+$(_0x21ff16(0x98))[_0x21ff16(0xc1)]()+_0x21ff16(0xe2));$('#DepartmentDDL')['val']()!=_0x21ff16(0xce)&&(_0x94335f+=_0x21ff16(0x86)+$('#DepartmentDDL')[_0x21ff16(0x10c)]()+'\x27\x20',_0x5f5483+=_0x21ff16(0xac)+$('#DepartmentDDL\x20option:selected')[_0x21ff16(0xc1)]()+'</div>');var _0x9fd288=ensureUser($(_0x21ff16(0xd8))[_0x21ff16(0x97)]()[_0x21ff16(0x97)]()['attr']('id')),_0x581269=ensureUser($(_0x21ff16(0x9c))[_0x21ff16(0x97)]()[_0x21ff16(0x97)]()[_0x21ff16(0x9f)]('id'));_0x9fd288!=0x0&&(_0x94335f+=_0x21ff16(0xd2)+_0x9fd288+'\x27\x20',_0x5f5483+='<div\x20class=\x27upload-chip\x27>'+GetUserTitle($(_0x21ff16(0xd8))[_0x21ff16(0x97)]()[_0x21ff16(0x97)]()[_0x21ff16(0x9f)]('id'))+'</div>');_0x581269!=0x0&&(_0x94335f+=_0x21ff16(0x85)+_0x581269+'\x27\x20',_0x5f5483+=_0x21ff16(0xac)+GetUserTitle($(_0x21ff16(0x9c))[_0x21ff16(0x97)]()[_0x21ff16(0x97)]()[_0x21ff16(0x9f)]('id'))+_0x21ff16(0xe2));$(_0x21ff16(0xbf))['empty'](),$(_0x21ff16(0xbf))[_0x21ff16(0xbb)](_0x5f5483);var _0x11624e=_spPageContextInfo[_0x21ff16(0x111)]+'/_api/lists/getbytitle(\x27EmpAttendance\x27)/items?$select=HrAction,ID,Title,WorkHours,AttendanceDate,AttendanceType,Employee/Title,Employee/ID&$Expand=Employee&$top=5000&$filter=AttendanceDate\x20ge\x20\x27'+_0x71aeb+_0x21ff16(0xed)+_0x15b3b5+'\x27\x20';$['when'](getFileData(_0x11624e))[_0x21ff16(0x6d)](function(_0x839dd1){var _0x43358c=_0x21ff16,_0x3d5e53=_spPageContextInfo['webAbsoluteUrl']+_0x43358c(0x7b)+GCompanyId+'\x27'+_0x94335f;EmployeeListDat(_0x3d5e53);});}var TempStore=[],unique='';function getFileData(_0x4351b5){var _0x47f3f9=a10_0x17b476;jQuery[_0x47f3f9(0xb4)]({'url':_0x4351b5,'headers':{'Accept':_0x47f3f9(0xe9)},'async':![],'success':function(_0xddc8c4){var _0x1d63c5=_0x47f3f9;EmpAttendanceData=[];var _0x428a6f=_0xddc8c4['d']['results'];if(_0x428a6f[_0x1d63c5(0x8c)]>0x0){TempStore=[];for(var _0x40d737=0x0;_0x40d737<_0x428a6f[_0x1d63c5(0x8c)];_0x40d737++){TempStore['push'](_0x428a6f[_0x40d737][_0x1d63c5(0xf5)]['ID']);}unique=TempStore[_0x1d63c5(0xa3)](function(_0x4f9157,_0x3921f9,_0x4c4f21){var _0x4c4d0f=_0x1d63c5;return _0x3921f9==_0x4c4f21[_0x4c4d0f(0xf0)](_0x4f9157);});if(unique[_0x1d63c5(0x8c)]>0x0){EmpAttendanceData=[];for(var _0x5746c4=0x0;_0x5746c4<unique[_0x1d63c5(0x8c)];_0x5746c4++){var _0x36ad74=0x0,_0x30dc8f=[],_0x1c3a10=[],_0x4421d3=moment($(_0x1d63c5(0xda))[_0x1d63c5(0x10c)](),'DD/MM/YYYY')[_0x1d63c5(0xcc)](_0x1d63c5(0xb9)),_0x20e1ca=moment($(_0x1d63c5(0x9d))[_0x1d63c5(0x10c)](),_0x1d63c5(0xa6))[_0x1d63c5(0xcc)]('YYYY-MM-DD'),_0xfcc05d=unique[_0x5746c4],_0x3e4a16=_spPageContextInfo[_0x1d63c5(0x111)]+_0x1d63c5(0x114)+_0x4421d3+_0x1d63c5(0xed)+_0x20e1ca+_0x1d63c5(0xa8)+_0xfcc05d+'\x27\x20';jQuery[_0x1d63c5(0xb4)]({'url':_0x3e4a16,'headers':{'Accept':_0x1d63c5(0xe9)},'async':![],'success':function(_0x50d9f3){var _0x1e5796=_0x1d63c5,_0x46510f=_0x50d9f3['d'][_0x1e5796(0xdc)];if(_0x46510f[_0x1e5796(0x8c)]>0x0){for(var _0x4732aa=0x0;_0x4732aa<_0x46510f[_0x1e5796(0x8c)];_0x4732aa++){var _0xcd000c=_0x46510f[_0x4732aa]['ID'],_0x1bf240=_0x46510f[_0x4732aa][_0x1e5796(0xf5)][_0x1e5796(0xde)],_0x3656f0=_0x46510f[_0x4732aa][_0x1e5796(0xf5)]['ID'],_0x305895=_0x46510f[_0x4732aa][_0x1e5796(0x96)],_0x431956=_0x46510f[_0x4732aa]['AttendanceType'];if(_0x431956=='Full\x20Day'||_0x431956==_0x1e5796(0x78)||_0x431956==_0x1e5796(0xbd))_0x30dc8f['push'](_0x431956);else _0x431956=='On\x20Leave'&&_0x1c3a10['push'](_0x431956);_0x46510f[_0x4732aa][_0x1e5796(0xcd)]!=null&&(_0x36ad74=parseInt(_0x36ad74)+parseInt(_0x46510f[_0x4732aa]['WorkHours']));var _0x1786a8=_0x46510f[_0x4732aa][_0x1e5796(0x92)],_0x423856=parseInt(_0x30dc8f[_0x1e5796(0x8c)])+parseInt(_0x1c3a10[_0x1e5796(0x8c)]),_0x24c527=parseInt(TotalOfficeDays)-parseInt(_0x423856);_0x24c527<0x0&&(_0x24c527=0x0);}var _0x5125bf=Math[_0x1e5796(0xc4)](parseInt(_0x423856)/parseInt(TotalOfficeDays)*0x64)+'%';TotalOfficeDays=='0'&&(_0x5125bf='-'),EmpAttendanceData[_0x1e5796(0x8a)]({'UserId':_0x3656f0,'EmpName':_0x1bf240,'AttendanceDate':_0x305895,'AttendanceType':_0x431956,'AttendanceItemId':_0xcd000c,'EmpWorkHours':_0x36ad74,'HrAction':_0x1786a8,'AttendancDays':_0x30dc8f[_0x1e5796(0x8c)],'LeavesDay':_0x1c3a10[_0x1e5796(0x8c)],'NotActionDays':_0x24c527,'percentage':_0x5125bf});}},'error':function(_0x5d7add,_0x39bf10){var _0x516184=_0x1d63c5;console[_0x516184(0xfa)](JSON[_0x516184(0xae)](_0x5d7add));}});}}}},'error':function(_0x3d63cc,_0x513cdb){var _0x235994=_0x47f3f9;console[_0x235994(0xfa)](JSON['stringify'](_0x3d63cc));}});}function EmployeeListDat(_0x3dd7a6){var _0x12759c=a10_0x17b476;$[_0x12759c(0xb4)]({'url':_0x3dd7a6,'headers':{'Accept':_0x12759c(0xe9)},'async':![],'success':function(_0xe93f63){var _0x489d3f=_0x12759c,_0x56c184=_0xe93f63['d'][_0x489d3f(0xdc)];$(_0x489d3f(0x6e))[_0x489d3f(0xea)]();var _0x5400de='';if(_0x56c184[_0x489d3f(0x8c)]>0x0){var _0x5180ca=0x0,_0x2da935=0x0,_0x23d732=0x0;for(var _0x34b549=0x0;_0x34b549<_0x56c184[_0x489d3f(0x8c)];_0x34b549++){var _0x18f321=_0x56c184[_0x34b549]['ID'],_0xad0adf=_0x56c184[_0x34b549][_0x489d3f(0xf2)]['ID'],_0x27b270=_0x56c184[_0x34b549][_0x489d3f(0xf2)][_0x489d3f(0xde)],_0xbdf830=_0x56c184[_0x34b549][_0x489d3f(0x82)],_0x9b3713=_0x56c184[_0x34b549][_0x489d3f(0x84)][_0x489d3f(0x119)],_0x284ae1=_0x56c184[_0x34b549][_0x489d3f(0x74)][_0x489d3f(0xde)];_0x284ae1==undefined&&(_0x284ae1='');var _0xdb23d7=_0x489d3f(0xc0),_0x2a412f='',_0x462547=_0x489d3f(0xe8);_0xbdf830==null&&(_0xbdf830='');var _0x2239c9=_0x56c184[_0x34b549][_0x489d3f(0x7d)][_0x489d3f(0x9e)];_0x2239c9==null&&(_0x2239c9='');EmployeeId=_0x56c184[_0x34b549]['LogonName']['ID'];var _0x5e218c=moment($(_0x489d3f(0xda))['val'](),_0x489d3f(0xa6))[_0x489d3f(0xcc)]('YYYY-MM-DD'),_0xc70ecc=moment($(_0x489d3f(0x9d))['val'](),'DD/MM/YYYY')[_0x489d3f(0xcc)](_0x489d3f(0xb9)),_0x5e218c=_0x5e218c['split']('-')[_0x489d3f(0x10d)](''),_0xc70ecc=_0xc70ecc[_0x489d3f(0xcf)]('-')[_0x489d3f(0x10d)](''),_0x4f9490=_spPageContextInfo[_0x489d3f(0x80)]+_0x489d3f(0xe7)+_0xad0adf+_0x489d3f(0xdd)+_0x5e218c+'&end='+_0xc70ecc+_0x489d3f(0x7c)+titanForWork[_0x489d3f(0x116)](_0x489d3f(0x108))+_0x489d3f(0x10a),_0x1187e2=EmpAttendanceData[_0x489d3f(0x10b)](function(_0x357be2){var _0x1385d2=_0x489d3f;return _0x357be2[_0x1385d2(0xe6)];})['indexOf'](EmployeeId);if(_0x1187e2!=-0x1){var _0x270529=EmpAttendanceData[_0x1187e2][_0x489d3f(0xe6)],_0x48fcaf=EmpAttendanceData[_0x1187e2][_0x489d3f(0xc6)],_0x466f29=EmpAttendanceData[_0x1187e2][_0x489d3f(0x72)];_0xdb23d7=EmpAttendanceData[_0x1187e2][_0x489d3f(0xa4)];var _0x18d384=EmpAttendanceData[_0x1187e2][_0x489d3f(0xa4)];_0x2a412f=EmpAttendanceData[_0x1187e2][_0x489d3f(0x72)];var _0x22f966=EmpAttendanceData[_0x1187e2][_0x489d3f(0x91)],_0x582680=EmpAttendanceData[_0x1187e2][_0x489d3f(0xd9)],_0x388b6f=EmpAttendanceData[_0x1187e2][_0x489d3f(0x8d)],_0x414438=EmpAttendanceData[_0x1187e2][_0x489d3f(0x117)],_0x646ed7='';EmpAttendanceData[_0x1187e2][_0x489d3f(0x92)]==!![]?_0x646ed7=_0x489d3f(0x71):_0x646ed7='',_0xdb23d7==null&&(_0xdb23d7=_0x489d3f(0xc0)),_0x48fcaf==_0x489d3f(0xb1)&&(_0x462547=_0x489d3f(0x107),_0x23d732++),_0x48fcaf=='Holiday'&&(_0x462547='blue'),_0x5400de+=_0x489d3f(0x100),_0x5400de+='<td\x20class=\x27text-left\x27><div\x20class=\x27attendance-report-table-ellipsis-2\x27>'+_0x27b270+'</div></td>',_0x5400de+=_0x489d3f(0xbe)+_0xbdf830+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xc3)+_0x9b3713+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xbe)+_0x284ae1+_0x489d3f(0xc2),_0x5400de+='<td><div\x20class=\x27attendance-report-table-ellipsis-2\x27>'+_0x22f966+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xc3)+_0x388b6f+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xc3)+_0x582680+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xc3)+ConvertHHMM(_0xdb23d7)+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xc3)+_0x414438+_0x489d3f(0xc2),_0x5400de+='<td><div\x20class=\x27attendance-report-edit-lock-btn-box\x20text-center\x27><a\x20href=\x27'+_0x4f9490+'\x27\x20class=\x27custom-edit-btn\x27><i\x20class=\x27fa\x20fa-chevron-right\x27></i></a></div></td>',_0x5400de+=_0x489d3f(0xe4);}else _0x5400de+=_0x489d3f(0x100),_0x5400de+=_0x489d3f(0xbe)+_0x27b270+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xbe)+_0xbdf830+'</div></td>',_0x5400de+=_0x489d3f(0xc3)+_0x9b3713+_0x489d3f(0xc2),_0x5400de+='<td\x20class=\x27text-left\x27><div\x20class=\x27attendance-report-table-ellipsis-2\x27>'+_0x284ae1+'</div></td>',_0x5400de+=_0x489d3f(0xa0),_0x5400de+=_0x489d3f(0xc3)+TotalOfficeDays+_0x489d3f(0xc2),_0x5400de+=_0x489d3f(0xa0),_0x5400de+=_0x489d3f(0xe5),_0x5400de+='<td><div\x20class=\x27attendance-report-table-ellipsis-2\x27>-</div></td>',_0x5400de+=_0x489d3f(0x76)+_0x4f9490+_0x489d3f(0xad),_0x5400de+='</tr>';}}else{}_0x56c184[_0x489d3f(0x8c)]==0x0?$(_0x489d3f(0x115))[_0x489d3f(0xe3)]():$('.NoRecordFound')[_0x489d3f(0x10f)]();$(_0x489d3f(0x6e))[_0x489d3f(0xbb)](_0x5400de);var _0x276ea2=$(_0x489d3f(0xd1))['length'];$('#TotalItemscount')[_0x489d3f(0xc1)](_0x276ea2),$(_0x489d3f(0xff))[_0x489d3f(0xc1)](_0x276ea2),_0x276ea2>0x0&&ReportTableConfiguration();},'error':function(_0x30bdea){var _0x584cb6=_0x12759c;console[_0x584cb6(0xfa)](_0x30bdea);}});}function ReportTableConfiguration(){var _0x4a5375=a10_0x17b476;sorter=new TINY[(_0x4a5375(0xa9))][(_0x4a5375(0x70))](_0x4a5375(0x70),_0x4a5375(0xd5),{'ascclass':_0x4a5375(0x99),'descclass':'desc','evenclass':'evenrow','oddclass':_0x4a5375(0xb2),'evenselclass':_0x4a5375(0xf8),'oddselclass':_0x4a5375(0x6f),'paginate':!![],'size':0xa,'colddid':_0x4a5375(0x103),'currentid':'Repcurrentpage','totalid':_0x4a5375(0x6c),'startingrecid':_0x4a5375(0x9a),'endingrecid':_0x4a5375(0xd3),'totalrecid':'Reptotalrecords','hoverid':_0x4a5375(0xa1),'pageddid':'pagedropdown','navid':'tablenav','sortdir':0x1,'init':!![]});}function ConvertHHMM(_0x49a99d){var _0x1005b9=a10_0x17b476,_0x5c5f9d=Math[_0x1005b9(0xf7)](_0x49a99d/0x3c),_0x41cca3=_0x49a99d%0x3c;_0x5c5f9d<0xa&&(_0x5c5f9d='0'+_0x5c5f9d);_0x41cca3<0xa&&(_0x41cca3='0'+_0x41cca3);var _0x29241c=_0x5c5f9d+':'+_0x41cca3;return _0x29241c;}function CloseModel(){var _0x375708=a10_0x17b476;initializePeoplePicker(_0x375708(0xcb)),initializePeoplePicker('Employee');}var tableToExcel=(function(){var _0x2555df=a10_0x17b476,_0x36defa=_0x2555df(0x110),_0x1a122d='<html\x20xmlns:o=\x22urn:schemas-microsoft-com:office:office\x22\x20xmlns:x=\x22urn:schemas-microsoft-com:office:excel\x22\x20xmlns=\x22http://www.w3.org/TR/REC-html40\x22><head><!--[if\x20gte\x20mso\x209]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',_0x1dc4a1=function(_0x5459a6){var _0x50566e=_0x2555df;return window[_0x50566e(0x75)](unescape(encodeURIComponent(_0x5459a6)));},_0x2cf49f=function(_0x2492a9,_0x2d707c){var _0x44f8d8=_0x2555df;return _0x2492a9[_0x44f8d8(0x112)](/{(\w+)}/g,function(_0x5578e3,_0x3246fc){return _0x2d707c[_0x3246fc];});};return function(_0x3aa052,_0x12310f){var _0x1facb5=_0x2555df;if(!_0x3aa052[_0x1facb5(0x8b)])_0x3aa052=document['getElementById'](_0x3aa052);var _0x300486={'worksheet':_0x12310f||_0x1facb5(0xab),'table':_0x3aa052[_0x1facb5(0xfc)]};window[_0x1facb5(0xb0)][_0x1facb5(0xc8)]=_0x36defa+_0x1dc4a1(_0x2cf49f(_0x1a122d,_0x300486));};}());
+var GCompanyId='';
+var GOfficeDays = '';
+$(document).ready(function(){
+
+    userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+    
+ 	GCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+ 	$("#attendance-reportTo").datepicker({ dateFormat: "dd/mm/yy",maxDate: new Date()}).datepicker("setDate", new Date());
+ 	$('#attendance-reportFrom').datepicker({      
+		dateFormat: 'dd/mm/yy',
+    }).datepicker("setDate",'-7d');
+
+	$("#FromDate").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportFrom").val(),'/')));
+	$("#ToDate").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportTo").val(),'/')));
+	
+	var start= $("#attendance-reportFrom").datepicker("getDate");
+    	var end= $("#attendance-reportTo").datepicker("getDate");
+   			days = (end- start) / (1000 * 60 * 60 * 24);
+   		var Totaldays = (Math.round(days));
+   		GOfficeDays = (Math.round(days));
+   		
+   	LoadAllOfficeLocation();
+	LoadAllDepartment();
+	LoadAllHolidays();
+	
+	$("#SelectedLocation").text($("#OfficeLoc option:selected").text());
+	initializePeoplePicker("Manager"); 
+	initializePeoplePicker("Employee"); 
+	
+	$('#attendance-report-filter').modal('show');
+
+});
+
+function initializePeoplePicker(peoplePickerElementId) {  
+    var schema = {};  
+    schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';  
+    schema['SearchPrincipalSource'] = 15;  
+    schema['ResolvePrincipalSource'] = 15;  
+    schema['AllowMultipleValues'] = false;  
+    schema['MaximumEntitySuggestions'] = 50;  
+    schema['Width'] = '280px';  
+    this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);  
+}  
+
+
+function ensureUser(ID) 
+{
+	var UserId =0;    
+    var peoplePickerTopDivId = ID;
+    var peoplePicker = 
+    this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerTopDivId];
+    var users = peoplePicker.GetAllUserInfo();
+    var arryuser = users[0];
+    if(arryuser) 
+    {
+    	var payload = { 'logonName': arryuser.Key}; 
+    	$.ajax({
+    	    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/ensureuser",
+    	    type: "POST",
+    	    async:false,
+    	    contentType: "application/json;odata=verbose",
+    	    data: JSON.stringify(payload),
+    	    headers: {
+    	        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+    	        "accept": "application/json;odata=verbose"
+    	            },
+        	success: function(data, status, xhr) 
+        	{     
+         		UserId = data.d.Id;          
+        	},
+        	error: function(xhr, status, error) 
+        	{  
+        	
+        	}
+    	}); 
+    }   
+    else 
+    {
+        UserId = 0;
+    } 
+   	return UserId;    
+}
+
+
+function GetUserTitle(ID) 
+{
+	var UserId =0;    
+    var peoplePickerTopDivId = ID;
+    var peoplePicker = 
+    this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerTopDivId];
+    var users = peoplePicker.GetAllUserInfo();
+    var arryuser = users[0];
+    if(arryuser) 
+    {
+    	var payload = { 'logonName': arryuser.Key}; 
+    	$.ajax({
+    	    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/ensureuser",
+    	    type: "POST",
+    	    async:false,
+    	    contentType: "application/json;odata=verbose",
+    	    data: JSON.stringify(payload),
+    	    headers: {
+    	        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+    	        "accept": "application/json;odata=verbose"
+    	            },
+        	success: function(data, status, xhr) 
+        	{     
+         		UserId = data.d.Title;          
+        	},
+        	error: function(xhr, status, error) 
+        	{  
+        	
+        	}
+    	}); 
+    }   
+    else 
+    {
+        UserId = 0;
+    } 
+   	return UserId;    
+}
+
+
+function ConvertDateTimeFormat(date, delimiter) 
+{
+    return date.split(delimiter)[1] + "" + delimiter + "" + date.split(delimiter)[0] + "" + delimiter + "" + date.split(delimiter)[2];
+}
+
+
+function formatDateReport(d) 
+{
+	var date = new Date(d);
+	if ( isNaN( date .getTime())){ return d; }
+    else
+    {
+         var month = new Array();
+         month[0] = "Jan";
+         month[1] = "Feb";
+         month[2] = "Mar";
+         month[3] = "Apr";
+         month[4] = "May";
+         month[5] = "Jun";
+         month[6] = "Jul";
+         month[7] = "Aug";
+         month[8] = "Sept";
+         month[9] = "Oct";
+         month[10] = "Nov";
+         month[11] = "Dec";
+         day = date.getDate();
+         if(day < 10){day = "0"+day; }
+         return    day  + " " +month[date.getMonth()] +" "+date.getFullYear();
+    }
+}
+
+
+function LoadAllOfficeLocation()
+{
+ 	$("#OfficeLoc").empty(); 
+    var Ownurl =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('OfficeLocation')/items?$select=ID,OfficeName,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=CompanyID/ID eq '"+GCompanyId+"'&$orderby=OfficeName asc"; 
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (response)
+        {
+            for (var i = 0; i < response.d.results.length; i++)
+            {
+                $("#OfficeLoc").append('<option value="' + response.d.results[i].ID + '">' + response.d.results[i].OfficeName + '</option>');
+            }
+        }, myError: function (response) {
+           
+        }
+    });
+}
+
+
+function LoadAllDepartment()
+{
+ 	$("#DepartmentDDL").empty(); 
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?select=ID,Title&$filter=CompanyID eq '"+GCompanyId+"'&$orderby=Title asc"; 
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (response)
+        {
+        	$('<option value="All">All</option>').appendTo("#DepartmentDDL");
+            for (var i = 0; i < response.d.results.length; i++)
+            {
+                $("#DepartmentDDL").append('<option value="' + response.d.results[i].ID + '">' + response.d.results[i].Title + '</option>');
+            }
+        }, myError: function (response) {
+           
+        }
+    });
+}
+
+
+var TotalOfficeDays = 0;
+var GtotalHolidays=0;
+function LoadAllHolidays()
+{
+ 	var Location = $("#OfficeLoc").val();
+ 	TotalOfficeDays =0;
+ 	GtotalHolidays=0; 	
+ 	var f = new Date(ConvertDateTimeFormat($("#attendance-reportFrom").val(), '/'));
+    var Startdate = f.getFullYear() + "-" + (f.getMonth()+1) + "-" + f.getDate();
+
+    var f1 = new Date(ConvertDateTimeFormat($("#attendance-reportTo").val(), '/'));
+    var EndDate = f1.getFullYear() + "-" + (f1.getMonth()+1) + "-" + f1.getDate(); 
+    
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('CompanyHoliday')/items?select=*,ID,Title&$filter=OfficeLocationID eq '"+Location+"' and CompanyID eq '"+GCompanyId+"' and Holiday_start ge '"+Startdate+"' and Holiday_start le '"+EndDate+"'"; 
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (response)
+        {
+        	var TotalHolidays = response.d.results.length;
+        	GtotalHolidays = TotalHolidays;
+        	$("#TotalHolidays").text(TotalHolidays);        	
+        	$("#TotalOfficeDays").text(parseInt(GOfficeDays)-parseInt(TotalHolidays));
+        	TotalOfficeDays = parseInt(GOfficeDays)-parseInt(TotalHolidays);       	
+        }, 
+        myError: function (response) {
+           
+        }
+    });
+}
+
+
+function Applyfilter()
+{
+	$("#FromDate").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportFrom").val(),'/')));
+	$("#ToDate").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportTo").val(),'/')));
+	$("#SelectedLocation").text($("#OfficeLoc option:selected").text());
+	
+	$("#FdateTH").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportFrom").val(),'/')));
+	$("#EdateTH").text(formatDateReport(ConvertDateTimeFormat($("#attendance-reportTo").val(),'/')));
+	$("#officeLocTH").text($("#OfficeLoc option:selected").text());
+	$("#TotalWorkdayTH").text(TotalOfficeDays);
+	$("#HolidaysTH").text(GtotalHolidays);	
+	
+	var start= $("#attendance-reportFrom").datepicker("getDate");
+    var end= $("#attendance-reportTo").datepicker("getDate");
+   		days = (end- start) / (1000 * 60 * 60 * 24);
+   	GOfficeDays= (Math.round(days)+1);
+   	LoadAllHolidays();
+   	
+   	$('#attendencedateValue').val("");
+	var AttendanceDate = $("#attendance-reportFrom").val();
+	var date_attendancTday = moment($("#attendance-reportFrom").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+	var date_attendancEnd = moment($("#attendance-reportTo").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+	$('#daydate').text($.datepicker.formatDate('D, dd', new Date(date_attendancTday))); 
+	$('#monthhyear').text($.datepicker.formatDate('M  yy', new Date(date_attendancTday)));
+	
+	var restquery='';
+	var AttendanceChips='';
+	if($('#OfficeLoc').val() != "All" )
+	{
+		restquery += "and OfficeLocation eq '"+$('#OfficeLoc').val()+"' ";
+	   	AttendanceChips +="<div class='upload-chip'>"+$('#OfficeLoc option:selected').text()+"</div>";		 
+	}	
+	if($('#DepartmentDDL').val() != "All" )
+	{
+		restquery += "and Department eq '"+$('#DepartmentDDL').val()+"' ";
+		AttendanceChips +="<div class='upload-chip'>"+$('#DepartmentDDL option:selected').text()+"</div>";		 
+	}	
+	var ManagerID = ensureUser($('#Manager').children().children().attr('id'))
+	var EmployeeID = ensureUser($('#Employee').children().children().attr('id'))
+
+	if(ManagerID != 0)
+	{
+		restquery += "and ManagerLoginName eq '"+ManagerID+"' ";
+		AttendanceChips +="<div class='upload-chip'>"+GetUserTitle($('#Manager').children().children().attr('id'))+"</div>";		
+	}
+	if(EmployeeID != 0)
+	{
+		restquery += "and LogonName/ID eq '"+EmployeeID+"' ";
+		AttendanceChips +="<div class='upload-chip'>"+GetUserTitle($('#Employee').children().children().attr('id'))+"</div>";				
+	}	
+	
+	$("#chips").empty();
+	$("#chips").append(AttendanceChips);
+	
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmpAttendance')/items?$select=HrAction,ID,Title,WorkHours,AttendanceDate,AttendanceType,Employee/Title,Employee/ID&$Expand=Employee&$top=5000&$filter=AttendanceDate ge '"+date_attendancTday+"' and AttendanceDate le '"+date_attendancEnd+"' ";
+	$.when(getFileData(requestUri)).done(function (ProcessListResult) {
+		var Ownurl = _spPageContextInfo.webAbsoluteUrl +"/_api/web/lists/GetByTitle('Employees')/items?$top=5000&$select=ID,FullName,Designation,LogonName/ID,LogonName/Title,ManagerLoginName/Title,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department&$filter=Status eq 'Active' and Company/ID  eq '" + GCompanyId +"'"+restquery;
+		EmployeeListDat(Ownurl);
+	});
+}
+
+var TempStore=[];
+var unique ="";
+function getFileData(requestUri) {
+	jQuery.ajax({  
+	url: requestUri,
+    headers: { Accept: "application/json;odata=verbose" },
+		async: false,
+		success: function (data)
+		{  
+			EmpAttendanceData =[];     
+			var items = data.d.results;
+			if(items.length > 0) 
+			{
+				TempStore=[];
+				for (var i = 0; i < items.length; i++)  
+				{ 
+					TempStore.push(items[i].Employee.ID);					
+				}
+				unique = TempStore.filter(function(itm, i, TempStore) {
+    				return i == TempStore.indexOf(itm);
+				});
+				if(unique.length>0)
+				{					
+					EmpAttendanceData =[]; 
+					for(var j=0; j<unique.length; j++)
+					{	
+						var workhours = 0;
+						var AttendancDays=[];
+						var LeavesDay=[];
+						var date_attendancTday = moment($("#attendance-reportFrom").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+						var date_attendancEnd = moment($("#attendance-reportTo").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+						var EmployeeID = unique[j];
+						var requestUri4Emp = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmpAttendance')/items?$select=HrAction,ID,Title,WorkHours,AttendanceDate,AttendanceType,Employee/Title,Employee/ID&$Expand=Employee&$top=5000&$filter=AttendanceDate ge '"+date_attendancTday+"' and AttendanceDate le '"+date_attendancEnd+"' and Employee eq '"+EmployeeID+"' ";
+
+						jQuery.ajax({  
+						url: requestUri4Emp,
+    					headers: { Accept: "application/json;odata=verbose" },
+						async: false,
+						success: function (data)
+						{  							    
+							var items = data.d.results;
+							if(items.length > 0) 
+							{
+								for (var k = 0; k < items.length; k++)  
+								{ 
+									var itemid = items[k].ID;
+									var EmployeeName = items[k].Employee.Title;
+									var EmpId = items[k].Employee.ID;
+									var attendDate = items[k].AttendanceDate;
+									var attendType = items[k].AttendanceType;
+									if(attendType == "Full Day" || attendType == "1st Half" || attendType == "2nd Half")
+									{
+										AttendancDays.push(attendType);
+									}
+									else if(attendType == "On Leave")
+									{
+										LeavesDay.push(attendType);
+									}
+									if(items[k].WorkHours != null)
+									{
+										workhours  = parseInt(workhours)+parseInt(items[k].WorkHours);
+									}
+									var HrAction = items[k].HrAction;
+									var TotalActiveDays = parseInt(AttendancDays.length)+parseInt(LeavesDay.length);
+									var NotActionDays = parseInt(TotalOfficeDays)-parseInt(TotalActiveDays);
+									if(NotActionDays < 0)
+									{
+										NotActionDays = 0;
+									}								
+								}
+								var percentage = Math.round(((parseInt(TotalActiveDays) / parseInt(TotalOfficeDays)) * 100)) +"%";
+								if(TotalOfficeDays == "0")
+								{
+									percentage = "-";
+								}
+								
+								EmpAttendanceData.push({UserId : EmpId,EmpName:EmployeeName, AttendanceDate : attendDate, AttendanceType : attendType, AttendanceItemId : itemid, EmpWorkHours : workhours,HrAction:HrAction,AttendancDays:AttendancDays.length,LeavesDay:LeavesDay.length,NotActionDays:NotActionDays,percentage:percentage});       
+							}
+						}, 
+						error: function (request, error) 
+						{  
+							console.log(JSON.stringify(request));  
+						}  
+						});  
+					}
+				}			  
+			}
+		}, 
+		error: function (request, error) 
+		{  
+			console.log(JSON.stringify(request));  
+		}  
+	});  
+}
+
+
+function EmployeeListDat(Ownurl)
+{
+	$.ajax({  
+	url: Ownurl,  
+	headers: { Accept: "application/json;odata=verbose" },  
+    async:false,  
+	success: function (data) 
+	{
+		var items = data.d.results;
+		$("#ReportTable").empty();
+        var tableItemsHTML = "";
+        if(items.length>0)
+        {   
+        	var TotalPresent=0;
+        	var Totalnotspecific=0; 
+        	var TotalOnLeave=0;        	
+        	for (var i = 0; i < items.length; i++) 
+            {   				
+				var DataID = items[i].ID;
+				var EID = items[i].LogonName.ID;
+                var EmployeeName = items[i].LogonName.Title;	
+                var Designation = items[i].Designation;	
+                var Department= items[i].Department.DepartmentName;
+                var Manager= items[i].ManagerLoginName.Title;
+                	if(Manager == undefined)
+                	{
+                		Manager = "";
+                	}
+				var AttendeeTotalWhour='00:00 (H:M)';
+                var attenItemId='';
+                var colorcode = "black";  
+                if(Designation == null)
+                {
+					Designation ='';
+                }	
+                var OfficeLocation = items[i].OfficeLocation.OfficeName;	
+				if(OfficeLocation==null)
+                {
+					OfficeLocation ='';
+                }
+                EmployeeId= items[i].LogonName.ID;
+                var StartDate = moment($("#attendance-reportFrom").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+                        var EndDate = moment($("#attendance-reportTo").val(),'DD/MM/YYYY').format('YYYY-MM-DD');   
+                        
+						var StartDate =StartDate.split('-').join('');
+                        var EndDate = EndDate.split('-').join(''); 
+                var RedirectLink = _spPageContextInfo.webServerRelativeUrl + "/Pages/EmployeeReport.aspx?EID="+EID+"&start="+StartDate+"&end="+EndDate+"&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Report.aspx#";
+
+                var IsUserInEmpAttendanceGroup = EmpAttendanceData.map(function(e) { return e.UserId; }).indexOf(EmployeeId);
+                if(IsUserInEmpAttendanceGroup!=-1)
+                {
+					//if($('#AttendanceType').val() != "Not Specified")
+                    //{
+						var userId = EmpAttendanceData[IsUserInEmpAttendanceGroup].UserId; 
+                        var Attendance = EmpAttendanceData[IsUserInEmpAttendanceGroup].AttendanceType;
+                        var AttendItemId = EmpAttendanceData[IsUserInEmpAttendanceGroup].AttendanceItemId;
+							AttendeeTotalWhour = EmpAttendanceData[IsUserInEmpAttendanceGroup].EmpWorkHours;
+                        var attendhour = EmpAttendanceData[IsUserInEmpAttendanceGroup].EmpWorkHours;
+                            attenItemId = EmpAttendanceData[IsUserInEmpAttendanceGroup].AttendanceItemId;
+                        var AttendancDays = EmpAttendanceData[IsUserInEmpAttendanceGroup].AttendancDays;
+                        var LeavesDay = EmpAttendanceData[IsUserInEmpAttendanceGroup].LeavesDay;
+                        var NotActionDays =EmpAttendanceData[IsUserInEmpAttendanceGroup].NotActionDays;
+                        var percentage = EmpAttendanceData[IsUserInEmpAttendanceGroup].percentage;
+                        var chkboxtrue='';
+            			if(EmpAttendanceData[IsUserInEmpAttendanceGroup].HrAction == true){ chkboxtrue = "checked"; }
+            			else { chkboxtrue = ""; }
+            			
+						if(AttendeeTotalWhour==null) { AttendeeTotalWhour='00:00 (H:M)' }
+                        if(Attendance == "On Leave")
+                        {
+                            colorcode = "red";
+                            TotalOnLeave++
+                        }
+                        if(Attendance == "Holiday") {colorcode = "blue"; }
+                        //var StartDate = moment($("#attendance-reportFrom").val(),'DD/MM/YYYY').format('YYYY-MM-DD');
+                        //var EndDate = moment($("#attendance-reportTo").val(),'DD/MM/YYYY').format('YYYY-MM-DD');   
+                        
+						//var StartDate =StartDate.split('-').join('');
+                        //var EndDate = EndDate.split('-').join('');       
+                                             
+                        //var RedirectLink = _spPageContextInfo.webServerRelativeUrl + "/Pages/EmployeeReport.aspx?EID="+EID+"&start="+StartDate+"&end="+EndDate+"&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Report.aspx#";
+
+						tableItemsHTML += "<tr class='text-center'>";
+						tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+EmployeeName+"</div></td>";
+						tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+Designation +"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+Department+"</div></td>";
+						tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+Manager+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+AttendancDays+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+NotActionDays+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+LeavesDay+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+ConvertHHMM(AttendeeTotalWhour)+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+percentage+"</div></td>";
+						tableItemsHTML += "<td><div class='attendance-report-edit-lock-btn-box text-center'><a href='"+RedirectLink+"' class='custom-edit-btn'><i class='fa fa-chevron-right'></i></a></div></td>";
+						tableItemsHTML += "</tr>";
+					//}
+                }
+                else
+                {
+					tableItemsHTML += "<tr class='text-center'>";
+					tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+EmployeeName+"</div></td>";
+					tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+Designation +"</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+Department+"</div></td>";
+					tableItemsHTML += "<td class='text-left'><div class='attendance-report-table-ellipsis-2'>"+Manager+"</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>0</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>"+TotalOfficeDays+"</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>0</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>00:00</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-table-ellipsis-2'>-</div></td>";
+					tableItemsHTML += "<td><div class='attendance-report-edit-lock-btn-box text-center'><a href='"+RedirectLink+"' class='custom-edit-btn'><i class='fa fa-chevron-right'></i></a></div></td>";
+					tableItemsHTML += "</tr>";
+                }
+            }
+		}
+		else
+        {
+        }
+
+		if (items.length == 0) 
+        {
+			$(".NoRecordFound").show();
+        }
+        else
+        {
+			$(".NoRecordFound").hide();
+        }
+        
+        $("#ReportTable").append(tableItemsHTML);
+                 
+		var totalRowCount =  $('#ReportTableData>tbody >tr').length;
+		$("#TotalItemscount").text(totalRowCount);
+		$("#totalemp").text(totalRowCount);
+        if (totalRowCount >0) 
+		{
+	        ReportTableConfiguration();	      
+		}
+	},
+	error: function (data) 
+	{		
+		console.log(data);  
+	}  
+	});
+}
+
+
+function ReportTableConfiguration()
+{
+    sorter = new TINY.table.sorter('sorter', 'ReportTableData', {
+       // headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columns',
+        currentid: 'Repcurrentpage',
+        totalid: 'Reptotalpages',
+        startingrecid: 'Repstartrecord',
+        endingrecid: 'Rependrecord',
+        totalrecid: 'Reptotalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pagedropdown',
+        navid: 'tablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+                
+    });
+}
+
+
+function ConvertHHMM(TotalMinutes)
+{
+	var hours = Math.floor(TotalMinutes/ 60);          
+	var minutes = TotalMinutes% 60;
+		if(hours<10)
+		{
+			hours="0"+hours;
+		}
+		
+		if(minutes<10)
+		{
+			minutes = "0"+minutes;
+		}
+	
+	var TimeFormat=hours+":"+minutes;	
+	
+	return TimeFormat;	
+}
+
+function CloseModel()
+{
+	initializePeoplePicker("Manager"); 
+	initializePeoplePicker("Employee"); 
+}
+
+
+var tableToExcel = (function() {
+  var uri = 'data:application/vnd.ms-excel;base64,'
+    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+    , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+    , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+  return function(table, name) {
+    if (!table.nodeType) table = document.getElementById(table)
+    var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}
+    window.location.href = uri + base64(format(template, ctx))
+  }
+})()
+

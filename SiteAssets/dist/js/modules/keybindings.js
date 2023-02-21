@@ -1,1 +1,382 @@
-var a32_0xbf9ca8=a32_0x4ade;function a32_0x4ade(_0x40e31f,_0x3d72a1){var _0x160d31=a32_0x160d();return a32_0x4ade=function(_0x4ade4f,_0xb146e6){_0x4ade4f=_0x4ade4f-0xef;var _0x38764d=_0x160d31[_0x4ade4f];return _0x38764d;},a32_0x4ade(_0x40e31f,_0x3d72a1);}function a32_0x160d(){var _0x54393c=['toString','pressedKeys','scrollHeight','ctrlKey','keydown','ctrl\x20+\x2089','modExists','split','right','35536518xpegBx','rowManager','height','keyup','copy','shift\x20+\x209','next','Key\x20Binding\x20Error\x20-\x20no\x20such\x20action:','shift','length','15XsIehx','stopPropagation','scrollTop','edit','getDisplayRows','prototype','keybindings','ctrl\x20+\x2090','6WtXidl','initialize','keyCode','indexOf','table','keyupBinding','3173600wacVjO','1840408NWiwha','push','mapBinding','redo','shiftKey','registerModule','scrollToRow','row','nav','element','actions','join','iterator','10AbdwyA','ctrl\x20+\x2067','preventDefault','toLowerCase','warn','4920906WJJXsa','history','checkBinding','prev','left','bindEvents','ctrl','3340939uZBeKw','down','options','addEventListener','mapBindings','watchKeys','displayRowsCount','modules','forEach','bindings','splice','removeEventListener','keydownBinding','selected','currentCell','240148cLXhYc','focus','keys','tabEndNewRow','function','clipboard','clearBindings','addRow','14274544JKpPdV'];a32_0x160d=function(){return _0x54393c;};return a32_0x160d();}(function(_0x2629cd,_0x2dca91){var _0x427707=a32_0x4ade,_0x143595=_0x2629cd();while(!![]){try{var _0x1de080=-parseInt(_0x427707(0x133))/0x1+parseInt(_0x427707(0x132))/0x2+-parseInt(_0x427707(0xf2))/0x3+parseInt(_0x427707(0x108))/0x4*(parseInt(_0x427707(0x124))/0x5)+parseInt(_0x427707(0x12c))/0x6*(parseInt(_0x427707(0xf9))/0x7)+-parseInt(_0x427707(0x110))/0x8+-parseInt(_0x427707(0x11a))/0x9*(-parseInt(_0x427707(0x140))/0xa);if(_0x1de080===_0x2dca91)break;else _0x143595['push'](_0x143595['shift']());}catch(_0x289754){_0x143595['push'](_0x143595['shift']());}}}(a32_0x160d,0xe27ae));var _typeof=typeof Symbol===a32_0xbf9ca8(0x10c)&&typeof Symbol[a32_0xbf9ca8(0x13f)]==='symbol'?function(_0x414151){return typeof _0x414151;}:function(_0x420c84){var _0x3e299f=a32_0xbf9ca8;return _0x420c84&&typeof Symbol===_0x3e299f(0x10c)&&_0x420c84['constructor']===Symbol&&_0x420c84!==Symbol['prototype']?'symbol':typeof _0x420c84;},Keybindings=function Keybindings(_0x4faaa2){var _0x472fc4=a32_0xbf9ca8;this[_0x472fc4(0x130)]=_0x4faaa2,this[_0x472fc4(0xfe)]=null,this['pressedKeys']=null,this['keyupBinding']=![],this[_0x472fc4(0x105)]=![];};Keybindings[a32_0xbf9ca8(0x129)][a32_0xbf9ca8(0x12d)]=function(){var _0x2b2253=a32_0xbf9ca8,_0x338fb8=this[_0x2b2253(0x130)]['options']['keybindings'],_0x11216c={};this['watchKeys']={},this['pressedKeys']=[];if(_0x338fb8!==![]){for(var _0x4a9042 in this[_0x2b2253(0x102)]){_0x11216c[_0x4a9042]=this[_0x2b2253(0x102)][_0x4a9042];}if(Object[_0x2b2253(0x10a)](_0x338fb8)[_0x2b2253(0x123)])for(var _0x532775 in _0x338fb8){_0x11216c[_0x532775]=_0x338fb8[_0x532775];}this[_0x2b2253(0xfd)](_0x11216c),this[_0x2b2253(0xf7)]();}},Keybindings[a32_0xbf9ca8(0x129)][a32_0xbf9ca8(0xfd)]=function(_0xabb57a){var _0x5cfe4c=this,_0x4d4618=this,_0x5d4cfa=function _0x158096(_0x2c8323){var _0x264c90=a32_0x4ade;_0x5cfe4c['actions'][_0x2c8323]?_0xabb57a[_0x2c8323]&&(_typeof(_0xabb57a[_0x2c8323])!=='object'&&(_0xabb57a[_0x2c8323]=[_0xabb57a[_0x2c8323]]),_0xabb57a[_0x2c8323][_0x264c90(0x101)](function(_0x33a881){var _0x51b152=_0x264c90;_0x4d4618[_0x51b152(0x135)](_0x2c8323,_0x33a881);})):console[_0x264c90(0xf1)](_0x264c90(0x121),_0x2c8323);};for(var _0x41d1d6 in _0xabb57a){_0x5d4cfa(_0x41d1d6);}},Keybindings[a32_0xbf9ca8(0x129)]['mapBinding']=function(_0x4d43a3,_0xec5d72){var _0x2287a5=a32_0xbf9ca8,_0x48f29d=this,_0x486957={'action':this[_0x2287a5(0x13d)][_0x4d43a3],'keys':[],'ctrl':![],'shift':![]},_0x2e2f65=_0xec5d72[_0x2287a5(0x111)]()[_0x2287a5(0xf0)]()[_0x2287a5(0x118)]('\x20')[_0x2287a5(0x13e)]('')[_0x2287a5(0x118)]('+');_0x2e2f65[_0x2287a5(0x101)](function(_0x34cb91){var _0x168623=_0x2287a5;switch(_0x34cb91){case _0x168623(0xf8):_0x486957['ctrl']=!![];break;case'shift':_0x486957[_0x168623(0x122)]=!![];break;default:_0x34cb91=parseInt(_0x34cb91),_0x486957[_0x168623(0x10a)]['push'](_0x34cb91);!_0x48f29d[_0x168623(0xfe)][_0x34cb91]&&(_0x48f29d[_0x168623(0xfe)][_0x34cb91]=[]);_0x48f29d[_0x168623(0xfe)][_0x34cb91][_0x168623(0x134)](_0x486957);}});},Keybindings[a32_0xbf9ca8(0x129)][a32_0xbf9ca8(0xf7)]=function(){var _0x2b6f53=a32_0xbf9ca8,_0x22c1f6=this;this['keyupBinding']=function(_0x221ab3){var _0x490f45=a32_0x4ade,_0x475129=_0x221ab3['keyCode'],_0x14787d=_0x22c1f6[_0x490f45(0xfe)][_0x475129];_0x14787d&&(_0x22c1f6[_0x490f45(0x112)][_0x490f45(0x134)](_0x475129),_0x14787d[_0x490f45(0x101)](function(_0x9033e0){var _0x1d6c5f=_0x490f45;_0x22c1f6[_0x1d6c5f(0xf4)](_0x221ab3,_0x9033e0);}));},this[_0x2b6f53(0x105)]=function(_0x7a9d97){var _0xace28d=_0x2b6f53,_0x301784=_0x7a9d97[_0xace28d(0x12e)],_0x20084b=_0x22c1f6['watchKeys'][_0x301784];if(_0x20084b){var _0x1a67b7=_0x22c1f6['pressedKeys'][_0xace28d(0x12f)](_0x301784);_0x1a67b7>-0x1&&_0x22c1f6[_0xace28d(0x112)][_0xace28d(0x103)](_0x1a67b7,0x1);}},this['table'][_0x2b6f53(0x13c)][_0x2b6f53(0xfc)](_0x2b6f53(0x115),this[_0x2b6f53(0x131)]),this[_0x2b6f53(0x130)][_0x2b6f53(0x13c)][_0x2b6f53(0xfc)](_0x2b6f53(0x11d),this[_0x2b6f53(0x105)]);},Keybindings[a32_0xbf9ca8(0x129)][a32_0xbf9ca8(0x10e)]=function(){var _0x4d18d7=a32_0xbf9ca8;this['keyupBinding']&&this[_0x4d18d7(0x130)]['element'][_0x4d18d7(0x104)](_0x4d18d7(0x115),this[_0x4d18d7(0x131)]),this[_0x4d18d7(0x105)]&&this['table'][_0x4d18d7(0x13c)][_0x4d18d7(0x104)]('keyup',this[_0x4d18d7(0x105)]);},Keybindings['prototype']['checkBinding']=function(_0x33fc84,_0x3049fa){var _0x40241a=a32_0xbf9ca8,_0x4deb45=this,_0x1debc8=!![];if(_0x33fc84[_0x40241a(0x114)]==_0x3049fa[_0x40241a(0xf8)]&&_0x33fc84[_0x40241a(0x137)]==_0x3049fa[_0x40241a(0x122)])return _0x3049fa['keys'][_0x40241a(0x101)](function(_0x32a1d0){var _0x5be31d=_0x40241a,_0x150af4=_0x4deb45['pressedKeys'][_0x5be31d(0x12f)](_0x32a1d0);_0x150af4==-0x1&&(_0x1debc8=![]);}),_0x1debc8&&_0x3049fa['action']['call'](_0x4deb45,_0x33fc84),!![];return![];},Keybindings[a32_0xbf9ca8(0x129)][a32_0xbf9ca8(0x102)]={'navPrev':a32_0xbf9ca8(0x11f),'navNext':0x9,'navUp':0x26,'navDown':0x28,'scrollPageUp':0x21,'scrollPageDown':0x22,'scrollToStart':0x24,'scrollToEnd':0x23,'undo':a32_0xbf9ca8(0x12b),'redo':a32_0xbf9ca8(0x116),'copyToClipboard':a32_0xbf9ca8(0x141)},Keybindings[a32_0xbf9ca8(0x129)]['actions']={'keyBlock':function keyBlock(_0x299a42){var _0x4012b6=a32_0xbf9ca8;_0x299a42[_0x4012b6(0x125)](),_0x299a42[_0x4012b6(0xef)]();},'scrollPageUp':function scrollPageUp(_0x109eec){var _0x326238=a32_0xbf9ca8,_0x13bdf4=this['table'][_0x326238(0x11b)],_0x474307=_0x13bdf4[_0x326238(0x126)]-_0x13bdf4[_0x326238(0x11c)],_0x5ffc17=_0x13bdf4[_0x326238(0x13c)]['scrollHeight'];_0x109eec[_0x326238(0xef)](),_0x13bdf4[_0x326238(0xff)]&&(_0x474307>=0x0?_0x13bdf4['element'][_0x326238(0x126)]=_0x474307:_0x13bdf4[_0x326238(0x139)](_0x13bdf4['getDisplayRows']()[0x0])),this[_0x326238(0x130)]['element'][_0x326238(0x109)]();},'scrollPageDown':function scrollPageDown(_0x582d97){var _0x4d9788=a32_0xbf9ca8,_0x3b7985=this[_0x4d9788(0x130)][_0x4d9788(0x11b)],_0x186443=_0x3b7985[_0x4d9788(0x126)]+_0x3b7985[_0x4d9788(0x11c)],_0x123ba6=_0x3b7985['element'][_0x4d9788(0x113)];_0x582d97[_0x4d9788(0xef)](),_0x3b7985[_0x4d9788(0xff)]&&(_0x186443<=_0x123ba6?_0x3b7985['element'][_0x4d9788(0x126)]=_0x186443:_0x3b7985[_0x4d9788(0x139)](_0x3b7985[_0x4d9788(0x128)]()[_0x3b7985[_0x4d9788(0xff)]-0x1])),this[_0x4d9788(0x130)]['element'][_0x4d9788(0x109)]();},'scrollToStart':function scrollToStart(_0x5724a8){var _0x529755=a32_0xbf9ca8,_0x12e5a2=this['table'][_0x529755(0x11b)];_0x5724a8[_0x529755(0xef)](),_0x12e5a2[_0x529755(0xff)]&&_0x12e5a2[_0x529755(0x139)](_0x12e5a2[_0x529755(0x128)]()[0x0]),this['table'][_0x529755(0x13c)]['focus']();},'scrollToEnd':function scrollToEnd(_0x367bc5){var _0x2bc617=a32_0xbf9ca8,_0x16a95b=this[_0x2bc617(0x130)]['rowManager'];_0x367bc5[_0x2bc617(0xef)](),_0x16a95b[_0x2bc617(0xff)]&&_0x16a95b['scrollToRow'](_0x16a95b[_0x2bc617(0x128)]()[_0x16a95b[_0x2bc617(0xff)]-0x1]),this[_0x2bc617(0x130)][_0x2bc617(0x13c)][_0x2bc617(0x109)]();},'navPrev':function navPrev(_0x3a9601){var _0x514802=a32_0xbf9ca8,_0x4128ae=![];this[_0x514802(0x130)]['modExists'](_0x514802(0x127))&&(_0x4128ae=this[_0x514802(0x130)][_0x514802(0x100)]['edit'][_0x514802(0x107)],_0x4128ae&&(_0x3a9601['preventDefault'](),_0x4128ae[_0x514802(0x13b)]()[_0x514802(0xf5)]()));},'navNext':function navNext(_0x256c3b){var _0x25cd80=a32_0xbf9ca8,_0x18e20b=![],_0x4be41f=this[_0x25cd80(0x130)]['options'][_0x25cd80(0x10b)],_0x4430c9;this['table'][_0x25cd80(0x117)](_0x25cd80(0x127))&&(_0x18e20b=this['table'][_0x25cd80(0x100)]['edit']['currentCell'],_0x18e20b&&(_0x256c3b[_0x25cd80(0xef)](),_0x4430c9=_0x18e20b[_0x25cd80(0x13b)](),!_0x4430c9[_0x25cd80(0x120)]()&&(_0x4be41f&&(_0x4be41f===!![]?_0x4be41f=this['table'][_0x25cd80(0x10f)]({}):typeof _0x4be41f=='function'?_0x4be41f=this['table'][_0x25cd80(0x10f)](_0x4be41f(_0x18e20b[_0x25cd80(0x13a)]['getComponent']())):_0x4be41f=this['table'][_0x25cd80(0x10f)](_0x4be41f),_0x4be41f['then'](function(){var _0x57bd3=_0x25cd80;_0x4430c9[_0x57bd3(0x120)]();})))));},'navLeft':function navLeft(_0x28b250){var _0x3e98ee=a32_0xbf9ca8,_0x4458ad=![];this[_0x3e98ee(0x130)][_0x3e98ee(0x117)](_0x3e98ee(0x127))&&(_0x4458ad=this[_0x3e98ee(0x130)][_0x3e98ee(0x100)][_0x3e98ee(0x127)][_0x3e98ee(0x107)],_0x4458ad&&(_0x28b250[_0x3e98ee(0xef)](),_0x4458ad[_0x3e98ee(0x13b)]()[_0x3e98ee(0xf6)]()));},'navRight':function navRight(_0x2f7ab5){var _0x3eca34=a32_0xbf9ca8,_0x56e559=![];this[_0x3eca34(0x130)]['modExists'](_0x3eca34(0x127))&&(_0x56e559=this['table']['modules'][_0x3eca34(0x127)][_0x3eca34(0x107)],_0x56e559&&(_0x2f7ab5[_0x3eca34(0xef)](),_0x56e559[_0x3eca34(0x13b)]()[_0x3eca34(0x119)]()));},'navUp':function navUp(_0x13e3cc){var _0x50733b=a32_0xbf9ca8,_0x3f7e59=![];this[_0x50733b(0x130)]['modExists'](_0x50733b(0x127))&&(_0x3f7e59=this[_0x50733b(0x130)][_0x50733b(0x100)][_0x50733b(0x127)]['currentCell'],_0x3f7e59&&(_0x13e3cc[_0x50733b(0xef)](),_0x3f7e59['nav']()['up']()));},'navDown':function navDown(_0x11f2c3){var _0x3a1b4f=a32_0xbf9ca8,_0x1f02a1=![];this[_0x3a1b4f(0x130)]['modExists'](_0x3a1b4f(0x127))&&(_0x1f02a1=this[_0x3a1b4f(0x130)][_0x3a1b4f(0x100)][_0x3a1b4f(0x127)][_0x3a1b4f(0x107)],_0x1f02a1&&(_0x11f2c3[_0x3a1b4f(0xef)](),_0x1f02a1[_0x3a1b4f(0x13b)]()[_0x3a1b4f(0xfa)]()));},'undo':function undo(_0x8d87ee){var _0x5bf3b5=a32_0xbf9ca8,_0x360219=![];this[_0x5bf3b5(0x130)]['options'][_0x5bf3b5(0xf3)]&&this['table'][_0x5bf3b5(0x117)](_0x5bf3b5(0xf3))&&this[_0x5bf3b5(0x130)][_0x5bf3b5(0x117)]('edit')&&(_0x360219=this[_0x5bf3b5(0x130)]['modules'][_0x5bf3b5(0x127)][_0x5bf3b5(0x107)],!_0x360219&&(_0x8d87ee['preventDefault'](),this['table']['modules'][_0x5bf3b5(0xf3)]['undo']()));},'redo':function redo(_0x4e9035){var _0x1913f2=a32_0xbf9ca8,_0x425557=![];this[_0x1913f2(0x130)]['options']['history']&&this[_0x1913f2(0x130)][_0x1913f2(0x117)]('history')&&this[_0x1913f2(0x130)][_0x1913f2(0x117)](_0x1913f2(0x127))&&(_0x425557=this[_0x1913f2(0x130)]['modules'][_0x1913f2(0x127)][_0x1913f2(0x107)],!_0x425557&&(_0x4e9035['preventDefault'](),this[_0x1913f2(0x130)][_0x1913f2(0x100)]['history'][_0x1913f2(0x136)]()));},'copyToClipboard':function copyToClipboard(_0x4081ea){var _0x34a722=a32_0xbf9ca8;!this['table']['modules'][_0x34a722(0x127)][_0x34a722(0x107)]&&(this[_0x34a722(0x130)][_0x34a722(0x117)](_0x34a722(0x10d),!![])&&this[_0x34a722(0x130)][_0x34a722(0x100)][_0x34a722(0x10d)][_0x34a722(0x11e)](!this[_0x34a722(0x130)][_0x34a722(0xfb)]['selectable']||this[_0x34a722(0x130)][_0x34a722(0xfb)]['selectable']=='highlight'?'active':_0x34a722(0x106),null,null,null,!![]));}},Tabulator['prototype'][a32_0xbf9ca8(0x138)](a32_0xbf9ca8(0x12a),Keybindings);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Keybindings = function Keybindings(table) {
+	this.table = table; //hold Tabulator object
+	this.watchKeys = null;
+	this.pressedKeys = null;
+	this.keyupBinding = false;
+	this.keydownBinding = false;
+};
+
+Keybindings.prototype.initialize = function () {
+	var bindings = this.table.options.keybindings,
+	    mergedBindings = {};
+
+	this.watchKeys = {};
+	this.pressedKeys = [];
+
+	if (bindings !== false) {
+
+		for (var key in this.bindings) {
+			mergedBindings[key] = this.bindings[key];
+		}
+
+		if (Object.keys(bindings).length) {
+
+			for (var _key in bindings) {
+				mergedBindings[_key] = bindings[_key];
+			}
+		}
+
+		this.mapBindings(mergedBindings);
+		this.bindEvents();
+	}
+};
+
+Keybindings.prototype.mapBindings = function (bindings) {
+	var _this = this;
+
+	var self = this;
+
+	var _loop = function _loop(key) {
+
+		if (_this.actions[key]) {
+
+			if (bindings[key]) {
+
+				if (_typeof(bindings[key]) !== "object") {
+					bindings[key] = [bindings[key]];
+				}
+
+				bindings[key].forEach(function (binding) {
+					self.mapBinding(key, binding);
+				});
+			}
+		} else {
+			console.warn("Key Binding Error - no such action:", key);
+		}
+	};
+
+	for (var key in bindings) {
+		_loop(key);
+	}
+};
+
+Keybindings.prototype.mapBinding = function (action, symbolsList) {
+	var self = this;
+
+	var binding = {
+		action: this.actions[action],
+		keys: [],
+		ctrl: false,
+		shift: false
+	};
+
+	var symbols = symbolsList.toString().toLowerCase().split(" ").join("").split("+");
+
+	symbols.forEach(function (symbol) {
+		switch (symbol) {
+			case "ctrl":
+				binding.ctrl = true;
+				break;
+
+			case "shift":
+				binding.shift = true;
+				break;
+
+			default:
+				symbol = parseInt(symbol);
+				binding.keys.push(symbol);
+
+				if (!self.watchKeys[symbol]) {
+					self.watchKeys[symbol] = [];
+				}
+
+				self.watchKeys[symbol].push(binding);
+		}
+	});
+};
+
+Keybindings.prototype.bindEvents = function () {
+	var self = this;
+
+	this.keyupBinding = function (e) {
+		var code = e.keyCode;
+		var bindings = self.watchKeys[code];
+
+		if (bindings) {
+
+			self.pressedKeys.push(code);
+
+			bindings.forEach(function (binding) {
+				self.checkBinding(e, binding);
+			});
+		}
+	};
+
+	this.keydownBinding = function (e) {
+		var code = e.keyCode;
+		var bindings = self.watchKeys[code];
+
+		if (bindings) {
+
+			var index = self.pressedKeys.indexOf(code);
+
+			if (index > -1) {
+				self.pressedKeys.splice(index, 1);
+			}
+		}
+	};
+
+	this.table.element.addEventListener("keydown", this.keyupBinding);
+
+	this.table.element.addEventListener("keyup", this.keydownBinding);
+};
+
+Keybindings.prototype.clearBindings = function () {
+	if (this.keyupBinding) {
+		this.table.element.removeEventListener("keydown", this.keyupBinding);
+	}
+
+	if (this.keydownBinding) {
+		this.table.element.removeEventListener("keyup", this.keydownBinding);
+	}
+};
+
+Keybindings.prototype.checkBinding = function (e, binding) {
+	var self = this,
+	    match = true;
+
+	if (e.ctrlKey == binding.ctrl && e.shiftKey == binding.shift) {
+		binding.keys.forEach(function (key) {
+			var index = self.pressedKeys.indexOf(key);
+
+			if (index == -1) {
+				match = false;
+			}
+		});
+
+		if (match) {
+			binding.action.call(self, e);
+		}
+
+		return true;
+	}
+
+	return false;
+};
+
+//default bindings
+Keybindings.prototype.bindings = {
+	navPrev: "shift + 9",
+	navNext: 9,
+	navUp: 38,
+	navDown: 40,
+	scrollPageUp: 33,
+	scrollPageDown: 34,
+	scrollToStart: 36,
+	scrollToEnd: 35,
+	undo: "ctrl + 90",
+	redo: "ctrl + 89",
+	copyToClipboard: "ctrl + 67"
+};
+
+//default actions
+Keybindings.prototype.actions = {
+	keyBlock: function keyBlock(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	},
+	scrollPageUp: function scrollPageUp(e) {
+		var rowManager = this.table.rowManager,
+		    newPos = rowManager.scrollTop - rowManager.height,
+		    scrollMax = rowManager.element.scrollHeight;
+
+		e.preventDefault();
+
+		if (rowManager.displayRowsCount) {
+			if (newPos >= 0) {
+				rowManager.element.scrollTop = newPos;
+			} else {
+				rowManager.scrollToRow(rowManager.getDisplayRows()[0]);
+			}
+		}
+
+		this.table.element.focus();
+	},
+	scrollPageDown: function scrollPageDown(e) {
+		var rowManager = this.table.rowManager,
+		    newPos = rowManager.scrollTop + rowManager.height,
+		    scrollMax = rowManager.element.scrollHeight;
+
+		e.preventDefault();
+
+		if (rowManager.displayRowsCount) {
+			if (newPos <= scrollMax) {
+				rowManager.element.scrollTop = newPos;
+			} else {
+				rowManager.scrollToRow(rowManager.getDisplayRows()[rowManager.displayRowsCount - 1]);
+			}
+		}
+
+		this.table.element.focus();
+	},
+	scrollToStart: function scrollToStart(e) {
+		var rowManager = this.table.rowManager;
+
+		e.preventDefault();
+
+		if (rowManager.displayRowsCount) {
+			rowManager.scrollToRow(rowManager.getDisplayRows()[0]);
+		}
+
+		this.table.element.focus();
+	},
+	scrollToEnd: function scrollToEnd(e) {
+		var rowManager = this.table.rowManager;
+
+		e.preventDefault();
+
+		if (rowManager.displayRowsCount) {
+			rowManager.scrollToRow(rowManager.getDisplayRows()[rowManager.displayRowsCount - 1]);
+		}
+
+		this.table.element.focus();
+	},
+	navPrev: function navPrev(e) {
+		var cell = false;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+				cell.nav().prev();
+			}
+		}
+	},
+
+	navNext: function navNext(e) {
+		var cell = false;
+		var newRow = this.table.options.tabEndNewRow;
+		var nav;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+
+				nav = cell.nav();
+
+				if (!nav.next()) {
+					if (newRow) {
+						if (newRow === true) {
+							newRow = this.table.addRow({});
+						} else {
+							if (typeof newRow == "function") {
+								newRow = this.table.addRow(newRow(cell.row.getComponent()));
+							} else {
+								newRow = this.table.addRow(newRow);
+							}
+						}
+
+						newRow.then(function () {
+							nav.next();
+						});
+					}
+				}
+			}
+		}
+	},
+
+	navLeft: function navLeft(e) {
+		var cell = false;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+				cell.nav().left();
+			}
+		}
+	},
+
+	navRight: function navRight(e) {
+		var cell = false;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+				cell.nav().right();
+			}
+		}
+	},
+
+	navUp: function navUp(e) {
+		var cell = false;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+				cell.nav().up();
+			}
+		}
+	},
+
+	navDown: function navDown(e) {
+		var cell = false;
+
+		if (this.table.modExists("edit")) {
+			cell = this.table.modules.edit.currentCell;
+
+			if (cell) {
+				e.preventDefault();
+				cell.nav().down();
+			}
+		}
+	},
+
+	undo: function undo(e) {
+		var cell = false;
+		if (this.table.options.history && this.table.modExists("history") && this.table.modExists("edit")) {
+
+			cell = this.table.modules.edit.currentCell;
+
+			if (!cell) {
+				e.preventDefault();
+				this.table.modules.history.undo();
+			}
+		}
+	},
+
+	redo: function redo(e) {
+		var cell = false;
+		if (this.table.options.history && this.table.modExists("history") && this.table.modExists("edit")) {
+
+			cell = this.table.modules.edit.currentCell;
+
+			if (!cell) {
+				e.preventDefault();
+				this.table.modules.history.redo();
+			}
+		}
+	},
+
+	copyToClipboard: function copyToClipboard(e) {
+		if (!this.table.modules.edit.currentCell) {
+			if (this.table.modExists("clipboard", true)) {
+				this.table.modules.clipboard.copy(!this.table.options.selectable || this.table.options.selectable == "highlight" ? "active" : "selected", null, null, null, true);
+			}
+		}
+	}
+};
+
+Tabulator.prototype.registerModule("keybindings", Keybindings);

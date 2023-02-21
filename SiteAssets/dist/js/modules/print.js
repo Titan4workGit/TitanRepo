@@ -1,1 +1,96 @@
-var a44_0xf8096b=a44_0x17da;function a44_0x7329(){var _0x451d95=['htmlTableExport','printVisibleRows','scrollX','style','insertBefore','3710696tlEpSF','innerHTML','printFormatter','options','192siJZmr','print','element','createElement','afterprint','50838pJnDZn','body','printHeader','cleanup','12755448Uelgsw','scrollTo','printFooter','parentNode','4366290QrcZwk','tabulator-print-header','addEventListener','function','removeChild','classList','manualBlock','add','60agEHdV','printConfig','bind','66guktum','modules','div','remove','undefined','185948XxLxHP','appendChild','call','string','tabulator-print-fullscreen','328655DISTin','none','5001495HZpvCV','prototype','replaceTable','genereateTable','tabulator-print-fullscreen-hide','printCopyStyle','beforeprint','table'];a44_0x7329=function(){return _0x451d95;};return a44_0x7329();}(function(_0x40566c,_0x562010){var _0x3aa6c3=a44_0x17da,_0x1ac63d=_0x40566c();while(!![]){try{var _0x4bae5a=-parseInt(_0x3aa6c3(0x158))/0x1*(-parseInt(_0x3aa6c3(0x16b))/0x2)+-parseInt(_0x3aa6c3(0x177))/0x3+-parseInt(_0x3aa6c3(0x14f))/0x4+parseInt(_0x3aa6c3(0x175))/0x5*(-parseInt(_0x3aa6c3(0x168))/0x6)+-parseInt(_0x3aa6c3(0x170))/0x7*(-parseInt(_0x3aa6c3(0x153))/0x8)+parseInt(_0x3aa6c3(0x15c))/0x9+parseInt(_0x3aa6c3(0x160))/0xa;if(_0x4bae5a===_0x562010)break;else _0x1ac63d['push'](_0x1ac63d['shift']());}catch(_0x4277ed){_0x1ac63d['push'](_0x1ac63d['shift']());}}}(a44_0x7329,0xdfdce));function a44_0x17da(_0x2b9470,_0x1e95df){var _0x73297d=a44_0x7329();return a44_0x17da=function(_0x17da3c,_0x10ce3d){_0x17da3c=_0x17da3c-0x14d;var _0x14902b=_0x73297d[_0x17da3c];return _0x14902b;},a44_0x17da(_0x2b9470,_0x1e95df);}var Print=function Print(_0x53a15a){var _0x5aa2f5=a44_0x17da;this[_0x5aa2f5(0x17e)]=_0x53a15a,this['element']=![],this[_0x5aa2f5(0x166)]=![];};Print[a44_0xf8096b(0x178)]['initialize']=function(){var _0x51c4c3=a44_0xf8096b;window[_0x51c4c3(0x162)](_0x51c4c3(0x17d),this['replaceTable'][_0x51c4c3(0x16a)](this)),window[_0x51c4c3(0x162)](_0x51c4c3(0x157),this['cleanup'][_0x51c4c3(0x16a)](this));},Print['prototype'][a44_0xf8096b(0x179)]=function(){var _0x3e5599=a44_0xf8096b;!this[_0x3e5599(0x166)]&&(this[_0x3e5599(0x155)]=document[_0x3e5599(0x156)](_0x3e5599(0x16d)),this[_0x3e5599(0x155)][_0x3e5599(0x165)]['add']('tabulator-print-table'),this[_0x3e5599(0x155)][_0x3e5599(0x171)](this[_0x3e5599(0x17e)][_0x3e5599(0x16c)][_0x3e5599(0x17f)][_0x3e5599(0x17a)](this[_0x3e5599(0x17e)][_0x3e5599(0x152)][_0x3e5599(0x169)],this[_0x3e5599(0x17e)][_0x3e5599(0x152)][_0x3e5599(0x17c)],this[_0x3e5599(0x17e)]['options'][_0x3e5599(0x180)],_0x3e5599(0x154))),this[_0x3e5599(0x17e)][_0x3e5599(0x155)][_0x3e5599(0x14d)]['display']=_0x3e5599(0x176),this[_0x3e5599(0x17e)]['element']['parentNode'][_0x3e5599(0x14e)](this['element'],this[_0x3e5599(0x17e)][_0x3e5599(0x155)]));},Print[a44_0xf8096b(0x178)][a44_0xf8096b(0x15b)]=function(){var _0x537380=a44_0xf8096b;document[_0x537380(0x159)][_0x537380(0x165)][_0x537380(0x16e)](_0x537380(0x17b)),this['element']&&this[_0x537380(0x155)]['parentNode']&&(this['element'][_0x537380(0x15f)][_0x537380(0x164)](this[_0x537380(0x155)]),this[_0x537380(0x17e)][_0x537380(0x155)][_0x537380(0x14d)]['display']='');},Print[a44_0xf8096b(0x178)]['printFullscreen']=function(_0x5baf18,_0x17d8a7,_0x56685a){var _0x4b7ae4=a44_0xf8096b,_0x409b88=window[_0x4b7ae4(0x181)],_0x111aeb=window['scrollY'],_0x203139=document[_0x4b7ae4(0x156)](_0x4b7ae4(0x16d)),_0x4ed823=document[_0x4b7ae4(0x156)](_0x4b7ae4(0x16d)),_0x547dd1=this[_0x4b7ae4(0x17e)]['modules'][_0x4b7ae4(0x17f)]['genereateTable'](typeof _0x56685a!='undefined'?_0x56685a:this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x169)],typeof _0x17d8a7!=_0x4b7ae4(0x16f)?_0x17d8a7:this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x17c)],_0x5baf18,'print'),_0x1aff19,_0x157ebe;this[_0x4b7ae4(0x166)]=!![],this[_0x4b7ae4(0x155)]=document['createElement'](_0x4b7ae4(0x16d)),this[_0x4b7ae4(0x155)][_0x4b7ae4(0x165)]['add'](_0x4b7ae4(0x174)),this['table']['options'][_0x4b7ae4(0x15a)]&&(_0x203139[_0x4b7ae4(0x165)]['add'](_0x4b7ae4(0x161)),_0x1aff19=typeof this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x15a)]==_0x4b7ae4(0x163)?this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x15a)][_0x4b7ae4(0x172)](this[_0x4b7ae4(0x17e)]):this['table'][_0x4b7ae4(0x152)][_0x4b7ae4(0x15a)],typeof _0x1aff19==_0x4b7ae4(0x173)?_0x203139[_0x4b7ae4(0x150)]=_0x1aff19:_0x203139[_0x4b7ae4(0x171)](_0x1aff19),this[_0x4b7ae4(0x155)][_0x4b7ae4(0x171)](_0x203139)),this[_0x4b7ae4(0x155)][_0x4b7ae4(0x171)](_0x547dd1),this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)]['printFooter']&&(_0x4ed823[_0x4b7ae4(0x165)][_0x4b7ae4(0x167)]('tabulator-print-footer'),_0x157ebe=typeof this['table']['options'][_0x4b7ae4(0x15e)]=='function'?this[_0x4b7ae4(0x17e)]['options']['printFooter'][_0x4b7ae4(0x172)](this[_0x4b7ae4(0x17e)]):this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x15e)],typeof _0x157ebe==_0x4b7ae4(0x173)?_0x4ed823[_0x4b7ae4(0x150)]=_0x157ebe:_0x4ed823[_0x4b7ae4(0x171)](_0x157ebe),this[_0x4b7ae4(0x155)][_0x4b7ae4(0x171)](_0x4ed823)),document[_0x4b7ae4(0x159)]['classList']['add'](_0x4b7ae4(0x17b)),document[_0x4b7ae4(0x159)]['appendChild'](this[_0x4b7ae4(0x155)]),this[_0x4b7ae4(0x17e)][_0x4b7ae4(0x152)][_0x4b7ae4(0x151)]&&this[_0x4b7ae4(0x17e)]['options']['printFormatter'](this[_0x4b7ae4(0x155)],_0x547dd1),window[_0x4b7ae4(0x154)](),this[_0x4b7ae4(0x15b)](),window[_0x4b7ae4(0x15d)](_0x409b88,_0x111aeb),this[_0x4b7ae4(0x166)]=![];},Tabulator[a44_0xf8096b(0x178)]['registerModule'](a44_0xf8096b(0x154),Print);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Print = function Print(table) {
+	this.table = table; //hold Tabulator object
+	this.element = false;
+	this.manualBlock = false;
+};
+
+Print.prototype.initialize = function () {
+	window.addEventListener("beforeprint", this.replaceTable.bind(this));
+	window.addEventListener("afterprint", this.cleanup.bind(this));
+};
+
+Print.prototype.replaceTable = function () {
+	if (!this.manualBlock) {
+		this.element = document.createElement("div");
+		this.element.classList.add("tabulator-print-table");
+
+		this.element.appendChild(this.table.modules.htmlTableExport.genereateTable(this.table.options.printConfig, this.table.options.printCopyStyle, this.table.options.printVisibleRows, "print"));
+
+		this.table.element.style.display = "none";
+
+		this.table.element.parentNode.insertBefore(this.element, this.table.element);
+	}
+};
+
+Print.prototype.cleanup = function () {
+	document.body.classList.remove("tabulator-print-fullscreen-hide");
+
+	if (this.element && this.element.parentNode) {
+		this.element.parentNode.removeChild(this.element);
+		this.table.element.style.display = "";
+	}
+};
+
+Print.prototype.printFullscreen = function (visible, style, config) {
+	var scrollX = window.scrollX,
+	    scrollY = window.scrollY,
+	    headerEl = document.createElement("div"),
+	    footerEl = document.createElement("div"),
+	    tableEl = this.table.modules.htmlTableExport.genereateTable(typeof config != "undefined" ? config : this.table.options.printConfig, typeof style != "undefined" ? style : this.table.options.printCopyStyle, visible, "print"),
+	    headerContent,
+	    footerContent;
+
+	this.manualBlock = true;
+
+	this.element = document.createElement("div");
+	this.element.classList.add("tabulator-print-fullscreen");
+
+	if (this.table.options.printHeader) {
+		headerEl.classList.add("tabulator-print-header");
+
+		headerContent = typeof this.table.options.printHeader == "function" ? this.table.options.printHeader.call(this.table) : this.table.options.printHeader;
+
+		if (typeof headerContent == "string") {
+			headerEl.innerHTML = headerContent;
+		} else {
+			headerEl.appendChild(headerContent);
+		}
+
+		this.element.appendChild(headerEl);
+	}
+
+	this.element.appendChild(tableEl);
+
+	if (this.table.options.printFooter) {
+		footerEl.classList.add("tabulator-print-footer");
+
+		footerContent = typeof this.table.options.printFooter == "function" ? this.table.options.printFooter.call(this.table) : this.table.options.printFooter;
+
+		if (typeof footerContent == "string") {
+			footerEl.innerHTML = footerContent;
+		} else {
+			footerEl.appendChild(footerContent);
+		}
+
+		this.element.appendChild(footerEl);
+	}
+
+	document.body.classList.add("tabulator-print-fullscreen-hide");
+	document.body.appendChild(this.element);
+
+	if (this.table.options.printFormatter) {
+		this.table.options.printFormatter(this.element, tableEl);
+	}
+
+	window.print();
+
+	this.cleanup();
+
+	window.scrollTo(scrollX, scrollY);
+
+	this.manualBlock = false;
+};
+
+Tabulator.prototype.registerModule("print", Print);

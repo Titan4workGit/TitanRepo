@@ -1793,7 +1793,7 @@ margin-bottom:5px;
 
 .emojionearea .emojionearea-button>div, 
 .emojionearea .emojionearea-picker .emojionearea-wrapper:after{
-    background-image: url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/emoji.png')!important;
+    background-image: url('https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyDocuments/DMS/assets/images/emoji.png')!important;
 }
 
 .emojionearea .emojionearea-picker.emojionearea-picker-position-left, .emojionearea .emojionearea-picker.emojionearea-picker-position-right {

@@ -1,1 +1,3698 @@
-var a13_0x385475=a13_0x1e60;(function(_0x5441ad,_0xeac3c0){var _0x48af19=a13_0x1e60,_0x25bb92=_0x5441ad();while(!![]){try{var _0x41daf8=-parseInt(_0x48af19(0x28d))/0x1*(-parseInt(_0x48af19(0x31a))/0x2)+-parseInt(_0x48af19(0x3cb))/0x3*(parseInt(_0x48af19(0x322))/0x4)+parseInt(_0x48af19(0x3a8))/0x5*(-parseInt(_0x48af19(0x3c6))/0x6)+parseInt(_0x48af19(0x356))/0x7+-parseInt(_0x48af19(0x397))/0x8+-parseInt(_0x48af19(0x3e4))/0x9+-parseInt(_0x48af19(0x2ae))/0xa*(-parseInt(_0x48af19(0x2fb))/0xb);if(_0x41daf8===_0xeac3c0)break;else _0x25bb92['push'](_0x25bb92['shift']());}catch(_0x58cc1c){_0x25bb92['push'](_0x25bb92['shift']());}}}(a13_0x18ce,0xabdd2),$(document)[a13_0x385475(0x22a)](function(){var _0x3e98e3=a13_0x385475;$(_0x3e98e3(0x358))['on'](_0x3e98e3(0x29c),function(){var _0x543ae4=_0x3e98e3;$(_0x543ae4(0x401))[_0x543ae4(0x32b)]==$(_0x543ae4(0x358))[_0x543ae4(0x32b)]?select_all_checkboxes[_0x543ae4(0x20a)]=!![]:$('#select_all')[_0x543ae4(0x39b)](_0x543ae4(0x20a),![]);}),$(_0x3e98e3(0x242))[_0x3e98e3(0x29c)](function(){var _0x1fc650=_0x3e98e3;let _0x433e6e=document[_0x1fc650(0x3b3)](_0x1fc650(0x3b2)),_0x369817=document[_0x1fc650(0x3be)](_0x1fc650(0x388));_0x433e6e[_0x1fc650(0x2b8)](_0x1fc650(0x2df),function(){var _0x1208a0=_0x1fc650;for(let _0x35f4c8=0x0;_0x35f4c8<_0x369817[_0x1208a0(0x32b)];_0x35f4c8++){_0x433e6e[_0x1208a0(0x20a)]===!![]?_0x369817[_0x35f4c8][_0x1208a0(0x20a)]=!![]:_0x369817[_0x35f4c8][_0x1208a0(0x20a)]=![];}});}),$(_0x3e98e3(0x402))[_0x3e98e3(0x29c)](function(){var _0x3e172c=_0x3e98e3;let _0x81fd40=document['getElementById'](_0x3e172c(0x3ce)),_0x35b95c=document[_0x3e172c(0x3be)](_0x3e172c(0x389));_0x81fd40[_0x3e172c(0x2b8)](_0x3e172c(0x2df),function(){var _0x3b9722=_0x3e172c;for(let _0x3029ac=0x0;_0x3029ac<_0x35b95c['length'];_0x3029ac++){_0x81fd40[_0x3b9722(0x20a)]===!![]?_0x35b95c[_0x3029ac][_0x3b9722(0x20a)]=!![]:_0x35b95c[_0x3029ac]['checked']=![];}});}),$(_0x3e98e3(0x3ec))['click'](function(){var _0x597c4c=_0x3e98e3;let _0xed28ff=document[_0x597c4c(0x3b3)]('setEditableColSelAll'),_0x4aa974=document[_0x597c4c(0x3be)](_0x597c4c(0x3d8));_0xed28ff[_0x597c4c(0x2b8)](_0x597c4c(0x2df),function(){var _0x568d2c=_0x597c4c;for(let _0x3a48c6=0x0;_0x3a48c6<_0x4aa974['length'];_0x3a48c6++){_0xed28ff[_0x568d2c(0x20a)]===!![]?_0x4aa974[_0x3a48c6]['checked']=!![]:_0x4aa974[_0x3a48c6][_0x568d2c(0x20a)]=![];}});});var _0x18d379='',_0x3581b6='';$(_0x3e98e3(0x2f4))[_0x3e98e3(0x2df)](function(){var _0x13ffde=_0x3e98e3;this['value']==_0x13ffde(0x26d)&&(initializePeoplePicker(_0x13ffde(0x1fe)),_0x18d379=$(_0x13ffde(0x3fc)));}),$(_0x3e98e3(0x2c8))['click'](function(){SaveApprovers();}),$(_0x3e98e3(0x316))['on'](_0x3e98e3(0x29c),function(_0x4fdbeb){var _0x496631=_0x3e98e3;_0x4fdbeb['preventDefault']();var _0x285cbc=$('input[name=\x27optradio\x27]:checked')[_0x496631(0x282)](),_0x16c56b=$(_0x496631(0x20d))['val']();if($(_0x496631(0x370))[_0x496631(0x282)]()=='')return alert(_0x496631(0x369)),![];if(_0x285cbc=='Role'){if($(_0x496631(0x324))[_0x496631(0x39b)](_0x496631(0x26e))==0x0)return alert('Please\x20select\x20role.'),![];if(_0x16c56b==_0x496631(0x26a)){if($(_0x496631(0x368))[_0x496631(0x39b)](_0x496631(0x26e))==0x0)return alert(_0x496631(0x269)),![];}}else{if(_0x285cbc=='Group'){if($(_0x496631(0x283))['prop'](_0x496631(0x26e))==0x0)return alert(_0x496631(0x237)),![];if(_0x16c56b==_0x496631(0x26a)){if($(_0x496631(0x368))[_0x496631(0x39b)](_0x496631(0x26e))==0x0)return alert('Please\x20select\x20position.'),![];}}else{if(_0x285cbc==_0x496631(0x2f0)){if($(_0x496631(0x349))['prop'](_0x496631(0x26e))==0x0)return alert(_0x496631(0x205)),![];if(_0x16c56b==_0x496631(0x26a)){if($(_0x496631(0x368))['prop'](_0x496631(0x26e))==0x0)return alert('Please\x20select\x20position.'),![];}}else{if(_0x285cbc==_0x496631(0x39c)){if(_0x16c56b==_0x496631(0x26a)){if($(_0x496631(0x368))[_0x496631(0x39b)](_0x496631(0x26e))==0x0)return alert(_0x496631(0x269)),![];}}else{if(_0x285cbc==_0x496631(0x26d)){var _0xf8d7c=$(_0x496631(0x3fc)),_0x4e5e81=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0xf8d7c[0x0]['id']],_0xd30890=_0x4e5e81['GetAllUserInfo']();if(_0xd30890[_0x496631(0x32b)]==0x0)return alert('Please\x20enter\x20user.'),![];if(_0x16c56b==_0x496631(0x26a)){if($(_0x496631(0x368))[_0x496631(0x39b)](_0x496631(0x26e))==0x0)return alert('Please\x20select\x20position.'),![];}}}}}}if($('#ActionReq')[_0x496631(0x282)]()==_0x496631(0x2ab)){}else{var _0x23a764=[];$('input:checkbox[name=\x27PartialTableChkboxSteps\x27]:checked')[_0x496631(0x304)](function(){var _0x205792=_0x496631;_0x23a764[_0x205792(0x2e6)]($(this)['val']());});if($(_0x496631(0x3b1))['val']()=='Review\x20Only'){}else{if(ProcessType==_0x496631(0x32a)){if(_0x23a764[_0x496631(0x32b)]==0x0)return alert(_0x496631(0x2e3)),![];}}}AddStep();if(StpApprovers[_0x496631(0x32b)]>0x0)SetApproversList();else SavedstpCount>0x0?(UpdateApproverStps(),alert(_0x496631(0x236)),$('#adds_stepsection')[_0x496631(0x3f7)]('hide')):alert(_0x496631(0x232));$(_0x496631(0x247))[_0x496631(0x3f7)]('hide');}),$(_0x3e98e3(0x2b0))['click'](function(){var _0x3db14d=_0x3e98e3;if($(_0x3db14d(0x3b1))[_0x3db14d(0x282)]()=='Review\x20&\x20Sign'){}else{var _0x8cd7f1=[];$(_0x3db14d(0x3d5))[_0x3db14d(0x304)](function(){var _0x173de0=_0x3db14d;_0x8cd7f1[_0x173de0(0x2e6)]($(this)['val']());});if($(_0x3db14d(0x3b1))[_0x3db14d(0x282)]()!='Review\x20Only'){if(ProcessType=_0x3db14d(0x32a)){if(_0x8cd7f1[_0x3db14d(0x32b)]==0x0)return alert('Set\x20the\x20editable\x20columns'),![];}}}EditStepSubmit(),$(_0x3db14d(0x247))['modal'](_0x3db14d(0x2ba));}),GetAllUser();}));function initializePeoplePicker(_0x1edbfa){var _0x3ef832=a13_0x385475,_0x1ad1c5={};_0x1ad1c5[_0x3ef832(0x2c2)]=_0x3ef832(0x21e),_0x1ad1c5[_0x3ef832(0x400)]=0xf,_0x1ad1c5[_0x3ef832(0x3b0)]=0xf,_0x1ad1c5[_0x3ef832(0x20e)]=!![],_0x1ad1c5['MaximumEntitySuggestions']=0x32,_0x1ad1c5[_0x3ef832(0x3bc)]=_0x3ef832(0x38e),this['SPClientPeoplePicker_InitStandaloneControlWrapper'](_0x1edbfa,null,_0x1ad1c5),$('.sp-peoplepicker-editorInput')[_0x3ef832(0x1fa)](0x136);}var PrTableColumnID=[],StepCount=0x0,StpApprovers=[],StepApprver=[];function AddStep(){var _0x278804=a13_0x385475;StpApprovers=[];var _0x3609df=$(_0x278804(0x3b1))['val'](),_0x506bed=_0x278804(0x318),_0x13d090='',_0x5de683='',_0x121b64,_0x3d31be='',_0x43c264=![];ProcessType==_0x278804(0x1f0)&&(_0x43c264=$(_0x278804(0x281))['is'](_0x278804(0x262)));if(_0x3609df==_0x278804(0x2ab)||_0x3609df==_0x278804(0x22b)){var _0xa62d67=$(_0x278804(0x20d))[_0x278804(0x282)]();if(_0xa62d67=='At\x20Bottom\x20most')_0x506bed='BottomMost';else _0xa62d67==_0x278804(0x26a)&&($(_0x278804(0x368))[_0x278804(0x39b)](_0x278804(0x26e))==0x0&&alert(_0x278804(0x269)),_0x506bed=$(_0x278804(0x368))[_0x278804(0x282)]());}if($(_0x278804(0x3b1))[_0x278804(0x282)]()==_0x278804(0x2ab)){var _0xcd8440=$(_0x278804(0x370))[_0x278804(0x282)](),_0x62d7cc=$('input[name=\x27optradio\x27]:checked')[_0x278804(0x282)]();peoplePickerDiv=$(_0x278804(0x3fc));if(_0xcd8440=='')return alert(_0x278804(0x369)),![];StepApprver=[];if(_0x62d7cc==_0x278804(0x26d)){var _0xb4c078=SPClientPeoplePicker[_0x278804(0x218)][peoplePickerDiv[0x0]['id']],_0x419080=_0xb4c078[_0x278804(0x2c6)](),_0x3c0cb6='',_0x584fab=![],_0x4752fb=[];for(var _0x467ec2=0x0;_0x467ec2<_0x419080[_0x278804(0x32b)];_0x467ec2++){var _0x55a04e=![],_0x57540b=AllEmployee[_0x278804(0x32d)](function(_0x5da086){var _0x471448=_0x278804;return _0x5da086['EMail']==_0x419080[_0x467ec2]['EntityData'][_0x471448(0x208)]&&(_0x55a04e=!![]),_0x5da086[_0x471448(0x239)]==_0x419080[_0x467ec2]['EntityData'][_0x471448(0x208)];});_0x57540b[_0x278804(0x32b)]==0x0&&_0x4752fb[_0x278804(0x2e6)](_0x419080[_0x467ec2][_0x278804(0x2fa)]),_0x57540b['length']>0x0&&StepApprver[_0x278804(0x2e6)]({'Name':_0x57540b[0x0]['EMail'],'Id':_0x57540b[0x0][_0x278804(0x407)]});}if(_0x4752fb[_0x278804(0x32b)]>0x0)return alert('Selected\x20user\x20'+_0x4752fb+_0x278804(0x38b)),![];setTimeout(function(){AddNewStep(_0xcd8440,'',_0x419080,_0x3609df);},0x64);}else{if(_0x62d7cc==_0x278804(0x35d))_0x13d090=$(_0x278804(0x3d3))[_0x278804(0x282)](),grpName=$('#ddlgroups\x20option:selected')[_0x278804(0x3b4)](),setTimeout(function(){AddNewStep(_0xcd8440,grpName,_0x419080,_0x3609df);},0x64);else{if(_0x62d7cc==_0x278804(0x2f0))_0x5de683=$(_0x278804(0x2e7))[_0x278804(0x282)](),setTimeout(function(){},0x64);else{if(_0x62d7cc==_0x278804(0x39c))_0x121b64=$(_0x278804(0x335))[_0x278804(0x3b4)](),_0x3d31be=$(_0x278804(0x335))[_0x278804(0x282)](),setTimeout(function(){},0x64);else{var _0x1c972f=$('#ddlroles')[_0x278804(0x282)]();_0x62d7cc=_0x278804(0x25d),setTimeout(function(){AddNewStep(_0xcd8440,_0x1c972f,_0x419080,_0x3609df);},0x64);}}}}StpApprovers[_0x278804(0x2e6)]({'FooterSign':_0x43c264,'StName':_0xcd8440,'Type':_0x62d7cc,'StRole':_0x1c972f,'StUser':_0x419080,'UsrID':StepApprver,'ActionReq':_0x3609df,'SignPosition':_0x506bed,'GroupName':_0x13d090,'ColName':_0x5de683,'ApproverDecidingStep':_0x121b64,'ApproverDecStepId':_0x3d31be});}else{var _0x5a9c7b=[];$(_0x278804(0x3d5))[_0x278804(0x304)](function(){var _0x4d44ce=_0x278804;_0x5a9c7b[_0x4d44ce(0x2e6)]({'tblId':$(this)['val'](),'tblEditScope':'','tblColIds':''});}),$(_0x278804(0x34a))['each'](function(){var _0x205e94=_0x278804;_0x5a9c7b[_0x205e94(0x2e6)]({'tblId':$(this)[_0x205e94(0x339)]('id'),'tblEditScope':$(this)[_0x205e94(0x282)](),'tblColIds':$(this)[_0x205e94(0x2b3)](0x0)[_0x205e94(0x282)]()});});if(_0x5a9c7b[_0x278804(0x32b)]>0x0||_0x5a9c7b[_0x278804(0x32b)]==0x0){var _0xcd8440=$('#txtStepName')[_0x278804(0x282)](),_0x62d7cc=$(_0x278804(0x280))[_0x278804(0x282)]();peoplePickerDiv=$('[id$=\x27Stepuser_TopSpan\x27]');if(_0xcd8440=='')return alert(_0x278804(0x369)),![];StepApprver=[];var _0x4752fb=[];if(_0x62d7cc==_0x278804(0x26d)){var _0xb4c078=SPClientPeoplePicker[_0x278804(0x218)][peoplePickerDiv[0x0]['id']],_0x419080=_0xb4c078[_0x278804(0x2c6)](),_0x3c0cb6='',_0x584fab=![];for(var _0x467ec2=0x0;_0x467ec2<_0x419080[_0x278804(0x32b)];_0x467ec2++){var _0x57540b=AllEmployee[_0x278804(0x32d)](function(_0x548f6e){var _0x424135=_0x278804;return _0x548f6e['EMail']==_0x419080[_0x467ec2][_0x424135(0x363)][_0x424135(0x208)];});_0x57540b[_0x278804(0x32b)]==0x0&&_0x4752fb[_0x278804(0x2e6)](_0x419080[_0x467ec2][_0x278804(0x2fa)]),_0x57540b[_0x278804(0x32b)]>0x0&&StepApprver['push']({'Name':_0x57540b[0x0]['EMail'],'Id':_0x57540b[0x0]['UserId']});}if(_0x4752fb[_0x278804(0x32b)]>0x0)return alert(_0x278804(0x344)+_0x4752fb+_0x278804(0x38b)),![];setTimeout(function(){AddNewStep(_0xcd8440,'',_0x419080,_0x3609df);},0x64);}else{if(_0x62d7cc==_0x278804(0x35d))_0x13d090=$(_0x278804(0x3d3))[_0x278804(0x282)](),_0x5de683=$(_0x278804(0x3d3))[_0x278804(0x3b4)](),setTimeout(function(){AddNewStep(_0xcd8440,grpName,_0x419080,_0x3609df);},0x64);else{if(_0x62d7cc==_0x278804(0x2f0))_0x5de683=$('#ddlPersonColumn\x20option:selected')[_0x278804(0x282)](),setTimeout(function(){AddNewStep(_0xcd8440,grpName,_0x419080,_0x3609df);},0x64);else{if(_0x62d7cc==_0x278804(0x39c))_0x121b64=$('#ddlPreSteps\x20option:selected')[_0x278804(0x3b4)](),_0x3d31be=$(_0x278804(0x335))['val'](),setTimeout(function(){AddNewStep(_0xcd8440,_0x121b64,_0x419080,_0x3609df);},0x64);else{var _0x1c972f=$(_0x278804(0x324))[_0x278804(0x282)]();_0x62d7cc=_0x278804(0x352),setTimeout(function(){AddNewStep(_0xcd8440,_0x1c972f,_0x419080,_0x3609df);},0x64);}}}}StpApprovers[_0x278804(0x2e6)]({'FooterSign':_0x43c264,'StName':_0xcd8440,'Type':_0x62d7cc,'StRole':_0x1c972f,'StUser':_0x419080,'UsrID':StepApprver,'ActionReq':_0x3609df,'SignPosition':_0x506bed,'GroupName':_0x13d090,'ColName':_0x5de683,'ApproverDecidingStep':_0x121b64,'ApproverDecStepId':_0x3d31be}),PrTableColumnID[_0x278804(0x2e6)]({'TemplateID':CurrTenplateID,'EditScope':$(_0x278804(0x3b1))[_0x278804(0x282)](),'StName':_0xcd8440,'StepType':_0x278804(0x34d),'ColumnNo':_0x5a9c7b});}else{}}}function AddNewStep(_0x5afb9d,_0x1afe22,_0x2b13db,_0x1b83e2){var _0x2cc6e5=a13_0x385475;StepCount=StepCount+0x1;var _0x36934a='';_0x36934a+=_0x2cc6e5(0x396),_0x36934a+=_0x2cc6e5(0x312)+_0x5afb9d+_0x2cc6e5(0x393),_0x36934a+=_0x2cc6e5(0x24d)+_0x1b83e2+_0x2cc6e5(0x3a7),_0x36934a+='<div\x20class=\x22dropdown\x20pull-right\x22>',_0x36934a+='<button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22>',_0x36934a+=_0x2cc6e5(0x222),_0x36934a+=_0x2cc6e5(0x350),_0x36934a+='<li\x20onclick=\x22EditStep('+StepCount+',this)\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-pencil\x22\x20></i>\x20Edit</a></li>',_0x36934a+='<li\x20onclick=\x22DeleteStep('+StepCount+_0x2cc6e5(0x39a),_0x36934a+='</ul></div></div>',_0x36934a+=_0x2cc6e5(0x2a6),_0x36934a+=_0x2cc6e5(0x3f5);if(_0x1afe22!='')_0x36934a+=_0x2cc6e5(0x3b6),_0x36934a+=_0x2cc6e5(0x3cd),_0x36934a+='</div>',_0x36934a+=_0x2cc6e5(0x353),_0x36934a+=_0x2cc6e5(0x24d)+_0x1afe22+_0x2cc6e5(0x3a7),_0x36934a+=_0x2cc6e5(0x3f6);else for(i=0x0;i<_0x2b13db[_0x2cc6e5(0x32b)];i++){var _0x5ef11d=_spPageContextInfo[_0x2cc6e5(0x291)]+_0x2cc6e5(0x3d0)+escapeProperly(_0x2b13db[i]['EntityData']['Email']);_0x36934a+=_0x2cc6e5(0x267)+_0x2b13db[i]['DisplayText']+'\x22\x20src=\x22'+_0x5ef11d+_0x2cc6e5(0x311),_0x36934a+=_0x2cc6e5(0x2fd)+_0x2b13db[i][_0x2cc6e5(0x2fa)]+_0x2cc6e5(0x20c)+_0x2b13db[i][_0x2cc6e5(0x363)][_0x2cc6e5(0x208)]+_0x2cc6e5(0x1f5);}_0x36934a+=_0x2cc6e5(0x1f1),ClearDetails();}function DeleteStep(_0x52a9a7,_0x1d3947){var _0x149a57=a13_0x385475;_0x1d3947[_0x149a57(0x2e0)][_0x149a57(0x2e0)]['parentNode'][_0x149a57(0x2e0)][_0x149a57(0x2cf)](),StpApprovers[_0x149a57(0x35e)](_0x2d6d71=>_0x2d6d71['Id']===_0x52a9a7)[_0x149a57(0x2cf)](),StpApprovers[_0x149a57(0x1ed)](StpApprovers[_0x149a57(0x35e)](_0x32c254=>_0x32c254['Id']===_0x52a9a7),0x1),StepCount=StepCount-0x1;}var IsNewStp=![];function EditStep(_0x216842,_0x273123){var _0x4817b1=a13_0x385475;$(_0x4817b1(0x316))[_0x4817b1(0x2ba)](),$(_0x4817b1(0x2b0))[_0x4817b1(0x3fb)](),$(_0x4817b1(0x2b0))[_0x4817b1(0x282)](_0x216842);_0x273123!=null&&_0x273123['parentNode'][_0x4817b1(0x2e0)][_0x4817b1(0x2e0)]['parentNode'][_0x4817b1(0x2cf)]();$(_0x4817b1(0x370))[_0x4817b1(0x282)](StpApprovers[_0x216842-0x1][_0x4817b1(0x3e3)]),$('#ActionReq')[_0x4817b1(0x282)](StpApprovers[_0x216842-0x1][_0x4817b1(0x38f)]);StpApprovers[_0x216842-0x1][_0x4817b1(0x220)]==_0x4817b1(0x318)?$(_0x4817b1(0x32c))['prop']('checked',!![]):($('input[name=optionls][value=\x27At\x20Bottom\x20of\x27]')[_0x4817b1(0x39b)](_0x4817b1(0x20a),!![]),$(_0x4817b1(0x368))['val'](StpApprovers[_0x216842-0x1][_0x4817b1(0x220)])['attr']('selected',_0x4817b1(0x313)));SetDisplayPrTable4Approvers(StpApprovers[_0x216842-0x1][_0x4817b1(0x38f)]),IsNewStp=!![];if(StpApprovers[_0x216842-0x1]['Type']=='Role\x20Based'||StpApprovers[_0x216842-0x1][_0x4817b1(0x1fb)]==_0x4817b1(0x25d))$(_0x4817b1(0x324))[_0x4817b1(0x282)](StpApprovers[_0x216842-0x1][_0x4817b1(0x2ca)]),$('input[name=optradio][value=Role]')[_0x4817b1(0x39b)](_0x4817b1(0x20a),!![]),$(_0x4817b1(0x3e5))[_0x4817b1(0x2ba)](),$(_0x4817b1(0x2a2))[_0x4817b1(0x3fb)](),$(_0x4817b1(0x3da))[_0x4817b1(0x2ba)]();else{if(StpApprovers[_0x216842-0x1][_0x4817b1(0x1fb)]==_0x4817b1(0x35d))$(_0x4817b1(0x283))['val'](StpApprovers[_0x216842-0x1]['GroupName']),$(_0x4817b1(0x20f))[_0x4817b1(0x39b)](_0x4817b1(0x20a),!![]),$(_0x4817b1(0x3e5))[_0x4817b1(0x2ba)](),$(_0x4817b1(0x2a2))[_0x4817b1(0x2ba)](),$('.grpbox')[_0x4817b1(0x3fb)]();else{$(_0x4817b1(0x2f6))[_0x4817b1(0x39b)](_0x4817b1(0x20a),!![]),$('.usrbox')[_0x4817b1(0x3fb)](),$(_0x4817b1(0x2a2))[_0x4817b1(0x2ba)](),$(_0x4817b1(0x3da))[_0x4817b1(0x2ba)](),initializePeoplePicker(_0x4817b1(0x1fe)),peoplePickerDiv=$(_0x4817b1(0x3fc));for(i=0x0;i<StpApprovers[_0x216842-0x1][_0x4817b1(0x348)]['length'];i++){var _0x3e14ef=this[_0x4817b1(0x2e4)][_0x4817b1(0x218)][_0x4817b1(0x1f2)];_0x3e14ef[_0x4817b1(0x379)](StpApprovers[_0x216842-0x1][_0x4817b1(0x348)][i]['Key'][_0x4817b1(0x39e)]('|')[0x2]);}}}}var ActiveMode='',EditStpID='';function EditEStep(_0x1d76da,_0x124a45){var _0x35e238=a13_0x385475;ActiveMode='';if(ActiveProessCount==0x0){$(_0x35e238(0x247))[_0x35e238(0x3f7)](_0x35e238(0x3fb)),LoadPartialTableSteps(_0x35e238(0x295),_0x124a45),ActiveMode=_0x35e238(0x2c9);let _0x2e7f76=SavedStpApprovers[_0x35e238(0x21c)](_0x133a15=>_0x133a15['Id']===_0x124a45);$(_0x35e238(0x3c9))[_0x35e238(0x39b)](_0x35e238(0x20a),_0x2e7f76[_0x35e238(0x33f)]),$('#btnAddStep')[_0x35e238(0x2ba)](),$(_0x35e238(0x2b0))[_0x35e238(0x3fb)](),$(_0x35e238(0x2b0))[_0x35e238(0x282)](_0x1d76da),EditStpID=_0x124a45,$(_0x35e238(0x370))[_0x35e238(0x282)](_0x2e7f76[_0x35e238(0x3e3)]),$(_0x35e238(0x3b1))['val'](_0x2e7f76[_0x35e238(0x38f)]);if(ProcessType==_0x35e238(0x32a))_0x2e7f76[_0x35e238(0x220)]==_0x35e238(0x318)?($(_0x35e238(0x345))['prop'](_0x35e238(0x20a),!![]),$(_0x35e238(0x368))['hide']()):($('input[name=optionls][value=\x27At\x20Bottom\x20of\x27]')[_0x35e238(0x39b)](_0x35e238(0x20a),!![]),$('#PositionOptList')[_0x35e238(0x282)](_0x2e7f76['SignPosition'])[_0x35e238(0x339)](_0x35e238(0x313),_0x35e238(0x313)),$(_0x35e238(0x368))[_0x35e238(0x3fb)]()),_0x2e7f76[_0x35e238(0x38f)]==_0x35e238(0x2d6)||_0x2e7f76[_0x35e238(0x38f)]==_0x35e238(0x2c5)?$('.stepsOfProc')[_0x35e238(0x30d)](_0x35e238(0x214),'hidden'):$(_0x35e238(0x40c))[_0x35e238(0x30d)]('visibility',_0x35e238(0x2b5));else ProcessType==_0x35e238(0x1f0)&&($(_0x35e238(0x2a5))[_0x35e238(0x30d)](_0x35e238(0x2dc),_0x35e238(0x3e8)),$(_0x35e238(0x40c))[_0x35e238(0x30d)](_0x35e238(0x214),'hidden'),$(_0x35e238(0x281))[_0x35e238(0x39b)](_0x35e238(0x20a),_0x2e7f76['FooterSign']));SetDisplayPrTable4Approvers(_0x2e7f76['ActionReq']),IsNewStp=![];if(_0x2e7f76[_0x35e238(0x1fb)]==_0x35e238(0x352)||_0x2e7f76[_0x35e238(0x1fb)]==_0x35e238(0x25d))$(_0x35e238(0x324))[_0x35e238(0x282)](_0x2e7f76[_0x35e238(0x2ca)]),$(_0x35e238(0x265))['prop']('checked',!![]),$(_0x35e238(0x3e5))['hide'](),$(_0x35e238(0x2a2))[_0x35e238(0x3fb)](),$('.grpbox')[_0x35e238(0x2ba)](),$('.colbox')[_0x35e238(0x2ba)]();else{if(_0x2e7f76[_0x35e238(0x1fb)]==_0x35e238(0x35d))$(_0x35e238(0x283))[_0x35e238(0x282)](_0x2e7f76[_0x35e238(0x37c)]),$('input[name=optradio][value=Group]')['prop']('checked',!![]),$('.usrbox')[_0x35e238(0x2ba)](),$(_0x35e238(0x2a2))[_0x35e238(0x2ba)](),$(_0x35e238(0x3da))[_0x35e238(0x3fb)](),$(_0x35e238(0x221))[_0x35e238(0x2ba)](),$('.runbox')[_0x35e238(0x2ba)]();else{if(_0x2e7f76[_0x35e238(0x1fb)]==_0x35e238(0x2f0))$(_0x35e238(0x349))[_0x35e238(0x282)](_0x2e7f76[_0x35e238(0x3d1)]),$(_0x35e238(0x377))[_0x35e238(0x39b)]('checked',!![]),$(_0x35e238(0x3e5))[_0x35e238(0x2ba)](),$(_0x35e238(0x2a2))[_0x35e238(0x2ba)](),$('.grpbox')['hide'](),$(_0x35e238(0x221))[_0x35e238(0x3fb)](),$('.runbox')['hide']();else{if(_0x2e7f76[_0x35e238(0x1fb)]==_0x35e238(0x39c))getPrevSteps(CurrTenplateID,_0x35e238(0x295),_0x124a45),$(_0x35e238(0x354))[_0x35e238(0x264)](function(){var _0x4d02d1=_0x35e238;if($(this)[_0x4d02d1(0x3b4)]()==_0x2e7f76[_0x4d02d1(0x3af)])return this;})['attr']('selected',_0x35e238(0x313)),$(_0x35e238(0x2f2))[_0x35e238(0x39b)](_0x35e238(0x20a),!![]),$(_0x35e238(0x3e5))[_0x35e238(0x2ba)](),$('.rolbox')[_0x35e238(0x2ba)](),$('.grpbox')[_0x35e238(0x2ba)](),$(_0x35e238(0x221))[_0x35e238(0x2ba)](),$(_0x35e238(0x285))[_0x35e238(0x3fb)]();else{$(_0x35e238(0x2f6))[_0x35e238(0x39b)](_0x35e238(0x20a),!![]),$(_0x35e238(0x3e5))[_0x35e238(0x3fb)](),$(_0x35e238(0x2a2))['hide'](),$(_0x35e238(0x3da))[_0x35e238(0x2ba)](),$('.colbox')[_0x35e238(0x2ba)](),$('.runbox')[_0x35e238(0x2ba)](),initializePeoplePicker('Stepuser'),peoplePickerDiv=$('[id$=\x27Stepuser_TopSpan\x27]');for(i=0x0;i<_0x2e7f76['StUser'][_0x35e238(0x32b)];i++){var _0x2144c4=this['SPClientPeoplePicker'][_0x35e238(0x218)][_0x35e238(0x1f2)],_0x58692b=GetUserLogin(_0x2e7f76[_0x35e238(0x348)][i]);_0x2144c4[_0x35e238(0x379)](_0x58692b);}}}}}}else alert(_0x35e238(0x3a9)),$('#adds_stepsection')[_0x35e238(0x3f7)](_0x35e238(0x2ba));}function EditStepSubmit(){var _0x2a283c=a13_0x385475,_0x2a8c20=![],_0x15c601,_0x269208='',_0x40c09b=$('#ActionReq')[_0x2a283c(0x282)](),_0x1f2411=_0x2a283c(0x318),_0x4b399e='',_0x3cf03e='',_0x404c7b,_0x29e2ae='',_0x5560fd=![];ProcessType=='Document'&&(_0x5560fd=$(_0x2a283c(0x281))['is'](_0x2a283c(0x262)));var _0x433846=$(_0x2a283c(0x280))[_0x2a283c(0x282)]();if(_0x433846==_0x2a283c(0x25d))_0x433846=_0x2a283c(0x352);else{if(_0x433846==_0x2a283c(0x26d))_0x433846=_0x2a283c(0x2fc);else _0x433846==_0x2a283c(0x35d)&&(_0x433846=_0x2a283c(0x35d));}if(_0x40c09b==_0x2a283c(0x2ab)||_0x40c09b==_0x2a283c(0x22b)){var _0x21262a=$(_0x2a283c(0x20d))[_0x2a283c(0x282)]();if(_0x21262a==_0x2a283c(0x207))_0x1f2411='BottomMost';else _0x21262a=='At\x20Bottom\x20of'&&(_0x1f2411=$('#PositionOptList')['val']());}if($(_0x2a283c(0x3b1))[_0x2a283c(0x282)]()==_0x2a283c(0x2ab)){_0x2a8c20=!![];var _0x2c0a64=$(_0x2a283c(0x370))[_0x2a283c(0x282)](),_0x438157='';peoplePickerDiv=$(_0x2a283c(0x3fc)),StepApprver=[];if(_0x2c0a64=='')return _0x2a8c20=![],alert(_0x2a283c(0x3b9)),![];}else{var _0x522212=[];$(_0x2a283c(0x3d5))[_0x2a283c(0x304)](function(){var _0x6a280d=_0x2a283c;_0x522212['push']($(this)[_0x6a280d(0x282)]());});var _0x2c0a64=$(_0x2a283c(0x370))[_0x2a283c(0x282)]();if(_0x522212[_0x2a283c(0x32b)]>0x0){_0x2a8c20=!![];var _0x438157='';peoplePickerDiv=$('[id$=\x27Stepuser_TopSpan\x27]'),StepApprver=[];if(_0x2c0a64=='')return _0x2a8c20=![],alert('Please\x20enter\x20Step\x20name.'),![];}else $(_0x2a283c(0x3b1))['val']()=='Review\x20Only'?_0x2a8c20=!![]:_0x2a8c20=![];}if(_0x2a8c20==!![]){if(_0x433846==_0x2a283c(0x2fc)){var _0x3018ac=SPClientPeoplePicker[_0x2a283c(0x218)][peoplePickerDiv[0x0]['id']],_0x7a23fa=_0x3018ac[_0x2a283c(0x2c6)](),_0x5ab5a2='',_0xd93897=![],_0x470904=[];for(var _0x3e0b33=0x0;_0x3e0b33<_0x7a23fa[_0x2a283c(0x32b)];_0x3e0b33++){var _0x1f5296=![],_0x578ceb=AllEmployee[_0x2a283c(0x32d)](function(_0x29bf0a){var _0xa0b4f4=_0x2a283c;return _0x29bf0a['EMail']==_0x7a23fa[_0x3e0b33][_0xa0b4f4(0x363)][_0xa0b4f4(0x208)]&&(_0x1f5296=!![]),_0x29bf0a[_0xa0b4f4(0x239)]==_0x7a23fa[_0x3e0b33][_0xa0b4f4(0x363)][_0xa0b4f4(0x208)];});_0x578ceb[_0x2a283c(0x32b)]==0x0&&_0x470904[_0x2a283c(0x2e6)](_0x7a23fa[_0x3e0b33][_0x2a283c(0x2fa)]),_0x578ceb[_0x2a283c(0x32b)]>0x0&&StepApprver[_0x2a283c(0x2e6)]({'Name':_0x578ceb[0x0][_0x2a283c(0x239)],'Id':_0x578ceb[0x0][_0x2a283c(0x407)]});}if(_0x470904['length']>0x0)return alert(_0x2a283c(0x344)+_0x470904+_0x2a283c(0x38b)),![];EditNewStep(_0x2c0a64,'',_0x7a23fa,_0x1f2411,_0x40c09b,_0x433846,_0x15c601,'','');}else{if(_0x433846==_0x2a283c(0x35d))_0x15c601=$('#ddlgroups')[_0x2a283c(0x282)](),_0x4b399e=$('#ddlgroups\x20option:selected')[_0x2a283c(0x3b4)](),EditNewStep(_0x2c0a64,_0x4b399e,StepApprver,_0x1f2411,_0x40c09b,_0x433846,_0x15c601,'','');else{if(_0x433846==_0x2a283c(0x2f0))_0x15c601=$(_0x2a283c(0x283))['val'](),_0x3cf03e=$('#ddlPersonColumn\x20option:selected')[_0x2a283c(0x282)](),_0x269208=$('#ddlPersonColumn\x20option:selected')[_0x2a283c(0x3b4)](),EditNewStep(_0x2c0a64,_0x269208,StepApprver,_0x1f2411,_0x40c09b,_0x433846,_0x15c601,'','');else _0x433846=='Runtime'?(_0x404c7b=$(_0x2a283c(0x335))['text'](),_0x29e2ae=$('#ddlPreSteps\x20option:selected')[_0x2a283c(0x282)](),EditNewStep(_0x2c0a64,_0x404c7b,StepApprver,_0x1f2411,_0x40c09b,_0x433846,_0x15c601,'','')):(_0x438157=$(_0x2a283c(0x324))[_0x2a283c(0x282)](),EditNewStep(_0x2c0a64,_0x438157,StepApprver,_0x1f2411,_0x40c09b,_0x433846,'','',''));}}IsNewStp==![]&&(SaveEditStepInList(_0x2c0a64,_0x438157,StepApprver,_0x15c601,_0x1f2411,_0x40c09b,_0x433846,_0x3cf03e,_0x404c7b,_0x29e2ae,_0x5560fd),$('#btnEditStep')[_0x2a283c(0x2ba)](),$(_0x2a283c(0x316))[_0x2a283c(0x3fb)]());}}function SaveEditStepInList(_0x11ecbc,_0x5b9dad,_0x5223ba,_0x2ed03e,_0x4fc50b,_0x1c0667,_0x42a8bc,_0x3881cb,_0x3924b9,_0x32b566,_0x424017){var _0xfe5892=a13_0x385475,_0x3ab98f=[],_0x1c353b=$(_0xfe5892(0x3c9))['is'](_0xfe5892(0x262));if(_0x5223ba[_0xfe5892(0x32b)]){for(i=0x0;i<_0x5223ba['length'];i++){_0x3ab98f['push'](_0x5223ba[i]['Id']);}var _0x2323e5={'__metadata':{'type':'SP.Data.ApprovalTemplateStepsListItem'},'StepName':_0x11ecbc,'SignaturePosition':_0x4fc50b,'ActionRequired':_0x1c0667,'ApproverType':_0x42a8bc,'PageFooterSign':_0x424017,'ParallelStakeholder':_0x1c353b,'ApproversId':{'results':_0x3ab98f}};}else{if(_0x42a8bc==_0xfe5892(0x35d))var _0x2323e5={'__metadata':{'type':'SP.Data.ApprovalTemplateStepsListItem'},'StepName':_0x11ecbc,'ApproverRole':_0x5b9dad,'GroupNameId':_0x2ed03e,'SignaturePosition':_0x4fc50b,'ActionRequired':_0x1c0667,'PageFooterSign':_0x424017,'ApproverType':_0x42a8bc,'ParallelStakeholder':_0x1c353b};else{if(_0x42a8bc==_0xfe5892(0x2f0))var _0x2323e5={'__metadata':{'type':_0xfe5892(0x343)},'StepName':_0x11ecbc,'ApproverRole':_0x5b9dad,'ColumnName':_0x3881cb,'SignaturePosition':_0x4fc50b,'ActionRequired':_0x1c0667,'PageFooterSign':_0x424017,'ApproverType':_0x42a8bc,'ParallelStakeholder':_0x1c353b};else{if(_0x42a8bc=='Runtime')var _0x2323e5={'__metadata':{'type':'SP.Data.ApprovalTemplateStepsListItem'},'StepName':_0x11ecbc,'ApproverRole':_0x5b9dad,'SignaturePosition':_0x4fc50b,'ActionRequired':_0x1c0667,'ApproverType':_0x42a8bc,'PageFooterSign':_0x424017,'ApproverDecidingStep':_0x3924b9,'ParallelStakeholder':_0x1c353b};else var _0x2323e5={'__metadata':{'type':_0xfe5892(0x343)},'StepName':_0x11ecbc,'ApproverRole':_0x5b9dad,'SignaturePosition':_0x4fc50b,'ActionRequired':_0x1c0667,'PageFooterSign':_0x424017,'ApproverType':_0x42a8bc,'ParallelStakeholder':_0x1c353b};}}}$[_0xfe5892(0x30b)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0xfe5892(0x342)+EditStpID+')','async':![],'type':_0xfe5892(0x390),'headers':{'accept':_0xfe5892(0x387),'X-RequestDigest':$(_0xfe5892(0x359))[_0xfe5892(0x282)](),'content-Type':_0xfe5892(0x387),'X-Http-Method':_0xfe5892(0x390),'If-Match':'*'},'data':JSON[_0xfe5892(0x319)](_0x2323e5),'success':function(_0x3e1d8d){var _0x3fd4e4=_0xfe5892,_0x3354f9=[];$(_0x3fd4e4(0x3d5))[_0x3fd4e4(0x304)](function(){var _0x874fed=_0x3fd4e4;_0x3354f9[_0x874fed(0x2e6)]({'tblId':$(this)[_0x874fed(0x282)](),'tblEditScope':'','tblColIds':''});}),$(_0x3fd4e4(0x34a))[_0x3fd4e4(0x304)](function(){var _0x197a35=_0x3fd4e4;_0x3354f9[_0x197a35(0x2e6)]({'tblId':$(this)[_0x197a35(0x339)]('id'),'tblEditScope':$(this)[_0x197a35(0x282)](),'tblColIds':$(this)[_0x197a35(0x2b3)](0x0)[_0x197a35(0x282)]()});});var _0x1598bb=[];_0x1598bb[_0x3fd4e4(0x2e6)]({'TemplateID':CurrTenplateID,'EditScope':$('#ActionReq')[_0x3fd4e4(0x282)](),'StName':$(_0x3fd4e4(0x370))[_0x3fd4e4(0x282)](),'StepType':'Process\x20Steps','ColumnNo':_0x3354f9});if(SelectedPrtableSteps[_0x3fd4e4(0x32b)]>0x0)for(k=0x0;k<SelectedPrtableSteps[_0x3fd4e4(0x32b)];k++){DeleteApprovalTemplateEditScopeRec(SelectedPrtableSteps[k]['ID']);}if($('#ActionReq')[_0x3fd4e4(0x282)]()=='Edit\x20Data'||$(_0x3fd4e4(0x3b1))[_0x3fd4e4(0x282)]()==_0x3fd4e4(0x22b)||$('#ActionReq')['val']()==_0x3fd4e4(0x2c5)){if(_0x3354f9[_0x3fd4e4(0x32b)]>0x0)for(var _0x2a3006=0x0;_0x2a3006<_0x1598bb[0x0][_0x3fd4e4(0x317)][_0x3fd4e4(0x32b)];_0x2a3006++){var _0x3dbf26=_0x3fd4e4(0x30e),_0x4f05f=[];_0x1598bb[0x0][_0x3fd4e4(0x317)][_0x2a3006]['tblColIds']!=''&&(_0x4f05f=_0x1598bb[0x0][_0x3fd4e4(0x317)][_0x2a3006][_0x3fd4e4(0x31e)]['split'](','));var _0x5aeac2={'__metadata':{'type':'SP.Data.'+_0x3dbf26+'ListItem'},'StepIDId':parseInt(EditStpID),'TemplateIDId':parseInt(_0x1598bb[0x0][_0x3fd4e4(0x33c)]),'StepType':_0x1598bb[0x0][_0x3fd4e4(0x2ed)],'EditScope':_0x3fd4e4(0x3a6),'Title':_0x3fd4e4(0x25b),'ColumnIDId':parseInt(_0x1598bb[0x0][_0x3fd4e4(0x317)][_0x2a3006][_0x3fd4e4(0x347)]),'Title':'Edit\x20Scope','TableEditScope':_0x1598bb[0x0][_0x3fd4e4(0x317)][_0x2a3006][_0x3fd4e4(0x3ac)],'TableColumnsId':{'results':_0x4f05f}};ApprovalTemplateEditScopeSet(_0x3dbf26,_0x5aeac2);}}alert(_0x3fd4e4(0x31b)),$(_0x3fd4e4(0x301))[_0x3fd4e4(0x325)](_0x3fd4e4(0x20a));},'error':function(_0x1fb0f0){console['log'](_0x1fb0f0);}});}function EditSavedStep(_0x3ab545,_0x29c29e,_0x2a3325){var _0x28e7c0=a13_0x385475;stpEditstep=[];var _0x5a2024=$(_0x28e7c0(0x2b0))[_0x28e7c0(0x282)](),_0x40a903={'StName':_0x3ab545,'Type':_0x28e7c0(0x352),'StRole':_0x29c29e,'StUser':_0x2a3325,'UserID':_0x5a2024};SavedStpApprovers[_0x5a2024-0x1]=_0x40a903;var _0x13a0be='';_0x13a0be+=_0x28e7c0(0x396),_0x13a0be+=_0x28e7c0(0x312)+_0x3ab545+_0x28e7c0(0x393),_0x13a0be+=_0x28e7c0(0x268),_0x13a0be+=_0x28e7c0(0x373),_0x13a0be+='<i\x20class=\x22fa\x20fa-ellipsis-v\x22\x20aria-hidden=\x22true\x22></i>\x20</button>',_0x13a0be+=_0x28e7c0(0x350),_0x13a0be+=_0x28e7c0(0x37f)+_0x5a2024+_0x28e7c0(0x3dd),_0x13a0be+=_0x28e7c0(0x40a)+_0x5a2024+',this)\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-trash\x22></i>\x20Delete</a></li>',_0x13a0be+=_0x28e7c0(0x203),_0x13a0be+=_0x28e7c0(0x2a6),_0x13a0be+=_0x28e7c0(0x28c);if(_0x29c29e!='')_0x13a0be+=_0x28e7c0(0x21b),_0x13a0be+=_0x28e7c0(0x3cd),_0x13a0be+=_0x28e7c0(0x3f6),_0x13a0be+=_0x28e7c0(0x353),_0x13a0be+=_0x28e7c0(0x24d)+_0x29c29e+_0x28e7c0(0x3a7),_0x13a0be+=_0x28e7c0(0x3f0);else for(i=0x0;i<_0x2a3325[_0x28e7c0(0x32b)];i++){var _0x33a98b=_spPageContextInfo[_0x28e7c0(0x291)]+_0x28e7c0(0x3d0)+escapeProperly(_0x2a3325[i][_0x28e7c0(0x363)]['Email']);_0x13a0be+=_0x28e7c0(0x365)+_0x2a3325[i]['DisplayText']+_0x28e7c0(0x22e)+_0x33a98b+_0x28e7c0(0x311),_0x13a0be+=_0x28e7c0(0x2fd)+_0x2a3325[i][_0x28e7c0(0x2fa)]+_0x28e7c0(0x20c)+_0x2a3325[i][_0x28e7c0(0x363)][_0x28e7c0(0x208)]+'</a></div></div>';}_0x13a0be+=_0x28e7c0(0x1f1),$('.stepbox')[_0x28e7c0(0x206)](_0x13a0be),ClearDetails();}var stpEditstep=[];function EditNewStep(_0x171800,_0x4d2e1c,_0x432644,_0x755d5c,_0x17c18d,_0x823ad4,_0x4b9c68){var _0x47206c=a13_0x385475;stpEditstep=[];var _0x5e4559=$(_0x47206c(0x2b0))[_0x47206c(0x282)]();_0x17c18d==_0x47206c(0x2d6)&&(_0x17c18d=_0x47206c(0x249));if(IsNewStp==![]){var _0x5e94bb='';_0x5e94bb+=_0x47206c(0x3e2),_0x5e94bb+='<h3>'+_0x171800+_0x47206c(0x393),_0x5e94bb+=_0x47206c(0x268),_0x5e94bb+=_0x47206c(0x373),_0x5e94bb+=_0x47206c(0x222),_0x5e94bb+='<ul\x20class=\x22dropdown-menu\x22>',_0x5e94bb+='<li\x20onclick=\x22EditEStep('+_0x5e4559+','+EditStpID+_0x47206c(0x2e9),_0x5e94bb+=_0x47206c(0x3ae)+EditStpID+_0x47206c(0x321),_0x5e94bb+='</ul></div></div>',_0x5e94bb+=_0x47206c(0x34c)+_0x17c18d+'</h5>',_0x5e94bb+=_0x47206c(0x2a6),_0x5e94bb+=_0x47206c(0x28c);if(_0x4d2e1c!='')_0x5e94bb+=_0x47206c(0x21b),_0x5e94bb+=_0x47206c(0x3cd),_0x5e94bb+=_0x47206c(0x3f6),_0x5e94bb+=_0x47206c(0x353),_0x5e94bb+=_0x47206c(0x24d)+_0x4d2e1c+'</h4>',_0x5e94bb+=_0x47206c(0x3f0);else for(i=0x0;i<_0x432644[_0x47206c(0x32b)];i++){var _0x4c172f=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x432644[i][_0x47206c(0x363)][_0x47206c(0x208)]);_0x5e94bb+=_0x47206c(0x365)+_0x432644[i][_0x47206c(0x2fa)]+_0x47206c(0x22e)+_0x4c172f+'\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>',_0x5e94bb+=_0x47206c(0x2fd)+_0x432644[i][_0x47206c(0x2fa)]+_0x47206c(0x20c)+_0x432644[i]['EntityData']['Email']+_0x47206c(0x2ef);}_0x5e94bb+=_0x47206c(0x3f6),$('#'+EditStpID)[_0x47206c(0x330)](_0x5e94bb),objIndex=SavedStpApprovers[_0x47206c(0x35e)](_0x3afae1=>_0x3afae1['Id']==EditStpID);var _0x26b4ba=[];for(var _0x42fab9=0x0;_0x42fab9<_0x432644['length'];_0x42fab9++){var _0x114fa3=![],_0x3df98d=AllEmployee[_0x47206c(0x32d)](function(_0x565b5d){var _0x58fbe6=_0x47206c;return _0x565b5d['EMail']==_0x432644[_0x42fab9][_0x58fbe6(0x363)]['Email']&&(_0x114fa3=!![]),_0x565b5d[_0x58fbe6(0x239)]==_0x432644[_0x42fab9][_0x58fbe6(0x363)][_0x58fbe6(0x208)];});_0x26b4ba[_0x47206c(0x2e6)](_0x3df98d[0x0]['UserId']);}SavedStpApprovers[objIndex][_0x47206c(0x348)]=_0x26b4ba,SavedStpApprovers[objIndex]['StName']=_0x171800,SavedStpApprovers[objIndex][_0x47206c(0x38f)]=_0x17c18d,SavedStpApprovers[objIndex][_0x47206c(0x220)]=_0x755d5c,SavedStpApprovers[objIndex][_0x47206c(0x2ca)]=_0x4d2e1c,SavedStpApprovers[objIndex][_0x47206c(0x1fb)]=_0x823ad4,SavedStpApprovers[objIndex][_0x47206c(0x33f)]=$('#chkAllStack')['is'](_0x47206c(0x262));}else{var _0x26b4ba=[];for(var _0x42fab9=0x0;_0x42fab9<_0x432644['length'];_0x42fab9++){var _0x114fa3=![],_0x3df98d=AllEmployee['filter'](function(_0x15728c){var _0x4fba73=_0x47206c;return _0x15728c[_0x4fba73(0x239)]==_0x432644[_0x42fab9][_0x4fba73(0x363)][_0x4fba73(0x208)]&&(_0x114fa3=!![]),_0x15728c[_0x4fba73(0x239)]==_0x432644[_0x42fab9][_0x4fba73(0x363)][_0x4fba73(0x208)];});_0x26b4ba[_0x47206c(0x2e6)](_0x3df98d[0x0][_0x47206c(0x407)]);}var _0x2d334d={'StName':_0x171800,'Type':_0x823ad4,'StRole':_0x4d2e1c,'StUser':_0x432644,'UsrID':_0x26b4ba,'ActionReq':_0x17c18d,'SignPosition':_0x755d5c,'GroupName':_0x4b9c68};StpApprovers[_0x5e4559-0x1]=_0x2d334d;var _0x5e94bb='';_0x5e94bb+='<li><div\x20class=\x22topsec\x22>',_0x5e94bb+=_0x47206c(0x312)+_0x171800+_0x47206c(0x393),_0x5e94bb+='<div\x20class=\x22dropdown\x20pull-right\x22>',_0x5e94bb+=_0x47206c(0x373),_0x5e94bb+=_0x47206c(0x222),_0x5e94bb+=_0x47206c(0x350),_0x5e94bb+=_0x47206c(0x37f)+_0x5e4559+_0x47206c(0x3dd),_0x5e94bb+='<li\x20onclick=\x22DeleteStep('+_0x5e4559+',this)\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-trash\x22></i>\x20Delete</a></li>',_0x5e94bb+=_0x47206c(0x203),_0x5e94bb+=_0x47206c(0x2a6),_0x5e94bb+='<div\x20class=\x22row\x20no-gutter\x22>';if(_0x4d2e1c!='')_0x5e94bb+=_0x47206c(0x21b),_0x5e94bb+='<img\x20src=\x22https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>',_0x5e94bb+='</div>',_0x5e94bb+=_0x47206c(0x353),_0x5e94bb+=_0x47206c(0x24d)+_0x4d2e1c+'</h4>',_0x5e94bb+=_0x47206c(0x3f0);else for(i=0x0;i<_0x432644[_0x47206c(0x32b)];i++){var _0x4c172f=_spPageContextInfo[_0x47206c(0x291)]+_0x47206c(0x3d0)+escapeProperly(_0x432644[i]['EntityData'][_0x47206c(0x208)]);_0x5e94bb+=_0x47206c(0x365)+_0x432644[i]['DisplayText']+_0x47206c(0x22e)+_0x4c172f+_0x47206c(0x311),_0x5e94bb+='</div></div><div\x20class=\x22imagecontent\x22><h4>'+_0x432644[i][_0x47206c(0x2fa)]+_0x47206c(0x20c)+_0x432644[i][_0x47206c(0x363)][_0x47206c(0x208)]+_0x47206c(0x2ef);}_0x5e94bb+=_0x47206c(0x1f1),$(_0x47206c(0x3fa))[_0x47206c(0x206)](_0x5e94bb),$('#btnEditStep')[_0x47206c(0x2ba)](),$('#btnAddStep')[_0x47206c(0x3fb)](),stpEditstep=_0x2d334d;}ClearDetails();}function GetlistData(_0x5c89fc){var _0x56445b=a13_0x385475,_0x3662a9=$[_0x56445b(0x3a0)]();return $[_0x56445b(0x30b)]({'url':_spPageContextInfo[_0x56445b(0x291)]+_0x5c89fc,'async':![],'contentType':'application/json;odata=verbose','headers':{'accept':_0x56445b(0x387)},'success':function(_0x597bd0){var _0x5a9bca=_0x56445b;_0x3662a9[_0x5a9bca(0x3c2)](_0x597bd0);},'error':function(_0x147314){var _0x46e7cf=_0x56445b;_0x3662a9[_0x46e7cf(0x3c7)](_0x147314);}}),_0x3662a9[_0x56445b(0x326)]();}var ApproerSteps=[],SavedStpApprovers=[],SavedstpCount='',ProcessType='',flagIniStp='';function getTempID(_0x35e65d,_0x99398f){var _0x128c97=a13_0x385475;CurrTenplateID=_0x35e65d,flagIniStp=_0x99398f;if(_0x99398f==_0x128c97(0x30f))$(_0x128c97(0x24c))['text']('Initiation'),$(_0x128c97(0x384))[_0x128c97(0x2ba)](),$(_0x128c97(0x3a1))[_0x128c97(0x3fb)](),showSubBtn(),LoadPartialTable();else _0x99398f==_0x128c97(0x37a)&&($(_0x128c97(0x24c))[_0x128c97(0x3b4)](_0x128c97(0x37a)),$(_0x128c97(0x3a1))[_0x128c97(0x2ba)](),$('#ProcessStep')[_0x128c97(0x3fb)](),hideSubBtn(),LoadPartialTable());PrTableColumnID=[],InitiatorList=[],$(_0x128c97(0x3a4))[_0x128c97(0x30d)](_0x128c97(0x2dc),_0x128c97(0x306)),$(_0x128c97(0x38d))[_0x128c97(0x2cc)](),SavedStpApprovers=[],$(_0x128c97(0x3fa))['empty']();var _0x3b2284=_spPageContextInfo[_0x128c97(0x291)]+_0x128c97(0x1f9)+CurrTenplateID+_0x128c97(0x32f);$['ajax']({'url':_0x3b2284,'async':![],'headers':{'Accept':_0x128c97(0x387)},'async':![],'success':function(_0x3857fe){var _0x11c278=_0x128c97;GetInitiationDetails(CurrTenplateID);var _0x4e56ea,_0x201b6f;_0x4e56ea=_0x3857fe['d'][_0x11c278(0x26f)],$(_0x11c278(0x316))['show'](),$(_0x11c278(0x2b0))[_0x11c278(0x2ba)](),ApproerSteps=_0x4e56ea,getGroupNames(),getPersonCol(_0x35e65d),GetTempDetails(_0x35e65d);_0x4e56ea['length']>0x0&&(ViewStepInTemp(_0x4e56ea),SavedstpCount=_0x4e56ea['length']);for(i=0x0;i<ApproerSteps[_0x11c278(0x32b)];i++){if(ApproerSteps[i][_0x11c278(0x3e1)]==_0x11c278(0x22b)||ApproerSteps[i][_0x11c278(0x3e1)]==_0x11c278(0x2ab)){}else{}if(ApproerSteps[i]['ApproverType']=='Role\x20Based'||ApproerSteps[i][_0x11c278(0x272)]=='Role')SavedStpApprovers[_0x11c278(0x2e6)]({'FooterSign':ApproerSteps[i][_0x11c278(0x21f)],'Stakeholder':ApproerSteps[i][_0x11c278(0x3ff)],'ActionReq':ApproerSteps[i][_0x11c278(0x3e1)],'StName':ApproerSteps[i]['StepName'],'Type':ApproerSteps[i][_0x11c278(0x272)],'StRole':ApproerSteps[i][_0x11c278(0x23e)],'StUser':'','UsrID':'','Id':ApproerSteps[i]['ID'],'SignPosition':ApproerSteps[i][_0x11c278(0x36a)],'GroupName':'','sNo':ApproerSteps[i][_0x11c278(0x27d)],'ColName':'','AskApprover':ApproerSteps[i][_0x11c278(0x381)],'ApproverForStep':ApproerSteps[i][_0x11c278(0x314)],'ApproverDecidingStep':ApproerSteps[i][_0x11c278(0x3af)]});else{if(ApproerSteps[i][_0x11c278(0x272)]==_0x11c278(0x35d))SavedStpApprovers[_0x11c278(0x2e6)]({'FooterSign':ApproerSteps[i][_0x11c278(0x21f)],'Stakeholder':ApproerSteps[i][_0x11c278(0x3ff)],'ActionReq':ApproerSteps[i][_0x11c278(0x3e1)],'StName':ApproerSteps[i][_0x11c278(0x2ec)],'Type':ApproerSteps[i][_0x11c278(0x272)],'StRole':'','StUser':'','UsrID':'','Id':ApproerSteps[i]['ID'],'SignPosition':ApproerSteps[i][_0x11c278(0x36a)],'GroupName':ApproerSteps[i][_0x11c278(0x37c)]['Id'],'sNo':ApproerSteps[i][_0x11c278(0x27d)],'ColName':'','AskApprover':ApproerSteps[i][_0x11c278(0x381)],'ApproverForStep':ApproerSteps[i][_0x11c278(0x314)],'ApproverDecidingStep':ApproerSteps[i][_0x11c278(0x3af)]});else{if(ApproerSteps[i]['ApproverType']==_0x11c278(0x2f0))SavedStpApprovers['push']({'FooterSign':ApproerSteps[i]['PageFooterSign'],'Stakeholder':ApproerSteps[i][_0x11c278(0x3ff)],'ActionReq':ApproerSteps[i][_0x11c278(0x3e1)],'StName':ApproerSteps[i][_0x11c278(0x2ec)],'Type':ApproerSteps[i]['ApproverType'],'StRole':'','StUser':'','UsrID':'','Id':ApproerSteps[i]['ID'],'SignPosition':ApproerSteps[i]['SignaturePosition'],'GroupName':ApproerSteps[i][_0x11c278(0x37c)]['Id'],'sNo':ApproerSteps[i][_0x11c278(0x27d)],'ColName':ApproerSteps[i]['ColumnName'],'AskApprover':ApproerSteps[i][_0x11c278(0x381)],'ApproverForStep':ApproerSteps[i][_0x11c278(0x314)],'ApproverDecidingStep':ApproerSteps[i][_0x11c278(0x3af)]});else{if(ApproerSteps[i][_0x11c278(0x272)]=='Runtime')SavedStpApprovers[_0x11c278(0x2e6)]({'FooterSign':ApproerSteps[i][_0x11c278(0x21f)],'Stakeholder':ApproerSteps[i]['ParallelStakeholder'],'ActionReq':ApproerSteps[i]['ActionRequired'],'StName':ApproerSteps[i][_0x11c278(0x2ec)],'Type':ApproerSteps[i][_0x11c278(0x272)],'StRole':'','StUser':'','UsrID':'','Id':ApproerSteps[i]['ID'],'SignPosition':ApproerSteps[i]['SignaturePosition'],'GroupName':ApproerSteps[i][_0x11c278(0x37c)]['Id'],'sNo':ApproerSteps[i][_0x11c278(0x27d)],'ColName':ApproerSteps[i]['ColumnName'],'AskApprover':ApproerSteps[i]['AskApprover'],'ApproverForStep':ApproerSteps[i]['ApproverForStep'],'ApproverDecidingStep':ApproerSteps[i][_0x11c278(0x3af)]});else{if(ApproerSteps[i][_0x11c278(0x201)]!=null){var _0x30c607=ApproerSteps[i]['ApproversId']['results'];SavedStpApprovers[_0x11c278(0x2e6)]({'FooterSign':ApproerSteps[i]['PageFooterSign'],'Stakeholder':ApproerSteps[i][_0x11c278(0x3ff)],'ActionReq':ApproerSteps[i][_0x11c278(0x3e1)],'StName':ApproerSteps[i][_0x11c278(0x2ec)],'Type':ApproerSteps[i][_0x11c278(0x272)],'StRole':ApproerSteps[i][_0x11c278(0x23e)],'StUser':_0x30c607,'UsrID':_0x30c607,'Id':ApproerSteps[i]['ID'],'SignPosition':ApproerSteps[i][_0x11c278(0x36a)],'GroupName':'','sNo':ApproerSteps[i][_0x11c278(0x27d)],'ColName':'','AskApprover':ApproerSteps[i][_0x11c278(0x381)],'ApproverForStep':ApproerSteps[i][_0x11c278(0x314)],'ApproverDecidingStep':ApproerSteps[i][_0x11c278(0x3af)]});}}}}}}},'error':function(_0xff7ca6){var _0xec182d=_0x128c97;console['log'](_0xec182d(0x2ee));}});}$(document)[a13_0x385475(0x22a)](function(){var _0x34828f=a13_0x385475;$(_0x34828f(0x338))[_0x34828f(0x29c)](function(){var _0x3a6600=_0x34828f;ActiveMode='',getPrevSteps(CurrTenplateID,_0x3a6600(0x336));});});function ViewStepInTemp(_0x23dfc7){var _0xb9dacf=a13_0x385475,_0x40e5d4='';$(_0xb9dacf(0x3fa))[_0xb9dacf(0x2cc)](),StpApprovers=[];for(i=0x0;i<_0x23dfc7[_0xb9dacf(0x32b)];i++){var _0x4963b8=i+0x1,_0x2b2da5='';_0x23dfc7[i][_0xb9dacf(0x3e1)]=='Edit\x20Data'?_0x2b2da5=_0xb9dacf(0x249):_0x2b2da5=_0x23dfc7[i][_0xb9dacf(0x3e1)];_0x40e5d4+=_0xb9dacf(0x391)+_0x23dfc7[i]['Id']+_0xb9dacf(0x35f),_0x40e5d4+=_0xb9dacf(0x312)+_0x23dfc7[i][_0xb9dacf(0x2ec)]+'</h3>',_0x40e5d4+=_0xb9dacf(0x268),_0x40e5d4+=_0xb9dacf(0x373),_0x40e5d4+='<i\x20class=\x22fa\x20fa-ellipsis-v\x22\x20aria-hidden=\x22true\x22></i></button>',_0x40e5d4+='<ul\x20class=\x22dropdown-menu\x22>',_0x40e5d4+=_0xb9dacf(0x328)+_0x4963b8+','+_0x23dfc7[i]['Id']+_0xb9dacf(0x327),_0x40e5d4+='<li\x20onclick=\x22DeleteEStep('+_0x23dfc7[i]['Id']+_0xb9dacf(0x297),_0x40e5d4+='</div>',_0x40e5d4+=_0xb9dacf(0x3f6),_0x40e5d4+=_0xb9dacf(0x34c)+_0x2b2da5+_0xb9dacf(0x305),_0x40e5d4+=_0xb9dacf(0x2a6),_0x40e5d4+='<div\x20class=\x22row\x20no-gutter\x22>';if(_0x23dfc7[i][_0xb9dacf(0x272)]==_0xb9dacf(0x352)||_0x23dfc7[i][_0xb9dacf(0x272)]==_0xb9dacf(0x25d)){if(_0x23dfc7[i]['ApproversId']!=null)var _0x111ca8=_0x23dfc7[i]['ApproversId'][_0xb9dacf(0x26f)];_0x40e5d4+='<div\x20class=\x22flexitem\x20col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22imgsetion\x22>',_0x40e5d4+=_0xb9dacf(0x3cd),_0x40e5d4+=_0xb9dacf(0x3f6),_0x40e5d4+=_0xb9dacf(0x353),_0x40e5d4+=_0xb9dacf(0x24d)+_0x23dfc7[i][_0xb9dacf(0x23e)]+_0xb9dacf(0x3a7),_0x40e5d4+=_0xb9dacf(0x3f0);}else{if(_0x23dfc7[i][_0xb9dacf(0x272)]==_0xb9dacf(0x35d)){if(_0x23dfc7[i][_0xb9dacf(0x201)]!=null)var _0x111ca8=_0x23dfc7[i][_0xb9dacf(0x201)][_0xb9dacf(0x26f)];_0x40e5d4+=_0xb9dacf(0x21b),_0x40e5d4+=_0xb9dacf(0x3cd),_0x40e5d4+='</div>',_0x40e5d4+='<div\x20class=\x22imagecontent\x22>',_0x40e5d4+=_0xb9dacf(0x24d)+_0x23dfc7[i]['GroupName'][_0xb9dacf(0x284)]+_0xb9dacf(0x3a7),_0x40e5d4+=_0xb9dacf(0x3f0);}else{if(_0x23dfc7[i][_0xb9dacf(0x272)]=='Field'){var _0x33ca31=arrPerson[_0xb9dacf(0x32d)](_0x3f6272=>{var _0x772174=_0xb9dacf;return _0x3f6272[_0x772174(0x2bc)]===_0x23dfc7[i]['ColumnName'];});console[_0xb9dacf(0x259)](_0x33ca31);if(_0x23dfc7[i]['ApproversId']!=null)var _0x111ca8=_0x23dfc7[i][_0xb9dacf(0x201)][_0xb9dacf(0x26f)];_0x40e5d4+='<div\x20class=\x22flexitem\x20col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22imgsetion\x22>',_0x40e5d4+=_0xb9dacf(0x3cd),_0x40e5d4+=_0xb9dacf(0x3f6),_0x40e5d4+=_0xb9dacf(0x353),_0x40e5d4+='<h4>Column\x20Value\x20of\x20'+_0x33ca31[0x0][_0xb9dacf(0x25c)]+'</h4>',_0x40e5d4+=_0xb9dacf(0x3f0);}else{if(_0x23dfc7[i]['ApproverType']==_0xb9dacf(0x39c)){if(_0x23dfc7[i][_0xb9dacf(0x201)]!=null)var _0x111ca8=_0x23dfc7[i][_0xb9dacf(0x201)]['results'];_0x40e5d4+=_0xb9dacf(0x21b),_0x40e5d4+='<img\x20src=\x22https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>',_0x40e5d4+='</div>',_0x40e5d4+=_0xb9dacf(0x353),_0x40e5d4+='<h4>'+_0x23dfc7[i][_0xb9dacf(0x3af)]+_0xb9dacf(0x3a7),_0x40e5d4+=_0xb9dacf(0x3f0);}else{if(_0x23dfc7[i][_0xb9dacf(0x201)]!=null)var _0x111ca8=_0x23dfc7[i][_0xb9dacf(0x201)][_0xb9dacf(0x26f)];for(j=0x0;j<_0x111ca8[_0xb9dacf(0x32b)];j++){var _0x125688=AllEmployee[_0xb9dacf(0x32d)](function(_0xa7124f){var _0x105981=_0xb9dacf;return _0xa7124f[_0x105981(0x407)]==_0x111ca8[j];}),_0x14b20a='';_0x125688[_0xb9dacf(0x32b)]>0x0&&(_0x14b20a=_spPageContextInfo[_0xb9dacf(0x291)]+_0xb9dacf(0x3d0)+_0x125688[0x0][_0xb9dacf(0x239)],_0x40e5d4+='<div\x20class=\x22flexitem\x20col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22imgsetion\x22><div\x20class=\x22empoyeeimg\x22\x20style=\x22float:left;\x22><img\x20title=\x22'+_0x125688[0x0]['LoginName']+_0xb9dacf(0x22e)+_0x14b20a+_0xb9dacf(0x311),_0x40e5d4+=_0xb9dacf(0x2fd)+_0x125688[0x0][_0xb9dacf(0x3dc)]+_0xb9dacf(0x20c)+_0x125688[0x0][_0xb9dacf(0x239)]+'</a></div></div>');}}}}}_0x40e5d4+='</div></li>';}$(_0xb9dacf(0x3fa))[_0xb9dacf(0x206)](_0x40e5d4);}function ViewStep(){var _0x41fa62=a13_0x385475,_0xb4f9f9='';$('#stepboxView')[_0x41fa62(0x2cc)]();for(i=0x0;i<ApproerSteps[_0x41fa62(0x32b)];i++){var _0x10b0f3=i+0x1;_0xb4f9f9+=_0x41fa62(0x391)+ApproerSteps[i]['Id']+_0x41fa62(0x35f),_0xb4f9f9+='<h3>'+ApproerSteps[i][_0x41fa62(0x2ec)]+_0x41fa62(0x393),_0xb4f9f9+=_0x41fa62(0x3f6),_0xb4f9f9+=_0x41fa62(0x2a6),_0xb4f9f9+=_0x41fa62(0x35c)+ApproerSteps[i][_0x41fa62(0x3e1)]+_0x41fa62(0x3ed),_0xb4f9f9+=_0x41fa62(0x36f);if(ApproerSteps[i][_0x41fa62(0x272)]==_0x41fa62(0x352))_0xb4f9f9+=_0x41fa62(0x233),_0xb4f9f9+=_0x41fa62(0x3b6),_0xb4f9f9+=_0x41fa62(0x3cd),_0xb4f9f9+=_0x41fa62(0x3f6),_0xb4f9f9+=_0x41fa62(0x353),_0xb4f9f9+=_0x41fa62(0x24d)+ApproerSteps[i][_0x41fa62(0x23e)]+_0x41fa62(0x3a7),_0xb4f9f9+=_0x41fa62(0x3f0);else{if(ApproerSteps[i][_0x41fa62(0x272)]=='Group')_0xb4f9f9+='<div\x20class=\x22col-sm-4\x20flexitem\x22>',_0xb4f9f9+='<div\x20class=\x22imgsetion\x22>',_0xb4f9f9+=_0x41fa62(0x3cd),_0xb4f9f9+=_0x41fa62(0x3f6),_0xb4f9f9+=_0x41fa62(0x353),_0xb4f9f9+=_0x41fa62(0x24d)+ApproerSteps[i][_0x41fa62(0x37c)][_0x41fa62(0x284)]+'</h4>',_0xb4f9f9+=_0x41fa62(0x3f0);else{if(ApproerSteps[i]['ApproverType']==_0x41fa62(0x39c))_0xb4f9f9+='<span\x20class=\x20\x22left_mg_pad\x22>Approver\x20Type\x20=\x20Runtime</span>',_0xb4f9f9+=_0x41fa62(0x2ea),_0xb4f9f9+=_0x41fa62(0x233),_0xb4f9f9+=_0x41fa62(0x3b6),_0xb4f9f9+=_0x41fa62(0x3cd),_0xb4f9f9+=_0x41fa62(0x3f6),_0xb4f9f9+=_0x41fa62(0x353),_0xb4f9f9+=_0x41fa62(0x250)+ApproerSteps[i]['ColumnName']+_0x41fa62(0x3ed),_0xb4f9f9+=_0x41fa62(0x3f0);else{if(ApproerSteps[i][_0x41fa62(0x272)]=='Field'){_0xb4f9f9+=_0x41fa62(0x286),_0xb4f9f9+=_0x41fa62(0x2ea),_0xb4f9f9+=_0x41fa62(0x233),_0xb4f9f9+=_0x41fa62(0x289),_0xb4f9f9+=_0x41fa62(0x3cd),_0xb4f9f9+=_0x41fa62(0x3f6),_0xb4f9f9+=_0x41fa62(0x353);var _0x19b8c2=$('.'+ApproerSteps[i][_0x41fa62(0x2bc)])[_0x41fa62(0x36c)]('label')[_0x41fa62(0x3b4)]();_0xb4f9f9+=_0x41fa62(0x2b6)+_0x19b8c2[_0x41fa62(0x3aa)]()+'</span>',_0xb4f9f9+='</div></div>';}else{if(ApproerSteps[i][_0x41fa62(0x201)]!=null)var _0x552a53=ApproerSteps[i][_0x41fa62(0x201)][_0x41fa62(0x26f)];for(j=0x0;j<_0x552a53[_0x41fa62(0x32b)];j++){var _0x132819=AllEmployee[_0x41fa62(0x32d)](function(_0xda9ee){return _0xda9ee['UserId']==_0x552a53[j];}),_0x12aed4=_spPageContextInfo['webAbsoluteUrl']+_0x41fa62(0x3d0)+escapeProperly(_0x132819[0x0][_0x41fa62(0x239)]);_0xb4f9f9+=_0x41fa62(0x233),_0xb4f9f9+=_0x41fa62(0x267)+_0x132819[0x0]['LoginName']+'\x22\x20src=\x22'+_0x12aed4+_0x41fa62(0x311),_0xb4f9f9+=_0x41fa62(0x2fd)+_0x132819[0x0][_0x41fa62(0x3dc)]+_0x41fa62(0x20c)+_0x132819[0x0][_0x41fa62(0x239)]+_0x41fa62(0x2ef);}}}}}_0xb4f9f9+=_0x41fa62(0x1f1);}$(_0x41fa62(0x33d))[_0x41fa62(0x206)](_0xb4f9f9);}function DeleteEStep(_0x382bd7){var _0x33267d=a13_0x385475;if(ActiveProessCount==0x0){if(confirm(_0x33267d(0x320))){$('#'+_0x382bd7)['remove'](),siteURL=_spPageContextInfo[_0x33267d(0x291)],console[_0x33267d(0x259)](_0x33267d(0x334)+siteURL);var _0x5e6eca=siteURL+_0x33267d(0x386)+_0x382bd7+'\x27)';$[_0x33267d(0x30b)]({'url':_0x5e6eca,'type':_0x33267d(0x277),'headers':{'X-RequestDigest':$(_0x33267d(0x359))[_0x33267d(0x282)](),'IF-MATCH':'*','X-HTTP-Method':_0x33267d(0x29f)},'async':![],'success':function(_0x423073){var _0x4fa6e5=_0x33267d;SavedStpApprovers['splice'](SavedStpApprovers[_0x4fa6e5(0x35e)](_0x15c787=>_0x15c787['Id']===_0x382bd7),0x1),alert(_0x4fa6e5(0x271)),UpdateApproverStps();},'eror':function(_0xc2093b){var _0x3d98ed=_0x33267d;console['log'](_0x3d98ed(0x2ee));}});}}else alert(_0x33267d(0x3a9));}function ClearDetails(){var _0x276f0e=a13_0x385475;$(_0x276f0e(0x370))[_0x276f0e(0x282)](''),$(_0x276f0e(0x265))[_0x276f0e(0x39b)]('checked',!![]),$(_0x276f0e(0x3e5))['hide'](),$(_0x276f0e(0x2a2))[_0x276f0e(0x3fb)](),$(_0x276f0e(0x3da))[_0x276f0e(0x2ba)]();}function SaveApprovers(){var _0x184823=a13_0x385475,_0x11232d=$(_0x184823(0x2d1))[_0x184823(0x282)](),_0x208db2=$(_0x184823(0x383))[_0x184823(0x282)]();if(_0x11232d=='Partial'){var _0x389953=[];$(_0x184823(0x23a))['each'](function(){var _0x59e54c=_0x184823;_0x389953[_0x59e54c(0x2e6)]($(this)[_0x59e54c(0x282)]());});if(ProcessType=_0x184823(0x32a)){if(_0x389953[_0x184823(0x32b)]>0x0){if(_0x208db2==_0x184823(0x36d)){if(selected_Dept[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x2c0)),![];}else{if(_0x208db2==_0x184823(0x29e)){if(selected_Office[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x2bd)),![];}else{if(_0x208db2==_0x184823(0x35d)){if(selected_Group['length']==0x0)return alert(_0x184823(0x29a)),![];}else{if(_0x208db2==_0x184823(0x3b8)){if(selected_Client['length']==0x0)return alert(_0x184823(0x31c)),![];}else{if(_0x208db2==_0x184823(0x294)){if(selected_CompEmp[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x23f)),![];}}}}}SetInitiatorList(),$(_0x184823(0x2ac))[_0x184823(0x3f7)]('hide');}else alert(_0x184823(0x2e3));}}else{if(_0x208db2==_0x184823(0x36d)){if(selected_Dept[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x2c0)),![];}else{if(_0x208db2==_0x184823(0x29e)){if(selected_Office[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x2bd)),![];}else{if(_0x208db2==_0x184823(0x35d)){if(selected_Group[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x29a)),![];}else{if(_0x208db2==_0x184823(0x3b8)){if(selected_Client[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x31c)),![];}else{if(_0x208db2==_0x184823(0x294)){if(selected_CompEmp[_0x184823(0x32b)]==0x0)return alert(_0x184823(0x23f)),![];}}}}}SetInitiatorList(),$(_0x184823(0x2ac))['modal']('hide');}}function SetApproversList(){var _0x35d70b=a13_0x385475,_0x4b9a4e='',_0x2b8206=$(_0x35d70b(0x3c9))['is'](_0x35d70b(0x262)),_0x1ae45c=0x0;SavedStpApprovers[_0x35d70b(0x32b)]>0x0&&(_0x1ae45c=Math[_0x35d70b(0x2e5)][_0x35d70b(0x3df)](Math,SavedStpApprovers[_0x35d70b(0x264)](function(_0x2946e2){var _0x1beaa7=_0x35d70b;return _0x2946e2[_0x1beaa7(0x244)];})));if(StpApprovers['length']>0x0){var _0x162fbd=_0x35d70b(0x404),_0x4e5bdc=![];for(i=0x0;i<StpApprovers[_0x35d70b(0x32b)];i++){if(ProcessType==_0x35d70b(0x32a))_0x4b9a4e=StpApprovers[i][_0x35d70b(0x38f)];else ProcessType==_0x35d70b(0x1f0)&&(_0x4b9a4e=_0x35d70b(0x2ab));var _0x5ac4ff=StpApprovers[i][_0x35d70b(0x380)],_0x291833=[];if(_0x5ac4ff[_0x35d70b(0x32b)]>0x0)for(m=0x0;m<_0x5ac4ff[_0x35d70b(0x32b)];m++){_0x5ac4ff[m]['Id']==null?_0x291833['push'](_0x5ac4ff[m]):_0x291833[_0x35d70b(0x2e6)](_0x5ac4ff[m]['Id']);}if(StpApprovers[i]['Type']==_0x35d70b(0x25d)||StpApprovers[i][_0x35d70b(0x1fb)]=='Role\x20Based')var _0x382e18=_0x35d70b(0x352),_0x5d7fc3={'__metadata':{'type':_0x35d70b(0x343)},'TemplateIDId':CurrTenplateID,'Sequence_No':_0x1ae45c+0x1,'StepName':StpApprovers[i][_0x35d70b(0x3e3)],'Title':_0x162fbd,'ApproverRole':StpApprovers[i]['StRole'],'ApproverType':_0x382e18,'ActionRequired':_0x4b9a4e,'SignaturePosition':StpApprovers[i]['SignPosition'],'PageFooterSign':StpApprovers[i][_0x35d70b(0x2bb)],'ParallelStakeholder':_0x2b8206};else{if(StpApprovers[i][_0x35d70b(0x1fb)]==_0x35d70b(0x35d))var _0x382e18=_0x35d70b(0x35d),_0x5d7fc3={'__metadata':{'type':_0x35d70b(0x343)},'TemplateIDId':CurrTenplateID,'Sequence_No':_0x1ae45c+0x1,'StepName':StpApprovers[i][_0x35d70b(0x3e3)],'Title':_0x162fbd,'ApproverRole':StpApprovers[i]['StRole'],'ApproverType':_0x382e18,'ActionRequired':_0x4b9a4e,'SignaturePosition':StpApprovers[i][_0x35d70b(0x220)],'GroupNameId':StpApprovers[i][_0x35d70b(0x37c)],'PageFooterSign':StpApprovers[i][_0x35d70b(0x2bb)],'ParallelStakeholder':_0x2b8206};else{if(StpApprovers[i][_0x35d70b(0x1fb)]==_0x35d70b(0x2f0))var _0x382e18=_0x35d70b(0x2f0),_0x5d7fc3={'__metadata':{'type':_0x35d70b(0x343)},'TemplateIDId':CurrTenplateID,'Sequence_No':_0x1ae45c+0x1,'StepName':StpApprovers[i][_0x35d70b(0x3e3)],'Title':_0x162fbd,'ApproverRole':StpApprovers[i][_0x35d70b(0x2ca)],'ApproverType':_0x382e18,'ActionRequired':_0x4b9a4e,'SignaturePosition':StpApprovers[i][_0x35d70b(0x220)],'ColumnName':StpApprovers[i][_0x35d70b(0x3d1)],'PageFooterSign':StpApprovers[i][_0x35d70b(0x2bb)],'ParallelStakeholder':_0x2b8206};else{if(StpApprovers[i][_0x35d70b(0x1fb)]==_0x35d70b(0x39c))var _0x382e18='Runtime',_0x5d7fc3={'__metadata':{'type':_0x35d70b(0x343)},'TemplateIDId':CurrTenplateID,'Sequence_No':_0x1ae45c+0x1,'StepName':StpApprovers[i][_0x35d70b(0x3e3)],'Title':_0x162fbd,'ApproverRole':StpApprovers[i][_0x35d70b(0x2ca)],'ApproverType':_0x382e18,'ActionRequired':_0x4b9a4e,'SignaturePosition':StpApprovers[i][_0x35d70b(0x220)],'ApproverDecidingStep':StpApprovers[i][_0x35d70b(0x3af)],'PageFooterSign':StpApprovers[i]['FooterSign'],'ParallelStakeholder':_0x2b8206};else var _0x382e18=_0x35d70b(0x2fc),_0x5d7fc3={'__metadata':{'type':_0x35d70b(0x343)},'TemplateIDId':CurrTenplateID,'Sequence_No':_0x1ae45c+0x1,'StepName':StpApprovers[i][_0x35d70b(0x3e3)],'ActionRequired':_0x4b9a4e,'Title':_0x162fbd,'ApproverType':_0x382e18,'SignaturePosition':StpApprovers[i][_0x35d70b(0x220)],'PageFooterSign':StpApprovers[i][_0x35d70b(0x2bb)],'ApproversId':{'results':_0x291833},'ApproverType':_0x382e18};}}}var _0x5bfb24=_spPageContextInfo[_0x35d70b(0x291)]+_0x35d70b(0x1ff);$[_0x35d70b(0x30b)]({'url':_0x5bfb24,'type':_0x35d70b(0x277),'async':![],'data':JSON[_0x35d70b(0x319)](_0x5d7fc3),'headers':{'accept':_0x35d70b(0x387),'Content-Type':_0x35d70b(0x387),'X-RequestDigest':$(_0x35d70b(0x359))[_0x35d70b(0x282)](),'X-HTTP-Method':_0x35d70b(0x277)},'success':function(_0x13e5e7){var _0x2ecdc5=_0x35d70b;if(_0x13e5e7['d'][_0x2ecdc5(0x272)]==_0x2ecdc5(0x39c)){}_0x4e5bdc=!![];var _0x3102b4=$[_0x2ecdc5(0x2e1)](PrTableColumnID,function(_0x27795b){var _0x26d0fc=_0x2ecdc5;return _0x27795b[_0x26d0fc(0x3e3)]==StpApprovers[i][_0x26d0fc(0x3e3)];});if(_0x3102b4[_0x2ecdc5(0x32b)]>0x0)for(var _0x8b9c86=0x0;_0x8b9c86<_0x3102b4[0x0][_0x2ecdc5(0x317)][_0x2ecdc5(0x32b)];_0x8b9c86++){var _0x1858c4=[];_0x3102b4[0x0][_0x2ecdc5(0x317)][_0x8b9c86][_0x2ecdc5(0x31e)]!=''&&(_0x1858c4=_0x3102b4[0x0][_0x2ecdc5(0x317)][_0x8b9c86]['tblColIds'][_0x2ecdc5(0x39e)](','));var _0x1cb911=_0x2ecdc5(0x30e),_0x4978db={'__metadata':{'type':_0x2ecdc5(0x374)+_0x1cb911+_0x2ecdc5(0x3bd)},'StepIDId':parseInt(_0x13e5e7['d']['ID']),'TemplateIDId':parseInt(_0x3102b4[0x0][_0x2ecdc5(0x33c)]),'StepType':_0x3102b4[0x0]['StepType'],'EditScope':'Partial','Title':_0x2ecdc5(0x25b),'ColumnIDId':parseInt(_0x3102b4[0x0][_0x2ecdc5(0x317)][_0x8b9c86]['tblId']),'Title':'Edit\x20Scope','TableEditScope':_0x3102b4[0x0]['ColumnNo'][_0x8b9c86][_0x2ecdc5(0x3ac)],'TableColumnsId':{'results':_0x1858c4}};ApprovalTemplateEditScopeSet(_0x1cb911,_0x4978db);}$(_0x2ecdc5(0x2c8))['modal'](_0x2ecdc5(0x2ba));},'error':function(_0x46cab1){var _0x580257=_0x35d70b;console[_0x580257(0x259)](_0x46cab1),_0x4e5bdc=![];}});}_0x4e5bdc&&(UpdateApproverStps(),getTempID(CurrTenplateID),alert(_0x35d70b(0x274)),$(_0x35d70b(0x247))[_0x35d70b(0x3f7)]('hide'));}}function UpdateApproverStps(){var _0x230e28=a13_0x385475,_0x236620=[];if(SavedStpApprovers[_0x230e28(0x32b)]>0x0)var _0x4e221f=_0x236620['concat'](SavedStpApprovers,StpApprovers);else var _0x4e221f=StpApprovers;var _0x558d11={'__metadata':{'type':_0x230e28(0x2e8)},'NumberOfSteps':_0x4e221f[_0x230e28(0x32b)]};$['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27ApprovalProcessMaster\x27)/items('+CurrTenplateID+')','type':_0x230e28(0x390),'async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x230e28(0x359))[_0x230e28(0x282)](),'content-Type':'application/json;odata=verbose','X-Http-Method':_0x230e28(0x390),'If-Match':'*'},'data':JSON['stringify'](_0x558d11),'success':function(_0x513215){var _0x438b77=_0x230e28;console[_0x438b77(0x259)]('Temp\x20updated.'),getAllTemplate();},'error':function(_0x33e8e1){var _0x2cf882=_0x230e28;console[_0x2cf882(0x259)](_0x33e8e1),alert(_0x33e8e1);}});}var FirstStepName='',Action='',FirstStpApprover=[];function SaveApproverQueue(_0x54586f,_0x19dfb8,_0x10e8a7){var _0x5c92db=a13_0x385475,_0xeb2713=$[_0x5c92db(0x3a0)]();FirstStpApprover=[],FirstStepName='',stepID='';if(SavedStpApprovers[_0x5c92db(0x32b)]>0x0){var _0x1fe3e7=_0x5c92db(0x404),_0x9fffc1=![];FirstStepName=SavedStpApprovers[0x0]['StName'],Action=SavedStpApprovers[0x0]['ActionReq'];for(i=0x0;i<SavedStpApprovers[_0x5c92db(0x32b)];i++){StpUsers=[];if(i==0x0)var _0x3380a7=_0x5c92db(0x211);else var _0x3380a7=_0x5c92db(0x235);if(SavedStpApprovers[i]['Type']=='Role\x20Based'){var _0x439afb=SavedStpApprovers[i][_0x5c92db(0x2ca)];if(_0x439afb==_0x5c92db(0x406)){var _0x330e84=AllEmployee[_0x5c92db(0x32d)](function(_0x56797f){var _0x4d0eb9=_0x5c92db;return _0x56797f[_0x4d0eb9(0x407)]==_spPageContextInfo[_0x4d0eb9(0x275)];});_0x330e84[_0x5c92db(0x32b)]>0x0?(i==0x0&&FirstStpApprover[_0x5c92db(0x2e6)](_0x330e84[0x0][_0x5c92db(0x406)]['ID']),StepApprver[_0x5c92db(0x2e6)]({'Name':_0x330e84[0x0][_0x5c92db(0x406)][_0x5c92db(0x284)],'Id':_0x330e84[0x0][_0x5c92db(0x406)]['ID']}),StpUsers[_0x5c92db(0x2e6)](_0x330e84[0x0][_0x5c92db(0x406)]['ID'])):alert('Users\x20are\x20not\x20available\x20for\x20'+_0x439afb);}else{if(_0x439afb=='Departmental\x20Project\x20Admin'){var _0x277bb7=getUserDept();GetlistData(_0x5c92db(0x266)+companyIdNavigation+_0x5c92db(0x35b)+_0x277bb7+_0x5c92db(0x3ee))[_0x5c92db(0x252)](function(_0x2adb98){var _0x44fcbe=_0x5c92db;if(_0x2adb98['d'][_0x44fcbe(0x26f)]['length']>0x0){var _0x28492e=_0x2adb98['d']['results'][0x0][_0x44fcbe(0x2ff)][_0x44fcbe(0x26f)];if(_0x28492e[_0x44fcbe(0x32b)]>0x0)for(a=0x0;a<_0x28492e[_0x44fcbe(0x32b)];a++){StepApprver[_0x44fcbe(0x2e6)]({'Name':_0x28492e[a]['Title'],'Id':_0x28492e[a]['ID']}),StpUsers[_0x44fcbe(0x2e6)](_0x28492e[a]['ID']),i==0x0&&FirstStpApprover['push'](_0x28492e[a]['ID']);}else alert(_0x44fcbe(0x215)+_0x439afb);}else alert(_0x44fcbe(0x215)+_0x439afb);});}else{if(_0x439afb=='Head\x20of\x20the\x20Department'){var _0x277bb7=getUserDept();GetlistData(_0x5c92db(0x266)+companyIdNavigation+_0x5c92db(0x35b)+_0x277bb7+_0x5c92db(0x40f)+_0x439afb+'\x27')['done'](function(_0x33cee1){var _0x46df36=_0x5c92db;if(_0x33cee1['d']['results'][_0x46df36(0x32b)]>0x0){var _0x390599=_0x33cee1['d'][_0x46df36(0x26f)][0x0][_0x46df36(0x2ff)][_0x46df36(0x26f)];if(_0x390599[_0x46df36(0x32b)]>0x0)for(b=0x0;b<_0x390599[_0x46df36(0x32b)];b++){StepApprver[_0x46df36(0x2e6)]({'Name':_0x390599[b][_0x46df36(0x284)],'Id':_0x390599[b]['ID']}),StpUsers[_0x46df36(0x2e6)](_0x390599[b]['ID']),i==0x0&&FirstStpApprover[_0x46df36(0x2e6)](_0x390599[b]['ID']);}else alert(_0x46df36(0x215)+_0x439afb);}else alert(_0x46df36(0x215)+_0x439afb);});}else GetlistData(_0x5c92db(0x1fd)+companyIdNavigation+_0x5c92db(0x255)+_0x439afb+'\x27')[_0x5c92db(0x252)](function(_0x4b6c18){var _0x14d863=_0x5c92db;if(_0x4b6c18['d']['results']['length']>0x0){var _0x3e9e9e=_0x4b6c18['d'][_0x14d863(0x26f)][0x0][_0x14d863(0x2ff)][_0x14d863(0x26f)];if(_0x3e9e9e['length']>0x0)for(j=0x0;j<_0x3e9e9e['length'];j++){i==0x0&&FirstStpApprover['push'](_0x3e9e9e[j]['ID']),StepApprver[_0x14d863(0x2e6)]({'Name':_0x3e9e9e[j][_0x14d863(0x284)],'Id':_0x3e9e9e[j]['ID']}),StpUsers[_0x14d863(0x2e6)](_0x3e9e9e[j]['ID']);}else alert(_0x14d863(0x215)+_0x439afb);}else alert(_0x14d863(0x215)+_0x439afb);});}}}else{if(SavedStpApprovers[i]['Type']==_0x5c92db(0x35d)){var _0x553322=SavedStpApprovers[i][_0x5c92db(0x37c)];GetlistData(_0x5c92db(0x32e)+SavedStpApprovers[i]['GroupName']+'\x27')[_0x5c92db(0x252)](function(_0x648d18){var _0x3b853c=_0x5c92db;if(_0x648d18['d'][_0x3b853c(0x26f)][_0x3b853c(0x32b)]>0x0){var _0x3ee06b=_0x648d18['d'][_0x3b853c(0x26f)][0x0][_0x3b853c(0x293)][_0x3b853c(0x26f)];if(_0x3ee06b['length']>0x0)for(j=0x0;j<_0x3ee06b[_0x3b853c(0x32b)];j++){i==0x0&&FirstStpApprover[_0x3b853c(0x2e6)](_0x3ee06b[j]['ID']),StepApprver[_0x3b853c(0x2e6)]({'Name':_0x3ee06b[j][_0x3b853c(0x284)],'Id':_0x3ee06b[j]['ID']}),StpUsers['push'](_0x3ee06b[j]['ID']);}else alert(_0x3b853c(0x215)+SavedStpApprovers[i][_0x3b853c(0x37c)]);}else alert(_0x3b853c(0x215)+SavedStpApprovers[i]['GroupName']);});}else{if(SavedStpApprovers[i][_0x5c92db(0x1fb)]==_0x5c92db(0x2fc)){var _0x29193a=SavedStpApprovers[i][_0x5c92db(0x380)];StpUsers=[];for(m=0x0;m<_0x29193a[_0x5c92db(0x32b)];m++){i==0x0&&FirstStpApprover[_0x5c92db(0x2e6)](_0x29193a[m]),StpUsers['push'](_0x29193a[m]);}}else{if(SavedStpApprovers[i][_0x5c92db(0x1fb)]==_0x5c92db(0x39c)){var _0x29193a=SavedStpApprovers[i][_0x5c92db(0x380)];StpUsers=[];for(m=0x0;m<_0x29193a['length'];m++){i==0x0&&FirstStpApprover['push'](_0x29193a[m]),StpUsers[_0x5c92db(0x2e6)](_0x29193a[m]);}}}}}if(SavedStpApprovers[i][_0x5c92db(0x1fb)]!='Runtime'&&SavedStpApprovers[i][_0x5c92db(0x1fb)]!=_0x5c92db(0x2f0)){if(StpUsers[_0x5c92db(0x32b)]==0x0){alert('Approvers\x20are\x20not\x20found\x20in\x20'+SavedStpApprovers[i][_0x5c92db(0x3e3)]+'.\x20');break;}}var _0x15057d=0x0;_0x19dfb8!=_0x5c92db(0x2e2)?_0x15057d=i+0x1:_0x15057d=parseInt(_0x10e8a7)+parseInt(i);var _0x6447e0=SavedStpApprovers[i]['StRole']?SavedStpApprovers[i][_0x5c92db(0x2ca)]:SavedStpApprovers[i][_0x5c92db(0x37c)],_0x324f95={'__metadata':{'type':_0x5c92db(0x224)},'RequestIDId':_0x54586f,'TemplateIDId':CurrTenplateID,'Sequence_No':_0x15057d,'StepName':SavedStpApprovers[i]['StName'],'Status':_0x3380a7,'Title':_0x1fe3e7,'ActionRequired':SavedStpApprovers[i][_0x5c92db(0x38f)],'SignaturePosition':SavedStpApprovers[i]['SignPosition'],'ApproverType':SavedStpApprovers[i][_0x5c92db(0x1fb)],'ApproverRole':_0x6447e0,'ColumnName':SavedStpApprovers[i][_0x5c92db(0x3d1)],'AskApprover':SavedStpApprovers[i][_0x5c92db(0x381)],'AppoverForStep':SavedStpApprovers[i]['AppoverForStep'],'ApproverDecidingStep':SavedStpApprovers[i]['ApproverDecidingStep'],'StepID':SavedStpApprovers[i]['Id']['toString'](),'ApproversId':{'results':StpUsers}},_0x5ce572=_spPageContextInfo[_0x5c92db(0x291)]+_0x5c92db(0x20b);$[_0x5c92db(0x30b)]({'url':_0x5ce572,'type':'POST','async':![],'data':JSON['stringify'](_0x324f95),'headers':{'accept':_0x5c92db(0x387),'Content-Type':_0x5c92db(0x387),'X-RequestDigest':$(_0x5c92db(0x359))['val'](),'X-HTTP-Method':_0x5c92db(0x277)},'success':function(_0x59764a){i==0x0&&(stepID=_0x59764a['d']['ID']);;_0x9fffc1=!![];},'error':function(_0x586e63){var _0x299db9=_0x5c92db;console[_0x299db9(0x259)](_0x586e63);}});}_0x19dfb8!=_0x5c92db(0x2e2)&&(_0x9fffc1&&UpdateProcessApprover(_0x54586f,FirstStpApprover,FirstStepName,stepID,Action));}}function UpdateProcessApprover(_0x370a20,_0x3c4ffd,_0x2ba8f4,_0x7325df,_0x3c90ff){var _0x2b9b30=a13_0x385475,_0xd5115f=$[_0x2b9b30(0x3a0)](),_0xec2312={'__metadata':{'type':_0x2b9b30(0x241)},'RequestById':_spPageContextInfo['userId'],'CurrentStep':_0x2ba8f4,'CurrentStepID':_0x7325df[_0x2b9b30(0x26b)](),'ActionRequired':_0x3c90ff,'ApproversId':{'results':_0x3c4ffd}};return $[_0x2b9b30(0x30b)]({'url':_spPageContextInfo[_0x2b9b30(0x291)]+_0x2b9b30(0x3fd)+_0x370a20+')','type':'PATCH','async':![],'headers':{'accept':_0x2b9b30(0x387),'X-RequestDigest':$(_0x2b9b30(0x359))['val'](),'content-Type':_0x2b9b30(0x387),'X-Http-Method':_0x2b9b30(0x390),'If-Match':'*'},'data':JSON[_0x2b9b30(0x319)](_0xec2312),'success':function(_0x252ce6){var _0x30bfdd=_0x2b9b30;console[_0x30bfdd(0x259)](_0x30bfdd(0x308)),alert(_0x30bfdd(0x27e)),window['location'][_0x30bfdd(0x28f)]('approvals.aspx');},'error':function(_0x532853){var _0x2e1885=_0x2b9b30;console[_0x2e1885(0x259)](_0x532853),alert(_0x2e1885(0x394));}}),_0xd5115f[_0x2b9b30(0x326)]();}var unique_Department=[],duplicate_Department=[],LoggedUserDept='';function getUserDept(){var _0x33cfe0=a13_0x385475,_0x30bd94=_spPageContextInfo[_0x33cfe0(0x366)];return console[_0x33cfe0(0x259)](_0x30bd94),$['ajax']({'url':_spPageContextInfo[_0x33cfe0(0x291)]+_0x33cfe0(0x270)+_spPageContextInfo[_0x33cfe0(0x275)]+'\x27','method':_0x33cfe0(0x33e),'async':![],'headers':{'Accept':_0x33cfe0(0x3cc)},'success':function(_0x215026){var _0x36b61f=_0x33cfe0;LoggedUserDept=_0x215026['d'][_0x36b61f(0x26f)][0x0][_0x36b61f(0x36d)][_0x36b61f(0x351)];},'error':function(_0x376002){var _0x351a84=_0x33cfe0;console[_0x351a84(0x259)](_0x376002);}}),LoggedUserDept;}function GetUserLogin(_0x552cfa){var _0x1f67c7=a13_0x385475,_0x242161='',_0x2b2763=_spPageContextInfo['webAbsoluteUrl']+_0x1f67c7(0x3b5)+_0x552cfa+')',_0x435a4a={'accept':_0x1f67c7(0x387)};return $[_0x1f67c7(0x30b)]({'url':_0x2b2763,'contentType':_0x1f67c7(0x387),'headers':_0x435a4a,'async':![],'success':function(_0x176e1c){var _0x1b1d16=_0x1f67c7;_0x242161=_0x176e1c['d'][_0x1b1d16(0x3dc)]['split']('|')[0x2];},'error':function(_0x176ee3){console['log'](_0x176ee3);}}),_0x242161;}var ActiveProessCount='';function GetTempDetails(_0x49a8b6){var _0xe0585=a13_0x385475;$['ajax']({'async':![],'url':_spPageContextInfo[_0xe0585(0x291)]+_0xe0585(0x1ea)+_0x49a8b6+'\x27','type':'GET','headers':{'accept':_0xe0585(0x387)},'success':function(_0x261027){var _0x1596ed=_0xe0585;ProcessType=_0x261027['d'][_0x1596ed(0x26f)][0x0][_0x1596ed(0x1eb)],ActiveProessCount=_0x261027['d']['results'][0x0][_0x1596ed(0x22d)],_0x261027['d'][_0x1596ed(0x26f)][0x0][_0x1596ed(0x1eb)]==_0x1596ed(0x1f0)?($(_0x1596ed(0x3f8))['css'](_0x1596ed(0x2dc),'none'),$(_0x1596ed(0x345))[_0x1596ed(0x39b)](_0x1596ed(0x20a),!![]),$('#ActionReq\x20option:selected')[_0x1596ed(0x325)](_0x1596ed(0x313)),$(_0x1596ed(0x3b1))[_0x1596ed(0x282)](_0x1596ed(0x2ab))[_0x1596ed(0x339)](_0x1596ed(0x313),'selected'),$(_0x1596ed(0x217))[_0x1596ed(0x30d)](_0x1596ed(0x2dc),_0x1596ed(0x306)),$(_0x1596ed(0x377))[_0x1596ed(0x2b2)]()['css']('display',_0x1596ed(0x306)),$(_0x1596ed(0x40c))[_0x1596ed(0x30d)]('visibility',_0x1596ed(0x1f3)),$(_0x1596ed(0x2a5))[_0x1596ed(0x30d)](_0x1596ed(0x2dc),_0x1596ed(0x3e8))):($(_0x1596ed(0x3f8))[_0x1596ed(0x30d)]('display',_0x1596ed(0x3de)),$(_0x1596ed(0x345))[_0x1596ed(0x39b)](_0x1596ed(0x20a),!![]),$('input[name=optradio][value=Field]')[_0x1596ed(0x2b2)]()[_0x1596ed(0x30d)](_0x1596ed(0x2dc),_0x1596ed(0x3e8)),$('.signBox')['css'](_0x1596ed(0x2dc),'none'),$(_0x1596ed(0x217))[_0x1596ed(0x30d)](_0x1596ed(0x2dc),_0x1596ed(0x3de)),$(_0x1596ed(0x40c))[_0x1596ed(0x30d)](_0x1596ed(0x214),_0x1596ed(0x2b5)));},'error':function(_0x13562e){var _0x2bd3b4=_0xe0585;console[_0x2bd3b4(0x259)](_0x13562e);}});}$(document)[a13_0x385475(0x22a)](function(){var _0x1a004d=a13_0x385475;console[_0x1a004d(0x259)](_0x1a004d(0x219)),initializePeoplePicker(_0x1a004d(0x231)),$(_0x1a004d(0x3a2))[_0x1a004d(0x223)](function(){var _0x46fbfe=_0x1a004d;onChangeTask(_0x46fbfe(0x36e),_0x46fbfe(0x231),_0x46fbfe(0x3fe));});});function a13_0x18ce(){var _0x14cc8d=['<td><input\x20type=\x27checkbox\x27\x20name=\x27PartialTableChkbox\x27\x20onclick=\x27setSelectAll(this)\x27\x20style=\x27height:\x2017px;\x20width:\x2017px;\x27\x20value=\x27','\x27and\x20WebPartName\x20eq\x20\x27','OfficeLocation','.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.compboxs','></div></td>','log','Key','Edit\x20Scope','ColumnTitle','Role','<option\x20value=\x22Manager\x22\x20>Reporting\x20Manager</option>','#SelectedItems4','responseJSON','Entire',':checked','.Group:checked','map','input[name=optradio][value=Role]','/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID\x20eq\x20\x27','<div\x20class=\x22imgsetion\x22><div\x20class=\x22empoyeeimg\x22\x20style=\x22float:left;\x22><img\x20title=\x22','<div\x20class=\x22dropdown\x20pull-right\x22>','Please\x20select\x20position.','At\x20Bottom\x20of','toString','\x22\x20value=','User','selectedIndex','results','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=Department/Id,Department/DepartmentName&$expand=Department&$filter=LogonName/ID\x20eq\x20\x27','Selected\x20step\x20has\x20been\x20deleted.','ApproverType','select[name=\x27tblColSetField\x27]','Approvers\x20saved\x20successfully','userId','<option\x20value=\x22Initiator\x22\x20>Initiator</option>','POST','GroupId','<button\x20id=\x27Init','<select\x20name=\x27tblColSetFieldSteps\x27\x20class=\x27select_designnow\x27\x20id=\x27','Unauthorized\x20access!','.modal-body\x20#editablefildStepsDIV,.colbox,.grpbox,.usrbox,.runbox,#btnEditStep,#PositionOptList','Sequence_No','The\x20approval\x20request\x20has\x20been\x20submitted\x20successfully.','setEditableColSelAll','input[name=\x27optradio\x27]:checked','#chkSign','val','#ddlgroups','Title','.runbox','<span\x20class\x20=\x22left_mg_pad\x22>Approver\x20Type\x20=\x20Column\x20Value</span>','<h3\x20class=\x27member-name\x20text-ellipsis\x27>','.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.clientboxs','<div\x20class=\x22imgsetion\x22\x20>','Add\x20Row','<option\x20value=\x22Head\x20of\x20the\x20Department\x22\x20>Head\x20of\x20the\x20Department</option>','<div\x20class=\x22row\x20no-gutter\x22>','1051277QzedDf','OnValueChangedClientScript','replace','<option\x20value=\x27Add\x20Row\x27>Add\x20Row</option>','webAbsoluteUrl','children','Approvers','Employee','Edit',':checkbox[value=\x27',')\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-trash\x22></i>\x20Delete</a></li></ul>','Web\x20Link','href','Please\x20select\x20group','\x22,\x20\x22','click','#ddlPreSteps','Office','DELETE','.officeboxs','<option\x20value=\x22Internal\x20Supervisor\x22\x20>Internal\x20Supervisor</option>','.rolbox','\x27\x20type=\x27button\x27\x20class=\x27btn\x20custom-btn\x20new-btnad\x27\x20style=\x27display:','.modal-body\x20.rolbox','.signBox','<div\x20style=\x22clear:both\x22></div>','/_api/web/lists/GetByTitle(\x27ApprovalTemplateEditScope\x27)/items(','Dept','input[name=selectives][value=','#ddlClient','Review\x20&\x20Sign','#stepsapprover','<div\x20class=\x27col-md-6\x20col-sm-6\x20userBoxParent\x27>','67580KjtTLY','ddlCompEmp','#btnEditStep','GuestClientId','parent','siblings','ExternalUsers','visible','<span>','\x27&$top=5000','addEventListener',')\x27><i\x20class=\x27fa\x20fa-times\x27></i></a>','hide','FooterSign','ColumnName','Please\x20select\x20office','\x27\x20Value=\x27','EditScope','Please\x20select\x20department.','\x27\x20onchange=\x27showColAddBtn(this)\x27>','PrincipalAccountType','.deptboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs','.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.clientboxs','Review\x20Only','GetAllUserInfo','FullName','#btnSubmitStep','EditStep','StRole','when','empty','input[name=selectives][value=\x27Office\x27]','input[name=selectives][value=\x27Group\x27]','remove','<div\x20class=\x27members-card\x20border-0\x27>','input[name=\x22scrops\x22]:checked','Anyone','Full-Form','<td>','<p\x20class=\x27member-email\x20text-ellipsis\x20mb0\x27>','Edit\x20Data','.clientboxs',':visible','indexOf','</tr>','TableColumnsId','display','<option\x20value=\x22Head\x20of\x20the\x20Office\x22\x20>Head\x20of\x20the\x20Office</option>','getItemsWithQueryItem','change','parentNode','grep','SPLCase','Set\x20the\x20editable\x20columns','SPClientPeoplePicker','max','push','#ddlPersonColumn\x20option:selected','SP.Data.ApprovalProcessMasterListItem',')\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-pencil\x22\x20></i>\x20Edit</a></li>','</div><div\x20class=\x22flexitem\x20step_gap\x22>','#ddlDept','StepName','StepType','An\x20error\x20occurred.\x20Please\x20try\x20again.','</a></div></div>','Field','?$select=*,LoginName/EMail,LoginName/Title,LoginName/Id,LoginName/FirstName,LoginName/LastName,LoginName/EMail&$expand=LoginName&$filter=\x20Status\x20eq\x20\x27Active\x27&$top=5000','input[name=optradio][value=Runtime]','Init','input[name=\x22optradio\x22]','true','input[name=optradio][value=User]','<a\x20class=\x27btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x27\x20onclick=\x27removeUserBox(this,\x20\x22','<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27\x20selected>Entire</option>','\x27\x20or\x20Scope\x20eq\x20\x27Everyone\x27)\x20','DisplayText','2167Btggys','Specific','</div></div><div\x20class=\x22imagecontent\x22><h4>','#editablefildStepsDIV','Contributors','\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#editablecolsfild\x27\x20onclick=\x27LoadPartialtblColSteps(this,','input:checkbox[name=\x22PartialTableChkboxSteps\x22]','.peoplepickeboxs,.deptboxs,.groupboxs,.clientboxs,.compboxs','ApprovalProcessMaster','each','</h5>','none','TableEditScope','Approvers\x20updated.','/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items','CompanyId','ajax','.twocomb','css','ApprovalTemplateEditScope','Initiation','userEmail','\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>','<h3>','selected','ApproverForStep','Designation','#btnAddStep','ColumnNo','BottomMost','stringify','2IfKcRl','Process\x20Step\x20has\x20been\x20updated.','Please\x20select\x20client','<td><input\x20type=\x27checkbox\x27\x20name=\x27PartialTableChkboxSteps\x27\x20onclick=\x27setSelectAll(this)\x27\x20style=\x27height:\x2017px;\x20width:\x2017px;\x27\x20value=\x27','tblColIds','some','Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20step?',')\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-trash\x22></i>\x20Delete</a></li>','5247436oLxRBJ','#TableColsFieldsList','#ddlroles','removeAttr','promise',')\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-pencil\x22></i>\x20Edit</a></li>','<li\x20onclick=\x22EditEStep(','.peoplepickeboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs','Process','length','input[name=optionls][text=\x27At\x20Bottom\x20most\x27]','filter','/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items?$select=Title,Approvers/ID,Approvers/Title&$expand=Approvers&$filter=ID\x20eq\x20\x27','\x27&$orderby=\x20Sequence_No\x20asc','html','\x27\x20and\x20StepType\x20eq\x20\x27Initiation\x27','.modal-body\x20select','/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=Contributors/EMail&$expand=Contributors&$filter=WebPartName\x20eq\x20\x27Process\x20Admin\x27\x20and\x20Company\x20eq\x20\x27','from\x20top\x20nav\x20-\x20','#ddlPreSteps\x20option:selected','Add','Header','#addStepPopup','attr','ColumnType','/_api/web/lists/getbytitle(\x27ApprovalTemplateSetup\x27)/items?$filter=(ColumnType\x20eq\x20\x27Person\x27)\x20and\x20(TemplateID\x20eq\x20\x27','TemplateID','#stepboxView','GET','Stakeholder','input[name=scrops][value=\x27',')\x27><i\x20class=\x27fa\x20fa-ellipsis-h\x27\x20aria-hidden=\x27true\x27></i></button></div></td>','/_api/web/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items(','SP.Data.ApprovalTemplateStepsListItem','Selected\x20user\x20','input[name=optionls][value=\x27At\x20Bottom\x20most\x27]','#ddlPreSteps\x20option[value=\x27','tblId','StUser','#ddlPersonColumn','select[name=\x27tblColSetFieldSteps\x27]','Delete\x20Success','<h5>','Process\x20Steps','<div\x20class=\x27members-card-body-info\x20text-ellipsis\x27>','#SelectedItems5','<ul\x20class=\x22dropdown-menu\x22>','DepartmentName','Role\x20Based','<div\x20class=\x22imagecontent\x22>','#ddlPreSteps\x20option','\x27\x20and\x20StepID\x20eq\x20\x27','8470581YlLXil','Update','.PartialTableChkbox','#__REQUESTDIGEST','User\x20already\x20exists!!','\x27and\x20Department/DepartmentName\x20eq\x20\x27','<span>Action\x20=\x20','Group','findIndex','\x22><div\x20class=\x22topsec\x22>','input[name=selectives][value=\x27Anyone\x27]','/_api/web/ensureuser','<option\x20value=\x22Process\x20Admin\x22\x20>Process\x20Admin</option>','EntityData','<option\x20value=\x22Tech\x20Admin\x22\x20>Tech\x20Admin</option>','<div\x20class=\x22flexitem\x20col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22imgsetion\x22><div\x20class=\x22empoyeeimg\x22\x20style=\x22float:left;\x22><img\x20title=\x22','siteAbsoluteUrl','<option\x20value=\x22Select\x22>--Select--</option>','#PositionOptList','Kindly\x20enter\x20the\x20StepName.','SignaturePosition','OfficeLocationId','closest','Department','InitiatorPPL_TopSpan','<div\x20class=\x22row\x22>','#txtStepName','parents','FixedText','<button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22>','SP.Data.','<option\x20value=\x22Project\x20Admin\x20of\x20Department\x22\x20>Project\x20Admin\x20of\x20Department</option>','<div\x20class=\x27members-card-head\x27>','input[name=optradio][value=Field]','#InitiatorPPL','AddUserKeys','Steps','\x22,\x20','GroupName','<li><input\x20type=\x22checkbox\x22\x20class=\x22','<td><div\x20class=\x27bothwarpboxsec\x27>','<li\x20onclick=\x22EditStep(','UsrID','AskApprover','\x27)/items(\x27','input[name=\x22selectives\x22]:checked','#ProcessStep','Initiators','/_api/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items(\x27','application/json;odata=verbose','PartialTableChkbox','PartialTableChkboxSteps','CompanyID','\x20not\x20in\x20list','</p>','#selectives-Initiator','390','ActionReq','PATCH','<li\x20id=\x22','TimeSheetUniversalinsert','</h3>','error','<option\x20value=\x27Add\x20Row\x27\x20selected>Add\x20Row</option>','<li><div\x20class=\x22topsec\x22>','1727984UhuQQv','Columns','></td>',',this)\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-trash\x22></i>\x20Delete</a></li>','prop','Runtime','DepartmentId','split','QR\x20Code','Deferred','#Initiation','#InitiatorPPL_TopSpan','<div\x20class=\x27members-card-body\x27>','.peoplepickeboxs','.Dept:checked','Partial','</h4>','3242710ubamve','This\x20action\x20cannot\x20be\x20performed\x20now.\x0aSome\x20approvals\x20using\x20this\x20Template\x20\x20is\x20under\x20processing.','trim','<option\x20value=\x22Project\x20Admin\x22\x20>Project\x20Admin</option>','tblEditScope','Companies','<li\x20onclick=\x22DeleteEStep(','ApproverDecidingStep','ResolvePrincipalSource','#ActionReq','setEditableSelAll','getElementById','text','/_api/web/getuserbyid(','<div\x20class=\x22imgsetion\x22>','.deptboxs','Client','Please\x20enter\x20Step\x20name.','DeleteProcessedUser','#SelectedItems3','Width','ListItem','getElementsByName','ddlGroup','Guest\x20User','ColumnIDId','resolve','<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27>Entire</option>','input[name=selectives][value=\x27Employee\x27]','.Client:checked','6Pjrkga','reject','.Company:checked','#chkAllStack','#SelectedItems1','3yWBmTo','application/json;\x20odata=verbose','<img\x20src=\x22https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>','setEditableSelStepsAll','.groupboxs','/_layouts/15/userphoto.aspx?accountname=','ColName','</select>','#ddlgroups\x20option:selected','Selective','input:checkbox[name=\x27PartialTableChkboxSteps\x27]:checked','\x27&$orderby=SequenceNo\x20asc','.compboxs','TableChkboxSteps','<button\x20id=\x27Step','.grpbox','.stepcolms','LoginName',',this)\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#\x22><a\x20href=\x22#\x22><i\x20class=\x22fa\x20fa-pencil\x22\x20></i>\x20Edit</a></li>','block','apply','Error\x20in\x20getdata.','ActionRequired','<div\x20class=\x22topsec\x22>','StName','6410997mZKLRv','.usrbox','\x27)/items','#TableFieldsList','initial','<option>','<option\x20value=\x22HR\x20Admin\x22\x20>HR\x20Admin</option>','/_api/web/lists/getbytitle(\x27ApprovalTemplateSetup\x27)/items?$filter=TemplateID\x20eq\x20\x27','#setEditableColSelAll','</span>','\x27\x20and\x20WebPartName\x20eq\x20\x27Project\x27','hidden.bs.modal','</div></div>','Company','/_api/web/lists/getbytitle(\x27ApprovalProcessMaster\x27)/items?$select=*,Id,Title,NumberOfRequest_Active,TemplateName,Active,Initiators/Title,Initiators/EMail,Initiators/ID&$expand=Initiators&$filter=ID\x20eq\x20\x27','#SelectedItems2','.col-md-6','<div\x20class=\x22flexitem\x22>','</div>','modal','.editScope','<option\x20value=\x27Add\x20Row\x27\x20>Add\x20Row</option>','.stepbox','show','[id$=\x27Stepuser_TopSpan\x27]','/_api/web/lists/getbytitle(\x27ApprovalProcessList\x27)/items(','selectives-Initiator','ParallelStakeholder','SearchPrincipalSource','.PartialTableChkbox:checked','#setEditableSelStepsAll','.peoplepickeboxs,.officeboxs,.deptboxs,.clientboxs,.compboxs','Step\x20Approvers','input:checkbox[name=\x22TableChkboxSteps\x22]','Manager','UserId','</option>','ApproversGroups','<li\x20onclick=\x22DeleteStep(','<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27\x20>Entire</option>','.stepsOfProc','.Office:checked','?$select=Title,ID,CompanyID/Title&$expand=CompanyID','\x27\x20and\x20WebPartName\x20eq\x20\x27','<option\x20value=\x22Select\x22\x20>--Select--</option>','/_api/web/lists/getbytitle(\x27ApprovalProcessMaster\x27)/items?$select=ProcessType,Id,Title,NumberOfRequest_Active,TemplateName,Active&$filter=ID\x20eq\x20\x27','ProcessType','/_api/web/lists/getbytitle(\x27ApprovalTemplateTable\x27)/items?$filter=SetupID\x20eq\x20\x27','splice','Select','\x27\x20type=\x27button\x27\x20class=\x27btn\x20custom-btn\x20new-btnad\x27\x20style=\x27display:none\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#editablecolsfild\x27\x20onclick=\x27LoadPartialtblColSteps(','Document','</div></li>','Stepuser_TopSpan','hidden','LogonName','</a></div>','SkillSet','.addstepsboxsec','<option\x20value=\x27Entire\x27>Entire</option>','/_api/web/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items?$select=*,GroupName/Id,GroupName/Title,Approvers/Id,Approvers/Title,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID,Approvers,GroupName&$filter=TemplateID/ID\x20eq\x20\x27','width','Type','#ddlOffice','/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors&$filter=Company/ID\x20eq\x20\x27','Stepuser','/_api/web/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items','input[name=scrops][value=\x27Full-Form\x27]','ApproversId','(AskApprover\x20eq\x20false)\x20and\x20','</ul></div></div>','Table','Please\x20select\x20column.','append','At\x20Bottom\x20most','Email','value','checked','/_api/web/lists/getbytitle(\x27ApprovalProcessQueue\x27)/items','</h4><a\x20href=\x22#\x22\x20style=\x22cursor:\x20auto;\x22>','input[type=\x27radio\x27][name=optionls]:checked','AllowMultipleValues','input[name=optradio][value=Group]','<option\x20value=\x27\x27>Select</option>','Pending','#editablecolsfild','Employees','visibility','Users\x20are\x20not\x20available\x20for\x20','<option\x20value=\x27Columns\x27\x20selected>Columns</option>','#secActionReq','SPClientPeoplePickerDict','ready!','/_api/web/lists/GetByTitle(\x27','<div\x20class=\x22flexitem\x20col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22imgsetion\x22>','find','<option\x20value=\x27','User,DL,SecGroup,SPGroup','PageFooterSign','SignPosition','.colbox','<i\x20class=\x22fa\x20fa-ellipsis-v\x22\x20aria-hidden=\x22true\x22></i>\x20</button>','keyup','SP.Data.ApprovalProcessQueueListItem','</li>','Step','ddlDept','SummarizedValue','CalculatedValue','ready','Edit\x20&\x20Sign','/_api/web/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items?$filter=(TemplateID\x20eq\x20\x27','NumberOfRequest_Active','\x22\x20src=\x22','ClientMaster','</td>','InitiatorPPL','Define\x20The\x20Process\x20Steps.','<div\x20class=\x22col-sm-4\x20flexitem\x22>','/_api/web/lists/getbytitle(\x27ApprovalTemplateEditScope\x27)/items?$filter=TemplateID\x20eq\x20\x27','Not\x20Started','Action\x20Taken\x20Successfully.','Please\x20select\x20group.','Edit\x20Only','EMail','input:checkbox[name=\x27PartialTableChkbox\x27]:checked','Departments','ddlClient','#editablefild','ApproverRole','Please\x20select\x20company.','input[type=radio][name=optionls]','SP.Data.ApprovalProcessListListItem','#setEditableSelAll','getQueryStringParameter','sNo','#ResultDiv','#ddlCompEmp','#adds_stepsection','<td><input\x20type=\x27checkbox\x27\x20name=\x27TableChkboxSteps\x27\x20onclick=\x27setSelectColsAll(this)\x27\x20style=\x27height:\x2017px;\x20width:\x2017px;\x27\x20value=\x27','Edit\x20&\x20Approve','<option\x20value=\x22External\x20Supervisor\x22\x20>External\x20Supervisor</option>','AutoSerialNumber','#stpAppTitle','<h4>','<option\x20value=\x27Columns\x27\x20>Columns</option>','<option\x20value=\x22Initiation\x22>Initiation</option>','<span>Step\x20Name</span><span>Column\x20=\x20ApproverDecidingStep','ddlOffice','done','<tr>'];a13_0x18ce=function(){return _0x14cc8d;};return a13_0x18ce();}var SelectedPrtable=[];function LoadPartialTable(){var _0x365d23=a13_0x385475;SelectedPrtable=[];var _0x3236ce=[],_0x420458=_spPageContextInfo[_0x365d23(0x291)]+_0x365d23(0x3eb)+CurrTenplateID+_0x365d23(0x3d6);$[_0x365d23(0x30b)]({'url':_0x420458,'headers':{'Accept':_0x365d23(0x387)},'async':![],'success':function(_0x3115b8){var _0x50cc3d=_0x365d23;_0x3236ce=_0x3115b8['d'][_0x50cc3d(0x26f)];var _0x5376c6=_0x50cc3d(0x234)+CurrTenplateID+_0x50cc3d(0x331),_0x98ec34=RequestData(_0x5376c6);_0x98ec34['length']>0x0&&(SelectedPrtable=_0x98ec34);var _0x3ba430=_0x50cc3d(0x367),_0x25936e='',_0x37ad52=0x0;for(var _0x4415e6=0x0;_0x4415e6<_0x3236ce[_0x50cc3d(0x32b)];_0x4415e6++){var _0x5d315a=$[_0x50cc3d(0x2e1)](_0x98ec34,function(_0x6fe0db){var _0x13eb7c=_0x50cc3d;return _0x6fe0db[_0x13eb7c(0x3c1)]==_0x3236ce[_0x4415e6]['ID'];}),_0x4af33f='',_0x1e3fb8='',_0x3e94bf='';let _0x3ee1c8=document['getElementById'](_0x50cc3d(0x3b2));if(_0x5d315a[_0x50cc3d(0x32b)]>0x0)_0x4af33f=_0x50cc3d(0x20a),_0x1e3fb8=_0x5d315a[0x0][_0x50cc3d(0x2db)][_0x50cc3d(0x26f)];else{}_0x3ba430+=_0x50cc3d(0x3e9)+_0x3236ce[_0x4415e6][_0x50cc3d(0x284)]+_0x50cc3d(0x408);if(_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]!='FixedText'&&_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]!=_0x50cc3d(0x337)&&_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]!=_0x50cc3d(0x39f)&&_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]!='Web\x20Link'&&_0x3236ce[_0x4415e6][_0x50cc3d(0x2bc)]!=_0x50cc3d(0x229)&&_0x3236ce[_0x4415e6][_0x50cc3d(0x2bc)]!=_0x50cc3d(0x228)&&_0x3236ce[_0x4415e6]['ColumnName']!=_0x50cc3d(0x24b)){_0x25936e=_0x25936e+'<tr>'+_0x50cc3d(0x2d4)+_0x3236ce[_0x4415e6][_0x50cc3d(0x284)]+_0x50cc3d(0x230)+_0x50cc3d(0x2d4)+_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]+_0x50cc3d(0x230);if(_0x3236ce[_0x4415e6][_0x50cc3d(0x33a)]==_0x50cc3d(0x204)){_0x25936e=_0x25936e+_0x50cc3d(0x37e)+'<select\x20name=\x27tblColSetField\x27\x20class=\x27select_designnow\x27\x20id=\x27'+_0x3236ce[_0x4415e6]['Id']+_0x50cc3d(0x2c1);var _0x2e06f1=_0x50cc3d(0x306);if(_0x5d315a['length']!=0x0){if(_0x5d315a[0x0][_0x50cc3d(0x307)]=='Entire')_0x25936e=_0x25936e+_0x50cc3d(0x2f8)+_0x50cc3d(0x3f9)+_0x50cc3d(0x24e);else{if(_0x5d315a[0x0][_0x50cc3d(0x307)]==_0x50cc3d(0x28a))_0x25936e=_0x25936e+_0x50cc3d(0x40b)+_0x50cc3d(0x395)+_0x50cc3d(0x24e);else _0x5d315a[0x0][_0x50cc3d(0x307)]==_0x50cc3d(0x398)?(_0x2e06f1='initial',_0x25936e=_0x25936e+_0x50cc3d(0x3c3)+_0x50cc3d(0x3f9)+_0x50cc3d(0x216)):_0x25936e=_0x25936e+_0x50cc3d(0x3c3)+_0x50cc3d(0x3f9)+_0x50cc3d(0x24e);}}else _0x25936e=_0x25936e+_0x50cc3d(0x3c3)+'<option\x20value=\x27Add\x20Row\x27\x20>Add\x20Row</option>'+_0x50cc3d(0x24e);_0x25936e=_0x25936e+_0x50cc3d(0x3d2),_0x25936e=_0x25936e+_0x50cc3d(0x279)+_0x3236ce[_0x4415e6]['Id']+'\x27\x20\x20value=\x27'+_0x1e3fb8+_0x50cc3d(0x2a3)+_0x2e06f1+_0x50cc3d(0x300)+_0x3236ce[_0x4415e6]['Id']+_0x50cc3d(0x341);}else _0x25936e=_0x25936e+_0x50cc3d(0x254)+_0x3236ce[_0x4415e6]['ID']+'\x27\x20'+_0x4af33f+_0x50cc3d(0x258),_0x4af33f==''&&_0x37ad52++,_0x37ad52>0x0?_0x3ee1c8!=null&&(_0x3ee1c8[_0x50cc3d(0x20a)]=![]):_0x3ee1c8[_0x50cc3d(0x20a)]=!![];_0x25936e=_0x25936e+_0x50cc3d(0x2da);}}$(_0x50cc3d(0x368))[_0x50cc3d(0x330)](_0x3ba430),$(_0x50cc3d(0x3e7))[_0x50cc3d(0x2cc)]()[_0x50cc3d(0x206)](_0x25936e);},'error':function(_0x5e0eb3){var _0x5e0d52=_0x365d23;console[_0x5e0d52(0x259)](_0x5e0d52(0x3e0));}});}function RequestData(_0xdca7ee){var _0x1ec45b=a13_0x385475,_0x2c87b0=[],_0x5146b9=_spPageContextInfo[_0x1ec45b(0x291)]+_0xdca7ee;return $[_0x1ec45b(0x30b)]({'url':_0x5146b9,'headers':{'Accept':_0x1ec45b(0x387)},'async':![],'success':function(_0x5170f5){var _0x12a02a=_0x1ec45b;_0x2c87b0=_0x5170f5['d'][_0x12a02a(0x26f)];},'error':function(_0x2b5711){var _0x1078a8=_0x1ec45b;console[_0x1078a8(0x259)](_0x1078a8(0x3e0));}}),_0x2c87b0;}function SetDisplayInitiator(_0x1731b2){var _0x58f4dc=a13_0x385475;if(_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x2d2)||_0x1731b2[_0x58f4dc(0x209)]=='Employee'||_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x3c0))_0x1731b2['value']==_0x58f4dc(0x294)?($(_0x58f4dc(0x3d7))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),_0x58f4dc(0x3de)),$(_0x58f4dc(0x288))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),_0x58f4dc(0x306)),getDynaOptionsForInitiatorComp(_0x58f4dc(0x3ad),_0x58f4dc(0x2af),'')):$('.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs')['css']('display',_0x58f4dc(0x306)),InitiatorList=[],$(_0x58f4dc(0x38d))[_0x58f4dc(0x2cc)](),_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x3c0)?(jQuery(_0x58f4dc(0x324))['empty'](),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x410)),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x24a)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x2a1)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x3ea)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)]('<option\x20value=\x22Project\x20Admin\x22\x20>Project\x20Admin</option>'),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x362)),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x364)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x276))):(jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x2cc)](),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x410)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x25e)),jQuery('#ddlroles')[_0x58f4dc(0x206)](_0x58f4dc(0x28b)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)]('<option\x20value=\x22Head\x20of\x20the\x20Office\x22\x20>Head\x20of\x20the\x20Office</option>'),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)]('<option\x20value=\x22Project\x20Admin\x20of\x20Department\x22\x20>Project\x20Admin\x20of\x20Department</option>'),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x3ea)),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x3ab)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x362)),jQuery('#ddlroles')[_0x58f4dc(0x206)](_0x58f4dc(0x364)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)]('<option\x20value=\x22Initiator\x22\x20>Initiator</option>'));else{if(_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x3d4))$('.peoplepickeboxs')[_0x58f4dc(0x30d)]('display',_0x58f4dc(0x3de)),$(_0x58f4dc(0x2c3))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),'none'),jQuery('#ddlroles')[_0x58f4dc(0x2cc)](),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x410)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)]('<option\x20value=\x22Manager\x22\x20>Reporting\x20Manager</option>'),jQuery('#ddlroles')[_0x58f4dc(0x206)](_0x58f4dc(0x28b)),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x2dd)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x375)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x3ea)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x3ab)),jQuery('#ddlroles')[_0x58f4dc(0x206)](_0x58f4dc(0x362)),jQuery(_0x58f4dc(0x324))['append'](_0x58f4dc(0x364)),jQuery(_0x58f4dc(0x324))[_0x58f4dc(0x206)](_0x58f4dc(0x276));else{if(_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x36d))getDynaOptionsForInitiator('Departments',_0x58f4dc(0x227),''),$(_0x58f4dc(0x3b7))[_0x58f4dc(0x30d)]('display',_0x58f4dc(0x3de)),$(_0x58f4dc(0x329))['css'](_0x58f4dc(0x2dc),_0x58f4dc(0x306)),$(_0x58f4dc(0x3f3))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee)),$(_0x58f4dc(0x3bb))['text'](_0x58f4dc(0x1ee)),$(_0x58f4dc(0x25f))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee));else{if(_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x29e))getDynaOptionsForInitiator(_0x58f4dc(0x256),_0x58f4dc(0x251),''),$(_0x58f4dc(0x2a0))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),'block'),$(_0x58f4dc(0x302))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),'none'),$(_0x58f4dc(0x3ca))[_0x58f4dc(0x3b4)]('Select'),$('#SelectedItems3')[_0x58f4dc(0x3b4)]('Select'),$(_0x58f4dc(0x25f))['text'](_0x58f4dc(0x1ee));else{if(_0x1731b2[_0x58f4dc(0x209)]==_0x58f4dc(0x35d))getDynaOptionsForInitiator('ApproversGroups',_0x58f4dc(0x3bf),''),$(_0x58f4dc(0x3cf))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),_0x58f4dc(0x3de)),$('.peoplepickeboxs,.deptboxs,.officeboxs,.clientboxs,.compboxs')[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),_0x58f4dc(0x306)),$(_0x58f4dc(0x3ca))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee)),$(_0x58f4dc(0x3f3))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee)),$(_0x58f4dc(0x25f))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee));else _0x1731b2['value']=='Client'&&(getDynaOptionsForInitiator(_0x58f4dc(0x22f),_0x58f4dc(0x23c),''),$(_0x58f4dc(0x2d7))[_0x58f4dc(0x30d)](_0x58f4dc(0x2dc),_0x58f4dc(0x3de)),$('.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.compboxs')[_0x58f4dc(0x30d)]('display',_0x58f4dc(0x306)),$(_0x58f4dc(0x3f3))[_0x58f4dc(0x3b4)]('Select'),$(_0x58f4dc(0x3bb))[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee)),$('#SelectedItems1')[_0x58f4dc(0x3b4)](_0x58f4dc(0x1ee)));}}}}}var InitiatorList=[];function onChangeTask(_0x5c95af,_0x29da9b,_0x183e14){var _0x35ae11=a13_0x385475,_0x22870c=SPClientPeoplePicker[_0x35ae11(0x218)][_0x5c95af];_0x22870c[_0x35ae11(0x28e)]=function(_0x1c31d6,_0x27ec33){var _0x47add0=_0x35ae11;user='';if(_0x27ec33[_0x47add0(0x32b)]>0x0){tempUserId=ensureUser($(_0x47add0(0x378))['children']()[_0x47add0(0x292)]()[_0x47add0(0x339)]('id'));var _0xf7a8ba=InitiatorList[_0x47add0(0x2d9)](tempUserId)>-0x1;if(_0xf7a8ba==![]){InitiatorList[_0x47add0(0x2e6)](tempUserId);var _0x13e955=_0x27ec33[0x0]['Key'][_0x47add0(0x39e)]('|')[0x2];_0x13e955['includes']('#')==!![]&&(_0x13e955=_0x13e955['replace']('#ext#@adaptindia.onmicrosoft.com',''),_0x13e955=_0x13e955[_0x47add0(0x28f)]('_','@'));var _0x165e9b=_spPageContextInfo[_0x47add0(0x291)]+_0x47add0(0x3d0)+escapeProperly(_0x13e955),_0x4cb27c='';_0x4cb27c+='<div\x20class=\x27col-md-6\x20col-sm-6\x20userBoxParent\x27>',_0x4cb27c+=_0x47add0(0x2d0),_0x4cb27c+='<div\x20class=\x27members-card-head\x27>',_0x4cb27c+='<img\x20src=\x27'+_0x165e9b+'\x27>',_0x4cb27c+=_0x47add0(0x3f6),_0x4cb27c+='<div\x20class=\x27members-card-body\x27>',_0x4cb27c+=_0x47add0(0x34e),_0x4cb27c+=_0x47add0(0x287)+_0x27ec33[0x0][_0x47add0(0x2fa)]+'</h3>',_0x4cb27c+=_0x47add0(0x2d5)+_0x13e955+_0x47add0(0x38c),_0x4cb27c+=_0x47add0(0x3f6),_0x4cb27c+=_0x47add0(0x2f7)+_0x13e955+_0x47add0(0x29b)+_0x27ec33[0x0][_0x47add0(0x2fa)]+_0x47add0(0x37b)+tempUserId+')\x27><i\x20class=\x27fa\x20fa-times\x27></i></a>',_0x4cb27c+=_0x47add0(0x3f6),_0x4cb27c+=_0x47add0(0x3f6),_0x4cb27c+='</div>',$('#'+_0x183e14)[_0x47add0(0x206)](_0x4cb27c),EmptyPeoplePicker(_0x29da9b);}else _0xf7a8ba==!![]&&(EmptyPeoplePicker(_0x29da9b),alert(_0x47add0(0x35a)));}};}function removeUserBox(_0x2614c3,_0x693afc,_0x373fde,_0x16d51f){var _0x1dcf4e=a13_0x385475;$(_0x2614c3)[_0x1dcf4e(0x371)](_0x1dcf4e(0x3f4))[_0x1dcf4e(0x2cf)](),InitiatorList=jQuery[_0x1dcf4e(0x2e1)](InitiatorList,function(_0xe8d51b){return _0xe8d51b!=_0x16d51f;});}function ensureUser(_0x18a219){var _0x6c2ea3=a13_0x385475,_0x1f1566=0x0,_0x123bb4=_0x18a219,_0x25e273=this[_0x6c2ea3(0x2e4)][_0x6c2ea3(0x218)][_0x123bb4],_0x37a6d2=_0x25e273[_0x6c2ea3(0x2c6)](),_0x1c61a6=_0x37a6d2[0x0];if(_0x1c61a6){var _0xde4e93={'logonName':_0x1c61a6[_0x6c2ea3(0x25a)]};$[_0x6c2ea3(0x30b)]({'url':_spPageContextInfo[_0x6c2ea3(0x291)]+_0x6c2ea3(0x361),'type':_0x6c2ea3(0x277),'async':![],'contentType':_0x6c2ea3(0x387),'data':JSON['stringify'](_0xde4e93),'headers':{'X-RequestDigest':$('#__REQUESTDIGEST')[_0x6c2ea3(0x282)](),'accept':'application/json;odata=verbose'},'success':function(_0x4fb797,_0x47b256,_0x7a8d1a){_0x1f1566=_0x4fb797['d']['Id'];},'error':function(_0x358724,_0x30c1ce,_0x5c0f27){}});}else _0x1f1566=0x0;return _0x1f1566;}function EmptyPeoplePicker(_0x783aa0){var _0x459fb7=a13_0x385475,_0x3f4625=this[_0x459fb7(0x2e4)][_0x459fb7(0x218)][_0x783aa0+'_TopSpan'];_0x3f4625[_0x459fb7(0x3ba)]();}var selected_Dept=[],selected_Office=[],selected_Group=[],selected_Client=[],selected_CompEmp=[];function SetInitiatorList(){var _0x4e6ef0=a13_0x385475,_0x15d0f6=$(_0x4e6ef0(0x383))[_0x4e6ef0(0x282)](),_0x23f2b6='',_0x5adf12='',_0x762bb5='',_0x16dddd='';if(_0x15d0f6==_0x4e6ef0(0x36d))selected_Office=[],selected_Group=[],selected_Client=[],selected_CompEmp=[];else{if(_0x15d0f6==_0x4e6ef0(0x29e))selected_Dept=[],selected_Group=[],selected_Client=[],selected_CompEmp=[];else{if(_0x15d0f6==_0x4e6ef0(0x35d))selected_Dept=[],selected_Office=[],selected_Client=[],selected_CompEmp=[];else{if(_0x15d0f6==_0x4e6ef0(0x3b8))selected_Dept=[],selected_Office=[],selected_Group=[],selected_CompEmp=[];else{if(_0x15d0f6==_0x4e6ef0(0x294)){selected_Dept=[],selected_Office=[],selected_Group=[],selected_Client=[];if(selected_CompEmp[_0x4e6ef0(0x32b)]==0x0)return alert(''),![];}else selected_Dept=[],selected_Office=[],selected_Group=[],selected_Client=[],selected_CompEmp=[];}}}}var _0x59af21='';$(_0x4e6ef0(0x30c))['is'](_0x4e6ef0(0x2d8))&&(_0x59af21=$(_0x4e6ef0(0x2d1))[_0x4e6ef0(0x282)]());var _0x5ecd29=[];for(var _0x57ce76=0x0;_0x57ce76<InitiatorList[_0x4e6ef0(0x32b)];_0x57ce76++){var _0x52517f=![],_0x17be88=AllEmployee[_0x4e6ef0(0x32d)](function(_0x1ecdd3){var _0x3d0d70=_0x4e6ef0;return _0x1ecdd3[_0x3d0d70(0x239)]==InitiatorList[_0x57ce76]['EntityData'][_0x3d0d70(0x208)]&&(_0x52517f=!![]),_0x1ecdd3[_0x3d0d70(0x239)]==InitiatorList[_0x57ce76][_0x3d0d70(0x363)][_0x3d0d70(0x208)];});_0x17be88[_0x4e6ef0(0x32b)]==0x0&&_0x5ecd29[_0x4e6ef0(0x2e6)](InitiatorList[_0x57ce76][_0x4e6ef0(0x2fa)]),_0x17be88[_0x4e6ef0(0x32b)]>0x0&&StepApprver[_0x4e6ef0(0x2e6)]({'Name':_0x17be88[0x0][_0x4e6ef0(0x239)],'Id':_0x17be88[0x0][_0x4e6ef0(0x407)]});}if(_0x5ecd29[_0x4e6ef0(0x32b)]>0x0)return alert('Selected\x20user\x20'+_0x5ecd29+_0x4e6ef0(0x38b)),![];var _0x20ebd9=_0x4e6ef0(0x303),_0x6eddb2={'__metadata':{'type':_0x4e6ef0(0x2e8)},'Initiation':_0x15d0f6,'EditScope':_0x59af21,'InitiatorsId':{'results':InitiatorList},'DepartmentId':{'results':selected_Dept},'OfficeLocationId':{'results':selected_Office},'GuestClientId':{'results':selected_Client},'GroupId':{'results':selected_Group},'CompanyId':{'results':selected_CompEmp}};$[_0x4e6ef0(0x30b)]({'url':_spPageContextInfo[_0x4e6ef0(0x291)]+_0x4e6ef0(0x21a)+_0x20ebd9+_0x4e6ef0(0x382)+CurrTenplateID+'\x27)','type':_0x4e6ef0(0x277),'async':![],'data':JSON['stringify'](_0x6eddb2),'headers':{'Accept':_0x4e6ef0(0x387),'Content-Type':'application/json;odata=verbose','X-RequestDigest':$(_0x4e6ef0(0x359))[_0x4e6ef0(0x282)](),'IF-MATCH':'*','X-HTTP-Method':_0x4e6ef0(0x390)},'success':function(_0x2e5356){var _0x1dfc48=_0x4e6ef0;getAllTemplate();var _0x1b6551=[];$('input:checkbox[name=\x27PartialTableChkbox\x27]:checked')[_0x1dfc48(0x304)](function(){var _0x4fca68=_0x1dfc48;_0x1b6551[_0x4fca68(0x2e6)]({'tblId':$(this)[_0x4fca68(0x282)](),'tblEditScope':'','tblColIds':''});}),$('select[name=\x27tblColSetField\x27]')[_0x1dfc48(0x304)](function(){var _0x2d3498=_0x1dfc48;_0x1b6551['push']({'tblId':$(this)[_0x2d3498(0x339)]('id'),'tblEditScope':$(this)[_0x2d3498(0x282)](),'tblColIds':$(this)['siblings'](0x0)['val']()});});if(SelectedPrtable[_0x1dfc48(0x32b)]>0x0)for(k=0x0;k<SelectedPrtable[_0x1dfc48(0x32b)];k++){DeleteApprovalTemplateEditScopeRec(SelectedPrtable[k]['ID']);}var _0xcccec0=$(_0x1dfc48(0x2d1))[_0x1dfc48(0x282)]();if(_0xcccec0==_0x1dfc48(0x3a6)&&$(_0x1dfc48(0x30c))['is'](':visible')){if(_0x1b6551[_0x1dfc48(0x32b)]>0x0)for(var _0x3257e6=0x0;_0x3257e6<_0x1b6551['length'];_0x3257e6++){var _0x3fe913=[];_0x1b6551[_0x3257e6][_0x1dfc48(0x31e)]!=''&&(_0x3fe913=_0x1b6551[_0x3257e6][_0x1dfc48(0x31e)][_0x1dfc48(0x39e)](','));var _0xcc158d='ApprovalTemplateEditScope',_0x5ac255={'__metadata':{'type':_0x1dfc48(0x374)+_0xcc158d+'ListItem'},'TemplateIDId':parseInt(CurrTenplateID),'StepType':'Initiation','EditScope':'Partial','ColumnIDId':parseInt(_0x1b6551[_0x3257e6]['tblId']),'Title':_0x1dfc48(0x25b),'TableEditScope':_0x1b6551[_0x3257e6]['tblEditScope'],'TableColumnsId':{'results':_0x3fe913}};ApprovalTemplateEditScopeSet(_0xcc158d,_0x5ac255);}}},'error':function(_0x38f9bc){var _0x20b836=_0x4e6ef0;console[_0x20b836(0x259)](_0x38f9bc);}});}function a13_0x1e60(_0x28f5a1,_0x2388c6){var _0x18ceb8=a13_0x18ce();return a13_0x1e60=function(_0x1e60a9,_0xcead2d){_0x1e60a9=_0x1e60a9-0x1ea;var _0xf14944=_0x18ceb8[_0x1e60a9];return _0xf14944;},a13_0x1e60(_0x28f5a1,_0x2388c6);}function DeleteApprovalTemplateEditScopeRec(_0x447056){var _0x29d7cd=a13_0x385475;$['ajax']({'url':_spPageContextInfo[_0x29d7cd(0x291)]+_0x29d7cd(0x2a7)+_0x447056+')','type':'POST','async':![],'headers':{'X-RequestDigest':$(_0x29d7cd(0x359))[_0x29d7cd(0x282)](),'IF-MATCH':'*','X-HTTP-Method':'DELETE'},'success':function(_0xb5d0da,_0x4d7911,_0x15e804){var _0x31a8e5=_0x29d7cd;console[_0x31a8e5(0x259)](_0x31a8e5(0x34b));},'error':function(_0x46c200,_0x11f483,_0x222c0a){var _0x32a095=_0x29d7cd;$(_0x32a095(0x245))[_0x32a095(0x2cc)]()[_0x32a095(0x3b4)](_0x46c200[_0x32a095(0x260)]['error']);}});}function GetInitiationDetails(_0x529568){var _0xcb5a8a=a13_0x385475;selected_Dept=[],selected_Office=[],selected_Group=[],selected_Client=[];var _0x14426a=[];$[_0xcb5a8a(0x30b)]({'async':![],'url':_spPageContextInfo[_0xcb5a8a(0x291)]+_0xcb5a8a(0x3f2)+_0x529568+'\x27','type':_0xcb5a8a(0x33e),'headers':{'accept':_0xcb5a8a(0x387)},'success':function(_0xcf9288){var _0xc60505=_0xcb5a8a;_0x14426a=_0xcf9288['d'][_0xc60505(0x26f)];if(_0x14426a[_0xc60505(0x32b)]>0x0){_0x14426a[0x0][_0xc60505(0x30f)]==_0xc60505(0x3c0)?(jQuery('#ddlroles')[_0xc60505(0x2cc)](),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x410)),jQuery(_0xc60505(0x324))['append'](_0xc60505(0x24a)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x2a1)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)]('<option\x20value=\x22HR\x20Admin\x22\x20>HR\x20Admin</option>'),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x3ab)),jQuery(_0xc60505(0x324))['append'](_0xc60505(0x362)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x364)),jQuery('#ddlroles')[_0xc60505(0x206)]('<option\x20value=\x22Initiator\x22\x20>Initiator</option>')):(jQuery(_0xc60505(0x324))['empty'](),jQuery(_0xc60505(0x324))['append'](_0xc60505(0x410)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)]('<option\x20value=\x22Manager\x22\x20>Reporting\x20Manager</option>'),jQuery(_0xc60505(0x324))[_0xc60505(0x206)]('<option\x20value=\x22Head\x20of\x20the\x20Department\x22\x20>Head\x20of\x20the\x20Department</option>'),jQuery(_0xc60505(0x324))[_0xc60505(0x206)]('<option\x20value=\x22Head\x20of\x20the\x20Office\x22\x20>Head\x20of\x20the\x20Office</option>'),jQuery(_0xc60505(0x324))['append'](_0xc60505(0x375)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x3ea)),jQuery(_0xc60505(0x324))['append']('<option\x20value=\x22Project\x20Admin\x22\x20>Project\x20Admin</option>'),jQuery('#ddlroles')[_0xc60505(0x206)](_0xc60505(0x362)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x364)),jQuery(_0xc60505(0x324))[_0xc60505(0x206)](_0xc60505(0x276)));if(_0x14426a[0x0]['Initiation']==_0xc60505(0x3d4)){$('input[name=selectives][value=\x27'+_0x14426a[0x0][_0xc60505(0x30f)]+'\x27]')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x3a4))['css'](_0xc60505(0x2dc),'block'),$('.officeboxs,.groupboxs,.deptboxs,.clientboxs,.compboxs')[_0xc60505(0x30d)](_0xc60505(0x2dc),'none'),InitiatorList=[];var _0x22781f='';for(var _0x2fd39d=0x0;_0x2fd39d<_0x14426a[0x0]['Initiators'][_0xc60505(0x26f)][_0xc60505(0x32b)];_0x2fd39d++){InitiatorList[_0xc60505(0x2e6)](_0x14426a[0x0][_0xc60505(0x385)]['results'][_0x2fd39d]['ID']);var _0xb9b8a1=_spPageContextInfo[_0xc60505(0x291)]+_0xc60505(0x3d0)+_0x14426a[0x0][_0xc60505(0x385)][_0xc60505(0x26f)][_0x2fd39d]['EMail'];_0x22781f+=_0xc60505(0x2ad),_0x22781f+=_0xc60505(0x2d0),_0x22781f+=_0xc60505(0x376),_0x22781f+='<img\x20src=\x27'+_0xb9b8a1+'\x27>',_0x22781f+=_0xc60505(0x3f6),_0x22781f+=_0xc60505(0x3a3),_0x22781f+=_0xc60505(0x34e),_0x22781f+=_0xc60505(0x287)+_0x14426a[0x0]['Initiators']['results'][_0x2fd39d][_0xc60505(0x284)]+_0xc60505(0x393),_0x22781f+=_0xc60505(0x2d5)+_0x14426a[0x0][_0xc60505(0x385)][_0xc60505(0x26f)][_0x2fd39d][_0xc60505(0x239)]+'</p>',_0x22781f+=_0xc60505(0x3f6),_0x22781f+=_0xc60505(0x2f7)+_0x14426a[0x0]['Initiators'][_0xc60505(0x26f)][_0x2fd39d][_0xc60505(0x239)]+_0xc60505(0x29b)+_0x14426a[0x0]['Initiators']['results'][_0x2fd39d][_0xc60505(0x284)]+'\x22,\x20'+_0x14426a[0x0][_0xc60505(0x385)]['results'][_0x2fd39d]['ID']+_0xc60505(0x2b9),_0x22781f+=_0xc60505(0x3f6),_0x22781f+=_0xc60505(0x3f6),_0x22781f+='</div>';}$(_0xc60505(0x38d))[_0xc60505(0x2cc)]()[_0xc60505(0x206)](_0x22781f);}else{if(_0x14426a[0x0]['Initiation']==null)$(_0xc60505(0x360))[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x2c4))[_0xc60505(0x30d)]('display',_0xc60505(0x306));else{if(_0x14426a[0x0][_0xc60505(0x30f)]=='Department'){var _0x255f17=[];_0x255f17=_0x14426a[0x0][_0xc60505(0x39d)]['results'],selected_Dept=[..._0x255f17],getDynaOptionsForInitiator(_0xc60505(0x23b),_0xc60505(0x227),'Update'),$('input[name=selectives][value=\x27Department\x27]')['prop'](_0xc60505(0x20a),!![]),$('.peoplepickeboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs')[_0xc60505(0x30d)]('display',_0xc60505(0x306)),$(_0xc60505(0x3b7))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x3de));}else{if(_0x14426a[0x0][_0xc60505(0x30f)]==_0xc60505(0x29e)){var _0x57a192=[];_0x57a192=_0x14426a[0x0][_0xc60505(0x36b)][_0xc60505(0x26f)],selected_Office=[..._0x57a192],getDynaOptionsForInitiator(_0xc60505(0x256),'ddlOffice',_0xc60505(0x357)),$(_0xc60505(0x2cd))[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x302))[_0xc60505(0x30d)]('display',_0xc60505(0x306)),$(_0xc60505(0x2a0))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x3de));}else{if(_0x14426a[0x0][_0xc60505(0x30f)]==_0xc60505(0x35d)){var _0x2c3a26=[];_0x2c3a26=_0x14426a[0x0][_0xc60505(0x278)][_0xc60505(0x26f)],selected_Group=[..._0x2c3a26],getDynaOptionsForInitiator(_0xc60505(0x409),_0xc60505(0x3bf),_0xc60505(0x357)),$(_0xc60505(0x2ce))[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x403))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306)),$(_0xc60505(0x3cf))['css'](_0xc60505(0x2dc),'block');}else{if(_0x14426a[0x0]['Initiation']==_0xc60505(0x3b8)){var _0x127d52=[];_0x127d52=_0x14426a[0x0][_0xc60505(0x2b1)][_0xc60505(0x26f)],selected_Client=[..._0x127d52],getDynaOptionsForInitiator(_0xc60505(0x22f),_0xc60505(0x23c),_0xc60505(0x357)),$('input[name=selectives][value=\x27Client\x27]')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x257))['css'](_0xc60505(0x2dc),_0xc60505(0x306)),$(_0xc60505(0x2d7))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x3de));}else{if(_0x14426a[0x0][_0xc60505(0x30f)]=='Employee'){var _0x296295=[];_0x296295=_0x14426a[0x0][_0xc60505(0x30a)][_0xc60505(0x26f)],selected_CompEmp=[..._0x296295],getDynaOptionsForInitiatorComp('Companies','ddlCompEmp',_0xc60505(0x357)),$(_0xc60505(0x3c4))[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$('.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.clientboxs')['css'](_0xc60505(0x2dc),_0xc60505(0x306)),$(_0xc60505(0x3d7))[_0xc60505(0x30d)](_0xc60505(0x2dc),'block');}else $(_0xc60505(0x2a9)+_0x14426a[0x0]['Initiation']+']')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x2c4))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306));}}}}}}if(_0x14426a[0x0][_0xc60505(0x2bf)]==_0xc60505(0x2d3))$(_0xc60505(0x340)+_0x14426a[0x0][_0xc60505(0x2bf)]+'\x27]')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x3db))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306));else{if(_0x14426a[0x0][_0xc60505(0x2bf)]==_0xc60505(0x3a6))$('input[name=scrops][value=\x27Partial\x27]')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x3db))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x3de));else _0x14426a[0x0][_0xc60505(0x2bf)]==null?($('input[name=scrops][value=\x27Full-Form\x27]')['prop'](_0xc60505(0x20a),!![]),$(_0xc60505(0x3db))['css']('display',_0xc60505(0x306))):($('input[name=scrops][value=\x27Full-Form\x27]')[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$('.stepcolms')[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306)));}}else $(_0xc60505(0x200))[_0xc60505(0x39b)](_0xc60505(0x20a),!![]),$(_0xc60505(0x3db))[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306)),$('input[name=selectives][value=\x27Anyone\x27]')['prop'](_0xc60505(0x20a),!![]),$('.peoplepickeboxs')[_0xc60505(0x30d)](_0xc60505(0x2dc),_0xc60505(0x306));},'error':function(_0x4e7fcc){var _0x4c5ac0=_0xcb5a8a;console[_0x4c5ac0(0x259)](_0x4e7fcc);}});}function ApprovalTemplateEditScopeSet(_0x17801f,_0x16e2ba){var _0x320bdf=a13_0x385475;$['ajax']({'url':_spPageContextInfo[_0x320bdf(0x291)]+_0x320bdf(0x21a)+_0x17801f+_0x320bdf(0x3e6),'type':_0x320bdf(0x277),'contentType':'application/json;odata=verbose','data':JSON[_0x320bdf(0x319)](_0x16e2ba),'async':!![],'headers':{'Accept':_0x320bdf(0x387),'X-RequestDigest':$(_0x320bdf(0x359))[_0x320bdf(0x282)]()},'success':function(_0xbe7739){var _0x49bdc8=_0x320bdf;console[_0x49bdc8(0x259)]('add\x20success');},'error':function(_0x4d4bae){var _0x420357=_0x320bdf;console[_0x420357(0x259)](_0x420357(0x392)),console[_0x420357(0x259)](_0x4d4bae);}});}var SelectedPrtableSteps=[];function LoadPartialTableSteps(_0x1696a4,_0x56c3b2){var _0x36405d=a13_0x385475;if(ActiveMode!=_0x36405d(0x2c9)){SelectedPrtableSteps=[];var _0x81692b=[],_0x19a793=_spPageContextInfo[_0x36405d(0x291)]+_0x36405d(0x3eb)+CurrTenplateID+_0x36405d(0x3d6);$[_0x36405d(0x30b)]({'url':_0x19a793,'headers':{'Accept':'application/json;odata=verbose'},'async':!![],'success':function(_0xab416a){var _0x2a63d8=_0x36405d;_0x81692b=_0xab416a['d'][_0x2a63d8(0x26f)];var _0x275b12='';if(_0x1696a4==_0x2a63d8(0x295)){var _0x3994a5=_0x2a63d8(0x234)+CurrTenplateID+'\x27\x20and\x20StepID\x20eq\x20\x27'+_0x56c3b2+'\x27',_0x126071=RequestData(_0x3994a5);_0x126071[_0x2a63d8(0x32b)]>0x0&&(SelectedPrtableSteps=_0x126071);var _0x2633f2=0x0;for(var _0x1132ba=0x0;_0x1132ba<_0x81692b['length'];_0x1132ba++){var _0x140677=$[_0x2a63d8(0x2e1)](_0x126071,function(_0x481595){return _0x481595['ColumnIDId']==_0x81692b[_0x1132ba]['ID'];}),_0x225c2e='',_0x56c031='';_0x140677[_0x2a63d8(0x32b)]>0x0&&(_0x225c2e=_0x2a63d8(0x20a),_0x56c031=_0x140677[0x0][_0x2a63d8(0x2db)][_0x2a63d8(0x26f)]);if(_0x81692b[_0x1132ba]['ColumnType']!=_0x2a63d8(0x372)&&_0x81692b[_0x1132ba]['ColumnType']!=_0x2a63d8(0x337)&&_0x81692b[_0x1132ba]['ColumnType']!='QR\x20Code'&&_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x298)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!=_0x2a63d8(0x229)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!='SummarizedValue'&&_0x81692b[_0x1132ba]['ColumnName']!=_0x2a63d8(0x24b)){let _0x599249=document[_0x2a63d8(0x3b3)](_0x2a63d8(0x3ce));_0x275b12=_0x275b12+_0x2a63d8(0x253)+'<td>'+_0x81692b[_0x1132ba][_0x2a63d8(0x284)]+_0x2a63d8(0x230)+_0x2a63d8(0x2d4)+_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]+'</td>';if(_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]==_0x2a63d8(0x204)){_0x275b12=_0x275b12+_0x2a63d8(0x37e)+_0x2a63d8(0x27a)+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x2c1);var _0x167734=_0x2a63d8(0x306);if(_0x140677['length']!=0x0){if(_0x140677[0x0][_0x2a63d8(0x307)]==_0x2a63d8(0x261))_0x275b12=_0x275b12+'<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27\x20selected>Entire</option>'+_0x2a63d8(0x3f9)+_0x2a63d8(0x24e);else{if(_0x140677[0x0][_0x2a63d8(0x307)]==_0x2a63d8(0x28a))_0x275b12=_0x275b12+'<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27\x20>Entire</option>'+_0x2a63d8(0x395)+_0x2a63d8(0x24e);else _0x140677[0x0][_0x2a63d8(0x307)]=='Columns'?(_0x167734='initial',_0x275b12=_0x275b12+'<option\x20value=\x27\x27\x20>Select</option><option\x20value=\x27Entire\x27>Entire</option>'+_0x2a63d8(0x3f9)+_0x2a63d8(0x216)):_0x275b12=_0x275b12+_0x2a63d8(0x3c3)+_0x2a63d8(0x3f9)+_0x2a63d8(0x24e);}}else _0x275b12=_0x275b12+_0x2a63d8(0x3c3)+_0x2a63d8(0x3f9)+_0x2a63d8(0x24e);_0x275b12=_0x275b12+_0x2a63d8(0x3d2),_0x275b12=_0x275b12+_0x2a63d8(0x3d9)+_0x81692b[_0x1132ba]['Id']+'\x27\x20Value=\x27'+_0x56c031+_0x2a63d8(0x2a3)+_0x167734+_0x2a63d8(0x300)+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x341);}else _0x275b12=_0x275b12+_0x2a63d8(0x31d)+_0x81692b[_0x1132ba]['ID']+'\x27\x20'+_0x225c2e+_0x2a63d8(0x399),_0x225c2e==''&&_0x2633f2++,_0x2633f2>0x0?_0x599249!=null&&(_0x599249['checked']=![]):_0x599249[_0x2a63d8(0x20a)]=!![];_0x275b12=_0x275b12+_0x2a63d8(0x2da);}}}else{if(ActiveMode!=_0x2a63d8(0x2c9)){var _0x2633f2=0x0;for(var _0x1132ba=0x0;_0x1132ba<_0x81692b[_0x2a63d8(0x32b)];_0x1132ba++){if(_0x81692b[_0x1132ba]['ColumnType']!=_0x2a63d8(0x372)&&_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x337)&&_0x81692b[_0x1132ba]['ColumnType']!=_0x2a63d8(0x39f)&&_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x298)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!=_0x2a63d8(0x229)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!=_0x2a63d8(0x228)&&_0x81692b[_0x1132ba]['ColumnName']!='AutoSerialNumber'){let _0x3bd171=document[_0x2a63d8(0x3b3)](_0x2a63d8(0x3ce));_0x225c2e==''&&_0x2633f2++,_0x2633f2>0x0&&(_0x3bd171[_0x2a63d8(0x20a)]=![]),_0x275b12=_0x275b12+_0x2a63d8(0x253)+_0x2a63d8(0x2d4)+_0x81692b[_0x1132ba][_0x2a63d8(0x284)]+_0x2a63d8(0x230)+_0x2a63d8(0x2d4)+_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]+_0x2a63d8(0x230),_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]==_0x2a63d8(0x204)?(_0x275b12=_0x275b12+'<td><div\x20class=\x27bothwarpboxsec\x27>'+_0x2a63d8(0x27a)+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x2c1)+_0x2a63d8(0x210)+_0x2a63d8(0x1f8)+_0x2a63d8(0x290)+_0x2a63d8(0x24e)+'</select>',_0x275b12=_0x275b12+_0x2a63d8(0x3d9)+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x1ef)+_0x81692b[_0x1132ba]['Id']+')\x27><i\x20class=\x27fa\x20fa-ellipsis-h\x27\x20aria-hidden=\x27true\x27></i></button></div></td>'):_0x275b12=_0x275b12+'<td><input\x20type=\x27checkbox\x27\x20name=\x27PartialTableChkboxSteps\x27\x20onclick=\x27setSelectAll(this)\x27\x20style=\x27height:\x2017px;\x20width:\x2017px;\x27\x20value=\x27'+_0x81692b[_0x1132ba]['ID']+'\x27\x20'+_0x225c2e+'></td>',_0x275b12=_0x275b12+_0x2a63d8(0x2da);}}}else{var _0x3994a5='/_api/web/lists/getbytitle(\x27ApprovalTemplateEditScope\x27)/items?$filter=TemplateID\x20eq\x20\x27'+CurrTenplateID+_0x2a63d8(0x355)+_0x56c3b2+'\x27',_0x126071=RequestData(_0x3994a5);_0x126071[_0x2a63d8(0x32b)]>0x0&&(SelectedPrtableSteps=_0x126071);var _0x2633f2=0x0;for(var _0x1132ba=0x0;_0x1132ba<_0x81692b['length'];_0x1132ba++){var _0x140677=$['grep'](_0x126071,function(_0x20f0fa){return _0x20f0fa['ColumnIDId']==_0x81692b[_0x1132ba]['ID'];}),_0x225c2e='',_0x56c031='';_0x140677[_0x2a63d8(0x32b)]>0x0&&(_0x225c2e=_0x2a63d8(0x20a),_0x56c031=_0x140677[0x0]['TableColumnsId'][_0x2a63d8(0x26f)]);if(_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x372)&&_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x337)&&_0x81692b[_0x1132ba]['ColumnType']!='QR\x20Code'&&_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]!=_0x2a63d8(0x298)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!=_0x2a63d8(0x229)&&_0x81692b[_0x1132ba][_0x2a63d8(0x2bc)]!=_0x2a63d8(0x228)&&_0x81692b[_0x1132ba]['ColumnName']!=_0x2a63d8(0x24b)){let _0xb1af3a=document[_0x2a63d8(0x3b3)](_0x2a63d8(0x3ce));_0x275b12=_0x275b12+_0x2a63d8(0x253)+'<td>'+_0x81692b[_0x1132ba]['Title']+_0x2a63d8(0x230)+_0x2a63d8(0x2d4)+_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]+'</td>';if(_0x81692b[_0x1132ba][_0x2a63d8(0x33a)]=='Table'){_0x275b12=_0x275b12+'<td><div\x20class=\x27bothwarpboxsec\x27>'+'<select\x20name=\x27tblColSetFieldSteps\x27\x20class=\x27select_designnow\x27\x20id=\x27'+_0x81692b[_0x1132ba]['Id']+'\x27\x20onchange=\x27showColAddBtn(this)\x27>';var _0x167734='none';if(_0x140677[_0x2a63d8(0x32b)]!=0x0){if(_0x140677[0x0]['TableEditScope']==_0x2a63d8(0x261))_0x275b12=_0x275b12+'<option\x20value=\x27\x27>Select</option><option\x20value=\x27Entire\x27\x20selected>Entire</option>'+_0x2a63d8(0x3f9)+'<option\x20value=\x27Columns\x27\x20>Columns</option>';else{if(_0x140677[0x0][_0x2a63d8(0x307)]==_0x2a63d8(0x28a))_0x275b12=_0x275b12+'<option\x20value=\x27Entire\x27\x20>Entire</option>'+_0x2a63d8(0x395)+_0x2a63d8(0x24e);else _0x140677[0x0][_0x2a63d8(0x307)]==_0x2a63d8(0x398)?(_0x167734='initial',_0x275b12=_0x275b12+'<option\x20value=\x27Entire\x27>Entire</option>'+'<option\x20value=\x27Add\x20Row\x27\x20>Add\x20Row</option>'+_0x2a63d8(0x216)):_0x275b12=_0x275b12+_0x2a63d8(0x3c3)+_0x2a63d8(0x3f9)+'<option\x20value=\x27Columns\x27\x20>Columns</option>';}}else _0x275b12=_0x275b12+_0x2a63d8(0x1f8)+_0x2a63d8(0x3f9)+_0x2a63d8(0x24e);_0x275b12=_0x275b12+_0x2a63d8(0x3d2),_0x275b12=_0x275b12+_0x2a63d8(0x3d9)+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x2be)+_0x56c031+_0x2a63d8(0x2a3)+_0x167734+'\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#editablecolsfild\x27\x20onclick=\x27LoadPartialtblColSteps(this,'+_0x81692b[_0x1132ba]['Id']+_0x2a63d8(0x341);}else _0x275b12=_0x275b12+'<td><input\x20type=\x27checkbox\x27\x20name=\x27PartialTableChkboxSteps\x27\x20onclick=\x27setSelectAll(this)\x27\x20style=\x27height:\x2017px;\x20width:\x2017px;\x27\x20value=\x27'+_0x81692b[_0x1132ba]['ID']+'\x27\x20'+_0x225c2e+'></td>',_0x225c2e==''&&_0x2633f2++,_0x2633f2>0x0?_0xb1af3a!=null&&(_0xb1af3a['checked']=![]):_0xb1af3a[_0x2a63d8(0x20a)]=!![];_0x275b12=_0x275b12+_0x2a63d8(0x2da);}}}}$('#TableFieldsListSteps')['empty']()[_0x2a63d8(0x206)](_0x275b12);},'error':function(_0x4276dd){var _0x1ea241=_0x36405d;console[_0x1ea241(0x259)](_0x1ea241(0x3e0));}});}}function SetDisplayApprovers(_0x3c71e3){var _0x47b64e=a13_0x385475;if(_0x3c71e3['value']==_0x47b64e(0x26d))$('.usrbox')[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x3de)),$(_0x47b64e(0x3da))['css']('display',_0x47b64e(0x306)),$(_0x47b64e(0x2a2))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)),$(_0x47b64e(0x221))['css'](_0x47b64e(0x2dc),_0x47b64e(0x306)),$(_0x47b64e(0x285))['css']('display',_0x47b64e(0x306)),initializePeoplePicker(_0x47b64e(0x1fe)),peoplePickerDiv=$(_0x47b64e(0x3fc));else{if(_0x3c71e3[_0x47b64e(0x209)]==_0x47b64e(0x25d))$('.usrbox')[_0x47b64e(0x30d)](_0x47b64e(0x2dc),'none'),$('.grpbox')['css']('display',_0x47b64e(0x306)),$(_0x47b64e(0x2a2))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x3de)),$(_0x47b64e(0x221))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),'none'),$(_0x47b64e(0x285))[_0x47b64e(0x30d)]('display',_0x47b64e(0x306));else{if(_0x3c71e3[_0x47b64e(0x209)]==_0x47b64e(0x35d))$(_0x47b64e(0x3e5))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)),$('.grpbox')['css'](_0x47b64e(0x2dc),_0x47b64e(0x3de)),$('.rolbox')[_0x47b64e(0x30d)]('display',_0x47b64e(0x306)),$(_0x47b64e(0x221))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)),$(_0x47b64e(0x285))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306));else{if(_0x3c71e3['value']==_0x47b64e(0x2f0))$(_0x47b64e(0x3e5))[_0x47b64e(0x30d)]('display',_0x47b64e(0x306)),$(_0x47b64e(0x221))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x3de)),$(_0x47b64e(0x2a2))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)),$(_0x47b64e(0x3da))['css'](_0x47b64e(0x2dc),'none'),$(_0x47b64e(0x285))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306));else _0x3c71e3['value']==_0x47b64e(0x39c)&&($(_0x47b64e(0x3e5))['css'](_0x47b64e(0x2dc),'none'),$('.runbox')['css'](_0x47b64e(0x2dc),_0x47b64e(0x3de)),$(_0x47b64e(0x2a2))[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)),$(_0x47b64e(0x3da))[_0x47b64e(0x30d)]('display',_0x47b64e(0x306)),$('.colbox')[_0x47b64e(0x30d)](_0x47b64e(0x2dc),_0x47b64e(0x306)));}}}}function SetDisplayPrTable4Approvers(_0x2ee503){var _0x3f7368=a13_0x385475;if(_0x2ee503==_0x3f7368(0x2d6)||_0x2ee503==_0x3f7368(0x238))$(_0x3f7368(0x2fe))[_0x3f7368(0x30d)](_0x3f7368(0x2dc),'block');else{if(_0x2ee503==_0x3f7368(0x22b))$(_0x3f7368(0x2fe))[_0x3f7368(0x30d)](_0x3f7368(0x2dc),'block');else _0x2ee503==_0x3f7368(0x2c5)?$(_0x3f7368(0x2fe))['css'](_0x3f7368(0x2dc),_0x3f7368(0x3de)):$('#editablefildStepsDIV')['css'](_0x3f7368(0x2dc),'none');}}var G_TableFieldsList=![];function SetTableFieldsList(){var _0x94b3e=a13_0x385475,_0x9abe57=[];$('input:checkbox[name=\x27PartialTableChkbox\x27]:checked')[_0x94b3e(0x304)](function(){var _0x215dd7=_0x94b3e;_0x9abe57[_0x215dd7(0x2e6)]($(this)[_0x215dd7(0x282)]());}),$(_0x94b3e(0x273))[_0x94b3e(0x304)](function(){}),(ProcessType=_0x94b3e(0x32a))&&(_0x9abe57['length']>0x0?(G_TableFieldsList=!![],$(_0x94b3e(0x23d))[_0x94b3e(0x3f7)](_0x94b3e(0x2ba))):(G_TableFieldsList=![],alert('Set\x20the\x20editable\x20columns')));}function SetTableFieldsListSteps(){var _0x4a47ba=a13_0x385475,_0x5943cf=[];$(_0x4a47ba(0x3d5))['each'](function(){var _0x48f47a=_0x4a47ba;_0x5943cf[_0x48f47a(0x2e6)]($(this)[_0x48f47a(0x282)]());}),(ProcessType='Process')&&(_0x5943cf[_0x4a47ba(0x32b)]>0x0?$('#editablefildSteps')[_0x4a47ba(0x3f7)](_0x4a47ba(0x2ba)):alert(_0x4a47ba(0x2e3)));}function ClearTableFieldsListSteps(){var _0x2bf5b6=a13_0x385475;$(_0x2bf5b6(0x402))[_0x2bf5b6(0x325)](_0x2bf5b6(0x20a)),$('input:checkbox[name=\x22PartialTableChkboxSteps\x22]')[_0x2bf5b6(0x325)](_0x2bf5b6(0x20a));}function ValidateLoginUserEntryscreen(){var _0x2e6274=a13_0x385475,_0x319f36=_spPageContextInfo['webAbsoluteUrl']+_0x2e6274(0x333)+Logged_CompanyId+'\x27\x20and\x20(Contributors/EMail\x20eq\x20\x27'+_spPageContextInfo[_0x2e6274(0x310)]+_0x2e6274(0x2f9);$[_0x2e6274(0x30b)]({'url':_0x319f36,'headers':{'Accept':_0x2e6274(0x387)},'async':![],'success':function(_0x391416){var _0x2a1c44=_0x2e6274,_0x55f62d=_0x391416['d'][_0x2a1c44(0x26f)];if(_0x55f62d[_0x2a1c44(0x32b)]>0x0){}else alert(_0x2a1c44(0x27b)),window['location'][_0x2a1c44(0x299)]=_spPageContextInfo[_0x2a1c44(0x291)];},'error':function(_0x548670){var _0x4894d4=_0x2e6274;console[_0x4894d4(0x259)](_0x548670);}});}$(document)[a13_0x385475(0x22a)](function(){var _0x2b5717=a13_0x385475;$(_0x2b5717(0x1f7))['hide'](),$(_0x2b5717(0x240))[_0x2b5717(0x2df)](function(){var _0x500863=_0x2b5717;if(this[_0x500863(0x209)]==_0x500863(0x26a))$('#PositionOptList')[_0x500863(0x30d)]('display',_0x500863(0x3de));else this['value']==_0x500863(0x207)&&$(_0x500863(0x368))['css'](_0x500863(0x2dc),_0x500863(0x306));}),$(_0x2b5717(0x3b1))[_0x2b5717(0x2df)](function(){var _0x421c90=_0x2b5717;$('#ActionReq')['val']()==_0x421c90(0x2d6)||$(_0x421c90(0x3b1))['val']()=='Review\x20Only'||$(_0x421c90(0x3b1))['val']()==_0x421c90(0x238)?$(_0x421c90(0x40c))['css']('visibility',_0x421c90(0x1f3)):$('.stepsOfProc')[_0x421c90(0x30d)](_0x421c90(0x214),_0x421c90(0x2b5));}),$(_0x2b5717(0x247))['on'](_0x2b5717(0x3ef),function(){var _0x33ae1e=_0x2b5717,_0x388700=$(this);$('#ActionReq')[_0x33ae1e(0x282)](_0x33ae1e(0x1ee))[_0x33ae1e(0x339)](_0x33ae1e(0x313),_0x33ae1e(0x313)),_0x388700[_0x33ae1e(0x21c)](_0x33ae1e(0x332))['prop'](_0x33ae1e(0x26e),0x0),_0x388700['find'](_0x33ae1e(0x27c))['css'](_0x33ae1e(0x2dc),_0x33ae1e(0x306)),_0x388700[_0x33ae1e(0x21c)](_0x33ae1e(0x2a4))['css'](_0x33ae1e(0x2dc),'block'),$(_0x33ae1e(0x345))[_0x33ae1e(0x39b)](_0x33ae1e(0x20a),!![]),$(_0x33ae1e(0x316))[_0x33ae1e(0x30d)](_0x33ae1e(0x2dc),_0x33ae1e(0x3e8)),$('#Stepuser')[_0x33ae1e(0x330)](''),$(_0x33ae1e(0x265))[_0x33ae1e(0x39b)](_0x33ae1e(0x20a),!![]),$('#txtStepName')[_0x33ae1e(0x282)](''),$(_0x33ae1e(0x3c9))[_0x33ae1e(0x39b)](_0x33ae1e(0x20a),![]),initializePeoplePicker(_0x33ae1e(0x1fe),![]),StepCount=0x0;});});function getGroupNames(){var _0x637dc0=a13_0x385475;$['ajax']({'url':_spPageContextInfo[_0x637dc0(0x291)]+_0x637dc0(0x309),'type':_0x637dc0(0x33e),'async':![],'headers':{'accept':'application/json;odata=verbose','content-type':_0x637dc0(0x387)},'success':function(_0x1e949b){var _0x547847=_0x637dc0,_0x248d03=_0x1e949b['d'][_0x547847(0x26f)],_0x3cbbd1=_0x547847(0x367);for(i=0x0;i<_0x248d03['length'];i++){_0x3cbbd1+='<option\x20value=\x27'+_0x248d03[i]['Id']+'\x27>'+_0x248d03[i][_0x547847(0x284)]+_0x547847(0x408);}$('#ddlgroups')[_0x547847(0x330)](_0x3cbbd1);},'error':function(_0x420e6b){console['log'](JSON['stringify'](_0x420e6b));}});}var arrPerson=[];function getPersonCol(_0x51c449){var _0x8ae54b=a13_0x385475;arrPerson=[],$[_0x8ae54b(0x30b)]({'url':_spPageContextInfo[_0x8ae54b(0x291)]+_0x8ae54b(0x33b)+_0x51c449+'\x27)','type':_0x8ae54b(0x33e),'async':![],'headers':{'accept':_0x8ae54b(0x387),'content-type':_0x8ae54b(0x387)},'success':function(_0x33d92b){var _0x3ee0d8=_0x8ae54b,_0x4f709a=_0x33d92b['d'][_0x3ee0d8(0x26f)],_0x231ccf=_0x3ee0d8(0x367);for(i=0x0;i<_0x4f709a[_0x3ee0d8(0x32b)];i++){console[_0x3ee0d8(0x259)](_0x4f709a[i]),arrPerson['push']({'ColumnName':_0x4f709a[i][_0x3ee0d8(0x2bc)],'ColumnTitle':_0x4f709a[i][_0x3ee0d8(0x284)]}),_0x231ccf+=_0x3ee0d8(0x21d)+_0x4f709a[i][_0x3ee0d8(0x2bc)]+'\x27>'+_0x4f709a[i][_0x3ee0d8(0x284)]+'</option>';}$(_0x3ee0d8(0x349))['html'](_0x231ccf);},'error':function(_0x4453c4){var _0x2ec9b0=_0x8ae54b;console[_0x2ec9b0(0x259)](JSON['stringify'](_0x4453c4));}});}function getPrevSteps(_0x3a1c4e,_0x1c2068,_0x2ec654){var _0x363ff4=a13_0x385475;_0x1c2068=='Add'?query=_0x363ff4(0x202):query='',$['ajax']({'url':_spPageContextInfo[_0x363ff4(0x291)]+_0x363ff4(0x22c)+_0x3a1c4e+'\x27)','type':'GET','async':![],'headers':{'accept':_0x363ff4(0x387),'content-type':_0x363ff4(0x387)},'success':function(_0x1ea884){var _0x3cced2=_0x363ff4,_0x275337=_0x1ea884['d']['results'],_0x143672=_0x3cced2(0x24f);for(i=0x0;i<_0x275337[_0x3cced2(0x32b)];i++){_0x143672+=_0x3cced2(0x21d)+_0x275337[i]['Id']+'\x27>'+_0x275337[i][_0x3cced2(0x2ec)]+_0x3cced2(0x408);}$(_0x3cced2(0x29d))[_0x3cced2(0x330)](_0x143672),$(_0x3cced2(0x346)+_0x2ec654+'\x27]')[_0x3cced2(0x2cf)]();},'error':function(_0x4ca599){var _0x4a0186=_0x363ff4;console[_0x4a0186(0x259)](JSON[_0x4a0186(0x319)](_0x4ca599));}});}function showSubBtn(){var _0x397436=a13_0x385475;$('#btnSubmitStep')['show'](),$('.addstepsboxsec')[_0x397436(0x2ba)]();}function hideSubBtn(){var _0x3cd8fa=a13_0x385475;$(_0x3cd8fa(0x2c8))[_0x3cd8fa(0x2ba)](),$('.addstepsboxsec')[_0x3cd8fa(0x3fb)]();}function ApproverDecStep(_0x34ec49,_0x51fda8,_0x56f6d0){var _0x15003b=a13_0x385475,_0x16f943={'__metadata':{'type':_0x15003b(0x343)},'AskApprover':_0x51fda8,'ApproverForStep':_0x56f6d0};$[_0x15003b(0x30b)]({'url':_spPageContextInfo[_0x15003b(0x291)]+'/_api/web/lists/getbytitle(\x27ApprovalTemplateSteps\x27)/items('+_0x34ec49+')','type':_0x15003b(0x390),'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x15003b(0x359))['val'](),'content-Type':'application/json;odata=verbose','X-Http-Method':'PATCH','If-Match':'*'},'data':JSON[_0x15003b(0x319)](_0x16f943),'success':function(_0x11dacf){},'error':function(_0x175740){var _0x382eb3=_0x15003b;console[_0x382eb3(0x259)](JSON[_0x382eb3(0x319)](_0x175740));}});}function getDynaOptionsForInitiator(_0x505275,_0x9559db,_0x1ac28c){var _0x5bcf74=a13_0x385475,_0x2b97f9='';if(_0x505275==_0x5bcf74(0x23b))_0x2b97f9=_0x5bcf74(0x40e);else _0x505275==_0x5bcf74(0x256)&&(_0x2b97f9=_0x5bcf74(0x40e));$[_0x5bcf74(0x30b)]({'url':_spPageContextInfo[_0x5bcf74(0x291)]+'/_api/web/lists/getbytitle(\x27'+_0x505275+'\x27)/items'+_0x2b97f9,'type':'GET','async':![],'headers':{'accept':_0x5bcf74(0x387),'content-type':_0x5bcf74(0x387)},'success':function(_0x152e9a){var _0x4c0264=_0x5bcf74,_0x23987d=_0x152e9a['d'][_0x4c0264(0x26f)],_0x2db46e='',_0x4df791='';if(_0x505275==_0x4c0264(0x23b)){_0x4df791=_0x4c0264(0x2a8),$('#'+_0x9559db)[_0x4c0264(0x2cc)]();for(i=0x0;i<_0x23987d['length'];i++){$('#'+_0x9559db)['append']('<li><input\x20type=\x22checkbox\x22\x20class=\x22'+_0x4df791+_0x4c0264(0x26c)+_0x23987d[i]['ID']+'>'+_0x23987d[i][_0x4c0264(0x284)]+'\x20['+_0x23987d[i]['CompanyID'][_0x4c0264(0x284)]+']'+_0x4c0264(0x225));}}else{if(_0x505275==_0x4c0264(0x256)){_0x4df791=_0x4c0264(0x29e),$('#'+_0x9559db)[_0x4c0264(0x2cc)]();for(i=0x0;i<_0x23987d[_0x4c0264(0x32b)];i++){$('#'+_0x9559db)[_0x4c0264(0x206)](_0x4c0264(0x37d)+_0x4df791+_0x4c0264(0x26c)+_0x23987d[i]['ID']+'>'+_0x23987d[i][_0x4c0264(0x284)]+'\x20['+_0x23987d[i][_0x4c0264(0x38a)]['Title']+']'+'</li>');}}else{if(_0x505275==_0x4c0264(0x409)){_0x4df791=_0x4c0264(0x35d),$('#'+_0x9559db)[_0x4c0264(0x2cc)]();for(i=0x0;i<_0x23987d[_0x4c0264(0x32b)];i++){$('#'+_0x9559db)['append'](_0x4c0264(0x37d)+_0x4df791+'\x22\x20value='+_0x23987d[i]['ID']+'>'+_0x23987d[i][_0x4c0264(0x284)]+_0x4c0264(0x225));}}else{if(_0x505275==_0x4c0264(0x22f)){_0x4df791='Client',$('#'+_0x9559db)['empty']();for(i=0x0;i<_0x23987d[_0x4c0264(0x32b)];i++){$('#'+_0x9559db)[_0x4c0264(0x206)](_0x4c0264(0x37d)+_0x4df791+_0x4c0264(0x26c)+_0x23987d[i]['ID']+'>'+_0x23987d[i]['Title']+_0x4c0264(0x225));}}}}}if(_0x1ac28c=='Update'){if(_0x505275==_0x4c0264(0x23b)){var _0x516b9b='',_0x1ebe69=selected_Dept[_0x4c0264(0x32d)](function(_0x18c703){var _0x4867dd=_0x4c0264;return _0x23987d[_0x4867dd(0x31f)](function(_0x1c8525){var _0x3aaa21=_0x4867dd;if(_0x18c703===_0x1c8525['Id'])return _0x516b9b+=_0x1c8525[_0x3aaa21(0x284)]+',',_0x1c8525[_0x3aaa21(0x284)];});});$(_0x4c0264(0x3ca))[_0x4c0264(0x3b4)](_0x516b9b);var _0x144e48=0x0;for(_0x144e48;_0x144e48<selected_Dept[_0x4c0264(0x32b)];_0x144e48++){var _0x10f68c=selected_Dept[_0x144e48];$(':checkbox[value=\x27'+_0x10f68c+'\x27]')[_0x4c0264(0x39b)]('checked','true');}}else{if(_0x505275=='OfficeLocation'){var _0x121359='',_0x1ebe69=selected_Office[_0x4c0264(0x32d)](function(_0x2d6616){var _0x30a742=_0x4c0264;return _0x23987d[_0x30a742(0x31f)](function(_0x22f5f3){var _0x8ba79c=_0x30a742;if(_0x2d6616===_0x22f5f3['Id'])return _0x121359+=_0x22f5f3[_0x8ba79c(0x284)]+',',_0x22f5f3[_0x8ba79c(0x284)];});});$(_0x4c0264(0x3f3))[_0x4c0264(0x3b4)](_0x121359);var _0x144e48=0x0;for(_0x144e48;_0x144e48<selected_Office[_0x4c0264(0x32b)];_0x144e48++){var _0x10f68c=selected_Office[_0x144e48];$(_0x4c0264(0x296)+_0x10f68c+'\x27]')[_0x4c0264(0x39b)](_0x4c0264(0x20a),'true');}}else{if(_0x505275==_0x4c0264(0x409)){var _0x45447b='',_0x1ebe69=selected_Group[_0x4c0264(0x32d)](function(_0x3d7477){var _0x165fe5=_0x4c0264;return _0x23987d[_0x165fe5(0x31f)](function(_0x495a8c){var _0x157624=_0x165fe5;if(_0x3d7477===_0x495a8c['Id'])return _0x45447b+=_0x495a8c[_0x157624(0x284)]+',',_0x495a8c[_0x157624(0x284)];});});$(_0x4c0264(0x3bb))[_0x4c0264(0x3b4)](_0x45447b);var _0x144e48=0x0;for(_0x144e48;_0x144e48<selected_Group['length'];_0x144e48++){var _0x10f68c=selected_Group[_0x144e48];$(_0x4c0264(0x296)+_0x10f68c+'\x27]')[_0x4c0264(0x39b)](_0x4c0264(0x20a),_0x4c0264(0x2f5));}}else{if(_0x505275==_0x4c0264(0x22f)){var _0x1ed30b='',_0x1ebe69=selected_Client[_0x4c0264(0x32d)](function(_0x5735a4){var _0x7a0d1e=_0x4c0264;return _0x23987d[_0x7a0d1e(0x31f)](function(_0x1c176b){var _0x211833=_0x7a0d1e;if(_0x5735a4===_0x1c176b['Id'])return _0x1ed30b+=_0x1c176b[_0x211833(0x284)]+',',_0x1c176b[_0x211833(0x284)];});});$(_0x4c0264(0x25f))[_0x4c0264(0x3b4)](_0x1ed30b);var _0x144e48=0x0;for(_0x144e48;_0x144e48<selected_Client['length'];_0x144e48++){var _0x10f68c=selected_Client[_0x144e48];$(_0x4c0264(0x296)+_0x10f68c+'\x27]')['prop'](_0x4c0264(0x20a),_0x4c0264(0x2f5));}}}}}}},'error':function(_0x45afa7){var _0x32788b=_0x5bcf74;console[_0x32788b(0x259)](JSON[_0x32788b(0x319)](_0x45afa7));}});}$(document)[a13_0x385475(0x22a)](function(){var _0xbf616f=a13_0x385475;$(_0xbf616f(0x2eb))[_0xbf616f(0x29c)](function(){var _0x117a4f=_0xbf616f,_0x4ebfb5=[],_0x1e55e=[];selected_Dept=[],$('.Dept:checked')['each'](function(_0x3de1c9){var _0x2a623d=a13_0x1e60;_0x4ebfb5[_0x3de1c9]=$(this)[_0x2a623d(0x282)](),_0x1e55e[_0x3de1c9]=$(this)[_0x2a623d(0x2b2)]()['text'](),$(_0x2a623d(0x3ca))[_0x2a623d(0x3b4)](_0x1e55e),selected_Dept['push'](_0x4ebfb5[_0x3de1c9]),$(_0x2a623d(0x3a5))[_0x2a623d(0x3b4)]();});if(selected_Dept[_0x117a4f(0x32b)]==0x0)$(_0x117a4f(0x3ca))['text'](_0x117a4f(0x1ee));}),$(_0xbf616f(0x1fc))['click'](function(){var _0xd438a9=_0xbf616f,_0x19875c=[],_0x98f7a=[];selected_Office=[],$(_0xd438a9(0x40d))[_0xd438a9(0x304)](function(_0x17d246){var _0x593211=_0xd438a9;_0x19875c[_0x17d246]=$(this)[_0x593211(0x282)](),_0x98f7a[_0x17d246]=$(this)[_0x593211(0x2b2)]()['text'](),$('#SelectedItems2')[_0x593211(0x3b4)](_0x98f7a),selected_Office['push'](_0x19875c[_0x17d246]),$(_0x593211(0x40d))['text']();});if(selected_Office[_0xd438a9(0x32b)]==0x0)$(_0xd438a9(0x3f3))[_0xd438a9(0x3b4)]('Select');}),$('#ddlGroup')[_0xbf616f(0x29c)](function(){var _0x4e61bf=_0xbf616f,_0x5c6b35=[],_0x2b5d8d=[];selected_Group=[],$(_0x4e61bf(0x263))[_0x4e61bf(0x304)](function(_0x539e04){var _0x35f14a=_0x4e61bf;_0x5c6b35[_0x539e04]=$(this)['val'](),_0x2b5d8d[_0x539e04]=$(this)[_0x35f14a(0x2b2)]()[_0x35f14a(0x3b4)](),$(_0x35f14a(0x3bb))[_0x35f14a(0x3b4)](_0x2b5d8d),selected_Group[_0x35f14a(0x2e6)](_0x5c6b35[_0x539e04]),$(_0x35f14a(0x263))[_0x35f14a(0x3b4)]();});if(selected_Group[_0x4e61bf(0x32b)]==0x0)$('#SelectedItems3')[_0x4e61bf(0x3b4)](_0x4e61bf(0x1ee));}),$(_0xbf616f(0x2aa))[_0xbf616f(0x29c)](function(){var _0x359e34=_0xbf616f,_0x42a48e=[],_0x3d83cf=[];selected_Client=[],$(_0x359e34(0x3c5))['each'](function(_0x1b999d){var _0x802732=_0x359e34;_0x42a48e[_0x1b999d]=$(this)[_0x802732(0x282)](),_0x3d83cf[_0x1b999d]=$(this)[_0x802732(0x2b2)]()[_0x802732(0x3b4)](),$(_0x802732(0x25f))[_0x802732(0x3b4)](_0x3d83cf),selected_Client[_0x802732(0x2e6)](_0x42a48e[_0x1b999d]),$(_0x802732(0x3c5))[_0x802732(0x3b4)]();});if(selected_Client[_0x359e34(0x32b)]==0x0)$(_0x359e34(0x25f))[_0x359e34(0x3b4)](_0x359e34(0x1ee));}),$(_0xbf616f(0x246))['click'](function(){var _0x43894d=_0xbf616f,_0x338cd3=[],_0x4b68ca=[];selected_CompEmp=[],$(_0x43894d(0x3c8))[_0x43894d(0x304)](function(_0xff5d30){var _0x33fcb5=_0x43894d;_0x338cd3[_0xff5d30]=$(this)[_0x33fcb5(0x282)](),_0x4b68ca[_0xff5d30]=$(this)['parent']()[_0x33fcb5(0x3b4)](),$('#SelectedItems5')['text'](_0x4b68ca),selected_CompEmp[_0x33fcb5(0x2e6)](_0x338cd3[_0xff5d30]),$(_0x33fcb5(0x3c8))['text']();});if(selected_CompEmp['length']==0x0)$(_0x43894d(0x34f))['text'](_0x43894d(0x1ee));});});function getDynaOptionsForInitiatorComp(_0x516835,_0x8b6d09,_0x10c2fe){var _0x5ec9f4=a13_0x385475;$['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27'+_0x516835+_0x5ec9f4(0x3e6),'type':_0x5ec9f4(0x33e),'async':![],'headers':{'accept':_0x5ec9f4(0x387),'content-type':_0x5ec9f4(0x387)},'success':function(_0x2dbd24){var _0x332c44=_0x5ec9f4,_0x11e586=_0x2dbd24['d']['results'],_0x234f37='',_0x1d8fb9='';$('#'+_0x8b6d09)[_0x332c44(0x2cc)]();for(i=0x0;i<_0x11e586[_0x332c44(0x32b)];i++){$('#'+_0x8b6d09)['append']('<li><input\x20type=\x22checkbox\x22\x20class=\x22Company\x22\x20value='+_0x11e586[i]['ID']+'>'+_0x11e586[i]['Title']+'</li>');}if(_0x10c2fe=='Update'){var _0x4c9422='',_0x31fe48=selected_CompEmp['filter'](function(_0x5b31b4){var _0xf392d8=_0x332c44;return _0x11e586[_0xf392d8(0x31f)](function(_0x1c3e8f){var _0x37ba35=_0xf392d8;if(_0x5b31b4===_0x1c3e8f['Id'])return _0x4c9422+=_0x1c3e8f[_0x37ba35(0x284)]+',',_0x1c3e8f[_0x37ba35(0x284)];});});$(_0x332c44(0x34f))[_0x332c44(0x3b4)](_0x4c9422);var _0x296fea=0x0;for(_0x296fea;_0x296fea<selected_CompEmp[_0x332c44(0x32b)];_0x296fea++){var _0x2d8ae2=selected_CompEmp[_0x296fea];$(':checkbox[value=\x27'+_0x2d8ae2+'\x27]')[_0x332c44(0x39b)](_0x332c44(0x20a),'true');}}},'error':function(_0x175245){var _0x14a5a7=_0x5ec9f4;console[_0x14a5a7(0x259)](JSON['stringify'](_0x175245));}});}function setSelectAll(_0x19bca7){var _0xc40d25=a13_0x385475;let _0x2c7a8a=document[_0xc40d25(0x3b3)](_0xc40d25(0x3b2)),_0x3b599f=document[_0xc40d25(0x3be)](_0xc40d25(0x388));for(let _0x543ee4=0x0;_0x543ee4<_0x3b599f['length'];_0x543ee4++){if(_0x3b599f[_0x543ee4][_0xc40d25(0x20a)]==![])return _0x2c7a8a['checked']=![],![];else _0x3b599f[_0x543ee4]['checked']==!![]&&(_0x2c7a8a[_0xc40d25(0x20a)]=!![]);}}function setSelectAllSteps(_0x5babc5){var _0x565e97=a13_0x385475;let _0x545376=document[_0x565e97(0x3b3)](_0x565e97(0x3ce)),_0x570eda=document['getElementsByName'](_0x565e97(0x389));for(let _0x291f2a=0x0;_0x291f2a<_0x570eda[_0x565e97(0x32b)];_0x291f2a++){if(_0x570eda[_0x291f2a]['checked']==![])return _0x545376[_0x565e97(0x20a)]=![],![];else _0x570eda[_0x291f2a][_0x565e97(0x20a)]==!![]&&(_0x545376[_0x565e97(0x20a)]=!![]);}}function setSelectColsAll(_0x49faf3){var _0x3d38fa=a13_0x385475;let _0x231252=document[_0x3d38fa(0x3b3)](_0x3d38fa(0x27f)),_0x36bff5=document['getElementsByName'](_0x3d38fa(0x3d8));for(let _0x4d8a89=0x0;_0x4d8a89<_0x36bff5[_0x3d38fa(0x32b)];_0x4d8a89++){if(_0x36bff5[_0x4d8a89][_0x3d38fa(0x20a)]==![])return _0x231252[_0x3d38fa(0x20a)]=![],![];else _0x36bff5[_0x4d8a89][_0x3d38fa(0x20a)]==!![]&&(_0x231252[_0x3d38fa(0x20a)]=!![]);}}var SelectedPrtableColSteps=[];function LoadPartialtblColSteps(_0x21cdf9,_0x1ab34c){var _0xff5fe1=a13_0x385475;$('#tblAddtblCol')[_0xff5fe1(0x282)](_0x1ab34c),SelectedPrtableColSteps=[];var _0x4846fd=[],_0x20af46=[];_0x20af46=_0x21cdf9[_0xff5fe1(0x209)]['split'](',');var _0x3207b5=_spPageContextInfo[_0xff5fe1(0x291)]+_0xff5fe1(0x1ec)+_0x1ab34c+_0xff5fe1(0x3d6);$[_0xff5fe1(0x30b)]({'url':_0x3207b5,'headers':{'Accept':_0xff5fe1(0x387)},'async':!![],'success':function(_0x583d88){var _0x2bf679=_0xff5fe1,_0x1dac1c='',_0x214be0=[];_0x214be0=_0x583d88['d']['results'];var _0x283729=0x0;for(var _0x59d6d4=0x0;_0x59d6d4<_0x214be0[_0x2bf679(0x32b)];_0x59d6d4++){var _0x1efcae=$[_0x2bf679(0x2e1)](_0x20af46,function(_0x4955b9){return _0x4955b9==_0x214be0[_0x59d6d4]['ID'];}),_0x173574='';_0x1efcae[_0x2bf679(0x32b)]>0x0&&(_0x173574=_0x2bf679(0x20a));_0x173574==''&&_0x283729++;let _0x28f98e=document[_0x2bf679(0x3b3)](_0x2bf679(0x27f));_0x283729>0x0?_0x28f98e[_0x2bf679(0x20a)]=![]:_0x28f98e[_0x2bf679(0x20a)]=!![],_0x1dac1c=_0x1dac1c+_0x2bf679(0x253)+_0x2bf679(0x2d4)+_0x214be0[_0x59d6d4][_0x2bf679(0x284)]+'</td>'+_0x2bf679(0x248)+_0x214be0[_0x59d6d4]['ID']+'\x27\x20'+_0x173574+_0x2bf679(0x399),_0x1dac1c=_0x1dac1c+_0x2bf679(0x2da);}$(_0x2bf679(0x323))[_0x2bf679(0x2cc)]()[_0x2bf679(0x206)](_0x1dac1c);},'error':function(_0x1c668b){var _0x5231d6=_0xff5fe1;console[_0x5231d6(0x259)](_0x5231d6(0x3e0));}});}function addtblColumnField(_0x4de518){var _0x8ae07d=a13_0x385475,_0x3806ee=[],_0x2f2acd='';flagIniStp=='Initiation'?_0x2f2acd=_0x8ae07d(0x2f3)+_0x4de518[_0x8ae07d(0x209)]:_0x2f2acd=_0x8ae07d(0x226)+_0x4de518[_0x8ae07d(0x209)],$('input:checkbox[name=\x27TableChkboxSteps\x27]:checked')[_0x8ae07d(0x304)](function(){var _0x2cab57=_0x8ae07d;_0x3806ee['push']($(this)[_0x2cab57(0x282)]());}),$('#'+_0x2f2acd)['val'](_0x3806ee),(ProcessType=_0x8ae07d(0x32a))&&(_0x3806ee['length']>0x0?$(_0x8ae07d(0x212))['modal'](_0x8ae07d(0x2ba)):alert(_0x8ae07d(0x2e3)));}function showColAddBtn(_0x20c427){var _0xf9f03e=a13_0x385475;$(_0x20c427)['val']()==_0xf9f03e(0x398)?$(_0x20c427)[_0xf9f03e(0x2b3)](0x0)[_0xf9f03e(0x3fb)]():$(_0x20c427)[_0xf9f03e(0x2b3)](0x0)[_0xf9f03e(0x2ba)]();}$(a13_0x385475(0x212))['on'](a13_0x385475(0x3ef),function(){var _0x1f9395=a13_0x385475;$(_0x1f9395(0x405))['removeAttr'](_0x1f9395(0x20a));});var AllTaskUsersEmployeeuser=[],RestQuery;function GetOwnerUser(){var _0x290689=a13_0x385475,_0x42d827=titanForWork[_0x290689(0x243)](_0x290689(0x30a));RestQuery='?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,\x20Department/DepartmentName,Company/ID,ManagerLoginName/ID,ManagerLoginName/Title&$orderby=\x20FullName\x20asc\x20&$expand=LogonName,Department,Company,ManagerLoginName\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27'+_0x42d827+_0x290689(0x2b7),$[_0x290689(0x2cb)](CommonFunction[_0x290689(0x2de)](_0x290689(0x213),RestQuery))[_0x290689(0x252)](function(_0x1de137){var _0x50bd6a=_0x290689;try{for(var _0x2d8472=0x0;_0x2d8472<_0x1de137[_0x50bd6a(0x26f)][_0x50bd6a(0x32b)];_0x2d8472++){var _0x4ee517=_0x1de137['results'][_0x2d8472]['ManagerLoginName'];AllTaskUsersEmployeeuser[_0x50bd6a(0x2e6)]({'UserId':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x1f4)]['Id'],'EMail':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x1f4)][_0x50bd6a(0x239)],'LoginName':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472]['LogonName']['Title']?_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x1f4)]['Title']:'NA','Designation':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472]['Designation']?_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x315)]:'NA','Manager':_0x4ee517,'DepartmentId':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x36d)]['ID'],'Department':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x36d)][_0x50bd6a(0x351)],'FullName':_0x1de137['results'][_0x2d8472]['FullName'],'CompanyID':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x3f1)]['ID'],'EmployeeID':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472]['Id'],'Skill':_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x1f6)]?_0x1de137[_0x50bd6a(0x26f)][_0x2d8472][_0x50bd6a(0x1f6)]:'NA'});}}catch(_0x31f59d){alert(_0x31f59d);}});var _0x42d827=titanForWork[_0x290689(0x243)]('CompanyId'),_0x253bec='?$select=*,LoginName/EMail,LoginName/Title,LoginName/Id,LoginName/FirstName,LoginName/LastName,LoginName/EMail&$expand=LoginName&$filter=\x20Status\x20eq\x20\x27Active\x27&$top=5000';$[_0x290689(0x2cb)](CommonFunction[_0x290689(0x2de)](_0x290689(0x2b4),_0x253bec))[_0x290689(0x252)](function(_0x543730){var _0x465176=_0x290689;console[_0x465176(0x259)](_0x543730);try{for(var _0x1d8e8a=0x0;_0x1d8e8a<_0x543730['results'][_0x465176(0x32b)];_0x1d8e8a++){AllTaskUsersEmployeeuser[_0x465176(0x2e6)]({'UserId':_0x543730[_0x465176(0x26f)][_0x1d8e8a][_0x465176(0x3dc)]['Id'],'EMail':_0x543730['results'][_0x1d8e8a][_0x465176(0x3dc)][_0x465176(0x239)],'LoginName':_0x543730[_0x465176(0x26f)][_0x1d8e8a]['LoginName'][_0x465176(0x284)]?_0x543730['results'][_0x1d8e8a][_0x465176(0x3dc)][_0x465176(0x284)]:'NA','Designation':_0x543730[_0x465176(0x26f)][_0x1d8e8a][_0x465176(0x315)]?_0x543730[_0x465176(0x26f)][_0x1d8e8a][_0x465176(0x315)]:'NA','Manager':'','DepartmentId':'','Department':'','FullName':'','CompanyID':'','EmployeeID':'','Skill':''});}}catch(_0x52a690){alert(_0x52a690);}});}var AllEmployee=[],Query;function GetAllUser(){var _0x278921=a13_0x385475,_0xcb2f03=titanForWork[_0x278921(0x243)](_0x278921(0x30a));Query='?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,\x20Department/DepartmentName,Company/ID,ManagerLoginName/ID,ManagerLoginName/Title&$orderby=\x20FullName\x20asc\x20&$expand=LogonName,Department,Company,ManagerLoginName\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27'+_0xcb2f03+_0x278921(0x2b7),$[_0x278921(0x2cb)](CommonFunction[_0x278921(0x2de)](_0x278921(0x213),Query))[_0x278921(0x252)](function(_0x1fa4e9){var _0x21789d=_0x278921;try{for(var _0x4714d3=0x0;_0x4714d3<_0x1fa4e9['results']['length'];_0x4714d3++){var _0x42a88f=_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3]['ManagerLoginName'];AllEmployee[_0x21789d(0x2e6)]({'UserId':_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3]['LogonName']['Id'],'EMail':_0x1fa4e9['results'][_0x4714d3][_0x21789d(0x1f4)][_0x21789d(0x239)],'LoginName':_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x1f4)][_0x21789d(0x284)]?_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3]['LogonName'][_0x21789d(0x284)]:'NA','Designation':_0x1fa4e9['results'][_0x4714d3][_0x21789d(0x315)]?_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x315)]:'NA','Manager':_0x42a88f,'DepartmentId':_0x1fa4e9['results'][_0x4714d3][_0x21789d(0x36d)]['ID'],'Department':_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x36d)][_0x21789d(0x351)],'FullName':_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x2c7)],'CompanyID':_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x3f1)]['ID'],'EmployeeID':_0x1fa4e9['results'][_0x4714d3]['Id'],'Skill':_0x1fa4e9['results'][_0x4714d3][_0x21789d(0x1f6)]?_0x1fa4e9[_0x21789d(0x26f)][_0x4714d3][_0x21789d(0x1f6)]:'NA'});}}catch(_0x3351e1){alert(_0x3351e1);}});var _0xcb2f03=titanForWork['getQueryStringParameter']('CompanyId'),_0x336a8b=_0x278921(0x2f1);$[_0x278921(0x2cb)](CommonFunction[_0x278921(0x2de)](_0x278921(0x2b4),_0x336a8b))[_0x278921(0x252)](function(_0x59981f){var _0x36b4c1=_0x278921;console[_0x36b4c1(0x259)](_0x59981f);try{for(var _0x42a72d=0x0;_0x42a72d<_0x59981f[_0x36b4c1(0x26f)][_0x36b4c1(0x32b)];_0x42a72d++){AllEmployee[_0x36b4c1(0x2e6)]({'UserId':_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x3dc)]['Id'],'EMail':_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x3dc)]['EMail'],'LoginName':_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x3dc)][_0x36b4c1(0x284)]?_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x3dc)]['Title']:'NA','Designation':_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x315)]?_0x59981f[_0x36b4c1(0x26f)][_0x42a72d][_0x36b4c1(0x315)]:'NA','Manager':'','DepartmentId':'','Department':'','FullName':'','CompanyID':'','EmployeeID':'','Skill':''});}}catch(_0x42eb68){alert(_0x42eb68);}});}
+$(document).ready(function () { 	
+    $('.PartialTableChkbox').on('click',function(){
+        if($('.PartialTableChkbox:checked').length == $('.PartialTableChkbox').length){
+           // $('#select_all').prop('checked',true);
+            select_all_checkboxes.checked = true;
+        }else{
+            $('#select_all').prop('checked',false);
+        }
+    });
+    $("#setEditableSelAll").click(function(){
+    	let select_all_checkboxes = document.getElementById("setEditableSelAll");
+	    let delete_checkbox = document.getElementsByName("PartialTableChkbox");
+	
+	    select_all_checkboxes.addEventListener("change", function () {
+	        for (let i = 0; i < delete_checkbox.length; i++) {
+	            if (select_all_checkboxes.checked === true) {
+	                delete_checkbox[i].checked = true;
+	            } else {
+	                delete_checkbox[i].checked = false;
+	            }        
+	        }
+	    });
+    });
+    $("#setEditableSelStepsAll").click(function(){
+    	let select_all_checkboxes = document.getElementById("setEditableSelStepsAll");
+	    let delete_checkbox = document.getElementsByName("PartialTableChkboxSteps");
+	
+	    select_all_checkboxes.addEventListener("change", function () {
+	        for (let i = 0; i < delete_checkbox.length; i++) {
+	            if (select_all_checkboxes.checked === true) {
+	                delete_checkbox[i].checked = true;
+	            } else {
+	                delete_checkbox[i].checked = false;
+	            }        
+	        }
+	    });
+    });
+    $("#setEditableColSelAll").click(function(){
+    	let select_all_checkboxes = document.getElementById("setEditableColSelAll");
+	    let delete_checkbox = document.getElementsByName("TableChkboxSteps");
+	
+	    select_all_checkboxes.addEventListener("change", function () {
+	        for (let i = 0; i < delete_checkbox.length; i++) {
+	            if (select_all_checkboxes.checked === true) {
+	                delete_checkbox[i].checked = true;
+	            } else {
+	                delete_checkbox[i].checked = false;
+	            }        
+	        }
+	    });
+    });
+	var peoplePickerDiv = '';
+	var CurrTenplateID = '';
+	//var radioValue = $("input[name='optradio']:checked").val();
+	$('input[name="optradio"]').change(function() {	
+    if(this.value == 'User'){
+    	//alert(this.value);
+		initializePeoplePicker('Stepuser');                
+	    peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+	  }
+	})
+	$('#btnSubmitStep').click(function () {
+		SaveApprovers();
+		//getAllTemplate();
+	//	SaveApproverQueue();
+	});
+	
+	$("#btnAddStep").on( "click", function(event){
+		event.preventDefault();
+		var rdovalue=$("input[name='optradio']:checked").val();
+		var ApprType =	$("input[type='radio'][name=optionls]:checked").val();
+			
+		if($("#txtStepName").val()==''){alert("Kindly enter the StepName.");return false;}
+		if(rdovalue=='Role'){
+			if($("#ddlroles").prop('selectedIndex')==0){alert("Please select role.");return false;}
+			if(ApprType=='At Bottom of'){
+				if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");return false;}
+			}
+		}else if(rdovalue=='Group'){
+			if($("#ddlgroups").prop('selectedIndex')==0){alert("Please select group.");return false;}
+			if(ApprType=='At Bottom of'){
+				if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");return false;}
+			}
+		}else if(rdovalue=='Field'){
+			if($("#ddlPersonColumn").prop('selectedIndex')==0){alert("Please select column.");return false;}
+			if(ApprType=='At Bottom of'){
+				if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");return false;}
+			}
+		}else if(rdovalue=='Runtime'){
+			if(ApprType=='At Bottom of'){
+				if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");return false;}
+			}
+		}else if(rdovalue=='User'){
+			var peoplePickerDiv =$("[id$='Stepuser_TopSpan']");
+			var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+			var users = peoplePicker.GetAllUserInfo()
+			if(users.length==0){alert("Please enter user.");return false;}
+			if(ApprType=='At Bottom of'){
+				if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");return false;}
+			}
+		}
+		if($("#ActionReq").val() == 'Review & Sign'){}
+		else{
+			var yourArray=[];
+	        $("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+	    		yourArray.push($(this).val());
+			});
+			
+			if($("#ActionReq").val() == 'Review Only')
+			{
+				//ValidationStep=true;
+			//alert('Set Editable Column List.');return false;
+			}
+			else{
+				if(ProcessType=="Process"){
+					if(yourArray.length==0){
+						alert('Set the editable columns')	;return false;
+					}
+				}
+			}
+
+		}
+		AddStep();
+		if(StpApprovers.length>0)
+		{
+			SetApproversList();
+		}
+		else if(SavedstpCount > 0)
+		{    		UpdateApproverStps();
+	
+			alert('Action Taken Successfully.');
+			$('#adds_stepsection').modal('hide');
+		}	
+		else
+		{
+			alert('Define The Process Steps.');
+		}
+		$('#adds_stepsection').modal('hide');
+	});
+	$('#btnEditStep').click(function () {
+		if($("#ActionReq").val() == 'Review & Sign'){}
+		else{
+			var yourArray=[];
+	        $("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+	    		yourArray.push($(this).val());
+			});
+			if($("#ActionReq").val() != 'Review Only'){
+				if(ProcessType="Process"){
+					if(yourArray.length==0){
+						alert('Set the editable columns')	;return false;
+					}
+				}
+			}
+		}
+		EditStepSubmit();
+		$('#adds_stepsection').modal('hide');
+	});
+
+	GetAllUser()
+	
+	
+})
+
+// Render and initialize the client-side People Picker.
+function initializePeoplePicker(peoplePickerElementId) {
+	
+    // Create a schema to store picker properties, and set the properties.
+    var schema = {};
+    schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = true;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '390';
+    // Render and initialize the picker. 
+    // Pass the ID of the DOM element that contains the picker, an array of initial
+    // PickerEntity objects to set the picker value, and a schema that defines
+    // picker properties.
+    this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+    $(".sp-peoplepicker-editorInput").width(310);
+}
+
+
+var PrTableColumnID=[];
+var StepCount = 0;
+var StpApprovers = [];
+var StepApprver = [];
+function AddStep()
+{	
+	StpApprovers=[];
+	var ActionReq=$("#ActionReq").val();
+	var signPosition='BottomMost';
+	var groups= '';var ColName= '';var prevStep,prevStepID='';
+	var isChecked = false;
+		if(ProcessType=="Document"){
+			isChecked = $('#chkSign').is(':checked');
+		}
+	if(ActionReq=="Review & Sign" || ActionReq=="Edit & Sign"){
+		var ApprType =	$("input[type='radio'][name=optionls]:checked").val();
+		if(ApprType=="At Bottom most"){
+			signPosition='BottomMost';
+		}else if(ApprType=="At Bottom of"){
+			if($("#PositionOptList").prop('selectedIndex')==0){alert("Please select position.");}
+			signPosition=$("#PositionOptList").val()
+		}
+	}
+	
+	if($("#ActionReq").val() == 'Review & Sign')
+	{	 
+		var StpName = $('#txtStepName').val();
+		var radioValue = $("input[name='optradio']:checked").val();
+		peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+		//StepApprver = [];
+		if(StpName == '')
+		{
+			alert('Kindly enter the StepName.');
+			return false;
+		}
+		StepApprver = [];
+		if(radioValue == 'User')
+		{
+			var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+			var users = peoplePicker.GetAllUserInfo()
+			var DoesNotexietuser = "";
+			var IsTrue = false;
+			var userArr=[];	
+
+			for (var j = 0; j < users.length; j++) 
+			{	var flag=false;
+				var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+					if(filterData.EMail == users[j].EntityData.Email){flag=true;}
+					return filterData.EMail == users[j].EntityData.Email;
+			    });
+				//if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}
+			    if(arrSubVisaLetters.length==0){userArr.push(users[j].DisplayText)}
+		        if(arrSubVisaLetters.length>0){
+		        	StepApprver.push({'Name' : arrSubVisaLetters[0].EMail , 'Id': arrSubVisaLetters[0].UserId})	 
+		        }
+			    //StepApprver.push(arrSubVisaLetters[0].UserId)	    
+			}	
+		    if(userArr.length>0){alert("Selected user "+userArr+" not in list"); return false;}	     
+   	    
+		    setTimeout(function () {
+		    	AddNewStep(StpName ,'',users,ActionReq);
+		    },100);
+		}else if(radioValue == 'Group'){	
+			groups = $("#ddlgroups option:selected").val();	
+			grpName = $("#ddlgroups option:selected").text();
+			setTimeout(function () {
+			    AddNewStep(StpName ,grpName,users,ActionReq);
+		    },100);
+		}else if(radioValue == 'Field'){	
+			ColName= $("#ddlPersonColumn option:selected").val();
+			setTimeout(function () {
+			   // AddNewStep(StpName ,ColName,users,ActionReq);
+		    },100);
+		}else if(radioValue == 'Runtime'){	
+			prevStep= $("#ddlPreSteps option:selected").text();
+			prevStepID= $("#ddlPreSteps option:selected").val();
+			setTimeout(function () {
+			   // AddNewStep(StpName ,ColName,users,ActionReq);
+		    },100);
+		}
+		else{	
+			var role = $('#ddlroles').val();
+			radioValue='Role';	
+			setTimeout(function () {
+			    AddNewStep(StpName ,role ,users,ActionReq);
+		    },100);
+		}
+		StpApprovers.push({'FooterSign':isChecked ,'StName': StpName, 'Type': radioValue, 'StRole': role, 'StUser': users, 'UsrID': StepApprver,'ActionReq' : ActionReq, 'SignPosition':signPosition,'GroupName':groups,'ColName':ColName,'ApproverDecidingStep':prevStep,'ApproverDecStepId':prevStepID});
+	}
+	else
+	{
+		var yourArray=[];
+       // $("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+    	//	yourArray.push($(this).val());
+		//});
+		$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+		    //yourArray.push($(this).val());
+		    yourArray.push({"tblId": $(this).val(), "tblEditScope": "","tblColIds": ""});
+		});
+		$("select[name='tblColSetFieldSteps']").each(function(){
+			yourArray.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
+		});
+		if(yourArray.length>0||yourArray.length==0)
+		{
+			var StpName = $('#txtStepName').val();
+			var radioValue = $("input[name='optradio']:checked").val();
+			peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+			//StepApprver = [];
+			if(StpName == '')
+			{
+				alert('Kindly enter the StepName.');
+				return false;
+			}
+			StepApprver = [];
+			var userArr=[];
+			if(radioValue == 'User')
+			{
+				var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+				var users = peoplePicker.GetAllUserInfo()
+				var DoesNotexietuser = "";
+				var IsTrue = false;
+				for (var j = 0; j < users.length; j++) 
+				{
+					var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+						return filterData.EMail == users[j].EntityData.Email;
+				    });
+				   // StepApprver.push(arrSubVisaLetters[0].UserId)	
+				   if(arrSubVisaLetters.length==0){userArr.push(users[j].DisplayText)}
+			        if(arrSubVisaLetters.length>0){
+			        	StepApprver.push({'Name' : arrSubVisaLetters[0].EMail , 'Id': arrSubVisaLetters[0].UserId})	 
+			        }    
+				}	
+		    if(userArr.length>0){alert("Selected user "+userArr+" not in list"); return false;}
+			    setTimeout(function () {
+			    	AddNewStep(StpName ,'',users,ActionReq);
+			    },100);
+			}else if(radioValue == 'Group'){	
+				groups = $("#ddlgroups option:selected").val();	
+				ColName = $("#ddlgroups option:selected").text();
+				setTimeout(function () {
+				    AddNewStep(StpName ,grpName,users,ActionReq);
+			    },100);
+			}else if(radioValue == 'Field'){	
+				ColName = $("#ddlPersonColumn option:selected").val();
+				setTimeout(function () {
+				    AddNewStep(StpName ,grpName,users,ActionReq);
+			    },100);
+			}else if(radioValue == 'Runtime'){	
+				prevStep = $("#ddlPreSteps option:selected").text();
+				prevStepID= $("#ddlPreSteps option:selected").val();
+				setTimeout(function () {
+				    AddNewStep(StpName ,prevStep,users,ActionReq);
+			    },100);
+			}
+
+			else
+			{	
+				var role = $('#ddlroles').val();
+				radioValue='Role Based';	
+				setTimeout(function () {
+				    AddNewStep(StpName ,role ,users,ActionReq);
+			    },100);
+			}
+					
+			StpApprovers.push({'FooterSign':isChecked ,'StName': StpName, 'Type': radioValue, 'StRole': role, 'StUser': users, 'UsrID': StepApprver,'ActionReq' : ActionReq,'SignPosition':signPosition,'GroupName':groups,'ColName':ColName,'ApproverDecidingStep':prevStep,'ApproverDecStepId':prevStepID});
+			PrTableColumnID.push({'TemplateID':CurrTenplateID,'EditScope':$("#ActionReq").val(),'StName': StpName,'StepType':'Process Steps', 'ColumnNo':yourArray})
+		}
+		else
+		{
+				
+		}	
+	}
+}
+
+function AddNewStep(Step,Role,User,Action){
+	 StepCount = StepCount + 1;	 
+	 var StepDiv = '';
+	 StepDiv += '<li><div class="topsec">'
+	 StepDiv +=	'<h3>'+Step+'</h3>'
+	 StepDiv +=	'<h4>'+Action+'</h4>'
+	 StepDiv +=	'<div class="dropdown pull-right">'
+	 StepDiv +=	'<button class="dropdown-toggle" type="button" data-toggle="dropdown">'
+	 StepDiv +=	'<i class="fa fa-ellipsis-v" aria-hidden="true"></i> </button>'
+	 StepDiv +=	'<ul class="dropdown-menu">'
+	 StepDiv +=	'<li onclick="EditStep('+StepCount+',this)" data-toggle="modal" data-target="#"><a href="#"><i class="fa fa-pencil" ></i> Edit</a></li>'
+	 StepDiv +=	'<li onclick="DeleteStep('+StepCount+',this)"><a href="#"><i class="fa fa-trash"></i> Delete</a></li>'
+	 StepDiv +=	'</ul></div></div>'
+	 StepDiv +=	'<div style="clear:both"></div>'
+	 StepDiv +=	'<div class="flexitem">'
+	if(Role != ''){		 
+		 StepDiv +=		'<div class="imgsetion">'
+		 StepDiv +=		'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+		 StepDiv +=		'</div>'		 
+		 StepDiv +=		'<div class="imagecontent">'
+	//	 StepDiv += 	'<h4>' + StepApprver + '</h4>'				 
+		 StepDiv += 	'<h4>'+Role+'</h4>'
+		 StepDiv +=		'</div>'	
+	}else{
+	for(i=0;i<User.length;i++){
+		var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(User[i].EntityData.Email);
+	    StepDiv +=	 '<div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + User[i].DisplayText + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+	    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + User[i].DisplayText + '</h4><a href="#" style="cursor: auto;">'+User[i].EntityData.Email+'</a></div>'; 
+		}
+    }
+	StepDiv +=	 '</div></li>'
+	//$('.stepbox').append(StepDiv);
+	ClearDetails();	
+//alert('Add');
+}
+
+
+function DeleteStep(index,elm){
+	elm.parentNode.parentNode.parentNode.parentNode.remove();
+	StpApprovers.findIndex(x => x.Id === index).remove();
+	StpApprovers.splice(StpApprovers.findIndex(x => x.Id === index), 1);
+	StepCount = StepCount - 1;
+}
+var IsNewStp = false;
+function EditStep(index,elm){
+	$("#btnAddStep").hide();
+	$("#btnEditStep").show();
+	$("#btnEditStep").val(index);
+	if(elm != null){
+		elm.parentNode.parentNode.parentNode.parentNode.remove();
+	}
+	
+	$("#txtStepName").val(StpApprovers[index-1].StName);
+	$("#ActionReq").val(StpApprovers[index-1].ActionReq);
+	if(StpApprovers[index-1].SignPosition=="BottomMost"){
+		$("input[name=optionls][text='At Bottom most']").prop('checked', true);
+	}else{
+		$("input[name=optionls][value='At Bottom of']").prop('checked', true);
+		$("#PositionOptList").val(StpApprovers[index-1].SignPosition).attr("selected","selected");
+	}
+
+	SetDisplayPrTable4Approvers(StpApprovers[index-1].ActionReq);
+	
+	IsNewStp = true;	
+	/*if(StpApprovers[index-1].StRole!=''){
+		$("#ddlroles").val(StpApprovers[index-1].StRole);
+		$("input[name=optradio][value=Role]").prop('checked', true);
+		$('.usrbox').hide();
+		$('.rolbox').show();
+	}
+	else{
+		$("input[name=optradio][value=User]").prop('checked', true);
+		$('.usrbox').show();
+		$('.rolbox').hide();
+		initializePeoplePicker('Stepuser');                
+	    peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+		for(i=0;i<StpApprovers[index-1].StUser.length;i++){
+			var peoplePickerteamleaderDiv = this.SPClientPeoplePicker.SPClientPeoplePickerDict.Stepuser_TopSpan;
+	     	peoplePickerteamleaderDiv.AddUserKeys(StpApprovers[index-1].StUser[i].Key.split('|')[2]);
+     	}
+	}*/
+	if(StpApprovers[index-1].Type == 'Role Based' || StpApprovers[index-1].Type == 'Role')
+		{
+			$("#ddlroles").val(StpApprovers[index-1].StRole);
+			$("input[name=optradio][value=Role]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').show();
+			$('.grpbox').hide();
+		}else if(StpApprovers[index-1].Type == 'Group')
+		{
+			$("#ddlgroups").val(StpApprovers[index-1].GroupName);
+			$("input[name=optradio][value=Group]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').hide();
+			$('.grpbox').show();
+		}
+		else
+		{
+			$("input[name=optradio][value=User]").prop('checked', true);
+			$('.usrbox').show();
+			$('.rolbox').hide();
+			$('.grpbox').hide();
+			initializePeoplePicker('Stepuser');                
+	    	peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+			for(i=0;i<StpApprovers[index-1].StUser.length;i++)
+			{
+				var peoplePickerteamleaderDiv = this.SPClientPeoplePicker.SPClientPeoplePickerDict.Stepuser_TopSpan;
+	    	 //	peoplePickerteamleaderDiv.AddUserKeys(SavedStpApprovers[index-1].StUser[i].Key.split('|')[2]);
+	     		peoplePickerteamleaderDiv.AddUserKeys(StpApprovers[index-1].StUser[i].Key.split('|')[2]);
+	    	 	//peoplePickerteamleaderDiv.AddUserKeys(UserTitle);
+     		}
+		}
+}
+
+var ActiveMode='';
+var EditStpID = '';
+function EditEStep(index,ID)
+{
+	ActiveMode='';
+	
+	
+	if(ActiveProessCount == 0)
+	{
+		$('#adds_stepsection').modal('show');
+		LoadPartialTableSteps('Edit',ID);
+		ActiveMode='EditStep';
+		let result = SavedStpApprovers.find(x => x.Id === ID)
+		$('#chkAllStack').prop('checked',result.Stakeholder);
+
+		$("#btnAddStep").hide();
+		$("#btnEditStep").show();
+		$("#btnEditStep").val(index);
+		EditStpID = ID;	
+		$("#txtStepName").val(result.StName);
+		$("#ActionReq").val(result.ActionReq);
+		if(ProcessType=="Process"){
+			if(result.SignPosition=="BottomMost"){
+				$("input[name=optionls][value='At Bottom most']").prop('checked', true);
+				$("#PositionOptList").hide();
+			}else{
+				$("input[name=optionls][value='At Bottom of']").prop('checked', true);
+				$("#PositionOptList").val(result.SignPosition).attr("selected","selected");
+				$("#PositionOptList").show();
+			}
+			if(result.ActionReq=="Edit Data" || result.ActionReq=="Review Only"){
+   				$(".stepsOfProc").css("visibility", "hidden");
+   			}else{
+   				$(".stepsOfProc").css("visibility", "visible");
+   			}
+   			//$(".stepsOfProc").css("visibility", "visible");
+   		}else if(ProcessType=="Document"){
+   				$(".signBox").css("display", "initial");
+   				$(".stepsOfProc").css("visibility", "hidden");
+   				$('#chkSign').prop('checked', result.FooterSign);
+   		}
+   		
+		SetDisplayPrTable4Approvers(result.ActionReq);
+		
+		IsNewStp = false;	
+		if(result.Type == 'Role Based' || result.Type == 'Role')
+		{
+			$("#ddlroles").val(result.StRole);
+			$("input[name=optradio][value=Role]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').show();
+			$('.grpbox').hide();
+			$('.colbox').hide();
+		}else if(result.Type == 'Group')
+		{
+			$("#ddlgroups").val(result.GroupName);
+			$("input[name=optradio][value=Group]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').hide();
+			$('.grpbox').show();
+			$('.colbox').hide();
+			$('.runbox').hide();
+		}else if(result.Type == 'Field')
+		{
+			$("#ddlPersonColumn").val(result.ColName);
+			$("input[name=optradio][value=Field]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').hide();
+			$('.grpbox').hide();
+			$('.colbox').show();
+			$('.runbox').hide();
+		}else if(result.Type == 'Runtime')
+		{	getPrevSteps(CurrTenplateID,'Edit',ID);
+			//$("#ddlPreSteps").text(result.ApproverDecidingStep);
+			//$("#ddlPreSteps option:selected").text(result.ApproverDecidingStep);
+			//$("#ddlPreSteps option:contains(" + result.ApproverDecidingStep+ ")").attr("selected","selected");
+    		$('#ddlPreSteps option').map(function () {
+			    if ($(this).text() == result.ApproverDecidingStep) return this;
+			}).attr('selected', 'selected');
+			$("input[name=optradio][value=Runtime]").prop('checked', true);
+			$('.usrbox').hide();
+			$('.rolbox').hide();
+			$('.grpbox').hide();
+			$('.colbox').hide();
+			$('.runbox').show();
+		}
+		else
+		{
+			$("input[name=optradio][value=User]").prop('checked', true);
+			$('.usrbox').show();
+			$('.rolbox').hide();
+			$('.grpbox').hide();
+			$('.colbox').hide();
+			$('.runbox').hide();
+			initializePeoplePicker('Stepuser');                
+	    	peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+			for(i=0;i<result.StUser.length;i++)
+			{
+				var peoplePickerteamleaderDiv = this.SPClientPeoplePicker.SPClientPeoplePickerDict.Stepuser_TopSpan;
+	    	 //	peoplePickerteamleaderDiv.AddUserKeys(SavedStpApprovers[index-1].StUser[i].Key.split('|')[2]);
+	    	 	var UserTitle = GetUserLogin(result.StUser[i]);
+	    	 	peoplePickerteamleaderDiv.AddUserKeys(UserTitle);
+     		}
+		}
+	}
+	else
+	{	
+		alert('This action cannot be performed now.\nSome approvals using this Template  is under processing.');$('#adds_stepsection').modal('hide');
+	}
+}
+
+function EditStepSubmit()
+{
+	var ValidationStep=false;var GroupName,ColTitle='';
+	var ActionReq=$("#ActionReq").val();
+	var signPosition='BottomMost';
+	var groups= '';var ColName='';var prevStep,prevStepId='';
+	var isChecked = false;
+		if(ProcessType=="Document"){
+			isChecked = $('#chkSign').is(':checked');
+		}
+
+	var radioValue = $("input[name='optradio']:checked").val();
+		if(radioValue=="Role"){radioValue="Role Based";}
+		else if(radioValue=="User"){radioValue="Specific";}
+		else if(radioValue=="Group"){radioValue="Group";}
+	if(ActionReq=="Review & Sign" || ActionReq=="Edit & Sign"){
+		var ApprType =	$("input[type='radio'][name=optionls]:checked").val();
+		if(ApprType=="At Bottom most"){
+			signPosition='BottomMost';
+		}else if(ApprType=="At Bottom of"){
+			signPosition=$("#PositionOptList").val()
+		}
+	}
+	if($("#ActionReq").val() == 'Review & Sign')
+	{
+		ValidationStep=true;
+		
+		var StpName = $('#txtStepName').val();
+		
+		var role = '';
+		peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+		StepApprver = [];
+		if(StpName ==  '')
+		{
+			ValidationStep=false;
+			alert('Please enter Step name.');
+			return false;
+		}
+	}
+	else
+	{	//if($("#ActionReq").val() == 'Review Only'){ValidationStep=true;}
+		var SelectedNewColumn=[];
+		$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+   			SelectedNewColumn.push($(this).val());
+		});
+		var StpName = $('#txtStepName').val();
+		if(SelectedNewColumn.length>0 )
+		{
+			ValidationStep=true;
+			
+			//var radioValue = $("input[name='optradio']:checked").val();
+			var role = '';
+			peoplePickerDiv = $("[id$='Stepuser_TopSpan']"); 
+			StepApprver = [];
+			if(StpName ==  '')
+			{
+				ValidationStep=false;
+				alert('Please enter Step name.');
+				return false;
+			}
+		}
+		else
+		{
+			if($("#ActionReq").val() == 'Review Only')
+			{
+				ValidationStep=true;
+			//alert('Set Editable Column List.');return false;
+			}
+			else{
+				ValidationStep=false;
+			}
+		}		
+	}
+	
+	
+	if(ValidationStep == true)
+	{
+		if(radioValue == 'Specific')
+		{
+		 	var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+		 	var users = peoplePicker.GetAllUserInfo()
+		 	var DoesNotexietuser = "";
+    	 	var IsTrue = false;
+    	 	var userArr=[];
+		    for (var j = 0; j < users.length; j++) 
+		    {
+		    	var flag=false;
+		        var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+		        	if(filterData.EMail == users[j].EntityData.Email){flag=true;}
+		            return filterData.EMail == users[j].EntityData.Email;
+		        });
+		        if(arrSubVisaLetters.length==0){userArr.push(users[j].DisplayText)}
+		        if(arrSubVisaLetters.length>0){
+		        	StepApprver.push({'Name' : arrSubVisaLetters[0].EMail , 'Id': arrSubVisaLetters[0].UserId})	 
+		        }   
+		    }
+		    if(userArr.length>0){alert("Selected user "+userArr+" not in list"); return false;}	     
+    	    EditNewStep(StpName ,'',users,signPosition,ActionReq,radioValue,GroupName,'','' );
+ 		}else if(radioValue == 'Group'){
+			GroupName = $('#ddlgroups').val();
+			groups = $("#ddlgroups option:selected").text();	
+
+    		EditNewStep(StpName,groups,StepApprver,signPosition,ActionReq,radioValue,GroupName ,'','' );
+		}else if(radioValue == 'Field'){
+			GroupName = $('#ddlgroups').val();
+			ColName= $("#ddlPersonColumn option:selected").val();	
+			ColTitle= $("#ddlPersonColumn option:selected").text();
+    		EditNewStep(StpName,ColTitle,StepApprver,signPosition,ActionReq,radioValue,GroupName ,'','' );
+		}else if(radioValue == 'Runtime'){
+			prevStep= $("#ddlPreSteps option:selected").text();	
+			prevStepId= $("#ddlPreSteps option:selected").val();
+    		EditNewStep(StpName,prevStep,StepApprver,signPosition,ActionReq,radioValue,GroupName ,'','' );
+		}
+ 		else
+ 		{
+			role = $('#ddlroles').val();
+    		EditNewStep(StpName, role ,StepApprver,signPosition,ActionReq,radioValue,'','','' );
+		}
+	
+		if(IsNewStp == false )
+		{
+ 			SaveEditStepInList(StpName,role, StepApprver,GroupName,signPosition,ActionReq,radioValue,ColName,prevStep,prevStepId,isChecked);
+ 			$('#btnEditStep').hide();
+ 			$('#btnAddStep').show();
+ 			
+ 		}
+ 	}
+}
+
+function SaveEditStepInList(StpName,role,StepApprver,GroupName,signPosition,ActionReq,Type,ColName,prevStep,prevStepId,isChecked){
+	
+	//$('#'+EditStpID).hide();
+	var StpUsers = [];
+	var isAllStake = $('#chkAllStack').is(':checked');
+	if(StepApprver.length){
+		for(i=0;i<StepApprver.length;i++){
+			StpUsers.push(StepApprver[i].Id)
+		}
+		var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },		
+	        StepName: StpName,//StpApprovers[i].StName, 
+	        SignaturePosition:signPosition,
+	        ActionRequired:ActionReq,   
+	        ApproverType:Type, 
+	        PageFooterSign:isChecked, 
+	        ParallelStakeholder:isAllStake,                  
+	        ApproversId: {
+	            'results': StpUsers
+	        }              		                       
+		};	
+	}else{
+		if(Type=="Group"){
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },		
+		        StepName: StpName,//StpApprovers[i].StName,                 
+		        ApproverRole: role,//StpApprovers[i].StRole,  
+		        GroupNameId:GroupName,
+		        SignaturePosition:signPosition,
+	        	ActionRequired:ActionReq,
+	        	PageFooterSign:isChecked,
+	        	ApproverType:Type,    
+	        	ParallelStakeholder:isAllStake                      		                       
+			};
+		}else if(Type=="Field"){
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },		
+		        StepName: StpName,//StpApprovers[i].StName,                 
+		        ApproverRole: role,//StpApprovers[i].StRole,  
+		        ColumnName:ColName,
+		        SignaturePosition:signPosition,
+	        	ActionRequired:ActionReq,
+	        	PageFooterSign:isChecked,
+	        	ApproverType:Type,   
+	        	ParallelStakeholder:isAllStake                       		                       
+			};
+		}else if(Type=="Runtime"){
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },		
+		        StepName: StpName,//StpApprovers[i].StName,                 
+		        ApproverRole: role,//StpApprovers[i].StRole,  
+		        SignaturePosition:signPosition,
+	        	ActionRequired:ActionReq,
+	        	ApproverType:Type,
+	        	PageFooterSign:isChecked,
+	        	ApproverDecidingStep: prevStep,
+	        	ParallelStakeholder:isAllStake,	        	                        		                       
+			};
+		}else{
+			var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },		
+		        StepName: StpName,//StpApprovers[i].StName,                 
+		        ApproverRole: role,//StpApprovers[i].StRole,
+		        SignaturePosition:signPosition,
+	        	ActionRequired:ActionReq,
+	        	PageFooterSign:isChecked,
+	        	ApproverType:Type, 
+	        	ParallelStakeholder:isAllStake
+			};
+		}
+				
+	}   	  			
+	$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items(" +EditStpID+ ")",
+		async:false,
+        type: "PATCH",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": "*"
+        },
+        data: JSON.stringify(listItem),
+        success: function (data) 
+        {
+        	//if(data.d.ApproverType=="Runtime"){
+        	//			ApproverDecStep(prevStepId,true,data.d.StepName)
+        	//}
+
+        	var SelectedNewColumn=[];
+        	//$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+    		//	SelectedNewColumn.push($(this).val());
+			//});			
+        	
+        	$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+			    //yourArray.push($(this).val());
+			    SelectedNewColumn.push({"tblId": $(this).val(), "tblEditScope": "","tblColIds": ""});
+			});
+			$("select[name='tblColSetFieldSteps']").each(function(){
+				SelectedNewColumn.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
+			});
+        	var EditPrTableColumnID=[];
+        	EditPrTableColumnID.push({'TemplateID':CurrTenplateID,'EditScope':$("#ActionReq").val(),'StName': $("#txtStepName").val(),'StepType':'Process Steps', 'ColumnNo':SelectedNewColumn})
+        	if(SelectedPrtableSteps.length>0)
+			{
+				for(k=0; k<SelectedPrtableSteps.length; k++)
+				{
+					DeleteApprovalTemplateEditScopeRec(SelectedPrtableSteps[k].ID);
+				}
+			}
+			
+			if($("#ActionReq").val() == 'Edit Data' || $("#ActionReq").val() == 'Edit & Sign' || $("#ActionReq").val() == 'Review Only')
+			{
+				if(SelectedNewColumn.length>0)
+				{
+					for(var j=0; j<EditPrTableColumnID[0].ColumnNo.length; j++)
+					{
+						var listName="ApprovalTemplateEditScope";	
+						var arr=[];
+						    if(EditPrTableColumnID[0].ColumnNo[j].tblColIds!=""){
+						    	arr=EditPrTableColumnID[0].ColumnNo[j].tblColIds.split(",");
+						    }		
+						//var item={'__metadata': { type: 'SP.Data.'+listName+'ListItem'},'StepIDId':parseInt(EditStpID),'TemplateIDId':parseInt(EditPrTableColumnID[0].TemplateID), 'StepType':EditPrTableColumnID[0].StepType,'EditScope':'Partial','ColumnIDId':parseInt(EditPrTableColumnID[0].ColumnNo[j]),'Title':'Edit Scope'};
+						var item={'__metadata': { type: 'SP.Data.'+listName+'ListItem'},'StepIDId':parseInt(EditStpID),'TemplateIDId':parseInt(EditPrTableColumnID[0].TemplateID), 'StepType':EditPrTableColumnID[0].StepType,'EditScope':'Partial','Title':'Edit Scope','ColumnIDId':parseInt(EditPrTableColumnID[0].ColumnNo[j].tblId),'Title':'Edit Scope','TableEditScope':EditPrTableColumnID[0].ColumnNo[j].tblEditScope,'TableColumnsId':{"results":arr}};
+
+						ApprovalTemplateEditScopeSet(listName,item,);
+					}
+				}
+			}
+			           
+            alert('Process Step has been updated.');
+            $('input:checkbox[name="PartialTableChkboxSteps"]').removeAttr('checked');
+        },
+        error: function (error) {            
+            console.log(error);
+        }
+    });
+}
+
+
+function EditSavedStep(Step,Role,User){
+	// StepCount = StepCount + 1;
+	stpEditstep =[];
+	 var arrId=	$("#btnEditStep").val();
+	 var newElement = {'StName':Step, 'Type': 'Role Based', 'StRole': Role, 'StUser':User,'UserID':arrId};
+ 	 SavedStpApprovers[arrId-1] = newElement; 	 
+	 var StepDiv = '';
+	 StepDiv += '<li><div class="topsec">'
+	 StepDiv +=	'<h3>'+Step+'</h3>'
+	 StepDiv +=	'<div class="dropdown pull-right">'
+	 StepDiv +=	'<button class="dropdown-toggle" type="button" data-toggle="dropdown">'
+	 StepDiv +=	'<i class="fa fa-ellipsis-v" aria-hidden="true"></i> </button>'
+	 StepDiv +=	'<ul class="dropdown-menu">'
+	 StepDiv +=	'<li onclick="EditStep('+arrId+',this)" data-toggle="modal" data-target="#"><a href="#"><i class="fa fa-pencil" ></i> Edit</a></li>'
+	 StepDiv +=	'<li onclick="DeleteStep('+ arrId+',this)"><a href="#"><i class="fa fa-trash"></i> Delete</a></li>'
+	 StepDiv +=	'</ul></div></div>'
+	 StepDiv +=	'<div style="clear:both"></div>'
+	 StepDiv +=	'<div class="row no-gutter">'
+	if(Role != ''){
+	 StepDiv +=		'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+	 StepDiv +=		'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+	 StepDiv +=		'</div>'
+	 StepDiv +=		'<div class="imagecontent">'
+	 StepDiv +=		'<h4>'+Role+'</h4>'
+	 StepDiv +=		'</div></div>'
+	}else{
+	for(i=0;i<User.length;i++){
+		var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(User[i].EntityData.Email);
+	    StepDiv +=	 '<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + User[i].DisplayText + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+	    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + User[i].DisplayText + '</h4><a href="#" style="cursor: auto;">'+User[i].EntityData.Email+'</a></div></div>'; 
+		}
+    }
+	StepDiv +=	 '</div></li>'
+	$('.stepbox').append(StepDiv);
+	ClearDetails();
+//alert('Add');
+}
+
+
+var stpEditstep =[];
+function EditNewStep(Step,Role,User,signPosition,ActionReq,radioValue,GroupName ){
+	// StepCount = StepCount + 1;
+	stpEditstep =[];
+	 var arrId=	$("#btnEditStep").val();
+ 	 if(ActionReq=="Edit Data"){ActionReq="Edit & Approve";}
+ 	 if(IsNewStp==false){
+		 var StepDiv = '';
+		 StepDiv += '<div class="topsec">'
+		 StepDiv +=	'<h3>'+Step+'</h3>'
+		 
+		 StepDiv +=	'<div class="dropdown pull-right">'
+		 StepDiv +=	'<button class="dropdown-toggle" type="button" data-toggle="dropdown">'
+		 StepDiv +=	'<i class="fa fa-ellipsis-v" aria-hidden="true"></i> </button>'
+		 StepDiv +=	'<ul class="dropdown-menu">'
+		 StepDiv +=	'<li onclick="EditEStep('+arrId+','+EditStpID+')" data-toggle="modal" data-target="#"><a href="#"><i class="fa fa-pencil" ></i> Edit</a></li>'
+		 StepDiv +=	'<li onclick="DeleteEStep('+EditStpID+')"><a href="#"><i class="fa fa-trash"></i> Delete</a></li>'
+		 StepDiv +=	'</ul></div></div>'
+		 StepDiv +=	'<h5>'+ActionReq+'</h5>'
+		 StepDiv +=	'<div style="clear:both"></div>'
+		 StepDiv +=	'<div class="row no-gutter">'
+		if(Role != ''){
+		 StepDiv +=		'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+		 StepDiv +=		'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+		 StepDiv +=		'</div>'
+		 StepDiv +=		'<div class="imagecontent">'
+		 StepDiv +=		'<h4>'+Role+'</h4>'
+		 StepDiv +=		'</div></div>'
+		}else{
+		for(i=0;i<User.length;i++){
+			var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(User[i].EntityData.Email);
+		    StepDiv +=	 '<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + User[i].DisplayText + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+		    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + User[i].DisplayText + '</h4><a href="#" style="cursor: auto;">'+User[i].EntityData.Email+'</a></div></div>'; 
+			}
+	    }
+		StepDiv +=	 '</div>'
+		$('#'+EditStpID).html(StepDiv)
+ 	 	objIndex = SavedStpApprovers.findIndex((obj => obj.Id == EditStpID));
+ 	 	var arrUser=[];
+ 	 	for (var j = 0; j < User.length; j++) 
+			{	var flag=false;
+				var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+					if(filterData.EMail == User[j].EntityData.Email){flag=true;}
+					return filterData.EMail == User[j].EntityData.Email;
+			    });
+			    
+			    arrUser.push(arrSubVisaLetters[0].UserId)	    
+			}
+ 		SavedStpApprovers[objIndex].StUser= arrUser;
+		SavedStpApprovers[objIndex].StName= Step;
+		SavedStpApprovers[objIndex].ActionReq= ActionReq;
+		SavedStpApprovers[objIndex].SignPosition= signPosition;
+		SavedStpApprovers[objIndex].StRole= Role;
+		SavedStpApprovers[objIndex].Type= radioValue ;
+		SavedStpApprovers[objIndex].Stakeholder= $('#chkAllStack').is(':checked');
+
+ 	 }else{
+ 	 var arrUser=[];
+	 	 	for (var j = 0; j < User.length; j++) 
+				{	var flag=false;
+					var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+						if(filterData.EMail == User[j].EntityData.Email){flag=true;}
+						return filterData.EMail == User[j].EntityData.Email;
+				    });
+				    
+				    arrUser.push(arrSubVisaLetters[0].UserId)	    
+			}
+
+ 	  	 //var newElement = {'StName':Step, 'Type': 'Role', 'StRole': Role, 'StUser':User,'UsrID':arrId};
+ 	  	 var newElement = {'StName': Step, 'Type': radioValue, 'StRole': Role, 'StUser': User, 'UsrID': arrUser,'ActionReq' : ActionReq, 'SignPosition':signPosition,'GroupName':GroupName };
+ 	  	 StpApprovers[arrId-1] = newElement;
+
+			 var StepDiv = '';
+			 StepDiv += '<li><div class="topsec">'
+			 StepDiv +=	'<h3>'+Step+'</h3>'
+			 StepDiv +=	'<div class="dropdown pull-right">'
+			 StepDiv +=	'<button class="dropdown-toggle" type="button" data-toggle="dropdown">'
+			 StepDiv +=	'<i class="fa fa-ellipsis-v" aria-hidden="true"></i> </button>'
+			 StepDiv +=	'<ul class="dropdown-menu">'
+			 StepDiv +=	'<li onclick="EditStep('+arrId+',this)" data-toggle="modal" data-target="#"><a href="#"><i class="fa fa-pencil" ></i> Edit</a></li>'
+			 StepDiv +=	'<li onclick="DeleteStep('+ arrId+',this)"><a href="#"><i class="fa fa-trash"></i> Delete</a></li>'
+			 StepDiv +=	'</ul></div></div>'
+			 StepDiv +=	'<div style="clear:both"></div>'
+			 StepDiv +=	'<div class="row no-gutter">'
+			if(Role != ''){
+			 StepDiv +=		'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+			 StepDiv +=		'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+			 StepDiv +=		'</div>'
+			 StepDiv +=		'<div class="imagecontent">'
+			 StepDiv +=		'<h4>'+Role+'</h4>'
+			 StepDiv +=		'</div></div>'
+			}else{
+			for(i=0;i<User.length;i++){
+				var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(User[i].EntityData.Email);
+			    StepDiv +=	 '<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + User[i].DisplayText + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+			    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + User[i].DisplayText + '</h4><a href="#" style="cursor: auto;">'+User[i].EntityData.Email+'</a></div></div>'; 
+				}
+		    }
+			StepDiv +=	 '</div></li>'
+			$('.stepbox').append(StepDiv);
+ 	  		$('#btnEditStep').hide();$('#btnAddStep').show();
+ 	 		stpEditstep = newElement;
+
+
+ 	 }
+	ClearDetails();
+//alert('Add');
+}
+
+function GetlistData(restURL) {
+	var def = $.Deferred();
+	$.ajax({
+		url: _spPageContextInfo.webAbsoluteUrl + restURL,
+		async: false,
+		contentType: "application/json;odata=verbose",
+		headers: { "accept": "application/json;odata=verbose" },
+		success: function (data) {
+			def.resolve(data);
+		},
+		error: function (data) {
+			def.reject(data);
+		}
+	});
+
+	return def.promise();
+}
+  
+var ApproerSteps = [];
+var SavedStpApprovers =[];
+var SavedstpCount = '';
+var ProcessType="";
+var flagIniStp="";
+function getTempID(TempID,Type)
+{
+	CurrTenplateID = TempID;
+
+	flagIniStp=Type;
+	if(Type=="Initiation"){
+		$('#stpAppTitle').text("Initiation");
+		$('#ProcessStep').hide();
+		$('#Initiation').show();
+		showSubBtn();LoadPartialTable();
+	}
+	else if(Type=="Steps"){
+		$('#stpAppTitle').text("Steps");
+		$('#Initiation').hide();
+		$('#ProcessStep').show();
+		hideSubBtn();LoadPartialTable();
+	}
+	PrTableColumnID=[];
+	InitiatorList=[];
+	$('.peoplepickeboxs').css("display", "none");
+	$("#selectives-Initiator").empty();
+	SavedStpApprovers = [];
+	$('.stepbox').empty();
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items?$select=*,GroupName/Id,GroupName/Title,Approvers/Id,Approvers/Title,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID,Approvers,GroupName&$filter=TemplateID/ID eq '" + CurrTenplateID+ "'&$orderby= Sequence_No asc";   
+    $.ajax({  
+    	url: siteURL,
+    	async: false,  
+        headers: {	Accept: "application/json;odata=verbose"  },  
+        async: false,  
+        success: function(data)
+        {  
+        	GetInitiationDetails(CurrTenplateID);
+        	var items; // Data will have user object  
+            var results;  
+            items = data.d.results;  
+            $('#btnAddStep').show();
+            $('#btnEditStep').hide();            
+            ApproerSteps = items;
+            getGroupNames();
+            getPersonCol(TempID);
+            
+            GetTempDetails(TempID);
+            if(items.length > 0)
+            {            
+             	ViewStepInTemp(items);
+             	SavedstpCount = items.length;
+            } 
+            for(i=0;i<ApproerSteps.length;i++)
+            {
+            	if(ApproerSteps[i].ActionRequired=="Edit & Sign" || ApproerSteps[i].ActionRequired=="Review & Sign"){
+            		   	//	$(".stepsOfProc").css("visibility", "hidden");
+            	}else{
+            		   		//$(".stepsOfProc").css("visibility", "visible");
+            	}
+				if(ApproerSteps[i].ApproverType == "Role Based" || ApproerSteps[i].ApproverType == "Role")
+				{	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
+			  	}else if(ApproerSteps[i].ApproverType == "Group")
+				{	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
+			  	}else if(ApproerSteps[i].ApproverType == "Field")
+				{	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
+			  	}else if(ApproerSteps[i].ApproverType == "Runtime")
+				{	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
+			  	}
+			  	else
+			  	{
+					if(ApproerSteps[i].ApproversId != null )
+					{
+				 		var Approvers = ApproerSteps[i].ApproversId.results;
+				 		SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers,'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});
+			     	}				
+			  	}
+			}			
+       	},  
+        error: function(data) 
+        {  
+        	console.log("An error occurred. Please try again.");  
+        }  
+    });
+}
+$(document).ready(function(){
+	$('#addStepPopup').click(function () {
+			ActiveMode='';
+			getPrevSteps(CurrTenplateID,'Add');
+	});
+});	
+function ViewStepInTemp(ApproerSteps){
+var StepDiv = '';
+$('.stepbox').empty();
+StpApprovers = [];
+
+for(i=0;i<ApproerSteps.length;i++){
+var m=i+1;var actionReq='';
+if(ApproerSteps[i].ActionRequired=="Edit Data"){actionReq="Edit & Approve";}else{actionReq=ApproerSteps[i].ActionRequired;}
+ StepDiv += '<li id="'+ApproerSteps[i].Id+'"><div class="topsec">'
+ StepDiv +=	'<h3>'+ApproerSteps[i].StepName+'</h3>'
+ 
+ StepDiv +=	'<div class="dropdown pull-right">'
+ StepDiv +=	'<button class="dropdown-toggle" type="button" data-toggle="dropdown">'
+ StepDiv +=	'<i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>'
+ StepDiv +=	'<ul class="dropdown-menu">'
+ StepDiv +=	'<li onclick="EditEStep('+m+','+ApproerSteps[i].Id+')" data-toggle="modal" data-target="#"><a href="#"><i class="fa fa-pencil"></i> Edit</a></li>'
+ StepDiv +=	'<li onclick="DeleteEStep('+ApproerSteps[i].Id+')"><a href="#"><i class="fa fa-trash"></i> Delete</a></li></ul>'
+ StepDiv +=	'</div>'
+ StepDiv += '</div>'
+ StepDiv +=	'<h5>'+actionReq+'</h5>'
+ StepDiv +=	'<div style="clear:both"></div>'
+ StepDiv +=	'<div class="row no-gutter">';
+if(ApproerSteps[i].ApproverType == "Role Based"  || ApproerSteps[i].ApproverType == 'Role'){
+	if(ApproerSteps[i].ApproversId != null ){
+	  var Approvers = ApproerSteps[i].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>'+ApproerSteps[i].ApproverRole+'</h4>'
+ StepDiv +=	'</div></div>'
+}
+else if(ApproerSteps[i].ApproverType == "Group"){
+	if(ApproerSteps[i].ApproversId != null ){
+	  var Approvers = ApproerSteps[i].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>'+ApproerSteps[i].GroupName.Title+'</h4>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[i].ApproverType == "Field"){
+			var result = arrPerson.filter(obj => {
+				return obj.ColumnName === ApproerSteps[i].ColumnName;
+			});console.log(result);
+	if(ApproerSteps[i].ApproversId != null ){
+	  var Approvers = ApproerSteps[i].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>Column Value of '+result[0].ColumnTitle+'</h4>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[i].ApproverType == "Runtime"){
+	if(ApproerSteps[i].ApproversId != null ){
+	  var Approvers = ApproerSteps[i].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>'+ApproerSteps[i].ApproverDecidingStep+'</h4>'
+ StepDiv +=	'</div></div>'
+}
+
+else{
+if(ApproerSteps[i].ApproversId != null ){
+	 var Approvers = ApproerSteps[i].ApproversId.results;
+	//    StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+     }
+   for(j=0;j<Approvers.length;j++){
+   	var arrSubApprover = AllEmployee.filter(function (filterData) {
+	     return filterData.UserId == Approvers[j];
+	 });
+	 
+	//var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrSubApprover[0].EMail);
+	var Authorattachment = '';
+	if(arrSubApprover.length>0)
+	{
+		Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + arrSubApprover[0].EMail;
+		StepDiv +=	 '<div class="flexitem col-md-4 col-sm-6 col-xs-12"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + arrSubApprover[0].LoginName + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+    	StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + arrSubApprover[0].LoginName + '</h4><a href="#" style="cursor: auto;">'+arrSubApprover[0].EMail+'</a></div></div>'; 
+	}
+	
+    
+   }
+}
+StepDiv +=	 '</div></li>'
+}
+$('.stepbox').append(StepDiv);
+}
+
+function ViewStep(){
+var StepDiv = '';
+$('#stepboxView').empty();
+//SavedStpApprovers = [];
+for(i=0;i<ApproerSteps.length;i++){
+ var m=i+1;
+ StepDiv += '<li id="'+ApproerSteps[i].Id+'"><div class="topsec">'
+ StepDiv +=	'<h3>'+ApproerSteps[i].StepName+'</h3>' 
+ StepDiv += '</div>'
+ StepDiv +=	'<div style="clear:both"></div>'
+ StepDiv +=	'<span>Action = '+ApproerSteps[i].ActionRequired+'</span>'
+ StepDiv +=	'<div class="row">'
+if(ApproerSteps[i].ApproverType == "Role Based"){
+StepDiv +=	'<div class="col-sm-4 flexitem">'	
+ StepDiv +=	'<div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>'+ApproerSteps[i].ApproverRole+'</h4>'
+ StepDiv +=	'</div></div>' 
+}else if(ApproerSteps[i].ApproverType == "Group"){	
+StepDiv +=	'<div class="col-sm-4 flexitem">'
+ StepDiv +=	'<div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv +=	'<h4>'+ApproerSteps[i].GroupName.Title+'</h4>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[i].ApproverType == "Runtime"){	 
+ StepDiv +=	'<span class= "left_mg_pad">Approver Type = Runtime</span>' 
+ StepDiv +=	'</div><div class="flexitem step_gap">'
+ StepDiv +=	'<div class="col-sm-4 flexitem">'	
+ StepDiv +=	'<div class="imgsetion">'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>' 
+ StepDiv +=	'<div class="imagecontent">'
+ StepDiv += '<span>Step Name</span><span>Column = ApproverDecidingStep'+ApproerSteps[i].ColumnName+'</span>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[i].ApproverType == "Field"){	 
+ StepDiv +=	'<span class ="left_mg_pad">Approver Type = Column Value</span>'
+ StepDiv +=	'</div><div class="flexitem step_gap">'
+ StepDiv +=	'<div class="col-sm-4 flexitem">'	
+ StepDiv +=	'<div class="imgsetion" >'
+ StepDiv +=	'<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="imagecontent">'
+ var colnm = $('.'+ApproerSteps[i].ColumnName).closest('label').text();
+ StepDiv += '<span>'+colnm.trim()+'</span>'
+ StepDiv +=	'</div></div>' 
+}
+else{
+	if(ApproerSteps[i].ApproversId != null ){
+		  var Approvers = ApproerSteps[i].ApproversId.results;	 
+	 }	
+   	for(j=0;j<Approvers.length;j++){
+   	var arrSubApprover = AllEmployee.filter(function (filterData) {
+	     return filterData.UserId == Approvers[j];
+	});	
+	var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrSubApprover[0].EMail);
+    StepDiv +=	'<div class="col-sm-4 flexitem">'
+    StepDiv +=	 '<div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + arrSubApprover[0].LoginName + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
+    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + arrSubApprover[0].LoginName + '</h4><a href="#" style="cursor: auto;">'+arrSubApprover[0].EMail+'</a></div></div>'; 
+   }
+}
+StepDiv +=	 '</div></li>'
+}
+$('#stepboxView').append(StepDiv);
+}
+
+//Delete list step from sharepoint using API  
+function DeleteEStep(itemID){  
+if(ActiveProessCount == 0){
+if (confirm('Are you sure you want to delete this step?')) {
+	$('#'+itemID).remove(); 
+    siteURL = _spPageContextInfo.webAbsoluteUrl;  
+    console.log("from top nav - " + siteURL);  
+    var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalTemplateSteps')/items('"+itemID+"')";  
+    $.ajax({  
+        url: apiPath,  
+        type: "POST",  
+        headers: {  
+           "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	        "IF-MATCH": "*",
+	        "X-HTTP-Method": "DELETE"      
+	    },  
+        async: false,  
+        success: function(data) {
+        	SavedStpApprovers.splice(SavedStpApprovers.findIndex(i => i.Id===itemID), 1);  
+            alert("Selected step has been deleted.");   
+            UpdateApproverStps();          
+        },  
+        eror: function(data) {  
+            console.log("An error occurred. Please try again.");  
+        }  
+      }); 
+    }     
+  } else{
+  	
+  	alert('This action cannot be performed now.\nSome approvals using this Template  is under processing.');
+  }
+}
+
+
+function ClearDetails(){
+	$('#txtStepName').val('');
+	$("input[name=optradio][value=Role]").prop('checked', true);
+	$('.usrbox').hide()
+	$('.rolbox').show()
+	$('.grpbox').hide()
+}
+
+
+function SaveApprovers()
+{
+	var Scope = $('input[name="scrops"]:checked').val();
+	var Initiator = $('input[name="selectives"]:checked').val();
+	if(Scope == 'Partial')// && StpApprovers.length>0
+	{
+		var yourArray=[];
+        $("input:checkbox[name='PartialTableChkbox']:checked").each(function(){
+    		yourArray.push($(this).val());
+		});
+		
+		if(ProcessType="Process"){
+			if(yourArray.length>0)
+			{	
+				if(Initiator=="Department"){
+					if(selected_Dept.length==0){alert("Please select department.");return false;}			
+				}else if(Initiator=="Office"){
+					if(selected_Office.length==0){alert("Please select office");return false;}			
+				}else if(Initiator=="Group"){
+					if(selected_Group.length==0){alert("Please select group");return false;}			
+				}else if(Initiator=="Client"){
+					if(selected_Client.length==0){alert("Please select client");return false;}
+				}else if(Initiator=="Employee"){
+					if(selected_CompEmp.length==0){alert("Please select company.");return false;}
+				}
+
+				SetInitiatorList();
+				$('#stepsapprover').modal('hide');
+			}
+			else
+			{
+				alert("Set the editable columns");
+			}
+		}
+	
+	}
+	else
+	{			if(Initiator=="Department"){
+					if(selected_Dept.length==0){alert("Please select department.");return false;}			
+				}else if(Initiator=="Office"){
+					if(selected_Office.length==0){alert("Please select office");return false;}			
+				}else if(Initiator=="Group"){
+					if(selected_Group.length==0){alert("Please select group");return false;}			
+				}else if(Initiator=="Client"){
+					if(selected_Client.length==0){alert("Please select client");return false;}
+				}else if(Initiator=="Employee"){
+					if(selected_CompEmp.length==0){alert("Please select company.");return false;}
+				}
+		SetInitiatorList();
+		$('#stepsapprover').modal('hide');
+	}
+	
+	
+}
+
+
+function SetApproversList()
+{	var actionReq='';
+	var isAllStake = $('#chkAllStack').is(':checked');		
+	var snNo=0;
+	if(SavedStpApprovers.length>0){
+		snNo=Math.max.apply(Math, SavedStpApprovers.map(function(o) { return o.sNo; }))
+	}
+	if(StpApprovers.length > 0)
+  	{
+		var Title = 'Step Approvers';
+		var sts = false;	 
+		for(i=0;i<StpApprovers.length;i++)
+		{
+			if(ProcessType=="Process"){actionReq=StpApprovers[i].ActionReq}	
+			else if(ProcessType=="Document"){actionReq="Review & Sign"}
+			var users = StpApprovers[i].UsrID;
+		 	var StpUsers = [];
+		 	if(users.length > 0)
+		 	{
+				for(m=0; m<users.length; m++)
+				{	 		
+			 	 	if(users[m].Id == null)
+			 	 	{
+			 			StpUsers.push(users[m]);
+			 	 	}
+			 	 	else
+			 	 	{
+			 			StpUsers.push(users[m].Id); 
+			 	 	}
+			  	}
+		 	}
+	 		//	var ApprType =	$("input[type='radio'][name=optradio]:checked").val()	
+	 		 
+	 		if(StpApprovers[i].Type == 'Role' || StpApprovers[i].Type == 'Role Based')
+	 		{
+    		 	var	AppType = 'Role Based';
+    		 	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+    				TemplateIDId: CurrTenplateID,
+        		    Sequence_No: snNo+1,
+        		    StepName: StpApprovers[i].StName,
+        		    Title: Title,        		                                  
+        		    ApproverRole: StpApprovers[i].StRole,
+        		    ApproverType: AppType,
+        		    ActionRequired : actionReq,
+        		    SignaturePosition:StpApprovers[i].SignPosition,
+        		    PageFooterSign:StpApprovers[i].FooterSign,
+					ParallelStakeholder:isAllStake 
+        	    };		         
+	 		}else if(StpApprovers[i].Type == 'Group')
+	 		{
+    		 	var	AppType = 'Group';
+    		 	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+    				TemplateIDId: CurrTenplateID,
+        		    Sequence_No: snNo+1,
+        		    StepName: StpApprovers[i].StName,
+        		    Title: Title,        		                                  
+        		    ApproverRole: StpApprovers[i].StRole,
+        		    ApproverType: AppType,
+        		    ActionRequired : actionReq,
+        		    SignaturePosition:StpApprovers[i].SignPosition,
+        		    GroupNameId:StpApprovers[i].GroupName,
+        		    PageFooterSign:StpApprovers[i].FooterSign,
+        		    ParallelStakeholder:isAllStake
+        	    };		         
+	 		}else if(StpApprovers[i].Type == 'Field')
+	 		{
+    		 	var	AppType = 'Field';
+    		 	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+    				TemplateIDId: CurrTenplateID,
+        		    Sequence_No: snNo+1,
+        		    StepName: StpApprovers[i].StName,
+        		    Title: Title,        		                                  
+        		    ApproverRole: StpApprovers[i].StRole,
+        		    ApproverType: AppType,
+        		    ActionRequired : actionReq,
+        		    SignaturePosition:StpApprovers[i].SignPosition,
+        		    //GroupNameId:StpApprovers[i].GroupName
+        		    ColumnName:StpApprovers[i].ColName,
+        		    PageFooterSign:StpApprovers[i].FooterSign,
+        		    ParallelStakeholder:isAllStake
+        	    };		         
+	 		}else if(StpApprovers[i].Type == 'Runtime')
+	 		{
+    		 	var	AppType = 'Runtime';
+    		 	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+    				TemplateIDId: CurrTenplateID,
+        		    Sequence_No: snNo+1,
+        		    StepName: StpApprovers[i].StName,
+        		    Title: Title,        		                                  
+        		    ApproverRole: StpApprovers[i].StRole,
+        		    ApproverType: AppType,
+        		    ActionRequired : actionReq,
+        		    SignaturePosition:StpApprovers[i].SignPosition,
+        		    //GroupNameId:StpApprovers[i].GroupName
+        		    ApproverDecidingStep:StpApprovers[i].ApproverDecidingStep,
+        		    PageFooterSign:StpApprovers[i].FooterSign,
+        		    ParallelStakeholder:isAllStake
+        	    };		         
+	 		}
+
+	 		else
+	 		{
+    		 	var	AppType = 'Specific';	   	 	    	 	  	 		    	 	
+    		 	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+    			TemplateIDId: CurrTenplateID,
+            	Sequence_No: snNo+1,
+            	StepName: StpApprovers[i].StName,
+            	ActionRequired : actionReq,
+            	Title: Title, 
+            	ApproverType: AppType, 
+            	SignaturePosition:StpApprovers[i].SignPosition,
+            	PageFooterSign:StpApprovers[i].FooterSign,
+            	ApproversId: {
+                	'results': StpUsers
+            	},                                 		            
+            	ApproverType: AppType			         
+ 				};	    	  		
+			}
+		
+        	var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items"		
+        	$.ajax({
+        		url:URL,
+        		type: "POST",
+        		async: false,
+        		data:JSON.stringify(listItem),
+        		headers: {
+        		    "accept": "application/json;odata=verbose", 
+        		    "Content-Type": "application/json;odata=verbose",  
+        		    "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+        		    "X-HTTP-Method": "POST" 
+        		},
+        		success: function (data) 
+        		{
+        			if(data.d.ApproverType=="Runtime"){
+        				//ApproverDecStep(StpApprovers[i].ApproverDecStepId,true,data.d.StepName)
+        			}
+        	  		sts = true;        	
+        			var FilteredRec = $.grep(PrTableColumnID, function(v) {
+    					return v.StName == StpApprovers[i].StName;
+					});
+				
+					if(FilteredRec.length>0)
+					{
+        				for(var j=0; j<FilteredRec[0].ColumnNo.length; j++)
+						{
+							var arr=[];
+						    if(FilteredRec[0].ColumnNo[j].tblColIds!=""){
+						    	arr=FilteredRec[0].ColumnNo[j].tblColIds.split(",");
+						    }
+							var listName="ApprovalTemplateEditScope";			
+							var item={'__metadata': { type: 'SP.Data.'+listName+'ListItem'},'StepIDId':parseInt(data.d.ID),'TemplateIDId':parseInt(FilteredRec[0].TemplateID), 'StepType':FilteredRec[0].StepType,'EditScope':'Partial','Title':'Edit Scope','ColumnIDId':parseInt(FilteredRec[0].ColumnNo[j].tblId),'Title':'Edit Scope','TableEditScope':FilteredRec[0].ColumnNo[j].tblEditScope,'TableColumnsId':{"results":arr}};
+							ApprovalTemplateEditScopeSet(listName,item,);
+						}
+					}
+					$('#btnSubmitStep').modal('hide');        	                                           
+        		}, 			
+        		error: function (error) 
+        		{ 
+        			console.log(error);
+        			sts = false;
+        		}
+     		});              
+    	}
+    	if(sts)
+    	{
+    		UpdateApproverStps();getTempID(CurrTenplateID);
+    		alert("Approvers saved successfully");
+     		$('#adds_stepsection').modal('hide')
+    	}
+  	}	
+}
+
+function UpdateApproverStps(){
+		var temparr =[]; 
+		if(SavedStpApprovers.length > 0) {
+			var num = temparr.concat(SavedStpApprovers, StpApprovers);	
+      	}else{
+      		var num = StpApprovers		
+      	}
+      	
+		var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+      	NumberOfSteps: num.length            		                       
+		};			   	  			
+		$.ajax({
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items(" +CurrTenplateID+ ")",
+	        type: "PATCH",
+	        async: false,
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify(listItem),	
+	        success: function (data) { 
+	        //alert('The approval reuqest has been submitted successfully.')       
+		       console.log('Temp updated.');
+		      getAllTemplate();
+	        }, 			
+	        error: function (error) { 
+		        console.log(error); 
+		        alert(error);
+	        }
+     });              
+
+
+}
+var FirstStepName = '', Action = '';
+var FirstStpApprover=[];
+
+function SaveApproverQueue(itemID,SPLCondition,NewSeqNo)
+{
+	var dfd = $.Deferred()	   
+	FirstStpApprover =[] 
+	FirstStepName = '' ;
+	stepID = ''	    		
+  	if(SavedStpApprovers.length > 0)
+  	{
+	 	var Title = 'Step Approvers';
+	 	var sts = false;
+	 	FirstStepName = SavedStpApprovers[0].StName;
+	 	Action = SavedStpApprovers[0].ActionReq;
+	 	for(i=0;i<SavedStpApprovers.length;i++)
+	 	{
+		 	StpUsers =[];	
+	 	 	if(i == 0)
+	 	 	{
+	 			var status= 'Pending'
+	 	 	}
+	 	 	else
+	 	 	{
+	 			var status= 'Not Started'
+	 	 	}
+ 	 		if(SavedStpApprovers[i].Type == 'Role Based')
+ 	 		{
+ 	 			var role = SavedStpApprovers[i].StRole;
+	 			if(role == 'Manager')
+	 			{
+					var arrUser = AllEmployee.filter(function (filterData) {
+			     		return filterData.UserId == _spPageContextInfo.userId;
+			 	});
+			 	
+			 	if(arrUser.length > 0)
+			 	{
+				 	if(i == 0){		FirstStpApprover.push(arrUser[0].Manager.ID);  	 }
+				 	StepApprver.push({'Name' : arrUser[0].Manager.Title, 'Id': arrUser[0].Manager.ID});
+				 	StpUsers.push(arrUser[0].Manager.ID);			 
+			 	}
+			 	else
+			 	{
+			 		alert('Users are not available for '+ role );
+			 	}
+		 	}
+		 	else if(role == 'Departmental Project Admin')
+		 	{		 
+		 	 	var Dept = getUserDept();
+		 	 	GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq 'Project'").done(function (USers) {			 
+			 	if(USers.d.results.length > 0)
+			 	{			  	
+				 	var nwApprover = USers.d.results[0].Contributors.results;
+			  	 	if(nwApprover.length > 0)
+			  	 	{
+				 		for(a=0; a<nwApprover.length; a++)
+				 		{
+				 			StepApprver.push({'Name' : nwApprover[a].Title, 'Id': nwApprover[a].ID});
+				 			StpUsers.push(nwApprover[a].ID);
+				 			if(i == 0){	FirstStpApprover.push(nwApprover[a].ID);  	 }
+				   		}	
+				  	}
+				  	else
+				  	{
+					 	alert('Users are not available for '+ role );
+				  	}				    					  	 		 
+			  	}
+			  	else
+			  	{
+				 	alert('Users are not available for '+ role );
+			  	}	
+			 	});
+		 	}
+		 	else if(role == 'Head of the Department')
+		 	{
+		 	 	var Dept = getUserDept();
+		 	 	GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq '"+role +"'").done(function (USers) {			 
+			  	 	if(USers.d.results.length > 0)
+			  	 	{
+				  	 	var nwApprover = USers.d.results[0].Contributors.results;
+				  	 	if(nwApprover.length > 0)
+				  	 	{
+					 		for(b=0; b<nwApprover.length; b++)
+					 		{
+					 			StepApprver.push({'Name' : nwApprover[b].Title, 'Id': nwApprover[b].ID});
+					 			StpUsers.push(nwApprover[b].ID);
+					 			if(i == 0){	FirstStpApprover.push(nwApprover[b].ID); }
+					   		}
+					 	}
+					 	else
+					 	{
+						 	alert('Users are not available for '+ role );
+					 	}
+				 	}
+				 	else
+				 	{
+				 		alert('Users are not available for '+ role );
+				 	}					  	    		 		 
+			 	}); 		 
+		 	} 
+		 	else
+		 	{
+				GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors&$filter=Company/ID eq '"+companyIdNavigation+"'and WebPartName eq '" + role + "'").done(function (USers) {		
+			 	if(USers.d.results.length > 0)
+			 	{
+					var nwApprover = USers.d.results[0].Contributors.results;
+					if(nwApprover.length > 0)
+					{
+						for(j=0; j<nwApprover.length; j++)
+						{
+							if(i == 0){	FirstStpApprover.push(nwApprover[j].ID);}
+				 			StepApprver.push({'Name' : nwApprover[j].Title, 'Id': nwApprover[j].ID});
+				 			StpUsers.push(nwApprover[j].ID);		
+				 		}
+				 	}
+				 	else
+				 	{
+						alert('Users are not available for '+ role );
+				 	}
+			 	}
+			 	else
+			 	{
+					alert('Users are not available for '+ role );
+			 	}
+				});  	
+		 	}	 	
+	 	}
+	 	else if(SavedStpApprovers[i].Type == 'Group')
+	 	{
+	 	 	var GroupName= SavedStpApprovers[i].GroupName;
+	 		GetlistData("/_api/web/lists/getbytitle('ApproversGroups')/items?$select=Title,Approvers/ID,Approvers/Title&$expand=Approvers&$filter=ID eq '"+SavedStpApprovers[i].GroupName+"'").done(function (USers) {		
+	 		if(USers.d.results.length > 0)
+	 		{
+	 			var nwApprover = USers.d.results[0].Approvers.results;
+	 			if(nwApprover.length > 0)
+	 			{
+		 			for(j=0; j<nwApprover.length; j++)
+		 			{
+						if(i == 0){	FirstStpApprover.push(nwApprover[j].ID); 	 	}
+				 		StepApprver.push({'Name' : nwApprover[j].Title, 'Id': nwApprover[j].ID});
+				 		StpUsers.push(nwApprover[j].ID);		
+				 	}
+				}
+				else
+				{
+					alert('Users are not available for '+ SavedStpApprovers[i].GroupName);
+				}
+			}
+			else
+			{
+				alert('Users are not available for '+ SavedStpApprovers[i].GroupName);
+			}
+	 		});
+	 	}
+	 	else if(SavedStpApprovers[i].Type == 'Specific')
+	 	{
+			var users = SavedStpApprovers[i].UsrID;
+		 	StpUsers = [];
+		 	for(m=0; m<users.length; m++)
+		 	{
+		 		if(i == 0)
+		 		{
+		 			FirstStpApprover.push(users[m]); 
+		 		}			 		
+		 		StpUsers.push(users[m]); 		 		
+		 	} 	 
+	 	}
+	 	else if(SavedStpApprovers[i].Type == 'Runtime')
+	 	{
+			var users = SavedStpApprovers[i].UsrID;
+		 	StpUsers = [];
+		 	for(m=0; m<users.length; m++)
+		 	{
+		 		if(i == 0)
+		 		{
+		 			FirstStpApprover.push(users[m]); 
+		 		}			 		
+		 		StpUsers.push(users[m]); 		 		
+		 	} 	 
+	 	} 
+	 	if(SavedStpApprovers[i].Type != 'Runtime' && SavedStpApprovers[i].Type != 'Field')
+	 	{
+		 	if(StpUsers.length == 0) 
+		 	{
+		 		alert('Approvers are not found in '+SavedStpApprovers[i].StName+'. ')
+		 		break;	 		
+		 	}
+	 	}
+	 	var SeqNo = 0;
+	 	
+	 	if(SPLCondition != 'SPLCase')
+    	{
+    		SeqNo = i+1;
+    	}
+    	else
+    	{
+    		SeqNo = parseInt(NewSeqNo)+parseInt(i);
+    	}
+	 	var ApprRole = SavedStpApprovers[i].StRole ? SavedStpApprovers[i].StRole :SavedStpApprovers[i].GroupName
+	 	var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessQueueListItem" },
+		RequestIDId: itemID, 
+		TemplateIDId: CurrTenplateID,
+        //Sequence_No: i+1,
+        Sequence_No: SeqNo,
+        StepName: SavedStpApprovers[i].StName,
+        Status:status,
+        Title: Title,  
+        ActionRequired:SavedStpApprovers[i].ActionReq,
+        SignaturePosition:SavedStpApprovers[i].SignPosition,
+        ApproverType:SavedStpApprovers[i].Type,
+        ApproverRole:ApprRole, //SavedStpApprovers[i].StRole,
+        ColumnName:SavedStpApprovers[i].ColName,
+        AskApprover:SavedStpApprovers[i].AskApprover,
+        AppoverForStep:SavedStpApprovers[i].AppoverForStep,
+        ApproverDecidingStep : SavedStpApprovers[i].ApproverDecidingStep,
+        StepID : SavedStpApprovers[i].Id.toString(),
+        ApproversId: {
+            'results': StpUsers
+       	 }                                		                	         
+		};	   	  				
+        var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalProcessQueue')/items"		
+        $.ajax({
+        url:URL,
+        type: "POST",
+        async: false,
+        data:JSON.stringify(listItem),
+        headers: {
+            "accept": "application/json;odata=verbose", 
+            "Content-Type": "application/json;odata=verbose",  
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+            "X-HTTP-Method": "POST" 
+        },
+        success: function (data) { 
+        if(i == 0) {stepID = data.d.ID};
+        sts = true;                                           
+        }, 			
+        error: function (error) { 
+        console.log(error);        
+        }
+     });              
+    }
+    if(SPLCondition != 'SPLCase')
+    {
+    	if(sts)
+    	{	
+		  UpdateProcessApprover(itemID,FirstStpApprover,FirstStepName,stepID,Action)      
+    	}
+    }
+  }	
+  //return def.promise();
+
+}
+
+
+function UpdateProcessApprover(itemID,FirstStpApprover,FirstStepName,StpId,Action){
+var dfd = $.Deferred()	
+		var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessListListItem" },
+		RequestById:_spPageContextInfo.userId,
+		CurrentStep :FirstStepName,
+		CurrentStepID: StpId.toString(),
+		ActionRequired:Action,
+        ApproversId: {
+            'results': FirstStpApprover
+        }                               		                       
+		};	
+		   	  			
+		$.ajax({
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessList')/items(" +itemID+ ")",
+	        type: "PATCH",
+	        async: false,
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify(listItem),	
+	        success: function (data) { 
+	        	console.log('Approvers updated.');
+	        	alert('The approval request has been submitted successfully.')       		        
+		        window.location.replace("approvals.aspx");
+		      // alert('update');
+	        }, 			
+	        error: function (error) { 
+		        console.log(error); 
+		        alert('error');
+	        }
+     });              
+return dfd.promise();
+
+}
+
+
+var unique_Department = [];
+var duplicate_Department = [];
+
+
+var LoggedUserDept = '';
+function getUserDept(){
+var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+    console.log(siteUrl);
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=Department/Id,Department/DepartmentName&$expand=Department&$filter=LogonName/ID eq '" + _spPageContextInfo.userId + "'", 
+        method: "GET",
+        async: false,
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: function (data) {
+            LoggedUserDept  = data.d.results[0].Department.DepartmentName;       
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+	return LoggedUserDept;
+}
+
+function GetUserLogin(userid) { 
+var loginName = '' ; 
+var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + userid + ")";   
+var requestHeaders = { "accept" : "application/json;odata=verbose" };    
+$.ajax({  
+  url : requestUri,  
+  contentType : "application/json;odata=verbose",  
+  headers : requestHeaders,  
+  async:false,
+  success :  function (data) {
+         loginName = data.d.LoginName.split('|')[2];        
+   },
+  error: function(error) {
+        console.log(error);
+  } 
+}); 
+return loginName; 
+}    
+
+var ActiveProessCount = '';
+// get Active request of specific template
+function GetTempDetails(TempID){
+$.ajax({
+async: false,
+url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=ProcessType,Id,Title,NumberOfRequest_Active,TemplateName,Active&$filter=ID eq '"+TempID+"'",
+type: "GET",
+headers: {
+	"accept": "application/json;odata=verbose",
+},
+success :  function (data) 
+{
+	ProcessType=data.d.results[0].ProcessType;
+	ActiveProessCount = data.d.results[0].NumberOfRequest_Active;
+	if(data.d.results[0].ProcessType == 'Document')
+	{
+   		$('.editScope').css("display", "none");
+		$("input[name=optionls][value='At Bottom most']").prop('checked', true);
+		$('#ActionReq option:selected').removeAttr('selected');
+   		//$("#ActionReq option:selected").text('Review & Sign');
+        $("#ActionReq").val("Review & Sign").attr("selected","selected");
+
+   		$("#secActionReq").css("display", "none");
+   		$("input[name=optradio][value=Field]").parent().css("display", "none");
+   		$(".stepsOfProc").css("visibility", "hidden");
+   		$(".signBox").css("display", "initial");
+   	}
+	else
+	{
+		$('.editScope').css("display", "block");
+		//$("input[name=optionls]").prop('checked', false);
+		$("input[name=optionls][value='At Bottom most']").prop('checked', true);
+		$("input[name=optradio][value=Field]").parent().css("display", "initial");
+		$(".signBox").css("display", "none");
+
+		$("#secActionReq").css("display", "block");
+   		$(".stepsOfProc").css("visibility", "visible");
+
+	}   
+   },
+  error: function(error) {
+        console.log(error);
+  } 
+}); 
+
+
+}
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    initializePeoplePicker('InitiatorPPL');
+    
+    $("#InitiatorPPL_TopSpan").keyup(function () {
+        onChangeTask('InitiatorPPL_TopSpan','InitiatorPPL','selectives-Initiator')
+    });
+});
+
+
+var SelectedPrtable=[];
+function LoadPartialTable()
+{
+	SelectedPrtable=[];
+	var ResultItems=[];
+	var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateID eq '"+CurrTenplateID+"'&$orderby=SequenceNo asc";  
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) 
+        {
+            ResultItems = data.d.results;
+            var QueryReq = "/_api/web/lists/getbytitle('ApprovalTemplateEditScope')/items?$filter=TemplateID eq '"+CurrTenplateID+"' and StepType eq 'Initiation'";					
+			var QueryResult = RequestData(QueryReq);
+			
+			if(QueryResult.length>0)
+			{
+				SelectedPrtable = QueryResult;
+			}
+			var html='<option value="Select">--Select--</option>';
+            var TableHTML='';var count=0;
+            for(var i=0; i<ResultItems.length; i++)
+            {
+            	//SelectedPrtable.push(ResultItems[i].ID);
+            	var FilteredRec = $.grep(QueryResult, function(v) {
+    				return v.ColumnIDId == ResultItems[i].ID;
+				});
+				var Chkboxstatus='';
+				var TableColumns="";
+				var selOpt='';
+				let select_all_checkboxes = document.getElementById("setEditableSelAll");
+				if(FilteredRec.length>0)
+				{
+					Chkboxstatus = 'checked';
+					TableColumns=FilteredRec[0].TableColumnsId.results;
+					//select_all_checkboxes.checked = true;
+				}else{
+					//select_all_checkboxes.checked = false;
+				}
+				
+				
+				html+="<option>"+ResultItems[i].Title+"</option>";
+				if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header" && ResultItems[i].ColumnType!="QR Code" && ResultItems[i].ColumnType!="Web Link" && ResultItems[i].ColumnName!="CalculatedValue" && ResultItems[i].ColumnName!="SummarizedValue" && ResultItems[i].ColumnName!="AutoSerialNumber"){
+	            						
+	            	           	
+	           						       	
+							TableHTML = TableHTML +	"<tr>"+
+	            		        						"<td>"+ResultItems[i].Title+"</td>"+
+	            		        						"<td>"+ResultItems[i].ColumnType+"</td>";
+	            		        						if(ResultItems[i].ColumnType=="Table"){
+	            		        							TableHTML = TableHTML + "<td><div class='bothwarpboxsec'>"+
+	            		        							"<select name='tblColSetField' class='select_designnow' id='"+ResultItems[i].Id+"' onchange='showColAddBtn(this)'>";
+	            		        							var styleD="none";
+	            		        							if(FilteredRec.length!=0){
+  																if(FilteredRec[0].TableEditScope=="Entire"){
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire' selected>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+
+  																}
+  																else if(FilteredRec[0].TableEditScope=="Add Row"){
+  																TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire' >Entire</option>"+
+			  																"<option value='Add Row' selected>Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+
+  																}
+  																else if(FilteredRec[0].TableEditScope=="Columns"){
+  																styleD="initial";
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' selected>Columns</option>";
+
+  																}else{
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+  																}else{
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+															TableHTML = TableHTML +"</select>";
+															TableHTML = TableHTML + "<button id='Init"+ResultItems[i].Id+"'  value='"+TableColumns+"' type='button' class='btn custom-btn new-btnad' style='display:"+styleD+"' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
+	           								       	
+	            		        						}
+	            		        						else{
+		            		        						TableHTML = TableHTML + "<td><input type='checkbox' name='PartialTableChkbox' onclick='setSelectAll(this)' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"' "+Chkboxstatus +"></div></td>";
+		           									       	if(Chkboxstatus==''){
+																count++;						
+															}if(count>0){
+																if(select_all_checkboxes != null){
+																	select_all_checkboxes.checked = false;
+																}
+															}else{select_all_checkboxes.checked = true;}		           								       	
+		           								       	}
+		           			TableHTML = TableHTML + "</tr>";
+		           				
+		           			           						       	
+           		}
+           // setSelectAll();
+			}
+			$("#PositionOptList").html(html);
+			$("#TableFieldsList").empty().append(TableHTML);  
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        }  
+    });
+}
+
+
+function RequestData(Query)
+{
+    var ResultItems=[];
+    //var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('EmployeeTaskDetails')/items?"+Query+"";  
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl +Query;  
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) 
+        { 			
+            //ResultItems = data.d.results;  
+            ResultItems = data.d.results;
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        }  
+    });
+    return ResultItems;
+}
+
+
+
+function SetDisplayInitiator(Action)
+{
+	if(Action.value == 'Anyone' || Action.value == 'Employee' || Action.value == 'Guest User')
+	{	
+		if(Action.value == 'Employee'){
+			$('.compboxs').css("display", "block");
+			$('.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.clientboxs').css("display", "none");
+			getDynaOptionsForInitiatorComp("Companies","ddlCompEmp","")
+		}else{
+			$('.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+		}
+		InitiatorList=[];
+		$("#selectives-Initiator").empty();
+		if(Action.value == 'Guest User')
+		{
+			/*jQuery("#ddlroles option:contains('Manager')").remove();
+			jQuery("#ddlroles option:contains('Head of the Department')").remove();
+			jQuery("#ddlroles option:contains('Departmental Project Admin')").remove();*/
+			
+			jQuery('#ddlroles').empty();
+			jQuery('#ddlroles').append('<option value="Select" >--Select--</option>');
+			jQuery('#ddlroles').append('<option value="External Supervisor" >External Supervisor</option>');
+			jQuery('#ddlroles').append('<option value="Internal Supervisor" >Internal Supervisor</option>');
+			jQuery('#ddlroles').append('<option value="HR Admin" >HR Admin</option>');
+			jQuery('#ddlroles').append('<option value="Project Admin" >Project Admin</option>');
+			jQuery('#ddlroles').append('<option value="Process Admin" >Process Admin</option>');
+			jQuery('#ddlroles').append('<option value="Tech Admin" >Tech Admin</option>');
+			jQuery('#ddlroles').append('<option value="Initiator" >Initiator</option>');
+
+		}
+		else
+		{	
+			
+			/*jQuery('#ddlroles').append('<option value="Manager" >Manager</option>');
+			jQuery('#ddlroles').append('<option value="Head of the Department" >Head of the Department</option>');
+			jQuery('#ddlroles').append('<option value="Departmental Project Admin" >Departmental Project Admin</option>');
+			jQuery("#ddlroles option:contains('External Supervisor')").remove();
+			jQuery("#ddlroles option:contains('Internal Supervisor')").remove();*/
+			
+			jQuery('#ddlroles').empty();
+			jQuery('#ddlroles').append('<option value="Select" >--Select--</option>');
+			jQuery('#ddlroles').append('<option value="Manager" >Reporting Manager</option>');
+			jQuery('#ddlroles').append('<option value="Head of the Department" >Head of the Department</option>');
+			jQuery('#ddlroles').append('<option value="Head of the Office" >Head of the Office</option>');
+			jQuery('#ddlroles').append('<option value="Project Admin of Department" >Project Admin of Department</option>');
+			jQuery('#ddlroles').append('<option value="HR Admin" >HR Admin</option>');
+			jQuery('#ddlroles').append('<option value="Project Admin" >Project Admin</option>');
+			jQuery('#ddlroles').append('<option value="Process Admin" >Process Admin</option>');
+			jQuery('#ddlroles').append('<option value="Tech Admin" >Tech Admin</option>');
+			jQuery('#ddlroles').append('<option value="Initiator" >Initiator</option>');
+
+		}
+	}
+	else if(Action.value == 'Selective')
+	{
+		
+		$('.peoplepickeboxs').css("display", "block");
+		$('.deptboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+			jQuery('#ddlroles').empty();
+			jQuery('#ddlroles').append('<option value="Select" >--Select--</option>');
+			jQuery('#ddlroles').append('<option value="Manager" >Reporting Manager</option>');
+			jQuery('#ddlroles').append('<option value="Head of the Department" >Head of the Department</option>');
+			jQuery('#ddlroles').append('<option value="Head of the Office" >Head of the Office</option>');
+			jQuery('#ddlroles').append('<option value="Project Admin of Department" >Project Admin of Department</option>');
+			jQuery('#ddlroles').append('<option value="HR Admin" >HR Admin</option>');
+			jQuery('#ddlroles').append('<option value="Project Admin" >Project Admin</option>');
+			jQuery('#ddlroles').append('<option value="Process Admin" >Process Admin</option>');
+			jQuery('#ddlroles').append('<option value="Tech Admin" >Tech Admin</option>');
+			jQuery('#ddlroles').append('<option value="Initiator" >Initiator</option>');
+
+	}else if(Action.value == 'Department')
+	{	
+		getDynaOptionsForInitiator("Departments","ddlDept","");
+		$('.deptboxs').css("display", "block");
+		$('.peoplepickeboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+		$("#SelectedItems2").text("Select");
+		$("#SelectedItems3").text("Select");
+		$("#SelectedItems4").text("Select");
+		
+	}else if(Action.value == 'Office')
+	{	
+		getDynaOptionsForInitiator("OfficeLocation","ddlOffice","");
+		$('.officeboxs').css("display", "block");
+		$('.peoplepickeboxs,.deptboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+		$("#SelectedItems1").text("Select");
+		$("#SelectedItems3").text("Select");
+		$("#SelectedItems4").text("Select");
+		
+	}else if(Action.value == 'Group')
+	{
+		getDynaOptionsForInitiator("ApproversGroups","ddlGroup","");
+		$('.groupboxs').css("display", "block");
+		$('.peoplepickeboxs,.deptboxs,.officeboxs,.clientboxs,.compboxs').css("display", "none");
+		$("#SelectedItems1").text("Select");
+		$("#SelectedItems2").text("Select");
+		$("#SelectedItems4").text("Select");
+
+	}else if(Action.value == 'Client')
+	{	
+		getDynaOptionsForInitiator("ClientMaster","ddlClient","");
+		$('.clientboxs').css("display", "block");
+		$('.peoplepickeboxs,.deptboxs,.officeboxs,.groupboxs,.compboxs').css("display", "none");
+		$("#SelectedItems2").text("Select");
+		$("#SelectedItems3").text("Select");
+		$("#SelectedItems1").text("Select");
+
+	}
+
+}
+
+
+
+/*function initializePeoplePicker(peoplePickerElementId) 
+{
+	var schema = {};
+	schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+	schema['SearchPrincipalSource'] = 15;
+	schema['ResolvePrincipalSource'] =15;
+	schema['AllowMultipleValues'] = true;
+	schema['MaximumEntitySuggestions'] =50;
+	schema['Width'] = '280px';
+	this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId,
+	null, schema);
+}*/
+
+var InitiatorList = [];
+function onChangeTask(HTMLID, PplPickerId, UserBoxId) 
+{
+	var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+    user = '';
+    if (userInfo.length > 0)
+    {
+    	tempUserId = ensureUser($('#InitiatorPPL').children().children().attr('id'));
+    	var arraycontainsturtles = (InitiatorList.indexOf(tempUserId) > -1);
+        if(arraycontainsturtles == false)
+        {
+        	InitiatorList.push(tempUserId);
+           	var tempEmail = userInfo[0].Key.split('|')[2];
+          	if (tempEmail.includes('#') == true) 
+           	{
+           	    tempEmail = tempEmail.replace("#ext#@adaptindia.onmicrosoft.com", '');
+           	    tempEmail = tempEmail.replace("_", '@');
+           	}
+           	var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);           
+           	var ForwardUserImg='';
+            	ForwardUserImg += "<div class='col-md-6 col-sm-6 userBoxParent'>";
+            	ForwardUserImg += "<div class='members-card border-0'>";
+				ForwardUserImg += "<div class='members-card-head'>";
+            	ForwardUserImg += "<img src='"+attachment+"'>";
+            	ForwardUserImg += "</div>";
+            	ForwardUserImg += "<div class='members-card-body'>";
+            	ForwardUserImg += "<div class='members-card-body-info text-ellipsis'>";
+            	ForwardUserImg += "<h3 class='member-name text-ellipsis'>"+userInfo[0].DisplayText+"</h3>";
+            	ForwardUserImg += "<p class='member-email text-ellipsis mb0'>"+tempEmail+"</p>";
+            	ForwardUserImg += "</div>";
+            	ForwardUserImg += "<a class='btn remove-group-btn remove-btn close close-round' onclick='removeUserBox(this, \"" + tempEmail + "\", \"" + userInfo[0].DisplayText + "\", " + tempUserId + ")'><i class='fa fa-times'></i></a>";
+            	ForwardUserImg += "</div>";
+            	ForwardUserImg += "</div>";
+            	ForwardUserImg += "</div>";           
+            	
+            	$("#" + UserBoxId).append(ForwardUserImg);
+            	EmptyPeoplePicker(PplPickerId);
+		}
+        else if(arraycontainsturtles == true)
+        {
+          	EmptyPeoplePicker(PplPickerId);
+           	alert("User already exists!!");
+        }
+	}
+	};
+}
+
+
+function removeUserBox(Action, userEmail, UserName, UserId) {
+    $(Action).parents('.col-md-6').remove();
+        
+    InitiatorList = jQuery.grep(InitiatorList, function(value) {
+  		return value != UserId;
+	});
+}
+
+
+function ensureUser(ID) 
+{
+	var UserId =0;    
+    var peoplePickerTopDivId = ID;
+    var peoplePicker = 
+    this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerTopDivId];
+    var users = peoplePicker.GetAllUserInfo();
+    var arryuser = users[0];
+    if(arryuser) 
+    {
+    	var payload = { 'logonName': arryuser.Key}; 
+    	$.ajax({
+    	    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/ensureuser",
+    	    type: "POST",
+    	    async:false,
+    	    contentType: "application/json;odata=verbose",
+    	    data: JSON.stringify(payload),
+    	    headers: {
+    	        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+    	        "accept": "application/json;odata=verbose"
+    	            },
+        	success: function(data, status, xhr) 
+        	{     
+         		UserId = data.d.Id;          
+        	},
+        	error: function(xhr, status, error) 
+        	{  
+        	
+        	}
+    	}); 
+    }   
+    else 
+    {
+        UserId = 0;
+    } 
+   	return UserId;    
+}
+
+
+function EmptyPeoplePicker(peoplePickerId) 
+{
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerId + "_TopSpan"];
+   	peoplePicker.DeleteProcessedUser();
+}
+
+
+var selected_Dept= []; 
+var selected_Office= []; 
+var selected_Group= [];
+var selected_Client= [];
+var selected_CompEmp= [];
+
+function SetInitiatorList()  
+{
+	var Initiator = $('input[name="selectives"]:checked').val();
+	var dept="";var office="";var group="";var client="";
+	if(Initiator=="Department"){
+		selected_Office= []; 
+		selected_Group= [];
+		selected_Client= [];
+		selected_CompEmp= [];
+	}
+	else if(Initiator=="Office"){
+		selected_Dept= []; 
+		selected_Group= [];
+		selected_Client= [];
+		selected_CompEmp= [];
+	}
+	else if(Initiator=="Group"){
+		selected_Dept= []; 
+		selected_Office= []; 
+		selected_Client= [];
+		selected_CompEmp= [];
+	}
+	else if(Initiator=="Client"){
+		selected_Dept= []; 
+		selected_Office= []; 
+		selected_Group= [];
+		selected_CompEmp= [];
+	}else if(Initiator=="Employee"){
+		selected_Dept= []; 
+		selected_Office= []; 
+		selected_Group= [];
+		selected_Client= [];
+		if(selected_CompEmp.length==0){alert("");return false;}
+	}else {
+		selected_Dept= []; 
+		selected_Office= []; 
+		selected_Group= [];
+		selected_Client= [];
+		selected_CompEmp= [];
+	}
+	var Scope ="";
+	if($('.twocomb').is(":visible")){	
+		Scope = $('input[name="scrops"]:checked').val();
+	}
+	var userArr=[];
+	for (var j = 0; j < InitiatorList.length; j++) 
+			{	var flag=false;
+				var arrSubVisaLetters = AllEmployee.filter(function (filterData) {
+					if(filterData.EMail == InitiatorList[j].EntityData.Email){flag=true;}
+					return filterData.EMail == InitiatorList[j].EntityData.Email;
+			    });
+				//if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}
+			    if(arrSubVisaLetters.length==0){userArr.push(InitiatorList[j].DisplayText)}
+		        if(arrSubVisaLetters.length>0){
+		        	StepApprver.push({'Name' : arrSubVisaLetters[0].EMail , 'Id': arrSubVisaLetters[0].UserId})	 
+		        }
+			    //StepApprver.push(arrSubVisaLetters[0].UserId)	    
+			}	
+		    if(userArr.length>0){alert("Selected user "+userArr+" not in list"); return false;}
+	var listName="ApprovalProcessMaster";		
+   	var item={'__metadata': { type: 'SP.Data.ApprovalProcessMasterListItem'},'Initiation':Initiator,'EditScope':Scope,'InitiatorsId':{'results':InitiatorList},'DepartmentId':{"results": selected_Dept},'OfficeLocationId':{"results": selected_Office},'GuestClientId':{"results": selected_Client},'GroupId':{"results": selected_Group},'CompanyId':{"results": selected_CompEmp}};
+   		    
+    $.ajax({  
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+listName+"')/items('"+CurrTenplateID+"')",
+        type: "POST",  
+        async:false,
+        data: JSON.stringify(item),         
+        headers:  
+        {  
+            "Accept": "application/json;odata=verbose",  
+            "Content-Type": "application/json;odata=verbose",  
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+            "IF-MATCH": "*",  
+            "X-HTTP-Method": "PATCH"  
+        },  
+        success: function(data)
+        { 	getAllTemplate();
+        	var yourArray=[];
+        	$("input:checkbox[name='PartialTableChkbox']:checked").each(function(){
+    			//yourArray.push($(this).val());
+    			yourArray.push({"tblId": $(this).val(), "tblEditScope": "","tblColIds": ""});
+			});
+			$("select[name='tblColSetField']").each(function(){
+				yourArray.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
+			});
+
+			
+			if(SelectedPrtable.length>0)
+			{
+				for(k=0; k<SelectedPrtable.length; k++)
+				{
+					DeleteApprovalTemplateEditScopeRec(SelectedPrtable[k].ID);
+				}
+			}
+			var Scope = $('input[name="scrops"]:checked').val();
+			if(Scope == 'Partial' && $('.twocomb').is(":visible"))
+			{
+				if(yourArray.length>0)
+				{
+					for(var j=0; j<yourArray.length; j++)
+					{
+					    var arr=[];
+					    if(yourArray[j].tblColIds!=""){
+					    	arr=yourArray[j].tblColIds.split(",");
+					    }
+						var listName="ApprovalTemplateEditScope";			
+						var item={'__metadata': { type: 'SP.Data.'+listName+'ListItem'},'TemplateIDId':parseInt(CurrTenplateID), 'StepType':'Initiation','EditScope':'Partial','ColumnIDId':parseInt(yourArray[j].tblId),'Title':'Edit Scope','TableEditScope':yourArray[j].tblEditScope,'TableColumnsId':{"results":arr}};
+						ApprovalTemplateEditScopeSet(listName,item,);
+					}
+				}
+			}
+        },  
+        error: function(data) 
+        {  
+            console.log(data);
+        }  
+    }); 
+}
+
+
+function DeleteApprovalTemplateEditScopeRec(ItemID)
+{
+	$.ajax({  
+        	url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalTemplateEditScope')/items("+ItemID+")",  
+        	type: "POST", 
+        	async:false, 
+        	headers:  
+        	{  
+        	    "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+        	    "IF-MATCH": "*",  
+        	    "X-HTTP-Method": "DELETE"  
+        	},  
+        	success: function(data, status, xhr)  
+        	{  
+			  	console.log("Delete Success");	
+        	},  
+        	error: function(data, status, xhr)  
+        	{  
+        	    $("#ResultDiv").empty().text(data.responseJSON.error);  
+        	}  
+    	});
+	
+}
+
+
+function GetInitiationDetails(TempID)
+{
+	selected_Dept=[];
+	selected_Office=[];
+	selected_Group=[];
+	selected_Client=[];
+	var Responce=[];
+	$.ajax({
+		async: false,
+		url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=*,Id,Title,NumberOfRequest_Active,TemplateName,Active,Initiators/Title,Initiators/EMail,Initiators/ID&$expand=Initiators&$filter=ID eq '"+TempID+"'",
+		type: "GET",
+		headers: {
+			"accept": "application/json;odata=verbose",
+		},
+		success :  function (data) 
+		{
+			Responce = data.d.results;
+			//LoadPartialTable();
+			if(Responce.length>0)
+			{
+				if(Responce[0].Initiation == 'Guest User')
+				{
+					jQuery('#ddlroles').empty();
+					jQuery('#ddlroles').append('<option value="Select" >--Select--</option>');
+					jQuery('#ddlroles').append('<option value="External Supervisor" >External Supervisor</option>');
+					jQuery('#ddlroles').append('<option value="Internal Supervisor" >Internal Supervisor</option>');
+					jQuery('#ddlroles').append('<option value="HR Admin" >HR Admin</option>');
+					jQuery('#ddlroles').append('<option value="Project Admin" >Project Admin</option>');
+					jQuery('#ddlroles').append('<option value="Process Admin" >Process Admin</option>');
+					jQuery('#ddlroles').append('<option value="Tech Admin" >Tech Admin</option>');
+					jQuery('#ddlroles').append('<option value="Initiator" >Initiator</option>');				
+				}
+				else
+				{
+					jQuery('#ddlroles').empty();
+					jQuery('#ddlroles').append('<option value="Select" >--Select--</option>');
+					jQuery('#ddlroles').append('<option value="Manager" >Reporting Manager</option>');
+					jQuery('#ddlroles').append('<option value="Head of the Department" >Head of the Department</option>');
+					jQuery('#ddlroles').append('<option value="Head of the Office" >Head of the Office</option>');
+					jQuery('#ddlroles').append('<option value="Project Admin of Department" >Project Admin of Department</option>');
+					jQuery('#ddlroles').append('<option value="HR Admin" >HR Admin</option>');
+					jQuery('#ddlroles').append('<option value="Project Admin" >Project Admin</option>');
+					jQuery('#ddlroles').append('<option value="Process Admin" >Process Admin</option>');
+					jQuery('#ddlroles').append('<option value="Tech Admin" >Tech Admin</option>');
+					jQuery('#ddlroles').append('<option value="Initiator" >Initiator</option>');				
+				}
+				if(Responce[0].Initiation == 'Selective')
+				{
+					$("input[name=selectives][value='" +Responce[0].Initiation+ "']").prop('checked', true);
+					$('.peoplepickeboxs').css("display", "block");
+					$('.officeboxs,.groupboxs,.deptboxs,.clientboxs,.compboxs').css("display", "none");
+
+					InitiatorList=[];
+					var InitiatorProfileList='';
+					for(var i=0; i<Responce[0].Initiators.results.length; i++)
+					{
+						InitiatorList.push(Responce[0].Initiators.results[i].ID);
+						var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + Responce[0].Initiators.results[i].EMail;                      				
+            			InitiatorProfileList+= "<div class='col-md-6 col-sm-6 userBoxParent'>";
+            			InitiatorProfileList+= "<div class='members-card border-0'>";
+						InitiatorProfileList+= "<div class='members-card-head'>";
+            			InitiatorProfileList+= "<img src='"+attachment+"'>";
+            			InitiatorProfileList+= "</div>";
+            			InitiatorProfileList+= "<div class='members-card-body'>";
+            			InitiatorProfileList+= "<div class='members-card-body-info text-ellipsis'>";
+            			InitiatorProfileList+= "<h3 class='member-name text-ellipsis'>"+Responce[0].Initiators.results[i].Title+"</h3>";
+            			InitiatorProfileList+= "<p class='member-email text-ellipsis mb0'>"+Responce[0].Initiators.results[i].EMail+"</p>";
+            			InitiatorProfileList+= "</div>";
+            			InitiatorProfileList+= "<a class='btn remove-group-btn remove-btn close close-round' onclick='removeUserBox(this, \"" + Responce[0].Initiators.results[i].EMail + "\", \"" + Responce[0].Initiators.results[i].Title + "\", " + Responce[0].Initiators.results[i].ID+ ")'><i class='fa fa-times'></i></a>";
+            			InitiatorProfileList+= "</div>";
+            			InitiatorProfileList+= "</div>";
+            			InitiatorProfileList+= "</div>";
+            		}
+            		$("#selectives-Initiator").empty().append(InitiatorProfileList);
+				}
+				else if(Responce[0].Initiation == null)
+				{
+					$("input[name=selectives][value='Anyone']").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.clientboxs').css("display", "none");
+				}else if(Responce[0].Initiation == "Department")
+				{	var deptArr=[];
+					deptArr=Responce[0].DepartmentId.results;
+					selected_Dept= [...deptArr]; 
+					getDynaOptionsForInitiator("Departments","ddlDept","Update");
+					$("input[name=selectives][value='Department']").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+					$('.deptboxs').css("display", "block");
+				}else if(Responce[0].Initiation == "Office")
+				{
+					var deptOffice=[];
+					deptOffice=Responce[0].OfficeLocationId.results;
+					selected_Office=[...deptOffice];
+					getDynaOptionsForInitiator("OfficeLocation","ddlOffice","Update");
+					$("input[name=selectives][value='Office']").prop('checked', true);
+					$('.peoplepickeboxs,.deptboxs,.groupboxs,.clientboxs,.compboxs').css("display", "none");
+					$('.officeboxs').css("display", "block");
+				}else if(Responce[0].Initiation == "Group")
+				{	
+					var deptGroup=[];
+					deptGroup=Responce[0].GroupId.results;
+					selected_Group=[...deptGroup];
+					getDynaOptionsForInitiator("ApproversGroups","ddlGroup","Update");
+					$("input[name=selectives][value='Group']").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.deptboxs,.clientboxs,.compboxs').css("display", "none");
+					$('.groupboxs').css("display", "block");
+				}else if(Responce[0].Initiation == "Client")
+				{
+					var deptClient=[];
+					deptClient=Responce[0].GuestClientId.results;
+					selected_Client=[...deptClient];
+
+					getDynaOptionsForInitiator("ClientMaster","ddlClient","Update");
+					$("input[name=selectives][value='Client']").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.compboxs').css("display", "none");
+					$('.clientboxs').css("display", "block");
+				}else if(Responce[0].Initiation == "Employee")
+				{
+					var deptEmp=[];
+					deptEmp=Responce[0].CompanyId.results;
+					selected_CompEmp=[...deptEmp];
+
+					getDynaOptionsForInitiatorComp("Companies","ddlCompEmp","Update");
+					$("input[name=selectives][value='Employee']").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.clientboxs').css("display", "none");
+					$('.compboxs').css("display", "block");
+				}
+				else
+				{
+					$("input[name=selectives][value=" +Responce[0].Initiation+ "]").prop('checked', true);
+					$('.peoplepickeboxs,.officeboxs,.groupboxs,.deptboxs,.clientboxs').css("display", "none");
+				}
+				
+				if(Responce[0].EditScope == 'Full-Form')
+				{
+					$("input[name=scrops][value='" +Responce[0].EditScope+ "']").prop('checked', true);
+					$(".stepcolms").css("display", "none");
+				}
+				else if(Responce[0].EditScope == 'Partial')
+				{
+					$("input[name=scrops][value='Partial']").prop('checked', true);
+					$(".stepcolms").css("display", "block");
+				}
+				else if(Responce[0].EditScope == null)
+				{
+					$("input[name=scrops][value='Full-Form']").prop('checked', true);
+					$(".stepcolms").css("display", "none");
+				}
+				else
+				{
+					$("input[name=scrops][value='Full-Form']").prop('checked', true);
+					$(".stepcolms").css("display", "none");
+				}
+			}
+			else
+			{
+				$("input[name=scrops][value='Full-Form']").prop('checked', true);
+				$(".stepcolms").css("display", "none");
+				
+				$("input[name=selectives][value='Anyone']").prop('checked', true);
+				$('.peoplepickeboxs').css("display", "none");
+
+			}    
+   		},
+  		error: function(error) 
+  		{
+        	console.log(error);
+  		} 
+	}); 
+}
+
+
+function ApprovalTemplateEditScopeSet(listName,item) 
+{	
+	$.ajax({
+		url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+listName+"')/items",
+		type: "POST",
+		contentType: "application/json;odata=verbose",
+		data: JSON.stringify(item),
+		async: true,
+		headers: 
+		{
+			"Accept": "application/json;odata=verbose",
+			"X-RequestDigest": $("#__REQUESTDIGEST").val()
+		},
+		success: function (data)
+		{					
+			console.log("add success");		
+		},
+		error: function (data)
+		{	
+			console.log("TimeSheetUniversalinsert"); 
+			console.log(data); 
+		}
+	});
+}
+
+
+var SelectedPrtableSteps=[];
+function LoadPartialTableSteps(Mode,StepID)
+{	
+	if(ActiveMode != 'EditStep')
+	{
+		SelectedPrtableSteps=[];
+		var ResultItems=[];
+		var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateID eq '"+CurrTenplateID+"'&$orderby=SequenceNo asc";  
+    	$.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:true,  
+        success: function (data) 
+        {
+            ResultItems = data.d.results;
+            var TableHTML='';
+            if(Mode == 'Edit')
+            {
+            	var QueryReq = "/_api/web/lists/getbytitle('ApprovalTemplateEditScope')/items?$filter=TemplateID eq '"+CurrTenplateID+"' and StepID eq '"+StepID+"'";					
+				var QueryResult = RequestData(QueryReq);				
+				if(QueryResult.length>0)
+				{
+					SelectedPrtableSteps = QueryResult;
+				}            
+            	var count=0;
+            	for(var i=0; i<ResultItems.length; i++)
+            	{
+                   	var FilteredRec = $.grep(QueryResult, function(v) {
+    					return v.ColumnIDId == ResultItems[i].ID;
+					});
+					var Chkboxstatus=''
+					var TableColumns="";
+					if(FilteredRec.length>0)
+					{
+						Chkboxstatus = 'checked';
+						TableColumns=FilteredRec[0].TableColumnsId.results;
+					}
+					if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header" && ResultItems[i].ColumnType!="QR Code" && ResultItems[i].ColumnType!="Web Link" && ResultItems[i].ColumnName!="CalculatedValue" && ResultItems[i].ColumnName!="SummarizedValue" && ResultItems[i].ColumnName!="AutoSerialNumber"){
+				       	
+					let select_all_checkboxes = document.getElementById("setEditableSelStepsAll");					
+		           				TableHTML = TableHTML +	"<tr>"+
+	            		        						"<td>"+ResultItems[i].Title+"</td>"+
+	            		        						"<td>"+ResultItems[i].ColumnType+"</td>";
+	            		        						if(ResultItems[i].ColumnType=="Table"){
+	            		        							TableHTML = TableHTML + "<td><div class='bothwarpboxsec'>"+
+	            		        							"<select name='tblColSetFieldSteps' class='select_designnow' id='"+ResultItems[i].Id+"' onchange='showColAddBtn(this)'>";
+  																var styleD="none";
+	            		        							if(FilteredRec.length!=0){
+  																if(FilteredRec[0].TableEditScope=="Entire"){
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire' selected>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+
+  																}
+  																else if(FilteredRec[0].TableEditScope=="Add Row"){
+  																TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire' >Entire</option>"+
+			  																"<option value='Add Row' selected>Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+
+  																}
+  																else if(FilteredRec[0].TableEditScope=="Columns"){
+  																styleD="initial";
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' selected>Columns</option>";
+
+  																}else{
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+  																}else{
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+															TableHTML = TableHTML +"</select>";
+															//TableHTML = TableHTML + "<button id='Init"+ResultItems[i].Id+"' value='"+TableColumns+"' type='button' class='btn custom-btn new-btnad' style='display:"+styleD+"' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-plus'></i></button></td>"
+	           								       	
+															
+															  TableHTML = TableHTML + "<button id='Step"+ResultItems[i].Id+"' Value='"+TableColumns+"' type='button' class='btn custom-btn new-btnad' style='display:"+styleD+"' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
+		           								       	
+	            		        						}
+	            		        						else{
+		            		        						TableHTML = TableHTML + "<td><input type='checkbox' name='PartialTableChkboxSteps' onclick='setSelectAll(this)' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"' "+Chkboxstatus +"></td>";
+		           								       		if(Chkboxstatus==''){
+																count++;						
+															}if(count>0){
+																if(select_all_checkboxes != null){
+																	select_all_checkboxes.checked = false;
+																}
+															}else{select_all_checkboxes.checked = true;}
+		           								       	}
+		           			TableHTML = TableHTML + "</tr>";
+           			}           
+				}
+			}
+			else
+			{
+				if(ActiveMode != 'EditStep')
+				{
+					var count=0;
+					for(var i=0; i<ResultItems.length; i++)
+            		{
+           				if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header" && ResultItems[i].ColumnType!="QR Code" && ResultItems[i].ColumnType!="Web Link" && ResultItems[i].ColumnName!="CalculatedValue" && ResultItems[i].ColumnName!="SummarizedValue" && ResultItems[i].ColumnName!="AutoSerialNumber" ){
+	                	   	let select_all_checkboxes = document.getElementById("setEditableSelStepsAll");
+							//select_all_checkboxes.checked = true;
+							
+			            	if(Chkboxstatus==''){
+								//let select_all_checkboxes = document.getElementById("setEditableSelAll");
+								count++;						
+							}if(count>0){
+								select_all_checkboxes.checked = false;
+							}	                	   		
+		           			TableHTML = TableHTML +	"<tr>"+
+	            		        						"<td>"+ResultItems[i].Title+"</td>"+
+	            		        						"<td>"+ResultItems[i].ColumnType+"</td>";
+	            		        						if(ResultItems[i].ColumnType=="Table"){
+	            		        							TableHTML = TableHTML + "<td><div class='bothwarpboxsec'>"+
+	            		        							"<select name='tblColSetFieldSteps' class='select_designnow' id='"+ResultItems[i].Id+"' onchange='showColAddBtn(this)'>"+
+  																"<option value=''>Select</option>"+
+  																"<option value='Entire'>Entire</option>"+
+  																"<option value='Add Row'>Add Row</option>"+
+  																"<option value='Columns' >Columns</option>"+
+															"</select>";
+															TableHTML = TableHTML + "<button id='Step"+ResultItems[i].Id+"' type='button' class='btn custom-btn new-btnad' style='display:none' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps("+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
+		           								       	
+	            		        						}
+	            		        						else{
+		            		        						TableHTML = TableHTML + "<td><input type='checkbox' name='PartialTableChkboxSteps' onclick='setSelectAll(this)' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"' "+Chkboxstatus +"></td>";
+		           								       	}
+		           			TableHTML = TableHTML + "</tr>";
+	           			}            
+					}
+				}
+				else
+				{
+					var QueryReq = "/_api/web/lists/getbytitle('ApprovalTemplateEditScope')/items?$filter=TemplateID eq '"+CurrTenplateID+"' and StepID eq '"+StepID+"'";					
+					var QueryResult = RequestData(QueryReq);				
+					if(QueryResult.length>0)
+					{
+						SelectedPrtableSteps = QueryResult;
+					}            
+            		var count=0;
+            		for(var i=0; i<ResultItems.length; i++)
+            		{
+                	   	var FilteredRec = $.grep(QueryResult, function(v) {
+    						return v.ColumnIDId == ResultItems[i].ID;
+						});
+						var Chkboxstatus='';
+						var TableColumns="";
+						if(FilteredRec.length>0)
+						{
+							Chkboxstatus = 'checked';
+							TableColumns=FilteredRec[0].TableColumnsId.results;
+						}
+						if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header" && ResultItems[i].ColumnType!="QR Code" && ResultItems[i].ColumnType!="Web Link" && ResultItems[i].ColumnName!="CalculatedValue" && ResultItems[i].ColumnName!="SummarizedValue" && ResultItems[i].ColumnName!="AutoSerialNumber"){
+				    	   	let select_all_checkboxes = document.getElementById("setEditableSelStepsAll");			            	
+				    	   	TableHTML = TableHTML +	"<tr>"+
+	            		        						"<td>"+ResultItems[i].Title+"</td>"+
+	            		        						"<td>"+ResultItems[i].ColumnType+"</td>";
+	            		        						if(ResultItems[i].ColumnType=="Table"){
+	            		        							TableHTML = TableHTML + "<td><div class='bothwarpboxsec'>"+
+	            		        							"<select name='tblColSetFieldSteps' class='select_designnow' id='"+ResultItems[i].Id+"' onchange='showColAddBtn(this)'>";
+  															var styleD="none";
+	            		        							if(FilteredRec.length!=0){
+	  																if(FilteredRec[0].TableEditScope=="Entire"){
+	  																	TableHTML = TableHTML +"<option value=''>Select</option><option value='Entire' selected>Entire</option>"+
+				  																"<option value='Add Row' >Add Row</option>"+
+				  																"<option value='Columns' >Columns</option>";
+	
+	  																}
+	  																else if(FilteredRec[0].TableEditScope=="Add Row"){
+	  																TableHTML = TableHTML +"<option value='Entire' >Entire</option>"+
+				  																"<option value='Add Row' selected>Add Row</option>"+
+				  																"<option value='Columns' >Columns</option>";
+	
+	  																}
+	  																else if(FilteredRec[0].TableEditScope=="Columns"){
+	  																styleD="initial";
+	  																	TableHTML = TableHTML +"<option value='Entire'>Entire</option>"+
+				  																"<option value='Add Row' >Add Row</option>"+
+				  																"<option value='Columns' selected>Columns</option>";
+	
+	  															}else{
+  																	TableHTML = TableHTML +"<option value='' >Select</option><option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+  																}else{
+  																	TableHTML = TableHTML +"<option value='Entire'>Entire</option>"+
+			  																"<option value='Add Row' >Add Row</option>"+
+			  																"<option value='Columns' >Columns</option>";
+  																}
+															TableHTML = TableHTML +"</select>";
+															//TableHTML = TableHTML + "<button id='Init"+ResultItems[i].Id+"'  value='"+TableColumns+"' type='button' class='btn custom-btn new-btnad' style='display:"+styleD+"' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-plus'></i></button></td>"
+	           								       	
+															
+															  TableHTML = TableHTML + "<button id='Step"+ResultItems[i].Id+"' Value='"+TableColumns+"' type='button' class='btn custom-btn new-btnad' style='display:"+styleD+"' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
+		           								       	
+	            		        						}
+	            		        						else{
+		            		        						TableHTML = TableHTML + "<td><input type='checkbox' name='PartialTableChkboxSteps' onclick='setSelectAll(this)' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"' "+Chkboxstatus +"></td>";
+		           								       		if(Chkboxstatus==''){
+																count++;						
+															}if(count>0){
+																if(select_all_checkboxes != null){
+																	select_all_checkboxes.checked = false;
+																}
+															}else{select_all_checkboxes.checked = true;}
+		           								       	}
+		           			TableHTML = TableHTML + "</tr>";
+		           			
+           				}          
+					}
+				
+				}			
+			}
+			$("#TableFieldsListSteps").empty().append(TableHTML);  
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        }  
+    });
+   }
+}
+
+
+function SetDisplayApprovers(Action)
+{
+	if(Action.value == 'User')
+	{
+		$(".usrbox").css("display", "block");
+		$(".grpbox").css("display", "none");
+		$(".rolbox").css("display", "none");
+		$(".colbox").css("display", "none");
+		$(".runbox").css("display", "none");
+
+		initializePeoplePicker('Stepuser');
+		peoplePickerDiv = $("[id$='Stepuser_TopSpan']");
+	}
+	else if(Action.value == 'Role')
+	{
+		$(".usrbox").css("display", "none");
+		$(".grpbox").css("display", "none");
+		$(".rolbox").css("display", "block");
+		$(".colbox").css("display", "none");
+		$(".runbox").css("display", "none");
+	}
+	else if(Action.value == 'Group')
+	{
+		$(".usrbox").css("display", "none");
+		$(".grpbox").css("display", "block");
+		$(".rolbox").css("display", "none");
+		$(".colbox").css("display", "none");
+		$(".runbox").css("display", "none");
+	}
+	else if(Action.value == 'Field')
+	{
+		$(".usrbox").css("display", "none");
+		$(".colbox").css("display", "block");
+		$(".rolbox").css("display", "none");
+		$(".grpbox").css("display", "none");
+		$(".runbox").css("display", "none");
+	}else if(Action.value == 'Runtime')
+	{
+		$(".usrbox").css("display", "none");
+		$(".runbox").css("display", "block");
+		$(".rolbox").css("display", "none");
+		$(".grpbox").css("display", "none");
+		$(".colbox").css("display", "none");
+	}
+}
+
+
+function SetDisplayPrTable4Approvers(Action)
+{
+	if(Action == 'Edit Data' || Action == 'Edit Only')
+	{
+		$("#editablefildStepsDIV").css("display", "block");
+	}
+	else if(Action == 'Edit & Sign')
+	{
+		$("#editablefildStepsDIV").css("display", "block");
+	}else if(Action == 'Review Only')
+	{
+		$("#editablefildStepsDIV").css("display", "block");
+	}
+	else
+	{
+		$("#editablefildStepsDIV").css("display", "none");
+	}
+}
+
+
+var G_TableFieldsList=false;
+function SetTableFieldsList()
+{
+	var yourArray=[];
+	$("input:checkbox[name='PartialTableChkbox']:checked").each(function(){
+		yourArray.push($(this).val());
+	});
+	$("select[name='tblColSetField']").each(function(){
+			//yourArray.push($(this).val());
+			//yourArray.push({"01": $(this).val(), "02": $(this).val()});
+
+		});
+	if(ProcessType="Process"){
+		if(yourArray.length>0)
+		{
+			G_TableFieldsList=true;
+			$('#editablefild').modal('hide');
+		}
+		else
+		{
+			G_TableFieldsList=false;
+			alert('Set the editable columns')
+		}
+	}
+}
+
+
+function SetTableFieldsListSteps()
+{
+	var yourArray=[];
+	$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
+		yourArray.push($(this).val());
+	});
+	if(ProcessType="Process"){
+		if(yourArray.length>0)
+		{
+			$('#editablefildSteps').modal('hide');
+		}
+		else
+		{
+			alert('Set the editable columns')
+		}
+	}
+}
+
+
+function ClearTableFieldsListSteps()
+{
+	$('#setEditableSelStepsAll').removeAttr('checked');
+	$('input:checkbox[name="PartialTableChkboxSteps"]').removeAttr('checked');
+}
+
+
+function ValidateLoginUserEntryscreen() 
+{
+	var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Contributors/EMail&$expand=Contributors&$filter=WebPartName eq 'Process Admin' and Company eq '" + Logged_CompanyId + "' and (Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' or Scope eq 'Everyone') ";
+	$.ajax({
+		url: Ownurl,
+		headers: { Accept: "application/json;odata=verbose" },
+		async: false,
+	    success: function (data) 
+	    {
+	    	var items = data.d.results;
+	        if (items.length > 0) 
+	        {
+	                    //Access
+	        }
+	        else 
+	        {
+	        	alert("Unauthorized access!");
+	            window.location.href = _spPageContextInfo.webAbsoluteUrl;
+	        }
+		},
+		error: function (data) 
+		{
+	    	console.log(data);
+	    }
+	});
+}
+    
+
+$(document).ready(function(){
+	$(".addstepsboxsec").hide();
+	$('input[type=radio][name=optionls]').change(function() {
+	    if (this.value == 'At Bottom of') {
+			$("#PositionOptList").css("display", "block");
+	    }
+	    else if (this.value == 'At Bottom most') {
+	        $("#PositionOptList").css("display", "none");
+
+	    }
+	});
+  $("#ActionReq").change(function(){
+   			if($("#ActionReq").val()=="Edit Data" || $("#ActionReq").val()=="Review Only" || $("#ActionReq").val()=="Edit Only"){
+   				$(".stepsOfProc").css("visibility", "hidden");
+   			}else{
+   				$(".stepsOfProc").css("visibility", "visible");
+   			}
+  });
+  		$('#adds_stepsection').on('hidden.bs.modal', function() {
+  			var modal = $(this);		
+		    $("#ActionReq").val("Select").attr("selected","selected");
+		    modal.find('.modal-body select').prop('selectedIndex', 0);
+			modal.find('.modal-body #editablefildStepsDIV,.colbox,.grpbox,.usrbox,.runbox,#btnEditStep,#PositionOptList').css("display", "none");
+			modal.find('.modal-body .rolbox').css("display", "block");
+			$("input[name=optionls][value='At Bottom most']").prop('checked', true);
+			$("#btnAddStep").css("display", "initial");
+    		$("#Stepuser").html('');
+    		$("input[name=optradio][value=Role]").prop('checked', true);
+    		$("#txtStepName").val('');
+    		$('#chkAllStack').prop('checked',false);
+    		initializePeoplePicker('Stepuser', false);	StepCount = 0;	
+		});
+
+});
+function getGroupNames(){
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApproversGroups')/items",//?$filter=(AuthorId eq'" + _spPageContextInfo.userId + "')", //?$select="+val,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	var option = '<option value="Select">--Select--</option>';//"<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
+        	for(i=0;i<choiceArray.length;i++){    //console.log(choiceArray[i]);    		
+        		option += "<option value='"+choiceArray[i].Id+"'>"+choiceArray[i].Title+"</option>";         		
+        	}
+			$("#ddlgroups").html(option);		
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+var arrPerson=[];
+function getPersonCol(TempID){
+arrPerson=[];
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=(ColumnType eq 'Person') and (TemplateID eq '"+TempID+"')", //?$select="+val,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	
+        	var option = '<option value="Select">--Select--</option>';//"<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
+        	for(i=0;i<choiceArray.length;i++){    console.log(choiceArray[i]);  
+        	arrPerson.push({'ColumnName':choiceArray[i].ColumnName,'ColumnTitle':choiceArray[i].Title});  		
+        		option += "<option value='"+choiceArray[i].ColumnName+"'>"+choiceArray[i].Title+"</option>";         		
+        	}
+			$("#ddlPersonColumn").html(option);		
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+function getPrevSteps(TempID,st,ID){
+if(st=="Add"){
+	query="(AskApprover eq false) and ";
+}else{query="";}
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items?$filter=(TemplateID eq '"+TempID+"')", //?$select="+val,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	
+        	var option = '<option value="Initiation">Initiation</option>';//"<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
+        	for(i=0;i<choiceArray.length;i++){   
+        	//arrPerson.push({'ColumnName':choiceArray[i].ColumnName,'ColumnTitle':choiceArray[i].Title});  		
+        		option += "<option value='"+choiceArray[i].Id+"'>"+choiceArray[i].StepName+"</option>";         		
+        	}
+			$("#ddlPreSteps").html(option);		
+			$("#ddlPreSteps option[value='"+ID+"']").remove();
+
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+
+function showSubBtn(){
+	$("#btnSubmitStep").show();
+	$(".addstepsboxsec").hide();
+}
+function hideSubBtn(){
+	$("#btnSubmitStep").hide();
+	$(".addstepsboxsec").show();
+}
+function ApproverDecStep(editID,askApprover,approverForStep){
+	var listItem = { __metadata:{ type: "SP.Data.ApprovalTemplateStepsListItem" },
+		AskApprover:askApprover,
+		ApproverForStep:approverForStep,
+		};
+	$.ajax({
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items(" +editID+ ")",
+	        type: "PATCH",
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify(listItem),
+	        success: function (data) 
+	        {
+	        
+	        },
+	        error: function (error) {
+	            console.log(JSON.stringify(error));
+	        }
+    });
+}
+function getDynaOptionsForInitiator(LstName,DropdownId,state){
+		var query='';
+			if(LstName=="Departments"){
+				query="?$select=Title,ID,CompanyID/Title&$expand=CompanyID";
+			}else if(LstName=="OfficeLocation"){			
+				query="?$select=Title,ID,CompanyID/Title&$expand=CompanyID";
+			}
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('"+LstName+"')/items"+query,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	var option ='';
+        	var className='';
+        	if(LstName=="Departments"){			
+				className='Dept';
+				$('#'+DropdownId).empty();
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<li><input type="checkbox" class="'+className+'" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title+ ' ['+choiceArray[i].CompanyID.Title+']' + '</li>')
+                }
+			}else if(LstName=="OfficeLocation"){			
+				className='Office';	
+				$('#'+DropdownId).empty();
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<li><input type="checkbox" class="'+className+'" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title+ ' ['+choiceArray[i].CompanyID.Title+']' + '</li>')
+                }
+			}else if(LstName=="ApproversGroups"){			
+				className='Group';
+				$('#'+DropdownId).empty();
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<li><input type="checkbox" class="'+className+'" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title + '</li>')
+                }	
+			}else if(LstName=="ClientMaster"){			
+				className='Client';	
+				$('#'+DropdownId).empty();
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<li><input type="checkbox" class="'+className+'" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title + '</li>')
+                }				
+			}
+			
+        	 	
+                if(state=="Update"){
+	                if(LstName=="Departments"){			
+						var Dept="";
+						var result = selected_Dept.filter(function(o1){
+						    // filter out (!) items in result2
+						    return choiceArray.some(function(o2){
+						    if(o1=== o2.Id){Dept+=o2.Title+",";
+						        return o2.Title;          // assumes unique id
+						      }
+						    });
+						});
+						$("#SelectedItems1").text(Dept);
+						var x = 0;
+		                for (x; x < selected_Dept.length; x++) {
+		                    var selectedval = selected_Dept[x];
+		                    $(":checkbox[value='" + selectedval + "']").prop("checked", "true");
+		                }
+					}else if(LstName=="OfficeLocation"){			
+						var Office="";
+						var result = selected_Office.filter(function(o1){
+						    // filter out (!) items in result2
+						    return choiceArray.some(function(o2){
+						    if(o1=== o2.Id){Office+=o2.Title+",";
+						        return o2.Title;          // assumes unique id
+						      }
+						    });
+						});
+						$("#SelectedItems2").text(Office);
+						var x = 0;
+		                for (x; x < selected_Office.length; x++) {
+		                    var selectedval = selected_Office[x];
+		                    $(":checkbox[value='" + selectedval + "']").prop("checked", "true");
+		                }	
+					}else if(LstName=="ApproversGroups"){			
+						var Groups="";
+						var result = selected_Group.filter(function(o1){
+						    // filter out (!) items in result2
+						    return choiceArray.some(function(o2){
+						    if(o1=== o2.Id){Groups+=o2.Title+",";
+						        return o2.Title;          // assumes unique id
+						      }
+						    });
+						});
+						$("#SelectedItems3").text(Groups);
+						var x = 0;
+		                for (x; x < selected_Group.length; x++) {
+		                    var selectedval = selected_Group[x];
+		                    $(":checkbox[value='" + selectedval + "']").prop("checked", "true");
+		                }
+					}else if(LstName=="ClientMaster"){			
+						var clients="";
+						var result = selected_Client.filter(function(o1){
+						    // filter out (!) items in result2
+						    return choiceArray.some(function(o2){
+						    if(o1=== o2.Id){clients+=o2.Title+",";
+						        return o2.Title;          // assumes unique id
+						      }
+						    });
+						});
+						$("#SelectedItems4").text(clients);
+						var x = 0;
+		                for (x; x < selected_Client.length; x++) {
+		                    var selectedval = selected_Client[x];
+		                    $(":checkbox[value='" + selectedval + "']").prop("checked", "true");
+		                }
+					}
+
+                }
+				 			
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+$(document).ready(function(){
+	
+	$("#ddlDept").click(function () {
+	    var val = [];
+	    var selectedText = [];
+	    selected_Dept= [];
+	    $('.Dept:checked').each(function (i) {
+	        val[i] = $(this).val();
+	        selectedText[i] = $(this).parent().text();
+	        $("#SelectedItems1").text(selectedText);
+	        selected_Dept.push(val[i]);
+	        $('.Dept:checked').text();
+	    });
+	    if(selected_Dept.length==0)
+	    $("#SelectedItems1").text("Select");
+
+	});
+	
+	$("#ddlOffice").click(function () {
+	    var valOffice = [];
+	    var selectedTextOffice = [];
+	    selected_Office= [];
+	    $('.Office:checked').each(function (i) {
+	        valOffice[i] = $(this).val();
+	        selectedTextOffice[i] = $(this).parent().text();
+	        $("#SelectedItems2").text(selectedTextOffice);
+	        selected_Office.push(valOffice[i]);
+	        $('.Office:checked').text();
+	    });
+	    if(selected_Office.length==0)
+	    $("#SelectedItems2").text("Select");
+
+	});
+	$("#ddlGroup").click(function () {
+	    var val = [];
+	    var selectedText = [];
+	    selected_Group= [];
+	    $('.Group:checked').each(function (i) {
+	        val[i] = $(this).val();
+	        selectedText[i] = $(this).parent().text();
+	        $("#SelectedItems3").text(selectedText);
+	        selected_Group.push(val[i]);
+	        $('.Group:checked').text();
+	    });
+	    if(selected_Group.length==0)
+	    $("#SelectedItems3").text("Select");
+
+	});
+	$("#ddlClient").click(function () {
+	    var val = [];
+	    var selectedText = [];
+	    selected_Client= [];
+	    $('.Client:checked').each(function (i) {
+	        val[i] = $(this).val();
+	        selectedText[i] = $(this).parent().text();
+	        $("#SelectedItems4").text(selectedText);
+	        selected_Client.push(val[i]);
+	        $('.Client:checked').text();
+	    });
+	    if(selected_Client.length==0)
+	    $("#SelectedItems4").text("Select");
+
+	});
+	$("#ddlCompEmp").click(function () {
+	    var val = [];
+	    var selectedText = [];
+	    selected_CompEmp= [];
+	    $('.Company:checked').each(function (i) {
+	        val[i] = $(this).val();
+	        selectedText[i] = $(this).parent().text();
+	        $("#SelectedItems5").text(selectedText);
+	        selected_CompEmp.push(val[i]);
+	        $('.Company:checked').text();
+	    });
+	    if(selected_CompEmp.length==0)
+	    $("#SelectedItems5").text("Select");
+
+	});
+});	
+
+
+function getDynaOptionsForInitiatorComp(LstName,DropdownId,state){
+		
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('"+LstName+"')/items",
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	var option ='';
+        	var className='';
+				$('#'+DropdownId).empty();
+                for (i = 0; i < choiceArray.length; i++) {
+                    $('#'+DropdownId).append('<li><input type="checkbox" class="Company" value=' + choiceArray[i].ID + '>' + choiceArray[i].Title + '</li>')
+                }				
+        	 	
+                if(state=="Update"){
+						var comp="";
+						var result = selected_CompEmp.filter(function(o1){
+						    // filter out (!) items in result2
+						    return choiceArray.some(function(o2){
+						    if(o1=== o2.Id){comp+=o2.Title+",";
+						        return o2.Title;          // assumes unique id
+						      }
+						    });
+						});
+						$("#SelectedItems5").text(comp);
+						var x = 0;
+		                for (x; x < selected_CompEmp.length; x++) {
+		                    var selectedval = selected_CompEmp[x];
+		                    $(":checkbox[value='" + selectedval + "']").prop("checked", "true");
+		                }
+                }
+				 			
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+function setSelectAll(ths){
+		let select_all_checkboxes = document.getElementById("setEditableSelAll");
+    	let delete_checkbox = document.getElementsByName("PartialTableChkbox");
+
+		for (let i = 0; i < delete_checkbox.length; i++) {
+            if (delete_checkbox[i].checked == false) {                
+                select_all_checkboxes.checked = false;return false;
+            }else if (delete_checkbox[i].checked == true) {                
+                select_all_checkboxes.checked = true;
+            }        
+        }
+}
+function setSelectAllSteps(ths){
+		let select_all_checkboxes = document.getElementById("setEditableSelStepsAll");
+    	let delete_checkbox = document.getElementsByName("PartialTableChkboxSteps");
+
+		for (let i = 0; i < delete_checkbox.length; i++) {
+            if (delete_checkbox[i].checked == false) {                
+                select_all_checkboxes.checked = false;return false;
+            }else if (delete_checkbox[i].checked == true) {                
+                select_all_checkboxes.checked = true;
+            }        
+        }
+}
+function setSelectColsAll(ths){
+		let select_all_checkboxes = document.getElementById("setEditableColSelAll");
+    	let delete_checkbox = document.getElementsByName("TableChkboxSteps");
+
+		for (let i = 0; i < delete_checkbox.length; i++) {
+            if (delete_checkbox[i].checked == false) {                
+                select_all_checkboxes.checked = false;return false;
+            }else if (delete_checkbox[i].checked == true) {                
+                select_all_checkboxes.checked = true;
+            }        
+        }
+}
+
+var SelectedPrtableColSteps=[];
+function LoadPartialtblColSteps(ths,StepID)
+{		
+		$("#tblAddtblCol").val(StepID);
+		SelectedPrtableColSteps=[];
+		var ResultItems=[];
+		//if(flagIniStp=="Initiation"){chkName=ths.value;}else {chkName=ths.value}
+
+		var arr=[]; 
+		arr=ths.value.split(",");
+		
+		var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateTable')/items?$filter=SetupID eq '"+StepID+"'&$orderby=SequenceNo asc";  
+    	$.ajax({  
+	        url: Ownurl,  
+	        headers: { Accept: "application/json;odata=verbose" },  
+	        async:true,  
+	        success: function (data) 
+	        {	        
+	        	var TableHTML='';	        
+				var ResultItems=[];
+				ResultItems = data.d.results;
+				var count=0;
+				for(var i=0;i<ResultItems.length;i++){
+					var FilteredRec = $.grep(arr, function(v) {
+	    				return v== ResultItems[i].ID;
+					});
+					var Chkboxstatus=''
+					if(FilteredRec.length>0)
+					{
+						Chkboxstatus = 'checked';
+					}
+					if(Chkboxstatus ==''){count++;}
+					let select_all_checkboxes = document.getElementById("setEditableColSelAll");
+					if(count>0)
+					{
+						select_all_checkboxes.checked =false;
+					}else{
+						select_all_checkboxes.checked = true;
+					}
+				       	TableHTML = TableHTML +	"<tr>"+
+	            		        						"<td>"+ResultItems[i].Title+"</td>"+
+	            		        						//"<td>"+ResultItems[i].ColumnType+"</td>"+	            		        						
+		            		        					"<td><input type='checkbox' name='TableChkboxSteps' onclick='setSelectColsAll(this)' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"' "+Chkboxstatus +"></td>";
+		           								      
+		           			TableHTML = TableHTML + "</tr>";           		
+           		}
+           		$("#TableColsFieldsList").empty().append(TableHTML);
+	        },
+	        error: function (data) 
+	        {  
+	            console.log("Error in getdata.");
+	        }  
+    	});
+}
+function addtblColumnField(ths)
+{
+	var tblColArray=[];
+	var chkName="";
+	if(flagIniStp=="Initiation"){chkName='Init'+ths.value;}else {chkName='Step'+ths.value;}
+	$("input:checkbox[name='TableChkboxSteps']:checked").each(function(){
+		tblColArray.push($(this).val());
+	});
+	$("#"+chkName).val(tblColArray);
+	if(ProcessType="Process"){
+		if(tblColArray.length>0)
+		{
+			$('#editablecolsfild').modal('hide');
+		}
+		else
+		{
+			alert('Set the editable columns')
+		}
+	}
+}
+function showColAddBtn(ths){
+
+	if($(ths).val()=="Columns"){
+		$(ths).siblings(0).show();
+	}else{
+		$(ths).siblings(0).hide();
+	}
+}
+$('#editablecolsfild').on('hidden.bs.modal', function() {
+	$('input:checkbox[name="TableChkboxSteps"]').removeAttr('checked');
+});
+var AllTaskUsersEmployeeuser = [];
+var RestQuery;
+
+function GetOwnerUser() {
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    RestQuery = "?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID,ManagerLoginName/ID,ManagerLoginName/Title&$orderby= FullName asc &$expand=LogonName,Department,Company,ManagerLoginName &$filter= Status eq 'Active' and Company/ID eq '" + txtCompanyId + "'&$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", RestQuery)).done(function (Employees) {
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+          
+                var ManagarName = Employees.results[i].ManagerLoginName;
+                AllTaskUsersEmployeeuser.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'LoginName': Employees.results[i].LogonName.Title ? Employees.results[i].LogonName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': ManagarName,//[0].FullName,
+                    'DepartmentId': Employees.results[i].Department.ID,
+                    'Department': Employees.results[i].Department.DepartmentName,
+                    'FullName': Employees.results[i].FullName,
+                    'CompanyID': Employees.results[i].Company.ID,
+                    'EmployeeID': Employees.results[i].Id,
+                    'Skill': Employees.results[i].SkillSet ? Employees.results[i].SkillSet : "NA"
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var RestQuery1 = "?$select=*,LoginName/EMail,LoginName/Title,LoginName/Id,LoginName/FirstName,LoginName/LastName,LoginName/EMail&$expand=LoginName&$filter= Status eq 'Active'&$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("ExternalUsers", RestQuery1 )).done(function (Employees) {console.log(Employees)
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+          
+                //var ManagarName = Employees.results[i].ManagerLoginName;
+                AllTaskUsersEmployeeuser.push({
+                    'UserId': Employees.results[i].LoginName.Id,
+                    'EMail': Employees.results[i].LoginName.EMail,
+                    'LoginName': Employees.results[i].LoginName.Title ? Employees.results[i].LoginName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': "",//[0].FullName,
+                    'DepartmentId': "",
+                    'Department': "",
+                    'FullName':"",
+                    'CompanyID': "",
+                    'EmployeeID': "",
+                    'Skill': ""
+                    
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    
+}
+
+
+var AllEmployee = [];
+var Query;
+
+function GetAllUser() {
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    Query= "?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID,ManagerLoginName/ID,ManagerLoginName/Title&$orderby= FullName asc &$expand=LogonName,Department,Company,ManagerLoginName &$filter= Status eq 'Active' and Company/ID eq '" + txtCompanyId + "'&$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", Query)).done(function (Employees) {
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+          
+                var ManagarName = Employees.results[i].ManagerLoginName;
+                AllEmployee.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'LoginName': Employees.results[i].LogonName.Title ? Employees.results[i].LogonName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': ManagarName,//[0].FullName,
+                    'DepartmentId': Employees.results[i].Department.ID,
+                    'Department': Employees.results[i].Department.DepartmentName,
+                    'FullName': Employees.results[i].FullName,
+                    'CompanyID': Employees.results[i].Company.ID,
+                    'EmployeeID': Employees.results[i].Id,
+                    'Skill': Employees.results[i].SkillSet ? Employees.results[i].SkillSet : "NA"
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var RestQuery1 = "?$select=*,LoginName/EMail,LoginName/Title,LoginName/Id,LoginName/FirstName,LoginName/LastName,LoginName/EMail&$expand=LoginName&$filter= Status eq 'Active'&$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("ExternalUsers", RestQuery1 )).done(function (Employees) {console.log(Employees)
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+          
+                //var ManagarName = Employees.results[i].ManagerLoginName;
+                AllEmployee.push({
+                    'UserId': Employees.results[i].LoginName.Id,
+                    'EMail': Employees.results[i].LoginName.EMail,
+                    'LoginName': Employees.results[i].LoginName.Title ? Employees.results[i].LoginName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': "",//[0].FullName,
+                    'DepartmentId': "",
+                    'Department': "",
+                    'FullName':"",
+                    'CompanyID': "",
+                    'EmployeeID': "",
+                    'Skill': ""
+                    
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    
+}

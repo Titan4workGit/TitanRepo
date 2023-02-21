@@ -1,1 +1,217 @@
-var a60_0x459cb3=a60_0x2da8;(function(_0x1e5dc3,_0x55fcf2){var _0x20244a=a60_0x2da8,_0x47226a=_0x1e5dc3();while(!![]){try{var _0x279d25=-parseInt(_0x20244a(0xd6))/0x1+parseInt(_0x20244a(0xe7))/0x2*(parseInt(_0x20244a(0xe1))/0x3)+-parseInt(_0x20244a(0xce))/0x4*(-parseInt(_0x20244a(0xee))/0x5)+parseInt(_0x20244a(0xd2))/0x6+-parseInt(_0x20244a(0xc3))/0x7+parseInt(_0x20244a(0xda))/0x8*(-parseInt(_0x20244a(0xcf))/0x9)+parseInt(_0x20244a(0xde))/0xa;if(_0x279d25===_0x55fcf2)break;else _0x47226a['push'](_0x47226a['shift']());}catch(_0x5d390e){_0x47226a['push'](_0x47226a['shift']());}}}(a60_0x56cc,0xa0856));function a60_0x56cc(){var _0x33808a=['test','_extractValidator','function','symbol','type','1426860AfgNTa','call','1292144BlLYuw','getFieldValue','_buildValidator','getData','number','rows','params','initializeColumn','object','length','split','12dekpfc','4473lDDKRy','iterator','string','4976472QDLuSO','table','validators','push','415149LRbUbD','modules','forEach','rowManager','13096FixKzB','floor','Validator\x20Setup\x20Error\x20-\x20No\x20matching\x20validator\x20found:','func','1275140zFWUMX','substring','parameters','21ghTcrm','getColumn','validator','prototype','undefined','definition','73652GIocoR','validate'];a60_0x56cc=function(){return _0x33808a;};return a60_0x56cc();}var _typeof=typeof Symbol==='function'&&typeof Symbol[a60_0x459cb3(0xd0)]===a60_0x459cb3(0xec)?function(_0x31d411){return typeof _0x31d411;}:function(_0x137295){var _0x516b51=a60_0x459cb3;return _0x137295&&typeof Symbol===_0x516b51(0xeb)&&_0x137295['constructor']===Symbol&&_0x137295!==Symbol['prototype']?_0x516b51(0xec):typeof _0x137295;},Validate=function Validate(_0x35cf86){this['table']=_0x35cf86;};function a60_0x2da8(_0x38336a,_0x1a1416){var _0x56cc29=a60_0x56cc();return a60_0x2da8=function(_0x2da8d8,_0x29df2b){_0x2da8d8=_0x2da8d8-0xc3;var _0x39c81a=_0x56cc29[_0x2da8d8];return _0x39c81a;},a60_0x2da8(_0x38336a,_0x1a1416);}Validate[a60_0x459cb3(0xe4)][a60_0x459cb3(0xca)]=function(_0x35d282){var _0x1304b0=a60_0x459cb3,_0x1dbd65=this,_0x7374bf=[],_0x1f5ed8;_0x35d282[_0x1304b0(0xe6)][_0x1304b0(0xe3)]&&(Array['isArray'](_0x35d282['definition'][_0x1304b0(0xe3)])?_0x35d282[_0x1304b0(0xe6)][_0x1304b0(0xe3)]['forEach'](function(_0x36fe38){var _0x1234e2=_0x1304b0;_0x1f5ed8=_0x1dbd65[_0x1234e2(0xea)](_0x36fe38),_0x1f5ed8&&_0x7374bf[_0x1234e2(0xd5)](_0x1f5ed8);}):(_0x1f5ed8=this[_0x1304b0(0xea)](_0x35d282[_0x1304b0(0xe6)][_0x1304b0(0xe3)]),_0x1f5ed8&&_0x7374bf[_0x1304b0(0xd5)](_0x1f5ed8)),_0x35d282[_0x1304b0(0xd7)]['validate']=_0x7374bf[_0x1304b0(0xcc)]?_0x7374bf:![]);},Validate[a60_0x459cb3(0xe4)][a60_0x459cb3(0xea)]=function(_0x3e7b2e){var _0x1a4fff=a60_0x459cb3,_0x1558ed,_0x29012f,_0x3e5a67;switch(typeof _0x3e7b2e==='undefined'?'undefined':_typeof(_0x3e7b2e)){case _0x1a4fff(0xd1):_0x3e5a67=_0x3e7b2e['indexOf'](':');_0x3e5a67>-0x1?(_0x1558ed=_0x3e7b2e[_0x1a4fff(0xdf)](0x0,_0x3e5a67),_0x29012f=_0x3e7b2e['substring'](_0x3e5a67+0x1)):_0x1558ed=_0x3e7b2e;return this[_0x1a4fff(0xc5)](_0x1558ed,_0x29012f);break;case _0x1a4fff(0xeb):return this['_buildValidator'](_0x3e7b2e);break;case _0x1a4fff(0xcb):return this[_0x1a4fff(0xc5)](_0x3e7b2e[_0x1a4fff(0xed)],_0x3e7b2e[_0x1a4fff(0xe0)]);break;}},Validate['prototype'][a60_0x459cb3(0xc5)]=function(_0x4623a6,_0x4f3ccc){var _0x4a8a70=a60_0x459cb3,_0x37b8fb=typeof _0x4623a6==_0x4a8a70(0xeb)?_0x4623a6:this[_0x4a8a70(0xd4)][_0x4623a6];return!_0x37b8fb?(console['warn'](_0x4a8a70(0xdc),_0x4623a6),![]):{'type':typeof _0x4623a6==_0x4a8a70(0xeb)?_0x4a8a70(0xeb):_0x4623a6,'func':_0x37b8fb,'params':_0x4f3ccc};},Validate[a60_0x459cb3(0xe4)][a60_0x459cb3(0xe8)]=function(_0x48d996,_0x151535,_0x30ddfa){var _0x46df85=a60_0x459cb3,_0xb49531=this,_0xdaa7c5=[];return _0x48d996&&_0x48d996[_0x46df85(0xd8)](function(_0x3a51fc){var _0xf27edf=_0x46df85;!_0x3a51fc[_0xf27edf(0xdd)][_0xf27edf(0xef)](_0xb49531,_0x151535,_0x30ddfa,_0x3a51fc['params'])&&_0xdaa7c5[_0xf27edf(0xd5)]({'type':_0x3a51fc['type'],'parameters':_0x3a51fc[_0xf27edf(0xc9)]});}),_0xdaa7c5[_0x46df85(0xcc)]?_0xdaa7c5:!![];},Validate[a60_0x459cb3(0xe4)][a60_0x459cb3(0xd4)]={'integer':function integer(_0x5abbfd,_0x1d36e9,_0x4c86fb){var _0x1a71f1=a60_0x459cb3;if(_0x1d36e9===''||_0x1d36e9===null||typeof _0x1d36e9===_0x1a71f1(0xe5))return!![];return _0x1d36e9=Number(_0x1d36e9),typeof _0x1d36e9==='number'&&isFinite(_0x1d36e9)&&Math[_0x1a71f1(0xdb)](_0x1d36e9)===_0x1d36e9;},'float':function float(_0x34d0ba,_0xb1b524,_0x268f51){var _0x24f5b2=a60_0x459cb3;if(_0xb1b524===''||_0xb1b524===null||typeof _0xb1b524===_0x24f5b2(0xe5))return!![];return _0xb1b524=Number(_0xb1b524),typeof _0xb1b524===_0x24f5b2(0xc7)&&isFinite(_0xb1b524)&&_0xb1b524%0x1!==0x0;},'numeric':function numeric(_0x28dffa,_0x35748b,_0x3f223f){var _0x4a5c4e=a60_0x459cb3;if(_0x35748b===''||_0x35748b===null||typeof _0x35748b===_0x4a5c4e(0xe5))return!![];return!isNaN(_0x35748b);},'string':function string(_0x34dd1a,_0x4fcdf6,_0x16bb2a){if(_0x4fcdf6===''||_0x4fcdf6===null||typeof _0x4fcdf6==='undefined')return!![];return isNaN(_0x4fcdf6);},'max':function max(_0x2dc4d6,_0x4d9dd4,_0x183f35){if(_0x4d9dd4===''||_0x4d9dd4===null||typeof _0x4d9dd4==='undefined')return!![];return parseFloat(_0x4d9dd4)<=_0x183f35;},'min':function min(_0x297bfc,_0x1302e6,_0x353759){if(_0x1302e6===''||_0x1302e6===null||typeof _0x1302e6==='undefined')return!![];return parseFloat(_0x1302e6)>=_0x353759;},'minLength':function minLength(_0x425cab,_0x47a7c5,_0x310f32){var _0x209e8c=a60_0x459cb3;if(_0x47a7c5===''||_0x47a7c5===null||typeof _0x47a7c5==='undefined')return!![];return String(_0x47a7c5)[_0x209e8c(0xcc)]>=_0x310f32;},'maxLength':function maxLength(_0x11c26e,_0x282143,_0x2f019e){var _0x1cc365=a60_0x459cb3;if(_0x282143===''||_0x282143===null||typeof _0x282143===_0x1cc365(0xe5))return!![];return String(_0x282143)[_0x1cc365(0xcc)]<=_0x2f019e;},'in':function _in(_0x2c6295,_0x2afb6e,_0x3e6767){var _0x15fec2=a60_0x459cb3;if(_0x2afb6e===''||_0x2afb6e===null||typeof _0x2afb6e===_0x15fec2(0xe5))return!![];return typeof _0x3e6767==_0x15fec2(0xd1)&&(_0x3e6767=_0x3e6767[_0x15fec2(0xcd)]('|')),_0x2afb6e===''||_0x3e6767['indexOf'](_0x2afb6e)>-0x1;},'regex':function regex(_0x49af36,_0x2022bd,_0x131006){var _0x27847f=a60_0x459cb3;if(_0x2022bd===''||_0x2022bd===null||typeof _0x2022bd===_0x27847f(0xe5))return!![];var _0x5ecbbe=new RegExp(_0x131006);return _0x5ecbbe[_0x27847f(0xe9)](_0x2022bd);},'unique':function unique(_0x1ebb92,_0x2f5d03,_0x3c8197){var _0x220cf5=a60_0x459cb3;if(_0x2f5d03===''||_0x2f5d03===null||typeof _0x2f5d03==='undefined')return!![];var _0x2c0462=!![],_0x4640e3=_0x1ebb92[_0x220cf5(0xc6)](),_0xf7a2d4=_0x1ebb92[_0x220cf5(0xe2)]()['_getSelf']();return this[_0x220cf5(0xd3)][_0x220cf5(0xd9)][_0x220cf5(0xc8)][_0x220cf5(0xd8)](function(_0x2e49d1){var _0x52c15f=_0x220cf5,_0x2afb90=_0x2e49d1['getData']();_0x2afb90!==_0x4640e3&&(_0x2f5d03==_0xf7a2d4[_0x52c15f(0xc4)](_0x2afb90)&&(_0x2c0462=![]));}),_0x2c0462;},'required':function required(_0x36cdcf,_0x2fefc1,_0x4c933f){var _0x3534b3=a60_0x459cb3;return _0x2fefc1!==''&&_0x2fefc1!==null&&typeof _0x2fefc1!==_0x3534b3(0xe5);}},Tabulator['prototype']['registerModule'](a60_0x459cb3(0xe8),Validate);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Validate = function Validate(table) {
+	this.table = table;
+};
+
+//validate
+Validate.prototype.initializeColumn = function (column) {
+	var self = this,
+	    config = [],
+	    validator;
+
+	if (column.definition.validator) {
+
+		if (Array.isArray(column.definition.validator)) {
+			column.definition.validator.forEach(function (item) {
+				validator = self._extractValidator(item);
+
+				if (validator) {
+					config.push(validator);
+				}
+			});
+		} else {
+			validator = this._extractValidator(column.definition.validator);
+
+			if (validator) {
+				config.push(validator);
+			}
+		}
+
+		column.modules.validate = config.length ? config : false;
+	}
+};
+
+Validate.prototype._extractValidator = function (value) {
+	var type, params, pos;
+
+	switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+		case "string":
+			pos = value.indexOf(':');
+
+			if (pos > -1) {
+				type = value.substring(0, pos);
+				params = value.substring(pos + 1);
+			} else {
+				type = value;
+			}
+
+			return this._buildValidator(type, params);
+			break;
+
+		case "function":
+			return this._buildValidator(value);
+			break;
+
+		case "object":
+			return this._buildValidator(value.type, value.parameters);
+			break;
+	}
+};
+
+Validate.prototype._buildValidator = function (type, params) {
+
+	var func = typeof type == "function" ? type : this.validators[type];
+
+	if (!func) {
+		console.warn("Validator Setup Error - No matching validator found:", type);
+		return false;
+	} else {
+		return {
+			type: typeof type == "function" ? "function" : type,
+			func: func,
+			params: params
+		};
+	}
+};
+
+Validate.prototype.validate = function (validators, cell, value) {
+	var self = this,
+	    valid = [];
+
+	if (validators) {
+		validators.forEach(function (item) {
+			if (!item.func.call(self, cell, value, item.params)) {
+				valid.push({
+					type: item.type,
+					parameters: item.params
+				});
+			}
+		});
+	}
+
+	return valid.length ? valid : true;
+};
+
+Validate.prototype.validators = {
+
+	//is integer
+	integer: function integer(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		value = Number(value);
+		return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
+	},
+
+	//is float
+	float: function float(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		value = Number(value);
+		return typeof value === 'number' && isFinite(value) && value % 1 !== 0;
+	},
+
+	//must be a number
+	numeric: function numeric(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return !isNaN(value);
+	},
+
+	//must be a string
+	string: function string(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return isNaN(value);
+	},
+
+	//maximum value
+	max: function max(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return parseFloat(value) <= parameters;
+	},
+
+	//minimum value
+	min: function min(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return parseFloat(value) >= parameters;
+	},
+
+	//minimum string length
+	minLength: function minLength(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return String(value).length >= parameters;
+	},
+
+	//maximum string length
+	maxLength: function maxLength(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		return String(value).length <= parameters;
+	},
+
+	//in provided value list
+	in: function _in(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		if (typeof parameters == "string") {
+			parameters = parameters.split("|");
+		}
+
+		return value === "" || parameters.indexOf(value) > -1;
+	},
+
+	//must match provided regex
+	regex: function regex(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		var reg = new RegExp(parameters);
+
+		return reg.test(value);
+	},
+
+	//value must be unique in this column
+	unique: function unique(cell, value, parameters) {
+		if (value === "" || value === null || typeof value === "undefined") {
+			return true;
+		}
+		var unique = true;
+
+		var cellData = cell.getData();
+		var column = cell.getColumn()._getSelf();
+
+		this.table.rowManager.rows.forEach(function (row) {
+			var data = row.getData();
+
+			if (data !== cellData) {
+				if (value == column.getFieldValue(data)) {
+					unique = false;
+				}
+			}
+		});
+
+		return unique;
+	},
+
+	//must have a value
+	required: function required(cell, value, parameters) {
+		return value !== "" && value !== null && typeof value !== "undefined";
+	}
+};
+
+Tabulator.prototype.registerModule("validate", Validate);

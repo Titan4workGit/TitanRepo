@@ -1,1 +1,673 @@
-var a18_0x148950=a18_0x299e;(function(_0xc52dc9,_0x4c8e3f){var _0x2877c9=a18_0x299e,_0x41a72e=_0xc52dc9();while(!![]){try{var _0x20d208=-parseInt(_0x2877c9(0x20d))/0x1*(parseInt(_0x2877c9(0x1d9))/0x2)+-parseInt(_0x2877c9(0x1e5))/0x3+parseInt(_0x2877c9(0x22f))/0x4*(parseInt(_0x2877c9(0x266))/0x5)+parseInt(_0x2877c9(0x1fa))/0x6*(parseInt(_0x2877c9(0x23b))/0x7)+parseInt(_0x2877c9(0x247))/0x8*(-parseInt(_0x2877c9(0x245))/0x9)+parseInt(_0x2877c9(0x241))/0xa+parseInt(_0x2877c9(0x1f2))/0xb;if(_0x20d208===_0x4c8e3f)break;else _0x41a72e['push'](_0x41a72e['shift']());}catch(_0x4529a1){_0x41a72e['push'](_0x41a72e['shift']());}}}(a18_0x332e,0x3d68c));function a18_0x299e(_0x34ed27,_0x2f7955){var _0x332e8a=a18_0x332e();return a18_0x299e=function(_0x299e95,_0x50a59a){_0x299e95=_0x299e95-0x1d5;var _0x5e6fa7=_0x332e8a[_0x299e95];return _0x5e6fa7;},a18_0x299e(_0x34ed27,_0x2f7955);}var _typeof=typeof Symbol==='function'&&typeof Symbol[a18_0x148950(0x252)]===a18_0x148950(0x1e1)?function(_0x4e64dc){return typeof _0x4e64dc;}:function(_0x52f92f){var _0x20d6f9=a18_0x148950;return _0x52f92f&&typeof Symbol===_0x20d6f9(0x227)&&_0x52f92f[_0x20d6f9(0x275)]===Symbol&&_0x52f92f!==Symbol['prototype']?_0x20d6f9(0x1e1):typeof _0x52f92f;},Format=function Format(_0x6abf9d){var _0x24f088=a18_0x148950;this[_0x24f088(0x1ec)]=_0x6abf9d;};function a18_0x332e(){var _0x3eb832=['mixed','getElement','legend','&#x3D;','preserve','appendChild','95020TWPEgV','boolean','column','selectRow','url','labelField','toFixed','http://www.w3.org/2000/svg','div','_row','middle','width','1393GBYxmy','modules','rowManager','getRow','urlPrefix','replace','3289650HTvGhe','green','plaintext','crossElement','783Ionpla','none','32752cGnnZS','viewBox','emptyToSpace','formatterParams','click','&#x2F;','max','formatter','cellRendered','textAlign','<svg\x20enable-background=\x22new\x200\x200\x2024\x2024\x22\x20height=\x2214\x22\x20width=\x2214\x22\x20\x20viewBox=\x220\x200\x2024\x2024\x22\x20xml:space=\x22preserve\x22\x20><path\x20fill=\x22#CE1515\x22\x20d=\x22M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272\x20\x20c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0\x20\x20l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269\x20\x20c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73\x20\x20L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z\x22/></svg>','iterator','string','relative','stars','modExists','tabulator-traffic-light','renderedCallback','isArray','label','call','suffix','checkbox','undefined','precision','getData','symbolAfter','legendAlign','overflow','Formatter\x20Error\x20-\x20No\x20such\x20formatter\x20found:\x20','color','50DRVfiy','setAttribute','invalidPlaceholder','registerRowSelectCheckbox','<polygon\x20fill=\x22#D2D2D2\x22\x20stroke=\x22#686868\x22\x20stroke-width=\x2237.6152\x22\x20stroke-linecap=\x22round\x22\x20stroke-linejoin=\x22round\x22\x20stroke-miterlimit=\x2210\x22\x20points=\x22259.216,29.942\x20330.27,173.919\x20489.16,197.007\x20374.185,309.08\x20401.33,467.31\x20259.216,392.612\x20117.104,467.31\x20144.25,309.08\x2029.274,197.007\x20188.165,173.919\x20\x22/>','definition','element','#000','humanize','allowTruthy','DEPRECATION\x20WARNING\x20-\x20the\x20tick\x20formatter\x20has\x20been\x20deprecated,\x20please\x20use\x20the\x20tickCross\x20formatter\x20with\x20the\x20crossElement\x20param\x20set\x20to\x20false','verticalAlign','display','test','open','constructor','tick','activeRows','height','aria-label','data-max','number','<polygon\x20fill=\x22#FFEA00\x22\x20stroke=\x22#C1AB60\x22\x20stroke-width=\x2237.6152\x22\x20stroke-linecap=\x22round\x22\x20stroke-linejoin=\x22round\x22\x20stroke-miterlimit=\x2210\x22\x20points=\x22259.216,29.942\x20330.27,173.919\x20489.16,197.007\x20374.185,309.08\x20401.33,467.31\x20259.216,392.612\x20117.104,467.31\x20144.25,309.08\x2029.274,197.007\x20188.165,173.919\x20\x22/>','createElement','1072aVdMzj','inputFormat','True','min','nowrap','svg','classList','thousand','symbol','checked','DD/MM/YYYY\x20hh:mm:ss','position','456441xURWCM','img','load','params','getComponent','100%','&#39;','table','target','pre-wrap','add','floor','formatters','1052755bexlOM','&nbsp;','round','red','getValue','<svg\x20enable-background=\x22new\x200\x200\x2024\x2024\x22\x20height=\x2214\x22\x20width=\x2214\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20xml:space=\x22preserve\x22\x20><path\x20fill=\x22#2DC214\x22\x20clip-rule=\x22evenodd\x22\x20d=\x22M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34\x20\x20c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351\x20\x20l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07\x20\x20l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z\x22\x20fill-rule=\x22evenodd\x22/></svg>','addEventListener','&gt;','11202RcYJuP','urlField','diff','change','type','remove','inline-block','prototype','0\x200\x20512\x20512','src','download','outputFormat','object','tickElement','length','#666666','isSelected','responsiveLayout','sanitizeHTML','511xcMVKM','aria-checked','&#x60;','registerModule','&quot;','innerHTML','isValid','true','warn','format','deselectRow','textOverflow','input','<div\x20class=\x27tabulator-row-handle-box\x27><div\x20class=\x27tabulator-row-handle-bar\x27></div><div\x20class=\x27tabulator-row-handle-bar\x27></div><div\x20class=\x27tabulator-row-handle-bar\x27></div></div>','split','minWidth','duration','<svg\x20enable-background=\x22new\x200\x200\x2024\x2024\x22\x20height=\x2214\x22\x20width=\x2214\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20xml:space=\x22preserve\x22\x20><path\x20fill=\x22#CE1515\x22\x20d=\x22M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272\x20\x20c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0\x20\x20l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269\x20\x20c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73\x20\x20L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z\x22/></svg>','legendColor','style','YYYY-MM-DD\x20hh:mm:ss','30px','whiteSpace','tabulator-row-handle','stopImmediatePropagation','formatValue','function','backgroundColor'];a18_0x332e=function(){return _0x3eb832;};return a18_0x332e();}Format[a18_0x148950(0x201)]['initializeColumn']=function(_0x1a6624){var _0x3bc2b4=a18_0x148950,_0xbfc553=this,_0x2490a4={'params':_0x1a6624['definition'][_0x3bc2b4(0x24a)]||{}};switch(_typeof(_0x1a6624[_0x3bc2b4(0x26b)]['formatter'])){case _0x3bc2b4(0x253):_0x1a6624[_0x3bc2b4(0x26b)][_0x3bc2b4(0x24e)]===_0x3bc2b4(0x276)&&(_0x1a6624[_0x3bc2b4(0x26b)][_0x3bc2b4(0x24e)]='tickCross',typeof _0x2490a4['params'][_0x3bc2b4(0x244)]=='undefined'&&(_0x2490a4[_0x3bc2b4(0x1e8)][_0x3bc2b4(0x244)]=![]),console[_0x3bc2b4(0x215)](_0x3bc2b4(0x270)));_0xbfc553['formatters'][_0x1a6624[_0x3bc2b4(0x26b)][_0x3bc2b4(0x24e)]]?_0x2490a4[_0x3bc2b4(0x24e)]=_0xbfc553[_0x3bc2b4(0x1f1)][_0x1a6624['definition']['formatter']]:(console[_0x3bc2b4(0x215)](_0x3bc2b4(0x264),_0x1a6624[_0x3bc2b4(0x26b)][_0x3bc2b4(0x24e)]),_0x2490a4[_0x3bc2b4(0x24e)]=_0xbfc553[_0x3bc2b4(0x1f1)][_0x3bc2b4(0x243)]);break;case'function':_0x2490a4[_0x3bc2b4(0x24e)]=_0x1a6624['definition'][_0x3bc2b4(0x24e)];break;default:_0x2490a4[_0x3bc2b4(0x24e)]=_0xbfc553['formatters'][_0x3bc2b4(0x243)];break;}_0x1a6624[_0x3bc2b4(0x23c)][_0x3bc2b4(0x216)]=_0x2490a4;},Format[a18_0x148950(0x201)][a18_0x148950(0x24f)]=function(_0x32d261){var _0x306767=a18_0x148950;_0x32d261[_0x306767(0x23c)]['format']&&_0x32d261[_0x306767(0x23c)]['format'][_0x306767(0x258)]&&_0x32d261[_0x306767(0x23c)][_0x306767(0x216)][_0x306767(0x258)]();},Format[a18_0x148950(0x201)][a18_0x148950(0x226)]=function(_0x31d363){var _0xf0ffb0=a18_0x148950,_0x350cdc=_0x31d363[_0xf0ffb0(0x1e9)](),_0xce9dff=typeof _0x31d363['column'][_0xf0ffb0(0x23c)][_0xf0ffb0(0x216)][_0xf0ffb0(0x1e8)]===_0xf0ffb0(0x227)?_0x31d363[_0xf0ffb0(0x231)]['modules']['format'][_0xf0ffb0(0x1e8)](_0x350cdc):_0x31d363[_0xf0ffb0(0x231)]['modules'][_0xf0ffb0(0x216)][_0xf0ffb0(0x1e8)];function _0xebeb3e(_0x28bcd2){var _0x4d46e4=_0xf0ffb0;!_0x31d363[_0x4d46e4(0x23c)][_0x4d46e4(0x216)]&&(_0x31d363[_0x4d46e4(0x23c)][_0x4d46e4(0x216)]={}),_0x31d363[_0x4d46e4(0x23c)][_0x4d46e4(0x216)]['renderedCallback']=_0x28bcd2;}return _0x31d363[_0xf0ffb0(0x231)][_0xf0ffb0(0x23c)][_0xf0ffb0(0x216)][_0xf0ffb0(0x24e)][_0xf0ffb0(0x25b)](this,_0x350cdc,_0xce9dff,_0xebeb3e);},Format['prototype']['sanitizeHTML']=function(_0x90f94c){var _0x51c5dd=a18_0x148950;if(_0x90f94c){var _0x405e24={'&':'&amp;','<':'&lt;','>':_0x51c5dd(0x1f9),'\x22':_0x51c5dd(0x211),'\x27':_0x51c5dd(0x1eb),'/':_0x51c5dd(0x24c),'`':_0x51c5dd(0x20f),'=':_0x51c5dd(0x22c)};return String(_0x90f94c)['replace'](/[&<>"'`=\/]/g,function(_0x44afdf){return _0x405e24[_0x44afdf];});}else return _0x90f94c;},Format['prototype'][a18_0x148950(0x249)]=function(_0x3956d3){var _0x3a526a=a18_0x148950;return _0x3956d3===null||typeof _0x3956d3===_0x3a526a(0x25e)?_0x3a526a(0x1f3):_0x3956d3;},Format[a18_0x148950(0x201)]['getFormatter']=function(_0x1dd20f){var _0x299c11=a18_0x148950,_0x1dd20f;switch(typeof _0x1dd20f===_0x299c11(0x25e)?'undefined':_typeof(_0x1dd20f)){case _0x299c11(0x253):this['formatters'][_0x1dd20f]?_0x1dd20f=this[_0x299c11(0x1f1)][_0x1dd20f]:(console[_0x299c11(0x215)](_0x299c11(0x264),_0x1dd20f),_0x1dd20f=this[_0x299c11(0x1f1)][_0x299c11(0x243)]);break;case'function':_0x1dd20f=_0x1dd20f;break;default:_0x1dd20f=this[_0x299c11(0x1f1)][_0x299c11(0x243)];break;}return _0x1dd20f;},Format[a18_0x148950(0x201)]['formatters']={'plaintext':function plaintext(_0x22c510,_0x972cd4,_0xccad30){var _0x251edb=a18_0x148950;return this['emptyToSpace'](this[_0x251edb(0x20c)](_0x22c510[_0x251edb(0x1f6)]()));},'html':function html(_0x5523d0,_0x4c0040,_0x4760b8){var _0x8cc33d=a18_0x148950;return _0x5523d0[_0x8cc33d(0x1f6)]();},'textarea':function textarea(_0x1d41e8,_0x56051e,_0x1c9d7f){var _0xde83c5=a18_0x148950;return _0x1d41e8[_0xde83c5(0x22a)]()[_0xde83c5(0x220)][_0xde83c5(0x223)]=_0xde83c5(0x1ee),this[_0xde83c5(0x249)](this[_0xde83c5(0x20c)](_0x1d41e8[_0xde83c5(0x1f6)]()));},'money':function money(_0x592b79,_0x1d4f4a,_0xea50e7){var _0x43a1ec=a18_0x148950,_0x160d92=parseFloat(_0x592b79[_0x43a1ec(0x1f6)]()),_0x3d9376,_0x4bd2dc,_0xda642,_0x46c938,_0x30894c=_0x1d4f4a['decimal']||'.',_0xd31a6b=_0x1d4f4a[_0x43a1ec(0x1e0)]||',',_0x289b5c=_0x1d4f4a['symbol']||'',_0x3892a2=!!_0x1d4f4a[_0x43a1ec(0x261)],_0x36d6f0=typeof _0x1d4f4a[_0x43a1ec(0x25f)]!==_0x43a1ec(0x25e)?_0x1d4f4a[_0x43a1ec(0x25f)]:0x2;if(isNaN(_0x160d92))return this['emptyToSpace'](this[_0x43a1ec(0x20c)](_0x592b79[_0x43a1ec(0x1f6)]()));_0x3d9376=_0x36d6f0!==![]?_0x160d92[_0x43a1ec(0x235)](_0x36d6f0):_0x160d92,_0x3d9376=String(_0x3d9376)[_0x43a1ec(0x21b)]('.'),_0x4bd2dc=_0x3d9376[0x0],_0xda642=_0x3d9376[_0x43a1ec(0x208)]>0x1?_0x30894c+_0x3d9376[0x1]:'',_0x46c938=/(\d+)(\d{3})/;while(_0x46c938[_0x43a1ec(0x273)](_0x4bd2dc)){_0x4bd2dc=_0x4bd2dc[_0x43a1ec(0x240)](_0x46c938,'$1'+_0xd31a6b+'$2');}return _0x3892a2?_0x4bd2dc+_0xda642+_0x289b5c:_0x289b5c+_0x4bd2dc+_0xda642;},'link':function link(_0x5d8f1e,_0x23b0b1,_0x4b120a){var _0x2667c2=a18_0x148950,_0x1237b5=_0x5d8f1e[_0x2667c2(0x1f6)](),_0x2371ac=_0x23b0b1[_0x2667c2(0x23f)]||'',_0x38463a=_0x23b0b1[_0x2667c2(0x204)],_0x1ee477=_0x1237b5,_0x300be9=document[_0x2667c2(0x1d8)]('a'),_0x58c4e6;_0x23b0b1['labelField']&&(_0x58c4e6=_0x5d8f1e[_0x2667c2(0x260)](),_0x1ee477=_0x58c4e6[_0x23b0b1[_0x2667c2(0x234)]]);if(_0x23b0b1[_0x2667c2(0x25a)])switch(_typeof(_0x23b0b1[_0x2667c2(0x25a)])){case'string':_0x1ee477=_0x23b0b1[_0x2667c2(0x25a)];break;case _0x2667c2(0x227):_0x1ee477=_0x23b0b1[_0x2667c2(0x25a)](_0x5d8f1e);break;}if(_0x1ee477){_0x23b0b1[_0x2667c2(0x1fb)]&&(_0x58c4e6=_0x5d8f1e[_0x2667c2(0x260)](),_0x1237b5=_0x58c4e6[_0x23b0b1[_0x2667c2(0x1fb)]]);if(_0x23b0b1[_0x2667c2(0x233)])switch(_typeof(_0x23b0b1['url'])){case _0x2667c2(0x253):_0x1237b5=_0x23b0b1[_0x2667c2(0x233)];break;case _0x2667c2(0x227):_0x1237b5=_0x23b0b1[_0x2667c2(0x233)](_0x5d8f1e);break;}return _0x300be9[_0x2667c2(0x267)]('href',_0x2371ac+_0x1237b5),_0x23b0b1[_0x2667c2(0x1ed)]&&_0x300be9['setAttribute']('target',_0x23b0b1['target']),_0x23b0b1[_0x2667c2(0x204)]&&(typeof _0x38463a==_0x2667c2(0x227)?_0x38463a=_0x38463a(_0x5d8f1e):_0x38463a=_0x38463a===!![]?'':_0x38463a,_0x300be9[_0x2667c2(0x267)]('download',_0x38463a)),_0x300be9['innerHTML']=this[_0x2667c2(0x249)](this[_0x2667c2(0x20c)](_0x1ee477)),_0x300be9;}else return _0x2667c2(0x1f3);},'image':function image(_0x7d74fe,_0x3e3ccb,_0x3413f3){var _0x47a30f=a18_0x148950,_0x2a9cae=document[_0x47a30f(0x1d8)](_0x47a30f(0x1e6));_0x2a9cae[_0x47a30f(0x267)](_0x47a30f(0x203),_0x7d74fe[_0x47a30f(0x1f6)]());switch(_typeof(_0x3e3ccb[_0x47a30f(0x278)])){case'number':_0x2a9cae['style']['height']=_0x3e3ccb[_0x47a30f(0x278)]+'px';break;case'string':_0x2a9cae['style'][_0x47a30f(0x278)]=_0x3e3ccb[_0x47a30f(0x278)];break;}switch(_typeof(_0x3e3ccb[_0x47a30f(0x23a)])){case _0x47a30f(0x1d6):_0x2a9cae[_0x47a30f(0x220)][_0x47a30f(0x23a)]=_0x3e3ccb[_0x47a30f(0x23a)]+'px';break;case'string':_0x2a9cae[_0x47a30f(0x220)][_0x47a30f(0x23a)]=_0x3e3ccb[_0x47a30f(0x23a)];break;}return _0x2a9cae[_0x47a30f(0x1f8)](_0x47a30f(0x1e7),function(){_0x7d74fe['getRow']()['normalizeHeight']();}),_0x2a9cae;},'tickCross':function tickCross(_0xa41690,_0x5888f2,_0x3d1b7d){var _0x3b0d8f=a18_0x148950,_0x229391=_0xa41690[_0x3b0d8f(0x1f6)](),_0x191b68=_0xa41690['getElement'](),_0x155ee4=_0x5888f2['allowEmpty'],_0x4fc755=_0x5888f2[_0x3b0d8f(0x26f)],_0x188f94=typeof _0x5888f2[_0x3b0d8f(0x207)]!=='undefined'?_0x5888f2['tickElement']:_0x3b0d8f(0x1f7),_0xd004d0=typeof _0x5888f2[_0x3b0d8f(0x244)]!==_0x3b0d8f(0x25e)?_0x5888f2[_0x3b0d8f(0x244)]:_0x3b0d8f(0x251);return _0x4fc755&&_0x229391||_0x229391===!![]||_0x229391===_0x3b0d8f(0x214)||_0x229391===_0x3b0d8f(0x1db)||_0x229391===0x1||_0x229391==='1'?(_0x191b68['setAttribute'](_0x3b0d8f(0x20e),!![]),_0x188f94||''):_0x155ee4&&(_0x229391==='null'||_0x229391===''||_0x229391===null||typeof _0x229391===_0x3b0d8f(0x25e))?(_0x191b68[_0x3b0d8f(0x267)](_0x3b0d8f(0x20e),_0x3b0d8f(0x229)),''):(_0x191b68[_0x3b0d8f(0x267)](_0x3b0d8f(0x20e),![]),_0xd004d0||'');},'datetime':function datetime(_0x4c3233,_0x51931b,_0x3bdbf2){var _0x40c50d=a18_0x148950,_0x5bfff8=_0x51931b[_0x40c50d(0x1da)]||_0x40c50d(0x221),_0x36f849=_0x51931b[_0x40c50d(0x205)]||_0x40c50d(0x1e3),_0x544915=typeof _0x51931b['invalidPlaceholder']!==_0x40c50d(0x25e)?_0x51931b[_0x40c50d(0x268)]:'',_0x3161b9=_0x4c3233['getValue'](),_0x3b7ef3=moment(_0x3161b9,_0x5bfff8);if(_0x3b7ef3[_0x40c50d(0x213)]())return _0x3b7ef3[_0x40c50d(0x216)](_0x36f849);else{if(_0x544915===!![])return _0x3161b9;else return typeof _0x544915==='function'?_0x544915(_0x3161b9):_0x544915;}},'datetimediff':function datetime(_0x4f9e54,_0x4231a6,_0x598277){var _0x26d711=a18_0x148950,_0xc285de=_0x4231a6[_0x26d711(0x1da)]||'YYYY-MM-DD\x20hh:mm:ss',_0x44e1e9=typeof _0x4231a6[_0x26d711(0x268)]!==_0x26d711(0x25e)?_0x4231a6[_0x26d711(0x268)]:'',_0x5299d5=typeof _0x4231a6[_0x26d711(0x25c)]!=='undefined'?_0x4231a6[_0x26d711(0x25c)]:![],_0xe9d83c=typeof _0x4231a6['unit']!==_0x26d711(0x25e)?_0x4231a6['unit']:undefined,_0x4fde41=typeof _0x4231a6[_0x26d711(0x26e)]!==_0x26d711(0x25e)?_0x4231a6['humanize']:![],_0x424422=typeof _0x4231a6['date']!==_0x26d711(0x25e)?_0x4231a6['date']:moment(),_0x3a0777=_0x4f9e54[_0x26d711(0x1f6)](),_0x4638e3=moment(_0x3a0777,_0xc285de);if(_0x4638e3['isValid']())return _0x4fde41?moment[_0x26d711(0x21d)](_0x4638e3['diff'](_0x424422))[_0x26d711(0x26e)](_0x5299d5):_0x4638e3[_0x26d711(0x1fc)](_0x424422,_0xe9d83c)+(_0x5299d5?'\x20'+_0x5299d5:'');else{if(_0x44e1e9===!![])return _0x3a0777;else return typeof _0x44e1e9===_0x26d711(0x227)?_0x44e1e9(_0x3a0777):_0x44e1e9;}},'lookup':function lookup(_0x12e60b,_0x29a948,_0x4836a1){var _0x25f8b3=a18_0x148950,_0x4d0f53=_0x12e60b['getValue']();if(typeof _0x29a948[_0x4d0f53]===_0x25f8b3(0x25e))return console[_0x25f8b3(0x215)]('Missing\x20display\x20value\x20for\x20'+_0x4d0f53),_0x4d0f53;return _0x29a948[_0x4d0f53];},'star':function star(_0x426819,_0x3c2e05,_0x122abe){var _0x4f89b8=a18_0x148950,_0x6b440=_0x426819[_0x4f89b8(0x1f6)](),_0x29d9ae=_0x426819[_0x4f89b8(0x22a)](),_0x9cbb0e=_0x3c2e05&&_0x3c2e05['stars']?_0x3c2e05[_0x4f89b8(0x255)]:0x5,_0x23b358=document[_0x4f89b8(0x1d8)]('span'),_0x2d48b6=document['createElementNS'](_0x4f89b8(0x236),_0x4f89b8(0x1de)),_0x20ca73=_0x4f89b8(0x1d7),_0x83fd92=_0x4f89b8(0x26a);_0x23b358[_0x4f89b8(0x220)][_0x4f89b8(0x271)]=_0x4f89b8(0x239),_0x2d48b6[_0x4f89b8(0x267)](_0x4f89b8(0x23a),'14'),_0x2d48b6['setAttribute'](_0x4f89b8(0x278),'14'),_0x2d48b6['setAttribute'](_0x4f89b8(0x248),_0x4f89b8(0x202)),_0x2d48b6[_0x4f89b8(0x267)]('xml:space',_0x4f89b8(0x22d)),_0x2d48b6[_0x4f89b8(0x220)]['padding']='0\x201px',_0x6b440=_0x6b440&&!isNaN(_0x6b440)?parseInt(_0x6b440):0x0,_0x6b440=Math[_0x4f89b8(0x24d)](0x0,Math['min'](_0x6b440,_0x9cbb0e));for(var _0x1bbf5d=0x1;_0x1bbf5d<=_0x9cbb0e;_0x1bbf5d++){var _0x2df7fc=_0x2d48b6['cloneNode'](!![]);_0x2df7fc['innerHTML']=_0x1bbf5d<=_0x6b440?_0x20ca73:_0x83fd92,_0x23b358['appendChild'](_0x2df7fc);}return _0x29d9ae['style']['whiteSpace']=_0x4f89b8(0x1dd),_0x29d9ae[_0x4f89b8(0x220)][_0x4f89b8(0x263)]='hidden',_0x29d9ae[_0x4f89b8(0x220)][_0x4f89b8(0x218)]='ellipsis',_0x29d9ae[_0x4f89b8(0x267)](_0x4f89b8(0x279),_0x6b440),_0x23b358;},'traffic':function traffic(_0x208876,_0x35474b,_0x21da1d){var _0x50cd4c=a18_0x148950,_0x3bae45=this[_0x50cd4c(0x20c)](_0x208876[_0x50cd4c(0x1f6)]())||0x0,_0x6dce75=document['createElement']('span'),_0x2d895f=_0x35474b&&_0x35474b[_0x50cd4c(0x24d)]?_0x35474b['max']:0x64,_0x5dff40=_0x35474b&&_0x35474b['min']?_0x35474b[_0x50cd4c(0x1dc)]:0x0,_0x422bd2=_0x35474b&&typeof _0x35474b[_0x50cd4c(0x265)]!==_0x50cd4c(0x25e)?_0x35474b[_0x50cd4c(0x265)]:[_0x50cd4c(0x1f5),'orange',_0x50cd4c(0x242)],_0x1322be=_0x50cd4c(0x209),_0x57fd44,_0x20e815;if(isNaN(_0x3bae45)||typeof _0x208876[_0x50cd4c(0x1f6)]()===_0x50cd4c(0x25e))return;_0x6dce75[_0x50cd4c(0x1df)]['add'](_0x50cd4c(0x257)),_0x20e815=parseFloat(_0x3bae45)<=_0x2d895f?parseFloat(_0x3bae45):_0x2d895f,_0x20e815=parseFloat(_0x20e815)>=_0x5dff40?parseFloat(_0x20e815):_0x5dff40,_0x57fd44=(_0x2d895f-_0x5dff40)/0x64,_0x20e815=Math[_0x50cd4c(0x1f4)]((_0x20e815-_0x5dff40)/_0x57fd44);switch(typeof _0x422bd2===_0x50cd4c(0x25e)?_0x50cd4c(0x25e):_typeof(_0x422bd2)){case _0x50cd4c(0x253):_0x1322be=_0x422bd2;break;case'function':_0x1322be=_0x422bd2(_0x3bae45);break;case'object':if(Array[_0x50cd4c(0x259)](_0x422bd2)){var _0x398de7=0x64/_0x422bd2[_0x50cd4c(0x208)],_0x4d5f70=Math[_0x50cd4c(0x1f0)](_0x20e815/_0x398de7);_0x4d5f70=Math[_0x50cd4c(0x1dc)](_0x4d5f70,_0x422bd2['length']-0x1),_0x4d5f70=Math['max'](_0x4d5f70,0x0),_0x1322be=_0x422bd2[_0x4d5f70];break;}}return _0x6dce75[_0x50cd4c(0x220)][_0x50cd4c(0x228)]=_0x1322be,_0x6dce75;},'progress':function progress(_0x334b13,_0x473540,_0x1dd6c9){var _0x3500cb=a18_0x148950,_0x4528fc=this[_0x3500cb(0x20c)](_0x334b13[_0x3500cb(0x1f6)]())||0x0,_0x5ebb8d=_0x334b13['getElement'](),_0x2fdd1f=_0x473540&&_0x473540[_0x3500cb(0x24d)]?_0x473540['max']:0x64,_0x4ef7be=_0x473540&&_0x473540[_0x3500cb(0x1dc)]?_0x473540[_0x3500cb(0x1dc)]:0x0,_0x511ae2=_0x473540&&_0x473540['legendAlign']?_0x473540[_0x3500cb(0x262)]:'center',_0x16ec0b,_0x14c28e,_0x5dab6e,_0x27a41e,_0x104a71,_0x415b9e,_0x386314,_0x543d85,_0x3ed7e2;_0x14c28e=parseFloat(_0x4528fc)<=_0x2fdd1f?parseFloat(_0x4528fc):_0x2fdd1f,_0x14c28e=parseFloat(_0x14c28e)>=_0x4ef7be?parseFloat(_0x14c28e):_0x4ef7be,_0x16ec0b=(_0x2fdd1f-_0x4ef7be)/0x64,_0x14c28e=Math[_0x3500cb(0x1f4)]((_0x14c28e-_0x4ef7be)/_0x16ec0b);switch(_typeof(_0x473540[_0x3500cb(0x265)])){case _0x3500cb(0x253):_0x5dab6e=_0x473540[_0x3500cb(0x265)];break;case'function':_0x5dab6e=_0x473540['color'](_0x4528fc);break;case _0x3500cb(0x206):if(Array[_0x3500cb(0x259)](_0x473540[_0x3500cb(0x265)])){var _0x7efae1=0x64/_0x473540['color']['length'],_0x27c7b5=Math[_0x3500cb(0x1f0)](_0x14c28e/_0x7efae1);_0x27c7b5=Math['min'](_0x27c7b5,_0x473540[_0x3500cb(0x265)][_0x3500cb(0x208)]-0x1),_0x27c7b5=Math[_0x3500cb(0x24d)](_0x27c7b5,0x0),_0x5dab6e=_0x473540[_0x3500cb(0x265)][_0x27c7b5];break;}default:_0x5dab6e='#2DC214';}switch(_typeof(_0x473540[_0x3500cb(0x22b)])){case _0x3500cb(0x253):_0x27a41e=_0x473540[_0x3500cb(0x22b)];break;case _0x3500cb(0x227):_0x27a41e=_0x473540[_0x3500cb(0x22b)](_0x4528fc);break;case _0x3500cb(0x230):_0x27a41e=_0x4528fc;break;default:_0x27a41e=![];}switch(_typeof(_0x473540[_0x3500cb(0x21f)])){case _0x3500cb(0x253):_0x104a71=_0x473540[_0x3500cb(0x21f)];break;case _0x3500cb(0x227):_0x104a71=_0x473540[_0x3500cb(0x21f)](_0x4528fc);break;case _0x3500cb(0x206):if(Array['isArray'](_0x473540['legendColor'])){var _0x7efae1=0x64/_0x473540[_0x3500cb(0x21f)][_0x3500cb(0x208)],_0x27c7b5=Math['floor'](_0x14c28e/_0x7efae1);_0x27c7b5=Math[_0x3500cb(0x1dc)](_0x27c7b5,_0x473540['legendColor'][_0x3500cb(0x208)]-0x1),_0x27c7b5=Math[_0x3500cb(0x24d)](_0x27c7b5,0x0),_0x104a71=_0x473540[_0x3500cb(0x21f)][_0x27c7b5];}break;default:_0x104a71=_0x3500cb(0x26d);}_0x5ebb8d[_0x3500cb(0x220)][_0x3500cb(0x21c)]=_0x3500cb(0x222),_0x5ebb8d[_0x3500cb(0x220)][_0x3500cb(0x1e4)]=_0x3500cb(0x254),_0x5ebb8d[_0x3500cb(0x267)](_0x3500cb(0x279),_0x14c28e);var _0x229b0d=document[_0x3500cb(0x1d8)](_0x3500cb(0x237));_0x229b0d[_0x3500cb(0x220)][_0x3500cb(0x272)]=_0x3500cb(0x200),_0x229b0d[_0x3500cb(0x220)][_0x3500cb(0x1e4)]=_0x3500cb(0x254),_0x229b0d['style'][_0x3500cb(0x23a)]=_0x14c28e+'%',_0x229b0d[_0x3500cb(0x220)][_0x3500cb(0x228)]=_0x5dab6e,_0x229b0d[_0x3500cb(0x220)]['height']=_0x3500cb(0x1ea),_0x229b0d[_0x3500cb(0x267)](_0x3500cb(0x1d5),_0x2fdd1f),_0x229b0d[_0x3500cb(0x267)]('data-min',_0x4ef7be);if(_0x27a41e){var _0x561ee7=document[_0x3500cb(0x1d8)]('div');_0x561ee7[_0x3500cb(0x220)][_0x3500cb(0x1e4)]='absolute',_0x561ee7[_0x3500cb(0x220)]['top']='4px',_0x561ee7[_0x3500cb(0x220)]['left']=0x0,_0x561ee7[_0x3500cb(0x220)][_0x3500cb(0x250)]=_0x511ae2,_0x561ee7[_0x3500cb(0x220)][_0x3500cb(0x23a)]='100%',_0x561ee7[_0x3500cb(0x220)]['color']=_0x104a71,_0x561ee7[_0x3500cb(0x212)]=_0x27a41e;}return _0x1dd6c9(function(){var _0x3bcc10=_0x3500cb;_0x5ebb8d[_0x3bcc10(0x22e)](_0x229b0d),_0x27a41e&&_0x5ebb8d[_0x3bcc10(0x22e)](_0x561ee7);}),'';},'color':function color(_0x4606ab,_0xf54f26,_0x18f4e0){var _0x5834bb=a18_0x148950;return _0x4606ab[_0x5834bb(0x22a)]()[_0x5834bb(0x220)][_0x5834bb(0x228)]=this['sanitizeHTML'](_0x4606ab[_0x5834bb(0x1f6)]()),'';},'buttonTick':function buttonTick(_0x418687,_0x4c1ca2,_0x38b71e){return'<svg\x20enable-background=\x22new\x200\x200\x2024\x2024\x22\x20height=\x2214\x22\x20width=\x2214\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20xml:space=\x22preserve\x22\x20><path\x20fill=\x22#2DC214\x22\x20clip-rule=\x22evenodd\x22\x20d=\x22M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34\x20\x20c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351\x20\x20l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07\x20\x20l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z\x22\x20fill-rule=\x22evenodd\x22/></svg>';},'buttonCross':function buttonCross(_0x5a3427,_0x16fd5f,_0x34df7d){var _0xa496aa=a18_0x148950;return _0xa496aa(0x21e);},'rownum':function rownum(_0x9ed535,_0x207776,_0x54b0d6){var _0x18d461=a18_0x148950;return this[_0x18d461(0x1ec)][_0x18d461(0x23d)][_0x18d461(0x277)]['indexOf'](_0x9ed535['getRow']()['_getSelf']())+0x1;},'handle':function handle(_0x4fe912,_0x52b154,_0x34a7c8){var _0x53a839=a18_0x148950;return _0x4fe912[_0x53a839(0x22a)]()[_0x53a839(0x1df)]['add']('tabulator-row-handle'),_0x53a839(0x21a);},'responsiveCollapse':function responsiveCollapse(_0x523839,_0x4c4e19,_0x50c004){var _0x4aaa11=a18_0x148950,_0xa4d67d=this,_0x5d3629=![],_0x55905f=document[_0x4aaa11(0x1d8)](_0x4aaa11(0x237)),_0x537758=_0x523839[_0x4aaa11(0x23e)]()[_0x4aaa11(0x238)][_0x4aaa11(0x23c)][_0x4aaa11(0x20b)];_0x55905f[_0x4aaa11(0x1df)][_0x4aaa11(0x1ef)]('tabulator-responsive-collapse-toggle'),_0x55905f[_0x4aaa11(0x212)]='<span\x20class=\x27tabulator-responsive-collapse-toggle-open\x27>+</span><span\x20class=\x27tabulator-responsive-collapse-toggle-close\x27>-</span>',_0x523839['getElement']()[_0x4aaa11(0x1df)]['add'](_0x4aaa11(0x224));function _0x873634(_0x2b7827){var _0x5c7e0=_0x4aaa11,_0x3c781e=_0x537758[_0x5c7e0(0x26c)];_0x537758[_0x5c7e0(0x274)]=_0x2b7827,_0x3c781e&&(_0x537758['open']?(_0x55905f[_0x5c7e0(0x1df)][_0x5c7e0(0x1ef)]('open'),_0x3c781e[_0x5c7e0(0x220)][_0x5c7e0(0x272)]=''):(_0x55905f[_0x5c7e0(0x1df)][_0x5c7e0(0x1ff)](_0x5c7e0(0x274)),_0x3c781e[_0x5c7e0(0x220)][_0x5c7e0(0x272)]=_0x5c7e0(0x246)));}return _0x55905f[_0x4aaa11(0x1f8)](_0x4aaa11(0x24b),function(_0x3f8eda){var _0x42037f=_0x4aaa11;_0x3f8eda[_0x42037f(0x225)](),_0x873634(!_0x537758[_0x42037f(0x274)]);}),_0x873634(_0x537758[_0x4aaa11(0x274)]),_0x55905f;},'rowSelection':function rowSelection(_0x58e22e){var _0x593293=a18_0x148950,_0xd9a9b7=this,_0x94148f=document[_0x593293(0x1d8)](_0x593293(0x219));_0x94148f[_0x593293(0x1fe)]=_0x593293(0x25d);if(this[_0x593293(0x1ec)][_0x593293(0x256)](_0x593293(0x232),!![])){_0x94148f[_0x593293(0x1f8)](_0x593293(0x24b),function(_0x435007){_0x435007['stopPropagation']();});if(typeof _0x58e22e[_0x593293(0x23e)]==_0x593293(0x227)){var _0xd2700f=_0x58e22e['getRow']();_0x94148f[_0x593293(0x1f8)](_0x593293(0x1fd),function(_0x306b8b){_0xd2700f['toggleSelect']();}),_0x94148f[_0x593293(0x1e2)]=_0xd2700f[_0x593293(0x20a)](),this['table'][_0x593293(0x23c)][_0x593293(0x232)][_0x593293(0x269)](_0xd2700f,_0x94148f);}else _0x94148f[_0x593293(0x1f8)]('change',function(_0x1ca88a){var _0xdef423=_0x593293;_0xd9a9b7['table'][_0xdef423(0x23c)][_0xdef423(0x232)]['selectedRows'][_0xdef423(0x208)]?_0xd9a9b7[_0xdef423(0x1ec)][_0xdef423(0x217)]():_0xd9a9b7[_0xdef423(0x1ec)]['selectRow']();}),this[_0x593293(0x1ec)][_0x593293(0x23c)][_0x593293(0x232)]['registerHeaderSelectCheckbox'](_0x94148f);}return _0x94148f;}},Tabulator[a18_0x148950(0x201)][a18_0x148950(0x210)](a18_0x148950(0x216),Format);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Format = function Format(table) {
+	this.table = table; //hold Tabulator object
+};
+
+//initialize column formatter
+Format.prototype.initializeColumn = function (column) {
+	var self = this,
+	    config = { params: column.definition.formatterParams || {} };
+
+	//set column formatter
+	switch (_typeof(column.definition.formatter)) {
+		case "string":
+
+			if (column.definition.formatter === "tick") {
+				column.definition.formatter = "tickCross";
+
+				if (typeof config.params.crossElement == "undefined") {
+					config.params.crossElement = false;
+				}
+
+				console.warn("DEPRECATION WARNING - the tick formatter has been deprecated, please use the tickCross formatter with the crossElement param set to false");
+			}
+
+			if (self.formatters[column.definition.formatter]) {
+				config.formatter = self.formatters[column.definition.formatter];
+			} else {
+				console.warn("Formatter Error - No such formatter found: ", column.definition.formatter);
+				config.formatter = self.formatters.plaintext;
+			}
+			break;
+
+		case "function":
+			config.formatter = column.definition.formatter;
+			break;
+
+		default:
+			config.formatter = self.formatters.plaintext;
+			break;
+	}
+
+	column.modules.format = config;
+};
+
+Format.prototype.cellRendered = function (cell) {
+	if (cell.modules.format && cell.modules.format.renderedCallback) {
+		cell.modules.format.renderedCallback();
+	}
+};
+
+//return a formatted value for a cell
+Format.prototype.formatValue = function (cell) {
+	var component = cell.getComponent(),
+	    params = typeof cell.column.modules.format.params === "function" ? cell.column.modules.format.params(component) : cell.column.modules.format.params;
+
+	function onRendered(callback) {
+		if (!cell.modules.format) {
+			cell.modules.format = {};
+		}
+
+		cell.modules.format.renderedCallback = callback;
+	}
+
+	return cell.column.modules.format.formatter.call(this, component, params, onRendered);
+};
+
+Format.prototype.sanitizeHTML = function (value) {
+	if (value) {
+		var entityMap = {
+			'&': '&amp;',
+			'<': '&lt;',
+			'>': '&gt;',
+			'"': '&quot;',
+			"'": '&#39;',
+			'/': '&#x2F;',
+			'`': '&#x60;',
+			'=': '&#x3D;'
+		};
+
+		return String(value).replace(/[&<>"'`=\/]/g, function (s) {
+			return entityMap[s];
+		});
+	} else {
+		return value;
+	}
+};
+
+Format.prototype.emptyToSpace = function (value) {
+	return value === null || typeof value === "undefined" ? "&nbsp;" : value;
+};
+
+//get formatter for cell
+Format.prototype.getFormatter = function (formatter) {
+	var formatter;
+
+	switch (typeof formatter === "undefined" ? "undefined" : _typeof(formatter)) {
+		case "string":
+			if (this.formatters[formatter]) {
+				formatter = this.formatters[formatter];
+			} else {
+				console.warn("Formatter Error - No such formatter found: ", formatter);
+				formatter = this.formatters.plaintext;
+			}
+			break;
+
+		case "function":
+			formatter = formatter;
+			break;
+
+		default:
+			formatter = this.formatters.plaintext;
+			break;
+	}
+
+	return formatter;
+};
+
+//default data formatters
+Format.prototype.formatters = {
+	//plain text value
+	plaintext: function plaintext(cell, formatterParams, onRendered) {
+		return this.emptyToSpace(this.sanitizeHTML(cell.getValue()));
+	},
+
+	//html text value
+	html: function html(cell, formatterParams, onRendered) {
+		return cell.getValue();
+	},
+
+	//multiline text area
+	textarea: function textarea(cell, formatterParams, onRendered) {
+		cell.getElement().style.whiteSpace = "pre-wrap";
+		return this.emptyToSpace(this.sanitizeHTML(cell.getValue()));
+	},
+
+	//currency formatting
+	money: function money(cell, formatterParams, onRendered) {
+		var floatVal = parseFloat(cell.getValue()),
+		    number,
+		    integer,
+		    decimal,
+		    rgx;
+
+		var decimalSym = formatterParams.decimal || ".";
+		var thousandSym = formatterParams.thousand || ",";
+		var symbol = formatterParams.symbol || "";
+		var after = !!formatterParams.symbolAfter;
+		var precision = typeof formatterParams.precision !== "undefined" ? formatterParams.precision : 2;
+
+		if (isNaN(floatVal)) {
+			return this.emptyToSpace(this.sanitizeHTML(cell.getValue()));
+		}
+
+		number = precision !== false ? floatVal.toFixed(precision) : floatVal;
+		number = String(number).split(".");
+
+		integer = number[0];
+		decimal = number.length > 1 ? decimalSym + number[1] : "";
+
+		rgx = /(\d+)(\d{3})/;
+
+		while (rgx.test(integer)) {
+			integer = integer.replace(rgx, "$1" + thousandSym + "$2");
+		}
+
+		return after ? integer + decimal + symbol : symbol + integer + decimal;
+	},
+
+	//clickable anchor tag
+	link: function link(cell, formatterParams, onRendered) {
+		var value = cell.getValue(),
+		    urlPrefix = formatterParams.urlPrefix || "",
+		    download = formatterParams.download,
+		    label = value,
+		    el = document.createElement("a"),
+		    data;
+
+		if (formatterParams.labelField) {
+			data = cell.getData();
+			label = data[formatterParams.labelField];
+		}
+
+		if (formatterParams.label) {
+			switch (_typeof(formatterParams.label)) {
+				case "string":
+					label = formatterParams.label;
+					break;
+
+				case "function":
+					label = formatterParams.label(cell);
+					break;
+			}
+		}
+
+		if (label) {
+			if (formatterParams.urlField) {
+				data = cell.getData();
+				value = data[formatterParams.urlField];
+			}
+
+			if (formatterParams.url) {
+				switch (_typeof(formatterParams.url)) {
+					case "string":
+						value = formatterParams.url;
+						break;
+
+					case "function":
+						value = formatterParams.url(cell);
+						break;
+				}
+			}
+
+			el.setAttribute("href", urlPrefix + value);
+
+			if (formatterParams.target) {
+				el.setAttribute("target", formatterParams.target);
+			}
+
+			if (formatterParams.download) {
+
+				if (typeof download == "function") {
+					download = download(cell);
+				} else {
+					download = download === true ? "" : download;
+				}
+
+				el.setAttribute("download", download);
+			}
+
+			el.innerHTML = this.emptyToSpace(this.sanitizeHTML(label));
+
+			return el;
+		} else {
+			return "&nbsp;";
+		}
+	},
+
+	//image element
+	image: function image(cell, formatterParams, onRendered) {
+		var el = document.createElement("img");
+		el.setAttribute("src", cell.getValue());
+
+		switch (_typeof(formatterParams.height)) {
+			case "number":
+				el.style.height = formatterParams.height + "px";
+				break;
+
+			case "string":
+				el.style.height = formatterParams.height;
+				break;
+		}
+
+		switch (_typeof(formatterParams.width)) {
+			case "number":
+				el.style.width = formatterParams.width + "px";
+				break;
+
+			case "string":
+				el.style.width = formatterParams.width;
+				break;
+		}
+
+		el.addEventListener("load", function () {
+			cell.getRow().normalizeHeight();
+		});
+
+		return el;
+	},
+
+	//tick or cross
+	tickCross: function tickCross(cell, formatterParams, onRendered) {
+		var value = cell.getValue(),
+		    element = cell.getElement(),
+		    empty = formatterParams.allowEmpty,
+		    truthy = formatterParams.allowTruthy,
+		    tick = typeof formatterParams.tickElement !== "undefined" ? formatterParams.tickElement : '<svg enable-background="new 0 0 24 24" height="14" width="14" viewBox="0 0 24 24" xml:space="preserve" ><path fill="#2DC214" clip-rule="evenodd" d="M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34  c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351  l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07  l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z" fill-rule="evenodd"/></svg>',
+		    cross = typeof formatterParams.crossElement !== "undefined" ? formatterParams.crossElement : '<svg enable-background="new 0 0 24 24" height="14" width="14"  viewBox="0 0 24 24" xml:space="preserve" ><path fill="#CE1515" d="M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272  c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0  l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269  c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73  L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z"/></svg>';
+
+		if (truthy && value || value === true || value === "true" || value === "True" || value === 1 || value === "1") {
+			element.setAttribute("aria-checked", true);
+			return tick || "";
+		} else {
+			if (empty && (value === "null" || value === "" || value === null || typeof value === "undefined")) {
+				element.setAttribute("aria-checked", "mixed");
+				return "";
+			} else {
+				element.setAttribute("aria-checked", false);
+				return cross || "";
+			}
+		}
+	},
+
+	datetime: function datetime(cell, formatterParams, onRendered) {
+		var inputFormat = formatterParams.inputFormat || "YYYY-MM-DD hh:mm:ss";
+		var outputFormat = formatterParams.outputFormat || "DD/MM/YYYY hh:mm:ss";
+		var invalid = typeof formatterParams.invalidPlaceholder !== "undefined" ? formatterParams.invalidPlaceholder : "";
+		var value = cell.getValue();
+
+		var newDatetime = moment(value, inputFormat);
+
+		if (newDatetime.isValid()) {
+			return newDatetime.format(outputFormat);
+		} else {
+
+			if (invalid === true) {
+				return value;
+			} else if (typeof invalid === "function") {
+				return invalid(value);
+			} else {
+				return invalid;
+			}
+		}
+	},
+
+	datetimediff: function datetime(cell, formatterParams, onRendered) {
+		var inputFormat = formatterParams.inputFormat || "YYYY-MM-DD hh:mm:ss";
+		var invalid = typeof formatterParams.invalidPlaceholder !== "undefined" ? formatterParams.invalidPlaceholder : "";
+		var suffix = typeof formatterParams.suffix !== "undefined" ? formatterParams.suffix : false;
+		var unit = typeof formatterParams.unit !== "undefined" ? formatterParams.unit : undefined;
+		var humanize = typeof formatterParams.humanize !== "undefined" ? formatterParams.humanize : false;
+		var date = typeof formatterParams.date !== "undefined" ? formatterParams.date : moment();
+		var value = cell.getValue();
+
+		var newDatetime = moment(value, inputFormat);
+
+		if (newDatetime.isValid()) {
+			if (humanize) {
+				return moment.duration(newDatetime.diff(date)).humanize(suffix);
+			} else {
+				return newDatetime.diff(date, unit) + (suffix ? " " + suffix : "");
+			}
+		} else {
+
+			if (invalid === true) {
+				return value;
+			} else if (typeof invalid === "function") {
+				return invalid(value);
+			} else {
+				return invalid;
+			}
+		}
+	},
+
+	//select
+	lookup: function lookup(cell, formatterParams, onRendered) {
+		var value = cell.getValue();
+
+		if (typeof formatterParams[value] === "undefined") {
+			console.warn('Missing display value for ' + value);
+			return value;
+		}
+
+		return formatterParams[value];
+	},
+
+	//star rating
+	star: function star(cell, formatterParams, onRendered) {
+		var value = cell.getValue(),
+		    element = cell.getElement(),
+		    maxStars = formatterParams && formatterParams.stars ? formatterParams.stars : 5,
+		    stars = document.createElement("span"),
+		    star = document.createElementNS('http://www.w3.org/2000/svg', "svg"),
+		    starActive = '<polygon fill="#FFEA00" stroke="#C1AB60" stroke-width="37.6152" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="259.216,29.942 330.27,173.919 489.16,197.007 374.185,309.08 401.33,467.31 259.216,392.612 117.104,467.31 144.25,309.08 29.274,197.007 188.165,173.919 "/>',
+		    starInactive = '<polygon fill="#D2D2D2" stroke="#686868" stroke-width="37.6152" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="259.216,29.942 330.27,173.919 489.16,197.007 374.185,309.08 401.33,467.31 259.216,392.612 117.104,467.31 144.25,309.08 29.274,197.007 188.165,173.919 "/>';
+
+		//style stars holder
+		stars.style.verticalAlign = "middle";
+
+		//style star
+		star.setAttribute("width", "14");
+		star.setAttribute("height", "14");
+		star.setAttribute("viewBox", "0 0 512 512");
+		star.setAttribute("xml:space", "preserve");
+		star.style.padding = "0 1px";
+
+		value = value && !isNaN(value) ? parseInt(value) : 0;
+
+		value = Math.max(0, Math.min(value, maxStars));
+
+		for (var i = 1; i <= maxStars; i++) {
+			var nextStar = star.cloneNode(true);
+			nextStar.innerHTML = i <= value ? starActive : starInactive;
+
+			stars.appendChild(nextStar);
+		}
+
+		element.style.whiteSpace = "nowrap";
+		element.style.overflow = "hidden";
+		element.style.textOverflow = "ellipsis";
+
+		element.setAttribute("aria-label", value);
+
+		return stars;
+	},
+
+	traffic: function traffic(cell, formatterParams, onRendered) {
+		var value = this.sanitizeHTML(cell.getValue()) || 0,
+		    el = document.createElement("span"),
+		    max = formatterParams && formatterParams.max ? formatterParams.max : 100,
+		    min = formatterParams && formatterParams.min ? formatterParams.min : 0,
+		    colors = formatterParams && typeof formatterParams.color !== "undefined" ? formatterParams.color : ["red", "orange", "green"],
+		    color = "#666666",
+		    percent,
+		    percentValue;
+
+		if (isNaN(value) || typeof cell.getValue() === "undefined") {
+			return;
+		}
+
+		el.classList.add("tabulator-traffic-light");
+
+		//make sure value is in range
+		percentValue = parseFloat(value) <= max ? parseFloat(value) : max;
+		percentValue = parseFloat(percentValue) >= min ? parseFloat(percentValue) : min;
+
+		//workout percentage
+		percent = (max - min) / 100;
+		percentValue = Math.round((percentValue - min) / percent);
+
+		//set color
+		switch (typeof colors === "undefined" ? "undefined" : _typeof(colors)) {
+			case "string":
+				color = colors;
+				break;
+			case "function":
+				color = colors(value);
+				break;
+			case "object":
+				if (Array.isArray(colors)) {
+					var unit = 100 / colors.length;
+					var index = Math.floor(percentValue / unit);
+
+					index = Math.min(index, colors.length - 1);
+					index = Math.max(index, 0);
+					color = colors[index];
+					break;
+				}
+		}
+
+		el.style.backgroundColor = color;
+
+		return el;
+	},
+
+	//progress bar
+	progress: function progress(cell, formatterParams, onRendered) {
+		//progress bar
+		var value = this.sanitizeHTML(cell.getValue()) || 0,
+		    element = cell.getElement(),
+		    max = formatterParams && formatterParams.max ? formatterParams.max : 100,
+		    min = formatterParams && formatterParams.min ? formatterParams.min : 0,
+		    legendAlign = formatterParams && formatterParams.legendAlign ? formatterParams.legendAlign : "center",
+		    percent,
+		    percentValue,
+		    color,
+		    legend,
+		    legendColor,
+		    top,
+		    left,
+		    right,
+		    bottom;
+
+		//make sure value is in range
+		percentValue = parseFloat(value) <= max ? parseFloat(value) : max;
+		percentValue = parseFloat(percentValue) >= min ? parseFloat(percentValue) : min;
+
+		//workout percentage
+		percent = (max - min) / 100;
+		percentValue = Math.round((percentValue - min) / percent);
+
+		//set bar color
+		switch (_typeof(formatterParams.color)) {
+			case "string":
+				color = formatterParams.color;
+				break;
+			case "function":
+				color = formatterParams.color(value);
+				break;
+			case "object":
+				if (Array.isArray(formatterParams.color)) {
+					var unit = 100 / formatterParams.color.length;
+					var index = Math.floor(percentValue / unit);
+
+					index = Math.min(index, formatterParams.color.length - 1);
+					index = Math.max(index, 0);
+					color = formatterParams.color[index];
+					break;
+				}
+			default:
+				color = "#2DC214";
+		}
+
+		//generate legend
+		switch (_typeof(formatterParams.legend)) {
+			case "string":
+				legend = formatterParams.legend;
+				break;
+			case "function":
+				legend = formatterParams.legend(value);
+				break;
+			case "boolean":
+				legend = value;
+				break;
+			default:
+				legend = false;
+		}
+
+		//set legend color
+		switch (_typeof(formatterParams.legendColor)) {
+			case "string":
+				legendColor = formatterParams.legendColor;
+				break;
+			case "function":
+				legendColor = formatterParams.legendColor(value);
+				break;
+			case "object":
+				if (Array.isArray(formatterParams.legendColor)) {
+					var unit = 100 / formatterParams.legendColor.length;
+					var index = Math.floor(percentValue / unit);
+
+					index = Math.min(index, formatterParams.legendColor.length - 1);
+					index = Math.max(index, 0);
+					legendColor = formatterParams.legendColor[index];
+				}
+				break;
+			default:
+				legendColor = "#000";
+		}
+
+		element.style.minWidth = "30px";
+		element.style.position = "relative";
+
+		element.setAttribute("aria-label", percentValue);
+
+		var barEl = document.createElement("div");
+		barEl.style.display = "inline-block";
+		barEl.style.position = "relative";
+		barEl.style.width = percentValue + "%";
+		barEl.style.backgroundColor = color;
+		barEl.style.height = "100%";
+
+		barEl.setAttribute('data-max', max);
+		barEl.setAttribute('data-min', min);
+
+		if (legend) {
+			var legendEl = document.createElement("div");
+			legendEl.style.position = "absolute";
+			legendEl.style.top = "4px";
+			legendEl.style.left = 0;
+			legendEl.style.textAlign = legendAlign;
+			legendEl.style.width = "100%";
+			legendEl.style.color = legendColor;
+			legendEl.innerHTML = legend;
+		}
+
+		onRendered(function () {
+			element.appendChild(barEl);
+
+			if (legend) {
+				element.appendChild(legendEl);
+			}
+		});
+
+		return "";
+	},
+
+	//background color
+	color: function color(cell, formatterParams, onRendered) {
+		cell.getElement().style.backgroundColor = this.sanitizeHTML(cell.getValue());
+		return "";
+	},
+
+	//tick icon
+	buttonTick: function buttonTick(cell, formatterParams, onRendered) {
+		return '<svg enable-background="new 0 0 24 24" height="14" width="14" viewBox="0 0 24 24" xml:space="preserve" ><path fill="#2DC214" clip-rule="evenodd" d="M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34  c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351  l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07  l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z" fill-rule="evenodd"/></svg>';
+	},
+
+	//cross icon
+	buttonCross: function buttonCross(cell, formatterParams, onRendered) {
+		return '<svg enable-background="new 0 0 24 24" height="14" width="14" viewBox="0 0 24 24" xml:space="preserve" ><path fill="#CE1515" d="M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272  c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0  l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269  c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73  L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z"/></svg>';
+	},
+
+	//current row number
+	rownum: function rownum(cell, formatterParams, onRendered) {
+		return this.table.rowManager.activeRows.indexOf(cell.getRow()._getSelf()) + 1;
+	},
+
+	//row handle
+	handle: function handle(cell, formatterParams, onRendered) {
+		cell.getElement().classList.add("tabulator-row-handle");
+		return "<div class='tabulator-row-handle-box'><div class='tabulator-row-handle-bar'></div><div class='tabulator-row-handle-bar'></div><div class='tabulator-row-handle-bar'></div></div>";
+	},
+
+	responsiveCollapse: function responsiveCollapse(cell, formatterParams, onRendered) {
+		var self = this,
+		    open = false,
+		    el = document.createElement("div"),
+		    config = cell.getRow()._row.modules.responsiveLayout;
+
+		el.classList.add("tabulator-responsive-collapse-toggle");
+		el.innerHTML = "<span class='tabulator-responsive-collapse-toggle-open'>+</span><span class='tabulator-responsive-collapse-toggle-close'>-</span>";
+
+		cell.getElement().classList.add("tabulator-row-handle");
+
+		function toggleList(isOpen) {
+			var collapseEl = config.element;
+
+			config.open = isOpen;
+
+			if (collapseEl) {
+
+				if (config.open) {
+					el.classList.add("open");
+					collapseEl.style.display = '';
+				} else {
+					el.classList.remove("open");
+					collapseEl.style.display = 'none';
+				}
+			}
+		}
+
+		el.addEventListener("click", function (e) {
+			e.stopImmediatePropagation();
+			toggleList(!config.open);
+		});
+
+		toggleList(config.open);
+
+		return el;
+	},
+
+	rowSelection: function rowSelection(cell) {
+		var _this = this;
+
+		var checkbox = document.createElement("input");
+
+		checkbox.type = 'checkbox';
+
+		if (this.table.modExists("selectRow", true)) {
+
+			checkbox.addEventListener("click", function (e) {
+				e.stopPropagation();
+			});
+
+			if (typeof cell.getRow == 'function') {
+				var row = cell.getRow();
+
+				checkbox.addEventListener("change", function (e) {
+					row.toggleSelect();
+				});
+
+				checkbox.checked = row.isSelected();
+				this.table.modules.selectRow.registerRowSelectCheckbox(row, checkbox);
+			} else {
+				checkbox.addEventListener("change", function (e) {
+					if (_this.table.modules.selectRow.selectedRows.length) {
+						_this.table.deselectRow();
+					} else {
+						_this.table.selectRow();
+					}
+				});
+
+				this.table.modules.selectRow.registerHeaderSelectCheckbox(checkbox);
+			}
+		}
+		return checkbox;
+	}
+};
+
+Tabulator.prototype.registerModule("format", Format);

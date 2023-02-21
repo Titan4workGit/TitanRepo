@@ -1477,22 +1477,22 @@ height: 34px;
 						    		</a> 
 						    	</div>   
 						  	</li>
-						  	<li class="new-request-top-right-change-Display">
+						  	<!-------<li class="new-request-top-right-change-Display">
 						    	<div>
 						    		<a href="#" onclick="SaveLink()"ss>
 						      			<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/star.png" alt="">
 						      			Add to Favorite
 						    		</a>
 						    	</div>    
-						  	</li>
-						  	<li>
+						  	</li>-------->
+						  	<!-------<li>
 						    	<div>
 						    		<a href="#process_action" data-toggle="modal" onclick="ViewProcessDetails()">
 						       			<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/information.png" alt="">
 						      			About this process
 						    		</a> 
 						    	</div>   
-						  	</li>
+						  	</li>------->
 						</ul>					     
 					</div>
 			    </div>
@@ -1504,7 +1504,7 @@ height: 34px;
 					<!-- Trigger the modal with a button -->
 					<div class="row">
 						<div class="col-md-6">
-							<strong><a href="#" class="" data-toggle="modal" data-target="#additional_document" style="color:#1d6ec0; display:block; text-decoration:none;">Attached Document(s) : <span class="countingbx">0</span></a></strong>
+							<!----<a href="#" class="" data-toggle="modal" data-target="#additional_document" style="color:#1d6ec0; display:block; text-decoration:none;">Additional Documents which need Signature: <span class="countingbx">0</span></a>------->
 							<div class="approve-process-upload-image-box-btn">
 								<!---------<div class="form-group custom-form-group">
 										<input type="file" class="form-control approve-process-upload-image-inp" id="attachmentsupload" style="display:none;" name="" multiple >
@@ -1522,20 +1522,20 @@ height: 34px;
 	                            		<span>test-img.png</span>
 	                            		<i class="fa fa-times-circle-o"></i>
 	                            	</div>                           -->
-								</div>								
+								</div>
 							</div>
 						</div><!---col-md-6-->
 					</div><!--row ed-->	
 						<div class="pl15 pr15 pb15 text-center btnmanage btngroupsetting">
 							<!--	<button type="button" class="btn custom-btn" id="savenewrequest">Submit</button>  -->
+							<a type="button" class="btn btn-default" id="AttachDocs"data-toggle="modal" data-target="#Approval_doc"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/attachfiles.png"> Attachments</a>
 							<a type="button" class="btn custom-btn" id="Approverequest" data-toggle="modal" data-target="#approvalActionModal"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/checknow.png"> Approve</a>
-							<a type="button" class="btn custom-btn" id="AttachDocs"data-toggle="modal" data-target="#Approval_doc"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/attachfiles.png"> Attachments</a>
-							<a type="button" class="btn custom-btn" id="savenewDraft"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/pencil.png"> Save as Draft</a>
-							<a type="button" class="btn custom-btn" id="savenewrequest"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/checknow.png"> Submit</a>
 							<a type="button" class="btn btn-danger" id="Rejectrequest" data-toggle="modal" data-target="#approvalRejectionModal"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/cancel.png"> Reject</a>
-							<a type="button" class="btn custom-btn" id="Forwardrequest"data-toggle="modal" data-target="#forward_stpings" onclick="LoadColumnSignPos()"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/forward.png"> Forward</a>
-							<a type="button" class="btn custom-btn" id="Revertrequest" data-toggle="modal" data-target="#rever_multistep" onclick="GetStepsRevert();"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/revert.png"> Revert</a>
-							<a type="button" class="btn custom-btn" id="Forward-Review-Btn" data-toggle="modal" data-target="#review_structure" style="display:none;"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/review.png"> Review</a>
+							<!------<a type="button" class="btn custom-btn" id="savenewDraft"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/pencil.png"> Save as Draft</a>------>
+							<a type="button" class="btn btn-default" id="Forwardrequest"data-toggle="modal" data-target="#forward_stpings" onclick="LoadColumnSignPos()"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/forward.png"> Forward</a>
+							<a type="button" class="btn btn-default" id="Revertrequest" data-toggle="modal" data-target="#rever_multistep" onclick="GetStepsRevert();"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/revert.png"> Revert</a>
+							<a type="button" class="btn btn-default" id="Forward-Review-Btn" data-toggle="modal" data-target="#review_structure" style="display:none;"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/review.png"> Review</a>
+						    <a type="button" class="btn custom-btn" id="savenewrequest"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/checknow.png"> Submit</a>
 						</div>
 					
 				</div>
@@ -1774,7 +1774,7 @@ height: 34px;
                     <div class="signature-box mb15" style="position:relative">
                         <a type="button" class="btn custom-btn-two-cancel wpx-80 draw-signature-box-type-clear-btn"  name="TextSignaturebtn" id="CLR-TextSignature" onclick="">Clear</a>
                         <div class="signature-box-container">
-                            <input class="form-control text-center signature-front" type="text" placeholder="Type your sign here" id="SingTextType">
+                            <input class="form-control text-center signature-front" type="text" placeholder="Type your sign here" id="SingTextType" maxlength="30">
                         </div>
                     </div>
                     <div class="drag-drop-box mb15 d-none" style="position:relative">
@@ -2463,12 +2463,10 @@ height: 34px;
             <table class="table" id="tbAppDocs">
               <thead>
                   <tr>
-                    <th style="width:15%">Document</th>
-                    <th style="width:15%">Purpose</th>
-                    <th style="width:25%">Remaks</th>
-                    <th style="width:15%">Uploaded by</th>
-                    <th style="width:15%">Upload At</th>
-                    <th style="width:10%"></th>
+                    <th style="width:27%">Document</th>
+                    <th style="width:26%">Purpose</th>
+                    <th style="width:30%">Remaks</th>
+                    <th style="width:12%"></th>
                   </tr>
               </thead>
               <tbody id="tbdyAppDoc">
@@ -2545,7 +2543,7 @@ height: 34px;
           </div>
         </div>
 		
-		 <div class="wrapfildsinside mangflexlabel">
+		 <!----<div class="wrapfildsinside mangflexlabel">
           <label for="">Attach For</label>
           <div class="fieldbx">
             <select id="e_Signature_optis" class="form-control">
@@ -2553,7 +2551,7 @@ height: 34px;
               <option value="required_e_signature">Required_E_Signature</option>
             </select>
           </div>
-        </div>
+        </div>----->
 		
 		<div class="action_signaturebx required_e_signature" style="margin-bottom:19px;">
 		
@@ -4866,7 +4864,7 @@ var GetImageBuffer = function (SignImage)
 				var bindfile = '';
 				Tcounter = 0;
 				for (initial; initial < arrFileUpload.length; initial++) {
-					/*  bindfile += '<div class="upload-chip" id="Ifile_' + Tcounter + '">';
+					/*    bindfile += '<div class="upload-chip" id="Ifile_' + Tcounter + '">';
 						bindfile += '<span class="d-flex align-items-center upload-chip-title">';
 						bindfile += '<i class="fa fa-paperclip color-sky-blue" aria-hidden="true"></i>';
 						bindfile += '<span class="px-2 font-14 upload-chip-title" title=' + RemoveDuplicate[initial] + '>' + RemoveDuplicate[initial] + '</span></span>';
@@ -7523,14 +7521,14 @@ $(document).ready(function(){
 });
 
 
-var ApprovalDocs = [];var AllDocs = [];
+var ApprovalDocs = [];
 function SaveApprovalDocs(){
-	ApprovalDocs  = [];	
+	ApprovalDocs  = [];
 	var fileInput = jQuery('#ApprovalDoc');
 	var fileCount = fileInput[0].files.length
 	console.log(fileCount);	
 	var filecountset = 0;
-//	$('#countingbx').val(fileCount);
+	$('#countingbx').val(fileCount);
 	for (var i = 0; i < fileCount; i++) 
 	{
 		var fileName = fileInput[0].files[i].name;
@@ -7546,57 +7544,27 @@ function SaveApprovalDocs(){
 		var SingleStpval = $('#singleStpddp').val();
 		var watermrk = $("#watermark_slect").prop("checked") ? 1 : 0;				
 		var watermrkval = $('#docWatermark').val();
-		ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn})
-		AllDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn})
+		ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval})
 		}else{
 		alert(fileName + ' extention is invalid, please select another file.');
 		return false;
 		}
 	}
-	var RemoveDuplicate = [];	
-	$.each(AllDocs, function(key, value) {
-        var exists = false;
-        $.each(RemoveDuplicate, function(k, val2) {
-          if(value.filename == val2.filename){ exists = true }; 
-        });
-        if(exists == false && value.filename!= "") { RemoveDuplicate.push(value); }
-      });	        
-	console.log(AllDocs);
-	BindApprovalDoc(RemoveDuplicate);
-	$('#ApprovalDoc').val('');$('#DocPurpose').val('');	$('#docRemarks').val('');			
+	BindApprovalDoc(ApprovalDocs);
 }
-function BindApprovalDoc(ApprovalDoc){
-	$('#tbdyAppDoc').empty();
-	var count = $('.countingbx').text();
-	$('.countingbx').text(ApprovalDoc.length);
-	var ApprovalDochtml = '';var stp;
-	if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
-	stp = window.atob(titanForWork.getQueryStringParameter('StepNo'));
-	}else{stp = 'Initiation'}
-	for(i=0;i<ApprovalDoc.length;i++){	 
-	var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail);
-		ApprovalDochtml += '<tr><td><div class="titlewrp">';
-		var extn = ApprovalDoc[i].extn.toUpperCase();
-		if(extn == 'JPEG' || extn == 'GIF' || extn == 'PNG' || extn == 'JPG'){
-		 	var path = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyDocuments/DMS/assets/images/jpg.png';
-		}else if(extn == 'DOC' || extn == 'DOCX'){
-			var path = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyDocuments/DMS/assets/images/docx.png';
-		}else if(extn == 'CSV' || extn == 'XLS' || extn == 'XLSX'){
-			var path = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/excel_file.png';
-		}else if(extn == 'PDF'){
-			var path = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyDocuments/DMS/assets/images/pdf.png';
-		}else{
-			var path = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyDocuments/DMS/assets/images/file-icon.png';
-		}
-	    ApprovalDochtml += '<img src="'+path+'">'
-	    ApprovalDochtml += '<p class="fileName" id="DocName" >'+ApprovalDoc[i].filename+'</p>'
-	    ApprovalDochtml += '</div></td>'
-	    ApprovalDochtml += '<td><p class="purpose_text" id="filePurpose">'+ApprovalDoc[i].purpose+'</p></td>'
-	    ApprovalDochtml += '<td><p class="remarkmultilines" id="fileRemarks">'+ApprovalDoc[i].Remarks+'</p></td>'
-	    ApprovalDochtml += '<td><div class="flexitem"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="'+_spPageContextInfo.userDisplayName+'" src="'+Authorattachment+'" alt="" data-themekey="#"></div></div><div class="imagecontent"><h4>'+_spPageContextInfo.userDisplayName+'</h4><a href="#" style="cursor: auto;">'+_spPageContextInfo.userEmail+'</a></div></div></td>'
-	    ApprovalDochtml += '<td>'+stp+'<br>'+moment(new Date).format('LL')+'</td>'
-	    ApprovalDochtml += '<td><button type="button" class="custom-edit-btn"><i class="fa fa-pencil"></i></button>'
-	    ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-trash-o"></i></button></td></tr> '
+function BindApprovalDoc(ApprovalDocs){
+	//$('#tbdyAppDoc').empty();
+	var ApprovalDochtml = '';
+	for(i=0;i<ApprovalDocs.length;i++){
+	ApprovalDochtml += '<tr><td><div class="titlewrp">';
+    ApprovalDochtml += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/excel_file.png">'
+    ApprovalDochtml += '<p class="fileName" id="DocName" >'+ApprovalDocs[i].filename+'</p>'
+    ApprovalDochtml += '</div></td>'
+    ApprovalDochtml += '<td><p class="purpose_text" id="filePurpose">'+ApprovalDocs[i].purpose+'</p></td>'
+    ApprovalDochtml += '<td><p class="remarkmultilines" id="fileRemarks">'+ApprovalDocs[i].Remarks+'</p>'
+    ApprovalDochtml += '</td><td>'
+    ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-pencil"></i></button>'
+    ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-trash-o"></i></button></td></tr> '
     }
     $('#tbdyAppDoc').append(ApprovalDochtml);
     $('#Approval_doc').modal('hide');

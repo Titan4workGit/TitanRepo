@@ -1,1 +1,42 @@
-var a52_0x5b3ef5=a52_0x2c92;(function(_0xab28a7,_0x6f0709){var _0xe099ea=a52_0x2c92,_0x1514c4=_0xab28a7();while(!![]){try{var _0x40cd52=-parseInt(_0xe099ea(0xab))/0x1*(-parseInt(_0xe099ea(0xa7))/0x2)+-parseInt(_0xe099ea(0x9b))/0x3*(-parseInt(_0xe099ea(0x9d))/0x4)+parseInt(_0xe099ea(0xa9))/0x5*(parseInt(_0xe099ea(0xb3))/0x6)+parseInt(_0xe099ea(0xb4))/0x7*(-parseInt(_0xe099ea(0xb2))/0x8)+-parseInt(_0xe099ea(0x9f))/0x9+parseInt(_0xe099ea(0x97))/0xa*(-parseInt(_0xe099ea(0x9c))/0xb)+parseInt(_0xe099ea(0x9a))/0xc;if(_0x40cd52===_0x6f0709)break;else _0x1514c4['push'](_0x1514c4['shift']());}catch(_0x25618b){_0x1514c4['push'](_0x1514c4['shift']());}}}(a52_0x5d14,0xd1148));function a52_0x2c92(_0x356b62,_0x29e263){var _0x5d140e=a52_0x5d14();return a52_0x2c92=function(_0x2c9246,_0x272d7e){_0x2c9246=_0x2c9246-0x97;var _0x47b70a=_0x5d140e[_0x2c9246];return _0x47b70a;},a52_0x2c92(_0x356b62,_0x29e263);}var ResizeTable=function ResizeTable(_0x3c72ec){var _0x2840eb=a52_0x2c92;this[_0x2840eb(0xa1)]=_0x3c72ec,this[_0x2840eb(0xa2)]=![],this[_0x2840eb(0xa8)]=![];};ResizeTable[a52_0x5b3ef5(0xb1)][a52_0x5b3ef5(0x99)]=function(_0x1cb225){var _0x354a73=a52_0x5b3ef5,_0x8c37ee=this[_0x354a73(0xa1)],_0x50f9c7;typeof ResizeObserver!==_0x354a73(0xa0)&&_0x8c37ee[_0x354a73(0x98)][_0x354a73(0xaa)]()==='virtual'?(this[_0x354a73(0xa8)]=new ResizeObserver(function(_0x4c5450){var _0x4af810=_0x354a73;(!_0x8c37ee[_0x4af810(0xae)]||_0x8c37ee[_0x4af810(0xae)]&&!_0x8c37ee[_0x4af810(0xa3)][_0x4af810(0xa4)][_0x4af810(0xaf)])&&_0x8c37ee[_0x4af810(0xad)]();}),this['observer'][_0x354a73(0x9e)](_0x8c37ee[_0x354a73(0xb0)])):(this[_0x354a73(0xa2)]=function(){var _0x48eed3=_0x354a73;(!_0x8c37ee['browserMobile']||_0x8c37ee[_0x48eed3(0xae)]&&!_0x8c37ee[_0x48eed3(0xa3)]['edit'][_0x48eed3(0xaf)])&&_0x8c37ee[_0x48eed3(0xad)]();},window[_0x354a73(0xb5)](_0x354a73(0xa5),this[_0x354a73(0xa2)]));},ResizeTable['prototype']['clearBindings']=function(_0x95e0ec){var _0x3b65b6=a52_0x5b3ef5;this[_0x3b65b6(0xa2)]&&window[_0x3b65b6(0xa6)](_0x3b65b6(0xa5),this['binding']),this['observer']&&this[_0x3b65b6(0xa8)]['unobserve'](this[_0x3b65b6(0xa1)][_0x3b65b6(0xb0)]);},Tabulator[a52_0x5b3ef5(0xb1)][a52_0x5b3ef5(0xac)]('resizeTable',ResizeTable);function a52_0x5d14(){var _0x68fcc=['prototype','147272yyekFv','13242cdUhix','532YaWWMX','addEventListener','10xMyrTk','rowManager','initialize','25034472FyjiIL','213357zOmLCG','4197754OgNNkl','16GNHFzK','observe','10816407ZTxsPC','undefined','table','binding','modules','edit','resize','removeEventListener','26772mnFhmo','observer','3205FMkSmp','getRenderMode','4SbmTjE','registerModule','redraw','browserMobile','currentCell','element'];a52_0x5d14=function(){return _0x68fcc;};return a52_0x5d14();}
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ResizeTable = function ResizeTable(table) {
+	this.table = table; //hold Tabulator object
+	this.binding = false;
+	this.observer = false;
+};
+
+ResizeTable.prototype.initialize = function (row) {
+	var table = this.table,
+	    observer;
+
+	if (typeof ResizeObserver !== "undefined" && table.rowManager.getRenderMode() === "virtual") {
+		this.observer = new ResizeObserver(function (entry) {
+			if (!table.browserMobile || table.browserMobile && !table.modules.edit.currentCell) {
+				table.redraw();
+			}
+		});
+
+		this.observer.observe(table.element);
+	} else {
+		this.binding = function () {
+			if (!table.browserMobile || table.browserMobile && !table.modules.edit.currentCell) {
+				table.redraw();
+			}
+		};
+
+		window.addEventListener("resize", this.binding);
+	}
+};
+
+ResizeTable.prototype.clearBindings = function (row) {
+	if (this.binding) {
+		window.removeEventListener("resize", this.binding);
+	}
+
+	if (this.observer) {
+		this.observer.unobserve(this.table.element);
+	}
+};
+
+Tabulator.prototype.registerModule("resizeTable", ResizeTable);

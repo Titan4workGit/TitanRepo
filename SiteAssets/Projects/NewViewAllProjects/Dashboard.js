@@ -1,1 +1,887 @@
-var a11_0x4a89fa=a11_0x1871;(function(_0x985550,_0x4e736c){var _0x3132a3=a11_0x1871,_0x720996=_0x985550();while(!![]){try{var _0x52bbc0=-parseInt(_0x3132a3(0x183))/0x1+-parseInt(_0x3132a3(0x1d6))/0x2+-parseInt(_0x3132a3(0x15f))/0x3*(-parseInt(_0x3132a3(0x1ac))/0x4)+parseInt(_0x3132a3(0x18f))/0x5+parseInt(_0x3132a3(0x1c8))/0x6*(-parseInt(_0x3132a3(0x178))/0x7)+-parseInt(_0x3132a3(0x175))/0x8*(-parseInt(_0x3132a3(0x157))/0x9)+parseInt(_0x3132a3(0x1dd))/0xa;if(_0x52bbc0===_0x4e736c)break;else _0x720996['push'](_0x720996['shift']());}catch(_0x37e9b3){_0x720996['push'](_0x720996['shift']());}}}(a11_0x5302,0x5ab3f));var projectar=[],Location=window['location'][a11_0x4a89fa(0x14b)]+'//'+window[a11_0x4a89fa(0x16f)][a11_0x4a89fa(0x171)]+_spPageContextInfo[a11_0x4a89fa(0x18b)],NextURL='',today=new Date(),CurrentDate=today[a11_0x4a89fa(0x1c0)]()[a11_0x4a89fa(0x148)](0x0,0xa);$(document)[a11_0x4a89fa(0x165)](function(){var _0x1f4844=a11_0x4a89fa;google[_0x1f4844(0x18c)](_0x1f4844(0x137),'1',{'packages':[_0x1f4844(0x16e)]}),google[_0x1f4844(0x1e5)](drawChart),google['setOnLoadCallback'](drawChartDepartmrnt),google[_0x1f4844(0x16d)][_0x1f4844(0x18c)]('current',{'packages':[_0x1f4844(0x16e)]}),google[_0x1f4844(0x16d)][_0x1f4844(0x1e5)](drawChartProgram),sortClient(),deshboardEvent(),sortDepartment(),sort_programName();});var programNameArr=new Array(),DeptName=new Array(),projectType,g_Items,totalLive=0x0,totalOnHold=0x0,totalComplete=0x0,totalOverView=0x0,totalTerminate=0x0,dliveCount=0x0,dCompleteCount=0x0,dTerminateCount=0x0,dOnHoldCount=0x0,doverDue=0x0,cliveCount=0x0,cCompleteCount=0x0,cTerminateCount=0x0,cOnHoldCount=0x0,coverDue=0x0,pliveCount=0x0,pCompleteCount=0x0,pTerminateCount=0x0,pOnHoldCount=0x0,poverDue=0x0;function getProjectByGroup(_0x3e35d9){var _0x3f0d26=a11_0x4a89fa;debugger;g_Items=_0x3e35d9;var _0x169073;_0x169073=_0x3e35d9['reduce'](function(_0x59393f,_0x19ba30){var _0x4c6dd9=a11_0x1871;return _0x59393f[_0x19ba30['ClientID']]=_0x59393f[_0x19ba30[_0x4c6dd9(0x195)]]||[],_0x59393f[_0x19ba30['ClientID']][_0x4c6dd9(0x190)](_0x19ba30),_0x59393f;},Object[_0x3f0d26(0x150)](null)),projectType=_0x3e35d9[_0x3f0d26(0x177)](function(_0x4d1eeb,_0x5f5564){var _0x2711b3=_0x3f0d26;return _0x4d1eeb[_0x5f5564[_0x2711b3(0x1c3)]]=_0x4d1eeb[_0x5f5564['TechnologyUsed']]||[],_0x4d1eeb[_0x5f5564[_0x2711b3(0x1c3)]][_0x2711b3(0x190)](_0x5f5564),_0x4d1eeb;},Object[_0x3f0d26(0x150)](null));var _0x59a75b;_0x59a75b=_0x3e35d9[_0x3f0d26(0x177)](function(_0x5b00af,_0x3c43d){var _0x5c02f0=_0x3f0d26;return _0x5b00af[_0x3c43d[_0x5c02f0(0x1a4)]]=_0x5b00af[_0x3c43d['Department_ID']]||[],_0x5b00af[_0x3c43d[_0x5c02f0(0x1a4)]][_0x5c02f0(0x190)](_0x3c43d),_0x5b00af;},Object[_0x3f0d26(0x150)](null));var _0x18815e;_0x18815e=_0x3e35d9[_0x3f0d26(0x177)](function(_0x280838,_0x155161){var _0x54c5b0=_0x3f0d26;return _0x280838[_0x155161[_0x54c5b0(0x18e)]]=_0x280838[_0x155161[_0x54c5b0(0x18e)]]||[],_0x280838[_0x155161[_0x54c5b0(0x18e)]][_0x54c5b0(0x190)](_0x155161),_0x280838;},Object['create'](null));var _0x5cc64a='',_0x404c64='',_0x5b9852='',_0x1b0794;if(_0x3e35d9[_0x3f0d26(0x1d3)]>0x0){for(var _0x34f912 in _0x169073){_0x1b0794=_0x3e35d9[_0x3f0d26(0x146)](function(_0x3036f4){return _0x3036f4['ClientID']==_0x34f912;});var _0x32df4c=0x0,_0x271220=0x0,_0x42d7a0=0x0,_0x3ff124=0x0,_0x321479=0x0,_0xfe1c67=_0x1b0794[_0x3f0d26(0x1d3)],_0x2d4f41;for(var _0x4999f1=0x0;_0x4999f1<_0x1b0794[_0x3f0d26(0x1d3)];_0x4999f1++){var _0x18e08b=_0x1b0794[_0x4999f1][_0x3f0d26(0x1e6)],_0x27514d=_0x1b0794[_0x4999f1][_0x3f0d26(0x1be)][_0x3f0d26(0x148)](0x0,0xa),_0x2f5555=_0x1b0794[_0x4999f1]['ClientID'];_0x27514d=new Date(_0x27514d);const _0x2ed658=_0x27514d[_0x3f0d26(0x1d2)](_0x3f0d26(0x179));var _0x24ba96=new Date();_0x24ba96['setDate'](_0x24ba96['getDate']()-0x1);var _0x3459b3=new Date(_0x24ba96);const _0x47d930=_0x3459b3[_0x3f0d26(0x1d2)](_0x3f0d26(0x179));_0x2d4f41=_0x1b0794[_0x4999f1][_0x3f0d26(0x17a)];if(_0x18e08b==_0x3f0d26(0x1ba))_0x2ed658>=_0x47d930?(_0x32df4c++,cliveCount++):(_0x321479++,coverDue++);else{if(_0x18e08b==_0x3f0d26(0x1f2))_0x271220++,cCompleteCount++;else{if(_0x18e08b==_0x3f0d26(0x1e8))_0x42d7a0++,cTerminateCount++;else _0x18e08b==_0x3f0d26(0x1ae)&&(_0x3ff124++,cOnHoldCount++);}}}_0x5cc64a+=_0x3f0d26(0x186)+_0x2d4f41+_0x3f0d26(0x1d9)+_0x2f5555+_0x3f0d26(0x1db)+_0x321479+'</td><td\x20onclick=\x22commonFilter('+_0x2f5555+_0x3f0d26(0x160)+_0x32df4c+_0x3f0d26(0x1d9)+_0x2f5555+',\x27Completed\x27,2)\x22\x20class=\x22clickable\x22>'+_0x271220+'</td><td\x20onclick=\x22commonFilter('+_0x2f5555+_0x3f0d26(0x1e0)+_0x3ff124+_0x3f0d26(0x1d9)+_0x2f5555+',\x27Terminated\x27,2)\x22\x20class=\x22clickable\x22>'+_0x42d7a0+_0x3f0d26(0x1d9)+_0x2f5555+_0x3f0d26(0x1c9)+_0xfe1c67+_0x3f0d26(0x196),totalLive+=_0x32df4c,totalOverView+=_0x321479,totalTerminate+=_0x42d7a0,totalOnHold+=_0x3ff124,totalComplete+=_0x271220;}var _0x502236='';for(var _0x34f912 in _0x59a75b){department=_0x3e35d9[_0x3f0d26(0x146)](function(_0x5b7659){var _0x2712ce=_0x3f0d26;return _0x5b7659[_0x2712ce(0x1a4)]==_0x34f912;});var _0x32df4c=0x0,_0x271220=0x0,_0x42d7a0=0x0,_0x3ff124=0x0,_0x321479=0x0,_0xfe1c67=department[_0x3f0d26(0x1d3)],_0x44d8c0;for(var _0x4999f1=0x0;_0x4999f1<department[_0x3f0d26(0x1d3)];_0x4999f1++){var _0x18e08b=department[_0x4999f1][_0x3f0d26(0x1e6)],_0x27514d=department[_0x4999f1]['PlanedEndDate1'];_0x27514d=_0x27514d[_0x3f0d26(0x148)](0x0,0xa);const _0xce0382=new Date(_0x27514d);var _0x52bb2d=department[_0x4999f1]['Department_ID'];const _0x249594=new Date(CurrentDate);_0x44d8c0=department[_0x4999f1][_0x3f0d26(0x156)];_0x44d8c0!=_0x502236&&(DeptName['push']({'DepartmetName':_0x44d8c0,'TotelCount':_0xfe1c67}),_0x502236=_0x44d8c0);if(_0x18e08b==_0x3f0d26(0x1ba))_0xce0382>_0x249594?(_0x32df4c++,dliveCount++):(_0x321479++,doverDue++);else{if(_0x18e08b=='Completed')_0x271220++,dCompleteCount++;else{if(_0x18e08b=='Terminated')_0x42d7a0++,dTerminateCount++;else _0x18e08b==_0x3f0d26(0x1ae)&&(_0x3ff124++,dOnHoldCount++);}}}_0xfe1c67!=0x0&&(_0x404c64+=_0x3f0d26(0x186)+_0x44d8c0+'</td><td\x20onclick=\x22commonFilter('+_0x52bb2d+_0x3f0d26(0x1a2)+_0x321479+_0x3f0d26(0x1d9)+_0x52bb2d+_0x3f0d26(0x1b5)+_0x32df4c+'</td><td\x20onclick=\x22commonFilter('+_0x52bb2d+',\x27Completed\x27,3)\x22\x20class=\x22clickable\x22>'+_0x271220+_0x3f0d26(0x1d9)+_0x52bb2d+_0x3f0d26(0x1c4)+_0x3ff124+_0x3f0d26(0x1d9)+_0x52bb2d+_0x3f0d26(0x1da)+_0x42d7a0+_0x3f0d26(0x1d9)+_0x52bb2d+_0x3f0d26(0x167)+_0xfe1c67+_0x3f0d26(0x196));}for(var _0x34f912 in _0x18815e){Program=_0x3e35d9['filter'](function(_0x2adebc){var _0x201638=_0x3f0d26;return _0x2adebc[_0x201638(0x18e)]==_0x34f912;});var _0x32df4c=0x0,_0x271220=0x0,_0x42d7a0=0x0,_0x3ff124=0x0,_0x321479=0x0,_0xfe1c67=Program['length'],_0x21a1db,_0x357b56=0x0;for(var _0x4999f1=0x0;_0x4999f1<Program['length'];_0x4999f1++){var _0x18e08b=Program[_0x4999f1]['Status'],_0x53a96b=Program[_0x4999f1]['ProgramID'],_0x27514d=Program[_0x4999f1][_0x3f0d26(0x1be)];_0x27514d=_0x27514d[_0x3f0d26(0x148)](0x0,0xa);const _0x223161=new Date(_0x27514d),_0x13656e=new Date(CurrentDate);_0x21a1db=Program[_0x4999f1]['ProgramName'];if(_0x21a1db!=''){if(_0x18e08b==_0x3f0d26(0x1ba))_0x223161>_0x13656e?(_0x32df4c++,pliveCount++):(_0x321479++,poverDue++);else{if(_0x18e08b==_0x3f0d26(0x1f2))_0x271220++,pCompleteCount++;else{if(_0x18e08b=='Terminated')_0x42d7a0++,pTerminateCount++;else _0x18e08b==_0x3f0d26(0x1ae)&&(_0x3ff124++,pOnHoldCount++);}}_0x21a1db==''&&(_0x21a1db=_0x3f0d26(0x1b3));}}if(_0xfe1c67!=0x0&&_0x21a1db!=''){if(_0x21a1db[_0x3f0d26(0x1d3)]>0xa){}programNameArr[_0x3f0d26(0x190)]({'ProgramName':_0x21a1db,'TotelCount':_0xfe1c67,'OnHoldCount':_0x3ff124,'TerminateCount':_0x42d7a0,'CompleteCount':_0x271220,'overDue':_0x321479,'liveCount':_0x32df4c}),_0x5b9852+=_0x3f0d26(0x186)+_0x21a1db+_0x3f0d26(0x1d9)+_0x53a96b+',\x27overDue\x27,1)\x22\x20class=\x22clickable\x22>'+_0x321479+_0x3f0d26(0x1d9)+_0x53a96b+_0x3f0d26(0x194)+_0x32df4c+_0x3f0d26(0x1d9)+_0x53a96b+_0x3f0d26(0x1b9)+_0x271220+_0x3f0d26(0x1d9)+_0x53a96b+_0x3f0d26(0x1ad)+_0x3ff124+_0x3f0d26(0x1d9)+_0x53a96b+_0x3f0d26(0x174)+_0x42d7a0+_0x3f0d26(0x1d9)+_0x53a96b+_0x3f0d26(0x17c)+_0xfe1c67+_0x3f0d26(0x196);}}var _0x15cbd2='';_0x15cbd2+=_0x3f0d26(0x1b6)+totalOverView+_0x3f0d26(0x19c)+totalLive+_0x3f0d26(0x169),_0x15cbd2+='<td\x20onclick=\x22commonFilter(0,\x27Completed\x27,0)\x22\x20style=\x22width:20%\x22><h3>Completed</h3><div\x20class=\x22completedcount\x20clickable\x22>'+totalComplete+_0x3f0d26(0x169),_0x15cbd2+=_0x3f0d26(0x180)+totalOnHold+_0x3f0d26(0x169),_0x15cbd2+=_0x3f0d26(0x1ca)+totalTerminate+_0x3f0d26(0x1ce);}else _0x5cc64a+='<tr><td>No\x20records\x20founds\x20!</td></tr>';$(_0x3f0d26(0x1eb))[_0x3f0d26(0x163)](_0x5cc64a),$(_0x3f0d26(0x1d4))[_0x3f0d26(0x163)](_0x404c64),$(_0x3f0d26(0x1e1))[_0x3f0d26(0x163)](_0x5b9852),$('#tblTotalCount')['append'](_0x15cbd2),console[_0x3f0d26(0x1b4)](programNameArr),programNameArr[_0x3f0d26(0x1d3)]<0xa&&(showTotal=programNameArr[_0x3f0d26(0x1d3)]);}function drawChart(){var _0xa1e842=a11_0x4a89fa,_0x35293a=google[_0xa1e842(0x137)][_0xa1e842(0x166)]([[_0xa1e842(0x1bc),_0xa1e842(0x1ec)],['Overdue',totalOverView],[_0xa1e842(0x1ba),totalLive],['Completed',totalComplete],['Terminated',totalTerminate],[_0xa1e842(0x15e),totalOnHold]]),_0x3533c3={'pieHole':0.3,'slices':{0x0:{'color':_0xa1e842(0x1b2)},0x1:{'color':_0xa1e842(0x1d7)},0x2:{'color':_0xa1e842(0x1ed)},0x3:{'color':_0xa1e842(0x1b1)},0x4:{'color':_0xa1e842(0x135)}}},_0x2c7e35=new google[(_0xa1e842(0x137))][(_0xa1e842(0x1bf))](document['getElementById'](_0xa1e842(0x153)));_0x2c7e35[_0xa1e842(0x168)](_0x35293a,_0x3533c3);}function drawChartDepartmrnt(){var _0x3e5580=a11_0x4a89fa,_0x4a22da=[[_0x3e5580(0x1bc),'Percentage']],_0x3db525=0x0,_0x29a444;for(var _0x2002df in projectType){_0x29a444=g_Items[_0x3e5580(0x146)](function(_0x10d0ac){var _0x14b605=_0x3e5580;return _0x10d0ac[_0x14b605(0x1c3)]==_0x2002df;});if(_0x2002df==0x0)_0x2002df=_0x3e5580(0x1b3);var _0x4ba12f=_0x2002df,_0xa5f0e=_0x29a444[_0x3e5580(0x1d3)];_0x4a22da[_0x3e5580(0x190)]([_0x4ba12f,_0xa5f0e]);}var _0x4938ac=google[_0x3e5580(0x137)][_0x3e5580(0x166)](_0x4a22da),_0x462230={},_0x354eb2=new google['visualization'][(_0x3e5580(0x1bf))](document[_0x3e5580(0x1bb)]('pieChartDepartments'));_0x354eb2['draw'](_0x4938ac,_0x462230),$(function(){var _0x57917a=_0x3e5580;window['matchMedia'](_0x57917a(0x15a))['matches']&&($('svg')[_0x57917a(0x1ab)]('viewBox'),$(_0x57917a(0x142))[_0x57917a(0x19a)](function(){var _0x2194c4=_0x57917a;$(this)[0x0][_0x2194c4(0x19d)](_0x2194c4(0x1bd),_0x2194c4(0x14c));}));});}var count=0x0,showTotal=0xa;function drawChartProgram(){var _0x328f9c=a11_0x4a89fa,_0x321ddc=[['Program','Live',_0x328f9c(0x1f2),_0x328f9c(0x140),'Terminated',_0x328f9c(0x1ee),{'role':_0x328f9c(0x1e7)}]],_0x2935cd=0x0;programNameArr['sort'](function(_0x2487bd,_0x2e9b66){var _0x3a93e0=_0x328f9c,_0x5cd62c=_0x2487bd[_0x3a93e0(0x145)],_0x4c030a=_0x2e9b66[_0x3a93e0(0x145)];if(_0x5cd62c<_0x4c030a)return-0x1;if(_0x5cd62c>_0x4c030a)return 0x1;return 0x0;});if(showTotal!=0x0){for(var _0x1249da=count;_0x1249da<showTotal;_0x1249da++){_0x321ddc[_0x328f9c(0x190)]([programNameArr[_0x1249da]['ProgramName'],programNameArr[_0x1249da][_0x328f9c(0x188)],programNameArr[_0x1249da][_0x328f9c(0x1a7)],programNameArr[_0x1249da][_0x328f9c(0x14f)],programNameArr[_0x1249da]['TerminateCount'],programNameArr[_0x1249da]['OnHoldCount'],'']),_0x2935cd+=0x1;};}else _0x321ddc['push'](['No\x20data',0x0,0x0,0x0,0x0,0x0,'']);var _0x58b50d=google['visualization'][_0x328f9c(0x166)](_0x321ddc),_0x4a2294={'width':'100%','height':'100%','titleTextStyle':{},'bar':{'groupWidth':_0x328f9c(0x172)},'legend':_0x328f9c(0x1aa),'bars':_0x328f9c(0x1c2),'axes':{'x':{0x0:{'side':_0x328f9c(0x152),'label':_0x328f9c(0x1ec)}}},'colors':['#088bd7',_0x328f9c(0x1ed),'#ff0000',_0x328f9c(0x1b1),_0x328f9c(0x135)],'isStacked':!![],'showRowNumber':!![],'page':'enable','pageSize':0xa,'pagingSymbols':{'prev':_0x328f9c(0x164),'next':_0x328f9c(0x16b)},'pagingButtonsConfiguration':_0x328f9c(0x13b)},_0x3c582d=new google[(_0x328f9c(0x137))][(_0x328f9c(0x144))](document[_0x328f9c(0x1bb)](_0x328f9c(0x15b)));_0x3c582d[_0x328f9c(0x168)](_0x58b50d,_0x4a2294),programNameArr[_0x328f9c(0x1d3)]>0xa&&(showTotal<programNameArr[_0x328f9c(0x1d3)]?$(_0x328f9c(0x1b0))[_0x328f9c(0x1a0)]():$(_0x328f9c(0x1b0))[_0x328f9c(0x1e9)]()),count==0x0?$(_0x328f9c(0x182))[_0x328f9c(0x1e9)]():$(_0x328f9c(0x182))['show'](),$('#overlaysearch')[_0x328f9c(0x149)]();}function deshboardEvent(){var _0x3a0d0a=a11_0x4a89fa;$('#nextside')[_0x3a0d0a(0x1a1)](function(){var _0x537620=_0x3a0d0a;showTotal>=0xa&&(showTotal=showTotal+0xa,count=count+0xa,programNameArr['length']<showTotal&&(showTotal=programNameArr['length']),$('#pieChartProgram')[_0x537620(0x18d)](),google[_0x537620(0x16d)][_0x537620(0x1e5)](drawChartProgram));}),$('#prevside')[_0x3a0d0a(0x1a1)](function(){var _0x396111=_0x3a0d0a;showTotal==programNameArr[_0x396111(0x1d3)]&&(showTotal=count+0xa),showTotal>0xa&&(showTotal=showTotal-0xa,count=count-0xa,$(_0x396111(0x173))['empty'](),google[_0x396111(0x16d)]['setOnLoadCallback'](drawChartProgram));});}function a11_0x5302(){var _0x38f6a3=['empty','ProgramID','2113440kGXJVX','push','#tblDepartmentGroup','<div\x20class=\x22d-flex\x20mt5\x22><label\x20class=\x22lable-view-name\x22>Program:</label><div>','</div>',',\x27Live\x27,1)\x22\x20class=\x22clickable\x22>','ClientID','</td></tr>','\x20<td><p\x20class=\x22m-0\x20mb-10\x22\x20style=\x22color:#ff0000\x22>','ItemID','#tblClientGroup','each','</p>','</div></td><td\x20onclick=\x22commonFilter(0,\x27Live\x27,0)\x22\x20style=\x22width:20%\x22><h3>Live</h3><div\x20class=\x22livecount\x20clickable\x22>','setAttribute','&ProjectID=','\x20<h3\x20class=\x22member-name\x20text-ellipsis\x22>','show','click',',\x27overDue\x27,3)\x22\x20class=\x22clickable\x22>','#tbodyDepartment','Department_ID','</p></div></div></td>','ClientOrder','CompleteCount','#tblProgramGroup','find','none','removeAttr','196324rLpiTx',',\x27OnHold\x27,1)\x22\x20class=\x22clickable\x22>','OnHold','\x22></div>','#nextside','orange','#ff0000','Other','log',',\x27Live\x27,3)\x22\x20class=\x22clickable\x22>','<tr><td\x20style=\x22width:20%\x22><h3>Overdue</h3><div\x20class=\x22overduecount\x20clickable\x22\x20onclick=\x22commonFilter(0,\x27overDue\x27,0)\x22>','</div></div></td>','localeCompare',',\x27Completed\x27,1)\x22\x20class=\x22clickable\x22>','Live','getElementById','Projects','viewBox','PlanedEndDate1','PieChart','toISOString','appendTo','vertical','TechnologyUsed',',\x27OnHold\x27,3)\x22\x20class=\x22clickable\x22>','/Pages/ViewProjectDetails.aspx?WebAppId=','\x20<div\x20class=\x22progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x22>','Departmentorder','439242AOfpeF',',\x27All\x27,2)\x22\x20class=\x22clickable\x22>','<td\x20onclick=\x22commonFilter(0,\x27Terminated\x27,0)\x22\x20style=\x22width:20%\x22><h3>Terminated</h3><div\x20class=\x22terminatedcount\x20clickable\x22>','#tbodyProgram','\x20\x20<div\x20class=\x22progress-bar\x20progress-bar-success\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','%;\x22>','</div></td></tr>','\x20<p\x20class=\x22m-0\x20font-12\x22>Due\x20:<span\x20style=\x22margin-left:\x205px;\x22>','\x20\x20<div\x20class=\x22progress-bar\x20progress-bar-danger\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','<div\x20class=\x22progress-bar\x20progress-bar-info\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','format','length','#tblDepartmentGroup\x20tbody','descending','460724WPHUyG','#088bd7','\x20<p\x20class=\x22m-0\x20font-12\x22\x20style=\x22color:#ff0000\x20!important\x22>Due\x20:<span\x20style=\x22margin-left:\x205px;\x22>','</td><td\x20onclick=\x22commonFilter(',',\x27Terminated\x27,3)\x22\x20class=\x22clickable\x22>',',\x27overDue\x27,2)\x22\x20class=\x22clickable\x22>','\x20\x20<div\x20class=\x22progress-bar\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','4069650HMqchg','\x20<p\x20class=\x22m-0\x20font-12\x22\x20style=\x22color:#ff0000\x20!important\x22>Due\x20:<span\x20style=\x22margin-left:\x205px;\x22>\x20','<tr><td><a\x20href=\x27',',\x27OnHold\x27,2)\x22\x20class=\x22clickable\x22>','#tblProgramGroup\x20tbody','asc','</span></p>','#Departmentorder','setOnLoadCallback','Status','annotation','Terminated','hide','desc','#tblClientGroup\x20tbody','Percentage','#039b03','On-hold','<div\x20class=\x22d-flex\x20mt5\x22><label\x20class=\x22lable-view-name\x22>Reference:</label><div>','children','\x20<td><p\x20class=\x22m-0\x20mb-10\x20color-blue\x22>','Completed','grey','%\x22>','visualization','text','\x20<td><p\x20class=\x22m-0\x20mb-10\x20color-green\x22>','<td><div\x20class=\x22project-manager-card\x22><div\x20class=\x22project-manager-card-head\x22><img\x20src=\x22','auto','employeePicURL','ProgramOrder','\x20\x20</div></div></td></tr>','</h3>','Overdue','\x20<div\x20class=\x22progress\x20custom-progress\x20progress-danger\x20m-0\x20mt-4\x22>','svg','All','ColumnChart','ProgramName','filter','#tbodyClient','substring','fadeOut','%;\x20background:#ff0000\x20!important\x22>','protocol','120\x2010\x20160\x20180','\x20<p\x20class=\x22m-0\x20font-12\x22>Due\x20:<span\x20\x20style=\x22margin-left:\x205px;\x22>','#ProgramOrder','overDue','create','ManagerName','top','pieChartClients','%;\x20background:#000000ab\x22>','\x20<div\x20class=\x22progress\x20custom-progress\x20progress-info\x20m-0\x20mt-4\x22>','DepartmentName','36QTXlHp','ProjectCode','ascending','(min-width:\x201360px)','pieChartProgram','<p\x20class=\x22member-email\x20text-ellipsis\x22>','sort','On-Hold','30ysNUaP',',\x27Live\x27,2)\x22\x20class=\x22clickable\x22>','<div\x20class=\x22project-manager-card-body\x22>','<div\x20class=\x22progress-bar\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','append','prev','ready','arrayToDataTable',',\x27All\x27,3)\x22\x20class=\x22clickable\x22>','draw','</div></td>','#programlisting','next','td:first','charts','corechart','location','\x20<div\x20class=\x22progress\x20custom-progress\x20progress-warning\x20m-0\x20mt-4\x22>','host','75%','#pieChartProgram',',\x27Terminated\x27,1)\x22\x20class=\x22clickable\x22>','183880Jiihnz','#commonTbody','reduce','35ojyikA','yyyy/MM/dd','ClientName','val',',\x27All\x27,1)\x22\x20class=\x22clickable\x22>','value','PlanedEndDate','\x20<td><p\x20class=\x22m-0\x20mb-10\x22\x20style=\x22color:#000000ab\x22>','<td\x20onclick=\x22commonFilter(0,\x27OnHold\x27,0)\x22\x20style=\x22width:20%\x22><h3>On-Hold</h3><div\x20class=\x22onholdcount\x20clickable\x22>','#ClientOrder','#prevside','444487RdYRsW','</div></div>','&ProjectName=','<tr><td>','\x20<div\x20class=\x22project-manager-card-body-info\x20text-ellipsis\x22>','liveCount','</a>','modal','siteServerRelativeUrl','load'];a11_0x5302=function(){return _0x38f6a3;};return a11_0x5302();}function sortClient(){var _0x3dfa2d=a11_0x4a89fa,_0x308049=$(_0x3dfa2d(0x199)),_0x5b6dad=$(_0x3dfa2d(0x147));_0x5b6dad[_0x3dfa2d(0x1a9)]('tr')[_0x3dfa2d(0x15d)](function(_0x574801,_0x2fe787){var _0x7b7c10=_0x3dfa2d;return $('#ClientOrder')[_0x7b7c10(0x17b)]()==_0x7b7c10(0x1e2)?$('td:first',_0x574801)['text']()[_0x7b7c10(0x1b8)]($('td:first',_0x2fe787)['text']()):$('td:first',_0x2fe787)['text']()[_0x7b7c10(0x1b8)]($(_0x7b7c10(0x16c),_0x574801)[_0x7b7c10(0x138)]());})['appendTo'](_0x5b6dad);var _0x455c8c=$(_0x3dfa2d(0x181))[_0x3dfa2d(0x17b)]();_0x455c8c==_0x3dfa2d(0x1e2)&&(document[_0x3dfa2d(0x1bb)](_0x3dfa2d(0x1a6))[_0x3dfa2d(0x17d)]=_0x3dfa2d(0x1ea)),_0x455c8c==_0x3dfa2d(0x1ea)&&(document['getElementById'](_0x3dfa2d(0x1a6))[_0x3dfa2d(0x17d)]=_0x3dfa2d(0x1e2));}function a11_0x1871(_0x1547c7,_0x7eedd8){var _0x530267=a11_0x5302();return a11_0x1871=function(_0x18715c,_0x4ae42a){_0x18715c=_0x18715c-0x135;var _0x3cc3d6=_0x530267[_0x18715c];return _0x3cc3d6;},a11_0x1871(_0x1547c7,_0x7eedd8);}function sortDepartment(){var _0x431f53=a11_0x4a89fa,_0x5e43f3=$(_0x431f53(0x191)),_0x46bcaa=$(_0x431f53(0x1a3));_0x46bcaa[_0x431f53(0x1a9)]('tr')[_0x431f53(0x15d)](function(_0x1e63ec,_0x14a193){var _0x151a18=_0x431f53;return $(_0x151a18(0x1e4))['val']()==_0x151a18(0x1e2)?$(_0x151a18(0x16c),_0x1e63ec)[_0x151a18(0x138)]()[_0x151a18(0x1b8)]($('td:first',_0x14a193)[_0x151a18(0x138)]()):$(_0x151a18(0x16c),_0x14a193)['text']()['localeCompare']($(_0x151a18(0x16c),_0x1e63ec)[_0x151a18(0x138)]());})[_0x431f53(0x1c1)](_0x46bcaa);var _0x1897cb=$(_0x431f53(0x1e4))[_0x431f53(0x17b)]();_0x1897cb=='asc'&&(document[_0x431f53(0x1bb)](_0x431f53(0x1c7))[_0x431f53(0x17d)]=_0x431f53(0x1ea)),_0x1897cb==_0x431f53(0x1ea)&&(document[_0x431f53(0x1bb)](_0x431f53(0x1c7))[_0x431f53(0x17d)]=_0x431f53(0x1e2));}function sort_programName(){var _0x50481e=a11_0x4a89fa,_0x46aefd=$(_0x50481e(0x1a8)),_0xd9f30f=$(_0x50481e(0x1cb));_0xd9f30f[_0x50481e(0x1a9)]('tr')[_0x50481e(0x15d)](function(_0x58e808,_0x436af1){var _0x23a603=_0x50481e;return $(_0x23a603(0x14e))[_0x23a603(0x17b)]()==_0x23a603(0x1e2)?$(_0x23a603(0x16c),_0x58e808)[_0x23a603(0x138)]()[_0x23a603(0x1b8)]($(_0x23a603(0x16c),_0x436af1)[_0x23a603(0x138)]()):$(_0x23a603(0x16c),_0x436af1)[_0x23a603(0x138)]()[_0x23a603(0x1b8)]($(_0x23a603(0x16c),_0x58e808)[_0x23a603(0x138)]());})[_0x50481e(0x1c1)](_0xd9f30f);var _0x193c5c=$(_0x50481e(0x14e))['val']();_0x193c5c=='asc'&&(document[_0x50481e(0x1bb)](_0x50481e(0x13d))[_0x50481e(0x17d)]=_0x50481e(0x1ea)),_0x193c5c==_0x50481e(0x1ea)&&(document[_0x50481e(0x1bb)]('ProgramOrder')['value']='asc');}var direction=a11_0x4a89fa(0x159);function sortTable(_0x4514e6,_0x7e917a){var _0x3f1505=a11_0x4a89fa,_0x4514e6='#'+_0x4514e6,_0x5a62e1=$(_0x4514e6)[_0x3f1505(0x1a9)]('tr');_0x5a62e1['sort'](function(_0x42f1bf,_0x22bb62){var _0x1c7171=_0x3f1505,_0x14d5bf=$(_0x42f1bf)[_0x1c7171(0x1f0)]('td')['eq'](_0x7e917a)[_0x1c7171(0x138)](),_0x1d7ae3=$(_0x22bb62)['children']('td')['eq'](_0x7e917a)['text']();return _0x14d5bf*=0x1,_0x1d7ae3*=0x1,direction==_0x1c7171(0x159)?_0x14d5bf<_0x1d7ae3?-0x1:_0x14d5bf>_0x1d7ae3?0x1:0x0:_0x14d5bf<_0x1d7ae3?0x1:_0x14d5bf>_0x1d7ae3?-0x1:0x0;}),$['each'](_0x5a62e1,function(_0x3215b0,_0x43844d){var _0x457fa3=_0x3f1505;$(_0x4514e6)[_0x457fa3(0x163)](_0x43844d);}),direction==_0x3f1505(0x159)?direction=_0x3f1505(0x1d5):direction=_0x3f1505(0x159);}function commonFilter(_0x2d13c4,_0x2c6908,_0x10c28d){var _0x5da05b=a11_0x4a89fa,_0x12797f=_0x2c6908;_0x2c6908==_0x5da05b(0x14f)&&(_0x2c6908=_0x5da05b(0x1ba));var _0x24bfd6='',_0x2c057b;$(_0x5da05b(0x16a))[_0x5da05b(0x18a)](_0x5da05b(0x1a0));if(_0x2c6908==_0x5da05b(0x143)&&_0x10c28d==0x1)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x4decfd){var _0x326dce=_0x5da05b;return _0x4decfd[_0x326dce(0x18e)]==parseInt(_0x2d13c4);});else{if(_0x2c6908==_0x5da05b(0x143)&&_0x10c28d==0x2)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x6af9f5){var _0x579d63=_0x5da05b;return _0x6af9f5[_0x579d63(0x195)]==parseInt(_0x2d13c4);});else{if(_0x2c6908==_0x5da05b(0x143)&&_0x10c28d==0x3)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x237966){var _0x709a2b=_0x5da05b;return _0x237966[_0x709a2b(0x1a4)]==parseInt(_0x2d13c4);});else{if(_0x2c6908!=_0x5da05b(0x143)&&_0x10c28d==0x1)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x1ad760){var _0xd50459=_0x5da05b;return _0x1ad760[_0xd50459(0x18e)]==parseInt(_0x2d13c4)&&_0x1ad760[_0xd50459(0x1e6)]==_0x2c6908;});else{if(_0x2c6908!=_0x5da05b(0x143)&&_0x10c28d==0x2)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x3cdf3e){var _0xc52bd5=_0x5da05b;return _0x3cdf3e[_0xc52bd5(0x195)]==parseInt(_0x2d13c4)&&_0x3cdf3e[_0xc52bd5(0x1e6)]==_0x2c6908;});else{if(_0x2c6908!='All'&&_0x10c28d==0x3)_0x2c057b=g_Items[_0x5da05b(0x146)](function(_0x228c3c){var _0x24f58b=_0x5da05b;return _0x228c3c[_0x24f58b(0x1a4)]==parseInt(_0x2d13c4)&&_0x228c3c[_0x24f58b(0x1e6)]==_0x2c6908;});else{if(_0x2d13c4==0x0&&_0x10c28d==0x0)_0x2c057b=g_Items['filter'](function(_0x2ccaa8){var _0x264173=_0x5da05b;return _0x2ccaa8[_0x264173(0x1e6)]==_0x2c6908;});}}}}}}if(_0x2c057b[_0x5da05b(0x1d3)]>0x0)for(var _0x4de4a6=0x0;_0x4de4a6<_0x2c057b['length'];_0x4de4a6++){var _0x2d3bb9=_0x2c057b[_0x4de4a6]['ProjectName'],_0x1da756=_0x2c057b[_0x4de4a6][_0x5da05b(0x158)],_0x4d6dfb=_0x2c057b[_0x4de4a6][_0x5da05b(0x145)],_0x5cc540=_0x2c057b[_0x4de4a6][_0x5da05b(0x151)],_0xee3f39=_0x2c057b[_0x4de4a6][_0x5da05b(0x1e6)],_0x5aa9f9=_0x2c057b[_0x4de4a6][_0x5da05b(0x198)],_0x351fd6=_0x2c057b[_0x4de4a6]['ManagerEMail'],_0x58a470=_0x2c057b[_0x4de4a6][_0x5da05b(0x13c)],_0x507f03=_0x2c057b[_0x4de4a6][_0x5da05b(0x1ec)],_0x591987=_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)],_0x1908ac=_0x2c057b[_0x4de4a6][_0x5da05b(0x17e)];if(_0x12797f==_0x5da05b(0x14f)){if(_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)][_0x5da05b(0x148)](0x0,0xa)<CurrentDate){_0x24bfd6+=_0x5da05b(0x1df)+Location+_0x5da05b(0x1c5)+Logged_CompanyId+_0x5da05b(0x19e)+_0x5aa9f9+_0x5da05b(0x185)+_0x2d3bb9+'\x27>'+_0x2d3bb9+_0x5da05b(0x189),_0x24bfd6+='<div\x20class=\x22d-flex\x20mt5\x22><label\x20class=\x22lable-view-name\x22>Reference:</label><div>'+_0x1da756+_0x5da05b(0x184),_0x24bfd6+=_0x5da05b(0x192)+_0x4d6dfb+_0x5da05b(0x1b7),_0x24bfd6+='<td><div\x20class=\x22project-manager-card\x22><div\x20class=\x22project-manager-card-head\x22><img\x20src=\x22'+_0x58a470+'\x22></div>',_0x24bfd6+=_0x5da05b(0x161),_0x24bfd6+=_0x5da05b(0x187),_0x24bfd6+=_0x5da05b(0x19f)+_0x5cc540+_0x5da05b(0x13f),_0x24bfd6+=_0x5da05b(0x193),_0x24bfd6+=_0x5da05b(0x15c)+_0x351fd6+_0x5da05b(0x1a5);if(_0x2c6908==_0x5da05b(0x1ba))_0x24bfd6+=_0x5da05b(0x1f1)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x1de)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x155),_0x507f03>=0x64?_0x24bfd6+=_0x5da05b(0x1cc)+_0x507f03+_0x5da05b(0x136):_0x507f03<0x64&&_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)]['substring'](0x0,0xa)>CurrentDate?_0x24bfd6+=_0x5da05b(0x1d1)+_0x507f03+_0x5da05b(0x136):_0x24bfd6+=_0x5da05b(0x162)+_0x507f03+_0x5da05b(0x14a);else{if(_0x2c6908=='Completed')_0x24bfd6+=_0x5da05b(0x139)+_0xee3f39+'</p>',_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+'</span></p>',_0x24bfd6+=_0x5da05b(0x1c6),_0x24bfd6+=_0x5da05b(0x1cc)+_0x507f03+_0x5da05b(0x1cd);else{if(_0x2c6908==_0x5da05b(0x1ae))_0x24bfd6+=_0x5da05b(0x17f)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+='\x20<p\x20class=\x22m-0\x20font-12\x22>Due\x20:<span\x20style=\x22margin-left:\x205px;\x22>'+_0x1908ac+'</span></p>',_0x24bfd6+=_0x5da05b(0x170),_0x24bfd6+=_0x5da05b(0x1dc)+_0x507f03+_0x5da05b(0x154);else _0x2c6908==_0x5da05b(0x1e8)&&(_0x24bfd6+=_0x5da05b(0x197)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x141),_0x24bfd6+=_0x5da05b(0x1d0)+_0x507f03+_0x5da05b(0x14a));}}_0x24bfd6+='\x20\x20</div></div></td></tr>';}}else{if(_0x2c6908==_0x5da05b(0x1ba)&&_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)][_0x5da05b(0x148)](0x0,0xa)>CurrentDate){_0x24bfd6+='<tr><td><a\x20href=\x27'+Location+_0x5da05b(0x1c5)+Logged_CompanyId+_0x5da05b(0x19e)+_0x5aa9f9+_0x5da05b(0x185)+_0x2d3bb9+'\x27>'+_0x2d3bb9+_0x5da05b(0x189),_0x24bfd6+=_0x5da05b(0x1ef)+_0x1da756+_0x5da05b(0x184),_0x24bfd6+='<div\x20class=\x22d-flex\x20mt5\x22><label\x20class=\x22lable-view-name\x22>Program:</label><div>'+_0x4d6dfb+_0x5da05b(0x1b7),_0x24bfd6+=_0x5da05b(0x13a)+_0x58a470+_0x5da05b(0x1af),_0x24bfd6+=_0x5da05b(0x161),_0x24bfd6+=_0x5da05b(0x187),_0x24bfd6+=_0x5da05b(0x19f)+_0x5cc540+'</h3>',_0x24bfd6+=_0x5da05b(0x193),_0x24bfd6+=_0x5da05b(0x15c)+_0x351fd6+_0x5da05b(0x1a5);if(_0xee3f39==_0x5da05b(0x1ba))_0x24bfd6+=_0x5da05b(0x1f1)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+='\x20<div\x20class=\x22progress\x20custom-progress\x20progress-info\x20m-0\x20mt-4\x22>',_0x507f03>=0x64?_0x24bfd6+=_0x5da05b(0x1cc)+_0x507f03+'%\x22>':_0x507f03<0x64&&_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)]['substring'](0x0,0xa)>CurrentDate?_0x24bfd6+=_0x5da05b(0x1d1)+_0x507f03+_0x5da05b(0x136):_0x24bfd6+='<div\x20class=\x22progress-bar\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:'+_0x507f03+_0x5da05b(0x14a);else{if(_0xee3f39==_0x5da05b(0x1f2))_0x24bfd6+=_0x5da05b(0x139)+_0xee3f39+'</p>',_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+='\x20<div\x20class=\x22progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x22>',_0x24bfd6+=_0x5da05b(0x1cc)+_0x507f03+_0x5da05b(0x1cd);else{if(_0xee3f39==_0x5da05b(0x1ae))_0x24bfd6+='\x20<td><p\x20class=\x22m-0\x20mb-10\x22\x20style=\x22color:#000000ab\x22>'+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x170),_0x24bfd6+=_0x5da05b(0x1dc)+_0x507f03+_0x5da05b(0x154);else _0xee3f39==_0x5da05b(0x1e8)&&(_0x24bfd6+=_0x5da05b(0x197)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x141),_0x24bfd6+=_0x5da05b(0x1d0)+_0x507f03+_0x5da05b(0x14a));}}_0x24bfd6+=_0x5da05b(0x13e);}if(_0x2c6908!=_0x5da05b(0x1ba)){_0x24bfd6+=_0x5da05b(0x1df)+Location+_0x5da05b(0x1c5)+Logged_CompanyId+_0x5da05b(0x19e)+_0x5aa9f9+_0x5da05b(0x185)+_0x2d3bb9+'\x27>'+_0x2d3bb9+_0x5da05b(0x189),_0x24bfd6+=_0x5da05b(0x1ef)+_0x1da756+_0x5da05b(0x184),_0x24bfd6+='<div\x20class=\x22d-flex\x20mt5\x22><label\x20class=\x22lable-view-name\x22>Program:</label><div>'+_0x4d6dfb+'</div></div></td>',_0x24bfd6+=_0x5da05b(0x13a)+_0x58a470+'\x22></div>',_0x24bfd6+='<div\x20class=\x22project-manager-card-body\x22>',_0x24bfd6+=_0x5da05b(0x187),_0x24bfd6+=_0x5da05b(0x19f)+_0x5cc540+_0x5da05b(0x13f),_0x24bfd6+=_0x5da05b(0x193),_0x24bfd6+=_0x5da05b(0x15c)+_0x351fd6+_0x5da05b(0x1a5);if(_0xee3f39==_0x5da05b(0x1ba))_0x24bfd6+=_0x5da05b(0x1f1)+_0xee3f39+'</p>',_0x2c057b[_0x4de4a6][_0x5da05b(0x1be)][_0x5da05b(0x148)](0x0,0xa)<CurrentDate?(_0x24bfd6+=_0x5da05b(0x1d8)+_0x1908ac+'</span></p>',_0x24bfd6+=_0x5da05b(0x155)):(_0x24bfd6+='\x20<p\x20class=\x22m-0\x20font-12\x22>Due\x20:<span\x20style=\x22margin-left:\x205px;\x22>'+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x155)),_0x507f03>=0x64?_0x24bfd6+='\x20\x20<div\x20class=\x22progress-bar\x20progress-bar-success\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:'+_0x507f03+_0x5da05b(0x136):_0x507f03<0x64&&_0x2c057b[_0x4de4a6]['PlanedEndDate1'][_0x5da05b(0x148)](0x0,0xa)>CurrentDate?_0x24bfd6+='<div\x20class=\x22progress-bar\x20progress-bar-info\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:'+_0x507f03+_0x5da05b(0x136):_0x24bfd6+=_0x5da05b(0x162)+_0x507f03+'%;\x20background:#ff0000\x20!important\x22>';else{if(_0xee3f39==_0x5da05b(0x1f2))_0x24bfd6+=_0x5da05b(0x139)+_0xee3f39+'</p>',_0x24bfd6+=_0x5da05b(0x1cf)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x1c6),_0x24bfd6+=_0x5da05b(0x1cc)+_0x507f03+_0x5da05b(0x1cd);else{if(_0xee3f39=='OnHold')_0x24bfd6+='\x20<td><p\x20class=\x22m-0\x20mb-10\x22\x20style=\x22color:#000000ab\x22>'+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x14d)+_0x1908ac+'</span></p>',_0x24bfd6+=_0x5da05b(0x170),_0x24bfd6+=_0x5da05b(0x1dc)+_0x507f03+'%;\x20background:#000000ab\x22>';else _0xee3f39==_0x5da05b(0x1e8)&&(_0x24bfd6+=_0x5da05b(0x197)+_0xee3f39+_0x5da05b(0x19b),_0x24bfd6+=_0x5da05b(0x14d)+_0x1908ac+_0x5da05b(0x1e3),_0x24bfd6+=_0x5da05b(0x141),_0x24bfd6+='\x20\x20<div\x20class=\x22progress-bar\x20progress-bar-danger\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:'+_0x507f03+'%;\x20background:#ff0000\x20!important\x22>');}}_0x24bfd6+=_0x5da05b(0x13e);}}}else _0x24bfd6+='<tr><td>No\x20records\x20found</td></tr>';$(_0x5da05b(0x176))['empty'](),$(_0x5da05b(0x176))[_0x5da05b(0x163)](_0x24bfd6);}
+var projectar=[];
+var Location = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+var  NextURL ='';
+var today = new Date();
+var CurrentDate=today.toISOString().substring(0, 10);
+$(document).ready(function(){
+    //getItemsWithQueryItem();
+    //getProjectByGroup();    
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    google.setOnLoadCallback(drawChartDepartmrnt);
+    //google.setOnLoadCallback(drawChartProgram);
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChartProgram);
+     sortClient()
+     deshboardEvent();
+     sortDepartment()
+     sort_programName()
+})                   
+var programNameArr= new Array();
+var DeptName=new Array();
+var projectType;
+var g_Items;                  
+var totalLive=0,totalOnHold=0,totalComplete=0,totalOverView=0,totalTerminate=0;
+var dliveCount=0,dCompleteCount=0,dTerminateCount=0,dOnHoldCount=0,doverDue=0
+var cliveCount=0,cCompleteCount=0,cTerminateCount=0,cOnHoldCount=0,coverDue=0
+var pliveCount=0,pCompleteCount=0,pTerminateCount=0,pOnHoldCount=0,poverDue=0
+function getProjectByGroup(items)
+{debugger
+		
+			//var items=projectListItemArr; 
+	        g_Items=items;
+			var arrClient;
+			arrClient= items.reduce(function (r, a) {
+		        r[a.ClientID] = r[a.ClientID] || [];
+		        r[a.ClientID].push(a);
+		        return r;
+	    	}, Object.create(null));
+	    	
+	    	projectType= items.reduce(function (r, a) {
+		        r[a.TechnologyUsed] = r[a.TechnologyUsed] || [];
+		        r[a.TechnologyUsed].push(a);
+		        return r;
+	    	}, Object.create(null));
+	    	//console.log(projectType);
+	    	var arrDepartment;
+			arrDepartment= items.reduce(function (r, a) {
+		        r[a.Department_ID] = r[a.Department_ID] || [];
+		        r[a.Department_ID].push(a);
+		        return r;
+	    	}, Object.create(null));
+	    	var arrProgram;
+			arrProgram= items.reduce(function (r, a) {
+		        r[a.ProgramID] = r[a.ProgramID] || [];
+		        r[a.ProgramID].push(a);
+		        return r;
+	    	}, Object.create(null));					
+			var htmlClient='';
+			var htmlDepartmet='';
+			var htmlProgram='';			
+			var client;
+		    if(items.length>0){
+		    
+		    /*arrClient=arrClient.sort(function (a,b){		    
+		    var aClient = a.ClientName.toLowerCase();
+            var bClient = b.ClientName.toLowerCase();
+            return ((aClient < bClient ) ? -1 : ((aClient > bClient ) ? 1 : 0));
+		    
+		    });*/
+		    
+		      for(var obj in arrClient){
+		           client = items.filter(function (e) {
+					    return e.ClientID==obj;
+				 });
+				 var liveCount=0,CompleteCount=0,TerminateCount=0,OnHoldCount=0,overDue=0;
+				 var TotlaCount=client.length;
+				 var ClientName;
+				 for(var j=0; j<client.length;j++){
+				    var status=client[j].Status;
+				    var PlanedEndDate=client[j].PlanedEndDate1.substring(0,10);
+				    var ClientID=client[j].ClientID;
+				    PlanedEndDate=new Date(PlanedEndDate)
+				    const d=PlanedEndDate.format('yyyy/MM/dd');
+				    
+				    //const d = new Date(PlanedEndDate);
+				    var today = new Date();
+				    today.setDate(today.getDate()-1);
+				    var Currdate=new Date(today)
+				    const c=Currdate.format('yyyy/MM/dd')
+				    //const c=new Date(Currdate);
+				    
+				    ClientName=client[j].ClientName
+				    if(status=='Live')
+				     {
+				       if(d>=c){				        
+				        liveCount++;
+				        cliveCount++;
+				       }
+				       else{
+				        overDue++;
+				        coverDue++;
+				        
+				       }
+				     }
+				     else if(status=='Completed')
+				     {
+				       CompleteCount++;
+				       cCompleteCount++;
+				     }
+				     else if(status=='Terminated')
+				     {
+				       TerminateCount++;
+				       cTerminateCount++;
+				     }
+				     else if(status=='OnHold')
+				     {
+				       OnHoldCount++;
+				       cOnHoldCount++;
+				     }
+				     
+				     
+				     				   
+				 }
+				 
+		         htmlClient+='<tr><td>'+ClientName+'</td><td onclick="commonFilter('+ClientID+',\'overDue\',2)" class="clickable">'+overDue+'</td><td onclick="commonFilter('+ClientID+',\'Live\',2)" class="clickable">'+liveCount+'</td><td onclick="commonFilter('+ClientID+',\'Completed\',2)" class="clickable">'+CompleteCount+'</td><td onclick="commonFilter('+ClientID+',\'OnHold\',2)" class="clickable">'+OnHoldCount+'</td><td onclick="commonFilter('+ClientID+',\'Terminated\',2)" class="clickable">'+TerminateCount+'</td><td onclick="commonFilter('+ClientID+',\'All\',2)" class="clickable">'+TotlaCount+'</td></tr>' 
+		         totalLive+=liveCount;
+		         totalOverView+=overDue
+		         totalTerminate+=TerminateCount;
+		         totalOnHold+=OnHoldCount;
+		         totalComplete+=CompleteCount;		         
+		       
+		       }
+		       var deptCheck='';
+		       for(var obj in arrDepartment){
+		           department= items.filter(function (e) {
+					    return e.Department_ID==obj;
+				 });
+				 var liveCount=0,CompleteCount=0,TerminateCount=0,OnHoldCount=0,overDue=0;
+				 var TotlaCount=department.length;
+				 var DepartmetName;
+				 for(var j=0; j<department.length;j++){
+				    var status=department[j].Status;
+				    var PlanedEndDate=department[j].PlanedEndDate1;
+				    PlanedEndDate=PlanedEndDate.substring(0, 10);				    
+				    const d = new Date(PlanedEndDate);
+				    var DepartmentId=department[j].Department_ID;
+				    const c=new Date(CurrentDate);
+				    DepartmetName=department[j].DepartmentName
+				    if(DepartmetName!=deptCheck){
+				     DeptName.push({
+				       DepartmetName:DepartmetName,
+				       TotelCount:TotlaCount
+				     })
+				     deptCheck=DepartmetName;
+				    }
+				    
+				    if(status=='Live')
+				     {
+				       if(d>c){				        
+				        liveCount++;
+				        dliveCount++;
+				       }
+				       else{
+				        overDue++;
+				        doverDue++;
+				        
+				       }
+				     }
+
+				     else if(status=='Completed')
+				     {
+				       CompleteCount++;
+				       dCompleteCount++;
+				     }
+				     else if(status=='Terminated')
+				     {
+				       TerminateCount++;
+				       dTerminateCount++;
+				     }
+				     else if(status=='OnHold')
+				     {
+				       OnHoldCount++;
+				       dOnHoldCount++;
+				     }
+				     
+				     
+				     				   
+				 }
+				 if(TotlaCount!=0){
+		          htmlDepartmet+='<tr><td>'+DepartmetName+'</td><td onclick="commonFilter('+DepartmentId+',\'overDue\',3)" class="clickable">'+overDue+'</td><td onclick="commonFilter('+DepartmentId+',\'Live\',3)" class="clickable">'+liveCount+'</td><td onclick="commonFilter('+DepartmentId+',\'Completed\',3)" class="clickable">'+CompleteCount+'</td><td onclick="commonFilter('+DepartmentId+',\'OnHold\',3)" class="clickable">'+OnHoldCount+'</td><td onclick="commonFilter('+DepartmentId+',\'Terminated\',3)" class="clickable">'+TerminateCount+'</td><td onclick="commonFilter('+DepartmentId+',\'All\',3)" class="clickable">'+TotlaCount+'</td></tr>' 
+		         }
+		         /*totalLive+=liveCount;
+		         totalOverView+=overDue
+		         totalTerminate+=TerminateCount;
+		         totalOnHold+=OnHoldCount;
+		         totalComplete+=CompleteCount;	*/	       
+		       }
+		       
+		       for(var obj in arrProgram){
+		           Program= items.filter(function (e) {
+					    return e.ProgramID==obj;
+				 });
+				 var liveCount=0,CompleteCount=0,TerminateCount=0,OnHoldCount=0,overDue=0;
+				 
+				 var TotlaCount=Program.length;
+				 var ProgramName;
+				 var proCheck=0;
+				 for(var j=0; j<Program.length;j++){
+				    var status=Program[j].Status;
+				    var ProgramID=Program[j].ProgramID;
+				    var PlanedEndDate=Program[j].PlanedEndDate1;
+				    PlanedEndDate=PlanedEndDate.substring(0, 10);
+				    const d = new Date(PlanedEndDate);
+				    const c=new Date(CurrentDate);
+				    ProgramName=Program[j].ProgramName
+				    if(ProgramName!=''){	    
+				    
+				    if(status=='Live')
+				     {
+				       if(d>c){				        
+				        liveCount++;
+				        pliveCount++;
+
+				       }
+				       else{
+				        overDue++;
+				        poverDue++;
+				        
+				       }
+				     }
+
+				     else if(status=='Completed')
+				     {
+				       CompleteCount++;
+				       pCompleteCount++;
+				     }
+				     else if(status=='Terminated')
+				     {
+				       TerminateCount++;
+				       pTerminateCount++;
+				     }
+				     else if(status=='OnHold')
+				     {
+				       OnHoldCount++;
+				       pOnHoldCount++;
+				     }			     
+				     
+				     
+				      if(ProgramName==''){
+				        ProgramName='Other'		         
+				     
+				     }
+				   }
+				     				   
+				 }
+				 if(TotlaCount!=0 && ProgramName!=''){
+				 if(ProgramName.length>10){
+				  //ProgramName=ProgramName.substring(0, 10)+'..'
+				 }
+				 programNameArr.push({
+				       ProgramName:ProgramName,
+				       TotelCount:TotlaCount,
+				       OnHoldCount:OnHoldCount,
+				       TerminateCount:TerminateCount,
+				       CompleteCount:CompleteCount,
+				       overDue :overDue,
+				       liveCount:liveCount
+				     })
+				     //="['"+ProgramName+"','"+TotlaCount+"'],";
+				     //proCheck=ProgramName;
+				    
+		          htmlProgram+='<tr><td>'+ProgramName+'</td><td onclick="commonFilter('+ProgramID+',\'overDue\',1)" class="clickable">'+overDue+'</td><td onclick="commonFilter('+ProgramID+',\'Live\',1)" class="clickable">'+liveCount+'</td><td onclick="commonFilter('+ProgramID+',\'Completed\',1)" class="clickable">'+CompleteCount+'</td><td onclick="commonFilter('+ProgramID+',\'OnHold\',1)" class="clickable">'+OnHoldCount+'</td><td onclick="commonFilter('+ProgramID+',\'Terminated\',1)" class="clickable">'+TerminateCount+'</td><td onclick="commonFilter('+ProgramID+',\'All\',1)" class="clickable">'+TotlaCount+'</td></tr>' 
+		         }
+		         
+		         /*totalLive+=liveCount;
+		         totalOverView+=overDue
+		         totalTerminate+=TerminateCount;
+		         totalOnHold+=OnHoldCount;
+		         totalComplete+=CompleteCount;	*/	       
+		       }
+		       var htmlTotalCount='';
+		       htmlTotalCount+='<tr><td style="width:20%"><h3>Overdue</h3><div class="overduecount clickable" onclick="commonFilter(0,\'overDue\',0)">'+totalOverView+'</div></td><td onclick="commonFilter(0,\'Live\',0)" style="width:20%"><h3>Live</h3><div class="livecount clickable">'+totalLive+'</div></td>'
+			   htmlTotalCount+='<td onclick="commonFilter(0,\'Completed\',0)" style="width:20%"><h3>Completed</h3><div class="completedcount clickable">'+totalComplete+'</div></td>'
+			   htmlTotalCount+='<td onclick="commonFilter(0,\'OnHold\',0)" style="width:20%"><h3>On-Hold</h3><div class="onholdcount clickable">'+totalOnHold+'</div></td>'
+			   htmlTotalCount+='<td onclick="commonFilter(0,\'Terminated\',0)" style="width:20%"><h3>Terminated</h3><div class="terminatedcount clickable">'+totalTerminate+'</div></td></tr>'
+			//var htmlTotalCount='<tr><td>'+totalLive+'</td><td>'+totalOverView+'</td><td>'+totalTerminate+'</td><td>'+totalOnHold+'</td><td>'+totalComplete+'</td></tr>'	
+				
+			}
+	
+			else
+			{
+				htmlClient+= '<tr><td>No records founds !</td></tr>';
+					//$('#tblPrograms tbody').empty();
+					//$('#tblPrograms tbody').append(htmlProgram);
+			}
+			$('#tblClientGroup tbody').append(htmlClient)
+			$('#tblDepartmentGroup tbody').append(htmlDepartmet)
+			$('#tblProgramGroup tbody').append(htmlProgram)
+			$('#tblTotalCount').append(htmlTotalCount) ;
+			console.log(programNameArr);
+			if(programNameArr.length<10){
+			  showTotal=programNameArr.length;
+			}
+	
+		 	
+
+	
+}
+
+
+
+
+function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Projects', 'Percentage'],
+          ['Overdue', totalOverView],
+          ['Live', totalLive],
+          ['Completed',  totalComplete],
+          ['Terminated', totalTerminate],
+          ['On-Hold', totalOnHold]
+          
+        ]);
+        
+     
+        var options = {
+          //title: 'My Daily Activities',
+          //tooltip: { trigger: 'none' },
+          pieHole: 0.3,
+          //is3D: true,
+          slices: {0: {color: '#ff0000'}, 1:{color: '#088bd7'}, 2:{color: '#039b03'}, 3: {color: 'orange'}, 4:{color: 'grey'}}
+        };
+
+        var chart1 = new google.visualization.PieChart(document.getElementById('pieChartClients'));
+       // var chart2 = new google.visualization.PieChart(document.getElementById('pieChartDepartment'));
+        //var chart3 = new google.visualization.PieChart(document.getElementById('pieChartProgram'));
+        chart1.draw(data, options);
+        
+        
+       
+        //chart2.draw(data, options);
+        //chart3.draw(data, options);
+}
+
+function drawChartDepartmrnt() {
+
+
+       var arrValues = [['Projects', 'Percentage']]; 
+       var iCnt = 0;
+       var arr;
+       for(var obj in projectType){
+		           arr= g_Items.filter(function (e) {
+					    return e.TechnologyUsed==obj;
+				 });
+	   if(obj==0)obj='Other';
+       var Name=obj;
+       var Total=arr.length;                                 
+       arrValues.push([Name,Total]);
+                    
+                    
+                    
+        }
+        var data = google.visualization.arrayToDataTable(arrValues);
+          /*['Projects', 'Percentage'],
+          ['Overdue', doverDue],
+          ['Live', dliveCount],
+          ['Completed',  dCompleteCount],
+          ['Terminated', dTerminateCount],
+          ['On-Hold', dOnHoldCount]
+          
+        ]);*/
+
+        var options = {
+          //title: 'My Daily Activities',
+          //width:400,
+          //tooltip: { trigger: 'none' },
+          //pieHole: 0.3
+          //height:300
+          //is3D: true,
+          //slices: {0: {color: '#ff0000'}, 1:{color: '#088bd7'}, 2:{color: '#039b03'}, 3: {color: '#dc3912'}, 4:{color: 'grey'}}
+        };
+
+        //var chart1 = new google.visualization.PieChart(document.getElementById('pieChartClient'));
+        var chart2 = new google.visualization.PieChart(document.getElementById('pieChartDepartments'));
+        //var chart3 = new google.visualization.PieChart(document.getElementById('pieChartProgram'));
+        //chart1.draw(data, options);
+        chart2.draw(data, options);
+        //chart3.draw(data, options);
+        
+        
+        $(function(){
+		if (window.matchMedia('(min-width: 1360px)').matches){
+		$('svg').removeAttr('viewBox');
+		$('svg').each(function () { $(this)[0].setAttribute('viewBox', '120 10 160 180')});
+		}
+	 });
+}
+var count=0;
+var showTotal=10;
+function drawChartProgram() {       
+      var arrValues = [['Program', 'Live', 'Completed','Overdue','Terminated', 'On-hold', { role: 'annotation' } ]]; 
+       var iCnt = 0;
+        programNameArr.sort(function(a, b) {
+	      var keyA = a.ProgramName,
+		  keyB = b.ProgramName;
+				  // Compare the 2 dates
+		  if (keyA < keyB) return -1;
+	      if (keyA > keyB) return 1;
+		    return 0;
+		});
+      if(showTotal!=0){
+       for(var i=count;i<showTotal; i++) {
+                    // POPULATE ARRAY WITH THE EXTRACTED DATA.
+                    arrValues.push([programNameArr[i].ProgramName,programNameArr[i].liveCount,programNameArr[i].CompleteCount,programNameArr[i].overDue,programNameArr[i].TerminateCount,programNameArr[i].OnHoldCount,'']);
+                    iCnt += 1;
+                };
+       }
+       else{           
+            arrValues.push(['No data',0,0,0,0,0,'']);
+
+       }
+                
+      var data = google.visualization.arrayToDataTable(arrValues);       
+
+      var options = {
+        //width: 900,
+        //height: 250,
+         width: '100%',
+         height: '100%',
+         /*chartArea: {
+            width: '80%',
+            height: '80%',
+          },*/
+          
+          //backgroundColor: 'transparent',
+          titleTextStyle: {
+             //color: 'black'
+           },
+        //legend: { position: 'top' ,maxLines: 2 },
+        bar: { groupWidth: '75%' },
+        legend: 'none',
+        bars: 'vertical',
+        axes: {
+            x: {
+              0: { side: 'top', label: 'Percentage'} // Top x-axis.
+            }
+          },
+        //color: '#ff0000'}, 1:{color: '#088bd7'}, 2:{color: '#039b03'}, 3: {color: '#dc3912'}, 4:{color: 'grey'}
+        colors: ['#088bd7', '#039b03','#ff0000','orange','grey'],
+        isStacked: true,
+        /*annotations: {
+	    textStyle: {
+	      //fontName: 'Times-Roman',
+	      fontSize: 5
+	      //bold: true,
+	      //italic: true,
+	      // The color of the text.
+	      //color: '#871b47',
+	      // The color of the text outline.
+	      //auraColor: '#d799ae',
+	      // The transparency of the text.
+	      //opacity: 0.8
+	    }
+  },*/
+        
+        showRowNumber: true,
+                page: 'enable',
+                pageSize: 10 ,
+                pagingSymbols: {
+                    prev: 'prev',
+                    next: 'next'
+                },
+                pagingButtonsConfiguration: 'auto'
+        
+      };
+
+        
+        var chart = new google.visualization.ColumnChart(document.getElementById("pieChartProgram"));
+        chart.draw(data, options);
+        
+        if(programNameArr.length>10){
+           if(showTotal<programNameArr.length){
+             $('#nextside').show();            
+            }
+            else{
+               $('#nextside').hide();
+               
+            }        
+          
+        }        
+        if(count==0){           
+          $('#prevside').hide();            
+         }
+        else{
+           $('#prevside').show();
+        }
+        
+           
+           $("#overlaysearch").fadeOut();
+           
+           
+          
+          
+ }
+
+
+function deshboardEvent(){
+ 
+    $('#nextside').click(function(){
+      if(showTotal>=10){       
+        showTotal=(showTotal+10);
+        count=(count+10);
+        if(programNameArr.length<showTotal){
+            showTotal=programNameArr.length;
+        }
+        
+        //alert(showTotal +' ' +count);
+        $('#pieChartProgram').empty();
+        //google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChartProgram);
+
+      }
+      
+    });
+    
+    $('#prevside').click(function(){
+      if(showTotal==programNameArr.length){
+       showTotal=(count+10);
+      }
+    
+      if(showTotal>10){
+        showTotal=(showTotal-10);
+        count=(count-10);
+        
+        //alert(showTotal +' ' +count);
+        $('#pieChartProgram').empty();
+        //google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChartProgram);
+
+      }
+      
+    })
+
+
+}    
+
+
+function sortClient()
+{
+ var table=$('#tblClientGroup');
+ var tbody =$('#tbodyClient');
+
+ tbody.find('tr').sort(function(a, b) 
+ {
+  if($('#ClientOrder').val()=='asc') 
+  {
+   return $('td:first', a).text().localeCompare($('td:first', b).text());
+  }
+  else 
+  {
+   return $('td:first', b).text().localeCompare($('td:first', a).text());
+  }
+		
+ }).appendTo(tbody);
+	
+ var sort_order=$('#ClientOrder').val();
+ if(sort_order=="asc")
+ {
+  document.getElementById("ClientOrder").value="desc";
+ }
+ if(sort_order=="desc")
+ {
+  document.getElementById("ClientOrder").value="asc";
+ }
+}
+
+
+function sortDepartment()
+{
+ var table=$('#tblDepartmentGroup');
+ var tbody =$('#tbodyDepartment');
+
+ tbody.find('tr').sort(function(a, b) 
+ {
+  if($('#Departmentorder').val()=='asc') 
+  {
+   return $('td:first', a).text().localeCompare($('td:first', b).text());
+  }
+  else 
+  {
+   return $('td:first', b).text().localeCompare($('td:first', a).text());
+  }
+		
+ }).appendTo(tbody);
+	
+ var sort_order=$('#Departmentorder').val();
+ if(sort_order=="asc")
+ {
+  document.getElementById("Departmentorder").value="desc";
+ }
+ if(sort_order=="desc")
+ {
+  document.getElementById("Departmentorder").value="asc";
+ }
+}
+       
+       
+       
+function sort_programName()
+{
+ var table=$('#tblProgramGroup');
+ var tbody =$('#tbodyProgram');
+
+ tbody.find('tr').sort(function(a, b) 
+ {
+  if($('#ProgramOrder').val()=='asc') 
+  {
+   return $('td:first', a).text().localeCompare($('td:first', b).text());
+  }
+  else 
+  {
+   return $('td:first', b).text().localeCompare($('td:first', a).text());
+  }
+		
+ }).appendTo(tbody);
+	
+ var sort_order=$('#ProgramOrder').val();
+ if(sort_order=="asc")
+ {
+  document.getElementById("ProgramOrder").value="desc";
+ }
+ if(sort_order=="desc")
+ {
+  document.getElementById("ProgramOrder").value="asc";
+ }
+}
+
+
+
+var direction = "ascending";
+function sortTable(table,n) {                
+     var table='#'+table;
+     var records=$(table).find('tr');
+     records.sort(function (a,b){
+	     var x=$(a).children('td').eq(n).text();
+	     var y=$(b).children('td').eq(n).text();
+	     x*=1;
+	     y*=1;
+	     if(direction=='ascending'){                 
+	         return (x < y)? -1: (x > y ? 1 : 0)
+	     }                
+	     else{return (x < y)? 1: (x > y ? -1 : 0)}           
+    });
+                
+    $.each(records,function (index,row){
+        $(table).append(row);             
+    })                
+    if(direction=='ascending'){
+      direction ='descending';
+    }
+    else{
+       direction ='ascending';
+     }
+                
+}
+
+function commonFilter(itemsId,status,check){
+  var overDue=status;
+  if(status=='overDue'){
+   status='Live';
+  }
+  var items='';
+  var records;
+  $('#programlisting').modal('show');
+  if(status=='All' && check==1){
+    records= g_Items.filter(function (e) { 
+		   return  (e.ProgramID == parseInt(itemsId))   
+   });
+  }
+  else if(status=='All' && check==2){
+    records= g_Items.filter(function (e) { 
+		   return  (e.ClientID== parseInt(itemsId))   
+   });
+  }
+ else if(status=='All' && check==3){
+    records= g_Items.filter(function (e) { 
+		   return  (e.Department_ID== parseInt(itemsId))   
+   });
+  }
+   else if(status!='All' && check==1)
+    records= g_Items.filter(function (e) { 
+		   return  (e.ProgramID == parseInt(itemsId) && e.Status ==status)   
+	});
+   else if(status!='All' && check==2)
+     records= g_Items.filter(function (e) { 
+		   return  (e.ClientID== parseInt(itemsId) && e.Status ==status)   
+	});
+	else if(status!='All' && check==3)
+     records= g_Items.filter(function (e) { 
+		   return  (e.Department_ID== parseInt(itemsId) && e.Status ==status)   
+	});
+	else if(itemsId==0 && check==0)
+     records= g_Items.filter(function (e) { 
+		   return  (e.Status ==status)   
+	});
+	
+	
+if(records.length>0){
+  for(var i=0;i<records.length;i++){
+    var ProjectName=records[i].ProjectName;
+    var ProjectCode=records[i].ProjectCode;
+    var ProgramName=records[i].ProgramName;
+    var ManagerName=records[i].ManagerName;
+    var PStatus=records[i].Status;
+    var ItemID=records[i].ItemID;
+    var ManagerEmail=records[i].ManagerEMail;
+    var managerPhoto=records[i].employeePicURL;
+    var Percentage=records[i].Percentage;    
+    var PlanedEndDate1=records[i].PlanedEndDate1;
+    var PlanedEndDate =records[i].PlanedEndDate;
+     if(overDue=='overDue'){
+        if(records[i].PlanedEndDate1.substring(0, 10)<CurrentDate){
+           items+="<tr><td><a href='" + Location + "/Pages/ViewProjectDetails.aspx?WebAppId=" + Logged_CompanyId+ "&ProjectID=" +ItemID + "&ProjectName=" +ProjectName+ "'>"+ProjectName+"</a>"
+           items+='<div class="d-flex mt5"><label class="lable-view-name">Reference:</label><div>'+ProjectCode+'</div></div>'
+           items+='<div class="d-flex mt5"><label class="lable-view-name">Program:</label><div>'+ProgramName+'</div></div></td>'
+                items+='<td><div class="project-manager-card"><div class="project-manager-card-head"><img src="'+managerPhoto+'"></div>'
+                    items+='<div class="project-manager-card-body">'
+                     items+=' <div class="project-manager-card-body-info text-ellipsis">'
+                       items+=' <h3 class="member-name text-ellipsis">'+ManagerName+'</h3>'
+                      items+='</div>'
+                      items+='<p class="member-email text-ellipsis">'+ManagerEmail+'</p></div></div></td>'
+                      if(status=='Live'){
+	                     items+=' <td><p class="m-0 mb-10 color-blue">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12" style="color:#ff0000 !important">Due :<span style="margin-left: 5px;"> '+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-info m-0 mt-4">'
+	                     if(Percentage>=100){
+	                      items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'
+	                      }
+	                      else{
+	                        if(Percentage<100 && records[i].PlanedEndDate1.substring(0, 10)>CurrentDate){
+						       items+='<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'			
+						     }
+						     else{
+						       items+='<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'			
+						     }
+	                      }
+	                      
+                      }
+                      else if(status=='Completed'){
+	                     items+=' <td><p class="m-0 mb-10 color-green">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-success m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%;">'
+                      }
+                      else if(status=='OnHold'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#000000ab">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-warning m-0 mt-4">'
+	                     items+='  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#000000ab">'
+                      }
+                      else if(status=='Terminated'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#ff0000">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-danger m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'
+                      }
+                     items+='  </div></div></td></tr>'
+     
+      }
+     
+     }
+     else{
+          if(status=='Live' && records[i].PlanedEndDate1.substring(0, 10)>CurrentDate){ 
+          items+="<tr><td><a href='" + Location + "/Pages/ViewProjectDetails.aspx?WebAppId=" + Logged_CompanyId+ "&ProjectID=" +ItemID + "&ProjectName=" +ProjectName+ "'>"+ProjectName+"</a>"
+          items+='<div class="d-flex mt5"><label class="lable-view-name">Reference:</label><div>'+ProjectCode+'</div></div>'
+          items+='<div class="d-flex mt5"><label class="lable-view-name">Program:</label><div>'+ProgramName+'</div></div></td>'
+                items+='<td><div class="project-manager-card"><div class="project-manager-card-head"><img src="'+managerPhoto+'"></div>'
+                    items+='<div class="project-manager-card-body">'
+                     items+=' <div class="project-manager-card-body-info text-ellipsis">'
+                       items+=' <h3 class="member-name text-ellipsis">'+ManagerName+'</h3>'
+                      items+='</div>'
+                      items+='<p class="member-email text-ellipsis">'+ManagerEmail+'</p></div></div></td>'
+                      if(PStatus=='Live'){
+	                     items+=' <td><p class="m-0 mb-10 color-blue">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-info m-0 mt-4">'
+	                     if(Percentage>=100){
+	                      items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'
+	                      }
+	                      else{
+	                        if(Percentage<100 && records[i].PlanedEndDate1.substring(0, 10)>CurrentDate){
+						       items+='<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'			
+						     }
+						     else{
+						       items+='<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'			
+						     }
+	                      }
+	                      
+                      }
+                      else if(PStatus=='Completed'){
+	                     items+=' <td><p class="m-0 mb-10 color-green">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-success m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%;">'
+                      }
+                      else if(PStatus=='OnHold'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#000000ab">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-warning m-0 mt-4">'
+	                     items+='  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#000000ab">'
+                      }
+                      else if(PStatus=='Terminated'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#ff0000">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-danger m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'
+                      }
+                     items+='  </div></div></td></tr>'
+                  }
+            if(status!='Live'){ 
+               items+="<tr><td><a href='" + Location + "/Pages/ViewProjectDetails.aspx?WebAppId=" + Logged_CompanyId+ "&ProjectID=" +ItemID + "&ProjectName=" +ProjectName+ "'>"+ProjectName+"</a>"
+                items+='<div class="d-flex mt5"><label class="lable-view-name">Reference:</label><div>'+ProjectCode+'</div></div>'
+                items+='<div class="d-flex mt5"><label class="lable-view-name">Program:</label><div>'+ProgramName+'</div></div></td>'
+                items+='<td><div class="project-manager-card"><div class="project-manager-card-head"><img src="'+managerPhoto+'"></div>'
+                    items+='<div class="project-manager-card-body">'
+                     items+=' <div class="project-manager-card-body-info text-ellipsis">'
+                       items+=' <h3 class="member-name text-ellipsis">'+ManagerName+'</h3>'
+                      items+='</div>'
+                      items+='<p class="member-email text-ellipsis">'+ManagerEmail+'</p></div></div></td>'
+                      if(PStatus=='Live'){
+	                     items+=' <td><p class="m-0 mb-10 color-blue">'+PStatus+'</p>'
+	                     if(records[i].PlanedEndDate1.substring(0, 10)<CurrentDate){
+		                     items+=' <p class="m-0 font-12" style="color:#ff0000 !important">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+		                     items+=' <div class="progress custom-progress progress-info m-0 mt-4">'
+	                     }
+	                     else{
+	                        items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+		                     items+=' <div class="progress custom-progress progress-info m-0 mt-4">'
+	                     }
+	                     if(Percentage>=100){
+	                      items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'
+	                      }
+	                      else{
+	                        if(Percentage<100 && records[i].PlanedEndDate1.substring(0, 10)>CurrentDate){
+						       items+='<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%">'			
+						     }
+						     else{
+						       items+='<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'			
+						     }
+	                      }
+	                      
+                      }
+                      else if(PStatus=='Completed'){
+	                     items+=' <td><p class="m-0 mb-10 color-green">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-success m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%;">'
+                      }
+                      else if(PStatus=='OnHold'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#000000ab">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span  style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-warning m-0 mt-4">'
+	                     items+='  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#000000ab">'
+                      }
+                      else if(PStatus=='Terminated'){
+	                     items+=' <td><p class="m-0 mb-10" style="color:#ff0000">'+PStatus+'</p>'
+	                     items+=' <p class="m-0 font-12">Due :<span  style="margin-left: 5px;">'+PlanedEndDate +'</span></p>'
+	                     items+=' <div class="progress custom-progress progress-danger m-0 mt-4">'
+	                     items+='  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+Percentage+'%; background:#ff0000 !important">'
+                      }
+                      items+='  </div></div></td></tr>'
+                }   
+                  
+   
+       }
+    }
+  }
+  else{
+  items+='<tr><td>No records found</td></tr>'
+  }
+  $('#commonTbody').empty();
+  $('#commonTbody').append(items);
+
+
+
+
+}             
+             

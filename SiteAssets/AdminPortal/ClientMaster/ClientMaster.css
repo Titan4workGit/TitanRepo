@@ -320,48 +320,13 @@ width:auto;
 
 /* footer fix bottom */
 body #s4-workspace {
+  height: 100% !important;
   min-height: 100% !important;
 }
 #s4-bodyContainer {
   min-height: -webkit-calc( 100vh - 38px );
   min-height: calc( 100vh - 38px );
 }
-
-#modalAddNewClient .modal-dialog{
-  margin:7px auto;	
-}
-
-#modalAddNewClient .modal-body {
-    max-height: calc(100vh - 168px);
-    overflow: auto;
-    margin: 0 3px;
-    padding: 10px 16px !important;
-}
-
-
-#modalAddNewClient .modal-body::-webkit-scrollbar-thumb {
-border: 2px solid transparent;
-border-radius: 10px;
-background-color: #666;
-background-clip: content-box;
--webkit-background-clip: content-box;
-
-}
-
-
-#modalAddNewClient .modal-body::-webkit-scrollbar-thumb:hover {
-background-color: #666;;
-background-clip: border-box;
--webkit-background-clip: border-box;
-
-}
-
-#modalAddNewClient .modal-body::-webkit-scrollbar {
-width: 8px;
-height: 8px;
-background-color: transparent;
-}
-
 
 @media screen and (max-width: 767px) {
   .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {

@@ -1,1 +1,1497 @@
-(function(_0x5415de,_0x2575ae){var _0x359735=a1_0x2bac,_0x19ddc2=_0x5415de();while(!![]){try{var _0x4b3a14=-parseInt(_0x359735(0x180))/0x1+-parseInt(_0x359735(0x1f4))/0x2*(parseInt(_0x359735(0x251))/0x3)+-parseInt(_0x359735(0x22a))/0x4*(parseInt(_0x359735(0x15c))/0x5)+-parseInt(_0x359735(0x268))/0x6*(parseInt(_0x359735(0x270))/0x7)+parseInt(_0x359735(0x1f1))/0x8+-parseInt(_0x359735(0x202))/0x9*(parseInt(_0x359735(0x254))/0xa)+parseInt(_0x359735(0x1fb))/0xb*(parseInt(_0x359735(0x1d7))/0xc);if(_0x4b3a14===_0x2575ae)break;else _0x19ddc2['push'](_0x19ddc2['shift']());}catch(_0x3516a9){_0x19ddc2['push'](_0x19ddc2['shift']());}}}(a1_0x4514,0x30aab),$(function(){var _0x3df44a=a1_0x2bac;$(_0x3df44a(0x24b))[_0x3df44a(0x247)]({'dateFormat':_0x3df44a(0x1bd)});}));var totalrow=0x0,tblcol=[],IsTotalneed=![],ResultData='',FormulaColumnListTbl=[],ColumnTotalList=[],arrNumValtbl=[],arrDateTbl=[],arrMandatetbl=[],arrcoldefval=[],QueryTableData=[],ColumnValuesTotal=[];function appenedtableformat(_0x2afe43,_0x282164,_0x5ae4f8,_0x2f9959,_0x375a26){var _0x401026=a1_0x2bac,_0x47e8ac=_0x401026(0x1bc)+_0x2afe43+_0x401026(0x272);GetData(_0x47e8ac)['then'](function(_0x1a96ed){var _0x4bc9fb=_0x401026;if(_0x1a96ed['d'][_0x4bc9fb(0x1a7)]['length']>0x0){var _0x2751c6='';tblcol[_0x4bc9fb(0x260)]({'tblId':_0x2afe43,'data':_0x1a96ed['d'][_0x4bc9fb(0x1a7)]}),ResultData=_0x1a96ed['d'][_0x4bc9fb(0x1a7)];var _0x95bae9='<div\x20class=\x22col-xs-12\x20text-center\x20dyamicTableboxes\x22\x20id=\x22tbldiv_'+_0x2afe43+'\x22><div\x20class\x20=\x20\x22wrapping_dynamic\x22\x20id=\x22tbldivWrap_'+_0x2afe43+'\x22>';_0x95bae9+=_0x4bc9fb(0x16e)+_0x2afe43+_0x4bc9fb(0x257),_0x95bae9+=_0x4bc9fb(0x1e0),$['map'](_0x1a96ed['d']['results'],function(_0x1e7996){var _0x57d51f=_0x4bc9fb;_0x95bae9+=_0x57d51f(0x211)+_0x1e7996[_0x57d51f(0x199)]+_0x57d51f(0x15a)+_0x1e7996[_0x57d51f(0x244)]+'\x27>'+_0x1e7996['Title']+_0x57d51f(0x1b2);}),_0x95bae9+=_0x4bc9fb(0x18f)+_0x2afe43+_0x4bc9fb(0x241),_0x95bae9+=_0x4bc9fb(0x1ca),QueryTableData=[];if(window[_0x4bc9fb(0x23b)][_0x4bc9fb(0x16b)][_0x4bc9fb(0x1dd)]('?')>-0x1){var _0x197f5a=window[_0x4bc9fb(0x22e)](titanForWork[_0x4bc9fb(0x17d)](_0x4bc9fb(0x1b1)));if(_0x197f5a==_0x4bc9fb(0x236)||_0x197f5a==_0x4bc9fb(0x1fe)){var _0x3f7da4=0x0,_0x3c03ad=window[_0x4bc9fb(0x22e)](titanForWork[_0x4bc9fb(0x17d)](_0x4bc9fb(0x246))),_0x5a1722=_0x4bc9fb(0x1d3)+_0x3c03ad+_0x4bc9fb(0x274)+_0x2afe43+_0x4bc9fb(0x1a2);QueryTableData=RequestData(_0x5a1722);if(QueryTableData[_0x4bc9fb(0x18a)]>0x0)for(i=0x0;i<QueryTableData[_0x4bc9fb(0x18a)];i++){var _0x169a3b=0x1;i>0x0&&(_0x169a3b=i+0x1,_0x95bae9+=_0x4bc9fb(0x1bf)+_0x2afe43+'_'+_0x169a3b+'\x27>',_0x95bae9+='<td\x20class=\x27Colsequence\x27\x20value=\x27'+_0x169a3b+_0x4bc9fb(0x1e6)+_0x169a3b+_0x4bc9fb(0x26b));for(x=0x0;x<ResultData[_0x4bc9fb(0x18a)];x++){ResultData[x][_0x4bc9fb(0x199)]==!![]&&arrMandatetbl['push']({'tblId':_0x2afe43,'colname':ResultData[x][_0x4bc9fb(0x242)],'Title':ResultData[x][_0x4bc9fb(0x244)],'Mandatory':ResultData[x][_0x4bc9fb(0x199)]});_0x95bae9+=_0x4bc9fb(0x1de)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x23c)+ResultData[x][_0x4bc9fb(0x199)]+'\x27\x20alerttext=\x27'+ResultData[x][_0x4bc9fb(0x244)]+'\x27\x20coltype=\x27'+ResultData[x][_0x4bc9fb(0x239)]+'\x27>';var _0x3f7da4=0x0,_0x59b034='';_0x59b034=ColumnValueByColumnNameforTable(QueryTableData,ResultData[x]['ColumnName'],i);_0x59b034==null?_0x2751c6='':_0x2751c6=_0x59b034;if(ResultData[x][_0x4bc9fb(0x25b)]==!![]&&ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x21f)){var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];ColumnValuesTotal['push']({'Column':_0x2d9dff,'Total':ColumnValueByColumnNameforTable(QueryTableData,ResultData[x][_0x4bc9fb(0x242)],i),'TableId':ResultData[x]['SetupIDId'],'ColIndex':x});}if(ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x175)||ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x1aa)){arrDateTbl['push']({'tId':_0x2afe43,'title':ResultData[x][_0x4bc9fb(0x244)],'col':ResultData[x]['ColumnName'],'validation':ResultData[x][_0x4bc9fb(0x24f)]});var _0x1ff94e=i+0x1;_0x2751c6==_0x4bc9fb(0x1f5)&&(_0x2751c6=''),_0x5ae4f8==''?_0x95bae9+=_0x4bc9fb(0x15b)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6[_0x4bc9fb(0x174)]()+_0x4bc9fb(0x240):_0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20\x22\x20\x20\x20data-original-value=\x22'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20id=\x22tbl_'+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+'\x22></td>';}else{if(ResultData[x][_0x4bc9fb(0x239)]=='Checkbox'){if(_0x2751c6==0x0||_0x2751c6==null||_0x2751c6=='')var _0x51fce1='';else var _0x51fce1=_0x4bc9fb(0x25d);_0x95bae9+=_0x4bc9fb(0x21c)+_0x51fce1+_0x4bc9fb(0x1c9)+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20\x20id=\x22tbl_'+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x]['ColumnName']+'\x22\x20'+_0x51fce1+'>';}else{if(ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x19c)){var _0x2513dd='';if(_0x2751c6!=null&&_0x2751c6!='')for(u=0x0;u<_0x2751c6[_0x4bc9fb(0x1a7)][_0x4bc9fb(0x18a)];u++){var _0x3293d6=_spPageContextInfo[_0x4bc9fb(0x18c)]+_0x4bc9fb(0x1fa)+_0x2751c6[_0x4bc9fb(0x1a7)][u]['Id']+_0x4bc9fb(0x262),_0x18d01c=RequestGetdata(_0x3293d6);_0x5ae4f8==''?(_0x2513dd=_0x18d01c[0x0][_0x4bc9fb(0x208)],_0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20\x22\x20\x20\x20data-original-value=\x22'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20id=\x22tbl_'+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2513dd+'\x22></td>'):(_0x2513dd=_0x18d01c[0x0][_0x4bc9fb(0x1f8)],_0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20\x22\x20\x20\x20data-original-value=\x22'+ResultData[x]['ColumnName']+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2513dd+_0x4bc9fb(0x240));}}else{if(ResultData[x]['ColumnType']=='Number'){ResultData[x]['MinNumber']!=null&&ResultData[x][_0x4bc9fb(0x24a)]!=null&&arrNumValtbl['push']({'tId':_0x2afe43,'title':ResultData[x][_0x4bc9fb(0x244)],'col':ResultData[x]['ColumnName'],'min':ResultData[x][_0x4bc9fb(0x191)],'max':ResultData[x][_0x4bc9fb(0x24a)]});var _0x24aaaa='',_0x363e44='';if(ResultData[x]['NumberValidation']==_0x4bc9fb(0x1ac))_0x24aaaa+=_0x4bc9fb(0x17b),_0x363e44+='maxlength=\x2715\x27';else ResultData[x]['NumberValidation']==_0x4bc9fb(0x245)&&(_0x363e44+=_0x4bc9fb(0x227),_0x24aaaa+=_0x4bc9fb(0x219));if(ResultData[x][_0x4bc9fb(0x25b)]==!![]){ColumnTotalList['push']({'Setup':_0x2afe43,'ColumnName':ResultData[x][_0x4bc9fb(0x244)]}),IsTotalneed=!![];var _0x3b4a3f=ResultData[x][_0x4bc9fb(0x244)];_0x3b4a3f=_0x3b4a3f['replace']('%',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1c4)]('\x20',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)](/[\])}[{(]/g,'');var _0x1d7c69=![],_0x287431;if(ResultData[x]['CalculatedValue']==!![]&&ResultData[x][_0x4bc9fb(0x242)]==_0x4bc9fb(0x23d)){FormulaColumnListTbl['push']({'Setup':_0x2afe43,'Formula':ResultData[x][_0x4bc9fb(0x26c)],'ColumnName':_0x3b4a3f,'Rel':'tbl_'+_0x3b4a3f}),_0x1d7c69=!![],_0x287431=ResultData[x][_0x4bc9fb(0x26c)];if(_0x287431!=null){_0x287431=_0x287431[_0x4bc9fb(0x1b5)](',');if(_0x287431['length']>0x0){var _0x342d72='';for(var _0x281270=0x0;_0x281270<_0x287431['length'];_0x281270++){_0x342d72=_0x342d72+ColumnValueByColumnNameforTableEquation(QueryTableData,_0x287431[_0x281270],i);}if(isMathExpression(_0x342d72)==!![]){var _0x4a91e0=math[_0x4bc9fb(0x170)](_0x342d72);_0x4a91e0=_0x4a91e0['toFixed'](0x2),_0x4a91e0=_0x4a91e0['toString'](),_0x95bae9+=_0x4bc9fb(0x183)+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x4a91e0+_0x4bc9fb(0x18d)+ResultData[x]['Title']+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1e2)+_0x2afe43+_0x4bc9fb(0x1e2)+IsTotalneed+_0x4bc9fb(0x25e)+_0x2afe43+'\x27,\x27'+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20readonly\x20></td>';var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];ResultData[x][_0x4bc9fb(0x25b)]==!![]&&ColumnValuesTotal[_0x4bc9fb(0x260)]({'Column':_0x2d9dff,'Total':_0x4a91e0,'TableId':QueryTableData[i][_0x4bc9fb(0x23f)],'ColIndex':x});}else _0x95bae9+='<td>'+_0x342d72+_0x4bc9fb(0x26b);}}}else _0x95bae9+=_0x4bc9fb(0x19b)+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+_0x4bc9fb(0x18d)+ResultData[x][_0x4bc9fb(0x244)]+'\x27,\x27'+_0x287431+'\x27,\x27'+_0x2afe43+_0x4bc9fb(0x1e2)+IsTotalneed+_0x4bc9fb(0x201)+_0x2afe43+_0x4bc9fb(0x1e2)+ResultData[x][_0x4bc9fb(0x244)]+'\x27,\x27'+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x240);}else{if(ResultData[x][_0x4bc9fb(0x23d)]==!![]&&ResultData[x][_0x4bc9fb(0x242)]==_0x4bc9fb(0x23d)){var _0x3b4a3f=ResultData[x][_0x4bc9fb(0x244)];_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)]('%',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1c4)]('\x20',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)](/[\])}[{(]/g,''),FormulaColumnListTbl[_0x4bc9fb(0x260)]({'Setup':_0x2afe43,'Formula':ResultData[x][_0x4bc9fb(0x26c)],'ColumnName':_0x3b4a3f,'Rel':_0x4bc9fb(0x1e1)+_0x3b4a3f}),_0x1d7c69=!![],_0x287431=ResultData[x][_0x4bc9fb(0x26c)];if(_0x287431!=null){_0x287431=_0x287431[_0x4bc9fb(0x1b5)](',');if(_0x287431['length']>0x0){var _0x342d72='';for(var _0x281270=0x0;_0x281270<_0x287431[_0x4bc9fb(0x18a)];_0x281270++){_0x342d72=_0x342d72+ColumnValueByColumnNameforTableEquation(QueryTableData,_0x287431[_0x281270],i);}if(isMathExpression(_0x342d72)==!![]){var _0x4a91e0=math['evaluate'](_0x342d72);_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x22f)](0x2),_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x174)](),_0x95bae9+='<input\x20type=\x22number\x22\x20class=\x22form-control\x20NeedTotal\x20'+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x4a91e0+_0x4bc9fb(0x18d)+ResultData[x]['Title']+_0x4bc9fb(0x1e2)+_0x287431+'\x27,\x27'+_0x2afe43+_0x4bc9fb(0x1e2)+IsTotalneed+_0x4bc9fb(0x25e)+_0x2afe43+_0x4bc9fb(0x1e2)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x]['ColumnName']+'\x22\x20readonly\x20></td>';var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];ResultData[x][_0x4bc9fb(0x25b)]==!![]&&ColumnValuesTotal[_0x4bc9fb(0x260)]({'Column':_0x2d9dff,'Total':_0x4a91e0,'TableId':QueryTableData[i]['SetupIDId'],'ColIndex':x});}else _0x95bae9+='<td>'+_0x342d72+'</td>';}}}else _0x95bae9+=_0x4bc9fb(0x162)+_0x363e44+'\x20'+_0x24aaaa+'\x20style=\x22text-align:\x20right\x22\x20data-original-value=\x22'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+_0x4bc9fb(0x19f)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1a9)+_0x2afe43+'\x27)\x22></td>';}}else{if(ResultData[x]['ColumnType']=='Multiline')_0x95bae9+=_0x4bc9fb(0x1a6)+_0x5ae4f8+_0x4bc9fb(0x1ce)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x24c)+_0x2751c6+_0x4bc9fb(0x194)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x27>'+_0x2751c6+'</div></td>';else{var _0x22f66a=ResultData[x][_0x4bc9fb(0x1be)]?ResultData[x][_0x4bc9fb(0x1be)]:_0x4bc9fb(0x209);_0x95bae9+=_0x4bc9fb(0x255)+_0x5ae4f8+_0x4bc9fb(0x1df)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x25f)+_0x22f66a+'\x22></td>';}}}}}}_0x95bae9+=_0x4bc9fb(0x212);}else{for(x=0x0;x<ResultData[_0x4bc9fb(0x18a)];x++){_0x95bae9+=_0x4bc9fb(0x1de)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x23c)+ResultData[x][_0x4bc9fb(0x199)]+_0x4bc9fb(0x15a)+ResultData[x]['Title']+_0x4bc9fb(0x1fd)+ResultData[x]['ColumnType']+'\x27>';var _0x3f7da4=0x0,_0x59b034='';_0x59b034==null?_0x2751c6='':_0x2751c6=_0x59b034;if(ResultData[x][_0x4bc9fb(0x25b)]==!![]&&ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x21f))var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];if(ResultData[x]['ColumnType']==_0x4bc9fb(0x175)||ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x1aa))arrDateTbl[_0x4bc9fb(0x260)]({'tId':_0x2afe43,'title':ResultData[x][_0x4bc9fb(0x244)],'col':ResultData[x][_0x4bc9fb(0x242)],'validation':ResultData[x][_0x4bc9fb(0x24f)]}),_0x2751c6==_0x4bc9fb(0x1f5)&&(_0x2751c6=''),_0x5ae4f8==''?_0x95bae9+=_0x4bc9fb(0x15b)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6[_0x4bc9fb(0x174)]()+_0x4bc9fb(0x240):_0x95bae9+=_0x4bc9fb(0x1d8)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+'\x22></td>';else{if(ResultData[x]['ColumnType']==_0x4bc9fb(0x188)){if(_0x2751c6==0x0||_0x2751c6==null||_0x2751c6=='')var _0x51fce1='';else var _0x51fce1=_0x4bc9fb(0x25d);_0x95bae9+=_0x4bc9fb(0x1cd)+ResultData[x]['ColumnName']+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20'+_0x51fce1+'>';}else{if(ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x21f)){ResultData[x]['MinNumber']!=null&&ResultData[x][_0x4bc9fb(0x24a)]!=null&&arrNumValtbl[_0x4bc9fb(0x260)]({'tId':_0x2afe43,'title':ResultData[x][_0x4bc9fb(0x244)],'col':ResultData[x][_0x4bc9fb(0x242)],'min':ResultData[x][_0x4bc9fb(0x191)],'max':ResultData[x][_0x4bc9fb(0x24a)]});var _0x24aaaa='',_0x363e44='';if(ResultData[x][_0x4bc9fb(0x263)]==_0x4bc9fb(0x1ac))_0x24aaaa+=_0x4bc9fb(0x17b),_0x363e44+=_0x4bc9fb(0x227);else ResultData[x][_0x4bc9fb(0x263)]==_0x4bc9fb(0x245)&&(_0x363e44+=_0x4bc9fb(0x227),_0x24aaaa+=_0x4bc9fb(0x219));if(ResultData[x][_0x4bc9fb(0x25b)]==!![]){ColumnTotalList[_0x4bc9fb(0x260)]({'Setup':_0x2afe43,'ColumnName':ResultData[x][_0x4bc9fb(0x244)]}),IsTotalneed=!![];var _0x3b4a3f=ResultData[x]['Title'];_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)]('%',''),_0x3b4a3f=_0x3b4a3f['replaceAll']('\x20',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)](/[\])}[{(]/g,'');var _0x1d7c69=![],_0x287431;if(ResultData[x][_0x4bc9fb(0x23d)]==!![]){FormulaColumnListTbl[_0x4bc9fb(0x260)]({'Setup':_0x2afe43,'Formula':ResultData[x]['Formula'],'ColumnName':_0x3b4a3f,'Rel':_0x4bc9fb(0x1e1)+_0x3b4a3f}),_0x1d7c69=!![],_0x287431=ResultData[x][_0x4bc9fb(0x26c)];if(_0x287431!=null){_0x287431=_0x287431[_0x4bc9fb(0x1b5)](',');if(_0x287431['length']>0x0){var _0x342d72='';for(var _0x281270=0x0;_0x281270<_0x287431['length'];_0x281270++){}if(isMathExpression(_0x342d72)==!![]){var _0x4a91e0=math['evaluate'](_0x342d72);_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x22f)](0x2),_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x174)](),_0x95bae9+=_0x4bc9fb(0x1ba)+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+'\x20style=\x22text-align:\x20right\x22\x20data-original-value=\x22'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x4a91e0+_0x4bc9fb(0x18d)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x287431+'\x27,\x27'+_0x2afe43+'\x27,\x27'+IsTotalneed+_0x4bc9fb(0x25e)+_0x2afe43+'\x27,\x27'+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20readonly\x20></td>';var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];ResultData[x][_0x4bc9fb(0x25b)]==!![]&&ColumnValuesTotal[_0x4bc9fb(0x260)]({'Column':_0x2d9dff,'Total':_0x4a91e0,'TableId':QueryTableData[i]['SetupIDId'],'ColIndex':x});}else _0x95bae9+=_0x4bc9fb(0x1ba)+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x4a91e0+'\x22\x20onfocusin=\x22return\x20CalculateValue(this,\x20\x27'+ResultData[x][_0x4bc9fb(0x244)]+'\x27,\x27'+_0x287431+_0x4bc9fb(0x1e2)+_0x2afe43+'\x27,\x27'+IsTotalneed+'\x27);\x22\x20onkeyup=\x22DynamicSum(\x27'+_0x2afe43+_0x4bc9fb(0x1e2)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20></td>';}}}else _0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20NeedTotal\x20'+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+_0x4bc9fb(0x18d)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1e2)+_0x2afe43+_0x4bc9fb(0x1e2)+IsTotalneed+_0x4bc9fb(0x201)+_0x2afe43+_0x4bc9fb(0x1e2)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x]['ColumnName']+'\x22></td>';}else{if(ResultData[x]['CalculatedValue']==!![]&&ResultData[x][_0x4bc9fb(0x242)]==_0x4bc9fb(0x23d)){var _0x3b4a3f=ResultData[x][_0x4bc9fb(0x244)];_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)]('%',''),_0x3b4a3f=_0x3b4a3f['replaceAll']('\x20',''),_0x3b4a3f=_0x3b4a3f[_0x4bc9fb(0x1d5)](/[\])}[{(]/g,''),FormulaColumnListTbl[_0x4bc9fb(0x260)]({'Setup':_0x2afe43,'Formula':ResultData[x][_0x4bc9fb(0x26c)],'ColumnName':_0x3b4a3f,'Rel':'tbl_'+_0x3b4a3f}),_0x1d7c69=!![],_0x287431=ResultData[x]['Formula'];if(_0x287431!=null){_0x287431=_0x287431['split'](',');if(_0x287431[_0x4bc9fb(0x18a)]>0x0){var _0x342d72='';for(var _0x281270=0x0;_0x281270<_0x287431[_0x4bc9fb(0x18a)];_0x281270++){_0x342d72=_0x342d72+ColumnValueByColumnNameforTableEquation(QueryTableData,_0x287431[_0x281270],i);}if(isMathExpression(_0x342d72)==!![]){var _0x4a91e0=math['evaluate'](_0x342d72);_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x22f)](0x2),_0x4a91e0=_0x4a91e0[_0x4bc9fb(0x174)](),_0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20NeedTotal\x20'+_0x3b4a3f+'\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+_0x4bc9fb(0x21d)+ResultData[x][_0x4bc9fb(0x242)]+'\x22\x20value=\x22'+_0x4a91e0+_0x4bc9fb(0x18d)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1e2)+_0x2afe43+'\x27,\x27'+IsTotalneed+_0x4bc9fb(0x25e)+_0x2afe43+_0x4bc9fb(0x1e2)+ResultData[x][_0x4bc9fb(0x244)]+_0x4bc9fb(0x1e2)+_0x1d7c69+_0x4bc9fb(0x1e2)+_0x287431+_0x4bc9fb(0x1cc)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x17f);var _0x2d9dff=ResultData[x][_0x4bc9fb(0x244)];ResultData[x]['NeedTotal']==!![]&&ColumnValuesTotal['push']({'Column':_0x2d9dff,'Total':_0x4a91e0,'TableId':QueryTableData[i]['SetupIDId'],'ColIndex':x});}else{}}}}else _0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x22\x20'+_0x363e44+'\x20'+_0x24aaaa+'\x20style=\x22text-align:\x20right\x22\x20data-original-value=\x22'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1da)+_0x2751c6+_0x4bc9fb(0x19f)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x1a9)+_0x2afe43+'\x27)\x22></td>';}}else{if(ResultData[x][_0x4bc9fb(0x239)]==_0x4bc9fb(0x184))_0x95bae9+=_0x4bc9fb(0x1a6)+_0x5ae4f8+_0x4bc9fb(0x1ce)+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x24c)+_0x2751c6+_0x4bc9fb(0x194)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+'\x27>'+_0x2751c6+_0x4bc9fb(0x267);else{var _0x22f66a=ResultData[x][_0x4bc9fb(0x1be)]?ResultData[x][_0x4bc9fb(0x1be)]:_0x4bc9fb(0x209);_0x95bae9+='<input\x20class=\x22form-control\x20input-sm\x22\x20'+_0x5ae4f8+_0x4bc9fb(0x1df)+ResultData[x]['ColumnName']+'\x22\x20value=\x22'+_0x2751c6+_0x4bc9fb(0x182)+_0x2afe43+'_'+_0x169a3b+'_'+ResultData[x][_0x4bc9fb(0x242)]+_0x4bc9fb(0x25f)+_0x22f66a+_0x4bc9fb(0x240);}}}}}_0x95bae9+=_0x4bc9fb(0x212);}}else $[_0x4bc9fb(0x169)](_0x1a96ed['d']['results'],function(_0x374124){var _0x2bd9f0=_0x4bc9fb;if(window['location'][_0x2bd9f0(0x16b)][_0x2bd9f0(0x1dd)]('?')>-0x1){var _0x59a1cc=window['atob'](titanForWork['getQueryStringParameter']('Step'));_0x59a1cc==_0x2bd9f0(0x1cb)&&(_0x95bae9+=_0x2bd9f0(0x1de)+_0x374124[_0x2bd9f0(0x244)]+'\x27\x20mandatorycol=\x27'+_0x374124[_0x2bd9f0(0x199)]+_0x2bd9f0(0x15a)+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1fd)+_0x374124[_0x2bd9f0(0x239)]+'\x27>');}_0x2751c6=_0x374124[_0x2bd9f0(0x223)]?_0x374124['DefaultValue']:'',arrcoldefval[_0x2bd9f0(0x260)]({'tblId':_0x2afe43,'colname':_0x374124[_0x2bd9f0(0x242)],'Type':_0x374124[_0x2bd9f0(0x239)],'Title':_0x374124[_0x2bd9f0(0x244)],'Defval':_0x2751c6});_0x374124['Mandatory']==!![]&&arrMandatetbl['push']({'tblId':_0x2afe43,'colname':_0x374124[_0x2bd9f0(0x242)],'Title':_0x374124[_0x2bd9f0(0x244)],'Mandatory':_0x374124[_0x2bd9f0(0x199)]});if(_0x374124[_0x2bd9f0(0x239)]==_0x2bd9f0(0x175)||_0x374124[_0x2bd9f0(0x239)]==_0x2bd9f0(0x1aa))arrDateTbl['push']({'tId':_0x2afe43,'title':_0x374124[_0x2bd9f0(0x244)],'col':_0x374124[_0x2bd9f0(0x242)],'validation':_0x374124['DateValidation']}),_0x5ae4f8==''?_0x95bae9+='<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20Date\x20datepicker\x22\x20\x20\x20data-original-value=\x22'+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x182)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x240):_0x95bae9+=_0x2bd9f0(0x15b)+_0x374124['ColumnName']+'\x22\x20id=\x22tbl_'+_0x2afe43+_0x2bd9f0(0x172)+_0x374124['ColumnName']+'\x22></td>';else{if(_0x374124['ColumnType']==_0x2bd9f0(0x188)){if(_0x2751c6==0x0||_0x2751c6==null||_0x2751c6=='')var _0x34b03b='';else var _0x34b03b=_0x2bd9f0(0x25d);_0x95bae9+=_0x2bd9f0(0x1cd)+_0x374124['ColumnName']+'\x22\x20\x20id=\x22tbl_'+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+'\x22\x20'+_0x34b03b+'>';}else{if(_0x374124[_0x2bd9f0(0x239)]==_0x2bd9f0(0x21f)){var _0x2282a4='',_0x104f5b='';_0x374124['MinNumber']!=null&&_0x374124[_0x2bd9f0(0x24a)]!=null&&arrNumValtbl['push']({'tId':_0x2afe43,'title':_0x374124[_0x2bd9f0(0x244)],'col':_0x374124[_0x2bd9f0(0x242)],'min':_0x374124[_0x2bd9f0(0x191)],'max':_0x374124[_0x2bd9f0(0x24a)]});if(_0x374124['NumberValidation']==_0x2bd9f0(0x1ac))_0x2282a4+=_0x2bd9f0(0x17b),_0x104f5b+='maxlength=\x2715\x27';else _0x374124[_0x2bd9f0(0x263)]==_0x2bd9f0(0x245)&&(_0x104f5b+=_0x2bd9f0(0x227),_0x2282a4+=_0x2bd9f0(0x213));if(_0x374124[_0x2bd9f0(0x25b)]==!![]){ColumnTotalList[_0x2bd9f0(0x260)]({'Setup':_0x2afe43,'ColumnName':_0x374124[_0x2bd9f0(0x244)]}),IsTotalneed=!![];var _0x472317=_0x374124[_0x2bd9f0(0x244)];_0x472317=_0x472317[_0x2bd9f0(0x1d5)]('%',''),_0x472317=_0x472317[_0x2bd9f0(0x1c4)]('\x20',''),_0x472317=_0x472317[_0x2bd9f0(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0x125f8a=![],_0x1e389c;if(_0x374124[_0x2bd9f0(0x23d)]==!![]&&_0x374124['ColumnName']==_0x2bd9f0(0x23d)){FormulaColumnListTbl[_0x2bd9f0(0x260)]({'Setup':_0x2afe43,'Formula':_0x374124[_0x2bd9f0(0x26c)],'ColumnName':_0x472317,'Rel':'tbl_'+_0x472317}),_0x125f8a=!![],_0x1e389c=_0x374124[_0x2bd9f0(0x26c)];if(_0x1e389c!=null){_0x1e389c=_0x1e389c[_0x2bd9f0(0x1b5)](',');if(_0x1e389c[_0x2bd9f0(0x18a)]>0x0){var _0x3aea30='';for(var _0x4a3df6=0x0;_0x4a3df6<_0x1e389c['length'];_0x4a3df6++){var _0x1d1088=$[_0x2bd9f0(0x19e)](_0x1e389c[_0x4a3df6]);if(/^[a-zA-Z0-9- ]*$/[_0x2bd9f0(0x1dc)](_0x1d1088)==![])_0x3aea30=_0x3aea30+_0x1d1088;else{var _0x599066=$['grep'](ResultData,function(_0x445c6a){var _0x215772=_0x2bd9f0;return _0x445c6a[_0x215772(0x242)]==_0x1d1088;});if(_0x599066[_0x2bd9f0(0x18a)]>0x0)var _0x5d7821=_0x599066[0x0][_0x2bd9f0(0x223)]?_0x599066[0x0][_0x2bd9f0(0x223)]:0x0;else var _0x5d7821=_0x1d1088;_0x5d7821==''&&(_0x5d7821=0x0),_0x5d7821!=undefined?_0x3aea30=_0x3aea30+_0x5d7821:_0x3aea30=_0x3aea30+_0x1d1088;}}if(isMathExpression(_0x3aea30)==!![]){var _0x14cc95=math[_0x2bd9f0(0x170)](_0x3aea30);_0x14cc95=_0x14cc95['toFixed'](0x2),_0x14cc95=_0x14cc95[_0x2bd9f0(0x174)](),_0x95bae9+=_0x2bd9f0(0x183)+_0x472317+'\x22\x20'+_0x104f5b+'\x20'+_0x2282a4+_0x2bd9f0(0x21d)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x1da)+_0x14cc95+_0x2bd9f0(0x18d)+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1e2)+_0x2afe43+_0x2bd9f0(0x1e2)+IsTotalneed+'\x27);\x22\x20onkeyup=\x22DynamicSum(\x27'+_0x2afe43+_0x2bd9f0(0x1e2)+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1e2)+_0x125f8a+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1cc)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+'\x22\x20readonly\x20></td>';}}}}else _0x95bae9+=_0x2bd9f0(0x19b)+_0x472317+'\x22\x20'+_0x104f5b+'\x20\x20'+_0x2282a4+'\x20style=\x22text-align:\x20right\x22\x20data-original-value=\x22'+_0x374124['ColumnName']+'\x22\x20value=\x22'+_0x2751c6+_0x2bd9f0(0x18d)+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1e2)+_0x2afe43+_0x2bd9f0(0x1e2)+IsTotalneed+_0x2bd9f0(0x201)+_0x2afe43+_0x2bd9f0(0x1e2)+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1e2)+_0x125f8a+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1cc)+_0x2afe43+'_1_'+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x240);}else{if(_0x374124[_0x2bd9f0(0x23d)]==!![]&&_0x374124['ColumnName']==_0x2bd9f0(0x23d)){var _0x472317=_0x374124['Title'];_0x472317=_0x472317[_0x2bd9f0(0x1d5)]('%',''),_0x472317=_0x472317['replaceAll']('\x20',''),_0x472317=_0x472317[_0x2bd9f0(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,''),FormulaColumnListTbl[_0x2bd9f0(0x260)]({'Setup':_0x2afe43,'Formula':_0x374124[_0x2bd9f0(0x26c)],'ColumnName':_0x472317,'Rel':_0x2bd9f0(0x1e1)+_0x472317}),_0x125f8a=!![],_0x1e389c=_0x374124[_0x2bd9f0(0x26c)];if(_0x1e389c!=null){_0x1e389c=_0x1e389c[_0x2bd9f0(0x1b5)](',');if(_0x1e389c[_0x2bd9f0(0x18a)]>0x0){var _0x3aea30='';for(var _0x4a3df6=0x0;_0x4a3df6<_0x1e389c[_0x2bd9f0(0x18a)];_0x4a3df6++){var _0x1d1088=$['trim'](_0x1e389c[_0x4a3df6]);if(/^[a-zA-Z0-9- ]*$/[_0x2bd9f0(0x1dc)](_0x1d1088)==![])_0x3aea30=_0x3aea30+_0x1d1088;else{var _0x599066=$[_0x2bd9f0(0x220)](ResultData,function(_0x336ce6){var _0x404943=_0x2bd9f0;return _0x336ce6[_0x404943(0x242)]==_0x1d1088;}),_0x5d7821=_0x599066[0x0][_0x2bd9f0(0x223)]?_0x599066[0x0][_0x2bd9f0(0x223)]:0x0;_0x5d7821==''&&(_0x5d7821=0x0),_0x5d7821!=undefined?_0x3aea30=_0x3aea30+_0x5d7821:_0x3aea30=_0x3aea30+_0x1d1088;}}if(isMathExpression(_0x3aea30)==!![]){var _0x14cc95=math[_0x2bd9f0(0x170)](_0x3aea30);_0x14cc95=_0x14cc95[_0x2bd9f0(0x22f)](0x2),_0x14cc95=_0x14cc95[_0x2bd9f0(0x174)](),_0x95bae9+=_0x2bd9f0(0x183)+_0x472317+'\x22\x20'+_0x104f5b+'\x20'+_0x2282a4+_0x2bd9f0(0x21d)+_0x374124[_0x2bd9f0(0x242)]+'\x22\x20value=\x22'+_0x14cc95+_0x2bd9f0(0x18d)+_0x374124['Title']+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1e2)+_0x2afe43+'\x27,\x27'+IsTotalneed+_0x2bd9f0(0x25e)+_0x2afe43+'\x27,\x27'+_0x374124[_0x2bd9f0(0x244)]+_0x2bd9f0(0x1e2)+_0x125f8a+_0x2bd9f0(0x1e2)+_0x1e389c+_0x2bd9f0(0x1cc)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x17f);}}}}else _0x95bae9+=_0x2bd9f0(0x162)+_0x104f5b+'\x20\x20'+_0x2282a4+_0x2bd9f0(0x21d)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x1da)+_0x2751c6+_0x2bd9f0(0x182)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x1a9)+_0x2afe43+_0x2bd9f0(0x26f);}}else{if(_0x374124['ColumnType']==_0x2bd9f0(0x184))_0x95bae9+=_0x2bd9f0(0x1a6)+_0x5ae4f8+_0x2bd9f0(0x1ce)+_0x374124[_0x2bd9f0(0x242)]+'\x27\x20value=\x27'+_0x2751c6+_0x2bd9f0(0x1b7)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+'\x27>'+_0x2751c6+'</div></td>';else{var _0xd6a434=_0x374124[_0x2bd9f0(0x1be)]?_0x374124[_0x2bd9f0(0x1be)]:_0x2bd9f0(0x209);_0x95bae9+='<input\x20class=\x22form-control\x20input-sm\x22\x20'+_0x5ae4f8+_0x2bd9f0(0x237)+_0x374124[_0x2bd9f0(0x242)]+_0x2bd9f0(0x1da)+_0x2751c6+_0x2bd9f0(0x182)+_0x2afe43+_0x2bd9f0(0x172)+_0x374124[_0x2bd9f0(0x242)]+'\x22\x20maxlength=\x22'+_0xd6a434+_0x2bd9f0(0x240);}}}}});}_0x95bae9+=_0x4bc9fb(0x238),_0x95bae9+=_0x4bc9fb(0x1bb);if(QueryTableData['length']>0x0){var _0x37f450=[...new Map(ColumnValuesTotal['map'](_0x31a5db=>[_0x31a5db[_0x4bc9fb(0x195)],_0x31a5db]))[_0x4bc9fb(0x218)]()],_0xd3dbe9=$[_0x4bc9fb(0x220)](ColumnValuesTotal,function(_0x1f8200){var _0x5273db=_0x4bc9fb;return _0x1f8200[_0x5273db(0x1ec)]==_0x2afe43;}),_0x246716=[];for(var _0x6ae464=0x0;_0x6ae464<_0x37f450[_0x4bc9fb(0x18a)];_0x6ae464++){var _0xd12b70=0x0,_0x1dd802=$[_0x4bc9fb(0x220)](_0xd3dbe9,function(_0x57d1ef){var _0x434f19=_0x4bc9fb;return _0x57d1ef['Column']==_0x37f450[_0x6ae464]['Column']&&_0x57d1ef[_0x434f19(0x168)]!=null;});if(_0x1dd802[_0x4bc9fb(0x18a)]>0x0){for(var _0x389cdc=0x0;_0x389cdc<_0x1dd802['length'];_0x389cdc++){_0xd12b70=parseFloat(_0xd12b70)+parseFloat(_0x1dd802[_0x389cdc][_0x4bc9fb(0x168)]);}_0x246716['push']({'Total':_0xd12b70,'ColumnIndex':_0x1dd802[0x0]['ColIndex']});}}for(var _0x474bdc=0x0;_0x474bdc<ResultData['length']+0x1;_0x474bdc++){if(_0x474bdc<ResultData[_0x4bc9fb(0x18a)]){var _0x9b7c7a=$[_0x4bc9fb(0x220)](_0x246716,function(_0x20f359){var _0x3cfcf9=_0x4bc9fb;return _0x20f359[_0x3cfcf9(0x1c5)]==_0x474bdc;}),_0x47bd86=![];_0x9b7c7a[_0x4bc9fb(0x18a)]>0x0&&(_0x47bd86=!![]);var _0x171ce3=ResultData[_0x474bdc][_0x4bc9fb(0x244)][_0x4bc9fb(0x1c4)]('\x20','');_0x171ce3=_0x171ce3[_0x4bc9fb(0x1d5)]('%',''),_0x171ce3=_0x171ce3[_0x4bc9fb(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,''),_0x47bd86==!![]?_0x95bae9+=_0x4bc9fb(0x161)+_0x2afe43+'_'+_0x171ce3+_0x4bc9fb(0x1ae)+_0x9b7c7a[0x0][_0x4bc9fb(0x168)][_0x4bc9fb(0x22f)](0x2)+'\x27>'+_0x9b7c7a[0x0]['Total'][_0x4bc9fb(0x22f)](0x2)+'</span></td>':_0x474bdc==0x0?_0x95bae9+=_0x4bc9fb(0x210):_0x95bae9+=_0x4bc9fb(0x210);}else _0x95bae9+=_0x4bc9fb(0x212);}}else $[_0x4bc9fb(0x169)](_0x1a96ed['d'][_0x4bc9fb(0x1a7)],function(_0x1961d1){var _0x8827c9=_0x4bc9fb;if(_0x1961d1[_0x8827c9(0x25b)]==!![]&&_0x1961d1[_0x8827c9(0x239)]=='Number'){_0x2751c6=_0x1961d1[_0x8827c9(0x223)]?_0x1961d1[_0x8827c9(0x223)]:'';if(_0x2751c6==''||_0x2751c6==null){_0x287431=_0x1961d1[_0x8827c9(0x26c)];if(_0x287431!=null){_0x287431=_0x287431['split'](',');if(_0x287431['length']>0x0){var _0x2e9287='';for(var _0x4300c4=0x0;_0x4300c4<_0x287431[_0x8827c9(0x18a)];_0x4300c4++){var _0x4175cc=$[_0x8827c9(0x19e)](_0x287431[_0x4300c4]);if(/^[a-zA-Z0-9- ]*$/[_0x8827c9(0x1dc)](_0x4175cc)==![])_0x2e9287=_0x2e9287+_0x4175cc;else{var _0x28fa2b=$[_0x8827c9(0x220)](ResultData,function(_0x398015){var _0x54df16=_0x8827c9;return _0x398015[_0x54df16(0x242)]==_0x4175cc;});if(_0x28fa2b[_0x8827c9(0x18a)]>0x0)var _0x22504d=_0x28fa2b[0x0]['DefaultValue']?_0x28fa2b[0x0][_0x8827c9(0x223)]:0x0;else _0x22504d=_0x4175cc;_0x22504d==''&&(_0x22504d=0x0),_0x22504d!=undefined?_0x2e9287=_0x2e9287+_0x22504d:_0x2e9287=_0x2e9287+_0x4175cc;}}if(isMathExpression(_0x2e9287)==!![]){var _0x3ad122=math[_0x8827c9(0x170)](_0x2e9287);_0x3ad122=_0x3ad122[_0x8827c9(0x22f)](0x2),_0x2751c6=_0x3ad122=_0x3ad122[_0x8827c9(0x174)]();}}}}var _0x5e92ea=_0x1961d1[_0x8827c9(0x244)][_0x8827c9(0x1c4)]('\x20','');_0x5e92ea=_0x5e92ea[_0x8827c9(0x1d5)]('%',''),_0x5e92ea=_0x5e92ea[_0x8827c9(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,''),_0x95bae9+=_0x8827c9(0x17a)+_0x2afe43+'_'+_0x5e92ea+_0x8827c9(0x1ae)+_0x2751c6+'\x27>'+_0x2751c6+'</span></td>';}else _0x95bae9+=_0x8827c9(0x1eb);}),_0x95bae9+=_0x4bc9fb(0x212);_0x95bae9+=_0x4bc9fb(0x273),_0x95bae9+='<button\x20\x20type=\x27button\x27\x20id=\x27new-row-button'+_0x2afe43+_0x4bc9fb(0x171),_0x95bae9+=_0x4bc9fb(0x235),$(_0x4bc9fb(0x1a8))['append'](_0x95bae9);}}),$(_0x401026(0x24b))[_0x401026(0x247)]({'dateFormat':_0x401026(0x1bd)});var _0x3a9c0e=new BSTable(_0x401026(0x22d)+_0x2afe43,{'$addButton':$(_0x401026(0x221)+_0x2afe43)});_0x3a9c0e[_0x401026(0x230)](),$('#TblApprovalEntry_'+_0x2afe43)[_0x401026(0x1d1)]('thead')[_0x401026(0x1d1)]('tr')['last']()['hide'](),$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1d1)](_0x401026(0x20c))[_0x401026(0x1d1)]('tr')['find']('td\x20#bEdit')[_0x401026(0x20d)](),$(_0x401026(0x17e)+_0x2afe43)['find'](_0x401026(0x20c))['find']('tr')['find']('td\x20#bDel')[_0x401026(0x20d)](),$('#TblApprovalEntry_'+_0x2afe43)[_0x401026(0x1d1)](_0x401026(0x20c))[_0x401026(0x1d1)]('tr')[_0x401026(0x1ef)]()[_0x401026(0x1d1)]('td\x20#bDel')[_0x401026(0x20d)](),$('#bEdit')[_0x401026(0x20d)](),totalrow=0x1,$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1d1)](_0x401026(0x20c))[_0x401026(0x1d1)](_0x401026(0x197))['find'](_0x401026(0x224))['hide']();var _0x443e0e=_0x2f9959?_0x2f9959:_0x401026(0x166);_0x443e0e=='50'?($(_0x401026(0x26a)+_0x2afe43)[_0x401026(0x1f2)](_0x401026(0x21e)),$(_0x401026(0x21b)+_0x2afe43)[_0x401026(0x1f2)]('fifty_centent\x20only_heading'),$('#tbldivWrap_'+_0x2afe43)['css']({'width':'100%','max-height':'200px'}),$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1e8)]({'width':_0x401026(0x15f)})):$('#TblApprovalEntry_'+_0x2afe43)[_0x401026(0x1e8)](_0x401026(0x253),_0x443e0e+'%');var _0x4fc344=$(_0x401026(0x17e)+_0x2afe43)['find']('tbody')[_0x401026(0x1d1)]('tr')[_0x401026(0x229)]()['find']('td');if(_0x5ae4f8!=''){if(_0x375a26['length']>0x0){if(_0x375a26[0x0][_0x401026(0x1a0)]==_0x401026(0x173)){$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1d1)]('input,button,textarea,select')[_0x401026(0x25a)]('disabled',![]),console[_0x401026(0x1f0)]('Add\x20Row');var _0x5f1a69=$[_0x401026(0x220)](tblcol,function(_0x24976c){var _0x46b3e3=_0x401026;return _0x24976c[_0x46b3e3(0x1cf)]==_0x2afe43;});SetDatpickerNdropDown(_0x5f1a69[0x0][_0x401026(0x198)],_0x401026(0x222),_0x401026(0x22d)+_0x2afe43,_0x4fc344,ResultData);}else{if(_0x375a26[0x0][_0x401026(0x1a0)]=='Columns'){if(_0x375a26[0x0][_0x401026(0x20b)]!=null){var _0x314424=_0x375a26[0x0][_0x401026(0x20b)][_0x401026(0x1a7)];$('#TblApprovalEntry_'+_0x2afe43)['find'](_0x401026(0x231))[_0x401026(0x25a)](_0x401026(0x266),_0x401026(0x176)),$(_0x401026(0x221)+_0x2afe43)[_0x401026(0x25a)](_0x401026(0x266),_0x401026(0x176));for(var _0x20c309=0x0;_0x20c309<_0x314424[_0x401026(0x18a)];_0x20c309++){$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1d1)](_0x401026(0x216)+_0x314424[_0x20c309][_0x401026(0x244)]+'\x27]')[_0x401026(0x1d1)](_0x401026(0x231))[_0x401026(0x232)]('disabled',![]);}var _0x5f1a69=$[_0x401026(0x220)](tblcol,function(_0x4387d0){var _0x1ce5d0=_0x401026;return _0x4387d0[_0x1ce5d0(0x1cf)]==_0x2afe43;});SetDatpickerNdropDown(_0x5f1a69[0x0][_0x401026(0x198)],_0x401026(0x222),_0x401026(0x22d)+_0x2afe43,_0x4fc344,ResultData);}}else $(_0x401026(0x17e)+_0x2afe43)['find'](_0x401026(0x231))[_0x401026(0x25a)](_0x401026(0x266),_0x401026(0x190)),$('#new-row-button'+_0x2afe43)[_0x401026(0x25a)](_0x401026(0x266),_0x401026(0x190));}}}else{if(QueryTableData[_0x401026(0x18a)]>0x0){$(_0x401026(0x17e)+_0x2afe43)[_0x401026(0x1d1)](_0x401026(0x265))[_0x401026(0x232)](_0x401026(0x266),'false');for(let _0x1ad78f=0x0;_0x1ad78f<QueryTableData[_0x401026(0x18a)];_0x1ad78f++){var _0x5f1a69=$['grep'](tblcol,function(_0x43acb1){var _0x8fcfe8=_0x401026;return _0x43acb1[_0x8fcfe8(0x1cf)]==_0x2afe43;});}}else{var _0x4f4839=$[_0x401026(0x220)](tblcol,function(_0x47a55b){var _0x318d77=_0x401026;return _0x47a55b[_0x318d77(0x1cf)]==_0x2afe43;});SetDatpickerNdropDown(_0x4f4839[0x0][_0x401026(0x198)],_0x401026(0x222),'TblApprovalEntry_'+_0x2afe43,_0x4fc344,ResultData);}IsTotalneed==![]&&$(_0x401026(0x16f))[_0x401026(0x20d)]();}}function GetData(_0x2e4c31){var _0x361a82=a1_0x2bac,_0x2f7504=$['Deferred']();return $[_0x361a82(0x185)]({'url':_spPageContextInfo[_0x361a82(0x18c)]+_0x2e4c31,'async':![],'contentType':_0x361a82(0x217),'headers':{'accept':_0x361a82(0x217)},'success':function(_0x1e4f77){_0x2f7504['resolve'](_0x1e4f77);},'error':function(_0x1e5b8d){_0x2f7504['reject'](_0x1e5b8d);}}),_0x2f7504[_0x361a82(0x234)]();}function a1_0x2bac(_0x521190,_0x69f231){var _0x4514b6=a1_0x4514();return a1_0x2bac=function(_0x2bac06,_0x478088){_0x2bac06=_0x2bac06-0x15a;var _0x2ea59d=_0x4514b6[_0x2bac06];return _0x2ea59d;},a1_0x2bac(_0x521190,_0x69f231);}function a1_0x4514(){var _0x10cbd1=['format','val','maxlength=\x2715\x27','UserId','first','1256OdinCM','div','td:not(:last-child)','TblApprovalEntry_','atob','toFixed','init','input,button,textarea,select','prop','#appenddyamicboxes\x20>\x20.dyamicTableboxes\x20>\x20.wrapping_dynamic\x20>.table','promise','</div>','Process\x20Steps','\x20data-original-value=\x22','<tr\x20class=\x27totalfield\x27\x20scope=\x27col\x27>','ColumnType','.input-sm','location','\x27\x20mandatorycol=\x27','CalculatedValue','ColumnText4','SetupIDId','\x22></td>','_1\x27>','ColumnName','max','Title','Decimal','RecNo','datepicker','EntityData','ColumnText5','MaxNumber','.datepicker','\x27\x20value=\x27','RequestIDId','\x20should\x20be\x20less\x20than\x20\x20','DateValidation','ColumnMultiline2','473856rlZbtF','tId','min-width','410lWViIT','<input\x20class=\x22form-control\x20input-sm\x22\x20','>tbody\x20>tr','\x27><thead\x20class=\x27thead-dark\x27><tr>','Checkbox4','Today\x20Only','attr','NeedTotal','td\x20#tbl_','checked','\x27);\x22\x20onkeyup=\x22DynamicSum(\x27','\x22\x20maxlength=\x22','push','closest','\x27\x20and\x20Status\x20eq\x20\x27Active\x27','NumberValidation','ColumnText9','td\x20input,button,textarea,select','disabled','</div></td>','282vZeBxe','ColumnNumber1','#tbldiv_','</td>','Formula','[id$=\x27','data-original-value','\x27)\x22\x20></td>','41342aOUdfs','_TopSpan\x27]','\x27&$orderby=SequenceNo\x20asc','</tbody></table></div>','\x27\x20and\x20SetupID\x20eq\x20\x27','td\x20.','\x27\x20alerttext=\x27','<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20Date\x20datepicker\x22\x20\x20\x20data-original-value=\x22','2005QXbAHR','ColumnDate5','isNumeric','100%','\x20should\x20be\x20future\x20date\x20included\x20today..!','<td\x20style=\x27text-align:\x20right;\x27><span\x20id=\x27ttlval_','<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x22\x20','\x20to\x20','GetAllUserInfo','Future\x20Date\x20included\x20Today','100','Future\x20Date','Total','map','min','href','#ttlval_','ColumnDate1','<table\x20class=\x27table\x20table-striped\x20table-bordered\x20\x27\x20id=\x27TblApprovalEntry_','.totalfield','evaluate','\x27\x20class=\x27btn\x20btn-dark\x20setmargin\x27\x20style>\x20Add\x20Row</button>','_1_','Add\x20Row','toString','Date','false','text','Priority','Email','<td\x20class=\x27\x27\x20style=\x27text-align:\x20right\x27\x20value=\x27\x27><span\x20id=\x27ttlval_','onkeypress=\x27return\x20(event.charCode\x20==\x208\x20||\x20event.charCode\x20==\x200\x20||\x20event.charCode\x20==\x2013\x20||\x20event.charCode\x20==\x2045)\x20?\x20null\x20:\x20event.charCode\x20>=\x2048\x20&&\x20event.charCode\x20<=\x2057\x20\x27','SP.Data.ApprovalProcessListTableListItem','getQueryStringParameter','#TblApprovalEntry_','\x22\x20readonly\x20></td>','193212gePSwA','Checkbox5','\x22\x20id=\x22tbl_','<input\x20type=\x22number\x22\x20class=\x22form-control\x20NeedTotal\x20','Multiline','ajax','ColumnText2','/_api/web/lists/getbytitle(\x27ApprovalProcessListTable\x27)/items?$select=*,SetupID/ID&$expand=SetupID&$filter=RequestID\x20eq\x20\x27','Checkbox','ColumnPeople2','length','#__REQUESTDIGEST','webAbsoluteUrl','\x22\x20onfocusin=\x22return\x20CalculateValue(this,\x20\x27','ColumnNumber4','<tr></thead><tbody\x20class=\x27tablebosyappend\x27><tr\x20id=\x27','true','MinNumber','undefined','input[name=\x27selector\x27]:checked','\x27\x20style=\x27height:100%\x20!important;\x27\x20id=\x27tbl_','Column','#attachmentsupload','tr:last','data','Mandatory','POST','<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20NeedTotal\x20','Person','YesNo','trim','\x22\x20onkeypress=\x22return\x20isNumber(event)\x22\x20id=\x22tbl_','TableEditScope','\x20should\x20be\x20between\x20','\x27&$orderby=ID\x20asc','#titleid','Checkbox3','tbl\x20saved','<div\x20class=\x27form-control\x20input-sm\x27\x20','results','#appenddyamicboxes','\x22\x20onkeyup=\x22CalculateNew(this,\x27','DueDate','#appenddyamicboxes\x20>\x20.dyamicTableboxes\x20>\x20.wrapping_dynamic\x20>\x20.table','Integer','\x20should\x20be\x20future\x20date..!','\x27\x20\x20value=\x27','Updated','each','Step','</th>','ColumnText3','AutoSerialNumber','split','Checkbox1','\x27\x20style=\x27\x27\x20id=\x27tbl_','ColumnPeople3','\x20should\x20be\x20today\x20only..!','<input\x20type=\x22text\x22\x20class=\x22form-control\x20NeedTotal\x20','<td\x20class=\x27totalRecord\x27\x20value=\x27\x27>Total:</td>','/_api/web/lists/getbytitle(\x27ApprovalTemplateTable\x27)/items?$select=*,SetupID/ID&$expand=SetupID&$filter=SetupID\x20eq\x20\x27','MM\x20dd,\x20yy','TextValidation','<tr\x20id=\x27','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email\x20eq\x20\x27','ColumnText7','requestfor','/_api/web/lists/GetByTitle(\x27ApprovalProcessListTable\x27)/items(','replaceAll','ColumnIndex','\x20should\x20be\x20past\x20date..!','\x20not\x20in\x20list','.tablebosyappend\x20>\x20tr:not(:last-child)','\x22\x20data-original-value=\x22','<td\x20class=\x27Colsequence\x27\x20value=\x271\x27\x20>1</td>','Initiation','\x27)\x22\x20id=\x22tbl_','<input\x20type=\x22checkbox\x22\x20class=\x22input-sm\x20checkbox_widthmange\x22\x20value=\x22\x22\x20data-original-value=\x22','\x20data-original-value=\x27','tblId','ColumnText6','find','Checkbox2','/_api/web/lists/getbytitle(\x27ApprovalProcessListTable\x27)/items?$select=*,SetupID/ID,RequestID/ID,ColumnPeople1/Id,ColumnPeople1/Title,ColumnPeople2/Id,ColumnPeople2/Title,ColumnPeople3/Id,ColumnPeople3/Title,ColumnPeople4/Id,ColumnPeople4/Title,ColumnPeople5/Id,ColumnPeople5/Title&$expand=SetupID,RequestID,ColumnPeople1,ColumnPeople2,ColumnPeople3,ColumnPeople4,ColumnPeople5\x20&$filter=RequestID\x20eq\x20\x27','ColumnMultiline1','replace','alerttext','1066836dKztjt','<input\x20type=\x22text\x22\x20class=\x22form-control\x20input-sm\x20\x22\x20\x20\x20data-original-value=\x22','SPClientPeoplePickerDict','\x22\x20value=\x22','ColumnText1','test','indexOf','<td\x20class=\x27columnnametxt\x27\x20name=\x27','\x20\x20data-original-value=\x22','<th\x20class=\x27columnnametxt\x27\x20scope=\x27col\x27\x20\x20style=\x27text-align:center\x27>#</th>','tbl_','\x27,\x27','Please\x20enter\x20the\x20value\x20for\x20','responseText','\x20should\x20be\x20greater\x20than\x20','\x27\x20>','DisplayText','css','mandatorycol','__metadata','<td\x20class=\x27\x27\x20value=\x27\x27><span\x20id=\x27ttlval\x27></span></td>','TableId','ColumnDate2','ColumnDate3','last','log','2632520iiKcPJ','addClass','Deferred','2pNiKwN','Invalid\x20date','PATCH','stringify','LoginName','ColumnText10','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id\x20eq\x20\x27','99bQIEpW','title','\x27\x20coltype=\x27','Draft','ColumnText8','ColumnNumber5','\x27);\x22\x20onkeyup=\x22DynamicSum(this,\x27','38457OaOeDj','validation','ColumnPeople5','Past\x20Date','ColumnPeople1','ColumnNumber3','EMail','250','Template','TableColumns','tbody','hide','Setup','ColumnDate4','<td></td>','<th\x20class=\x27columnnametxt\x27\x20scope=\x27col\x27\x20style=\x27text-align:center\x27\x20mandatorycol=\x27','</tr>','onkeydown=\x20\x22isDecimal(event)\x22;\x20\x20onkeypress=\x22isValidate(this)\x22','ColumnPeople4','ColumnNumber2','td[name=\x27','application/json;odata=verbose','values','onkeydown\x20=\x20\x22isDecimal(event)\x22;\x20\x20onkeypress=\x22isValidate(this)\x22','coltype','#tbldivWrap_','<input\x20type=\x22checkbox\x22\x20class=\x22input-sm\x20checkbox_widthmange\x22\x20value=\x22','\x20style=\x22text-align:\x20right\x22\x20data-original-value=\x22','col-md-6\x20fifty_centent','Number','grep','#new-row-button','tbl','DefaultValue','td[name=\x27bstable-actions\x27]'];a1_0x4514=function(){return _0x10cbd1;};return a1_0x4514();}var ischeck=![];function SubmitTbltcols(_0x1c1361){var _0x4feaad=a1_0x2bac,_0x38e25d=![],_0x32c268=$['Deferred'](),_0x4920c8=[],_0x269133='',_0x4fe1b8=$(_0x4feaad(0x193))[_0x4feaad(0x25a)]('templateid'),_0x4d158d=parseInt(_0x4fe1b8),_0x4e2097=$('input[name=\x27selector\x27]:checked')['attr'](_0x4feaad(0x1c2)),_0x14bb9e=$(_0x4feaad(0x1a3))['text']();$(_0x4feaad(0x1ab))[_0x4feaad(0x1b0)](function(){var _0x561c2c=_0x4feaad,_0x4136ab=$(this)[_0x561c2c(0x25a)]('id');_0x4136ab=_0x4136ab['split']('_')[0x1],console[_0x561c2c(0x1f0)](_0x4136ab),$(this)[_0x561c2c(0x1d1)](_0x561c2c(0x1c8))['each'](function(){var _0x24e43e=_0x561c2c,_0x4fe384=![];ischeck=![];var _0x1343de={};_0x1343de[_0x24e43e(0x244)]=_0x14bb9e;_0x1c1361!=''?_0x1343de['RequestIDId']=_0x1c1361:_0x1343de['RequestIDId']='';_0x1343de[_0x24e43e(0x23f)]=_0x4136ab,$(this)[_0x24e43e(0x1d1)](_0x24e43e(0x22c))[_0x24e43e(0x1b0)](function(){var _0x9c02a7=_0x24e43e,_0x205350=$(this)[_0x9c02a7(0x1d1)](_0x9c02a7(0x23a))[_0x9c02a7(0x25a)]('data-original-value');if($(this)[_0x9c02a7(0x25a)](_0x9c02a7(0x21a))==_0x9c02a7(0x188))_0x1343de[_0x205350]=$(this)[_0x9c02a7(0x1d1)](_0x9c02a7(0x23a))['prop'](_0x9c02a7(0x25d));else{if($(this)[_0x9c02a7(0x25a)](_0x9c02a7(0x21a))=='Date'){var _0x44b1af=$(this)[_0x9c02a7(0x1d1)](_0x9c02a7(0x23a))[_0x9c02a7(0x226)]();_0x44b1af==''&&(_0x44b1af=null),_0x1343de[_0x205350]=_0x44b1af;}else{if($(this)['attr'](_0x9c02a7(0x21a))==_0x9c02a7(0x19c)){var _0x35e8a3=[],_0x3d26bc=$(this)[_0x9c02a7(0x1d1)]('div')[_0x9c02a7(0x25a)]('id'),_0x5ad7a8=$('[id$=\x27'+_0x3d26bc+_0x9c02a7(0x271)),_0x3df895=SPClientPeoplePicker[_0x9c02a7(0x1d9)][_0x5ad7a8[0x0]['id']],_0x5195ed=_0x3df895[_0x9c02a7(0x164)]();for(var _0x5638b8=0x0;_0x5638b8<_0x5195ed['length'];_0x5638b8++){var _0x5812d7=![],_0xb75f95=_spPageContextInfo[_0x9c02a7(0x18c)]+_0x9c02a7(0x1c0)+_0x5195ed[_0x5638b8]['EntityData'][_0x9c02a7(0x179)]+_0x9c02a7(0x262),_0x51a526=RequestGetdata(_0xb75f95);_0x51a526[0x0][_0x9c02a7(0x179)]==_0x5195ed[_0x5638b8][_0x9c02a7(0x248)][_0x9c02a7(0x179)]&&(_0x5812d7=!![]);if(!_0x5812d7)return alert('Selected\x20user\x20'+_0x5195ed[_0x5638b8][_0x9c02a7(0x1e7)]+_0x9c02a7(0x1c7)),![];_0x35e8a3[_0x9c02a7(0x260)](_0x51a526[0x0][_0x9c02a7(0x228)]);}_0x44b1af=_0x35e8a3,_0x1343de[_0x205350+'Id']={'results':_0x35e8a3};}else{var _0x44b1af=$(this)[_0x9c02a7(0x1d1)](_0x9c02a7(0x23a))[_0x9c02a7(0x226)]();$(this)[_0x9c02a7(0x25a)](_0x9c02a7(0x21a))==_0x9c02a7(0x21f)?_0x205350!=undefined&&(_0x44b1af==''?_0x1343de[_0x205350]=null:_0x1343de[_0x205350]=_0x44b1af):_0x44b1af==''?(_0x1343de[_0x205350]='',_0x4fe384=!![]):_0x1343de[_0x205350]=_0x44b1af;}}}if($(this)[_0x9c02a7(0x25a)](_0x9c02a7(0x1e9))==_0x9c02a7(0x190)&&$(this)['find'](_0x9c02a7(0x23a))[_0x9c02a7(0x226)]()==''){var _0xc790b3=$(this)[_0x9c02a7(0x25a)](_0x9c02a7(0x1d6));_0x4920c8[_0x9c02a7(0x260)](_0xc790b3);}});if(ischeck){return![];alert(ischeck);}var _0x5116d4=_0x24e43e(0x17c);_0x1343de[_0x24e43e(0x1ea)]={'type':_0x5116d4},$['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/GetByTitle(\x27ApprovalProcessListTable\x27)/items','type':_0x24e43e(0x19a),'async':![],'data':JSON[_0x24e43e(0x1f7)](_0x1343de),'headers':{'accept':'application/json;odata=verbose','Content-Type':_0x24e43e(0x217),'X-RequestDigest':$(_0x24e43e(0x18b))['val'](),'X-HTTP-Method':_0x24e43e(0x19a)},'success':function(_0x11f6fc){var _0x9011dd=_0x24e43e;_0x38e25d=!![],console[_0x9011dd(0x1f0)](_0x9011dd(0x1a5));},'error':function(_0x206e5e){var _0x3ade70=_0x24e43e;return console[_0x3ade70(0x1f0)](_0x206e5e),alert(_0x206e5e[_0x3ade70(0x1e4)]),![];}});});});if(ischeck==!![]){return![];alert(ischeck);}_0x38e25d==!![]&&console[_0x4feaad(0x1f0)]('Table\x20data\x20submit\x20successfully.');}function DynamicSum(_0x37fc36,_0x3195f0,_0x51d86b,_0x56c35a,_0x4eb9a0){var _0x17ec7e=a1_0x2bac;if(_0x51d86b!=''&&_0x51d86b!=undefined){var _0x2aea22=_0x51d86b[_0x17ec7e(0x1c4)]('\x20','');_0x2aea22=_0x2aea22['replaceAll']('%',''),_0x2aea22=_0x2aea22[_0x17ec7e(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0x334456=0x0;$(_0x17ec7e(0x17e)+_0x3195f0+'\x20.'+_0x2aea22+'')[_0x17ec7e(0x1b0)](function(){var _0x39fcea=$(this)['val']();_0x39fcea==''&&(_0x39fcea=0x0),$['isNumeric'](_0x39fcea)&&(_0x334456+=parseFloat(_0x39fcea));}),$(_0x17ec7e(0x16c)+_0x3195f0+'_'+_0x2aea22)['html'](parseFloat(_0x334456)[_0x17ec7e(0x22f)]('2')),SetSummarizedValue(_0x3195f0,_0x2aea22,_0x334456);}var _0x45ae3d=$[_0x17ec7e(0x220)](FormulaColumnListTbl,function(_0x545a2e){var _0x25c6e0=_0x17ec7e;return _0x545a2e[_0x25c6e0(0x20e)]==_0x3195f0;});if(_0x45ae3d[_0x17ec7e(0x18a)]>0x0)for(var _0x43a76a=0x0;_0x43a76a<_0x45ae3d[_0x17ec7e(0x18a)];_0x43a76a++){DynamicCalculateValue(_0x37fc36,_0x45ae3d[_0x43a76a][_0x17ec7e(0x242)],_0x45ae3d[_0x43a76a][_0x17ec7e(0x26c)],_0x45ae3d[_0x43a76a][_0x17ec7e(0x20e)],_0x17ec7e(0x190));}}function CalculateNew(_0x188e5e,_0x5acb00){var _0x5dc3a7=a1_0x2bac,_0x2b7cb3=$[_0x5dc3a7(0x220)](FormulaColumnListTbl,function(_0x26d78b){return _0x26d78b['Setup']==_0x5acb00;});if(_0x2b7cb3[_0x5dc3a7(0x18a)]>0x0)for(var _0x55180d=0x0;_0x55180d<_0x2b7cb3[_0x5dc3a7(0x18a)];_0x55180d++){DynamicCalculateValue(_0x188e5e,_0x2b7cb3[_0x55180d][_0x5dc3a7(0x242)],_0x2b7cb3[_0x55180d]['Formula'],_0x2b7cb3[_0x55180d][_0x5dc3a7(0x20e)],_0x5dc3a7(0x190));}}function CalculateValue(_0x25e615,_0x242c92,_0x101ac9,_0x23801e,_0x4b4ebd){var _0xe45adf=a1_0x2bac,_0x5d98e2=_0x242c92[_0xe45adf(0x1c4)]('\x20','');_0x5d98e2=_0x5d98e2[_0xe45adf(0x1d5)]('%',''),_0x5d98e2=_0x5d98e2[_0xe45adf(0x1d5)](/[\])}[{(]/g,'');var _0x53b2da=_0x101ac9;if(_0x101ac9!=_0xe45adf(0x192)){_0x53b2da=_0x53b2da[_0xe45adf(0x1b5)](',');if(_0x53b2da[_0xe45adf(0x18a)]>0x0){var _0x3ded3b='';for(var _0x304a0c=0x0;_0x304a0c<_0x53b2da[_0xe45adf(0x18a)];_0x304a0c++){var _0x2f2013=$[_0xe45adf(0x19e)](_0x53b2da[_0x304a0c]);if(/^[a-zA-Z0-9- ]*$/[_0xe45adf(0x1dc)](_0x2f2013)==![])_0x3ded3b=_0x3ded3b+_0x2f2013;else{var _0x2c3dd6=$(_0x25e615)['closest']('tr')[_0xe45adf(0x1d1)]('td\x20#tbl_'+_0x2f2013)[_0xe45adf(0x226)]();_0x2c3dd6==''&&(_0x2c3dd6=0x0),_0x2c3dd6!=undefined?_0x3ded3b=_0x3ded3b+_0x2c3dd6:_0x3ded3b=_0x3ded3b+_0x2f2013;}}if(isMathExpression(_0x3ded3b)==!![]){var _0x19a05d=math[_0xe45adf(0x170)](_0x3ded3b);return _0x19a05d=_0x19a05d['toFixed'](0x2),_0x19a05d=_0x19a05d[_0xe45adf(0x174)](),$(_0x25e615)['closest']('tr')[_0xe45adf(0x1d1)](_0xe45adf(0x275)+_0x5d98e2)[_0xe45adf(0x226)](_0x19a05d),_0x4b4ebd=='true'&&DynamicSum(_0x23801e,_0x242c92,'',_0x101ac9),_0x19a05d;}}}}function DynamicCalculateValue(_0x7acbe8,_0x4ef5bd,_0x2ec4a1,_0x11f0d0,_0x43c714){var _0xe7d3fe=a1_0x2bac,_0x4e2099=_0x4ef5bd[_0xe7d3fe(0x1c4)]('\x20','');_0x4e2099=_0x4e2099[_0xe7d3fe(0x1d5)]('%',''),_0x4e2099=_0x4e2099['replace'](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0x55ff95=_0x2ec4a1;if(_0x2ec4a1!=_0xe7d3fe(0x192)){_0x55ff95=_0x55ff95['split'](',');if(_0x55ff95['length']>0x0){var _0x36c28b='';for(var _0xb8f11d=0x0;_0xb8f11d<_0x55ff95[_0xe7d3fe(0x18a)];_0xb8f11d++){var _0x2a5224=$[_0xe7d3fe(0x19e)](_0x55ff95[_0xb8f11d]);if(/^[a-zA-Z0-9- ]*$/['test'](_0x2a5224)==![])_0x36c28b=_0x36c28b+_0x2a5224;else{var _0x1c519e=_0x7acbe8[_0xe7d3fe(0x261)]('tr')['id'][_0xe7d3fe(0x1b5)]('_')[0x1],_0xc3b6e1=$(_0x7acbe8)['closest']('tr')[_0xe7d3fe(0x1d1)](_0xe7d3fe(0x25c)+_0x11f0d0+'_'+_0x1c519e+'_'+_0x2a5224)[_0xe7d3fe(0x226)]();_0xc3b6e1==''&&(_0xc3b6e1=0x0),_0xc3b6e1!=undefined?_0x36c28b=_0x36c28b+_0xc3b6e1:_0x36c28b=_0x36c28b+_0x2a5224;}}if(isMathExpression(_0x36c28b)==!![]){var _0x41f18f=math[_0xe7d3fe(0x170)](_0x36c28b);return _0x41f18f=_0x41f18f['toFixed'](0x2),_0x41f18f=_0x41f18f[_0xe7d3fe(0x174)](),$(_0x7acbe8)[_0xe7d3fe(0x261)]('tr')['find'](_0xe7d3fe(0x275)+_0x4e2099)[_0xe7d3fe(0x226)](_0x41f18f),_0x43c714==_0xe7d3fe(0x190)&&DynamicSumRow(_0x11f0d0,_0x4ef5bd,'',_0x2ec4a1),_0x41f18f;}}}}function DynamicSumRow(_0x509ffc,_0x5e7c36,_0x33863a,_0x230297){var _0x22dc55=a1_0x2bac;if(_0x5e7c36!=''&&_0x5e7c36!=undefined){var _0x5368f0=_0x5e7c36[_0x22dc55(0x1c4)]('\x20','');_0x5368f0=_0x5368f0[_0x22dc55(0x1d5)]('%',''),_0x5368f0=_0x5368f0[_0x22dc55(0x1d5)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0xd31a19=0x0;$('#TblApprovalEntry_'+_0x509ffc+'\x20.'+_0x5368f0+'')[_0x22dc55(0x1b0)](function(){var _0x23373b=_0x22dc55,_0x4dc64e=$(this)['val']();_0x4dc64e==''&&(_0x4dc64e=0x0),$[_0x23373b(0x15e)](_0x4dc64e)&&(_0xd31a19+=parseFloat(_0x4dc64e));}),$(_0x22dc55(0x16c)+_0x509ffc+'_'+_0x5368f0)['html'](parseFloat(_0xd31a19)[_0x22dc55(0x22f)]('2')),SetSummarizedValue(_0x509ffc,_0x5368f0,_0xd31a19);}}function isMathExpression(_0x4ad948){try{Complex['compile'](_0x4ad948);}catch(_0x3bd4c8){return![];}return!![];}function ColumnValueByColumnNameforTableEquation(_0x176e85,_0x3239fd,_0x556696){var _0x15f0e2=a1_0x2bac,_0x168cd9,_0x1b63a7;switch($[_0x15f0e2(0x19e)](_0x3239fd)){case'ColumnText1':_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1db)];break;case _0x15f0e2(0x186):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x186)];break;case _0x15f0e2(0x1b3):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1b3)];break;case _0x15f0e2(0x23e):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x23e)];break;case _0x15f0e2(0x249):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x249)];break;case'ColumnText6':_0x168cd9=_0x176e85[_0x556696]['ColumnText6'];break;case _0x15f0e2(0x1c1):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1c1)];break;case _0x15f0e2(0x1ff):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1ff)];break;case'ColumnText9':_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x264)];break;case'ColumnText10':_0x168cd9=_0x176e85[_0x556696]['ColumnText10'];break;case _0x15f0e2(0x269):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x269)];break;case _0x15f0e2(0x215):_0x168cd9=_0x176e85[_0x556696]['ColumnNumber2'];break;case _0x15f0e2(0x207):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x207)];break;case _0x15f0e2(0x18e):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x18e)];break;case _0x15f0e2(0x200):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x200)];break;case _0x15f0e2(0x16d):_0x168cd9=moment(_0x176e85[_0x556696][_0x15f0e2(0x16d)])[_0x15f0e2(0x225)]('LL');break;case'ColumnDate2':_0x168cd9=moment(_0x176e85[_0x556696][_0x15f0e2(0x1ed)])[_0x15f0e2(0x225)]('LL');break;case'ColumnDate3':_0x168cd9=moment(_0x176e85[_0x556696]['ColumnDate3'])[_0x15f0e2(0x225)]('LL');break;case _0x15f0e2(0x20f):_0x168cd9=moment(_0x176e85[_0x556696][_0x15f0e2(0x20f)])[_0x15f0e2(0x225)]('LL');break;case _0x15f0e2(0x15d):_0x168cd9=moment(_0x176e85[_0x556696]['ColumnDate5'])['format']('LL');break;case _0x15f0e2(0x1d4):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1d4)];break;case _0x15f0e2(0x250):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x250)];break;case _0x15f0e2(0x178):_0x168cd9=_0x176e85[_0x556696]['Priority'];break;case'YesNo':_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x19d)];break;case _0x15f0e2(0x188):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x188)];break;case _0x15f0e2(0x1b4):_0x168cd9=_0x176e85[_0x556696][_0x15f0e2(0x1b4)];break;}return _0x168cd9==undefined&&(/^[a-zA-Z0-9- ]*$/[_0x15f0e2(0x1dc)](_0x3239fd)==!![]?_0x168cd9='0':_0x168cd9=$[_0x15f0e2(0x19e)](_0x3239fd)),_0x168cd9;}function ColumnValueByColumnNameforTable(_0x4d2d26,_0x1fbb5e,_0x1930de){var _0x5c0f99=a1_0x2bac,_0x5adc14;switch(_0x1fbb5e){case'ColumnText1':_0x5adc14=_0x4d2d26[_0x1930de]['ColumnText1'];break;case _0x5c0f99(0x186):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x186)];break;case _0x5c0f99(0x1b3):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1b3)];break;case _0x5c0f99(0x23e):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x23e)];break;case _0x5c0f99(0x249):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x249)];break;case _0x5c0f99(0x1d0):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnText6'];break;case _0x5c0f99(0x1c1):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1c1)];break;case _0x5c0f99(0x1ff):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1ff)];break;case _0x5c0f99(0x264):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x264)];break;case _0x5c0f99(0x1f9):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnText10'];break;case'ColumnNumber1':_0x5adc14=_0x4d2d26[_0x1930de]['ColumnNumber1'];break;case _0x5c0f99(0x215):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x215)];break;case _0x5c0f99(0x207):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x207)];break;case _0x5c0f99(0x18e):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x18e)];break;case _0x5c0f99(0x200):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnNumber5'];break;case'ColumnDate1':_0x5adc14=moment(_0x4d2d26[_0x1930de][_0x5c0f99(0x16d)])[_0x5c0f99(0x225)]('LL');break;case'ColumnDate2':_0x5adc14=moment(_0x4d2d26[_0x1930de][_0x5c0f99(0x1ed)])[_0x5c0f99(0x225)]('LL');break;case _0x5c0f99(0x1ee):_0x5adc14=moment(_0x4d2d26[_0x1930de]['ColumnDate3'])[_0x5c0f99(0x225)]('LL');break;case _0x5c0f99(0x20f):_0x5adc14=moment(_0x4d2d26[_0x1930de][_0x5c0f99(0x20f)])[_0x5c0f99(0x225)]('LL');break;case'ColumnDate5':_0x5adc14=moment(_0x4d2d26[_0x1930de][_0x5c0f99(0x15d)])[_0x5c0f99(0x225)]('LL');break;case _0x5c0f99(0x1d4):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnMultiline1'];break;case _0x5c0f99(0x250):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnMultiline2'];break;case'Priority':_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x178)];break;case _0x5c0f99(0x19d):_0x5adc14=_0x4d2d26[_0x1930de]['YesNo'];break;case _0x5c0f99(0x1b6):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1b6)];break;case _0x5c0f99(0x1d2):_0x5adc14=_0x4d2d26[_0x1930de]['Checkbox2'];break;case'Checkbox3':_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1a4)];break;case _0x5c0f99(0x258):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x258)];break;case _0x5c0f99(0x181):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x181)];break;case _0x5c0f99(0x206):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x206)];break;case _0x5c0f99(0x189):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnPeople2'];break;case _0x5c0f99(0x1b8):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x1b8)];break;case _0x5c0f99(0x214):_0x5adc14=_0x4d2d26[_0x1930de]['ColumnPeople4'];break;case _0x5c0f99(0x204):_0x5adc14=_0x4d2d26[_0x1930de][_0x5c0f99(0x204)];break;case _0x5c0f99(0x1b4):_0x5adc14=_0x4d2d26[_0x1930de]['AutoSerialNumber'];break;}return _0x5adc14;}function minmax(_0xcada5e,_0x485431,_0x227ce6){if(parseInt(_0xcada5e)<_0x485431||isNaN(parseInt(_0xcada5e)))return _0x485431;else{if(parseInt(_0xcada5e)>_0x227ce6)return _0x227ce6;else return _0xcada5e;}}function GetTableData(){var _0x122a2d=a1_0x2bac,_0x40b8cf=window[_0x122a2d(0x22e)](titanForWork[_0x122a2d(0x17d)]('Template')),_0x1c5fd8=window[_0x122a2d(0x22e)](titanForWork['getQueryStringParameter']('RecNo')),_0x48a2c4=_0x122a2d(0x187)+_0x1c5fd8+_0x122a2d(0x1a2),_0x3a164a=RequestData(_0x48a2c4);console['log'](_0x3a164a);}function UpdateTableData(){var _0x3ef18e=a1_0x2bac,_0x3db22d=window['atob'](titanForWork[_0x3ef18e(0x17d)](_0x3ef18e(0x20a))),_0x46c231=window['atob'](titanForWork[_0x3ef18e(0x17d)](_0x3ef18e(0x246))),_0x5a7b18=_0x3ef18e(0x187)+_0x46c231+_0x3ef18e(0x1a2),_0x5dd694=RequestData(_0x5a7b18);console[_0x3ef18e(0x1f0)](_0x5dd694);var _0x1aab21=[],_0x4ad431=0x0;if(_0x5dd694['length']>0x0){$(_0x3ef18e(0x1ab))[_0x3ef18e(0x1b0)](function(){var _0x13f0d3=_0x3ef18e,_0x1be0f0=0x0,_0x592176=$(this)[_0x13f0d3(0x25a)]('id');_0x592176=_0x592176['split']('_')[0x1];var _0x28aca2=$[_0x13f0d3(0x220)](_0x5dd694,function(_0x188193){return _0x188193['SetupIDId']==_0x592176;}),_0x12380d=$(this)[_0x13f0d3(0x1d1)](_0x13f0d3(0x1c8))[_0x13f0d3(0x18a)];$(this)['find'](_0x13f0d3(0x1c8))[_0x13f0d3(0x1b0)](function(_0x7e525d,_0x407e4d){var _0x10eb5b=_0x13f0d3,_0x3065ad=$(this)[_0x10eb5b(0x25a)]('id');_0x3065ad=_0x3065ad[_0x10eb5b(0x1b5)]('_')[0x1],console[_0x10eb5b(0x1f0)](_0x7e525d);var _0x314be7=![],_0x50011d=![];ischeck=![];var _0x532ae2='',_0x184658={};$(this)['find']('td:not(:last-child)')['each'](function(){var _0xe700bb=_0x10eb5b;_0x532ae2=$(this)[_0xe700bb(0x1d1)](_0xe700bb(0x23a))['attr'](_0xe700bb(0x26e));if($(this)[_0xe700bb(0x25a)](_0xe700bb(0x21a))=='Checkbox')_0x184658[_0x532ae2]=$(this)[_0xe700bb(0x1d1)]('.input-sm')[_0xe700bb(0x232)](_0xe700bb(0x25d));else{if($(this)[_0xe700bb(0x25a)](_0xe700bb(0x21a))=='Date'){var _0x5e3e46=$(this)[_0xe700bb(0x1d1)](_0xe700bb(0x23a))[_0xe700bb(0x226)]();_0x5e3e46==''&&(_0x5e3e46=null),_0x184658[_0x532ae2]=_0x5e3e46;}else{if($(this)[_0xe700bb(0x25a)](_0xe700bb(0x21a))==_0xe700bb(0x19c)){var _0x4444ef=[],_0x2a803d=$(this)[_0xe700bb(0x1d1)](_0xe700bb(0x22b))['attr']('id');if(_0x2a803d==null)_0x184658[_0x532ae2+'Id']={'results':_0x4444ef};else{var _0x4c5a02=$(_0xe700bb(0x26d)+_0x2a803d+_0xe700bb(0x271)),_0x54fd53=SPClientPeoplePicker[_0xe700bb(0x1d9)][_0x4c5a02[0x0]['id']],_0x1333e2=_0x54fd53['GetAllUserInfo']();for(var _0x16bbd6=0x0;_0x16bbd6<_0x1333e2['length'];_0x16bbd6++){var _0x280fed=![],_0x252980=AllTaskUsersEmployeeuser['filter'](function(_0x1bcac0){var _0x419ae4=_0xe700bb;return _0x1bcac0[_0x419ae4(0x208)]==_0x1333e2[_0x16bbd6][_0x419ae4(0x248)][_0x419ae4(0x179)]&&(_0x280fed=!![]),_0x1bcac0['EMail']==_0x1333e2[_0x16bbd6][_0x419ae4(0x248)][_0x419ae4(0x179)];});if(!_0x280fed)return alert('Selected\x20user\x20'+_0x1333e2[_0x16bbd6][_0xe700bb(0x1e7)]+'\x20not\x20in\x20list'),![];_0x4444ef[_0xe700bb(0x260)](_0x252980[0x0][_0xe700bb(0x228)]);}_0x5e3e46=_0x4444ef,_0x184658[_0x532ae2+'Id']={'results':_0x4444ef};}}else{var _0x5e3e46=$(this)[_0xe700bb(0x1d1)](_0xe700bb(0x23a))[_0xe700bb(0x226)]();$(this)[_0xe700bb(0x25a)](_0xe700bb(0x21a))=='Number'?_0x532ae2!=undefined&&(_0x5e3e46==''?_0x184658[_0x532ae2]='0':_0x184658[_0x532ae2]=_0x5e3e46):_0x5e3e46==''?(_0x184658[_0x532ae2]='',_0x50011d=!![]):_0x184658[_0x532ae2]=_0x5e3e46;}}}if($(this)[_0xe700bb(0x25a)](_0xe700bb(0x1e9))==_0xe700bb(0x190)&&$(this)[_0xe700bb(0x1d1)](_0xe700bb(0x23a))[_0xe700bb(0x226)]()==''){var _0xb478aa=$(this)[_0xe700bb(0x25a)](_0xe700bb(0x1d6));_0x1aab21[_0xe700bb(0x260)](_0xb478aa);}});if(ischeck){return![];alert(ischeck);}var _0x54c8f7=$('#'+_0x592176+_0x10eb5b(0x256));if(_0x3065ad<=_0x28aca2[_0x10eb5b(0x18a)]){if(_0x28aca2[_0x7e525d]!=null){var _0x15d01b=_0x10eb5b(0x17c);_0x184658[_0x10eb5b(0x1ea)]={'type':_0x15d01b};var _0x123fdc=$[_0x10eb5b(0x1f3)]();$[_0x10eb5b(0x185)]({'url':_spPageContextInfo[_0x10eb5b(0x18c)]+_0x10eb5b(0x1c3)+_0x28aca2[_0x7e525d]['ID']+')','type':_0x10eb5b(0x1f6),'async':![],'headers':{'accept':_0x10eb5b(0x217),'X-RequestDigest':$(_0x10eb5b(0x18b))['val'](),'X-Http-Method':_0x10eb5b(0x1f6),'If-Match':'*','content-Type':_0x10eb5b(0x217)},'data':JSON[_0x10eb5b(0x1f7)](_0x184658),'success':function(_0x1703cb){var _0x4a4291=_0x10eb5b;$(_0x4a4291(0x196))[_0x4a4291(0x226)]()==''&&(console[_0x4a4291(0x1f0)](_0x4a4291(0x1af)),_0x314be7=_0x4a4291(0x190));},'error':function(_0x5f0e93){alert(JSON['stringify'](_0x5f0e93));}});}}else{_0x184658[_0x10eb5b(0x244)]=$(_0x10eb5b(0x1a3))[_0x10eb5b(0x177)](),_0x184658['SetupIDId']=_0x592176,_0x184658[_0x10eb5b(0x24d)]=_0x46c231;var _0x15d01b=_0x10eb5b(0x17c);_0x184658[_0x10eb5b(0x1ea)]={'type':_0x15d01b},$['ajax']({'url':_spPageContextInfo[_0x10eb5b(0x18c)]+'/_api/web/lists/GetByTitle(\x27ApprovalProcessListTable\x27)/items','type':_0x10eb5b(0x19a),'async':![],'data':JSON[_0x10eb5b(0x1f7)](_0x184658),'headers':{'accept':_0x10eb5b(0x217),'Content-Type':'application/json;odata=verbose','X-RequestDigest':$('#__REQUESTDIGEST')[_0x10eb5b(0x226)](),'X-HTTP-Method':'POST'},'success':function(_0xf722e){sts=!![];},'error':function(_0x81838e){var _0x3aed86=_0x10eb5b;console[_0x3aed86(0x1f0)](_0x81838e);}});}});});if(ischeck==!![]){return![];alert(ischeck);}}}var isValid=!![];function validateTable(){var _0x30ff77=a1_0x2bac,_0x5309bc=[];isValid=!![],$(_0x30ff77(0x233))[_0x30ff77(0x1b0)](function(){var _0x4877b7=_0x30ff77,_0x25e01d=$(this)[_0x4877b7(0x25a)]('id');_0x25e01d=_0x25e01d['split']('_')[0x1],console['log'](_0x25e01d),$(this)[_0x4877b7(0x1d1)](_0x4877b7(0x1c8))['each'](function(){var _0x2df629=_0x4877b7,_0x142b95=![];ischeck=![],$(this)[_0x2df629(0x1d1)](_0x2df629(0x22c))[_0x2df629(0x1b0)](function(){var _0x452b2b=_0x2df629;if($(this)[_0x452b2b(0x25a)](_0x452b2b(0x1e9))==_0x452b2b(0x190)&&$(this)[_0x452b2b(0x1d1)]('.input-sm')['val']()==''){var _0x4ddaf4=$(this)['attr'](_0x452b2b(0x1d6));_0x5309bc[_0x452b2b(0x260)](_0x4ddaf4);}var _0x5be2be='',_0x313d29='';arrNumValtbl[_0x452b2b(0x18a)]>0x0&&(_0x5be2be=$[_0x452b2b(0x220)](arrNumValtbl,function(_0x4b8689){var _0x24089d=_0x452b2b;return _0x4b8689[_0x24089d(0x252)]==_0x25e01d;}));arrDateTbl[_0x452b2b(0x18a)]>0x0&&(_0x313d29=$['grep'](arrDateTbl,function(_0x20fab9){return _0x20fab9['tId']==_0x25e01d;}));var _0x98044d=$(this)['find'](_0x452b2b(0x23a))[_0x452b2b(0x25a)](_0x452b2b(0x26e)),_0x3ca338=$(this)['find'](_0x452b2b(0x23a))['val']();if(_0x5be2be[_0x452b2b(0x18a)]>0x0)for(let _0x42ead0=0x0;_0x42ead0<_0x5be2be[_0x452b2b(0x18a)];_0x42ead0++){if(_0x98044d==_0x5be2be[_0x42ead0]['col']){if(_0x3ca338!=''&&(_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]!=null&&_0x5be2be[_0x42ead0]['max']!=null)){if(_0x3ca338>=_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]&&_0x3ca338<=_0x5be2be[_0x42ead0][_0x452b2b(0x243)])console[_0x452b2b(0x1f0)](_0x3ca338);else{alert(_0x5be2be[_0x42ead0][_0x452b2b(0x1fc)]+_0x452b2b(0x1a1)+_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]+_0x452b2b(0x163)+_0x5be2be[_0x42ead0][_0x452b2b(0x243)]),ischeck=!![],isValid=![];return![];alert(_0x452b2b(0x25d));break;}}else{if(_0x3ca338!=''&&(_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]!=null&&_0x5be2be[_0x42ead0][_0x452b2b(0x243)]==null)){if(_0x3ca338>=_0x5be2be[_0x42ead0][_0x452b2b(0x16a)])console[_0x452b2b(0x1f0)](_0x3ca338);else{alert(_0x5be2be[_0x42ead0][_0x452b2b(0x1fc)]+_0x452b2b(0x1e5)+_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]),ischeck=!![],isValid=![];return![];break;}}else{if(_0x3ca338!=''&&(_0x5be2be[_0x42ead0]['min']==null&&_0x5be2be[_0x42ead0]['max']!=null)){if(_0x3ca338<=_0x5be2be[_0x42ead0][_0x452b2b(0x243)])console[_0x452b2b(0x1f0)](_0x3ca338);else{alert(_0x5be2be[_0x42ead0][_0x452b2b(0x1fc)]+_0x452b2b(0x24e)+_0x5be2be[_0x42ead0][_0x452b2b(0x243)]),ischeck=!![],isValid=![];return![];break;}}else _0x3ca338!=''&&(_0x5be2be[_0x42ead0][_0x452b2b(0x16a)]==null&&_0x5be2be[_0x42ead0][_0x452b2b(0x243)]==null)&&console[_0x452b2b(0x1f0)](_0x3ca338);}}}}if(_0x313d29[_0x452b2b(0x18a)]>0x0)for(let _0x827d72=0x0;_0x827d72<_0x313d29[_0x452b2b(0x18a)];_0x827d72++){if(_0x98044d==_0x313d29[_0x827d72]['col']){if(_0x3ca338!=''&&_0x313d29[_0x827d72][_0x452b2b(0x203)]==_0x452b2b(0x205)){if(moment(_0x3ca338)<moment(new Date()))console['log'](_0x3ca338);else{alert(_0x313d29[_0x827d72][_0x452b2b(0x1fc)]+_0x452b2b(0x1c6)),ischeck=!![],isValid=![];return![];alert('checked');break;}}else{if(_0x3ca338!=''&&_0x313d29[_0x827d72][_0x452b2b(0x203)]=='Past\x20Date\x20included\x20Today'){if(moment(_0x3ca338)<=moment(new Date()))console[_0x452b2b(0x1f0)](_0x3ca338);else{alert(_0x313d29[_0x827d72]['title']+'\x20should\x20be\x20past\x20date\x20included\x20today..!'),ischeck=!![],isValid=![];return![];alert(_0x452b2b(0x25d));break;}}else{if(_0x3ca338!=''&&_0x313d29[_0x827d72][_0x452b2b(0x203)]==_0x452b2b(0x167)){if(moment(_0x3ca338)>moment(new Date()))console[_0x452b2b(0x1f0)](_0x3ca338);else{alert(_0x313d29[_0x827d72][_0x452b2b(0x1fc)]+_0x452b2b(0x1ad)),ischeck=!![],isValid=![];return![];alert(_0x452b2b(0x25d));break;}}else{if(_0x3ca338!=''&&_0x313d29[_0x827d72][_0x452b2b(0x203)]==_0x452b2b(0x165)){if(moment(_0x3ca338)>=moment(new Date()))console['log'](_0x3ca338);else{alert(_0x313d29[_0x827d72]['title']+_0x452b2b(0x160)),ischeck=!![],isValid=![];return![];alert('checked');break;}}else{if(_0x3ca338!=''&&_0x313d29[_0x827d72][_0x452b2b(0x203)]==_0x452b2b(0x259)){if(moment(_0x3ca338)==moment(new Date()))console['log'](_0x3ca338);else{alert(_0x313d29[_0x827d72][_0x452b2b(0x1fc)]+_0x452b2b(0x1b9)),ischeck=!![],isValid=![];return![];alert(_0x452b2b(0x25d));break;}}}}}}}}if(ischeck==!![]){isValid=![];return![];alert(ischeck);}});});if(_0x5309bc['length']>0x0)for(let _0x1d7c48=0x0;_0x1d7c48<_0x5309bc[_0x4877b7(0x18a)];_0x1d7c48++){alert(_0x4877b7(0x1e3)+_0x5309bc[_0x1d7c48]+''),isValid=![];return![];break;}});}
+$( function() {
+	$( ".datepicker" ).datepicker({ dateFormat: 'MM dd, yy' });
+});
+  
+  
+var totalrow = 0;
+var tblcol = []; 
+var IsTotalneed = false;
+var ResultData = '';
+//var tblcol = ''; 
+
+var FormulaColumnListTbl =[];
+var ColumnTotalList=[];
+var arrNumValtbl=[];
+var arrDateTbl =[];
+var arrMandatetbl=[];
+var arrcoldefval =[];
+var QueryTableData = [];
+var ColumnValuesTotal=[];
+function appenedtableformat(itemid, tempId, PermissionStatus, width, tblEdit)
+{
+	var restendpoint = "/_api/web/lists/getbytitle('ApprovalTemplateTable')/items?$select=*,SetupID/ID&$expand=SetupID&$filter=SetupID eq '"+itemid+"'&$orderby=SequenceNo asc";
+    GetData(restendpoint).then(function(response)
+    {
+    	if(response.d.results.length > 0)
+    	{	    		
+    		var valuefordefault = '';
+    		//arrNumValtbl =[];
+    		//arrMandatetbl =[];
+        	tblcol.push({'tblId' :itemid, 'data': response.d.results});         
+        	ResultData = response.d.results;        	
+        	var tableappend = '<div class="col-xs-12 text-center dyamicTableboxes" id="tbldiv_'+itemid+'"><div class = "wrapping_dynamic" id="tbldivWrap_'+itemid+'">';     	
+            tableappend += "<table class='table table-striped table-bordered ' id='TblApprovalEntry_"+itemid+"'><thead class='thead-dark'><tr>";                  
+           	tableappend += "<th class='columnnametxt' scope='col'  style='text-align:center'>#</th>";
+	          $.map(response.d.results, function(responsere){
+	              tableappend +="<th class='columnnametxt' scope='col' style='text-align:center' mandatorycol='"+responsere.Mandatory+"' alerttext='"+responsere.Title+"'>"+responsere.Title+"</th>";
+	          })
+	          tableappend += "<tr></thead><tbody class='tablebosyappend'><tr id='"+itemid+"_1'>";
+	          tableappend +="<td class='Colsequence' value='1' >1</td>";  
+	          QueryTableData = []	              
+	          if(window.location.href.indexOf("?")> -1) 
+				{
+					var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+					if(Passingtoken == 'Process Steps' || Passingtoken == 'Draft')
+					{						
+						//ColumnValuesTotal=[];
+						var cuntrIndx = 0;
+						var ItemId = window.atob(titanForWork.getQueryStringParameter('RecNo'));
+						var restendpoint = "/_api/web/lists/getbytitle('ApprovalProcessListTable')/items?$select=*,SetupID/ID,RequestID/ID,ColumnPeople1/Id,ColumnPeople1/Title,ColumnPeople2/Id,ColumnPeople2/Title,ColumnPeople3/Id,ColumnPeople3/Title,ColumnPeople4/Id,ColumnPeople4/Title,ColumnPeople5/Id,ColumnPeople5/Title&$expand=SetupID,RequestID,ColumnPeople1,ColumnPeople2,ColumnPeople3,ColumnPeople4,ColumnPeople5 &$filter=RequestID eq '"+ItemId+"' and SetupID eq '"+itemid+"'&$orderby=ID asc";
+    					QueryTableData = RequestData(restendpoint);	
+    					if(QueryTableData.length> 0){    					
+    					for(i=0;i< QueryTableData.length;i++)  
+			          	{	
+			          	var count = 1;
+		          		if(i > 0){
+		          			count = i+1;
+		          			tableappend += "<tr id='"+itemid+"_"+count+"'>";
+		          			tableappend +="<td class='Colsequence' value='"+count+"' >"+count+"</td>";  	          		
+		          		}				       
+				       	for(x=0;x<ResultData.length;x++)
+						  {	
+						  	if(ResultData[x].Mandatory == true){
+				          		arrMandatetbl.push({'tblId' : itemid, 'colname' : ResultData[x].ColumnName, 'Title' : ResultData[x].Title, 'Mandatory' : ResultData[x].Mandatory })
+				          	}
+				          	tableappend +="<td class='columnnametxt' name='"+ResultData[x].Title+"' mandatorycol='"+ResultData[x].Mandatory+"' alerttext='"+ResultData[x].Title+"' coltype='"+ResultData[x].ColumnType +"'>";
+								var cuntrIndx = 0;
+								var ColumnValue = '';
+								ColumnValue = ColumnValueByColumnNameforTable(QueryTableData,ResultData[x].ColumnName,i)    								
+								if(ColumnValue ==  null)	{	valuefordefault = '';	}else{	valuefordefault = ColumnValue;	}
+								if(ResultData[x].NeedTotal == true && ResultData[x].ColumnType == 'Number')
+								{
+									var ColumnName=ResultData[x].Title;        								
+									ColumnValuesTotal.push({ Column:ColumnName, Total:ColumnValueByColumnNameforTable(QueryTableData, ResultData[x].ColumnName,i), TableId:ResultData[x].SetupIDId, ColIndex:x });
+								} 
+							if (ResultData[x].ColumnType == "Date" || ResultData[x].ColumnType == "DueDate") 
+							{
+								arrDateTbl.push({'tId' : itemid,'title': ResultData[x].Title,'col': ResultData[x].ColumnName, 'validation': ResultData[x].DateValidation});
+							//	tableappend += '<input type="text" class="form-control input-sm stopenterdata Date"  data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" id="tbl_'+responsere.ColumnName+'"></td>'; 
+								var c= i+1;
+								if(valuefordefault == "Invalid date"){valuefordefault = ''} 
+								if(PermissionStatus == ''){								
+								tableappend += '<input type="text" class="form-control input-sm Date datepicker"   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+valuefordefault.toString()+'"></td>'; 
+								}else{
+								tableappend += '<input type="text" class="form-control input-sm "   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+valuefordefault+'"></td>'; 
+								}
+							}else if (ResultData[x].ColumnType == "Checkbox") {		
+								if(valuefordefault == 0 ||valuefordefault == null || valuefordefault == ''){
+									var value = '';
+								}else{						
+									var value = 'checked';
+								}
+								tableappend += '<input type="checkbox" class="input-sm checkbox_widthmange" value="'+value +'" data-original-value="'+ResultData[x].ColumnName+'"  id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" '+value+'>'; 								
+							}
+							else if(ResultData[x].ColumnType == 'Person'){
+								var usr = '';
+								if(valuefordefault != null && valuefordefault != ""){													
+								 for(u=0;u<valuefordefault.results.length;u++){
+								 /*	var arr = AllTaskUsersEmployeeuser.filter(function (filterData) {
+									     return filterData.UserId == valuefordefault.results[u].Id;
+									 }); */
+									  var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+valuefordefault.results[u].Id+"' and Status eq 'Active'";
+							 		  var arr = RequestGetdata(QueryCheckActive);					
+									 if(PermissionStatus == ''){												
+								 		usr = arr[0].EMail;
+								 		tableappend += '<input type="text" class="form-control input-sm "   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+usr+'"></td>'; 		
+								 	}else{
+								 		usr = arr[0].LoginName;
+								 		tableappend += '<input type="text" class="form-control input-sm "   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+usr+'"></td>'; 	
+								 	}
+								 }
+								}
+							/*	if(Passingtoken == 'Draft'){																	
+									var classest = 'Cover_PPl ';
+									ddpLabel = "tbl_"+itemid+"_"+count+"_"+ResultData[x].ColumnName;
+									tableappend = '<div id="'+ddpLabel+'" class="dynamicvalfeachcls	'+classest+'" data-original-value = "'+ResultData[x].ColumnName+'" coltype ="'+ResultData[x].ColumnType+'"></div>';
+									initializePeoplePicker(ddpLabel);
+								//	setTimeout(bindUser(ddpLabel,valuefordefault),1000); 
+								}*/
+								
+							}					
+							else if(ResultData[x].ColumnType == 'Number')
+							{
+							if(ResultData[x].MinNumber != null && ResultData[x].MaxNumber != null){
+								arrNumValtbl.push({'tId' : itemid,'title': ResultData[x].Title,'col': ResultData[x].ColumnName, 'min': ResultData[x].MinNumber,'max': ResultData[x].MaxNumber});
+							}
+							var datatypeval = '', setnumberlimit = '';
+							if(ResultData[x].NumberValidation == "Integer"){
+								datatypeval += "onkeypress='return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13 || event.charCode == 45) ? null : event.charCode >= 48 && event.charCode <= 57 '";//"onkeypress=' return isNumber(event)'";	//'onkeyup return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"'
+								setnumberlimit += "maxlength='15'";
+	
+							}else if(ResultData[x].NumberValidation == "Decimal"){										
+								
+								setnumberlimit += "maxlength='15'";
+								datatypeval += 'onkeydown = "isDecimal(event)";  onkeypress="isValidate(this)"'; 										
+							}	
+							if(ResultData[x].NeedTotal == true)
+							{ 	
+								ColumnTotalList.push({'Setup':itemid,'ColumnName':ResultData[x].Title})	
+								IsTotalneed = true;
+								var  Title = ResultData[x].Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', ''); Title= Title.replace(/[\])}[{(]/g, '');
+								var IsCalculate = false, Formula ;
+								if(ResultData[x].CalculatedValue == true && ResultData[x].ColumnName == 'CalculatedValue')
+								{
+									FormulaColumnListTbl.push({'Setup':itemid, 'Formula':ResultData[x].Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+									IsCalculate = true 
+									Formula = ResultData[x].Formula;
+									if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											NewExp = NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        											
+											//tbody = tbody+ "<td style='text-align: right;'>"+result+"</td>";        												
+											tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+											var ColumnName=ResultData[x].Title;        												
+											if(ResultData[x].NeedTotal == true)
+											{
+												ColumnValuesTotal.push({
+													Column:ColumnName, Total:result, TableId:QueryTableData[i].SetupIDId , ColIndex:x,
+												});
+											}
+										}else{
+											tableappend += "<td>"+NewExp+"</td>";
+											//tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+ResultData[x].ColumnName+'" ></td>';      
+										}  
+									}
+									}
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+ResultData[x].ColumnName+'" readonly ></td>';      
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+									//DynamicSum(itemid,responsere.Title,IsCalculate,Formula);
+								}
+								else
+								{
+									tableappend += '<input type="text" class="form-control input-sm NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(this,\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'"></td>';      
+								}
+								
+							 //  	DynamicSum('',itemid,responsere.Title,IsCalculate,Formula);
+							}
+							else
+							 {
+								if(ResultData[x].CalculatedValue == true && ResultData[x].ColumnName == 'CalculatedValue')
+								{
+									var  Title = ResultData[x].Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', '');Title= Title.replace(/[\])}[{(]/g, '');
+									FormulaColumnListTbl.push({'Setup':itemid, 'Formula':ResultData[x].Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+									IsCalculate = true 
+									Formula = ResultData[x].Formula;
+									if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											NewExp = NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        											
+											//tbody = tbody+ "<td style='text-align: right;'>"+result+"</td>";        												
+											tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+											var ColumnName=ResultData[x].Title;        												
+											if(ResultData[x].NeedTotal == true)
+											{
+												ColumnValuesTotal.push({
+													Column:ColumnName, Total:result, TableId:QueryTableData[i].SetupIDId , ColIndex:x,
+												});
+											}
+										}else{
+											tableappend += "<td>"+NewExp+"</td>";											
+										}  
+									}
+									}																																							
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+								}else{
+									tableappend += '<input type="text" class="form-control input-sm" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" onkeyup="CalculateNew(this,\''+itemid+'\')"></td>';      
+								}
+							 }
+							}
+							else
+							{
+								if(ResultData[x].ColumnType == "Multiline"){
+			               		tableappend += "<div class='form-control input-sm' "+PermissionStatus+" data-original-value='"+ResultData[x].ColumnName+"' value='"+valuefordefault +"' style='height:100% !important;' id='tbl_"+itemid+"_"+count+"_"+ResultData[x].ColumnName+"'>"+valuefordefault +"</div></td>";
+			               		}else{ 	
+			               			var maxl = ResultData[x].TextValidation ? ResultData[x].TextValidation : '250';
+									tableappend += '<input class="form-control input-sm" '+PermissionStatus+'  data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" maxlength="'+maxl +'"></td>';      
+								}
+							}
+							//cuntrIndx = cuntrIndx + 1
+						}//)
+						tableappend += "</tr>";					
+						}
+					  }else{					
+				       	for(x=0;x<ResultData.length;x++)
+						  {	
+				          	tableappend +="<td class='columnnametxt' name='"+ResultData[x].Title+"' mandatorycol='"+ResultData[x].Mandatory+"' alerttext='"+ResultData[x].Title+"' coltype='"+ResultData[x].ColumnType +"'>";
+								var cuntrIndx = 0;
+								var ColumnValue = '';
+							//	ColumnValue = ColumnValueByColumnNameforTable(QueryTableData,ResultData[x].ColumnName,i)    								
+								if(ColumnValue ==  null)	{	valuefordefault = '';	}else{	valuefordefault = ColumnValue;	}
+								if(ResultData[x].NeedTotal == true && ResultData[x].ColumnType == 'Number')
+								{
+									var ColumnName=ResultData[x].Title;        								
+								//	ColumnValuesTotal.push({ Column:ColumnName, Total:ColumnValueByColumnNameforTable(QueryTableData, ResultData[x].ColumnName,i), TableId:ResultData[x].SetupIDId, ColIndex:x });
+								} 
+							if (ResultData[x].ColumnType == "Date" || ResultData[x].ColumnType == "DueDate") 
+							{
+								arrDateTbl.push({'tId' : itemid,'title': ResultData[x].Title,'col': ResultData[x].ColumnName, 'validation': ResultData[x].DateValidation});
+							//	tableappend += '<input type="text" class="form-control input-sm stopenterdata Date"  data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" id="tbl_'+responsere.ColumnName+'"></td>'; 
+							//	var c= i+1;
+								if(valuefordefault == "Invalid date"){valuefordefault = ''} 
+								if(PermissionStatus == ''){
+								tableappend += '<input type="text" class="form-control input-sm Date datepicker"   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+valuefordefault.toString()+'"></td>'; 
+								}else{
+								tableappend += '<input type="text" class="form-control input-sm "   data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" value="'+valuefordefault+'"></td>'; 
+								}
+							}else if (ResultData[x].ColumnType == "Checkbox") {	
+								if(valuefordefault == 0 ||valuefordefault == null || valuefordefault == ''){
+									var value = '';
+								}else{				
+									var value = 'checked';
+								}			
+								tableappend += '<input type="checkbox" class="input-sm checkbox_widthmange" value="" data-original-value="'+ResultData[x].ColumnName+'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" '+value+'>'; 								
+							}						
+							else if(ResultData[x].ColumnType == 'Number')
+							{
+							if(ResultData[x].MinNumber != null && ResultData[x].MaxNumber != null){
+								arrNumValtbl.push({'tId' : itemid,'title': ResultData[x].Title,'col': ResultData[x].ColumnName, 'min': ResultData[x].MinNumber,'max': ResultData[x].MaxNumber});
+							}
+							var datatypeval = '', setnumberlimit = '';
+							if(ResultData[x].NumberValidation == "Integer"){
+								datatypeval += "onkeypress='return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13 || event.charCode == 45) ? null : event.charCode >= 48 && event.charCode <= 57 '";//"onkeypress=' return isNumber(event)'";	//'onkeyup return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"'
+								setnumberlimit += "maxlength='15'";
+	
+							}else if(ResultData[x].NumberValidation == "Decimal"){										
+								
+								setnumberlimit += "maxlength='15'";
+								datatypeval += 'onkeydown = "isDecimal(event)";  onkeypress="isValidate(this)"'; 										
+							}	
+							if(ResultData[x].NeedTotal == true)
+							{ 	
+								ColumnTotalList.push({'Setup':itemid,'ColumnName':ResultData[x].Title})	
+								IsTotalneed = true;
+								var  Title = ResultData[x].Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', ''); Title= Title.replace(/[\])}[{(]/g, ''); //Title.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');  
+								var IsCalculate = false, Formula ;
+								if(ResultData[x].CalculatedValue == true)
+								{
+									FormulaColumnListTbl.push({'Setup':itemid, 'Formula':ResultData[x].Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+									IsCalculate = true 
+									Formula = ResultData[x].Formula;
+									if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											//NewExp = NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        											
+											//tbody = tbody+ "<td style='text-align: right;'>"+result+"</td>";        												
+											tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+											var ColumnName=ResultData[x].Title;        												
+											if(ResultData[x].NeedTotal == true)
+											{
+												ColumnValuesTotal.push({
+													Column:ColumnName, Total:result, TableId:QueryTableData[i].SetupIDId , ColIndex:x,
+												});
+											}
+										}else{
+										//	tableappend += "<td>"+NewExp+"</td>";
+											tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" ></td>';      
+										}  
+									}
+									}
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+									//DynamicSum(itemid,responsere.Title,IsCalculate,Formula);
+								}
+								else
+								{
+									tableappend += '<input type="text" class="form-control input-sm NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(this,\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'"></td>';      
+								}
+								
+							 //  	DynamicSum('',itemid,responsere.Title,IsCalculate,Formula);
+							}
+							else
+							 {
+								if(ResultData[x].CalculatedValue == true && ResultData[x].ColumnName == 'CalculatedValue')
+								{
+									var  Title = ResultData[x].Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', '');Title= Title.replace(/[\])}[{(]/g, '');
+									FormulaColumnListTbl.push({'Setup':itemid, 'Formula':ResultData[x].Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+									IsCalculate = true 
+									Formula = ResultData[x].Formula;
+									if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											NewExp = NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        											
+											//tbody = tbody+ "<td style='text-align: right;'>"+result+"</td>";        												
+											tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+											var ColumnName=ResultData[x].Title;        												
+											if(ResultData[x].NeedTotal == true)
+											{
+												ColumnValuesTotal.push({
+													Column:ColumnName, Total:result, TableId:QueryTableData[i].SetupIDId , ColIndex:x,
+												});
+											}
+										}else{
+										//	tableappend += "<td>"+NewExp+"</td>";											
+										}  
+									}
+									}																																							
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" onfocusin="return CalculateValue(this, \''+ResultData[x].Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+ResultData[x].Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+ResultData[x].ColumnName+'" readonly ></td>';      
+									//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+								}else{
+									tableappend += '<input type="text" class="form-control input-sm" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" onkeypress="return isNumber(event)" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" onkeyup="CalculateNew(this,\''+itemid+'\')"></td>';      
+								}
+							 }
+							}
+							else
+							{
+								if(ResultData[x].ColumnType == "Multiline"){
+			               		tableappend += "<div class='form-control input-sm' "+PermissionStatus+" data-original-value='"+ResultData[x].ColumnName+"' value='"+valuefordefault +"' style='height:100% !important;' id='tbl_"+itemid+"_"+count+"_"+ResultData[x].ColumnName+"'>"+valuefordefault +"</div></td>";
+			               		}else{ 	
+			               			var maxl = ResultData[x].TextValidation ? ResultData[x].TextValidation : '250';
+									tableappend += '<input class="form-control input-sm" '+PermissionStatus+'  data-original-value="'+ResultData[x].ColumnName+'" value="'+valuefordefault +'" id="tbl_'+itemid+'_'+count+'_'+ResultData[x].ColumnName+'" maxlength="'+maxl +'"></td>';      
+								}
+							}
+							//cuntrIndx = cuntrIndx + 1
+						}//)
+						tableappend += "</tr>";
+					  }
+					
+				    }else{
+			  $.map(response.d.results, function(responsere)
+	          {	
+				if(window.location.href.indexOf("?")> -1) 
+				{
+					var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+					if(Passingtoken == 'Initiation')
+					{	
+						tableappend +="<td class='columnnametxt' name='"+responsere.Title+"' mandatorycol='"+responsere.Mandatory+"' alerttext='"+responsere.Title+"' coltype='"+responsere.ColumnType +"'>";
+					}
+				}
+				valuefordefault = responsere.DefaultValue ? responsere.DefaultValue : '';
+				arrcoldefval.push({'tblId' : itemid, 'colname' : responsere.ColumnName, 'Type': responsere.ColumnType , 'Title' : responsere.Title, 'Defval' :  valuefordefault});
+				if(responsere.Mandatory == true){ 
+					arrMandatetbl.push({'tblId' : itemid, 'colname' : responsere.ColumnName, 'Title' : responsere.Title, 'Mandatory' : responsere.Mandatory })      			
+				}
+          	    if (responsere.ColumnType == "Date" || responsere.ColumnType == "DueDate") 
+	            {
+	            	arrDateTbl.push({'tId' : itemid,'title': responsere.Title,'col': responsere.ColumnName, 'validation': responsere.DateValidation});
+				//	tableappend += '<input type="text" class="form-control input-sm stopenterdata Date"  data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" id="tbl_'+responsere.ColumnName+'"></td>'; 
+					if(PermissionStatus == ''){
+					tableappend += '<input type="text" class="form-control input-sm Date datepicker"   data-original-value="'+responsere.ColumnName+'" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'"></td>'; 
+					}else{
+					tableappend += '<input type="text" class="form-control input-sm Date datepicker"   data-original-value="'+responsere.ColumnName+'" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'"></td>'; 
+					}
+				}			
+				else if (responsere.ColumnType == "Checkbox") {
+					if(valuefordefault == 0 ||valuefordefault == null || valuefordefault == ''){
+						var value = '';
+					}else{
+						var value = 'checked';
+					}												
+					tableappend += '<input type="checkbox" class="input-sm checkbox_widthmange" value="" data-original-value="'+responsere.ColumnName+'"  id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" '+value+'>'; 					
+				}
+				else if(responsere.ColumnType == 'Number')
+				{
+					var datatypeval = '', setnumberlimit = '';
+					if(responsere.MinNumber != null && responsere.MaxNumber != null){
+						arrNumValtbl.push({'tId' : itemid,'title':responsere.Title, 'col': responsere.ColumnName, 'min': responsere.MinNumber,'max': responsere.MaxNumber});
+					}
+					if(responsere.NumberValidation == "Integer"){
+						datatypeval += "onkeypress='return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13 || event.charCode == 45) ? null : event.charCode >= 48 && event.charCode <= 57 '"; //return isNumber(event)'";	//'onkeyup return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"'
+						setnumberlimit += "maxlength='15'";			
+					}else if(responsere.NumberValidation == "Decimal"){											
+						setnumberlimit += "maxlength='15'";
+						datatypeval += 'onkeydown= "isDecimal(event)";  onkeypress="isValidate(this)"'; 													
+					}	
+
+					if(responsere.NeedTotal == true)
+					{ 
+						ColumnTotalList.push({'Setup':itemid,'ColumnName':responsere.Title})	
+						IsTotalneed = true;
+						var  Title = responsere.Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', ''); Title= Title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, ""); //replace(/[\])}[{(]/g, '');  Title= Title.replace(/[\])}[{(]/g, '');//Title.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');  
+						var IsCalculate = false, Formula ;
+						if(responsere.CalculatedValue == true && responsere.ColumnName == 'CalculatedValue' )
+						{
+							FormulaColumnListTbl.push({'Setup':itemid, 'Formula':responsere.Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+					   		IsCalculate = true 
+					   		Formula = responsere.Formula;
+					   		if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											var evt = $.trim(Formula[q]);
+											if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+											{
+												NewExp = NewExp+evt;
+											}
+											//NewExp = //NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+											else{											
+												var FilteredValue = $.grep(ResultData, function(v) {
+												return v.ColumnName == evt;
+												});
+												if(FilteredValue.length > 0){
+												var CurrntVal = FilteredValue[0].DefaultValue ? FilteredValue[0].DefaultValue : 0; //$('td #tbl_'+itemid+'_1_'+evt).val()
+												}else{
+												var CurrntVal = evt;
+												}
+												if(CurrntVal == ""){CurrntVal = 0;}
+												if(CurrntVal != undefined){
+													NewExp = NewExp+CurrntVal;
+												}else{
+													NewExp = NewExp+evt;
+												}
+											}
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        																						
+											tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" readonly ></td>';      											
+										}										
+									  }
+									}
+
+					   	//	tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +'  '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_'+responsere.ColumnName+'" readonly ></td>';      
+					   		//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+					   		//DynamicSum(itemid,responsere.Title,IsCalculate,Formula);
+					   	}
+					   	else
+					   	{
+					   		tableappend += '<input type="text" class="form-control input-sm NeedTotal '+Title+'" '+setnumberlimit +'  '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(this,\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'"></td>';      
+					   	}
+					 //  	DynamicSum('',itemid,responsere.Title,IsCalculate,Formula);
+					}
+					else
+					{
+						if(responsere.CalculatedValue == true && responsere.ColumnName == 'CalculatedValue' )
+						{	
+							var  Title = responsere.Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', ''); Title= Title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, ""); //replace(/[\])}[{(]/g, ''); //Title.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');  
+							FormulaColumnListTbl.push({'Setup':itemid, 'Formula':responsere.Formula,'ColumnName':Title,'Rel':'tbl_'+Title});
+					   		IsCalculate = true 
+					   		Formula = responsere.Formula;
+					   		if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											var evt = $.trim(Formula[q]);
+											if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+											{
+												NewExp = NewExp+evt;
+											}
+											//NewExp = //NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+											else{											
+												var FilteredValue = $.grep(ResultData, function(v) {
+												return v.ColumnName == evt;
+												});
+												var CurrntVal = FilteredValue[0].DefaultValue ? FilteredValue[0].DefaultValue : 0; //$('td #tbl_'+itemid+'_1_'+evt).val()
+												if(CurrntVal == ""){CurrntVal = 0;}
+												if(CurrntVal != undefined){
+													NewExp = NewExp+CurrntVal;
+												}else{
+													NewExp = NewExp+evt;
+												}
+											}
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											result = result.toString();        																						
+											tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" readonly ></td>';      											
+										}										
+									  }
+									}
+					   		//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" '+setnumberlimit +'  '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'"  onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" readonly ></td>';      
+					   		//tableappend += '<input type="text" class="form-control NeedTotal '+Title+'" style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+responsere.DefaultValue+'" onkeypress="return isNumber(event)" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+responsere.ColumnName+'" readonly ></td>';      
+					   	}else{
+		            		tableappend += '<input type="text" class="form-control input-sm" '+setnumberlimit +'  '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" onkeyup="CalculateNew(this,\''+itemid+'\')" ></td>';      
+		            	}
+		            }
+				}
+               	else
+               	{	if(responsere.ColumnType == "Multiline"){
+               		tableappend += "<div class='form-control input-sm' "+PermissionStatus+" data-original-value='"+responsere.ColumnName+"' value='"+valuefordefault +"' style='' id='tbl_"+itemid+"_1_"+responsere.ColumnName+"'>"+valuefordefault +"</div></td>";
+               		}else{
+               		var maxl = responsere.TextValidation ? responsere.TextValidation : '250';
+	           		tableappend += '<input class="form-control input-sm" '+PermissionStatus+' data-original-value="'+responsere.ColumnName+'" value="'+valuefordefault +'" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" maxlength="'+maxl+'"></td>';      
+	           		}
+	           	}
+			})	
+					
+			}					
+		}
+			///	}   // 	tableappend += "</tr>";         	
+          	
+         	tableappend += "<tr class='totalfield' scope='col'>";
+         	tableappend +="<td class='totalRecord' value=''>Total:</td>";      
+         	if(QueryTableData.length > 0){         		
+				var UniqueColumn = [...new Map(ColumnValuesTotal.map(item => [item['Column'], item])).values()];
+				var FilteredValue = $.grep(ColumnValuesTotal, function(v) {
+				return v.TableId == itemid;
+				});
+				var FinalColumnTotal=[];
+	          	for(var w=0; w<UniqueColumn.length; w++)
+				{
+					var ColumnSum=0;
+					var FilteredValueCol = $.grep(FilteredValue , function(v) {
+						return v.Column == UniqueColumn[w].Column && v.Total != null;
+					});
+					
+					if(FilteredValueCol.length>0)
+					{
+						for(var y=0; y<FilteredValueCol.length; y++)
+						{
+							ColumnSum = parseFloat(ColumnSum)+parseFloat(FilteredValueCol[y].Total);
+						}
+						FinalColumnTotal.push({ Total:ColumnSum, ColumnIndex:FilteredValueCol[0].ColIndex, });								
+					}									
+				}
+         		for(var e=0;e<ResultData.length+1;e++)
+				{									
+					if(e < ResultData.length)
+					{
+						var _FilteredValue = $.grep(FinalColumnTotal, function(v) { return v.ColumnIndex == e ; });
+						
+						var StatusFlag = false;
+						if(_FilteredValue.length>0) { StatusFlag = true; }		
+						var title = ResultData[e].Title.replaceAll(' ','');title= title.replace('%', '');title= title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+						if(StatusFlag == true)
+						{						
+						//	TotalTr= TotalTr+ "<td style='text-align: right;'>"+_FilteredValue[0].Total.toFixed(2)+"</td>";
+					//	setTimeout(SetSummarizedValue(itemid, title, _FilteredValue[0].Total.toFixed(2)),4000);  
+						tableappend += "<td style='text-align: right;'><span id='ttlval_"+itemid+"_"+title+"'  value='"+_FilteredValue[0].Total.toFixed(2)+"'>"+_FilteredValue[0].Total.toFixed(2)+"</span></td>";
+						}
+						else
+						{
+							if(e == 0)
+							{
+								//TotalTr= TotalTr+ "<td></td>";
+								tableappend += "<td></td>";
+							}
+							else
+							{
+								//TotalTr= TotalTr+ "<td></td>";
+								tableappend += "<td></td>";
+							}
+						}
+					}
+					else
+					{
+						//TotalTr= TotalTr+ "</tr>";
+						tableappend += "</tr>";
+					}
+					}
+         	}else{
+	        $.map(response.d.results, function(responsere){
+	        	if(responsere.NeedTotal == true && responsere.ColumnType == 'Number'){
+	        		valuefordefault = responsere.DefaultValue ? responsere.DefaultValue : '';
+	        		if(valuefordefault == '' || valuefordefault  == null){
+	        			Formula = responsere.Formula;
+					   		if(Formula != null)	{								
+        							Formula = Formula.split(',');
+									if(Formula.length>0)
+									{
+										var NewExp='';
+										for(var q=0; q<Formula.length; q++)
+										{
+											var evt = $.trim(Formula[q]);
+											if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+											{
+												NewExp = NewExp+evt;
+											}
+											//NewExp = //NewExp+ColumnValueByColumnNameforTableEquation(QueryTableData,Formula[q],i)
+											else{											
+												var FilteredValue = $.grep(ResultData, function(v) {
+												return v.ColumnName == evt;
+												});
+												if(FilteredValue.length > 0){
+												var CurrntVal = FilteredValue[0].DefaultValue ? FilteredValue[0].DefaultValue : 0; //$('td #tbl_'+itemid+'_1_'+evt).val()
+												}else{
+												CurrntVal =  evt;
+												}												
+												if(CurrntVal == ""){CurrntVal = 0;}
+												if(CurrntVal != undefined){
+													NewExp = NewExp+CurrntVal;
+												}else{
+													NewExp = NewExp+evt;
+												}
+											}
+										}        											
+										if(isMathExpression(NewExp) == true)
+										{
+											var result = math.evaluate(NewExp);        												 
+											result = result.toFixed(2); 
+											valuefordefault = result = result.toString(); 											    																																	
+											//tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" readonly ></td>';      											
+										}										
+									  }
+									}
+	        		}
+	        		var title = responsere.Title.replaceAll(' ','');title= title.replace('%', '');title=title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+         			//SetSummarizedValue(itemid, title, valuefordefault); 
+         			//valuefordefault = valuefordefault ? valuefordefault : 0; 
+         			tableappend += "<td class='' style='text-align: right' value=''><span id='ttlval_"+itemid+"_"+title+"'  value='"+valuefordefault +"'>"+valuefordefault +"</span></td>";
+         			}else{
+         			tableappend += "<td class='' value=''><span id='ttlval'></span></td>";
+         			}
+         	})          	       	         	
+          	tableappend += "</tr>";
+          	}
+          	tableappend += "</tbody></table></div>";	        
+            tableappend += "<button  type='button' id='new-row-button"+itemid+"' class='btn btn-dark setmargin' style> Add Row</button>";                      
+            tableappend += "</div>";
+           $("#appenddyamicboxes").append(tableappend);  
+           
+
+         /*  //FormulaColumnListTbl
+		    var FilteredRec = $.grep(FormulaColumnListTbl, function(v) {
+		    				return v.Setup == itemid;
+						});
+			if(FilteredRec.length>0)
+			{
+				for(var i=0; i<FilteredRec.length; i++)
+				{
+					DynamicCalculateValue(elem, FilteredRec[i].ColumnName, FilteredRec[i].Formula,FilteredRec[i].Setup,'true' );
+				}
+			
+			}  */
+
+                    
+        }    
+    })
+    $( ".datepicker" ).datepicker({ dateFormat: 'MM dd, yy' });
+    var editableTable = new BSTable("TblApprovalEntry_"+itemid,{
+		    $addButton: $('#new-row-button'+itemid)
+		});editableTable.init();		
+		$("#TblApprovalEntry_"+itemid).find("thead").find("tr").last().hide();
+		$("#TblApprovalEntry_"+itemid).find("tbody").find("tr").find("td #bEdit").hide();
+		$("#TblApprovalEntry_"+itemid).find("tbody").find("tr").find("td #bDel").hide();
+		$("#TblApprovalEntry_"+itemid).find("tbody").find("tr").last().find("td #bDel").hide();
+		$('#bEdit').hide();totalrow =1;	
+		$("#TblApprovalEntry_"+itemid).find("tbody").find('tr:last').find("td[name='bstable-actions']").hide(); 
+		var tWidth = width ? width : '100';
+		if(tWidth == '50'){
+			$('#tbldiv_'+itemid).addClass('col-md-6 fifty_centent');
+			$('#tbldivWrap_'+itemid).addClass('fifty_centent only_heading');		
+			$('#tbldivWrap_'+itemid).css({'width':'100%', 'max-height':'200px'});
+			$("#TblApprovalEntry_"+itemid).css({'width' : '100%'});
+		}else{
+			$("#TblApprovalEntry_"+itemid).css('min-width',tWidth+'%');
+		}
+		var Field = $("#TblApprovalEntry_"+itemid).find("tbody").find("tr").first().find('td')		
+		if(PermissionStatus != ''){
+		 if(tblEdit.length > 0){
+		 if(tblEdit[0].TableEditScope == 'Add Row'){
+		    $("#TblApprovalEntry_"+itemid).find("input,button,textarea,select").attr("disabled", false);
+		    console.log('Add Row');
+		  //  for(let v=0;v<QueryTableData.length;v++){				
+				var filtertbl = $.grep(tblcol, function(v) {
+					return v.tblId == itemid
+				});  
+	 			SetDatpickerNdropDown(filtertbl[0].data,'tbl', "TblApprovalEntry_"+itemid,Field,ResultData );   			 	
+			// }
+			//$("#new-row-button"+itemid).attr("disabled", "false");
+		 }else if(tblEdit[0].TableEditScope == 'Columns'){
+		  if(tblEdit[0].TableColumns != null){
+				var colnm = tblEdit[0].TableColumns.results;
+				$("#TblApprovalEntry_"+itemid).find("input,button,textarea,select").attr("disabled", 'false');
+				$("#new-row-button"+itemid).attr("disabled", "false");				
+				for(var c = 0;c < colnm.length;c++)
+				{
+				//	$("#TblApprovalEntry_"+itemid).find("td[name='"+colnm[c].Title+"'] input").prop("disabled", "false");
+					$("#TblApprovalEntry_"+itemid).find("td[name='"+colnm[c].Title+"']").find("input,button,textarea,select").prop("disabled", false);
+				}
+			//	for(let v=0;v<QueryTableData.length;v++){				
+					var filtertbl = $.grep(tblcol, function(v) {
+						return v.tblId == itemid
+					});  
+		 			SetDatpickerNdropDown(filtertbl[0].data,'tbl', "TblApprovalEntry_"+itemid,Field,ResultData );   			 	
+			 //	}			
+			}
+		 }else{
+		 	$("#TblApprovalEntry_"+itemid).find("input,button,textarea,select").attr("disabled", "true");
+		 	//$("#TblApprovalEntry_"+itemid).find("td input,button,textarea,select").attr("disabled", "true");
+			$("#new-row-button"+itemid).attr("disabled", "true");
+		 }
+		 }
+		}else{
+		if(QueryTableData.length > 0){	
+		$("#TblApprovalEntry_"+itemid).find("td input,button,textarea,select").prop("disabled", "false");	
+		for(let v=0;v<QueryTableData.length;v++){
+		//	for(var t=0; t<tblcol.length;t++){	 		
+			var filtertbl = $.grep(tblcol, function(v) {
+							return v.tblId == itemid
+						});  
+	 			//SetDatpickerNdropDown(filtertbl[0].data,'tbl', "TblApprovalEntry_"+itemid,Field,ResultData );   
+	 	//	}
+	 	}
+		}else{
+			var _filtertbl = $.grep(tblcol, function(v) {
+							return v.tblId == itemid
+					});  
+		//	for(var t=0; t<tblcol.length;t++){	 		
+	 			SetDatpickerNdropDown(_filtertbl[0].data,'tbl', "TblApprovalEntry_"+itemid,Field,ResultData );   	 		
+	 	//	}  
+	 	}
+	 	if(IsTotalneed == false){
+			$('.totalfield').hide()
+		}
+		}  	 	
+		
+  }
+
+
+  function GetData(restURL) {
+    var def = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + restURL,
+        async:false,
+        contentType: "application/json;odata=verbose",
+        headers: { "accept": "application/json;odata=verbose" },
+        success: function (data) {
+            def.resolve(data);
+        },
+        error: function (data) {
+            def.reject(data);
+        }
+    });
+    return def.promise();
+	}
+	var ischeck = false;
+// To Submit table data in list
+	function SubmitTbltcols(ProcessId){
+				var sts = false;
+				var dfd = $.Deferred();
+				var requiredfileds = [];
+				var tableDatacreate = "";
+				var intarr = $("input[name='selector']:checked").attr('templateid');
+				var nu = parseInt(intarr);
+				var requestforstring = $("input[name='selector']:checked").attr('requestfor'); 
+				var requestTile = $('#titleid').text();		
+				
+				$("#appenddyamicboxes > .dyamicTableboxes > .wrapping_dynamic > .table").each(function () {
+				var CurrTableId = $(this).attr('id');CurrTableId = CurrTableId.split('_')[1];					
+				console.log(CurrTableId);
+					$(this).find(".tablebosyappend > tr:not(:last-child)").each(function () {
+						var IsNull =  false; ischeck = false;	
+						var itemProperties = {};
+					//	itemProperties['RequestFor'] = requestforstring;
+						itemProperties['Title'] = requestTile;
+						if(ProcessId != ''){
+							itemProperties['RequestIDId'] = ProcessId;			
+						}else{
+							itemProperties['RequestIDId'] = '' ;
+						}
+						itemProperties['SetupIDId'] = CurrTableId;						
+					    $(this).find("td:not(:last-child)").each(function () {					  	
+					  	//alert(ischeck );if(ischeck){return false;}
+						var key = $(this).find('.input-sm').attr('data-original-value');  // $(this).find('th').eq($this.index()).text();						//$(this).find(".columnnametxt").attr("value");				
+						//itemProperties[key] = $(this).find(".input-sm").val();
+						if($(this).attr('coltype') == 'Checkbox'){
+							itemProperties[key] = $(this).find(".input-sm").prop("checked") 
+						}else if($(this).attr('coltype') == 'Date'){
+							var val = $(this).find(".input-sm").val();
+							if(val == ''){ val = null }
+							itemProperties[key] = val ; 
+						}else if($(this).attr('coltype') == 'Person'){
+							var EntityUsers= [];
+							var id = $(this).find('div').attr('id')
+							var peoplePickerDiv = $("[id$='"+id+"_TopSpan']"); 
+							var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+							var users = peoplePicker.GetAllUserInfo()				
+							for (var j = 0; j < users.length; j++) 
+							{	var flag=false;
+							/*	var arrUSer = AllTaskUsersEmployeeuser.filter(function (filterData) {
+									if(filterData.EMail == users[j].EntityData.Email){flag=true;}
+									return filterData.EMail == users[j].EntityData.Email; });	*/
+							var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email eq '"+users[j].EntityData.Email+"' and Status eq 'Active'";
+							var arrUSer = RequestGetdata(QueryCheckActive);		
+							if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}								
+							if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
+						    EntityUsers.push(arrUSer[0].UserId)	    
+							}
+							val = EntityUsers;
+							itemProperties[key+'Id'] = {"results": EntityUsers}; //vval = EntityUsers;
+						}											
+						else{
+							var val = $(this).find(".input-sm").val();
+							if($(this).attr('coltype') == "Number" ){							
+								if(key != undefined ){
+									if(val == ''){
+										itemProperties[key] = null;
+									}else{
+										itemProperties[key] = val;
+									}
+								}
+							}else{
+							if(val == ''){
+								itemProperties[key] = ''; //$(this).find(".dynamicvalfeachcls").val();
+								IsNull = true;
+							}else{
+								itemProperties[key] = val;
+							}
+							}
+							
+						}
+						if ($(this).attr("mandatorycol") == "true" && $(this).find(".input-sm").val() == "") {
+							var dyanmicvalhtml = $(this).attr('alerttext');
+							requiredfileds.push(dyanmicvalhtml);
+						}				
+					})
+					if(ischeck){return false;alert(ischeck);}	
+				/*	if(IsNull == true){
+						if (requiredfileds.length > 0) {
+							for (let i = 0; i < requiredfileds.length; i++) {
+								alert("Please enter the value for " + requiredfileds[i] + "");
+								break;
+							} 
+						}
+					}
+					 else {
+						if (requiredfileds.length > 0) {
+							for (let i = 0; i < requiredfileds.length; i++) {
+								alert("Please enter the value for " + requiredfileds[i] + "");
+								break;
+							} 
+						}	 
+					}		*/			
+				var itemType = "SP.Data.ApprovalProcessListTableListItem";
+				itemProperties["__metadata"] = { "type": itemType };								
+				$.ajax({
+		        url:_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessListTable')/items",
+		        type: "POST",
+		        async: false,
+		        data:JSON.stringify(itemProperties),
+		        headers: {
+		            "accept": "application/json;odata=verbose", 
+		            "Content-Type": "application/json;odata=verbose",  
+		            "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+		            "X-HTTP-Method": "POST" 
+		        },
+		        success: function (data) {        
+		        sts = true;  console.log('tbl saved');
+		        }, 			
+		        error: function (error) { 
+		        console.log(error);alert(error.responseText);
+		        return false;
+		        }
+		     });      		    
+   		  //}
+   		})  
+     })	
+      if(ischeck == true){return false;alert(ischeck);}	
+     if(sts == true){	
+       console.log('Table data submit successfully.');
+   //  alert('Table data submit successfully.');
+     }
+	}
+	
+function DynamicSum(elem,tblID, Title, IsCal, Formula){
+	if(Title != '' && Title != undefined)
+	{
+		var title = Title.replaceAll(' ','');title= title.replaceAll('%', '');    title= title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+    	var calculated_total_sum = 0;        
+    	$("#TblApprovalEntry_"+tblID+" ."+title+"").each(function (){
+        	var get_textbox_value = $(this).val();
+        	if(get_textbox_value == ""){get_textbox_value = 0;}
+       	 	if ($.isNumeric(get_textbox_value)) {
+            	calculated_total_sum += parseFloat(get_textbox_value);
+            }                  
+      	});
+        	$("#ttlval_"+tblID+"_"+title).html(parseFloat(calculated_total_sum).toFixed('2'));
+        	SetSummarizedValue(tblID, title, calculated_total_sum);
+        //	$("#SummarizedValue_"+tblID+"_"+title).val(parseFloat(calculated_total_sum).toFixed('2'));
+    }
+    
+    //FormulaColumnListTbl
+    var FilteredRec = $.grep(FormulaColumnListTbl, function(v) {
+    				return v.Setup == tblID;
+				});
+	if(FilteredRec.length>0)
+	{
+		for(var i=0; i<FilteredRec.length; i++)
+		{
+			DynamicCalculateValue(elem, FilteredRec[i].ColumnName, FilteredRec[i].Formula,FilteredRec[i].Setup,'true' );
+		}
+	
+	}
+
+    
+}
+
+function CalculateNew(elem,tblID){
+    var FilteredRec = $.grep(FormulaColumnListTbl, function(v) {
+    				return v.Setup == tblID;
+				});
+	if(FilteredRec.length>0)
+	{
+		for(var i=0; i<FilteredRec.length; i++)
+		{
+			DynamicCalculateValue(elem, FilteredRec[i].ColumnName, FilteredRec[i].Formula,FilteredRec[i].Setup,'true' );
+		}
+	
+	}
+}
+
+function CalculateValue(elem, Title, Formula,tblId,IsTotal ){
+	var title = Title.replaceAll(' ','');title= title.replace('%', '');title= title.replace(/[\])}[{(]/g, '')
+	var Condition = Formula;
+	if( Formula !=  'undefined' )
+	{
+	Condition = Condition.split(',');
+	if(Condition.length>0)
+	{
+	var NewExp='';
+	for(var q=0; q<Condition.length; q++)
+	{
+		var evt = $.trim(Condition[q]);
+		if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+		{
+			NewExp = NewExp+evt;
+		}
+		else
+		{
+			var CurrntVal = $(elem).closest("tr").find('td #tbl_'+evt).val()
+			if(CurrntVal == ""){CurrntVal = 0;}
+			if(CurrntVal != undefined){
+				NewExp = NewExp+CurrntVal;
+			}else{
+				NewExp = NewExp+evt;
+			}	
+		}
+	}        											
+	if(isMathExpression(NewExp) == true)
+	{
+		var result = math.evaluate(NewExp);        												 
+		result = result.toFixed(2); 
+		result = result.toString();  
+		$(elem).closest("tr").find('td .'+title).val(result);      													        												
+		if(IsTotal == 'true')
+		{
+			DynamicSum(tblId,Title,'',Formula)
+		} 		
+		return result;		 
+	}	       											
+  } 
+  }   
+
+}
+
+
+function DynamicCalculateValue(elem, Title, Formula,tblId,IsTotal ){
+	var title = Title.replaceAll(' ','');title= title.replace('%', '');
+	title= title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, ""); //replace(/[\])}[{(]/g, '');
+	var Condition = Formula;
+	if(Formula !=  'undefined' )
+	{
+	Condition = Condition.split(',');
+	if(Condition.length>0)
+	{
+	var NewExp='';
+	for(var q=0; q<Condition.length; q++)
+	{
+		var evt = $.trim(Condition[q]);
+		if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+		{
+			NewExp = NewExp+evt;
+		}
+		else
+		{	
+			var elerwid = elem.closest('tr').id.split('_')[1];
+			var CurrntVal = $(elem).closest("tr").find('td #tbl_'+tblId+'_'+elerwid+'_'+evt).val()
+			if(CurrntVal == ""){CurrntVal = 0;}
+			if(CurrntVal != undefined)
+			{
+				NewExp = NewExp+CurrntVal;
+			}
+			else
+			{
+				NewExp = NewExp+evt;
+			}
+		}	
+	}        											
+	if(isMathExpression(NewExp) == true)
+	{
+		var result = math.evaluate(NewExp);        												 
+		result = result.toFixed(2); 
+		result = result.toString();  
+		$(elem).closest("tr").find('td .'+title).val(result);      													        												
+		if(IsTotal == 'true')
+		{
+			DynamicSumRow(tblId,Title,'',Formula)
+		} 		
+		return result;		 
+	}	       											
+  }   
+  }
+}
+
+
+function DynamicSumRow(tblID, Title, IsCal, Formula){
+	if(Title != '' && Title != undefined){
+	var title = Title.replaceAll(' ','');title= title.replace('%', '');    title= title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+    var calculated_total_sum = 0;        
+    $("#TblApprovalEntry_"+tblID+" ."+title+"").each(function () {
+        var get_textbox_value = $(this).val();
+        if(get_textbox_value == ""){get_textbox_value = 0;}
+        if ($.isNumeric(get_textbox_value)) {
+            calculated_total_sum += parseFloat(get_textbox_value);
+            }                  
+      });
+        $("#ttlval_"+tblID+"_"+title).html(parseFloat(calculated_total_sum).toFixed('2'));
+        SetSummarizedValue(tblID, title, calculated_total_sum);
+       // $("#SummarizedValue_"+tblID+"_"+title).val(parseFloat(calculated_total_sum).toFixed('2'));
+    }
+        
+}
+
+
+
+
+function isMathExpression (str) {
+  try {
+    Complex.compile(str);
+  } catch (error) {
+    return false;
+  }
+  
+  return true;
+}
+
+function ColumnValueByColumnNameforTableEquation(QueryResult, ColumnName,Index) {
+	var ListName, ColValue;
+	//var event_pop;
+	switch ($.trim(ColumnName)) {
+		case 'ColumnText1': ListName = 	QueryResult[Index].ColumnText1; break;
+		case 'ColumnText2': ListName = 	QueryResult[Index].ColumnText2; break;
+		case 'ColumnText3': ListName = 	QueryResult[Index].ColumnText3; break;
+		case 'ColumnText4': ListName = 	QueryResult[Index].ColumnText4; break;
+		case 'ColumnText5': ListName = 	QueryResult[Index].ColumnText5; break;
+		case 'ColumnText6': ListName = 	QueryResult[Index].ColumnText6; break;
+		case 'ColumnText7': ListName = 	QueryResult[Index].ColumnText7; break;
+		case 'ColumnText8': ListName = 	QueryResult[Index].ColumnText8; break;
+		case 'ColumnText9': ListName = 	QueryResult[Index].ColumnText9; break;
+		case 'ColumnText10': ListName = QueryResult[Index].ColumnText10; break;
+		case 'ColumnNumber1': ListName = QueryResult[Index].ColumnNumber1; break;
+		case 'ColumnNumber2': ListName = QueryResult[Index].ColumnNumber2; break;
+		case 'ColumnNumber3': ListName = QueryResult[Index].ColumnNumber3; break;
+		case 'ColumnNumber4': ListName = QueryResult[Index].ColumnNumber4; break;
+		case 'ColumnNumber5': ListName = QueryResult[Index].ColumnNumber5; break;		
+		case 'ColumnDate1': ListName = moment(QueryResult[Index].ColumnDate1).format('LL'); break;
+		case 'ColumnDate2': ListName = moment(QueryResult[Index].ColumnDate2).format('LL'); break;
+		case 'ColumnDate3': ListName = moment(QueryResult[Index].ColumnDate3).format('LL'); break;
+		case 'ColumnDate4': ListName = moment(QueryResult[Index].ColumnDate4).format('LL'); break;
+		case 'ColumnDate5': ListName = moment(QueryResult[Index].ColumnDate5).format('LL'); break;		
+		case 'ColumnMultiline1': ListName = QueryResult[Index].ColumnMultiline1; break;
+		case 'ColumnMultiline2': ListName = QueryResult[Index].ColumnMultiline2; break;
+		case 'Priority': ListName = QueryResult[Index].Priority; break;
+		case 'YesNo': ListName = QueryResult[Index].YesNo; break;
+		case 'Checkbox': ListName = QueryResult[Index].Checkbox; break;		
+		case 'AutoSerialNumber': ListName = QueryResult[Index].AutoSerialNumber; break;		
+	}
+	if(ListName == undefined)
+	{	
+		if(/^[a-zA-Z0-9- ]*$/.test(ColumnName) == true)
+		{
+			ListName = '0'; //$.trim(ColumnName);//NewExp = NewExp+evt;
+		}else{
+			ListName = $.trim(ColumnName);
+	//	ColValue= $('#tbl_'+ColumnName);
+		}
+	
+	}
+	return ListName;
+}
+
+
+
+
+
+function ColumnValueByColumnNameforTable(QueryResult, ColumnName,Index) {
+	var ListName;
+	//var event_pop;
+	switch (ColumnName) {
+		case 'ColumnText1': ListName = 	QueryResult[Index].ColumnText1; break;
+		case 'ColumnText2': ListName = 	QueryResult[Index].ColumnText2; break;
+		case 'ColumnText3': ListName = 	QueryResult[Index].ColumnText3; break;
+		case 'ColumnText4': ListName = 	QueryResult[Index].ColumnText4; break;
+		case 'ColumnText5': ListName = 	QueryResult[Index].ColumnText5; break;
+		case 'ColumnText6': ListName = 	QueryResult[Index].ColumnText6; break;
+		case 'ColumnText7': ListName = 	QueryResult[Index].ColumnText7; break;
+		case 'ColumnText8': ListName = 	QueryResult[Index].ColumnText8; break;
+		case 'ColumnText9': ListName = 	QueryResult[Index].ColumnText9; break;
+		case 'ColumnText10': ListName = QueryResult[Index].ColumnText10; break;
+		case 'ColumnNumber1': ListName = QueryResult[Index].ColumnNumber1; break;
+		case 'ColumnNumber2': ListName = QueryResult[Index].ColumnNumber2; break;
+		case 'ColumnNumber3': ListName = QueryResult[Index].ColumnNumber3; break;
+		case 'ColumnNumber4': ListName = QueryResult[Index].ColumnNumber4; break;
+		case 'ColumnNumber5': ListName = QueryResult[Index].ColumnNumber5; break;		
+		case 'ColumnDate1': ListName = moment(QueryResult[Index].ColumnDate1).format('LL'); break; //QueryResult[Index].ColumnDate1; break;
+		case 'ColumnDate2': ListName = moment(QueryResult[Index].ColumnDate2).format('LL'); break;//QueryResult[Index].ColumnDate2; break;//
+		case 'ColumnDate3': ListName = moment(QueryResult[Index].ColumnDate3).format('LL'); break;//QueryResult[Index].ColumnDate3; break;//
+		case 'ColumnDate4': ListName = moment(QueryResult[Index].ColumnDate4).format('LL'); break;//QueryResult[Index].ColumnDate4; break;//
+		case 'ColumnDate5': ListName = moment(QueryResult[Index].ColumnDate5).format('LL'); break;//QueryResult[Index].ColumnDate5; break;//
+		case 'ColumnMultiline1': ListName = QueryResult[Index].ColumnMultiline1; break;
+		case 'ColumnMultiline2': ListName = QueryResult[Index].ColumnMultiline2; break;
+		case 'Priority': ListName = QueryResult[Index].Priority; break;
+		case 'YesNo': ListName = QueryResult[Index].YesNo; break;
+		case 'Checkbox1': ListName = QueryResult[Index].Checkbox1; break;		
+		case 'Checkbox2': ListName = QueryResult[Index].Checkbox2; break;		
+		case 'Checkbox3': ListName = QueryResult[Index].Checkbox3; break;		
+		case 'Checkbox4': ListName = QueryResult[Index].Checkbox4; break;		
+		case 'Checkbox5': ListName = QueryResult[Index].Checkbox5; break;	
+		case 'ColumnPeople1': ListName = QueryResult[Index].ColumnPeople1; break;
+		case 'ColumnPeople2': ListName = QueryResult[Index].ColumnPeople2; break;
+		case 'ColumnPeople3': ListName = QueryResult[Index].ColumnPeople3; break;
+		case 'ColumnPeople4': ListName = QueryResult[Index].ColumnPeople4; break;
+		case 'ColumnPeople5': ListName = QueryResult[Index].ColumnPeople5; break;	
+		case 'AutoSerialNumber': ListName = QueryResult[Index].AutoSerialNumber; break;		
+	}
+	return ListName;
+}	
+
+function minmax(value, min, max) 
+{
+    if(parseInt(value) < min || isNaN(parseInt(value))) 
+        return min; 
+    else if(parseInt(value) > max) 
+        return max; 
+    else return value;
+}
+
+// To bind Submitted table data
+function GetTableData(){
+			var ItemTempId = window.atob(titanForWork.getQueryStringParameter('Template'));
+			var ItemId = window.atob(titanForWork.getQueryStringParameter('RecNo'));
+			var restendpoint = "/_api/web/lists/getbytitle('ApprovalProcessListTable')/items?$select=*,SetupID/ID&$expand=SetupID&$filter=RequestID eq '"+ItemId+"'&$orderby=ID asc";
+    		var QueryTableResult = RequestData(restendpoint );    		console.log(QueryTableResult);
+			
+}
+
+	// To Update table data in list
+function UpdateTableData(){
+			var ItemTempId = window.atob(titanForWork.getQueryStringParameter('Template'));
+			var ItemId = window.atob(titanForWork.getQueryStringParameter('RecNo'));
+			var restendpoint = "/_api/web/lists/getbytitle('ApprovalProcessListTable')/items?$select=*,SetupID/ID&$expand=SetupID&$filter=RequestID eq '"+ItemId+"'&$orderby=ID asc";
+    		var QueryTblResult = RequestData(restendpoint );
+    		console.log(QueryTblResult);
+    		var requiredfileds =[];
+    		var Index = 0;
+    		if(QueryTblResult.length > 0){    		
+    		$("#appenddyamicboxes > .dyamicTableboxes > .wrapping_dynamic > .table").each(function () {	    							
+    		var Index = 0;    		
+    		var currTblId = $(this).attr('id');  currTblId = currTblId.split('_')[1];
+    		var filtertableData = $.grep(QueryTblResult, function(v) {
+					    return v.SetupIDId == currTblId ;
+			});		
+			var tblrowcounts = $(this).find(".tablebosyappend > tr:not(:last-child)").length;
+				$(this).find(".tablebosyappend > tr:not(:last-child)").each(function (x,i) {
+				//  for(t=0;t<QueryTblResult.length;t++){
+					var currrowseq = $(this).attr('id');  currrowseq = currrowseq.split('_')[1];
+					console.log(x);		
+					var Isdone = false;	var IsNull =  false;	ischeck = false;
+					var key ='';
+					var itemProperties = {};									
+				 	$(this).find("td:not(:last-child)").each(function () {						  							
+						key = $(this).find('.input-sm').attr('data-original-value');  // $(this).find('th').eq($this.index()).text();	//$(this).find(".columnnametxt").attr("value");				
+						//itemProperties[key] = $(this).find(".input-sm").val();
+						if($(this).attr('coltype') == 'Checkbox'){
+							itemProperties[key] = $(this).find(".input-sm").prop("checked") 
+						}else if($(this).attr('coltype') == 'Date'){
+							var val = $(this).find(".input-sm").val();
+							if(val == ''){ val = null }
+							itemProperties[key] = val ; 
+						}else if($(this).attr('coltype') == 'Person'){
+							var EntityUsers= [];
+							var id = $(this).find('div').attr('id')
+							if(id == null){
+								//id = id ? id  : $(this).find(".input-sm").val();
+								itemProperties[key+'Id'] = {"results": EntityUsers}; //vval = EntityUsers;
+							}else{							
+							var peoplePickerDiv = $("[id$='"+id+"_TopSpan']"); 
+							var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+							var users = peoplePicker.GetAllUserInfo()				
+							for (var j = 0; j < users.length; j++) 
+							{	var flag=false;
+								var arrUSer = AllTaskUsersEmployeeuser.filter(function (filterData) {
+								if(filterData.EMail == users[j].EntityData.Email){flag=true;}
+								return filterData.EMail == users[j].EntityData.Email;
+						    });
+							if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
+						    EntityUsers.push(arrUSer[0].UserId)	    
+							}
+							val = EntityUsers;
+							itemProperties[key+'Id'] = {"results": EntityUsers}; //vval = EntityUsers;
+							}
+						}														
+						else{
+							var val = $(this).find(".input-sm").val();
+							if($(this).attr('coltype') == "Number"){
+								if(key != undefined ){
+									if(val == ''){
+										itemProperties[key] = '0';
+									}else{
+										itemProperties[key] = val;
+									}
+								}							
+							}else{
+								if(val == ''){
+									itemProperties[key] = ''; //$(this).find(".dynamicvalfeachcls").val();
+									IsNull = true;
+								}else{
+									itemProperties[key] = val;
+								}
+							}
+						}
+						if ($(this).attr("mandatorycol") == "true" && $(this).find(".input-sm").val() == "") {
+							var dyanmicvalhtml = $(this).attr('alerttext');
+							requiredfileds.push(dyanmicvalhtml);
+						}
+				
+					})	
+					if(ischeck){return false;alert(ischeck);}		
+			/*	if(IsNull == true){
+					if (requiredfileds.length > 0) {
+						for (let i = 0; i < requiredfileds.length; i++) {
+							alert("Please enter the value for " + requiredfileds[i] + "");
+							break;
+						} 
+					}
+				} else {
+					if (requiredfileds.length > 0) {
+						for (let i = 0; i < requiredfileds.length; i++) {
+							alert("Please enter the value for " + requiredfileds[i] + "");
+							break;
+						} 
+					}
+				}	*/				
+			
+			var totalRow = $('#'+currTblId +'>tbody >tr');
+			if(currrowseq <= filtertableData.length){
+			if(filtertableData[x] != null )
+			{						
+			var itemType = "SP.Data.ApprovalProcessListTableListItem";
+			itemProperties["__metadata"] = { "type": itemType };
+			var dfd = $.Deferred();			
+			$.ajax({
+				url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessListTable')/items("+filtertableData[x].ID+")",
+				type: "PATCH",
+				async: false,
+				headers: {
+					"accept": "application/json;odata=verbose",
+					"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+					"X-Http-Method": "PATCH",
+           			"If-Match": "*",
+					"content-Type": "application/json;odata=verbose"
+				},
+				data: JSON.stringify(itemProperties),
+				/*where Title is column name and you can add more columns by splitting with ,*/
+				success: function (data) {
+					if ($('#attachmentsupload').val() == "") {															
+						 	console.log('Updated');
+						 	Isdone = 'true';
+						 //	Index = Index+1;
+						 //	alert('The approval table has been updated successfully.');					 							 
+					}									
+				},
+				error: function (error) {
+					alert(JSON.stringify(error));
+				}
+			});}
+		   }else{		   
+		//   	SubmitTbltcols(ItemId);
+				itemProperties['Title'] = $('#titleid').text();	
+				itemProperties['SetupIDId'] = currTblId ;
+				itemProperties['RequestIDId'] = ItemId;
+				var itemType = "SP.Data.ApprovalProcessListTableListItem";
+				itemProperties["__metadata"] = { "type": itemType };								
+				$.ajax({
+		        url:_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessListTable')/items",
+		        type: "POST",
+		        async: false,
+		        data:JSON.stringify(itemProperties),
+		        headers: {
+		            "accept": "application/json;odata=verbose", 
+		            "Content-Type": "application/json;odata=verbose",  
+		            "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+		            "X-HTTP-Method": "POST" 
+		        },
+		        success: function (data) {        
+		        sts = true;                                        		        
+		        }, 			
+		        error: function (error) { 
+		        console.log(error);        
+		        }
+		     });   
+
+		   }
+		  //}			   		  
+   		})  
+   	/*	if(Isdone == 'true'){
+				alert('The approval table has been updated successfully.');					 							 
+			}    		*/
+     })
+     if(ischeck == true){return false;alert(ischeck);}		 	     
+	}
+/*	else{
+	SubmitTbltcols(ItemId);
+	}	*/
+}
+
+var isValid = true;
+function validateTable(){
+	var requiredfileds = [];
+	isValid = true;
+	$("#appenddyamicboxes > .dyamicTableboxes > .wrapping_dynamic >.table").each(function () {
+		var CurrTableId = $(this).attr('id');CurrTableId = CurrTableId.split('_')[1];					
+		console.log(CurrTableId);
+		$(this).find(".tablebosyappend > tr:not(:last-child)").each(function () {
+			var IsNull =  false; ischeck = false;
+			$(this).find("td:not(:last-child)").each(function () {	
+				if ($(this).attr("mandatorycol") == 'true' && $(this).find(".input-sm").val() == "") {
+						var dyanmicvalhtml = $(this).attr('alerttext');
+						requiredfileds.push(dyanmicvalhtml);
+				}
+				var arrNumValtblFilter ='';
+				var arrDateFilter ='';
+				if(arrNumValtbl.length > 0)	{
+					 arrNumValtblFilter = $.grep(arrNumValtbl, function(v) {
+						return v.tId == CurrTableId;
+					});	
+				}				
+				if(arrDateTbl.length > 0)	{
+					 arrDateFilter = $.grep(arrDateTbl, function(v) {
+						return v.tId == CurrTableId;
+					});	
+				}
+				var key = $(this).find('.input-sm').attr('data-original-value'); 
+				var val = $(this).find(".input-sm").val();
+				if(arrNumValtblFilter.length > 0)	{
+					for(let a=0; a<arrNumValtblFilter.length; a++){
+						if(key == arrNumValtblFilter[a].col){
+							if(val != '' && (arrNumValtblFilter[a].min != null &&  arrNumValtblFilter[a].max != null)){																	
+								if(val >= arrNumValtblFilter[a].min && val  <= arrNumValtblFilter[a].max){									
+									console.log(val);
+								}else{
+									alert(arrNumValtblFilter[a].title+' should be between '+ arrNumValtblFilter[a].min +' to '+ arrNumValtblFilter[a].max);
+									ischeck =  true; isValid = false; return false; alert('checked'); break; 
+								}
+							}else if(val != '' && (arrNumValtblFilter[a].min != null && arrNumValtblFilter[a].max == null )){
+								if(val >= arrNumValtblFilter[a].min){									
+									console.log(val);
+								}else{
+									alert(arrNumValtblFilter[a].title+' should be greater than '+ arrNumValtblFilter[a].min );
+									ischeck =  true; isValid = false; return false; break;
+								}									
+							}else if(val != '' && (arrNumValtblFilter[a].min == null && arrNumValtblFilter[a].max != null )){
+								if(val <= arrNumValtblFilter[a].max){									
+									console.log(val);
+								}else{
+									alert(arrNumValtblFilter[a].title+' should be less than  '+ arrNumValtblFilter[a].max );
+									ischeck =  true; isValid = false; return false; break;
+								}									
+							}else if( val != '' && (arrNumValtblFilter[a].min == null && arrNumValtblFilter[a].max == null) ){								
+								console.log(val);
+							}									
+						}
+					 }	
+				  }if(arrDateFilter.length > 0){
+				  	for(let d=0; d<arrDateFilter.length; d++){
+					  	if(key == arrDateFilter[d].col){
+					  	if(val != '' && arrDateFilter[d].validation == "Past Date"){																	
+							if(moment(val) < moment(new Date())){									
+								console.log(val);
+							}else{
+								alert(arrDateFilter[d].title+' should be past date..!');
+								ischeck =  true; isValid = false; return false; alert('checked'); break; 
+							}
+					  	}else if(val != '' && arrDateFilter[d].validation == "Past Date included Today"){
+					  		if(moment(val) <= moment(new Date())){									
+								console.log(val);
+							}else{
+								alert(arrDateFilter[d].title+' should be past date included today..!');
+								ischeck =  true; isValid = false; return false; alert('checked'); break; 
+							}					  	
+					  	}else if(val != '' && arrDateFilter[d].validation == "Future Date"){
+					  		if(moment(val)> moment(new Date())){									
+								console.log(val);
+							}else{
+								alert(arrDateFilter[d].title+' should be future date..!');
+								ischeck =  true; isValid = false; return false; alert('checked'); break; 
+							}					  	
+					  	}else if(val != '' && arrDateFilter[d].validation == "Future Date included Today"){
+					  		if(moment(val) >= moment(new Date())){									
+								console.log(val);
+							}else{
+								alert(arrDateFilter[d].title+' should be future date included today..!');
+								ischeck =  true; isValid = false; return false; alert('checked'); break; 
+							}					  	
+					  	}else if(val != '' && arrDateFilter[d].validation == "Today Only"){
+					  		if(moment(val) == moment(new Date())){									
+								console.log(val);
+							}else{
+								alert(arrDateFilter[d].title+' should be today only..!');
+								ischeck =  true; isValid = false; return false; alert('checked'); break; 
+							}					  	
+					  	}
+					  	}					  	
+				  	 }
+				  }				  
+				if(ischeck == true){isValid = false;return false;alert(ischeck);}				  		
+			})				
+		})	
+		if (requiredfileds.length > 0) {
+					for (let i = 0; i < requiredfileds.length; i++) {
+						alert("Please enter the value for " + requiredfileds[i] + "");
+						isValid = false; return false;break;
+					} 
+			 }					
+	})
+
+}

@@ -1,1 +1,91 @@
-function a2_0x4ee6(_0x2266ed,_0x1bce23){var _0x3c071e=a2_0x3c07();return a2_0x4ee6=function(_0x4ee6ac,_0x218311){_0x4ee6ac=_0x4ee6ac-0x1b7;var _0x447f7c=_0x3c071e[_0x4ee6ac];return _0x447f7c;},a2_0x4ee6(_0x2266ed,_0x1bce23);}var a2_0x3748dd=a2_0x4ee6;(function(_0x4592d6,_0x5b4e8a){var _0x429775=a2_0x4ee6,_0x3d2900=_0x4592d6();while(!![]){try{var _0x4210a2=parseInt(_0x429775(0x1cb))/0x1+-parseInt(_0x429775(0x1c8))/0x2+-parseInt(_0x429775(0x1d0))/0x3*(parseInt(_0x429775(0x1d1))/0x4)+parseInt(_0x429775(0x1c9))/0x5+parseInt(_0x429775(0x1be))/0x6+parseInt(_0x429775(0x1ca))/0x7+-parseInt(_0x429775(0x1d9))/0x8;if(_0x4210a2===_0x5b4e8a)break;else _0x3d2900['push'](_0x3d2900['shift']());}catch(_0x1c3954){_0x3d2900['push'](_0x3d2900['shift']());}}}(a2_0x3c07,0x7aca4));var _typeof=typeof Symbol===a2_0x3748dd(0x1b7)&&typeof Symbol['iterator']===a2_0x3748dd(0x1c0)?function(_0x26073c){return typeof _0x26073c;}:function(_0x27c80c){var _0x569e81=a2_0x3748dd;return _0x27c80c&&typeof Symbol===_0x569e81(0x1b7)&&_0x27c80c[_0x569e81(0x1c6)]===Symbol&&_0x27c80c!==Symbol[_0x569e81(0x1d3)]?'symbol':typeof _0x27c80c;},Accessor=function Accessor(_0x1c343c){var _0x29f6f1=a2_0x3748dd;this['table']=_0x1c343c,this['allowedTypes']=['','data',_0x29f6f1(0x1cc),_0x29f6f1(0x1ba)];};function a2_0x3c07(){var _0x1101a2=['setFieldValue','symbol','warn','forEach','deepClone','slice','allowedTypes','constructor','toUpperCase','415014DFnoto','2658165NosoAD','2293508qkkXcg','425372XaZBKn','download','transformRow','params','lookupAccessor','2731749dFcfIW','4XUcrHb','registerModule','prototype','initializeColumn','Params','charAt','accessors','Accessor\x20Error\x20-\x20No\x20such\x20accessor\x20found,\x20ignoring:\x20','1856576vRJQAL','undefined','accessor','function','modules','definition','clipboard','getFieldValue','string','traverse','3410766vCSJRw'];a2_0x3c07=function(){return _0x1101a2;};return a2_0x3c07();}Accessor[a2_0x3748dd(0x1d3)][a2_0x3748dd(0x1d4)]=function(_0x176215){var _0xe12a15=a2_0x3748dd,_0x598d64=this,_0x2e3838=![],_0x3191aa={};this[_0xe12a15(0x1c5)][_0xe12a15(0x1c2)](function(_0x32993f){var _0x439588=_0xe12a15,_0x399f77=_0x439588(0x1db)+(_0x32993f['charAt'](0x0)[_0x439588(0x1c7)]()+_0x32993f[_0x439588(0x1c4)](0x1)),_0x298886;_0x176215[_0x439588(0x1b9)][_0x399f77]&&(_0x298886=_0x598d64[_0x439588(0x1cf)](_0x176215['definition'][_0x399f77]),_0x298886&&(_0x2e3838=!![],_0x3191aa[_0x399f77]={'accessor':_0x298886,'params':_0x176215['definition'][_0x399f77+_0x439588(0x1d5)]||{}}));}),_0x2e3838&&(_0x176215['modules'][_0xe12a15(0x1db)]=_0x3191aa);},Accessor[a2_0x3748dd(0x1d3)]['lookupAccessor']=function(_0x1befcb){var _0x2a2d30=a2_0x3748dd,_0xe4a25f=![];switch(typeof _0x1befcb===_0x2a2d30(0x1da)?_0x2a2d30(0x1da):_typeof(_0x1befcb)){case _0x2a2d30(0x1bc):this[_0x2a2d30(0x1d7)][_0x1befcb]?_0xe4a25f=this[_0x2a2d30(0x1d7)][_0x1befcb]:console[_0x2a2d30(0x1c1)](_0x2a2d30(0x1d8),_0x1befcb);break;case _0x2a2d30(0x1b7):_0xe4a25f=_0x1befcb;break;}return _0xe4a25f;},(Accessor[a2_0x3748dd(0x1d3)][a2_0x3748dd(0x1cd)]=function(_0x454aaf,_0x49e6ec){var _0x539506=a2_0x3748dd,_0x44255f=this,_0x18c55e=_0x539506(0x1db)+(_0x49e6ec[_0x539506(0x1d6)](0x0)[_0x539506(0x1c7)]()+_0x49e6ec[_0x539506(0x1c4)](0x1)),_0xa7835c=Tabulator[_0x539506(0x1d3)]['helpers'][_0x539506(0x1c3)](_0x454aaf||{});return _0x44255f['table']['columnManager'][_0x539506(0x1bd)](function(_0x43a9f3){var _0x59bea9=_0x539506,_0x247b48,_0x3ab3dd,_0x519111,_0x4aed11;_0x43a9f3[_0x59bea9(0x1b8)]['accessor']&&(_0x3ab3dd=_0x43a9f3['modules'][_0x59bea9(0x1db)][_0x18c55e]||_0x43a9f3[_0x59bea9(0x1b8)]['accessor'][_0x59bea9(0x1db)]||![],_0x3ab3dd&&(_0x247b48=_0x43a9f3[_0x59bea9(0x1bb)](_0xa7835c),_0x247b48!=_0x59bea9(0x1da)&&(_0x4aed11=_0x43a9f3['getComponent'](),_0x519111=typeof _0x3ab3dd[_0x59bea9(0x1ce)]===_0x59bea9(0x1b7)?_0x3ab3dd[_0x59bea9(0x1ce)](_0x247b48,_0xa7835c,_0x49e6ec,_0x4aed11):_0x3ab3dd[_0x59bea9(0x1ce)],_0x43a9f3[_0x59bea9(0x1bf)](_0xa7835c,_0x3ab3dd[_0x59bea9(0x1db)](_0x247b48,_0xa7835c,_0x49e6ec,_0x519111,_0x4aed11)))));}),_0xa7835c;},Accessor[a2_0x3748dd(0x1d3)][a2_0x3748dd(0x1d7)]={}),Tabulator[a2_0x3748dd(0x1d3)][a2_0x3748dd(0x1d2)](a2_0x3748dd(0x1db),Accessor);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Accessor = function Accessor(table) {
+	this.table = table; //hold Tabulator object
+	this.allowedTypes = ["", "data", "download", "clipboard"]; //list of accessor types
+};
+
+//initialize column accessor
+Accessor.prototype.initializeColumn = function (column) {
+	var self = this,
+	    match = false,
+	    config = {};
+
+	this.allowedTypes.forEach(function (type) {
+		var key = "accessor" + (type.charAt(0).toUpperCase() + type.slice(1)),
+		    accessor;
+
+		if (column.definition[key]) {
+			accessor = self.lookupAccessor(column.definition[key]);
+
+			if (accessor) {
+				match = true;
+
+				config[key] = {
+					accessor: accessor,
+					params: column.definition[key + "Params"] || {}
+				};
+			}
+		}
+	});
+
+	if (match) {
+		column.modules.accessor = config;
+	}
+}, Accessor.prototype.lookupAccessor = function (value) {
+	var accessor = false;
+
+	//set column accessor
+	switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+		case "string":
+			if (this.accessors[value]) {
+				accessor = this.accessors[value];
+			} else {
+				console.warn("Accessor Error - No such accessor found, ignoring: ", value);
+			}
+			break;
+
+		case "function":
+			accessor = value;
+			break;
+	}
+
+	return accessor;
+};
+
+//apply accessor to row
+Accessor.prototype.transformRow = function (dataIn, type) {
+	var self = this,
+	    key = "accessor" + (type.charAt(0).toUpperCase() + type.slice(1));
+
+	//clone data object with deep copy to isolate internal data from returned result
+	var data = Tabulator.prototype.helpers.deepClone(dataIn || {});
+
+	self.table.columnManager.traverse(function (column) {
+		var value, accessor, params, component;
+
+		if (column.modules.accessor) {
+
+			accessor = column.modules.accessor[key] || column.modules.accessor.accessor || false;
+
+			if (accessor) {
+				value = column.getFieldValue(data);
+
+				if (value != "undefined") {
+					component = column.getComponent();
+					params = typeof accessor.params === "function" ? accessor.params(value, data, type, component) : accessor.params;
+					column.setFieldValue(data, accessor.accessor(value, data, type, params, component));
+				}
+			}
+		}
+	});
+
+	return data;
+},
+
+//default accessors
+Accessor.prototype.accessors = {};
+
+Tabulator.prototype.registerModule("accessor", Accessor);

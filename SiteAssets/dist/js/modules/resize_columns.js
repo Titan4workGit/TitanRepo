@@ -1,1 +1,163 @@
-var a48_0x5d2bc5=a48_0x1615;function a48_0x8e73(){var _0x23766c=['31836JhxWAL','options','textarea','table','919179xJrAhu','114516AJWdxS','touchmove','tabulator-col-resize-handle\x20prev','_mouseDown','className','formatter','resizableColumns','call','createElement','mousemove','resize','getFirstColumn','110ArhfYU','edit','div','dblclick','body','appendChild','variableHeight','404TrROkV','columns','removeEventListener','reinitializeWidth','definition','screenX','prototype','browserSlow','header','95KPeUCL','4611026rAjbxj','click','311435xWMdIU','modules','resizeColumns','33570ajwQNG','touchend','findColumnIndex','1591128ofFYZj','getWidth','persistence','element','blocked','handle','8uwKiuB','startColumn','_checkResizability','mouseup','addEventListener','setWidth','undefined','mousedown','startX','remove','registerModule','checkCellHeights','stopPropagation','columnResized','touchstart','tabulator-col-resize-handle','startWidth','resizable','getLastColumn','getColumnByIndex','columnManager','tabulator-block-select'];a48_0x8e73=function(){return _0x23766c;};return a48_0x8e73();}(function(_0x481e31,_0x2c006f){var _0x2ad05a=a48_0x1615,_0x207c08=_0x481e31();while(!![]){try{var _0x3b195=-parseInt(_0x2ad05a(0x209))/0x1+parseInt(_0x2ad05a(0x22b))/0x2+parseInt(_0x2ad05a(0x20c))/0x3*(-parseInt(_0x2ad05a(0x1fd))/0x4)+-parseInt(_0x2ad05a(0x206))/0x5*(-parseInt(_0x2ad05a(0x230))/0x6)+parseInt(_0x2ad05a(0x207))/0x7*(parseInt(_0x2ad05a(0x215))/0x8)+parseInt(_0x2ad05a(0x22f))/0x9*(parseInt(_0x2ad05a(0x1f6))/0xa)+-parseInt(_0x2ad05a(0x20f))/0xb;if(_0x3b195===_0x2c006f)break;else _0x207c08['push'](_0x207c08['shift']());}catch(_0xf768a4){_0x207c08['push'](_0x207c08['shift']());}}}(a48_0x8e73,0x8c3e6));function a48_0x1615(_0x32ee67,_0x2d2d70){var _0x8e7354=a48_0x8e73();return a48_0x1615=function(_0x161541,_0x5da335){_0x161541=_0x161541-0x1eb;var _0x482523=_0x8e7354[_0x161541];return _0x482523;},a48_0x1615(_0x32ee67,_0x2d2d70);}var ResizeColumns=function ResizeColumns(_0x5c5d0b){var _0x594e21=a48_0x1615;this[_0x594e21(0x22e)]=_0x5c5d0b,this[_0x594e21(0x216)]=![],this[_0x594e21(0x21d)]=![],this['startWidth']=![],this[_0x594e21(0x214)]=null,this['prevHandle']=null;};ResizeColumns[a48_0x5d2bc5(0x203)]['initializeColumn']=function(_0x1ce038,_0x5c5e9e,_0x4b8876){var _0x2a863d=a48_0x5d2bc5,_0x2240c3=this,_0x476a39=![],_0x1a7540=this[_0x2a863d(0x22e)][_0x2a863d(0x22c)][_0x2a863d(0x1f0)];_0x1ce038===_0x2a863d(0x205)&&(_0x476a39=_0x5c5e9e[_0x2a863d(0x201)][_0x2a863d(0x1ef)]==_0x2a863d(0x22d)||_0x5c5e9e[_0x2a863d(0x201)][_0x2a863d(0x1fc)],_0x5c5e9e[_0x2a863d(0x20a)]['resize']={'variableHeight':_0x476a39});if(_0x1a7540===!![]||_0x1a7540==_0x1ce038){var _0x4314aa=document[_0x2a863d(0x1f2)](_0x2a863d(0x1f8));_0x4314aa[_0x2a863d(0x1ee)]=_0x2a863d(0x224);var _0x54b93c=document[_0x2a863d(0x1f2)](_0x2a863d(0x1f8));_0x54b93c[_0x2a863d(0x1ee)]=_0x2a863d(0x1ec),_0x4314aa[_0x2a863d(0x219)](_0x2a863d(0x208),function(_0x2dcf83){_0x2dcf83['stopPropagation']();});var _0x3b0da9=function _0x1a540d(_0x478ec9){var _0x56aa6e=_0x2a863d,_0x3885bb=_0x5c5e9e['getLastColumn']();_0x3885bb&&_0x2240c3['_checkResizability'](_0x3885bb)&&(_0x2240c3[_0x56aa6e(0x216)]=_0x5c5e9e,_0x2240c3[_0x56aa6e(0x1ed)](_0x478ec9,_0x3885bb,_0x4314aa));};_0x4314aa[_0x2a863d(0x219)]('mousedown',_0x3b0da9),_0x4314aa[_0x2a863d(0x219)]('touchstart',_0x3b0da9,{'passive':!![]}),_0x4314aa[_0x2a863d(0x219)](_0x2a863d(0x1f9),function(_0x15cfaf){var _0x6a046b=_0x2a863d,_0x18fdfa=_0x5c5e9e[_0x6a046b(0x227)]();_0x18fdfa&&_0x2240c3[_0x6a046b(0x217)](_0x18fdfa)&&(_0x15cfaf[_0x6a046b(0x221)](),_0x18fdfa[_0x6a046b(0x200)](!![]));}),_0x54b93c[_0x2a863d(0x219)](_0x2a863d(0x208),function(_0x503ccd){_0x503ccd['stopPropagation']();});var _0x4d141c=function _0x4eedc5(_0xb8e6){var _0x175e63=_0x2a863d,_0x378752,_0x41d908,_0x421cee;_0x378752=_0x5c5e9e[_0x175e63(0x1f5)](),_0x378752&&(_0x41d908=_0x2240c3[_0x175e63(0x22e)][_0x175e63(0x229)][_0x175e63(0x20e)](_0x378752),_0x421cee=_0x41d908>0x0?_0x2240c3['table'][_0x175e63(0x229)][_0x175e63(0x228)](_0x41d908-0x1):![],_0x421cee&&_0x2240c3[_0x175e63(0x217)](_0x421cee)&&(_0x2240c3[_0x175e63(0x216)]=_0x5c5e9e,_0x2240c3['_mouseDown'](_0xb8e6,_0x421cee,_0x54b93c)));};_0x54b93c[_0x2a863d(0x219)](_0x2a863d(0x21c),_0x4d141c),_0x54b93c[_0x2a863d(0x219)](_0x2a863d(0x223),_0x4d141c,{'passive':!![]}),_0x54b93c[_0x2a863d(0x219)]('dblclick',function(_0xed5126){var _0x360eae=_0x2a863d,_0x3fceae,_0x546ec3,_0x4bf978;_0x3fceae=_0x5c5e9e[_0x360eae(0x1f5)](),_0x3fceae&&(_0x546ec3=_0x2240c3[_0x360eae(0x22e)][_0x360eae(0x229)][_0x360eae(0x20e)](_0x3fceae),_0x4bf978=_0x546ec3>0x0?_0x2240c3[_0x360eae(0x22e)]['columnManager']['getColumnByIndex'](_0x546ec3-0x1):![],_0x4bf978&&_0x2240c3[_0x360eae(0x217)](_0x4bf978)&&(_0xed5126[_0x360eae(0x221)](),_0x4bf978[_0x360eae(0x200)](!![])));}),_0x4b8876[_0x2a863d(0x1fb)](_0x4314aa),_0x4b8876[_0x2a863d(0x1fb)](_0x54b93c);}},ResizeColumns[a48_0x5d2bc5(0x203)][a48_0x5d2bc5(0x217)]=function(_0x40b851){var _0xbef5ae=a48_0x5d2bc5;return typeof _0x40b851[_0xbef5ae(0x201)]['resizable']!=_0xbef5ae(0x21b)?_0x40b851[_0xbef5ae(0x201)][_0xbef5ae(0x226)]:this[_0xbef5ae(0x22e)][_0xbef5ae(0x22c)][_0xbef5ae(0x1f0)];},ResizeColumns[a48_0x5d2bc5(0x203)][a48_0x5d2bc5(0x1ed)]=function(_0x547700,_0x8fae07,_0x493288){var _0x54d391=a48_0x5d2bc5,_0x150337=this;_0x150337[_0x54d391(0x22e)]['element']['classList']['add'](_0x54d391(0x22a));function _0x2c7d1f(_0x5a1f6e){var _0x2cd6e5=_0x54d391;_0x8fae07[_0x2cd6e5(0x21a)](_0x150337[_0x2cd6e5(0x225)]+((typeof _0x5a1f6e[_0x2cd6e5(0x202)]===_0x2cd6e5(0x21b)?_0x5a1f6e['touches'][0x0][_0x2cd6e5(0x202)]:_0x5a1f6e[_0x2cd6e5(0x202)])-_0x150337[_0x2cd6e5(0x21d)])),!_0x150337['table'][_0x2cd6e5(0x204)]&&_0x8fae07[_0x2cd6e5(0x20a)][_0x2cd6e5(0x1f4)]&&_0x8fae07[_0x2cd6e5(0x20a)][_0x2cd6e5(0x1f4)][_0x2cd6e5(0x1fc)]&&_0x8fae07[_0x2cd6e5(0x220)]();}function _0x5c022c(_0x30515b){var _0x515c1b=_0x54d391;_0x150337[_0x515c1b(0x216)][_0x515c1b(0x20a)][_0x515c1b(0x1f7)]&&(_0x150337[_0x515c1b(0x216)][_0x515c1b(0x20a)][_0x515c1b(0x1f7)][_0x515c1b(0x213)]=![]),_0x150337['table']['browserSlow']&&_0x8fae07[_0x515c1b(0x20a)][_0x515c1b(0x1f4)]&&_0x8fae07[_0x515c1b(0x20a)][_0x515c1b(0x1f4)]['variableHeight']&&_0x8fae07[_0x515c1b(0x220)](),document[_0x515c1b(0x1fa)][_0x515c1b(0x1ff)](_0x515c1b(0x218),_0x5c022c),document[_0x515c1b(0x1fa)][_0x515c1b(0x1ff)](_0x515c1b(0x1f3),_0x2c7d1f),_0x493288[_0x515c1b(0x1ff)]('touchmove',_0x2c7d1f),_0x493288[_0x515c1b(0x1ff)](_0x515c1b(0x20d),_0x5c022c),_0x150337[_0x515c1b(0x22e)][_0x515c1b(0x212)]['classList'][_0x515c1b(0x21e)](_0x515c1b(0x22a)),_0x150337['table'][_0x515c1b(0x22c)][_0x515c1b(0x211)]&&_0x150337[_0x515c1b(0x22e)]['modExists']('persistence',!![])&&_0x150337[_0x515c1b(0x22e)][_0x515c1b(0x20a)][_0x515c1b(0x211)]['config'][_0x515c1b(0x1fe)]&&_0x150337['table'][_0x515c1b(0x20a)]['persistence']['save'](_0x515c1b(0x1fe)),_0x150337[_0x515c1b(0x22e)][_0x515c1b(0x22c)][_0x515c1b(0x222)][_0x515c1b(0x1f1)](_0x150337[_0x515c1b(0x22e)],_0x8fae07['getComponent']());}_0x547700[_0x54d391(0x221)](),_0x150337[_0x54d391(0x216)][_0x54d391(0x20a)][_0x54d391(0x1f7)]&&(_0x150337['startColumn'][_0x54d391(0x20a)][_0x54d391(0x1f7)]['blocked']=!![]),_0x150337[_0x54d391(0x21d)]=typeof _0x547700[_0x54d391(0x202)]==='undefined'?_0x547700['touches'][0x0]['screenX']:_0x547700[_0x54d391(0x202)],_0x150337['startWidth']=_0x8fae07[_0x54d391(0x210)](),document['body'][_0x54d391(0x219)](_0x54d391(0x1f3),_0x2c7d1f),document[_0x54d391(0x1fa)][_0x54d391(0x219)]('mouseup',_0x5c022c),_0x493288[_0x54d391(0x219)](_0x54d391(0x1eb),_0x2c7d1f,{'passive':!![]}),_0x493288[_0x54d391(0x219)](_0x54d391(0x20d),_0x5c022c);},Tabulator[a48_0x5d2bc5(0x203)][a48_0x5d2bc5(0x21f)](a48_0x5d2bc5(0x20b),ResizeColumns);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ResizeColumns = function ResizeColumns(table) {
+	this.table = table; //hold Tabulator object
+	this.startColumn = false;
+	this.startX = false;
+	this.startWidth = false;
+	this.handle = null;
+	this.prevHandle = null;
+};
+
+ResizeColumns.prototype.initializeColumn = function (type, column, element) {
+	var self = this,
+	    variableHeight = false,
+	    mode = this.table.options.resizableColumns;
+
+	//set column resize mode
+	if (type === "header") {
+		variableHeight = column.definition.formatter == "textarea" || column.definition.variableHeight;
+		column.modules.resize = { variableHeight: variableHeight };
+	}
+
+	if (mode === true || mode == type) {
+
+		var handle = document.createElement('div');
+		handle.className = "tabulator-col-resize-handle";
+
+		var prevHandle = document.createElement('div');
+		prevHandle.className = "tabulator-col-resize-handle prev";
+
+		handle.addEventListener("click", function (e) {
+			e.stopPropagation();
+		});
+
+		var handleDown = function handleDown(e) {
+			var nearestColumn = column.getLastColumn();
+
+			if (nearestColumn && self._checkResizability(nearestColumn)) {
+				self.startColumn = column;
+				self._mouseDown(e, nearestColumn, handle);
+			}
+		};
+
+		handle.addEventListener("mousedown", handleDown);
+		handle.addEventListener("touchstart", handleDown, { passive: true });
+
+		//reszie column on  double click
+		handle.addEventListener("dblclick", function (e) {
+			var col = column.getLastColumn();
+
+			if (col && self._checkResizability(col)) {
+				e.stopPropagation();
+				col.reinitializeWidth(true);
+			}
+		});
+
+		prevHandle.addEventListener("click", function (e) {
+			e.stopPropagation();
+		});
+
+		var prevHandleDown = function prevHandleDown(e) {
+			var nearestColumn, colIndex, prevColumn;
+
+			nearestColumn = column.getFirstColumn();
+
+			if (nearestColumn) {
+				colIndex = self.table.columnManager.findColumnIndex(nearestColumn);
+				prevColumn = colIndex > 0 ? self.table.columnManager.getColumnByIndex(colIndex - 1) : false;
+
+				if (prevColumn && self._checkResizability(prevColumn)) {
+					self.startColumn = column;
+					self._mouseDown(e, prevColumn, prevHandle);
+				}
+			}
+		};
+
+		prevHandle.addEventListener("mousedown", prevHandleDown);
+		prevHandle.addEventListener("touchstart", prevHandleDown, { passive: true });
+
+		//resize column on double click
+		prevHandle.addEventListener("dblclick", function (e) {
+			var nearestColumn, colIndex, prevColumn;
+
+			nearestColumn = column.getFirstColumn();
+
+			if (nearestColumn) {
+				colIndex = self.table.columnManager.findColumnIndex(nearestColumn);
+				prevColumn = colIndex > 0 ? self.table.columnManager.getColumnByIndex(colIndex - 1) : false;
+
+				if (prevColumn && self._checkResizability(prevColumn)) {
+					e.stopPropagation();
+					prevColumn.reinitializeWidth(true);
+				}
+			}
+		});
+
+		element.appendChild(handle);
+		element.appendChild(prevHandle);
+	}
+};
+
+ResizeColumns.prototype._checkResizability = function (column) {
+	return typeof column.definition.resizable != "undefined" ? column.definition.resizable : this.table.options.resizableColumns;
+};
+
+ResizeColumns.prototype._mouseDown = function (e, column, handle) {
+	var self = this;
+
+	self.table.element.classList.add("tabulator-block-select");
+
+	function mouseMove(e) {
+		// self.table.columnManager.tempScrollBlock();
+
+		column.setWidth(self.startWidth + ((typeof e.screenX === "undefined" ? e.touches[0].screenX : e.screenX) - self.startX));
+
+		if (!self.table.browserSlow && column.modules.resize && column.modules.resize.variableHeight) {
+			column.checkCellHeights();
+		}
+	}
+
+	function mouseUp(e) {
+
+		//block editor from taking action while resizing is taking place
+		if (self.startColumn.modules.edit) {
+			self.startColumn.modules.edit.blocked = false;
+		}
+
+		if (self.table.browserSlow && column.modules.resize && column.modules.resize.variableHeight) {
+			column.checkCellHeights();
+		}
+
+		document.body.removeEventListener("mouseup", mouseUp);
+		document.body.removeEventListener("mousemove", mouseMove);
+
+		handle.removeEventListener("touchmove", mouseMove);
+		handle.removeEventListener("touchend", mouseUp);
+
+		self.table.element.classList.remove("tabulator-block-select");
+
+		if (self.table.options.persistence && self.table.modExists("persistence", true) && self.table.modules.persistence.config.columns) {
+			self.table.modules.persistence.save("columns");
+		}
+
+		self.table.options.columnResized.call(self.table, column.getComponent());
+	}
+
+	e.stopPropagation(); //prevent resize from interfereing with movable columns
+
+	//block editor from taking action while resizing is taking place
+	if (self.startColumn.modules.edit) {
+		self.startColumn.modules.edit.blocked = true;
+	}
+
+	self.startX = typeof e.screenX === "undefined" ? e.touches[0].screenX : e.screenX;
+	self.startWidth = column.getWidth();
+
+	document.body.addEventListener("mousemove", mouseMove);
+	document.body.addEventListener("mouseup", mouseUp);
+	handle.addEventListener("touchmove", mouseMove, { passive: true });
+	handle.addEventListener("touchend", mouseUp);
+};
+
+Tabulator.prototype.registerModule("resizeColumns", ResizeColumns);

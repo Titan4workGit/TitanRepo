@@ -851,8 +851,8 @@ background-color: transparent;
 .license-manager-modal-table table tr th input[type="checkbox"],
 #assignusertable tr td input[type="checkbox"],
 #assignusertable tr th input[type="checkbox"]{
- width:15px !important;
- height:15px !important;
+ width:13px !important;
+ height:13px !important;
 }
 
 .license-manager-modal-table table tr td input[type="checkbox"],
@@ -1049,6 +1049,23 @@ table > tbody > tr > td a h4 {
 }
 
 
+#assignusertable tr th:nth-last-child(1),
+#assignusertable tr th:nth-last-child(2),
+#assignusertable tr th:nth-last-child(3),
+#assignusertable tr th:nth-last-child(4),
+#assignusertable tr th:nth-last-child(5){
+ text-align:center;	
+}
+
+#assignusertable tr td:nth-last-child(1),
+#assignusertable tr td:nth-last-child(2),
+#assignusertable tr td:nth-last-child(3),
+#assignusertable tr td:nth-last-child(4),
+#assignusertable tr td:nth-last-child(5){
+ text-align:center;	
+}
+
+
 @media (min-width: 1200px){
 
 .container.margin_mg_bothside{
@@ -1097,6 +1114,46 @@ table tr td p.assign-user-email{
 #DefaultHome:hover{
   border:1px solid #ccc;
   outline:none;	
+}
+
+
+.checkbox_lst{
+	margin:0 auto;
+	text-align: center;
+}
+.checkbox_lst ul{
+ padding:0; 	
+}
+
+.checkbox_lst ul li{
+		display:inline-block;
+}
+
+.checkbox_lst ul li {
+    display: inline-block;
+    padding: 0px  20px;
+}
+.checkbox_lst ul li label input[type="checkbox"]{
+	margin-top:2px;	
+}
+
+#assignFilterApplyBtn{
+ margin:15px;
+ margin-bottom:0;
+ margin-top:20px;	
+}
+
+#assign-filter #pplManager_TopSpan.sp-peoplepicker-topLevel,
+#assign-filter #pplEmployee_TopSpan.sp-peoplepicker-topLevel{
+    padding: 8px 10px 8px 0px !important;
+}
+
+@media(max-width:767px){
+.checkbox_lst ul li {
+    display: inline-block;
+    padding: 0px  12px;
+}
+
 }
 
 

@@ -1,1 +1,1979 @@
-function a7_0x3b43(_0x2b8ac6,_0x417b64){var _0x3cffff=a7_0x3cff();return a7_0x3b43=function(_0x3b438c,_0x49fb78){_0x3b438c=_0x3b438c-0x82;var _0x27e077=_0x3cffff[_0x3b438c];return _0x27e077;},a7_0x3b43(_0x2b8ac6,_0x417b64);}(function(_0x1744d1,_0x4be0c9){var _0xdbe261=a7_0x3b43,_0x412e48=_0x1744d1();while(!![]){try{var _0x3bb051=parseInt(_0xdbe261(0x18c))/0x1+parseInt(_0xdbe261(0x1b5))/0x2*(-parseInt(_0xdbe261(0x132))/0x3)+-parseInt(_0xdbe261(0x12a))/0x4*(-parseInt(_0xdbe261(0x17f))/0x5)+-parseInt(_0xdbe261(0x1c3))/0x6*(parseInt(_0xdbe261(0xf9))/0x7)+-parseInt(_0xdbe261(0x10e))/0x8+parseInt(_0xdbe261(0xa0))/0x9+parseInt(_0xdbe261(0xce))/0xa;if(_0x3bb051===_0x4be0c9)break;else _0x412e48['push'](_0x412e48['shift']());}catch(_0x1dd1c1){_0x412e48['push'](_0x412e48['shift']());}}}(a7_0x3cff,0x78f4e),function(_0x2c59ac){var _0x57d5bd=a7_0x3b43;_0x2c59ac['fn'][_0x57d5bd(0x1e9)]=function(_0x206388){var _0x3c2593=_0x57d5bd,_0x334300=_0x2c59ac[_0x3c2593(0x247)]({'bold':!![],'italic':!![],'underline':!![],'leftAlign':!![],'centerAlign':!![],'rightAlign':!![],'justify':!![],'ol':!![],'ul':!![],'heading':!![],'fonts':!![],'fontList':[_0x3c2593(0x8e),'Arial\x20Black',_0x3c2593(0x265),'Courier\x20New',_0x3c2593(0x163),_0x3c2593(0x24e),'Helvetica','Impact','Lucida\x20Console',_0x3c2593(0x244),'Times\x20New\x20Roman',_0x3c2593(0x18f)],'fontColor':!![],'fontSize':!![],'imageUpload':!![],'fileUpload':!![],'videoEmbed':!![],'urls':!![],'table':!![],'removeStyles':!![],'code':!![],'colors':[],'fileHTML':'','imageHTML':'','translations':{'title':'Title','white':_0x3c2593(0xbc),'black':_0x3c2593(0x1f1),'brown':_0x3c2593(0x144),'beige':'Beige','darkBlue':_0x3c2593(0xb6),'blue':'Blue','lightBlue':_0x3c2593(0x143),'darkRed':_0x3c2593(0x1f6),'red':'Red','darkGreen':'Dark\x20Green','green':_0x3c2593(0x236),'purple':_0x3c2593(0x1be),'darkTurquois':_0x3c2593(0x17d),'turquois':'Turquois','darkOrange':_0x3c2593(0x154),'orange':_0x3c2593(0x1ea),'yellow':_0x3c2593(0x1c4),'imageURL':'Image\x20URL','fileURL':_0x3c2593(0x1a6),'linkText':_0x3c2593(0xef),'url':_0x3c2593(0x94),'size':_0x3c2593(0x18b),'responsive':_0x3c2593(0x1df),'text':_0x3c2593(0xc7),'openIn':_0x3c2593(0x173),'sameTab':_0x3c2593(0x269),'newTab':_0x3c2593(0x227),'align':_0x3c2593(0x22c),'left':_0x3c2593(0xf2),'justify':_0x3c2593(0x83),'center':_0x3c2593(0x1ed),'right':_0x3c2593(0x243),'rows':_0x3c2593(0x255),'columns':_0x3c2593(0x20d),'add':'Add','pleaseEnterURL':_0x3c2593(0x124),'videoURLnotSupported':_0x3c2593(0x1a4),'pleaseSelectImage':_0x3c2593(0x1b7),'pleaseSelectFile':_0x3c2593(0x134),'bold':_0x3c2593(0x22a),'italic':_0x3c2593(0x86),'underline':'Underline','alignLeft':'Align\x20left','alignCenter':_0x3c2593(0xaa),'alignRight':_0x3c2593(0x1c0),'addOrderedList':_0x3c2593(0x1fe),'addUnorderedList':_0x3c2593(0x1b1),'addHeading':_0x3c2593(0xb7),'addFont':_0x3c2593(0x23c),'addFontColor':_0x3c2593(0xdd),'addFontSize':_0x3c2593(0x115),'addImage':'Add\x20image','addVideo':_0x3c2593(0x196),'addFile':'Add\x20file','addURL':_0x3c2593(0x25c),'addTable':_0x3c2593(0x209),'removeStyles':_0x3c2593(0x8d),'code':_0x3c2593(0x201),'undo':_0x3c2593(0x11c),'redo':_0x3c2593(0x82),'close':_0x3c2593(0x26a)},'youtubeCookies':![],'useSingleQuotes':![],'height':0x0,'heightPercentage':0x0,'id':'','class':'','useParagraph':![],'maxlength':0x0},_0x206388),_0x8e88e3=_0x2c59ac(this);_0x8e88e3['addClass'](_0x3c2593(0x268));var _0x1a055f,_0x33cb5e=_0x2c59ac('<ul\x20/>'),_0x2e31fb=_0x2c59ac(_0x3c2593(0x135)),_0x2a41d4=_0x2c59ac('<a\x20/>',{'class':_0x3c2593(0xe6),'data-command':'bold','title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0xbb)],'html':_0x3c2593(0x1da)}),_0x535dd4=_0x2c59ac('<a\x20/>',{'class':_0x3c2593(0xe6),'data-command':_0x3c2593(0x93),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x93)],'html':_0x3c2593(0xaf)}),_0x2c5108=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':'underline','title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x166)],'html':_0x3c2593(0x1c1)}),_0x91d6e6=_0x2c59ac('<a\x20/>',{'class':_0x3c2593(0xe6),'data-command':'justifyFull','title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x9f)],'html':_0x3c2593(0x95)}),_0x241cab=_0x2c59ac(_0x3c2593(0x248),{'class':'richText-btn','data-command':_0x3c2593(0xbd),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x216)],'html':_0x3c2593(0x131)}),_0x108747=_0x2c59ac(_0x3c2593(0x248),{'class':'richText-btn','data-command':_0x3c2593(0x1cb),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x1d9)],'html':_0x3c2593(0x199)}),_0x2d2e28=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':_0x3c2593(0x193),'title':_0x334300['translations'][_0x3c2593(0x1aa)],'html':_0x3c2593(0xee)}),_0x3464a1=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':_0x3c2593(0x203),'title':_0x334300[_0x3c2593(0xfb)]['addOrderedList'],'html':_0x3c2593(0x129)}),_0x4c1774=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':_0x3c2593(0x9c),'title':_0x334300[_0x3c2593(0xfb)]['addUnorderedList'],'html':'<span\x20class=\x22fa\x20fa-list\x22></span>'}),_0x3b046c=_0x2c59ac(_0x3c2593(0x248),{'class':'richText-btn','title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x9a)],'html':'<span\x20class=\x22fa\x20fa-header\x20fa-heading\x22></span>'}),_0x318f12=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0xfa)],'html':_0x3c2593(0x119)}),_0x3bc159=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'title':_0x334300['translations'][_0x3c2593(0x13d)],'html':_0x3c2593(0x1c7)}),_0x2549dc=_0x2c59ac(_0x3c2593(0x248),{'class':'richText-btn','title':_0x334300['translations'][_0x3c2593(0xc0)],'html':'<span\x20class=\x22fa\x20fa-text-height\x22></span>'}),_0xe5b38d=_0x2c59ac('<a\x20/>',{'class':'richText-btn','title':_0x334300['translations'][_0x3c2593(0x1d6)],'html':_0x3c2593(0x23a)}),_0xfd3f04=_0x2c59ac('<a\x20/>',{'class':_0x3c2593(0xe6),'title':_0x334300['translations'][_0x3c2593(0x221)],'html':_0x3c2593(0x113)}),_0x8d74ad=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'title':_0x334300['translations'][_0x3c2593(0x1a7)],'html':_0x3c2593(0x117)}),_0x3c95bb=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x10d)],'html':'<span\x20class=\x22fa\x20fa-link\x22></span>'}),_0x57e80a=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x133)],'html':'<span\x20class=\x22fa\x20fa-table\x22></span>'}),_0x40d283=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':'removeFormat','title':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x190)],'html':_0x3c2593(0xc9)}),_0x6aa468=_0x2c59ac(_0x3c2593(0x248),{'class':_0x3c2593(0xe6),'data-command':'toggleCode','title':_0x334300['translations'][_0x3c2593(0x25b)],'html':_0x3c2593(0x24b)}),_0x4c8c66=_0x2c59ac('<div\x20/>',{'class':_0x3c2593(0x105)}),_0x5260b9=_0x2c59ac(_0x3c2593(0x10b),{'class':'richText-dropdown-close','html':'<span\x20title=\x22'+_0x334300['translations']['close']+'\x22><span\x20class=\x22fa\x20fa-times\x22></span></span>'}),_0x4253ea=_0x2c59ac(_0x3c2593(0x1e6),{'class':_0x3c2593(0x1fa)}),_0x33f7dc=_0x2c59ac('<div\x20/>',{'class':_0x3c2593(0x1fa)}),_0x409d3c=_0x2c59ac(_0x3c2593(0x20c),{'class':_0x3c2593(0x15b)}),_0x17fe11=_0x2c59ac(_0x3c2593(0x20c),{'class':_0x3c2593(0x184)}),_0x42da79=_0x2c59ac(_0x3c2593(0x266)),_0x865412=_0x2c59ac(_0x3c2593(0x15c),{'type':'text'}),_0x59ce55=_0x2c59ac(_0x3c2593(0x15c),{'type':_0x3c2593(0x13f)}),_0x1f2252=_0x2c59ac('<select\x20/>'),_0x3f5517=_0x2c59ac('<button\x20/>',{'text':_0x334300['translations'][_0x3c2593(0xfc)],'class':_0x3c2593(0x102)}),_0x2a3704,_0x514e20=_0x3c2593(0x19d)+Math[_0x3c2593(0xf0)]()[_0x3c2593(0x1e1)](0x24)[_0x3c2593(0x24c)](0x7),_0x2b8918=![],_0x29d4ed=null,_0x41c6f2=[];_0x41c6f2[_0x514e20]=[];var _0x31c6a7=[];_0x31c6a7[_0x514e20]=0x0;var _0xcc118d=_0x4253ea[_0x3c2593(0x1cd)]();_0xcc118d[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x135),{'html':_0x3c2593(0x1b3)+_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x23b)]+_0x3c2593(0x1ac)})),_0xcc118d[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x135),{'html':_0x3c2593(0x175)+_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x23b)]+_0x3c2593(0x210)})),_0xcc118d['append'](_0x2c59ac('<li\x20/>',{'html':_0x3c2593(0x174)+_0x334300['translations'][_0x3c2593(0x23b)]+_0x3c2593(0x19b)})),_0xcc118d['append'](_0x2c59ac('<li\x20/>',{'html':_0x3c2593(0xeb)+_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x23b)]+_0x3c2593(0x1f0)})),_0x3b046c[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0xcc118d[_0x3c2593(0x21f)](_0x5260b9['clone']())));var _0x4ef026=_0x334300[_0x3c2593(0x228)],_0x433202=_0x4253ea['clone']();for(var _0x35103f=0x0;_0x35103f<_0x4ef026[_0x3c2593(0x256)];_0x35103f++){_0x433202[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x135),{'html':_0x3c2593(0x122)+_0x4ef026[_0x35103f]+_0x3c2593(0x204)+_0x4ef026[_0x35103f]+'\x22>'+_0x4ef026[_0x35103f]+_0x3c2593(0x1ab)}));}_0x318f12[_0x3c2593(0x147)](_0x4c8c66['clone']()[_0x3c2593(0x147)](_0x433202[_0x3c2593(0x21f)](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x3ca01c=[0x18,0x12,0x10,0xe,0xc],_0x2e0408=_0x4253ea[_0x3c2593(0x1cd)]();for(var _0x35103f=0x0;_0x35103f<_0x3ca01c[_0x3c2593(0x256)];_0x35103f++){_0x2e0408['append'](_0x2c59ac(_0x3c2593(0x135),{'html':_0x3c2593(0xad)+_0x3ca01c[_0x35103f]+'px;\x22\x20data-command=\x22fontSize\x22\x20data-option=\x22'+_0x3ca01c[_0x35103f]+'\x22>'+_0x334300[_0x3c2593(0xfb)]['text']+'\x20'+_0x3ca01c[_0x35103f]+'px</a>'}));}_0x2549dc[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x2e0408[_0x3c2593(0x21f)](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x281667=_0x4253ea[_0x3c2593(0x1cd)]();_0x281667[_0x3c2593(0x1c2)](_0x2efa9c(_0x3c2593(0xf7))),_0x3bc159[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x281667[_0x3c2593(0x21f)](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x87be93=_0x33f7dc['clone'](),_0x17af5f=_0x409d3c[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id','richText-URL')[_0x3c2593(0x191)](_0x3c2593(0x178),_0x514e20);_0x17af5f[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x145)])['attr']('for',_0x3c2593(0x145)))[_0x3c2593(0x147)](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id','url'))),_0x17af5f[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79['clone']()[_0x3c2593(0x139)](_0x334300['translations'][_0x3c2593(0x139)])[_0x3c2593(0x191)](_0x3c2593(0x1f8),'urlText'))['append'](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0x219)))),_0x17af5f[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79[_0x3c2593(0x1cd)]()['text'](_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x1fb)])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x1fb)))[_0x3c2593(0x147)](_0x1f2252[_0x3c2593(0x1cd)]()['attr']('id',_0x3c2593(0x1fb))[_0x3c2593(0x147)](_0x2c59ac('<option\x20/>',{'value':_0x3c2593(0xc5),'text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x22f)]}))[_0x3c2593(0x147)](_0x2c59ac('<option\x20/>',{'value':_0x3c2593(0x125),'text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x231)]})))),_0x17af5f[_0x3c2593(0x147)](_0x17fe11['clone']()[_0x3c2593(0x147)](_0x3f5517['clone']())),_0x87be93['append'](_0x17af5f),_0x3c95bb[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x87be93['prepend'](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x20fd91=_0x33f7dc['clone'](),_0x3e4113=_0x409d3c['clone']()['attr']('id','richText-Video')[_0x3c2593(0x191)](_0x3c2593(0x178),_0x514e20);_0x3e4113[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)]['url'])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x23e)))[_0x3c2593(0x147)](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id','videoURL'))),_0x3e4113[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)]['size'])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x225)))['append'](_0x1f2252[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0x225))[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x1bd),{'value':_0x3c2593(0x19c),'text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x19c)]}))[_0x3c2593(0x147)](_0x2c59ac('<option\x20/>',{'value':_0x3c2593(0x97),'text':'640x360'}))[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x1bd),{'value':_0x3c2593(0x13c),'text':_0x3c2593(0x13c)}))[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x1bd),{'value':_0x3c2593(0x1dd),'text':'480x270'}))['append'](_0x2c59ac(_0x3c2593(0x1bd),{'value':_0x3c2593(0x149),'text':_0x3c2593(0x149)})))),_0x3e4113['append'](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x3f5517[_0x3c2593(0x1cd)]())),_0x20fd91[_0x3c2593(0x147)](_0x3e4113),_0xfd3f04[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x20fd91[_0x3c2593(0x21f)](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x5f1f00=_0x33f7dc['clone'](),_0x1f7f5f=_0x409d3c['clone']()[_0x3c2593(0x191)]('id',_0x3c2593(0x240))['attr'](_0x3c2593(0x178),_0x514e20);_0x334300[_0x3c2593(0xea)]&&(_0x2c59ac(_0x334300['imageHTML'])[_0x3c2593(0x153)](_0x3c2593(0x246))[_0x3c2593(0x256)]>0x0||_0x2c59ac(_0x334300[_0x3c2593(0xea)])[_0x3c2593(0x191)]('id')===_0x3c2593(0x141))?_0x1f7f5f[_0x3c2593(0x1c2)](_0x334300[_0x3c2593(0xea)]):(_0x1f7f5f[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x42da79[_0x3c2593(0x1cd)]()['text'](_0x334300[_0x3c2593(0xfb)]['imageURL'])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x141)))[_0x3c2593(0x147)](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0x141)))),_0x1f7f5f['append'](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x235)])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x235)))[_0x3c2593(0x147)](_0x1f2252[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id','align')[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x1bd),{'value':_0x3c2593(0x114),'text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x114)]}))[_0x3c2593(0x147)](_0x2c59ac('<option\x20/>',{'value':_0x3c2593(0x165),'text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x165)]}))[_0x3c2593(0x147)](_0x2c59ac(_0x3c2593(0x1bd),{'value':'right','text':_0x334300[_0x3c2593(0xfb)][_0x3c2593(0xa7)]})))));_0x1f7f5f['append'](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x3f5517[_0x3c2593(0x1cd)]())),_0x5f1f00['append'](_0x1f7f5f),_0xe5b38d[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()['append'](_0x5f1f00[_0x3c2593(0x21f)](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x45300a=_0x33f7dc['clone'](),_0xd1e596=_0x409d3c[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0x20b))[_0x3c2593(0x191)]('data-editor',_0x514e20);_0x334300[_0x3c2593(0xba)]&&(_0x2c59ac(_0x334300['fileHTML'])[_0x3c2593(0x153)](_0x3c2593(0x1d0))['length']>0x0||_0x2c59ac(_0x334300[_0x3c2593(0xba)])['attr']('id')==='fileURL')?_0xd1e596[_0x3c2593(0x1c2)](_0x334300[_0x3c2593(0xba)]):(_0xd1e596['append'](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79['clone']()[_0x3c2593(0x139)](_0x334300['translations']['fileURL'])[_0x3c2593(0x191)](_0x3c2593(0x1f8),_0x3c2593(0x14f)))[_0x3c2593(0x147)](_0x865412[_0x3c2593(0x1cd)]()['attr']('id','fileURL'))),_0xd1e596[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)][_0x3c2593(0x92)])['attr'](_0x3c2593(0x1f8),_0x3c2593(0x85)))['append'](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0x85)))));_0xd1e596[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()['append'](_0x3f5517[_0x3c2593(0x1cd)]())),_0x45300a[_0x3c2593(0x147)](_0xd1e596),_0x8d74ad['append'](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x45300a['prepend'](_0x5260b9[_0x3c2593(0x1cd)]())));var _0x1d4c47=_0x33f7dc[_0x3c2593(0x1cd)](),_0x2d8a0a=_0x409d3c[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id',_0x3c2593(0xb3))['attr'](_0x3c2593(0x178),_0x514e20);_0x2d8a0a[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79[_0x3c2593(0x1cd)]()['text'](_0x334300['translations'][_0x3c2593(0x101)])['attr'](_0x3c2593(0x1f8),'tableRows'))[_0x3c2593(0x147)](_0x865412[_0x3c2593(0x1cd)]()['attr']('id',_0x3c2593(0x1c9))[_0x3c2593(0x191)]('type',_0x3c2593(0x12c)))),_0x2d8a0a['append'](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x42da79[_0x3c2593(0x1cd)]()[_0x3c2593(0x139)](_0x334300[_0x3c2593(0xfb)][_0x3c2593(0xc4)])['attr']('for',_0x3c2593(0xfe)))['append'](_0x865412[_0x3c2593(0x1cd)]()[_0x3c2593(0x191)]('id','tableColumns')[_0x3c2593(0x191)](_0x3c2593(0x89),_0x3c2593(0x12c)))),_0x2d8a0a[_0x3c2593(0x147)](_0x17fe11[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x3f5517[_0x3c2593(0x1cd)]())),_0x1d4c47[_0x3c2593(0x147)](_0x2d8a0a),_0x57e80a[_0x3c2593(0x147)](_0x4c8c66[_0x3c2593(0x1cd)]()[_0x3c2593(0x147)](_0x1d4c47[_0x3c2593(0x21f)](_0x5260b9['clone']())));function _0x4fb8fc(){var _0x18806e=_0x3c2593,_0xee7b1c,_0x2556fb,_0xafe59b='';_0x334300[_0x18806e(0x1d1)]!==![]&&document[_0x18806e(0x112)](_0x18806e(0x16f),![],'p');if(_0x8e88e3[_0x18806e(0x1af)]('tagName')===_0x18806e(0x12f)){}else{if(_0x8e88e3[_0x18806e(0x167)]())_0xee7b1c=_0x8e88e3[_0x18806e(0x167)](),_0x2556fb=_0x8e88e3[_0x18806e(0x1af)](_0x18806e(0x197)),_0x2c59ac[_0x18806e(0x1f2)](_0x2556fb,function(){var _0x1538dd=_0x18806e;this[_0x1538dd(0x23f)]&&(_0xafe59b+='\x20'+this['name']+'=\x22'+this[_0x1538dd(0x11b)]+'\x22');}),_0x8e88e3[_0x18806e(0xcd)](_0x2c59ac(_0x18806e(0x1bc)+_0xafe59b+_0x18806e(0xa5)+_0xee7b1c+_0x18806e(0x10f))),_0x8e88e3=_0x2c59ac(_0x18806e(0x116)),_0x8e88e3['removeAttr'](_0x18806e(0x155));else _0x8e88e3[_0x18806e(0x1c2)]()?(_0xee7b1c=_0x8e88e3[_0x18806e(0x1c2)](),_0x2556fb=_0x8e88e3[_0x18806e(0x1af)](_0x18806e(0x197)),_0x2c59ac[_0x18806e(0x1f2)](_0x2556fb,function(){var _0x43ed58=_0x18806e;this[_0x43ed58(0x23f)]&&(_0xafe59b+='\x20'+this[_0x43ed58(0x23f)]+'=\x22'+this[_0x43ed58(0x11b)]+'\x22');}),_0x8e88e3['replaceWith'](_0x2c59ac(_0x18806e(0x1bc)+_0xafe59b+_0x18806e(0xa5)+_0xee7b1c+_0x18806e(0x10f))),_0x8e88e3=_0x2c59ac('[data-richtext=\x22init\x22]'),_0x8e88e3[_0x18806e(0xe2)](_0x18806e(0x155))):(_0x2556fb=_0x8e88e3[_0x18806e(0x1af)](_0x18806e(0x197)),_0x2c59ac['each'](_0x2556fb,function(){var _0x6ea8d1=_0x18806e;this[_0x6ea8d1(0x23f)]&&(_0xafe59b+='\x20'+this[_0x6ea8d1(0x23f)]+'=\x22'+this[_0x6ea8d1(0x11b)]+'\x22');}),_0x8e88e3['replaceWith'](_0x2c59ac(_0x18806e(0x1bc)+_0xafe59b+'\x20data-richtext=\x22init\x22></textarea>')),_0x8e88e3=_0x2c59ac(_0x18806e(0x116)),_0x8e88e3[_0x18806e(0xe2)](_0x18806e(0x155)));}_0x1a055f=_0x2c59ac(_0x18806e(0x20c),{'class':_0x18806e(0x1e9)});var _0x45298c=_0x2c59ac(_0x18806e(0x20c),{'class':_0x18806e(0x14e)}),_0x857c6e=_0x2c59ac(_0x18806e(0x20c),{'class':_0x18806e(0x169),'id':_0x514e20,'contenteditable':!![]});_0x45298c['append'](_0x33cb5e);_0x334300[_0x18806e(0xbb)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0x2a41d4));_0x334300[_0x18806e(0x93)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0x535dd4));_0x334300[_0x18806e(0x166)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0x2c5108));_0x334300['leftAlign']===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0x241cab));_0x334300[_0x18806e(0xe3)]===!![]&&_0x33cb5e['append'](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x108747));_0x334300[_0x18806e(0x168)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x2d2e28));_0x334300[_0x18806e(0x9f)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x91d6e6));_0x334300['ol']===!![]&&_0x33cb5e['append'](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x3464a1));_0x334300['ul']===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x4c1774));_0x334300[_0x18806e(0x214)]===!![]&&_0x334300[_0x18806e(0x228)][_0x18806e(0x256)]>0x0&&_0x33cb5e['append'](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0x318f12));_0x334300[_0x18806e(0x1fc)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb['clone']()[_0x18806e(0x147)](_0x2549dc));_0x334300[_0x18806e(0x1a9)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x3b046c));_0x334300[_0x18806e(0xbf)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x3bc159));_0x334300[_0x18806e(0xb2)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0xe5b38d));_0x334300[_0x18806e(0x10a)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x8d74ad));_0x334300[_0x18806e(0x189)]===!![]&&_0x33cb5e['append'](_0x2e31fb[_0x18806e(0x1cd)]()['append'](_0xfd3f04));_0x334300[_0x18806e(0xa2)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb['clone']()['append'](_0x3c95bb));_0x334300[_0x18806e(0x10c)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb['clone']()[_0x18806e(0x147)](_0x57e80a));_0x334300[_0x18806e(0x190)]===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb['clone']()[_0x18806e(0x147)](_0x40d283));_0x334300['code']===!![]&&_0x33cb5e[_0x18806e(0x147)](_0x2e31fb[_0x18806e(0x1cd)]()[_0x18806e(0x147)](_0x6aa468));_0x857c6e['html'](_0x8e88e3[_0x18806e(0x167)]()),_0x1a055f[_0x18806e(0x147)](_0x45298c),_0x1a055f[_0x18806e(0x147)](_0x857c6e),_0x1a055f[_0x18806e(0x147)](_0x8e88e3[_0x18806e(0x1cd)]()['hide']()),_0x8e88e3[_0x18806e(0xcd)](_0x1a055f),_0x1a055f[_0x18806e(0x147)](_0x2c59ac(_0x18806e(0x20c),{'class':_0x18806e(0x14e)})[_0x18806e(0x147)](_0x2c59ac('<a\x20/>',{'class':_0x18806e(0x19a),'html':_0x18806e(0x21d),'title':_0x334300['translations'][_0x18806e(0xd8)]}))[_0x18806e(0x147)](_0x2c59ac('<a\x20/>',{'class':_0x18806e(0xb4),'html':_0x18806e(0x264),'title':_0x334300[_0x18806e(0xfb)]['redo']}))['append'](_0x2c59ac('<a\x20/>',{'class':_0x18806e(0x1c5),'html':_0x18806e(0x19f)})));_0x334300[_0x18806e(0x17c)]>0x0&&(_0x1a055f[_0x18806e(0x9b)](_0x18806e(0x17c),_0x334300[_0x18806e(0x17c)]),_0x1a055f[_0x18806e(0x25d)](_0x18806e(0xa4))[_0x18806e(0x25d)](_0x18806e(0x164))[_0x18806e(0x151)](_0x2c59ac(_0x18806e(0x248),{'class':_0x18806e(0x25e),'text':'0/'+_0x334300[_0x18806e(0x17c)]})));if(_0x334300[_0x18806e(0x208)]&&_0x334300[_0x18806e(0x208)]>0x0)_0x1a055f[_0x18806e(0x25d)](_0x18806e(0x161))[_0x18806e(0x18d)]({'min-height':_0x334300[_0x18806e(0x208)]+'px','height':_0x334300[_0x18806e(0x208)]+'px'});else{if(_0x334300[_0x18806e(0x130)]&&_0x334300[_0x18806e(0x130)]>0x0){var _0xc6e7d=_0x1a055f[_0x18806e(0xd0)]()[_0x18806e(0x87)](),_0x3f67ad=_0x334300[_0x18806e(0x130)]/0x64*_0xc6e7d;_0x3f67ad-=_0x45298c['outerHeight']()*0x2,_0x3f67ad-=parseInt(_0x1a055f[_0x18806e(0x18d)](_0x18806e(0x1ba))),_0x3f67ad-=parseInt(_0x1a055f['css'](_0x18806e(0xa3))),_0x3f67ad-=parseInt(_0x1a055f['find']('.richText-editor')['css'](_0x18806e(0xf6))),_0x3f67ad-=parseInt(_0x1a055f[_0x18806e(0x153)](_0x18806e(0x1e8))[_0x18806e(0x18d)]('padding-bottom')),_0x1a055f[_0x18806e(0x25d)]('.richText-editor,\x20.richText-initial')[_0x18806e(0x18d)]({'min-height':_0x3f67ad+'px','height':_0x3f67ad+'px'});}}_0x334300[_0x18806e(0x8c)]&&_0x1a055f[_0x18806e(0x106)](_0x334300[_0x18806e(0x8c)]),_0x334300['id']&&_0x1a055f[_0x18806e(0x191)]('id',_0x334300['id']),_0x3dd055(),_0x41c6f2[_0x514e20]['push'](_0x1a055f['find']('textarea')['val']());}_0x4fb8fc(),_0x1a055f[_0x3c2593(0x153)](_0x3c2593(0x164))['on']('click',function(){var _0x340e26=_0x3c2593,_0x32bfca=_0x2c59ac(this)['parents']('.richText');if(_0x32bfca){var _0x4f1d8a=_0x2c59ac('<div\x20/>',{'class':'richText-help-popup','style':'position:absolute;top:0;right:0;bottom:0;left:0;background-color:\x20rgba(0,0,0,0.3);'}),_0x187cc8=_0x2c59ac('<div\x20/>',{'style':'position:relative;margin:60px\x20auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;font-size:small;'}),_0x259b04=_0x2c59ac(_0x340e26(0x20c),{'html':_0x340e26(0x20f)+_0x334300['translations'][_0x340e26(0x90)]+_0x340e26(0x230)});_0x259b04[_0x340e26(0x147)](_0x340e26(0xd6)),_0x259b04[_0x340e26(0x147)](_0x340e26(0x1dc)),_0x4f1d8a[_0x340e26(0x147)](_0x187cc8['append'](_0x259b04)),_0x32bfca[_0x340e26(0x147)](_0x4f1d8a),_0x4f1d8a['on'](_0x340e26(0x17e),_0x340e26(0x26c),function(){var _0x40f19b=_0x340e26;_0x2c59ac(this)[_0x40f19b(0x257)]('.richText-help-popup')[_0x40f19b(0x108)]();});}}),_0x2c59ac(document)['on'](_0x3c2593(0x17e),'.richText-undo,\x20.richText-redo',function(_0x5489c9){var _0x20a351=_0x3c2593,_0x32a520=_0x2c59ac(this),_0x47d893=_0x32a520['parents'](_0x20a351(0x1e0));if(_0x32a520[_0x20a351(0x111)]('richText-undo')&&!_0x32a520[_0x20a351(0x111)](_0x20a351(0x234)))_0x53bc7a(_0x47d893);else _0x32a520[_0x20a351(0x111)](_0x20a351(0x217))&&!_0x32a520[_0x20a351(0x111)](_0x20a351(0x234))&&_0x116de6(_0x47d893);}),_0x2c59ac(document)['on']('input\x20change\x20blur\x20keydown\x20keyup',_0x3c2593(0x1e8),function(_0x5533eb){var _0x1723c5=_0x3c2593;if((_0x5533eb[_0x1723c5(0x237)]===0x9||_0x5533eb[_0x1723c5(0x237)]==='9')&&_0x5533eb[_0x1723c5(0x89)]===_0x1723c5(0x160))return _0x5533eb[_0x1723c5(0x100)](),_0x226db7(window,_0x5533eb),![];_0x3dd055(),_0x22ed57(),_0x4f2148(_0x2c59ac(this)[_0x1723c5(0x191)]('id')),_0x1d01cf(_0x2c59ac(this)['attr']('id'));}),_0x2c59ac(document)['on'](_0x3c2593(0x146),_0x3c2593(0x1e8),function(_0x18f90f){var _0x48d984=_0x3c2593,_0x147407=_0x2c59ac(_0x48d984(0x1e6),{'class':'list-rightclick\x20richText-list'}),_0x5d3a75=_0x2c59ac(_0x48d984(0x135));_0x2c59ac(_0x48d984(0x1e8))['find']('.richText-editNode')['removeClass'](_0x48d984(0x22b));var _0x2e0bfb=_0x2c59ac(_0x18f90f[_0x48d984(0x1ff)]),_0x450ece=_0x2e0bfb[_0x48d984(0x257)](_0x48d984(0x1e0)),_0xacb187=_0x450ece[_0x48d984(0x153)](_0x48d984(0xa4)),_0x43f22f=_0x18f90f[_0x48d984(0x20a)]-_0x450ece[_0x48d984(0x1c6)]()[_0x48d984(0x114)],_0x38edd9=_0x18f90f[_0x48d984(0x103)]-_0x450ece[_0x48d984(0x1c6)]()['top'];_0x147407[_0x48d984(0x18d)]({'top':_0x38edd9,'left':_0x43f22f});if(_0x2e0bfb[_0x48d984(0x1af)](_0x48d984(0x220))==='A')return _0x18f90f['preventDefault'](),_0x147407[_0x48d984(0x147)](_0x5d3a75['clone']()[_0x48d984(0x1c2)](_0x48d984(0x1b0))),_0x2e0bfb['parents'](_0x48d984(0x1e0))[_0x48d984(0x147)](_0x147407),_0x147407[_0x48d984(0x153)]('.fa-link')['on'](_0x48d984(0x17e),function(){var _0x14d1fe=_0x48d984;_0x2c59ac(_0x14d1fe(0x121))[_0x14d1fe(0x108)](),_0x2e0bfb[_0x14d1fe(0x106)](_0x14d1fe(0x22b));var _0x238894=_0xacb187['find'](_0x14d1fe(0x182));_0x238894[_0x14d1fe(0x153)]('input#url')[_0x14d1fe(0x167)](_0x2e0bfb[_0x14d1fe(0x191)](_0x14d1fe(0x8f))),_0x238894[_0x14d1fe(0x153)]('input#urlText')[_0x14d1fe(0x167)](_0x2e0bfb[_0x14d1fe(0x139)]()),_0x238894[_0x14d1fe(0x153)](_0x14d1fe(0x15f))['val'](_0x2e0bfb[_0x14d1fe(0x191)]('target')),_0xacb187[_0x14d1fe(0x153)](_0x14d1fe(0xdf))[_0x14d1fe(0x25d)](_0x14d1fe(0x123))[_0x14d1fe(0x257)]('li')['addClass'](_0x14d1fe(0x1ef));}),![];else{if(_0x2e0bfb[_0x48d984(0x1af)](_0x48d984(0x220))===_0x48d984(0xe0))return _0x18f90f[_0x48d984(0x100)](),_0x147407[_0x48d984(0x147)](_0x5d3a75[_0x48d984(0x1cd)]()[_0x48d984(0x1c2)](_0x48d984(0x23a))),_0x2e0bfb[_0x48d984(0x257)](_0x48d984(0x1e0))[_0x48d984(0x147)](_0x147407),_0x147407[_0x48d984(0x153)]('.fa-image')['on']('click',function(){var _0x1a963f=_0x48d984,_0x4dae02;_0x2e0bfb['parent'](_0x1a963f(0x142))[_0x1a963f(0x256)]>0x0&&_0x2e0bfb[_0x1a963f(0xd0)]('div')[_0x1a963f(0x191)]('style')===_0x1a963f(0x24f)?_0x4dae02=_0x1a963f(0x165):_0x4dae02=_0x2e0bfb[_0x1a963f(0x191)](_0x1a963f(0x235));_0x2c59ac('.list-rightclick.richText-list')['remove'](),_0x2e0bfb['addClass'](_0x1a963f(0x22b));var _0x4340da=_0xacb187[_0x1a963f(0x153)](_0x1a963f(0xe9));_0x4340da[_0x1a963f(0x153)](_0x1a963f(0x177))[_0x1a963f(0x167)](_0x2e0bfb[_0x1a963f(0x191)](_0x1a963f(0x1cc))),_0x4340da['find'](_0x1a963f(0x1f9))[_0x1a963f(0x167)](_0x4dae02),_0xacb187[_0x1a963f(0x153)](_0x1a963f(0xdf))[_0x1a963f(0x25d)]('.fa-image')[_0x1a963f(0x257)]('li')[_0x1a963f(0x106)](_0x1a963f(0x1ef));}),![];}}),_0x2c59ac(document)['on']('input\x20change\x20blur',_0x3c2593(0xdc),function(){var _0x9c54c5=_0x3c2593;_0x334300[_0x9c54c5(0x26b)]===!![]&&_0x2c59ac(this)['val'](_0x447d0e(_0x2c59ac(this)[_0x9c54c5(0x167)]()));var _0x454172=_0x2c59ac(this)[_0x9c54c5(0x233)](_0x9c54c5(0x1e8))['attr']('id');_0x4cb986(_0x454172),_0x4f2148(_0x454172),_0x1d01cf(_0x454172);}),_0x2c59ac(document)['on'](_0x3c2593(0xe4),'.richText-editor',function(){var _0x2f8313=_0x3c2593,_0x1ea5a5=_0x2c59ac(this)[_0x2f8313(0x191)]('id');_0x4f2148(_0x1ea5a5);}),_0x2c59ac(document)['on'](_0x3c2593(0x17e),'#richText-Video\x20button.btn',function(_0x1cb1f0){var _0x66c072=_0x3c2593;_0x1cb1f0[_0x66c072(0x100)]();var _0x4c8191=_0x2c59ac(this),_0x5dd395=_0x4c8191['parent'](_0x66c072(0x18a))[_0x66c072(0xd0)](_0x66c072(0x252));if(_0x5dd395[_0x66c072(0x191)](_0x66c072(0x178))===_0x514e20){var _0x2f04d7=_0x5dd395[_0x66c072(0x153)](_0x66c072(0x1db))[_0x66c072(0x167)](),_0xe2cbbe=_0x5dd395[_0x66c072(0x153)]('select#size')[_0x66c072(0x167)]();if(!_0x2f04d7)_0x5dd395[_0x66c072(0x21f)](_0x2c59ac('<div\x20/>',{'style':'color:red;display:none;','class':_0x66c072(0x16c),'text':_0x334300['translations'][_0x66c072(0x1b6)]})),_0x5dd395['children']('.form-item.is-error')[_0x66c072(0x21e)](),setTimeout(function(){var _0x33bf90=_0x66c072;_0x5dd395['children'](_0x33bf90(0x99))[_0x33bf90(0x245)](function(){var _0xaa9c4=_0x33bf90;_0x2c59ac(this)[_0xaa9c4(0x108)]();});},0x1388);else{var _0x419a85='';_0x419a85=_0xbcc694(_0x2f04d7,_0xe2cbbe);if(!_0x419a85)_0x5dd395[_0x66c072(0x21f)](_0x2c59ac('<div\x20/>',{'style':_0x66c072(0x1f4),'class':_0x66c072(0x16c),'text':_0x334300[_0x66c072(0xfb)][_0x66c072(0x15a)]})),_0x5dd395[_0x66c072(0x25d)](_0x66c072(0x99))[_0x66c072(0x21e)](),setTimeout(function(){var _0x136b8f=_0x66c072;_0x5dd395['children']('.form-item.is-error')[_0x136b8f(0x245)](function(){var _0x5a17da=_0x136b8f;_0x2c59ac(this)[_0x5a17da(0x108)]();});},0x1388);else{if(_0x334300[_0x66c072(0x26b)]===!![]){}else{}_0x2342b0(_0x514e20,!![]),_0x2d4792(_0x419a85),_0x22ed57(),_0x5dd395[_0x66c072(0x153)]('input#videoURL')[_0x66c072(0x167)](''),_0x2c59ac(_0x66c072(0x215))[_0x66c072(0x1bb)](_0x66c072(0x1ef));}}}}),_0x2c59ac(document)['on'](_0x3c2593(0x207),function(_0x144e28){var _0xa2747b=_0x3c2593,_0x548164=_0x2c59ac(_0x144e28[_0xa2747b(0x1ff)]);!_0x548164['hasClass'](_0xa2747b(0x179))&&_0x548164[_0xa2747b(0x257)]('.richText-list')[_0xa2747b(0x256)]===0x0&&(_0x2c59ac(_0xa2747b(0x187))[_0xa2747b(0x108)](),!_0x548164[_0xa2747b(0x111)](_0xa2747b(0x15b))&&_0x548164[_0xa2747b(0x257)](_0xa2747b(0x252))[_0xa2747b(0x256)]===0x0&&_0x2c59ac(_0xa2747b(0x226))[_0xa2747b(0x1f2)](function(){var _0x149d95=_0xa2747b,_0x3ae82e=_0x2c59ac(this);_0x3ae82e[_0x149d95(0x1bb)](_0x149d95(0x22b)),_0x3ae82e['attr'](_0x149d95(0x8c))===''&&_0x3ae82e[_0x149d95(0xe2)](_0x149d95(0x8c));}));if(_0x548164[_0xa2747b(0x1af)](_0xa2747b(0x220))===_0xa2747b(0xe0)&&_0x548164[_0xa2747b(0x257)]('#'+_0x514e20)){startX=_0x144e28[_0xa2747b(0x20a)],startY=_0x144e28['pageY'],startW=_0x548164[_0xa2747b(0x8a)](),startH=_0x548164['innerHeight']();var _0x2a5d37=_0x548164['offset']()[_0xa2747b(0x114)],_0x36260e=_0x548164['offset']()[_0xa2747b(0x114)]+_0x548164[_0xa2747b(0x8a)](),_0x52fefd=_0x548164[_0xa2747b(0x1c6)]()[_0xa2747b(0x213)]+_0x548164['innerHeight'](),_0x1e7c6b=_0x548164['offset']()[_0xa2747b(0x213)],_0x3a175d=![];_0x548164['css']({'cursor':_0xa2747b(0x241)});startY<=_0x52fefd&&startY>=_0x52fefd-0x14&&startX>=_0x36260e-0x14&&startX<=_0x36260e&&(_0x29d4ed=_0x548164,_0x29d4ed[_0xa2747b(0x18d)]({'cursor':_0xa2747b(0x1b9)}),_0x3a175d=!![]);if((_0x3a175d===!![]||_0x29d4ed)&&!_0x29d4ed['data'](_0xa2747b(0x267)))_0x29d4ed[_0xa2747b(0x9b)](_0xa2747b(0x267),_0x548164[_0xa2747b(0x257)]('#'+_0x514e20)[_0xa2747b(0x8a)]()),_0x29d4ed[_0xa2747b(0x9b)](_0xa2747b(0x208),_0x548164[_0xa2747b(0x257)]('#'+_0x514e20)['innerHeight']()*0x3),_0x144e28[_0xa2747b(0x100)]();else _0x3a175d===!![]||_0x29d4ed?_0x144e28['preventDefault']():_0x29d4ed=null;}}),_0x2c59ac(document)[_0x3c2593(0x1fd)](function(){var _0x58a612=_0x3c2593;_0x29d4ed&&_0x29d4ed['css']({'cursor':_0x58a612(0x241)}),_0x29d4ed=null;})['mousemove'](function(_0xdc9b37){var _0x507f38=_0x3c2593;if(_0x29d4ed!==null){var _0x34c04e=_0x29d4ed[_0x507f38(0x9b)](_0x507f38(0x267)),_0x389b99=_0x29d4ed[_0x507f38(0x267)](),_0x4dcd3e=_0x29d4ed['data']('height'),_0x27dd2e=_0x29d4ed['height']();if(startW+_0xdc9b37[_0x507f38(0x20a)]-startX<=_0x34c04e&&startH+_0xdc9b37[_0x507f38(0x103)]-startY<=_0x4dcd3e)_0x29d4ed['innerWidth'](startW+_0xdc9b37[_0x507f38(0x20a)]-startX),_0x22ed57();else startW+_0xdc9b37[_0x507f38(0x20a)]-startX<=_0x389b99&&startH+_0xdc9b37['pageY']-startY<=_0x27dd2e&&(_0x29d4ed[_0x507f38(0x8a)](startW+_0xdc9b37[_0x507f38(0x20a)]-startX),_0x22ed57());}}),_0x2c59ac(document)['on']('click',_0x3c2593(0x260),function(_0x39182e){var _0x1848a3=_0x3c2593;_0x39182e[_0x1848a3(0x100)]();var _0x3ec568=_0x2c59ac(this),_0x4725c1=_0x3ec568[_0x1848a3(0xd0)]('.richText-form-item')[_0x1848a3(0xd0)]('.richText-form');if(_0x4725c1['attr'](_0x1848a3(0x178))===_0x514e20){var _0x285645=_0x4725c1['find']('input#url')[_0x1848a3(0x167)](),_0x37a30c=_0x4725c1[_0x1848a3(0x153)](_0x1848a3(0xe1))['val'](),_0x4e4553=_0x4725c1['find'](_0x1848a3(0xb8))['val']();!_0x4e4553&&(_0x4e4553=_0x1848a3(0xc5));!_0x37a30c&&(_0x37a30c=_0x285645);if(!_0x285645)_0x4725c1[_0x1848a3(0x21f)](_0x2c59ac(_0x1848a3(0x20c),{'style':_0x1848a3(0x1f4),'class':_0x1848a3(0x16c),'text':_0x334300[_0x1848a3(0xfb)][_0x1848a3(0x1b6)]})),_0x4725c1['children']('.form-item.is-error')[_0x1848a3(0x21e)](),setTimeout(function(){var _0x52929a=_0x1848a3;_0x4725c1[_0x52929a(0x25d)](_0x52929a(0x99))[_0x52929a(0x245)](function(){var _0x5af3dd=_0x52929a;_0x2c59ac(this)[_0x5af3dd(0x108)]();});},0x1388);else{var _0xc5b033='';_0x334300['useSingleQuotes']===!![]?_0xc5b033='<a\x20href=\x27'+_0x285645+_0x1848a3(0x118)+_0x4e4553+'\x27>'+_0x37a30c+_0x1848a3(0x1ab):_0xc5b033=_0x1848a3(0x185)+_0x285645+'\x22\x20target=\x22'+_0x4e4553+'\x22>'+_0x37a30c+_0x1848a3(0x1ab);_0x2342b0(_0x514e20,![],!![]);var _0x3064bb=_0x2c59ac('.richText-editNode');_0x3064bb[_0x1848a3(0x256)]>0x0&&_0x3064bb[_0x1848a3(0x1af)]('tagName')==='A'?(_0x3064bb[_0x1848a3(0x191)](_0x1848a3(0x8f),_0x285645),_0x3064bb[_0x1848a3(0x191)]('target',_0x4e4553),_0x3064bb[_0x1848a3(0x139)](_0x37a30c),_0x3064bb[_0x1848a3(0x1bb)](_0x1848a3(0x22b)),_0x3064bb[_0x1848a3(0x191)](_0x1848a3(0x8c))===''&&_0x3064bb['removeAttr'](_0x1848a3(0x8c))):_0x2d4792(_0xc5b033),_0x4725c1[_0x1848a3(0x153)]('input#url')[_0x1848a3(0x167)](''),_0x4725c1[_0x1848a3(0x153)](_0x1848a3(0xe1))[_0x1848a3(0x167)](''),_0x2c59ac('.richText-toolbar\x20li.is-selected')[_0x1848a3(0x1bb)](_0x1848a3(0x1ef));}}}),_0x2c59ac(document)['on']('click','#richText-Image\x20button.btn',function(_0x4a4afa){var _0x1d10b6=_0x3c2593;_0x4a4afa['preventDefault']();var _0x2af815=_0x2c59ac(this),_0x4eca95=_0x2af815[_0x1d10b6(0xd0)](_0x1d10b6(0x18a))[_0x1d10b6(0xd0)](_0x1d10b6(0x252));if(_0x4eca95[_0x1d10b6(0x191)]('data-editor')===_0x514e20){var _0x54d2ef=_0x4eca95['find'](_0x1d10b6(0x246))[_0x1d10b6(0x167)](),_0x732d1f=_0x4eca95[_0x1d10b6(0x153)](_0x1d10b6(0x1f9))[_0x1d10b6(0x167)]();!_0x732d1f&&(_0x732d1f=_0x1d10b6(0x165));if(!_0x54d2ef)_0x4eca95[_0x1d10b6(0x21f)](_0x2c59ac(_0x1d10b6(0x20c),{'style':_0x1d10b6(0x1f4),'class':_0x1d10b6(0x16c),'text':_0x334300['translations']['pleaseSelectImage']})),_0x4eca95[_0x1d10b6(0x25d)](_0x1d10b6(0x99))[_0x1d10b6(0x21e)](),setTimeout(function(){var _0x58595f=_0x1d10b6;_0x4eca95[_0x58595f(0x25d)](_0x58595f(0x99))[_0x58595f(0x245)](function(){var _0x48af55=_0x58595f;_0x2c59ac(this)[_0x48af55(0x108)]();});},0x1388);else{var _0x1fe67c='';_0x334300['useSingleQuotes']===!![]?_0x732d1f==='center'?_0x1fe67c=_0x1d10b6(0x15d)+_0x54d2ef+'\x27></div>':_0x1fe67c='<img\x20src=\x27'+_0x54d2ef+_0x1d10b6(0x120)+_0x732d1f+'\x27>':_0x732d1f===_0x1d10b6(0x165)?_0x1fe67c=_0x1d10b6(0x188)+_0x54d2ef+_0x1d10b6(0x1a5):_0x1fe67c='<img\x20src=\x22'+_0x54d2ef+_0x1d10b6(0x1ae)+_0x732d1f+'\x22>';_0x2342b0(_0x514e20,!![]);var _0x2e81cb=_0x2c59ac(_0x1d10b6(0x226));if(_0x2e81cb[_0x1d10b6(0x256)]>0x0&&_0x2e81cb[_0x1d10b6(0x1af)](_0x1d10b6(0x220))===_0x1d10b6(0xe0)){_0x2e81cb[_0x1d10b6(0x191)]('src',_0x54d2ef);if(_0x2e81cb['parent'](_0x1d10b6(0x142))[_0x1d10b6(0x256)]>0x0&&_0x2e81cb[_0x1d10b6(0xd0)](_0x1d10b6(0x142))['attr']('style')===_0x1d10b6(0x24f)&&_0x732d1f!==_0x1d10b6(0x165))_0x2e81cb[_0x1d10b6(0x18e)](_0x1d10b6(0x142)),_0x2e81cb[_0x1d10b6(0x191)]('align',_0x732d1f);else(_0x2e81cb['parent'](_0x1d10b6(0x142))[_0x1d10b6(0x256)]===0x0||_0x2e81cb[_0x1d10b6(0xd0)](_0x1d10b6(0x142))[_0x1d10b6(0x191)](_0x1d10b6(0x198))!==_0x1d10b6(0x24f))&&_0x732d1f===_0x1d10b6(0x165)?(_0x2e81cb[_0x1d10b6(0x211)](_0x1d10b6(0x16e)),_0x2e81cb[_0x1d10b6(0xe2)](_0x1d10b6(0x235))):_0x2e81cb[_0x1d10b6(0x191)]('align',_0x732d1f);_0x2e81cb[_0x1d10b6(0x1bb)](_0x1d10b6(0x22b)),_0x2e81cb['attr'](_0x1d10b6(0x8c))===''&&_0x2e81cb[_0x1d10b6(0xe2)](_0x1d10b6(0x8c));}else _0x2d4792(_0x1fe67c);_0x4eca95[_0x1d10b6(0x153)](_0x1d10b6(0x177))[_0x1d10b6(0x167)](''),_0x2c59ac(_0x1d10b6(0x215))[_0x1d10b6(0x1bb)](_0x1d10b6(0x1ef));}}}),_0x2c59ac(document)['on']('click',_0x3c2593(0x238),function(_0x2187f0){var _0x5cdd91=_0x3c2593;_0x2187f0[_0x5cdd91(0x100)]();var _0x29fcb5=_0x2c59ac(this),_0x382a1c=_0x29fcb5[_0x5cdd91(0xd0)](_0x5cdd91(0x18a))[_0x5cdd91(0xd0)](_0x5cdd91(0x252));if(_0x382a1c[_0x5cdd91(0x191)]('data-editor')===_0x514e20){var _0x376780=_0x382a1c[_0x5cdd91(0x153)]('#fileURL')[_0x5cdd91(0x167)](),_0x15d2e9=_0x382a1c['find'](_0x5cdd91(0xe7))['val']();!_0x15d2e9&&(_0x15d2e9=_0x376780);if(!_0x376780)_0x382a1c[_0x5cdd91(0x21f)](_0x2c59ac(_0x5cdd91(0x20c),{'style':'color:red;display:none;','class':'form-item\x20is-error','text':_0x334300['translations'][_0x5cdd91(0x1d5)]})),_0x382a1c[_0x5cdd91(0x25d)]('.form-item.is-error')[_0x5cdd91(0x21e)](),setTimeout(function(){var _0x38bf61=_0x5cdd91;_0x382a1c[_0x38bf61(0x25d)]('.form-item.is-error')['slideUp'](function(){var _0x681f1e=_0x38bf61;_0x2c59ac(this)[_0x681f1e(0x108)]();});},0x1388);else{var _0x6258c2='';_0x334300[_0x5cdd91(0x26b)]===!![]?_0x6258c2=_0x5cdd91(0x110)+_0x376780+'\x27\x20target=\x27_blank\x27>'+_0x15d2e9+_0x5cdd91(0x1ab):_0x6258c2=_0x5cdd91(0x185)+_0x376780+'\x22\x20target=\x22_blank\x22>'+_0x15d2e9+_0x5cdd91(0x1ab),_0x2342b0(_0x514e20,!![]),_0x2d4792(_0x6258c2),_0x382a1c['find']('input#fileURL')[_0x5cdd91(0x167)](''),_0x382a1c[_0x5cdd91(0x153)](_0x5cdd91(0x148))[_0x5cdd91(0x167)](''),_0x2c59ac(_0x5cdd91(0x215))[_0x5cdd91(0x1bb)]('is-selected');}}}),_0x2c59ac(document)['on'](_0x3c2593(0x17e),_0x3c2593(0xd4),function(_0x5513d3){var _0x49b8a5=_0x3c2593;_0x5513d3[_0x49b8a5(0x100)]();var _0x4273bb=_0x2c59ac(this),_0x8d941b=_0x4273bb[_0x49b8a5(0xd0)](_0x49b8a5(0x18a))['parent'](_0x49b8a5(0x252));if(_0x8d941b['attr'](_0x49b8a5(0x178))===_0x514e20){var _0x236d5e=_0x8d941b[_0x49b8a5(0x153)]('input#tableRows')[_0x49b8a5(0x167)](),_0x13933b=_0x8d941b['find']('input#tableColumns')[_0x49b8a5(0x167)]();(!_0x236d5e||_0x236d5e<=0x0)&&(_0x236d5e=0x2);(!_0x13933b||_0x13933b<=0x0)&&(_0x13933b=0x2);var _0x5c9ad9='';_0x334300[_0x49b8a5(0x26b)]===!![]?_0x5c9ad9=_0x49b8a5(0x249):_0x5c9ad9=_0x49b8a5(0x1c8);for(var _0x30b1c4=0x1;_0x30b1c4<=_0x236d5e;_0x30b1c4++){_0x5c9ad9+=_0x49b8a5(0x11d);for(var _0x3245d1=0x1;_0x3245d1<=_0x13933b;_0x3245d1++){_0x5c9ad9+=_0x49b8a5(0x186);}_0x5c9ad9+=_0x49b8a5(0x1a2);}_0x5c9ad9+=_0x49b8a5(0xd1),_0x2342b0(_0x514e20,!![]),_0x2d4792(_0x5c9ad9),_0x8d941b[_0x49b8a5(0x153)](_0x49b8a5(0x1e4))[_0x49b8a5(0x167)](''),_0x8d941b[_0x49b8a5(0x153)](_0x49b8a5(0xed))[_0x49b8a5(0x167)](''),_0x2c59ac('.richText-toolbar\x20li.is-selected')[_0x49b8a5(0x1bb)](_0x49b8a5(0x1ef));}}),_0x2c59ac(document)['on']('click',function(_0x41de2e){var _0x49a516=_0x3c2593,_0x1aa07a=_0x2c59ac(_0x41de2e[_0x49a516(0x1ff)]);if(_0x1aa07a[_0x49a516(0x257)]('.richText-toolbar')['length']===0x0){}else{if(_0x1aa07a[_0x49a516(0x111)](_0x49a516(0x105)))_0x1aa07a[_0x49a516(0xd0)]('a')['parent']('li')['removeClass'](_0x49a516(0x1ef));else{if(_0x1aa07a[_0x49a516(0x153)](_0x49a516(0x1e0))['length']>0x0)_0x2c59ac(_0x49a516(0xcf))['removeClass']('is-selected');else{if(_0x1aa07a['parent']()[_0x49a516(0x111)](_0x49a516(0xd9)))_0x2c59ac(_0x49a516(0xcf))[_0x49a516(0x1bb)](_0x49a516(0x1ef));else{if(_0x1aa07a[_0x49a516(0x111)]('richText-btn')&&_0x2c59ac(_0x41de2e['target'])[_0x49a516(0x25d)](_0x49a516(0xae))[_0x49a516(0x256)]>0x0){_0x1aa07a['parent']('li')[_0x49a516(0x106)](_0x49a516(0x1ef));if(_0x1aa07a[_0x49a516(0x25d)]('.fa,svg')[_0x49a516(0x111)]('fa-link')){_0x2342b0(_0x514e20,![],!![]);var _0x5a61fc=_0x503f13();_0x1aa07a['find']('input#urlText')[_0x49a516(0x167)](''),_0x1aa07a[_0x49a516(0x153)]('input#url')['val'](''),_0x5a61fc&&_0x1aa07a[_0x49a516(0x153)](_0x49a516(0xe1))[_0x49a516(0x167)](_0x5a61fc);}else{if(_0x1aa07a['hasClass'](_0x49a516(0x13b))){}}}}}}}}),_0x2c59ac(document)['on'](_0x3c2593(0x17e),_0x3c2593(0x222),function(_0x13d88e){var _0x625052=_0x3c2593,_0x9101cb=_0x2c59ac(this),_0x51422f=_0x9101cb['closest'](_0x625052(0xa4)),_0x92b30f=_0x51422f['siblings']('.richText-editor'),_0x2cf8ea=_0x92b30f[_0x625052(0x191)]('id');if(_0x92b30f[_0x625052(0x256)]>0x0&&_0x2cf8ea===_0x514e20&&(!_0x9101cb[_0x625052(0xd0)]('li')['attr'](_0x625052(0x259))||_0x9101cb[_0x625052(0xd0)]('li')[_0x625052(0x191)](_0x625052(0x259))===_0x625052(0x23d))){_0x13d88e[_0x625052(0x100)]();var _0x4aab33=_0x2c59ac(this)['data'](_0x625052(0x251));if(_0x4aab33===_0x625052(0x1d2))_0x2d438b(_0x92b30f[_0x625052(0x191)]('id'));else{var _0x18e2ff=null;_0x2c59ac(this)[_0x625052(0x9b)](_0x625052(0x21a))&&(_0x18e2ff=_0x2c59ac(this)['data']('option')[_0x625052(0x1e1)](),_0x18e2ff[_0x625052(0x1e2)](/^h[1-6]$/)&&(_0x4aab33=_0x625052(0x1a9))),_0x5109f5(_0x4aab33,_0x18e2ff,_0x2cf8ea),_0x4aab33==='removeFormat'&&(_0x92b30f[_0x625052(0x153)]('*')[_0x625052(0x1f2)](function(){var _0x313200=_0x625052,_0x353d48=['id','class',_0x313200(0x23f),_0x313200(0x1eb),'method',_0x313200(0x1cc),_0x313200(0x235),_0x313200(0x16b),_0x313200(0x23b),_0x313200(0x198),'webkitallowfullscreen',_0x313200(0x1f5),_0x313200(0x183),'width',_0x313200(0x208),_0x313200(0x9e)],_0x349588=_0x2c59ac(this),_0x25678a=_0x2c59ac[_0x313200(0x1de)](this[_0x313200(0x197)],function(_0x4e925e){var _0x3b2ad4=_0x313200;return _0x4e925e[_0x3b2ad4(0x23f)];});_0x2c59ac[_0x313200(0x1f2)](_0x25678a,function(_0x2dc5d5,_0x50081c){var _0xa21e87=_0x313200;_0x353d48[_0xa21e87(0xda)](_0x50081c)<0x0&&_0x50081c[_0xa21e87(0x181)](0x0,0x5)!==_0xa21e87(0xd5)&&_0x349588[_0xa21e87(0xe2)](_0x50081c);}),_0x349588[_0x313200(0x1af)]('tagName')==='A'&&_0x349588[_0x313200(0xcd)](function(){var _0x16411e=_0x313200;return _0x2c59ac('<span\x20/>',{'html':_0x2c59ac(this)[_0x16411e(0x1c2)]()});});}),_0x5109f5('formatBlock',_0x625052(0x142),_0x2cf8ea)),_0x92b30f[_0x625052(0x153)]('div:empty,p:empty,li:empty,h1:empty,h2:empty,h3:empty,h4:empty,h5:empty,h6:empty')[_0x625052(0x108)](),_0x92b30f[_0x625052(0x153)](_0x625052(0x150))[_0x625052(0x18e)]('h1,h2,h3,h4,h5,h6');}}_0x9101cb[_0x625052(0x257)](_0x625052(0x206))['removeClass']('is-selected');});function _0x5109f5(_0x3ffada,_0x44e386,_0x5460ac){var _0x1ae36d=_0x3c2593;typeof _0x44e386==='undefined'&&(_0x44e386=null);_0x2239a3(_0x5460ac);if(_0x3ffada==='heading'&&_0x503f13())_0x2d4792('<'+_0x44e386+'>'+_0x503f13()+'</'+_0x44e386+'>');else{if(_0x3ffada==='fontSize'&&parseInt(_0x44e386)>0x0){var _0x531777=_0x503f13();_0x531777=(_0x531777+'')['replace'](/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g,'$1'+_0x1ae36d(0x104)+'$2');var _0x24782b=_0x334300[_0x1ae36d(0x26b)]?_0x1ae36d(0x1ca)+_0x44e386+_0x1ae36d(0x242)+_0x531777+_0x1ae36d(0x98):_0x1ae36d(0x14a)+_0x44e386+_0x1ae36d(0x1a0)+_0x531777+_0x1ae36d(0x98);_0x2d4792(_0x24782b);}else document[_0x1ae36d(0x112)](_0x3ffada,![],_0x44e386);}}function _0x22ed57(){var _0x314012=_0x3c2593,_0x27d9a0=_0x2c59ac('#'+_0x514e20),_0x166c41=_0x27d9a0[_0x314012(0x1c2)]();_0x334300[_0x314012(0x26b)]===!![]&&(_0x166c41=_0x447d0e(_0x166c41)),_0x27d9a0[_0x314012(0x233)](_0x314012(0xdc))[_0x314012(0x167)](_0x166c41);}function _0x4cb986(_0x360420){var _0x8fdfd5=_0x3c2593,_0x1aa44f=_0x2c59ac('#'+_0x360420),_0x4da351=_0x1aa44f[_0x8fdfd5(0x233)](_0x8fdfd5(0xdc))[_0x8fdfd5(0x167)]();_0x1aa44f['html'](_0x4da351);}function _0x53917a(_0x3c27d8){var _0x1d3aa2=_0x3c2593,_0x1d56a3=document[_0x1d3aa2(0x25f)](_0x3c27d8),_0x31f6fa,_0x58a226,_0x171877,_0x4fa12c;if(window['getSelection']&&document[_0x1d3aa2(0x194)]){var _0x3292a0=window[_0x1d3aa2(0x91)]&&window[_0x1d3aa2(0x91)]();if(_0x3292a0&&_0x3292a0[_0x1d3aa2(0x176)]>0x0&&_0x2c59ac(_0x3292a0['anchorNode'])[_0x1d3aa2(0x257)]('#'+_0x3c27d8)['length']>0x0){_0x31f6fa=window[_0x1d3aa2(0x91)]()['getRangeAt'](0x0);var _0x3e24fb=_0x31f6fa[_0x1d3aa2(0x1b2)]();return _0x3e24fb[_0x1d3aa2(0x156)](_0x1d56a3),_0x3e24fb[_0x1d3aa2(0xd2)](_0x31f6fa[_0x1d3aa2(0x1a1)],_0x31f6fa[_0x1d3aa2(0xf5)]),_0x58a226=_0x3e24fb['toString']()[_0x1d3aa2(0x256)],_0x171877=_0x58a226+_0x31f6fa['toString']()['length'],_0x4fa12c=_0x58a226===_0x171877?_0x1d3aa2(0x224):_0x1d3aa2(0x1f3),anchor=_0x3292a0['anchorNode'],_0x58a226=_0x4fa12c===_0x1d3aa2(0x224)&&anchor!==![]?0x0:_0x3e24fb[_0x1d3aa2(0x1e1)]()[_0x1d3aa2(0x256)],_0x171877=_0x4fa12c===_0x1d3aa2(0x224)&&anchor!==![]?0x0:_0x58a226+_0x31f6fa['toString']()['length'],{'start':_0x58a226,'end':_0x171877,'type':_0x4fa12c,'anchor':anchor,'editorID':_0x3c27d8};}}return _0x2a3704?_0x2a3704:{'start':0x0,'end':0x0};}function _0x2342b0(_0x260384,_0x234a0d,_0x274b27){var _0x340791=_0x3c2593,_0x25ab1a=document[_0x340791(0x25f)](_0x260384),_0x420377=_0x2a3704;!_0x420377&&(_0x420377={'start':0x0,'end':0x0,'type':_0x340791(0x224),'editorID':_0x260384,'anchor':_0x2c59ac('#'+_0x260384)[_0x340791(0x25d)](_0x340791(0x142))[0x0]});if(_0x420377['editorID']!==_0x260384)return![];else{if(_0x234a0d===!![])_0x25ab1a=_0x420377[_0x340791(0x17a)]?_0x420377[_0x340791(0x17a)]:_0x25ab1a;else _0x274b27===!![]&&(_0x420377[_0x340791(0x218)]===0x0&&_0x420377[_0x340791(0xca)]===0x0&&(_0x25ab1a=_0x420377[_0x340791(0x17a)]?_0x420377[_0x340791(0x17a)]:_0x25ab1a));}if(window['getSelection']&&document['createRange']){var _0x14f63f=0x0,_0x70299f=document[_0x340791(0x194)]();if(!_0x70299f||!_0x25ab1a)return window[_0x340791(0x91)]()[_0x340791(0x239)](),!![];_0x70299f['setStart'](_0x25ab1a,0x0),_0x70299f[_0x340791(0x12d)](!![]);var _0x574db7=[_0x25ab1a],_0x126fcc,_0x3de14b=![],_0xf68e77=![];while(!_0xf68e77&&(_0x126fcc=_0x574db7[_0x340791(0xc1)]())){if(_0x126fcc[_0x340791(0xcc)]===0x3){var _0x3c7915=_0x14f63f+_0x126fcc[_0x340791(0x256)];!_0x3de14b&&_0x420377[_0x340791(0x218)]>=_0x14f63f&&_0x420377[_0x340791(0x218)]<=_0x3c7915&&(_0x70299f[_0x340791(0x20e)](_0x126fcc,_0x420377[_0x340791(0x218)]-_0x14f63f),_0x3de14b=!![]),_0x3de14b&&_0x420377[_0x340791(0xca)]>=_0x14f63f&&_0x420377[_0x340791(0xca)]<=_0x3c7915&&(_0x70299f[_0x340791(0xd2)](_0x126fcc,_0x420377['end']-_0x14f63f),_0xf68e77=!![]),_0x14f63f=_0x3c7915;}else{var _0x2263b8=_0x126fcc[_0x340791(0x170)]['length'];while(_0x2263b8--){_0x574db7[_0x340791(0x250)](_0x126fcc[_0x340791(0x170)][_0x2263b8]);}}}var _0xda1907=window[_0x340791(0x91)]();_0xda1907[_0x340791(0x239)](),_0xda1907[_0x340791(0x232)](_0x70299f);}}function _0x226db7(_0x49902f,_0x8268a1){var _0x4bd942=_0x3c2593;if(_0x8268a1['keyCode']!==0x9)return![];var _0x10ced0;if(_0x49902f[_0x4bd942(0x91)]){_0x10ced0=_0x49902f[_0x4bd942(0x91)]();if(_0x10ced0[_0x4bd942(0x176)]>0x0){var _0x1236d9=null,_0x59c154=null;!_0x8268a1['shiftKey']?(_0x59c154=_0x4bd942(0xdb),_0x1236d9=_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0xa9)]==='TD'?_0x10ced0['focusNode'][_0x4bd942(0x1bf)]!=null?_0x10ced0['focusNode'][_0x4bd942(0x1bf)]:_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)]['nextSibling']!=null?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x1bf)]['childNodes'][0x0]:null:_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x1bf)]!=null?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x1bf)]:_0x10ced0['focusNode'][_0x4bd942(0x107)]['parentNode'][_0x4bd942(0x1bf)]!=null?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)]['parentNode'][_0x4bd942(0x1bf)][_0x4bd942(0x170)][0x0]:null):(_0x59c154=_0x4bd942(0x1d8),_0x1236d9=_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0xa9)]==='TD'?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x138)]!=null?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x138)]:_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x138)]!=null?_0x10ced0['focusNode'][_0x4bd942(0x107)][_0x4bd942(0x138)][_0x4bd942(0x170)][_0x10ced0[_0x4bd942(0x171)]['parentNode'][_0x4bd942(0x138)]['childNodes'][_0x4bd942(0x256)]-0x1]:null:_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x138)]!=null?_0x10ced0[_0x4bd942(0x171)]['parentNode'][_0x4bd942(0x138)]:_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x107)][_0x4bd942(0x138)]!=null?_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0x107)][_0x4bd942(0x107)][_0x4bd942(0x138)]['childNodes'][_0x10ced0[_0x4bd942(0x171)]['parentNode'][_0x4bd942(0x107)]['previousSibling']['childNodes'][_0x4bd942(0x256)]-0x1]:null);if(_0x1236d9!=null)return _0x10ced0[_0x4bd942(0x12d)](_0x1236d9,Math[_0x4bd942(0x11a)](_0x1236d9[_0x4bd942(0x256)],_0x10ced0[_0x4bd942(0x158)]+0x1)),_0x1236d9['textContent']!=null&&_0x10ced0[_0x4bd942(0x1ec)](_0x1236d9),_0x8268a1[_0x4bd942(0x100)](),!![];else{if(_0x1236d9===null&&_0x59c154===_0x4bd942(0xdb)&&_0x10ced0[_0x4bd942(0x171)][_0x4bd942(0xa9)]==='TD'){var _0x3ad202=_0x2c59ac(_0x10ced0[_0x4bd942(0x171)])[_0x4bd942(0x257)](_0x4bd942(0x10c)),_0x1d2e19=_0x3ad202['find']('tr')[_0x4bd942(0xc2)]()[_0x4bd942(0x25d)]('td')[_0x4bd942(0x256)],_0x49c093=_0x2c59ac(_0x4bd942(0x172)),_0x303a9e=_0x2c59ac(_0x4bd942(0xe8));for(var _0x42ef8e=0x1;_0x42ef8e<=_0x1d2e19;_0x42ef8e++){_0x49c093[_0x4bd942(0x147)](_0x303a9e[_0x4bd942(0x1cd)]());}_0x3ad202[_0x4bd942(0x147)](_0x49c093),_0x226db7(window,{'keyCode':0x9,'shiftKey':![],'preventDefault':function(){}});}}}}return![];}function _0x503f13(){var _0x30d136=_0x3c2593,_0x193004;if(window[_0x30d136(0x91)])return _0x193004=window[_0x30d136(0x91)](),_0x193004[_0x30d136(0x1e1)]()?_0x193004[_0x30d136(0x1e1)]():_0x193004['focusNode']['nodeValue'];else{if(document[_0x30d136(0x1f3)][_0x30d136(0x194)])return _0x193004=document[_0x30d136(0x1f3)][_0x30d136(0x194)](),_0x193004[_0x30d136(0x139)];}return![];}function _0x4f2148(_0x4a6796){var _0x4f7b7a=_0x3c2593,_0x2dde20=_0x2c59ac(_0x4f7b7a(0xa1)+_0x4a6796)[_0x4f7b7a(0x233)](_0x4f7b7a(0xdc));_0x2cf822(_0x2dde20['val'](),_0x4a6796),_0x2a3704=_0x53917a(_0x4a6796);}function _0x1d01cf(_0x5b413b){var _0x1b60a0=_0x3c2593,_0x2c9ea8=_0x2c59ac('.richText-editor#'+_0x5b413b),_0x2fc626=_0x2c9ea8[_0x1b60a0(0x257)](_0x1b60a0(0x1e0));if(!_0x2fc626[_0x1b60a0(0x9b)](_0x1b60a0(0x17c)))return!![];var _0x411e49,_0x457e2f=parseInt(_0x2fc626['data'](_0x1b60a0(0x17c))),_0x456316=_0x2c9ea8['text'](),_0x4cee86=_0x456316[_0x1b60a0(0x256)]/_0x457e2f*0x64;if(_0x4cee86>0x63)_0x411e49=_0x1b60a0(0x137);else _0x4cee86>=0x5a?_0x411e49='orange':_0x411e49=_0x1b60a0(0xd7);_0x2fc626[_0x1b60a0(0x153)](_0x1b60a0(0x84))[_0x1b60a0(0x1c2)](_0x1b60a0(0x261)+_0x411e49+'\x22>'+_0x456316['length']+_0x1b60a0(0x1cf)+_0x457e2f);if(_0x456316['length']>_0x457e2f)return _0x53bc7a(_0x2fc626),![];return!![];}function _0x2cf822(_0x4ca5b4,_0x4ebefa){var _0xf87e6b=_0x3c2593;if(!_0x41c6f2[_0x4ebefa])return![];_0x41c6f2[_0x4ebefa][_0xf87e6b(0x256)]-0x1>_0x31c6a7[_0x4ebefa]&&(_0x41c6f2[_0x4ebefa][_0xf87e6b(0x256)]=_0x31c6a7[_0x4ebefa]+0x1),_0x41c6f2[_0x4ebefa][_0x41c6f2[_0x4ebefa][_0xf87e6b(0x256)]-0x1]!==_0x4ca5b4&&_0x41c6f2[_0x4ebefa]['push'](_0x4ca5b4),_0x31c6a7[_0x4ebefa]=_0x41c6f2[_0x4ebefa]['length']-0x1,_0x2fcce9(_0x4ebefa);}function _0x2fcce9(_0x5326e0){var _0x2435e4=_0x3c2593;_0x31c6a7[_0x5326e0]<=0x0?_0x1a055f[_0x2435e4(0x153)](_0x2435e4(0x8b))[_0x2435e4(0x106)](_0x2435e4(0x234)):_0x1a055f[_0x2435e4(0x153)](_0x2435e4(0x8b))[_0x2435e4(0x1bb)]('is-disabled'),_0x31c6a7[_0x5326e0]>=_0x41c6f2[_0x5326e0]['length']-0x1||_0x41c6f2[_0x5326e0][_0x2435e4(0x256)]===0x0?_0x1a055f[_0x2435e4(0x153)](_0x2435e4(0x195))['addClass']('is-disabled'):_0x1a055f[_0x2435e4(0x153)](_0x2435e4(0x195))[_0x2435e4(0x1bb)]('is-disabled');}function _0x53bc7a(_0x38757f){var _0x3c0cb1=_0x3c2593,_0x5ee468=_0x38757f[_0x3c0cb1(0x25d)](_0x3c0cb1(0x1e8))[_0x3c0cb1(0x191)]('id');_0x31c6a7[_0x5ee468]--;if(!_0x31c6a7[_0x5ee468]&&_0x31c6a7[_0x5ee468]!==0x0)return![];var _0x53c182=_0x41c6f2[_0x5ee468][_0x31c6a7[_0x5ee468]];_0x38757f[_0x3c0cb1(0x153)](_0x3c0cb1(0x140))['val'](_0x53c182),_0x38757f[_0x3c0cb1(0x153)](_0x3c0cb1(0x1e8))['html'](_0x53c182),_0x2fcce9(_0x5ee468);}function _0x116de6(_0x45ddd9){var _0x3f0c77=_0x3c2593,_0x229fb1=_0x45ddd9[_0x3f0c77(0x25d)](_0x3f0c77(0x1e8))[_0x3f0c77(0x191)]('id');_0x31c6a7[_0x229fb1]++;if(!_0x31c6a7[_0x229fb1]&&_0x31c6a7[_0x229fb1]!==0x0)return![];var _0x4eb122=_0x41c6f2[_0x229fb1][_0x31c6a7[_0x229fb1]];_0x45ddd9[_0x3f0c77(0x153)](_0x3f0c77(0x140))[_0x3f0c77(0x167)](_0x4eb122),_0x45ddd9[_0x3f0c77(0x153)](_0x3f0c77(0x1e8))[_0x3f0c77(0x1c2)](_0x4eb122),_0x2fcce9(_0x229fb1);}function _0x2239a3(_0x42ebf0){var _0x19086c=_0x3c2593;_0x2a3704&&_0x2342b0(_0x42ebf0?_0x42ebf0:_0x2a3704[_0x19086c(0xde)]);}function _0x2d4792(_0x329a7f){var _0x35d796=_0x3c2593,_0x4aa6c6,_0x1e49ed;if(window[_0x35d796(0x91)]){_0x4aa6c6=window[_0x35d796(0x91)]();if(_0x4aa6c6[_0x35d796(0x1e7)]&&_0x4aa6c6[_0x35d796(0x176)]){_0x1e49ed=_0x4aa6c6[_0x35d796(0x1e7)](0x0),_0x1e49ed['deleteContents']();var _0x1b5be6=document[_0x35d796(0xab)](_0x35d796(0x142));_0x1b5be6['innerHTML']=_0x329a7f;var _0x1512f4=document[_0x35d796(0xcb)](),_0x2587a1,_0x891cb3;while(_0x2587a1=_0x1b5be6[_0x35d796(0x205)]){_0x891cb3=_0x1512f4['appendChild'](_0x2587a1);}_0x1e49ed[_0x35d796(0xa6)](_0x1512f4),_0x891cb3&&(_0x1e49ed=_0x1e49ed[_0x35d796(0x1b2)](),_0x1e49ed[_0x35d796(0x16d)](_0x891cb3),_0x1e49ed[_0x35d796(0x12d)](!![]),_0x4aa6c6[_0x35d796(0x239)](),_0x4aa6c6['addRange'](_0x1e49ed));}}else document[_0x35d796(0x1f3)]&&document[_0x35d796(0x1f3)]['type']!==_0x35d796(0x15e)&&document[_0x35d796(0x1f3)][_0x35d796(0x194)]()[_0x35d796(0x12b)](_0x329a7f);}function _0x447d0e(_0x202d7e){var _0x2509bd=_0x3c2593;if(!_0x202d7e)return'';var _0xe8a3ba,_0x407b3c;return _0x334300[_0x2509bd(0x26b)]===!![]?(_0xe8a3ba=/\s+(\w+\s*=\s*(["][^"]*["])|(['][^']*[']))+/g,_0x407b3c=_0x202d7e[_0x2509bd(0xc8)](_0xe8a3ba,function(_0x280845,_0x3cea8a,_0xe4664){var _0x5772e3=_0x2509bd;if(!_0xe4664)return _0x280845;return _0x280845[_0x5772e3(0xc8)](_0xe4664,_0xe4664[_0x5772e3(0xc8)](/\"/g,'\x27'));})):(_0xe8a3ba=/\s+(\w+\s*=\s*(['][^']*['])|(["][^"]*["]))+/g,_0x407b3c=_0x202d7e['replace'](_0xe8a3ba,function(_0x2e2726,_0x11e8e2,_0x25b057){var _0x577b59=_0x2509bd;if(!_0x25b057)return _0x2e2726;return _0x2e2726['replace'](_0x25b057,_0x25b057[_0x577b59(0xc8)](/'/g,'\x22'));})),_0x407b3c;}function _0x2efa9c(_0x37ff06){var _0x384c2b=_0x3c2593,_0x5da1fd=[],_0x4d4afa='';_0x5da1fd['#FFFFFF']=_0x334300['translations'][_0x384c2b(0x1ad)],_0x5da1fd[_0x384c2b(0xc6)]=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0xd7)],_0x5da1fd[_0x384c2b(0x1a8)]=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0x88)],_0x5da1fd['#938953']=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0x25a)],_0x5da1fd[_0x384c2b(0x136)]=_0x334300[_0x384c2b(0xfb)]['darkBlue'],_0x5da1fd['blue']=_0x334300['translations']['blue'],_0x5da1fd[_0x384c2b(0xb9)]=_0x334300[_0x384c2b(0xfb)]['lightBlue'],_0x5da1fd[_0x384c2b(0x1d3)]=_0x334300['translations'][_0x384c2b(0x1b4)],_0x5da1fd[_0x384c2b(0x137)]=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0x137)],_0x5da1fd[_0x384c2b(0x24d)]=_0x334300[_0x384c2b(0xfb)]['darkGreen'],_0x5da1fd[_0x384c2b(0xb0)]=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0xb0)],_0x5da1fd[_0x384c2b(0xd3)]=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0x14c)],_0x5da1fd[_0x384c2b(0x152)]=_0x334300[_0x384c2b(0xfb)]['darkTurquois'],_0x5da1fd['#4BACC6']=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0xf1)],_0x5da1fd['#E36C09']=_0x334300['translations'][_0x384c2b(0x24a)],_0x5da1fd['#F79646']=_0x334300[_0x384c2b(0xfb)][_0x384c2b(0x159)],_0x5da1fd[_0x384c2b(0x17b)]=_0x334300['translations'][_0x384c2b(0x1d4)];_0x334300[_0x384c2b(0x162)]&&_0x334300[_0x384c2b(0x162)][_0x384c2b(0x256)]>0x0&&(_0x5da1fd=_0x334300[_0x384c2b(0x162)]);for(var _0x522391 in _0x5da1fd){_0x4d4afa+=_0x384c2b(0xc3)+_0x37ff06+_0x384c2b(0x262)+_0x522391+'\x22\x20style=\x22text-align:left;\x22\x20title=\x22'+_0x5da1fd[_0x522391]+'\x22><span\x20class=\x22box-color\x22\x20style=\x22background-color:'+_0x522391+_0x384c2b(0x254);}return _0x4d4afa;}function _0x2d438b(_0x3733c3){var _0x577c72=_0x3c2593;_0x2239a3(_0x3733c3),_0x1a055f['find'](_0x577c72(0x1e8))['is'](_0x577c72(0xec))?(_0x1a055f[_0x577c72(0x153)](_0x577c72(0xdc))[_0x577c72(0x19e)](),_0x1a055f[_0x577c72(0x153)](_0x577c72(0x1e8))[_0x577c72(0xfd)](),_0x2c59ac('.richText-toolbar')['find'](_0x577c72(0xdf))['each'](function(){var _0x2d3604=_0x577c72;_0x2c59ac(this)['children']('.fa-code')[_0x2d3604(0x256)]===0x0&&_0x2c59ac(this)[_0x2d3604(0xd0)]('li')[_0x2d3604(0x191)](_0x2d3604(0x259),_0x2d3604(0x9d));}),_0x2c92b8(_0x3733c3,_0x2a3704)):(_0x1a055f['find'](_0x577c72(0xdc))['hide'](),_0x1a055f[_0x577c72(0x153)](_0x577c72(0x1e8))[_0x577c72(0x19e)](),_0x2c92b8(_0x3733c3,_0x2a3704,!![]),_0x2c59ac(_0x577c72(0xa4))[_0x577c72(0x153)]('li')['removeAttr'](_0x577c72(0x259)));}function _0x2c92b8(_0x22776d,_0x424607,_0x53c777){var _0x26a6a8=_0x3c2593,_0x51c5cc=_0x2c59ac('#'+_0x22776d),_0x11531c=_0x51c5cc[_0x26a6a8(0x233)]('.richText-initial'),_0x3c237f=_0x11531c[_0x26a6a8(0x167)]();if(!_0x424607||!_0x3c237f)return{'start':0x0,'end':0x0};if(_0x53c777===!![])return _0x2a3704={'start':_0x51c5cc[_0x26a6a8(0x139)]()[_0x26a6a8(0x256)],'end':_0x51c5cc[_0x26a6a8(0x139)]()[_0x26a6a8(0x256)],'editorID':_0x22776d},_0x2342b0(_0x22776d),!![];_0x424607['node']=_0x11531c[0x0];var _0x2300e8={'start':![],'end':![],'tag':![],'isTag':![],'tagsCount':0x0,'isHighlight':_0x424607[_0x26a6a8(0x218)]!==_0x424607[_0x26a6a8(0xca)]};for(var _0x296603=0x0;_0x296603<_0x3c237f['length'];_0x296603++){if(_0x3c237f[_0x296603]==='<')_0x2300e8['isTag']=!![],_0x2300e8[_0x26a6a8(0xb1)]=![],_0x2300e8[_0x26a6a8(0x263)]++;else{if(_0x2300e8[_0x26a6a8(0x126)]===!![]&&_0x3c237f[_0x296603]!=='>')_0x2300e8[_0x26a6a8(0x263)]++;else{if(_0x2300e8[_0x26a6a8(0x126)]===!![]&&_0x3c237f[_0x296603]==='>')_0x2300e8[_0x26a6a8(0x126)]=![],_0x2300e8['tag']=!![],_0x2300e8['tagsCount']++;else _0x2300e8['tag']===!![]&&(_0x2300e8['tag']=![]);}}if(!_0x53c777){if(_0x424607[_0x26a6a8(0x218)]+_0x2300e8['tagsCount']<=_0x296603&&_0x2300e8[_0x26a6a8(0x229)]&&!_0x2300e8[_0x26a6a8(0x126)]&&!_0x2300e8['tag']&&!_0x2300e8[_0x26a6a8(0x218)])_0x424607[_0x26a6a8(0x218)]=_0x296603,_0x2300e8[_0x26a6a8(0x218)]=!![];else _0x424607['start']+_0x2300e8[_0x26a6a8(0x263)]<=_0x296603+0x1&&!_0x2300e8[_0x26a6a8(0x229)]&&!_0x2300e8[_0x26a6a8(0x126)]&&!_0x2300e8[_0x26a6a8(0xb1)]&&!_0x2300e8['start']&&(_0x424607[_0x26a6a8(0x218)]=_0x296603+0x1,_0x2300e8['start']=!![]);_0x424607[_0x26a6a8(0xca)]+_0x2300e8[_0x26a6a8(0x263)]<=_0x296603+0x1&&!_0x2300e8[_0x26a6a8(0x126)]&&!_0x2300e8[_0x26a6a8(0xb1)]&&!_0x2300e8[_0x26a6a8(0xca)]&&(_0x424607[_0x26a6a8(0xca)]=_0x296603+0x1,_0x2300e8[_0x26a6a8(0xca)]=!![]);}}return _0x103b42(_0x424607[_0x26a6a8(0x1e5)],_0x424607['start'],_0x424607['end']),_0x424607;}function _0x103b42(_0x170030,_0x558cfb,_0x217bdb){var _0xd4b310=_0x3c2593;if(_0x170030[_0xd4b310(0x11e)]){var _0x251f1a=_0x170030[_0xd4b310(0x11e)]();_0x251f1a[_0xd4b310(0x12d)](!![]),_0x251f1a[_0xd4b310(0x1e3)](_0xd4b310(0xbe),_0x558cfb),_0x251f1a[_0xd4b310(0x212)](_0xd4b310(0xbe),_0x217bdb),_0x251f1a[_0xd4b310(0x13a)](),_0x170030[_0xd4b310(0xe5)]();}else{if(_0x170030[_0xd4b310(0xff)])_0x170030[_0xd4b310(0xe5)](),_0x170030[_0xd4b310(0xff)](_0x558cfb,_0x217bdb);else typeof _0x170030[_0xd4b310(0x127)]!=_0xd4b310(0xf4)&&(_0x170030[_0xd4b310(0x127)]=_0x558cfb,_0x170030[_0xd4b310(0x22d)]=_0x217bdb,_0x170030[_0xd4b310(0xe5)]());}}function _0xbcc694(_0x8ba2ad,_0x20ec09){var _0x4f9d81=_0x3c2593,_0x2bdf62=_0x206ef0(_0x8ba2ad),_0x4eb0a6=![],_0x87c356=![];if(!_0x2bdf62)return![];if(!_0x20ec09)_0x20ec09=_0x4f9d81(0x97),_0x20ec09=_0x20ec09[_0x4f9d81(0x1b8)]('x');else _0x20ec09!==_0x4f9d81(0x19c)?_0x20ec09=_0x20ec09['split']('x'):(_0x4eb0a6=!![],_0x20ec09=_0x4f9d81(0x97),_0x20ec09=_0x20ec09['split']('x'));var _0x323f72=_0x4f9d81(0x11f);_0x4eb0a6===!![]&&(_0x323f72+=_0x4f9d81(0x253));var _0x554d00='webkitallowfullscreen\x20mozallowfullscreen\x20allowfullscreen';if(_0x2bdf62['platform']===_0x4f9d81(0x16a)){var _0x237c25=_0x334300[_0x4f9d81(0x12e)]?'www.youtube.com':_0x4f9d81(0xf3);_0x323f72+=_0x4f9d81(0xac)+_0x237c25+_0x4f9d81(0x128)+_0x2bdf62['id']+'?ecver=2\x22\x20width=\x22'+_0x20ec09[0x0]+'\x22\x20height=\x22'+_0x20ec09[0x1]+_0x4f9d81(0x180)+(_0x4eb0a6===!![]?_0x4f9d81(0x96):'')+'\x20'+_0x554d00+_0x4f9d81(0x1f7),_0x87c356=!![];}else{if(_0x2bdf62[_0x4f9d81(0x200)]===_0x4f9d81(0x21c))_0x323f72+=_0x4f9d81(0x223)+_0x2bdf62['id']+_0x4f9d81(0x1d7)+_0x20ec09[0x0]+_0x4f9d81(0x192)+_0x20ec09[0x1]+_0x4f9d81(0x180)+(_0x4eb0a6===!![]?_0x4f9d81(0x96):'')+'\x20'+_0x554d00+_0x4f9d81(0x1f7),_0x87c356=!![];else{if(_0x2bdf62[_0x4f9d81(0x200)]===_0x4f9d81(0xf8))_0x323f72+=_0x4f9d81(0x157)+encodeURI(_0x8ba2ad)+_0x4f9d81(0x202)+_0x20ec09[0x0]+_0x4f9d81(0x1d7)+_0x20ec09[0x0]+_0x4f9d81(0x192)+_0x20ec09[0x1]+_0x4f9d81(0x1ee)+(_0x4eb0a6===!![]?'position:absolute;width:100%;height:100%;left:0;border:none;overflow:hidden\x22':_0x4f9d81(0x258))+_0x4f9d81(0x14d)+_0x554d00+'></iframe>',_0x87c356=!![];else _0x2bdf62[_0x4f9d81(0x200)]===_0x4f9d81(0x13e)&&(_0x323f72+=_0x4f9d81(0x14b)+_0x20ec09[0x0]+_0x4f9d81(0x192)+_0x20ec09[0x1]+_0x4f9d81(0x109)+_0x2bdf62['id']+'\x22'+(_0x4eb0a6===!![]?_0x4f9d81(0x96):'')+'\x20'+_0x554d00+_0x4f9d81(0x1f7),_0x87c356=!![]);}}_0x4eb0a6===!![]&&(_0x323f72+=_0x4f9d81(0x22e));_0x323f72+=_0x4f9d81(0x11f);if(_0x87c356)return _0x323f72;return![];}function _0x206ef0(_0x4cc0d4){var _0x5a5ffb=_0x3c2593,_0x3bb971=/(?:http?s?:\/\/)?(?:www\.)?(?:vimeo\.com)\/?(.+)/,_0x3295ec=/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/,_0x6aac8c=/(?:http?s?:\/\/)?(?:www\.)?(?:facebook\.com)\/.*\/videos\/[0-9]+/,_0x516b2b=/(?:http?s?:\/\/)?(?:www\.)?(?:dailymotion\.com)\/video\/([a-zA-Z0-9]+)/,_0x370fbe=_0x4cc0d4[_0x5a5ffb(0x1e2)](_0x3295ec),_0x46d270=_0x4cc0d4[_0x5a5ffb(0x1e2)](_0x3bb971),_0xfce32a=_0x4cc0d4[_0x5a5ffb(0x1e2)](_0x6aac8c),_0x5093d0=_0x4cc0d4[_0x5a5ffb(0x1e2)](_0x516b2b);if(_0x370fbe&&_0x370fbe[0x2]['length']===0xb)return{'platform':'YouTube','id':_0x370fbe[0x2]};else{if(_0x46d270&&_0x46d270[0x1])return{'platform':_0x5a5ffb(0x21c),'id':_0x46d270[0x1]};else{if(_0xfce32a&&_0xfce32a[0x0])return{'platform':_0x5a5ffb(0xf8),'id':_0xfce32a[0x0]};else{if(_0x5093d0&&_0x5093d0[0x1])return{'platform':'Dailymotion','id':_0x5093d0[0x1]};}}}return![];}function _0x3dd055(){var _0x52954e=_0x3c2593;_0x1a055f&&!_0x1a055f['find']('.richText-editor')[_0x52954e(0x1c2)]()?_0x334300[_0x52954e(0x1d1)]!==![]?_0x1a055f[_0x52954e(0x153)](_0x52954e(0x1e8))[_0x52954e(0x1c2)](_0x52954e(0x21b)):_0x1a055f[_0x52954e(0x153)]('.richText-editor')[_0x52954e(0x1c2)](_0x52954e(0xb5)):_0x334300[_0x52954e(0x1d1)]!==![]?_0x1a055f[_0x52954e(0x153)](_0x52954e(0x1e8))[_0x52954e(0x153)]('div:not(.videoEmbed)')[_0x52954e(0xcd)](function(){var _0x2ff684=_0x52954e;return _0x2c59ac(_0x2ff684(0x1ce),{'html':_0x2c59ac(this)[_0x2ff684(0x1c2)]()});}):_0x1a055f['find'](_0x52954e(0x1e8))[_0x52954e(0x153)]('p')[_0x52954e(0xcd)](function(){var _0x550deb=_0x52954e;return _0x2c59ac(_0x550deb(0x20c),{'html':_0x2c59ac(this)[_0x550deb(0x1c2)]()});}),_0x22ed57();}return _0x2c59ac(this);},_0x2c59ac['fn']['unRichText']=function(_0x988999){var _0x421888=_0x57d5bd,_0x5bc5b3=_0x2c59ac[_0x421888(0x247)]({'delay':0x0},_0x988999),_0x39b695,_0x5cf1f7,_0x2e5a49,_0x46ad79=_0x2c59ac(this);function _0x16f533(){var _0x379751=_0x421888;if(_0x46ad79[_0x379751(0x111)](_0x379751(0x1e9)))_0x2e5a49=_0x46ad79;else(_0x46ad79[_0x379751(0x111)]('richText-initial')||_0x46ad79[_0x379751(0x111)](_0x379751(0x169)))&&(_0x2e5a49=_0x46ad79[_0x379751(0x257)](_0x379751(0x1e0)));if(!_0x2e5a49)return![];_0x39b695=_0x2e5a49[_0x379751(0x153)](_0x379751(0x1e8)),_0x5cf1f7=_0x2e5a49[_0x379751(0x153)]('.richText-initial'),parseInt(_0x5bc5b3[_0x379751(0xa8)])>0x0?setTimeout(_0x23a923,parseInt(_0x5bc5b3[_0x379751(0xa8)])):_0x23a923();}_0x16f533();function _0x23a923(){var _0x276051=_0x421888;_0x2e5a49['find']('.richText-toolbar')[_0x276051(0x108)](),_0x2e5a49[_0x276051(0x153)]('.richText-editor')[_0x276051(0x108)](),_0x5cf1f7[_0x276051(0x18e)](_0x276051(0x1e0))['data'](_0x276051(0x1a3),'richText')[_0x276051(0x1bb)](_0x276051(0x268))[_0x276051(0x19e)]();}};}(jQuery));function a7_0x3cff(){var _0x419959=['richText-undo\x20is-disabled','\x20#3</a>','responsive','richText-','show','<span\x20class=\x22fa\x20fa-question-circle\x22></span>','px;\x22>','startContainer','</tr>','editor','Video\x20URL\x20not\x20supported','\x22></div>','File\x20URL','addFile','#7F6000','heading','alignRight','</a>','\x20#1</a>','white','\x22\x20align=\x22','prop','<span\x20class=\x22fa\x20fa-link\x22></span>','Add\x20unordered\x20list','cloneRange','<a\x20data-command=\x22formatBlock\x22\x20data-option=\x22h1\x22>','darkRed','51536TYXyRg','pleaseEnterURL','Please\x20select\x20an\x20image','split','nwse-resize','margin-top','removeClass','<textarea','<option\x20/>','Purple','nextSibling','Align\x20right','<span\x20class=\x22fa\x20fa-underline\x22></span>','html','13332kYfsNd','Yellow','richText-help','offset','<span\x20class=\x22fa\x20fa-paint-brush\x22></span>','<table\x20class=\x22table-1\x22><tbody>','tableRows','<span\x20style=\x27font-size:','justifyCenter','src','clone','<p\x20/>','</span>/','#fileURL','useParagraph','toggleCode','#953734','yellow','pleaseSelectFile','addImage','\x22\x20width=\x22','previous','alignCenter','<span\x20class=\x22fa\x20fa-bold\x22></span>','input#videoURL','<hr><br>Powered\x20by\x20<a\x20href=\x22https://github.com/webfashionist/RichText\x22\x20target=\x22_blank\x22>webfashionist/RichText</a>\x20(Github)\x20<br>License:\x20<a\x20href=\x22https://github.com/webfashionist/RichText/blob/master/LICENSE\x22\x20target=\x22_blank\x22>AGPL-3.0</a>','480x270','map','Responsive','.richText','toString','match','moveStart','input#tableColumns','node','<ul\x20/>','getRangeAt','.richText-editor','richText','Orange','action','selectAllChildren','Center','\x22\x20style=\x22','is-selected','\x20#4</a>','Black','each','selection','color:red;display:none;','mozallowfullscreen','Dark\x20Red','></iframe>','for','select#align','richText-dropdown','openIn','fontSize','mouseup','Add\x20ordered\x20list','target','platform','Show\x20HTML\x20code','&show_text=0&width=','insertOrderedList',';\x22\x20data-command=\x22fontName\x22\x20data-option=\x22','firstChild','li.is-selected','mousedown','height','Add\x20table','pageX','richText-File','<div\x20/>','Columns','setStart','<span\x20id=\x22closeHelp\x22\x20style=\x22display:block;position:absolute;top:0;right:0;padding:10px;cursor:pointer;\x22\x20title=\x22','\x20#2</a>','wrap','moveEnd','top','fonts','.richText-toolbar\x20li.is-selected','alignLeft','richText-redo','start','urlText','option','<p><br></p>','Vimeo','<span\x20class=\x22fa\x20fa-undo\x22></span>','slideDown','prepend','tagName','addVideo','.richText-toolbar\x20a[data-command]','<iframe\x20src=\x22https://player.vimeo.com/video/','caret','size','.richText-editNode','New\x20tab','fontList','isHighlight','Bold','richText-editNode','Align','selectionEnd','</div>','sameTab','\x22><span\x20class=\x22fa\x20fa-times\x22></span></span>','newTab','addRange','siblings','is-disabled','align','Green','keyCode','#richText-File\x20button.btn','removeAllRanges','<span\x20class=\x22fa\x20fa-image\x22></span>','title','Add\x20font','false','videoURL','name','richText-Image','default','px;\x27>','Right','Tahoma','slideUp','#imageURL','extend','<a\x20/>','<table\x20class=\x27table-1\x27><tbody>','darkOrange','<span\x20class=\x22fa\x20fa-code\x22></span>','substring','#4F6128','Georgia','text-align:center;','push','command','.richText-form','<div\x20class=\x22videoEmbed\x22\x20style=\x22position:relative;height:0;padding-bottom:56.25%\x22>','\x22></span></a></li>','Rows','length','parents','border:none;overflow:hidden','data-disable','beige','code','Add\x20URL','children','richText-length','getElementById','#richText-URL\x20button.btn','<span\x20class=\x22','\x22\x20data-option=\x22','tagsCount','<span\x20class=\x22fa\x20fa-repeat\x20fa-redo\x22></span>','Comic\x20Sans\x20MS','<label\x20/>','width','richText-initial','Same\x20tab','Close','useSingleQuotes','#closeHelp','Redo','Justify','.richText-length','fileText','Italic','innerHeight','brown','type','innerWidth','.richText-undo','class','Remove\x20styles','Arial','href','close','getSelection','linkText','italic','URL','<span\x20class=\x22fa\x20fa-align-justify\x22></span>','\x20style=\x22position:absolute;width:100%;height:100%;left:0\x22','640x360','</span>','.form-item.is-error','addHeading','data','insertUnorderedList','true','frameborder','justify','2487060FmFjeP','.richText-editor#','urls','margin-bottom','.richText-toolbar','\x20data-richtext=\x22init\x22>','insertNode','right','delay','nodeName','Align\x20centered','createElement','<iframe\x20src=\x22https://','<a\x20style=\x22font-size:','.richText-dropdown-outer','<span\x20class=\x22fa\x20fa-italic\x22></span>','green','tag','imageUpload','richText-Table','richText-redo\x20is-disabled','<div><br></div>','Dark\x20Blue','Add\x20Heading/title','#openIn','#4F81BD','fileHTML','bold','White','justifyLeft','character','fontColor','addFontSize','pop','first','<li\x20class=\x22inline\x22><a\x20data-command=\x22','columns','_self','#000000','Text','replace','<span\x20class=\x22fa\x20fa-recycle\x22></span>','end','createDocumentFragment','nodeType','replaceWith','13469520UZPfIl','.richText-toolbar\x20li','parent','</tbody></table>','setEnd','#3F3151','#richText-Table\x20button.btn','data-','<h3\x20style=\x22margin:0;\x22>RichText</h3>','black','undo','richText-dropdown-close','indexOf','next','.richText-initial','Add\x20font\x20color','editorID','.richText-btn','IMG','input#urlText','removeAttr','centerAlign','dblclick\x20mouseup','focus','richText-btn','#fileText','<td\x20/>','#richText-Image','imageHTML','<a\x20data-command=\x22formatBlock\x22\x20data-option=\x22h4\x22>',':visible','input#tableRows','<span\x20class=\x22fa\x20fa-align-right\x22></span>','Link\x20text','random','turquois','Left','www.youtube-nocookie.com','undefined','startOffset','padding-top','forecolor','Facebook','238AtbUDc','addFont','translations','add','hide','tableColumns','setSelectionRange','preventDefault','rows','btn','pageY','<br>','richText-dropdown-outer','addClass','parentNode','remove','\x22\x20src=\x22//www.dailymotion.com/embed/video/','fileUpload','<span\x20/>','table','addURL','5676056jkircV','</textarea>','<a\x20href=\x27','hasClass','execCommand','<span\x20class=\x22fa\x20fa-video-camera\x20fa-video\x22></span>','left','Add\x20font\x20size','[data-richtext=\x22init\x22]','<span\x20class=\x22fa\x20fa-file-text-o\x20far\x20fa-file-alt\x22></span>','\x27\x20target=\x27','<span\x20class=\x22fa\x20fa-font\x22></span>','min','value','Undo','<tr>','createTextRange','<br><br>','\x27\x20align=\x27','.list-rightclick.richText-list','<a\x20style=\x22font-family:','.fa-link','Please\x20enter\x20an\x20URL','_blank','isTag','selectionStart','/embed/','<span\x20class=\x22fa\x20fa-list-ol\x22></span>','11940bhfUho','pasteHTML','number','collapse','youtubeCookies','TEXTAREA','heightPercentage','<span\x20class=\x22fa\x20fa-align-left\x22></span>','69gWoLpK','addTable','Please\x20select\x20a\x20file','<li\x20/>','#1F497D','red','previousSibling','text','select','fa-image','560x315','addFontColor','Dailymotion','file','textarea','imageURL','div','Light\x20Blue','Brown','url','contextmenu','append','input#fileText','320x180','<span\x20style=\x22font-size:','<iframe\x20frameborder=\x220\x22\x20width=\x22','purple','\x22\x20scrolling=\x22no\x22\x20frameborder=\x220\x22\x20allowTransparency=\x22true\x22\x20','richText-toolbar','fileURL','h1,h2,h3,h4,h5,h6','before','#31859B','find','Dark\x20Orange','data-richtext','selectNodeContents','<iframe\x20src=\x22https://www.facebook.com/plugins/video.php?href=','focusOffset','orange','videoURLnotSupported','richText-form','<input\x20/>','<div\x20style=\x27text-align:center;\x27><img\x20src=\x27','Control','select#openIn','keydown','.richText-editor,\x20.richText-initial','colors','Geneva','.richText-help','center','underline','val','rightAlign','richText-editor','YouTube','alt','form-item\x20is-error','setStartAfter','<div\x20style=\x22text-align:center;\x22></div>','DefaultParagraphSeparator','childNodes','focusNode','<tr\x20/>','Open\x20in','<a\x20data-command=\x22formatBlock\x22\x20data-option=\x22h3\x22>','<a\x20data-command=\x22formatBlock\x22\x20data-option=\x22h2\x22>','rangeCount','input#imageURL','data-editor','richText-list','anchor','#FFFF00','maxlength','Dark\x20Turquois','click','415GBvEcu','\x22\x20frameborder=\x220\x22','substr','#richText-URL','allowfullscreen','richText-form-item','<a\x20href=\x22','<td>\x20</td>','.richText-list.list-rightclick','<div\x20style=\x22text-align:center;\x22><img\x20src=\x22','videoEmbed','.richText-form-item','Size','2110qHmjoX','css','unwrap','Verdana','removeStyles','attr','\x22\x20height=\x22','justifyRight','createRange','.richText-redo','Add\x20video','attributes','style','<span\x20class=\x22fa\x20fa-align-center\x22></span>'];a7_0x3cff=function(){return _0x419959;};return a7_0x3cff();}
+(function ( $ ) {
+ 
+    $.fn.richText = function( options ) {
+
+        // set default options
+        // and merge them with the parameter options
+        var settings = $.extend({
+            
+            // text formatting
+            bold: true,
+            italic: true,
+            underline: true,
+
+            // text alignment
+            leftAlign: true,
+            centerAlign: true,
+            rightAlign: true,
+            justify: true,
+
+            // lists
+            ol: true,
+            ul: true,
+
+            // title
+            heading: true,
+
+            // fonts
+            fonts: true,
+            fontList: ["Arial", 
+                    "Arial Black", 
+                    "Comic Sans MS", 
+                    "Courier New", 
+                    "Geneva", 
+                    "Georgia", 
+                    "Helvetica", 
+                    "Impact", 
+                    "Lucida Console", 
+                    "Tahoma", 
+                    "Times New Roman",
+                    "Verdana"
+                    ],
+            fontColor: true,
+            fontSize: true,
+
+            // uploads
+            imageUpload: true,
+            fileUpload: true,
+
+            // media
+            videoEmbed: true,
+
+            // link
+            urls: true,
+
+            // tables
+            table: true,
+
+            // code
+            removeStyles: true,
+            code: true,
+
+            // colors
+            colors: [],
+
+            // dropdowns
+            fileHTML: '',
+            imageHTML: '',
+
+            // translations
+            translations: {
+                'title': 'Title',
+                'white': 'White',
+                'black': 'Black',
+                'brown': 'Brown',
+                'beige': 'Beige',
+                'darkBlue': 'Dark Blue',
+                'blue': 'Blue',
+                'lightBlue': 'Light Blue',
+                'darkRed': 'Dark Red',
+                'red': 'Red',
+                'darkGreen': 'Dark Green',
+                'green': 'Green',
+                'purple': 'Purple',
+                'darkTurquois': 'Dark Turquois',
+                'turquois': 'Turquois',
+                'darkOrange': 'Dark Orange',
+                'orange': 'Orange',
+                'yellow': 'Yellow',
+                'imageURL': 'Image URL',
+                'fileURL': 'File URL',
+                'linkText': 'Link text',
+                'url': 'URL',
+                'size': 'Size',
+                'responsive': 'Responsive',
+                'text': 'Text',
+                'openIn': 'Open in',
+                'sameTab': 'Same tab',
+                'newTab': 'New tab',
+                'align': 'Align',
+                'left': 'Left',
+                'justify': 'Justify',
+                'center': 'Center',
+                'right': 'Right',
+                'rows': 'Rows',
+                'columns': 'Columns',
+                'add': 'Add',
+                'pleaseEnterURL': 'Please enter an URL',
+                'videoURLnotSupported': 'Video URL not supported',
+                'pleaseSelectImage': 'Please select an image',
+                'pleaseSelectFile': 'Please select a file',
+                'bold': 'Bold',
+                'italic': 'Italic',
+                'underline': 'Underline',
+                'alignLeft': 'Align left',
+                'alignCenter': 'Align centered',
+                'alignRight': 'Align right',
+                'addOrderedList': 'Add ordered list',
+                'addUnorderedList': 'Add unordered list',
+                'addHeading': 'Add Heading/title',
+                'addFont': 'Add font',
+                'addFontColor': 'Add font color',
+                'addFontSize' : 'Add font size',
+                'addImage': 'Add image',
+                'addVideo': 'Add video',
+                'addFile': 'Add file',
+                'addURL': 'Add URL',
+                'addTable': 'Add table',
+                'removeStyles': 'Remove styles',
+                'code': 'Show HTML code',
+                'undo': 'Undo',
+                'redo': 'Redo',
+                'close': 'Close'
+            },
+
+            // privacy
+            youtubeCookies: false,
+
+            // dev settings
+            useSingleQuotes: false,
+            height: 0,
+            heightPercentage: 0,
+            id: "",
+            class: "",
+            useParagraph: false,
+            maxlength: 0
+
+        }, options );
+
+
+        /* prepare toolbar */
+        var $inputElement = $(this);
+        $inputElement.addClass("richText-initial");
+        var $editor,
+            $toolbarList = $('<ul />'),
+            $toolbarElement = $('<li />'),
+            $btnBold = $('<a />', {class: "richText-btn", "data-command": "bold", "title": settings.translations.bold, html: '<span class="fa fa-bold"></span>'}), // bold
+            $btnItalic = $('<a />', {class: "richText-btn", "data-command": "italic", "title": settings.translations.italic, html: '<span class="fa fa-italic"></span>'}), // italic
+            $btnUnderline = $('<a />', {class: "richText-btn", "data-command": "underline", "title": settings.translations.underline, html: '<span class="fa fa-underline"></span>'}), // underline
+            $btnJustify = $('<a />', {class: "richText-btn", "data-command": "justifyFull", "title": settings.translations.justify, html: '<span class="fa fa-align-justify"></span>'}), // left align
+            $btnLeftAlign = $('<a />', {class: "richText-btn", "data-command": "justifyLeft", "title": settings.translations.alignLeft, html: '<span class="fa fa-align-left"></span>'}), // left align
+            $btnCenterAlign = $('<a />', {class: "richText-btn", "data-command": "justifyCenter", "title": settings.translations.alignCenter, html: '<span class="fa fa-align-center"></span>'}), // centered
+            $btnRightAlign = $('<a />', {class: "richText-btn", "data-command": "justifyRight", "title": settings.translations.alignRight, html: '<span class="fa fa-align-right"></span>'}), // right align
+            $btnOL = $('<a />', {class: "richText-btn", "data-command": "insertOrderedList", "title": settings.translations.addOrderedList, html: '<span class="fa fa-list-ol"></span>'}), // ordered list
+            $btnUL = $('<a />', {class: "richText-btn", "data-command": "insertUnorderedList", "title": settings.translations.addUnorderedList, html: '<span class="fa fa-list"></span>'}), // unordered list
+            $btnHeading = $('<a />', {class: "richText-btn", "title": settings.translations.addHeading, html: '<span class="fa fa-header fa-heading"></span>'}), // title/header
+            $btnFont = $('<a />', {class: "richText-btn", "title": settings.translations.addFont, html: '<span class="fa fa-font"></span>'}), // font color
+            $btnFontColor = $('<a />', {class: "richText-btn", "title": settings.translations.addFontColor, html: '<span class="fa fa-paint-brush"></span>'}), // font color
+            $btnFontSize = $('<a />', {class: "richText-btn", "title": settings.translations.addFontSize, html: '<span class="fa fa-text-height"></span>'}), // font color
+            $btnImageUpload = $('<a />', {class: "richText-btn", "title": settings.translations.addImage, html: '<span class="fa fa-image"></span>'}), // image
+            $btnVideoEmbed = $('<a />', {class: "richText-btn", "title": settings.translations.addVideo, html: '<span class="fa fa-video-camera fa-video"></span>'}), // video
+            $btnFileUpload = $('<a />', {class: "richText-btn", "title": settings.translations.addFile, html: '<span class="fa fa-file-text-o far fa-file-alt"></span>'}), // file
+            $btnURLs = $('<a />', {class: "richText-btn", "title": settings.translations.addURL, html: '<span class="fa fa-link"></span>'}), // urls/links
+            $btnTable = $('<a />', {class: "richText-btn", "title": settings.translations.addTable, html: '<span class="fa fa-table"></span>'}), // table
+            $btnRemoveStyles = $('<a />', {class: "richText-btn", "data-command": "removeFormat", "title": settings.translations.removeStyles, html: '<span class="fa fa-recycle"></span>'}), // clean up styles
+            $btnCode = $('<a />', {class: "richText-btn", "data-command": "toggleCode", "title": settings.translations.code, html: '<span class="fa fa-code"></span>'}); // code
+
+        
+        /* prepare toolbar dropdowns */
+        var $dropdownOuter = $('<div />', {class: "richText-dropdown-outer"});
+        var $dropdownClose = $('<span />', {class: "richText-dropdown-close", html: '<span title="' + settings.translations.close + '"><span class="fa fa-times"></span></span>'});
+        var $dropdownList = $('<ul />', {class: "richText-dropdown"}), // dropdown lists
+            $dropdownBox = $('<div />', {class: "richText-dropdown"}), // dropdown boxes / custom dropdowns
+            $form = $('<div />', {class: "richText-form"}), // symbolic form
+            $formItem = $('<div />', {class: 'richText-form-item'}), // form item
+            $formLabel = $('<label />'), // form label
+            $formInput = $('<input />', {type: "text"}), //form input field
+            $formInputFile = $('<input />', {type: "file"}), // form file input field
+            $formInputSelect = $('<select />'),
+            $formButton = $('<button />', {text: settings.translations.add, class: "btn"}); // button
+
+        /* internal settings */
+        var savedSelection; // caret position/selection
+        var editorID = "richText-" + Math.random().toString(36).substring(7);
+        var ignoreSave = false, $resizeImage = null;
+
+        /* prepare editor history */
+        var history = [];
+        history[editorID] = [];
+        var historyPosition = [];
+        historyPosition[editorID] = 0;
+
+        /* list dropdown for titles */
+        var $titles = $dropdownList.clone();
+        $titles.append($('<li />', {html: '<a data-command="formatBlock" data-option="h1">' + settings.translations.title + ' #1</a>'}));
+        $titles.append($('<li />', {html: '<a data-command="formatBlock" data-option="h2">' + settings.translations.title + ' #2</a>'}));
+        $titles.append($('<li />', {html: '<a data-command="formatBlock" data-option="h3">' + settings.translations.title + ' #3</a>'}));
+        $titles.append($('<li />', {html: '<a data-command="formatBlock" data-option="h4">' + settings.translations.title + ' #4</a>'}));
+        $btnHeading.append($dropdownOuter.clone().append($titles.prepend($dropdownClose.clone())));
+
+        /* list dropdown for fonts */
+        var fonts = settings.fontList;
+        var $fonts = $dropdownList.clone();
+        for(var i = 0; i < fonts.length; i++) {
+            $fonts.append($('<li />', {html: '<a style="font-family:' + fonts[i] + ';" data-command="fontName" data-option="' + fonts[i] + '">' + fonts[i] + '</a>'}));
+        }
+        $btnFont.append($dropdownOuter.clone().append($fonts.prepend($dropdownClose.clone())));
+
+        /* list dropdown for font sizes */
+        var fontSizes = [24,18,16,14,12];
+        var $fontSizes = $dropdownList.clone();
+        for(var i = 0; i < fontSizes.length; i++) {
+            $fontSizes.append($('<li />', {html: '<a style="font-size:' + fontSizes[i] + 'px;" data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text  + ' ' + fontSizes[i] + 'px</a>'}));
+        }
+        $btnFontSize.append($dropdownOuter.clone().append($fontSizes.prepend($dropdownClose.clone())));
+
+        /* font colors */
+        var $fontColors = $dropdownList.clone();
+        $fontColors.html(loadColors("forecolor"));
+        $btnFontColor.append($dropdownOuter.clone().append($fontColors.prepend($dropdownClose.clone())));
+
+
+        /* background colors */
+        //var $bgColors = $dropdownList.clone();
+        //$bgColors.html(loadColors("hiliteColor"));
+        //$btnBGColor.append($dropdownOuter.clone().append($bgColors));
+
+        /* box dropdown for links */
+        var $linksDropdown = $dropdownBox.clone();
+        var $linksForm = $form.clone().attr("id", "richText-URL").attr("data-editor", editorID);
+        $linksForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.url).attr("for", "url"))
+                .append($formInput.clone().attr("id", "url"))
+               );
+        $linksForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.text).attr("for", "urlText"))
+                .append($formInput.clone().attr("id", "urlText"))
+               );
+        $linksForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.openIn).attr("for", "openIn"))
+                .append(
+                    $formInputSelect
+                        .clone().attr("id", "openIn")
+                        .append($("<option />", {value: '_self', text: settings.translations.sameTab}))
+                        .append($("<option />", {value: '_blank', text: settings.translations.newTab}))
+                    )
+               );
+        $linksForm.append( $formItem.clone().append($formButton.clone()) );
+        $linksDropdown.append($linksForm);
+        $btnURLs.append($dropdownOuter.clone().append($linksDropdown.prepend($dropdownClose.clone())));
+
+        /* box dropdown for video embedding */
+        var $videoDropdown = $dropdownBox.clone();
+        var $videoForm = $form.clone().attr("id", "richText-Video").attr("data-editor", editorID);
+        $videoForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.url).attr("for", "videoURL"))
+                .append($formInput.clone().attr("id", "videoURL"))
+            );
+        $videoForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.size).attr("for", "size"))
+                .append(
+                        $formInputSelect
+                            .clone().attr("id", "size")
+                            .append($("<option />", {value: 'responsive', text: settings.translations.responsive}))
+                            .append($("<option />", {value: '640x360', text: '640x360'}))
+                            .append($("<option />", {value: '560x315', text: '560x315'}))
+                            .append($("<option />", {value: '480x270', text: '480x270'}))
+                            .append($("<option />", {value: '320x180', text: '320x180'}))
+                        )
+                   );
+        $videoForm.append( $formItem.clone().append($formButton.clone()) );
+        $videoDropdown.append($videoForm);
+        $btnVideoEmbed.append($dropdownOuter.clone().append($videoDropdown.prepend($dropdownClose.clone())));
+
+        /* box dropdown for image upload/image selection */
+        var $imageDropdown = $dropdownBox.clone();
+        var $imageForm = $form.clone().attr("id", "richText-Image").attr("data-editor", editorID);
+
+        if(settings.imageHTML 
+            && ($(settings.imageHTML).find('#imageURL').length > 0 || $(settings.imageHTML).attr("id") === "imageURL")) {
+            // custom image form
+            $imageForm.html(settings.imageHTML);
+        } else {
+            // default image form
+            $imageForm.append(
+                $formItem.clone()
+                    .append($formLabel.clone().text(settings.translations.imageURL).attr("for", "imageURL"))
+                    .append($formInput.clone().attr("id", "imageURL"))
+                   );
+            $imageForm.append(
+                $formItem.clone()
+                    .append($formLabel.clone().text(settings.translations.align).attr("for", "align"))
+                    .append(
+                        $formInputSelect
+                            .clone().attr("id", "align")
+                            .append($("<option />", {value: 'left', text: settings.translations.left}))
+                            .append($("<option />", {value: 'center', text: settings.translations.center}))
+                            .append($("<option />", {value: 'right', text: settings.translations.right}))
+                        )
+                   );
+        }
+        $imageForm.append( $formItem.clone().append($formButton.clone()) );
+        $imageDropdown.append($imageForm);
+        $btnImageUpload.append($dropdownOuter.clone().append($imageDropdown.prepend($dropdownClose.clone())));
+
+        /* box dropdown for file upload/file selection */
+        var $fileDropdown = $dropdownBox.clone();
+        var $fileForm = $form.clone().attr("id", "richText-File").attr("data-editor", editorID);
+
+        if(settings.fileHTML 
+            && ($(settings.fileHTML).find('#fileURL').length > 0 || $(settings.fileHTML).attr("id") === "fileURL")) {
+            // custom file form
+            $fileForm.html(settings.fileHTML);
+        } else {
+            // default file form
+            $fileForm.append(
+                $formItem.clone()
+                    .append($formLabel.clone().text(settings.translations.fileURL).attr("for", "fileURL"))
+                    .append($formInput.clone().attr("id", "fileURL"))
+                );
+            $fileForm.append(
+                $formItem.clone()
+                    .append($formLabel.clone().text(settings.translations.linkText).attr("for", "fileText"))
+                    .append($formInput.clone().attr("id", "fileText"))
+                );
+        }
+        $fileForm.append( $formItem.clone().append($formButton.clone()) );
+        $fileDropdown.append($fileForm);
+        $btnFileUpload.append($dropdownOuter.clone().append($fileDropdown.prepend($dropdownClose.clone())));
+
+        /* box dropdown for tables */
+        var $tableDropdown = $dropdownBox.clone();
+        var $tableForm = $form.clone().attr("id", "richText-Table").attr("data-editor", editorID);
+        $tableForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.rows).attr("for", "tableRows"))
+                .append($formInput.clone().attr("id", "tableRows").attr("type", "number"))
+            );
+        $tableForm.append(
+            $formItem.clone()
+                .append($formLabel.clone().text(settings.translations.columns).attr("for", "tableColumns"))
+                .append($formInput.clone().attr("id", "tableColumns").attr("type", "number"))
+            );
+        $tableForm.append( $formItem.clone().append($formButton.clone()) );
+        $tableDropdown.append($tableForm);
+        $btnTable.append($dropdownOuter.clone().append($tableDropdown.prepend($dropdownClose.clone())));
+
+
+        /* initizalize editor */
+        function init() {
+            var value, attributes, attributes_html = '';
+
+            if(settings.useParagraph !== false) {
+                // set default tag when pressing ENTER to <p> instead of <div>
+                document.execCommand("DefaultParagraphSeparator", false, 'p');
+            }
+
+
+            // reformat $inputElement to textarea
+            if($inputElement.prop("tagName") === "TEXTAREA") {
+                // everything perfect
+            } else if($inputElement.val()) {
+                value = $inputElement.val();
+                attributes = $inputElement.prop("attributes");
+                // loop through <select> attributes and apply them on <div>
+                $.each(attributes, function() {
+                    if(this.name) {
+                        attributes_html += ' ' + this.name + '="' + this.value + '"';
+                    }
+                });
+                $inputElement.replaceWith($('<textarea' + attributes_html + ' data-richtext="init">' + value + '</textarea>'));
+                $inputElement = $('[data-richtext="init"]');
+                $inputElement.removeAttr("data-richtext");
+            } else if($inputElement.html()) {
+                value = $inputElement.html();
+                attributes = $inputElement.prop("attributes");
+                // loop through <select> attributes and apply them on <div>
+                $.each(attributes, function() {
+                    if(this.name) {
+                        attributes_html += ' ' + this.name + '="' + this.value + '"';
+                    }
+                });
+                $inputElement.replaceWith($('<textarea' + attributes_html + ' data-richtext="init">' + value + '</textarea>'));
+                $inputElement = $('[data-richtext="init"]');
+                $inputElement.removeAttr("data-richtext");
+            } else {
+                attributes = $inputElement.prop("attributes");
+                // loop through <select> attributes and apply them on <div>
+                $.each(attributes, function() {
+                    if(this.name) {
+                        attributes_html += ' ' + this.name + '="' + this.value + '"';
+                    }
+                });
+                $inputElement.replaceWith($('<textarea' + attributes_html + ' data-richtext="init"></textarea>'));
+                $inputElement = $('[data-richtext="init"]');
+                $inputElement.removeAttr("data-richtext");
+            }
+
+            $editor = $('<div />', {class: "richText"});
+            var $toolbar = $('<div />', {class: "richText-toolbar"});
+            var $editorView = $('<div />', {class: "richText-editor", id: editorID, contenteditable: true});
+            $toolbar.append($toolbarList);
+
+            /* text formatting */
+            if(settings.bold === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnBold));
+            }
+            if(settings.italic === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnItalic));
+            }
+            if(settings.underline === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnUnderline));
+            }
+
+            /* align */
+            if(settings.leftAlign === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnLeftAlign));
+            }
+            if(settings.centerAlign === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnCenterAlign));
+            }
+            if(settings.rightAlign === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnRightAlign));
+            }
+            if(settings.justify === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnJustify));
+            }
+
+            /* lists */
+            if(settings.ol === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnOL));
+            }
+            if(settings.ul === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnUL));
+            }
+
+            /* fonts */
+            if(settings.fonts === true && settings.fontList.length > 0) {
+                $toolbarList.append($toolbarElement.clone().append($btnFont));
+            }
+            if(settings.fontSize === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnFontSize));
+            }
+
+            /* heading */
+            if(settings.heading === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnHeading));
+            }
+
+            /* colors */
+            if(settings.fontColor === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnFontColor));
+            }
+
+            /* uploads */
+            if(settings.imageUpload === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnImageUpload));
+            }
+            if(settings.fileUpload === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnFileUpload));
+            }
+
+            /* media */
+            if(settings.videoEmbed === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnVideoEmbed));
+            }
+
+            /* urls */
+            if(settings.urls === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnURLs));
+            }
+
+            if(settings.table === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnTable));
+            }
+
+            /* code */
+            if(settings.removeStyles === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnRemoveStyles));
+            }
+            if(settings.code === true) {
+                $toolbarList.append($toolbarElement.clone().append($btnCode));
+            }
+
+            // set current textarea value to editor
+            $editorView.html($inputElement.val());
+
+            $editor.append($toolbar);
+            $editor.append($editorView);
+            $editor.append($inputElement.clone().hide());
+            $inputElement.replaceWith($editor);
+
+            // append bottom toolbar
+            $editor.append(
+                $('<div />', {class: 'richText-toolbar'})
+                    .append($('<a />', {class: 'richText-undo is-disabled', html: '<span class="fa fa-undo"></span>', 'title': settings.translations.undo}))
+                    .append($('<a />', {class: 'richText-redo is-disabled', html: '<span class="fa fa-repeat fa-redo"></span>', 'title': settings.translations.redo}))
+                    .append($('<a />', {class: 'richText-help', html: '<span class="fa fa-question-circle"></span>'}))
+            );
+
+            if(settings.maxlength > 0) {
+                // display max length in editor toolbar
+                $editor.data('maxlength', settings.maxlength);
+                $editor.children('.richText-toolbar').children('.richText-help').before($('<a />', {class: 'richText-length', text: '0/' + settings.maxlength}));
+            }
+
+            if(settings.height && settings.height > 0) {
+                // set custom editor height
+                $editor.children(".richText-editor, .richText-initial").css({'min-height' : settings.height + 'px', 'height' : settings.height + 'px'});
+            } else if(settings.heightPercentage && settings.heightPercentage > 0) {
+                // set custom editor height in percentage
+                var parentHeight = $editor.parent().innerHeight(); // get editor parent height
+                var height = (settings.heightPercentage/100) * parentHeight; // calculate pixel value from percentage
+                height -= $toolbar.outerHeight()*2; // remove toolbar size
+                height -= parseInt($editor.css("margin-top")); // remove margins
+                height -= parseInt($editor.css("margin-bottom")); // remove margins
+                height -= parseInt($editor.find(".richText-editor").css("padding-top")); // remove paddings
+                height -= parseInt($editor.find(".richText-editor").css("padding-bottom")); // remove paddings
+                $editor.children(".richText-editor, .richText-initial").css({'min-height' : height + 'px', 'height' : height + 'px'});
+            }
+
+            // add custom class
+            if(settings.class) {
+                $editor.addClass(settings.class);
+            }
+            if(settings.id) {
+                $editor.attr("id", settings.id);
+            }
+
+            // fix the first line
+            fixFirstLine();
+
+            // save history
+            history[editorID].push($editor.find("textarea").val());
+        }
+
+        // initialize editor
+        init();
+
+
+        /** EVENT HANDLERS */
+
+        // Help popup
+        $editor.find(".richText-help").on("click", function() {
+            var $editor = $(this).parents(".richText");
+            if($editor) {
+                var $outer = $('<div />', {class: 'richText-help-popup', style: 'position:absolute;top:0;right:0;bottom:0;left:0;background-color: rgba(0,0,0,0.3);'});
+                var $inner = $('<div />', {style: 'position:relative;margin:60px auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;font-size:small;'});
+                var $content = $('<div />', {html: '<span id="closeHelp" style="display:block;position:absolute;top:0;right:0;padding:10px;cursor:pointer;" title="' + settings.translations.close + '"><span class="fa fa-times"></span></span>'});
+                $content.append('<h3 style="margin:0;">RichText</h3>');
+                $content.append('<hr><br>Powered by <a href="https://github.com/webfashionist/RichText" target="_blank">webfashionist/RichText</a> (Github) <br>License: <a href="https://github.com/webfashionist/RichText/blob/master/LICENSE" target="_blank">AGPL-3.0</a>');
+
+                $outer.append($inner.append($content));
+                $editor.append($outer);
+
+                $outer.on("click", "#closeHelp", function() {
+                    $(this).parents('.richText-help-popup').remove();
+                });
+            }
+        });
+
+        // undo / redo
+        $(document).on("click", ".richText-undo, .richText-redo", function(e) {
+             var $this = $(this);
+             var $editor = $this.parents('.richText');
+             if($this.hasClass("richText-undo") && !$this.hasClass("is-disabled")) {
+                 undo($editor);
+             } else if($this.hasClass("richText-redo") && !$this.hasClass("is-disabled")) {
+                 redo($editor);
+             }
+        });
+
+
+        // Saving changes from editor to textarea
+        $(document).on("input change blur keydown keyup", ".richText-editor", function(e) {
+            if((e.keyCode === 9 || e.keyCode === "9") && e.type === "keydown") {
+                // tab through table cells
+                e.preventDefault();
+                tabifyEditableTable(window, e);
+                return false;
+            }
+            fixFirstLine();
+            updateTextarea();
+            doSave($(this).attr("id"));
+            updateMaxLength($(this).attr('id'));
+        });
+
+
+        // add context menu to several Node elements
+        $(document).on('contextmenu', '.richText-editor', function(e) {
+
+            var $list = $('<ul />', {'class': 'list-rightclick richText-list'});
+            var $li = $('<li />');
+            // remove Node selection
+            $('.richText-editor').find('.richText-editNode').removeClass('richText-editNode');
+
+            var $target = $(e.target);
+            var $richText = $target.parents('.richText');
+            var $toolbar = $richText.find('.richText-toolbar');
+
+            var positionX = e.pageX - $richText.offset().left;
+            var positionY = e.pageY - $richText.offset().top;
+
+            $list.css({
+                'top': positionY,
+                'left': positionX
+            });
+
+
+            if($target.prop("tagName") === "A") {
+                // edit URL
+                e.preventDefault();
+
+                $list.append($li.clone().html('<span class="fa fa-link"></span>'));
+                $target.parents('.richText').append($list);
+                $list.find('.fa-link').on('click', function() {
+                    $('.list-rightclick.richText-list').remove();
+                    $target.addClass('richText-editNode');
+                    var $popup = $toolbar.find('#richText-URL');
+                    $popup.find('input#url').val($target.attr('href'));
+                    $popup.find('input#urlText').val($target.text());
+                    $popup.find('select#openIn').val($target.attr('target'));
+                    $toolbar.find('.richText-btn').children('.fa-link').parents('li').addClass('is-selected');
+                });
+
+                return false;
+            } else if($target.prop("tagName") === "IMG") {
+                // edit image
+                e.preventDefault();
+
+                $list.append($li.clone().html('<span class="fa fa-image"></span>'));
+                $target.parents('.richText').append($list);
+                $list.find('.fa-image').on('click', function() {
+                    var align;
+                    if($target.parent('div').length > 0 && $target.parent('div').attr('style') === 'text-align:center;') {
+                        align = 'center';
+                    } else {
+                        align = $target.attr('align');
+                    }
+                    $('.list-rightclick.richText-list').remove();
+                    $target.addClass('richText-editNode');
+                    var $popup = $toolbar.find('#richText-Image');
+                    $popup.find('input#imageURL').val($target.attr('src'));
+                    $popup.find('select#align').val(align);
+                    $toolbar.find('.richText-btn').children('.fa-image').parents('li').addClass('is-selected');
+                });
+
+                return false;
+            }
+
+        });
+
+        // Saving changes from textarea to editor
+        $(document).on("input change blur", ".richText-initial", function() {
+            if(settings.useSingleQuotes === true) {
+                $(this).val(changeAttributeQuotes($(this).val()));
+            }
+            var editorID = $(this).siblings('.richText-editor').attr("id");
+            updateEditor(editorID);
+            doSave(editorID);
+            updateMaxLength(editorID);
+        });
+
+        // Save selection seperately (mainly needed for Safari)
+        $(document).on("dblclick mouseup", ".richText-editor", function() {
+            var editorID = $(this).attr("id");
+            doSave(editorID);
+        });
+
+        // embedding video
+        $(document).on("click", "#richText-Video button.btn", function(event) {
+            event.preventDefault();
+            var $button = $(this);
+            var $form = $button.parent('.richText-form-item').parent('.richText-form');
+            if($form.attr("data-editor") === editorID) {
+                // only for the currently selected editor
+                var url = $form.find('input#videoURL').val();
+                var size = $form.find('select#size').val();
+
+                if(!url) {
+                    // no url set
+                    $form.prepend($('<div />', {style: 'color:red;display:none;', class: 'form-item is-error', text: settings.translations.pleaseEnterURL}));
+                    $form.children('.form-item.is-error').slideDown();
+                    setTimeout(function() {
+                        $form.children('.form-item.is-error').slideUp(function () {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                } else {
+                    // write html in editor
+                    var html = '';
+                    html = getVideoCode(url, size);
+                    if(!html) {
+                        $form.prepend($('<div />', {style: 'color:red;display:none;', class: 'form-item is-error', text: settings.translations.videoURLnotSupported}));
+                        $form.children('.form-item.is-error').slideDown();
+                        setTimeout(function() {
+                            $form.children('.form-item.is-error').slideUp(function () {
+                                $(this).remove();
+                            });
+                        }, 5000);
+                    } else {
+                        if(settings.useSingleQuotes === true) {
+
+                        } else {
+
+                        }
+                        restoreSelection(editorID, true);
+                        pasteHTMLAtCaret(html);
+                        updateTextarea();
+                        // reset input values
+                        $form.find('input#videoURL').val('');
+                        $('.richText-toolbar li.is-selected').removeClass("is-selected");
+                    }
+                }
+            }
+        });
+
+        // Resize images
+        $(document).on('mousedown', function(e) {
+            var $target = $(e.target);
+            if(!$target.hasClass('richText-list') && $target.parents('.richText-list').length === 0) {
+                // remove context menu
+                $('.richText-list.list-rightclick').remove();
+                if(!$target.hasClass('richText-form') && $target.parents('.richText-form').length === 0) {
+                    $('.richText-editNode').each(function () {
+                        var $this = $(this);
+                        $this.removeClass('richText-editNode');
+                        if ($this.attr('class') === '') {
+                            $this.removeAttr('class');
+                        }
+                    });
+                }
+            }
+            if($target.prop("tagName") === "IMG" && $target.parents("#" + editorID)) {
+                startX = e.pageX;
+                startY = e.pageY;
+                startW = $target.innerWidth();
+                startH = $target.innerHeight();
+
+                var left = $target.offset().left;
+                var right = $target.offset().left + $target.innerWidth();
+                var bottom = $target.offset().top + $target.innerHeight();
+                var top = $target.offset().top;
+                var resize = false;
+                $target.css({'cursor' : 'default'});
+
+                if(startY <= bottom && startY >= bottom-20 && startX >= right-20 && startX <= right) {
+                    // bottom right corner
+                    $resizeImage = $target;
+                    $resizeImage.css({'cursor' : 'nwse-resize'});
+                    resize = true;
+                }
+
+                if((resize === true || $resizeImage) && !$resizeImage.data("width")) {
+                    // set initial image size and prevent dragging image while resizing
+                    $resizeImage.data("width", $target.parents("#" + editorID).innerWidth());
+                    $resizeImage.data("height", $target.parents("#" + editorID).innerHeight()*3);
+                    e.preventDefault();
+                } else if(resize === true || $resizeImage) {
+                    // resizing active, prevent other events
+                    e.preventDefault();
+                } else {
+                    // resizing disabled, allow dragging image
+                    $resizeImage = null;
+                }
+                
+            }
+        });
+        $(document)
+            .mouseup(function(){
+                if($resizeImage) {
+                    $resizeImage.css({'cursor' : 'default'});
+                }
+                $resizeImage = null;
+            })
+            .mousemove(function(e){
+                if($resizeImage!==null){
+                    var maxWidth = $resizeImage.data('width');
+                    var currentWidth = $resizeImage.width();
+                    var maxHeight = $resizeImage.data('height');
+                    var currentHeight = $resizeImage.height();
+                    if((startW + e.pageX-startX) <= maxWidth && (startH + e.pageY-startY) <= maxHeight) {
+                        // only resize if new size is smaller than the original image size
+                        $resizeImage.innerWidth (startW + e.pageX-startX); // only resize width to adapt height proportionally
+                        // $box.innerHeight(startH + e.pageY-startY);
+                        updateTextarea();
+                    } else if((startW + e.pageX-startX) <= currentWidth && (startH + e.pageY-startY) <= currentHeight) {
+                        // only resize if new size is smaller than the previous size
+                        $resizeImage.innerWidth (startW + e.pageX-startX); // only resize width to adapt height proportionally
+                        updateTextarea();
+                    }
+                }
+            });
+
+        // adding URL
+        $(document).on("click", "#richText-URL button.btn", function(event) {
+            event.preventDefault();
+            var $button = $(this);
+            var $form = $button.parent('.richText-form-item').parent('.richText-form');
+            if($form.attr("data-editor") === editorID) {
+                // only for currently selected editor
+                var url = $form.find('input#url').val();
+                var text = $form.find('input#urlText').val();
+                var target = $form.find('#openIn').val();
+
+                // set default values
+                if(!target) {
+                    target = '_self';
+                }
+                if(!text) {
+                    text = url;
+                }
+                if(!url) {
+                    // no url set
+                    $form.prepend($('<div />', {style: 'color:red;display:none;', class: 'form-item is-error', text: settings.translations.pleaseEnterURL}));
+                    $form.children('.form-item.is-error').slideDown();
+                    setTimeout(function() {
+                        $form.children('.form-item.is-error').slideUp(function () {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                } else {
+                    // write html in editor
+                    var html = '';
+                    if(settings.useSingleQuotes === true) {
+                        html = "<a href='" + url + "' target='" + target + "'>" + text + "</a>";
+                    } else {
+                        html = '<a href="' + url + '" target="' + target + '">' + text + '</a>';
+                    }
+                    restoreSelection(editorID, false, true);
+
+                    var $editNode = $('.richText-editNode');
+                    if($editNode.length > 0 && $editNode.prop("tagName") === "A") {
+                        $editNode.attr("href", url);
+                        $editNode.attr("target", target);
+                        $editNode.text(text);
+                        $editNode.removeClass('richText-editNode');
+                        if($editNode.attr('class') === '') {
+                            $editNode.removeAttr('class');
+                        }
+                    } else {
+                        pasteHTMLAtCaret(html);
+                    }
+                    // reset input values
+                    $form.find('input#url').val('');
+                    $form.find('input#urlText').val('');
+                    $('.richText-toolbar li.is-selected').removeClass("is-selected");
+                }
+            }
+        });
+
+        // adding image
+        $(document).on("click", "#richText-Image button.btn", function(event) {
+            event.preventDefault();
+            var $button = $(this);
+            var $form = $button.parent('.richText-form-item').parent('.richText-form');
+            if($form.attr("data-editor") === editorID) {
+                // only for currently selected editor
+                var url = $form.find('#imageURL').val();
+                var align = $form.find('select#align').val();
+
+                // set default values
+                if(!align) {
+                    align = 'center';
+                }
+                if(!url) {
+                    // no url set
+                    $form.prepend($('<div />', {style: 'color:red;display:none;', class: 'form-item is-error', text: settings.translations.pleaseSelectImage}));
+                    $form.children('.form-item.is-error').slideDown();
+                    setTimeout(function() {
+                        $form.children('.form-item.is-error').slideUp(function () {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                } else {
+                    // write html in editor
+                    var html = '';
+                    if(settings.useSingleQuotes === true) {
+                        if(align === "center") {
+                            html = "<div style='text-align:center;'><img src='" + url + "'></div>";
+                        } else {
+                            html = "<img src='" + url + "' align='" + align + "'>";
+                        }
+                    } else {
+                        if(align === "center") {
+                            html = '<div style="text-align:center;"><img src="' + url + '"></div>';
+                        } else {
+                            html = '<img src="' + url + '" align="' + align + '">';
+                        }
+                    }
+                    restoreSelection(editorID, true);
+                    var $editNode = $('.richText-editNode');
+                    if($editNode.length > 0 && $editNode.prop("tagName") === "IMG") {
+                        $editNode.attr("src", url);
+                        if($editNode.parent('div').length > 0 && $editNode.parent('div').attr('style') === 'text-align:center;' && align !== 'center') {
+                            $editNode.unwrap('div');
+                            $editNode.attr('align', align);
+                        } else if(($editNode.parent('div').length === 0 || $editNode.parent('div').attr('style') !== 'text-align:center;') && align === 'center' ) {
+                            $editNode.wrap('<div style="text-align:center;"></div>');
+                            $editNode.removeAttr('align');
+                        } else {
+                            $editNode.attr('align', align);
+                        }
+                        $editNode.removeClass('richText-editNode');
+                        if($editNode.attr('class') === '') {
+                            $editNode.removeAttr('class');
+                        }
+                    } else {
+                        pasteHTMLAtCaret(html);
+                    }
+                    // reset input values
+                    $form.find('input#imageURL').val('');
+                    $('.richText-toolbar li.is-selected').removeClass("is-selected");
+                }
+            }
+        });
+
+        // adding file
+        $(document).on("click", "#richText-File button.btn", function(event) {
+            event.preventDefault();
+            var $button = $(this);
+            var $form = $button.parent('.richText-form-item').parent('.richText-form');
+            if($form.attr("data-editor") === editorID) {
+                // only for currently selected editor
+                var url = $form.find('#fileURL').val();
+                var text = $form.find('#fileText').val();
+
+                // set default values
+                if(!text) {
+                    text = url;
+                }
+                if(!url) {
+                    // no url set
+                    $form.prepend($('<div />', {style: 'color:red;display:none;', class: 'form-item is-error', text: settings.translations.pleaseSelectFile}));
+                    $form.children('.form-item.is-error').slideDown();
+                    setTimeout(function() {
+                        $form.children('.form-item.is-error').slideUp(function () {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                } else {
+                    // write html in editor
+                    var html = '';
+                    if(settings.useSingleQuotes === true) {
+                        html = "<a href='" + url + "' target='_blank'>" + text + "</a>";
+                    } else {
+                        html = '<a href="' + url + '" target="_blank">' + text + '</a>';
+                    }
+                    restoreSelection(editorID, true);
+                    pasteHTMLAtCaret(html);
+                    // reset input values
+                    $form.find('input#fileURL').val('');
+                    $form.find('input#fileText').val('');
+                    $('.richText-toolbar li.is-selected').removeClass("is-selected");
+                }
+            }
+        });
+
+
+        // adding table
+        $(document).on("click", "#richText-Table button.btn", function(event) {
+            event.preventDefault();
+            var $button = $(this);
+            var $form = $button.parent('.richText-form-item').parent('.richText-form');
+            if($form.attr("data-editor") === editorID) {
+                // only for currently selected editor
+                var rows = $form.find('input#tableRows').val();
+                var columns = $form.find('input#tableColumns').val();
+
+                // set default values
+                if(!rows || rows <= 0) {
+                    rows = 2;
+                }
+                if(!columns || columns <= 0) {
+                    columns = 2;
+                }
+                
+                // generate table
+                var html = '';
+                if(settings.useSingleQuotes === true) {
+                    html = "<table class='table-1'><tbody>";
+                } else {
+                    html = '<table class="table-1"><tbody>';
+                }
+                for(var i = 1; i <= rows; i++) {
+                    // start new row
+                    html += '<tr>';
+                    for(var n = 1; n <= columns; n++) {
+                        // start new column in row
+                        html += '<td> </td>';
+                    }
+                    html += '</tr>';
+                }
+                html += '</tbody></table>';
+
+                // write html in editor
+                restoreSelection(editorID, true);
+                pasteHTMLAtCaret(html);
+                // reset input values
+                $form.find('input#tableColumns').val('');
+                $form.find('input#tableRows').val('');
+                $('.richText-toolbar li.is-selected').removeClass("is-selected");
+            }
+        });
+
+        // opening / closing toolbar dropdown
+        $(document).on("click", function(event) {
+            var $clickedElement = $(event.target);
+
+            if($clickedElement.parents('.richText-toolbar').length === 0) {
+                // element not in toolbar
+                // ignore
+            } else if($clickedElement.hasClass("richText-dropdown-outer")) {
+                // closing dropdown by clicking inside the editor
+                $clickedElement.parent('a').parent('li').removeClass("is-selected");
+            } else if($clickedElement.find(".richText").length > 0) {
+                // closing dropdown by clicking outside of the editor
+                $('.richText-toolbar li').removeClass("is-selected");
+            } else if($clickedElement.parent().hasClass("richText-dropdown-close")) {
+                // closing dropdown by clicking on the close button
+                $('.richText-toolbar li').removeClass("is-selected");
+            } else if($clickedElement.hasClass("richText-btn") && $(event.target).children('.richText-dropdown-outer').length > 0) {
+                // opening dropdown by clicking on toolbar button
+                $clickedElement.parent('li').addClass("is-selected");
+
+                if($clickedElement.children('.fa,svg').hasClass("fa-link")) {
+                    // put currently selected text in URL form to replace it
+                    restoreSelection(editorID, false, true);
+                    var selectedText = getSelectedText();
+                    $clickedElement.find("input#urlText").val('');
+                    $clickedElement.find("input#url").val('');
+                    if(selectedText) {
+                        $clickedElement.find("input#urlText").val(selectedText);
+                    }
+                } else if($clickedElement.hasClass("fa-image")) {
+                    // image
+                }
+            }
+        });
+
+        // Executing editor commands
+        $(document).on("click", ".richText-toolbar a[data-command]", function(event) {
+            var $button = $(this);
+            var $toolbar = $button.closest('.richText-toolbar');
+            var $editor = $toolbar.siblings('.richText-editor');
+            var id = $editor.attr("id");
+            if($editor.length > 0 && id === editorID && (!$button.parent("li").attr('data-disable') || $button.parent("li").attr('data-disable') === "false")) {
+                event.preventDefault();
+                var command = $(this).data("command");
+
+                if(command === "toggleCode") {
+                    toggleCode($editor.attr("id"));
+                } else {
+                    var option = null;
+                    if ($(this).data('option')) {
+                        option = $(this).data('option').toString();
+                        if (option.match(/^h[1-6]$/)) {
+                            command = "heading";
+                        }
+                    }
+
+                    formatText(command, option, id);
+                    if (command === "removeFormat") {
+                        // remove HTML/CSS formatting
+                        $editor.find('*').each(function() {
+                            // remove all, but very few, attributes from the nodes
+                            var keepAttributes = [
+                                "id", "class",
+                                "name", "action", "method",
+                                "src", "align", "alt", "title",
+                                "style", "webkitallowfullscreen", "mozallowfullscreen", "allowfullscreen",
+                                "width", "height", "frameborder"
+                            ];
+                            var element = $(this);
+                            var attributes = $.map(this.attributes, function(item) {
+                                return item.name;
+                            });
+                            $.each(attributes, function(i, item) {
+                                if(keepAttributes.indexOf(item) < 0 && item.substr(0, 5) !== 'data-') {
+                                    element.removeAttr(item);
+                                }
+                            });
+                            if(element.prop('tagName') === "A") {
+                                // remove empty URL tags
+                                element.replaceWith(function() {
+                                    return $('<span />', {html: $(this).html()});
+                                });
+                            }
+                        });
+                        formatText('formatBlock', 'div', id);
+                    }
+                    // clean up empty tags, which can be created while replacing formatting or when copy-pasting from other tools
+                    $editor.find('div:empty,p:empty,li:empty,h1:empty,h2:empty,h3:empty,h4:empty,h5:empty,h6:empty').remove();
+                    $editor.find('h1,h2,h3,h4,h5,h6').unwrap('h1,h2,h3,h4,h5,h6');
+                }
+            }
+            // close dropdown after click
+            $button.parents('li.is-selected').removeClass('is-selected');
+        });
+
+
+
+        /** INTERNAL METHODS **/
+
+        /**
+         * Format text in editor
+         * @param {string} command
+         * @param {string|null} option
+         * @param {string} editorID
+         * @private
+         */
+        function formatText(command, option, editorID) {
+            if (typeof option === "undefined") {
+                option = null;
+            }
+            // restore selection from before clicking on any button
+            doRestore(editorID);
+            // Temporarily enable designMode so that
+            // document.execCommand() will work
+            // document.designMode = "ON";
+            // Execute the command
+            if(command === "heading" && getSelectedText()) {
+                // IE workaround
+                pasteHTMLAtCaret('<' + option + '>' + getSelectedText() + '</' + option + '>');
+            } else if(command === "fontSize" && parseInt(option) > 0) {
+                var selection = getSelectedText();
+                selection = (selection + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br>' + '$2');
+                var html = (settings.useSingleQuotes ? "<span style='font-size:" + option + "px;'>" + selection + "</span>" : '<span style="font-size:' + option + 'px;">' + selection + '</span>');
+                pasteHTMLAtCaret(html);
+            } else {
+                document.execCommand(command, false, option);
+            }
+            // Disable designMode
+            // document.designMode = "OFF";
+        }
+
+
+        /**
+         * Update textarea when updating editor
+         * @private
+         */
+        function updateTextarea() {
+            var $editor = $('#' + editorID);
+            var content = $editor.html();
+            if(settings.useSingleQuotes === true) {
+                content = changeAttributeQuotes(content);
+            }
+            $editor.siblings('.richText-initial').val(content);
+        }
+
+
+        /**
+         * Update editor when updating textarea
+         * @private
+         */
+        function updateEditor(editorID) {
+            var $editor = $('#' + editorID);
+            var content = $editor.siblings('.richText-initial').val();
+            $editor.html(content);
+        }
+
+
+        /**
+         * Save caret position and selection
+         * @return object
+         **/
+        function saveSelection(editorID) {
+            var containerEl = document.getElementById(editorID);
+            var range, start, end, type;
+            if(window.getSelection && document.createRange) {
+                var sel = window.getSelection && window.getSelection();
+                if (sel && sel.rangeCount > 0 && $(sel.anchorNode).parents('#' + editorID).length > 0) {
+                    range = window.getSelection().getRangeAt(0);
+                    var preSelectionRange = range.cloneRange();
+                    preSelectionRange.selectNodeContents(containerEl);
+                    preSelectionRange.setEnd(range.startContainer, range.startOffset);
+                    
+                    start = preSelectionRange.toString().length;
+                    end = (start + range.toString().length);
+
+                    type = (start === end ? 'caret' : 'selection');
+                    anchor = sel.anchorNode; //(type === "caret" && sel.anchorNode.tagName ? sel.anchorNode : false);
+                    start = (type === 'caret' && anchor !== false ? 0 : preSelectionRange.toString().length);
+                    end = (type === 'caret' && anchor !== false ? 0 : (start + range.toString().length));
+
+                    return {
+                        start: start,
+                        end: end,
+                        type: type,
+                        anchor: anchor,
+                        editorID: editorID
+                    }
+                }
+            }
+            return (savedSelection ? savedSelection : {
+                        start: 0,
+                        end: 0
+                    });
+        }
+
+
+        /**
+         * Restore selection
+         **/
+        function restoreSelection(editorID, media, url) {
+            var containerEl = document.getElementById(editorID);
+            var savedSel = savedSelection;
+            if(!savedSel) {
+                // fix selection if editor has not been focused
+                savedSel = {
+                    'start': 0,
+                    'end': 0,
+                    'type': 'caret',
+                    'editorID': editorID,
+                    'anchor': $('#' + editorID).children('div')[0]
+                };
+            }
+
+            if(savedSel.editorID !== editorID) {
+                return false;
+            } else if(media === true) {
+                containerEl = (savedSel.anchor ? savedSel.anchor : containerEl); // fix selection issue
+            } else if(url === true) {
+                if(savedSel.start === 0 && savedSel.end === 0) {
+                    containerEl = (savedSel.anchor ? savedSel.anchor : containerEl); // fix selection issue
+                }
+            }
+
+            if (window.getSelection && document.createRange) {
+                var charIndex = 0, range = document.createRange();
+                if(!range || !containerEl) { window.getSelection().removeAllRanges(); return true; }
+                range.setStart(containerEl, 0);
+                range.collapse(true);
+                var nodeStack = [containerEl], node, foundStart = false, stop = false;
+
+                while (!stop && (node = nodeStack.pop())) {
+                    if (node.nodeType === 3) {
+                        var nextCharIndex = charIndex + node.length;
+                        if (!foundStart && savedSel.start >= charIndex && savedSel.start <= nextCharIndex) {
+                            range.setStart(node, savedSel.start - charIndex);
+                            foundStart = true;
+                        }
+                        if (foundStart && savedSel.end >= charIndex && savedSel.end <= nextCharIndex) {
+                            range.setEnd(node, savedSel.end - charIndex);
+                            stop = true;
+                        }
+                        charIndex = nextCharIndex;
+                    } else {
+                        var i = node.childNodes.length;
+                        while (i--) {
+                            nodeStack.push(node.childNodes[i]);
+                        }
+                    }
+                }
+                var sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+        }
+
+
+
+        /**
+         * Save caret position and selection
+         * @return object
+         **/
+         /*
+        function saveSelection(editorID) {
+            var containerEl = document.getElementById(editorID);
+            var start;
+            if (window.getSelection && document.createRange) {
+                var sel = window.getSelection && window.getSelection();
+                if (sel && sel.rangeCount > 0) {
+                    var range = window.getSelection().getRangeAt(0);
+                    var preSelectionRange = range.cloneRange();
+                    preSelectionRange.selectNodeContents(containerEl);
+                    preSelectionRange.setEnd(range.startContainer, range.startOffset);
+                    start = preSelectionRange.toString().length;
+
+                    return {
+                        start: start,
+                        end: start + range.toString().length,
+                        editorID: editorID
+                    }
+                } else {
+                    return (savedSelection ? savedSelection : {
+                        start: 0,
+                        end: 0
+                    });
+                }
+            } else if (document.selection && document.body.createTextRange) {
+                var selectedTextRange = document.selection.createRange();
+                var preSelectionTextRange = document.body.createTextRange();
+                preSelectionTextRange.moveToElementText(containerEl);
+                preSelectionTextRange.setEndPoint("EndToStart", selectedTextRange);
+                start = preSelectionTextRange.text.length;
+
+                return {
+                    start: start,
+                    end: start + selectedTextRange.text.length,
+                    editorID: editorID
+                };
+            }
+        }
+        */
+
+        /**
+         * Restore selection
+         **/
+         /*
+        function restoreSelection(editorID) {
+            var containerEl = document.getElementById(editorID);
+            var savedSel = savedSelection;
+            if(savedSel.editorID !== editorID) {
+                return false;
+            }
+            if (window.getSelection && document.createRange) {
+                var charIndex = 0, range = document.createRange();
+                range.setStart(containerEl, 0);
+                range.collapse(true);
+                var nodeStack = [containerEl], node, foundStart = false, stop = false;
+
+                while (!stop && (node = nodeStack.pop())) {
+                    if (node.nodeType === 3) {
+                        var nextCharIndex = charIndex + node.length;
+                        if (!foundStart && savedSel.start >= charIndex && savedSel.start <= nextCharIndex) {
+                            range.setStart(node, savedSel.start - charIndex);
+                            foundStart = true;
+                        }
+                        if (foundStart && savedSel.end >= charIndex && savedSel.end <= nextCharIndex) {
+                            range.setEnd(node, savedSel.end - charIndex);
+                            stop = true;
+                        }
+                        charIndex = nextCharIndex;
+                    } else {
+                        var i = node.childNodes.length;
+                        while (i--) {
+                            nodeStack.push(node.childNodes[i]);
+                        }
+                    }
+                }
+                var sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+            } else if (document.selection && document.body.createTextRange) {
+                var textRange = document.body.createTextRange();
+                textRange.moveToElementText(containerEl);
+                textRange.collapse(true);
+                textRange.moveEnd("character", savedSel.end);
+                textRange.moveStart("character", savedSel.start);
+                textRange.select();
+            }
+        }
+        */
+
+        /**
+         * Enables tabbing/shift-tabbing between contentEditable table cells
+         * @param {Window} win - Active window context.
+         * @param {Event} e - jQuery Event object for the keydown that fired.
+         */
+        function tabifyEditableTable(win, e) {
+
+            if (e.keyCode !== 9) {
+                return false;
+            }
+
+            var sel;
+            if (win.getSelection) {
+                sel = win.getSelection();
+                if (sel.rangeCount > 0) {
+
+                    var textNode = null,
+                        direction = null;
+
+                    if (!e.shiftKey) {
+                        direction = "next";
+                        textNode = (sel.focusNode.nodeName === "TD") 
+                            ? (sel.focusNode.nextSibling != null) 
+                                ? sel.focusNode.nextSibling 
+                                : (sel.focusNode.parentNode.nextSibling != null) 
+                                    ? sel.focusNode.parentNode.nextSibling.childNodes[0] 
+                                    : null 
+                                : (sel.focusNode.parentNode.nextSibling != null) 
+                                ? sel.focusNode.parentNode.nextSibling 
+                                : (sel.focusNode.parentNode.parentNode.nextSibling != null) 
+                            ? sel.focusNode.parentNode.parentNode.nextSibling.childNodes[0] 
+                            : null;
+                    } else {
+                        direction = "previous";
+                        textNode = (sel.focusNode.nodeName === "TD") 
+                            ? (sel.focusNode.previousSibling != null) 
+                                ? sel.focusNode.previousSibling 
+                                : (sel.focusNode.parentNode.previousSibling != null) 
+                                    ? sel.focusNode.parentNode.previousSibling.childNodes[sel.focusNode.parentNode.previousSibling.childNodes.length - 1] 
+                                    : null 
+                                : (sel.focusNode.parentNode.previousSibling != null) 
+                            ? sel.focusNode.parentNode.previousSibling 
+                            : (sel.focusNode.parentNode.parentNode.previousSibling != null) 
+                        ? sel.focusNode.parentNode.parentNode.previousSibling.childNodes[sel.focusNode.parentNode.parentNode.previousSibling.childNodes.length - 1] 
+                        : null;
+                    }
+
+                    if (textNode != null) {
+                        sel.collapse(textNode, Math.min(textNode.length, sel.focusOffset + 1));
+                        if (textNode.textContent != null) {
+                            sel.selectAllChildren(textNode);
+                        }
+                        e.preventDefault();
+                        return true;
+                    } else if(textNode === null && direction === "next" && sel.focusNode.nodeName === "TD") {
+                        // add new row on TAB if arrived at the end of the row
+                        var $table = $(sel.focusNode).parents("table");
+                        var cellsPerLine = $table.find("tr").first().children("td").length;
+                        var $tr = $("<tr />");
+                        var $td = $("<td />");
+                        for(var i = 1; i <= cellsPerLine; i++) {
+                            $tr.append($td.clone());
+                        }
+                        $table.append($tr);
+                        // simulate tabing through table
+                        tabifyEditableTable(window, {keyCode: 9, shiftKey: false, preventDefault: function(){}});
+                    }
+                }
+            }
+            return false;
+        }
+
+        /**
+         * Returns the text from the current selection
+         * @private
+         * @return {string|boolean}
+         */
+        function getSelectedText() {
+            var range;
+            if (window.getSelection) {  // all browsers, except IE before version 9
+                range = window.getSelection();
+                return range.toString() ? range.toString() : range.focusNode.nodeValue;
+            } else  if (document.selection.createRange) { // Internet Explorer
+                range = document.selection.createRange();
+                return range.text;
+            }
+            return false;
+        }
+
+        /**
+         * Save selection
+         */
+        function doSave(editorID) {
+            var $textarea = $('.richText-editor#' + editorID).siblings('.richText-initial');
+            addHistory($textarea.val(), editorID);
+            savedSelection = saveSelection(editorID);
+        }
+
+        /**
+         * @param editorID
+         * @returns {boolean}
+         */
+        function updateMaxLength(editorID) {
+            var $editorInner = $('.richText-editor#' + editorID);
+            var $editor = $editorInner.parents('.richText');
+            if(!$editor.data('maxlength')) {
+                return true;
+            }
+            var color;
+            var maxLength = parseInt($editor.data('maxlength'));
+            var content = $editorInner.text();
+            var percentage = (content.length/maxLength)*100;
+            if(percentage > 99) {
+                color = 'red';
+            } else if(percentage >= 90) {
+                color = 'orange';
+            } else {
+                color = 'black';
+            }
+
+            $editor.find('.richText-length').html('<span class="' + color + '">' + content.length + '</span>/' + maxLength);
+
+            if(content.length > maxLength) {
+                // content too long
+                undo($editor);
+                return false;
+            }
+            return true;
+        }
+
+        /**
+         * Add to history
+         * @param val Editor content
+         * @param id Editor ID
+         */
+        function addHistory(val, id) {
+            if(!history[id]) {
+                return false;
+            }
+            if(history[id].length-1 > historyPosition[id]) {
+                history[id].length = historyPosition[id] + 1;
+            }
+
+            if(history[id][history[id].length-1] !== val) {
+                history[id].push(val);
+            }
+
+            historyPosition[id] = history[id].length-1;
+            setHistoryButtons(id);
+        }
+
+        function setHistoryButtons(id) {
+            if(historyPosition[id] <= 0) {
+                $editor.find(".richText-undo").addClass("is-disabled");
+            } else {
+                $editor.find(".richText-undo").removeClass("is-disabled");
+            }
+
+            if(historyPosition[id] >= history[id].length-1 || history[id].length === 0) {
+                $editor.find(".richText-redo").addClass("is-disabled");
+            } else {
+                $editor.find(".richText-redo").removeClass("is-disabled");
+            }
+        }
+
+        /**
+         * Undo
+         * @param $editor
+         */
+        function undo($editor) {
+            var id = $editor.children('.richText-editor').attr('id');
+            historyPosition[id]--;
+            if(!historyPosition[id] && historyPosition[id] !== 0) {
+                return false;
+            }
+            var value = history[id][historyPosition[id]];
+            $editor.find('textarea').val(value);
+            $editor.find('.richText-editor').html(value);
+            setHistoryButtons(id);
+        }
+
+        /**
+         * Undo
+         * @param $editor
+         */
+        function redo($editor) {
+            var id = $editor.children('.richText-editor').attr('id');
+            historyPosition[id]++;
+            if(!historyPosition[id] && historyPosition[id] !== 0) {
+                return false;
+            }
+            var value = history[id][historyPosition[id]];
+            $editor.find('textarea').val(value);
+            $editor.find('.richText-editor').html(value);
+            setHistoryButtons(id);
+        }
+
+        /**
+         * Restore selection
+         */
+        function doRestore(id) {
+            if(savedSelection) {
+                restoreSelection((id ? id : savedSelection.editorID));
+            }
+        }
+
+        /**
+         * Paste HTML at caret position
+         * @param {string} html HTML code
+         * @private
+         */
+        function pasteHTMLAtCaret(html) {
+            // add HTML code for Internet Explorer
+            var sel, range;
+            if (window.getSelection) {
+                // IE9 and non-IE
+                sel = window.getSelection();
+                if (sel.getRangeAt && sel.rangeCount) {
+                    range = sel.getRangeAt(0);
+                    range.deleteContents();
+
+                    // Range.createContextualFragment() would be useful here but is
+                    // only relatively recently standardized and is not supported in
+                    // some browsers (IE9, for one)
+                    var el = document.createElement("div");
+                    el.innerHTML = html;
+                    var frag = document.createDocumentFragment(), node, lastNode;
+                    while ( (node = el.firstChild) ) {
+                        lastNode = frag.appendChild(node);
+                    }
+                    range.insertNode(frag);
+
+                    // Preserve the selection
+                    if (lastNode) {
+                        range = range.cloneRange();
+                        range.setStartAfter(lastNode);
+                        range.collapse(true);
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                    }
+                }
+            } else if (document.selection && document.selection.type !== "Control") {
+                // IE < 9
+                document.selection.createRange().pasteHTML(html);
+            }
+        }
+
+
+        /**
+         * Change quotes around HTML attributes
+         * @param  {string} string
+         * @return {string}
+         */
+        function changeAttributeQuotes(string) {
+            if(!string) {
+                return '';
+            }
+
+            var regex;
+            var rstring;
+            if(settings.useSingleQuotes === true) {
+                regex = /\s+(\w+\s*=\s*(["][^"]*["])|(['][^']*[']))+/g;
+                rstring = string.replace(regex, function($0,$1,$2){
+                    if(!$2) {return $0;}
+                    return $0.replace($2, $2.replace(/\"/g, "'"));
+                });
+            } else {
+                regex = /\s+(\w+\s*=\s*(['][^']*['])|(["][^"]*["]))+/g;
+                rstring = string.replace(regex, function($0,$1,$2){
+                    if(!$2) {return $0;}
+                    return $0.replace($2, $2.replace(/'/g, '"'));
+                });
+            }
+            return rstring;
+        }
+
+
+        /**
+         * Load colors for font or background
+         * @param {string} command Command
+         * @returns {string}
+         * @private
+         */
+        function loadColors(command) {
+            var colors = [];
+            var result = '';
+
+            colors["#FFFFFF"] = settings.translations.white;
+            colors["#000000"] = settings.translations.black;
+            colors["#7F6000"] = settings.translations.brown;
+            colors["#938953"] = settings.translations.beige;
+            colors["#1F497D"] = settings.translations.darkBlue;
+            colors["blue"] = settings.translations.blue;
+            colors["#4F81BD"] = settings.translations.lightBlue;
+            colors["#953734"] = settings.translations.darkRed;
+            colors["red"] = settings.translations.red;
+            colors["#4F6128"] = settings.translations.darkGreen;
+            colors["green"] = settings.translations.green;
+            colors["#3F3151"] = settings.translations.purple;
+            colors["#31859B"] = settings.translations.darkTurquois;
+            colors["#4BACC6"] = settings.translations.turquois;
+            colors["#E36C09"] = settings.translations.darkOrange;
+            colors["#F79646"] = settings.translations.orange;
+            colors["#FFFF00"] = settings.translations.yellow;
+
+            if(settings.colors && settings.colors.length > 0) {
+                colors = settings.colors;
+            }
+
+            for (var i in colors) {
+                result += '<li class="inline"><a data-command="' + command + '" data-option="' + i + '" style="text-align:left;" title="' + colors[i] + '"><span class="box-color" style="background-color:' + i + '"></span></a></li>';
+            }
+            return result;
+        }
+
+
+        /**
+         * Toggle (show/hide) code or editor
+         * @private
+         */
+        function toggleCode(editorID) {
+            doRestore(editorID);
+            if($editor.find('.richText-editor').is(":visible")) {
+                // show code
+                $editor.find('.richText-initial').show();
+                $editor.find('.richText-editor').hide(); 
+                // disable non working buttons
+                $('.richText-toolbar').find('.richText-btn').each(function() {
+                    if($(this).children('.fa-code').length === 0) {
+                        $(this).parent('li').attr("data-disable", "true");
+                    }
+                });
+                convertCaretPosition(editorID, savedSelection);
+            } else {
+                // show editor
+                $editor.find('.richText-initial').hide();
+                $editor.find('.richText-editor').show();
+                convertCaretPosition(editorID, savedSelection, true);
+                // enable all buttons again
+                $('.richText-toolbar').find('li').removeAttr("data-disable");
+            }
+        }
+
+
+        /**
+         * Convert caret position from editor to code view (or in reverse)
+         * @param {string} editorID
+         * @param {object} selection
+         * @param {boolean} reverse
+         **/ 
+        function convertCaretPosition(editorID, selection, reverse) {
+            var $editor = $('#' + editorID);
+            var $textarea = $editor.siblings(".richText-initial");
+
+            var code = $textarea.val();
+            if(!selection || !code) {
+                return {start: 0, end: 0};
+            }
+
+            if(reverse === true) {
+                savedSelection = {start: $editor.text().length, end: $editor.text().length, editorID: editorID};
+                restoreSelection(editorID);
+                return true;
+            }
+            selection.node = $textarea[0];
+            var states = {start: false, end: false, tag: false, isTag: false, tagsCount: 0, isHighlight: (selection.start !== selection.end)};
+            for(var i = 0; i < code.length; i++) {
+                if(code[i] === "<") {
+                    // HTML tag starts
+                    states.isTag = true;
+                    states.tag = false;
+                    states.tagsCount++;
+                } else if(states.isTag === true && code[i] !== ">") {
+                    states.tagsCount++;
+                } else if(states.isTag === true && code[i] === ">") {
+                    states.isTag = false;
+                    states.tag = true;
+                    states.tagsCount++;
+                } else if(states.tag === true) {
+                    states.tag = false;
+                }
+
+                if(!reverse) {
+                    if((selection.start + states.tagsCount) <= i && states.isHighlight &&  !states.isTag && !states.tag && !states.start) {
+                        selection.start = i;
+                        states.start = true;
+                    } else if((selection.start + states.tagsCount) <= i+1 && !states.isHighlight &&  !states.isTag && !states.tag && !states.start) {
+                        selection.start = i+1;
+                        states.start = true;
+                    }
+                    if((selection.end + states.tagsCount) <= i+1 && !states.isTag && !states.tag && !states.end) {
+                        selection.end = i+1;
+                        states.end = true;
+                    }
+                }
+
+            }
+            createSelection(selection.node, selection.start, selection.end);
+            return selection;
+        }
+
+        /**
+         * Create selection on node element
+         * @param {Node} field
+         * @param {int} start
+         * @param {int} end
+         **/ 
+        function createSelection(field, start, end) {
+            if( field.createTextRange ) {
+                var selRange = field.createTextRange();
+                selRange.collapse(true);
+                selRange.moveStart('character', start);
+                selRange.moveEnd('character', end);
+                selRange.select();
+                field.focus();
+            } else if( field.setSelectionRange ) {
+                field.focus();
+                field.setSelectionRange(start, end);
+            } else if( typeof field.selectionStart != 'undefined' ) {
+                field.selectionStart = start;
+                field.selectionEnd = end;
+                field.focus();
+            }
+        }
+
+
+        /**
+         * Get video embed code from URL
+         * @param {string} url Video URL
+         * @param {string} size Size in the form of widthxheight
+         * @return {string|boolean}
+         * @private
+         **/
+        function getVideoCode(url, size) {
+            var video = getVideoID(url);
+            var responsive = false, success = false;
+
+            if(!video) {
+                // video URL not supported
+                return false;
+            }
+
+            if(!size) {
+                size = "640x360";
+                size = size.split("x");
+            } else if(size !== "responsive") {
+                size = size.split("x");
+            } else {
+                responsive = true;
+                size = "640x360";
+                size = size.split("x");
+            }
+
+            var html = '<br><br>';
+            if(responsive === true) {
+                html += '<div class="videoEmbed" style="position:relative;height:0;padding-bottom:56.25%">';
+            }
+            var allowfullscreen = 'webkitallowfullscreen mozallowfullscreen allowfullscreen';
+
+            if(video.platform === "YouTube") {
+                var youtubeDomain = (settings.youtubeCookies ? 'www.youtube.com' : 'www.youtube-nocookie.com');
+                html += '<iframe src="https://' + youtubeDomain + '/embed/' + video.id + '?ecver=2" width="' + size[0] + '" height="' + size[1] + '" frameborder="0"' + (responsive === true ? ' style="position:absolute;width:100%;height:100%;left:0"' : '') + ' ' + allowfullscreen + '></iframe>';
+                success = true;
+            } else if(video.platform === "Vimeo") {
+                html += '<iframe src="https://player.vimeo.com/video/' + video.id + '" width="' + size[0] + '" height="' + size[1] + '" frameborder="0"' + (responsive === true ? ' style="position:absolute;width:100%;height:100%;left:0"' : '') + ' ' + allowfullscreen + '></iframe>';
+                success = true;
+            } else if(video.platform === "Facebook") {
+                html += '<iframe src="https://www.facebook.com/plugins/video.php?href=' + encodeURI(url) + '&show_text=0&width=' + size[0] + '" width="' + size[0] + '" height="' + size[1] + '" style="' + (responsive === true ? 'position:absolute;width:100%;height:100%;left:0;border:none;overflow:hidden"' : 'border:none;overflow:hidden') + '" scrolling="no" frameborder="0" allowTransparency="true" ' + allowfullscreen + '></iframe>';
+                success = true;
+            } else if(video.platform === "Dailymotion") {
+                html += '<iframe frameborder="0" width="' + size[0] + '" height="' + size[1] + '" src="//www.dailymotion.com/embed/video/' + video.id + '"' + (responsive === true ? ' style="position:absolute;width:100%;height:100%;left:0"' : '') + ' ' + allowfullscreen + '></iframe>';
+                success = true;
+            }
+
+            if(responsive === true) {
+                html += '</div>';
+            }
+            html += '<br><br>';
+
+            if(success) {
+                return html;
+            }
+            return false;
+        }
+
+        /**
+         * Returns the unique video ID
+         * @param {string} url
+         * return {object|boolean}
+         **/
+        function getVideoID(url) {
+            var vimeoRegExp = /(?:http?s?:\/\/)?(?:www\.)?(?:vimeo\.com)\/?(.+)/;
+            var youtubeRegExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            var facebookRegExp = /(?:http?s?:\/\/)?(?:www\.)?(?:facebook\.com)\/.*\/videos\/[0-9]+/;
+            var dailymotionRegExp = /(?:http?s?:\/\/)?(?:www\.)?(?:dailymotion\.com)\/video\/([a-zA-Z0-9]+)/;
+            var youtubeMatch = url.match(youtubeRegExp);
+            var vimeoMatch = url.match(vimeoRegExp);
+            var facebookMatch = url.match(facebookRegExp);
+            var dailymotionMatch = url.match(dailymotionRegExp);
+
+            if (youtubeMatch && youtubeMatch[2].length === 11) {
+                return {
+                    "platform": "YouTube", 
+                    "id": youtubeMatch[2]
+                };
+            } else if(vimeoMatch && vimeoMatch[1]) {
+                return {
+                    "platform": "Vimeo",
+                    "id": vimeoMatch[1]
+                };
+            } else if(facebookMatch && facebookMatch[0]) {
+                return {
+                    "platform": "Facebook",
+                    "id" : facebookMatch[0]
+                };
+            } else if(dailymotionMatch && dailymotionMatch[1]) {
+                return {
+                    "platform": "Dailymotion",
+                    "id" : dailymotionMatch[1]
+                };
+            }
+
+            return false;
+        }
+
+
+        /**
+         * Fix the first line as by default the first line has no tag container
+         */
+        function fixFirstLine() {
+            if($editor && !$editor.find(".richText-editor").html()) {
+                // set first line with the right tags
+                if(settings.useParagraph !== false) {
+                    $editor.find(".richText-editor").html('<p><br></p>');
+                } else {
+                    $editor.find(".richText-editor").html('<div><br></div>');
+                }
+            } else {
+                // replace tags, to force <div> or <p> tags and fix issues
+                if(settings.useParagraph !== false) {
+                    $editor.find(".richText-editor").find('div:not(.videoEmbed)').replaceWith(function() {
+                        return $('<p />', {html: $(this).html()});
+                    });
+                } else {
+                    $editor.find(".richText-editor").find('p').replaceWith(function() {
+                        return $('<div />', {html: $(this).html()});
+                    });
+                }
+            }
+            updateTextarea();
+        }
+
+        return $(this);
+    };
+
+    $.fn.unRichText = function( options ) {
+
+        // set default options
+        // and merge them with the parameter options
+        var settings = $.extend({
+            delay: 0 // delay in ms
+        }, options);
+
+        var $editor, $textarea, $main;
+        var $el = $(this);
+
+        /**
+         * Initialize undoing RichText and call remove() method
+         */
+        function init() {
+
+            if($el.hasClass('richText')) {
+                $main = $el;
+            } else if($el.hasClass('richText-initial') || $el.hasClass('richText-editor')) {
+                $main = $el.parents('.richText');
+            }
+
+            if(!$main) {
+                // node element does not correspond to RichText elements
+                return false;
+            }
+
+            $editor = $main.find('.richText-editor');
+            $textarea = $main.find('.richText-initial');
+
+            if(parseInt(settings.delay) > 0) {
+                // a delay has been set
+                setTimeout(remove, parseInt(settings.delay));
+            } else {
+                remove();
+            }
+        }
+        init();
+
+        /**
+         * Remove RichText elements
+         */
+        function remove() {
+            $main.find('.richText-toolbar').remove();
+            $main.find('.richText-editor').remove();
+            $textarea
+                .unwrap('.richText')
+                .data('editor', 'richText')
+                .removeClass('richText-initial')
+                .show();
+        }
+
+    };
+ 
+}( jQuery ));

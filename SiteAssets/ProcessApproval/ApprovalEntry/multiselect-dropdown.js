@@ -1,1 +1,236 @@
-var a4_0x5b5258=a4_0x2978;function a4_0x288d(){var _0x52a32d=['refresh','8nwAtnH','select[multiple]','dispatchEvent','190884sZbPwk','&nbsp;','style','width','Remove','class','125TkTFFG','multiselect-search','createElement','value','add','querySelectorAll','33maKKOH','appendChild','innerHTML','attributes','multiselect-hide-x','srcOption','concat','removeChild','11924XNcZmB','15rem','map','multiselect-dropdown','display','stopPropagation','text','padding','block',':scope\x20div:not(.multiselect-dropdown-all-selector)','1509912LtrqeN','span','select','change','toggle','optEl','41112lkhCIT','querySelector','checked','contains','addEventListener','optdel','multiselect-dropdown-list','form-control','from','9sHXFmc','nextSibling','forEach',':scope\x20>\x20div:not(.multiselect-dropdown-all-selector)','true','All','multiselect-dropdown-search','input','options','selected','isArray','72116IQhVCR','placeholder','search','insertBefore','listitemEl','multiselect-select-all','selectedOptions','txtSelected','keys','listEl','label','innerText','target','txtRemove','includes','1046386hbRGtn','head','txtSearch','11441370eobzrv','none','span.optext,\x20span.placeholder','toUpperCase','100%','focus','length','click','txtAll','multiselect-dropdown-all-selector','filter','find','multiselect_dropdown_styles','classList','div','7513989OZlujZ','optext','searchInput'];a4_0x288d=function(){return _0x52a32d;};return a4_0x288d();}(function(_0x42cfe0,_0x187426){var _0x1dbee3=a4_0x2978,_0x591ca2=_0x42cfe0();while(!![]){try{var _0x120c2e=-parseInt(_0x1dbee3(0x1c0))/0x1+parseInt(_0x1dbee3(0x197))/0x2+parseInt(_0x1dbee3(0x185))/0x3*(parseInt(_0x1dbee3(0x1b1))/0x4)+-parseInt(_0x1dbee3(0x17f))/0x5*(parseInt(_0x1dbee3(0x179))/0x6)+-parseInt(_0x1dbee3(0x172))/0x7*(parseInt(_0x1dbee3(0x176))/0x8)+-parseInt(_0x1dbee3(0x1a6))/0x9*(parseInt(_0x1dbee3(0x163))/0xa)+parseInt(_0x1dbee3(0x18d))/0xb*(parseInt(_0x1dbee3(0x19d))/0xc);if(_0x120c2e===_0x187426)break;else _0x591ca2['push'](_0x591ca2['shift']());}catch(_0x3f6f3c){_0x591ca2['push'](_0x591ca2['shift']());}}}(a4_0x288d,0x9460f));var style=document[a4_0x5b5258(0x181)](a4_0x5b5258(0x17b));function a4_0x2978(_0x2d2ce6,_0x7b2832){var _0x288d65=a4_0x288d();return a4_0x2978=function(_0x297880,_0x51705f){_0x297880=_0x297880-0x163;var _0x17e367=_0x288d65[_0x297880];return _0x17e367;},a4_0x2978(_0x2d2ce6,_0x7b2832);}style['setAttribute']('id',a4_0x5b5258(0x16f)),style[a4_0x5b5258(0x187)]='\x0a.multiselect-dropdown{\x0a\x20\x20display:\x20inline-block;\x0a\x20\x20padding:\x205px\x205px\x200px\x205px;\x0a\x20\x20border-radius:0px;\x0a\x20\x20border:\x20solid\x201px\x20#ccc;\x0a\x20\x20background-color:\x20white;\x0a\x20\x20position:\x20relative;\x0a\x20\x20background-image:\x20url(\x22data:image/svg+xml,%3csvg\x20xmlns=\x27http://www.w3.org/2000/svg\x27\x20viewBox=\x270\x200\x2016\x2016\x27%3e%3cpath\x20fill=\x27none\x27\x20stroke=\x27%23343a40\x27\x20stroke-linecap=\x27round\x27\x20stroke-linejoin=\x27round\x27\x20stroke-width=\x272\x27\x20d=\x27M2\x205l6\x206\x206-6\x27/%3e%3c/svg%3e\x22);\x0a\x20\x20background-repeat:\x20no-repeat;\x0a\x20\x20background-position:\x20right\x20.75rem\x20center;\x0a\x20\x20background-size:\x2016px\x2012px;\x0a\x20\x20min-height:\x2034px\x20!important;\x0a\x20\x20width:\x20100%\x20!important;\x0a}\x0a\x0a.multiselect-dropdown\x20label{\x0a\x20\x20display:inline-block;\x0a\x20\x20margin:0px\x200px\x200px\x208px;\x0a}\x0a\x0a.multiselect-dropdown\x20span.optext,\x20.multiselect-dropdown\x20span.placeholder{\x0a\x20\x20margin-right:0.5em;\x20\x0a\x20\x20margin-bottom:2px;\x0a\x20\x20padding:1px\x200;\x20\x0a\x20\x20border-radius:\x204px;\x20\x0a\x20\x20display:inline-block;\x0a}\x0a.multiselect-dropdown\x20span.optext{\x0a\x20\x20background-color:#ebebeb;\x0a\x20\x20padding:1px\x200.75em;\x20\x0a}\x0a.multiselect-dropdown\x20span.optext\x20.optdel\x20{\x0a\x20\x20float:\x20right;\x0a\x20\x20margin:\x200\x20-6px\x201px\x205px;\x0a\x20\x20font-size:\x200.7em;\x0a\x20\x20margin-top:\x202px;\x0a\x20\x20cursor:\x20pointer;\x0a\x20\x20color:\x20#666;\x0a}\x0a.multiselect-dropdown\x20span.optext\x20.optdel:hover\x20{\x20color:\x20#c66;}\x0a.multiselect-dropdown\x20span.placeholder{\x0a\x20\x20color:#868a8f;\x0a}\x0a.multiselect-dropdown-list-wrapper{\x0a\x20\x20box-shadow:0\x200\x203px\x20#ccc;\x0a\x20\x20z-index:\x20100;\x0a\x20\x20padding:2px;\x0a\x20\x20border-radius:\x204px;\x0a\x20\x20border:\x20solid\x201px\x20#ced4da;\x0a\x20\x20display:\x20none;\x0a\x20\x20margin:\x20-1px;\x0a\x20\x20position:\x20absolute;\x0a\x20\x20top:0;\x0a\x20\x20left:\x200;\x0a\x20\x20right:\x200;\x0a\x20\x20background:\x20white;\x0a}\x0a.multiselect-dropdown-list-wrapper\x20.multiselect-dropdown-search{\x0a\x20\x20margin-bottom:5px;\x0a}\x0a.multiselect-dropdown-list{\x0a\x20\x20padding:2px;\x0a\x20\x20height:\x2015rem;\x0a\x20\x20overflow-y:auto;\x0a\x20\x20overflow-x:\x20hidden;\x0a}\x0a.multiselect-dropdown-list::-webkit-scrollbar\x20{\x0a\x20\x20width:\x206px;\x0a}\x0a.multiselect-dropdown-list::-webkit-scrollbar-thumb\x20{\x0a\x20\x20background-color:\x20#bec4ca;\x0a\x20\x20border-radius:3px;\x0a}\x0a\x0a.multiselect-dropdown-list\x20div{\x0a\x20\x20padding:\x205px\x205px;\x0a}\x0a.multiselect-dropdown-list\x20input{\x0a\x20\x20height:\x201.15em;\x0a\x20\x20width:\x201.15em;\x0a\x20\x20margin-right:\x200.35em;\x20\x20\x0a}\x0a.multiselect-dropdown-list\x20div.checked{\x0a}\x0a.multiselect-dropdown-list\x20div:hover{\x0a\x20\x20background-color:\x20#eee;\x0a}\x0a.multiselect-dropdown\x20span.maxselected\x20{width:100%;}\x0a.multiselect-dropdown-all-selector\x20{border-bottom:solid\x201px\x20#eee;}\x0a',document[a4_0x5b5258(0x1c1)][a4_0x5b5258(0x186)](style);function MultiselectDropdown(_0x586d67,_0x14cdc8){var _0x4f9150=a4_0x5b5258,_0x2e3416={'search':!![],'height':_0x4f9150(0x18e),'placeholder':_0x4f9150(0x199),'txtSelected':'selected','txtAll':_0x4f9150(0x1ab),'txtRemove':_0x4f9150(0x17d),'txtSearch':_0x4f9150(0x1b3),..._0x586d67};function _0x384349(_0x27c3f2,_0x47fb1c){var _0x237737=_0x4f9150,_0x3ffb14=document[_0x237737(0x181)](_0x27c3f2);if(_0x47fb1c!==undefined)Object[_0x237737(0x1b9)](_0x47fb1c)[_0x237737(0x1a8)](_0x18677f=>{var _0x2c8d23=_0x237737;if(_0x18677f==='class')Array[_0x2c8d23(0x1b0)](_0x47fb1c[_0x18677f])?_0x47fb1c[_0x18677f][_0x2c8d23(0x1a8)](_0x332ff7=>_0x332ff7!==''?_0x3ffb14[_0x2c8d23(0x170)][_0x2c8d23(0x183)](_0x332ff7):0x0):_0x47fb1c[_0x18677f]!==''?_0x3ffb14[_0x2c8d23(0x170)][_0x2c8d23(0x183)](_0x47fb1c[_0x18677f]):0x0;else{if(_0x18677f===_0x2c8d23(0x17b))Object['keys'](_0x47fb1c[_0x18677f])[_0x2c8d23(0x1a8)](_0x5439be=>{var _0x28417e=_0x2c8d23;_0x3ffb14[_0x28417e(0x17b)][_0x5439be]=_0x47fb1c[_0x18677f][_0x5439be];});else{if(_0x18677f==='text')_0x47fb1c[_0x18677f]===''?_0x3ffb14[_0x2c8d23(0x187)]=_0x2c8d23(0x17a):_0x3ffb14[_0x2c8d23(0x1bc)]=_0x47fb1c[_0x18677f];else _0x3ffb14[_0x18677f]=_0x47fb1c[_0x18677f];}}});return _0x3ffb14;}document[_0x4f9150(0x184)](_0x4f9150(0x177))['forEach']((_0x42b1ef,_0x158ecb)=>{var _0x364dee=_0x4f9150,_0x5f46a8=_0x384349(_0x364dee(0x171),{'class':_0x364dee(0x190),'style':{'width':_0x2e3416['style']?.[_0x364dee(0x17c)]??_0x42b1ef['clientWidth']+'px','padding':_0x2e3416['style']?.[_0x364dee(0x194)]??''}});_0x42b1ef[_0x364dee(0x17b)]['display']='none',_0x42b1ef['parentNode'][_0x364dee(0x1b4)](_0x5f46a8,_0x42b1ef[_0x364dee(0x1a7)]);var _0x663d80=_0x384349(_0x364dee(0x171),{'class':'multiselect-dropdown-list-wrapper'}),_0x95cedd=_0x384349(_0x364dee(0x171),{'class':_0x364dee(0x1a3),'style':{'height':_0x2e3416['height']}}),_0x202b95=_0x384349('input',{'class':[_0x364dee(0x1ac)][_0x364dee(0x18b)]([_0x2e3416[_0x364dee(0x174)]?.[_0x364dee(0x17e)]??_0x364dee(0x1a4)]),'style':{'width':_0x364dee(0x167),'display':_0x42b1ef[_0x364dee(0x188)][_0x364dee(0x180)]?.[_0x364dee(0x182)]===_0x364dee(0x1aa)?_0x364dee(0x195):_0x364dee(0x164)},'placeholder':_0x2e3416[_0x364dee(0x1c2)]});_0x663d80[_0x364dee(0x186)](_0x202b95),_0x5f46a8[_0x364dee(0x186)](_0x663d80),_0x663d80[_0x364dee(0x186)](_0x95cedd),_0x42b1ef['loadOptions']=()=>{var _0x3a0e6f=_0x364dee;_0x95cedd[_0x3a0e6f(0x187)]='';if(_0x42b1ef['attributes'][_0x3a0e6f(0x1b6)]?.[_0x3a0e6f(0x182)]=='true'){var _0x4852a6=_0x384349(_0x3a0e6f(0x171),{'class':_0x3a0e6f(0x16c)}),_0x24e7f9=_0x384349('input',{'type':'checkbox'});_0x4852a6[_0x3a0e6f(0x186)](_0x24e7f9),_0x4852a6['appendChild'](_0x384349(_0x3a0e6f(0x1bb),{'text':_0x2e3416[_0x3a0e6f(0x16b)]})),_0x4852a6[_0x3a0e6f(0x1a1)]('click',()=>{var _0x14043e=_0x3a0e6f;_0x4852a6['classList']['toggle'](_0x14043e(0x19f)),_0x4852a6['querySelector']('input')[_0x14043e(0x19f)]=!_0x4852a6[_0x14043e(0x19e)](_0x14043e(0x1ad))[_0x14043e(0x19f)];var _0x10b28f=_0x4852a6[_0x14043e(0x19e)](_0x14043e(0x1ad))[_0x14043e(0x19f)];_0x95cedd[_0x14043e(0x184)](_0x14043e(0x1a9))[_0x14043e(0x1a8)](_0x2304b3=>{var _0x5f106e=_0x14043e;_0x2304b3['style'][_0x5f106e(0x191)]!==_0x5f106e(0x164)&&(_0x2304b3[_0x5f106e(0x19e)](_0x5f106e(0x1ad))[_0x5f106e(0x19f)]=_0x10b28f,_0x2304b3[_0x5f106e(0x19c)][_0x5f106e(0x1af)]=_0x10b28f);}),_0x42b1ef[_0x14043e(0x178)](new Event('change'));}),_0x24e7f9[_0x3a0e6f(0x1a1)]('click',_0x49b35f=>{var _0x27236c=_0x3a0e6f;_0x24e7f9[_0x27236c(0x19f)]=!_0x24e7f9[_0x27236c(0x19f)];}),_0x42b1ef[_0x3a0e6f(0x1a1)](_0x3a0e6f(0x19a),_0x5b9ad5=>{var _0x5008d0=_0x3a0e6f;let _0x5afb5f=Array[_0x5008d0(0x1a5)](_0x95cedd[_0x5008d0(0x184)](_0x5008d0(0x1a9)))[_0x5008d0(0x16d)](_0x3ce38f=>_0x3ce38f['style'][_0x5008d0(0x191)]!==_0x5008d0(0x164)),_0x2759f1=_0x5afb5f[_0x5008d0(0x16e)](_0x54c0ea=>!_0x54c0ea[_0x5008d0(0x19e)](_0x5008d0(0x1ad))[_0x5008d0(0x19f)]);if(_0x24e7f9[_0x5008d0(0x19f)]&&_0x2759f1)_0x24e7f9[_0x5008d0(0x19f)]=![];else{if(_0x24e7f9['checked']==![]&&_0x2759f1===undefined)_0x24e7f9[_0x5008d0(0x19f)]=!![];}}),_0x95cedd[_0x3a0e6f(0x186)](_0x4852a6);}Array[_0x3a0e6f(0x1a5)](_0x42b1ef[_0x3a0e6f(0x1ae)])[_0x3a0e6f(0x18f)](_0x54cc0f=>{var _0x6a3b75=_0x3a0e6f,_0x290cdd=_0x384349('div',{'class':_0x54cc0f[_0x6a3b75(0x1af)]?_0x6a3b75(0x19f):'','optEl':_0x54cc0f}),_0x54eb5d=_0x384349('input',{'type':'checkbox','checked':_0x54cc0f[_0x6a3b75(0x1af)]});_0x290cdd[_0x6a3b75(0x186)](_0x54eb5d),_0x290cdd[_0x6a3b75(0x186)](_0x384349(_0x6a3b75(0x1bb),{'text':_0x54cc0f[_0x6a3b75(0x193)]})),_0x290cdd[_0x6a3b75(0x1a1)](_0x6a3b75(0x16a),()=>{var _0x1dd393=_0x6a3b75;_0x290cdd[_0x1dd393(0x170)][_0x1dd393(0x19b)](_0x1dd393(0x19f)),_0x290cdd[_0x1dd393(0x19e)](_0x1dd393(0x1ad))[_0x1dd393(0x19f)]=!_0x290cdd['querySelector'](_0x1dd393(0x1ad))[_0x1dd393(0x19f)],_0x290cdd[_0x1dd393(0x19c)]['selected']=!!!_0x290cdd['optEl'][_0x1dd393(0x1af)],_0x42b1ef[_0x1dd393(0x178)](new Event('change'));}),_0x54eb5d[_0x6a3b75(0x1a1)](_0x6a3b75(0x16a),_0x408631=>{var _0x8fe58a=_0x6a3b75;_0x54eb5d[_0x8fe58a(0x19f)]=!_0x54eb5d[_0x8fe58a(0x19f)];}),_0x54cc0f[_0x6a3b75(0x1b5)]=_0x290cdd,_0x95cedd[_0x6a3b75(0x186)](_0x290cdd);}),_0x5f46a8[_0x3a0e6f(0x1ba)]=_0x663d80,_0x5f46a8['refresh']=()=>{var _0x469ff2=_0x3a0e6f;_0x5f46a8[_0x469ff2(0x184)](_0x469ff2(0x165))[_0x469ff2(0x1a8)](_0x4e7926=>_0x5f46a8[_0x469ff2(0x18c)](_0x4e7926));var _0x594c56=Array[_0x469ff2(0x1a5)](_0x42b1ef[_0x469ff2(0x1b7)]);_0x594c56[_0x469ff2(0x169)]>(_0x42b1ef[_0x469ff2(0x188)]['multiselect-max-items']?.[_0x469ff2(0x182)]??0x5)?_0x5f46a8['appendChild'](_0x384349(_0x469ff2(0x198),{'class':[_0x469ff2(0x173),'maxselected'],'text':_0x594c56['length']+'\x20'+_0x2e3416[_0x469ff2(0x1b8)]})):_0x594c56[_0x469ff2(0x18f)](_0x5e768f=>{var _0x2e8aa3=_0x469ff2,_0x100d77=_0x384349(_0x2e8aa3(0x198),{'class':'optext','text':_0x5e768f[_0x2e8aa3(0x193)],'srcOption':_0x5e768f});if(_0x42b1ef[_0x2e8aa3(0x188)][_0x2e8aa3(0x189)]?.[_0x2e8aa3(0x182)]!==_0x2e8aa3(0x1aa))_0x100d77[_0x2e8aa3(0x186)](_0x384349(_0x2e8aa3(0x198),{'class':_0x2e8aa3(0x1a2),'text':'x','title':_0x2e3416[_0x2e8aa3(0x1be)],'onclick':_0x15a9df=>{var _0x24975f=_0x2e8aa3;_0x100d77[_0x24975f(0x18a)][_0x24975f(0x1b5)][_0x24975f(0x178)](new Event('click')),_0x5f46a8[_0x24975f(0x175)](),_0x15a9df[_0x24975f(0x192)]();}}));_0x5f46a8['appendChild'](_0x100d77);});if(0x0==_0x42b1ef[_0x469ff2(0x1b7)][_0x469ff2(0x169)])_0x5f46a8[_0x469ff2(0x186)](_0x384349(_0x469ff2(0x198),{'class':_0x469ff2(0x1b2),'text':_0x42b1ef[_0x469ff2(0x188)][_0x469ff2(0x1b2)]?.[_0x469ff2(0x182)]??_0x2e3416[_0x469ff2(0x1b2)]}));},_0x5f46a8[_0x3a0e6f(0x175)]();},_0x42b1ef['loadOptions'](),_0x202b95[_0x364dee(0x1a1)](_0x364dee(0x1ad),()=>{var _0x5056b5=_0x364dee;_0x95cedd[_0x5056b5(0x184)](_0x5056b5(0x196))[_0x5056b5(0x1a8)](_0x49dbad=>{var _0x3c2206=_0x5056b5,_0x1805bc=_0x49dbad[_0x3c2206(0x19e)](_0x3c2206(0x1bb))[_0x3c2206(0x1bc)][_0x3c2206(0x166)]();_0x49dbad[_0x3c2206(0x17b)]['display']=_0x1805bc[_0x3c2206(0x1bf)](_0x202b95['value']['toUpperCase']())?_0x3c2206(0x195):'none';});}),_0x5f46a8[_0x364dee(0x1a1)](_0x364dee(0x16a),()=>{var _0x2b8dee=_0x364dee;_0x5f46a8[_0x2b8dee(0x1ba)]['style'][_0x2b8dee(0x191)]=_0x2b8dee(0x195),_0x202b95[_0x2b8dee(0x168)](),_0x202b95[_0x2b8dee(0x199)]();}),document['addEventListener']('click',function(_0x4d2163){var _0x46b64e=_0x364dee;!_0x5f46a8[_0x46b64e(0x1a0)](_0x4d2163[_0x46b64e(0x1bd)])&&(_0x663d80[_0x46b64e(0x17b)][_0x46b64e(0x191)]=_0x46b64e(0x164),_0x5f46a8[_0x46b64e(0x175)]());});});}
+var style = document.createElement('style');
+style.setAttribute("id","multiselect_dropdown_styles");
+style.innerHTML = `
+.multiselect-dropdown{
+  display: inline-block;
+  padding: 5px 5px 0px 5px;
+  border-radius:0px;
+  border: solid 1px #ccc;
+  background-color: white;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  min-height: 34px !important;
+  width: 100% !important;
+}
+
+.multiselect-dropdown label{
+  display:inline-block;
+  margin:0px 0px 0px 8px;
+}
+
+.multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
+  margin-right:0.5em; 
+  margin-bottom:2px;
+  padding:1px 0; 
+  border-radius: 4px; 
+  display:inline-block;
+}
+.multiselect-dropdown span.optext{
+  background-color:#ebebeb;
+  padding:1px 0.75em; 
+}
+.multiselect-dropdown span.optext .optdel {
+  float: right;
+  margin: 0 -6px 1px 5px;
+  font-size: 0.7em;
+  margin-top: 2px;
+  cursor: pointer;
+  color: #666;
+}
+.multiselect-dropdown span.optext .optdel:hover { color: #c66;}
+.multiselect-dropdown span.placeholder{
+  color:#868a8f;
+}
+.multiselect-dropdown-list-wrapper{
+  box-shadow:0 0 3px #ccc;
+  z-index: 100;
+  padding:2px;
+  border-radius: 4px;
+  border: solid 1px #ced4da;
+  display: none;
+  margin: -1px;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.multiselect-dropdown-list-wrapper .multiselect-dropdown-search{
+  margin-bottom:5px;
+}
+.multiselect-dropdown-list{
+  padding:2px;
+  height: 15rem;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+.multiselect-dropdown-list::-webkit-scrollbar {
+  width: 6px;
+}
+.multiselect-dropdown-list::-webkit-scrollbar-thumb {
+  background-color: #bec4ca;
+  border-radius:3px;
+}
+
+.multiselect-dropdown-list div{
+  padding: 5px 5px;
+}
+.multiselect-dropdown-list input{
+  height: 1.15em;
+  width: 1.15em;
+  margin-right: 0.35em;  
+}
+.multiselect-dropdown-list div.checked{
+}
+.multiselect-dropdown-list div:hover{
+  background-color: #eee;
+}
+.multiselect-dropdown span.maxselected {width:100%;}
+.multiselect-dropdown-all-selector {border-bottom:solid 1px #eee;}
+`;
+document.head.appendChild(style);
+
+function MultiselectDropdown(options, column){
+  var config={
+    search:true,
+    height:'15rem',
+    placeholder:'select',
+    txtSelected:'selected',
+    txtAll:'All',
+    txtRemove: 'Remove',
+    txtSearch:'search',
+    ...options
+  };
+  function newEl(tag,attrs){
+    var e=document.createElement(tag);
+    if(attrs!==undefined) Object.keys(attrs).forEach(k=>{
+      if(k==='class') { Array.isArray(attrs[k]) ? attrs[k].forEach(o=>o!==''?e.classList.add(o):0) : (attrs[k]!==''?e.classList.add(attrs[k]):0)}
+      else if(k==='style'){  
+        Object.keys(attrs[k]).forEach(ks=>{
+          e.style[ks]=attrs[k][ks];
+        });
+       }
+      else if(k==='text'){attrs[k]===''?e.innerHTML='&nbsp;':e.innerText=attrs[k]}
+      else e[k]=attrs[k];
+    });
+    return e;
+  }
+
+  
+  document.querySelectorAll("select[multiple]").forEach((el,k)=>{
+    
+    var div=newEl('div',{class:'multiselect-dropdown',style:{width:config.style?.width??el.clientWidth+'px',padding:config.style?.padding??''}});
+    el.style.display='none';
+    el.parentNode.insertBefore(div,el.nextSibling);
+    var listWrap=newEl('div',{class:'multiselect-dropdown-list-wrapper'});
+    var list=newEl('div',{class:'multiselect-dropdown-list',style:{height:config.height}});
+    var search=newEl('input',{class:['multiselect-dropdown-search'].concat([config.searchInput?.class??'form-control']),style:{width:'100%',display:el.attributes['multiselect-search']?.value==='true'?'block':'none'},placeholder:config.txtSearch});
+    listWrap.appendChild(search);
+    div.appendChild(listWrap);
+    listWrap.appendChild(list);
+
+    el.loadOptions=()=>{
+      list.innerHTML='';
+      
+      if(el.attributes['multiselect-select-all']?.value=='true'){
+        var op=newEl('div',{class:'multiselect-dropdown-all-selector'})
+        var ic=newEl('input',{type:'checkbox'});
+        op.appendChild(ic);
+        op.appendChild(newEl('label',{text:config.txtAll}));
+  
+        op.addEventListener('click',()=>{
+          op.classList.toggle('checked');
+          op.querySelector("input").checked=!op.querySelector("input").checked;
+          
+          var ch=op.querySelector("input").checked;
+          list.querySelectorAll(":scope > div:not(.multiselect-dropdown-all-selector)")
+            .forEach(i=>{if(i.style.display!=='none'){i.querySelector("input").checked=ch; i.optEl.selected=ch}});
+  
+          el.dispatchEvent(new Event('change'));
+        });
+        ic.addEventListener('click',(ev)=>{
+          ic.checked=!ic.checked;
+        });
+        el.addEventListener('change', (ev)=>{
+          let itms=Array.from(list.querySelectorAll(":scope > div:not(.multiselect-dropdown-all-selector)")).filter(e=>e.style.display!=='none')
+          let existsNotSelected=itms.find(i=>!i.querySelector("input").checked);
+          if(ic.checked && existsNotSelected) ic.checked=false;
+          else if(ic.checked==false && existsNotSelected===undefined) ic.checked=true;
+        });
+  
+        list.appendChild(op);
+      }
+
+      Array.from(el.options).map(o=>{
+        var op=newEl('div',{class:o.selected?'checked':'',optEl:o})
+        var ic=newEl('input',{type:'checkbox',checked:o.selected});
+        op.appendChild(ic);
+        op.appendChild(newEl('label',{text:o.text}));
+
+        op.addEventListener('click',()=>{
+          op.classList.toggle('checked');
+          op.querySelector("input").checked=!op.querySelector("input").checked;
+          op.optEl.selected=!!!op.optEl.selected;
+          el.dispatchEvent(new Event('change'));
+        });
+        ic.addEventListener('click',(ev)=>{
+          ic.checked=!ic.checked;
+        });
+        o.listitemEl=op;
+        list.appendChild(op);
+      });
+      div.listEl=listWrap;
+
+      div.refresh=()=>{
+        div.querySelectorAll('span.optext, span.placeholder').forEach(t=>div.removeChild(t));
+        var sels=Array.from(el.selectedOptions);
+        if(sels.length>(el.attributes['multiselect-max-items']?.value??5)){
+          div.appendChild(newEl('span',{class:['optext','maxselected'],text:sels.length+' '+config.txtSelected}));          
+        }
+        else{
+          sels.map(x=>{
+            var c=newEl('span',{class:'optext',text:x.text, srcOption: x});
+            if((el.attributes['multiselect-hide-x']?.value !== 'true'))
+              c.appendChild(newEl('span',{class:'optdel',text:'x',title:config.txtRemove, onclick:(ev)=>{c.srcOption.listitemEl.dispatchEvent(new Event('click'));div.refresh();ev.stopPropagation();}}));
+
+            div.appendChild(c);
+          });
+        }
+        if(0==el.selectedOptions.length) div.appendChild(newEl('span',{class:'placeholder',text:el.attributes['placeholder']?.value??config.placeholder}));
+      };
+      div.refresh();
+    }
+    el.loadOptions();
+    
+    search.addEventListener('input',()=>{
+      list.querySelectorAll(":scope div:not(.multiselect-dropdown-all-selector)").forEach(d=>{
+        var txt=d.querySelector("label").innerText.toUpperCase();
+        d.style.display=txt.includes(search.value.toUpperCase())?'block':'none';
+      });
+    });
+
+    div.addEventListener('click',()=>{
+      div.listEl.style.display='block';
+      search.focus();
+      search.select();
+    });
+    
+    document.addEventListener('click', function(event) {
+      if (!div.contains(event.target)) {
+        listWrap.style.display='none';
+        div.refresh();
+      }
+    });    
+  });
+}
+/*
+window.addEventListener('load',()=>{
+  MultiselectDropdown(window.MultiselectDropdownOptions);
+});
+*/
+
+
+

@@ -1,1 +1,557 @@
-var a11_0x1d245e=a11_0x535e;(function(_0x1bc037,_0x1d14e0){var _0xf244ae=a11_0x535e,_0xc13cf6=_0x1bc037();while(!![]){try{var _0x53a8af=-parseInt(_0xf244ae(0x121))/0x1+parseInt(_0xf244ae(0xf1))/0x2+-parseInt(_0xf244ae(0xcd))/0x3*(parseInt(_0xf244ae(0xfd))/0x4)+parseInt(_0xf244ae(0xc7))/0x5*(parseInt(_0xf244ae(0xd3))/0x6)+parseInt(_0xf244ae(0xe6))/0x7*(-parseInt(_0xf244ae(0x123))/0x8)+-parseInt(_0xf244ae(0xf0))/0x9*(-parseInt(_0xf244ae(0x132))/0xa)+-parseInt(_0xf244ae(0x118))/0xb*(-parseInt(_0xf244ae(0x10d))/0xc);if(_0x53a8af===_0x1d14e0)break;else _0xc13cf6['push'](_0xc13cf6['shift']());}catch(_0x4430ae){_0xc13cf6['push'](_0xc13cf6['shift']());}}}(a11_0xd60c,0x8c522),$(document)[a11_0x1d245e(0xed)](function(){var _0x2eaca9=a11_0x1d245e;UserAuthorization(),GetClientName(),$('#closeLicenceManager')['click'](function(){var _0x22d1c6=a11_0x535e;location[_0x22d1c6(0x122)]=_0x22d1c6(0x128)+Logged_CompanyId;}),$(_0x2eaca9(0x103))[_0x2eaca9(0x10f)](_0x2eaca9(0x122),_0x2eaca9(0x110)+Logged_CompanyId+''),LicenseDetails(),$('#Accept')[_0x2eaca9(0xce)](function(){var _0x2dadb0=_0x2eaca9;$(this)['is'](':checked')?document[_0x2dadb0(0xf2)]('btnApply')[_0x2dadb0(0x10c)]=![]:document[_0x2dadb0(0xf2)](_0x2dadb0(0xec))[_0x2dadb0(0x10c)]=!![];}),$('#rdoEnterprise')[_0x2eaca9(0xce)](function(){var _0x5a7b3f=_0x2eaca9;$('#rdoCustomize')[_0x5a7b3f(0x10f)](_0x5a7b3f(0x113),![]),$(_0x5a7b3f(0x101))[_0x5a7b3f(0x10f)]('checked',![]);}),$('#rdoCustomize')[_0x2eaca9(0xce)](function(){var _0x9da7d7=_0x2eaca9;$(_0x9da7d7(0xc9))[_0x9da7d7(0x10f)]('checked',![]);}),$(_0x2eaca9(0x13a))[_0x2eaca9(0xce)](function(){var _0x439400=_0x2eaca9;if(ModulesChangeValidate()==!![])$(_0x439400(0xf4))[_0x439400(0x10f)]('checked')==!![]?($('#chkDMSVersion')['prop'](_0x439400(0x113))==!![]||$(_0x439400(0xf5))[_0x439400(0x10f)](_0x439400(0x113))==!![])&&(waitingDialog[_0x439400(0x138)](),setTimeout(function(){setModules();},0x64)):(waitingDialog[_0x439400(0x138)](),setTimeout(function(){setModules();},0x64));else return alert(_0x439400(0xfc)),![];});}));function UserAuthorization(){var _0x13e38e=a11_0x1d245e;titanForWork[_0x13e38e(0x11d)](_0x13e38e(0xd8),Logged_CompanyId)[_0x13e38e(0x112)](function(_0x153a42,_0x1cefce){var _0x523ba9=_0x13e38e;if(_0x153a42[_0x523ba9(0x10a)]>0x0){if(_0x153a42[0x0]['SiteAdmin']==_0x523ba9(0xcf)||_0x153a42[0x0][_0x523ba9(0xff)]==_0x523ba9(0xff)){if(TitanLicenseFormat==_0x523ba9(0x102)||TitanLicenseFormat==null)$('#rdoEnterprise')[_0x523ba9(0x10f)](_0x523ba9(0x113),!![]);else TitanLicenseFormat==_0x523ba9(0x119)&&($('#rdoCustomize')['prop'](_0x523ba9(0x113),!![]),$(_0x523ba9(0x133))[_0x523ba9(0x10f)](_0x523ba9(0x113),!![]));}else alert(_0x1cefce),window[_0x523ba9(0xe3)][_0x523ba9(0x122)]=_spPageContextInfo[_0x523ba9(0x12e)];}});}function GetClientName(){var _0x1b1a27=a11_0x1d245e,_0x2a8205=0x1,_0x1b68e='';_0x1b68e=_spPageContextInfo[_0x1b1a27(0x12e)]+_0x1b1a27(0xe1),$[_0x1b1a27(0x135)]({'url':_0x1b68e,'headers':{'Accept':_0x1b1a27(0x136)},'async':![],'success':function(_0x13aa8c){var _0x405711=_0x1b1a27,_0x3b775b=_0x13aa8c['d'][_0x405711(0xd4)];$(_0x405711(0xef))['text'](_0x3b775b[_0x405711(0x10a)]);},'error':function(_0x134930){var _0x2e03ae=_0x1b1a27;alert(_0x134930['responseText']),deferred[_0x2e03ae(0x13d)](_0x134930[_0x2e03ae(0x11c)]);}});}function LicenseDetails(){var _0x5d6b39=a11_0x1d245e;licenseValidTill=$[_0x5d6b39(0x111)][_0x5d6b39(0xe2)]('dd\x20M\x20yy',licenseValidTill),GetActiveUsersLicense()[_0x5d6b39(0x112)](function(_0x5896c7){var _0x306935=_0x5d6b39;$(_0x306935(0x127))[_0x306935(0x12f)](_0x5896c7);}),$(_0x5d6b39(0xdb))[_0x5d6b39(0x12f)](UsersLicenceRequired);var _0x537e69=document[_0x5d6b39(0xf2)](_0x5d6b39(0x114));activeCheck==!![]?_0x537e69[_0x5d6b39(0x113)]=!![]:(_0x537e69[_0x5d6b39(0x113)]=![],_0x537e69[_0x5d6b39(0x10c)]=![],document['getElementById'](_0x5d6b39(0xec))[_0x5d6b39(0x10c)]=![]),$(_0x5d6b39(0xf6))[_0x5d6b39(0x12f)](licenseValidTill),$(_0x5d6b39(0xf8))['text'](UsersLicenceRequired);}function GetActiveUsersLicense(){var _0x4e9028=a11_0x1d245e,_0x49b765=$[_0x4e9028(0xf3)](),_0x1ea1e4=_spPageContextInfo['webAbsoluteUrl']+_0x4e9028(0xdc);return $[_0x4e9028(0x135)]({'url':_0x1ea1e4,'type':_0x4e9028(0x12b),'headers':{'accept':_0x4e9028(0x136)},'success':function(_0x5b6eaa){var _0x328db1=_0x4e9028,_0x29e4f2=_0x5b6eaa['d']['results'];if(_0x29e4f2[_0x328db1(0x10a)]>0x0){var _0x16c24a=[];$['each'](_0x29e4f2,function(_0xd678e4,_0x5c3e10){var _0x2e74ed=_0x328db1,_0x189942=![];$[_0x2e74ed(0xc6)](_0x16c24a,function(_0x278103,_0x3e7a94){var _0xdab654=_0x2e74ed;_0x5c3e10['Email']==_0x3e7a94[_0xdab654(0xd6)]&&(_0x189942=!![]);;}),_0x189942==![]&&_0x5c3e10[_0x2e74ed(0xd6)]!=''&&_0x16c24a['push'](_0x5c3e10);});var _0x6e1b8e=_0x29e4f2['length'];_0x49b765[_0x328db1(0xcb)](_0x6e1b8e);}},'error':function(_0x59b8c1){var _0x20a997=_0x4e9028;BootstrapDialog[_0x20a997(0x10e)](_0x59b8c1[_0x20a997(0x11c)]),_0x49b765['reject'](_0x59b8c1[_0x20a997(0x11c)]);}}),_0x49b765;}function ModulesChangeValidate(){var _0x46b277=a11_0x1d245e;return $(_0x46b277(0xf4))[_0x46b277(0x10f)](_0x46b277(0x113))==!![]?$('#chkDMSVersion')[_0x46b277(0x10f)](_0x46b277(0x113))==![]?$(_0x46b277(0xf5))[_0x46b277(0x10f)]('checked')==![]?![]:!![]:!![]:!![];}function a11_0xd60c(){var _0x25fe99=['.chkAllCustom','Enterprise','#LiceneceAgreement','SP.Data.NavigationListItem','?$select=Title,Active,PageURL,Id&$top=5000','Org.\x20Chart','\x27)/Items(','val','Default.aspx','length','Guest\x20Users','disabled','48bYQPEQ','alert','prop','../Pages/LicenceAgreement.aspx?WebAppId=','datepicker','done','checked','Accept','PATCH','Process\x20has\x20been\x20completed','/_api/web/rootfolder','3219403smGakJ','DMS','WebAnalytics','My\x20Documents','responseText','PageAuthorization','Licence\x20Manager','Permissions','SP.Folder','820454QqIovO','href','6985288OmygPz','SP.Data.AdminPortalListItem','hide','forEach','#licenseActiveUsers','../Pages/AdminPortal.aspx?WebAppId=','SP.Data.EnvironmentalSettingsListItem','Document.aspx','GET','\x27)/items/','ManageEmployees','webAbsoluteUrl','text','Categories','#__REQUESTDIGEST','1930710NxwrMs','#chkDMSVersion','Pages/ApprovalFormSetup.aspx?RG9jdW1lbnRz','ajax','application/json;odata=verbose','Title','show','MERGE','#btnSubModules','ExternalUsers','Admin\x20Portal','reject','Manage\x20Guest\x20Users','each','2627495ynncNc','More','#rdoEnterprise','/_api/Web/Lists/getByTitle(\x27','resolve','AdminPortal','26976adxUvy','click','SiteAdmin','Template3','License\x20Declined\x20Successfully','promise','12TdcMHQ','results','#txtLicenseId','Email','Navigation\x20is\x20blank.\x20Kindly\x20contact\x20administrator.','ManageCompany','Pages/ApprovalFormSetup.aspx?UHJvY2Vzcw==','Navigation','#totalUserLicenses','/_api/web/lists/GetByTitle(\x27Employees\x27)/Items?$select=ID,Email&$filter=PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$top=5000','Employee\x20Directory','stringify','ManageDepartments','when','/_api/web/Lists/GetByTitle(\x27ExternalUsers\x27)/Items?$filter=Status\x20eq\x20\x27Active\x27&$top=5000','formatDate','location','Office\x20Locations','ManageOfficeLocations','7aRjrEf','Clients','Pages/','?$select=Title,ParentId,Status,Postion,Menu,URL,DepartmentID,ID,Company/Id&$top=5000&$expand=Company','Pages/ApprovalFormSetup.aspx?Qm90aA==','SP.Data.ExternalUsersListItem','btnApply','ready','../Pages/ManagePermissionDMS.aspx','#licenseActiveGuestUser','18SAiGsX','1083506xtMoWH','getElementById','Deferred','#rdoCustomize','#chkBusProcVersion','#licenseValidTill','Department','#adUser','POST','?$select=Title,Id,TemplateType&$top=5000&$filter=TemplateType\x20ne\x20\x27Template3\x27\x20','EnvironmentalSettings','Kindly\x20select\x20any\x20modules\x20first.','392TQtSEw','reload','TechAdmin','Approval\x20Template'];a11_0xd60c=function(){return _0x25fe99;};return a11_0xd60c();}function setModules(){var _0x162a3c=a11_0x1d245e;if($('#rdoEnterprise')['prop'](_0x162a3c(0x113))==!![])ChangeHomepage(_0x162a3c(0x109));else{if($('#rdoCustomize')[_0x162a3c(0x10f)](_0x162a3c(0x113))==!![]){if($(_0x162a3c(0x133))[_0x162a3c(0x10f)](_0x162a3c(0x113))==!![])ChangeHomepage(_0x162a3c(0x12a));else $('#chkBusProcVersion')[_0x162a3c(0x10f)](_0x162a3c(0x113))==!![]&&ChangeHomepage('approvals.aspx');}}}function ChangeHomepage(_0x887fe5){var _0x5cf471=a11_0x1d245e;$['ajax']({'url':_spPageContextInfo[_0x5cf471(0x12e)]+_0x5cf471(0x117),'type':_0x5cf471(0xf9),'data':JSON['stringify']({'__metadata':{'type':_0x5cf471(0x120)},'WelcomePage':_0x5cf471(0xe8)+_0x887fe5}),'headers':{'Accept':_0x5cf471(0x136),'Content-Type':_0x5cf471(0x136),'IF-MATCH':'*','X-HTTP-Method':_0x5cf471(0x115),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x5cf471(0x108)]()},'success':function(_0x461649,_0x58b3f6,_0x2ca86f){var _0x1ddc4d=_0x5cf471;if($(_0x1ddc4d(0xc9))['prop'](_0x1ddc4d(0x113))==!![])changeTitanFormat('Enterprise'),ChangeTitanNavigation();else{if($(_0x1ddc4d(0xf4))[_0x1ddc4d(0x10f)](_0x1ddc4d(0x113))==!![]){if($(_0x1ddc4d(0x133))[_0x1ddc4d(0x10f)](_0x1ddc4d(0x113))==!![])changeTitanFormat(_0x1ddc4d(0x119)),ChangeDMSNavigation();else $(_0x1ddc4d(0xf5))['prop']('checked')==!![]&&(changeTitanFormat('Business\x20Process'),ChangeBusProcNavigation());}}},'error':function(_0x3aa026,_0x47b3ec,_0x49e98b){var _0x560dd0=_0x5cf471;return alert(_0x3aa026['responseText']),waitingDialog[_0x560dd0(0x125)](),![];}});}function changeTitanFormat(_0x345db6){var _0x18ca82=a11_0x1d245e,_0x4465d0='?$select=Title,Id,Formats&$top=5000&$filter=Title\x20eq\x20\x27License\x27',_0x45caca='';$[_0x18ca82(0xe0)](getItemsWithQuery(_0x18ca82(0xfb),_0x4465d0,_spPageContextInfo[_0x18ca82(0x12e)]))[_0x18ca82(0x112)](function(_0x4b4edc){var _0x3b7ae2=_0x18ca82;_0x4b4edc[_0x3b7ae2(0x10a)]>0x0&&(_0x45caca={'__metadata':{'type':_0x3b7ae2(0x129)},'Formats':_0x345db6},updateItemInList(_0x45caca,_0x3b7ae2(0xfb),_0x4b4edc[0x0]['Id']));});}function ChangeDMSNavigation(){var _0x40d0be=a11_0x1d245e,_0x2beca6=_0x40d0be(0xe9);$['when'](getItemsWithQuery(_0x40d0be(0xda),_0x2beca6,_spPageContextInfo[_0x40d0be(0x12e)]))[_0x40d0be(0x112)](function(_0x5965fa){var _0x4e4d21=_0x40d0be;if(_0x5965fa[_0x4e4d21(0x10a)]>0x0){var _0x32d94d='';_0x5965fa[_0x4e4d21(0x126)](function(_0x494bfb,_0x133a85){var _0xf36d7=_0x4e4d21;_0x32d94d='';if(_0x494bfb[_0xf36d7(0x137)]==_0xf36d7(0x106)||_0x494bfb['Title']==_0xf36d7(0xdd)||_0x494bfb[_0xf36d7(0x137)]==_0xf36d7(0x13c)||_0x494bfb[_0xf36d7(0x137)]==_0xf36d7(0x11b)||_0x494bfb['Title']=='Company\x20Documents'||_0x494bfb[_0xf36d7(0x137)]=='Clients'||_0x494bfb[_0xf36d7(0x137)]==_0xf36d7(0x10b)||_0x494bfb['Title']=='More'||_0x494bfb[_0xf36d7(0x137)]==_0xf36d7(0xe4))_0x32d94d={'__metadata':{'type':'SP.Data.NavigationListItem'},'Status':!![]};else _0x494bfb[_0xf36d7(0x137)]=='Approval\x20Template'?_0x32d94d={'__metadata':{'type':_0xf36d7(0x104)},'Status':!![],'URL':_0xf36d7(0x134)}:_0x32d94d={'__metadata':{'type':_0xf36d7(0x104)},'Status':![]};updateItemInList(_0x32d94d,_0xf36d7(0xda),_0x494bfb['ID']);});var _0x1c5d9e='?$select=Title,Id,TemplateType&$top=5000&$filter=TemplateType\x20ne\x20\x27Template3\x27\x20';$[_0x4e4d21(0xe0)](getItemsWithQuery('ExternalUsers',_0x1c5d9e,_spPageContextInfo[_0x4e4d21(0x12e)]))['done'](function(_0x8ea704){var _0xf640a1=_0x4e4d21;if(_0x8ea704[_0xf640a1(0x10a)]>0x0){var _0x5e5aae='';_0x8ea704[_0xf640a1(0x126)](function(_0x21cdf8,_0x300606){var _0x21d49c=_0xf640a1;_0x5e5aae={'__metadata':{'type':'SP.Data.ExternalUsersListItem'},'TemplateType':_0x21d49c(0xd0)},updateItemInList(_0x5e5aae,_0x21d49c(0x13b),_0x21cdf8['Id']);});}ChangeDMSAdminPortal();});}else return alert('Navigation\x20is\x20blank.\x20Kindly\x20contact\x20administrator.'),![];});}function ChangeDMSAdminPortal(){var _0x212cd1=a11_0x1d245e,_0x2cbee3='?$select=Title,Active,PageURL,Id&$top=5000';$[_0x212cd1(0xe0)](getItemsWithQuery('AdminPortal',_0x2cbee3,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x9724f0){var _0x1aaffc=_0x212cd1;_0x9724f0['length']>0x0&&_0x9724f0[_0x1aaffc(0x126)](function(_0x1b3a8b,_0x2fa40d){var _0x113043=_0x1aaffc;AdminMetadata='';if(_0x1b3a8b[_0x113043(0x137)]=='ManageCompanies'||_0x1b3a8b[_0x113043(0x137)]==_0x113043(0xe5)||_0x1b3a8b[_0x113043(0x137)]=='ManageDepartments'||_0x1b3a8b[_0x113043(0x137)]==_0x113043(0x12d)||_0x1b3a8b['Title']==_0x113043(0xc5)||_0x1b3a8b[_0x113043(0x137)]==_0x113043(0x130)||_0x1b3a8b[_0x113043(0x137)]==_0x113043(0x11e)||_0x1b3a8b['Title']==_0x113043(0x11a))AdminMetadata={'__metadata':{'type':_0x113043(0x124)},'Active':!![]};else _0x1b3a8b[_0x113043(0x137)]==_0x113043(0x11f)?AdminMetadata={'__metadata':{'type':_0x113043(0x124)},'Active':!![],'PageURL':_0x113043(0xee)}:AdminMetadata={'__metadata':{'type':_0x113043(0x124)},'Active':![]};updateItemInList(AdminMetadata,'AdminPortal',_0x1b3a8b['Id']);}),alert(_0x1aaffc(0x116)),location[_0x1aaffc(0xfe)](!![]);});}function ChangeTitanNavigation(){var _0x31520a=a11_0x1d245e,_0x2d2449='?$select=Title,ParentId,Status,Postion,Menu,URL,DepartmentID,ID,Company/Id&$top=5000&$expand=Company';$[_0x31520a(0xe0)](getItemsWithQuery(_0x31520a(0xda),_0x2d2449,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x442741){var _0x134eee=_0x31520a;if(_0x442741['length']>0x0){var _0x3953b9='';_0x442741['forEach'](function(_0x2aa14f,_0x48f6e6){var _0x16c856=a11_0x535e;_0x3953b9='';if(_0x2aa14f['Title']==_0x16c856(0x100))_0x3953b9={'__metadata':{'type':_0x16c856(0x104)},'Status':![],'URL':_0x16c856(0xea)};else _0x2aa14f[_0x16c856(0x137)]==_0x16c856(0xe7)||_0x2aa14f[_0x16c856(0x137)]==_0x16c856(0x10b)||_0x2aa14f[_0x16c856(0x137)]==_0x16c856(0xf7)?_0x3953b9={'__metadata':{'type':'SP.Data.NavigationListItem'},'Status':![]}:_0x3953b9={'__metadata':{'type':'SP.Data.NavigationListItem'},'Status':!![]};updateItemInList(_0x3953b9,'Navigation',_0x2aa14f['ID']);});var _0x39b124=_0x134eee(0xfa);$[_0x134eee(0xe0)](getItemsWithQuery(_0x134eee(0x13b),_0x39b124,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x1c62d1){var _0x3f8704=_0x134eee;if(_0x1c62d1[_0x3f8704(0x10a)]>0x0){var _0x297de9='';_0x1c62d1['forEach'](function(_0x3faded,_0x46f333){var _0x4f084b=_0x3f8704;_0x297de9={'__metadata':{'type':_0x4f084b(0xeb)},'TemplateType':'Template1'},updateItemInList(_0x297de9,_0x4f084b(0x13b),_0x3faded['Id']);});}ChangeTitanAdminPortal();});}else return alert(_0x134eee(0xd7)),![];});}function ChangeTitanAdminPortal(){var _0x275ffa=a11_0x1d245e,_0x160bb5=_0x275ffa(0x105);$['when'](getItemsWithQuery(_0x275ffa(0xcc),_0x160bb5,_spPageContextInfo[_0x275ffa(0x12e)]))['done'](function(_0xb528ed){var _0x461bf2=_0x275ffa;_0xb528ed[_0x461bf2(0x10a)]>0x0&&_0xb528ed[_0x461bf2(0x126)](function(_0x20f71b,_0x4a3fae){var _0x3196f4=_0x461bf2;AdminMetadata='',_0x20f71b[_0x3196f4(0x137)]==_0x3196f4(0x11f)?AdminMetadata={'__metadata':{'type':_0x3196f4(0x124)},'Active':!![],'PageURL':'../Pages/ManagePermissions.aspx'}:AdminMetadata={'__metadata':{'type':_0x3196f4(0x124)},'Active':!![]},updateItemInList(AdminMetadata,_0x3196f4(0xcc),_0x20f71b['Id']);}),alert(_0x461bf2(0x116)),location[_0x461bf2(0xfe)](!![]);});}function ChangeBusProcNavigation(){var _0x3f4e7a=a11_0x1d245e,_0x3b6f8d=_0x3f4e7a(0xe9);$[_0x3f4e7a(0xe0)](getItemsWithQuery(_0x3f4e7a(0xda),_0x3b6f8d,_spPageContextInfo[_0x3f4e7a(0x12e)]))[_0x3f4e7a(0x112)](function(_0x581935){var _0x43b786=_0x3f4e7a;if(_0x581935[_0x43b786(0x10a)]>0x0){var _0xe92e0f='';_0x581935[_0x43b786(0x126)](function(_0x4da4ed,_0x216cc3){var _0x52a3da=_0x43b786;_0xe92e0f='';if(_0x4da4ed['Title']==_0x52a3da(0x106)||_0x4da4ed['Title']==_0x52a3da(0xdd)||_0x4da4ed[_0x52a3da(0x137)]==_0x52a3da(0x13c)||_0x4da4ed[_0x52a3da(0x137)]=='Approvals'||_0x4da4ed[_0x52a3da(0x137)]==_0x52a3da(0xc8)||_0x4da4ed[_0x52a3da(0x137)]==_0x52a3da(0xe4))_0xe92e0f={'__metadata':{'type':_0x52a3da(0x104)},'Status':!![]};else _0x4da4ed[_0x52a3da(0x137)]==_0x52a3da(0x100)?_0xe92e0f={'__metadata':{'type':_0x52a3da(0x104)},'Status':!![],'URL':_0x52a3da(0xd9)}:_0xe92e0f={'__metadata':{'type':_0x52a3da(0x104)},'Status':![]};updateItemInList(_0xe92e0f,_0x52a3da(0xda),_0x4da4ed['ID']);}),ChangeBusProcAdminPortal();}else return alert(_0x43b786(0xd7)),![];});}function ChangeBusProcAdminPortal(){var _0x2b3fac=a11_0x1d245e,_0x230a9d=_0x2b3fac(0x105);$[_0x2b3fac(0xe0)](getItemsWithQuery('AdminPortal',_0x230a9d,_spPageContextInfo[_0x2b3fac(0x12e)]))[_0x2b3fac(0x112)](function(_0x3da96d){var _0x2dcfa7=_0x2b3fac;_0x3da96d[_0x2dcfa7(0x10a)]>0x0&&_0x3da96d[_0x2dcfa7(0x126)](function(_0x264c12,_0x51e133){var _0x58c056=_0x2dcfa7;AdminMetadata='';if(_0x264c12[_0x58c056(0x137)]=='ManageCompanies'||_0x264c12[_0x58c056(0x137)]==_0x58c056(0xe5)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0xdf)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0x12d)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0xc5)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0x130)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0x11e)||_0x264c12[_0x58c056(0x137)]==_0x58c056(0x11a))AdminMetadata={'__metadata':{'type':_0x58c056(0x124)},'Active':!![]};else _0x264c12[_0x58c056(0x137)]=='Permissions'?AdminMetadata={'__metadata':{'type':_0x58c056(0x124)},'Active':!![],'PageURL':_0x58c056(0xee)}:AdminMetadata={'__metadata':{'type':'SP.Data.AdminPortalListItem'},'Active':![]};updateItemInList(AdminMetadata,_0x58c056(0xcc),_0x264c12['Id']);}),alert('Process\x20has\x20been\x20completed'),location['reload'](!![]);});}function updateItemInList(_0x5039cb,_0x233c02,_0x9d8ca4){var _0xe07cf1=a11_0x1d245e,_0x756887=$[_0xe07cf1(0xf3)](),_0x5511a6=_spPageContextInfo[_0xe07cf1(0x12e)]+_0xe07cf1(0xca)+_0x233c02+_0xe07cf1(0x107)+_0x9d8ca4+')';return $[_0xe07cf1(0x135)]({'url':_0x5511a6,'type':_0xe07cf1(0xf9),'async':![],'headers':{'accept':_0xe07cf1(0x136),'X-RequestDigest':$(_0xe07cf1(0x131))[_0xe07cf1(0x108)](),'content-Type':_0xe07cf1(0x136),'X-Http-Method':_0xe07cf1(0x115),'If-Match':'*'},'data':JSON[_0xe07cf1(0xde)](_0x5039cb),'success':function(_0x5bfe76){var _0x3cc535=_0xe07cf1;_0x756887[_0x3cc535(0xcb)](!![]);},'error':function(_0x3a84e7){var _0x56d82f=_0xe07cf1;waitingDialog[_0x56d82f(0x125)](),alert(JSON['stringify'](err)),_0x756887[_0x56d82f(0x13d)](_0x3a84e7);}}),_0x756887['promise']();}function getItemsWithQuery(_0x61fcd9,_0x43634c,_0x78b102){var _0x219b54=a11_0x1d245e,_0x577764=$[_0x219b54(0xf3)](),_0x33d628=_0x78b102+'/_api/web/lists/getbytitle(\x27'+_0x61fcd9+_0x219b54(0x12c)+_0x43634c;return $[_0x219b54(0x135)]({'url':_0x33d628,'type':'GET','async':![],'headers':{'accept':_0x219b54(0x136)},'success':function(_0x3703f3){var _0x893da8=_0x219b54;_0x577764['resolve'](_0x3703f3['d'][_0x893da8(0xd4)]);},'error':function(_0x483f51){var _0x23ce70=_0x219b54;_0x577764[_0x23ce70(0x13d)](_0x483f51);}}),_0x577764[_0x219b54(0xd2)]();}function a11_0x535e(_0xfaa7f7,_0x3af9d4){var _0xd60c5c=a11_0xd60c();return a11_0x535e=function(_0x535ec1,_0x2176d1){_0x535ec1=_0x535ec1-0xc5;var _0x48abf5=_0xd60c5c[_0x535ec1];return _0x48abf5;},a11_0x535e(_0xfaa7f7,_0x3af9d4);}function declinedLicense(){var _0x51ff98=a11_0x1d245e,_0x3a13da=$(_0x51ff98(0xd5))[_0x51ff98(0x108)](),_0x59e341;_0x59e341={'__metadata':{'type':_0x51ff98(0x129)},'Active':![]};var _0x8e80a5=$[_0x51ff98(0xf3)]();return $[_0x51ff98(0x135)]({'url':_spPageContextInfo[_0x51ff98(0x12e)]+'/_api/web/Lists/GetByTitle(\x27EnvironmentalSettings\x27)/Items(\x27'+_0x3a13da+'\x27)','type':'POST','async':![],'headers':{'accept':_0x51ff98(0x136),'X-RequestDigest':$(_0x51ff98(0x131))['val'](),'content-Type':_0x51ff98(0x136),'IF-MATCH':'*','X-HTTP-Method':_0x51ff98(0x139)},'data':JSON[_0x51ff98(0xde)](_0x59e341),'success':function(_0x357e8b){var _0x47a4ed=_0x51ff98;alert(_0x47a4ed(0xd1)),_0x8e80a5[_0x47a4ed(0xcb)](_0x357e8b);},'error':function(_0x3b0e42){var _0x251507=_0x51ff98;alert('Error\x20occured\x20while\x20updating\x20item\x20-\x20'+JSON[_0x251507(0xde)](_0x3b0e42)),_0x8e80a5['reject'](_0x3b0e42);}}),_0x8e80a5[_0x51ff98(0xd2)]();}
+$(document).ready(function () {
+    UserAuthorization();
+    GetClientName();
+    $("#closeLicenceManager").click(function () {
+        location.href = '../Pages/AdminPortal.aspx?WebAppId=' + Logged_CompanyId;
+    });
+    $("#LiceneceAgreement").prop("href", "../Pages/LicenceAgreement.aspx?WebAppId=" + Logged_CompanyId + "");
+    LicenseDetails();
+    $("#Accept").click(function () {
+        if ($(this).is(':checked')) {
+            document.getElementById("btnApply").disabled = false;
+        }
+        else {
+            document.getElementById("btnApply").disabled = true;
+        }
+    });
+    $("#rdoEnterprise").click(function () {
+        $("#rdoCustomize").prop("checked", false);
+        $(".chkAllCustom").prop("checked", false);
+    });
+    $("#rdoCustomize").click(function () {
+        $("#rdoEnterprise").prop("checked", false);
+    });
+    $("#btnSubModules").click(function () {
+        if (ModulesChangeValidate() == true) {
+            if ($("#rdoCustomize").prop("checked") == true) {
+                if ($("#chkDMSVersion").prop("checked") == true || $("#chkBusProcVersion").prop("checked") == true) {  //Set modules
+                    waitingDialog.show();
+                    setTimeout(function () {
+                        setModules();
+                    }, 100);
+                }
+            }
+            else {
+                waitingDialog.show();
+                setTimeout(function () {
+                    setModules();
+                }, 100);
+            }
+        }
+        else {
+            alert("Kindly select any modules first.");
+            return false;
+        }
+
+    });
+});
+
+//to check authorization of the page - Either SiteAdmin or TechAdmin
+function UserAuthorization() {
+    titanForWork.PageAuthorization("ManageCompany", Logged_CompanyId).done(function (currentUserRights, message) {
+        if (currentUserRights.length > 0) {
+            if ((currentUserRights[0].SiteAdmin == "SiteAdmin") || (currentUserRights[0].TechAdmin == "TechAdmin")) {
+                if (TitanLicenseFormat == 'Enterprise' || TitanLicenseFormat == null) {
+                    $("#rdoEnterprise").prop("checked", true);
+                }
+                else if (TitanLicenseFormat == 'DMS') {
+                    $("#rdoCustomize").prop("checked", true);
+                    $("#chkDMSVersion").prop("checked", true);
+                }
+            }
+            else {
+                alert(message);
+                window.location.href = _spPageContextInfo.webAbsoluteUrl;
+            }
+        }
+    });
+}
+
+//get total external Users
+function GetClientName() {
+    var ddlstatus = 1;
+    var Ownurl = "";
+    Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('ExternalUsers')/Items?$filter=Status eq 'Active'&$top=5000";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            $('#licenseActiveGuestUser').text(items.length);
+        },
+        error: function (msg) {
+            alert(msg.responseText);
+            deferred.reject(msg.responseText);
+        }
+    });
+}
+
+function LicenseDetails() {
+    licenseValidTill = $.datepicker.formatDate('dd M yy', licenseValidTill);
+    GetActiveUsersLicense().done(function (activeUsersLicense) {
+        $("#licenseActiveUsers").text(activeUsersLicense);
+    });
+
+    $("#totalUserLicenses").text(UsersLicenceRequired);
+    var Accept = document.getElementById('Accept');
+    if (activeCheck == true) {
+        Accept.checked = true;
+    }
+    else {
+        Accept.checked = false;
+        Accept.disabled = false;
+        document.getElementById("btnApply").disabled = false;
+    }
+    $("#licenseValidTill").text(licenseValidTill);
+    $("#adUser").text(UsersLicenceRequired);
+
+}
+
+function GetActiveUsersLicense() {
+    var deferred = $.Deferred();
+    var requestURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Employees')/Items?$select=ID,Email&$filter=PrimaryCompany eq 'Primary' and Status eq 'Active'&$top=5000";
+    $.ajax({
+        url: requestURL,
+        type: 'GET',
+        headers: { "accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var results = data.d.results;
+            if (results.length > 0) {
+                var newArray = [];
+                $.each(results, function (key, value) {
+                    var exists = false;
+                    $.each(newArray, function (k, val2) {
+                        if (value.Email == val2.Email) { exists = true };
+                    });
+                    if (exists == false && value.Email != "") { newArray.push(value); }
+                });
+                var activeUsersLicense = results.length;
+                deferred.resolve(activeUsersLicense);
+            }
+        },
+        error: function (msg) {
+            BootstrapDialog.alert(msg.responseText);
+            deferred.reject(msg.responseText);
+        }
+    })
+    return deferred;
+}
+
+//check validation before submitting modules
+function ModulesChangeValidate() {
+    if ($("#rdoCustomize").prop("checked") == true) {
+        if ($("#chkDMSVersion").prop("checked") == false) {
+        	if ($("#chkBusProcVersion").prop("checked") == false) {
+            	return false;
+        	}
+			else {
+            	return true;
+			}
+        }
+        else {
+            return true;
+        }
+    }
+    else {
+        return true;
+    }
+}
+
+//set module as Main 
+function setModules() {
+    if ($("#rdoEnterprise").prop("checked") == true) {
+        ChangeHomepage("Default.aspx");
+    }
+    else if ($("#rdoCustomize").prop("checked") == true) {
+        if ($("#chkDMSVersion").prop("checked") == true) {  //Set only DMS module
+            ChangeHomepage("Document.aspx");
+        }
+        else if ($("#chkBusProcVersion").prop("checked") == true) {
+            ChangeHomepage("approvals.aspx");
+        }
+    }
+}
+
+//Change Homepage as per selection
+function ChangeHomepage(PageName) {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/rootfolder",
+        type: "POST",
+        data: JSON.stringify({
+            '__metadata': {
+                'type': 'SP.Folder'
+            },
+            'WelcomePage': 'Pages/' + PageName
+        }),
+        headers:{
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "PATCH",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data, status, xhr) {
+            if ($("#rdoEnterprise").prop("checked") == true) {
+                changeTitanFormat('Enterprise');
+                ChangeTitanNavigation();
+            }
+            else if ($("#rdoCustomize").prop("checked") == true) {
+                if ($("#chkDMSVersion").prop("checked") == true) {  //Set only DMS module
+                    changeTitanFormat('DMS');
+                    ChangeDMSNavigation();
+                }
+                else if ($("#chkBusProcVersion").prop("checked") == true) {
+                    changeTitanFormat('Business Process');
+                    ChangeBusProcNavigation();
+                }
+            }
+
+        },
+        error: function (xhr, status, error) {
+            alert(xhr.responseText);
+            waitingDialog.hide();
+            return false;
+        }
+    });
+}
+
+//change Titan format as selected
+function changeTitanFormat(FormatName) {
+    var Query = "?$select=Title,Id,Formats&$top=5000&$filter=Title eq 'License'";
+    var EnvMetadata = '';
+    $.when(getItemsWithQuery("EnvironmentalSettings", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (value) {
+        if (value.length > 0) {
+            EnvMetadata = {
+                __metadata: { 'type': 'SP.Data.EnvironmentalSettingsListItem' },
+                Formats: FormatName
+            }
+            updateItemInList(EnvMetadata, "EnvironmentalSettings", value[0].Id);
+        }
+    });
+}
+
+//change Navigation as definition - DMS
+function ChangeDMSNavigation() {
+    var Query = "?$select=Title,ParentId,Status,Postion,Menu,URL,DepartmentID,ID,Company/Id&$top=5000&$expand=Company";
+    $.when(getItemsWithQuery("Navigation", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (NavArray) {
+        if (NavArray.length > 0) {
+            var NavMetadata = '';
+            NavArray.forEach(function (entry, index) {
+                NavMetadata = '';
+                if (entry.Title == "Org. Chart" || entry.Title == "Employee Directory" || entry.Title == "Admin Portal" || entry.Title == "My Documents" || entry.Title == "Company Documents" || entry.Title == "Clients" || entry.Title == "Guest Users" || entry.Title == "More" || entry.Title == "Office Locations") { //Change Status
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: true
+                    }
+                }
+                else if (entry.Title == "Approval Template") {
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: true,
+                        URL: "Pages/ApprovalFormSetup.aspx?RG9jdW1lbnRz"
+                    }
+                }
+                else { //Hide rest of them
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: false,
+                    }
+                }
+                updateItemInList(NavMetadata, "Navigation", entry.ID);
+            });
+
+            //update GuestPortal templates
+            var Query = "?$select=Title,Id,TemplateType&$top=5000&$filter=TemplateType ne 'Template3' ";
+            $.when(getItemsWithQuery("ExternalUsers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (ExtArray) {
+                if (ExtArray.length > 0) {
+                    var ExtMetadata = '';
+                    ExtArray.forEach(function (entry, index) {
+                        ExtMetadata = {
+                            __metadata: { 'type': 'SP.Data.ExternalUsersListItem' },
+                            TemplateType: 'Template3'
+                        }
+                        updateItemInList(ExtMetadata, "ExternalUsers", entry.Id);
+                    });
+                }
+                ChangeDMSAdminPortal();
+            });
+        }
+        else {
+            alert("Navigation is blank. Kindly contact administrator.");
+            return false
+        }
+    });
+}
+
+//change Admin portal for DMS
+function ChangeDMSAdminPortal() {
+    var Query = "?$select=Title,Active,PageURL,Id&$top=5000";
+    $.when(getItemsWithQuery("AdminPortal", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (AdminArray) {
+        if (AdminArray.length > 0) {
+            AdminArray.forEach(function (entry, index) {
+                AdminMetadata = '';
+                if (entry.Title == "ManageCompanies" || entry.Title == "ManageOfficeLocations" || entry.Title == "ManageDepartments" || entry.Title == "ManageEmployees" || entry.Title == "Manage Guest Users" || entry.Title == "Categories" || entry.Title == "Licence Manager" || entry.Title == "WebAnalytics") {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true
+                    }
+                }
+                else if (entry.Title == "Permissions") {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true,
+                        PageURL: "../Pages/ManagePermissionDMS.aspx"
+                    }
+                }
+                else {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: false
+                    }
+                }
+                updateItemInList(AdminMetadata, "AdminPortal", entry.Id);
+            });
+        }
+        alert("Process has been completed");
+        location.reload(true);
+    });
+}
+
+
+//change Navigation as definition - Enterprise
+function ChangeTitanNavigation() {
+    var Query = "?$select=Title,ParentId,Status,Postion,Menu,URL,DepartmentID,ID,Company/Id&$top=5000&$expand=Company";
+    $.when(getItemsWithQuery("Navigation", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (NavArray) {
+        if (NavArray.length > 0) {
+            var NavMetadata = '';
+            NavArray.forEach(function (entry, index) {
+                NavMetadata = '';
+                if (entry.Title == "Approval Template") {
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: false,
+                        URL: "Pages/ApprovalFormSetup.aspx?Qm90aA=="
+                    }
+                }
+                else if (entry.Title == "Clients" || entry.Title == "Guest Users" || entry.Title == "Department") {
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: false,
+                    }
+                }
+                else { //Hide rest of them
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: true,
+                    }
+                }
+                updateItemInList(NavMetadata, "Navigation", entry.ID);
+            });
+
+            //update GuestPortal templates
+            var Query = "?$select=Title,Id,TemplateType&$top=5000&$filter=TemplateType ne 'Template3' ";
+            $.when(getItemsWithQuery("ExternalUsers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (ExtArray) {
+                if (ExtArray.length > 0) {
+                    var ExtMetadata = '';
+                    ExtArray.forEach(function (entry, index) {
+                        ExtMetadata = {
+                            __metadata: { 'type': 'SP.Data.ExternalUsersListItem' },
+                            TemplateType: 'Template1'
+                        }
+                        updateItemInList(ExtMetadata, "ExternalUsers", entry.Id);
+                    });
+                }
+                ChangeTitanAdminPortal();
+            });
+        }
+        else {
+            alert("Navigation is blank. Kindly contact administrator.");
+            return false
+        }
+    });
+}
+
+//change Admin portal for Enterprise
+function ChangeTitanAdminPortal() {
+    var Query = "?$select=Title,Active,PageURL,Id&$top=5000";
+    $.when(getItemsWithQuery("AdminPortal", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (AdminArray) {
+        if (AdminArray.length > 0) {
+            AdminArray.forEach(function (entry, index) {
+                AdminMetadata = '';
+                if (entry.Title == "Permissions") {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true,
+                        PageURL: "../Pages/ManagePermissions.aspx"
+                    }
+                }
+                else {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true
+                    }
+                }
+                updateItemInList(AdminMetadata, "AdminPortal", entry.Id);
+            });
+        }
+        alert("Process has been completed");
+        location.reload(true);
+    });
+}
+
+
+//change the Navigaton for Business process
+function ChangeBusProcNavigation() {
+    var Query = "?$select=Title,ParentId,Status,Postion,Menu,URL,DepartmentID,ID,Company/Id&$top=5000&$expand=Company";
+    $.when(getItemsWithQuery("Navigation", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (NavArray) {
+        if (NavArray.length > 0) {
+            var NavMetadata = '';
+            NavArray.forEach(function (entry, index) {
+                NavMetadata = '';
+                if (entry.Title == "Org. Chart" || entry.Title == "Employee Directory" || entry.Title == "Admin Portal" || entry.Title == "Approvals" || entry.Title == "More" || entry.Title == "Office Locations") { //Change Status
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: true
+                    }
+                }
+                else if (entry.Title == "Approval Template") {
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: true,
+                        URL: "Pages/ApprovalFormSetup.aspx?UHJvY2Vzcw=="
+                    }
+                }
+                else { //Hide rest of them
+                    NavMetadata = {
+                        __metadata: { 'type': 'SP.Data.NavigationListItem' },
+                        Status: false,
+                    }
+                }
+                updateItemInList(NavMetadata, "Navigation", entry.ID);
+            });
+
+            ChangeBusProcAdminPortal();
+        }
+        else {
+            alert("Navigation is blank. Kindly contact administrator.");
+            return false
+        }
+    });
+}
+
+
+//change Admin portal for Business Process
+function ChangeBusProcAdminPortal() {
+    var Query = "?$select=Title,Active,PageURL,Id&$top=5000";
+    $.when(getItemsWithQuery("AdminPortal", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (AdminArray) {
+        if (AdminArray.length > 0) {
+            AdminArray.forEach(function (entry, index) {
+                AdminMetadata = '';
+                if (entry.Title == "ManageCompanies" || entry.Title == "ManageOfficeLocations" || entry.Title == "ManageDepartments" || entry.Title == "ManageEmployees" || entry.Title == "Manage Guest Users" || entry.Title == "Categories" || entry.Title == "Licence Manager" || entry.Title == "WebAnalytics") {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true
+                    }
+                }
+                else if (entry.Title == "Permissions") {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: true,
+                        PageURL: "../Pages/ManagePermissionDMS.aspx"
+                    }
+                }
+                else {
+                    AdminMetadata = {
+                        __metadata: { 'type': 'SP.Data.AdminPortalListItem' },
+                        Active: false
+                    }
+                }
+                updateItemInList(AdminMetadata, "AdminPortal", entry.Id);
+            });
+        }
+        alert("Process has been completed");
+        location.reload(true);
+    });
+}
+
+//update data when revoking permission
+function updateItemInList(Metadata, ListName, ItemId) {
+    var dfd = $.Deferred();
+    var oweburl = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/getByTitle('" + ListName + "')/Items(" + ItemId + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            waitingDialog.hide();
+            alert(JSON.stringify(err));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//get Items for SP list
+function getItemsWithQuery(ListName, Query, SiteUrl) {
+    var dfd = $.Deferred();
+    var siteurl = SiteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query;
+    $.ajax({
+        url: siteurl,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+            dfd.resolve(data.d.results);
+        },
+        error: function (error) {
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function declinedLicense() {
+    var DataId = $('#txtLicenseId').val();
+    var Metadata;
+    Metadata = {
+        __metadata: { 'type': 'SP.Data.EnvironmentalSettingsListItem' },
+        Active: false,
+    }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('EnvironmentalSettings')/Items('" + DataId + "')",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            alert('License Declined Successfully');
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert("Error occured while updating item - " + JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}

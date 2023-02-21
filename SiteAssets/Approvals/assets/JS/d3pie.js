@@ -1,1 +1,2203 @@
-function a4_0x3870(_0x5843c5,_0x371145){var _0x15b5ee=a4_0x15b5();return a4_0x3870=function(_0x3870d,_0x167d70){_0x3870d=_0x3870d-0x1ab;var _0x376055=_0x15b5ee[_0x3870d];return _0x376055;},a4_0x3870(_0x5843c5,_0x371145);}(function(_0x22dd48,_0xcc7056){var _0x2db2d3=a4_0x3870,_0x5b934e=_0x22dd48();while(!![]){try{var _0x29a6bb=-parseInt(_0x2db2d3(0x24c))/0x1+parseInt(_0x2db2d3(0x292))/0x2+-parseInt(_0x2db2d3(0x256))/0x3+-parseInt(_0x2db2d3(0x1fb))/0x4*(parseInt(_0x2db2d3(0x274))/0x5)+-parseInt(_0x2db2d3(0x2a1))/0x6*(-parseInt(_0x2db2d3(0x25d))/0x7)+-parseInt(_0x2db2d3(0x230))/0x8+-parseInt(_0x2db2d3(0x2cd))/0x9*(-parseInt(_0x2db2d3(0x2b8))/0xa);if(_0x29a6bb===_0xcc7056)break;else _0x5b934e['push'](_0x5b934e['shift']());}catch(_0x2205af){_0x5b934e['push'](_0x5b934e['shift']());}}}(a4_0x15b5,0x1a299),function(_0xf53470,_0x519329){var _0x4ac2b8=a4_0x3870;if(typeof define===_0x4ac2b8(0x2ed)&&define[_0x4ac2b8(0x2d8)])define([],_0x519329);else typeof exports===_0x4ac2b8(0x294)?module[_0x4ac2b8(0x217)]=_0x519329():_0xf53470[_0x4ac2b8(0x254)]=_0x519329(_0xf53470);}(this,function(){var _0x2ee82d=a4_0x3870,_0x5ef442=_0x2ee82d(0x254),_0xab766c=_0x2ee82d(0x2e2),_0x47ace9=0x0,_0x42fc5b={'header':{'title':{'text':'','color':_0x2ee82d(0x2e3),'fontSize':0x12,'font':_0x2ee82d(0x1c1)},'subtitle':{'text':'','color':_0x2ee82d(0x2a4),'fontSize':0xe,'font':_0x2ee82d(0x1c1)},'location':'top-center','titleSubtitlePadding':0x8},'footer':{'text':'','color':_0x2ee82d(0x2a4),'fontSize':0xe,'font':_0x2ee82d(0x1c1),'location':_0x2ee82d(0x2ae)},'size':{'canvasHeight':0x91,'canvasWidth':0x12c,'pieInnerRadius':'0%','pieOuterRadius':null},'data':{'sortOrder':_0x2ee82d(0x28e),'ignoreSmallSegments':{'enabled':![],'valueType':'percentage','value':null},'smallSegmentGrouping':{'enabled':![],'value':0x1,'valueType':'percentage','label':_0x2ee82d(0x251),'color':'#cccccc'},'content':[]},'labels':{'outer':{'format':'label','hideWhenLessThanPercentage':0x1,'pieDistance':0xd},'inner':{'format':_0x2ee82d(0x2b7),'hideWhenLessThanPercentage':0x1},'mainLabel':{'color':_0x2ee82d(0x2e3),'font':'arial','fontSize':0x0},'percentage':{'color':_0x2ee82d(0x21e),'font':'arial','fontSize':0x0,'decimalPlaces':0x0},'value':{'color':_0x2ee82d(0x266),'font':_0x2ee82d(0x1c1),'fontSize':0xa},'lines':{'enabled':![],'style':_0x2ee82d(0x2a0),'color':_0x2ee82d(0x1cd)},'truncation':{'enabled':![],'truncateLength':0x1e},'formatter':null},'effects':{'load':{'effect':'default','speed':0x3e8},'highlightSegmentOnMouseover':!![],'highlightLuminosity':-0.2},'tooltips':{'enabled':![],'type':'placeholder','string':'','placeholderParser':null,'styles':{'fadeInSpeed':0xfa,'backgroundColor':_0x2ee82d(0x29d),'backgroundOpacity':0.5,'color':_0x2ee82d(0x1b7),'borderRadius':0x2,'font':_0x2ee82d(0x1c1),'fontSize':0xa,'padding':0x4}},'misc':{'colors':{'background':null,'segments':[''],'segmentStroke':_0x2ee82d(0x28c)},'gradient':{'enabled':![],'percentage':0x5f,'color':_0x2ee82d(0x29d)},'canvasPadding':{'top':0x5,'right':0x5,'bottom':0x5,'left':0x5},'pieCenterOffset':{'x':0x0,'y':0x0},'cssPrefix':null}},_0x2ce209={'initialCheck':function(_0x4e89d1){var _0x7c3cd9=_0x2ee82d,_0x375306=_0x4e89d1['cssPrefix'],_0x291c8f=_0x4e89d1[_0x7c3cd9(0x220)],_0x1abfb4=_0x4e89d1['options'];if(!window['d3']||!window['d3'][_0x7c3cd9(0x20d)](_0x7c3cd9(0x264)))return console[_0x7c3cd9(0x29a)](_0x7c3cd9(0x20f)),![];if(!(_0x291c8f instanceof HTMLElement||_0x291c8f instanceof SVGElement))return console[_0x7c3cd9(0x29a)](_0x7c3cd9(0x1ed)),![];if(!/[a-zA-Z][a-zA-Z0-9_-]*$/[_0x7c3cd9(0x2e7)](_0x375306))return console[_0x7c3cd9(0x29a)](_0x7c3cd9(0x1e0)),![];if(!_0x318770[_0x7c3cd9(0x26d)](_0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)]))return console[_0x7c3cd9(0x29a)]('d3pie\x20error:\x20invalid\x20config\x20structure:\x20missing\x20data.content\x20property.'),![];if(_0x1abfb4[_0x7c3cd9(0x20b)]['content']['length']===0x0)return console[_0x7c3cd9(0x29a)](_0x7c3cd9(0x2a7)),![];var _0x4c3441=[];for(var _0x19f234=0x0;_0x19f234<_0x1abfb4['data'][_0x7c3cd9(0x2d9)]['length'];_0x19f234++){if(typeof _0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)][_0x19f234][_0x7c3cd9(0x250)]!==_0x7c3cd9(0x204)||isNaN(_0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)][_0x19f234][_0x7c3cd9(0x250)])){console[_0x7c3cd9(0x2b3)](_0x7c3cd9(0x2ee),_0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)][_0x19f234]);continue;}if(_0x1abfb4['data']['content'][_0x19f234][_0x7c3cd9(0x250)]<=0x0){console[_0x7c3cd9(0x2b3)]('not\x20valid\x20-\x20should\x20have\x20positive\x20value:\x20',_0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)][_0x19f234]);continue;}_0x4c3441[_0x7c3cd9(0x287)](_0x1abfb4[_0x7c3cd9(0x20b)][_0x7c3cd9(0x2d9)][_0x19f234]);}return _0x4e89d1[_0x7c3cd9(0x2c5)][_0x7c3cd9(0x20b)]['content']=_0x4c3441,!![];}},_0x318770={'addSVGSpace':function(_0xbb084a){var _0x10f42a=_0x2ee82d,_0x4ba5bf=_0xbb084a['element'],_0x2a85d2=_0xbb084a[_0x10f42a(0x2c5)][_0x10f42a(0x1c2)][_0x10f42a(0x2ca)],_0x367bf5=_0xbb084a[_0x10f42a(0x2c5)]['size'][_0x10f42a(0x1d7)],_0x31e839=_0xbb084a[_0x10f42a(0x2c5)][_0x10f42a(0x1e6)][_0x10f42a(0x2c0)]['background'],_0x50f5e4=d3['select'](_0x4ba5bf)['append']('svg:svg')[_0x10f42a(0x1ea)](_0x10f42a(0x1db),_0x2a85d2)[_0x10f42a(0x1ea)](_0x10f42a(0x203),_0x367bf5)['attr']('viewBox','150\x2028\x20100\x2093');return _0x31e839!==_0x10f42a(0x259)&&_0x50f5e4[_0x10f42a(0x1d1)](_0x10f42a(0x2ec),function(){return _0x31e839;}),_0x50f5e4;},'whenIdExists':function(_0x48df96,_0x5cfa8f){var _0x1f7a30=0x1,_0x17df12=0x3e8,_0x11d6ab=setInterval(function(){var _0x478775=a4_0x3870;document[_0x478775(0x1d8)](_0x48df96)&&(clearInterval(_0x11d6ab),_0x5cfa8f()),_0x1f7a30>_0x17df12&&clearInterval(_0x11d6ab),_0x1f7a30++;},0x1);},'whenElementsExist':function(_0x1dfa9d,_0x52ba90){var _0x1af700=0x1,_0x424fa8=0x3e8,_0x4127bf=setInterval(function(){var _0x1e0333=a4_0x3870,_0x3b492f=!![];for(var _0x4c09b2=0x0;_0x4c09b2<_0x1dfa9d[_0x1e0333(0x2f0)];_0x4c09b2++){if(!document[_0x1e0333(0x1d8)](_0x1dfa9d[_0x4c09b2])){_0x3b492f=![];break;}}_0x3b492f&&(clearInterval(_0x4127bf),_0x52ba90()),_0x1af700>_0x424fa8&&clearInterval(_0x4127bf),_0x1af700++;},0x1);},'shuffleArray':function(_0x1a64a4){var _0x13b3ff=_0x2ee82d,_0x1f8c52=_0x1a64a4[_0x13b3ff(0x2f0)],_0x26ab70,_0x1b791d;while(0x0!==_0x1f8c52){_0x1b791d=Math[_0x13b3ff(0x2ac)](Math['random']()*_0x1f8c52),_0x1f8c52-=0x1,_0x26ab70=_0x1a64a4[_0x1f8c52],_0x1a64a4[_0x1f8c52]=_0x1a64a4[_0x1b791d],_0x1a64a4[_0x1b791d]=_0x26ab70;}return _0x1a64a4;},'processObj':function(_0x118141,_0x785573,_0x4983d9){var _0xae2075=_0x2ee82d;if(typeof _0x785573==='string')return _0x318770['processObj'](_0x118141,_0x785573[_0xae2075(0x2bc)]('.'),_0x4983d9);else{if(_0x785573[_0xae2075(0x2f0)]===0x1&&_0x4983d9!==undefined)return _0x118141[_0x785573[0x0]]=_0x4983d9,_0x118141[_0x785573[0x0]];else return _0x785573[_0xae2075(0x2f0)]===0x0?_0x118141:_0x318770[_0xae2075(0x1d0)](_0x118141[_0x785573[0x0]],_0x785573[_0xae2075(0x247)](0x1),_0x4983d9);}},'getDimensions':function(_0x5ed1d2){var _0x1123ab=_0x2ee82d,_0x5a3add=document[_0x1123ab(0x1d8)](_0x5ed1d2),_0x2c7d03=0x0,_0x37ce6d=0x0;if(_0x5a3add){var _0x2358a2=_0x5a3add[_0x1123ab(0x1be)]();_0x2c7d03=_0x2358a2[_0x1123ab(0x1db)],_0x37ce6d=_0x2358a2[_0x1123ab(0x203)];}else console[_0x1123ab(0x2b3)](_0x1123ab(0x29c)+_0x5ed1d2+_0x1123ab(0x229));return{'w':_0x2c7d03,'h':_0x37ce6d};},'rectIntersect':function(_0x493a7b,_0x21bddd){var _0x3af049=_0x21bddd['x']>_0x493a7b['x']+_0x493a7b['w']||_0x21bddd['x']+_0x21bddd['w']<_0x493a7b['x']||_0x21bddd['y']+_0x21bddd['h']<_0x493a7b['y']||_0x21bddd['y']>_0x493a7b['y']+_0x493a7b['h'];return!_0x3af049;},'getColorShade':function(_0x66c0c3,_0x131d85){var _0x3eba6f=_0x2ee82d;_0x66c0c3=String(_0x66c0c3)[_0x3eba6f(0x1ec)](/[^0-9a-f]/gi,'');_0x66c0c3['length']<0x6&&(_0x66c0c3=_0x66c0c3[0x0]+_0x66c0c3[0x0]+_0x66c0c3[0x1]+_0x66c0c3[0x1]+_0x66c0c3[0x2]+_0x66c0c3[0x2]);_0x131d85=_0x131d85||0x0;var _0x17e56a='#';for(var _0x52cffb=0x0;_0x52cffb<0x3;_0x52cffb++){var _0x2946fe=parseInt(_0x66c0c3[_0x3eba6f(0x23b)](_0x52cffb*0x2,0x2),0x10);_0x2946fe=Math[_0x3eba6f(0x215)](Math[_0x3eba6f(0x20c)](Math[_0x3eba6f(0x1b6)](0x0,_0x2946fe+_0x2946fe*_0x131d85),0xff))['toString'](0x10),_0x17e56a+=('00'+_0x2946fe)[_0x3eba6f(0x23b)](_0x2946fe[_0x3eba6f(0x2f0)]);}return _0x17e56a;},'initSegmentColors':function(_0x465bcc){var _0x108b03=_0x2ee82d,_0x27b6c6=_0x465bcc[_0x108b03(0x2c5)][_0x108b03(0x20b)][_0x108b03(0x2d9)],_0x3d369a=_0x465bcc[_0x108b03(0x2c5)]['misc'][_0x108b03(0x2c0)]['segments'],_0xef33d2=[];for(var _0x42c8f1=0x0;_0x42c8f1<_0x27b6c6[_0x108b03(0x2f0)];_0x42c8f1++){_0x27b6c6[_0x42c8f1][_0x108b03(0x20d)](_0x108b03(0x23d))?_0xef33d2[_0x108b03(0x287)](_0x27b6c6[_0x42c8f1][_0x108b03(0x23d)]):_0xef33d2['push'](_0x3d369a[_0x42c8f1]);}return _0xef33d2;},'applySmallSegmentGrouping':function(_0x4387e6,_0x22f128){var _0x46a59e=_0x2ee82d,_0x11a507;_0x22f128['valueType']==='percentage'&&(_0x11a507=_0x2040b1[_0x46a59e(0x2bd)](_0x4387e6));var _0x3c0544=[],_0x3b7e6f=[],_0x5bba1a=0x0;for(var _0x473a29=0x0;_0x473a29<_0x4387e6[_0x46a59e(0x2f0)];_0x473a29++){if(_0x22f128['valueType']===_0x46a59e(0x2b7)){var _0xad52b5=_0x4387e6[_0x473a29][_0x46a59e(0x250)]/_0x11a507*0x64;if(_0xad52b5<=_0x22f128[_0x46a59e(0x250)]){_0x3b7e6f[_0x46a59e(0x287)](_0x4387e6[_0x473a29]),_0x5bba1a+=_0x4387e6[_0x473a29]['value'];continue;}_0x4387e6[_0x473a29][_0x46a59e(0x243)]=![],_0x3c0544['push'](_0x4387e6[_0x473a29]);}else{if(_0x4387e6[_0x473a29][_0x46a59e(0x250)]<=_0x22f128[_0x46a59e(0x250)]){_0x3b7e6f[_0x46a59e(0x287)](_0x4387e6[_0x473a29]),_0x5bba1a+=_0x4387e6[_0x473a29][_0x46a59e(0x250)];continue;}_0x4387e6[_0x473a29][_0x46a59e(0x243)]=![],_0x3c0544[_0x46a59e(0x287)](_0x4387e6[_0x473a29]);}}return _0x3b7e6f[_0x46a59e(0x2f0)]&&_0x3c0544[_0x46a59e(0x287)]({'color':_0x22f128[_0x46a59e(0x23d)],'label':_0x22f128[_0x46a59e(0x1fc)],'value':_0x5bba1a,'isGrouped':!![],'groupedData':_0x3b7e6f}),_0x3c0544;},'showPoint':function(_0x1832b8,_0x53bcf5,_0x312906){var _0x547301=_0x2ee82d;_0x1832b8[_0x547301(0x27f)](_0x547301(0x1ce))['attr']('cx',_0x53bcf5)['attr']('cy',_0x312906)['attr']('r',0x2)['style'](_0x547301(0x235),_0x547301(0x245));},'isFunction':function(_0x15ce9d){var _0x36df9f=_0x2ee82d,_0xf14238={};return _0x15ce9d&&_0xf14238[_0x36df9f(0x1c5)][_0x36df9f(0x29e)](_0x15ce9d)===_0x36df9f(0x239);},'isArray':function(_0x2503f5){var _0xe86c8e=_0x2ee82d;return Object['prototype'][_0xe86c8e(0x1c5)]['call'](_0x2503f5)==='[object\x20Array]';}},_0xff9633=function(){var _0x5c3201=_0x2ee82d,_0x3a4d72,_0x197fa9,_0x30ec41,_0x11145d,_0x28698c,_0x57b819,_0x2129fe=arguments[0x0]||{},_0x242b1b=0x1,_0x1003a2=arguments[_0x5c3201(0x2f0)],_0xee52b0=![],_0x332a58=Object['prototype']['toString'],_0xb0b416=Object[_0x5c3201(0x2dd)]['hasOwnProperty'],_0xf9e3e8={'[object\x20Boolean]':'boolean','[object\x20Number]':_0x5c3201(0x204),'[object\x20String]':_0x5c3201(0x1b9),'[object\x20Function]':_0x5c3201(0x2ed),'[object\x20Array]':_0x5c3201(0x2bf),'[object\x20Date]':_0x5c3201(0x22a),'[object\x20RegExp]':_0x5c3201(0x27b),'[object\x20Object]':'object'},_0x4f0079={'isFunction':function(_0x17f4be){var _0x40b0d4=_0x5c3201;return _0x4f0079[_0x40b0d4(0x2b5)](_0x17f4be)==='function';},'isArray':Array[_0x5c3201(0x26d)]||function(_0x1d10ba){var _0x16eb5b=_0x5c3201;return _0x4f0079[_0x16eb5b(0x2b5)](_0x1d10ba)===_0x16eb5b(0x2bf);},'isWindow':function(_0x1e7e1d){var _0x52099f=_0x5c3201;return _0x1e7e1d!==null&&_0x1e7e1d===_0x1e7e1d[_0x52099f(0x2e6)];},'isNumeric':function(_0x2b067a){return!isNaN(parseFloat(_0x2b067a))&&isFinite(_0x2b067a);},'type':function(_0x2d16e3){var _0x26a95d=_0x5c3201;return _0x2d16e3===null?String(_0x2d16e3):_0xf9e3e8[_0x332a58[_0x26a95d(0x29e)](_0x2d16e3)]||_0x26a95d(0x294);},'isPlainObject':function(_0x5bc1af){var _0x15caea=_0x5c3201;if(!_0x5bc1af||_0x4f0079[_0x15caea(0x2b5)](_0x5bc1af)!=='object'||_0x5bc1af[_0x15caea(0x2b4)])return![];try{if(_0x5bc1af[_0x15caea(0x25b)]&&!_0xb0b416[_0x15caea(0x29e)](_0x5bc1af,_0x15caea(0x25b))&&!_0xb0b416[_0x15caea(0x29e)](_0x5bc1af[_0x15caea(0x25b)][_0x15caea(0x2dd)],'isPrototypeOf'))return![];}catch(_0x3d51e5){return![];}var _0x3ced91;for(_0x3ced91 in _0x5bc1af){}return _0x3ced91===undefined||_0xb0b416[_0x15caea(0x29e)](_0x5bc1af,_0x3ced91);}};typeof _0x2129fe==='boolean'&&(_0xee52b0=_0x2129fe,_0x2129fe=arguments[0x1]||{},_0x242b1b=0x2);typeof _0x2129fe!==_0x5c3201(0x294)&&!_0x4f0079['isFunction'](_0x2129fe)&&(_0x2129fe={});_0x1003a2===_0x242b1b&&(_0x2129fe=this,--_0x242b1b);for(_0x242b1b;_0x242b1b<_0x1003a2;_0x242b1b++){if((_0x3a4d72=arguments[_0x242b1b])!==null)for(_0x197fa9 in _0x3a4d72){_0x30ec41=_0x2129fe[_0x197fa9],_0x11145d=_0x3a4d72[_0x197fa9];if(_0x2129fe===_0x11145d)continue;if(_0xee52b0&&_0x11145d&&(_0x4f0079[_0x5c3201(0x208)](_0x11145d)||(_0x28698c=_0x4f0079['isArray'](_0x11145d))))_0x28698c?(_0x28698c=![],_0x57b819=_0x30ec41&&_0x4f0079[_0x5c3201(0x26d)](_0x30ec41)?_0x30ec41:[]):_0x57b819=_0x30ec41&&_0x4f0079[_0x5c3201(0x208)](_0x30ec41)?_0x30ec41:{},_0x2129fe[_0x197fa9]=_0xff9633(_0xee52b0,_0x57b819,_0x11145d);else _0x11145d!==undefined&&(_0x2129fe[_0x197fa9]=_0x11145d);}}return _0x2129fe;},_0x2040b1={'toRadians':function(_0x485383){return _0x485383*(Math['PI']/0xb4);},'toDegrees':function(_0x360584){return _0x360584*(0xb4/Math['PI']);},'computePieRadius':function(_0x4c9d15){var _0x1b6e46=_0x2ee82d,_0x2a1866=_0x4c9d15[_0x1b6e46(0x2c5)][_0x1b6e46(0x1c2)],_0x4533d3=_0x4c9d15[_0x1b6e46(0x2c5)]['misc'][_0x1b6e46(0x2aa)],_0x13be38=_0x2a1866[_0x1b6e46(0x2ca)]-_0x4533d3[_0x1b6e46(0x2ae)]-_0x4533d3[_0x1b6e46(0x2d0)],_0x8fe151=_0x2a1866[_0x1b6e46(0x1d7)]-_0x4533d3[_0x1b6e46(0x2f2)]-_0x4533d3[_0x1b6e46(0x1dc)];_0x4c9d15['options']['header']['location']!==_0x1b6e46(0x2c1)&&(_0x8fe151-=_0x4c9d15[_0x1b6e46(0x1f3)][_0x1b6e46(0x1e2)]);_0x4c9d15[_0x1b6e46(0x1f3)][_0x1b6e46(0x27d)]['exists']&&(_0x8fe151-=_0x4c9d15[_0x1b6e46(0x1f3)][_0x1b6e46(0x27d)]['h']);_0x8fe151=_0x8fe151<0x0?0x0:_0x8fe151;var _0x3fac98=(_0x13be38<_0x8fe151?_0x13be38:_0x8fe151)/0x3,_0x493ac3,_0xcc81ae;if(_0x2a1866[_0x1b6e46(0x28b)]!==null){if(/%/[_0x1b6e46(0x2e7)](_0x2a1866[_0x1b6e46(0x28b)])){_0xcc81ae=parseInt(_0x2a1866[_0x1b6e46(0x28b)][_0x1b6e46(0x1ec)](/[\D]/,''),0xa),_0xcc81ae=_0xcc81ae>0x63?0x63:_0xcc81ae,_0xcc81ae=_0xcc81ae<0x0?0x0:_0xcc81ae;var _0x30d096=_0x13be38<_0x8fe151?_0x13be38:_0x8fe151;if(_0x4c9d15[_0x1b6e46(0x2c5)][_0x1b6e46(0x231)]['outer'][_0x1b6e46(0x25f)]!=='none'){var _0x1ed523=parseInt(_0x4c9d15[_0x1b6e46(0x2c5)][_0x1b6e46(0x231)][_0x1b6e46(0x1f4)][_0x1b6e46(0x2e5)],0xa)*0x2;_0x30d096-_0x1ed523>0x0&&(_0x30d096-=_0x1ed523);}_0x3fac98=Math[_0x1b6e46(0x2ac)](_0x30d096/0x64*_0xcc81ae)/0x2;}else _0x3fac98=parseInt(_0x2a1866[_0x1b6e46(0x28b)],0xa);}/%/[_0x1b6e46(0x2e7)](_0x2a1866[_0x1b6e46(0x24b)])?(_0xcc81ae=parseInt(_0x2a1866[_0x1b6e46(0x24b)][_0x1b6e46(0x1ec)](/[\D]/,''),0xa),_0xcc81ae=_0xcc81ae>0x63?0x63:_0xcc81ae,_0xcc81ae=_0xcc81ae<0x0?0x0:_0xcc81ae,_0x493ac3=Math['floor'](_0x3fac98/0x64*_0xcc81ae)):_0x493ac3=parseInt(_0x2a1866[_0x1b6e46(0x24b)],0xa),_0x4c9d15[_0x1b6e46(0x1ff)]=_0x493ac3,_0x4c9d15['outerRadius']=_0x3fac98;},'getTotalPieSize':function(_0x11e2f1){var _0x511369=_0x2ee82d,_0x5e034c=0x0;for(var _0x16e4be=0x0;_0x16e4be<_0x11e2f1['length'];_0x16e4be++){_0x5e034c+=_0x11e2f1[_0x16e4be][_0x511369(0x250)];}return _0x5e034c;},'sortPieData':function(_0x234530){var _0x2d6681=_0x2ee82d,_0x5e2e95=_0x234530['options'][_0x2d6681(0x20b)][_0x2d6681(0x2d9)],_0x6983ea=_0x234530[_0x2d6681(0x2c5)][_0x2d6681(0x20b)][_0x2d6681(0x260)];switch(_0x6983ea){case _0x2d6681(0x28e):break;case _0x2d6681(0x263):_0x5e2e95=_0x318770[_0x2d6681(0x282)](_0x5e2e95);break;case _0x2d6681(0x25c):_0x5e2e95['sort'](function(_0x245e3b,_0x2fbf56){var _0x17523e=_0x2d6681;return _0x245e3b[_0x17523e(0x250)]<_0x2fbf56[_0x17523e(0x250)]?-0x1:0x1;});break;case'value-desc':_0x5e2e95[_0x2d6681(0x1ca)](function(_0x44890e,_0xbd9b93){var _0x4660bd=_0x2d6681;return _0x44890e[_0x4660bd(0x250)]<_0xbd9b93['value']?0x1:-0x1;});break;case _0x2d6681(0x2cc):_0x5e2e95[_0x2d6681(0x1ca)](function(_0x569bb8,_0x3eb912){var _0xaf3f99=_0x2d6681;return _0x569bb8[_0xaf3f99(0x1fc)]['toLowerCase']()>_0x3eb912[_0xaf3f99(0x1fc)]['toLowerCase']()?0x1:-0x1;});break;case _0x2d6681(0x21f):_0x5e2e95[_0x2d6681(0x1ca)](function(_0x3e429a,_0x24f5f9){var _0xbc14e4=_0x2d6681;return _0x3e429a[_0xbc14e4(0x1fc)][_0xbc14e4(0x1e3)]()<_0x24f5f9[_0xbc14e4(0x1fc)][_0xbc14e4(0x1e3)]()?0x1:-0x1;});break;}return _0x5e2e95;},'getPieTranslateCenter':function(_0x24f104){var _0x2ae325=_0x2ee82d;return _0x2ae325(0x1d9)+_0x24f104['x']+','+_0x24f104['y']+')';},'calculatePieCenter':function(_0x3e0080){var _0x53cb0e=_0x2ee82d,_0x3fad22=_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x1e6)]['pieCenterOffset'],_0x2a556f=_0x3e0080[_0x53cb0e(0x1f3)][_0x53cb0e(0x27e)][_0x53cb0e(0x202)]&&_0x3e0080['options'][_0x53cb0e(0x200)]['location']!==_0x53cb0e(0x2c1),_0x176e9c=_0x3e0080['textComponents'][_0x53cb0e(0x212)]['exists']&&_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x200)][_0x53cb0e(0x1f9)]!==_0x53cb0e(0x2c1),_0x3f8561=_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x1e6)][_0x53cb0e(0x2aa)][_0x53cb0e(0x2f2)];if(_0x2a556f&&_0x176e9c)_0x3f8561+=_0x3e0080[_0x53cb0e(0x1f3)][_0x53cb0e(0x27e)]['h']+_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x200)][_0x53cb0e(0x1dd)]+_0x3e0080['textComponents']['subtitle']['h'];else{if(_0x2a556f)_0x3f8561+=_0x3e0080['textComponents']['title']['h'];else _0x176e9c&&(_0x3f8561+=_0x3e0080[_0x53cb0e(0x1f3)][_0x53cb0e(0x212)]['h']);}var _0x31eb1d=0x0;_0x3e0080[_0x53cb0e(0x1f3)][_0x53cb0e(0x27d)][_0x53cb0e(0x202)]&&(_0x31eb1d=_0x3e0080[_0x53cb0e(0x1f3)][_0x53cb0e(0x27d)]['h']+_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x1e6)]['canvasPadding'][_0x53cb0e(0x1dc)]);var _0x2f2d2b=(_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x1c2)][_0x53cb0e(0x2ca)]-_0x3e0080['options'][_0x53cb0e(0x1e6)][_0x53cb0e(0x2aa)]['left']-_0x3e0080[_0x53cb0e(0x2c5)][_0x53cb0e(0x1e6)][_0x53cb0e(0x2aa)][_0x53cb0e(0x2d0)])/0x2+_0x3e0080['options'][_0x53cb0e(0x1e6)][_0x53cb0e(0x2aa)][_0x53cb0e(0x2ae)],_0x5cb9ae=(_0x3e0080[_0x53cb0e(0x2c5)]['size']['canvasHeight']-_0x31eb1d-_0x3f8561)/0x2+_0x3f8561;_0x2f2d2b+=_0x3fad22['x'],_0x5cb9ae+=_0x3fad22['y'],_0x3e0080[_0x53cb0e(0x218)]={'x':_0x2f2d2b,'y':_0x5cb9ae};},'rotate':function(_0x1fc1b7,_0x33b3c0,_0x6b83dd,_0x1c7938,_0x52fd95){var _0x2edceb=_0x2ee82d;_0x52fd95=_0x52fd95*Math['PI']/0xb4;var _0x432d40=Math[_0x2edceb(0x2ef)],_0x14d965=Math[_0x2edceb(0x2e0)],_0x2a80e1=(_0x1fc1b7-_0x6b83dd)*_0x432d40(_0x52fd95)-(_0x33b3c0-_0x1c7938)*_0x14d965(_0x52fd95)+_0x6b83dd,_0x1b40c8=(_0x1fc1b7-_0x6b83dd)*_0x14d965(_0x52fd95)+(_0x33b3c0-_0x1c7938)*_0x432d40(_0x52fd95)+_0x1c7938;return{'x':_0x2a80e1,'y':_0x1b40c8};},'translate':function(_0x54459c,_0x24fa9e,_0x49025c,_0x2f697c){var _0x47d475=_0x2ee82d,_0x4ebf91=_0x2040b1[_0x47d475(0x1b5)](_0x2f697c);return{'x':_0x54459c+_0x49025c*Math[_0x47d475(0x2e0)](_0x4ebf91),'y':_0x24fa9e-_0x49025c*Math[_0x47d475(0x2ef)](_0x4ebf91)};},'pointIsInArc':function(_0x54655e,_0x713ab8,_0x20e9a9){var _0x51d8f8=_0x2ee82d,_0x1a3011=_0x20e9a9[_0x51d8f8(0x1ff)]()(_0x713ab8),_0x4d303d=_0x20e9a9[_0x51d8f8(0x269)]()(_0x713ab8),_0x1c2b86=_0x20e9a9[_0x51d8f8(0x2c9)]()(_0x713ab8),_0x46602e=_0x20e9a9['endAngle']()(_0x713ab8),_0x44f12c=_0x54655e['x']*_0x54655e['x']+_0x54655e['y']*_0x54655e['y'],_0x403fb1=Math[_0x51d8f8(0x291)](_0x54655e['x'],-_0x54655e['y']);return _0x403fb1=_0x403fb1<0x0?_0x403fb1+Math['PI']*0x2:_0x403fb1,_0x1a3011*_0x1a3011<=_0x44f12c&&_0x44f12c<=_0x4d303d*_0x4d303d&&_0x1c2b86<=_0x403fb1&&_0x403fb1<=_0x46602e;}},_0x236f56={'add':function(_0x41b8c3,_0x5075ed,_0x4bb98a){var _0x28375c=_0x2ee82d,_0x4227e2=_0x236f56[_0x28375c(0x1f0)](_0x4bb98a),_0xc0ecdb=_0x41b8c3[_0x28375c(0x2c5)][_0x28375c(0x231)],_0x2d8ee2=_0x41b8c3[_0x28375c(0x2cb)]['insert']('g','.'+_0x41b8c3[_0x28375c(0x2a3)]+_0x28375c(0x2cf)+_0x5075ed)[_0x28375c(0x1ea)](_0x28375c(0x2ce),_0x41b8c3['cssPrefix']+_0x28375c(0x2cf)+_0x5075ed),_0x1f10bd=_0x2d8ee2[_0x28375c(0x216)]('.'+_0x41b8c3['cssPrefix']+'labelGroup-'+_0x5075ed)['data'](_0x41b8c3['options'][_0x28375c(0x20b)][_0x28375c(0x2d9)])[_0x28375c(0x270)]()[_0x28375c(0x27f)]('g')['attr']('id',function(_0x568b13,_0x4603e8){var _0x520b3b=_0x28375c;return _0x41b8c3[_0x520b3b(0x2a3)]+_0x520b3b(0x271)+_0x4603e8+'-'+_0x5075ed;})[_0x28375c(0x1ea)](_0x28375c(0x1f7),function(_0x220ca3,_0x4204c1){return _0x4204c1;})[_0x28375c(0x1ea)]('class',_0x41b8c3[_0x28375c(0x2a3)]+_0x28375c(0x223)+_0x5075ed)[_0x28375c(0x1d1)](_0x28375c(0x2d7),0x0),_0x31bfec={'section':_0x5075ed,'sectionDisplayType':_0x4bb98a};_0x4227e2[_0x28375c(0x29b)]&&_0x1f10bd[_0x28375c(0x27f)](_0x28375c(0x201))[_0x28375c(0x1ea)]('id',function(_0x26ff55,_0x4b769c){var _0x5dfa94=_0x28375c;return _0x41b8c3[_0x5dfa94(0x2a3)]+'segmentMainLabel'+_0x4b769c+'-'+_0x5075ed;})[_0x28375c(0x1ea)]('class',_0x41b8c3[_0x28375c(0x2a3)]+'segmentMainLabel-'+_0x5075ed)[_0x28375c(0x201)](function(_0xaefa7c,_0x521810){var _0x54c169=_0x28375c,_0x4ba9a2=_0xaefa7c[_0x54c169(0x1fc)];if(_0xc0ecdb[_0x54c169(0x1bc)])_0x31bfec['index']=_0x521810,_0x31bfec['part']='mainLabel',_0x31bfec[_0x54c169(0x250)]=_0xaefa7c[_0x54c169(0x250)],_0x31bfec['label']=_0x4ba9a2,_0x4ba9a2=_0xc0ecdb[_0x54c169(0x1bc)](_0x31bfec);else _0xc0ecdb['truncation'][_0x54c169(0x221)]&&_0xaefa7c[_0x54c169(0x1fc)][_0x54c169(0x2f0)]>_0xc0ecdb[_0x54c169(0x1f6)]['truncateLength']&&(_0x4ba9a2=_0xaefa7c[_0x54c169(0x1fc)]['substring'](0x0,_0xc0ecdb[_0x54c169(0x1f6)]['truncateLength'])+_0x54c169(0x1e4));return _0x4ba9a2;})[_0x28375c(0x1d1)](_0x28375c(0x26e),_0xc0ecdb[_0x28375c(0x29b)][_0x28375c(0x1ef)]+'px')[_0x28375c(0x1d1)](_0x28375c(0x283),_0xc0ecdb[_0x28375c(0x29b)][_0x28375c(0x2c3)])['style']('fill',_0xc0ecdb[_0x28375c(0x29b)]['color']),_0x4227e2['percentage']&&_0x1f10bd[_0x28375c(0x27f)](_0x28375c(0x201))['attr']('id',function(_0x182ab0,_0x37e148){var _0x443b34=_0x28375c;return _0x41b8c3[_0x443b34(0x2a3)]+_0x443b34(0x23a)+_0x37e148+'-'+_0x5075ed;})[_0x28375c(0x1ea)](_0x28375c(0x2ce),_0x41b8c3['cssPrefix']+_0x28375c(0x1ee)+_0x5075ed)[_0x28375c(0x201)](function(_0x4033e8,_0x24b381){var _0x265d79=_0x28375c,_0x1f705e=_0x4033e8[_0x265d79(0x2b7)];return _0xc0ecdb[_0x265d79(0x1bc)]?(_0x31bfec[_0x265d79(0x1c0)]=_0x24b381,_0x31bfec[_0x265d79(0x299)]=_0x265d79(0x2b7),_0x31bfec[_0x265d79(0x250)]=_0x4033e8[_0x265d79(0x250)],_0x31bfec['label']=_0x4033e8[_0x265d79(0x2b7)],_0x1f705e=_0xc0ecdb[_0x265d79(0x1bc)](_0x31bfec)):_0x1f705e+='%',_0x1f705e;})[_0x28375c(0x1d1)](_0x28375c(0x26e),_0xc0ecdb[_0x28375c(0x2b7)][_0x28375c(0x1ef)]+'px')['style'](_0x28375c(0x283),_0xc0ecdb[_0x28375c(0x2b7)][_0x28375c(0x2c3)])['style'](_0x28375c(0x235),_0xc0ecdb[_0x28375c(0x2b7)]['color']),_0x4227e2[_0x28375c(0x250)]&&_0x1f10bd[_0x28375c(0x27f)]('text')[_0x28375c(0x1ea)]('id',function(_0x1a52d8,_0x3059b5){var _0x1d5193=_0x28375c;return _0x41b8c3[_0x1d5193(0x2a3)]+_0x1d5193(0x2ab)+_0x3059b5+'-'+_0x5075ed;})[_0x28375c(0x1ea)](_0x28375c(0x2ce),_0x41b8c3[_0x28375c(0x2a3)]+_0x28375c(0x1b0)+_0x5075ed)['text'](function(_0x1bdd9e,_0x2f8da3){var _0x274719=_0x28375c;return _0x31bfec[_0x274719(0x1c0)]=_0x2f8da3,_0x31bfec[_0x274719(0x299)]=_0x274719(0x250),_0x31bfec[_0x274719(0x250)]=_0x1bdd9e[_0x274719(0x250)],_0x31bfec[_0x274719(0x1fc)]=_0x1bdd9e[_0x274719(0x250)],_0xc0ecdb[_0x274719(0x1bc)]?_0xc0ecdb[_0x274719(0x1bc)](_0x31bfec,_0x1bdd9e[_0x274719(0x250)]):_0x1bdd9e[_0x274719(0x250)];})['style'](_0x28375c(0x26e),_0xc0ecdb[_0x28375c(0x250)][_0x28375c(0x1ef)]+'px')[_0x28375c(0x1d1)](_0x28375c(0x283),_0xc0ecdb[_0x28375c(0x250)][_0x28375c(0x2c3)])[_0x28375c(0x1d1)]('fill',_0xc0ecdb['value']['color']);},'positionLabelElements':function(_0x2124bf,_0x6c5a89,_0x3552de){var _0x3c6f45=_0x2ee82d;_0x236f56[_0x3c6f45(0x1da)+_0x6c5a89]=[];var _0x2f33ad=d3[_0x3c6f45(0x216)]('.'+_0x2124bf['cssPrefix']+_0x3c6f45(0x223)+_0x6c5a89);_0x2f33ad['each'](function(_0xc62eea,_0x47cd9e){var _0x444880=_0x3c6f45,_0xa164e8=d3[_0x444880(0x298)](this)['selectAll']('.'+_0x2124bf['cssPrefix']+_0x444880(0x262)+_0x6c5a89),_0x374dfd=d3['select'](this)[_0x444880(0x216)]('.'+_0x2124bf['cssPrefix']+_0x444880(0x1ee)+_0x6c5a89),_0xa5ac46=d3['select'](this)[_0x444880(0x216)]('.'+_0x2124bf['cssPrefix']+_0x444880(0x1b0)+_0x6c5a89);_0x236f56[_0x444880(0x1da)+_0x6c5a89][_0x444880(0x287)]({'mainLabel':_0xa164e8[_0x444880(0x26c)]()!==null?_0xa164e8[_0x444880(0x26c)]()[_0x444880(0x1be)]():null,'percentage':_0x374dfd[_0x444880(0x26c)]()!==null?_0x374dfd['node']()[_0x444880(0x1be)]():null,'value':_0xa5ac46['node']()!==null?_0xa5ac46['node']()['getBBox']():null});});var _0x36632b=0x5,_0xf0a5f3=_0x236f56[_0x3c6f45(0x1da)+_0x6c5a89];switch(_0x3552de){case'label-value1':d3['selectAll']('.'+_0x2124bf['cssPrefix']+_0x3c6f45(0x1b0)+_0x6c5a89)[_0x3c6f45(0x1ea)]('dx',function(_0x53ec7a,_0x18feb0){var _0x3273bb=_0x3c6f45;return _0xf0a5f3[_0x18feb0][_0x3273bb(0x29b)][_0x3273bb(0x1db)]+_0x36632b;});break;case _0x3c6f45(0x1fd):d3[_0x3c6f45(0x216)]('.'+_0x2124bf[_0x3c6f45(0x2a3)]+_0x3c6f45(0x1b0)+_0x6c5a89)[_0x3c6f45(0x1ea)]('dy',function(_0x94cbf4,_0xfad8d7){var _0x2d10f3=_0x3c6f45;return _0xf0a5f3[_0xfad8d7][_0x2d10f3(0x29b)][_0x2d10f3(0x203)];});break;case _0x3c6f45(0x26a):d3[_0x3c6f45(0x216)]('.'+_0x2124bf[_0x3c6f45(0x2a3)]+_0x3c6f45(0x1ee)+_0x6c5a89)['attr']('dx',function(_0x58e8cf,_0x28aa3f){var _0xaa8a86=_0x3c6f45;return _0xf0a5f3[_0x28aa3f][_0xaa8a86(0x29b)][_0xaa8a86(0x1db)]+_0x36632b;});break;case _0x3c6f45(0x1cb):d3[_0x3c6f45(0x216)]('.'+_0x2124bf[_0x3c6f45(0x2a3)]+_0x3c6f45(0x1ee)+_0x6c5a89)['attr']('dx',function(_0x3831c3,_0x5870aa){var _0x36f512=_0x3c6f45;return _0xf0a5f3[_0x5870aa]['mainLabel'][_0x36f512(0x1db)]/0x2-_0xf0a5f3[_0x5870aa][_0x36f512(0x2b7)][_0x36f512(0x1db)]/0x2;})[_0x3c6f45(0x1ea)]('dy',function(_0xe4b9dd,_0x3eef6c){var _0x408602=_0x3c6f45;return _0xf0a5f3[_0x3eef6c][_0x408602(0x29b)][_0x408602(0x203)];});break;}},'computeLabelLinePositions':function(_0xa2d18a){var _0x4c19a0=_0x2ee82d;_0xa2d18a[_0x4c19a0(0x1fa)]=[],d3[_0x4c19a0(0x216)]('.'+_0xa2d18a[_0x4c19a0(0x2a3)]+_0x4c19a0(0x1c6))[_0x4c19a0(0x268)](function(_0x2418dd,_0x322be6){var _0x37c181=_0x4c19a0;return _0x236f56[_0x37c181(0x242)](_0xa2d18a,_0x322be6);});},'computeLinePosition':function(_0x8995cf,_0x4dba48){var _0x452838=_0x2ee82d,_0xa861d0=_0x276077[_0x452838(0x1d2)](_0x4dba48,_0x8995cf[_0x452838(0x2c5)]['data'][_0x452838(0x2d9)],_0x8995cf[_0x452838(0x284)],{'midpoint':!![]}),_0x154116=_0x2040b1['rotate'](_0x8995cf[_0x452838(0x218)]['x'],_0x8995cf[_0x452838(0x218)]['y']-_0x8995cf['outerRadius'],_0x8995cf[_0x452838(0x218)]['x'],_0x8995cf[_0x452838(0x218)]['y'],_0xa861d0),_0x39655b=_0x8995cf['outerLabelGroupData'][_0x4dba48]['h']/0x5,_0xf7729f=0x6,_0x3ee5d8=Math[_0x452838(0x2ac)](_0xa861d0/0x5a),_0xcdcfcf=0x4,_0x5758a6,_0x2438fe,_0x5586ac,_0x43377f;_0x3ee5d8===0x2&&_0xa861d0===0xb4&&(_0x3ee5d8=0x1);switch(_0x3ee5d8){case 0x0:_0x5758a6=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']-_0xf7729f-(_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']-_0xf7729f-_0x154116['x'])/0x2,_0x2438fe=_0x8995cf['outerLabelGroupData'][_0x4dba48]['y']+(_0x154116['y']-_0x8995cf[_0x452838(0x297)][_0x4dba48]['y'])/_0xcdcfcf,_0x5586ac=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']-_0xf7729f,_0x43377f=_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']-_0x39655b;break;case 0x1:_0x5758a6=_0x154116['x']+(_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']-_0x154116['x'])/_0xcdcfcf,_0x2438fe=_0x154116['y']+(_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']-_0x154116['y'])/_0xcdcfcf,_0x5586ac=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']-_0xf7729f,_0x43377f=_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']-_0x39655b;break;case 0x2:var _0x58a783=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']+_0x8995cf[_0x452838(0x297)][_0x4dba48]['w']+_0xf7729f;_0x5758a6=_0x154116['x']-(_0x154116['x']-_0x58a783)/_0xcdcfcf,_0x2438fe=_0x154116['y']+(_0x8995cf['outerLabelGroupData'][_0x4dba48]['y']-_0x154116['y'])/_0xcdcfcf,_0x5586ac=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']+_0x8995cf[_0x452838(0x297)][_0x4dba48]['w']+_0xf7729f,_0x43377f=_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']-_0x39655b;break;case 0x3:var _0x245d80=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']+_0x8995cf['outerLabelGroupData'][_0x4dba48]['w']+_0xf7729f;_0x5758a6=_0x245d80+(_0x154116['x']-_0x245d80)/_0xcdcfcf,_0x2438fe=_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']+(_0x154116['y']-_0x8995cf[_0x452838(0x297)][_0x4dba48]['y'])/_0xcdcfcf,_0x5586ac=_0x8995cf[_0x452838(0x297)][_0x4dba48]['x']+_0x8995cf[_0x452838(0x297)][_0x4dba48]['w']+_0xf7729f,_0x43377f=_0x8995cf[_0x452838(0x297)][_0x4dba48]['y']-_0x39655b;break;}_0x8995cf[_0x452838(0x2c5)][_0x452838(0x231)][_0x452838(0x1e7)][_0x452838(0x1d1)]===_0x452838(0x205)?_0x8995cf[_0x452838(0x1fa)][_0x4dba48]=[{'x':_0x154116['x'],'y':_0x154116['y']},{'x':_0x5586ac,'y':_0x43377f}]:_0x8995cf[_0x452838(0x1fa)][_0x4dba48]=[{'x':_0x154116['x'],'y':_0x154116['y']},{'x':_0x5758a6,'y':_0x2438fe},{'x':_0x5586ac,'y':_0x43377f}];},'addLabelLines':function(_0x1165c0){var _0x50777e=_0x2ee82d,_0xd9d237=_0x1165c0[_0x50777e(0x2cb)]['insert']('g','.'+_0x1165c0[_0x50777e(0x2a3)]+_0x50777e(0x26f))[_0x50777e(0x1ea)]('class',_0x1165c0[_0x50777e(0x2a3)]+_0x50777e(0x213))['style'](_0x50777e(0x2d7),0x0),_0x377918=_0xd9d237[_0x50777e(0x216)]('.'+_0x1165c0['cssPrefix']+_0x50777e(0x276))[_0x50777e(0x20b)](_0x1165c0[_0x50777e(0x1fa)])['enter']()[_0x50777e(0x27f)]('g')[_0x50777e(0x1ea)](_0x50777e(0x2ce),_0x1165c0['cssPrefix']+_0x50777e(0x276)),_0x2f2b25=d3[_0x50777e(0x236)]()[_0x50777e(0x2db)](d3[_0x50777e(0x22d)])['x'](function(_0x6cd112){return _0x6cd112['x'];})['y'](function(_0x27a30d){return _0x27a30d['y'];});_0x377918[_0x50777e(0x27f)]('path')[_0x50777e(0x1ea)]('d',_0x2f2b25)[_0x50777e(0x1ea)](_0x50777e(0x2d6),function(_0x3e93f7,_0x14ceed){var _0x1c938b=_0x50777e;return _0x1165c0['options'][_0x1c938b(0x231)]['lines'][_0x1c938b(0x23d)]===_0x1c938b(0x1cd)?_0x1165c0[_0x1c938b(0x2c5)][_0x1c938b(0x2c0)][_0x14ceed]:_0x1165c0['options'][_0x1c938b(0x231)][_0x1c938b(0x1e7)]['color'];})[_0x50777e(0x1ea)](_0x50777e(0x23c),0x1)[_0x50777e(0x1ea)](_0x50777e(0x235),_0x50777e(0x28e))[_0x50777e(0x1d1)]('opacity',function(_0x686150,_0x2e3d3a){var _0x444aff=_0x50777e,_0x504416=_0x1165c0[_0x444aff(0x2c5)][_0x444aff(0x231)]['outer']['hideWhenLessThanPercentage'],_0x434779=_0x504416!==null&&_0x686150[_0x444aff(0x2b7)]<_0x504416||_0x1165c0[_0x444aff(0x2c5)][_0x444aff(0x20b)][_0x444aff(0x2d9)][_0x2e3d3a][_0x444aff(0x1fc)]==='';return _0x434779?0x0:0x1;});},'positionLabelGroups':function(_0x7d7414,_0x594eb8){var _0x5330bc=_0x2ee82d;if(_0x7d7414['options'][_0x5330bc(0x231)][_0x594eb8]['format']===_0x5330bc(0x28e))return;d3['selectAll']('.'+_0x7d7414[_0x5330bc(0x2a3)]+_0x5330bc(0x223)+_0x594eb8)['style']('opacity',0x0)[_0x5330bc(0x1ea)]('transform',function(_0x37cc51,_0x1413b3){var _0x2a7f88=_0x5330bc,_0x301fa3,_0x14eef;if(_0x594eb8===_0x2a7f88(0x1f4))_0x301fa3=_0x7d7414['outerLabelGroupData'][_0x1413b3]['x'],_0x14eef=_0x7d7414[_0x2a7f88(0x297)][_0x1413b3]['y'];else{var _0x198a9a=_0xff9633(!![],{},_0x7d7414[_0x2a7f88(0x218)]);if(_0x7d7414[_0x2a7f88(0x1ff)]>0x0){var _0x2ecd27=_0x276077[_0x2a7f88(0x1d2)](_0x1413b3,_0x7d7414[_0x2a7f88(0x2c5)][_0x2a7f88(0x20b)][_0x2a7f88(0x2d9)],_0x7d7414['totalSize'],{'midpoint':!![]}),_0x405ee4=_0x2040b1['translate'](_0x7d7414[_0x2a7f88(0x218)]['x'],_0x7d7414['pieCenter']['y'],_0x7d7414['innerRadius'],_0x2ecd27);_0x198a9a['x']=_0x405ee4['x'],_0x198a9a['y']=_0x405ee4['y'];}var _0x218c2a=_0x318770[_0x2a7f88(0x275)](_0x7d7414['cssPrefix']+_0x2a7f88(0x271)+_0x1413b3+_0x2a7f88(0x272)),_0x5f4da5=_0x218c2a['w']/0x2,_0x389689=_0x218c2a['h']/0x4;_0x301fa3=_0x198a9a['x']+(_0x7d7414[_0x2a7f88(0x1fa)][_0x1413b3][0x0]['x']-_0x198a9a['x'])/1.8,_0x14eef=_0x198a9a['y']+(_0x7d7414[_0x2a7f88(0x1fa)][_0x1413b3][0x0]['y']-_0x198a9a['y'])/1.8,_0x301fa3=_0x301fa3-_0x5f4da5,_0x14eef=_0x14eef+_0x389689;}return _0x2a7f88(0x1d9)+_0x301fa3+','+_0x14eef+')';});},'fadeInLabelsAndLines':function(_0x517497){var _0x18e2f3=_0x2ee82d,_0x15ed31=_0x517497['options']['effects']['load'][_0x18e2f3(0x1b8)]==='default'?_0x517497['options'][_0x18e2f3(0x295)][_0x18e2f3(0x289)][_0x18e2f3(0x2e4)]:0x1;setTimeout(function(){var _0x2aee35=_0x18e2f3,_0x3b8e3e=_0x517497[_0x2aee35(0x2c5)][_0x2aee35(0x295)][_0x2aee35(0x289)][_0x2aee35(0x1b8)]===_0x2aee35(0x257)?0x190:0x1;d3['selectAll']('.'+_0x517497[_0x2aee35(0x2a3)]+_0x2aee35(0x1c6))[_0x2aee35(0x2b9)]()['duration'](_0x3b8e3e)[_0x2aee35(0x1d1)](_0x2aee35(0x2d7),function(_0x254375,_0x42593a){var _0x431642=_0x2aee35,_0x108d53=_0x517497[_0x431642(0x2c5)][_0x431642(0x231)][_0x431642(0x1f4)][_0x431642(0x2af)];return _0x108d53!==null&&_0x254375[_0x431642(0x2b7)]<_0x108d53?0x0:0x1;}),d3[_0x2aee35(0x216)]('.'+_0x517497['cssPrefix']+'labelGroup-inner')['transition']()[_0x2aee35(0x234)](_0x3b8e3e)[_0x2aee35(0x1d1)](_0x2aee35(0x2d7),function(_0x5658b8,_0x43e2b3){var _0x321509=_0x2aee35,_0x270927=_0x517497['options'][_0x321509(0x231)][_0x321509(0x1e9)][_0x321509(0x2af)];return _0x270927!==null&&_0x5658b8[_0x321509(0x2b7)]<_0x270927?0x0:0x1;}),d3[_0x2aee35(0x216)]('g.'+_0x517497[_0x2aee35(0x2a3)]+_0x2aee35(0x213))[_0x2aee35(0x2b9)]()[_0x2aee35(0x234)](_0x3b8e3e)['style'](_0x2aee35(0x2d7),0x1),_0x318770[_0x2aee35(0x1ae)](_0x517497[_0x2aee35(0x2c5)]['callbacks'][_0x2aee35(0x1f1)])&&setTimeout(function(){var _0x20a840=_0x2aee35;try{_0x517497[_0x20a840(0x2c5)][_0x20a840(0x227)][_0x20a840(0x1f1)]();}catch(_0xde3468){}},_0x3b8e3e);},_0x15ed31);},'getIncludes':function(_0x38c2cf){var _0x1b7f2e=_0x2ee82d,_0x4d78ae=![],_0x24a99d=![],_0x538ccf=![];switch(_0x38c2cf){case'label':_0x4d78ae=!![];break;case _0x1b7f2e(0x250):_0x24a99d=!![];break;case _0x1b7f2e(0x2b7):_0x538ccf=!![];break;case _0x1b7f2e(0x1c3):case _0x1b7f2e(0x1fd):_0x4d78ae=!![],_0x24a99d=!![];break;case _0x1b7f2e(0x26a):case _0x1b7f2e(0x1cb):_0x4d78ae=!![],_0x538ccf=!![];break;}return{'mainLabel':_0x4d78ae,'value':_0x24a99d,'percentage':_0x538ccf};},'computeOuterLabelCoords':function(_0x4c93b0){var _0xfd1ff7=_0x2ee82d;_0x4c93b0['svg'][_0xfd1ff7(0x216)]('.'+_0x4c93b0[_0xfd1ff7(0x2a3)]+'labelGroup-outer')[_0xfd1ff7(0x268)](function(_0x76f5fd,_0x50eb22){var _0x164eff=_0xfd1ff7;return _0x236f56[_0x164eff(0x21b)](_0x4c93b0,_0x50eb22);}),_0x236f56[_0xfd1ff7(0x285)](_0x4c93b0);},'resolveOuterLabelCollisions':function(_0x12ac27){var _0x3ed62f=_0x2ee82d;if(_0x12ac27[_0x3ed62f(0x2c5)][_0x3ed62f(0x231)]['outer'][_0x3ed62f(0x25f)]===_0x3ed62f(0x28e))return;var _0x4d9bfe=_0x12ac27[_0x3ed62f(0x2c5)]['data'][_0x3ed62f(0x2d9)][_0x3ed62f(0x2f0)];_0x236f56[_0x3ed62f(0x273)](_0x12ac27,0x0,_0x3ed62f(0x209),_0x4d9bfe),_0x236f56[_0x3ed62f(0x273)](_0x12ac27,_0x4d9bfe-0x1,_0x3ed62f(0x258),_0x4d9bfe);},'checkConflict':function(_0x1425c5,_0xcc66b5,_0x10124d,_0x2ef717){var _0x5c852d=_0x2ee82d,_0x2e45cd,_0x4d5489;if(_0x2ef717<=0x1)return;var _0x1bc5f3=_0x1425c5[_0x5c852d(0x297)][_0xcc66b5]['hs'];if(_0x10124d===_0x5c852d(0x209)&&_0x1bc5f3!==_0x5c852d(0x2d0))return;if(_0x10124d===_0x5c852d(0x258)&&_0x1bc5f3!==_0x5c852d(0x2ae))return;var _0x3edae1=_0x10124d==='clockwise'?_0xcc66b5+0x1:_0xcc66b5-0x1,_0x4ad89e=_0x1425c5[_0x5c852d(0x297)][_0xcc66b5],_0x3a2c0e=_0x1425c5[_0x5c852d(0x297)][_0x3edae1],_0x973d0d={'labelHeights':_0x1425c5[_0x5c852d(0x297)][0x0]['h'],'center':_0x1425c5[_0x5c852d(0x218)],'lineLength':_0x1425c5['outerRadius']+_0x1425c5['options']['labels'][_0x5c852d(0x1f4)]['pieDistance'],'heightChange':_0x1425c5[_0x5c852d(0x297)][0x0]['h']+0x1};if(_0x10124d===_0x5c852d(0x209)){_0x2e45cd=0x0;for(;_0x2e45cd<=_0xcc66b5;_0x2e45cd++){_0x4d5489=_0x1425c5[_0x5c852d(0x297)][_0x2e45cd];if(!_0x236f56['isLabelHidden'](_0x1425c5,_0x2e45cd)&&_0x318770[_0x5c852d(0x253)](_0x4d5489,_0x3a2c0e)){_0x236f56['adjustLabelPos'](_0x1425c5,_0x3edae1,_0x4ad89e,_0x973d0d);break;}}}else{_0x2e45cd=_0x2ef717-0x1;for(;_0x2e45cd>=_0xcc66b5;_0x2e45cd--){_0x4d5489=_0x1425c5[_0x5c852d(0x297)][_0x2e45cd];if(!_0x236f56[_0x5c852d(0x1cc)](_0x1425c5,_0x2e45cd)&&_0x318770[_0x5c852d(0x253)](_0x4d5489,_0x3a2c0e)){_0x236f56[_0x5c852d(0x241)](_0x1425c5,_0x3edae1,_0x4ad89e,_0x973d0d);break;}}}_0x236f56[_0x5c852d(0x273)](_0x1425c5,_0x3edae1,_0x10124d,_0x2ef717);},'isLabelHidden':function(_0xf02c99,_0xb6ca78){var _0x1041e4=_0x2ee82d,_0x38a6a3=_0xf02c99[_0x1041e4(0x2c5)][_0x1041e4(0x231)][_0x1041e4(0x1f4)][_0x1041e4(0x2af)];return _0x38a6a3!==null&&d[_0x1041e4(0x2b7)]<_0x38a6a3||_0xf02c99[_0x1041e4(0x2c5)]['data']['content'][_0xb6ca78][_0x1041e4(0x1fc)]==='';},'adjustLabelPos':function(_0x1ebdaf,_0x2a959e,_0x134f7e,_0x2a7fc1){var _0x5b2ee4=_0x2ee82d,_0x4235d5,_0x2cd6ff,_0x48b62a,_0x131f0d;_0x131f0d=_0x134f7e['y']+_0x2a7fc1['heightChange'],_0x2cd6ff=_0x2a7fc1[_0x5b2ee4(0x1ab)]['y']-_0x131f0d,Math[_0x5b2ee4(0x249)](_0x2a7fc1[_0x5b2ee4(0x28a)])>Math[_0x5b2ee4(0x249)](_0x2cd6ff)?_0x4235d5=Math[_0x5b2ee4(0x27c)](_0x2a7fc1[_0x5b2ee4(0x28a)]*_0x2a7fc1[_0x5b2ee4(0x28a)]-_0x2cd6ff*_0x2cd6ff):_0x4235d5=Math[_0x5b2ee4(0x27c)](_0x2cd6ff*_0x2cd6ff-_0x2a7fc1[_0x5b2ee4(0x28a)]*_0x2a7fc1['lineLength']),_0x134f7e['hs']==='right'?_0x48b62a=_0x2a7fc1['center']['x']+_0x4235d5:_0x48b62a=_0x2a7fc1[_0x5b2ee4(0x1ab)]['x']-_0x4235d5-_0x1ebdaf['outerLabelGroupData'][_0x2a959e]['w'],_0x1ebdaf[_0x5b2ee4(0x297)][_0x2a959e]['x']=_0x48b62a,_0x1ebdaf[_0x5b2ee4(0x297)][_0x2a959e]['y']=_0x131f0d;},'getIdealOuterLabelPositions':function(_0x407a76,_0x187623){var _0x54d04c=_0x2ee82d,_0x29ef71=d3[_0x54d04c(0x298)]('#'+_0x407a76[_0x54d04c(0x2a3)]+'labelGroup'+_0x187623+_0x54d04c(0x237))[_0x54d04c(0x26c)]();if(!_0x29ef71)return;var _0x43933a=_0x29ef71[_0x54d04c(0x1be)](),_0x427f5e=_0x276077[_0x54d04c(0x1d2)](_0x187623,_0x407a76[_0x54d04c(0x2c5)][_0x54d04c(0x20b)][_0x54d04c(0x2d9)],_0x407a76[_0x54d04c(0x284)],{'midpoint':!![]}),_0x18cad7=_0x407a76[_0x54d04c(0x218)]['x'],_0x383141=_0x407a76[_0x54d04c(0x218)]['y']-(_0x407a76[_0x54d04c(0x269)]+_0x407a76[_0x54d04c(0x2c5)][_0x54d04c(0x231)][_0x54d04c(0x1f4)][_0x54d04c(0x2e5)]),_0x12a63e=_0x2040b1['rotate'](_0x18cad7,_0x383141,_0x407a76[_0x54d04c(0x218)]['x'],_0x407a76[_0x54d04c(0x218)]['y'],_0x427f5e),_0x540bc3=_0x54d04c(0x2d0);_0x427f5e>0xb4?(_0x12a63e['x']-=_0x43933a[_0x54d04c(0x1db)]+0x8,_0x540bc3=_0x54d04c(0x2ae)):_0x12a63e['x']+=0x8,_0x407a76[_0x54d04c(0x297)][_0x187623]={'x':_0x12a63e['x'],'y':_0x12a63e['y'],'w':_0x43933a[_0x54d04c(0x1db)],'h':_0x43933a['height'],'hs':_0x540bc3};}},_0x276077={'effectMap':{'none':d3[_0x2ee82d(0x252)],'bounce':d3['easeBounce'],'linear':d3[_0x2ee82d(0x252)],'sin':d3['easeSin'],'elastic':d3[_0x2ee82d(0x1f2)],'back':d3['easeBack'],'quad':d3[_0x2ee82d(0x1e8)],'circle':d3[_0x2ee82d(0x2e8)],'exp':d3[_0x2ee82d(0x2b0)]},'create':function(_0x7e872c){var _0x4f2bd5=_0x2ee82d,_0x5e1e1e=_0x7e872c[_0x4f2bd5(0x218)],_0x7ce2d7=_0x7e872c['options'][_0x4f2bd5(0x2c0)],_0x470733=_0x7e872c[_0x4f2bd5(0x2c5)][_0x4f2bd5(0x295)]['load'],_0x5f2e46=_0x7e872c['options'][_0x4f2bd5(0x1e6)][_0x4f2bd5(0x2c0)][_0x4f2bd5(0x28d)],_0x535949=_0x7e872c[_0x4f2bd5(0x2cb)][_0x4f2bd5(0x1b3)]('g','#'+_0x7e872c['cssPrefix']+_0x4f2bd5(0x27e))[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2f3),function(){var _0x5e3f32=_0x4f2bd5;return _0x2040b1[_0x5e3f32(0x277)](_0x5e1e1e);})[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2ce),_0x7e872c[_0x4f2bd5(0x2a3)]+_0x4f2bd5(0x26f)),_0x3656b2=d3[_0x4f2bd5(0x2de)]()[_0x4f2bd5(0x1ff)](_0x7e872c[_0x4f2bd5(0x1ff)])[_0x4f2bd5(0x269)](_0x7e872c[_0x4f2bd5(0x269)])[_0x4f2bd5(0x2c9)](0x0)['endAngle'](function(_0x10218d){var _0x2d6eb6=_0x4f2bd5;return _0x10218d[_0x2d6eb6(0x250)]/_0x7e872c['totalSize']*0x2*Math['PI'];}),_0xda22b4=_0x535949[_0x4f2bd5(0x216)]('.'+_0x7e872c[_0x4f2bd5(0x2a3)]+_0x4f2bd5(0x2de))[_0x4f2bd5(0x20b)](_0x7e872c[_0x4f2bd5(0x2c5)][_0x4f2bd5(0x20b)]['content'])[_0x4f2bd5(0x270)]()['append']('g')[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2ce),_0x7e872c['cssPrefix']+_0x4f2bd5(0x2de)),_0x160ba4=_0x470733[_0x4f2bd5(0x2e4)];_0x470733[_0x4f2bd5(0x1b8)]===_0x4f2bd5(0x28e)&&(_0x160ba4=0x0),_0xda22b4[_0x4f2bd5(0x27f)](_0x4f2bd5(0x21a))[_0x4f2bd5(0x1ea)]('id',function(_0x36e273,_0x4d8eb9){var _0xd84b51=_0x4f2bd5;return _0x7e872c['cssPrefix']+_0xd84b51(0x1cd)+_0x4d8eb9;})[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2ce),function(_0x443726,_0x5b1bea){var _0x4539de=_0x4f2bd5;return _0x4539de(0x25e);})[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2a6),function(_0x2bfcce,_0x1deeea){var _0x9aceac=_0x4f2bd5;return _0x9aceac(0x2ba);})[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x27e),function(_0x20c0af,_0x50b8ed){return _0x20c0af['percentage']+'%';})[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x235),function(_0x411847,_0x2b1d79){var _0x5357e7=_0x4f2bd5;if(_0x411847[_0x5357e7(0x1fc)]==_0x5357e7(0x233))var _0x1765ce=_0x5357e7(0x2c8);else{if(_0x411847[_0x5357e7(0x1fc)]==_0x5357e7(0x238))var _0x1765ce=_0x5357e7(0x1c8);else{if(_0x411847['label']=='Forwarded')var _0x1765ce=_0x5357e7(0x1eb);else{if(_0x411847[_0x5357e7(0x1fc)]==_0x5357e7(0x265))var _0x1765ce='#14aaf5';else{}}}}return _0x7e872c[_0x5357e7(0x2c5)][_0x5357e7(0x1e6)][_0x5357e7(0x1bb)][_0x5357e7(0x221)]&&(_0x1765ce=_0x5357e7(0x1c4)+_0x7e872c[_0x5357e7(0x2a3)]+_0x5357e7(0x222)+_0x2b1d79+')'),_0x1765ce;})[_0x4f2bd5(0x1d1)](_0x4f2bd5(0x2d6),_0x5f2e46)[_0x4f2bd5(0x1d1)](_0x4f2bd5(0x23c),0x1)[_0x4f2bd5(0x2b9)]()[_0x4f2bd5(0x22e)](d3['easeCubicInOut'])['duration'](_0x160ba4)['attr']('data-index',function(_0x38fe4f,_0x195df2){return _0x195df2;})[_0x4f2bd5(0x1fe)]('d',function(_0x5946c7){var _0x14612e=_0x4f2bd5,_0x510704=d3[_0x14612e(0x2a5)]({'value':0x0},_0x5946c7);return function(_0x566936){return _0x7e872c['arc'](_0x510704(_0x566936));};}),_0x7e872c[_0x4f2bd5(0x2cb)][_0x4f2bd5(0x216)]('g.'+_0x7e872c[_0x4f2bd5(0x2a3)]+_0x4f2bd5(0x2de))[_0x4f2bd5(0x1ea)](_0x4f2bd5(0x2f3),function(_0x4d3f2c,_0x15782c){var _0x3c9515=_0x4f2bd5,_0x512461=0x0;return _0x15782c>0x0&&(_0x512461=_0x276077[_0x3c9515(0x1d2)](_0x15782c-0x1,_0x7e872c[_0x3c9515(0x2c5)][_0x3c9515(0x20b)]['content'],_0x7e872c[_0x3c9515(0x284)])),'rotate('+_0x512461+')';}),_0x7e872c[_0x4f2bd5(0x2de)]=_0x3656b2;},'addGradients':function(_0x58863d){var _0x52ee28=_0x2ee82d,_0x202401=_0x58863d[_0x52ee28(0x2cb)][_0x52ee28(0x27f)](_0x52ee28(0x2b6))[_0x52ee28(0x216)]('radialGradient')[_0x52ee28(0x20b)](_0x58863d[_0x52ee28(0x2c5)][_0x52ee28(0x20b)][_0x52ee28(0x2d9)])[_0x52ee28(0x270)]()[_0x52ee28(0x27f)](_0x52ee28(0x225))[_0x52ee28(0x1ea)](_0x52ee28(0x2dc),_0x52ee28(0x2e1))[_0x52ee28(0x1ea)]('cx',0x0)[_0x52ee28(0x1ea)]('cy',0x0)['attr']('r',_0x52ee28(0x226))[_0x52ee28(0x1ea)]('id',function(_0x10d4c5,_0x41bf42){var _0x26efe6=_0x52ee28;return _0x58863d[_0x26efe6(0x2a3)]+_0x26efe6(0x222)+_0x41bf42;});_0x202401[_0x52ee28(0x27f)](_0x52ee28(0x1d5))['attr'](_0x52ee28(0x1af),'0%')[_0x52ee28(0x1d1)]('stop-color',function(_0x2e6a6d,_0x37e084){var _0x277048=_0x52ee28;return _0x58863d[_0x277048(0x2c5)]['colors'][_0x37e084];}),_0x202401[_0x52ee28(0x27f)](_0x52ee28(0x1d5))[_0x52ee28(0x1ea)]('offset',_0x58863d[_0x52ee28(0x2c5)][_0x52ee28(0x1e6)][_0x52ee28(0x1bb)]['percentage']+'%')[_0x52ee28(0x1d1)](_0x52ee28(0x21c),_0x58863d[_0x52ee28(0x2c5)]['misc'][_0x52ee28(0x1bb)][_0x52ee28(0x23d)]);},'addSegmentEventHandlers':function(_0x5efa35){var _0x37479c=_0x2ee82d,_0x56d443=d3[_0x37479c(0x216)]('.'+_0x5efa35[_0x37479c(0x2a3)]+_0x37479c(0x1de)+_0x5efa35[_0x37479c(0x2a3)]+_0x37479c(0x2d1)+_0x5efa35['cssPrefix']+_0x37479c(0x1c6));_0x56d443['on'](_0x37479c(0x232),function(){var _0x38edab=_0x37479c,_0x127955=d3[_0x38edab(0x298)](this),_0x21f29a;if(_0x127955['attr']('class')===_0x5efa35[_0x38edab(0x2a3)]+_0x38edab(0x2de))_0x21f29a=_0x127955['select'](_0x38edab(0x21a));else{var _0x538718=_0x127955[_0x38edab(0x1ea)](_0x38edab(0x1f7));_0x21f29a=d3[_0x38edab(0x298)]('#'+_0x5efa35['cssPrefix']+_0x38edab(0x1cd)+_0x538718);}var _0x5137dc=_0x21f29a[_0x38edab(0x1ea)]('class')===_0x5efa35[_0x38edab(0x2a3)]+'expanded';_0x276077['onSegmentEvent'](_0x5efa35,_0x5efa35[_0x38edab(0x2c5)]['callbacks']['onClickSegment'],_0x21f29a,_0x5137dc),_0x5efa35['options'][_0x38edab(0x295)]['pullOutSegmentOnClick'][_0x38edab(0x1b8)]!==_0x38edab(0x28e)&&(_0x5137dc?_0x276077[_0x38edab(0x267)](_0x5efa35,_0x21f29a[_0x38edab(0x26c)]()):_0x276077[_0x38edab(0x244)](_0x5efa35,_0x21f29a['node']()));}),_0x56d443['on'](_0x37479c(0x1ad),function(){var _0x1872d3=_0x37479c,_0xc2276e=d3[_0x1872d3(0x298)](this),_0x249b26,_0x7832f5;_0xc2276e[_0x1872d3(0x1ea)](_0x1872d3(0x2ce))===_0x5efa35[_0x1872d3(0x2a3)]+'arc'?_0x249b26=_0xc2276e[_0x1872d3(0x298)](_0x1872d3(0x21a)):(_0x7832f5=_0xc2276e[_0x1872d3(0x1ea)](_0x1872d3(0x1f7)),_0x249b26=d3['select']('#'+_0x5efa35[_0x1872d3(0x2a3)]+_0x1872d3(0x1cd)+_0x7832f5));if(_0x5efa35[_0x1872d3(0x2c5)][_0x1872d3(0x295)][_0x1872d3(0x2d2)]){_0x7832f5=_0x249b26['attr'](_0x1872d3(0x1f7));var _0x4ed31c=_0x5efa35['options']['colors'][_0x7832f5];if(this[_0x1872d3(0x1d6)][_0x1872d3(0x1fc)]=='Approved')var _0xb72aac=_0x1872d3(0x1e5);else{if(this[_0x1872d3(0x1d6)]['label']==_0x1872d3(0x238))var _0xb72aac=_0x1872d3(0x1c8);else{if(this[_0x1872d3(0x1d6)]['label']==_0x1872d3(0x26b))var _0xb72aac=_0x1872d3(0x1eb);else{if(this[_0x1872d3(0x1d6)][_0x1872d3(0x1fc)]=='Initiated')var _0xb72aac=_0x1872d3(0x22c);else var _0xb72aac='#db4035';}}}_0x249b26[_0x1872d3(0x1d1)](_0x1872d3(0x235),_0xb72aac);}_0x5efa35[_0x1872d3(0x2c5)][_0x1872d3(0x1bf)]['enabled']&&(_0x7832f5=_0x249b26[_0x1872d3(0x1ea)](_0x1872d3(0x1f7)),_0x40abf4[_0x1872d3(0x214)](_0x5efa35,_0x7832f5));var _0x41e658=_0x249b26['attr'](_0x1872d3(0x2ce))===_0x5efa35[_0x1872d3(0x2a3)]+_0x1872d3(0x261);_0x276077[_0x1872d3(0x211)](_0x5efa35,_0x5efa35[_0x1872d3(0x2c5)][_0x1872d3(0x227)][_0x1872d3(0x2a2)],_0x249b26,_0x41e658);}),_0x56d443['on'](_0x37479c(0x24a),function(){_0x40abf4['moveTooltip'](_0x5efa35);}),_0x56d443['on'](_0x37479c(0x1b1),function(){var _0x3acb78=_0x37479c,_0x5abf54=d3[_0x3acb78(0x298)](this),_0x2346f2,_0x18e33e;_0x5abf54[_0x3acb78(0x1ea)]('class')===_0x5efa35[_0x3acb78(0x2a3)]+'arc'?_0x2346f2=_0x5abf54[_0x3acb78(0x298)]('path'):(_0x18e33e=_0x5abf54[_0x3acb78(0x1ea)](_0x3acb78(0x1f7)),_0x2346f2=d3['select']('#'+_0x5efa35[_0x3acb78(0x2a3)]+'segment'+_0x18e33e));if(_0x5efa35[_0x3acb78(0x2c5)][_0x3acb78(0x295)][_0x3acb78(0x2d2)]){_0x18e33e=_0x2346f2[_0x3acb78(0x1ea)](_0x3acb78(0x1f7));var _0x270a5f=_0x5efa35[_0x3acb78(0x2c5)][_0x3acb78(0x2c0)][_0x18e33e];_0x5efa35[_0x3acb78(0x2c5)][_0x3acb78(0x1e6)]['gradient'][_0x3acb78(0x221)]&&(_0x270a5f=_0x3acb78(0x1c4)+_0x5efa35[_0x3acb78(0x2a3)]+_0x3acb78(0x222)+_0x18e33e+')'),_0x2346f2[_0x3acb78(0x1d1)]('fill',_0x270a5f);}_0x5efa35[_0x3acb78(0x2c5)][_0x3acb78(0x1bf)]['enabled']&&(_0x18e33e=_0x2346f2['attr'](_0x3acb78(0x1f7)),_0x40abf4['hideTooltip'](_0x5efa35,_0x18e33e));var _0x248032=_0x2346f2[_0x3acb78(0x1ea)](_0x3acb78(0x2ce))===_0x5efa35[_0x3acb78(0x2a3)]+_0x3acb78(0x261);_0x276077[_0x3acb78(0x211)](_0x5efa35,_0x5efa35[_0x3acb78(0x2c5)][_0x3acb78(0x227)][_0x3acb78(0x27a)],_0x2346f2,_0x248032);});},'onSegmentEvent':function(_0x8ce264,_0x4392a2,_0x599fcd,_0x4f560d){var _0x261b80=_0x2ee82d;if(!_0x318770[_0x261b80(0x1ae)](_0x4392a2))return;var _0x288793=parseInt(_0x599fcd['attr']('data-index'),0xa);_0x4392a2({'segment':_0x599fcd[_0x261b80(0x26c)](),'index':_0x288793,'expanded':_0x4f560d,'data':_0x8ce264[_0x261b80(0x2c5)][_0x261b80(0x20b)][_0x261b80(0x2d9)][_0x288793]});},'openSegment':function(_0x333305,_0x4af8ef){var _0x7b4720=_0x2ee82d;if(_0x333305[_0x7b4720(0x278)])return;_0x333305[_0x7b4720(0x278)]=!![],_0x276077['maybeCloseOpenSegment'](),d3[_0x7b4720(0x298)](_0x4af8ef)[_0x7b4720(0x2b9)]()[_0x7b4720(0x22e)](_0x276077['effectMap'][_0x333305['options']['effects'][_0x7b4720(0x1b4)][_0x7b4720(0x1b8)]])[_0x7b4720(0x234)](_0x333305[_0x7b4720(0x2c5)][_0x7b4720(0x295)]['pullOutSegmentOnClick'][_0x7b4720(0x2e4)])[_0x7b4720(0x1ea)](_0x7b4720(0x2f3),function(_0x2a1b87,_0x2e5331){var _0x56fc54=_0x7b4720,_0x4a5c54=_0x333305[_0x56fc54(0x2de)][_0x56fc54(0x28f)](_0x2a1b87),_0x1f2bd1=_0x4a5c54[0x0],_0x5e8955=_0x4a5c54[0x1],_0x4d3a11=Math[_0x56fc54(0x27c)](_0x1f2bd1*_0x1f2bd1+_0x5e8955*_0x5e8955),_0x7c10cb=parseInt(_0x333305[_0x56fc54(0x2c5)]['effects'][_0x56fc54(0x1b4)][_0x56fc54(0x1c2)],0xa);return _0x56fc54(0x1d9)+_0x1f2bd1/_0x4d3a11*_0x7c10cb+','+_0x5e8955/_0x4d3a11*_0x7c10cb+')';})['on']('end',function(_0x4fe654,_0x32fbf4){var _0x594ab0=_0x7b4720;_0x333305[_0x594ab0(0x224)]=_0x4af8ef,_0x333305['isOpeningSegment']=![],d3['select'](_0x4af8ef)[_0x594ab0(0x1ea)](_0x594ab0(0x2ce),_0x333305[_0x594ab0(0x2a3)]+_0x594ab0(0x261));});},'maybeCloseOpenSegment':function(){var _0x196955=_0x2ee82d;d3['selectAll']('.'+pie['cssPrefix']+'expanded')[_0x196955(0x1c2)]()>0x0&&_0x276077[_0x196955(0x267)](pie,d3[_0x196955(0x298)]('.'+pie['cssPrefix']+_0x196955(0x261))['node']());},'closeSegment':function(_0x1f4463,_0x3ee727){var _0x2eba45=_0x2ee82d;d3['select'](_0x3ee727)['transition']()[_0x2eba45(0x234)](0x190)[_0x2eba45(0x1ea)](_0x2eba45(0x2f3),'translate(0,0)')['on'](_0x2eba45(0x2be),function(_0x5901f1,_0x3a2a93){var _0x191c71=_0x2eba45;d3[_0x191c71(0x298)](_0x3ee727)[_0x191c71(0x1ea)](_0x191c71(0x2ce),''),_0x1f4463[_0x191c71(0x224)]=null;});},'getCentroid':function(_0x415084){var _0x6f7ffc=_0x2ee82d,_0x393a7f=_0x415084[_0x6f7ffc(0x1be)]();return{'x':_0x393a7f['x']+_0x393a7f['width']/0x2,'y':_0x393a7f['y']+_0x393a7f[_0x6f7ffc(0x203)]/0x2};},'getSegmentAngle':function(_0x5b0e3d,_0x105a84,_0x425044,_0x35198d){var _0xd8c08e=_0x2ee82d,_0x537f89=_0xff9633({'compounded':!![],'midpoint':![]},_0x35198d),_0x57638f=_0x105a84[_0x5b0e3d][_0xd8c08e(0x250)],_0x2808ce;if(_0x537f89[_0xd8c08e(0x210)]){_0x2808ce=0x0;for(var _0x10933f=0x0;_0x10933f<=_0x5b0e3d;_0x10933f++){_0x2808ce+=_0x105a84[_0x10933f][_0xd8c08e(0x250)];}}typeof _0x2808ce===_0xd8c08e(0x2da)&&(_0x2808ce=_0x57638f);var _0x3b1de1=_0x2808ce/_0x425044*0x168;if(_0x537f89[_0xd8c08e(0x1bd)]){var _0x402def=_0x57638f/_0x425044*0x168;_0x3b1de1-=_0x402def/0x2;}return _0x3b1de1;}},_0x3d2e7c={'offscreenCoord':-0x2710,'addTitle':function(_0xacf583){var _0x3c96b7=_0x2ee82d,_0x58379f=_0xacf583[_0x3c96b7(0x2cb)][_0x3c96b7(0x216)]('.'+_0xacf583[_0x3c96b7(0x2a3)]+'title')[_0x3c96b7(0x20b)]([_0xacf583[_0x3c96b7(0x2c5)][_0x3c96b7(0x200)][_0x3c96b7(0x27e)]])[_0x3c96b7(0x270)]()[_0x3c96b7(0x27f)](_0x3c96b7(0x201))['text'](function(_0x50f7c8){var _0x321eba=_0x3c96b7;return _0x50f7c8[_0x321eba(0x201)];})[_0x3c96b7(0x1ea)]('id',_0xacf583['cssPrefix']+_0x3c96b7(0x27e))[_0x3c96b7(0x1ea)](_0x3c96b7(0x2ce),_0xacf583[_0x3c96b7(0x2a3)]+'title')[_0x3c96b7(0x1ea)]('x',_0x3d2e7c[_0x3c96b7(0x23e)])['attr']('y',_0x3d2e7c[_0x3c96b7(0x23e)])[_0x3c96b7(0x1ea)](_0x3c96b7(0x219),function(){var _0x231a98=_0x3c96b7,_0x1b9ba5;return _0xacf583[_0x231a98(0x2c5)][_0x231a98(0x200)][_0x231a98(0x1f9)]===_0x231a98(0x248)||_0xacf583[_0x231a98(0x2c5)][_0x231a98(0x200)][_0x231a98(0x1f9)]===_0x231a98(0x2c1)?_0x1b9ba5='middle':_0x1b9ba5='left',_0x1b9ba5;})['attr'](_0x3c96b7(0x235),function(_0x4b6cd7){var _0x14131d=_0x3c96b7;return _0x4b6cd7[_0x14131d(0x23d)];})[_0x3c96b7(0x1d1)](_0x3c96b7(0x26e),function(_0x7e382a){var _0x414b3d=_0x3c96b7;return _0x7e382a[_0x414b3d(0x1ef)]+'px';})[_0x3c96b7(0x1d1)]('font-family',function(_0x200242){var _0x21af4b=_0x3c96b7;return _0x200242[_0x21af4b(0x2c3)];});},'positionTitle':function(_0x35e37d){var _0x2f7067=_0x2ee82d,_0x174543=_0x35e37d[_0x2f7067(0x1f3)],_0x3f0f7e=_0x35e37d['options'][_0x2f7067(0x200)][_0x2f7067(0x1f9)],_0x17b0ea=_0x35e37d['options'][_0x2f7067(0x1e6)][_0x2f7067(0x2aa)],_0x65b59c=_0x35e37d[_0x2f7067(0x2c5)][_0x2f7067(0x1c2)][_0x2f7067(0x2ca)],_0x55979d=_0x35e37d['options']['header']['titleSubtitlePadding'],_0x98bb96;_0x3f0f7e===_0x2f7067(0x1d4)?_0x98bb96=_0x17b0ea[_0x2f7067(0x2ae)]:_0x98bb96=(_0x65b59c-_0x17b0ea[_0x2f7067(0x2d0)])/0x2+_0x17b0ea['left'];_0x98bb96+=_0x35e37d[_0x2f7067(0x2c5)][_0x2f7067(0x1e6)][_0x2f7067(0x228)]['x'];var _0x1e1251=_0x17b0ea[_0x2f7067(0x2f2)]+_0x174543[_0x2f7067(0x27e)]['h'];if(_0x3f0f7e==='pie-center'){_0x1e1251=_0x35e37d['pieCenter']['y'];if(_0x174543['subtitle']['exists']){var _0x46ff15=_0x174543[_0x2f7067(0x27e)]['h']+_0x55979d+_0x174543[_0x2f7067(0x212)]['h'];_0x1e1251=_0x1e1251-_0x46ff15/0x2+_0x174543[_0x2f7067(0x27e)]['h'];}else _0x1e1251+=_0x174543[_0x2f7067(0x27e)]['h']/0x4;}_0x35e37d[_0x2f7067(0x2cb)][_0x2f7067(0x298)]('#'+_0x35e37d['cssPrefix']+_0x2f7067(0x27e))[_0x2f7067(0x1ea)]('x',_0x98bb96)[_0x2f7067(0x1ea)]('y',_0x1e1251);},'addSubtitle':function(_0x2ddffc){var _0x1cead9=_0x2ee82d,_0x40a9e9=_0x2ddffc[_0x1cead9(0x2c5)][_0x1cead9(0x200)][_0x1cead9(0x1f9)];_0x2ddffc['svg'][_0x1cead9(0x216)]('.'+_0x2ddffc[_0x1cead9(0x2a3)]+_0x1cead9(0x212))[_0x1cead9(0x20b)]([_0x2ddffc[_0x1cead9(0x2c5)][_0x1cead9(0x200)]['subtitle']])[_0x1cead9(0x270)]()[_0x1cead9(0x27f)](_0x1cead9(0x201))[_0x1cead9(0x201)](function(_0x47da4e){var _0x1fa8a5=_0x1cead9;return _0x47da4e[_0x1fa8a5(0x201)];})[_0x1cead9(0x1ea)]('x',_0x3d2e7c['offscreenCoord'])[_0x1cead9(0x1ea)]('y',_0x3d2e7c[_0x1cead9(0x23e)])[_0x1cead9(0x1ea)]('id',_0x2ddffc[_0x1cead9(0x2a3)]+_0x1cead9(0x212))[_0x1cead9(0x1ea)](_0x1cead9(0x2ce),_0x2ddffc[_0x1cead9(0x2a3)]+'subtitle')['attr'](_0x1cead9(0x219),function(){var _0x38dafb=_0x1cead9,_0x4e1c08;return _0x40a9e9===_0x38dafb(0x248)||_0x40a9e9==='pie-center'?_0x4e1c08='middle':_0x4e1c08=_0x38dafb(0x2ae),_0x4e1c08;})['attr']('fill',function(_0x27cdf0){var _0x283920=_0x1cead9;return _0x27cdf0[_0x283920(0x23d)];})[_0x1cead9(0x1d1)](_0x1cead9(0x26e),function(_0x4662ec){var _0x3ef02f=_0x1cead9;return _0x4662ec[_0x3ef02f(0x1ef)]+'px';})[_0x1cead9(0x1d1)]('font-family',function(_0x4bf166){return _0x4bf166['font'];});},'positionSubtitle':function(_0x227a2e){var _0x56036c=_0x2ee82d,_0x312d0e=_0x227a2e[_0x56036c(0x2c5)]['misc']['canvasPadding'],_0x2ac10f=_0x227a2e[_0x56036c(0x2c5)][_0x56036c(0x1c2)][_0x56036c(0x2ca)],_0x15b3a3;_0x227a2e['options'][_0x56036c(0x200)][_0x56036c(0x1f9)]===_0x56036c(0x1d4)?_0x15b3a3=_0x312d0e['left']:_0x15b3a3=(_0x2ac10f-_0x312d0e[_0x56036c(0x2d0)])/0x2+_0x312d0e[_0x56036c(0x2ae)];_0x15b3a3+=_0x227a2e[_0x56036c(0x2c5)][_0x56036c(0x1e6)][_0x56036c(0x228)]['x'];var _0x5cae5b=_0x3d2e7c['getHeaderHeight'](_0x227a2e);_0x227a2e[_0x56036c(0x2cb)][_0x56036c(0x298)]('#'+_0x227a2e[_0x56036c(0x2a3)]+_0x56036c(0x212))[_0x56036c(0x1ea)]('x',_0x15b3a3)[_0x56036c(0x1ea)]('y',_0x5cae5b);},'addFooter':function(_0x46357e){var _0x5529fb=_0x2ee82d;_0x46357e[_0x5529fb(0x2cb)][_0x5529fb(0x216)]('.'+_0x46357e[_0x5529fb(0x2a3)]+_0x5529fb(0x27d))['data']([_0x46357e[_0x5529fb(0x2c5)][_0x5529fb(0x27d)]])[_0x5529fb(0x270)]()[_0x5529fb(0x27f)](_0x5529fb(0x201))[_0x5529fb(0x201)](function(_0x401b18){var _0x3860a4=_0x5529fb;return _0x401b18[_0x3860a4(0x201)];})[_0x5529fb(0x1ea)]('x',_0x3d2e7c['offscreenCoord'])[_0x5529fb(0x1ea)]('y',_0x3d2e7c[_0x5529fb(0x23e)])[_0x5529fb(0x1ea)]('id',_0x46357e[_0x5529fb(0x2a3)]+_0x5529fb(0x27d))['attr'](_0x5529fb(0x2ce),_0x46357e[_0x5529fb(0x2a3)]+'footer')[_0x5529fb(0x1ea)](_0x5529fb(0x219),function(){var _0x301572=_0x5529fb,_0x1a80f2=_0x301572(0x2ae);if(_0x46357e[_0x301572(0x2c5)][_0x301572(0x27d)][_0x301572(0x1f9)]===_0x301572(0x24f))_0x1a80f2=_0x301572(0x279);else _0x46357e[_0x301572(0x2c5)][_0x301572(0x27d)][_0x301572(0x1f9)]===_0x301572(0x2ad)&&(_0x1a80f2='left');return _0x1a80f2;})['attr'](_0x5529fb(0x235),function(_0x14e127){var _0x16e0e4=_0x5529fb;return _0x14e127[_0x16e0e4(0x23d)];})['style'](_0x5529fb(0x26e),function(_0x4524a8){var _0x55bcbc=_0x5529fb;return _0x4524a8[_0x55bcbc(0x1ef)]+'px';})[_0x5529fb(0x1d1)]('font-family',function(_0x25c36a){var _0x2e73d2=_0x5529fb;return _0x25c36a[_0x2e73d2(0x2c3)];});},'positionFooter':function(_0x4f8c06){var _0x317e70=_0x2ee82d,_0x1c4b77=_0x4f8c06[_0x317e70(0x2c5)][_0x317e70(0x27d)]['location'],_0x12734f=_0x4f8c06[_0x317e70(0x1f3)][_0x317e70(0x27d)]['w'],_0x1dc2d4=_0x4f8c06[_0x317e70(0x2c5)][_0x317e70(0x1c2)][_0x317e70(0x2ca)],_0x301658=_0x4f8c06['options'][_0x317e70(0x1c2)]['canvasHeight'],_0x4f0634=_0x4f8c06[_0x317e70(0x2c5)][_0x317e70(0x1e6)][_0x317e70(0x2aa)],_0x166252;if(_0x1c4b77===_0x317e70(0x2c6))_0x166252=_0x4f0634[_0x317e70(0x2ae)];else _0x1c4b77===_0x317e70(0x2ad)?_0x166252=_0x1dc2d4-_0x12734f-_0x4f0634[_0x317e70(0x2d0)]:_0x166252=_0x1dc2d4/0x2;_0x4f8c06['svg'][_0x317e70(0x298)]('#'+_0x4f8c06['cssPrefix']+_0x317e70(0x27d))[_0x317e70(0x1ea)]('x',_0x166252)[_0x317e70(0x1ea)]('y',_0x301658-_0x4f0634['bottom']);},'getHeaderHeight':function(_0x5a35db){var _0x4defe4=_0x2ee82d,_0x39c2e4;if(_0x5a35db['textComponents'][_0x4defe4(0x27e)][_0x4defe4(0x202)]){var _0x1b982e=_0x5a35db[_0x4defe4(0x1f3)][_0x4defe4(0x27e)]['h']+_0x5a35db['options']['header']['titleSubtitlePadding']+_0x5a35db['textComponents']['subtitle']['h'];_0x5a35db[_0x4defe4(0x2c5)][_0x4defe4(0x200)][_0x4defe4(0x1f9)]==='pie-center'?_0x39c2e4=_0x5a35db[_0x4defe4(0x218)]['y']-_0x1b982e/0x2+_0x1b982e:_0x39c2e4=_0x1b982e+_0x5a35db['options'][_0x4defe4(0x1e6)][_0x4defe4(0x2aa)]['top'];}else{if(_0x5a35db[_0x4defe4(0x2c5)][_0x4defe4(0x200)][_0x4defe4(0x1f9)]===_0x4defe4(0x2c1)){var _0x36ac22=_0x5a35db[_0x4defe4(0x2c5)]['misc'][_0x4defe4(0x2aa)][_0x4defe4(0x1dc)]+_0x5a35db['textComponents']['footer']['h'];_0x39c2e4=(_0x5a35db['options'][_0x4defe4(0x1c2)][_0x4defe4(0x1d7)]-_0x36ac22)/0x2+_0x5a35db[_0x4defe4(0x2c5)][_0x4defe4(0x1e6)]['canvasPadding']['top']+_0x5a35db['textComponents'][_0x4defe4(0x212)]['h']/0x2;}else _0x39c2e4=_0x5a35db[_0x4defe4(0x2c5)][_0x4defe4(0x1e6)][_0x4defe4(0x2aa)]['top']+_0x5a35db[_0x4defe4(0x1f3)]['subtitle']['h'];}return _0x39c2e4;}},_0x40abf4={'addTooltips':function(_0x2af5e8){var _0x4c8150=_0x2ee82d,_0x896ed=_0x2af5e8[_0x4c8150(0x2cb)][_0x4c8150(0x1b3)]('g')['attr'](_0x4c8150(0x2ce),_0x2af5e8[_0x4c8150(0x2a3)]+_0x4c8150(0x1bf));_0x896ed[_0x4c8150(0x216)]('.'+_0x2af5e8['cssPrefix']+'tooltip')[_0x4c8150(0x20b)](_0x2af5e8['options'][_0x4c8150(0x20b)][_0x4c8150(0x2d9)])[_0x4c8150(0x270)]()['append']('g')[_0x4c8150(0x1ea)](_0x4c8150(0x2ce),_0x2af5e8['cssPrefix']+_0x4c8150(0x2ba))[_0x4c8150(0x1ea)]('id',function(_0xb139ef,_0x329f95){var _0x24fb63=_0x4c8150;return _0x2af5e8[_0x24fb63(0x2a3)]+_0x24fb63(0x2ba)+_0x329f95;})[_0x4c8150(0x1d1)](_0x4c8150(0x2d7),0x0)[_0x4c8150(0x27f)](_0x4c8150(0x290))['attr']('rx',_0x2af5e8[_0x4c8150(0x2c5)][_0x4c8150(0x1bf)]['styles']['borderRadius'])[_0x4c8150(0x1ea)]('ry',_0x2af5e8[_0x4c8150(0x2c5)][_0x4c8150(0x1bf)][_0x4c8150(0x2c7)]['borderRadius'])[_0x4c8150(0x1ea)]('x',-_0x2af5e8[_0x4c8150(0x2c5)]['tooltips'][_0x4c8150(0x2c7)][_0x4c8150(0x207)])[_0x4c8150(0x1ea)](_0x4c8150(0x2d7),_0x2af5e8[_0x4c8150(0x2c5)][_0x4c8150(0x1bf)][_0x4c8150(0x2c7)]['backgroundOpacity'])[_0x4c8150(0x1d1)](_0x4c8150(0x235),_0x2af5e8['options']['tooltips'][_0x4c8150(0x2c7)][_0x4c8150(0x2bb)]),_0x896ed[_0x4c8150(0x216)]('.'+_0x2af5e8[_0x4c8150(0x2a3)]+'tooltip')[_0x4c8150(0x20b)](_0x2af5e8[_0x4c8150(0x2c5)][_0x4c8150(0x20b)]['content'])[_0x4c8150(0x27f)](_0x4c8150(0x201))[_0x4c8150(0x1ea)]('fill',function(_0xce7145){var _0xd61258=_0x4c8150;return _0x2af5e8[_0xd61258(0x2c5)][_0xd61258(0x1bf)][_0xd61258(0x2c7)][_0xd61258(0x23d)];})[_0x4c8150(0x1d1)](_0x4c8150(0x26e),function(_0x43d415){var _0x20d588=_0x4c8150;return _0x2af5e8[_0x20d588(0x2c5)][_0x20d588(0x1bf)][_0x20d588(0x2c7)][_0x20d588(0x1ef)];})[_0x4c8150(0x1d1)](_0x4c8150(0x283),function(_0x515145){var _0x25d1e0=_0x4c8150;return _0x2af5e8['options'][_0x25d1e0(0x1bf)]['styles'][_0x25d1e0(0x2c3)];})[_0x4c8150(0x201)](function(_0x4f8a4b,_0x57addd){var _0x1f31e0=_0x4c8150,_0x34718f=_0x2af5e8[_0x1f31e0(0x2c5)][_0x1f31e0(0x1bf)][_0x1f31e0(0x1b9)];return _0x2af5e8['options']['tooltips'][_0x1f31e0(0x2b5)]===_0x1f31e0(0x22f)&&(_0x34718f=_0x4f8a4b[_0x1f31e0(0x22f)]),_0x40abf4[_0x1f31e0(0x2d3)](_0x2af5e8,_0x34718f,_0x57addd,{'label':_0x4f8a4b[_0x1f31e0(0x1fc)],'value':_0x4f8a4b[_0x1f31e0(0x250)],'percentage':_0x4f8a4b[_0x1f31e0(0x2b7)]});}),_0x896ed[_0x4c8150(0x216)]('.'+_0x2af5e8[_0x4c8150(0x2a3)]+_0x4c8150(0x1e1))[_0x4c8150(0x1ea)](_0x4c8150(0x1db),function(_0x1dbf21,_0x5edce7){var _0x284adf=_0x4c8150,_0x3ba6a0=_0x318770[_0x284adf(0x275)](_0x2af5e8[_0x284adf(0x2a3)]+_0x284adf(0x2ba)+_0x5edce7);return _0x3ba6a0['w']+0x2*_0x2af5e8[_0x284adf(0x2c5)][_0x284adf(0x1bf)][_0x284adf(0x2c7)][_0x284adf(0x207)];})[_0x4c8150(0x1ea)](_0x4c8150(0x203),function(_0x3bde20,_0x564eda){var _0x3484ce=_0x4c8150,_0xb8b9fb=_0x318770['getDimensions'](_0x2af5e8['cssPrefix']+'tooltip'+_0x564eda);return _0xb8b9fb['h']+0x2*_0x2af5e8[_0x3484ce(0x2c5)][_0x3484ce(0x1bf)][_0x3484ce(0x2c7)][_0x3484ce(0x207)];})[_0x4c8150(0x1ea)]('y',function(_0x42d720,_0x563705){var _0x3c85f5=_0x4c8150,_0x53dc51=_0x318770[_0x3c85f5(0x275)](_0x2af5e8['cssPrefix']+'tooltip'+_0x563705);return-(_0x53dc51['h']/0x2)+0x1;});},'showTooltip':function(_0xe19d1a,_0x1664c1){var _0x3238a0=_0x2ee82d,_0x595996=_0xe19d1a[_0x3238a0(0x2c5)][_0x3238a0(0x1bf)]['styles']['fadeInSpeed'];_0x40abf4[_0x3238a0(0x281)]===_0x1664c1&&(_0x595996=0x1),_0x40abf4[_0x3238a0(0x281)]=_0x1664c1,d3[_0x3238a0(0x298)]('#'+_0xe19d1a[_0x3238a0(0x2a3)]+_0x3238a0(0x2ba)+_0x1664c1)[_0x3238a0(0x2b9)]()[_0x3238a0(0x234)](_0x595996)[_0x3238a0(0x1d1)](_0x3238a0(0x2d7),function(){return 0x1;}),_0x40abf4[_0x3238a0(0x2d4)](_0xe19d1a);},'moveTooltip':function(_0x257d43){var _0x5b7933=_0x2ee82d;d3[_0x5b7933(0x216)]('#'+_0x257d43[_0x5b7933(0x2a3)]+_0x5b7933(0x2ba)+_0x40abf4[_0x5b7933(0x281)])['attr'](_0x5b7933(0x2f3),function(_0x181aa9){var _0x2194a2=_0x5b7933,_0xfe6512=d3[_0x2194a2(0x293)](this['parentNode']),_0x3b75e1=_0xfe6512[0x0]+_0x257d43[_0x2194a2(0x2c5)][_0x2194a2(0x1bf)]['styles']['padding']+0x2,_0x40139e=_0xfe6512[0x1]-0x2*_0x257d43[_0x2194a2(0x2c5)][_0x2194a2(0x1bf)]['styles'][_0x2194a2(0x207)]-0x2;return _0x2194a2(0x1d9)+_0x3b75e1+','+_0x40139e+')';});},'hideTooltip':function(_0x353408,_0x466226){var _0x5ad86a=_0x2ee82d;d3['select']('#'+_0x353408[_0x5ad86a(0x2a3)]+_0x5ad86a(0x2ba)+_0x466226)['style'](_0x5ad86a(0x2d7),function(){return 0x0;}),d3[_0x5ad86a(0x298)]('#'+_0x353408[_0x5ad86a(0x2a3)]+_0x5ad86a(0x2ba)+_0x40abf4[_0x5ad86a(0x281)])[_0x5ad86a(0x1ea)](_0x5ad86a(0x2f3),function(_0x217c93,_0x31115a){var _0x547e99=_0x5ad86a,_0x36ede1=_0x353408['options']['size']['canvasWidth']+0x3e8,_0x2ad638=_0x353408['options'][_0x547e99(0x1c2)][_0x547e99(0x1d7)]+0x3e8;return _0x547e99(0x1d9)+_0x36ede1+','+_0x2ad638+')';});},'replacePlaceholders':function(_0x56efa2,_0x389051,_0x35106a,_0x242488){var _0x276019=_0x2ee82d;_0x318770[_0x276019(0x1ae)](_0x56efa2[_0x276019(0x2c5)][_0x276019(0x1bf)][_0x276019(0x22b)])&&_0x56efa2['options'][_0x276019(0x1bf)][_0x276019(0x22b)](_0x35106a,_0x242488);var _0x1afedc=function(){return function(_0x97c775){var _0x1a403b=a4_0x3870,_0xb8979=arguments[0x1];return _0x242488[_0x1a403b(0x20d)](_0xb8979)?_0x242488[arguments[0x1]]:arguments[0x0];};};return _0x389051[_0x276019(0x1ec)](/\{(\w+)\}/g,_0x1afedc(_0x242488));}},_0x1ef87f=function(_0xac3139,_0x1c1e3d){var _0x46b7f6=_0x2ee82d;this[_0x46b7f6(0x220)]=_0xac3139;if(typeof _0xac3139===_0x46b7f6(0x1b9)){var _0x49a0e7=_0xac3139[_0x46b7f6(0x1ec)](/^#/,'');this[_0x46b7f6(0x220)]=document['getElementById'](_0x49a0e7);}var _0x2883a0={};_0xff9633(!![],_0x2883a0,_0x42fc5b,_0x1c1e3d),this['options']=_0x2883a0;this[_0x46b7f6(0x2c5)]['misc'][_0x46b7f6(0x2a3)]!==null?this[_0x46b7f6(0x2a3)]=this[_0x46b7f6(0x2c5)][_0x46b7f6(0x1e6)][_0x46b7f6(0x2a3)]:(this['cssPrefix']='p'+_0x47ace9+'_',_0x47ace9++);if(!_0x2ce209[_0x46b7f6(0x1d3)](this))return;d3[_0x46b7f6(0x298)](this[_0x46b7f6(0x220)])[_0x46b7f6(0x1ea)](_0x5ef442,_0xab766c),_0x5455b6[_0x46b7f6(0x29e)](this),_0x63cf40[_0x46b7f6(0x29e)](this);};_0x1ef87f[_0x2ee82d(0x2dd)][_0x2ee82d(0x29f)]=function(){var _0x285880=_0x2ee82d;if(!_0x2ce209[_0x285880(0x1d3)](this))return;_0x5455b6[_0x285880(0x29e)](this),_0x63cf40['call'](this);},_0x1ef87f['prototype']['redraw']=function(){var _0x3b1a63=_0x2ee82d;this[_0x3b1a63(0x220)][_0x3b1a63(0x21d)]='',_0x63cf40[_0x3b1a63(0x29e)](this);},_0x1ef87f[_0x2ee82d(0x2dd)][_0x2ee82d(0x20a)]=function(){var _0x12f310=_0x2ee82d;this['element'][_0x12f310(0x21d)]='',d3['select'](this[_0x12f310(0x220)])['attr'](_0x5ef442,null);},_0x1ef87f['prototype']['getOpenSegment']=function(){var _0x4f73e5=_0x2ee82d,_0x563ee7=this[_0x4f73e5(0x224)];if(_0x563ee7!==null&&typeof _0x563ee7!==_0x4f73e5(0x2da)){var _0x1f3aea=parseInt(d3[_0x4f73e5(0x298)](_0x563ee7)[_0x4f73e5(0x1ea)](_0x4f73e5(0x1f7)),0xa);return{'element':_0x563ee7,'index':_0x1f3aea,'data':this['options'][_0x4f73e5(0x20b)]['content'][_0x1f3aea]};}else return null;},_0x1ef87f['prototype']['openSegment']=function(_0x525c66){var _0x3b357b=_0x2ee82d;_0x525c66=parseInt(_0x525c66,0xa);if(_0x525c66<0x0||_0x525c66>this[_0x3b357b(0x2c5)]['data'][_0x3b357b(0x2d9)]['length']-0x1)return;_0x276077['openSegment'](this,d3[_0x3b357b(0x298)]('#'+this['cssPrefix']+'segment'+_0x525c66)['node']());},_0x1ef87f['prototype'][_0x2ee82d(0x267)]=function(){var _0x599a70=_0x2ee82d;_0x276077[_0x599a70(0x1b2)]();},_0x1ef87f[_0x2ee82d(0x2dd)]['updateProp']=function(_0x23b398,_0x501a5b){var _0x137de5=_0x2ee82d;switch(_0x23b398){case'header.title.text':var _0x37fdc4=_0x318770[_0x137de5(0x1d0)](this[_0x137de5(0x2c5)],_0x23b398);_0x318770[_0x137de5(0x1d0)](this[_0x137de5(0x2c5)],_0x23b398,_0x501a5b),d3[_0x137de5(0x298)]('#'+this[_0x137de5(0x2a3)]+_0x137de5(0x27e))['html'](_0x501a5b);(_0x37fdc4===''&&_0x501a5b!==''||_0x37fdc4!==''&&_0x501a5b==='')&&this[_0x137de5(0x206)]();break;case _0x137de5(0x288):var _0x3e3553=_0x318770[_0x137de5(0x1d0)](this[_0x137de5(0x2c5)],_0x23b398);_0x318770['processObj'](this['options'],_0x23b398,_0x501a5b),d3[_0x137de5(0x298)]('#'+this['cssPrefix']+_0x137de5(0x212))[_0x137de5(0x1c9)](_0x501a5b);(_0x3e3553===''&&_0x501a5b!==''||_0x3e3553!==''&&_0x501a5b==='')&&this['redraw']();break;case'callbacks.onload':case _0x137de5(0x2f1):case _0x137de5(0x2df):case _0x137de5(0x255):case _0x137de5(0x1c7):case'effects.pullOutSegmentOnClick.speed':case _0x137de5(0x2c2):case _0x137de5(0x2d5):case _0x137de5(0x2a9):_0x318770[_0x137de5(0x1d0)](this['options'],_0x23b398,_0x501a5b);break;default:_0x318770[_0x137de5(0x1d0)](this[_0x137de5(0x2c5)],_0x23b398,_0x501a5b),this[_0x137de5(0x20a)](),this['recreate']();break;}};var _0x5455b6=function(){var _0x110ed0=_0x2ee82d;this['options']['data']['content']=_0x2040b1[_0x110ed0(0x2ea)](this);this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)]['smallSegmentGrouping'][_0x110ed0(0x221)]&&(this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)]['content']=_0x318770[_0x110ed0(0x1f8)](this[_0x110ed0(0x2c5)]['data'][_0x110ed0(0x2d9)],this[_0x110ed0(0x2c5)]['data']['smallSegmentGrouping']));this[_0x110ed0(0x2c5)][_0x110ed0(0x2c0)]=_0x318770[_0x110ed0(0x296)](this),this['totalSize']=_0x2040b1[_0x110ed0(0x2bd)](this['options'][_0x110ed0(0x20b)]['content']);var _0x32b538=this[_0x110ed0(0x2c5)]['labels'][_0x110ed0(0x2b7)][_0x110ed0(0x2a8)];for(var _0x520120=0x0;_0x520120<this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)][_0x110ed0(0x2d9)][_0x110ed0(0x2f0)];_0x520120++){this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)][_0x110ed0(0x2d9)][_0x520120][_0x110ed0(0x2b7)]=_0x263d59(this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)]['content'][_0x520120][_0x110ed0(0x250)],this[_0x110ed0(0x284)],_0x32b538);}var _0x3daf80=0x0;for(var _0x177446=0x0;_0x177446<this[_0x110ed0(0x2c5)]['data'][_0x110ed0(0x2d9)][_0x110ed0(0x2f0)];_0x177446++){_0x177446===this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)][_0x110ed0(0x2d9)][_0x110ed0(0x2f0)]-0x1&&(this[_0x110ed0(0x2c5)][_0x110ed0(0x20b)][_0x110ed0(0x2d9)][_0x177446][_0x110ed0(0x2b7)]=(0x64-_0x3daf80)[_0x110ed0(0x25a)](_0x32b538)),_0x3daf80+=parseFloat(this['options'][_0x110ed0(0x20b)]['content'][_0x177446][_0x110ed0(0x2b7)]);}},_0x63cf40=function(){var _0xd393d5=_0x2ee82d;this[_0xd393d5(0x2cb)]=_0x318770[_0xd393d5(0x1f5)](this),this[_0xd393d5(0x1f3)]={'headerHeight':0x0,'title':{'exists':this['options'][_0xd393d5(0x200)]['title']['text']!=='','h':0x0,'w':0x0},'subtitle':{'exists':this['options'][_0xd393d5(0x200)]['subtitle'][_0xd393d5(0x201)]!=='','h':0x0,'w':0x0},'footer':{'exists':this['options'][_0xd393d5(0x27d)]['text']!=='','h':0x0,'w':0x0}},this['outerLabelGroupData']=[];this[_0xd393d5(0x1f3)]['title']['exists']&&_0x3d2e7c[_0xd393d5(0x1cf)](this);this['textComponents'][_0xd393d5(0x212)][_0xd393d5(0x202)]&&_0x3d2e7c[_0xd393d5(0x2b2)](this);_0x3d2e7c[_0xd393d5(0x2c4)](this);var _0x174675=this;_0x318770['whenIdExists'](this[_0xd393d5(0x2a3)]+'footer',function(){var _0x19b4c8=_0xd393d5;_0x3d2e7c[_0x19b4c8(0x24d)](_0x174675);var _0x320daf=_0x318770['getDimensions'](_0x174675[_0x19b4c8(0x2a3)]+_0x19b4c8(0x27d));_0x174675[_0x19b4c8(0x1f3)][_0x19b4c8(0x27d)]['h']=_0x320daf['h'],_0x174675[_0x19b4c8(0x1f3)]['footer']['w']=_0x320daf['w'];});var _0x212e9e=[];this[_0xd393d5(0x1f3)][_0xd393d5(0x27e)][_0xd393d5(0x202)]&&_0x212e9e[_0xd393d5(0x287)](this[_0xd393d5(0x2a3)]+_0xd393d5(0x27e)),this[_0xd393d5(0x1f3)]['subtitle']['exists']&&_0x212e9e['push'](this[_0xd393d5(0x2a3)]+_0xd393d5(0x212)),this['textComponents'][_0xd393d5(0x27d)][_0xd393d5(0x202)]&&_0x212e9e[_0xd393d5(0x287)](this[_0xd393d5(0x2a3)]+_0xd393d5(0x27d)),_0x318770[_0xd393d5(0x2eb)](_0x212e9e,function(){var _0x2914b1=_0xd393d5;if(_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x27e)]['exists']){var _0x193853=_0x318770[_0x2914b1(0x275)](_0x174675['cssPrefix']+_0x2914b1(0x27e));_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x27e)]['h']=_0x193853['h'],_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x27e)]['w']=_0x193853['w'];}if(_0x174675['textComponents'][_0x2914b1(0x212)]['exists']){var _0x534507=_0x318770[_0x2914b1(0x275)](_0x174675[_0x2914b1(0x2a3)]+'subtitle');_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x212)]['h']=_0x534507['h'],_0x174675['textComponents'][_0x2914b1(0x212)]['w']=_0x534507['w'];}if(_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x27e)]['exists']||_0x174675[_0x2914b1(0x1f3)]['subtitle'][_0x2914b1(0x202)]){var _0x544bbd=0x0;_0x174675[_0x2914b1(0x1f3)]['title'][_0x2914b1(0x202)]&&(_0x544bbd+=_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x27e)]['h'],_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x212)][_0x2914b1(0x202)]&&(_0x544bbd+=_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x200)][_0x2914b1(0x1dd)])),_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x212)][_0x2914b1(0x202)]&&(_0x544bbd+=_0x174675[_0x2914b1(0x1f3)]['subtitle']['h']),_0x174675[_0x2914b1(0x1f3)][_0x2914b1(0x1e2)]=_0x544bbd;}_0x2040b1['computePieRadius'](_0x174675),_0x2040b1[_0x2914b1(0x2e9)](_0x174675),_0x3d2e7c[_0x2914b1(0x23f)](_0x174675),_0x3d2e7c[_0x2914b1(0x286)](_0x174675),_0x174675['options']['misc'][_0x2914b1(0x1bb)][_0x2914b1(0x221)]&&_0x276077[_0x2914b1(0x280)](_0x174675),_0x276077['create'](_0x174675),_0x236f56['add'](_0x174675,_0x2914b1(0x1e9),_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x231)][_0x2914b1(0x1e9)][_0x2914b1(0x25f)]),_0x236f56[_0x2914b1(0x1df)](_0x174675,'outer',_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x231)][_0x2914b1(0x1f4)][_0x2914b1(0x25f)]),_0x236f56[_0x2914b1(0x240)](_0x174675,_0x2914b1(0x1e9),_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x231)][_0x2914b1(0x1e9)][_0x2914b1(0x25f)]),_0x236f56[_0x2914b1(0x240)](_0x174675,'outer',_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x231)][_0x2914b1(0x1f4)]['format']),_0x236f56[_0x2914b1(0x24e)](_0x174675),_0x236f56[_0x2914b1(0x246)](_0x174675,_0x2914b1(0x1f4)),_0x236f56[_0x2914b1(0x1ba)](_0x174675),_0x174675[_0x2914b1(0x2c5)]['labels']['lines'][_0x2914b1(0x221)]&&_0x174675[_0x2914b1(0x2c5)][_0x2914b1(0x231)]['outer'][_0x2914b1(0x25f)]!==_0x2914b1(0x28e)&&_0x236f56[_0x2914b1(0x1ac)](_0x174675),_0x236f56[_0x2914b1(0x246)](_0x174675,_0x2914b1(0x1e9)),_0x236f56[_0x2914b1(0x2b1)](_0x174675),_0x174675[_0x2914b1(0x2c5)]['tooltips'][_0x2914b1(0x221)]&&_0x40abf4[_0x2914b1(0x20e)](_0x174675),_0x276077['addSegmentEventHandlers'](_0x174675);});},_0x263d59=function(_0x2e62f5,_0x1ddf09,_0x5bc0f3){var _0x64bf01=_0x2ee82d,_0x1b3bb0=_0x2e62f5/_0x1ddf09;return _0x5bc0f3<=0x0?Math[_0x64bf01(0x215)](_0x1b3bb0*0x64):(_0x1b3bb0*0x64)[_0x64bf01(0x25a)](_0x5bc0f3);};return _0x1ef87f;}));function a4_0x15b5(){var _0x29a425=['length','callbacks.onMouseoverSegment','top','transform','center','addLabelLines','mouseover','isFunction','offset','segmentValue-','mouseout','maybeCloseOpenSegment','insert','pullOutSegmentOnClick','toRadians','max','#efefef','effect','string','computeLabelLinePositions','gradient','formatter','midpoint','getBBox','tooltips','index','arial','size','label-value1','url(#','toString','labelGroup-outer','effects.pullOutSegmentOnClick.effect','#db4035','html','sort','label-percentage2','isLabelHidden','segment','circle','addTitle','processObj','style','getSegmentAngle','initialCheck','top-left','stop','__data__','canvasHeight','getElementById','translate(','dimensions-','width','bottom','titleSubtitlePadding','arc,.','add','d3pie\x20error:\x20invalid\x20options.misc.cssPrefix','tooltip\x20rect','headerHeight','toLowerCase','...','#299439','misc','lines','easeQuad','inner','attr','#ff9933','replace','d3pie\x20error:\x20the\x20first\x20d3pie()\x20param\x20must\x20be\x20a\x20valid\x20DOM\x20element\x20(not\x20jQuery)\x20or\x20a\x20ID\x20string.','segmentPercentage-','fontSize','getIncludes','onload','easeElastic','textComponents','outer','addSVGSpace','truncation','data-index','applySmallSegmentGrouping','location','lineCoordGroups','31844ogNCHb','label','label-value2','attrTween','innerRadius','header','text','exists','height','number','straight','redraw','padding','isPlainObject','clockwise','destroy','data','min','hasOwnProperty','addTooltips','d3pie\x20error:\x20d3\x20is\x20not\x20available','compounded','onSegmentEvent','subtitle','lineGroups','showTooltip','round','selectAll','exports','pieCenter','text-anchor','path','getIdealOuterLabelPositions','stop-color','innerHTML','#dddddd','label-desc','element','enabled','grad','labelGroup-','currentlyOpenSegment','radialGradient','120%','callbacks','pieCenterOffset','\x20not\x20found.','date','placeholderParser','#14aaf5','curveBasis','ease','caption','1195240lrFGwm','labels','click','Approved','duration','fill','line','-outer','Rejected','[object\x20Function]','segmentPercentage','substr','stroke-width','color','offscreenCoord','positionTitle','positionLabelElements','adjustLabelPos','computeLinePosition','isGrouped','openSegment','black','positionLabelGroups','slice','top-center','abs','mousemove','pieInnerRadius','76595Oikzrr','positionFooter','computeOuterLabelCoords','bottom-center','value','Other','easeLinear','rectIntersect','d3pie','callbacks.onClickSegment','185877mOiHFY','default','anticlockwise','transparent','toFixed','constructor','value-asc','7OtTaOi','newtooltip','format','sortOrder','expanded','segmentMainLabel-','random','version','Initiated','#cccc44','closeSegment','each','outerRadius','label-percentage1','Forwarded','node','isArray','font-size','pieChart','enter','labelGroup','-inner','checkConflict','30PmoFnU','getDimensions','lineGroup','getPieTranslateCenter','isOpeningSegment','middle','onMouseoutSegment','regexp','sqrt','footer','title','append','addGradients','currentTooltip','shuffleArray','font-family','totalSize','resolveOuterLabelCollisions','positionSubtitle','push','header.subtitle.text','load','lineLength','pieOuterRadius','#ffffff','segmentStroke','none','centroid','rect','atan2','414930BAIxjt','mouse','object','effects','initSegmentColors','outerLabelGroupData','select','part','error','mainLabel','error:\x20getDimensions()\x20','#000000','call','recreate','curved','54030gaQZOI','onMouseoverSegment','cssPrefix','#666666','interpolate','data-toggle','d3pie\x20error:\x20no\x20data\x20supplied.','decimalPlaces','effects.highlightLuminosity','canvasPadding','segmentValue','floor','bottom-right','left','hideWhenLessThanPercentage','easeExp','fadeInLabelsAndLines','addSubtitle','log','nodeType','type','defs','percentage','2264160gRjclf','transition','tooltip','backgroundColor','split','getTotalPieSize','end','array','colors','pie-center','effects.pullOutSegmentOnClick.size','font','addFooter','options','bottom-left','styles','#299438','startAngle','canvasWidth','svg','label-asc','9UwjHbg','class','labels-','right','labelGroup-inner,.','highlightSegmentOnMouseover','replacePlaceholders','moveTooltip','effects.highlightSegmentOnMouseover','stroke','opacity','amd','content','undefined','curve','gradientUnits','prototype','arc','callbacks.onMouseoutSegment','sin','userSpaceOnUse','0.2.1','#333333','speed','pieDistance','window','test','easeCircle','calculatePieCenter','sortPieData','whenElementsExist','background-color','function','not\x20valid:\x20','cos'];a4_0x15b5=function(){return _0x29a425;};return a4_0x15b5();}
+/*!
+ * d3pie
+ * @author Ben Keen
+ * @version 0.1.9
+ * @date June 17th, 2015
+ * @repo http://github.com/benkeen/d3pie
+ */
+
+// UMD pattern from https://github.com/umdjs/umd/blob/master/returnExports.js
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module
+    define([], factory);
+  } else if (typeof exports === 'object') {
+    // Node. Does not work with strict CommonJS, but only CommonJS-like environments that support module.exports,
+    // like Node
+    module.exports = factory();
+  } else {
+    // browser globals (root is window)
+    root.d3pie = factory(root);
+  }
+}(this, function() {
+
+	var _scriptName = "d3pie";
+	var _version = "0.2.1";
+
+	// used to uniquely generate IDs and classes, ensuring no conflict between multiple pies on the same page
+	var _uniqueIDCounter = 0;
+
+
+	// this section includes all helper libs on the d3pie object. They're populated via grunt-template. Note: to keep
+	// the syntax highlighting from getting all messed up, I commented out each line. That REQUIRES each of the files
+	// to have an empty first line. Crumby, yes, but acceptable.
+	//// --------- _default-settings.js -----------/**
+/**
+ * Contains the out-the-box settings for the script. Any of these settings that aren't explicitly overridden for the
+ * d3pie instance will inherit from these. This is also included on the main website for use in the generation script.
+ */
+var defaultSettings = {
+	header: {
+		title: {
+			text:     "",
+			color:    "#333333",
+			fontSize: 18,
+			font:     "arial"
+		},
+		subtitle: {
+			text:     "",
+			color:    "#666666",
+			fontSize: 14,
+			font:     "arial"
+		},
+		location: "top-center",
+		titleSubtitlePadding: 8
+	},
+	footer: {
+		text: 	  "",
+		color:    "#666666",
+		fontSize: 14,
+		font:     "arial",
+		location: "left"
+	},
+	size: {
+		canvasHeight: 145,
+		canvasWidth: 300,
+		pieInnerRadius: "0%",
+		pieOuterRadius: null
+	},
+	data: {
+		sortOrder: "none",
+		ignoreSmallSegments: {
+			enabled: false,
+			valueType: "percentage",
+			value: null
+		},
+		smallSegmentGrouping: {
+			enabled: false,
+			value: 1,
+			valueType: "percentage",
+			label: "Other",
+			color: "#cccccc"
+		},
+		content: []
+	},
+	labels: {
+		outer: {
+			format: "label",
+			hideWhenLessThanPercentage: 1,
+			pieDistance: 13
+		},
+		inner: {
+			format: "percentage",
+			hideWhenLessThanPercentage: 1
+		},
+		mainLabel: {
+			color: "#333333",
+			font: "arial",
+			fontSize: 0
+		},
+		percentage: {
+			color: "#dddddd",
+			font: "arial",
+			fontSize: 0,
+			decimalPlaces: 0,
+		},
+		value: {
+			color: "#cccc44",
+			font: "arial",
+			fontSize: 10
+		},
+		lines: {
+			enabled: false,
+			style: "curved",
+			color: "segment"
+		},
+		truncation: {
+			enabled: false,
+			truncateLength: 30
+		},
+    formatter: null
+	},
+	effects: {
+		load: {
+			effect: "default",
+			speed: 1000
+		},
+		/*pullOutSegmentOnClick: {
+			effect: "bounce",
+			speed: 300,
+			size: 10
+		},*/
+		highlightSegmentOnMouseover: true,
+		highlightLuminosity: -0.2
+	},
+	tooltips: {
+		enabled: false,
+		type: "placeholder", // caption|placeholder
+    string: "",
+    placeholderParser: null,
+		styles: {
+      fadeInSpeed: 250,
+			backgroundColor: "#000000",
+      backgroundOpacity: 0.5,
+			color: "#efefef",
+      borderRadius: 2,
+      font: "arial",
+      fontSize: 10,
+      padding: 4
+		}
+	},
+	misc: {
+		colors: {
+			background: null,
+			//Completed, Open, Hold, Close, Cancelled
+			segments: [
+				""
+			],
+			segmentStroke: "#ffffff"
+		},
+		gradient: {
+			enabled: false,
+			percentage: 95,
+			color: "#000000"
+		},
+		canvasPadding: {
+			top: 5,
+			right: 5,
+			bottom: 5,
+			left: 5
+		},
+		pieCenterOffset: {
+			x: 0,
+			y: 0
+		},
+		cssPrefix: null
+	}
+	
+};
+	//// --------- validate.js -----------
+var validate = {
+
+	// called whenever a new pie chart is created
+	initialCheck: function(pie) {
+		var cssPrefix = pie.cssPrefix;
+		var element = pie.element;
+		var options = pie.options;
+
+		// confirm d3 is available [check minimum version]
+		if (!window.d3 || !window.d3.hasOwnProperty("version")) {
+			console.error("d3pie error: d3 is not available");
+			return false;
+		}
+
+		// confirm element is either a DOM element or a valid string for a DOM element
+		if (!(element instanceof HTMLElement || element instanceof SVGElement)) {
+			console.error("d3pie error: the first d3pie() param must be a valid DOM element (not jQuery) or a ID string.");
+			return false;
+		}
+
+		// confirm the CSS prefix is valid. It has to start with a-Z and contain nothing but a-Z0-9_-
+		if (!(/[a-zA-Z][a-zA-Z0-9_-]*$/.test(cssPrefix))) {
+			console.error("d3pie error: invalid options.misc.cssPrefix");
+			return false;
+		}
+
+		// confirm some data has been supplied
+		if (!helpers.isArray(options.data.content)) {
+			console.error("d3pie error: invalid config structure: missing data.content property.");
+			return false;
+		}
+		if (options.data.content.length === 0) {
+			console.error("d3pie error: no data supplied.");
+			return false;
+		}
+
+		// clear out any invalid data. Each data row needs a valid positive number and a label
+		var data = [];
+		for (var i=0; i<options.data.content.length; i++) {
+			if (typeof options.data.content[i].value !== "number" || isNaN(options.data.content[i].value)) {
+				console.log("not valid: ", options.data.content[i]);
+				continue;
+			}
+			if (options.data.content[i].value <= 0) {
+				console.log("not valid - should have positive value: ", options.data.content[i]);
+				continue;
+			}
+			data.push(options.data.content[i]);
+		}
+		pie.options.data.content = data;
+
+		// labels.outer.hideWhenLessThanPercentage - 1-100
+		// labels.inner.hideWhenLessThanPercentage - 1-100
+
+		return true;
+	}
+};
+
+	//// --------- helpers.js -----------
+var helpers = {
+
+	// creates the SVG element
+	addSVGSpace: function(pie) {
+		var element = pie.element;
+		var canvasWidth = pie.options.size.canvasWidth;
+		var canvasHeight = pie.options.size.canvasHeight;
+		var backgroundColor = pie.options.misc.colors.background;
+
+		var svg = d3.select(element).append("svg:svg")
+			.attr("width", canvasWidth)
+			.attr("height", canvasHeight)
+			.attr("viewBox", "150 28 100 93");
+
+		if (backgroundColor !== "transparent") {
+			svg.style("background-color", function() { return backgroundColor; });
+		}
+
+		return svg;
+	},
+
+	whenIdExists: function(id, callback) {
+		var inc = 1;
+		var giveupIterationCount = 1000;
+
+		var interval = setInterval(function() {
+			if (document.getElementById(id)) {
+				clearInterval(interval);
+				callback();
+			}
+			if (inc > giveupIterationCount) {
+				clearInterval(interval);
+			}
+			inc++;
+		}, 1);
+	},
+
+	whenElementsExist: function(els, callback) {
+		var inc = 1;
+		var giveupIterationCount = 1000;
+
+		var interval = setInterval(function() {
+			var allExist = true;
+			for (var i=0; i<els.length; i++) {
+				if (!document.getElementById(els[i])) {
+					allExist = false;
+					break;
+				}
+			}
+			if (allExist) {
+				clearInterval(interval);
+				callback();
+			}
+			if (inc > giveupIterationCount) {
+				clearInterval(interval);
+			}
+			inc++;
+		}, 1);
+	},
+
+	shuffleArray: function(array) {
+		var currentIndex = array.length, tmpVal, randomIndex;
+
+		while (0 !== currentIndex) {
+			randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex -= 1;
+
+			// and swap it with the current element
+			tmpVal = array[currentIndex];
+			array[currentIndex] = array[randomIndex];
+			array[randomIndex] = tmpVal;
+		}
+		return array;
+	},
+
+	processObj: function(obj, is, value) {
+		if (typeof is === 'string') {
+			return helpers.processObj(obj, is.split('.'), value);
+		} else if (is.length === 1 && value !== undefined) {
+            obj[is[0]] = value;
+			return obj[is[0]];
+		} else if (is.length === 0) {
+			return obj;
+		} else {
+			return helpers.processObj(obj[is[0]], is.slice(1), value);
+		}
+	},
+
+	getDimensions: function(id) {
+		var el = document.getElementById(id);
+		var w = 0, h = 0;
+		if (el) {
+			var dimensions = el.getBBox();
+			w = dimensions.width;
+			h = dimensions.height;
+		} else {
+			console.log("error: getDimensions() " + id + " not found.");
+		}
+		return { w: w, h: h };
+	},
+
+	/**
+	 * This is based on the SVG coordinate system, where top-left is 0,0 and bottom right is n-n.
+	 * @param r1
+	 * @param r2
+	 * @returns {boolean}
+	 */
+	rectIntersect: function(r1, r2) {
+		var returnVal = (
+			// r2.left > r1.right
+			(r2.x > (r1.x + r1.w)) ||
+
+			// r2.right < r1.left
+			((r2.x + r2.w) < r1.x) ||
+
+			// r2.top < r1.bottom
+			((r2.y + r2.h) < r1.y) ||
+
+			// r2.bottom > r1.top
+			(r2.y > (r1.y + r1.h))
+		);
+
+		return !returnVal;
+	},
+
+	/**
+	 * Returns a lighter/darker shade of a hex value, based on a luminance value passed.
+	 * @param hex a hex color value such as “#abc” or “#123456″ (the hash is optional)
+	 * @param lum the luminosity factor: -0.1 is 10% darker, 0.2 is 20% lighter, etc.
+	 * @returns {string}
+	 */
+	getColorShade: function(hex, lum) {
+
+		// validate hex string
+		hex = String(hex).replace(/[^0-9a-f]/gi, '');
+		if (hex.length < 6) {
+			hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+		}
+		lum = lum || 0;
+
+		// convert to decimal and change luminosity
+		var newHex = "#";
+		for (var i=0; i<3; i++) {
+			var c = parseInt(hex.substr(i * 2, 2), 16);
+			c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+			newHex += ("00" + c).substr(c.length);
+		}
+
+		return newHex;
+	},
+
+	/**
+	 * Users can choose to specify segment colors in three ways (in order of precedence):
+	 * 	1. include a "color" attribute for each row in data.content
+	 * 	2. include a misc.colors.segments property which contains an array of hex codes
+	 * 	3. specify nothing at all and rely on this lib provide some reasonable defaults
+	 *
+	 * This function sees what's included and populates this.options.colors with whatever's required
+	 * for this pie chart.
+	 * @param data
+	 */
+	initSegmentColors: function(pie) {
+		var data   = pie.options.data.content;
+		var colors = pie.options.misc.colors.segments;
+
+		// TODO this needs a ton of error handling
+
+		var finalColors = [];
+		for (var i=0; i<data.length; i++) {
+			if (data[i].hasOwnProperty("color")) {
+				finalColors.push(data[i].color);
+			} else {
+				finalColors.push(colors[i]);
+			}
+		}
+
+		return finalColors;
+	},
+
+	applySmallSegmentGrouping: function(data, smallSegmentGrouping) {
+		var totalSize;
+		if (smallSegmentGrouping.valueType === "percentage") {
+			totalSize = math.getTotalPieSize(data);
+		}
+
+		// loop through each data item
+		var newData = [];
+		var groupedData = [];
+		var totalGroupedData = 0;
+		for (var i=0; i<data.length; i++) {
+			if (smallSegmentGrouping.valueType === "percentage") {
+				var dataPercent = (data[i].value / totalSize) * 100;
+				if (dataPercent <= smallSegmentGrouping.value) {
+					groupedData.push(data[i]);
+					totalGroupedData += data[i].value;
+					continue;
+				}
+				data[i].isGrouped = false;
+				newData.push(data[i]);
+			} else {
+				if (data[i].value <= smallSegmentGrouping.value) {
+					groupedData.push(data[i]);
+					totalGroupedData += data[i].value;
+					continue;
+				}
+				data[i].isGrouped = false;
+				newData.push(data[i]);
+			}
+		}
+
+		// we're done! See if there's any small segment groups to add
+		if (groupedData.length) {
+			newData.push({
+				color: smallSegmentGrouping.color,
+				label: smallSegmentGrouping.label,
+				value: totalGroupedData,
+				isGrouped: true,
+				groupedData: groupedData
+			});
+		}
+
+		return newData;
+	},
+
+	// for debugging
+	showPoint: function(svg, x, y) {
+		svg.append("circle").attr("cx", x).attr("cy", y).attr("r", 2).style("fill", "black");
+	},
+
+	isFunction: function(functionToCheck) {
+		var getType = {};
+		return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
+	},
+
+	isArray: function(o) {
+		return Object.prototype.toString.call(o) === '[object Array]';
+	}
+};
+
+
+// taken from jQuery
+var extend = function() {
+	var options, name, src, copy, copyIsArray, clone, target = arguments[0] || {},
+		i = 1,
+		length = arguments.length,
+		deep = false,
+		toString = Object.prototype.toString,
+		hasOwn = Object.prototype.hasOwnProperty,
+		class2type = {
+			"[object Boolean]": "boolean",
+			"[object Number]": "number",
+			"[object String]": "string",
+			"[object Function]": "function",
+			"[object Array]": "array",
+			"[object Date]": "date",
+			"[object RegExp]": "regexp",
+			"[object Object]": "object"
+		},
+
+		jQuery = {
+			isFunction: function (obj) {
+				return jQuery.type(obj) === "function";
+			},
+			isArray: Array.isArray ||
+				function (obj) {
+					return jQuery.type(obj) === "array";
+				},
+			isWindow: function (obj) {
+				return obj !== null && obj === obj.window;
+			},
+			isNumeric: function (obj) {
+				return !isNaN(parseFloat(obj)) && isFinite(obj);
+			},
+			type: function (obj) {
+				return obj === null ? String(obj) : class2type[toString.call(obj)] || "object";
+			},
+			isPlainObject: function (obj) {
+				if (!obj || jQuery.type(obj) !== "object" || obj.nodeType) {
+					return false;
+				}
+				try {
+					if (obj.constructor && !hasOwn.call(obj, "constructor") && !hasOwn.call(obj.constructor.prototype, "isPrototypeOf")) {
+						return false;
+					}
+				} catch (e) {
+					return false;
+				}
+				var key;
+				for (key in obj) {}
+				return key === undefined || hasOwn.call(obj, key);
+			}
+		};
+	if (typeof target === "boolean") {
+		deep = target;
+		target = arguments[1] || {};
+		i = 2;
+	}
+	if (typeof target !== "object" && !jQuery.isFunction(target)) {
+		target = {};
+	}
+	if (length === i) {
+		target = this;
+		--i;
+	}
+	for (i; i < length; i++) {
+		if ((options = arguments[i]) !== null) {
+			for (name in options) {
+				src = target[name];
+				copy = options[name];
+				if (target === copy) {
+					continue;
+				}
+				if (deep && copy && (jQuery.isPlainObject(copy) || (copyIsArray = jQuery.isArray(copy)))) {
+					if (copyIsArray) {
+						copyIsArray = false;
+						clone = src && jQuery.isArray(src) ? src : [];
+					} else {
+						clone = src && jQuery.isPlainObject(src) ? src : {};
+					}
+					// WARNING: RECURSION
+					target[name] = extend(deep, clone, copy);
+				} else if (copy !== undefined) {
+					target[name] = copy;
+				}
+			}
+		}
+	}
+	return target;
+};
+	//// --------- math.js -----------
+var math = {
+
+	toRadians: function(degrees) {
+		return degrees * (Math.PI / 180);
+	},
+
+	toDegrees: function(radians) {
+		return radians * (180 / Math.PI);
+	},
+
+	computePieRadius: function(pie) {
+		var size = pie.options.size;
+		var canvasPadding = pie.options.misc.canvasPadding;
+
+		// outer radius is either specified (e.g. through the generator), or omitted altogether
+		// and calculated based on the canvas dimensions. Right now the estimated version isn't great - it should
+		// be possible to calculate it to precisely generate the maximum sized pie, but it's fussy as heck. Something
+		// for the next release.
+
+		// first, calculate the default _outerRadius
+		var w = size.canvasWidth - canvasPadding.left - canvasPadding.right;
+		var h = size.canvasHeight - canvasPadding.top - canvasPadding.bottom;
+
+		// now factor in the footer, title & subtitle
+		if (pie.options.header.location !== "pie-center") {
+			h -= pie.textComponents.headerHeight;
+		}
+
+		if (pie.textComponents.footer.exists) {
+			h -= pie.textComponents.footer.h;
+		}
+
+		// for really teeny pies, h may be < 0. Adjust it back
+		h = (h < 0) ? 0 : h;
+
+		var outerRadius = ((w < h) ? w : h) / 3;
+		var innerRadius, percent;
+
+		// if the user specified something, use that instead
+		if (size.pieOuterRadius !== null) {
+			if (/%/.test(size.pieOuterRadius)) {
+				percent = parseInt(size.pieOuterRadius.replace(/[\D]/, ""), 10);
+				percent = (percent > 99) ? 99 : percent;
+				percent = (percent < 0) ? 0 : percent;
+
+				var smallestDimension = (w < h) ? w : h;
+
+				// now factor in the label line size
+				if (pie.options.labels.outer.format !== "none") {
+					var pieDistanceSpace = parseInt(pie.options.labels.outer.pieDistance, 10) * 2;
+					if (smallestDimension - pieDistanceSpace > 0) {
+						smallestDimension -= pieDistanceSpace;
+					}
+				}
+
+				outerRadius = Math.floor((smallestDimension / 100) * percent) / 2;
+			} else {
+				outerRadius = parseInt(size.pieOuterRadius, 10);
+			}
+		}
+
+		// inner radius
+		if (/%/.test(size.pieInnerRadius)) {
+			percent = parseInt(size.pieInnerRadius.replace(/[\D]/, ""), 10);
+			percent = (percent > 99) ? 99 : percent;
+			percent = (percent < 0) ? 0 : percent;
+			innerRadius = Math.floor((outerRadius / 100) * percent);
+		} else {
+			innerRadius = parseInt(size.pieInnerRadius, 10);
+		}
+
+		pie.innerRadius = innerRadius;
+		pie.outerRadius = outerRadius;
+	},
+
+	getTotalPieSize: function(data) {
+		var totalSize = 0;
+		for (var i=0; i<data.length; i++) {
+			totalSize += data[i].value;
+		}
+		return totalSize;
+	},
+
+	sortPieData: function(pie) {
+		var data                 = pie.options.data.content;
+		var sortOrder            = pie.options.data.sortOrder;
+
+		switch (sortOrder) {
+			case "none":
+				// do nothing
+				break;
+			case "random":
+				data = helpers.shuffleArray(data);
+				break;
+			case "value-asc":
+				data.sort(function(a, b) { return (a.value < b.value) ? -1 : 1; });
+				break;
+			case "value-desc":
+				data.sort(function(a, b) { return (a.value < b.value) ? 1 : -1; });
+				break;
+			case "label-asc":
+				data.sort(function(a, b) { return (a.label.toLowerCase() > b.label.toLowerCase()) ? 1 : -1; });
+				break;
+			case "label-desc":
+				data.sort(function(a, b) { return (a.label.toLowerCase() < b.label.toLowerCase()) ? 1 : -1; });
+				break;
+		}
+
+		return data;
+	},
+
+	// var pieCenter = math.getPieCenter();
+	getPieTranslateCenter: function(pieCenter) {
+		return "translate(" + pieCenter.x + "," + pieCenter.y + ")";
+	},
+
+	/**
+	 * Used to determine where on the canvas the center of the pie chart should be. It takes into account the
+	 * height and position of the title, subtitle and footer, and the various paddings.
+	 * @private
+	 */
+	calculatePieCenter: function(pie) {
+		var pieCenterOffset = pie.options.misc.pieCenterOffset;
+		var hasTopTitle    = (pie.textComponents.title.exists && pie.options.header.location !== "pie-center");
+		var hasTopSubtitle = (pie.textComponents.subtitle.exists && pie.options.header.location !== "pie-center");
+
+		var headerOffset = pie.options.misc.canvasPadding.top;
+		if (hasTopTitle && hasTopSubtitle) {
+			headerOffset += pie.textComponents.title.h + pie.options.header.titleSubtitlePadding + pie.textComponents.subtitle.h;
+		} else if (hasTopTitle) {
+			headerOffset += pie.textComponents.title.h;
+		} else if (hasTopSubtitle) {
+			headerOffset += pie.textComponents.subtitle.h;
+		}
+
+		var footerOffset = 0;
+		if (pie.textComponents.footer.exists) {
+			footerOffset = pie.textComponents.footer.h + pie.options.misc.canvasPadding.bottom;
+		}
+
+		var x = ((pie.options.size.canvasWidth - pie.options.misc.canvasPadding.left - pie.options.misc.canvasPadding.right) / 2) + pie.options.misc.canvasPadding.left;
+		var y = ((pie.options.size.canvasHeight - footerOffset - headerOffset) / 2) + headerOffset;
+
+		x += pieCenterOffset.x;
+		y += pieCenterOffset.y;
+
+		pie.pieCenter = { x: x, y: y };
+	},
+
+
+	/**
+	 * Rotates a point (x, y) around an axis (xm, ym) by degrees (a).
+	 * @param x
+	 * @param y
+	 * @param xm
+	 * @param ym
+	 * @param a angle in degrees
+	 * @returns {Array}
+	 */
+	rotate: function(x, y, xm, ym, a) {
+
+        a = a * Math.PI / 180; // convert to radians
+
+        var cos = Math.cos,
+			sin = Math.sin,
+		// subtract midpoints, so that midpoint is translated to origin and add it in the end again
+		xr = (x - xm) * cos(a) - (y - ym) * sin(a) + xm,
+		yr = (x - xm) * sin(a) + (y - ym) * cos(a) + ym;
+
+		return { x: xr, y: yr };
+	},
+
+	/**
+	 * Translates a point x, y by distance d, and by angle a.
+	 * @param x
+	 * @param y
+	 * @param dist
+	 * @param a angle in degrees
+	 */
+	translate: function(x, y, d, a) {
+		var rads = math.toRadians(a);
+		return {
+			x: x + d * Math.sin(rads),
+			y: y - d * Math.cos(rads)
+		};
+	},
+
+	// from: http://stackoverflow.com/questions/19792552/d3-put-arc-labels-in-a-pie-chart-if-there-is-enough-space
+	pointIsInArc: function(pt, ptData, d3Arc) {
+		// Center of the arc is assumed to be 0,0
+		// (pt.x, pt.y) are assumed to be relative to the center
+		var r1 = d3Arc.innerRadius()(ptData), // Note: Using the innerRadius
+			r2 = d3Arc.outerRadius()(ptData),
+			theta1 = d3Arc.startAngle()(ptData),
+			theta2 = d3Arc.endAngle()(ptData);
+
+		var dist = pt.x * pt.x + pt.y * pt.y,
+			angle = Math.atan2(pt.x, -pt.y); // Note: different coordinate system
+
+		angle = (angle < 0) ? (angle + Math.PI * 2) : angle;
+
+		return (r1 * r1 <= dist) && (dist <= r2 * r2) &&
+			(theta1 <= angle) && (angle <= theta2);
+	}
+};
+
+	//// --------- labels.js -----------
+var labels = {
+
+	/**
+	 * Adds the labels to the pie chart, but doesn't position them. There are two locations for the
+	 * labels: inside (center) of the segments, or outside the segments on the edge.
+	 * @param section "inner" or "outer"
+	 * @param sectionDisplayType "percentage", "value", "label", "label-value1", etc.
+	 * @param pie
+	 */
+	add: function(pie, section, sectionDisplayType) {
+		var include = labels.getIncludes(sectionDisplayType);
+		var settings = pie.options.labels;
+
+		// group the label groups (label, percentage, value) into a single element for simpler positioning
+		var outerLabel = pie.svg.insert("g", "." + pie.cssPrefix + "labels-" + section)
+			.attr("class", pie.cssPrefix + "labels-" + section);
+
+		var labelGroup = outerLabel.selectAll("." + pie.cssPrefix + "labelGroup-" + section)
+			.data(pie.options.data.content)
+			.enter()
+			.append("g")
+			.attr("id", function(d, i) { return pie.cssPrefix + "labelGroup" + i + "-" + section; })
+			.attr("data-index", function(d, i) { return i; })
+			.attr("class", pie.cssPrefix + "labelGroup-" + section)
+			.style("opacity", 0);
+
+		var formatterContext = { section: section, sectionDisplayType: sectionDisplayType };
+
+		// 1. Add the main label
+		if (include.mainLabel) {
+			labelGroup.append("text")
+				.attr("id", function(d, i) { return pie.cssPrefix + "segmentMainLabel" + i + "-" + section; })
+				.attr("class", pie.cssPrefix + "segmentMainLabel-" + section)
+				.text(function(d, i) {
+					var str = d.label;
+
+					// if a custom formatter has been defined, pass it the raw label string - it can do whatever it wants with it.
+					// we only apply truncation if it's not defined
+					if (settings.formatter) {
+						formatterContext.index = i;
+						formatterContext.part = 'mainLabel';
+						formatterContext.value = d.value;
+						formatterContext.label = str;
+						str = settings.formatter(formatterContext);
+					} else if (settings.truncation.enabled && d.label.length > settings.truncation.truncateLength) {
+						str = d.label.substring(0, settings.truncation.truncateLength) + "...";
+					}
+					return str;
+				})
+				.style("font-size", settings.mainLabel.fontSize + "px")
+				.style("font-family", settings.mainLabel.font)
+				.style("fill", settings.mainLabel.color);
+		}
+
+		// 2. Add the percentage label
+		if (include.percentage) {
+			labelGroup.append("text")
+				.attr("id", function(d, i) { return pie.cssPrefix + "segmentPercentage" + i + "-" + section; })
+				.attr("class", pie.cssPrefix + "segmentPercentage-" + section)
+				.text(function(d, i) {
+					var percentage = d.percentage;
+					if (settings.formatter) {
+						formatterContext.index = i;
+						formatterContext.part = "percentage";
+						formatterContext.value = d.value;
+						formatterContext.label = d.percentage;
+						percentage = settings.formatter(formatterContext);
+					} else {
+						percentage += "%";
+					}
+					return percentage;
+				})
+				.style("font-size", settings.percentage.fontSize + "px")
+				.style("font-family", settings.percentage.font)
+				.style("fill", settings.percentage.color);
+		}
+
+		// 3. Add the value label
+		if (include.value) {
+			labelGroup.append("text")
+				.attr("id", function(d, i) { return pie.cssPrefix +  "segmentValue" + i + "-" + section; })
+				.attr("class", pie.cssPrefix + "segmentValue-" + section)
+				.text(function(d, i) {
+					formatterContext.index = i;
+					formatterContext.part = "value";
+					formatterContext.value = d.value;
+					formatterContext.label = d.value;
+					return settings.formatter ? settings.formatter(formatterContext, d.value) : d.value;
+				})
+				.style("font-size", settings.value.fontSize + "px")
+				.style("font-family", settings.value.font)
+				.style("fill", settings.value.color);
+		}
+	},
+
+	/**
+	 * @param section "inner" / "outer"
+	 */
+	positionLabelElements: function(pie, section, sectionDisplayType) {
+		labels["dimensions-" + section] = [];
+
+		// get the latest widths, heights
+		var labelGroups = d3.selectAll("." + pie.cssPrefix + "labelGroup-" + section);
+		labelGroups.each(function(d, i) {
+			var mainLabel  = d3.select(this).selectAll("." + pie.cssPrefix + "segmentMainLabel-" + section);
+			var percentage = d3.select(this).selectAll("." + pie.cssPrefix + "segmentPercentage-" + section);
+			var value      = d3.select(this).selectAll("." + pie.cssPrefix + "segmentValue-" + section);
+
+			labels["dimensions-" + section].push({
+				mainLabel:  (mainLabel.node() !== null) ? mainLabel.node().getBBox() : null,
+				percentage: (percentage.node() !== null) ? percentage.node().getBBox() : null,
+				value:      (value.node() !== null) ? value.node().getBBox() : null
+			});
+		});
+
+		var singleLinePad = 5;
+		var dims = labels["dimensions-" + section];
+		switch (sectionDisplayType) {
+			case "label-value1":
+				d3.selectAll("." + pie.cssPrefix + "segmentValue-" + section)
+					.attr("dx", function(d, i) { return dims[i].mainLabel.width + singleLinePad; });
+				break;
+			case "label-value2":
+				d3.selectAll("." + pie.cssPrefix + "segmentValue-" + section)
+					.attr("dy", function(d, i) { return dims[i].mainLabel.height; });
+				break;
+			case "label-percentage1":
+				d3.selectAll("." + pie.cssPrefix + "segmentPercentage-" + section)
+					.attr("dx", function(d, i) { return dims[i].mainLabel.width + singleLinePad; });
+				break;
+			case "label-percentage2":
+				d3.selectAll("." + pie.cssPrefix + "segmentPercentage-" + section)
+					.attr("dx", function(d, i) { return (dims[i].mainLabel.width / 2) - (dims[i].percentage.width / 2); })
+					.attr("dy", function(d, i) { return dims[i].mainLabel.height; });
+				break;
+	 	}
+	},
+
+	computeLabelLinePositions: function(pie) {
+		pie.lineCoordGroups = [];
+		d3.selectAll("." + pie.cssPrefix + "labelGroup-outer")
+			.each(function(d, i) { return labels.computeLinePosition(pie, i); });
+	},
+
+	computeLinePosition: function(pie, i) {
+		var angle = segments.getSegmentAngle(i, pie.options.data.content, pie.totalSize, { midpoint: true });
+		var originCoords = math.rotate(pie.pieCenter.x, pie.pieCenter.y - pie.outerRadius, pie.pieCenter.x, pie.pieCenter.y, angle);
+		var heightOffset = pie.outerLabelGroupData[i].h / 5; // TODO check
+		var labelXMargin = 6; // the x-distance of the label from the end of the line [TODO configurable]
+
+		var quarter = Math.floor(angle / 90);
+		var midPoint = 4;
+		var x2, y2, x3, y3;
+
+		// this resolves an issue when the
+		if (quarter === 2 && angle === 180) {
+			quarter = 1;
+		}
+
+		switch (quarter) {
+			case 0:
+				x2 = pie.outerLabelGroupData[i].x - labelXMargin - ((pie.outerLabelGroupData[i].x - labelXMargin - originCoords.x) / 2);
+				y2 = pie.outerLabelGroupData[i].y + ((originCoords.y - pie.outerLabelGroupData[i].y) / midPoint);
+				x3 = pie.outerLabelGroupData[i].x - labelXMargin;
+				y3 = pie.outerLabelGroupData[i].y - heightOffset;
+				break;
+			case 1:
+				x2 = originCoords.x + (pie.outerLabelGroupData[i].x - originCoords.x) / midPoint;
+				y2 = originCoords.y + (pie.outerLabelGroupData[i].y - originCoords.y) / midPoint;
+				x3 = pie.outerLabelGroupData[i].x - labelXMargin;
+				y3 = pie.outerLabelGroupData[i].y - heightOffset;
+				break;
+			case 2:
+				var startOfLabelX = pie.outerLabelGroupData[i].x + pie.outerLabelGroupData[i].w + labelXMargin;
+				x2 = originCoords.x - (originCoords.x - startOfLabelX) / midPoint;
+				y2 = originCoords.y + (pie.outerLabelGroupData[i].y - originCoords.y) / midPoint;
+				x3 = pie.outerLabelGroupData[i].x + pie.outerLabelGroupData[i].w + labelXMargin;
+				y3 = pie.outerLabelGroupData[i].y - heightOffset;
+				break;
+			case 3:
+				var startOfLabel = pie.outerLabelGroupData[i].x + pie.outerLabelGroupData[i].w + labelXMargin;
+				x2 = startOfLabel + ((originCoords.x - startOfLabel) / midPoint);
+				y2 = pie.outerLabelGroupData[i].y + (originCoords.y - pie.outerLabelGroupData[i].y) / midPoint;
+				x3 = pie.outerLabelGroupData[i].x + pie.outerLabelGroupData[i].w + labelXMargin;
+				y3 = pie.outerLabelGroupData[i].y - heightOffset;
+				break;
+		}
+
+		/*
+		 * x1 / y1: the x/y coords of the start of the line, at the mid point of the segments arc on the pie circumference
+		 * x2 / y2: if "curved" line style is being used, this is the midpoint of the line. Other
+		 * x3 / y3: the end of the line; closest point to the label
+		 */
+		if (pie.options.labels.lines.style === "straight") {
+			pie.lineCoordGroups[i] = [
+				{ x: originCoords.x, y: originCoords.y },
+				{ x: x3, y: y3 }
+			];
+		} else {
+			pie.lineCoordGroups[i] = [
+				{ x: originCoords.x, y: originCoords.y },
+				{ x: x2, y: y2 },
+				{ x: x3, y: y3 }
+			];
+		}
+	},
+
+	addLabelLines: function(pie) {
+		var lineGroups = pie.svg.insert("g", "." + pie.cssPrefix + "pieChart") // meaning, BEFORE .pieChart
+			.attr("class", pie.cssPrefix + "lineGroups")
+			.style("opacity", 0);
+
+		var lineGroup = lineGroups.selectAll("." + pie.cssPrefix + "lineGroup")
+			.data(pie.lineCoordGroups)
+			.enter()
+			.append("g")
+			.attr("class", pie.cssPrefix + "lineGroup");
+
+        var lineFunction = d3.line()
+			.curve(d3.curveBasis)
+			.x(function(d) { return d.x; })
+			.y(function(d) { return d.y; });
+
+		lineGroup.append("path")
+			.attr("d", lineFunction)
+			.attr("stroke", function(d, i) {
+				return (pie.options.labels.lines.color === "segment") ? pie.options.colors[i] : pie.options.labels.lines.color;
+			})
+			.attr("stroke-width", 1)
+			.attr("fill", "none")
+			.style("opacity", function(d, i) {
+				var percentage = pie.options.labels.outer.hideWhenLessThanPercentage;
+				var isHidden = (percentage !== null && d.percentage < percentage) || pie.options.data.content[i].label === "";
+				return isHidden ? 0 : 1;
+			});
+	},
+
+	positionLabelGroups: function(pie, section) {
+    if (pie.options.labels[section].format === "none") {
+      return;
+    }
+
+		d3.selectAll("." + pie.cssPrefix + "labelGroup-" + section)
+			.style("opacity", 0)
+			.attr("transform", function(d, i) {
+				var x, y;
+				if (section === "outer") {
+					x = pie.outerLabelGroupData[i].x;
+					y = pie.outerLabelGroupData[i].y;
+				} else {
+					var pieCenterCopy = extend(true, {}, pie.pieCenter);
+
+					// now recompute the "center" based on the current _innerRadius
+					if (pie.innerRadius > 0) {
+						var angle = segments.getSegmentAngle(i, pie.options.data.content, pie.totalSize, { midpoint: true });
+						var newCoords = math.translate(pie.pieCenter.x, pie.pieCenter.y, pie.innerRadius, angle);
+						pieCenterCopy.x = newCoords.x;
+						pieCenterCopy.y = newCoords.y;
+					}
+
+					var dims = helpers.getDimensions(pie.cssPrefix + "labelGroup" + i + "-inner");
+					var xOffset = dims.w / 2;
+					var yOffset = dims.h / 4; // confusing! Why 4? should be 2, but it doesn't look right
+
+					x = pieCenterCopy.x + (pie.lineCoordGroups[i][0].x - pieCenterCopy.x) / 1.8;
+					y = pieCenterCopy.y + (pie.lineCoordGroups[i][0].y - pieCenterCopy.y) / 1.8;
+
+					x = x - xOffset;
+					y = y + yOffset;
+				}
+
+				return "translate(" + x + "," + y + ")";
+			});
+	},
+
+
+	fadeInLabelsAndLines: function(pie) {
+
+		// fade in the labels when the load effect is complete - or immediately if there's no load effect
+		var loadSpeed = (pie.options.effects.load.effect === "default") ? pie.options.effects.load.speed : 1;
+		setTimeout(function() {
+			var labelFadeInTime = (pie.options.effects.load.effect === "default") ? 400 : 1; // 400 is hardcoded for the present
+
+			d3.selectAll("." + pie.cssPrefix + "labelGroup-outer")
+				.transition()
+				.duration(labelFadeInTime)
+				.style("opacity", function(d, i) {
+					var percentage = pie.options.labels.outer.hideWhenLessThanPercentage;
+					return (percentage !== null && d.percentage < percentage) ? 0 : 1;
+				});
+
+			d3.selectAll("." + pie.cssPrefix + "labelGroup-inner")
+				.transition()
+				.duration(labelFadeInTime)
+				.style("opacity", function(d, i) {
+					var percentage = pie.options.labels.inner.hideWhenLessThanPercentage;
+					return (percentage !== null && d.percentage < percentage) ? 0 : 1;
+				});
+
+			d3.selectAll("g." + pie.cssPrefix + "lineGroups")
+				.transition()
+				.duration(labelFadeInTime)
+				.style("opacity", 1);
+
+			// once everything's done loading, trigger the onload callback if defined
+			if (helpers.isFunction(pie.options.callbacks.onload)) {
+				setTimeout(function() {
+					try {
+						pie.options.callbacks.onload();
+					} catch (e) { }
+				}, labelFadeInTime);
+			}
+		}, loadSpeed);
+	},
+
+	getIncludes: function(val) {
+		var addMainLabel  = false;
+		var addValue      = false;
+		var addPercentage = false;
+
+		switch (val) {
+			case "label":
+				addMainLabel = true;
+				break;
+			case "value":
+				addValue = true;
+				break;
+			case "percentage":
+				addPercentage = true;
+				break;
+			case "label-value1":
+			case "label-value2":
+				addMainLabel = true;
+				addValue = true;
+				break;
+			case "label-percentage1":
+			case "label-percentage2":
+				addMainLabel = true;
+				addPercentage = true;
+				break;
+		}
+		return {
+			mainLabel: addMainLabel,
+			value: addValue,
+			percentage: addPercentage
+		};
+	},
+
+
+	/**
+	 * This does the heavy-lifting to compute the actual coordinates for the outer label groups. It does two things:
+	 * 1. Make a first pass and position them in the ideal positions, based on the pie sizes
+	 * 2. Do some basic collision avoidance.
+	 */
+	computeOuterLabelCoords: function(pie) {
+
+		// 1. figure out the ideal positions for the outer labels
+		pie.svg.selectAll("." + pie.cssPrefix + "labelGroup-outer")
+			.each(function(d, i) {
+				return labels.getIdealOuterLabelPositions(pie, i);
+			});
+
+		// 2. now adjust those positions to try to accommodate conflicts
+		labels.resolveOuterLabelCollisions(pie);
+	},
+
+	/**
+	 * This attempts to resolve label positioning collisions.
+	 */
+	resolveOuterLabelCollisions: function(pie) {
+    if (pie.options.labels.outer.format === "none") {
+      return;
+    }
+
+		var size = pie.options.data.content.length;
+		labels.checkConflict(pie, 0, "clockwise", size);
+		labels.checkConflict(pie, size-1, "anticlockwise", size);
+	},
+
+	checkConflict: function(pie, currIndex, direction, size) {
+    var i, curr;
+
+		if (size <= 1) {
+			return;
+		}
+
+		var currIndexHemisphere = pie.outerLabelGroupData[currIndex].hs;
+		if (direction === "clockwise" && currIndexHemisphere !== "right") {
+			return;
+		}
+		if (direction === "anticlockwise" && currIndexHemisphere !== "left") {
+			return;
+		}
+		var nextIndex = (direction === "clockwise") ? currIndex+1 : currIndex-1;
+
+		// this is the current label group being looked at. We KNOW it's positioned properly (the first item
+		// is always correct)
+		var currLabelGroup = pie.outerLabelGroupData[currIndex];
+
+		// this one we don't know about. That's the one we're going to look at and move if necessary
+		var examinedLabelGroup = pie.outerLabelGroupData[nextIndex];
+
+		var info = {
+			labelHeights: pie.outerLabelGroupData[0].h,
+			center: pie.pieCenter,
+			lineLength: (pie.outerRadius + pie.options.labels.outer.pieDistance),
+			heightChange: pie.outerLabelGroupData[0].h + 1 // 1 = padding
+		};
+
+		// loop through *ALL* label groups examined so far to check for conflicts. This is because when they're
+		// very tightly fitted, a later label group may still appear high up on the page
+		if (direction === "clockwise") {
+      i = 0;
+			for (; i<=currIndex; i++) {
+				curr = pie.outerLabelGroupData[i];
+
+				// if there's a conflict with this label group, shift the label to be AFTER the last known
+				// one that's been properly placed
+				if (!labels.isLabelHidden(pie, i) && helpers.rectIntersect(curr, examinedLabelGroup)) {
+					labels.adjustLabelPos(pie, nextIndex, currLabelGroup, info);
+					break;
+				}
+			}
+		} else {
+      i = size - 1;
+			for (; i >= currIndex; i--) {
+				curr = pie.outerLabelGroupData[i];
+
+				// if there's a conflict with this label group, shift the label to be AFTER the last known
+				// one that's been properly placed
+				if (!labels.isLabelHidden(pie, i) && helpers.rectIntersect(curr, examinedLabelGroup)) {
+					labels.adjustLabelPos(pie, nextIndex, currLabelGroup, info);
+					break;
+				}
+			}
+		}
+		labels.checkConflict(pie, nextIndex, direction, size);
+	},
+
+	isLabelHidden: function(pie, index) {
+		var percentage = pie.options.labels.outer.hideWhenLessThanPercentage;
+		return (percentage !== null && d.percentage < percentage) || pie.options.data.content[index].label === "";
+	},
+
+	// does a little math to shift a label into a new position based on the last properly placed one
+	adjustLabelPos: function(pie, nextIndex, lastCorrectlyPositionedLabel, info) {
+		var xDiff, yDiff, newXPos, newYPos;
+		newYPos = lastCorrectlyPositionedLabel.y + info.heightChange;
+		yDiff = info.center.y - newYPos;
+
+		if (Math.abs(info.lineLength) > Math.abs(yDiff)) {
+			xDiff = Math.sqrt((info.lineLength * info.lineLength) - (yDiff * yDiff));
+		} else {
+			xDiff = Math.sqrt((yDiff * yDiff) - (info.lineLength * info.lineLength));
+		}
+
+		if (lastCorrectlyPositionedLabel.hs === "right") {
+			newXPos = info.center.x + xDiff;
+		} else {
+			newXPos = info.center.x - xDiff - pie.outerLabelGroupData[nextIndex].w;
+		}
+
+		pie.outerLabelGroupData[nextIndex].x = newXPos;
+		pie.outerLabelGroupData[nextIndex].y = newYPos;
+	},
+
+	/**
+	 * @param i 0-N where N is the dataset size - 1.
+	 */
+	getIdealOuterLabelPositions: function(pie, i) {
+    var labelGroupNode = d3.select("#" + pie.cssPrefix + "labelGroup" + i + "-outer").node();
+    if (!labelGroupNode) {
+      return;
+    }
+    var labelGroupDims = labelGroupNode.getBBox();
+		var angle = segments.getSegmentAngle(i, pie.options.data.content, pie.totalSize, { midpoint: true });
+
+		var originalX = pie.pieCenter.x;
+		var originalY = pie.pieCenter.y - (pie.outerRadius + pie.options.labels.outer.pieDistance);
+		var newCoords = math.rotate(originalX, originalY, pie.pieCenter.x, pie.pieCenter.y, angle);
+
+		// if the label is on the left half of the pie, adjust the values
+		var hemisphere = "right"; // hemisphere
+		if (angle > 180) {
+			newCoords.x -= (labelGroupDims.width + 8);
+			hemisphere = "left";
+		} else {
+			newCoords.x += 8;
+		}
+
+		pie.outerLabelGroupData[i] = {
+			x: newCoords.x,
+			y: newCoords.y,
+			w: labelGroupDims.width,
+			h: labelGroupDims.height,
+			hs: hemisphere
+		};
+	}
+};
+
+	//// --------- segments.js -----------
+var segments = {
+
+    effectMap: {
+        "none": d3.easeLinear,
+        "bounce": d3.easeBounce,
+        "linear": d3.easeLinear,
+        "sin": d3.easeSin,
+        "elastic": d3.easeElastic,
+        "back": d3.easeBack,
+        "quad": d3.easeQuad,
+        "circle": d3.easeCircle,
+        "exp": d3.easeExp
+    },
+
+	/**
+	 * Creates the pie chart segments and displays them according to the desired load effect.
+	 * @private
+	 */
+	create: function(pie) {
+		var pieCenter = pie.pieCenter;
+		var colors = pie.options.colors;
+		var loadEffects = pie.options.effects.load;
+		var segmentStroke = pie.options.misc.colors.segmentStroke;
+
+		// we insert the pie chart BEFORE the title, to ensure the title overlaps the pie
+		var pieChartElement = pie.svg.insert("g", "#" + pie.cssPrefix + "title")
+			.attr("transform", function() { return math.getPieTranslateCenter(pieCenter); })
+			.attr("class", pie.cssPrefix + "pieChart");
+
+		var arc = d3.arc()
+			.innerRadius(pie.innerRadius)
+			.outerRadius(pie.outerRadius)
+			.startAngle(0)
+			.endAngle(function(d) {
+				return (d.value / pie.totalSize) * 2 * Math.PI;
+			});
+
+		var g = pieChartElement.selectAll("." + pie.cssPrefix + "arc")
+			.data(pie.options.data.content)
+			.enter()
+			.append("g")
+			.attr("class", pie.cssPrefix + "arc");
+
+		// if we're not fading in the pie, just set the load speed to 0
+		var loadSpeed = loadEffects.speed;
+		if (loadEffects.effect === "none") {
+			loadSpeed = 0;
+		}
+
+		g.append("path")
+			.attr("id", function(d, i) { return pie.cssPrefix + "segment" + i; })
+			.attr("class", function(d, i) { return "newtooltip"; })
+			.attr("data-toggle", function(d, i) { return "tooltip"; })
+			.attr("title", function(d, i) { return d.percentage + "%"; })
+			.attr("fill", function(d, i) {
+				if(d.label == 'Approved'){
+					var color = '#299438';
+				}
+				else if(d.label == 'Rejected'){
+					var color = '#db4035';
+				}
+				else if(d.label == 'Forwarded'){
+					var color = '#ff9933';
+				}
+				else if(d.label == 'Initiated'){
+					var color = '#14aaf5';
+				}
+				else { //Cancelled
+					//var color = '#db4035';
+				}
+				//var color = colors[i];
+				if (pie.options.misc.gradient.enabled) {
+					color = "url(#" + pie.cssPrefix + "grad" + i + ")";
+				}
+				return color;
+			})
+			.style("stroke", segmentStroke)
+			.style("stroke-width", 1)
+			.transition()
+			.ease(d3.easeCubicInOut)
+			.duration(loadSpeed)
+			.attr("data-index", function(d, i) { return i; })
+			.attrTween("d", function(b) {
+				var i = d3.interpolate({ value: 0 }, b);
+				return function(t) {
+					return pie.arc(i(t));
+				};
+			});
+
+		pie.svg.selectAll("g." + pie.cssPrefix + "arc")
+			.attr("transform",
+			function(d, i) {
+				var angle = 0;
+				if (i > 0) {
+					angle = segments.getSegmentAngle(i-1, pie.options.data.content, pie.totalSize);
+				}
+				return "rotate(" + angle + ")";
+			}
+		);
+		pie.arc = arc;
+	},
+
+	addGradients: function(pie) {
+		var grads = pie.svg.append("defs")
+			.selectAll("radialGradient")
+			.data(pie.options.data.content)
+			.enter().append("radialGradient")
+			.attr("gradientUnits", "userSpaceOnUse")
+			.attr("cx", 0)
+			.attr("cy", 0)
+			.attr("r", "120%")
+			.attr("id", function(d, i) { return pie.cssPrefix + "grad" + i; });
+
+		grads.append("stop").attr("offset", "0%").style("stop-color", function(d, i) { return pie.options.colors[i]; });
+		grads.append("stop").attr("offset", pie.options.misc.gradient.percentage + "%").style("stop-color", pie.options.misc.gradient.color);
+	},
+
+	addSegmentEventHandlers: function(pie) {
+		var arc = d3.selectAll("." + pie.cssPrefix + "arc,." + pie.cssPrefix + "labelGroup-inner,." + pie.cssPrefix + "labelGroup-outer");
+
+		arc.on("click", function() {
+			var currentEl = d3.select(this);
+			var segment;
+
+			// mouseover works on both the segments AND the segment labels, hence the following
+			if (currentEl.attr("class") === pie.cssPrefix + "arc") {
+				segment = currentEl.select("path");
+			} else {
+				var index = currentEl.attr("data-index");
+				segment = d3.select("#" + pie.cssPrefix + "segment" + index);
+			}
+
+			var isExpanded = segment.attr("class") === pie.cssPrefix + "expanded";
+			segments.onSegmentEvent(pie, pie.options.callbacks.onClickSegment, segment, isExpanded);
+			if (pie.options.effects.pullOutSegmentOnClick.effect !== "none") {
+				if (isExpanded) {
+					segments.closeSegment(pie, segment.node());
+				} else {
+					segments.openSegment(pie, segment.node());
+				}
+			}
+		});
+
+		arc.on("mouseover", function() {
+			var currentEl = d3.select(this);
+			var segment, index;
+
+			if (currentEl.attr("class") === pie.cssPrefix + "arc") {
+				segment = currentEl.select("path");
+			} else {
+				index = currentEl.attr("data-index");
+				segment = d3.select("#" + pie.cssPrefix + "segment" + index);
+			}
+
+			if (pie.options.effects.highlightSegmentOnMouseover) {
+				index = segment.attr("data-index");
+				var segColor = pie.options.colors[index];
+				if(this.__data__.label == 'Approved'){
+					var color = '#299439';
+				}
+				else if(this.__data__.label == 'Rejected'){
+					var color = '#db4035';
+				}
+				else if(this.__data__.label == 'Forwarded'){
+					var color = '#ff9933';
+				}
+				else if(this.__data__.label == 'Initiated'){
+					var color = '#14aaf5';
+				}
+				else { //Cancelled
+					var color = '#db4035';
+				}
+				segment.style("fill", color);
+				//segment.style("fill", helpers.getColorShade(segColor, pie.options.effects.highlightLuminosity));
+			}
+
+			if (pie.options.tooltips.enabled) {
+				index = segment.attr("data-index");
+				tt.showTooltip(pie, index);
+			}
+
+			var isExpanded = segment.attr("class") === pie.cssPrefix + "expanded";
+			segments.onSegmentEvent(pie, pie.options.callbacks.onMouseoverSegment, segment, isExpanded);
+		});
+
+		arc.on("mousemove", function() {
+			tt.moveTooltip(pie);
+		});
+
+		arc.on("mouseout", function() {
+			var currentEl = d3.select(this);
+			var segment, index;
+
+			if (currentEl.attr("class") === pie.cssPrefix + "arc") {
+				segment = currentEl.select("path");
+			} else {
+				index = currentEl.attr("data-index");
+				segment = d3.select("#" + pie.cssPrefix + "segment" + index);
+			}
+
+			if (pie.options.effects.highlightSegmentOnMouseover) {
+				index = segment.attr("data-index");
+				var color = pie.options.colors[index];
+				if (pie.options.misc.gradient.enabled) {
+					color = "url(#" + pie.cssPrefix + "grad" + index + ")";
+				}
+				segment.style("fill", color);
+			}
+
+			if (pie.options.tooltips.enabled) {
+				index = segment.attr("data-index");
+				tt.hideTooltip(pie, index);
+			}
+
+			var isExpanded = segment.attr("class") === pie.cssPrefix + "expanded";
+			segments.onSegmentEvent(pie, pie.options.callbacks.onMouseoutSegment, segment, isExpanded);
+		});
+	},
+
+	// helper function used to call the click, mouseover, mouseout segment callback functions
+	onSegmentEvent: function(pie, func, segment, isExpanded) {
+		if (!helpers.isFunction(func)) {
+			return;
+		}
+		var index = parseInt(segment.attr("data-index"), 10);
+		func({
+			segment: segment.node(),
+			index: index,
+			expanded: isExpanded,
+			data: pie.options.data.content[index]
+		});
+	},
+
+	openSegment: function(pie, segment) {
+		if (pie.isOpeningSegment) {
+			return;
+		}
+		pie.isOpeningSegment = true;
+
+		segments.maybeCloseOpenSegment();
+
+		d3.select(segment).transition()
+			.ease(segments.effectMap[pie.options.effects.pullOutSegmentOnClick.effect])
+			.duration(pie.options.effects.pullOutSegmentOnClick.speed)
+			.attr("transform", function(d, i) {
+				var c = pie.arc.centroid(d),
+					x = c[0],
+					y = c[1],
+					h = Math.sqrt(x*x + y*y),
+					pullOutSize = parseInt(pie.options.effects.pullOutSegmentOnClick.size, 10);
+
+				return "translate(" + ((x/h) * pullOutSize) + ',' + ((y/h) * pullOutSize) + ")";
+			})
+			.on("end", function(d, i) {
+				pie.currentlyOpenSegment = segment;
+				pie.isOpeningSegment = false;
+				d3.select(segment).attr("class", pie.cssPrefix + "expanded");
+			});
+	},
+
+    maybeCloseOpenSegment: function() {
+        if (d3.selectAll("." + pie.cssPrefix + "expanded").size() > 0) {
+            segments.closeSegment(pie, d3.select("." + pie.cssPrefix + "expanded").node());
+        }
+	},
+
+	closeSegment: function(pie, segment) {
+		d3.select(segment).transition()
+			.duration(400)
+			.attr("transform", "translate(0,0)")
+			.on("end", function(d, i) {
+				d3.select(segment).attr("class", "");
+				pie.currentlyOpenSegment = null;
+			});
+	},
+
+	getCentroid: function(el) {
+		var bbox = el.getBBox();
+		return {
+			x: bbox.x + bbox.width / 2,
+			y: bbox.y + bbox.height / 2
+		};
+	},
+
+	/**
+	 * General helper function to return a segment's angle, in various different ways.
+	 * @param index
+	 * @param opts optional object for fine-tuning exactly what you want.
+	 */
+	getSegmentAngle: function(index, data, totalSize, opts) {
+		var options = extend({
+			// if true, this returns the full angle from the origin. Otherwise it returns the single segment angle
+			compounded: true,
+
+			// optionally returns the midpoint of the angle instead of the full angle
+			midpoint: false
+		}, opts);
+
+		var currValue = data[index].value;
+		var fullValue;
+		if (options.compounded) {
+			fullValue = 0;
+
+			// get all values up to and including the specified index
+			for (var i=0; i<=index; i++) {
+				fullValue += data[i].value;
+			}
+		}
+
+		if (typeof fullValue === 'undefined') {
+			fullValue = currValue;
+		}
+
+		// now convert the full value to an angle
+		var angle = (fullValue / totalSize) * 360;
+
+		// lastly, if we want the midpoint, factor that sucker in
+		if (options.midpoint) {
+			var currAngle = (currValue / totalSize) * 360;
+			angle -= (currAngle / 2);
+		}
+
+		return angle;
+	}
+
+};
+
+	//// --------- text.js -----------
+var text = {
+	offscreenCoord: -10000,
+
+	addTitle: function(pie) {
+
+
+		var title = pie.svg.selectAll("." + pie.cssPrefix + "title")
+			.data([pie.options.header.title])
+			.enter()
+			.append("text")
+			.text(function(d) { return d.text; })
+			.attr("id", pie.cssPrefix + "title")
+        	.attr("class", pie.cssPrefix + "title")
+			.attr("x", text.offscreenCoord)
+			.attr("y", text.offscreenCoord)
+			.attr("text-anchor", function() {
+				var location;
+				if (pie.options.header.location === "top-center" || pie.options.header.location === "pie-center") {
+					location = "middle";
+				} else {
+					location = "left";
+				}
+				return location;
+			})
+			.attr("fill", function(d) { return d.color; })
+			.style("font-size", function(d) { return d.fontSize + "px"; })
+			.style("font-family", function(d) { return d.font; });
+	},
+
+	positionTitle: function(pie) {
+		var textComponents = pie.textComponents;
+		var headerLocation = pie.options.header.location;
+		var canvasPadding = pie.options.misc.canvasPadding;
+		var canvasWidth = pie.options.size.canvasWidth;
+		var titleSubtitlePadding = pie.options.header.titleSubtitlePadding;
+
+		var x;
+		if (headerLocation === "top-left") {
+			x = canvasPadding.left;
+		} else {
+			x = ((canvasWidth - canvasPadding.right) / 2) + canvasPadding.left;
+		}
+
+    // add whatever offset has been added by user
+    x += pie.options.misc.pieCenterOffset.x;
+
+		var y = canvasPadding.top + textComponents.title.h;
+
+		if (headerLocation === "pie-center") {
+			y = pie.pieCenter.y;
+
+			// still not fully correct
+			if (textComponents.subtitle.exists) {
+				var totalTitleHeight = textComponents.title.h + titleSubtitlePadding + textComponents.subtitle.h;
+				y = y - (totalTitleHeight / 2) + textComponents.title.h;
+			} else {
+				y += (textComponents.title.h / 4);
+			}
+		}
+
+		pie.svg.select("#" + pie.cssPrefix + "title")
+			.attr("x", x)
+			.attr("y", y);
+	},
+
+	addSubtitle: function(pie) {
+		var headerLocation = pie.options.header.location;
+
+		pie.svg.selectAll("." + pie.cssPrefix + "subtitle")
+			.data([pie.options.header.subtitle])
+			.enter()
+			.append("text")
+			.text(function(d) { return d.text; })
+			.attr("x", text.offscreenCoord)
+			.attr("y", text.offscreenCoord)
+			.attr("id", pie.cssPrefix + "subtitle")
+			.attr("class", pie.cssPrefix + "subtitle")
+			.attr("text-anchor", function() {
+				var location;
+				if (headerLocation === "top-center" || headerLocation === "pie-center") {
+					location = "middle";
+				} else {
+					location = "left";
+				}
+				return location;
+			})
+			.attr("fill", function(d) { return d.color; })
+			.style("font-size", function(d) { return d.fontSize + "px"; })
+			.style("font-family", function(d) { return d.font; });
+	},
+
+	positionSubtitle: function(pie) {
+		var canvasPadding = pie.options.misc.canvasPadding;
+		var canvasWidth = pie.options.size.canvasWidth;
+
+		var x;
+		if (pie.options.header.location === "top-left") {
+			x = canvasPadding.left;
+		} else {
+			x = ((canvasWidth - canvasPadding.right) / 2) + canvasPadding.left;
+		}
+
+    // add whatever offset has been added by user
+    x += pie.options.misc.pieCenterOffset.x;
+
+		var y = text.getHeaderHeight(pie);
+		pie.svg.select("#" + pie.cssPrefix + "subtitle")
+			.attr("x", x)
+			.attr("y", y);
+	},
+
+	addFooter: function(pie) {
+		pie.svg.selectAll("." + pie.cssPrefix + "footer")
+			.data([pie.options.footer])
+			.enter()
+			.append("text")
+			.text(function(d) { return d.text; })
+			.attr("x", text.offscreenCoord)
+			.attr("y", text.offscreenCoord)
+			.attr("id", pie.cssPrefix + "footer")
+			.attr("class", pie.cssPrefix + "footer")
+			.attr("text-anchor", function() {
+				var location = "left";
+				if (pie.options.footer.location === "bottom-center") {
+					location = "middle";
+				} else if (pie.options.footer.location === "bottom-right") {
+					location = "left"; // on purpose. We have to change the x-coord to make it properly right-aligned
+				}
+				return location;
+			})
+			.attr("fill", function(d) { return d.color; })
+			.style("font-size", function(d) { return d.fontSize + "px"; })
+			.style("font-family", function(d) { return d.font; });
+	},
+
+	positionFooter: function(pie) {
+		var footerLocation = pie.options.footer.location;
+		var footerWidth = pie.textComponents.footer.w;
+		var canvasWidth = pie.options.size.canvasWidth;
+		var canvasHeight = pie.options.size.canvasHeight;
+		var canvasPadding = pie.options.misc.canvasPadding;
+
+		var x;
+		if (footerLocation === "bottom-left") {
+			x = canvasPadding.left;
+		} else if (footerLocation === "bottom-right") {
+			x = canvasWidth - footerWidth - canvasPadding.right;
+		} else {
+			x = canvasWidth / 2; // TODO - shouldn't this also take into account padding?
+		}
+
+		pie.svg.select("#" + pie.cssPrefix + "footer")
+			.attr("x", x)
+			.attr("y", canvasHeight - canvasPadding.bottom);
+	},
+
+	getHeaderHeight: function(pie) {
+		var h;
+		if (pie.textComponents.title.exists) {
+
+			// if the subtitle isn't defined, it'll be set to 0
+			var totalTitleHeight = pie.textComponents.title.h + pie.options.header.titleSubtitlePadding + pie.textComponents.subtitle.h;
+			if (pie.options.header.location === "pie-center") {
+				h = pie.pieCenter.y - (totalTitleHeight / 2) + totalTitleHeight;
+			} else {
+				h = totalTitleHeight + pie.options.misc.canvasPadding.top;
+			}
+		} else {
+			if (pie.options.header.location === "pie-center") {
+				var footerPlusPadding = pie.options.misc.canvasPadding.bottom + pie.textComponents.footer.h;
+				h = ((pie.options.size.canvasHeight - footerPlusPadding) / 2) + pie.options.misc.canvasPadding.top + (pie.textComponents.subtitle.h / 2);
+			} else {
+				h = pie.options.misc.canvasPadding.top + pie.textComponents.subtitle.h;
+			}
+		}
+		return h;
+	}
+};
+
+	//// --------- validate.js -----------
+var tt = {
+    addTooltips: function(pie) {
+
+    // group the label groups (label, percentage, value) into a single element for simpler positioning
+    var tooltips = pie.svg.insert("g")
+        .attr("class", pie.cssPrefix + "tooltips");
+
+    tooltips.selectAll("." + pie.cssPrefix + "tooltip")
+        .data(pie.options.data.content)
+        .enter()
+        .append("g")
+        .attr("class", pie.cssPrefix + "tooltip")
+        .attr("id", function(d, i) { return pie.cssPrefix + "tooltip" + i; })
+        .style("opacity", 0)
+        .append("rect")
+        .attr("rx", pie.options.tooltips.styles.borderRadius)
+        .attr("ry", pie.options.tooltips.styles.borderRadius)
+        .attr("x", -pie.options.tooltips.styles.padding)
+        .attr("opacity", pie.options.tooltips.styles.backgroundOpacity)
+        .style("fill", pie.options.tooltips.styles.backgroundColor);
+
+    tooltips.selectAll("." + pie.cssPrefix + "tooltip")
+        .data(pie.options.data.content)
+        .append("text")
+        .attr("fill", function(d) { return pie.options.tooltips.styles.color; })
+        .style("font-size", function(d) { return pie.options.tooltips.styles.fontSize; })
+        .style("font-family", function(d) { return pie.options.tooltips.styles.font; })
+        .text(function(d, i) {
+            var caption = pie.options.tooltips.string;
+            if (pie.options.tooltips.type === "caption") {
+                caption = d.caption;
+            }
+            return tt.replacePlaceholders(pie, caption, i, {
+                label: d.label,
+                value: d.value,
+                percentage: d.percentage
+            });
+        });
+
+		tooltips.selectAll("." + pie.cssPrefix + "tooltip rect")
+			.attr("width", function (d, i) {
+                var dims = helpers.getDimensions(pie.cssPrefix + "tooltip" + i);
+                return dims.w + (2 * pie.options.tooltips.styles.padding);
+            })
+            .attr("height", function (d, i) {
+                var dims = helpers.getDimensions(pie.cssPrefix + "tooltip" + i);
+                return dims.h + (2 * pie.options.tooltips.styles.padding);
+            })
+            .attr("y", function (d, i) {
+                var dims = helpers.getDimensions(pie.cssPrefix + "tooltip" + i);
+                return -(dims.h / 2) + 1;
+            });
+	},
+
+    showTooltip: function(pie, index) {
+        var fadeInSpeed = pie.options.tooltips.styles.fadeInSpeed;
+        if (tt.currentTooltip === index) {
+            fadeInSpeed = 1;
+        }
+
+        tt.currentTooltip = index;
+        d3.select("#" + pie.cssPrefix + "tooltip" + index)
+            .transition()
+            .duration(fadeInSpeed)
+            .style("opacity", function() { return 1; });
+
+        tt.moveTooltip(pie);
+    },
+
+    moveTooltip: function(pie) {
+        d3.selectAll("#" + pie.cssPrefix + "tooltip" + tt.currentTooltip)
+            .attr("transform", function(d) {
+                var mouseCoords = d3.mouse(this.parentNode);
+                var x = mouseCoords[0] + pie.options.tooltips.styles.padding + 2;
+                var y = mouseCoords[1] - (2 * pie.options.tooltips.styles.padding) - 2;
+                    return "translate(" + x + "," + y + ")";
+                });
+    },
+
+    hideTooltip: function(pie, index) {
+        d3.select("#" + pie.cssPrefix + "tooltip" + index)
+            .style("opacity", function() { return 0; });
+
+        // move the tooltip offscreen. This ensures that when the user next mouseovers the segment the hidden
+        // element won't interfere
+        d3.select("#" + pie.cssPrefix + "tooltip" + tt.currentTooltip)
+            .attr("transform", function(d, i) {
+                // klutzy, but it accounts for tooltip padding which could push it onscreen
+                var x = pie.options.size.canvasWidth + 1000;
+                var y = pie.options.size.canvasHeight + 1000;
+                return "translate(" + x + "," + y + ")";
+            });
+    },
+
+    replacePlaceholders: function(pie, str, index, replacements) {
+
+        // if the user has defined a placeholderParser function, call it before doing the replacements
+        if (helpers.isFunction(pie.options.tooltips.placeholderParser)) {
+            pie.options.tooltips.placeholderParser(index, replacements);
+        }
+
+        var replacer = function()  {
+            return function(match) {
+                var placeholder = arguments[1];
+                if (replacements.hasOwnProperty(placeholder)) {
+                    return replacements[arguments[1]];
+                } else {
+                    return arguments[0];
+                }
+            };
+        };
+        return str.replace(/\{(\w+)\}/g, replacer(replacements));
+    }
+};
+
+
+	// --------------------------------------------------------------------------------------------
+
+	// our constructor
+	var d3pie = function(element, options) {
+
+		// element can be an ID or DOM element
+		this.element = element;
+		if (typeof element === "string") {
+			var el = element.replace(/^#/, ""); // replace any jQuery-like ID hash char
+			this.element = document.getElementById(el);
+		}
+
+		var opts = {};
+		extend(true, opts, defaultSettings, options);
+		this.options = opts;
+
+		// if the user specified a custom CSS element prefix (ID, class), use it
+		if (this.options.misc.cssPrefix !== null) {
+			this.cssPrefix = this.options.misc.cssPrefix;
+		} else {
+			this.cssPrefix = "p" + _uniqueIDCounter + "_";
+			_uniqueIDCounter++;
+		}
+
+
+		// now run some validation on the user-defined info
+		if (!validate.initialCheck(this)) {
+			return;
+		}
+
+		// add a data-role to the DOM node to let anyone know that it contains a d3pie instance, and the d3pie version
+		d3.select(this.element).attr(_scriptName, _version);
+
+		// things that are done once
+		_setupData.call(this);
+		_init.call(this);
+	};
+
+	d3pie.prototype.recreate = function() {
+		// now run some validation on the user-defined info
+		if (!validate.initialCheck(this)) {
+            return;
+        }
+
+		_setupData.call(this);
+		_init.call(this);
+	};
+
+	d3pie.prototype.redraw = function() {
+		this.element.innerHTML = "";
+		_init.call(this);
+	};
+
+	d3pie.prototype.destroy = function() {
+		this.element.innerHTML = ""; // clear out the SVG
+		d3.select(this.element).attr(_scriptName, null); // remove the data attr
+	};
+
+	/**
+	 * Returns all pertinent info about the current open info. Returns null if nothing's open, or if one is, an object of
+	 * the following form:
+	 * 	{
+	 * 	  element: DOM NODE,
+	 * 	  index: N,
+	 * 	  data: {}
+	 * 	}
+	 */
+	d3pie.prototype.getOpenSegment = function() {
+		var segment = this.currentlyOpenSegment;
+		if (segment !== null && typeof segment !== "undefined") {
+			var index = parseInt(d3.select(segment).attr("data-index"), 10);
+			return {
+				element: segment,
+				index: index,
+				data: this.options.data.content[index]
+			};
+		} else {
+			return null;
+		}
+	};
+
+	d3pie.prototype.openSegment = function(index) {
+		index = parseInt(index, 10);
+		if (index < 0 || index > this.options.data.content.length-1) {
+			return;
+		}
+		segments.openSegment(this, d3.select("#" + this.cssPrefix + "segment" + index).node());
+	};
+
+	d3pie.prototype.closeSegment = function() {
+        segments.maybeCloseOpenSegment();
+	};
+
+	// this let's the user dynamically update aspects of the pie chart without causing a complete redraw. It
+	// intelligently re-renders only the part of the pie that the user specifies. Some things cause a repaint, others
+	// just redraw the single element
+	d3pie.prototype.updateProp = function(propKey, value) {
+		switch (propKey) {
+			case "header.title.text":
+				var oldVal = helpers.processObj(this.options, propKey);
+				helpers.processObj(this.options, propKey, value);
+				d3.select("#" + this.cssPrefix + "title").html(value);
+				if ((oldVal === "" && value !== "") || (oldVal !== "" && value === "")) {
+					this.redraw();
+				}
+				break;
+
+			case "header.subtitle.text":
+				var oldValue = helpers.processObj(this.options, propKey);
+				helpers.processObj(this.options, propKey, value);
+				d3.select("#" + this.cssPrefix + "subtitle").html(value);
+				if ((oldValue === "" && value !== "") || (oldValue !== "" && value === "")) {
+					this.redraw();
+				}
+				break;
+
+			case "callbacks.onload":
+			case "callbacks.onMouseoverSegment":
+			case "callbacks.onMouseoutSegment":
+			case "callbacks.onClickSegment":
+			case "effects.pullOutSegmentOnClick.effect":
+			case "effects.pullOutSegmentOnClick.speed":
+			case "effects.pullOutSegmentOnClick.size":
+			case "effects.highlightSegmentOnMouseover":
+			case "effects.highlightLuminosity":
+				helpers.processObj(this.options, propKey, value);
+				break;
+
+			// everything else, attempt to update it & do a repaint
+			default:
+				helpers.processObj(this.options, propKey, value);
+
+				this.destroy();
+				this.recreate();
+				break;
+		}
+	};
+
+
+	// ------------------------------------------------------------------------------------------------
+
+	var _setupData = function () {
+        this.options.data.content = math.sortPieData(this);
+        if (this.options.data.smallSegmentGrouping.enabled) {
+            this.options.data.content = helpers.applySmallSegmentGrouping(this.options.data.content, this.options.data.smallSegmentGrouping);
+        }
+
+
+        this.options.colors = helpers.initSegmentColors(this);
+        this.totalSize      = math.getTotalPieSize(this.options.data.content);
+
+        var dp = this.options.labels.percentage.decimalPlaces;
+
+        // add in percentage data to content
+        for (var i=0; i<this.options.data.content.length; i++) {
+            this.options.data.content[i].percentage = _getPercentage(this.options.data.content[i].value, this.totalSize, dp);
+        }
+
+        // adjust the final item to ensure the percentage always adds up to precisely 100%. This is necessary
+		var totalPercentage = 0;
+        for (var j=0; j<this.options.data.content.length; j++) {
+        	if (j === this.options.data.content.length - 1) {
+                this.options.data.content[j].percentage = (100 - totalPercentage).toFixed(dp);
+			}
+			totalPercentage += parseFloat(this.options.data.content[j].percentage);
+        }
+	};
+
+	var _init = function() {
+
+		// prep-work
+		this.svg = helpers.addSVGSpace(this);
+
+		// store info about the main text components as part of the d3pie object instance
+		this.textComponents = {
+			headerHeight: 0,
+			title: {
+				exists: this.options.header.title.text !== "",
+				h: 0,
+				w: 0
+			},
+			subtitle: {
+				exists: this.options.header.subtitle.text !== "",
+				h: 0,
+				w: 0
+			},
+			footer: {
+				exists: this.options.footer.text !== "",
+				h: 0,
+				w: 0
+			}
+		};
+
+		this.outerLabelGroupData = [];
+
+		// add the key text components offscreen (title, subtitle, footer). We need to know their widths/heights for later computation
+		if (this.textComponents.title.exists) {
+			text.addTitle(this);
+		}
+		if (this.textComponents.subtitle.exists) {
+			text.addSubtitle(this);
+		}
+		text.addFooter(this);
+
+		// the footer never moves. Put it in place now
+		var self = this;
+		helpers.whenIdExists(this.cssPrefix + "footer", function() {
+			text.positionFooter(self);
+			var d3 = helpers.getDimensions(self.cssPrefix + "footer");
+			self.textComponents.footer.h = d3.h;
+			self.textComponents.footer.w = d3.w;
+		});
+
+		// now create the pie chart and position everything accordingly
+		var reqEls = [];
+		if (this.textComponents.title.exists)    { reqEls.push(this.cssPrefix + "title"); }
+		if (this.textComponents.subtitle.exists) { reqEls.push(this.cssPrefix + "subtitle"); }
+		if (this.textComponents.footer.exists)   { reqEls.push(this.cssPrefix + "footer"); }
+
+		helpers.whenElementsExist(reqEls, function() {
+			if (self.textComponents.title.exists) {
+				var d1 = helpers.getDimensions(self.cssPrefix + "title");
+				self.textComponents.title.h = d1.h;
+				self.textComponents.title.w = d1.w;
+			}
+			if (self.textComponents.subtitle.exists) {
+				var d2 = helpers.getDimensions(self.cssPrefix + "subtitle");
+				self.textComponents.subtitle.h = d2.h;
+				self.textComponents.subtitle.w = d2.w;
+			}
+			// now compute the full header height
+			if (self.textComponents.title.exists || self.textComponents.subtitle.exists) {
+				var headerHeight = 0;
+				if (self.textComponents.title.exists) {
+					headerHeight += self.textComponents.title.h;
+					if (self.textComponents.subtitle.exists) {
+						headerHeight += self.options.header.titleSubtitlePadding;
+					}
+				}
+				if (self.textComponents.subtitle.exists) {
+					headerHeight += self.textComponents.subtitle.h;
+				}
+				self.textComponents.headerHeight = headerHeight;
+			}
+
+			// at this point, all main text component dimensions have been calculated
+			math.computePieRadius(self);
+
+			// this value is used all over the place for placing things and calculating locations. We figure it out ONCE
+			// and store it as part of the object
+			math.calculatePieCenter(self);
+
+			// position the title and subtitle
+			text.positionTitle(self);
+			text.positionSubtitle(self);
+
+			// now create the pie chart segments, and gradients if the user desired
+			if (self.options.misc.gradient.enabled) {
+				segments.addGradients(self);
+			}
+			segments.create(self); // also creates this.arc
+			labels.add(self, "inner", self.options.labels.inner.format);
+			labels.add(self, "outer", self.options.labels.outer.format);
+
+			// position the label elements relatively within their individual group (label, percentage, value)
+			labels.positionLabelElements(self, "inner", self.options.labels.inner.format);
+			labels.positionLabelElements(self, "outer", self.options.labels.outer.format);
+			labels.computeOuterLabelCoords(self);
+
+			// this is (and should be) dumb. It just places the outer groups at their calculated, collision-free positions
+			labels.positionLabelGroups(self, "outer");
+
+			// we use the label line positions for many other calculations, so ALWAYS compute them
+			labels.computeLabelLinePositions(self);
+
+			// only add them if they're actually enabled
+			if (self.options.labels.lines.enabled && self.options.labels.outer.format !== "none") {
+				labels.addLabelLines(self);
+			}
+
+			labels.positionLabelGroups(self, "inner");
+			labels.fadeInLabelsAndLines(self);
+
+			// add and position the tooltips
+			if (self.options.tooltips.enabled) {
+				tt.addTooltips(self);
+			}
+
+			segments.addSegmentEventHandlers(self);
+		});
+	};
+
+	var _getPercentage = function(value, total, decimalPlaces) {
+		var relativeAmount = value / total;
+		if (decimalPlaces <= 0) {
+			return Math.round(relativeAmount * 100);
+		} else {
+			return (relativeAmount * 100).toFixed(decimalPlaces);
+		}
+	};
+
+    return d3pie;
+}));

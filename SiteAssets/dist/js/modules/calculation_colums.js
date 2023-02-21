@@ -1,1 +1,467 @@
-var a6_0x502500=a6_0x6dae;function a6_0x34d1(){var _0x3a1e81=['scrollWidth','topCalcParams','tabulator-calcs-holder','undefined','hide','deleteCells','initializeBottomRow','hasTopCalcs','generateBottomRow','adjustTableSize','864081LZjXbr','setWidth','calc','genColumn','getData','removeChild','registerModule','columnsByIndex','groupBy','reduce','Column\x20Calc\x20Error\x20-\x20No\x20such\x20calculation\x20found,\x20ignoring:\x20','generateRow','calcs','updateData','getGroupResults','topElement','enable','forEach','push','modules','firstChild','recalc','generateTopRow','generateRowData','headersElement','3791466ISPkjY','symbol','rowsToData','bottom','createElement','getKey','reinitialize','prototype','recalcRowGroup','setField','getField','2995782HryNbV','constructor','cells','groupRows','columnManager','1892125GRIunq','topInitialized','div','format','length','botInitialized','tabulator-calcs','getFieldValue','hozAlign','getFormatter','Params','hasBottomCalcs','insertBefore','cssClass','definition','9mVkOXq','getSubGroups','visible','botElement','CalcFormatter','appendChild','marginLeft','rowManager','72221YdWHyq','column','group','450660pMedme','topRow','frozenColumns','plaintext','initializeTopRow','mutator','function','rows','initializeColumn','getElement','initialize','prepend','options','precision','iterator','getRowGroup','top','3349672CXVMHa','table','remove','toFixed','botCalcs','modExists','removeCalcs','registerColumnField','topCalc','value','generateCells','classList','normalizeHeight','footerManager','calculations','element','columnCalcs','topCalcs','disable','botCalc','getGroups','add','recalcGroup','bottomCalc','2deWxNk','botRow','style'];a6_0x34d1=function(){return _0x3a1e81;};return a6_0x34d1();}(function(_0x1cb668,_0x35d258){var _0x41f791=a6_0x6dae,_0x40154a=_0x1cb668();while(!![]){try{var _0x3c8005=-parseInt(_0x41f791(0x1b8))/0x1*(parseInt(_0x41f791(0x1e4))/0x2)+parseInt(_0x41f791(0x178))/0x3+-parseInt(_0x41f791(0x1bb))/0x4+-parseInt(_0x41f791(0x1a1))/0x5+parseInt(_0x41f791(0x19c))/0x6+parseInt(_0x41f791(0x191))/0x7+-parseInt(_0x41f791(0x1cc))/0x8*(parseInt(_0x41f791(0x1b0))/0x9);if(_0x3c8005===_0x35d258)break;else _0x40154a['push'](_0x40154a['shift']());}catch(_0x234e4b){_0x40154a['push'](_0x40154a['shift']());}}}(a6_0x34d1,0x54b3e));var _typeof=typeof Symbol===a6_0x502500(0x1c1)&&typeof Symbol[a6_0x502500(0x1c9)]===a6_0x502500(0x192)?function(_0xd75e78){return typeof _0xd75e78;}:function(_0x149825){var _0x516817=a6_0x502500;return _0x149825&&typeof Symbol===_0x516817(0x1c1)&&_0x149825[_0x516817(0x19d)]===Symbol&&_0x149825!==Symbol[_0x516817(0x198)]?_0x516817(0x192):typeof _0x149825;},ColumnCalcs=function ColumnCalcs(_0xddcf49){var _0x4b08dc=a6_0x502500;this['table']=_0xddcf49,this[_0x4b08dc(0x1dd)]=[],this[_0x4b08dc(0x1d0)]=[],this[_0x4b08dc(0x17b)]=![],this[_0x4b08dc(0x187)]=this[_0x4b08dc(0x195)](),this[_0x4b08dc(0x1b3)]=this['createElement'](),this[_0x4b08dc(0x1bc)]=![],this[_0x4b08dc(0x1e5)]=![],this[_0x4b08dc(0x1a2)]=![],this[_0x4b08dc(0x1a6)]=![],this[_0x4b08dc(0x1c5)]();};function a6_0x6dae(_0x1ef4cd,_0x195d0b){var _0x34d157=a6_0x34d1();return a6_0x6dae=function(_0x6dae8,_0x3f70b9){_0x6dae8=_0x6dae8-0x172;var _0x34540c=_0x34d157[_0x6dae8];return _0x34540c;},a6_0x6dae(_0x1ef4cd,_0x195d0b);}ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x195)]=function(){var _0x5e8f50=a6_0x502500,_0x5aacd9=document[_0x5e8f50(0x195)](_0x5e8f50(0x1a3));return _0x5aacd9[_0x5e8f50(0x1d7)][_0x5e8f50(0x1e1)](_0x5e8f50(0x1e9)),_0x5aacd9;},ColumnCalcs['prototype'][a6_0x502500(0x1c5)]=function(){var _0xa4984f=a6_0x502500;this['genColumn']=new Column({'field':_0xa4984f(0x1d5)},this);},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x1d3)]=function(){},ColumnCalcs['prototype'][a6_0x502500(0x1c3)]=function(_0x19e2b1){var _0xf4bc8a=a6_0x502500,_0x52763d=_0x19e2b1['definition'],_0x4d2b4a={'topCalcParams':_0x52763d[_0xf4bc8a(0x1e8)]||{},'botCalcParams':_0x52763d['bottomCalcParams']||{}};if(_0x52763d['topCalc']){switch(_typeof(_0x52763d['topCalc'])){case'string':this[_0xf4bc8a(0x1da)][_0x52763d[_0xf4bc8a(0x1d4)]]?_0x4d2b4a[_0xf4bc8a(0x1d4)]=this[_0xf4bc8a(0x1da)][_0x52763d[_0xf4bc8a(0x1d4)]]:console['warn'](_0xf4bc8a(0x182),_0x52763d[_0xf4bc8a(0x1d4)]);break;case'function':_0x4d2b4a[_0xf4bc8a(0x1d4)]=_0x52763d[_0xf4bc8a(0x1d4)];break;}_0x4d2b4a[_0xf4bc8a(0x1d4)]&&(_0x19e2b1[_0xf4bc8a(0x18b)]['columnCalcs']=_0x4d2b4a,this['topCalcs'][_0xf4bc8a(0x18a)](_0x19e2b1),this[_0xf4bc8a(0x1cd)][_0xf4bc8a(0x1c7)]['columnCalcs']!=_0xf4bc8a(0x1ba)&&this[_0xf4bc8a(0x1bf)]());}if(_0x52763d['bottomCalc']){switch(_typeof(_0x52763d['bottomCalc'])){case'string':this[_0xf4bc8a(0x1da)][_0x52763d[_0xf4bc8a(0x1e3)]]?_0x4d2b4a[_0xf4bc8a(0x1df)]=this[_0xf4bc8a(0x1da)][_0x52763d[_0xf4bc8a(0x1e3)]]:console['warn']('Column\x20Calc\x20Error\x20-\x20No\x20such\x20calculation\x20found,\x20ignoring:\x20',_0x52763d['bottomCalc']);break;case _0xf4bc8a(0x1c1):_0x4d2b4a[_0xf4bc8a(0x1df)]=_0x52763d[_0xf4bc8a(0x1e3)];break;}_0x4d2b4a['botCalc']&&(_0x19e2b1[_0xf4bc8a(0x18b)][_0xf4bc8a(0x1dc)]=_0x4d2b4a,this[_0xf4bc8a(0x1d0)][_0xf4bc8a(0x18a)](_0x19e2b1),this[_0xf4bc8a(0x1cd)][_0xf4bc8a(0x1c7)][_0xf4bc8a(0x1dc)]!=_0xf4bc8a(0x1ba)&&this[_0xf4bc8a(0x174)]());}},ColumnCalcs['prototype'][a6_0x502500(0x1d2)]=function(){var _0x28774b=a6_0x502500,_0xfeb2d3=![];this['topInitialized']&&(this['topInitialized']=![],this[_0x28774b(0x187)]['parentNode'][_0x28774b(0x17d)](this[_0x28774b(0x187)]),_0xfeb2d3=!![]),this[_0x28774b(0x1a6)]&&(this[_0x28774b(0x1a6)]=![],this[_0x28774b(0x1cd)]['footerManager'][_0x28774b(0x1ce)](this[_0x28774b(0x1b3)]),_0xfeb2d3=!![]),_0xfeb2d3&&this[_0x28774b(0x1cd)][_0x28774b(0x1b7)][_0x28774b(0x177)]();},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x1bf)]=function(){var _0x514b14=a6_0x502500;!this[_0x514b14(0x1a2)]&&(this['table'][_0x514b14(0x1a0)][_0x514b14(0x1c4)]()[_0x514b14(0x1ad)](this[_0x514b14(0x187)],this['table'][_0x514b14(0x1a0)][_0x514b14(0x190)]['nextSibling']),this[_0x514b14(0x1a2)]=!![]);},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x174)]=function(){var _0x1a591a=a6_0x502500;!this[_0x1a591a(0x1a6)]&&(this[_0x1a591a(0x1cd)][_0x1a591a(0x1d9)][_0x1a591a(0x1c6)](this[_0x1a591a(0x1b3)]),this['botInitialized']=!![]);},ColumnCalcs[a6_0x502500(0x198)]['scrollHorizontal']=function(_0xaf397f){var _0x1ee01e=a6_0x502500,_0x17b8ea=0x0,_0x6d9566=this[_0x1ee01e(0x1cd)][_0x1ee01e(0x1a0)][_0x1ee01e(0x1c4)]()[_0x1ee01e(0x1e7)]-this[_0x1ee01e(0x1cd)][_0x1ee01e(0x1db)]['clientWidth'];this['botInitialized']&&(this[_0x1ee01e(0x1e5)][_0x1ee01e(0x1c4)]()[_0x1ee01e(0x1e6)][_0x1ee01e(0x1b6)]=-_0xaf397f+'px');},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x18d)]=function(_0x9b6eed){var _0x120647=a6_0x502500,_0x47aa99,_0x322047;if(this['topInitialized']||this[_0x120647(0x1a6)]){_0x47aa99=this[_0x120647(0x193)](_0x9b6eed);if(this['topInitialized']){this[_0x120647(0x1bc)]&&this[_0x120647(0x1bc)][_0x120647(0x173)]();_0x322047=this[_0x120647(0x183)](_0x120647(0x1cb),this[_0x120647(0x193)](_0x9b6eed)),this['topRow']=_0x322047;while(this['topElement']['firstChild']){this[_0x120647(0x187)][_0x120647(0x17d)](this[_0x120647(0x187)]['firstChild']);}this[_0x120647(0x187)][_0x120647(0x1b5)](_0x322047[_0x120647(0x1c4)]()),_0x322047[_0x120647(0x1c5)](!![]);}if(this[_0x120647(0x1a6)]){this[_0x120647(0x1e5)]&&this[_0x120647(0x1e5)]['deleteCells']();_0x322047=this['generateRow'](_0x120647(0x194),this[_0x120647(0x193)](_0x9b6eed)),this['botRow']=_0x322047;while(this[_0x120647(0x1b3)]['firstChild']){this[_0x120647(0x1b3)][_0x120647(0x17d)](this[_0x120647(0x1b3)][_0x120647(0x18c)]);}this[_0x120647(0x1b3)][_0x120647(0x1b5)](_0x322047[_0x120647(0x1c4)]()),_0x322047[_0x120647(0x1c5)](!![]);}this['table'][_0x120647(0x1b7)][_0x120647(0x177)](),this['table'][_0x120647(0x1d1)](_0x120647(0x1bd))&&this['table']['modules']['frozenColumns']['layout']();}},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x199)]=function(_0x2c7b79){var _0xde2c3c=a6_0x502500;this[_0xde2c3c(0x1e2)](this[_0xde2c3c(0x1cd)][_0xde2c3c(0x18b)][_0xde2c3c(0x19f)][_0xde2c3c(0x1ca)](_0x2c7b79));},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x1e2)]=function(_0x2ae612){var _0xae1dd5=a6_0x502500,_0x338425,_0x1e87d5;_0x2ae612&&(_0x2ae612[_0xae1dd5(0x184)]&&(_0x2ae612[_0xae1dd5(0x184)][_0xae1dd5(0x194)]&&(_0x338425=this['rowsToData'](_0x2ae612[_0xae1dd5(0x1c2)]),_0x1e87d5=this['generateRowData'](_0xae1dd5(0x194),_0x338425),_0x2ae612[_0xae1dd5(0x184)][_0xae1dd5(0x194)][_0xae1dd5(0x185)](_0x1e87d5),_0x2ae612[_0xae1dd5(0x184)][_0xae1dd5(0x194)][_0xae1dd5(0x197)]()),_0x2ae612[_0xae1dd5(0x184)][_0xae1dd5(0x1cb)]&&(_0x338425=this['rowsToData'](_0x2ae612[_0xae1dd5(0x1c2)]),_0x1e87d5=this['generateRowData'](_0xae1dd5(0x1cb),_0x338425),_0x2ae612[_0xae1dd5(0x184)]['top'][_0xae1dd5(0x185)](_0x1e87d5),_0x2ae612[_0xae1dd5(0x184)][_0xae1dd5(0x1cb)][_0xae1dd5(0x197)]())));},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x18e)]=function(_0x95be66){var _0x6b4340=a6_0x502500;return this[_0x6b4340(0x183)]('top',this['rowsToData'](_0x95be66));},ColumnCalcs['prototype'][a6_0x502500(0x176)]=function(_0x4fa471){var _0x26c3bc=a6_0x502500;return this[_0x26c3bc(0x183)]('bottom',this[_0x26c3bc(0x193)](_0x4fa471));},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x193)]=function(_0x36686d){var _0x24a16f=[];return _0x36686d['forEach'](function(_0xbed1db){var _0x41ea43=a6_0x6dae;_0x24a16f[_0x41ea43(0x18a)](_0xbed1db[_0x41ea43(0x17c)]());}),_0x24a16f;},ColumnCalcs[a6_0x502500(0x198)]['generateRow']=function(_0x4fb93f,_0x41b935){var _0x1e7daa=a6_0x502500,_0x273d2d=this,_0x39c3da=this[_0x1e7daa(0x18f)](_0x4fb93f,_0x41b935),_0x4f6519;return _0x273d2d[_0x1e7daa(0x1cd)][_0x1e7daa(0x1d1)](_0x1e7daa(0x1c0))&&_0x273d2d[_0x1e7daa(0x1cd)]['modules'][_0x1e7daa(0x1c0)][_0x1e7daa(0x1de)](),_0x4f6519=new Row(_0x39c3da,this,_0x1e7daa(0x17a)),_0x273d2d[_0x1e7daa(0x1cd)][_0x1e7daa(0x1d1)](_0x1e7daa(0x1c0))&&_0x273d2d['table']['modules'][_0x1e7daa(0x1c0)][_0x1e7daa(0x188)](),_0x4f6519['getElement']()['classList'][_0x1e7daa(0x1e1)](_0x1e7daa(0x1a7),'tabulator-calcs-'+_0x4fb93f),_0x4f6519[_0x1e7daa(0x1d6)]=function(){var _0x4a050a=_0x1e7daa,_0x213dff=[];_0x273d2d[_0x4a050a(0x1cd)][_0x4a050a(0x1a0)][_0x4a050a(0x17f)][_0x4a050a(0x189)](function(_0x191044){var _0x186f8e=_0x4a050a;_0x273d2d['genColumn'][_0x186f8e(0x19a)](_0x191044[_0x186f8e(0x19b)]()),_0x273d2d[_0x186f8e(0x17b)][_0x186f8e(0x1a9)]=_0x191044[_0x186f8e(0x1a9)];_0x191044['definition'][_0x4fb93f+'CalcFormatter']&&_0x273d2d['table'][_0x186f8e(0x1d1)](_0x186f8e(0x1a4))?_0x273d2d[_0x186f8e(0x17b)][_0x186f8e(0x18b)][_0x186f8e(0x1a4)]={'formatter':_0x273d2d['table']['modules'][_0x186f8e(0x1a4)][_0x186f8e(0x1aa)](_0x191044[_0x186f8e(0x1af)][_0x4fb93f+_0x186f8e(0x1b4)]),'params':_0x191044[_0x186f8e(0x1af)][_0x4fb93f+'CalcFormatterParams']}:_0x273d2d['genColumn'][_0x186f8e(0x18b)][_0x186f8e(0x1a4)]={'formatter':_0x273d2d['table'][_0x186f8e(0x18b)][_0x186f8e(0x1a4)][_0x186f8e(0x1aa)](_0x186f8e(0x1be)),'params':{}};_0x273d2d[_0x186f8e(0x17b)][_0x186f8e(0x1af)][_0x186f8e(0x1ae)]=_0x191044[_0x186f8e(0x1af)][_0x186f8e(0x1ae)];var _0x3e6f52=new Cell(_0x273d2d[_0x186f8e(0x17b)],_0x4f6519);_0x3e6f52[_0x186f8e(0x1b9)]=_0x191044,_0x3e6f52[_0x186f8e(0x179)](),_0x191044[_0x186f8e(0x19e)][_0x186f8e(0x18a)](_0x3e6f52),_0x213dff['push'](_0x3e6f52),!_0x191044[_0x186f8e(0x1b2)]&&_0x3e6f52[_0x186f8e(0x172)]();}),this[_0x4a050a(0x19e)]=_0x213dff;},_0x4f6519;},ColumnCalcs['prototype']['generateRowData']=function(_0x2312dd,_0x1792b4){var _0x2e965f=a6_0x502500,_0x59d60f={},_0x34f79f=_0x2312dd==_0x2e965f(0x1cb)?this[_0x2e965f(0x1dd)]:this['botCalcs'],_0x2d0adb=_0x2312dd==_0x2e965f(0x1cb)?_0x2e965f(0x1d4):_0x2e965f(0x1df),_0x498a71,_0x2e10b0;return _0x34f79f['forEach'](function(_0x287c9d){var _0x195227=_0x2e965f,_0x279c74=[];_0x287c9d[_0x195227(0x18b)]['columnCalcs']&&_0x287c9d[_0x195227(0x18b)][_0x195227(0x1dc)][_0x2d0adb]&&(_0x1792b4[_0x195227(0x189)](function(_0x3d2896){var _0x4c1c74=_0x195227;_0x279c74[_0x4c1c74(0x18a)](_0x287c9d[_0x4c1c74(0x1a8)](_0x3d2896));}),_0x2e10b0=_0x2d0adb+_0x195227(0x1ab),_0x498a71=typeof _0x287c9d[_0x195227(0x18b)][_0x195227(0x1dc)][_0x2e10b0]===_0x195227(0x1c1)?_0x287c9d[_0x195227(0x18b)][_0x195227(0x1dc)][_0x2e10b0](_0x279c74,_0x1792b4):_0x287c9d[_0x195227(0x18b)][_0x195227(0x1dc)][_0x2e10b0],_0x287c9d['setFieldValue'](_0x59d60f,_0x287c9d[_0x195227(0x18b)]['columnCalcs'][_0x2d0adb](_0x279c74,_0x1792b4,_0x498a71)));}),_0x59d60f;},ColumnCalcs['prototype'][a6_0x502500(0x175)]=function(){var _0x5137d9=a6_0x502500;return!!this[_0x5137d9(0x1dd)][_0x5137d9(0x1a5)];},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x1ac)]=function(){var _0x4d21e9=a6_0x502500;return!!this['botCalcs'][_0x4d21e9(0x1a5)];},ColumnCalcs[a6_0x502500(0x198)]['redraw']=function(){var _0x13c1ef=a6_0x502500;this['topRow']&&this[_0x13c1ef(0x1bc)][_0x13c1ef(0x1d8)](!![]),this['botRow']&&this[_0x13c1ef(0x1e5)][_0x13c1ef(0x1d8)](!![]);},ColumnCalcs['prototype']['getResults']=function(){var _0x132b53=a6_0x502500,_0x451f43=this,_0x29f81d={},_0xa91db2;return this[_0x132b53(0x1cd)]['options'][_0x132b53(0x180)]&&this[_0x132b53(0x1cd)]['modExists']('groupRows')?(_0xa91db2=this['table'][_0x132b53(0x18b)][_0x132b53(0x19f)][_0x132b53(0x1e0)](!![]),_0xa91db2[_0x132b53(0x189)](function(_0x22a056){var _0x517aa8=_0x132b53;_0x29f81d[_0x22a056[_0x517aa8(0x196)]()]=_0x451f43[_0x517aa8(0x186)](_0x22a056);})):_0x29f81d={'top':this[_0x132b53(0x1bc)]?this[_0x132b53(0x1bc)]['getData']():{},'bottom':this['botRow']?this[_0x132b53(0x1e5)][_0x132b53(0x17c)]():{}},_0x29f81d;},ColumnCalcs['prototype'][a6_0x502500(0x186)]=function(_0x2db125){var _0x29dfff=a6_0x502500,_0x10d596=this,_0x359edf=_0x2db125['_getSelf'](),_0x57cf3d=_0x2db125[_0x29dfff(0x1b1)](),_0x3fd7ad={},_0x161609={};return _0x57cf3d[_0x29dfff(0x189)](function(_0x2f51c8){var _0x32a03e=_0x29dfff;_0x3fd7ad[_0x2f51c8[_0x32a03e(0x196)]()]=_0x10d596[_0x32a03e(0x186)](_0x2f51c8);}),_0x161609={'top':_0x359edf[_0x29dfff(0x184)][_0x29dfff(0x1cb)]?_0x359edf[_0x29dfff(0x184)][_0x29dfff(0x1cb)][_0x29dfff(0x17c)]():{},'bottom':_0x359edf[_0x29dfff(0x184)][_0x29dfff(0x194)]?_0x359edf['calcs'][_0x29dfff(0x194)][_0x29dfff(0x17c)]():{},'groups':_0x3fd7ad},_0x161609;},ColumnCalcs[a6_0x502500(0x198)][a6_0x502500(0x1da)]={'avg':function avg(_0x3352b9,_0x4bdacf,_0x3e7760){var _0x13601b=a6_0x502500,_0x4b5145=0x0,_0xbabf6d=typeof _0x3e7760[_0x13601b(0x1c8)]!=='undefined'?_0x3e7760[_0x13601b(0x1c8)]:0x2;return _0x3352b9[_0x13601b(0x1a5)]&&(_0x4b5145=_0x3352b9[_0x13601b(0x181)](function(_0x310978,_0x47e02d){return _0x47e02d=Number(_0x47e02d),_0x310978+_0x47e02d;}),_0x4b5145=_0x4b5145/_0x3352b9[_0x13601b(0x1a5)],_0x4b5145=_0xbabf6d!==![]?_0x4b5145[_0x13601b(0x1cf)](_0xbabf6d):_0x4b5145),parseFloat(_0x4b5145)['toString']();},'max':function max(_0x4d5edf,_0x3228e3,_0xeb23eb){var _0x2cd537=a6_0x502500,_0x499b99=null,_0x158711=typeof _0xeb23eb['precision']!=='undefined'?_0xeb23eb[_0x2cd537(0x1c8)]:![];return _0x4d5edf[_0x2cd537(0x189)](function(_0x2dfb9c){_0x2dfb9c=Number(_0x2dfb9c),(_0x2dfb9c>_0x499b99||_0x499b99===null)&&(_0x499b99=_0x2dfb9c);}),_0x499b99!==null?_0x158711!==![]?_0x499b99[_0x2cd537(0x1cf)](_0x158711):_0x499b99:'';},'min':function min(_0x216c78,_0x501e18,_0x5d90d9){var _0x10e694=a6_0x502500,_0x55fd99=null,_0x3dfeea=typeof _0x5d90d9[_0x10e694(0x1c8)]!==_0x10e694(0x1ea)?_0x5d90d9[_0x10e694(0x1c8)]:![];return _0x216c78[_0x10e694(0x189)](function(_0x36689e){_0x36689e=Number(_0x36689e),(_0x36689e<_0x55fd99||_0x55fd99===null)&&(_0x55fd99=_0x36689e);}),_0x55fd99!==null?_0x3dfeea!==![]?_0x55fd99[_0x10e694(0x1cf)](_0x3dfeea):_0x55fd99:'';},'sum':function sum(_0x325f56,_0x6d1787,_0x25b467){var _0x456e66=a6_0x502500,_0x2279ab=0x0,_0x5d1b8f=typeof _0x25b467[_0x456e66(0x1c8)]!==_0x456e66(0x1ea)?_0x25b467[_0x456e66(0x1c8)]:![];return _0x325f56[_0x456e66(0x1a5)]&&_0x325f56[_0x456e66(0x189)](function(_0x4e97e8){_0x4e97e8=Number(_0x4e97e8),_0x2279ab+=!isNaN(_0x4e97e8)?Number(_0x4e97e8):0x0;}),_0x5d1b8f!==![]?_0x2279ab[_0x456e66(0x1cf)](_0x5d1b8f):_0x2279ab;},'concat':function concat(_0x48c34a,_0x56d74f,_0x586c6a){var _0x3079b6=a6_0x502500,_0x335055=0x0;return _0x48c34a[_0x3079b6(0x1a5)]&&(_0x335055=_0x48c34a[_0x3079b6(0x181)](function(_0x316704,_0x16c561){return String(_0x316704)+String(_0x16c561);})),_0x335055;},'count':function count(_0x2a5d82,_0x4a9aed,_0x57efa1){var _0xb6424=a6_0x502500,_0x4bc9c1=0x0;return _0x2a5d82[_0xb6424(0x1a5)]&&_0x2a5d82[_0xb6424(0x189)](function(_0x2364b2){_0x2364b2&&_0x4bc9c1++;}),_0x4bc9c1;}},Tabulator[a6_0x502500(0x198)][a6_0x502500(0x17e)](a6_0x502500(0x1dc),ColumnCalcs);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ColumnCalcs = function ColumnCalcs(table) {
+	this.table = table; //hold Tabulator object
+	this.topCalcs = [];
+	this.botCalcs = [];
+	this.genColumn = false;
+	this.topElement = this.createElement();
+	this.botElement = this.createElement();
+	this.topRow = false;
+	this.botRow = false;
+	this.topInitialized = false;
+	this.botInitialized = false;
+
+	this.initialize();
+};
+
+ColumnCalcs.prototype.createElement = function () {
+	var el = document.createElement("div");
+	el.classList.add("tabulator-calcs-holder");
+	return el;
+};
+
+ColumnCalcs.prototype.initialize = function () {
+	this.genColumn = new Column({ field: "value" }, this);
+};
+
+//dummy functions to handle being mock column manager
+ColumnCalcs.prototype.registerColumnField = function () {};
+
+//initialize column calcs
+ColumnCalcs.prototype.initializeColumn = function (column) {
+	var def = column.definition;
+
+	var config = {
+		topCalcParams: def.topCalcParams || {},
+		botCalcParams: def.bottomCalcParams || {}
+	};
+
+	if (def.topCalc) {
+
+		switch (_typeof(def.topCalc)) {
+			case "string":
+				if (this.calculations[def.topCalc]) {
+					config.topCalc = this.calculations[def.topCalc];
+				} else {
+					console.warn("Column Calc Error - No such calculation found, ignoring: ", def.topCalc);
+				}
+				break;
+
+			case "function":
+				config.topCalc = def.topCalc;
+				break;
+
+		}
+
+		if (config.topCalc) {
+			column.modules.columnCalcs = config;
+			this.topCalcs.push(column);
+
+			if (this.table.options.columnCalcs != "group") {
+				this.initializeTopRow();
+			}
+		}
+	}
+
+	if (def.bottomCalc) {
+		switch (_typeof(def.bottomCalc)) {
+			case "string":
+				if (this.calculations[def.bottomCalc]) {
+					config.botCalc = this.calculations[def.bottomCalc];
+				} else {
+					console.warn("Column Calc Error - No such calculation found, ignoring: ", def.bottomCalc);
+				}
+				break;
+
+			case "function":
+				config.botCalc = def.bottomCalc;
+				break;
+
+		}
+
+		if (config.botCalc) {
+			column.modules.columnCalcs = config;
+			this.botCalcs.push(column);
+
+			if (this.table.options.columnCalcs != "group") {
+				this.initializeBottomRow();
+			}
+		}
+	}
+};
+
+ColumnCalcs.prototype.removeCalcs = function () {
+	var changed = false;
+
+	if (this.topInitialized) {
+		this.topInitialized = false;
+		this.topElement.parentNode.removeChild(this.topElement);
+		changed = true;
+	}
+
+	if (this.botInitialized) {
+		this.botInitialized = false;
+		this.table.footerManager.remove(this.botElement);
+		changed = true;
+	}
+
+	if (changed) {
+		this.table.rowManager.adjustTableSize();
+	}
+};
+
+ColumnCalcs.prototype.initializeTopRow = function () {
+	if (!this.topInitialized) {
+		// this.table.columnManager.headersElement.after(this.topElement);
+		this.table.columnManager.getElement().insertBefore(this.topElement, this.table.columnManager.headersElement.nextSibling);
+		this.topInitialized = true;
+	}
+};
+
+ColumnCalcs.prototype.initializeBottomRow = function () {
+	if (!this.botInitialized) {
+		this.table.footerManager.prepend(this.botElement);
+		this.botInitialized = true;
+	}
+};
+
+ColumnCalcs.prototype.scrollHorizontal = function (left) {
+	var hozAdjust = 0,
+	    scrollWidth = this.table.columnManager.getElement().scrollWidth - this.table.element.clientWidth;
+
+	if (this.botInitialized) {
+		this.botRow.getElement().style.marginLeft = -left + "px";
+	}
+};
+
+ColumnCalcs.prototype.recalc = function (rows) {
+	var data, row;
+
+	if (this.topInitialized || this.botInitialized) {
+		data = this.rowsToData(rows);
+
+		if (this.topInitialized) {
+			if (this.topRow) {
+				this.topRow.deleteCells();
+			}
+
+			row = this.generateRow("top", this.rowsToData(rows));
+			this.topRow = row;
+			while (this.topElement.firstChild) {
+				this.topElement.removeChild(this.topElement.firstChild);
+			}this.topElement.appendChild(row.getElement());
+			row.initialize(true);
+		}
+
+		if (this.botInitialized) {
+			if (this.botRow) {
+				this.botRow.deleteCells();
+			}
+
+			row = this.generateRow("bottom", this.rowsToData(rows));
+			this.botRow = row;
+			while (this.botElement.firstChild) {
+				this.botElement.removeChild(this.botElement.firstChild);
+			}this.botElement.appendChild(row.getElement());
+			row.initialize(true);
+		}
+
+		this.table.rowManager.adjustTableSize();
+
+		//set resizable handles
+		if (this.table.modExists("frozenColumns")) {
+			this.table.modules.frozenColumns.layout();
+		}
+	}
+};
+
+ColumnCalcs.prototype.recalcRowGroup = function (row) {
+	this.recalcGroup(this.table.modules.groupRows.getRowGroup(row));
+};
+
+ColumnCalcs.prototype.recalcGroup = function (group) {
+	var data, rowData;
+
+	if (group) {
+		if (group.calcs) {
+			if (group.calcs.bottom) {
+				data = this.rowsToData(group.rows);
+				rowData = this.generateRowData("bottom", data);
+
+				group.calcs.bottom.updateData(rowData);
+				group.calcs.bottom.reinitialize();
+			}
+
+			if (group.calcs.top) {
+				data = this.rowsToData(group.rows);
+				rowData = this.generateRowData("top", data);
+
+				group.calcs.top.updateData(rowData);
+				group.calcs.top.reinitialize();
+			}
+		}
+	}
+};
+
+//generate top stats row
+ColumnCalcs.prototype.generateTopRow = function (rows) {
+	return this.generateRow("top", this.rowsToData(rows));
+};
+//generate bottom stats row
+ColumnCalcs.prototype.generateBottomRow = function (rows) {
+	return this.generateRow("bottom", this.rowsToData(rows));
+};
+
+ColumnCalcs.prototype.rowsToData = function (rows) {
+	var data = [];
+
+	rows.forEach(function (row) {
+		data.push(row.getData());
+	});
+
+	return data;
+};
+
+//generate stats row
+ColumnCalcs.prototype.generateRow = function (pos, data) {
+	var self = this,
+	    rowData = this.generateRowData(pos, data),
+	    row;
+
+	if (self.table.modExists("mutator")) {
+		self.table.modules.mutator.disable();
+	}
+
+	row = new Row(rowData, this, "calc");
+
+	if (self.table.modExists("mutator")) {
+		self.table.modules.mutator.enable();
+	}
+
+	row.getElement().classList.add("tabulator-calcs", "tabulator-calcs-" + pos);
+
+	row.generateCells = function () {
+
+		var cells = [];
+
+		self.table.columnManager.columnsByIndex.forEach(function (column) {
+
+			//set field name of mock column
+			self.genColumn.setField(column.getField());
+			self.genColumn.hozAlign = column.hozAlign;
+
+			if (column.definition[pos + "CalcFormatter"] && self.table.modExists("format")) {
+
+				self.genColumn.modules.format = {
+					formatter: self.table.modules.format.getFormatter(column.definition[pos + "CalcFormatter"]),
+					params: column.definition[pos + "CalcFormatterParams"]
+				};
+			} else {
+				self.genColumn.modules.format = {
+					formatter: self.table.modules.format.getFormatter("plaintext"),
+					params: {}
+				};
+			}
+
+			//ensure css class defintion is replicated to calculation cell
+			self.genColumn.definition.cssClass = column.definition.cssClass;
+
+			//generate cell and assign to correct column
+			var cell = new Cell(self.genColumn, row);
+			cell.column = column;
+			cell.setWidth();
+
+			column.cells.push(cell);
+			cells.push(cell);
+
+			if (!column.visible) {
+				cell.hide();
+			}
+		});
+
+		this.cells = cells;
+	};
+
+	return row;
+};
+
+//generate stats row
+ColumnCalcs.prototype.generateRowData = function (pos, data) {
+	var rowData = {},
+	    calcs = pos == "top" ? this.topCalcs : this.botCalcs,
+	    type = pos == "top" ? "topCalc" : "botCalc",
+	    params,
+	    paramKey;
+
+	calcs.forEach(function (column) {
+		var values = [];
+
+		if (column.modules.columnCalcs && column.modules.columnCalcs[type]) {
+			data.forEach(function (item) {
+				values.push(column.getFieldValue(item));
+			});
+
+			paramKey = type + "Params";
+			params = typeof column.modules.columnCalcs[paramKey] === "function" ? column.modules.columnCalcs[paramKey](values, data) : column.modules.columnCalcs[paramKey];
+
+			column.setFieldValue(rowData, column.modules.columnCalcs[type](values, data, params));
+		}
+	});
+
+	return rowData;
+};
+
+ColumnCalcs.prototype.hasTopCalcs = function () {
+	return !!this.topCalcs.length;
+};
+
+ColumnCalcs.prototype.hasBottomCalcs = function () {
+	return !!this.botCalcs.length;
+};
+
+//handle table redraw
+ColumnCalcs.prototype.redraw = function () {
+	if (this.topRow) {
+		this.topRow.normalizeHeight(true);
+	}
+	if (this.botRow) {
+		this.botRow.normalizeHeight(true);
+	}
+};
+
+//return the calculated
+ColumnCalcs.prototype.getResults = function () {
+	var self = this,
+	    results = {},
+	    groups;
+
+	if (this.table.options.groupBy && this.table.modExists("groupRows")) {
+		groups = this.table.modules.groupRows.getGroups(true);
+
+		groups.forEach(function (group) {
+			results[group.getKey()] = self.getGroupResults(group);
+		});
+	} else {
+		results = {
+			top: this.topRow ? this.topRow.getData() : {},
+			bottom: this.botRow ? this.botRow.getData() : {}
+		};
+	}
+
+	return results;
+};
+
+//get results from a group
+ColumnCalcs.prototype.getGroupResults = function (group) {
+	var self = this,
+	    groupObj = group._getSelf(),
+	    subGroups = group.getSubGroups(),
+	    subGroupResults = {},
+	    results = {};
+
+	subGroups.forEach(function (subgroup) {
+		subGroupResults[subgroup.getKey()] = self.getGroupResults(subgroup);
+	});
+
+	results = {
+		top: groupObj.calcs.top ? groupObj.calcs.top.getData() : {},
+		bottom: groupObj.calcs.bottom ? groupObj.calcs.bottom.getData() : {},
+		groups: subGroupResults
+	};
+
+	return results;
+};
+
+//default calculations
+ColumnCalcs.prototype.calculations = {
+	"avg": function avg(values, data, calcParams) {
+		var output = 0,
+		    precision = typeof calcParams.precision !== "undefined" ? calcParams.precision : 2;
+
+		if (values.length) {
+			output = values.reduce(function (sum, value) {
+				value = Number(value);
+				return sum + value;
+			});
+
+			output = output / values.length;
+
+			output = precision !== false ? output.toFixed(precision) : output;
+		}
+
+		return parseFloat(output).toString();
+	},
+	"max": function max(values, data, calcParams) {
+		var output = null,
+		    precision = typeof calcParams.precision !== "undefined" ? calcParams.precision : false;
+
+		values.forEach(function (value) {
+
+			value = Number(value);
+
+			if (value > output || output === null) {
+				output = value;
+			}
+		});
+
+		return output !== null ? precision !== false ? output.toFixed(precision) : output : "";
+	},
+	"min": function min(values, data, calcParams) {
+		var output = null,
+		    precision = typeof calcParams.precision !== "undefined" ? calcParams.precision : false;
+
+		values.forEach(function (value) {
+
+			value = Number(value);
+
+			if (value < output || output === null) {
+				output = value;
+			}
+		});
+
+		return output !== null ? precision !== false ? output.toFixed(precision) : output : "";
+	},
+	"sum": function sum(values, data, calcParams) {
+		var output = 0,
+		    precision = typeof calcParams.precision !== "undefined" ? calcParams.precision : false;
+
+		if (values.length) {
+			values.forEach(function (value) {
+				value = Number(value);
+
+				output += !isNaN(value) ? Number(value) : 0;
+			});
+		}
+
+		return precision !== false ? output.toFixed(precision) : output;
+	},
+	"concat": function concat(values, data, calcParams) {
+		var output = 0;
+
+		if (values.length) {
+			output = values.reduce(function (sum, value) {
+				return String(sum) + String(value);
+			});
+		}
+
+		return output;
+	},
+	"count": function count(values, data, calcParams) {
+		var output = 0;
+
+		if (values.length) {
+			values.forEach(function (value) {
+				if (value) {
+					output++;
+				}
+			});
+		}
+
+		return output;
+	}
+};
+
+Tabulator.prototype.registerModule("columnCalcs", ColumnCalcs);

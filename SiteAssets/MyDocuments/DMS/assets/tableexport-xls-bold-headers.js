@@ -1,1 +1,126 @@
-function a8_0x43e7(_0x9c7ee4,_0x39feb4){var _0x9d5d7c=a8_0x9d5d();return a8_0x43e7=function(_0x43e7d3,_0x2aa8ac){_0x43e7d3=_0x43e7d3-0x9d;var _0x51659a=_0x9d5d7c[_0x43e7d3];return _0x51659a;},a8_0x43e7(_0x9c7ee4,_0x39feb4);}(function(_0x16bb71,_0x535475){var _0x5d3cf3=a8_0x43e7,_0x3a4ed4=_0x16bb71();while(!![]){try{var _0x2616d5=-parseInt(_0x5d3cf3(0x9d))/0x1*(-parseInt(_0x5d3cf3(0xdd))/0x2)+parseInt(_0x5d3cf3(0xcf))/0x3*(parseInt(_0x5d3cf3(0xbd))/0x4)+-parseInt(_0x5d3cf3(0xdf))/0x5*(-parseInt(_0x5d3cf3(0xda))/0x6)+parseInt(_0x5d3cf3(0xdb))/0x7*(-parseInt(_0x5d3cf3(0xa1))/0x8)+-parseInt(_0x5d3cf3(0xca))/0x9+parseInt(_0x5d3cf3(0xaf))/0xa+-parseInt(_0x5d3cf3(0x9f))/0xb;if(_0x2616d5===_0x535475)break;else _0x3a4ed4['push'](_0x3a4ed4['shift']());}catch(_0x327662){_0x3a4ed4['push'](_0x3a4ed4['shift']());}}}(a8_0x9d5d,0x67b9e),function(_0x22c4fe){var _0x164f75=a8_0x43e7;_0x22c4fe['fn'][_0x164f75(0xd0)]({'tableExport':function(_0x257c39){var _0x521442=_0x164f75,_0x50f2dc={'type':_0x521442(0xc7),'ignoreColumn':[],'filename':_0x521442(0xc9),'escape':_0x521442(0xa4),'htmlContent':_0x521442(0xa3),'consoleLog':_0x521442(0xa3)};_0x22c4fe[_0x521442(0xd0)](_0x50f2dc,_0x257c39);var _0x8bbb1f=this;if(_0x50f2dc[_0x521442(0xd6)]===_0x521442(0xc7)){var _0x7189fa=_0x521442(0xd8);_0x22c4fe(_0x8bbb1f)[_0x521442(0xd7)](_0x521442(0xae))[_0x521442(0xd7)]('tr')['each'](function(){var _0x1d3113=_0x521442;_0x7189fa+='<tr>',_0x22c4fe(this)[_0x1d3113(0xbb)](':visible')[_0x1d3113(0xd7)]('th')[_0x1d3113(0xa7)](function(_0x4bc175,_0x2bba7a){var _0xa3ea36=_0x1d3113;_0x22c4fe(this)[_0xa3ea36(0xc6)]('display')!=='none'&&(_0x50f2dc[_0xa3ea36(0xc5)][_0xa3ea36(0xbf)](_0x4bc175)===-0x1&&(_0x7189fa+=_0xa3ea36(0xc8)+_0x103100(_0x22c4fe(this))+_0xa3ea36(0xcd)));}),_0x7189fa+=_0x1d3113(0xa2);});var _0x45424f=0x1;_0x22c4fe(_0x8bbb1f)[_0x521442(0xd7)](_0x521442(0xce))[_0x521442(0xd7)]('tr')[_0x521442(0xa7)](function(){var _0x109f97=_0x521442;_0x7189fa+=_0x109f97(0xab);var _0x315522=0x0;_0x22c4fe(this)[_0x109f97(0xbb)](_0x109f97(0xb7))[_0x109f97(0xd7)]('td')[_0x109f97(0xa7)](function(_0x485695,_0x4c5343){var _0x337df4=_0x109f97;_0x22c4fe(this)['css'](_0x337df4(0xc4))!==_0x337df4(0xcb)&&(_0x50f2dc['ignoreColumn'][_0x337df4(0xbf)](_0x485695)===-0x1&&(_0x7189fa+=_0x337df4(0xb3)+_0x103100(_0x22c4fe(this))+'</td>')),_0x315522++;}),_0x45424f++,_0x7189fa+=_0x109f97(0xa2);}),_0x7189fa+=_0x521442(0xaa);_0x50f2dc['consoleLog']===_0x521442(0xa4)&&console[_0x521442(0xd3)](_0x7189fa);var _0x393db5=_0x521442(0xa0)+_0x50f2dc[_0x521442(0xd6)]+_0x521442(0xd4);_0x393db5+='<head>',_0x393db5+=_0x521442(0xb6),_0x393db5+=_0x521442(0xa6),_0x393db5+=_0x521442(0xbc),_0x393db5+='<x:ExcelWorksheets>',_0x393db5+=_0x521442(0xbe),_0x393db5+=_0x521442(0xcc),_0x393db5+='{worksheet}',_0x393db5+=_0x521442(0xe0),_0x393db5+=_0x521442(0xad),_0x393db5+=_0x521442(0xa8),_0x393db5+=_0x521442(0xb4),_0x393db5+=_0x521442(0xc0),_0x393db5+=_0x521442(0xb8),_0x393db5+=_0x521442(0xb9),_0x393db5+=_0x521442(0x9e),_0x393db5+=_0x521442(0xb5),_0x393db5+=_0x521442(0xa5),_0x393db5+=_0x521442(0xd9),_0x393db5+=_0x7189fa,_0x393db5+=_0x521442(0xb2),_0x393db5+=_0x521442(0xe1);var _0x4c3616=_0x521442(0xb1)+btoa(_0x393db5),_0x19a6ca='data:application/vnd.ms-excel;'+_0x4c3616,_0x353e9b=document[_0x521442(0xd2)]('a');_0x353e9b[_0x521442(0xc2)]=_0x19a6ca,_0x353e9b[_0x521442(0xc3)]=_0x521442(0xa9),_0x353e9b['download']=_0x50f2dc['filename'],document[_0x521442(0xd1)]['appendChild'](_0x353e9b),_0x353e9b[_0x521442(0xba)](),document[_0x521442(0xd1)][_0x521442(0xc1)](_0x353e9b);}function _0x103100(_0x2f07f0){var _0x218725=_0x521442;return _0x50f2dc[_0x218725(0xac)]===_0x218725(0xa4)?content_data=_0x2f07f0[_0x218725(0xd5)]()[_0x218725(0xde)]():content_data=_0x2f07f0[_0x218725(0xb0)]()['trim'](),_0x50f2dc[_0x218725(0xdc)]==='true'&&(content_data=encodeURI(content_data)),content_data;}}});}(jQuery));function a8_0x9d5d(){var _0x461fa7=['tbody','153UywnCc','extend','body','createElement','log','\x27\x20xmlns=\x27http://www.w3.org/TR/REC-html40\x27>','html','type','find','<table>','<body>','10902nkUXVS','14OvbRTq','escape','4KifwbP','trim','1540zhJrYc','</x:Name>','</html>','356269yCOwNP','</xml>','10110903mRwgyt','<html\x20xmlns:o=\x27urn:schemas-microsoft-com:office:office\x27\x20xmlns:x=\x27urn:schemas-microsoft-com:office:','2353688hAdLIA','</tr>','false','true','</head>','<xml>','each','<x:DisplayGridlines/>','visibility:hidden','</table>','<tr>','htmlContent','<x:WorksheetOptions>','thead','662920viqGjR','text','base64,','</body>','<td>','</x:WorksheetOptions>','<![endif]-->','<!--[if\x20gte\x20mso\x209]>',':visible','</x:ExcelWorksheets>','</x:ExcelWorkbook>','click','filter','<x:ExcelWorkbook>','66028VqfBzm','<x:ExcelWorksheet>','indexOf','</x:ExcelWorksheet>','removeChild','href','style','display','ignoreColumn','css','excel','<td><b>','Export.xls','2230794OwdVZR','none','<x:Name>','</b></td>'];a8_0x9d5d=function(){return _0x461fa7;};return a8_0x9d5d();}
+/*
+ * A jQuery plugin which generates a basic .xls file with bold headers from a HTML table.
+ *
+ * Original code by Shreedhar Bhat from this StackOverflow answer: https://stackoverflow.com/a/44255259,
+ * with some small modifications by Carlo Pantaleo.
+ *
+ * Usage: let your HTML table be like:
+ * <table id="myTable">
+ *     <thead>
+ *         ...
+ *     </thead>
+ *     <tbody>
+ *         ...
+ *     </tbody>
+ * </table>
+ *
+ * Call:
+ * $('#myTable').tableExport({
+ *      filename: 'myExport.xls'
+ * });
+ *
+ * to generate and download the Excel file 'myExport.xls'
+ *
+ *
+ * Authors: Carlo Pantaleo, Shreedhar Bhat
+ */
+
+(function ($) {
+    $.fn.extend({
+        tableExport: function (options) {
+            var defaults = {
+                type: 'excel',
+                ignoreColumn: [],
+                filename: 'Export.xls',
+                escape: 'true',
+                htmlContent: 'false',
+                consoleLog: 'false'
+            };
+            $.extend(defaults, options);
+
+            var el = this;
+
+            if (defaults.type === 'excel') {
+                var excel = "<table>";
+                // Header
+                $(el).find('thead').find('tr').each(function () {
+                    excel += "<tr>";
+                    $(this).filter(':visible').find('th').each(function (index, data) {
+                        if ($(this).css('display') !== 'none') {
+                            if (defaults.ignoreColumn.indexOf(index) === -1) {
+                                excel += "<td><b>" + parseString($(this)) + "</b></td>";
+                            }
+                        }
+                    });
+                    excel += '</tr>';
+                });
+                // Row Vs Column
+                var rowCount = 1;
+                $(el).find('tbody').find('tr').each(function () {
+                    excel += "<tr>";
+                    var colCount = 0;
+                    $(this).filter(':visible').find('td').each(function (index, data) {
+                        if ($(this).css('display') !== 'none') {
+                            if (defaults.ignoreColumn.indexOf(index) === -1) {
+                                excel += "<td>" + parseString($(this)) + "</td>";
+                            }
+                        }
+                        colCount++;
+                    });
+                    rowCount++;
+                    excel += '</tr>';
+                });
+                excel += '</table>';
+                if (defaults.consoleLog === 'true') {
+                    console.log(excel);
+                }
+                var excelFile = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:" + defaults.type + "' xmlns='http://www.w3.org/TR/REC-html40'>";
+                excelFile += "<head>";
+                excelFile += "<!--[if gte mso 9]>";
+                excelFile += "<xml>";
+                excelFile += "<x:ExcelWorkbook>";
+                excelFile += "<x:ExcelWorksheets>";
+                excelFile += "<x:ExcelWorksheet>";
+                excelFile += "<x:Name>";
+                excelFile += "{worksheet}";
+                excelFile += "</x:Name>";
+                excelFile += "<x:WorksheetOptions>";
+                excelFile += "<x:DisplayGridlines/>";
+                excelFile += "</x:WorksheetOptions>";
+                excelFile += "</x:ExcelWorksheet>";
+                excelFile += "</x:ExcelWorksheets>";
+                excelFile += "</x:ExcelWorkbook>";
+                excelFile += "</xml>";
+                excelFile += "<![endif]-->";
+                excelFile += "</head>";
+                excelFile += "<body>";
+                excelFile += excel;
+                excelFile += "</body>";
+                excelFile += "</html>";
+                var base64data = "base64," + btoa(excelFile);
+                var uri = 'data:application/vnd.ms-excel;' + base64data;
+                var link = document.createElement("a");
+                link.href = uri;
+                link.style = "visibility:hidden";
+                link.download = defaults.filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
+            function parseString(data) {
+                if (defaults.htmlContent === 'true') {
+                    content_data = data.html().trim();
+                } else {
+                    content_data = data.text().trim();
+                }
+                if (defaults.escape === 'true') {
+                    content_data = encodeURI(content_data);
+                }
+                return content_data;
+            }
+
+            //Check original template for lot of convertion like to xml,json,pdf,etc
+        }
+    });
+})(jQuery);

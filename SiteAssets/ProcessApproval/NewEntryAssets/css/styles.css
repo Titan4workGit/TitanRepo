@@ -511,7 +511,7 @@ button.close {
 
 .signature-front{
  font-family:'Caveat-VariableFont_wght'; 
- font-size: 30px;
+ font-size: 24px;
 }
 
 .drop-container input {
@@ -1555,9 +1555,6 @@ align-items: end;
     width: 100%;
 }
 
-
-
-
 /***june-ed-22-****/
 
 .dyamicTableboxes.text-center{
@@ -2459,7 +2456,7 @@ cursor: pointer;
 
 .additional_doms{
   overflow:auto;
-  max-height: 64vh;
+  max-height: 55vh;
 }
 
 .additional_doms::-webkit-scrollbar-thumb {
@@ -2546,7 +2543,7 @@ background-color: transparent;
 
 @media (min-width: 992px){
 #additional_document .modal-lg {
-    width: 80%;
+    width: 65%;
 }
 
 }
@@ -2994,11 +2991,11 @@ background-color: transparent;
 
 
 #DocfilenameAction{
- width:100%;	
+ width:100%;
 }
 
 #DocfilenameAction .approve-process-upload-data-chip{
-  display:inline-block;	
+ display:inline-block;	
 }
 
 

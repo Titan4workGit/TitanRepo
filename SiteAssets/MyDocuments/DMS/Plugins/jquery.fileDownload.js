@@ -1,1 +1,490 @@
-function a16_0x371c(_0x5373e2,_0x5db257){var _0x4ef22d=a16_0x4ef2();return a16_0x371c=function(_0x371c03,_0xcb5e5b){_0x371c03=_0x371c03-0x1bb;var _0x18df7e=_0x4ef22d[_0x371c03];return _0x18df7e;},a16_0x371c(_0x5373e2,_0x5db257);}function a16_0x4ef2(){var _0x1ac452=['onPrepare','GET','android','<iframe\x20style=\x27display:\x20none\x27\x20src=\x27about:blank\x27></iframe>','1uStIms','2351652VZQtgu','abort','number','prepareCallback','submit','onSuccess','#13;','prop','</form>','cookieName','toUpperCase','dialog','close','110oKNMtj','param','onFail','lt;','#10;','resolve','focus','<input\x20type=\x22hidden\x22\x20name=\x22','\x27></iframe>','appendTo','test','checkInterval','fileDownload','length','\x22\x20value=\x22','abortCallback','#39;','98HBLTCW','each','data','cookieDomain','string','Initiating\x20file\x20download...','3449556KbGYSo','about:blank','\x27\x20action=\x27','write','preparingMessageHtml','cookie','open','innerHTML','reject','substr','toLowerCase',';\x20expires=','form','11vZexDw','popupWindowTitle','Deferred','html','contentDocument','userAgent','src','4JQeSPn','replace','encodeHTMLEntities','</body></html>','httpMethod','<html><head></head><body><form\x20method=\x27','androidPostUnsupportedMessageHtml','shift','failMessageHtml','779634oLCEWt','2479590DARrFv','document','opera','action','vendor','split','217017HXrWTb','failCallback','cookiePath','body','contents','hide','extend','successCallback','title','<iframe\x20style=\x27display:\x20none\x27\x20src=\x27','<div>','1232976KXyMZA','indexOf','364424fupIaC','dialogOptions'];a16_0x4ef2=function(){return _0x1ac452;};return a16_0x4ef2();}(function(_0x13b292,_0x2515e7){var _0x522ebe=a16_0x371c,_0x16e0d7=_0x13b292();while(!![]){try{var _0x330d23=-parseInt(_0x522ebe(0x207))/0x1*(-parseInt(_0x522ebe(0x1ff))/0x2)+parseInt(_0x522ebe(0x1ed))/0x3*(parseInt(_0x522ebe(0x1e4))/0x4)+-parseInt(_0x522ebe(0x1ee))/0x5+parseInt(_0x522ebe(0x1d0))/0x6+parseInt(_0x522ebe(0x1ca))/0x7*(-parseInt(_0x522ebe(0x201))/0x8)+-parseInt(_0x522ebe(0x1f4))/0x9*(-parseInt(_0x522ebe(0x215))/0xa)+parseInt(_0x522ebe(0x1dd))/0xb*(-parseInt(_0x522ebe(0x208))/0xc);if(_0x330d23===_0x2515e7)break;else _0x16e0d7['push'](_0x16e0d7['shift']());}catch(_0x4d607f){_0x16e0d7['push'](_0x16e0d7['shift']());}}}(a16_0x4ef2,0x5e758),function(_0x408778,_0x525c58){var _0x4c68fb=a16_0x371c,_0x369f92=/[<>&\r\n"']/gm,_0x49a669={'<':_0x4c68fb(0x1bc),'>':'gt;','&':'amp;','\x0d':_0x4c68fb(0x20e),'\x0a':_0x4c68fb(0x1bd),'\x22':'quot;','\x27':_0x4c68fb(0x1c9)};_0x408778['extend']({'fileDownload':function(_0x553826,_0x140c99){var _0x5b2901=_0x4c68fb,_0x31ddca=_0x408778[_0x5b2901(0x1fa)]({'preparingMessageHtml':null,'failMessageHtml':null,'androidPostUnsupportedMessageHtml':'Unfortunately\x20your\x20Android\x20browser\x20doesn\x27t\x20support\x20this\x20type\x20of\x20file\x20download.\x20Please\x20try\x20again\x20with\x20a\x20different\x20browser.','dialogOptions':{'modal':!![]},'prepareCallback':function(_0x54a8ac){},'successCallback':function(_0x177b1a){},'abortCallback':function(_0x55fcbd){},'failCallback':function(_0x109715,_0x23dbe4,_0x1c99e1){},'httpMethod':_0x5b2901(0x204),'data':null,'checkInterval':0x64,'cookieName':_0x5b2901(0x1c5),'cookieValue':'true','cookiePath':'/','cookieDomain':null,'popupWindowTitle':_0x5b2901(0x1cf),'encodeHTMLEntities':!![]},_0x140c99),_0x4b39de=new _0x408778[(_0x5b2901(0x1df))](),_0x5a2c70=(navigator[_0x5b2901(0x1e2)]||navigator[_0x5b2901(0x1f2)]||_0x525c58[_0x5b2901(0x1f0)])[_0x5b2901(0x1da)](),_0x5a8029,_0x2a4acd,_0x3d256c;if(/ip(ad|hone|od)/[_0x5b2901(0x1c3)](_0x5a2c70))_0x5a8029=!![];else _0x5a2c70[_0x5b2901(0x200)](_0x5b2901(0x205))!==-0x1?_0x2a4acd=!![]:_0x3d256c=/avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|playbook|silk|iemobile|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i['test'](_0x5a2c70)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-/i[_0x5b2901(0x1c3)](_0x5a2c70[_0x5b2901(0x1d9)](0x0,0x4));var _0x4052eb=_0x31ddca[_0x5b2901(0x1e8)][_0x5b2901(0x212)]();if(_0x2a4acd&&_0x4052eb!=='GET'&&_0x31ddca[_0x5b2901(0x1ea)])return _0x408778()['dialog']?_0x408778('<div>')[_0x5b2901(0x1e0)](_0x31ddca[_0x5b2901(0x1ea)])[_0x5b2901(0x213)](_0x31ddca[_0x5b2901(0x202)]):alert(_0x31ddca[_0x5b2901(0x1ea)]),_0x4b39de['reject']();var _0x27b573=null,_0x3d1f11={'onPrepare':function(_0x20ec54){var _0x466297=_0x5b2901;if(_0x31ddca[_0x466297(0x1d4)])_0x27b573=_0x408778(_0x466297(0x1fe))['html'](_0x31ddca['preparingMessageHtml'])[_0x466297(0x213)](_0x31ddca[_0x466297(0x202)]);else _0x31ddca['prepareCallback']&&_0x31ddca[_0x466297(0x20b)](_0x20ec54);},'onSuccess':function(_0x4866c3){var _0x12684c=_0x5b2901;_0x27b573&&_0x27b573[_0x12684c(0x213)](_0x12684c(0x214)),_0x31ddca[_0x12684c(0x1fb)](_0x4866c3),_0x4b39de[_0x12684c(0x1be)](_0x4866c3);},'onAbort':function(_0xa37eef){var _0x1348b5=_0x5b2901;_0x27b573&&_0x27b573[_0x1348b5(0x213)]('close');;_0x31ddca[_0x1348b5(0x1c8)](_0xa37eef),_0x4b39de[_0x1348b5(0x1d8)](_0xa37eef);},'onFail':function(_0x1b1887,_0x611bcc,_0x16202d){var _0x228d50=_0x5b2901;_0x27b573&&_0x27b573[_0x228d50(0x213)](_0x228d50(0x214)),_0x31ddca[_0x228d50(0x1ec)]&&_0x408778('<div>')[_0x228d50(0x1e0)](_0x31ddca[_0x228d50(0x1ec)])[_0x228d50(0x213)](_0x31ddca[_0x228d50(0x202)]),_0x31ddca[_0x228d50(0x1f5)](_0x1b1887,_0x611bcc,_0x16202d),_0x4b39de[_0x228d50(0x1d8)](_0x1b1887,_0x611bcc);}};_0x3d1f11[_0x5b2901(0x203)](_0x553826);_0x31ddca[_0x5b2901(0x1cc)]!==null&&typeof _0x31ddca['data']!==_0x5b2901(0x1ce)&&(_0x31ddca['data']=_0x408778[_0x5b2901(0x216)](_0x31ddca[_0x5b2901(0x1cc)]));var _0x575759,_0x406575,_0x831ad4,_0x2f7a69;if(_0x4052eb===_0x5b2901(0x204)){if(_0x31ddca['data']!==null){var _0x4a1c22=_0x553826['indexOf']('?');_0x4a1c22!==-0x1?_0x553826['substring'](_0x553826[_0x5b2901(0x1c6)]-0x1)!=='&'&&(_0x553826=_0x553826+'&'):_0x553826=_0x553826+'?',_0x553826=_0x553826+_0x31ddca[_0x5b2901(0x1cc)];}if(_0x5a8029||_0x2a4acd)_0x406575=_0x525c58[_0x5b2901(0x1d6)](_0x553826),_0x406575[_0x5b2901(0x1ef)][_0x5b2901(0x1fc)]=_0x31ddca[_0x5b2901(0x1de)],_0x525c58['focus']();else _0x3d256c?_0x525c58['location'](_0x553826):_0x575759=_0x408778(_0x5b2901(0x1fd)+_0x553826+_0x5b2901(0x1c1))[_0x5b2901(0x1c2)](_0x5b2901(0x1f7));}else{var _0x1e5c99='';_0x31ddca[_0x5b2901(0x1cc)]!==null&&_0x408778[_0x5b2901(0x1cb)](_0x31ddca['data'][_0x5b2901(0x1e5)](/\+/g,'\x20')[_0x5b2901(0x1f3)]('&'),function(){var _0x3006a5=_0x5b2901,_0x56bcf1=this[_0x3006a5(0x1f3)]('='),_0x494b9a=_0x56bcf1[0x0];_0x56bcf1[_0x3006a5(0x1eb)]();var _0x1fae2a=_0x56bcf1['join']('=');_0x56bcf1=[_0x494b9a,_0x1fae2a];var _0x145c27=_0x31ddca[_0x3006a5(0x1e6)]?_0x51dfb9(decodeURIComponent(_0x56bcf1[0x0])):decodeURIComponent(_0x56bcf1[0x0]);if(_0x145c27){var _0x33ab21=_0x31ddca[_0x3006a5(0x1e6)]?_0x51dfb9(decodeURIComponent(_0x56bcf1[0x1])):decodeURIComponent(_0x56bcf1[0x1]);_0x1e5c99+=_0x3006a5(0x1c0)+_0x145c27+_0x3006a5(0x1c7)+_0x33ab21+'\x22\x20/>';}}),_0x3d256c?(_0x2f7a69=_0x408778('<form>')['appendTo'](_0x5b2901(0x1f7)),_0x2f7a69[_0x5b2901(0x1f9)]()['prop']('method',_0x31ddca[_0x5b2901(0x1e8)])[_0x5b2901(0x20f)](_0x5b2901(0x1f1),_0x553826)[_0x5b2901(0x1e0)](_0x1e5c99)):(_0x5a8029?(_0x406575=_0x525c58['open'](_0x5b2901(0x1d1)),_0x406575[_0x5b2901(0x1ef)]['title']=_0x31ddca[_0x5b2901(0x1de)],_0x831ad4=_0x406575[_0x5b2901(0x1ef)],_0x525c58[_0x5b2901(0x1bf)]()):(_0x575759=_0x408778(_0x5b2901(0x206))[_0x5b2901(0x1c2)](_0x5b2901(0x1f7)),_0x831ad4=_0x10bcf2(_0x575759)),_0x831ad4[_0x5b2901(0x1d3)](_0x5b2901(0x1e9)+_0x31ddca['httpMethod']+_0x5b2901(0x1d2)+_0x553826+'\x27>'+_0x1e5c99+_0x5b2901(0x210)+_0x31ddca[_0x5b2901(0x1de)]+_0x5b2901(0x1e7)),_0x2f7a69=_0x408778(_0x831ad4)['find'](_0x5b2901(0x1dc))),_0x2f7a69[_0x5b2901(0x20c)]();}setTimeout(_0x51c799,_0x31ddca[_0x5b2901(0x1c4)]);function _0x51c799(){var _0x471685=_0x5b2901,_0x430f22=_0x31ddca['cookieValue'];typeof _0x430f22=='string'&&(_0x430f22=_0x430f22[_0x471685(0x1da)]());var _0x87f69e=_0x31ddca[_0x471685(0x211)][_0x471685(0x1da)]()+'='+_0x430f22;if(document[_0x471685(0x1d5)][_0x471685(0x1da)]()[_0x471685(0x200)](_0x87f69e)>-0x1){_0x3d1f11[_0x471685(0x20d)](_0x553826);var _0x1bcd82=_0x31ddca[_0x471685(0x211)]+'=;\x20path='+_0x31ddca[_0x471685(0x1f6)]+_0x471685(0x1db)+new Date(0x0)['toUTCString']()+';';if(_0x31ddca[_0x471685(0x1cd)])_0x1bcd82+='\x20domain='+_0x31ddca[_0x471685(0x1cd)]+';';document[_0x471685(0x1d5)]=_0x1bcd82,_0x4a1d09(![]);return;}if(_0x406575||_0x575759)try{var _0x3c197f=_0x406575?_0x406575[_0x471685(0x1ef)]:_0x10bcf2(_0x575759);if(_0x3c197f&&_0x3c197f[_0x471685(0x1f7)]!==null&&_0x3c197f['body'][_0x471685(0x1d7)]['length']){var _0x5c1b79=!![];if(_0x2f7a69&&_0x2f7a69[_0x471685(0x1c6)]){var _0x21e024=_0x408778(_0x3c197f[_0x471685(0x1f7)])[_0x471685(0x1f8)]()['first']();try{_0x21e024[_0x471685(0x1c6)]&&_0x21e024[0x0]===_0x2f7a69[0x0]&&(_0x5c1b79=![]);}catch(_0x186831){if(_0x186831&&_0x186831[_0x471685(0x20a)]==-0x7ff5ffba)_0x5c1b79=!![];else throw _0x186831;}}if(_0x5c1b79){setTimeout(function(){var _0x3c4429=_0x471685;_0x3d1f11[_0x3c4429(0x1bb)](_0x3c197f[_0x3c4429(0x1f7)][_0x3c4429(0x1d7)],_0x553826),_0x4a1d09(!![]);},0x64);return;}}}catch(_0x515132){_0x3d1f11[_0x471685(0x1bb)]('',_0x553826,_0x515132),_0x4a1d09(!![]);return;}setTimeout(_0x51c799,_0x31ddca['checkInterval']);}function _0x10bcf2(_0x1add1c){var _0x1f17d2=_0x5b2901,_0x32160b=_0x1add1c[0x0]['contentWindow']||_0x1add1c[0x0][_0x1f17d2(0x1e1)];return _0x32160b[_0x1f17d2(0x1ef)]&&(_0x32160b=_0x32160b['document']),_0x32160b;}function _0x4a1d09(_0x1dea86){setTimeout(function(){var _0x4df6d4=a16_0x371c;_0x406575&&(_0x2a4acd&&_0x406575['close'](),_0x5a8029&&(_0x406575[_0x4df6d4(0x1bf)]&&(_0x406575[_0x4df6d4(0x1bf)](),_0x1dea86&&_0x406575[_0x4df6d4(0x214)]())));},0x0);}function _0x51dfb9(_0x37367e){var _0x42ed1e=_0x5b2901;return _0x37367e[_0x42ed1e(0x1e5)](_0x369f92,function(_0x2ae50b){return'&'+_0x49a669[_0x2ae50b];});}var _0x24b251=_0x4b39de['promise']();return _0x24b251[_0x5b2901(0x209)]=function(){var _0x394d4b=_0x5b2901;_0x4a1d09(),_0x575759['attr'](_0x394d4b(0x1e3),'')[_0x394d4b(0x1e0)](''),_0x3d1f11['onAbort'](_0x553826);},_0x24b251;}});}(jQuery,this||window));
+/*
+* jQuery File Download Plugin v1.4.5
+*
+* http://www.johnculviner.com
+*
+* Copyright (c) 2013 - John Culviner
+*
+* Licensed under the MIT license:
+*   http://www.opensource.org/licenses/mit-license.php
+*
+* !!!!NOTE!!!!
+* You must also write a cookie in conjunction with using this plugin in the server's response headers containing the file download:
+* Set-Cookie: fileDownload=true; path=/"
+* !!!!NOTE!!!!
+*/
+
+(function($, window){
+	// i'll just put them here to get evaluated on script load
+	var htmlSpecialCharsRegEx = /[<>&\r\n"']/gm;
+	var htmlSpecialCharsPlaceHolders = {
+				'<': 'lt;',
+				'>': 'gt;',
+				'&': 'amp;',
+				'\r': "#13;",
+				'\n': "#10;",
+				'"': 'quot;',
+				"'": '#39;' /*single quotes just to be safe, IE8 doesn't support &apos;, so use &#39; instead */
+	};
+
+$.extend({
+    //
+    //$.fileDownload('/path/to/url/', options)
+    //  see directly below for possible 'options'
+    fileDownload: function (fileUrl, options) {
+
+        //provide some reasonable defaults to any unspecified options below
+        var settings = $.extend({
+
+            //
+            //Requires jQuery UI: provide a message to display to the user when the file download is being prepared before the browser's dialog appears
+            //
+            preparingMessageHtml: null,
+
+            //
+            //Requires jQuery UI: provide a message to display to the user when a file download fails
+            //
+            failMessageHtml: null,
+
+            //
+            //the stock android browser straight up doesn't support file downloads initiated by a non GET: http://code.google.com/p/android/issues/detail?id=1780
+            //specify a message here to display if a user tries with an android browser
+            //if jQuery UI is installed this will be a dialog, otherwise it will be an alert
+            //Set to null to disable the message and attempt to download anyway
+            //
+            androidPostUnsupportedMessageHtml: "Unfortunately your Android browser doesn't support this type of file download. Please try again with a different browser.",
+
+            //
+            //Requires jQuery UI: options to pass into jQuery UI Dialog
+            //
+            dialogOptions: { modal: true },
+
+            //
+            //a function to call while the dowload is being prepared before the browser's dialog appears
+            //Args:
+            //  url - the original url attempted
+            //
+            prepareCallback: function (url) { },
+
+            //
+            //a function to call after a file download successfully completed
+            //Args:
+            //  url - the original url attempted
+            //
+            successCallback: function (url) { },
+
+            //
+            //a function to call after a file download request was canceled
+            //Args:
+            //  url - the original url attempted
+            //
+            abortCallback: function (url) { },
+
+            //
+            //a function to call after a file download failed
+            //Args:
+            //  responseHtml    - the html that came back in response to the file download. this won't necessarily come back depending on the browser.
+            //                      in less than IE9 a cross domain error occurs because 500+ errors cause a cross domain issue due to IE subbing out the
+            //                      server's error message with a "helpful" IE built in message
+            //  url             - the original url attempted
+            //  error           - original error cautch from exception
+            //
+            failCallback: function (responseHtml, url, error) { },
+
+            //
+            // the HTTP method to use. Defaults to "GET".
+            //
+            httpMethod: "GET",
+
+            //
+            // if specified will perform a "httpMethod" request to the specified 'fileUrl' using the specified data.
+            // data must be an object (which will be $.param serialized) or already a key=value param string
+            //
+            data: null,
+
+            //
+            //a period in milliseconds to poll to determine if a successful file download has occured or not
+            //
+            checkInterval: 100,
+
+            //
+            //the cookie name to indicate if a file download has occured
+            //
+            cookieName: "fileDownload",
+
+            //
+            //the cookie value for the above name to indicate that a file download has occured
+            //
+            cookieValue: "true",
+
+            //
+            //the cookie path for above name value pair
+            //
+            cookiePath: "/",
+
+            //
+            //if specified it will be used when attempting to clear the above name value pair
+            //useful for when downloads are being served on a subdomain (e.g. downloads.example.com)
+            //
+            cookieDomain: null,
+
+            //
+            //the title for the popup second window as a download is processing in the case of a mobile browser
+            //
+            popupWindowTitle: "Initiating file download...",
+
+            //
+            //Functionality to encode HTML entities for a POST, need this if data is an object with properties whose values contains strings with quotation marks.
+            //HTML entity encoding is done by replacing all &,<,>,',",\r,\n characters.
+            //Note that some browsers will POST the string htmlentity-encoded whilst others will decode it before POSTing.
+            //It is recommended that on the server, htmlentity decoding is done irrespective.
+            //
+            encodeHTMLEntities: true
+
+        }, options);
+
+        var deferred = new $.Deferred();
+
+        //Setup mobile browser detection: Partial credit: http://detectmobilebrowser.com/
+        var userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+
+        var isIos;                  //has full support of features in iOS 4.0+, uses a new window to accomplish this.
+        var isAndroid;              //has full support of GET features in 4.0+ by using a new window. Non-GET is completely unsupported by the browser. See above for specifying a message.
+        var isOtherMobileBrowser;   //there is no way to reliably guess here so all other mobile devices will GET and POST to the current window.
+
+        if (/ip(ad|hone|od)/.test(userAgent)) {
+
+            isIos = true;
+
+        } else if (userAgent.indexOf('android') !== -1) {
+
+            isAndroid = true;
+
+        } else {
+
+            isOtherMobileBrowser = /avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|playbook|silk|iemobile|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-/i.test(userAgent.substr(0, 4));
+
+        }
+
+        var httpMethodUpper = settings.httpMethod.toUpperCase();
+
+        if (isAndroid && httpMethodUpper !== "GET" && settings.androidPostUnsupportedMessageHtml) {
+            //the stock android browser straight up doesn't support file downloads initiated by non GET requests: http://code.google.com/p/android/issues/detail?id=1780
+
+            if ($().dialog) {
+                $("<div>").html(settings.androidPostUnsupportedMessageHtml).dialog(settings.dialogOptions);
+            } else {
+                alert(settings.androidPostUnsupportedMessageHtml);
+            }
+
+            return deferred.reject();
+        }
+
+        var $preparingDialog = null;
+
+        var internalCallbacks = {
+
+            onPrepare: function (url) {
+
+                //wire up a jquery dialog to display the preparing message if specified
+                if (settings.preparingMessageHtml) {
+
+                    $preparingDialog = $("<div>").html(settings.preparingMessageHtml).dialog(settings.dialogOptions);
+
+                } else if (settings.prepareCallback) {
+
+                    settings.prepareCallback(url);
+
+                }
+
+            },
+
+            onSuccess: function (url) {
+
+                //remove the perparing message if it was specified
+                if ($preparingDialog) {
+                    $preparingDialog.dialog('close');
+                }
+
+                settings.successCallback(url);
+
+                deferred.resolve(url);
+            },
+
+            onAbort: function (url) {
+
+                //remove the perparing message if it was specified
+                if ($preparingDialog) {
+                    $preparingDialog.dialog('close');
+                };
+
+                settings.abortCallback(url);
+
+                deferred.reject(url);
+            },
+
+            onFail: function (responseHtml, url, error) {
+
+                //remove the perparing message if it was specified
+                if ($preparingDialog) {
+                    $preparingDialog.dialog('close');
+                }
+
+                //wire up a jquery dialog to display the fail message if specified
+                if (settings.failMessageHtml) {
+                    $("<div>").html(settings.failMessageHtml).dialog(settings.dialogOptions);
+                }
+
+                settings.failCallback(responseHtml, url, error);
+
+                deferred.reject(responseHtml, url);
+            }
+        };
+
+        internalCallbacks.onPrepare(fileUrl);
+
+        //make settings.data a param string if it exists and isn't already
+        if (settings.data !== null && typeof settings.data !== "string") {
+            settings.data = $.param(settings.data);
+        }
+
+
+        var $iframe,
+            downloadWindow,
+            formDoc,
+            $form;
+
+        if (httpMethodUpper === "GET") {
+
+            if (settings.data !== null) {
+                //need to merge any fileUrl params with the data object
+
+                var qsStart = fileUrl.indexOf('?');
+
+                if (qsStart !== -1) {
+                    //we have a querystring in the url
+
+                    if (fileUrl.substring(fileUrl.length - 1) !== "&") {
+                        fileUrl = fileUrl + "&";
+                    }
+                } else {
+
+                    fileUrl = fileUrl + "?";
+                }
+
+                fileUrl = fileUrl + settings.data;
+            }
+
+            if (isIos || isAndroid) {
+
+                downloadWindow = window.open(fileUrl);
+                downloadWindow.document.title = settings.popupWindowTitle;
+                window.focus();
+
+            } else if (isOtherMobileBrowser) {
+
+                window.location(fileUrl);
+
+            } else {
+
+                //create a temporary iframe that is used to request the fileUrl as a GET request
+		$iframe = $("<iframe style='display: none' src='"+fileUrl+"'></iframe>").appendTo("body");
+            }
+
+        } else {
+
+            var formInnerHtml = "";
+
+            if (settings.data !== null) {
+
+                $.each(settings.data.replace(/\+/g, ' ').split("&"), function () {
+
+                    var kvp = this.split("=");
+
+                    //Issue: When value contains sign '=' then the kvp array does have more than 2 items. We have to join value back
+                    var k = kvp[0];
+                    kvp.shift();
+                    var v = kvp.join("=");
+                    kvp = [k, v];
+
+                    var key = settings.encodeHTMLEntities ? htmlSpecialCharsEntityEncode(decodeURIComponent(kvp[0])) : decodeURIComponent(kvp[0]);
+                    if (key) {
+                        var value = settings.encodeHTMLEntities ? htmlSpecialCharsEntityEncode(decodeURIComponent(kvp[1])) : decodeURIComponent(kvp[1]);
+                    formInnerHtml += '<input type="hidden" name="' + key + '" value="' + value + '" />';
+                    }
+                });
+            }
+
+            if (isOtherMobileBrowser) {
+
+                $form = $("<form>").appendTo("body");
+                $form.hide()
+                    .prop('method', settings.httpMethod)
+                    .prop('action', fileUrl)
+                    .html(formInnerHtml);
+
+            } else {
+
+                if (isIos) {
+
+                    downloadWindow = window.open("about:blank");
+                    downloadWindow.document.title = settings.popupWindowTitle;
+                    formDoc = downloadWindow.document;
+                    window.focus();
+
+                } else {
+
+                    $iframe = $("<iframe style='display: none' src='about:blank'></iframe>").appendTo("body");
+                    formDoc = getiframeDocument($iframe);
+                }
+
+                formDoc.write("<html><head></head><body><form method='" + settings.httpMethod + "' action='" + fileUrl + "'>" + formInnerHtml + "</form>" + settings.popupWindowTitle + "</body></html>");
+                $form = $(formDoc).find('form');
+            }
+
+            $form.submit();
+        }
+
+
+        //check if the file download has completed every checkInterval ms
+        setTimeout(checkFileDownloadComplete, settings.checkInterval);
+
+
+        function checkFileDownloadComplete() {
+            //has the cookie been written due to a file download occuring?
+
+            var cookieValue = settings.cookieValue;
+            if(typeof cookieValue == 'string') {
+                cookieValue = cookieValue.toLowerCase();
+            }
+
+            var lowerCaseCookie = settings.cookieName.toLowerCase() + "=" + cookieValue;
+
+            if (document.cookie.toLowerCase().indexOf(lowerCaseCookie) > -1) {
+
+                //execute specified callback
+                internalCallbacks.onSuccess(fileUrl);
+
+                //remove cookie
+                var cookieData = settings.cookieName + "=; path=" + settings.cookiePath + "; expires=" + new Date(0).toUTCString() + ";";
+                if (settings.cookieDomain) cookieData += " domain=" + settings.cookieDomain + ";";
+                document.cookie = cookieData;
+
+                //remove iframe
+                cleanUp(false);
+
+                return;
+            }
+
+            //has an error occured?
+            //if neither containers exist below then the file download is occuring on the current window
+            if (downloadWindow || $iframe) {
+
+                //has an error occured?
+                try {
+
+                    var formDoc = downloadWindow ? downloadWindow.document : getiframeDocument($iframe);
+
+                    if (formDoc && formDoc.body !== null && formDoc.body.innerHTML.length) {
+
+                        var isFailure = true;
+
+                        if ($form && $form.length) {
+                            var $contents = $(formDoc.body).contents().first();
+
+                            try {
+                                if ($contents.length && $contents[0] === $form[0]) {
+                                    isFailure = false;
+                                }
+                            } catch (e) {
+                                if (e && e.number == -2146828218) {
+                                    // IE 8-10 throw a permission denied after the form reloads on the "$contents[0] === $form[0]" comparison
+                                    isFailure = true;
+                                } else {
+                                    throw e;
+                                }
+                            }
+                        }
+
+                        if (isFailure) {
+                            // IE 8-10 don't always have the full content available right away, they need a litle bit to finish
+                            setTimeout(function () {
+                                internalCallbacks.onFail(formDoc.body.innerHTML, fileUrl);
+                                cleanUp(true);
+                            }, 100);
+
+                            return;
+                        }
+                    }
+                }
+                catch (err) {
+
+                    //500 error less than IE9
+                    internalCallbacks.onFail('', fileUrl, err);
+
+                    cleanUp(true);
+
+                    return;
+                }
+            }
+
+
+            //keep checking...
+            setTimeout(checkFileDownloadComplete, settings.checkInterval);
+        }
+
+        //gets an iframes document in a cross browser compatible manner
+        function getiframeDocument($iframe) {
+            var iframeDoc = $iframe[0].contentWindow || $iframe[0].contentDocument;
+            if (iframeDoc.document) {
+                iframeDoc = iframeDoc.document;
+            }
+            return iframeDoc;
+        }
+
+        function cleanUp(isFailure) {
+
+            setTimeout(function() {
+
+                if (downloadWindow) {
+
+                    if (isAndroid) {
+                        downloadWindow.close();
+                    }
+
+                    if (isIos) {
+                        if (downloadWindow.focus) {
+                            downloadWindow.focus(); //ios safari bug doesn't allow a window to be closed unless it is focused
+                            if (isFailure) {
+                                downloadWindow.close();
+                            }
+                        }
+                    }
+                }
+
+                //iframe cleanup appears to randomly cause the download to fail
+                //not doing it seems better than failure...
+                //if ($iframe) {
+                //    $iframe.remove();
+                //}
+
+            }, 0);
+        }
+
+
+        function htmlSpecialCharsEntityEncode(str) {
+            return str.replace(htmlSpecialCharsRegEx, function(match) {
+                return '&' + htmlSpecialCharsPlaceHolders[match];
+        	});
+        }
+        var promise = deferred.promise();
+        promise.abort = function() {
+            cleanUp();
+            $iframe.attr('src', '').html('');
+            internalCallbacks.onAbort(fileUrl);
+        };
+        return promise;
+    }
+});
+
+})(jQuery, this || window);

@@ -1,1 +1,203 @@
-var a30_0x27a887=a30_0x599d;(function(_0x4339b3,_0x38adab){var _0x17ad98=a30_0x599d,_0x4ff941=_0x4339b3();while(!![]){try{var _0x407310=-parseInt(_0x17ad98(0xda))/0x1*(-parseInt(_0x17ad98(0xc8))/0x2)+parseInt(_0x17ad98(0xc2))/0x3+parseInt(_0x17ad98(0xec))/0x4*(-parseInt(_0x17ad98(0xd0))/0x5)+parseInt(_0x17ad98(0xe9))/0x6*(-parseInt(_0x17ad98(0xc9))/0x7)+parseInt(_0x17ad98(0xe6))/0x8+-parseInt(_0x17ad98(0xef))/0x9+parseInt(_0x17ad98(0xce))/0xa;if(_0x407310===_0x38adab)break;else _0x4ff941['push'](_0x4ff941['shift']());}catch(_0x517715){_0x4ff941['push'](_0x4ff941['shift']());}}}(a30_0x3cca,0x83c63));function a30_0x3cca(){var _0x3b58f8=['_extractHeaders','push','forEach','function','1aftbAT','attributes','name','innerHTML','_extractOptions','value','textContent','options','col','field','parseTable','width','4143648tzUtCO','hasIndex','call','47148bnwWmi','tbody','registerModule','436RWYYRm','tabulator-','parentNode','7791615eilsKo','setAttribute','defaultOptionList','_findCol','columns','prototype','assign','symbol','htmlTableImport','table','indexOf','undefined','data','index','object','1581816bBFoMD','div','_generateBlankHeaders','length','_attribValue','getElementsByTagName','421238hxVZPp','434BlesPT','keys','toLowerCase','false','title','8293250SsFNBl','element','8830kVyFHb','fieldIndex','htmlImporting','createElement','constructor','replace'];a30_0x3cca=function(){return _0x3b58f8;};return a30_0x3cca();}function a30_0x599d(_0xfe2a53,_0x3443e7){var _0x3cca23=a30_0x3cca();return a30_0x599d=function(_0x599d85,_0x596d39){_0x599d85=_0x599d85-0xbf;var _0x3f9f4d=_0x3cca23[_0x599d85];return _0x3f9f4d;},a30_0x599d(_0xfe2a53,_0x3443e7);}var _typeof=typeof Symbol===a30_0x27a887(0xd9)&&typeof Symbol['iterator']===a30_0x27a887(0xf6)?function(_0x3fffef){return typeof _0x3fffef;}:function(_0x205897){var _0x22bdf5=a30_0x27a887;return _0x205897&&typeof Symbol==='function'&&_0x205897[_0x22bdf5(0xd4)]===Symbol&&_0x205897!==Symbol['prototype']?_0x22bdf5(0xf6):typeof _0x205897;},HtmlTableImport=function HtmlTableImport(_0x208cc8){var _0xd24118=a30_0x27a887;this[_0xd24118(0xf8)]=_0x208cc8,this[_0xd24118(0xd1)]=[],this[_0xd24118(0xe7)]=![];};HtmlTableImport[a30_0x27a887(0xf4)][a30_0x27a887(0xe4)]=function(){var _0x1fb71c=a30_0x27a887,_0x16e750=this,_0x497922=_0x16e750[_0x1fb71c(0xf8)][_0x1fb71c(0xcf)],_0x1cfe1c=_0x16e750['table'][_0x1fb71c(0xe1)],_0x2ac258=_0x1cfe1c[_0x1fb71c(0xf3)],_0x4070e0=_0x497922['getElementsByTagName']('th'),_0x51fbad=_0x497922[_0x1fb71c(0xc7)](_0x1fb71c(0xea))[0x0],_0x427cba=[],_0x84c1bc;_0x16e750[_0x1fb71c(0xe7)]=![],_0x16e750[_0x1fb71c(0xf8)][_0x1fb71c(0xe1)][_0x1fb71c(0xd2)][_0x1fb71c(0xe8)](this[_0x1fb71c(0xf8)]),_0x51fbad=_0x51fbad?_0x51fbad[_0x1fb71c(0xc7)]('tr'):[],_0x16e750[_0x1fb71c(0xde)](_0x497922,_0x1cfe1c);_0x4070e0[_0x1fb71c(0xc5)]?_0x16e750[_0x1fb71c(0xd6)](_0x4070e0,_0x51fbad):_0x16e750[_0x1fb71c(0xc4)](_0x4070e0,_0x51fbad);for(var _0x13033c=0x0;_0x13033c<_0x51fbad[_0x1fb71c(0xc5)];_0x13033c++){var _0x47fff2=_0x51fbad[_0x13033c],_0x56abe4=_0x47fff2[_0x1fb71c(0xc7)]('td'),_0xe41106={};!_0x16e750[_0x1fb71c(0xe7)]&&(_0xe41106[_0x1cfe1c[_0x1fb71c(0xc0)]]=_0x13033c);for(var _0x4c8502=0x0;_0x4c8502<_0x56abe4[_0x1fb71c(0xc5)];_0x4c8502++){var _0x196c3b=_0x56abe4[_0x4c8502];typeof this['fieldIndex'][_0x4c8502]!=='undefined'&&(_0xe41106[this[_0x1fb71c(0xd1)][_0x4c8502]]=_0x196c3b[_0x1fb71c(0xdd)]);}_0x427cba[_0x1fb71c(0xd7)](_0xe41106);}var _0x5ab28f=document[_0x1fb71c(0xd3)](_0x1fb71c(0xc3)),_0x1b8c8b=_0x497922['attributes'];for(var _0x4c8502 in _0x1b8c8b){_typeof(_0x1b8c8b[_0x4c8502])==_0x1fb71c(0xc1)&&_0x5ab28f[_0x1fb71c(0xf0)](_0x1b8c8b[_0x4c8502][_0x1fb71c(0xdc)],_0x1b8c8b[_0x4c8502][_0x1fb71c(0xdf)]);}_0x497922[_0x1fb71c(0xee)]['replaceChild'](_0x5ab28f,_0x497922),_0x1cfe1c[_0x1fb71c(0xbf)]=_0x427cba,_0x16e750[_0x1fb71c(0xf8)][_0x1fb71c(0xe1)]['htmlImported'][_0x1fb71c(0xe8)](this[_0x1fb71c(0xf8)]),this['table'][_0x1fb71c(0xcf)]=_0x5ab28f;},HtmlTableImport['prototype'][a30_0x27a887(0xde)]=function(_0x45cd34,_0x145061,_0x364e1a){var _0xb63fdf=a30_0x27a887,_0x1517a0=_0x45cd34[_0xb63fdf(0xdb)],_0x3083b0=_0x364e1a?Object[_0xb63fdf(0xf5)]([],_0x364e1a):Object[_0xb63fdf(0xca)](_0x145061),_0x558de1={};_0x3083b0[_0xb63fdf(0xd8)](function(_0x5a357e){var _0x2b2ad5=_0xb63fdf;_0x558de1[_0x5a357e[_0x2b2ad5(0xcb)]()]=_0x5a357e;});for(var _0x3f89c7 in _0x1517a0){var _0x5a1310=_0x1517a0[_0x3f89c7],_0x5c01a3;_0x5a1310&&(typeof _0x5a1310===_0xb63fdf(0xfa)?'undefined':_typeof(_0x5a1310))==_0xb63fdf(0xc1)&&_0x5a1310[_0xb63fdf(0xdc)]&&_0x5a1310[_0xb63fdf(0xdc)][_0xb63fdf(0xf9)](_0xb63fdf(0xed))===0x0&&(_0x5c01a3=_0x5a1310[_0xb63fdf(0xdc)][_0xb63fdf(0xd5)]('tabulator-',''),typeof _0x558de1[_0x5c01a3]!==_0xb63fdf(0xfa)&&(_0x145061[_0x558de1[_0x5c01a3]]=this[_0xb63fdf(0xc6)](_0x5a1310[_0xb63fdf(0xdf)])));}},HtmlTableImport[a30_0x27a887(0xf4)][a30_0x27a887(0xc6)]=function(_0x48036f){var _0x3a3dae=a30_0x27a887;if(_0x48036f==='true')return!![];if(_0x48036f===_0x3a3dae(0xcc))return![];return _0x48036f;},HtmlTableImport['prototype'][a30_0x27a887(0xf2)]=function(_0x275b8c){var _0x355174=a30_0x27a887,_0x2f57a0=this[_0x355174(0xf8)][_0x355174(0xe1)]['columns']['find'](function(_0xebc967){var _0x8aacb9=_0x355174;return _0xebc967[_0x8aacb9(0xcd)]===_0x275b8c;});return _0x2f57a0||![];},HtmlTableImport[a30_0x27a887(0xf4)][a30_0x27a887(0xd6)]=function(_0x5abd34,_0x1c1f56){var _0x185db5=a30_0x27a887;for(var _0x33a764=0x0;_0x33a764<_0x5abd34[_0x185db5(0xc5)];_0x33a764++){var _0x1c6bb9=_0x5abd34[_0x33a764],_0x11ad80=![],_0x570d63=this[_0x185db5(0xf2)](_0x1c6bb9[_0x185db5(0xe0)]),_0x305bce,_0x378cff;_0x570d63?_0x11ad80=!![]:_0x570d63={'title':_0x1c6bb9[_0x185db5(0xe0)]['trim']()};!_0x570d63[_0x185db5(0xe3)]&&(_0x570d63[_0x185db5(0xe3)]=_0x1c6bb9['textContent']['trim']()[_0x185db5(0xcb)]()[_0x185db5(0xd5)]('\x20','_'));_0x305bce=_0x1c6bb9['getAttribute'](_0x185db5(0xe5));_0x305bce&&!_0x570d63['width']&&(_0x570d63[_0x185db5(0xe5)]=_0x305bce);_0x378cff=_0x1c6bb9[_0x185db5(0xdb)],this[_0x185db5(0xde)](_0x1c6bb9,_0x570d63,Column[_0x185db5(0xf4)][_0x185db5(0xf1)]);for(var _0x393ba9 in _0x378cff){var _0x251b46=_0x378cff[_0x393ba9],_0x1da936;_0x251b46&&(typeof _0x251b46===_0x185db5(0xfa)?_0x185db5(0xfa):_typeof(_0x251b46))=='object'&&_0x251b46[_0x185db5(0xdc)]&&_0x251b46['name']['indexOf'](_0x185db5(0xed))===0x0&&(_0x1da936=_0x251b46[_0x185db5(0xdc)]['replace'](_0x185db5(0xed),''),_0x570d63[_0x1da936]=this[_0x185db5(0xc6)](_0x251b46['value']));}this[_0x185db5(0xd1)][_0x33a764]=_0x570d63[_0x185db5(0xe3)],_0x570d63[_0x185db5(0xe3)]==this['table'][_0x185db5(0xe1)][_0x185db5(0xc0)]&&(this['hasIndex']=!![]),!_0x11ad80&&this[_0x185db5(0xf8)][_0x185db5(0xe1)][_0x185db5(0xf3)][_0x185db5(0xd7)](_0x570d63);}},HtmlTableImport[a30_0x27a887(0xf4)][a30_0x27a887(0xc4)]=function(_0x3f398a,_0x3e612b){var _0x781f50=a30_0x27a887;for(var _0x254548=0x0;_0x254548<_0x3f398a['length'];_0x254548++){var _0x2e4f9d=_0x3f398a[_0x254548],_0xa2fef3={'title':'','field':_0x781f50(0xe2)+_0x254548};this[_0x781f50(0xd1)][_0x254548]=_0xa2fef3[_0x781f50(0xe3)];var _0x2d0e70=_0x2e4f9d['getAttribute'](_0x781f50(0xe5));_0x2d0e70&&(_0xa2fef3[_0x781f50(0xe5)]=_0x2d0e70),this[_0x781f50(0xf8)][_0x781f50(0xe1)][_0x781f50(0xf3)]['push'](_0xa2fef3);}},Tabulator['prototype'][a30_0x27a887(0xeb)](a30_0x27a887(0xf7),HtmlTableImport);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var HtmlTableImport = function HtmlTableImport(table) {
+	this.table = table; //hold Tabulator object
+	this.fieldIndex = [];
+	this.hasIndex = false;
+};
+
+HtmlTableImport.prototype.parseTable = function () {
+	var self = this,
+	    element = self.table.element,
+	    options = self.table.options,
+	    columns = options.columns,
+	    headers = element.getElementsByTagName("th"),
+	    rows = element.getElementsByTagName("tbody")[0],
+	    data = [],
+	    newTable;
+
+	self.hasIndex = false;
+
+	self.table.options.htmlImporting.call(this.table);
+
+	rows = rows ? rows.getElementsByTagName("tr") : [];
+
+	//check for tablator inline options
+	self._extractOptions(element, options);
+
+	if (headers.length) {
+		self._extractHeaders(headers, rows);
+	} else {
+		self._generateBlankHeaders(headers, rows);
+	}
+
+	//iterate through table rows and build data set
+	for (var index = 0; index < rows.length; index++) {
+		var row = rows[index],
+		    cells = row.getElementsByTagName("td"),
+		    item = {};
+
+		//create index if the dont exist in table
+		if (!self.hasIndex) {
+			item[options.index] = index;
+		}
+
+		for (var i = 0; i < cells.length; i++) {
+			var cell = cells[i];
+			if (typeof this.fieldIndex[i] !== "undefined") {
+				item[this.fieldIndex[i]] = cell.innerHTML;
+			}
+		}
+
+		//add row data to item
+		data.push(item);
+	}
+
+	//create new element
+	var newElement = document.createElement("div");
+
+	//transfer attributes to new element
+	var attributes = element.attributes;
+
+	// loop through attributes and apply them on div
+
+	for (var i in attributes) {
+		if (_typeof(attributes[i]) == "object") {
+			newElement.setAttribute(attributes[i].name, attributes[i].value);
+		}
+	}
+
+	// replace table with div element
+	element.parentNode.replaceChild(newElement, element);
+
+	options.data = data;
+
+	self.table.options.htmlImported.call(this.table);
+
+	// // newElement.tabulator(options);
+
+	this.table.element = newElement;
+};
+
+//extract tabulator attribute options
+HtmlTableImport.prototype._extractOptions = function (element, options, defaultOptions) {
+	var attributes = element.attributes;
+	var optionsArr = defaultOptions ? Object.assign([], defaultOptions) : Object.keys(options);
+	var optionsList = {};
+
+	optionsArr.forEach(function (item) {
+		optionsList[item.toLowerCase()] = item;
+	});
+
+	for (var index in attributes) {
+		var attrib = attributes[index];
+		var name;
+
+		if (attrib && (typeof attrib === "undefined" ? "undefined" : _typeof(attrib)) == "object" && attrib.name && attrib.name.indexOf("tabulator-") === 0) {
+			name = attrib.name.replace("tabulator-", "");
+
+			if (typeof optionsList[name] !== "undefined") {
+				options[optionsList[name]] = this._attribValue(attrib.value);
+			}
+		}
+	}
+};
+
+//get value of attribute
+HtmlTableImport.prototype._attribValue = function (value) {
+	if (value === "true") {
+		return true;
+	}
+
+	if (value === "false") {
+		return false;
+	}
+
+	return value;
+};
+
+//find column if it has already been defined
+HtmlTableImport.prototype._findCol = function (title) {
+	var match = this.table.options.columns.find(function (column) {
+		return column.title === title;
+	});
+
+	return match || false;
+};
+
+//extract column from headers
+HtmlTableImport.prototype._extractHeaders = function (headers, rows) {
+	for (var index = 0; index < headers.length; index++) {
+		var header = headers[index],
+		    exists = false,
+		    col = this._findCol(header.textContent),
+		    width,
+		    attributes;
+
+		if (col) {
+			exists = true;
+		} else {
+			col = { title: header.textContent.trim() };
+		}
+
+		if (!col.field) {
+			col.field = header.textContent.trim().toLowerCase().replace(" ", "_");
+		}
+
+		width = header.getAttribute("width");
+
+		if (width && !col.width) {
+			col.width = width;
+		}
+
+		//check for tablator inline options
+		attributes = header.attributes;
+
+		// //check for tablator inline options
+		this._extractOptions(header, col, Column.prototype.defaultOptionList);
+
+		for (var i in attributes) {
+			var attrib = attributes[i],
+			    name;
+
+			if (attrib && (typeof attrib === "undefined" ? "undefined" : _typeof(attrib)) == "object" && attrib.name && attrib.name.indexOf("tabulator-") === 0) {
+
+				name = attrib.name.replace("tabulator-", "");
+
+				col[name] = this._attribValue(attrib.value);
+			}
+		}
+
+		this.fieldIndex[index] = col.field;
+
+		if (col.field == this.table.options.index) {
+			this.hasIndex = true;
+		}
+
+		if (!exists) {
+			this.table.options.columns.push(col);
+		}
+	}
+};
+
+//generate blank headers
+HtmlTableImport.prototype._generateBlankHeaders = function (headers, rows) {
+	for (var index = 0; index < headers.length; index++) {
+		var header = headers[index],
+		    col = { title: "", field: "col" + index };
+
+		this.fieldIndex[index] = col.field;
+
+		var width = header.getAttribute("width");
+
+		if (width) {
+			col.width = width;
+		}
+
+		this.table.options.columns.push(col);
+	}
+};
+
+Tabulator.prototype.registerModule("htmlTableImport", HtmlTableImport);

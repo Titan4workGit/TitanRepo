@@ -1,1 +1,341 @@
-var a10_0x1e3f8e=a10_0x41b8;(function(_0x3a4e8b,_0x45be48){var _0x4c36a3=a10_0x41b8,_0x3c667b=_0x3a4e8b();while(!![]){try{var _0x4107d9=-parseInt(_0x4c36a3(0x184))/0x1*(parseInt(_0x4c36a3(0x179))/0x2)+-parseInt(_0x4c36a3(0x18c))/0x3+-parseInt(_0x4c36a3(0x19c))/0x4+-parseInt(_0x4c36a3(0x1a7))/0x5+parseInt(_0x4c36a3(0x172))/0x6+parseInt(_0x4c36a3(0x19d))/0x7*(-parseInt(_0x4c36a3(0x18b))/0x8)+parseInt(_0x4c36a3(0x162))/0x9;if(_0x4107d9===_0x45be48)break;else _0x3c667b['push'](_0x3c667b['shift']());}catch(_0x1c2f94){_0x3c667b['push'](_0x3c667b['shift']());}}}(a10_0x1470,0xd0a06));var _typeof=typeof Symbol==='function'&&typeof Symbol['iterator']===a10_0x1e3f8e(0x164)?function(_0x4e8306){return typeof _0x4e8306;}:function(_0x3c8de2){var _0x21055c=a10_0x1e3f8e;return _0x3c8de2&&typeof Symbol===_0x21055c(0x16c)&&_0x3c8de2['constructor']===Symbol&&_0x3c8de2!==Symbol[_0x21055c(0x173)]?_0x21055c(0x164):typeof _0x3c8de2;},DataTree=function DataTree(_0x207d37){var _0x1c249b=a10_0x1e3f8e;this[_0x1c249b(0x195)]=_0x207d37,this[_0x1c249b(0x1a9)]=0xa,this[_0x1c249b(0x190)]='',this[_0x1c249b(0x1b8)]=null,this[_0x1c249b(0x1ad)]=null,this[_0x1c249b(0x1b7)]=null,this[_0x1c249b(0x15b)]=![],this[_0x1c249b(0x15c)]=function(){},this[_0x1c249b(0x196)]=0x0;};DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x1b5)]=function(){var _0x219d6a=a10_0x1e3f8e,_0x593283=null,_0x19bc14=this[_0x219d6a(0x195)][_0x219d6a(0x15a)][_0x219d6a(0x186)](),_0x77b2be=this['table'][_0x219d6a(0x1a2)];this['field']=_0x77b2be['dataTreeChildField'],this['indent']=_0x77b2be[_0x219d6a(0x1a4)],this[_0x219d6a(0x15b)]=_0x77b2be[_0x219d6a(0x19f)]||(_0x19bc14?_0x19bc14[_0x219d6a(0x190)]:![]);_0x77b2be[_0x219d6a(0x1bb)]&&(_0x77b2be['dataTreeBranchElement']===!![]?(this[_0x219d6a(0x1b7)]=document[_0x219d6a(0x1bc)]('div'),this['branchEl'][_0x219d6a(0x1a1)][_0x219d6a(0x1ab)](_0x219d6a(0x193))):typeof _0x77b2be['dataTreeBranchElement']===_0x219d6a(0x16e)?(_0x593283=document['createElement'](_0x219d6a(0x192)),_0x593283['innerHTML']=_0x77b2be[_0x219d6a(0x1bb)],this[_0x219d6a(0x1b7)]=_0x593283[_0x219d6a(0x1b0)]):this[_0x219d6a(0x1b7)]=_0x77b2be[_0x219d6a(0x1bb)]);_0x77b2be[_0x219d6a(0x18a)]?typeof _0x77b2be[_0x219d6a(0x18a)]===_0x219d6a(0x16e)?(_0x593283=document[_0x219d6a(0x1bc)](_0x219d6a(0x192)),_0x593283[_0x219d6a(0x1a3)]=_0x77b2be['dataTreeCollapseElement'],this[_0x219d6a(0x1b8)]=_0x593283[_0x219d6a(0x1b0)]):this[_0x219d6a(0x1b8)]=_0x77b2be['dataTreeCollapseElement']:(this[_0x219d6a(0x1b8)]=document['createElement'](_0x219d6a(0x192)),this[_0x219d6a(0x1b8)][_0x219d6a(0x1a1)][_0x219d6a(0x1ab)](_0x219d6a(0x189)),this[_0x219d6a(0x1b8)][_0x219d6a(0x166)]=0x0,this[_0x219d6a(0x1b8)][_0x219d6a(0x1a3)]='<div\x20class=\x27tabulator-data-tree-control-collapse\x27></div>');_0x77b2be['dataTreeExpandElement']?typeof _0x77b2be[_0x219d6a(0x181)]===_0x219d6a(0x16e)?(_0x593283=document['createElement']('div'),_0x593283[_0x219d6a(0x1a3)]=_0x77b2be[_0x219d6a(0x181)],this['expandEl']=_0x593283['firstChild']):this[_0x219d6a(0x1ad)]=_0x77b2be['dataTreeExpandElement']:(this['expandEl']=document['createElement'](_0x219d6a(0x192)),this[_0x219d6a(0x1ad)]['classList']['add'](_0x219d6a(0x189)),this[_0x219d6a(0x1ad)][_0x219d6a(0x166)]=0x0,this[_0x219d6a(0x1ad)][_0x219d6a(0x1a3)]=_0x219d6a(0x159));switch(_typeof(_0x77b2be[_0x219d6a(0x17b)])){case _0x219d6a(0x1a8):this[_0x219d6a(0x15c)]=function(_0x2e326e,_0x3d767f){var _0x14b13f=_0x219d6a;return _0x77b2be[_0x14b13f(0x17b)];};break;case _0x219d6a(0x16c):this['startOpen']=_0x77b2be[_0x219d6a(0x17b)];break;default:this[_0x219d6a(0x15c)]=function(_0x4664dc,_0x11aa22){var _0x13dd57=_0x219d6a;return _0x77b2be[_0x13dd57(0x17b)][_0x11aa22];};break;}},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x158)]=function(_0xc73250){var _0x3dd944=a10_0x1e3f8e,_0x5eb035=_0xc73250[_0x3dd944(0x183)]()[this[_0x3dd944(0x190)]],_0x3aa35a=Array[_0x3dd944(0x15d)](_0x5eb035),_0x153b9c=_0x3aa35a||!_0x3aa35a&&(typeof _0x5eb035===_0x3dd944(0x174)?_0x3dd944(0x174):_typeof(_0x5eb035))===_0x3dd944(0x19e)&&_0x5eb035!==null;_0xc73250[_0x3dd944(0x18f)][_0x3dd944(0x177)]={'index':0x0,'open':_0x153b9c?this[_0x3dd944(0x15c)](_0xc73250[_0x3dd944(0x16d)](),0x0):![],'controlEl':![],'branchEl':![],'parent':![],'children':_0x153b9c};},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x188)]=function(_0x4039ae){var _0x2acfec=a10_0x1e3f8e,_0x50be64=this['elementField']?_0x4039ae[_0x2acfec(0x17d)](this[_0x2acfec(0x15b)]):_0x4039ae['getCells']()[0x0],_0x514f3=_0x50be64[_0x2acfec(0x163)](),_0x2de95f=_0x4039ae['modules']['dataTree'];_0x2de95f[_0x2acfec(0x1b7)]&&_0x2de95f['branchEl'][_0x2acfec(0x1b9)][_0x2acfec(0x17e)](_0x2de95f['branchEl']),this['generateControlElement'](_0x4039ae,_0x514f3),_0x2de95f[_0x2acfec(0x16b)]&&(this[_0x2acfec(0x1b7)]?(_0x2de95f[_0x2acfec(0x1b7)]=this[_0x2acfec(0x1b7)][_0x2acfec(0x182)](!![]),_0x514f3[_0x2acfec(0x16f)](_0x2de95f[_0x2acfec(0x1b7)],_0x514f3[_0x2acfec(0x1b0)]),_0x2de95f[_0x2acfec(0x1b7)][_0x2acfec(0x1ba)][_0x2acfec(0x170)]=(_0x2de95f[_0x2acfec(0x1b7)][_0x2acfec(0x1a6)]+_0x2de95f[_0x2acfec(0x1b7)][_0x2acfec(0x1ba)]['marginRight'])*(_0x2de95f[_0x2acfec(0x16b)]-0x1)+_0x2de95f['index']*this[_0x2acfec(0x1a9)]+'px'):_0x514f3[_0x2acfec(0x1ba)]['paddingLeft']=parseInt(window[_0x2acfec(0x1a5)](_0x514f3,null)[_0x2acfec(0x1aa)](_0x2acfec(0x160)))+_0x2de95f['index']*this[_0x2acfec(0x1a9)]+'px');},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x171)]=function(_0xd92e90,_0x5d386a){var _0x299600=a10_0x1e3f8e,_0x323a18=this,_0x951b87=_0xd92e90[_0x299600(0x18f)][_0x299600(0x177)],_0x5d386a=_0x5d386a||_0xd92e90[_0x299600(0x180)]()[0x0][_0x299600(0x163)](),_0x137d1c=_0x951b87[_0x299600(0x1b4)];_0x951b87[_0x299600(0x1ae)]!==![]&&(_0x951b87['open']?(_0x951b87[_0x299600(0x1b4)]=this[_0x299600(0x1b8)][_0x299600(0x182)](!![]),_0x951b87['controlEl'][_0x299600(0x167)](_0x299600(0x197),function(_0x283237){_0x283237['stopPropagation'](),_0x323a18['collapseRow'](_0xd92e90);})):(_0x951b87['controlEl']=this['expandEl'][_0x299600(0x182)](!![]),_0x951b87['controlEl'][_0x299600(0x167)]('click',function(_0x5df056){_0x5df056['stopPropagation'](),_0x323a18['expandRow'](_0xd92e90);})),_0x951b87[_0x299600(0x1b4)][_0x299600(0x167)](_0x299600(0x194),function(_0x494193){var _0x43b779=_0x299600;_0x494193[_0x43b779(0x191)]();}),_0x137d1c&&_0x137d1c[_0x299600(0x1b9)]===_0x5d386a?_0x137d1c['parentNode']['replaceChild'](_0x951b87[_0x299600(0x1b4)],_0x137d1c):_0x5d386a[_0x299600(0x16f)](_0x951b87[_0x299600(0x1b4)],_0x5d386a[_0x299600(0x1b0)]));},DataTree[a10_0x1e3f8e(0x173)]['setDisplayIndex']=function(_0x360577){var _0x10f87a=a10_0x1e3f8e;this[_0x10f87a(0x196)]=_0x360577;},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x199)]=function(){var _0x8a78d0=a10_0x1e3f8e;return this[_0x8a78d0(0x196)];},DataTree[a10_0x1e3f8e(0x173)]['getRows']=function(_0xc092b4){var _0x298a87=a10_0x1e3f8e,_0x475218=this,_0x4cdd2d=[];return _0xc092b4[_0x298a87(0x176)](function(_0x208b72,_0xb40219){var _0x2a9a27=_0x298a87,_0xc72f4c,_0x51ee2a;_0x4cdd2d[_0x2a9a27(0x169)](_0x208b72),_0x208b72 instanceof Row&&(_0xc72f4c=_0x208b72[_0x2a9a27(0x18f)][_0x2a9a27(0x177)]['children'],!_0xc72f4c[_0x2a9a27(0x16b)]&&_0xc72f4c[_0x2a9a27(0x1ae)]!==![]&&(_0x51ee2a=_0x475218[_0x2a9a27(0x15e)](_0x208b72),_0x51ee2a[_0x2a9a27(0x176)](function(_0x222863){var _0x1ac8ec=_0x2a9a27;_0x4cdd2d[_0x1ac8ec(0x169)](_0x222863);})));}),_0x4cdd2d;},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x15e)]=function(_0x19142f){var _0x320c96=a10_0x1e3f8e,_0x397bc9=this,_0x166d68=_0x19142f[_0x320c96(0x18f)][_0x320c96(0x177)],_0x1c6c59=[],_0x2271f8=[];return _0x166d68[_0x320c96(0x1ae)]!==![]&&_0x166d68[_0x320c96(0x1b6)]&&(!Array[_0x320c96(0x15d)](_0x166d68[_0x320c96(0x1ae)])&&(_0x166d68[_0x320c96(0x1ae)]=this[_0x320c96(0x16a)](_0x19142f)),this['table'][_0x320c96(0x19a)]('filter')?_0x1c6c59=this[_0x320c96(0x195)][_0x320c96(0x18f)][_0x320c96(0x19b)][_0x320c96(0x19b)](_0x166d68['children']):_0x1c6c59=_0x166d68[_0x320c96(0x1ae)],this[_0x320c96(0x195)][_0x320c96(0x19a)](_0x320c96(0x1b2))&&this[_0x320c96(0x195)][_0x320c96(0x18f)][_0x320c96(0x1b2)][_0x320c96(0x1b2)](_0x1c6c59),_0x1c6c59[_0x320c96(0x176)](function(_0x55fdea){var _0x5e1fab=_0x320c96;_0x2271f8['push'](_0x55fdea);var _0x1abe20=_0x397bc9['getChildren'](_0x55fdea);_0x1abe20[_0x5e1fab(0x176)](function(_0x6381f5){var _0x4a1428=_0x5e1fab;_0x2271f8[_0x4a1428(0x169)](_0x6381f5);});})),_0x2271f8;},DataTree[a10_0x1e3f8e(0x173)]['generateChildren']=function(_0x28e4a0){var _0x1da4da=a10_0x1e3f8e,_0x2dcf41=this,_0x2f7d61=[],_0x35e538=_0x28e4a0[_0x1da4da(0x183)]()[this['field']];return!Array[_0x1da4da(0x15d)](_0x35e538)&&(_0x35e538=[_0x35e538]),_0x35e538[_0x1da4da(0x176)](function(_0xea1731){var _0x448121=_0x1da4da,_0x1c2b69=new Row(_0xea1731||{},_0x2dcf41[_0x448121(0x195)][_0x448121(0x161)]);_0x1c2b69[_0x448121(0x18f)]['dataTree'][_0x448121(0x16b)]=_0x28e4a0[_0x448121(0x18f)][_0x448121(0x177)][_0x448121(0x16b)]+0x1,_0x1c2b69[_0x448121(0x18f)][_0x448121(0x177)][_0x448121(0x1b1)]=_0x28e4a0,_0x1c2b69['modules'][_0x448121(0x177)][_0x448121(0x1ae)]&&(_0x1c2b69['modules'][_0x448121(0x177)][_0x448121(0x1b6)]=_0x2dcf41['startOpen'](_0x1c2b69[_0x448121(0x16d)](),_0x1c2b69['modules'][_0x448121(0x177)]['index'])),_0x2f7d61['push'](_0x1c2b69);}),_0x2f7d61;},DataTree['prototype'][a10_0x1e3f8e(0x18e)]=function(_0x5c19ce,_0x223955){var _0x143cfc=a10_0x1e3f8e,_0x421153=_0x5c19ce[_0x143cfc(0x18f)][_0x143cfc(0x177)];_0x421153[_0x143cfc(0x1ae)]!==![]&&(_0x421153[_0x143cfc(0x1b6)]=!![],_0x5c19ce[_0x143cfc(0x1ac)](),this['table']['rowManager'][_0x143cfc(0x17c)](_0x143cfc(0x1af),![],!![]),this[_0x143cfc(0x195)][_0x143cfc(0x1a2)][_0x143cfc(0x185)](_0x5c19ce[_0x143cfc(0x16d)](),_0x5c19ce[_0x143cfc(0x18f)][_0x143cfc(0x177)][_0x143cfc(0x16b)]));},DataTree['prototype'][a10_0x1e3f8e(0x168)]=function(_0xddccb3){var _0x419681=a10_0x1e3f8e,_0x26e8e2=_0xddccb3['modules']['dataTree'];_0x26e8e2['children']!==![]&&(_0x26e8e2['open']=![],_0xddccb3[_0x419681(0x1ac)](),this[_0x419681(0x195)][_0x419681(0x161)][_0x419681(0x17c)](_0x419681(0x1af),![],!![]),this[_0x419681(0x195)]['options'][_0x419681(0x17a)](_0xddccb3[_0x419681(0x16d)](),_0xddccb3['modules'][_0x419681(0x177)][_0x419681(0x16b)]));},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x15f)]=function(_0x10ce98){var _0x5b1f83=a10_0x1e3f8e,_0x312062=_0x10ce98[_0x5b1f83(0x18f)][_0x5b1f83(0x177)];_0x312062[_0x5b1f83(0x1ae)]!==![]&&(_0x312062[_0x5b1f83(0x1b6)]?this[_0x5b1f83(0x168)](_0x10ce98):this[_0x5b1f83(0x18e)](_0x10ce98));},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x1a0)]=function(_0x11fe3b){var _0x199a0e=a10_0x1e3f8e;return _0x11fe3b[_0x199a0e(0x18f)][_0x199a0e(0x177)][_0x199a0e(0x1b1)]?_0x11fe3b[_0x199a0e(0x18f)][_0x199a0e(0x177)]['parent'][_0x199a0e(0x16d)]():![];},DataTree['prototype'][a10_0x1e3f8e(0x18d)]=function(_0x3a8af4){var _0x3045fe=a10_0x1e3f8e,_0x40a134=_0x3a8af4[_0x3045fe(0x18f)][_0x3045fe(0x177)],_0x4a4a37=[];return _0x40a134['children']&&(!Array['isArray'](_0x40a134[_0x3045fe(0x1ae)])&&(_0x40a134[_0x3045fe(0x1ae)]=this[_0x3045fe(0x16a)](_0x3a8af4)),_0x40a134[_0x3045fe(0x1ae)]['forEach'](function(_0x48dc2d){var _0x58bc80=_0x3045fe;_0x48dc2d instanceof Row&&_0x4a4a37[_0x58bc80(0x169)](_0x48dc2d[_0x58bc80(0x16d)]());})),_0x4a4a37;},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x17f)]=function(_0x5c88a1){var _0xe65174=a10_0x1e3f8e;!_0x5c88a1[_0xe65174(0x1b3)][_0xe65174(0x187)][_0xe65174(0x198)](_0x5c88a1)&&(_0x5c88a1['row'][_0xe65174(0x18f)][_0xe65174(0x177)][_0xe65174(0x1ae)]!==![]&&_0x5c88a1[_0xe65174(0x1b3)][_0xe65174(0x1ac)]());},DataTree[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x165)]=function(){var _0x10e0e3=a10_0x1e3f8e;return this[_0x10e0e3(0x190)];},DataTree['prototype'][a10_0x1e3f8e(0x175)]=function(_0x34d1e6){var _0x4bc1e1=a10_0x1e3f8e;return(this[_0x4bc1e1(0x190)]?typeof _0x34d1e6[this[_0x4bc1e1(0x190)]]!=='undefined':![])||(this['elementField']?typeof _0x34d1e6[this['elementField']]!==_0x4bc1e1(0x174):![]);},Tabulator[a10_0x1e3f8e(0x173)][a10_0x1e3f8e(0x178)](a10_0x1e3f8e(0x177),DataTree);function a10_0x41b8(_0x58cb42,_0x13ac15){var _0x14704d=a10_0x1470();return a10_0x41b8=function(_0x41b824,_0x191cc1){_0x41b824=_0x41b824-0x158;var _0x1bc648=_0x14704d[_0x41b824];return _0x1bc648;},a10_0x41b8(_0x58cb42,_0x13ac15);}function a10_0x1470(){var _0x21f4bf=['add','reinitialize','expandEl','children','tree','firstChild','parent','sort','row','controlEl','initialize','open','branchEl','collapseEl','parentNode','style','dataTreeBranchElement','createElement','initializeRow','<div\x20class=\x27tabulator-data-tree-control-expand\x27></div>','columnManager','elementField','startOpen','isArray','getChildren','toggleRow','padding-left','rowManager','34271550fQKoyX','getElement','symbol','getChildField','tabIndex','addEventListener','collapseRow','push','generateChildren','index','function','getComponent','string','insertBefore','marginLeft','generateControlElement','9773028MIWgau','prototype','undefined','redrawNeeded','forEach','dataTree','registerModule','1417838vPYxMK','dataTreeRowCollapsed','dataTreeStartExpanded','refreshActiveData','getCell','removeChild','checkForRestyle','getCells','dataTreeExpandElement','cloneNode','getData','1qROhEy','dataTreeRowExpanded','getFirstVisibileColumn','cells','layoutRow','tabulator-data-tree-control','dataTreeCollapseElement','12400600ZRQHRm','4205166zhMCaR','getTreeChildren','expandRow','modules','field','stopPropagation','div','tabulator-data-tree-branch','mousedown','table','displayIndex','click','indexOf','getDisplayIndex','modExists','filter','2969224yHGnlT','7BvPkLB','object','dataTreeElementColumn','getTreeParent','classList','options','innerHTML','dataTreeChildIndent','getComputedStyle','offsetWidth','896160DVURkq','boolean','indent','getPropertyValue'];a10_0x1470=function(){return _0x21f4bf;};return a10_0x1470();}
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var DataTree = function DataTree(table) {
+	this.table = table;
+	this.indent = 10;
+	this.field = "";
+	this.collapseEl = null;
+	this.expandEl = null;
+	this.branchEl = null;
+	this.elementField = false;
+
+	this.startOpen = function () {};
+
+	this.displayIndex = 0;
+};
+
+DataTree.prototype.initialize = function () {
+	var dummyEl = null,
+	    firstCol = this.table.columnManager.getFirstVisibileColumn(),
+	    options = this.table.options;
+
+	this.field = options.dataTreeChildField;
+	this.indent = options.dataTreeChildIndent;
+	this.elementField = options.dataTreeElementColumn || (firstCol ? firstCol.field : false);
+
+	if (options.dataTreeBranchElement) {
+
+		if (options.dataTreeBranchElement === true) {
+			this.branchEl = document.createElement("div");
+			this.branchEl.classList.add("tabulator-data-tree-branch");
+		} else {
+			if (typeof options.dataTreeBranchElement === "string") {
+				dummyEl = document.createElement("div");
+				dummyEl.innerHTML = options.dataTreeBranchElement;
+				this.branchEl = dummyEl.firstChild;
+			} else {
+				this.branchEl = options.dataTreeBranchElement;
+			}
+		}
+	}
+
+	if (options.dataTreeCollapseElement) {
+		if (typeof options.dataTreeCollapseElement === "string") {
+			dummyEl = document.createElement("div");
+			dummyEl.innerHTML = options.dataTreeCollapseElement;
+			this.collapseEl = dummyEl.firstChild;
+		} else {
+			this.collapseEl = options.dataTreeCollapseElement;
+		}
+	} else {
+		this.collapseEl = document.createElement("div");
+		this.collapseEl.classList.add("tabulator-data-tree-control");
+		this.collapseEl.tabIndex = 0;
+		this.collapseEl.innerHTML = "<div class='tabulator-data-tree-control-collapse'></div>";
+	}
+
+	if (options.dataTreeExpandElement) {
+		if (typeof options.dataTreeExpandElement === "string") {
+			dummyEl = document.createElement("div");
+			dummyEl.innerHTML = options.dataTreeExpandElement;
+			this.expandEl = dummyEl.firstChild;
+		} else {
+			this.expandEl = options.dataTreeExpandElement;
+		}
+	} else {
+		this.expandEl = document.createElement("div");
+		this.expandEl.classList.add("tabulator-data-tree-control");
+		this.expandEl.tabIndex = 0;
+		this.expandEl.innerHTML = "<div class='tabulator-data-tree-control-expand'></div>";
+	}
+
+	switch (_typeof(options.dataTreeStartExpanded)) {
+		case "boolean":
+			this.startOpen = function (row, index) {
+				return options.dataTreeStartExpanded;
+			};
+			break;
+
+		case "function":
+			this.startOpen = options.dataTreeStartExpanded;
+			break;
+
+		default:
+			this.startOpen = function (row, index) {
+				return options.dataTreeStartExpanded[index];
+			};
+			break;
+	}
+};
+
+DataTree.prototype.initializeRow = function (row) {
+	var childArray = row.getData()[this.field];
+	var isArray = Array.isArray(childArray);
+
+	var children = isArray || !isArray && (typeof childArray === "undefined" ? "undefined" : _typeof(childArray)) === "object" && childArray !== null;
+
+	row.modules.dataTree = {
+		index: 0,
+		open: children ? this.startOpen(row.getComponent(), 0) : false,
+		controlEl: false,
+		branchEl: false,
+		parent: false,
+		children: children
+	};
+};
+
+DataTree.prototype.layoutRow = function (row) {
+	var cell = this.elementField ? row.getCell(this.elementField) : row.getCells()[0],
+	    el = cell.getElement(),
+	    config = row.modules.dataTree;
+
+	if (config.branchEl) {
+		config.branchEl.parentNode.removeChild(config.branchEl);
+	}
+
+	this.generateControlElement(row, el);
+
+	if (config.index) {
+		if (this.branchEl) {
+			config.branchEl = this.branchEl.cloneNode(true);
+			el.insertBefore(config.branchEl, el.firstChild);
+			config.branchEl.style.marginLeft = (config.branchEl.offsetWidth + config.branchEl.style.marginRight) * (config.index - 1) + config.index * this.indent + "px";
+		} else {
+			el.style.paddingLeft = parseInt(window.getComputedStyle(el, null).getPropertyValue('padding-left')) + config.index * this.indent + "px";
+		}
+	}
+};
+
+DataTree.prototype.generateControlElement = function (row, el) {
+	var _this = this;
+
+	var config = row.modules.dataTree,
+	    el = el || row.getCells()[0].getElement(),
+	    oldControl = config.controlEl;
+
+	if (config.children !== false) {
+
+		if (config.open) {
+			config.controlEl = this.collapseEl.cloneNode(true);
+			config.controlEl.addEventListener("click", function (e) {
+				e.stopPropagation();
+				_this.collapseRow(row);
+			});
+		} else {
+			config.controlEl = this.expandEl.cloneNode(true);
+			config.controlEl.addEventListener("click", function (e) {
+				e.stopPropagation();
+				_this.expandRow(row);
+			});
+		}
+
+		config.controlEl.addEventListener("mousedown", function (e) {
+			e.stopPropagation();
+		});
+
+		if (oldControl && oldControl.parentNode === el) {
+			oldControl.parentNode.replaceChild(config.controlEl, oldControl);
+		} else {
+			el.insertBefore(config.controlEl, el.firstChild);
+		}
+	}
+};
+
+DataTree.prototype.setDisplayIndex = function (index) {
+	this.displayIndex = index;
+};
+
+DataTree.prototype.getDisplayIndex = function () {
+	return this.displayIndex;
+};
+
+DataTree.prototype.getRows = function (rows) {
+	var _this2 = this;
+
+	var output = [];
+
+	rows.forEach(function (row, i) {
+		var config, children;
+
+		output.push(row);
+
+		if (row instanceof Row) {
+
+			config = row.modules.dataTree.children;
+
+			if (!config.index && config.children !== false) {
+				children = _this2.getChildren(row);
+
+				children.forEach(function (child) {
+					output.push(child);
+				});
+			}
+		}
+	});
+
+	return output;
+};
+
+DataTree.prototype.getChildren = function (row) {
+	var _this3 = this;
+
+	var config = row.modules.dataTree,
+	    children = [],
+	    output = [];
+
+	if (config.children !== false && config.open) {
+		if (!Array.isArray(config.children)) {
+			config.children = this.generateChildren(row);
+		}
+
+		if (this.table.modExists("filter")) {
+			children = this.table.modules.filter.filter(config.children);
+		} else {
+			children = config.children;
+		}
+
+		if (this.table.modExists("sort")) {
+			this.table.modules.sort.sort(children);
+		}
+
+		children.forEach(function (child) {
+			output.push(child);
+
+			var subChildren = _this3.getChildren(child);
+
+			subChildren.forEach(function (sub) {
+				output.push(sub);
+			});
+		});
+	}
+
+	return output;
+};
+
+DataTree.prototype.generateChildren = function (row) {
+	var _this4 = this;
+
+	var children = [];
+
+	var childArray = row.getData()[this.field];
+
+	if (!Array.isArray(childArray)) {
+		childArray = [childArray];
+	}
+
+	childArray.forEach(function (childData) {
+		var childRow = new Row(childData || {}, _this4.table.rowManager);
+		childRow.modules.dataTree.index = row.modules.dataTree.index + 1;
+		childRow.modules.dataTree.parent = row;
+		if (childRow.modules.dataTree.children) {
+			childRow.modules.dataTree.open = _this4.startOpen(childRow.getComponent(), childRow.modules.dataTree.index);
+		}
+		children.push(childRow);
+	});
+
+	return children;
+};
+
+DataTree.prototype.expandRow = function (row, silent) {
+	var config = row.modules.dataTree;
+
+	if (config.children !== false) {
+		config.open = true;
+
+		row.reinitialize();
+
+		this.table.rowManager.refreshActiveData("tree", false, true);
+
+		this.table.options.dataTreeRowExpanded(row.getComponent(), row.modules.dataTree.index);
+	}
+};
+
+DataTree.prototype.collapseRow = function (row) {
+	var config = row.modules.dataTree;
+
+	if (config.children !== false) {
+		config.open = false;
+
+		row.reinitialize();
+
+		this.table.rowManager.refreshActiveData("tree", false, true);
+
+		this.table.options.dataTreeRowCollapsed(row.getComponent(), row.modules.dataTree.index);
+	}
+};
+
+DataTree.prototype.toggleRow = function (row) {
+	var config = row.modules.dataTree;
+
+	if (config.children !== false) {
+		if (config.open) {
+			this.collapseRow(row);
+		} else {
+			this.expandRow(row);
+		}
+	}
+};
+
+DataTree.prototype.getTreeParent = function (row) {
+	return row.modules.dataTree.parent ? row.modules.dataTree.parent.getComponent() : false;
+};
+
+DataTree.prototype.getTreeChildren = function (row) {
+	var config = row.modules.dataTree,
+	    output = [];
+
+	if (config.children) {
+
+		if (!Array.isArray(config.children)) {
+			config.children = this.generateChildren(row);
+		}
+
+		config.children.forEach(function (childRow) {
+			if (childRow instanceof Row) {
+				output.push(childRow.getComponent());
+			}
+		});
+	}
+
+	return output;
+};
+
+DataTree.prototype.checkForRestyle = function (cell) {
+	if (!cell.row.cells.indexOf(cell)) {
+		if (cell.row.modules.dataTree.children !== false) {
+			cell.row.reinitialize();
+		}
+	}
+};
+
+DataTree.prototype.getChildField = function () {
+	return this.field;
+};
+
+DataTree.prototype.redrawNeeded = function (data) {
+	return (this.field ? typeof data[this.field] !== "undefined" : false) || (this.elementField ? typeof data[this.elementField] !== "undefined" : false);
+};
+
+Tabulator.prototype.registerModule("dataTree", DataTree);

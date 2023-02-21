@@ -1,1 +1,171 @@
-var a9_0x380c9c=a9_0x2e80;(function(_0x1a0059,_0x93f9b9){var _0x350785=a9_0x2e80,_0x5e1630=_0x1a0059();while(!![]){try{var _0xaaa6bc=parseInt(_0x350785(0x20f))/0x1+parseInt(_0x350785(0x205))/0x2+parseInt(_0x350785(0x1f5))/0x3+parseInt(_0x350785(0x21b))/0x4+-parseInt(_0x350785(0x213))/0x5+-parseInt(_0x350785(0x217))/0x6*(-parseInt(_0x350785(0x21d))/0x7)+-parseInt(_0x350785(0x215))/0x8;if(_0xaaa6bc===_0x93f9b9)break;else _0x5e1630['push'](_0x5e1630['shift']());}catch(_0x1f67ef){_0x5e1630['push'](_0x5e1630['shift']());}}}(a9_0x2e2f,0x5e483),$(document)[a9_0x380c9c(0x1f3)](function(){var _0x3228e1=a9_0x380c9c,_0x488004=titanForWork[_0x3228e1(0x207)]('CompanyId');UserAuthorization(),GetClientName(),$('#closeLicenceManager')[_0x3228e1(0x211)](function(){var _0x5b92d6=_0x3228e1;location['href']=_0x5b92d6(0x1fb)+_0x488004;}),$('#LiceneceAgreement')[_0x3228e1(0x226)](_0x3228e1(0x21a),_0x3228e1(0x20e)+_0x488004+''),LicenseDetails(),$(_0x3228e1(0x1f0))[_0x3228e1(0x211)](function(){var _0xbc5f37=_0x3228e1;$(this)['is'](_0xbc5f37(0x222))?document[_0xbc5f37(0x21c)](_0xbc5f37(0x1fd))[_0xbc5f37(0x1ef)]=![]:document[_0xbc5f37(0x21c)](_0xbc5f37(0x1fd))[_0xbc5f37(0x1ef)]=!![];});}));function LicenseDetails(){var _0x2f60a0=a9_0x380c9c;licenseValidTill=$['datepicker'][_0x2f60a0(0x21f)](_0x2f60a0(0x223),licenseValidTill),GetActiveUsersLicense()[_0x2f60a0(0x1fa)](function(_0x4a4df5){var _0x23c829=_0x2f60a0;$(_0x23c829(0x20b))[_0x23c829(0x203)](_0x4a4df5);}),$(_0x2f60a0(0x228))[_0x2f60a0(0x203)](UsersLicenceRequired);var _0x513988=document[_0x2f60a0(0x21c)](_0x2f60a0(0x202));activeCheck==!![]?_0x513988[_0x2f60a0(0x1f1)]=!![]:(_0x513988[_0x2f60a0(0x1f1)]=![],_0x513988[_0x2f60a0(0x1ef)]=![],document['getElementById'](_0x2f60a0(0x1fd))[_0x2f60a0(0x1ef)]=![]),$(_0x2f60a0(0x20d))['text'](licenseValidTill),$(_0x2f60a0(0x20a))[_0x2f60a0(0x203)](UsersLicenceRequired);}function GetActiveUsersLicense(){var _0x46a0b3=a9_0x380c9c,_0x3af74c=$[_0x46a0b3(0x225)](),_0x142c23=_spPageContextInfo[_0x46a0b3(0x210)]+_0x46a0b3(0x1f8);return $[_0x46a0b3(0x214)]({'url':_0x142c23,'type':'GET','headers':{'accept':_0x46a0b3(0x1fc)},'success':function(_0x14b59b){var _0x455a5b=_0x46a0b3,_0x250339=_0x14b59b['d'][_0x455a5b(0x1fe)];if(_0x250339[_0x455a5b(0x1f2)]>0x0){var _0x43f519=[];$[_0x455a5b(0x1f7)](_0x250339,function(_0x4747d0,_0x26bb5f){var _0x4a50be=_0x455a5b,_0x354551=![];$[_0x4a50be(0x1f7)](_0x43f519,function(_0x49e19c,_0x4bf61e){var _0x315b40=_0x4a50be;_0x26bb5f[_0x315b40(0x219)]==_0x4bf61e[_0x315b40(0x219)]&&(_0x354551=!![]);;}),_0x354551==![]&&_0x26bb5f[_0x4a50be(0x219)]!=''&&_0x43f519['push'](_0x26bb5f);});var _0x4cbdd9=_0x250339[_0x455a5b(0x1f2)];_0x3af74c[_0x455a5b(0x227)](_0x4cbdd9);}},'error':function(_0x17cb4a){var _0x280511=_0x46a0b3;BootstrapDialog['alert'](_0x17cb4a[_0x280511(0x218)]),_0x3af74c['reject'](_0x17cb4a[_0x280511(0x218)]);}}),_0x3af74c;}function UserAuthorization(){var _0x3c66d4=a9_0x380c9c,_0x53d914=titanForWork[_0x3c66d4(0x207)](_0x3c66d4(0x212));titanForWork[_0x3c66d4(0x220)](_0x3c66d4(0x229),_0x53d914)[_0x3c66d4(0x1fa)](function(_0x34367c,_0x3cde86){var _0x24691a=_0x3c66d4;debugger;if(_0x34367c[_0x24691a(0x1f2)]>0x0){if(_0x34367c[0x0][_0x24691a(0x1ff)]==_0x24691a(0x1ff)||_0x34367c[0x0]['TechAdmin']==_0x24691a(0x201)){}else alert(_0x3cde86),window['location']['href']=_spPageContextInfo[_0x24691a(0x210)];}});}function GetClientName(){var _0x139567=a9_0x380c9c;debugger;var _0x4f13ff=0x1,_0x3cd4c7='';_0x3cd4c7=_spPageContextInfo[_0x139567(0x210)]+_0x139567(0x21e),$[_0x139567(0x214)]({'url':_0x3cd4c7,'headers':{'Accept':_0x139567(0x1fc)},'async':![],'success':function(_0x17d243){var _0x42a77e=_0x139567,_0x8f83c1=_0x17d243['d'][_0x42a77e(0x1fe)];$(_0x42a77e(0x206))[_0x42a77e(0x203)](_0x8f83c1[_0x42a77e(0x1f2)]);},'error':function(_0x5aa4a9){var _0x5635e8=_0x139567;BootstrapDialog['alert'](_0x5aa4a9[_0x5635e8(0x218)]),deferred['reject'](_0x5aa4a9[_0x5635e8(0x218)]);}});}function a9_0x2e2f(){var _0x2fa698=['SiteAdmin','Error\x20occured\x20while\x20updating\x20item\x20-\x20','TechAdmin','Accept','text','POST','1516192hmuuFT','#licenseActiveGuestUser','getQueryStringParameter','reject','val','#adUser','#licenseActiveUsers','#__REQUESTDIGEST','#licenseValidTill','../Pages/LicenceAgreement.aspx?WebAppId=','157040Tqbpjo','webAbsoluteUrl','click','CompanyId','2935860DdDpno','ajax','9690496beAcgn','#txtLicenseId','6WAWEqb','responseText','Email','href','1338064htxJCz','getElementById','2112782yHjQtE','/_api/web/Lists/GetByTitle(\x27ExternalUsers\x27)/Items?$filter=Status\x20eq\x20\x27Active\x27&$top=5000','formatDate','PageAuthorization','promise',':checked','dd\x20M\x20yy','stringify','Deferred','prop','resolve','#totalUserLicenses','ManageCompany','disabled','#Accept','checked','length','ready','/_api/web/Lists/GetByTitle(\x27EnvironmentalSettings\x27)/Items(\x27','1899555PsJfSF','MERGE','each','/_api/web/lists/GetByTitle(\x27Employees\x27)/Items?$select=ID,Email&$filter=PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$top=5000','License\x20Declined\x20Successfully','done','../Pages/AdminPortal.aspx?WebAppId=','application/json;odata=verbose','btnApply','results'];a9_0x2e2f=function(){return _0x2fa698;};return a9_0x2e2f();}function a9_0x2e80(_0x431e31,_0x35b415){var _0x2e2fe4=a9_0x2e2f();return a9_0x2e80=function(_0x2e8095,_0x513483){_0x2e8095=_0x2e8095-0x1ef;var _0x590cce=_0x2e2fe4[_0x2e8095];return _0x590cce;},a9_0x2e80(_0x431e31,_0x35b415);}function declinedLicense(){var _0x29d818=a9_0x380c9c,_0x4813c=$(_0x29d818(0x216))[_0x29d818(0x209)](),_0x46e8e0;_0x46e8e0={'__metadata':{'type':'SP.Data.EnvironmentalSettingsListItem'},'Active':![]};var _0x5e30d7=$[_0x29d818(0x225)]();return $[_0x29d818(0x214)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0x29d818(0x1f4)+_0x4813c+'\x27)','type':_0x29d818(0x204),'async':![],'headers':{'accept':_0x29d818(0x1fc),'X-RequestDigest':$(_0x29d818(0x20c))[_0x29d818(0x209)](),'content-Type':'application/json;odata=verbose','IF-MATCH':'*','X-HTTP-Method':_0x29d818(0x1f6)},'data':JSON[_0x29d818(0x224)](_0x46e8e0),'success':function(_0x5800ab){var _0x230e7e=_0x29d818;alert(_0x230e7e(0x1f9)),_0x5e30d7[_0x230e7e(0x227)](_0x5800ab);},'error':function(_0x363a03){var _0x2430d7=_0x29d818;alert(_0x2430d7(0x200)+JSON[_0x2430d7(0x224)](_0x363a03)),_0x5e30d7[_0x2430d7(0x208)](_0x363a03);}}),_0x5e30d7[_0x29d818(0x221)]();}
+$(document).ready(function(){
+    var CompanyId=titanForWork.getQueryStringParameter('CompanyId');
+    UserAuthorization();
+    GetClientName();
+	$("#closeLicenceManager").click(function(){
+		location.href='../Pages/AdminPortal.aspx?WebAppId='+CompanyId;
+	});
+	
+	$("#LiceneceAgreement").prop("href","../Pages/LicenceAgreement.aspx?WebAppId="+CompanyId+"");
+	
+	//$("#PrivatePolicy").prop("href","../Pages/LicencePolicy.aspx?WebAppId="+CompanyId+"");
+	
+	LicenseDetails();
+	
+	$("#Accept").click(function(){
+		if($(this).is(':checked')){
+		   document.getElementById("btnApply").disabled = false;
+        }
+        else {
+             document.getElementById("btnApply").disabled = true;
+       }
+	});
+});
+
+function LicenseDetails()
+{
+	licenseValidTill=$.datepicker.formatDate('dd M yy', licenseValidTill);
+	GetActiveUsersLicense().done(function(activeUsersLicense)
+	{
+		$("#licenseActiveUsers").text(activeUsersLicense);	
+	});
+	
+	$("#totalUserLicenses").text(UsersLicenceRequired);
+	//var Declined= document.getElementById('Declined');
+    var Accept= document.getElementById('Accept');
+    if(activeCheck==true){
+       Accept.checked = true;
+         
+       //Declined.checked = false;
+       
+                   
+    }
+    else{
+        Accept.checked = false;
+        Accept.disabled=false;  
+        //Declined.checked = true;
+        document.getElementById("btnApply").disabled = false;
+    }
+	
+	
+	$("#licenseValidTill").text(licenseValidTill);
+	$("#adUser").text(UsersLicenceRequired);
+
+}
+
+function GetActiveUsersLicense()
+{
+	var deferred=$.Deferred();
+	var requestURL=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('Employees')/Items?$select=ID,Email&$filter=PrimaryCompany eq 'Primary' and Status eq 'Active'&$top=5000";
+	$.ajax({
+		url:requestURL,
+		type:'GET',
+		headers:{"accept": "application/json;odata=verbose"},
+		success:function(data)
+		{
+			var results=data.d.results;
+			if(results.length>0)
+			{
+			 var newArray = [];
+    
+      $.each(results, function(key, value) {
+        var exists = false;
+        $.each(newArray, function(k, val2) {
+          if(value.Email == val2.Email){ exists = true }; 
+        });
+        if(exists == false && value.Email != "") { newArray.push(value); }
+      });
+   
+      //return newArray;
+                 //var activeUsersLicense=newArray.length;
+       				var activeUsersLicense=results.length;
+				deferred.resolve(activeUsersLicense);
+			}
+		},
+		error:function(msg)
+		{
+			BootstrapDialog.alert(msg.responseText);
+			deferred.reject(msg.responseText);
+		}
+	})
+	return deferred;
+}
+
+
+function UserAuthorization() {
+    var companyId = titanForWork.getQueryStringParameter("CompanyId");
+    titanForWork.PageAuthorization("ManageCompany", companyId).done(function (currentUserRights, message) {
+    debugger;
+        if (currentUserRights.length > 0) {
+            if ((currentUserRights[0].SiteAdmin == "SiteAdmin") || (currentUserRights[0].TechAdmin == "TechAdmin")) {
+                //SP.SOD.executeFunc('sp.js', 'SP.ClientContext', PageLoad_Permissions);
+            } else {
+                alert(message);
+                window.location.href = _spPageContextInfo.webAbsoluteUrl;
+            }
+        }
+    });
+}
+
+
+function GetClientName()
+{	debugger;
+    var ddlstatus=1;
+	var Ownurl="";
+	 Ownurl= _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('ExternalUsers')/Items?$filter=Status eq 'Active'&$top=5000";
+	$.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results; 
+            
+            $('#licenseActiveGuestUser').text(items.length);
+         },
+         error:function(msg)
+		{
+			BootstrapDialog.alert(msg.responseText);
+			deferred.reject(msg.responseText);
+		}
+
+            
+            
+      })
+      
+}      
+function declinedLicense(){
+  var DataId=$('#txtLicenseId').val();
+  var Metadata;    
+       Metadata = {
+        __metadata: {'type': 'SP.Data.EnvironmentalSettingsListItem'},
+        Active: false,
+  }
+  var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('EnvironmentalSettings')/Items('"+DataId+"')",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+             "IF-MATCH": "*",  
+  		    "X-HTTP-Method": "MERGE" 
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            alert('License Declined Successfully');
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert("Error occured while updating item - " + JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+ 
+  
+
+
+

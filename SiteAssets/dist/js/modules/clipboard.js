@@ -1,1 +1,1037 @@
-var a8_0xb717b8=a8_0x5b23;(function(_0x1e7c81,_0x413de8){var _0x8532f6=a8_0x5b23,_0x1179ed=_0x1e7c81();while(!![]){try{var _0x5249af=parseInt(_0x8532f6(0x238))/0x1+parseInt(_0x8532f6(0x200))/0x2+-parseInt(_0x8532f6(0x265))/0x3+-parseInt(_0x8532f6(0x258))/0x4+-parseInt(_0x8532f6(0x263))/0x5*(-parseInt(_0x8532f6(0x232))/0x6)+parseInt(_0x8532f6(0x247))/0x7+-parseInt(_0x8532f6(0x254))/0x8*(-parseInt(_0x8532f6(0x1e9))/0x9);if(_0x5249af===_0x413de8)break;else _0x1179ed['push'](_0x1179ed['shift']());}catch(_0x26b328){_0x1179ed['push'](_0x1179ed['shift']());}}}(a8_0x15db,0x5bf04));function a8_0x15db(){var _0x3164ca=['mode','tabulator-cell','mutator','rows','options','Clipboard\x20Warning\x20-\x20select\x20coptSelector\x20does\x20not\x20support\x20row\x20groups','copyFormatterParams','pasteParser','border-bottom','mapElementStyles','transformRow','length','selection','selectNodeContents','buildOutput','borderLeft','getPropertyValue','string','rowSpan','join','undefined','clipboardCopied','tabulator-group','trim','getGroups','getElementsByClassName','clipboardData','font-weight','border-left','target','moveToElementText','132PfyjRp','addEventListener','clipboardPasteAction','groupBy','removeAllRanges','execCommand','584935FlNQWw','stringify','modules','processColumnGroup','querySelector','addData','object','font-family','setFormatter','copyFormatter','definition','font-size','DEPRECATION\x20WARNING\x20-\x20clipboardCopyHeader\x20option\x20has\x20been\x20deprecated,\x20please\x20use\x20the\x20columnHeaders\x20property\x20on\x20the\x20clipboardCopyConfig\x20option','top','warn','502222YJNJHM','.tabulator-row-odd:not(.tabulator-group):not(.tabulator-calcs)','split','pasteParsers','getData','copySelector','blocked','raw','column','setPasteAction','processConfig','groupRows','select','1304BqLsxv','text/html','appendChild','clipboardCopyConfig','1973764KqnbZS','borderRight','getSelectedRows','visible','border-right','children','mutateData','Clipboard\x20Error\x20-\x20No\x20such\x20paste\x20action\x20found:','fontFamily','htmlElement','tbody','135045qgMbPC','subGroups','2022588ZqNzsk','forEach','setPasteParser','thead','title','getRows','selectRow','active','clipboardPasted','fontWeight','call','push','isArray','createElement','pasteActions','group','background-color','function','bottom','outerHTML','Clipboard\x20Error\x20-\x20No\x20such\x20formatter\x20found:','rowsToData','text/plain','getCalcRow','getFieldValue','clipboard','iterator','initialize','keys','Clipboard\x20Error\x20-\x20No\x20such\x20selector\x20found:','createTextRange','generateContent','null','updateOrAddData','setData','DIV','align','Clipboard\x20Error\x20-\x20No\x20such\x20paste\x20parser\x20found:','parseRowGroupData','concat','Clipboard\x20Warning\x20-\x20table\x20coptSelector\x20does\x20not\x20support\x20row\x20groups','fontColor','groupHeadersToRows','Text','.tabulator-row.tabulator-calcs','generateColumnGroupHeaders','columnHeaders','fontSize','rowManager','width','originalEvent','tagName','innerHTML','preventDefault','groups','processGroupData','setSelector','element','pasteAction','2718kagGRQ','getComponents','originalSelectionText','columnsByIndex','reset','table','config','clipboardCopySelector','constructor','border-top','field','columns','copySelectorParams','.tabulator-row-even:not(.tabulator-group):not(.tabulator-calcs)','backgroundColor','columnCalcs','copyFormatters','key','modExists','find','toString','textAlign','getComputedStyle','488224HKIrmL','userSelection','color','symbol','columnManager','clipboardPasteParser','rowGroups','style','getHeadersElement','copySelectors','getPasteData','buildComplexRows','getElement','prototype','getSubGroups','paste','generateSimpleHeaders','copy','height'];a8_0x15db=function(){return _0x3164ca;};return a8_0x15db();}function a8_0x5b23(_0x298019,_0x46d918){var _0x15dbf2=a8_0x15db();return a8_0x5b23=function(_0x5b2339,_0x12edc6){_0x5b2339=_0x5b2339-0x1d5;var _0x2d2b15=_0x15dbf2[_0x5b2339];return _0x2d2b15;},a8_0x5b23(_0x298019,_0x46d918);}var _typeof=typeof Symbol===a8_0xb717b8(0x276)&&typeof Symbol[a8_0xb717b8(0x27f)]===a8_0xb717b8(0x203)?function(_0xb11489){return typeof _0xb11489;}:function(_0x551f2a){var _0x4f19e0=a8_0xb717b8;return _0x551f2a&&typeof Symbol==='function'&&_0x551f2a[_0x4f19e0(0x1f1)]===Symbol&&_0x551f2a!==Symbol[_0x4f19e0(0x20d)]?_0x4f19e0(0x203):typeof _0x551f2a;},Clipboard=function Clipboard(_0x3186da){var _0x78e6c3=a8_0xb717b8;this[_0x78e6c3(0x1ee)]=_0x3186da,this['mode']=!![],this[_0x78e6c3(0x24c)]=![],this[_0x78e6c3(0x1f5)]={},this[_0x78e6c3(0x241)]=![],this[_0x78e6c3(0x219)]={},this[_0x78e6c3(0x21a)]=function(){},this['pasteAction']=function(){},this[_0x78e6c3(0x261)]=![],this['config']={},this['blocked']=!![];};Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x280)]=function(){var _0x5e2624=a8_0xb717b8,_0x47060c=this;this['mode']=this[_0x5e2624(0x1ee)][_0x5e2624(0x217)][_0x5e2624(0x27e)],(this[_0x5e2624(0x213)]===!![]||this[_0x5e2624(0x213)]===_0x5e2624(0x211))&&this[_0x5e2624(0x1ee)][_0x5e2624(0x1e7)][_0x5e2624(0x233)](_0x5e2624(0x211),function(_0x2e5926){var _0x117267=_0x5e2624,_0x4a850c;_0x47060c[_0x117267(0x251)]();if(!_0x47060c[_0x117267(0x24d)]){_0x2e5926[_0x117267(0x1e3)](),_0x4a850c=_0x47060c[_0x117267(0x284)]();if(window['clipboardData']&&window[_0x117267(0x22d)][_0x117267(0x287)])window['clipboardData']['setData'](_0x117267(0x1d9),_0x4a850c);else{if(_0x2e5926[_0x117267(0x22d)]&&_0x2e5926[_0x117267(0x22d)][_0x117267(0x287)])_0x2e5926['clipboardData']['setData'](_0x117267(0x27b),_0x4a850c),_0x47060c[_0x117267(0x261)]&&_0x2e5926[_0x117267(0x22d)][_0x117267(0x287)](_0x117267(0x255),_0x47060c['htmlElement'][_0x117267(0x278)]);else _0x2e5926['originalEvent']&&_0x2e5926[_0x117267(0x1e0)][_0x117267(0x22d)][_0x117267(0x287)]&&(_0x2e5926[_0x117267(0x1e0)][_0x117267(0x22d)][_0x117267(0x287)]('text/plain',_0x4a850c),_0x47060c['htmlElement']&&_0x2e5926['originalEvent'][_0x117267(0x22d)][_0x117267(0x287)]('text/html',_0x47060c[_0x117267(0x261)][_0x117267(0x278)]));}_0x47060c[_0x117267(0x1ee)][_0x117267(0x217)][_0x117267(0x228)][_0x117267(0x26f)](this[_0x117267(0x1ee)],_0x4a850c),_0x47060c[_0x117267(0x1ed)]();}}),(this[_0x5e2624(0x213)]===!![]||this['mode']==='paste')&&this[_0x5e2624(0x1ee)][_0x5e2624(0x1e7)][_0x5e2624(0x233)](_0x5e2624(0x20f),function(_0x2ac27e){var _0x5cdc58=_0x5e2624;_0x47060c[_0x5cdc58(0x20f)](_0x2ac27e);}),this[_0x5e2624(0x267)](this[_0x5e2624(0x1ee)][_0x5e2624(0x217)][_0x5e2624(0x205)]),this['setPasteAction'](this[_0x5e2624(0x1ee)][_0x5e2624(0x217)][_0x5e2624(0x234)]);},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x251)]=function(){var _0x6c68a5=a8_0xb717b8,_0x438a5a={'columnHeaders':_0x6c68a5(0x1e4),'rowGroups':!![],'columnCalcs':!![]};typeof this[_0x6c68a5(0x1ee)]['options']['clipboardCopyHeader']!==_0x6c68a5(0x227)&&(_0x438a5a[_0x6c68a5(0x1dc)]=this['table'][_0x6c68a5(0x217)]['clipboardCopyHeader'],console[_0x6c68a5(0x246)](_0x6c68a5(0x244)));if(this[_0x6c68a5(0x1ee)][_0x6c68a5(0x217)][_0x6c68a5(0x257)])for(var _0xdb5baf in this[_0x6c68a5(0x1ee)][_0x6c68a5(0x217)][_0x6c68a5(0x257)]){_0x438a5a[_0xdb5baf]=this['table'][_0x6c68a5(0x217)][_0x6c68a5(0x257)][_0xdb5baf];}_0x438a5a['rowGroups']&&this[_0x6c68a5(0x1ee)][_0x6c68a5(0x217)][_0x6c68a5(0x235)]&&this[_0x6c68a5(0x1ee)][_0x6c68a5(0x1fb)](_0x6c68a5(0x252))&&(this[_0x6c68a5(0x1ef)][_0x6c68a5(0x206)]=!![]),_0x438a5a['columnHeaders']?(_0x438a5a['columnHeaders']===_0x6c68a5(0x1e4)||_0x438a5a===!![])&&this[_0x6c68a5(0x1ee)][_0x6c68a5(0x204)]['columns'][_0x6c68a5(0x21e)]!=this[_0x6c68a5(0x1ee)][_0x6c68a5(0x204)][_0x6c68a5(0x1ec)][_0x6c68a5(0x21e)]?this[_0x6c68a5(0x1ef)][_0x6c68a5(0x1dc)]=_0x6c68a5(0x1e4):this['config'][_0x6c68a5(0x1dc)]=_0x6c68a5(0x1f4):this[_0x6c68a5(0x1ef)][_0x6c68a5(0x1dc)]=![],_0x438a5a['columnCalcs']&&this['table'][_0x6c68a5(0x1fb)](_0x6c68a5(0x1f8))&&(this[_0x6c68a5(0x1ef)]['columnCalcs']=!![]);},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x1ed)]=function(){var _0x351dc1=a8_0xb717b8;this[_0x351dc1(0x24d)]=![],this[_0x351dc1(0x1eb)]='';},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x250)]=function(_0x9eb8b2){var _0x56529a=a8_0xb717b8;switch(typeof _0x9eb8b2===_0x56529a(0x227)?_0x56529a(0x227):_typeof(_0x9eb8b2)){case _0x56529a(0x224):this['pasteAction']=this['pasteActions'][_0x9eb8b2];!this['pasteAction']&&console[_0x56529a(0x246)](_0x56529a(0x25f),_0x9eb8b2);break;case _0x56529a(0x276):this[_0x56529a(0x1e8)]=_0x9eb8b2;break;}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x267)]=function(_0x2f006f){var _0x5f1298=a8_0xb717b8;switch(typeof _0x2f006f==='undefined'?_0x5f1298(0x227):_typeof(_0x2f006f)){case _0x5f1298(0x224):this[_0x5f1298(0x21a)]=this[_0x5f1298(0x24a)][_0x2f006f];!this[_0x5f1298(0x21a)]&&console[_0x5f1298(0x246)](_0x5f1298(0x28a),_0x2f006f);break;case _0x5f1298(0x276):this[_0x5f1298(0x21a)]=_0x2f006f;break;}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x20f)]=function(_0x361c43){var _0x476d67=a8_0xb717b8,_0x3aed8e,_0x187d7b,_0x1b24cc;this['checkPaseOrigin'](_0x361c43)&&(_0x3aed8e=this[_0x476d67(0x20a)](_0x361c43),_0x187d7b=this['pasteParser'][_0x476d67(0x26f)](this,_0x3aed8e),_0x187d7b?(_0x361c43[_0x476d67(0x1e3)](),this[_0x476d67(0x1ee)][_0x476d67(0x1fb)](_0x476d67(0x215))&&(_0x187d7b=this[_0x476d67(0x25e)](_0x187d7b)),_0x1b24cc=this[_0x476d67(0x1e8)]['call'](this,_0x187d7b),this[_0x476d67(0x1ee)][_0x476d67(0x217)][_0x476d67(0x26d)][_0x476d67(0x26f)](this[_0x476d67(0x1ee)],_0x3aed8e,_0x187d7b,_0x1b24cc)):this['table']['options']['clipboardPasteError']['call'](this[_0x476d67(0x1ee)],_0x3aed8e));},Clipboard[a8_0xb717b8(0x20d)]['mutateData']=function(_0x36e14d){var _0x99edac=a8_0xb717b8,_0x47d69e=this,_0xfc936c=[];return Array[_0x99edac(0x271)](_0x36e14d)?_0x36e14d['forEach'](function(_0x4ca129){var _0x540324=_0x99edac;_0xfc936c[_0x540324(0x270)](_0x47d69e[_0x540324(0x1ee)]['modules'][_0x540324(0x215)][_0x540324(0x21d)](_0x4ca129,'clipboard'));}):_0xfc936c=_0x36e14d,_0xfc936c;},Clipboard[a8_0xb717b8(0x20d)]['checkPaseOrigin']=function(_0x2db0f1){var _0x5bab10=a8_0xb717b8,_0x39ad23=!![];return(_0x2db0f1[_0x5bab10(0x230)][_0x5bab10(0x1e1)]!=_0x5bab10(0x288)||this['table']['modules']['edit']['currentCell'])&&(_0x39ad23=![]),_0x39ad23;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x20a)]=function(_0x473f75){var _0x2ec5d6=a8_0xb717b8,_0x3b1888;if(window['clipboardData']&&window['clipboardData']['getData'])_0x3b1888=window['clipboardData']['getData'](_0x2ec5d6(0x1d9));else{if(_0x473f75['clipboardData']&&_0x473f75['clipboardData']['getData'])_0x3b1888=_0x473f75['clipboardData'][_0x2ec5d6(0x24b)](_0x2ec5d6(0x27b));else _0x473f75[_0x2ec5d6(0x1e0)]&&_0x473f75['originalEvent'][_0x2ec5d6(0x22d)]['getData']&&(_0x3b1888=_0x473f75[_0x2ec5d6(0x1e0)]['clipboardData'][_0x2ec5d6(0x24b)](_0x2ec5d6(0x27b)));}return _0x3b1888;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x211)]=function(_0x128edb,_0x19f1a4,_0x43e983,_0x43ecc1,_0x166431){var _0x38b96a=a8_0xb717b8,_0x10d576,_0xc90949,_0x22a9a1;this[_0x38b96a(0x24d)]=![];if(this[_0x38b96a(0x213)]===!![]||this['mode']===_0x38b96a(0x211)){if(typeof window['getSelection']!='undefined'&&typeof document['createRange']!=_0x38b96a(0x227))_0x10d576=document['createRange'](),_0x10d576[_0x38b96a(0x220)](this['table']['element']),_0xc90949=window['getSelection'](),_0xc90949[_0x38b96a(0x1fd)]()&&_0x166431&&(_0x128edb=_0x38b96a(0x201),_0x43e983=_0x38b96a(0x24e),_0x19f1a4=_0xc90949['toString']()),_0xc90949[_0x38b96a(0x236)](),_0xc90949['addRange'](_0x10d576);else typeof document[_0x38b96a(0x21f)]!=_0x38b96a(0x227)&&typeof document['body']['createTextRange']!=_0x38b96a(0x227)&&(_0x22a9a1=document['body'][_0x38b96a(0x283)](),_0x22a9a1[_0x38b96a(0x231)](this['table']['element']),_0x22a9a1[_0x38b96a(0x253)]());this['setSelector'](_0x128edb),this[_0x38b96a(0x1f5)]=typeof _0x19f1a4!='undefined'&&_0x19f1a4!=null?_0x19f1a4:this['config']['columnHeaders'],this[_0x38b96a(0x240)](_0x43e983),this[_0x38b96a(0x219)]=typeof _0x43ecc1!='undefined'&&_0x43ecc1!=null?_0x43ecc1:{},document[_0x38b96a(0x237)](_0x38b96a(0x211)),_0xc90949&&_0xc90949['removeAllRanges']();}},Clipboard['prototype'][a8_0xb717b8(0x1e6)]=function(_0x1bdad4){var _0x129ee8=a8_0xb717b8;_0x1bdad4=_0x1bdad4||this[_0x129ee8(0x1ee)][_0x129ee8(0x217)][_0x129ee8(0x1f0)];switch(typeof _0x1bdad4===_0x129ee8(0x227)?_0x129ee8(0x227):_typeof(_0x1bdad4)){case _0x129ee8(0x224):this[_0x129ee8(0x209)][_0x1bdad4]?this['copySelector']=this[_0x129ee8(0x209)][_0x1bdad4]:console[_0x129ee8(0x246)](_0x129ee8(0x282),_0x1bdad4);break;case'function':this[_0x129ee8(0x24c)]=_0x1bdad4;break;}},Clipboard[a8_0xb717b8(0x20d)]['setFormatter']=function(_0x31c1b1){var _0x278ed9=a8_0xb717b8;_0x31c1b1=_0x31c1b1||this[_0x278ed9(0x1ee)][_0x278ed9(0x217)]['clipboardCopyFormatter'];switch(typeof _0x31c1b1===_0x278ed9(0x227)?_0x278ed9(0x227):_typeof(_0x31c1b1)){case'string':this[_0x278ed9(0x1f9)][_0x31c1b1]?this['copyFormatter']=this['copyFormatters'][_0x31c1b1]:console['warn'](_0x278ed9(0x279),_0x31c1b1);break;case'function':this['copyFormatter']=_0x31c1b1;break;}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x284)]=function(){var _0x2054ca=a8_0xb717b8,_0x4c96f7;return this[_0x2054ca(0x261)]=![],_0x4c96f7=this[_0x2054ca(0x24c)][_0x2054ca(0x26f)](this,this['config'],this[_0x2054ca(0x1f5)]),this[_0x2054ca(0x241)]['call'](this,_0x4c96f7,this['config'],this[_0x2054ca(0x219)]);},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x210)]=function(_0x5c837a){var _0x1ee7aa=a8_0xb717b8,_0x2b05bc=[];return _0x5c837a[_0x1ee7aa(0x266)](function(_0x271f23){var _0x303211=_0x1ee7aa;_0x2b05bc[_0x303211(0x270)](_0x271f23[_0x303211(0x242)]['title']);}),_0x2b05bc;},Clipboard[a8_0xb717b8(0x20d)]['generateColumnGroupHeaders']=function(_0x2bda99){var _0x530535=a8_0xb717b8,_0x21514c=this,_0x25882e=[];return this[_0x530535(0x1ee)][_0x530535(0x204)][_0x530535(0x1f4)][_0x530535(0x266)](function(_0xac2283){var _0x4e9046=_0x530535,_0xb34a6=_0x21514c['processColumnGroup'](_0xac2283);_0xb34a6&&_0x25882e[_0x4e9046(0x270)](_0xb34a6);}),_0x25882e;},Clipboard['prototype'][a8_0xb717b8(0x23b)]=function(_0x47dc88){var _0x1d740b=a8_0xb717b8,_0x274374=this,_0x188afa=_0x47dc88[_0x1d740b(0x1f4)],_0x376d48={'type':'group','title':_0x47dc88[_0x1d740b(0x242)][_0x1d740b(0x269)],'column':_0x47dc88};if(_0x188afa['length']){_0x376d48[_0x1d740b(0x264)]=[],_0x376d48[_0x1d740b(0x1df)]=0x0,_0x188afa[_0x1d740b(0x266)](function(_0x4ae4fb){var _0x4c4869=_0x1d740b,_0x2f57f7=_0x274374[_0x4c4869(0x23b)](_0x4ae4fb);_0x2f57f7&&(_0x376d48[_0x4c4869(0x1df)]+=_0x2f57f7[_0x4c4869(0x1df)],_0x376d48['subGroups'][_0x4c4869(0x270)](_0x2f57f7));});if(!_0x376d48[_0x1d740b(0x1df)])return![];}else{if(_0x47dc88['field']&&(_0x47dc88[_0x1d740b(0x242)][_0x1d740b(0x27e)]||_0x47dc88['visible']&&_0x47dc88[_0x1d740b(0x242)][_0x1d740b(0x27e)]!==![]))_0x376d48[_0x1d740b(0x1df)]=0x1;else return![];}return _0x376d48;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x1d8)]=function(_0x18543a){var _0x2a284b=a8_0xb717b8,_0x5be0b8=[];function _0x55e5e9(_0x1beb47,_0x132737){var _0x93965e=a8_0x5b23;typeof _0x5be0b8[_0x132737]==='undefined'&&(_0x5be0b8[_0x132737]=[]),_0x5be0b8[_0x132737][_0x93965e(0x270)](_0x1beb47['title']),_0x1beb47[_0x93965e(0x264)]?_0x1beb47[_0x93965e(0x264)][_0x93965e(0x266)](function(_0x4c7f60){_0x55e5e9(_0x4c7f60,_0x132737+0x1);}):_0x5756e1();}function _0x5756e1(){var _0x3206b2=a8_0x5b23,_0x4020db=0x0;_0x5be0b8['forEach'](function(_0x462867){var _0x2e7390=a8_0x5b23,_0x2cd7d7=_0x462867[_0x2e7390(0x21e)];_0x2cd7d7>_0x4020db&&(_0x4020db=_0x2cd7d7);}),_0x5be0b8[_0x3206b2(0x266)](function(_0x3bf0e7){var _0xa2c47e=_0x3206b2,_0x57c3c5=_0x3bf0e7[_0xa2c47e(0x21e)];if(_0x57c3c5<_0x4020db)for(var _0x217846=_0x57c3c5;_0x217846<_0x4020db;_0x217846++){_0x3bf0e7[_0xa2c47e(0x270)]('');}});}return _0x18543a[_0x2a284b(0x266)](function(_0x41f790){_0x55e5e9(_0x41f790,0x0);}),_0x5be0b8;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x27a)]=function(_0xab8fd3,_0x33f7a4,_0x5ebbcd,_0x65cbfd){var _0x4b455d=[];return _0xab8fd3['forEach'](function(_0x3d59a2){var _0x4d951a=a8_0x5b23,_0x5b34ec=[],_0x1a4367=_0x3d59a2 instanceof RowComponent?_0x3d59a2['getData'](_0x4d951a(0x27e)):_0x3d59a2;_0x33f7a4['forEach'](function(_0x51cdb9){var _0x4fe445=_0x4d951a,_0x1fc2e7=_0x51cdb9[_0x4fe445(0x27d)](_0x1a4367);switch(typeof _0x1fc2e7===_0x4fe445(0x227)?_0x4fe445(0x227):_typeof(_0x1fc2e7)){case _0x4fe445(0x23e):_0x1fc2e7=JSON[_0x4fe445(0x239)](_0x1fc2e7);break;case'undefined':case _0x4fe445(0x285):_0x1fc2e7='';break;default:_0x1fc2e7=_0x1fc2e7;}_0x5b34ec[_0x4fe445(0x270)](_0x1fc2e7);}),_0x4b455d[_0x4d951a(0x270)](_0x5b34ec);}),_0x4b455d;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x20b)]=function(_0x52d34e){var _0x13523d=a8_0xb717b8,_0x3d10c4=this,_0x44ca84=[],_0x73aadb=this['table'][_0x13523d(0x23a)][_0x13523d(0x252)][_0x13523d(0x22b)]();return _0x73aadb[_0x13523d(0x266)](function(_0x50adf4){var _0x3057ba=_0x13523d;_0x44ca84[_0x3057ba(0x270)](_0x3d10c4[_0x3057ba(0x1e5)](_0x50adf4));}),_0x44ca84;},Clipboard[a8_0xb717b8(0x20d)]['processGroupData']=function(_0x2dc199){var _0x36887d=a8_0xb717b8,_0x2a664f=this,_0x2f0250=_0x2dc199[_0x36887d(0x20e)](),_0x143271={'type':_0x36887d(0x274),'key':_0x2dc199[_0x36887d(0x1fa)]};return _0x2f0250[_0x36887d(0x21e)]?(_0x143271[_0x36887d(0x264)]=[],_0x2f0250[_0x36887d(0x266)](function(_0xcea5b9){var _0x1ce089=_0x36887d;_0x143271['subGroups'][_0x1ce089(0x270)](_0x2a664f['processGroupData'](_0xcea5b9));})):_0x143271[_0x36887d(0x216)]=_0x2dc199[_0x36887d(0x26a)](!![]),_0x143271;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x27c)]=function(_0x545a85,_0x432f1b,_0x21d323,_0x12272b){var _0x60a23d=a8_0xb717b8,_0x1ca0a3=_0x545a85[_0x21d323];if(_0x1ca0a3){_0x12272b&&(_0x1ca0a3=_0x1ca0a3[_0x12272b]);if(Object[_0x60a23d(0x281)](_0x1ca0a3)[_0x60a23d(0x21e)])return this['rowsToData']([_0x1ca0a3],_0x432f1b);}return[];},Clipboard['prototype']['buildOutput']=function(_0x556146,_0x45d86c,_0x1e9369){var _0x181c32=a8_0xb717b8,_0x48e2af=this,_0x4b013d=[],_0xa5056e,_0x229c64=[],_0xcb16c5=[];return this[_0x181c32(0x1ee)]['columnManager'][_0x181c32(0x1ec)]['forEach'](function(_0x37c7e6){var _0x48ab87=_0x181c32;(_0x37c7e6[_0x48ab87(0x242)][_0x48ab87(0x27e)]||_0x37c7e6['visible']&&_0x37c7e6['definition'][_0x48ab87(0x27e)]!==![])&&_0xcb16c5[_0x48ab87(0x270)](_0x37c7e6);}),_0x45d86c[_0x181c32(0x1dc)]==_0x181c32(0x1e4)?(_0x229c64=this[_0x181c32(0x1db)](this[_0x181c32(0x1ee)][_0x181c32(0x204)][_0x181c32(0x1f4)]),_0x4b013d=_0x4b013d['concat'](this[_0x181c32(0x1d8)](_0x229c64))):(_0x229c64=_0xcb16c5,_0x4b013d[_0x181c32(0x270)](this[_0x181c32(0x210)](_0x229c64))),this[_0x181c32(0x1ef)][_0x181c32(0x1f8)]&&(_0xa5056e=this[_0x181c32(0x1ee)]['getCalcResults']()),this[_0x181c32(0x1ee)][_0x181c32(0x217)]['clipboardCopyStyled']&&this['generateHTML'](_0x556146,_0x229c64,_0xa5056e,_0x45d86c,_0x1e9369),_0x45d86c[_0x181c32(0x206)]?_0x556146[_0x181c32(0x266)](function(_0x51837b){var _0x109933=_0x181c32;_0x4b013d=_0x4b013d[_0x109933(0x1d5)](_0x48e2af[_0x109933(0x28b)](_0x51837b,_0xcb16c5,_0x45d86c,_0x1e9369,_0xa5056e||{}));}):(_0x45d86c[_0x181c32(0x1f8)]&&(_0x4b013d=_0x4b013d[_0x181c32(0x1d5)](this[_0x181c32(0x27c)](_0xa5056e,_0xcb16c5,_0x181c32(0x245)))),_0x4b013d=_0x4b013d[_0x181c32(0x1d5)](this[_0x181c32(0x27a)](_0x556146,_0xcb16c5,_0x45d86c,_0x1e9369)),_0x45d86c[_0x181c32(0x1f8)]&&(_0x4b013d=_0x4b013d[_0x181c32(0x1d5)](this['getCalcRow'](_0xa5056e,_0xcb16c5,_0x181c32(0x277))))),_0x4b013d;},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x28b)]=function(_0x4c96f8,_0x3d6486,_0x225f68,_0x5a3fb8,_0x47a7e6){var _0x17e3ba=a8_0xb717b8,_0x4ed856=this,_0x273fec=[];return _0x273fec[_0x17e3ba(0x270)]([_0x4c96f8[_0x17e3ba(0x1fa)]]),_0x4c96f8[_0x17e3ba(0x264)]?_0x4c96f8[_0x17e3ba(0x264)][_0x17e3ba(0x266)](function(_0x5da7f4){var _0x2115ad=_0x17e3ba;_0x273fec=_0x273fec[_0x2115ad(0x1d5)](_0x4ed856[_0x2115ad(0x28b)](_0x5da7f4,_0x225f68,_0x5a3fb8,_0x47a7e6[_0x4c96f8[_0x2115ad(0x1fa)]]?_0x47a7e6[_0x4c96f8['key']][_0x2115ad(0x1e4)]||{}:{}));}):(_0x225f68[_0x17e3ba(0x1f8)]&&(_0x273fec=_0x273fec['concat'](this[_0x17e3ba(0x27c)](_0x47a7e6,_0x3d6486,_0x4c96f8[_0x17e3ba(0x1fa)],_0x17e3ba(0x245)))),_0x273fec=_0x273fec[_0x17e3ba(0x1d5)](this[_0x17e3ba(0x27a)](_0x4c96f8[_0x17e3ba(0x216)],_0x3d6486,_0x225f68,_0x5a3fb8)),_0x225f68[_0x17e3ba(0x1f8)]&&(_0x273fec=_0x273fec[_0x17e3ba(0x1d5)](this['getCalcRow'](_0x47a7e6,_0x3d6486,_0x4c96f8[_0x17e3ba(0x1fa)],_0x17e3ba(0x277))))),_0x273fec;},Clipboard[a8_0xb717b8(0x20d)]['generateHTML']=function(_0x539ace,_0xaf82b2,_0x16ee3f,_0xee9663,_0x45be56){var _0x530641=a8_0xb717b8,_0x3d98e5=this,_0x4015f5=[],_0x1b97c1=[],_0x536889,_0x488420,_0x160cab,_0x7fe07c,_0x1de90a,_0x5653e1,_0xb849c6,_0x18a385,_0x4747d8;this[_0x530641(0x261)]=document[_0x530641(0x272)](_0x530641(0x1ee)),_0x3d98e5[_0x530641(0x21c)](this['table']['element'],this['htmlElement'],[_0x530641(0x1f2),_0x530641(0x22f),_0x530641(0x25c),_0x530641(0x21b)]);function _0x2fa649(){var _0x5d5818=_0x530641,_0x27dd1d=document['createElement']('tr');_0xaf82b2[_0x5d5818(0x266)](function(_0x5776d3){var _0x318da0=_0x5d5818,_0x1faabe=document[_0x318da0(0x272)]('th');_0x1faabe[_0x318da0(0x1e2)]=_0x5776d3[_0x318da0(0x242)]['title'],_0x3d98e5[_0x318da0(0x21c)](_0x5776d3[_0x318da0(0x20c)](),_0x1faabe,[_0x318da0(0x1f2),_0x318da0(0x22f),_0x318da0(0x25c),_0x318da0(0x21b),'background-color',_0x318da0(0x202),_0x318da0(0x22e),_0x318da0(0x23f),_0x318da0(0x243)]),_0x27dd1d[_0x318da0(0x256)](_0x1faabe);}),_0x3d98e5[_0x5d5818(0x21c)](_0x3d98e5['table'][_0x5d5818(0x204)][_0x5d5818(0x208)](),_0x27dd1d,[_0x5d5818(0x1f2),_0x5d5818(0x22f),_0x5d5818(0x25c),_0x5d5818(0x21b),_0x5d5818(0x275),_0x5d5818(0x202),'font-weight','font-family',_0x5d5818(0x243)]),_0x3d98e5[_0x5d5818(0x261)][_0x5d5818(0x256)](document[_0x5d5818(0x272)](_0x5d5818(0x268))[_0x5d5818(0x256)](_0x27dd1d));}function _0x586f11(_0x2ddf7e){var _0x1fc4ee=_0x530641,_0x4a056a=document[_0x1fc4ee(0x272)](_0x1fc4ee(0x268));_0x2ddf7e[_0x1fc4ee(0x266)](function(_0x49dbed){var _0x563188=_0x1fc4ee,_0x330bd0=document[_0x563188(0x272)]('tr');_0x49dbed[_0x563188(0x266)](function(_0x3abaa6){var _0x45897a=_0x563188,_0x28f35b=document[_0x45897a(0x272)]('th');_0x3abaa6[_0x45897a(0x1df)]>0x1&&(_0x28f35b['colSpan']=_0x3abaa6[_0x45897a(0x1df)]),_0x3abaa6[_0x45897a(0x212)]>0x1&&(_0x28f35b[_0x45897a(0x225)]=_0x3abaa6['height']),_0x28f35b['innerHTML']=_0x3abaa6[_0x45897a(0x269)],_0x3d98e5[_0x45897a(0x21c)](_0x3abaa6['element'],_0x28f35b,['border-top','border-left',_0x45897a(0x25c),_0x45897a(0x21b),_0x45897a(0x275),_0x45897a(0x202),'font-weight',_0x45897a(0x23f),'font-size']),_0x330bd0[_0x45897a(0x256)](_0x28f35b);}),_0x3d98e5[_0x563188(0x21c)](_0x3d98e5[_0x563188(0x1ee)][_0x563188(0x204)]['getHeadersElement'](),_0x330bd0,[_0x563188(0x1f2),_0x563188(0x22f),_0x563188(0x25c),_0x563188(0x21b),_0x563188(0x275),'color',_0x563188(0x22e),_0x563188(0x23f),'font-size']),_0x4a056a[_0x563188(0x256)](_0x330bd0);}),_0x3d98e5[_0x1fc4ee(0x261)][_0x1fc4ee(0x256)](_0x4a056a);}function _0xf808d8(_0x518518,_0x57237f){var _0x8dd772=_0x530641,_0x16a758=[];return typeof _0x1b97c1[_0x57237f]===_0x8dd772(0x227)&&(_0x1b97c1[_0x57237f]=[]),_0x1b97c1[_0x57237f][_0x8dd772(0x270)]({'title':_0x518518[_0x8dd772(0x269)],'width':_0x518518[_0x8dd772(0x1df)],'height':0x1,'children':!!_0x518518[_0x8dd772(0x264)],'element':_0x518518[_0x8dd772(0x24f)]['getElement']()}),_0x518518[_0x8dd772(0x264)]?(_0x518518[_0x8dd772(0x264)]['forEach'](function(_0x20b4b3){_0x16a758=_0x16a758['concat'](_0xf808d8(_0x20b4b3,_0x57237f+0x1));}),_0x16a758):[_0x518518[_0x8dd772(0x24f)]];}function _0x7ac240(){var _0x249e1b=_0x530641;_0x1b97c1[_0x249e1b(0x266)](function(_0x53ad83,_0x463a19){_0x53ad83['forEach'](function(_0x2cfacc){var _0x20c464=a8_0x5b23;!_0x2cfacc[_0x20c464(0x25d)]&&(_0x2cfacc[_0x20c464(0x212)]=_0x1b97c1['length']-_0x463a19);});});}function _0x5666fa(_0xeb2ab4,_0x4bab16,_0x23f64e){var _0x259d9d=_0x530641,_0x2ba4a9=_0xeb2ab4[_0x4bab16];_0x2ba4a9&&(_0x23f64e&&(_0x2ba4a9=_0x2ba4a9[_0x23f64e]),Object[_0x259d9d(0x281)](_0x2ba4a9)['length']&&_0x198f09([_0x2ba4a9]));}if(_0xee9663[_0x530641(0x1dc)]){if(_0xee9663[_0x530641(0x1dc)]=='groups'){var _0x833c6e=[];_0xaf82b2[_0x530641(0x266)](function(_0x57b77e){var _0x3dbeb4=_0x530641;_0x833c6e=_0x833c6e[_0x3dbeb4(0x1d5)](_0xf808d8(_0x57b77e,0x0));}),_0xaf82b2=_0x833c6e,_0x7ac240(),_0x586f11(_0x1b97c1);}else _0x2fa649();}_0x536889=document[_0x530641(0x272)](_0x530641(0x262));window['getComputedStyle']&&(_0x488420=this[_0x530641(0x1ee)]['element'][_0x530641(0x23c)](_0x530641(0x248)),_0x160cab=this[_0x530641(0x1ee)][_0x530641(0x1e7)][_0x530641(0x23c)](_0x530641(0x1f6)),_0x7fe07c=this[_0x530641(0x1ee)]['element'][_0x530641(0x23c)](_0x530641(0x1da)),_0x1de90a=this[_0x530641(0x1ee)][_0x530641(0x1e7)][_0x530641(0x23c)]('.tabulator-row:not(.tabulator-group):not(.tabulator-calcs)'),_0xb849c6=this['table'][_0x530641(0x1e7)][_0x530641(0x22c)](_0x530641(0x229))[0x0],_0x1de90a&&(_0x4747d8=_0x1de90a['getElementsByClassName'](_0x530641(0x214)),_0x5653e1=_0x4747d8[0x0],_0x18a385=_0x4747d8[_0x4747d8[_0x530641(0x21e)]-0x1]));function _0x198f09(_0x1719c8){var _0x45e5ad=_0x530641;_0x1719c8[_0x45e5ad(0x266)](function(_0x4bb237,_0x3d4541){var _0x5869a9=_0x45e5ad,_0x1c95e9=document['createElement']('tr'),_0x450d02=_0x1de90a,_0x467e5d=![],_0x2a158f;_0x4bb237 instanceof RowComponent?_0x2a158f=_0x4bb237[_0x5869a9(0x24b)](_0x5869a9(0x27e)):(_0x2a158f=_0x4bb237,_0x467e5d=!![]),_0xaf82b2[_0x5869a9(0x266)](function(_0x5332d7,_0x14131c){var _0x2d3547=_0x5869a9,_0x18bd92=document[_0x2d3547(0x272)]('td'),_0x811cd5=_0x5332d7['getFieldValue'](_0x2a158f);switch(typeof _0x811cd5===_0x2d3547(0x227)?_0x2d3547(0x227):_typeof(_0x811cd5)){case _0x2d3547(0x23e):_0x811cd5=JSON[_0x2d3547(0x239)](_0x811cd5);break;case _0x2d3547(0x227):case'null':_0x811cd5='';break;default:_0x811cd5=_0x811cd5;}_0x18bd92[_0x2d3547(0x1e2)]=_0x811cd5,_0x5332d7[_0x2d3547(0x242)][_0x2d3547(0x289)]&&(_0x18bd92[_0x2d3547(0x207)][_0x2d3547(0x1fe)]=_0x5332d7[_0x2d3547(0x242)][_0x2d3547(0x289)]),_0x14131c<_0xaf82b2[_0x2d3547(0x21e)]-0x1?_0x5653e1&&_0x3d98e5[_0x2d3547(0x21c)](_0x5653e1,_0x18bd92,[_0x2d3547(0x1f2),'border-left',_0x2d3547(0x25c),_0x2d3547(0x21b),'color',_0x2d3547(0x22e),_0x2d3547(0x23f),_0x2d3547(0x243)]):_0x5653e1&&_0x3d98e5['mapElementStyles'](_0x5653e1,_0x18bd92,[_0x2d3547(0x1f2),'border-left',_0x2d3547(0x25c),_0x2d3547(0x21b),_0x2d3547(0x202),_0x2d3547(0x22e),_0x2d3547(0x23f),_0x2d3547(0x243)]),_0x1c95e9['appendChild'](_0x18bd92);}),_0x467e5d?_0x450d02=_0x7fe07c:(!(_0x3d4541%0x2)&&_0x488420&&(_0x450d02=_0x488420),_0x3d4541%0x2&&_0x160cab&&(_0x450d02=_0x160cab)),_0x450d02&&_0x3d98e5[_0x5869a9(0x21c)](_0x450d02,_0x1c95e9,[_0x5869a9(0x1f2),_0x5869a9(0x22f),_0x5869a9(0x25c),_0x5869a9(0x21b),_0x5869a9(0x202),_0x5869a9(0x22e),_0x5869a9(0x23f),_0x5869a9(0x243),_0x5869a9(0x275)]),_0x536889['appendChild'](_0x1c95e9);});}function _0x1c6255(_0x26d382,_0x169fcb){var _0x2256b9=_0x530641,_0x1fcdb6=document[_0x2256b9(0x272)]('tr'),_0x38edcc=document['createElement']('td');_0x38edcc['colSpan']=_0xaf82b2[_0x2256b9(0x21e)],_0x38edcc[_0x2256b9(0x1e2)]=_0x26d382[_0x2256b9(0x1fa)],_0x1fcdb6[_0x2256b9(0x256)](_0x38edcc),_0x536889[_0x2256b9(0x256)](_0x1fcdb6),_0x3d98e5[_0x2256b9(0x21c)](_0xb849c6,_0x1fcdb6,[_0x2256b9(0x1f2),_0x2256b9(0x22f),_0x2256b9(0x25c),_0x2256b9(0x21b),_0x2256b9(0x202),_0x2256b9(0x22e),'font-family','font-size','background-color']),_0x26d382[_0x2256b9(0x264)]?_0x26d382[_0x2256b9(0x264)][_0x2256b9(0x266)](function(_0x1eead7){var _0x5d1c24=_0x2256b9;_0x1c6255(_0x1eead7,_0x169fcb[_0x26d382[_0x5d1c24(0x1fa)]]?_0x169fcb[_0x26d382[_0x5d1c24(0x1fa)]]['groups']||{}:{});}):(_0xee9663[_0x2256b9(0x1f8)]&&_0x5666fa(_0x169fcb,_0x26d382[_0x2256b9(0x1fa)],_0x2256b9(0x245)),_0x198f09(_0x26d382[_0x2256b9(0x216)]),_0xee9663[_0x2256b9(0x1f8)]&&_0x5666fa(_0x169fcb,_0x26d382[_0x2256b9(0x1fa)],'bottom'));}_0xee9663[_0x530641(0x206)]?_0x539ace[_0x530641(0x266)](function(_0x462305){_0x1c6255(_0x462305,_0x16ee3f||{});}):(_0xee9663[_0x530641(0x1f8)]&&_0x5666fa(_0x16ee3f,_0x530641(0x245)),_0x198f09(_0x539ace),_0xee9663[_0x530641(0x1f8)]&&_0x5666fa(_0x16ee3f,'bottom')),this['htmlElement'][_0x530641(0x256)](_0x536889);},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x21c)]=function(_0x3076d8,_0x3984c3,_0x2dba6c){var _0x27c7f8=a8_0xb717b8,_0x26e98d={'background-color':_0x27c7f8(0x1f7),'color':_0x27c7f8(0x1d7),'font-weight':_0x27c7f8(0x26e),'font-family':_0x27c7f8(0x260),'font-size':_0x27c7f8(0x1dd),'border-top':'borderTop','border-left':_0x27c7f8(0x222),'border-right':_0x27c7f8(0x259),'border-bottom':'borderBottom'};if(window[_0x27c7f8(0x1ff)]){var _0x41736f=window[_0x27c7f8(0x1ff)](_0x3076d8);_0x2dba6c[_0x27c7f8(0x266)](function(_0x1e9ae0){var _0x588716=_0x27c7f8;_0x3984c3[_0x588716(0x207)][_0x26e98d[_0x1e9ae0]]=_0x41736f[_0x588716(0x223)](_0x1e9ae0);});}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x209)]={'userSelection':function userSelection(_0x300a85,_0x442714){return _0x442714;},'selected':function selected(_0x2cbdf5,_0x14f778){var _0x30f6d1=a8_0xb717b8,_0x4969ee=[];return this['table'][_0x30f6d1(0x1fb)](_0x30f6d1(0x26b),!![])&&(_0x4969ee=this[_0x30f6d1(0x1ee)][_0x30f6d1(0x23a)][_0x30f6d1(0x26b)][_0x30f6d1(0x25a)]()),_0x2cbdf5[_0x30f6d1(0x206)]&&console[_0x30f6d1(0x246)](_0x30f6d1(0x218)),this[_0x30f6d1(0x221)](_0x4969ee,_0x2cbdf5,_0x14f778);},'table':function table(_0x36c827,_0x25bb8d){var _0x1626bb=a8_0xb717b8;return _0x36c827[_0x1626bb(0x206)]&&console[_0x1626bb(0x246)](_0x1626bb(0x1d6)),this[_0x1626bb(0x221)](this[_0x1626bb(0x1ee)][_0x1626bb(0x1de)][_0x1626bb(0x1ea)](),_0x36c827,_0x25bb8d);},'active':function active(_0x56c210,_0x17b8ca){var _0x3382b8=a8_0xb717b8,_0x314c3a;return _0x56c210[_0x3382b8(0x206)]?_0x314c3a=this[_0x3382b8(0x20b)](_0x56c210):_0x314c3a=this[_0x3382b8(0x1ee)][_0x3382b8(0x1de)][_0x3382b8(0x1ea)](_0x3382b8(0x26c)),this['buildOutput'](_0x314c3a,_0x56c210,_0x17b8ca);},'visible':function visible(_0x1fb587,_0x4306f9){var _0x3848b9=a8_0xb717b8,_0x480b1b;return _0x1fb587[_0x3848b9(0x206)]?_0x480b1b=this[_0x3848b9(0x20b)](_0x1fb587):_0x480b1b=this[_0x3848b9(0x1ee)][_0x3848b9(0x1de)][_0x3848b9(0x1ea)](_0x3848b9(0x25b)),this[_0x3848b9(0x221)](_0x480b1b,_0x1fb587,_0x4306f9);}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x1f9)]={'raw':function raw(_0xd55684,_0x521179){return _0xd55684;},'table':function table(_0x19647a,_0x2df744){var _0xfe2f8f=a8_0xb717b8,_0x534163=[];return _0x19647a[_0xfe2f8f(0x266)](function(_0x502da2){var _0x2016c0=_0xfe2f8f,_0x48f8e9=[];_0x502da2[_0x2016c0(0x266)](function(_0x27e61a){var _0x3d1ddd=_0x2016c0;typeof _0x27e61a==_0x3d1ddd(0x227)&&(_0x27e61a=''),_0x27e61a=typeof _0x27e61a==_0x3d1ddd(0x227)||_0x27e61a===null?'':_0x27e61a[_0x3d1ddd(0x1fd)](),_0x27e61a['match'](/\r|\n/)&&(_0x27e61a=_0x27e61a['split']('\x22')['join']('\x22\x22'),_0x27e61a='\x22'+_0x27e61a+'\x22'),_0x48f8e9[_0x3d1ddd(0x270)](_0x27e61a);}),_0x534163[_0x2016c0(0x270)](_0x48f8e9[_0x2016c0(0x226)]('\x09'));}),_0x534163[_0xfe2f8f(0x226)]('\x0a');}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x24a)]={'table':function table(_0x228a43){var _0x4e612e=a8_0xb717b8,_0x492ecc=[],_0x5b4e8d=![],_0x5e03f9=!![],_0x187027=this[_0x4e612e(0x1ee)][_0x4e612e(0x204)][_0x4e612e(0x1f4)],_0x205860=[],_0x162b44=[];return _0x228a43=_0x228a43[_0x4e612e(0x249)]('\x0a'),_0x228a43[_0x4e612e(0x266)](function(_0x1c0d96){var _0x436bdb=_0x4e612e;_0x492ecc['push'](_0x1c0d96[_0x436bdb(0x249)]('\x09'));}),_0x492ecc[_0x4e612e(0x21e)]&&!(_0x492ecc[_0x4e612e(0x21e)]===0x1&&_0x492ecc[0x0]['length']<0x2)?(_0x5b4e8d=!![],_0x492ecc[0x0][_0x4e612e(0x266)](function(_0x56e9f8){var _0x1b7afb=_0x4e612e,_0x1458ef=_0x187027[_0x1b7afb(0x1fc)](function(_0x5406a9){var _0x4c6005=_0x1b7afb;return _0x56e9f8&&_0x5406a9[_0x4c6005(0x242)][_0x4c6005(0x269)]&&_0x56e9f8[_0x4c6005(0x22a)]()&&_0x5406a9[_0x4c6005(0x242)][_0x4c6005(0x269)]['trim']()===_0x56e9f8[_0x4c6005(0x22a)]();});_0x1458ef?_0x205860[_0x1b7afb(0x270)](_0x1458ef):_0x5e03f9=![];}),!_0x5e03f9&&(_0x5e03f9=!![],_0x205860=[],_0x492ecc[0x0][_0x4e612e(0x266)](function(_0x5593ce){var _0xc49515=_0x4e612e,_0x555c7f=_0x187027['find'](function(_0x1a6e37){var _0x1c7f9e=a8_0x5b23;return _0x5593ce&&_0x1a6e37[_0x1c7f9e(0x1f3)]&&_0x5593ce[_0x1c7f9e(0x22a)]()&&_0x1a6e37['field'][_0x1c7f9e(0x22a)]()===_0x5593ce[_0x1c7f9e(0x22a)]();});_0x555c7f?_0x205860[_0xc49515(0x270)](_0x555c7f):_0x5e03f9=![];}),!_0x5e03f9&&(_0x205860=this[_0x4e612e(0x1ee)][_0x4e612e(0x204)][_0x4e612e(0x1ec)])),_0x5e03f9&&_0x492ecc['shift'](),_0x492ecc[_0x4e612e(0x266)](function(_0x2bb5fb){var _0x565875=_0x4e612e,_0x1b13df={};_0x2bb5fb[_0x565875(0x266)](function(_0x2bc129,_0x29a11d){_0x205860[_0x29a11d]&&(_0x1b13df[_0x205860[_0x29a11d]['field']]=_0x2bc129);}),_0x162b44[_0x565875(0x270)](_0x1b13df);}),_0x162b44):![];}},Clipboard[a8_0xb717b8(0x20d)][a8_0xb717b8(0x273)]={'replace':function replace(_0x156b0f){var _0x225313=a8_0xb717b8;return this['table'][_0x225313(0x287)](_0x156b0f);},'update':function update(_0x7d8e99){var _0x1513ea=a8_0xb717b8;return this[_0x1513ea(0x1ee)][_0x1513ea(0x286)](_0x7d8e99);},'insert':function insert(_0x3c1012){var _0x28a8b7=a8_0xb717b8;return this['table'][_0x28a8b7(0x23d)](_0x3c1012);}},Tabulator[a8_0xb717b8(0x20d)]['registerModule'](a8_0xb717b8(0x27e),Clipboard);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Clipboard = function Clipboard(table) {
+	this.table = table;
+	this.mode = true;
+	this.copySelector = false;
+	this.copySelectorParams = {};
+	this.copyFormatter = false;
+	this.copyFormatterParams = {};
+	this.pasteParser = function () {};
+	this.pasteAction = function () {};
+	this.htmlElement = false;
+	this.config = {};
+
+	this.blocked = true; //block copy actions not originating from this command
+};
+
+Clipboard.prototype.initialize = function () {
+	var self = this;
+
+	this.mode = this.table.options.clipboard;
+
+	if (this.mode === true || this.mode === "copy") {
+		this.table.element.addEventListener("copy", function (e) {
+			var data;
+
+			self.processConfig();
+
+			if (!self.blocked) {
+				e.preventDefault();
+
+				data = self.generateContent();
+
+				if (window.clipboardData && window.clipboardData.setData) {
+					window.clipboardData.setData('Text', data);
+				} else if (e.clipboardData && e.clipboardData.setData) {
+					e.clipboardData.setData('text/plain', data);
+					if (self.htmlElement) {
+						e.clipboardData.setData('text/html', self.htmlElement.outerHTML);
+					}
+				} else if (e.originalEvent && e.originalEvent.clipboardData.setData) {
+					e.originalEvent.clipboardData.setData('text/plain', data);
+					if (self.htmlElement) {
+						e.originalEvent.clipboardData.setData('text/html', self.htmlElement.outerHTML);
+					}
+				}
+
+				self.table.options.clipboardCopied.call(this.table, data);
+
+				self.reset();
+			}
+		});
+	}
+
+	if (this.mode === true || this.mode === "paste") {
+		this.table.element.addEventListener("paste", function (e) {
+			self.paste(e);
+		});
+	}
+
+	this.setPasteParser(this.table.options.clipboardPasteParser);
+	this.setPasteAction(this.table.options.clipboardPasteAction);
+};
+
+Clipboard.prototype.processConfig = function () {
+	var config = {
+		columnHeaders: "groups",
+		rowGroups: true,
+		columnCalcs: true
+	};
+
+	if (typeof this.table.options.clipboardCopyHeader !== "undefined") {
+		config.columnHeaders = this.table.options.clipboardCopyHeader;
+		console.warn("DEPRECATION WARNING - clipboardCopyHeader option has been deprecated, please use the columnHeaders property on the clipboardCopyConfig option");
+	}
+
+	if (this.table.options.clipboardCopyConfig) {
+		for (var key in this.table.options.clipboardCopyConfig) {
+			config[key] = this.table.options.clipboardCopyConfig[key];
+		}
+	}
+
+	if (config.rowGroups && this.table.options.groupBy && this.table.modExists("groupRows")) {
+		this.config.rowGroups = true;
+	}
+
+	if (config.columnHeaders) {
+		if ((config.columnHeaders === "groups" || config === true) && this.table.columnManager.columns.length != this.table.columnManager.columnsByIndex.length) {
+			this.config.columnHeaders = "groups";
+		} else {
+			this.config.columnHeaders = "columns";
+		}
+	} else {
+		this.config.columnHeaders = false;
+	}
+
+	if (config.columnCalcs && this.table.modExists("columnCalcs")) {
+		this.config.columnCalcs = true;
+	}
+};
+
+Clipboard.prototype.reset = function () {
+	this.blocked = false;
+	this.originalSelectionText = "";
+};
+
+Clipboard.prototype.setPasteAction = function (action) {
+
+	switch (typeof action === "undefined" ? "undefined" : _typeof(action)) {
+		case "string":
+			this.pasteAction = this.pasteActions[action];
+
+			if (!this.pasteAction) {
+				console.warn("Clipboard Error - No such paste action found:", action);
+			}
+			break;
+
+		case "function":
+			this.pasteAction = action;
+			break;
+	}
+};
+
+Clipboard.prototype.setPasteParser = function (parser) {
+	switch (typeof parser === "undefined" ? "undefined" : _typeof(parser)) {
+		case "string":
+			this.pasteParser = this.pasteParsers[parser];
+
+			if (!this.pasteParser) {
+				console.warn("Clipboard Error - No such paste parser found:", parser);
+			}
+			break;
+
+		case "function":
+			this.pasteParser = parser;
+			break;
+	}
+};
+
+Clipboard.prototype.paste = function (e) {
+	var data, rowData, rows;
+
+	if (this.checkPaseOrigin(e)) {
+
+		data = this.getPasteData(e);
+
+		rowData = this.pasteParser.call(this, data);
+
+		if (rowData) {
+			e.preventDefault();
+
+			if (this.table.modExists("mutator")) {
+				rowData = this.mutateData(rowData);
+			}
+
+			rows = this.pasteAction.call(this, rowData);
+			this.table.options.clipboardPasted.call(this.table, data, rowData, rows);
+		} else {
+			this.table.options.clipboardPasteError.call(this.table, data);
+		}
+	}
+};
+
+Clipboard.prototype.mutateData = function (data) {
+	var self = this,
+	    output = [];
+
+	if (Array.isArray(data)) {
+		data.forEach(function (row) {
+			output.push(self.table.modules.mutator.transformRow(row, "clipboard"));
+		});
+	} else {
+		output = data;
+	}
+
+	return output;
+};
+
+Clipboard.prototype.checkPaseOrigin = function (e) {
+	var valid = true;
+
+	if (e.target.tagName != "DIV" || this.table.modules.edit.currentCell) {
+		valid = false;
+	}
+
+	return valid;
+};
+
+Clipboard.prototype.getPasteData = function (e) {
+	var data;
+
+	if (window.clipboardData && window.clipboardData.getData) {
+		data = window.clipboardData.getData('Text');
+	} else if (e.clipboardData && e.clipboardData.getData) {
+		data = e.clipboardData.getData('text/plain');
+	} else if (e.originalEvent && e.originalEvent.clipboardData.getData) {
+		data = e.originalEvent.clipboardData.getData('text/plain');
+	}
+
+	return data;
+};
+
+Clipboard.prototype.copy = function (selector, selectorParams, formatter, formatterParams, internal) {
+	var range, sel, textRange;
+	this.blocked = false;
+
+	if (this.mode === true || this.mode === "copy") {
+
+		if (typeof window.getSelection != "undefined" && typeof document.createRange != "undefined") {
+			range = document.createRange();
+			range.selectNodeContents(this.table.element);
+			sel = window.getSelection();
+
+			if (sel.toString() && internal) {
+				selector = "userSelection";
+				formatter = "raw";
+				selectorParams = sel.toString();
+			}
+
+			sel.removeAllRanges();
+			sel.addRange(range);
+		} else if (typeof document.selection != "undefined" && typeof document.body.createTextRange != "undefined") {
+			textRange = document.body.createTextRange();
+			textRange.moveToElementText(this.table.element);
+			textRange.select();
+		}
+
+		this.setSelector(selector);
+		this.copySelectorParams = typeof selectorParams != "undefined" && selectorParams != null ? selectorParams : this.config.columnHeaders;
+		this.setFormatter(formatter);
+		this.copyFormatterParams = typeof formatterParams != "undefined" && formatterParams != null ? formatterParams : {};
+
+		document.execCommand('copy');
+
+		if (sel) {
+			sel.removeAllRanges();
+		}
+	}
+};
+
+Clipboard.prototype.setSelector = function (selector) {
+	selector = selector || this.table.options.clipboardCopySelector;
+
+	switch (typeof selector === "undefined" ? "undefined" : _typeof(selector)) {
+		case "string":
+			if (this.copySelectors[selector]) {
+				this.copySelector = this.copySelectors[selector];
+			} else {
+				console.warn("Clipboard Error - No such selector found:", selector);
+			}
+			break;
+
+		case "function":
+			this.copySelector = selector;
+			break;
+	}
+};
+
+Clipboard.prototype.setFormatter = function (formatter) {
+
+	formatter = formatter || this.table.options.clipboardCopyFormatter;
+
+	switch (typeof formatter === "undefined" ? "undefined" : _typeof(formatter)) {
+		case "string":
+			if (this.copyFormatters[formatter]) {
+				this.copyFormatter = this.copyFormatters[formatter];
+			} else {
+				console.warn("Clipboard Error - No such formatter found:", formatter);
+			}
+			break;
+
+		case "function":
+			this.copyFormatter = formatter;
+			break;
+	}
+};
+
+Clipboard.prototype.generateContent = function () {
+	var data;
+
+	this.htmlElement = false;
+	data = this.copySelector.call(this, this.config, this.copySelectorParams);
+
+	return this.copyFormatter.call(this, data, this.config, this.copyFormatterParams);
+};
+
+Clipboard.prototype.generateSimpleHeaders = function (columns) {
+	var headers = [];
+
+	columns.forEach(function (column) {
+		headers.push(column.definition.title);
+	});
+
+	return headers;
+};
+
+Clipboard.prototype.generateColumnGroupHeaders = function (columns) {
+	var _this = this;
+
+	var output = [];
+
+	this.table.columnManager.columns.forEach(function (column) {
+		var colData = _this.processColumnGroup(column);
+
+		if (colData) {
+			output.push(colData);
+		}
+	});
+
+	return output;
+};
+
+Clipboard.prototype.processColumnGroup = function (column) {
+	var _this2 = this;
+
+	var subGroups = column.columns;
+
+	var groupData = {
+		type: "group",
+		title: column.definition.title,
+		column: column
+	};
+
+	if (subGroups.length) {
+		groupData.subGroups = [];
+		groupData.width = 0;
+
+		subGroups.forEach(function (subGroup) {
+			var subGroupData = _this2.processColumnGroup(subGroup);
+
+			if (subGroupData) {
+				groupData.width += subGroupData.width;
+				groupData.subGroups.push(subGroupData);
+			}
+		});
+
+		if (!groupData.width) {
+			return false;
+		}
+	} else {
+		if (column.field && (column.definition.clipboard || column.visible && column.definition.clipboard !== false)) {
+			groupData.width = 1;
+		} else {
+			return false;
+		}
+	}
+
+	return groupData;
+};
+
+Clipboard.prototype.groupHeadersToRows = function (columns) {
+
+	var headers = [];
+
+	function parseColumnGroup(column, level) {
+
+		if (typeof headers[level] === "undefined") {
+			headers[level] = [];
+		}
+
+		headers[level].push(column.title);
+
+		if (column.subGroups) {
+			column.subGroups.forEach(function (subGroup) {
+				parseColumnGroup(subGroup, level + 1);
+			});
+		} else {
+			padColumnheaders();
+		}
+	}
+
+	function padColumnheaders() {
+		var max = 0;
+
+		headers.forEach(function (title) {
+			var len = title.length;
+			if (len > max) {
+				max = len;
+			}
+		});
+
+		headers.forEach(function (title) {
+			var len = title.length;
+			if (len < max) {
+				for (var i = len; i < max; i++) {
+					title.push("");
+				}
+			}
+		});
+	}
+
+	columns.forEach(function (column) {
+		parseColumnGroup(column, 0);
+	});
+
+	return headers;
+};
+
+Clipboard.prototype.rowsToData = function (rows, columns, config, params) {
+	var data = [];
+
+	rows.forEach(function (row) {
+		var rowArray = [],
+		    rowData = row instanceof RowComponent ? row.getData("clipboard") : row;
+
+		columns.forEach(function (column) {
+			var value = column.getFieldValue(rowData);
+
+			switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+				case "object":
+					value = JSON.stringify(value);
+					break;
+
+				case "undefined":
+				case "null":
+					value = "";
+					break;
+
+				default:
+					value = value;
+			}
+
+			rowArray.push(value);
+		});
+
+		data.push(rowArray);
+	});
+
+	return data;
+};
+
+Clipboard.prototype.buildComplexRows = function (config) {
+	var _this3 = this;
+
+	var output = [],
+	    groups = this.table.modules.groupRows.getGroups();
+
+	groups.forEach(function (group) {
+		output.push(_this3.processGroupData(group));
+	});
+
+	return output;
+};
+
+Clipboard.prototype.processGroupData = function (group) {
+	var _this4 = this;
+
+	var subGroups = group.getSubGroups();
+
+	var groupData = {
+		type: "group",
+		key: group.key
+	};
+
+	if (subGroups.length) {
+		groupData.subGroups = [];
+
+		subGroups.forEach(function (subGroup) {
+			groupData.subGroups.push(_this4.processGroupData(subGroup));
+		});
+	} else {
+		groupData.rows = group.getRows(true);
+	}
+
+	return groupData;
+};
+
+Clipboard.prototype.getCalcRow = function (calcs, columns, selector, pos) {
+	var calcData = calcs[selector];
+
+	if (calcData) {
+		if (pos) {
+			calcData = calcData[pos];
+		}
+
+		if (Object.keys(calcData).length) {
+			return this.rowsToData([calcData], columns);
+		}
+	}
+
+	return [];
+};
+
+Clipboard.prototype.buildOutput = function (rows, config, params) {
+	var _this5 = this;
+
+	var output = [],
+	    calcs,
+	    columns = [],
+	    columnsByIndex = [];
+
+	this.table.columnManager.columnsByIndex.forEach(function (column) {
+		if (column.definition.clipboard || column.visible && column.definition.clipboard !== false) {
+			columnsByIndex.push(column);
+		}
+	});
+
+	if (config.columnHeaders == "groups") {
+		columns = this.generateColumnGroupHeaders(this.table.columnManager.columns);
+		output = output.concat(this.groupHeadersToRows(columns));
+	} else {
+		columns = columnsByIndex;
+
+		output.push(this.generateSimpleHeaders(columns));
+	}
+
+	if (this.config.columnCalcs) {
+		calcs = this.table.getCalcResults();
+	}
+
+	//generate styled content
+	if (this.table.options.clipboardCopyStyled) {
+		this.generateHTML(rows, columns, calcs, config, params);
+	}
+
+	//generate unstyled content
+	if (config.rowGroups) {
+		rows.forEach(function (row) {
+			output = output.concat(_this5.parseRowGroupData(row, columnsByIndex, config, params, calcs || {}));
+		});
+	} else {
+		if (config.columnCalcs) {
+			output = output.concat(this.getCalcRow(calcs, columnsByIndex, "top"));
+		}
+
+		output = output.concat(this.rowsToData(rows, columnsByIndex, config, params));
+
+		if (config.columnCalcs) {
+			output = output.concat(this.getCalcRow(calcs, columnsByIndex, "bottom"));
+		}
+	}
+
+	return output;
+};
+
+Clipboard.prototype.parseRowGroupData = function (group, columns, config, params, calcObj) {
+	var _this6 = this;
+
+	var groupData = [];
+
+	groupData.push([group.key]);
+
+	if (group.subGroups) {
+		group.subGroups.forEach(function (subGroup) {
+			groupData = groupData.concat(_this6.parseRowGroupData(subGroup, config, params, calcObj[group.key] ? calcObj[group.key].groups || {} : {}));
+		});
+	} else {
+		if (config.columnCalcs) {
+			groupData = groupData.concat(this.getCalcRow(calcObj, columns, group.key, "top"));
+		}
+
+		groupData = groupData.concat(this.rowsToData(group.rows, columns, config, params));
+
+		if (config.columnCalcs) {
+			groupData = groupData.concat(this.getCalcRow(calcObj, columns, group.key, "bottom"));
+		}
+	}
+
+	return groupData;
+};
+
+Clipboard.prototype.generateHTML = function (rows, columns, calcs, config, params) {
+	var self = this,
+	    data = [],
+	    headers = [],
+	    body,
+	    oddRow,
+	    evenRow,
+	    calcRow,
+	    firstRow,
+	    firstCell,
+	    firstGroup,
+	    lastCell,
+	    styleCells;
+
+	//create table element
+	this.htmlElement = document.createElement("table");
+	self.mapElementStyles(this.table.element, this.htmlElement, ["border-top", "border-left", "border-right", "border-bottom"]);
+
+	function generateSimpleHeaders() {
+		var headerEl = document.createElement("tr");
+
+		columns.forEach(function (column) {
+			var columnEl = document.createElement("th");
+			columnEl.innerHTML = column.definition.title;
+
+			self.mapElementStyles(column.getElement(), columnEl, ["border-top", "border-left", "border-right", "border-bottom", "background-color", "color", "font-weight", "font-family", "font-size"]);
+
+			headerEl.appendChild(columnEl);
+		});
+
+		self.mapElementStyles(self.table.columnManager.getHeadersElement(), headerEl, ["border-top", "border-left", "border-right", "border-bottom", "background-color", "color", "font-weight", "font-family", "font-size"]);
+
+		self.htmlElement.appendChild(document.createElement("thead").appendChild(headerEl));
+	}
+
+	function generateHeaders(headers) {
+
+		var headerHolderEl = document.createElement("thead");
+
+		headers.forEach(function (columns) {
+			var headerEl = document.createElement("tr");
+
+			columns.forEach(function (column) {
+				var columnEl = document.createElement("th");
+
+				if (column.width > 1) {
+					columnEl.colSpan = column.width;
+				}
+
+				if (column.height > 1) {
+					columnEl.rowSpan = column.height;
+				}
+
+				columnEl.innerHTML = column.title;
+
+				self.mapElementStyles(column.element, columnEl, ["border-top", "border-left", "border-right", "border-bottom", "background-color", "color", "font-weight", "font-family", "font-size"]);
+
+				headerEl.appendChild(columnEl);
+			});
+
+			self.mapElementStyles(self.table.columnManager.getHeadersElement(), headerEl, ["border-top", "border-left", "border-right", "border-bottom", "background-color", "color", "font-weight", "font-family", "font-size"]);
+
+			headerHolderEl.appendChild(headerEl);
+		});
+
+		self.htmlElement.appendChild(headerHolderEl);
+	}
+
+	function parseColumnGroup(column, level) {
+
+		var actualColumns = [];
+
+		if (typeof headers[level] === "undefined") {
+			headers[level] = [];
+		}
+
+		headers[level].push({
+			title: column.title,
+			width: column.width,
+			height: 1,
+			children: !!column.subGroups,
+			element: column.column.getElement()
+		});
+
+		if (column.subGroups) {
+			column.subGroups.forEach(function (subGroup) {
+				actualColumns = actualColumns.concat(parseColumnGroup(subGroup, level + 1));
+			});
+
+			return actualColumns;
+		} else {
+			return [column.column];
+		}
+	}
+
+	function padVerticalColumnheaders() {
+		headers.forEach(function (row, index) {
+			row.forEach(function (header) {
+				if (!header.children) {
+					header.height = headers.length - index;
+				}
+			});
+		});
+	}
+
+	function addCalcRow(calcs, selector, pos) {
+		var calcData = calcs[selector];
+
+		if (calcData) {
+			if (pos) {
+				calcData = calcData[pos];
+			}
+
+			if (Object.keys(calcData).length) {
+				// calcRowIndexs.push(body.length);
+				processRows([calcData]);
+			}
+		}
+	}
+
+	//create headers if needed
+	if (config.columnHeaders) {
+		if (config.columnHeaders == "groups") {
+
+			var actualColumns = [];
+
+			columns.forEach(function (column) {
+				actualColumns = actualColumns.concat(parseColumnGroup(column, 0));
+			});
+
+			columns = actualColumns;
+
+			padVerticalColumnheaders();
+			generateHeaders(headers);
+		} else {
+			generateSimpleHeaders();
+		}
+	}
+
+	// columns = this.table.columnManager.columnsByIndex;
+
+	//create table body
+	body = document.createElement("tbody");
+
+	//lookup row styles
+	if (window.getComputedStyle) {
+		oddRow = this.table.element.querySelector(".tabulator-row-odd:not(.tabulator-group):not(.tabulator-calcs)");
+		evenRow = this.table.element.querySelector(".tabulator-row-even:not(.tabulator-group):not(.tabulator-calcs)");
+		calcRow = this.table.element.querySelector(".tabulator-row.tabulator-calcs");
+		firstRow = this.table.element.querySelector(".tabulator-row:not(.tabulator-group):not(.tabulator-calcs)");
+		firstGroup = this.table.element.getElementsByClassName("tabulator-group")[0];
+
+		if (firstRow) {
+			styleCells = firstRow.getElementsByClassName("tabulator-cell");
+			firstCell = styleCells[0];
+			lastCell = styleCells[styleCells.length - 1];
+		}
+	}
+
+	function processRows(rowArray) {
+		//add rows to table
+		rowArray.forEach(function (row, i) {
+			var rowEl = document.createElement("tr"),
+			    styleRow = firstRow,
+			    isCalc = false,
+			    rowData;
+
+			if (row instanceof RowComponent) {
+				rowData = row.getData("clipboard");
+			} else {
+				rowData = row;
+				isCalc = true;
+			}
+
+			columns.forEach(function (column, j) {
+				var cellEl = document.createElement("td"),
+				    value = column.getFieldValue(rowData);
+
+				switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+					case "object":
+						value = JSON.stringify(value);
+						break;
+
+					case "undefined":
+					case "null":
+						value = "";
+						break;
+
+					default:
+						value = value;
+				}
+
+				cellEl.innerHTML = value;
+
+				if (column.definition.align) {
+					cellEl.style.textAlign = column.definition.align;
+				}
+
+				if (j < columns.length - 1) {
+					if (firstCell) {
+						self.mapElementStyles(firstCell, cellEl, ["border-top", "border-left", "border-right", "border-bottom", "color", "font-weight", "font-family", "font-size"]);
+					}
+				} else {
+					if (firstCell) {
+						self.mapElementStyles(firstCell, cellEl, ["border-top", "border-left", "border-right", "border-bottom", "color", "font-weight", "font-family", "font-size"]);
+					}
+				}
+
+				rowEl.appendChild(cellEl);
+			});
+
+			if (isCalc) {
+				styleRow = calcRow;
+			} else {
+				if (!(i % 2) && oddRow) {
+					styleRow = oddRow;
+				}
+
+				if (i % 2 && evenRow) {
+					styleRow = evenRow;
+				}
+			}
+
+			if (styleRow) {
+				self.mapElementStyles(styleRow, rowEl, ["border-top", "border-left", "border-right", "border-bottom", "color", "font-weight", "font-family", "font-size", "background-color"]);
+			}
+
+			body.appendChild(rowEl);
+		});
+	}
+
+	function processGroup(group, calcObj) {
+		var groupEl = document.createElement("tr"),
+		    groupCellEl = document.createElement("td");
+
+		groupCellEl.colSpan = columns.length;
+
+		groupCellEl.innerHTML = group.key;
+
+		groupEl.appendChild(groupCellEl);
+		body.appendChild(groupEl);
+
+		self.mapElementStyles(firstGroup, groupEl, ["border-top", "border-left", "border-right", "border-bottom", "color", "font-weight", "font-family", "font-size", "background-color"]);
+
+		if (group.subGroups) {
+			group.subGroups.forEach(function (subGroup) {
+				processGroup(subGroup, calcObj[group.key] ? calcObj[group.key].groups || {} : {});
+			});
+		} else {
+			if (config.columnCalcs) {
+				addCalcRow(calcObj, group.key, "top");
+			}
+
+			processRows(group.rows);
+
+			if (config.columnCalcs) {
+				addCalcRow(calcObj, group.key, "bottom");
+			}
+		}
+	}
+
+	if (config.rowGroups) {
+		rows.forEach(function (group) {
+			processGroup(group, calcs || {});
+		});
+	} else {
+		if (config.columnCalcs) {
+			addCalcRow(calcs, "top");
+		}
+
+		processRows(rows);
+
+		if (config.columnCalcs) {
+			addCalcRow(calcs, "bottom");
+		}
+	}
+
+	this.htmlElement.appendChild(body);
+};
+
+Clipboard.prototype.mapElementStyles = function (from, to, props) {
+
+	var lookup = {
+		"background-color": "backgroundColor",
+		"color": "fontColor",
+		"font-weight": "fontWeight",
+		"font-family": "fontFamily",
+		"font-size": "fontSize",
+		"border-top": "borderTop",
+		"border-left": "borderLeft",
+		"border-right": "borderRight",
+		"border-bottom": "borderBottom"
+	};
+
+	if (window.getComputedStyle) {
+		var fromStyle = window.getComputedStyle(from);
+
+		props.forEach(function (prop) {
+			to.style[lookup[prop]] = fromStyle.getPropertyValue(prop);
+		});
+	}
+
+	// return window.getComputedStyle ? window.getComputedStyle(element, null).getPropertyValue(property) : element.style[property.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); })];
+};
+
+Clipboard.prototype.copySelectors = {
+	userSelection: function userSelection(config, params) {
+		return params;
+	},
+	selected: function selected(config, params) {
+		var rows = [];
+
+		if (this.table.modExists("selectRow", true)) {
+			rows = this.table.modules.selectRow.getSelectedRows();
+		}
+
+		if (config.rowGroups) {
+			console.warn("Clipboard Warning - select coptSelector does not support row groups");
+		}
+
+		return this.buildOutput(rows, config, params);
+	},
+	table: function table(config, params) {
+		if (config.rowGroups) {
+			console.warn("Clipboard Warning - table coptSelector does not support row groups");
+		}
+
+		return this.buildOutput(this.table.rowManager.getComponents(), config, params);
+	},
+	active: function active(config, params) {
+		var rows;
+
+		if (config.rowGroups) {
+			rows = this.buildComplexRows(config);
+		} else {
+			rows = this.table.rowManager.getComponents("active");
+		}
+
+		return this.buildOutput(rows, config, params);
+	},
+	visible: function visible(config, params) {
+		var rows;
+
+		if (config.rowGroups) {
+			rows = this.buildComplexRows(config);
+		} else {
+			rows = this.table.rowManager.getComponents("visible");
+		}
+
+		return this.buildOutput(rows, config, params);
+	}
+};
+
+Clipboard.prototype.copyFormatters = {
+	raw: function raw(data, params) {
+		return data;
+	},
+	table: function table(data, params) {
+		var output = [];
+
+		data.forEach(function (row) {
+			var newRow = [];
+			row.forEach(function (value) {
+				if (typeof value == "undefined") {
+					value = "";
+				}
+
+				value = typeof value == "undefined" || value === null ? "" : value.toString();
+
+				if (value.match(/\r|\n/)) {
+					value = value.split('"').join('""');
+					value = '"' + value + '"';
+				}
+				newRow.push(value);
+			});
+
+			output.push(newRow.join("\t"));
+		});
+
+		return output.join("\n");
+	}
+};
+
+Clipboard.prototype.pasteParsers = {
+	table: function table(clipboard) {
+		var data = [],
+		    success = false,
+		    headerFindSuccess = true,
+		    columns = this.table.columnManager.columns,
+		    columnMap = [],
+		    rows = [];
+
+		//get data from clipboard into array of columns and rows.
+		clipboard = clipboard.split("\n");
+
+		clipboard.forEach(function (row) {
+			data.push(row.split("\t"));
+		});
+
+		if (data.length && !(data.length === 1 && data[0].length < 2)) {
+			success = true;
+
+			//check if headers are present by title
+			data[0].forEach(function (value) {
+				var column = columns.find(function (column) {
+					return value && column.definition.title && value.trim() && column.definition.title.trim() === value.trim();
+				});
+
+				if (column) {
+					columnMap.push(column);
+				} else {
+					headerFindSuccess = false;
+				}
+			});
+
+			//check if column headers are present by field
+			if (!headerFindSuccess) {
+				headerFindSuccess = true;
+				columnMap = [];
+
+				data[0].forEach(function (value) {
+					var column = columns.find(function (column) {
+						return value && column.field && value.trim() && column.field.trim() === value.trim();
+					});
+
+					if (column) {
+						columnMap.push(column);
+					} else {
+						headerFindSuccess = false;
+					}
+				});
+
+				if (!headerFindSuccess) {
+					columnMap = this.table.columnManager.columnsByIndex;
+				}
+			}
+
+			//remove header row if found
+			if (headerFindSuccess) {
+				data.shift();
+			}
+
+			data.forEach(function (item) {
+				var row = {};
+
+				item.forEach(function (value, i) {
+					if (columnMap[i]) {
+						row[columnMap[i].field] = value;
+					}
+				});
+
+				rows.push(row);
+			});
+
+			return rows;
+		} else {
+			return false;
+		}
+	}
+};
+
+Clipboard.prototype.pasteActions = {
+	replace: function replace(rows) {
+		return this.table.setData(rows);
+	},
+	update: function update(rows) {
+		return this.table.updateOrAddData(rows);
+	},
+	insert: function insert(rows) {
+		return this.table.addData(rows);
+	}
+};
+
+Tabulator.prototype.registerModule("clipboard", Clipboard);

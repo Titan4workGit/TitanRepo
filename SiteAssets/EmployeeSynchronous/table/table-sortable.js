@@ -1,1 +1,693 @@
-var a64_0x3e494a=a64_0x4131;(function(_0x123af5,_0xfb8654){var _0x249ce2=a64_0x4131,_0x54b9d0=_0x123af5();while(!![]){try{var _0x4e21c7=parseInt(_0x249ce2(0x1c0))/0x1+-parseInt(_0x249ce2(0x192))/0x2*(-parseInt(_0x249ce2(0x1c8))/0x3)+-parseInt(_0x249ce2(0x1d8))/0x4+-parseInt(_0x249ce2(0x1a0))/0x5+parseInt(_0x249ce2(0x18d))/0x6+-parseInt(_0x249ce2(0x1d3))/0x7+parseInt(_0x249ce2(0x1e0))/0x8*(parseInt(_0x249ce2(0x205))/0x9);if(_0x4e21c7===_0xfb8654)break;else _0x54b9d0['push'](_0x54b9d0['shift']());}catch(_0x13bb2f){_0x54b9d0['push'](_0x54b9d0['shift']());}}}(a64_0x1db7,0xb67fd),!function(_0x200702,_0x237f0d,_0x554676,_0x14fee3){var _0x5ca7ef=a64_0x4131,_0x3e85d1={'drag':!![],'drop':!![],'exclude':'','nested':!![],'vertical':!![]},_0x5bf6ab={'afterMove':function(_0x2b7aab,_0x4f7880,_0x1cbb9d){},'containerPath':'','containerSelector':'ol,\x20ul','distance':0x0,'delay':0x0,'handle':'','itemPath':'','itemSelector':'li','bodyClass':'dragging','draggedClass':'dragged','isValidTarget':function(_0x37b9a3,_0x316138){return!![];},'onCancel':function(_0x4d28cb,_0xbdd556,_0x258371,_0x34924a){},'onDrag':function(_0x3821b0,_0x429267,_0x2d236d,_0x1e4391){_0x3821b0['css'](_0x429267);},'onDragStart':function(_0xbc6210,_0x593bae,_0x3b2829,_0x5a4cc0){var _0x4d564f=a64_0x4131;_0xbc6210[_0x4d564f(0x1b8)]({'height':_0xbc6210['outerHeight'](),'width':_0xbc6210[_0x4d564f(0x1c1)]()}),_0xbc6210[_0x4d564f(0x1b2)](_0x593bae[_0x4d564f(0x1f3)]['options']['draggedClass']),_0x200702('body')[_0x4d564f(0x1b2)](_0x593bae[_0x4d564f(0x1f3)][_0x4d564f(0x1a6)][_0x4d564f(0x1ea)]);},'onDrop':function(_0x2c54f8,_0x27dc81,_0x981b9f,_0x2fc8c6){var _0x3cfb62=a64_0x4131;_0x2c54f8[_0x3cfb62(0x1c5)](_0x27dc81[_0x3cfb62(0x1f3)][_0x3cfb62(0x1a6)]['draggedClass'])['removeAttr'](_0x3cfb62(0x1cf)),_0x200702(_0x3cfb62(0x1c2))['removeClass'](_0x27dc81[_0x3cfb62(0x1f3)]['options']['bodyClass']);},'onMousedown':function(_0x4f25d3,_0x1c56f4,_0x26d31f){var _0x2e5f5f=a64_0x4131;if(!_0x26d31f['target'][_0x2e5f5f(0x1a5)][_0x2e5f5f(0x1f9)](/^(input|select|textarea)$/i))return _0x26d31f[_0x2e5f5f(0x1e6)](),!![];},'placeholderClass':_0x5ca7ef(0x1fa),'placeholder':'<li\x20class=\x22placeholder\x22></li>','pullPlaceholder':!![],'serialize':function(_0x585e44,_0x5dd9c1,_0x4dc734){var _0x75a3cb=_0x5ca7ef,_0xa88a2e=_0x200702['extend']({},_0x585e44[_0x75a3cb(0x193)]());if(_0x4dc734)return[_0x5dd9c1];else _0x5dd9c1[0x0]&&(_0xa88a2e[_0x75a3cb(0x188)]=_0x5dd9c1);return delete _0xa88a2e[_0x75a3cb(0x206)],delete _0xa88a2e[_0x75a3cb(0x187)],_0xa88a2e;},'tolerance':0x0},_0x458bd6={},_0x1a7266=0x0,_0x22550a={'left':0x0,'top':0x0,'bottom':0x0,'right':0x0},_0x3d327f={'start':'touchstart.sortable\x20mousedown.sortable','drop':_0x5ca7ef(0x1e9),'drag':_0x5ca7ef(0x19c),'scroll':_0x5ca7ef(0x1b9)},_0x1c7931=_0x5ca7ef(0x206);function _0x2fbf65(_0x313e42,_0x51c072){var _0x16f70a=_0x5ca7ef,_0x123635=Math[_0x16f70a(0x1d9)](0x0,_0x313e42[0x0]-_0x51c072[0x0],_0x51c072[0x0]-_0x313e42[0x1]),_0x4e3040=Math[_0x16f70a(0x1d9)](0x0,_0x313e42[0x2]-_0x51c072[0x1],_0x51c072[0x1]-_0x313e42[0x3]);return _0x123635+_0x4e3040;}function _0x15b3b6(_0x42486f,_0x4282e8,_0x2bf4b7,_0x373665){var _0x9ba015=_0x5ca7ef,_0x58183c=_0x42486f[_0x9ba015(0x18b)],_0x2e0d92=_0x373665?_0x9ba015(0x1cb):_0x9ba015(0x1ca);_0x2bf4b7=_0x2bf4b7||0x0;while(_0x58183c--){var _0x4e06dd=_0x42486f[_0x58183c]['el']?_0x42486f[_0x58183c]['el']:_0x200702(_0x42486f[_0x58183c]),_0x5a7843=_0x4e06dd[_0x2e0d92]();_0x5a7843[_0x9ba015(0x1c9)]+=parseInt(_0x4e06dd[_0x9ba015(0x1b8)](_0x9ba015(0x1c6)),0xa),_0x5a7843['top']+=parseInt(_0x4e06dd[_0x9ba015(0x1b8)](_0x9ba015(0x1af)),0xa),_0x4282e8[_0x58183c]=[_0x5a7843[_0x9ba015(0x1c9)]-_0x2bf4b7,_0x5a7843[_0x9ba015(0x1c9)]+_0x4e06dd[_0x9ba015(0x1c1)]()+_0x2bf4b7,_0x5a7843[_0x9ba015(0x203)]-_0x2bf4b7,_0x5a7843['top']+_0x4e06dd['outerHeight']()+_0x2bf4b7];}}function _0x474706(_0x14d7bc,_0x40c7dc){var _0x3104f2=_0x5ca7ef,_0x25bb34=_0x40c7dc[_0x3104f2(0x1cb)]();return{'left':_0x14d7bc[_0x3104f2(0x1c9)]-_0x25bb34[_0x3104f2(0x1c9)],'top':_0x14d7bc[_0x3104f2(0x203)]-_0x25bb34[_0x3104f2(0x203)]};}function _0x4f9fc4(_0x473b44,_0x5e11d5,_0x1418af){var _0x2a2b5c=_0x5ca7ef;_0x5e11d5=[_0x5e11d5[_0x2a2b5c(0x1c9)],_0x5e11d5['top']],_0x1418af=_0x1418af&&[_0x1418af[_0x2a2b5c(0x1c9)],_0x1418af[_0x2a2b5c(0x203)]];var _0x1047b8,_0x49a18c=_0x473b44['length'],_0x39fc4f=[];while(_0x49a18c--){_0x1047b8=_0x473b44[_0x49a18c],_0x39fc4f[_0x49a18c]=[_0x49a18c,_0x2fbf65(_0x1047b8,_0x5e11d5),_0x1418af&&_0x2fbf65(_0x1047b8,_0x1418af)];}return _0x39fc4f=_0x39fc4f[_0x2a2b5c(0x1de)](function(_0x166fcc,_0x4ffbc2){return _0x4ffbc2[0x1]-_0x166fcc[0x1]||_0x4ffbc2[0x2]-_0x166fcc[0x2]||_0x4ffbc2[0x0]-_0x166fcc[0x0];}),_0x39fc4f;}function _0x3f63bb(_0x32cfab){var _0x56c28c=_0x5ca7ef;this[_0x56c28c(0x1a6)]=_0x200702[_0x56c28c(0x1bc)]({},_0x5bf6ab,_0x32cfab),this['containers']=[];if(!this[_0x56c28c(0x1a6)][_0x56c28c(0x1b0)]){this[_0x56c28c(0x189)]=_0x200702[_0x56c28c(0x207)](this[_0x56c28c(0x209)],this),this[_0x56c28c(0x190)]=_0x200702[_0x56c28c(0x207)](this[_0x56c28c(0x1bd)],this),this[_0x56c28c(0x1f1)]=_0x200702[_0x56c28c(0x207)](this[_0x56c28c(0x1b4)],this),this[_0x56c28c(0x1fa)]=_0x200702(this['options'][_0x56c28c(0x1fa)]);if(!_0x32cfab[_0x56c28c(0x1d7)])this[_0x56c28c(0x1a6)][_0x56c28c(0x1d7)]=_0x14fee3;}}_0x3f63bb['get']=function(_0x16f39d){var _0x14d1c5=_0x5ca7ef;if(!_0x458bd6[_0x16f39d['group']]){if(_0x16f39d[_0x14d1c5(0x1f3)]===_0x14fee3)_0x16f39d[_0x14d1c5(0x1f3)]=_0x1a7266++;_0x458bd6[_0x16f39d[_0x14d1c5(0x1f3)]]=new _0x3f63bb(_0x16f39d);}return _0x458bd6[_0x16f39d[_0x14d1c5(0x1f3)]];},_0x3f63bb[_0x5ca7ef(0x183)]={'dragInit':function(_0x18ca9e,_0x393474){var _0x197717=_0x5ca7ef;this[_0x197717(0x18c)]=_0x200702(_0x393474['el'][0x0][_0x197717(0x1cd)]);var _0x1a3758=_0x200702(_0x18ca9e[_0x197717(0x1a8)])[_0x197717(0x1a2)](this[_0x197717(0x1a6)][_0x197717(0x196)]);if(_0x1a3758[_0x197717(0x18b)]){this[_0x197717(0x1be)]=_0x1a3758,this[_0x197717(0x1da)]=_0x393474;if(this[_0x197717(0x1be)]['is'](this[_0x197717(0x1a6)][_0x197717(0x1ec)])||!this[_0x197717(0x1a6)]['onMousedown'](this[_0x197717(0x1be)],_0x5bf6ab[_0x197717(0x1e2)],_0x18ca9e))return;this[_0x197717(0x1ba)](_0x18ca9e),this[_0x197717(0x1b6)]('on'),this[_0x197717(0x1f5)](),this[_0x197717(0x1a1)]=!![];}},'drag':function(_0x1187dd){var _0xf91ac2=_0x5ca7ef;if(!this[_0xf91ac2(0x1df)]){if(!this[_0xf91ac2(0x1e1)](_0x1187dd)||!this['delayMet'])return;this[_0xf91ac2(0x1a6)]['onDragStart'](this[_0xf91ac2(0x1be)],this[_0xf91ac2(0x1da)],_0x5bf6ab[_0xf91ac2(0x184)],_0x1187dd),this[_0xf91ac2(0x1be)][_0xf91ac2(0x1fc)](this[_0xf91ac2(0x1fa)]),this[_0xf91ac2(0x1df)]=!![];}this[_0xf91ac2(0x1ba)](_0x1187dd),this[_0xf91ac2(0x1a6)]['onDrag'](this[_0xf91ac2(0x1be)],_0x474706(this[_0xf91ac2(0x1e4)],this[_0xf91ac2(0x1be)][_0xf91ac2(0x1b3)]()),_0x5bf6ab['onDrag'],_0x1187dd);var _0x47e946=this[_0xf91ac2(0x199)](_0x1187dd),_0x359756=this[_0xf91ac2(0x19f)],_0x2f7657=this[_0xf91ac2(0x1a6)]['tolerance'];if(!_0x359756||_0x359756[_0xf91ac2(0x203)]-_0x2f7657>_0x47e946['top']||_0x359756[_0xf91ac2(0x1bb)]+_0x2f7657<_0x47e946[_0xf91ac2(0x203)]||_0x359756[_0xf91ac2(0x1c9)]-_0x2f7657>_0x47e946['left']||_0x359756[_0xf91ac2(0x19b)]+_0x2f7657<_0x47e946['left'])!this[_0xf91ac2(0x198)]()&&(this['placeholder'][_0xf91ac2(0x1f8)](),this[_0xf91ac2(0x19d)]=_0x14fee3);},'drop':function(_0xd5851){var _0x22aedf=_0x5ca7ef;this[_0x22aedf(0x1b6)]('off'),this[_0x22aedf(0x1a1)]=![],this['dragging']&&(this[_0x22aedf(0x1fa)][_0x22aedf(0x1a2)]('html')[0x0]?this[_0x22aedf(0x1fa)]['before'](this[_0x22aedf(0x1be)])[_0x22aedf(0x1f8)]():this[_0x22aedf(0x1a6)][_0x22aedf(0x1ac)](this[_0x22aedf(0x1be)],this[_0x22aedf(0x1da)],_0x5bf6ab['onCancel'],_0xd5851),this['options']['onDrop'](this[_0x22aedf(0x1be)],this[_0x22aedf(0x1bf)](this[_0x22aedf(0x1be)]),_0x5bf6ab[_0x22aedf(0x195)],_0xd5851),this[_0x22aedf(0x1e7)](),this[_0x22aedf(0x1a9)](),this[_0x22aedf(0x19d)]=this[_0x22aedf(0x19f)]=_0x14fee3,this['dragging']=![]);},'searchValidTarget':function(_0xf0d38b,_0x1986dd){var _0x4ebea5=_0x5ca7ef;!_0xf0d38b&&(_0xf0d38b=this[_0x4ebea5(0x1aa)]||this[_0x4ebea5(0x1e4)],_0x1986dd=this[_0x4ebea5(0x1a4)]||this[_0x4ebea5(0x1a7)]);var _0x304a2c=_0x4f9fc4(this[_0x4ebea5(0x18a)](),_0xf0d38b,_0x1986dd),_0x7c0535=_0x304a2c[_0x4ebea5(0x18b)];while(_0x7c0535--){var _0x13386c=_0x304a2c[_0x7c0535][0x0],_0x16a097=_0x304a2c[_0x7c0535][0x1];if(!_0x16a097||this[_0x4ebea5(0x1a6)]['pullPlaceholder']){var _0x440123=this[_0x4ebea5(0x1ee)][_0x13386c];if(!_0x440123['disabled']){if(!this['$getOffsetParent']()){var _0x3bd22e=_0x440123['getItemOffsetParent']();_0xf0d38b=_0x474706(_0xf0d38b,_0x3bd22e),_0x1986dd=_0x474706(_0x1986dd,_0x3bd22e);}if(_0x440123[_0x4ebea5(0x198)](_0xf0d38b,_0x1986dd))return!![];}}}if(this[_0x4ebea5(0x19f)])this['sameResultBox']=_0x14fee3;},'movePlaceholder':function(_0xedb47e,_0x571136,_0x1e4d1f,_0x12119e){var _0x46a497=_0x5ca7ef,_0x436a33=this[_0x46a497(0x19d)];if(!_0x12119e&&_0x436a33&&_0x436a33[0x0]===_0x571136[0x0])return;_0x571136[_0x1e4d1f](this['placeholder']),this[_0x46a497(0x19d)]=_0x571136,this[_0x46a497(0x19f)]=_0x12119e,this[_0x46a497(0x1a6)][_0x46a497(0x1d4)](this[_0x46a497(0x1fa)],_0xedb47e,_0x571136);},'getContainerDimensions':function(){var _0x38d61a=_0x5ca7ef;if(!this[_0x38d61a(0x1ce)])_0x15b3b6(this[_0x38d61a(0x1ee)],this[_0x38d61a(0x1ce)]=[],this[_0x38d61a(0x1a6)][_0x38d61a(0x180)],!this[_0x38d61a(0x1f0)]());return this[_0x38d61a(0x1ce)];},'getContainer':function(_0x2693b6){var _0x222629=_0x5ca7ef;return _0x2693b6[_0x222629(0x1a2)](this[_0x222629(0x1a6)][_0x222629(0x202)])[_0x222629(0x193)](_0x554676);},'$getOffsetParent':function(){var _0xe8fb6f=_0x5ca7ef;if(this['offsetParent']===_0x14fee3){var _0x1beacc=this['containers']['length']-0x1,_0x201342=this[_0xe8fb6f(0x1ee)][_0x1beacc][_0xe8fb6f(0x186)]();if(!this[_0xe8fb6f(0x1a6)]['rootGroup'])while(_0x1beacc--){if(_0x201342[0x0]!=this[_0xe8fb6f(0x1ee)][_0x1beacc]['getItemOffsetParent']()[0x0]){_0x201342=![];break;}}this[_0xe8fb6f(0x1b3)]=_0x201342;}return this['offsetParent'];},'setPointer':function(_0x2388fd){var _0x9483f7=_0x5ca7ef,_0x4d6b1d=this['getPointer'](_0x2388fd);if(this[_0x9483f7(0x1f0)]()){var _0x35c8ee=_0x474706(_0x4d6b1d,this[_0x9483f7(0x1f0)]());this[_0x9483f7(0x1a4)]=this[_0x9483f7(0x1aa)],this[_0x9483f7(0x1aa)]=_0x35c8ee;}this[_0x9483f7(0x1a7)]=this[_0x9483f7(0x1e4)],this['pointer']=_0x4d6b1d;},'distanceMet':function(_0x918f7f){var _0xcb53ed=_0x5ca7ef,_0x20dbf0=this[_0xcb53ed(0x199)](_0x918f7f);return Math[_0xcb53ed(0x1d9)](Math[_0xcb53ed(0x1ad)](this[_0xcb53ed(0x1e4)][_0xcb53ed(0x1c9)]-_0x20dbf0['left']),Math[_0xcb53ed(0x1ad)](this[_0xcb53ed(0x1e4)][_0xcb53ed(0x203)]-_0x20dbf0[_0xcb53ed(0x203)]))>=this[_0xcb53ed(0x1a6)][_0xcb53ed(0x1a3)];},'getPointer':function(_0xc1e26b){var _0x570300=_0x5ca7ef,_0x250c7e=_0xc1e26b[_0x570300(0x204)]||_0xc1e26b[_0x570300(0x204)][_0x570300(0x20a)]&&_0xc1e26b['originalEvent'][_0x570300(0x20a)][0x0];return{'left':_0xc1e26b['pageX']||_0x250c7e[_0x570300(0x1e3)],'top':_0xc1e26b[_0x570300(0x185)]||_0x250c7e['pageY']};},'setupDelayTimer':function(){var _0x177100=_0x5ca7ef,_0x20c376=this;this[_0x177100(0x1fb)]=!this[_0x177100(0x1a6)][_0x177100(0x1f7)],!this[_0x177100(0x1fb)]&&(clearTimeout(this['_mouseDelayTimer']),this[_0x177100(0x1d1)]=setTimeout(function(){var _0x4ac675=_0x177100;_0x20c376[_0x4ac675(0x1fb)]=!![];},this[_0x177100(0x1a6)]['delay']));},'scroll':function(_0x32c0bd){var _0x366e74=_0x5ca7ef;this['clearDimensions'](),this[_0x366e74(0x1a9)]();},'toggleListeners':function(_0x2434b8){var _0x474ccf=_0x5ca7ef,_0x564e8f=this,_0x12e55=[_0x474ccf(0x1bd),_0x474ccf(0x1b4),_0x474ccf(0x209)];_0x200702[_0x474ccf(0x1dd)](_0x12e55,function(_0x30fc93,_0xbe8380){var _0x724c24=_0x474ccf;_0x564e8f[_0x724c24(0x18c)][_0x2434b8](_0x3d327f[_0xbe8380],_0x564e8f[_0xbe8380+_0x724c24(0x1b5)]);});},'clearOffsetParent':function(){var _0x1f0a03=_0x5ca7ef;this[_0x1f0a03(0x1b3)]=_0x14fee3;},'clearDimensions':function(){var _0x51571d=_0x5ca7ef;this[_0x51571d(0x1b1)](function(_0x5c0779){_0x5c0779['_clearDimensions']();});},'traverse':function(_0x55815e){var _0xeff2=_0x5ca7ef;_0x55815e(this);var _0x301075=this[_0xeff2(0x1ee)][_0xeff2(0x18b)];while(_0x301075--){this['containers'][_0x301075][_0xeff2(0x1b1)](_0x55815e);}},'_clearDimensions':function(){this['containerDimensions']=_0x14fee3;},'_destroy':function(){var _0x4a4b94=_0x5ca7ef;_0x458bd6[this[_0x4a4b94(0x1a6)][_0x4a4b94(0x1f3)]]=_0x14fee3;}};function _0x927a2(_0x4f1d6b,_0x5f4dff){var _0x344376=_0x5ca7ef;this['el']=_0x4f1d6b,this['options']=_0x200702[_0x344376(0x1bc)]({},_0x3e85d1,_0x5f4dff),this[_0x344376(0x1f3)]=_0x3f63bb[_0x344376(0x1cc)](this[_0x344376(0x1a6)]),this['rootGroup']=this[_0x344376(0x1a6)]['rootGroup']||this[_0x344376(0x1f3)],this[_0x344376(0x1ed)]=this[_0x344376(0x1b0)][_0x344376(0x1a6)][_0x344376(0x1ed)]||this['rootGroup']['options'][_0x344376(0x196)];var _0x1b93a3=this[_0x344376(0x1b0)][_0x344376(0x1a6)][_0x344376(0x19a)];this['target']=_0x1b93a3?this['el'][_0x344376(0x1c4)](_0x1b93a3):this['el'],this[_0x344376(0x1a8)]['on'](_0x3d327f[_0x344376(0x1e8)],this[_0x344376(0x1ed)],_0x200702[_0x344376(0x207)](this[_0x344376(0x1c7)],this));if(this['options']['drop'])this[_0x344376(0x1f3)][_0x344376(0x1ee)][_0x344376(0x1ab)](this);}_0x927a2[_0x5ca7ef(0x183)]={'dragInit':function(_0x530f81){var _0x3361b9=_0x5ca7ef,_0x4808ee=this[_0x3361b9(0x1b0)];!this[_0x3361b9(0x1d5)]&&!_0x4808ee[_0x3361b9(0x1a1)]&&this[_0x3361b9(0x1a6)][_0x3361b9(0x1bd)]&&this[_0x3361b9(0x201)](_0x530f81)&&_0x4808ee['dragInit'](_0x530f81,this);},'isValidDrag':function(_0x198695){var _0x3f0912=_0x5ca7ef;return _0x198695['which']==0x1||_0x198695[_0x3f0912(0x1fd)]==_0x3f0912(0x1fe)&&_0x198695[_0x3f0912(0x204)][_0x3f0912(0x20a)][_0x3f0912(0x18b)]==0x1;},'searchValidTarget':function(_0x248de8,_0x49220c){var _0x4132ae=_0x5ca7ef,_0x52fc37=_0x4f9fc4(this[_0x4132ae(0x1ff)](),_0x248de8,_0x49220c),_0x37dea1=_0x52fc37[_0x4132ae(0x18b)],_0x3cc6db=this[_0x4132ae(0x1b0)],_0x41b94a=!_0x3cc6db[_0x4132ae(0x1a6)][_0x4132ae(0x1d7)]||_0x3cc6db[_0x4132ae(0x1a6)][_0x4132ae(0x1d7)](_0x3cc6db[_0x4132ae(0x1be)],this);if(!_0x37dea1&&_0x41b94a)return _0x3cc6db['movePlaceholder'](this,this[_0x4132ae(0x1a8)],'append'),!![];else while(_0x37dea1--){var _0x33fa4e=_0x52fc37[_0x37dea1][0x0],_0x2fcbd5=_0x52fc37[_0x37dea1][0x1];if(!_0x2fcbd5&&this[_0x4132ae(0x182)](_0x33fa4e)){var _0x4f06eb=this[_0x4132ae(0x208)](_0x33fa4e)[_0x4132ae(0x198)](_0x248de8,_0x49220c);if(_0x4f06eb)return!![];}else{if(_0x41b94a)return this[_0x4132ae(0x1db)](_0x33fa4e,_0x248de8),!![];}}},'movePlaceholder':function(_0x13764f,_0x4eab68){var _0x1f97a0=_0x5ca7ef,_0x58069b=_0x200702(this[_0x1f97a0(0x18f)][_0x13764f]),_0x142da9=this['itemDimensions'][_0x13764f],_0x39fcdc=_0x1f97a0(0x19e),_0x207034=_0x58069b['outerWidth'](),_0x27d62f=_0x58069b['outerHeight'](),_0x36e7ed=_0x58069b['offset'](),_0x183d35={'left':_0x36e7ed['left'],'right':_0x36e7ed['left']+_0x207034,'top':_0x36e7ed['top'],'bottom':_0x36e7ed[_0x1f97a0(0x203)]+_0x27d62f};if(this['options'][_0x1f97a0(0x1d0)]){var _0x8c1ae1=(_0x142da9[0x2]+_0x142da9[0x3])/0x2,_0xef0c3a=_0x4eab68['top']<=_0x8c1ae1;if(_0xef0c3a)_0x39fcdc=_0x1f97a0(0x1fc),_0x183d35[_0x1f97a0(0x1bb)]-=_0x27d62f/0x2;else _0x183d35['top']+=_0x27d62f/0x2;}else{var _0x1208df=(_0x142da9[0x0]+_0x142da9[0x1])/0x2,_0x3b0af8=_0x4eab68[_0x1f97a0(0x1c9)]<=_0x1208df;if(_0x3b0af8)_0x39fcdc=_0x1f97a0(0x1fc),_0x183d35[_0x1f97a0(0x19b)]-=_0x207034/0x2;else _0x183d35[_0x1f97a0(0x1c9)]+=_0x207034/0x2;}if(this[_0x1f97a0(0x182)](_0x13764f))_0x183d35=_0x22550a;this['rootGroup'][_0x1f97a0(0x1db)](this,_0x58069b,_0x39fcdc,_0x183d35);},'getItemDimensions':function(){var _0x1c7dec=_0x5ca7ef;return!this[_0x1c7dec(0x1dc)]&&(this[_0x1c7dec(0x18f)]=this[_0x1c7dec(0x1d2)](this['el'],_0x1c7dec(0x1be))[_0x1c7dec(0x18e)](':not(.'+this[_0x1c7dec(0x1f3)][_0x1c7dec(0x1a6)][_0x1c7dec(0x1f4)]+_0x1c7dec(0x1ef)+this[_0x1c7dec(0x1f3)][_0x1c7dec(0x1a6)][_0x1c7dec(0x1ae)]+')')[_0x1c7dec(0x1cc)](),_0x15b3b6(this[_0x1c7dec(0x18f)],this[_0x1c7dec(0x1dc)]=[],this[_0x1c7dec(0x1a6)]['tolerance'])),this[_0x1c7dec(0x1dc)];},'getItemOffsetParent':function(){var _0x53bbba=_0x5ca7ef,_0x253abe,_0x4cc798=this['el'];if(_0x4cc798[_0x53bbba(0x1b8)]('position')===_0x53bbba(0x197)||_0x4cc798[_0x53bbba(0x1b8)]('position')===_0x53bbba(0x1d6)||_0x4cc798[_0x53bbba(0x1b8)](_0x53bbba(0x1ca))===_0x53bbba(0x1b7))_0x253abe=_0x4cc798;else _0x253abe=_0x4cc798[_0x53bbba(0x1b3)]();return _0x253abe;},'hasChildGroup':function(_0x5088f5){var _0x4c8c57=_0x5ca7ef;return this[_0x4c8c57(0x1a6)]['nested']&&this['getContainerGroup'](_0x5088f5);},'getContainerGroup':function(_0x2de0b9){var _0x842b4=_0x5ca7ef,_0xdad5d3=_0x200702[_0x842b4(0x193)](this[_0x842b4(0x18f)][_0x2de0b9],_0x1c7931);if(_0xdad5d3===_0x14fee3){var _0x923177=this[_0x842b4(0x1d2)](this[_0x842b4(0x18f)][_0x2de0b9],_0x842b4(0x181));_0xdad5d3=![];if(_0x923177[0x0]){var _0x512d10=_0x200702[_0x842b4(0x1bc)]({},this['options'],{'rootGroup':this[_0x842b4(0x1b0)],'group':_0x1a7266++});_0xdad5d3=_0x923177[_0x554676](_0x512d10)[_0x842b4(0x193)](_0x554676)['group'];}_0x200702[_0x842b4(0x193)](this[_0x842b4(0x18f)][_0x2de0b9],_0x1c7931,_0xdad5d3);}return _0xdad5d3;},'$getChildren':function(_0x5b6ba2,_0x468a7e){var _0x520247=_0x5ca7ef,_0x4ca1cf=this['rootGroup'][_0x520247(0x1a6)],_0x3ceee2=_0x4ca1cf[_0x468a7e+_0x520247(0x194)],_0x1724a=_0x4ca1cf[_0x468a7e+_0x520247(0x1eb)];_0x5b6ba2=_0x200702(_0x5b6ba2);if(_0x3ceee2)_0x5b6ba2=_0x5b6ba2[_0x520247(0x1c4)](_0x3ceee2);return _0x5b6ba2['children'](_0x1724a);},'_serialize':function(_0xa1472a,_0x170fe3){var _0x52fb2b=_0x5ca7ef,_0x46aec9=this,_0x115b65=_0x170fe3?_0x52fb2b(0x1be):_0x52fb2b(0x181),_0x325d0d=this[_0x52fb2b(0x1d2)](_0xa1472a,_0x115b65)[_0x52fb2b(0x1c3)](this[_0x52fb2b(0x1a6)][_0x52fb2b(0x1ec)])['map'](function(){var _0x1f8836=_0x52fb2b;return _0x46aec9[_0x1f8836(0x1f6)](_0x200702(this),!_0x170fe3);})[_0x52fb2b(0x1cc)]();return this[_0x52fb2b(0x1b0)]['options']['serialize'](_0xa1472a,_0x325d0d,_0x170fe3);},'traverse':function(_0xdf2d78){var _0x2047ce=_0x5ca7ef;_0x200702[_0x2047ce(0x1dd)](this['items']||[],function(_0x4751a2){var _0x1ffa83=_0x200702['data'](this,_0x1c7931);if(_0x1ffa83)_0x1ffa83['traverse'](_0xdf2d78);}),_0xdf2d78(this);},'_clearDimensions':function(){var _0x872f0d=_0x5ca7ef;this[_0x872f0d(0x1dc)]=_0x14fee3;},'_destroy':function(){var _0x159b44=_0x5ca7ef,_0x5e1680=this;this[_0x159b44(0x1a8)]['off'](_0x3d327f[_0x159b44(0x1e8)],this[_0x159b44(0x1ed)]),this['el'][_0x159b44(0x1e5)](_0x554676);if(this['options'][_0x159b44(0x1b4)])this[_0x159b44(0x1f3)][_0x159b44(0x1ee)]=_0x200702[_0x159b44(0x1f2)](this[_0x159b44(0x1f3)][_0x159b44(0x1ee)],function(_0x3a131a){return _0x3a131a!=_0x5e1680;});_0x200702['each'](this[_0x159b44(0x18f)]||[],function(){var _0x11703a=_0x159b44;_0x200702[_0x11703a(0x1e5)](this,_0x1c7931);});}};var _0x3c59ce={'enable':function(){this['traverse'](function(_0xe68656){_0xe68656['disabled']=![];});},'disable':function(){var _0x40ac40=_0x5ca7ef;this[_0x40ac40(0x1b1)](function(_0x3b6a7b){_0x3b6a7b['disabled']=!![];});},'serialize':function(){var _0x1d9877=_0x5ca7ef;return this[_0x1d9877(0x1f6)](this['el'],!![]);},'refresh':function(){var _0x218665=_0x5ca7ef;this[_0x218665(0x1b1)](function(_0x22af35){_0x22af35['_clearDimensions']();});},'destroy':function(){var _0x24924f=_0x5ca7ef;this[_0x24924f(0x1b1)](function(_0x1ed104){var _0x4dd61c=_0x24924f;_0x1ed104[_0x4dd61c(0x17d)]();});}};_0x200702[_0x5ca7ef(0x1bc)](_0x927a2['prototype'],_0x3c59ce),_0x200702['fn'][_0x554676]=function(_0x122316){var _0x4e2118=_0x5ca7ef,_0x338b23=Array[_0x4e2118(0x183)][_0x4e2118(0x191)][_0x4e2118(0x17e)](arguments,0x1);return this['map'](function(){var _0x2abf0f=_0x4e2118,_0x49874e=_0x200702(this),_0x520e3c=_0x49874e[_0x2abf0f(0x193)](_0x554676);if(_0x520e3c&&_0x3c59ce[_0x122316])return _0x3c59ce[_0x122316][_0x2abf0f(0x200)](_0x520e3c,_0x338b23)||this;else{if(!_0x520e3c&&(_0x122316===_0x14fee3||typeof _0x122316===_0x2abf0f(0x17f)))_0x49874e[_0x2abf0f(0x193)](_0x554676,new _0x927a2(_0x49874e,_0x122316));}return this;});};}(jQuery,window,a64_0x3e494a(0x187)));function a64_0x4131(_0x35b597,_0xe96191){var _0x1db7c9=a64_0x1db7();return a64_0x4131=function(_0x4131e4,_0x281152){_0x4131e4=_0x4131e4-0x17d;var _0x167520=_0x1db7c9[_0x4131e4];return _0x167520;},a64_0x4131(_0x35b597,_0xe96191);}function a64_0x1db7(){var _0x38b5f2=['bottom','extend','drag','item','getContainer','1020515OqoYgD','outerWidth','body','not','find','removeClass','margin-left','dragInit','27gEsMKD','left','position','offset','get','ownerDocument','containerDimensions','style','vertical','_mouseDelayTimer','$getChildren','6189204XeRzge','afterMove','disabled','absolute','isValidTarget','2178812InJHbF','max','itemContainer','movePlaceholder','itemDimensions','each','sort','dragging','648gbknqS','distanceMet','onMousedown','pageX','pointer','removeData','preventDefault','clearDimensions','start','touchend.sortable\x20touchcancel.sortable\x20mouseup.sortable','bodyClass','Selector','exclude','handle','containers',',\x20.','$getOffsetParent','dropProxy','grep','group','placeholderClass','setupDelayTimer','_serialize','delay','detach','match','placeholder','delayMet','before','type','touchstart','getItemDimensions','apply','isValidDrag','containerSelector','top','originalEvent','28935xTVmXh','subContainers','proxy','getContainerGroup','scroll','touches','_destroy','call','object','tolerance','container','hasChildGroup','prototype','onDragStart','pageY','getItemOffsetParent','sortable','children','scrollProxy','getContainerDimensions','length','$document','4616166WnGxwu','filter','items','dragProxy','slice','107728FyCqEI','data','Path','onDrop','itemSelector','relative','searchValidTarget','getPointer','itemPath','right','touchmove.sortable\x20mousemove.sortable','lastAppendedItem','after','sameResultBox','1793375gLMPPL','dragInitDone','closest','distance','lastRelativePointer','nodeName','options','lastPointer','target','clearOffsetParent','relativePointer','push','onCancel','abs','draggedClass','margin-top','rootGroup','traverse','addClass','offsetParent','drop','Proxy','toggleListeners','fixed','css','scroll.sortable','setPointer'];a64_0x1db7=function(){return _0x38b5f2;};return a64_0x1db7();}
+/* ===================================================
+ *  jquery-sortable.js v0.9.13
+ *  http://johnny.github.com/jquery-sortable/
+ * ===================================================
+ *  Copyright (c) 2012 Jonas von Andrian
+ *  All rights reserved.
+ *
+ *  Redistribution and use in source and binary forms, with or without
+ *  modification, are permitted provided that the following conditions are met:
+ *  * Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *  * The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ *  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ *  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ *  DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+ *  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ *  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ *  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ *  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * ========================================================== */
+
+
+!function ( $, window, pluginName, undefined){
+  var containerDefaults = {
+    // If true, items can be dragged from this container
+    drag: true,
+    // If true, items can be droped onto this container
+    drop: true,
+    // Exclude items from being draggable, if the
+    // selector matches the item
+    exclude: "",
+    // If true, search for nested containers within an item.If you nest containers,
+    // either the original selector with which you call the plugin must only match the top containers,
+    // or you need to specify a group (see the bootstrap nav example)
+    nested: true,
+    // If true, the items are assumed to be arranged vertically
+    vertical: true
+  }, // end container defaults
+  groupDefaults = {
+    // This is executed after the placeholder has been moved.
+    // $closestItemOrContainer contains the closest item, the placeholder
+    // has been put at or the closest empty Container, the placeholder has
+    // been appended to.
+    afterMove: function ($placeholder, container, $closestItemOrContainer) {
+    },
+    // The exact css path between the container and its items, e.g. "> tbody"
+    containerPath: "",
+    // The css selector of the containers
+    containerSelector: "ol, ul",
+    // Distance the mouse has to travel to start dragging
+    distance: 0,
+    // Time in milliseconds after mousedown until dragging should start.
+    // This option can be used to prevent unwanted drags when clicking on an element.
+    delay: 0,
+    // The css selector of the drag handle
+    handle: "",
+    // The exact css path between the item and its subcontainers.
+    // It should only match the immediate items of a container.
+    // No item of a subcontainer should be matched. E.g. for ol>div>li the itemPath is "> div"
+    itemPath: "",
+    // The css selector of the items
+    itemSelector: "li",
+    // The class given to "body" while an item is being dragged
+    bodyClass: "dragging",
+    // The class giving to an item while being dragged
+    draggedClass: "dragged",
+    // Check if the dragged item may be inside the container.
+    // Use with care, since the search for a valid container entails a depth first search
+    // and may be quite expensive.
+    isValidTarget: function ($item, container) {
+      return true
+    },
+    // Executed before onDrop if placeholder is detached.
+    // This happens if pullPlaceholder is set to false and the drop occurs outside a container.
+    onCancel: function ($item, container, _super, event) {
+    },
+    // Executed at the beginning of a mouse move event.
+    // The Placeholder has not been moved yet.
+    onDrag: function ($item, position, _super, event) {
+      $item.css(position)
+    },
+    // Called after the drag has been started,
+    // that is the mouse button is being held down and
+    // the mouse is moving.
+    // The container is the closest initialized container.
+    // Therefore it might not be the container, that actually contains the item.
+    onDragStart: function ($item, container, _super, event) {
+      $item.css({
+        height: $item.outerHeight(),
+        width: $item.outerWidth()
+      })
+      $item.addClass(container.group.options.draggedClass)
+      $("body").addClass(container.group.options.bodyClass)
+    },
+    // Called when the mouse button is being released
+    onDrop: function ($item, container, _super, event) {
+      $item.removeClass(container.group.options.draggedClass).removeAttr("style")
+      $("body").removeClass(container.group.options.bodyClass)
+    },
+    // Called on mousedown. If falsy value is returned, the dragging will not start.
+    // Ignore if element clicked is input, select or textarea
+    onMousedown: function ($item, _super, event) {
+      if (!event.target.nodeName.match(/^(input|select|textarea)$/i)) {
+        event.preventDefault()
+        return true
+      }
+    },
+    // The class of the placeholder (must match placeholder option markup)
+    placeholderClass: "placeholder",
+    // Template for the placeholder. Can be any valid jQuery input
+    // e.g. a string, a DOM element.
+    // The placeholder must have the class "placeholder"
+    placeholder: '<li class="placeholder"></li>',
+    // If true, the position of the placeholder is calculated on every mousemove.
+    // If false, it is only calculated when the mouse is above a container.
+    pullPlaceholder: true,
+    // Specifies serialization of the container group.
+    // The pair $parent/$children is either container/items or item/subcontainers.
+    serialize: function ($parent, $children, parentIsContainer) {
+      var result = $.extend({}, $parent.data())
+
+      if(parentIsContainer)
+        return [$children]
+      else if ($children[0]){
+        result.children = $children
+      }
+
+      delete result.subContainers
+      delete result.sortable
+
+      return result
+    },
+    // Set tolerance while dragging. Positive values decrease sensitivity,
+    // negative values increase it.
+    tolerance: 0
+  }, // end group defaults
+  containerGroups = {},
+  groupCounter = 0,
+  emptyBox = {
+    left: 0,
+    top: 0,
+    bottom: 0,
+    right:0
+  },
+  eventNames = {
+    start: "touchstart.sortable mousedown.sortable",
+    drop: "touchend.sortable touchcancel.sortable mouseup.sortable",
+    drag: "touchmove.sortable mousemove.sortable",
+    scroll: "scroll.sortable"
+  },
+  subContainerKey = "subContainers"
+
+  /*
+   * a is Array [left, right, top, bottom]
+   * b is array [left, top]
+   */
+  function d(a,b) {
+    var x = Math.max(0, a[0] - b[0], b[0] - a[1]),
+    y = Math.max(0, a[2] - b[1], b[1] - a[3])
+    return x+y;
+  }
+
+  function setDimensions(array, dimensions, tolerance, useOffset) {
+    var i = array.length,
+    offsetMethod = useOffset ? "offset" : "position"
+    tolerance = tolerance || 0
+
+    while(i--){
+      var el = array[i].el ? array[i].el : $(array[i]),
+      // use fitting method
+      pos = el[offsetMethod]()
+      pos.left += parseInt(el.css('margin-left'), 10)
+      pos.top += parseInt(el.css('margin-top'),10)
+      dimensions[i] = [
+        pos.left - tolerance,
+        pos.left + el.outerWidth() + tolerance,
+        pos.top - tolerance,
+        pos.top + el.outerHeight() + tolerance
+      ]
+    }
+  }
+
+  function getRelativePosition(pointer, element) {
+    var offset = element.offset()
+    return {
+      left: pointer.left - offset.left,
+      top: pointer.top - offset.top
+    }
+  }
+
+  function sortByDistanceDesc(dimensions, pointer, lastPointer) {
+    pointer = [pointer.left, pointer.top]
+    lastPointer = lastPointer && [lastPointer.left, lastPointer.top]
+
+    var dim,
+    i = dimensions.length,
+    distances = []
+
+    while(i--){
+      dim = dimensions[i]
+      distances[i] = [i,d(dim,pointer), lastPointer && d(dim, lastPointer)]
+    }
+    distances = distances.sort(function  (a,b) {
+      return b[1] - a[1] || b[2] - a[2] || b[0] - a[0]
+    })
+
+    // last entry is the closest
+    return distances
+  }
+
+  function ContainerGroup(options) {
+    this.options = $.extend({}, groupDefaults, options)
+    this.containers = []
+
+    if(!this.options.rootGroup){
+      this.scrollProxy = $.proxy(this.scroll, this)
+      this.dragProxy = $.proxy(this.drag, this)
+      this.dropProxy = $.proxy(this.drop, this)
+      this.placeholder = $(this.options.placeholder)
+
+      if(!options.isValidTarget)
+        this.options.isValidTarget = undefined
+    }
+  }
+
+  ContainerGroup.get = function  (options) {
+    if(!containerGroups[options.group]) {
+      if(options.group === undefined)
+        options.group = groupCounter ++
+
+      containerGroups[options.group] = new ContainerGroup(options)
+    }
+
+    return containerGroups[options.group]
+  }
+
+  ContainerGroup.prototype = {
+    dragInit: function  (e, itemContainer) {
+      this.$document = $(itemContainer.el[0].ownerDocument)
+
+      // get item to drag
+      var closestItem = $(e.target).closest(this.options.itemSelector);
+      // using the length of this item, prevents the plugin from being started if there is no handle being clicked on.
+      // this may also be helpful in instantiating multidrag.
+      if (closestItem.length) {
+        this.item = closestItem;
+        this.itemContainer = itemContainer;
+        if (this.item.is(this.options.exclude) || !this.options.onMousedown(this.item, groupDefaults.onMousedown, e)) {
+            return;
+        }
+        this.setPointer(e);
+        this.toggleListeners('on');
+        this.setupDelayTimer();
+        this.dragInitDone = true;
+      }
+    },
+    drag: function  (e) {
+      if(!this.dragging){
+        if(!this.distanceMet(e) || !this.delayMet)
+          return
+
+        this.options.onDragStart(this.item, this.itemContainer, groupDefaults.onDragStart, e)
+        this.item.before(this.placeholder)
+        this.dragging = true
+      }
+
+      this.setPointer(e)
+      // place item under the cursor
+      this.options.onDrag(this.item,
+                          getRelativePosition(this.pointer, this.item.offsetParent()),
+                          groupDefaults.onDrag,
+                          e)
+
+      var p = this.getPointer(e),
+      box = this.sameResultBox,
+      t = this.options.tolerance
+
+      if(!box || box.top - t > p.top || box.bottom + t < p.top || box.left - t > p.left || box.right + t < p.left)
+        if(!this.searchValidTarget()){
+          this.placeholder.detach()
+          this.lastAppendedItem = undefined
+        }
+    },
+    drop: function  (e) {
+      this.toggleListeners('off')
+
+      this.dragInitDone = false
+
+      if(this.dragging){
+        // processing Drop, check if placeholder is detached
+        if(this.placeholder.closest("html")[0]){
+          this.placeholder.before(this.item).detach()
+        } else {
+          this.options.onCancel(this.item, this.itemContainer, groupDefaults.onCancel, e)
+        }
+        this.options.onDrop(this.item, this.getContainer(this.item), groupDefaults.onDrop, e)
+
+        // cleanup
+        this.clearDimensions()
+        this.clearOffsetParent()
+        this.lastAppendedItem = this.sameResultBox = undefined
+        this.dragging = false
+      }
+    },
+    searchValidTarget: function  (pointer, lastPointer) {
+      if(!pointer){
+        pointer = this.relativePointer || this.pointer
+        lastPointer = this.lastRelativePointer || this.lastPointer
+      }
+
+      var distances = sortByDistanceDesc(this.getContainerDimensions(),
+                                         pointer,
+                                         lastPointer),
+      i = distances.length
+
+      while(i--){
+        var index = distances[i][0],
+        distance = distances[i][1]
+
+        if(!distance || this.options.pullPlaceholder){
+          var container = this.containers[index]
+          if(!container.disabled){
+            if(!this.$getOffsetParent()){
+              var offsetParent = container.getItemOffsetParent()
+              pointer = getRelativePosition(pointer, offsetParent)
+              lastPointer = getRelativePosition(lastPointer, offsetParent)
+            }
+            if(container.searchValidTarget(pointer, lastPointer))
+              return true
+          }
+        }
+      }
+      if(this.sameResultBox)
+        this.sameResultBox = undefined
+    },
+    movePlaceholder: function  (container, item, method, sameResultBox) {
+      var lastAppendedItem = this.lastAppendedItem
+      if(!sameResultBox && lastAppendedItem && lastAppendedItem[0] === item[0])
+        return;
+
+      item[method](this.placeholder)
+      this.lastAppendedItem = item
+      this.sameResultBox = sameResultBox
+      this.options.afterMove(this.placeholder, container, item)
+    },
+    getContainerDimensions: function  () {
+      if(!this.containerDimensions)
+        setDimensions(this.containers, this.containerDimensions = [], this.options.tolerance, !this.$getOffsetParent())
+      return this.containerDimensions
+    },
+    getContainer: function  (element) {
+      return element.closest(this.options.containerSelector).data(pluginName)
+    },
+    $getOffsetParent: function  () {
+      if(this.offsetParent === undefined){
+        var i = this.containers.length - 1,
+        offsetParent = this.containers[i].getItemOffsetParent()
+
+        if(!this.options.rootGroup){
+          while(i--){
+            if(offsetParent[0] != this.containers[i].getItemOffsetParent()[0]){
+              // If every container has the same offset parent,
+              // use position() which is relative to this parent,
+              // otherwise use offset()
+              // compare #setDimensions
+              offsetParent = false
+              break;
+            }
+          }
+        }
+
+        this.offsetParent = offsetParent
+      }
+      return this.offsetParent
+    },
+    setPointer: function (e) {
+      var pointer = this.getPointer(e)
+
+      if(this.$getOffsetParent()){
+        var relativePointer = getRelativePosition(pointer, this.$getOffsetParent())
+        this.lastRelativePointer = this.relativePointer
+        this.relativePointer = relativePointer
+      }
+
+      this.lastPointer = this.pointer
+      this.pointer = pointer
+    },
+    distanceMet: function (e) {
+      var currentPointer = this.getPointer(e)
+      return (Math.max(
+        Math.abs(this.pointer.left - currentPointer.left),
+        Math.abs(this.pointer.top - currentPointer.top)
+      ) >= this.options.distance)
+    },
+    getPointer: function(e) {
+      var o = e.originalEvent || e.originalEvent.touches && e.originalEvent.touches[0]
+      return {
+        left: e.pageX || o.pageX,
+        top: e.pageY || o.pageY
+      }
+    },
+    setupDelayTimer: function () {
+      var that = this
+      this.delayMet = !this.options.delay
+
+      // init delay timer if needed
+      if (!this.delayMet) {
+        clearTimeout(this._mouseDelayTimer);
+        this._mouseDelayTimer = setTimeout(function() {
+          that.delayMet = true
+        }, this.options.delay)
+      }
+    },
+    scroll: function  (e) {
+      this.clearDimensions()
+      this.clearOffsetParent() // TODO is this needed?
+    },
+    toggleListeners: function (method) {
+      var that = this,
+      events = ['drag','drop','scroll']
+
+      $.each(events,function  (i,event) {
+        that.$document[method](eventNames[event], that[event + 'Proxy'])
+      })
+    },
+    clearOffsetParent: function () {
+      this.offsetParent = undefined
+    },
+    // Recursively clear container and item dimensions
+    clearDimensions: function  () {
+      this.traverse(function(object){
+        object._clearDimensions()
+      })
+    },
+    traverse: function(callback) {
+      callback(this)
+      var i = this.containers.length
+      while(i--){
+        this.containers[i].traverse(callback)
+      }
+    },
+    _clearDimensions: function(){
+      this.containerDimensions = undefined
+    },
+    _destroy: function () {
+      containerGroups[this.options.group] = undefined
+    }
+  }
+
+  function Container(element, options) {
+    this.el = element
+    this.options = $.extend( {}, containerDefaults, options)
+
+    this.group = ContainerGroup.get(this.options)
+    this.rootGroup = this.options.rootGroup || this.group
+    this.handle = this.rootGroup.options.handle || this.rootGroup.options.itemSelector
+
+    var itemPath = this.rootGroup.options.itemPath
+    this.target = itemPath ? this.el.find(itemPath) : this.el
+
+    this.target.on(eventNames.start, this.handle, $.proxy(this.dragInit, this))
+
+    if(this.options.drop)
+      this.group.containers.push(this)
+  }
+
+  Container.prototype = {
+    dragInit: function  (e) {
+      var rootGroup = this.rootGroup
+
+      if( !this.disabled &&
+          !rootGroup.dragInitDone &&
+          this.options.drag &&
+          this.isValidDrag(e)) {
+        rootGroup.dragInit(e, this)
+      }
+    },
+    isValidDrag: function(e) {
+      return e.which == 1 ||
+        e.type == "touchstart" && e.originalEvent.touches.length == 1
+    },
+    searchValidTarget: function  (pointer, lastPointer) {
+      var distances = sortByDistanceDesc(this.getItemDimensions(),
+                                         pointer,
+                                         lastPointer),
+      i = distances.length,
+      rootGroup = this.rootGroup,
+      validTarget = !rootGroup.options.isValidTarget ||
+        rootGroup.options.isValidTarget(rootGroup.item, this)
+
+      if(!i && validTarget){
+        rootGroup.movePlaceholder(this, this.target, "append")
+        return true
+      } else
+        while(i--){
+          var index = distances[i][0],
+          distance = distances[i][1]
+          if(!distance && this.hasChildGroup(index)){
+            var found = this.getContainerGroup(index).searchValidTarget(pointer, lastPointer)
+            if(found)
+              return true
+          }
+          else if(validTarget){
+            this.movePlaceholder(index, pointer)
+            return true
+          }
+        }
+    },
+    movePlaceholder: function  (index, pointer) {
+      var item = $(this.items[index]),
+      dim = this.itemDimensions[index],
+      method = "after",
+      width = item.outerWidth(),
+      height = item.outerHeight(),
+      offset = item.offset(),
+      sameResultBox = {
+        left: offset.left,
+        right: offset.left + width,
+        top: offset.top,
+        bottom: offset.top + height
+      }
+      if(this.options.vertical){
+        var yCenter = (dim[2] + dim[3]) / 2,
+        inUpperHalf = pointer.top <= yCenter
+        if(inUpperHalf){
+          method = "before"
+          sameResultBox.bottom -= height / 2
+        } else
+          sameResultBox.top += height / 2
+      } else {
+        var xCenter = (dim[0] + dim[1]) / 2,
+        inLeftHalf = pointer.left <= xCenter
+        if(inLeftHalf){
+          method = "before"
+          sameResultBox.right -= width / 2
+        } else
+          sameResultBox.left += width / 2
+      }
+      if(this.hasChildGroup(index))
+        sameResultBox = emptyBox
+      this.rootGroup.movePlaceholder(this, item, method, sameResultBox)
+    },
+    getItemDimensions: function  () {
+      if(!this.itemDimensions){
+        this.items = this.$getChildren(this.el, "item").filter(
+          ":not(." + this.group.options.placeholderClass + ", ." + this.group.options.draggedClass + ")"
+        ).get()
+        setDimensions(this.items, this.itemDimensions = [], this.options.tolerance)
+      }
+      return this.itemDimensions
+    },
+    getItemOffsetParent: function  () {
+      var offsetParent,
+      el = this.el
+      // Since el might be empty we have to check el itself and
+      // can not do something like el.children().first().offsetParent()
+      if(el.css("position") === "relative" || el.css("position") === "absolute"  || el.css("position") === "fixed")
+        offsetParent = el
+      else
+        offsetParent = el.offsetParent()
+      return offsetParent
+    },
+    hasChildGroup: function (index) {
+      return this.options.nested && this.getContainerGroup(index)
+    },
+    getContainerGroup: function  (index) {
+      var childGroup = $.data(this.items[index], subContainerKey)
+      if( childGroup === undefined){
+        var childContainers = this.$getChildren(this.items[index], "container")
+        childGroup = false
+
+        if(childContainers[0]){
+          var options = $.extend({}, this.options, {
+            rootGroup: this.rootGroup,
+            group: groupCounter ++
+          })
+          childGroup = childContainers[pluginName](options).data(pluginName).group
+        }
+        $.data(this.items[index], subContainerKey, childGroup)
+      }
+      return childGroup
+    },
+    $getChildren: function (parent, type) {
+      var options = this.rootGroup.options,
+      path = options[type + "Path"],
+      selector = options[type + "Selector"]
+
+      parent = $(parent)
+      if(path)
+        parent = parent.find(path)
+
+      return parent.children(selector)
+    },
+    _serialize: function (parent, isContainer) {
+      var that = this,
+      childType = isContainer ? "item" : "container",
+
+      children = this.$getChildren(parent, childType).not(this.options.exclude).map(function () {
+        return that._serialize($(this), !isContainer)
+      }).get()
+
+      return this.rootGroup.options.serialize(parent, children, isContainer)
+    },
+    traverse: function(callback) {
+      $.each(this.items || [], function(item){
+        var group = $.data(this, subContainerKey)
+        if(group)
+          group.traverse(callback)
+      });
+
+      callback(this)
+    },
+    _clearDimensions: function  () {
+      this.itemDimensions = undefined
+    },
+    _destroy: function() {
+      var that = this;
+
+      this.target.off(eventNames.start, this.handle);
+      this.el.removeData(pluginName)
+
+      if(this.options.drop)
+        this.group.containers = $.grep(this.group.containers, function(val){
+          return val != that
+        })
+
+      $.each(this.items || [], function(){
+        $.removeData(this, subContainerKey)
+      })
+    }
+  }
+
+  var API = {
+    enable: function() {
+      this.traverse(function(object){
+        object.disabled = false
+      })
+    },
+    disable: function (){
+      this.traverse(function(object){
+        object.disabled = true
+      })
+    },
+    serialize: function () {
+      return this._serialize(this.el, true)
+    },
+    refresh: function() {
+      this.traverse(function(object){
+        object._clearDimensions()
+      })
+    },
+    destroy: function () {
+      this.traverse(function(object){
+        object._destroy();
+      })
+    }
+  }
+
+  $.extend(Container.prototype, API)
+
+  /**
+   * jQuery API
+   *
+   * Parameters are
+   *   either options on init
+   *   or a method name followed by arguments to pass to the method
+   */
+  $.fn[pluginName] = function(methodOrOptions) {
+    var args = Array.prototype.slice.call(arguments, 1)
+
+    return this.map(function(){
+      var $t = $(this),
+      object = $t.data(pluginName)
+
+      if(object && API[methodOrOptions])
+        return API[methodOrOptions].apply(object, args) || this
+      else if(!object && (methodOrOptions === undefined ||
+                          typeof methodOrOptions === "object"))
+        $t.data(pluginName, new Container($t, methodOrOptions))
+
+      return this
+    });
+  };
+
+}(jQuery, window, 'sortable');

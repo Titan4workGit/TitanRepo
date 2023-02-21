@@ -1,1 +1,8460 @@
-var a3_0x5069dc=a3_0x27b4;(function(_0x559012,_0x7e8517){var _0x2f2078=a3_0x27b4,_0x10b965=_0x559012();while(!![]){try{var _0x21efad=-parseInt(_0x2f2078(0x27a))/0x1+-parseInt(_0x2f2078(0x23c))/0x2*(-parseInt(_0x2f2078(0x22f))/0x3)+parseInt(_0x2f2078(0x284))/0x4*(-parseInt(_0x2f2078(0x268))/0x5)+-parseInt(_0x2f2078(0x1ce))/0x6*(parseInt(_0x2f2078(0x1ac))/0x7)+-parseInt(_0x2f2078(0x1ed))/0x8*(-parseInt(_0x2f2078(0x233))/0x9)+parseInt(_0x2f2078(0x228))/0xa*(parseInt(_0x2f2078(0x31c))/0xb)+parseInt(_0x2f2078(0x1cb))/0xc;if(_0x21efad===_0x7e8517)break;else _0x10b965['push'](_0x10b965['shift']());}catch(_0x13f44c){_0x10b965['push'](_0x10b965['shift']());}}}(a3_0x4347,0x3c09f));var SharingUserId=[],ShareUserPrincipleMail=[],SharingUserEmail=[],SharingUserName=[],AdminWarning,IsAdminOrNot=!![],IscheckMessage=![],SuperAdminWaring,IsSuperAdmin=![],g_Contributors=[],g_HOD=[],g_OtherDeptContri=[],userRecords=[],g_Readers=[],arrContriUsers=[],g_eventAdminArr=[];$(document)[a3_0x5069dc(0x188)](function(){var _0x1fc7d3=a3_0x5069dc;UserAuthorization(),ChangeLabels(),commonFormSubmit(),LoadPeoplePickerControls(),BindDepartments(),getCompanyApprovers(),GetDepartmentalApprovers(Logged_DepartmentId),onChangeTech('TechPplPicker_TopSpan',_0x1fc7d3(0x2e0)),onChangeSearchUser(_0x1fc7d3(0x266),_0x1fc7d3(0x262),userRecords),onChangeHr('HrPplPicker_TopSpan','HrPplPicker'),onChangeDeptContributors(_0x1fc7d3(0x1da),'deptContributorsPplPicker'),onChangeHeadOfDept(_0x1fc7d3(0x2b0),_0x1fc7d3(0x16a)),onChangeOtherDept(_0x1fc7d3(0x161),_0x1fc7d3(0x179)),onChangeReader(_0x1fc7d3(0x2e3),_0x1fc7d3(0x307)),onChangeProcess(_0x1fc7d3(0x260),'processPplPicker'),onChangeCustomer(_0x1fc7d3(0xfb),_0x1fc7d3(0x2b7)),onChangeProjectAdmin(_0x1fc7d3(0x134),_0x1fc7d3(0x1e6)),onChangeBanner('BannersContributors_Company_TopSpan',_0x1fc7d3(0x212)),onChangeBannerApprover(_0x1fc7d3(0x118),_0x1fc7d3(0x24c)),onChangeAnnouncement(_0x1fc7d3(0x163),_0x1fc7d3(0x277)),onChangeAnnouncementApprovers(_0x1fc7d3(0x1bc),_0x1fc7d3(0xfa)),onChangeAlert('AlertContributors_Company_TopSpan',_0x1fc7d3(0x14b)),onChangeAlertApprovers(_0x1fc7d3(0x1fb),_0x1fc7d3(0xfe)),onChangeEvent(_0x1fc7d3(0x1d1),_0x1fc7d3(0x2d8)),onChangeEventApprover(_0x1fc7d3(0x25b),_0x1fc7d3(0x10e)),onChangeSuevey(_0x1fc7d3(0x2c7),_0x1fc7d3(0x242)),onChangeSueveyApprovers('PollsApprovers_Company_TopSpan',_0x1fc7d3(0x280)),onChangeRecogination(_0x1fc7d3(0x278),_0x1fc7d3(0x31f)),onChangeRecoginationApprovers('RecognitionApprovers_Company_TopSpan',_0x1fc7d3(0x139)),onChangeExperenceApprov(_0x1fc7d3(0x2ac),'ExperienceApprovers_Company'),onChangeExperence(_0x1fc7d3(0x110),'ExperienceContributors_Company'),onChangeQuestion('QuestionAnswerContributors_Company_TopSpan','QuestionAnswerContributors_Company'),onChangeQuestionApproval(_0x1fc7d3(0x2b4),'QuestionAnswerApprovers_Company'),onChangeMedia('MediaContributors_Company_TopSpan',_0x1fc7d3(0x1c3)),onChangeMagazine(_0x1fc7d3(0x318),_0x1fc7d3(0x29d)),onChangeNewInitiative('initiativePplPicker_TopSpan',_0x1fc7d3(0x102)),onChangeDepartProject('deptProjectPplPicker_TopSpan',_0x1fc7d3(0x2b8)),onChangeDocumentApprovers(_0x1fc7d3(0x162),_0x1fc7d3(0x185)),onChangeNewInitiativeApprovers(_0x1fc7d3(0x2e1),'initiativeApproverPplPicker'),onChangeSuggesion(_0x1fc7d3(0x20b),_0x1fc7d3(0x2f0)),onChanSuggesionApprov(_0x1fc7d3(0x16b),_0x1fc7d3(0x323)),onChangeActivity(_0x1fc7d3(0x2c5),_0x1fc7d3(0x2f4)),onChangeActivityApprov(_0x1fc7d3(0x30d),_0x1fc7d3(0x10d)),onChangeKnowledge(_0x1fc7d3(0x15d),_0x1fc7d3(0x322)),onChangeKnowledgeApprov('KnowledgeApproverPplPicker_TopSpan',_0x1fc7d3(0x26e));});function UserAuthorization(){var _0x573e34=a3_0x5069dc,_0x13d18d=titanForWork[_0x573e34(0x2bd)](_0x573e34(0x324));titanForWork[_0x573e34(0x176)](_0x573e34(0x2dc),_0x13d18d)[_0x573e34(0x310)](function(_0x1929ce,_0x14f8db){var _0xfa9ef5=_0x573e34;_0x1929ce[_0xfa9ef5(0x246)]>0x0&&(_0x1929ce[0x0][_0xfa9ef5(0x2cc)]==_0xfa9ef5(0x2cc)||_0x1929ce[0x0]['TechAdmin']==_0xfa9ef5(0x160)?userActivityNotificationEntry(_spPageContextInfo[_0xfa9ef5(0x235)],window['location']):(alert(_0x14f8db),window[_0xfa9ef5(0x2c9)][_0xfa9ef5(0xf3)]=_spPageContextInfo[_0xfa9ef5(0x1b9)]+_0xfa9ef5(0x1b7)+_0x13d18d));});}function LoadPeoplePickerControls(){var _0x3c8172=a3_0x5069dc;InitializePeoplePicker('TechPplPicker',!![]),InitializePeoplePicker('processPplPicker',!![]),InitializePeoplePicker(_0x3c8172(0x262),![]),InitializePeoplePicker('HrPplPicker',!![]),InitializePeoplePicker(_0x3c8172(0x185),!![]),InitializePeoplePicker(_0x3c8172(0x144),!![]),InitializePeoplePicker('headOfDeptPplPicker',!![]),InitializePeoplePicker(_0x3c8172(0x179),!![]),InitializePeoplePicker(_0x3c8172(0x307),!![]),InitializePeoplePicker('ClientAdminPplPicker',!![]),InitializePeoplePicker(_0x3c8172(0x1e6),!![]),InitializePeoplePicker('BannersContributors_Company',!![]),InitializePeoplePicker('BannersApprovers_Company',!![]),InitializePeoplePicker(_0x3c8172(0x29d),!![]),InitializePeoplePicker('MediaContributors_Company',![]),InitializePeoplePicker(_0x3c8172(0x277),!![]),InitializePeoplePicker(_0x3c8172(0xfa),!![]),InitializePeoplePicker(_0x3c8172(0x14b),!![]),InitializePeoplePicker(_0x3c8172(0xfe),!![]),InitializePeoplePicker(_0x3c8172(0x2d8),!![]),InitializePeoplePicker('EventsApprovers_Company',!![]),InitializePeoplePicker(_0x3c8172(0x242),!![]),InitializePeoplePicker(_0x3c8172(0x280),!![]),InitializePeoplePicker(_0x3c8172(0x31f),!![]),InitializePeoplePicker('RecognitionApprovers_Company',![]),InitializePeoplePicker('ExperienceContributors_Company',!![]),InitializePeoplePicker(_0x3c8172(0x326),!![]),InitializePeoplePicker(_0x3c8172(0x2a3),!![]),InitializePeoplePicker('QuestionAnswerApprovers_Company',!![]),InitializePeoplePicker(_0x3c8172(0x2b8),!![]),InitializePeoplePicker(_0x3c8172(0x102),!![]),InitializePeoplePicker(_0x3c8172(0x17f),!![]),InitializePeoplePicker('SuggestionPplPicker',![]),InitializePeoplePicker(_0x3c8172(0x323),!![]),InitializePeoplePicker('ActivityPplPicker',!![]),InitializePeoplePicker(_0x3c8172(0x10d),!![]),InitializePeoplePicker(_0x3c8172(0x322),!![]),InitializePeoplePicker('KnowledgeApproverPplPicker',!![]),$(_0x3c8172(0x263))[_0x3c8172(0x220)](function(){var _0x1e0c4d=_0x3c8172;$[_0x1e0c4d(0x308)]({'cache':![],'beforeSend':function(){var _0x181a7d=_0x1e0c4d;$(_0x181a7d(0x1d0))[_0x181a7d(0x1b8)]();},'success':function(_0x1cd14c){var _0xa57e34=_0x1e0c4d;CheckAdminBlock()==!![]?$[_0xa57e34(0x288)](ProjectAdmin())[_0xa57e34(0x310)](function(_0x647fb9){var _0x44bdd7=_0xa57e34;_0x647fb9==!![]&&$[_0x44bdd7(0x288)](TechAdmin(),ProcessAdmin(),HRAdmin(),CompanyClientMaster())[_0x44bdd7(0x310)](function(_0x1103a6){var _0x234608=_0x44bdd7;alert(_0x234608(0x2ce));});}):(IsAdminOrNot==![]&&(alert(AdminWarning),waitingDialog[_0xa57e34(0x16c)]()),IsAdminOrNot=!![]),$(_0xa57e34(0x1d0))[_0xa57e34(0x1ad)]();}});}),$(_0x3c8172(0x2fd))[_0x3c8172(0x2e5)](function(){var _0x30a6bf=_0x3c8172,_0x3b4fac=GetSiteURL($(this)[_0x30a6bf(0x126)]()),_0x5dc1b2=parseInt($(this)[_0x30a6bf(0x126)]());userRecords=userRecords['filter'](function(_0x236f67){var _0x102410=_0x30a6bf;return _0x236f67[_0x102410(0x298)]==_0x5dc1b2||_0x236f67[_0x102410(0x175)]==_0x102410(0x30c)||_0x236f67[_0x102410(0x175)]==_0x102410(0x191);}),$(_0x30a6bf(0x1db))[_0x30a6bf(0x2d2)](),$(_0x30a6bf(0x249))['empty'](),emprtyDepartmentBox(),$(_0x30a6bf(0x1d4))['empty'](),$(_0x30a6bf(0x2a7))[_0x30a6bf(0x2d2)](),EmptyPeoplePicker('serchUser'),$(_0x30a6bf(0x227))[_0x30a6bf(0x126)](_0x3b4fac);var _0x2305e2=$(this)['val']();GetDepartmentalApprovers(_0x2305e2);}),$(_0x3c8172(0x11c))['click'](function(){var _0x42c03a=_0x3c8172;$[_0x42c03a(0x308)]({'cache':![],'beforeSend':function(){var _0x3b1e2f=_0x42c03a;$(_0x3b1e2f(0x1d0))[_0x3b1e2f(0x1b8)]();},'success':function(_0xbb7413){var _0x264855=_0x42c03a;if(CheckDepartmentDocuments()){var _0x219d2c=$(_0x264855(0x2fd))[_0x264855(0x126)]();currentDepartmentID=$(_0x264855(0x2fd))[_0x264855(0x126)](),$('body')[_0x264855(0x299)](_0x264855(0x133),'progress');if(_0x219d2c!=0x0&&$('#departmentWebPartDiv')[_0x264855(0x219)](_0x264855(0x234))==![]){if($('#toggleSuggestionApp')[_0x264855(0x219)](_0x264855(0x2fb))==![]){var _0x18d1cf=SuggestionApprover;if(_0x18d1cf[_0x264855(0x246)]>0x0){}else return alert(_0x264855(0xf5)),waitingDialog[_0x264855(0x16c)](),![];}if($(_0x264855(0x292))[_0x264855(0x219)]('active')==![]){var _0x18d1cf=g_NewApprover;if(_0x18d1cf[_0x264855(0x246)]>0x0){}else return alert(_0x264855(0x29b)),waitingDialog[_0x264855(0x16c)](),![];}if($(_0x264855(0x19d))[_0x264855(0x219)](_0x264855(0x2fb))==![]){var _0x18d1cf=g_ActivityApprover;if(_0x18d1cf[_0x264855(0x246)]>0x0){}else return alert('Please\x20enter\x20Activity\x20approver\x20name.'),waitingDialog[_0x264855(0x16c)](),![];}if($('#toggleKnowledgeApp')[_0x264855(0x219)](_0x264855(0x2fb))==![]){var _0x18d1cf=KnowledgeApprover;if(_0x18d1cf['length']>0x0){}else return alert(_0x264855(0x2d1)),waitingDialog['hide'](),![];}}_0x219d2c!=0x0?$['when'](DepartmentDocuments(),DepartmentDocumentAccess(),HeadOfDepartment(),DepartmentNewInitiative(),DepartmentSuggestion(),DepartmentActivity(),DepartmentProject(),addDepartmentKnowledge())['done'](function(_0x14d413){var _0x123672=_0x264855;alert(_0x123672(0x2ce)),waitingDialog[_0x123672(0x16c)]();}):alert(_0x264855(0x23e));}else IsAdminOrNot==![]&&alert(AdminWarning),IsAdminOrNot=!![];$(_0x264855(0x1d0))['fadeOut']();}});});}function GetSiteURL(_0x2316d5){var _0x148e86=a3_0x5069dc,_0x1e8bd1='',_0x3a7636=Logged_CompanyId;if(_0x2316d5!=null&&_0x2316d5!='')_0x1e8bd1=g_DeptSiteUrl[_0x148e86(0x1b5)](function(_0x47b149){var _0x53ad60=_0x148e86;return _0x47b149[_0x53ad60(0x289)]==_0x2316d5;});else{var _0x4d278d=_0x148e86(0x1e9)+_0x3a7636+'\x27',_0x78d542=_0x148e86(0x14f);$['when'](GetCompanySiteURL(_0x78d542,_0x4d278d))['done'](function(_0x22411b){var _0x372f97=_0x148e86;_0x22411b[_0x372f97(0x246)]>0x0&&(_0x1e8bd1=_0x22411b[0x0]['SiteURL']);});}return _0x1e8bd1;}function InitializePeoplePicker(_0x21cecd,_0x4ac908){var _0x470c33=a3_0x5069dc;_0x4ac908==null&&(_0x4ac908=![]);var _0x1c4c50={};_0x1c4c50[_0x470c33(0x2d0)]=_0x470c33(0x261),_0x1c4c50['SearchPrincipalSource']=0xf,_0x1c4c50['ResolvePrincipalSource']=0xf,_0x1c4c50['AllowMultipleValues']=_0x4ac908,_0x1c4c50['MaximumEntitySuggestions']=0x32,_0x1c4c50[_0x470c33(0x2f9)]=_0x470c33(0x2af),SPClientPeoplePicker_InitStandaloneControlWrapper(_0x21cecd,null,_0x1c4c50);}function FillAccountName(_0x3fa7bf,_0x4424b2){var _0x3beda2=a3_0x5069dc;try{for(var _0x26a9dc=0x0;_0x26a9dc<_0x4424b2['length'];_0x26a9dc++){var _0x19756a=_0x4424b2[_0x26a9dc];_0x19756a=_0x19756a[_0x3beda2(0x1a0)](),GetAccountName(_0x3fa7bf,_0x4424b2);}}catch(_0x54e4da){}}function GetAccountName(_0x5a9b65,_0x597063){var _0x3f6368=a3_0x5069dc,_0x117e06=SP[_0x3f6368(0x123)][_0x3f6368(0x2ad)](),_0x714f4e=_0x117e06['get_web']()[_0x3f6368(0x301)](_0x597063);_0x117e06['load'](_0x714f4e),_0x117e06[_0x3f6368(0x315)](function(){var _0x821d1b=_0x3f6368;_0x714f4e['get_email']()>0x0?setPeoplePickerUsersInfoCurrent(_0x5a9b65,_0x714f4e[_0x821d1b(0x106)]()):setPeoplePickerUsersInfoCurrent(_0x5a9b65,_0x714f4e[_0x821d1b(0x11b)]());},function(_0x2e6375,_0x4727f7){var _0xbc2b8e=_0x3f6368;console[_0xbc2b8e(0x168)]('Error\x20while\x20receiving\x20the\x20properties\x20from\x20the\x20UserProfile');});}function setPeoplePickerUsersInfoCurrent(_0x509c18,_0x4b3cf5){var _0x462f38=a3_0x5069dc,_0xcac575=$(_0x462f38(0x119)+_0x509c18+'\x27]'),_0xb0bc43=SPClientPeoplePicker[_0x462f38(0x2e9)][_0xcac575[0x0]['id']];_0xb0bc43[_0x462f38(0x1f9)](_0x4b3cf5,![]);}function onChangeTech(_0x505435,_0x33349c){var _0xb893e4=a3_0x5069dc,_0x588489=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x505435],_0xf3585e='';_0x588489[_0xb893e4(0x1d5)]=function(_0x5d65a5,_0x10c460){var _0x38a88b=_0xb893e4;if(_0x10c460['length']>0x0){var _0x5241e1=![];g_TechAdminArr[_0x38a88b(0x11a)](function(_0x504b8e){var _0x5dc3de=_0x38a88b;_0x504b8e[_0x5dc3de(0x2f7)][_0x5dc3de(0x265)]()==_0x10c460[0x0][_0x5dc3de(0x313)][_0x5dc3de(0x22d)][_0x5dc3de(0x265)]()&&(_0x5241e1=!![]);});if(_0x5241e1==![]){_0xf3585e='',$(_0x38a88b(0x26c))[_0x38a88b(0x279)]($(_0x38a88b(0x26c))[0x0][_0x38a88b(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x33349c)),SharingUserId[_0x38a88b(0x27d)](tempUserId);var _0x21866f=_0x10c460[0x0][_0x38a88b(0x31b)][_0x38a88b(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x10c460[0x0][_0x38a88b(0x31b)][_0x38a88b(0x232)]('|')[0x2]),_0x21866f['includes']('#')==!![]&&(_0x21866f=_0x21866f[_0x38a88b(0x232)](_0x38a88b(0x13c))[0x0],_0x21866f=_0x21866f[_0x38a88b(0x158)]('_','@')),SharingUserEmail[_0x38a88b(0x27d)](_0x21866f),SharingUserName[_0x38a88b(0x27d)](_0x10c460[0x0][_0x38a88b(0x201)]),g_TechAdminArr[_0x38a88b(0x27d)]({'EMail':_0x21866f,'Id':tempUserId,'UserName':_0x10c460[0x0][_0x38a88b(0x201)]}),userRecords[_0x38a88b(0x27d)]({'EMail':_0x21866f,'WebPartName':_0x38a88b(0x30c),'deptId':0x0,'Id':tempUserId,'UserName':_0x10c460[0x0][_0x38a88b(0x201)]}),attachment=_spPageContextInfo[_0x38a88b(0x1b9)]+_0x38a88b(0x169)+escapeProperly(_0x21866f),_0xf3585e+=_0x38a88b(0x230)+tempUserId+_0x38a88b(0x22b),_0xf3585e+=_0x38a88b(0x13e)+attachment+_0x38a88b(0x31e),_0xf3585e+=_0x38a88b(0x2fa)+_0x10c460[0x0]['DisplayText']+_0x38a88b(0x1cd),_0xf3585e+=_0x38a88b(0x124)+_0x21866f+_0x38a88b(0x1c6)+_0x21866f+_0x38a88b(0x208),_0xf3585e+=_0x38a88b(0x174)+_0x21866f+_0x38a88b(0x24d),_0xf3585e+=_0x38a88b(0x173),$(_0x38a88b(0x26c))['append'](_0xf3585e),EmptyPeoplePicker(_0x33349c);}else alert('User\x20'+_0x10c460[0x0]['DisplayText']+_0x38a88b(0x216)),EmptyPeoplePicker(_0x33349c);}else{}};}function onChangeProjectAdmin(_0x30a7c1,_0x17af1a){var _0x36377a=a3_0x5069dc,_0x35aede=SPClientPeoplePicker[_0x36377a(0x2e9)][_0x30a7c1],_0x2a1598='';_0x35aede['OnValueChangedClientScript']=function(_0x48dba1,_0x423bde){var _0x46a249=_0x36377a;if(_0x423bde[_0x46a249(0x246)]>0x0){var _0x38d176=![];g_ProjectArr[_0x46a249(0x11a)](function(_0x2e2d34){var _0x1ecd9b=_0x46a249;_0x2e2d34['EMail'][_0x1ecd9b(0x265)]()==_0x423bde[0x0]['EntityData'][_0x1ecd9b(0x22d)]['toLowerCase']()&&(_0x38d176=!![]);});if(_0x38d176==![]){_0x2a1598='',$(_0x46a249(0x202))[_0x46a249(0x279)]($(_0x46a249(0x202))[0x0]['scrollHeight']),tempUserId=parseInt(getUserInformation(_0x17af1a)),SharingUserId['push'](tempUserId);var _0x398964=_0x423bde[0x0][_0x46a249(0x31b)][_0x46a249(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x46a249(0x27d)](_0x423bde[0x0]['Key'][_0x46a249(0x232)]('|')[0x2]),_0x398964[_0x46a249(0x13d)]('#')==!![]&&(_0x398964=_0x398964[_0x46a249(0x232)]('#ext')[0x0],_0x398964=_0x398964[_0x46a249(0x158)]('_','@')),SharingUserEmail['push'](_0x398964),SharingUserName[_0x46a249(0x27d)](_0x423bde[0x0][_0x46a249(0x201)]),g_ProjectArr[_0x46a249(0x27d)]({'EMail':_0x398964,'Id':tempUserId,'UserName':_0x423bde[0x0][_0x46a249(0x201)]}),userRecords[_0x46a249(0x27d)]({'EMail':_0x398964,'WebPartName':_0x46a249(0x12d),'deptId':0x0,'Id':tempUserId,'UserName':_0x423bde[0x0][_0x46a249(0x201)]}),attachment=_spPageContextInfo[_0x46a249(0x1b9)]+_0x46a249(0x169)+escapeProperly(_0x398964),_0x2a1598+=_0x46a249(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x2a1598+=_0x46a249(0x13e)+attachment+_0x46a249(0x31e),_0x2a1598+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x423bde[0x0][_0x46a249(0x201)]+_0x46a249(0x1cd),_0x2a1598+=_0x46a249(0x124)+_0x398964+_0x46a249(0x1c6)+_0x398964+_0x46a249(0x208),_0x2a1598+=_0x46a249(0x2fc)+_0x398964+_0x46a249(0x24d),_0x2a1598+=_0x46a249(0x173),$(_0x46a249(0x202))[_0x46a249(0x18d)](_0x2a1598),EmptyPeoplePicker(_0x17af1a);}else alert(_0x46a249(0x11f)+_0x423bde[0x0][_0x46a249(0x201)]+_0x46a249(0x216)),EmptyPeoplePicker(_0x17af1a);}else{}};}function onChangeCustomer(_0x4cd94f,_0x94d2be){var _0x453525=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x4cd94f],_0x4eec1f='';_0x453525['OnValueChangedClientScript']=function(_0x5138d4,_0x172dca){var _0x2486c0=a3_0x27b4;if(_0x172dca['length']>0x0){var _0x5bcc06=![];g_ClientArr['forEach'](function(_0x164971){var _0x2ba4eb=a3_0x27b4;_0x164971[_0x2ba4eb(0x2f7)][_0x2ba4eb(0x265)]()==_0x172dca[0x0][_0x2ba4eb(0x313)][_0x2ba4eb(0x22d)]['toLowerCase']()&&(_0x5bcc06=!![]);});if(_0x5bcc06==![]){_0x4eec1f='',$(_0x2486c0(0x17e))['scrollTop']($(_0x2486c0(0x17e))[0x0][_0x2486c0(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x94d2be)),SharingUserId[_0x2486c0(0x27d)](tempUserId);var _0x3983e8=_0x172dca[0x0]['Key']['split']('|')[0x2];ShareUserPrincipleMail[_0x2486c0(0x27d)](_0x172dca[0x0][_0x2486c0(0x31b)][_0x2486c0(0x232)]('|')[0x2]),_0x3983e8[_0x2486c0(0x13d)]('#')==!![]&&(_0x3983e8=_0x3983e8[_0x2486c0(0x232)](_0x2486c0(0x13c))[0x0],_0x3983e8=_0x3983e8[_0x2486c0(0x158)]('_','@')),SharingUserEmail[_0x2486c0(0x27d)](_0x3983e8),SharingUserName[_0x2486c0(0x27d)](_0x172dca[0x0][_0x2486c0(0x201)]),g_ClientArr[_0x2486c0(0x27d)]({'EMail':_0x3983e8,'Id':tempUserId,'UserName':_0x172dca[0x0][_0x2486c0(0x201)]}),userRecords[_0x2486c0(0x27d)]({'EMail':_0x3983e8,'WebPartName':_0x2486c0(0x1aa),'deptId':0x0,'Id':tempUserId,'UserName':_0x172dca[0x0][_0x2486c0(0x201)]}),attachment=_spPageContextInfo[_0x2486c0(0x1b9)]+_0x2486c0(0x169)+escapeProperly(_0x3983e8),_0x4eec1f+=_0x2486c0(0x230)+tempUserId+_0x2486c0(0x22b),_0x4eec1f+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x2486c0(0x31e),_0x4eec1f+=_0x2486c0(0x2fa)+_0x172dca[0x0]['DisplayText']+_0x2486c0(0x1cd),_0x4eec1f+=_0x2486c0(0x124)+_0x3983e8+'\x27)\x22>'+_0x3983e8+_0x2486c0(0x208),_0x4eec1f+=_0x2486c0(0x15c)+_0x3983e8+_0x2486c0(0x24d),_0x4eec1f+=_0x2486c0(0x173),$('#CustomerManagementAdmin')['append'](_0x4eec1f),EmptyPeoplePicker(_0x94d2be);}else alert(_0x2486c0(0x11f)+_0x172dca[0x0][_0x2486c0(0x201)]+_0x2486c0(0x216)),EmptyPeoplePicker(_0x94d2be);}else{}};}function onChangeHr(_0x4feb7a,_0x3f49b7){var _0x13a65d=a3_0x5069dc,_0x135db4=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x4feb7a],_0x33f003='';_0x135db4[_0x13a65d(0x1d5)]=function(_0x1a6b75,_0x391ed3){var _0x1a6bd9=_0x13a65d;if(_0x391ed3[_0x1a6bd9(0x246)]>0x0){var _0x32b4ad=![];g_HrAdminArr[_0x1a6bd9(0x11a)](function(_0x15a59c){var _0x305cb6=_0x1a6bd9;_0x15a59c[_0x305cb6(0x2f7)]['toLowerCase']()==_0x391ed3[0x0]['EntityData']['Email'][_0x305cb6(0x265)]()&&(_0x32b4ad=!![]);});if(_0x32b4ad==![]){_0x33f003='',$(_0x1a6bd9(0x1c7))[_0x1a6bd9(0x279)]($(_0x1a6bd9(0x1c7))[0x0][_0x1a6bd9(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x3f49b7)),SharingUserId[_0x1a6bd9(0x27d)](tempUserId);var _0x5a056d=_0x391ed3[0x0]['Key'][_0x1a6bd9(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x1a6bd9(0x27d)](_0x391ed3[0x0]['Key']['split']('|')[0x2]),_0x5a056d['includes']('#')==!![]&&(_0x5a056d=_0x5a056d[_0x1a6bd9(0x232)](_0x1a6bd9(0x13c))[0x0],_0x5a056d=_0x5a056d[_0x1a6bd9(0x158)]('_','@')),SharingUserEmail[_0x1a6bd9(0x27d)](_0x5a056d),g_HrAdminArr[_0x1a6bd9(0x27d)]({'EMail':_0x5a056d,'Id':tempUserId,'UserName':_0x391ed3[0x0][_0x1a6bd9(0x201)]}),userRecords[_0x1a6bd9(0x27d)]({'EMail':_0x5a056d,'WebPartName':_0x1a6bd9(0x191),'deptId':0x0,'Id':tempUserId,'UserName':_0x391ed3[0x0][_0x1a6bd9(0x201)]}),SharingUserName[_0x1a6bd9(0x27d)](_0x391ed3[0x0]['DisplayText']),attachment=_spPageContextInfo['webAbsoluteUrl']+_0x1a6bd9(0x169)+escapeProperly(_0x5a056d),_0x33f003+=_0x1a6bd9(0x230)+tempUserId+_0x1a6bd9(0x22b),_0x33f003+=_0x1a6bd9(0x13e)+attachment+_0x1a6bd9(0x31e),_0x33f003+=_0x1a6bd9(0x2fa)+_0x391ed3[0x0][_0x1a6bd9(0x201)]+_0x1a6bd9(0x1cd),_0x33f003+=_0x1a6bd9(0x124)+_0x5a056d+_0x1a6bd9(0x1c6)+_0x5a056d+'</p></div>',_0x33f003+=_0x1a6bd9(0x281)+_0x5a056d+_0x1a6bd9(0x24d),_0x33f003+=_0x1a6bd9(0x173),$('#hrAdmin')[_0x1a6bd9(0x18d)](_0x33f003),EmptyPeoplePicker(_0x3f49b7);}else alert(_0x1a6bd9(0x11f)+_0x391ed3[0x0][_0x1a6bd9(0x201)]+_0x1a6bd9(0x216)),EmptyPeoplePicker(_0x3f49b7);}else{}};}function onChangeProcess(_0x59d160,_0x3530ca){var _0x29218d=a3_0x5069dc,_0x2a3b8b=SPClientPeoplePicker[_0x29218d(0x2e9)][_0x59d160],_0x47c7fe='';_0x2a3b8b[_0x29218d(0x1d5)]=function(_0x556809,_0x3e86ae){var _0x4f09ad=_0x29218d;if(_0x3e86ae['length']>0x0){var _0x4d0390=![];g_ProcessArr[_0x4f09ad(0x11a)](function(_0x45ccde){var _0x54cfed=_0x4f09ad;_0x45ccde['EMail'][_0x54cfed(0x265)]()==_0x3e86ae[0x0][_0x54cfed(0x313)][_0x54cfed(0x22d)][_0x54cfed(0x265)]()&&(_0x4d0390=!![]);});if(_0x4d0390==![]){_0x47c7fe='',$(_0x4f09ad(0x1c0))[_0x4f09ad(0x279)]($(_0x4f09ad(0x1c0))[0x0][_0x4f09ad(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x3530ca)),SharingUserId[_0x4f09ad(0x27d)](tempUserId);var _0x12b4a0=_0x3e86ae[0x0][_0x4f09ad(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0x4f09ad(0x27d)](_0x3e86ae[0x0][_0x4f09ad(0x31b)][_0x4f09ad(0x232)]('|')[0x2]),_0x12b4a0['includes']('#')==!![]&&(_0x12b4a0=_0x12b4a0['split']('#ext')[0x0],_0x12b4a0=_0x12b4a0[_0x4f09ad(0x158)]('_','@')),SharingUserEmail[_0x4f09ad(0x27d)](_0x12b4a0),g_ProcessArr[_0x4f09ad(0x27d)]({'EMail':_0x12b4a0,'Id':tempUserId,'UserName':_0x3e86ae[0x0]['DisplayText']}),userRecords[_0x4f09ad(0x27d)]({'EMail':_0x12b4a0,'WebPartName':'Process\x20Admin','deptId':0x0,'Id':tempUserId,'UserName':_0x3e86ae[0x0][_0x4f09ad(0x201)]}),SharingUserName[_0x4f09ad(0x27d)](_0x3e86ae[0x0]['DisplayText']),attachment=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x12b4a0),_0x47c7fe+=_0x4f09ad(0x230)+tempUserId+_0x4f09ad(0x22b),_0x47c7fe+=_0x4f09ad(0x13e)+attachment+_0x4f09ad(0x31e),_0x47c7fe+=_0x4f09ad(0x2fa)+_0x3e86ae[0x0]['DisplayText']+_0x4f09ad(0x1cd),_0x47c7fe+=_0x4f09ad(0x124)+_0x12b4a0+'\x27)\x22>'+_0x12b4a0+_0x4f09ad(0x208),_0x47c7fe+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromProcess(this,\x20\x27'+_0x12b4a0+_0x4f09ad(0x24d),_0x47c7fe+=_0x4f09ad(0x173),$(_0x4f09ad(0x1c0))[_0x4f09ad(0x18d)](_0x47c7fe),EmptyPeoplePicker(_0x3530ca);}else alert(_0x4f09ad(0x11f)+_0x3e86ae[0x0][_0x4f09ad(0x201)]+_0x4f09ad(0x216)),EmptyPeoplePicker(_0x3530ca);}else{}};}function onChangeBanner(_0x515019,_0x588fbb){var _0x113801=a3_0x5069dc,_0x119eb9=SPClientPeoplePicker[_0x113801(0x2e9)][_0x515019],_0x4d3325='';_0x119eb9[_0x113801(0x1d5)]=function(_0x595619,_0x266bab){var _0x2b5226=_0x113801;if(_0x266bab[_0x2b5226(0x246)]>0x0){var _0x494dfa=![];g_informationArr[_0x2b5226(0x11a)](function(_0x25d68b){var _0x4b9f3d=_0x2b5226;_0x25d68b[_0x4b9f3d(0x2f7)][_0x4b9f3d(0x265)]()==_0x266bab[0x0][_0x4b9f3d(0x313)][_0x4b9f3d(0x22d)][_0x4b9f3d(0x265)]()&&(_0x494dfa=!![]);});if(_0x494dfa==![]){_0x4d3325='',$(_0x2b5226(0x225))['scrollTop']($(_0x2b5226(0x225))[0x0][_0x2b5226(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x588fbb)),SharingUserId[_0x2b5226(0x27d)](tempUserId);var _0x4c152a=_0x266bab[0x0][_0x2b5226(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0x2b5226(0x27d)](_0x266bab[0x0]['Key'][_0x2b5226(0x232)]('|')[0x2]),_0x4c152a[_0x2b5226(0x13d)]('#')==!![]&&(_0x4c152a=_0x4c152a[_0x2b5226(0x232)](_0x2b5226(0x13c))[0x0],_0x4c152a=_0x4c152a[_0x2b5226(0x158)]('_','@')),SharingUserEmail[_0x2b5226(0x27d)](_0x4c152a),g_informationArr[_0x2b5226(0x27d)]({'EMail':_0x4c152a,'Id':tempUserId,'UserName':_0x266bab[0x0]['DisplayText']}),userRecords[_0x2b5226(0x27d)]({'EMail':_0x4c152a,'WebPartName':_0x2b5226(0x211),'deptId':0x0,'Id':tempUserId,'UserName':_0x266bab[0x0][_0x2b5226(0x201)]}),SharingUserName['push'](_0x266bab[0x0][_0x2b5226(0x201)]),attachment=_spPageContextInfo[_0x2b5226(0x1b9)]+_0x2b5226(0x169)+escapeProperly(_0x4c152a),_0x4d3325+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x4d3325+=_0x2b5226(0x13e)+attachment+_0x2b5226(0x31e),_0x4d3325+=_0x2b5226(0x2fa)+_0x266bab[0x0][_0x2b5226(0x201)]+_0x2b5226(0x1cd),_0x4d3325+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x4c152a+_0x2b5226(0x1c6)+_0x4c152a+_0x2b5226(0x208),_0x4d3325+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeBanner(this,\x20\x27'+_0x4c152a+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x4d3325+=_0x2b5226(0x173),$(_0x2b5226(0x225))[_0x2b5226(0x18d)](_0x4d3325),EmptyPeoplePicker(_0x588fbb);}else alert(_0x2b5226(0x11f)+_0x266bab[0x0][_0x2b5226(0x201)]+_0x2b5226(0x216)),EmptyPeoplePicker(_0x588fbb);}else{}};}function onChangeBannerApprover(_0xe5e42e,_0x331ce7){var _0x744298=a3_0x5069dc,_0x12ff58=SPClientPeoplePicker[_0x744298(0x2e9)][_0xe5e42e],_0x4c107a='';_0x12ff58[_0x744298(0x1d5)]=function(_0x5b8844,_0x192dc5){var _0x428bdb=_0x744298;if(_0x192dc5[_0x428bdb(0x246)]>0x0){var _0x56432e=![];BannersApprover[_0x428bdb(0x11a)](function(_0x2825f4){var _0x93f1a=_0x428bdb;_0x2825f4[_0x93f1a(0x2f7)][_0x93f1a(0x265)]()==_0x192dc5[0x0][_0x93f1a(0x313)][_0x93f1a(0x22d)][_0x93f1a(0x265)]()&&(_0x56432e=!![]);});if(_0x56432e==![]){_0x4c107a='',$(_0x428bdb(0x14a))[_0x428bdb(0x279)]($(_0x428bdb(0x14a))[0x0][_0x428bdb(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x331ce7)),SharingUserId[_0x428bdb(0x27d)](tempUserId);var _0x47bb4d=_0x192dc5[0x0][_0x428bdb(0x31b)][_0x428bdb(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x192dc5[0x0][_0x428bdb(0x31b)][_0x428bdb(0x232)]('|')[0x2]),_0x47bb4d['includes']('#')==!![]&&(_0x47bb4d=_0x47bb4d[_0x428bdb(0x232)]('#ext')[0x0],_0x47bb4d=_0x47bb4d[_0x428bdb(0x158)]('_','@')),SharingUserEmail['push'](_0x47bb4d),BannersApprover[_0x428bdb(0x27d)]({'EMail':_0x47bb4d,'Id':tempUserId,'UserName':_0x192dc5[0x0][_0x428bdb(0x201)]}),userRecords['push']({'EMail':_0x47bb4d,'WebPartName':'BannersApprover','deptId':0x0,'Id':tempUserId,'UserName':_0x192dc5[0x0][_0x428bdb(0x201)]}),SharingUserName['push'](_0x192dc5[0x0][_0x428bdb(0x201)]),attachment=_spPageContextInfo[_0x428bdb(0x1b9)]+_0x428bdb(0x169)+escapeProperly(_0x47bb4d),_0x4c107a+=_0x428bdb(0x230)+tempUserId+_0x428bdb(0x22b),_0x4c107a+=_0x428bdb(0x13e)+attachment+'\x22\x20alt=\x22\x22></div>',_0x4c107a+=_0x428bdb(0x2fa)+_0x192dc5[0x0][_0x428bdb(0x201)]+_0x428bdb(0x1cd),_0x4c107a+=_0x428bdb(0x124)+_0x47bb4d+_0x428bdb(0x1c6)+_0x47bb4d+'</p></div>',_0x4c107a+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeBannerApprov(this,\x20\x27'+_0x47bb4d+_0x428bdb(0x24d),_0x4c107a+=_0x428bdb(0x173),$('#informationApprover')[_0x428bdb(0x18d)](_0x4c107a),EmptyPeoplePicker(_0x331ce7);}else alert(_0x428bdb(0x11f)+_0x192dc5[0x0]['DisplayText']+_0x428bdb(0x216)),EmptyPeoplePicker(_0x331ce7);}else{}};}function onChangeAnnouncement(_0x304e89,_0x44c995){var _0x30e226=a3_0x5069dc,_0x24e21b=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x304e89],_0x150099='';_0x24e21b[_0x30e226(0x1d5)]=function(_0x4b4af1,_0x2372c1){var _0x51af6e=_0x30e226;if(_0x2372c1[_0x51af6e(0x246)]>0x0){var _0x2d7b68=![];g_AnnouncementsArr[_0x51af6e(0x11a)](function(_0x304842){var _0x5b47a0=_0x51af6e;_0x304842[_0x5b47a0(0x2f7)][_0x5b47a0(0x265)]()==_0x2372c1[0x0][_0x5b47a0(0x313)]['Email'][_0x5b47a0(0x265)]()&&(_0x2d7b68=!![]);});if(_0x2d7b68==![]){_0x150099='',$(_0x51af6e(0x2b2))[_0x51af6e(0x279)]($(_0x51af6e(0x2b2))[0x0][_0x51af6e(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x44c995)),SharingUserId['push'](tempUserId);var _0x31115a=_0x2372c1[0x0][_0x51af6e(0x31b)][_0x51af6e(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x51af6e(0x27d)](_0x2372c1[0x0][_0x51af6e(0x31b)][_0x51af6e(0x232)]('|')[0x2]),_0x31115a[_0x51af6e(0x13d)]('#')==!![]&&(_0x31115a=_0x31115a[_0x51af6e(0x232)](_0x51af6e(0x13c))[0x0],_0x31115a=_0x31115a[_0x51af6e(0x158)]('_','@')),SharingUserEmail[_0x51af6e(0x27d)](_0x31115a),g_AnnouncementsArr[_0x51af6e(0x27d)]({'EMail':_0x31115a,'Id':tempUserId,'UserName':_0x2372c1[0x0]['DisplayText']}),userRecords[_0x51af6e(0x27d)]({'EMail':_0x31115a,'WebPartName':_0x51af6e(0x15f),'deptId':0x0,'Id':tempUserId,'UserName':_0x2372c1[0x0][_0x51af6e(0x201)]}),SharingUserName[_0x51af6e(0x27d)](_0x2372c1[0x0][_0x51af6e(0x201)]),attachment=_spPageContextInfo[_0x51af6e(0x1b9)]+_0x51af6e(0x169)+escapeProperly(_0x31115a),_0x150099+=_0x51af6e(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x150099+=_0x51af6e(0x13e)+attachment+'\x22\x20alt=\x22\x22></div>',_0x150099+=_0x51af6e(0x2fa)+_0x2372c1[0x0][_0x51af6e(0x201)]+_0x51af6e(0x1cd),_0x150099+=_0x51af6e(0x124)+_0x31115a+_0x51af6e(0x1c6)+_0x31115a+_0x51af6e(0x208),_0x150099+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAnnouncement(this,\x20\x27'+_0x31115a+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x150099+='</div></div></div></div>',$('#announcementsAdmin')['append'](_0x150099),EmptyPeoplePicker(_0x44c995);}else alert('User\x20'+_0x2372c1[0x0][_0x51af6e(0x201)]+_0x51af6e(0x216)),EmptyPeoplePicker(_0x44c995);}else{}};}function onChangeAnnouncementApprovers(_0x121920,_0x44ff48){var _0xeeb9a3=a3_0x5069dc,_0x5ebe1a=SPClientPeoplePicker[_0xeeb9a3(0x2e9)][_0x121920],_0x354842='';_0x5ebe1a['OnValueChangedClientScript']=function(_0x15f560,_0x573e23){var _0x2cfb5d=_0xeeb9a3;if(_0x573e23[_0x2cfb5d(0x246)]>0x0){var _0x42f2c4=![];announcementApprover[_0x2cfb5d(0x11a)](function(_0x53031c){var _0x4a5188=_0x2cfb5d;_0x53031c['EMail'][_0x4a5188(0x265)]()==_0x573e23[0x0][_0x4a5188(0x313)][_0x4a5188(0x22d)][_0x4a5188(0x265)]()&&(_0x42f2c4=!![]);});if(_0x42f2c4==![]){_0x354842='',$(_0x2cfb5d(0x253))[_0x2cfb5d(0x279)]($(_0x2cfb5d(0x253))[0x0][_0x2cfb5d(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x44ff48)),SharingUserId[_0x2cfb5d(0x27d)](tempUserId);var _0x3681cc=_0x573e23[0x0][_0x2cfb5d(0x31b)][_0x2cfb5d(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x2cfb5d(0x27d)](_0x573e23[0x0]['Key'][_0x2cfb5d(0x232)]('|')[0x2]),_0x3681cc['includes']('#')==!![]&&(_0x3681cc=_0x3681cc[_0x2cfb5d(0x232)](_0x2cfb5d(0x13c))[0x0],_0x3681cc=_0x3681cc['replace']('_','@')),SharingUserEmail[_0x2cfb5d(0x27d)](_0x3681cc),announcementApprover[_0x2cfb5d(0x27d)]({'EMail':_0x3681cc,'Id':tempUserId,'UserName':_0x573e23[0x0][_0x2cfb5d(0x201)]}),userRecords['push']({'EMail':_0x3681cc,'WebPartName':'announcementApprover','deptId':0x0,'Id':tempUserId,'UserName':_0x573e23[0x0][_0x2cfb5d(0x201)]}),SharingUserName[_0x2cfb5d(0x27d)](_0x573e23[0x0][_0x2cfb5d(0x201)]),attachment=_spPageContextInfo[_0x2cfb5d(0x1b9)]+_0x2cfb5d(0x169)+escapeProperly(_0x3681cc),_0x354842+=_0x2cfb5d(0x230)+tempUserId+_0x2cfb5d(0x22b),_0x354842+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+'\x22\x20alt=\x22\x22></div>',_0x354842+=_0x2cfb5d(0x2fa)+_0x573e23[0x0][_0x2cfb5d(0x201)]+_0x2cfb5d(0x1cd),_0x354842+=_0x2cfb5d(0x124)+_0x3681cc+_0x2cfb5d(0x1c6)+_0x3681cc+_0x2cfb5d(0x208),_0x354842+=_0x2cfb5d(0x155)+_0x3681cc+_0x2cfb5d(0x24d),_0x354842+=_0x2cfb5d(0x173),$('#announcementApprover')[_0x2cfb5d(0x18d)](_0x354842),EmptyPeoplePicker(_0x44ff48);}else alert(_0x2cfb5d(0x11f)+_0x573e23[0x0][_0x2cfb5d(0x201)]+_0x2cfb5d(0x216)),EmptyPeoplePicker(_0x44ff48);}else{}};}function onChangeAlert(_0x5d91ed,_0x493b76){var _0x5238c9=a3_0x5069dc,_0x2b0bea=SPClientPeoplePicker[_0x5238c9(0x2e9)][_0x5d91ed],_0x4c6aea='';_0x2b0bea[_0x5238c9(0x1d5)]=function(_0x2509c8,_0x2588c8){var _0x127b0d=_0x5238c9;if(_0x2588c8[_0x127b0d(0x246)]>0x0){var _0x2b6905=![];g_AlertArr['forEach'](function(_0x316a23){var _0x37e213=_0x127b0d;_0x316a23['EMail']['toLowerCase']()==_0x2588c8[0x0][_0x37e213(0x313)]['Email'][_0x37e213(0x265)]()&&(_0x2b6905=!![]);});if(_0x2b6905==![]){_0x4c6aea='',$(_0x127b0d(0x238))[_0x127b0d(0x279)]($(_0x127b0d(0x238))[0x0][_0x127b0d(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x493b76)),SharingUserId['push'](tempUserId);var _0x55af11=_0x2588c8[0x0][_0x127b0d(0x31b)][_0x127b0d(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x127b0d(0x27d)](_0x2588c8[0x0][_0x127b0d(0x31b)][_0x127b0d(0x232)]('|')[0x2]),_0x55af11[_0x127b0d(0x13d)]('#')==!![]&&(_0x55af11=_0x55af11[_0x127b0d(0x232)](_0x127b0d(0x13c))[0x0],_0x55af11=_0x55af11[_0x127b0d(0x158)]('_','@')),SharingUserEmail[_0x127b0d(0x27d)](_0x55af11),g_AlertArr[_0x127b0d(0x27d)]({'EMail':_0x55af11,'Id':tempUserId,'UserName':_0x2588c8[0x0][_0x127b0d(0x201)]}),userRecords[_0x127b0d(0x27d)]({'EMail':_0x55af11,'WebPartName':_0x127b0d(0x255),'deptId':0x0,'Id':tempUserId,'UserName':_0x2588c8[0x0]['DisplayText']}),SharingUserName[_0x127b0d(0x27d)](_0x2588c8[0x0]['DisplayText']),attachment=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x55af11),_0x4c6aea+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x127b0d(0x22b),_0x4c6aea+=_0x127b0d(0x13e)+attachment+_0x127b0d(0x31e),_0x4c6aea+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x2588c8[0x0][_0x127b0d(0x201)]+'</h3>',_0x4c6aea+=_0x127b0d(0x124)+_0x55af11+'\x27)\x22>'+_0x55af11+'</p></div>',_0x4c6aea+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAlert(this,\x20\x27'+_0x55af11+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x4c6aea+=_0x127b0d(0x173),$(_0x127b0d(0x238))[_0x127b0d(0x18d)](_0x4c6aea),EmptyPeoplePicker(_0x493b76);}else alert(_0x127b0d(0x11f)+_0x2588c8[0x0][_0x127b0d(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x493b76);}else{}};}function onChangeAlertApprovers(_0x121987,_0x4bb03b){var _0x301b96=a3_0x5069dc,_0x5e536e=SPClientPeoplePicker[_0x301b96(0x2e9)][_0x121987],_0x37bf0b='';_0x5e536e[_0x301b96(0x1d5)]=function(_0x1ce804,_0x2364ec){var _0x5d429e=_0x301b96;if(_0x2364ec['length']>0x0){var _0x3d150d=![];AlertApprover[_0x5d429e(0x11a)](function(_0x2883d8){var _0x3c31ea=_0x5d429e;_0x2883d8['EMail']['toLowerCase']()==_0x2364ec[0x0][_0x3c31ea(0x313)][_0x3c31ea(0x22d)][_0x3c31ea(0x265)]()&&(_0x3d150d=!![]);});if(_0x3d150d==![]){_0x37bf0b='',$(_0x5d429e(0x142))[_0x5d429e(0x279)]($(_0x5d429e(0x142))[0x0][_0x5d429e(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x4bb03b)),SharingUserId[_0x5d429e(0x27d)](tempUserId);var _0x57d258=_0x2364ec[0x0][_0x5d429e(0x31b)][_0x5d429e(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x2364ec[0x0][_0x5d429e(0x31b)][_0x5d429e(0x232)]('|')[0x2]),_0x57d258[_0x5d429e(0x13d)]('#')==!![]&&(_0x57d258=_0x57d258[_0x5d429e(0x232)](_0x5d429e(0x13c))[0x0],_0x57d258=_0x57d258[_0x5d429e(0x158)]('_','@')),SharingUserEmail['push'](_0x57d258),AlertApprover[_0x5d429e(0x27d)]({'EMail':_0x57d258,'Id':tempUserId,'UserName':_0x2364ec[0x0][_0x5d429e(0x201)]}),userRecords[_0x5d429e(0x27d)]({'EMail':_0x57d258,'WebPartName':_0x5d429e(0x255),'deptId':0x0,'Id':tempUserId,'UserName':_0x2364ec[0x0][_0x5d429e(0x201)]}),SharingUserName[_0x5d429e(0x27d)](_0x2364ec[0x0][_0x5d429e(0x201)]),attachment=_spPageContextInfo[_0x5d429e(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x57d258),_0x37bf0b+=_0x5d429e(0x230)+tempUserId+_0x5d429e(0x22b),_0x37bf0b+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x5d429e(0x31e),_0x37bf0b+=_0x5d429e(0x2fa)+_0x2364ec[0x0][_0x5d429e(0x201)]+_0x5d429e(0x1cd),_0x37bf0b+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x57d258+_0x5d429e(0x1c6)+_0x57d258+_0x5d429e(0x208),_0x37bf0b+=_0x5d429e(0x137)+_0x57d258+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x37bf0b+='</div></div></div></div>',$(_0x5d429e(0x142))[_0x5d429e(0x18d)](_0x37bf0b),EmptyPeoplePicker(_0x4bb03b);}else alert(_0x5d429e(0x11f)+_0x2364ec[0x0]['DisplayText']+'\x20already\x20exists'),EmptyPeoplePicker(_0x4bb03b);}else{}};}function onChangeEvent(_0x46b3bc,_0x4be81f){var _0x373435=a3_0x5069dc,_0x3e2b18=SPClientPeoplePicker[_0x373435(0x2e9)][_0x46b3bc],_0xe3e023='';_0x3e2b18[_0x373435(0x1d5)]=function(_0x52c251,_0x235fd6){var _0x490b1a=_0x373435;if(_0x235fd6[_0x490b1a(0x246)]>0x0){var _0x5980b3=![];g_eventAdminArr[_0x490b1a(0x11a)](function(_0x527325){var _0x215ab7=_0x490b1a;_0x527325[_0x215ab7(0x2f7)][_0x215ab7(0x265)]()==_0x235fd6[0x0][_0x215ab7(0x313)]['Email'][_0x215ab7(0x265)]()&&(_0x5980b3=!![]);});if(_0x5980b3==![]){_0xe3e023='',$('#eventAdmin')[_0x490b1a(0x279)]($(_0x490b1a(0x111))[0x0][_0x490b1a(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x4be81f)),SharingUserId[_0x490b1a(0x27d)](tempUserId);var _0xf5f419=_0x235fd6[0x0][_0x490b1a(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0x490b1a(0x27d)](_0x235fd6[0x0][_0x490b1a(0x31b)]['split']('|')[0x2]),_0xf5f419['includes']('#')==!![]&&(_0xf5f419=_0xf5f419[_0x490b1a(0x232)](_0x490b1a(0x13c))[0x0],_0xf5f419=_0xf5f419[_0x490b1a(0x158)]('_','@')),SharingUserEmail[_0x490b1a(0x27d)](_0xf5f419),g_eventAdminArr[_0x490b1a(0x27d)]({'EMail':_0xf5f419,'Id':tempUserId,'UserName':_0x235fd6[0x0]['DisplayText']}),userRecords[_0x490b1a(0x27d)]({'EMail':_0xf5f419,'WebPartName':_0x490b1a(0x21f),'deptId':0x0,'Id':tempUserId,'UserName':_0x235fd6[0x0][_0x490b1a(0x201)]}),SharingUserName[_0x490b1a(0x27d)](_0x235fd6[0x0][_0x490b1a(0x201)]),attachment=_spPageContextInfo[_0x490b1a(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0xf5f419),_0xe3e023+=_0x490b1a(0x230)+tempUserId+_0x490b1a(0x22b),_0xe3e023+=_0x490b1a(0x13e)+attachment+_0x490b1a(0x31e),_0xe3e023+=_0x490b1a(0x2fa)+_0x235fd6[0x0][_0x490b1a(0x201)]+_0x490b1a(0x1cd),_0xe3e023+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0xf5f419+_0x490b1a(0x1c6)+_0xf5f419+'</p></div>',_0xe3e023+=_0x490b1a(0x2a6)+_0xf5f419+_0x490b1a(0x24d),_0xe3e023+='</div></div></div></div>',$(_0x490b1a(0x111))[_0x490b1a(0x18d)](_0xe3e023),EmptyPeoplePicker(_0x4be81f);}else alert(_0x490b1a(0x11f)+_0x235fd6[0x0]['DisplayText']+_0x490b1a(0x216)),EmptyPeoplePicker(_0x4be81f);}else{}};}function onChangeEventApprover(_0x5eae78,_0x2e0b42){var _0x44834d=a3_0x5069dc,_0x2f78c2=SPClientPeoplePicker[_0x44834d(0x2e9)][_0x5eae78],_0x5c3205='';_0x2f78c2[_0x44834d(0x1d5)]=function(_0x3d58ce,_0x2ae203){var _0x11264c=_0x44834d;if(_0x2ae203[_0x11264c(0x246)]>0x0){var _0x1226b4=![];EventApprover[_0x11264c(0x11a)](function(_0x3bb2f4){var _0x4a7e8f=_0x11264c;_0x3bb2f4[_0x4a7e8f(0x2f7)][_0x4a7e8f(0x265)]()==_0x2ae203[0x0][_0x4a7e8f(0x313)]['Email'][_0x4a7e8f(0x265)]()&&(_0x1226b4=!![]);});if(_0x1226b4==![]){_0x5c3205='',$(_0x11264c(0x1a2))[_0x11264c(0x279)]($('#EventApprover')[0x0][_0x11264c(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x2e0b42)),SharingUserId['push'](tempUserId);var _0x2c7fe8=_0x2ae203[0x0][_0x11264c(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0x11264c(0x27d)](_0x2ae203[0x0][_0x11264c(0x31b)][_0x11264c(0x232)]('|')[0x2]),_0x2c7fe8[_0x11264c(0x13d)]('#')==!![]&&(_0x2c7fe8=_0x2c7fe8[_0x11264c(0x232)](_0x11264c(0x13c))[0x0],_0x2c7fe8=_0x2c7fe8[_0x11264c(0x158)]('_','@')),SharingUserEmail[_0x11264c(0x27d)](_0x2c7fe8),EventApprover[_0x11264c(0x27d)]({'EMail':_0x2c7fe8,'Id':tempUserId,'UserName':_0x2ae203[0x0][_0x11264c(0x201)]}),userRecords[_0x11264c(0x27d)]({'EMail':_0x2c7fe8,'WebPartName':_0x11264c(0x180),'deptId':0x0,'Id':tempUserId,'UserName':_0x2ae203[0x0][_0x11264c(0x201)]}),SharingUserName[_0x11264c(0x27d)](_0x2ae203[0x0][_0x11264c(0x201)]),attachment=_spPageContextInfo[_0x11264c(0x1b9)]+_0x11264c(0x169)+escapeProperly(_0x2c7fe8),_0x5c3205+=_0x11264c(0x230)+tempUserId+_0x11264c(0x22b),_0x5c3205+=_0x11264c(0x13e)+attachment+'\x22\x20alt=\x22\x22></div>',_0x5c3205+=_0x11264c(0x2fa)+_0x2ae203[0x0][_0x11264c(0x201)]+_0x11264c(0x1cd),_0x5c3205+=_0x11264c(0x124)+_0x2c7fe8+_0x11264c(0x1c6)+_0x2c7fe8+_0x11264c(0x208),_0x5c3205+=_0x11264c(0x1ec)+_0x2c7fe8+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x5c3205+=_0x11264c(0x173),$('#EventApprover')[_0x11264c(0x18d)](_0x5c3205),EmptyPeoplePicker(_0x2e0b42);}else alert('User\x20'+_0x2ae203[0x0][_0x11264c(0x201)]+_0x11264c(0x216)),EmptyPeoplePicker(_0x2e0b42);}else{}};}function onChangeSuevey(_0x5f26e0,_0x4d53a3){var _0xadc5fc=a3_0x5069dc,_0x14f3b1=SPClientPeoplePicker[_0xadc5fc(0x2e9)][_0x5f26e0],_0x2c7b2a='';_0x14f3b1[_0xadc5fc(0x1d5)]=function(_0x38cc46,_0x50a684){var _0x944536=_0xadc5fc;if(_0x50a684['length']>0x0){var _0x469d25=![];g_PollsArr[_0x944536(0x11a)](function(_0x4c6dc1){var _0x43395d=_0x944536;_0x4c6dc1[_0x43395d(0x2f7)]['toLowerCase']()==_0x50a684[0x0][_0x43395d(0x313)]['Email'][_0x43395d(0x265)]()&&(_0x469d25=!![]);});if(_0x469d25==![]){_0x2c7b2a='',$(_0x944536(0x1e3))[_0x944536(0x279)]($(_0x944536(0x1e3))[0x0][_0x944536(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x4d53a3)),SharingUserId[_0x944536(0x27d)](tempUserId);var _0x2b6ce2=_0x50a684[0x0]['Key'][_0x944536(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x944536(0x27d)](_0x50a684[0x0][_0x944536(0x31b)]['split']('|')[0x2]),_0x2b6ce2[_0x944536(0x13d)]('#')==!![]&&(_0x2b6ce2=_0x2b6ce2[_0x944536(0x232)](_0x944536(0x13c))[0x0],_0x2b6ce2=_0x2b6ce2[_0x944536(0x158)]('_','@')),SharingUserEmail[_0x944536(0x27d)](_0x2b6ce2),g_PollsArr[_0x944536(0x27d)]({'EMail':_0x2b6ce2,'Id':tempUserId,'UserName':_0x50a684[0x0]['DisplayText']}),userRecords[_0x944536(0x27d)]({'EMail':_0x2b6ce2,'WebPartName':_0x944536(0x1a7),'deptId':0x0,'Id':tempUserId,'UserName':_0x50a684[0x0][_0x944536(0x201)]}),SharingUserName[_0x944536(0x27d)](_0x50a684[0x0]['DisplayText']),attachment=_spPageContextInfo[_0x944536(0x1b9)]+_0x944536(0x169)+escapeProperly(_0x2b6ce2),_0x2c7b2a+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x944536(0x22b),_0x2c7b2a+=_0x944536(0x13e)+attachment+_0x944536(0x31e),_0x2c7b2a+=_0x944536(0x2fa)+_0x50a684[0x0]['DisplayText']+_0x944536(0x1cd),_0x2c7b2a+=_0x944536(0x124)+_0x2b6ce2+'\x27)\x22>'+_0x2b6ce2+_0x944536(0x208),_0x2c7b2a+=_0x944536(0x248)+_0x2b6ce2+_0x944536(0x24d),_0x2c7b2a+=_0x944536(0x173),$(_0x944536(0x1e3))[_0x944536(0x18d)](_0x2c7b2a),EmptyPeoplePicker(_0x4d53a3);}else alert('User\x20'+_0x50a684[0x0][_0x944536(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x4d53a3);}else{}};}function onChangeSueveyApprovers(_0x1dc322,_0x168ae7){var _0x47e59c=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x1dc322],_0x266bbb='';_0x47e59c['OnValueChangedClientScript']=function(_0x5bdf73,_0x2295c7){var _0x33226c=a3_0x27b4;if(_0x2295c7[_0x33226c(0x246)]>0x0){var _0x246caa=![];SurveyApprover[_0x33226c(0x11a)](function(_0x53f4c9){var _0x278b13=_0x33226c;_0x53f4c9[_0x278b13(0x2f7)][_0x278b13(0x265)]()==_0x2295c7[0x0][_0x278b13(0x313)][_0x278b13(0x22d)][_0x278b13(0x265)]()&&(_0x246caa=!![]);});if(_0x246caa==![]){_0x266bbb='',$('#SurveyApprover')['scrollTop']($(_0x33226c(0x305))[0x0][_0x33226c(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x168ae7)),SharingUserId[_0x33226c(0x27d)](tempUserId);var _0x546a78=_0x2295c7[0x0]['Key'][_0x33226c(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x33226c(0x27d)](_0x2295c7[0x0]['Key'][_0x33226c(0x232)]('|')[0x2]),_0x546a78['includes']('#')==!![]&&(_0x546a78=_0x546a78[_0x33226c(0x232)](_0x33226c(0x13c))[0x0],_0x546a78=_0x546a78[_0x33226c(0x158)]('_','@')),SharingUserEmail[_0x33226c(0x27d)](_0x546a78),SurveyApprover[_0x33226c(0x27d)]({'EMail':_0x546a78,'Id':tempUserId,'UserName':_0x2295c7[0x0]['DisplayText']}),userRecords['push']({'EMail':_0x546a78,'WebPartName':_0x33226c(0x17d),'deptId':0x0,'Id':tempUserId,'UserName':_0x2295c7[0x0][_0x33226c(0x201)]}),SharingUserName[_0x33226c(0x27d)](_0x2295c7[0x0][_0x33226c(0x201)]),attachment=_spPageContextInfo[_0x33226c(0x1b9)]+_0x33226c(0x169)+escapeProperly(_0x546a78),_0x266bbb+=_0x33226c(0x230)+tempUserId+_0x33226c(0x22b),_0x266bbb+=_0x33226c(0x13e)+attachment+_0x33226c(0x31e),_0x266bbb+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x2295c7[0x0]['DisplayText']+_0x33226c(0x1cd),_0x266bbb+=_0x33226c(0x124)+_0x546a78+'\x27)\x22>'+_0x546a78+_0x33226c(0x208),_0x266bbb+=_0x33226c(0x147)+_0x546a78+_0x33226c(0x24d),_0x266bbb+=_0x33226c(0x173),$(_0x33226c(0x305))[_0x33226c(0x18d)](_0x266bbb),EmptyPeoplePicker(_0x168ae7);}else alert(_0x33226c(0x11f)+_0x2295c7[0x0][_0x33226c(0x201)]+_0x33226c(0x216)),EmptyPeoplePicker(_0x168ae7);}else{}};}function onChangeRecogination(_0x2a11df,_0x258c27){var _0x578517=a3_0x5069dc,_0x5b7a9f=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x2a11df],_0x28680a='';_0x5b7a9f[_0x578517(0x1d5)]=function(_0xdc98d4,_0x9a2b0a){var _0x1e4967=_0x578517;if(_0x9a2b0a[_0x1e4967(0x246)]>0x0){var _0x4cdbc8=![];g_RecognitionArr[_0x1e4967(0x11a)](function(_0x29248e){var _0x50d505=_0x1e4967;_0x29248e[_0x50d505(0x2f7)][_0x50d505(0x265)]()==_0x9a2b0a[0x0][_0x50d505(0x313)][_0x50d505(0x22d)]['toLowerCase']()&&(_0x4cdbc8=!![]);});if(_0x4cdbc8==![]){_0x28680a='',$('#recognitionAdmin')[_0x1e4967(0x279)]($('#recognitionAdmin')[0x0]['scrollHeight']),tempUserId=parseInt(getUserInformation(_0x258c27)),SharingUserId[_0x1e4967(0x27d)](tempUserId);var _0x20e545=_0x9a2b0a[0x0][_0x1e4967(0x31b)][_0x1e4967(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x1e4967(0x27d)](_0x9a2b0a[0x0][_0x1e4967(0x31b)][_0x1e4967(0x232)]('|')[0x2]),_0x20e545[_0x1e4967(0x13d)]('#')==!![]&&(_0x20e545=_0x20e545[_0x1e4967(0x232)](_0x1e4967(0x13c))[0x0],_0x20e545=_0x20e545[_0x1e4967(0x158)]('_','@')),SharingUserEmail[_0x1e4967(0x27d)](_0x20e545),g_RecognitionArr[_0x1e4967(0x27d)]({'EMail':_0x20e545,'Id':tempUserId,'UserName':_0x9a2b0a[0x0][_0x1e4967(0x201)]}),userRecords[_0x1e4967(0x27d)]({'EMail':_0x20e545,'WebPartName':'Recognition','deptId':0x0,'Id':tempUserId,'UserName':_0x9a2b0a[0x0][_0x1e4967(0x201)]}),SharingUserName[_0x1e4967(0x27d)](_0x9a2b0a[0x0][_0x1e4967(0x201)]),attachment=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x20e545),_0x28680a+=_0x1e4967(0x230)+tempUserId+_0x1e4967(0x22b),_0x28680a+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x1e4967(0x31e),_0x28680a+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x9a2b0a[0x0][_0x1e4967(0x201)]+_0x1e4967(0x1cd),_0x28680a+=_0x1e4967(0x124)+_0x20e545+_0x1e4967(0x1c6)+_0x20e545+'</p></div>',_0x28680a+=_0x1e4967(0x17a)+_0x20e545+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x28680a+=_0x1e4967(0x173),$(_0x1e4967(0x28c))[_0x1e4967(0x18d)](_0x28680a),EmptyPeoplePicker(_0x258c27);}else alert(_0x1e4967(0x11f)+_0x9a2b0a[0x0][_0x1e4967(0x201)]+_0x1e4967(0x216)),EmptyPeoplePicker(_0x258c27);}else{}};}function onChangeRecoginationApprovers(_0x220278,_0x1abc57){var _0x5cfdd1=a3_0x5069dc,_0x28baa6=SPClientPeoplePicker[_0x5cfdd1(0x2e9)][_0x220278],_0x52cd28='';_0x28baa6[_0x5cfdd1(0x1d5)]=function(_0x44036d,_0xb3c231){var _0x3df54c=_0x5cfdd1;if(_0xb3c231['length']>0x0){var _0x211976=![];RecoginitionApprover[_0x3df54c(0x11a)](function(_0x4c563b){var _0x7bc38f=_0x3df54c;_0x4c563b[_0x7bc38f(0x2f7)][_0x7bc38f(0x265)]()==_0xb3c231[0x0][_0x7bc38f(0x313)][_0x7bc38f(0x22d)][_0x7bc38f(0x265)]()&&(_0x211976=!![]);});if(_0x211976==![]){_0x52cd28='',$(_0x3df54c(0x18e))['scrollTop']($(_0x3df54c(0x18e))[0x0][_0x3df54c(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x1abc57)),SharingUserId[_0x3df54c(0x27d)](tempUserId);var _0x1cb991=_0xb3c231[0x0][_0x3df54c(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail['push'](_0xb3c231[0x0][_0x3df54c(0x31b)][_0x3df54c(0x232)]('|')[0x2]),_0x1cb991[_0x3df54c(0x13d)]('#')==!![]&&(_0x1cb991=_0x1cb991[_0x3df54c(0x232)](_0x3df54c(0x13c))[0x0],_0x1cb991=_0x1cb991[_0x3df54c(0x158)]('_','@')),SharingUserEmail[_0x3df54c(0x27d)](_0x1cb991),RecoginitionApprover[_0x3df54c(0x27d)]({'EMail':_0x1cb991,'Id':tempUserId,'UserName':_0xb3c231[0x0][_0x3df54c(0x201)]}),userRecords[_0x3df54c(0x27d)]({'EMail':_0x1cb991,'WebPartName':_0x3df54c(0x197),'deptId':0x0,'Id':tempUserId,'UserName':_0xb3c231[0x0][_0x3df54c(0x201)]}),SharingUserName['push'](_0xb3c231[0x0][_0x3df54c(0x201)]),attachment=_spPageContextInfo[_0x3df54c(0x1b9)]+_0x3df54c(0x169)+escapeProperly(_0x1cb991),_0x52cd28+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x3df54c(0x22b),_0x52cd28+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x3df54c(0x31e),_0x52cd28+=_0x3df54c(0x2fa)+_0xb3c231[0x0][_0x3df54c(0x201)]+_0x3df54c(0x1cd),_0x52cd28+=_0x3df54c(0x124)+_0x1cb991+_0x3df54c(0x1c6)+_0x1cb991+'</p></div>',_0x52cd28+=_0x3df54c(0x328)+_0x1cb991+_0x3df54c(0x24d),_0x52cd28+=_0x3df54c(0x173),$(_0x3df54c(0x18e))[_0x3df54c(0x18d)](_0x52cd28),EmptyPeoplePicker(_0x1abc57);}else alert(_0x3df54c(0x11f)+_0xb3c231[0x0][_0x3df54c(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x1abc57);}else{}};}function onChangeExperence(_0x1f6ad0,_0x38761c){var _0xca1d0c=a3_0x5069dc,_0x348efe=SPClientPeoplePicker[_0xca1d0c(0x2e9)][_0x1f6ad0],_0x16139f='';_0x348efe[_0xca1d0c(0x1d5)]=function(_0x1b4e4e,_0x7d4126){var _0x3e8c76=_0xca1d0c;if(_0x7d4126['length']>0x0){var _0x400f43=![];g_GeneralArr[_0x3e8c76(0x11a)](function(_0x524547){var _0x59d245=_0x3e8c76;_0x524547['EMail']['toLowerCase']()==_0x7d4126[0x0][_0x59d245(0x313)][_0x59d245(0x22d)][_0x59d245(0x265)]()&&(_0x400f43=!![]);});if(_0x400f43==![]){_0x16139f='',$(_0x3e8c76(0x194))[_0x3e8c76(0x279)]($('#ExperienceAdmin')[0x0][_0x3e8c76(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x38761c)),SharingUserId[_0x3e8c76(0x27d)](tempUserId);var _0x1ffb9d=_0x7d4126[0x0][_0x3e8c76(0x31b)][_0x3e8c76(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x7d4126[0x0]['Key'][_0x3e8c76(0x232)]('|')[0x2]),_0x1ffb9d[_0x3e8c76(0x13d)]('#')==!![]&&(_0x1ffb9d=_0x1ffb9d[_0x3e8c76(0x232)](_0x3e8c76(0x13c))[0x0],_0x1ffb9d=_0x1ffb9d[_0x3e8c76(0x158)]('_','@')),SharingUserEmail[_0x3e8c76(0x27d)](_0x1ffb9d),g_GeneralArr[_0x3e8c76(0x27d)]({'EMail':_0x1ffb9d,'Id':tempUserId,'UserName':_0x7d4126[0x0]['DisplayText']}),userRecords[_0x3e8c76(0x27d)]({'EMail':_0x1ffb9d,'WebPartName':_0x3e8c76(0x258),'deptId':0x0,'Id':tempUserId,'UserName':_0x7d4126[0x0][_0x3e8c76(0x201)]}),SharingUserName[_0x3e8c76(0x27d)](_0x7d4126[0x0][_0x3e8c76(0x201)]),attachment=_spPageContextInfo[_0x3e8c76(0x1b9)]+_0x3e8c76(0x169)+escapeProperly(_0x1ffb9d),_0x16139f+=_0x3e8c76(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x16139f+=_0x3e8c76(0x13e)+attachment+_0x3e8c76(0x31e),_0x16139f+=_0x3e8c76(0x2fa)+_0x7d4126[0x0][_0x3e8c76(0x201)]+'</h3>',_0x16139f+=_0x3e8c76(0x124)+_0x1ffb9d+_0x3e8c76(0x1c6)+_0x1ffb9d+_0x3e8c76(0x208),_0x16139f+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeExperience(this,\x20\x27'+_0x1ffb9d+_0x3e8c76(0x24d),_0x16139f+='</div></div></div></div>',$(_0x3e8c76(0x194))[_0x3e8c76(0x18d)](_0x16139f),EmptyPeoplePicker(_0x38761c);}else alert(_0x3e8c76(0x11f)+_0x7d4126[0x0][_0x3e8c76(0x201)]+_0x3e8c76(0x216)),EmptyPeoplePicker(_0x38761c);}else{}};}function onChangeExperenceApprov(_0x2ecea1,_0x4a5679){var _0xe703aa=a3_0x5069dc,_0x470d8f=SPClientPeoplePicker[_0xe703aa(0x2e9)][_0x2ecea1],_0x17c046='';_0x470d8f['OnValueChangedClientScript']=function(_0x258afe,_0x290109){var _0x4fd5cb=_0xe703aa;if(_0x290109[_0x4fd5cb(0x246)]>0x0){var _0x465360=![];ExperienceApprover[_0x4fd5cb(0x11a)](function(_0x18771b){var _0x13bcf8=_0x4fd5cb;_0x18771b[_0x13bcf8(0x2f7)][_0x13bcf8(0x265)]()==_0x290109[0x0][_0x13bcf8(0x313)]['Email'][_0x13bcf8(0x265)]()&&(_0x465360=!![]);});if(_0x465360==![]){_0x17c046='',$(_0x4fd5cb(0x27f))[_0x4fd5cb(0x279)]($('#ExperienceApprover')[0x0]['scrollHeight']),tempUserId=parseInt(getUserInformation(_0x4a5679)),SharingUserId['push'](tempUserId);var _0x1798ce=_0x290109[0x0][_0x4fd5cb(0x31b)][_0x4fd5cb(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x4fd5cb(0x27d)](_0x290109[0x0]['Key'][_0x4fd5cb(0x232)]('|')[0x2]),_0x1798ce[_0x4fd5cb(0x13d)]('#')==!![]&&(_0x1798ce=_0x1798ce[_0x4fd5cb(0x232)]('#ext')[0x0],_0x1798ce=_0x1798ce[_0x4fd5cb(0x158)]('_','@')),SharingUserEmail[_0x4fd5cb(0x27d)](_0x1798ce),ExperienceApprover['push']({'EMail':_0x1798ce,'Id':tempUserId,'UserName':_0x290109[0x0][_0x4fd5cb(0x201)]}),userRecords[_0x4fd5cb(0x27d)]({'EMail':_0x1798ce,'WebPartName':'ExperienceApprover','deptId':0x0,'Id':tempUserId,'UserName':_0x290109[0x0]['DisplayText']}),SharingUserName['push'](_0x290109[0x0]['DisplayText']),attachment=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x1798ce),_0x17c046+=_0x4fd5cb(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x17c046+=_0x4fd5cb(0x13e)+attachment+_0x4fd5cb(0x31e),_0x17c046+=_0x4fd5cb(0x2fa)+_0x290109[0x0][_0x4fd5cb(0x201)]+_0x4fd5cb(0x1cd),_0x17c046+=_0x4fd5cb(0x124)+_0x1798ce+_0x4fd5cb(0x1c6)+_0x1798ce+'</p></div>',_0x17c046+=_0x4fd5cb(0x2b9)+_0x1798ce+_0x4fd5cb(0x24d),_0x17c046+='</div></div></div></div>',$(_0x4fd5cb(0x27f))[_0x4fd5cb(0x18d)](_0x17c046),EmptyPeoplePicker(_0x4a5679);}else alert(_0x4fd5cb(0x11f)+_0x290109[0x0][_0x4fd5cb(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x4a5679);}else{}};}function onChangeQuestion(_0x59c26c,_0x31c60f){var _0x41e53f=a3_0x5069dc,_0x26c9ef=SPClientPeoplePicker[_0x41e53f(0x2e9)][_0x59c26c],_0x2c7076='';_0x26c9ef[_0x41e53f(0x1d5)]=function(_0x253099,_0x323d0a){var _0x127d47=_0x41e53f;if(_0x323d0a[_0x127d47(0x246)]>0x0){var _0x222949=![];g_QuestionAnswerArr['forEach'](function(_0x19a328){var _0x32fc8a=_0x127d47;_0x19a328[_0x32fc8a(0x2f7)][_0x32fc8a(0x265)]()==_0x323d0a[0x0][_0x32fc8a(0x313)]['Email'][_0x32fc8a(0x265)]()&&(_0x222949=!![]);});if(_0x222949==![]){_0x2c7076='',$(_0x127d47(0x2dd))[_0x127d47(0x279)]($('#questionsAdmin')[0x0][_0x127d47(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x31c60f)),SharingUserId[_0x127d47(0x27d)](tempUserId);var _0x363ed8=_0x323d0a[0x0][_0x127d47(0x31b)][_0x127d47(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x127d47(0x27d)](_0x323d0a[0x0]['Key'][_0x127d47(0x232)]('|')[0x2]),_0x363ed8[_0x127d47(0x13d)]('#')==!![]&&(_0x363ed8=_0x363ed8['split'](_0x127d47(0x13c))[0x0],_0x363ed8=_0x363ed8[_0x127d47(0x158)]('_','@')),SharingUserEmail['push'](_0x363ed8),g_QuestionAnswerArr[_0x127d47(0x27d)]({'EMail':_0x363ed8,'Id':tempUserId,'UserName':_0x323d0a[0x0][_0x127d47(0x201)]}),userRecords[_0x127d47(0x27d)]({'EMail':_0x363ed8,'WebPartName':_0x127d47(0x28e),'deptId':0x0,'Id':tempUserId,'UserName':_0x323d0a[0x0][_0x127d47(0x201)]}),SharingUserName[_0x127d47(0x27d)](_0x323d0a[0x0][_0x127d47(0x201)]),attachment=_spPageContextInfo[_0x127d47(0x1b9)]+_0x127d47(0x169)+escapeProperly(_0x363ed8),_0x2c7076+=_0x127d47(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x2c7076+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x127d47(0x31e),_0x2c7076+=_0x127d47(0x2fa)+_0x323d0a[0x0][_0x127d47(0x201)]+_0x127d47(0x1cd),_0x2c7076+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x363ed8+_0x127d47(0x1c6)+_0x363ed8+_0x127d47(0x208),_0x2c7076+=_0x127d47(0x2ec)+_0x363ed8+_0x127d47(0x24d),_0x2c7076+=_0x127d47(0x173),$('#questionsAdmin')[_0x127d47(0x18d)](_0x2c7076),EmptyPeoplePicker(_0x31c60f);}else alert('User\x20'+_0x323d0a[0x0]['DisplayText']+_0x127d47(0x216)),EmptyPeoplePicker(_0x31c60f);}else{}};}function onChangeQuestionApproval(_0x134d5d,_0x5f4265){var _0x3455eb=a3_0x5069dc,_0x52cfeb=SPClientPeoplePicker[_0x3455eb(0x2e9)][_0x134d5d],_0xddab01='';_0x52cfeb[_0x3455eb(0x1d5)]=function(_0x1c8175,_0x28d4fe){var _0xe46bf=_0x3455eb;if(_0x28d4fe['length']>0x0){var _0x2f3046=![];QuestionApprover[_0xe46bf(0x11a)](function(_0x5e17ae){var _0x5be959=_0xe46bf;_0x5e17ae['EMail'][_0x5be959(0x265)]()==_0x28d4fe[0x0][_0x5be959(0x313)][_0x5be959(0x22d)][_0x5be959(0x265)]()&&(_0x2f3046=!![]);});if(_0x2f3046==![]){_0xddab01='',$(_0xe46bf(0x138))['scrollTop']($('#QuestionApprover')[0x0][_0xe46bf(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x5f4265)),SharingUserId[_0xe46bf(0x27d)](tempUserId);var _0x4b1f0d=_0x28d4fe[0x0][_0xe46bf(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0xe46bf(0x27d)](_0x28d4fe[0x0][_0xe46bf(0x31b)][_0xe46bf(0x232)]('|')[0x2]),_0x4b1f0d['includes']('#')==!![]&&(_0x4b1f0d=_0x4b1f0d['split'](_0xe46bf(0x13c))[0x0],_0x4b1f0d=_0x4b1f0d['replace']('_','@')),SharingUserEmail['push'](_0x4b1f0d),QuestionApprover[_0xe46bf(0x27d)]({'EMail':_0x4b1f0d,'Id':tempUserId,'UserName':_0x28d4fe[0x0][_0xe46bf(0x201)]}),userRecords['push']({'EMail':_0x4b1f0d,'WebPartName':_0xe46bf(0x105),'deptId':0x0,'Id':tempUserId,'UserName':_0x28d4fe[0x0][_0xe46bf(0x201)]}),SharingUserName[_0xe46bf(0x27d)](_0x28d4fe[0x0][_0xe46bf(0x201)]),attachment=_spPageContextInfo[_0xe46bf(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x4b1f0d),_0xddab01+=_0xe46bf(0x230)+tempUserId+_0xe46bf(0x22b),_0xddab01+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0xe46bf(0x31e),_0xddab01+=_0xe46bf(0x2fa)+_0x28d4fe[0x0]['DisplayText']+_0xe46bf(0x1cd),_0xddab01+=_0xe46bf(0x124)+_0x4b1f0d+'\x27)\x22>'+_0x4b1f0d+_0xe46bf(0x208),_0xddab01+=_0xe46bf(0x312)+_0x4b1f0d+_0xe46bf(0x24d),_0xddab01+=_0xe46bf(0x173),$(_0xe46bf(0x138))['append'](_0xddab01),EmptyPeoplePicker(_0x5f4265);}else alert('User\x20'+_0x28d4fe[0x0][_0xe46bf(0x201)]+_0xe46bf(0x216)),EmptyPeoplePicker(_0x5f4265);}else{}};}function onChangeMagazine(_0x2287de,_0x3d3b32){var _0xe8ce0e=a3_0x5069dc,_0x32fb31=SPClientPeoplePicker[_0xe8ce0e(0x2e9)][_0x2287de],_0x573012='';_0x32fb31[_0xe8ce0e(0x1d5)]=function(_0x1939df,_0x448b0a){var _0x21c394=_0xe8ce0e;if(_0x448b0a['length']>0x0){var _0x2368f5=![];g_MagazineArr[_0x21c394(0x11a)](function(_0x208601){var _0x2b063e=_0x21c394;_0x208601['EMail'][_0x2b063e(0x265)]()==_0x448b0a[0x0][_0x2b063e(0x313)][_0x2b063e(0x22d)][_0x2b063e(0x265)]()&&(_0x2368f5=!![]);});if(_0x2368f5==![]){_0x573012='',$('#magazineAdmin')[_0x21c394(0x279)]($(_0x21c394(0x177))[0x0][_0x21c394(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x3d3b32)),SharingUserId[_0x21c394(0x27d)](tempUserId);var _0x735b2b=_0x448b0a[0x0][_0x21c394(0x31b)][_0x21c394(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x21c394(0x27d)](_0x448b0a[0x0][_0x21c394(0x31b)]['split']('|')[0x2]),_0x735b2b[_0x21c394(0x13d)]('#')==!![]&&(_0x735b2b=_0x735b2b['split'](_0x21c394(0x13c))[0x0],_0x735b2b=_0x735b2b[_0x21c394(0x158)]('_','@')),SharingUserEmail[_0x21c394(0x27d)](_0x735b2b),g_MagazineArr['push']({'EMail':_0x735b2b,'Id':tempUserId,'UserName':_0x448b0a[0x0][_0x21c394(0x201)]}),userRecords[_0x21c394(0x27d)]({'EMail':_0x735b2b,'WebPartName':'Media\x20Gallery','deptId':0x0,'Id':tempUserId,'UserName':_0x448b0a[0x0]['DisplayText']}),SharingUserName[_0x21c394(0x27d)](_0x448b0a[0x0][_0x21c394(0x201)]),attachment=_spPageContextInfo['webAbsoluteUrl']+_0x21c394(0x169)+escapeProperly(_0x735b2b),_0x573012+=_0x21c394(0x230)+tempUserId+_0x21c394(0x22b),_0x573012+=_0x21c394(0x13e)+attachment+_0x21c394(0x31e),_0x573012+=_0x21c394(0x2fa)+_0x448b0a[0x0][_0x21c394(0x201)]+'</h3>',_0x573012+=_0x21c394(0x124)+_0x735b2b+_0x21c394(0x1c6)+_0x735b2b+'</p></div>',_0x573012+=_0x21c394(0x27e)+_0x735b2b+_0x21c394(0x24d),_0x573012+=_0x21c394(0x173),$(_0x21c394(0x177))[_0x21c394(0x18d)](_0x573012),EmptyPeoplePicker(_0x3d3b32);}else alert('User\x20'+_0x448b0a[0x0][_0x21c394(0x201)]+_0x21c394(0x216)),EmptyPeoplePicker(_0x3d3b32);}else{}};}function onChangeMedia(_0x38600f,_0x2fbb8d){var _0x1f9bed=a3_0x5069dc,_0xbb87d1=SPClientPeoplePicker[_0x1f9bed(0x2e9)][_0x38600f],_0x340d4f='';_0xbb87d1['OnValueChangedClientScript']=function(_0x971248,_0x14b955){var _0x2a34aa=_0x1f9bed;if(_0x14b955[_0x2a34aa(0x246)]>0x0){var _0x134960=![];g_MediaGalleryArr[_0x2a34aa(0x11a)](function(_0x34799e){var _0x3eecb0=_0x2a34aa;_0x34799e['EMail'][_0x3eecb0(0x265)]()==_0x14b955[0x0][_0x3eecb0(0x313)][_0x3eecb0(0x22d)][_0x3eecb0(0x265)]()&&(_0x134960=!![]);});if(_0x134960==![]){_0x340d4f='',$('#mediaGalleryAdmin')[_0x2a34aa(0x279)]($(_0x2a34aa(0x1bb))[0x0][_0x2a34aa(0x1bd)]),tempUserId=parseInt(getUserInformation(_0x2fbb8d)),SharingUserId[_0x2a34aa(0x27d)](tempUserId);var _0x5cee90=_0x14b955[0x0][_0x2a34aa(0x31b)][_0x2a34aa(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x2a34aa(0x27d)](_0x14b955[0x0][_0x2a34aa(0x31b)][_0x2a34aa(0x232)]('|')[0x2]),_0x5cee90[_0x2a34aa(0x13d)]('#')==!![]&&(_0x5cee90=_0x5cee90[_0x2a34aa(0x232)]('#ext')[0x0],_0x5cee90=_0x5cee90[_0x2a34aa(0x158)]('_','@')),SharingUserEmail[_0x2a34aa(0x27d)](_0x5cee90),g_MediaGalleryArr[_0x2a34aa(0x27d)]({'EMail':_0x5cee90,'Id':tempUserId,'UserName':_0x14b955[0x0][_0x2a34aa(0x201)]}),userRecords[_0x2a34aa(0x27d)]({'EMail':_0x5cee90,'WebPartName':_0x2a34aa(0x154),'deptId':0x0,'Id':tempUserId,'UserName':_0x14b955[0x0][_0x2a34aa(0x201)]}),SharingUserName['push'](_0x14b955[0x0][_0x2a34aa(0x201)]),attachment=_spPageContextInfo[_0x2a34aa(0x1b9)]+_0x2a34aa(0x169)+escapeProperly(_0x5cee90),_0x340d4f+=_0x2a34aa(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x340d4f+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+'\x22\x20alt=\x22\x22></div>',_0x340d4f+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x14b955[0x0]['DisplayText']+_0x2a34aa(0x1cd),_0x340d4f+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x5cee90+_0x2a34aa(0x1c6)+_0x5cee90+_0x2a34aa(0x208),_0x340d4f+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeMedia(this,\x20\x27'+_0x5cee90+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x340d4f+=_0x2a34aa(0x173),$('#mediaGalleryAdmin')[_0x2a34aa(0x18d)](_0x340d4f),EmptyPeoplePicker(_0x2fbb8d);}else alert(_0x2a34aa(0x11f)+_0x14b955[0x0][_0x2a34aa(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x2fbb8d);}else{}};}function onChangeDeptContributors(_0x30945c,_0x3df13e){var _0x15645a=a3_0x5069dc,_0x4ad651=SPClientPeoplePicker[_0x15645a(0x2e9)][_0x30945c],_0x222812='';_0x4ad651[_0x15645a(0x1d5)]=function(_0x422e64,_0x5db325){var _0x28b02b=_0x15645a;if(_0x5db325['length']>0x0){var _0x8b5253=![];g_Contributors[_0x28b02b(0x11a)](function(_0x450d34){var _0x22ea4c=_0x28b02b;_0x450d34[_0x22ea4c(0x2f7)]['toLowerCase']()==_0x5db325[0x0][_0x22ea4c(0x313)][_0x22ea4c(0x22d)][_0x22ea4c(0x265)]()&&(_0x8b5253=!![]);});if(_0x8b5253==![]){_0x222812='',tempUserId=parseInt(getUserInformation(_0x3df13e)),SharingUserId['push'](tempUserId);var _0x7ed487=_0x5db325[0x0][_0x28b02b(0x31b)][_0x28b02b(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x28b02b(0x27d)](_0x5db325[0x0][_0x28b02b(0x31b)][_0x28b02b(0x232)]('|')[0x2]),_0x7ed487[_0x28b02b(0x13d)]('#')==!![]&&(_0x7ed487=_0x7ed487['split'](_0x28b02b(0x13c))[0x0],_0x7ed487=_0x7ed487['replace']('_','@')),g_Contributors[_0x28b02b(0x27d)]({'EMail':_0x7ed487,'Id':tempUserId,'UserName':_0x5db325[0x0]['DisplayText']}),userRecords[_0x28b02b(0x27d)]({'EMail':_0x7ed487,'WebPartName':_0x28b02b(0x1a1),'deptId':$(_0x28b02b(0x2fd))[_0x28b02b(0x126)](),'Id':tempUserId,'UserName':_0x5db325[0x0]['DisplayText']}),SharingUserEmail[_0x28b02b(0x27d)](_0x7ed487),SharingUserName[_0x28b02b(0x27d)](_0x5db325[0x0][_0x28b02b(0x201)]),attachment=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x7ed487),_0x222812+=_0x28b02b(0x230)+tempUserId+_0x28b02b(0x22b),_0x222812+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x28b02b(0x31e),_0x222812+=_0x28b02b(0x2fa)+_0x5db325[0x0][_0x28b02b(0x201)]+_0x28b02b(0x1cd),_0x222812+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x7ed487+_0x28b02b(0x1c6)+_0x7ed487+_0x28b02b(0x208),_0x222812+=_0x28b02b(0x130)+_0x7ed487+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x222812+='</div></div></div></div>',$(_0x28b02b(0x1db))[_0x28b02b(0x279)]($(_0x28b02b(0x1db))[0x0][_0x28b02b(0x1bd)]),$('#deptContributors')['append'](_0x222812),EmptyPeoplePicker(_0x3df13e);}else alert(_0x28b02b(0x11f)+_0x5db325[0x0][_0x28b02b(0x201)]+_0x28b02b(0x216)),EmptyPeoplePicker(_0x3df13e);}else{}};}function onChangeHeadOfDept(_0x5b67a2,_0x138c69){var _0xf65940=a3_0x5069dc,_0x378db7=SPClientPeoplePicker[_0xf65940(0x2e9)][_0x5b67a2],_0x5f16d6='';_0x378db7[_0xf65940(0x1d5)]=function(_0x46ffb8,_0x3c575b){var _0x2324e4=_0xf65940;if(_0x3c575b[_0x2324e4(0x246)]>0x0){var _0x3fe6d5=![];g_HOD[_0x2324e4(0x11a)](function(_0x39b553){var _0x280eb2=_0x2324e4;_0x39b553[_0x280eb2(0x2f7)][_0x280eb2(0x265)]()==_0x3c575b[0x0][_0x280eb2(0x313)][_0x280eb2(0x22d)]['toLowerCase']()&&(_0x3fe6d5=!![]);});if(_0x3fe6d5==![]){_0x5f16d6='',tempUserId=parseInt(getUserInformation(_0x138c69)),SharingUserId[_0x2324e4(0x27d)](tempUserId);var _0x3d9feb=_0x3c575b[0x0][_0x2324e4(0x31b)][_0x2324e4(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x2324e4(0x27d)](_0x3c575b[0x0][_0x2324e4(0x31b)][_0x2324e4(0x232)]('|')[0x2]),_0x3d9feb['includes']('#')==!![]&&(_0x3d9feb=_0x3d9feb['split'](_0x2324e4(0x13c))[0x0],_0x3d9feb=_0x3d9feb[_0x2324e4(0x158)]('_','@')),g_HOD[_0x2324e4(0x27d)]({'EMail':_0x3d9feb,'Id':tempUserId,'UserName':_0x3c575b[0x0][_0x2324e4(0x201)]}),userRecords[_0x2324e4(0x27d)]({'EMail':_0x3d9feb,'WebPartName':_0x2324e4(0x190),'deptId':$(_0x2324e4(0x2fd))[_0x2324e4(0x126)](),'Id':tempUserId,'UserName':_0x3c575b[0x0][_0x2324e4(0x201)]}),SharingUserEmail[_0x2324e4(0x27d)](_0x3d9feb),SharingUserName[_0x2324e4(0x27d)](_0x3c575b[0x0][_0x2324e4(0x201)]),attachment=_spPageContextInfo[_0x2324e4(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x3d9feb),_0x5f16d6+=_0x2324e4(0x230)+tempUserId+_0x2324e4(0x22b),_0x5f16d6+=_0x2324e4(0x13e)+attachment+_0x2324e4(0x31e),_0x5f16d6+=_0x2324e4(0x2fa)+_0x3c575b[0x0]['DisplayText']+'</h3>',_0x5f16d6+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x3d9feb+_0x2324e4(0x1c6)+_0x3d9feb+_0x2324e4(0x208),_0x5f16d6+=_0x2324e4(0x311)+_0x3d9feb+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x5f16d6+=_0x2324e4(0x173),$('#headOfDepartment')[_0x2324e4(0x18d)](_0x5f16d6),$(_0x2324e4(0x249))[_0x2324e4(0x279)]($(_0x2324e4(0x249))[0x0]['scrollHeight']),EmptyPeoplePicker(_0x138c69);}else alert(_0x2324e4(0x11f)+_0x3c575b[0x0][_0x2324e4(0x201)]+_0x2324e4(0x216)),EmptyPeoplePicker(_0x138c69);}else{}};}function onChangeOtherDept(_0x55d154,_0x577ab0){var _0x5a33fb=a3_0x5069dc,_0x4b9b05=SPClientPeoplePicker[_0x5a33fb(0x2e9)][_0x55d154],_0x5a43b5='';_0x4b9b05[_0x5a33fb(0x1d5)]=function(_0x2f3ab8,_0x43fb9a){var _0x20a27f=_0x5a33fb;if(_0x43fb9a[_0x20a27f(0x246)]>0x0){var _0x58d401=![];g_OtherDeptContri['forEach'](function(_0x5f1800){var _0x3362ae=_0x20a27f;_0x5f1800[_0x3362ae(0x2f7)][_0x3362ae(0x265)]()==_0x43fb9a[0x0][_0x3362ae(0x313)][_0x3362ae(0x22d)][_0x3362ae(0x265)]()&&(_0x58d401=!![]);});if(_0x58d401==![]){_0x5a43b5='',tempUserId=parseInt(getUserInformation(_0x577ab0)),SharingUserId[_0x20a27f(0x27d)](tempUserId);var _0x3545ae=_0x43fb9a[0x0][_0x20a27f(0x31b)][_0x20a27f(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x20a27f(0x27d)](_0x43fb9a[0x0][_0x20a27f(0x31b)][_0x20a27f(0x232)]('|')[0x2]),_0x3545ae[_0x20a27f(0x13d)]('#')==!![]&&(_0x3545ae=_0x3545ae['split']('#ext')[0x0],_0x3545ae=_0x3545ae[_0x20a27f(0x158)]('_','@')),g_OtherDeptContri[_0x20a27f(0x27d)]({'EMail':_0x3545ae,'Id':tempUserId,'UserName':_0x43fb9a[0x0][_0x20a27f(0x201)]}),userRecords[_0x20a27f(0x27d)]({'EMail':_0x3545ae,'WebPartName':_0x20a27f(0x30e),'deptId':$('#ddlDepartments')[_0x20a27f(0x126)](),'Id':tempUserId,'UserName':_0x43fb9a[0x0]['DisplayText']}),SharingUserEmail[_0x20a27f(0x27d)](_0x3545ae),SharingUserName[_0x20a27f(0x27d)](_0x43fb9a[0x0][_0x20a27f(0x201)]),attachment=_spPageContextInfo[_0x20a27f(0x1b9)]+_0x20a27f(0x169)+escapeProperly(_0x3545ae),_0x5a43b5+=_0x20a27f(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x5a43b5+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0x20a27f(0x31e),_0x5a43b5+=_0x20a27f(0x2fa)+_0x43fb9a[0x0][_0x20a27f(0x201)]+_0x20a27f(0x1cd),_0x5a43b5+=_0x20a27f(0x124)+_0x3545ae+_0x20a27f(0x1c6)+_0x3545ae+_0x20a27f(0x208),_0x5a43b5+=_0x20a27f(0x207)+_0x3545ae+_0x20a27f(0x24d),_0x5a43b5+=_0x20a27f(0x173),$('#otherDeptContributors')['append'](_0x5a43b5),$(_0x20a27f(0x1d4))[_0x20a27f(0x279)]($(_0x20a27f(0x1d4))[0x0][_0x20a27f(0x1bd)]),EmptyPeoplePicker(_0x577ab0);}else alert('User\x20'+_0x43fb9a[0x0][_0x20a27f(0x201)]+_0x20a27f(0x216)),EmptyPeoplePicker(_0x577ab0);}else{}};}function onChangeDepartProject(_0x3b5035,_0x4a08e6){var _0x3b6482=a3_0x5069dc,_0x2534ac=SPClientPeoplePicker[_0x3b6482(0x2e9)][_0x3b5035],_0x3fed04='';_0x2534ac[_0x3b6482(0x1d5)]=function(_0x253c3b,_0x456c4f){var _0x5e3f67=_0x3b6482;if(_0x456c4f[_0x5e3f67(0x246)]>0x0){var _0x537e37=![];g_DepartmentalProject[_0x5e3f67(0x11a)](function(_0x55db64){var _0x395566=_0x5e3f67;_0x55db64[_0x395566(0x2f7)][_0x395566(0x265)]()==_0x456c4f[0x0]['EntityData'][_0x395566(0x22d)][_0x395566(0x265)]()&&(_0x537e37=!![]);});if(_0x537e37==![]){_0x3fed04='',tempUserId=parseInt(getUserInformation(_0x4a08e6)),SharingUserId[_0x5e3f67(0x27d)](tempUserId);var _0x38624e=_0x456c4f[0x0][_0x5e3f67(0x31b)][_0x5e3f67(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x456c4f[0x0][_0x5e3f67(0x31b)][_0x5e3f67(0x232)]('|')[0x2]),_0x38624e[_0x5e3f67(0x13d)]('#')==!![]&&(_0x38624e=_0x38624e[_0x5e3f67(0x232)](_0x5e3f67(0x13c))[0x0],_0x38624e=_0x38624e[_0x5e3f67(0x158)]('_','@')),g_DepartmentalProject['push']({'EMail':_0x38624e,'Id':tempUserId,'UserName':_0x456c4f[0x0][_0x5e3f67(0x201)]}),userRecords[_0x5e3f67(0x27d)]({'EMail':_0x38624e,'WebPartName':_0x5e3f67(0x10c),'deptId':$(_0x5e3f67(0x2fd))[_0x5e3f67(0x126)](),'Id':tempUserId,'UserName':_0x456c4f[0x0][_0x5e3f67(0x201)]}),SharingUserEmail[_0x5e3f67(0x27d)](_0x38624e),SharingUserName[_0x5e3f67(0x27d)](_0x456c4f[0x0][_0x5e3f67(0x201)]),attachment=_spPageContextInfo['webAbsoluteUrl']+_0x5e3f67(0x169)+escapeProperly(_0x38624e),_0x3fed04+=_0x5e3f67(0x230)+tempUserId+_0x5e3f67(0x22b),_0x3fed04+=_0x5e3f67(0x13e)+attachment+_0x5e3f67(0x31e),_0x3fed04+=_0x5e3f67(0x2fa)+_0x456c4f[0x0][_0x5e3f67(0x201)]+'</h3>',_0x3fed04+=_0x5e3f67(0x124)+_0x38624e+_0x5e3f67(0x1c6)+_0x38624e+_0x5e3f67(0x208),_0x3fed04+=_0x5e3f67(0x2c8)+_0x38624e+_0x5e3f67(0x24d),_0x3fed04+=_0x5e3f67(0x173),$(_0x5e3f67(0x19c))[_0x5e3f67(0x18d)](_0x3fed04),$(_0x5e3f67(0x19c))[_0x5e3f67(0x279)]($(_0x5e3f67(0x19c))[0x0][_0x5e3f67(0x1bd)]),EmptyPeoplePicker(_0x4a08e6);}else alert(_0x5e3f67(0x11f)+_0x456c4f[0x0]['DisplayText']+_0x5e3f67(0x216)),EmptyPeoplePicker(_0x4a08e6);}else{}};}function onChangeDocumentApprovers(_0x184f71,_0x56b65e){var _0x5c3aaf=a3_0x5069dc,_0x303f03=SPClientPeoplePicker[_0x5c3aaf(0x2e9)][_0x184f71],_0x4f9ec4='';_0x303f03['OnValueChangedClientScript']=function(_0x44582d,_0x236ee5){var _0x2983f0=_0x5c3aaf;if(_0x236ee5['length']>0x0){var _0x4950a4=![];g_DocumentApp['forEach'](function(_0x113bb9){var _0x588c7c=a3_0x27b4;_0x113bb9['EMail'][_0x588c7c(0x265)]()==_0x236ee5[0x0]['EntityData'][_0x588c7c(0x22d)][_0x588c7c(0x265)]()&&(_0x4950a4=!![]);});if(_0x4950a4==![]){_0x4f9ec4='',tempUserId=parseInt(getUserInformation(_0x56b65e)),SharingUserId[_0x2983f0(0x27d)](tempUserId);var _0x15dde4=_0x236ee5[0x0][_0x2983f0(0x31b)][_0x2983f0(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x2983f0(0x27d)](_0x236ee5[0x0][_0x2983f0(0x31b)][_0x2983f0(0x232)]('|')[0x2]),_0x15dde4[_0x2983f0(0x13d)]('#')==!![]&&(_0x15dde4=_0x15dde4['split'](_0x2983f0(0x13c))[0x0],_0x15dde4=_0x15dde4[_0x2983f0(0x158)]('_','@')),g_DocumentApp[_0x2983f0(0x27d)]({'EMail':_0x15dde4,'Id':tempUserId,'UserName':_0x236ee5[0x0][_0x2983f0(0x201)]}),userRecords[_0x2983f0(0x27d)]({'EMail':_0x15dde4,'WebPartName':_0x2983f0(0x1ee),'deptId':$(_0x2983f0(0x2fd))['val'](),'Id':tempUserId,'UserName':_0x236ee5[0x0][_0x2983f0(0x201)]}),SharingUserEmail['push'](_0x15dde4),SharingUserName[_0x2983f0(0x27d)](_0x236ee5[0x0][_0x2983f0(0x201)]),attachment=_spPageContextInfo[_0x2983f0(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x15dde4),_0x4f9ec4+=_0x2983f0(0x230)+tempUserId+_0x2983f0(0x22b),_0x4f9ec4+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+'\x22\x20alt=\x22\x22></div>',_0x4f9ec4+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x236ee5[0x0]['DisplayText']+_0x2983f0(0x1cd),_0x4f9ec4+=_0x2983f0(0x124)+_0x15dde4+_0x2983f0(0x1c6)+_0x15dde4+_0x2983f0(0x208),_0x4f9ec4+=_0x2983f0(0x283)+_0x15dde4+_0x2983f0(0x24d),_0x4f9ec4+=_0x2983f0(0x173),$('#allApprovers')[_0x2983f0(0x18d)](_0x4f9ec4),$(_0x2983f0(0x224))['scrollTop']($(_0x2983f0(0x224))[0x0][_0x2983f0(0x1bd)]),EmptyPeoplePicker(_0x56b65e);}else alert('User\x20'+_0x236ee5[0x0][_0x2983f0(0x201)]+_0x2983f0(0x216)),EmptyPeoplePicker(_0x56b65e);}else{}};}function onChangeNewInitiative(_0x6ca33b,_0x1c4c95){var _0x478357=a3_0x5069dc,_0x4b5346=SPClientPeoplePicker[_0x478357(0x2e9)][_0x6ca33b],_0xa367db='';_0x4b5346[_0x478357(0x1d5)]=function(_0x4df6c0,_0x477670){var _0x120db1=_0x478357;if(_0x477670[_0x120db1(0x246)]>0x0){var _0x2eb0bd=![];g_NewInitiative[_0x120db1(0x11a)](function(_0x10a38f){var _0x2c6ef0=_0x120db1;_0x10a38f[_0x2c6ef0(0x2f7)][_0x2c6ef0(0x265)]()==_0x477670[0x0][_0x2c6ef0(0x313)][_0x2c6ef0(0x22d)][_0x2c6ef0(0x265)]()&&(_0x2eb0bd=!![]);});if(_0x2eb0bd==![]){_0xa367db='',tempUserId=parseInt(getUserInformation(_0x1c4c95)),SharingUserId[_0x120db1(0x27d)](tempUserId);var _0x2f6894=_0x477670[0x0][_0x120db1(0x31b)][_0x120db1(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x120db1(0x27d)](_0x477670[0x0][_0x120db1(0x31b)][_0x120db1(0x232)]('|')[0x2]),_0x2f6894[_0x120db1(0x13d)]('#')==!![]&&(_0x2f6894=_0x2f6894[_0x120db1(0x232)](_0x120db1(0x13c))[0x0],_0x2f6894=_0x2f6894['replace']('_','@')),g_NewInitiative[_0x120db1(0x27d)]({'EMail':_0x2f6894,'Id':tempUserId,'deptId':$(_0x120db1(0x2fd))[_0x120db1(0x126)](),'UserName':_0x477670[0x0]['DisplayText']}),userRecords[_0x120db1(0x27d)]({'EMail':_0x2f6894,'WebPartName':'New\x20Initiative','deptId':$(_0x120db1(0x2fd))['val'](),'Id':tempUserId,'UserName':_0x477670[0x0][_0x120db1(0x201)]}),SharingUserEmail['push'](_0x2f6894),SharingUserName[_0x120db1(0x27d)](_0x477670[0x0][_0x120db1(0x201)]),attachment=_spPageContextInfo[_0x120db1(0x1b9)]+_0x120db1(0x169)+escapeProperly(_0x2f6894),_0xa367db+=_0x120db1(0x230)+tempUserId+_0x120db1(0x22b),_0xa367db+=_0x120db1(0x13e)+attachment+_0x120db1(0x31e),_0xa367db+=_0x120db1(0x2fa)+_0x477670[0x0][_0x120db1(0x201)]+'</h3>',_0xa367db+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x2f6894+_0x120db1(0x1c6)+_0x2f6894+_0x120db1(0x208),_0xa367db+=_0x120db1(0x14d)+_0x2f6894+_0x120db1(0x24d),_0xa367db+=_0x120db1(0x173),$(_0x120db1(0x25f))['append'](_0xa367db),$(_0x120db1(0x25f))[_0x120db1(0x279)]($(_0x120db1(0x25f))[0x0][_0x120db1(0x1bd)]),EmptyPeoplePicker(_0x1c4c95);}else alert('User\x20'+_0x477670[0x0][_0x120db1(0x201)]+_0x120db1(0x216)),EmptyPeoplePicker(_0x1c4c95);}else{}};}function onChangeNewInitiativeApprovers(_0x31807f,_0x52005d){var _0xd5c07b=a3_0x5069dc,_0x21effb=SPClientPeoplePicker[_0xd5c07b(0x2e9)][_0x31807f],_0x4fa6df='';_0x21effb[_0xd5c07b(0x1d5)]=function(_0x5d4a59,_0x3fdba5){var _0x1c0b2d=_0xd5c07b;if(_0x3fdba5[_0x1c0b2d(0x246)]>0x0){var _0x444a61=![];g_NewApprover[_0x1c0b2d(0x11a)](function(_0x4f55b3){var _0x503941=_0x1c0b2d;_0x4f55b3[_0x503941(0x2f7)][_0x503941(0x265)]()==_0x3fdba5[0x0][_0x503941(0x313)][_0x503941(0x22d)][_0x503941(0x265)]()&&(_0x444a61=!![]);});if(_0x444a61==![]){_0x4fa6df='',tempUserId=parseInt(getUserInformation(_0x52005d)),SharingUserId['push'](tempUserId);var _0x31d275=_0x3fdba5[0x0]['Key']['split']('|')[0x2];ShareUserPrincipleMail[_0x1c0b2d(0x27d)](_0x3fdba5[0x0]['Key'][_0x1c0b2d(0x232)]('|')[0x2]),_0x31d275[_0x1c0b2d(0x13d)]('#')==!![]&&(_0x31d275=_0x31d275[_0x1c0b2d(0x232)](_0x1c0b2d(0x13c))[0x0],_0x31d275=_0x31d275[_0x1c0b2d(0x158)]('_','@')),g_NewApprover['push']({'EMail':_0x31d275,'Id':tempUserId,'deptId':$('#ddlDepartments')[_0x1c0b2d(0x126)](),'UserName':_0x3fdba5[0x0]['DisplayText']}),userRecords[_0x1c0b2d(0x27d)]({'EMail':_0x31d275,'WebPartName':_0x1c0b2d(0x11e),'deptId':$('#ddlDepartments')[_0x1c0b2d(0x126)](),'Id':tempUserId,'UserName':_0x3fdba5[0x0][_0x1c0b2d(0x201)]}),SharingUserEmail[_0x1c0b2d(0x27d)](_0x31d275),SharingUserName[_0x1c0b2d(0x27d)](_0x3fdba5[0x0][_0x1c0b2d(0x201)]),attachment=_spPageContextInfo[_0x1c0b2d(0x1b9)]+_0x1c0b2d(0x169)+escapeProperly(_0x31d275),_0x4fa6df+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x1c0b2d(0x22b),_0x4fa6df+=_0x1c0b2d(0x13e)+attachment+_0x1c0b2d(0x31e),_0x4fa6df+=_0x1c0b2d(0x2fa)+_0x3fdba5[0x0]['DisplayText']+_0x1c0b2d(0x1cd),_0x4fa6df+=_0x1c0b2d(0x124)+_0x31d275+'\x27)\x22>'+_0x31d275+_0x1c0b2d(0x208),_0x4fa6df+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeInitiativeApp(this,\x20\x27'+_0x31d275+_0x1c0b2d(0x24d),_0x4fa6df+=_0x1c0b2d(0x173),$(_0x1c0b2d(0x193))[_0x1c0b2d(0x18d)](_0x4fa6df),$(_0x1c0b2d(0x193))[_0x1c0b2d(0x279)]($(_0x1c0b2d(0x193))[0x0][_0x1c0b2d(0x1bd)]),EmptyPeoplePicker(_0x52005d);}else alert(_0x1c0b2d(0x11f)+_0x3fdba5[0x0][_0x1c0b2d(0x201)]+_0x1c0b2d(0x216)),EmptyPeoplePicker(_0x52005d);}else{}};}function onChangeSuggesion(_0x5e0cd6,_0x2013d4){var _0x501fbd=a3_0x5069dc,_0x5dd894=SPClientPeoplePicker[_0x501fbd(0x2e9)][_0x5e0cd6],_0x2e4cb6='';_0x5dd894[_0x501fbd(0x1d5)]=function(_0x602f6b,_0xdff872){var _0xd8c98e=_0x501fbd;if(_0xdff872[_0xd8c98e(0x246)]>0x0){var _0x5ce612=![];g_Suggesion['forEach'](function(_0x247db6){var _0x3d1bc0=_0xd8c98e;_0x247db6['EMail'][_0x3d1bc0(0x265)]()==_0xdff872[0x0][_0x3d1bc0(0x313)][_0x3d1bc0(0x22d)]['toLowerCase']()&&(_0x5ce612=!![]);});if(_0x5ce612==![]){_0x2e4cb6='',tempUserId=parseInt(getUserInformation(_0x2013d4)),SharingUserId[_0xd8c98e(0x27d)](tempUserId);var _0x46488c=_0xdff872[0x0][_0xd8c98e(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail['push'](_0xdff872[0x0]['Key']['split']('|')[0x2]),_0x46488c[_0xd8c98e(0x13d)]('#')==!![]&&(_0x46488c=_0x46488c[_0xd8c98e(0x232)](_0xd8c98e(0x13c))[0x0],_0x46488c=_0x46488c[_0xd8c98e(0x158)]('_','@')),g_Suggesion[_0xd8c98e(0x27d)]({'EMail':_0x46488c,'Id':tempUserId,'deptId':$(_0xd8c98e(0x2fd))[_0xd8c98e(0x126)](),'UserName':_0xdff872[0x0]['DisplayText']}),userRecords[_0xd8c98e(0x27d)]({'EMail':_0x46488c,'WebPartName':_0xd8c98e(0xf4),'deptId':$('#ddlDepartments')[_0xd8c98e(0x126)](),'Id':tempUserId,'UserName':_0xdff872[0x0]['DisplayText']}),SharingUserEmail[_0xd8c98e(0x27d)](_0x46488c),SharingUserName[_0xd8c98e(0x27d)](_0xdff872[0x0]['DisplayText']),attachment=_spPageContextInfo[_0xd8c98e(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x46488c),_0x2e4cb6+=_0xd8c98e(0x230)+tempUserId+_0xd8c98e(0x22b),_0x2e4cb6+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+'\x22\x20alt=\x22\x22></div>',_0x2e4cb6+=_0xd8c98e(0x2fa)+_0xdff872[0x0][_0xd8c98e(0x201)]+_0xd8c98e(0x1cd),_0x2e4cb6+=_0xd8c98e(0x124)+_0x46488c+_0xd8c98e(0x1c6)+_0x46488c+'</p></div>',_0x2e4cb6+=_0xd8c98e(0x1b4)+_0x46488c+_0xd8c98e(0x24d),_0x2e4cb6+=_0xd8c98e(0x173),$(_0xd8c98e(0x23a))[_0xd8c98e(0x18d)](_0x2e4cb6),$(_0xd8c98e(0x23a))[_0xd8c98e(0x279)]($(_0xd8c98e(0x23a))[0x0][_0xd8c98e(0x1bd)]),EmptyPeoplePicker(_0x2013d4);}else alert(_0xd8c98e(0x11f)+_0xdff872[0x0]['DisplayText']+_0xd8c98e(0x216)),EmptyPeoplePicker(_0x2013d4);}else{}};}function onChanSuggesionApprov(_0x2aa72a,_0x4bf283){var _0x1eb94e=a3_0x5069dc,_0x34c63=SPClientPeoplePicker[_0x1eb94e(0x2e9)][_0x2aa72a],_0x427ff0='';_0x34c63['OnValueChangedClientScript']=function(_0x123449,_0x3e0669){var _0x4a1606=_0x1eb94e;if(_0x3e0669[_0x4a1606(0x246)]>0x0){var _0x3c5771=![];SuggestionApprover[_0x4a1606(0x11a)](function(_0x2c99f1){var _0x223acb=_0x4a1606;_0x2c99f1[_0x223acb(0x2f7)][_0x223acb(0x265)]()==_0x3e0669[0x0][_0x223acb(0x313)][_0x223acb(0x22d)][_0x223acb(0x265)]()&&(_0x3c5771=!![]);});if(_0x3c5771==![]){_0x427ff0='',tempUserId=parseInt(getUserInformation(_0x4bf283)),SharingUserId[_0x4a1606(0x27d)](tempUserId);var _0x515fb5=_0x3e0669[0x0][_0x4a1606(0x31b)][_0x4a1606(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x4a1606(0x27d)](_0x3e0669[0x0][_0x4a1606(0x31b)]['split']('|')[0x2]),_0x515fb5[_0x4a1606(0x13d)]('#')==!![]&&(_0x515fb5=_0x515fb5[_0x4a1606(0x232)](_0x4a1606(0x13c))[0x0],_0x515fb5=_0x515fb5['replace']('_','@')),SuggestionApprover[_0x4a1606(0x27d)]({'EMail':_0x515fb5,'Id':tempUserId,'deptId':$(_0x4a1606(0x2fd))[_0x4a1606(0x126)](),'UserName':_0x3e0669[0x0][_0x4a1606(0x201)]}),userRecords[_0x4a1606(0x27d)]({'EMail':_0x515fb5,'WebPartName':_0x4a1606(0x2a4),'deptId':$(_0x4a1606(0x2fd))[_0x4a1606(0x126)](),'Id':tempUserId,'UserName':_0x3e0669[0x0][_0x4a1606(0x201)]}),SharingUserEmail[_0x4a1606(0x27d)](_0x515fb5),SharingUserName[_0x4a1606(0x27d)](_0x3e0669[0x0][_0x4a1606(0x201)]),attachment=_spPageContextInfo[_0x4a1606(0x1b9)]+_0x4a1606(0x169)+escapeProperly(_0x515fb5),_0x427ff0+=_0x4a1606(0x230)+tempUserId+_0x4a1606(0x22b),_0x427ff0+=_0x4a1606(0x13e)+attachment+'\x22\x20alt=\x22\x22></div>',_0x427ff0+=_0x4a1606(0x2fa)+_0x3e0669[0x0]['DisplayText']+_0x4a1606(0x1cd),_0x427ff0+=_0x4a1606(0x124)+_0x515fb5+'\x27)\x22>'+_0x515fb5+_0x4a1606(0x208),_0x427ff0+=_0x4a1606(0x2cf)+_0x515fb5+_0x4a1606(0x24d),_0x427ff0+='</div></div></div></div>',$('#suggestionApproval')[_0x4a1606(0x18d)](_0x427ff0),$('#suggestionApproval')[_0x4a1606(0x279)]($('#suggestionApproval')[0x0]['scrollHeight']),EmptyPeoplePicker(_0x4bf283);}else alert('User\x20'+_0x3e0669[0x0][_0x4a1606(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x4bf283);}else{}};}function onChangeActivity(_0x202bfa,_0x859a66){var _0x196dc9=a3_0x5069dc,_0x1eefd1=SPClientPeoplePicker[_0x196dc9(0x2e9)][_0x202bfa],_0x752840='';_0x1eefd1['OnValueChangedClientScript']=function(_0x2c425e,_0x45519c){var _0x76f12b=_0x196dc9;if(_0x45519c[_0x76f12b(0x246)]>0x0){var _0xbb4a93=![];g_Activity[_0x76f12b(0x11a)](function(_0x5d88a0){var _0x2d8961=_0x76f12b;_0x5d88a0[_0x2d8961(0x2f7)][_0x2d8961(0x265)]()==_0x45519c[0x0][_0x2d8961(0x313)]['Email']['toLowerCase']()&&(_0xbb4a93=!![]);});if(_0xbb4a93==![]){_0x752840='',tempUserId=parseInt(getUserInformation(_0x859a66)),SharingUserId['push'](tempUserId);var _0xf9cf0=_0x45519c[0x0][_0x76f12b(0x31b)]['split']('|')[0x2];ShareUserPrincipleMail[_0x76f12b(0x27d)](_0x45519c[0x0]['Key']['split']('|')[0x2]),_0xf9cf0[_0x76f12b(0x13d)]('#')==!![]&&(_0xf9cf0=_0xf9cf0[_0x76f12b(0x232)](_0x76f12b(0x13c))[0x0],_0xf9cf0=_0xf9cf0[_0x76f12b(0x158)]('_','@')),g_Activity[_0x76f12b(0x27d)]({'EMail':_0xf9cf0,'Id':tempUserId,'deptId':$(_0x76f12b(0x2fd))['val'](),'UserName':_0x45519c[0x0][_0x76f12b(0x201)]}),userRecords[_0x76f12b(0x27d)]({'EMail':_0xf9cf0,'WebPartName':_0x76f12b(0x15e),'deptId':$(_0x76f12b(0x2fd))[_0x76f12b(0x126)](),'Id':tempUserId,'UserName':_0x45519c[0x0][_0x76f12b(0x201)]}),SharingUserEmail[_0x76f12b(0x27d)](_0xf9cf0),SharingUserName[_0x76f12b(0x27d)](_0x45519c[0x0][_0x76f12b(0x201)]),attachment=_spPageContextInfo[_0x76f12b(0x1b9)]+_0x76f12b(0x169)+escapeProperly(_0xf9cf0),_0x752840+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x76f12b(0x22b),_0x752840+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+'\x22\x20alt=\x22\x22></div>',_0x752840+=_0x76f12b(0x2fa)+_0x45519c[0x0][_0x76f12b(0x201)]+'</h3>',_0x752840+=_0x76f12b(0x124)+_0xf9cf0+_0x76f12b(0x1c6)+_0xf9cf0+_0x76f12b(0x208),_0x752840+=_0x76f12b(0x25e)+_0xf9cf0+_0x76f12b(0x24d),_0x752840+=_0x76f12b(0x173),$(_0x76f12b(0x1c8))[_0x76f12b(0x18d)](_0x752840),$(_0x76f12b(0x1c8))[_0x76f12b(0x279)]($(_0x76f12b(0x1c8))[0x0]['scrollHeight']),EmptyPeoplePicker(_0x859a66);}else alert(_0x76f12b(0x11f)+_0x45519c[0x0][_0x76f12b(0x201)]+'\x20already\x20exists'),EmptyPeoplePicker(_0x859a66);}else{}};}function onChangeActivityApprov(_0x11c328,_0x59ea05){var _0x42f97d=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x11c328],_0x181d5d='';_0x42f97d['OnValueChangedClientScript']=function(_0x18818b,_0x1cbf90){var _0x4d83cc=a3_0x27b4;if(_0x1cbf90[_0x4d83cc(0x246)]>0x0){var _0xa37b00=![];g_ActivityApprover[_0x4d83cc(0x11a)](function(_0x577bea){var _0x1913bf=_0x4d83cc;_0x577bea[_0x1913bf(0x2f7)]['toLowerCase']()==_0x1cbf90[0x0][_0x1913bf(0x313)][_0x1913bf(0x22d)][_0x1913bf(0x265)]()&&(_0xa37b00=!![]);});if(_0xa37b00==![]){_0x181d5d='',tempUserId=parseInt(getUserInformation(_0x59ea05)),SharingUserId[_0x4d83cc(0x27d)](tempUserId);var _0x272cad=_0x1cbf90[0x0][_0x4d83cc(0x31b)][_0x4d83cc(0x232)]('|')[0x2];ShareUserPrincipleMail['push'](_0x1cbf90[0x0][_0x4d83cc(0x31b)][_0x4d83cc(0x232)]('|')[0x2]),_0x272cad[_0x4d83cc(0x13d)]('#')==!![]&&(_0x272cad=_0x272cad[_0x4d83cc(0x232)](_0x4d83cc(0x13c))[0x0],_0x272cad=_0x272cad[_0x4d83cc(0x158)]('_','@')),g_ActivityApprover[_0x4d83cc(0x27d)]({'EMail':_0x272cad,'deptId':$(_0x4d83cc(0x2fd))['val'](),'Id':tempUserId,'UserName':_0x1cbf90[0x0][_0x4d83cc(0x201)]}),userRecords['push']({'EMail':_0x272cad,'WebPartName':_0x4d83cc(0xf1),'deptId':$(_0x4d83cc(0x2fd))[_0x4d83cc(0x126)](),'Id':tempUserId,'UserName':_0x1cbf90[0x0][_0x4d83cc(0x201)]}),SharingUserEmail['push'](_0x272cad),SharingUserName['push'](_0x1cbf90[0x0]['DisplayText']),attachment=_spPageContextInfo[_0x4d83cc(0x1b9)]+_0x4d83cc(0x169)+escapeProperly(_0x272cad),_0x181d5d+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+tempUserId+_0x4d83cc(0x22b),_0x181d5d+=_0x4d83cc(0x13e)+attachment+_0x4d83cc(0x31e),_0x181d5d+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x1cbf90[0x0][_0x4d83cc(0x201)]+_0x4d83cc(0x1cd),_0x181d5d+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x272cad+_0x4d83cc(0x1c6)+_0x272cad+_0x4d83cc(0x208),_0x181d5d+=_0x4d83cc(0x31a)+_0x272cad+_0x4d83cc(0x24d),_0x181d5d+=_0x4d83cc(0x173),$(_0x4d83cc(0x294))[_0x4d83cc(0x18d)](_0x181d5d),$('#ActivityApprover')[_0x4d83cc(0x279)]($(_0x4d83cc(0x294))[0x0][_0x4d83cc(0x1bd)]),EmptyPeoplePicker(_0x59ea05);}else alert(_0x4d83cc(0x11f)+_0x1cbf90[0x0][_0x4d83cc(0x201)]+_0x4d83cc(0x216)),EmptyPeoplePicker(_0x59ea05);}else{}};}function onChangeKnowledge(_0x39f5aa,_0x3896b3){var _0x25ba39=a3_0x5069dc,_0x217b5b=SPClientPeoplePicker[_0x25ba39(0x2e9)][_0x39f5aa],_0x57d65a='';_0x217b5b[_0x25ba39(0x1d5)]=function(_0x2cac01,_0x44e3ff){var _0x363bf7=_0x25ba39;if(_0x44e3ff[_0x363bf7(0x246)]>0x0){var _0x10b2ee=![];g_Knowledge[_0x363bf7(0x11a)](function(_0x41b0b1){var _0x43d456=_0x363bf7;_0x41b0b1[_0x43d456(0x2f7)][_0x43d456(0x265)]()==_0x44e3ff[0x0][_0x43d456(0x313)][_0x43d456(0x22d)][_0x43d456(0x265)]()&&(_0x10b2ee=!![]);});if(_0x10b2ee==![]){_0x57d65a='',tempUserId=parseInt(getUserInformation(_0x3896b3)),SharingUserId['push'](tempUserId);var _0x261b82=_0x44e3ff[0x0][_0x363bf7(0x31b)][_0x363bf7(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x363bf7(0x27d)](_0x44e3ff[0x0][_0x363bf7(0x31b)][_0x363bf7(0x232)]('|')[0x2]),_0x261b82[_0x363bf7(0x13d)]('#')==!![]&&(_0x261b82=_0x261b82[_0x363bf7(0x232)](_0x363bf7(0x13c))[0x0],_0x261b82=_0x261b82[_0x363bf7(0x158)]('_','@')),g_Knowledge['push']({'EMail':_0x261b82,'deptId':$(_0x363bf7(0x2fd))[_0x363bf7(0x126)](),'Id':tempUserId,'UserName':_0x44e3ff[0x0][_0x363bf7(0x201)]}),userRecords['push']({'EMail':_0x261b82,'WebPartName':_0x363bf7(0x276),'deptId':$(_0x363bf7(0x2fd))[_0x363bf7(0x126)](),'Id':tempUserId,'UserName':_0x44e3ff[0x0][_0x363bf7(0x201)]}),SharingUserEmail[_0x363bf7(0x27d)](_0x261b82),SharingUserName[_0x363bf7(0x27d)](_0x44e3ff[0x0][_0x363bf7(0x201)]),attachment=_spPageContextInfo[_0x363bf7(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x261b82),_0x57d65a+=_0x363bf7(0x230)+tempUserId+_0x363bf7(0x22b),_0x57d65a+=_0x363bf7(0x13e)+attachment+'\x22\x20alt=\x22\x22></div>',_0x57d65a+=_0x363bf7(0x2fa)+_0x44e3ff[0x0]['DisplayText']+_0x363bf7(0x1cd),_0x57d65a+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x261b82+_0x363bf7(0x1c6)+_0x261b82+'</p></div>',_0x57d65a+=_0x363bf7(0x20c)+_0x261b82+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x57d65a+='</div></div></div></div>',$(_0x363bf7(0xfd))[_0x363bf7(0x18d)](_0x57d65a),$(_0x363bf7(0xfd))['scrollTop']($(_0x363bf7(0xfd))[0x0]['scrollHeight']),EmptyPeoplePicker(_0x3896b3);}else alert('User\x20'+_0x44e3ff[0x0]['DisplayText']+_0x363bf7(0x216)),EmptyPeoplePicker(_0x3896b3);}else{}};}function onChangeKnowledgeApprov(_0x5a04f9,_0x145031){var _0x2ca40a=a3_0x5069dc,_0xfe5c2e=SPClientPeoplePicker[_0x2ca40a(0x2e9)][_0x5a04f9],_0x3fb92f='';_0xfe5c2e['OnValueChangedClientScript']=function(_0x478dee,_0x3b9d0b){var _0x1928dd=_0x2ca40a;if(_0x3b9d0b[_0x1928dd(0x246)]>0x0){var _0x119e27=![];KnowledgeApprover[_0x1928dd(0x11a)](function(_0x1ae4a0){var _0x2ac6c1=_0x1928dd;_0x1ae4a0[_0x2ac6c1(0x2f7)]['toLowerCase']()==_0x3b9d0b[0x0][_0x2ac6c1(0x313)][_0x2ac6c1(0x22d)]['toLowerCase']()&&(_0x119e27=!![]);});if(_0x119e27==![]){_0x3fb92f='',tempUserId=parseInt(getUserInformation(_0x145031)),SharingUserId[_0x1928dd(0x27d)](tempUserId);var _0x481dab=_0x3b9d0b[0x0][_0x1928dd(0x31b)][_0x1928dd(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x1928dd(0x27d)](_0x3b9d0b[0x0][_0x1928dd(0x31b)][_0x1928dd(0x232)]('|')[0x2]),_0x481dab[_0x1928dd(0x13d)]('#')==!![]&&(_0x481dab=_0x481dab[_0x1928dd(0x232)](_0x1928dd(0x13c))[0x0],_0x481dab=_0x481dab[_0x1928dd(0x158)]('_','@')),KnowledgeApprover[_0x1928dd(0x27d)]({'EMail':_0x481dab,'Id':tempUserId,'deptId':$(_0x1928dd(0x2fd))['val'](),'UserName':_0x3b9d0b[0x0][_0x1928dd(0x201)]}),userRecords[_0x1928dd(0x27d)]({'EMail':_0x481dab,'WebPartName':'KnowledgeApprover','deptId':$('#ddlDepartments')['val'](),'Id':tempUserId,'UserName':_0x3b9d0b[0x0][_0x1928dd(0x201)]}),SharingUserEmail[_0x1928dd(0x27d)](_0x481dab),SharingUserName[_0x1928dd(0x27d)](_0x3b9d0b[0x0]['DisplayText']),attachment=_spPageContextInfo[_0x1928dd(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x481dab),_0x3fb92f+=_0x1928dd(0x230)+tempUserId+_0x1928dd(0x22b),_0x3fb92f+=_0x1928dd(0x13e)+attachment+_0x1928dd(0x31e),_0x3fb92f+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x3b9d0b[0x0][_0x1928dd(0x201)]+_0x1928dd(0x1cd),_0x3fb92f+=_0x1928dd(0x124)+_0x481dab+_0x1928dd(0x1c6)+_0x481dab+_0x1928dd(0x208),_0x3fb92f+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeKnowledgeApp(this,\x20\x27'+_0x481dab+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x3fb92f+=_0x1928dd(0x173),$(_0x1928dd(0x170))[_0x1928dd(0x18d)](_0x3fb92f),$(_0x1928dd(0x170))['scrollTop']($('#KnowledgeApprover')[0x0][_0x1928dd(0x1bd)]),EmptyPeoplePicker(_0x145031);}else alert(_0x1928dd(0x11f)+_0x3b9d0b[0x0][_0x1928dd(0x201)]+_0x1928dd(0x216)),EmptyPeoplePicker(_0x145031);}else{}};}function onChangeReader(_0x13d69c,_0x413dd6){var _0x362c36=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x13d69c],_0x475a3d='';_0x362c36['OnValueChangedClientScript']=function(_0x5ae1a7,_0x3c4d19){var _0x2c96dd=a3_0x27b4;if(_0x3c4d19['length']>0x0){var _0x437e4b=![];g_Readers[_0x2c96dd(0x11a)](function(_0x3458bf){var _0x13f568=_0x2c96dd;_0x3458bf[_0x13f568(0x2f7)][_0x13f568(0x265)]()==_0x3c4d19[0x0]['EntityData']['Email'][_0x13f568(0x265)]()&&(_0x437e4b=!![]);});if(_0x437e4b==![]){_0x475a3d='',tempUserId=parseInt(getUserInformation(_0x413dd6)),SharingUserId[_0x2c96dd(0x27d)](tempUserId);var _0x1ac95a=_0x3c4d19[0x0][_0x2c96dd(0x31b)][_0x2c96dd(0x232)]('|')[0x2];ShareUserPrincipleMail[_0x2c96dd(0x27d)](_0x3c4d19[0x0][_0x2c96dd(0x31b)]['split']('|')[0x2]),_0x1ac95a[_0x2c96dd(0x13d)]('#')==!![]&&(_0x1ac95a=_0x1ac95a[_0x2c96dd(0x232)](_0x2c96dd(0x13c))[0x0],_0x1ac95a=_0x1ac95a[_0x2c96dd(0x158)]('_','@')),g_Readers[_0x2c96dd(0x27d)]({'EMail':_0x1ac95a,'Id':tempUserId,'UserName':_0x3c4d19[0x0]['DisplayText']}),userRecords[_0x2c96dd(0x27d)]({'EMail':_0x1ac95a,'WebPartName':_0x2c96dd(0x295),'deptId':$(_0x2c96dd(0x2fd))[_0x2c96dd(0x126)](),'Id':tempUserId,'UserName':_0x3c4d19[0x0][_0x2c96dd(0x201)]}),SharingUserEmail[_0x2c96dd(0x27d)](_0x1ac95a),SharingUserName[_0x2c96dd(0x27d)](_0x3c4d19[0x0][_0x2c96dd(0x201)]),attachment=_spPageContextInfo[_0x2c96dd(0x1b9)]+_0x2c96dd(0x169)+escapeProperly(_0x1ac95a),_0x475a3d+=_0x2c96dd(0x230)+tempUserId+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x475a3d+=_0x2c96dd(0x13e)+attachment+_0x2c96dd(0x31e),_0x475a3d+=_0x2c96dd(0x2fa)+_0x3c4d19[0x0][_0x2c96dd(0x201)]+_0x2c96dd(0x1cd),_0x475a3d+=_0x2c96dd(0x124)+_0x1ac95a+_0x2c96dd(0x1c6)+_0x1ac95a+_0x2c96dd(0x208),_0x475a3d+=_0x2c96dd(0x251)+_0x1ac95a+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x475a3d+='</div></div></div></div>',$('#readerOtherDept')[_0x2c96dd(0x18d)](_0x475a3d),$(_0x2c96dd(0x2a7))['scrollTop']($(_0x2c96dd(0x2a7))[0x0][_0x2c96dd(0x1bd)]),EmptyPeoplePicker(_0x413dd6);}else alert(_0x2c96dd(0x11f)+_0x3c4d19[0x0][_0x2c96dd(0x201)]+_0x2c96dd(0x216)),EmptyPeoplePicker(_0x413dd6);}else{}};}function getUserInformation(_0x4d1355,_0x592ba9,_0x52644c,_0x2ad46e){var _0x479abb=a3_0x5069dc,_0x3e12f6=[],_0x4066e2=[],_0x2bcc1b=this['SPClientPeoplePicker']['SPClientPeoplePickerDict'][_0x4d1355+_0x479abb(0x15a)];if(!_0x2bcc1b[_0x479abb(0x17c)]()){if(_0x2bcc1b[_0x479abb(0x28b)])return![];else{if(!_0x2bcc1b[_0x479abb(0x226)]())return![];else{if(_0x2bcc1b[_0x479abb(0x243)]>0x0){var _0x441547=_0x2bcc1b[_0x479abb(0x1f5)](),_0xf7e04f='',_0x6c4684='',_0x32c732='';for(var _0xb8c968=0x0;_0xb8c968<_0x441547['length'];_0xb8c968++){var _0x769ed1=_0x441547[_0xb8c968][_0x479abb(0x31b)];_0x441547[_0xb8c968][_0x479abb(0x313)]['Email'],_0x441547[_0xb8c968]['DisplayText'];var _0x3adaf1=GetUserID(_0x769ed1);_0x3adaf1!=-0x1?_0x4066e2[_0x479abb(0x2f6)](_0x3adaf1)==-0x1&&(_0x4066e2[_0x479abb(0x27d)](_0x3adaf1),_0x3e12f6[_0x479abb(0x27d)](_0x3adaf1)):_0x3e12f6[_0x479abb(0x27d)](parseInt(_0x441547[_0xb8c968][_0x479abb(0x313)][_0x479abb(0x21d)]));}return _0x3e12f6;}}}}else return _0x32c732;}function GetUserID(_0x20a821){var _0xb126bb=a3_0x5069dc,_0x18c3af={'logonName':_0x20a821},_0x15a13b=-0x1,_0x42cc44=$[_0xb126bb(0x308)]({'url':_spPageContextInfo[_0xb126bb(0x122)]+_0xb126bb(0x2d9),'type':_0xb126bb(0x1cf),'async':![],'contentType':_0xb126bb(0x204),'data':JSON['stringify'](_0x18c3af),'headers':{'Accept':_0xb126bb(0x204),'X-RequestDigest':$(_0xb126bb(0x1b6))[_0xb126bb(0x126)]()},'success':function(_0x2d5db7){_0x15a13b=_0x2d5db7['d']['Id'];},'error':function(_0x41f476){var _0x41046f=_0xb126bb;console[_0x41046f(0x168)](_0x41f476),currentDlg!=''&&currentDlg[_0x41046f(0x198)]();}});return _0x15a13b;}function EmptyPeoplePicker(_0x776736){var _0x1666c0=a3_0x5069dc,_0x53db5f=this[_0x1666c0(0x20a)][_0x1666c0(0x2e9)][_0x776736+_0x1666c0(0x15a)],_0x31fb6f=_0x53db5f[_0x1666c0(0x1f5)]();_0x31fb6f[_0x1666c0(0x11a)](function(_0x3b3b9b){_0x53db5f['DeleteProcessedUser'](_0x31fb6f[_0x3b3b9b]);});}g_DeptSiteUrl=[];function BindDepartments(){var _0x1f0abe=a3_0x5069dc,_0x5264a8=_0x1f0abe(0x210),_0x92f6e6=Logged_CompanyId,_0x235722=$[_0x1f0abe(0x27b)](),_0x16b520=_spPageContextInfo[_0x1f0abe(0x1b9)]+_0x1f0abe(0x26d)+_0x5264a8+_0x1f0abe(0x2e6)+_0x92f6e6+'\x27';return $[_0x1f0abe(0x308)]({'url':_0x16b520,'type':_0x1f0abe(0x1d3),'headers':{'ACCEPT':_0x1f0abe(0x204)},'success':function(_0x2a0766){var _0x4d54fa=_0x1f0abe,_0xf8a6c7=document[_0x4d54fa(0x314)](_0x4d54fa(0x15b)),_0x185862='';if(_0x2a0766['d'][_0x4d54fa(0x164)][_0x4d54fa(0x246)]>0x0)var _0x2de6be=_0x2a0766['d']['results'][_0x4d54fa(0x1b5)](function(_0x5978e8){var _0x43180e=_0x4d54fa;_0x5978e8['ID']==Logged_DepartmentId&&(_0x185862+=_0x43180e(0x116)+_0x5978e8['ID']+_0x43180e(0x325)+_0x5978e8['DepartmentName']+'\x27>'+_0x5978e8[_0x43180e(0x27c)]+'\x20</option>');});$[_0x4d54fa(0x1a5)](_0x2a0766['d'][_0x4d54fa(0x164)],function(_0x221aee,_0x56638f){var _0x801b87=_0x4d54fa;_0x56638f['ID']!=Logged_DepartmentId&&(_0x185862+=_0x801b87(0x116)+_0x56638f['ID']+_0x801b87(0x325)+_0x56638f[_0x801b87(0x27c)]+'\x27>'+_0x56638f[_0x801b87(0x27c)]+_0x801b87(0x1c1)),g_DeptSiteUrl['push']({'DeptId':_0x56638f['ID'],'DeptSiteUrl':_0x56638f['SiteURL']});}),$(_0x4d54fa(0x2fd))[_0x4d54fa(0x18d)](_0x185862),_0x235722[_0x4d54fa(0x199)](!![]);},'error':function(_0x5428fa){var _0x455309=_0x1f0abe;alert(_0x455309(0x1d9)),_0x235722[_0x455309(0x100)](_0x5428fa);}}),_0x235722[_0x1f0abe(0x1de)]();}var g_ApprovalItems='',g_TechAdminArr=[],g_HrAdminArr=[],g_ProcessArr=[],g_ProjectArr=[],g_ClientArr=[],g_AnnouncementsArr=[],g_AlertArr=[],g_RecognitionArr=[],g_eventAdminArr=[],g_PollsArr=[],g_informationArr=[],g_QuestionAnswerArr=[],g_GeneralArr=[],g_MediaGalleryArr=[],g_MagazineArr=[],QuestionApprover=[],announcementApprover=[],AlertApprover=[],BannersApprover=[],RecoginitionApprover=[],EventApprover=[],ExperienceApprover=[],SurveyApprover=[];function getCompanyApprovers(){var _0x480429=a3_0x5069dc,_0x281cbc=_spPageContextInfo[_0x480429(0x1b9)]+_0x480429(0x30a)+Logged_CompanyId+'\x27';$[_0x480429(0x308)]({'url':_0x281cbc,'headers':{'ACCEPT':_0x480429(0x204)},'async':![],'success':function(_0x313956){var _0x1cec80=_0x480429,_0x8f0fd1=_0x313956['d'][_0x1cec80(0x164)];g_ApprovalItems=_0x8f0fd1;for(let _0x49aead=0x0;_0x49aead<_0x8f0fd1[_0x1cec80(0x246)];_0x49aead++){var _0x1aa9be=_0x8f0fd1[_0x49aead][_0x1cec80(0x132)],_0x119b1f=_0x8f0fd1[_0x49aead][_0x1cec80(0x109)];if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x30c)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x265cd1){var _0x3b747a=_0x1cec80,_0x34cb47=_0x265cd1[_0x3b747a(0x2f7)],_0x5418a3=_0x265cd1[_0x3b747a(0x1ba)],_0x16e20f=_0x265cd1['Id'];g_TechAdminArr[_0x3b747a(0x27d)]({'EMail':_0x34cb47,'Id':_0x16e20f,'UserName':_0x5418a3}),userRecords[_0x3b747a(0x27d)]({'EMail':_0x34cb47,'WebPartName':_0x3b747a(0x30c),'deptId':0x0,'Id':_0x16e20f,'UserName':_0x5418a3});var _0x3d3be4='',_0xbce867=_spPageContextInfo[_0x3b747a(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x34cb47);_0x3d3be4+=_0x3b747a(0x230)+_0x16e20f+_0x3b747a(0x22b),_0x3d3be4+=_0x3b747a(0x13e)+_0xbce867+_0x3b747a(0x31e),_0x3d3be4+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x5418a3+'</h3>',_0x3d3be4+=_0x3b747a(0x124)+_0x34cb47+_0x3b747a(0x1c6)+_0x34cb47+_0x3b747a(0x208),_0x3d3be4+=_0x3b747a(0x174)+_0x34cb47+_0x3b747a(0x24d),_0x3d3be4+=_0x3b747a(0x173),$(_0x3b747a(0x26c))['append'](_0x3d3be4);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x217)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x4daec0){var _0x33db31=_0x1cec80,_0x12238f=_0x4daec0[_0x33db31(0x2f7)],_0xfdc75=_0x4daec0[_0x33db31(0x1ba)],_0x4b723f=_0x4daec0['Id'];g_ProcessArr[_0x33db31(0x27d)]({'EMail':_0x12238f,'Id':_0x4b723f,'UserName':_0xfdc75}),userRecords[_0x33db31(0x27d)]({'EMail':_0x12238f,'WebPartName':_0x33db31(0x217),'deptId':0x0,'Id':_0x4b723f,'UserName':_0xfdc75});var _0x124e89='',_0x423fc4=_spPageContextInfo[_0x33db31(0x1b9)]+_0x33db31(0x169)+escapeProperly(_0x12238f);_0x124e89+=_0x33db31(0x230)+_0x4b723f+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x124e89+=_0x33db31(0x13e)+_0x423fc4+_0x33db31(0x31e),_0x124e89+=_0x33db31(0x2fa)+_0xfdc75+'</h3>',_0x124e89+=_0x33db31(0x124)+_0x12238f+_0x33db31(0x1c6)+_0x12238f+'</p></div>',_0x124e89+=_0x33db31(0xf8)+_0x12238f+_0x33db31(0x24d),_0x124e89+=_0x33db31(0x173),$(_0x33db31(0x1c0))[_0x33db31(0x18d)](_0x124e89);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x12d)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x516fb3){var _0x4d5578=_0x1cec80,_0x426551=_0x516fb3[_0x4d5578(0x2f7)],_0x399e36=_0x516fb3[_0x4d5578(0x1ba)],_0x5090b9=_0x516fb3['Id'];g_ProjectArr[_0x4d5578(0x27d)]({'EMail':_0x426551,'Id':_0x5090b9,'UserName':_0x399e36}),userRecords['push']({'EMail':_0x426551,'WebPartName':_0x4d5578(0x12d),'deptId':0x0,'Id':_0x5090b9,'UserName':_0x399e36});var _0x503a98='',_0x2eff9c=_spPageContextInfo[_0x4d5578(0x1b9)]+_0x4d5578(0x169)+escapeProperly(_0x426551);_0x503a98+=_0x4d5578(0x230)+_0x5090b9+_0x4d5578(0x22b),_0x503a98+=_0x4d5578(0x13e)+_0x2eff9c+_0x4d5578(0x31e),_0x503a98+=_0x4d5578(0x2fa)+_0x399e36+'</h3>',_0x503a98+=_0x4d5578(0x124)+_0x426551+_0x4d5578(0x1c6)+_0x426551+_0x4d5578(0x208),_0x503a98+=_0x4d5578(0x2fc)+_0x426551+_0x4d5578(0x24d),_0x503a98+=_0x4d5578(0x173),$(_0x4d5578(0x202))[_0x4d5578(0x18d)](_0x503a98);});}else{if(_0x8f0fd1[_0x49aead]['WebPartName']==_0x1cec80(0x1aa)){var _0x40bf14=_0x8f0fd1[_0x49aead]['Contributors'];_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x5d7388){var _0x2a2994=_0x1cec80,_0x261b63=_0x5d7388[_0x2a2994(0x2f7)],_0x29eeaf=_0x5d7388[_0x2a2994(0x1ba)],_0x4474ef=_0x5d7388['Id'];g_ClientArr[_0x2a2994(0x27d)]({'EMail':_0x261b63,'Id':_0x4474ef,'UserName':_0x29eeaf}),userRecords[_0x2a2994(0x27d)]({'EMail':_0x261b63,'WebPartName':_0x2a2994(0x1aa),'deptId':0x0,'Id':_0x4474ef,'UserName':_0x29eeaf});var _0x3d4708='',_0x201157=_spPageContextInfo[_0x2a2994(0x1b9)]+_0x2a2994(0x169)+escapeProperly(_0x261b63);_0x3d4708+=_0x2a2994(0x230)+_0x4474ef+_0x2a2994(0x22b),_0x3d4708+=_0x2a2994(0x13e)+_0x201157+'\x22\x20alt=\x22\x22></div>',_0x3d4708+=_0x2a2994(0x2fa)+_0x29eeaf+'</h3>',_0x3d4708+=_0x2a2994(0x124)+_0x261b63+_0x2a2994(0x1c6)+_0x261b63+_0x2a2994(0x208),_0x3d4708+=_0x2a2994(0x15c)+_0x261b63+_0x2a2994(0x24d),_0x3d4708+=_0x2a2994(0x173),$('#CustomerManagementAdmin')[_0x2a2994(0x18d)](_0x3d4708);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]=='Announcements'){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x1ca))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrckGeneralAnnouncement()),_0x119b1f==![]&&($(_0x1cec80(0x2e7))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$(_0x1cec80(0x24e))[_0x1cec80(0x1fd)](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x5d5bc1){var _0x2fe4b3=_0x1cec80,_0x1758b2=_0x5d5bc1[_0x2fe4b3(0x2f7)],_0x4bbee6=_0x5d5bc1[_0x2fe4b3(0x1ba)],_0x4f7a6c=_0x5d5bc1['Id'];g_AnnouncementsArr[_0x2fe4b3(0x27d)]({'EMail':_0x1758b2,'Id':_0x4f7a6c,'UserName':_0x4bbee6}),userRecords[_0x2fe4b3(0x27d)]({'EMail':_0x1758b2,'WebPartName':_0x2fe4b3(0x15f),'deptId':0x0,'Id':_0x4f7a6c,'UserName':_0x4bbee6});var _0x55d10f='',_0x3f3d02=_spPageContextInfo[_0x2fe4b3(0x1b9)]+_0x2fe4b3(0x169)+escapeProperly(_0x1758b2);_0x55d10f+=_0x2fe4b3(0x230)+_0x4f7a6c+_0x2fe4b3(0x22b),_0x55d10f+=_0x2fe4b3(0x13e)+_0x3f3d02+_0x2fe4b3(0x31e),_0x55d10f+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x4bbee6+'</h3>',_0x55d10f+=_0x2fe4b3(0x124)+_0x1758b2+_0x2fe4b3(0x1c6)+_0x1758b2+_0x2fe4b3(0x208),_0x55d10f+=_0x2fe4b3(0x1b3)+_0x1758b2+_0x2fe4b3(0x24d),_0x55d10f+=_0x2fe4b3(0x173),$(_0x2fe4b3(0x2b2))[_0x2fe4b3(0x18d)](_0x55d10f);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x5d4117){var _0x2d47b8=_0x1cec80,_0x4fd334=_0x5d4117[_0x2d47b8(0x2f7)],_0x5e3c72=_0x5d4117[_0x2d47b8(0x1ba)],_0x28cd36=_0x5d4117['Id'];announcementApprover[_0x2d47b8(0x27d)]({'EMail':_0x4fd334,'Id':_0x28cd36,'UserName':_0x5e3c72}),userRecords['push']({'EMail':_0x4fd334,'WebPartName':_0x2d47b8(0x329),'deptId':0x0,'Id':_0x28cd36,'UserName':_0x5e3c72});var _0x4e07d6='',_0x781ece=_spPageContextInfo['webAbsoluteUrl']+_0x2d47b8(0x169)+escapeProperly(_0x4fd334);_0x4e07d6+=_0x2d47b8(0x230)+_0x28cd36+_0x2d47b8(0x22b),_0x4e07d6+=_0x2d47b8(0x13e)+_0x781ece+_0x2d47b8(0x31e),_0x4e07d6+=_0x2d47b8(0x2fa)+_0x5e3c72+_0x2d47b8(0x1cd),_0x4e07d6+=_0x2d47b8(0x124)+_0x4fd334+_0x2d47b8(0x1c6)+_0x4fd334+'</p></div>',_0x4e07d6+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAnnounceApprov(this,\x20\x27'+_0x4fd334+_0x2d47b8(0x24d),_0x4e07d6+=_0x2d47b8(0x173),$(_0x2d47b8(0x253))[_0x2d47b8(0x18d)](_0x4e07d6);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x211)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be=='Everyone')&&($(_0x1cec80(0x31d))[_0x1cec80(0x271)]('active'),ChrckToggleNews()),_0x119b1f==![]&&($('#tglinformationApprover')[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$(_0x1cec80(0x156))[_0x1cec80(0x1fd)](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x5dd563){var _0x3f3d14=_0x1cec80,_0x5af5fe=_0x5dd563[_0x3f3d14(0x2f7)],_0x2ce895=_0x5dd563[_0x3f3d14(0x1ba)],_0x435ffd=_0x5dd563['Id'];g_informationArr[_0x3f3d14(0x27d)]({'EMail':_0x5af5fe,'Id':_0x435ffd,'UserName':_0x2ce895}),userRecords[_0x3f3d14(0x27d)]({'EMail':_0x5af5fe,'WebPartName':'Banners','deptId':0x0,'Id':_0x435ffd,'UserName':_0x2ce895});var _0xc2c22='',_0x3252fc=_spPageContextInfo[_0x3f3d14(0x1b9)]+_0x3f3d14(0x169)+escapeProperly(_0x5af5fe);_0xc2c22+=_0x3f3d14(0x230)+_0x435ffd+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0xc2c22+=_0x3f3d14(0x13e)+_0x3252fc+_0x3f3d14(0x31e),_0xc2c22+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x2ce895+_0x3f3d14(0x1cd),_0xc2c22+=_0x3f3d14(0x124)+_0x5af5fe+_0x3f3d14(0x1c6)+_0x5af5fe+_0x3f3d14(0x208),_0xc2c22+=_0x3f3d14(0x320)+_0x5af5fe+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0xc2c22+=_0x3f3d14(0x173),$(_0x3f3d14(0x225))['append'](_0xc2c22);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)]['results'][_0x1cec80(0x11a)](function(_0x916e8e){var _0x24947e=_0x1cec80,_0x3b073a=_0x916e8e[_0x24947e(0x2f7)],_0x2f4007=_0x916e8e[_0x24947e(0x1ba)],_0x1828a5=_0x916e8e['Id'];BannersApprover[_0x24947e(0x27d)]({'EMail':_0x3b073a,'Id':_0x1828a5,'UserName':_0x2f4007}),userRecords['push']({'EMail':_0x3b073a,'WebPartName':_0x24947e(0x2eb),'deptId':0x0,'Id':_0x1828a5,'UserName':_0x2f4007});var _0x45c6c2='',_0x2a5641=_spPageContextInfo[_0x24947e(0x1b9)]+_0x24947e(0x169)+escapeProperly(_0x3b073a);_0x45c6c2+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x1828a5+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x45c6c2+=_0x24947e(0x13e)+_0x2a5641+_0x24947e(0x31e),_0x45c6c2+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x2f4007+_0x24947e(0x1cd),_0x45c6c2+=_0x24947e(0x124)+_0x3b073a+_0x24947e(0x1c6)+_0x3b073a+_0x24947e(0x208),_0x45c6c2+=_0x24947e(0x30f)+_0x3b073a+_0x24947e(0x24d),_0x45c6c2+=_0x24947e(0x173),$(_0x24947e(0x14a))[_0x24947e(0x18d)](_0x45c6c2);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]=='Emergency\x20Annoucements'){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be=='EVERYONE'||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x1a9))[_0x1cec80(0x271)]('active'),ChrckEmergencyAnnouncement()),_0x119b1f==![]&&($(_0x1cec80(0x103))['addClass'](_0x1cec80(0x2fb)),$(_0x1cec80(0x209))[_0x1cec80(0x1fd)](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x1f3962){var _0x788de5=_0x1cec80,_0x2b5c99=_0x1f3962['EMail'],_0x566b79=_0x1f3962[_0x788de5(0x1ba)],_0x49e236=_0x1f3962['Id'];g_AlertArr[_0x788de5(0x27d)]({'EMail':_0x2b5c99,'Id':_0x49e236,'UserName':_0x566b79}),userRecords[_0x788de5(0x27d)]({'EMail':_0x2b5c99,'WebPartName':_0x788de5(0x255),'deptId':0x0,'Id':_0x49e236,'UserName':_0x566b79});var _0x1f7c40='',_0x18632f=_spPageContextInfo[_0x788de5(0x1b9)]+_0x788de5(0x169)+escapeProperly(_0x2b5c99);_0x1f7c40+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x49e236+_0x788de5(0x22b),_0x1f7c40+=_0x788de5(0x13e)+_0x18632f+'\x22\x20alt=\x22\x22></div>',_0x1f7c40+=_0x788de5(0x2fa)+_0x566b79+'</h3>',_0x1f7c40+=_0x788de5(0x124)+_0x2b5c99+_0x788de5(0x1c6)+_0x2b5c99+_0x788de5(0x208),_0x1f7c40+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAlert(this,\x20\x27'+_0x2b5c99+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x1f7c40+='</div></div></div></div>',$(_0x788de5(0x238))[_0x788de5(0x18d)](_0x1f7c40);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x2485c4){var _0x52b2ab=_0x1cec80,_0x85bd08=_0x2485c4['EMail'],_0x1d5475=_0x2485c4[_0x52b2ab(0x1ba)],_0xf95cbc=_0x2485c4['Id'];AlertApprover[_0x52b2ab(0x27d)]({'EMail':_0x85bd08,'Id':_0xf95cbc,'UserName':_0x1d5475}),userRecords[_0x52b2ab(0x27d)]({'EMail':_0x85bd08,'WebPartName':_0x52b2ab(0x28d),'deptId':0x0,'Id':_0xf95cbc,'UserName':_0x1d5475});var _0x1f1f2b='',_0x5d38fb=_spPageContextInfo[_0x52b2ab(0x1b9)]+_0x52b2ab(0x169)+escapeProperly(_0x85bd08);_0x1f1f2b+=_0x52b2ab(0x230)+_0xf95cbc+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x1f1f2b+=_0x52b2ab(0x13e)+_0x5d38fb+_0x52b2ab(0x31e),_0x1f1f2b+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x1d5475+_0x52b2ab(0x1cd),_0x1f1f2b+=_0x52b2ab(0x124)+_0x85bd08+_0x52b2ab(0x1c6)+_0x85bd08+_0x52b2ab(0x208),_0x1f1f2b+=_0x52b2ab(0x137)+_0x85bd08+_0x52b2ab(0x24d),_0x1f1f2b+='</div></div></div></div>',$(_0x52b2ab(0x142))[_0x52b2ab(0x18d)](_0x1f1f2b);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x21f)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x2ca))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrckEvents()),_0x119b1f==![]&&($(_0x1cec80(0x1e8))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$('.events-approval-required-yes')['toggleClass'](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x2e198d){var _0x1ed4ab=_0x1cec80,_0x53a7d3=_0x2e198d[_0x1ed4ab(0x2f7)],_0x4ed0c5=_0x2e198d[_0x1ed4ab(0x1ba)],_0x2c9162=_0x2e198d['Id'];g_eventAdminArr['push']({'EMail':_0x53a7d3,'Id':_0x2c9162,'UserName':_0x4ed0c5}),userRecords[_0x1ed4ab(0x27d)]({'EMail':_0x53a7d3,'WebPartName':_0x1ed4ab(0x21f),'deptId':0x0,'Id':_0x2c9162,'UserName':_0x4ed0c5});var _0x31ee6d='',_0x2b803d=_spPageContextInfo[_0x1ed4ab(0x1b9)]+_0x1ed4ab(0x169)+escapeProperly(_0x53a7d3);_0x31ee6d+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x2c9162+_0x1ed4ab(0x22b),_0x31ee6d+=_0x1ed4ab(0x13e)+_0x2b803d+_0x1ed4ab(0x31e),_0x31ee6d+=_0x1ed4ab(0x2fa)+_0x4ed0c5+_0x1ed4ab(0x1cd),_0x31ee6d+=_0x1ed4ab(0x124)+_0x53a7d3+_0x1ed4ab(0x1c6)+_0x53a7d3+_0x1ed4ab(0x208),_0x31ee6d+=_0x1ed4ab(0x2a6)+_0x53a7d3+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x31ee6d+=_0x1ed4ab(0x173),$('#eventAdmin')['append'](_0x31ee6d);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)]['results'][_0x1cec80(0x11a)](function(_0x36ff80){var _0x58f8c4=_0x1cec80,_0x37f8ae=_0x36ff80[_0x58f8c4(0x2f7)],_0x57ac7f=_0x36ff80['Title'],_0x3d8c62=_0x36ff80['Id'];EventApprover[_0x58f8c4(0x27d)]({'EMail':_0x37f8ae,'Id':_0x3d8c62,'UserName':_0x57ac7f}),userRecords[_0x58f8c4(0x27d)]({'EMail':_0x37f8ae,'WebPartName':'EventApprover','deptId':0x0,'Id':_0x3d8c62,'UserName':_0x57ac7f});var _0x5c2738='',_0x13b9eb=_spPageContextInfo['webAbsoluteUrl']+_0x58f8c4(0x169)+escapeProperly(_0x37f8ae);_0x5c2738+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x3d8c62+_0x58f8c4(0x22b),_0x5c2738+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x13b9eb+_0x58f8c4(0x31e),_0x5c2738+=_0x58f8c4(0x2fa)+_0x57ac7f+_0x58f8c4(0x1cd),_0x5c2738+=_0x58f8c4(0x124)+_0x37f8ae+'\x27)\x22>'+_0x37f8ae+_0x58f8c4(0x208),_0x5c2738+=_0x58f8c4(0x1ec)+_0x37f8ae+_0x58f8c4(0x24d),_0x5c2738+=_0x58f8c4(0x173),$('#EventApprover')[_0x58f8c4(0x18d)](_0x5c2738);});}else{if(_0x8f0fd1[_0x49aead]['WebPartName']=='Recognition'){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x24b))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrckRecognition()),_0x119b1f==![]&&($(_0x1cec80(0x222))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$(_0x1cec80(0x10a))[_0x1cec80(0x1fd)]('d-none')),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14[_0x1cec80(0x164)]['forEach'](function(_0x3d70c4){var _0x374e1a=_0x1cec80,_0x4d28cf=_0x3d70c4[_0x374e1a(0x2f7)],_0x844e35=_0x3d70c4[_0x374e1a(0x1ba)],_0x24ce6c=_0x3d70c4['Id'];g_RecognitionArr[_0x374e1a(0x27d)]({'EMail':_0x4d28cf,'Id':_0x24ce6c,'UserName':_0x844e35}),userRecords[_0x374e1a(0x27d)]({'EMail':_0x4d28cf,'WebPartName':_0x374e1a(0x131),'deptId':0x0,'Id':_0x24ce6c,'UserName':_0x844e35});var _0x50a7c2='',_0x87ae57=_spPageContextInfo[_0x374e1a(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x4d28cf);_0x50a7c2+=_0x374e1a(0x230)+_0x24ce6c+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x50a7c2+=_0x374e1a(0x13e)+_0x87ae57+_0x374e1a(0x31e),_0x50a7c2+=_0x374e1a(0x2fa)+_0x844e35+_0x374e1a(0x1cd),_0x50a7c2+=_0x374e1a(0x124)+_0x4d28cf+_0x374e1a(0x1c6)+_0x4d28cf+_0x374e1a(0x208),_0x50a7c2+=_0x374e1a(0x17a)+_0x4d28cf+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x50a7c2+=_0x374e1a(0x173),$(_0x374e1a(0x28c))['append'](_0x50a7c2);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x8567a2){var _0x435290=_0x1cec80,_0x263f6e=_0x8567a2['EMail'],_0x61e742=_0x8567a2['Title'],_0xb8c3b6=_0x8567a2['Id'];RecoginitionApprover[_0x435290(0x27d)]({'EMail':_0x263f6e,'Id':_0xb8c3b6,'UserName':_0x61e742}),userRecords[_0x435290(0x27d)]({'EMail':_0x263f6e,'WebPartName':_0x435290(0x197),'deptId':0x0,'Id':_0xb8c3b6,'UserName':_0x61e742});var _0x35aa41='',_0x332908=_spPageContextInfo[_0x435290(0x1b9)]+_0x435290(0x169)+escapeProperly(_0x263f6e);_0x35aa41+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0xb8c3b6+_0x435290(0x22b),_0x35aa41+=_0x435290(0x13e)+_0x332908+_0x435290(0x31e),_0x35aa41+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x61e742+_0x435290(0x1cd),_0x35aa41+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x263f6e+_0x435290(0x1c6)+_0x263f6e+_0x435290(0x208),_0x35aa41+=_0x435290(0x328)+_0x263f6e+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x35aa41+=_0x435290(0x173),$(_0x435290(0x18e))[_0x435290(0x18d)](_0x35aa41);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x1a7)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x1a4))['addClass'](_0x1cec80(0x2fb)),ChrckPolls()),_0x119b1f==![]&&($(_0x1cec80(0x25a))['addClass']('active'),$(_0x1cec80(0x1e4))[_0x1cec80(0x1fd)]('d-none')),_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x527d6e){var _0x4ece09=_0x1cec80,_0x4baee8=_0x527d6e[_0x4ece09(0x2f7)],_0x420480=_0x527d6e[_0x4ece09(0x1ba)],_0x1f3e9e=_0x527d6e['Id'];g_PollsArr[_0x4ece09(0x27d)]({'EMail':_0x4baee8,'Id':_0x1f3e9e,'UserName':_0x420480}),userRecords['push']({'EMail':_0x4baee8,'WebPartName':_0x4ece09(0x1a7),'deptId':0x0,'Id':_0x1f3e9e,'UserName':_0x420480});var _0x16ddb4='',_0x1fe7dd=_spPageContextInfo[_0x4ece09(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x4baee8);_0x16ddb4+=_0x4ece09(0x230)+_0x1f3e9e+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x16ddb4+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x1fe7dd+_0x4ece09(0x31e),_0x16ddb4+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x420480+'</h3>',_0x16ddb4+=_0x4ece09(0x124)+_0x4baee8+'\x27)\x22>'+_0x4baee8+_0x4ece09(0x208),_0x16ddb4+=_0x4ece09(0x248)+_0x4baee8+_0x4ece09(0x24d),_0x16ddb4+=_0x4ece09(0x173),$(_0x4ece09(0x1e3))[_0x4ece09(0x18d)](_0x16ddb4);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)]['forEach'](function(_0x5b6a7f){var _0x4404a=_0x1cec80,_0x2f27fa=_0x5b6a7f[_0x4404a(0x2f7)],_0xb7fdf8=_0x5b6a7f[_0x4404a(0x1ba)],_0x41aaa2=_0x5b6a7f['Id'];SurveyApprover[_0x4404a(0x27d)]({'EMail':_0x2f27fa,'Id':_0x41aaa2,'UserName':_0xb7fdf8}),userRecords[_0x4404a(0x27d)]({'EMail':_0x2f27fa,'WebPartName':_0x4404a(0x17d),'deptId':0x0,'Id':_0x41aaa2,'UserName':_0xb7fdf8});var _0x297bad='',_0x3269eb=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x2f27fa);_0x297bad+=_0x4404a(0x230)+_0x41aaa2+_0x4404a(0x22b),_0x297bad+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x3269eb+_0x4404a(0x31e),_0x297bad+=_0x4404a(0x2fa)+_0xb7fdf8+_0x4404a(0x1cd),_0x297bad+=_0x4404a(0x124)+_0x2f27fa+_0x4404a(0x1c6)+_0x2f27fa+_0x4404a(0x208),_0x297bad+=_0x4404a(0x147)+_0x2f27fa+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x297bad+='</div></div></div></div>',$(_0x4404a(0x305))[_0x4404a(0x18d)](_0x297bad);});}else{if(_0x8f0fd1[_0x49aead]['WebPartName']==_0x1cec80(0x258)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be=='EVERYONE'||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x145))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrckExperience()),_0x119b1f==![]&&($(_0x1cec80(0x300))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$('.experienc-required-yes')[_0x1cec80(0x1fd)](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x50bb79){var _0x20aea0=_0x1cec80,_0x3d764e=_0x50bb79[_0x20aea0(0x2f7)],_0x4ce5de=_0x50bb79['Title'],_0x2984a8=_0x50bb79['Id'];g_GeneralArr[_0x20aea0(0x27d)]({'EMail':_0x3d764e,'Id':_0x2984a8,'UserName':_0x4ce5de}),userRecords['push']({'EMail':_0x3d764e,'WebPartName':_0x20aea0(0x258),'deptId':0x0,'Id':_0x2984a8,'UserName':_0x4ce5de});var _0x24d522='',_0x10dd9c=_spPageContextInfo[_0x20aea0(0x1b9)]+_0x20aea0(0x169)+escapeProperly(_0x3d764e);_0x24d522+=_0x20aea0(0x230)+_0x2984a8+_0x20aea0(0x22b),_0x24d522+=_0x20aea0(0x13e)+_0x10dd9c+_0x20aea0(0x31e),_0x24d522+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x4ce5de+_0x20aea0(0x1cd),_0x24d522+=_0x20aea0(0x124)+_0x3d764e+'\x27)\x22>'+_0x3d764e+_0x20aea0(0x208),_0x24d522+=_0x20aea0(0x1c5)+_0x3d764e+_0x20aea0(0x24d),_0x24d522+=_0x20aea0(0x173),$(_0x20aea0(0x194))[_0x20aea0(0x18d)](_0x24d522);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)]['forEach'](function(_0x4bb41d){var _0x32da14=_0x1cec80,_0x194086=_0x4bb41d[_0x32da14(0x2f7)],_0x1ef31c=_0x4bb41d[_0x32da14(0x1ba)],_0xcadd89=_0x4bb41d['Id'];ExperienceApprover[_0x32da14(0x27d)]({'EMail':_0x194086,'Id':_0xcadd89,'UserName':_0x1ef31c}),userRecords['push']({'EMail':_0x194086,'WebPartName':_0x32da14(0x112),'deptId':0x0,'Id':_0xcadd89,'UserName':_0x1ef31c});var _0x76158e='',_0xb8680b=_spPageContextInfo[_0x32da14(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x194086);_0x76158e+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0xcadd89+_0x32da14(0x22b),_0x76158e+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0xb8680b+_0x32da14(0x31e),_0x76158e+=_0x32da14(0x2fa)+_0x1ef31c+_0x32da14(0x1cd),_0x76158e+=_0x32da14(0x124)+_0x194086+_0x32da14(0x1c6)+_0x194086+_0x32da14(0x208),_0x76158e+=_0x32da14(0x2b9)+_0x194086+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x76158e+=_0x32da14(0x173),$(_0x32da14(0x27f))[_0x32da14(0x18d)](_0x76158e);});}else{if(_0x8f0fd1[_0x49aead]['WebPartName']==_0x1cec80(0x28e)){var _0x40bf14=_0x8f0fd1[_0x49aead]['Contributors'];(_0x1aa9be=='EVERYONE'||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x1e1))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrckQuestionAnswer()),_0x119b1f==![]&&($(_0x1cec80(0x2a5))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),$('#QuestionApproverBox')[_0x1cec80(0x1fd)](_0x1cec80(0x234))),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x3e206a){var _0x2a1e1e=_0x1cec80,_0xa5f633=_0x3e206a[_0x2a1e1e(0x2f7)],_0x308145=_0x3e206a[_0x2a1e1e(0x1ba)],_0x51a3d1=_0x3e206a['Id'];g_QuestionAnswerArr[_0x2a1e1e(0x27d)]({'EMail':_0xa5f633,'Id':_0x51a3d1,'UserName':_0x308145}),userRecords[_0x2a1e1e(0x27d)]({'EMail':_0xa5f633,'WebPartName':_0x2a1e1e(0x28e),'deptId':0x0,'Id':_0x51a3d1,'UserName':_0x308145});var _0x153ef1='',_0xa551ab=_spPageContextInfo[_0x2a1e1e(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0xa5f633);_0x153ef1+=_0x2a1e1e(0x230)+_0x51a3d1+_0x2a1e1e(0x22b),_0x153ef1+=_0x2a1e1e(0x13e)+_0xa551ab+_0x2a1e1e(0x31e),_0x153ef1+=_0x2a1e1e(0x2fa)+_0x308145+_0x2a1e1e(0x1cd),_0x153ef1+=_0x2a1e1e(0x124)+_0xa5f633+_0x2a1e1e(0x1c6)+_0xa5f633+_0x2a1e1e(0x208),_0x153ef1+=_0x2a1e1e(0x2ec)+_0xa5f633+_0x2a1e1e(0x24d),_0x153ef1+=_0x2a1e1e(0x173),$(_0x2a1e1e(0x2dd))[_0x2a1e1e(0x18d)](_0x153ef1);}),_0x8f0fd1[_0x49aead][_0x1cec80(0x21a)]!=null&&_0x8f0fd1[_0x49aead][_0x1cec80(0x186)][_0x1cec80(0x164)]['forEach'](function(_0x156979){var _0x1d49cc=_0x1cec80,_0x19d038=_0x156979[_0x1d49cc(0x2f7)],_0x1aa7d6=_0x156979[_0x1d49cc(0x1ba)],_0xe7cee0=_0x156979['Id'];QuestionApprover[_0x1d49cc(0x27d)]({'EMail':_0x19d038,'Id':_0xe7cee0,'UserName':_0x1aa7d6}),userRecords['push']({'EMail':_0x19d038,'WebPartName':_0x1d49cc(0x105),'deptId':0x0,'Id':_0xe7cee0,'UserName':_0x1aa7d6});var _0x5dbc7a='',_0x1c8291=_spPageContextInfo[_0x1d49cc(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x19d038);_0x5dbc7a+=_0x1d49cc(0x230)+_0xe7cee0+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x5dbc7a+=_0x1d49cc(0x13e)+_0x1c8291+_0x1d49cc(0x31e),_0x5dbc7a+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x1aa7d6+_0x1d49cc(0x1cd),_0x5dbc7a+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x19d038+_0x1d49cc(0x1c6)+_0x19d038+'</p></div>',_0x5dbc7a+=_0x1d49cc(0x312)+_0x19d038+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x5dbc7a+=_0x1d49cc(0x173),$(_0x1d49cc(0x138))[_0x1d49cc(0x18d)](_0x5dbc7a);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x19b)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x18a))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrcktoggleMagazine()),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14['results']['forEach'](function(_0x1a274a){var _0x20ea7d=_0x1cec80,_0x158736=_0x1a274a['EMail'],_0x1ece86=_0x1a274a[_0x20ea7d(0x1ba)],_0x2d8eec=_0x1a274a['Id'];g_MagazineArr['push']({'EMail':_0x158736,'Id':_0x2d8eec,'UserName':_0x1ece86}),userRecords[_0x20ea7d(0x27d)]({'EMail':_0x158736,'WebPartName':_0x20ea7d(0x19b),'deptId':0x0,'Id':_0x2d8eec,'UserName':_0x1ece86});var _0x2d31c1='',_0x204410=_spPageContextInfo[_0x20ea7d(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x158736);_0x2d31c1+=_0x20ea7d(0x230)+_0x2d8eec+_0x20ea7d(0x22b),_0x2d31c1+=_0x20ea7d(0x13e)+_0x204410+_0x20ea7d(0x31e),_0x2d31c1+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x1ece86+_0x20ea7d(0x1cd),_0x2d31c1+=_0x20ea7d(0x124)+_0x158736+_0x20ea7d(0x1c6)+_0x158736+_0x20ea7d(0x208),_0x2d31c1+=_0x20ea7d(0x27e)+_0x158736+_0x20ea7d(0x24d),_0x2d31c1+=_0x20ea7d(0x173),$(_0x20ea7d(0x177))[_0x20ea7d(0x18d)](_0x2d31c1);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x154)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];(_0x1aa9be==_0x1cec80(0x2fe)||_0x1aa9be==_0x1cec80(0x286))&&($(_0x1cec80(0x141))[_0x1cec80(0x271)](_0x1cec80(0x2fb)),ChrcktoggleMediaGallery()),_0x8f0fd1[_0x49aead]['ContributorsId']!=null&&_0x40bf14[_0x1cec80(0x164)][_0x1cec80(0x11a)](function(_0x212a53){var _0x5e65b0=_0x1cec80,_0x137184=_0x212a53['EMail'],_0x2c2ec6=_0x212a53['Title'],_0xe905bc=_0x212a53['Id'];g_MediaGalleryArr[_0x5e65b0(0x27d)]({'EMail':_0x137184,'Id':_0xe905bc,'UserName':_0x2c2ec6}),userRecords[_0x5e65b0(0x27d)]({'EMail':_0x137184,'WebPartName':'Media','deptId':0x0,'Id':_0xe905bc,'UserName':_0x2c2ec6});var _0x22dac0='',_0x3fb7b3=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x137184);_0x22dac0+=_0x5e65b0(0x230)+_0xe905bc+_0x5e65b0(0x22b),_0x22dac0+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x3fb7b3+'\x22\x20alt=\x22\x22></div>',_0x22dac0+=_0x5e65b0(0x2fa)+_0x2c2ec6+_0x5e65b0(0x1cd),_0x22dac0+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x137184+_0x5e65b0(0x1c6)+_0x137184+_0x5e65b0(0x208),_0x22dac0+=_0x5e65b0(0x240)+_0x137184+_0x5e65b0(0x24d),_0x22dac0+=_0x5e65b0(0x173),$(_0x5e65b0(0x1bb))['append'](_0x22dac0);});}else{if(_0x8f0fd1[_0x49aead][_0x1cec80(0x175)]==_0x1cec80(0x269)){var _0x40bf14=_0x8f0fd1[_0x49aead][_0x1cec80(0x20e)];_0x8f0fd1[_0x49aead][_0x1cec80(0x1c9)]!=null&&_0x40bf14['results'][_0x1cec80(0x11a)](function(_0x5ddfae){var _0x3c92a8=_0x1cec80,_0x25d7f9=_0x5ddfae[_0x3c92a8(0x2f7)],_0x251bc4=_0x5ddfae[_0x3c92a8(0x1ba)],_0x25202d=_0x5ddfae['Id'];g_HrAdminArr['push']({'EMail':_0x25d7f9,'Id':_0x25202d,'UserName':_0x251bc4}),userRecords[_0x3c92a8(0x27d)]({'EMail':_0x25d7f9,'WebPartName':_0x3c92a8(0x191),'deptId':0x0,'Id':_0x25202d,'UserName':_0x251bc4});var _0x29c7cf='',_0x28cbf0=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x25d7f9);_0x29c7cf+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x25202d+_0x3c92a8(0x22b),_0x29c7cf+=_0x3c92a8(0x13e)+_0x28cbf0+_0x3c92a8(0x31e),_0x29c7cf+=_0x3c92a8(0x2fa)+_0x251bc4+_0x3c92a8(0x1cd),_0x29c7cf+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x25d7f9+'\x27)\x22>'+_0x25d7f9+_0x3c92a8(0x208),_0x29c7cf+=_0x3c92a8(0x281)+_0x25d7f9+_0x3c92a8(0x24d),_0x29c7cf+='</div></div></div></div>',$('#hrAdmin')[_0x3c92a8(0x18d)](_0x29c7cf);});}}}}}}}}}}}}}}}}},'error':function(_0xbe2fa7){alert(_0xbe2fa7);}});}function CheckAdminBlock(){var _0x1b2cef=a3_0x5069dc,_0x52a386=[],_0x2fa8cc,_0x5e5903=titanForWork[_0x1b2cef(0x2bd)](_0x1b2cef(0x324));_0x2fa8cc=_0x1b2cef(0x1ae)+_0x5e5903+_0x1b2cef(0x291),$[_0x1b2cef(0x288)](CommonFunction['getItemsWithQueryItem'](_0x1b2cef(0x16e),_0x2fa8cc))[_0x1b2cef(0x310)](function(_0x48176e){var _0x11f38b=_0x1b2cef;try{for(var _0x47f5cd=0x0;_0x47f5cd<_0x48176e['results'][_0x11f38b(0x246)];_0x47f5cd++){_0x52a386[_0x11f38b(0x27d)]({'UserId':_0x48176e[_0x11f38b(0x164)][_0x47f5cd][_0x11f38b(0x1d2)]['Id'],'EMail':_0x48176e['results'][_0x47f5cd][_0x11f38b(0x1d2)][_0x11f38b(0x2f7)],'Department':_0x48176e['results'][_0x47f5cd]['Department']['ID'],'UserEmail':_0x48176e[_0x11f38b(0x164)][_0x47f5cd][_0x11f38b(0x22d)]});}}catch(_0xf002d9){alert(_0xf002d9);}}),AdminWarning='',SuperAdminWaring='';if(g_TechAdminArr[_0x1b2cef(0x246)]>0x0){for(var _0x15e078=0x0;_0x15e078<g_TechAdminArr[_0x1b2cef(0x246)];_0x15e078++){var _0x3c0124=_0x52a386['filter'](function(_0x3424ac){var _0x4f1abe=_0x1b2cef;return _0x3424ac[_0x4f1abe(0x2f7)][_0x4f1abe(0x265)]()==g_TechAdminArr[_0x15e078][_0x4f1abe(0x2f7)]['toLowerCase']()||_0x3424ac[_0x4f1abe(0x24a)][_0x4f1abe(0x265)]()==g_TechAdminArr[_0x15e078][_0x4f1abe(0x2f7)][_0x4f1abe(0x265)]();});_0x3c0124<0x1&&(AdminWarning+=g_TechAdminArr[_0x15e078]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x1b2cef(0x182),IscheckMessage=![]);}else return alert('Please\x20enter\x20Tech\x20AdminContributor\x20name.'),waitingDialog[_0x1b2cef(0x16c)](),![];var _0x46fcfd=g_HrAdminArr;if(_0x46fcfd['length']>0x0){for(var _0x15e078=0x0;_0x15e078<_0x46fcfd[_0x1b2cef(0x246)];_0x15e078++){var _0x3c0124=_0x52a386['filter'](function(_0x35751d){var _0x5fafe2=_0x1b2cef;return _0x35751d[_0x5fafe2(0x2f7)][_0x5fafe2(0x265)]()==_0x46fcfd[_0x15e078][_0x5fafe2(0x2f7)][_0x5fafe2(0x265)]()||_0x35751d[_0x5fafe2(0x24a)][_0x5fafe2(0x265)]()==g_TechAdminArr[_0x15e078][_0x5fafe2(0x2f7)][_0x5fafe2(0x265)]();});_0x3c0124<0x1&&(AdminWarning+=_0x46fcfd[_0x15e078][_0x1b2cef(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x1b2cef(0x18b),IscheckMessage=![]);}else return alert('Please\x20enter\x20HR\x20Admin\x20Contributor\x20name.'),waitingDialog[_0x1b2cef(0x16c)](),![];if(g_ProcessArr[_0x1b2cef(0x246)]>0x0&&$('#processAdminDiv')[_0x1b2cef(0x219)](_0x1b2cef(0x234))==![]){for(var _0x15e078=0x0;_0x15e078<g_ProcessArr[_0x1b2cef(0x246)];_0x15e078++){var _0x3c0124=_0x52a386[_0x1b2cef(0x1b5)](function(_0x36cb20){var _0x2670ae=_0x1b2cef;return _0x36cb20['EMail'][_0x2670ae(0x265)]()==g_ProcessArr[_0x15e078][_0x2670ae(0x2f7)][_0x2670ae(0x265)]()||_0x36cb20[_0x2670ae(0x24a)][_0x2670ae(0x265)]()==g_TechAdminArr[_0x15e078][_0x2670ae(0x2f7)][_0x2670ae(0x265)]();});_0x3c0124<0x1&&(AdminWarning+=g_ProcessArr[_0x15e078][_0x1b2cef(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Process\x20Admin.\x20\x0a\x20',IscheckMessage=![]);}else{if(IsBpassModules==!![]||IsDMSModules==!![])return alert(_0x1b2cef(0x319)),waitingDialog[_0x1b2cef(0x16c)](),![];}if(g_ClientArr[_0x1b2cef(0x246)]>0x0){for(var _0x15e078=0x0;_0x15e078<g_ClientArr[_0x1b2cef(0x246)];_0x15e078++){var _0x3c0124=_0x52a386[_0x1b2cef(0x1b5)](function(_0x50fcc5){var _0xa91b05=_0x1b2cef;return _0x50fcc5[_0xa91b05(0x2f7)][_0xa91b05(0x265)]()==g_ClientArr[_0x15e078][_0xa91b05(0x2f7)][_0xa91b05(0x265)]()||_0x50fcc5[_0xa91b05(0x24a)][_0xa91b05(0x265)]()==g_ClientArr[_0x15e078]['EMail'][_0xa91b05(0x265)]();});_0x3c0124<0x1&&(AdminWarning+=g_ClientArr[_0x15e078][_0x1b2cef(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x1b2cef(0xf2),IscheckMessage=![]);}else return alert(_0x1b2cef(0x2ee)),waitingDialog[_0x1b2cef(0x16c)](),![];if(IsTaskModules==!![]){if(g_ProjectArr[_0x1b2cef(0x246)]>0x0){for(var _0x15e078=0x0;_0x15e078<g_ProjectArr['length'];_0x15e078++){var _0x3c0124=_0x52a386[_0x1b2cef(0x1b5)](function(_0xd100dc){var _0x2dfb5b=_0x1b2cef;return _0xd100dc['EMail']['toLowerCase']()==g_ProjectArr[_0x15e078]['EMail']['toLowerCase']()||_0xd100dc['UserEmail'][_0x2dfb5b(0x265)]()==g_ProjectArr[_0x15e078][_0x2dfb5b(0x2f7)][_0x2dfb5b(0x265)]();});_0x3c0124<0x1&&(AdminWarning+=g_ProjectArr[_0x15e078]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x1b2cef(0x2bb),IscheckMessage=![]);}else return alert('Please\x20enter\x20Project\x20Admin\x20Contributor\x20name.'),waitingDialog[_0x1b2cef(0x16c)](),![];}return IsAdminOrNot;}function TechAdmin(){var _0x40ae39=a3_0x5069dc,_0x4a2ff9=new Array();_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x16e)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x14f)),_0x4a2ff9['push'](_0x40ae39(0x239)),_0x4a2ff9['push'](_0x40ae39(0x210)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x11d)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x250)),_0x4a2ff9['push'](_0x40ae39(0x20d)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x2d5)),_0x4a2ff9[_0x40ae39(0x27d)]('SocialMediaSettings'),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x1cc)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x1d7)),_0x4a2ff9['push'](_0x40ae39(0x10f)),_0x4a2ff9[_0x40ae39(0x27d)](_0x40ae39(0x10f)),_0x4a2ff9['push']('ApplicationLink');var _0x5c5e84=[];g_TechAdminArr[_0x40ae39(0x11a)](function(_0x3e229f){var _0xb59eec=_0x40ae39;_0x5c5e84[_0xb59eec(0x27d)](_0x3e229f['Id']);});var _0x3bf7d8=[];g_HrAdminArr[_0x40ae39(0x11a)](function(_0x11f9a3){var _0x5b374a=_0x40ae39;return _0x3bf7d8[_0x5b374a(0x27d)](_0x11f9a3['Id']),_0x3bf7d8;});var _0x148630=new Array(),_0x1c2d63=_0x40ae39(0x30c),_0x32401d='',_0x3cd8be=_spPageContextInfo[_0x40ae39(0x1b9)],_0x5c592b=new Array();for(var _0x2052e5=0x0;_0x2052e5<_0x5c5e84[_0x40ae39(0x246)];_0x2052e5++){_0x5c592b[_0x40ae39(0x27d)](_0x5c5e84[_0x2052e5]);}for(var _0x2052e5=0x0;_0x2052e5<_0x3bf7d8[_0x40ae39(0x246)];_0x2052e5++){_0x5c592b[_0x40ae39(0x27d)](_0x3bf7d8[_0x2052e5]);}var _0x4e5f90=[];_0x3bf7d8=[];var _0x5805fd=[];g_TechAdminArr[_0x40ae39(0x11a)](function(_0x33a3f8){var _0x5846c4=_0x40ae39;return _0x5805fd['push'](_0x33a3f8[_0x5846c4(0x2f7)]),_0x5805fd;}),GetGroupIDByGroupName(),addUserToSharePointGroup(_0x5805fd),CommonServiceForRootSite(_0x3cd8be,_0x1c2d63,_0x32401d,_0x4a2ff9,_0x148630,_0x3bf7d8,_0x5c5e84,_0x5c592b,_0x4e5f90,!![]);}function ProjectAdmin(){var _0x113994=a3_0x5069dc;if(IsTaskModules==!![]){var _0x39e174=new Array(),_0x3c824e=[];g_ProjectArr[_0x113994(0x11a)](function(_0x349e2d){var _0x54ac87=_0x113994;_0x3c824e[_0x54ac87(0x27d)](_0x349e2d['Id']);});var _0x35c300=new Array(),_0x5c2030=new Array(),_0x4ea619='Project\x20Admin',_0xf38ec4='',_0x37fdad=_spPageContextInfo['webAbsoluteUrl'],_0x56e973=[],_0x413d72=[];return g_ProjectArr[_0x113994(0x11a)](function(_0x24532a){var _0x178a8d=_0x113994;return _0x413d72[_0x178a8d(0x27d)](_0x24532a[_0x178a8d(0x2f7)]),_0x413d72;}),GetGroupIDByGroupName(),addUserToSharePointGroup(_0x413d72),CommonService(_0x37fdad,_0x4ea619,_0xf38ec4,_0x39e174,_0x5c2030,_0x35c300,_0x3c824e,_0x56e973,![]),!![];}return!![];}function CompanyClientMaster(){var _0x413b61=a3_0x5069dc,_0x439404=new Array();_0x439404[_0x413b61(0x27d)]('PollsDetails');var _0x5542f4=[];g_ClientArr['forEach'](function(_0x5d66f9){var _0x573fdf=_0x413b61;_0x5542f4[_0x573fdf(0x27d)](_0x5d66f9['Id']);});var _0x55d3f6=[],_0x474cd7=new Array(),_0x1fff51=_0x413b61(0x1aa),_0x1adc5e='',_0x4adc40=_spPageContextInfo[_0x413b61(0x1b9)],_0xd22d16=[];CommonService(_0x4adc40,_0x1fff51,_0x1adc5e,_0x439404,_0x474cd7,_0x55d3f6,_0x5542f4,_0xd22d16,!![]);}function HRAdmin(){var _0x1e40db=a3_0x5069dc,_0x5c0cbe=new Array(),_0x44411b=[];g_HrAdminArr[_0x1e40db(0x11a)](function(_0x1b34d0){var _0x59f25e=_0x1e40db;_0x44411b[_0x59f25e(0x27d)](_0x1b34d0['Id']);});var _0x384c6a=new Array(),_0x200bf6=new Array(),_0x28798a='HR\x20Admin',_0x382743='',_0xe175cb=_spPageContextInfo['webAbsoluteUrl'],_0x345791=[],_0x4097db=[];g_HrAdminArr[_0x1e40db(0x11a)](function(_0x376a3c){var _0x5cd61d=_0x1e40db;return _0x4097db['push'](_0x376a3c[_0x5cd61d(0x2f7)]),_0x4097db;}),GetGroupIDByGroupName(),addUserToSharePointGroup(_0x4097db),CommonService(_0xe175cb,_0x28798a,_0x382743,_0x5c0cbe,_0x200bf6,_0x384c6a,_0x44411b,_0x345791,![]);}function ProcessAdmin(){var _0x1481cd=a3_0x5069dc;if(IsBpassModules==!![]||IsDMSModules==!![]){var _0x5f2eeb=new Array(),_0x498bd7=[];g_ProcessArr[_0x1481cd(0x11a)](function(_0x382b6e){var _0x2b263d=_0x1481cd;_0x498bd7[_0x2b263d(0x27d)](_0x382b6e['Id']);});var _0x2c4d87=new Array(),_0x2f84aa=new Array(),_0x15037c=_0x1481cd(0x217),_0x469d38='',_0xc59304=_spPageContextInfo['webAbsoluteUrl'],_0x34bdce=[],_0x534a16=[];g_ProcessArr[_0x1481cd(0x11a)](function(_0x51ecec){var _0x155e37=_0x1481cd;return _0x534a16[_0x155e37(0x27d)](_0x51ecec[_0x155e37(0x2f7)]),_0x534a16;}),GetGroupIDByGroupName(),addUserToSharePointGroup(_0x534a16),CommonService(_0xc59304,_0x15037c,_0x469d38,_0x5f2eeb,_0x2f84aa,_0x2c4d87,_0x498bd7,_0x34bdce,![]);}}function addUserToSharePointGroup(_0x4d4bbf){var _0x1120d5=a3_0x5069dc;for(var _0x66f4b8=0x0;_0x66f4b8<_0x4d4bbf[_0x1120d5(0x246)];_0x66f4b8++){addUser(_0x4d4bbf[_0x66f4b8]);}}function addUser(_0x17451e){var _0x52c9bc=a3_0x5069dc,_0x2cdc3e=_0x52c9bc(0x196)+_0x17451e,_0xde3a16=new SP[(_0x52c9bc(0x123))](_spPageContextInfo[_0x52c9bc(0x1b9)]),_0x584995=_0xde3a16['get_web']()[_0x52c9bc(0x183)](),_0x30ce5f=_0x584995[_0x52c9bc(0x2cd)](groupID),_0x41acdc=new SP[(_0x52c9bc(0x16f))]();_0x41acdc[_0x52c9bc(0x1c2)](_0x2cdc3e),this[_0x52c9bc(0x274)]=_0x30ce5f[_0x52c9bc(0x159)]()[_0x52c9bc(0x1d8)](_0x41acdc),_0xde3a16[_0x52c9bc(0x19f)](oUser),_0xde3a16[_0x52c9bc(0x315)](Function[_0x52c9bc(0x236)](this,this[_0x52c9bc(0x2c1)]),Function[_0x52c9bc(0x236)](this,this[_0x52c9bc(0x187)]));}function onQuerySucceeded(_0x5119a5){var _0x4ec6a2=a3_0x5069dc;console[_0x4ec6a2(0x168)](_0x5119a5);}function onQueryFailed(_0x20e13c,_0x27783f){var _0x2a08de=a3_0x5069dc;console[_0x2a08de(0x168)](_0x2a08de(0x2a9));}var groupID='';function GetGroupIDByGroupName(){var _0x1ba948=a3_0x5069dc,_0x35204a='Owners',_0x25498c=_spPageContextInfo[_0x1ba948(0x1b9)]+_0x1ba948(0x18f)+_0x35204a+_0x1ba948(0x25d);return $[_0x1ba948(0x308)]({'url':_0x25498c,'method':_0x1ba948(0x1d3),'async':![],'headers':{'Accept':_0x1ba948(0x108)},'success':function(_0x5e257c){groupID=_0x5e257c['d']['Id'];},'error':function(_0x37a767){var _0x13894c=_0x1ba948;console[_0x13894c(0x168)](_0x37a767);}}),groupID;};function CommonServiceForRootSite(_0x37e0e6,_0x40be53,_0x28c8db,_0x122e4a,_0x47efa7,_0x441507,_0x23cc2d,_0x1d324d,_0x3deec0,_0x45ea30){var _0x33b574=a3_0x5069dc,_0x53b053=_0x33b574(0x11d),_0x3eebed=ValidateExistingPermissionProcessApprover(_0x53b053,currentCompanyid,_0x28c8db,_0x40be53),_0x2dc81e=GenerateMetaData(_0x53b053,currentCompanyid,_0x28c8db,_0x40be53,_0x47efa7,_0x441507,_0x23cc2d,_0x3deec0);_0x3eebed==''?$[_0x33b574(0x288)](ListCommonService[_0x33b574(0x316)](_0x53b053,_0x2dc81e))['done'](function(_0x5df274){var _0x82362d=_0x33b574;if(_0x45ea30==!![])for(var _0x584546=0x0;_0x584546<_0x122e4a[_0x82362d(0x246)];_0x584546++){}}):$['when'](ListCommonService[_0x33b574(0x309)](_0x53b053,_0x2dc81e,_0x3eebed))[_0x33b574(0x310)](function(_0x1c2db5){var _0x24249d=_0x33b574;if(_0x45ea30==!![])for(var _0xb48dbb=0x0;_0xb48dbb<_0x122e4a[_0x24249d(0x246)];_0xb48dbb++){}});}function CommonService(_0x1a8814,_0x42fc00,_0x47e138,_0x4bb176,_0x1d6caf,_0x5cccb1,_0x30e8df,_0x559d0a,_0xba51fd,_0x3bb193){var _0x4f4736=a3_0x5069dc,_0x41919a='',_0x49268a='ProcessApprovers',_0x564bef=ValidateExistingPermissionProcessApprover(_0x49268a,currentCompanyid,_0x47e138,_0x42fc00),_0x4c6fd1=GenerateMetaData(_0x49268a,currentCompanyid,_0x47e138,_0x42fc00,_0x1d6caf,_0x5cccb1,_0x30e8df,_0x559d0a,_0x3bb193);_0x564bef==''?$[_0x4f4736(0x288)](ListCommonService[_0x4f4736(0x316)](_0x49268a,_0x4c6fd1))[_0x4f4736(0x310)](function(_0x4fccd3){var _0x467a16=_0x4f4736;if(_0xba51fd==!![])for(var _0x4544a9=0x0;_0x4544a9<_0x4bb176[_0x467a16(0x246)];_0x4544a9++){}}):$['when'](ListCommonService[_0x4f4736(0x309)](_0x49268a,_0x4c6fd1,_0x564bef))[_0x4f4736(0x310)](function(_0x438a11){var _0x5e4945=_0x4f4736;if(_0xba51fd==!![])for(var _0x42fb08=0x0;_0x42fb08<_0x4bb176[_0x5e4945(0x246)];_0x42fb08++){}});}function a3_0x4347(){var _0x17f7d2=['onQueryFailed','ready','\x20are\x20not\x20departmental\x20user,\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Project\x20Admin.\x0a','#toggleMagazine','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20HR\x20Admin.\x20\x0a\x20','ui-dialog_costom','append','#RecoginitionApprover','/_api/web/sitegroups/getbyname(\x27','HOD','Hr\x20Admin','New\x20Initiative','#initiativeApproval','#ExperienceAdmin','Departmental\x20Events','i:0#.f|membership|','RecoginitionApprover','close','resolve','#000','Media\x20Gallery','#projectAdminDertmental','#toggleActivityApp','ui-dialog_cost','load','get_lookupId','DeptContri','#EventApprover','SELECTIVE','#togglePolls','each',',roleDefId=','Polls','\x20are\x20not\x20departmental\x20user,\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20New\x20Initiative.\x0a\x20','#toggleEmergencyAnnouncement','ClientMaster','text','10234lfqAqF','fadeOut','?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,\x20Department/DepartmentName,Company/ID\x20&$expand=LogonName,Department,Company\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeInitiativeApp(this,\x20\x27','#toggleSuggestion','.contributors-approval-required-yes','recognitionAdmin','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAnnouncement(this,\x20\x27','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeSuggesion(this,\x20\x27','filter','#__REQUESTDIGEST','/Pages/Default.aspx?WebAppId=','fadeIn','webAbsoluteUrl','Title','#mediaGalleryAdmin','AnnouncementApprovers_Company_TopSpan','scrollHeight','Please\x20enter\x20Alert\x20Contributor\x20name.','BreakInherite','#processAdmin','\x20</option>','set_loginName','MediaContributors_Company','ExperienceAdmin','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeExperience(this,\x20\x27','\x27)\x22>','#hrAdmin','#ActivityAdmin','ContributorsId','#toggleGeneralAnnouncement','5051640cWdjNK','LanguageSetting','</h3>','102TNtOvl','POST','#overlaysearch','EventsContributors_Company_TopSpan','LogonName','GET','#otherDeptContributors','OnValueChangedClientScript','DELETE','ThemePictures','add','Error\x20in\x20Bind\x20Departments\x20method.','deptContributorsPplPicker_TopSpan','#deptContributors','\x27)/items/','/_api/web/lists/getbytitle(\x27DepartmentalDMS\x27)/RoleAssignments?$top=5000&$expand=Member,RoleDefinitionBindings,User','promise','Multilingual\x20:\x20','#SuggestionBox','#toggleQuestionAnswer','DepartmentId','#surveyAdmin','.Survey-required-yes','#btnSubmit_Company','projectAdminPplPicker','KnowledgeAdmin','#tglEventApprover','?$select=ID,SiteURL&$filter=ID\x20eq\x20\x27','#suggestionApproval','Success','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeEventApprov(this,\x20\x27','1482232klSTub','DocumentApprovers','prop','hrAdmin','parents','mediaGalleryAdmin','Event','/_api/web/siteusers?$filter=PrincipalType\x20eq\x204\x20and\x20Title\x20eq\x20\x27Everyone\x27','GetAllUserInfo','scope','\x20is\x20departmental\x20user,\x20can\x20not\x20assigned\x20as\x20reader\x20from\x20other\x20department.\x0a\x20','SuggestionAdmin','AddUserKeys','MainPollsList','AlertApprovers_Company_TopSpan','Please\x20enter\x20Recognition\x20Contributor\x20name.','toggleClass','surveyAdmin','#radioAllContr','?$select=Title,Key,DefaultLanguage&$top=5000&$filter=(Title\x20eq\x20\x27Workplace\x27\x20or\x20Title\x20eq\x20\x27Home\x20Page\x27)','DisplayText','#projectAdmin','#toggleKnowledge','application/json;odata=verbose','DeptSiteUrl','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeKnowledgeApp(this,\x20\x27','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromContributorsOfOtherDept(this,\x20\x27','</p></div>','.alert-approval-required-yes','SPClientPeoplePicker','SuggestionPplPicker_TopSpan','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeKnowledge(this,\x20\x27','TipOfTheDay','Contributors','/_api/web/lists/getByTitle(\x27','Departments','Banners','BannersContributors_Company','projectAdmin','#KnowledgeBox','.ui-widget-overlay','\x20already\x20exists','Process\x20Admin','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Events\x20Approvers.\x20\x0a\x20','hasClass','ApproverId','attr','#loader_showing','SPGroupID','value','Events','click','#genericPopup','#tglRecoginitionApprover','.sharing-with-everyone-approvers','#allApprovers','#informationAdmin','HasResolvedUsers','#deptsiteurl','170cCAPaD','Department','Please\x20enter\x20Alert\x20approver\x20name.','\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>','otherDeptContributors','Email','DepartmentalDMS','2274IwAYOZ','<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User','toLocaleLowerCase','split','18kZYFia','d-none','userId','createDelegate','\x20and\x20DepartmentId\x20eq\x20\x27','#alertAdmin','OfficeLocation','#SuggestionAdmin','#submitnow','284GjNPie','headOfDepartment','Please\x20select\x20department\x20.','are\x20departmental\x20user,\x20cannot\x20be\x20assigned\x20as\x20Contributors\x20from\x20Other\x20Dept.\x0a\x20','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeMedia(this,\x20\x27','User\x20has\x20been\x20assigned\x20permission\x20.','PollsContributors_Company','TotalUserCount','/_api/web/lists/getbytitle(\x27','is\x20not\x20an\x20active\x20user\x20\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Suggestion\x20Approvers.\x20','length','#questionBox','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removePolls(this,\x20\x27','#headOfDepartment','UserEmail','#toggleRecognition','BannersApprovers_Company','\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>','.announcement-approval-required-yes','/_api/web/lists/getByTitle(\x27DepartmentalDMS\x27)/roleassignments/addroleassignment(principalid=','ThoughtOfTheDay','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromReader(this,\x20\x27','\x20are\x20not\x20departmental\x20user,\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Knowledge.\x0a','#announcementApprover','.new-initiative-approval-required-yes','Emergency\x20Annoucements','[data-localize]','[object\x20SafariRemoteNotification]','General','dialog','#tglSurveyApprover','EventsApprovers_Company_TopSpan','Owner','\x27)?$select=*','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeActivity(this,\x20\x27','#NewInitiativeAdmin','processPplPicker_TopSpan','User','serchUser','#btnSubmit_Admin','ActivityAdmin','toLowerCase','serchUser_TopSpan','UserName','20qrJhjg','HR\x20Admin','\x27,\x27','#toggleSuggestionApp','#techAdminUser','/_api/web/lists/GetByTitle(\x27','KnowledgeApproverPplPicker','\x27)/roleassignments/addroleassignment(principalid=','null','addClass','#ActivityBox','processAdmin','oUser','Please\x20enter\x20Survey\x20approver\x20name.','Knowledge','AnnouncementContributors_Company','RecognitionContributors_Company_TopSpan','scrollTop','472731fRPRQC','Deferred','DepartmentName','push','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeMagazine(this,\x20\x27','#ExperienceApprover','PollsApprovers_Company','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromHr(this,\x20\x27','MediaGallery','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeDocApprov(this,\x20\x27','482536cjzKQG','Please\x20enter\x20Magazine\x20Contributor\x20name.','Everyone','KnowledgeApprover','when','DeptId','documentMode','HasInputError','#recognitionAdmin','AlertApprover','QuestionAnswer','#toggleDocumentApp','removeClass','\x27\x20\x20\x20&$top=5000','#toggleInitiativeApp','removeSuggApprove','#ActivityApprover','Redear','shownow','pushNotification','deptId','css','Permission\x20has\x20been\x20assigned.','Please\x20enter\x20Initiative\x20approver\x20name.','informationAdmin','MegazineContributors_Company','is\x20not\x20an\x20active\x20user\x20\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20\x20Knowledge\x20Approvers.\x20','/_api/web/lists/getByTitle(\x27DepartmentalDMS\x27)/roleassignments/getbyprincipalid(','/_api/web/lists/getByTitle(\x27MediaGallery\x27)/roleassignments/addroleassignment(principalid=','Please\x20enter\x20Head\x20of\x20the\x20Department\x20name.','DepartmentDocument_Access','QuestionAnswerContributors_Company','SuggestionApprover','#tglQuestionApprover','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeEvent(this,\x20\x27','#readerOtherDept','deptContributors','Permission\x20error','initiativeApproval','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Emergency\x20Announcement.\x20\x0a\x20','ExperienceApprovers_Company_TopSpan','get_current','Head\x20of\x20the\x20department','100%','headOfDeptPplPicker_TopSpan','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Magazine\x20Contributors.\x20\x0a\x20','#announcementsAdmin','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromsearch(this,\x20\x27','QuestionAnswerApprovers_Company_TopSpan','Driver\x20Request','Please\x20enter\x20Suggesion\x20Contributor\x20name.','ClientAdminPplPicker','deptProjectPplPicker','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeExperienceApprov(this,\x20\x27','.knowledge-approval-required-yes','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Project\x20Admin.\x20\x0a\x20','#toggleActivity','getQueryStringParameter','#eventBox','#myIframeTeam','announcementsAdmin','onQuerySucceeded','Please\x20enter\x20Announcements\x20approver\x20name.','alertAdmin','Please\x20enter\x20Activity\x20Contributor\x20name.','ActivityPplPicker_TopSpan','OwnerId','PollsContributors_Company_TopSpan','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeDeptProject(this,\x20\x27','location','#toggleEvents','allApprovers','SiteAdmin','getById','Permission\x20assigned\x20successfully\x20.','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeSuggApprove(this,\x20\x27','PrincipalAccountType','Please\x20enter\x20knowledge\x20approver\x20name.','empty','Documents','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Recognition\x20Approvers.\x20\x0a\x20','LabelsSettings','#alertBox','DefaultLanguage','EventsContributors_Company','/_api/web/ensureuser','responseJSON','/_api/web/lists/getByTitle(\x27MediaGallery\x27)/breakroleinheritance(copyRoleAssignments=false,\x20clearSubscopes=true)','ManageCompany','#questionsAdmin','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20General\x20Announcement\x20Contributors.\x20\x0a\x20','#mediaGalleryBox','TechPplPicker','initiativeApproverPplPicker_TopSpan','Permission\x20removed.','readerPplPicker_TopSpan','checked','change','\x27)/items?$select=ID,SiteURL,DepartmentName,CompanyID/ID&$expand=CompanyID&$filter=CompanyID/ID\x20eq\x20\x27','#tglannouncementApprover','#toggleDocument','SPClientPeoplePickerDict','Please\x20enter\x20survey\x20Contributor\x20name.','BannersApprover','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeQuestion(this,\x20\x27','SRLECTIVE','Please\x20enter\x20Customer\x20Contributor\x20name.','Please\x20enter\x20Questions\x20&\x20Answers\x20approver\x20name.','SuggestionPplPicker','safari','find','button','ActivityPplPicker','getItemsWithQueryItem','indexOf','EMail','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20QuestionAnswer\x20Contributors.\x20\x0a\x20','Width','<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>','active','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeFromProject(this,\x20\x27','#ddlDepartments','EVERYONE','.parentremove','#tglExperienceApprover','getUserById','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20QuestionAnswer\x20Approvers.\x20\x0a\x20','#announcementsBox','.suggestion-approval-required-yes','#SurveyApprover','\x20are\x20not\x20departmental\x20user,\x20cannot\x20be\x20assigned\x20as\x20Contributors.\x20\x0a\x20','readerPplPicker','ajax','updateItemWithID','/_api/web/lists/getBytitle(\x27ProcessApprovers\x27)/items?$select=*,Approver/Title,Approver/EMail,Approver/Id,Approver/UserName,Owner/Title,Owner/EMail,Owner/Id,Owner/UserName,Contributors/Title,Contributors/Id,Contributors/UserName,Contributors/EMail&$expand=Approver,Contributors,Owner&$filter=CompanyId\x20eq\x20\x27','GetGroupIDByGroupName','Tech\x20Admin','ActivityApproverPplPicker_TopSpan','OtherDeptContri','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeBannerApprov(this,\x20\x27','done','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromHOD(this,\x20\x27','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeQuestionApprov(this,\x20\x27','EntityData','getElementById','executeQueryAsync','AddItemToList','popup','MegazineContributors_Company_TopSpan','Please\x20enter\x20Process\x20Admin\x20Contributor\x20name.','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeActivityApprov(this,\x20\x27','Key','211508rVQrNE','#toggleNews','\x22\x20alt=\x22\x22></div>','RecognitionContributors_Company','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeBanner(this,\x20\x27','is\x20not\x20an\x20active\x20user\x20\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20\x20Activity\x20Approvers.\x20','KnowledgeAdminPplPicker','suggestionApprovalPplPicker','CompanyId','\x27\x20data-tokens=\x27','ExperienceApprovers_Company','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Information\x20web-part\x20Contributors.\x20\x0a\x20','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeRecoginationApprov(this,\x20\x27','announcementApprover','is\x20not\x20an\x20active\x20user\x20\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20\x20NewInitiative\x20Approvers.\x20','\x27)/ResetRoleInheritance()','Please\x20enter\x20Event\x20approver\x20name.','ActivityApprover','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Customer\x20Management.\x20\x0a\x20','href','Suggesion','Please\x20enter\x20Suggestion\x20approver\x20name.','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Alert\x20Approvers.\x20','lableText_Converted','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromProcess(this,\x20\x27','#SuggestionApprover','AnnouncementApprovers_Company','ClientAdminPplPicker_TopSpan','Please\x20enter\x20departmental\x20Project\x20admin\x20name.','#KnowledgeAdmin','AlertApprovers_Company','Please\x20enter\x20Recognition\x20approver\x20name.','reject','CustomerManagementAdmin','initiativePplPicker','#tglAlertApprover','\x27&$top=5000','QuestionApprover','get_email','projectAdminDertmental','application/json;\x20odata=verbose','ApproverRequired','.recognition-approval-required-yes','techAdminUser','Project','ActivityApproverPplPicker','EventsApprovers_Company','ThemeSettings','ExperienceContributors_Company_TopSpan','#eventAdmin','ExperienceApprover','stringify','data-localize','\x20are\x20not\x20departmental\x20user,\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Activity\x20Contributors.\x0a\x20','<option\x20value\x20=\x20\x27','html','BannersApprovers_Company_TopSpan','[id$=\x27','forEach','get_loginName','#btnSubmit_DepartmentDocument','ProcessApprovers','NewApprover','User\x20','1073741829','PollsDetails','siteAbsoluteUrl','ClientContext','<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27','trim','val','labelText_Actual','Please\x20enter\x20QuestionAnswer\x20Contributor\x20name.','#documentBox','Please\x20enter\x20New\x20Initiative\x20Contributor\x20name.','informationApprover','Visitors','Project\x20Admin','#tglinformationApprover','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Media\x20Gallery\x20Contributors.\x20','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromContributors(this,\x20\x27','Recognition','Scope','cursor','projectAdminPplPicker_TopSpan','magazineAdmin','remove','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAlertApprov(this,\x20\x27','#QuestionApprover','RecognitionApprovers_Company','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Recognition\x20Contributors.\x20','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Events\x20Contributors.\x20\x0a\x20','#ext','includes','<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22','NewInitiativeAdmin','?$select=ID,WebPartName,CompanyId,DepartmentId&$filter=CompanyId\x20eq\x20\x27','#toggleMediaGallery','#AlertApprover','json','deptContributorsPplPicker','#toggleExperience','Please\x20enter\x20Media\x20Gallery\x20Contributor\x20name.','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removePollsApprov(this,\x20\x27','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Experience\x20Contributors.\x20\x0a\x20','#NewInitiativeBox','#informationApprover','AlertContributors_Company','/_layouts/15/mngsiteadmin.aspx?Openmngsiteadmin','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeNewInitiative(this,\x20\x27','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20survey\x20Contributors.\x20','Companies','Please\x20enter\x20Contributor\x20of\x20Information\x20web-part','error\x20not\x20found\x20users','#magazineBox','1073741826','Media','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeAnnounceApprov(this,\x20\x27','.approval-required-yes','\x20not\x20found','replace','get_users','_TopSpan','ddlDepartments','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeFromClient(this,\x20\x27','KnowledgeAdminPplPicker_TopSpan','Activity','Announcements','TechAdmin','otherDeptContriPplPicker_TopSpan','deptApproversPplPicker_TopSpan','AnnouncementContributors_Company_TopSpan','results','UserId','Please\x20enter\x20Knowledge\x20Contributor\x20\x20name.','#toggleKnowledgeApp','log','/_layouts/15/userphoto.aspx?accountname=','headOfDeptPplPicker','suggestionApprovalPplPicker_TopSpan','hide','getItemsWithQuery','Employees','UserCreationInformation','#KnowledgeApprover','#toggleInitiative','Please\x20enter\x20Document\x20Contributor\x20name.','</div></div></div></div>','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeFromTech(this,\x20\x27','WebPartName','PageAuthorization','#magazineAdmin','#experienceBox','otherDeptContriPplPicker','<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeRecogination(this,\x20\x27','undefined','IsEmpty','SurveyApprover','#CustomerManagementAdmin','initiativeApproverPplPicker','EventApprover','#informationBox','\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Tech\x20Admin.\x20\x0a\x20','get_siteGroups','questionsAdmin','deptApproversPplPicker','Approver'];a3_0x4347=function(){return _0x17f7d2;};return a3_0x4347();}function ValidateExistingPermissionProcessApprover(_0x440db4,_0x4b9186,_0x29a75b,_0x32b0a6){var _0x58a028=a3_0x5069dc,_0x59d539='',_0x1c462d='';_0x29a75b!=null&&_0x29a75b!=''&&(_0x1c462d=_0x58a028(0x237)+_0x29a75b+'\x27');var _0x482d59=_0x58a028(0x140)+_0x4b9186+'\x27\x20and\x20\x20WebPartName\x20eq\x20\x27'+_0x32b0a6+'\x27'+_0x1c462d;return $[_0x58a028(0x288)](ListCommonService[_0x58a028(0x16d)](_0x440db4,_0x482d59))[_0x58a028(0x310)](function(_0x498267){var _0x252c8e=_0x58a028;_0x498267[_0x252c8e(0x246)]>0x0&&(_0x59d539=_0x498267[0x0]['Id']);}),_0x59d539;}function GenerateMetaData(_0x1ecbe9,_0x16a047,_0x232dd7,_0x16c265,_0x4f07f3,_0x2deb43,_0x192acc,_0x45ea8d,_0x5d2f38){var _0x5e7b61=a3_0x5069dc,_0xb11cce=![],_0xce9473=_0x5d2f38;_0x4f07f3[_0x5e7b61(0x246)]==0x0&&(_0x4f07f3=[]);_0x2deb43['length']==0x0&&(_0x2deb43=[]);_0x192acc[_0x5e7b61(0x246)]==0x0&&(_0x192acc=[]);_0x45ea8d[_0x5e7b61(0x246)]==0x0&&(_0x45ea8d=[]);if(_0x16c265==_0x5e7b61(0x2d3)||_0x16c265==_0x5e7b61(0x2a2)){if($(_0x5e7b61(0x2e8))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb)))_0xce9473=_0x5e7b61(0x2fe);}else{if(_0x16c265==_0x5e7b61(0x211))$(_0x5e7b61(0x12e))[_0x5e7b61(0x219)]('active')==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x15f))$('#tglannouncementApprover')[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x255))$(_0x5e7b61(0x103))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265=='Events')$('#tglEventApprover')[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265=='Polls')$(_0x5e7b61(0x25a))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x258))$('#tglExperienceApprover')[_0x5e7b61(0x219)]('active')==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x28e))$(_0x5e7b61(0x2a5))[_0x5e7b61(0x219)]('active')==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x131))$(_0x5e7b61(0x222))[_0x5e7b61(0x219)]('active')==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x2d3))$(_0x5e7b61(0x28f))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x192))$(_0x5e7b61(0x292))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0xf4))$(_0x5e7b61(0x26b))[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else{if(_0x16c265==_0x5e7b61(0x15e))$('#toggleActivityApp')[_0x5e7b61(0x219)](_0x5e7b61(0x2fb))==![]?_0xb11cce=!![]:_0x4f07f3=[];else _0x16c265=='Knowledge'?$(_0x5e7b61(0x167))[_0x5e7b61(0x219)]('active')==![]?_0xb11cce=!![]:_0x4f07f3=[]:_0xb11cce=![];}}}}}}}}}}}}_0x4f07f3['length']==0x0&&(_0x4f07f3=[]);_0x2deb43[_0x5e7b61(0x246)]==0x0&&(_0x2deb43=[]);_0x192acc[_0x5e7b61(0x246)]==0x0&&(_0x192acc=[]);_0x45ea8d[_0x5e7b61(0x246)]==0x0&&(_0x45ea8d=[]);var _0x12ffb4,_0x31396d=ListCommonService['GetItemTypeForListName'](_0x1ecbe9);return _0x12ffb4={'__metadata':{'type':_0x31396d},'CompanyId':_0x16a047,'DepartmentId':_0x232dd7,'WebPartName':_0x16c265,'Scope':_0xce9473,'ApproverId':{'results':_0x4f07f3},'LimitedAccessId':{'results':_0x2deb43},'ContributorsId':{'results':_0x192acc},'OwnerId':{'results':_0x45ea8d},'ApproverRequired':_0xb11cce},_0x16c265!='Documents'&&_0x16c265!=_0x5e7b61(0x15f)&&_0x16c265!=_0x5e7b61(0x21f)&&_0x16c265!='Polls'&&_0x16c265!='General'&&_0x16c265!==_0x5e7b61(0x211)&_0x16c265!=_0x5e7b61(0x28e)&&_0x16c265!=_0x5e7b61(0x131)&&_0x16c265!=_0x5e7b61(0x195)&&_0x16c265!=_0x5e7b61(0x2b5)&&_0x16c265!='Suggesion'&&_0x16c265!='New\x20Initiative'&&_0x16c265!=_0x5e7b61(0x15e)&&_0x16c265!=_0x5e7b61(0x276)&&(delete _0x12ffb4[_0x5e7b61(0x109)],delete _0x12ffb4[_0x5e7b61(0x2c6)]),(_0x232dd7==''||_0x232dd7==null)&&delete _0x12ffb4[_0x5e7b61(0x1e2)],_0x12ffb4;}function removeFromTech(_0x205573,_0x1fef99){var _0x2dfb48=a3_0x5069dc;$(_0x205573)[_0x2dfb48(0x1f1)](_0x2dfb48(0x2ff))['remove'](),g_TechAdminArr=g_TechAdminArr[_0x2dfb48(0x1b5)](function(_0x19a87f){var _0x48ceb8=_0x2dfb48;return _0x19a87f[_0x48ceb8(0x2f7)]['toLowerCase']()!==_0x1fef99['toLowerCase']();});}function removeFromProject(_0x2ff735,_0x427eec){var _0x400c4a=a3_0x5069dc;$(_0x2ff735)['parents'](_0x400c4a(0x2ff))[_0x400c4a(0x136)](),g_ProjectArr=g_ProjectArr[_0x400c4a(0x1b5)](function(_0x24e4b7){var _0xe06074=_0x400c4a;return _0x24e4b7[_0xe06074(0x2f7)][_0xe06074(0x265)]()!==_0x427eec[_0xe06074(0x265)]();});}function removeFromClient(_0xb3ada7,_0x4cc8d9){var _0xc493a1=a3_0x5069dc;$(_0xb3ada7)['parents']('.parentremove')[_0xc493a1(0x136)](),g_ClientArr=g_ClientArr[_0xc493a1(0x1b5)](function(_0x4a3f5f){var _0x4a10b8=_0xc493a1;return _0x4a3f5f[_0x4a10b8(0x2f7)][_0x4a10b8(0x265)]()!==_0x4cc8d9['toLowerCase']();});}function removeUserFromHr(_0x28f511,_0x5f19a7){var _0x26f203=a3_0x5069dc;$(_0x28f511)[_0x26f203(0x1f1)](_0x26f203(0x2ff))[_0x26f203(0x136)](),g_HrAdminArr=g_HrAdminArr['filter'](function(_0x5d1e49){var _0x5aaf1e=_0x26f203;return _0x5d1e49['EMail'][_0x5aaf1e(0x265)]()!==_0x5f19a7['toLowerCase']();});}function removeUserFromProcess(_0xd048a6,_0x174839){var _0x4dc368=a3_0x5069dc;$(_0xd048a6)[_0x4dc368(0x1f1)]('.parentremove')['remove'](),g_ProcessArr=g_ProcessArr[_0x4dc368(0x1b5)](function(_0x1e851a){var _0x3e9312=_0x4dc368;return _0x1e851a['EMail'][_0x3e9312(0x265)]()!==_0x174839['toLowerCase']();});}function removeAnnouncement(_0x42ded8,_0x13d0aa){var _0x3d9ac6=a3_0x5069dc;$(_0x42ded8)[_0x3d9ac6(0x1f1)](_0x3d9ac6(0x2ff))[_0x3d9ac6(0x136)](),g_AnnouncementsArr=g_AnnouncementsArr[_0x3d9ac6(0x1b5)](function(_0x14fac7){var _0x32d3d8=_0x3d9ac6;return _0x14fac7['EMail'][_0x32d3d8(0x265)]()!==_0x13d0aa[_0x32d3d8(0x265)]();});}function removeAnnounceApprov(_0x1a67e1,_0x412d7c){var _0x1b65c7=a3_0x5069dc;$(_0x1a67e1)[_0x1b65c7(0x1f1)](_0x1b65c7(0x2ff))[_0x1b65c7(0x136)](),announcementApprover=announcementApprover[_0x1b65c7(0x1b5)](function(_0x5c6abf){var _0x473b81=_0x1b65c7;return _0x5c6abf[_0x473b81(0x2f7)][_0x473b81(0x265)]()!==_0x412d7c[_0x473b81(0x265)]();});}function removeBanner(_0xde16dd,_0x35353d){var _0x5eb6ce=a3_0x5069dc;$(_0xde16dd)[_0x5eb6ce(0x1f1)](_0x5eb6ce(0x2ff))['remove'](),g_informationArr=g_informationArr['filter'](function(_0xe4d0e1){return _0xe4d0e1['EMail']['toLowerCase']()!==_0x35353d['toLowerCase']();});}function removeBannerApprov(_0x4d1e2d,_0x5e2977){var _0x5d11af=a3_0x5069dc;$(_0x4d1e2d)['parents'](_0x5d11af(0x2ff))[_0x5d11af(0x136)](),BannersApprover=BannersApprover[_0x5d11af(0x1b5)](function(_0x4edc81){var _0x1cdb04=_0x5d11af;return _0x4edc81[_0x1cdb04(0x2f7)][_0x1cdb04(0x265)]()!==_0x5e2977[_0x1cdb04(0x265)]();});}function removeAlert(_0x30070e,_0x2379ab){var _0x54fcaa=a3_0x5069dc;$(_0x30070e)[_0x54fcaa(0x1f1)](_0x54fcaa(0x2ff))[_0x54fcaa(0x136)](),g_AlertArr=g_AlertArr['filter'](function(_0x158003){var _0x429111=_0x54fcaa;return _0x158003[_0x429111(0x2f7)][_0x429111(0x265)]()!==_0x2379ab[_0x429111(0x265)]();});}function removeAlertApprov(_0x53708b,_0x266ab1){var _0x1c76d4=a3_0x5069dc;$(_0x53708b)['parents'](_0x1c76d4(0x2ff))['remove'](),AlertApprover=AlertApprover['filter'](function(_0x4ae6c0){var _0x1651ab=_0x1c76d4;return _0x4ae6c0[_0x1651ab(0x2f7)][_0x1651ab(0x265)]()!==_0x266ab1[_0x1651ab(0x265)]();});}function removeEvent(_0x188769,_0xf24a00){var _0x54c49b=a3_0x5069dc;$(_0x188769)[_0x54c49b(0x1f1)](_0x54c49b(0x2ff))[_0x54c49b(0x136)](),g_eventAdminArr=g_eventAdminArr['filter'](function(_0x3b6716){var _0x1fc10d=_0x54c49b;return _0x3b6716[_0x1fc10d(0x2f7)][_0x1fc10d(0x265)]()!==_0xf24a00[_0x1fc10d(0x265)]();});}function removeEventApprov(_0x5edfbf,_0x341ee5){var _0x348b57=a3_0x5069dc;$(_0x5edfbf)[_0x348b57(0x1f1)](_0x348b57(0x2ff))[_0x348b57(0x136)](),EventApprover=EventApprover[_0x348b57(0x1b5)](function(_0x4a4ec0){var _0x38318d=_0x348b57;return _0x4a4ec0[_0x38318d(0x2f7)][_0x38318d(0x265)]()!==_0x341ee5[_0x38318d(0x265)]();});}function removePolls(_0x42a4e6,_0x4860c0){var _0x404f83=a3_0x5069dc;$(_0x42a4e6)['parents'](_0x404f83(0x2ff))[_0x404f83(0x136)](),g_PollsArr=g_PollsArr[_0x404f83(0x1b5)](function(_0x33f6d6){var _0x2aa8cb=_0x404f83;return _0x33f6d6[_0x2aa8cb(0x2f7)]['toLowerCase']()!==_0x4860c0[_0x2aa8cb(0x265)]();});}function removePollsApprov(_0x188d99,_0x34198b){var _0x37e321=a3_0x5069dc;$(_0x188d99)['parents'](_0x37e321(0x2ff))[_0x37e321(0x136)](),SurveyApprover=SurveyApprover[_0x37e321(0x1b5)](function(_0x47934d){var _0x2d0ed2=_0x37e321;return _0x47934d[_0x2d0ed2(0x2f7)][_0x2d0ed2(0x265)]()!==_0x34198b[_0x2d0ed2(0x265)]();});}function removeRecogination(_0x4dae0d,_0x28a85d){var _0x2d38ac=a3_0x5069dc;$(_0x4dae0d)[_0x2d38ac(0x1f1)](_0x2d38ac(0x2ff))[_0x2d38ac(0x136)](),g_RecognitionArr=g_RecognitionArr[_0x2d38ac(0x1b5)](function(_0x28164b){var _0x2f44a5=_0x2d38ac;return _0x28164b[_0x2f44a5(0x2f7)]['toLowerCase']()!==_0x28a85d[_0x2f44a5(0x265)]();});}function removeRecoginationApprov(_0x4c326a,_0x201361){var _0x412996=a3_0x5069dc;$(_0x4c326a)[_0x412996(0x1f1)](_0x412996(0x2ff))[_0x412996(0x136)](),RecoginitionApprover=RecoginitionApprover[_0x412996(0x1b5)](function(_0x48c308){var _0x2d0572=_0x412996;return _0x48c308[_0x2d0572(0x2f7)][_0x2d0572(0x265)]()!==_0x201361[_0x2d0572(0x265)]();});}function removeExperience(_0x327d5f,_0x4c6bd3){var _0x3a2259=a3_0x5069dc;$(_0x327d5f)['parents'](_0x3a2259(0x2ff))[_0x3a2259(0x136)](),g_GeneralArr=g_GeneralArr['filter'](function(_0x30b27c){var _0xcfa832=_0x3a2259;return _0x30b27c[_0xcfa832(0x2f7)]['toLowerCase']()!==_0x4c6bd3[_0xcfa832(0x265)]();});}function removeExperienceApprov(_0x4fe0d4,_0x20fa3b){var _0x196507=a3_0x5069dc;$(_0x4fe0d4)[_0x196507(0x1f1)](_0x196507(0x2ff))[_0x196507(0x136)](),ExperienceApprover=ExperienceApprover[_0x196507(0x1b5)](function(_0x8a3057){var _0x6e6135=_0x196507;return _0x8a3057[_0x6e6135(0x2f7)][_0x6e6135(0x265)]()!==_0x20fa3b['toLowerCase']();});}function removeQuestion(_0x32d974,_0x4b054f){var _0x1afb08=a3_0x5069dc;$(_0x32d974)['parents']('.parentremove')[_0x1afb08(0x136)](),g_QuestionAnswerArr=g_QuestionAnswerArr[_0x1afb08(0x1b5)](function(_0x1f94d8){var _0x5305f2=_0x1afb08;return _0x1f94d8[_0x5305f2(0x2f7)]['toLowerCase']()!==_0x4b054f['toLowerCase']();});}function removeQuestionApprov(_0x1f04c8,_0x5d44c6){var _0x269695=a3_0x5069dc;$(_0x1f04c8)[_0x269695(0x1f1)](_0x269695(0x2ff))['remove'](),QuestionApprover=QuestionApprover[_0x269695(0x1b5)](function(_0x3edc67){var _0x82666e=_0x269695;return _0x3edc67[_0x82666e(0x2f7)][_0x82666e(0x265)]()!==_0x5d44c6['toLowerCase']();});}function removeMedia(_0x3e671c,_0x2f085a){var _0x2d6e2f=a3_0x5069dc;$(_0x3e671c)[_0x2d6e2f(0x1f1)]('.parentremove')[_0x2d6e2f(0x136)](),g_MediaGalleryArr=g_MediaGalleryArr['filter'](function(_0x44e39d){var _0x3d3e4c=_0x2d6e2f;return _0x44e39d[_0x3d3e4c(0x2f7)][_0x3d3e4c(0x265)]()!==_0x2f085a[_0x3d3e4c(0x265)]();});}function removeMagazine(_0x5491e0,_0x2f056d){var _0x15a938=a3_0x5069dc;$(_0x5491e0)[_0x15a938(0x1f1)](_0x15a938(0x2ff))[_0x15a938(0x136)](),g_MagazineArr=g_MagazineArr[_0x15a938(0x1b5)](function(_0x59a5c8){var _0x299e53=_0x15a938;return _0x59a5c8[_0x299e53(0x2f7)][_0x299e53(0x265)]()!==_0x2f056d[_0x299e53(0x265)]();});}function removeUserFromContributors(_0x171a9c,_0x54c23b){var _0x824561=a3_0x5069dc;$(_0x171a9c)[_0x824561(0x1f1)]('.parentremove')[_0x824561(0x136)](),g_Contributors=g_Contributors[_0x824561(0x1b5)](function(_0x4eddb0){var _0x188618=_0x824561;return _0x4eddb0[_0x188618(0x2f7)][_0x188618(0x265)]()!==_0x54c23b[_0x188618(0x265)]();});}function removeUserFromHOD(_0x3ace3b,_0x4a8666){var _0x48acdd=a3_0x5069dc;$(_0x3ace3b)[_0x48acdd(0x1f1)](_0x48acdd(0x2ff))[_0x48acdd(0x136)](),g_HOD=g_HOD['filter'](function(_0x15f480){var _0x2e813a=_0x48acdd;return _0x15f480['EMail'][_0x2e813a(0x265)]()!==_0x4a8666[_0x2e813a(0x265)]();});}function removeUserFromContributorsOfOtherDept(_0x497315,_0x53449a){var _0x4847fb=a3_0x5069dc;$(_0x497315)['parents']('.parentremove')[_0x4847fb(0x136)](),g_OtherDeptContri=g_OtherDeptContri[_0x4847fb(0x1b5)](function(_0x386539){var _0x12f9d2=_0x4847fb;return _0x386539[_0x12f9d2(0x2f7)][_0x12f9d2(0x265)]()!==_0x53449a['toLowerCase']();});}function removeUserFromReader(_0xd1fedc,_0x2b9723){var _0x8a788b=a3_0x5069dc;$(_0xd1fedc)[_0x8a788b(0x1f1)](_0x8a788b(0x2ff))[_0x8a788b(0x136)](),g_Readers=g_Readers[_0x8a788b(0x1b5)](function(_0x51040e){var _0x53026b=_0x8a788b;return _0x51040e[_0x53026b(0x2f7)]['toLowerCase']()!==_0x2b9723[_0x53026b(0x265)]();});}function removeDocApprov(_0x59dc31,_0x444b17){var _0x4207e9=a3_0x5069dc;$(_0x59dc31)[_0x4207e9(0x1f1)]('.parentremove')[_0x4207e9(0x136)](),g_DocumentApp=g_DocumentApp[_0x4207e9(0x1b5)](function(_0x4bc636){var _0x1e432c=_0x4207e9;return _0x4bc636['EMail'][_0x1e432c(0x265)]()!==_0x444b17[_0x1e432c(0x265)]();});}function removeDeptProject(_0x2b8470,_0x499bc4){var _0x31bd30=a3_0x5069dc;$(_0x2b8470)['parents'](_0x31bd30(0x2ff))['remove'](),g_DepartmentalProject=g_DepartmentalProject[_0x31bd30(0x1b5)](function(_0x3f72e9){var _0x5d2292=_0x31bd30;return _0x3f72e9[_0x5d2292(0x2f7)][_0x5d2292(0x265)]()!==_0x499bc4['toLowerCase']();});}function removeNewInitiative(_0x328464,_0x599e44){var _0x18c6ea=a3_0x5069dc;$(_0x328464)[_0x18c6ea(0x1f1)](_0x18c6ea(0x2ff))[_0x18c6ea(0x136)](),g_NewInitiative=g_NewInitiative[_0x18c6ea(0x1b5)](function(_0x19b736){var _0x392a3f=_0x18c6ea;return _0x19b736['EMail'][_0x392a3f(0x265)]()!==_0x599e44[_0x392a3f(0x265)]();});}function removeInitiativeApp(_0x10dd46,_0x28a28b){var _0x94314d=a3_0x5069dc;$(_0x10dd46)[_0x94314d(0x1f1)](_0x94314d(0x2ff))[_0x94314d(0x136)](),g_NewApprover=g_NewApprover[_0x94314d(0x1b5)](function(_0x11ca98){var _0x5f5942=_0x94314d;return _0x11ca98[_0x5f5942(0x2f7)][_0x5f5942(0x265)]()!==_0x28a28b[_0x5f5942(0x265)]();});}function removeSuggesion(_0x422c91,_0x430755){var _0x5d0d71=a3_0x5069dc;$(_0x422c91)[_0x5d0d71(0x1f1)]('.parentremove')[_0x5d0d71(0x136)](),g_Suggesion=g_Suggesion[_0x5d0d71(0x1b5)](function(_0x95b45d){var _0x425fc0=_0x5d0d71;return _0x95b45d[_0x425fc0(0x2f7)][_0x425fc0(0x265)]()!==_0x430755[_0x425fc0(0x265)]();});}function removeSuggApprove(_0x2e3ba2,_0x13958b){var _0x53ba62=a3_0x5069dc;$(_0x2e3ba2)['parents'](_0x53ba62(0x2ff))[_0x53ba62(0x136)](),SuggestionApprover=SuggestionApprover['filter'](function(_0x35a313){var _0x222fdd=_0x53ba62;return _0x35a313[_0x222fdd(0x2f7)][_0x222fdd(0x265)]()!==_0x13958b[_0x222fdd(0x265)]();});}function removeActivity(_0x2ff3b3,_0x2926b2){var _0x62c5a6=a3_0x5069dc;$(_0x2ff3b3)['parents'](_0x62c5a6(0x2ff))[_0x62c5a6(0x136)](),g_Activity=g_Activity[_0x62c5a6(0x1b5)](function(_0x534e9e){var _0x4cda3c=_0x62c5a6;return _0x534e9e[_0x4cda3c(0x2f7)][_0x4cda3c(0x265)]()!==_0x2926b2[_0x4cda3c(0x265)]();});}function removeActivityApprov(_0x1b7cdc,_0x36d6a1){var _0x19d9e9=a3_0x5069dc;$(_0x1b7cdc)[_0x19d9e9(0x1f1)](_0x19d9e9(0x2ff))['remove'](),g_ActivityApprover=g_ActivityApprover[_0x19d9e9(0x1b5)](function(_0x25171c){var _0x5f4473=_0x19d9e9;return _0x25171c[_0x5f4473(0x2f7)][_0x5f4473(0x265)]()!==_0x36d6a1[_0x5f4473(0x265)]();});}function removeKnowledge(_0x3ae7f3,_0x3fa49c){var _0x21736a=a3_0x5069dc;$(_0x3ae7f3)[_0x21736a(0x1f1)](_0x21736a(0x2ff))['remove'](),g_Knowledge=g_Knowledge[_0x21736a(0x1b5)](function(_0x3b67f3){var _0x9ec28f=_0x21736a;return _0x3b67f3[_0x9ec28f(0x2f7)]['toLowerCase']()!==_0x3fa49c[_0x9ec28f(0x265)]();});}function removeKnowledgeApp(_0x2ee496,_0x25d6b1){var _0x35eae9=a3_0x5069dc;$(_0x2ee496)[_0x35eae9(0x1f1)]('.parentremove')[_0x35eae9(0x136)](),g_KnowledgeApprover=KnowledgeApprover[_0x35eae9(0x1b5)](function(_0x138857){var _0x539e20=_0x35eae9;return _0x138857['EMail'][_0x539e20(0x265)]()!==_0x25d6b1[_0x539e20(0x265)]();});}function a3_0x27b4(_0x2fd5af,_0x4b96fb){var _0x4347b4=a3_0x4347();return a3_0x27b4=function(_0x27b41b,_0xc12c90){_0x27b41b=_0x27b41b-0xef;var _0x5aa784=_0x4347b4[_0x27b41b];return _0x5aa784;},a3_0x27b4(_0x2fd5af,_0x4b96fb);}var g_Suggesion=[],g_NewInitiative=[],g_Knowledge=[],g_KnowledgeApprover=[],KnowledgeApprover=[],g_Activity=[],g_ActivityApprover=[],g_DepartmentalProject=[],g_DepartmentalProjectApprover=[],g_ActivityApprover=[],g_Discussion=[],g_NewApprover=[],SuggestionApprover=[];function emptyArr(){g_Contributors=[],g_HOD=[],g_Readers=[],g_OtherDeptContri=[],g_Suggesion=[],g_NewInitiative=[],g_Knowledge=[],g_KnowledgeApprover=[],KnowledgeApprover=[],g_Activity=[],g_ActivityApprover=[],g_DepartmentalProject=[],g_DepartmentalProjectApprover=[],g_ActivityApprover=[],g_Discussion=[],g_NewApprover=[],SuggestionApprover=[];}function GetDepartmentalApprovers(_0x3115e5){var _0x4636b5=a3_0x5069dc,_0x15260f=g_ApprovalItems[_0x4636b5(0x1b5)](function(_0x529640){return _0x529640['DepartmentId']==_0x3115e5&&_0x529640['CompanyId']==Logged_CompanyId;});$('#ddlDepartments')[_0x4636b5(0x126)](_0x3115e5),emptyArr(),_0x15260f[_0x4636b5(0x11a)](function(_0x35a48b){var _0x170ea1=_0x4636b5;if(_0x35a48b[_0x170ea1(0x175)]==_0x170ea1(0x2d3)){var _0x5ca924=_0x35a48b['Contributors'];_0x35a48b[_0x170ea1(0x132)]=='EVERYONE'||_0x35a48b[_0x170ea1(0x132)]==_0x170ea1(0x286)?($(_0x170ea1(0x1ff))[_0x170ea1(0x1ef)](_0x170ea1(0x2e4),!![]),$(_0x170ea1(0x223))[_0x170ea1(0x1fd)](_0x170ea1(0x234)),$(_0x170ea1(0x2e8))[_0x170ea1(0x271)](_0x170ea1(0x2fb)),$(_0x170ea1(0x129))[_0x170ea1(0x271)](_0x170ea1(0x234)),_0x35a48b[_0x170ea1(0x109)]==![]&&($(_0x170ea1(0x1b1))[_0x170ea1(0x1fd)]('d-none'),$('#toggleDocumentApp')[_0x170ea1(0x271)](_0x170ea1(0x2fb)))):($(_0x170ea1(0x2e8))[_0x170ea1(0x290)]('active'),$('#documentBox')[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x35a48b['ContributorsId']!=null&&_0x5ca924[_0x170ea1(0x164)]['forEach'](function(_0x510373){var _0x36f40a=_0x170ea1,_0x18ba9a=_0x510373[_0x36f40a(0x2f7)],_0x10cf49=_0x510373['Title'],_0x17bf09=_0x510373['Id'];g_Contributors[_0x36f40a(0x27d)]({'EMail':_0x18ba9a,'Id':_0x17bf09,'UserName':_0x10cf49}),userRecords[_0x36f40a(0x27d)]({'EMail':_0x18ba9a,'WebPartName':_0x36f40a(0x1a1),'deptId':_0x35a48b['DepartmentId'],'Id':_0x17bf09,'UserName':_0x10cf49});var _0x5bc27e='',_0x3106ac=_spPageContextInfo['webAbsoluteUrl']+_0x36f40a(0x169)+escapeProperly(_0x18ba9a);_0x5bc27e+=_0x36f40a(0x230)+_0x17bf09+_0x36f40a(0x22b),_0x5bc27e+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x3106ac+'\x22\x20alt=\x22\x22></div>',_0x5bc27e+=_0x36f40a(0x2fa)+_0x10cf49+_0x36f40a(0x1cd),_0x5bc27e+=_0x36f40a(0x124)+_0x18ba9a+_0x36f40a(0x1c6)+_0x18ba9a+_0x36f40a(0x208),_0x5bc27e+=_0x36f40a(0x130)+_0x18ba9a+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x5bc27e+=_0x36f40a(0x173),$('#deptContributors')[_0x36f40a(0x18d)](_0x5bc27e);});var _0x45e472=_0x35a48b[_0x170ea1(0x25c)];_0x35a48b[_0x170ea1(0x2c6)]!=null&&_0x45e472[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x2c3792){var _0x40ef57=_0x170ea1,_0x43d367=_0x2c3792[_0x40ef57(0x2f7)],_0x169759=_0x2c3792['Title'],_0x20aeb5=_0x2c3792['Id'];g_OtherDeptContri[_0x40ef57(0x27d)]({'EMail':_0x43d367,'Id':_0x20aeb5,'UserName':_0x169759}),userRecords[_0x40ef57(0x27d)]({'EMail':_0x43d367,'WebPartName':_0x40ef57(0x30e),'deptId':_0x35a48b[_0x40ef57(0x1e2)],'Id':_0x20aeb5,'UserName':_0x169759});var _0x3e2bf6='',_0x5567a6=_spPageContextInfo[_0x40ef57(0x1b9)]+_0x40ef57(0x169)+escapeProperly(_0x43d367);_0x3e2bf6+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x20aeb5+_0x40ef57(0x22b),_0x3e2bf6+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x5567a6+_0x40ef57(0x31e),_0x3e2bf6+=_0x40ef57(0x2fa)+_0x169759+_0x40ef57(0x1cd),_0x3e2bf6+=_0x40ef57(0x124)+_0x43d367+_0x40ef57(0x1c6)+_0x43d367+'</p></div>',_0x3e2bf6+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeUserFromContributorsOfOtherDept(this,\x20\x27'+_0x43d367+_0x40ef57(0x24d),_0x3e2bf6+=_0x40ef57(0x173),$(_0x40ef57(0x1d4))[_0x40ef57(0x18d)](_0x3e2bf6);});var _0x4ae0ab=_0x35a48b['Approver'];g_DocumentApp=[],_0x35a48b['ApproverId']!=null&&_0x35a48b[_0x170ea1(0x186)][_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x26826f){var _0x3706ac=_0x170ea1,_0xa9a2a8=_0x26826f[_0x3706ac(0x2f7)],_0x1e2812=_0x26826f['Title'],_0xe0582a=_0x26826f['Id'];g_DocumentApp['push']({'EMail':_0xa9a2a8,'Id':_0xe0582a,'UserName':_0x1e2812}),userRecords['push']({'EMail':_0xa9a2a8,'WebPartName':'DocumentApprovers','deptId':_0x35a48b['DepartmentId'],'Id':_0xe0582a,'UserName':_0x1e2812});var _0x48f0b2='',_0x1ad308=_spPageContextInfo[_0x3706ac(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0xa9a2a8);_0x48f0b2+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0xe0582a+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x48f0b2+=_0x3706ac(0x13e)+_0x1ad308+'\x22\x20alt=\x22\x22></div>',_0x48f0b2+=_0x3706ac(0x2fa)+_0x1e2812+_0x3706ac(0x1cd),_0x48f0b2+=_0x3706ac(0x124)+_0xa9a2a8+_0x3706ac(0x1c6)+_0xa9a2a8+_0x3706ac(0x208),_0x48f0b2+=_0x3706ac(0x283)+_0xa9a2a8+_0x3706ac(0x24d),_0x48f0b2+=_0x3706ac(0x173),$(_0x3706ac(0x224))[_0x3706ac(0x18d)](_0x48f0b2);});}if(_0x35a48b['WebPartName']==_0x170ea1(0x2a2)){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b[_0x170ea1(0x1c9)];_0x43d7ce!=null&&_0x5ca924['results'][_0x170ea1(0x11a)](function(_0x167bb8){var _0x25809b=_0x170ea1,_0x138f6b=_0x167bb8[_0x25809b(0x2f7)],_0x16e640=_0x167bb8[_0x25809b(0x1ba)],_0x5c13f8=_0x167bb8['Id'];g_Readers[_0x25809b(0x27d)]({'EMail':_0x138f6b,'Id':_0x5c13f8,'deptId':_0x35a48b[_0x25809b(0x1e2)],'UserName':_0x16e640}),userRecords['push']({'EMail':_0x138f6b,'WebPartName':'Redear','deptId':_0x35a48b[_0x25809b(0x1e2)],'Id':_0x5c13f8,'UserName':_0x16e640});var _0x185aa2='',_0x222df7=_spPageContextInfo[_0x25809b(0x1b9)]+_0x25809b(0x169)+escapeProperly(_0x138f6b);_0x185aa2+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x5c13f8+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x185aa2+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x222df7+_0x25809b(0x31e),_0x185aa2+=_0x25809b(0x2fa)+_0x16e640+_0x25809b(0x1cd),_0x185aa2+=_0x25809b(0x124)+_0x138f6b+_0x25809b(0x1c6)+_0x138f6b+_0x25809b(0x208),_0x185aa2+=_0x25809b(0x251)+_0x138f6b+_0x25809b(0x24d),_0x185aa2+=_0x25809b(0x173),$(_0x25809b(0x2a7))[_0x25809b(0x18d)](_0x185aa2);});}if(_0x35a48b[_0x170ea1(0x175)]=='Project'){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b[_0x170ea1(0x1c9)];_0x43d7ce!=null&&_0x5ca924[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0xc86e09){var _0x217e80=_0x170ea1,_0x1b82fa=_0xc86e09['EMail'],_0x133dac=_0xc86e09[_0x217e80(0x1ba)],_0x310cd5=_0xc86e09['Id'];g_DepartmentalProject[_0x217e80(0x27d)]({'EMail':_0x1b82fa,'Id':_0x310cd5,'deptId':_0x35a48b[_0x217e80(0x1e2)],'UserName':_0x133dac}),userRecords[_0x217e80(0x27d)]({'EMail':_0x1b82fa,'WebPartName':_0x217e80(0x10c),'deptId':_0x35a48b['DepartmentId'],'Id':_0x310cd5,'UserName':_0x133dac});var _0x3deeaf='',_0x1cbdd4=_spPageContextInfo[_0x217e80(0x1b9)]+_0x217e80(0x169)+escapeProperly(_0x1b82fa);_0x3deeaf+=_0x217e80(0x230)+_0x310cd5+_0x217e80(0x22b),_0x3deeaf+=_0x217e80(0x13e)+_0x1cbdd4+_0x217e80(0x31e),_0x3deeaf+=_0x217e80(0x2fa)+_0x133dac+'</h3>',_0x3deeaf+=_0x217e80(0x124)+_0x1b82fa+_0x217e80(0x1c6)+_0x1b82fa+'</p></div>',_0x3deeaf+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeDeptProject(this,\x20\x27'+_0x1b82fa+_0x217e80(0x24d),_0x3deeaf+=_0x217e80(0x173),$(_0x217e80(0x19c))[_0x217e80(0x18d)](_0x3deeaf);});}if(_0x35a48b[_0x170ea1(0x175)]==_0x170ea1(0x192)){var _0x5ca924=_0x35a48b['Contributors'],_0x43d7ce=_0x35a48b['ContributorsId'];_0x35a48b[_0x170ea1(0x132)]=='EVERYONE'||_0x35a48b[_0x170ea1(0x1f6)]==_0x170ea1(0x286)?($(_0x170ea1(0x171))[_0x170ea1(0x271)]('active'),$(_0x170ea1(0x149))[_0x170ea1(0x271)](_0x170ea1(0x234))):($(_0x170ea1(0x171))[_0x170ea1(0x290)](_0x170ea1(0x2fb)),$(_0x170ea1(0x149))[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x43d7ce!=null&&_0x5ca924[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x46d821){var _0xd72381=_0x170ea1,_0x2f5e0a=_0x46d821[_0xd72381(0x2f7)],_0x5e676d=_0x46d821[_0xd72381(0x1ba)],_0x48c366=_0x46d821['Id'];g_NewInitiative[_0xd72381(0x27d)]({'EMail':_0x2f5e0a,'Id':_0x48c366,'deptId':_0x35a48b[_0xd72381(0x1e2)],'UserName':_0x5e676d}),userRecords[_0xd72381(0x27d)]({'EMail':_0x2f5e0a,'WebPartName':'New\x20Initiative','deptId':_0x35a48b[_0xd72381(0x1e2)],'Id':_0x48c366,'UserName':_0x5e676d});var _0x23ceee='',_0x1a5114=_spPageContextInfo['webAbsoluteUrl']+_0xd72381(0x169)+escapeProperly(_0x2f5e0a);_0x23ceee+=_0xd72381(0x230)+_0x48c366+_0xd72381(0x22b),_0x23ceee+=_0xd72381(0x13e)+_0x1a5114+_0xd72381(0x31e),_0x23ceee+='<div\x20class=\x22admin-th-card-body\x20employeeinfo\x22><div\x20class=\x22admin-th-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22admin-th-name\x20text-ellipsis\x22>'+_0x5e676d+_0xd72381(0x1cd),_0x23ceee+=_0xd72381(0x124)+_0x2f5e0a+'\x27)\x22>'+_0x2f5e0a+_0xd72381(0x208),_0x23ceee+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeNewInitiative(this,\x20\x27'+_0x2f5e0a+_0xd72381(0x24d),_0x23ceee+=_0xd72381(0x173),$(_0xd72381(0x25f))[_0xd72381(0x18d)](_0x23ceee);});var _0x3def23=_0x35a48b[_0x170ea1(0x186)];_0x35a48b['ApproverRequired']==![]?($(_0x170ea1(0x292))[_0x170ea1(0x271)]('active'),$(_0x170ea1(0x254))[_0x170ea1(0x271)]('d-none')):($(_0x170ea1(0x292))[_0x170ea1(0x290)]('active'),$('.new-initiative-approval-required-yes')[_0x170ea1(0x290)](_0x170ea1(0x234))),_0x35a48b[_0x170ea1(0x21a)]!=null&&_0x3def23[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x571cec){var _0x2c1624=_0x170ea1,_0x166bed=_0x571cec[_0x2c1624(0x2f7)],_0x163324=_0x571cec['Title'],_0x2cd8a0=_0x571cec['Id'];g_NewApprover[_0x2c1624(0x27d)]({'EMail':_0x166bed,'Id':_0x2cd8a0,'deptId':_0x35a48b[_0x2c1624(0x1e2)],'UserName':_0x163324}),userRecords[_0x2c1624(0x27d)]({'EMail':_0x166bed,'WebPartName':_0x2c1624(0x11e),'deptId':_0x35a48b[_0x2c1624(0x1e2)],'Id':_0x2cd8a0,'UserName':_0x163324});var _0x22b672='',_0x1a9b39=_spPageContextInfo[_0x2c1624(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x166bed);_0x22b672+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x2cd8a0+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0x22b672+=_0x2c1624(0x13e)+_0x1a9b39+_0x2c1624(0x31e),_0x22b672+=_0x2c1624(0x2fa)+_0x163324+_0x2c1624(0x1cd),_0x22b672+=_0x2c1624(0x124)+_0x166bed+_0x2c1624(0x1c6)+_0x166bed+'</p></div>',_0x22b672+=_0x2c1624(0x1af)+_0x166bed+_0x2c1624(0x24d),_0x22b672+=_0x2c1624(0x173),$(_0x2c1624(0x193))[_0x2c1624(0x18d)](_0x22b672);});}if(_0x35a48b[_0x170ea1(0x175)]==_0x170ea1(0xf4)){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b[_0x170ea1(0x1c9)];_0x35a48b[_0x170ea1(0x109)]==![]?($(_0x170ea1(0x26b))['addClass']('active'),$('.suggestion-approval-required-yes')[_0x170ea1(0x271)]('d-none')):($(_0x170ea1(0x26b))[_0x170ea1(0x290)](_0x170ea1(0x2fb)),$(_0x170ea1(0x304))[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x35a48b[_0x170ea1(0x132)]==_0x170ea1(0x2fe)||_0x35a48b[_0x170ea1(0x132)]==_0x170ea1(0x286)?($(_0x170ea1(0x1b0))[_0x170ea1(0x271)](_0x170ea1(0x2fb)),$(_0x170ea1(0x1e0))[_0x170ea1(0x271)]('d-none')):($('#toggleSuggestion')[_0x170ea1(0x290)]('active'),$(_0x170ea1(0x1e0))[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x43d7ce!=null&&_0x5ca924[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x8c026a){var _0x2eb865=_0x170ea1,_0x1301c9=_0x8c026a[_0x2eb865(0x2f7)],_0x4b8b7f=_0x8c026a['Title'],_0x52c0c4=_0x8c026a['Id'];g_Suggesion[_0x2eb865(0x27d)]({'EMail':_0x1301c9,'Id':_0x52c0c4,'deptId':_0x35a48b['DepartmentId'],'UserName':_0x4b8b7f}),userRecords['push']({'EMail':_0x1301c9,'WebPartName':_0x2eb865(0xf4),'deptId':_0x35a48b[_0x2eb865(0x1e2)],'Id':_0x52c0c4,'UserName':_0x4b8b7f});var _0x39e950='',_0x103090=_spPageContextInfo['webAbsoluteUrl']+_0x2eb865(0x169)+escapeProperly(_0x1301c9);_0x39e950+=_0x2eb865(0x230)+_0x52c0c4+_0x2eb865(0x22b),_0x39e950+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x103090+'\x22\x20alt=\x22\x22></div>',_0x39e950+=_0x2eb865(0x2fa)+_0x4b8b7f+_0x2eb865(0x1cd),_0x39e950+=_0x2eb865(0x124)+_0x1301c9+_0x2eb865(0x1c6)+_0x1301c9+'</p></div>',_0x39e950+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeSuggesion(this,\x20\x27'+_0x1301c9+_0x2eb865(0x24d),_0x39e950+='</div></div></div></div>',$('#SuggestionAdmin')['append'](_0x39e950);});var _0x3def23=_0x35a48b[_0x170ea1(0x186)];_0x35a48b[_0x170ea1(0x21a)]!=null&&_0x3def23['results']['forEach'](function(_0x1abbaf){var _0x11830b=_0x170ea1,_0x10a677=_0x1abbaf[_0x11830b(0x2f7)],_0x5a2931=_0x1abbaf[_0x11830b(0x1ba)],_0x32eb42=_0x1abbaf['Id'];SuggestionApprover[_0x11830b(0x27d)]({'EMail':_0x10a677,'Id':_0x32eb42,'deptId':_0x35a48b[_0x11830b(0x1e2)],'UserName':_0x5a2931}),userRecords[_0x11830b(0x27d)]({'EMail':_0x10a677,'WebPartName':'SuggestionApprover','deptId':_0x35a48b[_0x11830b(0x1e2)],'Id':_0x32eb42,'UserName':_0x5a2931});var _0xf43bb2='',_0x5a0fad=_spPageContextInfo[_0x11830b(0x1b9)]+_0x11830b(0x169)+escapeProperly(_0x10a677);_0xf43bb2+=_0x11830b(0x230)+_0x32eb42+'\x22><div\x20class=\x22admin-th-card\x20employeesection\x22>',_0xf43bb2+=_0x11830b(0x13e)+_0x5a0fad+_0x11830b(0x31e),_0xf43bb2+=_0x11830b(0x2fa)+_0x5a2931+_0x11830b(0x1cd),_0xf43bb2+=_0x11830b(0x124)+_0x10a677+_0x11830b(0x1c6)+_0x10a677+_0x11830b(0x208),_0xf43bb2+=_0x11830b(0x2cf)+_0x10a677+_0x11830b(0x24d),_0xf43bb2+=_0x11830b(0x173),$(_0x11830b(0xf9))[_0x11830b(0x18d)](_0xf43bb2);});}if(_0x35a48b[_0x170ea1(0x175)]==_0x170ea1(0x15e)){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b[_0x170ea1(0x1c9)];_0x35a48b[_0x170ea1(0x109)]==![]?($(_0x170ea1(0x19d))[_0x170ea1(0x271)](_0x170ea1(0x2fb)),$('.activity-approval-required-yes')['addClass']('d-none')):($('#toggleActivityApp')[_0x170ea1(0x290)]('active'),$('.activity-approval-required-yes')[_0x170ea1(0x290)]('d-none'));_0x35a48b[_0x170ea1(0x132)]=='EVERYONE'||_0x35a48b[_0x170ea1(0x132)]==_0x170ea1(0x286)?($('#toggleActivity')['addClass']('active'),$(_0x170ea1(0x272))[_0x170ea1(0x271)](_0x170ea1(0x234))):($('#toggleActivity')[_0x170ea1(0x290)](_0x170ea1(0x2fb)),$(_0x170ea1(0x272))[_0x170ea1(0x290)]('d-none'));_0x43d7ce!=null&&_0x5ca924['results'][_0x170ea1(0x11a)](function(_0x361006){var _0x39a2f2=_0x170ea1,_0x171c0b=_0x361006[_0x39a2f2(0x2f7)],_0x554140=_0x361006[_0x39a2f2(0x1ba)],_0x304da5=_0x361006['Id'];g_Activity['push']({'EMail':_0x171c0b,'Id':_0x304da5,'deptId':_0x35a48b['DepartmentId'],'UserName':_0x554140}),userRecords[_0x39a2f2(0x27d)]({'EMail':_0x171c0b,'WebPartName':_0x39a2f2(0x15e),'deptId':_0x35a48b[_0x39a2f2(0x1e2)],'Id':_0x304da5,'UserName':_0x554140});var _0x1c76eb='',_0x498e70=_spPageContextInfo[_0x39a2f2(0x1b9)]+_0x39a2f2(0x169)+escapeProperly(_0x171c0b);_0x1c76eb+=_0x39a2f2(0x230)+_0x304da5+_0x39a2f2(0x22b),_0x1c76eb+=_0x39a2f2(0x13e)+_0x498e70+_0x39a2f2(0x31e),_0x1c76eb+=_0x39a2f2(0x2fa)+_0x554140+_0x39a2f2(0x1cd),_0x1c76eb+=_0x39a2f2(0x124)+_0x171c0b+'\x27)\x22>'+_0x171c0b+_0x39a2f2(0x208),_0x1c76eb+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeActivity(this,\x20\x27'+_0x171c0b+_0x39a2f2(0x24d),_0x1c76eb+=_0x39a2f2(0x173),$(_0x39a2f2(0x1c8))['append'](_0x1c76eb);});var _0x3def23=_0x35a48b[_0x170ea1(0x186)];_0x35a48b[_0x170ea1(0x21a)]!=null&&_0x3def23['results']['forEach'](function(_0x18b684){var _0x444bf6=_0x170ea1,_0x3af239=_0x18b684[_0x444bf6(0x2f7)],_0x344f9c=_0x18b684['Title'],_0x34814f=_0x18b684['Id'];g_ActivityApprover[_0x444bf6(0x27d)]({'EMail':_0x3af239,'Id':_0x34814f,'deptId':_0x35a48b[_0x444bf6(0x1e2)],'UserName':_0x344f9c}),userRecords[_0x444bf6(0x27d)]({'EMail':_0x3af239,'WebPartName':_0x444bf6(0xf1),'deptId':_0x35a48b[_0x444bf6(0x1e2)],'Id':_0x34814f,'UserName':_0x344f9c});var _0x3185f9='',_0x58eaa0=_spPageContextInfo[_0x444bf6(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x3af239);_0x3185f9+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x34814f+_0x444bf6(0x22b),_0x3185f9+=_0x444bf6(0x13e)+_0x58eaa0+'\x22\x20alt=\x22\x22></div>',_0x3185f9+=_0x444bf6(0x2fa)+_0x344f9c+_0x444bf6(0x1cd),_0x3185f9+=_0x444bf6(0x124)+_0x3af239+_0x444bf6(0x1c6)+_0x3af239+_0x444bf6(0x208),_0x3185f9+=_0x444bf6(0x31a)+_0x3af239+_0x444bf6(0x24d),_0x3185f9+='</div></div></div></div>',$(_0x444bf6(0x294))[_0x444bf6(0x18d)](_0x3185f9);});}if(_0x35a48b['WebPartName']=='Knowledge'){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b['ContributorsId'];_0x35a48b[_0x170ea1(0x109)]==![]?($(_0x170ea1(0x167))['addClass'](_0x170ea1(0x2fb)),$('.knowledge-approval-required-yes')[_0x170ea1(0x271)](_0x170ea1(0x234))):($(_0x170ea1(0x167))[_0x170ea1(0x290)]('active'),$(_0x170ea1(0x2ba))[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x35a48b[_0x170ea1(0x132)]==_0x170ea1(0x2fe)||_0x35a48b['Scope']==_0x170ea1(0x286)?($(_0x170ea1(0x203))[_0x170ea1(0x271)](_0x170ea1(0x2fb)),$('#KnowledgeBox')[_0x170ea1(0x271)](_0x170ea1(0x234))):($(_0x170ea1(0x203))[_0x170ea1(0x290)](_0x170ea1(0x2fb)),$('#KnowledgeBox')[_0x170ea1(0x290)](_0x170ea1(0x234)));_0x43d7ce!=null&&_0x5ca924[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x201579){var _0x46fd7f=_0x170ea1,_0x53e28f=_0x201579['EMail'],_0x57abf9=_0x201579[_0x46fd7f(0x1ba)],_0xfc100c=_0x201579['Id'];g_Knowledge[_0x46fd7f(0x27d)]({'EMail':_0x53e28f,'Id':_0xfc100c,'deptId':_0x35a48b[_0x46fd7f(0x1e2)],'UserName':_0x57abf9}),userRecords[_0x46fd7f(0x27d)]({'EMail':_0x53e28f,'WebPartName':_0x46fd7f(0x276),'deptId':_0x35a48b['DepartmentId'],'Id':_0xfc100c,'UserName':_0x57abf9});var _0x4e11c2='',_0x3b4788=_spPageContextInfo[_0x46fd7f(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x53e28f);_0x4e11c2+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0xfc100c+_0x46fd7f(0x22b),_0x4e11c2+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x3b4788+'\x22\x20alt=\x22\x22></div>',_0x4e11c2+=_0x46fd7f(0x2fa)+_0x57abf9+_0x46fd7f(0x1cd),_0x4e11c2+=_0x46fd7f(0x124)+_0x53e28f+_0x46fd7f(0x1c6)+_0x53e28f+_0x46fd7f(0x208),_0x4e11c2+='<div\x20class=\x22text-right\x22><button\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22\x20onclick=\x22removeKnowledge(this,\x20\x27'+_0x53e28f+_0x46fd7f(0x24d),_0x4e11c2+=_0x46fd7f(0x173),$('#KnowledgeAdmin')['append'](_0x4e11c2);});var _0x3def23=_0x35a48b[_0x170ea1(0x186)];_0x35a48b['ApproverId']!=null&&_0x3def23[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x591853){var _0x4ed474=_0x170ea1,_0x87f228=_0x591853[_0x4ed474(0x2f7)],_0x20995c=_0x591853[_0x4ed474(0x1ba)],_0x150b83=_0x591853['Id'];KnowledgeApprover[_0x4ed474(0x27d)]({'EMail':_0x87f228,'Id':_0x150b83,'deptId':$(_0x4ed474(0x2fd))[_0x4ed474(0x126)](),'UserName':_0x20995c}),userRecords[_0x4ed474(0x27d)]({'EMail':_0x87f228,'WebPartName':'KnowledgeApprover','deptId':_0x35a48b['DepartmentId'],'Id':_0x150b83,'UserName':_0x20995c});var _0x297b70='',_0x30b325=_spPageContextInfo[_0x4ed474(0x1b9)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x87f228);_0x297b70+=_0x4ed474(0x230)+_0x150b83+_0x4ed474(0x22b),_0x297b70+=_0x4ed474(0x13e)+_0x30b325+_0x4ed474(0x31e),_0x297b70+=_0x4ed474(0x2fa)+_0x20995c+_0x4ed474(0x1cd),_0x297b70+='<p\x20class=\x22admin-th-email\x20text-ellipsis\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x87f228+_0x4ed474(0x1c6)+_0x87f228+_0x4ed474(0x208),_0x297b70+=_0x4ed474(0x206)+_0x87f228+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x297b70+=_0x4ed474(0x173),$('#KnowledgeApprover')[_0x4ed474(0x18d)](_0x297b70);});}if(_0x35a48b[_0x170ea1(0x175)]==_0x170ea1(0x2ae)){var _0x5ca924=_0x35a48b[_0x170ea1(0x20e)],_0x43d7ce=_0x35a48b[_0x170ea1(0x1c9)];_0x43d7ce!=null&&_0x5ca924[_0x170ea1(0x164)][_0x170ea1(0x11a)](function(_0x170b20){var _0x52ba61=_0x170ea1,_0x349c35=_0x170b20[_0x52ba61(0x2f7)],_0x3075ae=_0x170b20[_0x52ba61(0x1ba)],_0x2188dc=_0x170b20['Id'];g_HOD[_0x52ba61(0x27d)]({'EMail':_0x349c35,'Id':_0x2188dc,'UserName':_0x3075ae}),userRecords[_0x52ba61(0x27d)]({'EMail':_0x349c35,'WebPartName':_0x52ba61(0x190),'deptId':_0x35a48b['DepartmentId'],'Id':_0x2188dc,'UserName':_0x3075ae});var _0x34ada3='',_0x1f6d80=_spPageContextInfo[_0x52ba61(0x1b9)]+_0x52ba61(0x169)+escapeProperly(_0x349c35);_0x34ada3+='<div\x20class=\x22col-md-6\x20col-sm-6\x20col-xs-12\x20parentremove\x20User'+_0x2188dc+_0x52ba61(0x22b),_0x34ada3+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+_0x1f6d80+_0x52ba61(0x31e),_0x34ada3+=_0x52ba61(0x2fa)+_0x3075ae+_0x52ba61(0x1cd),_0x34ada3+=_0x52ba61(0x124)+_0x349c35+_0x52ba61(0x1c6)+_0x349c35+_0x52ba61(0x208),_0x34ada3+=_0x52ba61(0x311)+_0x349c35+_0x52ba61(0x24d),_0x34ada3+='</div></div></div></div>',$(_0x52ba61(0x249))[_0x52ba61(0x18d)](_0x34ada3);});}});}function DepartmentDocuments(){var _0x391b1f=a3_0x5069dc,_0x214b92=$(_0x391b1f(0x2fd))[_0x391b1f(0x126)]();if(_0x214b92!=0x0){var _0x3ba964=[];g_Contributors[_0x391b1f(0x11a)](function(_0x1038ac){_0x3ba964['push'](_0x1038ac['Id']);});var _0x3eabda=[],_0x3baf0=[],_0x578f8d=new Array();_0x578f8d=[],g_DocumentApp['forEach'](function(_0x523dd5){_0x578f8d['push'](_0x523dd5['Id']);});var _0x3eabda=[],_0x26b660='Documents',_0x3ba8c1=[];g_OtherDeptContri[_0x391b1f(0x11a)](function(_0xe18993){var _0x54ef7c=_0x391b1f;_0x3ba8c1[_0x54ef7c(0x27d)](_0xe18993['Id']);});var _0xda3c31=GetSiteURL(_0x214b92);BreakInheritePermissionOnDocuments(_0xda3c31[0x0][_0x391b1f(0x205)],_0x26b660,_0x3ba964,_0x3ba8c1,_0x578f8d),CommonService(_0xda3c31[0x0][_0x391b1f(0x205)],_0x26b660,_0x214b92,_0x3baf0,_0x578f8d,_0x3eabda,_0x3ba964,_0x3ba8c1,!![]);}}function DepartmentDocumentAccess(){var _0xce337e=a3_0x5069dc,_0x3a5ba4=$(_0xce337e(0x2fd))['val']();if(_0x3a5ba4!=0x0){var _0x45f36d=new Array();_0x45f36d[_0xce337e(0x27d)](_0xce337e(0x2a2));var _0x512c17=[];g_Readers[_0xce337e(0x11a)](function(_0x47fb2f){var _0x3d9c07=_0xce337e;_0x512c17[_0x3d9c07(0x27d)](_0x47fb2f['Id']);});var _0xa826d3=new Array(),_0x298de8=new Array(),_0x582918=_0xce337e(0x2a2),_0x27edec=[],_0xe1f7a3=GetSiteURL(_0x3a5ba4);CommonService(_0xe1f7a3[0x0][_0xce337e(0x205)],_0x582918,_0x3a5ba4,_0x45f36d,_0x298de8,_0xa826d3,_0x512c17,_0x27edec,!![]);}}function BreakInheritePermissionOnDocuments(_0x3ed18a,_0x4f069c,_0x28a6a3,_0x1f5493,_0x5ae44f){var _0xff8731=a3_0x5069dc,_0x2c04f1={'Accept':_0xff8731(0x204),'content-Type':_0xff8731(0x204),'X-RequestDigest':jQuery(_0xff8731(0x1b6))[_0xff8731(0x126)]()},_0x27bf4e=_0xff8731(0x22e),_0x58f8ee=_0x3ed18a+_0xff8731(0x20f)+_0x27bf4e+'\x27)/breakroleinheritance(copyRoleAssignments=false,\x20clearSubscopes=true)';$[_0xff8731(0x308)]({'url':_0x58f8ee,'type':_0xff8731(0x1cf),'headers':_0x2c04f1,'async':![],'dataType':_0xff8731(0x143),'success':function(_0x4fa431){var _0x5ae0f8=_0xff8731;AllEmployeeuser=AllEmployeeuser['filter'](function(_0x3baf59){var _0x56885d=a3_0x27b4;return _0x3baf59[_0x56885d(0x229)]==$(_0x56885d(0x2fd))[_0x56885d(0x126)]()&&_0x3baf59['UserId']!=_spPageContextInfo[_0x56885d(0x235)];}),ResetAllPermission(_0x3ed18a);var _0x4f7ca4=[];arrUsersPermission=[],g_Contributors['forEach'](function(_0x281f08){var _0x3580ee=a3_0x27b4;_0x4f7ca4['push'](_0x281f08['Id']),arrUsersPermission[_0x3580ee(0x27d)](_0x281f08['Id']);}),g_HOD[_0x5ae0f8(0x11a)](function(_0xfe6c4){var _0x4df963=_0x5ae0f8;_0x4f7ca4['push'](_0xfe6c4['Id']),arrUsersPermission[_0x4df963(0x27d)](_0xfe6c4['Id']);}),g_OtherDeptContri[_0x5ae0f8(0x11a)](function(_0x219646){var _0x5bef2d=_0x5ae0f8;_0x4f7ca4[_0x5bef2d(0x27d)](_0x219646['Id']),arrUsersPermission[_0x5bef2d(0x27d)](_0x219646['Id']);});if(_0x4f7ca4['length']!=0x0)for(var _0x284b6b=0x0;_0x284b6b<_0x4f7ca4[_0x5ae0f8(0x246)];_0x284b6b++){AssignPermissionForDocuments(_0x3ed18a,_0x5ae0f8(0x22e),_0x4f7ca4[_0x284b6b],_0x5ae0f8(0x120));}var _0x1a08ad=[];g_Readers[_0x5ae0f8(0x11a)](function(_0x181e4d){var _0x12174e=_0x5ae0f8;_0x1a08ad[_0x12174e(0x27d)](_0x181e4d['Id']),arrUsersPermission[_0x12174e(0x27d)](_0x181e4d['Id']);});if(_0x1a08ad[_0x5ae0f8(0x246)]!=0x0)for(var _0x284b6b=0x0;_0x284b6b<_0x1a08ad[_0x5ae0f8(0x246)];_0x284b6b++){AssignPermissionForDocuments(_0x3ed18a,_0x5ae0f8(0x22e),_0x1a08ad[_0x284b6b],_0x5ae0f8(0x153));}AllEmployeeuser['forEach'](function(_0x1b5b8c){var _0x30e4c0=_0x5ae0f8;_0x1b5b8c[_0x30e4c0(0x165)]!=arrUsersPermission[_0x30e4c0(0x13d)](_0x1b5b8c[_0x30e4c0(0x165)])&&AssignPermissionForDocuments(_0x3ed18a,_0x30e4c0(0x22e),_0x1b5b8c[_0x30e4c0(0x165)],'1073741826');});},'error':function(_0x38ea19){var _0x228694=_0xff8731;console[_0x228694(0x168)](JSON[_0x228694(0x113)](_0x38ea19));}});}function AssignPermissionForDocuments(_0x555abb,_0x52f600,_0x67d4f9,_0x492c80){var _0x5e1f53=a3_0x5069dc,_0x950820={'Accept':_0x5e1f53(0x204),'content-Type':_0x5e1f53(0x204),'X-RequestDigest':jQuery(_0x5e1f53(0x1b6))[_0x5e1f53(0x126)]()},_0xfebd70=_0x555abb+'/_api/web/lists/getByTitle(\x27'+_0x52f600+_0x5e1f53(0x26f)+_0x67d4f9+',roleDefId='+_0x492c80+')';$['ajax']({'url':_0xfebd70,'type':'POST','headers':_0x950820,'dataType':_0x5e1f53(0x143),'async':![],'success':function(_0x431153){var _0x3818a9=_0x5e1f53;console[_0x3818a9(0x168)](_0x3818a9(0x241));},'error':function(_0x85bb8c){var _0x7d68a5=_0x5e1f53;console[_0x7d68a5(0x168)](JSON['stringify'](_0x85bb8c));}});}function HeadOfDepartment(){var _0x50476a=a3_0x5069dc,_0x322779=$(_0x50476a(0x2fd))[_0x50476a(0x126)]();if(_0x322779!=0x0){var _0x5398dc=new Array();_0x5398dc['push']('Head\x20of\x20the\x20department');var _0x3a4080=[],_0x59b92d=new Array(),_0x580265=new Array(),_0x488db6='Head\x20of\x20the\x20department',_0x2adbb7=[],_0x293291=GetSiteURL(_0x322779),_0x1d7382=[];g_HOD[_0x50476a(0x11a)](function(_0x12c225){var _0x417c35=_0x50476a;return _0x1d7382[_0x417c35(0x27d)](_0x12c225['Id']),_0x3a4080[_0x417c35(0x27d)](_0x12c225['Id']),_0x1d7382;}),addUserToSharePointGroup(_0x1d7382),CommonService(_0x293291,_0x488db6,_0x322779,_0x5398dc,_0x580265,_0x59b92d,_0x3a4080,_0x2adbb7,!![]);}}var AllEmployeeuser=[];function CheckDepartmentDocuments(){var _0x4441f4=a3_0x5069dc;AllEmployeeuser=[];var _0xe126b2,_0x302e65=Logged_CompanyId;_0xe126b2=_0x4441f4(0x1ae)+_0x302e65+_0x4441f4(0x104),$['when'](CommonFunction[_0x4441f4(0x2f5)]('Employees',_0xe126b2))[_0x4441f4(0x310)](function(_0x50afcf){var _0x464bd2=_0x4441f4;try{for(var _0x4cb903=0x0;_0x4cb903<_0x50afcf[_0x464bd2(0x164)][_0x464bd2(0x246)];_0x4cb903++){AllEmployeeuser[_0x464bd2(0x27d)]({'UserId':_0x50afcf['results'][_0x4cb903][_0x464bd2(0x1d2)]['Id'],'EMail':_0x50afcf['results'][_0x4cb903][_0x464bd2(0x1d2)][_0x464bd2(0x2f7)],'Department':_0x50afcf['results'][_0x4cb903][_0x464bd2(0x229)]['ID']});}}catch(_0x39ead0){alert(_0x39ead0);}}),AdminWarning='';var _0x21860e=[];_0x21860e=g_HOD;if(_0x21860e[_0x4441f4(0x246)]>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x19dce9){var _0x1f025a=_0x4441f4;return _0x19dce9['EMail']['toLocaleLowerCase']()==_0x21860e[_0x640069][_0x1f025a(0x2f7)][_0x1f025a(0x231)]();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user\x20\x20.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Head\x20of\x20the\x20Department.\x0a\x20',IscheckMessage=![]);}else return alert(_0x4441f4(0x2a1)),waitingDialog[_0x4441f4(0x16c)](),![];var _0x1d6168=$(_0x4441f4(0x2fd))[_0x4441f4(0x126)](),_0x5b0c18=parseInt(_0x1d6168);if(IsDMSModules==!![]){var _0x21860e=[];_0x21860e=g_Contributors;if(_0x21860e[_0x4441f4(0x246)]>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x22f43d){var _0x1bd909=_0x4441f4;return _0x22f43d[_0x1bd909(0x2f7)][_0x1bd909(0x231)]()==_0x21860e[_0x640069][_0x1bd909(0x2f7)]['toLocaleLowerCase']()&&_0x22f43d[_0x1bd909(0x229)]==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x306),IscheckMessage=![]);}else return alert(_0x4441f4(0x172)),waitingDialog[_0x4441f4(0x16c)](),![];var _0x21860e=g_OtherDeptContri;if(_0x21860e[_0x4441f4(0x246)]>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser['filter'](function(_0xa6a0b9){var _0x33c9d0=_0x4441f4;return _0xa6a0b9['EMail']['toLocaleLowerCase']()==_0x21860e[_0x640069]['EMail'][_0x33c9d0(0x231)]()&&_0xa6a0b9[_0x33c9d0(0x229)]!=_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x23f),IscheckMessage=![]);}else{}var _0x21860e=g_Readers;if(_0x21860e['length']>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x369d6c){var _0xa0ceeb=_0x4441f4;return _0x369d6c['EMail'][_0xa0ceeb(0x231)]()==_0x21860e[_0x640069]['EMail']['toLocaleLowerCase']()&&_0x369d6c['Department']!=_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x1f7),IscheckMessage=![]);}else{}}if(IsIntranetModules==!![]){_0x21860e=g_NewInitiative;var _0x5bf30b=$(_0x4441f4(0x171))['hasClass'](_0x4441f4(0x2fb));if(!_0x5bf30b)var _0x4ec361=_0x4441f4(0x1a3);else var _0x4ec361='EVERYONE';if(_0x21860e[_0x4441f4(0x246)]>0x0||_0x4ec361==_0x4441f4(0x2fe)){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x534775){var _0x26353b=_0x4441f4;return _0x534775['EMail'][_0x26353b(0x231)]()==_0x21860e[_0x640069][_0x26353b(0x2f7)][_0x26353b(0x231)]()&&_0x534775[_0x26353b(0x229)]==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x1a8),IscheckMessage=![]);}else return alert(_0x4441f4(0x12a)),waitingDialog[_0x4441f4(0x16c)](),![];var _0x21860e=g_Suggesion,_0x5bf30b=$('#toggleSuggestion')[_0x4441f4(0x219)]('active');if(!_0x5bf30b)var _0x2860b4=_0x4441f4(0x1a3);if(_0x5bf30b)var _0x2860b4=_0x4441f4(0x2fe);if(_0x21860e[_0x4441f4(0x246)]>0x0||_0x2860b4=='EVERYONE'){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x125f5f){var _0x361702=_0x4441f4;return _0x125f5f[_0x361702(0x2f7)][_0x361702(0x231)]()==_0x21860e[_0x640069]['EMail'][_0x361702(0x231)]()&&_0x125f5f[_0x361702(0x229)]==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20are\x20not\x20departmental\x20user,\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Suggesion\x20Contributors.\x0a\x20',IscheckMessage=![]);}else return alert(_0x4441f4(0x2b6)),waitingDialog[_0x4441f4(0x16c)](),![];var _0x21860e=g_Activity,_0x5bf30b=$(_0x4441f4(0x2bc))[_0x4441f4(0x219)](_0x4441f4(0x2fb));if(!_0x5bf30b)var _0x2860b4='SELECTIVE';if(_0x5bf30b)var _0x2860b4=_0x4441f4(0x2fe);if(_0x21860e['length']>0x0||_0x2860b4==_0x4441f4(0x2fe)){for(var _0x640069=0x0;_0x640069<_0x21860e['length'];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x2c0b3b){var _0x29daad=_0x4441f4;return _0x2c0b3b[_0x29daad(0x2f7)][_0x29daad(0x231)]()==_0x21860e[_0x640069][_0x29daad(0x2f7)][_0x29daad(0x231)]()&&_0x2c0b3b['Department']==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x115),IscheckMessage=![]);}else return alert(_0x4441f4(0x2c4)),waitingDialog['hide'](),![];var _0x21860e=g_Knowledge;if(_0x21860e[_0x4441f4(0x246)]>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x183ac3){var _0x28268f=_0x4441f4;return _0x183ac3['EMail']['toLocaleLowerCase']()==_0x21860e[_0x640069]['EMail'][_0x28268f(0x231)]()&&_0x183ac3['Department']==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x252),IscheckMessage=![]);}else{if($('#toggleKnowledge')[_0x4441f4(0x219)](_0x4441f4(0x2fb))==![])return alert(_0x4441f4(0x166)),waitingDialog[_0x4441f4(0x16c)](),![];}var _0x21860e=g_DocumentApp;for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x5cc2eb){var _0x275ce1=_0x4441f4;return _0x5cc2eb[_0x275ce1(0x2f7)]==_0x21860e[_0x640069][_0x275ce1(0x2f7)][_0x275ce1(0x231)]();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='is\x20not\x20an\x20active\x20user\x20\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Document\x20Approvers.\x20',IscheckMessage=![]);var _0x21860e=SuggestionApprover;for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser['filter'](function(_0x46dc21){var _0x5d49da=_0x4441f4;return _0x46dc21['EMail']==_0x21860e[_0x640069][_0x5d49da(0x2f7)][_0x5d49da(0x231)]();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x245),IscheckMessage=![]);var _0x21860e=g_ActivityApprover;for(var _0x640069=0x0;_0x640069<_0x21860e['length'];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x42b164){var _0x2f3002=_0x4441f4;return _0x42b164[_0x2f3002(0x2f7)]['toLocaleLowerCase']()==_0x21860e[_0x640069][_0x2f3002(0x2f7)]['toLocaleLowerCase']();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x321),IscheckMessage=![]);var _0x21860e=g_NewApprover;for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0xeb70f4){var _0x1ac46a=_0x4441f4;return _0xeb70f4['EMail'][_0x1ac46a(0x231)]()==_0x21860e[_0x640069]['EMail'][_0x1ac46a(0x231)]();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x32a),IscheckMessage=![]);var _0x21860e=KnowledgeApprover;for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser[_0x4441f4(0x1b5)](function(_0x2c98f7){var _0xb77cb8=_0x4441f4;return _0x2c98f7['EMail'][_0xb77cb8(0x231)]()==_0x21860e[_0x640069]['EMail'][_0xb77cb8(0x231)]();});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069][_0x4441f4(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x29e),IscheckMessage=![]);}if(IsTaskModules==!![]){var _0x21860e=g_DepartmentalProject;if(_0x21860e[_0x4441f4(0x246)]>0x0){for(var _0x640069=0x0;_0x640069<_0x21860e[_0x4441f4(0x246)];_0x640069++){var _0x424e08=AllEmployeeuser['filter'](function(_0x5155ce){var _0xbb8413=_0x4441f4;return _0x5155ce[_0xbb8413(0x2f7)][_0xbb8413(0x231)]()==_0x21860e[_0x640069][_0xbb8413(0x2f7)][_0xbb8413(0x231)]()&&_0x5155ce['Department']==_0x5b0c18;});_0x424e08<0x1&&(AdminWarning+=_0x21860e[_0x640069]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x4441f4(0x189),IscheckMessage=![]);}else return alert(_0x4441f4(0xfc)),waitingDialog[_0x4441f4(0x16c)](),![];}return IsAdminOrNot;}function BreakPermission(_0x1f1b2b,_0x17817a){var _0xe2146c=a3_0x5069dc,_0x1feec9=_0x17817a,_0x457eca={'X-RequestDigest':$(_0xe2146c(0x1b6))['val'](),'X-HTTP-Method':_0xe2146c(0x1d6)},_0x48f53e=_0x1feec9+_0xe2146c(0x29f)+_0x1f1b2b+')';$[_0xe2146c(0x308)]({'url':_0x48f53e,'type':_0xe2146c(0x1cf),'headers':_0x457eca,'async':![],'success':function(_0xaffa4e){var _0x2cce6b=_0xe2146c;console[_0x2cce6b(0x168)](_0x2cce6b(0x2e2));},'error':function(_0x11aa0c){var _0x1c9d86=_0xe2146c;console[_0x1c9d86(0x168)](_0x1f1b2b+_0x1c9d86(0x157));}});}function ResetAllPermission(_0x26aba5){var _0x478d9a=a3_0x5069dc;debugger;var _0x51b213=_0x26aba5,_0x17c573=_0x51b213+_0x478d9a(0x1dd);$[_0x478d9a(0x308)]({'url':_0x17c573,'method':_0x478d9a(0x1d3),'async':![],'headers':{'Accept':_0x478d9a(0x108)},'success':function(_0x5bc6b5){var _0x59873a=_0x478d9a,_0x3c6c00=_0x5bc6b5['d']['results'];for(var _0x411c7f=0x0;_0x411c7f<_0x3c6c00[_0x59873a(0x246)];_0x411c7f++){_0x3c6c00[_0x411c7f]['Member'][_0x59873a(0x165)]!=null&&(userpricipalid=_0x3c6c00[_0x411c7f]['PrincipalId'],BreakPermission(userpricipalid,_0x26aba5));}},'error':function(_0x28834f){var _0x290746=_0x478d9a;console['log'](_0x290746(0x151)),Permissionloder[_0x290746(0x198)]();}});}function Openmngsiteadmins(){var _0x5cefff=a3_0x5069dc;$(_0x5cefff(0x221))[_0x5cefff(0x18d)]($('<iframe\x20id=\x22myIframeTeam\x22\x20\x20title=\x22Teams\x22></iframe>')),$(_0x5cefff(0x2bf))['attr']('src',_spPageContextInfo[_0x5cefff(0x1b9)]+_0x5cefff(0x14c));}function popup(_0x157c68){var _0x53dc56=a3_0x5069dc;$('#genericPopup')[_0x53dc56(0x259)]({'width':0x352,'height':0x258,'modal':!![],'class':_0x53dc56(0x317),'title':_0x157c68,'overlay':{'backgroundColor':_0x53dc56(0x19a),'opacity':0.9}}),$('.ui-dialog')[_0x53dc56(0x271)](_0x53dc56(0x18c)),$(_0x53dc56(0x215))[_0x53dc56(0x271)](_0x53dc56(0x19e));}function onChangeSearchUser(_0x2a98cc,_0x248a5f,_0x3e1a22){var _0x47c4fd=a3_0x5069dc,_0x2a0d7d=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x2a98cc],_0x337068='';_0x2a0d7d[_0x47c4fd(0x1d5)]=function(_0x583298,_0x138815){var _0x2d3255=_0x47c4fd;emptyWebPartBox(),_0x138815[_0x2d3255(0x246)]>0x0?userRecords[_0x2d3255(0x11a)](_0x3f1a20=>{var _0x38638a=_0x2d3255,_0x1e728f=_0x3f1a20['EMail'],_0x524a90=_0x3f1a20['Id'],_0x1f3fd7=_0x3f1a20['UserName'],_0x2fb9ed=_0x3f1a20[_0x38638a(0x175)];_0x1e728f[_0x38638a(0x265)]()==_0x138815[0x0][_0x38638a(0x313)]['Email']['toLowerCase']()&&(_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x30c)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x10b),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x191)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1f0),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x217)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x273),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]=='Project\x20Admin'&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x213),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x1aa)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x101),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]=='DeptContri'&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'deptContributors',_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x30e)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x22c),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]=='HOD'&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x23d),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]=='Announcements'&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x2c0),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x329)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x329),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x211)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x29c),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x2eb)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x12b),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x255)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x2c3),_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x28d)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'AlertApprover',_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x21f)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x21f),_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x180)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'EventApprover',_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x131)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1b2),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x197)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'RecoginitionApprover',_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x1a7)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1fe),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x17d)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x17d),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x258)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1c4),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x112)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x112),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x28e)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x184),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x105)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x105),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x19b)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x135),_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x154)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1f2),_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x1ee)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'allApprovers',_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]=='Project'&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'projectAdminDertmental',_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x192)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'NewInitiativeAdmin',_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x11e)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x2aa),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0xf4)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x1f8),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x2a4)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x2a4),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x15e)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'ActivityAdmin',_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0xf1)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0xf1),_0x2fb9ed),_0x3f1a20[_0x38638a(0x175)]==_0x38638a(0x276)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,'KnowledgeAdmin',_0x2fb9ed),_0x3f1a20['WebPartName']==_0x38638a(0x287)&&bindSearchUsers(_0x1e728f,_0x524a90,_0x1f3fd7,_0x38638a(0x287),_0x2fb9ed));}):userRecords[_0x2d3255(0x11a)](_0x15e93f=>{var _0x529ec1=_0x2d3255,_0x668ac6=_0x15e93f[_0x529ec1(0x2f7)],_0x2fe721=_0x15e93f['Id'],_0x223fed=_0x15e93f[_0x529ec1(0x267)],_0x578ef0=_0x15e93f[_0x529ec1(0x175)];_0x15e93f[_0x529ec1(0x175)]=='Tech\x20Admin'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x10b),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x191)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1f0),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='Process\x20Admin'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x273),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='DeptContri'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x2a8),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x1ee)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x2cb),_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x30e)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x22c),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x190)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x23d),_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x295)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'readerOtherDept',_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x12d)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x213),_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x1aa)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'CustomerManagementAdmin',_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='Announcements'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x2c0),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x329)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x329),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x211)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'informationAdmin',_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x2eb)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x12b),_0x578ef0),(_0x15e93f['WebPartName']==_0x529ec1(0x255),_0x578ef0)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x2c3),_0x578ef0),_0x15e93f['WebPartName']=='AlertApprover'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x28d),_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x21f)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'Events',_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x180)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'EventApprover',_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x131)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'recognitionAdmin',_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x197)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x197),_0x578ef0),_0x15e93f['WebPartName']=='Polls'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1fe),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x17d)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x17d),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x258)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1c4),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x112)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x112),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x28e)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x184),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='QuestionApprover'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x105),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='Media\x20Gallery'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x135),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='Media'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1f2),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x10c)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x107),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x192)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x13f),_0x578ef0),_0x15e93f['WebPartName']=='NewApprover'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x2aa),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0xf4)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1f8),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0x2a4)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,'SuggestionApprover',_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x15e)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x264),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]==_0x529ec1(0xf1)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0xf1),_0x578ef0),_0x15e93f[_0x529ec1(0x175)]=='Knowledge'&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x1e7),_0x578ef0),_0x15e93f['WebPartName']==_0x529ec1(0x287)&&bindSearchUsers(_0x668ac6,_0x2fe721,_0x223fed,_0x529ec1(0x287),_0x578ef0);});};}function bindSearchUsers(_0xac5a6f,_0x420011,_0x527a1d,_0x47c96c,_0x2db436){var _0xcfd484=a3_0x5069dc,_0x28a8de='';attachment=_spPageContextInfo[_0xcfd484(0x1b9)]+_0xcfd484(0x169)+escapeProperly(_0xac5a6f),_0x28a8de+=_0xcfd484(0x230)+_0x420011+_0xcfd484(0x22b),_0x28a8de+='<div\x20class=\x22admin-th-card-head\x20empoyeeimg\x22><img\x20src=\x22'+attachment+_0xcfd484(0x31e),_0x28a8de+=_0xcfd484(0x2fa)+_0x527a1d+_0xcfd484(0x1cd),_0x28a8de+=_0xcfd484(0x124)+_0xac5a6f+_0xcfd484(0x1c6)+_0xac5a6f+_0xcfd484(0x208),_0x28a8de+=_0xcfd484(0x2b3)+_0xac5a6f+_0xcfd484(0x26a)+_0x2db436+'\x27);\x22><i\x20class=\x22fa\x20fa-times\x22></i></button>',_0x28a8de+=_0xcfd484(0x173),$('#'+_0x47c96c)[_0xcfd484(0x18d)](_0x28a8de);}function GetCompanySiteURL(_0x26d321,_0x3466f2){var _0x251290=a3_0x5069dc,_0x3c3520=$['Deferred']();return $[_0x251290(0x308)]({'url':_spPageContextInfo[_0x251290(0x1b9)]+_0x251290(0x244)+_0x26d321+_0x251290(0x1dc)+_0x3466f2,'type':_0x251290(0x1d3),'async':![],'headers':{'accept':'application/json;odata=verbose'},'success':function(_0x38c528){var _0x4f442d=_0x251290;_0x3c3520[_0x4f442d(0x199)](_0x38c528['d'][_0x4f442d(0x164)]);},'error':function(_0x15f71b){var _0x2df01d=_0x251290;_0x3c3520[_0x2df01d(0x100)](_0x15f71b);}}),_0x3c3520[_0x251290(0x1de)]();};var IsActiveNews=!![];function ChrckToggleNews(){var _0x413fef=a3_0x5069dc;IsActiveNews?(IsActiveNews=![],BannersScope=_0x413fef(0x2fe)):(IsActiveNews=!![],BannersScope='SELECTIVE'),$(_0x413fef(0x181))[_0x413fef(0x1fd)](_0x413fef(0x234));}var IsActiveMediaGallery=!![];function ChrcktoggleMediaGallery(){var _0xae7bab=a3_0x5069dc;IsActiveMediaGallery?(IsActiveMediaGallery=![],MediaScope=_0xae7bab(0x2fe)):(IsActiveMediaGallery=!![],MediaScope=_0xae7bab(0x1a3)),$(_0xae7bab(0x2df))[_0xae7bab(0x1fd)](_0xae7bab(0x234));}var IsMagazineNews=!![];function ChrcktoggleMagazine(){var _0x38c484=a3_0x5069dc;IsMagazineNews?(IsMagazineNews=![],MediaGalleryScope=_0x38c484(0x2fe)):(IsMagazineNews=!![],MediaGalleryScope='SELECTIVE'),$(_0x38c484(0x152))['toggleClass'](_0x38c484(0x234));}var IsGeneralAnnouncement=!![];function ChrckGeneralAnnouncement(){var _0xfa8e12=a3_0x5069dc;IsGeneralAnnouncement?(IsGeneralAnnouncement=![],AnnouncementScope=_0xfa8e12(0x2fe)):(AnnouncementScope=_0xfa8e12(0x1a3),IsGeneralAnnouncement=!![]),$(_0xfa8e12(0x303))['toggleClass']('d-none');}var IsEmergencyAnnouncement=!![];function ChrckEmergencyAnnouncement(){var _0x2122cd=a3_0x5069dc;IsEmergencyAnnouncement?(IsEmergencyAnnouncement=![],EmergencyAnnouncementScope=_0x2122cd(0x2fe)):(EmergencyAnnouncementScope=_0x2122cd(0x1a3),IsEmergencyAnnouncement=!![]),$(_0x2122cd(0x2d6))[_0x2122cd(0x1fd)]('d-none');}var IsEvents=!![];function ChrckEvents(){var _0x5dcded=a3_0x5069dc;IsEvents?(IsEvents=![],WebpartsEventsScope=_0x5dcded(0x2fe)):(IsEvents=!![],WebpartsEventsScope=_0x5dcded(0x1a3)),$(_0x5dcded(0x2be))[_0x5dcded(0x1fd)]('d-none');}var IsPolls=!![];function ChrckPolls(){var _0x517409=a3_0x5069dc;IsPolls?(IsPolls=![],WebpartsPollsScope=_0x517409(0x2fe)):(IsPolls=!![],WebpartsPollsScope=_0x517409(0x1a3)),$('#SurveyBox')['toggleClass'](_0x517409(0x234));}var IsRecognition=!![];function ChrckRecognition(){var _0x3b8b7c=a3_0x5069dc;IsRecognition?(IsRecognition=![],WebpartsRecognitionScope='EVERYONE'):(IsRecognition=!![],WebpartsRecognitionScope='SELECTIVE'),$('#rocognitionBox')[_0x3b8b7c(0x1fd)](_0x3b8b7c(0x234));}var IsExperience=!![];function ChrckExperience(){var _0x14e9ba=a3_0x5069dc;IsExperience?(IsExperience=![],WebpartsExperienceScope=_0x14e9ba(0x2fe)):(IsExperience=!![],WebpartsExperienceScope=_0x14e9ba(0x1a3)),$(_0x14e9ba(0x178))['toggleClass'](_0x14e9ba(0x234));}var IsQuestionAnswer=!![];function ChrckQuestionAnswer(){var _0xfe821d=a3_0x5069dc;IsQuestionAnswer?(IsQuestionAnswer=![],WebpartsQuestionAnswerScope='EVERYONE'):(IsQuestionAnswer=!![],WebpartsQuestionAnswerScope=_0xfe821d(0x1a3)),$(_0xfe821d(0x247))[_0xfe821d(0x1fd)]('d-none');}var WebpartsSuggestionScope=a3_0x5069dc(0x2ed);function ChrckInitiative(){var _0x5ea440=a3_0x5069dc;$(_0x5ea440(0x149))[_0x5ea440(0x1fd)](_0x5ea440(0x234));}function ChrckSuggestion(){var _0xaf9e2a=a3_0x5069dc;$(_0xaf9e2a(0x1e0))[_0xaf9e2a(0x1fd)]('d-none');}function ChrckActivity(){var _0x504e40=a3_0x5069dc;$(_0x504e40(0x272))[_0x504e40(0x1fd)]('d-none');}var WebpartsKnowledgeScope=a3_0x5069dc(0x2ed);function ChrckKnowledge(){var _0x2a4bf8=a3_0x5069dc;$(_0x2a4bf8(0x214))['toggleClass'](_0x2a4bf8(0x234));}var WebpartsDocumentScope=a3_0x5069dc(0x2ed);function ChrckDocument(){var _0x1d4a28=a3_0x5069dc;$(_0x1d4a28(0x129))[_0x1d4a28(0x1fd)](_0x1d4a28(0x234));}var g_DocumentApp=[];function commonFormSubmit(){var _0x35120e=a3_0x5069dc;$(_0x35120e(0x1e5))['click'](function(){var _0x173255=_0x35120e;$[_0x173255(0x308)]({'cache':![],'beforeSend':function(){var _0x83e00=_0x173255;$(_0x83e00(0x1d0))[_0x83e00(0x1b8)]();},'success':function(_0x580345){var _0x5cce94=_0x173255;if(CheckWebparts()){if($('#tglinformationApprover')[_0x5cce94(0x219)]('active')==![]){if(BannersApprover['length']>0x0){}else return alert('Please\x20enter\x20approver\x20of\x20Information\x20web-part\x20name.'),waitingDialog[_0x5cce94(0x16c)](),$('#loader_showing')['removeClass'](_0x5cce94(0x296)),![];}if($(_0x5cce94(0x2e7))[_0x5cce94(0x219)]('active')==![]){if(announcementApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0x2c2)),waitingDialog['hide'](),$(_0x5cce94(0x21c))[_0x5cce94(0x290)]('shownow'),![];}if($(_0x5cce94(0x103))[_0x5cce94(0x219)](_0x5cce94(0x2fb))==![]){if(AlertApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0x22a)),waitingDialog[_0x5cce94(0x16c)](),$('#loader_showing')['removeClass'](_0x5cce94(0x296)),![];}if($('#tglEventApprover')[_0x5cce94(0x219)](_0x5cce94(0x2fb))==![]){if(EventApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0xf0)),waitingDialog[_0x5cce94(0x16c)](),$('#loader_showing')[_0x5cce94(0x290)](_0x5cce94(0x296)),![];}if($(_0x5cce94(0x25a))['hasClass']('active')==![]){if(SurveyApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0x275)),waitingDialog[_0x5cce94(0x16c)](),$(_0x5cce94(0x21c))[_0x5cce94(0x290)](_0x5cce94(0x296)),![];}if($(_0x5cce94(0x222))['hasClass'](_0x5cce94(0x2fb))==![]){if(RecoginitionApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0xff)),waitingDialog[_0x5cce94(0x16c)](),$(_0x5cce94(0x21c))[_0x5cce94(0x290)](_0x5cce94(0x296)),![];}if($(_0x5cce94(0x300))['hasClass']('active')==![]){if(ExperienceApprover[_0x5cce94(0x246)]>0x0){}else return alert('Please\x20enter\x20Experience\x20approver\x20name.'),waitingDialog['hide'](),$('#loader_showing')[_0x5cce94(0x290)](_0x5cce94(0x296)),![];}if($('#tglQuestionApprover')['hasClass'](_0x5cce94(0x2fb))==![]){if(QuestionApprover[_0x5cce94(0x246)]>0x0){}else return alert(_0x5cce94(0x2ef)),waitingDialog[_0x5cce94(0x16c)](),$('#loader_showing')[_0x5cce94(0x290)](_0x5cce94(0x296)),![];}$[_0x5cce94(0x288)](CompanyMediaBanner(),CompanyGeneralAnnouncement(),CompanyEmergencyAnnouncement(),CompanyMediaGallery(),CompanyMedia(),CompanyWebpartsPolls(),CompanyWebpartsExperience(),CompanyWebpartsQuestionAnswer(),CompanyWebpartsRecognition(),CompanyWebpartsEvents())[_0x5cce94(0x310)](function(_0x56d822){var _0x5f2d31=_0x5cce94;alert(_0x5f2d31(0x2ce)),$(_0x5f2d31(0x23b))['modal'](_0x5f2d31(0x16c));});}else IsAdminOrNot==![]&&alert(AdminWarning),IsAdminOrNot=!![];$(_0x5cce94(0x1d0))[_0x5cce94(0x1ad)]();}});});}var AdminWarning='';function CheckWebparts(){var _0x766eac=a3_0x5069dc;$('#loader_showing')[_0x766eac(0x271)](_0x766eac(0x296));var _0x509aa7=[],_0x383dbd,_0x4dfed6=titanForWork[_0x766eac(0x2bd)](_0x766eac(0x324));_0x383dbd=_0x766eac(0x1ae)+_0x4dfed6+_0x766eac(0x291),$[_0x766eac(0x288)](CommonFunction[_0x766eac(0x2f5)](_0x766eac(0x16e),_0x383dbd))['done'](function(_0x56a155){var _0x4e22d6=_0x766eac;try{for(var _0x3ff940=0x0;_0x3ff940<_0x56a155[_0x4e22d6(0x164)][_0x4e22d6(0x246)];_0x3ff940++){_0x509aa7[_0x4e22d6(0x27d)]({'UserId':_0x56a155[_0x4e22d6(0x164)][_0x3ff940][_0x4e22d6(0x1d2)]['Id'],'EMail':_0x56a155['results'][_0x3ff940][_0x4e22d6(0x1d2)][_0x4e22d6(0x2f7)],'Department':_0x56a155[_0x4e22d6(0x164)][_0x3ff940]['Department']['ID'],'UserEmail':_0x56a155[_0x4e22d6(0x164)][_0x3ff940][_0x4e22d6(0x22d)]});}}catch(_0x51a9fb){alert(_0x51a9fb);}}),AdminWarning='';var _0x546694=g_eventAdminArr;if(_0x546694[_0x766eac(0x246)]>0x0||WebpartsEventsScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x794029){var _0x405ddf=_0x766eac;return _0x794029[_0x405ddf(0x2f7)]==_0x546694[_0x122d5f][_0x405ddf(0x2f7)]||_0x794029[_0x405ddf(0x24a)][_0x405ddf(0x265)]()==_0x546694[_0x122d5f][_0x405ddf(0x2f7)][_0x405ddf(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x13b),IscheckMessage=![]);}else return alert('Please\x20enter\x20Events\x20Contributor\x20name.'),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=EventApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x12809a){var _0x52bf64=_0x766eac;return _0x12809a[_0x52bf64(0x2f7)]==_0x546694[_0x122d5f][_0x52bf64(0x2f7)]||_0x12809a[_0x52bf64(0x24a)][_0x52bf64(0x265)]()==_0x546694[_0x122d5f][_0x52bf64(0x2f7)][_0x52bf64(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x218),IscheckMessage=![]);var _0x546694=g_GeneralArr;if(_0x546694[_0x766eac(0x246)]>0x0||WebpartsExperienceScope=='EVERYONE'){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x1e3250){var _0x32cf50=_0x766eac;return _0x1e3250[_0x32cf50(0x2f7)]==_0x546694[_0x122d5f][_0x32cf50(0x2f7)]||_0x1e3250[_0x32cf50(0x24a)]['toLowerCase']()==_0x546694[_0x122d5f]['EMail'][_0x32cf50(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x148),IscheckMessage=![]);}else return alert('Please\x20enter\x20Experience\x20Contributor\x20name.'),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=ExperienceApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x1852b5){var _0x383b85=_0x766eac;return _0x1852b5[_0x383b85(0x2f7)]==_0x546694[_0x122d5f][_0x383b85(0x22d)]||_0x1852b5[_0x383b85(0x24a)][_0x383b85(0x265)]()==_0x546694[_0x122d5f][_0x383b85(0x2f7)][_0x383b85(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20Experience\x20Approvers.\x20\x0a\x20',IscheckMessage=![]);var _0x546694=g_QuestionAnswerArr;if(_0x546694['length']>0x0||WebpartsQuestionAnswerScope=='EVERYONE'){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7['filter'](function(_0xcbacee){var _0x13a839=_0x766eac;return _0xcbacee[_0x13a839(0x2f7)]==_0x546694[_0x122d5f][_0x13a839(0x2f7)]||_0xcbacee['UserEmail']['toLowerCase']()==_0x546694[_0x122d5f][_0x13a839(0x2f7)][_0x13a839(0x265)]();;});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x2f8),IscheckMessage=![]);}else return alert(_0x766eac(0x128)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=QuestionApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x2d3f2c){var _0x1e7811=_0x766eac;return _0x2d3f2c[_0x1e7811(0x2f7)]==_0x546694[_0x122d5f][_0x1e7811(0x2f7)]||_0x2d3f2c['UserEmail'][_0x1e7811(0x265)]()==_0x546694[_0x122d5f]['EMail'][_0x1e7811(0x265)]();;});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x302),IscheckMessage=![]);var _0x546694=g_PollsArr;if(_0x546694[_0x766eac(0x246)]>0x0||WebpartsPollsScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694['length'];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x1bb025){var _0x36aa73=_0x766eac;return _0x1bb025[_0x36aa73(0x2f7)]==_0x546694[_0x122d5f][_0x36aa73(0x2f7)]||_0x1bb025[_0x36aa73(0x24a)]['toLowerCase']()==_0x546694[_0x122d5f][_0x36aa73(0x2f7)][_0x36aa73(0x265)]();;});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x14e),IscheckMessage=![]);}else return alert(_0x766eac(0x2ea)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=SurveyApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0xb56981){var _0x56851d=_0x766eac;return _0xb56981[_0x56851d(0x2f7)]==_0x546694[_0x122d5f][_0x56851d(0x2f7)]||_0xb56981['UserEmail']['toLowerCase']()==_0x546694[_0x122d5f][_0x56851d(0x2f7)][_0x56851d(0x265)]();;});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20survey\x20Approvers.\x20\x0a\x20',IscheckMessage=![]);var _0x546694=g_RecognitionArr;if(_0x546694['length']>0x0||WebpartsRecognitionScope=='EVERYONE'){for(var _0x122d5f=0x0;_0x122d5f<_0x546694['length'];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0xb5ed32){var _0x58e13e=_0x766eac;return _0xb5ed32[_0x58e13e(0x2f7)]==_0x546694[_0x122d5f][_0x58e13e(0x2f7)]||_0xb5ed32[_0x58e13e(0x24a)]['toLowerCase']()==_0x546694[_0x122d5f][_0x58e13e(0x2f7)][_0x58e13e(0x265)]();;});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x13a),IscheckMessage=![]);}else return alert(_0x766eac(0x1fc)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=RecoginitionApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x5a0a5e){var _0xfa1975=_0x766eac;return _0x5a0a5e[_0xfa1975(0x2f7)]==_0x546694[_0x122d5f][_0xfa1975(0x2f7)]||_0x5a0a5e[_0xfa1975(0x24a)][_0xfa1975(0x265)]()==_0x546694[_0x122d5f][_0xfa1975(0x2f7)]['toLowerCase']();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x2d4),IscheckMessage=![]);var _0x546694=g_informationArr;if(_0x546694[_0x766eac(0x246)]>0x0||BannersScope=='EVERYONE'){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7['filter'](function(_0x29329f){var _0x59eae1=_0x766eac;return _0x29329f['EMail']==_0x546694[_0x122d5f][_0x59eae1(0x2f7)]||_0x29329f['UserEmail'][_0x59eae1(0x265)]()==_0x546694[_0x122d5f][_0x59eae1(0x2f7)][_0x59eae1(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x327),IscheckMessage=![]);}else return alert(_0x766eac(0x150)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=BannersApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x468f22){var _0x242d56=_0x766eac;return _0x468f22[_0x242d56(0x2f7)]==_0x546694[_0x122d5f]['EMail']||_0x468f22[_0x242d56(0x24a)][_0x242d56(0x265)]()==_0x546694[_0x122d5f][_0x242d56(0x2f7)][_0x242d56(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20information\x20approver\x20\x0a\x20',IscheckMessage=![]);var _0x546694=g_MagazineArr;if(_0x546694[_0x766eac(0x246)]>0x0||MediaGalleryScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694['length'];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x3259ac){var _0x3d1f8c=_0x766eac;return _0x3259ac[_0x3d1f8c(0x2f7)]==_0x546694[_0x122d5f][_0x3d1f8c(0x2f7)]||_0x3259ac[_0x3d1f8c(0x24a)][_0x3d1f8c(0x265)]()==_0x546694[_0x122d5f]['EMail']['toLowerCase']();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x24a)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x2b1),IscheckMessage=![]);}else return alert(_0x766eac(0x285)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=g_MediaGalleryArr;if(_0x546694[_0x766eac(0x246)]>0x0||MediaScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x4a214e){var _0x554a0a=_0x766eac;return _0x4a214e[_0x554a0a(0x2f7)]==_0x546694[_0x122d5f][_0x554a0a(0x2f7)]||_0x4a214e[_0x554a0a(0x24a)]['toLowerCase']()==_0x546694[_0x122d5f][_0x554a0a(0x2f7)]['toLowerCase']();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f]['UserName']+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x12f),IscheckMessage=![]);}else return alert(_0x766eac(0x146)),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=g_AlertArr;if(_0x546694['length']>0x0||EmergencyAnnouncementScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x572091){var _0x26e435=_0x766eac;return _0x572091[_0x26e435(0x2f7)]==_0x546694[_0x122d5f][_0x26e435(0x2f7)]||_0x572091['UserEmail'][_0x26e435(0x265)]()==_0x546694[_0x122d5f][_0x26e435(0x2f7)]['toLowerCase']();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x2ab),IscheckMessage=![]);}else return alert(_0x766eac(0x1be)),waitingDialog['hide'](),![];var _0x546694=g_AnnouncementsArr;if(_0x546694[_0x766eac(0x246)]>0x0||AnnouncementScope==_0x766eac(0x2fe)){for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7[_0x766eac(0x1b5)](function(_0x329262){var _0x2952c8=_0x766eac;return _0x329262['EMail']==_0x546694[_0x122d5f][_0x2952c8(0x2f7)]||_0x329262['UserEmail'][_0x2952c8(0x265)]()==_0x546694[_0x122d5f][_0x2952c8(0x2f7)][_0x2952c8(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+=_0x766eac(0x2de),IscheckMessage=![]);}else return alert('Please\x20enter\x20Announcement\x20Contributor\x20name.'),waitingDialog[_0x766eac(0x16c)](),![];var _0x546694=announcementApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694['length'];_0x122d5f++){var _0x10b9b0=_0x509aa7['filter'](function(_0x25d3d5){var _0x3f7f73=_0x766eac;return _0x25d3d5['EMail']==_0x546694[_0x122d5f][_0x3f7f73(0x2f7)]||_0x25d3d5[_0x3f7f73(0x24a)][_0x3f7f73(0x265)]()==_0x546694[_0x122d5f]['EMail'][_0x3f7f73(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}IscheckMessage&&(AdminWarning+='\x20is\x20not\x20an\x20active\x20user.\x0a\x20Can\x20not\x20be\x20assigned\x20as\x20General\x20Announcement\x20Approvers.\x20',IscheckMessage=![]);var _0x546694=AlertApprover;for(var _0x122d5f=0x0;_0x122d5f<_0x546694[_0x766eac(0x246)];_0x122d5f++){var _0x10b9b0=_0x509aa7['filter'](function(_0x2a09ba){var _0x5a1303=_0x766eac;return _0x2a09ba[_0x5a1303(0x2f7)]==_0x546694[_0x122d5f]['EMail']||_0x2a09ba['UserEmail'][_0x5a1303(0x265)]()==_0x546694[_0x122d5f]['EMail'][_0x5a1303(0x265)]();});_0x10b9b0<0x1&&(AdminWarning+=_0x546694[_0x122d5f][_0x766eac(0x267)]+',',IsAdminOrNot=![],IscheckMessage=!![]);}return IscheckMessage&&(AdminWarning+=_0x766eac(0xf6),IscheckMessage=![]),IsAdminOrNot;}var BannersScope='SELECTIVE',MediaGalleryScope=a3_0x5069dc(0x1a3),MediaScope='SELECTIVE',EmergencyAnnouncementScope=a3_0x5069dc(0x1a3),AnnouncementScope='SELECTIVE',WebpartsPollsScope='SELECTIVE',WebpartsRecognitionScope=a3_0x5069dc(0x1a3),WebpartsEventsScope=a3_0x5069dc(0x1a3),WebpartsExperienceScope=a3_0x5069dc(0x1a3),WebpartsQuestionAnswerScope=a3_0x5069dc(0x1a3);function CompanyMediaBanner(){var _0x17a673=a3_0x5069dc,_0x367fb0=new Array();_0x367fb0[_0x17a673(0x27d)]('BannerImages');var _0x39a2d2=[];g_informationArr[_0x17a673(0x11a)](function(_0x4caa92){_0x39a2d2['push'](_0x4caa92['Id']);});var _0x5527b6=[];if($(_0x17a673(0x12e))[_0x17a673(0x219)](_0x17a673(0x2fb))==![]){var _0x5b2ddb=[];BannersApprover[_0x17a673(0x11a)](function(_0x466e6c){var _0x5c4f24=_0x17a673;_0x5b2ddb[_0x5c4f24(0x27d)](_0x466e6c['Id']);});}else var _0x5b2ddb=new Array();var _0xa53be6='Banners',_0x479383='',_0xfd6dcf='',_0x50cdc0=[];CommonService(_0xfd6dcf,_0xa53be6,_0x479383,_0x367fb0,_0x5b2ddb,_0x5527b6,_0x39a2d2,_0x50cdc0,!![],BannersScope);}function CompanyMediaGallery(){var _0x5f0999=a3_0x5069dc,_0x32dd29=new Array();_0x32dd29['push'](_0x5f0999(0x282));var _0x242bb5=[];g_MagazineArr[_0x5f0999(0x11a)](function(_0x2c85a2){var _0x4a3eba=_0x5f0999;_0x242bb5[_0x4a3eba(0x27d)](_0x2c85a2['Id']);});var _0x93dafa=[],_0x4f66aa=new Array(),_0x310e1a=_0x5f0999(0x19b),_0x3fb6bc='',_0x120954='',_0x3512e8=[];CommonService(_0x120954,_0x310e1a,_0x3fb6bc,_0x32dd29,_0x4f66aa,_0x93dafa,_0x242bb5,_0x3512e8,!![],MediaGalleryScope);}function CompanyMedia(){var _0x415269=a3_0x5069dc,_0x356037=new Array();_0x356037[_0x415269(0x27d)]('Media');var _0x5e7ea4=[];g_MediaGalleryArr[_0x415269(0x11a)](function(_0x3bde91){var _0xc0870a=_0x415269;_0x5e7ea4[_0xc0870a(0x27d)](_0x3bde91['Id']);});var _0x2319b9=[],_0x1027e9=new Array(),_0x1900ad='Media',_0x1ba389='',_0x2e8790=GetSiteURL(''),_0x1cb236=[];CommonService(_0x2e8790,_0x1900ad,_0x1ba389,_0x356037,_0x1027e9,_0x2319b9,_0x5e7ea4,_0x1cb236,!![],MediaScope),MediaScope==_0x415269(0x1a3)?(ResetBreakInheriteOnMediaGallary(_0x2e8790,_0x415269(0x282)),BreakInheritePermissionOnMediaGallary(_0x2e8790,_0x5e7ea4,MediaScope)):ResetBreakInheriteOnMediaGallary(_0x2e8790,_0x415269(0x282));}function CompanyGeneralAnnouncement(){var _0x1f3108=a3_0x5069dc,_0x16f856=new Array();_0x16f856[_0x1f3108(0x27d)](_0x1f3108(0x15f));var _0x1707a7=[];g_AnnouncementsArr[_0x1f3108(0x11a)](function(_0x2c95a8){var _0x2bb0a7=_0x1f3108;_0x1707a7[_0x2bb0a7(0x27d)](_0x2c95a8['Id']);});var _0x3f930c=[],_0x5c41cd=[],_0x4872c2=$('#tglannouncementApprover')[_0x1f3108(0x219)](_0x1f3108(0x2fb));_0x4872c2==![]?announcementApprover[_0x1f3108(0x11a)](function(_0x377e85){var _0x2656a2=_0x1f3108;_0x3f930c[_0x2656a2(0x27d)](_0x377e85['Id']);}):_0x3f930c=new Array();var _0x3d6806=_0x1f3108(0x15f),_0x12b1d2='',_0x688cd3='',_0x2bea50=[];CommonService(_0x688cd3,_0x3d6806,_0x12b1d2,_0x16f856,_0x3f930c,_0x5c41cd,_0x1707a7,_0x2bea50,!![],AnnouncementScope);}function CompanyEmergencyAnnouncement(){var _0x2ad090=a3_0x5069dc,_0x155df3=new Array();_0x155df3[_0x2ad090(0x27d)]('Emergency\x20Announcement');var _0x509618=[];g_AlertArr[_0x2ad090(0x11a)](function(_0x2e4b7e){var _0x3cfbe6=_0x2ad090;_0x509618[_0x3cfbe6(0x27d)](_0x2e4b7e['Id']);});var _0x3b2fd2=[];if($(_0x2ad090(0x103))[_0x2ad090(0x219)](_0x2ad090(0x2fb))==![]){var _0x664fb7=[];AlertApprover[_0x2ad090(0x11a)](function(_0x1b723f){_0x664fb7['push'](_0x1b723f['Id']);});}else var _0x664fb7=new Array();var _0x7b6f9a=_0x2ad090(0x255),_0xbb87ce='',_0x395cb5=[],_0x39a49d=_spPageContextInfo['webAbsoluteUrl'];CommonService(_0x39a49d,_0x7b6f9a,_0xbb87ce,_0x155df3,_0x664fb7,_0x3b2fd2,_0x509618,_0x395cb5,!![],EmergencyAnnouncementScope);}function CompanyWebpartsPolls(){var _0x1b2204=a3_0x5069dc,_0x217c9f=new Array();_0x217c9f[_0x1b2204(0x27d)](_0x1b2204(0x1fa)),_0x217c9f[_0x1b2204(0x27d)](_0x1b2204(0x121));var _0x67117c=[];g_PollsArr[_0x1b2204(0x11a)](function(_0x4b93ad){var _0x1f5c65=_0x1b2204;_0x67117c[_0x1f5c65(0x27d)](_0x4b93ad['Id']);});var _0x2a602e=[];if($('#tglSurveyApprover')[_0x1b2204(0x219)](_0x1b2204(0x2fb))==![]){var _0x4c2be3=[];SurveyApprover[_0x1b2204(0x11a)](function(_0x3e3d12){var _0xa32e4e=_0x1b2204;_0x4c2be3[_0xa32e4e(0x27d)](_0x3e3d12['Id']);});}else var _0x4c2be3=new Array();var _0x5abe67=_0x1b2204(0x1a7),_0x459aac='',_0x337b9e='',_0x2285a6=[];CommonService(_0x337b9e,_0x5abe67,_0x459aac,_0x217c9f,_0x4c2be3,_0x2a602e,_0x67117c,_0x2285a6,!![],WebpartsPollsScope);}function CompanyWebpartsRecognition(){var _0x1af569=a3_0x5069dc,_0x384ae8=new Array();_0x384ae8[_0x1af569(0x27d)](_0x1af569(0x131));var _0x50fdce=[];g_RecognitionArr[_0x1af569(0x11a)](function(_0x28091e){var _0x544900=_0x1af569;_0x50fdce[_0x544900(0x27d)](_0x28091e['Id']);});var _0x4a259e=[],_0x10fa94=new Array();if($(_0x1af569(0x222))[_0x1af569(0x219)](_0x1af569(0x2fb))==![])RecoginitionApprover['forEach'](function(_0x3d8726){_0x10fa94['push'](_0x3d8726['Id']);});else var _0x10fa94=new Array();var _0x2b2007=_0x1af569(0x131),_0x41c275='',_0x3f9942=[],_0x5a8456=GetSiteURL('');CommonService(_0x5a8456,_0x2b2007,_0x41c275,_0x384ae8,_0x10fa94,_0x4a259e,_0x50fdce,_0x3f9942,!![],WebpartsRecognitionScope);}function CompanyWebpartsEvents(){var _0x105a79=a3_0x5069dc,_0x2072e8=new Array();_0x2072e8[_0x105a79(0x27d)](_0x105a79(0x1f3));var _0x2607ef=[];g_eventAdminArr[_0x105a79(0x11a)](function(_0x13005a){var _0x262a66=_0x105a79;_0x2607ef[_0x262a66(0x27d)](_0x13005a['Id']);});var _0x74fa59=[],_0x1d91ec=new Array();if($(_0x105a79(0x1e8))[_0x105a79(0x219)](_0x105a79(0x2fb))==![])EventApprover[_0x105a79(0x11a)](function(_0x3807f3){_0x1d91ec['push'](_0x3807f3['Id']);});else var _0x1d91ec=new Array();var _0x9a2ecd=_0x105a79(0x21f),_0x424dff='',_0x5646e6=[],_0x2b5b51=GetSiteURL('');CommonService(_0x2b5b51,_0x9a2ecd,_0x424dff,_0x2072e8,_0x1d91ec,_0x74fa59,_0x2607ef,_0x5646e6,!![],WebpartsEventsScope);}function CompanyWebpartsExperience(){var _0x25d7d6=a3_0x5069dc,_0x537f44=new Array();_0x537f44[_0x25d7d6(0x27d)](_0x25d7d6(0x258));var _0x4c43de=[];g_GeneralArr[_0x25d7d6(0x11a)](function(_0x270919){var _0x51c22f=_0x25d7d6;_0x4c43de[_0x51c22f(0x27d)](_0x270919['Id']);});var _0x3f1fb7=new Array(),_0x54fcf9=new Array();$(_0x25d7d6(0x300))[_0x25d7d6(0x219)](_0x25d7d6(0x2fb))==![]?ExperienceApprover['forEach'](function(_0x59f12f){var _0x4e5258=_0x25d7d6;_0x54fcf9[_0x4e5258(0x27d)](_0x59f12f['Id']);}):_0x54fcf9=new Array();var _0x244429=_0x25d7d6(0x258),_0x449e34='',_0x170d89=[],_0x131dd0=GetSiteURL('');CommonService(_0x131dd0,_0x244429,_0x449e34,_0x537f44,_0x54fcf9,_0x3f1fb7,_0x4c43de,_0x170d89,!![],WebpartsExperienceScope);}function CompanyWebpartsQuestionAnswer(){var _0x5b4ed3=a3_0x5069dc,_0x170974=new Array();_0x170974[_0x5b4ed3(0x27d)](_0x5b4ed3(0x28e));var _0x1e38c9=[];g_QuestionAnswerArr[_0x5b4ed3(0x11a)](function(_0x118b42){var _0x1bb260=_0x5b4ed3;_0x1e38c9[_0x1bb260(0x27d)](_0x118b42['Id']);});var _0x5e49ad=new Array(),_0x2de341=new Array();$(_0x5b4ed3(0x2a5))[_0x5b4ed3(0x219)](_0x5b4ed3(0x2fb))==![]?QuestionApprover[_0x5b4ed3(0x11a)](function(_0x404503){_0x2de341['push'](_0x404503['Id']);}):_0x2de341=new Array();var _0xaa1b09=_0x5b4ed3(0x28e),_0x102b46='',_0x33d3de=[],_0x25d354=GetSiteURL('');CommonService(_0x25d354,_0xaa1b09,_0x102b46,_0x170974,_0x2de341,_0x5e49ad,_0x1e38c9,_0x33d3de,!![],WebpartsQuestionAnswerScope);}function ResetBreakInheriteOnMediaGallary(_0x5a2281,_0x2e106d){var _0x54ba74=a3_0x5069dc,_0x126c18={'Accept':'application/json;odata=verbose','content-Type':_0x54ba74(0x204),'X-RequestDigest':jQuery(_0x54ba74(0x1b6))['val']()},_0x2b56ea=_0x5a2281+_0x54ba74(0x20f)+_0x2e106d+_0x54ba74(0xef);$[_0x54ba74(0x308)]({'url':_0x2b56ea,'type':'POST','headers':_0x126c18,'async':![],'dataType':_0x54ba74(0x143),'success':function(_0x1f405c){var _0x2d129a=_0x54ba74;console[_0x2d129a(0x168)](_0x2d129a(0x1eb));},'error':function(_0x2fd676){var _0x278092=_0x54ba74;console[_0x278092(0x168)](JSON['stringify'](_0x2fd676));}});}function BreakInheritePermissionOnMediaGallary(_0x112116,_0x36a53b,_0x5a947a){var _0x5f3604=a3_0x5069dc,_0x3ba4a6={'Accept':_0x5f3604(0x204),'content-Type':_0x5f3604(0x204),'X-RequestDigest':jQuery(_0x5f3604(0x1b6))[_0x5f3604(0x126)]()},_0x40cd12=_0x112116+_0x5f3604(0x2db);$[_0x5f3604(0x308)]({'url':_0x40cd12,'type':'POST','headers':_0x3ba4a6,'async':![],'dataType':'json','success':function(_0x3cacb5){var _0x24a8ac=_0x5f3604;console[_0x24a8ac(0x168)](_0x24a8ac(0x1bf));if(_0x36a53b!=null)for(var _0x3d22e0=0x0;_0x3d22e0<_0x36a53b[_0x24a8ac(0x246)];_0x3d22e0++){var _0x578d2c=_0x36a53b[_0x3d22e0];AssignPermissiononOnMediaLibrary(_0x112116,_0x578d2c,'1073741827');}$['when'](getTargetGroupId())['done'](function(_0x26e2a4){var _0x3823e4=_0x24a8ac,_0x171dd2=groupIdofEveryone;(_0x171dd2!=null||_0x171dd2!='')&&AssignPermissiononOnMediaLibrary(_0x112116,_0x171dd2,_0x3823e4(0x153));});},'error':function(_0x9afc9){var _0x16ad67=_0x5f3604;console[_0x16ad67(0x168)](JSON['stringify'](_0x9afc9));}});}var groupIdofEveryone='';function getTargetGroupId(){var _0x17cd83=a3_0x5069dc,_0xea9622=_spPageContextInfo[_0x17cd83(0x1b9)]+_0x17cd83(0x1f4);$[_0x17cd83(0x308)]({'url':_0xea9622,'type':_0x17cd83(0x1d3),'headers':{'accept':_0x17cd83(0x204)},'async':![],'success':function(_0x21092d,_0xe11454,_0x5417b1){return groupIdofEveryone=_0x21092d['d']['results'][0x0]['Id'],groupIdofEveryone;},'error':function(_0x4cac22,_0xa0fa7d,_0x3fdfad){var _0x2f609d=_0x17cd83;console[_0x2f609d(0x168)](_0x4cac22[_0x2f609d(0x2da)]['error']);}});}function AssignPermissiononOnMediaLibrary(_0x580a14,_0x2e496e,_0x43627c){var _0x4d046c=a3_0x5069dc,_0x4dd52c={'Accept':_0x4d046c(0x204),'content-Type':_0x4d046c(0x204),'X-RequestDigest':jQuery(_0x4d046c(0x1b6))[_0x4d046c(0x126)]()},_0x59ebca=_0x580a14+_0x4d046c(0x2a0)+_0x2e496e+_0x4d046c(0x1a6)+_0x43627c+')';$[_0x4d046c(0x308)]({'url':_0x59ebca,'type':_0x4d046c(0x1cf),'headers':_0x4dd52c,'dataType':_0x4d046c(0x143),'async':![],'success':function(_0xd092b2){var _0x402c55=_0x4d046c;console[_0x402c55(0x168)]('User\x20has\x20been\x20assigned\x20permission\x20.');},'error':function(_0x3239fe){var _0x135c19=_0x4d046c;console[_0x135c19(0x168)](JSON[_0x135c19(0x113)](_0x3239fe));}});}function emptyWebPartBox(){var _0xac6551=a3_0x5069dc;$(_0xac6551(0x26c))['empty'](),$(_0xac6551(0x1c7))[_0xac6551(0x2d2)](),$(_0xac6551(0x1c0))[_0xac6551(0x2d2)](),$('#deptContributors')[_0xac6551(0x2d2)](),$('#otherDeptContributors')[_0xac6551(0x2d2)](),$('#headOfDepartment')[_0xac6551(0x2d2)](),$(_0xac6551(0x2a7))[_0xac6551(0x2d2)](),$(_0xac6551(0x202))[_0xac6551(0x2d2)](),$(_0xac6551(0x17e))[_0xac6551(0x2d2)](),$(_0xac6551(0x225))[_0xac6551(0x2d2)](),$(_0xac6551(0x14a))[_0xac6551(0x2d2)](),$('#announcementsAdmin')[_0xac6551(0x2d2)](),$(_0xac6551(0x253))[_0xac6551(0x2d2)](),$(_0xac6551(0x238))[_0xac6551(0x2d2)](),$(_0xac6551(0x142))['empty'](),$(_0xac6551(0x111))[_0xac6551(0x2d2)](),$(_0xac6551(0x1a2))[_0xac6551(0x2d2)](),$(_0xac6551(0x1e3))[_0xac6551(0x2d2)](),$('#SurveyApprover')[_0xac6551(0x2d2)](),$(_0xac6551(0x28c))[_0xac6551(0x2d2)](),$(_0xac6551(0x18e))[_0xac6551(0x2d2)](),$(_0xac6551(0x194))[_0xac6551(0x2d2)](),$(_0xac6551(0x300))[_0xac6551(0x2d2)](),$('#questionsAdmin')[_0xac6551(0x2d2)](),$('#QuestionApproverBox')[_0xac6551(0x2d2)](),$('#magazineAdmin')[_0xac6551(0x2d2)](),$(_0xac6551(0x1bb))['empty'](),$(_0xac6551(0x19c))[_0xac6551(0x2d2)](),$('#NewInitiativeAdmin')[_0xac6551(0x2d2)](),$(_0xac6551(0x193))[_0xac6551(0x2d2)](),$('#SuggestionAdmin')[_0xac6551(0x2d2)](),$(_0xac6551(0x1ea))[_0xac6551(0x2d2)](),$('#ActivityAdmin')[_0xac6551(0x2d2)](),$(_0xac6551(0x294))[_0xac6551(0x2d2)](),$(_0xac6551(0xfd))[_0xac6551(0x2d2)](),$(_0xac6551(0x170))[_0xac6551(0x2d2)](),$(_0xac6551(0x224))['empty']();}function emprtyDepartmentBox(){var _0x3378e5=a3_0x5069dc;$(_0x3378e5(0x25f))[_0x3378e5(0x2d2)](),$(_0x3378e5(0x19c))['empty'](),$('#initiativeApproval')[_0x3378e5(0x2d2)](),$(_0x3378e5(0x23a))[_0x3378e5(0x2d2)](),$(_0x3378e5(0x1ea))[_0x3378e5(0x2d2)](),$(_0x3378e5(0x224))[_0x3378e5(0x2d2)](),$(_0x3378e5(0x1c8))[_0x3378e5(0x2d2)](),$(_0x3378e5(0x294))[_0x3378e5(0x2d2)](),$(_0x3378e5(0xfd))[_0x3378e5(0x2d2)](),$('#KnowledgeApprover')[_0x3378e5(0x2d2)]();}function DepartmentNewInitiative(){var _0x2cceb5=a3_0x5069dc,_0xd417c7=$(_0x2cceb5(0x2fd))['val']();if(_0xd417c7!=0x0){var _0x50469c=new Array();_0x50469c[_0x2cceb5(0x27d)](_0x2cceb5(0x192));var _0x267832=[];g_NewInitiative['forEach'](function(_0x1cd689){var _0x363b92=_0x2cceb5;_0x267832[_0x363b92(0x27d)](_0x1cd689['Id']);});var _0x3868f2=[],_0xedc7bb=[];g_NewApprover['forEach'](function(_0x510ee7){var _0x3b1cf2=_0x2cceb5;_0xedc7bb[_0x3b1cf2(0x27d)](_0x510ee7['Id']);});var _0x54c4a7=$(_0x2cceb5(0x171))[_0x2cceb5(0x219)](_0x2cceb5(0x2fb));if(!_0x54c4a7)var _0x71a5f6=_0x2cceb5(0x1a3);if(_0x54c4a7)var _0x71a5f6=_0x2cceb5(0x2fe);var _0x57dfa4='New\x20Initiative',_0x367fe4=[],_0x437cdb=GetSiteURL(_0xd417c7);CommonService(_0x437cdb,_0x57dfa4,_0xd417c7,_0x50469c,_0xedc7bb,_0x3868f2,_0x267832,_0x367fe4,!![],_0x71a5f6);}}function DepartmentSuggestion(){var _0x51af9c=a3_0x5069dc,_0x453d46=$(_0x51af9c(0x2fd))[_0x51af9c(0x126)]();if(_0x453d46!=0x0){var _0x14fd7c=ListCommonService['GetGroupIDByGroupName'](_0x51af9c(0x12c)),_0x398e1f=new Array();_0x398e1f[_0x51af9c(0x27d)]('Suggestions');var _0xef9c1=[];g_Suggesion['forEach'](function(_0x177f1d){var _0x1e2b79=_0x51af9c;_0xef9c1[_0x1e2b79(0x27d)](_0x177f1d['Id']);});var _0x3d60ed=new Array();_0x3d60ed[_0x51af9c(0x27d)](_0x14fd7c);var _0x3b7115=[];SuggestionApprover[_0x51af9c(0x11a)](function(_0x24df12){var _0x5b0e6e=_0x51af9c;_0x3b7115[_0x5b0e6e(0x27d)](_0x24df12['Id']);});var _0x3f1941=_0x51af9c(0xf4),_0x137d4f=$(_0x51af9c(0x1b0))[_0x51af9c(0x219)]('active');if(!_0x137d4f)var _0x225a7c=_0x51af9c(0x1a3);if(_0x137d4f)var _0x225a7c=_0x51af9c(0x2fe);var _0x40abce=[],_0x58b7e1=GetSiteURL(_0x453d46);CommonService(_0x58b7e1,_0x3f1941,_0x453d46,_0x398e1f,_0x3b7115,_0x3d60ed,_0xef9c1,_0x40abce,!![],_0x225a7c);}}function DepartmentActivity(){var _0x17bcdf=a3_0x5069dc,_0x18583e=$(_0x17bcdf(0x2fd))[_0x17bcdf(0x126)]();if(_0x18583e!=0x0){var _0x56c04c=ListCommonService[_0x17bcdf(0x30b)](_0x17bcdf(0x12c)),_0x345b98=new Array();_0x345b98['push']('Activity');var _0x4c77aa=[];g_Activity,g_Activity[_0x17bcdf(0x11a)](function(_0x3b3f4b){var _0x2c50b0=_0x17bcdf;_0x4c77aa[_0x2c50b0(0x27d)](_0x3b3f4b['Id']);});var _0x2d54fa=[],_0xf9739e=[];g_ActivityApprover['forEach'](function(_0x7a3d7b){_0xf9739e['push'](_0x7a3d7b['Id']);});var _0x4e7704=$(_0x17bcdf(0x2bc))[_0x17bcdf(0x219)](_0x17bcdf(0x2fb));if(!_0x4e7704)var _0x24029a='SELECTIVE';if(_0x4e7704)var _0x24029a=_0x17bcdf(0x2fe);var _0x477b4e=_0x17bcdf(0x15e),_0x38124c=[],_0x48f964=GetSiteURL(_0x18583e);CommonService(_0x48f964,_0x477b4e,_0x18583e,_0x345b98,_0xf9739e,_0x2d54fa,_0x4c77aa,_0x38124c,!![],_0x24029a);}}function DepartmentProject(){var _0x566154=a3_0x5069dc,_0x4210d3=$(_0x566154(0x2fd))[_0x566154(0x126)]();if(_0x4210d3!=0x0&&IsTaskModules==!![]){var _0x51f2b4=new Array();_0x51f2b4['push'](_0x566154(0x10c));var _0x3cdc17=[];g_DepartmentalProject[_0x566154(0x11a)](function(_0x36d75a){var _0x13b30c=_0x566154;_0x3cdc17[_0x13b30c(0x27d)](_0x36d75a['Id']);});var _0x5b45a5=new Array(),_0x32b5fe=new Array(),_0x86a80d=_0x566154(0x10c),_0x29c438=[],_0x181965=GetSiteURL(_0x4210d3),_0x182da8=[];g_DepartmentalProject[_0x566154(0x11a)](function(_0x2632c7){var _0x35aafd=_0x566154;return _0x182da8[_0x35aafd(0x27d)](_0x2632c7[_0x35aafd(0x2f7)]),_0x182da8;}),addUserToSharePointGroup(_0x182da8),CommonService(_0x181965,_0x86a80d,_0x4210d3,_0x51f2b4,_0x32b5fe,_0x5b45a5,_0x3cdc17,_0x29c438,!![]);}}var WebpartsKnowledgeScope=a3_0x5069dc(0x1a3);function addDepartmentKnowledge(){var _0x1cc1e7=a3_0x5069dc,_0x278876=$(_0x1cc1e7(0x2fd))['val']();if(_0x278876!=0x0){var _0x8958db=new Array();_0x8958db[_0x1cc1e7(0x27d)](_0x1cc1e7(0x276));var _0x47042a=[];g_Knowledge[_0x1cc1e7(0x11a)](function(_0x46162d){var _0x3a9d2d=_0x1cc1e7;_0x47042a[_0x3a9d2d(0x27d)](_0x46162d['Id']);});var _0x66de73=new Array(),_0x2e2a4a=[];KnowledgeApprover[_0x1cc1e7(0x11a)](function(_0x2cdb7d){var _0x38a752=_0x1cc1e7;_0x2e2a4a[_0x38a752(0x27d)](_0x2cdb7d['Id']);});var _0x21ae3f=$(_0x1cc1e7(0x203))['hasClass'](_0x1cc1e7(0x2fb));if(!_0x21ae3f)var _0x33467e='SELECTIVE';if(_0x21ae3f)var _0x33467e=_0x1cc1e7(0x2fe);var _0x26cfda=_0x1cc1e7(0x276),_0x5a4704=[],_0x23392d='';CommonService(_0x23392d,_0x26cfda,_0x278876,_0x8958db,_0x2e2a4a,_0x66de73,_0x47042a,_0x5a4704,!![],_0x33467e);}}function AssignPermissiononDMSLibary(_0x500761,_0x5729ab){var _0x155e33=a3_0x5069dc,_0x47f323=GetSiteURL($(_0x155e33(0x2fd))['val']()),_0x3087cd=_0x47f323[0x0]['DeptSiteUrl'],_0x5d652c={'Accept':_0x155e33(0x204),'content-Type':'application/json;odata=verbose','X-RequestDigest':jQuery(_0x155e33(0x1b6))[_0x155e33(0x126)]()},_0x5be5fc=_0x3087cd+_0x155e33(0x24f)+_0x500761+_0x155e33(0x1a6)+_0x5729ab+')';$['ajax']({'url':_0x5be5fc,'type':_0x155e33(0x1cf),'headers':_0x5d652c,'dataType':_0x155e33(0x143),'async':![],'success':function(_0xcbf499){var _0x33e39a=_0x155e33;console[_0x33e39a(0x168)](_0x33e39a(0x29a));},'error':function(_0x5108de){var _0x357368=_0x155e33;console[_0x357368(0x168)](JSON[_0x357368(0x113)](_0x5108de));}});}var LabelDefaultLangauge=[],labels=[];function ChangeLabels(){var _0x401c5a=a3_0x5069dc,_0x2ecd68=_0x401c5a(0x2d7);if(LabelDefaultLangauge[_0x401c5a(0x246)]==0x0){var _0xc2edc7=_0x401c5a(0x200);$[_0x401c5a(0x288)](CommonFunction[_0x401c5a(0x2f5)](_0x401c5a(0x2d5),_0xc2edc7))[_0x401c5a(0x310)](function(_0x4b103d){var _0x42782d=_0x401c5a;try{LabelDefaultLangauge=_0x4b103d['results'],SetDMSText(_0x4b103d[_0x42782d(0x164)],_0x2ecd68);}catch(_0x2efcc9){alert('Recommended\x20to\x20clear\x20the\x20browsing\x20data\x20and\x20cookies\x20for\x20smooth\x20and\x20fast\x20browsing.\x20Please\x20press\x20Ctrl\x20+\x20H\x20to\x20clear\x20cookies.');}});}else SetDMSText(LabelDefaultLangauge,_0x2ecd68);}function SetDMSText(_0x455274,_0x6fbb29){labels=[],$['each'](_0x455274,function(_0x731095,_0x1bb0a6){var _0x57900b=a3_0x27b4,_0x1c4dc4=_0x1bb0a6[_0x57900b(0x31b)],_0x1eefce=_0x1bb0a6[_0x6fbb29];if(_0x1eefce==null||_0x1eefce==''||_0x1eefce==undefined)_0x1eefce=_0x1bb0a6[_0x57900b(0x2d7)];var _0x1a0c1d={'labelText_Actual':_0x1c4dc4,'lableText_Converted':_0x1eefce};labels[_0x57900b(0x27d)](_0x1a0c1d);}),DetectBrowser();}function DetectBrowser(){var _0x3323e4=a3_0x5069dc,_0x4b772e=/constructor/i['test'](window['HTMLElement'])||function(_0x4a2da5){var _0x2c5231=a3_0x27b4;return _0x4a2da5['toString']()===_0x2c5231(0x257);}(!window[_0x3323e4(0x2f1)]||typeof safari!==_0x3323e4(0x17b)&&safari[_0x3323e4(0x297)]),_0x4877e5=![]||!!document[_0x3323e4(0x28a)];_0x4b772e||_0x4877e5?ChangeWebPartsHeadings_OldBrowser():ChangeWebPartsHeadings();}function ChangeWebPartsHeadings(){var _0x27864e=a3_0x5069dc;try{$(_0x27864e(0x256))[_0x27864e(0x1a5)](function(_0x19e4cf,_0x5b2648){var _0x427acc=_0x27864e;try{var _0x3928c2=$(this)[_0x427acc(0x21b)](_0x427acc(0x114)),_0x11f645=labels['find'](function(_0xe11dbf){var _0x451aed=_0x427acc;return _0xe11dbf[_0x451aed(0x127)][_0x451aed(0x125)]()===_0x3928c2;})[_0x427acc(0xf7)];if($(this)['find']('a')[_0x427acc(0x246)]>0x0)$(this)['find']('a')['html'](_0x11f645);else{if($(this)['find']('b')['length']>0x0)$(this)[_0x427acc(0x2f2)]('b')[_0x427acc(0x117)](_0x11f645);else{if($(this)['find']('p')[_0x427acc(0x246)]>0x0)$(this)[_0x427acc(0x2f2)]('p')[_0x427acc(0x117)](_0x11f645);else $(this)[_0x427acc(0x219)](_0x427acc(0x2f3))?$(this)['attr'](_0x427acc(0x21e),_0x11f645):$(this)['html'](_0x11f645);}}}catch(_0x139739){console[_0x427acc(0x168)](_0x427acc(0x1df)+_0x3928c2+'\x20key\x20not\x20found.'),$(this)[_0x427acc(0x21b)](_0x427acc(0x21e),$(this)['val']());}});}catch(_0x351e5d){console[_0x27864e(0x168)]('Multilingual\x20:\x20'+_0x351e5d);}}function ChangeWebPartsHeadings_OldBrowser(){var _0x41c3d6=a3_0x5069dc;try{$(_0x41c3d6(0x256))[_0x41c3d6(0x1a5)](function(_0x23b045,_0x4ae26d){var _0x41fcec=_0x41c3d6;try{var _0xf33786=$(this)[_0x41fcec(0x21b)]('data-localize'),_0x5d8d47=findObjectByKey(labels,_0xf33786,_0xf33786);if($(this)['find']('a')[_0x41fcec(0x246)]>0x0)$(this)[_0x41fcec(0x2f2)]('a')[_0x41fcec(0x117)](_0x5d8d47);else{if($(this)[_0x41fcec(0x2f2)]('b')[_0x41fcec(0x246)]>0x0)$(this)[_0x41fcec(0x2f2)]('b')['html'](_0x5d8d47);else{if($(this)[_0x41fcec(0x2f2)]('p')['length']>0x0)$(this)[_0x41fcec(0x2f2)]('p')[_0x41fcec(0x117)](_0x5d8d47);else $(this)['hasClass'](_0x41fcec(0x2f3))?_0x5d8d47!=null&&_0x5d8d47!='null'&&_0x5d8d47!=''?$(this)[_0x41fcec(0x21b)](_0x41fcec(0x21e),_0x5d8d47):$(this)[_0x41fcec(0x21b)](_0x41fcec(0x21e),$(this)[_0x41fcec(0x126)]()):_0x5d8d47!=null&&_0x5d8d47!=_0x41fcec(0x270)&&_0x5d8d47!=''?$(this)[_0x41fcec(0x117)](_0x5d8d47):$(this)['html']($(this)[_0x41fcec(0x1ab)]());}}}catch(_0x450b99){console[_0x41fcec(0x168)]('Multilingual\x20:\x20'+_0xf33786+'\x20key\x20not\x20found.'),$(this)[_0x41fcec(0x21b)](_0x41fcec(0x21e),$(this)['val']());}});}catch(_0xb9f5e5){console[_0x41c3d6(0x168)](_0x41c3d6(0x1df)+_0xb9f5e5);}}function findObjectByKey(_0x498268,_0x433cc4,_0x381d30){var _0x9c8ff3=a3_0x5069dc;for(var _0x532133=0x0;_0x532133<_0x498268[_0x9c8ff3(0x246)];_0x532133++){if(_0x498268[_0x532133][_0x9c8ff3(0x127)]==_0x381d30)return _0x498268[_0x532133][_0x9c8ff3(0xf7)];}return null;}function removeUserFromsearch(_0xc153c3,_0x28b49d,_0x8f34d){var _0x4806e7=a3_0x5069dc;userRecords=userRecords[_0x4806e7(0x1b5)](function(_0x253798){var _0x607183=_0x4806e7;return _0x253798[_0x607183(0x175)]!=_0x8f34d||_0x253798[_0x607183(0x2f7)][_0x607183(0x231)]()!=_0x28b49d[_0x607183(0x231)]();});if(_0x8f34d==_0x4806e7(0x30c))removeFromTech(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x191))removeUserFromHr(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x12d))removeUserFromProcess(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='Process\x20Admin')removeUserFromProcess(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='ClientMaster')removeFromClient(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x211))removeBanner(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='BannersApprover')removeBannerApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x15f))removeAnnouncement(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x329))removeAnnounceApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x255))removeAlert(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='AlertApprover')removeAlertApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='Events')removeEvent(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x180))removeEventApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x1a7))removePolls(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='SurveyApprover')removePollsApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x131))removeRecogination(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x197))removeRecoginationApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='General')removeExperience(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='ExperienceApprover')removeExperienceApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='QuestionAnswer')removeQuestion(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x105))removeQuestionApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x19b))removeMagazine(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x154))removeMedia(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x1a1))removeUserFromContributors(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x30e))removeUserFromContributorsOfOtherDept(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x190))removeUserFromHOD(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x10c))removeDeptProject(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x295))removeUserFromReader(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x192))removeNewInitiative(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x11e))removeInitiativeApp(_0xc153c3,_0x28b49d);else{if(_0x8f34d=='Suggesion')removeSuggesion(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x293))SuggestionApprover(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x15e))removeActivity(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0xf1))removeActivityApprov(_0xc153c3,_0x28b49d);else{if(_0x8f34d==_0x4806e7(0x276))removeKnowledge(_0xc153c3,_0x28b49d);else _0x8f34d==_0x4806e7(0x287)&&removeKnowledgeApp(_0xc153c3,_0x28b49d);}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+var SharingUserId=[];
+var ShareUserPrincipleMail=[];
+var SharingUserEmail=[];
+var SharingUserName=[];
+var AdminWarning;
+var IsAdminOrNot = true;
+var IscheckMessage = false;
+var SuperAdminWaring;
+var IsSuperAdmin = false;
+var g_Contributors=[];
+var g_HOD=[];
+var g_OtherDeptContri=[];
+var userRecords=[];
+var g_Readers =[];
+var arrContriUsers = [];
+var g_eventAdminArr=[];
+$(document).ready(function(){
+  
+  UserAuthorization();
+  ChangeLabels();
+  commonFormSubmit();
+  LoadPeoplePickerControls();
+  BindDepartments();
+  getCompanyApprovers();
+  GetDepartmentalApprovers(Logged_DepartmentId);  
+
+  onChangeTech('TechPplPicker_TopSpan', 'TechPplPicker');
+  onChangeSearchUser('serchUser_TopSpan', 'serchUser',userRecords);
+  onChangeHr('HrPplPicker_TopSpan', 'HrPplPicker');
+  onChangeDeptContributors('deptContributorsPplPicker_TopSpan', 'deptContributorsPplPicker');
+  onChangeHeadOfDept('headOfDeptPplPicker_TopSpan', 'headOfDeptPplPicker');
+  onChangeOtherDept('otherDeptContriPplPicker_TopSpan', 'otherDeptContriPplPicker');
+  onChangeReader('readerPplPicker_TopSpan', 'readerPplPicker');
+  onChangeProcess('processPplPicker_TopSpan', 'processPplPicker');
+  onChangeCustomer('ClientAdminPplPicker_TopSpan', 'ClientAdminPplPicker');
+  onChangeProjectAdmin('projectAdminPplPicker_TopSpan', 'projectAdminPplPicker');
+
+  onChangeBanner('BannersContributors_Company_TopSpan','BannersContributors_Company');
+  onChangeBannerApprover('BannersApprovers_Company_TopSpan','BannersApprovers_Company');
+  onChangeAnnouncement('AnnouncementContributors_Company_TopSpan','AnnouncementContributors_Company');
+  onChangeAnnouncementApprovers('AnnouncementApprovers_Company_TopSpan','AnnouncementApprovers_Company');
+  onChangeAlert('AlertContributors_Company_TopSpan','AlertContributors_Company');
+  onChangeAlertApprovers('AlertApprovers_Company_TopSpan','AlertApprovers_Company');
+  onChangeEvent('EventsContributors_Company_TopSpan','EventsContributors_Company');
+  onChangeEventApprover('EventsApprovers_Company_TopSpan','EventsApprovers_Company');
+  onChangeSuevey('PollsContributors_Company_TopSpan','PollsContributors_Company');
+  onChangeSueveyApprovers('PollsApprovers_Company_TopSpan','PollsApprovers_Company');
+  onChangeRecogination('RecognitionContributors_Company_TopSpan','RecognitionContributors_Company');
+  onChangeRecoginationApprovers('RecognitionApprovers_Company_TopSpan','RecognitionApprovers_Company');
+  onChangeExperenceApprov('ExperienceApprovers_Company_TopSpan','ExperienceApprovers_Company');
+  onChangeExperence('ExperienceContributors_Company_TopSpan','ExperienceContributors_Company');
+  onChangeQuestion('QuestionAnswerContributors_Company_TopSpan','QuestionAnswerContributors_Company');
+  onChangeQuestionApproval('QuestionAnswerApprovers_Company_TopSpan','QuestionAnswerApprovers_Company');
+  onChangeMedia('MediaContributors_Company_TopSpan','MediaContributors_Company');
+  onChangeMagazine('MegazineContributors_Company_TopSpan','MegazineContributors_Company');
+
+
+  onChangeNewInitiative('initiativePplPicker_TopSpan','initiativePplPicker');
+  onChangeDepartProject('deptProjectPplPicker_TopSpan','deptProjectPplPicker');
+  onChangeDocumentApprovers('deptApproversPplPicker_TopSpan','deptApproversPplPicker');
+  onChangeNewInitiativeApprovers('initiativeApproverPplPicker_TopSpan','initiativeApproverPplPicker');
+  onChangeSuggesion('SuggestionPplPicker_TopSpan','SuggestionPplPicker');
+  onChanSuggesionApprov('suggestionApprovalPplPicker_TopSpan','suggestionApprovalPplPicker');
+  onChangeActivity('ActivityPplPicker_TopSpan','ActivityPplPicker');
+  onChangeActivityApprov('ActivityApproverPplPicker_TopSpan','ActivityApproverPplPicker');
+  onChangeKnowledge('KnowledgeAdminPplPicker_TopSpan','KnowledgeAdminPplPicker');
+  onChangeKnowledgeApprov('KnowledgeApproverPplPicker_TopSpan','KnowledgeApproverPplPicker');
+  
+});
+
+
+
+//// User Authorization
+function UserAuthorization() {
+    var companyId = titanForWork.getQueryStringParameter("CompanyId");
+    titanForWork.PageAuthorization("ManageCompany", companyId).done(function (currentUserRights, message) {
+        if (currentUserRights.length > 0) {
+            if ((currentUserRights[0].SiteAdmin == "SiteAdmin") || (currentUserRights[0].TechAdmin == "TechAdmin")) {
+                userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+
+                //SP.SOD.executeFunc('sp.js', 'SP.ClientContext', PageLoad_Permissions);
+            } else {
+                alert(message);
+                window.location.href = _spPageContextInfo.webAbsoluteUrl + "/Pages/Default.aspx?WebAppId=" + companyId;
+            }
+        }
+    });
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// Load People Picker Controls ////////////////////////////////////////
+function LoadPeoplePickerControls() {
+      InitializePeoplePicker("TechPplPicker", true);
+      InitializePeoplePicker("processPplPicker", true);
+      InitializePeoplePicker("serchUser", false);      
+	  InitializePeoplePicker("HrPplPicker", true);
+      InitializePeoplePicker("deptApproversPplPicker", true);                                                                                                       
+	  InitializePeoplePicker("deptContributorsPplPicker", true);
+	  InitializePeoplePicker("headOfDeptPplPicker", true);
+	  InitializePeoplePicker("otherDeptContriPplPicker", true);
+	  InitializePeoplePicker("readerPplPicker", true);
+	  InitializePeoplePicker("ClientAdminPplPicker", true);
+	  InitializePeoplePicker("projectAdminPplPicker", true);
+      InitializePeoplePicker("BannersContributors_Company", true);
+      InitializePeoplePicker("BannersApprovers_Company", true);
+      InitializePeoplePicker("MegazineContributors_Company", true);
+      InitializePeoplePicker("MediaContributors_Company", false);      
+	  InitializePeoplePicker("AnnouncementContributors_Company", true);
+	  InitializePeoplePicker("AnnouncementApprovers_Company", true);
+	  InitializePeoplePicker("AlertContributors_Company", true);
+	  InitializePeoplePicker("AlertApprovers_Company", true);
+	  InitializePeoplePicker("EventsContributors_Company", true);
+	  InitializePeoplePicker("EventsApprovers_Company", true);      
+      InitializePeoplePicker("PollsContributors_Company", true);
+      InitializePeoplePicker("PollsApprovers_Company", true);
+      InitializePeoplePicker("RecognitionContributors_Company", true);
+      InitializePeoplePicker("RecognitionApprovers_Company", false);      
+	  InitializePeoplePicker("ExperienceContributors_Company", true);
+	  InitializePeoplePicker("ExperienceApprovers_Company", true);
+	  InitializePeoplePicker("QuestionAnswerContributors_Company", true);
+	  InitializePeoplePicker("QuestionAnswerApprovers_Company", true);
+
+      InitializePeoplePicker("deptProjectPplPicker", true);
+      InitializePeoplePicker("initiativePplPicker", true);
+      InitializePeoplePicker("initiativeApproverPplPicker", true);
+      InitializePeoplePicker("SuggestionPplPicker", false);      
+	  InitializePeoplePicker("suggestionApprovalPplPicker", true);
+	  InitializePeoplePicker("ActivityPplPicker", true);
+	  InitializePeoplePicker("ActivityApproverPplPicker", true);
+	  InitializePeoplePicker("KnowledgeAdminPplPicker", true);
+      InitializePeoplePicker("KnowledgeApproverPplPicker", true);	  
+    
+
+	  $('#btnSubmit_Admin').click(function () {	    
+	
+        $.ajax({
+            cache: false,
+            beforeSend: function() {
+              $("#overlaysearch").fadeIn();
+            },
+            success: function(data) {
+                if(CheckAdminBlock()==true) {           
+                    $.when(ProjectAdmin()).done(function (isSuccessResponse) {
+                         if (isSuccessResponse==true) {             
+                            $.when(TechAdmin(),ProcessAdmin(), HRAdmin(),CompanyClientMaster()).done(function (MainExamListItemTemp) {
+                             alert("Permission assigned successfully .");                    
+                           });
+                         }                
+                     });        
+                 } else {
+                     if (IsAdminOrNot == false) {
+                         alert(AdminWarning);
+                         waitingDialog.hide();
+                     }
+                     IsAdminOrNot = true;
+                 }
+
+                $("#overlaysearch").fadeOut();
+            }
+        });        
+	});
+    $("#ddlDepartments").change(function () {        
+         var SiteURL=GetSiteURL($(this).val());
+         var DeptId= parseInt($(this).val());
+
+         userRecords= userRecords.filter(function(items){
+             return (items.deptId==DeptId || items.WebPartName=='Tech Admin' || items.WebPartName=='Hr Admin');
+         })
+
+
+         $('#deptContributors').empty();
+         $('#headOfDepartment').empty();
+         emprtyDepartmentBox();
+         $('#otherDeptContributors').empty();
+         $('#readerOtherDept').empty();
+         EmptyPeoplePicker('serchUser');
+         $("#deptsiteurl").val(SiteURL);        
+         var departmentID = $(this).val();
+         GetDepartmentalApprovers(departmentID);
+    });
+    
+    ///////////////////Department//////
+    $('#btnSubmit_DepartmentDocument').click(function () {
+        $.ajax({
+            cache: false,
+            beforeSend: function() {
+            $("#overlaysearch").fadeIn();
+            },
+            success: function(data) {
+
+                if (CheckDepartmentDocuments()) {
+                    var departmentId = $('#ddlDepartments').val()
+                    currentDepartmentID=$('#ddlDepartments').val()
+                    $("body").css("cursor", "progress");
+                    
+                    if (departmentId != 0 && $('#departmentWebPartDiv').hasClass('d-none')==false) {
+                        if ($("#toggleSuggestionApp").hasClass("active")== false) {
+                            var approverIdArray =SuggestionApprover 
+                            if (approverIdArray.length > 0) {
+
+                            } else {
+                                alert('Please enter Suggestion approver name.');
+                                waitingDialog.hide();
+                                return false;
+                            }
+                        }
+                        if ($("#toggleInitiativeApp").hasClass("active") == false) {
+                            var approverIdArray =g_NewApprover
+                            if (approverIdArray.length > 0) {
+
+                            } else {
+                                alert('Please enter Initiative approver name.');
+                                waitingDialog.hide();
+                                return false;
+                            }
+                        }            
+                        if ($("#toggleActivityApp").hasClass("active") == false) {
+                            var approverIdArray =g_ActivityApprover
+                            if (approverIdArray.length > 0) {
+
+                            } else {
+                                alert('Please enter Activity approver name.');
+                                waitingDialog.hide();
+                                return false;
+                            }
+                        }
+                        if ($("#toggleKnowledgeApp").hasClass("active") == false) {
+                            var approverIdArray =KnowledgeApprover
+                            if (approverIdArray.length > 0) {
+
+                            } else {
+                                alert('Please enter knowledge approver name.');
+                                waitingDialog.hide();
+                                return false;
+                            }
+                        }
+                        /*-------document approver ----*/
+                        /*if ($("#toggleDocumentApp").hasClass("active") == false) {
+                            var approverIdArray =g_DocumentApp
+                            if (approverIdArray.length > 0) {
+
+                            } else {
+                                alert('Please enter document approver name.');
+                                waitingDialog.hide();
+                                return false;
+                            }
+                        }*/
+                    }
+                    if (departmentId != 0) {       
+
+                        $.when(DepartmentDocuments(), DepartmentDocumentAccess(),HeadOfDepartment(),DepartmentNewInitiative(),DepartmentSuggestion(),DepartmentActivity(),DepartmentProject(),addDepartmentKnowledge()).done(function (MainExamListItemTemp) {
+                            alert("Permission assigned successfully .");
+                            waitingDialog.hide();
+                        });
+                    } else {
+                        alert("Please select department .");
+                    }
+                } else {
+                    if (IsAdminOrNot == false) {
+                        alert(AdminWarning);
+                    }
+
+                    IsAdminOrNot = true;
+                }
+
+                $("#overlaysearch").fadeOut();
+            }
+        });
+        
+        
+
+    });
+
+
+}
+
+function GetSiteURL(departmentId) {
+    var SiteURL='';
+    var currentCompanyid=Logged_CompanyId;
+    if (departmentId != null && departmentId != "") {
+            SiteURL=g_DeptSiteUrl.filter(function(items){
+            return items.DeptId==departmentId;
+        })
+    } 
+    else {
+        var query = "?$select=ID,SiteURL&$filter=ID eq '" + currentCompanyid + "'";
+        var ListName = "Companies";
+        $.when(GetCompanySiteURL(ListName, query)).done(function (MainExamListItemTemp) {
+            if (MainExamListItemTemp.length > 0) {
+                SiteURL = MainExamListItemTemp[0].SiteURL;
+            }
+        });
+
+    }   
+    
+    return SiteURL;
+}
+
+function InitializePeoplePicker(peoplePickerElementId, allowMultiple) {
+    if (allowMultiple == null) {
+        allowMultiple = false;
+    }
+    var schema = {};
+    //schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = allowMultiple;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '100%';
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+
+function FillAccountName(ControlId, UsersValues) {
+
+    try {
+
+        for (var i = 0; i < UsersValues.length; i++) {
+            var UserId = UsersValues[i];
+             UserId = UserId.get_lookupId();
+            GetAccountName(ControlId, UsersValues);
+        }
+    } catch (err) {
+
+    }
+}
+
+
+function GetAccountName(userControlId, userLookUpId) {
+
+
+    var context = SP.ClientContext.get_current();
+    var user = context.get_web().getUserById(userLookUpId);
+    context.load(user);
+    context.executeQueryAsync(
+        function () {
+
+            if (user.get_email() > 0) {
+                setPeoplePickerUsersInfoCurrent(userControlId, user.get_email());
+            } else {
+                setPeoplePickerUsersInfoCurrent(userControlId, user.get_loginName());
+            }
+
+        },
+        function (sender, args) {
+            //todo errorhandling
+            console.log('Error while receiving the properties from the UserProfile');
+
+        }
+    );
+}
+
+
+function setPeoplePickerUsersInfoCurrent(id, LoginName) {
+
+    //var fieldName = id + '_TopSpan';
+    var peoplePickerDiv = $("[id$='" + id + "']");
+
+    // Get the people picker object from the page.
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+
+    //var usersobject = ppobject.GetAllUserInfo();
+    //var usersobject = peoplePicker.GetAllUserInfo();
+    //usersobject.forEach(function (index) {
+    //	peoplePicker.DeleteProcessedUser(usersobject[index]);
+    //});
+    peoplePicker.AddUserKeys(LoginName, false);
+}
+
+function onChangeTech(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_TechAdminArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#techAdminUser').scrollTop($('#techAdminUser')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                g_TechAdminArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Tech Admin',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromTech(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#techAdminUser").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeProjectAdmin(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_ProjectArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#projectAdmin').scrollTop($('#projectAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                g_ProjectArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Project Admin',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromProject(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#projectAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeCustomer(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_ClientArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#CustomerManagementAdmin').scrollTop($('#CustomerManagementAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                g_ClientArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'ClientMaster',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromClient(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#CustomerManagementAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+function onChangeHr(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_HrAdminArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#hrAdmin').scrollTop($('#hrAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_HrAdminArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Hr Admin',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromHr(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#hrAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeProcess(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_ProcessArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#processAdmin').scrollTop($('#processAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_ProcessArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Process Admin',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromProcess(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#processAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+
+/*-----------------------Intranet picker onChange functionality--------------------------------------------------*/
+function onChangeBanner(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_informationArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#informationAdmin').scrollTop($('#informationAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_informationArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Banners',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeBanner(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#informationAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeBannerApprover(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            BannersApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#informationApprover').scrollTop($('#informationApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                BannersApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'BannersApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeBannerApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#informationApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeAnnouncement(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_AnnouncementsArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#announcementsAdmin').scrollTop($('#announcementsAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_AnnouncementsArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Announcements',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAnnouncement(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#announcementsAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeAnnouncementApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            announcementApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#announcementApprover').scrollTop($('#announcementApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                announcementApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'announcementApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAnnounceApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#announcementApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeAlert(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_AlertArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#alertAdmin').scrollTop($('#alertAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_AlertArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Emergency Annoucements',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAlert(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#alertAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeAlertApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            AlertApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#AlertApprover').scrollTop($('#AlertApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                AlertApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Emergency Annoucements',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAlertApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#AlertApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeEvent(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_eventAdminArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#eventAdmin').scrollTop($('#eventAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_eventAdminArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Events',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeEvent(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#eventAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+/*function onChangeEvent(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_eventAdminArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#eventAdmin').scrollTop($('#eventAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_eventAdminArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Events',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeEvent(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#eventAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}*/
+
+function onChangeEventApprover(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            EventApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#EventApprover').scrollTop($('#EventApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                EventApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'EventApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeEventApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#EventApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeSuevey(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_PollsArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#surveyAdmin').scrollTop($('#surveyAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_PollsArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Polls',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removePolls(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#surveyAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeSueveyApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            SurveyApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#SurveyApprover').scrollTop($('#SurveyApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                SurveyApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'SurveyApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removePollsApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#SurveyApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeRecogination(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_RecognitionArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#recognitionAdmin').scrollTop($('#recognitionAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_RecognitionArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Recognition',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeRecogination(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#recognitionAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeRecoginationApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            RecoginitionApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#RecoginitionApprover').scrollTop($('#RecoginitionApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                RecoginitionApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'RecoginitionApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeRecoginationApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#RecoginitionApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeExperence(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_GeneralArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#ExperienceAdmin').scrollTop($('#ExperienceAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_GeneralArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'General',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeExperience(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#ExperienceAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+function onChangeExperenceApprov(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            ExperienceApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#ExperienceApprover').scrollTop($('#ExperienceApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                ExperienceApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'ExperienceApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeExperienceApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#ExperienceApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+function onChangeQuestion(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_QuestionAnswerArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#questionsAdmin').scrollTop($('#questionsAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_QuestionAnswerArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'QuestionAnswer',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeQuestion(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#questionsAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeQuestionApproval(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            QuestionApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#QuestionApprover').scrollTop($('#QuestionApprover')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                QuestionApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'QuestionApprover',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeQuestionApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#QuestionApprover").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeMagazine(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_MagazineArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#magazineAdmin').scrollTop($('#magazineAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_MagazineArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Media Gallery',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeMagazine(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#magazineAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeMedia(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_MediaGalleryArr.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                $('#mediaGalleryAdmin').scrollTop($('#mediaGalleryAdmin')[0].scrollHeight);
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SharingUserEmail.push(tempEmail);
+                g_MediaGalleryArr.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Media',
+                        deptId:0,
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeMedia(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#mediaGalleryAdmin").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+/*-----------------------End----------------------------------------*/
+function onChangeDeptContributors(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_Contributors.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_Contributors.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'DeptContri',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromContributors(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $('#deptContributors').scrollTop($('#deptContributors')[0].scrollHeight);
+                $("#deptContributors").append(BindUser);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeHeadOfDept(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_HOD.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_HOD.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'HOD',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromHOD(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#headOfDepartment").append(BindUser);
+                $('#headOfDepartment').scrollTop($('#headOfDepartment')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeOtherDept(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_OtherDeptContri.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_OtherDeptContri.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'OtherDeptContri',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromContributorsOfOtherDept(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#otherDeptContributors").append(BindUser);
+                $('#otherDeptContributors').scrollTop($('#otherDeptContributors')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeDepartProject(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_DepartmentalProject.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_DepartmentalProject.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Project',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeDeptProject(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#projectAdminDertmental").append(BindUser);
+                $('#projectAdminDertmental').scrollTop($('#projectAdminDertmental')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeDocumentApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_DocumentApp.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_DocumentApp.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'DocumentApprovers',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeDocApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#allApprovers").append(BindUser);
+                $('#allApprovers').scrollTop($('#allApprovers')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeNewInitiative(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_NewInitiative.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_NewInitiative.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'New Initiative',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeNewInitiative(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#NewInitiativeAdmin").append(BindUser);
+                $('#NewInitiativeAdmin').scrollTop($('#NewInitiativeAdmin')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChangeNewInitiativeApprovers(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_NewApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_NewApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'NewApprover',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeInitiativeApp(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#initiativeApproval").append(BindUser);
+                $('#initiativeApproval').scrollTop($('#initiativeApproval')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+function onChangeSuggesion(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_Suggesion.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_Suggesion.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Suggesion',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeSuggesion(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#SuggestionAdmin").append(BindUser);
+                $('#SuggestionAdmin').scrollTop($('#SuggestionAdmin')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+function onChanSuggesionApprov(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            SuggestionApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                SuggestionApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'SuggestionApprover',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeSuggApprove(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#suggestionApproval").append(BindUser);
+                $('#suggestionApproval').scrollTop($('#suggestionApproval')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+//#region on change Activity
+
+function onChangeActivity(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_Activity.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_Activity.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Activity',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeActivity(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#ActivityAdmin").append(BindUser);
+                $('#ActivityAdmin').scrollTop($('#ActivityAdmin')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+//#endregion
+
+//#region on change Activity Approvers
+
+
+function onChangeActivityApprov(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_ActivityApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_ActivityApprover.push({
+                    EMail:tempEmail,
+                    deptId:$('#ddlDepartments').val(),
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'ActivityApprover',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeActivityApprov(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#ActivityApprover").append(BindUser);
+                $('#ActivityApprover').scrollTop($('#ActivityApprover')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+//#endregion
+
+//#region on change Knowledge Picker
+function onChangeKnowledge(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_Knowledge.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_Knowledge.push({
+                    EMail:tempEmail,
+                    deptId:$('#ddlDepartments').val(),
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Knowledge',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeKnowledge(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#KnowledgeAdmin").append(BindUser);
+                $('#KnowledgeAdmin').scrollTop($('#KnowledgeAdmin')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+//#endregion
+
+//#region on change Knowledge Approvers
+
+function onChangeKnowledgeApprov(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            KnowledgeApprover.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                KnowledgeApprover.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    deptId:$('#ddlDepartments').val(),
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'KnowledgeApprover',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeKnowledgeApp(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#KnowledgeApprover").append(BindUser);
+                $('#KnowledgeApprover').scrollTop($('#KnowledgeApprover')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+//#endregion
+
+function onChangeReader(HTMLID, PplPickerId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            var userCheck=false;
+            g_Readers.forEach(function(data){
+                if(data.EMail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    userCheck=true;
+                }
+            })
+            if(userCheck==false)
+            {
+                BindUser = '';
+                tempUserId = parseInt(getUserInformation(PplPickerId));
+                SharingUserId.push(tempUserId);
+                var tempEmail = userInfo[0].Key.split('|')[2];
+                ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+                if (tempEmail.includes('#') == true) {
+                    tempEmail = tempEmail.split('#ext')[0];
+                    tempEmail = tempEmail.replace("_", '@');
+                }
+                g_Readers.push({
+                    EMail:tempEmail,
+                    Id:tempUserId,
+                    UserName:userInfo[0].DisplayText
+                });
+                userRecords.push(
+                    {
+                        EMail:tempEmail,
+                        WebPartName:'Redear',
+                        deptId:$('#ddlDepartments').val(),
+                        Id:tempUserId,
+                        UserName:userInfo[0].DisplayText
+                    }
+                )
+                SharingUserEmail.push(tempEmail);
+                SharingUserName.push(userInfo[0].DisplayText);
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';
+                
+                //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+                BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromReader(this, \'' + tempEmail + '\');"><i class="fa fa-times"></i></button>';
+
+                BindUser += '</div></div></div></div>';
+                $("#readerOtherDept").append(BindUser);
+                $('#readerOtherDept').scrollTop($('#readerOtherDept')[0].scrollHeight);
+                EmptyPeoplePicker(PplPickerId);
+            }
+            else
+            {
+                alert('User '+userInfo[0].DisplayText +' already exists');
+                EmptyPeoplePicker(PplPickerId);
+            }
+            
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+
+
+
+//get user information from people picker
+function getUserInformation(PeoplepickerId, multipleEmailAddress, assignUserName, StepCount) {
+    // Get the people picker object from the page. 
+    var userIds = [];
+    var uniqueValues = [];
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[PeoplepickerId + "_TopSpan"];
+    if (!peoplePicker.IsEmpty()) {
+        if (peoplePicker.HasInputError) return false; // if any error  
+        else if (!peoplePicker.HasResolvedUsers()) return false; // if any invalid users  
+        else if (peoplePicker.TotalUserCount > 0) {
+            // Get information about all users.  
+            var users = peoplePicker.GetAllUserInfo();
+            var userInfo = '';
+            var promise = '';
+            var UsersID = '';
+            for (var i = 0; i < users.length; i++) {
+                // UsersID += GetUserID(users[i].Key);
+                var accountName = users[i].Key;
+                users[i].EntityData.Email; users[i].DisplayText;
+                var userId = GetUserID(accountName);
+                if (userId != -1) {
+                    if (uniqueValues.indexOf(userId) == -1) {
+                        uniqueValues.push(userId);
+                        userIds.push(userId);
+                    }
+                }
+                else {
+                    userIds.push(parseInt(users[i].EntityData.SPGroupID));
+                }
+            }
+            return userIds;
+        }
+    } else {
+        return UsersID;
+    }
+}
+
+// Get the user ID.
+function GetUserID(logonName) {
+    var item = {
+        'logonName': logonName
+    }
+    var userId = -1;
+    var UserId = $.ajax({
+        url: _spPageContextInfo.siteAbsoluteUrl + '/_api/web/ensureuser',
+        type: 'POST',
+        async: false,
+        contentType: 'application/json;odata=verbose',
+        data: JSON.stringify(item),
+        headers: {
+            'Accept': 'application/json;odata=verbose',
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+        },
+        success: function (data) {
+            userId = data.d.Id;
+        },
+        error: function (data) {
+            console.log(data)
+            if (currentDlg != "") {
+                currentDlg.close();
+            }
+        }
+    })
+    return userId;
+
+}
+
+//empty the people picker
+function EmptyPeoplePicker(peoplePickerId) {
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerId + "_TopSpan"];
+    var usersobject = peoplePicker.GetAllUserInfo();
+    usersobject.forEach(function (index) {
+        peoplePicker.DeleteProcessedUser(usersobject[index]);
+    });
+}
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// Bind Departments ///////////////////////////////////////////////
+g_DeptSiteUrl=[];
+function BindDepartments() {
+    var ListName = "Departments";
+    var companyId =Logged_CompanyId;
+    var dfd = $.Deferred();    
+    var webURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + ListName + "')/items?$select=ID,SiteURL,DepartmentName,CompanyID/ID&$expand=CompanyID&$filter=CompanyID/ID eq '" + companyId + "'";
+    $.ajax({
+        url: webURL,
+        type: "GET",
+        headers: {
+            "ACCEPT": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            var ddlDepartments = document.getElementById("ddlDepartments");
+            var items ='';
+            if(data.d.results.length>0){
+                var LoggedDepartment=data.d.results.filter(function(data)
+                {
+                   if(data.ID==Logged_DepartmentId)
+                   {
+                      items += "<option value = '" +data.ID+ "' data-tokens='"+data.DepartmentName+"'>" +data.DepartmentName+ " </option>"
+                   }
+                
+                })
+            }    
+            
+            $.each(data.d.results, function (i, item) {                
+                //items += "<option value = '" +item.ID+ "'>" +item.DepartmentName+ " </option>"
+                if(item.ID != Logged_DepartmentId){
+                  items += "<option value = '" +item.ID+ "' data-tokens='"+item.DepartmentName+"'>" +item.DepartmentName+ " </option>"              
+                }
+                g_DeptSiteUrl.push({
+                    DeptId:item.ID,
+                    DeptSiteUrl:item.SiteURL
+                })
+            })
+            $("#ddlDepartments").append(items);            
+            dfd.resolve(true);
+
+        },
+        error: function (result) {
+            alert("Error in Bind Departments method.");
+
+            dfd.reject(result);
+        }
+    })
+
+    return dfd.promise();
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//************************************ Permissions Logic for Company *******************************************//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////// Get Company Approvers /////////////////////////////////////////
+var g_ApprovalItems='';
+var g_TechAdminArr=[];
+var g_HrAdminArr=[];
+var g_ProcessArr=[];
+var g_ProjectArr=[];
+var g_ClientArr=[];
+var g_AnnouncementsArr=[];
+var g_AlertArr=[];
+var g_RecognitionArr=[];
+var g_eventAdminArr=[];
+var g_PollsArr=[];
+var g_informationArr=[];
+var g_QuestionAnswerArr =[];
+var g_GeneralArr=[];
+var g_MediaGalleryArr=[];
+var g_MagazineArr=[];
+var QuestionApprover=[];
+var announcementApprover=[];
+var AlertApprover=[];
+var BannersApprover=[];
+var RecoginitionApprover=[];
+var EventApprover=[];
+var ExperienceApprover=[];
+var SurveyApprover=[];
+function getCompanyApprovers(){
+    var siteUrl=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getBytitle('ProcessApprovers')/items?$select=*,Approver/Title,Approver/EMail,Approver/Id,Approver/UserName,Owner/Title,Owner/EMail,Owner/Id,Owner/UserName,Contributors/Title,Contributors/Id,Contributors/UserName,Contributors/EMail&$expand=Approver,Contributors,Owner&$filter=CompanyId eq '"+Logged_CompanyId+"'";
+    $.ajax({
+        url:siteUrl,
+        //headers:{"ACCEPT":"application/json;odata=verbose"},
+        headers: {
+            "ACCEPT": "application/json;odata=verbose"
+        },
+        async:false,
+        success:function(data){
+            var results=data.d.results;
+            g_ApprovalItems=results;
+            for(let i=0;i<results.length;i++)
+            {
+                var scope=results[i].Scope;
+                var ApproverRequired=results[i].ApproverRequired;
+                if(results[i].WebPartName =='Tech Admin')
+                {
+                    var Contributors=results[i].Contributors;
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_TechAdminArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Tech Admin',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromTech(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#techAdminUser").append(BindUser);
+                        })
+                    }
+                    
+                }
+                else if(results[i].WebPartName =='Process Admin')
+                {
+                    var Contributors=results[i].Contributors;
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_ProcessArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Process Admin',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromProcess(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#processAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+                else if(results[i].WebPartName =='Project Admin')
+                {
+                    var Contributors=results[i].Contributors;
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_ProjectArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Project Admin',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromProject(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#projectAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+                else if(results[i].WebPartName =='ClientMaster')
+                {
+                    var Contributors=results[i].Contributors;
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_ClientArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'ClientMaster',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeFromClient(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#CustomerManagementAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+                else if(results[i].WebPartName =='Announcements')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleGeneralAnnouncement").addClass("active");
+                        ChrckGeneralAnnouncement();
+                    }                    
+                    if (ApproverRequired ==false) {
+                        $("#tglannouncementApprover").addClass("active");
+                        $(".announcement-approval-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_AnnouncementsArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Announcements',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAnnouncement(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#announcementsAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            announcementApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'announcementApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAnnounceApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#announcementApprover").append(BindUser);
+                        })
+                    }
+
+                }
+                else if(results[i].WebPartName =='Banners')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleNews").addClass("active");
+                        ChrckToggleNews();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglinformationApprover").addClass("active");
+                        $(".approval-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_informationArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Banners',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeBanner(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#informationAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            BannersApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'BannersApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeBannerApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#informationApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='Emergency Annoucements')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleEmergencyAnnouncement").addClass("active");
+                        ChrckEmergencyAnnouncement();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglAlertApprover").addClass("active");
+                        $(".alert-approval-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_AlertArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Emergency Annoucements',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAlert(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#alertAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            AlertApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'AlertApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeAlertApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#AlertApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='Events')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleEvents").addClass("active");
+                        ChrckEvents();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglEventApprover").addClass("active");
+                        $(".events-approval-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_eventAdminArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Events',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeEvent(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#eventAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            EventApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'EventApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeEventApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#EventApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='Recognition')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleRecognition").addClass("active");
+                        ChrckRecognition();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglRecoginitionApprover").addClass("active");
+                        $(".recognition-approval-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_RecognitionArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Recognition',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeRecogination(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#recognitionAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            RecoginitionApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'RecoginitionApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeRecoginationApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#RecoginitionApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='Polls')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#togglePolls").addClass("active");
+                        ChrckPolls();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglSurveyApprover").addClass("active");
+                        $(".Survey-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_PollsArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Polls',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removePolls(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#surveyAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            SurveyApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'SurveyApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removePollsApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#SurveyApprover").append(BindUser);
+                        })
+                    }
+
+
+                }
+                else if(results[i].WebPartName =='General')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleExperience").addClass("active");
+                        ChrckExperience();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglExperienceApprover").addClass("active");
+                        $(".experienc-required-yes").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_GeneralArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'General',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeExperience(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#ExperienceAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            ExperienceApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'ExperienceApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeExperienceApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#ExperienceApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='QuestionAnswer')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleQuestionAnswer").addClass("active");
+                        //$("#mediaGalleryBox").addClass("d-none");
+                        ChrckQuestionAnswer();
+                    }
+                    if (ApproverRequired ==false) {
+                        $("#tglQuestionApprover").addClass("active");
+                        $("#QuestionApproverBox").toggleClass("d-none");
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_QuestionAnswerArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'QuestionAnswer',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeQuestion(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#questionsAdmin").append(BindUser);
+                        })
+                    }
+                    
+                    if(results[i].ApproverId!=null)
+                    {
+                        results[i].Approver.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            QuestionApprover.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            })
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'QuestionApprover',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeQuestionApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                            BindUser += '</div></div></div></div>';
+                            $("#QuestionApprover").append(BindUser);
+                        })
+                    }
+                }
+                else if(results[i].WebPartName =='Media Gallery')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleMagazine").addClass("active");
+                        //$("#magazineBox").addClass("d-none");        
+                        ChrcktoggleMagazine();
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_MagazineArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Media Gallery',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeMagazine(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#magazineAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+                else if(results[i].WebPartName =='Media')
+                {
+                    var Contributors=results[i].Contributors;
+                    if (scope == "EVERYONE" || scope == "Everyone") {
+                        $("#toggleMediaGallery").addClass("active"); 
+                        //$("#mediaGalleryBox").addClass("d-none");       
+                        ChrcktoggleMediaGallery();
+                    }
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_MediaGalleryArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Media',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';                        
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeMedia(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#mediaGalleryAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+
+                else if(results[i].WebPartName =='HR Admin')
+                {
+                    var Contributors=results[i].Contributors;
+                    if(results[i].ContributorsId!=null)
+                    {
+                        Contributors.results.forEach(function(Items){
+                            var email=Items.EMail;
+                            var userName=Items.Title;
+                            var userId=Items.Id;
+                            g_HrAdminArr.push({
+                                EMail:email,
+                                Id:userId,
+                                UserName:userName
+                            });
+                            userRecords.push(
+                                {
+                                    EMail:email,
+                                    WebPartName:'Hr Admin',
+                                    deptId:0,
+                                    Id:userId,
+                                    UserName:userName
+                                }
+                            )
+                            var BindUser='';
+                            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                            BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';
+                            
+                            //BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                            BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                            BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                            BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                            BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromHr(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';
+                
+                            BindUser += '</div></div></div></div>';
+                            $("#hrAdmin").append(BindUser);
+                        })
+                    }
+                    
+                }
+                
+            }
+
+        },
+        error:function(error){
+            alert(error);
+        }
+
+    })
+}
+
+
+
+function CheckAdminBlock() {
+    var AllEmployeeuser = [];
+    var RestQuery;
+    var companyId = titanForWork.getQueryStringParameter("CompanyId");
+    RestQuery = "?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID &$expand=LogonName,Department,Company &$filter= Status eq 'Active' and Company/ID eq '" + companyId + "'   &$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", RestQuery)).done(function (Employees) {
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+                AllEmployeeuser.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'Department': Employees.results[i].Department.ID,
+                    'UserEmail':Employees.results[i].Email
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    AdminWarning = "";
+    SuperAdminWaring = "";
+    if (g_TechAdminArr.length > 0) {
+        for (var j = 0; j < g_TechAdminArr.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLowerCase() == g_TechAdminArr[j].EMail.toLowerCase() || filterData.UserEmail.toLowerCase()==g_TechAdminArr[j].EMail.toLowerCase();
+            }); 
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += g_TechAdminArr[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Tech Admin. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+        alert('Please enter Tech AdminContributor name.');
+        waitingDialog.hide();
+        return false;
+    }    
+    var users =g_HrAdminArr;
+    if (users.length > 0) {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLowerCase() == users[j].EMail.toLowerCase() || filterData.UserEmail.toLowerCase()==g_TechAdminArr[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as HR Admin. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter HR Admin Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+    if (g_ProcessArr.length > 0 && $('#processAdminDiv').hasClass('d-none')==false) {
+        for (var j = 0; j < g_ProcessArr.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLowerCase() == g_ProcessArr[j].EMail.toLowerCase() || filterData.UserEmail.toLowerCase()==g_TechAdminArr[j].EMail.toLowerCase();
+            }); 
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += g_ProcessArr[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Process Admin. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+        if(IsBpassModules==true || IsDMSModules==true)
+        {
+            alert('Please enter Process Admin Contributor name.');
+            waitingDialog.hide();
+            return false;
+        }
+        
+    }
+    if (g_ClientArr.length > 0) {
+        for (var j = 0; j < g_ClientArr.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLowerCase() == g_ClientArr[j].EMail.toLowerCase() || filterData.UserEmail.toLowerCase()==g_ClientArr[j].EMail.toLowerCase();
+            }); 
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += g_ClientArr[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Customer Management. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+        alert('Please enter Customer Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+    if(IsTaskModules==true){
+	    if (g_ProjectArr.length > 0) {
+	        for (var j = 0; j < g_ProjectArr.length; j++) {
+	            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+	                return filterData.EMail.toLowerCase() == g_ProjectArr[j].EMail.toLowerCase() || filterData.UserEmail.toLowerCase()==g_ProjectArr[j].EMail.toLowerCase();
+	            }); 
+	            if (arrSubVisaLetters < 1) {
+	                AdminWarning += g_ProjectArr[j].UserName + ",";
+	                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+	                IsAdminOrNot = false;
+	                IscheckMessage = true;
+	            }
+	
+	        }
+	        if (IscheckMessage) {
+	            AdminWarning += " is not an active user.\n Can not be assigned as Project Admin. \n ";
+	            IscheckMessage = false;
+	        }
+	    }
+	    else {
+	        alert('Please enter Project Admin Contributor name.');
+	        waitingDialog.hide();
+	        return false;
+	    }
+    }
+
+    return IsAdminOrNot
+}
+
+
+function TechAdmin() {
+    //var deferred = $.Deferred();
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Employees");
+    listCollectionArray.push("Companies");
+    listCollectionArray.push("OfficeLocation");
+    listCollectionArray.push("Departments");
+    listCollectionArray.push("ProcessApprovers");
+    listCollectionArray.push("ThoughtOfTheDay");
+    listCollectionArray.push("TipOfTheDay");
+    listCollectionArray.push("LabelsSettings");
+    listCollectionArray.push("SocialMediaSettings");
+    listCollectionArray.push("LanguageSetting");
+    listCollectionArray.push("ThemePictures");
+    listCollectionArray.push("ThemeSettings");
+    listCollectionArray.push("ThemeSettings");
+    listCollectionArray.push("ApplicationLink");
+
+    
+    var contributorsIdArray =[]
+    g_TechAdminArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+        //return contributorsIdArray ;
+    })
+    
+    
+    var limitedAccessIdArray =[];
+    g_HrAdminArr.forEach(function(data){
+        limitedAccessIdArray .push(data.Id); 
+        return limitedAccessIdArray;
+    })
+    var approverIdArray = new Array(); // ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    var webPartName = "Tech Admin";
+    var departmentId = "";
+    var myDocumentsiteURL = _spPageContextInfo.webAbsoluteUrl;
+    var usersPermissionAllowded = new Array();
+    for (var index = 0; index < contributorsIdArray.length; index++) {
+        usersPermissionAllowded.push(contributorsIdArray[index]);
+    }
+    for (var index = 0; index < limitedAccessIdArray.length; index++) {
+        usersPermissionAllowded.push(limitedAccessIdArray[index]);
+    }
+    var ownerIdArray = [];
+    limitedAccessIdArray = [];
+
+    //var pickerDiv = $("[id^='TechAdmin_Company']");
+    //var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+    //var users = peoplePicker.GetAllUserInfo();
+    var users=[];
+    g_TechAdminArr.forEach(function(data){
+        users.push(data.EMail);
+        return users;
+    })
+
+    GetGroupIDByGroupName();
+    addUserToSharePointGroup(users);
+
+    CommonServiceForRootSite(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded, ownerIdArray, true);
+
+
+}
+
+function ProjectAdmin() {
+    if(IsTaskModules==true)
+    {
+        //var deferred = $.Deferred();
+        var listCollectionArray = new Array();
+        var contributorsIdArray = []//ListCommonService.getMultiPeoplePickerUserInfo("ProjectAdmin_Company");
+        g_ProjectArr.forEach(function(data){
+            contributorsIdArray.push(data.Id)
+            //return contributorsIdArray ;
+        })
+        var limitedAccessIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+        var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+        var webPartName = "Project Admin";
+        var departmentId = "";
+        var myDocumentsiteURL = _spPageContextInfo.webAbsoluteUrl;
+        var ownerIdArray = [];
+        var users=[];
+        g_ProjectArr.forEach(function(data){
+            users.push(data.EMail);
+            return users;
+        })
+        GetGroupIDByGroupName();
+        addUserToSharePointGroup(users);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, false);
+        //deferred.resolve(true);
+        return true;
+    }
+    return true;
+    
+}
+function CompanyClientMaster() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("PollsDetails"); //Admin company based
+    var contributorsIdArray =[]; //ListCommonService.getMultiPeoplePickerUserInfo("ClientMasterContributors_Company");
+    g_ClientArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+        //return contributorsIdArray ;
+    })
+    var limitedAccessIdArray =[];// ListCommonService.getMultiPeoplePickerUserInfo("ClientMasterLimitedAccess_Company");
+
+    var approverIdArray = new Array(); // ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    var webPartName = "ClientMaster";
+    var departmentId = "";
+    var myDocumentsiteURL =_spPageContextInfo.webAbsoluteUrl //GetSiteURL("");
+    var ownerIdArray = [];
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true);
+}
+
+
+
+function HRAdmin() {
+    var listCollectionArray = new Array();
+    var contributorsIdArray =[]
+    g_HrAdminArr.forEach(function(data){
+        contributorsIdArray.push(data.Id);
+    })
+    var limitedAccessIdArray = new Array();
+    var approverIdArray = new Array();
+    var webPartName = "HR Admin";
+    var departmentId = "";
+    var myDocumentsiteURL = _spPageContextInfo.webAbsoluteUrl;
+    var ownerIdArray = [];    
+    var users=[];
+    g_HrAdminArr.forEach(function(data){
+        users.push(data.EMail);
+        return users;
+    })
+
+    GetGroupIDByGroupName();
+    addUserToSharePointGroup(users);
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, false);
+
+}
+
+function ProcessAdmin() {
+    if(IsBpassModules==true || IsDMSModules==true)
+    {
+        var listCollectionArray = new Array();
+        var contributorsIdArray =[]
+        g_ProcessArr.forEach(function(data){
+            contributorsIdArray.push(data.Id);
+        })
+        var limitedAccessIdArray = new Array();
+        var approverIdArray = new Array();
+        var webPartName = "Process Admin";
+        var departmentId = "";
+        var myDocumentsiteURL = _spPageContextInfo.webAbsoluteUrl;
+        var ownerIdArray = [];    
+        var users=[];
+        g_ProcessArr.forEach(function(data){
+            users.push(data.EMail);
+            return users;
+        })
+        GetGroupIDByGroupName();
+        addUserToSharePointGroup(users);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, false);
+
+    }
+    
+}
+
+function addUserToSharePointGroup(ownerIdArray) {
+    for (var j = 0; j < ownerIdArray.length; j++) {
+        addUser(ownerIdArray[j])
+    }
+}
+
+function addUser(owner) {
+    var user='i:0#.f|membership|'+owner;
+    var clientContext = new SP.ClientContext(_spPageContextInfo.webAbsoluteUrl);
+    var collGroup = clientContext.get_web().get_siteGroups();
+    var oGroup = collGroup.getById(groupID);
+
+    var userCreationInfo = new SP.UserCreationInformation();
+    //    userCreationInfo.set_email(ownerIdArray[j].Description);
+    userCreationInfo.set_loginName(user);
+    this.oUser = oGroup.get_users().add(userCreationInfo);
+    clientContext.load(oUser);
+    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+
+}
+
+function onQuerySucceeded(data) {
+  console.log(data);
+}
+
+function onQueryFailed(sender, args) {
+ console.log('Permission error');
+}
+
+
+var groupID = "";
+function GetGroupIDByGroupName() {
+    var groupName = "Owners";
+    var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getbyname('" + groupName + "')?$select=*";
+    $.ajax({
+        url: url,
+        method: "GET",
+        async: false,
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: function (data) {
+
+            groupID = data.d.Id;
+        },
+        error: function (data) {
+            console.log(data);
+
+        }
+    });
+return groupID;
+};
+
+
+function CommonServiceForRootSite(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded, ownerIdArray, breakPerimission) {
+    //waitingDialog.show();
+    var ListName = "ProcessApprovers";
+    var itemID = ValidateExistingPermissionProcessApprover(ListName, currentCompanyid, departmentId, webPartName);
+    var Metadata = GenerateMetaData(ListName, currentCompanyid, departmentId, webPartName, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray);
+    if (itemID == "") {
+        $.when(ListCommonService.AddItemToList(ListName, Metadata)).done(function (MainExamListItemTemp) {
+            if (breakPerimission == true) {
+                for (var index = 0; index < listCollectionArray.length; index++) {
+                    // BreakInheritePermissionOnItem(myDocumentsiteURL, listCollectionArray[index], approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded);
+                }
+            }
+
+        });
+    } else {
+        $.when(ListCommonService.updateItemWithID(ListName, Metadata, itemID)).done(function (MainExamListItemTemp) {
+            if (breakPerimission == true) {
+                for (var index = 0; index < listCollectionArray.length; index++) {
+                    // BreakInheritePermissionOnItem(myDocumentsiteURL, listCollectionArray[index], approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded);
+                }
+            }
+        });
+    }
+}
+
+function CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, breakPerimission, Scope) {
+    var usersPermissionAllowded = "";
+    //waitingDialog.show();
+    var ListName = "ProcessApprovers";
+    var itemID = ValidateExistingPermissionProcessApprover(ListName, currentCompanyid, departmentId, webPartName);
+    var Metadata = GenerateMetaData(ListName, currentCompanyid, departmentId, webPartName, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, Scope);
+    if (itemID == "") {
+        $.when(ListCommonService.AddItemToList(ListName, Metadata)).done(function (MainExamListItemTemp) {
+            if (breakPerimission == true) {
+                for (var index = 0; index < listCollectionArray.length; index++) {
+                    // BreakInheritePermissionOnItem(myDocumentsiteURL, listCollectionArray[index], approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded);
+                }
+            }
+
+        });
+    } else {
+        $.when(ListCommonService.updateItemWithID(ListName, Metadata, itemID)).done(function (MainExamListItemTemp) {
+            if (breakPerimission == true) {
+                for (var index = 0; index < listCollectionArray.length; index++) {
+                    //  BreakInheritePermissionOnItem(myDocumentsiteURL, listCollectionArray[index], approverIdArray, limitedAccessIdArray, contributorsIdArray, usersPermissionAllowded);
+                }
+            }
+        });
+    }
+}
+
+function ValidateExistingPermissionProcessApprover(ListName, companyId, departmentId, webpartName) {
+    var itemID = "";
+    var departmentQuery = "";
+    if (departmentId != null && departmentId != "") {
+        departmentQuery = " and DepartmentId eq '" + departmentId + "'";
+    }
+    var query = "?$select=ID,WebPartName,CompanyId,DepartmentId&$filter=CompanyId eq '" + companyId + "' and  WebPartName eq '" + webpartName + "'" + departmentQuery;
+    $.when(ListCommonService.getItemsWithQuery(ListName, query)).done(function (MainExamListItemTemp) {
+        if (MainExamListItemTemp.length > 0) {
+            itemID = MainExamListItemTemp[0].Id;
+        }
+    });
+    return itemID;
+}
+
+
+function GenerateMetaData(ListName, companyId, departmentId, webPartName, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, Scoprvalue) {
+
+    var approverRequiredFlag = false;
+    var Scopevalue=Scoprvalue;
+    if (approverIdArray.length == 0) {
+        approverIdArray = [];
+    }
+    if (limitedAccessIdArray.length == 0) {
+        limitedAccessIdArray = [];
+    }
+    if (contributorsIdArray.length == 0) {
+        contributorsIdArray = [];
+    }
+    if (ownerIdArray.length == 0) {
+        ownerIdArray = [];
+    }   
+    
+    if(webPartName=='Documents' || webPartName=='DepartmentDocument_Access')
+    {
+        /*Scopevalue= $('input[name="UpdateEmp"]:checked').val()
+        if(Scopevalue=='3')
+        {
+            Scopevalue='Everyone';    
+        }
+        if(Scopevalue=='4')
+        {
+            Scopevalue='HOD'    
+        }*/
+        if($('#toggleDocument').hasClass('active'))Scopevalue='EVERYONE';
+    }
+    /*else if (webPartName == "Suggesion") {
+        if ($('#toggleSuggestionApp').hasClass("active") == false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+
+    }*/ else if (webPartName == "Banners") {
+        if ($("#tglinformationApprover").hasClass("active") ==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    } /*else if (webPartName == "Activity") {
+        if ($('#toggleActivityApp').hasClass("active")== false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }*/
+    else if (webPartName == "Announcements") {
+        if ($("#tglannouncementApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    } 
+    else if (webPartName == "Emergency Annoucements") {
+        if ($("#tglAlertApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Events") {
+        if ($("#tglEventApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Polls") {
+        if ($("#tglSurveyApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+
+    else if (webPartName == "General") {
+        if ($("#tglExperienceApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "QuestionAnswer") {
+        if ($("#tglQuestionApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+
+    else if (webPartName == "Recognition") {
+        if ($("#tglRecoginitionApprover").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Documents") {
+        if ($("#toggleDocumentApp").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "New Initiative") {
+        if ($("#toggleInitiativeApp").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Suggesion") {
+        if ($("#toggleSuggestionApp").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Activity") {
+        if ($("#toggleActivityApp").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else if (webPartName == "Knowledge") {
+        if ($("#toggleKnowledgeApp").hasClass("active")==false) {
+            approverRequiredFlag = true;
+        } else {
+            approverIdArray = [];
+        }
+    }
+    else{
+        approverRequiredFlag = false
+    }
+
+
+
+
+    if (approverIdArray.length == 0) {
+        approverIdArray = [];
+    }
+    if (limitedAccessIdArray.length == 0) {
+        limitedAccessIdArray = [];
+    }
+    if (contributorsIdArray.length == 0) {
+        contributorsIdArray = [];
+    }
+    if (ownerIdArray.length == 0) {
+        ownerIdArray = [];
+    }
+    
+    
+    
+
+    var Metadata;
+    var ItemType = ListCommonService.GetItemTypeForListName(ListName);
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        CompanyId: companyId,
+        DepartmentId: departmentId,
+        WebPartName: webPartName,
+        Scope:Scopevalue,
+        ApproverId: {
+            'results': approverIdArray
+        },
+        LimitedAccessId: {
+            'results': limitedAccessIdArray
+        },
+        ContributorsId: {
+            'results': contributorsIdArray
+        },
+        OwnerId: {
+            'results': ownerIdArray
+        },
+        ApproverRequired: approverRequiredFlag
+    };
+
+    if (webPartName != "Documents" && webPartName != "Announcements" && webPartName != "Events" && webPartName != "Polls" && webPartName != "General" && webPartName !== "Banners" & webPartName != "QuestionAnswer" && webPartName != "Recognition" && webPartName != "Departmental Events" && webPartName != "Driver Request" && webPartName != "Suggesion" && webPartName != "New Initiative" && webPartName != "Activity" && webPartName!='Knowledge') {
+        delete Metadata["ApproverRequired"];
+        delete Metadata["OwnerId"];
+    }
+    if (departmentId == "" || departmentId == null) {
+        delete Metadata["DepartmentId"];
+    }
+
+    return Metadata
+}
+
+//remove user from each step
+function removeFromTech(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_TechAdminArr = g_TechAdminArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeFromProject(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_ProjectArr = g_ProjectArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeFromClient(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_ClientArr = g_ClientArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+
+function removeUserFromHr(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_HrAdminArr = g_HrAdminArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeUserFromProcess(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_ProcessArr = g_ProcessArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+/*--------------Intarnet tab------------------------------*/
+function removeAnnouncement(Action, Email){
+    $(Action).parents('.parentremove').remove();
+    g_AnnouncementsArr = g_AnnouncementsArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });
+}
+function removeAnnounceApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    announcementApprover = announcementApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeBanner(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_informationArr = g_informationArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeBannerApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    BannersApprover = BannersApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeAlert(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_AlertArr = g_AlertArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeAlertApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    AlertApprover = AlertApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeEvent(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_eventAdminArr = g_eventAdminArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeEventApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    EventApprover = EventApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removePolls(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_PollsArr = g_PollsArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removePollsApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    SurveyApprover = SurveyApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeRecogination(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_RecognitionArr = g_RecognitionArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeRecoginationApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    RecoginitionApprover = RecoginitionApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeExperience(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_GeneralArr = g_GeneralArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeExperienceApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    ExperienceApprover = ExperienceApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeQuestion(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_QuestionAnswerArr = g_QuestionAnswerArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeQuestionApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    QuestionApprover = QuestionApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeMedia(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_MediaGalleryArr = g_MediaGalleryArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeMagazine(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_MagazineArr = g_MagazineArr.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+
+
+/*---------------------------End tab------------------------------------*/
+
+function removeUserFromContributors(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_Contributors = g_Contributors.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeUserFromHOD(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_HOD = g_HOD.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeUserFromContributorsOfOtherDept(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_OtherDeptContri = g_OtherDeptContri.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });
+    
+}
+function removeUserFromReader(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_Readers = g_Readers.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeDocApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_DocumentApp = g_DocumentApp.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeDeptProject(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_DepartmentalProject = g_DepartmentalProject.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeNewInitiative(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_NewInitiative = g_NewInitiative.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeInitiativeApp(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_NewApprover = g_NewApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeSuggesion(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_Suggesion = g_Suggesion.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeSuggApprove(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    SuggestionApprover = SuggestionApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeActivity(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_Activity = g_Activity.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeActivityApprov(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_ActivityApprover = g_ActivityApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeKnowledge(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_Knowledge = g_Knowledge.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+function removeKnowledgeApp(Action, Email) {
+    $(Action).parents('.parentremove').remove();
+    g_KnowledgeApprover = KnowledgeApprover.filter(function (obj) {
+        return obj.EMail.toLowerCase() !== Email.toLowerCase();
+    });    
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//********************************* Permissions Logic for Department   *******************************//
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////// Get Departmental Approvers /////////////////////////////////////////
+
+var g_Suggesion=[];
+var g_NewInitiative=[];
+var g_Knowledge=[];
+var g_KnowledgeApprover=[]; 
+var KnowledgeApprover=[];
+var g_Activity=[];
+var g_ActivityApprover=[];
+var g_DepartmentalProject=[];
+var g_DepartmentalProjectApprover=[];
+var g_ActivityApprover=[];
+var g_Discussion=[];
+var g_NewApprover=[];
+var SuggestionApprover=[];
+
+function emptyArr()
+{
+    g_Contributors=[];
+    g_HOD=[];
+    g_Readers=[];
+    g_OtherDeptContri=[];
+    g_Suggesion=[];
+    //g_informationArr=[];
+    g_NewInitiative=[];
+    g_Knowledge=[];
+    g_KnowledgeApprover=[]; 
+    KnowledgeApprover=[];
+    g_Activity=[];
+    g_ActivityApprover=[];
+    g_DepartmentalProject=[];
+    g_DepartmentalProjectApprover=[];
+    g_ActivityApprover=[];
+    g_Discussion=[];
+    g_NewApprover=[];
+    SuggestionApprover=[];
+}
+
+function GetDepartmentalApprovers(departmentId)
+{
+    var departmentValue=g_ApprovalItems.filter(function(data){
+        return data.DepartmentId==departmentId && data.CompanyId==Logged_CompanyId //&& data.WebPartName=="Suggesion" && data.WebPartName=="New Initiative" && data.WebPartName=="Discussion" && data.WebPartName=="Knowledge" && data.WebPartName=="Activity" && data.WebPartName=="Project"
+    })
+    $('#ddlDepartments').val(departmentId);
+    emptyArr();
+    departmentValue.forEach(function(v){
+        if(v.WebPartName=="Documents")
+        {
+            var Contributors=v.Contributors;
+            if(v.Scope=='EVERYONE' || v.Scope == "Everyone")
+            {
+                $('#radioAllContr').prop('checked',true);
+                $(".sharing-with-everyone-approvers").toggleClass("d-none");
+                $("#toggleDocument").addClass("active");
+                //ChrckDocument();
+                $("#documentBox").addClass("d-none");
+                if(v.ApproverRequired==false){
+                    $('.contributors-approval-required-yes').toggleClass("d-none");
+                    $('#toggleDocumentApp').addClass("active");                   
+
+                }
+            }
+            else
+            {
+                //$('#radioHod').prop('checked',true);
+                $("#toggleDocument").removeClass("active");
+                $("#documentBox").removeClass("d-none");
+            }
+
+            if(v.ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_Contributors.push({
+                        EMail:email,
+                        Id:userId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'DeptContri',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromContributors(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#deptContributors").append(BindUser);
+                })
+            }
+            
+            var Owner=v.Owner;
+            if(v.OwnerId!=null)
+            {
+                Owner.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_OtherDeptContri.push({
+                        EMail:email,
+                        Id:userId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'OtherDeptContri',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromContributorsOfOtherDept(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#otherDeptContributors").append(BindUser);
+                })
+            }
+            var Documentapprover=v.Approver
+            g_DocumentApp=[];
+            if(v.ApproverId!=null)
+            {
+                v.Approver.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_DocumentApp.push({
+                        EMail:email,
+                        Id:userId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'DocumentApprovers',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeDocApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#allApprovers").append(BindUser);
+                })
+            }
+        }
+        if(v.WebPartName=="DepartmentDocument_Access")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_Readers.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'Redear',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromReader(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#readerOtherDept").append(BindUser);
+                })
+            }
+            
+            
+        }
+        if(v.WebPartName=="Project")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_DepartmentalProject.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'Project',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeDeptProject(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#projectAdminDertmental").append(BindUser);
+                })
+            }
+            
+            
+        }
+        if(v.WebPartName=="New Initiative")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(v.Scope=='EVERYONE' || v.scope == "Everyone"){
+                $("#toggleInitiative").addClass("active");
+                $("#NewInitiativeBox").addClass("d-none");                
+            }
+            else
+            {
+                $("#toggleInitiative").removeClass("active");
+                $("#NewInitiativeBox").removeClass("d-none");
+            }
+            if(ContributorsId!=null)
+            {
+                
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_NewInitiative.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'New Initiative',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeNewInitiative(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#NewInitiativeAdmin").append(BindUser);
+                })
+            }
+            var Approver=v.Approver;
+            if(v.ApproverRequired==false)
+            {
+                $('#toggleInitiativeApp').addClass('active')
+                $('.new-initiative-approval-required-yes').addClass('d-none');
+            }
+            else
+            {
+                $("#toggleInitiativeApp").removeClass("active");
+                $(".new-initiative-approval-required-yes").removeClass("d-none");
+            }            
+            if(v.ApproverId!=null)
+            {
+                Approver.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_NewApprover.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'NewApprover',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeInitiativeApp(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#initiativeApproval").append(BindUser);
+                })
+            }
+            
+        }
+        if(v.WebPartName=="Suggesion")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(v.ApproverRequired==false)
+            {
+                $('#toggleSuggestionApp').addClass('active')
+                $('.suggestion-approval-required-yes').addClass('d-none');
+            }
+            else
+            {
+                $("#toggleSuggestionApp").removeClass("active");
+                $(".suggestion-approval-required-yes").removeClass("d-none");
+            }
+            if(v.Scope=='EVERYONE' || v.Scope == "Everyone"){
+                $("#toggleSuggestion").addClass("active");
+                $("#SuggestionBox").addClass("d-none");
+                //ChrckSuggestion()
+            }
+            else
+            {
+                $("#toggleSuggestion").removeClass("active");
+                $("#SuggestionBox").removeClass("d-none");
+            }
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_Suggesion.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'Suggesion',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeSuggesion(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#SuggestionAdmin").append(BindUser);
+                })
+            }
+            var Approver=v.Approver;
+            if(v.ApproverId!=null)
+            {
+                Approver.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    SuggestionApprover.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'SuggestionApprover',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeSuggApprove(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#SuggestionApprover").append(BindUser);
+                })
+            }
+            
+            
+        }
+        if(v.WebPartName=="Activity")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(v.ApproverRequired==false)
+            {
+                $('#toggleActivityApp').addClass('active')
+                $('.activity-approval-required-yes').addClass('d-none');
+            }
+            else
+            {
+                $("#toggleActivityApp").removeClass("active");
+                $(".activity-approval-required-yes").removeClass("d-none");
+            }
+            if(v.Scope=='EVERYONE' || v.Scope == "Everyone"){
+                $("#toggleActivity").addClass("active");
+                $("#ActivityBox").addClass("d-none");
+                //ChrckActivity()
+            }
+            else
+            {
+                $("#toggleActivity").removeClass("active");
+                $("#ActivityBox").removeClass("d-none");
+            }
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_Activity.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'Activity',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeActivity(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#ActivityAdmin").append(BindUser);
+                })
+            }
+            var Approver=v.Approver;
+            if(v.ApproverId!=null)
+            {
+                Approver.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_ActivityApprover.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'ActivityApprover',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeActivityApprov(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#ActivityApprover").append(BindUser);
+                })
+            }
+            
+            
+            
+        }
+        if(v.WebPartName=="Knowledge")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(v.ApproverRequired==false)
+            {
+                $('#toggleKnowledgeApp').addClass('active')
+                $('.knowledge-approval-required-yes').addClass('d-none');
+            }
+            else
+            {
+                $("#toggleKnowledgeApp").removeClass("active");
+                $(".knowledge-approval-required-yes").removeClass("d-none");
+            }
+            if(v.Scope=='EVERYONE' || v.Scope == "Everyone"){
+                $("#toggleKnowledge").addClass("active");
+                $("#KnowledgeBox").addClass("d-none");
+                //ChrckKnowledge()
+            }
+            else
+            {
+                $("#toggleKnowledge").removeClass("active");
+                $("#KnowledgeBox").removeClass("d-none");
+            }
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_Knowledge.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:v.DepartmentId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'Knowledge',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeKnowledge(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#KnowledgeAdmin").append(BindUser);
+                })
+            }
+            var Approver=v.Approver;
+            if(v.ApproverId!=null)
+            {
+                Approver.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    KnowledgeApprover.push({
+                        EMail:email,
+                        Id:userId,
+                        deptId:$('#ddlDepartments').val(),
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'KnowledgeApprover',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeKnowledgeApp(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#KnowledgeApprover").append(BindUser);
+                })
+            }
+            
+            
+        }     
+        
+
+        if(v.WebPartName=="Head of the department")
+        {
+            var Contributors=v.Contributors;
+            var ContributorsId=v.ContributorsId;
+            if(ContributorsId!=null)
+            {
+                Contributors.results.forEach(function(Items){
+                    var email=Items.EMail;
+                    var userName=Items.Title;
+                    var userId=Items.Id;
+                    g_HOD.push({
+                        EMail:email,
+                        Id:userId,
+                        UserName:userName
+                    })
+                    userRecords.push(
+                        {
+                            EMail:email,
+                            WebPartName:'HOD',
+                            deptId:v.DepartmentId,
+                            Id:userId,
+                            UserName:userName
+                        }
+                    )
+                    var BindUser='';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(email);
+                    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + userId+ '"><div class="admin-th-card employeesection">';			            
+                    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+                    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +userName+ '</h3>';
+                    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + email+ '\')">' + email+ '</p></div>';
+                    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromHOD(this, \'' + email+ '\');"><i class="fa fa-times"></i></button>';			
+                    BindUser += '</div></div></div></div>';
+                    $("#headOfDepartment").append(BindUser);
+                })
+            }
+            
+            
+        }
+    })
+
+}
+
+
+function DepartmentDocuments() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        //var VisitorgID = ListCommonService.GetGroupIDByGroupName("Visitors");//Get Visitor GroupID        
+        
+        var contributorsIdArray =[];
+        g_Contributors.forEach(function(data){
+            contributorsIdArray.push(data.Id);
+        })
+        var limitedAccessIdArray =[];
+        var listCollectionArray=[];
+        var approverIdArray = new Array();
+        approverIdArray=[];
+        g_DocumentApp.forEach(function(data){
+            approverIdArray.push(data.Id);
+        })
+        var limitedAccessIdArray=[];
+        var webPartName = "Documents";
+        var ownerIdArray = [];
+        g_OtherDeptContri.forEach(function(data){
+            ownerIdArray.push(data.Id)
+        })
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+
+        BreakInheritePermissionOnDocuments(myDocumentsiteURL[0].DeptSiteUrl, webPartName, contributorsIdArray, ownerIdArray, approverIdArray);
+        CommonService(myDocumentsiteURL[0].DeptSiteUrl, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true);
+    }
+}
+
+function DepartmentDocumentAccess() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        var listCollectionArray = new Array();
+        listCollectionArray.push("DepartmentDocument_Access"); //Department based
+        var contributorsIdArray = [];
+        g_Readers.forEach(function(data){
+            contributorsIdArray.push(data.Id);
+        })
+        var limitedAccessIdArray = new Array();
+        var approverIdArray = new Array();
+        var webPartName = "DepartmentDocument_Access";
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+        //BreakInheritePermissionOnDocuments(myDocumentsiteURL, webPartName, contributorsIdArray);
+
+        CommonService(myDocumentsiteURL[0].DeptSiteUrl, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true);
+    }
+}
+function BreakInheritePermissionOnDocuments(myDocumentsiteURL, webPartName, contributorsIdArray, ownerIdArray, approverIdArray) {
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var listLibaryName = "DepartmentalDMS";
+    var endPointUrl = myDocumentsiteURL + "/_api/web/lists/getByTitle('" + listLibaryName + "')/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)";
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        dataType: 'json',
+        success: function (data)
+        {
+            AllEmployeeuser= AllEmployeeuser.filter(function (val) {
+                return (val.Department==$('#ddlDepartments').val() && val.UserId!=_spPageContextInfo.userId)
+            });
+            
+                
+            ResetAllPermission(myDocumentsiteURL);
+            
+            var fullControlUser=[];
+            arrUsersPermission=[];                             
+            g_Contributors.forEach(function(data){
+                fullControlUser.push(data.Id);
+                arrUsersPermission.push(data.Id);
+            })
+            g_HOD.forEach(function(data){
+                fullControlUser.push(data.Id);
+                arrUsersPermission.push(data.Id);
+            })
+            g_OtherDeptContri.forEach(function(data){
+                fullControlUser.push(data.Id);
+                arrUsersPermission.push(data.Id);
+            })
+            if (fullControlUser.length != 0) {
+                for (var index = 0; index < fullControlUser.length; index++) {
+                    AssignPermissionForDocuments(myDocumentsiteURL, "DepartmentalDMS", fullControlUser[index], "1073741829"); //ApprooverPermission permission for Current User 
+                    //arrContriUsers.push(fullControlUser[index]);
+                }
+            }
+            var arrReadAccess= [];
+            g_Readers.forEach(function(data){
+                arrReadAccess.push(data.Id);
+                arrUsersPermission.push(data.Id);
+            })
+            if (arrReadAccess.length != 0) {
+                for (var index = 0; index < arrReadAccess.length; index++) {
+                    AssignPermissionForDocuments(myDocumentsiteURL, "DepartmentalDMS", arrReadAccess[index], "1073741826"); //ApprooverPermission permission for Current User                         
+                }
+            }
+            AllEmployeeuser.forEach(function(data){
+                if(data.UserId!=arrUsersPermission.includes(data.UserId))
+                {
+                    AssignPermissionForDocuments(myDocumentsiteURL, "DepartmentalDMS",data.UserId, "1073741826");
+                }
+            })
+
+
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+
+}
+
+function AssignPermissionForDocuments(myDocumentsiteURL, listLibaryName, userPrincpleId, permissionLevel) {
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var webUrl = myDocumentsiteURL + "/_api/web/lists/getByTitle('" + listLibaryName + "')/roleassignments/addroleassignment(principalid=" + userPrincpleId + ",roleDefId=" + permissionLevel + ")";
+    $.ajax({
+        url: webUrl,
+        type: "POST",
+        headers: headers,
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log("User has been assigned permission .");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+function HeadOfDepartment() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        var listCollectionArray = new Array();
+        listCollectionArray.push("Head of the department"); //Department based
+        var contributorsIdArray = [];
+        
+        var limitedAccessIdArray = new Array();
+        var approverIdArray = new Array();
+        var webPartName = "Head of the department";
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);        
+        var users = [];
+        g_HOD.forEach(function(data){
+            users.push(data.Id);
+            contributorsIdArray.push(data.Id);
+            return users;
+        })
+
+        addUserToSharePointGroup(users);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true);
+        
+        
+        /*for(var i=0; i<contributorsIdArray.length;i++){
+         AssignPermissionForDocuments(myDocumentsiteURL, "DepartmentalDMS", contributorsIdArray[i], "1073741829");
+        
+        } */ 
+    
+    }
+
+}
+var AllEmployeeuser=[];
+function CheckDepartmentDocuments() {
+    AllEmployeeuser = [];
+    var RestQuery;
+    var companyId = Logged_CompanyId;
+    RestQuery = "?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID &$expand=LogonName,Department,Company &$filter= Status eq 'Active' and Company/ID eq '" + companyId + "'&$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", RestQuery)).done(function (Employees) {
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+                AllEmployeeuser.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'Department': Employees.results[i].Department.ID
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    AdminWarning = "";
+    //#region check HOD permission  
+        var users=[];
+        users=g_HOD
+        if(users.length>0)
+        {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase();
+                });
+        
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+        
+            }
+            if (IscheckMessage) {
+                AdminWarning += " is not an active user  .\n Can not be assigned as Head of the Department.\n ";
+                IscheckMessage = false;
+            }
+        }
+        else
+        {
+            alert('Please enter Head of the Department name.');
+            waitingDialog.hide();
+            return false;
+        }  
+
+
+    //#endregion
+    var departmentId = $('#ddlDepartments').val();
+    var department = parseInt(departmentId);
+    if(IsDMSModules==true)
+    {
+        
+        var users=[];    
+        users=g_Contributors;
+        if (users.length > 0) {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user, cannot be assigned as Contributors. \n ";
+                IscheckMessage = false;
+            }
+
+        }
+        else
+        {
+            //if($('#toggleDocument').hasClass('active')==false)
+            //{
+                alert('Please enter Document Contributor name.');
+                waitingDialog.hide();
+                return false;
+
+            //}        
+        }
+
+
+    
+        var users = g_OtherDeptContri;
+        if(users.length>0)
+        {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department != department;
+                });
+                if (arrSubVisaLetters < 1) {
+        
+                    AdminWarning += users[j].UserName + ",";
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+        
+            }
+            if (IscheckMessage) {
+                AdminWarning += "are departmental user, cannot be assigned as Contributors from Other Dept.\n ";
+                IscheckMessage = false;
+            }
+        }
+    else
+    {
+        /*alert('Please enter Contributors from Other Dept name.');
+        waitingDialog.hide();
+        return false;*/
+    }
+        
+        var users = g_Readers;
+        if(users.length>0)
+        {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department != department;
+                });
+        
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+        
+            }
+        
+            if (IscheckMessage) {
+                AdminWarning += " is departmental user, can not assigned as reader from other department.\n ";
+                IscheckMessage = false;
+            }
+
+        }
+        else
+        {
+            /*alert('Please enter Readers from Other Dept name.');
+            waitingDialog.hide();
+            return false;*/
+        }   
+        
+    }
+    if(IsIntranetModules==true)
+    {    
+        users =g_NewInitiative;
+        var active = $("#toggleInitiative").hasClass("active");
+        if (!active) {
+            var WebpartsInitiativeScope = "SELECTIVE"
+        }
+        else {
+            var WebpartsInitiativeScope = "EVERYONE"
+        }
+
+        if (users.length > 0 || WebpartsInitiativeScope == "EVERYONE") {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user,\n Can not be assigned as New Initiative.\n ";
+                IscheckMessage = false;
+            }
+        }
+        else {
+
+            alert('Please enter New Initiative Contributor name.');
+            waitingDialog.hide();
+            return false;
+        }
+        
+        var users =g_Suggesion;
+        var active = $("#toggleSuggestion").hasClass("active");
+        if (!active) {
+            var WebpartsActivityScope = "SELECTIVE"
+        }
+        if (active) {
+            var WebpartsActivityScope = "EVERYONE"
+        }
+
+        if (users.length > 0 || WebpartsActivityScope == "EVERYONE") {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user,\n Can not be assigned as Suggesion Contributors.\n ";
+                IscheckMessage = false;
+            }
+        } else {
+
+            alert('Please enter Suggesion Contributor name.');
+            waitingDialog.hide();
+            return false;
+        }
+
+
+        
+        var users =g_Activity
+        var active = $("#toggleActivity").hasClass("active");
+        if (!active) {
+            var WebpartsActivityScope = "SELECTIVE"
+        }
+        if (active) {
+            var WebpartsActivityScope = "EVERYONE"
+        }
+
+        if (users.length > 0 || WebpartsActivityScope == "EVERYONE") {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user,\n Can not be assigned as Activity Contributors.\n ";
+                IscheckMessage = false;
+            }
+        } else {
+
+            alert('Please enter Activity Contributor name.');
+            waitingDialog.hide();
+            return false;
+        }
+
+        var users = g_Knowledge
+        if (users.length > 0) {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user,\n Can not be assigned as Knowledge.\n";
+                IscheckMessage = false;
+            }
+        }
+        else {
+
+            if($("#toggleKnowledge").hasClass("active")==false)
+            {
+                alert('Please enter Knowledge Contributor  name.');
+                waitingDialog.hide();
+                return false;
+            }
+
+            
+        }    
+        var users =g_DocumentApp;
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail.toLocaleLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += "is not an active user \n Can not be assigned as Document Approvers. ";
+            IscheckMessage = false;
+        }
+        
+
+        var users =SuggestionApprover
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail.toLocaleLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += "is not an active user \n Can not be assigned as Suggestion Approvers. ";
+            IscheckMessage = false;
+        }
+
+        
+        var users =g_ActivityApprover
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase()
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += "is not an active user \n Can not be assigned as  Activity Approvers. ";
+            IscheckMessage = false;
+        }
+
+        var users =g_NewApprover;
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += "is not an active user \n Can not be assigned as  NewInitiative Approvers. ";
+            IscheckMessage = false;
+        }
+        var users =KnowledgeApprover;
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += "is not an active user \n Can not be assigned as  Knowledge Approvers. ";
+            IscheckMessage = false;
+        }
+    }
+    
+/*------------------Departmet Project admin---------------*/
+    if(IsTaskModules==true)
+    {
+        var users =g_DepartmentalProject;
+        if (users.length > 0) {
+            for (var j = 0; j < users.length; j++) {
+                var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                    return filterData.EMail.toLocaleLowerCase() == users[j].EMail.toLocaleLowerCase() && filterData.Department == department;
+                });
+
+                if (arrSubVisaLetters < 1) {
+                    AdminWarning += users[j].UserName + ",";
+                    //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                    IsAdminOrNot = false;
+                    IscheckMessage = true;
+                }
+
+            }
+
+            if (IscheckMessage) {
+                AdminWarning += " are not departmental user,\n Can not be assigned as Project Admin.\n";
+                IscheckMessage = false;
+            }
+        }
+        else {
+
+            alert('Please enter departmental Project admin name.');
+            waitingDialog.hide();
+            return false;
+        }
+    }
+
+
+
+    return IsAdminOrNot
+
+}
+
+
+//Assign read permisson to those users which are removed from people pickre at the time of submission 25/04/2022
+function BreakPermission(userPrincpleId,myDocumentsiteURL ) {
+    var dmsSiteURL = myDocumentsiteURL;
+    var headers = {
+        'X-RequestDigest': $('#__REQUESTDIGEST').val(),
+        'X-HTTP-Method': 'DELETE'
+    }
+    var endPointUrl = dmsSiteURL + "/_api/web/lists/getByTitle('DepartmentalDMS')/roleassignments/getbyprincipalid(" + userPrincpleId + ")";
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        //   dataType: 'json',
+        success: function (data) {
+            console.log("Permission removed.");
+        },
+        error: function (error) {
+            console.log(userPrincpleId+ ' not found');
+        }
+    });
+}
+
+function ResetAllPermission(myDocumentsiteURL) {
+     debugger;
+      var dmsSiteURL =myDocumentsiteURL;
+      var siteurl=  dmsSiteURL  + "/_api/web/lists/getbytitle('DepartmentalDMS')/RoleAssignments?$top=5000&$expand=Member,RoleDefinitionBindings,User";
+      //var siteurl=  "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/TITAN/IT/_api/web/lists/getbytitle('DepartmentalDMS')/RoleAssignments?$expand=Member,RoleDefinitionBindings,User";
+
+   $.ajax({
+        url: siteurl,
+        method: "GET",
+        async: false,
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: function (data)
+        {
+            var items = data.d.results;
+            for (var i = 0; i < items.length; i++)
+            {
+            if(items[i].Member.UserId!=null)
+            {
+                 userpricipalid= items[i].PrincipalId;
+               BreakPermission(userpricipalid,myDocumentsiteURL);
+            }
+               
+            }
+        },
+        error: function (errorMessage) {
+            console.log('error not found users');
+            Permissionloder.close();
+
+        }
+    });
+}
+
+function Openmngsiteadmins()
+{
+        //$('#Openmngsiteadmin').modal('show');
+        $('#genericPopup').append($('<iframe id="myIframeTeam"  title="Teams"></iframe>'));
+        $('#myIframeTeam').attr('src', _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/mngsiteadmin.aspx?Openmngsiteadmin");
+        //popup("Site Collection Administration");
+
+}
+function popup(popuptitle) {
+    $('#genericPopup').dialog({
+        width: 850,
+        height: 600,
+        modal: true,
+        class: 'popup',
+        title: popuptitle,
+        overlay: {
+            backgroundColor: "#000",
+            opacity: 0.9
+        }
+    });
+    $(".ui-dialog").addClass("ui-dialog_costom");
+    $(".ui-widget-overlay").addClass("ui-dialog_cost");
+
+}
+
+
+/*---------------------Search user-----------------------*/
+
+function onChangeSearchUser(HTMLID, PplPickerId,records)
+{
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo)
+    {
+        
+        emptyWebPartBox();
+        if(userInfo.length >0)
+        {
+            userRecords.forEach(element => {
+                var tempEmail=element.EMail;
+                var tempUserId=element.Id;
+                var tempUserName=element.UserName;
+                var WebPartName=element.WebPartName
+                if(tempEmail.toLowerCase()==userInfo[0].EntityData.Email.toLowerCase())
+                {
+                    if(element.WebPartName=='Tech Admin')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'techAdminUser',WebPartName);
+                    }
+                    if(element.WebPartName=='Hr Admin')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'hrAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='Process Admin')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'processAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='Project Admin')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'projectAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='ClientMaster')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'CustomerManagementAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='DeptContri')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'deptContributors',WebPartName);
+                    }
+                    if(element.WebPartName=='OtherDeptContri')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'otherDeptContributors',WebPartName);
+                    }
+                    if(element.WebPartName=='HOD')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'headOfDepartment',WebPartName);
+                    }
+                    
+                    if(element.WebPartName=='Announcements')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'announcementsAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='announcementApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'announcementApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Banners')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'informationAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='BannersApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'informationApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Emergency Annoucements')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'alertAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='AlertApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'AlertApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Events')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'Events',WebPartName);
+                    }
+                    if(element.WebPartName=='EventApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'EventApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Recognition')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'recognitionAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='RecoginitionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'RecoginitionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Polls')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'surveyAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='SurveyApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SurveyApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='General')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ExperienceAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='ExperienceApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ExperienceApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='QuestionAnswer')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'questionsAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='QuestionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'QuestionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Media Gallery')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'magazineAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='Media')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'mediaGalleryAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='DocumentApprovers')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'allApprovers',WebPartName);
+                    }
+                    if(element.WebPartName=='Project')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'projectAdminDertmental',WebPartName);
+                    }
+                    if(element.WebPartName=='New Initiative')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'NewInitiativeAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='NewApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'initiativeApproval',WebPartName);
+                    }
+                    if(element.WebPartName=='Suggesion')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SuggestionAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='SuggestionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SuggestionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Activity')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ActivityAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='ActivityApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ActivityApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Knowledge')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'KnowledgeAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='KnowledgeApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'KnowledgeApprover',WebPartName);
+                    }
+                    
+                    
+
+
+                }
+            });
+
+        }
+        else
+        {
+            
+            userRecords.forEach(element => {
+                var tempEmail=element.EMail;
+                var tempUserId=element.Id;
+                var tempUserName=element.UserName;
+                var WebPartName=element.WebPartName;
+                if(element.WebPartName=='Tech Admin')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'techAdminUser',WebPartName);
+                }
+                if(element.WebPartName=='Hr Admin')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'hrAdmin',WebPartName);
+                }
+                if(element.WebPartName=='Process Admin')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'processAdmin',WebPartName);
+                }
+                if(element.WebPartName=='DeptContri')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'deptContributors',WebPartName);
+                }
+                if(element.WebPartName=='DocumentApprovers')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'allApprovers',WebPartName);
+                }
+                if(element.WebPartName=='OtherDeptContri')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'otherDeptContributors',WebPartName);
+                }
+                if(element.WebPartName=='HOD')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'headOfDepartment',WebPartName);
+                }
+                if(element.WebPartName=='Redear')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'readerOtherDept',WebPartName);
+                }
+                if(element.WebPartName=='Project Admin')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'projectAdmin',WebPartName);
+                }
+                if(element.WebPartName=='ClientMaster')
+                {
+                    bindSearchUsers(tempEmail,tempUserId,tempUserName,'CustomerManagementAdmin',WebPartName);
+                }
+                if(element.WebPartName=='Announcements')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'announcementsAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='announcementApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'announcementApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Banners')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'informationAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='BannersApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'informationApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Emergency Annoucements',WebPartName)
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'alertAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='AlertApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'AlertApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Events')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'Events',WebPartName);
+                    }
+                    if(element.WebPartName=='EventApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'EventApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Recognition')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'recognitionAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='RecoginitionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'RecoginitionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Polls')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'surveyAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='SurveyApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SurveyApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='General')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ExperienceAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='ExperienceApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ExperienceApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='QuestionAnswer')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'questionsAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='QuestionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'QuestionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Media Gallery')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'magazineAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='Media')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'mediaGalleryAdmin',WebPartName);
+                    }
+
+                    if(element.WebPartName=='Project')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'projectAdminDertmental',WebPartName);
+                    }
+                    if(element.WebPartName=='New Initiative')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'NewInitiativeAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='NewApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'initiativeApproval',WebPartName);
+                    }
+                    if(element.WebPartName=='Suggesion')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SuggestionAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='SuggestionApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'SuggestionApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Activity')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ActivityAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='ActivityApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'ActivityApprover',WebPartName);
+                    }
+                    if(element.WebPartName=='Knowledge')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'KnowledgeAdmin',WebPartName);
+                    }
+                    if(element.WebPartName=='KnowledgeApprover')
+                    {
+                        bindSearchUsers(tempEmail,tempUserId,tempUserName,'KnowledgeApprover',WebPartName);
+                    }    
+            });
+        }
+    }
+}
+
+function bindSearchUsers(tempEmail,tempUserId,tempUserName,divId,webPartName)
+{
+    var BindUser = '';
+    attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+    BindUser += '<div class="col-md-6 col-sm-6 col-xs-12 parentremove User' + tempUserId + '"><div class="admin-th-card employeesection">';                    
+    BindUser += '<div class="admin-th-card-head empoyeeimg"><img src="' + attachment + '" alt=""></div>';
+    BindUser += '<div class="admin-th-card-body employeeinfo"><div class="admin-th-card-body-info text-ellipsis"><h3 class="admin-th-name text-ellipsis">' +tempUserName+ '</h3>';
+    BindUser += '<p class="admin-th-email text-ellipsis" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</p></div>';
+    BindUser += '<div class="text-right"><button class="btn remove-group-btn remove-btn close close-round" onclick="removeUserFromsearch(this, \'' + tempEmail + '\',\'' + webPartName+ '\');"><i class="fa fa-times"></i></button>';
+    BindUser += '</div></div></div></div>';
+    $("#"+divId).append(BindUser);
+}
+
+function GetCompanySiteURL (ListName, Query)
+{
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data)
+        {
+            dfd.resolve(data.d.results);
+            //   console.log();
+        },
+        error: function (error) {
+            //alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+};
+
+/*--------------Toggle button functionality------------------------*/
+
+var IsActiveNews = true;
+function ChrckToggleNews() {
+    if (IsActiveNews) {
+        IsActiveNews = false;
+        BannersScope = "EVERYONE";        
+        //$("#BannersContributors_Company").hide();
+    } else {
+        
+        IsActiveNews = true;
+        BannersScope = "SELECTIVE";
+    }
+    $("#informationBox").toggleClass("d-none");
+}
+var IsActiveMediaGallery = true;
+function ChrcktoggleMediaGallery() {
+    if (IsActiveMediaGallery) {
+        IsActiveMediaGallery = false;
+        MediaScope = "EVERYONE";
+        
+    } else {        
+        IsActiveMediaGallery = true;
+        MediaScope = "SELECTIVE";
+    }
+    $("#mediaGalleryBox").toggleClass("d-none");
+}
+var IsMagazineNews = true;
+
+function ChrcktoggleMagazine() {
+    if (IsMagazineNews) {
+        IsMagazineNews = false;
+        MediaGalleryScope = "EVERYONE";        
+    } else {        
+        IsMagazineNews = true;
+        MediaGalleryScope = "SELECTIVE";
+    }
+    $("#magazineBox").toggleClass("d-none");
+}
+var IsGeneralAnnouncement = true;
+function ChrckGeneralAnnouncement() {
+    if (IsGeneralAnnouncement) {
+        IsGeneralAnnouncement = false;
+        AnnouncementScope = "EVERYONE";        
+    } else {
+        AnnouncementScope = "SELECTIVE";        
+        IsGeneralAnnouncement = true;
+    }
+    $("#announcementsBox").toggleClass("d-none");
+
+}
+var IsEmergencyAnnouncement = true;
+function ChrckEmergencyAnnouncement() {
+    if (IsEmergencyAnnouncement) {
+        IsEmergencyAnnouncement = false;
+        EmergencyAnnouncementScope = "EVERYONE";      
+
+    } else {
+        EmergencyAnnouncementScope = "SELECTIVE";        
+        IsEmergencyAnnouncement = true;
+    }
+    $("#alertBox").toggleClass("d-none");
+}
+var IsEvents = true;
+function ChrckEvents() {
+    if (IsEvents) {
+        IsEvents = false;
+        WebpartsEventsScope = "EVERYONE";  
+    } 
+    else {       
+        IsEvents = true;
+        WebpartsEventsScope = "SELECTIVE";
+    }
+    $("#eventBox").toggleClass("d-none");
+
+}
+var IsPolls = true;
+function ChrckPolls() {
+    if (IsPolls) {
+        IsPolls = false;
+        WebpartsPollsScope = "EVERYONE";
+    } 
+    else {        
+        IsPolls = true;
+        WebpartsPollsScope = "SELECTIVE";
+
+    }
+    $("#SurveyBox").toggleClass("d-none");
+
+}
+var IsRecognition = true;
+function ChrckRecognition() {
+    if (IsRecognition) {
+        IsRecognition = false;
+        WebpartsRecognitionScope = "EVERYONE";        
+    } else {       
+        IsRecognition = true;
+        WebpartsRecognitionScope = "SELECTIVE";
+    }
+    $("#rocognitionBox").toggleClass("d-none");
+}
+var IsExperience = true;
+function ChrckExperience() {
+    if (IsExperience) {
+        IsExperience = false;
+        WebpartsExperienceScope = "EVERYONE";        
+    } else {        
+        IsExperience = true;
+        WebpartsExperienceScope = "SELECTIVE";
+    }
+    $("#experienceBox").toggleClass("d-none");
+
+}
+var IsQuestionAnswer = true;
+function ChrckQuestionAnswer() {
+    if (IsQuestionAnswer) {
+        IsQuestionAnswer = false;        
+        WebpartsQuestionAnswerScope = "EVERYONE";     
+
+    } else {
+        IsQuestionAnswer = true;
+        WebpartsQuestionAnswerScope = "SELECTIVE";
+    }
+    $("#questionBox").toggleClass("d-none");
+
+}
+
+var WebpartsSuggestionScope='SRLECTIVE';
+//Toggle button functionality for Departments
+function ChrckInitiative() {
+    /*var active = $("#toggleInitiative").hasClass("active");
+    if (active==true) {
+        WebpartsInitiativeScope = "EVERYONE";
+        $("#NewInitiativeBox").addClass("d-none");
+    }  else  {       
+        WebpartsInitiativeScope = "SRLECTIVE";
+        $("#NewInitiativeBox").removeClass("d-none");
+    }*/
+    $("#NewInitiativeBox").toggleClass("d-none");
+}
+function ChrckSuggestion() {
+    /*var active = $("#toggleSuggestion").hasClass("active");
+    if (active==true) {
+        WebpartsSuggestionScope = "EVERYONE";
+        //$("#toggleSuggestion").addClass("active");
+        $("#SuggestionBox").addClass("d-none");
+    }  else  {       
+        WebpartsSuggestionScope = "SRLECTIVE";
+        $("#SuggestionBox").removeClass("d-none");
+    }*/
+    $("#SuggestionBox").toggleClass("d-none");
+}
+function ChrckActivity() {
+    /*var active = $("#toggleActivity").hasClass("active");
+    if (active==true) {
+        WebpartsActivityScope = "EVERYONE";
+        $("#ActivityBox").addClass("d-none");
+        //$("#toggleActivity").addClass("active");        
+    } else {
+        WebpartsActivityScope = "SRLECTIVE";
+        $("#ActivityBox").removeClass("d-none");
+    }*/
+    $("#ActivityBox").toggleClass("d-none");
+}
+var WebpartsKnowledgeScope='SRLECTIVE'
+function ChrckKnowledge() {
+    /*var active = $("#toggleKnowledge").hasClass("active");
+    if (active==true) {
+        WebpartsKnowledgeScope = "EVERYONE";
+        $("#KnowledgeBox").addClass("d-none");
+        //$("#toggleKnowledge").addClass("active");        
+    } else {
+        WebpartsKnowledgeScope = "SRLECTIVE";
+        $("#KnowledgeBox").removeClass("d-none");
+    }*/
+    $("#KnowledgeBox").toggleClass("d-none");
+}
+var WebpartsDocumentScope='SRLECTIVE';
+function ChrckDocument() {    
+    $("#documentBox").toggleClass("d-none");    
+}
+var g_DocumentApp=[];
+function commonFormSubmit()
+{
+    $('#btnSubmit_Company').click(function () {
+        $.ajax({
+            cache: false,
+            beforeSend: function() {
+            $("#overlaysearch").fadeIn();
+            },
+            success: function(data) {
+                if (CheckWebparts()) {
+                    if ($("#tglinformationApprover").hasClass("active") == false) {
+                        if (BannersApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter approver of Information web-part name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+                    if ($("#tglannouncementApprover").hasClass("active") == false) {
+                        if (announcementApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Announcements approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+                    if ($("#tglAlertApprover").hasClass("active") == false) {
+                        if (AlertApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Alert approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }     
+                    
+                    if ($("#tglEventApprover").hasClass("active") == false) {
+                        if (EventApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Event approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+
+
+                    if ($('#tglSurveyApprover').hasClass("active") == false) {                
+                        if (SurveyApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Survey approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+                    if ($('#tglRecoginitionApprover').hasClass("active") == false) {                
+                        if (RecoginitionApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Recognition approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+                    if ($('#tglExperienceApprover').hasClass("active") == false) {                
+                        if (ExperienceApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Experience approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }
+                    if ($('#tglQuestionApprover').hasClass("active") == false) {                
+                        if (QuestionApprover.length > 0) {
+
+                        } else {
+                            alert('Please enter Questions & Answers approver name.');
+                            waitingDialog.hide();
+                            $('#loader_showing').removeClass('shownow');
+                            return false;
+                        }
+                    }   
+
+                    $.when(CompanyMediaBanner(),CompanyGeneralAnnouncement(), CompanyEmergencyAnnouncement(), CompanyMediaGallery(), CompanyMedia(),CompanyWebpartsPolls(), CompanyWebpartsExperience(), CompanyWebpartsQuestionAnswer(), CompanyWebpartsRecognition(), CompanyWebpartsEvents()).done(function (MainExamListItemTemp) {
+                        alert("Permission assigned successfully .");
+                        $('#submitnow').modal('hide');
+                        //waitingDialog.hide();
+                        //$('#loader_showing').removeClass('shownow');
+                    });
+
+                } else {
+                    if (IsAdminOrNot == false) {
+                        alert(AdminWarning);
+                    }
+                    IsAdminOrNot = true;
+                }            
+                $("#overlaysearch").fadeOut();
+            }
+        });        
+    });    
+
+}
+var AdminWarning='';
+function CheckWebparts() {
+    $('#loader_showing').addClass('shownow');
+    var AllEmployeeuser = [];
+    var RestQuery;
+    var companyId = titanForWork.getQueryStringParameter("CompanyId");
+    RestQuery = "?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID &$expand=LogonName,Department,Company &$filter= Status eq 'Active' and Company/ID eq '" + companyId + "'   &$top=5000";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", RestQuery)).done(function (Employees) {
+
+
+        try {
+            for (var i = 0; i < Employees.results.length; i++) {
+                AllEmployeeuser.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'Department': Employees.results[i].Department.ID,
+                    'UserEmail':Employees.results[i].Email
+                })
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    AdminWarning = "";
+    
+    var users =g_eventAdminArr;
+    if (users.length > 0 || WebpartsEventsScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Events Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Events Contributor name.');
+        waitingDialog.hide();
+        return false;
+
+
+    }    
+    var users = EventApprover
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as HR Admin \n");
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as Events Approvers. \n ";
+        IscheckMessage = false;
+    }
+
+    
+    var users =g_GeneralArr
+    if (users.length > 0 || WebpartsExperienceScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Experience Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Experience Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+    var users =ExperienceApprover
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].Email || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as HR Admin \n");
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as Experience Approvers. \n ";
+        IscheckMessage = false;
+    }
+
+
+    
+    var users = g_QuestionAnswerArr
+    if (users.length > 0 || WebpartsQuestionAnswerScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();;
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as QuestionAnswer Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter QuestionAnswer Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+    var users = QuestionApprover;
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();;
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as QuestionAnswer Approvers. \n ";
+        IscheckMessage = false;
+    }
+
+    var users = g_PollsArr
+    if (users.length > 0 || WebpartsPollsScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();;
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as survey Contributors. ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter survey Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+
+    var users =SurveyApprover
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();;
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as HR Admin \n");
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as survey Approvers. \n ";
+        IscheckMessage = false;
+    }
+
+    var users = g_RecognitionArr
+    if (users.length > 0 || WebpartsRecognitionScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();;
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Project Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Recognition Contributors. ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Recognition Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+
+    var users = RecoginitionApprover
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as HR Admin \n");
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as Recognition Approvers. \n ";
+        IscheckMessage = false;
+    }
+    var users =g_informationArr
+    if (users.length > 0 || BannersScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                //alert(users[j].DisplayText + "   is not an active user.\n Can not be assigned as Tech Admin ");
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Information web-part Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Contributor of Information web-part');
+        waitingDialog.hide();
+        return false;
+
+
+    }
+    
+    var users =BannersApprover
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as information approver \n ";
+        IscheckMessage = false;
+    }
+    
+    
+    var users = g_MagazineArr
+    if (users.length > 0 || MediaGalleryScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserEmail + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Magazine Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Magazine Contributor name.');
+        waitingDialog.hide();
+        return false;
+    }
+
+    var users = g_MediaGalleryArr
+    if (users.length > 0 || MediaScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Media Gallery Contributors. ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Media Gallery Contributor name.');
+        waitingDialog.hide();
+        return false;
+
+
+    }    
+    var users =g_AlertArr
+    if (users.length > 0 || EmergencyAnnouncementScope == "EVERYONE") {
+
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as Emergency Announcement. \n ";
+            IscheckMessage = false;
+        }
+
+    }
+    else {
+
+        alert('Please enter Alert Contributor name.');
+        waitingDialog.hide();
+        return false;
+
+    }
+
+    
+    var users =g_AnnouncementsArr
+    if (users.length > 0 || AnnouncementScope == "EVERYONE") {
+        for (var j = 0; j < users.length; j++) {
+            var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+                return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+            });
+
+            if (arrSubVisaLetters < 1) {
+                AdminWarning += users[j].UserName + ",";
+                IsAdminOrNot = false;
+                IscheckMessage = true;
+            }
+
+        }
+        if (IscheckMessage) {
+            AdminWarning += " is not an active user.\n Can not be assigned as General Announcement Contributors. \n ";
+            IscheckMessage = false;
+        }
+    }
+    else {
+
+        alert('Please enter Announcement Contributor name.');
+        waitingDialog.hide();
+        return false;
+
+
+    }
+
+    var users = announcementApprover;
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as General Announcement Approvers. ";
+        IscheckMessage = false;
+    }
+    var users = AlertApprover;
+    for (var j = 0; j < users.length; j++) {
+        var arrSubVisaLetters = AllEmployeeuser.filter(function (filterData) {
+            return filterData.EMail == users[j].EMail || filterData.UserEmail.toLowerCase()==users[j].EMail.toLowerCase();
+        });
+
+        if (arrSubVisaLetters < 1) {
+            AdminWarning += users[j].UserName + ",";
+            IsAdminOrNot = false;
+            IscheckMessage = true;
+        }
+
+    }
+    if (IscheckMessage) {
+        AdminWarning += " is not an active user.\n Can not be assigned as Alert Approvers. ";
+        IscheckMessage = false;
+    }
+
+
+
+    return IsAdminOrNot
+
+}
+
+
+/**********************Add Intranet web part************************ */
+
+var BannersScope = "SELECTIVE", MediaGalleryScope = "SELECTIVE", MediaScope = "SELECTIVE", EmergencyAnnouncementScope = "SELECTIVE", AnnouncementScope = "SELECTIVE", WebpartsPollsScope = "SELECTIVE", WebpartsRecognitionScope = "SELECTIVE", WebpartsEventsScope = "SELECTIVE", WebpartsExperienceScope = "SELECTIVE", WebpartsQuestionAnswerScope = "SELECTIVE";
+
+function CompanyMediaBanner() {
+
+    var listCollectionArray = new Array();
+    listCollectionArray.push("BannerImages"); //Company based
+    var contributorsIdArray =[]
+    g_informationArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray = []
+    if ($("#tglinformationApprover").hasClass("active") == false) {
+        var approverIdArray =[];
+        BannersApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+        var approverIdArray = new Array();
+    }
+    var webPartName = "Banners";
+    var departmentId = "";
+    var myDocumentsiteURL =''// GetSiteURL("");
+    var ownerIdArray = [];
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, BannersScope);
+}
+
+
+
+
+function CompanyMediaGallery() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("MediaGallery"); //Company based
+    var contributorsIdArray =[];
+    g_MagazineArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray =[]
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    var webPartName = "Media Gallery";
+    var departmentId = "";
+    var myDocumentsiteURL = ''//GetSiteURL("");
+    var ownerIdArray = [];
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, MediaGalleryScope);
+}
+function CompanyMedia() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Media"); //Company based
+    var contributorsIdArray = [];
+    g_MediaGalleryArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray = []//ListCommonService.getMultiPeoplePickerUserInfo("MediaLimitedAccess_Company");
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    var webPartName = "Media";
+    var departmentId = "";
+    var myDocumentsiteURL = GetSiteURL("");
+    var ownerIdArray = [];
+
+
+
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, MediaScope);
+
+    if (MediaScope == "SELECTIVE") {
+        ResetBreakInheriteOnMediaGallary(myDocumentsiteURL, "MediaGallery")
+        BreakInheritePermissionOnMediaGallary(myDocumentsiteURL, contributorsIdArray, MediaScope);
+
+    }
+    else {
+        ResetBreakInheriteOnMediaGallary(myDocumentsiteURL, "MediaGallery")
+    }
+
+}
+
+
+function CompanyGeneralAnnouncement() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Announcements"); //Company based
+    var contributorsIdArray =[];
+    g_AnnouncementsArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var approverIdArray=[];
+    var limitedAccessIdArray =[]
+    var required=$("#tglannouncementApprover").hasClass("active");
+    if (required== false) {
+        announcementApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+          approverIdArray = new Array();
+    }
+    var webPartName = "Announcements";
+    var departmentId = "";
+    var myDocumentsiteURL ='';
+    var ownerIdArray = [];
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, AnnouncementScope);
+}
+
+function CompanyEmergencyAnnouncement() {
+
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Emergency Announcement"); //For root site
+    var contributorsIdArray = [];
+    g_AlertArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+
+    var limitedAccessIdArray = [];
+    if ($("#tglAlertApprover").hasClass("active") == false) {
+        var approverIdArray =[];
+        AlertApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+        var approverIdArray = new Array();
+    }
+    var webPartName = "Emergency Annoucements";
+    /*var contributorsId = ListCommonService.getMultiPeoplePickerUserInfo("GeneralAnnouncementContributors_Company");
+
+    var webPartName2 = "Announcements";
+    for (var j = 0; j < contributorsIdArray.length; j++) {
+
+        var arrSubVisaLetters = contributorsId.filter(function (filterData) {
+            return filterData == contributorsIdArray[j];
+
+        });
+
+        if (arrSubVisaLetters < 1) {
+            contributorsId.push(contributorsIdArray[j]);
+        }
+    }
+    var listCollectionArray2 = new Array();
+    listCollectionArray2.push("Announcements");*/
+    var departmentId = "";
+    var ownerIdArray = [];
+    var myDocumentsiteURL = _spPageContextInfo.webAbsoluteUrl;
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, EmergencyAnnouncementScope);
+    //CommonService(myDocumentsiteURL, webPartName2, departmentId, listCollectionArray2, approverIdArray, limitedAccessIdArray, contributorsId, ownerIdArray, true, AnnouncementScope);
+
+}
+function CompanyWebpartsPolls() {
+
+    var listCollectionArray = new Array();
+    listCollectionArray.push("MainPollsList"); //Admin Company based
+    listCollectionArray.push("PollsDetails"); //Admin company based
+    var contributorsIdArray =[];
+    g_PollsArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray = []//ListCommonService.getMultiPeoplePickerUserInfo("PollsLimitedAccess_Company");
+    // var approverIdArray = new Array(); // ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    if ($("#tglSurveyApprover").hasClass("active") == false) {
+        var approverIdArray =[];
+        SurveyApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+        var approverIdArray = new Array();
+    }
+
+    var webPartName = "Polls";
+    var departmentId = "";
+    var myDocumentsiteURL =''// GetSiteURL("");
+    var ownerIdArray = [];
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsPollsScope);
+}
+
+function CompanyWebpartsRecognition() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Recognition"); //Company based
+    var contributorsIdArray =[];
+    g_RecognitionArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray =[]// ListCommonService.getMultiPeoplePickerUserInfo("RecognitionLimitedAccess_Company");
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    if ($("#tglRecoginitionApprover").hasClass("active") == false) {
+        RecoginitionApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+        var approverIdArray = new Array();
+    }
+
+    var webPartName = "Recognition";
+    var departmentId = "";
+    var ownerIdArray = [];
+    var myDocumentsiteURL = GetSiteURL("");
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsRecognitionScope);
+}
+
+function CompanyWebpartsEvents() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("Event"); //Company based
+    var contributorsIdArray =[]
+    g_eventAdminArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray = []//ListCommonService.getMultiPeoplePickerUserInfo("EventsLimitedAccess_Company");
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    if ($("#tglEventApprover").hasClass("active") == false) {
+        EventApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+        var approverIdArray = new Array();
+    }
+
+    var webPartName = "Events";
+    var departmentId = "";
+    var ownerIdArray = [];
+    var myDocumentsiteURL = GetSiteURL("");
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsEventsScope);
+}
+function CompanyWebpartsExperience() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("General"); //Company based
+    var contributorsIdArray =[];
+    g_GeneralArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray = new Array();
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    if ( $("#tglExperienceApprover").hasClass("active")== false) {
+         ExperienceApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+         approverIdArray = new Array();
+    }
+
+    var webPartName = "General";
+    var departmentId = "";
+    var ownerIdArray = [];
+    var myDocumentsiteURL = GetSiteURL("");
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsExperienceScope);
+}
+function CompanyWebpartsQuestionAnswer() {
+    var listCollectionArray = new Array();
+    listCollectionArray.push("QuestionAnswer"); //Company based
+    var contributorsIdArray =[];
+    g_QuestionAnswerArr.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+    })
+    var limitedAccessIdArray =new Array();
+    var approverIdArray = new Array(); //ListCommonService.getMultiPeoplePickerUserInfo("TechAdmin_Company");
+    if ($("#tglQuestionApprover").hasClass("active") == false) {
+        QuestionApprover.forEach(function(data){
+            approverIdArray.push(data.Id)
+        })
+    } else {
+           approverIdArray = new Array();
+    }
+
+    var webPartName = "QuestionAnswer";
+    var departmentId = "";
+    var ownerIdArray = [];
+    var myDocumentsiteURL = GetSiteURL("");
+    CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsQuestionAnswerScope);
+
+}
+
+function ResetBreakInheriteOnMediaGallary(myDocumentsiteURL, dmsLibraryName) {
+
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var endPointUrl = myDocumentsiteURL + "/_api/web/lists/getByTitle('" + dmsLibraryName + "')/ResetRoleInheritance()";
+    //  var endPointUrl = myDocumentsiteURL + "_api/web/lists/getByTitle('Documents')/breakroleinheritance(copyRoleAssignments=true, clearSubscopes=true)"; 
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        dataType: 'json',
+        success: function (data) {
+            console.log("Success");
+        },
+
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+
+}function BreakInheritePermissionOnMediaGallary(myDocumentsiteURL, contributorsIdArray, MediaScope) {
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var endPointUrl = myDocumentsiteURL + "/_api/web/lists/getByTitle('MediaGallery')/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)";
+
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        dataType: 'json',
+        success: function (data) {
+            console.log("BreakInherite");
+
+
+            if (contributorsIdArray != null) {
+                for (var j = 0; j < contributorsIdArray.length; j++) {
+                    var principleid = contributorsIdArray[j];
+                    AssignPermissiononOnMediaLibrary(myDocumentsiteURL, principleid, "1073741827");
+
+                }
+            }
+
+            //  var EverOneGroupId= 14;
+            $.when(getTargetGroupId()).done(function (response) {
+                var EverOneGroupId = groupIdofEveryone;
+                if (EverOneGroupId != null || EverOneGroupId != '') {
+                    AssignPermissiononOnMediaLibrary(myDocumentsiteURL, EverOneGroupId, "1073741826");
+                }
+            });
+
+
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+
+
+        }
+    });
+
+
+
+}
+var groupIdofEveryone = ''
+function getTargetGroupId() {
+    var siteurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/siteusers?$filter=PrincipalType eq 4 and Title eq 'Everyone'";
+
+    $.ajax({
+        url: siteurl,
+        type: 'GET',
+        headers: { 'accept': 'application/json;odata=verbose' },
+        async: false,
+        success: function (data, status, xhr) {
+            groupIdofEveryone = data.d.results[0].Id;
+            return groupIdofEveryone;
+        },
+        error: function (data, status, error) {
+            console.log(data.responseJSON.error);
+        }
+
+    });
+}
+
+
+function AssignPermissiononOnMediaLibrary(myDocumentsiteURL, userPrincpleId, permissionLevel) {
+
+
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var webUrl = myDocumentsiteURL + "/_api/web/lists/getByTitle('MediaGallery')/roleassignments/addroleassignment(principalid=" + userPrincpleId + ",roleDefId=" + permissionLevel + ")";
+    $.ajax(
+    {
+        url: webUrl,
+        type: "POST",
+        headers: headers,
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log("User has been assigned permission .");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+
+
+        }
+    });
+}
+
+
+function emptyWebPartBox()
+{
+        $('#techAdminUser').empty();
+        $('#hrAdmin').empty();
+        $('#processAdmin').empty();
+        $('#deptContributors').empty();
+        $('#otherDeptContributors').empty();
+        $('#headOfDepartment').empty();
+        $('#readerOtherDept').empty();
+        $('#projectAdmin').empty();
+        $('#CustomerManagementAdmin').empty();
+        $('#informationAdmin').empty();
+        $('#informationApprover').empty();
+        $('#announcementsAdmin').empty();
+        $('#announcementApprover').empty();
+        $('#alertAdmin').empty();
+        $('#AlertApprover').empty();
+        $('#eventAdmin').empty();
+        $('#EventApprover').empty();
+        $('#surveyAdmin').empty();
+        $('#SurveyApprover').empty();
+        $('#recognitionAdmin').empty();
+        $('#RecoginitionApprover').empty();
+        $('#ExperienceAdmin').empty();
+        $('#tglExperienceApprover').empty();
+        $('#questionsAdmin').empty();
+        $('#QuestionApproverBox').empty();
+        $('#magazineAdmin').empty();
+        $('#mediaGalleryAdmin').empty();
+        $('#projectAdminDertmental').empty();
+        $('#NewInitiativeAdmin').empty();
+        $('#initiativeApproval').empty();
+        $('#SuggestionAdmin').empty();
+        $('#suggestionApproval').empty();
+        $('#ActivityAdmin').empty();
+        $('#ActivityApprover').empty();
+        $('#KnowledgeAdmin').empty();
+        $('#KnowledgeApprover').empty();
+        $('#allApprovers').empty();
+}
+
+function emprtyDepartmentBox()
+{
+    
+    $('#NewInitiativeAdmin').empty();
+    $('#projectAdminDertmental').empty();
+    $('#initiativeApproval').empty();
+    $('#SuggestionAdmin').empty();
+    $('#suggestionApproval').empty();
+    $('#allApprovers').empty();
+    $('#ActivityAdmin').empty();
+    $('#ActivityApprover').empty();
+    $('#KnowledgeAdmin').empty();
+    $('#KnowledgeApprover').empty();   
+
+}
+
+//#region  Add department web part functionality
+
+function DepartmentNewInitiative() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        var listCollectionArray = new Array();
+        listCollectionArray.push("New Initiative"); //Department based
+        var contributorsIdArray =[]
+        g_NewInitiative.forEach(function(data){
+        contributorsIdArray.push(data.Id)
+        //return contributorsIdArray ;
+       })
+ 
+        var limitedAccessIdArray =[];
+        var approverIdArray=[]
+        g_NewApprover.forEach(function(data){
+           approverIdArray.push(data.Id)
+        })
+        var active = $("#toggleInitiative").hasClass("active");
+        if (!active) {
+            var WebpartsInitiativeScope = "SELECTIVE"
+        }
+        if (active) {
+            var WebpartsInitiativeScope = "EVERYONE"
+        }
+
+        var webPartName = "New Initiative";
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsInitiativeScope);
+    }
+}
+
+function DepartmentSuggestion() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        var VisitorgID = ListCommonService.GetGroupIDByGroupName("Visitors"); //Get Visitor GroupID
+        var listCollectionArray = new Array();
+        listCollectionArray.push("Suggestions"); //Deprtament based
+        var contributorsIdArray =[]// g_Suggesion
+        g_Suggesion.forEach(function(data){
+           contributorsIdArray .push(data.Id)
+        })
+        var limitedAccessIdArray = new Array();
+        limitedAccessIdArray.push(VisitorgID);
+        var approverIdArray =[]// SuggestionApprover
+        SuggestionApprover.forEach(function(data){
+           approverIdArray.push(data.Id)
+        })
+        var webPartName = "Suggesion";
+        var active = $("#toggleSuggestion").hasClass("active");
+        if (!active) {
+            var WebpartsSuggestionScope = "SELECTIVE"
+        }
+        if (active) {
+            var WebpartsSuggestionScope = "EVERYONE"
+        }
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsSuggestionScope);
+    }
+}
+function DepartmentActivity() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0) {
+        var VisitorgID = ListCommonService.GetGroupIDByGroupName("Visitors"); //Get Visitor GroupID
+        var listCollectionArray = new Array();
+        listCollectionArray.push("Activity"); //Department based
+        var contributorsIdArray =[];g_Activity
+        g_Activity.forEach(function(data){
+           contributorsIdArray.push(data.Id)
+        })
+
+        var limitedAccessIdArray =[]
+        // limitedAccessIdArray.push(VisitorgID);
+        var approverIdArray =[]//g_ActivityApprover
+        g_ActivityApprover.forEach(function(data){
+           approverIdArray.push(data.Id)
+        })
+        var active = $("#toggleActivity").hasClass("active");
+        if (!active) {
+            var WebpartsActivityScope = "SELECTIVE"
+        }
+        if (active) {
+            var WebpartsActivityScope = "EVERYONE"
+        }
+
+        var webPartName = "Activity";
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true, WebpartsActivityScope);
+    }
+}
+function DepartmentProject() {
+    var departmentId = $('#ddlDepartments').val()
+    if (departmentId != 0 && IsTaskModules==true) {
+        var listCollectionArray = new Array();
+        listCollectionArray.push("Project"); //Department based
+        var contributorsIdArray =[]// g_DepartmentalProject;
+        g_DepartmentalProject.forEach(function(data){
+           contributorsIdArray.push(data.Id)
+        })
+        var limitedAccessIdArray = new Array();
+        var approverIdArray = new Array();
+        var webPartName = "Project";
+        var ownerIdArray = [];
+        var myDocumentsiteURL = GetSiteURL(departmentId);
+        
+        var users =[];
+        g_DepartmentalProject.forEach(function(data){
+            users.push(data.EMail);
+            return users;
+        })
+        addUserToSharePointGroup(users);
+        CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true);
+    }
+}
+var WebpartsKnowledgeScope='SELECTIVE'
+    function addDepartmentKnowledge() {
+        var departmentId = $('#ddlDepartments').val()
+        if (departmentId != 0) {
+            var listCollectionArray = new Array();
+            listCollectionArray.push("Knowledge"); //Department based
+            var contributorsIdArray =[]//g_Knowledge
+            g_Knowledge.forEach(function(data){
+	           contributorsIdArray.push(data.Id)
+	        })
+            var limitedAccessIdArray = new Array();
+            var approverIdArray =[]//KnowledgeApprover
+            KnowledgeApprover.forEach(function(data){
+	           approverIdArray .push(data.Id)
+	        })
+	        var active = $("#toggleKnowledge").hasClass("active");
+	        if (!active) {
+	            var WebpartsKnowledgeScope= "SELECTIVE"
+	        }
+	        if (active) {
+	            var WebpartsKnowledgeScope= "EVERYONE"
+	        }
+	        
+            var webPartName = "Knowledge";
+            var ownerIdArray = [];
+            var myDocumentsiteURL =''// GetSiteURL(departmentId);
+            CommonService(myDocumentsiteURL, webPartName, departmentId, listCollectionArray, approverIdArray, limitedAccessIdArray, contributorsIdArray, ownerIdArray, true,WebpartsKnowledgeScope);
+        }
+    }
+
+
+//#endregion
+
+
+function AssignPermissiononDMSLibary(userPrincpleId, permissionLevel) {
+    //var dmsSiteURL =// $("#deptsiteurl").val();
+    var deptURL=GetSiteURL($('#ddlDepartments').val())
+    var dmsSiteURL=deptURL[0].DeptSiteUrl
+  //  var dmsSiteURL = titanForWork.getQueryStringParameter("CompanySiteUrl") + "/DMS/" + currentProjectSiteURL;
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var webUrl = dmsSiteURL + "/_api/web/lists/getByTitle('DepartmentalDMS')/roleassignments/addroleassignment(principalid=" + userPrincpleId + ",roleDefId=" + permissionLevel + ")";
+  // var webUrl = "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/TITAN/IT/_api/web/lists/getbytitle('DepartmentalDMS')/roleassignments/addroleassignment(principalid=" + userPrincpleId + ",roleDefId=" + permissionLevel + ")";
+    $.ajax(
+    {
+        url: webUrl,
+        type: "POST",
+        headers: headers,
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log("Permission has been assigned.");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+            //Permissionloder.close();
+
+        }
+    });
+}
+
+
+/*function BreakInheritePermission() {  
+
+    var deptURL=GetSiteURL($('#ddlDepartments').val())
+    var dmsSiteURL =deptURL[0].DeptSiteUrl //$("#deptsiteurl").val();
+    if(dmsSiteURL!="")
+    {
+//$("body").css("cursor", "progress");
+//Permissionloder = SP.UI.ModalDialog.showWaitScreenWithNoClose("Permission resetting", "Please wait...");
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+  var endPointUrl = dmsSiteURL + "/_api/web/lists/getByTitle('DepartmentalDMS')/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)";
+  // var endPointUrl = "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/TITAN/IT/_api/web/lists/getbytitle('DepartmentalDMS')/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)";
+       $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        dataType: 'json', success: function (data) {
+         
+          
+       $.when(ResetAllPermission(dmsSiteURL)).done(function (DeletePermissionrslt) {         
+                  
+          $.when(ResetAllPermission2()).done(function (AssignDeptUserPermissionrslt) {       
+          
+              $.when(departmentUserPermission()).done(function (DeptUserPermissionrslt) {       
+                                
+              })
+
+           })
+             
+       });      
+                          // DeleteUserPermissionOnDMSLibrary(userpricipalid)
+     },
+      error: function (error) {
+            console.log(JSON.stringify(error));
+            Permissionloder.close();
+
+        }
+    });
+    
+  }
+
+}
+
+
+var currentDepartmentID=0;
+function ResetAllPermission2() {
+  debugger;
+           var companyId =  titanForWork.getQueryStringParameter("CompanyId");
+           var resetdeptpermission =currentDepartmentID;
+           var counterAssignPermission=0;
+   $.ajax({
+        url:  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$top=5000&$select=*,ID,DepartmentId,LogonName/ID,LogonName/Title,LogonName/UserName,Company/ID&$expand=LogonName,Company&$filter=Status eq 'Active'",
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: function (data)
+        {
+            var items = data.d.results;
+            items=items.filter(function(v){
+	            return v.DepartmentId==currentDepartmentID && CompanyId==companyId;
+	         })
+            for (var i = 0; i < items.length; i++)
+            {
+                  var assignPrincipleid = items[i].LogonName.ID; 
+                  AssignPermissiononDMSLibary(assignPrincipleid,"1073741826");
+                  counterAssignPermission++
+            }
+          
+        },
+        error: function (errorMessage) {
+            console.log('error not found users');
+            Permissionloder.close();
+
+        }
+    });
+  }
+  
+  function departmentUserPermission() {
+debugger;
+ var resetdeptpermission =currentDepartmentID;
+ var counterAssignPermission=0;
+	var listName='ProcessApprovers';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+  //  var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'DepartmentDocument_Access'";
+   var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=(CompanyId eq '" + txtCompanyId + "' and Department eq '" + resetdeptpermission + "' and WebPartName eq 'DepartmentDocument_Access') or (CompanyId eq '" + txtCompanyId + "' and Department eq '" + resetdeptpermission + "' and WebPartName eq 'Documents') or (CompanyId eq '" + txtCompanyId + "' and Department eq '" + resetdeptpermission + "' and WebPartName eq 'Head of the department') ";
+    $.ajax({
+        url: siteURL,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var items = data.d.results;
+             for (var i = 0; i < items.length; i++)
+            {
+            if(items[i].WebPartName == "Documents")
+            {   
+                  counterAssignPermission++;
+                  
+                  if(items[i].ContributorsId!=null)
+                  {
+                     for (var j = 0; j < items[i].ContributorsId.results.length; j++)
+                      {
+                         var principleid= items[i].ContributorsId.results[j];
+                         AssignPermissiononDMSLibary(principleid,"1073741830");//change by lakhan 26/04/2022
+                         
+                       }
+                   }
+                    if(items[i].ApproverId!=null)
+                  {
+
+                   for (var k = 0; k < items[i].ApproverId.results.length; k++)
+                   {
+                         var principleid= items[i].ApproverId.results[k];
+                         AssignPermissiononDMSLibary(principleid,"1073741830");//  change by lakhan (1073741827)
+                         
+                   }
+                 }
+
+                   if(items[i].OwnerId!=null)
+                  {
+
+                   for (var k = 0; k < items[i].OwnerId.results.length; k++)
+                   {
+                         var principleid= items[i].OwnerId.results[k];
+                         AssignPermissiononDMSLibary(principleid,"1073741830"); // change by lakhan (1073741827) 25/04/2022
+                         
+                   }
+                 }
+               }
+               
+               else if(items[i].WebPartName == "DepartmentDocument_Access")
+               {
+                   counterAssignPermission++;
+                    if(items[i].ContributorsId!=null)
+                  {
+
+                   for (var m = 0; m < items[i].ContributorsId.results.length; m++)
+                   {
+                         var principleid= items[i].ContributorsId.results[m];
+                         AssignPermissiononDMSLibary(principleid,"1073741826");
+                         
+                   }
+                  }
+               
+               }
+               
+               else if(items[i].WebPartName == "Head of the department")
+               {
+                   counterAssignPermission++;
+                    if(items[i].ContributorsId!=null)
+                  {
+
+                   for (var m = 0; m < items[i].ContributorsId.results.length; m++)
+                   {
+                         var principleid= items[i].ContributorsId.results[m];
+                         AssignPermissiononDMSLibary(principleid,"1073741829");
+                         
+                   }
+                  }
+               
+               }
+               
+             
+            }
+            
+              if(items.length==counterAssignPermission)
+            {
+               //alert("Permission Reset Sucessfully");
+               alert("Permission assigned successfully .");
+               $("body").css("cursor", "default");
+               //Permissionloder.close();
+            }
+
+                  
+            },
+                    error: function (data) {
+            console.log(data.responseJSON.error);
+            Permissionloder.close();
+
+
+        }
+        
+    });
+}*/
+
+
+/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=(Title eq 'Workplace' or Title eq 'Home Page')";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}
+
+function removeUserFromsearch(Action,email,webPartName){
+    //$(Action).parents('.parentremove').remove();
+    userRecords=userRecords.filter(function(v)
+    {
+        return v.WebPartName!=webPartName || v.EMail.toLocaleLowerCase()!=email.toLocaleLowerCase();
+    })
+    if(webPartName=="Tech Admin")
+    {
+        removeFromTech(Action,email);
+    }
+    else if(webPartName=="Hr Admin")
+    {
+        removeUserFromHr(Action,email);
+    }
+    else if(webPartName=="Project Admin")
+    {
+        removeUserFromProcess(Action,email);
+    }
+    else if(webPartName=="Process Admin")
+    {
+        removeUserFromProcess(Action,email);
+    }
+    else if(webPartName=="ClientMaster")
+    {
+        removeFromClient(Action,email);
+    }
+    else if(webPartName=="Banners")
+    {
+        removeBanner(Action,email);
+    }
+    else if(webPartName=="BannersApprover")
+    {
+        removeBannerApprov(Action,email);
+    }
+    else if(webPartName=="Announcements")
+    {
+        removeAnnouncement(Action,email);
+    }
+    else if(webPartName=="announcementApprover")
+    {
+        removeAnnounceApprov(Action,email);
+    }
+    else if(webPartName=="Emergency Annoucements")
+    {
+        removeAlert(Action,email);
+    }
+    else if(webPartName=="AlertApprover")
+    {
+        removeAlertApprov(Action,email);
+    }
+    else if(webPartName=="Events")
+    {
+        removeEvent(Action,email);
+    }
+    else if(webPartName=="EventApprover")
+    {
+        removeEventApprov(Action,email);
+    }
+    else if(webPartName=="Polls")
+    {
+        removePolls(Action,email);
+    }
+    else if(webPartName=="SurveyApprover")
+    {
+        removePollsApprov(Action,email);
+    }
+    else if(webPartName=="Recognition")
+    {
+        removeRecogination(Action,email);
+    }
+    else if(webPartName=="RecoginitionApprover")
+    {
+        removeRecoginationApprov(Action,email);
+    }
+    else if(webPartName=="General")
+    {
+        removeExperience(Action,email);
+    }
+    else if(webPartName=="ExperienceApprover")
+    {
+        removeExperienceApprov(Action,email);
+    }
+    else if(webPartName=="QuestionAnswer")
+    {
+        removeQuestion(Action,email);
+    }
+    else if(webPartName=="QuestionApprover")
+    {
+        removeQuestionApprov(Action,email);
+    }
+    else if(webPartName=="Media Gallery")
+    {
+        removeMagazine(Action,email);
+    }
+    else if(webPartName=="Media")
+    {
+        removeMedia(Action,email);
+    }
+    else if(webPartName=="DeptContri")
+    {
+        removeUserFromContributors(Action,email);
+    }
+    else if(webPartName=="OtherDeptContri")
+    {
+        removeUserFromContributorsOfOtherDept(Action,email);
+    }
+    else if(webPartName=="HOD")
+    {
+        removeUserFromHOD(Action,email);
+    }
+    else if(webPartName=="Project")
+    {
+        removeDeptProject(Action,email);
+    }
+    else if(webPartName=="Redear")
+    {
+        removeUserFromReader(Action,email);
+    }
+    else if(webPartName=="New Initiative")
+    {
+        removeNewInitiative(Action,email);
+    }
+    else if(webPartName=="NewApprover")
+    {
+        removeInitiativeApp(Action,email);
+    }
+    else if(webPartName=="Suggesion")
+    {
+        removeSuggesion(Action,email);
+    }
+    else if(webPartName=="removeSuggApprove")
+    {
+        SuggestionApprover(Action,email);
+    }
+    else if(webPartName=="Activity")
+    {
+        removeActivity(Action,email);
+    }
+    else if(webPartName=="ActivityApprover")
+    {
+        removeActivityApprov(Action,email);
+    }
+    else if(webPartName=="Knowledge")
+    {
+        removeKnowledge(Action,email);
+    }
+    else if(webPartName=="KnowledgeApprover")
+    {
+        removeKnowledgeApp(Action,email);
+    }
+    
+
+}

@@ -1,1 +1,340 @@
-function a4_0x2c8c(_0x53f1c1,_0x2053f8){var _0x33c701=a4_0x33c7();return a4_0x2c8c=function(_0x2c8c1e,_0x8f758b){_0x2c8c1e=_0x2c8c1e-0x113;var _0x2d2c91=_0x33c701[_0x2c8c1e];return _0x2d2c91;},a4_0x2c8c(_0x53f1c1,_0x2053f8);}(function(_0x267c6e,_0x260193){var _0x4c176a=a4_0x2c8c,_0x27f7e7=_0x267c6e();while(!![]){try{var _0x5b7edb=parseInt(_0x4c176a(0x143))/0x1+-parseInt(_0x4c176a(0x14a))/0x2*(-parseInt(_0x4c176a(0x13d))/0x3)+parseInt(_0x4c176a(0x13a))/0x4+parseInt(_0x4c176a(0x114))/0x5+-parseInt(_0x4c176a(0x139))/0x6+-parseInt(_0x4c176a(0x140))/0x7*(parseInt(_0x4c176a(0x144))/0x8)+-parseInt(_0x4c176a(0x14b))/0x9;if(_0x5b7edb===_0x260193)break;else _0x27f7e7['push'](_0x27f7e7['shift']());}catch(_0x3e0b2d){_0x27f7e7['push'](_0x27f7e7['shift']());}}}(a4_0x33c7,0xbbaf4));function a4_0x33c7(){var _0x304dd1=['FATAL:\x20marquee\x20css\x20or\x20children\x20css\x20not\x20correct.\x20Width\x20is\x20either\x20set\x20to\x200\x20or\x20the\x20element\x20is\x20collapsing.\x20Make\x20sure\x20overflow\x20is\x20set\x20on\x20the\x20marquee,\x20and\x20the\x20children\x20are\x20postitioned\x20relatively','7058070fnJmpH','name','padding','endPoint','focus','marqueeSpawned','duration','.simple-marquee-container','distanceLeft','remove','marqueeAnim','error','SimpleMarquee','_name','hovered','append','timeTop','removeData','mouseenter','animate','FATAL:\x20marquee\x20container\x20class\x20not\x20valid','timeLeft','blur','unbindEvents','contentWidth','value','defaults','documentHasFocus','data','velocity','FATAL:\x20sibling\x20class\x20container\x20class\x20not\x20valid','linear','undefined','totalDistance','call','<div\x20class=\x22marquee-','createMarquee','7476312bhvBTa','2288464hzFoZZ','autostart','width','277353nmWQpm','currentPos','_defaults','8616902NwIvnt','FATAL:\x20marquee\x20class\x20not\x20valid','direction','445289zWBtzx','8HjNDoF','container_class','stop','settings','prototype','onComplete','26fqBDMo','3465792EhqyFX','clearQueue','mouseleave','</div>','counter','plugin_','marqueeManager','each','css','.marquee','element','marquee_class','blur\x20focus','extend','containerWidth','init','marqueeHovered','sibling_class','left','getPosition'];a4_0x33c7=function(){return _0x304dd1;};return a4_0x33c7();};(function(_0x5bfd36,_0x4636a7,_0x26008c,_0x932d22){var _0x2c692c=a4_0x2c8c,_0x4ce5aa=_0x2c692c(0x120);function _0x144b9f(_0x4ffa9c,_0x3865bd){var _0x11fac4=_0x2c692c;this[_0x11fac4(0x155)]=_0x4ffa9c,this[_0x11fac4(0x121)]=_0x4ce5aa,this[_0x11fac4(0x13f)]=_0x5bfd36['fn']['SimpleMarquee'][_0x11fac4(0x12e)],this[_0x11fac4(0x147)]=_0x5bfd36[_0x11fac4(0x158)]({},this[_0x11fac4(0x13f)],_0x3865bd),this[_0x11fac4(0x119)]=[],this['marqueeHovered']=![],this[_0x11fac4(0x12f)]=![],this[_0x11fac4(0x14f)]=0x0,this['timeLeft']=0x0,this['currentPos']=0x0,this[_0x11fac4(0x11c)]=0x0,this[_0x11fac4(0x135)]=0x0,this[_0x11fac4(0x12c)]=0x0,this[_0x11fac4(0x117)]=0x0,this[_0x11fac4(0x11a)]=0x0,this[_0x11fac4(0x122)]=![],this[_0x11fac4(0x116)]=0x0,this[_0x11fac4(0x15a)]();}function _0x1fb4e2(_0x3bf49f){var _0x57be63=_0x2c692c;this['el']=_0x3bf49f,this[_0x57be63(0x14f)]=0x0,this[_0x57be63(0x115)]='',this[_0x57be63(0x124)]=0x0,this[_0x57be63(0x13e)]=0x0,this['distanceTop']=0x0,this[_0x57be63(0x135)]=0x0,this[_0x57be63(0x12c)]=0x0,this[_0x57be63(0x117)]=0x0,this[_0x57be63(0x11a)]=0x0,this[_0x57be63(0x122)]=![],this[_0x57be63(0x116)]=0x0;}_0x5bfd36[_0x2c692c(0x158)](_0x144b9f[_0x2c692c(0x148)],{'init':function(){var _0x156768=_0x2c692c;this['buildCache'](),this['bindEvents']();var _0x3fa813=this[_0x156768(0x147)];if(_0x5bfd36(_0x3fa813[_0x156768(0x156)])[_0x156768(0x13c)]()==0x0){console[_0x156768(0x11f)](_0x156768(0x113));return;}if(typeof _0x5bfd36(_0x3fa813[_0x156768(0x156)])==='undefined'){console['error'](_0x156768(0x141));return;}if(typeof _0x5bfd36(_0x3fa813[_0x156768(0x145)])==='undefined'){console['error'](_0x156768(0x128));return;}if(_0x3fa813[_0x156768(0x15c)]!=0x0&&typeof _0x5bfd36(_0x3fa813[_0x156768(0x15c)])===_0x156768(0x134)){console['error'](_0x156768(0x132));return;}_0x3fa813[_0x156768(0x13b)]&&(this[_0x156768(0x12f)]=!![]),this[_0x156768(0x138)]();},'destroy':function(){var _0x4224b6=_0x2c692c;this[_0x4224b6(0x12b)](),this['$element'][_0x4224b6(0x125)]();},'buildCache':function(){var _0x2d945d=_0x2c692c;this['$element']=_0x5bfd36(this[_0x2d945d(0x155)]);},'bindEvents':function(){var _0x1a17db=_0x2c692c,_0x4474dd=this;_0x5bfd36(_0x4636a7)['on'](_0x1a17db(0x118),function(){var _0x330770=_0x1a17db;_0x4474dd['documentHasFocus']=!![];for(var _0x36a590 in _0x4474dd[_0x330770(0x119)]){_0x4474dd[_0x330770(0x151)](_0x4474dd[_0x330770(0x119)][_0x36a590]);}}),_0x5bfd36(_0x4636a7)['on'](_0x1a17db(0x12a),function(){var _0x406409=_0x1a17db;_0x4474dd[_0x406409(0x12f)]=![];for(var _0x2cad0e in _0x4474dd[_0x406409(0x119)]){_0x4474dd[_0x406409(0x119)][_0x2cad0e]['el']['clearQueue']()['stop'](),_0x4474dd[_0x406409(0x119)][_0x2cad0e][_0x406409(0x122)]=!![];}});},'unbindEvents':function(){var _0x3ad4ac=_0x2c692c;_0x5bfd36(_0x4636a7)['off'](_0x3ad4ac(0x157));},'getPosition':function(_0x27e4e9){var _0x18276b=_0x2c692c,_0x48d9ce=this,_0x18db34=_0x48d9ce['settings'];return this[_0x18276b(0x13e)]=parseInt(_0x5bfd36(_0x27e4e9)[_0x18276b(0x153)](_0x18db34[_0x18276b(0x142)])),this[_0x18276b(0x13e)];},'createMarquee':function(){var _0x5ec3f1=_0x2c692c,_0x3e2168=this,_0x8ef2d0=_0x3e2168[_0x5ec3f1(0x147)],_0x4e5237=_0x5bfd36(_0x8ef2d0['marquee_class'])['html'](),_0x4549b8=_0x5bfd36(_0x8ef2d0[_0x5ec3f1(0x145)])[_0x5ec3f1(0x13c)](),_0x5b7bd5=_0x5bfd36(_0x8ef2d0[_0x5ec3f1(0x156)])[_0x5ec3f1(0x13c)](),_0x39055f=0x0;_0x8ef2d0['sibling_class']!=0x0&&(_0x39055f=_0x5bfd36(_0x8ef2d0[_0x5ec3f1(0x15c)])[_0x5ec3f1(0x13c)]());var _0x5ed02a=Math['ceil'](_0x4549b8/_0x5b7bd5);_0x5bfd36(_0x8ef2d0[_0x5ec3f1(0x156)])[_0x5ec3f1(0x11d)]();_0x5ed02a<=0x2?_0x5ed02a=0x3:_0x5ed02a++;var _0x1658bc=(_0x5b7bd5+_0x8ef2d0[_0x5ec3f1(0x116)])*_0x5ed02a,_0x7e801e=-(_0x1658bc-_0x4549b8),_0x231583=_0x4549b8-_0x7e801e;_0x8ef2d0[_0x5ec3f1(0x131)]!==0x0&&(_0x8ef2d0[_0x5ec3f1(0x11a)]=_0x231583/_0x8ef2d0[_0x5ec3f1(0x131)]);for(var _0x156127=0x0;_0x156127<_0x5ed02a;_0x156127++){var _0x2edee8=![];_0x8ef2d0['hover']==!![]?_0x2edee8=_0x5bfd36(_0x5ec3f1(0x137)+(_0x156127+0x1)+'\x22>'+_0x4e5237+_0x5ec3f1(0x14e))[_0x5ec3f1(0x126)](function(){var _0x17d907=_0x5ec3f1;if(_0x3e2168['documentHasFocus']==!![]&&_0x3e2168[_0x17d907(0x15b)]==![]){_0x3e2168[_0x17d907(0x15b)]=!![];for(var _0x47d823 in _0x3e2168[_0x17d907(0x119)]){_0x3e2168[_0x17d907(0x119)][_0x47d823]['el'][_0x17d907(0x14c)]()[_0x17d907(0x146)](),_0x3e2168[_0x17d907(0x119)][_0x47d823][_0x17d907(0x122)]=!![];}}})[_0x5ec3f1(0x14d)](function(){var _0x221f70=_0x5ec3f1;if(_0x3e2168[_0x221f70(0x12f)]==!![]&&_0x3e2168[_0x221f70(0x15b)]==!![]){for(var _0xca4aca in _0x3e2168[_0x221f70(0x119)]){_0x3e2168[_0x221f70(0x151)](_0x3e2168[_0x221f70(0x119)][_0xca4aca]);}_0x3e2168[_0x221f70(0x15b)]=![];}}):_0x2edee8=_0x5bfd36(_0x5ec3f1(0x137)+(_0x156127+0x1)+'\x22>'+_0x4e5237+_0x5ec3f1(0x14e)),_0x3e2168[_0x5ec3f1(0x119)][_0x156127]=new _0x1fb4e2(_0x2edee8),_0x5bfd36(_0x8ef2d0[_0x5ec3f1(0x145)])[_0x5ec3f1(0x123)](_0x2edee8),_0x3e2168[_0x5ec3f1(0x119)][_0x156127]['currentPos']=_0x39055f+_0x5b7bd5*_0x156127+_0x8ef2d0[_0x5ec3f1(0x116)]*_0x156127,_0x3e2168[_0x5ec3f1(0x119)][_0x156127]['name']='.marquee-'+(_0x156127+0x1),_0x3e2168[_0x5ec3f1(0x119)][_0x156127][_0x5ec3f1(0x135)]=_0x231583,_0x3e2168['marqueeSpawned'][_0x156127][_0x5ec3f1(0x159)]=_0x4549b8,_0x3e2168[_0x5ec3f1(0x119)][_0x156127][_0x5ec3f1(0x12c)]=_0x5b7bd5,_0x3e2168[_0x5ec3f1(0x119)][_0x156127][_0x5ec3f1(0x117)]=_0x7e801e,_0x3e2168[_0x5ec3f1(0x119)][_0x156127][_0x5ec3f1(0x11a)]=_0x8ef2d0[_0x5ec3f1(0x11a)],_0x3e2168[_0x5ec3f1(0x119)][_0x156127][_0x5ec3f1(0x116)]=_0x8ef2d0[_0x5ec3f1(0x116)],_0x3e2168[_0x5ec3f1(0x119)][_0x156127]['el'][_0x5ec3f1(0x153)](_0x8ef2d0[_0x5ec3f1(0x142)],_0x3e2168['marqueeSpawned'][_0x156127]['currentPos']+_0x8ef2d0['padding']+'px'),_0x3e2168[_0x5ec3f1(0x12f)]==!![]&&_0x3e2168[_0x5ec3f1(0x151)](_0x3e2168[_0x5ec3f1(0x119)][_0x156127]);}_0x26008c['hasFocus']()?_0x3e2168[_0x5ec3f1(0x12f)]=!![]:_0x3e2168[_0x5ec3f1(0x12f)]=![];},'marqueeManager':function(_0x83a9fc){var _0x535dbf=_0x2c692c,_0x25ab72=this,_0x2f8fca=_0x83a9fc[_0x535dbf(0x115)],_0x61e5f8=_0x25ab72[_0x535dbf(0x147)];_0x83a9fc['hovered']==![]?_0x83a9fc[_0x535dbf(0x14f)]>0x0?(_0x83a9fc[_0x535dbf(0x129)]=_0x83a9fc['duration'],_0x83a9fc['el'][_0x535dbf(0x153)](_0x61e5f8['direction'],_0x83a9fc[_0x535dbf(0x159)]+'px'),_0x83a9fc[_0x535dbf(0x13e)]=_0x83a9fc[_0x535dbf(0x159)],_0x83a9fc[_0x535dbf(0x11c)]=_0x83a9fc['totalDistance']-(_0x83a9fc[_0x535dbf(0x159)]-_0x25ab72[_0x535dbf(0x15e)](_0x2f8fca))):_0x83a9fc[_0x535dbf(0x129)]=(_0x83a9fc['totalDistance']-(_0x83a9fc['containerWidth']-_0x25ab72[_0x535dbf(0x15e)](_0x2f8fca)))/_0x83a9fc['totalDistance']*_0x83a9fc[_0x535dbf(0x11a)]:(_0x83a9fc['hovered']=![],_0x83a9fc['currentPos']=parseInt(_0x83a9fc['el']['css'](_0x61e5f8['direction'])),_0x83a9fc[_0x535dbf(0x11c)]=_0x83a9fc[_0x535dbf(0x135)]-(_0x83a9fc[_0x535dbf(0x159)]-_0x25ab72[_0x535dbf(0x15e)](_0x2f8fca)),_0x83a9fc[_0x535dbf(0x129)]=(_0x83a9fc[_0x535dbf(0x135)]-(_0x83a9fc[_0x535dbf(0x159)]-_0x83a9fc[_0x535dbf(0x13e)]))/_0x83a9fc[_0x535dbf(0x135)]*_0x83a9fc[_0x535dbf(0x11a)]),_0x25ab72[_0x535dbf(0x11e)](_0x83a9fc);},'marqueeAnim':function(_0x1c70ed){var _0x415b8a=_0x2c692c,_0x28e346=this,_0x179229=_0x28e346[_0x415b8a(0x147)];_0x1c70ed[_0x415b8a(0x14f)]++,_0x1c70ed['el'][_0x415b8a(0x14c)]()[_0x415b8a(0x127)]({[_0x179229['direction']]:_0x1c70ed[_0x415b8a(0x117)]+'px'},_0x1c70ed[_0x415b8a(0x129)],_0x415b8a(0x133),function(){_0x28e346['marqueeManager'](_0x1c70ed);});},'callback':function(){var _0x10f909=_0x2c692c,_0x385aa0=this['settings'][_0x10f909(0x149)];typeof _0x385aa0==='function'&&_0x385aa0[_0x10f909(0x136)](this[_0x10f909(0x155)]);}}),_0x5bfd36['fn'][_0x2c692c(0x120)]=function(_0x384d79){var _0x44f6a0=_0x2c692c;return this[_0x44f6a0(0x152)](function(){var _0x59a50f=_0x44f6a0;!_0x5bfd36[_0x59a50f(0x130)](this,'plugin_'+_0x4ce5aa)&&_0x5bfd36['data'](this,_0x59a50f(0x150)+_0x4ce5aa,new _0x144b9f(this,_0x384d79));}),this;},_0x5bfd36['fn']['SimpleMarquee'][_0x2c692c(0x12e)]={'autostart':!![],'property':_0x2c692c(0x12d),'onComplete':null,'duration':0x4e20,'padding':0xa,'marquee_class':_0x2c692c(0x154),'container_class':_0x2c692c(0x11b),'sibling_class':0x0,'hover':!![],'velocity':0x0,'direction':_0x2c692c(0x15d)};}(jQuery,window,document));
+// ---------------------------------
+// ---------- SimpleMarquee ----------
+// ---------------------------------
+//Copyright (C) 2016  Fabian Valle 
+//An easy to implement marquee plugin. I know its easy because even I can use it.
+//Forked from: https://github.com/conradfeyt/Simple-Marquee
+//Re-Written by: Fabian Valle (www.fabian-valle.com) (www.obliviocompany.com)
+// 
+// ------------------------
+// Structure //
+//
+//  *********************************** - marque-container - *************************************
+//  *                                                                                            *
+//  *   ******************************* ******************************************************   *
+//  *   *                             * *                                                    *   *
+//  *   * - marquee-content-sibling - * *                 - marquee-content -                *   *
+//  *   *                             * *                                                    *   *
+//  *   ******************************* ******************************************************   *
+//  *                                                                                            *
+//  **********************************************************************************************
+//
+//// Usage //
+//  
+//    Only need to call the createMarquee() function,
+//    if desired, pass through the following paramaters:
+//
+//    $1 duration:                   controls the speed at which the marquee moves
+//
+//    $2 padding:                    right margin between consecutive marquees. 
+//
+//    $3 marquee_class:             the actual div or span that will be used to create the marquee - 
+//                                   multiple marquee items may be created using this item's content. 
+//                                   This item will be removed from the dom
+//
+//    $4 container_class:           the container div in which the marquee content will animate. 
+//
+//    $5 marquee-content-sibling :   (optional argument) a sibling item to the marqueed item  that 
+//                                   affects the end point position and available space inside the 
+//                                   container. 
+//
+//    $6 hover:                     Boolean to indicate whether pause on hover should is required. 
+
+;(function ($, window, document, undefined){
+	var pluginName = 'SimpleMarquee';
+
+    function Plugin (element, options) {
+        this.element = element;
+        this._name = pluginName;
+        this._defaults = $.fn.SimpleMarquee.defaults;
+        this.settings = $.extend( {}, this._defaults, options );
+        this.marqueeSpawned = [];
+        this.marqueeHovered = false;
+        this.documentHasFocus = false;        
+        //
+        this.counter = 0;
+
+        this.timeLeft = 0;
+        this.currentPos = 0;
+        this.distanceLeft = 0;
+        this.totalDistance = 0;
+        this.contentWidth = 0;
+        this.endPoint = 0;
+        this.duration = 0;
+        this.hovered = false;
+        this.padding = 0;
+        
+        
+        this.init();
+    }
+    function marqueeObj(newElement){
+    	this.el=newElement;
+    	this.counter=0;
+    	this.name="";
+    	this.timeTop=0;
+    	this.currentPos=0;
+    	this.distanceTop=0;
+    	this.totalDistance=0;
+    	this.contentWidth=0;
+    	this.endPoint=0;
+    	this.duration=0;
+    	this.hovered=false;
+    	this.padding=0;
+    }
+    //methods for plugin
+    $.extend(Plugin.prototype, {
+
+        // Initialization logic
+        init: function () {
+            this.buildCache();
+            this.bindEvents();
+            var config = this.settings;
+            //init marquee
+            if($(config.marquee_class).width() == 0){
+	            console.error('FATAL: marquee css or children css not correct. Width is either set to 0 or the element is collapsing. Make sure overflow is set on the marquee, and the children are postitioned relatively');
+	            return;
+	        }
+	
+	        if(typeof $(config.marquee_class) === 'undefined'){
+	            console.error('FATAL: marquee class not valid');
+	            return;
+	        }
+	
+	        if(typeof $(config.container_class) === 'undefined'){
+	            console.error('FATAL: marquee container class not valid');
+	            return;
+	        }
+	
+	        if(config.sibling_class != 0 && typeof $(config.sibling_class) === 'undefined'){
+	            console.error('FATAL: sibling class container class not valid');
+	            return;
+	        }
+	        
+                if (config.autostart)
+                {
+                    this.documentHasFocus = true;
+                }
+	        //create the Marquee
+	        this.createMarquee();
+        },
+
+        // Remove plugin instance completely
+        destroy: function() {
+            this.unbindEvents();
+            this.$element.removeData();
+        },
+
+        // Cache DOM nodes for performance
+        buildCache: function () {
+            this.$element = $(this.element);
+        },
+
+        // Bind events that trigger methods
+        bindEvents: function() {
+        	var plugin = this;
+        	$(window).on('focus',function(){
+        		plugin.documentHasFocus = true;
+        		for (var key in plugin.marqueeSpawned){
+      	          plugin.marqueeManager(plugin.marqueeSpawned[key]);   
+      	      	} 
+        	});
+        	$(window).on('blur',function(){
+        		plugin.documentHasFocus = false;
+        		for (var key in plugin.marqueeSpawned){
+        	        plugin.marqueeSpawned[key].el.clearQueue().stop(); 
+        	        plugin.marqueeSpawned[key].hovered = true;
+        	    }
+        	});
+
+        },
+
+        // Unbind events that trigger methods
+        unbindEvents: function() {
+        	$(window).off('blur focus');
+        },
+        getPosition: function(elName){
+            var plugin = this;
+            var config = plugin.settings;
+        	this.currentPos = parseInt($(elName).css(config.direction));
+            return this.currentPos;
+        },
+        createMarquee: function(){
+        	var plugin = this;
+        	var config = plugin.settings;
+        	var marqueeContent =  $(config.marquee_class).html();
+            var containerWidth = $(config.container_class).width();
+            var contentWidth = $(config.marquee_class).width();
+            
+            var widthToIgnore = 0;
+            if (config.sibling_class != 0){ 
+            	widthToIgnore = $(config.sibling_class).width();
+            } 
+            
+            var spawnAmount = Math.ceil(containerWidth / contentWidth);
+            
+            $(config.marquee_class).remove();
+
+            if(spawnAmount<=2){
+                spawnAmount = 3;
+            } else {
+              spawnAmount++;
+            }
+
+            var totalContentWidth = (contentWidth + config.padding)*spawnAmount;
+
+            var endPoint = -(totalContentWidth - containerWidth);
+
+            var totalDistance =  containerWidth - endPoint;
+            
+                                    
+            if (config.velocity !== 0 ) {
+                config.duration = totalDistance / config.velocity;
+            }
+            
+            for (var i = 0; i < spawnAmount; i++) {
+            	
+            	var newElement = false;
+            	
+                if(config.hover == true){
+
+                  
+                  newElement = $('<div class="marquee-' + (i+1) + '">' + marqueeContent + '</div>')        
+                  .mouseenter(function() {
+
+
+                    if ((plugin.documentHasFocus == true) && (plugin.marqueeHovered == false)){
+                      plugin.marqueeHovered = true;
+
+                      for (var key in plugin.marqueeSpawned){
+                        plugin.marqueeSpawned[key].el.clearQueue().stop(); 
+                        plugin.marqueeSpawned[key].hovered = true;
+                      }
+                      
+
+                    }
+
+                  })
+                  .mouseleave(function() {
+
+
+                      if ((plugin.documentHasFocus == true) && (plugin.marqueeHovered == true)){
+
+                        for (var key in plugin.marqueeSpawned){
+                          plugin.marqueeManager(plugin.marqueeSpawned[key]);   
+                        } 
+
+                        plugin.marqueeHovered = false;
+                      } 
+                  });
+
+                } else {
+
+                  newElement = $('<div class="marquee-' + (i+1) + '">' + marqueeContent + '</div>') ;   
+
+                }
+
+                plugin.marqueeSpawned[i] = new marqueeObj(newElement);
+
+                $(config.container_class).append(newElement);
+
+                plugin.marqueeSpawned[i].currentPos = (widthToIgnore + (contentWidth*i))+(config.padding*i);  //initial positioning
+                plugin.marqueeSpawned[i].name = '.marquee-'+(i+1); 
+
+                plugin.marqueeSpawned[i].totalDistance = totalDistance;  
+                plugin.marqueeSpawned[i].containerWidth = containerWidth;  
+                plugin.marqueeSpawned[i].contentWidth = contentWidth;  
+                plugin.marqueeSpawned[i].endPoint = endPoint;  
+                plugin.marqueeSpawned[i].duration = config.duration;  
+                plugin.marqueeSpawned[i].padding = config.padding;  
+
+                plugin.marqueeSpawned[i].el.css(config.direction, plugin.marqueeSpawned[i].currentPos+config.padding +'px'); //setting left according to postition
+
+                 if (plugin.documentHasFocus == true){
+                  plugin.marqueeManager(plugin.marqueeSpawned[i]);
+                }
+
+            }
+            //end for
+            
+            if(document.hasFocus()){
+	        	 plugin.documentHasFocus = true;
+        	}else{
+	        	plugin.documentHasFocus = false;
+	        }
+            
+        },
+        marqueeManager: function(marqueed_el){
+        	var plugin = this;
+            var elName = marqueed_el.name;
+        	var config = plugin.settings;
+            
+        	if (marqueed_el.hovered == false) { 
+
+                if (marqueed_el.counter > 0) {  //this is not the first loop
+                  
+                      marqueed_el.timeLeft = marqueed_el.duration;
+                      marqueed_el.el.css(config.direction, marqueed_el.containerWidth +'px'); //setting margin 
+                      marqueed_el.currentPos = marqueed_el.containerWidth; 
+                      marqueed_el.distanceLeft = marqueed_el.totalDistance - (marqueed_el.containerWidth - plugin.getPosition(elName));
+
+                } else {    // this is the first loop
+                  
+                  marqueed_el.timeLeft = (((marqueed_el.totalDistance - (marqueed_el.containerWidth - plugin.getPosition(elName)))/ marqueed_el.totalDistance)) * marqueed_el.duration;
+                }
+
+            } else {
+                  marqueed_el.hovered = false;
+                  marqueed_el.currentPos = parseInt(marqueed_el.el.css(config.direction));
+                  marqueed_el.distanceLeft = marqueed_el.totalDistance - (marqueed_el.containerWidth - plugin.getPosition(elName));
+                  marqueed_el.timeLeft = (((marqueed_el.totalDistance - (marqueed_el.containerWidth - marqueed_el.currentPos))/ marqueed_el.totalDistance)) * marqueed_el.duration;
+            }
+
+        	plugin.marqueeAnim(marqueed_el);
+        },
+        marqueeAnim: function(marqueeObject){
+            var plugin = this;
+            var config = plugin.settings;
+        	marqueeObject.counter++;
+            marqueeObject.el.clearQueue().animate(
+            		{[config.direction]: marqueeObject.endPoint+'px'}, 
+            		marqueeObject.timeLeft, 
+            		'linear', 
+            		function(){
+            			plugin.marqueeManager(marqueeObject);
+        			});
+        },
+        callback: function() {
+            // Cache onComplete option
+            var onComplete = this.settings.onComplete;
+
+            if ( typeof onComplete === 'function' ) {
+                onComplete.call(this.element);
+            }
+        }
+
+    });
+    //end methods for plugin
+    
+    $.fn.SimpleMarquee = function (options) {
+        this.each(function() {
+            if ( !$.data( this, "plugin_" + pluginName ) ) {
+                $.data( this, "plugin_" + pluginName, new Plugin( this, options ) );
+            }
+        });
+        return this;
+    };
+    $.fn.SimpleMarquee.defaults = {
+	    autostart: true,
+        property: 'value',
+        onComplete: null,
+        duration: 20000,
+        padding: 10,
+        marquee_class: '.marquee',
+        container_class: '.simple-marquee-container',
+        sibling_class: 0,
+        hover: true,
+        velocity: 0,
+        direction: 'left'
+    };
+    
+})( jQuery, window, document );

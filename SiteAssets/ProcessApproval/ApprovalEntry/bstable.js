@@ -1,1 +1,504 @@
-'use strict';const a2_0x1baab2=a2_0x3025;(function(_0x1acc12,_0x22335c){const _0x46651a=a2_0x3025,_0x527864=_0x1acc12();while(!![]){try{const _0x548fac=parseInt(_0x46651a(0x13c))/0x1+-parseInt(_0x46651a(0x104))/0x2*(-parseInt(_0x46651a(0x128))/0x3)+parseInt(_0x46651a(0x133))/0x4+-parseInt(_0x46651a(0x114))/0x5*(-parseInt(_0x46651a(0x154))/0x6)+parseInt(_0x46651a(0x12b))/0x7+-parseInt(_0x46651a(0x14f))/0x8+-parseInt(_0x46651a(0x110))/0x9;if(_0x548fac===_0x22335c)break;else _0x527864['push'](_0x527864['shift']());}catch(_0x407d48){_0x527864['push'](_0x527864['shift']());}}}(a2_0x515f,0xd7336));function a2_0x515f(){const _0x203ad7=['<input\x20class=\x22form-control\x20input-sm\x22\x20\x20data-original-value=\x22','log','_rowEdit','tbody\x20tr\x20#bDel','coltype','tbody\x20tr\x20#bAcep','tbody','columnLabel','grep','DueDate','show','Actions','1668536cQegFy','thead\x20tr','Formula','init','insertBefore','12Cnattd','Setup','tbl','buttonHTML','getQueryStringParameter','Person','prev','#bAcep','atob','.datepicker','tr:last-child','_rowAccept','toString','onclick','attr','input,button,textarea,select','table','onAdd','</td>','Step','checked','removeAttr','replaceAll','td:first','data-status','tbody\x20tr','</th>','_addOnClickEventsToActions','destroy','onBeforeDelete','remove','_actionsModeEdit','<div\x20class=\x22btn-group\x20table-action-button-grpup\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bEdit\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-edit\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bDel\x22\x20onclick=\x22DeleteTableRow(this)\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-trash\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bAcep\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-check-circle\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bCanc\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-times-circle\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','#bDel','actionsColumnHTML','options','#ttlval_','parents','onDelete','data','split','replace','_actionsModeNormal','div','<tr>','$addButton','#tbl_','substr','2pNiiBv','CalculatedValue','advanced','clone','</tr>','bstable-actions','hide','tblId','toFixed','editing','\x22\x20value=\x22','#bCanc','24181866BYHzur','_rowCancel','datepicker','td:last','2873495ucRNoI','length','removeClass','Initiation','val','evaluate','selector','text','prop','.Date','append','MM\x20dd,\x20yy','each','ColumnName','</div>','input[type=\x22checkbox\x22]','find','_modifyEachColumn','tbody\x20tr\x20#bCanc','select','1507404pWaSmx','name','trim','2179835njvhji','<th\x20name=\x22bstable-actions\x22>','input','Title','tbody\x20tr:first','<div\x20style=\x22display:\x20none;\x22>','hasDatepicker','disabled','6321472coNzgk','td[name=\x22bstable-actions\x22]','#bEdit','Defval','click','test','tbody\x20tr\x20#bEdit','parent','html','233264dCxgDv','extend','_actionAddRow','tbl_','currentlyEditingRow','editableColumns','_rowDelete'];a2_0x515f=function(){return _0x203ad7;};return a2_0x515f();}function a2_0x3025(_0x284c37,_0x4706e9){const _0x515fb3=a2_0x515f();return a2_0x3025=function(_0x3025ea,_0x479a96){_0x3025ea=_0x3025ea-0xed;let _0x54bc49=_0x515fb3[_0x3025ea];return _0x54bc49;},a2_0x3025(_0x284c37,_0x4706e9);}class BSTable{constructor(_0x5a21e5,_0x6c8b73){const _0x270523=a2_0x3025;var _0x58e2bc={'editableColumns':null,'$addButton':null,'onEdit':function(){},'onBeforeDelete':function(){},'onDelete':function(){},'onAdd':function(){},'advanced':{'columnLabel':_0x270523(0x14e),'buttonHTML':_0x270523(0xf4)}};this[_0x270523(0x164)]=$('#'+_0x5a21e5),this[_0x270523(0xf7)]=$[_0x270523(0x13d)](!![],_0x58e2bc,_0x6c8b73),this[_0x270523(0xf6)]='<td\x20name=\x22bstable-actions\x22>'+this[_0x270523(0xf7)][_0x270523(0x106)][_0x270523(0x157)]+_0x270523(0x166),this[_0x270523(0xf7)][_0x270523(0x141)]!=null&&(this[_0x270523(0xf7)][_0x270523(0x141)]=this[_0x270523(0xf7)][_0x270523(0x141)][_0x270523(0xfc)](','));}[a2_0x1baab2(0x152)](){const _0x441f53=a2_0x1baab2;this[_0x441f53(0x164)][_0x441f53(0x124)](_0x441f53(0x150))[_0x441f53(0x11e)](_0x441f53(0x12c)+this['options'][_0x441f53(0x106)][_0x441f53(0x14a)]+_0x441f53(0xee)),this[_0x441f53(0x164)][_0x441f53(0x124)](_0x441f53(0xed))[_0x441f53(0x11e)](this['actionsColumnHTML']),this[_0x441f53(0xef)]();if(this[_0x441f53(0xf7)]['$addButton']!=null){let _0x3cae67=this;this[_0x441f53(0xf7)][_0x441f53(0x101)]['click'](function(){_0x3cae67['_actionAddRow']();});}}[a2_0x1baab2(0xf0)](){const _0x3fd300=a2_0x1baab2;this[_0x3fd300(0x164)]['find']('th[name=\x22bstable-actions\x22]')[_0x3fd300(0xf2)](),this['table'][_0x3fd300(0x124)](_0x3fd300(0x134))[_0x3fd300(0xf2)]();}['refresh'](){const _0x598a19=a2_0x1baab2;this[_0x598a19(0xf0)](),this[_0x598a19(0x152)]();}[a2_0x1baab2(0x140)](_0x5b4c46){return _0x5b4c46['attr']('data-status')=='editing'?!![]:![];}[a2_0x1baab2(0xfe)](_0x2108dc){const _0x554f64=a2_0x1baab2;$(_0x2108dc)[_0x554f64(0x13a)]()['find'](_0x554f64(0x15b))[_0x554f64(0x10a)](),$(_0x2108dc)['parent']()['find']('#bCanc')[_0x554f64(0x10a)](),$(_0x2108dc)['parent']()[_0x554f64(0x124)](_0x554f64(0x135))['show'](),$(_0x2108dc)[_0x554f64(0x13a)]()[_0x554f64(0x124)](_0x554f64(0xf5))['show']();let _0xc6329f=$(_0x2108dc)['parents']('tr');_0xc6329f[_0x554f64(0x162)](_0x554f64(0x16c),'');}[a2_0x1baab2(0xf3)](_0x23ac6f){const _0x2baaee=a2_0x1baab2;$(_0x23ac6f)[_0x2baaee(0x13a)]()[_0x2baaee(0x124)](_0x2baaee(0x15b))['show'](),$(_0x23ac6f)[_0x2baaee(0x13a)]()[_0x2baaee(0x124)](_0x2baaee(0x10f))[_0x2baaee(0x14d)](),$(_0x23ac6f)['parent']()[_0x2baaee(0x124)](_0x2baaee(0x135))[_0x2baaee(0x10a)](),$(_0x23ac6f)['parent']()['find']('#bDel')['hide']();let _0x4d5866=$(_0x23ac6f)[_0x2baaee(0xf9)]('tr');_0x4d5866[_0x2baaee(0x162)](_0x2baaee(0x16c),_0x2baaee(0x10d));}[a2_0x1baab2(0x145)](_0x4c4af9){const _0x33bae5=a2_0x1baab2;let _0x4d048f=$(_0x4c4af9)[_0x33bae5(0xf9)]('tr');console[_0x33bae5(0x144)](_0x4d048f);let _0x3042cf=_0x4d048f[_0x33bae5(0x124)]('td');console[_0x33bae5(0x144)](_0x3042cf);if(this[_0x33bae5(0x140)](_0x4d048f))return;this['_modifyEachColumn'](this[_0x33bae5(0xf7)][_0x33bae5(0x141)],_0x3042cf,function(_0x1613ee){const _0x5502bb=_0x33bae5;let _0x2b4adb=_0x1613ee[_0x5502bb(0x13b)]();console[_0x5502bb(0x144)](_0x2b4adb);let _0x5a97bc=_0x1613ee[0x0]['id'],_0x2597e4=_0x5502bb(0x130)+_0x2b4adb+_0x5502bb(0x122),_0x301a73=_0x5502bb(0x143)+_0x2b4adb+_0x5502bb(0x10e)+_0x2b4adb+'\x22\x20id=\x22'+_0x5a97bc+'\x22>';_0x1613ee[_0x5502bb(0x13b)](_0x2597e4+_0x301a73);}),this[_0x33bae5(0xf3)](_0x4c4af9);}[a2_0x1baab2(0x142)](_0x240426){const _0x54b5d0=a2_0x1baab2;let _0x2e8d3f=$(_0x240426)[_0x54b5d0(0xf9)]('tr');this[_0x54b5d0(0xf7)][_0x54b5d0(0xf1)](_0x2e8d3f),_0x2e8d3f['remove'](),this[_0x54b5d0(0xf7)][_0x54b5d0(0xfa)](),totalrow=totalrow-0x1;let _0x50c16f=this[_0x54b5d0(0x164)][_0x54b5d0(0x124)](_0x54b5d0(0xed)),_0x44c497=_0x50c16f[_0x54b5d0(0x115)]-0x1;_0x44c497==0x1&&this['table'][_0x54b5d0(0x124)](_0x54b5d0(0xed))[_0x54b5d0(0x124)](_0x54b5d0(0x113))['find'](_0x54b5d0(0xf5))[_0x54b5d0(0x10a)]();for(i=0x0;i<_0x50c16f[_0x54b5d0(0x115)];i++){let _0x552fc5=i;this[_0x54b5d0(0x164)][_0x54b5d0(0x124)](_0x50c16f[i])['prev']()['find'](_0x54b5d0(0x16b))[_0x54b5d0(0x13b)](_0x552fc5);}let _0x54ae31=this[_0x54b5d0(0x164)][_0x54b5d0(0x11a)]['split']('_')[0x1],_0x366312=this['table'][_0x54b5d0(0x124)](_0x54b5d0(0x12f))[_0x54b5d0(0x124)]('td');if(ColumnTotalList[_0x54b5d0(0x115)]>0x0){var _0x4f6b7b=$[_0x54b5d0(0x14b)](ColumnTotalList,function(_0x2afe39){const _0x489c5e=_0x54b5d0;return _0x2afe39[_0x489c5e(0x155)]==_0x54ae31;});if(_0x4f6b7b['length']>0x0)for(var _0x1386f0=0x0;_0x1386f0<_0x4f6b7b['length'];_0x1386f0++){DynamicSumRow(_0x54ae31,_0x4f6b7b[_0x1386f0][_0x54b5d0(0x121)],'','');}}}[a2_0x1baab2(0x15f)](_0x1a59e2){const _0x3d1ed6=a2_0x1baab2;let _0x523e1a=$(_0x1a59e2)[_0x3d1ed6(0xf9)]('tr');console[_0x3d1ed6(0x144)](_0x523e1a);let _0x4e09ca=_0x523e1a['find']('td');if(!this[_0x3d1ed6(0x140)](_0x523e1a))return;this[_0x3d1ed6(0x125)](this[_0x3d1ed6(0xf7)][_0x3d1ed6(0x141)],_0x4e09ca,function(_0x4e3a4c){const _0x235b8d=_0x3d1ed6;let _0x52d750=_0x4e3a4c[_0x235b8d(0x124)](_0x235b8d(0x12d))['val']();_0x4e3a4c['html'](_0x52d750);}),this[_0x3d1ed6(0xfe)](_0x1a59e2),this[_0x3d1ed6(0xf7)]['onEdit'](_0x523e1a[0x0]);}[a2_0x1baab2(0x111)](_0x179eb5){const _0x8bbc78=a2_0x1baab2;let _0x1ec07b=$(_0x179eb5)[_0x8bbc78(0xf9)]('tr'),_0x2ccd15=_0x1ec07b[_0x8bbc78(0x124)]('td');if(!this[_0x8bbc78(0x140)](_0x1ec07b))return;this[_0x8bbc78(0x125)](this[_0x8bbc78(0xf7)][_0x8bbc78(0x141)],_0x2ccd15,function(_0x56b892){const _0x37f057=_0x8bbc78;let _0x246b19=_0x56b892[_0x37f057(0x124)](_0x37f057(0xff))[_0x37f057(0x13b)]();_0x56b892['html'](_0x246b19);}),this[_0x8bbc78(0xfe)](_0x179eb5);}[a2_0x1baab2(0x13e)](){const _0x2e7398=a2_0x1baab2;let _0xf09bb8=0x0,_0x3c17a4=this['table'][_0x2e7398(0x124)](_0x2e7398(0xed)),_0x18f923=this['table'][_0x2e7398(0x11a)][_0x2e7398(0xfc)]('_')[0x1];if(_0x3c17a4[_0x2e7398(0x115)]==0x0){let _0x3f32b7=this[_0x2e7398(0x164)][_0x2e7398(0x124)](_0x2e7398(0x150)),_0x454e5a=_0x3f32b7[_0x2e7398(0x124)]('th'),_0x4f80d6='';_0x454e5a[_0x2e7398(0x120)](function(){const _0x4f38b8=_0x2e7398;let _0x4872bd=this;$(_0x4872bd)['attr']('name')==_0x4f38b8(0x109)?_0x4f80d6=_0x4f80d6+actionsColumnHTML:_0x4f80d6=_0x4f80d6+'<td></td>';}),this[_0x2e7398(0x164)][_0x2e7398(0x124)](_0x2e7398(0x149))[_0x2e7398(0x11e)](_0x2e7398(0x100)+_0x4f80d6+_0x2e7398(0x108));}else{_0xf09bb8=_0xf09bb8+_0x3c17a4[_0x2e7398(0x115)];let _0x932a9a=this['table']['find']('tr')['eq'](0x2);_0x932a9a[_0x2e7398(0x107)]()[_0x2e7398(0x153)](_0x932a9a['parent']()['find'](_0x2e7398(0x15e))),_0x932a9a=this[_0x2e7398(0x164)]['find']('tr:last'),_0x932a9a['prev']()[_0x2e7398(0x162)]('id',_0x18f923+'_'+_0x3c17a4[_0x2e7398(0x115)]);let _0x41b72f=_0x3c17a4[_0x2e7398(0x115)];this['table'][_0x2e7398(0x124)](_0x2e7398(0x15e))[_0x2e7398(0x15a)]()['find'](_0x2e7398(0x16b));let _0xa49825=this['table'][_0x2e7398(0x124)]('tr:last-child')[_0x2e7398(0x15a)]()[_0x2e7398(0x124)](_0x2e7398(0x16b));_0xa49825[_0x2e7398(0x13b)](_0x41b72f),_0x932a9a[_0x2e7398(0x15a)]()[_0x2e7398(0x124)](_0x2e7398(0x163))['attr'](_0x2e7398(0x132),![]);let _0xce9569=_0x932a9a[_0x2e7398(0x15a)]()['find']('td');_0xce9569['each'](function(){const _0x2c1d79=_0x2e7398;let _0x4be194=this;if($(_0x4be194)[_0x2c1d79(0x162)](_0x2c1d79(0x129))==_0x2c1d79(0x109))$(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0xf5))[_0x2c1d79(0x14d)]();else{$(_0x4be194)[_0x2c1d79(0x162)]('id','R_'+_0x41b72f),console['log']($(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0x12d))[_0x2c1d79(0x124)](_0x2c1d79(0x11d)));if(window[_0x2c1d79(0x15c)](titanForWork[_0x2c1d79(0x158)]('Step'))==_0x2c1d79(0x117)){if($(_0x4be194)['attr'](_0x2c1d79(0x147))==_0x2c1d79(0x159))var _0x519713=$(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0xff));else var _0x519713=$(_0x4be194)[_0x2c1d79(0x124)]('input');}else var _0x519713=$(_0x4be194)['find'](_0x2c1d79(0x12d));var _0x27c804=_0x519713[_0x2c1d79(0x162)]('data-original-value'),_0x486d51=$(_0x4be194)['attr']('name'),_0x450e7c=$(_0x4be194)[_0x2c1d79(0x162)](_0x2c1d79(0x147));$(_0x4be194)['find'](_0x2c1d79(0x12d))[_0x2c1d79(0x118)](''),_0x519713[_0x2c1d79(0x162)]('id',_0x2c1d79(0x13f)+_0x18f923+'_'+_0x41b72f+'_'+_0x27c804);var _0x1cb663=_0x519713[_0x2c1d79(0x162)]('id');if($(_0x4be194)[_0x2c1d79(0x162)](_0x2c1d79(0x147))=='Date'||$(_0x4be194)['attr'](_0x2c1d79(0x147))==_0x2c1d79(0x14c)){var _0x1cb663=_0x519713[_0x2c1d79(0x162)]('id');_0x519713[_0x2c1d79(0x162)]('id',_0x2c1d79(0x13f)+_0x18f923+'_'+_0x41b72f+'_'+_0x27c804);}else{if(_0x486d51!=undefined||_0x486d51){var _0x1120ab=$['grep'](arrcoldefval,function(_0x4ec60d){const _0x3df68b=_0x2c1d79;return _0x4ec60d[_0x3df68b(0x10b)]==_0x18f923&&_0x486d51==_0x4ec60d[_0x3df68b(0x12e)];});if(_0x1120ab['length']>0x0){$(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0x127))[_0x2c1d79(0x118)](_0x1120ab[0x0][_0x2c1d79(0x136)]),$(_0x4be194)['find'](_0x2c1d79(0x12d))['val'](_0x1120ab[0x0][_0x2c1d79(0x136)]);var _0x5aa6e7=$['grep'](tblcol,function(_0x11d3ec){return _0x11d3ec['tblId']==_0x18f923;}),_0x51e71b=$['grep'](_0x5aa6e7[0x0][_0x2c1d79(0xfb)],function(_0x57194f){return _0x57194f['CalculatedValue']==!![]&&_0x57194f['ColumnName']=='CalculatedValue';}),_0x10c12f='';$[_0x2c1d79(0x120)](_0x51e71b,function(_0x1fa64a,_0x79ba75){const _0x3b0de0=_0x2c1d79;if(_0x79ba75[_0x3b0de0(0x12e)]==_0x486d51){var _0x490273=_0x79ba75[_0x3b0de0(0x12e)];_0x490273=_0x490273[_0x3b0de0(0xfd)]('%',''),_0x490273=_0x490273[_0x3b0de0(0x16a)]('\x20',''),_0x490273=_0x490273['replace'](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0x4c360a=![],_0x54e323;_0x54e323=_0x79ba75[_0x3b0de0(0x151)];if(_0x54e323!=null){_0x54e323=_0x54e323[_0x3b0de0(0xfc)](',');if(_0x54e323['length']>0x0){var _0x1ef4c0='';for(var _0x279486=0x0;_0x279486<_0x54e323[_0x3b0de0(0x115)];_0x279486++){var _0x285ef2=$[_0x3b0de0(0x12a)](_0x54e323[_0x279486]);if(/^[a-zA-Z0-9- ]*$/[_0x3b0de0(0x138)](_0x285ef2)==![])_0x1ef4c0=_0x1ef4c0+_0x285ef2;else{var _0x29e409=$(_0x3b0de0(0x102)+_0x18f923+'_'+_0x41b72f+'_'+_0x285ef2)['val']();_0x29e409==''&&(_0x29e409=0x0),_0x29e409!=undefined?_0x1ef4c0=_0x1ef4c0+_0x29e409:_0x1ef4c0=_0x1ef4c0+_0x285ef2;}}isMathExpression(_0x1ef4c0)==!![]&&(_0x10c12f=math[_0x3b0de0(0x119)](_0x1ef4c0),_0x10c12f=_0x10c12f[_0x3b0de0(0x10c)](0x2),_0x10c12f=_0x10c12f[_0x3b0de0(0x160)](),$(_0x4be194)[_0x3b0de0(0x124)](_0x3b0de0(0x12d))[_0x3b0de0(0x118)](_0x10c12f));}}}}),_0x486d51=_0x486d51[_0x2c1d79(0x16a)]('\x20',''),_0x486d51=_0x486d51[_0x2c1d79(0xfd)](/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,'');var _0x328eef=$(_0x2c1d79(0xf8)+_0x18f923+'_'+_0x486d51)['text']();if(_0x27c804==_0x2c1d79(0x105))_0x328eef=parseFloat(_0x328eef)+parseFloat(_0x10c12f);else{var _0x130a9a=_0x1120ab[0x0][_0x2c1d79(0x136)]?_0x1120ab[0x0][_0x2c1d79(0x136)]:0x0;_0x328eef=parseFloat(_0x328eef)+parseFloat(_0x130a9a);}_0x328eef=_0x328eef?_0x328eef:0x0,$('#ttlval_'+_0x18f923+'_'+_0x486d51)[_0x2c1d79(0x11b)](_0x328eef[_0x2c1d79(0x10c)](0x2));}}}if(_0x450e7c=='Checkbox'){$(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0x123))[_0x2c1d79(0x11c)](_0x2c1d79(0x168),![]);var _0x1120ab=$[_0x2c1d79(0x14b)](arrcoldefval,function(_0x46053c){const _0x441301=_0x2c1d79;return _0x46053c[_0x441301(0x10b)]==_0x18f923&&_0x46053c['Type']=='Checkbox';});window[_0x2c1d79(0x15c)](titanForWork['getQueryStringParameter'](_0x2c1d79(0x167)))==_0x2c1d79(0x117)&&(_0x1120ab[0x0][_0x2c1d79(0x136)]=='1'&&$(_0x4be194)[_0x2c1d79(0x124)](_0x2c1d79(0x123))[_0x2c1d79(0x11c)](_0x2c1d79(0x168),!![]));}}});for(i=0x0;i<tblcol[_0x2e7398(0x115)];i++){var _0x29d46b=this[_0x2e7398(0x164)][_0x2e7398(0x124)](_0x2e7398(0x15e))[_0x2e7398(0x15a)]()[_0x2e7398(0x124)]('td'),_0x3fa173=$[_0x2e7398(0x14b)](tblcol,function(_0x588b00){return _0x588b00['tblId']==_0x18f923;});SetDatpickerNdropDown(_0x3fa173[0x0][_0x2e7398(0xfb)],_0x2e7398(0x156),'TblApprovalEntry_'+_0x18f923,_0x29d46b);}}this[_0x2e7398(0xef)](),this['options'][_0x2e7398(0x165)](),$(_0x2e7398(0x135))['hide'](),this[_0x2e7398(0x164)]['find'](_0x2e7398(0xf5))[_0x2e7398(0x14d)](),totalrow=totalrow+0x1,SetNewAttribut();}[a2_0x1baab2(0x125)](_0x1a9f3e,_0x56362f,_0x1f363f){let _0xa525f5=0x0;_0x56362f['each'](function(){const _0x1492ce=a2_0x3025;_0xa525f5++;if($(this)[_0x1492ce(0x162)](_0x1492ce(0x129))==_0x1492ce(0x109))return;if(!_0x4bd96c(_0xa525f5-0x1))return;_0x1f363f($(this));});function _0x4bd96c(_0x185c7c){const _0x3ad0db=a2_0x3025;if(_0x1a9f3e==null)return!![];else{for(let _0x5c2a41=0x0;_0x5c2a41<_0x1a9f3e[_0x3ad0db(0x115)];_0x5c2a41++){if(_0x185c7c==_0x1a9f3e[_0x5c2a41])return!![];}return![];}}}[a2_0x1baab2(0xef)](){const _0x3c9ca3=a2_0x1baab2;let _0x4b4f48=this;this[_0x3c9ca3(0x164)]['find'](_0x3c9ca3(0x139))['each'](function(){let _0x161998=this;_0x161998['onclick']=function(){const _0x21bc8d=a2_0x3025;_0x4b4f48[_0x21bc8d(0x145)](_0x161998);};}),this['table'][_0x3c9ca3(0x124)](_0x3c9ca3(0x146))[_0x3c9ca3(0x120)](function(){const _0x305764=_0x3c9ca3;let _0x34fdc8=this;_0x34fdc8[_0x305764(0x161)]=function(){const _0x4cdb97=_0x305764;_0x4b4f48[_0x4cdb97(0x142)](_0x34fdc8);};}),this['table'][_0x3c9ca3(0x124)](_0x3c9ca3(0x148))[_0x3c9ca3(0x120)](function(){const _0x5ac590=_0x3c9ca3;let _0x57b691=this;_0x57b691[_0x5ac590(0x161)]=function(){const _0x112d03=_0x5ac590;_0x4b4f48[_0x112d03(0x15f)](_0x57b691);};}),this[_0x3c9ca3(0x164)][_0x3c9ca3(0x124)](_0x3c9ca3(0x126))[_0x3c9ca3(0x120)](function(){const _0x387ee1=_0x3c9ca3;let _0x34639d=this;_0x34639d[_0x387ee1(0x161)]=function(){const _0x5239dd=_0x387ee1;_0x4b4f48[_0x5239dd(0x111)](_0x34639d);};});}['convertTableToCSV'](_0x5d1c40){const _0x52941b=a2_0x1baab2;let _0x20c488=this,_0x28bfdc='',_0x1d2464='';return _0x20c488[_0x52941b(0x164)][_0x52941b(0x124)](_0x52941b(0xed))[_0x52941b(0x120)](function(){const _0x41d913=_0x52941b;_0x20c488[_0x41d913(0x140)]($(this))&&$(this)[_0x41d913(0x124)]('#bAcep')[_0x41d913(0x137)]();let _0x27c58a=$(this)[_0x41d913(0x124)]('td');_0x28bfdc='',_0x27c58a[_0x41d913(0x120)](function(){const _0x1ee0cf=_0x41d913;if($(this)[_0x1ee0cf(0x162)](_0x1ee0cf(0x129))=='bstable-actions'){}else _0x28bfdc=_0x28bfdc+$(this)['html']()+_0x5d1c40;}),_0x28bfdc!=''&&(_0x28bfdc=_0x28bfdc[_0x41d913(0x103)](0x0,_0x28bfdc[_0x41d913(0x115)]-_0x5d1c40[_0x41d913(0x115)])),_0x1d2464=_0x1d2464+_0x28bfdc+'\x0a';}),_0x1d2464;}}function SetNewAttribut(){const _0x5da87b=a2_0x1baab2;$(_0x5da87b(0x15d))[_0x5da87b(0x169)]('id'),$('.datepicker')[_0x5da87b(0x116)](_0x5da87b(0x131)),$(_0x5da87b(0x15d))[_0x5da87b(0x112)]({'dateFormat':_0x5da87b(0x11f)});}
+/*
+ * BSTable
+ * @description  Javascript (JQuery) library to make bootstrap tables editable. Inspired by Tito Hinostroza's library Bootstable. BSTable Copyright (C) 2020 Thomas Rokicki
+ * 
+ * @version 1.0
+ * @author Thomas Rokicki (CraftingGamerTom), Tito Hinostroza (t-edson)
+ */
+
+"use strict";
+
+/** @class BSTable class that represents an editable bootstrap table. */
+class BSTable {
+
+  /**
+   * Creates an instance of BSTable.
+   *
+   * @constructor
+   * @author: Thomas Rokicki (CraftingGamerTom)
+   * @param {tableId} tableId The id of the table to make editable.
+   * @param {options} options The desired options for the editable table.
+   */
+  constructor(tableId, options) {
+
+    var defaults = {
+      editableColumns: null,          // Index to editable columns. If null all td will be editable. Ex.: "1,2,3,4,5"
+      $addButton: null,               // Jquery object of "Add" button
+      onEdit: function() {},          // Called after editing (accept button clicked)
+      onBeforeDelete: function() {},  // Called before deletion
+      onDelete: function() {},        // Called after deletion
+      onAdd: function() {},           // Called when added a new row
+      advanced: {                     // Do not override advanced unless you know what youre doing
+          columnLabel: 'Actions',
+          buttonHTML: `<div class="btn-group table-action-button-grpup">
+                <button id="bEdit" type="button" class="btn btn-sm btn-default">
+                    <span class="fa fa-edit" > </span>
+                </button>
+                <button id="bDel" onclick="DeleteTableRow(this)" type="button" class="btn btn-sm btn-default">
+                    <span class="fa fa-trash" > </span>
+                </button>
+                <button id="bAcep" type="button" class="btn btn-sm btn-default" style="display:none;">
+                    <span class="fa fa-check-circle" > </span>
+                </button>
+                <button id="bCanc" type="button" class="btn btn-sm btn-default" style="display:none;">
+                    <span class="fa fa-times-circle" > </span>
+                </button>
+            </div>`
+      }
+    };
+
+    this.table = $('#' + tableId);
+    this.options = $.extend(true, defaults, options);
+
+    /** @private */ this.actionsColumnHTML = '<td name="bstable-actions">' + this.options.advanced.buttonHTML + '</td>'; 
+
+    //Process "editableColumns" parameter. Sets the columns that will be editable
+    if (this.options.editableColumns != null) {
+      // console.log("[DEBUG] editable columns: ", this.options.editableColumns);
+      
+      //Extract felds
+      this.options.editableColumns = this.options.editableColumns.split(',');
+    }
+  }
+
+  // --------------------------------------------------
+  // -- Public Functions
+  // --------------------------------------------------
+
+  /**
+   * Initializes the editable table. Creates the actions column.
+   * @since 1.0.0
+   */
+  init() {
+    this.table.find('thead tr').append('<th name="bstable-actions">' + this.options.advanced.columnLabel + '</th>');  // Append column to header
+    this.table.find('tbody tr').append(this.actionsColumnHTML);
+
+    this._addOnClickEventsToActions(); // Add onclick events to each action button in all rows
+
+    // Process "addButton" parameter
+    if (this.options.$addButton != null) {
+      let _this = this;
+      // Add a managed onclick event to the button
+      this.options.$addButton.click(function() {
+        _this._actionAddRow();
+      });
+    }
+  }
+
+  /**
+   * Destroys the editable table. Removes the actions column.
+   * @since 1.0.0
+   */
+  destroy() {
+    this.table.find('th[name="bstable-actions"]').remove(); //remove header
+    this.table.find('td[name="bstable-actions"]').remove(); //remove body rows
+  }
+
+  /**
+   * Refreshes the editable table. 
+   *
+   * Literally just removes and initializes the editable table again, wrapped in one function.
+   * @since 1.0.0
+   */
+  refresh() {
+    this.destroy();
+    this.init();
+  }
+
+  // --------------------------------------------------
+  // -- 'Static' Functions
+  // --------------------------------------------------
+
+  /**
+   * Returns whether the provided row is currently being edited.
+   *
+   * @param {Object} row
+   * @return {boolean} true if row is currently being edited.
+   * @since 1.0.0
+   */
+  currentlyEditingRow($currentRow) {
+    // Check if the row is currently being edited
+    if ($currentRow.attr('data-status')=='editing') {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+  // --------------------------------------------------
+  // -- Button Mode Functions
+  // --------------------------------------------------
+
+  _actionsModeNormal(button) {
+    $(button).parent().find('#bAcep').hide();
+    $(button).parent().find('#bCanc').hide();
+    $(button).parent().find('#bEdit').show();
+    $(button).parent().find('#bDel').show();
+    let $currentRow = $(button).parents('tr');         // get the row
+    $currentRow.attr('data-status', '');               // remove editing status
+  }
+  _actionsModeEdit(button) {
+    $(button).parent().find('#bAcep').show();
+    $(button).parent().find('#bCanc').show();
+    $(button).parent().find('#bEdit').hide();
+    $(button).parent().find('#bDel').hide();
+    let $currentRow = $(button).parents('tr');         // get the row
+    $currentRow.attr('data-status', 'editing');        // indicate the editing status
+  }
+
+  // --------------------------------------------------
+  // -- Private Event Functions
+  // --------------------------------------------------
+
+  _rowEdit(button) {                  
+  // Indicate user is editing the row
+    let $currentRow = $(button).parents('tr');       // access the row
+    console.log($currentRow);
+    let $cols = $currentRow.find('td');              // read rows
+    console.log($cols);
+    if (this.currentlyEditingRow($currentRow)) return;    // not currently editing, return
+    //Pone en modo de edición
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+      let content = $td.html();             // read content
+      console.log(content);
+      let colid = $td[0].id;
+      let div = '<div style="display: none;">' + content + '</div>';  // hide content (save for later use)
+      let input = '<input class="form-control input-sm"  data-original-value="' + content + '" value="' + content + '" id="'+colid+'">';      
+      $td.html(div + input);                // set content
+    });      
+    this._actionsModeEdit(button);
+  //  const myTimeout = setTimeout(SetDatpickerNdropDown(tblcol[0]), 15000);
+  }
+  _rowDelete(button) {                        
+  // Remove the row
+    let $currentRow = $(button).parents('tr');       // access the row
+    this.options.onBeforeDelete($currentRow);
+    $currentRow.remove();
+    this.options.onDelete();
+    totalrow = totalrow - 1;
+    let $allRows = this.table.find('tbody tr');//alert($allRows.length);
+    let $tr = $allRows.length - 1;
+    if($tr == 1){
+    this.table.find('tbody tr').find('td:last').find('#bDel').hide();   
+    }   
+    for(i=0; i< $allRows.length;i++){
+    	let newCnt = i;
+    	this.table.find($allRows[i]).prev().find('td:first').html(newCnt);
+    //	$allRows[i].find('td:first').html(newCnt);
+    }
+    
+    let tblId = this.table.selector.split('_')[1];
+    let alltd = this.table.find('tbody tr:first').find('td');
+    
+    if(ColumnTotalList.length>0)
+    {
+		var FilteredRec = $.grep(ColumnTotalList, function(v) {
+    		return v.Setup == tblId;
+		});
+		
+		if(FilteredRec.length>0)
+		{
+			for(var k=0; k<FilteredRec.length; k++)
+			{	
+				DynamicSumRow(tblId,FilteredRec[k].ColumnName,'','');
+			}	
+		}
+	}
+
+
+ 
+    /*alltd.each(function() {
+    	DynamicSumRow(tblId, $(this).attr('name'),'','')
+    })*/        
+  }
+  _rowAccept(button) {
+  // Accept the changes to the row
+    let $currentRow = $(button).parents('tr');    // access the row
+    console.log($currentRow);
+    let $cols = $currentRow.find('td');              // read fields
+    if (!this.currentlyEditingRow($currentRow)) return;   // not currently editing, return
+    
+    // Finish editing the row & save edits
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+      let cont = $td.find('input').val();     // read through each input
+      $td.html(cont);                         // set the content and remove the input fields
+    });
+    this._actionsModeNormal(button);
+    this.options.onEdit($currentRow[0]);
+  }
+  _rowCancel(button) {
+  // Reject the changes
+    let $currentRow = $(button).parents('tr');       // access the row
+    let $cols = $currentRow.find('td');              // read fields
+    if (!this.currentlyEditingRow($currentRow)) return;   // not currently editing, return
+
+    // Finish editing the row & delete changes
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+        let cont = $td.find('div').html();    // read div content
+        $td.html(cont);                       // set the content and remove the input fields
+    });
+    this._actionsModeNormal(button);
+  }
+	_actionAddRow()
+  	{
+  	  // Add row to this table
+		let count = 0;
+		let $allRows = this.table.find('tbody tr');
+    	let tblId = this.table.selector.split('_')[1];
+    	if ($allRows.length==0) 
+    	{ // there are no rows. we must create them
+    		let $currentRow = this.table.find('thead tr');  // find header
+    	  	let $cols = $currentRow.find('th');  // read each header field
+    	  	// create the new row
+    	  	let newColumnHTML = '';
+    	  	$cols.each(function() {
+    	    	let column = this; // Inner function this (column object)
+    	    	if ($(column).attr('name')=='bstable-actions') 
+    	    	{
+    	      		newColumnHTML = newColumnHTML + actionsColumnHTML;  // add action buttons
+    	    	} 
+    	    	else 
+    	    	{
+    	      		newColumnHTML = newColumnHTML + '<td></td>';
+    	    	}
+    	  	});
+    	  	this.table.find('tbody').append('<tr>'+newColumnHTML+'</tr>');
+    	} 
+    	else 
+    	{ // there are rows in the table. We will clone the last row
+    	  	count = count + $allRows.length;
+    	  	let $lastRow = this.table.find('tr').eq(2);
+    	  	//$lastRow.clone().appendTo($lastRow.parent());        
+    	  	$lastRow.clone().insertBefore($lastRow.parent().find('tr:last-child'));
+    	  	$lastRow = this.table.find('tr:last');
+    	  	$lastRow.prev().attr('id', tblId +'_'+$allRows.length); 
+    		//	  $lastRow.attr('id', tblId +'_'+$allRows.length+1);      $lastRow.attr('name', $allRows.length);
+    	  	let $rowSeq = $allRows.length; //sequence
+    	  	this.table.find('tr:last-child').prev().find('td:first');
+    	  	let $firstrowSeq = this.table.find('tr:last-child').prev().find('td:first');
+    	  	$firstrowSeq.html($rowSeq);
+    	  	$lastRow.prev().find("input,button,textarea,select").attr("disabled", false);
+    	  	let $cols = $lastRow.prev().find('td');  //lee campos
+    	  	$cols.each(function() {
+    	  	  	let column = this; // Inner function this (column object)
+    	  	  	if ($(column).attr('name') == 'bstable-actions') 
+    	  		{
+    	      		// action buttons column. change nothing
+    	      		$(column).find('#bDel').show();
+    	    	} 
+    	    	else 
+    	    	{
+    	    		$(column).attr('id', 'R_'+$rowSeq); 
+    	    		console.log($(column).find('input').find('.Date'));
+    	    		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation'){
+    	    				if($(column).attr('coltype') == 'Person'){
+		    	    		var currelem = $(column).find('div');
+		    	    		}else{
+		    	    		var currelem = $(column).find('input');
+		    	    		}     	    			    	    			
+    	    		}else{
+    	    		     var currelem = $(column).find('input');
+    	    		}  	    	 	    		    	    		
+    	    		var name = currelem.attr('data-original-value');
+    	    		var colName = $(column).attr('name'); 
+    	    		var colType = $(column).attr('coltype'); 
+    	    		$(column).find('input').val('');    
+    	    		currelem.attr('id' , 'tbl_'+tblId+'_'+$rowSeq+'_'+name);
+    	    		var currId= currelem.attr('id');	  	  		   	  	  	
+    	    		if($(column).attr('coltype') == 'Date' || $(column).attr('coltype') == 'DueDate' )
+    	    		{
+    	    			var currId= currelem.attr('id');
+    	    			//$(this).attr('id' , currId+'_'+$rowSeq);    	    			
+    	    			currelem.attr('id' , 'tbl_'+tblId+'_'+$rowSeq+'_'+name);
+    	    			//$( ".datepicker" ).datepicker();
+    	    		}else{    	    			
+	    	    		if(colName != undefined || colName ){    	  	  			
+	    	  	  			var FilteredValue = $.grep(arrcoldefval, function(v) {
+								return v.tblId == tblId && colName == v.Title;
+							});
+							if(FilteredValue.length > 0){
+							$(column).find('select').val(FilteredValue[0].Defval);
+						    $(column).find('input').val(FilteredValue[0].Defval);
+						    
+							var filtertbl = $.grep(tblcol, function(v) {
+								return v.tblId == tblId
+							});
+							var filtertblcols = $.grep(filtertbl[0].data, function(v) {
+								return v.CalculatedValue == true && v.ColumnName == 'CalculatedValue'
+							});
+						var result = '';
+			      		$.each(filtertblcols, function(i,responsere){
+			      			if(responsere.Title == colName)
+							{
+							var  Title = responsere.Title; Title= Title.replace('%', ''); Title= Title.replaceAll(' ', ''); Title= Title.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+							var IsCalculate = false, Formula ;
+							Formula = responsere.Formula; 
+							if(Formula != null)	{								
+						        Formula = Formula.split(',');
+							if(Formula.length>0)
+							{
+							var NewExp='';
+							for(var q=0; q<Formula.length; q++)
+							{
+							var evt = $.trim(Formula[q]);
+							if(/^[a-zA-Z0-9- ]*$/.test(evt) == false)
+							{
+							NewExp = NewExp+evt;
+							}
+							else{											
+						/*	var FilteredValue = $.grep(ResultData, function(v) {
+							return v.ColumnName == evt;
+							});  */
+							//var currId= currelem.attr('id');	  	  		   	  	  	
+							var CurrntVal = $('#tbl_'+tblId+'_'+$rowSeq+'_'+evt).val()
+							if(CurrntVal == ""){CurrntVal = 0;}
+							if(CurrntVal != undefined){
+							NewExp = NewExp+CurrntVal; 
+							}else{
+							NewExp = NewExp+evt;
+							}
+							}
+							}        											
+							if(isMathExpression(NewExp) == true)
+							{
+							result = math.evaluate(NewExp);        												 
+							result = result.toFixed(2); result = result.toString(); 
+							$(column).find('input').val(result); //$('.'+Title).val(result)   																						
+							//tableappend += '<input type="number" class="form-control NeedTotal '+Title+'" '+setnumberlimit +' '+datatypeval +' style="text-align: right" data-original-value="'+responsere.ColumnName+'" value="'+result +'" onfocusin="return CalculateValue(this, \''+responsere.Title+'\',\''+Formula+'\',\''+itemid+'\',\''+IsTotalneed +'\');" onkeyup="DynamicSum(\''+itemid+'\',\''+responsere.Title+'\',\''+IsCalculate +'\',\''+Formula+'\')" id="tbl_'+itemid+'_1_'+responsere.ColumnName+'" readonly ></td>';      											
+							}										
+							}						
+			
+							}
+							}
+					})						    
+						    colName = colName.replaceAll(' ', ''); colName = colName.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "");
+						    var ttl = $('#ttlval_'+tblId+'_'+colName).text();
+						    if(name == 'CalculatedValue'){
+						    ttl = parseFloat(ttl) + parseFloat(result) ;
+						    }else{
+						    var dval = FilteredValue[0].Defval ? FilteredValue[0].Defval : 0;
+						    ttl = parseFloat(ttl) + parseFloat(dval);
+						    }
+						    ttl = ttl ? ttl  : 0;
+						    $('#ttlval_'+tblId+'_'+colName).text(ttl.toFixed(2))
+						    }
+						}
+					}
+    	  	   		// clear the text    	  	  		
+    	  	  		//$( ".datepicker" ).datepicker();
+    	  	  		if(colType == 'Checkbox')  {	  	  		
+	    	  	  		$(column).find('input[type="checkbox"]').prop("checked", false);
+	    	  	  		var FilteredValue = $.grep(arrcoldefval, function(v) {
+							return v.tblId == tblId && v.Type == 'Checkbox';
+						});  
+						if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation'){
+							if(FilteredValue[0].Defval == '1') {
+								$(column).find('input[type="checkbox"]').prop("checked", true);
+							}
+						}
+					}
+    	    	}
+      		});
+      			                    
+      		for(i=0; i<tblcol.length;i++)
+      		{  	 		 		
+	 			var field = this.table.find("tr:last-child").prev().find('td'); // $("#"+tblId+"_"+$rowSeq).find('td');   // this.table.find("tr:last-child").prev().find('td');
+			    var filtertbl = $.grep(tblcol, function(v) {
+							return v.tblId == tblId
+						});  
+			    SetDatpickerNdropDown(filtertbl[0].data,'tbl',"TblApprovalEntry_"+tblId, field); 
+			    //$( ".datepicker" ).datepicker(); 	   	          	   
+	  		}     	 
+    	}
+    	//$( ".datepicker" ).datepicker(); 
+    	this._addOnClickEventsToActions(); // Add onclick events to each action button in all rows
+    	this.options.onAdd();
+    	//$( ".datepicker" ).datepicker();
+    	$('#bEdit').hide();this.table.find('#bDel').show();
+    	totalrow = totalrow +1; 
+ 		//   this._rowEdit();
+ 		//$( ".datepicker" ).datepicker();
+ 		SetNewAttribut();
+ 		
+	}
+
+  // --------------------------------------------------
+  // -- Helper Functions
+  // --------------------------------------------------
+	//$( ".datepicker" ).datepicker();
+  _modifyEachColumn($editableColumns, $cols, howToModify) {
+  // Go through each editable field and perform the howToModifyFunction function
+    let n = 0;
+    $cols.each(function() {
+      n++;
+      if ($(this).attr('name')=='bstable-actions') return;    // exclude the actions column
+      if (!isEditableColumn(n-1)) return;                     // Check if the column is editable
+      howToModify($(this));                                   // If editable, call the provided function
+    });
+    // console.log("Number of modified columns: " + n); // debug log
+    
+
+    function isEditableColumn(columnIndex) {
+    // Indicates if the column is editable, based on configuration
+        if ($editableColumns==null) {                           // option not defined
+            return true;                                        // all columns are editable
+        } else {                                                // option is defined
+            //console.log('isEditableColumn: ' + columnIndex);  // DEBUG
+            for (let i = 0; i < $editableColumns.length; i++) {
+              if (columnIndex == $editableColumns[i]) return true;
+            }
+            return false;  // column not found
+        }
+    }
+  }
+
+  _addOnClickEventsToActions() {
+    let _this = this;
+    // Add onclick events to each action button
+    this.table.find('tbody tr #bEdit').each(function() {let button = this; button.onclick = function() {_this._rowEdit(button)} });
+    this.table.find('tbody tr #bDel').each(function() {let button = this; button.onclick = function() {_this._rowDelete(button)} });
+    this.table.find('tbody tr #bAcep').each(function() {let button = this; button.onclick = function() {_this._rowAccept(button)} });
+    this.table.find('tbody tr #bCanc').each(function() {let button = this; button.onclick = function() {_this._rowCancel(button)} });
+  }
+
+  // --------------------------------------------------
+  // -- Conversion Functions
+  // --------------------------------------------------
+
+  convertTableToCSV(separator) {  
+  // Convert table to CSV
+    let _this = this;
+    let $currentRowValues = '';
+    let tableValues = '';
+
+    _this.table.find('tbody tr').each(function() {
+        // force edits to complete if in progress
+        if (_this.currentlyEditingRow($(this))) {
+            $(this).find('#bAcep').click();       // Force Accept Edit
+        }
+        let $cols = $(this).find('td');           // read columns
+        $currentRowValues = '';
+        $cols.each(function() {
+            if ($(this).attr('name')=='bstable-actions') {
+                // buttons column - do nothing
+            } else {
+                $currentRowValues = $currentRowValues + $(this).html() + separator;
+            }
+        });
+        if ($currentRowValues!='') {
+            $currentRowValues = $currentRowValues.substr(0, $currentRowValues.length-separator.length); 
+        }
+        tableValues = tableValues + $currentRowValues + '\n';
+    });
+    return tableValues;
+  }
+
+}
+
+
+function SetNewAttribut()
+{
+	$(".datepicker").removeAttr("id");
+	$(".datepicker").removeClass("hasDatepicker");
+	$( ".datepicker" ).datepicker({ dateFormat: 'MM dd, yy' });
+}

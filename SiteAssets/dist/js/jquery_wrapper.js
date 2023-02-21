@@ -1,1 +1,52 @@
-function a0_0x4b78(_0x58867c,_0x371b43){var _0x59639b=a0_0x5963();return a0_0x4b78=function(_0x4b7816,_0x50691a){_0x4b7816=_0x4b7816-0x18d;var _0x577324=_0x59639b[_0x4b7816];return _0x577324;},a0_0x4b78(_0x58867c,_0x371b43);}(function(_0xc35e19,_0x358be4){var _0x1c0761=a0_0x4b78,_0x58b882=_0xc35e19();while(!![]){try{var _0x30c0dd=parseInt(_0x1c0761(0x198))/0x1+-parseInt(_0x1c0761(0x18e))/0x2+-parseInt(_0x1c0761(0x196))/0x3+-parseInt(_0x1c0761(0x191))/0x4*(-parseInt(_0x1c0761(0x193))/0x5)+-parseInt(_0x1c0761(0x1a8))/0x6*(parseInt(_0x1c0761(0x1a4))/0x7)+-parseInt(_0x1c0761(0x1a6))/0x8+parseInt(_0x1c0761(0x1a0))/0x9;if(_0x30c0dd===_0x358be4)break;else _0x58b882['push'](_0x58b882['shift']());}catch(_0x5c98e2){_0x58b882['push'](_0x58b882['shift']());}}}(a0_0x5963,0x96cee),function(_0x58c1fd){'use strict';var _0x1774a8=a0_0x4b78;if(typeof define==='function'&&define[_0x1774a8(0x194)])define([_0x1774a8(0x18f),_0x1774a8(0x1a9),'jquery-ui'],_0x58c1fd);else typeof module!==_0x1774a8(0x190)&&module['exports']?module[_0x1774a8(0x19a)]=_0x58c1fd(require('jquery'),require(_0x1774a8(0x1a9)),require('jquery-ui')):_0x58c1fd(jQuery,Tabulator);}(function(_0x1c0661,_0x5f3cf8){var _0x36584f=a0_0x4b78;_0x1c0661[_0x36584f(0x192)](_0x36584f(0x19c),{'_create':function _0x12179a(){var _0x19a7c5=_0x36584f,_0x2e6813=Object[_0x19a7c5(0x199)]({},this[_0x19a7c5(0x195)]);delete _0x2e6813[_0x19a7c5(0x19d)],delete _0x2e6813[_0x19a7c5(0x19f)],this[_0x19a7c5(0x1a5)]=new _0x5f3cf8(this[_0x19a7c5(0x1a7)][0x0],_0x2e6813);for(var _0x4fb873 in _0x5f3cf8[_0x19a7c5(0x1a2)]){typeof _0x5f3cf8[_0x19a7c5(0x1a2)][_0x4fb873]===_0x19a7c5(0x19e)&&_0x4fb873[_0x19a7c5(0x1a3)](0x0)!=='_'&&(this[_0x4fb873]=this['table'][_0x4fb873][_0x19a7c5(0x1a1)](this[_0x19a7c5(0x1a5)]));}},'_setOption':function _0x3ad1c7(_0x159e85,_0x24861f){var _0x25628c=_0x36584f;console[_0x25628c(0x18d)](_0x25628c(0x19b));},'_destroy':function _0x401d84(_0x3705f6,_0x518a08){var _0x417575=_0x36584f;this[_0x417575(0x1a5)][_0x417575(0x197)]();}});}));function a0_0x5963(){var _0x231165=['error','586474MtdFpn','jquery','undefined','52xSMfvr','widget','381715codVRS','amd','options','1925367SWdsKO','destroy','351579pmtIBO','assign','exports','Tabulator\x20jQuery\x20wrapper\x20does\x20not\x20support\x20setting\x20options\x20after\x20the\x20table\x20has\x20been\x20instantiated','ui.tabulator','create','function','disabled','5241177JIuZWh','bind','prototype','charAt','97342eVFskX','table','1098024NVokGQ','element','102ONiuya','tabulator'];a0_0x5963=function(){return _0x231165;};return a0_0x5963();}
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+/*
+ * This file is part of the Tabulator package.
+ *
+ * (c) Oliver Folkerd <oliver.folkerd@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Full Documentation & Demos can be found at: http://olifolkerd.github.io/tabulator/
+ *
+ */
+
+(function (factory) {
+  "use strict";
+
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery', 'tabulator', 'jquery-ui'], factory);
+  } else if (typeof module !== 'undefined' && module.exports) {
+    module.exports = factory(require('jquery'), require('tabulator'), require('jquery-ui'));
+  } else {
+    factory(jQuery, Tabulator);
+  }
+})(function ($, Tabulator) {
+
+  $.widget("ui.tabulator", {
+    _create: function _create() {
+      var options = Object.assign({}, this.options);
+
+      delete options.create;
+      delete options.disabled;
+
+      this.table = new Tabulator(this.element[0], options);
+
+      //map tabulator functions to jquery wrapper
+      for (var key in Tabulator.prototype) {
+        if (typeof Tabulator.prototype[key] === "function" && key.charAt(0) !== "_") {
+          this[key] = this.table[key].bind(this.table);
+        }
+      }
+    },
+
+    _setOption: function _setOption(option, value) {
+      console.error("Tabulator jQuery wrapper does not support setting options after the table has been instantiated");
+    },
+
+    _destroy: function _destroy(option, value) {
+      this.table.destroy();
+    }
+  });
+});

@@ -1,1 +1,116 @@
-function a38_0x2a09(_0x520ef1,_0x2dd128){var _0x54367a=a38_0x5436();return a38_0x2a09=function(_0x2a0948,_0x5de52a){_0x2a0948=_0x2a0948-0xa9;var _0x5f0584=_0x54367a[_0x2a0948];return _0x5f0584;},a38_0x2a09(_0x520ef1,_0x2dd128);}var a38_0x5a0c49=a38_0x2a09;(function(_0x1a3c33,_0x19b37d){var _0x294d59=a38_0x2a09,_0x14e8c4=_0x1a3c33();while(!![]){try{var _0x3befee=parseInt(_0x294d59(0xc9))/0x1+parseInt(_0x294d59(0xbc))/0x2*(-parseInt(_0x294d59(0xcf))/0x3)+-parseInt(_0x294d59(0xc1))/0x4*(-parseInt(_0x294d59(0xb2))/0x5)+parseInt(_0x294d59(0xba))/0x6+-parseInt(_0x294d59(0xc7))/0x7*(-parseInt(_0x294d59(0xae))/0x8)+parseInt(_0x294d59(0xd3))/0x9*(parseInt(_0x294d59(0xbe))/0xa)+-parseInt(_0x294d59(0xd2))/0xb;if(_0x3befee===_0x19b37d)break;else _0x14e8c4['push'](_0x14e8c4['shift']());}catch(_0x188b6a){_0x14e8c4['push'](_0x14e8c4['shift']());}}}(a38_0x5436,0x690bb));var _typeof=typeof Symbol===a38_0x5a0c49(0xb9)&&typeof Symbol['iterator']===a38_0x5a0c49(0xaf)?function(_0xfcf21e){return typeof _0xfcf21e;}:function(_0x3add81){var _0x3c9d8f=a38_0x5a0c49;return _0x3add81&&typeof Symbol==='function'&&_0x3add81[_0x3c9d8f(0xcd)]===Symbol&&_0x3add81!==Symbol[_0x3c9d8f(0xcb)]?'symbol':typeof _0x3add81;},Mutator=function Mutator(_0x4fbff6){var _0x4732d3=a38_0x5a0c49;this['table']=_0x4fbff6,this[_0x4732d3(0xb0)]=['',_0x4732d3(0xc2),'edit',_0x4732d3(0xbb)],this['enabled']=!![];};Mutator['prototype'][a38_0x5a0c49(0xd1)]=function(_0x39aa02){var _0x35ef7f=a38_0x5a0c49,_0x4844d0=this,_0x579b00=![],_0x30dc5d={};this[_0x35ef7f(0xb0)]['forEach'](function(_0x5c1f69){var _0x55c9cc=_0x35ef7f,_0x3c2e70=_0x55c9cc(0xd7)+(_0x5c1f69[_0x55c9cc(0xb4)](0x0)[_0x55c9cc(0xac)]()+_0x5c1f69[_0x55c9cc(0xd5)](0x1)),_0x2b12c3;_0x39aa02['definition'][_0x3c2e70]&&(_0x2b12c3=_0x4844d0[_0x55c9cc(0xb7)](_0x39aa02[_0x55c9cc(0xab)][_0x3c2e70]),_0x2b12c3&&(_0x579b00=!![],_0x30dc5d[_0x3c2e70]={'mutator':_0x2b12c3,'params':_0x39aa02[_0x55c9cc(0xab)][_0x3c2e70+'Params']||{}}));}),_0x579b00&&(_0x39aa02[_0x35ef7f(0xad)][_0x35ef7f(0xd0)]=_0x30dc5d);},Mutator['prototype']['lookupMutator']=function(_0x298d9f){var _0x1a8fea=a38_0x5a0c49,_0x42ea3f=![];switch(typeof _0x298d9f===_0x1a8fea(0xc5)?'undefined':_typeof(_0x298d9f)){case'string':this[_0x1a8fea(0xb5)][_0x298d9f]?_0x42ea3f=this[_0x1a8fea(0xb5)][_0x298d9f]:console[_0x1a8fea(0xa9)]('Mutator\x20Error\x20-\x20No\x20such\x20mutator\x20found,\x20ignoring:\x20',_0x298d9f);break;case'function':_0x42ea3f=_0x298d9f;break;}return _0x42ea3f;},Mutator[a38_0x5a0c49(0xcb)][a38_0x5a0c49(0xb1)]=function(_0x3dbc72,_0x9338e,_0x5983c4){var _0x457090=a38_0x5a0c49,_0x300f5c=this,_0x18ae45=_0x457090(0xd7)+(_0x9338e['charAt'](0x0)[_0x457090(0xac)]()+_0x9338e[_0x457090(0xd5)](0x1)),_0x5275ca;return this[_0x457090(0xc8)]&&_0x300f5c[_0x457090(0xc4)][_0x457090(0xce)][_0x457090(0xc0)](function(_0x5b4d38){var _0x2d07d4=_0x457090,_0x29da9c,_0x57b2d3,_0x52442d;_0x5b4d38[_0x2d07d4(0xad)][_0x2d07d4(0xd0)]&&(_0x29da9c=_0x5b4d38[_0x2d07d4(0xad)][_0x2d07d4(0xd0)][_0x18ae45]||_0x5b4d38['modules'][_0x2d07d4(0xd0)][_0x2d07d4(0xd7)]||![],_0x29da9c&&_0x5983c4&&(_0x5275ca=_0x5b4d38['getFieldValue'](_0x5983c4),(_0x9338e=='data'||typeof _0x5275ca!==_0x2d07d4(0xc5))&&(_0x52442d=_0x5b4d38[_0x2d07d4(0xca)](),_0x57b2d3=typeof _0x29da9c[_0x2d07d4(0xb8)]===_0x2d07d4(0xb9)?_0x29da9c['params'](_0x5275ca,_0x3dbc72,_0x9338e,_0x52442d):_0x29da9c[_0x2d07d4(0xb8)],_0x5b4d38[_0x2d07d4(0xd6)](_0x3dbc72,_0x29da9c['mutator'](_0x5275ca,_0x3dbc72,_0x9338e,_0x57b2d3,_0x52442d)))));}),_0x3dbc72;},Mutator[a38_0x5a0c49(0xcb)][a38_0x5a0c49(0xb3)]=function(_0x463b88,_0x2756b0){var _0x323307=a38_0x5a0c49,_0x14e4d5=_0x463b88[_0x323307(0xc3)]['modules']['mutate'][_0x323307(0xbf)]||_0x463b88[_0x323307(0xc3)][_0x323307(0xad)]['mutate'][_0x323307(0xd7)]||![],_0x601b21={};return _0x14e4d5?(_0x601b21=Object[_0x323307(0xc6)](_0x601b21,_0x463b88[_0x323307(0xaa)][_0x323307(0xd4)]()),_0x463b88[_0x323307(0xc3)][_0x323307(0xd6)](_0x601b21,_0x2756b0),_0x14e4d5['mutator'](_0x2756b0,_0x601b21,_0x323307(0xcc),_0x14e4d5[_0x323307(0xb8)],_0x463b88[_0x323307(0xca)]())):_0x2756b0;},Mutator[a38_0x5a0c49(0xcb)][a38_0x5a0c49(0xb6)]=function(){this['enabled']=!![];},Mutator['prototype'][a38_0x5a0c49(0xbd)]=function(){var _0x18622a=a38_0x5a0c49;this[_0x18622a(0xc8)]=![];},Mutator[a38_0x5a0c49(0xcb)][a38_0x5a0c49(0xb5)]={},Tabulator[a38_0x5a0c49(0xcb)]['registerModule'](a38_0x5a0c49(0xd7),Mutator);function a38_0x5436(){var _0x2b9164=['function','4791816qicQON','clipboard','2uLMWAt','disable','100iILQnv','mutatorEdit','traverse','344IcZmsh','data','column','table','undefined','assign','565600IEdwmn','enabled','66853Petqla','getComponent','prototype','edit','constructor','columnManager','1414305ErQMOu','mutate','initializeColumn','11555951DhJWcI','258759aBoawB','getData','slice','setFieldValue','mutator','warn','row','definition','toUpperCase','modules','8Cqhxpz','symbol','allowedTypes','transformRow','41770uJWQll','transformCell','charAt','mutators','enable','lookupMutator','params'];a38_0x5436=function(){return _0x2b9164;};return a38_0x5436();}
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Mutator = function Mutator(table) {
+	this.table = table; //hold Tabulator object
+	this.allowedTypes = ["", "data", "edit", "clipboard"]; //list of muatation types
+	this.enabled = true;
+};
+
+//initialize column mutator
+Mutator.prototype.initializeColumn = function (column) {
+	var self = this,
+	    match = false,
+	    config = {};
+
+	this.allowedTypes.forEach(function (type) {
+		var key = "mutator" + (type.charAt(0).toUpperCase() + type.slice(1)),
+		    mutator;
+
+		if (column.definition[key]) {
+			mutator = self.lookupMutator(column.definition[key]);
+
+			if (mutator) {
+				match = true;
+
+				config[key] = {
+					mutator: mutator,
+					params: column.definition[key + "Params"] || {}
+				};
+			}
+		}
+	});
+
+	if (match) {
+		column.modules.mutate = config;
+	}
+};
+
+Mutator.prototype.lookupMutator = function (value) {
+	var mutator = false;
+
+	//set column mutator
+	switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+		case "string":
+			if (this.mutators[value]) {
+				mutator = this.mutators[value];
+			} else {
+				console.warn("Mutator Error - No such mutator found, ignoring: ", value);
+			}
+			break;
+
+		case "function":
+			mutator = value;
+			break;
+	}
+
+	return mutator;
+};
+
+//apply mutator to row
+Mutator.prototype.transformRow = function (data, type, updatedData) {
+	var self = this,
+	    key = "mutator" + (type.charAt(0).toUpperCase() + type.slice(1)),
+	    value;
+
+	if (this.enabled) {
+
+		self.table.columnManager.traverse(function (column) {
+			var mutator, params, component;
+
+			if (column.modules.mutate) {
+				mutator = column.modules.mutate[key] || column.modules.mutate.mutator || false;
+
+				if (mutator && updatedData) {
+					value = column.getFieldValue(updatedData);
+
+					if (type == "data" || typeof value !== "undefined") {
+						component = column.getComponent();
+						params = typeof mutator.params === "function" ? mutator.params(value, data, type, component) : mutator.params;
+						column.setFieldValue(data, mutator.mutator(value, data, type, params, component));
+					}
+				}
+			}
+		});
+	}
+
+	return data;
+};
+
+//apply mutator to new cell value
+Mutator.prototype.transformCell = function (cell, value) {
+	var mutator = cell.column.modules.mutate.mutatorEdit || cell.column.modules.mutate.mutator || false,
+	    tempData = {};
+
+	if (mutator) {
+		tempData = Object.assign(tempData, cell.row.getData());
+		cell.column.setFieldValue(tempData, value);
+		return mutator.mutator(value, tempData, "edit", mutator.params, cell.getComponent());
+	} else {
+		return value;
+	}
+};
+
+Mutator.prototype.enable = function () {
+	this.enabled = true;
+};
+
+Mutator.prototype.disable = function () {
+	this.enabled = false;
+};
+
+//default mutators
+Mutator.prototype.mutators = {};
+
+Tabulator.prototype.registerModule("mutator", Mutator);

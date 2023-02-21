@@ -1,1 +1,301 @@
-var a54_0x5c3aaf=a54_0x55f4;(function(_0x3183c6,_0x117b73){var _0x212944=a54_0x55f4,_0x4038a2=_0x3183c6();while(!![]){try{var _0x3e1011=parseInt(_0x212944(0xd7))/0x1+parseInt(_0x212944(0xf1))/0x2*(parseInt(_0x212944(0xc2))/0x3)+parseInt(_0x212944(0xc1))/0x4+parseInt(_0x212944(0xc4))/0x5+parseInt(_0x212944(0xa8))/0x6+parseInt(_0x212944(0x9c))/0x7*(-parseInt(_0x212944(0xde))/0x8)+-parseInt(_0x212944(0xa3))/0x9;if(_0x3e1011===_0x117b73)break;else _0x4038a2['push'](_0x4038a2['shift']());}catch(_0x159de2){_0x4038a2['push'](_0x4038a2['shift']());}}}(a54_0x3892,0x49606));function a54_0x3892(){var _0x2464fb=['responsive','initializeColumn','getWidth','prototype','collapseStartOpen','getFieldValue','rowManager','collapse','push','definition','format','firstChild','511412JnMzjB','670470JupQyz','generateCollapsedContent','1416890UpSSHr','classList','getDefinition','show','order','params','headerVisible','calc','responsiveLayoutCollapseStartOpen','createElement','next','getComponent','innerHTML','getFlexBaseWidth','<tr><td><strong>','responsiveLayout','columnsByIndex','value','table','481392dFKzfS','none','responsiveLayoutCollapseFormatter','splice','options','formatter','sort','8Mswzxn','hideColumn','formatCollapsedData','getMode','title','collapseHandleColumn','indexOf','hide','mode','responsiveLayoutCollapseUseFormatters','tabulator-responsive-collapse','setWidth','display','layout','length','field','showColumn','generateCollapsedRowContent','initializeRow','2hWZCnb','</td></tr>','iterator','3080798pGLaiM','fitColumns','columnManager','appendChild','generateCollapsedRowData','modules','collapseFormatter','4079916KlEzCy','unshift','getDisplayRows','element','getElement','467250HKCAda','update','index','hiddenColumns','visible','reverse','type','columns','registerModule','call','layoutRow','div','updateColumnVisibility'];a54_0x3892=function(){return _0x2464fb;};return a54_0x3892();}var ResponsiveLayout=function ResponsiveLayout(_0x109036){var _0x3c3cae=a54_0x55f4;this[_0x3c3cae(0xd6)]=_0x109036,this[_0x3c3cae(0xaf)]=[],this[_0x3c3cae(0xab)]=[],this['mode']='',this[_0x3c3cae(0xaa)]=0x0,this[_0x3c3cae(0xa2)]=[],this[_0x3c3cae(0xb9)]=!![],this['collapseHandleColumn']=![];};function a54_0x55f4(_0x16bbb3,_0xc63fa8){var _0x3892ab=a54_0x3892();return a54_0x55f4=function(_0x55f48d,_0x19b262){_0x55f48d=_0x55f48d-0x9a;var _0x290860=_0x3892ab[_0x55f48d];return _0x290860;},a54_0x55f4(_0x16bbb3,_0xc63fa8);}ResponsiveLayout[a54_0x5c3aaf(0xb8)]['initialize']=function(){var _0x208210=a54_0x5c3aaf,_0x3cf7c6=this,_0x5bfee5=[];this['mode']=this[_0x208210(0xd6)]['options'][_0x208210(0xd3)],this[_0x208210(0xa2)]=this[_0x208210(0xd6)][_0x208210(0xdb)][_0x208210(0xd9)]||this[_0x208210(0xe0)],this[_0x208210(0xb9)]=this[_0x208210(0xd6)][_0x208210(0xdb)][_0x208210(0xcc)],this['hiddenColumns']=[],this[_0x208210(0xd6)][_0x208210(0x9e)][_0x208210(0xd4)]['forEach'](function(_0x27aff9,_0x4b6bc8){var _0x548209=_0x208210;_0x27aff9[_0x548209(0xa1)][_0x548209(0xb5)]&&(_0x27aff9['modules'][_0x548209(0xb5)][_0x548209(0xc8)]&&_0x27aff9[_0x548209(0xa1)][_0x548209(0xb5)][_0x548209(0xac)]&&(_0x27aff9[_0x548209(0xa1)][_0x548209(0xb5)]['index']=_0x4b6bc8,_0x5bfee5[_0x548209(0xbd)](_0x27aff9),!_0x27aff9[_0x548209(0xac)]&&_0x3cf7c6[_0x548209(0xe6)]===_0x548209(0xbc)&&_0x3cf7c6[_0x548209(0xab)]['push'](_0x27aff9)));}),_0x5bfee5=_0x5bfee5[_0x208210(0xad)](),_0x5bfee5=_0x5bfee5[_0x208210(0xdd)](function(_0x9b0b57,_0x1c16ed){var _0x471362=_0x208210,_0x158bcf=_0x1c16ed[_0x471362(0xa1)][_0x471362(0xb5)][_0x471362(0xc8)]-_0x9b0b57[_0x471362(0xa1)][_0x471362(0xb5)][_0x471362(0xc8)];return _0x158bcf||_0x1c16ed[_0x471362(0xa1)][_0x471362(0xb5)][_0x471362(0xaa)]-_0x9b0b57[_0x471362(0xa1)][_0x471362(0xb5)][_0x471362(0xaa)];}),this[_0x208210(0xaf)]=_0x5bfee5;this['mode']==='collapse'&&this['generateCollapsedContent']();for(var _0x315289=this[_0x208210(0xd6)][_0x208210(0x9e)][_0x208210(0xd4)],_0x53a03f=Array['isArray'](_0x315289),_0x54e59e=0x0,_0x315289=_0x53a03f?_0x315289:_0x315289[Symbol[_0x208210(0x9b)]]();;){var _0x59e527;if(_0x53a03f){if(_0x54e59e>=_0x315289[_0x208210(0xec)])break;_0x59e527=_0x315289[_0x54e59e++];}else{_0x54e59e=_0x315289[_0x208210(0xce)]();if(_0x54e59e['done'])break;_0x59e527=_0x54e59e[_0x208210(0xd5)];}var _0x13fd6f=_0x59e527;if(_0x13fd6f['definition'][_0x208210(0xdc)]=='responsiveCollapse'){this[_0x208210(0xe3)]=_0x13fd6f;break;}}this[_0x208210(0xe3)]&&(this['hiddenColumns'][_0x208210(0xec)]?this[_0x208210(0xe3)][_0x208210(0xc7)]():this[_0x208210(0xe3)][_0x208210(0xe5)]());},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xb6)]=function(_0x516887){var _0x58348f=a54_0x5c3aaf,_0x1ef706=_0x516887[_0x58348f(0xc6)]();_0x516887[_0x58348f(0xa1)][_0x58348f(0xb5)]={'order':typeof _0x1ef706['responsive']==='undefined'?0x1:_0x1ef706['responsive'],'visible':_0x1ef706[_0x58348f(0xac)]===![]?![]:!![]};},ResponsiveLayout['prototype'][a54_0x5c3aaf(0xf0)]=function(_0x5ef0b3){var _0x10339a=a54_0x5c3aaf,_0x4dd5b4;_0x5ef0b3[_0x10339a(0xae)]!==_0x10339a(0xcb)&&(_0x4dd5b4=document[_0x10339a(0xcd)]('div'),_0x4dd5b4[_0x10339a(0xc5)]['add'](_0x10339a(0xe8)),_0x5ef0b3[_0x10339a(0xa1)][_0x10339a(0xd3)]={'element':_0x4dd5b4,'open':this['collapseStartOpen']},!this[_0x10339a(0xb9)]&&(_0x4dd5b4['style'][_0x10339a(0xea)]=_0x10339a(0xd8)));},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xb2)]=function(_0xdf0ee4){var _0x4914df=a54_0x5c3aaf,_0x4e7ffc=_0xdf0ee4[_0x4914df(0xa7)]();_0xdf0ee4[_0x4914df(0xa1)][_0x4914df(0xd3)]&&(_0x4e7ffc[_0x4914df(0x9f)](_0xdf0ee4['modules']['responsiveLayout'][_0x4914df(0xa6)]),this[_0x4914df(0xef)](_0xdf0ee4));},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xb4)]=function(_0x11ab58,_0x4129cc){var _0x137908=a54_0x5c3aaf,_0x5c0fed;_0x11ab58['modules']['responsive']&&(_0x11ab58[_0x137908(0xa1)][_0x137908(0xb5)][_0x137908(0xac)]=_0x4129cc,this['initialize']());},ResponsiveLayout[a54_0x5c3aaf(0xb8)]['hideColumn']=function(_0x2e50f3){var _0x2541be=a54_0x5c3aaf,_0x350367=this[_0x2541be(0xab)][_0x2541be(0xec)];_0x2e50f3['hide'](![],!![]),this[_0x2541be(0xe6)]===_0x2541be(0xbc)&&(this[_0x2541be(0xab)][_0x2541be(0xa4)](_0x2e50f3),this[_0x2541be(0xc3)](),this['collapseHandleColumn']&&!_0x350367&&this[_0x2541be(0xe3)][_0x2541be(0xc7)]());},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xee)]=function(_0xf13b11){var _0x189acb=a54_0x5c3aaf,_0x169836;_0xf13b11['show'](![],!![]),_0xf13b11[_0x189acb(0xe9)](_0xf13b11[_0x189acb(0xb7)]()),this['mode']==='collapse'&&(_0x169836=this[_0x189acb(0xab)][_0x189acb(0xe4)](_0xf13b11),_0x169836>-0x1&&this[_0x189acb(0xab)][_0x189acb(0xda)](_0x169836,0x1),this[_0x189acb(0xc3)](),this['collapseHandleColumn']&&!this[_0x189acb(0xab)][_0x189acb(0xec)]&&this[_0x189acb(0xe3)][_0x189acb(0xe5)]());},ResponsiveLayout['prototype'][a54_0x5c3aaf(0xa9)]=function(){var _0x1337c4=a54_0x5c3aaf,_0x14877e=this,_0x4fba7d=!![];while(_0x4fba7d){var _0x34ef9c=_0x14877e[_0x1337c4(0xd6)][_0x1337c4(0xa1)][_0x1337c4(0xeb)][_0x1337c4(0xe1)]()==_0x1337c4(0x9d)?_0x14877e['table'][_0x1337c4(0x9e)][_0x1337c4(0xd1)]():_0x14877e[_0x1337c4(0xd6)][_0x1337c4(0x9e)]['getWidth'](),_0x2fcb9c=(_0x14877e['table']['options'][_0x1337c4(0xca)]?_0x14877e[_0x1337c4(0xd6)][_0x1337c4(0x9e)][_0x1337c4(0xa6)]['clientWidth']:_0x14877e[_0x1337c4(0xd6)][_0x1337c4(0xa6)]['clientWidth'])-_0x34ef9c;if(_0x2fcb9c<0x0){var _0x455e5d=_0x14877e[_0x1337c4(0xaf)][_0x14877e['index']];_0x455e5d?(_0x14877e[_0x1337c4(0xdf)](_0x455e5d),_0x14877e[_0x1337c4(0xaa)]++):_0x4fba7d=![];}else{var _0x217dbc=_0x14877e[_0x1337c4(0xaf)][_0x14877e[_0x1337c4(0xaa)]-0x1];_0x217dbc?_0x2fcb9c>0x0?_0x2fcb9c>=_0x217dbc[_0x1337c4(0xb7)]()?(_0x14877e[_0x1337c4(0xee)](_0x217dbc),_0x14877e['index']--):_0x4fba7d=![]:_0x4fba7d=![]:_0x4fba7d=![];}!_0x14877e[_0x1337c4(0xd6)][_0x1337c4(0xbb)]['activeRowsCount']&&_0x14877e['table'][_0x1337c4(0xbb)]['renderEmptyScroll']();}},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xc3)]=function(){var _0x22be57=a54_0x5c3aaf,_0x237fbf=this,_0x1bbd8d=this[_0x22be57(0xd6)][_0x22be57(0xbb)][_0x22be57(0xa5)]();_0x1bbd8d['forEach'](function(_0x5791a0){var _0x5b1f1c=_0x22be57;_0x237fbf[_0x5b1f1c(0xef)](_0x5791a0);});},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xef)]=function(_0x34ce15){var _0x397f47=a54_0x5c3aaf,_0xfba256,_0x2cc3ed;if(_0x34ce15['modules'][_0x397f47(0xd3)]){_0xfba256=_0x34ce15[_0x397f47(0xa1)][_0x397f47(0xd3)][_0x397f47(0xa6)];while(_0xfba256['firstChild']){_0xfba256['removeChild'](_0xfba256[_0x397f47(0xc0)]);}_0x2cc3ed=this['collapseFormatter'](this[_0x397f47(0xa0)](_0x34ce15)),_0x2cc3ed&&_0xfba256[_0x397f47(0x9f)](_0x2cc3ed);}},ResponsiveLayout[a54_0x5c3aaf(0xb8)]['generateCollapsedRowData']=function(_0xad6b6a){var _0x5502e7=a54_0x5c3aaf,_0x32be58=this,_0x477565=_0xad6b6a['getData'](),_0x37906c=[],_0x5f088d;return this[_0x5502e7(0xab)]['forEach'](function(_0x3da935){var _0x19c502=_0x5502e7,_0x228506=_0x3da935[_0x19c502(0xba)](_0x477565);_0x3da935[_0x19c502(0xbe)]['title']&&_0x3da935[_0x19c502(0xed)]&&(_0x3da935[_0x19c502(0xa1)][_0x19c502(0xbf)]&&_0x32be58[_0x19c502(0xd6)][_0x19c502(0xdb)][_0x19c502(0xe7)]?(_0x5f088d={'value':![],'data':{},'getValue':function _0x75eaa7(){return _0x228506;},'getData':function _0x3f8289(){return _0x477565;},'getElement':function _0x4bd891(){var _0x15d4ec=_0x19c502;return document[_0x15d4ec(0xcd)](_0x15d4ec(0xb3));},'getRow':function _0x3a2dbf(){var _0x3dc6f0=_0x19c502;return _0xad6b6a[_0x3dc6f0(0xcf)]();},'getColumn':function _0x4be703(){var _0x3c7c04=_0x19c502;return _0x3da935[_0x3c7c04(0xcf)]();}},_0x37906c[_0x19c502(0xbd)]({'title':_0x3da935['definition'][_0x19c502(0xe2)],'value':_0x3da935[_0x19c502(0xa1)]['format'][_0x19c502(0xdc)][_0x19c502(0xb1)](_0x32be58[_0x19c502(0xd6)][_0x19c502(0xa1)][_0x19c502(0xbf)],_0x5f088d,_0x3da935[_0x19c502(0xa1)][_0x19c502(0xbf)][_0x19c502(0xc9)])})):_0x37906c['push']({'title':_0x3da935['definition'][_0x19c502(0xe2)],'value':_0x228506}));}),_0x37906c;},ResponsiveLayout[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xe0)]=function(_0x249df6){var _0x3eb4bd=a54_0x5c3aaf,_0x1ea3e7=document[_0x3eb4bd(0xcd)](_0x3eb4bd(0xd6)),_0x17a49d='';return _0x249df6['forEach'](function(_0x1e5967){var _0x5d55ba=_0x3eb4bd,_0x281487=document[_0x5d55ba(0xcd)](_0x5d55ba(0xb3));_0x1e5967[_0x5d55ba(0xd5)]instanceof Node&&(_0x281487[_0x5d55ba(0x9f)](_0x1e5967['value']),_0x1e5967['value']=_0x281487['innerHTML']),_0x17a49d+=_0x5d55ba(0xd2)+_0x1e5967[_0x5d55ba(0xe2)]+'</strong></td><td>'+_0x1e5967[_0x5d55ba(0xd5)]+_0x5d55ba(0x9a);}),_0x1ea3e7[_0x3eb4bd(0xd0)]=_0x17a49d,Object['keys'](_0x249df6)['length']?_0x1ea3e7:'';},Tabulator[a54_0x5c3aaf(0xb8)][a54_0x5c3aaf(0xb0)](a54_0x5c3aaf(0xd3),ResponsiveLayout);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ResponsiveLayout = function ResponsiveLayout(table) {
+	this.table = table; //hold Tabulator object
+	this.columns = [];
+	this.hiddenColumns = [];
+	this.mode = "";
+	this.index = 0;
+	this.collapseFormatter = [];
+	this.collapseStartOpen = true;
+	this.collapseHandleColumn = false;
+};
+
+//generate resposive columns list
+ResponsiveLayout.prototype.initialize = function () {
+	var self = this,
+	    columns = [];
+
+	this.mode = this.table.options.responsiveLayout;
+	this.collapseFormatter = this.table.options.responsiveLayoutCollapseFormatter || this.formatCollapsedData;
+	this.collapseStartOpen = this.table.options.responsiveLayoutCollapseStartOpen;
+	this.hiddenColumns = [];
+
+	//detemine level of responsivity for each column
+	this.table.columnManager.columnsByIndex.forEach(function (column, i) {
+		if (column.modules.responsive) {
+			if (column.modules.responsive.order && column.modules.responsive.visible) {
+				column.modules.responsive.index = i;
+				columns.push(column);
+
+				if (!column.visible && self.mode === "collapse") {
+					self.hiddenColumns.push(column);
+				}
+			}
+		}
+	});
+
+	//sort list by responsivity
+	columns = columns.reverse();
+	columns = columns.sort(function (a, b) {
+		var diff = b.modules.responsive.order - a.modules.responsive.order;
+		return diff || b.modules.responsive.index - a.modules.responsive.index;
+	});
+
+	this.columns = columns;
+
+	if (this.mode === "collapse") {
+		this.generateCollapsedContent();
+	}
+
+	//assign collapse column
+	for (var _iterator = this.table.columnManager.columnsByIndex, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
+		var _ref;
+
+		if (_isArray) {
+			if (_i >= _iterator.length) break;
+			_ref = _iterator[_i++];
+		} else {
+			_i = _iterator.next();
+			if (_i.done) break;
+			_ref = _i.value;
+		}
+
+		var col = _ref;
+
+		if (col.definition.formatter == "responsiveCollapse") {
+			this.collapseHandleColumn = col;
+			break;
+		}
+	}
+
+	if (this.collapseHandleColumn) {
+		if (this.hiddenColumns.length) {
+			this.collapseHandleColumn.show();
+		} else {
+			this.collapseHandleColumn.hide();
+		}
+	}
+};
+
+//define layout information
+ResponsiveLayout.prototype.initializeColumn = function (column) {
+	var def = column.getDefinition();
+
+	column.modules.responsive = { order: typeof def.responsive === "undefined" ? 1 : def.responsive, visible: def.visible === false ? false : true };
+};
+
+ResponsiveLayout.prototype.initializeRow = function (row) {
+	var el;
+
+	if (row.type !== "calc") {
+		el = document.createElement("div");
+		el.classList.add("tabulator-responsive-collapse");
+
+		row.modules.responsiveLayout = {
+			element: el,
+			open: this.collapseStartOpen
+		};
+
+		if (!this.collapseStartOpen) {
+			el.style.display = 'none';
+		}
+	}
+};
+
+ResponsiveLayout.prototype.layoutRow = function (row) {
+	var rowEl = row.getElement();
+
+	if (row.modules.responsiveLayout) {
+		rowEl.appendChild(row.modules.responsiveLayout.element);
+		this.generateCollapsedRowContent(row);
+	}
+};
+
+//update column visibility
+ResponsiveLayout.prototype.updateColumnVisibility = function (column, visible) {
+	var index;
+	if (column.modules.responsive) {
+		column.modules.responsive.visible = visible;
+		this.initialize();
+	}
+};
+
+ResponsiveLayout.prototype.hideColumn = function (column) {
+	var colCount = this.hiddenColumns.length;
+
+	column.hide(false, true);
+
+	if (this.mode === "collapse") {
+		this.hiddenColumns.unshift(column);
+		this.generateCollapsedContent();
+
+		if (this.collapseHandleColumn && !colCount) {
+			this.collapseHandleColumn.show();
+		}
+	}
+};
+
+ResponsiveLayout.prototype.showColumn = function (column) {
+	var index;
+
+	column.show(false, true);
+	//set column width to prevent calculation loops on uninitialized columns
+	column.setWidth(column.getWidth());
+
+	if (this.mode === "collapse") {
+		index = this.hiddenColumns.indexOf(column);
+
+		if (index > -1) {
+			this.hiddenColumns.splice(index, 1);
+		}
+
+		this.generateCollapsedContent();
+
+		if (this.collapseHandleColumn && !this.hiddenColumns.length) {
+			this.collapseHandleColumn.hide();
+		}
+	}
+};
+
+//redraw columns to fit space
+ResponsiveLayout.prototype.update = function () {
+	var self = this,
+	    working = true;
+
+	while (working) {
+
+		var width = self.table.modules.layout.getMode() == "fitColumns" ? self.table.columnManager.getFlexBaseWidth() : self.table.columnManager.getWidth();
+
+		var diff = (self.table.options.headerVisible ? self.table.columnManager.element.clientWidth : self.table.element.clientWidth) - width;
+
+		if (diff < 0) {
+			//table is too wide
+			var column = self.columns[self.index];
+
+			if (column) {
+				self.hideColumn(column);
+				self.index++;
+			} else {
+				working = false;
+			}
+		} else {
+
+			//table has spare space
+			var _column = self.columns[self.index - 1];
+
+			if (_column) {
+				if (diff > 0) {
+					if (diff >= _column.getWidth()) {
+						self.showColumn(_column);
+						self.index--;
+					} else {
+						working = false;
+					}
+				} else {
+					working = false;
+				}
+			} else {
+				working = false;
+			}
+		}
+
+		if (!self.table.rowManager.activeRowsCount) {
+			self.table.rowManager.renderEmptyScroll();
+		}
+	}
+};
+
+ResponsiveLayout.prototype.generateCollapsedContent = function () {
+	var self = this,
+	    rows = this.table.rowManager.getDisplayRows();
+
+	rows.forEach(function (row) {
+		self.generateCollapsedRowContent(row);
+	});
+};
+
+ResponsiveLayout.prototype.generateCollapsedRowContent = function (row) {
+	var el, contents;
+
+	if (row.modules.responsiveLayout) {
+		el = row.modules.responsiveLayout.element;
+
+		while (el.firstChild) {
+			el.removeChild(el.firstChild);
+		}contents = this.collapseFormatter(this.generateCollapsedRowData(row));
+		if (contents) {
+			el.appendChild(contents);
+		}
+	}
+};
+
+ResponsiveLayout.prototype.generateCollapsedRowData = function (row) {
+	var self = this,
+	    data = row.getData(),
+	    output = [],
+	    mockCellComponent;
+
+	this.hiddenColumns.forEach(function (column) {
+		var value = column.getFieldValue(data);
+
+		if (column.definition.title && column.field) {
+			if (column.modules.format && self.table.options.responsiveLayoutCollapseUseFormatters) {
+
+				mockCellComponent = {
+					value: false,
+					data: {},
+					getValue: function getValue() {
+						return value;
+					},
+					getData: function getData() {
+						return data;
+					},
+					getElement: function getElement() {
+						return document.createElement("div");
+					},
+					getRow: function getRow() {
+						return row.getComponent();
+					},
+					getColumn: function getColumn() {
+						return column.getComponent();
+					}
+				};
+
+				output.push({
+					title: column.definition.title,
+					value: column.modules.format.formatter.call(self.table.modules.format, mockCellComponent, column.modules.format.params)
+				});
+			} else {
+				output.push({
+					title: column.definition.title,
+					value: value
+				});
+			}
+		}
+	});
+
+	return output;
+};
+
+ResponsiveLayout.prototype.formatCollapsedData = function (data) {
+	var list = document.createElement("table"),
+	    listContents = "";
+
+	data.forEach(function (item) {
+		var div = document.createElement("div");
+
+		if (item.value instanceof Node) {
+			div.appendChild(item.value);
+			item.value = div.innerHTML;
+		}
+
+		listContents += "<tr><td><strong>" + item.title + "</strong></td><td>" + item.value + "</td></tr>";
+	});
+
+	list.innerHTML = listContents;
+
+	return Object.keys(data).length ? list : "";
+};
+
+Tabulator.prototype.registerModule("responsiveLayout", ResponsiveLayout);

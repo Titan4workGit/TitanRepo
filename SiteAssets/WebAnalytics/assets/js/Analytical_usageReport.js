@@ -1,1 +1,1741 @@
-var a511_0x25bb41=a511_0xf8c8;(function(_0x3f4204,_0x2f67bf){var _0x269fb6=a511_0xf8c8,_0x79cca0=_0x3f4204();while(!![]){try{var _0x36d12c=-parseInt(_0x269fb6(0x2a6))/0x1*(parseInt(_0x269fb6(0x216))/0x2)+-parseInt(_0x269fb6(0x276))/0x3+-parseInt(_0x269fb6(0x267))/0x4+parseInt(_0x269fb6(0x28a))/0x5*(parseInt(_0x269fb6(0x200))/0x6)+parseInt(_0x269fb6(0x2c0))/0x7+parseInt(_0x269fb6(0x186))/0x8*(-parseInt(_0x269fb6(0x1b4))/0x9)+parseInt(_0x269fb6(0x1b7))/0xa;if(_0x36d12c===_0x2f67bf)break;else _0x79cca0['push'](_0x79cca0['shift']());}catch(_0x211ca5){_0x79cca0['push'](_0x79cca0['shift']());}}}(a511_0x32d4,0xb1b47),$(document)[a511_0x25bb41(0x1e4)](function(){var _0x4baa25=a511_0x25bb41;today=new Date();var _0x1cf3a8=new Date(),_0x1c29f1=_0x4baa25(0x275);AnalyticalActiveUsersUrl=_spPageContextInfo[_0x4baa25(0x23d)]+_0x4baa25(0x1dc)+_0x1c29f1,ReadAnalyticalActiveUsers(),$(_0x4baa25(0x29a))[_0x4baa25(0x233)](),companyID=titanForWork[_0x4baa25(0x242)]('CompanyId'),$('.ms-backgroundImage')['css'](_0x4baa25(0x2c9),_0x4baa25(0x273)),$(_0x4baa25(0x291))[_0x4baa25(0x278)](moment(today)[_0x4baa25(0x27c)]('LL')),$(_0x4baa25(0x227))[_0x4baa25(0x278)](moment(_0x1cf3a8[_0x4baa25(0x25e)](_0x1cf3a8[_0x4baa25(0x27a)]()-0x7))[_0x4baa25(0x27c)]('LL'));var _0x15815c=moment(today)[_0x4baa25(0x27c)]('LL');$(_0x4baa25(0x28c))['datepicker']({'defaultDate':0x0,'startDate':new Date(),'dateFormat':_0x4baa25(0x1a9)})[_0x4baa25(0x233)]('setDate',new Date()),$(_0x4baa25(0x259))['datepicker']({'defaultDate':-0x7,'startDate':new Date(_0x1cf3a8[_0x4baa25(0x25e)](_0x1cf3a8[_0x4baa25(0x27a)]()-0x7)),'dateFormat':'MM\x20dd,\x20yy'})[_0x4baa25(0x233)](_0x4baa25(0x25e),'-7d'),$(_0x4baa25(0x261))[_0x4baa25(0x278)](UsersLicenceRequired),$(_0x4baa25(0x26b))[_0x4baa25(0x26a)](_0x4baa25(0x184)),$(_0x4baa25(0x1b2))[_0x4baa25(0x2c6)](function(){var _0x5ccaf8=_0x4baa25;if(new Date($('#attendance-reportFrom')[_0x5ccaf8(0x287)]())<=new Date($(_0x5ccaf8(0x28c))[_0x5ccaf8(0x287)]())){$(_0x5ccaf8(0x26b))['modal'](_0x5ccaf8(0x17f)),OpenMyCustomLoader(),AnalyticalUsageData=[];var _0x5341f1=new Date($(_0x5ccaf8(0x259))[_0x5ccaf8(0x287)]()),_0x3614d2=new Date($(_0x5ccaf8(0x28c))['val']());_0x3614d2['setDate'](_0x3614d2[_0x5ccaf8(0x27a)]()+0x1);var _0x145038=_0x5341f1[_0x5ccaf8(0x209)]()['substring'](0x0,0xa),_0xfe1029=_0x3614d2['toISOString']()['substring'](0x0,0xa),_0xdcf3bc=_0x5ccaf8(0x1d2)+_0x145038+_0x5ccaf8(0x235)+_0xfe1029+_0x5ccaf8(0x1e1);AnalyticalUsageUrl=_spPageContextInfo[_0x5ccaf8(0x23d)]+_0x5ccaf8(0x28f)+_0xdcf3bc,setTimeout(function(){ReadAnalyticalUsageData();},0xc8),setTimeout(function(){var _0x16c09b=_0x5ccaf8;getUsers_Activity_Details(_0x16c09b(0x2ab));},0xc8);}else alert('Invalid\x20date\x20range.\x0aFrom\x20Date\x20should\x20not\x20be\x20bigger\x20than\x20To\x20Date');}),$(_0x4baa25(0x1d5))['click'](function(){setTimeout(function(){OpenMyCustomLoader();},0x32),arrActivityResult=[],setTimeout(function(){getUsers_Activity_Details('');},0x64);}),initializePeoplePicker('Userto');}));function initializePeoplePicker(_0x397827){var _0x2456ae=a511_0x25bb41,_0x159dea={};_0x159dea[_0x2456ae(0x1b8)]=_0x2456ae(0x19f),_0x159dea[_0x2456ae(0x23a)]=0xf,_0x159dea[_0x2456ae(0x240)]=0xf,_0x159dea[_0x2456ae(0x21b)]=![],_0x159dea[_0x2456ae(0x1b3)]=0x32,_0x159dea[_0x2456ae(0x23e)]=_0x2456ae(0x1c8),this['SPClientPeoplePicker_InitStandaloneControlWrapper'](_0x397827,null,_0x159dea);}var AnalyticalUsageData=AnalyticalUsageData||[],AnalyticalUsageUrl='';function ReadAnalyticalUsageData(){var _0x686013=a511_0x25bb41;return dfds=$['Deferred'](),$[_0x686013(0x178)]({'url':AnalyticalUsageUrl,'headers':{'Accept':_0x686013(0x290)},'async':!![],'success':function(_0x128608){var _0x126073=_0x686013;FilterState=0x0,AnalyticalUsageData=AnalyticalUsageData['concat'](_0x128608['d']['results']);if(_0x128608['d'][_0x126073(0x1ed)])AnalyticalUsageUrl=_0x128608['d'][_0x126073(0x1ed)],ReadAnalyticalUsageData();else{var _0x580a6c=$[_0x126073(0x262)](AnalyticalUsageData,function(_0x249f10){var _0x4d9330=_0x126073;return _0x249f10[_0x4d9330(0x1f5)]!=_0x4d9330(0x1c5);}),_0x37e2ad=new Date(moment(new Date($(_0x126073(0x259))[_0x126073(0x287)]()))['format'](_0x126073(0x244))+_0x126073(0x1c2))['getTime'](),_0x32a1cc=new Date(moment(new Date($(_0x126073(0x28c))[_0x126073(0x287)]()))['format'](_0x126073(0x244))+_0x126073(0x1c2))[_0x126073(0x25c)](),_0xe56dea=_0x580a6c[_0x126073(0x19a)](_0x495d2c=>{var _0x49441e=_0x126073,_0x11c906=new Date(moment(_0x495d2c['Created'])[_0x49441e(0x27c)](_0x49441e(0x244))+'T00:00:00.000Z')[_0x49441e(0x25c)]();return _0x37e2ad<=_0x11c906&&_0x11c906<=_0x32a1cc;});AnalyticalUsageData=_0xe56dea;const _0x4028ec=[...new Map(AnalyticalUsageData['map'](_0x5de3f5=>[_0x5de3f5[_0x126073(0x187)],_0x5de3f5]))[_0x126073(0x1ad)]()];uniqueEmployeesValue=_0x4028ec['length']/AnalyticalActiveUsers['length']*0x64,$(_0x126073(0x1dd))['css']({'width':Math[_0x126073(0x26d)](uniqueEmployeesValue)+'%'}),$(_0x126073(0x224))[_0x126073(0x278)](_0x126073(0x1e8)+Math[_0x126073(0x26d)](uniqueEmployeesValue)+'%'),$(_0x126073(0x282))[_0x126073(0x278)](_0x126073(0x24c)+_0x4028ec[_0x126073(0x228)]+_0x126073(0x179)+AnalyticalActiveUsers[_0x126073(0x228)]);var _0x592174=$[_0x126073(0x262)](AnalyticalUsageData,function(_0x3b611b){var _0x3379ee=_0x126073;return _0x3b611b[_0x3379ee(0x2ae)]==_0x3379ee(0x1ba);});const _0x52440f=[...new Map(_0x592174[_0x126073(0x2b4)](_0x585b14=>[_0x585b14[_0x126073(0x187)],_0x585b14]))[_0x126073(0x1ad)]()];UniqueCountsWebValue=_0x52440f[_0x126073(0x228)]/AnalyticalActiveUsers[_0x126073(0x228)]*0x64,$(_0x126073(0x1db))[_0x126073(0x192)]({'width':Math[_0x126073(0x26d)](UniqueCountsWebValue)+'%'}),$(_0x126073(0x2a9))[_0x126073(0x278)](_0x126073(0x28d)+Math[_0x126073(0x26d)](UniqueCountsWebValue)+'%'),$(_0x126073(0x205))['text']('Active\x20User\x20:\x20'+_0x52440f[_0x126073(0x228)]+_0x126073(0x179)+AnalyticalActiveUsers['length']);var _0x145a38=$['grep'](AnalyticalUsageData,function(_0x4f0ac5){var _0x3ba1a5=_0x126073;return _0x4f0ac5[_0x3ba1a5(0x2ae)]=='Mobile\x20App';});const _0x36375b=[...new Map(_0x145a38[_0x126073(0x2b4)](_0x376341=>[_0x376341[_0x126073(0x187)],_0x376341]))[_0x126073(0x1ad)]()];UniqueCountsMobValue=_0x36375b[_0x126073(0x228)]/AnalyticalActiveUsers[_0x126073(0x228)]*0x64,$(_0x126073(0x23f))[_0x126073(0x192)]({'width':Math[_0x126073(0x26d)](UniqueCountsMobValue)+'%'}),$(_0x126073(0x1a2))['text'](_0x126073(0x1bc)+Math[_0x126073(0x26d)](UniqueCountsMobValue)+'%'),$(_0x126073(0x266))[_0x126073(0x278)](_0x126073(0x24c)+_0x36375b[_0x126073(0x228)]+_0x126073(0x179)+AnalyticalActiveUsers[_0x126073(0x228)]);var _0x5b42dc=new Date($(_0x126073(0x227))[_0x126073(0x278)]()),_0x174ee1=new Date($(_0x126073(0x291))[_0x126073(0x278)]()),_0x289909=new Date(_0x174ee1-_0x5b42dc),_0x1754ab=_0x289909/0x3e8/0x3c/0x3c/0x18,_0x120bd3=[];for(var _0x47352f=0x0;_0x47352f<=_0x1754ab;_0x47352f++){var _0xe97a5e=new Date($('#attendance-reportFrom')[_0x126073(0x287)]());_0xe97a5e[_0x126073(0x25e)](_0xe97a5e[_0x126073(0x27a)]()+_0x47352f);var _0x3505cd=moment(_0xe97a5e)[_0x126073(0x27c)](_0x126073(0x1ea));_0x120bd3[_0x126073(0x234)](_0x3505cd);}ToGetCountbyDate(_0x120bd3),ToGetActivityCounts(),$(_0x126073(0x248))[_0x126073(0x287)](_0x126073(0x1fd)),$('#dashboard')[_0x126073(0x184)](),$(_0x126073(0x1ff))[_0x126073(0x17f)](),$('#Department-wise-activities')[_0x126073(0x17f)](),$(_0x126073(0x1b5))[_0x126073(0x17f)](),$(_0x126073(0x22e))[_0x126073(0x17f)](),$(_0x126073(0x249))[_0x126073(0x17f)](),CloseMyCustomLoader();}},'error':function(_0x31813c,_0x1d0d76,_0x362371){var _0x3e662f=_0x686013;console[_0x3e662f(0x1d7)](_0x3e662f(0x1d4)),console['log'](_0x31813c[_0x3e662f(0x2a2)][_0x3e662f(0x213)][_0x3e662f(0x181)][_0x3e662f(0x191)]);var _0x41a17e=_0x31813c[_0x3e662f(0x2a2)][_0x3e662f(0x213)][_0x3e662f(0x181)]['value'],_0x5497ae=_0x41a17e[_0x3e662f(0x232)](_0x3e662f(0x1e2));if(_0x5497ae==!![]){var _0xd430ec='?$select=*,Author/Name,Author/Title,Author/EMail,Author/ID,DepartmentId/ID,DepartmentId/Title,CompanyId/ID,CompanyId/Title,LocationID/ID,LocationID/Title,UserID/ID,UserID/Title,UserID/EMail&$expand=UserID,LocationID,DepartmentId,CompanyId,Author&$top=5000';AnalyticalUsageUrl=_spPageContextInfo['webAbsoluteUrl']+_0x3e662f(0x28f)+_0xd430ec,ReadAnalyticalUsageData();}}}),dfds['promise']();}function ToGetCountbyDate(_0x13630d){var _0x51df02=a511_0x25bb41,_0xf223d5=[],_0xc92e4e=[],_0x22cb11=[];for(var _0x88b47=0x0;_0x88b47<_0x13630d[_0x51df02(0x228)];_0x88b47++){var _0x31a758=AnalyticalUsageData[_0x51df02(0x19a)](function(_0x306362){var _0x39cb5a=_0x51df02;return Created=moment(_0x306362['Created'])[_0x39cb5a(0x27c)](_0x39cb5a(0x1ea)),_0x13630d[_0x88b47]==''?Created!='':Created==_0x13630d[_0x88b47];});if(_0x31a758[_0x51df02(0x228)]>0x0){const _0x4de8cc=[...new Map(_0x31a758[_0x51df02(0x2b4)](_0x46b85e=>[_0x46b85e[_0x51df02(0x187)],_0x46b85e]))[_0x51df02(0x1ad)]()];_0x22cb11['push'](moment(_0x4de8cc[0x0]['Created'])['format'](_0x51df02(0x208))),_0xf223d5=_0xf223d5[_0x51df02(0x245)](_0x4de8cc),_0xc92e4e[_0x51df02(0x234)](_0x4de8cc['length']);}else _0x22cb11[_0x51df02(0x234)](moment(_0x13630d[_0x88b47])[_0x51df02(0x27c)](_0x51df02(0x208))),_0xc92e4e[_0x51df02(0x234)](_0x31a758['length']);}var _0x2b2c94=document[_0x51df02(0x2bb)]('dvlineChart');_0x2b2c94[_0x51df02(0x1c4)]='&nbsp;',$(_0x51df02(0x229))['append'](_0x51df02(0x254));var _0x24f231=$(_0x51df02(0x221)),_0x26c45e=new Chart(_0x24f231,{'type':_0x51df02(0x211),'data':{'labels':_0x22cb11,'datasets':[{'label':moment(_0x13630d[0x0])['format'](_0x51df02(0x1ef)),'data':_0xc92e4e,'fill':!![],'borderColor':_0x51df02(0x1f3)}]}});}function ToGetActivityCounts(){var _0x2f1688=a511_0x25bb41,_0x3108d4=[];if(AnalyticalUsageData[_0x2f1688(0x228)]>0x0)for(var _0x4e1978=0x0;_0x4e1978<AnalyticalUsageData[_0x2f1688(0x228)];_0x4e1978++){_0x3108d4[_0x2f1688(0x234)](AnalyticalUsageData[_0x4e1978][_0x2f1688(0x1f5)]);}var _0x406294=[],_0x32d1a8=[];_0x3108d4[_0x2f1688(0x228)]>0x0&&(_0x3108d4=_0x3108d4['filter'](function(_0xbaa205,_0x6a6c4d,_0x51ec4e){var _0x4c83c1=_0x2f1688;return _0x51ec4e[_0x4c83c1(0x18c)](_0xbaa205)===_0x6a6c4d;}));var _0x5f487e=[];$[_0x2f1688(0x23c)](_0x3108d4,function(_0x643e4a,_0xc03e51){var _0x2757fe=_0x2f1688,_0x1a36cc=AnalyticalUsageData[_0x2757fe(0x19a)](function(_0x5e168d){var _0x297e50=_0x2757fe;return _0x5e168d[_0x297e50(0x1f5)]===_0xc03e51;}),_0x23eed6=_0x1a36cc[_0x2757fe(0x228)];_0x1a36cc=_0x1a36cc[_0x2757fe(0x228)]/AnalyticalUsageData[_0x2757fe(0x228)]*0x64,_0x5f487e[_0x2757fe(0x234)](_0x1a36cc[_0x2757fe(0x228)]);var _0x33c1e7=Math[_0x2757fe(0x26d)](_0x1a36cc);_0x406294[_0x2757fe(0x234)]({'value':_0xc03e51,'c':_0x33c1e7,'Tcounts':_0x23eed6});});for(_0x4e1978=0x0;_0x4e1978<_0x406294[_0x2f1688(0x228)];_0x4e1978++){_0x32d1a8[_0x2f1688(0x234)]({'label':_0x406294[_0x4e1978][_0x2f1688(0x191)],'x':_0x406294[_0x4e1978][_0x2f1688(0x212)],'y':_0x406294[_0x4e1978]['c'],'legendText':_0x406294[_0x4e1978][_0x2f1688(0x191)]});}$(_0x2f1688(0x265))[_0x2f1688(0x23b)]({'axisY':{'title':_0x2f1688(0x17b)},'legend':{'verticalAlign':_0x2f1688(0x279),'horizontalAlign':_0x2f1688(0x1c9)},'data':[{'click':function(_0x2d9150){var _0x3e70f8=_0x2f1688;$('#tbInstance')[_0x3e70f8(0x218)]('');var _0x33848e='',_0x1b1c30='';$(_0x3e70f8(0x21d))[_0x3e70f8(0x278)](_0x3e70f8(0x1ce)+_0x2d9150[_0x3e70f8(0x1eb)]['label']),$(_0x3e70f8(0x1aa))['text'](_0x3e70f8(0x1ce)+_0x2d9150['dataPoint'][_0x3e70f8(0x1bd)]),$(_0x3e70f8(0x214))[_0x3e70f8(0x278)]('Duration\x20:\x20'+moment(StDate)['format'](_0x3e70f8(0x28b))+_0x3e70f8(0x1d6)+moment(EnDate)[_0x3e70f8(0x27c)](_0x3e70f8(0x28b))),$(_0x3e70f8(0x1fc))[_0x3e70f8(0x278)](_0x3e70f8(0x299)+moment(StDate)[_0x3e70f8(0x27c)](_0x3e70f8(0x28b))+_0x3e70f8(0x1d6)+moment(EnDate)[_0x3e70f8(0x27c)]('DD-MMM-YYYY')),$(_0x3e70f8(0x20a))[_0x3e70f8(0x278)]('\x20'+moment(StDate)[_0x3e70f8(0x27c)](_0x3e70f8(0x28b))+_0x3e70f8(0x1d6)+moment(EnDate)[_0x3e70f8(0x27c)](_0x3e70f8(0x28b))),$(_0x3e70f8(0x251))[_0x3e70f8(0x278)](_0x3e70f8(0x24b)+_0x2d9150['dataPoint']['x']);var _0x355225=AnalyticalUsageData[_0x3e70f8(0x19a)](function(_0x13d412){var _0x299df1=_0x3e70f8;return _0x13d412[_0x299df1(0x1f5)]==_0x2d9150[_0x299df1(0x1eb)][_0x299df1(0x1bd)];});for(_0x4e1978=0x0;_0x4e1978<_0x355225[_0x3e70f8(0x228)];_0x4e1978++){_0x1b1c30+=_0x3e70f8(0x1c6)+_0x355225[_0x4e1978][_0x3e70f8(0x283)]+_0x3e70f8(0x26f)+_0x355225[_0x4e1978]['UserID']['Title']+_0x3e70f8(0x217)+_0x355225[_0x4e1978][_0x3e70f8(0x260)]+'\x20|\x20'+_0x355225[_0x4e1978]['DepartmentId'][_0x3e70f8(0x28e)]+_0x3e70f8(0x22c)+_0x355225[_0x4e1978]['UserID'][_0x3e70f8(0x1c7)]+_0x3e70f8(0x25b)+_0x355225[_0x4e1978][_0x3e70f8(0x2ba)]+'</td><td\x20style=\x22width:\x2018%;\x22>'+moment(_0x355225[_0x4e1978][_0x3e70f8(0x20f)])[_0x3e70f8(0x27c)](_0x3e70f8(0x25d))+'</td><td\x20style=\x22width:\x2024%;\x22>'+_0x355225[_0x4e1978][_0x3e70f8(0x28e)]+_0x3e70f8(0x2ad)+_0x355225[_0x4e1978][_0x3e70f8(0x2ae)]+'</td></tr>';}$(_0x3e70f8(0x269))['append'](_0x1b1c30),$(_0x3e70f8(0x2b3))[_0x3e70f8(0x26a)]('show');},'type':_0x2f1688(0x285),'showInLegend':!![],'toolTipContent':_0x2f1688(0x24a),'indexLabel':_0x2f1688(0x226),'dataPoints':_0x32d1a8}]});}function getUsers_Activity_Details(_0x2e5169){var _0x1de773=a511_0x25bb41,_0x47a93c=$['Deferred']();_0x2e5169!=_0x1de773(0x2ab)?(StDate=$('#Fromdt')[_0x1de773(0x278)](),StDate=new Date(StDate),StDate[_0x1de773(0x1cd)](0x0,0x0),EnDate=$('#Todt')[_0x1de773(0x278)](),EnDate=new Date(EnDate),EnDate['setHours'](0x17,0x3b),FrmDate=moment(StDate)[_0x1de773(0x27c)]('LL'),EndDate=moment(EnDate)['format']('LL')):(StDate=$(_0x1de773(0x259))['val'](),StDate=new Date(StDate),StDate[_0x1de773(0x1cd)](0x0,0x0),EnDate=$(_0x1de773(0x28c))[_0x1de773(0x287)](),EnDate=new Date(EnDate),EnDate[_0x1de773(0x1cd)](0x17,0x3b),FrmDate=moment(StDate)[_0x1de773(0x27c)]('LL'),EndDate=moment(EnDate)[_0x1de773(0x27c)]('LL'));$(_0x1de773(0x227))[_0x1de773(0x278)](moment(StDate)[_0x1de773(0x27c)]('LL')),$(_0x1de773(0x291))[_0x1de773(0x278)](moment(EnDate)[_0x1de773(0x27c)]('LL')),$(_0x1de773(0x28c))['val'](moment(EnDate)[_0x1de773(0x27c)]('LL')),$(_0x1de773(0x259))[_0x1de773(0x287)](moment(StDate)[_0x1de773(0x27c)]('LL'));var _0x135118=[];for(i=0x0;i<AnalyticalUsageData[_0x1de773(0x228)];i++){new Date(AnalyticalUsageData[i][_0x1de773(0x256)])>=StDate&&new Date(AnalyticalUsageData[i][_0x1de773(0x256)])<=EnDate&&AnalyticalUsageData[i][_0x1de773(0x210)]==companyID&&_0x135118[_0x1de773(0x234)](AnalyticalUsageData[i]);}AnalyticalUsageData=_0x135118;}function OpenMyCustomLoader(){var _0x7d4df7=a511_0x25bb41,_0x12d398=_0x7d4df7(0x1de),_0x152d7d='<br\x20/>Please\x20wait!!',_0x3acab5=0xc8,_0x284d52=0x190;currentDlg=SP['UI']['ModalDialog'][_0x7d4df7(0x1ec)](_0x12d398,_0x152d7d,_0x3acab5,_0x284d52);}function CloseMyCustomLoader(){currentDlg['close']();}var AnalyticalActiveUsers=AnalyticalActiveUsers||[],AnalyticalActiveUsersUrl='';function ReadAnalyticalActiveUsers(){var _0x2bae76=a511_0x25bb41;return dfds=$[_0x2bae76(0x2ca)](),$[_0x2bae76(0x178)]({'url':AnalyticalActiveUsersUrl,'headers':{'Accept':'application/json;odata=verbose'},'async':!![],'success':function(_0x11f360){var _0x4cde53=_0x2bae76;AnalyticalActiveUsers=AnalyticalActiveUsers[_0x4cde53(0x245)](_0x11f360['d'][_0x4cde53(0x204)]);if(_0x11f360['d'][_0x4cde53(0x1ed)])AnalyticalActiveUsersUrl=_0x11f360['d']['__next'],ReadAnalyticalActiveUsers();else{var _0x520acf=$[_0x4cde53(0x262)](AnalyticalActiveUsers,function(_0x96a5ab){var _0x5edfe1=_0x4cde53;return _0x96a5ab[_0x5edfe1(0x288)]==_0x5edfe1(0x237)&&_0x96a5ab[_0x5edfe1(0x231)]=='Primary';});AnalyticalActiveUsers=_0x520acf,$(_0x4cde53(0x1d1))[_0x4cde53(0x278)](AnalyticalActiveUsers[_0x4cde53(0x228)]);}},'error':function(_0x203c6b,_0x4611a5,_0x220faf){var _0x2ce2e0=_0x2bae76;console[_0x2ce2e0(0x1d7)](_0x2ce2e0(0x1f2)),console['log'](_0x203c6b[_0x2ce2e0(0x2a2)][_0x2ce2e0(0x213)][_0x2ce2e0(0x181)]['value']);var _0xaf0cd3=_0x203c6b[_0x2ce2e0(0x2a2)][_0x2ce2e0(0x213)][_0x2ce2e0(0x181)]['value'],_0xf8cb5e=_0xaf0cd3[_0x2ce2e0(0x232)](_0x2ce2e0(0x1e2));if(_0xf8cb5e==!![]){var _0x4b2fde=_0x2ce2e0(0x1e7);AnalyticalActiveUsersUrl=_spPageContextInfo[_0x2ce2e0(0x23d)]+_0x2ce2e0(0x1dc)+_0x4b2fde,ReadAnalyticalActiveUsers();}}}),dfds[_0x2bae76(0x1e3)]();}function GetAllVisitedUserss(){var _0x5725a9=a511_0x25bb41,_0x4cf621='',_0x1157f1='';$(_0x5725a9(0x1b9))[_0x5725a9(0x218)](''),$('#Visited-User-modal')[_0x5725a9(0x26a)](_0x5725a9(0x184)),$(_0x5725a9(0x21f))[_0x5725a9(0x278)](_0x5725a9(0x21a)),$(_0x5725a9(0x20a))[_0x5725a9(0x278)]('\x20'+$(_0x5725a9(0x227))[_0x5725a9(0x278)]()+_0x5725a9(0x1d6)+$(_0x5725a9(0x291))['text']()),$(_0x5725a9(0x1fa))[_0x5725a9(0x278)]('Duration\x20:\x20'+$(_0x5725a9(0x227))[_0x5725a9(0x278)]()+_0x5725a9(0x2c8)+$('#Todt')[_0x5725a9(0x278)]());const _0x315259=[...new Map(AnalyticalUsageData[_0x5725a9(0x2b4)](_0x5654be=>[_0x5654be[_0x5725a9(0x187)],_0x5654be]))['values']()];_0x315259[_0x5725a9(0x271)](function(_0x5292db,_0x46abfe){var _0x2c8b76=_0x5725a9;return _0x5292db['UserID'][_0x2c8b76(0x28e)]<_0x46abfe['UserID'][_0x2c8b76(0x28e)]?-0x1:0x1;});if(_0x315259['length']>0x0){for(var _0x24ac1b=0x0;_0x24ac1b<_0x315259[_0x5725a9(0x228)];_0x24ac1b++){var _0x5de201=$[_0x5725a9(0x262)](AnalyticalUsageData,function(_0x49752f){var _0x2f1d44=_0x5725a9;return _0x49752f[_0x2f1d44(0x187)]==_0x315259[_0x24ac1b]['UserIDId'];}),_0x4bd03e=_0x5de201[_0x5725a9(0x228)],_0x493974=_0x5de201[_0x5de201[_0x5725a9(0x228)]-0x1]['Created'],_0x1c4da5=_0x5de201[_0x5de201['length']-0x1]['UserID'][_0x5725a9(0x28e)],_0x10e30f=_0x5de201[_0x5de201[_0x5725a9(0x228)]-0x1][_0x5725a9(0x22d)][_0x5725a9(0x1c7)],_0x4410dc=_0x5de201[_0x5de201[_0x5725a9(0x228)]-0x1][_0x5725a9(0x283)],_0x506fd8=new Date(_0x5de201[_0x5de201[_0x5725a9(0x228)]-0x1][_0x5725a9(0x256)]),_0x493974=_0x506fd8[_0x5725a9(0x202)](),_0x521cfc=+_0x493974[_0x5725a9(0x2be)](0x0,0x2),_0x3842ef=_0x521cfc%0xc||0xc,_0x4e4fb2=_0x521cfc<0xc?_0x5725a9(0x27d):_0x5725a9(0x21e);_0x493974=_0x3842ef+_0x493974['substr'](0x2,0x3)+_0x4e4fb2;var _0x53bdce=$['grep'](AnalyticalActiveUsers,function(_0x4a271f){var _0x4eb4ce=_0x5725a9;return _0x4a271f[_0x4eb4ce(0x1f9)]['ID']==_0x315259[_0x24ac1b]['UserIDId'];}),_0x3cb303='',_0x16eca5='';if(_0x53bdce[_0x5725a9(0x228)]>0x0){_0x53bdce[0x0]['Designation']!=null&&(_0x3cb303=_0x53bdce[0x0]['Designation']);var _0x16eca5='';_0x53bdce[0x0][_0x5725a9(0x295)]['Title']!=null&&(_0x16eca5=_0x53bdce[0x0]['Department'][_0x5725a9(0x28e)]);}_0x4cf621+=_0x5725a9(0x1f4)+_0x4410dc+_0x5725a9(0x26f)+_0x1c4da5+_0x5725a9(0x217)+_0x3cb303+_0x5725a9(0x2b2)+_0x16eca5+_0x5725a9(0x22c)+_0x10e30f+_0x5725a9(0x292),_0x4cf621+='<td\x20class=\x22text-left\x22>'+moment(_0x5de201[_0x5de201[_0x5725a9(0x228)]-0x1][_0x5725a9(0x256)])[_0x5725a9(0x27c)](_0x5725a9(0x24e))+'\x20'+_0x493974+_0x5725a9(0x1e6)+_0x4bd03e+_0x5725a9(0x201);}$(_0x5725a9(0x1b9))[_0x5725a9(0x17a)](_0x4cf621);}}function GetAllWebsiteVisitedUserss(){var _0x3ef329=a511_0x25bb41,_0x4fa20d='',_0x5d775c='';$('#tbdyAllVisitedUsers')['html'](''),$(_0x3ef329(0x21f))['text'](_0x3ef329(0x21a)),$(_0x3ef329(0x25f))[_0x3ef329(0x26a)]('show'),$(_0x3ef329(0x294))[_0x3ef329(0x278)](_0x3ef329(0x299)+$(_0x3ef329(0x227))['text']()+_0x3ef329(0x2c8)+$('#Todt')[_0x3ef329(0x278)]());var _0x3bc0de=$[_0x3ef329(0x262)](AnalyticalUsageData,function(_0x85504e){var _0x210d63=_0x3ef329;return _0x85504e[_0x210d63(0x2ae)]==_0x210d63(0x1ba);});const _0x23c2c7=[...new Map(_0x3bc0de[_0x3ef329(0x2b4)](_0x4bdead=>[_0x4bdead[_0x3ef329(0x187)],_0x4bdead]))[_0x3ef329(0x1ad)]()];_0x23c2c7[_0x3ef329(0x271)](function(_0xfd7bce,_0x54a9d6){var _0x19c407=_0x3ef329;return _0xfd7bce[_0x19c407(0x22d)][_0x19c407(0x28e)]<_0x54a9d6[_0x19c407(0x22d)]['Title']?-0x1:0x1;});if(_0x23c2c7[_0x3ef329(0x228)]>0x0){for(var _0xbb5a04=0x0;_0xbb5a04<_0x23c2c7[_0x3ef329(0x228)];_0xbb5a04++){var _0x350fdc=$['grep'](_0x3bc0de,function(_0x2010fa){var _0x21d594=_0x3ef329;return _0x2010fa[_0x21d594(0x187)]==_0x23c2c7[_0xbb5a04][_0x21d594(0x187)];}),_0x119b6d=_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x22d)][_0x3ef329(0x28e)],_0x3ea00b=_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x22d)][_0x3ef329(0x1c7)],_0x44539e=_0x3ef329(0x22a);_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x283)]!=null&&(_0x44539e=_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x283)]);var _0x34773c=_0x350fdc[_0x3ef329(0x228)],_0x1e3418=_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x256)],_0x216566=new Date(_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x256)]),_0x1e3418=_0x216566[_0x3ef329(0x202)](),_0x42e294=+_0x1e3418[_0x3ef329(0x2be)](0x0,0x2),_0x302ea1=_0x42e294%0xc||0xc,_0x2c8527=_0x42e294<0xc?_0x3ef329(0x27d):_0x3ef329(0x21e);_0x1e3418=_0x302ea1+_0x1e3418[_0x3ef329(0x2be)](0x2,0x3)+_0x2c8527;var _0x2f17cf=$['grep'](AnalyticalActiveUsers,function(_0x1aa892){var _0x1c9922=_0x3ef329;return _0x1aa892[_0x1c9922(0x1f9)]['ID']==_0x23c2c7[_0xbb5a04][_0x1c9922(0x187)];}),_0x434362='',_0x8a25d4='';if(_0x2f17cf['length']>0x0){_0x2f17cf[0x0][_0x3ef329(0x260)]!=null&&(_0x434362=_0x2f17cf[0x0][_0x3ef329(0x260)]);var _0x8a25d4='';_0x2f17cf[0x0][_0x3ef329(0x295)][_0x3ef329(0x28e)]!=null&&(_0x8a25d4=_0x2f17cf[0x0]['Department'][_0x3ef329(0x28e)]);}_0x4fa20d+='<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22'+_0x44539e+_0x3ef329(0x296)+_0x119b6d+_0x3ef329(0x217)+_0x434362+_0x3ef329(0x2b2)+_0x8a25d4+_0x3ef329(0x1be)+_0x3ea00b+_0x3ef329(0x292),_0x4fa20d+=_0x3ef329(0x257)+moment(_0x350fdc[_0x350fdc[_0x3ef329(0x228)]-0x1][_0x3ef329(0x256)])[_0x3ef329(0x27c)]('DD\x20MMM\x20YYYY')+'\x20'+_0x1e3418+_0x3ef329(0x1e6)+_0x34773c+_0x3ef329(0x201);}$(_0x3ef329(0x1b9))[_0x3ef329(0x17a)](_0x4fa20d);}}function GetAllMobileVisitedUserss(){var _0x3b89a0=a511_0x25bb41,_0x11842c='',_0x1a4081='';$(_0x3b89a0(0x21f))[_0x3b89a0(0x278)](_0x3b89a0(0x21a)),$(_0x3b89a0(0x1b9))[_0x3b89a0(0x218)](''),$('#Visited-User-modal')[_0x3b89a0(0x26a)](_0x3b89a0(0x184)),$(_0x3b89a0(0x294))[_0x3b89a0(0x278)]('Duration\x20:\x20'+$(_0x3b89a0(0x227))[_0x3b89a0(0x278)]()+_0x3b89a0(0x2c8)+$(_0x3b89a0(0x291))[_0x3b89a0(0x278)]());var _0x154ad8=$[_0x3b89a0(0x262)](AnalyticalUsageData,function(_0x55ad2d){var _0x3f350d=_0x3b89a0;return _0x55ad2d['Application']==_0x3f350d(0x1ae);});const _0x4ea507=[...new Map(_0x154ad8[_0x3b89a0(0x2b4)](_0x16ecf6=>[_0x16ecf6[_0x3b89a0(0x187)],_0x16ecf6]))[_0x3b89a0(0x1ad)]()];_0x4ea507[_0x3b89a0(0x271)](function(_0x3a34b9,_0xc9253e){var _0x3773ba=_0x3b89a0;return _0x3a34b9[_0x3773ba(0x22d)][_0x3773ba(0x28e)]<_0xc9253e['UserID'][_0x3773ba(0x28e)]?-0x1:0x1;});if(_0x4ea507['length']>0x0){for(var _0x384534=0x0;_0x384534<_0x4ea507[_0x3b89a0(0x228)];_0x384534++){var _0x50eb24=$['grep'](_0x154ad8,function(_0x3108fb){var _0x296c58=_0x3b89a0;return _0x3108fb[_0x296c58(0x187)]==_0x4ea507[_0x384534][_0x296c58(0x187)];}),_0x3423b5=_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1]['UserID'][_0x3b89a0(0x28e)],_0x587d54=_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1]['UserID'][_0x3b89a0(0x1c7)],_0x2e22f7=_0x3b89a0(0x22a);_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1]['UserImage']!=null?_0x2e22f7=_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1][_0x3b89a0(0x283)]:_0x2e22f7=_spPageContextInfo['webAbsoluteUrl']+_0x3b89a0(0x1a4)+_0x587d54;var _0x140ef1=_0x50eb24[_0x3b89a0(0x228)],_0x56fe6e=_0x50eb24[_0x50eb24['length']-0x1][_0x3b89a0(0x256)],_0x3cdb2a=new Date(_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1][_0x3b89a0(0x256)]),_0x56fe6e=_0x3cdb2a[_0x3b89a0(0x202)](),_0x33eca9=+_0x56fe6e['substr'](0x0,0x2),_0x3d60a4=_0x33eca9%0xc||0xc,_0x5747cc=_0x33eca9<0xc?_0x3b89a0(0x27d):_0x3b89a0(0x21e);_0x56fe6e=_0x3d60a4+_0x56fe6e[_0x3b89a0(0x2be)](0x2,0x3)+_0x5747cc;var _0x55cabf=$[_0x3b89a0(0x262)](AnalyticalActiveUsers,function(_0x5989b4){var _0x8bad0c=_0x3b89a0;return _0x5989b4[_0x8bad0c(0x1f9)]['ID']==_0x4ea507[_0x384534][_0x8bad0c(0x187)];}),_0x3bb09d='',_0x2b10c7='';if(_0x55cabf['length']>0x0){_0x55cabf[0x0][_0x3b89a0(0x260)]!=null&&(_0x3bb09d=_0x55cabf[0x0][_0x3b89a0(0x260)]);var _0x2b10c7='';_0x55cabf[0x0][_0x3b89a0(0x295)][_0x3b89a0(0x28e)]!=null&&(_0x2b10c7=_0x55cabf[0x0][_0x3b89a0(0x295)]['Title']);}_0x11842c+='<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22'+_0x2e22f7+'\x22><div\x20class=\x22analytical-user-image-text\x22><p\x20class=\x22mb0\x22>'+_0x3423b5+_0x3b89a0(0x217)+_0x3bb09d+_0x3b89a0(0x2b2)+_0x2b10c7+'</p><p\x20class=\x22mb0\x20Emailfont\x22>'+_0x587d54+_0x3b89a0(0x292),_0x11842c+='<td\x20class=\x22text-left\x22>'+moment(_0x50eb24[_0x50eb24[_0x3b89a0(0x228)]-0x1]['Created'])[_0x3b89a0(0x27c)](_0x3b89a0(0x24e))+'\x20'+_0x56fe6e+_0x3b89a0(0x1e6)+_0x140ef1+_0x3b89a0(0x201);}$(_0x3b89a0(0x1b9))[_0x3b89a0(0x17a)](_0x11842c);}}function ExcelDataReport(_0x357c26){var _0x3ef997=a511_0x25bb41;$('#'+_0x357c26)[_0x3ef997(0x17e)]({'type':_0x3ef997(0x29d),'exportHiddenCells':!![],'fileName':_0x3ef997(0x2a7),'ignoreColumn':[]});}function BindNonActiveUsers(_0x535b9b){var _0x23c3b9=a511_0x25bb41,_0x143cf3='';$(_0x23c3b9(0x24d))[_0x23c3b9(0x218)](''),$(_0x23c3b9(0x2a1))[_0x23c3b9(0x278)]('Non-Active\x20Users'),$(_0x23c3b9(0x1a0))['text'](_0x23c3b9(0x20d)),$(_0x23c3b9(0x1f1))['text']($(_0x23c3b9(0x227))[_0x23c3b9(0x278)]()+_0x23c3b9(0x2c8)+$(_0x23c3b9(0x291))[_0x23c3b9(0x278)]()),$('#lbNonDatesPeriod')[_0x23c3b9(0x278)](_0x23c3b9(0x299)+$('#Fromdt')[_0x23c3b9(0x278)]()+_0x23c3b9(0x2c8)+$('#Todt')['text']());if(_0x535b9b==''){const _0x28abc9=[...new Map(AnalyticalUsageData[_0x23c3b9(0x2b4)](_0x60a55f=>[_0x60a55f[_0x23c3b9(0x187)],_0x60a55f]))[_0x23c3b9(0x1ad)]()];var _0x2db712=AnalyticalActiveUsers[_0x23c3b9(0x19a)](function(_0x19006c){var _0x5d4657=_0x23c3b9;return!_0x28abc9[_0x5d4657(0x29f)](function(_0x2a3bd1){var _0x2f9fca=_0x5d4657;return _0x19006c[_0x2f9fca(0x2b9)]==_0x2a3bd1['UserIDId'];});});if(_0x2db712[_0x23c3b9(0x228)]>0x0){_0x2db712[_0x23c3b9(0x271)](function(_0x544509,_0xce03b4){var _0x2c3d8f=_0x23c3b9;return _0x544509[_0x2c3d8f(0x1f9)][_0x2c3d8f(0x28e)]<_0xce03b4[_0x2c3d8f(0x1f9)][_0x2c3d8f(0x28e)]?-0x1:0x1;});for(var _0x438fa7=0x0;_0x438fa7<_0x2db712[_0x23c3b9(0x228)];_0x438fa7++){var _0x5ee7c6=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)][_0x23c3b9(0x28e)],_0x41408f=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)][_0x23c3b9(0x1c7)],_0x1dc213=_0x2db712[_0x438fa7]['Department'][_0x23c3b9(0x28e)],_0x5789cf=_0x2db712[_0x438fa7][_0x23c3b9(0x260)],_0x2b8767='';_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)]['results'][_0x23c3b9(0x228)]>0x0?_0x2b8767=_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)][_0x23c3b9(0x204)][0x0][_0x23c3b9(0x1a6)]:_0x2b8767=_spPageContextInfo[_0x23c3b9(0x23d)]+_0x23c3b9(0x1a4)+_0x41408f,_0x143cf3+=_0x23c3b9(0x190)+_0x2b8767+_0x23c3b9(0x1d9)+_0x5ee7c6+'</p><p\x20class=\x22mb0\x22>'+_0x5789cf+_0x23c3b9(0x2b2)+_0x1dc213+_0x23c3b9(0x1be)+_0x41408f+'\x20</p></div></div></td></tr>';}}}else{if(_0x535b9b==_0x23c3b9(0x1ba)){var _0x9c97be=$[_0x23c3b9(0x262)](AnalyticalUsageData,function(_0x1a03f8){var _0x357ab4=_0x23c3b9;return _0x1a03f8['Application']==_0x357ab4(0x1ba);});const _0x280148=[...new Map(_0x9c97be[_0x23c3b9(0x2b4)](_0x40b5e1=>[_0x40b5e1['UserIDId'],_0x40b5e1]))[_0x23c3b9(0x1ad)]()];var _0x2db712=AnalyticalActiveUsers[_0x23c3b9(0x19a)](function(_0x499c39){return!_0x280148['some'](function(_0x42b769){var _0x2783c2=a511_0xf8c8;return _0x499c39[_0x2783c2(0x2b9)]==_0x42b769[_0x2783c2(0x187)];});});if(_0x2db712[_0x23c3b9(0x228)]>0x0){_0x2db712[_0x23c3b9(0x271)](function(_0x2d8cc7,_0x3f4807){var _0x4332f6=_0x23c3b9;return _0x2d8cc7['LogonName'][_0x4332f6(0x28e)]<_0x3f4807['LogonName'][_0x4332f6(0x28e)]?-0x1:0x1;});for(var _0x438fa7=0x0;_0x438fa7<_0x2db712[_0x23c3b9(0x228)];_0x438fa7++){var _0x5ee7c6=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)][_0x23c3b9(0x28e)],_0x41408f=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)][_0x23c3b9(0x1c7)],_0x1dc213=_0x2db712[_0x438fa7][_0x23c3b9(0x295)]['Title'],_0x5789cf=_0x2db712[_0x438fa7][_0x23c3b9(0x260)],_0x2b8767='';_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)]['results']['length']>0x0?_0x2b8767=_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)][_0x23c3b9(0x204)][0x0][_0x23c3b9(0x1a6)]:_0x2b8767=_spPageContextInfo[_0x23c3b9(0x23d)]+'/_layouts/15/userphoto.aspx?accountname='+_0x41408f,_0x143cf3+=_0x23c3b9(0x190)+_0x2b8767+_0x23c3b9(0x1d9)+_0x5ee7c6+'</p><p\x20class=\x22mb0\x22>'+_0x5789cf+'\x20|\x20'+_0x1dc213+_0x23c3b9(0x1be)+_0x41408f+_0x23c3b9(0x253);}}}else{if(_0x535b9b==_0x23c3b9(0x1ae)){var _0x9c97be=$[_0x23c3b9(0x262)](AnalyticalUsageData,function(_0x47ee22){var _0x11d468=_0x23c3b9;return _0x47ee22[_0x11d468(0x2ae)]==_0x11d468(0x1ae);});const _0x4f3bc1=[...new Map(_0x9c97be[_0x23c3b9(0x2b4)](_0x35e894=>[_0x35e894[_0x23c3b9(0x187)],_0x35e894]))['values']()];var _0x2db712=AnalyticalActiveUsers[_0x23c3b9(0x19a)](function(_0x38b047){var _0x29f2c3=_0x23c3b9;return!_0x4f3bc1[_0x29f2c3(0x29f)](function(_0x19a8fc){var _0x43a7c5=_0x29f2c3;return _0x38b047[_0x43a7c5(0x2b9)]==_0x19a8fc[_0x43a7c5(0x187)];});});if(_0x2db712[_0x23c3b9(0x228)]>0x0){_0x2db712['sort'](function(_0x3978a6,_0x1b4aeb){var _0xf7e598=_0x23c3b9;return _0x3978a6[_0xf7e598(0x1f9)][_0xf7e598(0x28e)]<_0x1b4aeb[_0xf7e598(0x1f9)][_0xf7e598(0x28e)]?-0x1:0x1;});for(var _0x438fa7=0x0;_0x438fa7<_0x2db712[_0x23c3b9(0x228)];_0x438fa7++){var _0x5ee7c6=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)]['Title'],_0x41408f=_0x2db712[_0x438fa7][_0x23c3b9(0x1f9)][_0x23c3b9(0x1c7)],_0x1dc213=_0x2db712[_0x438fa7][_0x23c3b9(0x295)][_0x23c3b9(0x28e)],_0x5789cf=_0x2db712[_0x438fa7]['Designation'],_0x2b8767='';_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)][_0x23c3b9(0x204)][_0x23c3b9(0x228)]>0x0?_0x2b8767=_0x2db712[_0x438fa7][_0x23c3b9(0x2b0)][_0x23c3b9(0x204)][0x0][_0x23c3b9(0x1a6)]:_0x2b8767=_spPageContextInfo[_0x23c3b9(0x23d)]+'/_layouts/15/userphoto.aspx?accountname='+_0x41408f,_0x143cf3+=_0x23c3b9(0x190)+_0x2b8767+_0x23c3b9(0x1d9)+_0x5ee7c6+_0x23c3b9(0x217)+_0x5789cf+_0x23c3b9(0x2b2)+_0x1dc213+_0x23c3b9(0x1be)+_0x41408f+'\x20</p></div></div></td></tr>';}}}}}$('#tbdyNonActiveuser')['append'](_0x143cf3);}function LoadDetailsActivities(_0x3d0ca1){var _0x4433d3=a511_0x25bb41;$(_0x4433d3(0x18b))['empty']();if(_0x3d0ca1==_0x4433d3(0x207)){if(AnalyticalUsageData[_0x4433d3(0x228)]>0x0){var _0x11df25=$('#tbActivityDetails');$(_0x4433d3(0x1a8))[_0x4433d3(0x278)](_0x4433d3(0x1ee)+$(_0x4433d3(0x227))['text']()+_0x4433d3(0x2c8)+$(_0x4433d3(0x291))[_0x4433d3(0x278)]());var _0xf5f1de='';_0x11df25['html'](''),$(_0x4433d3(0x29c))[_0x4433d3(0x278)](AnalyticalUsageData[_0x4433d3(0x228)]),$[_0x4433d3(0x23c)](AnalyticalUsageData,function(_0x25e6a3,_0x56bff7){var _0x2b5550=_0x4433d3;_0xf5f1de+='<tr\x20class=\x22text-left\x22>',_0xf5f1de+='<td>'+moment(_0x56bff7[_0x2b5550(0x256)])['format'](_0x2b5550(0x25d))+_0x2b5550(0x263),_0xf5f1de+='<td>'+_0x56bff7['UserID'][_0x2b5550(0x28e)]+'</td>',_0xf5f1de+=_0x2b5550(0x189)+_0x56bff7[_0x2b5550(0x1f5)]+_0x2b5550(0x263),_0xf5f1de+=_0x2b5550(0x189)+_0x56bff7[_0x2b5550(0x2ba)]+_0x2b5550(0x263),_0xf5f1de+=_0x2b5550(0x189)+_0x56bff7[_0x2b5550(0x24f)]+_0x2b5550(0x263),_0xf5f1de+='<td>'+_0x56bff7[_0x2b5550(0x28e)]+_0x2b5550(0x263),_0xf5f1de+='<td\x20style=\x22display:none\x22>'+_0x56bff7[_0x2b5550(0x2b7)][_0x2b5550(0x28e)]+_0x2b5550(0x263),_0xf5f1de+='<td\x20style=\x22display:none\x22>'+_0x56bff7[_0x2b5550(0x264)][_0x2b5550(0x28e)]+'</td>',_0xf5f1de+=_0x2b5550(0x1a5)+_0x56bff7[_0x2b5550(0x241)][_0x2b5550(0x28e)]+_0x2b5550(0x263),_0xf5f1de+='<td\x20style=\x22display:none\x22>'+_0x56bff7[_0x2b5550(0x260)]+'</td>',_0xf5f1de+=_0x2b5550(0x189)+_0x56bff7[_0x2b5550(0x2ae)]+'</td>',_0xf5f1de+=_0x2b5550(0x189)+_0x56bff7[_0x2b5550(0x1af)]+_0x2b5550(0x263),_0xf5f1de+='<td\x20style=\x22display:none\x22>'+_0x56bff7[_0x2b5550(0x1b1)]+_0x2b5550(0x263),_0xf5f1de+='</tr>';}),_0x11df25['append'](_0xf5f1de),AnalyticalUsageData[_0x4433d3(0x228)]>0x0?TableConfiguration():_0x11df25[_0x4433d3(0x17a)](_0x4433d3(0x20b));}}else{if(_0x3d0ca1==_0x4433d3(0x1e0))GetVisitedPages();else{if(_0x3d0ca1==_0x4433d3(0x281))DepartmentbyDetails();else{if(_0x3d0ca1=='Content-Entry')ContentEntryDetails();else _0x3d0ca1==_0x4433d3(0x18e)&&ViewedContentsDetails();}}}}var sorter;function TableConfiguration(){var _0x38acf5=a511_0x25bb41;sorter=new TINY[(_0x38acf5(0x1b0))][(_0x38acf5(0x17c))](_0x38acf5(0x17c),_0x38acf5(0x21c),{'headclass':_0x38acf5(0x2c4),'ascclass':_0x38acf5(0x255),'descclass':'desc','evenclass':_0x38acf5(0x298),'oddclass':'oddrow','evenselclass':'evenselected','oddselclass':_0x38acf5(0x18d),'paginate':!![],'size':0xa,'colddid':'columns','currentid':'currentpage','totalid':'totalpages','startingrecid':_0x38acf5(0x1bf),'endingrecid':_0x38acf5(0x20c),'totalrecid':_0x38acf5(0x2b1),'hoverid':_0x38acf5(0x19b),'pageddid':_0x38acf5(0x180),'navid':_0x38acf5(0x1f0),'sortdir':0x1,'init':!![]});}var FilterState=0x0;function Loadfilterctrl(){var _0xed71fe=a511_0x25bb41;if(FilterState==0x0){const _0x13d1b1=[...new Map(AnalyticalUsageData[_0xed71fe(0x2b4)](_0x2f8e8f=>[_0x2f8e8f[_0xed71fe(0x2ba)],_0x2f8e8f]))[_0xed71fe(0x1ad)]()];_0x13d1b1[_0xed71fe(0x271)](function(_0x46af0a,_0x5b4261){var _0x478346=_0xed71fe;return _0x46af0a[_0x478346(0x2ba)]<_0x5b4261[_0x478346(0x2ba)]?-0x1:0x1;}),$(_0xed71fe(0x26e))[_0xed71fe(0x238)](),$(_0xed71fe(0x26e))[_0xed71fe(0x17a)]($('<option\x20\x20\x20\x20\x20/>')['val']('ALL')['text'](_0xed71fe(0x29b)));if(_0x13d1b1[_0xed71fe(0x228)]>0x0)for(var _0x14106c=0x0;_0x14106c<_0x13d1b1['length'];_0x14106c++){$(_0xed71fe(0x26e))[_0xed71fe(0x17a)]($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0x13d1b1[_0x14106c][_0xed71fe(0x2ba)])['text'](_0x13d1b1[_0x14106c][_0xed71fe(0x2ba)]));}const _0x3c3248=[...new Map(AnalyticalUsageData[_0xed71fe(0x2b4)](_0x3406ac=>[_0x3406ac[_0xed71fe(0x2bd)],_0x3406ac]))['values']()];_0x3c3248[_0xed71fe(0x271)](function(_0x216dc8,_0x8d1d34){var _0x204d18=_0xed71fe;return _0x216dc8[_0x204d18(0x264)]['Title']<_0x8d1d34[_0x204d18(0x264)][_0x204d18(0x28e)]?-0x1:0x1;}),$('#ddlDepartment')[_0xed71fe(0x238)](),$(_0xed71fe(0x18f))[_0xed71fe(0x17a)]($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0xed71fe(0x29b))[_0xed71fe(0x278)](_0xed71fe(0x29b)));if(_0x3c3248[_0xed71fe(0x228)]>0x0)for(var _0x14106c=0x0;_0x14106c<_0x3c3248[_0xed71fe(0x228)];_0x14106c++){_0x3c3248[_0x14106c][_0xed71fe(0x2bd)]!=null&&$(_0xed71fe(0x18f))[_0xed71fe(0x17a)]($('<option\x20\x20\x20\x20\x20/>')[_0xed71fe(0x287)](_0x3c3248[_0x14106c][_0xed71fe(0x264)]['ID'])['text'](_0x3c3248[_0x14106c][_0xed71fe(0x264)][_0xed71fe(0x28e)]));}const _0x3f1bd3=[...new Map(AnalyticalUsageData[_0xed71fe(0x2b4)](_0x4b637e=>[_0x4b637e[_0xed71fe(0x1f6)],_0x4b637e]))[_0xed71fe(0x1ad)]()];_0x3f1bd3['sort'](function(_0x434a69,_0x5ad452){var _0x5d02d0=_0xed71fe;return _0x434a69[_0x5d02d0(0x241)][_0x5d02d0(0x28e)]<_0x5ad452[_0x5d02d0(0x241)]['Title']?-0x1:0x1;}),$(_0xed71fe(0x1fe))[_0xed71fe(0x238)](),$('#ddlLocation')[_0xed71fe(0x17a)]($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0xed71fe(0x29b))[_0xed71fe(0x278)](_0xed71fe(0x29b)));if(_0x3f1bd3['length']>0x0)for(var _0x14106c=0x0;_0x14106c<_0x3f1bd3[_0xed71fe(0x228)];_0x14106c++){_0x3f1bd3[_0x14106c][_0xed71fe(0x1f6)]!=null&&$(_0xed71fe(0x1fe))['append']($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0x3f1bd3[_0x14106c][_0xed71fe(0x241)]['ID'])[_0xed71fe(0x278)](_0x3f1bd3[_0x14106c][_0xed71fe(0x241)][_0xed71fe(0x28e)]));}const _0x2bf628=[...new Map(AnalyticalUsageData['map'](_0x279070=>[_0x279070[_0xed71fe(0x1f5)],_0x279070]))['values']()];_0x2bf628[_0xed71fe(0x271)](function(_0x3ff79e,_0x5d0f12){var _0x3bdb83=_0xed71fe;return _0x3ff79e[_0x3bdb83(0x1f5)]<_0x5d0f12[_0x3bdb83(0x1f5)]?-0x1:0x1;}),$(_0xed71fe(0x1a7))['empty'](),$('#ddlActivity')['append']($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0xed71fe(0x29b))[_0xed71fe(0x278)](_0xed71fe(0x29b)));if(_0x2bf628['length']>0x0)for(var _0x14106c=0x0;_0x14106c<_0x2bf628[_0xed71fe(0x228)];_0x14106c++){_0x2bf628[_0x14106c]['UserAction']!=null&&$(_0xed71fe(0x1a7))[_0xed71fe(0x17a)]($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0x2bf628[_0x14106c][_0xed71fe(0x1f5)])['text'](_0x2bf628[_0x14106c]['UserAction']));}const _0x1bf661=[...new Map(AnalyticalUsageData[_0xed71fe(0x2b4)](_0x249c1f=>[_0x249c1f[_0xed71fe(0x260)],_0x249c1f]))[_0xed71fe(0x1ad)]()];_0x1bf661[_0xed71fe(0x271)](function(_0x25dab8,_0x141469){var _0x27f9ab=_0xed71fe;return _0x25dab8[_0x27f9ab(0x260)]<_0x141469[_0x27f9ab(0x260)]?-0x1:0x1;}),$(_0xed71fe(0x1fb))[_0xed71fe(0x238)](),$('#ddlDesignation')[_0xed71fe(0x17a)]($(_0xed71fe(0x27e))[_0xed71fe(0x287)](_0xed71fe(0x29b))[_0xed71fe(0x278)](_0xed71fe(0x29b)));if(_0x1bf661[_0xed71fe(0x228)]>0x0)for(var _0x14106c=0x0;_0x14106c<_0x1bf661['length'];_0x14106c++){_0x1bf661[_0x14106c][_0xed71fe(0x260)]!=null&&$(_0xed71fe(0x1fb))[_0xed71fe(0x17a)]($('<option\x20\x20\x20\x20\x20/>')['val'](_0x1bf661[_0x14106c][_0xed71fe(0x260)])[_0xed71fe(0x278)](_0x1bf661[_0x14106c][_0xed71fe(0x260)]));}FilterState=0x1;}}function ResetControls(){var _0x1bfa97=a511_0x25bb41;initializePeoplePicker('Userto'),$(_0x1bfa97(0x1fb))[_0x1bfa97(0x287)](_0x1bfa97(0x29b)),$('#ddlDepartment')[_0x1bfa97(0x287)](_0x1bfa97(0x29b)),$('#ddlLocation')[_0x1bfa97(0x287)]('ALL'),$(_0x1bfa97(0x1a7))['val'](_0x1bfa97(0x29b)),$(_0x1bfa97(0x26e))[_0x1bfa97(0x287)](_0x1bfa97(0x29b)),$(_0x1bfa97(0x215))['val'](_0x1bfa97(0x18a)),$(_0x1bfa97(0x239))['empty'](),$(_0x1bfa97(0x18b))['empty']();if(AnalyticalUsageData[_0x1bfa97(0x228)]>0x0){var _0x3b9163=$('#tbActivityDetails');$(_0x1bfa97(0x1a8))[_0x1bfa97(0x278)](_0x1bfa97(0x1ee)+$(_0x1bfa97(0x227))[_0x1bfa97(0x278)]()+_0x1bfa97(0x2c8)+$(_0x1bfa97(0x291))[_0x1bfa97(0x278)]());var _0x472919='';_0x3b9163[_0x1bfa97(0x218)](''),$(_0x1bfa97(0x29c))[_0x1bfa97(0x278)](AnalyticalUsageData[_0x1bfa97(0x228)]),$[_0x1bfa97(0x23c)](AnalyticalUsageData,function(_0x309143,_0x2de313){var _0x38fc8d=_0x1bfa97;_0x472919+=_0x38fc8d(0x2a4),_0x472919+=_0x38fc8d(0x189)+moment(_0x2de313[_0x38fc8d(0x256)])['format'](_0x38fc8d(0x25d))+_0x38fc8d(0x263),_0x472919+='<td>'+_0x2de313[_0x38fc8d(0x22d)][_0x38fc8d(0x28e)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313[_0x38fc8d(0x1f5)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313[_0x38fc8d(0x2ba)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313['ContentCategory']+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313['Title']+'</td>',_0x472919+=_0x38fc8d(0x1a5)+_0x2de313['CompanyId'][_0x38fc8d(0x28e)]+_0x38fc8d(0x263),_0x472919+='<td\x20style=\x22display:none\x22>'+_0x2de313['DepartmentId']['Title']+'</td>',_0x472919+=_0x38fc8d(0x1a5)+_0x2de313[_0x38fc8d(0x241)][_0x38fc8d(0x28e)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x1a5)+_0x2de313[_0x38fc8d(0x260)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313[_0x38fc8d(0x2ae)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x189)+_0x2de313[_0x38fc8d(0x1af)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x1a5)+_0x2de313[_0x38fc8d(0x1b1)]+_0x38fc8d(0x263),_0x472919+=_0x38fc8d(0x188);}),_0x3b9163[_0x1bfa97(0x17a)](_0x472919),AnalyticalUsageData['length']>0x0?TableConfiguration():_0x3b9163[_0x1bfa97(0x17a)]('<tr\x20class=\x22text-left\x22\x20><td\x20style=\x22text-align:\x20center;\x22\x20colspan=\x228\x22>\x20No\x20records\x20found\x20</td></tr>');}else $(_0x1bfa97(0x18b))[_0x1bfa97(0x238)](),_0x3b9163[_0x1bfa97(0x17a)](_0x1bfa97(0x20b)),$(_0x1bfa97(0x29c))[_0x1bfa97(0x278)]('0');}function ActivityFilter(){var _0x2e9987=a511_0x25bb41,_0x3c8640=ensureUser($(_0x2e9987(0x297))[_0x2e9987(0x243)]()['children']()[_0x2e9987(0x274)]('id')),_0x35d9bc=0x0,_0x370094=0x0,_0x1680b0=0x0,_0x3fb708=0x0,_0xc9a0ee=0x0,_0x135b1f=0x0,_0x3db77e=0x0,_0xe7e0bc='';_0x3c8640!=0x0&&(_0x35d9bc=_0x3c8640,_0xe7e0bc+=_0x2e9987(0x22f)+UserNamePicker+_0x2e9987(0x1c3));$('#ddlDepartment')[_0x2e9987(0x287)]()!=_0x2e9987(0x29b)&&(_0x1680b0=$('#ddlDepartment')[_0x2e9987(0x287)](),_0xe7e0bc+=_0x2e9987(0x22f)+$('#ddlDepartment\x20option:selected')[_0x2e9987(0x278)]()+'</div>');$(_0x2e9987(0x1fe))['val']()!='ALL'&&(_0x3fb708=$(_0x2e9987(0x1fe))[_0x2e9987(0x287)](),_0xe7e0bc+=_0x2e9987(0x22f)+$('#ddlLocation\x20option:selected')['text']()+_0x2e9987(0x1c3));$(_0x2e9987(0x1fb))[_0x2e9987(0x287)]()!='ALL'&&(_0x370094=$(_0x2e9987(0x1fb))[_0x2e9987(0x287)](),_0xe7e0bc+=_0x2e9987(0x22f)+$(_0x2e9987(0x19d))[_0x2e9987(0x278)]()+_0x2e9987(0x1c3));$(_0x2e9987(0x1a7))[_0x2e9987(0x287)]()!=_0x2e9987(0x29b)&&(_0xc9a0ee=$('#ddlActivity')[_0x2e9987(0x287)](),_0xe7e0bc+=_0x2e9987(0x22f)+$('#ddlActivity\x20option:selected')['text']()+'</div>');$(_0x2e9987(0x26e))['val']()!=_0x2e9987(0x29b)&&(_0x135b1f=$(_0x2e9987(0x26e))[_0x2e9987(0x287)](),_0xe7e0bc+=_0x2e9987(0x22f)+$('#txtWebpart\x20option:selected')[_0x2e9987(0x278)]()+_0x2e9987(0x1c3));$(_0x2e9987(0x215))[_0x2e9987(0x287)]()!=_0x2e9987(0x18a)&&(_0x3db77e=$(_0x2e9987(0x215))[_0x2e9987(0x287)](),_0xe7e0bc+='<div\x20class=\x22upload-chip\x22>'+$(_0x2e9987(0x203))[_0x2e9987(0x278)]()+_0x2e9987(0x1c3));$(_0x2e9987(0x239))[_0x2e9987(0x238)]()[_0x2e9987(0x17a)](_0xe7e0bc);var _0x399c4e=[];_0x399c4e['push']({'AuthorId':_0x35d9bc,'Designation':_0x370094,'DepartmentIdId':_0x1680b0,'LocationIDId':_0x3fb708,'UserAction':_0xc9a0ee,'WebpartName':_0x135b1f,'Application':_0x3db77e});for(var _0x4146ca=0x0;_0x4146ca<0x7;_0x4146ca++){if(_0x4146ca==0x0){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x193)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104['AuthorId'],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x193)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x193)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x1){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x260)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104[_0x2e9987(0x260)],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x260)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x260)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x2){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x2bd)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104[_0x2e9987(0x2bd)],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x2bd)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x2bd)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x3){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x1f6)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104[_0x2e9987(0x1f6)],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x1f6)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x1f6)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x4){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x1f5)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104['UserAction'],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x1f5)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x1f5)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x5){if(_0x399c4e[0x0]==undefined){if(_0x399c4e[_0x2e9987(0x2ba)]==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104[_0x2e9987(0x2ba)],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x2ba)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x2ba)],_0x399c4e=_0x3a1104;}}}if(_0x4146ca==0x6){if(_0x399c4e[0x0]==undefined){if(_0x399c4e['Application']==0x0){var _0x3a1104=_0x399c4e;delete _0x3a1104[_0x2e9987(0x2ae)],_0x399c4e=_0x3a1104;}}else{if(_0x399c4e[0x0][_0x2e9987(0x2ae)]==0x0){var _0x3a1104=_0x399c4e[0x0];delete _0x3a1104[_0x2e9987(0x2ae)],_0x399c4e=_0x3a1104;}}}}var _0x575454=_0x399c4e,_0x1a1926=AnalyticalUsageData[_0x2e9987(0x19a)](function(_0x2b4c57){for(var _0x180508 in _0x575454){if(_0x2b4c57[_0x180508]===undefined||_0x2b4c57[_0x180508]!=_0x575454[_0x180508])return![];}return!![];}),_0x4e7095=_0x1a1926;console[_0x2e9987(0x1d7)](_0x4e7095);if(_0x4e7095['length']>0x0){var _0x16cc57=$(_0x2e9987(0x18b));$(_0x2e9987(0x1a8))[_0x2e9987(0x278)](_0x2e9987(0x1ee)+$(_0x2e9987(0x227))['text']()+_0x2e9987(0x2c8)+$(_0x2e9987(0x291))[_0x2e9987(0x278)]());var _0x5ae1a4='';_0x16cc57[_0x2e9987(0x218)](''),$(_0x2e9987(0x29c))[_0x2e9987(0x278)](_0x4e7095[_0x2e9987(0x228)]),$[_0x2e9987(0x23c)](_0x4e7095,function(_0x3fda92,_0x295a0f){var _0x4cca6c=_0x2e9987;_0x5ae1a4+=_0x4cca6c(0x2a4),_0x5ae1a4+=_0x4cca6c(0x189)+moment(_0x295a0f[_0x4cca6c(0x256)])[_0x4cca6c(0x27c)]('DD-MMM-YYYY\x20HH:mm')+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x189)+_0x295a0f[_0x4cca6c(0x22d)][_0x4cca6c(0x28e)]+_0x4cca6c(0x263),_0x5ae1a4+='<td>'+_0x295a0f['UserAction']+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x189)+_0x295a0f['WebpartName']+_0x4cca6c(0x263),_0x5ae1a4+='<td>'+_0x295a0f['ContentCategory']+_0x4cca6c(0x263),_0x5ae1a4+='<td>'+_0x295a0f[_0x4cca6c(0x28e)]+_0x4cca6c(0x263),_0x5ae1a4+='<td\x20style=\x22display:none\x22>'+_0x295a0f[_0x4cca6c(0x2b7)][_0x4cca6c(0x28e)]+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x1a5)+_0x295a0f[_0x4cca6c(0x264)][_0x4cca6c(0x28e)]+'</td>',_0x5ae1a4+=_0x4cca6c(0x1a5)+_0x295a0f[_0x4cca6c(0x241)][_0x4cca6c(0x28e)]+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x1a5)+_0x295a0f['Designation']+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x189)+_0x295a0f[_0x4cca6c(0x2ae)]+_0x4cca6c(0x263),_0x5ae1a4+='<td>'+_0x295a0f[_0x4cca6c(0x1af)]+'</td>',_0x5ae1a4+=_0x4cca6c(0x1a5)+_0x295a0f[_0x4cca6c(0x1b1)]+_0x4cca6c(0x263),_0x5ae1a4+=_0x4cca6c(0x188);}),_0x16cc57[_0x2e9987(0x17a)](_0x5ae1a4),_0x4e7095[_0x2e9987(0x228)]>0x0?TableConfiguration():_0x16cc57[_0x2e9987(0x17a)](_0x2e9987(0x20b));}else $(_0x2e9987(0x18b))[_0x2e9987(0x238)](),_0x16cc57['append'](_0x2e9987(0x20b)),$('#TotalItemscount')[_0x2e9987(0x278)]('0');}var UserNamePicker='';function ensureUser(_0x54b13e){var _0x442971=a511_0x25bb41;SelectedUserID=[];var _0x667749=0x0,_0x671d7a=_0x54b13e,_0x409e73=this[_0x442971(0x1a3)][_0x442971(0x250)][_0x671d7a],_0x1128cf=_0x409e73['GetAllUserInfo'](),_0x20f286=_0x1128cf[0x0];if(_0x20f286){var _0x236571={'logonName':_0x20f286[_0x442971(0x22b)]};$[_0x442971(0x178)]({'url':_spPageContextInfo[_0x442971(0x23d)]+'/_api/web/ensureuser','type':'POST','async':![],'contentType':'application/json;odata=verbose','data':JSON['stringify'](_0x236571),'headers':{'X-RequestDigest':$(_0x442971(0x1f7))[_0x442971(0x287)](),'accept':_0x442971(0x290)},'success':function(_0x45af64,_0x3a6c14,_0xd8fd9a){var _0x90837f=_0x442971;UserNamePicker=_0x45af64['d'][_0x90837f(0x28e)],_0x667749=_0x45af64['d']['Id'];},'error':function(_0x27f985,_0x2a25f5,_0x243d6d){}});}else _0x667749=0x0;return _0x667749;}function fnExcelReport(){var _0x28a8a3=a511_0x25bb41,_0x1406a9=_0x28a8a3(0x1d0),_0x3b570b,_0x1da3db=0x0,_0x45729b='Analytical\x20report\x20of\x20period\x20'+FrmDate+_0x28a8a3(0x1d6)+EndDate;_0x45729b=isNullOrUndefinedWithEmpty(_0x45729b)?_0x28a8a3(0x2a5):_0x45729b,tab=document[_0x28a8a3(0x2bb)]('tbluserActivity');for(_0x1da3db=0x0;_0x1da3db<tab[_0x28a8a3(0x289)]['length'];_0x1da3db++){_0x1406a9=_0x1406a9+tab[_0x28a8a3(0x289)][_0x1da3db][_0x28a8a3(0x1c4)]+_0x28a8a3(0x188);}_0x1406a9=_0x1406a9+'</table>',_0x1406a9=_0x1406a9[_0x28a8a3(0x196)](/<A[^>]*>|<\/A>/g,''),_0x1406a9=_0x1406a9['replace'](/<img[^>]*>/gi,''),_0x1406a9=_0x1406a9['replace'](/<input[^>]*>|<\/input>/gi,'');var _0x18cfe0=window[_0x28a8a3(0x2c1)][_0x28a8a3(0x29e)],_0x5e7ef2=_0x18cfe0[_0x28a8a3(0x18c)](_0x28a8a3(0x246));if(_0x5e7ef2>0x0||!!navigator[_0x28a8a3(0x29e)][_0x28a8a3(0x1e9)](/Trident.*rv\:11\./))txtArea1[_0x28a8a3(0x223)][_0x28a8a3(0x272)](_0x28a8a3(0x2a8),_0x28a8a3(0x196)),txtArea1[_0x28a8a3(0x223)]['write'](_0x1406a9),txtArea1[_0x28a8a3(0x223)][_0x28a8a3(0x1ab)](),txtArea1[_0x28a8a3(0x293)](),sa=txtArea1[_0x28a8a3(0x223)][_0x28a8a3(0x219)](_0x28a8a3(0x25a),!![],_0x28a8a3(0x2bf));else var _0x563b8d=document[_0x28a8a3(0x280)]('a');_0x563b8d[_0x28a8a3(0x177)](_0x28a8a3(0x1a1),_0x28a8a3(0x2bc)+encodeURIComponent(_0x1406a9)),_0x563b8d[_0x28a8a3(0x177)](_0x28a8a3(0x195),_0x45729b),_0x563b8d[_0x28a8a3(0x194)][_0x28a8a3(0x2c5)]=_0x28a8a3(0x17d),document[_0x28a8a3(0x2a3)][_0x28a8a3(0x1cf)](_0x563b8d),_0x563b8d['click'](),document[_0x28a8a3(0x2a3)][_0x28a8a3(0x268)](_0x563b8d);}function isNullOrUndefinedWithEmpty(_0x515a75){if(_0x515a75==undefined)return!![];else{if(_0x515a75==null)return!![];else{if(_0x515a75==null)return!![];else![];}}}function GetVisitedPages(){var _0x329db2=a511_0x25bb41;$('#tbVisitedpages')[_0x329db2(0x218)]('');const _0x43640a=[...new Map(AnalyticalUsageData[_0x329db2(0x2b4)](_0x38c421=>[_0x38c421['WebpartName'],_0x38c421]))[_0x329db2(0x1ad)]()];_0x43640a[_0x329db2(0x271)](function(_0x4b299b,_0x5a0f03){var _0x5ab787=_0x329db2;return _0x4b299b['WebpartName']<_0x5a0f03[_0x5ab787(0x2ba)]?-0x1:0x1;});var _0x1be184='';for(var _0x10a699=0x0;_0x10a699<_0x43640a['length'];_0x10a699++){var _0x2ca588=_0x43640a[_0x10a699][_0x329db2(0x2ba)],_0x5239e2=$[_0x329db2(0x262)](AnalyticalUsageData,function(_0x1a29c1){var _0x228680=_0x329db2;return _0x1a29c1[_0x228680(0x2ba)]==_0x43640a[_0x10a699][_0x228680(0x2ba)];}),_0x3be2ea=_0x5239e2['length'];const _0x5e1924=[...new Map(_0x5239e2['map'](_0xec2a1e=>[_0xec2a1e[_0x329db2(0x187)],_0xec2a1e]))[_0x329db2(0x1ad)]()];var _0x13add2=_0x5e1924[_0x329db2(0x228)],_0x557c77=$[_0x329db2(0x262)](_0x5239e2,function(_0x258360){var _0x23b68d=_0x329db2;return _0x258360[_0x23b68d(0x2ae)]=='Website';});const _0x54cbaf=[...new Map(_0x557c77[_0x329db2(0x2b4)](_0x5d4411=>[_0x5d4411['UserIDId'],_0x5d4411]))[_0x329db2(0x1ad)]()];var _0x3c6036=_0x557c77['length'],_0x165a70=_0x54cbaf[_0x329db2(0x228)],_0x5519fb=$[_0x329db2(0x262)](_0x5239e2,function(_0x4fd60b){var _0x9905cd=_0x329db2;return _0x4fd60b[_0x9905cd(0x2ae)]==_0x9905cd(0x1ae);});const _0x8b5b27=[...new Map(_0x5519fb[_0x329db2(0x2b4)](_0x33f6bd=>[_0x33f6bd[_0x329db2(0x187)],_0x33f6bd]))['values']()];var _0x1ba37a=_0x5519fb[_0x329db2(0x228)],_0x5bbe42=_0x8b5b27[_0x329db2(0x228)];_0x1be184+='<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22>'+_0x43640a[_0x10a699][_0x329db2(0x2ba)]+_0x329db2(0x206)+_0x43640a[_0x10a699][_0x329db2(0x2ba)]+_0x329db2(0x1bb)+_0x3be2ea+_0x329db2(0x1c0)+_0x43640a[_0x10a699][_0x329db2(0x2ba)]+'\x27,\x27OverAllUserList\x27)\x22>'+_0x13add2+_0x329db2(0x19c)+_0x43640a[_0x10a699][_0x329db2(0x2ba)]+_0x329db2(0x1ca)+_0x3c6036+'</a></td><td><a\x20href=\x22#\x22\x20\x20data-toggle=\x22modal\x22\x20data-target=\x22#Non-Visited-User-modal\x22\x20onclick=\x22getpopDetails(\x27'+_0x43640a[_0x10a699]['WebpartName']+'\x27,\x27OverAllUserList\x27,\x27Website\x27)\x22>'+_0x165a70+_0x329db2(0x19c)+_0x43640a[_0x10a699]['WebpartName']+_0x329db2(0x1d8)+_0x1ba37a+_0x329db2(0x236)+_0x43640a[_0x10a699][_0x329db2(0x2ba)]+_0x329db2(0x1ac)+_0x5bbe42+_0x329db2(0x2b8);}$(_0x329db2(0x26c))['append'](_0x1be184);}function getpopDetails(_0x29df5e,_0x5c5284,_0x5b6d40){var _0x2f0b4e=a511_0x25bb41,_0x25f226='';$(_0x2f0b4e(0x185))[_0x2f0b4e(0x218)](''),$(_0x2f0b4e(0x24d))['html'](''),$(_0x2f0b4e(0x277))[_0x2f0b4e(0x278)](_0x29df5e),$('#ViewedPeriod')[_0x2f0b4e(0x278)](_0x2f0b4e(0x299)+$(_0x2f0b4e(0x227))[_0x2f0b4e(0x278)]()+_0x2f0b4e(0x2c8)+$('#Todt')[_0x2f0b4e(0x278)]()),$(_0x2f0b4e(0x2c7))['text'](_0x2f0b4e(0x299)+$(_0x2f0b4e(0x227))['text']()+'\x20-\x20'+$(_0x2f0b4e(0x291))['text']());var _0x366beb=$[_0x2f0b4e(0x262)](AnalyticalUsageData,function(_0x429dd2){var _0x5b53b5=_0x2f0b4e;return _0x429dd2[_0x5b53b5(0x2ba)]==_0x29df5e;});if(_0x5b6d40!=undefined){var _0x2d83e1=$[_0x2f0b4e(0x262)](_0x366beb,function(_0x510e06){var _0x14be0b=_0x2f0b4e;return _0x510e06[_0x14be0b(0x2ae)]==_0x5b6d40;});_0x366beb=_0x2d83e1;}if(_0x5c5284==_0x2f0b4e(0x27f)){if(_0x366beb['length']>0x0)for(_0x2636fa=0x0;_0x2636fa<_0x366beb['length'];_0x2636fa++){_0x25f226+='<tr\x20class=\x22text-left\x20activities-tr\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22'+_0x366beb[_0x2636fa][_0x2f0b4e(0x283)]+_0x2f0b4e(0x296)+_0x366beb[_0x2636fa][_0x2f0b4e(0x22d)][_0x2f0b4e(0x28e)]+_0x2f0b4e(0x217)+_0x366beb[_0x2636fa]['Designation']+'\x20|\x20'+_0x366beb[_0x2636fa][_0x2f0b4e(0x264)][_0x2f0b4e(0x28e)]+_0x2f0b4e(0x1be)+_0x366beb[_0x2636fa]['UserID']['EMail']+_0x2f0b4e(0x2b5)+moment(_0x366beb[_0x2636fa][_0x2f0b4e(0x20f)])[_0x2f0b4e(0x27c)](_0x2f0b4e(0x25d))+_0x2f0b4e(0x19e)+_0x366beb[_0x2636fa][_0x2f0b4e(0x2ba)]+'</td><td>'+_0x366beb[_0x2636fa][_0x2f0b4e(0x28e)]+_0x2f0b4e(0x19e)+_0x366beb[_0x2636fa][_0x2f0b4e(0x2ae)]+_0x2f0b4e(0x201);}$(_0x2f0b4e(0x185))[_0x2f0b4e(0x17a)](_0x25f226);}else{if(_0x5c5284=='OverAllUserList'){$(_0x2f0b4e(0x2a1))[_0x2f0b4e(0x278)](_0x2f0b4e(0x183));const _0xf2bed1=[...new Map(_0x366beb[_0x2f0b4e(0x2b4)](_0x2f8e08=>[_0x2f8e08[_0x2f0b4e(0x187)],_0x2f8e08]))[_0x2f0b4e(0x1ad)]()];var _0xad4066='';if(_0xf2bed1[_0x2f0b4e(0x228)]>0x0)for(var _0x2636fa=0x0;_0x2636fa<_0xf2bed1[_0x2f0b4e(0x228)];_0x2636fa++){var _0x263f93='',_0x1e1943='',_0x170b56='',_0x1ee56f='';_0xf2bed1[_0x2636fa][_0x2f0b4e(0x283)]!=null&&(_0x263f93=_0xf2bed1[_0x2636fa][_0x2f0b4e(0x283)]),_0xf2bed1[_0x2636fa][_0x2f0b4e(0x264)][_0x2f0b4e(0x28e)]!=null&&(_0x1e1943=_0xf2bed1[_0x2636fa][_0x2f0b4e(0x264)][_0x2f0b4e(0x28e)]),_0xf2bed1[_0x2636fa][_0x2f0b4e(0x260)]&&(_0x170b56=_0xf2bed1[_0x2636fa]['Designation']),_0xad4066+=_0x2f0b4e(0x190)+_0x263f93+_0x2f0b4e(0x1d9)+_0xf2bed1[_0x2636fa][_0x2f0b4e(0x22d)][_0x2f0b4e(0x28e)]+',\x20</p><p\x20class=\x22mb0\x22>'+_0x170b56+_0x2f0b4e(0x2b2)+_0x1e1943+_0x2f0b4e(0x1be)+_0xf2bed1[_0x2636fa][_0x2f0b4e(0x22d)][_0x2f0b4e(0x1c7)]+_0x2f0b4e(0x253);}$('#tbdyNonActiveuser')[_0x2f0b4e(0x17a)](_0xad4066);}}}function DepartmentbyDetails(){var _0x3e05af=a511_0x25bb41;$(_0x3e05af(0x286))['html']('');var _0x172223='';const _0x60a803=[...new Map(AnalyticalUsageData[_0x3e05af(0x2b4)](_0x265822=>[_0x265822[_0x3e05af(0x2bd)],_0x265822]))[_0x3e05af(0x1ad)]()];_0x60a803[_0x3e05af(0x271)](function(_0xcc2b17,_0x378db8){var _0x13ea70=_0x3e05af;return _0xcc2b17[_0x13ea70(0x264)][_0x13ea70(0x28e)]<_0x378db8[_0x13ea70(0x264)][_0x13ea70(0x28e)]?-0x1:0x1;});if(_0x60a803[_0x3e05af(0x228)]>0x0)for(var _0x29ef80=0x0;_0x29ef80<_0x60a803[_0x3e05af(0x228)];_0x29ef80++){var _0x1d7b60='',_0x1422f5='';_0x60a803[_0x29ef80][_0x3e05af(0x264)][_0x3e05af(0x28e)]!=undefined&&(_0x1d7b60=_0x60a803[_0x29ef80]['DepartmentId'][_0x3e05af(0x28e)],_0x1422f5=_0x60a803[_0x29ef80]['DepartmentId']['ID']);var _0x4f0aac=$[_0x3e05af(0x262)](AnalyticalUsageData,function(_0x2aa0ed){var _0x26d927=_0x3e05af;return _0x2aa0ed[_0x26d927(0x2bd)]==_0x60a803[_0x29ef80]['DepartmentIdId'];}),_0x1b386e=$[_0x3e05af(0x262)](_0x4f0aac,function(_0x32f06b){var _0x1f4d23=_0x3e05af;return _0x32f06b['UserAction']==_0x1f4d23(0x198);}),_0x1c6595=$['grep'](_0x4f0aac,function(_0x3dcc09){var _0x102597=_0x3e05af;return _0x3dcc09[_0x102597(0x1f5)]==_0x102597(0x1b6);}),_0x517de1=$[_0x3e05af(0x262)](_0x4f0aac,function(_0x558566){var _0x9d38d5=_0x3e05af;return _0x558566[_0x9d38d5(0x1f5)]=='Content\x20Edit';}),_0x4756df=$[_0x3e05af(0x262)](_0x4f0aac,function(_0x1e3fcd){var _0x24896c=_0x3e05af;return _0x1e3fcd[_0x24896c(0x1f5)]==_0x24896c(0x225);});_0x172223+=_0x3e05af(0x252)+_0x1d7b60+_0x3e05af(0x1f8)+_0x1d7b60+_0x3e05af(0x1da)+_0x1b386e[_0x3e05af(0x228)]+_0x3e05af(0x258)+_0x1d7b60+_0x3e05af(0x2a0)+_0x1c6595['length']+_0x3e05af(0x258)+_0x1d7b60+_0x3e05af(0x199)+_0x517de1['length']+_0x3e05af(0x258)+_0x1d7b60+'\x27,\x20\x27Message\x27)\x22>'+_0x4756df[_0x3e05af(0x228)]+'</a></td></tr>';}$('#tbDeptwiseCount')[_0x3e05af(0x17a)](_0x172223);}function a511_0xf8c8(_0x33274a,_0x5a6e69){var _0x32d479=a511_0x32d4();return a511_0xf8c8=function(_0xf8c859,_0x12b82d){_0xf8c859=_0xf8c859-0x177;var _0x72104e=_0x32d479[_0xf8c859];return _0x72104e;},a511_0xf8c8(_0x33274a,_0x5a6e69);}function DepartmentbyUserDetails(_0x450128,_0x14d5c4){var _0x5503e2=a511_0x25bb41;$(_0x5503e2(0x284))[_0x5503e2(0x218)](''),$(_0x5503e2(0x270))['text'](_0x5503e2(0x1c1)+_0x450128),$(_0x5503e2(0x20e))[_0x5503e2(0x278)](_0x5503e2(0x299)+$(_0x5503e2(0x227))[_0x5503e2(0x278)]()+_0x5503e2(0x2c8)+$(_0x5503e2(0x291))[_0x5503e2(0x278)]()+_0x5503e2(0x27b)+_0x14d5c4);var _0x4ce398=$[_0x5503e2(0x262)](AnalyticalUsageData,function(_0x5922fb){var _0x3720a7=_0x5503e2;return _0x5922fb[_0x3720a7(0x264)][_0x3720a7(0x28e)]==_0x450128&&_0x5922fb['UserAction']==_0x14d5c4;}),_0x131588='',_0x23422a=_0x4ce398;for(i=0x0;i<_0x23422a['length'];i++){_0x131588+=_0x5503e2(0x1df)+_0x23422a[i][_0x5503e2(0x283)]+_0x5503e2(0x296)+_0x23422a[i][_0x5503e2(0x22d)][_0x5503e2(0x28e)]+_0x5503e2(0x217)+_0x23422a[i][_0x5503e2(0x260)]+_0x5503e2(0x2b2)+_0x23422a[i]['DepartmentId'][_0x5503e2(0x28e)]+_0x5503e2(0x1be)+_0x23422a[i][_0x5503e2(0x1cb)][_0x5503e2(0x1c7)]+'</p></div></div></td><td>'+_0x23422a[i][_0x5503e2(0x2ba)]+_0x5503e2(0x230)+moment(_0x4ce398[i]['Modified'])[_0x5503e2(0x27c)](_0x5503e2(0x25d))+'</td><td>'+_0x4ce398[i][_0x5503e2(0x28e)]+'</td><td>'+_0x4ce398[i]['Application']+_0x5503e2(0x201);}$(_0x5503e2(0x284))[_0x5503e2(0x17a)](_0x131588);}function ContentEntryDetails(){var _0x5800c4=a511_0x25bb41;$(_0x5800c4(0x2ac))[_0x5800c4(0x218)]('');const _0x36885e=[...new Map(AnalyticalUsageData['map'](_0x43c280=>[_0x43c280[_0x5800c4(0x2ba)],_0x43c280]))[_0x5800c4(0x1ad)]()];_0x36885e[_0x5800c4(0x271)](function(_0x4c742c,_0x347d19){var _0x8690b8=_0x5800c4;return _0x4c742c[_0x8690b8(0x2ba)]<_0x347d19[_0x8690b8(0x2ba)]?-0x1:0x1;});var _0x129c38='';if(_0x36885e[_0x5800c4(0x228)]>0x0)for(var _0x384ded=0x0;_0x384ded<_0x36885e['length'];_0x384ded++){var _0x4b2f77=$[_0x5800c4(0x262)](AnalyticalUsageData,function(_0x362c05){var _0x382b3a=_0x5800c4;return _0x362c05[_0x382b3a(0x2ba)]==_0x36885e[_0x384ded]['WebpartName']&&_0x362c05[_0x382b3a(0x1f5)]==_0x382b3a(0x2c3);});_0x4b2f77[_0x5800c4(0x228)]>0x0&&(_0x129c38+=_0x5800c4(0x252)+_0x36885e[_0x384ded][_0x5800c4(0x2ba)]+_0x5800c4(0x222)+_0x36885e[_0x384ded][_0x5800c4(0x2ba)]+_0x5800c4(0x2c2)+_0x4b2f77[_0x5800c4(0x228)]+_0x5800c4(0x2b8));}$(_0x5800c4(0x2ac))[_0x5800c4(0x17a)](_0x129c38);}function ContentEntryUsersDetails(_0x4fea19){var _0x4c65c7=a511_0x25bb41;$(_0x4c65c7(0x1d3))[_0x4c65c7(0x218)](''),$(_0x4c65c7(0x2af))[_0x4c65c7(0x278)](_0x4fea19),$('#lbPeriod')[_0x4c65c7(0x278)]('Duration\x20:\x20'+$(_0x4c65c7(0x227))[_0x4c65c7(0x278)]()+'\x20-\x20'+$(_0x4c65c7(0x291))[_0x4c65c7(0x278)]());var _0x39f619=$[_0x4c65c7(0x262)](AnalyticalUsageData,function(_0x11b371){var _0xb1f500=_0x4c65c7;return _0x11b371['WebpartName']==_0x4fea19&&_0x11b371['UserAction']==_0xb1f500(0x2c3);}),_0x257ce0='';if(_0x39f619[_0x4c65c7(0x228)]>0x0)for(var _0x5b922e=0x0;_0x5b922e<_0x39f619['length'];_0x5b922e++){var _0x37be6c='';_0x39f619[_0x5b922e][_0x4c65c7(0x24f)]!=null&&(_0x37be6c=_0x39f619[_0x5b922e][_0x4c65c7(0x24f)]),_0x257ce0+=_0x4c65c7(0x1df)+_0x39f619[_0x5b922e][_0x4c65c7(0x283)]+_0x4c65c7(0x296)+_0x39f619[_0x5b922e][_0x4c65c7(0x22d)][_0x4c65c7(0x28e)]+_0x4c65c7(0x217)+_0x39f619[_0x5b922e]['Designation']+_0x4c65c7(0x2b2)+_0x39f619[_0x5b922e][_0x4c65c7(0x264)]['Title']+_0x4c65c7(0x1be)+_0x39f619[_0x5b922e][_0x4c65c7(0x1cb)][_0x4c65c7(0x1c7)]+_0x4c65c7(0x2b5)+moment(_0x39f619[_0x5b922e]['Modified'])['format'](_0x4c65c7(0x25d))+_0x4c65c7(0x19e)+_0x39f619[_0x5b922e][_0x4c65c7(0x2ba)]+_0x4c65c7(0x19e)+_0x37be6c+_0x4c65c7(0x19e)+_0x39f619[_0x5b922e][_0x4c65c7(0x28e)]+_0x4c65c7(0x201);}$(_0x4c65c7(0x1d3))[_0x4c65c7(0x17a)](_0x257ce0);}function ViewedContentsDetails(){var _0x4797b8=a511_0x25bb41,_0x4d52e5=$[_0x4797b8(0x262)](AnalyticalUsageData,function(_0x597bf7){var _0x267b6f=_0x4797b8;return _0x597bf7[_0x267b6f(0x1f5)]==_0x267b6f(0x1b6);});const _0x1ecb1e=[...new Map(_0x4d52e5[_0x4797b8(0x2b4)](_0x172873=>[_0x172873['ItemId'],_0x172873]))['values']()];var _0x1ed28c='';$(_0x4797b8(0x220))[_0x4797b8(0x218)]('');if(_0x1ecb1e[_0x4797b8(0x228)]>0x0)for(var _0x3f34c4=0x0;_0x3f34c4<_0x1ecb1e[_0x4797b8(0x228)];_0x3f34c4++){var _0x26c86d=$[_0x4797b8(0x262)](_0x4d52e5,function(_0x228071){var _0x4375e4=_0x4797b8;return _0x228071['ItemId']==_0x1ecb1e[_0x3f34c4][_0x4375e4(0x247)];}),_0xa6a545=_0x26c86d[0x0]['WebpartName'],_0xd325eb='';_0x26c86d[_0x26c86d[_0x4797b8(0x228)]-0x1]['ContentCategory']!=null&&(_0xd325eb=_0x26c86d[_0x26c86d[_0x4797b8(0x228)]-0x1]['ContentCategory']);var _0x1c7fce=_0x26c86d[0x0][_0x4797b8(0x28e)],_0x1e8316=_0x26c86d[_0x4797b8(0x228)];_0x1ed28c+='<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22>'+_0xa6a545+_0x4797b8(0x19e)+_0xd325eb+_0x4797b8(0x19e)+_0x1c7fce+_0x4797b8(0x1cc)+_0xa6a545+_0x4797b8(0x1e5)+_0x1ecb1e[_0x3f34c4][_0x4797b8(0x247)]+_0x4797b8(0x2c2)+_0x1e8316+'</a></td></tr>';}$(_0x4797b8(0x220))[_0x4797b8(0x17a)](_0x1ed28c);}function ViewedContentsUsersDetails(_0x3f4d91,_0x43b1cc){var _0x13882c=a511_0x25bb41,_0x37f8c3=$[_0x13882c(0x262)](AnalyticalUsageData,function(_0x278ca8){var _0x3d06bf=_0x13882c;return _0x278ca8[_0x3d06bf(0x1f5)]==_0x3d06bf(0x1b6)&&_0x278ca8['ItemId']==_0x43b1cc;});$('#tblContentView')[_0x13882c(0x218)](''),$('#txtContentViewTitle')[_0x13882c(0x278)]('Title\x20:\x20'+_0x37f8c3[0x0][_0x13882c(0x28e)]),$(_0x13882c(0x2b6))[_0x13882c(0x278)](_0x37f8c3[0x0]['Title']),$(_0x13882c(0x2aa))[_0x13882c(0x278)]($(_0x13882c(0x227))[_0x13882c(0x278)]()),$(_0x13882c(0x182))[_0x13882c(0x278)]($(_0x13882c(0x291))[_0x13882c(0x278)]());if(_0x37f8c3[_0x13882c(0x228)]>0x0){var _0x5c59bc='';for(var _0x4ed5d7=0x0;_0x4ed5d7<_0x37f8c3[_0x13882c(0x228)];_0x4ed5d7++){var _0x3eb003='';_0x37f8c3[_0x4ed5d7][_0x13882c(0x24f)]!=null&&(_0x3eb003=_0x37f8c3[_0x4ed5d7][_0x13882c(0x24f)]),_0x5c59bc+='<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22'+_0x37f8c3[_0x4ed5d7][_0x13882c(0x283)]+'\x22><div\x20class=\x22analytical-user-image-text\x22><p\x20class=\x22mb0\x22>'+_0x37f8c3[_0x4ed5d7][_0x13882c(0x22d)][_0x13882c(0x28e)]+_0x13882c(0x217)+_0x37f8c3[_0x4ed5d7]['Designation']+_0x13882c(0x2b2)+_0x37f8c3[_0x4ed5d7]['DepartmentId']['Title']+_0x13882c(0x1be)+_0x37f8c3[_0x4ed5d7]['Author'][_0x13882c(0x1c7)]+_0x13882c(0x2b5)+moment(_0x37f8c3[_0x4ed5d7]['Modified'])[_0x13882c(0x27c)](_0x13882c(0x25d))+'</td><td>'+_0x3eb003+_0x13882c(0x19e)+_0x37f8c3[_0x4ed5d7][_0x13882c(0x2ae)]+_0x13882c(0x201);}}$(_0x13882c(0x197))[_0x13882c(0x17a)](_0x5c59bc);}function a511_0x32d4(){var _0x39bb45=['</td><td>','User,DL,SecGroup,SPGroup','#thnonUserTitle','href','#lbMob','SPClientPeoplePicker','/_layouts/15/userphoto.aspx?accountname=','<td\x20style=\x22display:none\x22>','ServerRelativeUrl','#ddlActivity','#thDateRangePeriod','MM\x20dd,\x20yy','#lbActivity','close','\x27,\x27OverAllUserList\x27,\x27Mobile\x20App\x27)\x22>','values','Mobile\x20App','AppVersion','table','Environment','#btnApply','MaximumEntitySuggestions','18VZxBKJ','#Viewed-write-up','Content\x20Read','24175070Xmunhc','PrincipalAccountType','#tbdyAllVisitedUsers','Website','\x27,\x27OverAllList\x27)\x22>','Mobile\x20App\x20Usage\x20','label','</p><p\x20class=\x22mb0\x20Emailfont\x22>','startrecord','</a></td><td><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Non-Visited-User-modal\x22\x20onclick=\x22getpopDetails(\x27','Department\x20:\x20','T00:00:00.000Z','</div>','innerHTML','Logged\x20In','<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22\x20style=\x22width:\x2030%;\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22','EMail','280px','right','\x27,\x27OverAllList\x27,\x27Website\x27)\x22\x20>','Author','</td><td\x20class=\x22text-left\x22><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Viewed-write-up-modal\x22\x20onclick=\x22ViewedContentsUsersDetails(\x27','setHours','Activity\x20:\x20','appendChild','<table\x20border=\x271px\x27><tr\x20bgcolor=\x27#87AFC6\x27>','#lbLicenesedUser','?$select=*,Author/Name,Author/Title,Author/EMail,Author/ID,DepartmentId/ID,DepartmentId/Title,CompanyId/ID,CompanyId/Title,LocationID/ID,LocationID/Title,UserID/ID,UserID/Title,UserID/EMail&$expand=UserID,LocationID,DepartmentId,CompanyId,Author&$top=5000&$filter=Created\x20ge\x20\x27','#tbContentEntry','Error\x20in\x20ReadAnalyticalUsageData.','#btnReport','\x20to\x20','log','\x27,\x27OverAllList\x27,\x27Mobile\x20App\x27)\x22>','\x22>\x20<div\x20class=\x22analytical-user-image-text\x22><p\x20class=\x22mb0\x22>','\x27,\x20\x27Page\x20Visited\x27)\x22>','div#ProgressWebdiv','/_api/web/lists/getbytitle(\x27Employees\x27)/items/','div#ProgressTtldiv','Loading...','<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22','Viewed-Pages','T23:59:59\x27','it\x20exceeds\x20the\x20list\x20view','promise','ready','\x27,\x20\x27','</td><td\x20class=\x22js-sort-number\x22>','?$top=5000&$expand=LogonName/ID,Department/ID,Company/ID&$orderby=ID\x20desc&$select=*,ID,Department/ID,Department/Title,Company/ID,Company/Title,LogonName/ID,LogonName/Title','Over\x20all\x20Usage\x20','match','MM/DD/YYYY','dataPoint','showWaitScreenWithNoClose','__next','\x20:\x20','YYYY','tablenav','#thdatePrd','Error\x20in\x20ReadAnalyticalActiveUsers.','rgb(75,\x20192,\x20192)','<tr\x20class=\x22text-left\x20active-user-tr\x22><td\x20class=\x22text-left\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22','UserAction','LocationIDId','#__REQUESTDIGEST','</td><td\x20class=\x22text-left\x22><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Department-wise-activities-modal\x22\x20onclick=\x22DepartmentbyUserDetails(\x27','LogonName','#lbDatesPeriod','#ddlDesignation','#lbDates','Dashboard','#ddlLocation','#Viewed-Pages','3363324ztMudX','</td></tr>','toTimeString','#ddlApplication\x20option:selected','results','#WebVisit','</td><td\x20class=\x22text-left\x22><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Viewed-Pages-modal\x22\x20onclick=\x22getpopDetails(\x27','Details-Activities','MMM\x20DD','toISOString','#thdatePeriod','<tr\x20class=\x22text-left\x22\x20><td\x20style=\x22text-align:\x20center;\x22\x20colspan=\x228\x22>\x20No\x20records\x20found\x20</td></tr>','endrecord','Non-Active\x20Users','#ViewedDuration','Modified','CompanyIdId','line','Tcounts','error','#thPeriod','#ddlApplication','238SQnOVG','</p><p\x20class=\x22mb0\x22>','html','execCommand','Active\x20User','AllowMultipleValues','tbluserActivity','#thactivity','\x20PM','#thUserTitle','#tbViewedContents','#line-Chart','</td><td\x20class=\x22text-left\x22><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Content-Entry-modal\x22\x20onclick=\x22ContentEntryUsersDetails(\x27','document','#lbTotal','Message','{y}\x20%','#Fromdt','length','#dvlineChart','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/WebAnalytics/assets/images/user_pic.jpg','Key','\x20</p><p\x20class=\x22mb0\x20Emailfont\x22>','UserID','#Content-Entry','<div\x20class=\x22upload-chip\x22>','</td><td\x20class=\x22text-left\x22>','PrimaryCompany','includes','datepicker','push','\x27\x20and\x20Created\x20le\x20\x27','</a></td><td><a\x20href=\x22#\x22\x20\x20data-toggle=\x22modal\x22\x20data-target=\x22#Non-Visited-User-modal\x22\x20onclick=\x22getpopDetails(\x27','Active','empty','#FilterChips','SearchPrincipalSource','CanvasJSChart','each','webAbsoluteUrl','Width','div#ProgressMobdiv','ResolvePrincipalSource','LocationID','getQueryStringParameter','children','YYYY-MM-DD','concat','MSIE\x20','ItemId','#selectByTask','#Details-Activities','{label}\x20<br/>\x20{y}\x20%','Total\x20Visit:\x20','Active\x20User\x20:\x20','#tbdyNonActiveuser','DD\x20MMM\x20YYYY','ContentCategory','SPClientPeoplePickerDict','#lbActivityCount','<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x22>','\x20</p></div></div></td></tr>','<canvas\x20id=\x22line-Chart\x22><canvas>','asc','Created','<td\x20class=\x22text-left\x22>','</a></td><td><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Department-wise-activities-modal\x22\x20onclick=\x22DepartmentbyUserDetails(\x27','#attendance-reportFrom','SaveAs','</p></div></div></td><td\x20class=\x22text-left\x22\x20style=\x22width:\x2018%;\x22>','getTime','DD-MMM-YYYY\x20HH:mm','setDate','#Visited-User-modal','Designation','#lbttlLicenesedUser','grep','</td>','DepartmentId','#dvpieChart','#MobVisit','1838212rqNtSo','removeChild','#tbInstance','modal','#attendance-report-filter','#tbVisitedpages','round','#txtWebpart','\x22\x20><div\x20class=\x22analytical-user-image-text\x22><p\x20class=\x22mb0\x22>','#txtDeptTitle','sort','open','0px','attr','?$top=5000&$expand=AttachmentFiles,LogonName/ID,Department/ID,Company/ID&$orderby=ID\x20desc&$select=*,ID,Department/ID,Department/Title,Company/ID,Company/Title,LogonName/ID,LogonName/Title,LogonName/EMail,AttachmentFiles&$filter=(PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20Status\x20eq\x20\x27Active\x27)','3107076fEakRE','#ViewPageTitle','text','center','getDate','\x20|\x20Activity\x20:\x20','format','\x20AM','<option\x20\x20\x20\x20\x20/>','OverAllList','createElement','Department-wise-activities','#TotalVisit','UserImage','#tbdyDepyDetails','pie','#tbDeptwiseCount','val','Status','rows','10LZMluy','DD-MMM-YYYY','#attendance-reportTo','Website\x20Usage\x20','Title','/_api/web/lists/getbytitle(\x27NotificationCenter\x27)/items/','application/json;odata=verbose','#Todt','</p></div></div></td>','focus','#thDatePeriod','Department','\x22><div\x20class=\x22analytical-user-image-text\x22><p\x20class=\x22mb0\x22>','#Userto','evenrow','Duration\x20:\x20','#datepicker','ALL','#TotalItemscount','csv','userAgent','some','\x27,\x20\x27Content\x20Read\x27)\x22>','#txtTitle','responseJSON','body','<tr\x20class=\x22text-left\x22>','Excel\x20Document','9409nGREZs','ExcelReportDetails','txt/html','#lbWeb','#StDate','Filter','#tbContrntEnrty','</td><td\x20style=\x22width:\x2010%;\x22>','Application','#txtContentEntryTitle','AttachmentFiles','totalrecords','\x20|\x20','#List-of-Instances-modal','map','</p></div></div></td><td\x20class=\x22text-left\x22>','#txtCViewTitle','CompanyId','</a></td></tr>','LogonNameId','WebpartName','getElementById','data:application/vnd.ms-excel,','DepartmentIdId','substr','Activiy\x20Report.xls','2167830wdajeg','navigator','\x27)\x22>','Content\x20Edit','head','display','click','#lbNonDatesPeriod','\x20-\x20','padding-right','Deferred','setAttribute','ajax','\x20out\x20of\x20','append','Products\x20in\x20%','sorter','none','tableExport','hide','pagedropdown','message','#EnDate','Active\x20Users...','show','#tbViewDeatils','2022040XxWWuI','UserIDId','</tr>','<td>','All','#tbActivityDetails','indexOf','oddselected','Viewed-write-up','#ddlDepartment','<tr\x20class=\x22text-left\x22><td\x20class=\x22text-left\x20js-sort-number\x22><div\x20class=\x22analytical-user-image-box\x22><img\x20src=\x22','value','css','AuthorId','style','download','replace','#tblContentView','Page\x20Visited','\x27,\x20\x27Content\x20Edit\x27)\x22>','filter','selectedrow','</a></td><td><a\x20href=\x22#\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Viewed-Pages-modal\x22\x20onclick=\x22getpopDetails(\x27','#ddlDesignation\x20option:selected'];a511_0x32d4=function(){return _0x39bb45;};return a511_0x32d4();}
+
+$(document).ready(function() {
+	
+    today = new Date();
+    var lastdays = new Date();
+    var restQuery = "?$top=5000&$expand=AttachmentFiles,LogonName/ID,Department/ID,Company/ID&$orderby=ID desc&$select=*,ID,Department/ID,Department/Title,Company/ID,Company/Title,LogonName/ID,LogonName/Title,LogonName/EMail,AttachmentFiles&$filter=(PrimaryCompany eq 'Primary' and Status eq 'Active')";
+    AnalyticalActiveUsersUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + restQuery;
+    ReadAnalyticalActiveUsers();
+    
+    $( "#datepicker" ).datepicker();
+    
+    companyID=titanForWork.getQueryStringParameter('CompanyId');
+    $(".ms-backgroundImage").css("padding-right", "0px");
+    $('#Todt').text(moment(today).format('LL'));
+    $('#Fromdt').text(moment(lastdays.setDate(lastdays.getDate() - 7)).format('LL'));
+    
+    var ReportToCalender = moment(today).format('LL');
+    //$('#attendance-reportTo').val(moment(today).format('LL'))
+    //$('#attendance-reportFrom').val(moment(lastdays).format('LL'))
+    
+    $('#attendance-reportTo').datepicker({
+        defaultDate: 0,
+        //minDate: 0,
+        startDate: new Date(),
+        //dateFormat: 'dd/mm/yy',
+        dateFormat: 'MM dd, yy',
+    }).datepicker("setDate", new Date());
+	
+    $('#attendance-reportFrom').datepicker({
+        defaultDate: -7,
+        //minDate: -7,
+        startDate: new Date(lastdays.setDate(lastdays.getDate() - 7)),
+        //dateFormat: 'dd/mm/yy',
+        dateFormat: 'MM dd, yy',
+    }).datepicker("setDate", '-7d');
+    
+    $('#From_data').datepicker({
+        defaultDate: -90,
+        //minDate: -7,
+        startDate: new Date(lastdays.setDate(lastdays.getDate() - 90)),
+        //dateFormat: 'dd/mm/yy',
+        dateFormat: 'MM dd, yy',
+    }).datepicker("setDate", '-90d');
+    
+    
+    $('#lbttlLicenesedUser').text(UsersLicenceRequired);
+    $('#attendance-report-filter').modal('show');
+    
+    $("#btnApply").click(function(){
+    	if(new Date($("#attendance-reportFrom").val()) <= new Date($("#attendance-reportTo").val()))
+		{
+    		$('#attendance-report-filter').modal('hide');
+    		OpenMyCustomLoader();
+    		AnalyticalUsageData=[];				
+			var startdt = new Date($("#attendance-reportFrom").val());
+    	    var lastdt = new Date($("#attendance-reportTo").val());
+    	    	lastdt.setDate(lastdt.getDate() + 1);
+    	    var CurrentDT =startdt.toISOString().substring(0, 10);
+    	    var LastDT =lastdt.toISOString().substring(0, 10);
+    	    var Url = "?$select=*,Author/Name,Author/Title,Author/EMail,Author/ID,DepartmentId/ID,DepartmentId/Title,CompanyId/ID,CompanyId/Title,LocationID/ID,LocationID/Title,UserID/ID,UserID/Title,UserID/EMail&$expand=UserID,LocationID,DepartmentId,CompanyId,Author&$top=5000&$filter=Created ge '" + CurrentDT + "' and Created le '"+ LastDT +"T23:59:59'";
+    	    //var Url = "?$select=*,Author/Name,Author/Title,Author/EMail,Author/ID,DepartmentId/ID,DepartmentId/Title,CompanyId/ID,CompanyId/Title,LocationID/ID,LocationID/Title,UserID/ID,UserID/Title,UserID/EMail&$expand=UserID,LocationID,DepartmentId,CompanyId,Author&$top=5000&$filter=Created ge '2022-02-10T00:00:00.000Z' and Created le '2022-02-10T00:00:00.000Z'";
+        	AnalyticalUsageUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NotificationCenter')/items/" + Url;
+        	setTimeout(function(){	ReadAnalyticalUsageData() }, 200);        
+         	setTimeout(function(){getUsers_Activity_Details('Filter'); }, 200);   
+		}
+		else
+		{
+			alert("Invalid date range.\nFrom Date should not be bigger than To Date");
+		}
+    });
+    $("#btnReport").click(function(){ 
+        setTimeout(function(){OpenMyCustomLoader() }, 50); 	
+        arrActivityResult = [];
+        setTimeout(function(){getUsers_Activity_Details(''); }, 100);   
+    });
+    
+    $("#btnStartArchiving").click(function(){ 
+         var archivindListUrl=_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NotificationCenter')/items?$select=ID,Created&$top=5000";
+         arrData=[];
+         //OpenMyCustomLoader();
+         adddataInArchingList(); 
+    });
+    
+    initializePeoplePicker("Userto");
+    
+    //StDate = new Date($('#Fromdt').text());
+    //EnDate = new Date($('#Todt').text());  
+});
+//var StDate ='';
+//var EnDate ='';
+
+function initializePeoplePicker(peoplePickerElementId) {  
+    var schema = {};  
+    schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';  
+    schema['SearchPrincipalSource'] = 15;  
+    schema['ResolvePrincipalSource'] = 15;  
+    schema['AllowMultipleValues'] = false;  
+    schema['MaximumEntitySuggestions'] = 50;  
+    schema['Width'] = '280px';  
+    this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);  
+}
+
+
+
+var AnalyticalUsageData = AnalyticalUsageData || [];
+var AnalyticalUsageUrl = '';
+function ReadAnalyticalUsageData() 
+{
+	dfds = $.Deferred(),
+    $.ajax({
+        url: AnalyticalUsageUrl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) 
+        {
+        	FilterState=0; // For filter load state
+        	
+        	AnalyticalUsageData = AnalyticalUsageData.concat(data.d.results);           
+            if (data.d.__next) 
+            {
+                AnalyticalUsageUrl = data.d.__next;
+                ReadAnalyticalUsageData();
+            }
+            else 
+            {	
+            	// Data without Logged In record. 
+               	var FilteredRec = $.grep(AnalyticalUsageData, function(v) {
+    				return v.UserAction != 'Logged In';
+				});
+				// End
+				
+				
+				var sd = new Date(moment(new Date($("#attendance-reportFrom").val())).format("YYYY-MM-DD")+"T00:00:00.000Z").getTime();
+				var ed = new Date(moment(new Date($("#attendance-reportTo").val())).format("YYYY-MM-DD")+"T00:00:00.000Z").getTime();
+      			//sd = new Date("2010-08-21T00:00:00.000Z").getTime(),
+  				var ExtResults = FilteredRec.filter(d => {var time = new Date(moment(d.Created).format("YYYY-MM-DD")+"T00:00:00.000Z").getTime();
+                             return (sd <= time && time <= ed);
+                            });
+				
+				
+					
+               /* var tempDate = new Date($("#attendance-reportFrom").val());
+        			tempDate.setDate(tempDate.getDate() - 1);
+        			var StartDate = moment(tempDate).format("MM/DD/YYYY");
+        		var tempDate = new Date($("#attendance-reportTo").val());
+        			tempDate.setDate(tempDate.getDate() + 1);
+        			var EndDate = moment(tempDate).format("MM/DD/YYYY");            
+                            
+				var ExtResults= FilteredRec.filter(function (data) {
+            		Created = moment(data.Created).format("MM/DD/YYYY");
+            		return (StartDate == "" ? Created != "" : Created >= StartDate) && (EndDate == "" ? Created!= "" : Created <= EndDate);
+        		});	*/			
+				
+				AnalyticalUsageData = ExtResults;
+            	const distinctItems = [...new Map(AnalyticalUsageData.map(item => [item["UserIDId"], item])).values()];
+            	uniqueEmployeesValue = (distinctItems.length / AnalyticalActiveUsers.length)* 100;
+                $('div#ProgressTtldiv').css({'width': Math.round(uniqueEmployeesValue)+'%'});
+                $('#lbTotal').text('Over all Usage '+ Math.round(uniqueEmployeesValue)+'%');
+        		$('#TotalVisit').text('Active User : '+ distinctItems.length +' out of '+AnalyticalActiveUsers.length);
+        		
+        		
+				var FilteredValueweb = $.grep(AnalyticalUsageData, function(v) {
+    				return v.Application == 'Website';
+				});				
+				const uniquewebuser = [...new Map(FilteredValueweb.map(item => [item["UserIDId"], item])).values()];				
+				UniqueCountsWebValue = (uniquewebuser.length / AnalyticalActiveUsers.length)* 100;
+    			$('div#ProgressWebdiv').css({'width': Math.round(UniqueCountsWebValue)+'%'});
+    			$('#lbWeb').text('Website Usage '+ Math.round(UniqueCountsWebValue)+'%');
+    			$('#WebVisit').text('Active User : '+ uniquewebuser.length +' out of '+AnalyticalActiveUsers.length);
+    			
+    			
+    			var FilteredValuemob = $.grep(AnalyticalUsageData, function(v) {
+    				return v.Application == 'Mobile App';
+				});				
+				const uniquemobuser = [...new Map(FilteredValuemob.map(item => [item["UserIDId"], item])).values()];    			
+    			UniqueCountsMobValue = (uniquemobuser.length / AnalyticalActiveUsers.length)* 100;
+    			$('div#ProgressMobdiv').css({'width': Math.round(UniqueCountsMobValue)+'%'});
+    			$('#lbMob').text('Mobile App Usage '+ Math.round(UniqueCountsMobValue)+'%');
+   				$('#MobVisit').text('Active User : '+ uniquemobuser.length +' out of '+AnalyticalActiveUsers.length);
+   				
+				
+				var start= new Date($('#Fromdt').text());
+    			var end = new Date($('#Todt').text()); 
+				var diff = new Date(end - start);
+				var days = diff/1000/60/60/24;
+				var DateArray=[];
+				for(var i=0; i<=days; i++)
+				{
+					var tempDate = new Date($("#attendance-reportFrom").val());
+        			tempDate.setDate(tempDate.getDate() + i);
+        			var EndDate = moment(tempDate).format("MM/DD/YYYY"); 
+        			DateArray.push(EndDate);  
+				}				
+				ToGetCountbyDate(DateArray);
+				ToGetActivityCounts();
+				
+				$("#selectByTask").val('Dashboard');
+				$("#dashboard").show();
+				$("#Viewed-Pages").hide();
+				$("#Department-wise-activities").hide();
+				$("#Viewed-write-up").hide();
+				$("#Content-Entry").hide();
+				$("#Details-Activities").hide();
+				
+				
+				CloseMyCustomLoader();      	
+            }     
+        },
+        error: function (jqXhr, textStatus, errorThrown)
+		{
+       		console.log("Error in ReadAnalyticalUsageData.");
+            console.log(jqXhr.responseJSON.error.message.value);
+            var msg = jqXhr.responseJSON.error.message.value;
+            var MsgResult =	msg.includes("it exceeds the list view");
+            if(MsgResult == true)
+            {
+            	 var Url = "?$select=*,Author/Name,Author/Title,Author/EMail,Author/ID,DepartmentId/ID,DepartmentId/Title,CompanyId/ID,CompanyId/Title,LocationID/ID,LocationID/Title,UserID/ID,UserID/Title,UserID/EMail&$expand=UserID,LocationID,DepartmentId,CompanyId,Author&$top=5000";
+        			AnalyticalUsageUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NotificationCenter')/items/" + Url;
+					ReadAnalyticalUsageData();
+            }
+        }    
+    });
+    return dfds.promise();
+}
+
+
+function ToGetCountbyDate(DateArray)
+{
+	var Uniquerecords=[];
+	var uniqueRecordweight=[];
+	var arrDates=[];    
+	for(var i=0; i<DateArray.length; i++)
+	{
+		var ExtResults= AnalyticalUsageData.filter(function (data) {
+    		Created = moment(data.Created).format("MM/DD/YYYY");
+            return (DateArray[i]== "" ? Created != "" : Created == DateArray[i]);
+       	});
+       	if(ExtResults.length>0)
+       	{       	
+       		const distinctItems = [...new Map(ExtResults.map(item => [item["UserIDId"], item])).values()];
+       		arrDates.push(moment(distinctItems[0].Created).format('MMM DD'));
+       		Uniquerecords = Uniquerecords.concat(distinctItems);
+       		uniqueRecordweight.push(distinctItems.length);
+       	}
+       	else
+       	{
+       		arrDates.push(moment(DateArray[i]).format('MMM DD'));
+       		uniqueRecordweight.push(ExtResults.length);       	
+       	}
+	}
+	
+	var lineChartcontent = document.getElementById('dvlineChart');
+    lineChartcontent.innerHTML = '&nbsp;';
+    $('#dvlineChart').append('<canvas id="line-Chart"><canvas>');				
+    var ctx = $("#line-Chart");	
+    var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: arrDates,//["Jan", "Feb", "Mar", "Apr"],
+            datasets: [{
+                label: moment(DateArray[0]).format('YYYY'),
+                data: uniqueRecordweight,  //[4,8,6,2,4,0,5,7],
+                fill: true,
+                borderColor: 'rgb(75, 192, 192)'
+            }]	
+        }
+    });
+}
+
+
+function ToGetActivityCounts()
+{
+	var TempArray3 = [];
+	if(AnalyticalUsageData.length>0)
+	{
+		for(var i=0; i<AnalyticalUsageData.length; i++)
+		{
+			TempArray3.push(AnalyticalUsageData[i].UserAction);
+		}
+	}
+	
+    var TempPie =[]; var ss = [];		
+    if(TempArray3.length > 0)
+    {
+        TempArray3 = TempArray3.filter(function (x, i, a) { 
+            return a.indexOf(x) === i; 
+        });	
+    }
+    
+    var TempArrayCounts = [];	
+    $.each(TempArray3, function( index, value ) {
+    	var filteredValue = AnalyticalUsageData.filter(function(obj) {
+            return (obj.UserAction === value);
+        });
+        var Tcounts = filteredValue.length; 
+        filteredValue = (filteredValue.length / AnalyticalUsageData.length)* 100;
+        TempArrayCounts.push(filteredValue.length);
+        var c= Math.round(filteredValue)		
+        TempPie.push({value,c,Tcounts})
+    });
+    	
+    for(i=0; i<TempPie.length; i++)
+    {
+        ss.push({label: TempPie[i].value, x:TempPie[i].Tcounts, y: TempPie[i].c, legendText: TempPie[i].value});			
+    }
+    
+    $("#dvpieChart").CanvasJSChart({ 
+        axisY:{ 
+        	title: "Products in %" 
+        }, 
+        legend : { 
+            verticalAlign: "center", 
+            horizontalAlign: "right" 
+        }, 
+        data: [ 
+		{ 
+		    click: function(e){	
+		        $('#tbInstance').html('');
+		        var ResultsData = '';
+		        var tbodyData = '';
+		        $('#thactivity').text('Activity : '+ e.dataPoint.label);	
+		        $('#lbActivity').text('Activity : '+ e.dataPoint.label);
+		        $('#thPeriod').text('Duration : '+moment(StDate).format('DD-MMM-YYYY')+' to '+ moment(EnDate).format('DD-MMM-YYYY'));
+		        $('#lbDates').text('Duration : '+moment(StDate).format('DD-MMM-YYYY')+' to '+ moment(EnDate).format('DD-MMM-YYYY'));
+
+		        $('#thdatePeriod').text(' '+moment(StDate).format('DD-MMM-YYYY')+' to '+ moment(EnDate).format('DD-MMM-YYYY'));
+		        $('#lbActivityCount').text('Total Visit: '+ e.dataPoint.x);
+
+		        var filteredResult = AnalyticalUsageData.filter(function(obj) {						
+		            return (obj.UserAction == e.dataPoint.label);					    	
+		        });	
+		        	
+		        for(i=0;i< filteredResult.length; i++)
+		        {		  
+		            //tbodyData += '<tr class="text-left"><td>'+filteredResult[i].UserID.Title+' <p class="mb0">'+filteredResult[i].Designation+', '+filteredResult[i].DepartmentId.Title+'</p></td><td>'+filteredResult[i].WebpartName+'</td><td>'+moment(filteredResult[i].Modified).format("DD-MMM-YYYY HH:mm")+'</td><td>'+filteredResult[i].Application+'</td></tr>';
+		            //tbodyData += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+filteredResult[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+filteredResult[i].UserID.Title+'</p><p class="mb0">'+filteredResult[i].Designation+' | '+filteredResult[i].DepartmentId.Title+'</p></div></div></td><td class="text-left">'+filteredResult[i].WebpartName+'</td><td>'+moment(filteredResult[i].Modified).format("DD-MMM-YYYY HH:mm")+'</td><td>'+filteredResult[i].Title+'</td><td>'+filteredResult[i].Application+'</td></tr>';
+		              tbodyData += '<tr class="text-left"><td class="text-left" style="width: 30%;"><div class="analytical-user-image-box"><img src="'+filteredResult[i].UserImage+'" ><div class="analytical-user-image-text"><p class="mb0">'+filteredResult[i].UserID.Title+'</p><p class="mb0">'+filteredResult[i].Designation+' | '+filteredResult[i].DepartmentId.Title+' </p><p class="mb0 Emailfont">'+filteredResult[i].UserID.EMail+'</p></div></div></td><td class="text-left" style="width: 18%;">'+filteredResult[i].WebpartName+'</td><td style="width: 18%;">'+moment(filteredResult[i].Modified).format("DD-MMM-YYYY HH:mm")+'</td><td style="width: 24%;">'+filteredResult[i].Title+'</td><td style="width: 10%;">'+filteredResult[i].Application+'</td></tr>';
+		        }
+		        $('#tbInstance').append(tbodyData);
+		        $('#List-of-Instances-modal').modal('show');     
+		    },
+		    type: "pie", 
+		    showInLegend: true, 
+		    toolTipContent: "{label} <br/> {y} %", 
+		    indexLabel: "{y} %", 			
+		    dataPoints: ss		
+		}] 		
+    }); 	
+}
+
+
+function getUsers_Activity_Details(Action)
+{
+    var dfd = $.Deferred(); 
+    if(Action != 'Filter')
+    {
+        StDate = $('#Fromdt').text();
+        StDate = new Date(StDate);  StDate.setHours(00,00);
+        EnDate = $('#Todt').text(); 
+        EnDate = new Date(EnDate); EnDate.setHours(23,59);
+        //FrmDate = moment(StDate).format('DD MMM YYYY')
+        //EndDate = moment(EnDate).format('DD MMM YYYY')
+        FrmDate = moment(StDate).format('LL');
+        EndDate = moment(EnDate).format('LL');      
+    }
+    else
+    {
+        StDate = $('#attendance-reportFrom').val();    
+        StDate = new Date(StDate);    StDate.setHours(00,00);
+        EnDate = $('#attendance-reportTo').val(); 
+        EnDate = new Date(EnDate);	  EnDate.setHours(23,59);
+        //FrmDate = moment(StDate).format('DD MMM YYYY')
+        //EndDate = moment(EnDate).format('DD MMM YYYY')
+        FrmDate = moment(StDate).format('LL')
+        EndDate = moment(EnDate).format('LL')   	
+    }	
+    $('#Fromdt').text(moment(StDate).format('LL'));	
+    $('#Todt').text(moment(EnDate).format('LL'));
+    $('#attendance-reportTo').val(moment(EnDate).format('LL'));
+    $('#attendance-reportFrom').val(moment(StDate).format('LL'));	
+    var arrActivityResult=[];
+    for(i=0;i<AnalyticalUsageData.length;i++)
+    {        
+        if((new Date(AnalyticalUsageData[i].Created) >= StDate && new Date(AnalyticalUsageData[i].Created) <= EnDate) && AnalyticalUsageData[i].CompanyIdId == companyID)
+        {			
+            arrActivityResult.push(AnalyticalUsageData[i]);
+        }	
+    }
+    AnalyticalUsageData = arrActivityResult;	
+}
+
+
+function OpenMyCustomLoader()
+{
+	var dlgTitle = 'Loading...';
+    var dlgMsg = '<br />Please wait!!';
+    var dlgHeight = 200;
+    var dlgWidth = 400;
+    currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);  
+}
+
+
+function CloseMyCustomLoader()
+{
+	currentDlg.close();
+}
+
+
+var AnalyticalActiveUsers = AnalyticalActiveUsers || [];
+var AnalyticalActiveUsersUrl = '';
+function ReadAnalyticalActiveUsers() 
+{
+	dfds = $.Deferred(),
+    $.ajax({
+        url: AnalyticalActiveUsersUrl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) 
+        {
+        	AnalyticalActiveUsers = AnalyticalActiveUsers .concat(data.d.results);           
+            if (data.d.__next) 
+            {
+                AnalyticalActiveUsersUrl = data.d.__next;
+                ReadAnalyticalActiveUsers();
+            }
+            else 
+            {
+            	var FilteredValue = $.grep(AnalyticalActiveUsers, function(v) {
+    				return v.Status == 'Active' && v.PrimaryCompany == 'Primary';
+				});
+            	AnalyticalActiveUsers = FilteredValue;
+				$("#lbLicenesedUser").text(AnalyticalActiveUsers.length);	
+            }     
+        },
+        error: function (jqXhr, textStatus, errorThrown)
+		{
+       		console.log("Error in ReadAnalyticalActiveUsers.");
+            console.log(jqXhr.responseJSON.error.message.value);
+            var msg = jqXhr.responseJSON.error.message.value;
+            var MsgResult =	msg.includes("it exceeds the list view");
+            if(MsgResult == true)
+            {
+				var restQuery = "?$top=5000&$expand=LogonName/ID,Department/ID,Company/ID&$orderby=ID desc&$select=*,ID,Department/ID,Department/Title,Company/ID,Company/Title,LogonName/ID,LogonName/Title"; // Company filter condition remove by Dipankar sir.    
+    			AnalyticalActiveUsersUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + restQuery;
+    			ReadAnalyticalActiveUsers();            	 
+            }
+        }    
+    });
+    return dfds.promise();
+}
+
+
+function GetAllVisitedUserss()
+{
+    var tblBodyData = '';
+    var lastDate = '';
+    $('#tbdyAllVisitedUsers').html('');
+    $('#Visited-User-modal').modal('show');
+    $('#thUserTitle').text('Active User');
+    $('#thdatePeriod').text(' '+$("#Fromdt").text()+' to '+ $("#Todt").text());
+    $('#lbDatesPeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    
+    const ActiveuniqueUsers = [...new Map(AnalyticalUsageData.map(item => [item["UserIDId"], item])).values()];
+    		ActiveuniqueUsers .sort(function(a,b){return a.UserID.Title< b.UserID.Title? -1 : 1});
+
+    if(ActiveuniqueUsers.length>0)
+    {
+    	for(var i=0; i<ActiveuniqueUsers.length; i++)
+    	{
+    		var FilteredRec = $.grep(AnalyticalUsageData, function(v) {
+    			return v.UserIDId == ActiveuniqueUsers[i].UserIDId;
+			});
+			
+			var TotalVisit = FilteredRec.length;
+			var LastRecord = FilteredRec[(FilteredRec.length-1)].Created;
+			var UserName = FilteredRec[(FilteredRec.length-1)].UserID.Title;
+			var UserEmail = FilteredRec[(FilteredRec.length-1)].UserID.EMail;
+			var UserImage = FilteredRec[(FilteredRec.length-1)].UserImage;
+				
+			var eventDateObj=new Date(FilteredRec[(FilteredRec.length-1)].Created);
+            var LastRecord = eventDateObj.toTimeString();
+            var H = +LastRecord.substr(0, 2);
+            var h = (H % 12) || 12;
+            var ampm = H < 12 ? " AM" : " PM";
+            	LastRecord= h + LastRecord.substr(2, 3) + ampm;            	
+				
+			var UserInfo = $.grep(AnalyticalActiveUsers, function(v) {
+    			return v.LogonName.ID == ActiveuniqueUsers[i].UserIDId;
+			});
+			var UserDesignation ='';
+			var UserDept = '';
+			if(UserInfo.length>0)
+			{
+				if(UserInfo[0].Designation != null)
+				{				
+					UserDesignation = UserInfo[0].Designation;
+				}
+				var UserDept = '';
+				if(UserInfo[0].Department.Title != null)
+				{
+					UserDept = UserInfo[0].Department.Title;
+				}
+			}
+			tblBodyData += '<tr class="text-left active-user-tr"><td class="text-left"><div class="analytical-user-image-box"><img src="'+UserImage+'" ><div class="analytical-user-image-text"><p class="mb0">'+UserName+'</p><p class="mb0">'+UserDesignation+' | '+UserDept+' </p><p class="mb0 Emailfont">'+UserEmail+'</p></div></div></td>'
+            tblBodyData += '<td class="text-left">'+moment(FilteredRec[(FilteredRec.length-1)].Created).format("DD MMM YYYY")+' '+LastRecord+'</td><td class="js-sort-number">'+TotalVisit+'</td></tr>'	
+    	}
+    	$('#tbdyAllVisitedUsers').append(tblBodyData);
+    }
+}
+
+
+function GetAllWebsiteVisitedUserss()
+{
+    var tblBodyData = '';
+    var lastDate = '';
+    $('#tbdyAllVisitedUsers').html('');
+    $('#thUserTitle').text('Active User');
+    $('#Visited-User-modal').modal('show');
+    $('#thDatePeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    
+    var FilteredValueweb = $.grep(AnalyticalUsageData, function(v) {
+    	return v.Application == 'Website';
+	});
+	const ActiveuniqueUsers= [...new Map(FilteredValueweb.map(item => [item["UserIDId"], item])).values()];
+    	  ActiveuniqueUsers.sort(function(a,b){return a.UserID.Title< b.UserID.Title? -1 : 1});
+    	  
+	if(ActiveuniqueUsers.length>0)
+	{
+		for(var i=0; i<ActiveuniqueUsers.length; i++)
+		{
+			var FilteredRec = $.grep(FilteredValueweb, function(v) {
+    			return v.UserIDId == ActiveuniqueUsers[i].UserIDId;
+			});
+			
+			var UserName = FilteredRec[(FilteredRec.length-1)].UserID.Title;
+			var UserEmail = FilteredRec[(FilteredRec.length-1)].UserID.EMail;
+			var UserImage = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/WebAnalytics/assets/images/user_pic.jpg';
+			if(FilteredRec[(FilteredRec.length-1)].UserImage != null)
+			{
+				UserImage = FilteredRec[(FilteredRec.length-1)].UserImage;
+			}
+			var TotalVisit = FilteredRec.length;
+			var LastRecord = FilteredRec[(FilteredRec.length-1)].Created;
+				
+			var eventDateObj=new Date(FilteredRec[(FilteredRec.length-1)].Created);
+            var LastRecord = eventDateObj.toTimeString();
+            var H = +LastRecord.substr(0, 2);
+            var h = (H % 12) || 12;
+            var ampm = H < 12 ? " AM" : " PM";
+            	LastRecord= h + LastRecord.substr(2, 3) + ampm;            	
+				
+			var UserInfo = $.grep(AnalyticalActiveUsers, function(v) {
+    			return v.LogonName.ID == ActiveuniqueUsers[i].UserIDId;
+			});
+			var UserDesignation ='';
+			var UserDept = '';
+			if(UserInfo.length>0)
+			{
+				if(UserInfo[0].Designation != null)
+				{				
+					UserDesignation = UserInfo[0].Designation;
+				}
+				var UserDept = '';
+				if(UserInfo[0].Department.Title != null)
+				{
+					UserDept = UserInfo[0].Department.Title;
+				}
+			}
+			tblBodyData += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+UserName+'</p><p class="mb0">'+UserDesignation+' | '+UserDept+'</p><p class="mb0 Emailfont">'+UserEmail+'</p></div></div></td>'
+            tblBodyData += '<td class="text-left">'+moment(FilteredRec[(FilteredRec.length-1)].Created).format("DD MMM YYYY")+' '+LastRecord+'</td><td class="js-sort-number">'+TotalVisit+'</td></tr>'		
+		}
+		$('#tbdyAllVisitedUsers').append(tblBodyData);	
+	}
+}
+
+
+function GetAllMobileVisitedUserss()
+{
+    var tblBodyData = '';
+    var lastDate = '';
+    $('#thUserTitle').text('Active User');
+    $('#tbdyAllVisitedUsers').html('');
+    $('#Visited-User-modal').modal('show');
+    $('#thDatePeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+	
+	var FilteredValuemob = $.grep(AnalyticalUsageData, function(v) {
+    	return v.Application == 'Mobile App';
+	});
+					
+	const ActiveuniqueUsers= [...new Map(FilteredValuemob.map(item => [item["UserIDId"], item])).values()];
+    	  ActiveuniqueUsers.sort(function(a,b){return a.UserID.Title< b.UserID.Title? -1 : 1});
+    	  
+	if(ActiveuniqueUsers.length>0)
+	{
+		for(var i=0; i<ActiveuniqueUsers.length; i++)
+		{
+			var FilteredRec = $.grep(FilteredValuemob, function(v) {
+    			return v.UserIDId == ActiveuniqueUsers[i].UserIDId;
+			});
+			var UserName = FilteredRec[(FilteredRec.length-1)].UserID.Title;
+			var UserEmail = FilteredRec[(FilteredRec.length-1)].UserID.EMail;
+			var UserImage = 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/WebAnalytics/assets/images/user_pic.jpg';
+			if(FilteredRec[(FilteredRec.length-1)].UserImage != null)
+			{
+				UserImage = FilteredRec[(FilteredRec.length-1)].UserImage;
+			}
+			else
+			{
+				UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + UserEmail//"https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+			}
+			var TotalVisit = FilteredRec.length;
+			var LastRecord = FilteredRec[(FilteredRec.length-1)].Created;
+				
+			var eventDateObj=new Date(FilteredRec[(FilteredRec.length-1)].Created);
+            var LastRecord = eventDateObj.toTimeString();
+            var H = +LastRecord.substr(0, 2);
+            var h = (H % 12) || 12;
+            var ampm = H < 12 ? " AM" : " PM";
+            	LastRecord= h + LastRecord.substr(2, 3) + ampm;            	
+				
+			var UserInfo = $.grep(AnalyticalActiveUsers, function(v) {
+    			return v.LogonName.ID == ActiveuniqueUsers[i].UserIDId;
+			});
+			var UserDesignation ='';
+			var UserDept = '';
+			if(UserInfo.length>0)
+			{
+				if(UserInfo[0].Designation != null)
+				{				
+					UserDesignation = UserInfo[0].Designation;
+				}
+				var UserDept = '';
+				if(UserInfo[0].Department.Title != null)
+				{
+					UserDept = UserInfo[0].Department.Title;
+				}
+			}
+			tblBodyData += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+UserName+'</p><p class="mb0">'+UserDesignation+' | '+UserDept+'</p><p class="mb0 Emailfont">'+UserEmail+'</p></div></div></td>'
+            tblBodyData += '<td class="text-left">'+moment(FilteredRec[(FilteredRec.length-1)].Created).format("DD MMM YYYY")+' '+LastRecord+'</td><td class="js-sort-number">'+TotalVisit+'</td></tr>'		
+		}
+		$('#tbdyAllVisitedUsers').append(tblBodyData);	
+	}
+}
+
+
+function ExcelDataReport(tableId)
+{
+    $("#"+tableId).tableExport({
+        //type: 'excel',
+        type: 'csv',
+        exportHiddenCells: true,
+        fileName: 'ExcelReportDetails',
+        ignoreColumn: [],
+    });
+}
+
+
+function BindNonActiveUsers(Action)
+{
+	var tblBodyData ='';
+	$('#tbdyNonActiveuser').html('');
+    $('#txtTitle').text('Non-Active Users');
+    $('#thnonUserTitle').text('Non-Active Users');
+    $('#thdatePrd').text($("#Fromdt").text()+' - '+ $("#Todt").text());
+    $('#lbNonDatesPeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+	if(Action == '')
+	{
+		const distinctItems = [...new Map(AnalyticalUsageData.map(item => [item["UserIDId"], item])).values()];
+		var result = AnalyticalActiveUsers.filter(function (o1) {
+    		return !distinctItems.some(function (o2) {
+    	    	return o1.LogonNameId== o2.UserIDId; // return the ones with equal id
+   			});
+		});
+		if(result.length>0)
+		{	
+			result.sort(function(a,b){return a.LogonName.Title< b.LogonName.Title? -1 : 1});
+			for(var i=0; i<result.length; i++)
+			{	
+				var Username = result[i].LogonName.Title;
+				var UserEmail = result[i].LogonName.EMail;
+				var Userdept = result[i].Department.Title; 
+				var UserDesignation = result[i].Designation;
+				var UserImage='';
+				if(result[i].AttachmentFiles.results.length>0)
+				{
+					UserImage = result[i].AttachmentFiles.results[0].ServerRelativeUrl;
+				}
+				else
+				{
+					UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +UserEmail; // escapeProperly(items[0].Email)
+				}
+				tblBodyData += '<tr class="text-left"><td class="text-left js-sort-number"><div class="analytical-user-image-box"><img src="'+UserImage+'"> <div class="analytical-user-image-text"><p class="mb0">'+Username+'</p><p class="mb0">'+UserDesignation+' | '+Userdept+'</p><p class="mb0 Emailfont">'+UserEmail+' </p></div></div></td></tr>'					   		
+			}		
+		}		
+	}
+	else if(Action == 'Website')
+	{
+		var FilteredValueweb = $.grep(AnalyticalUsageData, function(v) {
+    		return v.Application == 'Website';
+		});
+		const distinctItems = [...new Map(FilteredValueweb.map(item => [item["UserIDId"], item])).values()];
+		var result = AnalyticalActiveUsers.filter(function (o1) {
+    		return !distinctItems.some(function (o2) {
+    	    	return o1.LogonNameId== o2.UserIDId; // return the ones with equal id
+   			});
+		});
+		if(result.length>0)
+		{
+			result.sort(function(a,b){return a.LogonName.Title< b.LogonName.Title? -1 : 1});
+			for(var i=0; i<result.length; i++)
+			{	
+				var Username = result[i].LogonName.Title;
+				var UserEmail = result[i].LogonName.EMail;
+				var Userdept = result[i].Department.Title; 
+				var UserDesignation = result[i].Designation;
+				var UserImage='';
+				if(result[i].AttachmentFiles.results.length>0)
+				{
+					UserImage = result[i].AttachmentFiles.results[0].ServerRelativeUrl;
+				}
+				else
+				{
+					UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +UserEmail; // escapeProperly(items[0].Email)
+				}
+				tblBodyData += '<tr class="text-left"><td class="text-left js-sort-number"><div class="analytical-user-image-box"><img src="'+UserImage+'"> <div class="analytical-user-image-text"><p class="mb0">'+Username+'</p><p class="mb0">'+UserDesignation+' | '+Userdept+'</p><p class="mb0 Emailfont">'+UserEmail+' </p></div></div></td></tr>'					   		
+			}		
+		}
+	
+	}
+	else if(Action == 'Mobile App')
+	{
+		var FilteredValueweb = $.grep(AnalyticalUsageData, function(v) {
+    		return v.Application == 'Mobile App';
+		});
+		const distinctItems = [...new Map(FilteredValueweb.map(item => [item["UserIDId"], item])).values()];
+		var result = AnalyticalActiveUsers.filter(function (o1) {
+    		return !distinctItems.some(function (o2) {
+    	    	return o1.LogonNameId== o2.UserIDId; // return the ones with equal id
+   			});
+		});
+		if(result.length>0)
+		{
+			result.sort(function(a,b){return a.LogonName.Title< b.LogonName.Title? -1 : 1});
+			for(var i=0; i<result.length; i++)
+			{	
+				var Username = result[i].LogonName.Title;
+				var UserEmail = result[i].LogonName.EMail;
+				var Userdept = result[i].Department.Title; 
+				var UserDesignation = result[i].Designation;
+				var UserImage='';
+				if(result[i].AttachmentFiles.results.length>0)
+				{
+					UserImage = result[i].AttachmentFiles.results[0].ServerRelativeUrl;
+				}
+				else
+				{
+					UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +UserEmail; // escapeProperly(items[0].Email)
+				}
+				tblBodyData += '<tr class="text-left"><td class="text-left js-sort-number"><div class="analytical-user-image-box"><img src="'+UserImage+'"> <div class="analytical-user-image-text"><p class="mb0">'+Username+'</p><p class="mb0">'+UserDesignation+' | '+Userdept+'</p><p class="mb0 Emailfont">'+UserEmail+' </p></div></div></td></tr>'					   		
+			}		
+		}	
+	}
+	$('#tbdyNonActiveuser').append(tblBodyData); 
+}
+
+
+function LoadDetailsActivities(Action)
+{
+	$('#tbActivityDetails').empty()
+
+	if(Action == "Details-Activities")
+	{
+	if(AnalyticalUsageData.length>0)
+	{
+	 	var tblActivity = $('#tbActivityDetails');
+    	$('#thDateRangePeriod').text(' : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    	var ActDetail = '';	
+    	tblActivity.html('');
+    	$('#TotalItemscount').text(AnalyticalUsageData.length)
+    	$.each(AnalyticalUsageData, function( index, value ) {
+        	ActDetail += '<tr class="text-left">'
+        	ActDetail += '<td>'+moment(value.Created).format("DD-MMM-YYYY HH:mm")+'</td>'
+        	ActDetail += '<td>'+value.UserID.Title+'</td>'
+        	ActDetail += '<td>'+value.UserAction+'</td>'
+        	ActDetail += '<td>'+value.WebpartName+'</td>'
+        	ActDetail += '<td>'+value.ContentCategory+'</td>'
+        	ActDetail += '<td>'+value.Title+'</td>'		
+        	// will show in Export excel		 
+        	ActDetail += '<td style="display:none">'+value.CompanyId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.DepartmentId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.LocationID.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.Designation+'</td>'
+        	/*	 ActDetail += '<td style="display:none">'+value.Details+'</td>' */
+        	ActDetail += '<td>'+value.Application+'</td>'
+        	ActDetail += '<td>'+value.AppVersion+'</td>'		 
+        	ActDetail += '<td style="display:none">'+value.Environment+'</td>'
+        	ActDetail += '</tr>'
+    	});
+    	tblActivity.append(ActDetail);
+    	if (AnalyticalUsageData.length >0) 
+    	{
+    	    TableConfiguration();  // GenerateTableWithMe();       
+    	}
+    	else
+    	{
+    	    tblActivity.append('<tr class="text-left" ><td style="text-align: center;" colspan="8"> No records found </td></tr>');
+    	}
+    }
+    }
+    else if(Action == "Viewed-Pages")
+    {
+    	GetVisitedPages();    
+    }
+    else if(Action == "Department-wise-activities")
+    {
+    	DepartmentbyDetails();    
+    }
+    else if(Action == "Content-Entry")
+    {
+    	ContentEntryDetails();
+    }
+    else if(Action =="Viewed-write-up")
+    {
+    	ViewedContentsDetails();
+    }
+}
+
+
+var sorter;
+function TableConfiguration()
+{
+    sorter = new TINY.table.sorter('sorter', 'tbluserActivity', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columns',
+        currentid: 'currentpage',
+        totalid: 'totalpages',
+        startingrecid: 'startrecord',
+        endingrecid: 'endrecord',
+        totalrecid: 'totalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pagedropdown',
+        navid: 'tablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true                
+    });
+}
+
+var FilterState=0;
+function Loadfilterctrl()
+{	
+	if(FilterState == 0)
+	{
+		const ActiveuniqueWebpart= [...new Map(AnalyticalUsageData.map(item => [item["WebpartName"], item])).values()];
+    		  ActiveuniqueWebpart.sort(function(a,b){return a.WebpartName< b.WebpartName? -1 : 1});
+    		  $("#txtWebpart").empty();
+    		  $("#txtWebpart").append($("<option     />").val("ALL").text("ALL"));
+    		  if(ActiveuniqueWebpart.length>0)
+    		  {    	  	
+    		  	for(var i=0; i<ActiveuniqueWebpart.length; i++)
+    		  	{
+    		  		$("#txtWebpart").append($("<option     />").val(ActiveuniqueWebpart[i].WebpartName).text(ActiveuniqueWebpart[i].WebpartName));
+    		  	}
+    		  }
+    	  
+    	const ActiveuniqueDepartment= [...new Map(AnalyticalUsageData.map(item => [item["DepartmentIdId"], item])).values()];
+    		  ActiveuniqueDepartment.sort(function(a,b){return a.DepartmentId.Title< b.DepartmentId.Title? -1 : 1});
+    		  $("#ddlDepartment").empty();
+    		  $("#ddlDepartment").append($("<option     />").val("ALL").text("ALL"));
+    		  if(ActiveuniqueDepartment.length>0)
+    		  {    	  	
+    		  	for(var i=0; i<ActiveuniqueDepartment.length; i++)
+    		  	{
+    		  		if(ActiveuniqueDepartment[i].DepartmentIdId != null)
+    		  		{
+    		  			$("#ddlDepartment").append($("<option     />").val(ActiveuniqueDepartment[i].DepartmentId.ID).text(ActiveuniqueDepartment[i].DepartmentId.Title));
+    		  		}
+    		  	}
+    		  }
+    		  
+		const ActiveuniqueLocation= [...new Map(AnalyticalUsageData.map(item => [item["LocationIDId"], item])).values()];
+			  ActiveuniqueLocation.sort(function(a,b){return a.LocationID.Title< b.LocationID.Title? -1 : 1});
+    		  $("#ddlLocation").empty();
+    		  $("#ddlLocation").append($("<option     />").val("ALL").text("ALL"));
+    		  if(ActiveuniqueLocation.length>0)
+    		  {    	  	
+    		  	for(var i=0; i<ActiveuniqueLocation.length; i++)
+    		  	{
+    		  		if(ActiveuniqueLocation[i].LocationIDId!= null)
+    		  		{
+    		  			$("#ddlLocation").append($("<option     />").val(ActiveuniqueLocation[i].LocationID.ID).text(ActiveuniqueLocation[i].LocationID.Title));
+    		  		}
+    		  	}
+    		  }
+    	  
+		const ActiveuniqueUserAction= [...new Map(AnalyticalUsageData.map(item => [item["UserAction"], item])).values()];
+    		  ActiveuniqueUserAction.sort(function(a,b){return a.UserAction< b.UserAction? -1 : 1});
+    		  $("#ddlActivity").empty();
+    		  $("#ddlActivity").append($("<option     />").val("ALL").text("ALL"));
+    		  if(ActiveuniqueUserAction.length>0)
+    		  {    	  	
+    		  	for(var i=0; i<ActiveuniqueUserAction.length; i++)
+    		  	{
+    		  		if(ActiveuniqueUserAction[i].UserAction!= null)
+    		  		{
+    		  			$("#ddlActivity").append($("<option     />").val(ActiveuniqueUserAction[i].UserAction).text(ActiveuniqueUserAction[i].UserAction));
+    		  		}
+    		  	}
+    		  }
+    	  
+		const ActiveuniqueDesignation= [...new Map(AnalyticalUsageData.map(item => [item["Designation"], item])).values()];
+			  ActiveuniqueDesignation.sort(function(a,b){return a.Designation< b.Designation? -1 : 1});
+    		  $("#ddlDesignation").empty();
+    		  $("#ddlDesignation").append($("<option     />").val("ALL").text("ALL"));
+    		  if(ActiveuniqueDesignation.length>0)
+    		  {    	  	
+    		  	for(var i=0; i<ActiveuniqueDesignation.length; i++)
+    		  	{
+    		  		if(ActiveuniqueDesignation[i].Designation!= null)
+    		  		{
+    		  			$("#ddlDesignation").append($("<option     />").val(ActiveuniqueDesignation[i].Designation).text(ActiveuniqueDesignation[i].Designation));
+    		  		}
+    		  	}
+    		  }
+		FilterState=1;
+	}
+}
+
+
+function ResetControls()
+{
+	initializePeoplePicker("Userto");
+	$("#ddlDesignation").val('ALL');
+	$("#ddlDepartment").val('ALL');
+	$("#ddlLocation").val('ALL');
+	$("#ddlActivity").val('ALL');
+	$("#txtWebpart").val('ALL');
+	$("#ddlApplication").val('All');
+	
+	$("#FilterChips").empty();
+	$('#tbActivityDetails').empty()
+	
+	if(AnalyticalUsageData.length>0)
+	{
+		
+	 	var tblActivity = $('#tbActivityDetails');
+    	$('#thDateRangePeriod').text(' : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    	var ActDetail = '';	
+    	tblActivity.html('');
+    	$('#TotalItemscount').text(AnalyticalUsageData.length)
+    	$.each(AnalyticalUsageData, function( index, value ) {
+        	ActDetail += '<tr class="text-left">'
+        	ActDetail += '<td>'+moment(value.Created).format("DD-MMM-YYYY HH:mm")+'</td>'
+        	ActDetail += '<td>'+value.UserID.Title+'</td>'
+        	ActDetail += '<td>'+value.UserAction+'</td>'
+        	ActDetail += '<td>'+value.WebpartName+'</td>'
+        	ActDetail += '<td>'+value.ContentCategory+'</td>'
+        	ActDetail += '<td>'+value.Title+'</td>'		
+        	// will show in Export excel		 
+        	ActDetail += '<td style="display:none">'+value.CompanyId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.DepartmentId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.LocationID.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.Designation+'</td>'
+        	/*	 ActDetail += '<td style="display:none">'+value.Details+'</td>' */
+        	ActDetail += '<td>'+value.Application+'</td>'
+        	ActDetail += '<td>'+value.AppVersion+'</td>'		 
+        	ActDetail += '<td style="display:none">'+value.Environment+'</td>'
+        	ActDetail += '</tr>'
+    	});
+    	tblActivity.append(ActDetail);
+    	if (AnalyticalUsageData.length >0) 
+    	{
+    	    TableConfiguration();  // GenerateTableWithMe();       
+    	}
+    	else
+    	{
+    	    tblActivity.append('<tr class="text-left" ><td style="text-align: center;" colspan="8"> No records found </td></tr>');
+    	}
+    }
+    else
+    {
+    	$('#tbActivityDetails').empty();
+    	tblActivity.append('<tr class="text-left" ><td style="text-align: center;" colspan="8"> No records found </td></tr>');
+    	$('#TotalItemscount').text('0');
+    }    
+
+
+
+
+
+}
+
+
+function ActivityFilter()
+{
+	var EmployeeID = ensureUser($('#Userto').children().children().attr('id'));
+	var EmpID= 0;
+	var Designation = 0;
+	var Department=0;
+	var Location = 0;
+	var UserAct=0;
+	var Webname= 0;
+	var App=0;
+	var Chips='';
+	if(EmployeeID != 0)
+	{
+		EmpID = EmployeeID;
+		Chips += '<div class="upload-chip">'+UserNamePicker+'</div>';
+	}	
+	if($("#ddlDepartment").val() != "ALL")
+	{
+		Department = $("#ddlDepartment").val();
+		Chips += '<div class="upload-chip">'+$("#ddlDepartment option:selected").text()+'</div>';
+	}	
+	if($("#ddlLocation").val() != "ALL")
+	{
+		Location = $("#ddlLocation").val();
+		Chips += '<div class="upload-chip">'+$("#ddlLocation option:selected").text()+'</div>';
+	}
+	if($("#ddlDesignation").val() != "ALL")
+	{
+		Designation = $("#ddlDesignation").val();
+		Chips += '<div class="upload-chip">'+$("#ddlDesignation option:selected").text()+'</div>';
+	}
+	if($("#ddlActivity").val() != "ALL")
+	{
+		UserAct= $("#ddlActivity").val();
+		Chips += '<div class="upload-chip">'+$("#ddlActivity option:selected").text()+'</div>';
+	}
+	if($("#txtWebpart").val() != "ALL")
+	{
+		Webname= $("#txtWebpart").val();
+		Chips += '<div class="upload-chip">'+$("#txtWebpart option:selected").text()+'</div>';		
+	}
+	if($("#ddlApplication").val() != "All")
+	{
+		App = $("#ddlApplication").val();
+		Chips += '<div class="upload-chip">'+$("#ddlApplication option:selected").text()+'</div>';			
+	}
+	
+	$('#FilterChips').empty().append(Chips);	
+	var TestCondition=[];
+		TestCondition.push({
+    		AuthorId : EmpID,
+       		Designation : Designation,
+           	DepartmentIdId : Department,
+           	LocationIDId : Location,
+           	UserAction : UserAct,
+           	WebpartName : Webname,
+           	Application : App,                        
+		});
+			
+	for(var i=0; i<7; i++)
+	{
+		if(i == 0)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.AuthorId == 0)
+				{
+					var a = TestCondition;
+					delete a.AuthorId;
+					TestCondition = a;						
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].AuthorId == 0)
+				{
+					var a = TestCondition[0];
+					delete a.AuthorId;
+					TestCondition = a;						
+				}
+			}				
+		}
+		if(i == 1)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.Designation== 0)
+				{
+					var a = TestCondition;
+					delete a.Designation;
+					TestCondition = a;							
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].Designation== 0)
+				{
+					var a = TestCondition[0];
+					delete a.Designation;
+					TestCondition = a;					
+				}					
+			}				
+		}
+		if(i == 2)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.DepartmentIdId== 0)
+				{
+					var a = TestCondition;
+					delete a.DepartmentIdId;
+					TestCondition = a;						
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].DepartmentIdId== 0)
+				{
+					var a = TestCondition[0];
+					delete a.DepartmentIdId;
+					TestCondition = a;
+				}					
+			}				
+		}
+		if(i == 3)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.LocationIDId == 0)
+				{
+					var a = TestCondition;
+					delete a.LocationIDId ;
+					TestCondition = a;						
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].LocationIDId == 0)
+				{
+					var a = TestCondition[0];
+					delete a.LocationIDId ;
+					TestCondition = a;						
+				}					
+			}				
+		}
+		if(i == 4)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.UserAction== 0)
+				{
+					var a = TestCondition;
+					delete a.UserAction;
+					TestCondition = a;
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].UserAction== 0)
+				{
+					var a = TestCondition[0];
+					delete a.UserAction;
+					TestCondition = a;						
+				}					
+			}				
+		}
+		if(i == 5)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.WebpartName == 0)
+				{
+					var a = TestCondition;
+					delete a.WebpartName;
+					TestCondition = a;					
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].WebpartName == 0)
+				{
+					var a = TestCondition[0];
+					delete a.WebpartName;
+					TestCondition = a;							
+				}					
+			}				
+		}
+		if(i == 6)
+		{
+			if(TestCondition[0]==undefined)
+			{
+				if(TestCondition.Application== 0)
+				{
+					var a = TestCondition;
+					delete a.Application;
+					TestCondition = a;						
+				}					
+			}
+			else
+			{
+				if(TestCondition[0].Application== 0)
+				{
+					var a = TestCondition[0];
+					delete a.Application;
+					TestCondition = a;							
+				}					
+			}				
+		}			
+	}
+	
+	var filter = TestCondition;					
+	var users= AnalyticalUsageData.filter(function(item) {
+  		for (var key in filter){
+    	if (item[key] === undefined || item[key] != filter[key])
+      		return false;
+  			}
+  			return true;
+		});
+	var FilteredValue=users;
+		console.log(FilteredValue);
+	if(FilteredValue.length>0)
+	{
+	 	var tblActivity = $('#tbActivityDetails');
+    	$('#thDateRangePeriod').text(' : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    	var ActDetail = '';	
+    	tblActivity.html('');
+    	$('#TotalItemscount').text(FilteredValue.length)
+    	$.each(FilteredValue, function( index, value ) {
+        	ActDetail += '<tr class="text-left">'
+        	ActDetail += '<td>'+moment(value.Created).format("DD-MMM-YYYY HH:mm")+'</td>'
+        	ActDetail += '<td>'+value.UserID.Title+'</td>'
+        	ActDetail += '<td>'+value.UserAction+'</td>'
+        	ActDetail += '<td>'+value.WebpartName+'</td>'
+        	ActDetail += '<td>'+value.ContentCategory+'</td>'
+        	ActDetail += '<td>'+value.Title+'</td>'		
+        	// will show in Export excel		 
+        	ActDetail += '<td style="display:none">'+value.CompanyId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.DepartmentId.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.LocationID.Title+'</td>'
+        	ActDetail += '<td style="display:none">'+value.Designation+'</td>'
+        	/*	 ActDetail += '<td style="display:none">'+value.Details+'</td>' */
+        	ActDetail += '<td>'+value.Application+'</td>'
+        	ActDetail += '<td>'+value.AppVersion+'</td>'		 
+        	ActDetail += '<td style="display:none">'+value.Environment+'</td>'
+        	ActDetail += '</tr>'
+    	});
+    	tblActivity.append(ActDetail);
+    	if (FilteredValue.length >0) 
+    	{
+    	    TableConfiguration();  // GenerateTableWithMe();       
+    	}
+    	else
+    	{
+    	    tblActivity.append('<tr class="text-left" ><td style="text-align: center;" colspan="8"> No records found </td></tr>');
+    	}
+    }
+    else
+    {
+    	$('#tbActivityDetails').empty();
+    	tblActivity.append('<tr class="text-left" ><td style="text-align: center;" colspan="8"> No records found </td></tr>');
+    	$('#TotalItemscount').text('0');
+    }    
+}
+
+var UserNamePicker='';
+function ensureUser(ID){
+    SelectedUserID = [];
+    var UserId = 0;
+    var peoplePickerTopDivId = ID;
+    var peoplePicker =
+    this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerTopDivId];
+    var users = peoplePicker.GetAllUserInfo();
+    var arryuser = users[0];
+    if (arryuser) {
+        var payload = { 'logonName': arryuser.Key };
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/ensureuser",
+            type: "POST",
+            async: false,
+            contentType: "application/json;odata=verbose",
+            data: JSON.stringify(payload),
+            headers: {
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "accept": "application/json;odata=verbose"
+            },
+            success: function (data, status, xhr) {
+                UserNamePicker = data.d.Title;
+                UserId = data.d.Id;
+            },
+            error: function (xhr, status, error) {
+
+            }
+        });
+    }
+    else {
+        UserId = 0;
+    }
+    return UserId;
+}
+
+
+function fnExcelReport()
+{
+    var tab_text="<table border='1px'><tr bgcolor='#87AFC6'>";
+    var textRange; var j=0;
+    var filename = 'Analytical report of period '+FrmDate+' to '+EndDate ;   // attribute to be   // applied on Table tag
+    filename = isNullOrUndefinedWithEmpty(filename)? "Excel Document" : filename;
+    tab = document.getElementById('tbluserActivity'); // id of table
+
+    for(j = 0 ; j < tab.rows.length ; j++) 
+    {     
+        tab_text=tab_text+tab.rows[j].innerHTML+"</tr>";
+        //tab_text=tab_text+"</tr>";
+    }
+    tab_text=tab_text+"</table>";
+    tab_text= tab_text.replace(/<A[^>]*>|<\/A>/g, "");//remove if u want links in your table
+    tab_text= tab_text.replace(/<img[^>]*>/gi,""); // remove if u want images in your table
+    tab_text= tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
+
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE "); 
+
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer
+    {
+        txtArea1.document.open("txt/html","replace");
+        txtArea1.document.write(tab_text);
+        txtArea1.document.close();
+        txtArea1.focus(); 
+        sa=txtArea1.document.execCommand("SaveAs",true,"Activiy Report.xls");
+    }  
+    else   //other browser not tested on IE 11
+        //   sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));    
+        var anchor = document.createElement('a');
+    anchor.setAttribute('href', 'data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));
+    anchor.setAttribute('download', filename);
+    anchor.style.display = 'none';
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+    //   return (sa);
+}
+
+function isNullOrUndefinedWithEmpty(text){
+    if(text==undefined)
+        return true;
+    else if(text == null)
+        return true;
+    else if(text == null)
+        return true;
+    else
+        false;
+}
+
+
+function GetVisitedPages()
+{
+    $('#tbVisitedpages').html('');
+    const UniquePages = [...new Map(AnalyticalUsageData.map(item => [item["WebpartName"], item])).values()];
+    	  UniquePages.sort(function(a,b){return a.WebpartName< b.WebpartName? -1 : 1});
+
+    var PagesDetails='';
+    for(var i=0; i<UniquePages.length; i++)
+    {	
+    	var webname = UniquePages[i].WebpartName;
+    	var FilteredRec = $.grep(AnalyticalUsageData, function(v) {
+    				return v.WebpartName == UniquePages[i].WebpartName;
+		});
+
+    	var TotalVisit = FilteredRec.length;
+    	const DistinctUsers = [...new Map(FilteredRec.map(item => [item["UserIDId"], item])).values()];
+    	var TotalVisitUsers= DistinctUsers.length;
+    	
+    	var FilteredValueweb = $.grep(FilteredRec, function(v) {
+    				return v.Application == 'Website';
+			});				
+		const uniquewebuser = [...new Map(FilteredValueweb.map(item => [item["UserIDId"], item])).values()];
+		var TotalVisitWeb = FilteredValueweb.length;
+		var TotalVisitUsersWeb = uniquewebuser.length;
+ 				
+				
+    	var FilteredValuemob = $.grep(FilteredRec, function(v) {
+    			return v.Application == 'Mobile App';
+			});				
+		const uniquemobuser = [...new Map(FilteredValuemob.map(item => [item["UserIDId"], item])).values()];    			
+    	var TotalVisitmobile = FilteredValuemob.length;
+		var TotalVisitUsersMobile = uniquemobuser.length;
+
+	   	PagesDetails += '<tr class="text-left"><td class="text-left">'+UniquePages[i].WebpartName+'</td><td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllList\')">'+TotalVisit+'</a></td><td><a href="#" data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllUserList\')">'+TotalVisitUsers+'</a></td><td><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllList\',\'Website\')" >'+TotalVisitWeb+'</a></td><td><a href="#"  data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllUserList\',\'Website\')">'+TotalVisitUsersWeb+'</a></td><td><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllList\',\'Mobile App\')">'+TotalVisitmobile+'</a></td><td><a href="#"  data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="getpopDetails(\''+UniquePages[i].WebpartName+'\',\'OverAllUserList\',\'Mobile App\')">'+TotalVisitUsersMobile+'</a></td></tr>';
+    }    
+    $('#tbVisitedpages').append(PagesDetails);		
+}
+
+
+function getpopDetails(DataName, App,Condition)
+{
+    var Deatils = '';
+    $('#tbViewDeatils').html('');
+    $('#tbdyNonActiveuser').html('');
+    $('#ViewPageTitle').text(DataName);
+    $('#ViewedPeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    $('#lbNonDatesPeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+    
+    var DataResult = $.grep(AnalyticalUsageData, function(v) {
+    	return v.WebpartName == DataName;
+	});
+	if(Condition != undefined)
+	{
+		var DataSet = $.grep(DataResult, function(v) {
+    		return v.Application == Condition;
+		});
+		DataResult = DataSet;	
+	}
+	if(App == "OverAllList")
+	{ 
+		if(DataResult.length>0)
+		{
+			for(i=0;i<DataResult.length;i++)
+    		{
+    		    //Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+', '+DataResult[i].DepartmentId.Title+'</p></div></div></td><td class="text-left">'+moment(DataResult[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+DataResult[i].Application+'</td><td>'+DataResult[i].Title+'</td></tr>';
+    		    //Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+DataResult[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+' | '+DataResult[i].DepartmentId.Title+'</p></div></div></td><td class="text-left">'+moment(DataResult[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+DataResult[i].WebpartName+'</td><td>'+DataResult[i].Title+'</td><td>'+DataResult[i].Application+'</td></tr>';
+    		      Deatils += '<tr class="text-left activities-tr"><td class="text-left"><div class="analytical-user-image-box"><img src="'+DataResult[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+' | '+DataResult[i].DepartmentId.Title+'</p><p class="mb0 Emailfont">'+DataResult[i].UserID.EMail+'</p></div></div></td><td class="text-left">'+moment(DataResult[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+DataResult[i].WebpartName+'</td><td>'+DataResult[i].Title+'</td><td>'+DataResult[i].Application+'</td></tr>';
+    		}
+    	}
+    	$('#tbViewDeatils').append(Deatils);
+    }
+    else if(App == "OverAllUserList")
+    {
+    	$('#txtTitle').text("Active Users...");
+    	const ActiveUserList = [...new Map(DataResult.map(item => [item["UserIDId"], item])).values()];
+    	var tblBodyData = '';
+    	if(ActiveUserList.length>0)
+    	{
+    		for(var i=0; i<ActiveUserList.length; i++)
+    		{
+    			var UserImage = '';
+    			var UserDept='';
+    			var UserDesignation='';
+    			var UserEmail='';
+    			if(ActiveUserList[i].UserImage != null){ UserImage = ActiveUserList[i].UserImage;}
+    			if(ActiveUserList[i].DepartmentId.Title != null){UserDept = ActiveUserList[i].DepartmentId.Title;}
+    			if(ActiveUserList[i].Designation){UserDesignation = ActiveUserList[i].Designation;}
+    			tblBodyData += '<tr class="text-left"><td class="text-left js-sort-number"><div class="analytical-user-image-box"><img src="'+UserImage+'"> <div class="analytical-user-image-text"><p class="mb0">'+ActiveUserList[i].UserID.Title+', </p><p class="mb0">'+UserDesignation+' | '+UserDept+'</p><p class="mb0 Emailfont">'+ActiveUserList[i].UserID.EMail+' </p></div></div></td></tr>'					   		
+    		}    	
+    	}
+    	$('#tbdyNonActiveuser').append(tblBodyData);    
+    }
+}
+
+
+function DepartmentbyDetails()
+{
+	 $('#tbDeptwiseCount').html('');
+	 var DeptDetails='';
+	 const UniqueDeptartment = [...new Map(AnalyticalUsageData.map(item => [item["DepartmentIdId"], item])).values()];
+       	   UniqueDeptartment.sort(function(a,b){return a.DepartmentId.Title< b.DepartmentId.Title? -1 : 1});
+       	   
+	if(UniqueDeptartment.length>0)
+	{
+    	for(var i=0; i<UniqueDeptartment.length; i++)
+    	{
+    		var DepartmentName = '';//ID
+    		var DepartmentID='';
+    		if(UniqueDeptartment[i].DepartmentId.Title != undefined)
+    		{
+    			DepartmentName = UniqueDeptartment[i].DepartmentId.Title;
+    			DepartmentID = UniqueDeptartment[i].DepartmentId.ID;
+    		}
+    		var DataResult = $.grep(AnalyticalUsageData, function(v) {
+    			return v.DepartmentIdId == UniqueDeptartment[i].DepartmentIdId;
+			});
+			
+			var TotalPageVisit = $.grep(DataResult, function(v) {
+    			return v.UserAction == "Page Visited";
+			});
+			
+			var TotalContentRead = $.grep(DataResult, function(v) {
+    			return v.UserAction == "Content Read";
+			});
+
+			var TotalContentEdit = $.grep(DataResult, function(v) {
+    			return v.UserAction == "Content Edit";
+			});
+			
+			var TotalMessage = $.grep(DataResult, function(v) {
+    			return v.UserAction == "Message";
+			});
+			
+			DeptDetails += '<tr class="text-left"><td class="text-left">'+DepartmentName+'</td><td class="text-left"><a href="#" data-toggle="modal" data-target="#Department-wise-activities-modal" onclick="DepartmentbyUserDetails(\''+DepartmentName+'\', \'Page Visited\')">'+TotalPageVisit.length+'</a></td><td><a href="#" data-toggle="modal" data-target="#Department-wise-activities-modal" onclick="DepartmentbyUserDetails(\''+DepartmentName+'\', \'Content Read\')">'+TotalContentRead.length +'</a></td><td><a href="#" data-toggle="modal" data-target="#Department-wise-activities-modal" onclick="DepartmentbyUserDetails(\''+DepartmentName+'\', \'Content Edit\')">'+TotalContentEdit.length+'</a></td><td><a href="#" data-toggle="modal" data-target="#Department-wise-activities-modal" onclick="DepartmentbyUserDetails(\''+DepartmentName+'\', \'Message\')">'+TotalMessage.length+'</a></td></tr>';       	   	
+       	}
+	}	 
+	$('#tbDeptwiseCount').append(DeptDetails);
+}
+
+
+function DepartmentbyUserDetails(Department,Action)
+{
+	$('#tbdyDepyDetails').html('');
+	$('#txtDeptTitle').text('Department : '+ Department);
+	$('#ViewedDuration').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text()+' | Activity : '+ Action);
+	    
+	var FilterdRecord = $.grep(AnalyticalUsageData, function(v) {
+    	return v.DepartmentId.Title == Department && v.UserAction == Action;
+	});	
+	
+	var Deatils='';
+    var DataResult = FilterdRecord;
+    for(i=0;i<DataResult.length;i++)
+    {
+        //Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+', '+DataResult[i].DepartmentId.Title+'</p></div></div></td><td>'+DataResult[i].WebpartName+'</td><td class="text-left">'+moment(DataResult[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+DataResult[i].Application+'</td></tr>';
+        //Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+DataResult[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+' | '+DataResult[i].DepartmentId.Title+'</p></div></div></td><td>'+DataResult[i].WebpartName+'</td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+FilterdRecord[i].Title+'</td><td>'+FilterdRecord[i].Application+'</td></tr>';
+          Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+DataResult[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+DataResult[i].UserID.Title+'</p><p class="mb0">'+DataResult[i].Designation+' | '+DataResult[i].DepartmentId.Title+'</p><p class="mb0 Emailfont">'+DataResult[i].Author.EMail+'</p></div></div></td><td>'+DataResult[i].WebpartName+'</td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+FilterdRecord[i].Title+'</td><td>'+FilterdRecord[i].Application+'</td></tr>';
+    }    
+    $('#tbdyDepyDetails').append(Deatils);
+}
+
+
+function ContentEntryDetails()
+{
+	$('#tbContrntEnrty').html('');
+	const UniqueWebpartName = [...new Map(AnalyticalUsageData.map(item => [item["WebpartName"], item])).values()];
+       	  UniqueWebpartName.sort(function(a,b){return a.WebpartName< b.WebpartName? -1 : 1});
+    
+	var WebPartData='';   	  
+	if(UniqueWebpartName.length>0)
+	{
+		for(var i=0; i<UniqueWebpartName.length; i++)
+		{
+			var FilterdRecord = $.grep(AnalyticalUsageData, function(v) {
+    			return v.WebpartName == UniqueWebpartName[i].WebpartName && v.UserAction == 'Content Edit';
+			});
+			if(FilterdRecord.length>0)
+			{
+				WebPartData += '<tr class="text-left"><td class="text-left">'+UniqueWebpartName[i].WebpartName+'</td><td class="text-left"><a href="#" data-toggle="modal" data-target="#Content-Entry-modal" onclick="ContentEntryUsersDetails(\''+UniqueWebpartName[i].WebpartName+'\')">'+FilterdRecord.length+'</a></td></tr>';			
+			}
+		}	
+	}
+	$('#tbContrntEnrty').append(WebPartData);
+}
+
+
+function ContentEntryUsersDetails(WebpartName)
+{
+	$('#tbContentEntry').html('');
+	$('#txtContentEntryTitle').text(WebpartName);
+    //$('#stDt').text(moment(StDate).format('DD MMM YYYY'));	
+    //$('#enDt').text(moment(EnDate).format('DD MMM YYYY'));
+    $('#lbPeriod').text('Duration : '+$("#Fromdt").text()+' - '+ $("#Todt").text());
+	var FilterdRecord = $.grep(AnalyticalUsageData, function(v) {
+    	return v.WebpartName == WebpartName && v.UserAction == 'Content Edit';
+	});
+	var Deatils = '';
+	if(FilterdRecord.length>0)
+	{
+		for(var i=0; i<FilterdRecord.length; i++)
+		{
+			var Category='';
+			if(FilterdRecord[i].ContentCategory != null)
+			{
+				Category = FilterdRecord[i].ContentCategory;
+			}
+			//Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><div class="analytical-user-image-text"><p class="mb0">'+FilterdRecord[i].UserID.Title+'</p><p class="mb0">'+FilterdRecord[i].Designation+' | '+FilterdRecord[i].DepartmentId.Title+'</p></div></div></td><td>'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+FilterdRecord[i].WebpartName+'</td><td class="text-left">'+FilterdRecord[i].ContentCategory+'</td><td>'+FilterdRecord[i].Title+'</td></tr>';		
+			//Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+FilterdRecord[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+FilterdRecord[i].UserID.Title+'</p><p class="mb0">'+FilterdRecord[i].Designation+' | '+FilterdRecord[i].DepartmentId.Title+'</p></div></div></td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+FilterdRecord[i].WebpartName+'</td><td>'+Category+'</td><td>'+FilterdRecord[i].Title+'</td></tr>';
+			  Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+FilterdRecord[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+FilterdRecord[i].UserID.Title+'</p><p class="mb0">'+FilterdRecord[i].Designation+' | '+FilterdRecord[i].DepartmentId.Title+'</p><p class="mb0 Emailfont">'+FilterdRecord[i].Author.EMail+'</p></div></div></td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+FilterdRecord[i].WebpartName+'</td><td>'+Category+'</td><td>'+FilterdRecord[i].Title+'</td></tr>';
+		}
+	}
+	$('#tbContentEntry').append(Deatils);
+}
+
+
+function ViewedContentsDetails()
+{
+	var FilterdRecord = $.grep(AnalyticalUsageData, function(v) {
+    	return v.UserAction == 'Content Read';
+	});
+		
+	const UniqueRecordGroup = [...new Map(FilterdRecord.map(item => [item["ItemId"], item])).values()];
+       	  //UniqueRecordGroup.sort(function(a,b){return a.WebpartName< b.WebpartName? -1 : 1});
+       	  
+    
+    var WebPartDetails='';
+    $('#tbViewedContents').html('');
+    if(UniqueRecordGroup.length>0)
+    {
+    	for(var i=0; i<UniqueRecordGroup.length; i++)
+    	{
+    		var GroupRecords = $.grep(FilterdRecord, function(v) {
+    			return v.ItemId == UniqueRecordGroup[i].ItemId;
+			});
+			var WebpartName = GroupRecords[0].WebpartName;
+			var CategoryTitle = '';
+			if(GroupRecords[(GroupRecords.length-1)].ContentCategory != null)
+			{
+				CategoryTitle = GroupRecords[(GroupRecords.length-1)].ContentCategory;
+			}
+			var Title = GroupRecords[0].Title;
+			var TotalHits=GroupRecords.length;
+			WebPartDetails += '<tr class="text-left"><td class="text-left">'+WebpartName+'</td><td>'+CategoryTitle+'</td><td>'+Title+'</td><td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-write-up-modal" onclick="ViewedContentsUsersDetails(\''+WebpartName+'\', \''+UniqueRecordGroup[i].ItemId+'\')">'+TotalHits+'</a></td></tr>';
+		}
+    }
+    $('#tbViewedContents').append(WebPartDetails);
+}
+
+
+function ViewedContentsUsersDetails(WebpartName, Title)
+{
+	var FilterdRecord = $.grep(AnalyticalUsageData, function(v) {
+    	return v.UserAction == 'Content Read' && v.ItemId == Title;
+	});
+	
+	$('#tblContentView').html('');
+	$('#txtContentViewTitle').text('Title : '+ FilterdRecord[0].Title);
+    $('#txtCViewTitle').text(FilterdRecord[0].Title);
+    $('#StDate').text($("#Fromdt").text());	
+    $('#EnDate').text($("#Todt").text());
+	if(FilterdRecord.length>0)
+	{
+		var Deatils = '';
+		for(var i=0; i<FilterdRecord.length; i++)
+		{
+			var Category='';
+			if(FilterdRecord[i].ContentCategory != null)
+			{
+				Category = FilterdRecord[i].ContentCategory;
+			}
+			//Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+FilterdRecord[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+FilterdRecord[i].UserID.Title+'</p><p class="mb0">'+FilterdRecord[i].Designation+' | '+FilterdRecord[i].DepartmentId.Title+'</p></div></div></td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+Category+'</td><td>'+FilterdRecord[i].Application+'</td></tr>'
+			Deatils += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="'+FilterdRecord[i].UserImage+'"><div class="analytical-user-image-text"><p class="mb0">'+FilterdRecord[i].UserID.Title+'</p><p class="mb0">'+FilterdRecord[i].Designation+' | '+FilterdRecord[i].DepartmentId.Title+'</p><p class="mb0 Emailfont">'+FilterdRecord[i].Author.EMail+'</p></div></div></td><td class="text-left">'+moment(FilterdRecord[i].Modified).format('DD-MMM-YYYY HH:mm')+'</td><td>'+Category+'</td><td>'+FilterdRecord[i].Application+'</td></tr>'
+		}	
+	}
+	$('#tblContentView').append(Deatils);
+}
+
+/*------------------------archiving Lista Data -----------08/06/2022-----------------------------*/
+//var archivindListUrl=_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NotificationCenter')/items?$select=ID,Created&$top=5";
+var arrData=[];
+
+function adddataInArchingList(){
+        var Metadata;
+        var date=new Date($("#From_data").val());
+        date=date.format('yyyy-MM-d');
+    		Metadata = {
+	        __metadata: {'type': 'SP.Data.ArchivingDataListItem'},
+	        Title : _spPageContextInfo.userEmail,
+			ArchivingDate:date
+	    };       
+       
+    $.when(AddItemToList(Metadata)).done(function(responseIdmore)
+    {   		     
+	   alert('Archiving successfully');
+	})
+
+}
+function AddItemToList(Metadata)
+{
+    var dfd = $.Deferred();
+
+    var ownURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('ArchivingData')/Items";
+    $.ajax({    	
+        url: ownURL,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data:JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+        },
+        error: function (error) {
+           alert(JSON.stringify(error));
+           dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+/*function ReadAnalyticalArchiving(archivindListUrl) 
+{
+	
+	dfds = $.Deferred(),
+    $.ajax({
+        url:archivindListUrl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        processing: true,
+        serverSide: true,
+        success: function (data) 
+        {
+        	arrData= arrData.concat(data.d.results);           
+            if (data.d.__next) 
+            {
+                ReadAnalyticalArchiving(data.d.__next);
+            }
+            else 
+            {
+            	var fd = new Date(moment(new Date($("#From_data").val())).format("YYYY-MM-DD")+"T00:00:00.000Z").getTime();      			
+  				var ExtResults = arrData.filter(d => {var time = new Date(moment(d.Created).format("YYYY-MM-DD")+"T00:00:00.000Z").getTime();
+  				if(time <= fd){
+  				   DeleteArchiveListData(d.ID);
+  				}
+  				return (time <= fd);                
+                });         	
+            	console.log('Archiving successfully '+arrData.length +'items')
+            	//alert('Archivind successfully'+arrData.length)
+            	//arrData= ExtResults;
+            	CloseMyCustomLoader();
+				
+            }     
+        },
+        error: function (jqXhr, textStatus, errorThrown)
+		{
+            console.log(jqXhr.responseJSON.error.message.value);            
+        }    
+    });
+    return dfds.promise();
+}
+
+
+function DeleteArchiveListData(itemID) {
+         var listName='NotificationCenter'; 
+         $.ajax({  
+            url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('"+listName+"')/items(" + itemID+ ")",  
+            type: "POST",
+            async:true,  
+            contentType: "application/json;odata=verbose",  
+            headers: {  
+                "Accept": "application/json;odata=verbose",  
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                "IF-MATCH": "*",  
+                "X-HTTP-Method": "DELETE",  
+            },  
+            success: function(data) {  
+                console.log("success");  
+            },  
+            error: function(data) {  
+                //alert(data);  
+            }  
+        });
+} */

@@ -1,1 +1,243 @@
-var a20_0x3ffd1c=a20_0x2c4b;(function(_0x516f7b,_0x266ac6){var _0x237a17=a20_0x2c4b,_0x22b860=_0x516f7b();while(!![]){try{var _0x4f1ade=parseInt(_0x237a17(0x1c2))/0x1*(parseInt(_0x237a17(0x1c5))/0x2)+parseInt(_0x237a17(0x1ae))/0x3+parseInt(_0x237a17(0x1b9))/0x4+-parseInt(_0x237a17(0x1bd))/0x5+parseInt(_0x237a17(0x1bc))/0x6*(parseInt(_0x237a17(0x1d7))/0x7)+-parseInt(_0x237a17(0x1bb))/0x8*(parseInt(_0x237a17(0x1cc))/0x9)+parseInt(_0x237a17(0x1e0))/0xa*(-parseInt(_0x237a17(0x1a6))/0xb);if(_0x4f1ade===_0x266ac6)break;else _0x22b860['push'](_0x22b860['shift']());}catch(_0x485d67){_0x22b860['push'](_0x22b860['shift']());}}}(a20_0x4279,0x8cb89));function a20_0x2c4b(_0x23a485,_0x51fee2){var _0x427958=a20_0x4279();return a20_0x2c4b=function(_0x2c4bbe,_0x1aa93b){_0x2c4bbe=_0x2c4bbe-0x1a3;var _0x4edfb4=_0x427958[_0x2c4bbe];return _0x4edfb4;},a20_0x2c4b(_0x23a485,_0x51fee2);}function a20_0x4279(){var _0x35fae2=['10QLUqna','rightMargin','getElement','parent','marginLeft','topInitialized','left','initializeColumn','registerModule','cells','tableElement','layoutCalcRows','paddingRight','rightColumns','rightPadding','7742581ZOIOBO','warn','getWidth','add','push','topRow','Frozen\x20Column\x20Error\x20-\x20Column\x20Groups\x20cannot\x20be\x20frozen','scrollEndTimer','1854192qywYCf','layout','botInitialized','forEach','leftColumns','modules','calcMargins','layoutColumnPosition','Frozen\x20Column\x20Error\x20-\x20Grouped\x20columns\x20cannot\x20be\x20frozen','length','right','1757232vbFHTQ','paddingLeft','456tRZomB','6cNfwZb','3590855IRyZXI','headersElement','scrollLeft','getDisplayRows','absolute','55RkZTIg','style','active','28714mDKDfp','classList','visible','_calcSpace','initializationMode','columnCalcs','scrollHorizontal','145971tPvPQT','prototype','getCell','element','edge','marginRight','isGroup','frozen','row','layoutElement','columnManager','7531377lSUKam','position','rowManager','table','botRow','margin','reset','leftMargin','layoutRow'];a20_0x4279=function(){return _0x35fae2;};return a20_0x4279();}var FrozenColumns=function FrozenColumns(_0x139ffe){var _0x10a5d7=a20_0x2c4b;this[_0x10a5d7(0x1da)]=_0x139ffe,this[_0x10a5d7(0x1b2)]=[],this['rightColumns']=[],this['leftMargin']=0x0,this[_0x10a5d7(0x1e1)]=0x0,this[_0x10a5d7(0x1a5)]=0x0,this[_0x10a5d7(0x1c9)]=_0x10a5d7(0x1e6),this[_0x10a5d7(0x1c4)]=![],this['scrollEndTimer']=![];};FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1dd)]=function(){var _0xd449f1=a20_0x3ffd1c;this[_0xd449f1(0x1c9)]=_0xd449f1(0x1e6),this[_0xd449f1(0x1b2)]=[],this['rightColumns']=[],this[_0xd449f1(0x1de)]=0x0,this['rightMargin']=0x0,this[_0xd449f1(0x1e1)]=0x0,this[_0xd449f1(0x1c4)]=![],this[_0xd449f1(0x1da)][_0xd449f1(0x1d6)][_0xd449f1(0x1be)]['style'][_0xd449f1(0x1e4)]=0x0,this[_0xd449f1(0x1da)][_0xd449f1(0x1d6)]['element'][_0xd449f1(0x1c3)][_0xd449f1(0x1a3)]=0x0;},FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1e7)]=function(_0x109ae9){var _0x59e48f=a20_0x3ffd1c,_0x88547e={'margin':0x0,'edge':![]};_0x109ae9['definition'][_0x59e48f(0x1d3)]?!_0x109ae9[_0x59e48f(0x1e3)][_0x59e48f(0x1d2)]?!_0x109ae9[_0x59e48f(0x1d2)]?(_0x88547e['position']=this[_0x59e48f(0x1c9)],this[_0x59e48f(0x1c9)]==_0x59e48f(0x1e6)?this['leftColumns'][_0x59e48f(0x1aa)](_0x109ae9):this['rightColumns']['unshift'](_0x109ae9),this[_0x59e48f(0x1c4)]=!![],_0x109ae9[_0x59e48f(0x1b3)][_0x59e48f(0x1d3)]=_0x88547e):console[_0x59e48f(0x1a7)](_0x59e48f(0x1ac)):console[_0x59e48f(0x1a7)](_0x59e48f(0x1b6)):this[_0x59e48f(0x1c9)]=_0x59e48f(0x1b8);},FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1cb)]=function(){var _0x5270b7=a20_0x3ffd1c,_0x476794=this,_0x49ecda;this[_0x5270b7(0x1c4)]&&(clearTimeout(this[_0x5270b7(0x1ad)]),this[_0x5270b7(0x1ad)]=setTimeout(function(){var _0x5ae982=_0x5270b7;_0x476794[_0x5ae982(0x1af)]();},0x64),_0x49ecda=this[_0x5270b7(0x1da)][_0x5270b7(0x1d9)]['getVisibleRows'](),this[_0x5270b7(0x1b4)](),this[_0x5270b7(0x1b5)](),this['layoutCalcRows'](),_0x49ecda[_0x5270b7(0x1b1)](function(_0x631655){_0x631655['type']==='row'&&_0x476794['layoutRow'](_0x631655);}),this[_0x5270b7(0x1da)][_0x5270b7(0x1d9)][_0x5270b7(0x1ea)]['style'][_0x5270b7(0x1d1)]=this[_0x5270b7(0x1e1)]);},FrozenColumns[a20_0x3ffd1c(0x1cd)]['calcMargins']=function(){var _0x5d5c58=a20_0x3ffd1c;this[_0x5d5c58(0x1de)]=this[_0x5d5c58(0x1c8)](this['leftColumns'],this[_0x5d5c58(0x1b2)]['length'])+'px',this[_0x5d5c58(0x1da)][_0x5d5c58(0x1d6)]['headersElement'][_0x5d5c58(0x1c3)][_0x5d5c58(0x1e4)]=this['leftMargin'],this['rightMargin']=this[_0x5d5c58(0x1c8)](this[_0x5d5c58(0x1a4)],this[_0x5d5c58(0x1a4)][_0x5d5c58(0x1b7)])+'px',this[_0x5d5c58(0x1da)][_0x5d5c58(0x1d6)][_0x5d5c58(0x1cf)][_0x5d5c58(0x1c3)][_0x5d5c58(0x1a3)]=this['rightMargin'],this[_0x5d5c58(0x1a5)]=this[_0x5d5c58(0x1da)][_0x5d5c58(0x1d9)][_0x5d5c58(0x1cf)]['clientWidth']+this['table']['columnManager']['scrollLeft'];},FrozenColumns[a20_0x3ffd1c(0x1cd)]['layoutCalcRows']=function(){var _0x3aef28=a20_0x3ffd1c;this[_0x3aef28(0x1da)]['modExists']('columnCalcs')&&(this[_0x3aef28(0x1da)][_0x3aef28(0x1b3)]['columnCalcs'][_0x3aef28(0x1e5)]&&this[_0x3aef28(0x1da)][_0x3aef28(0x1b3)][_0x3aef28(0x1ca)][_0x3aef28(0x1ab)]&&this[_0x3aef28(0x1df)](this[_0x3aef28(0x1da)]['modules'][_0x3aef28(0x1ca)][_0x3aef28(0x1ab)]),this['table']['modules']['columnCalcs'][_0x3aef28(0x1b0)]&&this[_0x3aef28(0x1da)]['modules'][_0x3aef28(0x1ca)][_0x3aef28(0x1db)]&&this[_0x3aef28(0x1df)](this[_0x3aef28(0x1da)][_0x3aef28(0x1b3)]['columnCalcs'][_0x3aef28(0x1db)]));},FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1b5)]=function(_0x2e472a){var _0x98264a=a20_0x3ffd1c,_0x57776c=this;this[_0x98264a(0x1b2)][_0x98264a(0x1b1)](function(_0x27b4be,_0x476d94){var _0x1b6907=_0x98264a;_0x27b4be['modules'][_0x1b6907(0x1d3)]['margin']=_0x57776c[_0x1b6907(0x1c8)](_0x57776c[_0x1b6907(0x1b2)],_0x476d94)+_0x57776c[_0x1b6907(0x1da)]['columnManager'][_0x1b6907(0x1bf)]+'px',_0x476d94==_0x57776c[_0x1b6907(0x1b2)][_0x1b6907(0x1b7)]-0x1?_0x27b4be[_0x1b6907(0x1b3)][_0x1b6907(0x1d3)][_0x1b6907(0x1d0)]=!![]:_0x27b4be['modules'][_0x1b6907(0x1d3)][_0x1b6907(0x1d0)]=![],_0x57776c['layoutElement'](_0x27b4be[_0x1b6907(0x1e2)](),_0x27b4be),_0x2e472a&&_0x27b4be[_0x1b6907(0x1e9)][_0x1b6907(0x1b1)](function(_0x14ea96){var _0x126a6=_0x1b6907;_0x57776c[_0x126a6(0x1d5)](_0x14ea96[_0x126a6(0x1e2)](),_0x27b4be);});}),this[_0x98264a(0x1a4)][_0x98264a(0x1b1)](function(_0x33fe60,_0xcca154){var _0x182065=_0x98264a;_0x33fe60['modules'][_0x182065(0x1d3)][_0x182065(0x1dc)]=_0x57776c['rightPadding']-_0x57776c[_0x182065(0x1c8)](_0x57776c['rightColumns'],_0xcca154+0x1)+'px',_0xcca154==_0x57776c[_0x182065(0x1a4)][_0x182065(0x1b7)]-0x1?_0x33fe60[_0x182065(0x1b3)][_0x182065(0x1d3)][_0x182065(0x1d0)]=!![]:_0x33fe60[_0x182065(0x1b3)][_0x182065(0x1d3)][_0x182065(0x1d0)]=![],_0x57776c[_0x182065(0x1d5)](_0x33fe60[_0x182065(0x1e2)](),_0x33fe60),_0x2e472a&&_0x33fe60['cells'][_0x182065(0x1b1)](function(_0x1da51e){var _0x380cb1=_0x182065;_0x57776c[_0x380cb1(0x1d5)](_0x1da51e[_0x380cb1(0x1e2)](),_0x33fe60);});});},FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1af)]=function(){var _0x9b03ea=a20_0x3ffd1c,_0x5531e4=this,_0x5e24c4=0x0;_0x5531e4[_0x9b03ea(0x1c4)]&&(this['calcMargins'](),_0x5531e4['table'][_0x9b03ea(0x1d9)][_0x9b03ea(0x1c0)]()['forEach'](function(_0x2e5c42){var _0x12b7de=_0x9b03ea;_0x2e5c42['type']===_0x12b7de(0x1d4)&&_0x5531e4[_0x12b7de(0x1df)](_0x2e5c42);}),this[_0x9b03ea(0x1eb)](),this[_0x9b03ea(0x1b5)](!![]),this[_0x9b03ea(0x1da)][_0x9b03ea(0x1d9)][_0x9b03ea(0x1ea)][_0x9b03ea(0x1c3)][_0x9b03ea(0x1d1)]=this[_0x9b03ea(0x1e1)]);},FrozenColumns[a20_0x3ffd1c(0x1cd)]['layoutRow']=function(_0x75b289){var _0x59cdbd=a20_0x3ffd1c,_0x1b7f03=this,_0x1bfc76=_0x75b289[_0x59cdbd(0x1e2)]();_0x1bfc76['style'][_0x59cdbd(0x1ba)]=this[_0x59cdbd(0x1de)],this[_0x59cdbd(0x1b2)][_0x59cdbd(0x1b1)](function(_0x4f6ea9){var _0x2460fa=_0x59cdbd,_0x25413a=_0x75b289['getCell'](_0x4f6ea9);_0x25413a&&_0x1b7f03[_0x2460fa(0x1d5)](_0x25413a[_0x2460fa(0x1e2)](),_0x4f6ea9);}),this[_0x59cdbd(0x1a4)][_0x59cdbd(0x1b1)](function(_0xdcd799){var _0x4f8449=_0x59cdbd,_0xb0f4f3=_0x75b289[_0x4f8449(0x1ce)](_0xdcd799);_0xb0f4f3&&_0x1b7f03[_0x4f8449(0x1d5)](_0xb0f4f3['getElement'](),_0xdcd799);});},FrozenColumns['prototype']['layoutElement']=function(_0x59884a,_0x113144){var _0xe7db8e=a20_0x3ffd1c;_0x113144[_0xe7db8e(0x1b3)][_0xe7db8e(0x1d3)]&&(_0x59884a[_0xe7db8e(0x1c3)][_0xe7db8e(0x1d8)]=_0xe7db8e(0x1c1),_0x59884a[_0xe7db8e(0x1c3)][_0xe7db8e(0x1e6)]=_0x113144[_0xe7db8e(0x1b3)][_0xe7db8e(0x1d3)]['margin'],_0x59884a['classList'][_0xe7db8e(0x1a9)]('tabulator-frozen'),_0x113144['modules'][_0xe7db8e(0x1d3)][_0xe7db8e(0x1d0)]&&_0x59884a[_0xe7db8e(0x1c6)][_0xe7db8e(0x1a9)]('tabulator-frozen-'+_0x113144[_0xe7db8e(0x1b3)][_0xe7db8e(0x1d3)][_0xe7db8e(0x1d8)]));},FrozenColumns[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1c8)]=function(_0x51b858,_0x4396d6){var _0x2fc2dc=a20_0x3ffd1c,_0x1fdcd3=0x0;for(var _0x245fc6=0x0;_0x245fc6<_0x4396d6;_0x245fc6++){_0x51b858[_0x245fc6][_0x2fc2dc(0x1c7)]&&(_0x1fdcd3+=_0x51b858[_0x245fc6][_0x2fc2dc(0x1a8)]());}return _0x1fdcd3;},Tabulator[a20_0x3ffd1c(0x1cd)][a20_0x3ffd1c(0x1e8)]('frozenColumns',FrozenColumns);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var FrozenColumns = function FrozenColumns(table) {
+	this.table = table; //hold Tabulator object
+	this.leftColumns = [];
+	this.rightColumns = [];
+	this.leftMargin = 0;
+	this.rightMargin = 0;
+	this.rightPadding = 0;
+	this.initializationMode = "left";
+	this.active = false;
+	this.scrollEndTimer = false;
+};
+
+//reset initial state
+FrozenColumns.prototype.reset = function () {
+	this.initializationMode = "left";
+	this.leftColumns = [];
+	this.rightColumns = [];
+	this.leftMargin = 0;
+	this.rightMargin = 0;
+	this.rightMargin = 0;
+	this.active = false;
+
+	this.table.columnManager.headersElement.style.marginLeft = 0;
+	this.table.columnManager.element.style.paddingRight = 0;
+};
+
+//initialize specific column
+FrozenColumns.prototype.initializeColumn = function (column) {
+	var config = { margin: 0, edge: false };
+
+	if (column.definition.frozen) {
+
+		if (!column.parent.isGroup) {
+
+			if (!column.isGroup) {
+				config.position = this.initializationMode;
+
+				if (this.initializationMode == "left") {
+					this.leftColumns.push(column);
+				} else {
+					this.rightColumns.unshift(column);
+				}
+
+				this.active = true;
+
+				column.modules.frozen = config;
+			} else {
+				console.warn("Frozen Column Error - Column Groups cannot be frozen");
+			}
+		} else {
+			console.warn("Frozen Column Error - Grouped columns cannot be frozen");
+		}
+	} else {
+		this.initializationMode = "right";
+	}
+};
+
+//quick layout to smooth horizontal scrolling
+FrozenColumns.prototype.scrollHorizontal = function () {
+	var _this = this;
+
+	var rows;
+
+	if (this.active) {
+		clearTimeout(this.scrollEndTimer);
+
+		//layout all rows after scroll is complete
+		this.scrollEndTimer = setTimeout(function () {
+			_this.layout();
+		}, 100);
+
+		rows = this.table.rowManager.getVisibleRows();
+
+		this.calcMargins();
+
+		this.layoutColumnPosition();
+
+		this.layoutCalcRows();
+
+		rows.forEach(function (row) {
+			if (row.type === "row") {
+				_this.layoutRow(row);
+			}
+		});
+
+		this.table.rowManager.tableElement.style.marginRight = this.rightMargin;
+	}
+};
+
+//calculate margins for rows
+FrozenColumns.prototype.calcMargins = function () {
+	this.leftMargin = this._calcSpace(this.leftColumns, this.leftColumns.length) + "px";
+	this.table.columnManager.headersElement.style.marginLeft = this.leftMargin;
+
+	this.rightMargin = this._calcSpace(this.rightColumns, this.rightColumns.length) + "px";
+	this.table.columnManager.element.style.paddingRight = this.rightMargin;
+
+	//calculate right frozen columns
+	this.rightPadding = this.table.rowManager.element.clientWidth + this.table.columnManager.scrollLeft;
+};
+
+//layout calculation rows
+FrozenColumns.prototype.layoutCalcRows = function () {
+	if (this.table.modExists("columnCalcs")) {
+		if (this.table.modules.columnCalcs.topInitialized && this.table.modules.columnCalcs.topRow) {
+			this.layoutRow(this.table.modules.columnCalcs.topRow);
+		}
+		if (this.table.modules.columnCalcs.botInitialized && this.table.modules.columnCalcs.botRow) {
+			this.layoutRow(this.table.modules.columnCalcs.botRow);
+		}
+	}
+};
+
+//calculate column positions and layout headers
+FrozenColumns.prototype.layoutColumnPosition = function (allCells) {
+	var _this2 = this;
+
+	this.leftColumns.forEach(function (column, i) {
+		column.modules.frozen.margin = _this2._calcSpace(_this2.leftColumns, i) + _this2.table.columnManager.scrollLeft + "px";
+
+		if (i == _this2.leftColumns.length - 1) {
+			column.modules.frozen.edge = true;
+		} else {
+			column.modules.frozen.edge = false;
+		}
+
+		_this2.layoutElement(column.getElement(), column);
+
+		if (allCells) {
+			column.cells.forEach(function (cell) {
+				_this2.layoutElement(cell.getElement(), column);
+			});
+		}
+	});
+
+	this.rightColumns.forEach(function (column, i) {
+		column.modules.frozen.margin = _this2.rightPadding - _this2._calcSpace(_this2.rightColumns, i + 1) + "px";
+
+		if (i == _this2.rightColumns.length - 1) {
+			column.modules.frozen.edge = true;
+		} else {
+			column.modules.frozen.edge = false;
+		}
+
+		_this2.layoutElement(column.getElement(), column);
+
+		if (allCells) {
+			column.cells.forEach(function (cell) {
+				_this2.layoutElement(cell.getElement(), column);
+			});
+		}
+	});
+};
+
+//layout columns appropropriatly
+FrozenColumns.prototype.layout = function () {
+	var self = this,
+	    rightMargin = 0;
+
+	if (self.active) {
+
+		//calculate row padding
+		this.calcMargins();
+
+		// self.table.rowManager.activeRows.forEach(function(row){
+		// 	self.layoutRow(row);
+		// });
+
+		// if(self.table.options.dataTree){
+		self.table.rowManager.getDisplayRows().forEach(function (row) {
+			if (row.type === "row") {
+				self.layoutRow(row);
+			}
+		});
+		// }
+
+		this.layoutCalcRows();
+
+		//calculate left columns
+		this.layoutColumnPosition(true);
+
+		// if(tableHolder.scrollHeight > tableHolder.clientHeight){
+		// 	rightMargin -= tableHolder.offsetWidth - tableHolder.clientWidth;
+		// }
+
+		this.table.rowManager.tableElement.style.marginRight = this.rightMargin;
+	}
+};
+
+FrozenColumns.prototype.layoutRow = function (row) {
+	var _this3 = this;
+
+	var rowEl = row.getElement();
+
+	rowEl.style.paddingLeft = this.leftMargin;
+	// rowEl.style.paddingRight = this.rightMargin + "px";
+
+	this.leftColumns.forEach(function (column) {
+		var cell = row.getCell(column);
+
+		if (cell) {
+			_this3.layoutElement(cell.getElement(), column);
+		}
+	});
+
+	this.rightColumns.forEach(function (column) {
+		var cell = row.getCell(column);
+
+		if (cell) {
+			_this3.layoutElement(cell.getElement(), column);
+		}
+	});
+};
+
+FrozenColumns.prototype.layoutElement = function (element, column) {
+
+	if (column.modules.frozen) {
+		element.style.position = "absolute";
+		element.style.left = column.modules.frozen.margin;
+
+		element.classList.add("tabulator-frozen");
+
+		if (column.modules.frozen.edge) {
+			element.classList.add("tabulator-frozen-" + column.modules.frozen.position);
+		}
+	}
+};
+
+FrozenColumns.prototype._calcSpace = function (columns, index) {
+	var width = 0;
+
+	for (var i = 0; i < index; i++) {
+		if (columns[i].visible) {
+			width += columns[i].getWidth();
+		}
+	}
+
+	return width;
+};
+
+Tabulator.prototype.registerModule("frozenColumns", FrozenColumns);

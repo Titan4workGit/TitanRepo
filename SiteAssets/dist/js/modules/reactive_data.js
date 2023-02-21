@@ -1,1 +1,235 @@
-function a46_0x1c8e(_0x52ce95,_0x501e00){var _0x334c88=a46_0x334c();return a46_0x1c8e=function(_0x1c8e5c,_0x27abce){_0x1c8e5c=_0x1c8e5c-0x1cf;var _0x2defb1=_0x334c88[_0x1c8e5c];return _0x2defb1;},a46_0x1c8e(_0x52ce95,_0x501e00);}function a46_0x334c(){var _0x5b1211=['7927843OihMBT','rowManager','addRowActual','shift','call','getRowFromDataObject','origFuncs','data','block','unblock','474CHQHPF','prototype','reactiveData','currentVersion','pop','deleteActual','watchKey','340907eSUXsQ','getOwnPropertyDescriptor','reRenderInPosition','get','8908dMnxHE','push','1070308kNuJoO','5730200TXNVyQ','watchRow','defineProperty','10ZxXWBf','getData','key','blocked','table','12prwLaa','unwatchData','splice','slice','from','apply','forEach','136WzTPqC','500562neBFzR','unshift','undefined','unwatchRow','489907ctawHD','length'];a46_0x334c=function(){return _0x5b1211;};return a46_0x334c();}var a46_0x18a202=a46_0x1c8e;(function(_0x24d7c8,_0x534347){var _0x4cfa82=a46_0x1c8e,_0xb2f435=_0x24d7c8();while(!![]){try{var _0x1b20b9=parseInt(_0x4cfa82(0x1dd))/0x1+-parseInt(_0x4cfa82(0x1f6))/0x2+parseInt(_0x4cfa82(0x1e9))/0x3*(-parseInt(_0x4cfa82(0x1f4))/0x4)+parseInt(_0x4cfa82(0x1f7))/0x5+-parseInt(_0x4cfa82(0x1d1))/0x6*(-parseInt(_0x4cfa82(0x1f0))/0x7)+-parseInt(_0x4cfa82(0x1d8))/0x8*(parseInt(_0x4cfa82(0x1d9))/0x9)+parseInt(_0x4cfa82(0x1fa))/0xa*(parseInt(_0x4cfa82(0x1df))/0xb);if(_0x1b20b9===_0x534347)break;else _0xb2f435['push'](_0xb2f435['shift']());}catch(_0x58788e){_0xb2f435['push'](_0xb2f435['shift']());}}}(a46_0x334c,0x97be0));var ReactiveData=function ReactiveData(_0x75a104){var _0x32bf85=a46_0x1c8e;this['table']=_0x75a104,this[_0x32bf85(0x1e6)]=![],this[_0x32bf85(0x1cf)]=![],this[_0x32bf85(0x1e5)]={},this[_0x32bf85(0x1ec)]=0x0;};ReactiveData[a46_0x18a202(0x1ea)]['watchData']=function(_0x13307e){var _0x2401fd=a46_0x18a202,_0x585666=this,_0x2d22ae,_0x4c11aa;this[_0x2401fd(0x1ec)]++,_0x4c11aa=this[_0x2401fd(0x1ec)],_0x585666[_0x2401fd(0x1d2)](),_0x585666[_0x2401fd(0x1e6)]=_0x13307e,_0x585666['origFuncs'][_0x2401fd(0x1f5)]=_0x13307e[_0x2401fd(0x1f5)],Object[_0x2401fd(0x1f9)](_0x585666[_0x2401fd(0x1e6)],_0x2401fd(0x1f5),{'enumerable':![],'configurable':!![],'value':function _0x1b6402(){var _0x2a8b7d=_0x2401fd,_0x4d7c55=Array[_0x2a8b7d(0x1d5)](arguments);return!_0x585666[_0x2a8b7d(0x1cf)]&&_0x4c11aa===_0x585666['currentVersion']&&_0x4d7c55['forEach'](function(_0x4e83b3){var _0x2fd8d0=_0x2a8b7d;_0x585666[_0x2fd8d0(0x1d0)][_0x2fd8d0(0x1e0)][_0x2fd8d0(0x1e1)](_0x4e83b3,![]);}),_0x585666['origFuncs']['push']['apply'](_0x13307e,arguments);}}),_0x585666['origFuncs']['unshift']=_0x13307e[_0x2401fd(0x1da)],Object[_0x2401fd(0x1f9)](_0x585666['data'],_0x2401fd(0x1da),{'enumerable':![],'configurable':!![],'value':function _0x56037d(){var _0x82c2fa=_0x2401fd,_0x323694=Array[_0x82c2fa(0x1d5)](arguments);return!_0x585666[_0x82c2fa(0x1cf)]&&_0x4c11aa===_0x585666[_0x82c2fa(0x1ec)]&&_0x323694[_0x82c2fa(0x1d7)](function(_0x24262b){var _0x19e312=_0x82c2fa;_0x585666[_0x19e312(0x1d0)][_0x19e312(0x1e0)][_0x19e312(0x1e1)](_0x24262b,!![]);}),_0x585666[_0x82c2fa(0x1e5)][_0x82c2fa(0x1da)][_0x82c2fa(0x1d6)](_0x13307e,arguments);}}),_0x585666[_0x2401fd(0x1e5)][_0x2401fd(0x1e2)]=_0x13307e['shift'],Object[_0x2401fd(0x1f9)](_0x585666[_0x2401fd(0x1e6)],_0x2401fd(0x1e2),{'enumerable':![],'configurable':!![],'value':function _0x179ebb(){var _0x2e7651=_0x2401fd,_0x3e4861;return!_0x585666['blocked']&&_0x4c11aa===_0x585666['currentVersion']&&(_0x585666['data'][_0x2e7651(0x1de)]&&(_0x3e4861=_0x585666[_0x2e7651(0x1d0)][_0x2e7651(0x1e0)]['getRowFromDataObject'](_0x585666[_0x2e7651(0x1e6)][0x0]),_0x3e4861&&_0x3e4861['deleteActual']())),_0x585666[_0x2e7651(0x1e5)][_0x2e7651(0x1e2)][_0x2e7651(0x1e3)](_0x13307e);}}),_0x585666[_0x2401fd(0x1e5)][_0x2401fd(0x1ed)]=_0x13307e[_0x2401fd(0x1ed)],Object['defineProperty'](_0x585666['data'],_0x2401fd(0x1ed),{'enumerable':![],'configurable':!![],'value':function _0xd1a029(){var _0x22c161=_0x2401fd,_0x123ef2;return!_0x585666[_0x22c161(0x1cf)]&&_0x4c11aa===_0x585666[_0x22c161(0x1ec)]&&(_0x585666[_0x22c161(0x1e6)][_0x22c161(0x1de)]&&(_0x123ef2=_0x585666[_0x22c161(0x1d0)][_0x22c161(0x1e0)][_0x22c161(0x1e4)](_0x585666[_0x22c161(0x1e6)][_0x585666[_0x22c161(0x1e6)]['length']-0x1]),_0x123ef2&&_0x123ef2['deleteActual']())),_0x585666[_0x22c161(0x1e5)][_0x22c161(0x1ed)][_0x22c161(0x1e3)](_0x13307e);}}),_0x585666[_0x2401fd(0x1e5)][_0x2401fd(0x1d3)]=_0x13307e[_0x2401fd(0x1d3)],Object[_0x2401fd(0x1f9)](_0x585666[_0x2401fd(0x1e6)],_0x2401fd(0x1d3),{'enumerable':![],'configurable':!![],'value':function _0x180aec(){var _0x1cefce=_0x2401fd,_0x15151e=Array[_0x1cefce(0x1d5)](arguments),_0x4a23a9=_0x15151e[0x0]<0x0?_0x13307e[_0x1cefce(0x1de)]+_0x15151e[0x0]:_0x15151e[0x0],_0x2d79b5=_0x15151e[0x1],_0x473760=_0x15151e[0x2]?_0x15151e[_0x1cefce(0x1d4)](0x2):![],_0x2f5b63;if(!_0x585666[_0x1cefce(0x1cf)]&&_0x4c11aa===_0x585666['currentVersion']){_0x473760&&(_0x2f5b63=_0x13307e[_0x4a23a9]?_0x585666[_0x1cefce(0x1d0)][_0x1cefce(0x1e0)][_0x1cefce(0x1e4)](_0x13307e[_0x4a23a9]):![],_0x2f5b63?_0x473760[_0x1cefce(0x1d7)](function(_0xfc52cc){var _0x153a94=_0x1cefce;_0x585666['table'][_0x153a94(0x1e0)]['addRowActual'](_0xfc52cc,!![],_0x2f5b63,!![]);}):(_0x473760=_0x473760[_0x1cefce(0x1d4)]()['reverse'](),_0x473760[_0x1cefce(0x1d7)](function(_0x3288b7){var _0x32efda=_0x1cefce;_0x585666['table'][_0x32efda(0x1e0)][_0x32efda(0x1e1)](_0x3288b7,!![],![],!![]);})));if(_0x2d79b5!==0x0){var _0xbff14c=_0x13307e[_0x1cefce(0x1d4)](_0x4a23a9,typeof _0x15151e[0x1]===_0x1cefce(0x1db)?_0x15151e[0x1]:_0x4a23a9+_0x2d79b5);_0xbff14c[_0x1cefce(0x1d7)](function(_0x3a686b,_0x2f4966){var _0x55d001=_0x1cefce,_0x246e5c=_0x585666[_0x55d001(0x1d0)][_0x55d001(0x1e0)]['getRowFromDataObject'](_0x3a686b);_0x246e5c&&_0x246e5c[_0x55d001(0x1ee)](_0x2f4966!==_0xbff14c[_0x55d001(0x1de)]-0x1);});}(_0x473760||_0x2d79b5!==0x0)&&_0x585666['table'][_0x1cefce(0x1e0)][_0x1cefce(0x1f2)]();}return _0x585666['origFuncs'][_0x1cefce(0x1d3)][_0x1cefce(0x1d6)](_0x13307e,arguments);}});},ReactiveData[a46_0x18a202(0x1ea)]['unwatchData']=function(){var _0x295036=a46_0x18a202;if(this[_0x295036(0x1e6)]!==![])for(var _0x2888ac in this[_0x295036(0x1e5)]){Object[_0x295036(0x1f9)](this[_0x295036(0x1e6)],_0x2888ac,{'enumerable':!![],'configurable':!![],'writable':!![],'value':this['origFuncs'][_0x295036(0x1fc)]});}},ReactiveData[a46_0x18a202(0x1ea)][a46_0x18a202(0x1f8)]=function(_0x26189c){var _0x42dca1=a46_0x18a202,_0x1608aa=this,_0x4b5508=_0x26189c[_0x42dca1(0x1fb)]();this['blocked']=!![];for(var _0x4ede58 in _0x4b5508){this[_0x42dca1(0x1ef)](_0x26189c,_0x4b5508,_0x4ede58);}this[_0x42dca1(0x1cf)]=![];},ReactiveData[a46_0x18a202(0x1ea)][a46_0x18a202(0x1ef)]=function(_0x50b7e2,_0x5ef094,_0x581ab){var _0x517a56=a46_0x18a202,_0xf4ba60=this,_0x11df59=Object[_0x517a56(0x1f1)](_0x5ef094,_0x581ab),_0x161b7c=_0x5ef094[_0x581ab],_0x28e9ee=this[_0x517a56(0x1ec)];Object[_0x517a56(0x1f9)](_0x5ef094,_0x581ab,{'set':function _0x3eddd0(_0x1d397a){var _0x5e5ef6=_0x517a56;_0x161b7c=_0x1d397a;if(!_0xf4ba60[_0x5e5ef6(0x1cf)]&&_0x28e9ee===_0xf4ba60[_0x5e5ef6(0x1ec)]){var _0x30e8cd={};_0x30e8cd[_0x581ab]=_0x1d397a,_0x50b7e2['updateData'](_0x30e8cd);}_0x11df59['set']&&_0x11df59['set'](_0x1d397a);},'get':function _0x284935(){var _0x25db83=_0x517a56;return _0x11df59[_0x25db83(0x1f3)]&&_0x11df59[_0x25db83(0x1f3)](),_0x161b7c;}});},ReactiveData['prototype'][a46_0x18a202(0x1dc)]=function(_0x1eb8c7){var _0x11e033=_0x1eb8c7['getData']();for(var _0x3aa93a in _0x11e033){Object['defineProperty'](_0x11e033,_0x3aa93a,{'value':_0x11e033[_0x3aa93a]});}},ReactiveData[a46_0x18a202(0x1ea)][a46_0x18a202(0x1e7)]=function(){this['blocked']=!![];},ReactiveData[a46_0x18a202(0x1ea)][a46_0x18a202(0x1e8)]=function(){var _0x317e03=a46_0x18a202;this[_0x317e03(0x1cf)]=![];},Tabulator['prototype']['registerModule'](a46_0x18a202(0x1eb),ReactiveData);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ReactiveData = function ReactiveData(table) {
+	this.table = table; //hold Tabulator object
+	this.data = false;
+	this.blocked = false; //block reactivity while performing update
+	this.origFuncs = {}; // hold original data array functions to allow replacement after data is done with
+	this.currentVersion = 0;
+};
+
+ReactiveData.prototype.watchData = function (data) {
+	var self = this,
+	    pushFunc,
+	    version;
+
+	this.currentVersion++;
+
+	version = this.currentVersion;
+
+	self.unwatchData();
+
+	self.data = data;
+
+	//override array push function
+	self.origFuncs.push = data.push;
+
+	Object.defineProperty(self.data, "push", {
+		enumerable: false,
+		configurable: true,
+		value: function value() {
+			var args = Array.from(arguments);
+
+			if (!self.blocked && version === self.currentVersion) {
+				args.forEach(function (arg) {
+					self.table.rowManager.addRowActual(arg, false);
+				});
+			}
+
+			return self.origFuncs.push.apply(data, arguments);
+		}
+	});
+
+	//override array unshift function
+	self.origFuncs.unshift = data.unshift;
+
+	Object.defineProperty(self.data, "unshift", {
+		enumerable: false,
+		configurable: true,
+		value: function value() {
+			var args = Array.from(arguments);
+
+			if (!self.blocked && version === self.currentVersion) {
+				args.forEach(function (arg) {
+					self.table.rowManager.addRowActual(arg, true);
+				});
+			}
+
+			return self.origFuncs.unshift.apply(data, arguments);
+		}
+	});
+
+	//override array shift function
+	self.origFuncs.shift = data.shift;
+
+	Object.defineProperty(self.data, "shift", {
+		enumerable: false,
+		configurable: true,
+		value: function value() {
+			var row;
+
+			if (!self.blocked && version === self.currentVersion) {
+				if (self.data.length) {
+					row = self.table.rowManager.getRowFromDataObject(self.data[0]);
+
+					if (row) {
+						row.deleteActual();
+					}
+				}
+			}
+
+			return self.origFuncs.shift.call(data);
+		}
+	});
+
+	//override array pop function
+	self.origFuncs.pop = data.pop;
+
+	Object.defineProperty(self.data, "pop", {
+		enumerable: false,
+		configurable: true,
+		value: function value() {
+			var row;
+			if (!self.blocked && version === self.currentVersion) {
+				if (self.data.length) {
+					row = self.table.rowManager.getRowFromDataObject(self.data[self.data.length - 1]);
+
+					if (row) {
+						row.deleteActual();
+					}
+				}
+			}
+			return self.origFuncs.pop.call(data);
+		}
+	});
+
+	//override array splice function
+	self.origFuncs.splice = data.splice;
+
+	Object.defineProperty(self.data, "splice", {
+		enumerable: false,
+		configurable: true,
+		value: function value() {
+			var args = Array.from(arguments),
+			    start = args[0] < 0 ? data.length + args[0] : args[0],
+			    end = args[1],
+			    newRows = args[2] ? args.slice(2) : false,
+			    startRow;
+
+			if (!self.blocked && version === self.currentVersion) {
+
+				//add new rows
+				if (newRows) {
+					startRow = data[start] ? self.table.rowManager.getRowFromDataObject(data[start]) : false;
+
+					if (startRow) {
+						newRows.forEach(function (rowData) {
+							self.table.rowManager.addRowActual(rowData, true, startRow, true);
+						});
+					} else {
+						newRows = newRows.slice().reverse();
+
+						newRows.forEach(function (rowData) {
+							self.table.rowManager.addRowActual(rowData, true, false, true);
+						});
+					}
+				}
+
+				//delete removed rows
+				if (end !== 0) {
+					var oldRows = data.slice(start, typeof args[1] === "undefined" ? args[1] : start + end);
+
+					oldRows.forEach(function (rowData, i) {
+						var row = self.table.rowManager.getRowFromDataObject(rowData);
+
+						if (row) {
+							row.deleteActual(i !== oldRows.length - 1);
+						}
+					});
+				}
+
+				if (newRows || end !== 0) {
+					self.table.rowManager.reRenderInPosition();
+				}
+			}
+
+			return self.origFuncs.splice.apply(data, arguments);
+		}
+	});
+};
+
+ReactiveData.prototype.unwatchData = function () {
+	if (this.data !== false) {
+		for (var key in this.origFuncs) {
+			Object.defineProperty(this.data, key, {
+				enumerable: true,
+				configurable: true,
+				writable: true,
+				value: this.origFuncs.key
+			});
+		}
+	}
+};
+
+ReactiveData.prototype.watchRow = function (row) {
+	var self = this,
+	    data = row.getData();
+
+	this.blocked = true;
+
+	for (var key in data) {
+		this.watchKey(row, data, key);
+	}
+
+	this.blocked = false;
+};
+
+ReactiveData.prototype.watchKey = function (row, data, key) {
+	var self = this,
+	    props = Object.getOwnPropertyDescriptor(data, key),
+	    value = data[key],
+	    version = this.currentVersion;
+
+	Object.defineProperty(data, key, {
+		set: function set(newValue) {
+			value = newValue;
+			if (!self.blocked && version === self.currentVersion) {
+				var update = {};
+				update[key] = newValue;
+				row.updateData(update);
+			}
+
+			if (props.set) {
+				props.set(newValue);
+			}
+		},
+		get: function get() {
+
+			if (props.get) {
+				props.get();
+			}
+
+			return value;
+		}
+	});
+};
+
+ReactiveData.prototype.unwatchRow = function (row) {
+	var data = row.getData();
+
+	for (var key in data) {
+		Object.defineProperty(data, key, {
+			value: data[key]
+		});
+	}
+};
+
+ReactiveData.prototype.block = function () {
+	this.blocked = true;
+};
+
+ReactiveData.prototype.unblock = function () {
+	this.blocked = false;
+};
+
+Tabulator.prototype.registerModule("reactiveData", ReactiveData);

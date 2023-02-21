@@ -1,1 +1,252 @@
-function a5_0x5550(_0x3f4140,_0xf73760){var _0x4e78a4=a5_0x4e78();return a5_0x5550=function(_0x5550f9,_0x41a4c4){_0x5550f9=_0x5550f9-0xe1;var _0x1f9ab6=_0x4e78a4[_0x5550f9];return _0x1f9ab6;},a5_0x5550(_0x3f4140,_0xf73760);}var a5_0x3e8402=a5_0x5550;function a5_0x4e78(){var _0x47761e=['each','#bcPaint-reset','bcPaintCanvas','#ffc107','val','image/png','canvas','charAt','append','offsetX','selected','<div\x20class=\x22col-sm-8\x20col-md-8\x22\x20id=\x22bcPaint-canvas-container\x22></div>','container','about:blank','colors','3012177dAhBiu','width','onmousedown','<img\x20src=\x22','touchstart','\x22\x20alt=\x22Exported\x20Image\x22/>','clientY','body','4742562NYzmDJ','clone','moveTo','lineTo','642045lqbUJn','getContext','<button\x20type=\x22button\x22\x20class=\x22btn\x20btn-secondary\x20btn-sm\x20mr-1\x22\x20id=\x22bcPaint-reset\x22>Clear</button>','find','defaults','stroke','match','.bcPaint-palette-color','#dc3545','#bcPaint-export','touchmove','onmousemove','touches','addEventListener','#28a745','dispatchMouseEvent','paintCanvas','24AMBrcT','#007bff','target','toDataURL','#20c997','canvasPane','DDDDDD','000000','css','strokeStyle','onMouseMove','6729hAXxtH','onmouseup','onMouseUp','touchend','palette','#bcPaint-canvas-container','99640esdNAk','48BElXtF','<div\x20class=\x22col-sm-12\x20col-md-12\x20text-center\x20mt-3\x22\x20id=\x22bcPaint-bottom\x22></div>','clientX','write','setColor','<canvas\x20id=\x22bcPaintCanvas\x22\x20class=\x22border\x20border-dark\x20rounded\x22></canvas>','bcPaint','bottom','canvasContainer','getElementById','<div\x20class=\x22row\x22\x20id=\x22bcPaint-container\x22></div>','ready','extend','#e83e8c','length','offsetY','onMouseDown','attr','3890NMTjso','parent','height','mouseup','document','beginPath','50364EjZmBT','background-color','toHex','removeClass','defaultColor','.selected','toString','#fd7e14','<button\x20type=\x22button\x22\x20class=\x22btn\x20btn-primary\x20btn-sm\x20ml-1\x22\x20id=\x22bcPaint-export\x22><i\x20class=\x22fa\x20fa-download\x22></i>\x20Export</button>','999999','132FQVYcZ','13374nEZTJV','preventDefault','mousemove','click'];a5_0x4e78=function(){return _0x47761e;};return a5_0x4e78();}(function(_0x52f902,_0x27b57f){var _0x569d7a=a5_0x5550,_0x33ee2c=_0x52f902();while(!![]){try{var _0x2d1ea2=parseInt(_0x569d7a(0xec))/0x1+-parseInt(_0x569d7a(0x115))/0x2*(-parseInt(_0x569d7a(0x10b))/0x3)+-parseInt(_0x569d7a(0xf2))/0x4+-parseInt(_0x569d7a(0x135))/0x5*(-parseInt(_0x569d7a(0xf3))/0x6)+-parseInt(_0x569d7a(0x129))/0x7*(parseInt(_0x569d7a(0xe1))/0x8)+parseInt(_0x569d7a(0x116))/0x9*(-parseInt(_0x569d7a(0x105))/0xa)+parseInt(_0x569d7a(0x131))/0xb;if(_0x2d1ea2===_0x27b57f)break;else _0x33ee2c['push'](_0x33ee2c['shift']());}catch(_0x3b575a){_0x33ee2c['push'](_0x33ee2c['shift']());}}}(a5_0x4e78,0xa5d56),$(document)[a5_0x3e8402(0xfe)](function(){var _0x41b3c1=a5_0x3e8402;$(_0x41b3c1(0x130))['on'](_0x41b3c1(0x119),_0x41b3c1(0x13c),function(){var _0x259183=_0x41b3c1;$(this)[_0x259183(0x106)]()[_0x259183(0x138)](_0x259183(0x110))[_0x259183(0x10e)](_0x259183(0x124)),$(this)['addClass'](_0x259183(0x124)),$['fn'][_0x259183(0xf9)][_0x259183(0xf7)]($(this)[_0x259183(0xe9)]('background-color'));}),$(_0x41b3c1(0x130))['on'](_0x41b3c1(0x119),_0x41b3c1(0x11b),function(){var _0x5a2764=_0x41b3c1;$['fn'][_0x5a2764(0xf9)]['clearCanvas']();}),$(_0x41b3c1(0x130))['on'](_0x41b3c1(0x119),_0x41b3c1(0x13e),function(){var _0x3b4aae=_0x41b3c1;$['fn'][_0x3b4aae(0xf9)]['export']();});}),function(_0x52bff7){var _0x4587da=a5_0x3e8402,_0x2a6efb=![],_0x25ad8e={'x':0x0,'y':0x0},_0x1b35bc={'container':_0x52bff7(_0x4587da(0xfd)),'palette':_0x52bff7('<div\x20class=\x22col-sm-4\x20col-md-4\x20bg-light\x20rounded\x20pt-4\x20text-center\x22\x20id=\x22bcPaint-palette\x22><h6\x20class=\x22bg-dark\x20rounded\x20p-3\x20mb-4\x20text-white\x20font-weight-normal\x22>Color\x20Palette</h6></div>'),'color':_0x52bff7('<div\x20class=\x22bcPaint-palette-color\x22></div>'),'canvasContainer':_0x52bff7(_0x4587da(0x125)),'canvasPane':_0x52bff7(_0x4587da(0xf8)),'bottom':_0x52bff7(_0x4587da(0xf4)),'buttonReset':_0x52bff7(_0x4587da(0x137)),'buttonSave':_0x52bff7(_0x4587da(0x113))},_0x8c164b,_0x4750f1;_0x52bff7['fn']['bcPaint']=function(_0x44cf85){return this['each'](function(){var _0x451bb1=a5_0x5550,_0x552519=_0x52bff7(this),_0x5de7ec=_0x52bff7[_0x451bb1(0xff)]({},_0x52bff7['fn']['bcPaint'][_0x451bb1(0x139)],_0x44cf85),_0x190896=_0x552519[_0x451bb1(0x11e)]()[_0x451bb1(0x101)]>0x0?_0x552519['val']():_0x5de7ec[_0x451bb1(0x10f)],_0x549773=_0x1b35bc[_0x451bb1(0x126)][_0x451bb1(0x132)](),_0xb5d46e=_0x1b35bc[_0x451bb1(0xf0)][_0x451bb1(0x132)](),_0x13d810=_0x1b35bc[_0x451bb1(0xfb)][_0x451bb1(0x132)](),_0xdd755c=_0x1b35bc[_0x451bb1(0xe6)][_0x451bb1(0x132)](),_0x4956dc=_0x1b35bc[_0x451bb1(0xfa)][_0x451bb1(0x132)](),_0x1970f7=_0x1b35bc['buttonReset']['clone'](),_0x135bc2=_0x1b35bc['buttonSave']['clone'](),_0x5ce517;_0x552519[_0x451bb1(0x122)](_0x549773),_0x549773[_0x451bb1(0x122)](_0xb5d46e),_0x549773[_0x451bb1(0x122)](_0x13d810),_0x549773['append'](_0x4956dc),_0x13d810[_0x451bb1(0x122)](_0xdd755c),_0x4956dc[_0x451bb1(0x122)](_0x1970f7),_0x4956dc['append'](_0x135bc2),_0x52bff7[_0x451bb1(0x11a)](_0x5de7ec[_0x451bb1(0x128)],function(_0x51aa2f){var _0x574d20=_0x451bb1;_0x5ce517=_0x1b35bc['color'][_0x574d20(0x132)](),_0x5ce517[_0x574d20(0xe9)](_0x574d20(0x10c),_0x52bff7['fn'][_0x574d20(0xf9)][_0x574d20(0x10d)](_0x5de7ec[_0x574d20(0x128)][_0x51aa2f])),_0xb5d46e[_0x574d20(0x122)](_0x5ce517);});var _0x410d50=_0x552519[_0x451bb1(0x138)](_0x451bb1(0x120)),_0x551c10=_0x552519[_0x451bb1(0x138)](_0x451bb1(0xf1));_0x410d50[_0x451bb1(0x104)](_0x451bb1(0x12a),_0x551c10[_0x451bb1(0x12a)]()),_0x410d50[_0x451bb1(0x104)](_0x451bb1(0x107),_0x551c10['height']()),_0x8c164b=document[_0x451bb1(0xfc)](_0x451bb1(0x11c)),_0x4750f1=_0x8c164b[_0x451bb1(0x136)]('2d'),_0x52bff7['fn'][_0x451bb1(0xf9)][_0x451bb1(0xf7)](_0x190896),_0x8c164b[_0x451bb1(0x12b)]=_0x52bff7['fn'][_0x451bb1(0xf9)][_0x451bb1(0x103)],_0x8c164b[_0x451bb1(0xed)]=_0x52bff7['fn']['bcPaint'][_0x451bb1(0xee)],_0x8c164b[_0x451bb1(0x140)]=_0x52bff7['fn'][_0x451bb1(0xf9)][_0x451bb1(0xeb)],_0x8c164b['addEventListener'](_0x451bb1(0x12d),function(_0x4e332a){_0x52bff7['fn']['bcPaint']['dispatchMouseEvent'](_0x4e332a,'mousedown');}),_0x8c164b['addEventListener'](_0x451bb1(0xef),function(_0x3e9405){var _0xbdf20a=_0x451bb1;_0x52bff7['fn'][_0xbdf20a(0xf9)][_0xbdf20a(0x144)](_0x3e9405,_0xbdf20a(0x108));}),_0x8c164b[_0x451bb1(0x142)](_0x451bb1(0x13f),function(_0xc8007e){var _0x431484=_0x451bb1;_0x52bff7['fn'][_0x431484(0xf9)][_0x431484(0x144)](_0xc8007e,_0x431484(0x118));}),document[_0x451bb1(0x130)][_0x451bb1(0x142)](_0x451bb1(0x12d),function(_0x2e63bc){var _0x54b879=_0x451bb1;_0x2e63bc['target']==_0x54b879(0x145)&&_0x2e63bc[_0x54b879(0x117)]();},![]),document[_0x451bb1(0x130)][_0x451bb1(0x142)]('touchend',function(_0x115222){var _0xc8b442=_0x451bb1;_0x115222[_0xc8b442(0xe3)]==_0xc8b442(0x145)&&_0x115222[_0xc8b442(0x117)]();},![]),document[_0x451bb1(0x130)]['addEventListener'](_0x451bb1(0x13f),function(_0x4d4764){var _0x1d9cf4=_0x451bb1;_0x4d4764['target']==_0x1d9cf4(0x145)&&_0x4d4764['preventDefault']();},![]);});},_0x52bff7[_0x4587da(0xff)](!![],_0x52bff7['fn']['bcPaint'],{'dispatchMouseEvent':function(_0x5af7b4,_0x32ad63){var _0x51330a=_0x4587da,_0x415ba1=_0x5af7b4[_0x51330a(0x141)][0x0];_0x415ba1==undefined&&(_0x415ba1={'clientX':0x0,'clientY':0x0});var _0x42a78e=new MouseEvent(_0x32ad63,{'clientX':_0x415ba1[_0x51330a(0xf5)],'clientY':_0x415ba1[_0x51330a(0x12f)]});_0x8c164b['dispatchEvent'](_0x42a78e);},'clearCanvas':function(){_0x8c164b['width']=_0x8c164b['width'];},'onMouseDown':function(_0x4d65d4){var _0x3ee883=_0x4587da;_0x2a6efb=!![],_0x25ad8e['x']=_0x4d65d4[_0x3ee883(0x123)],_0x25ad8e['y']=_0x4d65d4[_0x3ee883(0x102)],_0x4750f1[_0x3ee883(0x10a)](),_0x4750f1[_0x3ee883(0x133)](_0x25ad8e['x'],_0x25ad8e['y']);},'onMouseUp':function(){_0x2a6efb=![];},'onMouseMove':function(_0x3026b8){var _0x30bb1e=_0x4587da;_0x2a6efb&&(_0x4750f1[_0x30bb1e(0x134)](_0x3026b8[_0x30bb1e(0x123)],_0x3026b8['offsetY']),_0x4750f1[_0x30bb1e(0x13a)]());},'setColor':function(_0x2ca48e){var _0x2ddb2c=_0x4587da;_0x4750f1[_0x2ddb2c(0xea)]=_0x52bff7['fn'][_0x2ddb2c(0xf9)][_0x2ddb2c(0x10d)](_0x2ca48e);},'export':function(){var _0x3d6947=_0x4587da,_0x2faef4=_0x8c164b[_0x3d6947(0xe4)](_0x3d6947(0x11f)),_0x17737f=window['open'](_0x3d6947(0x127),'Image');_0x17737f[_0x3d6947(0x109)][_0x3d6947(0xf6)](_0x3d6947(0x12c)+_0x2faef4+_0x3d6947(0x12e));},'toHex':function(_0x2ebf83){var _0x13911f=_0x4587da;if(_0x2ebf83[_0x13911f(0x13b)](/[0-9A-F]{6}|[0-9A-F]{3}$/i))return _0x2ebf83[_0x13911f(0x121)](0x0)==='#'?_0x2ebf83:'#'+_0x2ebf83;else{if(_0x2ebf83[_0x13911f(0x13b)](/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/)){var _0x1d5a69=[parseInt(RegExp['$1'],0xa),parseInt(RegExp['$2'],0xa),parseInt(RegExp['$3'],0xa)],_0x3c7f48=function(_0x794ff9){var _0x3de6a9=_0x13911f;if(_0x794ff9['length']<0x2)for(var _0x4fdcfa=0x0,_0x168532=0x2-_0x794ff9[_0x3de6a9(0x101)];_0x4fdcfa<_0x168532;_0x4fdcfa++){_0x794ff9='0'+_0x794ff9;}return _0x794ff9;};if(_0x1d5a69[_0x13911f(0x101)]===0x3){var _0x59d31e=_0x3c7f48(_0x1d5a69[0x0][_0x13911f(0x111)](0x10)),_0x259172=_0x3c7f48(_0x1d5a69[0x1][_0x13911f(0x111)](0x10)),_0xb0b957=_0x3c7f48(_0x1d5a69[0x2][_0x13911f(0x111)](0x10));return'#'+_0x59d31e+_0x259172+_0xb0b957;}}else return![];}}}),_0x52bff7['fn'][_0x4587da(0xf9)]['defaults']={'defaultColor':_0x4587da(0xe8),'colors':['000000','444444',_0x4587da(0x114),_0x4587da(0xe7),_0x4587da(0x100),_0x4587da(0x13d),_0x4587da(0x112),_0x4587da(0x11d),_0x4587da(0x143),_0x4587da(0xe5),'#6f42c1',_0x4587da(0xe2)],'addColors':[]};}(jQuery));
+/**
+ * Basic Canvas Paint
+ * Copyright (c) 2018-2021 Alexandre Bobkov
+ * Licensed under MIT
+ * @author Alexandre Bobkov
+ * @version 0.7.3
+ */
+
+$(document).ready(function(){
+	$('body').on('click', '.bcPaint-palette-color', function(){
+		$(this).parent().find('.selected').removeClass('selected');
+		$(this).addClass('selected');
+		$.fn.bcPaint.setColor($(this).css('background-color'));
+	});
+
+	$('body').on('click', '#bcPaint-reset', function(){
+		$.fn.bcPaint.clearCanvas();
+	});
+
+	$('body').on('click', '#bcPaint-export', function(){
+		$.fn.bcPaint.export();
+	});
+});
+
+
+(function( $ ) {
+	/**
+	* Private variables
+	**/
+	var isDragged		= false,
+		startPoint		= { x:0, y:0 },
+		templates 		= {
+							container 		: $('<div class="row" id="bcPaint-container"></div>'),
+							palette 		: $('<div class="col-sm-4 col-md-4 bg-light rounded pt-4 text-center" id="bcPaint-palette"><h6 class="bg-dark rounded p-3 mb-4 text-white font-weight-normal">Color Palette</h6></div>'),
+							color 			: $('<div class="bcPaint-palette-color"></div>'),
+							canvasContainer : $('<div class="col-sm-8 col-md-8" id="bcPaint-canvas-container"></div>'),
+							canvasPane 		: $('<canvas id="bcPaintCanvas" class="border border-dark rounded"></canvas>'),
+							bottom 			: $('<div class="col-sm-12 col-md-12 text-center mt-3" id="bcPaint-bottom"></div>'),
+							buttonReset 	: $('<button type="button" class="btn btn-secondary btn-sm mr-1" id="bcPaint-reset">Clear</button>'),
+							buttonSave		: $('<button type="button" class="btn btn-primary btn-sm ml-1" id="bcPaint-export"><i class="fa fa-download"></i> Export</button>')
+						},
+		paintCanvas,
+		paintContext;
+
+	/**
+	* Assembly and initialize plugin
+	**/
+	$.fn.bcPaint = function (options) {
+
+		return this.each(function () {
+			var rootElement 	= $(this),
+				colorSet		= $.extend({}, $.fn.bcPaint.defaults, options),
+				defaultColor	= (rootElement.val().length > 0) ? rootElement.val() : colorSet.defaultColor,
+				container 		= templates.container.clone(),
+				// header 			= templates.header.clone(),
+				palette 		= templates.palette.clone(),
+				canvasContainer = templates.canvasContainer.clone(),
+				canvasPane 		= templates.canvasPane.clone(),
+				bottom 			= templates.bottom.clone(),
+				buttonReset 	= templates.buttonReset.clone(),
+				buttonSave 		= templates.buttonSave.clone(),
+				color;
+
+			// assembly pane
+			rootElement.append(container);
+			// container.append(header);
+			container.append(palette);
+			container.append(canvasContainer);
+			container.append(bottom);
+			// header.append(palette);
+			canvasContainer.append(canvasPane);
+			bottom.append(buttonReset);
+			bottom.append(buttonSave);
+
+			// assembly color palette
+			$.each(colorSet.colors, function (i) {
+        		color = templates.color.clone();
+				color.css('background-color', $.fn.bcPaint.toHex(colorSet.colors[i]));
+				palette.append(color);
+    		});
+
+			// set canvas pane width and height
+			var bcCanvas = rootElement.find('canvas');
+			var bcCanvasContainer = rootElement.find('#bcPaint-canvas-container');
+			bcCanvas.attr('width', bcCanvasContainer.width());
+			bcCanvas.attr('height', bcCanvasContainer.height());
+
+			// get canvas pane context
+			paintCanvas = document.getElementById('bcPaintCanvas');
+			paintContext = paintCanvas.getContext('2d');
+
+			// set color
+			$.fn.bcPaint.setColor(defaultColor);
+
+			// bind mouse actions
+			paintCanvas.onmousedown = $.fn.bcPaint.onMouseDown;
+			paintCanvas.onmouseup = $.fn.bcPaint.onMouseUp;
+			paintCanvas.onmousemove = $.fn.bcPaint.onMouseMove;
+
+			// bind touch actions
+			paintCanvas.addEventListener('touchstart', function(e){
+				$.fn.bcPaint.dispatchMouseEvent(e, 'mousedown');
+			});
+			paintCanvas.addEventListener('touchend', function(e){
+  				$.fn.bcPaint.dispatchMouseEvent(e, 'mouseup');
+			});
+			paintCanvas.addEventListener('touchmove', function(e){
+				$.fn.bcPaint.dispatchMouseEvent(e, 'mousemove');
+			});
+
+			// Prevent scrolling on touch event
+			document.body.addEventListener("touchstart", function (e) {
+			  if (e.target == 'paintCanvas') {
+			    e.preventDefault();
+			  }
+			}, false);
+			document.body.addEventListener("touchend", function (e) {
+			  if (e.target == 'paintCanvas') {
+			    e.preventDefault();
+			  }
+			}, false);
+			document.body.addEventListener("touchmove", function (e) {
+			  if (e.target == 'paintCanvas') {
+			    e.preventDefault();
+			  }
+			}, false);
+		});
+	}
+
+	/**
+	* Extend plugin
+	**/
+	$.extend(true, $.fn.bcPaint, {
+
+		/**
+		* Dispatch mouse event
+		*/
+		dispatchMouseEvent : function(e, mouseAction){
+			var touch = e.touches[0];
+			if(touch == undefined){
+				touch = { clientX : 0, clientY : 0 };
+			}
+			var mouseEvent = new MouseEvent(mouseAction, {
+				clientX: touch.clientX,
+				clientY: touch.clientY
+			});
+			paintCanvas.dispatchEvent(mouseEvent);
+		},
+
+		/**
+		* Remove pane
+		*/
+		clearCanvas : function(){
+			paintCanvas.width = paintCanvas.width;
+		},
+
+		/**
+		* On mouse down
+		**/
+		onMouseDown : function(e){
+			isDragged = true;
+			// get mouse x and y coordinates
+			startPoint.x = e.offsetX;
+			startPoint.y = e.offsetY;
+			// begin context path
+			paintContext.beginPath();
+			paintContext.moveTo(startPoint.x, startPoint.y);
+		},
+
+		/**
+		* On mouse up
+		**/
+		onMouseUp : function() {
+		    isDragged = false;
+		},
+
+		/**
+		* On mouse move
+		**/
+		onMouseMove : function(e){
+			if(isDragged){
+				paintContext.lineTo(e.offsetX, e.offsetY);
+				paintContext.stroke();
+			}
+		},
+
+		/**
+		* Set selected color
+		**/
+		setColor : function(color){
+			paintContext.strokeStyle = $.fn.bcPaint.toHex(color);
+		},
+
+		/**
+		*
+		*/
+		export : function(){
+			var imgData = paintCanvas.toDataURL('image/png');
+			var windowOpen = window.open('about:blank', 'Image');
+			windowOpen.document.write('<img src="' + imgData + '" alt="Exported Image"/>');
+		},
+
+		/**
+		* Convert color to HEX value
+		**/
+		toHex : function(color) {
+		    // check if color is standard hex value
+		    if (color.match(/[0-9A-F]{6}|[0-9A-F]{3}$/i)) {
+		        return (color.charAt(0) === "#") ? color : ("#" + color);
+		    // check if color is RGB value -> convert to hex
+		    } else if (color.match(/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/)) {
+		        var c = ([parseInt(RegExp.$1, 10), parseInt(RegExp.$2, 10), parseInt(RegExp.$3, 10)]),
+		            pad = function (str) {
+		                if (str.length < 2) {
+		                    for (var i = 0, len = 2 - str.length; i < len; i++) {
+		                        str = '0' + str;
+		                    }
+		                }
+		                return str;
+		            };
+		        if (c.length === 3) {
+		            var r = pad(c[0].toString(16)),
+		                g = pad(c[1].toString(16)),
+		                b = pad(c[2].toString(16));
+		            return '#' + r + g + b;
+		        }
+		    // else do nothing
+		    } else {
+		        return false;
+		    }
+		}
+
+	});
+
+	/**
+	* Default color set
+	**/
+	$.fn.bcPaint.defaults = {
+        // default color
+        defaultColor : '000000',
+
+        // default color set
+        colors : [
+					'000000', '444444', '999999', 'DDDDDD', '#e83e8c', '#dc3545',
+					'#fd7e14', '#ffc107', '#28a745', '#20c997', '#6f42c1', '#007bff'
+        ],
+
+        // extend default set
+        addColors : [],
+    };
+
+})(jQuery);

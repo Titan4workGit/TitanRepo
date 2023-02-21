@@ -1,1 +1,365 @@
-function a56_0x3819(){var _0x111030=['getComponent','metaKey','586593qyPLEE','select','getData','getSelectedData','rows','registerModule','getDisplayRows','_row','1447252jETwhJ','slice','length','tabulator-unselectable','getElement','isRowSelected','6690yVvoCF','tabulator-selected','selectableRollingSelection','mousedown','shiftKey','splice','getCurrentCell','registerRowSelectCheckbox','711kXPeMr','_selectRow','selectedRows','_clearSelection','indexOf','clearSelectionData','lastClickedRow','getDisplayRowIndex','undefined','toggleRow','checked','findIndex','symbol','indeterminate','8511640YUAinv','getSelectedRows','constructor','headerCheckboxElement','edit','selecting','highlight','remove','body','mouseout','rowDeselected','Selection\x20Error\x20-\x20No\x20such\x20row\x20found,\x20ignoring\x20selection:','table','registerHeaderSelectCheckbox','selectRows','rowManager','selectable','warn','mouseup','rowSelected','modExists','ctrlKey','findRow','70056QWNyTj','addEventListener','add','4BKYQzv','initializeRow','Deselection\x20Error\x20-\x20No\x20such\x20row\x20found,\x20ignoring\x20selection:','tabulator-selectable','selectableCheck','_rowSelectionChanged','options','33QxOfhf','rowSelectionChanged','classList','_deselectRow','2653QMhoFo','modules','call','selected','click','string','1876265mPvqwV','checkboxEl','unshift','prototype','function','push','removeEventListener','deselectRows','isArray','selectPrev','353838xllrQi','forEach'];a56_0x3819=function(){return _0x111030;};return a56_0x3819();}var a56_0x471f27=a56_0x4cc1;(function(_0x4a65f9,_0x1c5623){var _0x35129f=a56_0x4cc1,_0x5050b0=_0x4a65f9();while(!![]){try{var _0x51154c=-parseInt(_0x35129f(0xff))/0x1+-parseInt(_0x35129f(0x107))/0x2+-parseInt(_0x35129f(0xfb))/0x3+-parseInt(_0x35129f(0x13d))/0x4*(-parseInt(_0x35129f(0x14e))/0x5)+-parseInt(_0x35129f(0x10d))/0x6*(parseInt(_0x35129f(0x148))/0x7)+-parseInt(_0x35129f(0x13a))/0x8*(parseInt(_0x35129f(0x115))/0x9)+parseInt(_0x35129f(0x123))/0xa*(parseInt(_0x35129f(0x144))/0xb);if(_0x51154c===_0x1c5623)break;else _0x5050b0['push'](_0x5050b0['shift']());}catch(_0x3f89fd){_0x5050b0['push'](_0x5050b0['shift']());}}}(a56_0x3819,0x5e490));var _typeof=typeof Symbol===a56_0x471f27(0x152)&&typeof Symbol['iterator']===a56_0x471f27(0x121)?function(_0x5f2d2c){return typeof _0x5f2d2c;}:function(_0x8c5fa9){var _0x41fd1e=a56_0x471f27;return _0x8c5fa9&&typeof Symbol==='function'&&_0x8c5fa9[_0x41fd1e(0x125)]===Symbol&&_0x8c5fa9!==Symbol['prototype']?'symbol':typeof _0x8c5fa9;},SelectRow=function SelectRow(_0x5e2f21){var _0x1e87da=a56_0x471f27;this[_0x1e87da(0x12f)]=_0x5e2f21,this[_0x1e87da(0x128)]=![],this['lastClickedRow']=![],this[_0x1e87da(0xfa)]=[],this[_0x1e87da(0x117)]=[],this['headerCheckboxElement']=null;};function a56_0x4cc1(_0x2ed0c8,_0x11609f){var _0x3819e7=a56_0x3819();return a56_0x4cc1=function(_0x4cc1fc,_0x5751f6){_0x4cc1fc=_0x4cc1fc-0xfa;var _0xfd383c=_0x3819e7[_0x4cc1fc];return _0xfd383c;},a56_0x4cc1(_0x2ed0c8,_0x11609f);}SelectRow['prototype'][a56_0x471f27(0x11a)]=function(_0x5f24ab){var _0x59c6c3=a56_0x471f27;this[_0x59c6c3(0x128)]=![],this[_0x59c6c3(0x11b)]=![],this['selectPrev']=[],this['selectedRows']=[],!_0x5f24ab&&this[_0x59c6c3(0x142)]();},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x13e)]=function(_0x523fe3){var _0x3fd87f=a56_0x471f27,_0x4a9ab8=this,_0x270d85=_0x523fe3['getElement'](),_0x5c1d1e=function _0x2dcc7c(){var _0x6d85da=a56_0x4cc1;setTimeout(function(){_0x4a9ab8['selecting']=![];},0x32),document['body'][_0x6d85da(0x154)](_0x6d85da(0x135),_0x2dcc7c);};_0x523fe3[_0x3fd87f(0x149)][_0x3fd87f(0x100)]={'selected':![]},_0x4a9ab8[_0x3fd87f(0x12f)]['options'][_0x3fd87f(0x141)][_0x3fd87f(0x14a)](this[_0x3fd87f(0x12f)],_0x523fe3[_0x3fd87f(0xfd)]())?(_0x270d85[_0x3fd87f(0x146)]['add'](_0x3fd87f(0x140)),_0x270d85[_0x3fd87f(0x146)][_0x3fd87f(0x12a)]('tabulator-unselectable'),_0x4a9ab8[_0x3fd87f(0x12f)]['options'][_0x3fd87f(0x133)]&&_0x4a9ab8[_0x3fd87f(0x12f)]['options'][_0x3fd87f(0x133)]!=_0x3fd87f(0x129)&&(_0x4a9ab8[_0x3fd87f(0x12f)][_0x3fd87f(0x143)]['selectableRangeMode']===_0x3fd87f(0x14c)?_0x270d85[_0x3fd87f(0x13b)](_0x3fd87f(0x14c),function(_0x216489){var _0x6e4f91=_0x3fd87f;if(_0x216489[_0x6e4f91(0x111)]){_0x4a9ab8[_0x6e4f91(0x12f)][_0x6e4f91(0x118)](),_0x4a9ab8[_0x6e4f91(0x11b)]=_0x4a9ab8[_0x6e4f91(0x11b)]||_0x523fe3;var _0x9a5477=_0x4a9ab8[_0x6e4f91(0x12f)]['rowManager'][_0x6e4f91(0x11c)](_0x4a9ab8[_0x6e4f91(0x11b)]),_0x1e8070=_0x4a9ab8[_0x6e4f91(0x12f)][_0x6e4f91(0x132)][_0x6e4f91(0x11c)](_0x523fe3),_0x4b2b59=_0x9a5477<=_0x1e8070?_0x9a5477:_0x1e8070,_0x1d2d8d=_0x9a5477>=_0x1e8070?_0x9a5477:_0x1e8070,_0x3917fe=_0x4a9ab8['table'][_0x6e4f91(0x132)][_0x6e4f91(0x105)]()[_0x6e4f91(0x108)](0x0),_0x3c22f4=_0x3917fe[_0x6e4f91(0x112)](_0x4b2b59,_0x1d2d8d-_0x4b2b59+0x1);_0x216489[_0x6e4f91(0x138)]||_0x216489['metaKey']?(_0x3c22f4[_0x6e4f91(0xfc)](function(_0x31f55f){var _0x44d124=_0x6e4f91;_0x31f55f!==_0x4a9ab8[_0x44d124(0x11b)]&&(_0x4a9ab8[_0x44d124(0x12f)][_0x44d124(0x143)][_0x44d124(0x133)]!==!![]&&!_0x4a9ab8[_0x44d124(0x10c)](_0x523fe3)?_0x4a9ab8['selectedRows'][_0x44d124(0x109)]<_0x4a9ab8[_0x44d124(0x12f)][_0x44d124(0x143)][_0x44d124(0x133)]&&_0x4a9ab8[_0x44d124(0x11e)](_0x31f55f):_0x4a9ab8[_0x44d124(0x11e)](_0x31f55f));}),_0x4a9ab8[_0x6e4f91(0x11b)]=_0x523fe3):(_0x4a9ab8[_0x6e4f91(0x155)](),_0x4a9ab8['table'][_0x6e4f91(0x143)][_0x6e4f91(0x133)]!==!![]&&(_0x3c22f4['length']>_0x4a9ab8[_0x6e4f91(0x12f)][_0x6e4f91(0x143)][_0x6e4f91(0x133)]&&(_0x3c22f4=_0x3c22f4['slice'](0x0,_0x4a9ab8[_0x6e4f91(0x12f)][_0x6e4f91(0x143)][_0x6e4f91(0x133)]))),_0x4a9ab8[_0x6e4f91(0x131)](_0x3c22f4)),_0x4a9ab8['table'][_0x6e4f91(0x118)]();}else _0x216489[_0x6e4f91(0x138)]||_0x216489[_0x6e4f91(0xfe)]?(_0x4a9ab8['toggleRow'](_0x523fe3),_0x4a9ab8[_0x6e4f91(0x11b)]=_0x523fe3):(_0x4a9ab8[_0x6e4f91(0x155)](),_0x4a9ab8['selectRows'](_0x523fe3),_0x4a9ab8[_0x6e4f91(0x11b)]=_0x523fe3);}):(_0x270d85[_0x3fd87f(0x13b)](_0x3fd87f(0x14c),function(_0x586a15){var _0x2f7083=_0x3fd87f;(!_0x4a9ab8['table'][_0x2f7083(0x137)](_0x2f7083(0x127))||!_0x4a9ab8[_0x2f7083(0x12f)][_0x2f7083(0x149)][_0x2f7083(0x127)][_0x2f7083(0x113)]())&&_0x4a9ab8[_0x2f7083(0x12f)]['_clearSelection'](),!_0x4a9ab8[_0x2f7083(0x128)]&&_0x4a9ab8[_0x2f7083(0x11e)](_0x523fe3);}),_0x270d85[_0x3fd87f(0x13b)](_0x3fd87f(0x110),function(_0x44b50a){var _0x22d208=_0x3fd87f;if(_0x44b50a['shiftKey'])return _0x4a9ab8['table'][_0x22d208(0x118)](),_0x4a9ab8[_0x22d208(0x128)]=!![],_0x4a9ab8[_0x22d208(0xfa)]=[],document[_0x22d208(0x12b)]['addEventListener'](_0x22d208(0x135),_0x5c1d1e),document['body']['addEventListener']('keyup',_0x5c1d1e),_0x4a9ab8[_0x22d208(0x11e)](_0x523fe3),![];}),_0x270d85[_0x3fd87f(0x13b)]('mouseenter',function(_0x463182){var _0x58f727=_0x3fd87f;_0x4a9ab8[_0x58f727(0x128)]&&(_0x4a9ab8[_0x58f727(0x12f)]['_clearSelection'](),_0x4a9ab8[_0x58f727(0x11e)](_0x523fe3),_0x4a9ab8[_0x58f727(0xfa)][0x1]==_0x523fe3&&_0x4a9ab8[_0x58f727(0x11e)](_0x4a9ab8[_0x58f727(0xfa)][0x0]));}),_0x270d85[_0x3fd87f(0x13b)](_0x3fd87f(0x12c),function(_0x208dd5){var _0x5360dd=_0x3fd87f;_0x4a9ab8['selecting']&&(_0x4a9ab8[_0x5360dd(0x12f)][_0x5360dd(0x118)](),_0x4a9ab8[_0x5360dd(0xfa)][_0x5360dd(0x150)](_0x523fe3));})))):(_0x270d85[_0x3fd87f(0x146)][_0x3fd87f(0x13c)](_0x3fd87f(0x10a)),_0x270d85[_0x3fd87f(0x146)][_0x3fd87f(0x12a)]('tabulator-selectable'));},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x11e)]=function(_0x10ac0a){var _0x21e1b9=a56_0x471f27;this[_0x21e1b9(0x12f)][_0x21e1b9(0x143)][_0x21e1b9(0x141)][_0x21e1b9(0x14a)](this[_0x21e1b9(0x12f)],_0x10ac0a['getComponent']())&&(_0x10ac0a['modules'][_0x21e1b9(0x100)]&&_0x10ac0a['modules'][_0x21e1b9(0x100)][_0x21e1b9(0x14b)]?this[_0x21e1b9(0x147)](_0x10ac0a):this[_0x21e1b9(0x116)](_0x10ac0a));},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x131)]=function(_0x3ad11e){var _0x539a57=a56_0x471f27,_0x3f9c8a=this,_0x303732;switch(typeof _0x3ad11e==='undefined'?_0x539a57(0x11d):_typeof(_0x3ad11e)){case'undefined':this[_0x539a57(0x12f)][_0x539a57(0x132)][_0x539a57(0x103)][_0x539a57(0xfc)](function(_0x19e462){var _0x30f675=_0x539a57;_0x3f9c8a[_0x30f675(0x116)](_0x19e462,!![],!![]);}),this[_0x539a57(0x142)]();break;case _0x539a57(0x14d):_0x303732=this[_0x539a57(0x12f)]['rowManager'][_0x539a57(0x139)](_0x3ad11e);_0x303732?this[_0x539a57(0x116)](_0x303732,!![],!![]):this[_0x539a57(0x12f)][_0x539a57(0x132)]['getRows'](_0x3ad11e)[_0x539a57(0xfc)](function(_0x12bb13){_0x3f9c8a['_selectRow'](_0x12bb13,!![],!![]);});this[_0x539a57(0x142)]();break;default:Array['isArray'](_0x3ad11e)?(_0x3ad11e[_0x539a57(0xfc)](function(_0x4308d8){var _0x1407ff=_0x539a57;_0x3f9c8a[_0x1407ff(0x116)](_0x4308d8,!![],!![]);}),this[_0x539a57(0x142)]()):this['_selectRow'](_0x3ad11e,![],!![]);break;}},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x116)]=function(_0x2ce7c3,_0x553338,_0x21ae80){var _0x11aa89=a56_0x471f27,_0x58f27e;if(!isNaN(this['table'][_0x11aa89(0x143)][_0x11aa89(0x133)])&&this['table'][_0x11aa89(0x143)]['selectable']!==!![]&&!_0x21ae80){if(this[_0x11aa89(0x117)][_0x11aa89(0x109)]>=this['table']['options'][_0x11aa89(0x133)]){if(this[_0x11aa89(0x12f)]['options'][_0x11aa89(0x10f)])this[_0x11aa89(0x147)](this[_0x11aa89(0x117)][0x0]);else return![];}}var _0x38c14c=this[_0x11aa89(0x12f)][_0x11aa89(0x132)][_0x11aa89(0x139)](_0x2ce7c3);_0x38c14c?this[_0x11aa89(0x117)][_0x11aa89(0x119)](_0x38c14c)==-0x1&&(!_0x38c14c[_0x11aa89(0x149)][_0x11aa89(0x100)]&&(_0x38c14c[_0x11aa89(0x149)]['select']={}),_0x38c14c[_0x11aa89(0x149)]['select'][_0x11aa89(0x14b)]=!![],_0x38c14c[_0x11aa89(0x149)][_0x11aa89(0x100)]['checkboxEl']&&(_0x38c14c[_0x11aa89(0x149)][_0x11aa89(0x100)][_0x11aa89(0x14f)][_0x11aa89(0x11f)]=!![]),_0x38c14c[_0x11aa89(0x10b)]()[_0x11aa89(0x146)][_0x11aa89(0x13c)]('tabulator-selected'),this[_0x11aa89(0x117)][_0x11aa89(0x153)](_0x38c14c),!_0x553338&&(this['table'][_0x11aa89(0x143)][_0x11aa89(0x136)]['call'](this['table'],_0x38c14c[_0x11aa89(0xfd)]()),this[_0x11aa89(0x142)]())):!_0x553338&&console[_0x11aa89(0x134)](_0x11aa89(0x12e)+_0x2ce7c3);},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x10c)]=function(_0x309c5b){var _0x4f53b3=a56_0x471f27;return this[_0x4f53b3(0x117)][_0x4f53b3(0x119)](_0x309c5b)!==-0x1;},SelectRow['prototype']['deselectRows']=function(_0x213935){var _0x2ed3ad=a56_0x471f27,_0x44088d=this,_0x22e70e;if(typeof _0x213935=='undefined'){_0x22e70e=_0x44088d['selectedRows']['length'];for(var _0xeacec=0x0;_0xeacec<_0x22e70e;_0xeacec++){_0x44088d[_0x2ed3ad(0x147)](_0x44088d[_0x2ed3ad(0x117)][0x0],!![]);}_0x44088d[_0x2ed3ad(0x142)]();}else Array[_0x2ed3ad(0x156)](_0x213935)?(_0x213935['forEach'](function(_0x432daf){var _0x21f8dc=_0x2ed3ad;_0x44088d[_0x21f8dc(0x147)](_0x432daf,!![]);}),_0x44088d[_0x2ed3ad(0x142)]()):_0x44088d[_0x2ed3ad(0x147)](_0x213935);},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x147)]=function(_0x1a84bb,_0x5580b5){var _0xc2c0d5=a56_0x471f27,_0x54371e=this,_0x564326=_0x54371e['table'][_0xc2c0d5(0x132)][_0xc2c0d5(0x139)](_0x1a84bb),_0x4bd4b2;_0x564326?(_0x4bd4b2=_0x54371e[_0xc2c0d5(0x117)][_0xc2c0d5(0x120)](function(_0x2bbd4a){return _0x2bbd4a==_0x564326;}),_0x4bd4b2>-0x1&&(!_0x564326['modules'][_0xc2c0d5(0x100)]&&(_0x564326[_0xc2c0d5(0x149)][_0xc2c0d5(0x100)]={}),_0x564326[_0xc2c0d5(0x149)][_0xc2c0d5(0x100)][_0xc2c0d5(0x14b)]=![],_0x564326['modules'][_0xc2c0d5(0x100)]['checkboxEl']&&(_0x564326[_0xc2c0d5(0x149)][_0xc2c0d5(0x100)][_0xc2c0d5(0x14f)][_0xc2c0d5(0x11f)]=![]),_0x564326[_0xc2c0d5(0x10b)]()[_0xc2c0d5(0x146)][_0xc2c0d5(0x12a)](_0xc2c0d5(0x10e)),_0x54371e[_0xc2c0d5(0x117)][_0xc2c0d5(0x112)](_0x4bd4b2,0x1),!_0x5580b5&&(_0x54371e['table']['options'][_0xc2c0d5(0x12d)][_0xc2c0d5(0x14a)](this[_0xc2c0d5(0x12f)],_0x564326[_0xc2c0d5(0xfd)]()),_0x54371e['_rowSelectionChanged']()))):!_0x5580b5&&console['warn'](_0xc2c0d5(0x13f)+_0x1a84bb);},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x102)]=function(){var _0xa0573f=a56_0x471f27,_0x53b8eb=[];return this[_0xa0573f(0x117)][_0xa0573f(0xfc)](function(_0x5ca613){var _0x465602=_0xa0573f;_0x53b8eb['push'](_0x5ca613[_0x465602(0x101)]());}),_0x53b8eb;},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x124)]=function(){var _0x486f46=a56_0x471f27,_0x26d0ae=[];return this[_0x486f46(0x117)]['forEach'](function(_0x3046ce){var _0x1cf94f=_0x486f46;_0x26d0ae[_0x1cf94f(0x153)](_0x3046ce['getComponent']());}),_0x26d0ae;},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x142)]=function(){var _0x5abd7e=a56_0x471f27;if(this['headerCheckboxElement']){if(this['selectedRows'][_0x5abd7e(0x109)]===0x0)this[_0x5abd7e(0x126)]['checked']=![],this['headerCheckboxElement'][_0x5abd7e(0x122)]=![];else this['table'][_0x5abd7e(0x132)][_0x5abd7e(0x103)][_0x5abd7e(0x109)]===this[_0x5abd7e(0x117)][_0x5abd7e(0x109)]?(this['headerCheckboxElement'][_0x5abd7e(0x11f)]=!![],this[_0x5abd7e(0x126)][_0x5abd7e(0x122)]=![]):(this['headerCheckboxElement'][_0x5abd7e(0x122)]=!![],this[_0x5abd7e(0x126)][_0x5abd7e(0x11f)]=![]);}this[_0x5abd7e(0x12f)]['options'][_0x5abd7e(0x145)][_0x5abd7e(0x14a)](this['table'],this[_0x5abd7e(0x102)](),this['getSelectedRows']());},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x114)]=function(_0x203426,_0x5a1c73){var _0x4d7604=a56_0x471f27;!_0x203426[_0x4d7604(0x106)][_0x4d7604(0x149)][_0x4d7604(0x100)]&&(_0x203426[_0x4d7604(0x106)][_0x4d7604(0x149)]['select']={}),_0x203426['_row'][_0x4d7604(0x149)][_0x4d7604(0x100)][_0x4d7604(0x14f)]=_0x5a1c73;},SelectRow[a56_0x471f27(0x151)][a56_0x471f27(0x130)]=function(_0x278aff){var _0x3326e2=a56_0x471f27;this[_0x3326e2(0x126)]=_0x278aff;},Tabulator[a56_0x471f27(0x151)][a56_0x471f27(0x104)]('selectRow',SelectRow);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var SelectRow = function SelectRow(table) {
+	this.table = table; //hold Tabulator object
+	this.selecting = false; //flag selecting in progress
+	this.lastClickedRow = false; //last clicked row
+	this.selectPrev = []; //hold previously selected element for drag drop selection
+	this.selectedRows = []; //hold selected rows
+	this.headerCheckboxElement = null; // hold header select element
+};
+
+SelectRow.prototype.clearSelectionData = function (silent) {
+	this.selecting = false;
+	this.lastClickedRow = false;
+	this.selectPrev = [];
+	this.selectedRows = [];
+
+	if (!silent) {
+		this._rowSelectionChanged();
+	}
+};
+
+SelectRow.prototype.initializeRow = function (row) {
+	var self = this,
+	    element = row.getElement();
+
+	// trigger end of row selection
+	var endSelect = function endSelect() {
+
+		setTimeout(function () {
+			self.selecting = false;
+		}, 50);
+
+		document.body.removeEventListener("mouseup", endSelect);
+	};
+
+	row.modules.select = { selected: false };
+
+	//set row selection class
+	if (self.table.options.selectableCheck.call(this.table, row.getComponent())) {
+		element.classList.add("tabulator-selectable");
+		element.classList.remove("tabulator-unselectable");
+
+		if (self.table.options.selectable && self.table.options.selectable != "highlight") {
+			if (self.table.options.selectableRangeMode === "click") {
+				element.addEventListener("click", function (e) {
+					if (e.shiftKey) {
+						self.table._clearSelection();
+						self.lastClickedRow = self.lastClickedRow || row;
+
+						var lastClickedRowIdx = self.table.rowManager.getDisplayRowIndex(self.lastClickedRow);
+						var rowIdx = self.table.rowManager.getDisplayRowIndex(row);
+
+						var fromRowIdx = lastClickedRowIdx <= rowIdx ? lastClickedRowIdx : rowIdx;
+						var toRowIdx = lastClickedRowIdx >= rowIdx ? lastClickedRowIdx : rowIdx;
+
+						var rows = self.table.rowManager.getDisplayRows().slice(0);
+						var toggledRows = rows.splice(fromRowIdx, toRowIdx - fromRowIdx + 1);
+
+						if (e.ctrlKey || e.metaKey) {
+							toggledRows.forEach(function (toggledRow) {
+								if (toggledRow !== self.lastClickedRow) {
+
+									if (self.table.options.selectable !== true && !self.isRowSelected(row)) {
+										if (self.selectedRows.length < self.table.options.selectable) {
+											self.toggleRow(toggledRow);
+										}
+									} else {
+										self.toggleRow(toggledRow);
+									}
+								}
+							});
+							self.lastClickedRow = row;
+						} else {
+							self.deselectRows();
+
+							if (self.table.options.selectable !== true) {
+								if (toggledRows.length > self.table.options.selectable) {
+									toggledRows = toggledRows.slice(0, self.table.options.selectable);
+								}
+							}
+
+							self.selectRows(toggledRows);
+						}
+						self.table._clearSelection();
+					} else if (e.ctrlKey || e.metaKey) {
+						self.toggleRow(row);
+						self.lastClickedRow = row;
+					} else {
+						self.deselectRows();
+						self.selectRows(row);
+						self.lastClickedRow = row;
+					}
+				});
+			} else {
+				element.addEventListener("click", function (e) {
+					if (!self.table.modExists("edit") || !self.table.modules.edit.getCurrentCell()) {
+						self.table._clearSelection();
+					}
+
+					if (!self.selecting) {
+						self.toggleRow(row);
+					}
+				});
+
+				element.addEventListener("mousedown", function (e) {
+					if (e.shiftKey) {
+						self.table._clearSelection();
+
+						self.selecting = true;
+
+						self.selectPrev = [];
+
+						document.body.addEventListener("mouseup", endSelect);
+						document.body.addEventListener("keyup", endSelect);
+
+						self.toggleRow(row);
+
+						return false;
+					}
+				});
+
+				element.addEventListener("mouseenter", function (e) {
+					if (self.selecting) {
+						self.table._clearSelection();
+						self.toggleRow(row);
+
+						if (self.selectPrev[1] == row) {
+							self.toggleRow(self.selectPrev[0]);
+						}
+					}
+				});
+
+				element.addEventListener("mouseout", function (e) {
+					if (self.selecting) {
+						self.table._clearSelection();
+						self.selectPrev.unshift(row);
+					}
+				});
+			}
+		}
+	} else {
+		element.classList.add("tabulator-unselectable");
+		element.classList.remove("tabulator-selectable");
+	}
+};
+
+//toggle row selection
+SelectRow.prototype.toggleRow = function (row) {
+	if (this.table.options.selectableCheck.call(this.table, row.getComponent())) {
+		if (row.modules.select && row.modules.select.selected) {
+			this._deselectRow(row);
+		} else {
+			this._selectRow(row);
+		}
+	}
+};
+
+//select a number of rows
+SelectRow.prototype.selectRows = function (rows) {
+	var _this = this;
+
+	var rowMatch;
+
+	switch (typeof rows === "undefined" ? "undefined" : _typeof(rows)) {
+		case "undefined":
+			this.table.rowManager.rows.forEach(function (row) {
+				_this._selectRow(row, true, true);
+			});
+
+			this._rowSelectionChanged();
+			break;
+
+		case "string":
+
+			rowMatch = this.table.rowManager.findRow(rows);
+
+			if (rowMatch) {
+				this._selectRow(rowMatch, true, true);
+			} else {
+				this.table.rowManager.getRows(rows).forEach(function (row) {
+					_this._selectRow(row, true, true);
+				});
+			}
+
+			this._rowSelectionChanged();
+			break;
+
+		default:
+			if (Array.isArray(rows)) {
+				rows.forEach(function (row) {
+					_this._selectRow(row, true, true);
+				});
+
+				this._rowSelectionChanged();
+			} else {
+				this._selectRow(rows, false, true);
+			}
+			break;
+	}
+};
+
+//select an individual row
+SelectRow.prototype._selectRow = function (rowInfo, silent, force) {
+	var index;
+
+	//handle max row count
+	if (!isNaN(this.table.options.selectable) && this.table.options.selectable !== true && !force) {
+		if (this.selectedRows.length >= this.table.options.selectable) {
+			if (this.table.options.selectableRollingSelection) {
+				this._deselectRow(this.selectedRows[0]);
+			} else {
+				return false;
+			}
+		}
+	}
+
+	var row = this.table.rowManager.findRow(rowInfo);
+
+	if (row) {
+		if (this.selectedRows.indexOf(row) == -1) {
+			if (!row.modules.select) {
+				row.modules.select = {};
+			}
+
+			row.modules.select.selected = true;
+			if (row.modules.select.checkboxEl) {
+				row.modules.select.checkboxEl.checked = true;
+			}
+			row.getElement().classList.add("tabulator-selected");
+
+			this.selectedRows.push(row);
+
+			if (!silent) {
+				this.table.options.rowSelected.call(this.table, row.getComponent());
+				this._rowSelectionChanged();
+			}
+		}
+	} else {
+		if (!silent) {
+			console.warn("Selection Error - No such row found, ignoring selection:" + rowInfo);
+		}
+	}
+};
+
+SelectRow.prototype.isRowSelected = function (row) {
+	return this.selectedRows.indexOf(row) !== -1;
+};
+
+//deselect a number of rows
+SelectRow.prototype.deselectRows = function (rows) {
+	var self = this,
+	    rowCount;
+
+	if (typeof rows == "undefined") {
+
+		rowCount = self.selectedRows.length;
+
+		for (var i = 0; i < rowCount; i++) {
+			self._deselectRow(self.selectedRows[0], true);
+		}
+
+		self._rowSelectionChanged();
+	} else {
+		if (Array.isArray(rows)) {
+			rows.forEach(function (row) {
+				self._deselectRow(row, true);
+			});
+
+			self._rowSelectionChanged();
+		} else {
+			self._deselectRow(rows);
+		}
+	}
+};
+
+//deselect an individual row
+SelectRow.prototype._deselectRow = function (rowInfo, silent) {
+	var self = this,
+	    row = self.table.rowManager.findRow(rowInfo),
+	    index;
+
+	if (row) {
+		index = self.selectedRows.findIndex(function (selectedRow) {
+			return selectedRow == row;
+		});
+
+		if (index > -1) {
+
+			if (!row.modules.select) {
+				row.modules.select = {};
+			}
+
+			row.modules.select.selected = false;
+			if (row.modules.select.checkboxEl) {
+				row.modules.select.checkboxEl.checked = false;
+			}
+			row.getElement().classList.remove("tabulator-selected");
+			self.selectedRows.splice(index, 1);
+
+			if (!silent) {
+				self.table.options.rowDeselected.call(this.table, row.getComponent());
+				self._rowSelectionChanged();
+			}
+		}
+	} else {
+		if (!silent) {
+			console.warn("Deselection Error - No such row found, ignoring selection:" + rowInfo);
+		}
+	}
+};
+
+SelectRow.prototype.getSelectedData = function () {
+	var data = [];
+
+	this.selectedRows.forEach(function (row) {
+		data.push(row.getData());
+	});
+
+	return data;
+};
+
+SelectRow.prototype.getSelectedRows = function () {
+
+	var rows = [];
+
+	this.selectedRows.forEach(function (row) {
+		rows.push(row.getComponent());
+	});
+
+	return rows;
+};
+
+SelectRow.prototype._rowSelectionChanged = function () {
+	if (this.headerCheckboxElement) {
+		if (this.selectedRows.length === 0) {
+			this.headerCheckboxElement.checked = false;
+			this.headerCheckboxElement.indeterminate = false;
+		} else if (this.table.rowManager.rows.length === this.selectedRows.length) {
+			this.headerCheckboxElement.checked = true;
+			this.headerCheckboxElement.indeterminate = false;
+		} else {
+			this.headerCheckboxElement.indeterminate = true;
+			this.headerCheckboxElement.checked = false;
+		}
+	}
+
+	this.table.options.rowSelectionChanged.call(this.table, this.getSelectedData(), this.getSelectedRows());
+};
+
+SelectRow.prototype.registerRowSelectCheckbox = function (row, element) {
+	if (!row._row.modules.select) {
+		row._row.modules.select = {};
+	}
+
+	row._row.modules.select.checkboxEl = element;
+};
+
+SelectRow.prototype.registerHeaderSelectCheckbox = function (element) {
+	this.headerCheckboxElement = element;
+};
+
+Tabulator.prototype.registerModule("selectRow", SelectRow);

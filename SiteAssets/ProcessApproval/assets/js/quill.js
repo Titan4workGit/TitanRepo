@@ -1,1 +1,10127 @@
-(function(_0x4c402e,_0x1cd133){var _0x47342c=a9_0x50c4,_0x1b424f=_0x4c402e();while(!![]){try{var _0x50200a=parseInt(_0x47342c(0x2fa))/0x1+-parseInt(_0x47342c(0x442))/0x2*(parseInt(_0x47342c(0x2d0))/0x3)+-parseInt(_0x47342c(0x370))/0x4+-parseInt(_0x47342c(0x330))/0x5*(parseInt(_0x47342c(0x354))/0x6)+-parseInt(_0x47342c(0x3cb))/0x7*(parseInt(_0x47342c(0x1a4))/0x8)+-parseInt(_0x47342c(0x2b8))/0x9+-parseInt(_0x47342c(0x43b))/0xa*(-parseInt(_0x47342c(0x234))/0xb);if(_0x50200a===_0x1cd133)break;else _0x1b424f['push'](_0x1b424f['shift']());}catch(_0x4bf527){_0x1b424f['push'](_0x1b424f['shift']());}}}(a9_0x4e86,0xef955),function webpackUniversalModuleDefinition(_0x55a4b1,_0x2503a5){var _0x15d03c=a9_0x50c4;if(typeof exports===_0x15d03c(0x2e1)&&typeof module===_0x15d03c(0x2e1))module[_0x15d03c(0x426)]=_0x2503a5();else{if(typeof define==='function'&&define['amd'])define([],_0x2503a5);else{if(typeof exports===_0x15d03c(0x2e1))exports[_0x15d03c(0x3fb)]=_0x2503a5();else _0x55a4b1[_0x15d03c(0x3fb)]=_0x2503a5();}}}(this,function(){return function(_0x18609a){var _0x37f89f={};function _0x362d2d(_0x28a8cd){var _0x13f57c=a9_0x50c4;if(_0x37f89f[_0x28a8cd])return _0x37f89f[_0x28a8cd][_0x13f57c(0x426)];var _0x5af623=_0x37f89f[_0x28a8cd]={'exports':{},'id':_0x28a8cd,'loaded':![]};return _0x18609a[_0x28a8cd][_0x13f57c(0x1e2)](_0x5af623[_0x13f57c(0x426)],_0x5af623,_0x5af623[_0x13f57c(0x426)],_0x362d2d),_0x5af623['loaded']=!![],_0x5af623[_0x13f57c(0x426)];}return _0x362d2d['m']=_0x18609a,_0x362d2d['c']=_0x37f89f,_0x362d2d['p']='',_0x362d2d(0x0);}([function(_0x9ec10e,_0x313f55,_0xb6d8a5){_0x9ec10e['exports']=_0xb6d8a5(0x35);},function(_0x57cbd3,_0xd2692e,_0x35a772){'use strict';var _0x217296=a9_0x50c4;var _0x398b65=_0x35a772(0x2),_0x169195=_0x2f1693(_0x398b65),_0x2b4ace=_0x35a772(0x12),_0x162f1f=_0x2f1693(_0x2b4ace),_0x555b36=_0x35a772(0x20),_0x2cb1e5=_0x2f1693(_0x555b36),_0x53ed76=_0x35a772(0x21),_0x2d45f8=_0x2f1693(_0x53ed76),_0x5a8255=_0x35a772(0x2a),_0xeedb10=_0x2f1693(_0x5a8255),_0x5f4c14=_0x35a772(0x25),_0x16e105=_0x2f1693(_0x5f4c14),_0x31edce=_0x35a772(0x22),_0xf48523=_0x2f1693(_0x31edce),_0x26d1e5=_0x35a772(0x23),_0x530a0e=_0x2f1693(_0x26d1e5),_0x597dc9=_0x35a772(0x2b),_0x25d460=_0x2f1693(_0x597dc9),_0x48a34d=_0x35a772(0x24),_0x99db42=_0x2f1693(_0x48a34d),_0x3f3fa6=_0x35a772(0x2c),_0x553442=_0x2f1693(_0x3f3fa6),_0x4ccd85=_0x35a772(0x33),_0x47b0a1=_0x2f1693(_0x4ccd85),_0x2e8fe8=_0x35a772(0x34),_0x480305=_0x2f1693(_0x2e8fe8);function _0x2f1693(_0x4b9f32){var _0x395878=a9_0x50c4;return _0x4b9f32&&_0x4b9f32[_0x395878(0x2ad)]?_0x4b9f32:{'default':_0x4b9f32};}_0x162f1f['default']['register']({'blots/block':_0x2cb1e5['default'],'blots/block/embed':_0x555b36[_0x217296(0x3db)],'blots/break':_0x2d45f8['default'],'blots/container':_0xeedb10[_0x217296(0x413)],'blots/cursor':_0x16e105[_0x217296(0x413)],'blots/embed':_0xf48523['default'],'blots/inline':_0x530a0e[_0x217296(0x413)],'blots/scroll':_0x25d460[_0x217296(0x413)],'blots/text':_0x99db42[_0x217296(0x413)],'modules/clipboard':_0x553442[_0x217296(0x413)],'modules/history':_0x47b0a1[_0x217296(0x413)],'modules/keyboard':_0x480305['default']}),_0x169195[_0x217296(0x413)]['register'](_0x2cb1e5[_0x217296(0x413)],_0x2d45f8[_0x217296(0x413)],_0x16e105[_0x217296(0x413)],_0x530a0e[_0x217296(0x413)],_0x25d460[_0x217296(0x413)],_0x99db42['default']),_0x57cbd3[_0x217296(0x426)]=_0x162f1f[_0x217296(0x413)];},function(_0x4303c3,_0x2bea83,_0x57dbf1){'use strict';var _0x93bb8c=a9_0x50c4;var _0x195d20=_0x57dbf1(0x3),_0x1ae585=_0x57dbf1(0x7),_0x2355a0=_0x57dbf1(0xc),_0x123581=_0x57dbf1(0xd),_0x92e11a=_0x57dbf1(0xe),_0x2d6a4d=_0x57dbf1(0xf),_0x5f3ec3=_0x57dbf1(0x10),_0x59346f=_0x57dbf1(0x11),_0x5333d1=_0x57dbf1(0x8),_0x5b96ff=_0x57dbf1(0xa),_0x55712e=_0x57dbf1(0xb),_0x22a29e=_0x57dbf1(0x9),_0x436725=_0x57dbf1(0x6),_0x4421c8={'Scope':_0x436725['Scope'],'create':_0x436725['create'],'find':_0x436725[_0x93bb8c(0x303)],'query':_0x436725[_0x93bb8c(0x409)],'register':_0x436725[_0x93bb8c(0x425)],'Container':_0x195d20[_0x93bb8c(0x413)],'Format':_0x1ae585[_0x93bb8c(0x413)],'Leaf':_0x2355a0['default'],'Embed':_0x5f3ec3[_0x93bb8c(0x413)],'Scroll':_0x123581[_0x93bb8c(0x413)],'Block':_0x2d6a4d[_0x93bb8c(0x413)],'Inline':_0x92e11a[_0x93bb8c(0x413)],'Text':_0x59346f[_0x93bb8c(0x413)],'Attributor':{'Attribute':_0x5333d1[_0x93bb8c(0x413)],'Class':_0x5b96ff[_0x93bb8c(0x413)],'Style':_0x55712e[_0x93bb8c(0x413)],'Store':_0x22a29e[_0x93bb8c(0x413)]}};Object[_0x93bb8c(0x289)](_0x2bea83,_0x93bb8c(0x2ad),{'value':!![]}),_0x2bea83[_0x93bb8c(0x413)]=_0x4421c8;},function(_0x3942c2,_0x3974c0,_0x4f8ffa){'use strict';var _0x2c2161=a9_0x50c4;var _0x54ab7e=this&&this[_0x2c2161(0x42c)]||function(_0x4beb37,_0x1ed035){var _0xacc538=_0x2c2161;for(var _0x40a157 in _0x1ed035)if(_0x1ed035[_0xacc538(0x3ca)](_0x40a157))_0x4beb37[_0x40a157]=_0x1ed035[_0x40a157];function _0x577d7d(){var _0x58dec4=_0xacc538;this[_0x58dec4(0x2c6)]=_0x4beb37;}_0x4beb37[_0xacc538(0x44f)]=_0x1ed035===null?Object['create'](_0x1ed035):(_0x577d7d[_0xacc538(0x44f)]=_0x1ed035[_0xacc538(0x44f)],new _0x577d7d());},_0x49d11c=_0x4f8ffa(0x4),_0x1bc2ba=_0x4f8ffa(0x5),_0x1af1c5=_0x4f8ffa(0x6),_0x1f77e5=function(_0x411702){var _0xe6d7c5=_0x2c2161;_0x54ab7e(_0x4f9724,_0x411702);function _0x4f9724(){_0x411702['apply'](this,arguments);}return _0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x27e)]=function(_0x5999e5){var _0x5c04f6=_0xe6d7c5;this[_0x5c04f6(0x3fc)](_0x5999e5);},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x1cf)]=function(){var _0x4b5167=_0xe6d7c5,_0x444694=this;_0x411702['prototype'][_0x4b5167(0x1cf)]['call'](this),this['children']=new _0x49d11c['default'](),[][_0x4b5167(0x441)][_0x4b5167(0x1e2)](this[_0x4b5167(0x3ad)][_0x4b5167(0x449)])['reverse']()[_0x4b5167(0x3e4)](function(_0x433694){var _0x56c44d=_0x4b5167;try{var _0x4c42ca=_0x48b6c8(_0x433694);_0x444694[_0x56c44d(0x3fc)](_0x4c42ca,_0x444694['children'][_0x56c44d(0x311)]);}catch(_0x2e02b2){if(_0x2e02b2 instanceof _0x1af1c5[_0x56c44d(0x241)])return;else throw _0x2e02b2;}});},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x3c3)]=function(_0x127c2f,_0x216149){var _0x45e6cb=_0xe6d7c5;if(_0x127c2f===0x0&&_0x216149===this[_0x45e6cb(0x19a)]())return this[_0x45e6cb(0x190)]();this[_0x45e6cb(0x3b7)][_0x45e6cb(0x1bd)](_0x127c2f,_0x216149,function(_0x3a7f65,_0x152fc0,_0x3ffaa2){var _0x1b55ef=_0x45e6cb;_0x3a7f65[_0x1b55ef(0x3c3)](_0x152fc0,_0x3ffaa2);});},_0x4f9724[_0xe6d7c5(0x44f)]['descendant']=function(_0x378281,_0x2c8766){var _0x1abc09=_0xe6d7c5,_0x49e48f=this[_0x1abc09(0x3b7)][_0x1abc09(0x303)](_0x2c8766),_0x5d54c1=_0x49e48f[0x0],_0x4bbb0c=_0x49e48f[0x1];if(_0x378281[_0x1abc09(0x242)]==null&&_0x378281(_0x5d54c1)||_0x378281[_0x1abc09(0x242)]!=null&&_0x5d54c1 instanceof _0x378281)return[_0x5d54c1,_0x4bbb0c];else return _0x5d54c1 instanceof _0x4f9724?_0x5d54c1[_0x1abc09(0x3a9)](_0x378281,_0x4bbb0c):[null,-0x1];},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x40e)]=function(_0xc54da6,_0x49a982,_0x2b5ebf){var _0xbb26f0=_0xe6d7c5;_0x49a982===void 0x0&&(_0x49a982=0x0);_0x2b5ebf===void 0x0&&(_0x2b5ebf=Number[_0xbb26f0(0x2ef)]);var _0x31c78c=[],_0x2e00c0=_0x2b5ebf;return this[_0xbb26f0(0x3b7)][_0xbb26f0(0x1bd)](_0x49a982,_0x2b5ebf,function(_0x26f9da,_0x15ceb0,_0x942d51){var _0xe2e4d7=_0xbb26f0;(_0xc54da6[_0xe2e4d7(0x242)]==null&&_0xc54da6(_0x26f9da)||_0xc54da6['blotName']!=null&&_0x26f9da instanceof _0xc54da6)&&_0x31c78c[_0xe2e4d7(0x1bf)](_0x26f9da),_0x26f9da instanceof _0x4f9724&&(_0x31c78c=_0x31c78c[_0xe2e4d7(0x1f8)](_0x26f9da[_0xe2e4d7(0x40e)](_0xc54da6,_0x15ceb0,_0x2e00c0))),_0x2e00c0-=_0x942d51;}),_0x31c78c;},_0x4f9724['prototype'][_0xe6d7c5(0x1b7)]=function(){var _0x4a8cb8=_0xe6d7c5;this[_0x4a8cb8(0x3b7)][_0x4a8cb8(0x3e4)](function(_0x25bbcf){var _0x4fee4d=_0x4a8cb8;_0x25bbcf[_0x4fee4d(0x1b7)]();}),_0x411702['prototype'][_0x4a8cb8(0x1b7)][_0x4a8cb8(0x1e2)](this);},_0x4f9724['prototype'][_0xe6d7c5(0x459)]=function(_0x472090,_0x5668c7,_0x581241,_0x13c991){var _0x3d452d=_0xe6d7c5;this[_0x3d452d(0x3b7)][_0x3d452d(0x1bd)](_0x472090,_0x5668c7,function(_0x311aac,_0x27c3d9,_0x10bd81){_0x311aac['formatAt'](_0x27c3d9,_0x10bd81,_0x581241,_0x13c991);});},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x307)]=function(_0x347758,_0xc6a9df,_0x37a420){var _0x4f2cc4=_0xe6d7c5,_0x539110=this[_0x4f2cc4(0x3b7)]['find'](_0x347758),_0x4f66f1=_0x539110[0x0],_0x5819a1=_0x539110[0x1];if(_0x4f66f1)_0x4f66f1[_0x4f2cc4(0x307)](_0x5819a1,_0xc6a9df,_0x37a420);else{var _0x317944=_0x37a420==null?_0x1af1c5[_0x4f2cc4(0x372)](_0x4f2cc4(0x41d),_0xc6a9df):_0x1af1c5[_0x4f2cc4(0x372)](_0xc6a9df,_0x37a420);this[_0x4f2cc4(0x27e)](_0x317944);}},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x3fc)]=function(_0x1ffc2a,_0x49bd3a){var _0x517dfb=_0xe6d7c5;if(this[_0x517dfb(0x3a6)][_0x517dfb(0x23a)]!=null&&!this[_0x517dfb(0x3a6)][_0x517dfb(0x23a)]['some'](function(_0x50876c){return _0x1ffc2a instanceof _0x50876c;}))throw new _0x1af1c5[(_0x517dfb(0x241))](_0x517dfb(0x1d7)+_0x1ffc2a[_0x517dfb(0x3a6)]['blotName']+'\x20into\x20'+this[_0x517dfb(0x3a6)][_0x517dfb(0x242)]);_0x1ffc2a['insertInto'](this,_0x49bd3a);},_0x4f9724['prototype'][_0xe6d7c5(0x19a)]=function(){var _0x5042a7=_0xe6d7c5;return this[_0x5042a7(0x3b7)][_0x5042a7(0x1c8)](function(_0x5da11d,_0x17f669){return _0x5da11d+_0x17f669['length']();},0x0);},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x2a0)]=function(_0x5c5679,_0x41bd8b){var _0x104700=_0xe6d7c5;this['children'][_0x104700(0x3e4)](function(_0x559685){var _0x324d8a=_0x104700;_0x5c5679[_0x324d8a(0x3fc)](_0x559685,_0x41bd8b);});},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x23e)]=function(){var _0x511004=_0xe6d7c5;_0x411702[_0x511004(0x44f)][_0x511004(0x23e)][_0x511004(0x1e2)](this);if(this[_0x511004(0x3b7)][_0x511004(0x19a)]===0x0){if(this[_0x511004(0x3a6)][_0x511004(0x1fa)]!=null){var _0x36b069=_0x1af1c5['create'](this[_0x511004(0x3a6)][_0x511004(0x1fa)]);this[_0x511004(0x27e)](_0x36b069),_0x36b069[_0x511004(0x23e)]();}else this[_0x511004(0x190)]();}},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x1d2)]=function(_0x3c4f44,_0x2d50ca){var _0x198cd4=_0xe6d7c5;_0x2d50ca===void 0x0&&(_0x2d50ca=![]);var _0x36624e=this[_0x198cd4(0x3b7)][_0x198cd4(0x303)](_0x3c4f44,_0x2d50ca),_0x988902=_0x36624e[0x0],_0x53b3e7=_0x36624e[0x1],_0x32a0db=[[this,_0x3c4f44]];if(_0x988902 instanceof _0x4f9724)return _0x32a0db['concat'](_0x988902['path'](_0x53b3e7,_0x2d50ca));else _0x988902!=null&&_0x32a0db[_0x198cd4(0x1bf)]([_0x988902,_0x53b3e7]);return _0x32a0db;},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x213)]=function(_0x309b9b){var _0x1a0a2b=_0xe6d7c5;this[_0x1a0a2b(0x3b7)][_0x1a0a2b(0x190)](_0x309b9b);},_0x4f9724['prototype'][_0xe6d7c5(0x2ff)]=function(_0x40e5ca){var _0x2adb59=_0xe6d7c5;_0x40e5ca instanceof _0x4f9724&&_0x40e5ca[_0x2adb59(0x2a0)](this),_0x411702['prototype'][_0x2adb59(0x2ff)][_0x2adb59(0x1e2)](this,_0x40e5ca);},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x428)]=function(_0x421627,_0x24d0d3){var _0x229427=_0xe6d7c5;_0x24d0d3===void 0x0&&(_0x24d0d3=![]);if(!_0x24d0d3){if(_0x421627===0x0)return this;if(_0x421627===this[_0x229427(0x19a)]())return this[_0x229427(0x211)];}var _0x541f14=this[_0x229427(0x378)]();return this['parent']['insertBefore'](_0x541f14,this[_0x229427(0x211)]),this[_0x229427(0x3b7)]['forEachAt'](_0x421627,this[_0x229427(0x19a)](),function(_0x499f6b,_0x1d474a,_0x4742cd){var _0x555ae9=_0x229427;_0x499f6b=_0x499f6b[_0x555ae9(0x428)](_0x1d474a,_0x24d0d3),_0x541f14[_0x555ae9(0x27e)](_0x499f6b);}),_0x541f14;},_0x4f9724[_0xe6d7c5(0x44f)][_0xe6d7c5(0x1c1)]=function(){var _0x1546c7=_0xe6d7c5;this[_0x1546c7(0x2a0)](this['parent'],this['next']),this['remove']();},_0x4f9724['prototype'][_0xe6d7c5(0x22f)]=function(_0x21c38c){var _0xa51261=_0xe6d7c5,_0x2a3d24=this,_0x5efaef=[],_0x32a08c=[];_0x21c38c[_0xa51261(0x3e4)](function(_0x274754){var _0x1070f9=_0xa51261;_0x274754['target']===_0x2a3d24[_0x1070f9(0x3ad)]&&_0x274754[_0x1070f9(0x2d9)]===_0x1070f9(0x29c)&&(_0x5efaef[_0x1070f9(0x1bf)][_0x1070f9(0x39e)](_0x5efaef,_0x274754['addedNodes']),_0x32a08c[_0x1070f9(0x1bf)][_0x1070f9(0x39e)](_0x32a08c,_0x274754[_0x1070f9(0x2b0)]));}),_0x32a08c[_0xa51261(0x3e4)](function(_0x3d0c31){var _0x341513=_0xa51261,_0x12c455=_0x1af1c5[_0x341513(0x303)](_0x3d0c31);if(_0x12c455==null)return;(_0x12c455['domNode'][_0x341513(0x37d)]==null||_0x12c455[_0x341513(0x3ad)][_0x341513(0x37d)]===_0x2a3d24[_0x341513(0x3ad)])&&_0x12c455['detach']();}),_0x5efaef[_0xa51261(0x2f8)](function(_0x510daa){var _0x1393a7=_0xa51261;return _0x510daa[_0x1393a7(0x37d)]==_0x2a3d24['domNode'];})['sort'](function(_0x5396b8,_0x4098da){var _0x1fb927=_0xa51261;if(_0x5396b8===_0x4098da)return 0x0;if(_0x5396b8[_0x1fb927(0x258)](_0x4098da)&Node['DOCUMENT_POSITION_FOLLOWING'])return 0x1;return-0x1;})[_0xa51261(0x3e4)](function(_0x10c1f7){var _0x439226=_0xa51261,_0x1c59b9=null;_0x10c1f7[_0x439226(0x2a3)]!=null&&(_0x1c59b9=_0x1af1c5['find'](_0x10c1f7['nextSibling']));var _0x15724e=_0x48b6c8(_0x10c1f7);(_0x15724e[_0x439226(0x211)]!=_0x1c59b9||_0x15724e[_0x439226(0x211)]==null)&&(_0x15724e[_0x439226(0x349)]!=null&&_0x15724e[_0x439226(0x349)]['removeChild'](_0x2a3d24),_0x2a3d24[_0x439226(0x3fc)](_0x15724e,_0x1c59b9));});},_0x4f9724;}(_0x1bc2ba[_0x2c2161(0x413)]);function _0x48b6c8(_0x3763e1){var _0x5c5748=_0x2c2161,_0x44f185=_0x1af1c5[_0x5c5748(0x303)](_0x3763e1);if(_0x44f185==null)try{_0x44f185=_0x1af1c5[_0x5c5748(0x372)](_0x3763e1);}catch(_0x584af7){_0x44f185=_0x1af1c5[_0x5c5748(0x372)](_0x1af1c5[_0x5c5748(0x293)][_0x5c5748(0x2bf)]),[][_0x5c5748(0x441)]['call'](_0x3763e1[_0x5c5748(0x449)])[_0x5c5748(0x3e4)](function(_0x4195bf){var _0x872d39=_0x5c5748;_0x44f185[_0x872d39(0x3ad)][_0x872d39(0x27e)](_0x4195bf);}),_0x3763e1[_0x5c5748(0x37d)][_0x5c5748(0x196)](_0x44f185['domNode'],_0x3763e1),_0x44f185[_0x5c5748(0x1cf)]();}return _0x44f185;}Object[_0x2c2161(0x289)](_0x3974c0,'__esModule',{'value':!![]}),_0x3974c0[_0x2c2161(0x413)]=_0x1f77e5;},function(_0x8185b5,_0x2875f3){'use strict';var _0x5edb64=a9_0x50c4;var _0x5822fb=(function(){var _0xfd43e8=a9_0x50c4;function _0x324ef0(){var _0x215aa8=a9_0x50c4;this['head']=this[_0x215aa8(0x32e)]=undefined,this[_0x215aa8(0x19a)]=0x0;}return _0x324ef0['prototype'][_0xfd43e8(0x3a5)]=function(){var _0x57266f=_0xfd43e8,_0x2b9e83=[];for(var _0x478937=0x0;_0x478937<arguments[_0x57266f(0x19a)];_0x478937++){_0x2b9e83[_0x478937-0x0]=arguments[_0x478937];}this[_0x57266f(0x3fc)](_0x2b9e83[0x0],undefined),_0x2b9e83[_0x57266f(0x19a)]>0x1&&this[_0x57266f(0x3a5)][_0x57266f(0x39e)](this,_0x2b9e83['slice'](0x1));},_0x324ef0[_0xfd43e8(0x44f)][_0xfd43e8(0x386)]=function(_0x473f3f){var _0x4cb361=_0xfd43e8,_0x5d3748,_0x15c62f=this[_0x4cb361(0x2e8)]();while(_0x5d3748=_0x15c62f()){if(_0x5d3748===_0x473f3f)return!![];}return![];},_0x324ef0[_0xfd43e8(0x44f)]['insertBefore']=function(_0x235dd7,_0x3c4b84){var _0x1d76ae=_0xfd43e8;_0x235dd7['next']=_0x3c4b84;if(_0x3c4b84!=null)_0x235dd7[_0x1d76ae(0x2f9)]=_0x3c4b84[_0x1d76ae(0x2f9)],_0x3c4b84['prev']!=null&&(_0x3c4b84['prev'][_0x1d76ae(0x211)]=_0x235dd7),_0x3c4b84[_0x1d76ae(0x2f9)]=_0x235dd7,_0x3c4b84===this[_0x1d76ae(0x311)]&&(this[_0x1d76ae(0x311)]=_0x235dd7);else this[_0x1d76ae(0x32e)]!=null?(this[_0x1d76ae(0x32e)][_0x1d76ae(0x211)]=_0x235dd7,_0x235dd7['prev']=this['tail'],this[_0x1d76ae(0x32e)]=_0x235dd7):(_0x235dd7[_0x1d76ae(0x2f9)]=undefined,this['head']=this[_0x1d76ae(0x32e)]=_0x235dd7);this[_0x1d76ae(0x19a)]+=0x1;},_0x324ef0[_0xfd43e8(0x44f)]['offset']=function(_0x286250){var _0x117cf6=_0xfd43e8,_0xdab896=0x0,_0x3083f7=this[_0x117cf6(0x311)];while(_0x3083f7!=null){if(_0x3083f7===_0x286250)return _0xdab896;_0xdab896+=_0x3083f7[_0x117cf6(0x19a)](),_0x3083f7=_0x3083f7['next'];}return-0x1;},_0x324ef0['prototype'][_0xfd43e8(0x190)]=function(_0xbced47){var _0x226fb7=_0xfd43e8;if(!this[_0x226fb7(0x386)](_0xbced47))return;if(_0xbced47[_0x226fb7(0x2f9)]!=null)_0xbced47[_0x226fb7(0x2f9)][_0x226fb7(0x211)]=_0xbced47[_0x226fb7(0x211)];if(_0xbced47['next']!=null)_0xbced47[_0x226fb7(0x211)][_0x226fb7(0x2f9)]=_0xbced47[_0x226fb7(0x2f9)];if(_0xbced47===this[_0x226fb7(0x311)])this['head']=_0xbced47['next'];if(_0xbced47===this[_0x226fb7(0x32e)])this[_0x226fb7(0x32e)]=_0xbced47['prev'];this[_0x226fb7(0x19a)]-=0x1;},_0x324ef0[_0xfd43e8(0x44f)][_0xfd43e8(0x2e8)]=function(_0x3015d5){return _0x3015d5===void 0x0&&(_0x3015d5=this['head']),function(){var _0x276b87=a9_0x50c4,_0x4de231=_0x3015d5;if(_0x3015d5!=null)_0x3015d5=_0x3015d5[_0x276b87(0x211)];return _0x4de231;};},_0x324ef0[_0xfd43e8(0x44f)][_0xfd43e8(0x303)]=function(_0x2feae5,_0x2d41fa){var _0x2a2de3=_0xfd43e8;_0x2d41fa===void 0x0&&(_0x2d41fa=![]);var _0x3f9756,_0x578bf8=this[_0x2a2de3(0x2e8)]();while(_0x3f9756=_0x578bf8()){var _0x11060b=_0x3f9756[_0x2a2de3(0x19a)]();if(_0x2feae5<_0x11060b||_0x2d41fa&&_0x2feae5===_0x11060b&&(_0x3f9756[_0x2a2de3(0x211)]==null||_0x3f9756['next']['length']()!==0x0))return[_0x3f9756,_0x2feae5];_0x2feae5-=_0x11060b;}return[null,0x0];},_0x324ef0[_0xfd43e8(0x44f)][_0xfd43e8(0x3e4)]=function(_0x5d3b09){var _0x503064,_0x1c7c87=this['iterator']();while(_0x503064=_0x1c7c87()){_0x5d3b09(_0x503064);}},_0x324ef0[_0xfd43e8(0x44f)]['forEachAt']=function(_0x1b21b8,_0x88bacd,_0x16216f){var _0x4e1dd3=_0xfd43e8;if(_0x88bacd<=0x0)return;var _0x46cfe4=this['find'](_0x1b21b8),_0x3a5385=_0x46cfe4[0x0],_0xed216=_0x46cfe4[0x1],_0x3db21a,_0x1c5905=_0x1b21b8-_0xed216,_0x585860=this[_0x4e1dd3(0x2e8)](_0x3a5385);while((_0x3db21a=_0x585860())&&_0x1c5905<_0x1b21b8+_0x88bacd){var _0x1f564c=_0x3db21a['length']();_0x1b21b8>_0x1c5905?_0x16216f(_0x3db21a,_0x1b21b8-_0x1c5905,Math['min'](_0x88bacd,_0x1c5905+_0x1f564c-_0x1b21b8)):_0x16216f(_0x3db21a,0x0,Math[_0x4e1dd3(0x384)](_0x1f564c,_0x1b21b8+_0x88bacd-_0x1c5905)),_0x1c5905+=_0x1f564c;}},_0x324ef0[_0xfd43e8(0x44f)]['map']=function(_0x426dca){var _0x47d9a9=_0xfd43e8;return this[_0x47d9a9(0x1c8)](function(_0x43db29,_0x380393){var _0x189ef3=_0x47d9a9;return _0x43db29[_0x189ef3(0x1bf)](_0x426dca(_0x380393)),_0x43db29;},[]);},_0x324ef0[_0xfd43e8(0x44f)][_0xfd43e8(0x1c8)]=function(_0x4960b2,_0x304901){var _0x11e1b1=_0xfd43e8,_0x21b27a,_0x41b0cc=this[_0x11e1b1(0x2e8)]();while(_0x21b27a=_0x41b0cc()){_0x304901=_0x4960b2(_0x304901,_0x21b27a);}return _0x304901;},_0x324ef0;}());Object[_0x5edb64(0x289)](_0x2875f3,_0x5edb64(0x2ad),{'value':!![]}),_0x2875f3[_0x5edb64(0x413)]=_0x5822fb;},function(_0x434b73,_0x2a418e,_0x4fc9e7){'use strict';var _0x243b83=a9_0x50c4;var _0x35c0df=_0x4fc9e7(0x6),_0x1d93ed=(function(){var _0x3e272d=a9_0x50c4;function _0x9a5ea9(_0x21742d){var _0x2028db=a9_0x50c4;this[_0x2028db(0x3ad)]=_0x21742d,this[_0x2028db(0x1cf)]();}Object['defineProperty'](_0x9a5ea9[_0x3e272d(0x44f)],'statics',{'get':function(){var _0x368a79=_0x3e272d;return this[_0x368a79(0x2c6)];},'enumerable':!![],'configurable':!![]}),_0x9a5ea9[_0x3e272d(0x372)]=function(_0x5e40de){var _0x318ca5=_0x3e272d;if(this[_0x318ca5(0x200)]==null)throw new _0x35c0df['ParchmentError'](_0x318ca5(0x207));var _0x6a265b;if(Array[_0x318ca5(0x3f3)](this[_0x318ca5(0x200)])){typeof _0x5e40de===_0x318ca5(0x187)&&(_0x5e40de=_0x5e40de[_0x318ca5(0x3a2)](),parseInt(_0x5e40de)[_0x318ca5(0x1d3)]()===_0x5e40de&&(_0x5e40de=parseInt(_0x5e40de)));if(typeof _0x5e40de==='number')_0x6a265b=document['createElement'](this['tagName'][_0x5e40de-0x1]);else this['tagName'][_0x318ca5(0x39a)](_0x5e40de)>-0x1?_0x6a265b=document['createElement'](_0x5e40de):_0x6a265b=document['createElement'](this[_0x318ca5(0x200)][0x0]);}else _0x6a265b=document[_0x318ca5(0x295)](this[_0x318ca5(0x200)]);return this[_0x318ca5(0x2d6)]&&_0x6a265b[_0x318ca5(0x446)]['add'](this[_0x318ca5(0x2d6)]),_0x6a265b;},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x1cf)]=function(){var _0x54b981=_0x3e272d;this[_0x54b981(0x3ad)][_0x35c0df[_0x54b981(0x294)]]={'blot':this};},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x378)]=function(){var _0x412a8e=_0x3e272d,_0x1fc64d=this[_0x412a8e(0x3ad)][_0x412a8e(0x271)]();return _0x35c0df[_0x412a8e(0x372)](_0x1fc64d);},_0x9a5ea9['prototype'][_0x3e272d(0x1b7)]=function(){var _0x71ada6=_0x3e272d;if(this['parent']!=null)this[_0x71ada6(0x349)]['removeChild'](this);delete this[_0x71ada6(0x3ad)][_0x35c0df[_0x71ada6(0x294)]];},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x3c3)]=function(_0x45a6fa,_0x410e7b){var _0x375cfd=_0x3e272d,_0x12e84e=this[_0x375cfd(0x1d5)](_0x45a6fa,_0x410e7b);_0x12e84e['remove']();},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x459)]=function(_0x470a6f,_0x491ad8,_0x1c5130,_0x2d8701){var _0x5bdf17=_0x3e272d,_0x5cfb26=this[_0x5bdf17(0x1d5)](_0x470a6f,_0x491ad8);if(_0x35c0df[_0x5bdf17(0x409)](_0x1c5130,_0x35c0df['Scope'][_0x5bdf17(0x217)])!=null&&_0x2d8701)_0x5cfb26[_0x5bdf17(0x37b)](_0x1c5130,_0x2d8701);else{if(_0x35c0df[_0x5bdf17(0x409)](_0x1c5130,_0x35c0df[_0x5bdf17(0x293)][_0x5bdf17(0x454)])!=null){var _0x13af35=_0x35c0df[_0x5bdf17(0x372)](this[_0x5bdf17(0x3a6)][_0x5bdf17(0x368)]);_0x5cfb26[_0x5bdf17(0x37b)](_0x13af35),_0x13af35['format'](_0x1c5130,_0x2d8701);}}},_0x9a5ea9[_0x3e272d(0x44f)]['insertAt']=function(_0x4658cd,_0x303d7a,_0x2b7fdd){var _0x15bc8b=_0x3e272d,_0x3abb38=_0x2b7fdd==null?_0x35c0df['create'](_0x15bc8b(0x41d),_0x303d7a):_0x35c0df[_0x15bc8b(0x372)](_0x303d7a,_0x2b7fdd),_0xfb724a=this['split'](_0x4658cd);this[_0x15bc8b(0x349)][_0x15bc8b(0x3fc)](_0x3abb38,_0xfb724a);},_0x9a5ea9[_0x3e272d(0x44f)]['insertInto']=function(_0x2f3ddf,_0x49a393){var _0x9af071=_0x3e272d;this[_0x9af071(0x349)]!=null&&this['parent']['children'][_0x9af071(0x190)](this);_0x2f3ddf[_0x9af071(0x3b7)][_0x9af071(0x3fc)](this,_0x49a393);if(_0x49a393!=null)var _0x5bbcce=_0x49a393[_0x9af071(0x3ad)];(this['next']==null||this[_0x9af071(0x3ad)][_0x9af071(0x2a3)]!=_0x5bbcce)&&_0x2f3ddf[_0x9af071(0x3ad)][_0x9af071(0x3fc)](this[_0x9af071(0x3ad)],_0x5bbcce),this[_0x9af071(0x349)]=_0x2f3ddf;},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x1d5)]=function(_0x417438,_0x31291a){var _0x1197fe=_0x3e272d,_0x52d05a=this[_0x1197fe(0x428)](_0x417438);return _0x52d05a['split'](_0x31291a),_0x52d05a;},_0x9a5ea9['prototype'][_0x3e272d(0x19a)]=function(){return 0x1;};;return _0x9a5ea9['prototype'][_0x3e272d(0x438)]=function(_0x1e844b){var _0x270670=_0x3e272d;_0x1e844b===void 0x0&&(_0x1e844b=this['parent']);if(this[_0x270670(0x349)]==null||this==_0x1e844b)return 0x0;return this[_0x270670(0x349)][_0x270670(0x3b7)]['offset'](this)+this[_0x270670(0x349)]['offset'](_0x1e844b);},_0x9a5ea9[_0x3e272d(0x44f)]['optimize']=function(){var _0x516fe1=_0x3e272d;this['domNode'][_0x35c0df[_0x516fe1(0x294)]]!=null&&delete this[_0x516fe1(0x3ad)][_0x35c0df[_0x516fe1(0x294)]]['mutations'];},_0x9a5ea9['prototype'][_0x3e272d(0x190)]=function(){var _0xd041ef=_0x3e272d;this['domNode'][_0xd041ef(0x37d)]!=null&&this[_0xd041ef(0x3ad)]['parentNode']['removeChild'](this[_0xd041ef(0x3ad)]),this[_0xd041ef(0x1b7)]();},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x2ff)]=function(_0x5d0ab1){var _0x22713a=_0x3e272d;if(_0x5d0ab1[_0x22713a(0x349)]==null)return;_0x5d0ab1[_0x22713a(0x349)][_0x22713a(0x3fc)](this,_0x5d0ab1['next']),_0x5d0ab1[_0x22713a(0x190)]();},_0x9a5ea9['prototype'][_0x3e272d(0x2a4)]=function(_0x4482fd,_0x501852){var _0x1d2fff=_0x3e272d,_0x1bc842=typeof _0x4482fd===_0x1d2fff(0x187)?_0x35c0df[_0x1d2fff(0x372)](_0x4482fd,_0x501852):_0x4482fd;return _0x1bc842[_0x1d2fff(0x2ff)](this),_0x1bc842;},_0x9a5ea9[_0x3e272d(0x44f)]['split']=function(_0x367c92,_0x492b3e){return _0x367c92===0x0?this:this['next'];},_0x9a5ea9['prototype'][_0x3e272d(0x22f)]=function(_0x41b2fa){_0x41b2fa===void 0x0&&(_0x41b2fa=[]);},_0x9a5ea9[_0x3e272d(0x44f)][_0x3e272d(0x37b)]=function(_0x176e20,_0x572e60){var _0x7c100d=_0x3e272d,_0x359d77=typeof _0x176e20==='string'?_0x35c0df['create'](_0x176e20,_0x572e60):_0x176e20;return this[_0x7c100d(0x349)]!=null&&this[_0x7c100d(0x349)]['insertBefore'](_0x359d77,this[_0x7c100d(0x211)]),_0x359d77[_0x7c100d(0x27e)](this),_0x359d77;},_0x9a5ea9['blotName']=_0x3e272d(0x284),_0x9a5ea9;}());Object['defineProperty'](_0x2a418e,_0x243b83(0x2ad),{'value':!![]}),_0x2a418e[_0x243b83(0x413)]=_0x1d93ed;},function(_0x5b4a91,_0x4744c3){'use strict';var _0x228011=a9_0x50c4;var _0x54f97b=this&&this[_0x228011(0x42c)]||function(_0x376def,_0x20ee80){var _0x1f19ec=_0x228011;for(var _0x185f36 in _0x20ee80)if(_0x20ee80[_0x1f19ec(0x3ca)](_0x185f36))_0x376def[_0x185f36]=_0x20ee80[_0x185f36];function _0x13cfcf(){var _0x2a1ba8=_0x1f19ec;this[_0x2a1ba8(0x2c6)]=_0x376def;}_0x376def['prototype']=_0x20ee80===null?Object[_0x1f19ec(0x372)](_0x20ee80):(_0x13cfcf['prototype']=_0x20ee80[_0x1f19ec(0x44f)],new _0x13cfcf());},_0x251c4a=function(_0x8a392f){_0x54f97b(_0x4f88f0,_0x8a392f);function _0x4f88f0(_0x468b7a){var _0x53d9df=a9_0x50c4;_0x468b7a=_0x53d9df(0x309)+_0x468b7a,_0x8a392f['call'](this,_0x468b7a),this[_0x53d9df(0x33e)]=_0x468b7a,this['name']=this[_0x53d9df(0x2c6)][_0x53d9df(0x3ab)];}return _0x4f88f0;}(Error);_0x4744c3['ParchmentError']=_0x251c4a;var _0x4a6c70={},_0x30218e={},_0x260504={},_0x27a66d={};_0x4744c3[_0x228011(0x294)]=_0x228011(0x38a),function(_0x103413){var _0x475953=_0x228011;_0x103413[_0x103413[_0x475953(0x193)]=0x3]=_0x475953(0x193),_0x103413[_0x103413[_0x475953(0x2f3)]=0xc]=_0x475953(0x2f3),_0x103413[_0x103413[_0x475953(0x454)]=0xd]=_0x475953(0x454),_0x103413[_0x103413[_0x475953(0x217)]=0xe]=_0x475953(0x217),_0x103413[_0x103413[_0x475953(0x2bf)]=0x7]=_0x475953(0x2bf),_0x103413[_0x103413[_0x475953(0x30e)]=0xb]=_0x475953(0x30e),_0x103413[_0x103413['BLOCK_BLOT']=0xa]=_0x475953(0x2c2),_0x103413[_0x103413['INLINE_BLOT']=0x6]=_0x475953(0x34c),_0x103413[_0x103413[_0x475953(0x25d)]=0x9]=_0x475953(0x25d),_0x103413[_0x103413[_0x475953(0x1f9)]=0x5]='INLINE_ATTRIBUTE',_0x103413[_0x103413[_0x475953(0x41e)]=0xf]=_0x475953(0x41e);}(_0x4744c3[_0x228011(0x293)]||(_0x4744c3['Scope']={}));var _0x5db6cc=_0x4744c3[_0x228011(0x293)];;function _0x2a4ca7(_0x5862e6,_0x5dde06){var _0x2c097a=_0x228011,_0xcbb6b6=_0x24adc(_0x5862e6);if(_0xcbb6b6==null)throw new _0x251c4a(_0x2c097a(0x3f0)+_0x5862e6+_0x2c097a(0x24e));var _0x74f755=_0xcbb6b6,_0x3b6679=_0x5862e6 instanceof Node?_0x5862e6:_0x74f755[_0x2c097a(0x372)](_0x5dde06);return new _0x74f755(_0x3b6679,_0x5dde06);}_0x4744c3[_0x228011(0x372)]=_0x2a4ca7;function _0x3dfb4e(_0xdbbdb8,_0x5ba9c2){var _0x4aec43=_0x228011;_0x5ba9c2===void 0x0&&(_0x5ba9c2=![]);if(_0xdbbdb8==null)return null;if(_0xdbbdb8[_0x4744c3['DATA_KEY']]!=null)return _0xdbbdb8[_0x4744c3[_0x4aec43(0x294)]][_0x4aec43(0x225)];if(_0x5ba9c2)return _0x3dfb4e(_0xdbbdb8[_0x4aec43(0x37d)],_0x5ba9c2);return null;}_0x4744c3[_0x228011(0x303)]=_0x3dfb4e;function _0x24adc(_0xb99118,_0x181216){var _0x530e35=_0x228011;_0x181216===void 0x0&&(_0x181216=_0x5db6cc[_0x530e35(0x41e)]);var _0x48a097;if(typeof _0xb99118===_0x530e35(0x187))_0x48a097=_0x27a66d[_0xb99118]||_0x4a6c70[_0xb99118];else{if(_0xb99118 instanceof Text)_0x48a097=_0x27a66d[_0x530e35(0x41d)];else{if(typeof _0xb99118===_0x530e35(0x3b6)){if(_0xb99118&_0x5db6cc[_0x530e35(0x2f3)]&_0x5db6cc[_0x530e35(0x30e)])_0x48a097=_0x27a66d[_0x530e35(0x394)];else _0xb99118&_0x5db6cc[_0x530e35(0x2f3)]&_0x5db6cc[_0x530e35(0x2bf)]&&(_0x48a097=_0x27a66d[_0x530e35(0x453)]);}else{if(_0xb99118 instanceof HTMLElement){var _0x46a7f5=(_0xb99118[_0x530e35(0x3ae)](_0x530e35(0x332))||'')[_0x530e35(0x428)](/\s+/);for(var _0x42f70b in _0x46a7f5){if(_0x48a097=_0x30218e[_0x46a7f5[_0x42f70b]])break;}_0x48a097=_0x48a097||_0x260504[_0xb99118['tagName']];}}}}if(_0x48a097==null)return null;if(_0x181216&_0x5db6cc[_0x530e35(0x2f3)]&_0x48a097[_0x530e35(0x368)]&&_0x181216&_0x5db6cc['TYPE']&_0x48a097[_0x530e35(0x368)])return _0x48a097;return null;}_0x4744c3[_0x228011(0x409)]=_0x24adc;function _0x3edb23(){var _0x482c60=_0x228011,_0x5bad88=[];for(var _0x115cfe=0x0;_0x115cfe<arguments[_0x482c60(0x19a)];_0x115cfe++){_0x5bad88[_0x115cfe-0x0]=arguments[_0x115cfe];}if(_0x5bad88[_0x482c60(0x19a)]>0x1)return _0x5bad88[_0x482c60(0x410)](function(_0x33c292){return _0x3edb23(_0x33c292);});var _0x97b63e=_0x5bad88[0x0];if(typeof _0x97b63e[_0x482c60(0x242)]!=='string'&&typeof _0x97b63e['attrName']!=='string')throw new _0x251c4a(_0x482c60(0x404));else{if(_0x97b63e[_0x482c60(0x242)]==='abstract')throw new _0x251c4a(_0x482c60(0x2b7));}_0x27a66d[_0x97b63e[_0x482c60(0x242)]||_0x97b63e['attrName']]=_0x97b63e;if(typeof _0x97b63e[_0x482c60(0x380)]===_0x482c60(0x187))_0x4a6c70[_0x97b63e[_0x482c60(0x380)]]=_0x97b63e;else{_0x97b63e[_0x482c60(0x2d6)]!=null&&(_0x30218e[_0x97b63e[_0x482c60(0x2d6)]]=_0x97b63e);if(_0x97b63e[_0x482c60(0x200)]!=null){Array[_0x482c60(0x3f3)](_0x97b63e[_0x482c60(0x200)])?_0x97b63e[_0x482c60(0x200)]=_0x97b63e['tagName'][_0x482c60(0x410)](function(_0x4c8234){var _0x352b60=_0x482c60;return _0x4c8234[_0x352b60(0x3a2)]();}):_0x97b63e[_0x482c60(0x200)]=_0x97b63e[_0x482c60(0x200)]['toUpperCase']();var _0x40557e=Array[_0x482c60(0x3f3)](_0x97b63e[_0x482c60(0x200)])?_0x97b63e[_0x482c60(0x200)]:[_0x97b63e[_0x482c60(0x200)]];_0x40557e[_0x482c60(0x3e4)](function(_0x319867){(_0x260504[_0x319867]==null||_0x97b63e['className']==null)&&(_0x260504[_0x319867]=_0x97b63e);});}}return _0x97b63e;}_0x4744c3[_0x228011(0x425)]=_0x3edb23;},function(_0x56ac4e,_0x2c9b7b,_0x55fbc1){'use strict';var _0x190725=a9_0x50c4;var _0x3d2ba2=this&&this[_0x190725(0x42c)]||function(_0x3981d3,_0x2ece32){var _0x15673d=_0x190725;for(var _0x779d72 in _0x2ece32)if(_0x2ece32[_0x15673d(0x3ca)](_0x779d72))_0x3981d3[_0x779d72]=_0x2ece32[_0x779d72];function _0x21bfe7(){var _0x43782a=_0x15673d;this[_0x43782a(0x2c6)]=_0x3981d3;}_0x3981d3[_0x15673d(0x44f)]=_0x2ece32===null?Object[_0x15673d(0x372)](_0x2ece32):(_0x21bfe7[_0x15673d(0x44f)]=_0x2ece32[_0x15673d(0x44f)],new _0x21bfe7());},_0x4d6f39=_0x55fbc1(0x8),_0x1c7d86=_0x55fbc1(0x9),_0x5d9daf=_0x55fbc1(0x3),_0x22d3e4=_0x55fbc1(0x6),_0x1f1822=function(_0x1f71c8){var _0x148e77=_0x190725;_0x3d2ba2(_0x4283a4,_0x1f71c8);function _0x4283a4(){var _0x2f9a2c=a9_0x50c4;_0x1f71c8[_0x2f9a2c(0x39e)](this,arguments);}return _0x4283a4[_0x148e77(0x1a2)]=function(_0x191c92){var _0x2f9f8a=_0x148e77;if(typeof this[_0x2f9f8a(0x200)]===_0x2f9f8a(0x187))return!![];else{if(Array[_0x2f9f8a(0x3f3)](this['tagName']))return _0x191c92['tagName'][_0x2f9f8a(0x396)]();}return undefined;},_0x4283a4[_0x148e77(0x44f)][_0x148e77(0x1cf)]=function(){var _0x44a91d=_0x148e77;_0x1f71c8[_0x44a91d(0x44f)][_0x44a91d(0x1cf)][_0x44a91d(0x1e2)](this),this[_0x44a91d(0x32b)]=new _0x1c7d86[(_0x44a91d(0x413))](this[_0x44a91d(0x3ad)]);},_0x4283a4[_0x148e77(0x44f)]['format']=function(_0x21e124,_0x528965){var _0x363743=_0x148e77,_0x2f73d5=_0x22d3e4[_0x363743(0x409)](_0x21e124);if(_0x2f73d5 instanceof _0x4d6f39[_0x363743(0x413)])this[_0x363743(0x32b)]['attribute'](_0x2f73d5,_0x528965);else _0x528965&&(_0x2f73d5!=null&&(_0x21e124!==this[_0x363743(0x3a6)][_0x363743(0x242)]||this[_0x363743(0x1a2)]()[_0x21e124]!==_0x528965)&&this[_0x363743(0x2a4)](_0x21e124,_0x528965));},_0x4283a4[_0x148e77(0x44f)][_0x148e77(0x1a2)]=function(){var _0xcadc25=_0x148e77,_0x34af7d=this[_0xcadc25(0x32b)][_0xcadc25(0x253)](),_0x43216e=this[_0xcadc25(0x3a6)][_0xcadc25(0x1a2)](this[_0xcadc25(0x3ad)]);return _0x43216e!=null&&(_0x34af7d[this[_0xcadc25(0x3a6)][_0xcadc25(0x242)]]=_0x43216e),_0x34af7d;},_0x4283a4[_0x148e77(0x44f)]['replaceWith']=function(_0x25629a,_0x266d4d){var _0x4a87ea=_0x148e77,_0x1ffc9a=_0x1f71c8[_0x4a87ea(0x44f)][_0x4a87ea(0x2a4)][_0x4a87ea(0x1e2)](this,_0x25629a,_0x266d4d);return this[_0x4a87ea(0x32b)][_0x4a87ea(0x39f)](_0x1ffc9a),_0x1ffc9a;},_0x4283a4[_0x148e77(0x44f)][_0x148e77(0x22f)]=function(_0x4e3b84){var _0x29f35b=_0x148e77,_0x573a63=this;_0x1f71c8['prototype'][_0x29f35b(0x22f)][_0x29f35b(0x1e2)](this,_0x4e3b84),_0x4e3b84['some'](function(_0x32c091){var _0x3a98fe=_0x29f35b;return _0x32c091[_0x3a98fe(0x3c2)]===_0x573a63[_0x3a98fe(0x3ad)]&&_0x32c091['type']===_0x3a98fe(0x32b);})&&this['attributes'][_0x29f35b(0x19f)]();},_0x4283a4['prototype'][_0x148e77(0x37b)]=function(_0x2eb32c,_0x2c35c9){var _0x263487=_0x148e77,_0x53f0e7=_0x1f71c8[_0x263487(0x44f)][_0x263487(0x37b)]['call'](this,_0x2eb32c,_0x2c35c9);return _0x53f0e7 instanceof _0x4283a4&&_0x53f0e7[_0x263487(0x3a6)][_0x263487(0x368)]===this[_0x263487(0x3a6)][_0x263487(0x368)]&&this[_0x263487(0x32b)]['move'](_0x53f0e7),_0x53f0e7;},_0x4283a4;}(_0x5d9daf[_0x190725(0x413)]);Object[_0x190725(0x289)](_0x2c9b7b,_0x190725(0x2ad),{'value':!![]}),_0x2c9b7b[_0x190725(0x413)]=_0x1f1822;},function(_0x2f4658,_0x3d8302,_0x1cb6ec){'use strict';var _0x17cc71=a9_0x50c4;var _0x3ae760=_0x1cb6ec(0x6),_0x2b65af=(function(){var _0x1a3d74=a9_0x50c4;function _0x58f81c(_0x38531c,_0x23b123,_0x504d01){var _0x348adb=a9_0x50c4;_0x504d01===void 0x0&&(_0x504d01={});this[_0x348adb(0x231)]=_0x38531c,this[_0x348adb(0x380)]=_0x23b123;var _0x582de4=_0x3ae760[_0x348adb(0x293)]['TYPE']&_0x3ae760['Scope'][_0x348adb(0x454)];_0x504d01['scope']!=null?this[_0x348adb(0x368)]=_0x504d01[_0x348adb(0x368)]&_0x3ae760[_0x348adb(0x293)]['LEVEL']|_0x582de4:this['scope']=_0x3ae760['Scope'][_0x348adb(0x454)];if(_0x504d01['whitelist']!=null)this[_0x348adb(0x41f)]=_0x504d01[_0x348adb(0x41f)];}return _0x58f81c[_0x1a3d74(0x3aa)]=function(_0x1d2ebe){var _0x4a2f46=_0x1a3d74;return[][_0x4a2f46(0x410)][_0x4a2f46(0x1e2)](_0x1d2ebe['attributes'],function(_0x51028d){var _0x342f52=_0x4a2f46;return _0x51028d[_0x342f52(0x3ab)];});},_0x58f81c[_0x1a3d74(0x44f)][_0x1a3d74(0x184)]=function(_0x5464a3,_0x18272b){var _0xca24be=_0x1a3d74;if(!this[_0xca24be(0x336)](_0x5464a3,_0x18272b))return![];return _0x5464a3[_0xca24be(0x1ed)](this['keyName'],_0x18272b),!![];},_0x58f81c[_0x1a3d74(0x44f)][_0x1a3d74(0x336)]=function(_0x31a54a,_0x544f39){var _0x31111c=_0x1a3d74,_0x2a4f22=_0x3ae760[_0x31111c(0x409)](_0x31a54a,_0x3ae760[_0x31111c(0x293)][_0x31111c(0x217)]&(this[_0x31111c(0x368)]|_0x3ae760[_0x31111c(0x293)][_0x31111c(0x193)]));if(_0x2a4f22!=null&&(this[_0x31111c(0x41f)]==null||this['whitelist'][_0x31111c(0x39a)](_0x544f39)>-0x1))return!![];return![];},_0x58f81c['prototype'][_0x1a3d74(0x190)]=function(_0x407e7e){var _0x49e561=_0x1a3d74;_0x407e7e['removeAttribute'](this[_0x49e561(0x380)]);},_0x58f81c['prototype'][_0x1a3d74(0x2e4)]=function(_0x7bb0fe){var _0x248c66=_0x1a3d74;return _0x7bb0fe[_0x248c66(0x3ae)](this[_0x248c66(0x380)]);},_0x58f81c;}());Object['defineProperty'](_0x3d8302,_0x17cc71(0x2ad),{'value':!![]}),_0x3d8302[_0x17cc71(0x413)]=_0x2b65af;},function(_0x12dd7d,_0x39239f,_0x3f8375){'use strict';var _0x5ab396=a9_0x50c4;var _0x52e05f=_0x3f8375(0x8),_0x310d72=_0x3f8375(0xa),_0x5063ec=_0x3f8375(0xb),_0x3a61a8=_0x3f8375(0x6),_0x53defa=(function(){var _0x18ba92=a9_0x50c4;function _0x3bfed7(_0x4b3fe1){var _0x305358=a9_0x50c4;this[_0x305358(0x32b)]={},this[_0x305358(0x3ad)]=_0x4b3fe1,this['build']();}return _0x3bfed7['prototype'][_0x18ba92(0x2e5)]=function(_0x26a47c,_0x326579){var _0x2659a4=_0x18ba92;_0x326579?_0x26a47c[_0x2659a4(0x184)](this['domNode'],_0x326579)&&(_0x26a47c[_0x2659a4(0x2e4)](this[_0x2659a4(0x3ad)])!=null?this[_0x2659a4(0x32b)][_0x26a47c['attrName']]=_0x26a47c:delete this[_0x2659a4(0x32b)][_0x26a47c[_0x2659a4(0x231)]]):(_0x26a47c['remove'](this[_0x2659a4(0x3ad)]),delete this['attributes'][_0x26a47c[_0x2659a4(0x231)]]);},_0x3bfed7['prototype'][_0x18ba92(0x19f)]=function(){var _0x513e7a=_0x18ba92,_0x23ca9f=this;this[_0x513e7a(0x32b)]={};var _0x25c717=_0x52e05f['default'][_0x513e7a(0x3aa)](this[_0x513e7a(0x3ad)]),_0x2d85ac=_0x310d72['default']['keys'](this['domNode']),_0xffa089=_0x5063ec[_0x513e7a(0x413)]['keys'](this['domNode']);_0x25c717['concat'](_0x2d85ac)['concat'](_0xffa089)[_0x513e7a(0x3e4)](function(_0x247547){var _0x778d8f=_0x513e7a,_0x13f304=_0x3a61a8[_0x778d8f(0x409)](_0x247547,_0x3a61a8[_0x778d8f(0x293)]['ATTRIBUTE']);_0x13f304 instanceof _0x52e05f[_0x778d8f(0x413)]&&(_0x23ca9f[_0x778d8f(0x32b)][_0x13f304['attrName']]=_0x13f304);});},_0x3bfed7['prototype'][_0x18ba92(0x39f)]=function(_0x16bba3){var _0x4ffc0f=_0x18ba92,_0x4aba95=this;Object[_0x4ffc0f(0x3aa)](this['attributes'])[_0x4ffc0f(0x3e4)](function(_0x2f2a46){var _0x4aadcc=_0x4ffc0f,_0x49069d=_0x4aba95[_0x4aadcc(0x32b)][_0x2f2a46]['value'](_0x4aba95[_0x4aadcc(0x3ad)]);_0x16bba3['format'](_0x2f2a46,_0x49069d);});},_0x3bfed7[_0x18ba92(0x44f)][_0x18ba92(0x2c3)]=function(_0x12778c){var _0x229d67=_0x18ba92,_0x2c11a0=this;this[_0x229d67(0x39f)](_0x12778c),Object[_0x229d67(0x3aa)](this[_0x229d67(0x32b)])[_0x229d67(0x3e4)](function(_0x218413){var _0x3d0b5f=_0x229d67;_0x2c11a0['attributes'][_0x218413][_0x3d0b5f(0x190)](_0x2c11a0[_0x3d0b5f(0x3ad)]);}),this[_0x229d67(0x32b)]={};},_0x3bfed7[_0x18ba92(0x44f)][_0x18ba92(0x253)]=function(){var _0x23db2d=_0x18ba92,_0x22b196=this;return Object[_0x23db2d(0x3aa)](this[_0x23db2d(0x32b)])[_0x23db2d(0x1c8)](function(_0x37a509,_0x4c2958){var _0x5afc17=_0x23db2d;return _0x37a509[_0x4c2958]=_0x22b196[_0x5afc17(0x32b)][_0x4c2958][_0x5afc17(0x2e4)](_0x22b196[_0x5afc17(0x3ad)]),_0x37a509;},{});},_0x3bfed7;}());Object[_0x5ab396(0x289)](_0x39239f,_0x5ab396(0x2ad),{'value':!![]}),_0x39239f[_0x5ab396(0x413)]=_0x53defa;},function(_0x6ea7a7,_0x4d5a7f,_0x3ce1e4){'use strict';var _0x4ee8aa=a9_0x50c4;var _0x43074d=this&&this[_0x4ee8aa(0x42c)]||function(_0x578f26,_0x16ccc3){var _0x1fad41=_0x4ee8aa;for(var _0x10e80d in _0x16ccc3)if(_0x16ccc3[_0x1fad41(0x3ca)](_0x10e80d))_0x578f26[_0x10e80d]=_0x16ccc3[_0x10e80d];function _0x1e7065(){var _0x3956f4=_0x1fad41;this[_0x3956f4(0x2c6)]=_0x578f26;}_0x578f26['prototype']=_0x16ccc3===null?Object[_0x1fad41(0x372)](_0x16ccc3):(_0x1e7065[_0x1fad41(0x44f)]=_0x16ccc3['prototype'],new _0x1e7065());},_0x1b77fe=_0x3ce1e4(0x8);function _0x5162aa(_0x109b2e,_0x49f58e){var _0x3221d5=_0x4ee8aa,_0x5e9006=_0x109b2e['getAttribute'](_0x3221d5(0x332))||'';return _0x5e9006[_0x3221d5(0x428)](/\s+/)['filter'](function(_0x1d2902){var _0x525738=_0x3221d5;return _0x1d2902[_0x525738(0x39a)](_0x49f58e+'-')===0x0;});}var _0x3ad555=function(_0x3e0436){var _0x3c0a73=_0x4ee8aa;_0x43074d(_0x46ba60,_0x3e0436);function _0x46ba60(){_0x3e0436['apply'](this,arguments);}return _0x46ba60[_0x3c0a73(0x3aa)]=function(_0x56fc35){var _0x1e8e67=_0x3c0a73;return(_0x56fc35['getAttribute'](_0x1e8e67(0x332))||'')[_0x1e8e67(0x428)](/\s+/)['map'](function(_0x13eac3){var _0x1e8f26=_0x1e8e67;return _0x13eac3['split']('-')[_0x1e8f26(0x441)](0x0,-0x1)['join']('-');});},_0x46ba60[_0x3c0a73(0x44f)]['add']=function(_0x260557,_0xbe5b94){var _0x1abac4=_0x3c0a73;if(!this[_0x1abac4(0x336)](_0x260557,_0xbe5b94))return![];return this[_0x1abac4(0x190)](_0x260557),_0x260557['classList']['add'](this[_0x1abac4(0x380)]+'-'+_0xbe5b94),!![];},_0x46ba60[_0x3c0a73(0x44f)][_0x3c0a73(0x190)]=function(_0x5b39fd){var _0x2d3872=_0x3c0a73,_0x26e61b=_0x5162aa(_0x5b39fd,this[_0x2d3872(0x380)]);_0x26e61b[_0x2d3872(0x3e4)](function(_0x26358f){var _0x2c13d3=_0x2d3872;_0x5b39fd['classList'][_0x2c13d3(0x190)](_0x26358f);}),_0x5b39fd[_0x2d3872(0x446)]['length']===0x0&&_0x5b39fd['removeAttribute']('class');},_0x46ba60['prototype'][_0x3c0a73(0x2e4)]=function(_0x157f89){var _0x356772=_0x3c0a73,_0x2c16eb=_0x5162aa(_0x157f89,this[_0x356772(0x380)])[0x0]||'';return _0x2c16eb['slice'](this[_0x356772(0x380)][_0x356772(0x19a)]+0x1);},_0x46ba60;}(_0x1b77fe['default']);Object[_0x4ee8aa(0x289)](_0x4d5a7f,_0x4ee8aa(0x2ad),{'value':!![]}),_0x4d5a7f['default']=_0x3ad555;},function(_0x219936,_0x21ab93,_0x3040f7){'use strict';var _0x5925c4=a9_0x50c4;var _0x19c084=this&&this[_0x5925c4(0x42c)]||function(_0x2a7063,_0x260f97){var _0x428f74=_0x5925c4;for(var _0x52cb1f in _0x260f97)if(_0x260f97[_0x428f74(0x3ca)](_0x52cb1f))_0x2a7063[_0x52cb1f]=_0x260f97[_0x52cb1f];function _0x4c4ab8(){this['constructor']=_0x2a7063;}_0x2a7063['prototype']=_0x260f97===null?Object['create'](_0x260f97):(_0x4c4ab8['prototype']=_0x260f97['prototype'],new _0x4c4ab8());},_0x27c3b8=_0x3040f7(0x8);function _0xdd9ff6(_0x5c42cf){var _0x1235da=_0x5925c4,_0x4fa045=_0x5c42cf[_0x1235da(0x428)]('-'),_0x3d35b8=_0x4fa045[_0x1235da(0x441)](0x1)[_0x1235da(0x410)](function(_0x1a71e4){var _0x4e388e=_0x1235da;return _0x1a71e4[0x0][_0x4e388e(0x3a2)]()+_0x1a71e4[_0x4e388e(0x441)](0x1);})[_0x1235da(0x28f)]('');return _0x4fa045[0x0]+_0x3d35b8;}var _0x1ff198=function(_0x5d59d7){var _0x1b7d34=_0x5925c4;_0x19c084(_0x3e2101,_0x5d59d7);function _0x3e2101(){var _0x4bb7c9=a9_0x50c4;_0x5d59d7[_0x4bb7c9(0x39e)](this,arguments);}return _0x3e2101['keys']=function(_0x3bdef8){var _0x4c4ff9=a9_0x50c4;return(_0x3bdef8['getAttribute'](_0x4c4ff9(0x1f3))||'')[_0x4c4ff9(0x428)](';')['map'](function(_0x527992){var _0x2c8ff6=_0x4c4ff9,_0x50ebaa=_0x527992['split'](':');return _0x50ebaa[0x0][_0x2c8ff6(0x405)]();});},_0x3e2101[_0x1b7d34(0x44f)][_0x1b7d34(0x184)]=function(_0x3976bc,_0x33521f){var _0x54eceb=_0x1b7d34;if(!this[_0x54eceb(0x336)](_0x3976bc,_0x33521f))return![];return _0x3976bc['style'][_0xdd9ff6(this['keyName'])]=_0x33521f,!![];},_0x3e2101[_0x1b7d34(0x44f)][_0x1b7d34(0x190)]=function(_0x4379a6){var _0x39a0bc=_0x1b7d34;_0x4379a6[_0x39a0bc(0x1f3)][_0xdd9ff6(this[_0x39a0bc(0x380)])]='',!_0x4379a6[_0x39a0bc(0x3ae)](_0x39a0bc(0x1f3))&&_0x4379a6[_0x39a0bc(0x3e2)](_0x39a0bc(0x1f3));},_0x3e2101[_0x1b7d34(0x44f)][_0x1b7d34(0x2e4)]=function(_0x5e9210){var _0x5319cd=_0x1b7d34;return _0x5e9210['style'][_0xdd9ff6(this[_0x5319cd(0x380)])];},_0x3e2101;}(_0x27c3b8[_0x5925c4(0x413)]);Object['defineProperty'](_0x21ab93,_0x5925c4(0x2ad),{'value':!![]}),_0x21ab93[_0x5925c4(0x413)]=_0x1ff198;},function(_0x356d65,_0x305970,_0x48d6b9){'use strict';var _0x98ec4=a9_0x50c4;var _0x1b261a=this&&this['__extends']||function(_0x26a808,_0x1d2ddc){var _0x3fa376=a9_0x50c4;for(var _0x2fd775 in _0x1d2ddc)if(_0x1d2ddc['hasOwnProperty'](_0x2fd775))_0x26a808[_0x2fd775]=_0x1d2ddc[_0x2fd775];function _0x22a5ed(){var _0x428a3f=a9_0x50c4;this[_0x428a3f(0x2c6)]=_0x26a808;}_0x26a808[_0x3fa376(0x44f)]=_0x1d2ddc===null?Object[_0x3fa376(0x372)](_0x1d2ddc):(_0x22a5ed[_0x3fa376(0x44f)]=_0x1d2ddc['prototype'],new _0x22a5ed());},_0x1da7db=_0x48d6b9(0x5),_0x2c330b=_0x48d6b9(0x6),_0x2defb5=function(_0x480eed){var _0x454689=a9_0x50c4;_0x1b261a(_0x5714db,_0x480eed);function _0x5714db(){var _0x11e41f=a9_0x50c4;_0x480eed[_0x11e41f(0x39e)](this,arguments);}return _0x5714db[_0x454689(0x2e4)]=function(_0x1f905e){return!![];},_0x5714db[_0x454689(0x44f)][_0x454689(0x320)]=function(_0x586126,_0x41414c){var _0x31b0a1=_0x454689;if(_0x586126!==this[_0x31b0a1(0x3ad)])return-0x1;return Math[_0x31b0a1(0x384)](_0x41414c,0x1);},_0x5714db[_0x454689(0x44f)][_0x454689(0x24b)]=function(_0x160b3f,_0xcdc959){var _0x278c4b=_0x454689,_0x20c095=[]['indexOf'][_0x278c4b(0x1e2)](this[_0x278c4b(0x349)][_0x278c4b(0x3ad)][_0x278c4b(0x449)],this[_0x278c4b(0x3ad)]);if(_0x160b3f>0x0)_0x20c095+=0x1;return[this[_0x278c4b(0x349)][_0x278c4b(0x3ad)],_0x20c095];},_0x5714db[_0x454689(0x44f)][_0x454689(0x2e4)]=function(){var _0x1e0c60=_0x454689;return _0x33d2bc={},_0x33d2bc[this[_0x1e0c60(0x3a6)][_0x1e0c60(0x242)]]=this['statics'][_0x1e0c60(0x2e4)](this[_0x1e0c60(0x3ad)])||!![],_0x33d2bc;var _0x33d2bc;},_0x5714db[_0x454689(0x368)]=_0x2c330b[_0x454689(0x293)][_0x454689(0x34c)],_0x5714db;}(_0x1da7db['default']);Object[_0x98ec4(0x289)](_0x305970,'__esModule',{'value':!![]}),_0x305970[_0x98ec4(0x413)]=_0x2defb5;},function(_0x2a7d23,_0x473011,_0x592797){'use strict';var _0x3cfe0b=a9_0x50c4;var _0x533c61=this&&this[_0x3cfe0b(0x42c)]||function(_0x2d5e57,_0x3e05bd){var _0x118c0d=_0x3cfe0b;for(var _0x29891a in _0x3e05bd)if(_0x3e05bd[_0x118c0d(0x3ca)](_0x29891a))_0x2d5e57[_0x29891a]=_0x3e05bd[_0x29891a];function _0x434025(){var _0x123ea0=_0x118c0d;this[_0x123ea0(0x2c6)]=_0x2d5e57;}_0x2d5e57[_0x118c0d(0x44f)]=_0x3e05bd===null?Object['create'](_0x3e05bd):(_0x434025['prototype']=_0x3e05bd['prototype'],new _0x434025());},_0x255f03=_0x592797(0x3),_0x45a19=_0x592797(0x6),_0x39e28a={'attributes':!![],'characterData':!![],'characterDataOldValue':!![],'childList':!![],'subtree':!![]},_0x5b66aa=0x64,_0x31d315=function(_0x2cbf97){var _0x1408e0=_0x3cfe0b;_0x533c61(_0x3dc999,_0x2cbf97);function _0x3dc999(_0x58ff19){var _0x26839a=a9_0x50c4,_0x48df9f=this;_0x2cbf97[_0x26839a(0x1e2)](this,_0x58ff19),this[_0x26839a(0x349)]=null,this[_0x26839a(0x250)]=new MutationObserver(function(_0x63cc14){var _0x45f25b=_0x26839a;_0x48df9f[_0x45f25b(0x22f)](_0x63cc14);}),this['observer'][_0x26839a(0x194)](this[_0x26839a(0x3ad)],_0x39e28a);}return _0x3dc999[_0x1408e0(0x44f)][_0x1408e0(0x1b7)]=function(){var _0x8c7a4c=_0x1408e0;_0x2cbf97[_0x8c7a4c(0x44f)][_0x8c7a4c(0x1b7)][_0x8c7a4c(0x1e2)](this),this['observer'][_0x8c7a4c(0x1df)]();},_0x3dc999[_0x1408e0(0x44f)]['deleteAt']=function(_0x495822,_0x1e5921){var _0x1501fa=_0x1408e0;this[_0x1501fa(0x22f)](),_0x495822===0x0&&_0x1e5921===this[_0x1501fa(0x19a)]()?this[_0x1501fa(0x3b7)]['forEach'](function(_0x419a38){var _0x28f6fc=_0x1501fa;_0x419a38[_0x28f6fc(0x190)]();}):_0x2cbf97[_0x1501fa(0x44f)][_0x1501fa(0x3c3)][_0x1501fa(0x1e2)](this,_0x495822,_0x1e5921);},_0x3dc999['prototype'][_0x1408e0(0x459)]=function(_0x22439c,_0x4dde81,_0x178e7b,_0x48e503){var _0x147738=_0x1408e0;this[_0x147738(0x22f)](),_0x2cbf97[_0x147738(0x44f)][_0x147738(0x459)][_0x147738(0x1e2)](this,_0x22439c,_0x4dde81,_0x178e7b,_0x48e503);},_0x3dc999['prototype']['insertAt']=function(_0x1b1ca6,_0x4648c0,_0x537fd7){var _0x229e64=_0x1408e0;this[_0x229e64(0x22f)](),_0x2cbf97[_0x229e64(0x44f)][_0x229e64(0x307)][_0x229e64(0x1e2)](this,_0x1b1ca6,_0x4648c0,_0x537fd7);},_0x3dc999['prototype'][_0x1408e0(0x23e)]=function(_0x15fc62){var _0x426458=_0x1408e0,_0x4567fd=this;_0x15fc62===void 0x0&&(_0x15fc62=[]);_0x2cbf97['prototype'][_0x426458(0x23e)]['call'](this),_0x15fc62[_0x426458(0x1bf)][_0x426458(0x39e)](_0x15fc62,this[_0x426458(0x250)]['takeRecords']());var _0x4358f8=function(_0x5b74d6,_0x7e687){var _0x1afc94=_0x426458;_0x7e687===void 0x0&&(_0x7e687=!![]);if(_0x5b74d6==null||_0x5b74d6===_0x4567fd)return;if(_0x5b74d6[_0x1afc94(0x3ad)][_0x1afc94(0x37d)]==null)return;_0x5b74d6[_0x1afc94(0x3ad)][_0x45a19[_0x1afc94(0x294)]]['mutations']==null&&(_0x5b74d6[_0x1afc94(0x3ad)][_0x45a19[_0x1afc94(0x294)]][_0x1afc94(0x18f)]=[]);if(_0x7e687)_0x4358f8(_0x5b74d6[_0x1afc94(0x349)]);},_0x245f60=function(_0x3373ef){var _0x355c90=_0x426458;if(_0x3373ef[_0x355c90(0x3ad)][_0x45a19[_0x355c90(0x294)]]==null||_0x3373ef['domNode'][_0x45a19['DATA_KEY']][_0x355c90(0x18f)]==null)return;_0x3373ef instanceof _0x255f03[_0x355c90(0x413)]&&_0x3373ef[_0x355c90(0x3b7)][_0x355c90(0x3e4)](_0x245f60),_0x3373ef[_0x355c90(0x23e)]();},_0xf38641=_0x15fc62;for(var _0x259947=0x0;_0xf38641['length']>0x0;_0x259947+=0x1){if(_0x259947>=_0x5b66aa)throw new Error('[Parchment]\x20Maximum\x20optimize\x20iterations\x20reached');_0xf38641['forEach'](function(_0x283937){var _0x19edf8=_0x426458,_0x4eb961=_0x45a19[_0x19edf8(0x303)](_0x283937[_0x19edf8(0x3c2)],!![]);if(_0x4eb961==null)return;if(_0x4eb961[_0x19edf8(0x3ad)]===_0x283937['target']){if(_0x283937['type']===_0x19edf8(0x29c))_0x4358f8(_0x45a19[_0x19edf8(0x303)](_0x283937['previousSibling'],![])),[]['forEach']['call'](_0x283937[_0x19edf8(0x359)],function(_0x1c4cf4){var _0x842b77=_0x19edf8,_0x1d614d=_0x45a19[_0x842b77(0x303)](_0x1c4cf4,![]);_0x4358f8(_0x1d614d,![]),_0x1d614d instanceof _0x255f03[_0x842b77(0x413)]&&_0x1d614d['children'][_0x842b77(0x3e4)](function(_0xd59ea0){_0x4358f8(_0xd59ea0,![]);});});else _0x283937[_0x19edf8(0x2d9)]===_0x19edf8(0x32b)&&_0x4358f8(_0x4eb961[_0x19edf8(0x2f9)]);}_0x4358f8(_0x4eb961);}),this[_0x426458(0x3b7)][_0x426458(0x3e4)](_0x245f60),_0xf38641=this[_0x426458(0x250)][_0x426458(0x18c)](),_0x15fc62[_0x426458(0x1bf)][_0x426458(0x39e)](_0x15fc62,_0xf38641);}},_0x3dc999[_0x1408e0(0x44f)][_0x1408e0(0x22f)]=function(_0x133200){var _0x1fe77d=_0x1408e0,_0x5d8351=this;_0x133200=_0x133200||this['observer'][_0x1fe77d(0x18c)](),_0x133200[_0x1fe77d(0x410)](function(_0x434759){var _0xcc1ea1=_0x1fe77d,_0x204ede=_0x45a19[_0xcc1ea1(0x303)](_0x434759[_0xcc1ea1(0x3c2)],!![]);if(_0x204ede==null)return;return _0x204ede[_0xcc1ea1(0x3ad)][_0x45a19['DATA_KEY']][_0xcc1ea1(0x18f)]==null?(_0x204ede[_0xcc1ea1(0x3ad)][_0x45a19['DATA_KEY']]['mutations']=[_0x434759],_0x204ede):(_0x204ede[_0xcc1ea1(0x3ad)][_0x45a19[_0xcc1ea1(0x294)]][_0xcc1ea1(0x18f)][_0xcc1ea1(0x1bf)](_0x434759),null);})[_0x1fe77d(0x3e4)](function(_0x5e534a){var _0x187f06=_0x1fe77d;if(_0x5e534a==null||_0x5e534a===_0x5d8351)return;_0x5e534a['update'](_0x5e534a[_0x187f06(0x3ad)][_0x45a19[_0x187f06(0x294)]][_0x187f06(0x18f)]||[]);}),this[_0x1fe77d(0x3ad)][_0x45a19[_0x1fe77d(0x294)]]['mutations']!=null&&_0x2cbf97['prototype'][_0x1fe77d(0x22f)][_0x1fe77d(0x1e2)](this,this['domNode'][_0x45a19[_0x1fe77d(0x294)]][_0x1fe77d(0x18f)]),this[_0x1fe77d(0x23e)](_0x133200);},_0x3dc999[_0x1408e0(0x242)]=_0x1408e0(0x36a),_0x3dc999['defaultChild']=_0x1408e0(0x394),_0x3dc999[_0x1408e0(0x368)]=_0x45a19[_0x1408e0(0x293)][_0x1408e0(0x2c2)],_0x3dc999[_0x1408e0(0x200)]='DIV',_0x3dc999;}(_0x255f03[_0x3cfe0b(0x413)]);Object[_0x3cfe0b(0x289)](_0x473011,_0x3cfe0b(0x2ad),{'value':!![]}),_0x473011[_0x3cfe0b(0x413)]=_0x31d315;},function(_0x1bdabe,_0x10ddd7,_0x277825){'use strict';var _0x547804=a9_0x50c4;var _0x2e21ca=this&&this[_0x547804(0x42c)]||function(_0x3f7900,_0x2fd3f2){var _0x1f794a=_0x547804;for(var _0x356a78 in _0x2fd3f2)if(_0x2fd3f2[_0x1f794a(0x3ca)](_0x356a78))_0x3f7900[_0x356a78]=_0x2fd3f2[_0x356a78];function _0x1fe559(){var _0x278b7a=_0x1f794a;this[_0x278b7a(0x2c6)]=_0x3f7900;}_0x3f7900[_0x1f794a(0x44f)]=_0x2fd3f2===null?Object['create'](_0x2fd3f2):(_0x1fe559['prototype']=_0x2fd3f2[_0x1f794a(0x44f)],new _0x1fe559());},_0x2a3c76=_0x277825(0x7),_0x35ba20=_0x277825(0x6);function _0x5e7fca(_0x347a6a,_0x4c56c1){var _0x383bc9=_0x547804;if(Object[_0x383bc9(0x3aa)](_0x347a6a)['length']!==Object[_0x383bc9(0x3aa)](_0x4c56c1)[_0x383bc9(0x19a)])return![];for(var _0x2ba362 in _0x347a6a){if(_0x347a6a[_0x2ba362]!==_0x4c56c1[_0x2ba362])return![];}return!![];}var _0x3fe577=function(_0x5e05ac){var _0xab4419=_0x547804;_0x2e21ca(_0x1e8941,_0x5e05ac);function _0x1e8941(){var _0x49bb3a=a9_0x50c4;_0x5e05ac[_0x49bb3a(0x39e)](this,arguments);}return _0x1e8941['formats']=function(_0x2ab518){var _0x38be2d=a9_0x50c4;if(_0x2ab518[_0x38be2d(0x200)]===_0x1e8941[_0x38be2d(0x200)])return undefined;return _0x5e05ac['formats']['call'](this,_0x2ab518);},_0x1e8941['prototype']['format']=function(_0x447752,_0x570f62){var _0x24b006=a9_0x50c4,_0x20bf1d=this;_0x447752===this['statics'][_0x24b006(0x242)]&&!_0x570f62?(this[_0x24b006(0x3b7)][_0x24b006(0x3e4)](function(_0xa98ca4){var _0x1b500d=_0x24b006;!(_0xa98ca4 instanceof _0x2a3c76[_0x1b500d(0x413)])&&(_0xa98ca4=_0xa98ca4[_0x1b500d(0x37b)](_0x1e8941[_0x1b500d(0x242)],!![])),_0x20bf1d[_0x1b500d(0x32b)][_0x1b500d(0x39f)](_0xa98ca4);}),this[_0x24b006(0x1c1)]()):_0x5e05ac['prototype'][_0x24b006(0x1d9)][_0x24b006(0x1e2)](this,_0x447752,_0x570f62);},_0x1e8941['prototype'][_0xab4419(0x459)]=function(_0x5ab87b,_0x5c0e8a,_0x26d21e,_0x34e6a1){var _0xc1725=_0xab4419;if(this[_0xc1725(0x1a2)]()[_0x26d21e]!=null||_0x35ba20['query'](_0x26d21e,_0x35ba20[_0xc1725(0x293)]['ATTRIBUTE'])){var _0x215900=this[_0xc1725(0x1d5)](_0x5ab87b,_0x5c0e8a);_0x215900[_0xc1725(0x1d9)](_0x26d21e,_0x34e6a1);}else _0x5e05ac[_0xc1725(0x44f)]['formatAt'][_0xc1725(0x1e2)](this,_0x5ab87b,_0x5c0e8a,_0x26d21e,_0x34e6a1);},_0x1e8941['prototype']['optimize']=function(){var _0x2924f1=_0xab4419;_0x5e05ac['prototype']['optimize'][_0x2924f1(0x1e2)](this);var _0x43227d=this[_0x2924f1(0x1a2)]();if(Object[_0x2924f1(0x3aa)](_0x43227d)[_0x2924f1(0x19a)]===0x0)return this[_0x2924f1(0x1c1)]();var _0x2a0c96=this[_0x2924f1(0x211)];_0x2a0c96 instanceof _0x1e8941&&_0x2a0c96[_0x2924f1(0x2f9)]===this&&_0x5e7fca(_0x43227d,_0x2a0c96[_0x2924f1(0x1a2)]())&&(_0x2a0c96['moveChildren'](this),_0x2a0c96['remove']());},_0x1e8941[_0xab4419(0x242)]=_0xab4419(0x453),_0x1e8941[_0xab4419(0x368)]=_0x35ba20[_0xab4419(0x293)]['INLINE_BLOT'],_0x1e8941[_0xab4419(0x200)]=_0xab4419(0x390),_0x1e8941;}(_0x2a3c76['default']);Object[_0x547804(0x289)](_0x10ddd7,_0x547804(0x2ad),{'value':!![]}),_0x10ddd7[_0x547804(0x413)]=_0x3fe577;},function(_0x1a64c1,_0x1d2d71,_0x11bb7e){'use strict';var _0x2dd855=a9_0x50c4;var _0x4af5b3=this&&this[_0x2dd855(0x42c)]||function(_0x351621,_0x3b4341){var _0xaf1c3a=_0x2dd855;for(var _0xe36e5b in _0x3b4341)if(_0x3b4341[_0xaf1c3a(0x3ca)](_0xe36e5b))_0x351621[_0xe36e5b]=_0x3b4341[_0xe36e5b];function _0x1d364a(){var _0x21a57d=_0xaf1c3a;this[_0x21a57d(0x2c6)]=_0x351621;}_0x351621[_0xaf1c3a(0x44f)]=_0x3b4341===null?Object[_0xaf1c3a(0x372)](_0x3b4341):(_0x1d364a[_0xaf1c3a(0x44f)]=_0x3b4341[_0xaf1c3a(0x44f)],new _0x1d364a());},_0x216c68=_0x11bb7e(0x7),_0x419ff3=_0x11bb7e(0x6),_0x447c20=function(_0x12ba75){var _0x183d3d=_0x2dd855;_0x4af5b3(_0x5bdb35,_0x12ba75);function _0x5bdb35(){var _0x203265=a9_0x50c4;_0x12ba75[_0x203265(0x39e)](this,arguments);}return _0x5bdb35['formats']=function(_0x22eae9){var _0x32df80=a9_0x50c4,_0x472461=_0x419ff3[_0x32df80(0x409)](_0x5bdb35[_0x32df80(0x242)])['tagName'];if(_0x22eae9[_0x32df80(0x200)]===_0x472461)return undefined;return _0x12ba75[_0x32df80(0x1a2)][_0x32df80(0x1e2)](this,_0x22eae9);},_0x5bdb35[_0x183d3d(0x44f)][_0x183d3d(0x1d9)]=function(_0x7aab4f,_0x3b4ce4){var _0x4eeab9=_0x183d3d;_0x7aab4f===this[_0x4eeab9(0x3a6)][_0x4eeab9(0x242)]&&!_0x3b4ce4?this[_0x4eeab9(0x2a4)](_0x5bdb35['blotName']):_0x12ba75[_0x4eeab9(0x44f)][_0x4eeab9(0x1d9)][_0x4eeab9(0x1e2)](this,_0x7aab4f,_0x3b4ce4);},_0x5bdb35[_0x183d3d(0x44f)][_0x183d3d(0x459)]=function(_0x3b8e32,_0x15ff31,_0x74aaee,_0x40f3d5){var _0x214d45=_0x183d3d;_0x419ff3[_0x214d45(0x409)](_0x74aaee,_0x419ff3['Scope'][_0x214d45(0x30e)])!=null?this[_0x214d45(0x1d9)](_0x74aaee,_0x40f3d5):_0x12ba75['prototype']['formatAt'][_0x214d45(0x1e2)](this,_0x3b8e32,_0x15ff31,_0x74aaee,_0x40f3d5);},_0x5bdb35[_0x183d3d(0x44f)][_0x183d3d(0x307)]=function(_0x3f0bfe,_0x2dd177,_0x370f1a){var _0x32e326=_0x183d3d;if(_0x370f1a==null||_0x419ff3['query'](_0x2dd177,_0x419ff3[_0x32e326(0x293)][_0x32e326(0x2bf)])!=null)_0x12ba75['prototype']['insertAt'][_0x32e326(0x1e2)](this,_0x3f0bfe,_0x2dd177,_0x370f1a);else{var _0x235d97=this['split'](_0x3f0bfe),_0x43b3f3=_0x419ff3['create'](_0x2dd177,_0x370f1a);_0x235d97[_0x32e326(0x349)][_0x32e326(0x3fc)](_0x43b3f3,_0x235d97);}},_0x5bdb35['blotName']='block',_0x5bdb35[_0x183d3d(0x368)]=_0x419ff3[_0x183d3d(0x293)][_0x183d3d(0x2c2)],_0x5bdb35[_0x183d3d(0x200)]='P',_0x5bdb35;}(_0x216c68[_0x2dd855(0x413)]);Object[_0x2dd855(0x289)](_0x1d2d71,_0x2dd855(0x2ad),{'value':!![]}),_0x1d2d71[_0x2dd855(0x413)]=_0x447c20;},function(_0xf1366,_0x5a1be8,_0xf00d52){'use strict';var _0x317172=a9_0x50c4;var _0x1ed949=this&&this[_0x317172(0x42c)]||function(_0x37e416,_0x49e940){var _0x2e5658=_0x317172;for(var _0x339947 in _0x49e940)if(_0x49e940[_0x2e5658(0x3ca)](_0x339947))_0x37e416[_0x339947]=_0x49e940[_0x339947];function _0x2b2d9b(){this['constructor']=_0x37e416;}_0x37e416[_0x2e5658(0x44f)]=_0x49e940===null?Object[_0x2e5658(0x372)](_0x49e940):(_0x2b2d9b['prototype']=_0x49e940[_0x2e5658(0x44f)],new _0x2b2d9b());},_0x57a448=_0xf00d52(0xc),_0x27249e=function(_0x13469d){var _0x4f88c3=_0x317172;_0x1ed949(_0x310a99,_0x13469d);function _0x310a99(){_0x13469d['apply'](this,arguments);}return _0x310a99[_0x4f88c3(0x1a2)]=function(_0x35d209){return undefined;},_0x310a99[_0x4f88c3(0x44f)]['format']=function(_0x195e0e,_0x53f8bf){_0x13469d['prototype']['formatAt']['call'](this,0x0,this['length'](),_0x195e0e,_0x53f8bf);},_0x310a99[_0x4f88c3(0x44f)][_0x4f88c3(0x459)]=function(_0x5a6888,_0x3495dc,_0xcd0b16,_0xf5b98c){var _0x31a509=_0x4f88c3;_0x5a6888===0x0&&_0x3495dc===this[_0x31a509(0x19a)]()?this[_0x31a509(0x1d9)](_0xcd0b16,_0xf5b98c):_0x13469d[_0x31a509(0x44f)][_0x31a509(0x459)]['call'](this,_0x5a6888,_0x3495dc,_0xcd0b16,_0xf5b98c);},_0x310a99[_0x4f88c3(0x44f)][_0x4f88c3(0x1a2)]=function(){var _0x26d77c=_0x4f88c3;return this[_0x26d77c(0x3a6)]['formats'](this['domNode']);},_0x310a99;}(_0x57a448[_0x317172(0x413)]);Object[_0x317172(0x289)](_0x5a1be8,'__esModule',{'value':!![]}),_0x5a1be8[_0x317172(0x413)]=_0x27249e;},function(_0x4d3e37,_0x36e166,_0x429c10){'use strict';var _0x11a20f=a9_0x50c4;var _0x10a9b8=this&&this[_0x11a20f(0x42c)]||function(_0xe240b4,_0x412cc3){var _0x4fd4e8=_0x11a20f;for(var _0x1711f6 in _0x412cc3)if(_0x412cc3[_0x4fd4e8(0x3ca)](_0x1711f6))_0xe240b4[_0x1711f6]=_0x412cc3[_0x1711f6];function _0x5a6309(){var _0x977dcc=_0x4fd4e8;this[_0x977dcc(0x2c6)]=_0xe240b4;}_0xe240b4['prototype']=_0x412cc3===null?Object[_0x4fd4e8(0x372)](_0x412cc3):(_0x5a6309[_0x4fd4e8(0x44f)]=_0x412cc3[_0x4fd4e8(0x44f)],new _0x5a6309());},_0x132a87=_0x429c10(0xc),_0x1425c1=_0x429c10(0x6),_0x21b4a0=function(_0x57848d){var _0x49086b=_0x11a20f;_0x10a9b8(_0x2e908c,_0x57848d);function _0x2e908c(_0x41aefd){var _0x245948=a9_0x50c4;_0x57848d[_0x245948(0x1e2)](this,_0x41aefd),this[_0x245948(0x41d)]=this['statics'][_0x245948(0x2e4)](this['domNode']);}return _0x2e908c['create']=function(_0x2e8bac){var _0x3589e3=a9_0x50c4;return document[_0x3589e3(0x262)](_0x2e8bac);},_0x2e908c[_0x49086b(0x2e4)]=function(_0x320d3c){return _0x320d3c['data'];},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x3c3)]=function(_0x2bd282,_0x52a5bb){var _0x2da0a0=_0x49086b;this['domNode'][_0x2da0a0(0x27f)]=this[_0x2da0a0(0x41d)]=this[_0x2da0a0(0x41d)][_0x2da0a0(0x441)](0x0,_0x2bd282)+this[_0x2da0a0(0x41d)]['slice'](_0x2bd282+_0x52a5bb);},_0x2e908c[_0x49086b(0x44f)]['index']=function(_0x508b1d,_0x9ef3fd){if(this['domNode']===_0x508b1d)return _0x9ef3fd;return-0x1;},_0x2e908c['prototype'][_0x49086b(0x307)]=function(_0x15a8e5,_0xbb7e92,_0x33143a){var _0x2c9235=_0x49086b;_0x33143a==null?(this[_0x2c9235(0x41d)]=this[_0x2c9235(0x41d)][_0x2c9235(0x441)](0x0,_0x15a8e5)+_0xbb7e92+this['text']['slice'](_0x15a8e5),this[_0x2c9235(0x3ad)][_0x2c9235(0x27f)]=this['text']):_0x57848d[_0x2c9235(0x44f)][_0x2c9235(0x307)][_0x2c9235(0x1e2)](this,_0x15a8e5,_0xbb7e92,_0x33143a);},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x19a)]=function(){var _0x5be880=_0x49086b;return this['text'][_0x5be880(0x19a)];},_0x2e908c['prototype'][_0x49086b(0x23e)]=function(){var _0x4ad612=_0x49086b;_0x57848d[_0x4ad612(0x44f)][_0x4ad612(0x23e)][_0x4ad612(0x1e2)](this),this[_0x4ad612(0x41d)]=this[_0x4ad612(0x3a6)][_0x4ad612(0x2e4)](this['domNode']);if(this[_0x4ad612(0x41d)]['length']===0x0)this[_0x4ad612(0x190)]();else this[_0x4ad612(0x211)]instanceof _0x2e908c&&this[_0x4ad612(0x211)]['prev']===this&&(this[_0x4ad612(0x307)](this['length'](),this[_0x4ad612(0x211)][_0x4ad612(0x2e4)]()),this[_0x4ad612(0x211)][_0x4ad612(0x190)]());},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x24b)]=function(_0x3d8abb,_0x54e81){return _0x54e81===void 0x0&&(_0x54e81=![]),[this['domNode'],_0x3d8abb];},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x428)]=function(_0x2bd364,_0x4fcac7){var _0x4a5068=_0x49086b;_0x4fcac7===void 0x0&&(_0x4fcac7=![]);if(!_0x4fcac7){if(_0x2bd364===0x0)return this;if(_0x2bd364===this[_0x4a5068(0x19a)]())return this[_0x4a5068(0x211)];}var _0x1b818b=_0x1425c1['create'](this[_0x4a5068(0x3ad)][_0x4a5068(0x31f)](_0x2bd364));return this['parent'][_0x4a5068(0x3fc)](_0x1b818b,this[_0x4a5068(0x211)]),this[_0x4a5068(0x41d)]=this[_0x4a5068(0x3a6)][_0x4a5068(0x2e4)](this['domNode']),_0x1b818b;},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x22f)]=function(_0x3dc935){var _0x205da2=_0x49086b,_0x2748bc=this;_0x3dc935[_0x205da2(0x3a8)](function(_0x39aced){var _0x1cbe81=_0x205da2;return _0x39aced[_0x1cbe81(0x2d9)]===_0x1cbe81(0x1e8)&&_0x39aced[_0x1cbe81(0x3c2)]===_0x2748bc[_0x1cbe81(0x3ad)];})&&(this['text']=this[_0x205da2(0x3a6)][_0x205da2(0x2e4)](this[_0x205da2(0x3ad)]));},_0x2e908c[_0x49086b(0x44f)][_0x49086b(0x2e4)]=function(){var _0xa2bbb=_0x49086b;return this[_0xa2bbb(0x41d)];},_0x2e908c[_0x49086b(0x242)]=_0x49086b(0x41d),_0x2e908c[_0x49086b(0x368)]=_0x1425c1[_0x49086b(0x293)][_0x49086b(0x34c)],_0x2e908c;}(_0x132a87[_0x11a20f(0x413)]);Object[_0x11a20f(0x289)](_0x36e166,_0x11a20f(0x2ad),{'value':!![]}),_0x36e166[_0x11a20f(0x413)]=_0x21b4a0;},function(_0x16c318,_0x429926,_0x1c5dce){'use strict';var _0x2686a8=a9_0x50c4;Object[_0x2686a8(0x289)](_0x429926,_0x2686a8(0x2ad),{'value':!![]}),_0x429926[_0x2686a8(0x413)]=_0x429926['overload']=_0x429926[_0x2686a8(0x35d)]=undefined;var _0x4dd135=typeof Symbol===_0x2686a8(0x33b)&&typeof Symbol[_0x2686a8(0x2e8)]==='symbol'?function(_0x274321){return typeof _0x274321;}:function(_0x180567){var _0x55ce7c=_0x2686a8;return _0x180567&&typeof Symbol===_0x55ce7c(0x33b)&&_0x180567['constructor']===Symbol?_0x55ce7c(0x2a8):typeof _0x180567;},_0x6e534d=(function(){function _0x3f000c(_0x4c823d,_0x3931d4){var _0x125d82=a9_0x50c4,_0x46a578=[],_0x5e7909=!![],_0x1df681=![],_0xb9965=undefined;try{for(var _0x481677=_0x4c823d[Symbol[_0x125d82(0x2e8)]](),_0x16fade;!(_0x5e7909=(_0x16fade=_0x481677[_0x125d82(0x211)]())[_0x125d82(0x25a)]);_0x5e7909=!![]){_0x46a578[_0x125d82(0x1bf)](_0x16fade['value']);if(_0x3931d4&&_0x46a578[_0x125d82(0x19a)]===_0x3931d4)break;}}catch(_0x48032d){_0x1df681=!![],_0xb9965=_0x48032d;}finally{try{if(!_0x5e7909&&_0x481677['return'])_0x481677[_0x125d82(0x222)]();}finally{if(_0x1df681)throw _0xb9965;}}return _0x46a578;}return function(_0x420b59,_0x43050e){var _0x531b8d=a9_0x50c4;if(Array['isArray'](_0x420b59))return _0x420b59;else{if(Symbol[_0x531b8d(0x2e8)]in Object(_0x420b59))return _0x3f000c(_0x420b59,_0x43050e);else throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance');}};}()),_0x48d83a=(function(){function _0x3ea9c0(_0x21d2dd,_0x1894bf){var _0x5350f1=a9_0x50c4;for(var _0x277e82=0x0;_0x277e82<_0x1894bf['length'];_0x277e82++){var _0x3407ff=_0x1894bf[_0x277e82];_0x3407ff[_0x5350f1(0x1eb)]=_0x3407ff[_0x5350f1(0x1eb)]||![],_0x3407ff[_0x5350f1(0x203)]=!![];if(_0x5350f1(0x2e4)in _0x3407ff)_0x3407ff[_0x5350f1(0x40f)]=!![];Object['defineProperty'](_0x21d2dd,_0x3407ff['key'],_0x3407ff);}}return function(_0x1c8ec6,_0x3cf1c0,_0x13a6ac){var _0x3d4563=a9_0x50c4;if(_0x3cf1c0)_0x3ea9c0(_0x1c8ec6[_0x3d4563(0x44f)],_0x3cf1c0);if(_0x13a6ac)_0x3ea9c0(_0x1c8ec6,_0x13a6ac);return _0x1c8ec6;};}());_0x1c5dce(0x13);var _0xca4562=_0x1c5dce(0x14),_0x436adb=_0x20c1be(_0xca4562),_0x250ec8=_0x1c5dce(0x1b),_0x356938=_0x20c1be(_0x250ec8),_0x5ce5b4=_0x1c5dce(0x1c),_0xbdb501=_0x20c1be(_0x5ce5b4),_0x422713=_0x1c5dce(0x27),_0x3d3c04=_0x20c1be(_0x422713),_0x38ecbd=_0x1c5dce(0x2),_0x5dea49=_0x20c1be(_0x38ecbd),_0x1b8617=_0x1c5dce(0x28),_0x214bc9=_0x20c1be(_0x1b8617),_0x7498f4=_0x1c5dce(0x19),_0x4f2a4e=_0x20c1be(_0x7498f4),_0xd367e=_0x1c5dce(0x1e),_0x23aeb4=_0x20c1be(_0xd367e),_0x3f13e3=_0x1c5dce(0x29),_0x4cf03c=_0x20c1be(_0x3f13e3);function _0x20c1be(_0x31f607){var _0x4bcf95=_0x2686a8;return _0x31f607&&_0x31f607[_0x4bcf95(0x2ad)]?_0x31f607:{'default':_0x31f607};}function _0x29d94a(_0x41722a,_0x19db8c){var _0x44d7c7=_0x2686a8;if(!(_0x41722a instanceof _0x19db8c))throw new TypeError(_0x44d7c7(0x2eb));}var _0x32aa5f=(0x0,_0x23aeb4[_0x2686a8(0x413)])(_0x2686a8(0x41b)),_0x4039bf=(function(){var _0x359060=_0x2686a8;_0x48d83a(_0x13c824,null,[{'key':_0x359060(0x259),'value':function _0x2f026c(_0x9377fd){var _0x3aaf3e=_0x359060;_0x23aeb4[_0x3aaf3e(0x413)]['level'](_0x9377fd);}},{'key':_0x359060(0x308),'value':function _0x5ac2bc(_0x3f590a){var _0x49b9a9=_0x359060;return this[_0x49b9a9(0x1c2)][_0x3f590a]==null&&_0x32aa5f['error'](_0x49b9a9(0x315)+_0x3f590a+_0x49b9a9(0x352)),this[_0x49b9a9(0x1c2)][_0x3f590a];}},{'key':_0x359060(0x425),'value':function _0x4f1235(_0x10054a,_0x4fb0f5){var _0x4c24b2=_0x359060,_0x14560d=this,_0xf63258=arguments[_0x4c24b2(0x19a)]<=0x2||arguments[0x2]===undefined?![]:arguments[0x2];if(typeof _0x10054a!==_0x4c24b2(0x187)){var _0x263541=_0x10054a[_0x4c24b2(0x231)]||_0x10054a[_0x4c24b2(0x242)];typeof _0x263541===_0x4c24b2(0x187)?this[_0x4c24b2(0x425)](_0x4c24b2(0x1a7)+_0x263541,_0x10054a,_0x4fb0f5):Object['keys'](_0x10054a)[_0x4c24b2(0x3e4)](function(_0x4a2f8b){var _0x3ad950=_0x4c24b2;_0x14560d[_0x3ad950(0x425)](_0x4a2f8b,_0x10054a[_0x4a2f8b],_0x4fb0f5);});}else this[_0x4c24b2(0x1c2)][_0x10054a]!=null&&!_0xf63258&&_0x32aa5f[_0x4c24b2(0x321)]('Overwriting\x20'+_0x10054a+_0x4c24b2(0x43e),_0x4fb0f5),this[_0x4c24b2(0x1c2)][_0x10054a]=_0x4fb0f5,(_0x10054a['startsWith'](_0x4c24b2(0x367))||_0x10054a['startsWith']('formats/'))&&_0x4fb0f5[_0x4c24b2(0x242)]!=='abstract'&&_0x5dea49[_0x4c24b2(0x413)][_0x4c24b2(0x425)](_0x4fb0f5);}}]);function _0x13c824(_0xa66d48){var _0x4a27d5=_0x359060,_0x2a1383=this,_0x1d10a2=arguments[_0x4a27d5(0x19a)]<=0x1||arguments[0x1]===undefined?{}:arguments[0x1];_0x29d94a(this,_0x13c824),_0x1d10a2=_0x2d9a28(_0xa66d48,_0x1d10a2),this[_0x4a27d5(0x2c9)]=_0x1d10a2[_0x4a27d5(0x2c9)];if(this['container']==null)return _0x32aa5f[_0x4a27d5(0x2e2)](_0x4a27d5(0x252),_0xa66d48);_0x1d10a2[_0x4a27d5(0x259)]&&_0x13c824[_0x4a27d5(0x259)](_0x1d10a2[_0x4a27d5(0x259)]);var _0x5bfd8d=this[_0x4a27d5(0x2c9)]['innerHTML'][_0x4a27d5(0x405)]();this['container'][_0x4a27d5(0x446)][_0x4a27d5(0x184)](_0x4a27d5(0x3ba)),this['container'][_0x4a27d5(0x3d3)]='',this[_0x4a27d5(0x32c)]=this['addContainer'](_0x4a27d5(0x2c7)),this[_0x4a27d5(0x440)]=new _0xbdb501[(_0x4a27d5(0x413))](),this[_0x4a27d5(0x36a)]=_0x5dea49[_0x4a27d5(0x413)]['create'](this[_0x4a27d5(0x32c)],{'emitter':this[_0x4a27d5(0x440)],'whitelist':_0x1d10a2[_0x4a27d5(0x1a2)]}),this[_0x4a27d5(0x2f0)]=new _0x356938['default'](this[_0x4a27d5(0x36a)],this[_0x4a27d5(0x440)]),this['selection']=new _0x214bc9[(_0x4a27d5(0x413))](this['scroll'],this[_0x4a27d5(0x440)]),this[_0x4a27d5(0x35f)]=new _0x1d10a2['theme'](this,_0x1d10a2),this[_0x4a27d5(0x335)]=this[_0x4a27d5(0x35f)][_0x4a27d5(0x3cc)](_0x4a27d5(0x335)),this[_0x4a27d5(0x202)]=this[_0x4a27d5(0x35f)][_0x4a27d5(0x3cc)]('clipboard'),this[_0x4a27d5(0x328)]=this[_0x4a27d5(0x35f)][_0x4a27d5(0x3cc)]('history'),this[_0x4a27d5(0x35f)]['init'](),this['pasteHTML'](_0x4a27d5(0x21c)+_0x5bfd8d+'<p><br></p></div>'),this[_0x4a27d5(0x328)][_0x4a27d5(0x432)](),_0x1d10a2[_0x4a27d5(0x302)]&&this[_0x4a27d5(0x3f8)](),_0x1d10a2[_0x4a27d5(0x2b2)]&&this[_0x4a27d5(0x32c)][_0x4a27d5(0x1ed)](_0x4a27d5(0x1b8),_0x1d10a2['placeholder']),this['root'][_0x4a27d5(0x446)][_0x4a27d5(0x20a)](_0x4a27d5(0x45c),this['editor'][_0x4a27d5(0x224)]()),this[_0x4a27d5(0x440)]['on'](_0xbdb501['default'][_0x4a27d5(0x42e)][_0x4a27d5(0x19d)],function(_0x4eccf6){var _0x28699a=_0x4a27d5;_0x2a1383['root'][_0x28699a(0x446)][_0x28699a(0x20a)]('ql-blank',_0x2a1383['editor'][_0x28699a(0x224)]());});}return _0x48d83a(_0x13c824,[{'key':'addContainer','value':function _0x1d60e8(_0x517cde){var _0x422cfe=_0x359060,_0x163626=arguments[_0x422cfe(0x19a)]<=0x1||arguments[0x1]===undefined?null:arguments[0x1];if(typeof _0x517cde===_0x422cfe(0x187)){var _0x557451=_0x517cde;_0x517cde=document['createElement'](_0x422cfe(0x1ee)),_0x517cde[_0x422cfe(0x446)][_0x422cfe(0x184)](_0x557451);}return this[_0x422cfe(0x2c9)][_0x422cfe(0x3fc)](_0x517cde,_0x163626),_0x517cde;}},{'key':_0x359060(0x313),'value':function _0x38e493(){var _0x5f4f21=_0x359060;this[_0x5f4f21(0x1ba)]['setRange'](null);}},{'key':_0x359060(0x23f),'value':function _0x516c60(_0x3c9923,_0x4c85f9,_0x8224a5){var _0x110ecf=_0x359060,_0x434c83=_0x3191d4(_0x3c9923,_0x4c85f9,_0x8224a5),_0x32a8aa=_0x6e534d(_0x434c83,0x4);_0x3c9923=_0x32a8aa[0x0],_0x4c85f9=_0x32a8aa[0x1],_0x8224a5=_0x32a8aa[0x3];var _0x427764=this[_0x110ecf(0x407)](),_0x382481=this[_0x110ecf(0x2f0)][_0x110ecf(0x23f)](_0x3c9923,_0x4c85f9,_0x8224a5);return _0x427764=_0x47161a(_0x427764,_0x3c9923,-0x1*_0x4c85f9,_0x8224a5),this[_0x110ecf(0x45b)](_0x427764,_0xbdb501[_0x110ecf(0x413)][_0x110ecf(0x270)][_0x110ecf(0x344)]),_0x382481;}},{'key':_0x359060(0x3f8),'value':function _0x33daca(){this['enable'](![]);}},{'key':_0x359060(0x369),'value':function _0x416acc(){var _0x4f6ec6=_0x359060,_0x587268=arguments[_0x4f6ec6(0x19a)]<=0x0||arguments[0x0]===undefined?!![]:arguments[0x0];this[_0x4f6ec6(0x2f0)]['enable'](_0x587268),!_0x587268&&this['blur']();}},{'key':'focus','value':function _0xce9ab4(){var _0x2796c5=_0x359060;this[_0x2796c5(0x1ba)][_0x2796c5(0x26d)](),this[_0x2796c5(0x1ba)][_0x2796c5(0x32d)]();}},{'key':_0x359060(0x1d9),'value':function _0x389b27(_0x594583,_0x5b6654){var _0x5865c4=_0x359060,_0x170060=arguments[_0x5865c4(0x19a)]<=0x2||arguments[0x2]===undefined?_0xbdb501[_0x5865c4(0x413)][_0x5865c4(0x270)]['API']:arguments[0x2],_0x30ad7f=this[_0x5865c4(0x407)](!![]),_0x39b44f=new _0x436adb['default']();if(_0x30ad7f==null)return _0x39b44f;if(_0x5dea49[_0x5865c4(0x413)]['query'](_0x594583,_0x5dea49['default'][_0x5865c4(0x293)][_0x5865c4(0x30e)]))_0x39b44f=this[_0x5865c4(0x2b5)](_0x30ad7f,_0x594583,_0x5b6654,_0x170060);else{if(_0x30ad7f[_0x5865c4(0x19a)]===0x0)return this[_0x5865c4(0x1ba)][_0x5865c4(0x1d9)](_0x594583,_0x5b6654),_0x39b44f;else _0x39b44f=this['formatText'](_0x30ad7f,_0x594583,_0x5b6654,_0x170060);}return this[_0x5865c4(0x45b)](_0x30ad7f,_0xbdb501[_0x5865c4(0x413)][_0x5865c4(0x270)][_0x5865c4(0x344)]),_0x39b44f;}},{'key':_0x359060(0x2b5),'value':function _0x4821a0(_0x1b5e97,_0x2a6b7c,_0x2165aa,_0x21d5c6,_0x14a40e){var _0x1426ec=_0x359060,_0x51e380=void 0x0,_0x3acc68=_0x3191d4(_0x1b5e97,_0x2a6b7c,_0x2165aa,_0x21d5c6,_0x14a40e),_0x264894=_0x6e534d(_0x3acc68,0x4);_0x1b5e97=_0x264894[0x0],_0x2a6b7c=_0x264894[0x1],_0x51e380=_0x264894[0x2],_0x14a40e=_0x264894[0x3];var _0x1fbc47=this['getSelection'](),_0x24c35b=this[_0x1426ec(0x2f0)]['formatLine'](_0x1b5e97,_0x2a6b7c,_0x51e380,_0x14a40e);return this[_0x1426ec(0x1ba)][_0x1426ec(0x3ee)](_0x1fbc47,!![],_0xbdb501[_0x1426ec(0x413)][_0x1426ec(0x270)][_0x1426ec(0x344)]),this['selection'][_0x1426ec(0x32d)](),_0x24c35b;}},{'key':_0x359060(0x30f),'value':function _0x1307fb(_0x30a531,_0x4e4bcd,_0x46c04b,_0x1321a9,_0x22b762){var _0x38095e=_0x359060,_0x463a95=void 0x0,_0x5e153f=_0x3191d4(_0x30a531,_0x4e4bcd,_0x46c04b,_0x1321a9,_0x22b762),_0x3935dc=_0x6e534d(_0x5e153f,0x4);_0x30a531=_0x3935dc[0x0],_0x4e4bcd=_0x3935dc[0x1],_0x463a95=_0x3935dc[0x2],_0x22b762=_0x3935dc[0x3];var _0x415f96=this['getSelection'](),_0x1bf38b=this['editor']['formatText'](_0x30a531,_0x4e4bcd,_0x463a95,_0x22b762);return this[_0x38095e(0x1ba)]['setRange'](_0x415f96,!![],_0xbdb501[_0x38095e(0x413)][_0x38095e(0x270)][_0x38095e(0x344)]),this[_0x38095e(0x1ba)]['scrollIntoView'](),_0x1bf38b;}},{'key':_0x359060(0x401),'value':function _0x206051(_0x11668e){var _0x7d3645=_0x359060,_0x4e0469=arguments['length']<=0x1||arguments[0x1]===undefined?0x0:arguments[0x1];return typeof _0x11668e===_0x7d3645(0x3b6)?this[_0x7d3645(0x1ba)][_0x7d3645(0x401)](_0x11668e,_0x4e0469):this[_0x7d3645(0x1ba)][_0x7d3645(0x401)](_0x11668e['index'],_0x11668e[_0x7d3645(0x19a)]);}},{'key':_0x359060(0x1e5),'value':function _0x3fc78e(){var _0x255598=_0x359060,_0x3f9bf6=arguments['length']<=0x0||arguments[0x0]===undefined?0x0:arguments[0x0],_0x235e63=arguments[_0x255598(0x19a)]<=0x1||arguments[0x1]===undefined?this[_0x255598(0x3e8)]()-_0x3f9bf6:arguments[0x1],_0x357f9f=_0x3191d4(_0x3f9bf6,_0x235e63),_0x1c5f8e=_0x6e534d(_0x357f9f,0x2);return _0x3f9bf6=_0x1c5f8e[0x0],_0x235e63=_0x1c5f8e[0x1],this[_0x255598(0x2f0)][_0x255598(0x1e5)](_0x3f9bf6,_0x235e63);}},{'key':_0x359060(0x452),'value':function _0x9a6a92(){var _0x1cd0bf=_0x359060,_0x23657e=arguments[_0x1cd0bf(0x19a)]<=0x0||arguments[0x0]===undefined?this[_0x1cd0bf(0x407)]():arguments[0x0],_0x2119d5=arguments[_0x1cd0bf(0x19a)]<=0x1||arguments[0x1]===undefined?0x0:arguments[0x1];return typeof _0x23657e===_0x1cd0bf(0x3b6)?this[_0x1cd0bf(0x2f0)][_0x1cd0bf(0x452)](_0x23657e,_0x2119d5):this[_0x1cd0bf(0x2f0)][_0x1cd0bf(0x452)](_0x23657e[_0x1cd0bf(0x320)],_0x23657e['length']);}},{'key':'getLength','value':function _0x18a0df(){var _0x1141d4=_0x359060;return this['scroll'][_0x1141d4(0x19a)]();}},{'key':'getModule','value':function _0x5e2c72(_0x38065c){var _0x7aa6ee=_0x359060;return this[_0x7aa6ee(0x35f)]['modules'][_0x38065c];}},{'key':_0x359060(0x407),'value':function _0x1b9d48(){var _0xadf3ac=_0x359060,_0x43f1c5=arguments[_0xadf3ac(0x19a)]<=0x0||arguments[0x0]===undefined?![]:arguments[0x0];if(_0x43f1c5)this['focus']();return this[_0xadf3ac(0x22f)](),this['selection']['getRange']()[0x0];}},{'key':_0x359060(0x304),'value':function _0x5cfada(){var _0x1b2ab7=_0x359060,_0x282824=arguments[_0x1b2ab7(0x19a)]<=0x0||arguments[0x0]===undefined?0x0:arguments[0x0],_0x550f69=arguments[_0x1b2ab7(0x19a)]<=0x1||arguments[0x1]===undefined?this[_0x1b2ab7(0x3e8)]()-_0x282824:arguments[0x1],_0x332e2f=_0x3191d4(_0x282824,_0x550f69),_0x111a23=_0x6e534d(_0x332e2f,0x2);return _0x282824=_0x111a23[0x0],_0x550f69=_0x111a23[0x1],this[_0x1b2ab7(0x2f0)][_0x1b2ab7(0x304)](_0x282824,_0x550f69);}},{'key':_0x359060(0x226),'value':function _0x65ce1e(){var _0x21351a=_0x359060;return this[_0x21351a(0x1ba)]['hasFocus']();}},{'key':_0x359060(0x22d),'value':function _0x677fde(_0x10f12b,_0x4755fd,_0x3cfd43){var _0xc014b0=_0x359060,_0x2a9c7c=arguments[_0xc014b0(0x19a)]<=0x3||arguments[0x3]===undefined?_0x13c824['sources']['API']:arguments[0x3],_0x36561a=this[_0xc014b0(0x407)](),_0x494eca=this['editor'][_0xc014b0(0x22d)](_0x10f12b,_0x4755fd,_0x3cfd43,_0x2a9c7c);return _0x36561a=_0x47161a(_0x36561a,_0x494eca,_0x2a9c7c),this[_0xc014b0(0x45b)](_0x36561a,_0xbdb501['default']['sources']['SILENT']),_0x494eca;}},{'key':'insertText','value':function _0x3536e6(_0x1276a6,_0x3b29a4,_0x355544,_0x57e375,_0x42caf3){var _0x595f26=_0x359060,_0x58a397=void 0x0,_0x383d20=this['getSelection'](),_0x5c4fea=_0x3191d4(_0x1276a6,0x0,_0x355544,_0x57e375,_0x42caf3),_0x463c78=_0x6e534d(_0x5c4fea,0x4);_0x1276a6=_0x463c78[0x0],_0x58a397=_0x463c78[0x2],_0x42caf3=_0x463c78[0x3];var _0x44467a=this[_0x595f26(0x2f0)][_0x595f26(0x208)](_0x1276a6,_0x3b29a4,_0x58a397,_0x42caf3);return _0x383d20=_0x47161a(_0x383d20,_0x1276a6,_0x3b29a4[_0x595f26(0x19a)],_0x42caf3),this[_0x595f26(0x45b)](_0x383d20,_0xbdb501['default'][_0x595f26(0x270)][_0x595f26(0x344)]),_0x44467a;}},{'key':_0x359060(0x2b9),'value':function _0x22bc77(){var _0x3477bc=_0x359060;return this[_0x3477bc(0x440)][_0x3477bc(0x2b9)][_0x3477bc(0x39e)](this['emitter'],arguments);}},{'key':'on','value':function _0x425b65(){var _0x5a00f3=_0x359060;return this[_0x5a00f3(0x440)]['on']['apply'](this[_0x5a00f3(0x440)],arguments);}},{'key':'once','value':function _0xd1443b(){var _0x28005f=_0x359060;return this['emitter'][_0x28005f(0x3fa)][_0x28005f(0x39e)](this[_0x28005f(0x440)],arguments);}},{'key':_0x359060(0x195),'value':function _0x498715(_0x7cd4b9,_0xa9fa67){var _0x4e464f=_0x359060,_0x24225c=arguments['length']<=0x2||arguments[0x2]===undefined?_0xbdb501[_0x4e464f(0x413)]['sources'][_0x4e464f(0x31c)]:arguments[0x2];if(typeof _0x7cd4b9==='string')return this['setContents'](this['clipboard'][_0x4e464f(0x39b)](_0x7cd4b9),_0xa9fa67);else{var _0x2ba8c9=this[_0x4e464f(0x202)][_0x4e464f(0x39b)](_0xa9fa67);return this[_0x4e464f(0x456)](new _0x436adb[(_0x4e464f(0x413))]()[_0x4e464f(0x2f4)](_0x7cd4b9)[_0x4e464f(0x1f8)](_0x2ba8c9),_0x24225c);}}},{'key':_0x359060(0x215),'value':function _0x3f1910(_0x4a14ab,_0xfa625,_0x10f62a){var _0x2bc970=_0x359060,_0x176eb7=this[_0x2bc970(0x407)](),_0x2ca752=_0x3191d4(_0x4a14ab,_0xfa625,_0x10f62a),_0x5e4af4=_0x6e534d(_0x2ca752,0x4);_0x4a14ab=_0x5e4af4[0x0],_0xfa625=_0x5e4af4[0x1],_0x10f62a=_0x5e4af4[0x3];var _0x266d5a=this[_0x2bc970(0x2f0)]['removeFormat'](_0x4a14ab,_0xfa625,_0x10f62a);return _0x176eb7=_0x47161a(_0x176eb7,_0x266d5a,_0x10f62a),this['setSelection'](_0x176eb7,_0xbdb501[_0x2bc970(0x413)][_0x2bc970(0x270)][_0x2bc970(0x344)]),_0x266d5a;}},{'key':_0x359060(0x1b1),'value':function _0x3aa10d(_0xd7da7){var _0x43e610=_0x359060,_0x3cc542=arguments['length']<=0x1||arguments[0x1]===undefined?_0xbdb501[_0x43e610(0x413)][_0x43e610(0x270)][_0x43e610(0x31c)]:arguments[0x1];_0xd7da7=new _0x436adb[(_0x43e610(0x413))](_0xd7da7)[_0x43e610(0x441)]();var _0x18c9a0=_0xd7da7[_0x43e610(0x26f)][_0xd7da7[_0x43e610(0x26f)][_0x43e610(0x19a)]-0x1];return(_0x18c9a0==null||_0x18c9a0['insert'][_0x18c9a0['insert'][_0x43e610(0x19a)]-0x1]!=='\x0a')&&_0xd7da7['insert']('\x0a'),_0xd7da7['delete'](this[_0x43e610(0x3e8)]()),this[_0x43e610(0x2f0)][_0x43e610(0x3c7)](_0xd7da7,_0x3cc542);}},{'key':'setSelection','value':function _0x1bf621(_0x1a24d3,_0xd304eb,_0x2a83a8){var _0x3bd7fe=_0x359060;if(_0x1a24d3==null)this['selection'][_0x3bd7fe(0x3ee)](null,_0xd304eb||_0x13c824[_0x3bd7fe(0x270)][_0x3bd7fe(0x31c)]);else{var _0x1c48e5=_0x3191d4(_0x1a24d3,_0xd304eb,_0x2a83a8),_0x4333a1=_0x6e534d(_0x1c48e5,0x4);_0x1a24d3=_0x4333a1[0x0],_0xd304eb=_0x4333a1[0x1],_0x2a83a8=_0x4333a1[0x3],this[_0x3bd7fe(0x1ba)]['setRange'](new _0x1b8617[(_0x3bd7fe(0x2a5))](_0x1a24d3,_0xd304eb),_0x2a83a8);}this[_0x3bd7fe(0x1ba)][_0x3bd7fe(0x32d)]();}},{'key':'setText','value':function _0x9ec6d1(_0x196c82){var _0x106d4b=_0x359060,_0x20fe67=arguments[_0x106d4b(0x19a)]<=0x1||arguments[0x1]===undefined?_0xbdb501[_0x106d4b(0x413)][_0x106d4b(0x270)][_0x106d4b(0x31c)]:arguments[0x1],_0x33c3d0=new _0x436adb[(_0x106d4b(0x413))]()['insert'](_0x196c82);return this['setContents'](_0x33c3d0,_0x20fe67);}},{'key':'update','value':function _0x4d71b5(){var _0x5c6521=_0x359060,_0x2381e8=arguments[_0x5c6521(0x19a)]<=0x0||arguments[0x0]===undefined?_0xbdb501['default'][_0x5c6521(0x270)][_0x5c6521(0x439)]:arguments[0x0],_0x5a4060=this[_0x5c6521(0x36a)][_0x5c6521(0x22f)](_0x2381e8);return this[_0x5c6521(0x1ba)][_0x5c6521(0x22f)](_0x2381e8),_0x5a4060;}},{'key':_0x359060(0x456),'value':function _0x5bf12f(_0x4f2f16){var _0x270261=_0x359060,_0x2f766e=arguments[_0x270261(0x19a)]<=0x1||arguments[0x1]===undefined?_0xbdb501[_0x270261(0x413)][_0x270261(0x270)][_0x270261(0x31c)]:arguments[0x1],_0x5eac2f=this[_0x270261(0x407)]();Array[_0x270261(0x3f3)](_0x4f2f16)&&(_0x4f2f16=new _0x436adb[(_0x270261(0x413))](_0x4f2f16[_0x270261(0x441)]()));var _0x26231f=this['editor'][_0x270261(0x3c7)](_0x4f2f16,_0x2f766e);return _0x5eac2f!=null&&(_0x5eac2f=_0x47161a(_0x5eac2f,_0x26231f,_0x2f766e),this[_0x270261(0x45b)](_0x5eac2f,_0xbdb501['default']['sources'][_0x270261(0x344)])),_0x26231f;}}]),_0x13c824;}());_0x4039bf[_0x2686a8(0x1c3)]={'bounds':document[_0x2686a8(0x2a2)],'formats':null,'modules':{},'placeholder':'','readOnly':![],'theme':_0x2686a8(0x413)},_0x4039bf[_0x2686a8(0x42e)]=_0xbdb501[_0x2686a8(0x413)][_0x2686a8(0x42e)],_0x4039bf['sources']=_0xbdb501[_0x2686a8(0x413)]['sources'],_0x4039bf[_0x2686a8(0x2da)]=![]?'dev':_0x2686a8(0x272),_0x4039bf[_0x2686a8(0x1c2)]={'delta':_0x436adb[_0x2686a8(0x413)],'parchment':_0x5dea49[_0x2686a8(0x413)],'core/module':_0x3d3c04[_0x2686a8(0x413)],'core/theme':_0x4cf03c[_0x2686a8(0x413)]};function _0x2d9a28(_0x3347d0,_0x28efba){var _0x1d0d7c=_0x2686a8;_0x28efba=(0x0,_0x4f2a4e[_0x1d0d7c(0x413)])(!![],{'container':_0x3347d0,'modules':{'clipboard':!![],'keyboard':!![],'history':!![]}},_0x28efba);if(_0x28efba[_0x1d0d7c(0x35f)]==null||_0x28efba['theme']===_0x4039bf['DEFAULTS'][_0x1d0d7c(0x35f)])_0x28efba[_0x1d0d7c(0x35f)]=_0x4cf03c['default'];else{_0x28efba[_0x1d0d7c(0x35f)]=_0x4039bf[_0x1d0d7c(0x308)]('themes/'+_0x28efba[_0x1d0d7c(0x35f)]);if(_0x28efba[_0x1d0d7c(0x35f)]==null)throw new Error(_0x1d0d7c(0x429)+_0x28efba[_0x1d0d7c(0x35f)]+_0x1d0d7c(0x342));}var _0x53a308=(0x0,_0x4f2a4e[_0x1d0d7c(0x413)])(!![],{},_0x28efba[_0x1d0d7c(0x35f)][_0x1d0d7c(0x1c3)]);[_0x53a308,_0x28efba][_0x1d0d7c(0x3e4)](function(_0x39762e){var _0x55dbb6=_0x1d0d7c;_0x39762e[_0x55dbb6(0x383)]=_0x39762e[_0x55dbb6(0x383)]||{},Object['keys'](_0x39762e[_0x55dbb6(0x383)])[_0x55dbb6(0x3e4)](function(_0x1d794c){var _0x4579ac=_0x55dbb6;_0x39762e['modules'][_0x1d794c]===!![]&&(_0x39762e[_0x4579ac(0x383)][_0x1d794c]={});});});var _0x2be14e=Object[_0x1d0d7c(0x3aa)](_0x53a308[_0x1d0d7c(0x383)])['concat'](Object['keys'](_0x28efba[_0x1d0d7c(0x383)])),_0x262b60=_0x2be14e[_0x1d0d7c(0x1c8)](function(_0x1faf7e,_0x3cf9ff){var _0x4dba19=_0x1d0d7c,_0x371f17=_0x4039bf['import'](_0x4dba19(0x29d)+_0x3cf9ff);return _0x371f17==null?_0x32aa5f[_0x4dba19(0x2e2)](_0x4dba19(0x245)+_0x3cf9ff+'\x20module.\x20Are\x20you\x20sure\x20you\x20registered\x20it?'):_0x1faf7e[_0x3cf9ff]=_0x371f17[_0x4dba19(0x1c3)]||{},_0x1faf7e;},{});return _0x28efba['modules']!=null&&_0x28efba[_0x1d0d7c(0x383)][_0x1d0d7c(0x3c1)]!=null&&_0x28efba['modules'][_0x1d0d7c(0x3c1)][_0x1d0d7c(0x2c6)]!==Object&&(_0x28efba['modules'][_0x1d0d7c(0x3c1)]={'container':_0x28efba[_0x1d0d7c(0x383)][_0x1d0d7c(0x3c1)]}),_0x28efba=(0x0,_0x4f2a4e['default'])(!![],{},_0x4039bf['DEFAULTS'],{'modules':_0x262b60},_0x53a308,_0x28efba),['bounds',_0x1d0d7c(0x2c9)][_0x1d0d7c(0x3e4)](function(_0x7ab8fe){var _0x3eb42b=_0x1d0d7c;typeof _0x28efba[_0x7ab8fe]===_0x3eb42b(0x187)&&(_0x28efba[_0x7ab8fe]=document[_0x3eb42b(0x42f)](_0x28efba[_0x7ab8fe]));}),_0x28efba;}function _0x3191d4(_0x123e9e,_0x4dc290,_0x344f20,_0x411ee2,_0x454576){var _0x17273a=_0x2686a8,_0x34a0dd={};if(typeof _0x123e9e[_0x17273a(0x320)]===_0x17273a(0x3b6)&&typeof _0x123e9e['length']==='number')typeof _0x4dc290!==_0x17273a(0x3b6)?(_0x454576=_0x411ee2,_0x411ee2=_0x344f20,_0x344f20=_0x4dc290,_0x4dc290=_0x123e9e[_0x17273a(0x19a)],_0x123e9e=_0x123e9e[_0x17273a(0x320)]):(_0x4dc290=_0x123e9e['length'],_0x123e9e=_0x123e9e[_0x17273a(0x320)]);else typeof _0x4dc290!==_0x17273a(0x3b6)&&(_0x454576=_0x411ee2,_0x411ee2=_0x344f20,_0x344f20=_0x4dc290,_0x4dc290=0x0);if((typeof _0x344f20===_0x17273a(0x1ab)?_0x17273a(0x1ab):_0x4dd135(_0x344f20))==='object')_0x34a0dd=_0x344f20,_0x454576=_0x411ee2;else typeof _0x344f20==='string'&&(_0x411ee2!=null?_0x34a0dd[_0x344f20]=_0x411ee2:_0x454576=_0x344f20);return _0x454576=_0x454576||_0xbdb501['default'][_0x17273a(0x270)][_0x17273a(0x31c)],[_0x123e9e,_0x4dc290,_0x34a0dd,_0x454576];}function _0x47161a(_0x12af12,_0x54fc92,_0x4acf1e,_0x38abfa){var _0x48997e=_0x2686a8;if(_0x12af12==null)return null;var _0x6eb1b9=void 0x0,_0x169da8=void 0x0;if(_0x54fc92 instanceof _0x436adb[_0x48997e(0x413)]){var _0x3e9c03=[_0x12af12['index'],_0x12af12[_0x48997e(0x320)]+_0x12af12[_0x48997e(0x19a)]]['map'](function(_0x201a01){var _0x2a8276=_0x48997e;return _0x54fc92[_0x2a8276(0x2a7)](_0x201a01,_0x38abfa===_0xbdb501[_0x2a8276(0x413)][_0x2a8276(0x270)]['USER']);}),_0x42458a=_0x6e534d(_0x3e9c03,0x2);_0x6eb1b9=_0x42458a[0x0],_0x169da8=_0x42458a[0x1];}else{var _0x372ee6=[_0x12af12[_0x48997e(0x320)],_0x12af12['index']+_0x12af12[_0x48997e(0x19a)]][_0x48997e(0x410)](function(_0x2bba41){var _0x6fa291=_0x48997e;if(_0x2bba41<_0x54fc92||_0x2bba41===_0x54fc92&&_0x38abfa!==_0xbdb501[_0x6fa291(0x413)]['sources'][_0x6fa291(0x439)])return _0x2bba41;return _0x4acf1e>=0x0?_0x2bba41+_0x4acf1e:Math[_0x6fa291(0x191)](_0x54fc92,_0x2bba41+_0x4acf1e);}),_0x50a9b1=_0x6e534d(_0x372ee6,0x2);_0x6eb1b9=_0x50a9b1[0x0],_0x169da8=_0x50a9b1[0x1];}return new _0x1b8617[(_0x48997e(0x2a5))](_0x6eb1b9,_0x169da8-_0x6eb1b9);}_0x429926[_0x2686a8(0x35d)]=_0x2d9a28,_0x429926['overload']=_0x3191d4,_0x429926['default']=_0x4039bf;},function(_0x53c856,_0x1adf1e){'use strict';var _0x59ad32=a9_0x50c4;var _0x326378=document[_0x59ad32(0x295)]('div');_0x326378[_0x59ad32(0x446)][_0x59ad32(0x20a)](_0x59ad32(0x400),![]),_0x326378[_0x59ad32(0x446)][_0x59ad32(0x386)](_0x59ad32(0x400))&&(function(){var _0x56aa90=_0x59ad32,_0x2416e0=DOMTokenList['prototype']['toggle'];DOMTokenList[_0x56aa90(0x44f)][_0x56aa90(0x20a)]=function(_0x5dbb21,_0x5e0ad3){var _0x5acdb2=_0x56aa90;return arguments[_0x5acdb2(0x19a)]>0x1&&!this[_0x5acdb2(0x386)](_0x5dbb21)===!_0x5e0ad3?_0x5e0ad3:_0x2416e0[_0x5acdb2(0x1e2)](this,_0x5dbb21);};}()),!String[_0x59ad32(0x44f)][_0x59ad32(0x34f)]&&(String['prototype'][_0x59ad32(0x34f)]=function(_0x42ee8a,_0x33fc16){var _0x306262=_0x59ad32;return _0x33fc16=_0x33fc16||0x0,this[_0x306262(0x18a)](_0x33fc16,_0x42ee8a['length'])===_0x42ee8a;}),!String[_0x59ad32(0x44f)][_0x59ad32(0x2cb)]&&(String[_0x59ad32(0x44f)][_0x59ad32(0x2cb)]=function(_0x2fea31,_0x2b75c0){var _0x2bc791=_0x59ad32,_0x49d5bd=this[_0x2bc791(0x1d3)]();(typeof _0x2b75c0!=='number'||!isFinite(_0x2b75c0)||Math[_0x2bc791(0x357)](_0x2b75c0)!==_0x2b75c0||_0x2b75c0>_0x49d5bd[_0x2bc791(0x19a)])&&(_0x2b75c0=_0x49d5bd[_0x2bc791(0x19a)]);_0x2b75c0-=_0x2fea31[_0x2bc791(0x19a)];var _0x2d6e41=_0x49d5bd[_0x2bc791(0x39a)](_0x2fea31,_0x2b75c0);return _0x2d6e41!==-0x1&&_0x2d6e41===_0x2b75c0;}),!Array[_0x59ad32(0x44f)]['find']&&Object[_0x59ad32(0x289)](Array['prototype'],_0x59ad32(0x303),{'value':function _0x403c30(_0x3428ca){var _0xbfdc8a=_0x59ad32;if(this===null)throw new TypeError(_0xbfdc8a(0x1ff));if(typeof _0x3428ca!==_0xbfdc8a(0x33b))throw new TypeError(_0xbfdc8a(0x38f));var _0xea27d5=Object(this),_0x1f0133=_0xea27d5[_0xbfdc8a(0x19a)]>>>0x0,_0x371b18=arguments[0x1],_0x6ca78a;for(var _0x5dcb6d=0x0;_0x5dcb6d<_0x1f0133;_0x5dcb6d++){_0x6ca78a=_0xea27d5[_0x5dcb6d];if(_0x3428ca[_0xbfdc8a(0x1e2)](_0x371b18,_0x6ca78a,_0x5dcb6d,_0xea27d5))return _0x6ca78a;}return undefined;}}),document[_0x59ad32(0x44c)](_0x59ad32(0x188),function(){var _0x1b446e=_0x59ad32;document[_0x1b446e(0x414)](_0x1b446e(0x3bc),![],![]);});},function(_0x48dcb5,_0x35b161,_0x2d9f04){var _0x3377a5=a9_0x50c4,_0x17e349=_0x2d9f04(0x15),_0x1c443b=_0x2d9f04(0x16),_0x55797e=_0x2d9f04(0x19),_0x4811f8=_0x2d9f04(0x1a),_0x367bfd=String['fromCharCode'](0x0),_0x3e6875=function(_0x2cc80d){var _0x5114d2=a9_0x50c4;if(Array[_0x5114d2(0x3f3)](_0x2cc80d))this[_0x5114d2(0x26f)]=_0x2cc80d;else _0x2cc80d!=null&&Array[_0x5114d2(0x3f3)](_0x2cc80d[_0x5114d2(0x26f)])?this[_0x5114d2(0x26f)]=_0x2cc80d[_0x5114d2(0x26f)]:this[_0x5114d2(0x26f)]=[];};_0x3e6875[_0x3377a5(0x44f)]['insert']=function(_0x5d2d31,_0x46fe0e){var _0x17e91c=_0x3377a5,_0x503571={};if(_0x5d2d31[_0x17e91c(0x19a)]===0x0)return this;_0x503571[_0x17e91c(0x26a)]=_0x5d2d31;if(typeof _0x46fe0e===_0x17e91c(0x2e1)&&Object[_0x17e91c(0x3aa)](_0x46fe0e)[_0x17e91c(0x19a)]>0x0)_0x503571[_0x17e91c(0x32b)]=_0x46fe0e;return this[_0x17e91c(0x1bf)](_0x503571);},_0x3e6875['prototype']['delete']=function(_0x48dbb4){if(_0x48dbb4<=0x0)return this;return this['push']({'delete':_0x48dbb4});},_0x3e6875[_0x3377a5(0x44f)][_0x3377a5(0x2f4)]=function(_0x2c338c,_0x5d8d27){var _0x3e25fd=_0x3377a5;if(_0x2c338c<=0x0)return this;var _0x373d68={'retain':_0x2c338c};if(typeof _0x5d8d27==='object'&&Object['keys'](_0x5d8d27)[_0x3e25fd(0x19a)]>0x0)_0x373d68[_0x3e25fd(0x32b)]=_0x5d8d27;return this['push'](_0x373d68);},_0x3e6875[_0x3377a5(0x44f)]['push']=function(_0x5de260){var _0x93d374=_0x3377a5,_0x522a27=this[_0x93d374(0x26f)][_0x93d374(0x19a)],_0x5f4024=this[_0x93d374(0x26f)][_0x522a27-0x1];_0x5de260=_0x55797e(!![],{},_0x5de260);if(typeof _0x5f4024===_0x93d374(0x2e1)){if(typeof _0x5de260[_0x93d374(0x362)]==='number'&&typeof _0x5f4024['delete']===_0x93d374(0x3b6))return this[_0x93d374(0x26f)][_0x522a27-0x1]={'delete':_0x5f4024[_0x93d374(0x362)]+_0x5de260[_0x93d374(0x362)]},this;if(typeof _0x5f4024[_0x93d374(0x362)]===_0x93d374(0x3b6)&&_0x5de260['insert']!=null){_0x522a27-=0x1,_0x5f4024=this['ops'][_0x522a27-0x1];if(typeof _0x5f4024!==_0x93d374(0x2e1))return this[_0x93d374(0x26f)][_0x93d374(0x34e)](_0x5de260),this;}if(_0x1c443b(_0x5de260[_0x93d374(0x32b)],_0x5f4024['attributes'])){if(typeof _0x5de260[_0x93d374(0x26a)]==='string'&&typeof _0x5f4024[_0x93d374(0x26a)]===_0x93d374(0x187)){this[_0x93d374(0x26f)][_0x522a27-0x1]={'insert':_0x5f4024[_0x93d374(0x26a)]+_0x5de260[_0x93d374(0x26a)]};if(typeof _0x5de260[_0x93d374(0x32b)]==='object')this[_0x93d374(0x26f)][_0x522a27-0x1][_0x93d374(0x32b)]=_0x5de260[_0x93d374(0x32b)];return this;}else{if(typeof _0x5de260[_0x93d374(0x2f4)]===_0x93d374(0x3b6)&&typeof _0x5f4024[_0x93d374(0x2f4)]===_0x93d374(0x3b6)){this['ops'][_0x522a27-0x1]={'retain':_0x5f4024[_0x93d374(0x2f4)]+_0x5de260[_0x93d374(0x2f4)]};if(typeof _0x5de260[_0x93d374(0x32b)]===_0x93d374(0x2e1))this['ops'][_0x522a27-0x1][_0x93d374(0x32b)]=_0x5de260['attributes'];return this;}}}}return _0x522a27===this['ops']['length']?this['ops'][_0x93d374(0x1bf)](_0x5de260):this[_0x93d374(0x26f)][_0x93d374(0x182)](_0x522a27,0x0,_0x5de260),this;},_0x3e6875[_0x3377a5(0x44f)][_0x3377a5(0x36e)]=function(){var _0x449e4b=_0x3377a5,_0x1ea6be=this[_0x449e4b(0x26f)][this[_0x449e4b(0x26f)]['length']-0x1];return _0x1ea6be&&_0x1ea6be[_0x449e4b(0x2f4)]&&!_0x1ea6be[_0x449e4b(0x32b)]&&this[_0x449e4b(0x26f)]['pop'](),this;},_0x3e6875[_0x3377a5(0x44f)][_0x3377a5(0x19a)]=function(){var _0x598611=_0x3377a5;return this[_0x598611(0x26f)]['reduce'](function(_0xe4d53b,_0x42749e){return _0xe4d53b+_0x4811f8['length'](_0x42749e);},0x0);},_0x3e6875['prototype'][_0x3377a5(0x441)]=function(_0x2f20fa,_0x49373a){var _0x2ad619=_0x3377a5;_0x2f20fa=_0x2f20fa||0x0;if(typeof _0x49373a!==_0x2ad619(0x3b6))_0x49373a=Infinity;var _0x36f80d=[],_0x36d5a7=_0x4811f8[_0x2ad619(0x2e8)](this['ops']),_0x37cd44=0x0;while(_0x37cd44<_0x49373a&&_0x36d5a7['hasNext']()){var _0x45a0af;_0x37cd44<_0x2f20fa?_0x45a0af=_0x36d5a7[_0x2ad619(0x211)](_0x2f20fa-_0x37cd44):(_0x45a0af=_0x36d5a7[_0x2ad619(0x211)](_0x49373a-_0x37cd44),_0x36f80d[_0x2ad619(0x1bf)](_0x45a0af)),_0x37cd44+=_0x4811f8['length'](_0x45a0af);}return new _0x3e6875(_0x36f80d);},_0x3e6875[_0x3377a5(0x44f)]['compose']=function(_0xe7c5e){var _0x44e28e=_0x3377a5,_0x2fd6d8=_0x4811f8[_0x44e28e(0x2e8)](this[_0x44e28e(0x26f)]),_0x12a8f3=_0x4811f8[_0x44e28e(0x2e8)](_0xe7c5e[_0x44e28e(0x26f)]),_0x22a2d6=new _0x3e6875();while(_0x2fd6d8['hasNext']()||_0x12a8f3[_0x44e28e(0x299)]()){if(_0x12a8f3[_0x44e28e(0x2fe)]()==='insert')_0x22a2d6[_0x44e28e(0x1bf)](_0x12a8f3['next']());else{if(_0x2fd6d8[_0x44e28e(0x2fe)]()==='delete')_0x22a2d6[_0x44e28e(0x1bf)](_0x2fd6d8[_0x44e28e(0x211)]());else{var _0x4785dc=Math[_0x44e28e(0x384)](_0x2fd6d8[_0x44e28e(0x3ed)](),_0x12a8f3[_0x44e28e(0x3ed)]()),_0x499b14=_0x2fd6d8[_0x44e28e(0x211)](_0x4785dc),_0xe2282c=_0x12a8f3['next'](_0x4785dc);if(typeof _0xe2282c[_0x44e28e(0x2f4)]===_0x44e28e(0x3b6)){var _0x4b84d1={};typeof _0x499b14[_0x44e28e(0x2f4)]===_0x44e28e(0x3b6)?_0x4b84d1[_0x44e28e(0x2f4)]=_0x4785dc:_0x4b84d1[_0x44e28e(0x26a)]=_0x499b14['insert'];var _0x4b54d5=_0x4811f8[_0x44e28e(0x32b)][_0x44e28e(0x3dc)](_0x499b14[_0x44e28e(0x32b)],_0xe2282c['attributes'],typeof _0x499b14[_0x44e28e(0x2f4)]===_0x44e28e(0x3b6));if(_0x4b54d5)_0x4b84d1[_0x44e28e(0x32b)]=_0x4b54d5;_0x22a2d6[_0x44e28e(0x1bf)](_0x4b84d1);}else typeof _0xe2282c[_0x44e28e(0x362)]==='number'&&typeof _0x499b14[_0x44e28e(0x2f4)]==='number'&&_0x22a2d6[_0x44e28e(0x1bf)](_0xe2282c);}}}return _0x22a2d6[_0x44e28e(0x36e)]();},_0x3e6875[_0x3377a5(0x44f)][_0x3377a5(0x1f8)]=function(_0x27768f){var _0x1a5664=_0x3377a5,_0x39f7ee=new _0x3e6875(this[_0x1a5664(0x26f)][_0x1a5664(0x441)]());return _0x27768f[_0x1a5664(0x26f)][_0x1a5664(0x19a)]>0x0&&(_0x39f7ee[_0x1a5664(0x1bf)](_0x27768f[_0x1a5664(0x26f)][0x0]),_0x39f7ee[_0x1a5664(0x26f)]=_0x39f7ee['ops'][_0x1a5664(0x1f8)](_0x27768f['ops'][_0x1a5664(0x441)](0x1))),_0x39f7ee;},_0x3e6875['prototype']['diff']=function(_0xa0fc3){var _0x271d7b=_0x3377a5,_0x2fba03=new _0x3e6875();if(this[_0x271d7b(0x26f)]===_0xa0fc3[_0x271d7b(0x26f)])return _0x2fba03;var _0x4c925e=[this[_0x271d7b(0x26f)],_0xa0fc3[_0x271d7b(0x26f)]][_0x271d7b(0x410)](function(_0x54f8db){var _0x4d5931=_0x271d7b;return _0x54f8db[_0x4d5931(0x410)](function(_0xd9cd95){var _0x1e18fa=_0x4d5931;if(_0xd9cd95[_0x1e18fa(0x26a)]!=null)return typeof _0xd9cd95[_0x1e18fa(0x26a)]==='string'?_0xd9cd95[_0x1e18fa(0x26a)]:_0x367bfd;var _0x5e53c5=_0x54f8db===_0xa0fc3['ops']?'on':_0x1e18fa(0x2aa);throw new Error(_0x1e18fa(0x3c4)+_0x5e53c5+_0x1e18fa(0x30b));})['join']('');}),_0x37e9a1=_0x17e349(_0x4c925e[0x0],_0x4c925e[0x1]),_0x48308d=_0x4811f8['iterator'](this[_0x271d7b(0x26f)]),_0x5bebcc=_0x4811f8[_0x271d7b(0x2e8)](_0xa0fc3[_0x271d7b(0x26f)]);return _0x37e9a1[_0x271d7b(0x3e4)](function(_0x2ab163){var _0x483719=_0x271d7b,_0x438e0d=_0x2ab163[0x1][_0x483719(0x19a)];while(_0x438e0d>0x0){var _0x1e4097=0x0;switch(_0x2ab163[0x0]){case _0x17e349[_0x483719(0x3e1)]:_0x1e4097=Math[_0x483719(0x384)](_0x5bebcc['peekLength'](),_0x438e0d),_0x2fba03['push'](_0x5bebcc['next'](_0x1e4097));break;case _0x17e349[_0x483719(0x254)]:_0x1e4097=Math['min'](_0x438e0d,_0x48308d[_0x483719(0x3ed)]()),_0x48308d[_0x483719(0x211)](_0x1e4097),_0x2fba03[_0x483719(0x362)](_0x1e4097);break;case _0x17e349[_0x483719(0x421)]:_0x1e4097=Math[_0x483719(0x384)](_0x48308d['peekLength'](),_0x5bebcc['peekLength'](),_0x438e0d);var _0x3502d8=_0x48308d['next'](_0x1e4097),_0x2f51ba=_0x5bebcc[_0x483719(0x211)](_0x1e4097);_0x1c443b(_0x3502d8[_0x483719(0x26a)],_0x2f51ba[_0x483719(0x26a)])?_0x2fba03['retain'](_0x1e4097,_0x4811f8['attributes'][_0x483719(0x20b)](_0x3502d8[_0x483719(0x32b)],_0x2f51ba[_0x483719(0x32b)])):_0x2fba03['push'](_0x2f51ba)[_0x483719(0x362)](_0x1e4097);break;}_0x438e0d-=_0x1e4097;}}),_0x2fba03[_0x271d7b(0x36e)]();},_0x3e6875['prototype'][_0x3377a5(0x186)]=function(_0x2e0232,_0x2e8fc2){var _0x4aab45=_0x3377a5;_0x2e8fc2=!!_0x2e8fc2;if(typeof _0x2e0232===_0x4aab45(0x3b6))return this['transformPosition'](_0x2e0232,_0x2e8fc2);var _0x29d000=_0x4811f8['iterator'](this['ops']),_0x116507=_0x4811f8[_0x4aab45(0x2e8)](_0x2e0232[_0x4aab45(0x26f)]),_0xaffc85=new _0x3e6875();while(_0x29d000['hasNext']()||_0x116507[_0x4aab45(0x299)]()){if(_0x29d000['peekType']()===_0x4aab45(0x26a)&&(_0x2e8fc2||_0x116507[_0x4aab45(0x2fe)]()!==_0x4aab45(0x26a)))_0xaffc85[_0x4aab45(0x2f4)](_0x4811f8[_0x4aab45(0x19a)](_0x29d000[_0x4aab45(0x211)]()));else{if(_0x116507[_0x4aab45(0x2fe)]()===_0x4aab45(0x26a))_0xaffc85[_0x4aab45(0x1bf)](_0x116507['next']());else{var _0x29429b=Math[_0x4aab45(0x384)](_0x29d000[_0x4aab45(0x3ed)](),_0x116507[_0x4aab45(0x3ed)]()),_0x2045b3=_0x29d000['next'](_0x29429b),_0x1aa25b=_0x116507[_0x4aab45(0x211)](_0x29429b);if(_0x2045b3[_0x4aab45(0x362)])continue;else _0x1aa25b[_0x4aab45(0x362)]?_0xaffc85[_0x4aab45(0x1bf)](_0x1aa25b):_0xaffc85[_0x4aab45(0x2f4)](_0x29429b,_0x4811f8['attributes']['transform'](_0x2045b3[_0x4aab45(0x32b)],_0x1aa25b['attributes'],_0x2e8fc2));}}}return _0xaffc85[_0x4aab45(0x36e)]();},_0x3e6875[_0x3377a5(0x44f)]['transformPosition']=function(_0x41c896,_0x3ccc69){var _0x4ae5d5=_0x3377a5;_0x3ccc69=!!_0x3ccc69;var _0x23e60a=_0x4811f8['iterator'](this[_0x4ae5d5(0x26f)]),_0x3d3c8f=0x0;while(_0x23e60a[_0x4ae5d5(0x299)]()&&_0x3d3c8f<=_0x41c896){var _0x4604f8=_0x23e60a[_0x4ae5d5(0x3ed)](),_0x3bc56c=_0x23e60a[_0x4ae5d5(0x2fe)]();_0x23e60a[_0x4ae5d5(0x211)]();if(_0x3bc56c==='delete'){_0x41c896-=Math[_0x4ae5d5(0x384)](_0x4604f8,_0x41c896-_0x3d3c8f);continue;}else _0x3bc56c===_0x4ae5d5(0x26a)&&(_0x3d3c8f<_0x41c896||!_0x3ccc69)&&(_0x41c896+=_0x4604f8);_0x3d3c8f+=_0x4604f8;}return _0x41c896;},_0x48dcb5['exports']=_0x3e6875;},function(_0x234717,_0x10ce37){var _0x409cb3=a9_0x50c4,_0xce0e10=-0x1,_0xd7a4ea=0x1,_0x42286b=0x0;function _0xa5069f(_0x483a88,_0x32339b){var _0x4148cb=a9_0x50c4;if(_0x483a88==_0x32339b){if(_0x483a88)return[[_0x42286b,_0x483a88]];return[];}var _0x3fc31a=_0x13cabb(_0x483a88,_0x32339b),_0x49469b=_0x483a88[_0x4148cb(0x296)](0x0,_0x3fc31a);_0x483a88=_0x483a88[_0x4148cb(0x296)](_0x3fc31a),_0x32339b=_0x32339b[_0x4148cb(0x296)](_0x3fc31a),_0x3fc31a=_0x1cc45a(_0x483a88,_0x32339b);var _0x126096=_0x483a88[_0x4148cb(0x296)](_0x483a88[_0x4148cb(0x19a)]-_0x3fc31a);_0x483a88=_0x483a88[_0x4148cb(0x296)](0x0,_0x483a88[_0x4148cb(0x19a)]-_0x3fc31a),_0x32339b=_0x32339b[_0x4148cb(0x296)](0x0,_0x32339b['length']-_0x3fc31a);var _0x4bdb0d=_0x1ed447(_0x483a88,_0x32339b);return _0x49469b&&_0x4bdb0d[_0x4148cb(0x34e)]([_0x42286b,_0x49469b]),_0x126096&&_0x4bdb0d['push']([_0x42286b,_0x126096]),_0x2d69e5(_0x4bdb0d),_0x4bdb0d;};function _0x1ed447(_0x2b4fe7,_0x965a62){var _0x1ba65c=a9_0x50c4,_0x9911eb;if(!_0x2b4fe7)return[[_0xd7a4ea,_0x965a62]];if(!_0x965a62)return[[_0xce0e10,_0x2b4fe7]];var _0x261057=_0x2b4fe7[_0x1ba65c(0x19a)]>_0x965a62[_0x1ba65c(0x19a)]?_0x2b4fe7:_0x965a62,_0x2e52b0=_0x2b4fe7[_0x1ba65c(0x19a)]>_0x965a62[_0x1ba65c(0x19a)]?_0x965a62:_0x2b4fe7,_0x393f2d=_0x261057['indexOf'](_0x2e52b0);if(_0x393f2d!=-0x1)return _0x9911eb=[[_0xd7a4ea,_0x261057[_0x1ba65c(0x296)](0x0,_0x393f2d)],[_0x42286b,_0x2e52b0],[_0xd7a4ea,_0x261057[_0x1ba65c(0x296)](_0x393f2d+_0x2e52b0[_0x1ba65c(0x19a)])]],_0x2b4fe7[_0x1ba65c(0x19a)]>_0x965a62[_0x1ba65c(0x19a)]&&(_0x9911eb[0x0][0x0]=_0x9911eb[0x2][0x0]=_0xce0e10),_0x9911eb;if(_0x2e52b0['length']==0x1)return[[_0xce0e10,_0x2b4fe7],[_0xd7a4ea,_0x965a62]];var _0x3284fd=_0x38e4a3(_0x2b4fe7,_0x965a62);if(_0x3284fd){var _0x198447=_0x3284fd[0x0],_0x38ab69=_0x3284fd[0x1],_0x1170a1=_0x3284fd[0x2],_0x200ff1=_0x3284fd[0x3],_0x1a7a32=_0x3284fd[0x4],_0x143a29=_0xa5069f(_0x198447,_0x1170a1),_0x56deb8=_0xa5069f(_0x38ab69,_0x200ff1);return _0x143a29[_0x1ba65c(0x1f8)]([[_0x42286b,_0x1a7a32]],_0x56deb8);}return _0x4629cd(_0x2b4fe7,_0x965a62);};function _0x4629cd(_0x2e6f3a,_0x5be57f){var _0x3a7617=a9_0x50c4,_0x51ea41=_0x2e6f3a[_0x3a7617(0x19a)],_0x2c1e67=_0x5be57f[_0x3a7617(0x19a)],_0x429b9b=Math[_0x3a7617(0x280)]((_0x51ea41+_0x2c1e67)/0x2),_0x2b6de9=_0x429b9b,_0x46d370=0x2*_0x429b9b,_0x78afd4=new Array(_0x46d370),_0xfad385=new Array(_0x46d370);for(var _0x1d6c50=0x0;_0x1d6c50<_0x46d370;_0x1d6c50++){_0x78afd4[_0x1d6c50]=-0x1,_0xfad385[_0x1d6c50]=-0x1;}_0x78afd4[_0x2b6de9+0x1]=0x0,_0xfad385[_0x2b6de9+0x1]=0x0;var _0x436eff=_0x51ea41-_0x2c1e67,_0x93080=_0x436eff%0x2!=0x0,_0x2c074f=0x0,_0x3321b0=0x0,_0x36cba5=0x0,_0x241e7a=0x0;for(var _0x224451=0x0;_0x224451<_0x429b9b;_0x224451++){for(var _0x665173=-_0x224451+_0x2c074f;_0x665173<=_0x224451-_0x3321b0;_0x665173+=0x2){var _0x3fdda1=_0x2b6de9+_0x665173,_0x554478;_0x665173==-_0x224451||_0x665173!=_0x224451&&_0x78afd4[_0x3fdda1-0x1]<_0x78afd4[_0x3fdda1+0x1]?_0x554478=_0x78afd4[_0x3fdda1+0x1]:_0x554478=_0x78afd4[_0x3fdda1-0x1]+0x1;var _0x489a38=_0x554478-_0x665173;while(_0x554478<_0x51ea41&&_0x489a38<_0x2c1e67&&_0x2e6f3a[_0x3a7617(0x382)](_0x554478)==_0x5be57f['charAt'](_0x489a38)){_0x554478++,_0x489a38++;}_0x78afd4[_0x3fdda1]=_0x554478;if(_0x554478>_0x51ea41)_0x3321b0+=0x2;else{if(_0x489a38>_0x2c1e67)_0x2c074f+=0x2;else{if(_0x93080){var _0x5e41ff=_0x2b6de9+_0x436eff-_0x665173;if(_0x5e41ff>=0x0&&_0x5e41ff<_0x46d370&&_0xfad385[_0x5e41ff]!=-0x1){var _0x222325=_0x51ea41-_0xfad385[_0x5e41ff];if(_0x554478>=_0x222325)return _0x29d2d8(_0x2e6f3a,_0x5be57f,_0x554478,_0x489a38);}}}}}for(var _0x50ac1c=-_0x224451+_0x36cba5;_0x50ac1c<=_0x224451-_0x241e7a;_0x50ac1c+=0x2){var _0x5e41ff=_0x2b6de9+_0x50ac1c,_0x222325;_0x50ac1c==-_0x224451||_0x50ac1c!=_0x224451&&_0xfad385[_0x5e41ff-0x1]<_0xfad385[_0x5e41ff+0x1]?_0x222325=_0xfad385[_0x5e41ff+0x1]:_0x222325=_0xfad385[_0x5e41ff-0x1]+0x1;var _0x54149f=_0x222325-_0x50ac1c;while(_0x222325<_0x51ea41&&_0x54149f<_0x2c1e67&&_0x2e6f3a[_0x3a7617(0x382)](_0x51ea41-_0x222325-0x1)==_0x5be57f[_0x3a7617(0x382)](_0x2c1e67-_0x54149f-0x1)){_0x222325++,_0x54149f++;}_0xfad385[_0x5e41ff]=_0x222325;if(_0x222325>_0x51ea41)_0x241e7a+=0x2;else{if(_0x54149f>_0x2c1e67)_0x36cba5+=0x2;else{if(!_0x93080){var _0x3fdda1=_0x2b6de9+_0x436eff-_0x50ac1c;if(_0x3fdda1>=0x0&&_0x3fdda1<_0x46d370&&_0x78afd4[_0x3fdda1]!=-0x1){var _0x554478=_0x78afd4[_0x3fdda1],_0x489a38=_0x2b6de9+_0x554478-_0x3fdda1;_0x222325=_0x51ea41-_0x222325;if(_0x554478>=_0x222325)return _0x29d2d8(_0x2e6f3a,_0x5be57f,_0x554478,_0x489a38);}}}}}}return[[_0xce0e10,_0x2e6f3a],[_0xd7a4ea,_0x5be57f]];};function _0x29d2d8(_0x4cf49a,_0x10211e,_0x9bcb59,_0x68b353){var _0x38caa4=a9_0x50c4,_0x59f072=_0x4cf49a[_0x38caa4(0x296)](0x0,_0x9bcb59),_0x1f3b3a=_0x10211e[_0x38caa4(0x296)](0x0,_0x68b353),_0x185e23=_0x4cf49a[_0x38caa4(0x296)](_0x9bcb59),_0x4e07c0=_0x10211e[_0x38caa4(0x296)](_0x68b353),_0x5e05c7=_0xa5069f(_0x59f072,_0x1f3b3a),_0x4107f3=_0xa5069f(_0x185e23,_0x4e07c0);return _0x5e05c7[_0x38caa4(0x1f8)](_0x4107f3);};function _0x13cabb(_0x53b0e6,_0x342145){var _0x1bdb21=a9_0x50c4;if(!_0x53b0e6||!_0x342145||_0x53b0e6[_0x1bdb21(0x382)](0x0)!=_0x342145[_0x1bdb21(0x382)](0x0))return 0x0;var _0x4bdb92=0x0,_0x465617=Math[_0x1bdb21(0x384)](_0x53b0e6['length'],_0x342145['length']),_0x3097c0=_0x465617,_0x164b96=0x0;while(_0x4bdb92<_0x3097c0){_0x53b0e6[_0x1bdb21(0x296)](_0x164b96,_0x3097c0)==_0x342145[_0x1bdb21(0x296)](_0x164b96,_0x3097c0)?(_0x4bdb92=_0x3097c0,_0x164b96=_0x4bdb92):_0x465617=_0x3097c0,_0x3097c0=Math[_0x1bdb21(0x357)]((_0x465617-_0x4bdb92)/0x2+_0x4bdb92);}return _0x3097c0;};function _0x1cc45a(_0x361280,_0x16f168){var _0x1e434f=a9_0x50c4;if(!_0x361280||!_0x16f168||_0x361280[_0x1e434f(0x382)](_0x361280['length']-0x1)!=_0x16f168[_0x1e434f(0x382)](_0x16f168[_0x1e434f(0x19a)]-0x1))return 0x0;var _0x5c689e=0x0,_0x1a5e1d=Math[_0x1e434f(0x384)](_0x361280[_0x1e434f(0x19a)],_0x16f168[_0x1e434f(0x19a)]),_0x4a3eae=_0x1a5e1d,_0x1cc0fc=0x0;while(_0x5c689e<_0x4a3eae){_0x361280['substring'](_0x361280[_0x1e434f(0x19a)]-_0x4a3eae,_0x361280['length']-_0x1cc0fc)==_0x16f168[_0x1e434f(0x296)](_0x16f168['length']-_0x4a3eae,_0x16f168[_0x1e434f(0x19a)]-_0x1cc0fc)?(_0x5c689e=_0x4a3eae,_0x1cc0fc=_0x5c689e):_0x1a5e1d=_0x4a3eae,_0x4a3eae=Math[_0x1e434f(0x357)]((_0x1a5e1d-_0x5c689e)/0x2+_0x5c689e);}return _0x4a3eae;};function _0x38e4a3(_0xa74766,_0x485e8a){var _0x4b7744=a9_0x50c4,_0x5308ab=_0xa74766[_0x4b7744(0x19a)]>_0x485e8a[_0x4b7744(0x19a)]?_0xa74766:_0x485e8a,_0x4caa4a=_0xa74766[_0x4b7744(0x19a)]>_0x485e8a[_0x4b7744(0x19a)]?_0x485e8a:_0xa74766;if(_0x5308ab['length']<0x4||_0x4caa4a[_0x4b7744(0x19a)]*0x2<_0x5308ab[_0x4b7744(0x19a)])return null;function _0xbf3c26(_0x49b2f4,_0x94491f,_0x2c2d39){var _0x59266c=_0x4b7744,_0x3d3423=_0x49b2f4[_0x59266c(0x296)](_0x2c2d39,_0x2c2d39+Math['floor'](_0x49b2f4['length']/0x4)),_0x48d5e6=-0x1,_0x1b6c7c='',_0x599eca,_0x58db8f,_0x8d93b4,_0x36c5a4;while((_0x48d5e6=_0x94491f[_0x59266c(0x39a)](_0x3d3423,_0x48d5e6+0x1))!=-0x1){var _0x19deea=_0x13cabb(_0x49b2f4[_0x59266c(0x296)](_0x2c2d39),_0x94491f[_0x59266c(0x296)](_0x48d5e6)),_0x1bfdb8=_0x1cc45a(_0x49b2f4[_0x59266c(0x296)](0x0,_0x2c2d39),_0x94491f[_0x59266c(0x296)](0x0,_0x48d5e6));_0x1b6c7c[_0x59266c(0x19a)]<_0x1bfdb8+_0x19deea&&(_0x1b6c7c=_0x94491f['substring'](_0x48d5e6-_0x1bfdb8,_0x48d5e6)+_0x94491f[_0x59266c(0x296)](_0x48d5e6,_0x48d5e6+_0x19deea),_0x599eca=_0x49b2f4[_0x59266c(0x296)](0x0,_0x2c2d39-_0x1bfdb8),_0x58db8f=_0x49b2f4[_0x59266c(0x296)](_0x2c2d39+_0x19deea),_0x8d93b4=_0x94491f['substring'](0x0,_0x48d5e6-_0x1bfdb8),_0x36c5a4=_0x94491f[_0x59266c(0x296)](_0x48d5e6+_0x19deea));}return _0x1b6c7c['length']*0x2>=_0x49b2f4[_0x59266c(0x19a)]?[_0x599eca,_0x58db8f,_0x8d93b4,_0x36c5a4,_0x1b6c7c]:null;}var _0x31d497=_0xbf3c26(_0x5308ab,_0x4caa4a,Math[_0x4b7744(0x280)](_0x5308ab[_0x4b7744(0x19a)]/0x4)),_0x250122=_0xbf3c26(_0x5308ab,_0x4caa4a,Math[_0x4b7744(0x280)](_0x5308ab['length']/0x2)),_0xbeff0c;if(!_0x31d497&&!_0x250122)return null;else{if(!_0x250122)_0xbeff0c=_0x31d497;else!_0x31d497?_0xbeff0c=_0x250122:_0xbeff0c=_0x31d497[0x4]['length']>_0x250122[0x4][_0x4b7744(0x19a)]?_0x31d497:_0x250122;}var _0x40629d,_0x4ed5bf,_0x18ec88,_0x16fe26;_0xa74766[_0x4b7744(0x19a)]>_0x485e8a[_0x4b7744(0x19a)]?(_0x40629d=_0xbeff0c[0x0],_0x4ed5bf=_0xbeff0c[0x1],_0x18ec88=_0xbeff0c[0x2],_0x16fe26=_0xbeff0c[0x3]):(_0x18ec88=_0xbeff0c[0x0],_0x16fe26=_0xbeff0c[0x1],_0x40629d=_0xbeff0c[0x2],_0x4ed5bf=_0xbeff0c[0x3]);var _0x52face=_0xbeff0c[0x4];return[_0x40629d,_0x4ed5bf,_0x18ec88,_0x16fe26,_0x52face];};function _0x2d69e5(_0x1717ab){var _0xf6bc44=a9_0x50c4;_0x1717ab[_0xf6bc44(0x1bf)]([_0x42286b,'']);var _0x3e8959=0x0,_0x1e06a9=0x0,_0x2e6621=0x0,_0x1e908='',_0x47e1f5='',_0x4ba885;while(_0x3e8959<_0x1717ab[_0xf6bc44(0x19a)]){switch(_0x1717ab[_0x3e8959][0x0]){case _0xd7a4ea:_0x2e6621++,_0x47e1f5+=_0x1717ab[_0x3e8959][0x1],_0x3e8959++;break;case _0xce0e10:_0x1e06a9++,_0x1e908+=_0x1717ab[_0x3e8959][0x1],_0x3e8959++;break;case _0x42286b:if(_0x1e06a9+_0x2e6621>0x1){_0x1e06a9!==0x0&&_0x2e6621!==0x0&&(_0x4ba885=_0x13cabb(_0x47e1f5,_0x1e908),_0x4ba885!==0x0&&(_0x3e8959-_0x1e06a9-_0x2e6621>0x0&&_0x1717ab[_0x3e8959-_0x1e06a9-_0x2e6621-0x1][0x0]==_0x42286b?_0x1717ab[_0x3e8959-_0x1e06a9-_0x2e6621-0x1][0x1]+=_0x47e1f5[_0xf6bc44(0x296)](0x0,_0x4ba885):(_0x1717ab[_0xf6bc44(0x182)](0x0,0x0,[_0x42286b,_0x47e1f5[_0xf6bc44(0x296)](0x0,_0x4ba885)]),_0x3e8959++),_0x47e1f5=_0x47e1f5['substring'](_0x4ba885),_0x1e908=_0x1e908['substring'](_0x4ba885)),_0x4ba885=_0x1cc45a(_0x47e1f5,_0x1e908),_0x4ba885!==0x0&&(_0x1717ab[_0x3e8959][0x1]=_0x47e1f5[_0xf6bc44(0x296)](_0x47e1f5[_0xf6bc44(0x19a)]-_0x4ba885)+_0x1717ab[_0x3e8959][0x1],_0x47e1f5=_0x47e1f5[_0xf6bc44(0x296)](0x0,_0x47e1f5[_0xf6bc44(0x19a)]-_0x4ba885),_0x1e908=_0x1e908[_0xf6bc44(0x296)](0x0,_0x1e908[_0xf6bc44(0x19a)]-_0x4ba885)));if(_0x1e06a9===0x0)_0x1717ab['splice'](_0x3e8959-_0x2e6621,_0x1e06a9+_0x2e6621,[_0xd7a4ea,_0x47e1f5]);else _0x2e6621===0x0?_0x1717ab['splice'](_0x3e8959-_0x1e06a9,_0x1e06a9+_0x2e6621,[_0xce0e10,_0x1e908]):_0x1717ab['splice'](_0x3e8959-_0x1e06a9-_0x2e6621,_0x1e06a9+_0x2e6621,[_0xce0e10,_0x1e908],[_0xd7a4ea,_0x47e1f5]);_0x3e8959=_0x3e8959-_0x1e06a9-_0x2e6621+(_0x1e06a9?0x1:0x0)+(_0x2e6621?0x1:0x0)+0x1;}else _0x3e8959!==0x0&&_0x1717ab[_0x3e8959-0x1][0x0]==_0x42286b?(_0x1717ab[_0x3e8959-0x1][0x1]+=_0x1717ab[_0x3e8959][0x1],_0x1717ab[_0xf6bc44(0x182)](_0x3e8959,0x1)):_0x3e8959++;_0x2e6621=0x0,_0x1e06a9=0x0,_0x1e908='',_0x47e1f5='';break;}}_0x1717ab[_0x1717ab[_0xf6bc44(0x19a)]-0x1][0x1]===''&&_0x1717ab[_0xf6bc44(0x209)]();var _0x43370=![];_0x3e8959=0x1;while(_0x3e8959<_0x1717ab[_0xf6bc44(0x19a)]-0x1){if(_0x1717ab[_0x3e8959-0x1][0x0]==_0x42286b&&_0x1717ab[_0x3e8959+0x1][0x0]==_0x42286b){if(_0x1717ab[_0x3e8959][0x1][_0xf6bc44(0x296)](_0x1717ab[_0x3e8959][0x1][_0xf6bc44(0x19a)]-_0x1717ab[_0x3e8959-0x1][0x1][_0xf6bc44(0x19a)])==_0x1717ab[_0x3e8959-0x1][0x1])_0x1717ab[_0x3e8959][0x1]=_0x1717ab[_0x3e8959-0x1][0x1]+_0x1717ab[_0x3e8959][0x1][_0xf6bc44(0x296)](0x0,_0x1717ab[_0x3e8959][0x1][_0xf6bc44(0x19a)]-_0x1717ab[_0x3e8959-0x1][0x1]['length']),_0x1717ab[_0x3e8959+0x1][0x1]=_0x1717ab[_0x3e8959-0x1][0x1]+_0x1717ab[_0x3e8959+0x1][0x1],_0x1717ab[_0xf6bc44(0x182)](_0x3e8959-0x1,0x1),_0x43370=!![];else _0x1717ab[_0x3e8959][0x1]['substring'](0x0,_0x1717ab[_0x3e8959+0x1][0x1][_0xf6bc44(0x19a)])==_0x1717ab[_0x3e8959+0x1][0x1]&&(_0x1717ab[_0x3e8959-0x1][0x1]+=_0x1717ab[_0x3e8959+0x1][0x1],_0x1717ab[_0x3e8959][0x1]=_0x1717ab[_0x3e8959][0x1][_0xf6bc44(0x296)](_0x1717ab[_0x3e8959+0x1][0x1][_0xf6bc44(0x19a)])+_0x1717ab[_0x3e8959+0x1][0x1],_0x1717ab['splice'](_0x3e8959+0x1,0x1),_0x43370=!![]);}_0x3e8959++;}_0x43370&&_0x2d69e5(_0x1717ab);};var _0x352762=_0xa5069f;_0x352762[_0x409cb3(0x3e1)]=_0xd7a4ea,_0x352762[_0x409cb3(0x254)]=_0xce0e10,_0x352762['EQUAL']=_0x42286b,_0x234717[_0x409cb3(0x426)]=_0x352762;},function(_0x349700,_0x1fc1c8,_0x42a267){var _0x18bab5=a9_0x50c4,_0x26c783=Array[_0x18bab5(0x44f)][_0x18bab5(0x441)],_0x22b6cf=_0x42a267(0x17),_0x3de136=_0x42a267(0x18),_0x5bc171=_0x349700[_0x18bab5(0x426)]=function(_0x5272df,_0x10298d,_0x3b3e6a){var _0x2120f3=_0x18bab5;if(!_0x3b3e6a)_0x3b3e6a={};if(_0x5272df===_0x10298d)return!![];else{if(_0x5272df instanceof Date&&_0x10298d instanceof Date)return _0x5272df[_0x2120f3(0x324)]()===_0x10298d[_0x2120f3(0x324)]();else return!_0x5272df||!_0x10298d||typeof _0x5272df!='object'&&typeof _0x10298d!=_0x2120f3(0x2e1)?_0x3b3e6a[_0x2120f3(0x17f)]?_0x5272df===_0x10298d:_0x5272df==_0x10298d:_0x183a2f(_0x5272df,_0x10298d,_0x3b3e6a);}};function _0x5b0f6d(_0xf4ef18){return _0xf4ef18===null||_0xf4ef18===undefined;}function _0x4b7778(_0x139859){var _0x1098b0=_0x18bab5;if(!_0x139859||typeof _0x139859!==_0x1098b0(0x2e1)||typeof _0x139859[_0x1098b0(0x19a)]!==_0x1098b0(0x3b6))return![];if(typeof _0x139859[_0x1098b0(0x39f)]!=='function'||typeof _0x139859[_0x1098b0(0x441)]!==_0x1098b0(0x33b))return![];if(_0x139859['length']>0x0&&typeof _0x139859[0x0]!==_0x1098b0(0x3b6))return![];return!![];}function _0x183a2f(_0x20717c,_0x276c9b,_0x519af7){var _0x435a0d=_0x18bab5,_0x5285e4,_0x58f107;if(_0x5b0f6d(_0x20717c)||_0x5b0f6d(_0x276c9b))return![];if(_0x20717c[_0x435a0d(0x44f)]!==_0x276c9b[_0x435a0d(0x44f)])return![];if(_0x3de136(_0x20717c)){if(!_0x3de136(_0x276c9b))return![];return _0x20717c=_0x26c783[_0x435a0d(0x1e2)](_0x20717c),_0x276c9b=_0x26c783[_0x435a0d(0x1e2)](_0x276c9b),_0x5bc171(_0x20717c,_0x276c9b,_0x519af7);}if(_0x4b7778(_0x20717c)){if(!_0x4b7778(_0x276c9b))return![];if(_0x20717c['length']!==_0x276c9b[_0x435a0d(0x19a)])return![];for(_0x5285e4=0x0;_0x5285e4<_0x20717c['length'];_0x5285e4++){if(_0x20717c[_0x5285e4]!==_0x276c9b[_0x5285e4])return![];}return!![];}try{var _0x4fa885=_0x22b6cf(_0x20717c),_0x502741=_0x22b6cf(_0x276c9b);}catch(_0x122447){return![];}if(_0x4fa885[_0x435a0d(0x19a)]!=_0x502741[_0x435a0d(0x19a)])return![];_0x4fa885[_0x435a0d(0x306)](),_0x502741[_0x435a0d(0x306)]();for(_0x5285e4=_0x4fa885[_0x435a0d(0x19a)]-0x1;_0x5285e4>=0x0;_0x5285e4--){if(_0x4fa885[_0x5285e4]!=_0x502741[_0x5285e4])return![];}for(_0x5285e4=_0x4fa885[_0x435a0d(0x19a)]-0x1;_0x5285e4>=0x0;_0x5285e4--){_0x58f107=_0x4fa885[_0x5285e4];if(!_0x5bc171(_0x20717c[_0x58f107],_0x276c9b[_0x58f107],_0x519af7))return![];}return typeof _0x20717c===typeof _0x276c9b;}},function(_0x359d2c,_0x5bc1f7){var _0x25a517=a9_0x50c4;_0x5bc1f7=_0x359d2c[_0x25a517(0x426)]=typeof Object[_0x25a517(0x3aa)]===_0x25a517(0x33b)?Object[_0x25a517(0x3aa)]:_0x3ef669,_0x5bc1f7['shim']=_0x3ef669;function _0x3ef669(_0x3c1bbb){var _0x1151fc=_0x25a517,_0x5a68af=[];for(var _0xd88aca in _0x3c1bbb)_0x5a68af[_0x1151fc(0x1bf)](_0xd88aca);return _0x5a68af;}},function(_0x31e1fd,_0x18599d){var _0x53d810=a9_0x50c4,_0x339014=(function(){var _0x58fb1e=a9_0x50c4;return Object[_0x58fb1e(0x44f)][_0x58fb1e(0x1d3)]['call'](arguments);}())==_0x53d810(0x399);_0x18599d=_0x31e1fd[_0x53d810(0x426)]=_0x339014?_0x27c55f:_0x4407f4,_0x18599d[_0x53d810(0x3d4)]=_0x27c55f;function _0x27c55f(_0x3068a4){var _0x5ac743=_0x53d810;return Object[_0x5ac743(0x44f)][_0x5ac743(0x1d3)][_0x5ac743(0x1e2)](_0x3068a4)==_0x5ac743(0x399);};_0x18599d[_0x53d810(0x2f7)]=_0x4407f4;function _0x4407f4(_0x33f951){var _0x50db12=_0x53d810;return _0x33f951&&typeof _0x33f951=='object'&&typeof _0x33f951[_0x50db12(0x19a)]==_0x50db12(0x3b6)&&Object[_0x50db12(0x44f)][_0x50db12(0x3ca)][_0x50db12(0x1e2)](_0x33f951,_0x50db12(0x2ca))&&!Object[_0x50db12(0x44f)][_0x50db12(0x283)][_0x50db12(0x1e2)](_0x33f951,_0x50db12(0x2ca))||![];};},function(_0x2cbe3f,_0x5e0c13){'use strict';var _0x1cfcd8=a9_0x50c4;var _0x326aa7=Object[_0x1cfcd8(0x44f)][_0x1cfcd8(0x3ca)],_0x266cc2=Object[_0x1cfcd8(0x44f)][_0x1cfcd8(0x1d3)],_0x371511=function _0xecb90f(_0x17dc2a){var _0x41d008=_0x1cfcd8;if(typeof Array[_0x41d008(0x3f3)]===_0x41d008(0x33b))return Array['isArray'](_0x17dc2a);return _0x266cc2['call'](_0x17dc2a)===_0x41d008(0x2c0);},_0x5c2eae=function _0x402e5e(_0x4bfcd8){var _0x5f254b=_0x1cfcd8;if(!_0x4bfcd8||_0x266cc2['call'](_0x4bfcd8)!==_0x5f254b(0x45a))return![];var _0x368106=_0x326aa7['call'](_0x4bfcd8,_0x5f254b(0x2c6)),_0x15a55a=_0x4bfcd8[_0x5f254b(0x2c6)]&&_0x4bfcd8[_0x5f254b(0x2c6)][_0x5f254b(0x44f)]&&_0x326aa7[_0x5f254b(0x1e2)](_0x4bfcd8[_0x5f254b(0x2c6)][_0x5f254b(0x44f)],_0x5f254b(0x45e));if(_0x4bfcd8['constructor']&&!_0x368106&&!_0x15a55a)return![];var _0x4d56a1;for(_0x4d56a1 in _0x4bfcd8){}return typeof _0x4d56a1===_0x5f254b(0x1ab)||_0x326aa7[_0x5f254b(0x1e2)](_0x4bfcd8,_0x4d56a1);};_0x2cbe3f['exports']=function _0x5e20e8(){var _0x125222=_0x1cfcd8,_0x38ced1,_0x168556,_0x25d450,_0x29b2e9,_0x1e72eb,_0x426dbb,_0x588a5e=arguments[0x0],_0x216933=0x1,_0xa62d5b=arguments[_0x125222(0x19a)],_0xd77167=![];if(typeof _0x588a5e==='boolean')_0xd77167=_0x588a5e,_0x588a5e=arguments[0x1]||{},_0x216933=0x2;else(typeof _0x588a5e!==_0x125222(0x2e1)&&typeof _0x588a5e!=='function'||_0x588a5e==null)&&(_0x588a5e={});for(;_0x216933<_0xa62d5b;++_0x216933){_0x38ced1=arguments[_0x216933];if(_0x38ced1!=null)for(_0x168556 in _0x38ced1){_0x25d450=_0x588a5e[_0x168556],_0x29b2e9=_0x38ced1[_0x168556];if(_0x588a5e!==_0x29b2e9){if(_0xd77167&&_0x29b2e9&&(_0x5c2eae(_0x29b2e9)||(_0x1e72eb=_0x371511(_0x29b2e9))))_0x1e72eb?(_0x1e72eb=![],_0x426dbb=_0x25d450&&_0x371511(_0x25d450)?_0x25d450:[]):_0x426dbb=_0x25d450&&_0x5c2eae(_0x25d450)?_0x25d450:{},_0x588a5e[_0x168556]=_0x5e20e8(_0xd77167,_0x426dbb,_0x29b2e9);else typeof _0x29b2e9!==_0x125222(0x1ab)&&(_0x588a5e[_0x168556]=_0x29b2e9);}}}return _0x588a5e;};},function(_0x1a41bd,_0x1bd5e5,_0x372b95){var _0x253a0c=a9_0x50c4,_0x28c604=_0x372b95(0x16),_0x5a73fd=_0x372b95(0x19),_0x807e98={'attributes':{'compose':function(_0x160ae8,_0x573f7a,_0xa716e8){var _0x1344ff=a9_0x50c4;if(typeof _0x160ae8!==_0x1344ff(0x2e1))_0x160ae8={};if(typeof _0x573f7a!==_0x1344ff(0x2e1))_0x573f7a={};var _0x4c1aac=_0x5a73fd(!![],{},_0x573f7a);!_0xa716e8&&(_0x4c1aac=Object['keys'](_0x4c1aac)[_0x1344ff(0x1c8)](function(_0x432b25,_0x492cc8){return _0x4c1aac[_0x492cc8]!=null&&(_0x432b25[_0x492cc8]=_0x4c1aac[_0x492cc8]),_0x432b25;},{}));for(var _0x5e421f in _0x160ae8){_0x160ae8[_0x5e421f]!==undefined&&_0x573f7a[_0x5e421f]===undefined&&(_0x4c1aac[_0x5e421f]=_0x160ae8[_0x5e421f]);}return Object['keys'](_0x4c1aac)[_0x1344ff(0x19a)]>0x0?_0x4c1aac:undefined;},'diff':function(_0x2a4d7b,_0x2d7210){var _0x4f2500=a9_0x50c4;if(typeof _0x2a4d7b!==_0x4f2500(0x2e1))_0x2a4d7b={};if(typeof _0x2d7210!==_0x4f2500(0x2e1))_0x2d7210={};var _0x1ca86f=Object[_0x4f2500(0x3aa)](_0x2a4d7b)['concat'](Object[_0x4f2500(0x3aa)](_0x2d7210))['reduce'](function(_0x566cc8,_0x28c0cf){return!_0x28c604(_0x2a4d7b[_0x28c0cf],_0x2d7210[_0x28c0cf])&&(_0x566cc8[_0x28c0cf]=_0x2d7210[_0x28c0cf]===undefined?null:_0x2d7210[_0x28c0cf]),_0x566cc8;},{});return Object[_0x4f2500(0x3aa)](_0x1ca86f)[_0x4f2500(0x19a)]>0x0?_0x1ca86f:undefined;},'transform':function(_0x52358a,_0x1e4d55,_0x3628d5){var _0x2f4eb4=a9_0x50c4;if(typeof _0x52358a!==_0x2f4eb4(0x2e1))return _0x1e4d55;if(typeof _0x1e4d55!==_0x2f4eb4(0x2e1))return undefined;if(!_0x3628d5)return _0x1e4d55;var _0x20f1c6=Object[_0x2f4eb4(0x3aa)](_0x1e4d55)[_0x2f4eb4(0x1c8)](function(_0x1b74ea,_0x217c35){if(_0x52358a[_0x217c35]===undefined)_0x1b74ea[_0x217c35]=_0x1e4d55[_0x217c35];return _0x1b74ea;},{});return Object[_0x2f4eb4(0x3aa)](_0x20f1c6)['length']>0x0?_0x20f1c6:undefined;}},'iterator':function(_0x23c309){return new _0x3e6e03(_0x23c309);},'length':function(_0x4d2da1){var _0x41efd7=a9_0x50c4;if(typeof _0x4d2da1[_0x41efd7(0x362)]===_0x41efd7(0x3b6))return _0x4d2da1[_0x41efd7(0x362)];else return typeof _0x4d2da1[_0x41efd7(0x2f4)]===_0x41efd7(0x3b6)?_0x4d2da1['retain']:typeof _0x4d2da1[_0x41efd7(0x26a)]===_0x41efd7(0x187)?_0x4d2da1[_0x41efd7(0x26a)][_0x41efd7(0x19a)]:0x1;}};function _0x3e6e03(_0xc5148d){var _0x581802=a9_0x50c4;this[_0x581802(0x26f)]=_0xc5148d,this[_0x581802(0x320)]=0x0,this['offset']=0x0;};_0x3e6e03['prototype'][_0x253a0c(0x299)]=function(){var _0x10c2a2=_0x253a0c;return this[_0x10c2a2(0x3ed)]()<Infinity;},_0x3e6e03['prototype'][_0x253a0c(0x211)]=function(_0x23c64a){var _0x426b0e=_0x253a0c;if(!_0x23c64a)_0x23c64a=Infinity;var _0x1fc35e=this[_0x426b0e(0x26f)][this[_0x426b0e(0x320)]];if(_0x1fc35e){var _0x326b1e=this[_0x426b0e(0x438)],_0x5cabe1=_0x807e98[_0x426b0e(0x19a)](_0x1fc35e);_0x23c64a>=_0x5cabe1-_0x326b1e?(_0x23c64a=_0x5cabe1-_0x326b1e,this[_0x426b0e(0x320)]+=0x1,this[_0x426b0e(0x438)]=0x0):this[_0x426b0e(0x438)]+=_0x23c64a;if(typeof _0x1fc35e[_0x426b0e(0x362)]===_0x426b0e(0x3b6))return{'delete':_0x23c64a};else{var _0x4c7594={};_0x1fc35e['attributes']&&(_0x4c7594[_0x426b0e(0x32b)]=_0x1fc35e[_0x426b0e(0x32b)]);if(typeof _0x1fc35e['retain']===_0x426b0e(0x3b6))_0x4c7594[_0x426b0e(0x2f4)]=_0x23c64a;else typeof _0x1fc35e[_0x426b0e(0x26a)]==='string'?_0x4c7594['insert']=_0x1fc35e['insert']['substr'](_0x326b1e,_0x23c64a):_0x4c7594['insert']=_0x1fc35e[_0x426b0e(0x26a)];return _0x4c7594;}}else return{'retain':Infinity};},_0x3e6e03['prototype'][_0x253a0c(0x3ed)]=function(){var _0x594a8d=_0x253a0c;return this[_0x594a8d(0x26f)][this[_0x594a8d(0x320)]]?_0x807e98[_0x594a8d(0x19a)](this[_0x594a8d(0x26f)][this[_0x594a8d(0x320)]])-this['offset']:Infinity;},_0x3e6e03[_0x253a0c(0x44f)][_0x253a0c(0x2fe)]=function(){var _0x41286f=_0x253a0c;if(this['ops'][this[_0x41286f(0x320)]]){if(typeof this[_0x41286f(0x26f)][this[_0x41286f(0x320)]]['delete']==='number')return _0x41286f(0x362);else return typeof this[_0x41286f(0x26f)][this[_0x41286f(0x320)]][_0x41286f(0x2f4)]==='number'?_0x41286f(0x2f4):_0x41286f(0x26a);}return _0x41286f(0x2f4);},_0x1a41bd['exports']=_0x807e98;},function(_0x2f80cb,_0x5a2865,_0x17221f){'use strict';var _0x3339b2=a9_0x50c4;Object[_0x3339b2(0x289)](_0x5a2865,'__esModule',{'value':!![]});var _0x201c7b=typeof Symbol===_0x3339b2(0x33b)&&typeof Symbol[_0x3339b2(0x2e8)]===_0x3339b2(0x2a8)?function(_0x588a1b){return typeof _0x588a1b;}:function(_0x5e2bbf){var _0x301db1=_0x3339b2;return _0x5e2bbf&&typeof Symbol==='function'&&_0x5e2bbf['constructor']===Symbol?_0x301db1(0x2a8):typeof _0x5e2bbf;},_0x5d7ceb=(function(){function _0x16f808(_0x1ab41e,_0x3328f9){var _0x3095d9=a9_0x50c4,_0x430d9e=[],_0x2e8d77=!![],_0x2ce70d=![],_0x54035a=undefined;try{for(var _0xfc9633=_0x1ab41e[Symbol[_0x3095d9(0x2e8)]](),_0xfdcbcb;!(_0x2e8d77=(_0xfdcbcb=_0xfc9633['next']())[_0x3095d9(0x25a)]);_0x2e8d77=!![]){_0x430d9e[_0x3095d9(0x1bf)](_0xfdcbcb['value']);if(_0x3328f9&&_0x430d9e[_0x3095d9(0x19a)]===_0x3328f9)break;}}catch(_0x389931){_0x2ce70d=!![],_0x54035a=_0x389931;}finally{try{if(!_0x2e8d77&&_0xfc9633[_0x3095d9(0x222)])_0xfc9633['return']();}finally{if(_0x2ce70d)throw _0x54035a;}}return _0x430d9e;}return function(_0x96a3e,_0x1a6b82){var _0x897db7=a9_0x50c4;if(Array['isArray'](_0x96a3e))return _0x96a3e;else{if(Symbol[_0x897db7(0x2e8)]in Object(_0x96a3e))return _0x16f808(_0x96a3e,_0x1a6b82);else throw new TypeError(_0x897db7(0x183));}};}()),_0x4e8d81=(function(){function _0x3e5087(_0x11839a,_0x57f5d2){var _0x181f59=a9_0x50c4;for(var _0x1cf682=0x0;_0x1cf682<_0x57f5d2['length'];_0x1cf682++){var _0x1928d3=_0x57f5d2[_0x1cf682];_0x1928d3['enumerable']=_0x1928d3['enumerable']||![],_0x1928d3['configurable']=!![];if(_0x181f59(0x2e4)in _0x1928d3)_0x1928d3[_0x181f59(0x40f)]=!![];Object[_0x181f59(0x289)](_0x11839a,_0x1928d3[_0x181f59(0x3ea)],_0x1928d3);}}return function(_0x185ca5,_0x54e470,_0x5e1177){if(_0x54e470)_0x3e5087(_0x185ca5['prototype'],_0x54e470);if(_0x5e1177)_0x3e5087(_0x185ca5,_0x5e1177);return _0x185ca5;};}()),_0x3ec9b6=_0x17221f(0x14),_0x57d89b=_0x1d072a(_0x3ec9b6),_0x3c1048=_0x17221f(0x1a),_0x285442=_0x1d072a(_0x3c1048),_0x271073=_0x17221f(0x1c),_0x32f3b1=_0x1d072a(_0x271073),_0x9fb869=_0x17221f(0x2),_0x330db6=_0x1d072a(_0x9fb869),_0x517b60=_0x17221f(0x1f),_0xac8db8=_0x1d072a(_0x517b60),_0x1adb68=_0x17221f(0x25),_0x1c5895=_0x1d072a(_0x1adb68),_0x49adde=_0x17221f(0x20),_0x2466e1=_0x1d072a(_0x49adde),_0x346bd5=_0x17221f(0x26),_0x293858=_0x1d072a(_0x346bd5),_0x535fcd=_0x17221f(0x16),_0x52f661=_0x1d072a(_0x535fcd),_0x2ed43f=_0x17221f(0x19),_0xffebe6=_0x1d072a(_0x2ed43f);function _0x1d072a(_0x190554){var _0x4d56ac=_0x3339b2;return _0x190554&&_0x190554[_0x4d56ac(0x2ad)]?_0x190554:{'default':_0x190554};}function _0x3f243a(_0x11a34d,_0xcd4853,_0x494a9c){var _0x5d17a9=_0x3339b2;return _0xcd4853 in _0x11a34d?Object[_0x5d17a9(0x289)](_0x11a34d,_0xcd4853,{'value':_0x494a9c,'enumerable':!![],'configurable':!![],'writable':!![]}):_0x11a34d[_0xcd4853]=_0x494a9c,_0x11a34d;}function _0x17633b(_0x421816,_0x2825ae){var _0x3a47f1=_0x3339b2;if(!(_0x421816 instanceof _0x2825ae))throw new TypeError(_0x3a47f1(0x2eb));}var _0x211686=(function(){var _0x49d266=_0x3339b2;function _0x303066(_0x30b5d6,_0x14b819){var _0x43332f=a9_0x50c4;_0x17633b(this,_0x303066),this['scroll']=_0x30b5d6,this[_0x43332f(0x440)]=_0x14b819,this[_0x43332f(0x440)]['on'](_0x32f3b1['default'][_0x43332f(0x42e)]['SCROLL_UPDATE'],this['update'][_0x43332f(0x279)](this,null)),this[_0x43332f(0x447)]=this[_0x43332f(0x249)](),this['enable']();}return _0x4e8d81(_0x303066,[{'key':_0x49d266(0x3c7),'value':function _0xd0508b(_0x42b518){var _0x25aec2=_0x49d266,_0x562933=this,_0x318b76=arguments[_0x25aec2(0x19a)]<=0x1||arguments[0x1]===undefined?_0x32f3b1[_0x25aec2(0x413)][_0x25aec2(0x270)][_0x25aec2(0x31c)]:arguments[0x1],_0xfdc376=![];this[_0x25aec2(0x36a)][_0x25aec2(0x22f)]();var _0x1cdd28=this['scroll'][_0x25aec2(0x19a)]();return this[_0x25aec2(0x36a)][_0x25aec2(0x373)]=!![],_0x42b518=_0x187954(_0x42b518),_0x42b518['ops'][_0x25aec2(0x1c8)](function(_0x486651,_0x186d8e){var _0x11b998=_0x25aec2,_0x1a86d0=_0x186d8e['retain']||_0x186d8e['delete']||_0x186d8e[_0x11b998(0x26a)][_0x11b998(0x19a)]||0x1,_0x4a781a=_0x186d8e[_0x11b998(0x32b)]||{};if(_0x186d8e[_0x11b998(0x26a)]!=null){if(typeof _0x186d8e[_0x11b998(0x26a)]===_0x11b998(0x187)){var _0x307063=_0x186d8e[_0x11b998(0x26a)];_0x307063[_0x11b998(0x2cb)]('\x0a')&&_0xfdc376&&(_0xfdc376=![],_0x307063=_0x307063[_0x11b998(0x441)](0x0,-0x1));_0x486651>=_0x1cdd28&&!_0x307063['endsWith']('\x0a')&&(_0xfdc376=!![]);_0x562933[_0x11b998(0x36a)][_0x11b998(0x307)](_0x486651,_0x307063);var _0x357e10=_0x562933[_0x11b998(0x36a)][_0x11b998(0x17c)](_0x486651),_0x4bae5f=_0x5d7ceb(_0x357e10,0x2),_0x5b1559=_0x4bae5f[0x0],_0x2b9db8=_0x4bae5f[0x1],_0x151c47=(0x0,_0xffebe6[_0x11b998(0x413)])({},(0x0,_0x49adde[_0x11b998(0x387)])(_0x5b1559));if(_0x5b1559 instanceof _0x2466e1[_0x11b998(0x413)]){var _0x594fe9=_0x5b1559[_0x11b998(0x3a9)](_0x330db6[_0x11b998(0x413)][_0x11b998(0x214)],_0x2b9db8),_0x3d6574=_0x5d7ceb(_0x594fe9,0x1),_0x3c496c=_0x3d6574[0x0];_0x151c47=(0x0,_0xffebe6['default'])(_0x151c47,(0x0,_0x49adde[_0x11b998(0x387)])(_0x3c496c));}_0x4a781a=_0x285442['default'][_0x11b998(0x32b)][_0x11b998(0x20b)](_0x151c47,_0x4a781a)||{};}else{if(_0x201c7b(_0x186d8e[_0x11b998(0x26a)])==='object'){var _0x25d4b5=Object[_0x11b998(0x3aa)](_0x186d8e['insert'])[0x0];if(_0x25d4b5==null)return _0x486651;_0x562933['scroll'][_0x11b998(0x307)](_0x486651,_0x25d4b5,_0x186d8e['insert'][_0x25d4b5]);}}_0x1cdd28+=_0x1a86d0;}return Object[_0x11b998(0x3aa)](_0x4a781a)['forEach'](function(_0x3dcb95){var _0x1a4167=_0x11b998;_0x562933['scroll'][_0x1a4167(0x459)](_0x486651,_0x1a86d0,_0x3dcb95,_0x4a781a[_0x3dcb95]);}),_0x486651+_0x1a86d0;},0x0),_0x42b518[_0x25aec2(0x26f)]['reduce'](function(_0x502092,_0x1c6edb){var _0x34e510=_0x25aec2;if(typeof _0x1c6edb[_0x34e510(0x362)]===_0x34e510(0x3b6))return _0x562933[_0x34e510(0x36a)]['deleteAt'](_0x502092,_0x1c6edb['delete']),_0x502092;return _0x502092+(_0x1c6edb[_0x34e510(0x2f4)]||_0x1c6edb[_0x34e510(0x26a)]['length']||0x1);},0x0),this[_0x25aec2(0x36a)][_0x25aec2(0x373)]=![],this[_0x25aec2(0x36a)][_0x25aec2(0x23e)](),this[_0x25aec2(0x22f)](_0x42b518,_0x318b76);}},{'key':_0x49d266(0x23f),'value':function _0x43b55e(_0x1e7afe,_0x42b0c0){var _0x27f94b=_0x49d266,_0x3a186d=arguments['length']<=0x2||arguments[0x2]===undefined?_0x32f3b1[_0x27f94b(0x413)][_0x27f94b(0x270)][_0x27f94b(0x31c)]:arguments[0x2];return this[_0x27f94b(0x36a)][_0x27f94b(0x3c3)](_0x1e7afe,_0x42b0c0),this[_0x27f94b(0x22f)](new _0x57d89b[(_0x27f94b(0x413))]()[_0x27f94b(0x2f4)](_0x1e7afe)[_0x27f94b(0x362)](_0x42b0c0),_0x3a186d);}},{'key':_0x49d266(0x369),'value':function _0x16645a(){var _0x3951de=_0x49d266,_0x3d1021=arguments['length']<=0x0||arguments[0x0]===undefined?!![]:arguments[0x0];this[_0x3951de(0x36a)][_0x3951de(0x3ad)][_0x3951de(0x1ed)](_0x3951de(0x3b2),_0x3d1021);}},{'key':_0x49d266(0x2b5),'value':function _0x209417(_0x232e17,_0x1b39af){var _0x49fe59=_0x49d266,_0x10bccc=this,_0x1ccb2f=arguments[_0x49fe59(0x19a)]<=0x2||arguments[0x2]===undefined?{}:arguments[0x2],_0x252447=arguments[_0x49fe59(0x19a)]<=0x3||arguments[0x3]===undefined?_0x32f3b1[_0x49fe59(0x413)][_0x49fe59(0x270)][_0x49fe59(0x31c)]:arguments[0x3];return this[_0x49fe59(0x36a)][_0x49fe59(0x22f)](),Object['keys'](_0x1ccb2f)['forEach'](function(_0x342ad7){var _0x13e458=_0x49fe59,_0x31eb2f=_0x10bccc[_0x13e458(0x36a)][_0x13e458(0x33a)](_0x232e17,Math[_0x13e458(0x191)](_0x1b39af,0x1)),_0x2909e1=_0x1b39af;_0x31eb2f[_0x13e458(0x3e4)](function(_0xb6640f,_0x309dc4){var _0x2d8b9e=_0x13e458,_0x38048d=_0xb6640f[_0x2d8b9e(0x19a)]();if(!(_0xb6640f instanceof _0xac8db8[_0x2d8b9e(0x413)]))_0xb6640f[_0x2d8b9e(0x1d9)](_0x342ad7,_0x1ccb2f[_0x342ad7]);else{var _0x52ac22=_0x232e17-_0xb6640f[_0x2d8b9e(0x438)](_0x10bccc['scroll']),_0x2d46d0=_0xb6640f[_0x2d8b9e(0x25b)](_0x52ac22+_0x2909e1)-_0x52ac22+0x1;_0xb6640f[_0x2d8b9e(0x459)](_0x52ac22,_0x2d46d0,_0x342ad7,_0x1ccb2f[_0x342ad7]);}_0x2909e1-=_0x38048d;});}),this[_0x49fe59(0x36a)][_0x49fe59(0x23e)](),this[_0x49fe59(0x22f)](new _0x57d89b['default']()['retain'](_0x232e17)[_0x49fe59(0x2f4)](_0x1b39af,(0x0,_0x293858[_0x49fe59(0x413)])(_0x1ccb2f)),_0x252447);}},{'key':'formatText','value':function _0x725c72(_0x2a77b6,_0x16f9d7){var _0x4eecf6=_0x49d266,_0x2498e8=this,_0x43feb5=arguments[_0x4eecf6(0x19a)]<=0x2||arguments[0x2]===undefined?{}:arguments[0x2],_0x32498a=arguments[_0x4eecf6(0x19a)]<=0x3||arguments[0x3]===undefined?_0x32f3b1[_0x4eecf6(0x413)][_0x4eecf6(0x270)][_0x4eecf6(0x31c)]:arguments[0x3];return Object[_0x4eecf6(0x3aa)](_0x43feb5)[_0x4eecf6(0x3e4)](function(_0x58769e){var _0x4e6cbc=_0x4eecf6;_0x2498e8[_0x4e6cbc(0x36a)][_0x4e6cbc(0x459)](_0x2a77b6,_0x16f9d7,_0x58769e,_0x43feb5[_0x58769e]);}),this[_0x4eecf6(0x22f)](new _0x57d89b['default']()['retain'](_0x2a77b6)['retain'](_0x16f9d7,(0x0,_0x293858[_0x4eecf6(0x413)])(_0x43feb5)),_0x32498a);}},{'key':'getContents','value':function _0x3acd96(_0x54840a,_0x195544){var _0x2563fe=_0x49d266;return this[_0x2563fe(0x447)][_0x2563fe(0x441)](_0x54840a,_0x54840a+_0x195544);}},{'key':_0x49d266(0x249),'value':function _0x322592(){var _0xe6b564=_0x49d266;return this[_0xe6b564(0x36a)][_0xe6b564(0x33a)]()[_0xe6b564(0x1c8)](function(_0x35afe3,_0x4616d8){var _0x268c5d=_0xe6b564;return _0x35afe3['concat'](_0x4616d8[_0x268c5d(0x447)]());},new _0x57d89b['default']());}},{'key':_0x49d266(0x452),'value':function _0x396e6a(_0x4923e0){var _0x3f2156=_0x49d266,_0x3a5d95=arguments[_0x3f2156(0x19a)]<=0x1||arguments[0x1]===undefined?0x0:arguments[0x1],_0x341e6c=[],_0x3342a1=[];_0x3a5d95===0x0?this['scroll'][_0x3f2156(0x1d2)](_0x4923e0)['forEach'](function(_0x34dd76){var _0x1043e5=_0x3f2156,_0x329ff0=_0x5d7ceb(_0x34dd76,0x1),_0x3c49d0=_0x329ff0[0x0];if(_0x3c49d0 instanceof _0x2466e1[_0x1043e5(0x413)])_0x341e6c[_0x1043e5(0x1bf)](_0x3c49d0);else _0x3c49d0 instanceof _0x330db6['default'][_0x1043e5(0x214)]&&_0x3342a1[_0x1043e5(0x1bf)](_0x3c49d0);}):(_0x341e6c=this['scroll'][_0x3f2156(0x33a)](_0x4923e0,_0x3a5d95),_0x3342a1=this[_0x3f2156(0x36a)]['descendants'](_0x330db6[_0x3f2156(0x413)][_0x3f2156(0x214)],_0x4923e0,_0x3a5d95));var _0x2ed7ae=[_0x341e6c,_0x3342a1]['map'](function(_0x1317f0){var _0x6086dc=_0x3f2156;if(_0x1317f0[_0x6086dc(0x19a)]===0x0)return{};var _0x1bcc52=(0x0,_0x49adde[_0x6086dc(0x387)])(_0x1317f0[_0x6086dc(0x218)]());while(Object[_0x6086dc(0x3aa)](_0x1bcc52)['length']>0x0){var _0x4e88fd=_0x1317f0['shift']();if(_0x4e88fd==null)return _0x1bcc52;_0x1bcc52=_0x29e79b((0x0,_0x49adde[_0x6086dc(0x387)])(_0x4e88fd),_0x1bcc52);}return _0x1bcc52;});return _0xffebe6[_0x3f2156(0x413)]['apply'](_0xffebe6[_0x3f2156(0x413)],_0x2ed7ae);}},{'key':_0x49d266(0x304),'value':function _0x435ea9(_0x5af9eb,_0x3b55e4){var _0x48e615=_0x49d266;return this[_0x48e615(0x1e5)](_0x5af9eb,_0x3b55e4)[_0x48e615(0x26f)]['map'](function(_0x591761){var _0xab8cc=_0x48e615;return typeof _0x591761['insert']===_0xab8cc(0x187)?_0x591761[_0xab8cc(0x26a)]:'';})[_0x48e615(0x28f)]('');}},{'key':'insertEmbed','value':function _0x259d64(_0x4f6a75,_0x171e64,_0x4103f6){var _0x451faa=_0x49d266,_0x177f39=arguments[_0x451faa(0x19a)]<=0x3||arguments[0x3]===undefined?_0x32f3b1[_0x451faa(0x413)][_0x451faa(0x270)][_0x451faa(0x31c)]:arguments[0x3];return this[_0x451faa(0x36a)][_0x451faa(0x307)](_0x4f6a75,_0x171e64,_0x4103f6),this['update'](new _0x57d89b[(_0x451faa(0x413))]()[_0x451faa(0x2f4)](_0x4f6a75)[_0x451faa(0x26a)](_0x3f243a({},_0x171e64,_0x4103f6)),_0x177f39);}},{'key':_0x49d266(0x208),'value':function _0xfe9d73(_0x51a398,_0x268fd4){var _0x200eba=_0x49d266,_0x5e466c=this,_0x23f723=arguments[_0x200eba(0x19a)]<=0x2||arguments[0x2]===undefined?{}:arguments[0x2],_0x58e652=arguments[_0x200eba(0x19a)]<=0x3||arguments[0x3]===undefined?_0x32f3b1[_0x200eba(0x413)][_0x200eba(0x270)][_0x200eba(0x31c)]:arguments[0x3];return _0x268fd4=_0x268fd4['replace'](/\r\n/g,'\x0a')[_0x200eba(0x2ff)](/\r/g,'\x0a'),this[_0x200eba(0x36a)][_0x200eba(0x307)](_0x51a398,_0x268fd4),Object[_0x200eba(0x3aa)](_0x23f723)['forEach'](function(_0x18fa67){var _0x4397b2=_0x200eba;_0x5e466c[_0x4397b2(0x36a)][_0x4397b2(0x459)](_0x51a398,_0x268fd4[_0x4397b2(0x19a)],_0x18fa67,_0x23f723[_0x18fa67]);}),this['update'](new _0x57d89b[(_0x200eba(0x413))]()[_0x200eba(0x2f4)](_0x51a398)['insert'](_0x268fd4,(0x0,_0x293858[_0x200eba(0x413)])(_0x23f723)),_0x58e652);}},{'key':_0x49d266(0x224),'value':function _0x37523c(){var _0x58b803=_0x49d266;if(this[_0x58b803(0x36a)][_0x58b803(0x3b7)][_0x58b803(0x19a)]==0x0)return!![];if(this[_0x58b803(0x36a)][_0x58b803(0x3b7)][_0x58b803(0x19a)]>0x1)return![];var _0x194573=this[_0x58b803(0x36a)][_0x58b803(0x3b7)][_0x58b803(0x311)];return _0x194573[_0x58b803(0x19a)]()<=0x1&&Object['keys'](_0x194573['formats']())[_0x58b803(0x19a)]==0x0;}},{'key':_0x49d266(0x215),'value':function _0x554e48(_0x26009f,_0x172538,_0x55584b){var _0x36fad1=_0x49d266,_0x5668ca=this[_0x36fad1(0x304)](_0x26009f,_0x172538),_0x272565=this['scroll']['line'](_0x26009f+_0x172538),_0x59b562=_0x5d7ceb(_0x272565,0x2),_0x389f5f=_0x59b562[0x0],_0x5f03b9=_0x59b562[0x1],_0x250bac=0x0,_0x1bf88e=new _0x57d89b[(_0x36fad1(0x413))]();_0x389f5f!=null&&(!(_0x389f5f instanceof _0xac8db8['default'])?_0x250bac=_0x389f5f[_0x36fad1(0x19a)]()-_0x5f03b9:_0x250bac=_0x389f5f[_0x36fad1(0x25b)](_0x5f03b9)-_0x5f03b9+0x1,_0x1bf88e=_0x389f5f[_0x36fad1(0x447)]()[_0x36fad1(0x441)](_0x5f03b9,_0x5f03b9+_0x250bac-0x1)[_0x36fad1(0x26a)]('\x0a'));var _0x3bb99b=this[_0x36fad1(0x1e5)](_0x26009f,_0x172538+_0x250bac),_0x5aa275=_0x3bb99b[_0x36fad1(0x20b)](new _0x57d89b[(_0x36fad1(0x413))]()[_0x36fad1(0x26a)](_0x5668ca)[_0x36fad1(0x1f8)](_0x1bf88e)),_0x316915=new _0x57d89b['default']()['retain'](_0x26009f)[_0x36fad1(0x1f8)](_0x5aa275);return this[_0x36fad1(0x3c7)](_0x316915,_0x55584b);}},{'key':'update','value':function _0x2ff53e(_0x4cd9b0){var _0x53d095=_0x49d266,_0xc18f9c=this,_0x506376=arguments[_0x53d095(0x19a)]<=0x1||arguments[0x1]===undefined?_0x32f3b1[_0x53d095(0x413)][_0x53d095(0x270)]['USER']:arguments[0x1],_0x3e5744=arguments[_0x53d095(0x19a)]<=0x2||arguments[0x2]===undefined?[]:arguments[0x2],_0x1e5f30=this[_0x53d095(0x447)];_0x3e5744['length']===0x1&&_0x3e5744[0x0][_0x53d095(0x2d9)]===_0x53d095(0x1e8)&&_0x330db6[_0x53d095(0x413)][_0x53d095(0x303)](_0x3e5744[0x0][_0x53d095(0x3c2)])?(function(){var _0x374a00=_0x53d095,_0x1cb8c9=_0x330db6[_0x374a00(0x413)][_0x374a00(0x303)](_0x3e5744[0x0][_0x374a00(0x3c2)]),_0x5e7eb5=(0x0,_0x49adde[_0x374a00(0x387)])(_0x1cb8c9),_0x55a921=_0x1cb8c9[_0x374a00(0x438)](_0xc18f9c[_0x374a00(0x36a)]),_0x511172=_0x3e5744[0x0][_0x374a00(0x3e9)]['replace'](_0x1c5895[_0x374a00(0x413)][_0x374a00(0x2f1)],''),_0x2772c7=new _0x57d89b['default']()[_0x374a00(0x26a)](_0x511172),_0x54da1c=new _0x57d89b[(_0x374a00(0x413))]()[_0x374a00(0x26a)](_0x1cb8c9[_0x374a00(0x2e4)]()),_0x22bbbf=new _0x57d89b[(_0x374a00(0x413))]()['retain'](_0x55a921)[_0x374a00(0x1f8)](_0x2772c7['diff'](_0x54da1c));_0x4cd9b0=_0x22bbbf[_0x374a00(0x26f)][_0x374a00(0x1c8)](function(_0x46078,_0x6df6e5){var _0x565abc=_0x374a00;return _0x6df6e5[_0x565abc(0x26a)]?_0x46078[_0x565abc(0x26a)](_0x6df6e5['insert'],_0x5e7eb5):_0x46078['push'](_0x6df6e5);},new _0x57d89b['default']()),_0xc18f9c[_0x374a00(0x447)]=_0x1e5f30[_0x374a00(0x3dc)](_0x4cd9b0);}()):(this[_0x53d095(0x447)]=this[_0x53d095(0x249)](),(!_0x4cd9b0||!(0x0,_0x52f661[_0x53d095(0x413)])(_0x1e5f30['compose'](_0x4cd9b0),this['delta']))&&(_0x4cd9b0=_0x1e5f30[_0x53d095(0x20b)](this[_0x53d095(0x447)])));if(_0x4cd9b0[_0x53d095(0x19a)]()>0x0){var _0x2f1789,_0x6d0ed6=[_0x32f3b1[_0x53d095(0x413)][_0x53d095(0x42e)][_0x53d095(0x19d)],_0x4cd9b0,_0x1e5f30,_0x506376];(_0x2f1789=this[_0x53d095(0x440)])[_0x53d095(0x2c8)]['apply'](_0x2f1789,[_0x32f3b1[_0x53d095(0x413)][_0x53d095(0x42e)][_0x53d095(0x411)]][_0x53d095(0x1f8)](_0x6d0ed6));if(_0x506376!==_0x32f3b1[_0x53d095(0x413)][_0x53d095(0x270)]['SILENT']){var _0x1a38df;(_0x1a38df=this['emitter'])[_0x53d095(0x2c8)][_0x53d095(0x39e)](_0x1a38df,_0x6d0ed6);}}return _0x4cd9b0;}}]),_0x303066;}());function _0x29e79b(_0x59739a,_0x51442d){var _0xbdaa21=_0x3339b2;return Object[_0xbdaa21(0x3aa)](_0x51442d)['reduce'](function(_0x3c3382,_0x2d145c){var _0x412bbb=_0xbdaa21;if(_0x59739a[_0x2d145c]==null)return _0x3c3382;if(_0x51442d[_0x2d145c]===_0x59739a[_0x2d145c])_0x3c3382[_0x2d145c]=_0x51442d[_0x2d145c];else Array['isArray'](_0x51442d[_0x2d145c])?_0x51442d[_0x2d145c]['indexOf'](_0x59739a[_0x2d145c])<0x0&&(_0x3c3382[_0x2d145c]=_0x51442d[_0x2d145c][_0x412bbb(0x1f8)]([_0x59739a[_0x2d145c]])):_0x3c3382[_0x2d145c]=[_0x51442d[_0x2d145c],_0x59739a[_0x2d145c]];return _0x3c3382;},{});}function _0x187954(_0x1d3879){var _0x16e439=_0x3339b2;return _0x1d3879[_0x16e439(0x26f)][_0x16e439(0x1c8)](function(_0x507b7e,_0x4cc144){var _0x3c2233=_0x16e439;if(_0x4cc144['insert']===0x1){var _0x115736=(0x0,_0x293858[_0x3c2233(0x413)])(_0x4cc144['attributes']);return delete _0x115736[_0x3c2233(0x257)],_0x507b7e[_0x3c2233(0x26a)]({'image':_0x4cc144[_0x3c2233(0x32b)][_0x3c2233(0x257)]},_0x115736);}_0x4cc144[_0x3c2233(0x32b)]!=null&&(_0x4cc144['attributes']['list']===!![]||_0x4cc144[_0x3c2233(0x32b)][_0x3c2233(0x267)]===!![])&&(_0x4cc144=(0x0,_0x293858[_0x3c2233(0x413)])(_0x4cc144),_0x4cc144[_0x3c2233(0x32b)][_0x3c2233(0x423)]?_0x4cc144[_0x3c2233(0x32b)]['list']='ordered':(_0x4cc144[_0x3c2233(0x32b)]['list']=_0x3c2233(0x267),delete _0x4cc144[_0x3c2233(0x32b)]['bullet']));if(typeof _0x4cc144[_0x3c2233(0x26a)]===_0x3c2233(0x187)){var _0x44b7cd=_0x4cc144['insert'][_0x3c2233(0x2ff)](/\r\n/g,'\x0a')[_0x3c2233(0x2ff)](/\r/g,'\x0a');return _0x507b7e['insert'](_0x44b7cd,_0x4cc144[_0x3c2233(0x32b)]);}return _0x507b7e[_0x3c2233(0x1bf)](_0x4cc144);},new _0x57d89b['default']());}_0x5a2865[_0x3339b2(0x413)]=_0x211686;},function(_0x2345b8,_0x430084,_0xcdb9e2){'use strict';var _0x48c6e7=a9_0x50c4;Object['defineProperty'](_0x430084,'__esModule',{'value':!![]});var _0xa42f2=(function(){function _0xe1a8e(_0x3dff76,_0x3fafb2){var _0x58a299=a9_0x50c4;for(var _0x3b86b5=0x0;_0x3b86b5<_0x3fafb2[_0x58a299(0x19a)];_0x3b86b5++){var _0x25bb92=_0x3fafb2[_0x3b86b5];_0x25bb92[_0x58a299(0x1eb)]=_0x25bb92[_0x58a299(0x1eb)]||![],_0x25bb92[_0x58a299(0x203)]=!![];if(_0x58a299(0x2e4)in _0x25bb92)_0x25bb92[_0x58a299(0x40f)]=!![];Object[_0x58a299(0x289)](_0x3dff76,_0x25bb92[_0x58a299(0x3ea)],_0x25bb92);}}return function(_0x214880,_0xd74bca,_0x5b530e){var _0x3c9b8a=a9_0x50c4;if(_0xd74bca)_0xe1a8e(_0x214880[_0x3c9b8a(0x44f)],_0xd74bca);if(_0x5b530e)_0xe1a8e(_0x214880,_0x5b530e);return _0x214880;};}()),_0x468ba6=function _0x1242d2(_0x2ae69d,_0x1c3c41,_0x4e2955){var _0x450ebb=a9_0x50c4;if(_0x2ae69d===null)_0x2ae69d=Function[_0x450ebb(0x44f)];var _0x17c30b=Object[_0x450ebb(0x1e0)](_0x2ae69d,_0x1c3c41);if(_0x17c30b===undefined){var _0x101909=Object[_0x450ebb(0x2e0)](_0x2ae69d);return _0x101909===null?undefined:_0x1242d2(_0x101909,_0x1c3c41,_0x4e2955);}else{if(_0x450ebb(0x2e4)in _0x17c30b)return _0x17c30b[_0x450ebb(0x2e4)];else{var _0x3df430=_0x17c30b[_0x450ebb(0x246)];if(_0x3df430===undefined)return undefined;return _0x3df430[_0x450ebb(0x1e2)](_0x4e2955);}}},_0x6907ba=_0xcdb9e2(0x1d),_0x3f2707=_0x5bee92(_0x6907ba),_0x4281c9=_0xcdb9e2(0x1e),_0x5ae31f=_0x5bee92(_0x4281c9);function _0x5bee92(_0x126e14){return _0x126e14&&_0x126e14['__esModule']?_0x126e14:{'default':_0x126e14};}function _0x584176(_0x6d7787,_0xe57f86){var _0x3c056b=a9_0x50c4;if(!(_0x6d7787 instanceof _0xe57f86))throw new TypeError(_0x3c056b(0x2eb));}function _0x3ea58f(_0x2f48ad,_0x4b8730){var _0x157fa0=a9_0x50c4;if(!_0x2f48ad)throw new ReferenceError(_0x157fa0(0x434));return _0x4b8730&&(typeof _0x4b8730==='object'||typeof _0x4b8730===_0x157fa0(0x33b))?_0x4b8730:_0x2f48ad;}function _0x5243c5(_0x48d1cb,_0x49c399){var _0x476aee=a9_0x50c4;if(typeof _0x49c399!==_0x476aee(0x33b)&&_0x49c399!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x49c399);_0x48d1cb[_0x476aee(0x44f)]=Object[_0x476aee(0x372)](_0x49c399&&_0x49c399['prototype'],{'constructor':{'value':_0x48d1cb,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x49c399)Object['setPrototypeOf']?Object[_0x476aee(0x1ea)](_0x48d1cb,_0x49c399):_0x48d1cb[_0x476aee(0x1b4)]=_0x49c399;}var _0x441228=(0x0,_0x5ae31f[_0x48c6e7(0x413)])(_0x48c6e7(0x2af)),_0x5c8aa9=function(_0x32ec53){var _0xcc0aca=_0x48c6e7;_0x5243c5(_0xf81cc3,_0x32ec53);function _0xf81cc3(){var _0x5c5977=a9_0x50c4;_0x584176(this,_0xf81cc3);var _0x488420=_0x3ea58f(this,(_0xf81cc3[_0x5c5977(0x1b4)]||Object[_0x5c5977(0x2e0)](_0xf81cc3))[_0x5c5977(0x1e2)](this));return _0x488420['on'](_0x5c5977(0x2e2),_0x441228['error']),_0x488420;}return _0xa42f2(_0xf81cc3,[{'key':_0xcc0aca(0x2c8),'value':function _0x4f93b2(){var _0x331209=_0xcc0aca;_0x441228[_0x331209(0x2a1)][_0x331209(0x39e)](_0x441228,arguments),_0x468ba6(_0xf81cc3[_0x331209(0x44f)][_0x331209(0x1b4)]||Object[_0x331209(0x2e0)](_0xf81cc3[_0x331209(0x44f)]),_0x331209(0x2c8),this)['apply'](this,arguments);}}]),_0xf81cc3;}(_0x3f2707[_0x48c6e7(0x413)]);_0x5c8aa9[_0x48c6e7(0x42e)]={'EDITOR_CHANGE':'editor-change','SCROLL_BEFORE_UPDATE':_0x48c6e7(0x39c),'SCROLL_OPTIMIZE':_0x48c6e7(0x235),'SCROLL_UPDATE':_0x48c6e7(0x21b),'SELECTION_CHANGE':'selection-change','TEXT_CHANGE':_0x48c6e7(0x192)},_0x5c8aa9[_0x48c6e7(0x270)]={'API':_0x48c6e7(0x40b),'SILENT':_0x48c6e7(0x42b),'USER':_0x48c6e7(0x1d0)},_0x430084[_0x48c6e7(0x413)]=_0x5c8aa9;},function(_0x32f11e,_0x296d72){'use strict';var _0x3d8dc6=a9_0x50c4;var _0x2b3a86=Object[_0x3d8dc6(0x44f)][_0x3d8dc6(0x3ca)],_0x20de22=typeof Object['create']!==_0x3d8dc6(0x33b)?'~':![];function _0x29efc8(_0x1d5c75,_0x3774e6,_0x135e0c){var _0x8252fc=_0x3d8dc6;this['fn']=_0x1d5c75,this[_0x8252fc(0x1c0)]=_0x3774e6,this[_0x8252fc(0x3fa)]=_0x135e0c||![];}function _0x5e5788(){}_0x5e5788[_0x3d8dc6(0x44f)][_0x3d8dc6(0x402)]=undefined,_0x5e5788[_0x3d8dc6(0x44f)]['eventNames']=function _0x4c2a35(){var _0x104e85=_0x3d8dc6,_0x1827ee=this[_0x104e85(0x402)],_0x447923=[],_0x22e654;if(!_0x1827ee)return _0x447923;for(_0x22e654 in _0x1827ee){if(_0x2b3a86['call'](_0x1827ee,_0x22e654))_0x447923[_0x104e85(0x1bf)](_0x20de22?_0x22e654[_0x104e85(0x441)](0x1):_0x22e654);}if(Object[_0x104e85(0x29b)])return _0x447923['concat'](Object[_0x104e85(0x29b)](_0x1827ee));return _0x447923;},_0x5e5788['prototype'][_0x3d8dc6(0x2d5)]=function _0x4aa393(_0x206283,_0x4da5fd){var _0x2fa5b0=_0x3d8dc6,_0x22d4c4=_0x20de22?_0x20de22+_0x206283:_0x206283,_0x25b417=this[_0x2fa5b0(0x402)]&&this[_0x2fa5b0(0x402)][_0x22d4c4];if(_0x4da5fd)return!!_0x25b417;if(!_0x25b417)return[];if(_0x25b417['fn'])return[_0x25b417['fn']];for(var _0x43e6dd=0x0,_0x15c14e=_0x25b417[_0x2fa5b0(0x19a)],_0x277a07=new Array(_0x15c14e);_0x43e6dd<_0x15c14e;_0x43e6dd++){_0x277a07[_0x43e6dd]=_0x25b417[_0x43e6dd]['fn'];}return _0x277a07;},_0x5e5788['prototype'][_0x3d8dc6(0x2c8)]=function _0x4d1808(_0x5bbd9f,_0x3811b1,_0x37d65e,_0x14d32b,_0x6760dd,_0x414748){var _0x23e7b4=_0x3d8dc6,_0x112ccb=_0x20de22?_0x20de22+_0x5bbd9f:_0x5bbd9f;if(!this[_0x23e7b4(0x402)]||!this['_events'][_0x112ccb])return![];var _0x16d6e4=this[_0x23e7b4(0x402)][_0x112ccb],_0x977485=arguments[_0x23e7b4(0x19a)],_0x25591d,_0x369806;if(_0x23e7b4(0x33b)===typeof _0x16d6e4['fn']){if(_0x16d6e4['once'])this[_0x23e7b4(0x458)](_0x5bbd9f,_0x16d6e4['fn'],undefined,!![]);switch(_0x977485){case 0x1:return _0x16d6e4['fn'][_0x23e7b4(0x1e2)](_0x16d6e4[_0x23e7b4(0x1c0)]),!![];case 0x2:return _0x16d6e4['fn'][_0x23e7b4(0x1e2)](_0x16d6e4['context'],_0x3811b1),!![];case 0x3:return _0x16d6e4['fn']['call'](_0x16d6e4[_0x23e7b4(0x1c0)],_0x3811b1,_0x37d65e),!![];case 0x4:return _0x16d6e4['fn'][_0x23e7b4(0x1e2)](_0x16d6e4[_0x23e7b4(0x1c0)],_0x3811b1,_0x37d65e,_0x14d32b),!![];case 0x5:return _0x16d6e4['fn'][_0x23e7b4(0x1e2)](_0x16d6e4[_0x23e7b4(0x1c0)],_0x3811b1,_0x37d65e,_0x14d32b,_0x6760dd),!![];case 0x6:return _0x16d6e4['fn'][_0x23e7b4(0x1e2)](_0x16d6e4[_0x23e7b4(0x1c0)],_0x3811b1,_0x37d65e,_0x14d32b,_0x6760dd,_0x414748),!![];}for(_0x369806=0x1,_0x25591d=new Array(_0x977485-0x1);_0x369806<_0x977485;_0x369806++){_0x25591d[_0x369806-0x1]=arguments[_0x369806];}_0x16d6e4['fn']['apply'](_0x16d6e4[_0x23e7b4(0x1c0)],_0x25591d);}else{var _0x1fb31b=_0x16d6e4[_0x23e7b4(0x19a)],_0x4c5ae2;for(_0x369806=0x0;_0x369806<_0x1fb31b;_0x369806++){if(_0x16d6e4[_0x369806][_0x23e7b4(0x3fa)])this[_0x23e7b4(0x458)](_0x5bbd9f,_0x16d6e4[_0x369806]['fn'],undefined,!![]);switch(_0x977485){case 0x1:_0x16d6e4[_0x369806]['fn'][_0x23e7b4(0x1e2)](_0x16d6e4[_0x369806][_0x23e7b4(0x1c0)]);break;case 0x2:_0x16d6e4[_0x369806]['fn']['call'](_0x16d6e4[_0x369806][_0x23e7b4(0x1c0)],_0x3811b1);break;case 0x3:_0x16d6e4[_0x369806]['fn']['call'](_0x16d6e4[_0x369806][_0x23e7b4(0x1c0)],_0x3811b1,_0x37d65e);break;default:if(!_0x25591d)for(_0x4c5ae2=0x1,_0x25591d=new Array(_0x977485-0x1);_0x4c5ae2<_0x977485;_0x4c5ae2++){_0x25591d[_0x4c5ae2-0x1]=arguments[_0x4c5ae2];}_0x16d6e4[_0x369806]['fn']['apply'](_0x16d6e4[_0x369806][_0x23e7b4(0x1c0)],_0x25591d);}}}return!![];},_0x5e5788[_0x3d8dc6(0x44f)]['on']=function _0x55a5fd(_0x3bee94,_0x7c4190,_0x1998e2){var _0x4214ef=_0x3d8dc6,_0x2b9700=new _0x29efc8(_0x7c4190,_0x1998e2||this),_0x22030c=_0x20de22?_0x20de22+_0x3bee94:_0x3bee94;if(!this[_0x4214ef(0x402)])this[_0x4214ef(0x402)]=_0x20de22?{}:Object['create'](null);if(!this[_0x4214ef(0x402)][_0x22030c])this[_0x4214ef(0x402)][_0x22030c]=_0x2b9700;else{if(!this['_events'][_0x22030c]['fn'])this[_0x4214ef(0x402)][_0x22030c][_0x4214ef(0x1bf)](_0x2b9700);else this[_0x4214ef(0x402)][_0x22030c]=[this[_0x4214ef(0x402)][_0x22030c],_0x2b9700];}return this;},_0x5e5788['prototype'][_0x3d8dc6(0x3fa)]=function _0x25c782(_0x5c5518,_0x533e81,_0x2e8745){var _0x49d050=_0x3d8dc6,_0x18cfea=new _0x29efc8(_0x533e81,_0x2e8745||this,!![]),_0x2974c3=_0x20de22?_0x20de22+_0x5c5518:_0x5c5518;if(!this[_0x49d050(0x402)])this['_events']=_0x20de22?{}:Object[_0x49d050(0x372)](null);if(!this[_0x49d050(0x402)][_0x2974c3])this[_0x49d050(0x402)][_0x2974c3]=_0x18cfea;else{if(!this[_0x49d050(0x402)][_0x2974c3]['fn'])this[_0x49d050(0x402)][_0x2974c3][_0x49d050(0x1bf)](_0x18cfea);else this['_events'][_0x2974c3]=[this['_events'][_0x2974c3],_0x18cfea];}return this;},_0x5e5788[_0x3d8dc6(0x44f)][_0x3d8dc6(0x458)]=function _0x137dff(_0x508efc,_0x217dec,_0x198b04,_0x2264f3){var _0x540f93=_0x3d8dc6,_0x3ef80d=_0x20de22?_0x20de22+_0x508efc:_0x508efc;if(!this[_0x540f93(0x402)]||!this[_0x540f93(0x402)][_0x3ef80d])return this;var _0x1a9f63=this[_0x540f93(0x402)][_0x3ef80d],_0x5485dc=[];if(_0x217dec){if(_0x1a9f63['fn'])(_0x1a9f63['fn']!==_0x217dec||_0x2264f3&&!_0x1a9f63['once']||_0x198b04&&_0x1a9f63[_0x540f93(0x1c0)]!==_0x198b04)&&_0x5485dc[_0x540f93(0x1bf)](_0x1a9f63);else for(var _0x90cdda=0x0,_0x326192=_0x1a9f63[_0x540f93(0x19a)];_0x90cdda<_0x326192;_0x90cdda++){(_0x1a9f63[_0x90cdda]['fn']!==_0x217dec||_0x2264f3&&!_0x1a9f63[_0x90cdda][_0x540f93(0x3fa)]||_0x198b04&&_0x1a9f63[_0x90cdda]['context']!==_0x198b04)&&_0x5485dc[_0x540f93(0x1bf)](_0x1a9f63[_0x90cdda]);}}return _0x5485dc[_0x540f93(0x19a)]?this[_0x540f93(0x402)][_0x3ef80d]=_0x5485dc['length']===0x1?_0x5485dc[0x0]:_0x5485dc:delete this['_events'][_0x3ef80d],this;},_0x5e5788[_0x3d8dc6(0x44f)][_0x3d8dc6(0x393)]=function _0x5857cb(_0x2ccad7){var _0x178804=_0x3d8dc6;if(!this[_0x178804(0x402)])return this;if(_0x2ccad7)delete this[_0x178804(0x402)][_0x20de22?_0x20de22+_0x2ccad7:_0x2ccad7];else this['_events']=_0x20de22?{}:Object[_0x178804(0x372)](null);return this;},_0x5e5788['prototype'][_0x3d8dc6(0x2b9)]=_0x5e5788[_0x3d8dc6(0x44f)][_0x3d8dc6(0x458)],_0x5e5788[_0x3d8dc6(0x44f)][_0x3d8dc6(0x2be)]=_0x5e5788[_0x3d8dc6(0x44f)]['on'],_0x5e5788['prototype'][_0x3d8dc6(0x3f5)]=function _0x34deb7(){return this;},_0x5e5788[_0x3d8dc6(0x288)]=_0x20de22,'undefined'!==typeof _0x32f11e&&(_0x32f11e['exports']=_0x5e5788);},function(_0x1eb75c,_0x1d58c4){'use strict';var _0x24a33d=a9_0x50c4;Object[_0x24a33d(0x289)](_0x1d58c4,_0x24a33d(0x2ad),{'value':!![]});var _0x57df1d=['error','warn',_0x24a33d(0x2a1),_0x24a33d(0x32a)],_0x46481f=_0x24a33d(0x321);function _0x54f980(_0x34a37e){var _0x8aa66c=_0x24a33d;if(_0x57df1d[_0x8aa66c(0x39a)](_0x34a37e)<=_0x57df1d[_0x8aa66c(0x39a)](_0x46481f)){for(var _0x2ce642=arguments[_0x8aa66c(0x19a)],_0x559102=Array(_0x2ce642>0x1?_0x2ce642-0x1:0x0),_0x33e109=0x1;_0x33e109<_0x2ce642;_0x33e109++){_0x559102[_0x33e109-0x1]=arguments[_0x33e109];}console[_0x34a37e]['apply'](console,_0x559102);}}function _0x5a7af4(_0x57f404){var _0x811e48=_0x24a33d;return _0x57df1d[_0x811e48(0x1c8)](function(_0x1baaa6,_0x253cb1){return _0x1baaa6[_0x253cb1]=_0x54f980['bind'](console,_0x253cb1,_0x57f404),_0x1baaa6;},{});}_0x54f980[_0x24a33d(0x30d)]=_0x5a7af4[_0x24a33d(0x30d)]=function(_0x3e1919){_0x46481f=_0x3e1919;},_0x1d58c4[_0x24a33d(0x413)]=_0x5a7af4;},function(_0x214f73,_0x1ad8eb,_0x509727){'use strict';var _0x3d1e03=a9_0x50c4;Object[_0x3d1e03(0x289)](_0x1ad8eb,_0x3d1e03(0x2ad),{'value':!![]}),_0x1ad8eb[_0x3d1e03(0x413)]=_0x1ad8eb[_0x3d1e03(0x3ac)]=undefined;var _0x3f00df=(function(){function _0x4b55d2(_0x3e1ed7,_0x2d2c15){var _0x246c0a=a9_0x50c4,_0x5d05b=[],_0x2b297b=!![],_0x45a207=![],_0x4557b7=undefined;try{for(var _0x3a7958=_0x3e1ed7[Symbol['iterator']](),_0x34b6d7;!(_0x2b297b=(_0x34b6d7=_0x3a7958['next']())['done']);_0x2b297b=!![]){_0x5d05b[_0x246c0a(0x1bf)](_0x34b6d7['value']);if(_0x2d2c15&&_0x5d05b['length']===_0x2d2c15)break;}}catch(_0x4d8fc0){_0x45a207=!![],_0x4557b7=_0x4d8fc0;}finally{try{if(!_0x2b297b&&_0x3a7958[_0x246c0a(0x222)])_0x3a7958[_0x246c0a(0x222)]();}finally{if(_0x45a207)throw _0x4557b7;}}return _0x5d05b;}return function(_0x443ed3,_0x460052){var _0x5b2b0e=a9_0x50c4;if(Array[_0x5b2b0e(0x3f3)](_0x443ed3))return _0x443ed3;else{if(Symbol['iterator']in Object(_0x443ed3))return _0x4b55d2(_0x443ed3,_0x460052);else throw new TypeError(_0x5b2b0e(0x183));}};}()),_0x258c99=(function(){function _0x41ce8(_0x57f7d0,_0x4b3e29){var _0x5bc80e=a9_0x50c4;for(var _0x11c82c=0x0;_0x11c82c<_0x4b3e29[_0x5bc80e(0x19a)];_0x11c82c++){var _0x53e913=_0x4b3e29[_0x11c82c];_0x53e913[_0x5bc80e(0x1eb)]=_0x53e913['enumerable']||![],_0x53e913[_0x5bc80e(0x203)]=!![];if('value'in _0x53e913)_0x53e913[_0x5bc80e(0x40f)]=!![];Object[_0x5bc80e(0x289)](_0x57f7d0,_0x53e913[_0x5bc80e(0x3ea)],_0x53e913);}}return function(_0x2e02bb,_0x594ddf,_0x180822){if(_0x594ddf)_0x41ce8(_0x2e02bb['prototype'],_0x594ddf);if(_0x180822)_0x41ce8(_0x2e02bb,_0x180822);return _0x2e02bb;};}()),_0x1c2afd=function _0x103fca(_0x2977ac,_0x4a1dd7,_0x492b5d){var _0x5ac49d=_0x3d1e03;if(_0x2977ac===null)_0x2977ac=Function[_0x5ac49d(0x44f)];var _0x17eac2=Object['getOwnPropertyDescriptor'](_0x2977ac,_0x4a1dd7);if(_0x17eac2===undefined){var _0x10f520=Object[_0x5ac49d(0x2e0)](_0x2977ac);return _0x10f520===null?undefined:_0x103fca(_0x10f520,_0x4a1dd7,_0x492b5d);}else{if(_0x5ac49d(0x2e4)in _0x17eac2)return _0x17eac2['value'];else{var _0x26de52=_0x17eac2[_0x5ac49d(0x246)];if(_0x26de52===undefined)return undefined;return _0x26de52[_0x5ac49d(0x1e2)](_0x492b5d);}}},_0xed3fa4=_0x509727(0x14),_0x323dca=_0xa03fdb(_0xed3fa4),_0x3ee9c5=_0x509727(0x2),_0x5d8f2d=_0xa03fdb(_0x3ee9c5),_0xe6d6=_0x509727(0x20),_0x462252=_0xa03fdb(_0xe6d6),_0x23a748=_0x509727(0x23),_0x4a03cd=_0xa03fdb(_0x23a748),_0x377db4=_0x509727(0x24),_0x5e18a4=_0xa03fdb(_0x377db4);function _0xa03fdb(_0x29f7f7){return _0x29f7f7&&_0x29f7f7['__esModule']?_0x29f7f7:{'default':_0x29f7f7};}function _0x62b290(_0x3bbc96,_0xfcf18e){var _0xedf459=_0x3d1e03;if(!(_0x3bbc96 instanceof _0xfcf18e))throw new TypeError(_0xedf459(0x2eb));}function _0x276880(_0x4e2ea6,_0x58850a){var _0x126718=_0x3d1e03;if(!_0x4e2ea6)throw new ReferenceError(_0x126718(0x434));return _0x58850a&&(typeof _0x58850a===_0x126718(0x2e1)||typeof _0x58850a===_0x126718(0x33b))?_0x58850a:_0x4e2ea6;}function _0x450189(_0x21d35f,_0xb4e604){var _0x4c9667=_0x3d1e03;if(typeof _0xb4e604!==_0x4c9667(0x33b)&&_0xb4e604!==null)throw new TypeError(_0x4c9667(0x448)+typeof _0xb4e604);_0x21d35f['prototype']=Object[_0x4c9667(0x372)](_0xb4e604&&_0xb4e604['prototype'],{'constructor':{'value':_0x21d35f,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0xb4e604)Object[_0x4c9667(0x1ea)]?Object[_0x4c9667(0x1ea)](_0x21d35f,_0xb4e604):_0x21d35f[_0x4c9667(0x1b4)]=_0xb4e604;}var _0x4bc483=function(_0x4e9a49){_0x450189(_0x38291c,_0x4e9a49);function _0x38291c(){var _0x59b529=a9_0x50c4;return _0x62b290(this,_0x38291c),_0x276880(this,(_0x38291c[_0x59b529(0x1b4)]||Object['getPrototypeOf'](_0x38291c))['apply'](this,arguments));}return _0x38291c;}(_0x4a03cd['default']);_0x4bc483[_0x3d1e03(0x242)]=_0x3d1e03(0x264),_0x4bc483[_0x3d1e03(0x200)]=_0x3d1e03(0x205);var _0x126393=function(_0x26ac3a){var _0x22b26a=_0x3d1e03;_0x450189(_0x96d4c9,_0x26ac3a);function _0x96d4c9(){var _0x10a214=a9_0x50c4;return _0x62b290(this,_0x96d4c9),_0x276880(this,(_0x96d4c9['__proto__']||Object[_0x10a214(0x2e0)](_0x96d4c9))[_0x10a214(0x39e)](this,arguments));}return _0x258c99(_0x96d4c9,[{'key':_0x22b26a(0x447),'value':function _0x402495(){var _0x5b6bc5=_0x22b26a,_0x3067f1=this,_0x79a93f=this[_0x5b6bc5(0x3ad)][_0x5b6bc5(0x29f)];return _0x79a93f[_0x5b6bc5(0x2cb)]('\x0a')&&(_0x79a93f=_0x79a93f[_0x5b6bc5(0x441)](0x0,-0x1)),_0x79a93f[_0x5b6bc5(0x428)]('\x0a')[_0x5b6bc5(0x1c8)](function(_0x44896e,_0x5af2fb){var _0x2de368=_0x5b6bc5;return _0x44896e[_0x2de368(0x26a)](_0x5af2fb)['insert']('\x0a',_0x3067f1[_0x2de368(0x1a2)]());},new _0x323dca[(_0x5b6bc5(0x413))]());}},{'key':'format','value':function _0x3aeb11(_0x8466d8,_0x39bcea){var _0x452df1=_0x22b26a;if(_0x8466d8===this[_0x452df1(0x3a6)][_0x452df1(0x242)]&&_0x39bcea)return;var _0x155ca6=this['descendant'](_0x5e18a4[_0x452df1(0x413)],this[_0x452df1(0x19a)]()-0x1),_0x1803e5=_0x3f00df(_0x155ca6,0x1),_0x2e9e20=_0x1803e5[0x0];_0x2e9e20!=null&&_0x2e9e20[_0x452df1(0x3c3)](_0x2e9e20[_0x452df1(0x19a)]()-0x1,0x1),_0x1c2afd(_0x96d4c9[_0x452df1(0x44f)][_0x452df1(0x1b4)]||Object['getPrototypeOf'](_0x96d4c9[_0x452df1(0x44f)]),_0x452df1(0x1d9),this)[_0x452df1(0x1e2)](this,_0x8466d8,_0x39bcea);}},{'key':_0x22b26a(0x459),'value':function _0x6768f2(_0x1a75d7,_0x56348c,_0x2d7e8c,_0x282bec){var _0x8dd0b6=_0x22b26a;if(_0x56348c===0x0)return;if(_0x5d8f2d[_0x8dd0b6(0x413)]['query'](_0x2d7e8c,_0x5d8f2d[_0x8dd0b6(0x413)][_0x8dd0b6(0x293)][_0x8dd0b6(0x30e)])==null||_0x2d7e8c===this[_0x8dd0b6(0x3a6)]['blotName']&&_0x282bec===this['statics'][_0x8dd0b6(0x1a2)](this[_0x8dd0b6(0x3ad)]))return;var _0x38bb80=this[_0x8dd0b6(0x25b)](_0x1a75d7);if(_0x38bb80<0x0||_0x38bb80>=_0x1a75d7+_0x56348c)return;var _0x154e07=this[_0x8dd0b6(0x25b)](_0x1a75d7,!![])+0x1,_0x3d0d68=_0x38bb80-_0x154e07+0x1,_0x505523=this[_0x8dd0b6(0x1d5)](_0x154e07,_0x3d0d68),_0x40a4c2=_0x505523['next'];_0x505523[_0x8dd0b6(0x1d9)](_0x2d7e8c,_0x282bec),_0x40a4c2 instanceof _0x96d4c9&&_0x40a4c2[_0x8dd0b6(0x459)](0x0,_0x1a75d7-_0x154e07+_0x56348c-_0x3d0d68,_0x2d7e8c,_0x282bec);}},{'key':_0x22b26a(0x307),'value':function _0x1800d9(_0x321871,_0x3ad870,_0x4ae090){var _0xdb1e8d=_0x22b26a;if(_0x4ae090!=null)return;var _0x89cf79=this[_0xdb1e8d(0x3a9)](_0x5e18a4[_0xdb1e8d(0x413)],_0x321871),_0x361556=_0x3f00df(_0x89cf79,0x2),_0x59ac33=_0x361556[0x0],_0x3adb7e=_0x361556[0x1];_0x59ac33[_0xdb1e8d(0x307)](_0x3adb7e,_0x3ad870);}},{'key':_0x22b26a(0x19a),'value':function _0x3dfbb5(){var _0x5047d2=_0x22b26a,_0x442d7d=this[_0x5047d2(0x3ad)]['textContent']['length'];if(!this['domNode'][_0x5047d2(0x29f)]['endsWith']('\x0a'))return _0x442d7d+0x1;return _0x442d7d;}},{'key':_0x22b26a(0x25b),'value':function _0x161134(_0x33e18a){var _0x5a1c55=_0x22b26a,_0x5d632f=arguments[_0x5a1c55(0x19a)]<=0x1||arguments[0x1]===undefined?![]:arguments[0x1];if(!_0x5d632f){var _0x150019=this[_0x5a1c55(0x3ad)]['textContent']['slice'](_0x33e18a)[_0x5a1c55(0x39a)]('\x0a');return _0x150019>-0x1?_0x33e18a+_0x150019:-0x1;}else return this[_0x5a1c55(0x3ad)]['textContent'][_0x5a1c55(0x441)](0x0,_0x33e18a)[_0x5a1c55(0x227)]('\x0a');}},{'key':_0x22b26a(0x23e),'value':function _0x1104de(){var _0x575d44=_0x22b26a;!this['domNode']['textContent'][_0x575d44(0x2cb)]('\x0a')&&this[_0x575d44(0x27e)](_0x5d8f2d[_0x575d44(0x413)][_0x575d44(0x372)](_0x575d44(0x41d),'\x0a'));_0x1c2afd(_0x96d4c9[_0x575d44(0x44f)]['__proto__']||Object[_0x575d44(0x2e0)](_0x96d4c9[_0x575d44(0x44f)]),_0x575d44(0x23e),this)[_0x575d44(0x1e2)](this);var _0x3e6d75=this['next'];_0x3e6d75!=null&&_0x3e6d75['prev']===this&&_0x3e6d75[_0x575d44(0x3a6)]['blotName']===this[_0x575d44(0x3a6)][_0x575d44(0x242)]&&this['statics'][_0x575d44(0x1a2)](this[_0x575d44(0x3ad)])===_0x3e6d75['statics']['formats'](_0x3e6d75['domNode'])&&(_0x3e6d75[_0x575d44(0x23e)](),_0x3e6d75[_0x575d44(0x2a0)](this),_0x3e6d75[_0x575d44(0x190)]());}},{'key':_0x22b26a(0x2ff),'value':function _0x1db7f7(_0x18ae90){var _0x2d1c37=_0x22b26a;_0x1c2afd(_0x96d4c9[_0x2d1c37(0x44f)]['__proto__']||Object[_0x2d1c37(0x2e0)](_0x96d4c9[_0x2d1c37(0x44f)]),_0x2d1c37(0x2ff),this)[_0x2d1c37(0x1e2)](this,_0x18ae90),[][_0x2d1c37(0x441)]['call'](this[_0x2d1c37(0x3ad)][_0x2d1c37(0x3ec)]('*'))[_0x2d1c37(0x3e4)](function(_0x136b25){var _0xaf66ad=_0x2d1c37,_0x493355=_0x5d8f2d[_0xaf66ad(0x413)][_0xaf66ad(0x303)](_0x136b25);if(_0x493355==null)_0x136b25[_0xaf66ad(0x37d)][_0xaf66ad(0x213)](_0x136b25);else _0x493355 instanceof _0x5d8f2d[_0xaf66ad(0x413)][_0xaf66ad(0x2cd)]?_0x493355[_0xaf66ad(0x190)]():_0x493355['unwrap']();});}}],[{'key':'create','value':function _0x555bdf(_0x2e1eb0){var _0xc1a2e8=_0x22b26a,_0x69dec9=_0x1c2afd(_0x96d4c9[_0xc1a2e8(0x1b4)]||Object[_0xc1a2e8(0x2e0)](_0x96d4c9),_0xc1a2e8(0x372),this)[_0xc1a2e8(0x1e2)](this,_0x2e1eb0);return _0x69dec9[_0xc1a2e8(0x1ed)](_0xc1a2e8(0x1f5),![]),_0x69dec9;}},{'key':_0x22b26a(0x1a2),'value':function _0x2cf2c0(_0x261c33){return!![];}}]),_0x96d4c9;}(_0x462252['default']);_0x126393[_0x3d1e03(0x242)]=_0x3d1e03(0x1b5),_0x126393[_0x3d1e03(0x200)]=_0x3d1e03(0x2ed),_0x126393[_0x3d1e03(0x1cd)]='\x20\x20',_0x1ad8eb[_0x3d1e03(0x3ac)]=_0x4bc483,_0x1ad8eb[_0x3d1e03(0x413)]=_0x126393;},function(_0x2a907d,_0x55b760,_0x1c7e07){'use strict';var _0x4f0989=a9_0x50c4;Object[_0x4f0989(0x289)](_0x55b760,_0x4f0989(0x2ad),{'value':!![]}),_0x55b760[_0x4f0989(0x413)]=_0x55b760[_0x4f0989(0x3db)]=_0x55b760[_0x4f0989(0x387)]=undefined;var _0x18619e=(function(){function _0xdaac69(_0x4f84d9,_0x416640){var _0x44881e=a9_0x50c4;for(var _0x1ba203=0x0;_0x1ba203<_0x416640[_0x44881e(0x19a)];_0x1ba203++){var _0x48f1e2=_0x416640[_0x1ba203];_0x48f1e2[_0x44881e(0x1eb)]=_0x48f1e2[_0x44881e(0x1eb)]||![],_0x48f1e2[_0x44881e(0x203)]=!![];if('value'in _0x48f1e2)_0x48f1e2[_0x44881e(0x40f)]=!![];Object[_0x44881e(0x289)](_0x4f84d9,_0x48f1e2['key'],_0x48f1e2);}}return function(_0x39fafa,_0x217e5c,_0xc4ad1a){if(_0x217e5c)_0xdaac69(_0x39fafa['prototype'],_0x217e5c);if(_0xc4ad1a)_0xdaac69(_0x39fafa,_0xc4ad1a);return _0x39fafa;};}()),_0x43c236=function _0x4e1f1c(_0x4d9b33,_0x1946d6,_0x69aeb8){var _0x2356d6=_0x4f0989;if(_0x4d9b33===null)_0x4d9b33=Function[_0x2356d6(0x44f)];var _0x21aba5=Object[_0x2356d6(0x1e0)](_0x4d9b33,_0x1946d6);if(_0x21aba5===undefined){var _0x50cd42=Object[_0x2356d6(0x2e0)](_0x4d9b33);return _0x50cd42===null?undefined:_0x4e1f1c(_0x50cd42,_0x1946d6,_0x69aeb8);}else{if(_0x2356d6(0x2e4)in _0x21aba5)return _0x21aba5[_0x2356d6(0x2e4)];else{var _0x10c936=_0x21aba5['get'];if(_0x10c936===undefined)return undefined;return _0x10c936[_0x2356d6(0x1e2)](_0x69aeb8);}}},_0x48a5af=_0x1c7e07(0x19),_0x224817=_0x426954(_0x48a5af),_0x49ca33=_0x1c7e07(0x14),_0x40cbe0=_0x426954(_0x49ca33),_0x480c08=_0x1c7e07(0x2),_0x5b1ed4=_0x426954(_0x480c08),_0x1f7912=_0x1c7e07(0x21),_0x4ab492=_0x426954(_0x1f7912),_0x54e452=_0x1c7e07(0x22),_0xe72bd7=_0x426954(_0x54e452),_0xc69dd9=_0x1c7e07(0x23),_0x1b8c30=_0x426954(_0xc69dd9),_0x24fb13=_0x1c7e07(0x24),_0x584ce5=_0x426954(_0x24fb13);function _0x426954(_0x910a0a){return _0x910a0a&&_0x910a0a['__esModule']?_0x910a0a:{'default':_0x910a0a};}function _0x1618c6(_0x39d9d4,_0x5db678){var _0x5ce71b=_0x4f0989;if(!(_0x39d9d4 instanceof _0x5db678))throw new TypeError(_0x5ce71b(0x2eb));}function _0x30b815(_0xfa2d48,_0x1c6015){var _0x5bf3c9=_0x4f0989;if(!_0xfa2d48)throw new ReferenceError(_0x5bf3c9(0x434));return _0x1c6015&&(typeof _0x1c6015===_0x5bf3c9(0x2e1)||typeof _0x1c6015===_0x5bf3c9(0x33b))?_0x1c6015:_0xfa2d48;}function _0x19e832(_0x5233bc,_0x5daefd){var _0x2f22e2=_0x4f0989;if(typeof _0x5daefd!==_0x2f22e2(0x33b)&&_0x5daefd!==null)throw new TypeError(_0x2f22e2(0x448)+typeof _0x5daefd);_0x5233bc[_0x2f22e2(0x44f)]=Object[_0x2f22e2(0x372)](_0x5daefd&&_0x5daefd[_0x2f22e2(0x44f)],{'constructor':{'value':_0x5233bc,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x5daefd)Object[_0x2f22e2(0x1ea)]?Object[_0x2f22e2(0x1ea)](_0x5233bc,_0x5daefd):_0x5233bc[_0x2f22e2(0x1b4)]=_0x5daefd;}var _0xc32d5d=0x1,_0x3f81ab=function(_0x31ab75){var _0x4cf704=_0x4f0989;_0x19e832(_0x382294,_0x31ab75);function _0x382294(){var _0x46445c=a9_0x50c4;return _0x1618c6(this,_0x382294),_0x30b815(this,(_0x382294[_0x46445c(0x1b4)]||Object[_0x46445c(0x2e0)](_0x382294))[_0x46445c(0x39e)](this,arguments));}return _0x18619e(_0x382294,[{'key':_0x4cf704(0x1cf),'value':function _0xf43f94(){var _0x2cca86=_0x4cf704;_0x43c236(_0x382294[_0x2cca86(0x44f)][_0x2cca86(0x1b4)]||Object[_0x2cca86(0x2e0)](_0x382294[_0x2cca86(0x44f)]),_0x2cca86(0x1cf),this)[_0x2cca86(0x1e2)](this),this[_0x2cca86(0x32b)]=new _0x5b1ed4[(_0x2cca86(0x413))]['Attributor']['Store'](this[_0x2cca86(0x3ad)]);}},{'key':_0x4cf704(0x447),'value':function _0x1e29e1(){var _0x336d9b=_0x4cf704;return new _0x40cbe0['default']()[_0x336d9b(0x26a)](this['value'](),(0x0,_0x224817[_0x336d9b(0x413)])(this[_0x336d9b(0x1a2)](),this[_0x336d9b(0x32b)][_0x336d9b(0x253)]()));}},{'key':_0x4cf704(0x1d9),'value':function _0x1c811e(_0x5ac9bb,_0x2248b2){var _0x2dd8aa=_0x4cf704,_0x180e92=_0x5b1ed4[_0x2dd8aa(0x413)][_0x2dd8aa(0x409)](_0x5ac9bb,_0x5b1ed4['default'][_0x2dd8aa(0x293)][_0x2dd8aa(0x25d)]);_0x180e92!=null&&this['attributes']['attribute'](_0x180e92,_0x2248b2);}},{'key':_0x4cf704(0x459),'value':function _0x5f4c6e(_0x35311d,_0x41d614,_0x26d4e5,_0x59c7dc){var _0x2220f9=_0x4cf704;this[_0x2220f9(0x1d9)](_0x26d4e5,_0x59c7dc);}},{'key':_0x4cf704(0x307),'value':function _0x4a2eb2(_0x3ecb93,_0x4012ca,_0x40a313){var _0x2d14c0=_0x4cf704;if(typeof _0x4012ca===_0x2d14c0(0x187)&&_0x4012ca['endsWith']('\x0a')){var _0x16becc=_0x5b1ed4[_0x2d14c0(0x413)]['create'](_0x2fadae[_0x2d14c0(0x242)]);this[_0x2d14c0(0x349)][_0x2d14c0(0x3fc)](_0x16becc,_0x3ecb93===0x0?this:this[_0x2d14c0(0x211)]),_0x16becc[_0x2d14c0(0x307)](0x0,_0x4012ca['slice'](0x0,-0x1));}else _0x43c236(_0x382294[_0x2d14c0(0x44f)][_0x2d14c0(0x1b4)]||Object[_0x2d14c0(0x2e0)](_0x382294[_0x2d14c0(0x44f)]),_0x2d14c0(0x307),this)['call'](this,_0x3ecb93,_0x4012ca,_0x40a313);}}]),_0x382294;}(_0xe72bd7[_0x4f0989(0x413)]);_0x3f81ab[_0x4f0989(0x368)]=_0x5b1ed4[_0x4f0989(0x413)][_0x4f0989(0x293)][_0x4f0989(0x2c2)];var _0x2fadae=function(_0x13c217){var _0x3a1ae8=_0x4f0989;_0x19e832(_0x1e8f23,_0x13c217);function _0x1e8f23(_0x58f2fa){var _0x470b98=a9_0x50c4;_0x1618c6(this,_0x1e8f23);var _0x4072cd=_0x30b815(this,(_0x1e8f23[_0x470b98(0x1b4)]||Object[_0x470b98(0x2e0)](_0x1e8f23))[_0x470b98(0x1e2)](this,_0x58f2fa));return _0x4072cd['cache']={},_0x4072cd;}return _0x18619e(_0x1e8f23,[{'key':'delta','value':function _0x4e813e(){var _0x10fe6c=a9_0x50c4;return this[_0x10fe6c(0x204)]['delta']==null&&(this[_0x10fe6c(0x204)]['delta']=this[_0x10fe6c(0x40e)](_0x5b1ed4[_0x10fe6c(0x413)]['Leaf'])[_0x10fe6c(0x1c8)](function(_0x5a0297,_0x426cf3){var _0x345c23=_0x10fe6c;return _0x426cf3[_0x345c23(0x19a)]()===0x0?_0x5a0297:_0x5a0297[_0x345c23(0x26a)](_0x426cf3[_0x345c23(0x2e4)](),_0x4c7a72(_0x426cf3));},new _0x40cbe0['default']())[_0x10fe6c(0x26a)]('\x0a',_0x4c7a72(this))),this[_0x10fe6c(0x204)][_0x10fe6c(0x447)];}},{'key':_0x3a1ae8(0x3c3),'value':function _0x12ea1c(_0x4c53c2,_0x108969){var _0x59b1e5=_0x3a1ae8;_0x43c236(_0x1e8f23[_0x59b1e5(0x44f)][_0x59b1e5(0x1b4)]||Object['getPrototypeOf'](_0x1e8f23[_0x59b1e5(0x44f)]),'deleteAt',this)['call'](this,_0x4c53c2,_0x108969),this['cache']={};}},{'key':_0x3a1ae8(0x459),'value':function _0x2cb848(_0x17f968,_0x322e75,_0x2a4a53,_0xce6c74){var _0x37cbd7=_0x3a1ae8;if(_0x322e75<=0x0)return;_0x5b1ed4['default']['query'](_0x2a4a53,_0x5b1ed4[_0x37cbd7(0x413)][_0x37cbd7(0x293)][_0x37cbd7(0x30e)])?_0x17f968+_0x322e75===this[_0x37cbd7(0x19a)]()&&this[_0x37cbd7(0x1d9)](_0x2a4a53,_0xce6c74):_0x43c236(_0x1e8f23[_0x37cbd7(0x44f)][_0x37cbd7(0x1b4)]||Object[_0x37cbd7(0x2e0)](_0x1e8f23[_0x37cbd7(0x44f)]),_0x37cbd7(0x459),this)[_0x37cbd7(0x1e2)](this,_0x17f968,Math[_0x37cbd7(0x384)](_0x322e75,this['length']()-_0x17f968-0x1),_0x2a4a53,_0xce6c74),this['cache']={};}},{'key':_0x3a1ae8(0x307),'value':function _0x2635ce(_0x3cd9ff,_0x39cb7f,_0x178af9){var _0x442fb1=_0x3a1ae8;if(_0x178af9!=null)return _0x43c236(_0x1e8f23[_0x442fb1(0x44f)][_0x442fb1(0x1b4)]||Object[_0x442fb1(0x2e0)](_0x1e8f23[_0x442fb1(0x44f)]),_0x442fb1(0x307),this)[_0x442fb1(0x1e2)](this,_0x3cd9ff,_0x39cb7f,_0x178af9);if(_0x39cb7f['length']===0x0)return;var _0x2c5981=_0x39cb7f[_0x442fb1(0x428)]('\x0a'),_0x35db3a=_0x2c5981[_0x442fb1(0x218)]();_0x35db3a['length']>0x0&&(_0x3cd9ff<this[_0x442fb1(0x19a)]()-0x1||this[_0x442fb1(0x3b7)][_0x442fb1(0x32e)]==null?_0x43c236(_0x1e8f23[_0x442fb1(0x44f)][_0x442fb1(0x1b4)]||Object[_0x442fb1(0x2e0)](_0x1e8f23[_0x442fb1(0x44f)]),_0x442fb1(0x307),this)[_0x442fb1(0x1e2)](this,Math[_0x442fb1(0x384)](_0x3cd9ff,this['length']()-0x1),_0x35db3a):this[_0x442fb1(0x3b7)][_0x442fb1(0x32e)][_0x442fb1(0x307)](this[_0x442fb1(0x3b7)]['tail'][_0x442fb1(0x19a)](),_0x35db3a),this['cache']={});var _0x22e6da=this;_0x2c5981['reduce'](function(_0x532e6d,_0x3b42d3){var _0x358793=_0x442fb1;return _0x22e6da=_0x22e6da[_0x358793(0x428)](_0x532e6d,!![]),_0x22e6da[_0x358793(0x307)](0x0,_0x3b42d3),_0x3b42d3['length'];},_0x3cd9ff+_0x35db3a[_0x442fb1(0x19a)]);}},{'key':_0x3a1ae8(0x3fc),'value':function _0x3ef178(_0x41fcfd,_0x1c378b){var _0x4f9fcd=_0x3a1ae8,_0x230041=this[_0x4f9fcd(0x3b7)][_0x4f9fcd(0x311)];_0x43c236(_0x1e8f23[_0x4f9fcd(0x44f)][_0x4f9fcd(0x1b4)]||Object[_0x4f9fcd(0x2e0)](_0x1e8f23[_0x4f9fcd(0x44f)]),_0x4f9fcd(0x3fc),this)[_0x4f9fcd(0x1e2)](this,_0x41fcfd,_0x1c378b),_0x230041 instanceof _0x4ab492['default']&&_0x230041[_0x4f9fcd(0x190)](),this['cache']={};}},{'key':_0x3a1ae8(0x19a),'value':function _0x35c217(){var _0x5d00dd=_0x3a1ae8;return this[_0x5d00dd(0x204)]['length']==null&&(this['cache'][_0x5d00dd(0x19a)]=_0x43c236(_0x1e8f23[_0x5d00dd(0x44f)]['__proto__']||Object[_0x5d00dd(0x2e0)](_0x1e8f23[_0x5d00dd(0x44f)]),'length',this)[_0x5d00dd(0x1e2)](this)+_0xc32d5d),this[_0x5d00dd(0x204)]['length'];}},{'key':'moveChildren','value':function _0x235428(_0x49b333,_0x459240){var _0x36f3e8=_0x3a1ae8;_0x43c236(_0x1e8f23[_0x36f3e8(0x44f)]['__proto__']||Object[_0x36f3e8(0x2e0)](_0x1e8f23[_0x36f3e8(0x44f)]),'moveChildren',this)[_0x36f3e8(0x1e2)](this,_0x49b333,_0x459240),this[_0x36f3e8(0x204)]={};}},{'key':_0x3a1ae8(0x23e),'value':function _0x42e2c6(){var _0x5c2d36=_0x3a1ae8;_0x43c236(_0x1e8f23[_0x5c2d36(0x44f)][_0x5c2d36(0x1b4)]||Object[_0x5c2d36(0x2e0)](_0x1e8f23[_0x5c2d36(0x44f)]),_0x5c2d36(0x23e),this)[_0x5c2d36(0x1e2)](this),this[_0x5c2d36(0x204)]={};}},{'key':_0x3a1ae8(0x1d2),'value':function _0x2549e1(_0x2d0b87){var _0x10de10=_0x3a1ae8;return _0x43c236(_0x1e8f23[_0x10de10(0x44f)][_0x10de10(0x1b4)]||Object[_0x10de10(0x2e0)](_0x1e8f23[_0x10de10(0x44f)]),_0x10de10(0x1d2),this)[_0x10de10(0x1e2)](this,_0x2d0b87,!![]);}},{'key':_0x3a1ae8(0x213),'value':function _0x1422ef(_0x241a9f){var _0x5bb7d4=_0x3a1ae8;_0x43c236(_0x1e8f23[_0x5bb7d4(0x44f)][_0x5bb7d4(0x1b4)]||Object['getPrototypeOf'](_0x1e8f23[_0x5bb7d4(0x44f)]),_0x5bb7d4(0x213),this)['call'](this,_0x241a9f),this[_0x5bb7d4(0x204)]={};}},{'key':_0x3a1ae8(0x428),'value':function _0x45db42(_0x2a4aa9){var _0x3e83f1=_0x3a1ae8,_0x43e1f9=arguments[_0x3e83f1(0x19a)]<=0x1||arguments[0x1]===undefined?![]:arguments[0x1];if(_0x43e1f9&&(_0x2a4aa9===0x0||_0x2a4aa9>=this[_0x3e83f1(0x19a)]()-_0xc32d5d)){var _0x4ab2fb=this[_0x3e83f1(0x378)]();return _0x2a4aa9===0x0?(this[_0x3e83f1(0x349)][_0x3e83f1(0x3fc)](_0x4ab2fb,this),this):(this[_0x3e83f1(0x349)]['insertBefore'](_0x4ab2fb,this['next']),_0x4ab2fb);}else{var _0x277e53=_0x43c236(_0x1e8f23[_0x3e83f1(0x44f)][_0x3e83f1(0x1b4)]||Object['getPrototypeOf'](_0x1e8f23[_0x3e83f1(0x44f)]),_0x3e83f1(0x428),this)[_0x3e83f1(0x1e2)](this,_0x2a4aa9,_0x43e1f9);return this[_0x3e83f1(0x204)]={},_0x277e53;}}}]),_0x1e8f23;}(_0x5b1ed4['default'][_0x4f0989(0x21d)]);_0x2fadae[_0x4f0989(0x242)]=_0x4f0989(0x394),_0x2fadae[_0x4f0989(0x200)]='P',_0x2fadae['defaultChild']=_0x4f0989(0x237),_0x2fadae[_0x4f0989(0x23a)]=[_0x1b8c30[_0x4f0989(0x413)],_0xe72bd7[_0x4f0989(0x413)],_0x584ce5[_0x4f0989(0x413)]];function _0x4c7a72(_0x1f1f93){var _0x4d4870=_0x4f0989,_0x30d0bb=arguments[_0x4d4870(0x19a)]<=0x1||arguments[0x1]===undefined?{}:arguments[0x1];if(_0x1f1f93==null)return _0x30d0bb;typeof _0x1f1f93[_0x4d4870(0x1a2)]===_0x4d4870(0x33b)&&(_0x30d0bb=(0x0,_0x224817[_0x4d4870(0x413)])(_0x30d0bb,_0x1f1f93[_0x4d4870(0x1a2)]()));if(_0x1f1f93[_0x4d4870(0x349)]==null||_0x1f1f93[_0x4d4870(0x349)][_0x4d4870(0x242)]==_0x4d4870(0x36a)||_0x1f1f93[_0x4d4870(0x349)]['statics'][_0x4d4870(0x368)]!==_0x1f1f93[_0x4d4870(0x3a6)][_0x4d4870(0x368)])return _0x30d0bb;return _0x4c7a72(_0x1f1f93['parent'],_0x30d0bb);}_0x55b760['bubbleFormats']=_0x4c7a72,_0x55b760[_0x4f0989(0x3db)]=_0x3f81ab,_0x55b760[_0x4f0989(0x413)]=_0x2fadae;},function(_0x2b065a,_0x423ca9,_0x371ff3){'use strict';var _0x2a8d64=a9_0x50c4;Object[_0x2a8d64(0x289)](_0x423ca9,_0x2a8d64(0x2ad),{'value':!![]});var _0xf7b0cd=(function(){function _0x34195f(_0x360650,_0x13c8dc){var _0xc22b13=a9_0x50c4;for(var _0x3bebe6=0x0;_0x3bebe6<_0x13c8dc[_0xc22b13(0x19a)];_0x3bebe6++){var _0x2ebc4e=_0x13c8dc[_0x3bebe6];_0x2ebc4e[_0xc22b13(0x1eb)]=_0x2ebc4e[_0xc22b13(0x1eb)]||![],_0x2ebc4e[_0xc22b13(0x203)]=!![];if(_0xc22b13(0x2e4)in _0x2ebc4e)_0x2ebc4e[_0xc22b13(0x40f)]=!![];Object['defineProperty'](_0x360650,_0x2ebc4e['key'],_0x2ebc4e);}}return function(_0x335c73,_0x1e9536,_0x24e3bb){if(_0x1e9536)_0x34195f(_0x335c73['prototype'],_0x1e9536);if(_0x24e3bb)_0x34195f(_0x335c73,_0x24e3bb);return _0x335c73;};}()),_0x4e4d67=function _0x36865a(_0x4e341e,_0x1c8976,_0x1b6d5e){var _0x3baeb6=_0x2a8d64;if(_0x4e341e===null)_0x4e341e=Function[_0x3baeb6(0x44f)];var _0x13b3b3=Object[_0x3baeb6(0x1e0)](_0x4e341e,_0x1c8976);if(_0x13b3b3===undefined){var _0xd54c2b=Object[_0x3baeb6(0x2e0)](_0x4e341e);return _0xd54c2b===null?undefined:_0x36865a(_0xd54c2b,_0x1c8976,_0x1b6d5e);}else{if(_0x3baeb6(0x2e4)in _0x13b3b3)return _0x13b3b3['value'];else{var _0x125821=_0x13b3b3[_0x3baeb6(0x246)];if(_0x125821===undefined)return undefined;return _0x125821[_0x3baeb6(0x1e2)](_0x1b6d5e);}}},_0xd5ccb2=_0x371ff3(0x22),_0x58b8a5=_0x5d64cf(_0xd5ccb2);function _0x5d64cf(_0x57517e){return _0x57517e&&_0x57517e['__esModule']?_0x57517e:{'default':_0x57517e};}function _0xcc0940(_0x3eef8f,_0x36f6f6){var _0x915ce8=_0x2a8d64;if(!(_0x3eef8f instanceof _0x36f6f6))throw new TypeError(_0x915ce8(0x2eb));}function _0xe4c370(_0x3a2031,_0x45919f){var _0x3bdd34=_0x2a8d64;if(!_0x3a2031)throw new ReferenceError(_0x3bdd34(0x434));return _0x45919f&&(typeof _0x45919f===_0x3bdd34(0x2e1)||typeof _0x45919f===_0x3bdd34(0x33b))?_0x45919f:_0x3a2031;}function _0x2ae0e8(_0x232669,_0x131bcb){var _0x16b4de=_0x2a8d64;if(typeof _0x131bcb!=='function'&&_0x131bcb!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x131bcb);_0x232669['prototype']=Object[_0x16b4de(0x372)](_0x131bcb&&_0x131bcb[_0x16b4de(0x44f)],{'constructor':{'value':_0x232669,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x131bcb)Object['setPrototypeOf']?Object[_0x16b4de(0x1ea)](_0x232669,_0x131bcb):_0x232669[_0x16b4de(0x1b4)]=_0x131bcb;}var _0x212647=function(_0x411ac6){var _0x211718=_0x2a8d64;_0x2ae0e8(_0x3276e6,_0x411ac6);function _0x3276e6(){var _0x5148ea=a9_0x50c4;return _0xcc0940(this,_0x3276e6),_0xe4c370(this,(_0x3276e6['__proto__']||Object[_0x5148ea(0x2e0)](_0x3276e6))[_0x5148ea(0x39e)](this,arguments));}return _0xf7b0cd(_0x3276e6,[{'key':'insertInto','value':function _0x4c0aa8(_0x2c5462,_0x23178){var _0x207171=a9_0x50c4;_0x2c5462['children'][_0x207171(0x19a)]===0x0&&_0x4e4d67(_0x3276e6[_0x207171(0x44f)][_0x207171(0x1b4)]||Object[_0x207171(0x2e0)](_0x3276e6[_0x207171(0x44f)]),'insertInto',this)[_0x207171(0x1e2)](this,_0x2c5462,_0x23178);}},{'key':'length','value':function _0x4447e7(){return 0x0;}},{'key':'value','value':function _0x42be62(){return'';}}],[{'key':_0x211718(0x2e4),'value':function _0x49a7db(_0x2f05dc){return undefined;}}]),_0x3276e6;}(_0x58b8a5[_0x2a8d64(0x413)]);_0x212647['blotName']='break',_0x212647[_0x2a8d64(0x200)]='BR',_0x423ca9['default']=_0x212647;},function(_0x4cb285,_0x25e1d6,_0x55c4fc){'use strict';var _0x28c85c=a9_0x50c4;Object[_0x28c85c(0x289)](_0x25e1d6,'__esModule',{'value':!![]});var _0x1e7c6f=_0x55c4fc(0x2),_0x21f08a=_0xd8fe2a(_0x1e7c6f);function _0xd8fe2a(_0x3681ff){var _0x527956=_0x28c85c;return _0x3681ff&&_0x3681ff[_0x527956(0x2ad)]?_0x3681ff:{'default':_0x3681ff};}function _0x1fc3d9(_0x5c7202,_0x53b3db){var _0x556793=_0x28c85c;if(!(_0x5c7202 instanceof _0x53b3db))throw new TypeError(_0x556793(0x2eb));}function _0x48eff8(_0x4bc6cf,_0xed68b6){var _0x2fbcc5=_0x28c85c;if(!_0x4bc6cf)throw new ReferenceError(_0x2fbcc5(0x434));return _0xed68b6&&(typeof _0xed68b6==='object'||typeof _0xed68b6===_0x2fbcc5(0x33b))?_0xed68b6:_0x4bc6cf;}function _0x1f6347(_0x53411f,_0x426e15){var _0xc6368c=_0x28c85c;if(typeof _0x426e15!==_0xc6368c(0x33b)&&_0x426e15!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x426e15);_0x53411f[_0xc6368c(0x44f)]=Object[_0xc6368c(0x372)](_0x426e15&&_0x426e15[_0xc6368c(0x44f)],{'constructor':{'value':_0x53411f,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x426e15)Object[_0xc6368c(0x1ea)]?Object[_0xc6368c(0x1ea)](_0x53411f,_0x426e15):_0x53411f[_0xc6368c(0x1b4)]=_0x426e15;}var _0x192239=function(_0x2959bf){_0x1f6347(_0x3b81af,_0x2959bf);function _0x3b81af(){var _0x257b3e=a9_0x50c4;return _0x1fc3d9(this,_0x3b81af),_0x48eff8(this,(_0x3b81af[_0x257b3e(0x1b4)]||Object[_0x257b3e(0x2e0)](_0x3b81af))[_0x257b3e(0x39e)](this,arguments));}return _0x3b81af;}(_0x21f08a[_0x28c85c(0x413)][_0x28c85c(0x2cd)]);_0x25e1d6['default']=_0x192239;},function(_0x3b85f7,_0x4d0477,_0x4114a8){'use strict';var _0x42b952=a9_0x50c4;Object['defineProperty'](_0x4d0477,_0x42b952(0x2ad),{'value':!![]});var _0x45949a=(function(){function _0xec9c45(_0x3c3809,_0xba3a04){var _0x26e751=a9_0x50c4;for(var _0x29d85e=0x0;_0x29d85e<_0xba3a04[_0x26e751(0x19a)];_0x29d85e++){var _0x1bbe61=_0xba3a04[_0x29d85e];_0x1bbe61['enumerable']=_0x1bbe61[_0x26e751(0x1eb)]||![],_0x1bbe61[_0x26e751(0x203)]=!![];if(_0x26e751(0x2e4)in _0x1bbe61)_0x1bbe61[_0x26e751(0x40f)]=!![];Object[_0x26e751(0x289)](_0x3c3809,_0x1bbe61[_0x26e751(0x3ea)],_0x1bbe61);}}return function(_0x5ab94b,_0x4630c8,_0x4b92ef){if(_0x4630c8)_0xec9c45(_0x5ab94b['prototype'],_0x4630c8);if(_0x4b92ef)_0xec9c45(_0x5ab94b,_0x4b92ef);return _0x5ab94b;};}()),_0x2aa2b1=function _0x285791(_0x1a1e7b,_0x36b366,_0x120a9f){var _0x4b1b40=_0x42b952;if(_0x1a1e7b===null)_0x1a1e7b=Function[_0x4b1b40(0x44f)];var _0x1191ec=Object[_0x4b1b40(0x1e0)](_0x1a1e7b,_0x36b366);if(_0x1191ec===undefined){var _0x48fde9=Object[_0x4b1b40(0x2e0)](_0x1a1e7b);return _0x48fde9===null?undefined:_0x285791(_0x48fde9,_0x36b366,_0x120a9f);}else{if(_0x4b1b40(0x2e4)in _0x1191ec)return _0x1191ec[_0x4b1b40(0x2e4)];else{var _0x44c7ab=_0x1191ec[_0x4b1b40(0x246)];if(_0x44c7ab===undefined)return undefined;return _0x44c7ab[_0x4b1b40(0x1e2)](_0x120a9f);}}},_0x1fbd76=_0x4114a8(0x19),_0x5b85e3=_0x18d4db(_0x1fbd76),_0x1ea092=_0x4114a8(0x22),_0x36e600=_0x18d4db(_0x1ea092),_0x548c95=_0x4114a8(0x24),_0x461288=_0x18d4db(_0x548c95),_0x3f14db=_0x4114a8(0x2),_0x4d9c62=_0x18d4db(_0x3f14db);function _0x18d4db(_0x3f75f8){var _0x506847=_0x42b952;return _0x3f75f8&&_0x3f75f8[_0x506847(0x2ad)]?_0x3f75f8:{'default':_0x3f75f8};}function _0x6e670f(_0x470d1f,_0x3fca06){if(!(_0x470d1f instanceof _0x3fca06))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x56e780(_0x35d68d,_0xf82ca2){var _0x3d23ec=_0x42b952;if(!_0x35d68d)throw new ReferenceError(_0x3d23ec(0x434));return _0xf82ca2&&(typeof _0xf82ca2===_0x3d23ec(0x2e1)||typeof _0xf82ca2==='function')?_0xf82ca2:_0x35d68d;}function _0x14397b(_0x2c7de3,_0x30b9e3){var _0x1b2aa4=_0x42b952;if(typeof _0x30b9e3!==_0x1b2aa4(0x33b)&&_0x30b9e3!==null)throw new TypeError(_0x1b2aa4(0x448)+typeof _0x30b9e3);_0x2c7de3[_0x1b2aa4(0x44f)]=Object[_0x1b2aa4(0x372)](_0x30b9e3&&_0x30b9e3[_0x1b2aa4(0x44f)],{'constructor':{'value':_0x2c7de3,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x30b9e3)Object[_0x1b2aa4(0x1ea)]?Object[_0x1b2aa4(0x1ea)](_0x2c7de3,_0x30b9e3):_0x2c7de3[_0x1b2aa4(0x1b4)]=_0x30b9e3;}var _0x3eb83e=function(_0x5627e0){var _0x35d6fa=_0x42b952;_0x14397b(_0x1bbd4,_0x5627e0);function _0x1bbd4(){var _0x4c5d85=a9_0x50c4;return _0x6e670f(this,_0x1bbd4),_0x56e780(this,(_0x1bbd4[_0x4c5d85(0x1b4)]||Object['getPrototypeOf'](_0x1bbd4))[_0x4c5d85(0x39e)](this,arguments));}return _0x45949a(_0x1bbd4,[{'key':_0x35d6fa(0x459),'value':function _0x37de19(_0xcbb44,_0x50a74a,_0xc3fe32,_0x4997c4){var _0x264b6a=_0x35d6fa;if(_0x1bbd4[_0x264b6a(0x33c)](this[_0x264b6a(0x3a6)][_0x264b6a(0x242)],_0xc3fe32)<0x0&&_0x4d9c62[_0x264b6a(0x413)]['query'](_0xc3fe32,_0x4d9c62[_0x264b6a(0x413)][_0x264b6a(0x293)][_0x264b6a(0x217)])){var _0x26d536=this[_0x264b6a(0x1d5)](_0xcbb44,_0x50a74a);_0x4997c4&&_0x26d536['wrap'](_0xc3fe32,_0x4997c4);}else _0x2aa2b1(_0x1bbd4[_0x264b6a(0x44f)]['__proto__']||Object['getPrototypeOf'](_0x1bbd4['prototype']),'formatAt',this)[_0x264b6a(0x1e2)](this,_0xcbb44,_0x50a74a,_0xc3fe32,_0x4997c4);}}],[{'key':_0x35d6fa(0x33c),'value':function _0x39bdd5(_0x25eab9,_0x4ad4bf){var _0x22beb3=_0x35d6fa,_0x26c511=_0x1bbd4[_0x22beb3(0x365)]['indexOf'](_0x25eab9),_0x360769=_0x1bbd4[_0x22beb3(0x365)][_0x22beb3(0x39a)](_0x4ad4bf);if(_0x26c511>=0x0||_0x360769>=0x0)return _0x26c511-_0x360769;else{if(_0x25eab9===_0x4ad4bf)return 0x0;else return _0x25eab9<_0x4ad4bf?-0x1:0x1;}}}]),_0x1bbd4;}(_0x4d9c62['default'][_0x42b952(0x341)]);_0x3eb83e[_0x42b952(0x23a)]=[_0x3eb83e,_0x36e600[_0x42b952(0x413)],_0x461288['default']],_0x3eb83e['order']=['cursor',_0x42b952(0x453),_0x42b952(0x264),_0x42b952(0x25f),'strike','italic',_0x42b952(0x181),_0x42b952(0x350),'link'],_0x4d0477[_0x42b952(0x413)]=_0x3eb83e;},function(_0x2ebc99,_0x34b779,_0x550b61){'use strict';var _0x1b8218=a9_0x50c4;Object[_0x1b8218(0x289)](_0x34b779,_0x1b8218(0x2ad),{'value':!![]});var _0x49032e=_0x550b61(0x2),_0x384fdf=_0x1db0e2(_0x49032e);function _0x1db0e2(_0x5caabe){var _0xb0166a=_0x1b8218;return _0x5caabe&&_0x5caabe[_0xb0166a(0x2ad)]?_0x5caabe:{'default':_0x5caabe};}function _0x519025(_0x14182f,_0x3419b5){if(!(_0x14182f instanceof _0x3419b5))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x19f5c1(_0x549876,_0x2c7eff){var _0x48977a=_0x1b8218;if(!_0x549876)throw new ReferenceError(_0x48977a(0x434));return _0x2c7eff&&(typeof _0x2c7eff===_0x48977a(0x2e1)||typeof _0x2c7eff==='function')?_0x2c7eff:_0x549876;}function _0x3029e2(_0x17433b,_0x1249b2){var _0x23624f=_0x1b8218;if(typeof _0x1249b2!==_0x23624f(0x33b)&&_0x1249b2!==null)throw new TypeError(_0x23624f(0x448)+typeof _0x1249b2);_0x17433b[_0x23624f(0x44f)]=Object[_0x23624f(0x372)](_0x1249b2&&_0x1249b2[_0x23624f(0x44f)],{'constructor':{'value':_0x17433b,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x1249b2)Object['setPrototypeOf']?Object[_0x23624f(0x1ea)](_0x17433b,_0x1249b2):_0x17433b['__proto__']=_0x1249b2;}var _0x32ce62=function(_0x2ab2d8){_0x3029e2(_0x4eb0b3,_0x2ab2d8);function _0x4eb0b3(){var _0x2acab5=a9_0x50c4;return _0x519025(this,_0x4eb0b3),_0x19f5c1(this,(_0x4eb0b3['__proto__']||Object[_0x2acab5(0x2e0)](_0x4eb0b3))[_0x2acab5(0x39e)](this,arguments));}return _0x4eb0b3;}(_0x384fdf[_0x1b8218(0x413)][_0x1b8218(0x1e7)]);_0x34b779[_0x1b8218(0x413)]=_0x32ce62;},function(_0x19f9ba,_0x35a23d,_0x303336){'use strict';var _0xad535a=a9_0x50c4;Object[_0xad535a(0x289)](_0x35a23d,_0xad535a(0x2ad),{'value':!![]});var _0x3a4407=(function(){function _0xe7a42d(_0x4d9f66,_0x29a833){var _0x2a8732=a9_0x50c4,_0x1b83dd=[],_0x1e397b=!![],_0x69cd54=![],_0x413cd3=undefined;try{for(var _0x22176a=_0x4d9f66[Symbol[_0x2a8732(0x2e8)]](),_0x5d5c35;!(_0x1e397b=(_0x5d5c35=_0x22176a[_0x2a8732(0x211)]())['done']);_0x1e397b=!![]){_0x1b83dd[_0x2a8732(0x1bf)](_0x5d5c35[_0x2a8732(0x2e4)]);if(_0x29a833&&_0x1b83dd[_0x2a8732(0x19a)]===_0x29a833)break;}}catch(_0x50aa04){_0x69cd54=!![],_0x413cd3=_0x50aa04;}finally{try{if(!_0x1e397b&&_0x22176a[_0x2a8732(0x222)])_0x22176a['return']();}finally{if(_0x69cd54)throw _0x413cd3;}}return _0x1b83dd;}return function(_0x1107b9,_0x96cf56){if(Array['isArray'](_0x1107b9))return _0x1107b9;else{if(Symbol['iterator']in Object(_0x1107b9))return _0xe7a42d(_0x1107b9,_0x96cf56);else throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance');}};}()),_0x2fed19=function _0x1ea8d6(_0x387c55,_0x230629,_0x664f80){var _0x410092=_0xad535a;if(_0x387c55===null)_0x387c55=Function['prototype'];var _0xd314c5=Object[_0x410092(0x1e0)](_0x387c55,_0x230629);if(_0xd314c5===undefined){var _0x173c7b=Object[_0x410092(0x2e0)](_0x387c55);return _0x173c7b===null?undefined:_0x1ea8d6(_0x173c7b,_0x230629,_0x664f80);}else{if(_0x410092(0x2e4)in _0xd314c5)return _0xd314c5[_0x410092(0x2e4)];else{var _0x21ca2d=_0xd314c5['get'];if(_0x21ca2d===undefined)return undefined;return _0x21ca2d['call'](_0x664f80);}}},_0x12f6a9=(function(){function _0x3ea18a(_0x2c2fcf,_0x978360){var _0x2b6527=a9_0x50c4;for(var _0x4a1a52=0x0;_0x4a1a52<_0x978360[_0x2b6527(0x19a)];_0x4a1a52++){var _0x46395e=_0x978360[_0x4a1a52];_0x46395e[_0x2b6527(0x1eb)]=_0x46395e[_0x2b6527(0x1eb)]||![],_0x46395e[_0x2b6527(0x203)]=!![];if(_0x2b6527(0x2e4)in _0x46395e)_0x46395e[_0x2b6527(0x40f)]=!![];Object[_0x2b6527(0x289)](_0x2c2fcf,_0x46395e[_0x2b6527(0x3ea)],_0x46395e);}}return function(_0x46d56a,_0x3c416f,_0x338631){var _0x2d222b=a9_0x50c4;if(_0x3c416f)_0x3ea18a(_0x46d56a[_0x2d222b(0x44f)],_0x3c416f);if(_0x338631)_0x3ea18a(_0x46d56a,_0x338631);return _0x46d56a;};}()),_0x476e54=_0x303336(0x2),_0x15aaa9=_0xb4190b(_0x476e54),_0xfb261b=_0x303336(0x22),_0x106c33=_0xb4190b(_0xfb261b),_0x2b17d0=_0x303336(0x1c),_0x5c93c4=_0xb4190b(_0x2b17d0);function _0xb4190b(_0x2b96e2){return _0x2b96e2&&_0x2b96e2['__esModule']?_0x2b96e2:{'default':_0x2b96e2};}function _0x5551f6(_0x13186c,_0x3e5985){var _0x4f031c=_0xad535a;if(!(_0x13186c instanceof _0x3e5985))throw new TypeError(_0x4f031c(0x2eb));}function _0x501928(_0x2609df,_0x23f587){var _0x20b97f=_0xad535a;if(!_0x2609df)throw new ReferenceError(_0x20b97f(0x434));return _0x23f587&&(typeof _0x23f587==='object'||typeof _0x23f587===_0x20b97f(0x33b))?_0x23f587:_0x2609df;}function _0x2f93f0(_0x2981dd,_0x2b8686){var _0x3863e6=_0xad535a;if(typeof _0x2b8686!=='function'&&_0x2b8686!==null)throw new TypeError(_0x3863e6(0x448)+typeof _0x2b8686);_0x2981dd[_0x3863e6(0x44f)]=Object['create'](_0x2b8686&&_0x2b8686[_0x3863e6(0x44f)],{'constructor':{'value':_0x2981dd,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x2b8686)Object[_0x3863e6(0x1ea)]?Object[_0x3863e6(0x1ea)](_0x2981dd,_0x2b8686):_0x2981dd[_0x3863e6(0x1b4)]=_0x2b8686;}var _0x1967de=function(_0x265aa8){var _0x5793d0=_0xad535a;_0x2f93f0(_0x291ecf,_0x265aa8),_0x12f6a9(_0x291ecf,null,[{'key':'value','value':function _0x375ec3(_0x240ad7){return undefined;}}]);function _0x291ecf(_0xe650a2,_0x448cad){var _0x33db4f=a9_0x50c4;_0x5551f6(this,_0x291ecf);var _0x494ef9=_0x501928(this,(_0x291ecf[_0x33db4f(0x1b4)]||Object[_0x33db4f(0x2e0)](_0x291ecf))[_0x33db4f(0x1e2)](this,_0xe650a2));return _0x494ef9['selection']=_0x448cad,_0x494ef9[_0x33db4f(0x28a)]=document[_0x33db4f(0x262)](_0x291ecf[_0x33db4f(0x2f1)]),_0x494ef9[_0x33db4f(0x3ad)][_0x33db4f(0x27e)](_0x494ef9[_0x33db4f(0x28a)]),_0x494ef9['_length']=0x0,_0x494ef9;}return _0x12f6a9(_0x291ecf,[{'key':_0x5793d0(0x1b7),'value':function _0x507205(){var _0xcc73b2=_0x5793d0;if(this[_0xcc73b2(0x349)]!=null)this['parent']['removeChild'](this);}},{'key':_0x5793d0(0x1d9),'value':function _0x48c32c(_0x260373,_0x415531){var _0x1fb560=_0x5793d0;if(this['_length']!==0x0)return _0x2fed19(_0x291ecf['prototype'][_0x1fb560(0x1b4)]||Object[_0x1fb560(0x2e0)](_0x291ecf['prototype']),_0x1fb560(0x1d9),this)[_0x1fb560(0x1e2)](this,_0x260373,_0x415531);var _0x597e99=this,_0x574571=0x0;while(_0x597e99!=null&&_0x597e99['statics'][_0x1fb560(0x368)]!==_0x15aaa9[_0x1fb560(0x413)][_0x1fb560(0x293)][_0x1fb560(0x2c2)]){_0x574571+=_0x597e99[_0x1fb560(0x438)](_0x597e99[_0x1fb560(0x349)]),_0x597e99=_0x597e99[_0x1fb560(0x349)];}_0x597e99!=null&&(this[_0x1fb560(0x38c)]=_0x291ecf[_0x1fb560(0x2f1)][_0x1fb560(0x19a)],_0x597e99[_0x1fb560(0x23e)](),_0x597e99[_0x1fb560(0x459)](_0x574571,_0x291ecf[_0x1fb560(0x2f1)][_0x1fb560(0x19a)],_0x260373,_0x415531),this['_length']=0x0);}},{'key':_0x5793d0(0x320),'value':function _0x1f8b79(_0xe39a37,_0x1842c7){var _0x43457f=_0x5793d0;if(_0xe39a37===this[_0x43457f(0x28a)])return 0x0;return _0x2fed19(_0x291ecf[_0x43457f(0x44f)][_0x43457f(0x1b4)]||Object[_0x43457f(0x2e0)](_0x291ecf[_0x43457f(0x44f)]),_0x43457f(0x320),this)[_0x43457f(0x1e2)](this,_0xe39a37,_0x1842c7);}},{'key':'length','value':function _0x1404d4(){var _0x2a64c1=_0x5793d0;return this[_0x2a64c1(0x38c)];}},{'key':_0x5793d0(0x24b),'value':function _0x2ac214(_0x226d59){var _0x40dab4=_0x5793d0;return[this[_0x40dab4(0x28a)],this['textNode'][_0x40dab4(0x27f)][_0x40dab4(0x19a)]];}},{'key':_0x5793d0(0x190),'value':function _0x2ea707(){var _0x40445e=_0x5793d0;_0x2fed19(_0x291ecf[_0x40445e(0x44f)][_0x40445e(0x1b4)]||Object['getPrototypeOf'](_0x291ecf['prototype']),_0x40445e(0x190),this)[_0x40445e(0x1e2)](this),this[_0x40445e(0x349)]=null;}},{'key':'restore','value':function _0x7b523d(){var _0x856d3=_0x5793d0,_0x5f3f1a=this;if(this['selection']['composing'])return;if(this['parent']==null)return;var _0x45de54=this[_0x856d3(0x28a)],_0x1710eb=this['selection'][_0x856d3(0x297)]();while(this[_0x856d3(0x3ad)][_0x856d3(0x1bb)]!=null&&this['domNode'][_0x856d3(0x1bb)]!==this[_0x856d3(0x28a)]){this[_0x856d3(0x3ad)][_0x856d3(0x37d)]['insertBefore'](this[_0x856d3(0x3ad)]['lastChild'],this['domNode']);}this[_0x856d3(0x28a)][_0x856d3(0x27f)]!==_0x291ecf[_0x856d3(0x2f1)]&&(this[_0x856d3(0x28a)]['data']=this['textNode'][_0x856d3(0x27f)]['split'](_0x291ecf[_0x856d3(0x2f1)])[_0x856d3(0x28f)](''),this[_0x856d3(0x349)][_0x856d3(0x3fc)](_0x15aaa9['default'][_0x856d3(0x372)](this['textNode']),this),this[_0x856d3(0x28a)]=document['createTextNode'](_0x291ecf[_0x856d3(0x2f1)]),this[_0x856d3(0x3ad)][_0x856d3(0x27e)](this[_0x856d3(0x28a)])),this[_0x856d3(0x190)](),_0x1710eb!=null&&_0x1710eb[_0x856d3(0x28b)][_0x856d3(0x1c5)]===_0x45de54&&_0x1710eb['end']['node']===_0x45de54&&this[_0x856d3(0x1ba)][_0x856d3(0x440)][_0x856d3(0x3fa)](_0x5c93c4['default'][_0x856d3(0x42e)][_0x856d3(0x212)],function(){var _0x4c1f41=_0x856d3,_0x4d9e40=[_0x1710eb[_0x4c1f41(0x28b)][_0x4c1f41(0x438)],_0x1710eb[_0x4c1f41(0x2f2)]['offset']]['map'](function(_0x1b4f59){var _0x521dcd=_0x4c1f41;return Math[_0x521dcd(0x191)](0x0,Math['min'](_0x45de54['data']['length'],_0x1b4f59-0x1));}),_0x142c17=_0x3a4407(_0x4d9e40,0x2),_0x5091d6=_0x142c17[0x0],_0x2b5131=_0x142c17[0x1];_0x5f3f1a[_0x4c1f41(0x1ba)][_0x4c1f41(0x457)](_0x45de54,_0x5091d6,_0x45de54,_0x2b5131);});}},{'key':'update','value':function _0xcb79d4(_0xf68802){var _0x394a3c=this;_0xf68802['forEach'](function(_0x517fc7){var _0x2befd0=a9_0x50c4;_0x517fc7[_0x2befd0(0x2d9)]==='characterData'&&_0x517fc7[_0x2befd0(0x3c2)]===_0x394a3c[_0x2befd0(0x28a)]&&_0x394a3c[_0x2befd0(0x348)]();});}},{'key':_0x5793d0(0x2e4),'value':function _0x454a8d(){return'';}}]),_0x291ecf;}(_0x106c33[_0xad535a(0x413)]);_0x1967de[_0xad535a(0x242)]=_0xad535a(0x34b),_0x1967de[_0xad535a(0x2d6)]=_0xad535a(0x1b3),_0x1967de[_0xad535a(0x200)]='span',_0x1967de['CONTENTS']='\ufeff',_0x35a23d[_0xad535a(0x413)]=_0x1967de;},function(_0x2b8a67,_0x267cc){var _0xbf834d=a9_0x50c4,_0x3a0173=(function(){'use strict';var _0x1a8cfe=a9_0x50c4;function _0x2d3e03(_0x1f5d99,_0x355752,_0x376f14,_0x5c7c65){var _0x4fca8e=a9_0x50c4,_0x269087;typeof _0x355752===_0x4fca8e(0x2e1)&&(_0x376f14=_0x355752[_0x4fca8e(0x318)],_0x5c7c65=_0x355752['prototype'],_0x269087=_0x355752[_0x4fca8e(0x2f8)],_0x355752=_0x355752[_0x4fca8e(0x408)]);var _0x5ffe80=[],_0x3d25c2=[],_0x205ecd=typeof Buffer!=_0x4fca8e(0x1ab);if(typeof _0x355752=='undefined')_0x355752=!![];if(typeof _0x376f14==_0x4fca8e(0x1ab))_0x376f14=Infinity;function _0x1a14e7(_0x309add,_0x54f0d1){var _0x223435=_0x4fca8e;if(_0x309add===null)return null;if(_0x54f0d1==0x0)return _0x309add;var _0x3cbbdc,_0x62b934;if(typeof _0x309add!=_0x223435(0x2e1))return _0x309add;if(_0x2d3e03[_0x223435(0x312)](_0x309add))_0x3cbbdc=[];else{if(_0x2d3e03[_0x223435(0x2de)](_0x309add)){_0x3cbbdc=new RegExp(_0x309add[_0x223435(0x33f)],_0x107d81(_0x309add));if(_0x309add['lastIndex'])_0x3cbbdc[_0x223435(0x27b)]=_0x309add['lastIndex'];}else{if(_0x2d3e03[_0x223435(0x1a8)](_0x309add))_0x3cbbdc=new Date(_0x309add[_0x223435(0x324)]());else{if(_0x205ecd&&Buffer[_0x223435(0x3c9)](_0x309add))return _0x3cbbdc=new Buffer(_0x309add[_0x223435(0x19a)]),_0x309add['copy'](_0x3cbbdc),_0x3cbbdc;else typeof _0x5c7c65==_0x223435(0x1ab)?(_0x62b934=Object[_0x223435(0x2e0)](_0x309add),_0x3cbbdc=Object['create'](_0x62b934)):(_0x3cbbdc=Object[_0x223435(0x372)](_0x5c7c65),_0x62b934=_0x5c7c65);}}}if(_0x355752){var _0x465e7e=_0x5ffe80[_0x223435(0x39a)](_0x309add);if(_0x465e7e!=-0x1)return _0x3d25c2[_0x465e7e];_0x5ffe80[_0x223435(0x1bf)](_0x309add),_0x3d25c2['push'](_0x3cbbdc);}for(var _0x407614 in _0x309add){var _0x3850bb;_0x62b934&&(_0x3850bb=Object[_0x223435(0x1e0)](_0x62b934,_0x407614));if(_0x3850bb&&_0x3850bb[_0x223435(0x1f4)]==null)continue;_0x3cbbdc[_0x407614]=_0x1a14e7(_0x309add[_0x407614],_0x54f0d1-0x1);}return _0x3cbbdc;}return _0x1a14e7(_0x1f5d99,_0x376f14);}_0x2d3e03[_0x1a8cfe(0x1e6)]=function _0xa855f(_0x12826e){var _0x2b944e=_0x1a8cfe;if(_0x12826e===null)return null;var _0x233ebe=function(){};return _0x233ebe[_0x2b944e(0x44f)]=_0x12826e,new _0x233ebe();};function _0x4006d6(_0x401da9){var _0x4361fe=_0x1a8cfe;return Object[_0x4361fe(0x44f)]['toString'][_0x4361fe(0x1e2)](_0x401da9);};_0x2d3e03['__objToStr']=_0x4006d6;function _0x3e8dda(_0x2ca232){var _0xa71905=_0x1a8cfe;return typeof _0x2ca232===_0xa71905(0x2e1)&&_0x4006d6(_0x2ca232)==='[object\x20Date]';};_0x2d3e03[_0x1a8cfe(0x1a8)]=_0x3e8dda;function _0x2c806b(_0x3963ab){var _0x8f88e9=_0x1a8cfe;return typeof _0x3963ab==='object'&&_0x4006d6(_0x3963ab)===_0x8f88e9(0x2c0);};_0x2d3e03[_0x1a8cfe(0x312)]=_0x2c806b;function _0x39ce9c(_0x596055){var _0x4b3c4e=_0x1a8cfe;return typeof _0x596055===_0x4b3c4e(0x2e1)&&_0x4006d6(_0x596055)===_0x4b3c4e(0x229);};_0x2d3e03[_0x1a8cfe(0x2de)]=_0x39ce9c;function _0x107d81(_0x5effb3){var _0x3d495c=_0x1a8cfe,_0x513f3e='';if(_0x5effb3[_0x3d495c(0x1c6)])_0x513f3e+='g';if(_0x5effb3[_0x3d495c(0x3b9)])_0x513f3e+='i';if(_0x5effb3[_0x3d495c(0x1d8)])_0x513f3e+='m';return _0x513f3e;};return _0x2d3e03[_0x1a8cfe(0x247)]=_0x107d81,_0x2d3e03;}());typeof _0x2b8a67==='object'&&_0x2b8a67[_0xbf834d(0x426)]&&(_0x2b8a67['exports']=_0x3a0173);},function(_0x1dd986,_0x1bc1ae){'use strict';var _0x442e84=a9_0x50c4;Object[_0x442e84(0x289)](_0x1bc1ae,_0x442e84(0x2ad),{'value':!![]});function _0x173f26(_0xf8d29f,_0x13ee61){if(!(_0xf8d29f instanceof _0x13ee61))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}var _0x33ca6f=function _0x36b3c6(_0x3e7e63){var _0x559c99=_0x442e84,_0x2178b4=arguments[_0x559c99(0x19a)]<=0x1||arguments[0x1]===undefined?{}:arguments[0x1];_0x173f26(this,_0x36b3c6),this['quill']=_0x3e7e63,this['options']=_0x2178b4;};_0x33ca6f[_0x442e84(0x1c3)]={},_0x1bc1ae[_0x442e84(0x413)]=_0x33ca6f;},function(_0x1c662d,_0x57cadb,_0x3476b){'use strict';var _0x5984ab=a9_0x50c4;Object[_0x5984ab(0x289)](_0x57cadb,_0x5984ab(0x2ad),{'value':!![]}),_0x57cadb[_0x5984ab(0x413)]=_0x57cadb[_0x5984ab(0x2a5)]=undefined;var _0x2f7ffc=(function(){function _0x28ebb9(_0xc735ec,_0x5d6d8e){var _0x2b0eea=a9_0x50c4,_0x47a1a6=[],_0xcd2480=!![],_0x2c0185=![],_0x3ed1b5=undefined;try{for(var _0x1b549b=_0xc735ec[Symbol['iterator']](),_0x11a748;!(_0xcd2480=(_0x11a748=_0x1b549b[_0x2b0eea(0x211)]())[_0x2b0eea(0x25a)]);_0xcd2480=!![]){_0x47a1a6['push'](_0x11a748[_0x2b0eea(0x2e4)]);if(_0x5d6d8e&&_0x47a1a6[_0x2b0eea(0x19a)]===_0x5d6d8e)break;}}catch(_0x23b5e1){_0x2c0185=!![],_0x3ed1b5=_0x23b5e1;}finally{try{if(!_0xcd2480&&_0x1b549b['return'])_0x1b549b[_0x2b0eea(0x222)]();}finally{if(_0x2c0185)throw _0x3ed1b5;}}return _0x47a1a6;}return function(_0x4c52ae,_0x48e556){var _0x3a51e2=a9_0x50c4;if(Array['isArray'](_0x4c52ae))return _0x4c52ae;else{if(Symbol[_0x3a51e2(0x2e8)]in Object(_0x4c52ae))return _0x28ebb9(_0x4c52ae,_0x48e556);else throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance');}};}()),_0x1e9df1=(function(){function _0x1f01df(_0x23c403,_0x2d0284){var _0x31b6f7=a9_0x50c4;for(var _0x41828e=0x0;_0x41828e<_0x2d0284[_0x31b6f7(0x19a)];_0x41828e++){var _0xbd1b4=_0x2d0284[_0x41828e];_0xbd1b4[_0x31b6f7(0x1eb)]=_0xbd1b4['enumerable']||![],_0xbd1b4[_0x31b6f7(0x203)]=!![];if(_0x31b6f7(0x2e4)in _0xbd1b4)_0xbd1b4[_0x31b6f7(0x40f)]=!![];Object[_0x31b6f7(0x289)](_0x23c403,_0xbd1b4[_0x31b6f7(0x3ea)],_0xbd1b4);}}return function(_0x2432d5,_0xb6a25a,_0x43b633){var _0x48da08=a9_0x50c4;if(_0xb6a25a)_0x1f01df(_0x2432d5[_0x48da08(0x44f)],_0xb6a25a);if(_0x43b633)_0x1f01df(_0x2432d5,_0x43b633);return _0x2432d5;};}()),_0x45da37=_0x3476b(0x2),_0x4c3123=_0x2694cf(_0x45da37),_0x26b839=_0x3476b(0x26),_0x11a248=_0x2694cf(_0x26b839),_0x1ec6b0=_0x3476b(0x16),_0xeec21b=_0x2694cf(_0x1ec6b0),_0x315f8a=_0x3476b(0x21),_0x4d14cd=_0x2694cf(_0x315f8a),_0x276b63=_0x3476b(0x1c),_0x15db7e=_0x2694cf(_0x276b63),_0x555e88=_0x3476b(0x1e),_0x586ae3=_0x2694cf(_0x555e88);function _0x2694cf(_0x16ce0e){var _0x3f9a11=_0x5984ab;return _0x16ce0e&&_0x16ce0e[_0x3f9a11(0x2ad)]?_0x16ce0e:{'default':_0x16ce0e};}function _0x7e44a0(_0x10d28f){var _0x3d4aee=_0x5984ab;if(Array[_0x3d4aee(0x3f3)](_0x10d28f)){for(var _0x235e66=0x0,_0x57b4ec=Array(_0x10d28f[_0x3d4aee(0x19a)]);_0x235e66<_0x10d28f[_0x3d4aee(0x19a)];_0x235e66++){_0x57b4ec[_0x235e66]=_0x10d28f[_0x235e66];}return _0x57b4ec;}else return Array[_0x3d4aee(0x220)](_0x10d28f);}function _0x48e5c6(_0x1f69af,_0x4233d1){var _0x34413b=_0x5984ab;if(!(_0x1f69af instanceof _0x4233d1))throw new TypeError(_0x34413b(0x2eb));}var _0x5a3387=(0x0,_0x586ae3[_0x5984ab(0x413)])(_0x5984ab(0x2ea)),_0x43c754=function _0x291557(_0x444d3a){var _0x35ec68=_0x5984ab,_0x1d644a=arguments[_0x35ec68(0x19a)]<=0x1||arguments[0x1]===undefined?0x0:arguments[0x1];_0x48e5c6(this,_0x291557),this[_0x35ec68(0x320)]=_0x444d3a,this[_0x35ec68(0x19a)]=_0x1d644a;},_0x14e2bb=(function(){var _0x40478e=_0x5984ab;function _0x2f4653(_0x531473,_0x1835df){var _0x30cee6=a9_0x50c4,_0x14ba8c=this;_0x48e5c6(this,_0x2f4653),this['emitter']=_0x1835df,this[_0x30cee6(0x36a)]=_0x531473,this[_0x30cee6(0x2cc)]=![],this[_0x30cee6(0x32c)]=this[_0x30cee6(0x36a)][_0x30cee6(0x3ad)],this[_0x30cee6(0x32c)][_0x30cee6(0x44c)]('compositionstart',function(){var _0x47649c=_0x30cee6;_0x14ba8c[_0x47649c(0x2cc)]=!![];}),this[_0x30cee6(0x32c)][_0x30cee6(0x44c)](_0x30cee6(0x1e4),function(){var _0x370eee=_0x30cee6;_0x14ba8c[_0x370eee(0x2cc)]=![];}),this[_0x30cee6(0x34b)]=_0x4c3123[_0x30cee6(0x413)]['create'](_0x30cee6(0x34b),this),this[_0x30cee6(0x436)]=this[_0x30cee6(0x2dc)]=new _0x43c754(0x0,0x0),[_0x30cee6(0x41a),_0x30cee6(0x1aa),_0x30cee6(0x37f),_0x30cee6(0x417),_0x30cee6(0x1fb),_0x30cee6(0x26d),_0x30cee6(0x313)]['forEach'](function(_0x591e01){var _0x4c7922=_0x30cee6;_0x14ba8c['root'][_0x4c7922(0x44c)](_0x591e01,function(){var _0x4307d2=_0x4c7922;setTimeout(_0x14ba8c[_0x4307d2(0x22f)]['bind'](_0x14ba8c,_0x15db7e['default'][_0x4307d2(0x270)][_0x4307d2(0x439)]),0x64);});}),this['emitter']['on'](_0x15db7e[_0x30cee6(0x413)][_0x30cee6(0x42e)][_0x30cee6(0x411)],function(_0x650dea,_0x382594){var _0x385242=_0x30cee6;_0x650dea===_0x15db7e[_0x385242(0x413)][_0x385242(0x42e)]['TEXT_CHANGE']&&_0x382594[_0x385242(0x19a)]()>0x0&&_0x14ba8c[_0x385242(0x22f)](_0x15db7e[_0x385242(0x413)][_0x385242(0x270)]['SILENT']);}),this['emitter']['on'](_0x15db7e[_0x30cee6(0x413)]['events'][_0x30cee6(0x36c)],function(){var _0x36063d=_0x30cee6,_0x46d982=_0x14ba8c[_0x36063d(0x297)]();if(_0x46d982==null)return;if(_0x46d982[_0x36063d(0x28b)][_0x36063d(0x1c5)]===_0x14ba8c[_0x36063d(0x34b)]['textNode'])return;_0x14ba8c['emitter'][_0x36063d(0x3fa)](_0x15db7e[_0x36063d(0x413)][_0x36063d(0x42e)]['SCROLL_UPDATE'],function(){var _0x1dce4b=_0x36063d;try{_0x14ba8c[_0x1dce4b(0x457)](_0x46d982[_0x1dce4b(0x28b)][_0x1dce4b(0x1c5)],_0x46d982[_0x1dce4b(0x28b)][_0x1dce4b(0x438)],_0x46d982['end'][_0x1dce4b(0x1c5)],_0x46d982[_0x1dce4b(0x2f2)]['offset']);}catch(_0x44528a){}});}),this['update'](_0x15db7e[_0x30cee6(0x413)][_0x30cee6(0x270)][_0x30cee6(0x344)]);}return _0x1e9df1(_0x2f4653,[{'key':_0x40478e(0x26d),'value':function _0x3673d7(){var _0x1af1a2=_0x40478e;if(this['hasFocus']())return;var _0x44bbb9=document[_0x1af1a2(0x2a2)][_0x1af1a2(0x240)];this[_0x1af1a2(0x32c)]['focus'](),document['body'][_0x1af1a2(0x240)]=_0x44bbb9,this['setRange'](this[_0x1af1a2(0x2dc)]);}},{'key':_0x40478e(0x1d9),'value':function _0xc54ec1(_0x47721d,_0x100408){var _0x40da89=_0x40478e;this[_0x40da89(0x36a)][_0x40da89(0x22f)]();var _0x5a0c30=this[_0x40da89(0x297)]();if(_0x5a0c30==null||!_0x5a0c30[_0x40da89(0x21f)][_0x40da89(0x37e)]||_0x4c3123['default'][_0x40da89(0x409)](_0x47721d,_0x4c3123[_0x40da89(0x413)][_0x40da89(0x293)][_0x40da89(0x30e)]))return;if(_0x5a0c30[_0x40da89(0x28b)][_0x40da89(0x1c5)]!==this[_0x40da89(0x34b)][_0x40da89(0x28a)]){var _0x1db9db=_0x4c3123[_0x40da89(0x413)][_0x40da89(0x303)](_0x5a0c30[_0x40da89(0x28b)][_0x40da89(0x1c5)],![]);if(_0x1db9db==null)return;if(_0x1db9db instanceof _0x4c3123[_0x40da89(0x413)]['Leaf']){var _0x405f26=_0x1db9db[_0x40da89(0x428)](_0x5a0c30['start'][_0x40da89(0x438)]);_0x1db9db['parent'][_0x40da89(0x3fc)](this['cursor'],_0x405f26);}else _0x1db9db[_0x40da89(0x3fc)](this[_0x40da89(0x34b)],_0x5a0c30[_0x40da89(0x28b)][_0x40da89(0x1c5)]);this['cursor'][_0x40da89(0x1cf)]();}this[_0x40da89(0x34b)][_0x40da89(0x1d9)](_0x47721d,_0x100408),this[_0x40da89(0x36a)][_0x40da89(0x23e)](),this[_0x40da89(0x457)](this[_0x40da89(0x34b)][_0x40da89(0x28a)],this['cursor'][_0x40da89(0x28a)][_0x40da89(0x27f)]['length']),this[_0x40da89(0x22f)]();}},{'key':_0x40478e(0x401),'value':function _0x429353(_0x4e5191){var _0x2e92dd=_0x40478e,_0x1f5712=arguments[_0x2e92dd(0x19a)]<=0x1||arguments[0x1]===undefined?0x0:arguments[0x1],_0x23c8e6=this[_0x2e92dd(0x36a)]['length']();_0x4e5191=Math[_0x2e92dd(0x384)](_0x4e5191,_0x23c8e6-0x1),_0x1f5712=Math[_0x2e92dd(0x384)](_0x4e5191+_0x1f5712,_0x23c8e6-0x1)-_0x4e5191;var _0x10723e=void 0x0,_0x444176=void 0x0,_0x4ef390=this[_0x2e92dd(0x36a)][_0x2e92dd(0x21e)](_0x4e5191),_0x44a1ee=_0x2f7ffc(_0x4ef390,0x2),_0x4bb50b=_0x44a1ee[0x0],_0xdcade9=_0x44a1ee[0x1];if(_0x4bb50b==null)return null;var _0x8eb66b=_0x4bb50b[_0x2e92dd(0x24b)](_0xdcade9,!![]),_0x4d2519=_0x2f7ffc(_0x8eb66b,0x2);_0x444176=_0x4d2519[0x0],_0xdcade9=_0x4d2519[0x1];var _0x17ab18=document[_0x2e92dd(0x3d8)]();if(_0x1f5712>0x0){_0x17ab18[_0x2e92dd(0x260)](_0x444176,_0xdcade9);var _0x1f8101=this[_0x2e92dd(0x36a)][_0x2e92dd(0x21e)](_0x4e5191+_0x1f5712),_0x354904=_0x2f7ffc(_0x1f8101,0x2);_0x4bb50b=_0x354904[0x0],_0xdcade9=_0x354904[0x1];if(_0x4bb50b==null)return null;var _0x317fbe=_0x4bb50b['position'](_0xdcade9,!![]),_0x1446b8=_0x2f7ffc(_0x317fbe,0x2);_0x444176=_0x1446b8[0x0],_0xdcade9=_0x1446b8[0x1],_0x17ab18[_0x2e92dd(0x189)](_0x444176,_0xdcade9),_0x10723e=_0x17ab18[_0x2e92dd(0x185)]();}else{var _0x1d9f26=_0x2e92dd(0x22a);if(_0x444176 instanceof Text){_0xdcade9<_0x444176['data'][_0x2e92dd(0x19a)]?(_0x17ab18[_0x2e92dd(0x260)](_0x444176,_0xdcade9),_0x17ab18[_0x2e92dd(0x189)](_0x444176,_0xdcade9+0x1)):(_0x17ab18['setStart'](_0x444176,_0xdcade9-0x1),_0x17ab18[_0x2e92dd(0x189)](_0x444176,_0xdcade9),_0x1d9f26='right');var _0x54af6e=_0x17ab18[_0x2e92dd(0x185)]();}else{var _0x54af6e=_0x4bb50b[_0x2e92dd(0x3ad)]['getBoundingClientRect']();if(_0xdcade9>0x0)_0x1d9f26=_0x2e92dd(0x3f6);}_0x10723e={'height':_0x54af6e['height'],'left':_0x54af6e[_0x1d9f26],'width':0x0,'top':_0x54af6e[_0x2e92dd(0x1ef)]};}var _0x56929d=this[_0x2e92dd(0x32c)][_0x2e92dd(0x37d)][_0x2e92dd(0x185)]();return{'left':_0x10723e[_0x2e92dd(0x22a)]-_0x56929d[_0x2e92dd(0x22a)],'right':_0x10723e['left']+_0x10723e[_0x2e92dd(0x22c)]-_0x56929d[_0x2e92dd(0x22a)],'top':_0x10723e['top']-_0x56929d[_0x2e92dd(0x1ef)],'bottom':_0x10723e['top']+_0x10723e[_0x2e92dd(0x42a)]-_0x56929d['top'],'height':_0x10723e[_0x2e92dd(0x42a)],'width':_0x10723e[_0x2e92dd(0x22c)]};}},{'key':_0x40478e(0x297),'value':function _0x31fd41(){var _0x2d12d0=_0x40478e,_0xbc67bb=document['getSelection']();if(_0xbc67bb==null||_0xbc67bb[_0x2d12d0(0x415)]<=0x0)return null;var _0x17e11b=_0xbc67bb['getRangeAt'](0x0);if(_0x17e11b==null)return null;if(!_0x162b06(this[_0x2d12d0(0x32c)],_0x17e11b[_0x2d12d0(0x3fe)])||!_0x17e11b[_0x2d12d0(0x37e)]&&!_0x162b06(this[_0x2d12d0(0x32c)],_0x17e11b['endContainer']))return null;var _0x3d802f={'start':{'node':_0x17e11b[_0x2d12d0(0x3fe)],'offset':_0x17e11b[_0x2d12d0(0x206)]},'end':{'node':_0x17e11b['endContainer'],'offset':_0x17e11b[_0x2d12d0(0x3a0)]},'native':_0x17e11b};return[_0x3d802f['start'],_0x3d802f[_0x2d12d0(0x2f2)]][_0x2d12d0(0x3e4)](function(_0x34a517){var _0x3199c9=_0x2d12d0,_0x257ac7=_0x34a517[_0x3199c9(0x1c5)],_0xdd3ce1=_0x34a517[_0x3199c9(0x438)];while(!(_0x257ac7 instanceof Text)&&_0x257ac7[_0x3199c9(0x449)][_0x3199c9(0x19a)]>0x0){if(_0x257ac7[_0x3199c9(0x449)]['length']>_0xdd3ce1)_0x257ac7=_0x257ac7[_0x3199c9(0x449)][_0xdd3ce1],_0xdd3ce1=0x0;else{if(_0x257ac7['childNodes'][_0x3199c9(0x19a)]===_0xdd3ce1)_0x257ac7=_0x257ac7[_0x3199c9(0x1bb)],_0xdd3ce1=_0x257ac7 instanceof Text?_0x257ac7['data'][_0x3199c9(0x19a)]:_0x257ac7[_0x3199c9(0x449)]['length']+0x1;else break;}}_0x34a517[_0x3199c9(0x1c5)]=_0x257ac7,_0x34a517['offset']=_0xdd3ce1;}),_0x5a3387[_0x2d12d0(0x32a)](_0x2d12d0(0x297),_0x3d802f),_0x3d802f;}},{'key':'getRange','value':function _0x34e774(){var _0x9dab74=_0x40478e,_0x4fbf4d=this;if(!this[_0x9dab74(0x226)]())return[null,null];var _0x5e9a2c=this[_0x9dab74(0x297)]();if(_0x5e9a2c==null)return[null,null];var _0xf894d9=[[_0x5e9a2c[_0x9dab74(0x28b)]['node'],_0x5e9a2c[_0x9dab74(0x28b)][_0x9dab74(0x438)]]];!_0x5e9a2c[_0x9dab74(0x21f)][_0x9dab74(0x37e)]&&_0xf894d9[_0x9dab74(0x1bf)]([_0x5e9a2c[_0x9dab74(0x2f2)]['node'],_0x5e9a2c[_0x9dab74(0x2f2)][_0x9dab74(0x438)]]);var _0x5378a1=_0xf894d9['map'](function(_0x1f1819){var _0x2df3bd=_0x9dab74,_0x468043=_0x2f7ffc(_0x1f1819,0x2),_0x135950=_0x468043[0x0],_0x15183f=_0x468043[0x1],_0x2b9b61=_0x4c3123[_0x2df3bd(0x413)]['find'](_0x135950,!![]),_0x4e9f1b=_0x2b9b61['offset'](_0x4fbf4d[_0x2df3bd(0x36a)]);if(_0x15183f===0x0)return _0x4e9f1b;else return _0x2b9b61 instanceof _0x4c3123['default'][_0x2df3bd(0x26c)]?_0x4e9f1b+_0x2b9b61['length']():_0x4e9f1b+_0x2b9b61[_0x2df3bd(0x320)](_0x135950,_0x15183f);}),_0x48e3de=Math[_0x9dab74(0x384)][_0x9dab74(0x39e)](Math,_0x7e44a0(_0x5378a1)),_0x31fe99=Math['max']['apply'](Math,_0x7e44a0(_0x5378a1));return[new _0x43c754(_0x48e3de,_0x31fe99-_0x48e3de),_0x5e9a2c];}},{'key':_0x40478e(0x226),'value':function _0xccfcb0(){var _0x145027=_0x40478e;return document['activeElement']===this[_0x145027(0x32c)];}},{'key':'scrollIntoView','value':function _0x4bf7f5(){var _0x376119=_0x40478e,_0x3e075f=arguments[_0x376119(0x19a)]<=0x0||arguments[0x0]===undefined?this[_0x376119(0x436)]:arguments[0x0];if(_0x3e075f==null)return;var _0x227f6b=this[_0x376119(0x401)](_0x3e075f[_0x376119(0x320)],_0x3e075f[_0x376119(0x19a)]);if(_0x227f6b==null)return;if(this[_0x376119(0x32c)][_0x376119(0x2a9)]<_0x227f6b[_0x376119(0x3c5)]){var _0x2f1f45=this[_0x376119(0x36a)][_0x376119(0x17c)](Math[_0x376119(0x384)](_0x3e075f['index']+_0x3e075f[_0x376119(0x19a)],this[_0x376119(0x36a)]['length']()-0x1)),_0x129727=_0x2f7ffc(_0x2f1f45,0x1),_0xabe8ed=_0x129727[0x0];this['root'][_0x376119(0x240)]=_0xabe8ed[_0x376119(0x3ad)]['offsetTop']+_0xabe8ed[_0x376119(0x3ad)][_0x376119(0x2a9)]-this[_0x376119(0x32c)][_0x376119(0x2a9)];}else{if(_0x227f6b['top']<0x0){var _0x132456=this[_0x376119(0x36a)]['line'](Math[_0x376119(0x384)](_0x3e075f['index'],this[_0x376119(0x36a)][_0x376119(0x19a)]()-0x1)),_0x5e973c=_0x2f7ffc(_0x132456,0x1),_0x2d9516=_0x5e973c[0x0];this[_0x376119(0x32c)]['scrollTop']=_0x2d9516[_0x376119(0x3ad)][_0x376119(0x334)];}}}},{'key':_0x40478e(0x457),'value':function _0x12e338(_0x113532,_0x186393){var _0x1533ee=_0x40478e,_0x34870b=arguments[_0x1533ee(0x19a)]<=0x2||arguments[0x2]===undefined?_0x113532:arguments[0x2],_0x1ade31=arguments['length']<=0x3||arguments[0x3]===undefined?_0x186393:arguments[0x3],_0x1862bd=arguments[_0x1533ee(0x19a)]<=0x4||arguments[0x4]===undefined?![]:arguments[0x4];_0x5a3387[_0x1533ee(0x32a)]('setNativeRange',_0x113532,_0x186393,_0x34870b,_0x1ade31);if(_0x113532!=null&&(this[_0x1533ee(0x32c)][_0x1533ee(0x37d)]==null||_0x113532[_0x1533ee(0x37d)]==null||_0x34870b[_0x1533ee(0x37d)]==null))return;var _0xa516c8=document[_0x1533ee(0x407)]();if(_0xa516c8==null)return;if(_0x113532!=null){if(!this['hasFocus']())this['root']['focus']();var _0x1ea49e=this[_0x1533ee(0x297)]();if(_0x1ea49e==null||_0x1862bd||_0x113532!==_0x1ea49e[_0x1533ee(0x28b)][_0x1533ee(0x1c5)]||_0x186393!==_0x1ea49e[_0x1533ee(0x28b)][_0x1533ee(0x438)]||_0x34870b!==_0x1ea49e[_0x1533ee(0x2f2)][_0x1533ee(0x1c5)]||_0x1ade31!==_0x1ea49e[_0x1533ee(0x2f2)]['offset']){var _0x405c3b=document[_0x1533ee(0x3d8)]();_0x405c3b[_0x1533ee(0x260)](_0x113532,_0x186393),_0x405c3b[_0x1533ee(0x189)](_0x34870b,_0x1ade31),_0xa516c8[_0x1533ee(0x34a)](),_0xa516c8[_0x1533ee(0x2c4)](_0x405c3b);}}else _0xa516c8[_0x1533ee(0x34a)](),this[_0x1533ee(0x32c)][_0x1533ee(0x313)](),document[_0x1533ee(0x2a2)][_0x1533ee(0x26d)]();}},{'key':'setRange','value':function _0x25ecb6(_0x424f52){var _0x9c4425=_0x40478e,_0x1b688b=this,_0x597c1c=arguments['length']<=0x1||arguments[0x1]===undefined?![]:arguments[0x1],_0x44b994=arguments['length']<=0x2||arguments[0x2]===undefined?_0x15db7e[_0x9c4425(0x413)][_0x9c4425(0x270)][_0x9c4425(0x31c)]:arguments[0x2];typeof _0x597c1c===_0x9c4425(0x187)&&(_0x44b994=_0x597c1c,_0x597c1c=![]),_0x5a3387['info']('setRange',_0x424f52),_0x424f52!=null?(function(){var _0x2f1e35=_0x9c4425,_0x3ff124=_0x424f52[_0x2f1e35(0x37e)]?[_0x424f52['index']]:[_0x424f52[_0x2f1e35(0x320)],_0x424f52['index']+_0x424f52[_0x2f1e35(0x19a)]],_0x4fcc52=[],_0x304e0b=_0x1b688b[_0x2f1e35(0x36a)][_0x2f1e35(0x19a)]();_0x3ff124[_0x2f1e35(0x3e4)](function(_0x1f4002,_0x404f9f){var _0x4d1107=_0x2f1e35;_0x1f4002=Math[_0x4d1107(0x384)](_0x304e0b-0x1,_0x1f4002);var _0x58cdeb=void 0x0,_0x166f1f=_0x1b688b[_0x4d1107(0x36a)][_0x4d1107(0x21e)](_0x1f4002),_0xb5537d=_0x2f7ffc(_0x166f1f,0x2),_0xded070=_0xb5537d[0x0],_0x10d373=_0xb5537d[0x1],_0x12a0c8=_0xded070[_0x4d1107(0x24b)](_0x10d373,_0x404f9f!==0x0),_0x1c29b7=_0x2f7ffc(_0x12a0c8,0x2);_0x58cdeb=_0x1c29b7[0x0],_0x10d373=_0x1c29b7[0x1],_0x4fcc52[_0x4d1107(0x1bf)](_0x58cdeb,_0x10d373);}),_0x4fcc52['length']<0x2&&(_0x4fcc52=_0x4fcc52[_0x2f1e35(0x1f8)](_0x4fcc52)),_0x1b688b[_0x2f1e35(0x457)]['apply'](_0x1b688b,_0x7e44a0(_0x4fcc52)['concat']([_0x597c1c]));}()):this['setNativeRange'](null),this[_0x9c4425(0x22f)](_0x44b994);}},{'key':_0x40478e(0x22f),'value':function _0x36d5fd(){var _0x3b83ae=_0x40478e,_0x499fc4=arguments['length']<=0x0||arguments[0x0]===undefined?_0x15db7e[_0x3b83ae(0x413)][_0x3b83ae(0x270)][_0x3b83ae(0x439)]:arguments[0x0],_0x427917=void 0x0,_0x850ede=this['lastRange'],_0x1d7998=this[_0x3b83ae(0x1f2)](),_0x3149be=_0x2f7ffc(_0x1d7998,0x2);this[_0x3b83ae(0x436)]=_0x3149be[0x0],_0x427917=_0x3149be[0x1];this[_0x3b83ae(0x436)]!=null&&(this[_0x3b83ae(0x2dc)]=this[_0x3b83ae(0x436)]);if(!(0x0,_0xeec21b[_0x3b83ae(0x413)])(_0x850ede,this[_0x3b83ae(0x436)])){var _0x5b4b49;!this['composing']&&_0x427917!=null&&_0x427917[_0x3b83ae(0x21f)]['collapsed']&&_0x427917['start'][_0x3b83ae(0x1c5)]!==this[_0x3b83ae(0x34b)][_0x3b83ae(0x28a)]&&this[_0x3b83ae(0x34b)][_0x3b83ae(0x348)]();var _0x3e6939=[_0x15db7e[_0x3b83ae(0x413)][_0x3b83ae(0x42e)]['SELECTION_CHANGE'],(0x0,_0x11a248['default'])(this[_0x3b83ae(0x436)]),(0x0,_0x11a248[_0x3b83ae(0x413)])(_0x850ede),_0x499fc4];(_0x5b4b49=this[_0x3b83ae(0x440)])[_0x3b83ae(0x2c8)]['apply'](_0x5b4b49,[_0x15db7e[_0x3b83ae(0x413)]['events'][_0x3b83ae(0x411)]][_0x3b83ae(0x1f8)](_0x3e6939));if(_0x499fc4!==_0x15db7e['default'][_0x3b83ae(0x270)]['SILENT']){var _0xe59ae0;(_0xe59ae0=this['emitter'])[_0x3b83ae(0x2c8)][_0x3b83ae(0x39e)](_0xe59ae0,_0x3e6939);}}}}]),_0x2f4653;}());function _0x162b06(_0x1476ff,_0x56275c){var _0x401563=_0x5984ab;try{_0x56275c[_0x401563(0x37d)];}catch(_0x10e9ec){return![];}return _0x56275c instanceof Text&&(_0x56275c=_0x56275c['parentNode']),_0x1476ff['contains'](_0x56275c);}_0x57cadb[_0x5984ab(0x2a5)]=_0x43c754,_0x57cadb[_0x5984ab(0x413)]=_0x14e2bb;},function(_0x2857c8,_0x2c9adc,_0x1690b4){'use strict';var _0x3053c9=a9_0x50c4;Object[_0x3053c9(0x289)](_0x2c9adc,_0x3053c9(0x2ad),{'value':!![]});var _0x4b43af=(function(){function _0x2e2a0f(_0x11d144,_0xb0e0e5){var _0x43f46f=a9_0x50c4;for(var _0x542ba5=0x0;_0x542ba5<_0xb0e0e5[_0x43f46f(0x19a)];_0x542ba5++){var _0x273b1b=_0xb0e0e5[_0x542ba5];_0x273b1b[_0x43f46f(0x1eb)]=_0x273b1b[_0x43f46f(0x1eb)]||![],_0x273b1b[_0x43f46f(0x203)]=!![];if(_0x43f46f(0x2e4)in _0x273b1b)_0x273b1b[_0x43f46f(0x40f)]=!![];Object[_0x43f46f(0x289)](_0x11d144,_0x273b1b[_0x43f46f(0x3ea)],_0x273b1b);}}return function(_0xe5fd66,_0x415256,_0x7173e3){if(_0x415256)_0x2e2a0f(_0xe5fd66['prototype'],_0x415256);if(_0x7173e3)_0x2e2a0f(_0xe5fd66,_0x7173e3);return _0xe5fd66;};}()),_0x165b92=_0x1690b4(0x19),_0x14b700=_0x4a41b4(_0x165b92),_0x3d24a0=_0x1690b4(0x1c),_0x37d52f=_0x4a41b4(_0x3d24a0);function _0x4a41b4(_0x4cda03){var _0x48f3b0=_0x3053c9;return _0x4cda03&&_0x4cda03[_0x48f3b0(0x2ad)]?_0x4cda03:{'default':_0x4cda03};}function _0x4c0c55(_0x511767,_0x5d9e55){var _0x2cf0c7=_0x3053c9;if(!(_0x511767 instanceof _0x5d9e55))throw new TypeError(_0x2cf0c7(0x2eb));}var _0x490efb=(function(){var _0x5ea838=_0x3053c9;function _0x3afe17(_0x560c72,_0x44e835){var _0x54bed0=a9_0x50c4;_0x4c0c55(this,_0x3afe17),this['quill']=_0x560c72,this[_0x54bed0(0x3d1)]=_0x44e835,this[_0x54bed0(0x383)]={};}return _0x4b43af(_0x3afe17,[{'key':_0x5ea838(0x345),'value':function _0xa3f5f0(){var _0x432fe1=_0x5ea838,_0x14a41b=this;Object['keys'](this['options']['modules'])[_0x432fe1(0x3e4)](function(_0x3d82f9){var _0xebbc17=_0x432fe1;_0x14a41b[_0xebbc17(0x383)][_0x3d82f9]==null&&_0x14a41b[_0xebbc17(0x3cc)](_0x3d82f9);});}},{'key':'addModule','value':function _0x33f960(_0x18bd63){var _0x16a571=_0x5ea838,_0x5dfa01=this['quill'][_0x16a571(0x2c6)][_0x16a571(0x308)](_0x16a571(0x29d)+_0x18bd63);return this[_0x16a571(0x383)][_0x18bd63]=new _0x5dfa01(this[_0x16a571(0x41b)],this[_0x16a571(0x3d1)][_0x16a571(0x383)][_0x18bd63]||{}),this[_0x16a571(0x383)][_0x18bd63];}}]),_0x3afe17;}());_0x490efb['DEFAULTS']={'modules':{}},_0x490efb[_0x3053c9(0x353)]={'default':_0x490efb},_0x2c9adc['default']=_0x490efb;},function(_0x4e685b,_0x5d4e67,_0x3cb08c){'use strict';var _0x414dd7=a9_0x50c4;Object[_0x414dd7(0x289)](_0x5d4e67,_0x414dd7(0x2ad),{'value':!![]});var _0x3d33be=_0x3cb08c(0x2),_0x1091ac=_0x1d10fc(_0x3d33be),_0x376571=_0x3cb08c(0x20),_0x367e06=_0x1d10fc(_0x376571);function _0x1d10fc(_0xde7276){var _0x477c77=_0x414dd7;return _0xde7276&&_0xde7276[_0x477c77(0x2ad)]?_0xde7276:{'default':_0xde7276};}function _0x3b1ef4(_0x2521b0,_0x37a02e){var _0x1027da=_0x414dd7;if(!(_0x2521b0 instanceof _0x37a02e))throw new TypeError(_0x1027da(0x2eb));}function _0x27e625(_0x174208,_0x25ca8b){var _0x45cbe1=_0x414dd7;if(!_0x174208)throw new ReferenceError('this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called');return _0x25ca8b&&(typeof _0x25ca8b===_0x45cbe1(0x2e1)||typeof _0x25ca8b===_0x45cbe1(0x33b))?_0x25ca8b:_0x174208;}function _0x19b735(_0x40ae13,_0x5a24f2){var _0x567f47=_0x414dd7;if(typeof _0x5a24f2!==_0x567f47(0x33b)&&_0x5a24f2!==null)throw new TypeError(_0x567f47(0x448)+typeof _0x5a24f2);_0x40ae13[_0x567f47(0x44f)]=Object[_0x567f47(0x372)](_0x5a24f2&&_0x5a24f2[_0x567f47(0x44f)],{'constructor':{'value':_0x40ae13,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x5a24f2)Object['setPrototypeOf']?Object[_0x567f47(0x1ea)](_0x40ae13,_0x5a24f2):_0x40ae13[_0x567f47(0x1b4)]=_0x5a24f2;}var _0x58c437=function(_0x2dc931){_0x19b735(_0xb7a424,_0x2dc931);function _0xb7a424(){var _0x5f4029=a9_0x50c4;return _0x3b1ef4(this,_0xb7a424),_0x27e625(this,(_0xb7a424[_0x5f4029(0x1b4)]||Object[_0x5f4029(0x2e0)](_0xb7a424))['apply'](this,arguments));}return _0xb7a424;}(_0x1091ac[_0x414dd7(0x413)][_0x414dd7(0x26c)]);_0x58c437['allowedChildren']=[_0x367e06[_0x414dd7(0x413)],_0x376571[_0x414dd7(0x3db)],_0x58c437],_0x5d4e67['default']=_0x58c437;},function(_0x5cefd1,_0x4b472e,_0x66a6fd){'use strict';var _0x164e0b=a9_0x50c4;Object[_0x164e0b(0x289)](_0x4b472e,_0x164e0b(0x2ad),{'value':!![]});var _0x4d6d31=(function(){function _0xc7bb0c(_0x117edf,_0x6c9414){var _0x217acf=a9_0x50c4,_0x3ff8cd=[],_0x4b3856=!![],_0x388ee5=![],_0x142a79=undefined;try{for(var _0x34a544=_0x117edf[Symbol[_0x217acf(0x2e8)]](),_0x2df875;!(_0x4b3856=(_0x2df875=_0x34a544[_0x217acf(0x211)]())['done']);_0x4b3856=!![]){_0x3ff8cd[_0x217acf(0x1bf)](_0x2df875[_0x217acf(0x2e4)]);if(_0x6c9414&&_0x3ff8cd[_0x217acf(0x19a)]===_0x6c9414)break;}}catch(_0x54a26c){_0x388ee5=!![],_0x142a79=_0x54a26c;}finally{try{if(!_0x4b3856&&_0x34a544[_0x217acf(0x222)])_0x34a544[_0x217acf(0x222)]();}finally{if(_0x388ee5)throw _0x142a79;}}return _0x3ff8cd;}return function(_0x241888,_0x1e91b1){var _0x5e9cc8=a9_0x50c4;if(Array['isArray'](_0x241888))return _0x241888;else{if(Symbol['iterator']in Object(_0x241888))return _0xc7bb0c(_0x241888,_0x1e91b1);else throw new TypeError(_0x5e9cc8(0x183));}};}()),_0xd9ce28=(function(){function _0x15903b(_0x3a2a19,_0x5bffd1){var _0x5dd30d=a9_0x50c4;for(var _0x85f172=0x0;_0x85f172<_0x5bffd1[_0x5dd30d(0x19a)];_0x85f172++){var _0x3d8f46=_0x5bffd1[_0x85f172];_0x3d8f46[_0x5dd30d(0x1eb)]=_0x3d8f46[_0x5dd30d(0x1eb)]||![],_0x3d8f46[_0x5dd30d(0x203)]=!![];if(_0x5dd30d(0x2e4)in _0x3d8f46)_0x3d8f46['writable']=!![];Object[_0x5dd30d(0x289)](_0x3a2a19,_0x3d8f46['key'],_0x3d8f46);}}return function(_0x47ae01,_0x26694f,_0x2a0033){if(_0x26694f)_0x15903b(_0x47ae01['prototype'],_0x26694f);if(_0x2a0033)_0x15903b(_0x47ae01,_0x2a0033);return _0x47ae01;};}()),_0x565840=function _0x5a467a(_0x3f15b8,_0x160145,_0x2d242a){var _0x5548e3=_0x164e0b;if(_0x3f15b8===null)_0x3f15b8=Function[_0x5548e3(0x44f)];var _0x1ba33f=Object[_0x5548e3(0x1e0)](_0x3f15b8,_0x160145);if(_0x1ba33f===undefined){var _0x33c007=Object[_0x5548e3(0x2e0)](_0x3f15b8);return _0x33c007===null?undefined:_0x5a467a(_0x33c007,_0x160145,_0x2d242a);}else{if('value'in _0x1ba33f)return _0x1ba33f[_0x5548e3(0x2e4)];else{var _0x1a0228=_0x1ba33f[_0x5548e3(0x246)];if(_0x1a0228===undefined)return undefined;return _0x1a0228[_0x5548e3(0x1e2)](_0x2d242a);}}},_0x1e64ef=_0x66a6fd(0x2),_0x968d77=_0x36758e(_0x1e64ef),_0x52a430=_0x66a6fd(0x1c),_0x4d68ca=_0x36758e(_0x52a430),_0x3f39aa=_0x66a6fd(0x20),_0x538d0d=_0x36758e(_0x3f39aa),_0x1f4567=_0x66a6fd(0x21),_0x4a18c2=_0x36758e(_0x1f4567),_0x1b0e79=_0x66a6fd(0x2a),_0x45892b=_0x36758e(_0x1b0e79),_0x4abdde=_0x66a6fd(0x1f),_0x5bab0f=_0x36758e(_0x4abdde);function _0x36758e(_0x365fff){var _0x105864=_0x164e0b;return _0x365fff&&_0x365fff[_0x105864(0x2ad)]?_0x365fff:{'default':_0x365fff};}function _0xe83c13(_0x59f96b,_0xb154b8){var _0x496eb0=_0x164e0b;if(!(_0x59f96b instanceof _0xb154b8))throw new TypeError(_0x496eb0(0x2eb));}function _0x2bd030(_0x44caba,_0x5d5ae0){var _0x5ccdad=_0x164e0b;if(!_0x44caba)throw new ReferenceError(_0x5ccdad(0x434));return _0x5d5ae0&&(typeof _0x5d5ae0===_0x5ccdad(0x2e1)||typeof _0x5d5ae0===_0x5ccdad(0x33b))?_0x5d5ae0:_0x44caba;}function _0x7c26c1(_0x494b39,_0x265ce1){var _0x29a805=_0x164e0b;if(typeof _0x265ce1!=='function'&&_0x265ce1!==null)throw new TypeError(_0x29a805(0x448)+typeof _0x265ce1);_0x494b39[_0x29a805(0x44f)]=Object[_0x29a805(0x372)](_0x265ce1&&_0x265ce1[_0x29a805(0x44f)],{'constructor':{'value':_0x494b39,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x265ce1)Object['setPrototypeOf']?Object[_0x29a805(0x1ea)](_0x494b39,_0x265ce1):_0x494b39[_0x29a805(0x1b4)]=_0x265ce1;}function _0x413222(_0x3dbe8e){var _0x53b119=_0x164e0b;return _0x3dbe8e instanceof _0x538d0d[_0x53b119(0x413)]||_0x3dbe8e instanceof _0x3f39aa[_0x53b119(0x3db)];}var _0xb83eb2=function(_0x34f89f){var _0x3c9f53=_0x164e0b;_0x7c26c1(_0xa92c5a,_0x34f89f);function _0xa92c5a(_0x12c3d6,_0x3a915d){var _0x32c70a=a9_0x50c4;_0xe83c13(this,_0xa92c5a);var _0x401900=_0x2bd030(this,(_0xa92c5a[_0x32c70a(0x1b4)]||Object['getPrototypeOf'](_0xa92c5a))[_0x32c70a(0x1e2)](this,_0x12c3d6));return _0x401900['emitter']=_0x3a915d[_0x32c70a(0x440)],Array[_0x32c70a(0x3f3)](_0x3a915d[_0x32c70a(0x41f)])&&(_0x401900[_0x32c70a(0x41f)]=_0x3a915d['whitelist'][_0x32c70a(0x1c8)](function(_0xcf930f,_0x2d5176){return _0xcf930f[_0x2d5176]=!![],_0xcf930f;},{})),_0x401900['optimize'](),_0x401900;}return _0xd9ce28(_0xa92c5a,[{'key':_0x3c9f53(0x3c3),'value':function _0x12beaf(_0x3ea87a,_0x220771){var _0x4e3a63=_0x3c9f53,_0x4465f3=this['line'](_0x3ea87a),_0x3e93d5=_0x4d6d31(_0x4465f3,0x2),_0x248e6a=_0x3e93d5[0x0],_0x2c9809=_0x3e93d5[0x1],_0x4c7d93=this[_0x4e3a63(0x17c)](_0x3ea87a+_0x220771),_0x33f5b4=_0x4d6d31(_0x4c7d93,0x1),_0x4b61f6=_0x33f5b4[0x0];_0x565840(_0xa92c5a['prototype'][_0x4e3a63(0x1b4)]||Object[_0x4e3a63(0x2e0)](_0xa92c5a[_0x4e3a63(0x44f)]),_0x4e3a63(0x3c3),this)[_0x4e3a63(0x1e2)](this,_0x3ea87a,_0x220771);if(_0x4b61f6!=null&&_0x248e6a!==_0x4b61f6&&_0x2c9809>0x0&&!(_0x248e6a instanceof _0x3f39aa[_0x4e3a63(0x3db)])&&!(_0x4b61f6 instanceof _0x3f39aa[_0x4e3a63(0x3db)])){_0x4b61f6 instanceof _0x5bab0f[_0x4e3a63(0x413)]&&_0x4b61f6[_0x4e3a63(0x3c3)](_0x4b61f6['length']()-0x1,0x1);var _0x2e5f27=_0x4b61f6[_0x4e3a63(0x3b7)][_0x4e3a63(0x311)]instanceof _0x4a18c2[_0x4e3a63(0x413)]?null:_0x4b61f6['children'][_0x4e3a63(0x311)];_0x248e6a[_0x4e3a63(0x2a0)](_0x4b61f6,_0x2e5f27),_0x248e6a[_0x4e3a63(0x190)]();}this[_0x4e3a63(0x23e)]();}},{'key':'formatAt','value':function _0x247268(_0x3fe220,_0x28a22a,_0x2fe9a5,_0x318484){var _0x58bab9=_0x3c9f53;if(this[_0x58bab9(0x41f)]!=null&&!this[_0x58bab9(0x41f)][_0x2fe9a5])return;_0x565840(_0xa92c5a['prototype'][_0x58bab9(0x1b4)]||Object['getPrototypeOf'](_0xa92c5a[_0x58bab9(0x44f)]),'formatAt',this)[_0x58bab9(0x1e2)](this,_0x3fe220,_0x28a22a,_0x2fe9a5,_0x318484),this[_0x58bab9(0x23e)]();}},{'key':_0x3c9f53(0x307),'value':function _0x26bfb8(_0x1de105,_0x4804b7,_0x532b3c){var _0x596b9b=_0x3c9f53;if(_0x532b3c!=null&&this[_0x596b9b(0x41f)]!=null&&!this[_0x596b9b(0x41f)][_0x4804b7])return;if(_0x1de105>=this['length']()){if(_0x532b3c==null||_0x968d77[_0x596b9b(0x413)]['query'](_0x4804b7,_0x968d77[_0x596b9b(0x413)]['Scope'][_0x596b9b(0x30e)])==null){var _0x290037=_0x968d77[_0x596b9b(0x413)][_0x596b9b(0x372)](this['statics']['defaultChild']);this[_0x596b9b(0x27e)](_0x290037),_0x532b3c==null&&_0x4804b7['endsWith']('\x0a')&&(_0x4804b7=_0x4804b7[_0x596b9b(0x441)](0x0,-0x1)),_0x290037[_0x596b9b(0x307)](0x0,_0x4804b7,_0x532b3c);}else{var _0x32295b=_0x968d77[_0x596b9b(0x413)][_0x596b9b(0x372)](_0x4804b7,_0x532b3c);this[_0x596b9b(0x27e)](_0x32295b);}}else _0x565840(_0xa92c5a[_0x596b9b(0x44f)][_0x596b9b(0x1b4)]||Object['getPrototypeOf'](_0xa92c5a[_0x596b9b(0x44f)]),_0x596b9b(0x307),this)[_0x596b9b(0x1e2)](this,_0x1de105,_0x4804b7,_0x532b3c);this[_0x596b9b(0x23e)]();}},{'key':'insertBefore','value':function _0x39d4d1(_0x466499,_0x475646){var _0x1a0d5b=_0x3c9f53;if(_0x466499[_0x1a0d5b(0x3a6)][_0x1a0d5b(0x368)]===_0x968d77[_0x1a0d5b(0x413)]['Scope']['INLINE_BLOT']){var _0x4b4431=_0x968d77[_0x1a0d5b(0x413)][_0x1a0d5b(0x372)](this[_0x1a0d5b(0x3a6)][_0x1a0d5b(0x1fa)]);_0x4b4431[_0x1a0d5b(0x27e)](_0x466499),_0x466499=_0x4b4431;}_0x565840(_0xa92c5a[_0x1a0d5b(0x44f)]['__proto__']||Object['getPrototypeOf'](_0xa92c5a[_0x1a0d5b(0x44f)]),_0x1a0d5b(0x3fc),this)[_0x1a0d5b(0x1e2)](this,_0x466499,_0x475646);}},{'key':_0x3c9f53(0x21e),'value':function _0x23f6fa(_0x4e5ea3){var _0x1b4b1b=_0x3c9f53;return this[_0x1b4b1b(0x1d2)](_0x4e5ea3)['pop']()||[null,-0x1];}},{'key':_0x3c9f53(0x17c),'value':function _0x10ea3d(_0x132065){var _0x7b6cd9=_0x3c9f53;return this[_0x7b6cd9(0x3a9)](_0x413222,_0x132065);}},{'key':_0x3c9f53(0x33a),'value':function _0x5e0098(){var _0x52ed13=_0x3c9f53,_0x248f69=arguments[_0x52ed13(0x19a)]<=0x0||arguments[0x0]===undefined?0x0:arguments[0x0],_0x1edda8=arguments[_0x52ed13(0x19a)]<=0x1||arguments[0x1]===undefined?Number[_0x52ed13(0x2ef)]:arguments[0x1],_0x120a7e=function _0x5c941e(_0x1de7ee,_0xc8f60d,_0x3627ca){var _0x3ea267=_0x52ed13,_0x11ae44=[],_0x19172f=_0x3627ca;return _0x1de7ee[_0x3ea267(0x3b7)][_0x3ea267(0x1bd)](_0xc8f60d,_0x3627ca,function(_0xe07c6f,_0x443fcb,_0x5afd84){var _0x531266=_0x3ea267;if(_0x413222(_0xe07c6f))_0x11ae44['push'](_0xe07c6f);else _0xe07c6f instanceof _0x968d77[_0x531266(0x413)][_0x531266(0x26c)]&&(_0x11ae44=_0x11ae44[_0x531266(0x1f8)](_0x5c941e(_0xe07c6f,_0x443fcb,_0x19172f)));_0x19172f-=_0x5afd84;}),_0x11ae44;};return _0x120a7e(this,_0x248f69,_0x1edda8);}},{'key':_0x3c9f53(0x23e),'value':function _0x197fbd(){var _0x408b87=_0x3c9f53,_0x1b6848=arguments[_0x408b87(0x19a)]<=0x0||arguments[0x0]===undefined?[]:arguments[0x0];if(this['batch']===!![])return;_0x565840(_0xa92c5a[_0x408b87(0x44f)]['__proto__']||Object[_0x408b87(0x2e0)](_0xa92c5a[_0x408b87(0x44f)]),_0x408b87(0x23e),this)[_0x408b87(0x1e2)](this,_0x1b6848),_0x1b6848[_0x408b87(0x19a)]>0x0&&this[_0x408b87(0x440)][_0x408b87(0x2c8)](_0x4d68ca[_0x408b87(0x413)][_0x408b87(0x42e)][_0x408b87(0x212)],_0x1b6848);}},{'key':_0x3c9f53(0x1d2),'value':function _0x1c9c1e(_0x2b88fe){var _0x2c0ec8=_0x3c9f53;return _0x565840(_0xa92c5a[_0x2c0ec8(0x44f)]['__proto__']||Object[_0x2c0ec8(0x2e0)](_0xa92c5a[_0x2c0ec8(0x44f)]),_0x2c0ec8(0x1d2),this)[_0x2c0ec8(0x1e2)](this,_0x2b88fe)[_0x2c0ec8(0x441)](0x1);}},{'key':'update','value':function _0x203f14(_0x420d52){var _0x578aec=_0x3c9f53;if(this[_0x578aec(0x373)]===!![])return;var _0x52952d=_0x4d68ca['default'][_0x578aec(0x270)][_0x578aec(0x439)];typeof _0x420d52===_0x578aec(0x187)&&(_0x52952d=_0x420d52),!Array[_0x578aec(0x3f3)](_0x420d52)&&(_0x420d52=this[_0x578aec(0x250)][_0x578aec(0x18c)]()),_0x420d52[_0x578aec(0x19a)]>0x0&&this[_0x578aec(0x440)][_0x578aec(0x2c8)](_0x4d68ca[_0x578aec(0x413)][_0x578aec(0x42e)][_0x578aec(0x36c)],_0x52952d,_0x420d52),_0x565840(_0xa92c5a[_0x578aec(0x44f)][_0x578aec(0x1b4)]||Object[_0x578aec(0x2e0)](_0xa92c5a[_0x578aec(0x44f)]),_0x578aec(0x22f),this)[_0x578aec(0x1e2)](this,_0x420d52[_0x578aec(0x1f8)]([])),_0x420d52[_0x578aec(0x19a)]>0x0&&this[_0x578aec(0x440)][_0x578aec(0x2c8)](_0x4d68ca[_0x578aec(0x413)][_0x578aec(0x42e)][_0x578aec(0x3d2)],_0x52952d,_0x420d52);}}]),_0xa92c5a;}(_0x968d77[_0x164e0b(0x413)]['Scroll']);_0xb83eb2[_0x164e0b(0x242)]='scroll',_0xb83eb2[_0x164e0b(0x2d6)]=_0x164e0b(0x2c7),_0xb83eb2[_0x164e0b(0x200)]=_0x164e0b(0x3f9),_0xb83eb2['defaultChild']=_0x164e0b(0x394),_0xb83eb2[_0x164e0b(0x23a)]=[_0x538d0d[_0x164e0b(0x413)],_0x3f39aa[_0x164e0b(0x3db)],_0x45892b[_0x164e0b(0x413)]],_0x4b472e['default']=_0xb83eb2;},function(_0x4c7896,_0x3442fd,_0x234ee6){'use strict';var _0x292c84=a9_0x50c4;Object[_0x292c84(0x289)](_0x3442fd,'__esModule',{'value':!![]}),_0x3442fd[_0x292c84(0x377)]=_0x3442fd[_0x292c84(0x43a)]=_0x3442fd[_0x292c84(0x3d6)]=_0x3442fd[_0x292c84(0x1cb)]=_0x3442fd['matchAttributor']=_0x3442fd[_0x292c84(0x413)]=undefined;var _0x508119=(function(){function _0x56c118(_0x8ce7f2,_0x428c52){var _0x1ad588=a9_0x50c4,_0x5c3715=[],_0x3c8892=!![],_0x559ddc=![],_0x5b53e6=undefined;try{for(var _0x246083=_0x8ce7f2[Symbol[_0x1ad588(0x2e8)]](),_0x24c93a;!(_0x3c8892=(_0x24c93a=_0x246083[_0x1ad588(0x211)]())['done']);_0x3c8892=!![]){_0x5c3715['push'](_0x24c93a['value']);if(_0x428c52&&_0x5c3715[_0x1ad588(0x19a)]===_0x428c52)break;}}catch(_0x40ac69){_0x559ddc=!![],_0x5b53e6=_0x40ac69;}finally{try{if(!_0x3c8892&&_0x246083[_0x1ad588(0x222)])_0x246083[_0x1ad588(0x222)]();}finally{if(_0x559ddc)throw _0x5b53e6;}}return _0x5c3715;}return function(_0x300f5a,_0x27b820){var _0x1f50ce=a9_0x50c4;if(Array[_0x1f50ce(0x3f3)](_0x300f5a))return _0x300f5a;else{if(Symbol[_0x1f50ce(0x2e8)]in Object(_0x300f5a))return _0x56c118(_0x300f5a,_0x27b820);else throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance');}};}()),_0x5a5f1b=(function(){function _0x3b91e5(_0x48571e,_0x10a56b){var _0x341048=a9_0x50c4;for(var _0x245a22=0x0;_0x245a22<_0x10a56b[_0x341048(0x19a)];_0x245a22++){var _0x1c7c25=_0x10a56b[_0x245a22];_0x1c7c25[_0x341048(0x1eb)]=_0x1c7c25[_0x341048(0x1eb)]||![],_0x1c7c25[_0x341048(0x203)]=!![];if(_0x341048(0x2e4)in _0x1c7c25)_0x1c7c25[_0x341048(0x40f)]=!![];Object['defineProperty'](_0x48571e,_0x1c7c25[_0x341048(0x3ea)],_0x1c7c25);}}return function(_0x1b0eb7,_0x558c39,_0x2731ed){var _0x8835bb=a9_0x50c4;if(_0x558c39)_0x3b91e5(_0x1b0eb7[_0x8835bb(0x44f)],_0x558c39);if(_0x2731ed)_0x3b91e5(_0x1b0eb7,_0x2731ed);return _0x1b0eb7;};}()),_0x31202e=_0x234ee6(0x14),_0x676bb6=_0x35f314(_0x31202e),_0x10d741=_0x234ee6(0x2),_0x4e4051=_0x35f314(_0x10d741),_0x3329c0=_0x234ee6(0x12),_0x3d54fd=_0x35f314(_0x3329c0),_0x2d5059=_0x234ee6(0x1e),_0x498b9f=_0x35f314(_0x2d5059),_0x126792=_0x234ee6(0x27),_0x238d96=_0x35f314(_0x126792),_0xbb110f=_0x234ee6(0x2d),_0x22fc93=_0x234ee6(0x2e),_0x3a8580=_0x234ee6(0x2f),_0x54d022=_0x234ee6(0x30),_0x48d418=_0x234ee6(0x31),_0x170a79=_0x234ee6(0x32);function _0x35f314(_0x34ad3a){var _0x5d67aa=_0x292c84;return _0x34ad3a&&_0x34ad3a[_0x5d67aa(0x2ad)]?_0x34ad3a:{'default':_0x34ad3a};}function _0x5615cc(_0x243e04,_0x60d725,_0xca8762){var _0x4f5ec9=_0x292c84;return _0x60d725 in _0x243e04?Object[_0x4f5ec9(0x289)](_0x243e04,_0x60d725,{'value':_0xca8762,'enumerable':!![],'configurable':!![],'writable':!![]}):_0x243e04[_0x60d725]=_0xca8762,_0x243e04;}function _0x322d25(_0x2fbe5a){var _0xee0e57=_0x292c84;if(Array[_0xee0e57(0x3f3)](_0x2fbe5a)){for(var _0x1d4f52=0x0,_0x20faae=Array(_0x2fbe5a[_0xee0e57(0x19a)]);_0x1d4f52<_0x2fbe5a['length'];_0x1d4f52++){_0x20faae[_0x1d4f52]=_0x2fbe5a[_0x1d4f52];}return _0x20faae;}else return Array[_0xee0e57(0x220)](_0x2fbe5a);}function _0x475383(_0x5acb22,_0x4d358f){if(!(_0x5acb22 instanceof _0x4d358f))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x1f9a0b(_0x5af9d8,_0x4ba2e2){var _0xe9589=_0x292c84;if(!_0x5af9d8)throw new ReferenceError(_0xe9589(0x434));return _0x4ba2e2&&(typeof _0x4ba2e2===_0xe9589(0x2e1)||typeof _0x4ba2e2===_0xe9589(0x33b))?_0x4ba2e2:_0x5af9d8;}function _0x211d68(_0xdba6ec,_0x41fde7){var _0x37502a=_0x292c84;if(typeof _0x41fde7!==_0x37502a(0x33b)&&_0x41fde7!==null)throw new TypeError(_0x37502a(0x448)+typeof _0x41fde7);_0xdba6ec['prototype']=Object[_0x37502a(0x372)](_0x41fde7&&_0x41fde7['prototype'],{'constructor':{'value':_0xdba6ec,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x41fde7)Object[_0x37502a(0x1ea)]?Object['setPrototypeOf'](_0xdba6ec,_0x41fde7):_0xdba6ec[_0x37502a(0x1b4)]=_0x41fde7;}var _0x3b2f77=(0x0,_0x498b9f[_0x292c84(0x413)])(_0x292c84(0x3ef)),_0x54b3ce=[[Node['TEXT_NODE'],_0x10f76f],['br',_0x32b7e5],[Node[_0x292c84(0x255)],_0x4c167b],[Node['ELEMENT_NODE'],_0x4e655a],[Node[_0x292c84(0x255)],_0x3095a5],[Node['ELEMENT_NODE'],_0x5d82ba],[Node[_0x292c84(0x255)],_0x3d5eff],['b',_0x1e4756[_0x292c84(0x279)](_0x1e4756,_0x292c84(0x181))],['i',_0x1e4756[_0x292c84(0x279)](_0x1e4756,_0x292c84(0x287))],[_0x292c84(0x1f3),_0x5f0582]],_0x5d55a5=[_0xbb110f['AlignStyle'],_0x22fc93[_0x292c84(0x35c)],_0x3a8580['ColorStyle'],_0x54d022[_0x292c84(0x3b4)],_0x48d418[_0x292c84(0x347)],_0x170a79[_0x292c84(0x3a3)]]['reduce'](function(_0x558a63,_0x5bdbee){var _0x161e92=_0x292c84;return _0x558a63[_0x5bdbee[_0x161e92(0x380)]]=_0x5bdbee,_0x558a63;},{}),_0x3c2dfd=function(_0x3912fd){var _0xb11088=_0x292c84;_0x211d68(_0x560411,_0x3912fd);function _0x560411(_0x58a796,_0x25743d){var _0x3eb312=a9_0x50c4;_0x475383(this,_0x560411);var _0x5a36b8=_0x1f9a0b(this,(_0x560411[_0x3eb312(0x1b4)]||Object['getPrototypeOf'](_0x560411))[_0x3eb312(0x1e2)](this,_0x58a796,_0x25743d));return _0x5a36b8[_0x3eb312(0x41b)][_0x3eb312(0x32c)]['addEventListener'](_0x3eb312(0x1a5),_0x5a36b8[_0x3eb312(0x2b1)][_0x3eb312(0x279)](_0x5a36b8)),_0x5a36b8[_0x3eb312(0x2c9)]=_0x5a36b8['quill'][_0x3eb312(0x3c0)](_0x3eb312(0x1b9)),_0x5a36b8[_0x3eb312(0x2c9)][_0x3eb312(0x1ed)](_0x3eb312(0x3b2),!![]),_0x5a36b8[_0x3eb312(0x2c9)][_0x3eb312(0x1ed)](_0x3eb312(0x45d),-0x1),_0x5a36b8['matchers']=[],_0x54b3ce[_0x3eb312(0x1f8)](_0x5a36b8[_0x3eb312(0x3d1)][_0x3eb312(0x268)])[_0x3eb312(0x3e4)](function(_0x51f5c6){_0x5a36b8['addMatcher']['apply'](_0x5a36b8,_0x322d25(_0x51f5c6));}),_0x5a36b8;}return _0x5a5f1b(_0x560411,[{'key':_0xb11088(0x427),'value':function _0x691cef(_0x546eeb,_0xf4283d){var _0x368cc1=_0xb11088;this[_0x368cc1(0x268)]['push']([_0x546eeb,_0xf4283d]);}},{'key':_0xb11088(0x39b),'value':function _0x115a37(_0x284a5b){var _0xe863aa=_0xb11088,_0x4cf770=this,_0x1c8eaa=_0xe863aa(0x355);typeof _0x284a5b===_0xe863aa(0x187)&&(this[_0xe863aa(0x2c9)][_0xe863aa(0x3d3)]=_0x284a5b);var _0x20bb09=[],_0x45ef1d=[];this[_0xe863aa(0x268)]['forEach'](function(_0x9e035f){var _0x17a96c=_0xe863aa,_0x83bdac=_0x508119(_0x9e035f,0x2),_0x426298=_0x83bdac[0x0],_0x3c7ac0=_0x83bdac[0x1];switch(_0x426298){case Node[_0x17a96c(0x29a)]:_0x20bb09[_0x17a96c(0x1bf)](_0x3c7ac0);break;case Node[_0x17a96c(0x255)]:_0x45ef1d['push'](_0x3c7ac0);break;default:[]['forEach'][_0x17a96c(0x1e2)](_0x4cf770['container'][_0x17a96c(0x3ec)](_0x426298),function(_0xcfcd8){var _0x1950dd=_0x17a96c;_0xcfcd8[_0x1c8eaa]=_0xcfcd8[_0x1c8eaa]||[],_0xcfcd8[_0x1c8eaa][_0x1950dd(0x1bf)](_0x3c7ac0);});break;}});var _0x3dd079=function _0x35cadb(_0x468c7d){var _0x16a462=_0xe863aa;if(_0x468c7d[_0x16a462(0x1be)]===_0x468c7d['TEXT_NODE'])return _0x20bb09[_0x16a462(0x1c8)](function(_0x1eee8e,_0xa81769){return _0xa81769(_0x468c7d,_0x1eee8e);},new _0x676bb6[(_0x16a462(0x413))]());else return _0x468c7d['nodeType']===_0x468c7d['ELEMENT_NODE']?[][_0x16a462(0x1c8)][_0x16a462(0x1e2)](_0x468c7d['childNodes']||[],function(_0x2f35fe,_0x536513){var _0x21ab0e=_0x16a462,_0x2a8e17=_0x35cadb(_0x536513);return _0x536513[_0x21ab0e(0x1be)]===_0x468c7d['ELEMENT_NODE']&&(_0x2a8e17=_0x45ef1d['reduce'](function(_0x376c4b,_0x110591){return _0x110591(_0x536513,_0x376c4b);},_0x2a8e17),_0x2a8e17=(_0x536513[_0x1c8eaa]||[])[_0x21ab0e(0x1c8)](function(_0x1fe599,_0x5cbf0a){return _0x5cbf0a(_0x536513,_0x1fe599);},_0x2a8e17)),_0x2f35fe[_0x21ab0e(0x1f8)](_0x2a8e17);},new _0x676bb6['default']()):new _0x676bb6[(_0x16a462(0x413))]();},_0x721689=_0x3dd079(this[_0xe863aa(0x2c9)]);return _0x27e90b(_0x721689,'\x0a')&&_0x721689[_0xe863aa(0x26f)][_0x721689[_0xe863aa(0x26f)]['length']-0x1][_0xe863aa(0x32b)]==null&&(_0x721689=_0x721689[_0xe863aa(0x3dc)](new _0x676bb6[(_0xe863aa(0x413))]()[_0xe863aa(0x2f4)](_0x721689[_0xe863aa(0x19a)]()-0x1)['delete'](0x1))),_0x3b2f77['log']('convert',this[_0xe863aa(0x2c9)][_0xe863aa(0x3d3)],_0x721689),this[_0xe863aa(0x2c9)][_0xe863aa(0x3d3)]='',_0x721689;}},{'key':_0xb11088(0x2b1),'value':function _0x2952c8(_0x18986a){var _0x107548=_0xb11088,_0x2b2ff8=this;if(_0x18986a[_0x107548(0x3a4)])return;var _0x2a8b57=this['quill'][_0x107548(0x407)](),_0x37c01c=new _0x676bb6['default']()[_0x107548(0x2f4)](_0x2a8b57[_0x107548(0x320)])[_0x107548(0x362)](_0x2a8b57['length']),_0x29a2fe=document[_0x107548(0x2a2)][_0x107548(0x240)];this[_0x107548(0x2c9)][_0x107548(0x26d)](),setTimeout(function(){var _0x39b929=_0x107548;_0x37c01c=_0x37c01c['concat'](_0x2b2ff8[_0x39b929(0x39b)]()),_0x2b2ff8[_0x39b929(0x41b)][_0x39b929(0x456)](_0x37c01c,_0x3d54fd[_0x39b929(0x413)][_0x39b929(0x270)][_0x39b929(0x439)]),_0x2b2ff8[_0x39b929(0x41b)][_0x39b929(0x45b)](_0x37c01c[_0x39b929(0x19a)]()-_0x2a8b57[_0x39b929(0x19a)],_0x3d54fd[_0x39b929(0x413)][_0x39b929(0x270)][_0x39b929(0x344)]),document[_0x39b929(0x2a2)][_0x39b929(0x240)]=_0x29a2fe,_0x2b2ff8['quill'][_0x39b929(0x1ba)][_0x39b929(0x32d)]();},0x1);}}]),_0x560411;}(_0x238d96[_0x292c84(0x413)]);_0x3c2dfd['DEFAULTS']={'matchers':[]};function _0x28c4b4(_0x108600){var _0x1bce22=_0x292c84;if(_0x108600[_0x1bce22(0x1be)]!==Node[_0x1bce22(0x255)])return{};var _0x4ab786=_0x1bce22(0x391);return _0x108600[_0x4ab786]||(_0x108600[_0x4ab786]=window['getComputedStyle'](_0x108600));}function _0x27e90b(_0x5d22bf,_0x1d65e0){var _0x35d46e=_0x292c84,_0x258ed5='';for(var _0x45ad53=_0x5d22bf[_0x35d46e(0x26f)][_0x35d46e(0x19a)]-0x1;_0x45ad53>=0x0&&_0x258ed5[_0x35d46e(0x19a)]<_0x1d65e0[_0x35d46e(0x19a)];--_0x45ad53){var _0x3727e4=_0x5d22bf[_0x35d46e(0x26f)][_0x45ad53];if(typeof _0x3727e4['insert']!==_0x35d46e(0x187))break;_0x258ed5=_0x3727e4[_0x35d46e(0x26a)]+_0x258ed5;}return _0x258ed5['slice'](-0x1*_0x1d65e0['length'])===_0x1d65e0;}function _0x4f124a(_0xfc2441){var _0x35516a=_0x292c84;if(_0xfc2441['childNodes'][_0x35516a(0x19a)]===0x0)return![];var _0x5a2d86=_0x28c4b4(_0xfc2441);return[_0x35516a(0x394),_0x35516a(0x22e)]['indexOf'](_0x5a2d86[_0x35516a(0x314)])>-0x1;}function _0x1e4756(_0x198641,_0x1805fd,_0x95c4f7){var _0x54e242=_0x292c84;return _0x95c4f7['compose'](new _0x676bb6[(_0x54e242(0x413))]()[_0x54e242(0x2f4)](_0x95c4f7[_0x54e242(0x19a)](),_0x5615cc({},_0x198641,!![])));}function _0x5d82ba(_0x1e4eaf,_0x3aea83){var _0x1a85d4=_0x292c84,_0x336253=_0x4e4051[_0x1a85d4(0x413)][_0x1a85d4(0x385)][_0x1a85d4(0x263)][_0x1a85d4(0x3aa)](_0x1e4eaf),_0x1848e8=_0x4e4051[_0x1a85d4(0x413)][_0x1a85d4(0x385)]['Class'][_0x1a85d4(0x3aa)](_0x1e4eaf),_0xd77145=_0x4e4051[_0x1a85d4(0x413)]['Attributor'][_0x1a85d4(0x243)]['keys'](_0x1e4eaf),_0x2215a8={};return _0x336253[_0x1a85d4(0x1f8)](_0x1848e8)[_0x1a85d4(0x1f8)](_0xd77145)['forEach'](function(_0xe069a9){var _0x1123f8=_0x1a85d4,_0x34083f=_0x4e4051[_0x1123f8(0x413)]['query'](_0xe069a9,_0x4e4051[_0x1123f8(0x413)][_0x1123f8(0x293)]['ATTRIBUTE']);if(_0x34083f!=null){_0x2215a8[_0x34083f[_0x1123f8(0x231)]]=_0x34083f[_0x1123f8(0x2e4)](_0x1e4eaf);if(_0x2215a8[_0x34083f[_0x1123f8(0x231)]])return;}_0x5d55a5[_0xe069a9]!=null&&(_0x34083f=_0x5d55a5[_0xe069a9],_0x2215a8[_0x34083f[_0x1123f8(0x231)]]=_0x34083f['value'](_0x1e4eaf));}),Object['keys'](_0x2215a8)[_0x1a85d4(0x19a)]>0x0&&(_0x3aea83=_0x3aea83[_0x1a85d4(0x3dc)](new _0x676bb6[(_0x1a85d4(0x413))]()[_0x1a85d4(0x2f4)](_0x3aea83[_0x1a85d4(0x19a)](),_0x2215a8))),_0x3aea83;}function _0x4e655a(_0xaf68f3,_0x4e7b49){var _0x2a9609=_0x292c84,_0x458f33=_0x4e4051['default'][_0x2a9609(0x409)](_0xaf68f3);if(_0x458f33==null)return _0x4e7b49;if(_0x458f33[_0x2a9609(0x44f)]instanceof _0x4e4051[_0x2a9609(0x413)][_0x2a9609(0x2cd)]){var _0x1782a0={},_0x242fac=_0x458f33[_0x2a9609(0x2e4)](_0xaf68f3);_0x242fac!=null&&(_0x1782a0[_0x458f33['blotName']]=_0x242fac,_0x4e7b49=new _0x676bb6[(_0x2a9609(0x413))]()[_0x2a9609(0x26a)](_0x1782a0,_0x458f33[_0x2a9609(0x1a2)](_0xaf68f3)));}else{if(typeof _0x458f33['formats']===_0x2a9609(0x33b)){var _0x58fcb1=_0x5615cc({},_0x458f33['blotName'],_0x458f33['formats'](_0xaf68f3));_0x4e7b49=_0x4e7b49[_0x2a9609(0x3dc)](new _0x676bb6['default']()[_0x2a9609(0x2f4)](_0x4e7b49['length'](),_0x58fcb1));}}return _0x4e7b49;}function _0x32b7e5(_0x5045be,_0x2427ee){return!_0x27e90b(_0x2427ee,'\x0a')&&_0x2427ee['insert']('\x0a'),_0x2427ee;}function _0x5f0582(_0x2a2fed,_0x14cff8){var _0x354097=_0x292c84;return new _0x676bb6[(_0x354097(0x413))]();}function _0x4c167b(_0x4ceae0,_0x264079){var _0x3dd123=_0x292c84;return _0x4f124a(_0x4ceae0)&&!_0x27e90b(_0x264079,'\x0a')&&_0x264079[_0x3dd123(0x26a)]('\x0a'),_0x264079;}function _0x3095a5(_0x34faea,_0xc90b85){var _0x5779c4=_0x292c84;if(_0x4f124a(_0x34faea)&&_0x34faea[_0x5779c4(0x450)]!=null&&!_0x27e90b(_0xc90b85,'\x0a\x0a')){var _0x2ec9c5=_0x34faea[_0x5779c4(0x2a9)]+parseFloat(_0x28c4b4(_0x34faea)['marginTop'])+parseFloat(_0x28c4b4(_0x34faea)['marginBottom']);_0x34faea[_0x5779c4(0x450)][_0x5779c4(0x334)]>_0x34faea[_0x5779c4(0x334)]+_0x2ec9c5*1.5&&_0xc90b85[_0x5779c4(0x26a)]('\x0a');}return _0xc90b85;}function _0x3d5eff(_0x52145c,_0x277181){var _0x25ec95=_0x292c84,_0x2975f3={},_0x4dfdda=_0x52145c[_0x25ec95(0x1f3)]||{};return _0x4dfdda[_0x25ec95(0x3a7)]&&_0x28c4b4(_0x52145c)[_0x25ec95(0x3a7)]===_0x25ec95(0x181)&&(_0x2975f3[_0x25ec95(0x181)]=!![]),Object[_0x25ec95(0x3aa)](_0x2975f3)[_0x25ec95(0x19a)]>0x0&&(_0x277181=_0x277181[_0x25ec95(0x3dc)](new _0x676bb6[(_0x25ec95(0x413))]()[_0x25ec95(0x2f4)](_0x277181[_0x25ec95(0x19a)](),_0x2975f3))),parseFloat(_0x4dfdda[_0x25ec95(0x361)]||0x0)>0x0&&(_0x277181=new _0x676bb6[(_0x25ec95(0x413))]()['insert']('\x09')[_0x25ec95(0x1f8)](_0x277181)),_0x277181;}function _0x10f76f(_0x2b0cad,_0x5ce4ae){var _0xd6c837=_0x292c84,_0x4d72dc=_0x2b0cad[_0xd6c837(0x27f)];if(_0x2b0cad['parentNode']['tagName']===_0xd6c837(0x290))return _0x5ce4ae[_0xd6c837(0x26a)](_0x4d72dc['trim']());if(!_0x28c4b4(_0x2b0cad['parentNode'])[_0xd6c837(0x40c)][_0xd6c837(0x34f)](_0xd6c837(0x2b3))){var _0xb7452c=function _0x10387f(_0x309c2c,_0x467c87){var _0x48cecf=_0xd6c837;return _0x467c87=_0x467c87[_0x48cecf(0x2ff)](/[^\u00a0]/g,''),_0x467c87['length']<0x1&&_0x309c2c?'\x20':_0x467c87;};_0x4d72dc=_0x4d72dc['replace'](/\r\n/g,'\x20')['replace'](/\n/g,'\x20'),_0x4d72dc=_0x4d72dc[_0xd6c837(0x2ff)](/\s\s+/g,_0xb7452c[_0xd6c837(0x279)](_0xb7452c,!![])),(_0x2b0cad[_0xd6c837(0x1d6)]==null&&_0x4f124a(_0x2b0cad[_0xd6c837(0x37d)])||_0x2b0cad['previousSibling']!=null&&_0x4f124a(_0x2b0cad[_0xd6c837(0x1d6)]))&&(_0x4d72dc=_0x4d72dc['replace'](/^\s+/,_0xb7452c['bind'](_0xb7452c,![]))),(_0x2b0cad[_0xd6c837(0x2a3)]==null&&_0x4f124a(_0x2b0cad[_0xd6c837(0x37d)])||_0x2b0cad[_0xd6c837(0x2a3)]!=null&&_0x4f124a(_0x2b0cad[_0xd6c837(0x2a3)]))&&(_0x4d72dc=_0x4d72dc[_0xd6c837(0x2ff)](/\s+$/,_0xb7452c[_0xd6c837(0x279)](_0xb7452c,![])));}return _0x5ce4ae[_0xd6c837(0x26a)](_0x4d72dc);}_0x3442fd[_0x292c84(0x413)]=_0x3c2dfd,_0x3442fd['matchAttributor']=_0x5d82ba,_0x3442fd[_0x292c84(0x1cb)]=_0x4e655a,_0x3442fd[_0x292c84(0x3d6)]=_0x4c167b,_0x3442fd['matchSpacing']=_0x3095a5,_0x3442fd[_0x292c84(0x377)]=_0x10f76f;},function(_0x21bcaa,_0x125aec,_0x274181){'use strict';var _0x5c2101=a9_0x50c4;Object[_0x5c2101(0x289)](_0x125aec,_0x5c2101(0x2ad),{'value':!![]}),_0x125aec[_0x5c2101(0x366)]=_0x125aec[_0x5c2101(0x1a3)]=undefined;var _0x1ca3cd=_0x274181(0x2),_0x5311a7=_0x130b37(_0x1ca3cd);function _0x130b37(_0x2965b2){var _0x540cb9=_0x5c2101;return _0x2965b2&&_0x2965b2[_0x540cb9(0x2ad)]?_0x2965b2:{'default':_0x2965b2};}var _0x420426={'scope':_0x5311a7[_0x5c2101(0x413)][_0x5c2101(0x293)][_0x5c2101(0x30e)],'whitelist':[_0x5c2101(0x3f6),'center',_0x5c2101(0x244)]},_0x12d1d9=new _0x5311a7[(_0x5c2101(0x413))][(_0x5c2101(0x385))][(_0x5c2101(0x1da))]('align',_0x5c2101(0x444),_0x420426),_0xe2b06f=new _0x5311a7['default']['Attributor'][(_0x5c2101(0x243))]('align',_0x5c2101(0x351),_0x420426);_0x125aec[_0x5c2101(0x1a3)]=_0x12d1d9,_0x125aec[_0x5c2101(0x366)]=_0xe2b06f;},function(_0x4cdd0e,_0x1301fc,_0x7ae70){'use strict';var _0x3741b5=a9_0x50c4;Object[_0x3741b5(0x289)](_0x1301fc,_0x3741b5(0x2ad),{'value':!![]}),_0x1301fc[_0x3741b5(0x35c)]=_0x1301fc[_0x3741b5(0x2fc)]=undefined;var _0x101ed7=_0x7ae70(0x2),_0x5d1c09=_0x3d00d2(_0x101ed7),_0x237dba=_0x7ae70(0x2f);function _0x3d00d2(_0x570767){var _0x577bd0=_0x3741b5;return _0x570767&&_0x570767[_0x577bd0(0x2ad)]?_0x570767:{'default':_0x570767};}var _0x211089=new _0x5d1c09['default']['Attributor'][(_0x3741b5(0x1da))](_0x3741b5(0x41c),_0x3741b5(0x2e7),{'scope':_0x5d1c09['default']['Scope'][_0x3741b5(0x2bf)]}),_0x23440b=new _0x237dba[(_0x3741b5(0x329))](_0x3741b5(0x41c),_0x3741b5(0x29e),{'scope':_0x5d1c09[_0x3741b5(0x413)][_0x3741b5(0x293)][_0x3741b5(0x2bf)]});_0x1301fc[_0x3741b5(0x2fc)]=_0x211089,_0x1301fc[_0x3741b5(0x35c)]=_0x23440b;},function(_0x352163,_0x4b701b,_0x2cec9b){'use strict';var _0x43047f=a9_0x50c4;Object['defineProperty'](_0x4b701b,_0x43047f(0x2ad),{'value':!![]}),_0x4b701b[_0x43047f(0x325)]=_0x4b701b[_0x43047f(0x1fc)]=_0x4b701b[_0x43047f(0x329)]=undefined;var _0x11bc6e=(function(){function _0x216aba(_0x31609e,_0x50962b){var _0x1a5467=a9_0x50c4;for(var _0x5119c3=0x0;_0x5119c3<_0x50962b['length'];_0x5119c3++){var _0x3b345c=_0x50962b[_0x5119c3];_0x3b345c[_0x1a5467(0x1eb)]=_0x3b345c['enumerable']||![],_0x3b345c[_0x1a5467(0x203)]=!![];if('value'in _0x3b345c)_0x3b345c[_0x1a5467(0x40f)]=!![];Object['defineProperty'](_0x31609e,_0x3b345c[_0x1a5467(0x3ea)],_0x3b345c);}}return function(_0x55f0b8,_0x5213a0,_0x3bb842){var _0x522727=a9_0x50c4;if(_0x5213a0)_0x216aba(_0x55f0b8[_0x522727(0x44f)],_0x5213a0);if(_0x3bb842)_0x216aba(_0x55f0b8,_0x3bb842);return _0x55f0b8;};}()),_0xec0cd0=function _0x36b871(_0x32ab59,_0x7b6332,_0x64cf3c){var _0x5d2a8a=_0x43047f;if(_0x32ab59===null)_0x32ab59=Function[_0x5d2a8a(0x44f)];var _0x4d3faa=Object[_0x5d2a8a(0x1e0)](_0x32ab59,_0x7b6332);if(_0x4d3faa===undefined){var _0x4f94b1=Object[_0x5d2a8a(0x2e0)](_0x32ab59);return _0x4f94b1===null?undefined:_0x36b871(_0x4f94b1,_0x7b6332,_0x64cf3c);}else{if(_0x5d2a8a(0x2e4)in _0x4d3faa)return _0x4d3faa[_0x5d2a8a(0x2e4)];else{var _0x12cf43=_0x4d3faa[_0x5d2a8a(0x246)];if(_0x12cf43===undefined)return undefined;return _0x12cf43[_0x5d2a8a(0x1e2)](_0x64cf3c);}}},_0x470181=_0x2cec9b(0x2),_0x58ae53=_0x91fc26(_0x470181);function _0x91fc26(_0x228b36){var _0x55f1aa=_0x43047f;return _0x228b36&&_0x228b36[_0x55f1aa(0x2ad)]?_0x228b36:{'default':_0x228b36};}function _0x1bdb3f(_0x201ca2,_0x429245){var _0x1bb5c8=_0x43047f;if(!(_0x201ca2 instanceof _0x429245))throw new TypeError(_0x1bb5c8(0x2eb));}function _0x2ec123(_0x33da02,_0xf2dddb){var _0x2fc3dc=_0x43047f;if(!_0x33da02)throw new ReferenceError(_0x2fc3dc(0x434));return _0xf2dddb&&(typeof _0xf2dddb===_0x2fc3dc(0x2e1)||typeof _0xf2dddb==='function')?_0xf2dddb:_0x33da02;}function _0x448683(_0x544d56,_0x27603d){var _0x5d5312=_0x43047f;if(typeof _0x27603d!==_0x5d5312(0x33b)&&_0x27603d!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x27603d);_0x544d56[_0x5d5312(0x44f)]=Object[_0x5d5312(0x372)](_0x27603d&&_0x27603d[_0x5d5312(0x44f)],{'constructor':{'value':_0x544d56,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x27603d)Object[_0x5d5312(0x1ea)]?Object[_0x5d5312(0x1ea)](_0x544d56,_0x27603d):_0x544d56['__proto__']=_0x27603d;}var _0x4bbd12=function(_0x3dbff0){var _0x1a8f94=_0x43047f;_0x448683(_0x229265,_0x3dbff0);function _0x229265(){var _0x5e98a0=a9_0x50c4;return _0x1bdb3f(this,_0x229265),_0x2ec123(this,(_0x229265[_0x5e98a0(0x1b4)]||Object[_0x5e98a0(0x2e0)](_0x229265))[_0x5e98a0(0x39e)](this,arguments));}return _0x11bc6e(_0x229265,[{'key':_0x1a8f94(0x2e4),'value':function _0x1e5c77(_0x4bf6c){var _0x4e311f=_0x1a8f94,_0x41576e=_0xec0cd0(_0x229265[_0x4e311f(0x44f)][_0x4e311f(0x1b4)]||Object[_0x4e311f(0x2e0)](_0x229265[_0x4e311f(0x44f)]),_0x4e311f(0x2e4),this)[_0x4e311f(0x1e2)](this,_0x4bf6c);if(!_0x41576e[_0x4e311f(0x34f)](_0x4e311f(0x43d)))return _0x41576e;return _0x41576e=_0x41576e[_0x4e311f(0x2ff)](/^[^\d]+/,'')[_0x4e311f(0x2ff)](/[^\d]+$/,''),'#'+_0x41576e[_0x4e311f(0x428)](',')[_0x4e311f(0x410)](function(_0x4a2fbb){var _0x34661e=_0x4e311f;return('00'+parseInt(_0x4a2fbb)[_0x34661e(0x1d3)](0x10))[_0x34661e(0x441)](-0x2);})['join']('');}}]),_0x229265;}(_0x58ae53[_0x43047f(0x413)]['Attributor'][_0x43047f(0x243)]),_0x424700=new _0x58ae53['default']['Attributor'][(_0x43047f(0x1da))](_0x43047f(0x281),_0x43047f(0x375),{'scope':_0x58ae53['default'][_0x43047f(0x293)][_0x43047f(0x2bf)]}),_0x1a73f1=new _0x4bbd12(_0x43047f(0x281),_0x43047f(0x281),{'scope':_0x58ae53['default'][_0x43047f(0x293)][_0x43047f(0x2bf)]});_0x4b701b[_0x43047f(0x329)]=_0x4bbd12,_0x4b701b[_0x43047f(0x1fc)]=_0x424700,_0x4b701b[_0x43047f(0x325)]=_0x1a73f1;},function(_0x10def7,_0x5d43f8,_0x2780e8){'use strict';var _0x50c64f=a9_0x50c4;Object['defineProperty'](_0x5d43f8,'__esModule',{'value':!![]}),_0x5d43f8[_0x50c64f(0x3b4)]=_0x5d43f8[_0x50c64f(0x3b1)]=undefined;var _0x3a524f=_0x2780e8(0x2),_0xa0ab13=_0xb75c4c(_0x3a524f);function _0xb75c4c(_0x443cb4){return _0x443cb4&&_0x443cb4['__esModule']?_0x443cb4:{'default':_0x443cb4};}var _0xde0ce={'scope':_0xa0ab13[_0x50c64f(0x413)][_0x50c64f(0x293)][_0x50c64f(0x30e)],'whitelist':[_0x50c64f(0x2bd)]},_0x55a01d=new _0xa0ab13['default'][(_0x50c64f(0x385))][(_0x50c64f(0x1da))](_0x50c64f(0x2db),_0x50c64f(0x17e),_0xde0ce),_0x2452e1=new _0xa0ab13['default'][(_0x50c64f(0x385))][(_0x50c64f(0x243))](_0x50c64f(0x2db),_0x50c64f(0x2db),_0xde0ce);_0x5d43f8[_0x50c64f(0x3b1)]=_0x55a01d,_0x5d43f8[_0x50c64f(0x3b4)]=_0x2452e1;},function(_0x292957,_0x57efea,_0x15a517){'use strict';var _0x581769=a9_0x50c4;Object[_0x581769(0x289)](_0x57efea,_0x581769(0x2ad),{'value':!![]}),_0x57efea['FontClass']=_0x57efea[_0x581769(0x347)]=undefined;var _0x919285=_0x15a517(0x2),_0x4076e0=_0x41ccc5(_0x919285);function _0x41ccc5(_0xb0047b){var _0x4c7e4c=_0x581769;return _0xb0047b&&_0xb0047b[_0x4c7e4c(0x2ad)]?_0xb0047b:{'default':_0xb0047b};}var _0x59db11={'scope':_0x4076e0['default'][_0x581769(0x293)][_0x581769(0x2bf)],'whitelist':['serif',_0x581769(0x3e6)]},_0x3d662c=new _0x4076e0['default'][(_0x581769(0x385))][(_0x581769(0x1da))](_0x581769(0x274),'ql-font',_0x59db11),_0x50f1cf=new _0x4076e0[(_0x581769(0x413))]['Attributor'][(_0x581769(0x243))](_0x581769(0x274),_0x581769(0x35b),_0x59db11);_0x57efea[_0x581769(0x347)]=_0x50f1cf,_0x57efea['FontClass']=_0x3d662c;},function(_0x4226c3,_0x4ca216,_0x49e088){'use strict';var _0x134a77=a9_0x50c4;Object[_0x134a77(0x289)](_0x4ca216,'__esModule',{'value':!![]}),_0x4ca216[_0x134a77(0x3a3)]=_0x4ca216['SizeClass']=undefined;var _0x1e2b0d=_0x49e088(0x2),_0x302e9b=_0x2e184f(_0x1e2b0d);function _0x2e184f(_0x111912){var _0x4a096d=_0x134a77;return _0x111912&&_0x111912[_0x4a096d(0x2ad)]?_0x111912:{'default':_0x111912};}var _0x2ea543=new _0x302e9b[(_0x134a77(0x413))][(_0x134a77(0x385))][(_0x134a77(0x1da))](_0x134a77(0x24c),'ql-size',{'scope':_0x302e9b[_0x134a77(0x413)]['Scope'][_0x134a77(0x2bf)],'whitelist':[_0x134a77(0x356),'large',_0x134a77(0x223)]}),_0x44b65d=new _0x302e9b[(_0x134a77(0x413))]['Attributor'][(_0x134a77(0x243))](_0x134a77(0x24c),'font-size',{'scope':_0x302e9b[_0x134a77(0x413)][_0x134a77(0x293)][_0x134a77(0x2bf)],'whitelist':[_0x134a77(0x388),_0x134a77(0x43c),'32px']});_0x4ca216[_0x134a77(0x1d1)]=_0x2ea543,_0x4ca216[_0x134a77(0x3a3)]=_0x44b65d;},function(_0x700224,_0x2d60f3,_0xbe2520){'use strict';var _0xaaabd7=a9_0x50c4;Object['defineProperty'](_0x2d60f3,_0xaaabd7(0x2ad),{'value':!![]}),_0x2d60f3[_0xaaabd7(0x1ad)]=_0x2d60f3[_0xaaabd7(0x413)]=undefined;var _0xf8da07=(function(){function _0x50f726(_0x526d52,_0x118ea3){var _0x3bd200=a9_0x50c4;for(var _0x3675c9=0x0;_0x3675c9<_0x118ea3[_0x3bd200(0x19a)];_0x3675c9++){var _0x1896be=_0x118ea3[_0x3675c9];_0x1896be[_0x3bd200(0x1eb)]=_0x1896be[_0x3bd200(0x1eb)]||![],_0x1896be[_0x3bd200(0x203)]=!![];if(_0x3bd200(0x2e4)in _0x1896be)_0x1896be[_0x3bd200(0x40f)]=!![];Object[_0x3bd200(0x289)](_0x526d52,_0x1896be[_0x3bd200(0x3ea)],_0x1896be);}}return function(_0x159864,_0x32ee73,_0x5ac849){if(_0x32ee73)_0x50f726(_0x159864['prototype'],_0x32ee73);if(_0x5ac849)_0x50f726(_0x159864,_0x5ac849);return _0x159864;};}()),_0x322364=_0xbe2520(0x2),_0x23d85e=_0x38e872(_0x322364),_0xa7bbf4=_0xbe2520(0x12),_0x337cca=_0x38e872(_0xa7bbf4),_0x5c2eb6=_0xbe2520(0x27),_0x5f4f4d=_0x38e872(_0x5c2eb6);function _0x38e872(_0x105400){var _0x2246fd=_0xaaabd7;return _0x105400&&_0x105400[_0x2246fd(0x2ad)]?_0x105400:{'default':_0x105400};}function _0x44984f(_0x3fd59d,_0x573c8e){if(!(_0x3fd59d instanceof _0x573c8e))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x37f932(_0x1ad33c,_0x437e34){var _0x9b03b5=_0xaaabd7;if(!_0x1ad33c)throw new ReferenceError(_0x9b03b5(0x434));return _0x437e34&&(typeof _0x437e34===_0x9b03b5(0x2e1)||typeof _0x437e34==='function')?_0x437e34:_0x1ad33c;}function _0x25a719(_0x54c859,_0x140017){var _0x11d175=_0xaaabd7;if(typeof _0x140017!==_0x11d175(0x33b)&&_0x140017!==null)throw new TypeError(_0x11d175(0x448)+typeof _0x140017);_0x54c859[_0x11d175(0x44f)]=Object[_0x11d175(0x372)](_0x140017&&_0x140017['prototype'],{'constructor':{'value':_0x54c859,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x140017)Object[_0x11d175(0x1ea)]?Object['setPrototypeOf'](_0x54c859,_0x140017):_0x54c859[_0x11d175(0x1b4)]=_0x140017;}var _0xdaec5c=function(_0x5e9e24){var _0x5aa540=_0xaaabd7;_0x25a719(_0x455273,_0x5e9e24);function _0x455273(_0x5a4bd0,_0x534ebb){var _0x3e796b=a9_0x50c4;_0x44984f(this,_0x455273);var _0x57fc66=_0x37f932(this,(_0x455273[_0x3e796b(0x1b4)]||Object['getPrototypeOf'](_0x455273))[_0x3e796b(0x1e2)](this,_0x5a4bd0,_0x534ebb));return _0x57fc66[_0x3e796b(0x35a)]=0x0,_0x57fc66[_0x3e796b(0x1fe)]=![],_0x57fc66[_0x3e796b(0x432)](),_0x57fc66[_0x3e796b(0x41b)]['on'](_0x337cca['default']['events'][_0x3e796b(0x411)],function(_0xce38b2,_0x4391b4,_0x3f928c,_0x1c5843){var _0x397300=_0x3e796b;if(_0xce38b2!==_0x337cca[_0x397300(0x413)]['events'][_0x397300(0x19d)]||_0x57fc66[_0x397300(0x1fe)])return;!_0x57fc66['options'][_0x397300(0x251)]||_0x1c5843===_0x337cca[_0x397300(0x413)][_0x397300(0x270)]['USER']?_0x57fc66['record'](_0x4391b4,_0x3f928c):_0x57fc66[_0x397300(0x186)](_0x4391b4);}),_0x57fc66[_0x3e796b(0x41b)]['keyboard'][_0x3e796b(0x301)]({'key':'Z','shortKey':!![]},_0x57fc66[_0x3e796b(0x2d8)][_0x3e796b(0x279)](_0x57fc66)),_0x57fc66[_0x3e796b(0x41b)][_0x3e796b(0x335)][_0x3e796b(0x301)]({'key':'Z','shortKey':!![],'shiftKey':!![]},_0x57fc66['redo'][_0x3e796b(0x279)](_0x57fc66)),/Win/i[_0x3e796b(0x26e)](navigator[_0x3e796b(0x437)])&&_0x57fc66[_0x3e796b(0x41b)][_0x3e796b(0x335)]['addBinding']({'key':'Y','shortKey':!![]},_0x57fc66['redo']['bind'](_0x57fc66)),_0x57fc66;}return _0xf8da07(_0x455273,[{'key':'change','value':function _0x165ea7(_0x5d9664,_0x5a97a5){var _0x31d460=a9_0x50c4;if(this[_0x31d460(0x3eb)][_0x5d9664][_0x31d460(0x19a)]===0x0)return;var _0x199dff=this['stack'][_0x5d9664][_0x31d460(0x209)]();this[_0x31d460(0x35a)]=0x0,this[_0x31d460(0x1fe)]=!![],this[_0x31d460(0x41b)][_0x31d460(0x456)](_0x199dff[_0x5d9664],_0x337cca[_0x31d460(0x413)][_0x31d460(0x270)][_0x31d460(0x439)]),this['ignoreChange']=![];var _0x5c5681=_0xf977f0(_0x199dff[_0x5d9664]);this[_0x31d460(0x41b)][_0x31d460(0x45b)](_0x5c5681),this[_0x31d460(0x41b)][_0x31d460(0x1ba)][_0x31d460(0x32d)](),this[_0x31d460(0x3eb)][_0x5a97a5][_0x31d460(0x1bf)](_0x199dff);}},{'key':_0x5aa540(0x432),'value':function _0x3cbfe3(){var _0x266c7a=_0x5aa540;this[_0x266c7a(0x3eb)]={'undo':[],'redo':[]};}},{'key':_0x5aa540(0x276),'value':function _0x895144(_0x5e7e9d,_0x29caa2){var _0xa15283=_0x5aa540;if(_0x5e7e9d[_0xa15283(0x26f)]['length']===0x0)return;this['stack']['redo']=[];var _0x1d9185=this['quill'][_0xa15283(0x1e5)]()[_0xa15283(0x20b)](_0x29caa2),_0x16df06=Date[_0xa15283(0x35e)]();if(this['lastRecorded']+this['options'][_0xa15283(0x20d)]>_0x16df06&&this[_0xa15283(0x3eb)]['undo'][_0xa15283(0x19a)]>0x0){var _0x323175=this[_0xa15283(0x3eb)][_0xa15283(0x2d8)][_0xa15283(0x209)]();_0x1d9185=_0x1d9185[_0xa15283(0x3dc)](_0x323175[_0xa15283(0x2d8)]),_0x5e7e9d=_0x323175[_0xa15283(0x33d)][_0xa15283(0x3dc)](_0x5e7e9d);}else this[_0xa15283(0x35a)]=_0x16df06;this[_0xa15283(0x3eb)]['undo'][_0xa15283(0x1bf)]({'redo':_0x5e7e9d,'undo':_0x1d9185}),this[_0xa15283(0x3eb)][_0xa15283(0x2d8)]['length']>this[_0xa15283(0x3d1)][_0xa15283(0x2e6)]&&this[_0xa15283(0x3eb)][_0xa15283(0x2d8)][_0xa15283(0x34e)]();}},{'key':'redo','value':function _0x3ce717(){var _0x37d967=_0x5aa540;this[_0x37d967(0x25c)](_0x37d967(0x33d),_0x37d967(0x2d8));}},{'key':_0x5aa540(0x186),'value':function _0x2c34b2(_0x37c1a6){var _0x3f4e77=_0x5aa540;this[_0x3f4e77(0x3eb)][_0x3f4e77(0x2d8)][_0x3f4e77(0x3e4)](function(_0x345060){var _0x430ec5=_0x3f4e77;_0x345060[_0x430ec5(0x2d8)]=_0x37c1a6['transform'](_0x345060[_0x430ec5(0x2d8)],!![]),_0x345060[_0x430ec5(0x33d)]=_0x37c1a6[_0x430ec5(0x186)](_0x345060[_0x430ec5(0x33d)],!![]);}),this['stack'][_0x3f4e77(0x33d)][_0x3f4e77(0x3e4)](function(_0x365179){var _0x362dba=_0x3f4e77;_0x365179[_0x362dba(0x2d8)]=_0x37c1a6[_0x362dba(0x186)](_0x365179[_0x362dba(0x2d8)],!![]),_0x365179['redo']=_0x37c1a6['transform'](_0x365179[_0x362dba(0x33d)],!![]);});}},{'key':_0x5aa540(0x2d8),'value':function _0x1bc752(){var _0x51ffce=_0x5aa540;this[_0x51ffce(0x25c)](_0x51ffce(0x2d8),_0x51ffce(0x33d));}}]),_0x455273;}(_0x5f4f4d['default']);_0xdaec5c[_0xaaabd7(0x1c3)]={'delay':0x3e8,'maxStack':0x64,'userOnly':![]};function _0x2469e1(_0x401045){var _0x49870d=_0xaaabd7,_0x583719=_0x401045[_0x49870d(0x26f)][_0x401045['ops'][_0x49870d(0x19a)]-0x1];if(_0x583719==null)return![];if(_0x583719[_0x49870d(0x26a)]!=null)return typeof _0x583719[_0x49870d(0x26a)]===_0x49870d(0x187)&&_0x583719[_0x49870d(0x26a)][_0x49870d(0x2cb)]('\x0a');if(_0x583719['attributes']!=null)return Object['keys'](_0x583719[_0x49870d(0x32b)])[_0x49870d(0x3a8)](function(_0x252305){var _0x2e2430=_0x49870d;return _0x23d85e[_0x2e2430(0x413)][_0x2e2430(0x409)](_0x252305,_0x23d85e[_0x2e2430(0x413)]['Scope'][_0x2e2430(0x30e)])!=null;});return![];}function _0xf977f0(_0x48146b){var _0x2e1c4d=_0xaaabd7,_0x55c752=_0x48146b[_0x2e1c4d(0x26f)][_0x2e1c4d(0x1c8)](function(_0x11c3dc,_0x2eff7a){var _0x5dc815=_0x2e1c4d;return _0x11c3dc+=_0x2eff7a[_0x5dc815(0x362)]||0x0,_0x11c3dc;},0x0),_0x4725df=_0x48146b[_0x2e1c4d(0x19a)]()-_0x55c752;return _0x2469e1(_0x48146b)&&(_0x4725df-=0x1),_0x4725df;}_0x2d60f3[_0xaaabd7(0x413)]=_0xdaec5c,_0x2d60f3[_0xaaabd7(0x1ad)]=_0xf977f0;},function(_0x5c5784,_0x38795e,_0x1c885e){'use strict';var _0x5a4752=a9_0x50c4;Object[_0x5a4752(0x289)](_0x38795e,_0x5a4752(0x2ad),{'value':!![]});var _0x5b45d2=typeof Symbol===_0x5a4752(0x33b)&&typeof Symbol[_0x5a4752(0x2e8)]==='symbol'?function(_0x923f3d){return typeof _0x923f3d;}:function(_0x503b00){var _0x4d337b=_0x5a4752;return _0x503b00&&typeof Symbol===_0x4d337b(0x33b)&&_0x503b00[_0x4d337b(0x2c6)]===Symbol?_0x4d337b(0x2a8):typeof _0x503b00;},_0x1d5c89=(function(){function _0x4ce38f(_0x476fc7,_0x5792e3){var _0x482bca=a9_0x50c4,_0x595a47=[],_0x3d4a13=!![],_0x21985d=![],_0x49c494=undefined;try{for(var _0x246f02=_0x476fc7[Symbol[_0x482bca(0x2e8)]](),_0x1af3b9;!(_0x3d4a13=(_0x1af3b9=_0x246f02[_0x482bca(0x211)]())[_0x482bca(0x25a)]);_0x3d4a13=!![]){_0x595a47[_0x482bca(0x1bf)](_0x1af3b9[_0x482bca(0x2e4)]);if(_0x5792e3&&_0x595a47[_0x482bca(0x19a)]===_0x5792e3)break;}}catch(_0x1c4979){_0x21985d=!![],_0x49c494=_0x1c4979;}finally{try{if(!_0x3d4a13&&_0x246f02[_0x482bca(0x222)])_0x246f02[_0x482bca(0x222)]();}finally{if(_0x21985d)throw _0x49c494;}}return _0x595a47;}return function(_0x2895a3,_0x2921ab){var _0x504086=a9_0x50c4;if(Array[_0x504086(0x3f3)](_0x2895a3))return _0x2895a3;else{if(Symbol[_0x504086(0x2e8)]in Object(_0x2895a3))return _0x4ce38f(_0x2895a3,_0x2921ab);else throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance');}};}()),_0x203d37=(function(){function _0x5e0085(_0x294c08,_0x2d690e){var _0x3ee7fe=a9_0x50c4;for(var _0xfe71fc=0x0;_0xfe71fc<_0x2d690e[_0x3ee7fe(0x19a)];_0xfe71fc++){var _0x4273a6=_0x2d690e[_0xfe71fc];_0x4273a6['enumerable']=_0x4273a6[_0x3ee7fe(0x1eb)]||![],_0x4273a6[_0x3ee7fe(0x203)]=!![];if(_0x3ee7fe(0x2e4)in _0x4273a6)_0x4273a6['writable']=!![];Object[_0x3ee7fe(0x289)](_0x294c08,_0x4273a6['key'],_0x4273a6);}}return function(_0x30d225,_0x455ff4,_0x2980c0){var _0x3933c7=a9_0x50c4;if(_0x455ff4)_0x5e0085(_0x30d225[_0x3933c7(0x44f)],_0x455ff4);if(_0x2980c0)_0x5e0085(_0x30d225,_0x2980c0);return _0x30d225;};}()),_0x31b8ba=_0x1c885e(0x26),_0x428e6d=_0x590473(_0x31b8ba),_0x1e7975=_0x1c885e(0x16),_0x1cf023=_0x590473(_0x1e7975),_0x47c5c2=_0x1c885e(0x19),_0x5646cf=_0x590473(_0x47c5c2),_0x16bfe2=_0x1c885e(0x14),_0x2c547f=_0x590473(_0x16bfe2),_0x106605=_0x1c885e(0x1a),_0x3b8f9f=_0x590473(_0x106605),_0xfca246=_0x1c885e(0x2),_0x3dda44=_0x590473(_0xfca246),_0x1bd0be=_0x1c885e(0x12),_0x4af8f5=_0x590473(_0x1bd0be),_0x4d7cb1=_0x1c885e(0x1e),_0x74ec88=_0x590473(_0x4d7cb1),_0x2652ed=_0x1c885e(0x27),_0x27ed49=_0x590473(_0x2652ed),_0x3357b1=_0x1c885e(0x20),_0x9e02ab=_0x590473(_0x3357b1);function _0x590473(_0x2284d9){var _0x46ea1e=_0x5a4752;return _0x2284d9&&_0x2284d9[_0x46ea1e(0x2ad)]?_0x2284d9:{'default':_0x2284d9};}function _0x217d5a(_0x73d74,_0x4be558){if(!(_0x73d74 instanceof _0x4be558))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0xdd31e9(_0x5c37f7,_0x36fcc2){var _0x1a1989=_0x5a4752;if(!_0x5c37f7)throw new ReferenceError(_0x1a1989(0x434));return _0x36fcc2&&(typeof _0x36fcc2===_0x1a1989(0x2e1)||typeof _0x36fcc2===_0x1a1989(0x33b))?_0x36fcc2:_0x5c37f7;}function _0x597ed3(_0x19d1c2,_0x379fe2){var _0x10e329=_0x5a4752;if(typeof _0x379fe2!==_0x10e329(0x33b)&&_0x379fe2!==null)throw new TypeError(_0x10e329(0x448)+typeof _0x379fe2);_0x19d1c2[_0x10e329(0x44f)]=Object[_0x10e329(0x372)](_0x379fe2&&_0x379fe2['prototype'],{'constructor':{'value':_0x19d1c2,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x379fe2)Object[_0x10e329(0x1ea)]?Object[_0x10e329(0x1ea)](_0x19d1c2,_0x379fe2):_0x19d1c2[_0x10e329(0x1b4)]=_0x379fe2;}var _0x1eb3f6=(0x0,_0x74ec88[_0x5a4752(0x413)])('quill:keyboard'),_0x18392c=/Mac/i['test'](navigator['platform'])?_0x5a4752(0x3b0):_0x5a4752(0x2fb),_0x4c3769=function(_0x3340d9){var _0x43df10=_0x5a4752;_0x597ed3(_0x194ca7,_0x3340d9),_0x203d37(_0x194ca7,null,[{'key':_0x43df10(0x3ff),'value':function _0x535845(_0x3a910a,_0x59674c){var _0x10cebc=_0x43df10;_0x59674c=_0x552f1b(_0x59674c);if(!!_0x59674c[_0x10cebc(0x300)]!==_0x3a910a[_0x18392c]&&_0x59674c[_0x10cebc(0x300)]!==null)return![];if([_0x10cebc(0x298),_0x10cebc(0x2fb),'metaKey',_0x10cebc(0x3f1)][_0x10cebc(0x3a8)](function(_0x29e1fb){return _0x29e1fb!=_0x18392c&&!!_0x59674c[_0x29e1fb]!==_0x3a910a[_0x29e1fb]&&_0x59674c[_0x29e1fb]!==null;}))return![];return _0x59674c[_0x10cebc(0x3ea)]===(_0x3a910a['which']||_0x3a910a[_0x10cebc(0x24a)]);}}]);function _0x194ca7(_0x4ac4ac,_0x468816){var _0x5d9b45=_0x43df10;_0x217d5a(this,_0x194ca7);var _0x23119a=_0xdd31e9(this,(_0x194ca7[_0x5d9b45(0x1b4)]||Object[_0x5d9b45(0x2e0)](_0x194ca7))[_0x5d9b45(0x1e2)](this,_0x4ac4ac,_0x468816));return _0x23119a[_0x5d9b45(0x2c5)]={},Object[_0x5d9b45(0x3aa)](_0x23119a['options']['bindings'])[_0x5d9b45(0x3e4)](function(_0x1a4084){var _0x246c3e=_0x5d9b45;_0x23119a['options'][_0x246c3e(0x2c5)][_0x1a4084]&&_0x23119a[_0x246c3e(0x301)](_0x23119a['options'][_0x246c3e(0x2c5)][_0x1a4084]);}),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7['keys'][_0x5d9b45(0x1e3)],'shiftKey':null},_0x17556d),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7[_0x5d9b45(0x3aa)][_0x5d9b45(0x1e3)],'metaKey':null,'ctrlKey':null,'altKey':null},function(){}),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7[_0x5d9b45(0x3aa)][_0x5d9b45(0x2d3)]},{'collapsed':!![],'prefix':/^.?$/},function(_0xb0b726,_0x136a8f){var _0x2f2c99=_0x5d9b45;if(_0xb0b726[_0x2f2c99(0x320)]===0x0)return;var _0x4ec1f4=this[_0x2f2c99(0x41b)][_0x2f2c99(0x36a)]['line'](_0xb0b726[_0x2f2c99(0x320)]),_0x13fef5=_0x1d5c89(_0x4ec1f4,0x1),_0x182ad8=_0x13fef5[0x0],_0x3d0409={};if(_0x136a8f[_0x2f2c99(0x438)]===0x0){var _0x262911=_0x182ad8[_0x2f2c99(0x1a2)](),_0x3b4680=this[_0x2f2c99(0x41b)][_0x2f2c99(0x452)](_0xb0b726[_0x2f2c99(0x320)]-0x1,0x1);_0x3d0409=_0x3b8f9f['default'][_0x2f2c99(0x32b)][_0x2f2c99(0x20b)](_0x262911,_0x3b4680)||{};}this[_0x2f2c99(0x41b)][_0x2f2c99(0x23f)](_0xb0b726['index']-0x1,0x1,_0x4af8f5[_0x2f2c99(0x413)]['sources']['USER']),Object[_0x2f2c99(0x3aa)](_0x3d0409)[_0x2f2c99(0x19a)]>0x0&&this[_0x2f2c99(0x41b)][_0x2f2c99(0x2b5)](_0xb0b726[_0x2f2c99(0x320)]-0x1,0x1,_0x3d0409,_0x4af8f5[_0x2f2c99(0x413)][_0x2f2c99(0x270)][_0x2f2c99(0x439)]),this['quill'][_0x2f2c99(0x1ba)]['scrollIntoView']();}),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7[_0x5d9b45(0x3aa)][_0x5d9b45(0x254)]},{'collapsed':!![],'suffix':/^$/},function(_0x2bf57c){var _0x47b483=_0x5d9b45;if(_0x2bf57c[_0x47b483(0x320)]>=this['quill'][_0x47b483(0x3e8)]()-0x1)return;this[_0x47b483(0x41b)][_0x47b483(0x23f)](_0x2bf57c[_0x47b483(0x320)],0x1,_0x4af8f5[_0x47b483(0x413)][_0x47b483(0x270)][_0x47b483(0x439)]);}),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7[_0x5d9b45(0x3aa)][_0x5d9b45(0x2d3)]},{'collapsed':![]},_0x132b31),_0x23119a[_0x5d9b45(0x301)]({'key':_0x194ca7['keys'][_0x5d9b45(0x254)]},{'collapsed':![]},_0x132b31),_0x23119a[_0x5d9b45(0x20f)](),_0x23119a;}return _0x203d37(_0x194ca7,[{'key':_0x43df10(0x301),'value':function _0x3f4ec0(_0x4a9405){var _0x2bba83=_0x43df10,_0xddba8f=arguments['length']<=0x1||arguments[0x1]===undefined?{}:arguments[0x1],_0x5c2686=arguments[_0x2bba83(0x19a)]<=0x2||arguments[0x2]===undefined?{}:arguments[0x2],_0x4d884f=_0x552f1b(_0x4a9405);if(_0x4d884f==null||_0x4d884f[_0x2bba83(0x3ea)]==null)return _0x1eb3f6['warn'](_0x2bba83(0x31a),_0x4d884f);typeof _0xddba8f===_0x2bba83(0x33b)&&(_0xddba8f={'handler':_0xddba8f}),typeof _0x5c2686===_0x2bba83(0x33b)&&(_0x5c2686={'handler':_0x5c2686}),_0x4d884f=(0x0,_0x5646cf[_0x2bba83(0x413)])(_0x4d884f,_0xddba8f,_0x5c2686),this[_0x2bba83(0x2c5)][_0x4d884f[_0x2bba83(0x3ea)]]=this[_0x2bba83(0x2c5)][_0x4d884f[_0x2bba83(0x3ea)]]||[],this[_0x2bba83(0x2c5)][_0x4d884f[_0x2bba83(0x3ea)]][_0x2bba83(0x1bf)](_0x4d884f);}},{'key':_0x43df10(0x20f),'value':function _0x552e0d(){var _0x1acdac=_0x43df10,_0x55b5b0=this;this['quill'][_0x1acdac(0x32c)][_0x1acdac(0x44c)]('keydown',function(_0x3dee95){var _0x1f4e85=_0x1acdac;if(_0x3dee95['defaultPrevented'])return;var _0x3ce796=_0x3dee95[_0x1f4e85(0x310)]||_0x3dee95[_0x1f4e85(0x24a)],_0x46381e=(_0x55b5b0['bindings'][_0x3ce796]||[])[_0x1f4e85(0x2f8)](function(_0x4b81f4){var _0x1ca6e9=_0x1f4e85;return _0x194ca7[_0x1ca6e9(0x3ff)](_0x3dee95,_0x4b81f4);});if(_0x46381e[_0x1f4e85(0x19a)]===0x0)return;var _0x4f863e=_0x55b5b0[_0x1f4e85(0x41b)][_0x1f4e85(0x407)]();if(_0x4f863e==null)return;var _0x380ec0=_0x55b5b0[_0x1f4e85(0x41b)][_0x1f4e85(0x36a)][_0x1f4e85(0x17c)](_0x4f863e[_0x1f4e85(0x320)]),_0x2d8a70=_0x1d5c89(_0x380ec0,0x2),_0x49bfdf=_0x2d8a70[0x0],_0x2100af=_0x2d8a70[0x1],_0x52d80f=_0x55b5b0['quill'][_0x1f4e85(0x36a)][_0x1f4e85(0x21e)](_0x4f863e[_0x1f4e85(0x320)]),_0x4f2631=_0x1d5c89(_0x52d80f,0x2),_0x357320=_0x4f2631[0x0],_0x2739ba=_0x4f2631[0x1],_0x382ca2=_0x4f863e['length']===0x0?[_0x357320,_0x2739ba]:_0x55b5b0[_0x1f4e85(0x41b)][_0x1f4e85(0x36a)]['leaf'](_0x4f863e[_0x1f4e85(0x320)]+_0x4f863e[_0x1f4e85(0x19a)]),_0x18c8c2=_0x1d5c89(_0x382ca2,0x2),_0x20e842=_0x18c8c2[0x0],_0x316b6d=_0x18c8c2[0x1],_0x39dc85=_0x357320 instanceof _0x3dda44[_0x1f4e85(0x413)][_0x1f4e85(0x1e7)]?_0x357320[_0x1f4e85(0x2e4)]()[_0x1f4e85(0x441)](0x0,_0x2739ba):'',_0x2afd00=_0x20e842 instanceof _0x3dda44[_0x1f4e85(0x413)]['Text']?_0x20e842['value']()[_0x1f4e85(0x441)](_0x316b6d):'',_0x4d7cc2={'collapsed':_0x4f863e['length']===0x0,'empty':_0x4f863e[_0x1f4e85(0x19a)]===0x0&&_0x49bfdf[_0x1f4e85(0x19a)]()<=0x1,'format':_0x55b5b0[_0x1f4e85(0x41b)][_0x1f4e85(0x452)](_0x4f863e),'offset':_0x2100af,'prefix':_0x39dc85,'suffix':_0x2afd00},_0x5ad6c9=_0x46381e[_0x1f4e85(0x3a8)](function(_0x1ab113){var _0x4db8d1=_0x1f4e85;if(_0x1ab113['collapsed']!=null&&_0x1ab113['collapsed']!==_0x4d7cc2[_0x4db8d1(0x37e)])return![];if(_0x1ab113[_0x4db8d1(0x412)]!=null&&_0x1ab113['empty']!==_0x4d7cc2[_0x4db8d1(0x412)])return![];if(_0x1ab113['offset']!=null&&_0x1ab113['offset']!==_0x4d7cc2[_0x4db8d1(0x438)])return![];if(Array[_0x4db8d1(0x3f3)](_0x1ab113[_0x4db8d1(0x1d9)])){if(_0x1ab113[_0x4db8d1(0x1d9)]['every'](function(_0x6ae5d){var _0x543110=_0x4db8d1;return _0x4d7cc2[_0x543110(0x1d9)][_0x6ae5d]==null;}))return![];}else{if(_0x5b45d2(_0x1ab113[_0x4db8d1(0x1d9)])===_0x4db8d1(0x2e1)){if(!Object['keys'](_0x1ab113[_0x4db8d1(0x1d9)])[_0x4db8d1(0x3df)](function(_0x487e2a){var _0x48f8b6=_0x4db8d1;if(_0x1ab113['format'][_0x487e2a]===!![])return _0x4d7cc2[_0x48f8b6(0x1d9)][_0x487e2a]!=null;if(_0x1ab113[_0x48f8b6(0x1d9)][_0x487e2a]===![])return _0x4d7cc2[_0x48f8b6(0x1d9)][_0x487e2a]==null;return(0x0,_0x1cf023[_0x48f8b6(0x413)])(_0x1ab113[_0x48f8b6(0x1d9)][_0x487e2a],_0x4d7cc2[_0x48f8b6(0x1d9)][_0x487e2a]);}))return![];}}if(_0x1ab113[_0x4db8d1(0x23c)]!=null&&!_0x1ab113[_0x4db8d1(0x23c)][_0x4db8d1(0x26e)](_0x4d7cc2['prefix']))return![];if(_0x1ab113[_0x4db8d1(0x360)]!=null&&!_0x1ab113[_0x4db8d1(0x360)][_0x4db8d1(0x26e)](_0x4d7cc2[_0x4db8d1(0x360)]))return![];return _0x1ab113[_0x4db8d1(0x2b6)][_0x4db8d1(0x1e2)](_0x55b5b0,_0x4f863e,_0x4d7cc2)!==!![];});_0x5ad6c9&&_0x3dee95[_0x1f4e85(0x40a)]();});}}]),_0x194ca7;}(_0x27ed49[_0x5a4752(0x413)]);_0x4c3769['keys']={'BACKSPACE':0x8,'TAB':0x9,'ENTER':0xd,'ESCAPE':0x1b,'LEFT':0x25,'UP':0x26,'RIGHT':0x27,'DOWN':0x28,'DELETE':0x2e},_0x4c3769[_0x5a4752(0x1c3)]={'bindings':{'bold':_0x291a90(_0x5a4752(0x181)),'italic':_0x291a90(_0x5a4752(0x287)),'underline':_0x291a90(_0x5a4752(0x25f)),'indent':{'key':_0x4c3769[_0x5a4752(0x3aa)][_0x5a4752(0x1cd)],'format':[_0x5a4752(0x1ec),_0x5a4752(0x3bd),_0x5a4752(0x423)],'handler':function _0x105df0(_0x603671,_0x3ad84d){var _0x47785=_0x5a4752;if(_0x3ad84d[_0x47785(0x37e)]&&_0x3ad84d[_0x47785(0x438)]!==0x0)return!![];this['quill'][_0x47785(0x1d9)](_0x47785(0x3bd),'+1',_0x4af8f5[_0x47785(0x413)][_0x47785(0x270)][_0x47785(0x439)]);}},'outdent':{'key':_0x4c3769['keys'][_0x5a4752(0x1cd)],'shiftKey':!![],'format':[_0x5a4752(0x1ec),_0x5a4752(0x3bd),_0x5a4752(0x423)],'handler':function _0x3c9d44(_0x33c875,_0xdb92e1){var _0x2fad50=_0x5a4752;if(_0xdb92e1['collapsed']&&_0xdb92e1[_0x2fad50(0x438)]!==0x0)return!![];this[_0x2fad50(0x41b)][_0x2fad50(0x1d9)](_0x2fad50(0x3bd),'-1',_0x4af8f5['default']['sources']['USER']);}},'outdent\x20backspace':{'key':_0x4c3769[_0x5a4752(0x3aa)][_0x5a4752(0x2d3)],'collapsed':!![],'format':[_0x5a4752(0x1ec),_0x5a4752(0x3bd),_0x5a4752(0x423)],'offset':0x0,'handler':function _0x5d4709(_0x1a1a36,_0x13aecc){var _0x1f3a3a=_0x5a4752;if(_0x13aecc[_0x1f3a3a(0x1d9)][_0x1f3a3a(0x3bd)]!=null)this['quill'][_0x1f3a3a(0x1d9)]('indent','-1',_0x4af8f5['default'][_0x1f3a3a(0x270)]['USER']);else{if(_0x13aecc[_0x1f3a3a(0x1d9)][_0x1f3a3a(0x1ec)]!=null)this['quill'][_0x1f3a3a(0x1d9)](_0x1f3a3a(0x1ec),![],_0x4af8f5[_0x1f3a3a(0x413)]['sources'][_0x1f3a3a(0x439)]);else _0x13aecc[_0x1f3a3a(0x1d9)][_0x1f3a3a(0x423)]!=null&&this['quill'][_0x1f3a3a(0x1d9)](_0x1f3a3a(0x423),![],_0x4af8f5[_0x1f3a3a(0x413)]['sources']['USER']);}}},'indent\x20code-block':_0x3d0556(!![]),'outdent\x20code-block':_0x3d0556(![]),'remove\x20tab':{'key':_0x4c3769[_0x5a4752(0x3aa)][_0x5a4752(0x1cd)],'shiftKey':!![],'collapsed':!![],'prefix':/\t$/,'handler':function _0x3b1d2f(_0x49ccd6,_0x4053f2){var _0x361b3c=_0x5a4752;this['quill'][_0x361b3c(0x23f)](_0x49ccd6[_0x361b3c(0x320)]-0x1,0x1,_0x4af8f5[_0x361b3c(0x413)][_0x361b3c(0x270)]['USER']);}},'tab':{'key':_0x4c3769[_0x5a4752(0x3aa)]['TAB'],'handler':function _0x55df85(_0x35c2c6,_0x1ad72e){var _0x5cda0a=_0x5a4752;!_0x1ad72e[_0x5cda0a(0x37e)]&&this['quill'][_0x5cda0a(0x36a)]['deleteAt'](_0x35c2c6[_0x5cda0a(0x320)],_0x35c2c6['length']),this[_0x5cda0a(0x41b)]['insertText'](_0x35c2c6[_0x5cda0a(0x320)],'\x09',_0x4af8f5[_0x5cda0a(0x413)]['sources']['USER']),this[_0x5cda0a(0x41b)]['setSelection'](_0x35c2c6[_0x5cda0a(0x320)]+0x1,_0x4af8f5['default']['sources'][_0x5cda0a(0x344)]);}},'list\x20empty\x20enter':{'key':_0x4c3769['keys'][_0x5a4752(0x1e3)],'collapsed':!![],'format':['list'],'empty':!![],'handler':function _0x17c25f(_0x466cb1,_0x46c95d){var _0x5016eb=_0x5a4752;this[_0x5016eb(0x41b)][_0x5016eb(0x1d9)](_0x5016eb(0x423),![],_0x4af8f5['default'][_0x5016eb(0x270)]['USER']),_0x46c95d['format']['indent']&&this['quill'][_0x5016eb(0x1d9)](_0x5016eb(0x3bd),![],_0x4af8f5[_0x5016eb(0x413)][_0x5016eb(0x270)][_0x5016eb(0x439)]);}},'header\x20enter':{'key':_0x4c3769[_0x5a4752(0x3aa)][_0x5a4752(0x1e3)],'collapsed':!![],'format':[_0x5a4752(0x201)],'suffix':/^$/,'handler':function _0x4f168e(_0x3da1b8){var _0x228d58=_0x5a4752;this['quill'][_0x228d58(0x36a)][_0x228d58(0x307)](_0x3da1b8[_0x228d58(0x320)],'\x0a'),this[_0x228d58(0x41b)][_0x228d58(0x30f)](_0x3da1b8['index']+0x1,0x1,_0x228d58(0x201),![],_0x4af8f5[_0x228d58(0x413)][_0x228d58(0x270)][_0x228d58(0x439)]),this[_0x228d58(0x41b)][_0x228d58(0x45b)](_0x3da1b8[_0x228d58(0x320)]+0x1,_0x4af8f5['default']['sources'][_0x228d58(0x344)]),this['quill']['selection'][_0x228d58(0x32d)]();}},'list\x20autofill':{'key':'\x20','collapsed':!![],'format':{'list':![]},'prefix':/^(1\.|-)$/,'handler':function _0x507d8e(_0x609a6e,_0xee1444){var _0x5bd7c0=_0x5a4752,_0x432335=_0xee1444['prefix'][_0x5bd7c0(0x19a)];this[_0x5bd7c0(0x41b)]['scroll']['deleteAt'](_0x609a6e[_0x5bd7c0(0x320)]-_0x432335,_0x432335),this[_0x5bd7c0(0x41b)]['formatLine'](_0x609a6e['index']-_0x432335,0x1,_0x5bd7c0(0x423),_0x432335===0x1?'bullet':_0x5bd7c0(0x339),_0x4af8f5[_0x5bd7c0(0x413)][_0x5bd7c0(0x270)][_0x5bd7c0(0x439)]),this[_0x5bd7c0(0x41b)][_0x5bd7c0(0x45b)](_0x609a6e[_0x5bd7c0(0x320)]-_0x432335,_0x4af8f5[_0x5bd7c0(0x413)][_0x5bd7c0(0x270)][_0x5bd7c0(0x344)]);}}}};function _0x132b31(_0x129d00){var _0x46142c=_0x5a4752;this['quill'][_0x46142c(0x23f)](_0x129d00,_0x4af8f5[_0x46142c(0x413)]['sources']['USER']),this['quill']['setSelection'](_0x129d00[_0x46142c(0x320)],_0x4af8f5[_0x46142c(0x413)][_0x46142c(0x270)]['SILENT']),this[_0x46142c(0x41b)]['selection'][_0x46142c(0x32d)]();}function _0x17556d(_0x2e7e20,_0x471dbf){var _0x1297b4=_0x5a4752,_0x423348=this;_0x2e7e20[_0x1297b4(0x19a)]>0x0&&this[_0x1297b4(0x41b)][_0x1297b4(0x36a)]['deleteAt'](_0x2e7e20[_0x1297b4(0x320)],_0x2e7e20['length']);var _0x57fe1e=Object[_0x1297b4(0x3aa)](_0x471dbf[_0x1297b4(0x1d9)])[_0x1297b4(0x1c8)](function(_0x2e9f18,_0x289564){var _0x5900ad=_0x1297b4;return _0x3dda44[_0x5900ad(0x413)]['query'](_0x289564,_0x3dda44['default'][_0x5900ad(0x293)]['BLOCK'])&&!Array[_0x5900ad(0x3f3)](_0x471dbf[_0x5900ad(0x1d9)][_0x289564])&&(_0x2e9f18[_0x289564]=_0x471dbf[_0x5900ad(0x1d9)][_0x289564]),_0x2e9f18;},{});this[_0x1297b4(0x41b)][_0x1297b4(0x208)](_0x2e7e20['index'],'\x0a',_0x57fe1e,_0x4af8f5[_0x1297b4(0x413)][_0x1297b4(0x270)][_0x1297b4(0x439)]),this['quill'][_0x1297b4(0x1ba)]['scrollIntoView'](),Object[_0x1297b4(0x3aa)](_0x471dbf[_0x1297b4(0x1d9)])['forEach'](function(_0x333de1){var _0x1eaff7=_0x1297b4;if(_0x57fe1e[_0x333de1]!=null)return;if(Array['isArray'](_0x471dbf[_0x1eaff7(0x1d9)][_0x333de1]))return;if(_0x333de1==='link')return;_0x423348['quill'][_0x1eaff7(0x1d9)](_0x333de1,_0x471dbf['format'][_0x333de1],_0x4af8f5[_0x1eaff7(0x413)][_0x1eaff7(0x270)][_0x1eaff7(0x439)]);});}function _0x3d0556(_0x587231){var _0x2c56ce=_0x5a4752;return{'key':_0x4c3769[_0x2c56ce(0x3aa)][_0x2c56ce(0x1cd)],'shiftKey':!_0x587231,'format':{'code-block':!![]},'handler':function _0xae1e9c(_0x1f3626){var _0x568e62=_0x2c56ce,_0x3ac27b=_0x3dda44[_0x568e62(0x413)][_0x568e62(0x409)](_0x568e62(0x1b5)),_0x34137c=_0x1f3626[_0x568e62(0x320)],_0xf14ed3=_0x1f3626[_0x568e62(0x19a)],_0x21e5bc=this['quill']['scroll'][_0x568e62(0x3a9)](_0x3ac27b,_0x34137c),_0x2c4e7c=_0x1d5c89(_0x21e5bc,0x2),_0x16509d=_0x2c4e7c[0x0],_0x3ab865=_0x2c4e7c[0x1];if(_0x16509d==null)return;var _0x14bfd7=this[_0x568e62(0x41b)][_0x568e62(0x36a)][_0x568e62(0x438)](_0x16509d),_0x4ed575=_0x16509d[_0x568e62(0x25b)](_0x3ab865,!![])+0x1,_0x542e09=_0x16509d[_0x568e62(0x25b)](_0x14bfd7+_0x3ab865+_0xf14ed3),_0x2adc62=_0x16509d['domNode'][_0x568e62(0x29f)][_0x568e62(0x441)](_0x4ed575,_0x542e09)[_0x568e62(0x428)]('\x0a');_0x3ab865=0x0,_0x2adc62['forEach'](function(_0x5c51fe,_0x904455){var _0x4d4bb9=_0x568e62;if(_0x587231)_0x16509d[_0x4d4bb9(0x307)](_0x4ed575+_0x3ab865,_0x3ac27b[_0x4d4bb9(0x1cd)]),_0x3ab865+=_0x3ac27b['TAB']['length'],_0x904455===0x0?_0x34137c+=_0x3ac27b[_0x4d4bb9(0x1cd)]['length']:_0xf14ed3+=_0x3ac27b['TAB'][_0x4d4bb9(0x19a)];else _0x5c51fe['startsWith'](_0x3ac27b[_0x4d4bb9(0x1cd)])&&(_0x16509d[_0x4d4bb9(0x3c3)](_0x4ed575+_0x3ab865,_0x3ac27b[_0x4d4bb9(0x1cd)][_0x4d4bb9(0x19a)]),_0x3ab865-=_0x3ac27b['TAB'][_0x4d4bb9(0x19a)],_0x904455===0x0?_0x34137c-=_0x3ac27b[_0x4d4bb9(0x1cd)][_0x4d4bb9(0x19a)]:_0xf14ed3-=_0x3ac27b['TAB']['length']);_0x3ab865+=_0x5c51fe[_0x4d4bb9(0x19a)]+0x1;}),this[_0x568e62(0x41b)][_0x568e62(0x22f)](_0x4af8f5[_0x568e62(0x413)][_0x568e62(0x270)]['USER']),this[_0x568e62(0x41b)][_0x568e62(0x45b)](_0x34137c,_0xf14ed3,_0x4af8f5[_0x568e62(0x413)][_0x568e62(0x270)][_0x568e62(0x344)]);}};}function _0x291a90(_0x36082f){var _0x2259e7=_0x5a4752;return{'key':_0x36082f[0x0][_0x2259e7(0x3a2)](),'shortKey':!![],'handler':function _0xa9bb6b(_0x241254,_0x4d4c9e){var _0x46b45b=_0x2259e7;this[_0x46b45b(0x41b)][_0x46b45b(0x1d9)](_0x36082f,!_0x4d4c9e[_0x46b45b(0x1d9)][_0x36082f],_0x4af8f5[_0x46b45b(0x413)][_0x46b45b(0x270)][_0x46b45b(0x439)]);}};}function _0x552f1b(_0x44c31d){var _0x5e1e82=_0x5a4752;if(typeof _0x44c31d==='string'||typeof _0x44c31d===_0x5e1e82(0x3b6))return _0x552f1b({'key':_0x44c31d});(typeof _0x44c31d===_0x5e1e82(0x1ab)?'undefined':_0x5b45d2(_0x44c31d))==='object'&&(_0x44c31d=(0x0,_0x428e6d[_0x5e1e82(0x413)])(_0x44c31d,![]));if(typeof _0x44c31d[_0x5e1e82(0x3ea)]==='string'){if(_0x4c3769[_0x5e1e82(0x3aa)][_0x44c31d[_0x5e1e82(0x3ea)]['toUpperCase']()]!=null)_0x44c31d[_0x5e1e82(0x3ea)]=_0x4c3769[_0x5e1e82(0x3aa)][_0x44c31d['key'][_0x5e1e82(0x3a2)]()];else{if(_0x44c31d[_0x5e1e82(0x3ea)][_0x5e1e82(0x19a)]===0x1)_0x44c31d['key']=_0x44c31d[_0x5e1e82(0x3ea)][_0x5e1e82(0x3a2)]()['charCodeAt'](0x0);else return null;}}return _0x44c31d;}_0x38795e[_0x5a4752(0x413)]=_0x4c3769;},function(_0x500e26,_0x1ffb77,_0x5dde95){'use strict';var _0x2225e8=a9_0x50c4;var _0x43249f=_0x5dde95(0x1),_0x11dc3d=_0xbf4527(_0x43249f),_0x5cab89=_0x5dde95(0x2d),_0x463a54=_0x5dde95(0x30),_0x1e79cd=_0x5dde95(0x36),_0x1101d3=_0x5dde95(0x37),_0x596327=_0xbf4527(_0x1101d3),_0xeb16f5=_0x5dde95(0x38),_0x4ec806=_0xbf4527(_0xeb16f5),_0x387688=_0x5dde95(0x39),_0xee9a0f=_0xbf4527(_0x387688),_0x3bccb6=_0x5dde95(0x2e),_0x178de7=_0x5dde95(0x2f),_0x4bacbb=_0x5dde95(0x31),_0x253bc5=_0x5dde95(0x32),_0x37bd80=_0x5dde95(0x3a),_0x3152c4=_0xbf4527(_0x37bd80),_0x35bf54=_0x5dde95(0x3b),_0x1de267=_0xbf4527(_0x35bf54),_0x2a2816=_0x5dde95(0x3c),_0x130b83=_0xbf4527(_0x2a2816),_0x44a511=_0x5dde95(0x3d),_0x17e334=_0xbf4527(_0x44a511),_0x32dc65=_0x5dde95(0x3e),_0x3ab15f=_0xbf4527(_0x32dc65),_0x42012a=_0x5dde95(0x3f),_0x101388=_0xbf4527(_0x42012a),_0x381acb=_0x5dde95(0x40),_0x3dcb45=_0xbf4527(_0x381acb),_0x55fe2a=_0x5dde95(0x41),_0x2c0687=_0xbf4527(_0x55fe2a),_0x3fb8d4=_0x5dde95(0x1f),_0x5e5b95=_0xbf4527(_0x3fb8d4),_0x1fcc81=_0x5dde95(0x42),_0x3873c0=_0xbf4527(_0x1fcc81),_0x4ef44b=_0x5dde95(0x43),_0x3d7c9f=_0xbf4527(_0x4ef44b),_0x5ddb57=_0x5dde95(0x44),_0x1b67a1=_0xbf4527(_0x5ddb57),_0x1b2509=_0x5dde95(0x45),_0x5556cc=_0xbf4527(_0x1b2509),_0x4b6e42=_0x5dde95(0x65),_0x408118=_0xbf4527(_0x4b6e42),_0x3fb37c=_0x5dde95(0x67),_0x928559=_0xbf4527(_0x3fb37c),_0x24cd46=_0x5dde95(0x68),_0x47e216=_0xbf4527(_0x24cd46),_0x427ac1=_0x5dde95(0x69),_0x2db43e=_0xbf4527(_0x427ac1),_0xb2192=_0x5dde95(0x6a),_0x2b9408=_0xbf4527(_0xb2192),_0x6a350f=_0x5dde95(0x6c),_0x362894=_0xbf4527(_0x6a350f);function _0xbf4527(_0x19f497){var _0x5da5e2=a9_0x50c4;return _0x19f497&&_0x19f497[_0x5da5e2(0x2ad)]?_0x19f497:{'default':_0x19f497};}_0x11dc3d[_0x2225e8(0x413)]['register']({'attributors/class/align':_0x5cab89[_0x2225e8(0x1a3)],'attributors/class/background':_0x3bccb6['BackgroundClass'],'attributors/class/color':_0x178de7[_0x2225e8(0x1fc)],'attributors/class/direction':_0x463a54[_0x2225e8(0x3b1)],'attributors/class/font':_0x4bacbb[_0x2225e8(0x22b)],'attributors/class/size':_0x253bc5[_0x2225e8(0x1d1)],'attributors/style/align':_0x5cab89[_0x2225e8(0x366)],'attributors/style/background':_0x3bccb6[_0x2225e8(0x35c)],'attributors/style/color':_0x178de7[_0x2225e8(0x325)],'attributors/style/direction':_0x463a54[_0x2225e8(0x3b4)],'attributors/style/font':_0x4bacbb['FontStyle'],'attributors/style/size':_0x253bc5[_0x2225e8(0x3a3)]},!![]),_0x11dc3d[_0x2225e8(0x413)]['register']({'formats/align':_0x5cab89['AlignClass'],'formats/direction':_0x463a54[_0x2225e8(0x3b1)],'formats/indent':_0x1e79cd['IndentClass'],'formats/background':_0x3bccb6[_0x2225e8(0x35c)],'formats/color':_0x178de7[_0x2225e8(0x325)],'formats/font':_0x4bacbb[_0x2225e8(0x22b)],'formats/size':_0x253bc5[_0x2225e8(0x1d1)],'formats/blockquote':_0x596327[_0x2225e8(0x413)],'formats/code-block':_0x5e5b95[_0x2225e8(0x413)],'formats/header':_0x4ec806[_0x2225e8(0x413)],'formats/list':_0xee9a0f[_0x2225e8(0x413)],'formats/bold':_0x3152c4['default'],'formats/code':_0x3fb8d4[_0x2225e8(0x3ac)],'formats/italic':_0x1de267[_0x2225e8(0x413)],'formats/link':_0x130b83[_0x2225e8(0x413)],'formats/script':_0x17e334['default'],'formats/strike':_0x3ab15f[_0x2225e8(0x413)],'formats/underline':_0x101388['default'],'formats/image':_0x3dcb45[_0x2225e8(0x413)],'formats/video':_0x2c0687[_0x2225e8(0x413)],'formats/list/item':_0x387688[_0x2225e8(0x2c1)],'modules/formula':_0x3873c0[_0x2225e8(0x413)],'modules/syntax':_0x3d7c9f[_0x2225e8(0x413)],'modules/toolbar':_0x1b67a1[_0x2225e8(0x413)],'themes/bubble':_0x2b9408[_0x2225e8(0x413)],'themes/snow':_0x362894[_0x2225e8(0x413)],'ui/icons':_0x5556cc[_0x2225e8(0x413)],'ui/picker':_0x408118[_0x2225e8(0x413)],'ui/icon-picker':_0x47e216['default'],'ui/color-picker':_0x928559[_0x2225e8(0x413)],'ui/tooltip':_0x2db43e[_0x2225e8(0x413)]},!![]),_0x500e26[_0x2225e8(0x426)]=_0x11dc3d['default'];},function(_0x5c8f28,_0x5234b7,_0x1fad51){'use strict';var _0x59e2e5=a9_0x50c4;Object[_0x59e2e5(0x289)](_0x5234b7,_0x59e2e5(0x2ad),{'value':!![]}),_0x5234b7[_0x59e2e5(0x2bc)]=undefined;var _0x2f24e4=(function(){function _0x2c9302(_0x2f0c41,_0x863880){var _0x31f59b=a9_0x50c4;for(var _0x1fd0b1=0x0;_0x1fd0b1<_0x863880[_0x31f59b(0x19a)];_0x1fd0b1++){var _0x46d988=_0x863880[_0x1fd0b1];_0x46d988['enumerable']=_0x46d988[_0x31f59b(0x1eb)]||![],_0x46d988[_0x31f59b(0x203)]=!![];if(_0x31f59b(0x2e4)in _0x46d988)_0x46d988['writable']=!![];Object['defineProperty'](_0x2f0c41,_0x46d988[_0x31f59b(0x3ea)],_0x46d988);}}return function(_0x20d390,_0x286334,_0x2bb32c){var _0x1484ff=a9_0x50c4;if(_0x286334)_0x2c9302(_0x20d390[_0x1484ff(0x44f)],_0x286334);if(_0x2bb32c)_0x2c9302(_0x20d390,_0x2bb32c);return _0x20d390;};}()),_0x46c5a8=function _0x3c82b5(_0x1af9e6,_0x76016e,_0x5350cc){var _0x294af6=_0x59e2e5;if(_0x1af9e6===null)_0x1af9e6=Function[_0x294af6(0x44f)];var _0x4003f0=Object[_0x294af6(0x1e0)](_0x1af9e6,_0x76016e);if(_0x4003f0===undefined){var _0x1e6d1d=Object['getPrototypeOf'](_0x1af9e6);return _0x1e6d1d===null?undefined:_0x3c82b5(_0x1e6d1d,_0x76016e,_0x5350cc);}else{if('value'in _0x4003f0)return _0x4003f0[_0x294af6(0x2e4)];else{var _0x4e8522=_0x4003f0[_0x294af6(0x246)];if(_0x4e8522===undefined)return undefined;return _0x4e8522[_0x294af6(0x1e2)](_0x5350cc);}}},_0x34d41=_0x1fad51(0x2),_0x529f36=_0x2c87ff(_0x34d41);function _0x2c87ff(_0x212383){var _0x3a2644=_0x59e2e5;return _0x212383&&_0x212383[_0x3a2644(0x2ad)]?_0x212383:{'default':_0x212383};}function _0xa93d5f(_0x50a956,_0x46d4e8){var _0x41390b=_0x59e2e5;if(!(_0x50a956 instanceof _0x46d4e8))throw new TypeError(_0x41390b(0x2eb));}function _0x2e302f(_0x158abb,_0x1dd3db){var _0x2bd4f0=_0x59e2e5;if(!_0x158abb)throw new ReferenceError(_0x2bd4f0(0x434));return _0x1dd3db&&(typeof _0x1dd3db===_0x2bd4f0(0x2e1)||typeof _0x1dd3db===_0x2bd4f0(0x33b))?_0x1dd3db:_0x158abb;}function _0x2a0cf9(_0x7828be,_0x774c4c){var _0x5d28cf=_0x59e2e5;if(typeof _0x774c4c!==_0x5d28cf(0x33b)&&_0x774c4c!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x774c4c);_0x7828be[_0x5d28cf(0x44f)]=Object[_0x5d28cf(0x372)](_0x774c4c&&_0x774c4c[_0x5d28cf(0x44f)],{'constructor':{'value':_0x7828be,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x774c4c)Object[_0x5d28cf(0x1ea)]?Object[_0x5d28cf(0x1ea)](_0x7828be,_0x774c4c):_0x7828be[_0x5d28cf(0x1b4)]=_0x774c4c;}var _0x51d189=function(_0x319702){var _0x53ea7a=_0x59e2e5;_0x2a0cf9(_0x581c9e,_0x319702);function _0x581c9e(){var _0x43921b=a9_0x50c4;return _0xa93d5f(this,_0x581c9e),_0x2e302f(this,(_0x581c9e['__proto__']||Object[_0x43921b(0x2e0)](_0x581c9e))['apply'](this,arguments));}return _0x2f24e4(_0x581c9e,[{'key':_0x53ea7a(0x184),'value':function _0x497c32(_0x267eea,_0x4f5437){var _0x2a59e4=_0x53ea7a;if(_0x4f5437==='+1'||_0x4f5437==='-1'){var _0x391e45=this[_0x2a59e4(0x2e4)](_0x267eea)||0x0;_0x4f5437=_0x4f5437==='+1'?_0x391e45+0x1:_0x391e45-0x1;}return _0x4f5437===0x0?(this[_0x2a59e4(0x190)](_0x267eea),!![]):_0x46c5a8(_0x581c9e[_0x2a59e4(0x44f)][_0x2a59e4(0x1b4)]||Object[_0x2a59e4(0x2e0)](_0x581c9e['prototype']),_0x2a59e4(0x184),this)['call'](this,_0x267eea,_0x4f5437);}},{'key':'value','value':function _0x55d1b9(_0x3875b9){var _0x387ae8=_0x53ea7a;return parseInt(_0x46c5a8(_0x581c9e[_0x387ae8(0x44f)][_0x387ae8(0x1b4)]||Object[_0x387ae8(0x2e0)](_0x581c9e[_0x387ae8(0x44f)]),_0x387ae8(0x2e4),this)[_0x387ae8(0x1e2)](this,_0x3875b9))||undefined;}}]),_0x581c9e;}(_0x529f36['default'][_0x59e2e5(0x385)][_0x59e2e5(0x1da)]),_0x3f4bdc=new _0x51d189(_0x59e2e5(0x3bd),'ql-indent',{'scope':_0x529f36['default'][_0x59e2e5(0x293)][_0x59e2e5(0x30e)],'whitelist':[0x1,0x2,0x3,0x4,0x5,0x6,0x7,0x8]});_0x5234b7['IndentClass']=_0x3f4bdc;},function(_0x9914dc,_0x19b74a,_0x4d6372){'use strict';var _0x5c5ef3=a9_0x50c4;Object[_0x5c5ef3(0x289)](_0x19b74a,_0x5c5ef3(0x2ad),{'value':!![]});var _0x3e634d=_0x4d6372(0x20),_0x403569=_0x58fecb(_0x3e634d);function _0x58fecb(_0x436ee1){var _0x3fc07b=_0x5c5ef3;return _0x436ee1&&_0x436ee1[_0x3fc07b(0x2ad)]?_0x436ee1:{'default':_0x436ee1};}function _0x214454(_0x58e02a,_0xed5b20){var _0x5724fb=_0x5c5ef3;if(!(_0x58e02a instanceof _0xed5b20))throw new TypeError(_0x5724fb(0x2eb));}function _0x14cccd(_0x1bd5a1,_0x3b4bc4){var _0x3eccd8=_0x5c5ef3;if(!_0x1bd5a1)throw new ReferenceError(_0x3eccd8(0x434));return _0x3b4bc4&&(typeof _0x3b4bc4===_0x3eccd8(0x2e1)||typeof _0x3b4bc4===_0x3eccd8(0x33b))?_0x3b4bc4:_0x1bd5a1;}function _0x221a1f(_0x220374,_0x5a64cf){var _0x496d1=_0x5c5ef3;if(typeof _0x5a64cf!==_0x496d1(0x33b)&&_0x5a64cf!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x5a64cf);_0x220374[_0x496d1(0x44f)]=Object[_0x496d1(0x372)](_0x5a64cf&&_0x5a64cf['prototype'],{'constructor':{'value':_0x220374,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x5a64cf)Object['setPrototypeOf']?Object[_0x496d1(0x1ea)](_0x220374,_0x5a64cf):_0x220374['__proto__']=_0x5a64cf;}var _0x210785=function(_0x20a487){_0x221a1f(_0x163177,_0x20a487);function _0x163177(){var _0x820dbe=a9_0x50c4;return _0x214454(this,_0x163177),_0x14cccd(this,(_0x163177['__proto__']||Object[_0x820dbe(0x2e0)](_0x163177))[_0x820dbe(0x39e)](this,arguments));}return _0x163177;}(_0x403569[_0x5c5ef3(0x413)]);_0x210785[_0x5c5ef3(0x242)]=_0x5c5ef3(0x1ec),_0x210785[_0x5c5ef3(0x200)]='blockquote',_0x19b74a[_0x5c5ef3(0x413)]=_0x210785;},function(_0x217507,_0x479c40,_0x5909aa){'use strict';var _0x1aa1c2=a9_0x50c4;Object[_0x1aa1c2(0x289)](_0x479c40,_0x1aa1c2(0x2ad),{'value':!![]});var _0x301d23=(function(){function _0x395d9d(_0x258e6a,_0x307281){var _0x49bcd6=a9_0x50c4;for(var _0x5b09fc=0x0;_0x5b09fc<_0x307281[_0x49bcd6(0x19a)];_0x5b09fc++){var _0x494fb4=_0x307281[_0x5b09fc];_0x494fb4[_0x49bcd6(0x1eb)]=_0x494fb4[_0x49bcd6(0x1eb)]||![],_0x494fb4['configurable']=!![];if(_0x49bcd6(0x2e4)in _0x494fb4)_0x494fb4['writable']=!![];Object[_0x49bcd6(0x289)](_0x258e6a,_0x494fb4[_0x49bcd6(0x3ea)],_0x494fb4);}}return function(_0x243a86,_0x4d9377,_0x55ea27){var _0x499f3c=a9_0x50c4;if(_0x4d9377)_0x395d9d(_0x243a86[_0x499f3c(0x44f)],_0x4d9377);if(_0x55ea27)_0x395d9d(_0x243a86,_0x55ea27);return _0x243a86;};}()),_0x5077ea=_0x5909aa(0x20),_0x350ed4=_0x1172c7(_0x5077ea);function _0x1172c7(_0x4cf47d){var _0x54371b=_0x1aa1c2;return _0x4cf47d&&_0x4cf47d[_0x54371b(0x2ad)]?_0x4cf47d:{'default':_0x4cf47d};}function _0x17f58e(_0xf43b15,_0x10eb18){var _0x424fcc=_0x1aa1c2;if(!(_0xf43b15 instanceof _0x10eb18))throw new TypeError(_0x424fcc(0x2eb));}function _0x348c2c(_0x133223,_0x307275){var _0x312781=_0x1aa1c2;if(!_0x133223)throw new ReferenceError(_0x312781(0x434));return _0x307275&&(typeof _0x307275===_0x312781(0x2e1)||typeof _0x307275===_0x312781(0x33b))?_0x307275:_0x133223;}function _0x21a8f7(_0x2a8ff8,_0x4dad79){var _0xfedc7a=_0x1aa1c2;if(typeof _0x4dad79!==_0xfedc7a(0x33b)&&_0x4dad79!==null)throw new TypeError(_0xfedc7a(0x448)+typeof _0x4dad79);_0x2a8ff8[_0xfedc7a(0x44f)]=Object[_0xfedc7a(0x372)](_0x4dad79&&_0x4dad79[_0xfedc7a(0x44f)],{'constructor':{'value':_0x2a8ff8,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x4dad79)Object[_0xfedc7a(0x1ea)]?Object[_0xfedc7a(0x1ea)](_0x2a8ff8,_0x4dad79):_0x2a8ff8['__proto__']=_0x4dad79;}var _0xe9a20b=function(_0x31fa21){var _0x300497=_0x1aa1c2;_0x21a8f7(_0x592d8a,_0x31fa21);function _0x592d8a(){var _0x255220=a9_0x50c4;return _0x17f58e(this,_0x592d8a),_0x348c2c(this,(_0x592d8a[_0x255220(0x1b4)]||Object['getPrototypeOf'](_0x592d8a))[_0x255220(0x39e)](this,arguments));}return _0x301d23(_0x592d8a,null,[{'key':_0x300497(0x1a2),'value':function _0x52c513(_0x4546eb){var _0x325b36=_0x300497;return this[_0x325b36(0x200)][_0x325b36(0x39a)](_0x4546eb[_0x325b36(0x200)])+0x1;}}]),_0x592d8a;}(_0x350ed4[_0x1aa1c2(0x413)]);_0xe9a20b[_0x1aa1c2(0x242)]='header',_0xe9a20b[_0x1aa1c2(0x200)]=['H1','H2','H3','H4','H5','H6'],_0x479c40[_0x1aa1c2(0x413)]=_0xe9a20b;},function(_0x51479e,_0x1e169b,_0x5a6dc6){'use strict';var _0x49b381=a9_0x50c4;Object['defineProperty'](_0x1e169b,_0x49b381(0x2ad),{'value':!![]}),_0x1e169b[_0x49b381(0x413)]=_0x1e169b[_0x49b381(0x2c1)]=undefined;var _0x3da91e=(function(){function _0x5700e5(_0x242d25,_0x221194){var _0x154fef=a9_0x50c4;for(var _0x3f2a56=0x0;_0x3f2a56<_0x221194[_0x154fef(0x19a)];_0x3f2a56++){var _0x24c53f=_0x221194[_0x3f2a56];_0x24c53f[_0x154fef(0x1eb)]=_0x24c53f[_0x154fef(0x1eb)]||![],_0x24c53f[_0x154fef(0x203)]=!![];if(_0x154fef(0x2e4)in _0x24c53f)_0x24c53f['writable']=!![];Object[_0x154fef(0x289)](_0x242d25,_0x24c53f['key'],_0x24c53f);}}return function(_0x485dd9,_0x16b221,_0xf20656){var _0x251735=a9_0x50c4;if(_0x16b221)_0x5700e5(_0x485dd9[_0x251735(0x44f)],_0x16b221);if(_0xf20656)_0x5700e5(_0x485dd9,_0xf20656);return _0x485dd9;};}()),_0x35a793=function _0x24c4ca(_0x4bc021,_0xf4178,_0x2caa02){var _0x923fb1=_0x49b381;if(_0x4bc021===null)_0x4bc021=Function[_0x923fb1(0x44f)];var _0x1f63d2=Object[_0x923fb1(0x1e0)](_0x4bc021,_0xf4178);if(_0x1f63d2===undefined){var _0x1933b0=Object[_0x923fb1(0x2e0)](_0x4bc021);return _0x1933b0===null?undefined:_0x24c4ca(_0x1933b0,_0xf4178,_0x2caa02);}else{if(_0x923fb1(0x2e4)in _0x1f63d2)return _0x1f63d2['value'];else{var _0x1a5d59=_0x1f63d2[_0x923fb1(0x246)];if(_0x1a5d59===undefined)return undefined;return _0x1a5d59[_0x923fb1(0x1e2)](_0x2caa02);}}},_0x54d50a=_0x5a6dc6(0x19),_0xd8f234=_0x7df792(_0x54d50a),_0x2a7d33=_0x5a6dc6(0x14),_0x4bf66b=_0x7df792(_0x2a7d33),_0x1a24e3=_0x5a6dc6(0x2),_0xf80b91=_0x7df792(_0x1a24e3),_0x15d1fe=_0x5a6dc6(0x20),_0x5c59c8=_0x7df792(_0x15d1fe),_0x125fdc=_0x5a6dc6(0x2a),_0x47f343=_0x7df792(_0x125fdc);function _0x7df792(_0x3f3674){var _0x3fbde0=_0x49b381;return _0x3f3674&&_0x3f3674[_0x3fbde0(0x2ad)]?_0x3f3674:{'default':_0x3f3674};}function _0x177970(_0x6ca3b,_0x415e6d,_0x54a6c0){return _0x415e6d in _0x6ca3b?Object['defineProperty'](_0x6ca3b,_0x415e6d,{'value':_0x54a6c0,'enumerable':!![],'configurable':!![],'writable':!![]}):_0x6ca3b[_0x415e6d]=_0x54a6c0,_0x6ca3b;}function _0x129dc0(_0x5e6c21,_0x305b75){var _0x3683db=_0x49b381;if(!(_0x5e6c21 instanceof _0x305b75))throw new TypeError(_0x3683db(0x2eb));}function _0x1d08bf(_0x4ce2b0,_0x43a822){var _0x585436=_0x49b381;if(!_0x4ce2b0)throw new ReferenceError(_0x585436(0x434));return _0x43a822&&(typeof _0x43a822===_0x585436(0x2e1)||typeof _0x43a822==='function')?_0x43a822:_0x4ce2b0;}function _0x3f16aa(_0x37e302,_0x10b1a8){var _0x41abd0=_0x49b381;if(typeof _0x10b1a8!=='function'&&_0x10b1a8!==null)throw new TypeError(_0x41abd0(0x448)+typeof _0x10b1a8);_0x37e302[_0x41abd0(0x44f)]=Object[_0x41abd0(0x372)](_0x10b1a8&&_0x10b1a8[_0x41abd0(0x44f)],{'constructor':{'value':_0x37e302,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x10b1a8)Object[_0x41abd0(0x1ea)]?Object[_0x41abd0(0x1ea)](_0x37e302,_0x10b1a8):_0x37e302[_0x41abd0(0x1b4)]=_0x10b1a8;}var _0x38c731=function(_0x445648){var _0x408dc2=_0x49b381;_0x3f16aa(_0x1b64c1,_0x445648);function _0x1b64c1(){var _0x3fb9b7=a9_0x50c4;return _0x129dc0(this,_0x1b64c1),_0x1d08bf(this,(_0x1b64c1[_0x3fb9b7(0x1b4)]||Object[_0x3fb9b7(0x2e0)](_0x1b64c1))[_0x3fb9b7(0x39e)](this,arguments));}return _0x3da91e(_0x1b64c1,[{'key':_0x408dc2(0x1d9),'value':function _0x87a3ae(_0x5de539,_0x276635){var _0x2988e5=_0x408dc2;_0x5de539===_0x3ddb85[_0x2988e5(0x242)]&&!_0x276635?this[_0x2988e5(0x2a4)](_0xf80b91[_0x2988e5(0x413)][_0x2988e5(0x372)](this['statics'][_0x2988e5(0x368)])):_0x35a793(_0x1b64c1[_0x2988e5(0x44f)][_0x2988e5(0x1b4)]||Object[_0x2988e5(0x2e0)](_0x1b64c1[_0x2988e5(0x44f)]),_0x2988e5(0x1d9),this)['call'](this,_0x5de539,_0x276635);}},{'key':_0x408dc2(0x190),'value':function _0x2038d4(){var _0x3a9252=_0x408dc2;this['prev']==null&&this[_0x3a9252(0x211)]==null?this['parent'][_0x3a9252(0x190)]():_0x35a793(_0x1b64c1[_0x3a9252(0x44f)][_0x3a9252(0x1b4)]||Object[_0x3a9252(0x2e0)](_0x1b64c1[_0x3a9252(0x44f)]),'remove',this)['call'](this);}},{'key':'replaceWith','value':function _0x319676(_0x999169,_0x48a9d8){var _0x54029c=_0x408dc2;return this[_0x54029c(0x349)][_0x54029c(0x1d5)](this[_0x54029c(0x438)](this[_0x54029c(0x349)]),this[_0x54029c(0x19a)]()),_0x999169===this[_0x54029c(0x349)][_0x54029c(0x3a6)][_0x54029c(0x242)]?(this[_0x54029c(0x349)][_0x54029c(0x2a4)](_0x999169,_0x48a9d8),this):(this[_0x54029c(0x349)][_0x54029c(0x1c1)](),_0x35a793(_0x1b64c1['prototype'][_0x54029c(0x1b4)]||Object['getPrototypeOf'](_0x1b64c1[_0x54029c(0x44f)]),'replaceWith',this)[_0x54029c(0x1e2)](this,_0x999169,_0x48a9d8));}}],[{'key':_0x408dc2(0x1a2),'value':function _0x13794d(_0x5aff5c){var _0x1db182=_0x408dc2;return _0x5aff5c[_0x1db182(0x200)]===this[_0x1db182(0x200)]?undefined:_0x35a793(_0x1b64c1[_0x1db182(0x1b4)]||Object[_0x1db182(0x2e0)](_0x1b64c1),_0x1db182(0x1a2),this)[_0x1db182(0x1e2)](this,_0x5aff5c);}}]),_0x1b64c1;}(_0x5c59c8[_0x49b381(0x413)]);_0x38c731[_0x49b381(0x242)]=_0x49b381(0x22e),_0x38c731[_0x49b381(0x200)]='LI';var _0x3ddb85=function(_0x5a76c0){var _0x2bc302=_0x49b381;_0x3f16aa(_0x516bb8,_0x5a76c0);function _0x516bb8(){var _0x64067c=a9_0x50c4;return _0x129dc0(this,_0x516bb8),_0x1d08bf(this,(_0x516bb8['__proto__']||Object[_0x64067c(0x2e0)](_0x516bb8))[_0x64067c(0x39e)](this,arguments));}return _0x3da91e(_0x516bb8,[{'key':_0x2bc302(0x1d9),'value':function _0x5b7592(_0x382bb5,_0x5ebde5){var _0x5169da=_0x2bc302;this[_0x5169da(0x3b7)][_0x5169da(0x19a)]>0x0&&this[_0x5169da(0x3b7)][_0x5169da(0x32e)]['format'](_0x382bb5,_0x5ebde5);}},{'key':'formats','value':function _0x296df5(){var _0x180ff5=_0x2bc302;return _0x177970({},this[_0x180ff5(0x3a6)][_0x180ff5(0x242)],this[_0x180ff5(0x3a6)][_0x180ff5(0x1a2)](this[_0x180ff5(0x3ad)]));}},{'key':_0x2bc302(0x3fc),'value':function _0x13c350(_0x3ec714,_0x3d5046){var _0xe53c66=_0x2bc302;if(_0x3ec714 instanceof _0x38c731)_0x35a793(_0x516bb8[_0xe53c66(0x44f)][_0xe53c66(0x1b4)]||Object['getPrototypeOf'](_0x516bb8[_0xe53c66(0x44f)]),'insertBefore',this)['call'](this,_0x3ec714,_0x3d5046);else{var _0x4aa2ef=_0x3d5046==null?this['length']():_0x3d5046[_0xe53c66(0x438)](this),_0x35e90d=this['split'](_0x4aa2ef);_0x35e90d[_0xe53c66(0x349)][_0xe53c66(0x3fc)](_0x3ec714,_0x35e90d);}}},{'key':_0x2bc302(0x23e),'value':function _0x4cce59(){var _0x14cf54=_0x2bc302;_0x35a793(_0x516bb8[_0x14cf54(0x44f)][_0x14cf54(0x1b4)]||Object[_0x14cf54(0x2e0)](_0x516bb8[_0x14cf54(0x44f)]),'optimize',this)['call'](this);var _0x2bb24c=this[_0x14cf54(0x211)];_0x2bb24c!=null&&_0x2bb24c[_0x14cf54(0x2f9)]===this&&_0x2bb24c[_0x14cf54(0x3a6)][_0x14cf54(0x242)]===this['statics']['blotName']&&_0x2bb24c['domNode'][_0x14cf54(0x200)]===this[_0x14cf54(0x3ad)][_0x14cf54(0x200)]&&(_0x2bb24c[_0x14cf54(0x2a0)](this),_0x2bb24c[_0x14cf54(0x190)]());}},{'key':_0x2bc302(0x2ff),'value':function _0x5f2adf(_0x562b29){var _0x1f36fc=_0x2bc302;if(_0x562b29['statics'][_0x1f36fc(0x242)]!==this[_0x1f36fc(0x3a6)][_0x1f36fc(0x242)]){var _0x128026=_0xf80b91['default'][_0x1f36fc(0x372)](this[_0x1f36fc(0x3a6)][_0x1f36fc(0x1fa)]);_0x562b29[_0x1f36fc(0x2a0)](_0x128026),this[_0x1f36fc(0x27e)](_0x128026);}_0x35a793(_0x516bb8[_0x1f36fc(0x44f)][_0x1f36fc(0x1b4)]||Object[_0x1f36fc(0x2e0)](_0x516bb8[_0x1f36fc(0x44f)]),_0x1f36fc(0x2ff),this)[_0x1f36fc(0x1e2)](this,_0x562b29);}}],[{'key':_0x2bc302(0x372),'value':function _0x1b74f3(_0x33f1ba){var _0x30d449=_0x2bc302;if(_0x33f1ba==='ordered')_0x33f1ba='OL';else _0x33f1ba===_0x30d449(0x267)&&(_0x33f1ba='UL');return _0x35a793(_0x516bb8['__proto__']||Object[_0x30d449(0x2e0)](_0x516bb8),_0x30d449(0x372),this)[_0x30d449(0x1e2)](this,_0x33f1ba);}},{'key':_0x2bc302(0x1a2),'value':function _0x38836f(_0x33d36e){var _0x401d62=_0x2bc302;if(_0x33d36e[_0x401d62(0x200)]==='OL')return _0x401d62(0x339);if(_0x33d36e[_0x401d62(0x200)]==='UL')return _0x401d62(0x267);return undefined;}}]),_0x516bb8;}(_0x47f343['default']);_0x3ddb85['blotName']=_0x49b381(0x423),_0x3ddb85[_0x49b381(0x368)]=_0xf80b91[_0x49b381(0x413)][_0x49b381(0x293)]['BLOCK_BLOT'],_0x3ddb85[_0x49b381(0x200)]=['OL','UL'],_0x3ddb85['defaultChild']='list-item',_0x3ddb85[_0x49b381(0x23a)]=[_0x38c731],_0x1e169b[_0x49b381(0x2c1)]=_0x38c731,_0x1e169b['default']=_0x3ddb85;},function(_0x56880b,_0x362773,_0xb5d5bc){'use strict';var _0x3d8e20=a9_0x50c4;Object[_0x3d8e20(0x289)](_0x362773,_0x3d8e20(0x2ad),{'value':!![]});var _0x1f87e1=(function(){function _0x230a86(_0x4ce22e,_0x2011c9){var _0x528789=a9_0x50c4;for(var _0x3f8288=0x0;_0x3f8288<_0x2011c9[_0x528789(0x19a)];_0x3f8288++){var _0x5bf76d=_0x2011c9[_0x3f8288];_0x5bf76d[_0x528789(0x1eb)]=_0x5bf76d[_0x528789(0x1eb)]||![],_0x5bf76d['configurable']=!![];if(_0x528789(0x2e4)in _0x5bf76d)_0x5bf76d[_0x528789(0x40f)]=!![];Object['defineProperty'](_0x4ce22e,_0x5bf76d['key'],_0x5bf76d);}}return function(_0x412c94,_0x5f16e9,_0x26472a){var _0x61f174=a9_0x50c4;if(_0x5f16e9)_0x230a86(_0x412c94[_0x61f174(0x44f)],_0x5f16e9);if(_0x26472a)_0x230a86(_0x412c94,_0x26472a);return _0x412c94;};}()),_0x200269=function _0x58ea51(_0x122beb,_0x12fd88,_0x8118c3){var _0x4c3969=_0x3d8e20;if(_0x122beb===null)_0x122beb=Function['prototype'];var _0x192f78=Object[_0x4c3969(0x1e0)](_0x122beb,_0x12fd88);if(_0x192f78===undefined){var _0x36a3f4=Object['getPrototypeOf'](_0x122beb);return _0x36a3f4===null?undefined:_0x58ea51(_0x36a3f4,_0x12fd88,_0x8118c3);}else{if(_0x4c3969(0x2e4)in _0x192f78)return _0x192f78[_0x4c3969(0x2e4)];else{var _0x824c56=_0x192f78['get'];if(_0x824c56===undefined)return undefined;return _0x824c56[_0x4c3969(0x1e2)](_0x8118c3);}}},_0x43308d=_0xb5d5bc(0x23),_0x271a27=_0x129d29(_0x43308d);function _0x129d29(_0x8811bd){return _0x8811bd&&_0x8811bd['__esModule']?_0x8811bd:{'default':_0x8811bd};}function _0x19f76b(_0x5172ad,_0x33b0f2){var _0x465975=_0x3d8e20;if(!(_0x5172ad instanceof _0x33b0f2))throw new TypeError(_0x465975(0x2eb));}function _0x253a87(_0x371d1a,_0x8aa617){var _0x66da66=_0x3d8e20;if(!_0x371d1a)throw new ReferenceError(_0x66da66(0x434));return _0x8aa617&&(typeof _0x8aa617===_0x66da66(0x2e1)||typeof _0x8aa617===_0x66da66(0x33b))?_0x8aa617:_0x371d1a;}function _0x2156ad(_0x26f682,_0x14bfd3){var _0x1f8335=_0x3d8e20;if(typeof _0x14bfd3!==_0x1f8335(0x33b)&&_0x14bfd3!==null)throw new TypeError(_0x1f8335(0x448)+typeof _0x14bfd3);_0x26f682[_0x1f8335(0x44f)]=Object[_0x1f8335(0x372)](_0x14bfd3&&_0x14bfd3[_0x1f8335(0x44f)],{'constructor':{'value':_0x26f682,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x14bfd3)Object[_0x1f8335(0x1ea)]?Object['setPrototypeOf'](_0x26f682,_0x14bfd3):_0x26f682[_0x1f8335(0x1b4)]=_0x14bfd3;}var _0x8c9026=function(_0x4aa288){var _0x5596ca=_0x3d8e20;_0x2156ad(_0x392123,_0x4aa288);function _0x392123(){var _0x3503c5=a9_0x50c4;return _0x19f76b(this,_0x392123),_0x253a87(this,(_0x392123['__proto__']||Object['getPrototypeOf'](_0x392123))[_0x3503c5(0x39e)](this,arguments));}return _0x1f87e1(_0x392123,[{'key':_0x5596ca(0x23e),'value':function _0x2c9d32(){var _0x3534b8=_0x5596ca;_0x200269(_0x392123[_0x3534b8(0x44f)][_0x3534b8(0x1b4)]||Object['getPrototypeOf'](_0x392123['prototype']),'optimize',this)[_0x3534b8(0x1e2)](this),this[_0x3534b8(0x3ad)][_0x3534b8(0x200)]!==this['statics'][_0x3534b8(0x200)][0x0]&&this['replaceWith'](this[_0x3534b8(0x3a6)]['blotName']);}}],[{'key':_0x5596ca(0x372),'value':function _0x38edd6(_0x4f9dd2){var _0xe38d89=_0x5596ca;return _0x200269(_0x392123['__proto__']||Object[_0xe38d89(0x2e0)](_0x392123),'create',this)[_0xe38d89(0x1e2)](this);}},{'key':_0x5596ca(0x1a2),'value':function _0x5a2d45(_0x5cbde9){return!![];}}]),_0x392123;}(_0x271a27[_0x3d8e20(0x413)]);_0x8c9026['blotName']=_0x3d8e20(0x181),_0x8c9026[_0x3d8e20(0x200)]=[_0x3d8e20(0x28e),'B'],_0x362773[_0x3d8e20(0x413)]=_0x8c9026;},function(_0x5f13ce,_0x518a7e,_0x21a6d4){'use strict';var _0x464ce4=a9_0x50c4;Object['defineProperty'](_0x518a7e,_0x464ce4(0x2ad),{'value':!![]});var _0x1ebdb9=_0x21a6d4(0x3a),_0x1bc697=_0x40d537(_0x1ebdb9);function _0x40d537(_0x50d0a5){var _0x1dbddf=_0x464ce4;return _0x50d0a5&&_0x50d0a5[_0x1dbddf(0x2ad)]?_0x50d0a5:{'default':_0x50d0a5};}function _0x4f4849(_0x342b44,_0x41195b){var _0x4e4ee4=_0x464ce4;if(!(_0x342b44 instanceof _0x41195b))throw new TypeError(_0x4e4ee4(0x2eb));}function _0x40827a(_0x45520d,_0x3bee48){var _0x1c7283=_0x464ce4;if(!_0x45520d)throw new ReferenceError('this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called');return _0x3bee48&&(typeof _0x3bee48===_0x1c7283(0x2e1)||typeof _0x3bee48===_0x1c7283(0x33b))?_0x3bee48:_0x45520d;}function _0xa05b65(_0x5a9dad,_0x2f4adc){var _0x191d88=_0x464ce4;if(typeof _0x2f4adc!==_0x191d88(0x33b)&&_0x2f4adc!==null)throw new TypeError(_0x191d88(0x448)+typeof _0x2f4adc);_0x5a9dad[_0x191d88(0x44f)]=Object[_0x191d88(0x372)](_0x2f4adc&&_0x2f4adc[_0x191d88(0x44f)],{'constructor':{'value':_0x5a9dad,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x2f4adc)Object[_0x191d88(0x1ea)]?Object[_0x191d88(0x1ea)](_0x5a9dad,_0x2f4adc):_0x5a9dad[_0x191d88(0x1b4)]=_0x2f4adc;}var _0x574eef=function(_0x3447b4){_0xa05b65(_0x4dd2a4,_0x3447b4);function _0x4dd2a4(){var _0x35d6e9=a9_0x50c4;return _0x4f4849(this,_0x4dd2a4),_0x40827a(this,(_0x4dd2a4[_0x35d6e9(0x1b4)]||Object['getPrototypeOf'](_0x4dd2a4))[_0x35d6e9(0x39e)](this,arguments));}return _0x4dd2a4;}(_0x1bc697[_0x464ce4(0x413)]);_0x574eef['blotName']='italic',_0x574eef[_0x464ce4(0x200)]=['EM','I'],_0x518a7e['default']=_0x574eef;},function(_0x208ad9,_0x3da899,_0x359c5f){'use strict';var _0x228cb6=a9_0x50c4;Object['defineProperty'](_0x3da899,_0x228cb6(0x2ad),{'value':!![]}),_0x3da899[_0x228cb6(0x26b)]=_0x3da899['default']=undefined;var _0x42e75e=(function(){function _0x2628ed(_0x5257da,_0x175d7a){var _0xcbaa42=a9_0x50c4;for(var _0x5ab8c7=0x0;_0x5ab8c7<_0x175d7a[_0xcbaa42(0x19a)];_0x5ab8c7++){var _0x26099d=_0x175d7a[_0x5ab8c7];_0x26099d[_0xcbaa42(0x1eb)]=_0x26099d[_0xcbaa42(0x1eb)]||![],_0x26099d[_0xcbaa42(0x203)]=!![];if(_0xcbaa42(0x2e4)in _0x26099d)_0x26099d['writable']=!![];Object['defineProperty'](_0x5257da,_0x26099d[_0xcbaa42(0x3ea)],_0x26099d);}}return function(_0x5ac02f,_0x32094d,_0x45c890){var _0xa97662=a9_0x50c4;if(_0x32094d)_0x2628ed(_0x5ac02f[_0xa97662(0x44f)],_0x32094d);if(_0x45c890)_0x2628ed(_0x5ac02f,_0x45c890);return _0x5ac02f;};}()),_0x409ce7=function _0x1d5946(_0x49ce34,_0x21cb5c,_0x428bf3){var _0x497b4e=_0x228cb6;if(_0x49ce34===null)_0x49ce34=Function[_0x497b4e(0x44f)];var _0x3bb2f0=Object['getOwnPropertyDescriptor'](_0x49ce34,_0x21cb5c);if(_0x3bb2f0===undefined){var _0x488976=Object[_0x497b4e(0x2e0)](_0x49ce34);return _0x488976===null?undefined:_0x1d5946(_0x488976,_0x21cb5c,_0x428bf3);}else{if(_0x497b4e(0x2e4)in _0x3bb2f0)return _0x3bb2f0['value'];else{var _0x5e7b8d=_0x3bb2f0[_0x497b4e(0x246)];if(_0x5e7b8d===undefined)return undefined;return _0x5e7b8d[_0x497b4e(0x1e2)](_0x428bf3);}}},_0x4b8354=_0x359c5f(0x23),_0x9f41e1=_0x5b3184(_0x4b8354);function _0x5b3184(_0x3d3074){var _0x4e40a9=_0x228cb6;return _0x3d3074&&_0x3d3074[_0x4e40a9(0x2ad)]?_0x3d3074:{'default':_0x3d3074};}function _0x1e878d(_0x5550da,_0x360209){var _0x5b35e4=_0x228cb6;if(!(_0x5550da instanceof _0x360209))throw new TypeError(_0x5b35e4(0x2eb));}function _0x2fe008(_0x39774d,_0xc384b2){var _0x1e1353=_0x228cb6;if(!_0x39774d)throw new ReferenceError(_0x1e1353(0x434));return _0xc384b2&&(typeof _0xc384b2===_0x1e1353(0x2e1)||typeof _0xc384b2===_0x1e1353(0x33b))?_0xc384b2:_0x39774d;}function _0x1e06e1(_0x161ec1,_0x57693a){var _0x2d6a04=_0x228cb6;if(typeof _0x57693a!==_0x2d6a04(0x33b)&&_0x57693a!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x57693a);_0x161ec1[_0x2d6a04(0x44f)]=Object[_0x2d6a04(0x372)](_0x57693a&&_0x57693a[_0x2d6a04(0x44f)],{'constructor':{'value':_0x161ec1,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x57693a)Object[_0x2d6a04(0x1ea)]?Object[_0x2d6a04(0x1ea)](_0x161ec1,_0x57693a):_0x161ec1['__proto__']=_0x57693a;}var _0x57d739=function(_0x31438e){var _0x6d7411=_0x228cb6;_0x1e06e1(_0x2be0d7,_0x31438e);function _0x2be0d7(){var _0x54d324=a9_0x50c4;return _0x1e878d(this,_0x2be0d7),_0x2fe008(this,(_0x2be0d7[_0x54d324(0x1b4)]||Object['getPrototypeOf'](_0x2be0d7))[_0x54d324(0x39e)](this,arguments));}return _0x42e75e(_0x2be0d7,[{'key':_0x6d7411(0x1d9),'value':function _0x5e1583(_0x17af85,_0x489a08){var _0x586aad=_0x6d7411;if(_0x17af85!==this['statics'][_0x586aad(0x242)]||!_0x489a08)return _0x409ce7(_0x2be0d7[_0x586aad(0x44f)][_0x586aad(0x1b4)]||Object[_0x586aad(0x2e0)](_0x2be0d7[_0x586aad(0x44f)]),'format',this)[_0x586aad(0x1e2)](this,_0x17af85,_0x489a08);_0x489a08=this['constructor'][_0x586aad(0x26b)](_0x489a08),this[_0x586aad(0x3ad)][_0x586aad(0x1ed)](_0x586aad(0x3da),_0x489a08);}}],[{'key':_0x6d7411(0x372),'value':function _0x56722b(_0x3fdcca){var _0x35747e=_0x6d7411,_0x5c5a72=_0x409ce7(_0x2be0d7['__proto__']||Object['getPrototypeOf'](_0x2be0d7),_0x35747e(0x372),this)[_0x35747e(0x1e2)](this,_0x3fdcca);return _0x3fdcca=this[_0x35747e(0x26b)](_0x3fdcca),_0x5c5a72['setAttribute'](_0x35747e(0x3da),_0x3fdcca),_0x5c5a72['setAttribute']('target',_0x35747e(0x238)),_0x5c5a72;}},{'key':_0x6d7411(0x1a2),'value':function _0x4b04b8(_0x2f8a4b){var _0x5b8f1d=_0x6d7411;return _0x2f8a4b[_0x5b8f1d(0x3ae)]('href');}},{'key':_0x6d7411(0x26b),'value':function _0x2f2278(_0x3dd903){var _0x4d5414=_0x6d7411;return _0x270ed1(_0x3dd903,[_0x4d5414(0x2ec),_0x4d5414(0x282),_0x4d5414(0x19c)])?_0x3dd903:this[_0x4d5414(0x2f6)];}}]),_0x2be0d7;}(_0x9f41e1[_0x228cb6(0x413)]);_0x57d739[_0x228cb6(0x242)]=_0x228cb6(0x2ac),_0x57d739[_0x228cb6(0x200)]='A',_0x57d739[_0x228cb6(0x2f6)]=_0x228cb6(0x3bb);function _0x270ed1(_0x5d0c9b,_0x3fc043){var _0x53a9cb=_0x228cb6,_0x3d0c3e=document[_0x53a9cb(0x295)]('a');_0x3d0c3e[_0x53a9cb(0x3da)]=_0x5d0c9b;var _0x5358dd=_0x3d0c3e[_0x53a9cb(0x3da)][_0x53a9cb(0x441)](0x0,_0x3d0c3e[_0x53a9cb(0x3da)][_0x53a9cb(0x39a)](':'));return _0x3fc043[_0x53a9cb(0x39a)](_0x5358dd)>-0x1;}_0x3da899[_0x228cb6(0x413)]=_0x57d739,_0x3da899[_0x228cb6(0x26b)]=_0x270ed1;},function(_0x406a00,_0x38620b,_0x36c333){'use strict';var _0x146355=a9_0x50c4;Object['defineProperty'](_0x38620b,_0x146355(0x2ad),{'value':!![]});var _0x35ae31=(function(){function _0x28ffe7(_0x3278df,_0x847717){var _0x3a84ff=a9_0x50c4;for(var _0x557642=0x0;_0x557642<_0x847717[_0x3a84ff(0x19a)];_0x557642++){var _0x388629=_0x847717[_0x557642];_0x388629[_0x3a84ff(0x1eb)]=_0x388629['enumerable']||![],_0x388629[_0x3a84ff(0x203)]=!![];if(_0x3a84ff(0x2e4)in _0x388629)_0x388629[_0x3a84ff(0x40f)]=!![];Object[_0x3a84ff(0x289)](_0x3278df,_0x388629[_0x3a84ff(0x3ea)],_0x388629);}}return function(_0x520e86,_0x54698d,_0x10e5c3){var _0xaa28db=a9_0x50c4;if(_0x54698d)_0x28ffe7(_0x520e86[_0xaa28db(0x44f)],_0x54698d);if(_0x10e5c3)_0x28ffe7(_0x520e86,_0x10e5c3);return _0x520e86;};}()),_0x3179bd=function _0x4d60cf(_0x4772ac,_0x5b70d3,_0x164ace){var _0x564f6b=_0x146355;if(_0x4772ac===null)_0x4772ac=Function[_0x564f6b(0x44f)];var _0x3c1dbf=Object['getOwnPropertyDescriptor'](_0x4772ac,_0x5b70d3);if(_0x3c1dbf===undefined){var _0x42db17=Object['getPrototypeOf'](_0x4772ac);return _0x42db17===null?undefined:_0x4d60cf(_0x42db17,_0x5b70d3,_0x164ace);}else{if(_0x564f6b(0x2e4)in _0x3c1dbf)return _0x3c1dbf[_0x564f6b(0x2e4)];else{var _0x3f1103=_0x3c1dbf[_0x564f6b(0x246)];if(_0x3f1103===undefined)return undefined;return _0x3f1103[_0x564f6b(0x1e2)](_0x164ace);}}},_0x2642ea=_0x36c333(0x23),_0x4c4f3f=_0x4677c8(_0x2642ea);function _0x4677c8(_0x48a222){var _0x3f3c39=_0x146355;return _0x48a222&&_0x48a222[_0x3f3c39(0x2ad)]?_0x48a222:{'default':_0x48a222};}function _0x38dfef(_0x522f25,_0x4098a9){var _0x430c45=_0x146355;if(!(_0x522f25 instanceof _0x4098a9))throw new TypeError(_0x430c45(0x2eb));}function _0x213b40(_0x7b4e01,_0x110489){var _0x393cab=_0x146355;if(!_0x7b4e01)throw new ReferenceError(_0x393cab(0x434));return _0x110489&&(typeof _0x110489===_0x393cab(0x2e1)||typeof _0x110489===_0x393cab(0x33b))?_0x110489:_0x7b4e01;}function _0x47fdff(_0x304ad3,_0xb4db23){var _0xe051db=_0x146355;if(typeof _0xb4db23!==_0xe051db(0x33b)&&_0xb4db23!==null)throw new TypeError(_0xe051db(0x448)+typeof _0xb4db23);_0x304ad3[_0xe051db(0x44f)]=Object[_0xe051db(0x372)](_0xb4db23&&_0xb4db23[_0xe051db(0x44f)],{'constructor':{'value':_0x304ad3,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0xb4db23)Object[_0xe051db(0x1ea)]?Object[_0xe051db(0x1ea)](_0x304ad3,_0xb4db23):_0x304ad3['__proto__']=_0xb4db23;}var _0x101343=function(_0x35fa09){var _0x1dd8bc=_0x146355;_0x47fdff(_0x1032bc,_0x35fa09);function _0x1032bc(){var _0x3f3b70=a9_0x50c4;return _0x38dfef(this,_0x1032bc),_0x213b40(this,(_0x1032bc[_0x3f3b70(0x1b4)]||Object['getPrototypeOf'](_0x1032bc))[_0x3f3b70(0x39e)](this,arguments));}return _0x35ae31(_0x1032bc,null,[{'key':_0x1dd8bc(0x372),'value':function _0x18aa30(_0x4c4fd1){var _0xdc773b=_0x1dd8bc;if(_0x4c4fd1===_0xdc773b(0x37a))return document[_0xdc773b(0x295)](_0xdc773b(0x228));else return _0x4c4fd1==='sub'?document[_0xdc773b(0x295)](_0xdc773b(0x2d2)):_0x3179bd(_0x1032bc[_0xdc773b(0x1b4)]||Object[_0xdc773b(0x2e0)](_0x1032bc),_0xdc773b(0x372),this)['call'](this,_0x4c4fd1);}},{'key':'formats','value':function _0x55eed5(_0x221909){var _0x3270ba=_0x1dd8bc;if(_0x221909[_0x3270ba(0x200)]===_0x3270ba(0x277))return _0x3270ba(0x2d2);if(_0x221909[_0x3270ba(0x200)]===_0x3270ba(0x1af))return _0x3270ba(0x37a);return undefined;}}]),_0x1032bc;}(_0x4c4f3f[_0x146355(0x413)]);_0x101343['blotName']='script',_0x101343[_0x146355(0x200)]=[_0x146355(0x277),'SUP'],_0x38620b[_0x146355(0x413)]=_0x101343;},function(_0x155ac0,_0x38d21f,_0x5b22ef){'use strict';var _0x44c72a=a9_0x50c4;Object[_0x44c72a(0x289)](_0x38d21f,_0x44c72a(0x2ad),{'value':!![]});var _0x475b49=_0x5b22ef(0x23),_0x121a82=_0x2dab95(_0x475b49);function _0x2dab95(_0x5c46df){return _0x5c46df&&_0x5c46df['__esModule']?_0x5c46df:{'default':_0x5c46df};}function _0x4f688f(_0x8eb962,_0x491987){var _0x170471=_0x44c72a;if(!(_0x8eb962 instanceof _0x491987))throw new TypeError(_0x170471(0x2eb));}function _0x337269(_0x262d95,_0x59a178){var _0x6c66f6=_0x44c72a;if(!_0x262d95)throw new ReferenceError('this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called');return _0x59a178&&(typeof _0x59a178===_0x6c66f6(0x2e1)||typeof _0x59a178===_0x6c66f6(0x33b))?_0x59a178:_0x262d95;}function _0x2d446b(_0x2dfb3c,_0xe749ae){var _0x271604=_0x44c72a;if(typeof _0xe749ae!=='function'&&_0xe749ae!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0xe749ae);_0x2dfb3c[_0x271604(0x44f)]=Object[_0x271604(0x372)](_0xe749ae&&_0xe749ae['prototype'],{'constructor':{'value':_0x2dfb3c,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0xe749ae)Object[_0x271604(0x1ea)]?Object[_0x271604(0x1ea)](_0x2dfb3c,_0xe749ae):_0x2dfb3c['__proto__']=_0xe749ae;}var _0x466c07=function(_0x30174f){_0x2d446b(_0x4a0a91,_0x30174f);function _0x4a0a91(){var _0x33c05b=a9_0x50c4;return _0x4f688f(this,_0x4a0a91),_0x337269(this,(_0x4a0a91[_0x33c05b(0x1b4)]||Object[_0x33c05b(0x2e0)](_0x4a0a91))[_0x33c05b(0x39e)](this,arguments));}return _0x4a0a91;}(_0x121a82[_0x44c72a(0x413)]);_0x466c07[_0x44c72a(0x242)]=_0x44c72a(0x1f0),_0x466c07[_0x44c72a(0x200)]='S',_0x38d21f[_0x44c72a(0x413)]=_0x466c07;},function(_0x31d2a7,_0x1d171f,_0x1d223c){'use strict';var _0x25f235=a9_0x50c4;Object[_0x25f235(0x289)](_0x1d171f,_0x25f235(0x2ad),{'value':!![]});var _0x231165=_0x1d223c(0x23),_0x854dd6=_0x5daefb(_0x231165);function _0x5daefb(_0x38dfad){var _0x9412d0=_0x25f235;return _0x38dfad&&_0x38dfad[_0x9412d0(0x2ad)]?_0x38dfad:{'default':_0x38dfad};}function _0x58d004(_0x4efbeb,_0x48828d){var _0x1708c3=_0x25f235;if(!(_0x4efbeb instanceof _0x48828d))throw new TypeError(_0x1708c3(0x2eb));}function _0x2500c1(_0x5ebaa3,_0x4855c5){var _0x3f3777=_0x25f235;if(!_0x5ebaa3)throw new ReferenceError(_0x3f3777(0x434));return _0x4855c5&&(typeof _0x4855c5===_0x3f3777(0x2e1)||typeof _0x4855c5==='function')?_0x4855c5:_0x5ebaa3;}function _0x594110(_0x3521b5,_0x39b356){var _0x55be4b=_0x25f235;if(typeof _0x39b356!==_0x55be4b(0x33b)&&_0x39b356!==null)throw new TypeError(_0x55be4b(0x448)+typeof _0x39b356);_0x3521b5[_0x55be4b(0x44f)]=Object['create'](_0x39b356&&_0x39b356[_0x55be4b(0x44f)],{'constructor':{'value':_0x3521b5,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x39b356)Object[_0x55be4b(0x1ea)]?Object['setPrototypeOf'](_0x3521b5,_0x39b356):_0x3521b5[_0x55be4b(0x1b4)]=_0x39b356;}var _0xd0a05a=function(_0x415db0){_0x594110(_0x26dae0,_0x415db0);function _0x26dae0(){var _0x2443cb=a9_0x50c4;return _0x58d004(this,_0x26dae0),_0x2500c1(this,(_0x26dae0[_0x2443cb(0x1b4)]||Object[_0x2443cb(0x2e0)](_0x26dae0))['apply'](this,arguments));}return _0x26dae0;}(_0x854dd6[_0x25f235(0x413)]);_0xd0a05a[_0x25f235(0x242)]='underline',_0xd0a05a['tagName']='U',_0x1d171f['default']=_0xd0a05a;},function(_0x76042a,_0x3eb4bd,_0x1598ea){'use strict';var _0x3c662c=a9_0x50c4;Object[_0x3c662c(0x289)](_0x3eb4bd,_0x3c662c(0x2ad),{'value':!![]});var _0x107204=(function(){function _0x5b08dd(_0x1dd146,_0x26984b){var _0x5e3364=a9_0x50c4;for(var _0x2518ec=0x0;_0x2518ec<_0x26984b[_0x5e3364(0x19a)];_0x2518ec++){var _0x1ab186=_0x26984b[_0x2518ec];_0x1ab186[_0x5e3364(0x1eb)]=_0x1ab186[_0x5e3364(0x1eb)]||![],_0x1ab186[_0x5e3364(0x203)]=!![];if(_0x5e3364(0x2e4)in _0x1ab186)_0x1ab186[_0x5e3364(0x40f)]=!![];Object[_0x5e3364(0x289)](_0x1dd146,_0x1ab186['key'],_0x1ab186);}}return function(_0x1141a5,_0x5adc05,_0x5a434b){var _0x252cd3=a9_0x50c4;if(_0x5adc05)_0x5b08dd(_0x1141a5[_0x252cd3(0x44f)],_0x5adc05);if(_0x5a434b)_0x5b08dd(_0x1141a5,_0x5a434b);return _0x1141a5;};}()),_0x1c7a3f=function _0x2f8440(_0x14d579,_0x43bef2,_0x9bf3f4){var _0x3a5309=_0x3c662c;if(_0x14d579===null)_0x14d579=Function[_0x3a5309(0x44f)];var _0x3262f7=Object[_0x3a5309(0x1e0)](_0x14d579,_0x43bef2);if(_0x3262f7===undefined){var _0x360a59=Object['getPrototypeOf'](_0x14d579);return _0x360a59===null?undefined:_0x2f8440(_0x360a59,_0x43bef2,_0x9bf3f4);}else{if(_0x3a5309(0x2e4)in _0x3262f7)return _0x3262f7['value'];else{var _0x151d70=_0x3262f7[_0x3a5309(0x246)];if(_0x151d70===undefined)return undefined;return _0x151d70['call'](_0x9bf3f4);}}},_0xe041eb=_0x1598ea(0x22),_0x3c347d=_0x18bd8b(_0xe041eb),_0xb7d2fc=_0x1598ea(0x3c),_0x94273=_0x18bd8b(_0xb7d2fc);function _0x18bd8b(_0x388426){var _0x5ae792=_0x3c662c;return _0x388426&&_0x388426[_0x5ae792(0x2ad)]?_0x388426:{'default':_0x388426};}function _0x3eff5d(_0x403a96,_0x51deb7){var _0x3d1d36=_0x3c662c;if(!(_0x403a96 instanceof _0x51deb7))throw new TypeError(_0x3d1d36(0x2eb));}function _0x138241(_0x14059c,_0x2e3586){var _0x4fb487=_0x3c662c;if(!_0x14059c)throw new ReferenceError('this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called');return _0x2e3586&&(typeof _0x2e3586==='object'||typeof _0x2e3586===_0x4fb487(0x33b))?_0x2e3586:_0x14059c;}function _0x5a33d2(_0x2dfd9a,_0x2f49cc){var _0x4f65ee=_0x3c662c;if(typeof _0x2f49cc!=='function'&&_0x2f49cc!==null)throw new TypeError(_0x4f65ee(0x448)+typeof _0x2f49cc);_0x2dfd9a[_0x4f65ee(0x44f)]=Object[_0x4f65ee(0x372)](_0x2f49cc&&_0x2f49cc['prototype'],{'constructor':{'value':_0x2dfd9a,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x2f49cc)Object['setPrototypeOf']?Object[_0x4f65ee(0x1ea)](_0x2dfd9a,_0x2f49cc):_0x2dfd9a[_0x4f65ee(0x1b4)]=_0x2f49cc;}var _0x898271=function(_0x172773){var _0x542aac=_0x3c662c;_0x5a33d2(_0x38b0f8,_0x172773);function _0x38b0f8(){var _0x29858a=a9_0x50c4;return _0x3eff5d(this,_0x38b0f8),_0x138241(this,(_0x38b0f8['__proto__']||Object[_0x29858a(0x2e0)](_0x38b0f8))[_0x29858a(0x39e)](this,arguments));}return _0x107204(_0x38b0f8,[{'key':'format','value':function _0x2002b7(_0x2509f9,_0x307e91){var _0x5abbc4=a9_0x50c4;_0x2509f9==='height'||_0x2509f9===_0x5abbc4(0x22c)?_0x307e91?this[_0x5abbc4(0x3ad)][_0x5abbc4(0x1ed)](_0x2509f9,_0x307e91):this[_0x5abbc4(0x3ad)][_0x5abbc4(0x3e2)](_0x2509f9):_0x1c7a3f(_0x38b0f8['prototype'][_0x5abbc4(0x1b4)]||Object[_0x5abbc4(0x2e0)](_0x38b0f8['prototype']),'format',this)[_0x5abbc4(0x1e2)](this,_0x2509f9,_0x307e91);}}],[{'key':'create','value':function _0x3ac028(_0x2d2fd1){var _0x281a97=a9_0x50c4,_0x3722dd=_0x1c7a3f(_0x38b0f8[_0x281a97(0x1b4)]||Object[_0x281a97(0x2e0)](_0x38b0f8),_0x281a97(0x372),this)[_0x281a97(0x1e2)](this,_0x2d2fd1);return typeof _0x2d2fd1===_0x281a97(0x187)&&_0x3722dd['setAttribute']('src',this[_0x281a97(0x26b)](_0x2d2fd1)),_0x3722dd;}},{'key':_0x542aac(0x1a2),'value':function _0x24fc9a(_0x359317){var _0xb55aab=_0x542aac,_0x3757f5={};if(_0x359317['hasAttribute'](_0xb55aab(0x42a)))_0x3757f5[_0xb55aab(0x42a)]=_0x359317[_0xb55aab(0x3ae)](_0xb55aab(0x42a));if(_0x359317[_0xb55aab(0x1e9)](_0xb55aab(0x22c)))_0x3757f5[_0xb55aab(0x22c)]=_0x359317['getAttribute']('width');return _0x3757f5;}},{'key':_0x542aac(0x3ff),'value':function _0x568fc2(_0x25d09c){var _0x449a07=_0x542aac;return/\.(jpe?g|gif|png)$/[_0x449a07(0x26e)](_0x25d09c)||/^data:image\/.+;base64/[_0x449a07(0x26e)](_0x25d09c);}},{'key':_0x542aac(0x26b),'value':function _0x388b40(_0x18a8d9){var _0x3f47b1=_0x542aac;return(0x0,_0xb7d2fc[_0x3f47b1(0x26b)])(_0x18a8d9,[_0x3f47b1(0x2ec),_0x3f47b1(0x282),'data'])?_0x18a8d9:_0x3f47b1(0x443);}},{'key':_0x542aac(0x2e4),'value':function _0x572495(_0x21f9f6){return _0x21f9f6['getAttribute']('src');}}]),_0x38b0f8;}(_0x3c347d[_0x3c662c(0x413)]);_0x898271[_0x3c662c(0x242)]='image',_0x898271[_0x3c662c(0x200)]=_0x3c662c(0x1ca),_0x3eb4bd[_0x3c662c(0x413)]=_0x898271;},function(_0x416c59,_0x2dabb1,_0x45ff7f){'use strict';var _0x3bd19c=a9_0x50c4;Object[_0x3bd19c(0x289)](_0x2dabb1,'__esModule',{'value':!![]});var _0x2859db=(function(){function _0x292f41(_0x59466c,_0x2e25ad){var _0x5ec41e=a9_0x50c4;for(var _0x3f5b52=0x0;_0x3f5b52<_0x2e25ad[_0x5ec41e(0x19a)];_0x3f5b52++){var _0x5e72fb=_0x2e25ad[_0x3f5b52];_0x5e72fb['enumerable']=_0x5e72fb[_0x5ec41e(0x1eb)]||![],_0x5e72fb['configurable']=!![];if(_0x5ec41e(0x2e4)in _0x5e72fb)_0x5e72fb[_0x5ec41e(0x40f)]=!![];Object[_0x5ec41e(0x289)](_0x59466c,_0x5e72fb[_0x5ec41e(0x3ea)],_0x5e72fb);}}return function(_0x44fa56,_0x4edb64,_0x5d64c2){var _0x5e6393=a9_0x50c4;if(_0x4edb64)_0x292f41(_0x44fa56[_0x5e6393(0x44f)],_0x4edb64);if(_0x5d64c2)_0x292f41(_0x44fa56,_0x5d64c2);return _0x44fa56;};}()),_0x132f7b=function _0x200cb3(_0x3bb1a0,_0x16a3c0,_0x339384){var _0x56893c=_0x3bd19c;if(_0x3bb1a0===null)_0x3bb1a0=Function['prototype'];var _0xf26d6=Object[_0x56893c(0x1e0)](_0x3bb1a0,_0x16a3c0);if(_0xf26d6===undefined){var _0x2e6714=Object[_0x56893c(0x2e0)](_0x3bb1a0);return _0x2e6714===null?undefined:_0x200cb3(_0x2e6714,_0x16a3c0,_0x339384);}else{if(_0x56893c(0x2e4)in _0xf26d6)return _0xf26d6['value'];else{var _0x1b96b9=_0xf26d6['get'];if(_0x1b96b9===undefined)return undefined;return _0x1b96b9[_0x56893c(0x1e2)](_0x339384);}}},_0x9562a1=_0x45ff7f(0x20),_0x20c718=_0x45ff7f(0x3c),_0x2d2511=_0x16cd87(_0x20c718);function _0x16cd87(_0x1f26a8){var _0x51bcfd=_0x3bd19c;return _0x1f26a8&&_0x1f26a8[_0x51bcfd(0x2ad)]?_0x1f26a8:{'default':_0x1f26a8};}function _0x18ccb3(_0x58fdaa,_0x1177bc){var _0x486b7d=_0x3bd19c;if(!(_0x58fdaa instanceof _0x1177bc))throw new TypeError(_0x486b7d(0x2eb));}function _0x212400(_0x2321ed,_0x422b69){var _0x3c90c5=_0x3bd19c;if(!_0x2321ed)throw new ReferenceError('this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called');return _0x422b69&&(typeof _0x422b69===_0x3c90c5(0x2e1)||typeof _0x422b69===_0x3c90c5(0x33b))?_0x422b69:_0x2321ed;}function _0x1f81db(_0x5801a5,_0x5de8e8){var _0x43c86e=_0x3bd19c;if(typeof _0x5de8e8!=='function'&&_0x5de8e8!==null)throw new TypeError(_0x43c86e(0x448)+typeof _0x5de8e8);_0x5801a5[_0x43c86e(0x44f)]=Object['create'](_0x5de8e8&&_0x5de8e8[_0x43c86e(0x44f)],{'constructor':{'value':_0x5801a5,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x5de8e8)Object['setPrototypeOf']?Object[_0x43c86e(0x1ea)](_0x5801a5,_0x5de8e8):_0x5801a5[_0x43c86e(0x1b4)]=_0x5de8e8;}var _0x2ff726=function(_0x5a142b){var _0x44dd5d=_0x3bd19c;_0x1f81db(_0x59d7da,_0x5a142b);function _0x59d7da(){var _0x1166fa=a9_0x50c4;return _0x18ccb3(this,_0x59d7da),_0x212400(this,(_0x59d7da[_0x1166fa(0x1b4)]||Object[_0x1166fa(0x2e0)](_0x59d7da))[_0x1166fa(0x39e)](this,arguments));}return _0x2859db(_0x59d7da,[{'key':'format','value':function _0x39f2ea(_0x29b0a3,_0x3b7091){var _0x4adf46=a9_0x50c4;_0x29b0a3===_0x4adf46(0x42a)||_0x29b0a3===_0x4adf46(0x22c)?_0x3b7091?this[_0x4adf46(0x3ad)]['setAttribute'](_0x29b0a3,_0x3b7091):this[_0x4adf46(0x3ad)][_0x4adf46(0x3e2)](_0x29b0a3):_0x132f7b(_0x59d7da[_0x4adf46(0x44f)][_0x4adf46(0x1b4)]||Object[_0x4adf46(0x2e0)](_0x59d7da[_0x4adf46(0x44f)]),_0x4adf46(0x1d9),this)[_0x4adf46(0x1e2)](this,_0x29b0a3,_0x3b7091);}}],[{'key':_0x44dd5d(0x372),'value':function _0x290170(_0x454d63){var _0xd2142a=_0x44dd5d,_0x4ff633=_0x132f7b(_0x59d7da[_0xd2142a(0x1b4)]||Object[_0xd2142a(0x2e0)](_0x59d7da),'create',this)['call'](this,_0x454d63);return _0x4ff633[_0xd2142a(0x1ed)](_0xd2142a(0x278),'0'),_0x4ff633[_0xd2142a(0x1ed)]('allowfullscreen',!![]),_0x4ff633[_0xd2142a(0x1ed)]('src',this[_0xd2142a(0x26b)](_0x454d63)),_0x4ff633;}},{'key':_0x44dd5d(0x1a2),'value':function _0x5477fd(_0x586121){var _0x5cc87a=_0x44dd5d,_0x43dd94={};if(_0x586121[_0x5cc87a(0x1e9)](_0x5cc87a(0x42a)))_0x43dd94[_0x5cc87a(0x42a)]=_0x586121[_0x5cc87a(0x3ae)](_0x5cc87a(0x42a));if(_0x586121[_0x5cc87a(0x1e9)]('width'))_0x43dd94[_0x5cc87a(0x22c)]=_0x586121['getAttribute']('width');return _0x43dd94;}},{'key':_0x44dd5d(0x26b),'value':function _0x34c9be(_0x556639){var _0x245fcc=_0x44dd5d;return _0x2d2511[_0x245fcc(0x413)][_0x245fcc(0x26b)](_0x556639);}},{'key':_0x44dd5d(0x2e4),'value':function _0x5cc886(_0x444a33){var _0x5b40f0=_0x44dd5d;return _0x444a33[_0x5b40f0(0x3ae)](_0x5b40f0(0x1b2));}}]),_0x59d7da;}(_0x9562a1['BlockEmbed']);_0x2ff726[_0x3bd19c(0x242)]=_0x3bd19c(0x3cd),_0x2ff726[_0x3bd19c(0x2d6)]=_0x3bd19c(0x1cc),_0x2ff726['tagName']='IFRAME',_0x2dabb1[_0x3bd19c(0x413)]=_0x2ff726;},function(_0x355887,_0x235813,_0x887243){'use strict';var _0xa06db8=a9_0x50c4;Object['defineProperty'](_0x235813,_0xa06db8(0x2ad),{'value':!![]}),_0x235813['default']=_0x235813[_0xa06db8(0x28d)]=undefined;var _0x5005c0=(function(){function _0x483489(_0x921b91,_0x2e6f38){var _0x4d12c5=a9_0x50c4;for(var _0x2d1aef=0x0;_0x2d1aef<_0x2e6f38[_0x4d12c5(0x19a)];_0x2d1aef++){var _0x2d5384=_0x2e6f38[_0x2d1aef];_0x2d5384[_0x4d12c5(0x1eb)]=_0x2d5384[_0x4d12c5(0x1eb)]||![],_0x2d5384[_0x4d12c5(0x203)]=!![];if(_0x4d12c5(0x2e4)in _0x2d5384)_0x2d5384['writable']=!![];Object[_0x4d12c5(0x289)](_0x921b91,_0x2d5384[_0x4d12c5(0x3ea)],_0x2d5384);}}return function(_0x21003b,_0x4de2cc,_0x3a0bfd){var _0x97b989=a9_0x50c4;if(_0x4de2cc)_0x483489(_0x21003b[_0x97b989(0x44f)],_0x4de2cc);if(_0x3a0bfd)_0x483489(_0x21003b,_0x3a0bfd);return _0x21003b;};}()),_0xa77108=function _0x5b81bb(_0x3473b4,_0x1b18fc,_0x11fbf1){var _0x3ce3b8=_0xa06db8;if(_0x3473b4===null)_0x3473b4=Function[_0x3ce3b8(0x44f)];var _0x3ab496=Object[_0x3ce3b8(0x1e0)](_0x3473b4,_0x1b18fc);if(_0x3ab496===undefined){var _0x57a0f8=Object[_0x3ce3b8(0x2e0)](_0x3473b4);return _0x57a0f8===null?undefined:_0x5b81bb(_0x57a0f8,_0x1b18fc,_0x11fbf1);}else{if(_0x3ce3b8(0x2e4)in _0x3ab496)return _0x3ab496[_0x3ce3b8(0x2e4)];else{var _0x1f32e4=_0x3ab496['get'];if(_0x1f32e4===undefined)return undefined;return _0x1f32e4[_0x3ce3b8(0x1e2)](_0x11fbf1);}}},_0x5ea050=_0x887243(0x22),_0x5f307a=_0x78f805(_0x5ea050),_0x57e37b=_0x887243(0x12),_0x27fa65=_0x78f805(_0x57e37b);function _0x78f805(_0x5df49d){var _0x31583a=_0xa06db8;return _0x5df49d&&_0x5df49d[_0x31583a(0x2ad)]?_0x5df49d:{'default':_0x5df49d};}function _0x2d73b5(_0x14ace5,_0x5920b){if(!(_0x14ace5 instanceof _0x5920b))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x8604f3(_0x2839b7,_0x50cadd){var _0x2b91e3=_0xa06db8;if(!_0x2839b7)throw new ReferenceError(_0x2b91e3(0x434));return _0x50cadd&&(typeof _0x50cadd===_0x2b91e3(0x2e1)||typeof _0x50cadd===_0x2b91e3(0x33b))?_0x50cadd:_0x2839b7;}function _0x211b92(_0x4c18f1,_0xe1e7e0){var _0x564487=_0xa06db8;if(typeof _0xe1e7e0!==_0x564487(0x33b)&&_0xe1e7e0!==null)throw new TypeError(_0x564487(0x448)+typeof _0xe1e7e0);_0x4c18f1[_0x564487(0x44f)]=Object[_0x564487(0x372)](_0xe1e7e0&&_0xe1e7e0['prototype'],{'constructor':{'value':_0x4c18f1,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0xe1e7e0)Object[_0x564487(0x1ea)]?Object[_0x564487(0x1ea)](_0x4c18f1,_0xe1e7e0):_0x4c18f1[_0x564487(0x1b4)]=_0xe1e7e0;}var _0x378338=function(_0x5269da){var _0x375c6e=_0xa06db8;_0x211b92(_0x4f4d1f,_0x5269da);function _0x4f4d1f(){var _0x5ba442=a9_0x50c4;return _0x2d73b5(this,_0x4f4d1f),_0x8604f3(this,(_0x4f4d1f[_0x5ba442(0x1b4)]||Object['getPrototypeOf'](_0x4f4d1f))['apply'](this,arguments));}return _0x5005c0(_0x4f4d1f,[{'key':_0x375c6e(0x320),'value':function _0x1b33bf(_0x557eca,_0x38c9b2){return 0x1;}}],[{'key':'create','value':function _0x3e8eef(_0x31246c){var _0x166ba1=_0x375c6e,_0x4c8664=_0xa77108(_0x4f4d1f[_0x166ba1(0x1b4)]||Object[_0x166ba1(0x2e0)](_0x4f4d1f),'create',this)[_0x166ba1(0x1e2)](this,_0x31246c);return typeof _0x31246c===_0x166ba1(0x187)&&(katex[_0x166ba1(0x2fd)](_0x31246c,_0x4c8664),_0x4c8664[_0x166ba1(0x1ed)](_0x166ba1(0x30c),_0x31246c)),_0x4c8664[_0x166ba1(0x1ed)](_0x166ba1(0x3b2),![]),_0x4c8664;}},{'key':'value','value':function _0x3fb037(_0x15607b){var _0x53bd20=_0x375c6e;return _0x15607b['getAttribute'](_0x53bd20(0x30c));}}]),_0x4f4d1f;}(_0x5f307a[_0xa06db8(0x413)]);_0x378338[_0xa06db8(0x242)]=_0xa06db8(0x273),_0x378338['className']=_0xa06db8(0x2cf),_0x378338['tagName']=_0xa06db8(0x390);function _0x1bc133(){var _0x196561=_0xa06db8;if(window[_0x196561(0x19b)]==null)throw new Error('Formula\x20module\x20requires\x20KaTeX.');_0x27fa65[_0x196561(0x413)][_0x196561(0x425)](_0x378338,!![]);}_0x235813['FormulaBlot']=_0x378338,_0x235813[_0xa06db8(0x413)]=_0x1bc133;},function(_0x1a4190,_0x3c28e0,_0x5d6ff5){'use strict';var _0x3618ed=a9_0x50c4;Object[_0x3618ed(0x289)](_0x3c28e0,'__esModule',{'value':!![]}),_0x3c28e0[_0x3618ed(0x413)]=_0x3c28e0['CodeToken']=_0x3c28e0['CodeBlock']=undefined;var _0xe334f9=(function(){function _0x3c2536(_0x17ed79,_0xe70968){var _0x517241=a9_0x50c4;for(var _0x4deeb8=0x0;_0x4deeb8<_0xe70968[_0x517241(0x19a)];_0x4deeb8++){var _0x235764=_0xe70968[_0x4deeb8];_0x235764[_0x517241(0x1eb)]=_0x235764['enumerable']||![],_0x235764['configurable']=!![];if(_0x517241(0x2e4)in _0x235764)_0x235764[_0x517241(0x40f)]=!![];Object[_0x517241(0x289)](_0x17ed79,_0x235764[_0x517241(0x3ea)],_0x235764);}}return function(_0x5a7c59,_0x4ed45e,_0x3b3a0d){var _0x1062e1=a9_0x50c4;if(_0x4ed45e)_0x3c2536(_0x5a7c59[_0x1062e1(0x44f)],_0x4ed45e);if(_0x3b3a0d)_0x3c2536(_0x5a7c59,_0x3b3a0d);return _0x5a7c59;};}()),_0x3e16d3=function _0x37737a(_0x46dba6,_0x5027e8,_0x418e51){var _0x395187=_0x3618ed;if(_0x46dba6===null)_0x46dba6=Function[_0x395187(0x44f)];var _0x1c01e2=Object[_0x395187(0x1e0)](_0x46dba6,_0x5027e8);if(_0x1c01e2===undefined){var _0x3db4d9=Object[_0x395187(0x2e0)](_0x46dba6);return _0x3db4d9===null?undefined:_0x37737a(_0x3db4d9,_0x5027e8,_0x418e51);}else{if('value'in _0x1c01e2)return _0x1c01e2[_0x395187(0x2e4)];else{var _0x404a84=_0x1c01e2['get'];if(_0x404a84===undefined)return undefined;return _0x404a84[_0x395187(0x1e2)](_0x418e51);}}},_0xae3f6a=_0x5d6ff5(0x2),_0xa8f159=_0x5815a0(_0xae3f6a),_0x6a9748=_0x5d6ff5(0x12),_0x27f234=_0x5815a0(_0x6a9748),_0x46e148=_0x5d6ff5(0x27),_0x17df52=_0x5815a0(_0x46e148),_0x8e6251=_0x5d6ff5(0x1f),_0x326bdb=_0x5815a0(_0x8e6251);function _0x5815a0(_0x2ac2cf){var _0x3ca629=_0x3618ed;return _0x2ac2cf&&_0x2ac2cf[_0x3ca629(0x2ad)]?_0x2ac2cf:{'default':_0x2ac2cf};}function _0x478fe8(_0x182892,_0x5db847){var _0x4b4cb5=_0x3618ed;if(!(_0x182892 instanceof _0x5db847))throw new TypeError(_0x4b4cb5(0x2eb));}function _0x4305cd(_0x442de1,_0x108228){var _0x82d8c3=_0x3618ed;if(!_0x442de1)throw new ReferenceError(_0x82d8c3(0x434));return _0x108228&&(typeof _0x108228===_0x82d8c3(0x2e1)||typeof _0x108228===_0x82d8c3(0x33b))?_0x108228:_0x442de1;}function _0x4d04f9(_0x3b3a5c,_0x3ce4a3){var _0x2e296b=_0x3618ed;if(typeof _0x3ce4a3!==_0x2e296b(0x33b)&&_0x3ce4a3!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x3ce4a3);_0x3b3a5c[_0x2e296b(0x44f)]=Object[_0x2e296b(0x372)](_0x3ce4a3&&_0x3ce4a3[_0x2e296b(0x44f)],{'constructor':{'value':_0x3b3a5c,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x3ce4a3)Object[_0x2e296b(0x1ea)]?Object[_0x2e296b(0x1ea)](_0x3b3a5c,_0x3ce4a3):_0x3b3a5c['__proto__']=_0x3ce4a3;}var _0x49c208=function(_0x536bb2){var _0x46cea6=_0x3618ed;_0x4d04f9(_0xcfef16,_0x536bb2);function _0xcfef16(){var _0x4ec714=a9_0x50c4;return _0x478fe8(this,_0xcfef16),_0x4305cd(this,(_0xcfef16[_0x4ec714(0x1b4)]||Object[_0x4ec714(0x2e0)](_0xcfef16))['apply'](this,arguments));}return _0xe334f9(_0xcfef16,[{'key':_0x46cea6(0x2a4),'value':function _0x2bb6cf(_0x557d23){var _0xaa9e5c=_0x46cea6;this[_0xaa9e5c(0x3ad)][_0xaa9e5c(0x29f)]=this['domNode'][_0xaa9e5c(0x29f)],this[_0xaa9e5c(0x1cf)](),_0x3e16d3(_0xcfef16[_0xaa9e5c(0x44f)][_0xaa9e5c(0x1b4)]||Object[_0xaa9e5c(0x2e0)](_0xcfef16[_0xaa9e5c(0x44f)]),_0xaa9e5c(0x2a4),this)[_0xaa9e5c(0x1e2)](this,_0x557d23);}},{'key':_0x46cea6(0x25e),'value':function _0x298f27(_0x2165ba){var _0xb5ca44=_0x46cea6;if(this['cachedHTML']!==this[_0xb5ca44(0x3ad)][_0xb5ca44(0x3d3)]){var _0x3830c3=this[_0xb5ca44(0x3ad)][_0xb5ca44(0x29f)];(_0x3830c3['trim']()[_0xb5ca44(0x19a)]>0x0||this[_0xb5ca44(0x27d)]==null)&&(this[_0xb5ca44(0x3ad)]['innerHTML']=_0x2165ba(_0x3830c3),this[_0xb5ca44(0x1cf)]()),this['cachedHTML']=this[_0xb5ca44(0x3ad)][_0xb5ca44(0x3d3)];}}}]),_0xcfef16;}(_0x326bdb[_0x3618ed(0x413)]);_0x49c208['className']='ql-syntax';var _0x44b210=new _0xa8f159[(_0x3618ed(0x413))][(_0x3618ed(0x385))][(_0x3618ed(0x1da))](_0x3618ed(0x406),_0x3618ed(0x371),{'scope':_0xa8f159[_0x3618ed(0x413)]['Scope'][_0x3618ed(0x2bf)]}),_0x518aa0=function(_0x19e9bd){_0x4d04f9(_0x48bba2,_0x19e9bd);function _0x48bba2(_0x5162c8,_0x303f51){var _0x56b072=a9_0x50c4;_0x478fe8(this,_0x48bba2);var _0x317f10=_0x4305cd(this,(_0x48bba2['__proto__']||Object[_0x56b072(0x2e0)](_0x48bba2))[_0x56b072(0x1e2)](this,_0x5162c8,_0x303f51));if(typeof _0x317f10['options'][_0x56b072(0x25e)]!=='function')throw new Error(_0x56b072(0x433));_0x27f234[_0x56b072(0x413)][_0x56b072(0x425)](_0x44b210,!![]),_0x27f234['default']['register'](_0x49c208,!![]);var _0x3e4473=null;return _0x317f10[_0x56b072(0x41b)]['on'](_0x27f234[_0x56b072(0x413)][_0x56b072(0x42e)][_0x56b072(0x212)],function(){if(_0x3e4473!=null)return;_0x3e4473=setTimeout(function(){var _0xd38c17=a9_0x50c4;_0x317f10[_0xd38c17(0x25e)](),_0x3e4473=null;},0x64);}),_0x317f10[_0x56b072(0x25e)](),_0x317f10;}return _0xe334f9(_0x48bba2,[{'key':'highlight','value':function _0x30800b(){var _0x218ceb=a9_0x50c4,_0x28ee87=this;if(this[_0x218ceb(0x41b)][_0x218ceb(0x1ba)][_0x218ceb(0x2cc)])return;var _0x1185fa=this[_0x218ceb(0x41b)]['getSelection']();this['quill'][_0x218ceb(0x36a)][_0x218ceb(0x40e)](_0x49c208)['forEach'](function(_0x24d905){var _0x374a2b=_0x218ceb;_0x24d905['highlight'](_0x28ee87['options'][_0x374a2b(0x25e)]);}),this[_0x218ceb(0x41b)][_0x218ceb(0x22f)](_0x27f234[_0x218ceb(0x413)][_0x218ceb(0x270)]['SILENT']),_0x1185fa!=null&&this['quill'][_0x218ceb(0x45b)](_0x1185fa,_0x27f234[_0x218ceb(0x413)][_0x218ceb(0x270)]['SILENT']);}}]),_0x48bba2;}(_0x17df52[_0x3618ed(0x413)]);_0x518aa0[_0x3618ed(0x1c3)]={'highlight':(function(){var _0x581d03=_0x3618ed;if(window[_0x581d03(0x371)]==null)return null;return function(_0x7e005c){var _0x11952c=_0x581d03,_0x3ea7b4=window[_0x11952c(0x371)][_0x11952c(0x319)](_0x7e005c);return _0x3ea7b4[_0x11952c(0x2e4)];};}())},_0x3c28e0[_0x3618ed(0x445)]=_0x49c208,_0x3c28e0['CodeToken']=_0x44b210,_0x3c28e0['default']=_0x518aa0;},function(_0x29de47,_0x2b243c,_0x15fc54){'use strict';var _0x3388e3=a9_0x50c4;Object[_0x3388e3(0x289)](_0x2b243c,_0x3388e3(0x2ad),{'value':!![]}),_0x2b243c[_0x3388e3(0x216)]=_0x2b243c[_0x3388e3(0x413)]=undefined;var _0x3da324=(function(){function _0x49598f(_0xb1dc5a,_0x533c16){var _0x35546d=a9_0x50c4,_0x37d135=[],_0x5533b1=!![],_0x3c0cd4=![],_0x45af37=undefined;try{for(var _0x194560=_0xb1dc5a[Symbol[_0x35546d(0x2e8)]](),_0x2ceba5;!(_0x5533b1=(_0x2ceba5=_0x194560[_0x35546d(0x211)]())[_0x35546d(0x25a)]);_0x5533b1=!![]){_0x37d135['push'](_0x2ceba5[_0x35546d(0x2e4)]);if(_0x533c16&&_0x37d135['length']===_0x533c16)break;}}catch(_0x4f9e4d){_0x3c0cd4=!![],_0x45af37=_0x4f9e4d;}finally{try{if(!_0x5533b1&&_0x194560['return'])_0x194560[_0x35546d(0x222)]();}finally{if(_0x3c0cd4)throw _0x45af37;}}return _0x37d135;}return function(_0x464da4,_0x4fff84){var _0x4c1506=a9_0x50c4;if(Array[_0x4c1506(0x3f3)](_0x464da4))return _0x464da4;else{if(Symbol[_0x4c1506(0x2e8)]in Object(_0x464da4))return _0x49598f(_0x464da4,_0x4fff84);else throw new TypeError(_0x4c1506(0x183));}};}()),_0x2d091e=(function(){function _0xda8d38(_0x54859d,_0x3475f4){var _0x88b7fa=a9_0x50c4;for(var _0x46fdfb=0x0;_0x46fdfb<_0x3475f4['length'];_0x46fdfb++){var _0x30a36e=_0x3475f4[_0x46fdfb];_0x30a36e[_0x88b7fa(0x1eb)]=_0x30a36e['enumerable']||![],_0x30a36e[_0x88b7fa(0x203)]=!![];if(_0x88b7fa(0x2e4)in _0x30a36e)_0x30a36e[_0x88b7fa(0x40f)]=!![];Object[_0x88b7fa(0x289)](_0x54859d,_0x30a36e[_0x88b7fa(0x3ea)],_0x30a36e);}}return function(_0x357faa,_0x3138c8,_0x1f68e5){if(_0x3138c8)_0xda8d38(_0x357faa['prototype'],_0x3138c8);if(_0x1f68e5)_0xda8d38(_0x357faa,_0x1f68e5);return _0x357faa;};}()),_0x57bde0=_0x15fc54(0x19),_0x2cb0a4=_0x17c002(_0x57bde0),_0x4594b9=_0x15fc54(0x14),_0x41356f=_0x17c002(_0x4594b9),_0x482979=_0x15fc54(0x2),_0x547628=_0x17c002(_0x482979),_0xb48e=_0x15fc54(0x12),_0x397d94=_0x17c002(_0xb48e),_0x4b008e=_0x15fc54(0x1e),_0x34592f=_0x17c002(_0x4b008e),_0x137f06=_0x15fc54(0x27),_0x3d2655=_0x17c002(_0x137f06);function _0x17c002(_0x4fa02c){var _0x40bf8b=_0x3388e3;return _0x4fa02c&&_0x4fa02c[_0x40bf8b(0x2ad)]?_0x4fa02c:{'default':_0x4fa02c};}function _0x12010e(_0x32da29,_0x2c2533,_0x12497d){var _0x55c6a5=_0x3388e3;return _0x2c2533 in _0x32da29?Object[_0x55c6a5(0x289)](_0x32da29,_0x2c2533,{'value':_0x12497d,'enumerable':!![],'configurable':!![],'writable':!![]}):_0x32da29[_0x2c2533]=_0x12497d,_0x32da29;}function _0x25dbea(_0x1a4777,_0x2d685d){if(!(_0x1a4777 instanceof _0x2d685d))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x1426ae(_0x19186b,_0x94fbcd){var _0x5046b5=_0x3388e3;if(!_0x19186b)throw new ReferenceError(_0x5046b5(0x434));return _0x94fbcd&&(typeof _0x94fbcd===_0x5046b5(0x2e1)||typeof _0x94fbcd==='function')?_0x94fbcd:_0x19186b;}function _0x624103(_0x29a9bd,_0x40cbd5){var _0x143f0e=_0x3388e3;if(typeof _0x40cbd5!==_0x143f0e(0x33b)&&_0x40cbd5!==null)throw new TypeError(_0x143f0e(0x448)+typeof _0x40cbd5);_0x29a9bd[_0x143f0e(0x44f)]=Object[_0x143f0e(0x372)](_0x40cbd5&&_0x40cbd5[_0x143f0e(0x44f)],{'constructor':{'value':_0x29a9bd,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x40cbd5)Object[_0x143f0e(0x1ea)]?Object[_0x143f0e(0x1ea)](_0x29a9bd,_0x40cbd5):_0x29a9bd[_0x143f0e(0x1b4)]=_0x40cbd5;}var _0x5deb27=(0x0,_0x34592f[_0x3388e3(0x413)])(_0x3388e3(0x28c)),_0xb16143=function(_0x5d91e3){var _0x4ad27c=_0x3388e3;_0x624103(_0x34be74,_0x5d91e3);function _0x34be74(_0x92f853,_0x531abb){var _0xab8802=a9_0x50c4;_0x25dbea(this,_0x34be74);var _0x347f98=_0x1426ae(this,(_0x34be74[_0xab8802(0x1b4)]||Object[_0xab8802(0x2e0)](_0x34be74))[_0xab8802(0x1e2)](this,_0x92f853,_0x531abb));if(Array[_0xab8802(0x3f3)](_0x347f98[_0xab8802(0x3d1)][_0xab8802(0x2c9)])){var _0x46b987=document[_0xab8802(0x295)](_0xab8802(0x1ee));_0x477e02(_0x46b987,_0x347f98[_0xab8802(0x3d1)][_0xab8802(0x2c9)]),_0x92f853['container']['parentNode'][_0xab8802(0x3fc)](_0x46b987,_0x92f853[_0xab8802(0x2c9)]),_0x347f98[_0xab8802(0x2c9)]=_0x46b987;}else typeof _0x347f98['options']['container']===_0xab8802(0x187)?_0x347f98[_0xab8802(0x2c9)]=document[_0xab8802(0x42f)](_0x347f98[_0xab8802(0x3d1)]['container']):_0x347f98['container']=_0x347f98[_0xab8802(0x3d1)]['container'];if(!(_0x347f98[_0xab8802(0x2c9)]instanceof HTMLElement)){var _0x2a1883;return _0x2a1883=_0x5deb27[_0xab8802(0x2e2)](_0xab8802(0x323),_0x347f98['options']),_0x1426ae(_0x347f98,_0x2a1883);}return _0x347f98['container']['classList']['add'](_0xab8802(0x2e9)),_0x347f98[_0xab8802(0x1f6)]=[],_0x347f98[_0xab8802(0x30a)]={},Object['keys'](_0x347f98[_0xab8802(0x3d1)][_0xab8802(0x30a)])[_0xab8802(0x3e4)](function(_0x24a801){var _0x38127b=_0xab8802;_0x347f98[_0x38127b(0x39d)](_0x24a801,_0x347f98[_0x38127b(0x3d1)][_0x38127b(0x30a)][_0x24a801]);}),_0x347f98[_0xab8802(0x2c9)][_0xab8802(0x44c)](_0xab8802(0x20c),function(_0x255e4){var _0xb92f8=_0xab8802;_0x255e4[_0xb92f8(0x40a)]();}),[]['forEach'][_0xab8802(0x1e2)](_0x347f98[_0xab8802(0x2c9)][_0xab8802(0x3ec)]('button,\x20select'),function(_0x18096a){var _0x15aa37=_0xab8802;_0x347f98[_0x15aa37(0x1cf)](_0x18096a);}),_0x347f98[_0xab8802(0x41b)]['on'](_0x397d94['default'][_0xab8802(0x42e)][_0xab8802(0x411)],function(_0x4e3832,_0xead593){var _0x4b1d0b=_0xab8802;_0x4e3832===_0x397d94['default'][_0x4b1d0b(0x42e)][_0x4b1d0b(0x374)]&&_0x347f98[_0x4b1d0b(0x22f)](_0xead593);}),_0x347f98['quill']['on'](_0x397d94[_0xab8802(0x413)][_0xab8802(0x42e)][_0xab8802(0x212)],function(){var _0xd15d7=_0xab8802,_0x4ab521=_0x347f98['quill'][_0xd15d7(0x1ba)][_0xd15d7(0x1f2)](),_0x16b30f=_0x3da324(_0x4ab521,0x1),_0x5b6913=_0x16b30f[0x0];_0x347f98[_0xd15d7(0x22f)](_0x5b6913);}),_0x347f98;}return _0x2d091e(_0x34be74,[{'key':_0x4ad27c(0x39d),'value':function _0x3460cc(_0x603fe5,_0xcb196b){var _0x38b47a=_0x4ad27c;this[_0x38b47a(0x30a)][_0x603fe5]=_0xcb196b;}},{'key':'attach','value':function _0x19838b(_0x59c11f){var _0x57c687=_0x4ad27c,_0x383d33=this,_0xa8e57c=[]['find'][_0x57c687(0x1e2)](_0x59c11f[_0x57c687(0x446)],function(_0x3a1c61){var _0x2e05b2=_0x57c687;return _0x3a1c61[_0x2e05b2(0x39a)](_0x2e05b2(0x43f))===0x0;});if(!_0xa8e57c)return;_0xa8e57c=_0xa8e57c[_0x57c687(0x441)](_0x57c687(0x43f)[_0x57c687(0x19a)]);_0x59c11f[_0x57c687(0x200)]===_0x57c687(0x1a6)&&_0x59c11f['setAttribute'](_0x57c687(0x2d9),_0x57c687(0x1db));if(this[_0x57c687(0x30a)][_0xa8e57c]==null){if(this[_0x57c687(0x41b)][_0x57c687(0x36a)][_0x57c687(0x41f)]!=null&&this[_0x57c687(0x41b)]['scroll'][_0x57c687(0x41f)][_0xa8e57c]==null){_0x5deb27[_0x57c687(0x321)](_0x57c687(0x3fd),_0xa8e57c,_0x59c11f);return;}if(_0x547628[_0x57c687(0x413)][_0x57c687(0x409)](_0xa8e57c)==null){_0x5deb27[_0x57c687(0x321)](_0x57c687(0x1a9),_0xa8e57c,_0x59c11f);return;}}var _0x4878e9=_0x59c11f[_0x57c687(0x200)]===_0x57c687(0x37c)?_0x57c687(0x25c):_0x57c687(0x248);_0x59c11f[_0x57c687(0x44c)](_0x4878e9,function(_0x31c31e){var _0x10ecae=_0x57c687,_0x506d97=void 0x0;if(_0x59c11f[_0x10ecae(0x200)]==='SELECT'){if(_0x59c11f['selectedIndex']<0x0)return;var _0x2ebbce=_0x59c11f[_0x10ecae(0x3d1)][_0x59c11f[_0x10ecae(0x2df)]];_0x2ebbce[_0x10ecae(0x1e9)](_0x10ecae(0x3d7))?_0x506d97=![]:_0x506d97=_0x2ebbce[_0x10ecae(0x2e4)]||![];}else _0x59c11f[_0x10ecae(0x446)][_0x10ecae(0x386)](_0x10ecae(0x3e5))?_0x506d97=![]:_0x506d97=_0x59c11f[_0x10ecae(0x2e4)]||!_0x59c11f[_0x10ecae(0x1e9)](_0x10ecae(0x2e4)),_0x31c31e[_0x10ecae(0x40a)]();_0x383d33[_0x10ecae(0x41b)][_0x10ecae(0x26d)]();var _0x219c21=_0x383d33[_0x10ecae(0x41b)][_0x10ecae(0x1ba)][_0x10ecae(0x1f2)](),_0x517da6=_0x3da324(_0x219c21,0x1),_0x2fd632=_0x517da6[0x0];if(_0x383d33['handlers'][_0xa8e57c]!=null)_0x383d33[_0x10ecae(0x30a)][_0xa8e57c]['call'](_0x383d33,_0x506d97);else{if(_0x547628['default'][_0x10ecae(0x409)](_0xa8e57c)['prototype']instanceof _0x547628[_0x10ecae(0x413)][_0x10ecae(0x2cd)]){_0x506d97=prompt(_0x10ecae(0x24f)+_0xa8e57c);if(!_0x506d97)return;_0x383d33[_0x10ecae(0x41b)]['updateContents'](new _0x41356f[(_0x10ecae(0x413))]()['retain'](_0x2fd632[_0x10ecae(0x320)])[_0x10ecae(0x362)](_0x2fd632['length'])[_0x10ecae(0x26a)](_0x12010e({},_0xa8e57c,_0x506d97)),_0x397d94[_0x10ecae(0x413)][_0x10ecae(0x270)][_0x10ecae(0x439)]);}else _0x383d33[_0x10ecae(0x41b)][_0x10ecae(0x1d9)](_0xa8e57c,_0x506d97,_0x397d94[_0x10ecae(0x413)][_0x10ecae(0x270)][_0x10ecae(0x439)]);}_0x383d33[_0x10ecae(0x22f)](_0x2fd632);}),this[_0x57c687(0x1f6)][_0x57c687(0x1bf)]([_0xa8e57c,_0x59c11f]);}},{'key':_0x4ad27c(0x22f),'value':function _0x444e7b(_0x26b2fd){var _0x420358=_0x4ad27c,_0x3e70d8=_0x26b2fd==null?{}:this['quill']['getFormat'](_0x26b2fd);this[_0x420358(0x1f6)]['forEach'](function(_0x36ed46){var _0xba6fe3=_0x420358,_0x27978f=_0x3da324(_0x36ed46,0x2),_0x3f7949=_0x27978f[0x0],_0x3e242c=_0x27978f[0x1];if(_0x3e242c[_0xba6fe3(0x200)]===_0xba6fe3(0x37c)){var _0x53ea36=void 0x0;if(_0x26b2fd==null)_0x53ea36=null;else{if(_0x3e70d8[_0x3f7949]==null)_0x53ea36=_0x3e242c[_0xba6fe3(0x42f)](_0xba6fe3(0x23b));else{if(!Array[_0xba6fe3(0x3f3)](_0x3e70d8[_0x3f7949])){var _0x5cb5e0=_0x3e70d8[_0x3f7949];typeof _0x5cb5e0===_0xba6fe3(0x187)&&(_0x5cb5e0=_0x5cb5e0['replace'](/\"/g,'\x5c\x22')),_0x53ea36=_0x3e242c[_0xba6fe3(0x42f)](_0xba6fe3(0x2d1)+_0x5cb5e0+'\x22]');}}}_0x53ea36==null?(_0x3e242c[_0xba6fe3(0x2e4)]='',_0x3e242c['selectedIndex']=-0x1):_0x53ea36[_0xba6fe3(0x3d7)]=!![];}else{if(_0x26b2fd==null)_0x3e242c[_0xba6fe3(0x446)][_0xba6fe3(0x190)]('ql-active');else{if(_0x3e242c[_0xba6fe3(0x1e9)](_0xba6fe3(0x2e4))){var _0x356e0a=_0x3e70d8[_0x3f7949]===_0x3e242c['getAttribute'](_0xba6fe3(0x2e4))||_0x3e70d8[_0x3f7949]!=null&&_0x3e70d8[_0x3f7949][_0xba6fe3(0x1d3)]()===_0x3e242c[_0xba6fe3(0x3ae)](_0xba6fe3(0x2e4))||_0x3e70d8[_0x3f7949]==null&&!_0x3e242c[_0xba6fe3(0x3ae)](_0xba6fe3(0x2e4));_0x3e242c[_0xba6fe3(0x446)][_0xba6fe3(0x20a)](_0xba6fe3(0x3e5),_0x356e0a);}else _0x3e242c[_0xba6fe3(0x446)][_0xba6fe3(0x20a)]('ql-active',_0x3e70d8[_0x3f7949]!=null);}}});}}]),_0x34be74;}(_0x3d2655['default']);_0xb16143['DEFAULTS']={};function _0x1f00bb(_0x3f597b,_0x4b1905,_0xa1d664){var _0x19deb1=_0x3388e3,_0x4dd146=document[_0x19deb1(0x295)]('button');_0x4dd146[_0x19deb1(0x1ed)](_0x19deb1(0x2d9),_0x19deb1(0x1db)),_0x4dd146[_0x19deb1(0x446)][_0x19deb1(0x184)]('ql-'+_0x4b1905),_0xa1d664!=null&&(_0x4dd146[_0x19deb1(0x2e4)]=_0xa1d664),_0x3f597b['appendChild'](_0x4dd146);}function _0x477e02(_0x2377e3,_0x2143ba){var _0x22e160=_0x3388e3;!Array[_0x22e160(0x3f3)](_0x2143ba[0x0])&&(_0x2143ba=[_0x2143ba]),_0x2143ba[_0x22e160(0x3e4)](function(_0x36d4ac){var _0x266b2b=_0x22e160,_0x44f605=document[_0x266b2b(0x295)](_0x266b2b(0x3b3));_0x44f605[_0x266b2b(0x446)][_0x266b2b(0x184)](_0x266b2b(0x44a)),_0x36d4ac['forEach'](function(_0x262ae4){var _0x5ca039=_0x266b2b;if(typeof _0x262ae4===_0x5ca039(0x187))_0x1f00bb(_0x44f605,_0x262ae4);else{var _0xbedf82=Object[_0x5ca039(0x3aa)](_0x262ae4)[0x0],_0x2b1d03=_0x262ae4[_0xbedf82];Array[_0x5ca039(0x3f3)](_0x2b1d03)?_0x551694(_0x44f605,_0xbedf82,_0x2b1d03):_0x1f00bb(_0x44f605,_0xbedf82,_0x2b1d03);}}),_0x2377e3[_0x266b2b(0x27e)](_0x44f605);});}function _0x551694(_0xe213b,_0x31674e,_0x1de872){var _0x3573b8=_0x3388e3,_0x575468=document[_0x3573b8(0x295)](_0x3573b8(0x38e));_0x575468[_0x3573b8(0x446)]['add']('ql-'+_0x31674e),_0x1de872[_0x3573b8(0x3e4)](function(_0x577ad2){var _0x416017=_0x3573b8,_0x5d0a5=document['createElement'](_0x416017(0x292));_0x577ad2!==![]?_0x5d0a5[_0x416017(0x1ed)](_0x416017(0x2e4),_0x577ad2):_0x5d0a5['setAttribute'](_0x416017(0x3d7),_0x416017(0x3d7)),_0x575468[_0x416017(0x27e)](_0x5d0a5);}),_0xe213b[_0x3573b8(0x27e)](_0x575468);}_0xb16143['DEFAULTS']={'container':null,'handlers':{'clean':function _0x15940f(_0x59c23c){var _0x2c6b29=_0x3388e3,_0x58d0e8=this,_0x382635=this['quill'][_0x2c6b29(0x407)]();if(_0x382635==null)return;if(_0x382635[_0x2c6b29(0x19a)]==0x0){var _0x4ff975=this[_0x2c6b29(0x41b)]['getFormat']();Object[_0x2c6b29(0x3aa)](_0x4ff975)[_0x2c6b29(0x3e4)](function(_0x91a41a){var _0x44a07d=_0x2c6b29;_0x547628[_0x44a07d(0x413)][_0x44a07d(0x409)](_0x91a41a,_0x547628[_0x44a07d(0x413)][_0x44a07d(0x293)][_0x44a07d(0x2bf)])!=null&&_0x58d0e8[_0x44a07d(0x41b)][_0x44a07d(0x1d9)](_0x91a41a,![]);});}else this[_0x2c6b29(0x41b)]['removeFormat'](_0x382635,_0x397d94[_0x2c6b29(0x413)][_0x2c6b29(0x270)]['USER']);},'direction':function _0x3e48e5(_0x3344eb){var _0x196cb4=_0x3388e3,_0x3cba93=this['quill'][_0x196cb4(0x452)]()[_0x196cb4(0x34d)];if(_0x3344eb===_0x196cb4(0x2bd)&&_0x3cba93==null)this[_0x196cb4(0x41b)][_0x196cb4(0x1d9)]('align',_0x196cb4(0x3f6),_0x397d94[_0x196cb4(0x413)][_0x196cb4(0x270)][_0x196cb4(0x439)]);else!_0x3344eb&&_0x3cba93==='right'&&this[_0x196cb4(0x41b)][_0x196cb4(0x1d9)](_0x196cb4(0x34d),![],_0x397d94[_0x196cb4(0x413)][_0x196cb4(0x270)][_0x196cb4(0x439)]);this['quill'][_0x196cb4(0x1d9)](_0x196cb4(0x2db),_0x3344eb,_0x397d94[_0x196cb4(0x413)][_0x196cb4(0x270)][_0x196cb4(0x439)]);},'link':function _0x578f0b(_0x24ebd0){var _0x4848d1=_0x3388e3;_0x24ebd0===!![]&&(_0x24ebd0=prompt(_0x4848d1(0x38d))),this[_0x4848d1(0x41b)][_0x4848d1(0x1d9)](_0x4848d1(0x2ac),_0x24ebd0,_0x397d94[_0x4848d1(0x413)][_0x4848d1(0x270)]['USER']);},'indent':function _0x7e6b7e(_0x49217b){var _0xa0d920=_0x3388e3,_0x104e2d=this['quill']['getSelection'](),_0x457d86=this[_0xa0d920(0x41b)][_0xa0d920(0x452)](_0x104e2d),_0x13c513=parseInt(_0x457d86[_0xa0d920(0x3bd)]||0x0);if(_0x49217b==='+1'||_0x49217b==='-1'){var _0x402696=_0x49217b==='+1'?0x1:-0x1;if(_0x457d86[_0xa0d920(0x2db)]===_0xa0d920(0x2bd))_0x402696*=-0x1;this['quill'][_0xa0d920(0x1d9)](_0xa0d920(0x3bd),_0x13c513+_0x402696,_0x397d94[_0xa0d920(0x413)][_0xa0d920(0x270)][_0xa0d920(0x439)]);}}}},_0x2b243c[_0x3388e3(0x413)]=_0xb16143,_0x2b243c['addControls']=_0x477e02;},function(_0x54d047,_0x1caea2,_0x56f04a){'use strict';_0x54d047['exports']={'align':{'':_0x56f04a(0x46),'center':_0x56f04a(0x47),'right':_0x56f04a(0x48),'justify':_0x56f04a(0x49)},'background':_0x56f04a(0x4a),'blockquote':_0x56f04a(0x4b),'bold':_0x56f04a(0x4c),'clean':_0x56f04a(0x4d),'code-block':_0x56f04a(0x4e),'color':_0x56f04a(0x4f),'direction':{'':_0x56f04a(0x50),'rtl':_0x56f04a(0x51)},'float':{'center':_0x56f04a(0x52),'full':_0x56f04a(0x53),'left':_0x56f04a(0x54),'right':_0x56f04a(0x55)},'formula':_0x56f04a(0x56),'header':{'1':_0x56f04a(0x57),'2':_0x56f04a(0x58)},'italic':_0x56f04a(0x59),'image':_0x56f04a(0x5a),'indent':{'+1':_0x56f04a(0x5b),'-1':_0x56f04a(0x5c)},'link':_0x56f04a(0x5d),'list':{'ordered':_0x56f04a(0x5e),'bullet':_0x56f04a(0x5f)},'script':{'sub':_0x56f04a(0x60),'super':_0x56f04a(0x61)},'strike':_0x56f04a(0x62),'underline':_0x56f04a(0x63),'video':_0x56f04a(0x64)};},function(_0x14e23b,_0x5e1ea8){var _0x1a4631=a9_0x50c4;_0x14e23b[_0x1a4631(0x426)]=_0x1a4631(0x327);},function(_0x251b71,_0x2600a6){var _0x31ba9b=a9_0x50c4;_0x251b71[_0x31ba9b(0x426)]=_0x31ba9b(0x376);},function(_0x295b6a,_0x42f30f){var _0x3aa97d=a9_0x50c4;_0x295b6a[_0x3aa97d(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=3\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=5\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=9\x20y1=4\x20y2=4></line>\x20</svg>';},function(_0x153db0,_0x237ac1){var _0x1fc720=a9_0x50c4;_0x153db0[_0x1fc720(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=3\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=3\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=3\x20y1=4\x20y2=4></line>\x20</svg>';},function(_0x1c0e97,_0x2ee2bd){var _0xf48247=a9_0x50c4;_0x1c0e97[_0xf48247(0x426)]=_0xf48247(0x392);},function(_0x2e7b67,_0x2b202b){var _0x1a058e=a9_0x50c4;_0x2e7b67[_0x1a058e(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<rect\x20class=\x22ql-fill\x20ql-stroke\x22\x20height=3\x20width=3\x20x=4\x20y=5></rect>\x20<rect\x20class=\x22ql-fill\x20ql-stroke\x22\x20height=3\x20width=3\x20x=11\x20y=5></rect>\x20<path\x20class=\x22ql-even\x20ql-fill\x20ql-stroke\x22\x20d=M7,8c0,4.031-3,5-3,5></path>\x20<path\x20class=\x22ql-even\x20ql-fill\x20ql-stroke\x22\x20d=M14,8c0,4.031-3,5-3,5></path>\x20</svg>';},function(_0x5cd836,_0x3d7739){var _0x4bd46f=a9_0x50c4;_0x5cd836['exports']=_0x4bd46f(0x1ac);},function(_0x47b2b9,_0x5943e0){var _0x1ee614=a9_0x50c4;_0x47b2b9['exports']=_0x1ee614(0x333);},function(_0x3448ac,_0x52d63d){var _0x456f95=a9_0x50c4;_0x3448ac[_0x456f95(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<polyline\x20class=\x22ql-even\x20ql-stroke\x22\x20points=\x225\x207\x203\x209\x205\x2011\x22></polyline>\x20<polyline\x20class=\x22ql-even\x20ql-stroke\x22\x20points=\x2213\x207\x2015\x209\x2013\x2011\x22></polyline>\x20<line\x20class=ql-stroke\x20x1=10\x20x2=8\x20y1=5\x20y2=13></line>\x20</svg>';},function(_0x1c7b2b,_0xb74b7){var _0x315f97=a9_0x50c4;_0x1c7b2b[_0x315f97(0x426)]=_0x315f97(0x2d7);},function(_0x95483b,_0x343e11){var _0x4d211b=a9_0x50c4;_0x95483b['exports']=_0x4d211b(0x337);},function(_0x575078,_0x53dbdf){var _0x1e5f3a=a9_0x50c4;_0x575078[_0x1e5f3a(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<polygon\x20class=\x22ql-stroke\x20ql-fill\x22\x20points=\x2215\x2012\x2013\x2010\x2015\x208\x2015\x2012\x22></polygon>\x20<line\x20class=\x22ql-stroke\x20ql-fill\x22\x20x1=9\x20x2=5\x20y1=4\x20y2=4></line>\x20<path\x20class=ql-fill\x20d=M5,3A3,3,0,0,0,5,9H6V3H5Z></path>\x20<rect\x20class=ql-fill\x20height=11\x20width=1\x20x=5\x20y=4></rect>\x20<rect\x20class=ql-fill\x20height=11\x20width=1\x20x=7\x20y=4></rect>\x20</svg>';},function(_0x240058,_0x3b7f49){var _0x41a79e=a9_0x50c4;_0x240058[_0x41a79e(0x426)]=_0x41a79e(0x3ce);},function(_0x23bf72,_0x3b47b8){var _0x161b23=a9_0x50c4;_0x23bf72['exports']=_0x161b23(0x397);},function(_0x1b7d01,_0x45d21f){var _0x3241eb=a9_0x50c4;_0x1b7d01[_0x3241eb(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M15,8H13a1,1,0,0,1,0-2h2A1,1,0,0,1,15,8Z\x20/>\x20<path\x20class=ql-fill\x20d=M15,12H13a1,1,0,0,1,0-2h2A1,1,0,0,1,15,12Z\x20/>\x20<path\x20class=ql-fill\x20d=M15,16H5a1,1,0,0,1,0-2H15A1,1,0,0,1,15,16Z\x20/>\x20<path\x20class=ql-fill\x20d=M15,4H5A1,1,0,0,1,5,2H15A1,1,0,0,1,15,4Z\x20/>\x20<rect\x20class=ql-fill\x20x=2\x20y=6\x20width=8\x20height=6\x20rx=1\x20ry=1\x20/>\x20</svg>';},function(_0x325a5f,_0x5b8f0b){_0x325a5f['exports']='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M5,8H3A1,1,0,0,1,3,6H5A1,1,0,0,1,5,8Z\x20/>\x20<path\x20class=ql-fill\x20d=M5,12H3a1,1,0,0,1,0-2H5A1,1,0,0,1,5,12Z\x20/>\x20<path\x20class=ql-fill\x20d=M13,16H3a1,1,0,0,1,0-2H13A1,1,0,0,1,13,16Z\x20/>\x20<path\x20class=ql-fill\x20d=M13,4H3A1,1,0,0,1,3,2H13A1,1,0,0,1,13,4Z\x20/>\x20<rect\x20class=ql-fill\x20x=8\x20y=6\x20width=8\x20height=6\x20rx=1\x20ry=1\x20transform=\x22translate(24\x2018)\x20rotate(-180)\x22/>\x20</svg>';},function(_0x451077,_0x494bf0){var _0x35cc0f=a9_0x50c4;_0x451077['exports']=_0x35cc0f(0x44e);},function(_0x49a7b8,_0x2ccd69){var _0xe7e866=a9_0x50c4;_0x49a7b8[_0xe7e866(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=3\x20y1=4\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=11\x20x2=11\x20y1=4\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=11\x20x2=3\x20y1=9\x20y2=9></line>\x20<line\x20class=\x22ql-stroke\x20ql-thin\x22\x20x1=13.5\x20x2=15.5\x20y1=14.5\x20y2=14.5></line>\x20<path\x20class=ql-fill\x20d=M14.5,15a0.5,0.5,0,0,1-.5-0.5V12.085l-0.276.138A0.5,0.5,0,0,1,13.053,12c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,15,11.5v3A0.5,0.5,0,0,1,14.5,15Z></path>\x20</svg>';},function(_0x228067,_0x548a90){var _0x77e38f=a9_0x50c4;_0x228067['exports']=_0x77e38f(0x420);},function(_0x423b1b,_0xab43c4){var _0x39f2d6=a9_0x50c4;_0x423b1b['exports']=_0x39f2d6(0x1f7);},function(_0x47296f,_0x5d423e){var _0x40ef5f=a9_0x50c4;_0x47296f[_0x40ef5f(0x426)]=_0x40ef5f(0x398);},function(_0x1d400a,_0x49e8c3){var _0x4dbeb8=a9_0x50c4;_0x1d400a[_0x4dbeb8(0x426)]=_0x4dbeb8(0x1e1);},function(_0x511a79,_0x4c742e){var _0x282fb5=a9_0x50c4;_0x511a79['exports']=_0x282fb5(0x418);},function(_0x850082,_0x434bd0){var _0x2e77f8=a9_0x50c4;_0x850082[_0x2e77f8(0x426)]=_0x2e77f8(0x21a);},function(_0x335461,_0x331974){_0x335461['exports']='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=7\x20x2=15\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=7\x20x2=15\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=7\x20x2=15\x20y1=14\x20y2=14></line>\x20<line\x20class=\x22ql-stroke\x20ql-thin\x22\x20x1=2.5\x20x2=4.5\x20y1=5.5\x20y2=5.5></line>\x20<path\x20class=ql-fill\x20d=M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z></path>\x20<path\x20class=\x22ql-stroke\x20ql-thin\x22\x20d=M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156></path>\x20<path\x20class=\x22ql-stroke\x20ql-thin\x22\x20d=M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109></path>\x20</svg>';},function(_0x12aa76,_0x439dd8){var _0xb970ff=a9_0x50c4;_0x12aa76[_0xb970ff(0x426)]='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=6\x20x2=15\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=6\x20x2=15\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=6\x20x2=15\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=3\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=3\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=3\x20y1=14\x20y2=14></line>\x20</svg>';},function(_0x3ad515,_0x79eefb){var _0x420809=a9_0x50c4;_0x3ad515[_0x420809(0x426)]=_0x420809(0x3c8);},function(_0x10f574,_0x497bd7){var _0x503041=a9_0x50c4;_0x10f574[_0x503041(0x426)]=_0x503041(0x2ce);},function(_0x476386,_0x158c18){var _0x3b932a=a9_0x50c4;_0x476386[_0x3b932a(0x426)]=_0x3b932a(0x3d9);},function(_0x40003e,_0x27212c){var _0x505193=a9_0x50c4;_0x40003e['exports']=_0x505193(0x27c);},function(_0xaa0c72,_0x5eed5f){_0xaa0c72['exports']='<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<rect\x20class=ql-stroke\x20height=12\x20width=12\x20x=3\x20y=3></rect>\x20<rect\x20class=ql-fill\x20height=12\x20width=1\x20x=5\x20y=3></rect>\x20<rect\x20class=ql-fill\x20height=12\x20width=1\x20x=12\x20y=3></rect>\x20<rect\x20class=ql-fill\x20height=2\x20width=8\x20x=5\x20y=8></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=3\x20y=5></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=3\x20y=7></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=3\x20y=10></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=3\x20y=12></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=12\x20y=5></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=12\x20y=7></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=12\x20y=10></rect>\x20<rect\x20class=ql-fill\x20height=1\x20width=3\x20x=12\x20y=12></rect>\x20</svg>';},function(_0x442731,_0xe68c48,_0x5aa17f){'use strict';var _0x2ebecd=a9_0x50c4;Object[_0x2ebecd(0x289)](_0xe68c48,'__esModule',{'value':!![]});var _0x4eb9b4=typeof Symbol==='function'&&typeof Symbol[_0x2ebecd(0x2e8)]==='symbol'?function(_0x4c7fe4){return typeof _0x4c7fe4;}:function(_0xf8596){var _0x4d2ac3=_0x2ebecd;return _0xf8596&&typeof Symbol===_0x4d2ac3(0x33b)&&_0xf8596[_0x4d2ac3(0x2c6)]===Symbol?_0x4d2ac3(0x2a8):typeof _0xf8596;},_0x260ce5=(function(){function _0x19054f(_0x4f064b,_0x589980){var _0x2c2ddc=a9_0x50c4;for(var _0x23c753=0x0;_0x23c753<_0x589980['length'];_0x23c753++){var _0x17ba70=_0x589980[_0x23c753];_0x17ba70[_0x2c2ddc(0x1eb)]=_0x17ba70[_0x2c2ddc(0x1eb)]||![],_0x17ba70[_0x2c2ddc(0x203)]=!![];if(_0x2c2ddc(0x2e4)in _0x17ba70)_0x17ba70[_0x2c2ddc(0x40f)]=!![];Object['defineProperty'](_0x4f064b,_0x17ba70[_0x2c2ddc(0x3ea)],_0x17ba70);}}return function(_0x272eac,_0xf673a3,_0x3b0707){var _0x88d33=a9_0x50c4;if(_0xf673a3)_0x19054f(_0x272eac[_0x88d33(0x44f)],_0xf673a3);if(_0x3b0707)_0x19054f(_0x272eac,_0x3b0707);return _0x272eac;};}()),_0x281668=_0x5aa17f(0x66),_0x302071=_0x1b80d8(_0x281668);function _0x1b80d8(_0x5b9cf6){var _0x31de6e=_0x2ebecd;return _0x5b9cf6&&_0x5b9cf6[_0x31de6e(0x2ad)]?_0x5b9cf6:{'default':_0x5b9cf6};}function _0x507de7(_0x1255de,_0x3d53f2){var _0x3250dd=_0x2ebecd;if(!(_0x1255de instanceof _0x3d53f2))throw new TypeError(_0x3250dd(0x2eb));}var _0x28621c=(function(){var _0x19ffe2=_0x2ebecd;function _0x55b15e(_0x1b3ebf){var _0x2df268=a9_0x50c4,_0x1e5f59=this;_0x507de7(this,_0x55b15e),this[_0x2df268(0x38e)]=_0x1b3ebf,this['container']=document[_0x2df268(0x295)](_0x2df268(0x3b3)),this[_0x2df268(0x1b0)](),this['select'][_0x2df268(0x1f3)][_0x2df268(0x314)]='none',this[_0x2df268(0x38e)][_0x2df268(0x37d)][_0x2df268(0x3fc)](this[_0x2df268(0x2c9)],this[_0x2df268(0x38e)]),this[_0x2df268(0x317)]['addEventListener'](_0x2df268(0x248),function(_0x3d96ca){var _0x16584b=_0x2df268;_0x1e5f59[_0x16584b(0x2c9)][_0x16584b(0x446)][_0x16584b(0x20a)](_0x16584b(0x431));}),this['select'][_0x2df268(0x44c)](_0x2df268(0x25c),this[_0x2df268(0x22f)][_0x2df268(0x279)](this));}return _0x260ce5(_0x55b15e,[{'key':_0x19ffe2(0x2ae),'value':function _0x3046c0(_0x46085f){var _0x1271c3=_0x19ffe2,_0xd0a1d3=this,_0x10edbc=document[_0x1271c3(0x295)]('span');return _0x10edbc['classList'][_0x1271c3(0x184)]('ql-picker-item'),_0x46085f['hasAttribute'](_0x1271c3(0x2e4))&&_0x10edbc[_0x1271c3(0x1ed)](_0x1271c3(0x30c),_0x46085f[_0x1271c3(0x3ae)](_0x1271c3(0x2e4))),_0x46085f[_0x1271c3(0x29f)]&&_0x10edbc[_0x1271c3(0x1ed)]('data-label',_0x46085f['textContent']),_0x10edbc['addEventListener'](_0x1271c3(0x248),function(_0x3ece4f){var _0x26bb8a=_0x1271c3;_0xd0a1d3[_0x26bb8a(0x379)](_0x10edbc,!![]);}),_0x10edbc;}},{'key':'buildLabel','value':function _0x1ba96c(){var _0x4bea36=_0x19ffe2,_0xfde941=document[_0x4bea36(0x295)](_0x4bea36(0x3b3));return _0xfde941[_0x4bea36(0x446)]['add'](_0x4bea36(0x232)),_0xfde941[_0x4bea36(0x3d3)]=_0x302071[_0x4bea36(0x413)],this[_0x4bea36(0x2c9)][_0x4bea36(0x27e)](_0xfde941),_0xfde941;}},{'key':_0x19ffe2(0x3a1),'value':function _0x1e054c(){var _0x29066a=_0x19ffe2,_0x4cb673=this,_0x448535=document[_0x29066a(0x295)](_0x29066a(0x3b3));_0x448535[_0x29066a(0x446)][_0x29066a(0x184)](_0x29066a(0x275)),[][_0x29066a(0x441)]['call'](this[_0x29066a(0x38e)]['options'])[_0x29066a(0x3e4)](function(_0x316dc5){var _0x1ba07b=_0x29066a,_0x2f74fd=_0x4cb673['buildItem'](_0x316dc5);_0x448535[_0x1ba07b(0x27e)](_0x2f74fd),_0x316dc5['hasAttribute'](_0x1ba07b(0x3d7))&&_0x4cb673[_0x1ba07b(0x379)](_0x2f74fd);}),this[_0x29066a(0x2c9)][_0x29066a(0x27e)](_0x448535);}},{'key':_0x19ffe2(0x1b0),'value':function _0xaad512(){var _0x342db7=_0x19ffe2,_0x488fd4=this;[]['slice'][_0x342db7(0x1e2)](this[_0x342db7(0x38e)][_0x342db7(0x32b)])[_0x342db7(0x3e4)](function(_0x4c8dfe){var _0xc0f69f=_0x342db7;_0x488fd4[_0xc0f69f(0x2c9)]['setAttribute'](_0x4c8dfe[_0xc0f69f(0x3ab)],_0x4c8dfe['value']);}),this[_0x342db7(0x2c9)][_0x342db7(0x446)][_0x342db7(0x184)](_0x342db7(0x326)),this[_0x342db7(0x317)]=this['buildLabel'](),this[_0x342db7(0x3a1)]();}},{'key':_0x19ffe2(0x3bf),'value':function _0x33c142(){var _0x4f1510=_0x19ffe2;this[_0x4f1510(0x2c9)][_0x4f1510(0x446)][_0x4f1510(0x190)](_0x4f1510(0x431));}},{'key':'selectItem','value':function _0x1996a5(_0x56d765){var _0x41c4d5=_0x19ffe2,_0x2e10ac=arguments[_0x41c4d5(0x19a)]<=0x1||arguments[0x1]===undefined?![]:arguments[0x1],_0x558512=this['container'][_0x41c4d5(0x42f)]('.ql-selected');if(_0x56d765===_0x558512)return;_0x558512!=null&&_0x558512[_0x41c4d5(0x446)][_0x41c4d5(0x190)](_0x41c4d5(0x340));if(_0x56d765!=null){_0x56d765[_0x41c4d5(0x446)]['add'](_0x41c4d5(0x340)),this[_0x41c4d5(0x38e)][_0x41c4d5(0x2df)]=[][_0x41c4d5(0x39a)]['call'](_0x56d765[_0x41c4d5(0x37d)][_0x41c4d5(0x3b7)],_0x56d765);_0x56d765[_0x41c4d5(0x1e9)](_0x41c4d5(0x30c))?this[_0x41c4d5(0x317)][_0x41c4d5(0x1ed)](_0x41c4d5(0x30c),_0x56d765[_0x41c4d5(0x3ae)](_0x41c4d5(0x30c))):this['label'][_0x41c4d5(0x3e2)](_0x41c4d5(0x30c));_0x56d765[_0x41c4d5(0x1e9)](_0x41c4d5(0x389))?this[_0x41c4d5(0x317)][_0x41c4d5(0x1ed)](_0x41c4d5(0x389),_0x56d765[_0x41c4d5(0x3ae)](_0x41c4d5(0x389))):this[_0x41c4d5(0x317)][_0x41c4d5(0x3e2)]('data-label');if(_0x2e10ac){if(typeof Event===_0x41c4d5(0x33b))this[_0x41c4d5(0x38e)][_0x41c4d5(0x18e)](new Event('change'));else{if((typeof Event===_0x41c4d5(0x1ab)?_0x41c4d5(0x1ab):_0x4eb9b4(Event))===_0x41c4d5(0x2e1)){var _0x45e91f=document[_0x41c4d5(0x3de)]('Event');_0x45e91f['initEvent'](_0x41c4d5(0x25c),!![],!![]),this[_0x41c4d5(0x38e)][_0x41c4d5(0x18e)](_0x45e91f);}}this[_0x41c4d5(0x3bf)]();}}else this['label'][_0x41c4d5(0x3e2)](_0x41c4d5(0x30c)),this[_0x41c4d5(0x317)]['removeAttribute'](_0x41c4d5(0x389));}},{'key':'update','value':function _0x487149(){var _0xdd51c=_0x19ffe2,_0xc6a7ae=void 0x0;if(this[_0xdd51c(0x38e)][_0xdd51c(0x2df)]>-0x1){var _0x490d98=this[_0xdd51c(0x2c9)][_0xdd51c(0x42f)](_0xdd51c(0x322))[_0xdd51c(0x3b7)][this[_0xdd51c(0x38e)][_0xdd51c(0x2df)]];_0xc6a7ae=this[_0xdd51c(0x38e)][_0xdd51c(0x3d1)][this[_0xdd51c(0x38e)][_0xdd51c(0x2df)]],this[_0xdd51c(0x379)](_0x490d98);}else this[_0xdd51c(0x379)](null);var _0x5bf394=_0xc6a7ae!=null&&_0xc6a7ae!==this[_0xdd51c(0x38e)]['querySelector'](_0xdd51c(0x23b));this[_0xdd51c(0x317)]['classList']['toggle'](_0xdd51c(0x3e5),_0x5bf394);}}]),_0x55b15e;}());_0xe68c48['default']=_0x28621c;},function(_0x10c224,_0x1952e3){var _0x39b48f=a9_0x50c4;_0x10c224[_0x39b48f(0x426)]=_0x39b48f(0x24d);},function(_0xf8a909,_0x5e5afd,_0x49bf84){'use strict';var _0x5a6376=a9_0x50c4;Object['defineProperty'](_0x5e5afd,'__esModule',{'value':!![]});var _0x1a98dd=(function(){function _0x312755(_0x284663,_0x342d73){var _0x1b17d9=a9_0x50c4;for(var _0x576ac0=0x0;_0x576ac0<_0x342d73[_0x1b17d9(0x19a)];_0x576ac0++){var _0x502ff2=_0x342d73[_0x576ac0];_0x502ff2[_0x1b17d9(0x1eb)]=_0x502ff2['enumerable']||![],_0x502ff2[_0x1b17d9(0x203)]=!![];if('value'in _0x502ff2)_0x502ff2['writable']=!![];Object[_0x1b17d9(0x289)](_0x284663,_0x502ff2['key'],_0x502ff2);}}return function(_0x2a1c10,_0x1e2719,_0x57bb24){var _0x1046c2=a9_0x50c4;if(_0x1e2719)_0x312755(_0x2a1c10[_0x1046c2(0x44f)],_0x1e2719);if(_0x57bb24)_0x312755(_0x2a1c10,_0x57bb24);return _0x2a1c10;};}()),_0x57faff=function _0x431b8b(_0x598e01,_0x38a990,_0x59841f){var _0x12d384=a9_0x50c4;if(_0x598e01===null)_0x598e01=Function[_0x12d384(0x44f)];var _0x3aebf4=Object[_0x12d384(0x1e0)](_0x598e01,_0x38a990);if(_0x3aebf4===undefined){var _0x510d38=Object[_0x12d384(0x2e0)](_0x598e01);return _0x510d38===null?undefined:_0x431b8b(_0x510d38,_0x38a990,_0x59841f);}else{if(_0x12d384(0x2e4)in _0x3aebf4)return _0x3aebf4['value'];else{var _0x29cde8=_0x3aebf4[_0x12d384(0x246)];if(_0x29cde8===undefined)return undefined;return _0x29cde8[_0x12d384(0x1e2)](_0x59841f);}}},_0x3c3aaa=_0x49bf84(0x65),_0x5b3996=_0x166d6e(_0x3c3aaa);function _0x166d6e(_0x2dcc31){var _0x112576=a9_0x50c4;return _0x2dcc31&&_0x2dcc31[_0x112576(0x2ad)]?_0x2dcc31:{'default':_0x2dcc31};}function _0x17deda(_0x18cd4b,_0x5aa6b7){var _0x206fb1=a9_0x50c4;if(!(_0x18cd4b instanceof _0x5aa6b7))throw new TypeError(_0x206fb1(0x2eb));}function _0x323361(_0x19b9b9,_0x1cd827){var _0x265689=a9_0x50c4;if(!_0x19b9b9)throw new ReferenceError(_0x265689(0x434));return _0x1cd827&&(typeof _0x1cd827==='object'||typeof _0x1cd827===_0x265689(0x33b))?_0x1cd827:_0x19b9b9;}function _0xf728f1(_0x2b73f6,_0xcc008e){var _0x422590=a9_0x50c4;if(typeof _0xcc008e!==_0x422590(0x33b)&&_0xcc008e!==null)throw new TypeError(_0x422590(0x448)+typeof _0xcc008e);_0x2b73f6['prototype']=Object['create'](_0xcc008e&&_0xcc008e[_0x422590(0x44f)],{'constructor':{'value':_0x2b73f6,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0xcc008e)Object[_0x422590(0x1ea)]?Object[_0x422590(0x1ea)](_0x2b73f6,_0xcc008e):_0x2b73f6[_0x422590(0x1b4)]=_0xcc008e;}var _0xf5a94e=function(_0x4956e){_0xf728f1(_0x88e3c0,_0x4956e);function _0x88e3c0(_0x216a0e,_0x5b66e4){var _0xab9210=a9_0x50c4;_0x17deda(this,_0x88e3c0);var _0x297f40=_0x323361(this,(_0x88e3c0[_0xab9210(0x1b4)]||Object['getPrototypeOf'](_0x88e3c0))[_0xab9210(0x1e2)](this,_0x216a0e));return _0x297f40[_0xab9210(0x317)]['innerHTML']=_0x5b66e4,_0x297f40[_0xab9210(0x2c9)]['classList']['add']('ql-color-picker'),[]['slice'][_0xab9210(0x1e2)](_0x297f40[_0xab9210(0x2c9)][_0xab9210(0x3ec)](_0xab9210(0x2d4)),0x0,0x7)[_0xab9210(0x3e4)](function(_0x3ce846){var _0xa77a8a=_0xab9210;_0x3ce846[_0xa77a8a(0x446)][_0xa77a8a(0x184)](_0xa77a8a(0x3dd));}),_0x297f40;}return _0x1a98dd(_0x88e3c0,[{'key':'buildItem','value':function _0x568be8(_0x5c7ab1){var _0x2f81cf=a9_0x50c4,_0x1c25ca=_0x57faff(_0x88e3c0['prototype'][_0x2f81cf(0x1b4)]||Object[_0x2f81cf(0x2e0)](_0x88e3c0['prototype']),'buildItem',this)['call'](this,_0x5c7ab1);return _0x1c25ca[_0x2f81cf(0x1f3)]['backgroundColor']=_0x5c7ab1['getAttribute'](_0x2f81cf(0x2e4))||'',_0x1c25ca;}},{'key':'selectItem','value':function _0x4b19d2(_0x9fa0d9,_0x20640c){var _0x48d527=a9_0x50c4;_0x57faff(_0x88e3c0[_0x48d527(0x44f)][_0x48d527(0x1b4)]||Object[_0x48d527(0x2e0)](_0x88e3c0[_0x48d527(0x44f)]),_0x48d527(0x379),this)[_0x48d527(0x1e2)](this,_0x9fa0d9,_0x20640c);var _0x348c4d=this[_0x48d527(0x317)][_0x48d527(0x42f)](_0x48d527(0x180)),_0x51816a=_0x9fa0d9?_0x9fa0d9[_0x48d527(0x3ae)](_0x48d527(0x30c))||'':'';_0x348c4d&&(_0x348c4d['tagName']===_0x48d527(0x17c)?_0x348c4d[_0x48d527(0x1f3)][_0x48d527(0x1a0)]=_0x51816a:_0x348c4d[_0x48d527(0x1f3)][_0x48d527(0x239)]=_0x51816a);}}]),_0x88e3c0;}(_0x5b3996[_0x5a6376(0x413)]);_0x5e5afd[_0x5a6376(0x413)]=_0xf5a94e;},function(_0x14179a,_0x4070f6,_0x319657){'use strict';var _0x4a233f=a9_0x50c4;Object[_0x4a233f(0x289)](_0x4070f6,_0x4a233f(0x2ad),{'value':!![]});var _0x5be1a1=(function(){function _0x507b90(_0x84f611,_0x1710f7){var _0x53038e=a9_0x50c4;for(var _0x5a9765=0x0;_0x5a9765<_0x1710f7[_0x53038e(0x19a)];_0x5a9765++){var _0x515924=_0x1710f7[_0x5a9765];_0x515924['enumerable']=_0x515924[_0x53038e(0x1eb)]||![],_0x515924[_0x53038e(0x203)]=!![];if(_0x53038e(0x2e4)in _0x515924)_0x515924[_0x53038e(0x40f)]=!![];Object[_0x53038e(0x289)](_0x84f611,_0x515924[_0x53038e(0x3ea)],_0x515924);}}return function(_0x40f039,_0x48aec3,_0x482461){var _0x279355=a9_0x50c4;if(_0x48aec3)_0x507b90(_0x40f039[_0x279355(0x44f)],_0x48aec3);if(_0x482461)_0x507b90(_0x40f039,_0x482461);return _0x40f039;};}()),_0x242c36=function _0x21ba74(_0x1cb845,_0x19ac19,_0x4c1f12){var _0x1349a7=_0x4a233f;if(_0x1cb845===null)_0x1cb845=Function[_0x1349a7(0x44f)];var _0x3efc99=Object[_0x1349a7(0x1e0)](_0x1cb845,_0x19ac19);if(_0x3efc99===undefined){var _0x56fcee=Object['getPrototypeOf'](_0x1cb845);return _0x56fcee===null?undefined:_0x21ba74(_0x56fcee,_0x19ac19,_0x4c1f12);}else{if('value'in _0x3efc99)return _0x3efc99[_0x1349a7(0x2e4)];else{var _0x317fd0=_0x3efc99['get'];if(_0x317fd0===undefined)return undefined;return _0x317fd0[_0x1349a7(0x1e2)](_0x4c1f12);}}},_0x3e0b6f=_0x319657(0x65),_0x265e63=_0x1befbb(_0x3e0b6f);function _0x1befbb(_0x26fd02){return _0x26fd02&&_0x26fd02['__esModule']?_0x26fd02:{'default':_0x26fd02};}function _0x49850c(_0x3d7c62,_0x2e7bb8){var _0x3d778b=_0x4a233f;if(!(_0x3d7c62 instanceof _0x2e7bb8))throw new TypeError(_0x3d778b(0x2eb));}function _0x3be628(_0x2d0d5f,_0x9ab330){var _0x4b6a1d=_0x4a233f;if(!_0x2d0d5f)throw new ReferenceError(_0x4b6a1d(0x434));return _0x9ab330&&(typeof _0x9ab330===_0x4b6a1d(0x2e1)||typeof _0x9ab330===_0x4b6a1d(0x33b))?_0x9ab330:_0x2d0d5f;}function _0x2ce7a6(_0x54cb4e,_0x23179b){var _0x4ee1d7=_0x4a233f;if(typeof _0x23179b!==_0x4ee1d7(0x33b)&&_0x23179b!==null)throw new TypeError(_0x4ee1d7(0x448)+typeof _0x23179b);_0x54cb4e[_0x4ee1d7(0x44f)]=Object[_0x4ee1d7(0x372)](_0x23179b&&_0x23179b[_0x4ee1d7(0x44f)],{'constructor':{'value':_0x54cb4e,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x23179b)Object['setPrototypeOf']?Object['setPrototypeOf'](_0x54cb4e,_0x23179b):_0x54cb4e[_0x4ee1d7(0x1b4)]=_0x23179b;}var _0x221b8e=function(_0x5d9714){_0x2ce7a6(_0x2913a9,_0x5d9714);function _0x2913a9(_0x710b99,_0x46bda6){var _0x56e333=a9_0x50c4;_0x49850c(this,_0x2913a9);var _0x20bcb2=_0x3be628(this,(_0x2913a9[_0x56e333(0x1b4)]||Object[_0x56e333(0x2e0)](_0x2913a9))[_0x56e333(0x1e2)](this,_0x710b99));return _0x20bcb2[_0x56e333(0x2c9)][_0x56e333(0x446)][_0x56e333(0x184)]('ql-icon-picker'),[]['forEach'][_0x56e333(0x1e2)](_0x20bcb2[_0x56e333(0x2c9)][_0x56e333(0x3ec)](_0x56e333(0x2d4)),function(_0x496cc3){var _0x26d7f5=_0x56e333;_0x496cc3[_0x26d7f5(0x3d3)]=_0x46bda6[_0x496cc3[_0x26d7f5(0x3ae)](_0x26d7f5(0x30c))||''];}),_0x20bcb2['defaultItem']=_0x20bcb2['container']['querySelector'](_0x56e333(0x36d)),_0x20bcb2[_0x56e333(0x379)](_0x20bcb2[_0x56e333(0x42d)]),_0x20bcb2;}return _0x5be1a1(_0x2913a9,[{'key':'selectItem','value':function _0x36c986(_0x1669ca,_0x9d548d){var _0xe3485a=a9_0x50c4;_0x242c36(_0x2913a9[_0xe3485a(0x44f)][_0xe3485a(0x1b4)]||Object['getPrototypeOf'](_0x2913a9[_0xe3485a(0x44f)]),_0xe3485a(0x379),this)[_0xe3485a(0x1e2)](this,_0x1669ca,_0x9d548d),_0x1669ca=_0x1669ca||this[_0xe3485a(0x42d)],this['label'][_0xe3485a(0x3d3)]=_0x1669ca[_0xe3485a(0x3d3)];}}]),_0x2913a9;}(_0x265e63[_0x4a233f(0x413)]);_0x4070f6[_0x4a233f(0x413)]=_0x221b8e;},function(_0x206a73,_0x403422){'use strict';var _0x21465f=a9_0x50c4;Object['defineProperty'](_0x403422,_0x21465f(0x2ad),{'value':!![]});var _0x35a507=(function(){function _0x268265(_0x1573c3,_0x39fdce){var _0x5a72d8=a9_0x50c4;for(var _0x2fbd8a=0x0;_0x2fbd8a<_0x39fdce[_0x5a72d8(0x19a)];_0x2fbd8a++){var _0x2e064c=_0x39fdce[_0x2fbd8a];_0x2e064c[_0x5a72d8(0x1eb)]=_0x2e064c[_0x5a72d8(0x1eb)]||![],_0x2e064c[_0x5a72d8(0x203)]=!![];if(_0x5a72d8(0x2e4)in _0x2e064c)_0x2e064c['writable']=!![];Object['defineProperty'](_0x1573c3,_0x2e064c[_0x5a72d8(0x3ea)],_0x2e064c);}}return function(_0x5b804d,_0x544e31,_0x302cdc){var _0xf52bc1=a9_0x50c4;if(_0x544e31)_0x268265(_0x5b804d[_0xf52bc1(0x44f)],_0x544e31);if(_0x302cdc)_0x268265(_0x5b804d,_0x302cdc);return _0x5b804d;};}());function _0x81c289(_0x1e5577,_0x5b09e7){var _0x50193c=_0x21465f;if(!(_0x1e5577 instanceof _0x5b09e7))throw new TypeError(_0x50193c(0x2eb));}var _0x3311b6=(function(){var _0x179306=_0x21465f;function _0x59293f(_0x599ff6,_0x98b9c6){var _0xf6cd35=a9_0x50c4,_0x49f989=this;_0x81c289(this,_0x59293f),this[_0xf6cd35(0x41b)]=_0x599ff6,this[_0xf6cd35(0x286)]=_0x98b9c6,this['root']=_0x599ff6[_0xf6cd35(0x3c0)](_0xf6cd35(0x3cf)),this['root']['innerHTML']=this['constructor'][_0xf6cd35(0x2e3)];var _0x23f2f6=parseInt(window[_0xf6cd35(0x221)](this[_0xf6cd35(0x32c)])['marginTop']);this['quill'][_0xf6cd35(0x32c)]['addEventListener'](_0xf6cd35(0x36a),function(){var _0x4e6668=_0xf6cd35;_0x49f989[_0x4e6668(0x32c)][_0x4e6668(0x1f3)][_0x4e6668(0x1d4)]=-0x1*_0x49f989[_0x4e6668(0x41b)][_0x4e6668(0x32c)]['scrollTop']+_0x23f2f6+'px',_0x49f989['checkBounds']();}),this[_0xf6cd35(0x31d)]();}return _0x35a507(_0x59293f,[{'key':'checkBounds','value':function _0x2a4cf4(){var _0x23d03d=a9_0x50c4;this[_0x23d03d(0x32c)][_0x23d03d(0x446)][_0x23d03d(0x20a)](_0x23d03d(0x210),this['root'][_0x23d03d(0x334)]<=0x0),this['root']['classList'][_0x23d03d(0x190)](_0x23d03d(0x256)),this['root'][_0x23d03d(0x446)]['toggle'](_0x23d03d(0x256),this[_0x23d03d(0x32c)][_0x23d03d(0x334)]+this['root']['offsetHeight']>=this['quill'][_0x23d03d(0x32c)][_0x23d03d(0x2a9)]);}},{'key':_0x179306(0x31d),'value':function _0x562484(){var _0x4d36a6=_0x179306;this[_0x4d36a6(0x32c)][_0x4d36a6(0x446)][_0x4d36a6(0x184)](_0x4d36a6(0x419));}},{'key':'position','value':function _0x6f704b(_0x33231f){var _0x363179=_0x179306,_0x4a2a1b=_0x33231f[_0x363179(0x22a)]+_0x33231f[_0x363179(0x22c)]/0x2-this[_0x363179(0x32c)][_0x363179(0x1f1)]/0x2,_0x5aed17=_0x33231f[_0x363179(0x3c5)]+this[_0x363179(0x41b)]['root'][_0x363179(0x240)];this[_0x363179(0x32c)][_0x363179(0x1f3)][_0x363179(0x22a)]=_0x4a2a1b+'px',this[_0x363179(0x32c)][_0x363179(0x1f3)][_0x363179(0x1ef)]=_0x5aed17+'px';var _0x33b9f3=this['boundsContainer'][_0x363179(0x185)](),_0x1e22a2=this['root']['getBoundingClientRect'](),_0x2fd004=0x0;return _0x1e22a2[_0x363179(0x3f6)]>_0x33b9f3[_0x363179(0x3f6)]&&(_0x2fd004=_0x33b9f3[_0x363179(0x3f6)]-_0x1e22a2[_0x363179(0x3f6)],this['root'][_0x363179(0x1f3)][_0x363179(0x22a)]=_0x4a2a1b+_0x2fd004+'px'),_0x1e22a2[_0x363179(0x22a)]<_0x33b9f3[_0x363179(0x22a)]&&(_0x2fd004=_0x33b9f3[_0x363179(0x22a)]-_0x1e22a2[_0x363179(0x22a)],this[_0x363179(0x32c)][_0x363179(0x1f3)][_0x363179(0x22a)]=_0x4a2a1b+_0x2fd004+'px'),this[_0x363179(0x3e0)](),_0x2fd004;}},{'key':_0x179306(0x1bc),'value':function _0x20711f(){var _0x2ec7ae=_0x179306;this[_0x2ec7ae(0x32c)]['classList'][_0x2ec7ae(0x190)](_0x2ec7ae(0x27a)),this[_0x2ec7ae(0x32c)]['classList'][_0x2ec7ae(0x190)](_0x2ec7ae(0x419));}}]),_0x59293f;}());_0x403422[_0x21465f(0x413)]=_0x3311b6;},function(_0x1acc9e,_0x2cb7fc,_0x47bb18){'use strict';var _0x22b217=a9_0x50c4;Object[_0x22b217(0x289)](_0x2cb7fc,_0x22b217(0x2ad),{'value':!![]});var _0xeb9c99=function _0x37d716(_0x3472fd,_0x2a576d,_0x3a6d46){var _0x109f69=_0x22b217;if(_0x3472fd===null)_0x3472fd=Function['prototype'];var _0x34a814=Object[_0x109f69(0x1e0)](_0x3472fd,_0x2a576d);if(_0x34a814===undefined){var _0xa03ead=Object[_0x109f69(0x2e0)](_0x3472fd);return _0xa03ead===null?undefined:_0x37d716(_0xa03ead,_0x2a576d,_0x3a6d46);}else{if(_0x109f69(0x2e4)in _0x34a814)return _0x34a814['value'];else{var _0x321541=_0x34a814[_0x109f69(0x246)];if(_0x321541===undefined)return undefined;return _0x321541[_0x109f69(0x1e2)](_0x3a6d46);}}},_0x31f437=(function(){function _0x40646b(_0x3e288c,_0x47d843){var _0x2aedb5=a9_0x50c4;for(var _0x33be28=0x0;_0x33be28<_0x47d843[_0x2aedb5(0x19a)];_0x33be28++){var _0x2926ba=_0x47d843[_0x33be28];_0x2926ba[_0x2aedb5(0x1eb)]=_0x2926ba['enumerable']||![],_0x2926ba['configurable']=!![];if(_0x2aedb5(0x2e4)in _0x2926ba)_0x2926ba[_0x2aedb5(0x40f)]=!![];Object['defineProperty'](_0x3e288c,_0x2926ba[_0x2aedb5(0x3ea)],_0x2926ba);}}return function(_0x33b1c5,_0x436f8a,_0x592fd1){var _0x56f10a=a9_0x50c4;if(_0x436f8a)_0x40646b(_0x33b1c5[_0x56f10a(0x44f)],_0x436f8a);if(_0x592fd1)_0x40646b(_0x33b1c5,_0x592fd1);return _0x33b1c5;};}()),_0x1cb0a0=_0x47bb18(0x19),_0x35741e=_0x2b4167(_0x1cb0a0),_0x28347d=_0x47bb18(0x1c),_0x182639=_0x2b4167(_0x28347d),_0x5e50bb=_0x47bb18(0x34),_0x132c81=_0x2b4167(_0x5e50bb),_0xfe4ca8=_0x47bb18(0x6b),_0xe6c04d=_0x2b4167(_0xfe4ca8),_0x4364ca=_0x47bb18(0x45),_0x496049=_0x2b4167(_0x4364ca),_0x3358a0=_0x47bb18(0x28);function _0x2b4167(_0x3dc319){var _0x1d01b0=_0x22b217;return _0x3dc319&&_0x3dc319[_0x1d01b0(0x2ad)]?_0x3dc319:{'default':_0x3dc319};}function _0x2e79cb(_0x34c0c9,_0x5183ef){if(!(_0x34c0c9 instanceof _0x5183ef))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x570cb1(_0x506cb2,_0x48996c){var _0x40bdbb=_0x22b217;if(!_0x506cb2)throw new ReferenceError(_0x40bdbb(0x434));return _0x48996c&&(typeof _0x48996c===_0x40bdbb(0x2e1)||typeof _0x48996c===_0x40bdbb(0x33b))?_0x48996c:_0x506cb2;}function _0x21488b(_0x51346a,_0x244c84){var _0x6bfa3f=_0x22b217;if(typeof _0x244c84!=='function'&&_0x244c84!==null)throw new TypeError(_0x6bfa3f(0x448)+typeof _0x244c84);_0x51346a[_0x6bfa3f(0x44f)]=Object[_0x6bfa3f(0x372)](_0x244c84&&_0x244c84['prototype'],{'constructor':{'value':_0x51346a,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x244c84)Object[_0x6bfa3f(0x1ea)]?Object['setPrototypeOf'](_0x51346a,_0x244c84):_0x51346a[_0x6bfa3f(0x1b4)]=_0x244c84;}var _0x312770=[['bold',_0x22b217(0x287),'link'],[{'header':0x1},{'header':0x2},'blockquote']],_0x48adcb=function(_0x2952a3){_0x21488b(_0x14fbf5,_0x2952a3);function _0x14fbf5(_0x189fd4,_0x40f4f3){var _0x353477=a9_0x50c4;_0x2e79cb(this,_0x14fbf5);_0x40f4f3[_0x353477(0x383)]['toolbar']!=null&&_0x40f4f3[_0x353477(0x383)][_0x353477(0x3c1)][_0x353477(0x2c9)]==null&&(_0x40f4f3[_0x353477(0x383)][_0x353477(0x3c1)][_0x353477(0x2c9)]=_0x312770);var _0xbf87bc=_0x570cb1(this,(_0x14fbf5['__proto__']||Object[_0x353477(0x2e0)](_0x14fbf5))[_0x353477(0x1e2)](this,_0x189fd4,_0x40f4f3));return _0xbf87bc[_0x353477(0x41b)]['container'][_0x353477(0x446)]['add'](_0x353477(0x2a6)),_0xbf87bc;}return _0x31f437(_0x14fbf5,[{'key':'extendToolbar','value':function _0x51f70d(_0x1d243e){var _0x46ff52=a9_0x50c4;this[_0x46ff52(0x233)]=new _0x3f90ea(this[_0x46ff52(0x41b)],this[_0x46ff52(0x3d1)][_0x46ff52(0x346)]),this[_0x46ff52(0x233)][_0x46ff52(0x32c)]['appendChild'](_0x1d243e[_0x46ff52(0x2c9)]),this['buildButtons']([][_0x46ff52(0x441)][_0x46ff52(0x1e2)](_0x1d243e[_0x46ff52(0x2c9)][_0x46ff52(0x3ec)](_0x46ff52(0x1db)))),this[_0x46ff52(0x219)]([]['slice'][_0x46ff52(0x1e2)](_0x1d243e[_0x46ff52(0x2c9)]['querySelectorAll'](_0x46ff52(0x38e))));}}]),_0x14fbf5;}(_0xe6c04d[_0x22b217(0x413)]);_0x48adcb[_0x22b217(0x1c3)]=(0x0,_0x35741e[_0x22b217(0x413)])(!![],{},_0xfe4ca8['BaseTooltip'][_0x22b217(0x1c3)],{'modules':{'toolbar':{'handlers':{'link':function _0x4e2d94(_0x567cd5){var _0x5b5864=_0x22b217;!_0x567cd5?this['quill'][_0x5b5864(0x1d9)](_0x5b5864(0x2ac),![]):this['quill'][_0x5b5864(0x35f)][_0x5b5864(0x233)][_0x5b5864(0x1dd)]();}}}}});var _0x3f90ea=function(_0x107f93){var _0x4c43df=_0x22b217;_0x21488b(_0xbcd6b0,_0x107f93);function _0xbcd6b0(_0x32dd23,_0x5d7e66){var _0x5cfcda=a9_0x50c4;_0x2e79cb(this,_0xbcd6b0);var _0x54b6ae=_0x570cb1(this,(_0xbcd6b0['__proto__']||Object[_0x5cfcda(0x2e0)](_0xbcd6b0))[_0x5cfcda(0x1e2)](this,_0x32dd23,_0x5d7e66));return _0x54b6ae[_0x5cfcda(0x41b)]['on'](_0x182639[_0x5cfcda(0x413)][_0x5cfcda(0x42e)][_0x5cfcda(0x411)],function(_0x460374,_0x3c6025){var _0x3dd6fa=_0x5cfcda;if(_0x460374!==_0x182639[_0x3dd6fa(0x413)]['events'][_0x3dd6fa(0x374)])return;if(_0x3c6025!=null&&_0x3c6025['length']>0x0){_0x54b6ae[_0x3dd6fa(0x1bc)](),_0x54b6ae[_0x3dd6fa(0x32c)]['style'][_0x3dd6fa(0x22a)]='0px',_0x54b6ae['root']['style'][_0x3dd6fa(0x22c)]='',_0x54b6ae[_0x3dd6fa(0x32c)][_0x3dd6fa(0x1f3)][_0x3dd6fa(0x22c)]=_0x54b6ae[_0x3dd6fa(0x32c)][_0x3dd6fa(0x1f1)]+'px';var _0x4245a4=_0x54b6ae[_0x3dd6fa(0x41b)]['scroll'][_0x3dd6fa(0x33a)](_0x3c6025[_0x3dd6fa(0x320)],_0x3c6025['length']);if(_0x4245a4[_0x3dd6fa(0x19a)]===0x1)_0x54b6ae[_0x3dd6fa(0x24b)](_0x54b6ae[_0x3dd6fa(0x41b)][_0x3dd6fa(0x401)](_0x3c6025));else{var _0x1f35e1=_0x4245a4[_0x4245a4['length']-0x1],_0x1be072=_0x1f35e1[_0x3dd6fa(0x438)](_0x54b6ae[_0x3dd6fa(0x41b)][_0x3dd6fa(0x36a)]),_0xd855c1=Math[_0x3dd6fa(0x384)](_0x1f35e1[_0x3dd6fa(0x19a)]()-0x1,_0x3c6025[_0x3dd6fa(0x320)]+_0x3c6025['length']-_0x1be072),_0x1e8c7a=_0x54b6ae['quill']['getBounds'](new _0x3358a0[(_0x3dd6fa(0x2a5))](_0x1be072,_0xd855c1));_0x54b6ae[_0x3dd6fa(0x24b)](_0x1e8c7a);}}else document['activeElement']!==_0x54b6ae[_0x3dd6fa(0x261)]&&_0x54b6ae[_0x3dd6fa(0x41b)][_0x3dd6fa(0x226)]()&&_0x54b6ae[_0x3dd6fa(0x31d)]();}),_0x54b6ae;}return _0x31f437(_0xbcd6b0,[{'key':_0x4c43df(0x20f),'value':function _0x2c5354(){var _0x5d2f00=_0x4c43df,_0x1ae3bd=this;_0xeb9c99(_0xbcd6b0[_0x5d2f00(0x44f)][_0x5d2f00(0x1b4)]||Object[_0x5d2f00(0x2e0)](_0xbcd6b0[_0x5d2f00(0x44f)]),_0x5d2f00(0x20f),this)[_0x5d2f00(0x1e2)](this),this[_0x5d2f00(0x32c)][_0x5d2f00(0x42f)](_0x5d2f00(0x199))['addEventListener'](_0x5d2f00(0x248),function(_0x2f9d3b){var _0x5aa1ae=_0x5d2f00;_0x1ae3bd[_0x5aa1ae(0x32c)]['classList'][_0x5aa1ae(0x190)](_0x5aa1ae(0x27a));}),this[_0x5d2f00(0x41b)]['on'](_0x182639['default'][_0x5d2f00(0x42e)][_0x5d2f00(0x212)],function(){setTimeout(function(){var _0xbd26e8=a9_0x50c4;if(_0x1ae3bd[_0xbd26e8(0x32c)][_0xbd26e8(0x446)][_0xbd26e8(0x386)](_0xbd26e8(0x419)))return;var _0x4945ea=_0x1ae3bd[_0xbd26e8(0x41b)][_0xbd26e8(0x407)]();_0x4945ea!=null&&_0x1ae3bd['position'](_0x1ae3bd[_0xbd26e8(0x41b)][_0xbd26e8(0x401)](_0x4945ea));},0x1);});}},{'key':_0x4c43df(0x1ae),'value':function _0xd7074e(){var _0x6d875a=_0x4c43df;this[_0x6d875a(0x1bc)]();}},{'key':'position','value':function _0x25db72(_0x133cac){var _0x22a64c=_0x4c43df,_0x4ada4e=_0xeb9c99(_0xbcd6b0['prototype'][_0x22a64c(0x1b4)]||Object[_0x22a64c(0x2e0)](_0xbcd6b0[_0x22a64c(0x44f)]),_0x22a64c(0x24b),this)[_0x22a64c(0x1e2)](this,_0x133cac);if(_0x4ada4e===0x0)return _0x4ada4e;var _0x2b042e=this[_0x22a64c(0x32c)][_0x22a64c(0x42f)](_0x22a64c(0x3be));_0x2b042e['style']['marginLeft']='',_0x2b042e[_0x22a64c(0x1f3)][_0x22a64c(0x403)]=-0x1*_0x4ada4e-_0x2b042e['offsetWidth']/0x2+'px';}}]),_0xbcd6b0;}(_0xfe4ca8[_0x22b217(0x1a1)]);_0x3f90ea[_0x22b217(0x2e3)]=[_0x22b217(0x44d),'<div\x20class=\x22ql-tooltip-editor\x22>',_0x22b217(0x3d0),_0x22b217(0x285),_0x22b217(0x3af)][_0x22b217(0x28f)](''),_0x2cb7fc[_0x22b217(0x413)]=_0x48adcb;},function(_0x5e764a,_0x43d648,_0x587d2d){'use strict';var _0x21b0b1=a9_0x50c4;Object[_0x21b0b1(0x289)](_0x43d648,_0x21b0b1(0x2ad),{'value':!![]}),_0x43d648[_0x21b0b1(0x413)]=_0x43d648['BaseTooltip']=undefined;var _0x201ba7=(function(){function _0x77a364(_0x1fb586,_0x29299a){var _0x227599=a9_0x50c4;for(var _0x5762ee=0x0;_0x5762ee<_0x29299a[_0x227599(0x19a)];_0x5762ee++){var _0x24d60b=_0x29299a[_0x5762ee];_0x24d60b['enumerable']=_0x24d60b[_0x227599(0x1eb)]||![],_0x24d60b[_0x227599(0x203)]=!![];if(_0x227599(0x2e4)in _0x24d60b)_0x24d60b[_0x227599(0x40f)]=!![];Object[_0x227599(0x289)](_0x1fb586,_0x24d60b['key'],_0x24d60b);}}return function(_0x2bef3a,_0x34f451,_0xe5b623){var _0x430f87=a9_0x50c4;if(_0x34f451)_0x77a364(_0x2bef3a[_0x430f87(0x44f)],_0x34f451);if(_0xe5b623)_0x77a364(_0x2bef3a,_0xe5b623);return _0x2bef3a;};}()),_0x45b916=function _0x978ef2(_0x25096e,_0x1ac183,_0x103cd3){var _0xcf502e=_0x21b0b1;if(_0x25096e===null)_0x25096e=Function['prototype'];var _0x4c4216=Object[_0xcf502e(0x1e0)](_0x25096e,_0x1ac183);if(_0x4c4216===undefined){var _0x5abef5=Object['getPrototypeOf'](_0x25096e);return _0x5abef5===null?undefined:_0x978ef2(_0x5abef5,_0x1ac183,_0x103cd3);}else{if(_0xcf502e(0x2e4)in _0x4c4216)return _0x4c4216[_0xcf502e(0x2e4)];else{var _0xff2f38=_0x4c4216[_0xcf502e(0x246)];if(_0xff2f38===undefined)return undefined;return _0xff2f38['call'](_0x103cd3);}}},_0xa2a81c=_0x587d2d(0x19),_0x3d7efb=_0x15baaa(_0xa2a81c),_0x5f1a2f=_0x587d2d(0x14),_0x59098b=_0x15baaa(_0x5f1a2f),_0x351ad1=_0x587d2d(0x1c),_0xa93fd6=_0x15baaa(_0x351ad1),_0x919da4=_0x587d2d(0x34),_0x238a13=_0x15baaa(_0x919da4),_0x38d7e1=_0x587d2d(0x29),_0x48902d=_0x15baaa(_0x38d7e1),_0x1e9b73=_0x587d2d(0x67),_0x937cbb=_0x15baaa(_0x1e9b73),_0x2c5c90=_0x587d2d(0x68),_0x4a3c17=_0x15baaa(_0x2c5c90),_0x1b1cf0=_0x587d2d(0x65),_0x4a479b=_0x15baaa(_0x1b1cf0),_0x40c4a2=_0x587d2d(0x69),_0x5e4fac=_0x15baaa(_0x40c4a2),_0x4631ea=_0x587d2d(0x45),_0x58954c=_0x15baaa(_0x4631ea);function _0x15baaa(_0x88fab2){return _0x88fab2&&_0x88fab2['__esModule']?_0x88fab2:{'default':_0x88fab2};}function _0x583ac4(_0x2dcf77,_0x1d88e5){var _0x268b01=_0x21b0b1;if(!(_0x2dcf77 instanceof _0x1d88e5))throw new TypeError(_0x268b01(0x2eb));}function _0x3cb9b3(_0x412e05,_0x50e5d3){var _0x1ab874=_0x21b0b1;if(!_0x412e05)throw new ReferenceError(_0x1ab874(0x434));return _0x50e5d3&&(typeof _0x50e5d3===_0x1ab874(0x2e1)||typeof _0x50e5d3===_0x1ab874(0x33b))?_0x50e5d3:_0x412e05;}function _0x326ffc(_0x2df69c,_0x1e5779){var _0x205880=_0x21b0b1;if(typeof _0x1e5779!==_0x205880(0x33b)&&_0x1e5779!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x1e5779);_0x2df69c[_0x205880(0x44f)]=Object[_0x205880(0x372)](_0x1e5779&&_0x1e5779['prototype'],{'constructor':{'value':_0x2df69c,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x1e5779)Object['setPrototypeOf']?Object['setPrototypeOf'](_0x2df69c,_0x1e5779):_0x2df69c[_0x205880(0x1b4)]=_0x1e5779;}var _0x62fbec=[![],_0x21b0b1(0x381),_0x21b0b1(0x3f6),_0x21b0b1(0x244)],_0x4d5026=[_0x21b0b1(0x1b6),_0x21b0b1(0x2bb),_0x21b0b1(0x1dc),'#ffff00','#008A00',_0x21b0b1(0x363),_0x21b0b1(0x44b),'#ffffff','#facccc',_0x21b0b1(0x38b),_0x21b0b1(0x230),_0x21b0b1(0x36f),'#cce0f5',_0x21b0b1(0x18d),'#bbbbbb',_0x21b0b1(0x3f7),_0x21b0b1(0x2dd),_0x21b0b1(0x395),_0x21b0b1(0x31e),_0x21b0b1(0x343),_0x21b0b1(0x3f4),_0x21b0b1(0x1ce),_0x21b0b1(0x2f5),'#b26b00','#b2b200','#006100',_0x21b0b1(0x3b5),_0x21b0b1(0x17d),_0x21b0b1(0x305),_0x21b0b1(0x1de),_0x21b0b1(0x265),_0x21b0b1(0x2ee),'#003700','#002966',_0x21b0b1(0x198)],_0x2548a8=[![],_0x21b0b1(0x18b),_0x21b0b1(0x3e6)],_0x4600d9=['1','2','3',![]],_0x5db69a=[_0x21b0b1(0x356),![],_0x21b0b1(0x3f2),_0x21b0b1(0x223)],_0xe8f183=function(_0x8ae955){var _0x21a761=_0x21b0b1;_0x326ffc(_0x38caa8,_0x8ae955);function _0x38caa8(_0x4358a2,_0x24ac71){var _0x3b277a=a9_0x50c4;_0x583ac4(this,_0x38caa8);var _0x2eee58=_0x3cb9b3(this,(_0x38caa8['__proto__']||Object['getPrototypeOf'](_0x38caa8))[_0x3b277a(0x1e2)](this,_0x4358a2,_0x24ac71)),_0x407f9e=function _0x16fd22(_0x139196){var _0x27c32e=_0x3b277a;if(!document[_0x27c32e(0x2a2)]['contains'](_0x4358a2[_0x27c32e(0x32c)]))return document['body'][_0x27c32e(0x3e7)]('click',_0x16fd22);_0x2eee58[_0x27c32e(0x233)]!=null&&!_0x2eee58[_0x27c32e(0x233)][_0x27c32e(0x32c)][_0x27c32e(0x386)](_0x139196['target'])&&document[_0x27c32e(0x40d)]!==_0x2eee58['tooltip'][_0x27c32e(0x261)]&&!_0x2eee58[_0x27c32e(0x41b)][_0x27c32e(0x226)]()&&_0x2eee58[_0x27c32e(0x233)][_0x27c32e(0x31d)](),_0x2eee58[_0x27c32e(0x424)]!=null&&_0x2eee58[_0x27c32e(0x424)][_0x27c32e(0x3e4)](function(_0x550477){var _0x5791fb=_0x27c32e;!_0x550477[_0x5791fb(0x2c9)][_0x5791fb(0x386)](_0x139196[_0x5791fb(0x3c2)])&&_0x550477[_0x5791fb(0x3bf)]();});};return document[_0x3b277a(0x2a2)]['addEventListener']('click',_0x407f9e),_0x2eee58;}return _0x201ba7(_0x38caa8,[{'key':_0x21a761(0x3cc),'value':function _0x130388(_0x3d5f77){var _0x8b04d=_0x21a761,_0x19733f=_0x45b916(_0x38caa8[_0x8b04d(0x44f)][_0x8b04d(0x1b4)]||Object[_0x8b04d(0x2e0)](_0x38caa8[_0x8b04d(0x44f)]),_0x8b04d(0x3cc),this)[_0x8b04d(0x1e2)](this,_0x3d5f77);return _0x3d5f77===_0x8b04d(0x3c1)&&this['extendToolbar'](_0x19733f),_0x19733f;}},{'key':'buildButtons','value':function _0x39e6f3(_0x178dff){_0x178dff['forEach'](function(_0x463753){var _0x605e9=a9_0x50c4,_0x1212e8=_0x463753[_0x605e9(0x3ae)](_0x605e9(0x332))||'';_0x1212e8[_0x605e9(0x428)](/\s+/)[_0x605e9(0x3e4)](function(_0x2ad2be){var _0x5b9284=_0x605e9;if(!_0x2ad2be[_0x5b9284(0x34f)](_0x5b9284(0x43f)))return;_0x2ad2be=_0x2ad2be[_0x5b9284(0x441)](_0x5b9284(0x43f)['length']);if(_0x58954c[_0x5b9284(0x413)][_0x2ad2be]==null)return;if(_0x2ad2be===_0x5b9284(0x2db))_0x463753['innerHTML']=_0x58954c[_0x5b9284(0x413)][_0x2ad2be]['']+_0x58954c[_0x5b9284(0x413)][_0x2ad2be][_0x5b9284(0x2bd)];else{if(typeof _0x58954c[_0x5b9284(0x413)][_0x2ad2be]===_0x5b9284(0x187))_0x463753[_0x5b9284(0x3d3)]=_0x58954c[_0x5b9284(0x413)][_0x2ad2be];else{var _0x1a4eb7=_0x463753['value']||'';_0x1a4eb7!=null&&_0x58954c[_0x5b9284(0x413)][_0x2ad2be][_0x1a4eb7]&&(_0x463753[_0x5b9284(0x3d3)]=_0x58954c[_0x5b9284(0x413)][_0x2ad2be][_0x1a4eb7]);}}});});}},{'key':_0x21a761(0x219),'value':function _0x2097ca(_0x40e3e1){var _0x2bbee3=_0x21a761,_0x91f582=this;this[_0x2bbee3(0x424)]=_0x40e3e1[_0x2bbee3(0x410)](function(_0x323f88){var _0x24f396=_0x2bbee3;if(_0x323f88[_0x24f396(0x446)][_0x24f396(0x386)]('ql-align'))return _0x323f88['querySelector'](_0x24f396(0x292))==null&&_0xe8f82c(_0x323f88,_0x62fbec),new _0x4a3c17[(_0x24f396(0x413))](_0x323f88,_0x58954c[_0x24f396(0x413)][_0x24f396(0x34d)]);else{if(_0x323f88[_0x24f396(0x446)][_0x24f396(0x386)](_0x24f396(0x23d))||_0x323f88['classList']['contains'](_0x24f396(0x375))){var _0x49de7e=_0x323f88['classList'][_0x24f396(0x386)](_0x24f396(0x23d))?'background':_0x24f396(0x281);return _0x323f88[_0x24f396(0x42f)](_0x24f396(0x292))==null&&_0xe8f82c(_0x323f88,_0x4d5026,_0x49de7e===_0x24f396(0x41c)?_0x24f396(0x3b8):_0x24f396(0x1b6)),new _0x937cbb[(_0x24f396(0x413))](_0x323f88,_0x58954c[_0x24f396(0x413)][_0x49de7e]);}else{if(_0x323f88[_0x24f396(0x42f)]('option')==null){if(_0x323f88[_0x24f396(0x446)][_0x24f396(0x386)](_0x24f396(0x20e)))_0xe8f82c(_0x323f88,_0x2548a8);else{if(_0x323f88[_0x24f396(0x446)]['contains'](_0x24f396(0x358)))_0xe8f82c(_0x323f88,_0x4600d9);else _0x323f88[_0x24f396(0x446)]['contains']('ql-size')&&_0xe8f82c(_0x323f88,_0x5db69a);}}return new _0x4a479b[(_0x24f396(0x413))](_0x323f88);}}});var _0x1b2112=function _0x110201(){var _0x30dfb4=_0x2bbee3;_0x91f582[_0x30dfb4(0x424)]['forEach'](function(_0xf19fef){var _0x160de2=_0x30dfb4;_0xf19fef[_0x160de2(0x22f)]();});};this[_0x2bbee3(0x41b)]['on'](_0xa93fd6[_0x2bbee3(0x413)]['events']['SELECTION_CHANGE'],_0x1b2112)['on'](_0xa93fd6['default'][_0x2bbee3(0x42e)][_0x2bbee3(0x212)],_0x1b2112);}}]),_0x38caa8;}(_0x48902d[_0x21b0b1(0x413)]);_0xe8f183['DEFAULTS']=(0x0,_0x3d7efb['default'])(!![],{},_0x48902d[_0x21b0b1(0x413)][_0x21b0b1(0x1c3)],{'modules':{'toolbar':{'handlers':{'formula':function _0x298710(_0x4fa162){var _0x18bb45=_0x21b0b1;this[_0x18bb45(0x41b)][_0x18bb45(0x35f)]['tooltip'][_0x18bb45(0x1dd)](_0x18bb45(0x273));},'image':function _0x3ae557(_0x2f2214){var _0x135cdf=_0x21b0b1,_0x1472f6=this,_0x4f30d0=this[_0x135cdf(0x2c9)][_0x135cdf(0x42f)](_0x135cdf(0x435));_0x4f30d0==null&&(_0x4f30d0=document['createElement'](_0x135cdf(0x430)),_0x4f30d0[_0x135cdf(0x1ed)](_0x135cdf(0x2d9),_0x135cdf(0x422)),_0x4f30d0[_0x135cdf(0x1ed)](_0x135cdf(0x338),'image/*'),_0x4f30d0[_0x135cdf(0x446)][_0x135cdf(0x184)](_0x135cdf(0x291)),_0x4f30d0[_0x135cdf(0x44c)](_0x135cdf(0x25c),function(){var _0x43434c=_0x135cdf;if(_0x4f30d0[_0x43434c(0x1c9)]!=null&&_0x4f30d0[_0x43434c(0x1c9)][0x0]!=null){var _0x4b322c=new FileReader();_0x4b322c[_0x43434c(0x266)]=function(_0x358ee){var _0x654516=_0x43434c,_0x3d4e63=_0x1472f6[_0x654516(0x41b)][_0x654516(0x407)](!![]);_0x1472f6[_0x654516(0x41b)][_0x654516(0x456)](new _0x59098b['default']()[_0x654516(0x2f4)](_0x3d4e63[_0x654516(0x320)])[_0x654516(0x362)](_0x3d4e63['length'])[_0x654516(0x26a)]({'image':_0x358ee[_0x654516(0x3c2)][_0x654516(0x1c4)]}),_0xa93fd6[_0x654516(0x413)][_0x654516(0x270)][_0x654516(0x439)]),_0x4f30d0['value']='';},_0x4b322c[_0x43434c(0x416)](_0x4f30d0[_0x43434c(0x1c9)][0x0]);}}),this['container'][_0x135cdf(0x27e)](_0x4f30d0)),_0x4f30d0[_0x135cdf(0x248)]();},'video':function _0x2637bb(_0x9d448e){var _0x434750=_0x21b0b1;this[_0x434750(0x41b)][_0x434750(0x35f)][_0x434750(0x233)][_0x434750(0x1dd)](_0x434750(0x3cd));}}}}});var _0x60bb3e=function(_0x3a0145){var _0x1da246=_0x21b0b1;_0x326ffc(_0xb9643b,_0x3a0145);function _0xb9643b(_0x189a74,_0x58ada5){var _0x4d7e0e=a9_0x50c4;_0x583ac4(this,_0xb9643b);var _0x4a9439=_0x3cb9b3(this,(_0xb9643b[_0x4d7e0e(0x1b4)]||Object['getPrototypeOf'](_0xb9643b))['call'](this,_0x189a74,_0x58ada5));return _0x4a9439[_0x4d7e0e(0x261)]=_0x4a9439[_0x4d7e0e(0x32c)]['querySelector']('input[type=\x22text\x22]'),_0x4a9439[_0x4d7e0e(0x20f)](),_0x4a9439;}return _0x201ba7(_0xb9643b,[{'key':_0x1da246(0x20f),'value':function _0x1150bd(){var _0xffd4f1=_0x1da246,_0x387f2d=this;this['textbox'][_0xffd4f1(0x44c)](_0xffd4f1(0x2ab),function(_0x4e5549){var _0x2afda2=_0xffd4f1;if(_0x238a13[_0x2afda2(0x413)][_0x2afda2(0x3ff)](_0x4e5549,_0x2afda2(0x2b4)))_0x387f2d[_0x2afda2(0x36b)](),_0x4e5549[_0x2afda2(0x40a)]();else _0x238a13[_0x2afda2(0x413)][_0x2afda2(0x3ff)](_0x4e5549,'escape')&&(_0x387f2d[_0x2afda2(0x1ae)](),_0x4e5549['preventDefault']());});}},{'key':_0x1da246(0x1ae),'value':function _0x1a07ae(){var _0x19afa2=_0x1da246;this[_0x19afa2(0x31d)]();}},{'key':'edit','value':function _0x51d2c1(){var _0x101878=_0x1da246,_0x24cae5=arguments[_0x101878(0x19a)]<=0x0||arguments[0x0]===undefined?_0x101878(0x2ac):arguments[0x0],_0x25a825=arguments[_0x101878(0x19a)]<=0x1||arguments[0x1]===undefined?null:arguments[0x1];this['root'][_0x101878(0x446)][_0x101878(0x190)](_0x101878(0x419)),this[_0x101878(0x32c)]['classList'][_0x101878(0x184)](_0x101878(0x27a));if(_0x25a825!=null)this[_0x101878(0x261)][_0x101878(0x2e4)]=_0x25a825;else _0x24cae5!==this[_0x101878(0x32c)][_0x101878(0x3ae)](_0x101878(0x3e3))&&(this[_0x101878(0x261)][_0x101878(0x2e4)]='');this['position'](this[_0x101878(0x41b)][_0x101878(0x401)](this[_0x101878(0x41b)][_0x101878(0x1ba)][_0x101878(0x2dc)])),this['textbox']['select'](),this[_0x101878(0x261)]['setAttribute'](_0x101878(0x2b2),this[_0x101878(0x261)][_0x101878(0x3ae)](_0x101878(0x197)+_0x24cae5)||''),this['root'][_0x101878(0x1ed)]('data-mode',_0x24cae5);}},{'key':_0x1da246(0x236),'value':function _0x5005d5(){var _0x3f8e8c=_0x1da246,_0x55ebd1=this[_0x3f8e8c(0x41b)][_0x3f8e8c(0x32c)]['scrollTop'];this[_0x3f8e8c(0x41b)][_0x3f8e8c(0x26d)](),this[_0x3f8e8c(0x41b)][_0x3f8e8c(0x32c)][_0x3f8e8c(0x240)]=_0x55ebd1;}},{'key':_0x1da246(0x36b),'value':function _0x504290(){var _0x19ce20=_0x1da246,_0x1342b6=this[_0x19ce20(0x261)][_0x19ce20(0x2e4)];switch(this[_0x19ce20(0x32c)][_0x19ce20(0x3ae)](_0x19ce20(0x3e3))){case _0x19ce20(0x2ac):var _0x23d6cd=this[_0x19ce20(0x41b)]['root'][_0x19ce20(0x240)];this['linkRange']?(this[_0x19ce20(0x41b)][_0x19ce20(0x30f)](this[_0x19ce20(0x451)],'link',_0x1342b6,_0xa93fd6[_0x19ce20(0x413)]['sources'][_0x19ce20(0x439)]),delete this['linkRange']):(this[_0x19ce20(0x236)](),this[_0x19ce20(0x41b)][_0x19ce20(0x1d9)](_0x19ce20(0x2ac),_0x1342b6,_0xa93fd6[_0x19ce20(0x413)]['sources']['USER']));this[_0x19ce20(0x41b)][_0x19ce20(0x32c)]['scrollTop']=_0x23d6cd;break;case'video':var _0xd3c1cf=_0x1342b6[_0x19ce20(0x3ff)](/^(https?):\/\/(www\.)?youtube\.com\/watch.*v=([a-zA-Z0-9_-]+)/)||_0x1342b6[_0x19ce20(0x3ff)](/^(https?):\/\/(www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/);if(_0xd3c1cf)_0x1342b6=_0xd3c1cf[0x1]+_0x19ce20(0x2ba)+_0xd3c1cf[0x3]+_0x19ce20(0x1fd);else(_0xd3c1cf=_0x1342b6[_0x19ce20(0x3ff)](/^(https?):\/\/(www\.)?vimeo\.com\/(\d+)/))&&(_0x1342b6=_0xd3c1cf[0x1]+'://player.vimeo.com/video/'+_0xd3c1cf[0x3]+'/');case _0x19ce20(0x273):var _0x5c2631=this['quill'][_0x19ce20(0x407)](!![]),_0x1eb055=_0x5c2631[_0x19ce20(0x320)]+_0x5c2631['length'];_0x5c2631!=null&&(this[_0x19ce20(0x41b)]['insertEmbed'](_0x1eb055,this[_0x19ce20(0x32c)][_0x19ce20(0x3ae)](_0x19ce20(0x3e3)),_0x1342b6,_0xa93fd6[_0x19ce20(0x413)][_0x19ce20(0x270)][_0x19ce20(0x439)]),this['root'][_0x19ce20(0x3ae)](_0x19ce20(0x3e3))===_0x19ce20(0x273)&&this[_0x19ce20(0x41b)][_0x19ce20(0x208)](_0x1eb055+0x1,'\x20',_0xa93fd6[_0x19ce20(0x413)][_0x19ce20(0x270)][_0x19ce20(0x439)]),this['quill'][_0x19ce20(0x45b)](_0x1eb055+0x2,_0xa93fd6[_0x19ce20(0x413)][_0x19ce20(0x270)][_0x19ce20(0x439)]));break;default:}this[_0x19ce20(0x261)][_0x19ce20(0x2e4)]='',this[_0x19ce20(0x31d)]();}}]),_0xb9643b;}(_0x5e4fac[_0x21b0b1(0x413)]);function _0xe8f82c(_0x20c548,_0x4a906d){var _0x3e53bb=_0x21b0b1,_0x1cb876=arguments[_0x3e53bb(0x19a)]<=0x2||arguments[0x2]===undefined?![]:arguments[0x2];_0x4a906d[_0x3e53bb(0x3e4)](function(_0x5e0685){var _0x7e1c6d=_0x3e53bb,_0x3c6971=document[_0x7e1c6d(0x295)](_0x7e1c6d(0x292));_0x5e0685===_0x1cb876?_0x3c6971[_0x7e1c6d(0x1ed)](_0x7e1c6d(0x3d7),_0x7e1c6d(0x3d7)):_0x3c6971[_0x7e1c6d(0x1ed)](_0x7e1c6d(0x2e4),_0x5e0685),_0x20c548[_0x7e1c6d(0x27e)](_0x3c6971);});}_0x43d648[_0x21b0b1(0x1a1)]=_0x60bb3e,_0x43d648[_0x21b0b1(0x413)]=_0xe8f183;},function(_0x3498c9,_0x29eac2,_0x4a435f){'use strict';var _0x247baa=a9_0x50c4;Object[_0x247baa(0x289)](_0x29eac2,_0x247baa(0x2ad),{'value':!![]});var _0x4bef7=(function(){function _0x553c3e(_0x332b35,_0x5b005f){var _0x514978=a9_0x50c4,_0xd09818=[],_0x7ffc3f=!![],_0x2e2a44=![],_0x3d4782=undefined;try{for(var _0x46560a=_0x332b35[Symbol[_0x514978(0x2e8)]](),_0x2c4d69;!(_0x7ffc3f=(_0x2c4d69=_0x46560a['next']())[_0x514978(0x25a)]);_0x7ffc3f=!![]){_0xd09818[_0x514978(0x1bf)](_0x2c4d69[_0x514978(0x2e4)]);if(_0x5b005f&&_0xd09818[_0x514978(0x19a)]===_0x5b005f)break;}}catch(_0xc5983f){_0x2e2a44=!![],_0x3d4782=_0xc5983f;}finally{try{if(!_0x7ffc3f&&_0x46560a[_0x514978(0x222)])_0x46560a[_0x514978(0x222)]();}finally{if(_0x2e2a44)throw _0x3d4782;}}return _0xd09818;}return function(_0x56dcf3,_0x8ba79b){var _0x16d20c=a9_0x50c4;if(Array[_0x16d20c(0x3f3)](_0x56dcf3))return _0x56dcf3;else{if(Symbol[_0x16d20c(0x2e8)]in Object(_0x56dcf3))return _0x553c3e(_0x56dcf3,_0x8ba79b);else throw new TypeError(_0x16d20c(0x183));}};}()),_0xbe0699=function _0x5add92(_0x2f5211,_0x2075a3,_0xea8b4c){var _0x1645b0=_0x247baa;if(_0x2f5211===null)_0x2f5211=Function[_0x1645b0(0x44f)];var _0x241804=Object[_0x1645b0(0x1e0)](_0x2f5211,_0x2075a3);if(_0x241804===undefined){var _0x84dfb=Object['getPrototypeOf'](_0x2f5211);return _0x84dfb===null?undefined:_0x5add92(_0x84dfb,_0x2075a3,_0xea8b4c);}else{if(_0x1645b0(0x2e4)in _0x241804)return _0x241804[_0x1645b0(0x2e4)];else{var _0x474d5c=_0x241804[_0x1645b0(0x246)];if(_0x474d5c===undefined)return undefined;return _0x474d5c[_0x1645b0(0x1e2)](_0xea8b4c);}}},_0x2c1a99=(function(){function _0x5b4df3(_0x4cc68c,_0x5e430c){var _0x36e546=a9_0x50c4;for(var _0x2e8121=0x0;_0x2e8121<_0x5e430c[_0x36e546(0x19a)];_0x2e8121++){var _0x1cbc6d=_0x5e430c[_0x2e8121];_0x1cbc6d['enumerable']=_0x1cbc6d['enumerable']||![],_0x1cbc6d['configurable']=!![];if(_0x36e546(0x2e4)in _0x1cbc6d)_0x1cbc6d[_0x36e546(0x40f)]=!![];Object[_0x36e546(0x289)](_0x4cc68c,_0x1cbc6d[_0x36e546(0x3ea)],_0x1cbc6d);}}return function(_0x57b160,_0x209947,_0x3bcf13){var _0x3e7cb1=a9_0x50c4;if(_0x209947)_0x5b4df3(_0x57b160[_0x3e7cb1(0x44f)],_0x209947);if(_0x3bcf13)_0x5b4df3(_0x57b160,_0x3bcf13);return _0x57b160;};}()),_0x514e38=_0x4a435f(0x19),_0x9452de=_0x4d59b0(_0x514e38),_0x392df3=_0x4a435f(0x1c),_0x4aaa8a=_0x4d59b0(_0x392df3),_0x42160f=_0x4a435f(0x6b),_0xb6c088=_0x4d59b0(_0x42160f),_0x266278=_0x4a435f(0x3c),_0x3f49a8=_0x4d59b0(_0x266278),_0x6f2155=_0x4a435f(0x65),_0x511243=_0x4d59b0(_0x6f2155),_0xffae55=_0x4a435f(0x28);function _0x4d59b0(_0x40dc20){var _0x2c6ad2=_0x247baa;return _0x40dc20&&_0x40dc20[_0x2c6ad2(0x2ad)]?_0x40dc20:{'default':_0x40dc20};}function _0xba490b(_0x3a3fd3,_0x8e1112){if(!(_0x3a3fd3 instanceof _0x8e1112))throw new TypeError('Cannot\x20call\x20a\x20class\x20as\x20a\x20function');}function _0x325da2(_0x55737b,_0xc5a1ee){var _0x3dfb21=_0x247baa;if(!_0x55737b)throw new ReferenceError(_0x3dfb21(0x434));return _0xc5a1ee&&(typeof _0xc5a1ee==='object'||typeof _0xc5a1ee==='function')?_0xc5a1ee:_0x55737b;}function _0x336a6f(_0x544306,_0x4ab3ec){var _0x31424f=_0x247baa;if(typeof _0x4ab3ec!==_0x31424f(0x33b)&&_0x4ab3ec!==null)throw new TypeError('Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20'+typeof _0x4ab3ec);_0x544306[_0x31424f(0x44f)]=Object[_0x31424f(0x372)](_0x4ab3ec&&_0x4ab3ec[_0x31424f(0x44f)],{'constructor':{'value':_0x544306,'enumerable':![],'writable':!![],'configurable':!![]}});if(_0x4ab3ec)Object[_0x31424f(0x1ea)]?Object[_0x31424f(0x1ea)](_0x544306,_0x4ab3ec):_0x544306[_0x31424f(0x1b4)]=_0x4ab3ec;}var _0xea730c=[[{'header':['1','2','3',![]]}],[_0x247baa(0x181),_0x247baa(0x287),'underline',_0x247baa(0x2ac)],[{'list':_0x247baa(0x339)},{'list':_0x247baa(0x267)}],[_0x247baa(0x31b)]],_0x49eab0=function(_0x32bfc7){var _0x487e53=_0x247baa;_0x336a6f(_0x5d0a6c,_0x32bfc7);function _0x5d0a6c(_0x17b1a5,_0x27609e){var _0x267965=a9_0x50c4;_0xba490b(this,_0x5d0a6c);_0x27609e[_0x267965(0x383)]['toolbar']!=null&&_0x27609e['modules']['toolbar'][_0x267965(0x2c9)]==null&&(_0x27609e[_0x267965(0x383)]['toolbar'][_0x267965(0x2c9)]=_0xea730c);var _0x4bce8d=_0x325da2(this,(_0x5d0a6c[_0x267965(0x1b4)]||Object[_0x267965(0x2e0)](_0x5d0a6c))['call'](this,_0x17b1a5,_0x27609e));return _0x4bce8d['quill'][_0x267965(0x2c9)][_0x267965(0x446)][_0x267965(0x184)]('ql-snow'),_0x4bce8d;}return _0x2c1a99(_0x5d0a6c,[{'key':_0x487e53(0x1c7),'value':function _0x2b0222(_0x45ce85){var _0x1eb72c=_0x487e53;_0x45ce85['container'][_0x1eb72c(0x446)][_0x1eb72c(0x184)](_0x1eb72c(0x3c6)),this[_0x1eb72c(0x316)]([]['slice']['call'](_0x45ce85[_0x1eb72c(0x2c9)][_0x1eb72c(0x3ec)](_0x1eb72c(0x1db)))),this['buildPickers']([][_0x1eb72c(0x441)][_0x1eb72c(0x1e2)](_0x45ce85[_0x1eb72c(0x2c9)]['querySelectorAll'](_0x1eb72c(0x38e)))),this[_0x1eb72c(0x233)]=new _0x9fe061(this[_0x1eb72c(0x41b)],this[_0x1eb72c(0x3d1)][_0x1eb72c(0x346)]),_0x45ce85[_0x1eb72c(0x2c9)]['querySelector']('.ql-link')&&this[_0x1eb72c(0x41b)][_0x1eb72c(0x335)][_0x1eb72c(0x301)]({'key':'K','shortKey':!![]},function(_0x4870ab,_0x401514){var _0x3227a0=_0x1eb72c;_0x45ce85[_0x3227a0(0x30a)][_0x3227a0(0x2ac)][_0x3227a0(0x1e2)](_0x45ce85,!_0x401514[_0x3227a0(0x1d9)]['link']);});}}]),_0x5d0a6c;}(_0xb6c088['default']);_0x49eab0[_0x247baa(0x1c3)]=(0x0,_0x9452de['default'])(!![],{},_0xb6c088[_0x247baa(0x413)][_0x247baa(0x1c3)],{'modules':{'toolbar':{'handlers':{'link':function _0x46b7f9(_0x4fb3c0){var _0x3ade49=_0x247baa;if(_0x4fb3c0){var _0x42da71=this[_0x3ade49(0x41b)][_0x3ade49(0x407)]();if(_0x42da71==null||_0x42da71[_0x3ade49(0x19a)]==0x0)return;var _0x20c7de=this[_0x3ade49(0x41b)][_0x3ade49(0x304)](_0x42da71);/^\S+@\S+\.\S+$/[_0x3ade49(0x26e)](_0x20c7de)&&_0x20c7de[_0x3ade49(0x39a)](_0x3ade49(0x455))!==0x0&&(_0x20c7de=_0x3ade49(0x455)+_0x20c7de);var _0x279a71=this[_0x3ade49(0x41b)]['theme']['tooltip'];_0x279a71[_0x3ade49(0x1dd)]('link',_0x20c7de);}else this[_0x3ade49(0x41b)][_0x3ade49(0x1d9)](_0x3ade49(0x2ac),![]);}}}}});var _0x9fe061=function(_0x57f0bc){var _0x14c0e9=_0x247baa;_0x336a6f(_0x2ad9e6,_0x57f0bc);function _0x2ad9e6(_0x2ca58f,_0xa62047){var _0xeab3c0=a9_0x50c4;_0xba490b(this,_0x2ad9e6);var _0x2b9773=_0x325da2(this,(_0x2ad9e6[_0xeab3c0(0x1b4)]||Object[_0xeab3c0(0x2e0)](_0x2ad9e6))[_0xeab3c0(0x1e2)](this,_0x2ca58f,_0xa62047));return _0x2b9773[_0xeab3c0(0x19e)]=_0x2b9773[_0xeab3c0(0x32c)]['querySelector'](_0xeab3c0(0x269)),_0x2b9773;}return _0x2c1a99(_0x2ad9e6,[{'key':_0x14c0e9(0x20f),'value':function _0x4cd4b5(){var _0x787d4e=_0x14c0e9,_0x21da50=this;_0xbe0699(_0x2ad9e6[_0x787d4e(0x44f)]['__proto__']||Object[_0x787d4e(0x2e0)](_0x2ad9e6[_0x787d4e(0x44f)]),_0x787d4e(0x20f),this)[_0x787d4e(0x1e2)](this),this[_0x787d4e(0x32c)][_0x787d4e(0x42f)](_0x787d4e(0x3d5))['addEventListener']('click',function(_0x3b8a98){var _0x4f1110=_0x787d4e;_0x21da50['root'][_0x4f1110(0x446)][_0x4f1110(0x386)](_0x4f1110(0x27a))?_0x21da50[_0x4f1110(0x36b)]():_0x21da50[_0x4f1110(0x1dd)](_0x4f1110(0x2ac),_0x21da50[_0x4f1110(0x19e)][_0x4f1110(0x29f)]),_0x3b8a98[_0x4f1110(0x40a)]();}),this[_0x787d4e(0x32c)][_0x787d4e(0x42f)]('a.ql-remove')[_0x787d4e(0x44c)]('click',function(_0x19b951){var _0x170c41=_0x787d4e;_0x21da50[_0x170c41(0x451)]!=null&&(_0x21da50[_0x170c41(0x236)](),_0x21da50[_0x170c41(0x41b)][_0x170c41(0x30f)](_0x21da50[_0x170c41(0x451)],_0x170c41(0x2ac),![],_0x4aaa8a[_0x170c41(0x413)][_0x170c41(0x270)][_0x170c41(0x439)]),delete _0x21da50[_0x170c41(0x451)]),_0x19b951[_0x170c41(0x40a)](),_0x21da50['hide']();}),this[_0x787d4e(0x41b)]['on'](_0x4aaa8a[_0x787d4e(0x413)]['events'][_0x787d4e(0x374)],function(_0x5863f1){var _0xa841ea=_0x787d4e;if(_0x5863f1==null)return;if(_0x5863f1['length']===0x0){var _0x5c1acf=_0x21da50[_0xa841ea(0x41b)][_0xa841ea(0x36a)]['descendant'](_0x3f49a8['default'],_0x5863f1[_0xa841ea(0x320)]),_0x199333=_0x4bef7(_0x5c1acf,0x2),_0xc1dc4c=_0x199333[0x0],_0x295329=_0x199333[0x1];if(_0xc1dc4c!=null){_0x21da50[_0xa841ea(0x451)]=new _0xffae55[(_0xa841ea(0x2a5))](_0x5863f1[_0xa841ea(0x320)]-_0x295329,_0xc1dc4c[_0xa841ea(0x19a)]());var _0x2cecdf=_0x3f49a8[_0xa841ea(0x413)][_0xa841ea(0x1a2)](_0xc1dc4c[_0xa841ea(0x3ad)]);_0x21da50[_0xa841ea(0x19e)][_0xa841ea(0x29f)]=_0x2cecdf,_0x21da50[_0xa841ea(0x19e)][_0xa841ea(0x1ed)](_0xa841ea(0x3da),_0x2cecdf),_0x21da50[_0xa841ea(0x1bc)](),_0x21da50[_0xa841ea(0x24b)](_0x21da50['quill'][_0xa841ea(0x401)](_0x21da50[_0xa841ea(0x451)]));return;}}_0x21da50[_0xa841ea(0x31d)]();});}},{'key':_0x14c0e9(0x1bc),'value':function _0x1dc206(){var _0x49cad0=_0x14c0e9;_0xbe0699(_0x2ad9e6[_0x49cad0(0x44f)]['__proto__']||Object[_0x49cad0(0x2e0)](_0x2ad9e6['prototype']),_0x49cad0(0x1bc),this)[_0x49cad0(0x1e2)](this),this['root'][_0x49cad0(0x3e2)](_0x49cad0(0x3e3));}}]),_0x2ad9e6;}(_0x42160f[_0x247baa(0x1a1)]);_0x9fe061[_0x247baa(0x2e3)]=[_0x247baa(0x331),_0x247baa(0x3d0),_0x247baa(0x364),_0x247baa(0x32f)][_0x247baa(0x28f)](''),_0x29eac2[_0x247baa(0x413)]=_0x49eab0;}]);}));function a9_0x50c4(_0x2a548c,_0x4ede2d){var _0x4e864e=a9_0x4e86();return a9_0x50c4=function(_0x50c409,_0x2cdcae){_0x50c409=_0x50c409-0x17c;var _0xe74e2d=_0x4e864e[_0x50c409];return _0xe74e2d;},a9_0x50c4(_0x2a548c,_0x4ede2d);};function a9_0x4e86(){var _0x121539=['#a10000','SANITIZED_URL','unsupported','filter','prev','1922240rSwqnz','ctrlKey','BackgroundClass','render','peekType','replace','shortKey','addBinding','readOnly','find','getText','#444444','sort','insertAt','import','[Parchment]\x20','handlers','\x20non-document','data-value','level','BLOCK','formatText','which','head','__isArray','blur','display','Cannot\x20import\x20','buildButtons','label','depth','highlightAuto','Attempted\x20to\x20add\x20invalid\x20keyboard\x20binding','clean','API','hide','#66b966','splitText','index','warn','.ql-picker-options','Container\x20required\x20for\x20toolbar','getTime','ColorStyle','ql-picker','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=15\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=13\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=9\x20y1=4\x20y2=4></line>\x20</svg>','history','ColorAttributor','info','attributes','root','scrollIntoView','tail','<a\x20class=\x22ql-remove\x22></a>','5MxgooT','<a\x20class=\x22ql-preview\x22\x20target=\x22_blank\x22\x20href=\x22about:blank\x22></a>','class','<svg\x20class=\x22\x22\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=5\x20x2=13\x20y1=3\x20y2=3></line>\x20<line\x20class=ql-stroke\x20x1=6\x20x2=9.35\x20y1=12\x20y2=3></line>\x20<line\x20class=ql-stroke\x20x1=11\x20x2=15\x20y1=11\x20y2=15></line>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=11\x20y1=11\x20y2=15></line>\x20<rect\x20class=ql-fill\x20height=1\x20rx=0.5\x20ry=0.5\x20width=7\x20x=2\x20y=14></rect>\x20</svg>','offsetTop','keyboard','canAdd','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<polygon\x20class=\x22ql-stroke\x20ql-fill\x22\x20points=\x223\x2011\x205\x209\x203\x207\x203\x2011\x22></polygon>\x20<line\x20class=\x22ql-stroke\x20ql-fill\x22\x20x1=15\x20x2=11\x20y1=4\x20y2=4></line>\x20<path\x20class=ql-fill\x20d=M11,3a3,3,0,0,0,0,6h1V3H11Z></path>\x20<rect\x20class=ql-fill\x20height=11\x20width=1\x20x=11\x20y=4></rect>\x20<rect\x20class=ql-fill\x20height=11\x20width=1\x20x=13\x20y=4></rect>\x20</svg>','accept','ordered','lines','function','compare','redo','message','source','ql-selected','Inline','.\x20Did\x20you\x20register\x20it?','#66a3e0','SILENT','init','bounds','FontStyle','restore','parent','removeAllRanges','cursor','INLINE_BLOT','align','unshift','startsWith','script','text-align','.\x20Are\x20you\x20sure\x20it\x20was\x20registered?','themes','2125254YQXUDz','__ql-matcher','small','floor','ql-header','addedNodes','lastRecorded','font-family','BackgroundStyle','expandConfig','now','theme','suffix','textIndent','delete','#0066cc','<a\x20class=\x22ql-action\x22></a>','order','AlignStyle','blots/','scope','enable','scroll','save','SCROLL_BEFORE_UPDATE','.ql-selected','chop','#cce8cc','403504VsSAhI','hljs','create','batch','SELECTION_CHANGE','ql-color','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=15\x20x2=3\x20y1=9\x20y2=9></line>\x20<line\x20class=ql-stroke\x20x1=14\x20x2=4\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=12\x20x2=6\x20y1=4\x20y2=4></line>\x20</svg>','matchText','clone','selectItem','super','wrap','SELECT','parentNode','collapsed','mouseleave','keyName','center','charAt','modules','min','Attributor','contains','bubbleFormats','10px','data-label','__blot','#ffebcc','_length','Enter\x20link\x20URL:','select','predicate\x20must\x20be\x20a\x20function','SPAN','__ql-computed-style','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<g\x20class=\x22ql-fill\x20ql-color-label\x22>\x20<polygon\x20points=\x226\x206.868\x206\x206\x205\x206\x205\x207\x205.942\x207\x206\x206.868\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=4\x20y=4></rect>\x20<polygon\x20points=\x226.817\x205\x206\x205\x206\x206\x206.38\x206\x206.817\x205\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=2\x20y=6></rect>\x20<rect\x20height=1\x20width=1\x20x=3\x20y=5></rect>\x20<rect\x20height=1\x20width=1\x20x=4\x20y=7></rect>\x20<polygon\x20points=\x224\x2011.439\x204\x2011\x203\x2011\x203\x2012\x203.755\x2012\x204\x2011.439\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=2\x20y=12></rect>\x20<rect\x20height=1\x20width=1\x20x=2\x20y=9></rect>\x20<rect\x20height=1\x20width=1\x20x=2\x20y=15></rect>\x20<polygon\x20points=\x224.63\x2010\x204\x2010\x204\x2011\x204.192\x2011\x204.63\x2010\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=3\x20y=8></rect>\x20<path\x20d=M10.832,4.2L11,4.582V4H10.708A1.948,1.948,0,0,1,10.832,4.2Z></path>\x20<path\x20d=M7,4.582L7.168,4.2A1.929,1.929,0,0,1,7.292,4H7V4.582Z></path>\x20<path\x20d=M8,13H7.683l-0.351.8a1.933,1.933,0,0,1-.124.2H8V13Z></path>\x20<rect\x20height=1\x20width=1\x20x=12\x20y=2></rect>\x20<rect\x20height=1\x20width=1\x20x=11\x20y=3></rect>\x20<path\x20d=M9,3H8V3.282A1.985,1.985,0,0,1,9,3Z></path>\x20<rect\x20height=1\x20width=1\x20x=2\x20y=3></rect>\x20<rect\x20height=1\x20width=1\x20x=6\x20y=2></rect>\x20<rect\x20height=1\x20width=1\x20x=3\x20y=2></rect>\x20<rect\x20height=1\x20width=1\x20x=5\x20y=3></rect>\x20<rect\x20height=1\x20width=1\x20x=9\x20y=2></rect>\x20<rect\x20height=1\x20width=1\x20x=15\x20y=14></rect>\x20<polygon\x20points=\x2213.447\x2010.174\x2013.469\x2010.225\x2013.472\x2010.232\x2013.808\x2011\x2014\x2011\x2014\x2010\x2013.37\x2010\x2013.447\x2010.174\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=13\x20y=7></rect>\x20<rect\x20height=1\x20width=1\x20x=15\x20y=5></rect>\x20<rect\x20height=1\x20width=1\x20x=14\x20y=6></rect>\x20<rect\x20height=1\x20width=1\x20x=15\x20y=8></rect>\x20<rect\x20height=1\x20width=1\x20x=14\x20y=9></rect>\x20<path\x20d=M3.775,14H3v1H4V14.314A1.97,1.97,0,0,1,3.775,14Z></path>\x20<rect\x20height=1\x20width=1\x20x=14\x20y=3></rect>\x20<polygon\x20points=\x2212\x206.868\x2012\x206\x2011.62\x206\x2012\x206.868\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=15\x20y=2></rect>\x20<rect\x20height=1\x20width=1\x20x=12\x20y=5></rect>\x20<rect\x20height=1\x20width=1\x20x=13\x20y=4></rect>\x20<polygon\x20points=\x2212.933\x209\x2013\x209\x2013\x208\x2012.495\x208\x2012.933\x209\x22></polygon>\x20<rect\x20height=1\x20width=1\x20x=9\x20y=14></rect>\x20<rect\x20height=1\x20width=1\x20x=8\x20y=15></rect>\x20<path\x20d=M6,14.926V15H7V14.316A1.993,1.993,0,0,1,6,14.926Z></path>\x20<rect\x20height=1\x20width=1\x20x=5\x20y=15></rect>\x20<path\x20d=M10.668,13.8L10.317,13H10v1h0.792A1.947,1.947,0,0,1,10.668,13.8Z></path>\x20<rect\x20height=1\x20width=1\x20x=11\x20y=15></rect>\x20<path\x20d=M14.332,12.2a1.99,1.99,0,0,1,.166.8H15V12H14.245Z></path>\x20<rect\x20height=1\x20width=1\x20x=14\x20y=15></rect>\x20<rect\x20height=1\x20width=1\x20x=15\x20y=11></rect>\x20</g>\x20<polyline\x20class=ql-stroke\x20points=\x225.5\x2013\x209\x205\x2012.5\x2013\x22></polyline>\x20<line\x20class=ql-stroke\x20x1=11.63\x20x2=6.38\x20y1=11\x20y2=11></line>\x20</svg>','removeAllListeners','block','#ffff66','toLowerCase','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M13,16H5a1,1,0,0,1,0-2h8A1,1,0,0,1,13,16Z\x20/>\x20<path\x20class=ql-fill\x20d=M13,4H5A1,1,0,0,1,5,2h8A1,1,0,0,1,13,4Z\x20/>\x20<rect\x20class=ql-fill\x20x=2\x20y=6\x20width=14\x20height=6\x20rx=1\x20ry=1\x20/>\x20</svg>','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<rect\x20class=ql-stroke\x20height=10\x20width=12\x20x=3\x20y=4></rect>\x20<circle\x20class=ql-fill\x20cx=6\x20cy=7\x20r=1></circle>\x20<polyline\x20class=\x22ql-even\x20ql-fill\x22\x20points=\x225\x2012\x205\x2011\x207\x209\x208\x2010\x2011\x207\x2013\x209\x2013\x2012\x205\x2012\x22></polyline>\x20</svg>','[object\x20Arguments]','indexOf','convert','scroll-before-update','addHandler','apply','copy','endOffset','buildOptions','toUpperCase','SizeStyle','defaultPrevented','append','statics','fontWeight','some','descendant','keys','name','Code','domNode','getAttribute','</div>','metaKey','DirectionClass','contenteditable','span','DirectionStyle','#0047b2','number','children','#ffffff','ignoreCase','ql-container','about:blank','enableObjectResizing','indent','.ql-tooltip-arrow','close','addContainer','toolbar','target','deleteAt','diff()\x20called\x20','bottom','ql-snow','applyDelta','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M15.5,15H13.861a3.858,3.858,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.921,1.921,0,0,0,12.021,11.7a0.50013,0.50013,0,1,0,.957.291h0a0.914,0.914,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.076-1.16971,1.86982-1.93971,2.43082A1.45639,1.45639,0,0,0,12,15.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,15Z\x20/>\x20<path\x20class=ql-fill\x20d=M9.65,5.241a1,1,0,0,0-1.409.108L6,7.964,3.759,5.349A1,1,0,0,0,2.192,6.59178Q2.21541,6.6213,2.241,6.649L4.684,9.5,2.241,12.35A1,1,0,0,0,3.71,13.70722q0.02557-.02768.049-0.05722L6,11.036,8.241,13.65a1,1,0,1,0,1.567-1.24277Q9.78459,12.3777,9.759,12.35L7.316,9.5,9.759,6.651A1,1,0,0,0,9.65,5.241Z\x20/>\x20</svg>','isBuffer','hasOwnProperty','1043cZteSc','addModule','video','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M14,16H4a1,1,0,0,1,0-2H14A1,1,0,0,1,14,16Z\x20/>\x20<path\x20class=ql-fill\x20d=M14,4H4A1,1,0,0,1,4,2H14A1,1,0,0,1,14,4Z\x20/>\x20<rect\x20class=ql-fill\x20x=3\x20y=6\x20width=12\x20height=6\x20rx=1\x20ry=1\x20/>\x20</svg>','ql-tooltip','<input\x20type=\x22text\x22\x20data-formula=\x22e=mc^2\x22\x20data-link=\x22quilljs.com\x22\x20data-video=\x22Embed\x20URL\x22>','options','SCROLL_UPDATE','innerHTML','supported','a.ql-action','matchNewline','selected','createRange','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=\x22ql-stroke\x20ql-thin\x22\x20x1=15.5\x20x2=2.5\x20y1=8.5\x20y2=9.5></line>\x20<path\x20class=ql-fill\x20d=M9.007,8C6.542,7.791,6,7.519,6,6.5,6,5.792,7.283,5,9,5c1.571,0,2.765.679,2.969,1.309a1,1,0,0,0,1.9-.617C13.356,4.106,11.354,3,9,3,6.2,3,4,4.538,4,6.5a3.2,3.2,0,0,0,.5,1.843Z></path>\x20<path\x20class=ql-fill\x20d=M8.984,10C11.457,10.208,12,10.479,12,11.5c0,0.708-1.283,1.5-3,1.5-1.571,0-2.765-.679-2.969-1.309a1,1,0,1,0-1.9.617C4.644,13.894,6.646,15,9,15c2.8,0,5-1.538,5-3.5a3.2,3.2,0,0,0-.5-1.843Z></path>\x20</svg>','href','BlockEmbed','compose','ql-primary','createEvent','every','checkBounds','INSERT','removeAttribute','data-mode','forEach','ql-active','monospace','removeEventListener','getLength','oldValue','key','stack','querySelectorAll','peekLength','setRange','quill:clipboard','Unable\x20to\x20create\x20','shiftKey','large','isArray','#c285ff','setMaxListeners','right','#f06666','disable','DIV','once','Quill','insertBefore','ignoring\x20attaching\x20to\x20disabled\x20format','startContainer','match','test-class','getBounds','_events','marginLeft','Invalid\x20definition','trim','token','getSelection','circular','query','preventDefault','api','whiteSpace','activeElement','descendants','writable','map','EDITOR_CHANGE','empty','default','execCommand','rangeCount','readAsDataURL','touchend','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=15\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=15\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=9\x20x2=15\x20y1=9\x20y2=9></line>\x20<polyline\x20class=ql-stroke\x20points=\x225\x207\x205\x2011\x203\x209\x205\x207\x22></polyline>\x20</svg>','ql-hidden','keyup','quill','background','text','ANY','whitelist','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=3\x20y1=4\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=11\x20x2=11\x20y1=4\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=11\x20x2=3\x20y1=9\x20y2=9></line>\x20<path\x20class=\x22ql-stroke\x20ql-thin\x22\x20d=M15.5,14.5h-2c0-.234,1.85-1.076,1.85-2.234a0.959,0.959,0,0,0-1.85-.109></path>\x20</svg>','EQUAL','file','list','pickers','register','exports','addMatcher','split','Invalid\x20theme\x20','height','silent','__extends','defaultItem','events','querySelector','input','ql-expanded','clear','Syntax\x20module\x20requires\x20highlight.js.\x20Please\x20include\x20the\x20library\x20on\x20the\x20page\x20before\x20Quill.','this\x20hasn\x27t\x20been\x20initialised\x20-\x20super()\x20hasn\x27t\x20been\x20called','input.ql-image[type=file]','lastRange','platform','offset','USER','matchSpacing','10rMkHtA','18px','rgb(','\x20with','ql-','emitter','slice','346OsIDbd','//:0','ql-align','CodeBlock','classList','delta','Super\x20expression\x20must\x20either\x20be\x20null\x20or\x20a\x20function,\x20not\x20','childNodes','ql-formats','#9933ff','addEventListener','<span\x20class=\x22ql-tooltip-arrow\x22></span>','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M11.759,2.482a2.561,2.561,0,0,0-3.53.607A7.656,7.656,0,0,0,6.8,6.2C6.109,9.188,5.275,14.677,4.15,14.927a1.545,1.545,0,0,0-1.3-.933A0.922,0.922,0,0,0,2,15.036S1.954,16,4.119,16s3.091-2.691,3.7-5.553c0.177-.826.36-1.726,0.554-2.6L8.775,6.2c0.381-1.421.807-2.521,1.306-2.676a1.014,1.014,0,0,0,1.02.56A0.966,0.966,0,0,0,11.759,2.482Z></path>\x20<rect\x20class=ql-fill\x20height=1.6\x20rx=0.8\x20ry=0.8\x20width=5\x20x=5.15\x20y=6.2></rect>\x20<path\x20class=ql-fill\x20d=M13.663,12.027a1.662,1.662,0,0,1,.266-0.276q0.193,0.069.456,0.138a2.1,2.1,0,0,0,.535.069,1.075,1.075,0,0,0,.767-0.3,1.044,1.044,0,0,0,.314-0.8,0.84,0.84,0,0,0-.238-0.619,0.8,0.8,0,0,0-.594-0.239,1.154,1.154,0,0,0-.781.3,4.607,4.607,0,0,0-.781,1q-0.091.15-.218,0.346l-0.246.38c-0.068-.288-0.137-0.582-0.212-0.885-0.459-1.847-2.494-.984-2.941-0.8-0.482.2-.353,0.647-0.094,0.529a0.869,0.869,0,0,1,1.281.585c0.217,0.751.377,1.436,0.527,2.038a5.688,5.688,0,0,1-.362.467,2.69,2.69,0,0,1-.264.271q-0.221-.08-0.471-0.147a2.029,2.029,0,0,0-.522-0.066,1.079,1.079,0,0,0-.768.3A1.058,1.058,0,0,0,9,15.131a0.82,0.82,0,0,0,.832.852,1.134,1.134,0,0,0,.787-0.3,5.11,5.11,0,0,0,.776-0.993q0.141-.219.215-0.34c0.046-.076.122-0.194,0.223-0.346a2.786,2.786,0,0,0,.918,1.726,2.582,2.582,0,0,0,2.376-.185c0.317-.181.212-0.565,0-0.494A0.807,0.807,0,0,1,14.176,15a5.159,5.159,0,0,1-.913-2.446l0,0Q13.487,12.24,13.663,12.027Z></path>\x20</svg>','prototype','nextElementSibling','linkRange','getFormat','inline','ATTRIBUTE','mailto:','updateContents','setNativeRange','removeListener','formatAt','[object\x20Object]','setSelection','ql-blank','tabindex','isPrototypeOf','line','#6b24b2','ql-direction','strict','.ql-color-label','bold','splice','Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance','add','getBoundingClientRect','transform','string','DOMContentLoaded','setEnd','substr','serif','takeRecords','#ebd6ff','dispatchEvent','mutations','remove','max','text-change','TYPE','observe','pasteHTML','replaceChild','data-','#3d1466','.ql-close','length','katex','mailto','TEXT_CHANGE','preview','build','stroke','BaseTooltip','formats','AlignClass','58352zTfJAI','paste','BUTTON','formats/','__isDate','ignoring\x20attaching\x20to\x20nonexistent\x20format','mouseup','undefined','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-stroke\x20d=M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z></path>\x20<path\x20class=ql-stroke\x20d=M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z></path>\x20</svg>','getLastChangeIndex','cancel','SUP','buildPicker','setContents','src','ql-cursor','__proto__','code-block','#000000','detach','data-placeholder','ql-clipboard','selection','lastChild','show','forEachAt','nodeType','push','context','unwrap','imports','DEFAULTS','result','node','global','extendToolbar','reduce','files','IMG','matchBlot','ql-video','TAB','#888888','attach','user','SizeClass','path','toString','marginTop','isolate','previousSibling','Cannot\x20insert\x20','multiline','format','Class','button','#ff9900','edit','#5c0000','disconnect','getOwnPropertyDescriptor','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=15\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=3\x20x2=15\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=9\x20x2=15\x20y1=9\x20y2=9></line>\x20<polyline\x20class=\x22ql-fill\x20ql-stroke\x22\x20points=\x223\x207\x203\x2011\x205\x209\x203\x207\x22></polyline>\x20</svg>','call','ENTER','compositionend','getContents','clonePrototype','Text','characterData','hasAttribute','setPrototypeOf','enumerable','blockquote','setAttribute','div','top','strike','offsetWidth','getRange','style','set','spellcheck','controls','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=7\x20x2=13\x20y1=4\x20y2=4></line>\x20<line\x20class=ql-stroke\x20x1=5\x20x2=11\x20y1=14\x20y2=14></line>\x20<line\x20class=ql-stroke\x20x1=8\x20x2=10\x20y1=14\x20y2=4></line>\x20</svg>','concat','INLINE_ATTRIBUTE','defaultChild','touchleave','ColorClass','?showinfo=0','ignoreChange','Array.prototype.find\x20called\x20on\x20null\x20or\x20undefined','tagName','header','clipboard','configurable','cache','CODE','startOffset','Blot\x20definition\x20missing\x20tagName','insertText','pop','toggle','diff','mousedown','delay','ql-font','listen','ql-out-top','next','SCROLL_OPTIMIZE','removeChild','Leaf','removeFormat','addControls','BLOT','shift','buildPickers','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=ql-stroke\x20x1=7\x20x2=11\x20y1=7\x20y2=11></line>\x20<path\x20class=\x22ql-even\x20ql-stroke\x22\x20d=M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z></path>\x20<path\x20class=\x22ql-even\x20ql-stroke\x22\x20d=M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z></path>\x20</svg>','scroll-update','<div\x20class=\x27ql-editor\x27\x20style=\x22white-space:\x20normal;\x22>','Block','leaf','native','from','getComputedStyle','return','huge','isBlank','blot','hasFocus','lastIndexOf','sup','[object\x20RegExp]','left','FontClass','width','insertEmbed','list-item','update','#ffffcc','attrName','ql-picker-label','tooltip','19774227XvFyXZ','scroll-optimize','restoreFocus','break','_blank','fill','allowedChildren','option[selected]','prefix','ql-background','optimize','deleteText','scrollTop','ParchmentError','blotName','Style','justify','Cannot\x20load\x20','get','__getRegExpFlags','click','getDelta','keyCode','position','size','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<polygon\x20class=ql-stroke\x20points=\x227\x2011\x209\x2013\x2011\x2011\x207\x2011\x22></polygon>\x20<polygon\x20class=ql-stroke\x20points=\x227\x207\x209\x205\x2011\x207\x207\x207\x22></polygon>\x20</svg>','\x20blot','Enter\x20','observer','userOnly','Invalid\x20Quill\x20container','values','DELETE','ELEMENT_NODE','ql-out-bottom','image','compareDocumentPosition','debug','done','newlineIndex','change','BLOCK_ATTRIBUTE','highlight','underline','setStart','textbox','createTextNode','Attribute','code','#663d00','onload','bullet','matchers','a.ql-preview','insert','sanitize','Container','focus','test','ops','sources','cloneNode','1.0.3','formula','font','ql-picker-options','record','SUB','frameborder','bind','ql-editing','lastIndex','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-stroke\x20d=M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3></path>\x20<rect\x20class=ql-fill\x20height=1\x20rx=0.5\x20ry=0.5\x20width=12\x20x=3\x20y=15></rect>\x20</svg>','cachedHTML','appendChild','data','ceil','color','https','propertyIsEnumerable','abstract','<a\x20class=\x22ql-close\x22></a>','boundsContainer','italic','prefixed','defineProperty','textNode','start','quill:toolbar','FormulaBlot','STRONG','join','O:P','ql-image','option','Scope','DATA_KEY','createElement','substring','getNativeRange','altKey','hasNext','TEXT_NODE','getOwnPropertySymbols','childList','modules/','background-color','textContent','moveChildren','log','body','nextSibling','replaceWith','Range','ql-bubble','transformPosition','symbol','offsetHeight','with','keydown','link','__esModule','buildItem','quill:events','removedNodes','onPaste','placeholder','pre','enter','formatLine','handler','Cannot\x20register\x20abstract\x20class','3243519HUBaGc','off','://www.youtube.com/embed/','#e60000','IndentClass','rtl','addListener','INLINE','[object\x20Array]','ListItem','BLOCK_BLOT','move','addRange','bindings','constructor','ql-editor','emit','container','callee','endsWith','composing','Embed','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<path\x20class=ql-fill\x20d=M15.5,7H13.861a4.015,4.015,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.922,1.922,0,0,0,12.021,3.7a0.5,0.5,0,1,0,.957.291,0.917,0.917,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.077-1.164,1.925-1.934,2.486A1.423,1.423,0,0,0,12,7.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,7Z\x20/>\x20<path\x20class=ql-fill\x20d=M9.651,5.241a1,1,0,0,0-1.41.108L6,7.964,3.759,5.349a1,1,0,1,0-1.519,1.3L4.683,9.5,2.241,12.35a1,1,0,1,0,1.519,1.3L6,11.036,8.241,13.65a1,1,0,0,0,1.519-1.3L7.317,9.5,9.759,6.651A1,1,0,0,0,9.651,5.241Z\x20/>\x20</svg>','ql-formula','14502xiyRNL','option[value=\x22','sub','BACKSPACE','.ql-picker-item','listeners','className','<svg\x20viewbox=\x220\x200\x2018\x2018\x22>\x20<line\x20class=\x22ql-color-label\x20ql-stroke\x20ql-transparent\x22\x20x1=3\x20x2=15\x20y1=15\x20y2=15></line>\x20<polyline\x20class=ql-stroke\x20points=\x225.5\x2011\x209\x203\x2012.5\x2011\x22></polyline>\x20<line\x20class=ql-stroke\x20x1=11.63\x20x2=6.38\x20y1=9\x20y2=9></line>\x20</svg>','undo','type','version','direction','savedRange','#ffc266','__isRegExp','selectedIndex','getPrototypeOf','object','error','TEMPLATE','value','attribute','maxStack','ql-bg','iterator','ql-toolbar','quill:selection','Cannot\x20call\x20a\x20class\x20as\x20a\x20function','http','PRE','#666600','MAX_VALUE','editor','CONTENTS','end','LEVEL','retain'];a9_0x4e86=function(){return _0x121539;};return a9_0x4e86();}
+/*!
+ * Quill Editor v1.0.3
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["Quill"] = factory();
+	else
+		root["Quill"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(53);
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	var _break = __webpack_require__(33);
+
+	var _break2 = _interopRequireDefault(_break);
+
+	var _container = __webpack_require__(42);
+
+	var _container2 = _interopRequireDefault(_container);
+
+	var _cursor = __webpack_require__(37);
+
+	var _cursor2 = _interopRequireDefault(_cursor);
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	var _scroll = __webpack_require__(43);
+
+	var _scroll2 = _interopRequireDefault(_scroll);
+
+	var _text = __webpack_require__(36);
+
+	var _text2 = _interopRequireDefault(_text);
+
+	var _clipboard = __webpack_require__(44);
+
+	var _clipboard2 = _interopRequireDefault(_clipboard);
+
+	var _history = __webpack_require__(51);
+
+	var _history2 = _interopRequireDefault(_history);
+
+	var _keyboard = __webpack_require__(52);
+
+	var _keyboard2 = _interopRequireDefault(_keyboard);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_quill2.default.register({
+	  'blots/block': _block2.default,
+	  'blots/block/embed': _block.BlockEmbed,
+	  'blots/break': _break2.default,
+	  'blots/container': _container2.default,
+	  'blots/cursor': _cursor2.default,
+	  'blots/embed': _embed2.default,
+	  'blots/inline': _inline2.default,
+	  'blots/scroll': _scroll2.default,
+	  'blots/text': _text2.default,
+
+	  'modules/clipboard': _clipboard2.default,
+	  'modules/history': _history2.default,
+	  'modules/keyboard': _keyboard2.default
+	});
+
+	_parchment2.default.register(_block2.default, _break2.default, _cursor2.default, _inline2.default, _scroll2.default, _text2.default);
+
+	module.exports = _quill2.default;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var container_1 = __webpack_require__(3);
+	var format_1 = __webpack_require__(7);
+	var leaf_1 = __webpack_require__(12);
+	var scroll_1 = __webpack_require__(13);
+	var inline_1 = __webpack_require__(14);
+	var block_1 = __webpack_require__(15);
+	var embed_1 = __webpack_require__(16);
+	var text_1 = __webpack_require__(17);
+	var attributor_1 = __webpack_require__(8);
+	var class_1 = __webpack_require__(10);
+	var style_1 = __webpack_require__(11);
+	var store_1 = __webpack_require__(9);
+	var Registry = __webpack_require__(6);
+	var Parchment = {
+	    Scope: Registry.Scope,
+	    create: Registry.create,
+	    find: Registry.find,
+	    query: Registry.query,
+	    register: Registry.register,
+	    Container: container_1.default,
+	    Format: format_1.default,
+	    Leaf: leaf_1.default,
+	    Embed: embed_1.default,
+	    Scroll: scroll_1.default,
+	    Block: block_1.default,
+	    Inline: inline_1.default,
+	    Text: text_1.default,
+	    Attributor: {
+	        Attribute: attributor_1.default,
+	        Class: class_1.default,
+	        Style: style_1.default,
+	        Store: store_1.default
+	    }
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = Parchment;
+
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var linked_list_1 = __webpack_require__(4);
+	var shadow_1 = __webpack_require__(5);
+	var Registry = __webpack_require__(6);
+	var ContainerBlot = (function (_super) {
+	    __extends(ContainerBlot, _super);
+	    function ContainerBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    ContainerBlot.prototype.appendChild = function (other) {
+	        this.insertBefore(other);
+	    };
+	    ContainerBlot.prototype.attach = function () {
+	        var _this = this;
+	        _super.prototype.attach.call(this);
+	        this.children = new linked_list_1.default();
+	        // Need to be reversed for if DOM nodes already in order
+	        [].slice.call(this.domNode.childNodes).reverse().forEach(function (node) {
+	            try {
+	                var child = makeBlot(node);
+	                _this.insertBefore(child, _this.children.head);
+	            }
+	            catch (err) {
+	                if (err instanceof Registry.ParchmentError)
+	                    return;
+	                else
+	                    throw err;
+	            }
+	        });
+	    };
+	    ContainerBlot.prototype.deleteAt = function (index, length) {
+	        if (index === 0 && length === this.length()) {
+	            return this.remove();
+	        }
+	        this.children.forEachAt(index, length, function (child, offset, length) {
+	            child.deleteAt(offset, length);
+	        });
+	    };
+	    ContainerBlot.prototype.descendant = function (criteria, index) {
+	        var _a = this.children.find(index), child = _a[0], offset = _a[1];
+	        if ((criteria.blotName == null && criteria(child)) ||
+	            (criteria.blotName != null && child instanceof criteria)) {
+	            return [child, offset];
+	        }
+	        else if (child instanceof ContainerBlot) {
+	            return child.descendant(criteria, offset);
+	        }
+	        else {
+	            return [null, -1];
+	        }
+	    };
+	    ContainerBlot.prototype.descendants = function (criteria, index, length) {
+	        if (index === void 0) { index = 0; }
+	        if (length === void 0) { length = Number.MAX_VALUE; }
+	        var descendants = [], lengthLeft = length;
+	        this.children.forEachAt(index, length, function (child, index, length) {
+	            if ((criteria.blotName == null && criteria(child)) ||
+	                (criteria.blotName != null && child instanceof criteria)) {
+	                descendants.push(child);
+	            }
+	            if (child instanceof ContainerBlot) {
+	                descendants = descendants.concat(child.descendants(criteria, index, lengthLeft));
+	            }
+	            lengthLeft -= length;
+	        });
+	        return descendants;
+	    };
+	    ContainerBlot.prototype.detach = function () {
+	        this.children.forEach(function (child) {
+	            child.detach();
+	        });
+	        _super.prototype.detach.call(this);
+	    };
+	    ContainerBlot.prototype.formatAt = function (index, length, name, value) {
+	        this.children.forEachAt(index, length, function (child, offset, length) {
+	            child.formatAt(offset, length, name, value);
+	        });
+	    };
+	    ContainerBlot.prototype.insertAt = function (index, value, def) {
+	        var _a = this.children.find(index), child = _a[0], offset = _a[1];
+	        if (child) {
+	            child.insertAt(offset, value, def);
+	        }
+	        else {
+	            var blot = (def == null) ? Registry.create('text', value) : Registry.create(value, def);
+	            this.appendChild(blot);
+	        }
+	    };
+	    ContainerBlot.prototype.insertBefore = function (childBlot, refBlot) {
+	        if (this.statics.allowedChildren != null && !this.statics.allowedChildren.some(function (child) {
+	            return childBlot instanceof child;
+	        })) {
+	            throw new Registry.ParchmentError("Cannot insert " + childBlot.statics.blotName + " into " + this.statics.blotName);
+	        }
+	        childBlot.insertInto(this, refBlot);
+	    };
+	    ContainerBlot.prototype.length = function () {
+	        return this.children.reduce(function (memo, child) {
+	            return memo + child.length();
+	        }, 0);
+	    };
+	    ContainerBlot.prototype.moveChildren = function (targetParent, refNode) {
+	        this.children.forEach(function (child) {
+	            targetParent.insertBefore(child, refNode);
+	        });
+	    };
+	    ContainerBlot.prototype.optimize = function () {
+	        _super.prototype.optimize.call(this);
+	        if (this.children.length === 0) {
+	            if (this.statics.defaultChild != null) {
+	                var child = Registry.create(this.statics.defaultChild);
+	                this.appendChild(child);
+	                child.optimize();
+	            }
+	            else {
+	                this.remove();
+	            }
+	        }
+	    };
+	    ContainerBlot.prototype.path = function (index, inclusive) {
+	        if (inclusive === void 0) { inclusive = false; }
+	        var _a = this.children.find(index, inclusive), child = _a[0], offset = _a[1];
+	        var position = [[this, index]];
+	        if (child instanceof ContainerBlot) {
+	            return position.concat(child.path(offset, inclusive));
+	        }
+	        else if (child != null) {
+	            position.push([child, offset]);
+	        }
+	        return position;
+	    };
+	    ContainerBlot.prototype.removeChild = function (child) {
+	        this.children.remove(child);
+	    };
+	    ContainerBlot.prototype.replace = function (target) {
+	        if (target instanceof ContainerBlot) {
+	            target.moveChildren(this);
+	        }
+	        _super.prototype.replace.call(this, target);
+	    };
+	    ContainerBlot.prototype.split = function (index, force) {
+	        if (force === void 0) { force = false; }
+	        if (!force) {
+	            if (index === 0)
+	                return this;
+	            if (index === this.length())
+	                return this.next;
+	        }
+	        var after = this.clone();
+	        this.parent.insertBefore(after, this.next);
+	        this.children.forEachAt(index, this.length(), function (child, offset, length) {
+	            child = child.split(offset, force);
+	            after.appendChild(child);
+	        });
+	        return after;
+	    };
+	    ContainerBlot.prototype.unwrap = function () {
+	        this.moveChildren(this.parent, this.next);
+	        this.remove();
+	    };
+	    ContainerBlot.prototype.update = function (mutations) {
+	        var _this = this;
+	        var addedNodes = [], removedNodes = [];
+	        mutations.forEach(function (mutation) {
+	            if (mutation.target === _this.domNode && mutation.type === 'childList') {
+	                addedNodes.push.apply(addedNodes, mutation.addedNodes);
+	                removedNodes.push.apply(removedNodes, mutation.removedNodes);
+	            }
+	        });
+	        removedNodes.forEach(function (node) {
+	            var blot = Registry.find(node);
+	            if (blot == null)
+	                return;
+	            if (blot.domNode.parentNode == null || blot.domNode.parentNode === _this.domNode) {
+	                blot.detach();
+	            }
+	        });
+	        addedNodes.filter(function (node) {
+	            return node.parentNode == _this.domNode;
+	        }).sort(function (a, b) {
+	            if (a === b)
+	                return 0;
+	            if (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) {
+	                return 1;
+	            }
+	            return -1;
+	        }).forEach(function (node) {
+	            var refBlot = null;
+	            if (node.nextSibling != null) {
+	                refBlot = Registry.find(node.nextSibling);
+	            }
+	            var blot = makeBlot(node);
+	            if (blot.next != refBlot || blot.next == null) {
+	                if (blot.parent != null) {
+	                    blot.parent.removeChild(_this);
+	                }
+	                _this.insertBefore(blot, refBlot);
+	            }
+	        });
+	    };
+	    return ContainerBlot;
+	}(shadow_1.default));
+	function makeBlot(node) {
+	    var blot = Registry.find(node);
+	    if (blot == null) {
+	        try {
+	            blot = Registry.create(node);
+	        }
+	        catch (e) {
+	            blot = Registry.create(Registry.Scope.INLINE);
+	            [].slice.call(node.childNodes).forEach(function (child) {
+	                blot.domNode.appendChild(child);
+	            });
+	            node.parentNode.replaceChild(blot.domNode, node);
+	            blot.attach();
+	        }
+	    }
+	    return blot;
+	}
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = ContainerBlot;
+
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var LinkedList = (function () {
+	    function LinkedList() {
+	        this.head = this.tail = undefined;
+	        this.length = 0;
+	    }
+	    LinkedList.prototype.append = function () {
+	        var nodes = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            nodes[_i - 0] = arguments[_i];
+	        }
+	        this.insertBefore(nodes[0], undefined);
+	        if (nodes.length > 1) {
+	            this.append.apply(this, nodes.slice(1));
+	        }
+	    };
+	    LinkedList.prototype.contains = function (node) {
+	        var cur, next = this.iterator();
+	        while (cur = next()) {
+	            if (cur === node)
+	                return true;
+	        }
+	        return false;
+	    };
+	    LinkedList.prototype.insertBefore = function (node, refNode) {
+	        node.next = refNode;
+	        if (refNode != null) {
+	            node.prev = refNode.prev;
+	            if (refNode.prev != null) {
+	                refNode.prev.next = node;
+	            }
+	            refNode.prev = node;
+	            if (refNode === this.head) {
+	                this.head = node;
+	            }
+	        }
+	        else if (this.tail != null) {
+	            this.tail.next = node;
+	            node.prev = this.tail;
+	            this.tail = node;
+	        }
+	        else {
+	            node.prev = undefined;
+	            this.head = this.tail = node;
+	        }
+	        this.length += 1;
+	    };
+	    LinkedList.prototype.offset = function (target) {
+	        var index = 0, cur = this.head;
+	        while (cur != null) {
+	            if (cur === target)
+	                return index;
+	            index += cur.length();
+	            cur = cur.next;
+	        }
+	        return -1;
+	    };
+	    LinkedList.prototype.remove = function (node) {
+	        if (!this.contains(node))
+	            return;
+	        if (node.prev != null)
+	            node.prev.next = node.next;
+	        if (node.next != null)
+	            node.next.prev = node.prev;
+	        if (node === this.head)
+	            this.head = node.next;
+	        if (node === this.tail)
+	            this.tail = node.prev;
+	        this.length -= 1;
+	    };
+	    LinkedList.prototype.iterator = function (curNode) {
+	        if (curNode === void 0) { curNode = this.head; }
+	        // TODO use yield when we can
+	        return function () {
+	            var ret = curNode;
+	            if (curNode != null)
+	                curNode = curNode.next;
+	            return ret;
+	        };
+	    };
+	    LinkedList.prototype.find = function (index, inclusive) {
+	        if (inclusive === void 0) { inclusive = false; }
+	        var cur, next = this.iterator();
+	        while (cur = next()) {
+	            var length_1 = cur.length();
+	            if (index < length_1 || (inclusive && index === length_1 && (cur.next == null || cur.next.length() !== 0))) {
+	                return [cur, index];
+	            }
+	            index -= length_1;
+	        }
+	        return [null, 0];
+	    };
+	    LinkedList.prototype.forEach = function (callback) {
+	        var cur, next = this.iterator();
+	        while (cur = next()) {
+	            callback(cur);
+	        }
+	    };
+	    LinkedList.prototype.forEachAt = function (index, length, callback) {
+	        if (length <= 0)
+	            return;
+	        var _a = this.find(index), startNode = _a[0], offset = _a[1];
+	        var cur, curIndex = index - offset, next = this.iterator(startNode);
+	        while ((cur = next()) && curIndex < index + length) {
+	            var curLength = cur.length();
+	            if (index > curIndex) {
+	                callback(cur, index - curIndex, Math.min(length, curIndex + curLength - index));
+	            }
+	            else {
+	                callback(cur, 0, Math.min(curLength, index + length - curIndex));
+	            }
+	            curIndex += curLength;
+	        }
+	    };
+	    LinkedList.prototype.map = function (callback) {
+	        return this.reduce(function (memo, cur) {
+	            memo.push(callback(cur));
+	            return memo;
+	        }, []);
+	    };
+	    LinkedList.prototype.reduce = function (callback, memo) {
+	        var cur, next = this.iterator();
+	        while (cur = next()) {
+	            memo = callback(memo, cur);
+	        }
+	        return memo;
+	    };
+	    return LinkedList;
+	}());
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = LinkedList;
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Registry = __webpack_require__(6);
+	var ShadowBlot = (function () {
+	    function ShadowBlot(domNode) {
+	        this.domNode = domNode;
+	        this.attach();
+	    }
+	    Object.defineProperty(ShadowBlot.prototype, "statics", {
+	        // Hack for accessing inherited static methods
+	        get: function () {
+	            return this.constructor;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ShadowBlot.create = function (value) {
+	        if (this.tagName == null) {
+	            throw new Registry.ParchmentError('Blot definition missing tagName');
+	        }
+	        var node;
+	        if (Array.isArray(this.tagName)) {
+	            if (typeof value === 'string') {
+	                value = value.toUpperCase();
+	                if (parseInt(value).toString() === value) {
+	                    value = parseInt(value);
+	                }
+	            }
+	            if (typeof value === 'number') {
+	                node = document.createElement(this.tagName[value - 1]);
+	            }
+	            else if (this.tagName.indexOf(value) > -1) {
+	                node = document.createElement(value);
+	            }
+	            else {
+	                node = document.createElement(this.tagName[0]);
+	            }
+	        }
+	        else {
+	            node = document.createElement(this.tagName);
+	        }
+	        if (this.className) {
+	            node.classList.add(this.className);
+	        }
+	        return node;
+	    };
+	    ShadowBlot.prototype.attach = function () {
+	        this.domNode[Registry.DATA_KEY] = { blot: this };
+	    };
+	    ShadowBlot.prototype.clone = function () {
+	        var domNode = this.domNode.cloneNode();
+	        return Registry.create(domNode);
+	    };
+	    ShadowBlot.prototype.detach = function () {
+	        if (this.parent != null)
+	            this.parent.removeChild(this);
+	        delete this.domNode[Registry.DATA_KEY];
+	    };
+	    ShadowBlot.prototype.deleteAt = function (index, length) {
+	        var blot = this.isolate(index, length);
+	        blot.remove();
+	    };
+	    ShadowBlot.prototype.formatAt = function (index, length, name, value) {
+	        var blot = this.isolate(index, length);
+	        if (Registry.query(name, Registry.Scope.BLOT) != null && value) {
+	            blot.wrap(name, value);
+	        }
+	        else if (Registry.query(name, Registry.Scope.ATTRIBUTE) != null) {
+	            var parent_1 = Registry.create(this.statics.scope);
+	            blot.wrap(parent_1);
+	            parent_1.format(name, value);
+	        }
+	    };
+	    ShadowBlot.prototype.insertAt = function (index, value, def) {
+	        var blot = (def == null) ? Registry.create('text', value) : Registry.create(value, def);
+	        var ref = this.split(index);
+	        this.parent.insertBefore(blot, ref);
+	    };
+	    ShadowBlot.prototype.insertInto = function (parentBlot, refBlot) {
+	        if (this.parent != null) {
+	            this.parent.children.remove(this);
+	        }
+	        parentBlot.children.insertBefore(this, refBlot);
+	        if (refBlot != null) {
+	            var refDomNode = refBlot.domNode;
+	        }
+	        if (this.next == null || this.domNode.nextSibling != refDomNode) {
+	            parentBlot.domNode.insertBefore(this.domNode, refDomNode);
+	        }
+	        this.parent = parentBlot;
+	    };
+	    ShadowBlot.prototype.isolate = function (index, length) {
+	        var target = this.split(index);
+	        target.split(length);
+	        return target;
+	    };
+	    ShadowBlot.prototype.length = function () {
+	        return 1;
+	    };
+	    ;
+	    ShadowBlot.prototype.offset = function (root) {
+	        if (root === void 0) { root = this.parent; }
+	        if (this.parent == null || this == root)
+	            return 0;
+	        return this.parent.children.offset(this) + this.parent.offset(root);
+	    };
+	    ShadowBlot.prototype.optimize = function () {
+	        // TODO clean up once we use WeakMap
+	        if (this.domNode[Registry.DATA_KEY] != null) {
+	            delete this.domNode[Registry.DATA_KEY].mutations;
+	        }
+	    };
+	    ShadowBlot.prototype.remove = function () {
+	        if (this.domNode.parentNode != null) {
+	            this.domNode.parentNode.removeChild(this.domNode);
+	        }
+	        this.detach();
+	    };
+	    ShadowBlot.prototype.replace = function (target) {
+	        if (target.parent == null)
+	            return;
+	        target.parent.insertBefore(this, target.next);
+	        target.remove();
+	    };
+	    ShadowBlot.prototype.replaceWith = function (name, value) {
+	        var replacement = typeof name === 'string' ? Registry.create(name, value) : name;
+	        replacement.replace(this);
+	        return replacement;
+	    };
+	    ShadowBlot.prototype.split = function (index, force) {
+	        return index === 0 ? this : this.next;
+	    };
+	    ShadowBlot.prototype.update = function (mutations) {
+	        if (mutations === void 0) { mutations = []; }
+	        // Nothing to do by default
+	    };
+	    ShadowBlot.prototype.wrap = function (name, value) {
+	        var wrapper = typeof name === 'string' ? Registry.create(name, value) : name;
+	        if (this.parent != null) {
+	            this.parent.insertBefore(wrapper, this.next);
+	        }
+	        wrapper.appendChild(this);
+	        return wrapper;
+	    };
+	    ShadowBlot.blotName = 'abstract';
+	    return ShadowBlot;
+	}());
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = ShadowBlot;
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var ParchmentError = (function (_super) {
+	    __extends(ParchmentError, _super);
+	    function ParchmentError(message) {
+	        message = '[Parchment] ' + message;
+	        _super.call(this, message);
+	        this.message = message;
+	        this.name = this.constructor.name;
+	    }
+	    return ParchmentError;
+	}(Error));
+	exports.ParchmentError = ParchmentError;
+	var attributes = {};
+	var classes = {};
+	var tags = {};
+	var types = {};
+	exports.DATA_KEY = '__blot';
+	(function (Scope) {
+	    Scope[Scope["TYPE"] = 3] = "TYPE";
+	    Scope[Scope["LEVEL"] = 12] = "LEVEL";
+	    Scope[Scope["ATTRIBUTE"] = 13] = "ATTRIBUTE";
+	    Scope[Scope["BLOT"] = 14] = "BLOT";
+	    Scope[Scope["INLINE"] = 7] = "INLINE";
+	    Scope[Scope["BLOCK"] = 11] = "BLOCK";
+	    Scope[Scope["BLOCK_BLOT"] = 10] = "BLOCK_BLOT";
+	    Scope[Scope["INLINE_BLOT"] = 6] = "INLINE_BLOT";
+	    Scope[Scope["BLOCK_ATTRIBUTE"] = 9] = "BLOCK_ATTRIBUTE";
+	    Scope[Scope["INLINE_ATTRIBUTE"] = 5] = "INLINE_ATTRIBUTE";
+	    Scope[Scope["ANY"] = 15] = "ANY";
+	})(exports.Scope || (exports.Scope = {}));
+	var Scope = exports.Scope;
+	;
+	function create(input, value) {
+	    var match = query(input);
+	    if (match == null) {
+	        throw new ParchmentError("Unable to create " + input + " blot");
+	    }
+	    var BlotClass = match;
+	    var node = input instanceof Node ? input : BlotClass.create(value);
+	    return new BlotClass(node, value);
+	}
+	exports.create = create;
+	function find(node, bubble) {
+	    if (bubble === void 0) { bubble = false; }
+	    if (node == null)
+	        return null;
+	    if (node[exports.DATA_KEY] != null)
+	        return node[exports.DATA_KEY].blot;
+	    if (bubble)
+	        return find(node.parentNode, bubble);
+	    return null;
+	}
+	exports.find = find;
+	function query(query, scope) {
+	    if (scope === void 0) { scope = Scope.ANY; }
+	    var match;
+	    if (typeof query === 'string') {
+	        match = types[query] || attributes[query];
+	    }
+	    else if (query instanceof Text) {
+	        match = types['text'];
+	    }
+	    else if (typeof query === 'number') {
+	        if (query & Scope.LEVEL & Scope.BLOCK) {
+	            match = types['block'];
+	        }
+	        else if (query & Scope.LEVEL & Scope.INLINE) {
+	            match = types['inline'];
+	        }
+	    }
+	    else if (query instanceof HTMLElement) {
+	        var names = (query.getAttribute('class') || '').split(/\s+/);
+	        for (var i in names) {
+	            if (match = classes[names[i]])
+	                break;
+	        }
+	        match = match || tags[query.tagName];
+	    }
+	    if (match == null)
+	        return null;
+	    if ((scope & Scope.LEVEL & match.scope) && (scope & Scope.TYPE & match.scope))
+	        return match;
+	    return null;
+	}
+	exports.query = query;
+	function register() {
+	    var Definitions = [];
+	    for (var _i = 0; _i < arguments.length; _i++) {
+	        Definitions[_i - 0] = arguments[_i];
+	    }
+	    if (Definitions.length > 1) {
+	        return Definitions.map(function (d) {
+	            return register(d);
+	        });
+	    }
+	    var Definition = Definitions[0];
+	    if (typeof Definition.blotName !== 'string' && typeof Definition.attrName !== 'string') {
+	        throw new ParchmentError('Invalid definition');
+	    }
+	    else if (Definition.blotName === 'abstract') {
+	        throw new ParchmentError('Cannot register abstract class');
+	    }
+	    types[Definition.blotName || Definition.attrName] = Definition;
+	    if (typeof Definition.keyName === 'string') {
+	        attributes[Definition.keyName] = Definition;
+	    }
+	    else {
+	        if (Definition.className != null) {
+	            classes[Definition.className] = Definition;
+	        }
+	        if (Definition.tagName != null) {
+	            if (Array.isArray(Definition.tagName)) {
+	                Definition.tagName = Definition.tagName.map(function (tagName) {
+	                    return tagName.toUpperCase();
+	                });
+	            }
+	            else {
+	                Definition.tagName = Definition.tagName.toUpperCase();
+	            }
+	            var tagNames = Array.isArray(Definition.tagName) ? Definition.tagName : [Definition.tagName];
+	            tagNames.forEach(function (tag) {
+	                if (tags[tag] == null || Definition.className == null) {
+	                    tags[tag] = Definition;
+	                }
+	            });
+	        }
+	    }
+	    return Definition;
+	}
+	exports.register = register;
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var attributor_1 = __webpack_require__(8);
+	var store_1 = __webpack_require__(9);
+	var container_1 = __webpack_require__(3);
+	var Registry = __webpack_require__(6);
+	var FormatBlot = (function (_super) {
+	    __extends(FormatBlot, _super);
+	    function FormatBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    FormatBlot.formats = function (domNode) {
+	        if (typeof this.tagName === 'string') {
+	            return true;
+	        }
+	        else if (Array.isArray(this.tagName)) {
+	            return domNode.tagName.toLowerCase();
+	        }
+	        return undefined;
+	    };
+	    FormatBlot.prototype.attach = function () {
+	        _super.prototype.attach.call(this);
+	        this.attributes = new store_1.default(this.domNode);
+	    };
+	    FormatBlot.prototype.format = function (name, value) {
+	        var format = Registry.query(name);
+	        if (format instanceof attributor_1.default) {
+	            this.attributes.attribute(format, value);
+	        }
+	        else if (value) {
+	            if (format != null && (name !== this.statics.blotName || this.formats()[name] !== value)) {
+	                this.replaceWith(name, value);
+	            }
+	        }
+	    };
+	    FormatBlot.prototype.formats = function () {
+	        var formats = this.attributes.values();
+	        var format = this.statics.formats(this.domNode);
+	        if (format != null) {
+	            formats[this.statics.blotName] = format;
+	        }
+	        return formats;
+	    };
+	    FormatBlot.prototype.replaceWith = function (name, value) {
+	        var replacement = _super.prototype.replaceWith.call(this, name, value);
+	        this.attributes.copy(replacement);
+	        return replacement;
+	    };
+	    FormatBlot.prototype.update = function (mutations) {
+	        var _this = this;
+	        _super.prototype.update.call(this, mutations);
+	        if (mutations.some(function (mutation) {
+	            return mutation.target === _this.domNode && mutation.type === 'attributes';
+	        })) {
+	            this.attributes.build();
+	        }
+	    };
+	    FormatBlot.prototype.wrap = function (name, value) {
+	        var wrapper = _super.prototype.wrap.call(this, name, value);
+	        if (wrapper instanceof FormatBlot && wrapper.statics.scope === this.statics.scope) {
+	            this.attributes.move(wrapper);
+	        }
+	        return wrapper;
+	    };
+	    return FormatBlot;
+	}(container_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = FormatBlot;
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Registry = __webpack_require__(6);
+	var Attributor = (function () {
+	    function Attributor(attrName, keyName, options) {
+	        if (options === void 0) { options = {}; }
+	        this.attrName = attrName;
+	        this.keyName = keyName;
+	        var attributeBit = Registry.Scope.TYPE & Registry.Scope.ATTRIBUTE;
+	        if (options.scope != null) {
+	            // Ignore type bits, force attribute bit
+	            this.scope = (options.scope & Registry.Scope.LEVEL) | attributeBit;
+	        }
+	        else {
+	            this.scope = Registry.Scope.ATTRIBUTE;
+	        }
+	        if (options.whitelist != null)
+	            this.whitelist = options.whitelist;
+	    }
+	    Attributor.keys = function (node) {
+	        return [].map.call(node.attributes, function (item) {
+	            return item.name;
+	        });
+	    };
+	    Attributor.prototype.add = function (node, value) {
+	        if (!this.canAdd(node, value))
+	            return false;
+	        node.setAttribute(this.keyName, value);
+	        return true;
+	    };
+	    Attributor.prototype.canAdd = function (node, value) {
+	        var match = Registry.query(node, Registry.Scope.BLOT & (this.scope | Registry.Scope.TYPE));
+	        if (match != null && (this.whitelist == null || this.whitelist.indexOf(value) > -1)) {
+	            return true;
+	        }
+	        return false;
+	    };
+	    Attributor.prototype.remove = function (node) {
+	        node.removeAttribute(this.keyName);
+	    };
+	    Attributor.prototype.value = function (node) {
+	        return node.getAttribute(this.keyName);
+	    };
+	    return Attributor;
+	}());
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = Attributor;
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var attributor_1 = __webpack_require__(8);
+	var class_1 = __webpack_require__(10);
+	var style_1 = __webpack_require__(11);
+	var Registry = __webpack_require__(6);
+	var AttributorStore = (function () {
+	    function AttributorStore(domNode) {
+	        this.attributes = {};
+	        this.domNode = domNode;
+	        this.build();
+	    }
+	    AttributorStore.prototype.attribute = function (attribute, value) {
+	        if (value) {
+	            if (attribute.add(this.domNode, value)) {
+	                if (attribute.value(this.domNode) != null) {
+	                    this.attributes[attribute.attrName] = attribute;
+	                }
+	                else {
+	                    delete this.attributes[attribute.attrName];
+	                }
+	            }
+	        }
+	        else {
+	            attribute.remove(this.domNode);
+	            delete this.attributes[attribute.attrName];
+	        }
+	    };
+	    AttributorStore.prototype.build = function () {
+	        var _this = this;
+	        this.attributes = {};
+	        var attributes = attributor_1.default.keys(this.domNode);
+	        var classes = class_1.default.keys(this.domNode);
+	        var styles = style_1.default.keys(this.domNode);
+	        attributes.concat(classes).concat(styles).forEach(function (name) {
+	            var attr = Registry.query(name, Registry.Scope.ATTRIBUTE);
+	            if (attr instanceof attributor_1.default) {
+	                _this.attributes[attr.attrName] = attr;
+	            }
+	        });
+	    };
+	    AttributorStore.prototype.copy = function (target) {
+	        var _this = this;
+	        Object.keys(this.attributes).forEach(function (key) {
+	            var value = _this.attributes[key].value(_this.domNode);
+	            target.format(key, value);
+	        });
+	    };
+	    AttributorStore.prototype.move = function (target) {
+	        var _this = this;
+	        this.copy(target);
+	        Object.keys(this.attributes).forEach(function (key) {
+	            _this.attributes[key].remove(_this.domNode);
+	        });
+	        this.attributes = {};
+	    };
+	    AttributorStore.prototype.values = function () {
+	        var _this = this;
+	        return Object.keys(this.attributes).reduce(function (attributes, name) {
+	            attributes[name] = _this.attributes[name].value(_this.domNode);
+	            return attributes;
+	        }, {});
+	    };
+	    return AttributorStore;
+	}());
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = AttributorStore;
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var attributor_1 = __webpack_require__(8);
+	function match(node, prefix) {
+	    var className = node.getAttribute('class') || '';
+	    return className.split(/\s+/).filter(function (name) {
+	        return name.indexOf(prefix + "-") === 0;
+	    });
+	}
+	var ClassAttributor = (function (_super) {
+	    __extends(ClassAttributor, _super);
+	    function ClassAttributor() {
+	        _super.apply(this, arguments);
+	    }
+	    ClassAttributor.keys = function (node) {
+	        return (node.getAttribute('class') || '').split(/\s+/).map(function (name) {
+	            return name.split('-').slice(0, -1).join('-');
+	        });
+	    };
+	    ClassAttributor.prototype.add = function (node, value) {
+	        if (!this.canAdd(node, value))
+	            return false;
+	        this.remove(node);
+	        node.classList.add(this.keyName + "-" + value);
+	        return true;
+	    };
+	    ClassAttributor.prototype.remove = function (node) {
+	        var matches = match(node, this.keyName);
+	        matches.forEach(function (name) {
+	            node.classList.remove(name);
+	        });
+	        if (node.classList.length === 0) {
+	            node.removeAttribute('class');
+	        }
+	    };
+	    ClassAttributor.prototype.value = function (node) {
+	        var result = match(node, this.keyName)[0] || '';
+	        return result.slice(this.keyName.length + 1); // +1 for hyphen
+	    };
+	    return ClassAttributor;
+	}(attributor_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = ClassAttributor;
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var attributor_1 = __webpack_require__(8);
+	function camelize(name) {
+	    var parts = name.split('-');
+	    var rest = parts.slice(1).map(function (part) {
+	        return part[0].toUpperCase() + part.slice(1);
+	    }).join('');
+	    return parts[0] + rest;
+	}
+	var StyleAttributor = (function (_super) {
+	    __extends(StyleAttributor, _super);
+	    function StyleAttributor() {
+	        _super.apply(this, arguments);
+	    }
+	    StyleAttributor.keys = function (node) {
+	        return (node.getAttribute('style') || '').split(';').map(function (value) {
+	            var arr = value.split(':');
+	            return arr[0].trim();
+	        });
+	    };
+	    StyleAttributor.prototype.add = function (node, value) {
+	        if (!this.canAdd(node, value))
+	            return false;
+	        node.style[camelize(this.keyName)] = value;
+	        return true;
+	    };
+	    StyleAttributor.prototype.remove = function (node) {
+	        node.style[camelize(this.keyName)] = '';
+	        if (!node.getAttribute('style')) {
+	            node.removeAttribute('style');
+	        }
+	    };
+	    StyleAttributor.prototype.value = function (node) {
+	        return node.style[camelize(this.keyName)];
+	    };
+	    return StyleAttributor;
+	}(attributor_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = StyleAttributor;
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var shadow_1 = __webpack_require__(5);
+	var Registry = __webpack_require__(6);
+	var LeafBlot = (function (_super) {
+	    __extends(LeafBlot, _super);
+	    function LeafBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    LeafBlot.value = function (domNode) {
+	        return true;
+	    };
+	    LeafBlot.prototype.index = function (node, offset) {
+	        if (node !== this.domNode)
+	            return -1;
+	        return Math.min(offset, 1);
+	    };
+	    LeafBlot.prototype.position = function (index, inclusive) {
+	        var offset = [].indexOf.call(this.parent.domNode.childNodes, this.domNode);
+	        if (index > 0)
+	            offset += 1;
+	        return [this.parent.domNode, offset];
+	    };
+	    LeafBlot.prototype.value = function () {
+	        return (_a = {}, _a[this.statics.blotName] = this.statics.value(this.domNode) || true, _a);
+	        var _a;
+	    };
+	    LeafBlot.scope = Registry.Scope.INLINE_BLOT;
+	    return LeafBlot;
+	}(shadow_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = LeafBlot;
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var container_1 = __webpack_require__(3);
+	var Registry = __webpack_require__(6);
+	var OBSERVER_CONFIG = {
+	    attributes: true,
+	    characterData: true,
+	    characterDataOldValue: true,
+	    childList: true,
+	    subtree: true
+	};
+	var MAX_OPTIMIZE_ITERATIONS = 100;
+	var ScrollBlot = (function (_super) {
+	    __extends(ScrollBlot, _super);
+	    function ScrollBlot(node) {
+	        var _this = this;
+	        _super.call(this, node);
+	        this.parent = null;
+	        this.observer = new MutationObserver(function (mutations) {
+	            _this.update(mutations);
+	        });
+	        this.observer.observe(this.domNode, OBSERVER_CONFIG);
+	    }
+	    ScrollBlot.prototype.detach = function () {
+	        _super.prototype.detach.call(this);
+	        this.observer.disconnect();
+	    };
+	    ScrollBlot.prototype.deleteAt = function (index, length) {
+	        this.update();
+	        if (index === 0 && length === this.length()) {
+	            this.children.forEach(function (child) {
+	                child.remove();
+	            });
+	        }
+	        else {
+	            _super.prototype.deleteAt.call(this, index, length);
+	        }
+	    };
+	    ScrollBlot.prototype.formatAt = function (index, length, name, value) {
+	        this.update();
+	        _super.prototype.formatAt.call(this, index, length, name, value);
+	    };
+	    ScrollBlot.prototype.insertAt = function (index, value, def) {
+	        this.update();
+	        _super.prototype.insertAt.call(this, index, value, def);
+	    };
+	    ScrollBlot.prototype.optimize = function (mutations) {
+	        var _this = this;
+	        if (mutations === void 0) { mutations = []; }
+	        _super.prototype.optimize.call(this);
+	        mutations.push.apply(mutations, this.observer.takeRecords());
+	        // TODO use WeakMap
+	        var mark = function (blot, markParent) {
+	            if (markParent === void 0) { markParent = true; }
+	            if (blot == null || blot === _this)
+	                return;
+	            if (blot.domNode.parentNode == null)
+	                return;
+	            if (blot.domNode[Registry.DATA_KEY].mutations == null) {
+	                blot.domNode[Registry.DATA_KEY].mutations = [];
+	            }
+	            if (markParent)
+	                mark(blot.parent);
+	        };
+	        var optimize = function (blot) {
+	            if (blot.domNode[Registry.DATA_KEY] == null || blot.domNode[Registry.DATA_KEY].mutations == null) {
+	                return;
+	            }
+	            if (blot instanceof container_1.default) {
+	                blot.children.forEach(optimize);
+	            }
+	            blot.optimize();
+	        };
+	        var remaining = mutations;
+	        for (var i = 0; remaining.length > 0; i += 1) {
+	            if (i >= MAX_OPTIMIZE_ITERATIONS) {
+	                throw new Error('[Parchment] Maximum optimize iterations reached');
+	            }
+	            remaining.forEach(function (mutation) {
+	                var blot = Registry.find(mutation.target, true);
+	                if (blot == null)
+	                    return;
+	                if (blot.domNode === mutation.target) {
+	                    if (mutation.type === 'childList') {
+	                        mark(Registry.find(mutation.previousSibling, false));
+	                        [].forEach.call(mutation.addedNodes, function (node) {
+	                            var child = Registry.find(node, false);
+	                            mark(child, false);
+	                            if (child instanceof container_1.default) {
+	                                child.children.forEach(function (grandChild) {
+	                                    mark(grandChild, false);
+	                                });
+	                            }
+	                        });
+	                    }
+	                    else if (mutation.type === 'attributes') {
+	                        mark(blot.prev);
+	                    }
+	                }
+	                mark(blot);
+	            });
+	            this.children.forEach(optimize);
+	            remaining = this.observer.takeRecords();
+	            mutations.push.apply(mutations, remaining);
+	        }
+	    };
+	    ScrollBlot.prototype.update = function (mutations) {
+	        var _this = this;
+	        mutations = mutations || this.observer.takeRecords();
+	        // TODO use WeakMap
+	        mutations.map(function (mutation) {
+	            var blot = Registry.find(mutation.target, true);
+	            if (blot == null)
+	                return;
+	            if (blot.domNode[Registry.DATA_KEY].mutations == null) {
+	                blot.domNode[Registry.DATA_KEY].mutations = [mutation];
+	                return blot;
+	            }
+	            else {
+	                blot.domNode[Registry.DATA_KEY].mutations.push(mutation);
+	                return null;
+	            }
+	        }).forEach(function (blot) {
+	            if (blot == null || blot === _this)
+	                return;
+	            blot.update(blot.domNode[Registry.DATA_KEY].mutations || []);
+	        });
+	        if (this.domNode[Registry.DATA_KEY].mutations != null) {
+	            _super.prototype.update.call(this, this.domNode[Registry.DATA_KEY].mutations);
+	        }
+	        this.optimize(mutations);
+	    };
+	    ScrollBlot.blotName = 'scroll';
+	    ScrollBlot.defaultChild = 'block';
+	    ScrollBlot.scope = Registry.Scope.BLOCK_BLOT;
+	    ScrollBlot.tagName = 'DIV';
+	    return ScrollBlot;
+	}(container_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = ScrollBlot;
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var format_1 = __webpack_require__(7);
+	var Registry = __webpack_require__(6);
+	// Shallow object comparison
+	function isEqual(obj1, obj2) {
+	    if (Object.keys(obj1).length !== Object.keys(obj2).length)
+	        return false;
+	    for (var prop in obj1) {
+	        if (obj1[prop] !== obj2[prop])
+	            return false;
+	    }
+	    return true;
+	}
+	var InlineBlot = (function (_super) {
+	    __extends(InlineBlot, _super);
+	    function InlineBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    InlineBlot.formats = function (domNode) {
+	        if (domNode.tagName === InlineBlot.tagName)
+	            return undefined;
+	        return _super.formats.call(this, domNode);
+	    };
+	    InlineBlot.prototype.format = function (name, value) {
+	        var _this = this;
+	        if (name === this.statics.blotName && !value) {
+	            this.children.forEach(function (child) {
+	                if (!(child instanceof format_1.default)) {
+	                    child = child.wrap(InlineBlot.blotName, true);
+	                }
+	                _this.attributes.copy(child);
+	            });
+	            this.unwrap();
+	        }
+	        else {
+	            _super.prototype.format.call(this, name, value);
+	        }
+	    };
+	    InlineBlot.prototype.formatAt = function (index, length, name, value) {
+	        if (this.formats()[name] != null || Registry.query(name, Registry.Scope.ATTRIBUTE)) {
+	            var blot = this.isolate(index, length);
+	            blot.format(name, value);
+	        }
+	        else {
+	            _super.prototype.formatAt.call(this, index, length, name, value);
+	        }
+	    };
+	    InlineBlot.prototype.optimize = function () {
+	        _super.prototype.optimize.call(this);
+	        var formats = this.formats();
+	        if (Object.keys(formats).length === 0) {
+	            return this.unwrap(); // unformatted span
+	        }
+	        var next = this.next;
+	        if (next instanceof InlineBlot && next.prev === this && isEqual(formats, next.formats())) {
+	            next.moveChildren(this);
+	            next.remove();
+	        }
+	    };
+	    InlineBlot.blotName = 'inline';
+	    InlineBlot.scope = Registry.Scope.INLINE_BLOT;
+	    InlineBlot.tagName = 'SPAN';
+	    return InlineBlot;
+	}(format_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = InlineBlot;
+
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var format_1 = __webpack_require__(7);
+	var Registry = __webpack_require__(6);
+	var BlockBlot = (function (_super) {
+	    __extends(BlockBlot, _super);
+	    function BlockBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    BlockBlot.formats = function (domNode) {
+	        var tagName = Registry.query(BlockBlot.blotName).tagName;
+	        if (domNode.tagName === tagName)
+	            return undefined;
+	        return _super.formats.call(this, domNode);
+	    };
+	    BlockBlot.prototype.format = function (name, value) {
+	        if (name === this.statics.blotName && !value) {
+	            this.replaceWith(BlockBlot.blotName);
+	        }
+	        else {
+	            _super.prototype.format.call(this, name, value);
+	        }
+	    };
+	    BlockBlot.prototype.formatAt = function (index, length, name, value) {
+	        if (Registry.query(name, Registry.Scope.BLOCK) != null) {
+	            this.format(name, value);
+	        }
+	        else {
+	            _super.prototype.formatAt.call(this, index, length, name, value);
+	        }
+	    };
+	    BlockBlot.prototype.insertAt = function (index, value, def) {
+	        if (def == null || Registry.query(value, Registry.Scope.INLINE) != null) {
+	            // Insert text or inline
+	            _super.prototype.insertAt.call(this, index, value, def);
+	        }
+	        else {
+	            var after = this.split(index);
+	            var blot = Registry.create(value, def);
+	            after.parent.insertBefore(blot, after);
+	        }
+	    };
+	    BlockBlot.blotName = 'block';
+	    BlockBlot.scope = Registry.Scope.BLOCK_BLOT;
+	    BlockBlot.tagName = 'P';
+	    return BlockBlot;
+	}(format_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = BlockBlot;
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var leaf_1 = __webpack_require__(12);
+	var EmbedBlot = (function (_super) {
+	    __extends(EmbedBlot, _super);
+	    function EmbedBlot() {
+	        _super.apply(this, arguments);
+	    }
+	    EmbedBlot.formats = function (domNode) {
+	        return undefined;
+	    };
+	    EmbedBlot.prototype.format = function (name, value) {
+	        // super.formatAt wraps, which is what we want in general,
+	        // but this allows subclasses to overwrite for formats
+	        // that just apply to particular embeds
+	        _super.prototype.formatAt.call(this, 0, this.length(), name, value);
+	    };
+	    EmbedBlot.prototype.formatAt = function (index, length, name, value) {
+	        if (index === 0 && length === this.length()) {
+	            this.format(name, value);
+	        }
+	        else {
+	            _super.prototype.formatAt.call(this, index, length, name, value);
+	        }
+	    };
+	    EmbedBlot.prototype.formats = function () {
+	        return this.statics.formats(this.domNode);
+	    };
+	    return EmbedBlot;
+	}(leaf_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = EmbedBlot;
+
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var leaf_1 = __webpack_require__(12);
+	var Registry = __webpack_require__(6);
+	var TextBlot = (function (_super) {
+	    __extends(TextBlot, _super);
+	    function TextBlot(node) {
+	        _super.call(this, node);
+	        this.text = this.statics.value(this.domNode);
+	    }
+	    TextBlot.create = function (value) {
+	        return document.createTextNode(value);
+	    };
+	    TextBlot.value = function (domNode) {
+	        return domNode.data;
+	    };
+	    TextBlot.prototype.deleteAt = function (index, length) {
+	        this.domNode.data = this.text = this.text.slice(0, index) + this.text.slice(index + length);
+	    };
+	    TextBlot.prototype.index = function (node, offset) {
+	        if (this.domNode === node) {
+	            return offset;
+	        }
+	        return -1;
+	    };
+	    TextBlot.prototype.insertAt = function (index, value, def) {
+	        if (def == null) {
+	            this.text = this.text.slice(0, index) + value + this.text.slice(index);
+	            this.domNode.data = this.text;
+	        }
+	        else {
+	            _super.prototype.insertAt.call(this, index, value, def);
+	        }
+	    };
+	    TextBlot.prototype.length = function () {
+	        return this.text.length;
+	    };
+	    TextBlot.prototype.optimize = function () {
+	        _super.prototype.optimize.call(this);
+	        this.text = this.statics.value(this.domNode);
+	        if (this.text.length === 0) {
+	            this.remove();
+	        }
+	        else if (this.next instanceof TextBlot && this.next.prev === this) {
+	            this.insertAt(this.length(), this.next.value());
+	            this.next.remove();
+	        }
+	    };
+	    TextBlot.prototype.position = function (index, inclusive) {
+	        if (inclusive === void 0) { inclusive = false; }
+	        return [this.domNode, index];
+	    };
+	    TextBlot.prototype.split = function (index, force) {
+	        if (force === void 0) { force = false; }
+	        if (!force) {
+	            if (index === 0)
+	                return this;
+	            if (index === this.length())
+	                return this.next;
+	        }
+	        var after = Registry.create(this.domNode.splitText(index));
+	        this.parent.insertBefore(after, this.next);
+	        this.text = this.statics.value(this.domNode);
+	        return after;
+	    };
+	    TextBlot.prototype.update = function (mutations) {
+	        var _this = this;
+	        if (mutations.some(function (mutation) {
+	            return mutation.type === 'characterData' && mutation.target === _this.domNode;
+	        })) {
+	            this.text = this.statics.value(this.domNode);
+	        }
+	    };
+	    TextBlot.prototype.value = function () {
+	        return this.text;
+	    };
+	    TextBlot.blotName = 'text';
+	    TextBlot.scope = Registry.Scope.INLINE_BLOT;
+	    return TextBlot;
+	}(leaf_1.default));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = TextBlot;
+
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.overload = exports.expandConfig = undefined;
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	__webpack_require__(19);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _editor = __webpack_require__(27);
+
+	var _editor2 = _interopRequireDefault(_editor);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _selection = __webpack_require__(40);
+
+	var _selection2 = _interopRequireDefault(_selection);
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	var _theme = __webpack_require__(41);
+
+	var _theme2 = _interopRequireDefault(_theme);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var debug = (0, _logger2.default)('quill');
+
+	var Quill = function () {
+	  _createClass(Quill, null, [{
+	    key: 'debug',
+	    value: function debug(limit) {
+	      _logger2.default.level(limit);
+	    }
+	  }, {
+	    key: 'import',
+	    value: function _import(name) {
+	      if (this.imports[name] == null) {
+	        debug.error('Cannot import ' + name + '. Are you sure it was registered?');
+	      }
+	      return this.imports[name];
+	    }
+	  }, {
+	    key: 'register',
+	    value: function register(path, target) {
+	      var _this = this;
+
+	      var overwrite = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
+
+	      if (typeof path !== 'string') {
+	        var name = path.attrName || path.blotName;
+	        if (typeof name === 'string') {
+	          // register(Blot | Attributor, overwrite)
+	          this.register('formats/' + name, path, target);
+	        } else {
+	          Object.keys(path).forEach(function (key) {
+	            _this.register(key, path[key], target);
+	          });
+	        }
+	      } else {
+	        if (this.imports[path] != null && !overwrite) {
+	          debug.warn('Overwriting ' + path + ' with', target);
+	        }
+	        this.imports[path] = target;
+	        if ((path.startsWith('blots/') || path.startsWith('formats/')) && target.blotName !== 'abstract') {
+	          _parchment2.default.register(target);
+	        }
+	      }
+	    }
+	  }]);
+
+	  function Quill(container) {
+	    var _this2 = this;
+
+	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	    _classCallCheck(this, Quill);
+
+	    options = expandConfig(container, options);
+	    this.container = options.container;
+	    if (this.container == null) {
+	      return debug.error('Invalid Quill container', container);
+	    }
+	    if (options.debug) {
+	      Quill.debug(options.debug);
+	    }
+	    var html = this.container.innerHTML.trim();
+	    this.container.classList.add('ql-container');
+	    this.container.innerHTML = '';
+	    this.root = this.addContainer('ql-editor');
+	    this.emitter = new _emitter2.default();
+	    this.scroll = _parchment2.default.create(this.root, {
+	      emitter: this.emitter,
+	      whitelist: options.formats
+	    });
+	    this.editor = new _editor2.default(this.scroll, this.emitter);
+	    this.selection = new _selection2.default(this.scroll, this.emitter);
+	    this.theme = new options.theme(this, options);
+	    this.keyboard = this.theme.addModule('keyboard');
+	    this.clipboard = this.theme.addModule('clipboard');
+	    this.history = this.theme.addModule('history');
+	    this.theme.init();
+	    this.pasteHTML('<div class=\'ql-editor\' style="white-space: normal;">' + html + '<p><br></p></div>');
+	    this.history.clear();
+	    if (options.readOnly) {
+	      this.disable();
+	    }
+	    if (options.placeholder) {
+	      this.root.setAttribute('data-placeholder', options.placeholder);
+	    }
+	    this.root.classList.toggle('ql-blank', this.editor.isBlank());
+	    this.emitter.on(_emitter2.default.events.TEXT_CHANGE, function (delta) {
+	      _this2.root.classList.toggle('ql-blank', _this2.editor.isBlank());
+	    });
+	  }
+
+	  _createClass(Quill, [{
+	    key: 'addContainer',
+	    value: function addContainer(container) {
+	      var refNode = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+
+	      if (typeof container === 'string') {
+	        var className = container;
+	        container = document.createElement('div');
+	        container.classList.add(className);
+	      }
+	      this.container.insertBefore(container, refNode);
+	      return container;
+	    }
+	  }, {
+	    key: 'blur',
+	    value: function blur() {
+	      this.selection.setRange(null);
+	    }
+	  }, {
+	    key: 'deleteText',
+	    value: function deleteText(index, length, source) {
+	      var _overload = overload(index, length, source);
+
+	      var _overload2 = _slicedToArray(_overload, 4);
+
+	      index = _overload2[0];
+	      length = _overload2[1];
+	      source = _overload2[3];
+
+	      var range = this.getSelection();
+	      var change = this.editor.deleteText(index, length, source);
+	      range = shiftRange(range, index, -1 * length, source);
+	      this.setSelection(range, _emitter2.default.sources.SILENT);
+	      return change;
+	    }
+	  }, {
+	    key: 'disable',
+	    value: function disable() {
+	      this.enable(false);
+	    }
+	  }, {
+	    key: 'enable',
+	    value: function enable() {
+	      var enabled = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
+
+	      this.editor.enable(enabled);
+	      if (!enabled) {
+	        this.blur();
+	      }
+	    }
+	  }, {
+	    key: 'focus',
+	    value: function focus() {
+	      this.selection.focus();
+	      this.selection.scrollIntoView();
+	    }
+	  }, {
+	    key: 'format',
+	    value: function format(name, value) {
+	      var source = arguments.length <= 2 || arguments[2] === undefined ? _emitter2.default.sources.API : arguments[2];
+
+	      var range = this.getSelection(true);
+	      var change = new _delta2.default();
+	      if (range == null) return change;
+	      if (_parchment2.default.query(name, _parchment2.default.Scope.BLOCK)) {
+	        change = this.formatLine(range, name, value, source);
+	      } else if (range.length === 0) {
+	        this.selection.format(name, value);
+	        return change;
+	      } else {
+	        change = this.formatText(range, name, value, source);
+	      }
+	      this.setSelection(range, _emitter2.default.sources.SILENT);
+	      return change;
+	    }
+	  }, {
+	    key: 'formatLine',
+	    value: function formatLine(index, length, name, value, source) {
+	      var formats = void 0;
+
+	      var _overload3 = overload(index, length, name, value, source);
+
+	      var _overload4 = _slicedToArray(_overload3, 4);
+
+	      index = _overload4[0];
+	      length = _overload4[1];
+	      formats = _overload4[2];
+	      source = _overload4[3];
+
+	      var range = this.getSelection();
+	      var change = this.editor.formatLine(index, length, formats, source);
+	      this.selection.setRange(range, true, _emitter2.default.sources.SILENT);
+	      this.selection.scrollIntoView();
+	      return change;
+	    }
+	  }, {
+	    key: 'formatText',
+	    value: function formatText(index, length, name, value, source) {
+	      var formats = void 0;
+
+	      var _overload5 = overload(index, length, name, value, source);
+
+	      var _overload6 = _slicedToArray(_overload5, 4);
+
+	      index = _overload6[0];
+	      length = _overload6[1];
+	      formats = _overload6[2];
+	      source = _overload6[3];
+
+	      var range = this.getSelection();
+	      var change = this.editor.formatText(index, length, formats, source);
+	      this.selection.setRange(range, true, _emitter2.default.sources.SILENT);
+	      this.selection.scrollIntoView();
+	      return change;
+	    }
+	  }, {
+	    key: 'getBounds',
+	    value: function getBounds(index) {
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+
+	      if (typeof index === 'number') {
+	        return this.selection.getBounds(index, length);
+	      } else {
+	        return this.selection.getBounds(index.index, index.length);
+	      }
+	    }
+	  }, {
+	    key: 'getContents',
+	    value: function getContents() {
+	      var index = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? this.getLength() - index : arguments[1];
+
+	      var _overload7 = overload(index, length);
+
+	      var _overload8 = _slicedToArray(_overload7, 2);
+
+	      index = _overload8[0];
+	      length = _overload8[1];
+
+	      return this.editor.getContents(index, length);
+	    }
+	  }, {
+	    key: 'getFormat',
+	    value: function getFormat() {
+	      var index = arguments.length <= 0 || arguments[0] === undefined ? this.getSelection() : arguments[0];
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+
+	      if (typeof index === 'number') {
+	        return this.editor.getFormat(index, length);
+	      } else {
+	        return this.editor.getFormat(index.index, index.length);
+	      }
+	    }
+	  }, {
+	    key: 'getLength',
+	    value: function getLength() {
+	      return this.scroll.length();
+	    }
+	  }, {
+	    key: 'getModule',
+	    value: function getModule(name) {
+	      return this.theme.modules[name];
+	    }
+	  }, {
+	    key: 'getSelection',
+	    value: function getSelection() {
+	      var focus = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
+
+	      if (focus) this.focus();
+	      this.update(); // Make sure we access getRange with editor in consistent state
+	      return this.selection.getRange()[0];
+	    }
+	  }, {
+	    key: 'getText',
+	    value: function getText() {
+	      var index = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? this.getLength() - index : arguments[1];
+
+	      var _overload9 = overload(index, length);
+
+	      var _overload10 = _slicedToArray(_overload9, 2);
+
+	      index = _overload10[0];
+	      length = _overload10[1];
+
+	      return this.editor.getText(index, length);
+	    }
+	  }, {
+	    key: 'hasFocus',
+	    value: function hasFocus() {
+	      return this.selection.hasFocus();
+	    }
+	  }, {
+	    key: 'insertEmbed',
+	    value: function insertEmbed(index, embed, value) {
+	      var source = arguments.length <= 3 || arguments[3] === undefined ? Quill.sources.API : arguments[3];
+
+	      var range = this.getSelection();
+	      var change = this.editor.insertEmbed(index, embed, value, source);
+	      range = shiftRange(range, change, source);
+	      this.setSelection(range, _emitter2.default.sources.SILENT);
+	      return change;
+	    }
+	  }, {
+	    key: 'insertText',
+	    value: function insertText(index, text, name, value, source) {
+	      var formats = void 0,
+	          range = this.getSelection();
+
+	      var _overload11 = overload(index, 0, name, value, source);
+
+	      var _overload12 = _slicedToArray(_overload11, 4);
+
+	      index = _overload12[0];
+	      formats = _overload12[2];
+	      source = _overload12[3];
+
+	      var change = this.editor.insertText(index, text, formats, source);
+	      range = shiftRange(range, index, text.length, source);
+	      this.setSelection(range, _emitter2.default.sources.SILENT);
+	      return change;
+	    }
+	  }, {
+	    key: 'off',
+	    value: function off() {
+	      return this.emitter.off.apply(this.emitter, arguments);
+	    }
+	  }, {
+	    key: 'on',
+	    value: function on() {
+	      return this.emitter.on.apply(this.emitter, arguments);
+	    }
+	  }, {
+	    key: 'once',
+	    value: function once() {
+	      return this.emitter.once.apply(this.emitter, arguments);
+	    }
+	  }, {
+	    key: 'pasteHTML',
+	    value: function pasteHTML(index, html) {
+	      var source = arguments.length <= 2 || arguments[2] === undefined ? _emitter2.default.sources.API : arguments[2];
+
+	      if (typeof index === 'string') {
+	        return this.setContents(this.clipboard.convert(index), html);
+	      } else {
+	        var paste = this.clipboard.convert(html);
+	        return this.updateContents(new _delta2.default().retain(index).concat(paste), source);
+	      }
+	    }
+	  }, {
+	    key: 'removeFormat',
+	    value: function removeFormat(index, length, source) {
+	      var range = this.getSelection();
+
+	      var _overload13 = overload(index, length, source);
+
+	      var _overload14 = _slicedToArray(_overload13, 4);
+
+	      index = _overload14[0];
+	      length = _overload14[1];
+	      source = _overload14[3];
+
+	      var change = this.editor.removeFormat(index, length, source);
+	      range = shiftRange(range, change, source);
+	      this.setSelection(range, _emitter2.default.sources.SILENT);
+	      return change;
+	    }
+	  }, {
+	    key: 'setContents',
+	    value: function setContents(delta) {
+	      var source = arguments.length <= 1 || arguments[1] === undefined ? _emitter2.default.sources.API : arguments[1];
+
+	      delta = new _delta2.default(delta).slice();
+	      var lastOp = delta.ops[delta.ops.length - 1];
+	      // Quill contents must always end with newline
+	      if (lastOp == null || lastOp.insert[lastOp.insert.length - 1] !== '\n') {
+	        delta.insert('\n');
+	      }
+	      delta.delete(this.getLength());
+	      return this.editor.applyDelta(delta, source);
+	    }
+	  }, {
+	    key: 'setSelection',
+	    value: function setSelection(index, length, source) {
+	      if (index == null) {
+	        this.selection.setRange(null, length || Quill.sources.API);
+	      } else {
+	        var _overload15 = overload(index, length, source);
+
+	        var _overload16 = _slicedToArray(_overload15, 4);
+
+	        index = _overload16[0];
+	        length = _overload16[1];
+	        source = _overload16[3];
+
+	        this.selection.setRange(new _selection.Range(index, length), source);
+	      }
+	      this.selection.scrollIntoView();
+	    }
+	  }, {
+	    key: 'setText',
+	    value: function setText(text) {
+	      var source = arguments.length <= 1 || arguments[1] === undefined ? _emitter2.default.sources.API : arguments[1];
+
+	      var delta = new _delta2.default().insert(text);
+	      return this.setContents(delta, source);
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update() {
+	      var source = arguments.length <= 0 || arguments[0] === undefined ? _emitter2.default.sources.USER : arguments[0];
+
+	      var change = this.scroll.update(source); // Will update selection before selection.update() does if text changes
+	      this.selection.update(source);
+	      return change;
+	    }
+	  }, {
+	    key: 'updateContents',
+	    value: function updateContents(delta) {
+	      var source = arguments.length <= 1 || arguments[1] === undefined ? _emitter2.default.sources.API : arguments[1];
+
+	      var range = this.getSelection();
+	      if (Array.isArray(delta)) {
+	        delta = new _delta2.default(delta.slice());
+	      }
+	      var change = this.editor.applyDelta(delta, source);
+	      if (range != null) {
+	        range = shiftRange(range, change, source);
+	        this.setSelection(range, _emitter2.default.sources.SILENT);
+	      }
+	      return change;
+	    }
+	  }]);
+
+	  return Quill;
+	}();
+
+	Quill.DEFAULTS = {
+	  bounds: document.body,
+	  formats: null,
+	  modules: {},
+	  placeholder: '',
+	  readOnly: false,
+	  theme: 'default'
+	};
+	Quill.events = _emitter2.default.events;
+	Quill.sources = _emitter2.default.sources;
+	Quill.version =  false ? 'dev' : ("1.0.3");
+
+	Quill.imports = {
+	  'delta': _delta2.default,
+	  'parchment': _parchment2.default,
+	  'core/module': _module2.default,
+	  'core/theme': _theme2.default
+	};
+
+	function expandConfig(container, userConfig) {
+	  userConfig = (0, _extend2.default)(true, {
+	    container: container,
+	    modules: {
+	      clipboard: true,
+	      keyboard: true,
+	      history: true
+	    }
+	  }, userConfig);
+	  if (userConfig.theme == null || userConfig.theme === Quill.DEFAULTS.theme) {
+	    userConfig.theme = _theme2.default;
+	  } else {
+	    userConfig.theme = Quill.import('themes/' + userConfig.theme);
+	    if (userConfig.theme == null) {
+	      throw new Error('Invalid theme ' + userConfig.theme + '. Did you register it?');
+	    }
+	  }
+	  var themeConfig = (0, _extend2.default)(true, {}, userConfig.theme.DEFAULTS);
+	  [themeConfig, userConfig].forEach(function (config) {
+	    config.modules = config.modules || {};
+	    Object.keys(config.modules).forEach(function (module) {
+	      if (config.modules[module] === true) {
+	        config.modules[module] = {};
+	      }
+	    });
+	  });
+	  var moduleNames = Object.keys(themeConfig.modules).concat(Object.keys(userConfig.modules));
+	  var moduleConfig = moduleNames.reduce(function (config, name) {
+	    var moduleClass = Quill.import('modules/' + name);
+	    if (moduleClass == null) {
+	      debug.error('Cannot load ' + name + ' module. Are you sure you registered it?');
+	    } else {
+	      config[name] = moduleClass.DEFAULTS || {};
+	    }
+	    return config;
+	  }, {});
+	  // Special case toolbar shorthand
+	  if (userConfig.modules != null && userConfig.modules.toolbar != null && userConfig.modules.toolbar.constructor !== Object) {
+	    userConfig.modules.toolbar = {
+	      container: userConfig.modules.toolbar
+	    };
+	  }
+	  userConfig = (0, _extend2.default)(true, {}, Quill.DEFAULTS, { modules: moduleConfig }, themeConfig, userConfig);
+	  ['bounds', 'container'].forEach(function (key) {
+	    if (typeof userConfig[key] === 'string') {
+	      userConfig[key] = document.querySelector(userConfig[key]);
+	    }
+	  });
+	  return userConfig;
+	}
+
+	function overload(index, length, name, value, source) {
+	  var formats = {};
+	  if (typeof index.index === 'number' && typeof index.length === 'number') {
+	    // Allow for throwaway end (used by insertText/insertEmbed)
+	    if (typeof length !== 'number') {
+	      source = value, value = name, name = length, length = index.length, index = index.index;
+	    } else {
+	      length = index.length, index = index.index;
+	    }
+	  } else if (typeof length !== 'number') {
+	    source = value, value = name, name = length, length = 0;
+	  }
+	  // Handle format being object, two format name/value strings or excluded
+	  if ((typeof name === 'undefined' ? 'undefined' : _typeof(name)) === 'object') {
+	    formats = name;
+	    source = value;
+	  } else if (typeof name === 'string') {
+	    if (value != null) {
+	      formats[name] = value;
+	    } else {
+	      source = name;
+	    }
+	  }
+	  // Handle optional source
+	  source = source || _emitter2.default.sources.API;
+	  return [index, length, formats, source];
+	}
+
+	function shiftRange(range, index, length, source) {
+	  if (range == null) return null;
+	  var start = void 0,
+	      end = void 0;
+	  if (index instanceof _delta2.default) {
+	    var _map = [range.index, range.index + range.length].map(function (pos) {
+	      return index.transformPosition(pos, source === _emitter2.default.sources.USER);
+	    });
+
+	    var _map2 = _slicedToArray(_map, 2);
+
+	    start = _map2[0];
+	    end = _map2[1];
+	  } else {
+	    var _map3 = [range.index, range.index + range.length].map(function (pos) {
+	      if (pos < index || pos === index && source !== _emitter2.default.sources.USER) return pos;
+	      if (length >= 0) {
+	        return pos + length;
+	      } else {
+	        return Math.max(index, pos + length);
+	      }
+	    });
+
+	    var _map4 = _slicedToArray(_map3, 2);
+
+	    start = _map4[0];
+	    end = _map4[1];
+	  }
+	  return new _selection.Range(start, end - start);
+	}
+
+	exports.expandConfig = expandConfig;
+	exports.overload = overload;
+	exports.default = Quill;
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var elem = document.createElement('div');
+	elem.classList.toggle('test-class', false);
+	if (elem.classList.contains('test-class')) {
+	  (function () {
+	    var _toggle = DOMTokenList.prototype.toggle;
+	    DOMTokenList.prototype.toggle = function (token, force) {
+	      if (arguments.length > 1 && !this.contains(token) === !force) {
+	        return force;
+	      } else {
+	        return _toggle.call(this, token);
+	      }
+	    };
+	  })();
+	}
+
+	if (!String.prototype.startsWith) {
+	  String.prototype.startsWith = function (searchString, position) {
+	    position = position || 0;
+	    return this.substr(position, searchString.length) === searchString;
+	  };
+	}
+
+	if (!String.prototype.endsWith) {
+	  String.prototype.endsWith = function (searchString, position) {
+	    var subjectString = this.toString();
+	    if (typeof position !== 'number' || !isFinite(position) || Math.floor(position) !== position || position > subjectString.length) {
+	      position = subjectString.length;
+	    }
+	    position -= searchString.length;
+	    var lastIndex = subjectString.indexOf(searchString, position);
+	    return lastIndex !== -1 && lastIndex === position;
+	  };
+	}
+
+	if (!Array.prototype.find) {
+	  Object.defineProperty(Array.prototype, "find", {
+	    value: function value(predicate) {
+	      if (this === null) {
+	        throw new TypeError('Array.prototype.find called on null or undefined');
+	      }
+	      if (typeof predicate !== 'function') {
+	        throw new TypeError('predicate must be a function');
+	      }
+	      var list = Object(this);
+	      var length = list.length >>> 0;
+	      var thisArg = arguments[1];
+	      var value;
+
+	      for (var i = 0; i < length; i++) {
+	        value = list[i];
+	        if (predicate.call(thisArg, value, i, list)) {
+	          return value;
+	        }
+	      }
+	      return undefined;
+	    }
+	  });
+	}
+
+	// Disable resizing in Firefox
+	document.addEventListener("DOMContentLoaded", function () {
+	  document.execCommand("enableObjectResizing", false, false);
+	});
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var diff = __webpack_require__(21);
+	var equal = __webpack_require__(22);
+	var extend = __webpack_require__(25);
+	var op = __webpack_require__(26);
+
+
+	var NULL_CHARACTER = String.fromCharCode(0);  // Placeholder char for embed in diff()
+
+
+	var Delta = function (ops) {
+	  // Assume we are given a well formed ops
+	  if (Array.isArray(ops)) {
+	    this.ops = ops;
+	  } else if (ops != null && Array.isArray(ops.ops)) {
+	    this.ops = ops.ops;
+	  } else {
+	    this.ops = [];
+	  }
+	};
+
+
+	Delta.prototype.insert = function (text, attributes) {
+	  var newOp = {};
+	  if (text.length === 0) return this;
+	  newOp.insert = text;
+	  if (typeof attributes === 'object' && Object.keys(attributes).length > 0) newOp.attributes = attributes;
+	  return this.push(newOp);
+	};
+
+	Delta.prototype['delete'] = function (length) {
+	  if (length <= 0) return this;
+	  return this.push({ 'delete': length });
+	};
+
+	Delta.prototype.retain = function (length, attributes) {
+	  if (length <= 0) return this;
+	  var newOp = { retain: length };
+	  if (typeof attributes === 'object' && Object.keys(attributes).length > 0) newOp.attributes = attributes;
+	  return this.push(newOp);
+	};
+
+	Delta.prototype.push = function (newOp) {
+	  var index = this.ops.length;
+	  var lastOp = this.ops[index - 1];
+	  newOp = extend(true, {}, newOp);
+	  if (typeof lastOp === 'object') {
+	    if (typeof newOp['delete'] === 'number' && typeof lastOp['delete'] === 'number') {
+	      this.ops[index - 1] = { 'delete': lastOp['delete'] + newOp['delete'] };
+	      return this;
+	    }
+	    // Since it does not matter if we insert before or after deleting at the same index,
+	    // always prefer to insert first
+	    if (typeof lastOp['delete'] === 'number' && newOp.insert != null) {
+	      index -= 1;
+	      lastOp = this.ops[index - 1];
+	      if (typeof lastOp !== 'object') {
+	        this.ops.unshift(newOp);
+	        return this;
+	      }
+	    }
+	    if (equal(newOp.attributes, lastOp.attributes)) {
+	      if (typeof newOp.insert === 'string' && typeof lastOp.insert === 'string') {
+	        this.ops[index - 1] = { insert: lastOp.insert + newOp.insert };
+	        if (typeof newOp.attributes === 'object') this.ops[index - 1].attributes = newOp.attributes
+	        return this;
+	      } else if (typeof newOp.retain === 'number' && typeof lastOp.retain === 'number') {
+	        this.ops[index - 1] = { retain: lastOp.retain + newOp.retain };
+	        if (typeof newOp.attributes === 'object') this.ops[index - 1].attributes = newOp.attributes
+	        return this;
+	      }
+	    }
+	  }
+	  if (index === this.ops.length) {
+	    this.ops.push(newOp);
+	  } else {
+	    this.ops.splice(index, 0, newOp);
+	  }
+	  return this;
+	};
+
+	Delta.prototype.chop = function () {
+	  var lastOp = this.ops[this.ops.length - 1];
+	  if (lastOp && lastOp.retain && !lastOp.attributes) {
+	    this.ops.pop();
+	  }
+	  return this;
+	};
+
+	Delta.prototype.length = function () {
+	  return this.ops.reduce(function (length, elem) {
+	    return length + op.length(elem);
+	  }, 0);
+	};
+
+	Delta.prototype.slice = function (start, end) {
+	  start = start || 0;
+	  if (typeof end !== 'number') end = Infinity;
+	  var ops = [];
+	  var iter = op.iterator(this.ops);
+	  var index = 0;
+	  while (index < end && iter.hasNext()) {
+	    var nextOp;
+	    if (index < start) {
+	      nextOp = iter.next(start - index);
+	    } else {
+	      nextOp = iter.next(end - index);
+	      ops.push(nextOp);
+	    }
+	    index += op.length(nextOp);
+	  }
+	  return new Delta(ops);
+	};
+
+
+	Delta.prototype.compose = function (other) {
+	  var thisIter = op.iterator(this.ops);
+	  var otherIter = op.iterator(other.ops);
+	  var delta = new Delta();
+	  while (thisIter.hasNext() || otherIter.hasNext()) {
+	    if (otherIter.peekType() === 'insert') {
+	      delta.push(otherIter.next());
+	    } else if (thisIter.peekType() === 'delete') {
+	      delta.push(thisIter.next());
+	    } else {
+	      var length = Math.min(thisIter.peekLength(), otherIter.peekLength());
+	      var thisOp = thisIter.next(length);
+	      var otherOp = otherIter.next(length);
+	      if (typeof otherOp.retain === 'number') {
+	        var newOp = {};
+	        if (typeof thisOp.retain === 'number') {
+	          newOp.retain = length;
+	        } else {
+	          newOp.insert = thisOp.insert;
+	        }
+	        // Preserve null when composing with a retain, otherwise remove it for inserts
+	        var attributes = op.attributes.compose(thisOp.attributes, otherOp.attributes, typeof thisOp.retain === 'number');
+	        if (attributes) newOp.attributes = attributes;
+	        delta.push(newOp);
+	      // Other op should be delete, we could be an insert or retain
+	      // Insert + delete cancels out
+	      } else if (typeof otherOp['delete'] === 'number' && typeof thisOp.retain === 'number') {
+	        delta.push(otherOp);
+	      }
+	    }
+	  }
+	  return delta.chop();
+	};
+
+	Delta.prototype.concat = function (other) {
+	  var delta = new Delta(this.ops.slice());
+	  if (other.ops.length > 0) {
+	    delta.push(other.ops[0]);
+	    delta.ops = delta.ops.concat(other.ops.slice(1));
+	  }
+	  return delta;
+	};
+
+	Delta.prototype.diff = function (other) {
+	  var delta = new Delta();
+	  if (this.ops === other.ops) {
+	    return delta;
+	  }
+	  var strings = [this.ops, other.ops].map(function (ops) {
+	    return ops.map(function (op) {
+	      if (op.insert != null) {
+	        return typeof op.insert === 'string' ? op.insert : NULL_CHARACTER;
+	      }
+	      var prep = (ops === other.ops) ? 'on' : 'with';
+	      throw new Error('diff() called ' + prep + ' non-document');
+	    }).join('');
+	  });
+	  var diffResult = diff(strings[0], strings[1]);
+	  var thisIter = op.iterator(this.ops);
+	  var otherIter = op.iterator(other.ops);
+	  diffResult.forEach(function (component) {
+	    var length = component[1].length;
+	    while (length > 0) {
+	      var opLength = 0;
+	      switch (component[0]) {
+	        case diff.INSERT:
+	          opLength = Math.min(otherIter.peekLength(), length);
+	          delta.push(otherIter.next(opLength));
+	          break;
+	        case diff.DELETE:
+	          opLength = Math.min(length, thisIter.peekLength());
+	          thisIter.next(opLength);
+	          delta['delete'](opLength);
+	          break;
+	        case diff.EQUAL:
+	          opLength = Math.min(thisIter.peekLength(), otherIter.peekLength(), length);
+	          var thisOp = thisIter.next(opLength);
+	          var otherOp = otherIter.next(opLength);
+	          if (equal(thisOp.insert, otherOp.insert)) {
+	            delta.retain(opLength, op.attributes.diff(thisOp.attributes, otherOp.attributes));
+	          } else {
+	            delta.push(otherOp)['delete'](opLength);
+	          }
+	          break;
+	      }
+	      length -= opLength;
+	    }
+	  });
+	  return delta.chop();
+	};
+
+	Delta.prototype.transform = function (other, priority) {
+	  priority = !!priority;
+	  if (typeof other === 'number') {
+	    return this.transformPosition(other, priority);
+	  }
+	  var thisIter = op.iterator(this.ops);
+	  var otherIter = op.iterator(other.ops);
+	  var delta = new Delta();
+	  while (thisIter.hasNext() || otherIter.hasNext()) {
+	    if (thisIter.peekType() === 'insert' && (priority || otherIter.peekType() !== 'insert')) {
+	      delta.retain(op.length(thisIter.next()));
+	    } else if (otherIter.peekType() === 'insert') {
+	      delta.push(otherIter.next());
+	    } else {
+	      var length = Math.min(thisIter.peekLength(), otherIter.peekLength());
+	      var thisOp = thisIter.next(length);
+	      var otherOp = otherIter.next(length);
+	      if (thisOp['delete']) {
+	        // Our delete either makes their delete redundant or removes their retain
+	        continue;
+	      } else if (otherOp['delete']) {
+	        delta.push(otherOp);
+	      } else {
+	        // We retain either their retain or insert
+	        delta.retain(length, op.attributes.transform(thisOp.attributes, otherOp.attributes, priority));
+	      }
+	    }
+	  }
+	  return delta.chop();
+	};
+
+	Delta.prototype.transformPosition = function (index, priority) {
+	  priority = !!priority;
+	  var thisIter = op.iterator(this.ops);
+	  var offset = 0;
+	  while (thisIter.hasNext() && offset <= index) {
+	    var length = thisIter.peekLength();
+	    var nextType = thisIter.peekType();
+	    thisIter.next();
+	    if (nextType === 'delete') {
+	      index -= Math.min(length, index - offset);
+	      continue;
+	    } else if (nextType === 'insert' && (offset < index || !priority)) {
+	      index += length;
+	    }
+	    offset += length;
+	  }
+	  return index;
+	};
+
+
+	module.exports = Delta;
+
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	/**
+	 * This library modifies the diff-patch-match library by Neil Fraser
+	 * by removing the patch and match functionality and certain advanced
+	 * options in the diff function. The original license is as follows:
+	 *
+	 * ===
+	 *
+	 * Diff Match and Patch
+	 *
+	 * Copyright 2006 Google Inc.
+	 * http://code.google.com/p/google-diff-match-patch/
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *   http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+
+
+	/**
+	 * The data structure representing a diff is an array of tuples:
+	 * [[DIFF_DELETE, 'Hello'], [DIFF_INSERT, 'Goodbye'], [DIFF_EQUAL, ' world.']]
+	 * which means: delete 'Hello', add 'Goodbye' and keep ' world.'
+	 */
+	var DIFF_DELETE = -1;
+	var DIFF_INSERT = 1;
+	var DIFF_EQUAL = 0;
+
+
+	/**
+	 * Find the differences between two texts.  Simplifies the problem by stripping
+	 * any common prefix or suffix off the texts before diffing.
+	 * @param {string} text1 Old string to be diffed.
+	 * @param {string} text2 New string to be diffed.
+	 * @return {Array} Array of diff tuples.
+	 */
+	function diff_main(text1, text2) {
+	  // Check for equality (speedup).
+	  if (text1 == text2) {
+	    if (text1) {
+	      return [[DIFF_EQUAL, text1]];
+	    }
+	    return [];
+	  }
+
+	  // Trim off common prefix (speedup).
+	  var commonlength = diff_commonPrefix(text1, text2);
+	  var commonprefix = text1.substring(0, commonlength);
+	  text1 = text1.substring(commonlength);
+	  text2 = text2.substring(commonlength);
+
+	  // Trim off common suffix (speedup).
+	  commonlength = diff_commonSuffix(text1, text2);
+	  var commonsuffix = text1.substring(text1.length - commonlength);
+	  text1 = text1.substring(0, text1.length - commonlength);
+	  text2 = text2.substring(0, text2.length - commonlength);
+
+	  // Compute the diff on the middle block.
+	  var diffs = diff_compute_(text1, text2);
+
+	  // Restore the prefix and suffix.
+	  if (commonprefix) {
+	    diffs.unshift([DIFF_EQUAL, commonprefix]);
+	  }
+	  if (commonsuffix) {
+	    diffs.push([DIFF_EQUAL, commonsuffix]);
+	  }
+	  diff_cleanupMerge(diffs);
+	  return diffs;
+	};
+
+
+	/**
+	 * Find the differences between two texts.  Assumes that the texts do not
+	 * have any common prefix or suffix.
+	 * @param {string} text1 Old string to be diffed.
+	 * @param {string} text2 New string to be diffed.
+	 * @return {Array} Array of diff tuples.
+	 */
+	function diff_compute_(text1, text2) {
+	  var diffs;
+
+	  if (!text1) {
+	    // Just add some text (speedup).
+	    return [[DIFF_INSERT, text2]];
+	  }
+
+	  if (!text2) {
+	    // Just delete some text (speedup).
+	    return [[DIFF_DELETE, text1]];
+	  }
+
+	  var longtext = text1.length > text2.length ? text1 : text2;
+	  var shorttext = text1.length > text2.length ? text2 : text1;
+	  var i = longtext.indexOf(shorttext);
+	  if (i != -1) {
+	    // Shorter text is inside the longer text (speedup).
+	    diffs = [[DIFF_INSERT, longtext.substring(0, i)],
+	             [DIFF_EQUAL, shorttext],
+	             [DIFF_INSERT, longtext.substring(i + shorttext.length)]];
+	    // Swap insertions for deletions if diff is reversed.
+	    if (text1.length > text2.length) {
+	      diffs[0][0] = diffs[2][0] = DIFF_DELETE;
+	    }
+	    return diffs;
+	  }
+
+	  if (shorttext.length == 1) {
+	    // Single character string.
+	    // After the previous speedup, the character can't be an equality.
+	    return [[DIFF_DELETE, text1], [DIFF_INSERT, text2]];
+	  }
+
+	  // Check to see if the problem can be split in two.
+	  var hm = diff_halfMatch_(text1, text2);
+	  if (hm) {
+	    // A half-match was found, sort out the return data.
+	    var text1_a = hm[0];
+	    var text1_b = hm[1];
+	    var text2_a = hm[2];
+	    var text2_b = hm[3];
+	    var mid_common = hm[4];
+	    // Send both pairs off for separate processing.
+	    var diffs_a = diff_main(text1_a, text2_a);
+	    var diffs_b = diff_main(text1_b, text2_b);
+	    // Merge the results.
+	    return diffs_a.concat([[DIFF_EQUAL, mid_common]], diffs_b);
+	  }
+
+	  return diff_bisect_(text1, text2);
+	};
+
+
+	/**
+	 * Find the 'middle snake' of a diff, split the problem in two
+	 * and return the recursively constructed diff.
+	 * See Myers 1986 paper: An O(ND) Difference Algorithm and Its Variations.
+	 * @param {string} text1 Old string to be diffed.
+	 * @param {string} text2 New string to be diffed.
+	 * @return {Array} Array of diff tuples.
+	 * @private
+	 */
+	function diff_bisect_(text1, text2) {
+	  // Cache the text lengths to prevent multiple calls.
+	  var text1_length = text1.length;
+	  var text2_length = text2.length;
+	  var max_d = Math.ceil((text1_length + text2_length) / 2);
+	  var v_offset = max_d;
+	  var v_length = 2 * max_d;
+	  var v1 = new Array(v_length);
+	  var v2 = new Array(v_length);
+	  // Setting all elements to -1 is faster in Chrome & Firefox than mixing
+	  // integers and undefined.
+	  for (var x = 0; x < v_length; x++) {
+	    v1[x] = -1;
+	    v2[x] = -1;
+	  }
+	  v1[v_offset + 1] = 0;
+	  v2[v_offset + 1] = 0;
+	  var delta = text1_length - text2_length;
+	  // If the total number of characters is odd, then the front path will collide
+	  // with the reverse path.
+	  var front = (delta % 2 != 0);
+	  // Offsets for start and end of k loop.
+	  // Prevents mapping of space beyond the grid.
+	  var k1start = 0;
+	  var k1end = 0;
+	  var k2start = 0;
+	  var k2end = 0;
+	  for (var d = 0; d < max_d; d++) {
+	    // Walk the front path one step.
+	    for (var k1 = -d + k1start; k1 <= d - k1end; k1 += 2) {
+	      var k1_offset = v_offset + k1;
+	      var x1;
+	      if (k1 == -d || (k1 != d && v1[k1_offset - 1] < v1[k1_offset + 1])) {
+	        x1 = v1[k1_offset + 1];
+	      } else {
+	        x1 = v1[k1_offset - 1] + 1;
+	      }
+	      var y1 = x1 - k1;
+	      while (x1 < text1_length && y1 < text2_length &&
+	             text1.charAt(x1) == text2.charAt(y1)) {
+	        x1++;
+	        y1++;
+	      }
+	      v1[k1_offset] = x1;
+	      if (x1 > text1_length) {
+	        // Ran off the right of the graph.
+	        k1end += 2;
+	      } else if (y1 > text2_length) {
+	        // Ran off the bottom of the graph.
+	        k1start += 2;
+	      } else if (front) {
+	        var k2_offset = v_offset + delta - k1;
+	        if (k2_offset >= 0 && k2_offset < v_length && v2[k2_offset] != -1) {
+	          // Mirror x2 onto top-left coordinate system.
+	          var x2 = text1_length - v2[k2_offset];
+	          if (x1 >= x2) {
+	            // Overlap detected.
+	            return diff_bisectSplit_(text1, text2, x1, y1);
+	          }
+	        }
+	      }
+	    }
+
+	    // Walk the reverse path one step.
+	    for (var k2 = -d + k2start; k2 <= d - k2end; k2 += 2) {
+	      var k2_offset = v_offset + k2;
+	      var x2;
+	      if (k2 == -d || (k2 != d && v2[k2_offset - 1] < v2[k2_offset + 1])) {
+	        x2 = v2[k2_offset + 1];
+	      } else {
+	        x2 = v2[k2_offset - 1] + 1;
+	      }
+	      var y2 = x2 - k2;
+	      while (x2 < text1_length && y2 < text2_length &&
+	             text1.charAt(text1_length - x2 - 1) ==
+	             text2.charAt(text2_length - y2 - 1)) {
+	        x2++;
+	        y2++;
+	      }
+	      v2[k2_offset] = x2;
+	      if (x2 > text1_length) {
+	        // Ran off the left of the graph.
+	        k2end += 2;
+	      } else if (y2 > text2_length) {
+	        // Ran off the top of the graph.
+	        k2start += 2;
+	      } else if (!front) {
+	        var k1_offset = v_offset + delta - k2;
+	        if (k1_offset >= 0 && k1_offset < v_length && v1[k1_offset] != -1) {
+	          var x1 = v1[k1_offset];
+	          var y1 = v_offset + x1 - k1_offset;
+	          // Mirror x2 onto top-left coordinate system.
+	          x2 = text1_length - x2;
+	          if (x1 >= x2) {
+	            // Overlap detected.
+	            return diff_bisectSplit_(text1, text2, x1, y1);
+	          }
+	        }
+	      }
+	    }
+	  }
+	  // Diff took too long and hit the deadline or
+	  // number of diffs equals number of characters, no commonality at all.
+	  return [[DIFF_DELETE, text1], [DIFF_INSERT, text2]];
+	};
+
+
+	/**
+	 * Given the location of the 'middle snake', split the diff in two parts
+	 * and recurse.
+	 * @param {string} text1 Old string to be diffed.
+	 * @param {string} text2 New string to be diffed.
+	 * @param {number} x Index of split point in text1.
+	 * @param {number} y Index of split point in text2.
+	 * @return {Array} Array of diff tuples.
+	 */
+	function diff_bisectSplit_(text1, text2, x, y) {
+	  var text1a = text1.substring(0, x);
+	  var text2a = text2.substring(0, y);
+	  var text1b = text1.substring(x);
+	  var text2b = text2.substring(y);
+
+	  // Compute both diffs serially.
+	  var diffs = diff_main(text1a, text2a);
+	  var diffsb = diff_main(text1b, text2b);
+
+	  return diffs.concat(diffsb);
+	};
+
+
+	/**
+	 * Determine the common prefix of two strings.
+	 * @param {string} text1 First string.
+	 * @param {string} text2 Second string.
+	 * @return {number} The number of characters common to the start of each
+	 *     string.
+	 */
+	function diff_commonPrefix(text1, text2) {
+	  // Quick check for common null cases.
+	  if (!text1 || !text2 || text1.charAt(0) != text2.charAt(0)) {
+	    return 0;
+	  }
+	  // Binary search.
+	  // Performance analysis: http://neil.fraser.name/news/2007/10/09/
+	  var pointermin = 0;
+	  var pointermax = Math.min(text1.length, text2.length);
+	  var pointermid = pointermax;
+	  var pointerstart = 0;
+	  while (pointermin < pointermid) {
+	    if (text1.substring(pointerstart, pointermid) ==
+	        text2.substring(pointerstart, pointermid)) {
+	      pointermin = pointermid;
+	      pointerstart = pointermin;
+	    } else {
+	      pointermax = pointermid;
+	    }
+	    pointermid = Math.floor((pointermax - pointermin) / 2 + pointermin);
+	  }
+	  return pointermid;
+	};
+
+
+	/**
+	 * Determine the common suffix of two strings.
+	 * @param {string} text1 First string.
+	 * @param {string} text2 Second string.
+	 * @return {number} The number of characters common to the end of each string.
+	 */
+	function diff_commonSuffix(text1, text2) {
+	  // Quick check for common null cases.
+	  if (!text1 || !text2 ||
+	      text1.charAt(text1.length - 1) != text2.charAt(text2.length - 1)) {
+	    return 0;
+	  }
+	  // Binary search.
+	  // Performance analysis: http://neil.fraser.name/news/2007/10/09/
+	  var pointermin = 0;
+	  var pointermax = Math.min(text1.length, text2.length);
+	  var pointermid = pointermax;
+	  var pointerend = 0;
+	  while (pointermin < pointermid) {
+	    if (text1.substring(text1.length - pointermid, text1.length - pointerend) ==
+	        text2.substring(text2.length - pointermid, text2.length - pointerend)) {
+	      pointermin = pointermid;
+	      pointerend = pointermin;
+	    } else {
+	      pointermax = pointermid;
+	    }
+	    pointermid = Math.floor((pointermax - pointermin) / 2 + pointermin);
+	  }
+	  return pointermid;
+	};
+
+
+	/**
+	 * Do the two texts share a substring which is at least half the length of the
+	 * longer text?
+	 * This speedup can produce non-minimal diffs.
+	 * @param {string} text1 First string.
+	 * @param {string} text2 Second string.
+	 * @return {Array.<string>} Five element Array, containing the prefix of
+	 *     text1, the suffix of text1, the prefix of text2, the suffix of
+	 *     text2 and the common middle.  Or null if there was no match.
+	 */
+	function diff_halfMatch_(text1, text2) {
+	  var longtext = text1.length > text2.length ? text1 : text2;
+	  var shorttext = text1.length > text2.length ? text2 : text1;
+	  if (longtext.length < 4 || shorttext.length * 2 < longtext.length) {
+	    return null;  // Pointless.
+	  }
+
+	  /**
+	   * Does a substring of shorttext exist within longtext such that the substring
+	   * is at least half the length of longtext?
+	   * Closure, but does not reference any external variables.
+	   * @param {string} longtext Longer string.
+	   * @param {string} shorttext Shorter string.
+	   * @param {number} i Start index of quarter length substring within longtext.
+	   * @return {Array.<string>} Five element Array, containing the prefix of
+	   *     longtext, the suffix of longtext, the prefix of shorttext, the suffix
+	   *     of shorttext and the common middle.  Or null if there was no match.
+	   * @private
+	   */
+	  function diff_halfMatchI_(longtext, shorttext, i) {
+	    // Start with a 1/4 length substring at position i as a seed.
+	    var seed = longtext.substring(i, i + Math.floor(longtext.length / 4));
+	    var j = -1;
+	    var best_common = '';
+	    var best_longtext_a, best_longtext_b, best_shorttext_a, best_shorttext_b;
+	    while ((j = shorttext.indexOf(seed, j + 1)) != -1) {
+	      var prefixLength = diff_commonPrefix(longtext.substring(i),
+	                                           shorttext.substring(j));
+	      var suffixLength = diff_commonSuffix(longtext.substring(0, i),
+	                                           shorttext.substring(0, j));
+	      if (best_common.length < suffixLength + prefixLength) {
+	        best_common = shorttext.substring(j - suffixLength, j) +
+	            shorttext.substring(j, j + prefixLength);
+	        best_longtext_a = longtext.substring(0, i - suffixLength);
+	        best_longtext_b = longtext.substring(i + prefixLength);
+	        best_shorttext_a = shorttext.substring(0, j - suffixLength);
+	        best_shorttext_b = shorttext.substring(j + prefixLength);
+	      }
+	    }
+	    if (best_common.length * 2 >= longtext.length) {
+	      return [best_longtext_a, best_longtext_b,
+	              best_shorttext_a, best_shorttext_b, best_common];
+	    } else {
+	      return null;
+	    }
+	  }
+
+	  // First check if the second quarter is the seed for a half-match.
+	  var hm1 = diff_halfMatchI_(longtext, shorttext,
+	                             Math.ceil(longtext.length / 4));
+	  // Check again based on the third quarter.
+	  var hm2 = diff_halfMatchI_(longtext, shorttext,
+	                             Math.ceil(longtext.length / 2));
+	  var hm;
+	  if (!hm1 && !hm2) {
+	    return null;
+	  } else if (!hm2) {
+	    hm = hm1;
+	  } else if (!hm1) {
+	    hm = hm2;
+	  } else {
+	    // Both matched.  Select the longest.
+	    hm = hm1[4].length > hm2[4].length ? hm1 : hm2;
+	  }
+
+	  // A half-match was found, sort out the return data.
+	  var text1_a, text1_b, text2_a, text2_b;
+	  if (text1.length > text2.length) {
+	    text1_a = hm[0];
+	    text1_b = hm[1];
+	    text2_a = hm[2];
+	    text2_b = hm[3];
+	  } else {
+	    text2_a = hm[0];
+	    text2_b = hm[1];
+	    text1_a = hm[2];
+	    text1_b = hm[3];
+	  }
+	  var mid_common = hm[4];
+	  return [text1_a, text1_b, text2_a, text2_b, mid_common];
+	};
+
+
+	/**
+	 * Reorder and merge like edit sections.  Merge equalities.
+	 * Any edit section can move as long as it doesn't cross an equality.
+	 * @param {Array} diffs Array of diff tuples.
+	 */
+	function diff_cleanupMerge(diffs) {
+	  diffs.push([DIFF_EQUAL, '']);  // Add a dummy entry at the end.
+	  var pointer = 0;
+	  var count_delete = 0;
+	  var count_insert = 0;
+	  var text_delete = '';
+	  var text_insert = '';
+	  var commonlength;
+	  while (pointer < diffs.length) {
+	    switch (diffs[pointer][0]) {
+	      case DIFF_INSERT:
+	        count_insert++;
+	        text_insert += diffs[pointer][1];
+	        pointer++;
+	        break;
+	      case DIFF_DELETE:
+	        count_delete++;
+	        text_delete += diffs[pointer][1];
+	        pointer++;
+	        break;
+	      case DIFF_EQUAL:
+	        // Upon reaching an equality, check for prior redundancies.
+	        if (count_delete + count_insert > 1) {
+	          if (count_delete !== 0 && count_insert !== 0) {
+	            // Factor out any common prefixies.
+	            commonlength = diff_commonPrefix(text_insert, text_delete);
+	            if (commonlength !== 0) {
+	              if ((pointer - count_delete - count_insert) > 0 &&
+	                  diffs[pointer - count_delete - count_insert - 1][0] ==
+	                  DIFF_EQUAL) {
+	                diffs[pointer - count_delete - count_insert - 1][1] +=
+	                    text_insert.substring(0, commonlength);
+	              } else {
+	                diffs.splice(0, 0, [DIFF_EQUAL,
+	                                    text_insert.substring(0, commonlength)]);
+	                pointer++;
+	              }
+	              text_insert = text_insert.substring(commonlength);
+	              text_delete = text_delete.substring(commonlength);
+	            }
+	            // Factor out any common suffixies.
+	            commonlength = diff_commonSuffix(text_insert, text_delete);
+	            if (commonlength !== 0) {
+	              diffs[pointer][1] = text_insert.substring(text_insert.length -
+	                  commonlength) + diffs[pointer][1];
+	              text_insert = text_insert.substring(0, text_insert.length -
+	                  commonlength);
+	              text_delete = text_delete.substring(0, text_delete.length -
+	                  commonlength);
+	            }
+	          }
+	          // Delete the offending records and add the merged ones.
+	          if (count_delete === 0) {
+	            diffs.splice(pointer - count_insert,
+	                count_delete + count_insert, [DIFF_INSERT, text_insert]);
+	          } else if (count_insert === 0) {
+	            diffs.splice(pointer - count_delete,
+	                count_delete + count_insert, [DIFF_DELETE, text_delete]);
+	          } else {
+	            diffs.splice(pointer - count_delete - count_insert,
+	                count_delete + count_insert, [DIFF_DELETE, text_delete],
+	                [DIFF_INSERT, text_insert]);
+	          }
+	          pointer = pointer - count_delete - count_insert +
+	                    (count_delete ? 1 : 0) + (count_insert ? 1 : 0) + 1;
+	        } else if (pointer !== 0 && diffs[pointer - 1][0] == DIFF_EQUAL) {
+	          // Merge this equality with the previous one.
+	          diffs[pointer - 1][1] += diffs[pointer][1];
+	          diffs.splice(pointer, 1);
+	        } else {
+	          pointer++;
+	        }
+	        count_insert = 0;
+	        count_delete = 0;
+	        text_delete = '';
+	        text_insert = '';
+	        break;
+	    }
+	  }
+	  if (diffs[diffs.length - 1][1] === '') {
+	    diffs.pop();  // Remove the dummy entry at the end.
+	  }
+
+	  // Second pass: look for single edits surrounded on both sides by equalities
+	  // which can be shifted sideways to eliminate an equality.
+	  // e.g: A<ins>BA</ins>C -> <ins>AB</ins>AC
+	  var changes = false;
+	  pointer = 1;
+	  // Intentionally ignore the first and last element (don't need checking).
+	  while (pointer < diffs.length - 1) {
+	    if (diffs[pointer - 1][0] == DIFF_EQUAL &&
+	        diffs[pointer + 1][0] == DIFF_EQUAL) {
+	      // This is a single edit surrounded by equalities.
+	      if (diffs[pointer][1].substring(diffs[pointer][1].length -
+	          diffs[pointer - 1][1].length) == diffs[pointer - 1][1]) {
+	        // Shift the edit over the previous equality.
+	        diffs[pointer][1] = diffs[pointer - 1][1] +
+	            diffs[pointer][1].substring(0, diffs[pointer][1].length -
+	                                        diffs[pointer - 1][1].length);
+	        diffs[pointer + 1][1] = diffs[pointer - 1][1] + diffs[pointer + 1][1];
+	        diffs.splice(pointer - 1, 1);
+	        changes = true;
+	      } else if (diffs[pointer][1].substring(0, diffs[pointer + 1][1].length) ==
+	          diffs[pointer + 1][1]) {
+	        // Shift the edit over the next equality.
+	        diffs[pointer - 1][1] += diffs[pointer + 1][1];
+	        diffs[pointer][1] =
+	            diffs[pointer][1].substring(diffs[pointer + 1][1].length) +
+	            diffs[pointer + 1][1];
+	        diffs.splice(pointer + 1, 1);
+	        changes = true;
+	      }
+	    }
+	    pointer++;
+	  }
+	  // If shifts were made, the diff needs reordering and another shift sweep.
+	  if (changes) {
+	    diff_cleanupMerge(diffs);
+	  }
+	};
+
+
+	var diff = diff_main;
+	diff.INSERT = DIFF_INSERT;
+	diff.DELETE = DIFF_DELETE;
+	diff.EQUAL = DIFF_EQUAL;
+
+
+	module.exports = diff;
+
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pSlice = Array.prototype.slice;
+	var objectKeys = __webpack_require__(23);
+	var isArguments = __webpack_require__(24);
+
+	var deepEqual = module.exports = function (actual, expected, opts) {
+	  if (!opts) opts = {};
+	  // 7.1. All identical values are equivalent, as determined by ===.
+	  if (actual === expected) {
+	    return true;
+
+	  } else if (actual instanceof Date && expected instanceof Date) {
+	    return actual.getTime() === expected.getTime();
+
+	  // 7.3. Other pairs that do not both pass typeof value == 'object',
+	  // equivalence is determined by ==.
+	  } else if (!actual || !expected || typeof actual != 'object' && typeof expected != 'object') {
+	    return opts.strict ? actual === expected : actual == expected;
+
+	  // 7.4. For all other Object pairs, including Array objects, equivalence is
+	  // determined by having the same number of owned properties (as verified
+	  // with Object.prototype.hasOwnProperty.call), the same set of keys
+	  // (although not necessarily the same order), equivalent values for every
+	  // corresponding key, and an identical 'prototype' property. Note: this
+	  // accounts for both named and indexed properties on Arrays.
+	  } else {
+	    return objEquiv(actual, expected, opts);
+	  }
+	}
+
+	function isUndefinedOrNull(value) {
+	  return value === null || value === undefined;
+	}
+
+	function isBuffer (x) {
+	  if (!x || typeof x !== 'object' || typeof x.length !== 'number') return false;
+	  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
+	    return false;
+	  }
+	  if (x.length > 0 && typeof x[0] !== 'number') return false;
+	  return true;
+	}
+
+	function objEquiv(a, b, opts) {
+	  var i, key;
+	  if (isUndefinedOrNull(a) || isUndefinedOrNull(b))
+	    return false;
+	  // an identical 'prototype' property.
+	  if (a.prototype !== b.prototype) return false;
+	  //~~~I've managed to break Object.keys through screwy arguments passing.
+	  //   Converting to array solves the problem.
+	  if (isArguments(a)) {
+	    if (!isArguments(b)) {
+	      return false;
+	    }
+	    a = pSlice.call(a);
+	    b = pSlice.call(b);
+	    return deepEqual(a, b, opts);
+	  }
+	  if (isBuffer(a)) {
+	    if (!isBuffer(b)) {
+	      return false;
+	    }
+	    if (a.length !== b.length) return false;
+	    for (i = 0; i < a.length; i++) {
+	      if (a[i] !== b[i]) return false;
+	    }
+	    return true;
+	  }
+	  try {
+	    var ka = objectKeys(a),
+	        kb = objectKeys(b);
+	  } catch (e) {//happens when one is a string literal and the other isn't
+	    return false;
+	  }
+	  // having the same number of owned properties (keys incorporates
+	  // hasOwnProperty)
+	  if (ka.length != kb.length)
+	    return false;
+	  //the same set of keys (although not necessarily the same order),
+	  ka.sort();
+	  kb.sort();
+	  //~~~cheap key test
+	  for (i = ka.length - 1; i >= 0; i--) {
+	    if (ka[i] != kb[i])
+	      return false;
+	  }
+	  //equivalent values for every corresponding key, and
+	  //~~~possibly expensive deep test
+	  for (i = ka.length - 1; i >= 0; i--) {
+	    key = ka[i];
+	    if (!deepEqual(a[key], b[key], opts)) return false;
+	  }
+	  return typeof a === typeof b;
+	}
+
+
+/***/ },
+/* 23 */
+/***/ function(module, exports) {
+
+	exports = module.exports = typeof Object.keys === 'function'
+	  ? Object.keys : shim;
+
+	exports.shim = shim;
+	function shim (obj) {
+	  var keys = [];
+	  for (var key in obj) keys.push(key);
+	  return keys;
+	}
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	var supportsArgumentsClass = (function(){
+	  return Object.prototype.toString.call(arguments)
+	})() == '[object Arguments]';
+
+	exports = module.exports = supportsArgumentsClass ? supported : unsupported;
+
+	exports.supported = supported;
+	function supported(object) {
+	  return Object.prototype.toString.call(object) == '[object Arguments]';
+	};
+
+	exports.unsupported = unsupported;
+	function unsupported(object){
+	  return object &&
+	    typeof object == 'object' &&
+	    typeof object.length == 'number' &&
+	    Object.prototype.hasOwnProperty.call(object, 'callee') &&
+	    !Object.prototype.propertyIsEnumerable.call(object, 'callee') ||
+	    false;
+	};
+
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var hasOwn = Object.prototype.hasOwnProperty;
+	var toStr = Object.prototype.toString;
+
+	var isArray = function isArray(arr) {
+		if (typeof Array.isArray === 'function') {
+			return Array.isArray(arr);
+		}
+
+		return toStr.call(arr) === '[object Array]';
+	};
+
+	var isPlainObject = function isPlainObject(obj) {
+		if (!obj || toStr.call(obj) !== '[object Object]') {
+			return false;
+		}
+
+		var hasOwnConstructor = hasOwn.call(obj, 'constructor');
+		var hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+		// Not own constructor property must be Object
+		if (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {
+			return false;
+		}
+
+		// Own properties are enumerated firstly, so to speed up,
+		// if last one is own, then all properties are own.
+		var key;
+		for (key in obj) {/**/}
+
+		return typeof key === 'undefined' || hasOwn.call(obj, key);
+	};
+
+	module.exports = function extend() {
+		var options, name, src, copy, copyIsArray, clone,
+			target = arguments[0],
+			i = 1,
+			length = arguments.length,
+			deep = false;
+
+		// Handle a deep copy situation
+		if (typeof target === 'boolean') {
+			deep = target;
+			target = arguments[1] || {};
+			// skip the boolean and the target
+			i = 2;
+		} else if ((typeof target !== 'object' && typeof target !== 'function') || target == null) {
+			target = {};
+		}
+
+		for (; i < length; ++i) {
+			options = arguments[i];
+			// Only deal with non-null/undefined values
+			if (options != null) {
+				// Extend the base object
+				for (name in options) {
+					src = target[name];
+					copy = options[name];
+
+					// Prevent never-ending loop
+					if (target !== copy) {
+						// Recurse if we're merging plain objects or arrays
+						if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
+							if (copyIsArray) {
+								copyIsArray = false;
+								clone = src && isArray(src) ? src : [];
+							} else {
+								clone = src && isPlainObject(src) ? src : {};
+							}
+
+							// Never move original objects, clone them
+							target[name] = extend(deep, clone, copy);
+
+						// Don't bring in undefined values
+						} else if (typeof copy !== 'undefined') {
+							target[name] = copy;
+						}
+					}
+				}
+			}
+		}
+
+		// Return the modified object
+		return target;
+	};
+
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var equal = __webpack_require__(22);
+	var extend = __webpack_require__(25);
+
+
+	var lib = {
+	  attributes: {
+	    compose: function (a, b, keepNull) {
+	      if (typeof a !== 'object') a = {};
+	      if (typeof b !== 'object') b = {};
+	      var attributes = extend(true, {}, b);
+	      if (!keepNull) {
+	        attributes = Object.keys(attributes).reduce(function (copy, key) {
+	          if (attributes[key] != null) {
+	            copy[key] = attributes[key];
+	          }
+	          return copy;
+	        }, {});
+	      }
+	      for (var key in a) {
+	        if (a[key] !== undefined && b[key] === undefined) {
+	          attributes[key] = a[key];
+	        }
+	      }
+	      return Object.keys(attributes).length > 0 ? attributes : undefined;
+	    },
+
+	    diff: function(a, b) {
+	      if (typeof a !== 'object') a = {};
+	      if (typeof b !== 'object') b = {};
+	      var attributes = Object.keys(a).concat(Object.keys(b)).reduce(function (attributes, key) {
+	        if (!equal(a[key], b[key])) {
+	          attributes[key] = b[key] === undefined ? null : b[key];
+	        }
+	        return attributes;
+	      }, {});
+	      return Object.keys(attributes).length > 0 ? attributes : undefined;
+	    },
+
+	    transform: function (a, b, priority) {
+	      if (typeof a !== 'object') return b;
+	      if (typeof b !== 'object') return undefined;
+	      if (!priority) return b;  // b simply overwrites us without priority
+	      var attributes = Object.keys(b).reduce(function (attributes, key) {
+	        if (a[key] === undefined) attributes[key] = b[key];  // null is a valid value
+	        return attributes;
+	      }, {});
+	      return Object.keys(attributes).length > 0 ? attributes : undefined;
+	    }
+	  },
+
+	  iterator: function (ops) {
+	    return new Iterator(ops);
+	  },
+
+	  length: function (op) {
+	    if (typeof op['delete'] === 'number') {
+	      return op['delete'];
+	    } else if (typeof op.retain === 'number') {
+	      return op.retain;
+	    } else {
+	      return typeof op.insert === 'string' ? op.insert.length : 1;
+	    }
+	  }
+	};
+
+
+	function Iterator(ops) {
+	  this.ops = ops;
+	  this.index = 0;
+	  this.offset = 0;
+	};
+
+	Iterator.prototype.hasNext = function () {
+	  return this.peekLength() < Infinity;
+	};
+
+	Iterator.prototype.next = function (length) {
+	  if (!length) length = Infinity;
+	  var nextOp = this.ops[this.index];
+	  if (nextOp) {
+	    var offset = this.offset;
+	    var opLength = lib.length(nextOp)
+	    if (length >= opLength - offset) {
+	      length = opLength - offset;
+	      this.index += 1;
+	      this.offset = 0;
+	    } else {
+	      this.offset += length;
+	    }
+	    if (typeof nextOp['delete'] === 'number') {
+	      return { 'delete': length };
+	    } else {
+	      var retOp = {};
+	      if (nextOp.attributes) {
+	        retOp.attributes = nextOp.attributes;
+	      }
+	      if (typeof nextOp.retain === 'number') {
+	        retOp.retain = length;
+	      } else if (typeof nextOp.insert === 'string') {
+	        retOp.insert = nextOp.insert.substr(offset, length);
+	      } else {
+	        // offset should === 0, length should === 1
+	        retOp.insert = nextOp.insert;
+	      }
+	      return retOp;
+	    }
+	  } else {
+	    return { retain: Infinity };
+	  }
+	};
+
+	Iterator.prototype.peekLength = function () {
+	  if (this.ops[this.index]) {
+	    // Should never return 0 if our index is being managed correctly
+	    return lib.length(this.ops[this.index]) - this.offset;
+	  } else {
+	    return Infinity;
+	  }
+	};
+
+	Iterator.prototype.peekType = function () {
+	  if (this.ops[this.index]) {
+	    if (typeof this.ops[this.index]['delete'] === 'number') {
+	      return 'delete';
+	    } else if (typeof this.ops[this.index].retain === 'number') {
+	      return 'retain';
+	    } else {
+	      return 'insert';
+	    }
+	  }
+	  return 'retain';
+	};
+
+
+	module.exports = lib;
+
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _op = __webpack_require__(26);
+
+	var _op2 = _interopRequireDefault(_op);
+
+	var _emitter3 = __webpack_require__(28);
+
+	var _emitter4 = _interopRequireDefault(_emitter3);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _code = __webpack_require__(31);
+
+	var _code2 = _interopRequireDefault(_code);
+
+	var _cursor = __webpack_require__(37);
+
+	var _cursor2 = _interopRequireDefault(_cursor);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	var _clone = __webpack_require__(38);
+
+	var _clone2 = _interopRequireDefault(_clone);
+
+	var _deepEqual = __webpack_require__(22);
+
+	var _deepEqual2 = _interopRequireDefault(_deepEqual);
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Editor = function () {
+	  function Editor(scroll, emitter) {
+	    _classCallCheck(this, Editor);
+
+	    this.scroll = scroll;
+	    this.emitter = emitter;
+	    this.emitter.on(_emitter4.default.events.SCROLL_UPDATE, this.update.bind(this, null));
+	    this.delta = this.getDelta();
+	    this.enable();
+	  }
+
+	  _createClass(Editor, [{
+	    key: 'applyDelta',
+	    value: function applyDelta(delta) {
+	      var _this = this;
+
+	      var source = arguments.length <= 1 || arguments[1] === undefined ? _emitter4.default.sources.API : arguments[1];
+
+	      var consumeNextNewline = false;
+	      this.scroll.update();
+	      var scrollLength = this.scroll.length();
+	      this.scroll.batch = true;
+	      delta = normalizeDelta(delta);
+	      delta.ops.reduce(function (index, op) {
+	        var length = op.retain || op.delete || op.insert.length || 1;
+	        var attributes = op.attributes || {};
+	        if (op.insert != null) {
+	          if (typeof op.insert === 'string') {
+	            var text = op.insert;
+	            if (text.endsWith('\n') && consumeNextNewline) {
+	              consumeNextNewline = false;
+	              text = text.slice(0, -1);
+	            }
+	            if (index >= scrollLength && !text.endsWith('\n')) {
+	              consumeNextNewline = true;
+	            }
+	            _this.scroll.insertAt(index, text);
+
+	            var _scroll$line = _this.scroll.line(index);
+
+	            var _scroll$line2 = _slicedToArray(_scroll$line, 2);
+
+	            var line = _scroll$line2[0];
+	            var offset = _scroll$line2[1];
+
+	            var formats = (0, _extend2.default)({}, (0, _block.bubbleFormats)(line));
+	            if (line instanceof _block2.default) {
+	              var _line$descendant = line.descendant(_parchment2.default.Leaf, offset);
+
+	              var _line$descendant2 = _slicedToArray(_line$descendant, 1);
+
+	              var leaf = _line$descendant2[0];
+
+	              formats = (0, _extend2.default)(formats, (0, _block.bubbleFormats)(leaf));
+	            }
+	            attributes = _op2.default.attributes.diff(formats, attributes) || {};
+	          } else if (_typeof(op.insert) === 'object') {
+	            var key = Object.keys(op.insert)[0]; // There should only be one key
+	            if (key == null) return index;
+	            _this.scroll.insertAt(index, key, op.insert[key]);
+	          }
+	          scrollLength += length;
+	        }
+	        Object.keys(attributes).forEach(function (name) {
+	          _this.scroll.formatAt(index, length, name, attributes[name]);
+	        });
+	        return index + length;
+	      }, 0);
+	      delta.ops.reduce(function (index, op) {
+	        if (typeof op.delete === 'number') {
+	          _this.scroll.deleteAt(index, op.delete);
+	          return index;
+	        }
+	        return index + (op.retain || op.insert.length || 1);
+	      }, 0);
+	      this.scroll.batch = false;
+	      this.scroll.optimize();
+	      return this.update(delta, source);
+	    }
+	  }, {
+	    key: 'deleteText',
+	    value: function deleteText(index, length) {
+	      var source = arguments.length <= 2 || arguments[2] === undefined ? _emitter4.default.sources.API : arguments[2];
+
+	      this.scroll.deleteAt(index, length);
+	      return this.update(new _delta2.default().retain(index).delete(length), source);
+	    }
+	  }, {
+	    key: 'enable',
+	    value: function enable() {
+	      var enabled = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
+
+	      this.scroll.domNode.setAttribute('contenteditable', enabled);
+	    }
+	  }, {
+	    key: 'formatLine',
+	    value: function formatLine(index, length) {
+	      var _this2 = this;
+
+	      var formats = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+	      var source = arguments.length <= 3 || arguments[3] === undefined ? _emitter4.default.sources.API : arguments[3];
+
+	      this.scroll.update();
+	      Object.keys(formats).forEach(function (format) {
+	        var lines = _this2.scroll.lines(index, Math.max(length, 1));
+	        var lengthRemaining = length;
+	        lines.forEach(function (line, i) {
+	          var lineLength = line.length();
+	          if (!(line instanceof _code2.default)) {
+	            line.format(format, formats[format]);
+	          } else {
+	            var codeIndex = index - line.offset(_this2.scroll);
+	            var codeLength = line.newlineIndex(codeIndex + lengthRemaining) - codeIndex + 1;
+	            line.formatAt(codeIndex, codeLength, format, formats[format]);
+	          }
+	          lengthRemaining -= lineLength;
+	        });
+	      });
+	      this.scroll.optimize();
+	      return this.update(new _delta2.default().retain(index).retain(length, (0, _clone2.default)(formats)), source);
+	    }
+	  }, {
+	    key: 'formatText',
+	    value: function formatText(index, length) {
+	      var _this3 = this;
+
+	      var formats = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+	      var source = arguments.length <= 3 || arguments[3] === undefined ? _emitter4.default.sources.API : arguments[3];
+
+	      Object.keys(formats).forEach(function (format) {
+	        _this3.scroll.formatAt(index, length, format, formats[format]);
+	      });
+	      return this.update(new _delta2.default().retain(index).retain(length, (0, _clone2.default)(formats)), source);
+	    }
+	  }, {
+	    key: 'getContents',
+	    value: function getContents(index, length) {
+	      return this.delta.slice(index, index + length);
+	    }
+	  }, {
+	    key: 'getDelta',
+	    value: function getDelta() {
+	      return this.scroll.lines().reduce(function (delta, line) {
+	        return delta.concat(line.delta());
+	      }, new _delta2.default());
+	    }
+	  }, {
+	    key: 'getFormat',
+	    value: function getFormat(index) {
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+
+	      var lines = [],
+	          leaves = [];
+	      if (length === 0) {
+	        this.scroll.path(index).forEach(function (path) {
+	          var _path = _slicedToArray(path, 1);
+
+	          var blot = _path[0];
+
+	          if (blot instanceof _block2.default) {
+	            lines.push(blot);
+	          } else if (blot instanceof _parchment2.default.Leaf) {
+	            leaves.push(blot);
+	          }
+	        });
+	      } else {
+	        lines = this.scroll.lines(index, length);
+	        leaves = this.scroll.descendants(_parchment2.default.Leaf, index, length);
+	      }
+	      var formatsArr = [lines, leaves].map(function (blots) {
+	        if (blots.length === 0) return {};
+	        var formats = (0, _block.bubbleFormats)(blots.shift());
+	        while (Object.keys(formats).length > 0) {
+	          var blot = blots.shift();
+	          if (blot == null) return formats;
+	          formats = combineFormats((0, _block.bubbleFormats)(blot), formats);
+	        }
+	        return formats;
+	      });
+	      return _extend2.default.apply(_extend2.default, formatsArr);
+	    }
+	  }, {
+	    key: 'getText',
+	    value: function getText(index, length) {
+	      return this.getContents(index, length).ops.map(function (op) {
+	        return typeof op.insert === 'string' ? op.insert : '';
+	      }).join('');
+	    }
+	  }, {
+	    key: 'insertEmbed',
+	    value: function insertEmbed(index, embed, value) {
+	      var source = arguments.length <= 3 || arguments[3] === undefined ? _emitter4.default.sources.API : arguments[3];
+
+	      this.scroll.insertAt(index, embed, value);
+	      return this.update(new _delta2.default().retain(index).insert(_defineProperty({}, embed, value)), source);
+	    }
+	  }, {
+	    key: 'insertText',
+	    value: function insertText(index, text) {
+	      var _this4 = this;
+
+	      var formats = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+	      var source = arguments.length <= 3 || arguments[3] === undefined ? _emitter4.default.sources.API : arguments[3];
+
+	      text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+	      this.scroll.insertAt(index, text);
+	      Object.keys(formats).forEach(function (format) {
+	        _this4.scroll.formatAt(index, text.length, format, formats[format]);
+	      });
+	      return this.update(new _delta2.default().retain(index).insert(text, (0, _clone2.default)(formats)), source);
+	    }
+	  }, {
+	    key: 'isBlank',
+	    value: function isBlank() {
+	      if (this.scroll.children.length == 0) return true;
+	      if (this.scroll.children.length > 1) return false;
+	      var child = this.scroll.children.head;
+	      return child.length() <= 1 && Object.keys(child.formats()).length == 0;
+	    }
+	  }, {
+	    key: 'removeFormat',
+	    value: function removeFormat(index, length, source) {
+	      var text = this.getText(index, length);
+
+	      var _scroll$line3 = this.scroll.line(index + length);
+
+	      var _scroll$line4 = _slicedToArray(_scroll$line3, 2);
+
+	      var line = _scroll$line4[0];
+	      var offset = _scroll$line4[1];
+
+	      var suffixLength = 0,
+	          suffix = new _delta2.default();
+	      if (line != null) {
+	        if (!(line instanceof _code2.default)) {
+	          suffixLength = line.length() - offset;
+	        } else {
+	          suffixLength = line.newlineIndex(offset) - offset + 1;
+	        }
+	        suffix = line.delta().slice(offset, offset + suffixLength - 1).insert('\n');
+	      }
+	      var contents = this.getContents(index, length + suffixLength);
+	      var diff = contents.diff(new _delta2.default().insert(text).concat(suffix));
+	      var delta = new _delta2.default().retain(index).concat(diff);
+	      return this.applyDelta(delta, source);
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update(change) {
+	      var _this5 = this;
+
+	      var source = arguments.length <= 1 || arguments[1] === undefined ? _emitter4.default.sources.USER : arguments[1];
+	      var mutations = arguments.length <= 2 || arguments[2] === undefined ? [] : arguments[2];
+
+	      var oldDelta = this.delta;
+	      if (mutations.length === 1 && mutations[0].type === 'characterData' && _parchment2.default.find(mutations[0].target)) {
+	        (function () {
+	          // Optimization for character changes
+	          var textBlot = _parchment2.default.find(mutations[0].target);
+	          var formats = (0, _block.bubbleFormats)(textBlot);
+	          var index = textBlot.offset(_this5.scroll);
+	          var oldValue = mutations[0].oldValue.replace(_cursor2.default.CONTENTS, '');
+	          var oldText = new _delta2.default().insert(oldValue);
+	          var newText = new _delta2.default().insert(textBlot.value());
+	          var diffDelta = new _delta2.default().retain(index).concat(oldText.diff(newText));
+	          change = diffDelta.ops.reduce(function (delta, op) {
+	            if (op.insert) {
+	              return delta.insert(op.insert, formats);
+	            } else {
+	              return delta.push(op);
+	            }
+	          }, new _delta2.default());
+	          _this5.delta = oldDelta.compose(change);
+	        })();
+	      } else {
+	        this.delta = this.getDelta();
+	        if (!change || !(0, _deepEqual2.default)(oldDelta.compose(change), this.delta)) {
+	          change = oldDelta.diff(this.delta);
+	        }
+	      }
+	      if (change.length() > 0) {
+	        var _emitter;
+
+	        var args = [_emitter4.default.events.TEXT_CHANGE, change, oldDelta, source];
+	        (_emitter = this.emitter).emit.apply(_emitter, [_emitter4.default.events.EDITOR_CHANGE].concat(args));
+	        if (source !== _emitter4.default.sources.SILENT) {
+	          var _emitter2;
+
+	          (_emitter2 = this.emitter).emit.apply(_emitter2, args);
+	        }
+	      }
+	      return change;
+	    }
+	  }]);
+
+	  return Editor;
+	}();
+
+	function combineFormats(formats, combined) {
+	  return Object.keys(combined).reduce(function (merged, name) {
+	    if (formats[name] == null) return merged;
+	    if (combined[name] === formats[name]) {
+	      merged[name] = combined[name];
+	    } else if (Array.isArray(combined[name])) {
+	      if (combined[name].indexOf(formats[name]) < 0) {
+	        merged[name] = combined[name].concat([formats[name]]);
+	      }
+	    } else {
+	      merged[name] = [combined[name], formats[name]];
+	    }
+	    return merged;
+	  }, {});
+	}
+
+	function normalizeDelta(delta) {
+	  return delta.ops.reduce(function (delta, op) {
+	    if (op.insert === 1) {
+	      var attributes = (0, _clone2.default)(op.attributes);
+	      delete attributes['image'];
+	      return delta.insert({ image: op.attributes.image }, attributes);
+	    }
+	    if (op.attributes != null && (op.attributes.list === true || op.attributes.bullet === true)) {
+	      op = (0, _clone2.default)(op);
+	      if (op.attributes.list) {
+	        op.attributes.list = 'ordered';
+	      } else {
+	        op.attributes.list = 'bullet';
+	        delete op.attributes.bullet;
+	      }
+	    }
+	    if (typeof op.insert === 'string') {
+	      var text = op.insert.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+	      return delta.insert(text, op.attributes);
+	    }
+	    return delta.push(op);
+	  }, new _delta2.default());
+	}
+
+	exports.default = Editor;
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _eventemitter = __webpack_require__(29);
+
+	var _eventemitter2 = _interopRequireDefault(_eventemitter);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var debug = (0, _logger2.default)('quill:events');
+
+	var Emitter = function (_EventEmitter) {
+	  _inherits(Emitter, _EventEmitter);
+
+	  function Emitter() {
+	    _classCallCheck(this, Emitter);
+
+	    var _this = _possibleConstructorReturn(this, (Emitter.__proto__ || Object.getPrototypeOf(Emitter)).call(this));
+
+	    _this.on('error', debug.error);
+	    return _this;
+	  }
+
+	  _createClass(Emitter, [{
+	    key: 'emit',
+	    value: function emit() {
+	      debug.log.apply(debug, arguments);
+	      _get(Emitter.prototype.__proto__ || Object.getPrototypeOf(Emitter.prototype), 'emit', this).apply(this, arguments);
+	    }
+	  }]);
+
+	  return Emitter;
+	}(_eventemitter2.default);
+
+	Emitter.events = {
+	  EDITOR_CHANGE: 'editor-change',
+	  SCROLL_BEFORE_UPDATE: 'scroll-before-update',
+	  SCROLL_OPTIMIZE: 'scroll-optimize',
+	  SCROLL_UPDATE: 'scroll-update',
+	  SELECTION_CHANGE: 'selection-change',
+	  TEXT_CHANGE: 'text-change'
+	};
+	Emitter.sources = {
+	  API: 'api',
+	  SILENT: 'silent',
+	  USER: 'user'
+	};
+
+	exports.default = Emitter;
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var has = Object.prototype.hasOwnProperty;
+
+	//
+	// We store our EE objects in a plain object whose properties are event names.
+	// If `Object.create(null)` is not supported we prefix the event names with a
+	// `~` to make sure that the built-in object properties are not overridden or
+	// used as an attack vector.
+	// We also assume that `Object.create(null)` is available when the event name
+	// is an ES6 Symbol.
+	//
+	var prefix = typeof Object.create !== 'function' ? '~' : false;
+
+	/**
+	 * Representation of a single EventEmitter function.
+	 *
+	 * @param {Function} fn Event handler to be called.
+	 * @param {Mixed} context Context for function execution.
+	 * @param {Boolean} [once=false] Only emit once
+	 * @api private
+	 */
+	function EE(fn, context, once) {
+	  this.fn = fn;
+	  this.context = context;
+	  this.once = once || false;
+	}
+
+	/**
+	 * Minimal EventEmitter interface that is molded against the Node.js
+	 * EventEmitter interface.
+	 *
+	 * @constructor
+	 * @api public
+	 */
+	function EventEmitter() { /* Nothing to set */ }
+
+	/**
+	 * Hold the assigned EventEmitters by name.
+	 *
+	 * @type {Object}
+	 * @private
+	 */
+	EventEmitter.prototype._events = undefined;
+
+	/**
+	 * Return an array listing the events for which the emitter has registered
+	 * listeners.
+	 *
+	 * @returns {Array}
+	 * @api public
+	 */
+	EventEmitter.prototype.eventNames = function eventNames() {
+	  var events = this._events
+	    , names = []
+	    , name;
+
+	  if (!events) return names;
+
+	  for (name in events) {
+	    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
+	  }
+
+	  if (Object.getOwnPropertySymbols) {
+	    return names.concat(Object.getOwnPropertySymbols(events));
+	  }
+
+	  return names;
+	};
+
+	/**
+	 * Return a list of assigned event listeners.
+	 *
+	 * @param {String} event The events that should be listed.
+	 * @param {Boolean} exists We only need to know if there are listeners.
+	 * @returns {Array|Boolean}
+	 * @api public
+	 */
+	EventEmitter.prototype.listeners = function listeners(event, exists) {
+	  var evt = prefix ? prefix + event : event
+	    , available = this._events && this._events[evt];
+
+	  if (exists) return !!available;
+	  if (!available) return [];
+	  if (available.fn) return [available.fn];
+
+	  for (var i = 0, l = available.length, ee = new Array(l); i < l; i++) {
+	    ee[i] = available[i].fn;
+	  }
+
+	  return ee;
+	};
+
+	/**
+	 * Emit an event to all registered event listeners.
+	 *
+	 * @param {String} event The name of the event.
+	 * @returns {Boolean} Indication if we've emitted an event.
+	 * @api public
+	 */
+	EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
+	  var evt = prefix ? prefix + event : event;
+
+	  if (!this._events || !this._events[evt]) return false;
+
+	  var listeners = this._events[evt]
+	    , len = arguments.length
+	    , args
+	    , i;
+
+	  if ('function' === typeof listeners.fn) {
+	    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
+
+	    switch (len) {
+	      case 1: return listeners.fn.call(listeners.context), true;
+	      case 2: return listeners.fn.call(listeners.context, a1), true;
+	      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
+	      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
+	      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
+	      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
+	    }
+
+	    for (i = 1, args = new Array(len -1); i < len; i++) {
+	      args[i - 1] = arguments[i];
+	    }
+
+	    listeners.fn.apply(listeners.context, args);
+	  } else {
+	    var length = listeners.length
+	      , j;
+
+	    for (i = 0; i < length; i++) {
+	      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
+
+	      switch (len) {
+	        case 1: listeners[i].fn.call(listeners[i].context); break;
+	        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
+	        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
+	        default:
+	          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
+	            args[j - 1] = arguments[j];
+	          }
+
+	          listeners[i].fn.apply(listeners[i].context, args);
+	      }
+	    }
+	  }
+
+	  return true;
+	};
+
+	/**
+	 * Register a new EventListener for the given event.
+	 *
+	 * @param {String} event Name of the event.
+	 * @param {Function} fn Callback function.
+	 * @param {Mixed} [context=this] The context of the function.
+	 * @api public
+	 */
+	EventEmitter.prototype.on = function on(event, fn, context) {
+	  var listener = new EE(fn, context || this)
+	    , evt = prefix ? prefix + event : event;
+
+	  if (!this._events) this._events = prefix ? {} : Object.create(null);
+	  if (!this._events[evt]) this._events[evt] = listener;
+	  else {
+	    if (!this._events[evt].fn) this._events[evt].push(listener);
+	    else this._events[evt] = [
+	      this._events[evt], listener
+	    ];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Add an EventListener that's only called once.
+	 *
+	 * @param {String} event Name of the event.
+	 * @param {Function} fn Callback function.
+	 * @param {Mixed} [context=this] The context of the function.
+	 * @api public
+	 */
+	EventEmitter.prototype.once = function once(event, fn, context) {
+	  var listener = new EE(fn, context || this, true)
+	    , evt = prefix ? prefix + event : event;
+
+	  if (!this._events) this._events = prefix ? {} : Object.create(null);
+	  if (!this._events[evt]) this._events[evt] = listener;
+	  else {
+	    if (!this._events[evt].fn) this._events[evt].push(listener);
+	    else this._events[evt] = [
+	      this._events[evt], listener
+	    ];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Remove event listeners.
+	 *
+	 * @param {String} event The event we want to remove.
+	 * @param {Function} fn The listener that we need to find.
+	 * @param {Mixed} context Only remove listeners matching this context.
+	 * @param {Boolean} once Only remove once listeners.
+	 * @api public
+	 */
+	EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
+	  var evt = prefix ? prefix + event : event;
+
+	  if (!this._events || !this._events[evt]) return this;
+
+	  var listeners = this._events[evt]
+	    , events = [];
+
+	  if (fn) {
+	    if (listeners.fn) {
+	      if (
+	           listeners.fn !== fn
+	        || (once && !listeners.once)
+	        || (context && listeners.context !== context)
+	      ) {
+	        events.push(listeners);
+	      }
+	    } else {
+	      for (var i = 0, length = listeners.length; i < length; i++) {
+	        if (
+	             listeners[i].fn !== fn
+	          || (once && !listeners[i].once)
+	          || (context && listeners[i].context !== context)
+	        ) {
+	          events.push(listeners[i]);
+	        }
+	      }
+	    }
+	  }
+
+	  //
+	  // Reset the array, or remove it completely if we have no more listeners.
+	  //
+	  if (events.length) {
+	    this._events[evt] = events.length === 1 ? events[0] : events;
+	  } else {
+	    delete this._events[evt];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Remove all listeners or only the listeners for the specified event.
+	 *
+	 * @param {String} event The event want to remove all listeners for.
+	 * @api public
+	 */
+	EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
+	  if (!this._events) return this;
+
+	  if (event) delete this._events[prefix ? prefix + event : event];
+	  else this._events = prefix ? {} : Object.create(null);
+
+	  return this;
+	};
+
+	//
+	// Alias methods names because people roll like that.
+	//
+	EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
+	EventEmitter.prototype.addListener = EventEmitter.prototype.on;
+
+	//
+	// This function doesn't apply anymore.
+	//
+	EventEmitter.prototype.setMaxListeners = function setMaxListeners() {
+	  return this;
+	};
+
+	//
+	// Expose the prefix.
+	//
+	EventEmitter.prefixed = prefix;
+
+	//
+	// Expose the module.
+	//
+	if ('undefined' !== typeof module) {
+	  module.exports = EventEmitter;
+	}
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var levels = ['error', 'warn', 'log', 'info'];
+	var level = 'warn';
+
+	function debug(method) {
+	  if (levels.indexOf(method) <= levels.indexOf(level)) {
+	    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	      args[_key - 1] = arguments[_key];
+	    }
+
+	    console[method].apply(console, args);
+	  }
+	}
+
+	function namespace(ns) {
+	  return levels.reduce(function (logger, method) {
+	    logger[method] = debug.bind(console, method, ns);
+	    return logger;
+	  }, {});
+	}
+
+	debug.level = namespace.level = function (newLevel) {
+	  level = newLevel;
+	};
+
+	exports.default = namespace;
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.Code = undefined;
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	var _text = __webpack_require__(36);
+
+	var _text2 = _interopRequireDefault(_text);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Code = function (_Inline) {
+	  _inherits(Code, _Inline);
+
+	  function Code() {
+	    _classCallCheck(this, Code);
+
+	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	  }
+
+	  return Code;
+	}(_inline2.default);
+
+	Code.blotName = 'code';
+	Code.tagName = 'CODE';
+
+	var CodeBlock = function (_Block) {
+	  _inherits(CodeBlock, _Block);
+
+	  function CodeBlock() {
+	    _classCallCheck(this, CodeBlock);
+
+	    return _possibleConstructorReturn(this, (CodeBlock.__proto__ || Object.getPrototypeOf(CodeBlock)).apply(this, arguments));
+	  }
+
+	  _createClass(CodeBlock, [{
+	    key: 'delta',
+	    value: function delta() {
+	      var _this3 = this;
+
+	      var text = this.domNode.textContent;
+	      if (text.endsWith('\n')) {
+	        // Should always be true
+	        text = text.slice(0, -1);
+	      }
+	      return text.split('\n').reduce(function (delta, frag) {
+	        return delta.insert(frag).insert('\n', _this3.formats());
+	      }, new _delta2.default());
+	    }
+	  }, {
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (name === this.statics.blotName && value) return;
+
+	      var _descendant = this.descendant(_text2.default, this.length() - 1);
+
+	      var _descendant2 = _slicedToArray(_descendant, 1);
+
+	      var text = _descendant2[0];
+
+	      if (text != null) {
+	        text.deleteAt(text.length() - 1, 1);
+	      }
+	      _get(CodeBlock.prototype.__proto__ || Object.getPrototypeOf(CodeBlock.prototype), 'format', this).call(this, name, value);
+	    }
+	  }, {
+	    key: 'formatAt',
+	    value: function formatAt(index, length, name, value) {
+	      if (length === 0) return;
+	      if (_parchment2.default.query(name, _parchment2.default.Scope.BLOCK) == null || name === this.statics.blotName && value === this.statics.formats(this.domNode)) {
+	        return;
+	      }
+	      var nextNewline = this.newlineIndex(index);
+	      if (nextNewline < 0 || nextNewline >= index + length) return;
+	      var prevNewline = this.newlineIndex(index, true) + 1;
+	      var isolateLength = nextNewline - prevNewline + 1;
+	      var blot = this.isolate(prevNewline, isolateLength);
+	      var next = blot.next;
+	      blot.format(name, value);
+	      if (next instanceof CodeBlock) {
+	        next.formatAt(0, index - prevNewline + length - isolateLength, name, value);
+	      }
+	    }
+	  }, {
+	    key: 'insertAt',
+	    value: function insertAt(index, value, def) {
+	      if (def != null) return;
+
+	      var _descendant3 = this.descendant(_text2.default, index);
+
+	      var _descendant4 = _slicedToArray(_descendant3, 2);
+
+	      var text = _descendant4[0];
+	      var offset = _descendant4[1];
+
+	      text.insertAt(offset, value);
+	    }
+	  }, {
+	    key: 'length',
+	    value: function length() {
+	      var length = this.domNode.textContent.length;
+	      if (!this.domNode.textContent.endsWith('\n')) {
+	        return length + 1;
+	      }
+	      return length;
+	    }
+	  }, {
+	    key: 'newlineIndex',
+	    value: function newlineIndex(searchIndex) {
+	      var reverse = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+
+	      if (!reverse) {
+	        var offset = this.domNode.textContent.slice(searchIndex).indexOf('\n');
+	        return offset > -1 ? searchIndex + offset : -1;
+	      } else {
+	        return this.domNode.textContent.slice(0, searchIndex).lastIndexOf('\n');
+	      }
+	    }
+	  }, {
+	    key: 'optimize',
+	    value: function optimize() {
+	      if (!this.domNode.textContent.endsWith('\n')) {
+	        this.appendChild(_parchment2.default.create('text', '\n'));
+	      }
+	      _get(CodeBlock.prototype.__proto__ || Object.getPrototypeOf(CodeBlock.prototype), 'optimize', this).call(this);
+	      var next = this.next;
+	      if (next != null && next.prev === this && next.statics.blotName === this.statics.blotName && this.statics.formats(this.domNode) === next.statics.formats(next.domNode)) {
+	        next.optimize();
+	        next.moveChildren(this);
+	        next.remove();
+	      }
+	    }
+	  }, {
+	    key: 'replace',
+	    value: function replace(target) {
+	      _get(CodeBlock.prototype.__proto__ || Object.getPrototypeOf(CodeBlock.prototype), 'replace', this).call(this, target);
+	      [].slice.call(this.domNode.querySelectorAll('*')).forEach(function (node) {
+	        var blot = _parchment2.default.find(node);
+	        if (blot == null) {
+	          node.parentNode.removeChild(node);
+	        } else if (blot instanceof _parchment2.default.Embed) {
+	          blot.remove();
+	        } else {
+	          blot.unwrap();
+	        }
+	      });
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      var domNode = _get(CodeBlock.__proto__ || Object.getPrototypeOf(CodeBlock), 'create', this).call(this, value);
+	      domNode.setAttribute('spellcheck', false);
+	      return domNode;
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      return true;
+	    }
+	  }]);
+
+	  return CodeBlock;
+	}(_block2.default);
+
+	CodeBlock.blotName = 'code-block';
+	CodeBlock.tagName = 'PRE';
+	CodeBlock.TAB = '  ';
+
+	exports.Code = Code;
+	exports.default = CodeBlock;
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.BlockEmbed = exports.bubbleFormats = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _break = __webpack_require__(33);
+
+	var _break2 = _interopRequireDefault(_break);
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	var _text = __webpack_require__(36);
+
+	var _text2 = _interopRequireDefault(_text);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var NEWLINE_LENGTH = 1;
+
+	var BlockEmbed = function (_Embed) {
+	  _inherits(BlockEmbed, _Embed);
+
+	  function BlockEmbed() {
+	    _classCallCheck(this, BlockEmbed);
+
+	    return _possibleConstructorReturn(this, (BlockEmbed.__proto__ || Object.getPrototypeOf(BlockEmbed)).apply(this, arguments));
+	  }
+
+	  _createClass(BlockEmbed, [{
+	    key: 'attach',
+	    value: function attach() {
+	      _get(BlockEmbed.prototype.__proto__ || Object.getPrototypeOf(BlockEmbed.prototype), 'attach', this).call(this);
+	      this.attributes = new _parchment2.default.Attributor.Store(this.domNode);
+	    }
+	  }, {
+	    key: 'delta',
+	    value: function delta() {
+	      return new _delta2.default().insert(this.value(), (0, _extend2.default)(this.formats(), this.attributes.values()));
+	    }
+	  }, {
+	    key: 'format',
+	    value: function format(name, value) {
+	      var attribute = _parchment2.default.query(name, _parchment2.default.Scope.BLOCK_ATTRIBUTE);
+	      if (attribute != null) {
+	        this.attributes.attribute(attribute, value);
+	      }
+	    }
+	  }, {
+	    key: 'formatAt',
+	    value: function formatAt(index, length, name, value) {
+	      this.format(name, value);
+	    }
+	  }, {
+	    key: 'insertAt',
+	    value: function insertAt(index, value, def) {
+	      if (typeof value === 'string' && value.endsWith('\n')) {
+	        var block = _parchment2.default.create(Block.blotName);
+	        this.parent.insertBefore(block, index === 0 ? this : this.next);
+	        block.insertAt(0, value.slice(0, -1));
+	      } else {
+	        _get(BlockEmbed.prototype.__proto__ || Object.getPrototypeOf(BlockEmbed.prototype), 'insertAt', this).call(this, index, value, def);
+	      }
+	    }
+	  }]);
+
+	  return BlockEmbed;
+	}(_embed2.default);
+
+	BlockEmbed.scope = _parchment2.default.Scope.BLOCK_BLOT;
+	// It is important for cursor behavior BlockEmbeds use tags that are block level elements
+
+
+	var Block = function (_Parchment$Block) {
+	  _inherits(Block, _Parchment$Block);
+
+	  function Block(domNode) {
+	    _classCallCheck(this, Block);
+
+	    var _this2 = _possibleConstructorReturn(this, (Block.__proto__ || Object.getPrototypeOf(Block)).call(this, domNode));
+
+	    _this2.cache = {};
+	    return _this2;
+	  }
+
+	  _createClass(Block, [{
+	    key: 'delta',
+	    value: function delta() {
+	      if (this.cache.delta == null) {
+	        this.cache.delta = this.descendants(_parchment2.default.Leaf).reduce(function (delta, leaf) {
+	          if (leaf.length() === 0) {
+	            return delta;
+	          } else {
+	            return delta.insert(leaf.value(), bubbleFormats(leaf));
+	          }
+	        }, new _delta2.default()).insert('\n', bubbleFormats(this));
+	      }
+	      return this.cache.delta;
+	    }
+	  }, {
+	    key: 'deleteAt',
+	    value: function deleteAt(index, length) {
+	      _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'deleteAt', this).call(this, index, length);
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'formatAt',
+	    value: function formatAt(index, length, name, value) {
+	      if (length <= 0) return;
+	      if (_parchment2.default.query(name, _parchment2.default.Scope.BLOCK)) {
+	        if (index + length === this.length()) {
+	          this.format(name, value);
+	        }
+	      } else {
+	        _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'formatAt', this).call(this, index, Math.min(length, this.length() - index - 1), name, value);
+	      }
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'insertAt',
+	    value: function insertAt(index, value, def) {
+	      if (def != null) return _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'insertAt', this).call(this, index, value, def);
+	      if (value.length === 0) return;
+	      var lines = value.split('\n');
+	      var text = lines.shift();
+	      if (text.length > 0) {
+	        if (index < this.length() - 1 || this.children.tail == null) {
+	          _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'insertAt', this).call(this, Math.min(index, this.length() - 1), text);
+	        } else {
+	          this.children.tail.insertAt(this.children.tail.length(), text);
+	        }
+	        this.cache = {};
+	      }
+	      var block = this;
+	      lines.reduce(function (index, line) {
+	        block = block.split(index, true);
+	        block.insertAt(0, line);
+	        return line.length;
+	      }, index + text.length);
+	    }
+	  }, {
+	    key: 'insertBefore',
+	    value: function insertBefore(blot, ref) {
+	      var head = this.children.head;
+	      _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'insertBefore', this).call(this, blot, ref);
+	      if (head instanceof _break2.default) {
+	        head.remove();
+	      }
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'length',
+	    value: function length() {
+	      if (this.cache.length == null) {
+	        this.cache.length = _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'length', this).call(this) + NEWLINE_LENGTH;
+	      }
+	      return this.cache.length;
+	    }
+	  }, {
+	    key: 'moveChildren',
+	    value: function moveChildren(target, ref) {
+	      _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'moveChildren', this).call(this, target, ref);
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'optimize',
+	    value: function optimize() {
+	      _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'optimize', this).call(this);
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'path',
+	    value: function path(index) {
+	      return _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'path', this).call(this, index, true);
+	    }
+	  }, {
+	    key: 'removeChild',
+	    value: function removeChild(child) {
+	      _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'removeChild', this).call(this, child);
+	      this.cache = {};
+	    }
+	  }, {
+	    key: 'split',
+	    value: function split(index) {
+	      var force = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+
+	      if (force && (index === 0 || index >= this.length() - NEWLINE_LENGTH)) {
+	        var clone = this.clone();
+	        if (index === 0) {
+	          this.parent.insertBefore(clone, this);
+	          return this;
+	        } else {
+	          this.parent.insertBefore(clone, this.next);
+	          return clone;
+	        }
+	      } else {
+	        var next = _get(Block.prototype.__proto__ || Object.getPrototypeOf(Block.prototype), 'split', this).call(this, index, force);
+	        this.cache = {};
+	        return next;
+	      }
+	    }
+	  }]);
+
+	  return Block;
+	}(_parchment2.default.Block);
+
+	Block.blotName = 'block';
+	Block.tagName = 'P';
+	Block.defaultChild = 'break';
+	Block.allowedChildren = [_inline2.default, _embed2.default, _text2.default];
+
+	function bubbleFormats(blot) {
+	  var formats = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	  if (blot == null) return formats;
+	  if (typeof blot.formats === 'function') {
+	    formats = (0, _extend2.default)(formats, blot.formats());
+	  }
+	  if (blot.parent == null || blot.parent.blotName == 'scroll' || blot.parent.statics.scope !== blot.statics.scope) {
+	    return formats;
+	  }
+	  return bubbleFormats(blot.parent, formats);
+	}
+
+	exports.bubbleFormats = bubbleFormats;
+	exports.BlockEmbed = BlockEmbed;
+	exports.default = Block;
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Break = function (_Embed) {
+	  _inherits(Break, _Embed);
+
+	  function Break() {
+	    _classCallCheck(this, Break);
+
+	    return _possibleConstructorReturn(this, (Break.__proto__ || Object.getPrototypeOf(Break)).apply(this, arguments));
+	  }
+
+	  _createClass(Break, [{
+	    key: 'insertInto',
+	    value: function insertInto(parent, ref) {
+	      if (parent.children.length === 0) {
+	        _get(Break.prototype.__proto__ || Object.getPrototypeOf(Break.prototype), 'insertInto', this).call(this, parent, ref);
+	      }
+	    }
+	  }, {
+	    key: 'length',
+	    value: function length() {
+	      return 0;
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value() {
+	      return '';
+	    }
+	  }], [{
+	    key: 'value',
+	    value: function value(domNode) {
+	      return undefined;
+	    }
+	  }]);
+
+	  return Break;
+	}(_embed2.default);
+
+	Break.blotName = 'break';
+	Break.tagName = 'BR';
+
+	exports.default = Break;
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Embed = function (_Parchment$Embed) {
+	  _inherits(Embed, _Parchment$Embed);
+
+	  function Embed() {
+	    _classCallCheck(this, Embed);
+
+	    return _possibleConstructorReturn(this, (Embed.__proto__ || Object.getPrototypeOf(Embed)).apply(this, arguments));
+	  }
+
+	  return Embed;
+	}(_parchment2.default.Embed);
+
+	exports.default = Embed;
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _text = __webpack_require__(36);
+
+	var _text2 = _interopRequireDefault(_text);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Inline = function (_Parchment$Inline) {
+	  _inherits(Inline, _Parchment$Inline);
+
+	  function Inline() {
+	    _classCallCheck(this, Inline);
+
+	    return _possibleConstructorReturn(this, (Inline.__proto__ || Object.getPrototypeOf(Inline)).apply(this, arguments));
+	  }
+
+	  _createClass(Inline, [{
+	    key: 'formatAt',
+	    value: function formatAt(index, length, name, value) {
+	      if (Inline.compare(this.statics.blotName, name) < 0 && _parchment2.default.query(name, _parchment2.default.Scope.BLOT)) {
+	        var blot = this.isolate(index, length);
+	        if (value) {
+	          blot.wrap(name, value);
+	        }
+	      } else {
+	        _get(Inline.prototype.__proto__ || Object.getPrototypeOf(Inline.prototype), 'formatAt', this).call(this, index, length, name, value);
+	      }
+	    }
+	  }], [{
+	    key: 'compare',
+	    value: function compare(self, other) {
+	      var selfIndex = Inline.order.indexOf(self);
+	      var otherIndex = Inline.order.indexOf(other);
+	      if (selfIndex >= 0 || otherIndex >= 0) {
+	        return selfIndex - otherIndex;
+	      } else if (self === other) {
+	        return 0;
+	      } else if (self < other) {
+	        return -1;
+	      } else {
+	        return 1;
+	      }
+	    }
+	  }]);
+
+	  return Inline;
+	}(_parchment2.default.Inline);
+
+	Inline.allowedChildren = [Inline, _embed2.default, _text2.default];
+	// Lower index means deeper in the DOM tree, since not found (-1) is for embeds
+	Inline.order = ['cursor', 'inline', // Must be lower
+	'code', 'underline', 'strike', 'italic', 'bold', 'script', 'link' // Must be higher
+	];
+
+	exports.default = Inline;
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TextBlot = function (_Parchment$Text) {
+	  _inherits(TextBlot, _Parchment$Text);
+
+	  function TextBlot() {
+	    _classCallCheck(this, TextBlot);
+
+	    return _possibleConstructorReturn(this, (TextBlot.__proto__ || Object.getPrototypeOf(TextBlot)).apply(this, arguments));
+	  }
+
+	  return TextBlot;
+	}(_parchment2.default.Text);
+
+	exports.default = TextBlot;
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Cursor = function (_Embed) {
+	  _inherits(Cursor, _Embed);
+
+	  _createClass(Cursor, null, [{
+	    key: 'value',
+	    value: function value(domNode) {
+	      return undefined;
+	    }
+	  }]);
+
+	  function Cursor(domNode, selection) {
+	    _classCallCheck(this, Cursor);
+
+	    var _this = _possibleConstructorReturn(this, (Cursor.__proto__ || Object.getPrototypeOf(Cursor)).call(this, domNode));
+
+	    _this.selection = selection;
+	    _this.textNode = document.createTextNode(Cursor.CONTENTS);
+	    _this.domNode.appendChild(_this.textNode);
+	    _this._length = 0;
+	    return _this;
+	  }
+
+	  _createClass(Cursor, [{
+	    key: 'detach',
+	    value: function detach() {
+	      // super.detach() will also clear domNode.__blot
+	      if (this.parent != null) this.parent.removeChild(this);
+	    }
+	  }, {
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (this._length !== 0) {
+	        return _get(Cursor.prototype.__proto__ || Object.getPrototypeOf(Cursor.prototype), 'format', this).call(this, name, value);
+	      }
+	      var target = this,
+	          index = 0;
+	      while (target != null && target.statics.scope !== _parchment2.default.Scope.BLOCK_BLOT) {
+	        index += target.offset(target.parent);
+	        target = target.parent;
+	      }
+	      if (target != null) {
+	        this._length = Cursor.CONTENTS.length;
+	        target.optimize();
+	        target.formatAt(index, Cursor.CONTENTS.length, name, value);
+	        this._length = 0;
+	      }
+	    }
+	  }, {
+	    key: 'index',
+	    value: function index(node, offset) {
+	      if (node === this.textNode) return 0;
+	      return _get(Cursor.prototype.__proto__ || Object.getPrototypeOf(Cursor.prototype), 'index', this).call(this, node, offset);
+	    }
+	  }, {
+	    key: 'length',
+	    value: function length() {
+	      return this._length;
+	    }
+	  }, {
+	    key: 'position',
+	    value: function position(index) {
+	      return [this.textNode, this.textNode.data.length];
+	    }
+	  }, {
+	    key: 'remove',
+	    value: function remove() {
+	      _get(Cursor.prototype.__proto__ || Object.getPrototypeOf(Cursor.prototype), 'remove', this).call(this);
+	      this.parent = null;
+	    }
+	  }, {
+	    key: 'restore',
+	    value: function restore() {
+	      var _this2 = this;
+
+	      if (this.selection.composing) return;
+	      if (this.parent == null) return;
+	      var textNode = this.textNode;
+	      var range = this.selection.getNativeRange();
+	      // Link format will insert text outside of anchor tag
+	      while (this.domNode.lastChild != null && this.domNode.lastChild !== this.textNode) {
+	        this.domNode.parentNode.insertBefore(this.domNode.lastChild, this.domNode);
+	      }
+	      if (this.textNode.data !== Cursor.CONTENTS) {
+	        this.textNode.data = this.textNode.data.split(Cursor.CONTENTS).join('');
+	        this.parent.insertBefore(_parchment2.default.create(this.textNode), this);
+	        this.textNode = document.createTextNode(Cursor.CONTENTS);
+	        this.domNode.appendChild(this.textNode);
+	      }
+	      this.remove();
+	      if (range != null && range.start.node === textNode && range.end.node === textNode) {
+	        this.selection.emitter.once(_emitter2.default.events.SCROLL_OPTIMIZE, function () {
+	          var _map = [range.start.offset, range.end.offset].map(function (offset) {
+	            return Math.max(0, Math.min(textNode.data.length, offset - 1));
+	          });
+
+	          var _map2 = _slicedToArray(_map, 2);
+
+	          var start = _map2[0];
+	          var end = _map2[1];
+
+	          _this2.selection.setNativeRange(textNode, start, textNode, end);
+	        });
+	      }
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update(mutations) {
+	      var _this3 = this;
+
+	      mutations.forEach(function (mutation) {
+	        if (mutation.type === 'characterData' && mutation.target === _this3.textNode) {
+	          _this3.restore();
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value() {
+	      return '';
+	    }
+	  }]);
+
+	  return Cursor;
+	}(_embed2.default);
+
+	Cursor.blotName = 'cursor';
+	Cursor.className = 'ql-cursor';
+	Cursor.tagName = 'span';
+	Cursor.CONTENTS = '﻿'; // Zero width no break space
+
+
+	exports.default = Cursor;
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
+	var clone = (function() {
+	'use strict';
+
+	/**
+	 * Clones (copies) an Object using deep copying.
+	 *
+	 * This function supports circular references by default, but if you are certain
+	 * there are no circular references in your object, you can save some CPU time
+	 * by calling clone(obj, false).
+	 *
+	 * Caution: if `circular` is false and `parent` contains circular references,
+	 * your program may enter an infinite loop and crash.
+	 *
+	 * @param `parent` - the object to be cloned
+	 * @param `circular` - set to true if the object to be cloned may contain
+	 *    circular references. (optional - true by default)
+	 * @param `depth` - set to a number if the object is only to be cloned to
+	 *    a particular depth. (optional - defaults to Infinity)
+	 * @param `prototype` - sets the prototype to be used when cloning an object.
+	 *    (optional - defaults to parent prototype).
+	*/
+	function clone(parent, circular, depth, prototype) {
+	  var filter;
+	  if (typeof circular === 'object') {
+	    depth = circular.depth;
+	    prototype = circular.prototype;
+	    filter = circular.filter;
+	    circular = circular.circular
+	  }
+	  // maintain two arrays for circular references, where corresponding parents
+	  // and children have the same index
+	  var allParents = [];
+	  var allChildren = [];
+
+	  var useBuffer = typeof Buffer != 'undefined';
+
+	  if (typeof circular == 'undefined')
+	    circular = true;
+
+	  if (typeof depth == 'undefined')
+	    depth = Infinity;
+
+	  // recurse this function so we don't reset allParents and allChildren
+	  function _clone(parent, depth) {
+	    // cloning null always returns null
+	    if (parent === null)
+	      return null;
+
+	    if (depth == 0)
+	      return parent;
+
+	    var child;
+	    var proto;
+	    if (typeof parent != 'object') {
+	      return parent;
+	    }
+
+	    if (clone.__isArray(parent)) {
+	      child = [];
+	    } else if (clone.__isRegExp(parent)) {
+	      child = new RegExp(parent.source, __getRegExpFlags(parent));
+	      if (parent.lastIndex) child.lastIndex = parent.lastIndex;
+	    } else if (clone.__isDate(parent)) {
+	      child = new Date(parent.getTime());
+	    } else if (useBuffer && Buffer.isBuffer(parent)) {
+	      child = new Buffer(parent.length);
+	      parent.copy(child);
+	      return child;
+	    } else {
+	      if (typeof prototype == 'undefined') {
+	        proto = Object.getPrototypeOf(parent);
+	        child = Object.create(proto);
+	      }
+	      else {
+	        child = Object.create(prototype);
+	        proto = prototype;
+	      }
+	    }
+
+	    if (circular) {
+	      var index = allParents.indexOf(parent);
+
+	      if (index != -1) {
+	        return allChildren[index];
+	      }
+	      allParents.push(parent);
+	      allChildren.push(child);
+	    }
+
+	    for (var i in parent) {
+	      var attrs;
+	      if (proto) {
+	        attrs = Object.getOwnPropertyDescriptor(proto, i);
+	      }
+
+	      if (attrs && attrs.set == null) {
+	        continue;
+	      }
+	      child[i] = _clone(parent[i], depth - 1);
+	    }
+
+	    return child;
+	  }
+
+	  return _clone(parent, depth);
+	}
+
+	/**
+	 * Simple flat clone using prototype, accepts only objects, usefull for property
+	 * override on FLAT configuration object (no nested props).
+	 *
+	 * USE WITH CAUTION! This may not behave as you wish if you do not know how this
+	 * works.
+	 */
+	clone.clonePrototype = function clonePrototype(parent) {
+	  if (parent === null)
+	    return null;
+
+	  var c = function () {};
+	  c.prototype = parent;
+	  return new c();
+	};
+
+	// private utility functions
+
+	function __objToStr(o) {
+	  return Object.prototype.toString.call(o);
+	};
+	clone.__objToStr = __objToStr;
+
+	function __isDate(o) {
+	  return typeof o === 'object' && __objToStr(o) === '[object Date]';
+	};
+	clone.__isDate = __isDate;
+
+	function __isArray(o) {
+	  return typeof o === 'object' && __objToStr(o) === '[object Array]';
+	};
+	clone.__isArray = __isArray;
+
+	function __isRegExp(o) {
+	  return typeof o === 'object' && __objToStr(o) === '[object RegExp]';
+	};
+	clone.__isRegExp = __isRegExp;
+
+	function __getRegExpFlags(re) {
+	  var flags = '';
+	  if (re.global) flags += 'g';
+	  if (re.ignoreCase) flags += 'i';
+	  if (re.multiline) flags += 'm';
+	  return flags;
+	};
+	clone.__getRegExpFlags = __getRegExpFlags;
+
+	return clone;
+	})();
+
+	if (typeof module === 'object' && module.exports) {
+	  module.exports = clone;
+	}
+
+
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Module = function Module(quill) {
+	  var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	  _classCallCheck(this, Module);
+
+	  this.quill = quill;
+	  this.options = options;
+	};
+
+	Module.DEFAULTS = {};
+
+	exports.default = Module;
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.Range = undefined;
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _clone = __webpack_require__(38);
+
+	var _clone2 = _interopRequireDefault(_clone);
+
+	var _deepEqual = __webpack_require__(22);
+
+	var _deepEqual2 = _interopRequireDefault(_deepEqual);
+
+	var _break = __webpack_require__(33);
+
+	var _break2 = _interopRequireDefault(_break);
+
+	var _emitter3 = __webpack_require__(28);
+
+	var _emitter4 = _interopRequireDefault(_emitter3);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var debug = (0, _logger2.default)('quill:selection');
+
+	var Range = function Range(index) {
+	  var length = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+
+	  _classCallCheck(this, Range);
+
+	  this.index = index;
+	  this.length = length;
+	};
+
+	var Selection = function () {
+	  function Selection(scroll, emitter) {
+	    var _this = this;
+
+	    _classCallCheck(this, Selection);
+
+	    this.emitter = emitter;
+	    this.scroll = scroll;
+	    this.composing = false;
+	    this.root = this.scroll.domNode;
+	    this.root.addEventListener('compositionstart', function () {
+	      _this.composing = true;
+	    });
+	    this.root.addEventListener('compositionend', function () {
+	      _this.composing = false;
+	    });
+	    this.cursor = _parchment2.default.create('cursor', this);
+	    // savedRange is last non-null range
+	    this.lastRange = this.savedRange = new Range(0, 0);
+	    ['keyup', 'mouseup', 'mouseleave', 'touchend', 'touchleave', 'focus', 'blur'].forEach(function (eventName) {
+	      _this.root.addEventListener(eventName, function () {
+	        // When range used to be a selection and user click within the selection,
+	        // the range now being a cursor has not updated yet without setTimeout
+	        setTimeout(_this.update.bind(_this, _emitter4.default.sources.USER), 100);
+	      });
+	    });
+	    this.emitter.on(_emitter4.default.events.EDITOR_CHANGE, function (type, delta) {
+	      if (type === _emitter4.default.events.TEXT_CHANGE && delta.length() > 0) {
+	        _this.update(_emitter4.default.sources.SILENT);
+	      }
+	    });
+	    this.emitter.on(_emitter4.default.events.SCROLL_BEFORE_UPDATE, function () {
+	      var native = _this.getNativeRange();
+	      if (native == null) return;
+	      if (native.start.node === _this.cursor.textNode) return; // cursor.restore() will handle
+	      // TODO unclear if this has negative side effects
+	      _this.emitter.once(_emitter4.default.events.SCROLL_UPDATE, function () {
+	        try {
+	          _this.setNativeRange(native.start.node, native.start.offset, native.end.node, native.end.offset);
+	        } catch (ignored) {}
+	      });
+	    });
+	    this.update(_emitter4.default.sources.SILENT);
+	  }
+
+	  _createClass(Selection, [{
+	    key: 'focus',
+	    value: function focus() {
+	      if (this.hasFocus()) return;
+	      var bodyTop = document.body.scrollTop;
+	      this.root.focus();
+	      document.body.scrollTop = bodyTop;
+	      this.setRange(this.savedRange);
+	    }
+	  }, {
+	    key: 'format',
+	    value: function format(_format, value) {
+	      this.scroll.update();
+	      var nativeRange = this.getNativeRange();
+	      if (nativeRange == null || !nativeRange.native.collapsed || _parchment2.default.query(_format, _parchment2.default.Scope.BLOCK)) return;
+	      if (nativeRange.start.node !== this.cursor.textNode) {
+	        var blot = _parchment2.default.find(nativeRange.start.node, false);
+	        if (blot == null) return;
+	        // TODO Give blot ability to not split
+	        if (blot instanceof _parchment2.default.Leaf) {
+	          var after = blot.split(nativeRange.start.offset);
+	          blot.parent.insertBefore(this.cursor, after);
+	        } else {
+	          blot.insertBefore(this.cursor, nativeRange.start.node); // Should never happen
+	        }
+	        this.cursor.attach();
+	      }
+	      this.cursor.format(_format, value);
+	      this.scroll.optimize();
+	      this.setNativeRange(this.cursor.textNode, this.cursor.textNode.data.length);
+	      this.update();
+	    }
+	  }, {
+	    key: 'getBounds',
+	    value: function getBounds(index) {
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+
+	      var scrollLength = this.scroll.length();
+	      index = Math.min(index, scrollLength - 1);
+	      length = Math.min(index + length, scrollLength - 1) - index;
+	      var bounds = void 0;var node = void 0;
+	      var _scroll$leaf = this.scroll.leaf(index);
+
+	      var _scroll$leaf2 = _slicedToArray(_scroll$leaf, 2);
+
+	      var leaf = _scroll$leaf2[0];
+	      var offset = _scroll$leaf2[1];
+
+	      if (leaf == null) return null;
+
+	      var _leaf$position = leaf.position(offset, true);
+
+	      var _leaf$position2 = _slicedToArray(_leaf$position, 2);
+
+	      node = _leaf$position2[0];
+	      offset = _leaf$position2[1];
+
+	      var range = document.createRange();
+	      if (length > 0) {
+	        range.setStart(node, offset);
+
+	        var _scroll$leaf3 = this.scroll.leaf(index + length);
+
+	        var _scroll$leaf4 = _slicedToArray(_scroll$leaf3, 2);
+
+	        leaf = _scroll$leaf4[0];
+	        offset = _scroll$leaf4[1];
+
+	        if (leaf == null) return null;
+
+	        var _leaf$position3 = leaf.position(offset, true);
+
+	        var _leaf$position4 = _slicedToArray(_leaf$position3, 2);
+
+	        node = _leaf$position4[0];
+	        offset = _leaf$position4[1];
+
+	        range.setEnd(node, offset);
+	        bounds = range.getBoundingClientRect();
+	      } else {
+	        var side = 'left';
+	        if (node instanceof Text) {
+	          if (offset < node.data.length) {
+	            range.setStart(node, offset);
+	            range.setEnd(node, offset + 1);
+	          } else {
+	            range.setStart(node, offset - 1);
+	            range.setEnd(node, offset);
+	            side = 'right';
+	          }
+	          var rect = range.getBoundingClientRect();
+	        } else {
+	          var rect = leaf.domNode.getBoundingClientRect();
+	          if (offset > 0) side = 'right';
+	        }
+	        bounds = {
+	          height: rect.height,
+	          left: rect[side],
+	          width: 0,
+	          top: rect.top
+	        };
+	      }
+	      var containerBounds = this.root.parentNode.getBoundingClientRect();
+	      return {
+	        left: bounds.left - containerBounds.left,
+	        right: bounds.left + bounds.width - containerBounds.left,
+	        top: bounds.top - containerBounds.top,
+	        bottom: bounds.top + bounds.height - containerBounds.top,
+	        height: bounds.height,
+	        width: bounds.width
+	      };
+	    }
+	  }, {
+	    key: 'getNativeRange',
+	    value: function getNativeRange() {
+	      var selection = document.getSelection();
+	      if (selection == null || selection.rangeCount <= 0) return null;
+	      var nativeRange = selection.getRangeAt(0);
+	      if (nativeRange == null) return null;
+	      if (!contains(this.root, nativeRange.startContainer) || !nativeRange.collapsed && !contains(this.root, nativeRange.endContainer)) {
+	        return null;
+	      }
+	      var range = {
+	        start: { node: nativeRange.startContainer, offset: nativeRange.startOffset },
+	        end: { node: nativeRange.endContainer, offset: nativeRange.endOffset },
+	        native: nativeRange
+	      };
+	      [range.start, range.end].forEach(function (position) {
+	        var node = position.node,
+	            offset = position.offset;
+	        while (!(node instanceof Text) && node.childNodes.length > 0) {
+	          if (node.childNodes.length > offset) {
+	            node = node.childNodes[offset];
+	            offset = 0;
+	          } else if (node.childNodes.length === offset) {
+	            node = node.lastChild;
+	            offset = node instanceof Text ? node.data.length : node.childNodes.length + 1;
+	          } else {
+	            break;
+	          }
+	        }
+	        position.node = node, position.offset = offset;
+	      });
+	      debug.info('getNativeRange', range);
+	      return range;
+	    }
+	  }, {
+	    key: 'getRange',
+	    value: function getRange() {
+	      var _this2 = this;
+
+	      if (!this.hasFocus()) return [null, null];
+	      var range = this.getNativeRange();
+	      if (range == null) return [null, null];
+	      var positions = [[range.start.node, range.start.offset]];
+	      if (!range.native.collapsed) {
+	        positions.push([range.end.node, range.end.offset]);
+	      }
+	      var indexes = positions.map(function (position) {
+	        var _position = _slicedToArray(position, 2);
+
+	        var node = _position[0];
+	        var offset = _position[1];
+
+	        var blot = _parchment2.default.find(node, true);
+	        var index = blot.offset(_this2.scroll);
+	        if (offset === 0) {
+	          return index;
+	        } else if (blot instanceof _parchment2.default.Container) {
+	          return index + blot.length();
+	        } else {
+	          return index + blot.index(node, offset);
+	        }
+	      });
+	      var start = Math.min.apply(Math, _toConsumableArray(indexes)),
+	          end = Math.max.apply(Math, _toConsumableArray(indexes));
+	      return [new Range(start, end - start), range];
+	    }
+	  }, {
+	    key: 'hasFocus',
+	    value: function hasFocus() {
+	      return document.activeElement === this.root;
+	    }
+	  }, {
+	    key: 'scrollIntoView',
+	    value: function scrollIntoView() {
+	      var range = arguments.length <= 0 || arguments[0] === undefined ? this.lastRange : arguments[0];
+
+	      if (range == null) return;
+	      var bounds = this.getBounds(range.index, range.length);
+	      if (bounds == null) return;
+	      if (this.root.offsetHeight < bounds.bottom) {
+	        var _scroll$line = this.scroll.line(Math.min(range.index + range.length, this.scroll.length() - 1));
+
+	        var _scroll$line2 = _slicedToArray(_scroll$line, 1);
+
+	        var line = _scroll$line2[0];
+
+	        this.root.scrollTop = line.domNode.offsetTop + line.domNode.offsetHeight - this.root.offsetHeight;
+	      } else if (bounds.top < 0) {
+	        var _scroll$line3 = this.scroll.line(Math.min(range.index, this.scroll.length() - 1));
+
+	        var _scroll$line4 = _slicedToArray(_scroll$line3, 1);
+
+	        var _line = _scroll$line4[0];
+
+	        this.root.scrollTop = _line.domNode.offsetTop;
+	      }
+	    }
+	  }, {
+	    key: 'setNativeRange',
+	    value: function setNativeRange(startNode, startOffset) {
+	      var endNode = arguments.length <= 2 || arguments[2] === undefined ? startNode : arguments[2];
+	      var endOffset = arguments.length <= 3 || arguments[3] === undefined ? startOffset : arguments[3];
+	      var force = arguments.length <= 4 || arguments[4] === undefined ? false : arguments[4];
+
+	      debug.info('setNativeRange', startNode, startOffset, endNode, endOffset);
+	      if (startNode != null && (this.root.parentNode == null || startNode.parentNode == null || endNode.parentNode == null)) {
+	        return;
+	      }
+	      var selection = document.getSelection();
+	      if (selection == null) return;
+	      if (startNode != null) {
+	        if (!this.hasFocus()) this.root.focus();
+	        var nativeRange = this.getNativeRange();
+	        if (nativeRange == null || force || startNode !== nativeRange.start.node || startOffset !== nativeRange.start.offset || endNode !== nativeRange.end.node || endOffset !== nativeRange.end.offset) {
+	          var range = document.createRange();
+	          range.setStart(startNode, startOffset);
+	          range.setEnd(endNode, endOffset);
+	          selection.removeAllRanges();
+	          selection.addRange(range);
+	        }
+	      } else {
+	        selection.removeAllRanges();
+	        this.root.blur();
+	        document.body.focus(); // root.blur() not enough on IE11+Travis+SauceLabs (but not local VMs)
+	      }
+	    }
+	  }, {
+	    key: 'setRange',
+	    value: function setRange(range) {
+	      var _this3 = this;
+
+	      var force = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+	      var source = arguments.length <= 2 || arguments[2] === undefined ? _emitter4.default.sources.API : arguments[2];
+
+	      if (typeof force === 'string') {
+	        source = force;
+	        force = false;
+	      }
+	      debug.info('setRange', range);
+	      if (range != null) {
+	        (function () {
+	          var indexes = range.collapsed ? [range.index] : [range.index, range.index + range.length];
+	          var args = [];
+	          var scrollLength = _this3.scroll.length();
+	          indexes.forEach(function (index, i) {
+	            index = Math.min(scrollLength - 1, index);
+	            var node = void 0;
+	            var _scroll$leaf5 = _this3.scroll.leaf(index);
+
+	            var _scroll$leaf6 = _slicedToArray(_scroll$leaf5, 2);
+
+	            var leaf = _scroll$leaf6[0];
+	            var offset = _scroll$leaf6[1];
+
+	            var _leaf$position5 = leaf.position(offset, i !== 0);
+
+	            var _leaf$position6 = _slicedToArray(_leaf$position5, 2);
+
+	            node = _leaf$position6[0];
+	            offset = _leaf$position6[1];
+
+	            args.push(node, offset);
+	          });
+	          if (args.length < 2) {
+	            args = args.concat(args);
+	          }
+	          _this3.setNativeRange.apply(_this3, _toConsumableArray(args).concat([force]));
+	        })();
+	      } else {
+	        this.setNativeRange(null);
+	      }
+	      this.update(source);
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update() {
+	      var source = arguments.length <= 0 || arguments[0] === undefined ? _emitter4.default.sources.USER : arguments[0];
+
+	      var nativeRange = void 0,
+	          oldRange = this.lastRange;
+
+	      var _getRange = this.getRange();
+
+	      var _getRange2 = _slicedToArray(_getRange, 2);
+
+	      this.lastRange = _getRange2[0];
+	      nativeRange = _getRange2[1];
+
+	      if (this.lastRange != null) {
+	        this.savedRange = this.lastRange;
+	      }
+	      if (!(0, _deepEqual2.default)(oldRange, this.lastRange)) {
+	        var _emitter;
+
+	        if (!this.composing && nativeRange != null && nativeRange.native.collapsed && nativeRange.start.node !== this.cursor.textNode) {
+	          this.cursor.restore();
+	        }
+	        var args = [_emitter4.default.events.SELECTION_CHANGE, (0, _clone2.default)(this.lastRange), (0, _clone2.default)(oldRange), source];
+	        (_emitter = this.emitter).emit.apply(_emitter, [_emitter4.default.events.EDITOR_CHANGE].concat(args));
+	        if (source !== _emitter4.default.sources.SILENT) {
+	          var _emitter2;
+
+	          (_emitter2 = this.emitter).emit.apply(_emitter2, args);
+	        }
+	      }
+	    }
+	  }]);
+
+	  return Selection;
+	}();
+
+	function contains(parent, descendant) {
+	  try {
+	    // Firefox inserts inaccessible nodes around video elements
+	    descendant.parentNode;
+	  } catch (e) {
+	    return false;
+	  }
+	  // IE11 has bug with Text nodes
+	  // https://connect.microsoft.com/IE/feedback/details/780874/node-contains-is-incorrect
+	  if (descendant instanceof Text) {
+	    descendant = descendant.parentNode;
+	  }
+	  return parent.contains(descendant);
+	}
+
+	exports.Range = Range;
+	exports.default = Selection;
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Theme = function () {
+	  function Theme(quill, options) {
+	    _classCallCheck(this, Theme);
+
+	    this.quill = quill;
+	    this.options = options;
+	    this.modules = {};
+	  }
+
+	  _createClass(Theme, [{
+	    key: 'init',
+	    value: function init() {
+	      var _this = this;
+
+	      Object.keys(this.options.modules).forEach(function (name) {
+	        if (_this.modules[name] == null) {
+	          _this.addModule(name);
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'addModule',
+	    value: function addModule(name) {
+	      var moduleClass = this.quill.constructor.import('modules/' + name);
+	      this.modules[name] = new moduleClass(this.quill, this.options.modules[name] || {});
+	      return this.modules[name];
+	    }
+	  }]);
+
+	  return Theme;
+	}();
+
+	Theme.DEFAULTS = {
+	  modules: {}
+	};
+	Theme.themes = {
+	  'default': Theme
+	};
+
+	exports.default = Theme;
+
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Container = function (_Parchment$Container) {
+	  _inherits(Container, _Parchment$Container);
+
+	  function Container() {
+	    _classCallCheck(this, Container);
+
+	    return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+	  }
+
+	  return Container;
+	}(_parchment2.default.Container);
+
+	Container.allowedChildren = [_block2.default, _block.BlockEmbed, Container];
+
+	exports.default = Container;
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	var _break = __webpack_require__(33);
+
+	var _break2 = _interopRequireDefault(_break);
+
+	var _container = __webpack_require__(42);
+
+	var _container2 = _interopRequireDefault(_container);
+
+	var _code = __webpack_require__(31);
+
+	var _code2 = _interopRequireDefault(_code);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	function isLine(blot) {
+	  return blot instanceof _block2.default || blot instanceof _block.BlockEmbed;
+	}
+
+	var Scroll = function (_Parchment$Scroll) {
+	  _inherits(Scroll, _Parchment$Scroll);
+
+	  function Scroll(domNode, config) {
+	    _classCallCheck(this, Scroll);
+
+	    var _this = _possibleConstructorReturn(this, (Scroll.__proto__ || Object.getPrototypeOf(Scroll)).call(this, domNode));
+
+	    _this.emitter = config.emitter;
+	    if (Array.isArray(config.whitelist)) {
+	      _this.whitelist = config.whitelist.reduce(function (whitelist, format) {
+	        whitelist[format] = true;
+	        return whitelist;
+	      }, {});
+	    }
+	    _this.optimize();
+	    return _this;
+	  }
+
+	  _createClass(Scroll, [{
+	    key: 'deleteAt',
+	    value: function deleteAt(index, length) {
+	      var _line = this.line(index);
+
+	      var _line2 = _slicedToArray(_line, 2);
+
+	      var first = _line2[0];
+	      var offset = _line2[1];
+
+	      var _line3 = this.line(index + length);
+
+	      var _line4 = _slicedToArray(_line3, 1);
+
+	      var last = _line4[0];
+
+	      _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'deleteAt', this).call(this, index, length);
+	      if (last != null && first !== last && offset > 0 && !(first instanceof _block.BlockEmbed) && !(last instanceof _block.BlockEmbed)) {
+	        if (last instanceof _code2.default) {
+	          last.deleteAt(last.length() - 1, 1);
+	        }
+	        var ref = last.children.head instanceof _break2.default ? null : last.children.head;
+	        first.moveChildren(last, ref);
+	        first.remove();
+	      }
+	      this.optimize();
+	    }
+	  }, {
+	    key: 'formatAt',
+	    value: function formatAt(index, length, format, value) {
+	      if (this.whitelist != null && !this.whitelist[format]) return;
+	      _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'formatAt', this).call(this, index, length, format, value);
+	      this.optimize();
+	    }
+	  }, {
+	    key: 'insertAt',
+	    value: function insertAt(index, value, def) {
+	      if (def != null && this.whitelist != null && !this.whitelist[value]) return;
+	      if (index >= this.length()) {
+	        if (def == null || _parchment2.default.query(value, _parchment2.default.Scope.BLOCK) == null) {
+	          var blot = _parchment2.default.create(this.statics.defaultChild);
+	          this.appendChild(blot);
+	          if (def == null && value.endsWith('\n')) {
+	            value = value.slice(0, -1);
+	          }
+	          blot.insertAt(0, value, def);
+	        } else {
+	          var embed = _parchment2.default.create(value, def);
+	          this.appendChild(embed);
+	        }
+	      } else {
+	        _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'insertAt', this).call(this, index, value, def);
+	      }
+	      this.optimize();
+	    }
+	  }, {
+	    key: 'insertBefore',
+	    value: function insertBefore(blot, ref) {
+	      if (blot.statics.scope === _parchment2.default.Scope.INLINE_BLOT) {
+	        var wrapper = _parchment2.default.create(this.statics.defaultChild);
+	        wrapper.appendChild(blot);
+	        blot = wrapper;
+	      }
+	      _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'insertBefore', this).call(this, blot, ref);
+	    }
+	  }, {
+	    key: 'leaf',
+	    value: function leaf(index) {
+	      return this.path(index).pop() || [null, -1];
+	    }
+	  }, {
+	    key: 'line',
+	    value: function line(index) {
+	      return this.descendant(isLine, index);
+	    }
+	  }, {
+	    key: 'lines',
+	    value: function lines() {
+	      var index = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+	      var length = arguments.length <= 1 || arguments[1] === undefined ? Number.MAX_VALUE : arguments[1];
+
+	      var getLines = function getLines(blot, index, length) {
+	        var lines = [],
+	            lengthLeft = length;
+	        blot.children.forEachAt(index, length, function (child, index, length) {
+	          if (isLine(child)) {
+	            lines.push(child);
+	          } else if (child instanceof _parchment2.default.Container) {
+	            lines = lines.concat(getLines(child, index, lengthLeft));
+	          }
+	          lengthLeft -= length;
+	        });
+	        return lines;
+	      };
+	      return getLines(this, index, length);
+	    }
+	  }, {
+	    key: 'optimize',
+	    value: function optimize() {
+	      var mutations = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
+
+	      if (this.batch === true) return;
+	      _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'optimize', this).call(this, mutations);
+	      if (mutations.length > 0) {
+	        this.emitter.emit(_emitter2.default.events.SCROLL_OPTIMIZE, mutations);
+	      }
+	    }
+	  }, {
+	    key: 'path',
+	    value: function path(index) {
+	      return _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'path', this).call(this, index).slice(1); // Exclude self
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update(mutations) {
+	      if (this.batch === true) return;
+	      var source = _emitter2.default.sources.USER;
+	      if (typeof mutations === 'string') {
+	        source = mutations;
+	      }
+	      if (!Array.isArray(mutations)) {
+	        mutations = this.observer.takeRecords();
+	      }
+	      if (mutations.length > 0) {
+	        this.emitter.emit(_emitter2.default.events.SCROLL_BEFORE_UPDATE, source, mutations);
+	      }
+	      _get(Scroll.prototype.__proto__ || Object.getPrototypeOf(Scroll.prototype), 'update', this).call(this, mutations.concat([])); // pass copy
+	      if (mutations.length > 0) {
+	        this.emitter.emit(_emitter2.default.events.SCROLL_UPDATE, source, mutations);
+	      }
+	    }
+	  }]);
+
+	  return Scroll;
+	}(_parchment2.default.Scroll);
+
+	Scroll.blotName = 'scroll';
+	Scroll.className = 'ql-editor';
+	Scroll.tagName = 'DIV';
+	Scroll.defaultChild = 'block';
+	Scroll.allowedChildren = [_block2.default, _block.BlockEmbed, _container2.default];
+
+	exports.default = Scroll;
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.matchText = exports.matchSpacing = exports.matchNewline = exports.matchBlot = exports.matchAttributor = exports.default = undefined;
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	var _align = __webpack_require__(45);
+
+	var _background = __webpack_require__(46);
+
+	var _color = __webpack_require__(47);
+
+	var _direction = __webpack_require__(48);
+
+	var _font = __webpack_require__(49);
+
+	var _size = __webpack_require__(50);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var debug = (0, _logger2.default)('quill:clipboard');
+
+	var CLIPBOARD_CONFIG = [[Node.TEXT_NODE, matchText], ['br', matchBreak], [Node.ELEMENT_NODE, matchNewline], [Node.ELEMENT_NODE, matchBlot], [Node.ELEMENT_NODE, matchSpacing], [Node.ELEMENT_NODE, matchAttributor], [Node.ELEMENT_NODE, matchStyles], ['b', matchAlias.bind(matchAlias, 'bold')], ['i', matchAlias.bind(matchAlias, 'italic')], ['style', matchIgnore]];
+
+	var STYLE_ATTRIBUTORS = [_align.AlignStyle, _background.BackgroundStyle, _color.ColorStyle, _direction.DirectionStyle, _font.FontStyle, _size.SizeStyle].reduce(function (memo, attr) {
+	  memo[attr.keyName] = attr;
+	  return memo;
+	}, {});
+
+	var Clipboard = function (_Module) {
+	  _inherits(Clipboard, _Module);
+
+	  function Clipboard(quill, options) {
+	    _classCallCheck(this, Clipboard);
+
+	    var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this, quill, options));
+
+	    _this.quill.root.addEventListener('paste', _this.onPaste.bind(_this));
+	    _this.container = _this.quill.addContainer('ql-clipboard');
+	    _this.container.setAttribute('contenteditable', true);
+	    _this.container.setAttribute('tabindex', -1);
+	    _this.matchers = [];
+	    CLIPBOARD_CONFIG.concat(_this.options.matchers).forEach(function (pair) {
+	      _this.addMatcher.apply(_this, _toConsumableArray(pair));
+	    });
+	    return _this;
+	  }
+
+	  _createClass(Clipboard, [{
+	    key: 'addMatcher',
+	    value: function addMatcher(selector, matcher) {
+	      this.matchers.push([selector, matcher]);
+	    }
+	  }, {
+	    key: 'convert',
+	    value: function convert(html) {
+	      var _this2 = this;
+
+	      var DOM_KEY = '__ql-matcher';
+	      if (typeof html === 'string') {
+	        this.container.innerHTML = html;
+	      }
+	      var textMatchers = [],
+	          elementMatchers = [];
+	      this.matchers.forEach(function (pair) {
+	        var _pair = _slicedToArray(pair, 2);
+
+	        var selector = _pair[0];
+	        var matcher = _pair[1];
+
+	        switch (selector) {
+	          case Node.TEXT_NODE:
+	            textMatchers.push(matcher);
+	            break;
+	          case Node.ELEMENT_NODE:
+	            elementMatchers.push(matcher);
+	            break;
+	          default:
+	            [].forEach.call(_this2.container.querySelectorAll(selector), function (node) {
+	              // TODO use weakmap
+	              node[DOM_KEY] = node[DOM_KEY] || [];
+	              node[DOM_KEY].push(matcher);
+	            });
+	            break;
+	        }
+	      });
+	      var traverse = function traverse(node) {
+	        // Post-order
+	        if (node.nodeType === node.TEXT_NODE) {
+	          return textMatchers.reduce(function (delta, matcher) {
+	            return matcher(node, delta);
+	          }, new _delta2.default());
+	        } else if (node.nodeType === node.ELEMENT_NODE) {
+	          return [].reduce.call(node.childNodes || [], function (delta, childNode) {
+	            var childrenDelta = traverse(childNode);
+	            if (childNode.nodeType === node.ELEMENT_NODE) {
+	              childrenDelta = elementMatchers.reduce(function (childrenDelta, matcher) {
+	                return matcher(childNode, childrenDelta);
+	              }, childrenDelta);
+	              childrenDelta = (childNode[DOM_KEY] || []).reduce(function (childrenDelta, matcher) {
+	                return matcher(childNode, childrenDelta);
+	              }, childrenDelta);
+	            }
+	            return delta.concat(childrenDelta);
+	          }, new _delta2.default());
+	        } else {
+	          return new _delta2.default();
+	        }
+	      };
+	      var delta = traverse(this.container);
+	      // Remove trailing newline
+	      if (deltaEndsWith(delta, '\n') && delta.ops[delta.ops.length - 1].attributes == null) {
+	        delta = delta.compose(new _delta2.default().retain(delta.length() - 1).delete(1));
+	      }
+	      debug.log('convert', this.container.innerHTML, delta);
+	      this.container.innerHTML = '';
+	      return delta;
+	    }
+	  }, {
+	    key: 'onPaste',
+	    value: function onPaste(e) {
+	      var _this3 = this;
+
+	      if (e.defaultPrevented) return;
+	      var range = this.quill.getSelection();
+	      var delta = new _delta2.default().retain(range.index).delete(range.length);
+	      var bodyTop = document.body.scrollTop;
+	      this.container.focus();
+	      setTimeout(function () {
+	        delta = delta.concat(_this3.convert());
+	        _this3.quill.updateContents(delta, _quill2.default.sources.USER);
+	        // range.length contributes to delta.length()
+	        _this3.quill.setSelection(delta.length() - range.length, _quill2.default.sources.SILENT);
+	        document.body.scrollTop = bodyTop;
+	        _this3.quill.selection.scrollIntoView();
+	      }, 1);
+	    }
+	  }]);
+
+	  return Clipboard;
+	}(_module2.default);
+
+	Clipboard.DEFAULTS = {
+	  matchers: []
+	};
+
+	function computeStyle(node) {
+	  if (node.nodeType !== Node.ELEMENT_NODE) return {};
+	  var DOM_KEY = '__ql-computed-style';
+	  return node[DOM_KEY] || (node[DOM_KEY] = window.getComputedStyle(node));
+	}
+
+	function deltaEndsWith(delta, text) {
+	  var endText = "";
+	  for (var i = delta.ops.length - 1; i >= 0 && endText.length < text.length; --i) {
+	    var op = delta.ops[i];
+	    if (typeof op.insert !== 'string') break;
+	    endText = op.insert + endText;
+	  }
+	  return endText.slice(-1 * text.length) === text;
+	}
+
+	function isLine(node) {
+	  if (node.childNodes.length === 0) return false; // Exclude embed blocks
+	  var style = computeStyle(node);
+	  return ['block', 'list-item'].indexOf(style.display) > -1;
+	}
+
+	function matchAlias(format, node, delta) {
+	  return delta.compose(new _delta2.default().retain(delta.length(), _defineProperty({}, format, true)));
+	}
+
+	function matchAttributor(node, delta) {
+	  var attributes = _parchment2.default.Attributor.Attribute.keys(node);
+	  var classes = _parchment2.default.Attributor.Class.keys(node);
+	  var styles = _parchment2.default.Attributor.Style.keys(node);
+	  var formats = {};
+	  attributes.concat(classes).concat(styles).forEach(function (name) {
+	    var attr = _parchment2.default.query(name, _parchment2.default.Scope.ATTRIBUTE);
+	    if (attr != null) {
+	      formats[attr.attrName] = attr.value(node);
+	      if (formats[attr.attrName]) return;
+	    }
+	    if (STYLE_ATTRIBUTORS[name] != null) {
+	      attr = STYLE_ATTRIBUTORS[name];
+	      formats[attr.attrName] = attr.value(node);
+	    }
+	  });
+	  if (Object.keys(formats).length > 0) {
+	    delta = delta.compose(new _delta2.default().retain(delta.length(), formats));
+	  }
+	  return delta;
+	}
+
+	function matchBlot(node, delta) {
+	  var match = _parchment2.default.query(node);
+	  if (match == null) return delta;
+	  if (match.prototype instanceof _parchment2.default.Embed) {
+	    var embed = {};
+	    var value = match.value(node);
+	    if (value != null) {
+	      embed[match.blotName] = value;
+	      delta = new _delta2.default().insert(embed, match.formats(node));
+	    }
+	  } else if (typeof match.formats === 'function') {
+	    var formats = _defineProperty({}, match.blotName, match.formats(node));
+	    delta = delta.compose(new _delta2.default().retain(delta.length(), formats));
+	  }
+	  return delta;
+	}
+
+	function matchBreak(node, delta) {
+	  if (!deltaEndsWith(delta, '\n')) {
+	    delta.insert('\n');
+	  }
+	  return delta;
+	}
+
+	function matchIgnore(node, delta) {
+	  return new _delta2.default();
+	}
+
+	function matchNewline(node, delta) {
+	  if (isLine(node) && !deltaEndsWith(delta, '\n')) {
+	    delta.insert('\n');
+	  }
+	  return delta;
+	}
+
+	function matchSpacing(node, delta) {
+	  if (isLine(node) && node.nextElementSibling != null && !deltaEndsWith(delta, '\n\n')) {
+	    var nodeHeight = node.offsetHeight + parseFloat(computeStyle(node).marginTop) + parseFloat(computeStyle(node).marginBottom);
+	    if (node.nextElementSibling.offsetTop > node.offsetTop + nodeHeight * 1.5) {
+	      delta.insert('\n');
+	    }
+	  }
+	  return delta;
+	}
+
+	function matchStyles(node, delta) {
+	  var formats = {};
+	  var style = node.style || {};
+	  if (style.fontWeight && computeStyle(node).fontWeight === 'bold') {
+	    formats.bold = true;
+	  }
+	  if (Object.keys(formats).length > 0) {
+	    delta = delta.compose(new _delta2.default().retain(delta.length(), formats));
+	  }
+	  if (parseFloat(style.textIndent || 0) > 0) {
+	    // Could be 0.5in
+	    delta = new _delta2.default().insert('\t').concat(delta);
+	  }
+	  return delta;
+	}
+
+	function matchText(node, delta) {
+	  var text = node.data;
+	  // Word represents empty line with <o:p>&nbsp;</o:p>
+	  if (node.parentNode.tagName === 'O:P') {
+	    return delta.insert(text.trim());
+	  }
+	  if (!computeStyle(node.parentNode).whiteSpace.startsWith('pre')) {
+	    var replacer = function replacer(collapse, match) {
+	      match = match.replace(/[^\u00a0]/g, ''); // \u00a0 is nbsp;
+	      return match.length < 1 && collapse ? ' ' : match;
+	    };
+
+	    text = text.replace(/\r\n/g, ' ').replace(/\n/g, ' ');
+	    text = text.replace(/\s\s+/g, replacer.bind(replacer, true)); // collapse whitespace
+	    if (node.previousSibling == null && isLine(node.parentNode) || node.previousSibling != null && isLine(node.previousSibling)) {
+	      text = text.replace(/^\s+/, replacer.bind(replacer, false));
+	    }
+	    if (node.nextSibling == null && isLine(node.parentNode) || node.nextSibling != null && isLine(node.nextSibling)) {
+	      text = text.replace(/\s+$/, replacer.bind(replacer, false));
+	    }
+	  }
+	  return delta.insert(text);
+	}
+
+	exports.default = Clipboard;
+	exports.matchAttributor = matchAttributor;
+	exports.matchBlot = matchBlot;
+	exports.matchNewline = matchNewline;
+	exports.matchSpacing = matchSpacing;
+	exports.matchText = matchText;
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.AlignStyle = exports.AlignClass = undefined;
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var config = {
+	  scope: _parchment2.default.Scope.BLOCK,
+	  whitelist: ['right', 'center', 'justify']
+	};
+
+	var AlignClass = new _parchment2.default.Attributor.Class('align', 'ql-align', config);
+	var AlignStyle = new _parchment2.default.Attributor.Style('align', 'text-align', config);
+
+	exports.AlignClass = AlignClass;
+	exports.AlignStyle = AlignStyle;
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.BackgroundStyle = exports.BackgroundClass = undefined;
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _color = __webpack_require__(47);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var BackgroundClass = new _parchment2.default.Attributor.Class('background', 'ql-bg', {
+	  scope: _parchment2.default.Scope.INLINE
+	});
+	var BackgroundStyle = new _color.ColorAttributor('background', 'background-color', {
+	  scope: _parchment2.default.Scope.INLINE
+	});
+
+	exports.BackgroundClass = BackgroundClass;
+	exports.BackgroundStyle = BackgroundStyle;
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.ColorStyle = exports.ColorClass = exports.ColorAttributor = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ColorAttributor = function (_Parchment$Attributor) {
+	  _inherits(ColorAttributor, _Parchment$Attributor);
+
+	  function ColorAttributor() {
+	    _classCallCheck(this, ColorAttributor);
+
+	    return _possibleConstructorReturn(this, (ColorAttributor.__proto__ || Object.getPrototypeOf(ColorAttributor)).apply(this, arguments));
+	  }
+
+	  _createClass(ColorAttributor, [{
+	    key: 'value',
+	    value: function value(domNode) {
+	      var value = _get(ColorAttributor.prototype.__proto__ || Object.getPrototypeOf(ColorAttributor.prototype), 'value', this).call(this, domNode);
+	      if (!value.startsWith('rgb(')) return value;
+	      value = value.replace(/^[^\d]+/, '').replace(/[^\d]+$/, '');
+	      return '#' + value.split(',').map(function (component) {
+	        return ('00' + parseInt(component).toString(16)).slice(-2);
+	      }).join('');
+	    }
+	  }]);
+
+	  return ColorAttributor;
+	}(_parchment2.default.Attributor.Style);
+
+	var ColorClass = new _parchment2.default.Attributor.Class('color', 'ql-color', {
+	  scope: _parchment2.default.Scope.INLINE
+	});
+	var ColorStyle = new ColorAttributor('color', 'color', {
+	  scope: _parchment2.default.Scope.INLINE
+	});
+
+	exports.ColorAttributor = ColorAttributor;
+	exports.ColorClass = ColorClass;
+	exports.ColorStyle = ColorStyle;
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.DirectionStyle = exports.DirectionClass = undefined;
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var config = {
+	  scope: _parchment2.default.Scope.BLOCK,
+	  whitelist: ['rtl']
+	};
+
+	var DirectionClass = new _parchment2.default.Attributor.Class('direction', 'ql-direction', config);
+	var DirectionStyle = new _parchment2.default.Attributor.Style('direction', 'direction', config);
+
+	exports.DirectionClass = DirectionClass;
+	exports.DirectionStyle = DirectionStyle;
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.FontClass = exports.FontStyle = undefined;
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var config = {
+	  scope: _parchment2.default.Scope.INLINE,
+	  whitelist: ['serif', 'monospace']
+	};
+
+	var FontClass = new _parchment2.default.Attributor.Class('font', 'ql-font', config);
+	var FontStyle = new _parchment2.default.Attributor.Style('font', 'font-family', config);
+
+	exports.FontStyle = FontStyle;
+	exports.FontClass = FontClass;
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.SizeStyle = exports.SizeClass = undefined;
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var SizeClass = new _parchment2.default.Attributor.Class('size', 'ql-size', {
+	  scope: _parchment2.default.Scope.INLINE,
+	  whitelist: ['small', 'large', 'huge']
+	});
+	var SizeStyle = new _parchment2.default.Attributor.Style('size', 'font-size', {
+	  scope: _parchment2.default.Scope.INLINE,
+	  whitelist: ['10px', '18px', '32px']
+	});
+
+	exports.SizeClass = SizeClass;
+	exports.SizeStyle = SizeStyle;
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getLastChangeIndex = exports.default = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var History = function (_Module) {
+	  _inherits(History, _Module);
+
+	  function History(quill, options) {
+	    _classCallCheck(this, History);
+
+	    var _this = _possibleConstructorReturn(this, (History.__proto__ || Object.getPrototypeOf(History)).call(this, quill, options));
+
+	    _this.lastRecorded = 0;
+	    _this.ignoreChange = false;
+	    _this.clear();
+	    _this.quill.on(_quill2.default.events.EDITOR_CHANGE, function (eventName, delta, oldDelta, source) {
+	      if (eventName !== _quill2.default.events.TEXT_CHANGE || _this.ignoreChange) return;
+	      if (!_this.options.userOnly || source === _quill2.default.sources.USER) {
+	        _this.record(delta, oldDelta);
+	      } else {
+	        _this.transform(delta);
+	      }
+	    });
+	    _this.quill.keyboard.addBinding({ key: 'Z', shortKey: true }, _this.undo.bind(_this));
+	    _this.quill.keyboard.addBinding({ key: 'Z', shortKey: true, shiftKey: true }, _this.redo.bind(_this));
+	    if (/Win/i.test(navigator.platform)) {
+	      _this.quill.keyboard.addBinding({ key: 'Y', shortKey: true }, _this.redo.bind(_this));
+	    }
+	    return _this;
+	  }
+
+	  _createClass(History, [{
+	    key: 'change',
+	    value: function change(source, dest) {
+	      if (this.stack[source].length === 0) return;
+	      var delta = this.stack[source].pop();
+	      this.lastRecorded = 0;
+	      this.ignoreChange = true;
+	      this.quill.updateContents(delta[source], _quill2.default.sources.USER);
+	      this.ignoreChange = false;
+	      var index = getLastChangeIndex(delta[source]);
+	      this.quill.setSelection(index);
+	      this.quill.selection.scrollIntoView();
+	      this.stack[dest].push(delta);
+	    }
+	  }, {
+	    key: 'clear',
+	    value: function clear() {
+	      this.stack = { undo: [], redo: [] };
+	    }
+	  }, {
+	    key: 'record',
+	    value: function record(changeDelta, oldDelta) {
+	      if (changeDelta.ops.length === 0) return;
+	      this.stack.redo = [];
+	      var undoDelta = this.quill.getContents().diff(oldDelta);
+	      var timestamp = Date.now();
+	      if (this.lastRecorded + this.options.delay > timestamp && this.stack.undo.length > 0) {
+	        var delta = this.stack.undo.pop();
+	        undoDelta = undoDelta.compose(delta.undo);
+	        changeDelta = delta.redo.compose(changeDelta);
+	      } else {
+	        this.lastRecorded = timestamp;
+	      }
+	      this.stack.undo.push({
+	        redo: changeDelta,
+	        undo: undoDelta
+	      });
+	      if (this.stack.undo.length > this.options.maxStack) {
+	        this.stack.undo.unshift();
+	      }
+	    }
+	  }, {
+	    key: 'redo',
+	    value: function redo() {
+	      this.change('redo', 'undo');
+	    }
+	  }, {
+	    key: 'transform',
+	    value: function transform(delta) {
+	      this.stack.undo.forEach(function (change) {
+	        change.undo = delta.transform(change.undo, true);
+	        change.redo = delta.transform(change.redo, true);
+	      });
+	      this.stack.redo.forEach(function (change) {
+	        change.undo = delta.transform(change.undo, true);
+	        change.redo = delta.transform(change.redo, true);
+	      });
+	    }
+	  }, {
+	    key: 'undo',
+	    value: function undo() {
+	      this.change('undo', 'redo');
+	    }
+	  }]);
+
+	  return History;
+	}(_module2.default);
+
+	History.DEFAULTS = {
+	  delay: 1000,
+	  maxStack: 100,
+	  userOnly: false
+	};
+
+	function endsWithNewlineChange(delta) {
+	  var lastOp = delta.ops[delta.ops.length - 1];
+	  if (lastOp == null) return false;
+	  if (lastOp.insert != null) {
+	    return typeof lastOp.insert === 'string' && lastOp.insert.endsWith('\n');
+	  }
+	  if (lastOp.attributes != null) {
+	    return Object.keys(lastOp.attributes).some(function (attr) {
+	      return _parchment2.default.query(attr, _parchment2.default.Scope.BLOCK) != null;
+	    });
+	  }
+	  return false;
+	}
+
+	function getLastChangeIndex(delta) {
+	  var deleteLength = delta.ops.reduce(function (length, op) {
+	    length += op.delete || 0;
+	    return length;
+	  }, 0);
+	  var changeIndex = delta.length() - deleteLength;
+	  if (endsWithNewlineChange(delta)) {
+	    changeIndex -= 1;
+	  }
+	  return changeIndex;
+	}
+
+	exports.default = History;
+	exports.getLastChangeIndex = getLastChangeIndex;
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _clone = __webpack_require__(38);
+
+	var _clone2 = _interopRequireDefault(_clone);
+
+	var _deepEqual = __webpack_require__(22);
+
+	var _deepEqual2 = _interopRequireDefault(_deepEqual);
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _op = __webpack_require__(26);
+
+	var _op2 = _interopRequireDefault(_op);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var debug = (0, _logger2.default)('quill:keyboard');
+
+	var SHORTKEY = /Mac/i.test(navigator.platform) ? 'metaKey' : 'ctrlKey';
+
+	var Keyboard = function (_Module) {
+	  _inherits(Keyboard, _Module);
+
+	  _createClass(Keyboard, null, [{
+	    key: 'match',
+	    value: function match(evt, binding) {
+	      binding = normalize(binding);
+	      if (!!binding.shortKey !== evt[SHORTKEY] && binding.shortKey !== null) return false;
+	      if (['altKey', 'ctrlKey', 'metaKey', 'shiftKey'].some(function (key) {
+	        return key != SHORTKEY && !!binding[key] !== evt[key] && binding[key] !== null;
+	      })) {
+	        return false;
+	      }
+	      return binding.key === (evt.which || evt.keyCode);
+	    }
+	  }]);
+
+	  function Keyboard(quill, options) {
+	    _classCallCheck(this, Keyboard);
+
+	    var _this = _possibleConstructorReturn(this, (Keyboard.__proto__ || Object.getPrototypeOf(Keyboard)).call(this, quill, options));
+
+	    _this.bindings = {};
+	    Object.keys(_this.options.bindings).forEach(function (name) {
+	      if (_this.options.bindings[name]) {
+	        _this.addBinding(_this.options.bindings[name]);
+	      }
+	    });
+	    _this.addBinding({ key: Keyboard.keys.ENTER, shiftKey: null }, handleEnter);
+	    _this.addBinding({ key: Keyboard.keys.ENTER, metaKey: null, ctrlKey: null, altKey: null }, function () {});
+	    _this.addBinding({ key: Keyboard.keys.BACKSPACE }, { collapsed: true, prefix: /^.?$/ }, function (range, context) {
+	      if (range.index === 0) return;
+
+	      var _quill$scroll$line = this.quill.scroll.line(range.index);
+
+	      var _quill$scroll$line2 = _slicedToArray(_quill$scroll$line, 1);
+
+	      var line = _quill$scroll$line2[0];
+
+	      var formats = {};
+	      if (context.offset === 0) {
+	        var curFormats = line.formats();
+	        var prevFormats = this.quill.getFormat(range.index - 1, 1);
+	        formats = _op2.default.attributes.diff(curFormats, prevFormats) || {};
+	      }
+	      this.quill.deleteText(range.index - 1, 1, _quill2.default.sources.USER);
+	      if (Object.keys(formats).length > 0) {
+	        this.quill.formatLine(range.index - 1, 1, formats, _quill2.default.sources.USER);
+	      }
+	      this.quill.selection.scrollIntoView();
+	    });
+	    _this.addBinding({ key: Keyboard.keys.DELETE }, { collapsed: true, suffix: /^$/ }, function (range) {
+	      if (range.index >= this.quill.getLength() - 1) return;
+	      this.quill.deleteText(range.index, 1, _quill2.default.sources.USER);
+	    });
+	    _this.addBinding({ key: Keyboard.keys.BACKSPACE }, { collapsed: false }, handleDelete);
+	    _this.addBinding({ key: Keyboard.keys.DELETE }, { collapsed: false }, handleDelete);
+	    _this.listen();
+	    return _this;
+	  }
+
+	  _createClass(Keyboard, [{
+	    key: 'addBinding',
+	    value: function addBinding(key) {
+	      var context = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+	      var handler = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+
+	      var binding = normalize(key);
+	      if (binding == null || binding.key == null) {
+	        return debug.warn('Attempted to add invalid keyboard binding', binding);
+	      }
+	      if (typeof context === 'function') {
+	        context = { handler: context };
+	      }
+	      if (typeof handler === 'function') {
+	        handler = { handler: handler };
+	      }
+	      binding = (0, _extend2.default)(binding, context, handler);
+	      this.bindings[binding.key] = this.bindings[binding.key] || [];
+	      this.bindings[binding.key].push(binding);
+	    }
+	  }, {
+	    key: 'listen',
+	    value: function listen() {
+	      var _this2 = this;
+
+	      this.quill.root.addEventListener('keydown', function (evt) {
+	        if (evt.defaultPrevented) return;
+	        var which = evt.which || evt.keyCode;
+	        var bindings = (_this2.bindings[which] || []).filter(function (binding) {
+	          return Keyboard.match(evt, binding);
+	        });
+	        if (bindings.length === 0) return;
+	        var range = _this2.quill.getSelection();
+	        if (range == null) return; // implies we do not have focus
+
+	        var _quill$scroll$line3 = _this2.quill.scroll.line(range.index);
+
+	        var _quill$scroll$line4 = _slicedToArray(_quill$scroll$line3, 2);
+
+	        var line = _quill$scroll$line4[0];
+	        var offset = _quill$scroll$line4[1];
+
+	        var _quill$scroll$leaf = _this2.quill.scroll.leaf(range.index);
+
+	        var _quill$scroll$leaf2 = _slicedToArray(_quill$scroll$leaf, 2);
+
+	        var leafStart = _quill$scroll$leaf2[0];
+	        var offsetStart = _quill$scroll$leaf2[1];
+
+	        var _ref = range.length === 0 ? [leafStart, offsetStart] : _this2.quill.scroll.leaf(range.index + range.length);
+
+	        var _ref2 = _slicedToArray(_ref, 2);
+
+	        var leafEnd = _ref2[0];
+	        var offsetEnd = _ref2[1];
+
+	        var prefixText = leafStart instanceof _parchment2.default.Text ? leafStart.value().slice(0, offsetStart) : '';
+	        var suffixText = leafEnd instanceof _parchment2.default.Text ? leafEnd.value().slice(offsetEnd) : '';
+	        var curContext = {
+	          collapsed: range.length === 0,
+	          empty: range.length === 0 && line.length() <= 1,
+	          format: _this2.quill.getFormat(range),
+	          offset: offset,
+	          prefix: prefixText,
+	          suffix: suffixText
+	        };
+	        var prevented = bindings.some(function (binding) {
+	          if (binding.collapsed != null && binding.collapsed !== curContext.collapsed) return false;
+	          if (binding.empty != null && binding.empty !== curContext.empty) return false;
+	          if (binding.offset != null && binding.offset !== curContext.offset) return false;
+	          if (Array.isArray(binding.format)) {
+	            // any format is present
+	            if (binding.format.every(function (name) {
+	              return curContext.format[name] == null;
+	            })) {
+	              return false;
+	            }
+	          } else if (_typeof(binding.format) === 'object') {
+	            // all formats must match
+	            if (!Object.keys(binding.format).every(function (name) {
+	              if (binding.format[name] === true) return curContext.format[name] != null;
+	              if (binding.format[name] === false) return curContext.format[name] == null;
+	              return (0, _deepEqual2.default)(binding.format[name], curContext.format[name]);
+	            })) {
+	              return false;
+	            }
+	          }
+	          if (binding.prefix != null && !binding.prefix.test(curContext.prefix)) return false;
+	          if (binding.suffix != null && !binding.suffix.test(curContext.suffix)) return false;
+	          return binding.handler.call(_this2, range, curContext) !== true;
+	        });
+	        if (prevented) {
+	          evt.preventDefault();
+	        }
+	      });
+	    }
+	  }]);
+
+	  return Keyboard;
+	}(_module2.default);
+
+	Keyboard.keys = {
+	  BACKSPACE: 8,
+	  TAB: 9,
+	  ENTER: 13,
+	  ESCAPE: 27,
+	  LEFT: 37,
+	  UP: 38,
+	  RIGHT: 39,
+	  DOWN: 40,
+	  DELETE: 46
+	};
+
+	Keyboard.DEFAULTS = {
+	  bindings: {
+	    'bold': makeFormatHandler('bold'),
+	    'italic': makeFormatHandler('italic'),
+	    'underline': makeFormatHandler('underline'),
+	    'indent': {
+	      // highlight tab or tab at beginning of list, indent or blockquote
+	      key: Keyboard.keys.TAB,
+	      format: ['blockquote', 'indent', 'list'],
+	      handler: function handler(range, context) {
+	        if (context.collapsed && context.offset !== 0) return true;
+	        this.quill.format('indent', '+1', _quill2.default.sources.USER);
+	      }
+	    },
+	    'outdent': {
+	      key: Keyboard.keys.TAB,
+	      shiftKey: true,
+	      format: ['blockquote', 'indent', 'list'],
+	      // highlight tab or tab at beginning of list, indent or blockquote
+	      handler: function handler(range, context) {
+	        if (context.collapsed && context.offset !== 0) return true;
+	        this.quill.format('indent', '-1', _quill2.default.sources.USER);
+	      }
+	    },
+	    'outdent backspace': {
+	      key: Keyboard.keys.BACKSPACE,
+	      collapsed: true,
+	      format: ['blockquote', 'indent', 'list'],
+	      offset: 0,
+	      handler: function handler(range, context) {
+	        if (context.format.indent != null) {
+	          this.quill.format('indent', '-1', _quill2.default.sources.USER);
+	        } else if (context.format.blockquote != null) {
+	          this.quill.format('blockquote', false, _quill2.default.sources.USER);
+	        } else if (context.format.list != null) {
+	          this.quill.format('list', false, _quill2.default.sources.USER);
+	        }
+	      }
+	    },
+	    'indent code-block': makeCodeBlockHandler(true),
+	    'outdent code-block': makeCodeBlockHandler(false),
+	    'remove tab': {
+	      key: Keyboard.keys.TAB,
+	      shiftKey: true,
+	      collapsed: true,
+	      prefix: /\t$/,
+	      handler: function handler(range, context) {
+	        this.quill.deleteText(range.index - 1, 1, _quill2.default.sources.USER);
+	      }
+	    },
+	    'tab': {
+	      key: Keyboard.keys.TAB,
+	      handler: function handler(range, context) {
+	        if (!context.collapsed) {
+	          this.quill.scroll.deleteAt(range.index, range.length);
+	        }
+	        this.quill.insertText(range.index, '\t', _quill2.default.sources.USER);
+	        this.quill.setSelection(range.index + 1, _quill2.default.sources.SILENT);
+	      }
+	    },
+	    'list empty enter': {
+	      key: Keyboard.keys.ENTER,
+	      collapsed: true,
+	      format: ['list'],
+	      empty: true,
+	      handler: function handler(range, context) {
+	        this.quill.format('list', false, _quill2.default.sources.USER);
+	        if (context.format.indent) {
+	          this.quill.format('indent', false, _quill2.default.sources.USER);
+	        }
+	      }
+	    },
+	    'header enter': {
+	      key: Keyboard.keys.ENTER,
+	      collapsed: true,
+	      format: ['header'],
+	      suffix: /^$/,
+	      handler: function handler(range) {
+	        this.quill.scroll.insertAt(range.index, '\n');
+	        this.quill.formatText(range.index + 1, 1, 'header', false, _quill2.default.sources.USER);
+	        this.quill.setSelection(range.index + 1, _quill2.default.sources.SILENT);
+	        this.quill.selection.scrollIntoView();
+	      }
+	    },
+	    'list autofill': {
+	      key: ' ',
+	      collapsed: true,
+	      format: { list: false },
+	      prefix: /^(1\.|-)$/,
+	      handler: function handler(range, context) {
+	        var length = context.prefix.length;
+	        this.quill.scroll.deleteAt(range.index - length, length);
+	        this.quill.formatLine(range.index - length, 1, 'list', length === 1 ? 'bullet' : 'ordered', _quill2.default.sources.USER);
+	        this.quill.setSelection(range.index - length, _quill2.default.sources.SILENT);
+	      }
+	    }
+	  }
+	};
+
+	function handleDelete(range) {
+	  this.quill.deleteText(range, _quill2.default.sources.USER);
+	  this.quill.setSelection(range.index, _quill2.default.sources.SILENT);
+	  this.quill.selection.scrollIntoView();
+	}
+
+	function handleEnter(range, context) {
+	  var _this3 = this;
+
+	  if (range.length > 0) {
+	    this.quill.scroll.deleteAt(range.index, range.length); // So we do not trigger text-change
+	  }
+	  var lineFormats = Object.keys(context.format).reduce(function (lineFormats, format) {
+	    if (_parchment2.default.query(format, _parchment2.default.Scope.BLOCK) && !Array.isArray(context.format[format])) {
+	      lineFormats[format] = context.format[format];
+	    }
+	    return lineFormats;
+	  }, {});
+	  this.quill.insertText(range.index, '\n', lineFormats, _quill2.default.sources.USER);
+	  this.quill.selection.scrollIntoView();
+	  Object.keys(context.format).forEach(function (name) {
+	    if (lineFormats[name] != null) return;
+	    if (Array.isArray(context.format[name])) return;
+	    if (name === 'link') return;
+	    _this3.quill.format(name, context.format[name], _quill2.default.sources.USER);
+	  });
+	}
+
+	function makeCodeBlockHandler(indent) {
+	  return {
+	    key: Keyboard.keys.TAB,
+	    shiftKey: !indent,
+	    format: { 'code-block': true },
+	    handler: function handler(range) {
+	      var CodeBlock = _parchment2.default.query('code-block');
+	      var index = range.index,
+	          length = range.length;
+
+	      var _quill$scroll$descend = this.quill.scroll.descendant(CodeBlock, index);
+
+	      var _quill$scroll$descend2 = _slicedToArray(_quill$scroll$descend, 2);
+
+	      var block = _quill$scroll$descend2[0];
+	      var offset = _quill$scroll$descend2[1];
+
+	      if (block == null) return;
+	      var scrollOffset = this.quill.scroll.offset(block);
+	      var start = block.newlineIndex(offset, true) + 1;
+	      var end = block.newlineIndex(scrollOffset + offset + length);
+	      var lines = block.domNode.textContent.slice(start, end).split('\n');
+	      offset = 0;
+	      lines.forEach(function (line, i) {
+	        if (indent) {
+	          block.insertAt(start + offset, CodeBlock.TAB);
+	          offset += CodeBlock.TAB.length;
+	          if (i === 0) {
+	            index += CodeBlock.TAB.length;
+	          } else {
+	            length += CodeBlock.TAB.length;
+	          }
+	        } else if (line.startsWith(CodeBlock.TAB)) {
+	          block.deleteAt(start + offset, CodeBlock.TAB.length);
+	          offset -= CodeBlock.TAB.length;
+	          if (i === 0) {
+	            index -= CodeBlock.TAB.length;
+	          } else {
+	            length -= CodeBlock.TAB.length;
+	          }
+	        }
+	        offset += line.length + 1;
+	      });
+	      this.quill.update(_quill2.default.sources.USER);
+	      this.quill.setSelection(index, length, _quill2.default.sources.SILENT);
+	    }
+	  };
+	}
+
+	function makeFormatHandler(format) {
+	  return {
+	    key: format[0].toUpperCase(),
+	    shortKey: true,
+	    handler: function handler(range, context) {
+	      this.quill.format(format, !context.format[format], _quill2.default.sources.USER);
+	    }
+	  };
+	}
+
+	function normalize(binding) {
+	  if (typeof binding === 'string' || typeof binding === 'number') {
+	    return normalize({ key: binding });
+	  }
+	  if ((typeof binding === 'undefined' ? 'undefined' : _typeof(binding)) === 'object') {
+	    binding = (0, _clone2.default)(binding, false);
+	  }
+	  if (typeof binding.key === 'string') {
+	    if (Keyboard.keys[binding.key.toUpperCase()] != null) {
+	      binding.key = Keyboard.keys[binding.key.toUpperCase()];
+	    } else if (binding.key.length === 1) {
+	      binding.key = binding.key.toUpperCase().charCodeAt(0);
+	    } else {
+	      return null;
+	    }
+	  }
+	  return binding;
+	}
+
+	exports.default = Keyboard;
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _core = __webpack_require__(1);
+
+	var _core2 = _interopRequireDefault(_core);
+
+	var _align = __webpack_require__(45);
+
+	var _direction = __webpack_require__(48);
+
+	var _indent = __webpack_require__(54);
+
+	var _blockquote = __webpack_require__(55);
+
+	var _blockquote2 = _interopRequireDefault(_blockquote);
+
+	var _header = __webpack_require__(56);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _list = __webpack_require__(57);
+
+	var _list2 = _interopRequireDefault(_list);
+
+	var _background = __webpack_require__(46);
+
+	var _color = __webpack_require__(47);
+
+	var _font = __webpack_require__(49);
+
+	var _size = __webpack_require__(50);
+
+	var _bold = __webpack_require__(58);
+
+	var _bold2 = _interopRequireDefault(_bold);
+
+	var _italic = __webpack_require__(59);
+
+	var _italic2 = _interopRequireDefault(_italic);
+
+	var _link = __webpack_require__(60);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	var _script = __webpack_require__(61);
+
+	var _script2 = _interopRequireDefault(_script);
+
+	var _strike = __webpack_require__(62);
+
+	var _strike2 = _interopRequireDefault(_strike);
+
+	var _underline = __webpack_require__(63);
+
+	var _underline2 = _interopRequireDefault(_underline);
+
+	var _image = __webpack_require__(64);
+
+	var _image2 = _interopRequireDefault(_image);
+
+	var _video = __webpack_require__(65);
+
+	var _video2 = _interopRequireDefault(_video);
+
+	var _code = __webpack_require__(31);
+
+	var _code2 = _interopRequireDefault(_code);
+
+	var _formula = __webpack_require__(66);
+
+	var _formula2 = _interopRequireDefault(_formula);
+
+	var _syntax = __webpack_require__(67);
+
+	var _syntax2 = _interopRequireDefault(_syntax);
+
+	var _toolbar = __webpack_require__(68);
+
+	var _toolbar2 = _interopRequireDefault(_toolbar);
+
+	var _icons = __webpack_require__(69);
+
+	var _icons2 = _interopRequireDefault(_icons);
+
+	var _picker = __webpack_require__(101);
+
+	var _picker2 = _interopRequireDefault(_picker);
+
+	var _colorPicker = __webpack_require__(103);
+
+	var _colorPicker2 = _interopRequireDefault(_colorPicker);
+
+	var _iconPicker = __webpack_require__(104);
+
+	var _iconPicker2 = _interopRequireDefault(_iconPicker);
+
+	var _tooltip = __webpack_require__(105);
+
+	var _tooltip2 = _interopRequireDefault(_tooltip);
+
+	var _bubble = __webpack_require__(106);
+
+	var _bubble2 = _interopRequireDefault(_bubble);
+
+	var _snow = __webpack_require__(108);
+
+	var _snow2 = _interopRequireDefault(_snow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_core2.default.register({
+	  'attributors/class/align': _align.AlignClass,
+	  'attributors/class/background': _background.BackgroundClass,
+	  'attributors/class/color': _color.ColorClass,
+	  'attributors/class/direction': _direction.DirectionClass,
+	  'attributors/class/font': _font.FontClass,
+	  'attributors/class/size': _size.SizeClass,
+
+	  'attributors/style/align': _align.AlignStyle,
+	  'attributors/style/background': _background.BackgroundStyle,
+	  'attributors/style/color': _color.ColorStyle,
+	  'attributors/style/direction': _direction.DirectionStyle,
+	  'attributors/style/font': _font.FontStyle,
+	  'attributors/style/size': _size.SizeStyle
+	}, true);
+
+	_core2.default.register({
+	  'formats/align': _align.AlignClass,
+	  'formats/direction': _direction.DirectionClass,
+	  'formats/indent': _indent.IndentClass,
+
+	  'formats/background': _background.BackgroundStyle,
+	  'formats/color': _color.ColorStyle,
+	  'formats/font': _font.FontClass,
+	  'formats/size': _size.SizeClass,
+
+	  'formats/blockquote': _blockquote2.default,
+	  'formats/code-block': _code2.default,
+	  'formats/header': _header2.default,
+	  'formats/list': _list2.default,
+
+	  'formats/bold': _bold2.default,
+	  'formats/code': _code.Code,
+	  'formats/italic': _italic2.default,
+	  'formats/link': _link2.default,
+	  'formats/script': _script2.default,
+	  'formats/strike': _strike2.default,
+	  'formats/underline': _underline2.default,
+
+	  'formats/image': _image2.default,
+	  'formats/video': _video2.default,
+
+	  'formats/list/item': _list.ListItem,
+
+	  'modules/formula': _formula2.default,
+	  'modules/syntax': _syntax2.default,
+	  'modules/toolbar': _toolbar2.default,
+
+	  'themes/bubble': _bubble2.default,
+	  'themes/snow': _snow2.default,
+
+	  'ui/icons': _icons2.default,
+	  'ui/picker': _picker2.default,
+	  'ui/icon-picker': _iconPicker2.default,
+	  'ui/color-picker': _colorPicker2.default,
+	  'ui/tooltip': _tooltip2.default
+	}, true);
+
+	module.exports = _core2.default;
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.IndentClass = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var IdentAttributor = function (_Parchment$Attributor) {
+	  _inherits(IdentAttributor, _Parchment$Attributor);
+
+	  function IdentAttributor() {
+	    _classCallCheck(this, IdentAttributor);
+
+	    return _possibleConstructorReturn(this, (IdentAttributor.__proto__ || Object.getPrototypeOf(IdentAttributor)).apply(this, arguments));
+	  }
+
+	  _createClass(IdentAttributor, [{
+	    key: 'add',
+	    value: function add(node, value) {
+	      if (value === '+1' || value === '-1') {
+	        var indent = this.value(node) || 0;
+	        value = value === '+1' ? indent + 1 : indent - 1;
+	      }
+	      if (value === 0) {
+	        this.remove(node);
+	        return true;
+	      } else {
+	        return _get(IdentAttributor.prototype.__proto__ || Object.getPrototypeOf(IdentAttributor.prototype), 'add', this).call(this, node, value);
+	      }
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value(node) {
+	      return parseInt(_get(IdentAttributor.prototype.__proto__ || Object.getPrototypeOf(IdentAttributor.prototype), 'value', this).call(this, node)) || undefined; // Don't return NaN
+	    }
+	  }]);
+
+	  return IdentAttributor;
+	}(_parchment2.default.Attributor.Class);
+
+	var IndentClass = new IdentAttributor('indent', 'ql-indent', {
+	  scope: _parchment2.default.Scope.BLOCK,
+	  whitelist: [1, 2, 3, 4, 5, 6, 7, 8]
+	});
+
+	exports.IndentClass = IndentClass;
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Blockquote = function (_Block) {
+	  _inherits(Blockquote, _Block);
+
+	  function Blockquote() {
+	    _classCallCheck(this, Blockquote);
+
+	    return _possibleConstructorReturn(this, (Blockquote.__proto__ || Object.getPrototypeOf(Blockquote)).apply(this, arguments));
+	  }
+
+	  return Blockquote;
+	}(_block2.default);
+
+	Blockquote.blotName = 'blockquote';
+	Blockquote.tagName = 'blockquote';
+
+	exports.default = Blockquote;
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_Block) {
+	  _inherits(Header, _Block);
+
+	  function Header() {
+	    _classCallCheck(this, Header);
+
+	    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	  }
+
+	  _createClass(Header, null, [{
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      return this.tagName.indexOf(domNode.tagName) + 1;
+	    }
+	  }]);
+
+	  return Header;
+	}(_block2.default);
+
+	Header.blotName = 'header';
+	Header.tagName = ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'];
+
+	exports.default = Header;
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.ListItem = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _block = __webpack_require__(32);
+
+	var _block2 = _interopRequireDefault(_block);
+
+	var _container = __webpack_require__(42);
+
+	var _container2 = _interopRequireDefault(_container);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ListItem = function (_Block) {
+	  _inherits(ListItem, _Block);
+
+	  function ListItem() {
+	    _classCallCheck(this, ListItem);
+
+	    return _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).apply(this, arguments));
+	  }
+
+	  _createClass(ListItem, [{
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (name === List.blotName && !value) {
+	        this.replaceWith(_parchment2.default.create(this.statics.scope));
+	      } else {
+	        _get(ListItem.prototype.__proto__ || Object.getPrototypeOf(ListItem.prototype), 'format', this).call(this, name, value);
+	      }
+	    }
+	  }, {
+	    key: 'remove',
+	    value: function remove() {
+	      if (this.prev == null && this.next == null) {
+	        this.parent.remove();
+	      } else {
+	        _get(ListItem.prototype.__proto__ || Object.getPrototypeOf(ListItem.prototype), 'remove', this).call(this);
+	      }
+	    }
+	  }, {
+	    key: 'replaceWith',
+	    value: function replaceWith(name, value) {
+	      this.parent.isolate(this.offset(this.parent), this.length());
+	      if (name === this.parent.statics.blotName) {
+	        this.parent.replaceWith(name, value);
+	        return this;
+	      } else {
+	        this.parent.unwrap();
+	        return _get(ListItem.prototype.__proto__ || Object.getPrototypeOf(ListItem.prototype), 'replaceWith', this).call(this, name, value);
+	      }
+	    }
+	  }], [{
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      return domNode.tagName === this.tagName ? undefined : _get(ListItem.__proto__ || Object.getPrototypeOf(ListItem), 'formats', this).call(this, domNode);
+	    }
+	  }]);
+
+	  return ListItem;
+	}(_block2.default);
+
+	ListItem.blotName = 'list-item';
+	ListItem.tagName = 'LI';
+
+	var List = function (_Container) {
+	  _inherits(List, _Container);
+
+	  function List() {
+	    _classCallCheck(this, List);
+
+	    return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).apply(this, arguments));
+	  }
+
+	  _createClass(List, [{
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (this.children.length > 0) {
+	        this.children.tail.format(name, value);
+	      }
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats() {
+	      // We don't inherit from FormatBlot
+	      return _defineProperty({}, this.statics.blotName, this.statics.formats(this.domNode));
+	    }
+	  }, {
+	    key: 'insertBefore',
+	    value: function insertBefore(blot, ref) {
+	      if (blot instanceof ListItem) {
+	        _get(List.prototype.__proto__ || Object.getPrototypeOf(List.prototype), 'insertBefore', this).call(this, blot, ref);
+	      } else {
+	        var index = ref == null ? this.length() : ref.offset(this);
+	        var after = this.split(index);
+	        after.parent.insertBefore(blot, after);
+	      }
+	    }
+	  }, {
+	    key: 'optimize',
+	    value: function optimize() {
+	      _get(List.prototype.__proto__ || Object.getPrototypeOf(List.prototype), 'optimize', this).call(this);
+	      var next = this.next;
+	      if (next != null && next.prev === this && next.statics.blotName === this.statics.blotName && next.domNode.tagName === this.domNode.tagName) {
+	        next.moveChildren(this);
+	        next.remove();
+	      }
+	    }
+	  }, {
+	    key: 'replace',
+	    value: function replace(target) {
+	      if (target.statics.blotName !== this.statics.blotName) {
+	        var item = _parchment2.default.create(this.statics.defaultChild);
+	        target.moveChildren(item);
+	        this.appendChild(item);
+	      }
+	      _get(List.prototype.__proto__ || Object.getPrototypeOf(List.prototype), 'replace', this).call(this, target);
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      if (value === 'ordered') {
+	        value = 'OL';
+	      } else if (value === 'bullet') {
+	        value = 'UL';
+	      }
+	      return _get(List.__proto__ || Object.getPrototypeOf(List), 'create', this).call(this, value);
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      if (domNode.tagName === 'OL') return 'ordered';
+	      if (domNode.tagName === 'UL') return 'bullet';
+	      return undefined;
+	    }
+	  }]);
+
+	  return List;
+	}(_container2.default);
+
+	List.blotName = 'list';
+	List.scope = _parchment2.default.Scope.BLOCK_BLOT;
+	List.tagName = ['OL', 'UL'];
+	List.defaultChild = 'list-item';
+	List.allowedChildren = [ListItem];
+
+	exports.ListItem = ListItem;
+	exports.default = List;
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Bold = function (_Inline) {
+	  _inherits(Bold, _Inline);
+
+	  function Bold() {
+	    _classCallCheck(this, Bold);
+
+	    return _possibleConstructorReturn(this, (Bold.__proto__ || Object.getPrototypeOf(Bold)).apply(this, arguments));
+	  }
+
+	  _createClass(Bold, [{
+	    key: 'optimize',
+	    value: function optimize() {
+	      _get(Bold.prototype.__proto__ || Object.getPrototypeOf(Bold.prototype), 'optimize', this).call(this);
+	      if (this.domNode.tagName !== this.statics.tagName[0]) {
+	        this.replaceWith(this.statics.blotName);
+	      }
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      return _get(Bold.__proto__ || Object.getPrototypeOf(Bold), 'create', this).call(this);
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      return true;
+	    }
+	  }]);
+
+	  return Bold;
+	}(_inline2.default);
+
+	Bold.blotName = 'bold';
+	Bold.tagName = ['STRONG', 'B'];
+
+	exports.default = Bold;
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _bold = __webpack_require__(58);
+
+	var _bold2 = _interopRequireDefault(_bold);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Italic = function (_Bold) {
+	  _inherits(Italic, _Bold);
+
+	  function Italic() {
+	    _classCallCheck(this, Italic);
+
+	    return _possibleConstructorReturn(this, (Italic.__proto__ || Object.getPrototypeOf(Italic)).apply(this, arguments));
+	  }
+
+	  return Italic;
+	}(_bold2.default);
+
+	Italic.blotName = 'italic';
+	Italic.tagName = ['EM', 'I'];
+
+	exports.default = Italic;
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.sanitize = exports.default = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Link = function (_Inline) {
+	  _inherits(Link, _Inline);
+
+	  function Link() {
+	    _classCallCheck(this, Link);
+
+	    return _possibleConstructorReturn(this, (Link.__proto__ || Object.getPrototypeOf(Link)).apply(this, arguments));
+	  }
+
+	  _createClass(Link, [{
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (name !== this.statics.blotName || !value) return _get(Link.prototype.__proto__ || Object.getPrototypeOf(Link.prototype), 'format', this).call(this, name, value);
+	      value = this.constructor.sanitize(value);
+	      this.domNode.setAttribute('href', value);
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      var node = _get(Link.__proto__ || Object.getPrototypeOf(Link), 'create', this).call(this, value);
+	      value = this.sanitize(value);
+	      node.setAttribute('href', value);
+	      node.setAttribute('target', '_blank');
+	      return node;
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      return domNode.getAttribute('href');
+	    }
+	  }, {
+	    key: 'sanitize',
+	    value: function sanitize(url) {
+	      return _sanitize(url, ['http', 'https', 'mailto']) ? url : this.SANITIZED_URL;
+	    }
+	  }]);
+
+	  return Link;
+	}(_inline2.default);
+
+	Link.blotName = 'link';
+	Link.tagName = 'A';
+	Link.SANITIZED_URL = 'about:blank';
+
+	function _sanitize(url, protocols) {
+	  var anchor = document.createElement('a');
+	  anchor.href = url;
+	  var protocol = anchor.href.slice(0, anchor.href.indexOf(':'));
+	  return protocols.indexOf(protocol) > -1;
+	}
+
+	exports.default = Link;
+	exports.sanitize = _sanitize;
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Script = function (_Inline) {
+	  _inherits(Script, _Inline);
+
+	  function Script() {
+	    _classCallCheck(this, Script);
+
+	    return _possibleConstructorReturn(this, (Script.__proto__ || Object.getPrototypeOf(Script)).apply(this, arguments));
+	  }
+
+	  _createClass(Script, null, [{
+	    key: 'create',
+	    value: function create(value) {
+	      if (value === 'super') {
+	        return document.createElement('sup');
+	      } else if (value === 'sub') {
+	        return document.createElement('sub');
+	      } else {
+	        return _get(Script.__proto__ || Object.getPrototypeOf(Script), 'create', this).call(this, value);
+	      }
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      if (domNode.tagName === 'SUB') return 'sub';
+	      if (domNode.tagName === 'SUP') return 'super';
+	      return undefined;
+	    }
+	  }]);
+
+	  return Script;
+	}(_inline2.default);
+
+	Script.blotName = 'script';
+	Script.tagName = ['SUB', 'SUP'];
+
+	exports.default = Script;
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Strike = function (_Inline) {
+	  _inherits(Strike, _Inline);
+
+	  function Strike() {
+	    _classCallCheck(this, Strike);
+
+	    return _possibleConstructorReturn(this, (Strike.__proto__ || Object.getPrototypeOf(Strike)).apply(this, arguments));
+	  }
+
+	  return Strike;
+	}(_inline2.default);
+
+	Strike.blotName = 'strike';
+	Strike.tagName = 'S';
+
+	exports.default = Strike;
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _inline = __webpack_require__(35);
+
+	var _inline2 = _interopRequireDefault(_inline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Underline = function (_Inline) {
+	  _inherits(Underline, _Inline);
+
+	  function Underline() {
+	    _classCallCheck(this, Underline);
+
+	    return _possibleConstructorReturn(this, (Underline.__proto__ || Object.getPrototypeOf(Underline)).apply(this, arguments));
+	  }
+
+	  return Underline;
+	}(_inline2.default);
+
+	Underline.blotName = 'underline';
+	Underline.tagName = 'U';
+
+	exports.default = Underline;
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _link = __webpack_require__(60);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Image = function (_Embed) {
+	  _inherits(Image, _Embed);
+
+	  function Image() {
+	    _classCallCheck(this, Image);
+
+	    return _possibleConstructorReturn(this, (Image.__proto__ || Object.getPrototypeOf(Image)).apply(this, arguments));
+	  }
+
+	  _createClass(Image, [{
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (name === 'height' || name === 'width') {
+	        if (value) {
+	          this.domNode.setAttribute(name, value);
+	        } else {
+	          this.domNode.removeAttribute(name);
+	        }
+	      } else {
+	        _get(Image.prototype.__proto__ || Object.getPrototypeOf(Image.prototype), 'format', this).call(this, name, value);
+	      }
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      var node = _get(Image.__proto__ || Object.getPrototypeOf(Image), 'create', this).call(this, value);
+	      if (typeof value === 'string') {
+	        node.setAttribute('src', this.sanitize(value));
+	      }
+	      return node;
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      var formats = {};
+	      if (domNode.hasAttribute('height')) formats['height'] = domNode.getAttribute('height');
+	      if (domNode.hasAttribute('width')) formats['width'] = domNode.getAttribute('width');
+	      return formats;
+	    }
+	  }, {
+	    key: 'match',
+	    value: function match(url) {
+	      return (/\.(jpe?g|gif|png)$/.test(url) || /^data:image\/.+;base64/.test(url)
+	      );
+	    }
+	  }, {
+	    key: 'sanitize',
+	    value: function sanitize(url) {
+	      return (0, _link.sanitize)(url, ['http', 'https', 'data']) ? url : '//:0';
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value(domNode) {
+	      return domNode.getAttribute('src');
+	    }
+	  }]);
+
+	  return Image;
+	}(_embed2.default);
+
+	Image.blotName = 'image';
+	Image.tagName = 'IMG';
+
+	exports.default = Image;
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _block = __webpack_require__(32);
+
+	var _link = __webpack_require__(60);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Video = function (_BlockEmbed) {
+	  _inherits(Video, _BlockEmbed);
+
+	  function Video() {
+	    _classCallCheck(this, Video);
+
+	    return _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).apply(this, arguments));
+	  }
+
+	  _createClass(Video, [{
+	    key: 'format',
+	    value: function format(name, value) {
+	      if (name === 'height' || name === 'width') {
+	        if (value) {
+	          this.domNode.setAttribute(name, value);
+	        } else {
+	          this.domNode.removeAttribute(name);
+	        }
+	      } else {
+	        _get(Video.prototype.__proto__ || Object.getPrototypeOf(Video.prototype), 'format', this).call(this, name, value);
+	      }
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      var node = _get(Video.__proto__ || Object.getPrototypeOf(Video), 'create', this).call(this, value);
+	      node.setAttribute('frameborder', '0');
+	      node.setAttribute('allowfullscreen', true);
+	      node.setAttribute('src', this.sanitize(value));
+	      return node;
+	    }
+	  }, {
+	    key: 'formats',
+	    value: function formats(domNode) {
+	      var formats = {};
+	      if (domNode.hasAttribute('height')) formats['height'] = domNode.getAttribute('height');
+	      if (domNode.hasAttribute('width')) formats['width'] = domNode.getAttribute('width');
+	      return formats;
+	    }
+	  }, {
+	    key: 'sanitize',
+	    value: function sanitize(url) {
+	      return _link2.default.sanitize(url);
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value(domNode) {
+	      return domNode.getAttribute('src');
+	    }
+	  }]);
+
+	  return Video;
+	}(_block.BlockEmbed);
+
+	Video.blotName = 'video';
+	Video.className = 'ql-video';
+	Video.tagName = 'IFRAME';
+
+	exports.default = Video;
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.FormulaBlot = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _embed = __webpack_require__(34);
+
+	var _embed2 = _interopRequireDefault(_embed);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var FormulaBlot = function (_Embed) {
+	  _inherits(FormulaBlot, _Embed);
+
+	  function FormulaBlot() {
+	    _classCallCheck(this, FormulaBlot);
+
+	    return _possibleConstructorReturn(this, (FormulaBlot.__proto__ || Object.getPrototypeOf(FormulaBlot)).apply(this, arguments));
+	  }
+
+	  _createClass(FormulaBlot, [{
+	    key: 'index',
+	    value: function index(node, offset) {
+	      return 1;
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(value) {
+	      var node = _get(FormulaBlot.__proto__ || Object.getPrototypeOf(FormulaBlot), 'create', this).call(this, value);
+	      if (typeof value === 'string') {
+	        katex.render(value, node);
+	        node.setAttribute('data-value', value);
+	      }
+	      node.setAttribute('contenteditable', false);
+	      return node;
+	    }
+	  }, {
+	    key: 'value',
+	    value: function value(domNode) {
+	      return domNode.getAttribute('data-value');
+	    }
+	  }]);
+
+	  return FormulaBlot;
+	}(_embed2.default);
+
+	FormulaBlot.blotName = 'formula';
+	FormulaBlot.className = 'ql-formula';
+	FormulaBlot.tagName = 'SPAN';
+
+	function Formula() {
+	  if (window.katex == null) {
+	    throw new Error('Formula module requires KaTeX.');
+	  }
+	  _quill2.default.register(FormulaBlot, true);
+	}
+
+	exports.FormulaBlot = FormulaBlot;
+	exports.default = Formula;
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.CodeToken = exports.CodeBlock = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	var _code = __webpack_require__(31);
+
+	var _code2 = _interopRequireDefault(_code);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SyntaxCodeBlock = function (_CodeBlock) {
+	  _inherits(SyntaxCodeBlock, _CodeBlock);
+
+	  function SyntaxCodeBlock() {
+	    _classCallCheck(this, SyntaxCodeBlock);
+
+	    return _possibleConstructorReturn(this, (SyntaxCodeBlock.__proto__ || Object.getPrototypeOf(SyntaxCodeBlock)).apply(this, arguments));
+	  }
+
+	  _createClass(SyntaxCodeBlock, [{
+	    key: 'replaceWith',
+	    value: function replaceWith(block) {
+	      this.domNode.textContent = this.domNode.textContent;
+	      this.attach();
+	      _get(SyntaxCodeBlock.prototype.__proto__ || Object.getPrototypeOf(SyntaxCodeBlock.prototype), 'replaceWith', this).call(this, block);
+	    }
+	  }, {
+	    key: 'highlight',
+	    value: function highlight(_highlight) {
+	      if (this.cachedHTML !== this.domNode.innerHTML) {
+	        var text = this.domNode.textContent;
+	        if (text.trim().length > 0 || this.cachedHTML == null) {
+	          this.domNode.innerHTML = _highlight(text);
+	          this.attach();
+	        }
+	        this.cachedHTML = this.domNode.innerHTML;
+	      }
+	    }
+	  }]);
+
+	  return SyntaxCodeBlock;
+	}(_code2.default);
+
+	SyntaxCodeBlock.className = 'ql-syntax';
+
+	var CodeToken = new _parchment2.default.Attributor.Class('token', 'hljs', {
+	  scope: _parchment2.default.Scope.INLINE
+	});
+
+	var Syntax = function (_Module) {
+	  _inherits(Syntax, _Module);
+
+	  function Syntax(quill, options) {
+	    _classCallCheck(this, Syntax);
+
+	    var _this2 = _possibleConstructorReturn(this, (Syntax.__proto__ || Object.getPrototypeOf(Syntax)).call(this, quill, options));
+
+	    if (typeof _this2.options.highlight !== 'function') {
+	      throw new Error('Syntax module requires highlight.js. Please include the library on the page before Quill.');
+	    }
+	    _quill2.default.register(CodeToken, true);
+	    _quill2.default.register(SyntaxCodeBlock, true);
+	    var timer = null;
+	    _this2.quill.on(_quill2.default.events.SCROLL_OPTIMIZE, function () {
+	      if (timer != null) return;
+	      timer = setTimeout(function () {
+	        _this2.highlight();
+	        timer = null;
+	      }, 100);
+	    });
+	    _this2.highlight();
+	    return _this2;
+	  }
+
+	  _createClass(Syntax, [{
+	    key: 'highlight',
+	    value: function highlight() {
+	      var _this3 = this;
+
+	      if (this.quill.selection.composing) return;
+	      var range = this.quill.getSelection();
+	      this.quill.scroll.descendants(SyntaxCodeBlock).forEach(function (code) {
+	        code.highlight(_this3.options.highlight);
+	      });
+	      this.quill.update(_quill2.default.sources.SILENT);
+	      if (range != null) {
+	        this.quill.setSelection(range, _quill2.default.sources.SILENT);
+	      }
+	    }
+	  }]);
+
+	  return Syntax;
+	}(_module2.default);
+
+	Syntax.DEFAULTS = {
+	  highlight: function () {
+	    if (window.hljs == null) return null;
+	    return function (text) {
+	      var result = window.hljs.highlightAuto(text);
+	      return result.value;
+	    };
+	  }()
+	};
+
+	exports.CodeBlock = SyntaxCodeBlock;
+	exports.CodeToken = CodeToken;
+	exports.default = Syntax;
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.addControls = exports.default = undefined;
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _parchment = __webpack_require__(2);
+
+	var _parchment2 = _interopRequireDefault(_parchment);
+
+	var _quill = __webpack_require__(18);
+
+	var _quill2 = _interopRequireDefault(_quill);
+
+	var _logger = __webpack_require__(30);
+
+	var _logger2 = _interopRequireDefault(_logger);
+
+	var _module = __webpack_require__(39);
+
+	var _module2 = _interopRequireDefault(_module);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var debug = (0, _logger2.default)('quill:toolbar');
+
+	var Toolbar = function (_Module) {
+	  _inherits(Toolbar, _Module);
+
+	  function Toolbar(quill, options) {
+	    _classCallCheck(this, Toolbar);
+
+	    var _this = _possibleConstructorReturn(this, (Toolbar.__proto__ || Object.getPrototypeOf(Toolbar)).call(this, quill, options));
+
+	    if (Array.isArray(_this.options.container)) {
+	      var container = document.createElement('div');
+	      addControls(container, _this.options.container);
+	      quill.container.parentNode.insertBefore(container, quill.container);
+	      _this.container = container;
+	    } else if (typeof _this.options.container === 'string') {
+	      _this.container = document.querySelector(_this.options.container);
+	    } else {
+	      _this.container = _this.options.container;
+	    }
+	    if (!(_this.container instanceof HTMLElement)) {
+	      var _ret;
+
+	      return _ret = debug.error('Container required for toolbar', _this.options), _possibleConstructorReturn(_this, _ret);
+	    }
+	    _this.container.classList.add('ql-toolbar');
+	    _this.controls = [];
+	    _this.handlers = {};
+	    Object.keys(_this.options.handlers).forEach(function (format) {
+	      _this.addHandler(format, _this.options.handlers[format]);
+	    });
+	    _this.container.addEventListener('mousedown', function (e) {
+	      e.preventDefault(); // Prevent blur
+	    });
+	    [].forEach.call(_this.container.querySelectorAll('button, select'), function (input) {
+	      _this.attach(input);
+	    });
+	    _this.quill.on(_quill2.default.events.EDITOR_CHANGE, function (type, range) {
+	      if (type === _quill2.default.events.SELECTION_CHANGE) {
+	        _this.update(range);
+	      }
+	    });
+	    _this.quill.on(_quill2.default.events.SCROLL_OPTIMIZE, function () {
+	      var _this$quill$selection = _this.quill.selection.getRange();
+
+	      var _this$quill$selection2 = _slicedToArray(_this$quill$selection, 1);
+
+	      var range = _this$quill$selection2[0]; // quill.getSelection triggers update
+
+	      _this.update(range);
+	    });
+	    return _this;
+	  }
+
+	  _createClass(Toolbar, [{
+	    key: 'addHandler',
+	    value: function addHandler(format, handler) {
+	      this.handlers[format] = handler;
+	    }
+	  }, {
+	    key: 'attach',
+	    value: function attach(input) {
+	      var _this2 = this;
+
+	      var format = [].find.call(input.classList, function (className) {
+	        return className.indexOf('ql-') === 0;
+	      });
+	      if (!format) return;
+	      format = format.slice('ql-'.length);
+	      if (input.tagName === 'BUTTON') {
+	        input.setAttribute('type', 'button');
+	      }
+	      if (this.handlers[format] == null) {
+	        if (this.quill.scroll.whitelist != null && this.quill.scroll.whitelist[format] == null) {
+	          debug.warn('ignoring attaching to disabled format', format, input);
+	          return;
+	        }
+	        if (_parchment2.default.query(format) == null) {
+	          debug.warn('ignoring attaching to nonexistent format', format, input);
+	          return;
+	        }
+	      }
+	      var eventName = input.tagName === 'SELECT' ? 'change' : 'click';
+	      input.addEventListener(eventName, function (e) {
+	        var value = void 0;
+	        if (input.tagName === 'SELECT') {
+	          if (input.selectedIndex < 0) return;
+	          var selected = input.options[input.selectedIndex];
+	          if (selected.hasAttribute('selected')) {
+	            value = false;
+	          } else {
+	            value = selected.value || false;
+	          }
+	        } else {
+	          if (input.classList.contains('ql-active')) {
+	            value = false;
+	          } else {
+	            value = input.value || !input.hasAttribute('value');
+	          }
+	          e.preventDefault();
+	        }
+	        _this2.quill.focus();
+
+	        var _quill$selection$getR = _this2.quill.selection.getRange();
+
+	        var _quill$selection$getR2 = _slicedToArray(_quill$selection$getR, 1);
+
+	        var range = _quill$selection$getR2[0];
+
+	        if (_this2.handlers[format] != null) {
+	          _this2.handlers[format].call(_this2, value);
+	        } else if (_parchment2.default.query(format).prototype instanceof _parchment2.default.Embed) {
+	          value = prompt('Enter ' + format);
+	          if (!value) return;
+	          _this2.quill.updateContents(new _delta2.default().retain(range.index).delete(range.length).insert(_defineProperty({}, format, value)), _quill2.default.sources.USER);
+	        } else {
+	          _this2.quill.format(format, value, _quill2.default.sources.USER);
+	        }
+	        _this2.update(range);
+	      });
+	      // TODO use weakmap
+	      this.controls.push([format, input]);
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update(range) {
+	      var formats = range == null ? {} : this.quill.getFormat(range);
+	      this.controls.forEach(function (pair) {
+	        var _pair = _slicedToArray(pair, 2);
+
+	        var format = _pair[0];
+	        var input = _pair[1];
+
+	        if (input.tagName === 'SELECT') {
+	          var option = void 0;
+	          if (range == null) {
+	            option = null;
+	          } else if (formats[format] == null) {
+	            option = input.querySelector('option[selected]');
+	          } else if (!Array.isArray(formats[format])) {
+	            var value = formats[format];
+	            if (typeof value === 'string') {
+	              value = value.replace(/\"/g, '\\"');
+	            }
+	            option = input.querySelector('option[value="' + value + '"]');
+	          }
+	          if (option == null) {
+	            input.value = ''; // TODO make configurable?
+	            input.selectedIndex = -1;
+	          } else {
+	            option.selected = true;
+	          }
+	        } else {
+	          if (range == null) {
+	            input.classList.remove('ql-active');
+	          } else if (input.hasAttribute('value')) {
+	            // both being null should match (default values)
+	            // '1' should match with 1 (headers)
+	            var isActive = formats[format] === input.getAttribute('value') || formats[format] != null && formats[format].toString() === input.getAttribute('value') || formats[format] == null && !input.getAttribute('value');
+	            input.classList.toggle('ql-active', isActive);
+	          } else {
+	            input.classList.toggle('ql-active', formats[format] != null);
+	          }
+	        }
+	      });
+	    }
+	  }]);
+
+	  return Toolbar;
+	}(_module2.default);
+
+	Toolbar.DEFAULTS = {};
+
+	function addButton(container, format, value) {
+	  var input = document.createElement('button');
+	  input.setAttribute('type', 'button');
+	  input.classList.add('ql-' + format);
+	  if (value != null) {
+	    input.value = value;
+	  }
+	  container.appendChild(input);
+	}
+
+	function addControls(container, groups) {
+	  if (!Array.isArray(groups[0])) {
+	    groups = [groups];
+	  }
+	  groups.forEach(function (controls) {
+	    var group = document.createElement('span');
+	    group.classList.add('ql-formats');
+	    controls.forEach(function (control) {
+	      if (typeof control === 'string') {
+	        addButton(group, control);
+	      } else {
+	        var format = Object.keys(control)[0];
+	        var value = control[format];
+	        if (Array.isArray(value)) {
+	          addSelect(group, format, value);
+	        } else {
+	          addButton(group, format, value);
+	        }
+	      }
+	    });
+	    container.appendChild(group);
+	  });
+	}
+
+	function addSelect(container, format, values) {
+	  var input = document.createElement('select');
+	  input.classList.add('ql-' + format);
+	  values.forEach(function (value) {
+	    var option = document.createElement('option');
+	    if (value !== false) {
+	      option.setAttribute('value', value);
+	    } else {
+	      option.setAttribute('selected', 'selected');
+	    }
+	    input.appendChild(option);
+	  });
+	  container.appendChild(input);
+	}
+
+	Toolbar.DEFAULTS = {
+	  container: null,
+	  handlers: {
+	    clean: function clean(value) {
+	      var _this3 = this;
+
+	      var range = this.quill.getSelection();
+	      if (range == null) return;
+	      if (range.length == 0) {
+	        var formats = this.quill.getFormat();
+	        Object.keys(formats).forEach(function (name) {
+	          // Clean functionality in existing apps only clean inline formats
+	          if (_parchment2.default.query(name, _parchment2.default.Scope.INLINE) != null) {
+	            _this3.quill.format(name, false);
+	          }
+	        });
+	      } else {
+	        this.quill.removeFormat(range, _quill2.default.sources.USER);
+	      }
+	    },
+	    direction: function direction(value) {
+	      var align = this.quill.getFormat()['align'];
+	      if (value === 'rtl' && align == null) {
+	        this.quill.format('align', 'right', _quill2.default.sources.USER);
+	      } else if (!value && align === 'right') {
+	        this.quill.format('align', false, _quill2.default.sources.USER);
+	      }
+	      this.quill.format('direction', value, _quill2.default.sources.USER);
+	    },
+	    link: function link(value) {
+	      if (value === true) {
+	        value = prompt('Enter link URL:');
+	      }
+	      this.quill.format('link', value, _quill2.default.sources.USER);
+	    },
+	    indent: function indent(value) {
+	      var range = this.quill.getSelection();
+	      var formats = this.quill.getFormat(range);
+	      var indent = parseInt(formats.indent || 0);
+	      if (value === '+1' || value === '-1') {
+	        var modifier = value === '+1' ? 1 : -1;
+	        if (formats.direction === 'rtl') modifier *= -1;
+	        this.quill.format('indent', indent + modifier, _quill2.default.sources.USER);
+	      }
+	    }
+	  }
+	};
+
+	exports.default = Toolbar;
+	exports.addControls = addControls;
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = {
+	  'align': {
+	    '': __webpack_require__(70),
+	    'center': __webpack_require__(71),
+	    'right': __webpack_require__(72),
+	    'justify': __webpack_require__(73)
+	  },
+	  'background': __webpack_require__(74),
+	  'blockquote': __webpack_require__(75),
+	  'bold': __webpack_require__(76),
+	  'clean': __webpack_require__(77),
+	  'code-block': __webpack_require__(78),
+	  'color': __webpack_require__(79),
+	  'direction': {
+	    '': __webpack_require__(80),
+	    'rtl': __webpack_require__(81)
+	  },
+	  'float': {
+	    'center': __webpack_require__(82),
+	    'full': __webpack_require__(83),
+	    'left': __webpack_require__(84),
+	    'right': __webpack_require__(85)
+	  },
+	  'formula': __webpack_require__(86),
+	  'header': {
+	    '1': __webpack_require__(87),
+	    '2': __webpack_require__(88)
+	  },
+	  'italic': __webpack_require__(89),
+	  'image': __webpack_require__(90),
+	  'indent': {
+	    '+1': __webpack_require__(91),
+	    '-1': __webpack_require__(92)
+	  },
+	  'link': __webpack_require__(93),
+	  'list': {
+	    'ordered': __webpack_require__(94),
+	    'bullet': __webpack_require__(95)
+	  },
+	  'script': {
+	    'sub': __webpack_require__(96),
+	    'super': __webpack_require__(97)
+	  },
+	  'strike': __webpack_require__(98),
+	  'underline': __webpack_require__(99),
+	  'video': __webpack_require__(100)
+	};
+
+/***/ },
+/* 70 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=3 x2=15 y1=9 y2=9></line> <line class=ql-stroke x1=3 x2=13 y1=14 y2=14></line> <line class=ql-stroke x1=3 x2=9 y1=4 y2=4></line> </svg>";
+
+/***/ },
+/* 71 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=15 x2=3 y1=9 y2=9></line> <line class=ql-stroke x1=14 x2=4 y1=14 y2=14></line> <line class=ql-stroke x1=12 x2=6 y1=4 y2=4></line> </svg>";
+
+/***/ },
+/* 72 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=15 x2=3 y1=9 y2=9></line> <line class=ql-stroke x1=15 x2=5 y1=14 y2=14></line> <line class=ql-stroke x1=15 x2=9 y1=4 y2=4></line> </svg>";
+
+/***/ },
+/* 73 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=15 x2=3 y1=9 y2=9></line> <line class=ql-stroke x1=15 x2=3 y1=14 y2=14></line> <line class=ql-stroke x1=15 x2=3 y1=4 y2=4></line> </svg>";
+
+/***/ },
+/* 74 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <g class=\"ql-fill ql-color-label\"> <polygon points=\"6 6.868 6 6 5 6 5 7 5.942 7 6 6.868\"></polygon> <rect height=1 width=1 x=4 y=4></rect> <polygon points=\"6.817 5 6 5 6 6 6.38 6 6.817 5\"></polygon> <rect height=1 width=1 x=2 y=6></rect> <rect height=1 width=1 x=3 y=5></rect> <rect height=1 width=1 x=4 y=7></rect> <polygon points=\"4 11.439 4 11 3 11 3 12 3.755 12 4 11.439\"></polygon> <rect height=1 width=1 x=2 y=12></rect> <rect height=1 width=1 x=2 y=9></rect> <rect height=1 width=1 x=2 y=15></rect> <polygon points=\"4.63 10 4 10 4 11 4.192 11 4.63 10\"></polygon> <rect height=1 width=1 x=3 y=8></rect> <path d=M10.832,4.2L11,4.582V4H10.708A1.948,1.948,0,0,1,10.832,4.2Z></path> <path d=M7,4.582L7.168,4.2A1.929,1.929,0,0,1,7.292,4H7V4.582Z></path> <path d=M8,13H7.683l-0.351.8a1.933,1.933,0,0,1-.124.2H8V13Z></path> <rect height=1 width=1 x=12 y=2></rect> <rect height=1 width=1 x=11 y=3></rect> <path d=M9,3H8V3.282A1.985,1.985,0,0,1,9,3Z></path> <rect height=1 width=1 x=2 y=3></rect> <rect height=1 width=1 x=6 y=2></rect> <rect height=1 width=1 x=3 y=2></rect> <rect height=1 width=1 x=5 y=3></rect> <rect height=1 width=1 x=9 y=2></rect> <rect height=1 width=1 x=15 y=14></rect> <polygon points=\"13.447 10.174 13.469 10.225 13.472 10.232 13.808 11 14 11 14 10 13.37 10 13.447 10.174\"></polygon> <rect height=1 width=1 x=13 y=7></rect> <rect height=1 width=1 x=15 y=5></rect> <rect height=1 width=1 x=14 y=6></rect> <rect height=1 width=1 x=15 y=8></rect> <rect height=1 width=1 x=14 y=9></rect> <path d=M3.775,14H3v1H4V14.314A1.97,1.97,0,0,1,3.775,14Z></path> <rect height=1 width=1 x=14 y=3></rect> <polygon points=\"12 6.868 12 6 11.62 6 12 6.868\"></polygon> <rect height=1 width=1 x=15 y=2></rect> <rect height=1 width=1 x=12 y=5></rect> <rect height=1 width=1 x=13 y=4></rect> <polygon points=\"12.933 9 13 9 13 8 12.495 8 12.933 9\"></polygon> <rect height=1 width=1 x=9 y=14></rect> <rect height=1 width=1 x=8 y=15></rect> <path d=M6,14.926V15H7V14.316A1.993,1.993,0,0,1,6,14.926Z></path> <rect height=1 width=1 x=5 y=15></rect> <path d=M10.668,13.8L10.317,13H10v1h0.792A1.947,1.947,0,0,1,10.668,13.8Z></path> <rect height=1 width=1 x=11 y=15></rect> <path d=M14.332,12.2a1.99,1.99,0,0,1,.166.8H15V12H14.245Z></path> <rect height=1 width=1 x=14 y=15></rect> <rect height=1 width=1 x=15 y=11></rect> </g> <polyline class=ql-stroke points=\"5.5 13 9 5 12.5 13\"></polyline> <line class=ql-stroke x1=11.63 x2=6.38 y1=11 y2=11></line> </svg>";
+
+/***/ },
+/* 75 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <rect class=\"ql-fill ql-stroke\" height=3 width=3 x=4 y=5></rect> <rect class=\"ql-fill ql-stroke\" height=3 width=3 x=11 y=5></rect> <path class=\"ql-even ql-fill ql-stroke\" d=M7,8c0,4.031-3,5-3,5></path> <path class=\"ql-even ql-fill ql-stroke\" d=M14,8c0,4.031-3,5-3,5></path> </svg>";
+
+/***/ },
+/* 76 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-stroke d=M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z></path> <path class=ql-stroke d=M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z></path> </svg>";
+
+/***/ },
+/* 77 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg class=\"\" viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=5 x2=13 y1=3 y2=3></line> <line class=ql-stroke x1=6 x2=9.35 y1=12 y2=3></line> <line class=ql-stroke x1=11 x2=15 y1=11 y2=15></line> <line class=ql-stroke x1=15 x2=11 y1=11 y2=15></line> <rect class=ql-fill height=1 rx=0.5 ry=0.5 width=7 x=2 y=14></rect> </svg>";
+
+/***/ },
+/* 78 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <polyline class=\"ql-even ql-stroke\" points=\"5 7 3 9 5 11\"></polyline> <polyline class=\"ql-even ql-stroke\" points=\"13 7 15 9 13 11\"></polyline> <line class=ql-stroke x1=10 x2=8 y1=5 y2=13></line> </svg>";
+
+/***/ },
+/* 79 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=\"ql-color-label ql-stroke ql-transparent\" x1=3 x2=15 y1=15 y2=15></line> <polyline class=ql-stroke points=\"5.5 11 9 3 12.5 11\"></polyline> <line class=ql-stroke x1=11.63 x2=6.38 y1=9 y2=9></line> </svg>";
+
+/***/ },
+/* 80 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <polygon class=\"ql-stroke ql-fill\" points=\"3 11 5 9 3 7 3 11\"></polygon> <line class=\"ql-stroke ql-fill\" x1=15 x2=11 y1=4 y2=4></line> <path class=ql-fill d=M11,3a3,3,0,0,0,0,6h1V3H11Z></path> <rect class=ql-fill height=11 width=1 x=11 y=4></rect> <rect class=ql-fill height=11 width=1 x=13 y=4></rect> </svg>";
+
+/***/ },
+/* 81 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <polygon class=\"ql-stroke ql-fill\" points=\"15 12 13 10 15 8 15 12\"></polygon> <line class=\"ql-stroke ql-fill\" x1=9 x2=5 y1=4 y2=4></line> <path class=ql-fill d=M5,3A3,3,0,0,0,5,9H6V3H5Z></path> <rect class=ql-fill height=11 width=1 x=5 y=4></rect> <rect class=ql-fill height=11 width=1 x=7 y=4></rect> </svg>";
+
+/***/ },
+/* 82 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M14,16H4a1,1,0,0,1,0-2H14A1,1,0,0,1,14,16Z /> <path class=ql-fill d=M14,4H4A1,1,0,0,1,4,2H14A1,1,0,0,1,14,4Z /> <rect class=ql-fill x=3 y=6 width=12 height=6 rx=1 ry=1 /> </svg>";
+
+/***/ },
+/* 83 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M13,16H5a1,1,0,0,1,0-2h8A1,1,0,0,1,13,16Z /> <path class=ql-fill d=M13,4H5A1,1,0,0,1,5,2h8A1,1,0,0,1,13,4Z /> <rect class=ql-fill x=2 y=6 width=14 height=6 rx=1 ry=1 /> </svg>";
+
+/***/ },
+/* 84 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M15,8H13a1,1,0,0,1,0-2h2A1,1,0,0,1,15,8Z /> <path class=ql-fill d=M15,12H13a1,1,0,0,1,0-2h2A1,1,0,0,1,15,12Z /> <path class=ql-fill d=M15,16H5a1,1,0,0,1,0-2H15A1,1,0,0,1,15,16Z /> <path class=ql-fill d=M15,4H5A1,1,0,0,1,5,2H15A1,1,0,0,1,15,4Z /> <rect class=ql-fill x=2 y=6 width=8 height=6 rx=1 ry=1 /> </svg>";
+
+/***/ },
+/* 85 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M5,8H3A1,1,0,0,1,3,6H5A1,1,0,0,1,5,8Z /> <path class=ql-fill d=M5,12H3a1,1,0,0,1,0-2H5A1,1,0,0,1,5,12Z /> <path class=ql-fill d=M13,16H3a1,1,0,0,1,0-2H13A1,1,0,0,1,13,16Z /> <path class=ql-fill d=M13,4H3A1,1,0,0,1,3,2H13A1,1,0,0,1,13,4Z /> <rect class=ql-fill x=8 y=6 width=8 height=6 rx=1 ry=1 transform=\"translate(24 18) rotate(-180)\"/> </svg>";
+
+/***/ },
+/* 86 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M11.759,2.482a2.561,2.561,0,0,0-3.53.607A7.656,7.656,0,0,0,6.8,6.2C6.109,9.188,5.275,14.677,4.15,14.927a1.545,1.545,0,0,0-1.3-.933A0.922,0.922,0,0,0,2,15.036S1.954,16,4.119,16s3.091-2.691,3.7-5.553c0.177-.826.36-1.726,0.554-2.6L8.775,6.2c0.381-1.421.807-2.521,1.306-2.676a1.014,1.014,0,0,0,1.02.56A0.966,0.966,0,0,0,11.759,2.482Z></path> <rect class=ql-fill height=1.6 rx=0.8 ry=0.8 width=5 x=5.15 y=6.2></rect> <path class=ql-fill d=M13.663,12.027a1.662,1.662,0,0,1,.266-0.276q0.193,0.069.456,0.138a2.1,2.1,0,0,0,.535.069,1.075,1.075,0,0,0,.767-0.3,1.044,1.044,0,0,0,.314-0.8,0.84,0.84,0,0,0-.238-0.619,0.8,0.8,0,0,0-.594-0.239,1.154,1.154,0,0,0-.781.3,4.607,4.607,0,0,0-.781,1q-0.091.15-.218,0.346l-0.246.38c-0.068-.288-0.137-0.582-0.212-0.885-0.459-1.847-2.494-.984-2.941-0.8-0.482.2-.353,0.647-0.094,0.529a0.869,0.869,0,0,1,1.281.585c0.217,0.751.377,1.436,0.527,2.038a5.688,5.688,0,0,1-.362.467,2.69,2.69,0,0,1-.264.271q-0.221-.08-0.471-0.147a2.029,2.029,0,0,0-.522-0.066,1.079,1.079,0,0,0-.768.3A1.058,1.058,0,0,0,9,15.131a0.82,0.82,0,0,0,.832.852,1.134,1.134,0,0,0,.787-0.3,5.11,5.11,0,0,0,.776-0.993q0.141-.219.215-0.34c0.046-.076.122-0.194,0.223-0.346a2.786,2.786,0,0,0,.918,1.726,2.582,2.582,0,0,0,2.376-.185c0.317-.181.212-0.565,0-0.494A0.807,0.807,0,0,1,14.176,15a5.159,5.159,0,0,1-.913-2.446l0,0Q13.487,12.24,13.663,12.027Z></path> </svg>";
+
+/***/ },
+/* 87 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=3 x2=3 y1=4 y2=14></line> <line class=ql-stroke x1=11 x2=11 y1=4 y2=14></line> <line class=ql-stroke x1=11 x2=3 y1=9 y2=9></line> <line class=\"ql-stroke ql-thin\" x1=13.5 x2=15.5 y1=14.5 y2=14.5></line> <path class=ql-fill d=M14.5,15a0.5,0.5,0,0,1-.5-0.5V12.085l-0.276.138A0.5,0.5,0,0,1,13.053,12c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,15,11.5v3A0.5,0.5,0,0,1,14.5,15Z></path> </svg>";
+
+/***/ },
+/* 88 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=3 x2=3 y1=4 y2=14></line> <line class=ql-stroke x1=11 x2=11 y1=4 y2=14></line> <line class=ql-stroke x1=11 x2=3 y1=9 y2=9></line> <path class=\"ql-stroke ql-thin\" d=M15.5,14.5h-2c0-.234,1.85-1.076,1.85-2.234a0.959,0.959,0,0,0-1.85-.109></path> </svg>";
+
+/***/ },
+/* 89 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=7 x2=13 y1=4 y2=4></line> <line class=ql-stroke x1=5 x2=11 y1=14 y2=14></line> <line class=ql-stroke x1=8 x2=10 y1=14 y2=4></line> </svg>";
+
+/***/ },
+/* 90 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <rect class=ql-stroke height=10 width=12 x=3 y=4></rect> <circle class=ql-fill cx=6 cy=7 r=1></circle> <polyline class=\"ql-even ql-fill\" points=\"5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12\"></polyline> </svg>";
+
+/***/ },
+/* 91 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=3 x2=15 y1=14 y2=14></line> <line class=ql-stroke x1=3 x2=15 y1=4 y2=4></line> <line class=ql-stroke x1=9 x2=15 y1=9 y2=9></line> <polyline class=\"ql-fill ql-stroke\" points=\"3 7 3 11 5 9 3 7\"></polyline> </svg>";
+
+/***/ },
+/* 92 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=3 x2=15 y1=14 y2=14></line> <line class=ql-stroke x1=3 x2=15 y1=4 y2=4></line> <line class=ql-stroke x1=9 x2=15 y1=9 y2=9></line> <polyline class=ql-stroke points=\"5 7 5 11 3 9 5 7\"></polyline> </svg>";
+
+/***/ },
+/* 93 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=7 x2=11 y1=7 y2=11></line> <path class=\"ql-even ql-stroke\" d=M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z></path> <path class=\"ql-even ql-stroke\" d=M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z></path> </svg>";
+
+/***/ },
+/* 94 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=7 x2=15 y1=4 y2=4></line> <line class=ql-stroke x1=7 x2=15 y1=9 y2=9></line> <line class=ql-stroke x1=7 x2=15 y1=14 y2=14></line> <line class=\"ql-stroke ql-thin\" x1=2.5 x2=4.5 y1=5.5 y2=5.5></line> <path class=ql-fill d=M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z></path> <path class=\"ql-stroke ql-thin\" d=M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156></path> <path class=\"ql-stroke ql-thin\" d=M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109></path> </svg>";
+
+/***/ },
+/* 95 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=ql-stroke x1=6 x2=15 y1=4 y2=4></line> <line class=ql-stroke x1=6 x2=15 y1=9 y2=9></line> <line class=ql-stroke x1=6 x2=15 y1=14 y2=14></line> <line class=ql-stroke x1=3 x2=3 y1=4 y2=4></line> <line class=ql-stroke x1=3 x2=3 y1=9 y2=9></line> <line class=ql-stroke x1=3 x2=3 y1=14 y2=14></line> </svg>";
+
+/***/ },
+/* 96 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M15.5,15H13.861a3.858,3.858,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.921,1.921,0,0,0,12.021,11.7a0.50013,0.50013,0,1,0,.957.291h0a0.914,0.914,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.076-1.16971,1.86982-1.93971,2.43082A1.45639,1.45639,0,0,0,12,15.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,15Z /> <path class=ql-fill d=M9.65,5.241a1,1,0,0,0-1.409.108L6,7.964,3.759,5.349A1,1,0,0,0,2.192,6.59178Q2.21541,6.6213,2.241,6.649L4.684,9.5,2.241,12.35A1,1,0,0,0,3.71,13.70722q0.02557-.02768.049-0.05722L6,11.036,8.241,13.65a1,1,0,1,0,1.567-1.24277Q9.78459,12.3777,9.759,12.35L7.316,9.5,9.759,6.651A1,1,0,0,0,9.65,5.241Z /> </svg>";
+
+/***/ },
+/* 97 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-fill d=M15.5,7H13.861a4.015,4.015,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.922,1.922,0,0,0,12.021,3.7a0.5,0.5,0,1,0,.957.291,0.917,0.917,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.077-1.164,1.925-1.934,2.486A1.423,1.423,0,0,0,12,7.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,7Z /> <path class=ql-fill d=M9.651,5.241a1,1,0,0,0-1.41.108L6,7.964,3.759,5.349a1,1,0,1,0-1.519,1.3L4.683,9.5,2.241,12.35a1,1,0,1,0,1.519,1.3L6,11.036,8.241,13.65a1,1,0,0,0,1.519-1.3L7.317,9.5,9.759,6.651A1,1,0,0,0,9.651,5.241Z /> </svg>";
+
+/***/ },
+/* 98 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <line class=\"ql-stroke ql-thin\" x1=15.5 x2=2.5 y1=8.5 y2=9.5></line> <path class=ql-fill d=M9.007,8C6.542,7.791,6,7.519,6,6.5,6,5.792,7.283,5,9,5c1.571,0,2.765.679,2.969,1.309a1,1,0,0,0,1.9-.617C13.356,4.106,11.354,3,9,3,6.2,3,4,4.538,4,6.5a3.2,3.2,0,0,0,.5,1.843Z></path> <path class=ql-fill d=M8.984,10C11.457,10.208,12,10.479,12,11.5c0,0.708-1.283,1.5-3,1.5-1.571,0-2.765-.679-2.969-1.309a1,1,0,1,0-1.9.617C4.644,13.894,6.646,15,9,15c2.8,0,5-1.538,5-3.5a3.2,3.2,0,0,0-.5-1.843Z></path> </svg>";
+
+/***/ },
+/* 99 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <path class=ql-stroke d=M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3></path> <rect class=ql-fill height=1 rx=0.5 ry=0.5 width=12 x=3 y=15></rect> </svg>";
+
+/***/ },
+/* 100 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <rect class=ql-stroke height=12 width=12 x=3 y=3></rect> <rect class=ql-fill height=12 width=1 x=5 y=3></rect> <rect class=ql-fill height=12 width=1 x=12 y=3></rect> <rect class=ql-fill height=2 width=8 x=5 y=8></rect> <rect class=ql-fill height=1 width=3 x=3 y=5></rect> <rect class=ql-fill height=1 width=3 x=3 y=7></rect> <rect class=ql-fill height=1 width=3 x=3 y=10></rect> <rect class=ql-fill height=1 width=3 x=3 y=12></rect> <rect class=ql-fill height=1 width=3 x=12 y=5></rect> <rect class=ql-fill height=1 width=3 x=12 y=7></rect> <rect class=ql-fill height=1 width=3 x=12 y=10></rect> <rect class=ql-fill height=1 width=3 x=12 y=12></rect> </svg>";
+
+/***/ },
+/* 101 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dropdown = __webpack_require__(102);
+
+	var _dropdown2 = _interopRequireDefault(_dropdown);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Picker = function () {
+	  function Picker(select) {
+	    var _this = this;
+
+	    _classCallCheck(this, Picker);
+
+	    this.select = select;
+	    this.container = document.createElement('span');
+	    this.buildPicker();
+	    this.select.style.display = 'none';
+	    this.select.parentNode.insertBefore(this.container, this.select);
+	    this.label.addEventListener('click', function (event) {
+	      _this.container.classList.toggle('ql-expanded');
+	    });
+	    this.select.addEventListener('change', this.update.bind(this));
+	  }
+
+	  _createClass(Picker, [{
+	    key: 'buildItem',
+	    value: function buildItem(option) {
+	      var _this2 = this;
+
+	      var item = document.createElement('span');
+	      item.classList.add('ql-picker-item');
+	      if (option.hasAttribute('value')) {
+	        item.setAttribute('data-value', option.getAttribute('value'));
+	      }
+	      if (option.textContent) {
+	        item.setAttribute('data-label', option.textContent);
+	      }
+	      item.addEventListener('click', function (event) {
+	        _this2.selectItem(item, true);
+	      });
+	      return item;
+	    }
+	  }, {
+	    key: 'buildLabel',
+	    value: function buildLabel() {
+	      var label = document.createElement('span');
+	      label.classList.add('ql-picker-label');
+	      label.innerHTML = _dropdown2.default;
+	      this.container.appendChild(label);
+	      return label;
+	    }
+	  }, {
+	    key: 'buildOptions',
+	    value: function buildOptions() {
+	      var _this3 = this;
+
+	      var options = document.createElement('span');
+	      options.classList.add('ql-picker-options');
+	      [].slice.call(this.select.options).forEach(function (option) {
+	        var item = _this3.buildItem(option);
+	        options.appendChild(item);
+	        if (option.hasAttribute('selected')) {
+	          _this3.selectItem(item);
+	        }
+	      });
+	      this.container.appendChild(options);
+	    }
+	  }, {
+	    key: 'buildPicker',
+	    value: function buildPicker() {
+	      var _this4 = this;
+
+	      [].slice.call(this.select.attributes).forEach(function (item) {
+	        _this4.container.setAttribute(item.name, item.value);
+	      });
+	      this.container.classList.add('ql-picker');
+	      this.label = this.buildLabel();
+	      this.buildOptions();
+	    }
+	  }, {
+	    key: 'close',
+	    value: function close() {
+	      this.container.classList.remove('ql-expanded');
+	    }
+	  }, {
+	    key: 'selectItem',
+	    value: function selectItem(item) {
+	      var trigger = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+
+	      var selected = this.container.querySelector('.ql-selected');
+	      if (item === selected) return;
+	      if (selected != null) {
+	        selected.classList.remove('ql-selected');
+	      }
+	      if (item != null) {
+	        item.classList.add('ql-selected');
+	        this.select.selectedIndex = [].indexOf.call(item.parentNode.children, item);
+	        if (item.hasAttribute('data-value')) {
+	          this.label.setAttribute('data-value', item.getAttribute('data-value'));
+	        } else {
+	          this.label.removeAttribute('data-value');
+	        }
+	        if (item.hasAttribute('data-label')) {
+	          this.label.setAttribute('data-label', item.getAttribute('data-label'));
+	        } else {
+	          this.label.removeAttribute('data-label');
+	        }
+	        if (trigger) {
+	          if (typeof Event === 'function') {
+	            this.select.dispatchEvent(new Event('change'));
+	          } else if ((typeof Event === 'undefined' ? 'undefined' : _typeof(Event)) === 'object') {
+	            // IE11
+	            var event = document.createEvent('Event');
+	            event.initEvent('change', true, true);
+	            this.select.dispatchEvent(event);
+	          }
+	          this.close();
+	        }
+	      } else {
+	        this.label.removeAttribute('data-value');
+	        this.label.removeAttribute('data-label');
+	      }
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update() {
+	      var option = void 0;
+	      if (this.select.selectedIndex > -1) {
+	        var item = this.container.querySelector('.ql-picker-options').children[this.select.selectedIndex];
+	        option = this.select.options[this.select.selectedIndex];
+	        this.selectItem(item);
+	      } else {
+	        this.selectItem(null);
+	      }
+	      var isActive = option != null && option !== this.select.querySelector('option[selected]');
+	      this.label.classList.toggle('ql-active', isActive);
+	    }
+	  }]);
+
+	  return Picker;
+	}();
+
+	exports.default = Picker;
+
+/***/ },
+/* 102 */
+/***/ function(module, exports) {
+
+	module.exports = "<svg viewbox=\"0 0 18 18\"> <polygon class=ql-stroke points=\"7 11 9 13 11 11 7 11\"></polygon> <polygon class=ql-stroke points=\"7 7 9 5 11 7 7 7\"></polygon> </svg>";
+
+/***/ },
+/* 103 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _picker = __webpack_require__(101);
+
+	var _picker2 = _interopRequireDefault(_picker);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ColorPicker = function (_Picker) {
+	  _inherits(ColorPicker, _Picker);
+
+	  function ColorPicker(select, label) {
+	    _classCallCheck(this, ColorPicker);
+
+	    var _this = _possibleConstructorReturn(this, (ColorPicker.__proto__ || Object.getPrototypeOf(ColorPicker)).call(this, select));
+
+	    _this.label.innerHTML = label;
+	    _this.container.classList.add('ql-color-picker');
+	    [].slice.call(_this.container.querySelectorAll('.ql-picker-item'), 0, 7).forEach(function (item) {
+	      item.classList.add('ql-primary');
+	    });
+	    return _this;
+	  }
+
+	  _createClass(ColorPicker, [{
+	    key: 'buildItem',
+	    value: function buildItem(option) {
+	      var item = _get(ColorPicker.prototype.__proto__ || Object.getPrototypeOf(ColorPicker.prototype), 'buildItem', this).call(this, option);
+	      item.style.backgroundColor = option.getAttribute('value') || '';
+	      return item;
+	    }
+	  }, {
+	    key: 'selectItem',
+	    value: function selectItem(item, trigger) {
+	      _get(ColorPicker.prototype.__proto__ || Object.getPrototypeOf(ColorPicker.prototype), 'selectItem', this).call(this, item, trigger);
+	      var colorLabel = this.label.querySelector('.ql-color-label');
+	      var value = item ? item.getAttribute('data-value') || '' : '';
+	      if (colorLabel) {
+	        if (colorLabel.tagName === 'line') {
+	          colorLabel.style.stroke = value;
+	        } else {
+	          colorLabel.style.fill = value;
+	        }
+	      }
+	    }
+	  }]);
+
+	  return ColorPicker;
+	}(_picker2.default);
+
+	exports.default = ColorPicker;
+
+/***/ },
+/* 104 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _picker = __webpack_require__(101);
+
+	var _picker2 = _interopRequireDefault(_picker);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var IconPicker = function (_Picker) {
+	  _inherits(IconPicker, _Picker);
+
+	  function IconPicker(select, icons) {
+	    _classCallCheck(this, IconPicker);
+
+	    var _this = _possibleConstructorReturn(this, (IconPicker.__proto__ || Object.getPrototypeOf(IconPicker)).call(this, select));
+
+	    _this.container.classList.add('ql-icon-picker');
+	    [].forEach.call(_this.container.querySelectorAll('.ql-picker-item'), function (item) {
+	      item.innerHTML = icons[item.getAttribute('data-value') || ''];
+	    });
+	    _this.defaultItem = _this.container.querySelector('.ql-selected');
+	    _this.selectItem(_this.defaultItem);
+	    return _this;
+	  }
+
+	  _createClass(IconPicker, [{
+	    key: 'selectItem',
+	    value: function selectItem(item, trigger) {
+	      _get(IconPicker.prototype.__proto__ || Object.getPrototypeOf(IconPicker.prototype), 'selectItem', this).call(this, item, trigger);
+	      item = item || this.defaultItem;
+	      this.label.innerHTML = item.innerHTML;
+	    }
+	  }]);
+
+	  return IconPicker;
+	}(_picker2.default);
+
+	exports.default = IconPicker;
+
+/***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Tooltip = function () {
+	  function Tooltip(quill, boundsContainer) {
+	    var _this = this;
+
+	    _classCallCheck(this, Tooltip);
+
+	    this.quill = quill;
+	    this.boundsContainer = boundsContainer;
+	    this.root = quill.addContainer('ql-tooltip');
+	    this.root.innerHTML = this.constructor.TEMPLATE;
+	    var offset = parseInt(window.getComputedStyle(this.root).marginTop);
+	    this.quill.root.addEventListener('scroll', function () {
+	      _this.root.style.marginTop = -1 * _this.quill.root.scrollTop + offset + 'px';
+	      _this.checkBounds();
+	    });
+	    this.hide();
+	  }
+
+	  _createClass(Tooltip, [{
+	    key: 'checkBounds',
+	    value: function checkBounds() {
+	      this.root.classList.toggle('ql-out-top', this.root.offsetTop <= 0);
+	      this.root.classList.remove('ql-out-bottom');
+	      this.root.classList.toggle('ql-out-bottom', this.root.offsetTop + this.root.offsetHeight >= this.quill.root.offsetHeight);
+	    }
+	  }, {
+	    key: 'hide',
+	    value: function hide() {
+	      this.root.classList.add('ql-hidden');
+	    }
+	  }, {
+	    key: 'position',
+	    value: function position(reference) {
+	      var left = reference.left + reference.width / 2 - this.root.offsetWidth / 2;
+	      var top = reference.bottom + this.quill.root.scrollTop;
+	      this.root.style.left = left + 'px';
+	      this.root.style.top = top + 'px';
+	      var containerBounds = this.boundsContainer.getBoundingClientRect();
+	      var rootBounds = this.root.getBoundingClientRect();
+	      var shift = 0;
+	      if (rootBounds.right > containerBounds.right) {
+	        shift = containerBounds.right - rootBounds.right;
+	        this.root.style.left = left + shift + 'px';
+	      }
+	      if (rootBounds.left < containerBounds.left) {
+	        shift = containerBounds.left - rootBounds.left;
+	        this.root.style.left = left + shift + 'px';
+	      }
+	      this.checkBounds();
+	      return shift;
+	    }
+	  }, {
+	    key: 'show',
+	    value: function show() {
+	      this.root.classList.remove('ql-editing');
+	      this.root.classList.remove('ql-hidden');
+	    }
+	  }]);
+
+	  return Tooltip;
+	}();
+
+	exports.default = Tooltip;
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	var _keyboard = __webpack_require__(52);
+
+	var _keyboard2 = _interopRequireDefault(_keyboard);
+
+	var _base = __webpack_require__(107);
+
+	var _base2 = _interopRequireDefault(_base);
+
+	var _icons = __webpack_require__(69);
+
+	var _icons2 = _interopRequireDefault(_icons);
+
+	var _selection = __webpack_require__(40);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TOOLBAR_CONFIG = [['bold', 'italic', 'link'], [{ header: 1 }, { header: 2 }, 'blockquote']];
+
+	var BubbleTheme = function (_BaseTheme) {
+	  _inherits(BubbleTheme, _BaseTheme);
+
+	  function BubbleTheme(quill, options) {
+	    _classCallCheck(this, BubbleTheme);
+
+	    if (options.modules.toolbar != null && options.modules.toolbar.container == null) {
+	      options.modules.toolbar.container = TOOLBAR_CONFIG;
+	    }
+
+	    var _this = _possibleConstructorReturn(this, (BubbleTheme.__proto__ || Object.getPrototypeOf(BubbleTheme)).call(this, quill, options));
+
+	    _this.quill.container.classList.add('ql-bubble');
+	    return _this;
+	  }
+
+	  _createClass(BubbleTheme, [{
+	    key: 'extendToolbar',
+	    value: function extendToolbar(toolbar) {
+	      this.tooltip = new BubbleTooltip(this.quill, this.options.bounds);
+	      this.tooltip.root.appendChild(toolbar.container);
+	      this.buildButtons([].slice.call(toolbar.container.querySelectorAll('button')));
+	      this.buildPickers([].slice.call(toolbar.container.querySelectorAll('select')));
+	    }
+	  }]);
+
+	  return BubbleTheme;
+	}(_base2.default);
+
+	BubbleTheme.DEFAULTS = (0, _extend2.default)(true, {}, _base.BaseTooltip.DEFAULTS, {
+	  modules: {
+	    toolbar: {
+	      handlers: {
+	        link: function link(value) {
+	          if (!value) {
+	            this.quill.format('link', false);
+	          } else {
+	            this.quill.theme.tooltip.edit();
+	          }
+	        }
+	      }
+	    }
+	  }
+	});
+
+	var BubbleTooltip = function (_BaseTooltip) {
+	  _inherits(BubbleTooltip, _BaseTooltip);
+
+	  function BubbleTooltip(quill, bounds) {
+	    _classCallCheck(this, BubbleTooltip);
+
+	    var _this2 = _possibleConstructorReturn(this, (BubbleTooltip.__proto__ || Object.getPrototypeOf(BubbleTooltip)).call(this, quill, bounds));
+
+	    _this2.quill.on(_emitter2.default.events.EDITOR_CHANGE, function (type, range) {
+	      if (type !== _emitter2.default.events.SELECTION_CHANGE) return;
+	      if (range != null && range.length > 0) {
+	        _this2.show();
+	        // Lock our width so we will expand beyond our offsetParent boundaries
+	        _this2.root.style.left = '0px';
+	        _this2.root.style.width = '';
+	        _this2.root.style.width = _this2.root.offsetWidth + 'px';
+	        var lines = _this2.quill.scroll.lines(range.index, range.length);
+	        if (lines.length === 1) {
+	          _this2.position(_this2.quill.getBounds(range));
+	        } else {
+	          var lastLine = lines[lines.length - 1];
+	          var index = lastLine.offset(_this2.quill.scroll);
+	          var length = Math.min(lastLine.length() - 1, range.index + range.length - index);
+	          var _bounds = _this2.quill.getBounds(new _selection.Range(index, length));
+	          _this2.position(_bounds);
+	        }
+	      } else if (document.activeElement !== _this2.textbox && _this2.quill.hasFocus()) {
+	        _this2.hide();
+	      }
+	    });
+	    return _this2;
+	  }
+
+	  _createClass(BubbleTooltip, [{
+	    key: 'listen',
+	    value: function listen() {
+	      var _this3 = this;
+
+	      _get(BubbleTooltip.prototype.__proto__ || Object.getPrototypeOf(BubbleTooltip.prototype), 'listen', this).call(this);
+	      this.root.querySelector('.ql-close').addEventListener('click', function (event) {
+	        _this3.root.classList.remove('ql-editing');
+	      });
+	      this.quill.on(_emitter2.default.events.SCROLL_OPTIMIZE, function () {
+	        // Let selection be restored by toolbar handlers before repositioning
+	        setTimeout(function () {
+	          if (_this3.root.classList.contains('ql-hidden')) return;
+	          var range = _this3.quill.getSelection();
+	          if (range != null) {
+	            _this3.position(_this3.quill.getBounds(range));
+	          }
+	        }, 1);
+	      });
+	    }
+	  }, {
+	    key: 'cancel',
+	    value: function cancel() {
+	      this.show();
+	    }
+	  }, {
+	    key: 'position',
+	    value: function position(reference) {
+	      var shift = _get(BubbleTooltip.prototype.__proto__ || Object.getPrototypeOf(BubbleTooltip.prototype), 'position', this).call(this, reference);
+	      if (shift === 0) return shift;
+	      var arrow = this.root.querySelector('.ql-tooltip-arrow');
+	      arrow.style.marginLeft = '';
+	      arrow.style.marginLeft = -1 * shift - arrow.offsetWidth / 2 + 'px';
+	    }
+	  }]);
+
+	  return BubbleTooltip;
+	}(_base.BaseTooltip);
+
+	BubbleTooltip.TEMPLATE = ['<span class="ql-tooltip-arrow"></span>', '<div class="ql-tooltip-editor">', '<input type="text" data-formula="e=mc^2" data-link="quilljs.com" data-video="Embed URL">', '<a class="ql-close"></a>', '</div>'].join('');
+
+	exports.default = BubbleTheme;
+
+/***/ },
+/* 107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.BaseTooltip = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _delta = __webpack_require__(20);
+
+	var _delta2 = _interopRequireDefault(_delta);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	var _keyboard = __webpack_require__(52);
+
+	var _keyboard2 = _interopRequireDefault(_keyboard);
+
+	var _theme = __webpack_require__(41);
+
+	var _theme2 = _interopRequireDefault(_theme);
+
+	var _colorPicker = __webpack_require__(103);
+
+	var _colorPicker2 = _interopRequireDefault(_colorPicker);
+
+	var _iconPicker = __webpack_require__(104);
+
+	var _iconPicker2 = _interopRequireDefault(_iconPicker);
+
+	var _picker = __webpack_require__(101);
+
+	var _picker2 = _interopRequireDefault(_picker);
+
+	var _tooltip = __webpack_require__(105);
+
+	var _tooltip2 = _interopRequireDefault(_tooltip);
+
+	var _icons = __webpack_require__(69);
+
+	var _icons2 = _interopRequireDefault(_icons);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ALIGNS = [false, 'center', 'right', 'justify'];
+
+	var COLORS = ["#000000", "#e60000", "#ff9900", "#ffff00", "#008A00", "#0066cc", "#9933ff", "#ffffff", "#facccc", "#ffebcc", "#ffffcc", "#cce8cc", "#cce0f5", "#ebd6ff", "#bbbbbb", "#f06666", "#ffc266", "#ffff66", "#66b966", "#66a3e0", "#c285ff", "#888888", "#a10000", "#b26b00", "#b2b200", "#006100", "#0047b2", "#6b24b2", "#444444", "#5c0000", "#663d00", "#666600", "#003700", "#002966", "#3d1466"];
+
+	var FONTS = [false, 'serif', 'monospace'];
+
+	var HEADERS = ['1', '2', '3', false];
+
+	var SIZES = ['small', false, 'large', 'huge'];
+
+	var BaseTheme = function (_Theme) {
+	  _inherits(BaseTheme, _Theme);
+
+	  function BaseTheme(quill, options) {
+	    _classCallCheck(this, BaseTheme);
+
+	    var _this = _possibleConstructorReturn(this, (BaseTheme.__proto__ || Object.getPrototypeOf(BaseTheme)).call(this, quill, options));
+
+	    var listener = function listener(e) {
+	      if (!document.body.contains(quill.root)) {
+	        return document.body.removeEventListener('click', listener);
+	      }
+	      if (_this.tooltip != null && !_this.tooltip.root.contains(e.target) && document.activeElement !== _this.tooltip.textbox && !_this.quill.hasFocus()) {
+	        _this.tooltip.hide();
+	      }
+	      if (_this.pickers != null) {
+	        _this.pickers.forEach(function (picker) {
+	          if (!picker.container.contains(e.target)) {
+	            picker.close();
+	          }
+	        });
+	      }
+	    };
+	    document.body.addEventListener('click', listener);
+	    return _this;
+	  }
+
+	  _createClass(BaseTheme, [{
+	    key: 'addModule',
+	    value: function addModule(name) {
+	      var module = _get(BaseTheme.prototype.__proto__ || Object.getPrototypeOf(BaseTheme.prototype), 'addModule', this).call(this, name);
+	      if (name === 'toolbar') {
+	        this.extendToolbar(module);
+	      }
+	      return module;
+	    }
+	  }, {
+	    key: 'buildButtons',
+	    value: function buildButtons(buttons) {
+	      buttons.forEach(function (button) {
+	        var className = button.getAttribute('class') || '';
+	        className.split(/\s+/).forEach(function (name) {
+	          if (!name.startsWith('ql-')) return;
+	          name = name.slice('ql-'.length);
+	          if (_icons2.default[name] == null) return;
+	          if (name === 'direction') {
+	            button.innerHTML = _icons2.default[name][''] + _icons2.default[name]['rtl'];
+	          } else if (typeof _icons2.default[name] === 'string') {
+	            button.innerHTML = _icons2.default[name];
+	          } else {
+	            var value = button.value || '';
+	            if (value != null && _icons2.default[name][value]) {
+	              button.innerHTML = _icons2.default[name][value];
+	            }
+	          }
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'buildPickers',
+	    value: function buildPickers(selects) {
+	      var _this2 = this;
+
+	      this.pickers = selects.map(function (select) {
+	        if (select.classList.contains('ql-align')) {
+	          if (select.querySelector('option') == null) {
+	            fillSelect(select, ALIGNS);
+	          }
+	          return new _iconPicker2.default(select, _icons2.default.align);
+	        } else if (select.classList.contains('ql-background') || select.classList.contains('ql-color')) {
+	          var format = select.classList.contains('ql-background') ? 'background' : 'color';
+	          if (select.querySelector('option') == null) {
+	            fillSelect(select, COLORS, format === 'background' ? '#ffffff' : '#000000');
+	          }
+	          return new _colorPicker2.default(select, _icons2.default[format]);
+	        } else {
+	          if (select.querySelector('option') == null) {
+	            if (select.classList.contains('ql-font')) {
+	              fillSelect(select, FONTS);
+	            } else if (select.classList.contains('ql-header')) {
+	              fillSelect(select, HEADERS);
+	            } else if (select.classList.contains('ql-size')) {
+	              fillSelect(select, SIZES);
+	            }
+	          }
+	          return new _picker2.default(select);
+	        }
+	      });
+	      var update = function update() {
+	        _this2.pickers.forEach(function (picker) {
+	          picker.update();
+	        });
+	      };
+	      this.quill.on(_emitter2.default.events.SELECTION_CHANGE, update).on(_emitter2.default.events.SCROLL_OPTIMIZE, update);
+	    }
+	  }]);
+
+	  return BaseTheme;
+	}(_theme2.default);
+
+	BaseTheme.DEFAULTS = (0, _extend2.default)(true, {}, _theme2.default.DEFAULTS, {
+	  modules: {
+	    toolbar: {
+	      handlers: {
+	        formula: function formula(value) {
+	          this.quill.theme.tooltip.edit('formula');
+	        },
+	        image: function image(value) {
+	          var _this3 = this;
+
+	          var fileInput = this.container.querySelector('input.ql-image[type=file]');
+	          if (fileInput == null) {
+	            fileInput = document.createElement('input');
+	            fileInput.setAttribute('type', 'file');
+	            fileInput.setAttribute('accept', 'image/*');
+	            fileInput.classList.add('ql-image');
+	            fileInput.addEventListener('change', function () {
+	              if (fileInput.files != null && fileInput.files[0] != null) {
+	                var reader = new FileReader();
+	                reader.onload = function (e) {
+	                  var range = _this3.quill.getSelection(true);
+	                  _this3.quill.updateContents(new _delta2.default().retain(range.index).delete(range.length).insert({ image: e.target.result }), _emitter2.default.sources.USER);
+	                  fileInput.value = "";
+	                };
+	                reader.readAsDataURL(fileInput.files[0]);
+	              }
+	            });
+	            this.container.appendChild(fileInput);
+	          }
+	          fileInput.click();
+	        },
+	        video: function video(value) {
+	          this.quill.theme.tooltip.edit('video');
+	        }
+	      }
+	    }
+	  }
+	});
+
+	var BaseTooltip = function (_Tooltip) {
+	  _inherits(BaseTooltip, _Tooltip);
+
+	  function BaseTooltip(quill, boundsContainer) {
+	    _classCallCheck(this, BaseTooltip);
+
+	    var _this4 = _possibleConstructorReturn(this, (BaseTooltip.__proto__ || Object.getPrototypeOf(BaseTooltip)).call(this, quill, boundsContainer));
+
+	    _this4.textbox = _this4.root.querySelector('input[type="text"]');
+	    _this4.listen();
+	    return _this4;
+	  }
+
+	  _createClass(BaseTooltip, [{
+	    key: 'listen',
+	    value: function listen() {
+	      var _this5 = this;
+
+	      this.textbox.addEventListener('keydown', function (event) {
+	        if (_keyboard2.default.match(event, 'enter')) {
+	          _this5.save();
+	          event.preventDefault();
+	        } else if (_keyboard2.default.match(event, 'escape')) {
+	          _this5.cancel();
+	          event.preventDefault();
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'cancel',
+	    value: function cancel() {
+	      this.hide();
+	    }
+	  }, {
+	    key: 'edit',
+	    value: function edit() {
+	      var mode = arguments.length <= 0 || arguments[0] === undefined ? 'link' : arguments[0];
+	      var preview = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+
+	      this.root.classList.remove('ql-hidden');
+	      this.root.classList.add('ql-editing');
+	      if (preview != null) {
+	        this.textbox.value = preview;
+	      } else if (mode !== this.root.getAttribute('data-mode')) {
+	        this.textbox.value = '';
+	      }
+	      this.position(this.quill.getBounds(this.quill.selection.savedRange));
+	      this.textbox.select();
+	      this.textbox.setAttribute('placeholder', this.textbox.getAttribute('data-' + mode) || '');
+	      this.root.setAttribute('data-mode', mode);
+	    }
+	  }, {
+	    key: 'restoreFocus',
+	    value: function restoreFocus() {
+	      var scrollTop = this.quill.root.scrollTop;
+	      this.quill.focus();
+	      this.quill.root.scrollTop = scrollTop;
+	    }
+	  }, {
+	    key: 'save',
+	    value: function save() {
+	      var value = this.textbox.value;
+	      switch (this.root.getAttribute('data-mode')) {
+	        case 'link':
+	          var scrollTop = this.quill.root.scrollTop;
+	          if (this.linkRange) {
+	            this.quill.formatText(this.linkRange, 'link', value, _emitter2.default.sources.USER);
+	            delete this.linkRange;
+	          } else {
+	            this.restoreFocus();
+	            this.quill.format('link', value, _emitter2.default.sources.USER);
+	          }
+	          this.quill.root.scrollTop = scrollTop;
+	          break;
+	        case 'video':
+	          var match = value.match(/^(https?):\/\/(www\.)?youtube\.com\/watch.*v=([a-zA-Z0-9_-]+)/) || value.match(/^(https?):\/\/(www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/);
+	          if (match) {
+	            value = match[1] + '://www.youtube.com/embed/' + match[3] + '?showinfo=0';
+	          } else if (match = value.match(/^(https?):\/\/(www\.)?vimeo\.com\/(\d+)/)) {
+	            value = match[1] + '://player.vimeo.com/video/' + match[3] + '/';
+	          }
+	        // fallthrough
+	        case 'formula':
+	          var range = this.quill.getSelection(true);
+	          var index = range.index + range.length;
+	          if (range != null) {
+	            this.quill.insertEmbed(index, this.root.getAttribute('data-mode'), value, _emitter2.default.sources.USER);
+	            if (this.root.getAttribute('data-mode') === 'formula') {
+	              this.quill.insertText(index + 1, ' ', _emitter2.default.sources.USER);
+	            }
+	            this.quill.setSelection(index + 2, _emitter2.default.sources.USER);
+	          }
+	          break;
+	        default:
+	      }
+	      this.textbox.value = '';
+	      this.hide();
+	    }
+	  }]);
+
+	  return BaseTooltip;
+	}(_tooltip2.default);
+
+	function fillSelect(select, values) {
+	  var defaultValue = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
+
+	  values.forEach(function (value) {
+	    var option = document.createElement('option');
+	    if (value === defaultValue) {
+	      option.setAttribute('selected', 'selected');
+	    } else {
+	      option.setAttribute('value', value);
+	    }
+	    select.appendChild(option);
+	  });
+	}
+
+	exports.BaseTooltip = BaseTooltip;
+	exports.default = BaseTheme;
+
+/***/ },
+/* 108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _extend = __webpack_require__(25);
+
+	var _extend2 = _interopRequireDefault(_extend);
+
+	var _emitter = __webpack_require__(28);
+
+	var _emitter2 = _interopRequireDefault(_emitter);
+
+	var _base = __webpack_require__(107);
+
+	var _base2 = _interopRequireDefault(_base);
+
+	var _link = __webpack_require__(60);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	var _picker = __webpack_require__(101);
+
+	var _picker2 = _interopRequireDefault(_picker);
+
+	var _selection = __webpack_require__(40);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TOOLBAR_CONFIG = [[{ header: ['1', '2', '3', false] }], ['bold', 'italic', 'underline', 'link'], [{ list: 'ordered' }, { list: 'bullet' }], ['clean']];
+
+	var SnowTheme = function (_BaseTheme) {
+	  _inherits(SnowTheme, _BaseTheme);
+
+	  function SnowTheme(quill, options) {
+	    _classCallCheck(this, SnowTheme);
+
+	    if (options.modules.toolbar != null && options.modules.toolbar.container == null) {
+	      options.modules.toolbar.container = TOOLBAR_CONFIG;
+	    }
+
+	    var _this = _possibleConstructorReturn(this, (SnowTheme.__proto__ || Object.getPrototypeOf(SnowTheme)).call(this, quill, options));
+
+	    _this.quill.container.classList.add('ql-snow');
+	    return _this;
+	  }
+
+	  _createClass(SnowTheme, [{
+	    key: 'extendToolbar',
+	    value: function extendToolbar(toolbar) {
+	      toolbar.container.classList.add('ql-snow');
+	      this.buildButtons([].slice.call(toolbar.container.querySelectorAll('button')));
+	      this.buildPickers([].slice.call(toolbar.container.querySelectorAll('select')));
+	      this.tooltip = new SnowTooltip(this.quill, this.options.bounds);
+	      if (toolbar.container.querySelector('.ql-link')) {
+	        this.quill.keyboard.addBinding({ key: 'K', shortKey: true }, function (range, context) {
+	          toolbar.handlers['link'].call(toolbar, !context.format.link);
+	        });
+	      }
+	    }
+	  }]);
+
+	  return SnowTheme;
+	}(_base2.default);
+
+	SnowTheme.DEFAULTS = (0, _extend2.default)(true, {}, _base2.default.DEFAULTS, {
+	  modules: {
+	    toolbar: {
+	      handlers: {
+	        link: function link(value) {
+	          if (value) {
+	            var range = this.quill.getSelection();
+	            if (range == null || range.length == 0) return;
+	            var preview = this.quill.getText(range);
+	            if (/^\S+@\S+\.\S+$/.test(preview) && preview.indexOf('mailto:') !== 0) {
+	              preview = 'mailto:' + preview;
+	            }
+	            var tooltip = this.quill.theme.tooltip;
+	            tooltip.edit('link', preview);
+	          } else {
+	            this.quill.format('link', false);
+	          }
+	        }
+	      }
+	    }
+	  }
+	});
+
+	var SnowTooltip = function (_BaseTooltip) {
+	  _inherits(SnowTooltip, _BaseTooltip);
+
+	  function SnowTooltip(quill, bounds) {
+	    _classCallCheck(this, SnowTooltip);
+
+	    var _this2 = _possibleConstructorReturn(this, (SnowTooltip.__proto__ || Object.getPrototypeOf(SnowTooltip)).call(this, quill, bounds));
+
+	    _this2.preview = _this2.root.querySelector('a.ql-preview');
+	    return _this2;
+	  }
+
+	  _createClass(SnowTooltip, [{
+	    key: 'listen',
+	    value: function listen() {
+	      var _this3 = this;
+
+	      _get(SnowTooltip.prototype.__proto__ || Object.getPrototypeOf(SnowTooltip.prototype), 'listen', this).call(this);
+	      this.root.querySelector('a.ql-action').addEventListener('click', function (event) {
+	        if (_this3.root.classList.contains('ql-editing')) {
+	          _this3.save();
+	        } else {
+	          _this3.edit('link', _this3.preview.textContent);
+	        }
+	        event.preventDefault();
+	      });
+	      this.root.querySelector('a.ql-remove').addEventListener('click', function (event) {
+	        if (_this3.linkRange != null) {
+	          _this3.restoreFocus();
+	          _this3.quill.formatText(_this3.linkRange, 'link', false, _emitter2.default.sources.USER);
+	          delete _this3.linkRange;
+	        }
+	        event.preventDefault();
+	        _this3.hide();
+	      });
+	      this.quill.on(_emitter2.default.events.SELECTION_CHANGE, function (range) {
+	        if (range == null) return;
+	        if (range.length === 0) {
+	          var _quill$scroll$descend = _this3.quill.scroll.descendant(_link2.default, range.index);
+
+	          var _quill$scroll$descend2 = _slicedToArray(_quill$scroll$descend, 2);
+
+	          var link = _quill$scroll$descend2[0];
+	          var offset = _quill$scroll$descend2[1];
+
+	          if (link != null) {
+	            _this3.linkRange = new _selection.Range(range.index - offset, link.length());
+	            var preview = _link2.default.formats(link.domNode);
+	            _this3.preview.textContent = preview;
+	            _this3.preview.setAttribute('href', preview);
+	            _this3.show();
+	            _this3.position(_this3.quill.getBounds(_this3.linkRange));
+	            return;
+	          }
+	        }
+	        _this3.hide();
+	      });
+	    }
+	  }, {
+	    key: 'show',
+	    value: function show() {
+	      _get(SnowTooltip.prototype.__proto__ || Object.getPrototypeOf(SnowTooltip.prototype), 'show', this).call(this);
+	      this.root.removeAttribute('data-mode');
+	    }
+	  }]);
+
+	  return SnowTooltip;
+	}(_base.BaseTooltip);
+
+	SnowTooltip.TEMPLATE = ['<a class="ql-preview" target="_blank" href="about:blank"></a>', '<input type="text" data-formula="e=mc^2" data-link="quilljs.com" data-video="Embed URL">', '<a class="ql-action"></a>', '<a class="ql-remove"></a>'].join('');
+
+	exports.default = SnowTheme;
+
+/***/ }
+/******/ ])
+});
+;

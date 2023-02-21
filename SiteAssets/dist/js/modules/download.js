@@ -1,1 +1,943 @@
-var a12_0x3fee7e=a12_0x59e0;(function(_0x45a3a7,_0x4f220b){var _0x3f08d6=a12_0x59e0,_0x38658a=_0x45a3a7();while(!![]){try{var _0x549668=-parseInt(_0x3f08d6(0x18d))/0x1+parseInt(_0x3f08d6(0x195))/0x2+-parseInt(_0x3f08d6(0x16a))/0x3+-parseInt(_0x3f08d6(0x165))/0x4*(parseInt(_0x3f08d6(0x1a9))/0x5)+parseInt(_0x3f08d6(0x158))/0x6+parseInt(_0x3f08d6(0x1a4))/0x7+parseInt(_0x3f08d6(0x14e))/0x8*(parseInt(_0x3f08d6(0x171))/0x9);if(_0x549668===_0x4f220b)break;else _0x38658a['push'](_0x38658a['shift']());}catch(_0xc99a7c){_0x38658a['push'](_0x38658a['shift']());}}}(a12_0x298a,0x43411));var _typeof=typeof Symbol===a12_0x3fee7e(0x18f)&&typeof Symbol['iterator']==='symbol'?function(_0x48ae75){return typeof _0x48ae75;}:function(_0x26ffb4){var _0x32836e=a12_0x3fee7e;return _0x26ffb4&&typeof Symbol===_0x32836e(0x18f)&&_0x26ffb4[_0x32836e(0x1b8)]===Symbol&&_0x26ffb4!==Symbol['prototype']?_0x32836e(0x190):typeof _0x26ffb4;},Download=function Download(_0x3e9922){var _0x5437a8=a12_0x3fee7e;this[_0x5437a8(0x179)]=_0x3e9922,this['fields']={},this[_0x5437a8(0x1b6)]=[],this[_0x5437a8(0x143)]={},this[_0x5437a8(0x162)]={},this[_0x5437a8(0x1b5)]=![];};function a12_0x59e0(_0x53830a,_0x24c36c){var _0x298a99=a12_0x298a();return a12_0x59e0=function(_0x59e044,_0x1f9dee){_0x59e044=_0x59e044-0x141;var _0x596950=_0x298a99[_0x59e044];return _0x596950;},a12_0x59e0(_0x53830a,_0x24c36c);}Download['prototype']['download']=function(_0x220a8c,_0xf2f68d,_0x57c463,_0x1aca2a,_0x5a9c94){var _0x5ba82b=a12_0x3fee7e,_0x109967=this,_0x243935=![];this['processConfig'](),this[_0x5ba82b(0x1b5)]=_0x1aca2a;function _0x1aa2f2(_0x47e058,_0x61b136){var _0x1ea621=_0x5ba82b;_0x5a9c94?_0x5a9c94===!![]?_0x109967[_0x1ea621(0x1bd)](_0x47e058,_0x61b136,_0x220a8c,_0xf2f68d,!![]):_0x5a9c94(_0x47e058):_0x109967['triggerDownload'](_0x47e058,_0x61b136,_0x220a8c,_0xf2f68d);}typeof _0x220a8c==_0x5ba82b(0x18f)?_0x243935=_0x220a8c:_0x109967['downloaders'][_0x220a8c]?_0x243935=_0x109967[_0x5ba82b(0x172)][_0x220a8c]:console[_0x5ba82b(0x197)]('Download\x20Error\x20-\x20No\x20such\x20download\x20type\x20found:\x20',_0x220a8c),this[_0x5ba82b(0x187)](),_0x243935&&_0x243935['call'](this,_0x109967[_0x5ba82b(0x1a7)](),_0x109967[_0x5ba82b(0x149)](_0x1aca2a||_0x5ba82b(0x1b5)),_0x57c463||{},_0x1aa2f2,this[_0x5ba82b(0x162)]);},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x193)]=function(){var _0x3ae57e=a12_0x3fee7e,_0x2c238b={'columnGroups':!![],'rowGroups':!![],'columnCalcs':!![]};if(this[_0x3ae57e(0x179)]['options'][_0x3ae57e(0x14f)])for(var _0x21d3bb in this['table'][_0x3ae57e(0x1b0)][_0x3ae57e(0x14f)]){_0x2c238b[_0x21d3bb]=this['table']['options'][_0x3ae57e(0x14f)][_0x21d3bb];}_0x2c238b[_0x3ae57e(0x1ab)]&&this['table'][_0x3ae57e(0x1b0)][_0x3ae57e(0x1a1)]&&this[_0x3ae57e(0x179)]['modExists']('groupRows')&&(this['config'][_0x3ae57e(0x1ab)]=!![]),_0x2c238b['columnGroups']&&this[_0x3ae57e(0x179)][_0x3ae57e(0x142)]['columns'][_0x3ae57e(0x154)]!=this[_0x3ae57e(0x179)]['columnManager']['columnsByIndex'][_0x3ae57e(0x154)]&&(this[_0x3ae57e(0x162)][_0x3ae57e(0x15e)]=!![]),_0x2c238b['columnCalcs']&&this[_0x3ae57e(0x179)][_0x3ae57e(0x16e)](_0x3ae57e(0x18a))&&(this[_0x3ae57e(0x162)][_0x3ae57e(0x18a)]=!![]);},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x187)]=function(){var _0x3b9cd2=a12_0x3fee7e,_0x559c7a=this;_0x559c7a['columnsByIndex']=[],_0x559c7a[_0x3b9cd2(0x143)]={},_0x559c7a[_0x3b9cd2(0x179)][_0x3b9cd2(0x142)]['columnsByIndex'][_0x3b9cd2(0x1b3)](function(_0xec45b9){var _0x5b5191=_0x3b9cd2;_0xec45b9['field']&&_0xec45b9[_0x5b5191(0x14c)][_0x5b5191(0x1a5)]!==![]&&(_0xec45b9['visible']||!_0xec45b9[_0x5b5191(0x189)]&&_0xec45b9[_0x5b5191(0x14c)][_0x5b5191(0x1a5)])&&(_0x559c7a['columnsByIndex']['push'](_0xec45b9),_0x559c7a['columnsByField'][_0xec45b9[_0x5b5191(0x163)]]=_0xec45b9);});},Download[a12_0x3fee7e(0x19d)]['processDefinitions']=function(){var _0x4e5931=a12_0x3fee7e,_0x4d5cf5=this,_0x3f37a2=[];return this[_0x4e5931(0x162)][_0x4e5931(0x15e)]?_0x4d5cf5[_0x4e5931(0x179)][_0x4e5931(0x142)][_0x4e5931(0x16c)]['forEach'](function(_0x3ff131){var _0x1ae5fe=_0x4e5931,_0x2db399=_0x4d5cf5[_0x1ae5fe(0x19a)](_0x3ff131);_0x2db399&&_0x3f37a2[_0x1ae5fe(0x1ba)](_0x2db399);}):_0x4d5cf5['columnsByIndex'][_0x4e5931(0x1b3)](function(_0x2ba498){var _0x2b6df4=_0x4e5931;_0x2ba498[_0x2b6df4(0x1a5)]!==![]&&_0x3f37a2[_0x2b6df4(0x1ba)](_0x4d5cf5['processDefinition'](_0x2ba498));}),_0x3f37a2;},Download['prototype']['processColumnGroup']=function(_0x5008c6){var _0x24620c=a12_0x3fee7e,_0x2c6cb3=this,_0x42f25e=_0x5008c6[_0x24620c(0x16c)],_0x53068f=0x0,_0x6d8b9e=this['processDefinition'](_0x5008c6),_0x1656ce={'type':_0x24620c(0x167),'title':_0x6d8b9e['title'],'depth':0x1};if(_0x42f25e[_0x24620c(0x154)]){_0x1656ce['subGroups']=[],_0x1656ce[_0x24620c(0x1b1)]=0x0,_0x42f25e[_0x24620c(0x1b3)](function(_0x15c176){var _0x31ce12=_0x24620c,_0xa38a3c=_0x2c6cb3['processColumnGroup'](_0x15c176);_0xa38a3c[_0x31ce12(0x1c5)]>_0x53068f&&(_0x53068f=_0xa38a3c[_0x31ce12(0x1c5)]),_0xa38a3c&&(_0x1656ce['width']+=_0xa38a3c[_0x31ce12(0x1b1)],_0x1656ce[_0x31ce12(0x15f)][_0x31ce12(0x1ba)](_0xa38a3c));}),_0x1656ce[_0x24620c(0x1c5)]+=_0x53068f;if(!_0x1656ce['width'])return![];}else{if(_0x5008c6[_0x24620c(0x163)]&&_0x5008c6['definition'][_0x24620c(0x1a5)]!==![]&&(_0x5008c6[_0x24620c(0x189)]||!_0x5008c6[_0x24620c(0x189)]&&_0x5008c6[_0x24620c(0x14c)][_0x24620c(0x1a5)]))_0x1656ce[_0x24620c(0x1b1)]=0x1,_0x1656ce[_0x24620c(0x14c)]=_0x6d8b9e;else return![];}return _0x1656ce;},Download['prototype'][a12_0x3fee7e(0x14d)]=function(_0x30b47c){var _0x187351=a12_0x3fee7e,_0x352cef={};for(var _0x42c559 in _0x30b47c['definition']){_0x352cef[_0x42c559]=_0x30b47c[_0x187351(0x14c)][_0x42c559];}return typeof _0x30b47c[_0x187351(0x14c)]['downloadTitle']!='undefined'&&(_0x352cef[_0x187351(0x155)]=_0x30b47c[_0x187351(0x14c)][_0x187351(0x188)]),_0x352cef;},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x149)]=function(_0x3293bc){var _0x1185a4=a12_0x3fee7e,_0x3618a1=this,_0x1c3f8b=this,_0x53e98f=[],_0x277ef8=[],_0xc34dea=![],_0x1f82d8={};return this[_0x1185a4(0x162)][_0x1185a4(0x1ab)]?(_0x3293bc==_0x1185a4(0x189)?(_0xc34dea=_0x1c3f8b[_0x1185a4(0x179)][_0x1185a4(0x17b)][_0x1185a4(0x156)](_0x3293bc),_0xc34dea[_0x1185a4(0x1b3)](function(_0x38840c){var _0x41add7=_0x1185a4;if(_0x38840c[_0x41add7(0x150)]==_0x41add7(0x185)){var _0x419a8e=_0x38840c[_0x41add7(0x1c2)]();_0x277ef8[_0x41add7(0x180)](_0x419a8e)===-0x1&&_0x277ef8['push'](_0x419a8e);}})):_0x277ef8=this[_0x1185a4(0x179)][_0x1185a4(0x177)][_0x1185a4(0x15b)][_0x1185a4(0x1c1)](),_0x277ef8[_0x1185a4(0x1b3)](function(_0x591adc){var _0x197b5d=_0x1185a4;_0x53e98f[_0x197b5d(0x1ba)](_0x3618a1[_0x197b5d(0x196)](_0x591adc,_0xc34dea));})):_0x53e98f=_0x1c3f8b[_0x1185a4(0x179)]['rowManager'][_0x1185a4(0x1ad)](_0x3293bc,_0x1185a4(0x1a5)),this['config'][_0x1185a4(0x18a)]&&(_0x1f82d8=this[_0x1185a4(0x179)][_0x1185a4(0x17c)](),_0x53e98f={'calcs':_0x1f82d8,'data':_0x53e98f}),typeof _0x1c3f8b[_0x1185a4(0x179)][_0x1185a4(0x1b0)][_0x1185a4(0x166)]==_0x1185a4(0x18f)&&(_0x53e98f=_0x1c3f8b[_0x1185a4(0x179)][_0x1185a4(0x1b0)][_0x1185a4(0x166)](_0x53e98f)),_0x53e98f;},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x196)]=function(_0x3bca46,_0x16d1df){var _0x4312bc=a12_0x3fee7e,_0x3a9f37=this,_0x59c1ff=_0x3bca46[_0x4312bc(0x18e)](),_0x2cb9bc={'type':_0x4312bc(0x167),'key':_0x3bca46['key']};return _0x59c1ff[_0x4312bc(0x154)]?(_0x2cb9bc[_0x4312bc(0x15f)]=[],_0x59c1ff[_0x4312bc(0x1b3)](function(_0x4813e2){var _0x6518b9=_0x4312bc;_0x2cb9bc[_0x6518b9(0x15f)]['push'](_0x3a9f37[_0x6518b9(0x196)](_0x4813e2,_0x16d1df));})):_0x16d1df?(_0x2cb9bc[_0x4312bc(0x152)]=[],_0x3bca46['rows']['forEach'](function(_0x5b2d90){var _0x8e981=_0x4312bc;_0x16d1df[_0x8e981(0x180)](_0x5b2d90)>-0x1&&_0x2cb9bc[_0x8e981(0x152)][_0x8e981(0x1ba)](_0x5b2d90[_0x8e981(0x1ad)](_0x8e981(0x1a5)));})):_0x2cb9bc[_0x4312bc(0x152)]=_0x3bca46[_0x4312bc(0x1ad)](!![],_0x4312bc(0x1a5)),_0x2cb9bc;},Download[a12_0x3fee7e(0x19d)]['triggerDownload']=function(_0x2c9c82,_0x43739f,_0xf958f,_0x1e4c6f,_0x2067db){var _0x149d52=a12_0x3fee7e,_0x1f7ad9=document[_0x149d52(0x19b)]('a'),_0x54d330=new Blob([_0x2c9c82],{'type':_0x43739f}),_0x1e4c6f=_0x1e4c6f||'Tabulator.'+(typeof _0xf958f==='function'?'txt':_0xf958f);_0x54d330=this[_0x149d52(0x179)][_0x149d52(0x1b0)]['downloadReady'][_0x149d52(0x19e)](this[_0x149d52(0x179)],_0x2c9c82,_0x54d330),_0x54d330&&(_0x2067db?window[_0x149d52(0x16d)](window[_0x149d52(0x17e)]['createObjectURL'](_0x54d330)):navigator['msSaveOrOpenBlob']?navigator[_0x149d52(0x153)](_0x54d330,_0x1e4c6f):(_0x1f7ad9[_0x149d52(0x183)](_0x149d52(0x159),window['URL'][_0x149d52(0x175)](_0x54d330)),_0x1f7ad9['setAttribute'](_0x149d52(0x1a5),_0x1e4c6f),_0x1f7ad9[_0x149d52(0x174)]['display']=_0x149d52(0x191),document['body'][_0x149d52(0x145)](_0x1f7ad9),_0x1f7ad9['click'](),document[_0x149d52(0x157)][_0x149d52(0x1a6)](_0x1f7ad9)),this[_0x149d52(0x179)][_0x149d52(0x1b0)][_0x149d52(0x18c)]&&this['table']['options'][_0x149d52(0x18c)]());},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x151)]=function(_0x594984,_0x3f2612){var _0x56e32e=a12_0x3fee7e,_0x4f87d5=this['columnsByField'][_0x594984];if(_0x4f87d5)return _0x4f87d5[_0x56e32e(0x151)](_0x3f2612);return![];},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x148)]=function(_0x588cba,_0x29ab4e,_0x405ec0){var _0xdb93b5=a12_0x3fee7e;switch(_0x29ab4e){case'intercept':this[_0xdb93b5(0x1a5)](_0x405ec0[_0xdb93b5(0x150)],'',_0x405ec0[_0xdb93b5(0x1b0)],_0x405ec0['active'],_0x405ec0['intercept']);break;}},Download[a12_0x3fee7e(0x19d)][a12_0x3fee7e(0x172)]={'csv':function csv(_0x4bbf3c,_0x1078ef,_0x601f9f,_0x50fda8,_0x25d69a){var _0x570e60=a12_0x3fee7e,_0x17dcde=this,_0x3549e2=[],_0x3b32c9=[],_0x447e50=_0x601f9f&&_0x601f9f[_0x570e60(0x198)]?_0x601f9f['delimiter']:',',_0x3be737,_0x1f0c46;function _0x5451e6(){_0x4bbf3c['forEach'](function(_0x44c999){var _0x332722=a12_0x59e0;_0x3549e2[_0x332722(0x1ba)]('\x22'+String(_0x44c999[_0x332722(0x155)])[_0x332722(0x1af)]('\x22')[_0x332722(0x170)]('\x22\x22')+'\x22'),_0x3b32c9[_0x332722(0x1ba)](_0x44c999[_0x332722(0x163)]);});}function _0x567bbf(_0x4e528e,_0x5b1dae){var _0x5ec86e=_0x570e60;_0x4e528e['subGroups']?_0x4e528e[_0x5ec86e(0x15f)]['forEach'](function(_0x30269c){_0x567bbf(_0x30269c,_0x5b1dae+0x1);}):(_0x3549e2[_0x5ec86e(0x1ba)]('\x22'+String(_0x4e528e[_0x5ec86e(0x155)])[_0x5ec86e(0x1af)]('\x22')[_0x5ec86e(0x170)]('\x22\x22')+'\x22'),_0x3b32c9[_0x5ec86e(0x1ba)](_0x4e528e[_0x5ec86e(0x14c)][_0x5ec86e(0x163)]));}_0x25d69a[_0x570e60(0x15e)]?(console[_0x570e60(0x197)](_0x570e60(0x1bc)),_0x4bbf3c['forEach'](function(_0x50c0c5){_0x567bbf(_0x50c0c5,0x0);})):_0x5451e6();_0x3be737=[_0x3549e2[_0x570e60(0x170)](_0x447e50)];function _0x24cf84(_0x23a8c9){_0x23a8c9['forEach'](function(_0x2bee5e){var _0x104cb3=a12_0x59e0,_0x1e4a5e=[];_0x3b32c9['forEach'](function(_0x1a13f2){var _0xe59d40=a12_0x59e0,_0x1c77e2=_0x17dcde['getFieldValue'](_0x1a13f2,_0x2bee5e);switch(typeof _0x1c77e2===_0xe59d40(0x1a3)?'undefined':_typeof(_0x1c77e2)){case _0xe59d40(0x1a0):_0x1c77e2=JSON['stringify'](_0x1c77e2);break;case'undefined':case _0xe59d40(0x19c):_0x1c77e2='';break;default:_0x1c77e2=_0x1c77e2;}_0x1e4a5e[_0xe59d40(0x1ba)]('\x22'+String(_0x1c77e2)[_0xe59d40(0x1af)]('\x22')[_0xe59d40(0x170)]('\x22\x22')+'\x22');}),_0x3be737[_0x104cb3(0x1ba)](_0x1e4a5e[_0x104cb3(0x170)](_0x447e50));});}function _0x42957c(_0x4d1878){var _0x403dad=_0x570e60;_0x4d1878[_0x403dad(0x15f)]?_0x4d1878['subGroups'][_0x403dad(0x1b3)](function(_0x446033){_0x42957c(_0x446033);}):_0x24cf84(_0x4d1878[_0x403dad(0x152)]);}_0x25d69a[_0x570e60(0x18a)]&&(console[_0x570e60(0x197)](_0x570e60(0x16b)),_0x1078ef=_0x1078ef[_0x570e60(0x144)]),_0x25d69a[_0x570e60(0x1ab)]?(console[_0x570e60(0x197)](_0x570e60(0x141)),_0x1078ef[_0x570e60(0x1b3)](function(_0x160a03){_0x42957c(_0x160a03);})):_0x24cf84(_0x1078ef),_0x1f0c46=_0x3be737[_0x570e60(0x170)]('\x0a'),_0x601f9f[_0x570e60(0x14b)]&&(_0x1f0c46='\ufeff'+_0x1f0c46),_0x50fda8(_0x1f0c46,_0x570e60(0x168));},'json':function json(_0x3581c2,_0x2398e2,_0x4e3950,_0x1704fd,_0x204a24){var _0x34f341=a12_0x3fee7e,_0x18d8aa;_0x204a24['columnCalcs']&&(console[_0x34f341(0x197)]('Download\x20Warning\x20-\x20CSV\x20downloader\x20cannot\x20process\x20column\x20calculations'),_0x2398e2=_0x2398e2[_0x34f341(0x144)]),_0x18d8aa=JSON[_0x34f341(0x1c8)](_0x2398e2,null,'\x09'),_0x1704fd(_0x18d8aa,_0x34f341(0x15a));},'pdf':function pdf(_0x20afb0,_0x26649a,_0x49d60a,_0xf09138,_0x1109b8){var _0x5e16c5=a12_0x3fee7e,_0x250ddc=this,_0x417631=[],_0x1bc9bc=[],_0x26069b=[],_0x2e87b4={},_0x19aea9=0x1,_0x1f03db='',_0x5813d7={},_0x262df3=_0x49d60a[_0x5e16c5(0x16f)]||{'fontStyle':_0x5e16c5(0x192),'fontSize':0xc,'cellPadding':0x6,'fillColor':0xdc},_0xfaebdc=_0x49d60a[_0x5e16c5(0x14a)]||{'fontStyle':_0x5e16c5(0x192),'fontSize':0xa,'cellPadding':0x4,'fillColor':0xe8},_0x538ea2=_0x49d60a['jsPDF']||{},_0x430f06=_0x49d60a&&_0x49d60a[_0x5e16c5(0x155)]?_0x49d60a[_0x5e16c5(0x155)]:'';_0x1109b8[_0x5e16c5(0x18a)]&&(_0x2e87b4=_0x26649a[_0x5e16c5(0x161)],_0x26649a=_0x26649a[_0x5e16c5(0x144)]);!_0x538ea2['orientation']&&(_0x538ea2[_0x5e16c5(0x186)]=_0x49d60a[_0x5e16c5(0x186)]||'landscape');!_0x538ea2[_0x5e16c5(0x1bb)]&&(_0x538ea2[_0x5e16c5(0x1bb)]='pt');function _0xb9edcb(){var _0x46c453=_0x5e16c5;_0x20afb0[_0x46c453(0x1b3)](function(_0x28b3ff){var _0x3d9923=_0x46c453;_0x28b3ff[_0x3d9923(0x163)]&&(_0x1bc9bc[_0x3d9923(0x1ba)](_0x28b3ff['title']||''),_0x417631[_0x3d9923(0x1ba)](_0x28b3ff[_0x3d9923(0x163)]));}),_0x1bc9bc=[_0x1bc9bc];}function _0x32e874(_0x402ae0,_0x4a0edf){var _0x34e074=_0x5e16c5,_0x3e75b2=_0x402ae0[_0x34e074(0x1b1)],_0x4e5594=0x1,_0x313748={'content':_0x402ae0[_0x34e074(0x155)]||''};_0x402ae0[_0x34e074(0x15f)]?(_0x402ae0[_0x34e074(0x15f)][_0x34e074(0x1b3)](function(_0x343023){_0x32e874(_0x343023,_0x4a0edf+0x1);}),_0x4e5594=0x1):(_0x417631[_0x34e074(0x1ba)](_0x402ae0[_0x34e074(0x14c)]['field']),_0x4e5594=_0x19aea9-_0x4a0edf);_0x313748['rowSpan']=_0x4e5594,_0x1bc9bc[_0x4a0edf][_0x34e074(0x1ba)](_0x313748),_0x3e75b2--;if(_0x4e5594>0x1)for(var _0x19be95=_0x4a0edf+0x1;_0x19be95<_0x19aea9;_0x19be95++){_0x1bc9bc[_0x19be95]['push']('');}for(var _0x19be95=0x0;_0x19be95<_0x3e75b2;_0x19be95++){_0x1bc9bc[_0x4a0edf][_0x34e074(0x1ba)]('');}}if(_0x1109b8[_0x5e16c5(0x15e)]){_0x20afb0[_0x5e16c5(0x1b3)](function(_0x2057d9){var _0x13b248=_0x5e16c5;_0x2057d9['depth']>_0x19aea9&&(_0x19aea9=_0x2057d9[_0x13b248(0x1c5)]);});for(var _0x54ceed=0x0;_0x54ceed<_0x19aea9;_0x54ceed++){_0x1bc9bc[_0x5e16c5(0x1ba)]([]);}_0x20afb0[_0x5e16c5(0x1b3)](function(_0x2e63c5){_0x32e874(_0x2e63c5,0x0);});}else _0xb9edcb();function _0xa2eea4(_0x120a91){var _0xba2541=_0x5e16c5;switch(typeof _0x120a91===_0xba2541(0x1a3)?_0xba2541(0x1a3):_typeof(_0x120a91)){case'object':_0x120a91=JSON[_0xba2541(0x1c8)](_0x120a91);break;case'undefined':case _0xba2541(0x19c):_0x120a91='';break;default:_0x120a91=_0x120a91;}return _0x120a91;}function _0x253297(_0x3a055a){var _0x286850=_0x5e16c5;_0x3a055a[_0x286850(0x1b3)](function(_0x49faa3){_0x26069b['push'](_0x514593(_0x49faa3));});}function _0x514593(_0x319128,_0xe25928){var _0x1244c8=[];return _0x417631['forEach'](function(_0x283a62){var _0x1440f4=a12_0x59e0,_0x540dce=_0x250ddc[_0x1440f4(0x151)](_0x283a62,_0x319128);_0x540dce=_0xa2eea4(_0x540dce),_0xe25928?_0x1244c8[_0x1440f4(0x1ba)]({'content':_0x540dce,'styles':_0xe25928}):_0x1244c8['push'](_0x540dce);}),_0x1244c8;}function _0x1fa3b1(_0x11ba28,_0x41d00c){var _0x328882=_0x5e16c5,_0x3224ec=[];_0x3224ec[_0x328882(0x1ba)]({'content':_0xa2eea4(_0x11ba28[_0x328882(0x1c7)]),'colSpan':_0x417631[_0x328882(0x154)],'styles':_0x262df3}),_0x26069b[_0x328882(0x1ba)](_0x3224ec),_0x11ba28[_0x328882(0x15f)]?_0x11ba28[_0x328882(0x15f)]['forEach'](function(_0x339fdf){var _0x3f3410=_0x328882;_0x1fa3b1(_0x339fdf,_0x41d00c[_0x11ba28['key']]?_0x41d00c[_0x11ba28['key']][_0x3f3410(0x181)]||{}:{});}):(_0x1109b8[_0x328882(0x18a)]&&_0x52715f(_0x41d00c,_0x11ba28[_0x328882(0x1c7)],_0x328882(0x17d)),_0x253297(_0x11ba28[_0x328882(0x152)]),_0x1109b8[_0x328882(0x18a)]&&_0x52715f(_0x41d00c,_0x11ba28[_0x328882(0x1c7)],_0x328882(0x160)));}function _0x52715f(_0x23df24,_0x56850d,_0xd5a29e){var _0xd105cd=_0x5e16c5,_0x2fcef4=_0x23df24[_0x56850d];_0x2fcef4&&(_0xd5a29e&&(_0x2fcef4=_0x2fcef4[_0xd5a29e]),Object[_0xd105cd(0x1c0)](_0x2fcef4)[_0xd105cd(0x154)]&&_0x26069b[_0xd105cd(0x1ba)](_0x514593(_0x2fcef4,_0xfaebdc)));}_0x1109b8[_0x5e16c5(0x1ab)]?_0x26649a[_0x5e16c5(0x1b3)](function(_0x5c02df){_0x1fa3b1(_0x5c02df,_0x2e87b4);}):(_0x1109b8[_0x5e16c5(0x18a)]&&_0x52715f(_0x2e87b4,'top'),_0x253297(_0x26649a),_0x1109b8[_0x5e16c5(0x18a)]&&_0x52715f(_0x2e87b4,_0x5e16c5(0x160)));var _0x18e345=new jsPDF(_0x538ea2);_0x49d60a&&_0x49d60a[_0x5e16c5(0x19f)]&&(typeof _0x49d60a[_0x5e16c5(0x19f)]===_0x5e16c5(0x18f)?_0x5813d7=_0x49d60a[_0x5e16c5(0x19f)](_0x18e345)||{}:_0x5813d7=_0x49d60a[_0x5e16c5(0x19f)]),_0x430f06&&(_0x5813d7[_0x5e16c5(0x173)]=function(_0x16690a){_0x18e345['text'](_0x430f06,0x28,0x1e);}),_0x5813d7['head']=_0x1bc9bc,_0x5813d7[_0x5e16c5(0x157)]=_0x26069b,_0x18e345[_0x5e16c5(0x19f)](_0x5813d7),_0x49d60a&&_0x49d60a[_0x5e16c5(0x1b2)]&&_0x49d60a[_0x5e16c5(0x1b2)](_0x18e345),_0xf09138(_0x18e345[_0x5e16c5(0x199)](_0x5e16c5(0x1bf)),_0x5e16c5(0x17a));},'xlsx':function xlsx(_0x692188,_0x1d4908,_0x37ba00,_0x3f6341,_0x528016){var _0x4dc19a=a12_0x3fee7e,_0x616685=this,_0x149228=_0x37ba00[_0x4dc19a(0x1a2)]||_0x4dc19a(0x178),_0x2c0c99=XLSX[_0x4dc19a(0x194)][_0x4dc19a(0x1c6)](),_0x695bc5={},_0x3f5511=[],_0x31bfa0=[],_0x556d32=[],_0x57accb;_0x2c0c99[_0x4dc19a(0x182)]=[],_0x2c0c99[_0x4dc19a(0x1b4)]={};_0x528016['columnCalcs']&&(_0x695bc5=_0x1d4908[_0x4dc19a(0x161)],_0x1d4908=_0x1d4908['data']);function _0x5c91ea(){var _0x20acd3=_0x4dc19a,_0xdabc59=[],_0x3c4db8=[],_0x27ab7d=[],_0xb62434;function _0x5e380b(){var _0x356fa2=a12_0x59e0,_0x5a29a9={},_0x167da5={'s':{'c':0x0,'r':0x0},'e':{'c':_0x3c4db8[_0x356fa2(0x154)],'r':_0x27ab7d['length']}};XLSX[_0x356fa2(0x194)][_0x356fa2(0x147)](_0x5a29a9,_0x27ab7d),_0x5a29a9[_0x356fa2(0x17f)]=XLSX[_0x356fa2(0x194)][_0x356fa2(0x1c3)](_0x167da5);var _0x225128=_0x25820f();return _0x225128['length']&&(_0x5a29a9[_0x356fa2(0x169)]=_0x225128),_0x5a29a9;}function _0x34e04c(){var _0x5dacb2=a12_0x59e0;_0x692188[_0x5dacb2(0x1b3)](function(_0x45916d){var _0x20978a=_0x5dacb2;_0xdabc59[_0x20978a(0x1ba)](_0x45916d[_0x20978a(0x155)]),_0x3c4db8[_0x20978a(0x1ba)](_0x45916d['field']);}),_0x27ab7d[_0x5dacb2(0x1ba)](_0xdabc59);}function _0x1b3e57(_0x4421d3,_0xbc5f61){var _0x3e0aec=a12_0x59e0;typeof _0xdabc59[_0xbc5f61]===_0x3e0aec(0x1a3)&&(_0xdabc59[_0xbc5f61]=[]),typeof _0x31bfa0[_0xbc5f61]===_0x3e0aec(0x1a3)&&(_0x31bfa0[_0xbc5f61]=[]),_0x4421d3[_0x3e0aec(0x1b1)]>0x1&&_0x31bfa0[_0xbc5f61]['push']({'type':'hoz','start':_0xdabc59[_0xbc5f61][_0x3e0aec(0x154)],'end':_0xdabc59[_0xbc5f61]['length']+_0x4421d3[_0x3e0aec(0x1b1)]-0x1}),_0xdabc59[_0xbc5f61][_0x3e0aec(0x1ba)](_0x4421d3[_0x3e0aec(0x155)]),_0x4421d3[_0x3e0aec(0x15f)]?_0x4421d3['subGroups']['forEach'](function(_0x50e368){_0x1b3e57(_0x50e368,_0xbc5f61+0x1);}):(_0x3c4db8[_0x3e0aec(0x1ba)](_0x4421d3[_0x3e0aec(0x14c)][_0x3e0aec(0x163)]),_0x3fde46(_0x3c4db8[_0x3e0aec(0x154)]-0x1,_0xbc5f61),_0x31bfa0[_0xbc5f61][_0x3e0aec(0x1ba)]({'type':_0x3e0aec(0x18b),'start':_0x3c4db8[_0x3e0aec(0x154)]-0x1}));}function _0x3fde46(){var _0x242886=0x0;_0xdabc59['forEach'](function(_0x1952ee){var _0x18cc61=a12_0x59e0,_0x2ab767=_0x1952ee[_0x18cc61(0x154)];_0x2ab767>_0x242886&&(_0x242886=_0x2ab767);}),_0xdabc59['forEach'](function(_0x54975d){var _0x38633e=a12_0x59e0,_0x4ac0c4=_0x54975d[_0x38633e(0x154)];if(_0x4ac0c4<_0x242886)for(var _0x1d2737=_0x4ac0c4;_0x1d2737<_0x242886;_0x1d2737++){_0x54975d[_0x38633e(0x1ba)]('');}});}_0x528016[_0x20acd3(0x15e)]?(_0x692188['forEach'](function(_0x48ef6b){_0x1b3e57(_0x48ef6b,0x0);}),_0xdabc59[_0x20acd3(0x1b3)](function(_0xd1be50){var _0x7ff669=_0x20acd3;_0x27ab7d[_0x7ff669(0x1ba)](_0xd1be50);})):_0x34e04c();function _0x25820f(){var _0x2b161a=_0x20acd3,_0x31a788=[];return _0x3f5511[_0x2b161a(0x1b3)](function(_0x1f5f96){var _0x5a3a4b=_0x2b161a;_0x31a788[_0x5a3a4b(0x1ba)]({'s':{'r':_0x1f5f96,'c':0x0},'e':{'r':_0x1f5f96,'c':_0x3c4db8[_0x5a3a4b(0x154)]-0x1}});}),_0x31bfa0['forEach'](function(_0x484ccf,_0x35f195){var _0x150958=_0x2b161a;_0x484ccf[_0x150958(0x1b3)](function(_0x3ffeb9){var _0x5143df=_0x150958;_0x3ffeb9[_0x5143df(0x150)]===_0x5143df(0x1aa)?_0x31a788[_0x5143df(0x1ba)]({'s':{'r':_0x35f195,'c':_0x3ffeb9[_0x5143df(0x1ae)]},'e':{'r':_0x35f195,'c':_0x3ffeb9['end']}}):_0x35f195!=_0xdabc59[_0x5143df(0x154)]-0x1&&_0x31a788[_0x5143df(0x1ba)]({'s':{'r':_0x35f195,'c':_0x3ffeb9[_0x5143df(0x1ae)]},'e':{'r':_0xdabc59[_0x5143df(0x154)]-0x1,'c':_0x3ffeb9['start']}});});}),_0x31a788;}function _0x4e5bb2(_0x263488){var _0x260d77=_0x20acd3;_0x263488[_0x260d77(0x1b3)](function(_0x394785){var _0x41435d=_0x260d77;_0x27ab7d[_0x41435d(0x1ba)](_0x44dfff(_0x394785));});}function _0x44dfff(_0x2df4f5){var _0x56fa65=_0x20acd3,_0x49a3ee=[];return _0x3c4db8[_0x56fa65(0x1b3)](function(_0x370956){var _0x1d006c=_0x56fa65,_0x3a5195=_0x616685[_0x1d006c(0x151)](_0x370956,_0x2df4f5);_0x49a3ee[_0x1d006c(0x1ba)](!(_0x3a5195 instanceof Date)&&(typeof _0x3a5195===_0x1d006c(0x1a3)?'undefined':_typeof(_0x3a5195))==='object'?JSON[_0x1d006c(0x1c8)](_0x3a5195):_0x3a5195);}),_0x49a3ee;}function _0x4bc4eb(_0x417a9c,_0x591bc2,_0x329bc2){var _0x58ffa4=_0x20acd3,_0x20d2a9=_0x417a9c[_0x591bc2];_0x20d2a9&&(_0x329bc2&&(_0x20d2a9=_0x20d2a9[_0x329bc2]),Object['keys'](_0x20d2a9)[_0x58ffa4(0x154)]&&(_0x556d32[_0x58ffa4(0x1ba)](_0x27ab7d[_0x58ffa4(0x154)]),_0x27ab7d['push'](_0x44dfff(_0x20d2a9))));}function _0x5a558d(_0x34f3d,_0x570e10){var _0x2ceaa8=_0x20acd3,_0x36d394=[];_0x36d394[_0x2ceaa8(0x1ba)](_0x34f3d[_0x2ceaa8(0x1c7)]),_0x3f5511[_0x2ceaa8(0x1ba)](_0x27ab7d[_0x2ceaa8(0x154)]),_0x27ab7d[_0x2ceaa8(0x1ba)](_0x36d394),_0x34f3d['subGroups']?_0x34f3d[_0x2ceaa8(0x15f)][_0x2ceaa8(0x1b3)](function(_0x4ae5d9){var _0x2dbb90=_0x2ceaa8;_0x5a558d(_0x4ae5d9,_0x570e10[_0x34f3d[_0x2dbb90(0x1c7)]]?_0x570e10[_0x34f3d[_0x2dbb90(0x1c7)]][_0x2dbb90(0x181)]||{}:{});}):(_0x528016[_0x2ceaa8(0x18a)]&&_0x4bc4eb(_0x570e10,_0x34f3d[_0x2ceaa8(0x1c7)],_0x2ceaa8(0x17d)),_0x4e5bb2(_0x34f3d[_0x2ceaa8(0x152)]),_0x528016[_0x2ceaa8(0x18a)]&&_0x4bc4eb(_0x570e10,_0x34f3d['key'],_0x2ceaa8(0x160)));}return _0x528016[_0x20acd3(0x1ab)]?_0x1d4908[_0x20acd3(0x1b3)](function(_0x59e035){_0x5a558d(_0x59e035,_0x695bc5);}):(_0x528016[_0x20acd3(0x18a)]&&_0x4bc4eb(_0x695bc5,_0x20acd3(0x17d)),_0x4e5bb2(_0x1d4908),_0x528016[_0x20acd3(0x18a)]&&_0x4bc4eb(_0x695bc5,_0x20acd3(0x160))),_0xb62434=_0x5e380b(),_0xb62434;}if(_0x37ba00[_0x4dc19a(0x1b9)]){_0x3f6341(_0x5c91ea());return;}if(_0x37ba00[_0x4dc19a(0x1b7)])for(var _0x581268 in _0x37ba00[_0x4dc19a(0x1b7)]){_0x37ba00[_0x4dc19a(0x1b7)][_0x581268]===!![]?(_0x2c0c99['SheetNames']['push'](_0x581268),_0x2c0c99['Sheets'][_0x581268]=_0x5c91ea()):(_0x2c0c99[_0x4dc19a(0x182)][_0x4dc19a(0x1ba)](_0x581268),this[_0x4dc19a(0x179)][_0x4dc19a(0x177)][_0x4dc19a(0x15d)][_0x4dc19a(0x1c4)](_0x37ba00[_0x4dc19a(0x1b7)][_0x581268],_0x4dc19a(0x1a5),_0x4dc19a(0x1ac),{'type':_0x4dc19a(0x176),'options':{'sheetOnly':!![]},'active':_0x616685[_0x4dc19a(0x1b5)],'intercept':function _0xc1c12c(_0x35c8ab){var _0x464c89=_0x4dc19a;_0x2c0c99[_0x464c89(0x1b4)][_0x581268]=_0x35c8ab;}}));}else _0x2c0c99[_0x4dc19a(0x182)][_0x4dc19a(0x1ba)](_0x149228),_0x2c0c99['Sheets'][_0x149228]=_0x5c91ea();_0x37ba00[_0x4dc19a(0x1b2)]&&(_0x2c0c99=_0x37ba00[_0x4dc19a(0x1b2)](_0x2c0c99));function _0x1a7d5f(_0x162fb9){var _0x41d36e=_0x4dc19a,_0x47f0d3=new ArrayBuffer(_0x162fb9[_0x41d36e(0x154)]),_0x4ab3ac=new Uint8Array(_0x47f0d3);for(var _0x3960df=0x0;_0x3960df!=_0x162fb9['length'];++_0x3960df){_0x4ab3ac[_0x3960df]=_0x162fb9[_0x41d36e(0x164)](_0x3960df)&0xff;}return _0x47f0d3;}_0x57accb=XLSX[_0x4dc19a(0x184)](_0x2c0c99,{'bookType':'xlsx','bookSST':!![],'type':'binary'}),_0x3f6341(_0x1a7d5f(_0x57accb),'application/octet-stream');},'html':function html(_0x32c85d,_0x3987d3,_0x597843,_0x5ae0dc,_0x3db98e){var _0xb5697c=a12_0x3fee7e;this[_0xb5697c(0x179)][_0xb5697c(0x16e)](_0xb5697c(0x15c),!![])&&_0x5ae0dc(this[_0xb5697c(0x179)]['modules']['htmlTableExport'][_0xb5697c(0x1be)](!![],_0x597843[_0xb5697c(0x174)],_0x3db98e),_0xb5697c(0x1a8));}},Tabulator['prototype'][a12_0x3fee7e(0x146)](a12_0x3fee7e(0x1a5),Download);function a12_0x298a(){var _0x5ef593=['485982neBuvf','processGroupData','warn','delimiter','output','processColumnGroup','createElement','null','prototype','call','autoTable','object','groupBy','sheetName','undefined','3748724gMqCkV','download','removeChild','processDefinitions','text/html','5VOPVmX','hoz','rowGroups','intercept','getData','start','split','options','width','documentProcessing','forEach','Sheets','active','columnsByIndex','sheets','constructor','sheetOnly','push','unit','Download\x20Warning\x20-\x20CSV\x20downloader\x20cannot\x20process\x20column\x20groups','triggerDownload','getHtml','arraybuffer','keys','getGroups','getGroup','encode_range','send','depth','book_new','key','stringify','Download\x20Warning\x20-\x20CSV\x20downloader\x20cannot\x20process\x20row\x20groups','columnManager','columnsByField','data','appendChild','registerModule','sheet_add_aoa','commsReceived','processData','rowCalcStyles','bom','definition','processDefinition','16zWIVky','downloadConfig','type','getFieldValue','rows','msSaveOrOpenBlob','length','title','getRows','body','2917524hPWpms','href','application/json','groupRows','htmlTableExport','comms','columnGroups','subGroups','bottom','calcs','config','field','charCodeAt','293548ZPZEVl','downloadDataFormatter','group','text/csv','!merges','1647330qJzPLU','Download\x20Warning\x20-\x20CSV\x20downloader\x20cannot\x20process\x20column\x20calculations','columns','open','modExists','rowGroupStyles','join','317889HNUeWb','downloaders','addPageContent','style','createObjectURL','xlsx','modules','Sheet1','table','application/pdf','rowManager','getCalcResults','top','URL','!ref','indexOf','groups','SheetNames','setAttribute','write','row','orientation','processColumns','downloadTitle','visible','columnCalcs','vert','downloadComplete','437449vqdlqY','getSubGroups','function','symbol','none','bold','processConfig','utils'];a12_0x298a=function(){return _0x5ef593;};return a12_0x298a();}
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var Download = function Download(table) {
+	this.table = table; //hold Tabulator object
+	this.fields = {}; //hold filed multi dimension arrays
+	this.columnsByIndex = []; //hold columns in their order in the table
+	this.columnsByField = {}; //hold columns with lookup by field name
+	this.config = {};
+	this.active = false;
+};
+
+//trigger file download
+Download.prototype.download = function (type, filename, options, active, interceptCallback) {
+	var self = this,
+	    downloadFunc = false;
+	this.processConfig();
+	this.active = active;
+
+	function buildLink(data, mime) {
+		if (interceptCallback) {
+			if (interceptCallback === true) {
+				self.triggerDownload(data, mime, type, filename, true);
+			} else {
+				interceptCallback(data);
+			}
+		} else {
+			self.triggerDownload(data, mime, type, filename);
+		}
+	}
+
+	if (typeof type == "function") {
+		downloadFunc = type;
+	} else {
+		if (self.downloaders[type]) {
+			downloadFunc = self.downloaders[type];
+		} else {
+			console.warn("Download Error - No such download type found: ", type);
+		}
+	}
+
+	this.processColumns();
+
+	if (downloadFunc) {
+		downloadFunc.call(this, self.processDefinitions(), self.processData(active || "active"), options || {}, buildLink, this.config);
+	}
+};
+
+Download.prototype.processConfig = function () {
+	var config = { //download config
+		columnGroups: true,
+		rowGroups: true,
+		columnCalcs: true
+	};
+
+	if (this.table.options.downloadConfig) {
+		for (var key in this.table.options.downloadConfig) {
+			config[key] = this.table.options.downloadConfig[key];
+		}
+	}
+
+	if (config.rowGroups && this.table.options.groupBy && this.table.modExists("groupRows")) {
+		this.config.rowGroups = true;
+	}
+
+	if (config.columnGroups && this.table.columnManager.columns.length != this.table.columnManager.columnsByIndex.length) {
+		this.config.columnGroups = true;
+	}
+
+	if (config.columnCalcs && this.table.modExists("columnCalcs")) {
+		this.config.columnCalcs = true;
+	}
+};
+
+Download.prototype.processColumns = function () {
+	var self = this;
+
+	self.columnsByIndex = [];
+	self.columnsByField = {};
+
+	self.table.columnManager.columnsByIndex.forEach(function (column) {
+
+		if (column.field && column.definition.download !== false && (column.visible || !column.visible && column.definition.download)) {
+			self.columnsByIndex.push(column);
+			self.columnsByField[column.field] = column;
+		}
+	});
+};
+
+Download.prototype.processDefinitions = function () {
+	var self = this,
+	    processedDefinitions = [];
+
+	if (this.config.columnGroups) {
+		self.table.columnManager.columns.forEach(function (column) {
+			var colData = self.processColumnGroup(column);
+
+			if (colData) {
+				processedDefinitions.push(colData);
+			}
+		});
+	} else {
+		self.columnsByIndex.forEach(function (column) {
+			if (column.download !== false) {
+				//isolate definiton from defintion object
+				processedDefinitions.push(self.processDefinition(column));
+			}
+		});
+	}
+
+	return processedDefinitions;
+};
+
+Download.prototype.processColumnGroup = function (column) {
+	var _this = this;
+
+	var subGroups = column.columns,
+	    maxDepth = 0;
+	var processedColumn = this.processDefinition(column);
+	var groupData = {
+		type: "group",
+		title: processedColumn.title,
+		depth: 1
+	};
+
+	if (subGroups.length) {
+		groupData.subGroups = [];
+		groupData.width = 0;
+
+		subGroups.forEach(function (subGroup) {
+			var subGroupData = _this.processColumnGroup(subGroup);
+
+			if (subGroupData.depth > maxDepth) {
+				maxDepth = subGroupData.depth;
+			}
+
+			if (subGroupData) {
+				groupData.width += subGroupData.width;
+				groupData.subGroups.push(subGroupData);
+			}
+		});
+
+		groupData.depth += maxDepth;
+
+		if (!groupData.width) {
+			return false;
+		}
+	} else {
+		if (column.field && column.definition.download !== false && (column.visible || !column.visible && column.definition.download)) {
+			groupData.width = 1;
+			groupData.definition = processedColumn;
+		} else {
+			return false;
+		}
+	}
+
+	return groupData;
+};
+
+Download.prototype.processDefinition = function (column) {
+	var def = {};
+
+	for (var key in column.definition) {
+		def[key] = column.definition[key];
+	}
+
+	if (typeof column.definition.downloadTitle != "undefined") {
+		def.title = column.definition.downloadTitle;
+	}
+
+	return def;
+};
+
+Download.prototype.processData = function (active) {
+	var _this2 = this;
+
+	var self = this,
+	    data = [],
+	    groups = [],
+	    rows = false,
+	    calcs = {};
+
+	if (this.config.rowGroups) {
+
+		if (active == "visible") {
+
+			rows = self.table.rowManager.getRows(active);
+
+			rows.forEach(function (row) {
+				if (row.type == "row") {
+					var group = row.getGroup();
+
+					if (groups.indexOf(group) === -1) {
+						groups.push(group);
+					}
+				}
+			});
+		} else {
+			groups = this.table.modules.groupRows.getGroups();
+		}
+
+		groups.forEach(function (group) {
+			data.push(_this2.processGroupData(group, rows));
+		});
+	} else {
+		data = self.table.rowManager.getData(active, "download");
+	}
+
+	if (this.config.columnCalcs) {
+		calcs = this.table.getCalcResults();
+
+		data = {
+			calcs: calcs,
+			data: data
+		};
+	}
+
+	//bulk data processing
+	if (typeof self.table.options.downloadDataFormatter == "function") {
+		data = self.table.options.downloadDataFormatter(data);
+	}
+
+	return data;
+};
+
+Download.prototype.processGroupData = function (group, visRows) {
+	var _this3 = this;
+
+	var subGroups = group.getSubGroups();
+
+	var groupData = {
+		type: "group",
+		key: group.key
+	};
+
+	if (subGroups.length) {
+		groupData.subGroups = [];
+
+		subGroups.forEach(function (subGroup) {
+			groupData.subGroups.push(_this3.processGroupData(subGroup, visRows));
+		});
+	} else {
+		if (visRows) {
+			groupData.rows = [];
+
+			group.rows.forEach(function (row) {
+				if (visRows.indexOf(row) > -1) {
+					groupData.rows.push(row.getData("download"));
+				}
+			});
+		} else {
+			groupData.rows = group.getData(true, "download");
+		}
+	}
+
+	return groupData;
+};
+
+Download.prototype.triggerDownload = function (data, mime, type, filename, newTab) {
+	var element = document.createElement('a'),
+	    blob = new Blob([data], { type: mime }),
+	    filename = filename || "Tabulator." + (typeof type === "function" ? "txt" : type);
+
+	blob = this.table.options.downloadReady.call(this.table, data, blob);
+
+	if (blob) {
+
+		if (newTab) {
+			window.open(window.URL.createObjectURL(blob));
+		} else {
+			if (navigator.msSaveOrOpenBlob) {
+				navigator.msSaveOrOpenBlob(blob, filename);
+			} else {
+				element.setAttribute('href', window.URL.createObjectURL(blob));
+
+				//set file title
+				element.setAttribute('download', filename);
+
+				//trigger download
+				element.style.display = 'none';
+				document.body.appendChild(element);
+				element.click();
+
+				//remove temporary link element
+				document.body.removeChild(element);
+			}
+		}
+
+		if (this.table.options.downloadComplete) {
+			this.table.options.downloadComplete();
+		}
+	}
+};
+
+//nested field lookup
+Download.prototype.getFieldValue = function (field, data) {
+	var column = this.columnsByField[field];
+
+	if (column) {
+		return column.getFieldValue(data);
+	}
+
+	return false;
+};
+
+Download.prototype.commsReceived = function (table, action, data) {
+	switch (action) {
+		case "intercept":
+			this.download(data.type, "", data.options, data.active, data.intercept);
+			break;
+	}
+};
+
+//downloaders
+Download.prototype.downloaders = {
+	csv: function csv(columns, data, options, setFileContents, config) {
+		var self = this,
+		    titles = [],
+		    fields = [],
+		    delimiter = options && options.delimiter ? options.delimiter : ",",
+		    fileContents,
+		    output;
+
+		//build column headers
+		function parseSimpleTitles() {
+			columns.forEach(function (column) {
+				titles.push('"' + String(column.title).split('"').join('""') + '"');
+				fields.push(column.field);
+			});
+		}
+
+		function parseColumnGroup(column, level) {
+			if (column.subGroups) {
+				column.subGroups.forEach(function (subGroup) {
+					parseColumnGroup(subGroup, level + 1);
+				});
+			} else {
+				titles.push('"' + String(column.title).split('"').join('""') + '"');
+				fields.push(column.definition.field);
+			}
+		}
+
+		if (config.columnGroups) {
+			console.warn("Download Warning - CSV downloader cannot process column groups");
+
+			columns.forEach(function (column) {
+				parseColumnGroup(column, 0);
+			});
+		} else {
+			parseSimpleTitles();
+		}
+
+		//generate header row
+		fileContents = [titles.join(delimiter)];
+
+		function parseRows(data) {
+			//generate each row of the table
+			data.forEach(function (row) {
+				var rowData = [];
+
+				fields.forEach(function (field) {
+					var value = self.getFieldValue(field, row);
+
+					switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+						case "object":
+							value = JSON.stringify(value);
+							break;
+
+						case "undefined":
+						case "null":
+							value = "";
+							break;
+
+						default:
+							value = value;
+					}
+
+					//escape quotation marks
+					rowData.push('"' + String(value).split('"').join('""') + '"');
+				});
+
+				fileContents.push(rowData.join(delimiter));
+			});
+		}
+
+		function parseGroup(group) {
+			if (group.subGroups) {
+				group.subGroups.forEach(function (subGroup) {
+					parseGroup(subGroup);
+				});
+			} else {
+				parseRows(group.rows);
+			}
+		}
+
+		if (config.columnCalcs) {
+			console.warn("Download Warning - CSV downloader cannot process column calculations");
+			data = data.data;
+		}
+
+		if (config.rowGroups) {
+			console.warn("Download Warning - CSV downloader cannot process row groups");
+
+			data.forEach(function (group) {
+				parseGroup(group);
+			});
+		} else {
+			parseRows(data);
+		}
+
+		output = fileContents.join("\n");
+
+		if (options.bom) {
+			output = "\uFEFF" + output;
+		}
+
+		setFileContents(output, "text/csv");
+	},
+
+	json: function json(columns, data, options, setFileContents, config) {
+		var fileContents;
+
+		if (config.columnCalcs) {
+			console.warn("Download Warning - CSV downloader cannot process column calculations");
+			data = data.data;
+		}
+
+		fileContents = JSON.stringify(data, null, '\t');
+
+		setFileContents(fileContents, "application/json");
+	},
+
+	pdf: function pdf(columns, data, options, setFileContents, config) {
+		var self = this,
+		    fields = [],
+		    header = [],
+		    body = [],
+		    calcs = {},
+		    headerDepth = 1,
+		    table = "",
+		    autoTableParams = {},
+		    rowGroupStyles = options.rowGroupStyles || {
+			fontStyle: "bold",
+			fontSize: 12,
+			cellPadding: 6,
+			fillColor: 220
+		},
+		    rowCalcStyles = options.rowCalcStyles || {
+			fontStyle: "bold",
+			fontSize: 10,
+			cellPadding: 4,
+			fillColor: 232
+		},
+		    jsPDFParams = options.jsPDF || {},
+		    title = options && options.title ? options.title : "";
+
+		if (config.columnCalcs) {
+			calcs = data.calcs;
+			data = data.data;
+		}
+
+		if (!jsPDFParams.orientation) {
+			jsPDFParams.orientation = options.orientation || "landscape";
+		}
+
+		if (!jsPDFParams.unit) {
+			jsPDFParams.unit = "pt";
+		}
+
+		//build column headers
+		function parseSimpleTitles() {
+			columns.forEach(function (column) {
+				if (column.field) {
+					header.push(column.title || "");
+					fields.push(column.field);
+				}
+			});
+
+			header = [header];
+		}
+
+		function parseColumnGroup(column, level) {
+			var colSpan = column.width,
+			    rowSpan = 1,
+			    col = {
+				content: column.title || ""
+			};
+
+			if (column.subGroups) {
+				column.subGroups.forEach(function (subGroup) {
+					parseColumnGroup(subGroup, level + 1);
+				});
+				rowSpan = 1;
+			} else {
+				fields.push(column.definition.field);
+				rowSpan = headerDepth - level;
+			}
+
+			col.rowSpan = rowSpan;
+			// col.colSpan = colSpan;
+
+			header[level].push(col);
+
+			colSpan--;
+
+			if (rowSpan > 1) {
+				for (var i = level + 1; i < headerDepth; i++) {
+					header[i].push("");
+				}
+			}
+
+			for (var i = 0; i < colSpan; i++) {
+				header[level].push("");
+			}
+		}
+
+		if (config.columnGroups) {
+			columns.forEach(function (column) {
+				if (column.depth > headerDepth) {
+					headerDepth = column.depth;
+				}
+			});
+
+			for (var i = 0; i < headerDepth; i++) {
+				header.push([]);
+			}
+
+			columns.forEach(function (column) {
+				parseColumnGroup(column, 0);
+			});
+		} else {
+			parseSimpleTitles();
+		}
+
+		function parseValue(value) {
+			switch (typeof value === "undefined" ? "undefined" : _typeof(value)) {
+				case "object":
+					value = JSON.stringify(value);
+					break;
+
+				case "undefined":
+				case "null":
+					value = "";
+					break;
+
+				default:
+					value = value;
+			}
+
+			return value;
+		}
+
+		function parseRows(data) {
+			//build table rows
+			data.forEach(function (row) {
+				body.push(parseRow(row));
+			});
+		}
+
+		function parseRow(row, styles) {
+			var rowData = [];
+
+			fields.forEach(function (field) {
+				var value = self.getFieldValue(field, row);
+				value = parseValue(value);
+
+				if (styles) {
+					rowData.push({
+						content: value,
+						styles: styles
+					});
+				} else {
+					rowData.push(value);
+				}
+			});
+
+			return rowData;
+		}
+
+		function parseGroup(group, calcObj) {
+			var groupData = [];
+
+			groupData.push({ content: parseValue(group.key), colSpan: fields.length, styles: rowGroupStyles });
+
+			body.push(groupData);
+
+			if (group.subGroups) {
+				group.subGroups.forEach(function (subGroup) {
+					parseGroup(subGroup, calcObj[group.key] ? calcObj[group.key].groups || {} : {});
+				});
+			} else {
+
+				if (config.columnCalcs) {
+					addCalcRow(calcObj, group.key, "top");
+				}
+
+				parseRows(group.rows);
+
+				if (config.columnCalcs) {
+					addCalcRow(calcObj, group.key, "bottom");
+				}
+			}
+		}
+
+		function addCalcRow(calcs, selector, pos) {
+			var calcData = calcs[selector];
+
+			if (calcData) {
+				if (pos) {
+					calcData = calcData[pos];
+				}
+
+				if (Object.keys(calcData).length) {
+					body.push(parseRow(calcData, rowCalcStyles));
+				}
+			}
+		}
+
+		if (config.rowGroups) {
+			data.forEach(function (group) {
+				parseGroup(group, calcs);
+			});
+		} else {
+			if (config.columnCalcs) {
+				addCalcRow(calcs, "top");
+			}
+
+			parseRows(data);
+
+			if (config.columnCalcs) {
+				addCalcRow(calcs, "bottom");
+			}
+		}
+
+		var doc = new jsPDF(jsPDFParams); //set document to landscape, better for most tables
+
+		if (options && options.autoTable) {
+			if (typeof options.autoTable === "function") {
+				autoTableParams = options.autoTable(doc) || {};
+			} else {
+				autoTableParams = options.autoTable;
+			}
+		}
+
+		if (title) {
+			autoTableParams.addPageContent = function (data) {
+				doc.text(title, 40, 30);
+			};
+		}
+
+		autoTableParams.head = header;
+		autoTableParams.body = body;
+
+		doc.autoTable(autoTableParams);
+
+		if (options && options.documentProcessing) {
+			options.documentProcessing(doc);
+		}
+
+		setFileContents(doc.output("arraybuffer"), "application/pdf");
+	},
+
+	xlsx: function xlsx(columns, data, options, setFileContents, config) {
+		var self = this,
+		    sheetName = options.sheetName || "Sheet1",
+		    workbook = XLSX.utils.book_new(),
+		    calcs = {},
+		    groupRowIndexs = [],
+		    groupColumnIndexs = [],
+		    calcRowIndexs = [],
+		    output;
+
+		workbook.SheetNames = [];
+		workbook.Sheets = {};
+
+		if (config.columnCalcs) {
+			calcs = data.calcs;
+			data = data.data;
+		}
+
+		function generateSheet() {
+			var titles = [],
+			    fields = [],
+			    rows = [],
+			    worksheet;
+
+			//convert rows to worksheet
+			function rowsToSheet() {
+				var sheet = {};
+				var range = { s: { c: 0, r: 0 }, e: { c: fields.length, r: rows.length } };
+
+				XLSX.utils.sheet_add_aoa(sheet, rows);
+
+				sheet['!ref'] = XLSX.utils.encode_range(range);
+
+				var merges = generateMerges();
+
+				if (merges.length) {
+					sheet["!merges"] = merges;
+				}
+
+				return sheet;
+			}
+
+			function parseSimpleTitles() {
+				//get field lists
+				columns.forEach(function (column) {
+					titles.push(column.title);
+					fields.push(column.field);
+				});
+
+				rows.push(titles);
+			}
+
+			function parseColumnGroup(column, level) {
+
+				if (typeof titles[level] === "undefined") {
+					titles[level] = [];
+				}
+
+				if (typeof groupColumnIndexs[level] === "undefined") {
+					groupColumnIndexs[level] = [];
+				}
+
+				if (column.width > 1) {
+
+					groupColumnIndexs[level].push({
+						type: "hoz",
+						start: titles[level].length,
+						end: titles[level].length + column.width - 1
+					});
+				}
+
+				titles[level].push(column.title);
+
+				if (column.subGroups) {
+					column.subGroups.forEach(function (subGroup) {
+						parseColumnGroup(subGroup, level + 1);
+					});
+				} else {
+					fields.push(column.definition.field);
+					padColumnTitles(fields.length - 1, level);
+
+					groupColumnIndexs[level].push({
+						type: "vert",
+						start: fields.length - 1
+					});
+				}
+			}
+
+			function padColumnTitles() {
+				var max = 0;
+
+				titles.forEach(function (title) {
+					var len = title.length;
+					if (len > max) {
+						max = len;
+					}
+				});
+
+				titles.forEach(function (title) {
+					var len = title.length;
+					if (len < max) {
+						for (var i = len; i < max; i++) {
+							title.push("");
+						}
+					}
+				});
+			}
+
+			if (config.columnGroups) {
+				columns.forEach(function (column) {
+					parseColumnGroup(column, 0);
+				});
+
+				titles.forEach(function (title) {
+					rows.push(title);
+				});
+			} else {
+				parseSimpleTitles();
+			}
+
+			function generateMerges() {
+				var output = [];
+
+				groupRowIndexs.forEach(function (index) {
+					output.push({ s: { r: index, c: 0 }, e: { r: index, c: fields.length - 1 } });
+				});
+
+				groupColumnIndexs.forEach(function (merges, level) {
+					merges.forEach(function (merge) {
+						if (merge.type === "hoz") {
+							output.push({ s: { r: level, c: merge.start }, e: { r: level, c: merge.end } });
+						} else {
+							if (level != titles.length - 1) {
+								output.push({ s: { r: level, c: merge.start }, e: { r: titles.length - 1, c: merge.start } });
+							}
+						}
+					});
+				});
+
+				return output;
+			}
+
+			//generate each row of the table
+			function parseRows(data) {
+				data.forEach(function (row) {
+					rows.push(parseRow(row));
+				});
+			}
+
+			function parseRow(row) {
+				var rowData = [];
+
+				fields.forEach(function (field) {
+					var value = self.getFieldValue(field, row);
+					rowData.push(!(value instanceof Date) && (typeof value === "undefined" ? "undefined" : _typeof(value)) === "object" ? JSON.stringify(value) : value);
+				});
+
+				return rowData;
+			}
+
+			function addCalcRow(calcs, selector, pos) {
+				var calcData = calcs[selector];
+
+				if (calcData) {
+					if (pos) {
+						calcData = calcData[pos];
+					}
+
+					if (Object.keys(calcData).length) {
+						calcRowIndexs.push(rows.length);
+						rows.push(parseRow(calcData));
+					}
+				}
+			}
+
+			function parseGroup(group, calcObj) {
+				var groupData = [];
+
+				groupData.push(group.key);
+
+				groupRowIndexs.push(rows.length);
+
+				rows.push(groupData);
+
+				if (group.subGroups) {
+					group.subGroups.forEach(function (subGroup) {
+						parseGroup(subGroup, calcObj[group.key] ? calcObj[group.key].groups || {} : {});
+					});
+				} else {
+
+					if (config.columnCalcs) {
+						addCalcRow(calcObj, group.key, "top");
+					}
+
+					parseRows(group.rows);
+
+					if (config.columnCalcs) {
+						addCalcRow(calcObj, group.key, "bottom");
+					}
+				}
+			}
+
+			if (config.rowGroups) {
+				data.forEach(function (group) {
+					parseGroup(group, calcs);
+				});
+			} else {
+				if (config.columnCalcs) {
+					addCalcRow(calcs, "top");
+				}
+
+				parseRows(data);
+
+				if (config.columnCalcs) {
+					addCalcRow(calcs, "bottom");
+				}
+			}
+
+			worksheet = rowsToSheet();
+
+			return worksheet;
+		}
+
+		if (options.sheetOnly) {
+			setFileContents(generateSheet());
+			return;
+		}
+
+		if (options.sheets) {
+			for (var sheet in options.sheets) {
+
+				if (options.sheets[sheet] === true) {
+					workbook.SheetNames.push(sheet);
+					workbook.Sheets[sheet] = generateSheet();
+				} else {
+
+					workbook.SheetNames.push(sheet);
+
+					this.table.modules.comms.send(options.sheets[sheet], "download", "intercept", {
+						type: "xlsx",
+						options: { sheetOnly: true },
+						active: self.active,
+						intercept: function intercept(data) {
+							workbook.Sheets[sheet] = data;
+						}
+					});
+				}
+			}
+		} else {
+			workbook.SheetNames.push(sheetName);
+			workbook.Sheets[sheetName] = generateSheet();
+		}
+
+		if (options.documentProcessing) {
+			workbook = options.documentProcessing(workbook);
+		}
+
+		//convert workbook to binary array
+		function s2ab(s) {
+			var buf = new ArrayBuffer(s.length);
+			var view = new Uint8Array(buf);
+			for (var i = 0; i != s.length; ++i) {
+				view[i] = s.charCodeAt(i) & 0xFF;
+			}return buf;
+		}
+
+		output = XLSX.write(workbook, { bookType: 'xlsx', bookSST: true, type: 'binary' });
+
+		setFileContents(s2ab(output), "application/octet-stream");
+	},
+
+	html: function html(columns, data, options, setFileContents, config) {
+		if (this.table.modExists("htmlTableExport", true)) {
+			setFileContents(this.table.modules.htmlTableExport.getHtml(true, options.style, config), "text/html");
+		}
+	}
+
+};
+
+Tabulator.prototype.registerModule("download", Download);

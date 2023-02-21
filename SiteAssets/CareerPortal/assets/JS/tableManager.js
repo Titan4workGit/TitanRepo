@@ -1,1 +1,839 @@
-function a6_0x3f0b(_0x4a122c,_0x34aff3){var _0x303623=a6_0x3036();return a6_0x3f0b=function(_0x3f0bd7,_0x3a25e4){_0x3f0bd7=_0x3f0bd7-0x8f;var _0x5763bc=_0x303623[_0x3f0bd7];return _0x5763bc;},a6_0x3f0b(_0x4a122c,_0x34aff3);}(function(_0x5419f3,_0xe4ad39){var _0x184878=a6_0x3f0b,_0x27ea7d=_0x5419f3();while(!![]){try{var _0x2254e0=-parseInt(_0x184878(0xda))/0x1*(parseInt(_0x184878(0xdd))/0x2)+-parseInt(_0x184878(0xb7))/0x3+-parseInt(_0x184878(0x90))/0x4*(parseInt(_0x184878(0xac))/0x5)+parseInt(_0x184878(0xe1))/0x6+-parseInt(_0x184878(0x96))/0x7*(-parseInt(_0x184878(0xc8))/0x8)+-parseInt(_0x184878(0xe7))/0x9*(parseInt(_0x184878(0xef))/0xa)+-parseInt(_0x184878(0xf7))/0xb*(-parseInt(_0x184878(0xe9))/0xc);if(_0x2254e0===_0xe4ad39)break;else _0x27ea7d['push'](_0x27ea7d['shift']());}catch(_0x548aae){_0x27ea7d['push'](_0x27ea7d['shift']());}}}(a6_0x3036,0x5c10e),function(_0x186801){var _0x1eb367=a6_0x3f0b;_0x186801['fn'][_0x1eb367(0xde)]=function(_0x54c28f=null){var _0x57df8e=_0x1eb367,_0x6c8331=_0x186801(this),_0x334575=_0x186801(this)[_0x57df8e(0xd8)]('thead\x20th'),_0xa51f22=_0x186801(this)[_0x57df8e(0xd8)](_0x57df8e(0xbd)),_0x23264d=_0x186801(this)[_0x57df8e(0xd8)]('tbody\x20tr'),_0x27678f=_0x23264d[_0x57df8e(0xa7)],_0x3e1f52=[],_0x34a59c,_0xadb294,_0x1e6311=[[0x0,0x0]],_0x2cddd9=[],_0x27f81d=[],_0x3a8794=[],_0x421182=![],_0x421182=_0x54c28f!==null&&_0x54c28f[_0x57df8e(0xa1)]==!![]?!![]:![],_0x52e559=![];_0x52e559=_0x54c28f!==null&&_0x54c28f[_0x57df8e(0x9b)]==!![]?!![]:![];var _0x5df218=0x0,_0x5ae07c=_0x52e559!==!![]&&_0x30fff3!==!![]?_0x23264d['length']:0x5,_0x67cdcc=_0x54c28f['numOfPages']!==undefined&&_0x54c28f[_0x57df8e(0xe0)]>0x0?_0x54c28f[_0x57df8e(0xe0)]:0x5,_0xa921e4=[0x5,0xa,0x32];_0xa921e4=_0x54c28f!==null&&_0x54c28f[_0x57df8e(0x9f)]!=''&&typeof _0x54c28f[_0x57df8e(0x9f)]!==undefined&&_0x54c28f[_0x57df8e(0x9f)]!==undefined?_0x54c28f[_0x57df8e(0x9f)]:_0xa921e4;var _0x56ade8='',_0x17fd62=_0x57df8e(0xe6),_0x1c9c11=_0x57df8e(0xdb),_0x37cfed=new Array();_0x37cfed=[_0x57df8e(0xa1),'firstSort',_0x57df8e(0xb4),_0x57df8e(0xa5),_0x57df8e(0xd9),_0x57df8e(0x9b),'showrows',_0x57df8e(0xa6),_0x57df8e(0xcd),'numOfPages'],arrayOptions=_0x186801[_0x57df8e(0xd3)](_0x54c28f,function(_0xa9241c,_0x3c7594){return[_0x3c7594];});for(_0x7c9f18=0x0;_0x7c9f18<arrayOptions[_0x57df8e(0xa7)];_0x7c9f18++){_0x37cfed[_0x57df8e(0xec)](arrayOptions[_0x7c9f18])===-0x1&&(_0x421182&&_0x164356(_0x57df8e(0xb8)+arrayOptions[_0x7c9f18]+'\x20is\x20unavailable\x20option.'));}if(_0x54c28f!==null){_0x54c28f[_0x57df8e(0xa6)]!=''&&typeof _0x54c28f[_0x57df8e(0xa6)]!==undefined&&_0x54c28f[_0x57df8e(0xa6)]!==undefined&&(_0x56ade8=_0x54c28f[_0x57df8e(0xa6)][_0x57df8e(0xc5)]!=''&&_0x54c28f[_0x57df8e(0xa6)][_0x57df8e(0xc5)]!==undefined?_0x54c28f[_0x57df8e(0xa6)][_0x57df8e(0xc5)]:_0x56ade8,_0x17fd62=_0x54c28f[_0x57df8e(0xa6)]['voc_type_here_filter']!=''&&_0x54c28f[_0x57df8e(0xa6)][_0x57df8e(0xa9)]!==undefined?_0x54c28f['vocabulary']['voc_type_here_filter']:_0x17fd62,_0x1c9c11=_0x54c28f['vocabulary'][_0x57df8e(0xca)]!=''&&_0x54c28f[_0x57df8e(0xa6)][_0x57df8e(0xca)]!==undefined?_0x54c28f['vocabulary'][_0x57df8e(0xca)]:_0x1c9c11);if(_0x54c28f['disable']!=''&&typeof _0x54c28f[_0x57df8e(0xb4)]!==undefined&&_0x54c28f['disable']!==undefined)for(var _0x7c9f18=0x0;_0x7c9f18<_0x54c28f[_0x57df8e(0xb4)][_0x57df8e(0xa7)];_0x7c9f18++){col=_0x54c28f[_0x57df8e(0xb4)][_0x7c9f18]==-0x1||_0x54c28f[_0x57df8e(0xb4)][_0x7c9f18]==_0x57df8e(0xb9)?_0x334575[_0x57df8e(0xa7)]:_0x54c28f['disable'][_0x7c9f18]==_0x57df8e(0xdf)?0x1:_0x54c28f[_0x57df8e(0xb4)][_0x7c9f18],_0x334575['eq'](col-0x1)[_0x57df8e(0xf2)](_0x57df8e(0xc1))[_0x57df8e(0xd7)](_0x57df8e(0xd2))[_0x57df8e(0xd7)](_0x57df8e(0x8f)),isNaN(col-0x1)&&(_0x421182&&_0x164356('Error!\x20Check\x20your\x20\x22disable\x22\x20option.'));}var _0x30fff3=![];if(_0x54c28f[_0x57df8e(0x9f)]!=''&&typeof _0x54c28f[_0x57df8e(0x9f)]!==undefined&&_0x54c28f[_0x57df8e(0x9f)]!==undefined){_0x30fff3=!![];var _0x475922=_0x57df8e(0xf5)+_0x551679(_0x1c9c11)+':\x20</label><select\x20id=\x22numrows\x22></select></div>';_0x6c8331[_0x57df8e(0x9a)](_0x475922);for(_0x7c9f18=0x0;_0x7c9f18<_0xa921e4[_0x57df8e(0xa7)];_0x7c9f18++){var _0x1c7839=_0xa921e4[_0x7c9f18];_0xa921e4[_0x7c9f18]==0x1388&&(_0x1c7839=_0x57df8e(0xb2)),_0x186801(_0x57df8e(0xb5))['append'](_0x186801(_0x57df8e(0xa4),{'value':_0xa921e4[_0x7c9f18],'text':_0x1c7839})),isNaN(_0xa921e4[_0x7c9f18])&&(_0x421182&&_0x164356('Error!\x20One\x20of\x20your\x20\x22show\x20rows\x22\x20options\x20is\x20not\x20a\x20number.'));}var _0xd1ed70=_0x186801('select#numrows')[_0x57df8e(0xba)]();_0x5ae07c=_0xd1ed70,_0x186801(_0x57df8e(0xb5))['on'](_0x57df8e(0xb1),function(){var _0x17b9c8=_0x57df8e;_0xd1ed70=_0x186801(this)[_0x17b9c8(0xba)](),_0x5df218=0x0,_0x46ee16();});}if(_0x52e559===!![]||_0x6c8331[_0x57df8e(0xa0)](_0x57df8e(0x98))){var _0x20b754=Math[_0x57df8e(0xa2)](_0x23264d[_0x57df8e(0xa7)]/_0x5ae07c),_0x4aa0f9=_0x57df8e(0x9d);_0x6c8331['after'](_0x4aa0f9);if(_0x30fff3!==!![])var _0xd1ed70=_0x5ae07c;_0x46ee16();}if(_0x54c28f[_0x57df8e(0xcd)]!=''&&typeof _0x54c28f[_0x57df8e(0xcd)]!==undefined&&_0x54c28f[_0x57df8e(0xcd)]!==undefined)for(var _0x7c9f18=0x0;_0x7c9f18<_0x54c28f[_0x57df8e(0xcd)][_0x57df8e(0xa7)];_0x7c9f18++){col=_0x54c28f[_0x57df8e(0xcd)][_0x7c9f18]==-0x1||_0x54c28f[_0x57df8e(0xcd)][_0x7c9f18]==_0x57df8e(0xb9)?_0x334575[_0x57df8e(0xa7)]:_0x54c28f[_0x57df8e(0xcd)][_0x7c9f18]==_0x57df8e(0xdf)?0x1:_0x54c28f[_0x57df8e(0xcd)][_0x7c9f18],_0x334575['eq'](col-0x1)['addClass'](_0x57df8e(0xcd)),isNaN(col-0x1)&&(_0x421182&&_0x164356(_0x57df8e(0xe3)));}if(_0x54c28f[_0x57df8e(0xa5)]===!![]||_0x6c8331['hasClass']('tableFilterBy')){var _0x45cb08='<div\x20id=\x22for_filter_by\x22\x20class=\x22for_filter_by\x22\x20style=\x22display:\x20inline;\x22><label\x20for=\x22filter_by\x22>'+_0x551679(_0x56ade8)+'</label><select\x20id=\x22filter_by\x22></select>\x20<input\x20id=\x22filter_input\x22\x20type=\x22text\x22\x20placeholder=\x22'+_0x551679(_0x17fd62)+_0x57df8e(0x9e);_0x186801(this)['before'](_0x45cb08),_0x186801(_0x334575)['each'](function(_0x5b3c3d){var _0x16bb74=_0x57df8e;!_0x186801(this)['hasClass'](_0x16bb74(0xcd))&&_0x186801('select#filter_by')[_0x16bb74(0xbe)](_0x186801(_0x16bb74(0xa4),{'value':_0x5b3c3d,'text':_0x186801(this)[_0x16bb74(0xf4)]()}));}),_0x186801(_0x57df8e(0xbf))['on'](_0x57df8e(0xe5),function(){var _0xa62249=_0x57df8e,_0x383cfd=_0x186801[_0xa62249(0xce)](_0x186801(this)[_0xa62249(0xba)]())[_0xa62249(0xcc)](/ +/g,'\x20')['toLowerCase'](),_0x4359cf=_0x186801('select#filter_by')['val']();_0x6c8331['find'](_0xa62249(0xcf))[_0xa62249(0xd5)]()[_0xa62249(0x95)](function(){var _0x3b44b0=_0xa62249,_0x1b4a28=_0x186801(this)[_0x3b44b0(0xd8)]('td')[_0x3b44b0(0xf4)]()['replace'](/\s+/g,'\x20')[_0x3b44b0(0xab)]();return!~_0x1b4a28[_0x3b44b0(0xec)](_0x383cfd);})[_0xa62249(0xf0)]();if(_0x383cfd=='')_0x2c6730();});}if(_0x54c28f['dateFormat']!=''&&typeof _0x54c28f[_0x57df8e(0xd9)]!==undefined&&_0x54c28f['dateFormat']!==undefined){for(_0x7c9f18=0x0;_0x7c9f18<_0x54c28f['dateFormat'][_0x57df8e(0xa7)];_0x7c9f18++){_0x2cddd9['push'](_0x54c28f[_0x57df8e(0xd9)][_0x7c9f18][0x0]-0x1),_0x27f81d[_0x57df8e(0xc3)]([_0x54c28f[_0x57df8e(0xd9)][_0x7c9f18][0x0]-0x1,_0x54c28f[_0x57df8e(0xd9)][_0x7c9f18][0x1]]);}_0x334575[_0x57df8e(0xe4)](function(_0x15cd8e){var _0x42671b=_0x57df8e;if(_0x186801(this)['data'](_0x42671b(0xde))&&_0x186801(this)[_0x42671b(0xb6)](_0x42671b(0xde))[_0x42671b(0xd9)]!==undefined){var _0xb2a0c5=_0x186801(this)[_0x42671b(0xb6)](_0x42671b(0xde))['dateFormat'];_0x2cddd9['push'](_0x15cd8e),_0x27f81d['push']([_0x15cd8e,_0xb2a0c5]);}});}if(_0x54c28f[_0x57df8e(0xc4)]!=''&&typeof _0x54c28f[_0x57df8e(0xc4)]!==undefined&&_0x54c28f[_0x57df8e(0xc4)]!==undefined){var _0x125ede=[],_0x37b23d=_0x54c28f[_0x57df8e(0xc4)],_0x53fa41=[];for(_0x7c9f18=0x0;_0x7c9f18<_0x54c28f['firstSort']['length'];_0x7c9f18++){_0x125ede[_0x57df8e(0xc3)](_0x54c28f[_0x57df8e(0xc4)][_0x7c9f18][0x0]),_0x53fa41[_0x57df8e(0xc3)](_0x54c28f[_0x57df8e(0xc4)][_0x7c9f18][0x1]);}_0x443819(_0x37b23d);}}_0x421182&&_0x164356(_0x57df8e(0x97),_0x54c28f);_0x334575[_0x57df8e(0xe4)](function(_0x3a777f){var _0x332834=_0x57df8e,_0x447ed8=_0x186801(this)[_0x332834(0xb6)](_0x332834(0xde))==='disable'?!![]:_0x186801(this)[_0x332834(0xa0)](_0x332834(0xc1))?!![]:![];!_0x447ed8===!![]&&(_0x186801(this)['on'](_0x332834(0xa3),function(){var _0x17465a=_0x332834;_0x186801(this)[_0x17465a(0xa0)](_0x17465a(0xd2))?(_0x186801(_0x334575)[_0x17465a(0xd7)]('sortingAsc')['removeClass'](_0x17465a(0x8f)),_0x186801(this)['addClass'](_0x17465a(0x8f)),order=0x1):(_0x186801(_0x334575)[_0x17465a(0xd7)]('sortingDesc')[_0x17465a(0xd7)](_0x17465a(0xd2)),_0x186801(this)[_0x17465a(0xf2)](_0x17465a(0xd2)),order=0x0);var _0x4f6982=[];_0x4f6982['push']([_0x3a777f+0x1,order]),_0x443819(_0x4f6982);}),_0x186801(this)[_0x332834(0xf2)](_0x332834(0xe8)));});function _0x443819(_0x118479){var _0x583763=_0x57df8e;cellsArray=[];for(_0x7c9f18=0x0;_0x7c9f18<_0x27678f;_0x7c9f18++){_0x34a59c=_0x23264d[_0x7c9f18][_0x583763(0xa8)],_0xadb294=_0x34a59c[_0x583763(0xa7)],cellsArray[_0x7c9f18]=[];for(j=0x0;j<_0xadb294;j++){cellsArray[_0x7c9f18]['push'](_0x34a59c[j]['outerHTML']);}}var _0x291704=[];for(_0x7c9f18=0x0;_0x7c9f18<_0x118479[_0x583763(0xa7)];_0x7c9f18++){var _0x3bfdec=_0x118479[_0x7c9f18][0x0]-0x1,_0x154064=_0x334575['eq'](_0x3bfdec),_0x515215=_0x118479[_0x7c9f18][0x1]==undefined?0x0:_0x118479[_0x7c9f18][0x1]==0x0||_0x118479[_0x7c9f18][0x1]==_0x583763(0xf6)?0x0:_0x118479[_0x7c9f18][0x1]==0x1||_0x118479[_0x7c9f18][0x1]==_0x583763(0xf1)?0x1:0x0;if(_0x7c9f18==0x0){var _0x3b81b5=_0x515215==0x0?_0x583763(0xd2):'sortingDesc';_0x186801(_0x154064)[_0x583763(0xf2)](_0x3b81b5);}asc=_0x515215==0x0?0x1:-0x1;if(_0x2cddd9['indexOf'](_0x3bfdec)!=-0x1)for(j=0x0;j<_0x27f81d[_0x583763(0xa7)];j++){if(_0x27f81d[j][0x0]==_0x3bfdec)var _0x5c15da=_0x583763(0xad),_0x3ee96a=_0x27f81d[j][0x1];}else var _0x5c15da=_0x583763(0xbb),_0x3ee96a=null;_0x291704[_0x583763(0xc3)]([_0x3bfdec,asc,_0x5c15da,_0x3ee96a]);}_0x5cae6e(cellsArray,_0x291704),_0x26731f(cellsArray);}function _0x5cae6e(_0x51b446,_0xe95d93){var _0x2f6c71=_0x57df8e,_0x4692cd=[],_0x4edc75=[],_0xe6c94a=[],_0x55812a=[];for(_0x7c9f18=0x0;_0x7c9f18<_0xe95d93[_0x2f6c71(0xa7)];_0x7c9f18++){_0x4692cd['push'](_0xe95d93[_0x7c9f18][0x0]),_0x4edc75['push'](_0xe95d93[_0x7c9f18][0x1]),_0xe6c94a[_0x2f6c71(0xc3)](_0xe95d93[_0x7c9f18][0x2]),_0x55812a[_0x2f6c71(0xc3)](_0xe95d93[_0x7c9f18][0x3]);}_0x51b446[_0x2f6c71(0xae)](function(_0x48d928,_0x4d6709){var _0x45f669=_0x2f6c71;for(_0x7c9f18=0x0;_0x7c9f18<_0x4692cd[_0x45f669(0xa7)];_0x7c9f18++){var _0x4acdf6='',_0x5b7bab='',_0xe7456d=_0x4edc75[_0x7c9f18];let _0x38eb79=new DOMParser()['parseFromString'](_0x48d928[_0x4692cd[_0x7c9f18]],_0x45f669(0xeb))[_0x45f669(0xcb)][_0x45f669(0x99)],_0x129a7a=new DOMParser()[_0x45f669(0x94)](_0x4d6709[_0x4692cd[_0x7c9f18]],_0x45f669(0xeb))['documentElement'][_0x45f669(0x99)];if(_0x7c9f18==_0x4692cd['length']&&_0x38eb79==_0x129a7a)return 0x0;if(_0xe6c94a[_0x7c9f18]=='alphanumeric'){if(_0x38eb79>_0x129a7a)return _0xe7456d;else{if(_0x38eb79<_0x129a7a)return-0x1*_0xe7456d;}}else{if(_0xe6c94a[_0x7c9f18]==_0x45f669(0xad)){if(_0x1ab5db(_0x55812a[_0x7c9f18],_0x38eb79)>_0x1ab5db(_0x55812a[_0x7c9f18],_0x129a7a))return _0xe7456d;else{if(_0x1ab5db(_0x55812a[_0x7c9f18],_0x38eb79)<_0x1ab5db(_0x55812a[_0x7c9f18],_0x129a7a))return-0x1*_0xe7456d;}}}}});}function _0x26731f(_0x4b27b6){var _0x28afc0=_0x57df8e;_0xa51f22['html'](''),_0xa51f22['html']('<tr>'+_0x4b27b6[_0x28afc0(0xbc)]('</tr><tr>')+_0x28afc0(0xaf)),_0x2c6730();}function _0x1ab5db(_0x46847d,_0x21f8a1){var _0x410d28=_0x57df8e,_0x40a540=_0x21f8a1,_0x2f1822=0x0;return _0x46847d==_0x410d28(0xf8)&&(_0x40a540=_0x21f8a1[_0x410d28(0xcc)](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,_0x410d28(0xd0)),_0x2f1822=0x1),_0x46847d==_0x410d28(0xb0)&&(_0x40a540=_0x21f8a1[_0x410d28(0xcc)](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,_0x410d28(0xc7)),_0x2f1822=0x1),_0x46847d==_0x410d28(0xe2)&&(_0x40a540=_0x21f8a1['replace'](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,'$3-$2-$1'),_0x2f1822=0x1),_0x46847d==_0x410d28(0xed)&&(_0x40a540=_0x21f8a1[_0x410d28(0xcc)](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,'$3-$1-$2'),_0x2f1822=0x1),_0x46847d=='dd/mm/yyyy'&&(_0x40a540=_0x21f8a1[_0x410d28(0xcc)](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,_0x410d28(0xc2)),_0x2f1822=0x1),_0x46847d==_0x410d28(0xc9)&&(_0x40a540=_0x21f8a1[_0x410d28(0xcc)](/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,'$3/$1/$2'),_0x2f1822=0x1),_0x2f1822==0x0&&(_0x421182&&_0x164356(_0x410d28(0xc0))),_0x40a540;}function _0x46ee16(){var _0x5473f2=_0x57df8e;_0x5ae07c=_0xd1ed70,_0x20b754=Math[_0x5473f2(0xa2)](_0x23264d[_0x5473f2(0xa7)]/_0x5ae07c),_0x78aa3a(_0x20b754),_0x186801(_0x5473f2(0x92))['eq'](0x0)['addClass'](_0x5473f2(0xb3)),_0x2c6730(_0x5df218,_0x5ae07c),_0x31a381(),_0x236476();}function _0x2c6730(_0x50b8f9=null,_0x2bd75c=null){var _0x4d3070=_0x57df8e,_0x50b8f9=_0x50b8f9===null?_0x5df218:_0x50b8f9,_0x2bd75c=_0x2bd75c===null?_0x5ae07c:_0x2bd75c;_0x6c8331['on'](_0x4d3070(0xee),function(){var _0x29183c=_0x4d3070;_0x186801(this)[_0x29183c(0xd8)]('tbody\x20tr')['hide']()['slice'](_0x50b8f9*_0x2bd75c,(_0x50b8f9+0x1)*_0x2bd75c)[_0x29183c(0xd5)]();}),_0x6c8331['trigger'](_0x4d3070(0xee));}function _0x78aa3a(_0x2632fb){var _0x4006fc=_0x57df8e;_0x186801(_0x4006fc(0x9c))['html'](''),_0x186801(_0x4006fc(0x9c))['append'](_0x186801(_0x4006fc(0xc6),{'value':_0x4006fc(0xdf),'text':'<<','class':_0x4006fc(0xd6),'type':'button'})),_0x186801('#pagesControllers')[_0x4006fc(0xbe)](_0x186801('<button>',{'value':_0x4006fc(0x91),'text':'<','class':'pagecontroller\x20pagecontroller-p','type':'button'}));for(_0x7c9f18=0x1;_0x7c9f18<=_0x2632fb;_0x7c9f18++){_0x186801(_0x4006fc(0x9c))[_0x4006fc(0xbe)](_0x186801('<button>',{'value':_0x7c9f18,'text':_0x7c9f18,'class':'pagecontroller\x20pagecontroller-num','type':_0x4006fc(0xf3)}));}_0x186801(_0x4006fc(0x9c))[_0x4006fc(0xbe)](_0x186801('<button>',{'value':_0x4006fc(0xea),'text':'>','class':_0x4006fc(0x93),'type':'button'})),_0x186801(_0x4006fc(0x9c))['append'](_0x186801(_0x4006fc(0xc6),{'value':_0x4006fc(0xb9),'text':'>>','class':_0x4006fc(0xdc),'type':_0x4006fc(0xf3)}));}function _0x31a381(){var _0x57ef06=_0x57df8e;_0x186801(_0x57ef06(0xaa))['on'](_0x57ef06(0xa3),function(){var _0x1d1276=_0x57ef06;if(_0x186801(this)[_0x1d1276(0xba)]()==_0x1d1276(0xdf))_0x5df218=0x0,_0x2c6730(_0x5df218,_0x5ae07c);else{if(_0x186801(this)[_0x1d1276(0xba)]()=='last')_0x5df218=_0x20b754-0x1,_0x2c6730(_0x5df218,_0x5ae07c);else{if(_0x186801(this)[_0x1d1276(0xba)]()==_0x1d1276(0x91))_0x5df218!=0x0&&(_0x5df218=_0x5df218-0x1,_0x2c6730(_0x5df218,_0x5ae07c));else _0x186801(this)[_0x1d1276(0xba)]()==_0x1d1276(0xea)?_0x5df218!=_0x20b754-0x1&&(_0x5df218=_0x5df218+0x1,_0x2c6730(_0x5df218,_0x5ae07c)):(_0x5df218=_0x186801(this)['val']()-0x1,_0x2c6730(_0x5df218,_0x5ae07c));}}_0x186801(_0x1d1276(0x92))[_0x1d1276(0xd7)](_0x1d1276(0xb3)),_0x186801(_0x1d1276(0x92))['eq'](_0x5df218)[_0x1d1276(0xf2)](_0x1d1276(0xb3)),_0x236476();});}function _0x236476(){var _0x9cac67=_0x57df8e;_0x186801('.pagecontroller-num')[_0x9cac67(0xf0)]()[_0x9cac67(0x95)](function(_0x116ebe,_0x58ea9d){var _0xd024dc=_0x9cac67;let _0x10cb82=Math[_0xd024dc(0xa2)](_0x67cdcc/0x2);if(_0x5df218<_0x10cb82){if(_0x116ebe<_0x67cdcc)return!![];}else{if(_0x5df218>_0x20b754-(_0x67cdcc-0x1)){if(_0x116ebe>=_0x20b754-_0x67cdcc)return!![];}else{if(_0x67cdcc%0x2==0x0){if(_0x116ebe>=_0x5df218-_0x10cb82&&_0x116ebe<_0x5df218+_0x10cb82)return!![];}else{if(_0x116ebe>_0x5df218-_0x10cb82&&_0x116ebe<_0x5df218+_0x10cb82)return!![];}}}})[_0x9cac67(0xd5)]();}function _0x551679(_0x292374){return _0x292374;}function _0x164356(_0x50577d,_0x1472f1=null){var _0x5a8e5e=_0x57df8e;console[_0x5a8e5e(0xd1)](_0x50577d),_0x1472f1!=null&&console[_0x5a8e5e(0xd1)](JSON[_0x5a8e5e(0xd4)](JSON['stringify'](_0x1472f1)));}};}(jQuery));function a6_0x3036(){var _0x5c4d22=['tbody','append','input#filter_input','Error!\x20Unvalid\x20\x22date\x20format\x22.','disableSort','$3/$2/$1','push','firstSort','voc_filter_by','<button>','$3$1$2','305224tuFjgB','mm/dd/yyyy','voc_show_rows','documentElement','replace','disableFilterBy','trim','tbody\x20tr','$3$2$1','log','sortingAsc','map','parse','show','pagecontroller\x20pagecontroller-f','removeClass','find','dateFormat','11bKCySB','Show\x20rows','pagecontroller\x20pagecontroller-l','109168ihFqOa','tablemanager','first','numOfPages','3710868LqKcwk','dd-mm-yyyy','Error!\x20Check\x20your\x20\x22disableFilterBy\x22\x20option.','each','keyup','Type\x20here\x20to\x20filter...','63KexiqG','sorterHeader','98340OeEoEy','next','text/html','indexOf','mm-dd-yyyy','paginating','383390DyTVOE','hide','desc','addClass','button','text','<div\x20id=\x22for_numrows\x22\x20class=\x22for_numrows\x22\x20style=\x22display:\x20inline;\x22><label\x20for=\x22numrows\x22>','asc','869vrVHbj','ddmmyyyy','sortingDesc','224816FUQtUU','prev','.pagecontroller-num','pagecontroller\x20pagecontroller-n','parseFromString','filter','98TuMtGh','Options\x20set:','tablePagination','textContent','after','pagination','#pagesControllers','<div\x20id=\x22pagesControllers\x22\x20class=\x22pagesControllers\x22></div>','\x22></div>','showrows','hasClass','debug','ceil','click','<option>','appendFilterby','vocabulary','length','cells','voc_type_here_filter','.pagecontroller','toLowerCase','40ofSidr','date','sort','</tr>','mmddyyyy','change','All','currentPage','disable','select#numrows','data','313482KxFPuF','Error!\x20','last','val','alphanumeric','join'];a6_0x3036=function(){return _0x5c4d22;};return a6_0x3036();}
+/**
+
+jQuery Plugin
+Name: tableManager
+Version: 1.1.0
+Author: Pietrantonio Alessandro (Stone)
+Author's website: http://www.stonewebdesign.it
+
+@-- What's new --@
+
+1) 
+    New classes to the table: tablePagination, tableFilterBy;
+
+2)
+    New class to the th element: disableFilterBy;
+
+3)
+    New option to disable filter on one or more column: disableFilterBy: []
+
+@-- Usage --@
+
+Important! This plugin NEED jQuery library to work. As a matter of fact it's a jQuery plugin.
+
+Minimum requirements:
+-   jQuery library
+
+1)
+    To include jQuery library download it from jQuery site and put the .js file into your site folders, then put this line into your document:
+    <script type="text/javascript" src="PATH_TO_YOUR_FILE/jquery-VERSION_NUMBER.min.js"></script>
+    Alternatively you can include it without download it, just like this:
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+2)
+    Include this plugin just like this: download it and put the .js file into your site folders, then write this line into your document:
+    <script type="text/javascript" src="PATH_TO_YOUR_FILE/tableManager.js"></script>
+    Important! REMEMBER: THIS LINE HAVE TO BE AFTER JQUERY INCLUDING LINE!
+
+
+If you want you can customize this plugin as you prefer and need just with the following options.
+Options:
+
+    debug = (boolean) can be true or false or not set. It activates debug mode and show messages into browser console.
+
+    firstSort = can be an array of integer, or just a single integer. The first parameter determines the number of column to start sorting, the second parameter determines the order (asc or 0 = ascending, desc or 1 = descending). Ex.:
+        firstSort : [[1,'asc']] --> the table is sorted by first column (first parameter = 1), by ascending order (second parameter = 0).
+
+    disable = this option is used to disable one or more columns and expect one parameter per column. The parameter can be an integer or, to disable last column, -1 or the word "last". Ex.:
+        disable : [3] --> disable sorting on third column
+
+    appendFilterby = (boolean) used to add a filter on top of the table. The filter will be composed by one select to select by which column to filter and an input text to filter typing. Ex.:
+        appendFilterby : true
+
+    dateFormat = used to indicate column and dateformat. It helps to sort by date which is formatted like dd-mm-yyyy or mmddyyyy. The first parameter is the column, the second parameter is date format. Ex.:
+        dateFormat : [[3, 'dd-mm-yyyy']] --> the third column is date and it's formatted like dd-mm-yyyy
+
+    pagination = true or false or not set. It permits to paginate table and append controllers under the table. Ex.:
+        pagination : true --> enable pagination tool
+
+    showrows = you can append to table a select by which you can select number of rows to show. It must be an array of numbers. Ex.:
+        showrows : [10,100,1000] --> you can choose to show 10, 100, 1000 rows
+
+    vocabulary = used to translate labels. The following are accepted labels:
+        voc_filter_by
+        voc_type_here_filter
+
+    disableFilterBy = used to disable filter by specific columns. It must be an array of numbers. To disable filter by last column you can use "last". Ex.:
+        disableFilterBy: [1, "last"] --> it disable filter by first and last column
+
+Classes:
+
+    (th)        disableSort = disable that specific column
+                disableFilterBy = disable filter for that specific column
+
+    (table)     tablePagination = append pagination elements to table
+                tableFilterBy = append filter tool to table
+
+Data- attributes:
+
+    data-tablemanager =
+        'disable' --> disable that specific column
+
+        '{"dateFormat":"dd-mm-yyyy"}' --> this secific column represent a date with the forma tdd-mm-yyyy (Important! To pass correctly this data attribute the attribute value has to be written between '' and attribute single elements like dateFormat or mm-dd-yyyy between "")
+
+
+Important! Do not edit this plugin if you're not sure you're doing it right. The Author is not responsible for any malfunctions caused by the end User.
+
+**/
+
+(function ($) {
+    /* Initialize function */
+    $.fn.tablemanager = function (options = null) {
+        /**
+        Get common variables, parts of tables and others utilities
+        **/
+        var Table   = $(this),
+            Heads   = $(this).find("thead th"),
+            tbody   = $(this).find("tbody"),
+            rows    = $(this).find("tbody tr"),
+            rlen    = rows.length,
+            arr     = [],
+            cells,
+            clen;
+
+        /**
+        Options default values
+        **/
+        var firstSort       = [[0, 0]],
+            dateColumn      = [],
+            dateFormat      = [],
+            disableFilterBy = [];
+
+        /**
+        Debug value true or false
+        **/
+        var debug = false;
+        var debug = options !== null && options.debug == true ? true : false;
+
+        /**
+        Set pagination true or false
+        **/
+        var pagination = false;
+        pagination =
+            options !== null && options.pagination == true ? true : false;
+        // default pagination variables
+        var currentPage = 0;
+        var numPerPage =
+            pagination !== true && showrows_option !== true ? rows.length : 5;
+        var numOfPages = options.numOfPages !== undefined && options.numOfPages > 0 ? options.numOfPages : 5;
+
+        /**
+        Set default show rows list or set if option is set
+        **/
+        var showrows = [5, 10, 50];
+        showrows =
+            options !== null &&
+            options.showrows != "" &&
+            typeof options.showrows !== undefined &&
+            options.showrows !== undefined
+                ? options.showrows
+                : showrows;
+
+        /**
+        Default labels translations
+        **/
+        var voc_filter_by = "",
+            voc_type_here_filter = "Type here to filter...",
+            voc_show_rows = "Show rows";
+
+        /**
+        Available options:
+        **/
+        var availableOptions = new Array();
+        availableOptions = [
+            "debug",
+            "firstSort",
+            "disable",
+            "appendFilterby",
+            "dateFormat",
+            "pagination",
+            "showrows",
+            "vocabulary",
+            "disableFilterBy",
+            "numOfPages"
+        ];
+
+        // debug
+        // make array form options object
+        arrayOptions = $.map(options, function (value, index) {
+            return [index];
+        });
+        for (i = 0; i < arrayOptions.length; i++) {
+            // check if options are in available options array
+            if (availableOptions.indexOf(arrayOptions[i]) === -1) {
+                if (debug) {
+                    cLog(
+                        "Error! " + arrayOptions[i] + " is unavailable option."
+                    );
+                }
+            }
+        }
+
+        /**
+        Get options if set
+        **/
+        if (options !== null) {
+            /**
+            Check options vocabulary
+            **/
+            if (
+                options.vocabulary != "" &&
+                typeof options.vocabulary !== undefined &&
+                options.vocabulary !== undefined
+            ) {
+                // Check every single label
+
+                voc_filter_by =
+                    options.vocabulary.voc_filter_by != "" &&
+                    options.vocabulary.voc_filter_by !== undefined
+                        ? options.vocabulary.voc_filter_by
+                        : voc_filter_by;
+
+                voc_type_here_filter =
+                    options.vocabulary.voc_type_here_filter != "" &&
+                    options.vocabulary.voc_type_here_filter !== undefined
+                        ? options.vocabulary.voc_type_here_filter
+                        : voc_type_here_filter;
+
+                voc_show_rows =
+                    options.vocabulary.voc_show_rows != "" &&
+                    options.vocabulary.voc_show_rows !== undefined
+                        ? options.vocabulary.voc_show_rows
+                        : voc_show_rows;
+            }
+
+            /**
+            Option disable
+            **/
+            if (
+                options.disable != "" &&
+                typeof options.disable !== undefined &&
+                options.disable !== undefined
+            ) {
+                for (var i = 0; i < options.disable.length; i++) {
+                    // check if should be disabled last column
+                    col =
+                        options.disable[i] == -1 || options.disable[i] == "last"
+                            ? Heads.length
+                            : options.disable[i] == "first"
+                            ? 1
+                            : options.disable[i];
+                    Heads.eq(col - 1)
+                        .addClass("disableSort")
+                        .removeClass("sortingAsc")
+                        .removeClass("sortingDesc");
+
+                    // debug
+                    if (isNaN(col - 1)) {
+                        if (debug) {
+                            cLog('Error! Check your "disable" option.');
+                        }
+                    }
+                }
+            }
+
+            /**
+            Option select number of rows to show
+            **/
+            var showrows_option = false;
+            if (
+                options.showrows != "" &&
+                typeof options.showrows !== undefined &&
+                options.showrows !== undefined
+            ) {
+                showrows_option = true;
+
+                // div num rows
+                var numrowsDiv =
+                    '<div id="for_numrows" class="for_numrows" style="display: inline;"><label for="numrows">' +
+                    translate(voc_show_rows) +
+                    ': </label><select id="numrows"></select></div>';
+                // append div to choose num rows to show
+                Table.after(numrowsDiv);
+                // get show rows options and append select to its div
+                for (i = 0; i < showrows.length; i++) {
+                	var ddlRowText = showrows[i];
+                	if(showrows[i] == 5000) {
+                		ddlRowText = "All"
+                	}
+                    $("select#numrows").append(
+                        $("<option>", {
+                            value: showrows[i],
+                            text: ddlRowText,
+                        })
+                    );
+
+                    // debug
+                    if (isNaN(showrows[i])) {
+                        if (debug) {
+                            cLog(
+                                'Error! One of your "show rows" options is not a number.'
+                            );
+                        }
+                    }
+                }
+
+                var selectNumRowsVal = $("select#numrows").val();
+                numPerPage = selectNumRowsVal;
+                // on select num rows change get value and call function
+                $("select#numrows").on("change", function () {
+                    selectNumRowsVal = $(this).val();
+                    // reset current page to show always first page if select change
+                    currentPage = 0;
+                    generatePaginationValues();
+                });
+            }
+
+            /**
+            Pagination
+            **/
+            if (pagination === true || Table.hasClass("tablePagination")) {
+                var numPages = Math.ceil(rows.length / numPerPage);
+
+                // append num pages on bottom
+                var pagesDiv =
+                    '<div id="pagesControllers" class="pagesControllers"></div>';
+                Table.after(pagesDiv);
+
+                // Showrows option and append
+                // If showrows is set get select val
+                if (showrows_option !== true) {
+                    var selectNumRowsVal = numPerPage;
+                }
+
+                generatePaginationValues();
+            }
+
+            /**
+            Check if disable filter by is empty or undefined
+            **/
+            if (
+                options.disableFilterBy != "" &&
+                typeof options.disableFilterBy !== undefined &&
+                options.disableFilterBy !== undefined
+            ) {
+                for (var i = 0; i < options.disableFilterBy.length; i++) {
+                    // check if should be disabled last column
+                    col =
+                        options.disableFilterBy[i] == -1 ||
+                        options.disableFilterBy[i] == "last"
+                            ? Heads.length
+                            : options.disableFilterBy[i] == "first"
+                            ? 1
+                            : options.disableFilterBy[i];
+                    Heads.eq(col - 1).addClass("disableFilterBy");
+
+                    // debug
+                    if (isNaN(col - 1)) {
+                        if (debug) {
+                            cLog('Error! Check your "disableFilterBy" option.');
+                        }
+                    }
+                }
+            }
+
+            /**
+            Append filter option
+            **/
+            if (
+                options.appendFilterby === true ||
+                Table.hasClass("tableFilterBy")
+            ) {
+                // Create div and select to filter
+                var filterbyDiv =
+                    '<div id="for_filter_by" class="for_filter_by" style="display: inline;"><label for="filter_by">' +
+                    translate(voc_filter_by) +
+                    '</label><select id="filter_by"></select> <input id="filter_input" type="text" placeholder="' +
+                    translate(voc_type_here_filter) +
+                    '"></div>';
+                $(this).before(filterbyDiv);
+
+                // Populate select with every th text and as value use column number
+                $(Heads).each(function (i) {
+                    if (!$(this).hasClass("disableFilterBy")) {
+                        $("select#filter_by").append(
+                            $("<option>", {
+                                value: i,
+                                text: $(this).text(),
+                            })
+                        );
+                    }
+                });
+
+                // Filter on typing selecting column by select #filter_by
+                $("input#filter_input").on("keyup", function () {
+                    var val = $.trim($(this).val())
+                        .replace(/ +/g, " ")
+                        .toLowerCase();
+                    var select_by = $("select#filter_by").val();
+
+                    Table.find("tbody tr")
+                        .show()
+                        .filter(function () {
+                            // search into column selected by #filter_by
+                            var text = $(this)
+                                //.find("td:eq(" + select_by + ")")
+                                .find("td")
+                                .text()
+                                .replace(/\s+/g, " ")
+                                .toLowerCase();
+                            return !~text.indexOf(val);
+                        })
+                        .hide();
+                        
+                    if(val == '') paginate();
+                });
+            }
+
+            /**
+            Date format option
+            **/
+            if (
+                options.dateFormat != "" &&
+                typeof options.dateFormat !== undefined &&
+                options.dateFormat !== undefined
+            ) {
+                for (i = 0; i < options.dateFormat.length; i++) {
+                    dateColumn.push(options.dateFormat[i][0] - 1);
+                    dateFormat.push([
+                        options.dateFormat[i][0] - 1,
+                        options.dateFormat[i][1],
+                    ]);
+                }
+                // check if column has table manager data attribute
+                Heads.each(function (col) {
+                    if (
+                        $(this).data("tablemanager") &&
+                        $(this).data("tablemanager").dateFormat !== undefined
+                    ) {
+                        var dateF = $(this).data("tablemanager").dateFormat;
+                        dateColumn.push(col);
+                        dateFormat.push([col, dateF]);
+                    }
+                });
+            }
+
+            /**
+            Check if first element to sort is empty or undefined
+            **/
+            if (
+                options.firstSort != "" &&
+                typeof options.firstSort !== undefined &&
+                options.firstSort !== undefined
+            ) {
+                var firstSortColumn = [];
+                var firstSortRules = options.firstSort;
+                var firstSortOrder = [];
+                for (i = 0; i < options.firstSort.length; i++) {
+                    firstSortColumn.push(options.firstSort[i][0]);
+                    firstSortOrder.push(options.firstSort[i][1]);
+                }
+                TableSort(firstSortRules);
+            }
+        }
+        if (debug) {
+            cLog("Options set:", options);
+        }
+
+        /**
+        Detect theads click and sort by that column
+        **/
+        Heads.each(function (n) {
+            // check if has class disableSort or has data-attribute = disable
+            var disable =
+                $(this).data("tablemanager") === "disable"
+                    ? true
+                    : $(this).hasClass("disableSort")
+                    ? true
+                    : false;
+
+            if (!disable === true) {
+                $(this).on("click", function () {
+                    if ($(this).hasClass("sortingAsc")) {
+                        $(Heads)
+                            .removeClass("sortingAsc")
+                            .removeClass("sortingDesc");
+                        $(this).addClass("sortingDesc");
+                        order = 1;
+                    } else {
+                        $(Heads)
+                            .removeClass("sortingDesc")
+                            .removeClass("sortingAsc");
+                        $(this).addClass("sortingAsc");
+                        order = 0;
+                    }
+                    // TableSort(this, n, order);
+                    var sortRules = [];
+                    sortRules.push([n + 1, order]);
+                    TableSort(sortRules);
+                });
+                $(this).addClass("sorterHeader");
+            }
+        });
+
+        /**
+        Main function: sort table
+        rules = array of column, order
+        **/
+        function TableSort(rules) {
+            cellsArray = [];
+            for (i = 0; i < rlen; i++) {
+                cells = rows[i].cells;
+                clen = cells.length;
+                cellsArray[i] = [];
+                for (j = 0; j < clen; j++) {
+                    cellsArray[i].push(cells[j].outerHTML);
+                }
+            }
+            // For each firtsort rule
+            var firstSortData = [];
+            for (i = 0; i < rules.length; i++) {
+                var col = rules[i][0] - 1;
+                var thead = Heads.eq(col);
+                var order =
+                    rules[i][1] == undefined
+                        ? 0
+                        : rules[i][1] == 0 || rules[i][1] == "asc"
+                        ? 0
+                        : rules[i][1] == 1 || rules[i][1] == "desc"
+                        ? 1
+                        : 0;
+                // Manage classes asc and desc
+                if (i == 0) {
+                    var firstClassOrder =
+                        order == 0 ? "sortingAsc" : "sortingDesc";
+                    $(thead).addClass(firstClassOrder);
+                }
+                asc = order == 0 ? 1 : -1;
+                // if column is date
+                if (dateColumn.indexOf(col) != -1) {
+                    for (j = 0; j < dateFormat.length; j++) {
+                        if (dateFormat[j][0] == col) {
+                            var type = "date";
+                            var format = dateFormat[j][1];
+                        }
+                    }
+                } else {
+                    var type = "alphanumeric";
+                    var format = null;
+                }
+                firstSortData.push([col, asc, type, format]);
+            }
+
+            multipleSortCol(cellsArray, firstSortData);
+
+            appendSortedTable(cellsArray);
+        }
+
+        /** 
+        Function which sort columns
+        array = what have to be sorted
+        data = columns, orders (asc and desc), types(alphanum or date), formats (for dates)
+        **/
+        function multipleSortCol(array, data) {
+            var cols = [];
+            var orders = [];
+            var types = [];
+            var formats = [];
+            for (i = 0; i < data.length; i++) {
+                cols.push(data[i][0]);
+                orders.push(data[i][1]);
+                types.push(data[i][2]);
+                formats.push(data[i][3]);
+            }
+            array.sort(function (a, b) {
+                for (i = 0; i < cols.length; i++) {
+                    // initialize variables
+                    var first = "",
+                        second = "";
+                    var order = orders[i];
+                    // get inner text from stringified elements
+                    let firstCol = new DOMParser().parseFromString(
+                        a[cols[i]],
+                        "text/html"
+                    ).documentElement.textContent;
+                    let secondCol = new DOMParser().parseFromString(
+                        b[cols[i]],
+                        "text/html"
+                    ).documentElement.textContent;
+                    // If it's last col selected and a = b return 0
+                    if (i == cols.length && firstCol == secondCol) {
+                        return 0;
+                    }
+                    // check col type if is aplhpanum or date
+                    if (types[i] == "alphanumeric") {
+                        if (firstCol > secondCol) {
+                            return order;
+                        } else if (firstCol < secondCol) {
+                            return -1 * order;
+                        }
+                    } else if (types[i] == "date") {
+                        if (
+                            formatDate(formats[i], firstCol) >
+                            formatDate(formats[i], secondCol)
+                        ) {
+                            return order;
+                        } else if (
+                            formatDate(formats[i], firstCol) <
+                            formatDate(formats[i], secondCol)
+                        ) {
+                            return -1 * order;
+                        }
+                    }
+                }
+            });
+        }
+
+        /**
+        Append sorted table
+        arr = array with table html
+        **/
+        function appendSortedTable(arr) {
+            // create rows and cells by sorted array
+            // for(i = 0; i < rlen; i++){
+            //     arr[i] = "<td>"+arr[i].join("</td><td>")+"</td>";
+            // };
+            // reset tbody
+            tbody.html("");
+            // append new sorted rows
+            tbody.html("<tr>" + arr.join("</tr><tr>") + "</tr>");
+            // then launch paginate function (if options.paginate = false it will not do anything)
+            paginate();
+        }
+
+        /**
+        Format date
+        dateFormat = the date format passed by user
+        date = date to format
+        **/
+        function formatDate(dateFormat, date) {
+            var $date = date;
+            // debug variable
+            var format = 0;
+            if (dateFormat == "ddmmyyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3$2$1"
+                );
+                format = 1;
+            }
+            if (dateFormat == "mmddyyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3$1$2"
+                );
+                format = 1;
+            }
+            if (dateFormat == "dd-mm-yyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3-$2-$1"
+                );
+                format = 1;
+            }
+            if (dateFormat == "mm-dd-yyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3-$1-$2"
+                );
+                format = 1;
+            }
+            if (dateFormat == "dd/mm/yyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3/$2/$1"
+                );
+                format = 1;
+            }
+            if (dateFormat == "mm/dd/yyyy") {
+                $date = date.replace(
+                    /(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/,
+                    "$3/$1/$2"
+                );
+                format = 1;
+            }
+            // For debugging
+            if (format == 0) {
+                if (debug) {
+                    cLog('Error! Unvalid "date format".');
+                }
+            }
+
+            return $date;
+        }
+
+        /**
+        Generate page values: if numrows are selected or not it organize every value needed by pagination function and others
+        **/
+        function generatePaginationValues() {
+            // get first select num rows value
+            numPerPage = selectNumRowsVal;
+            numPages = Math.ceil(rows.length / numPerPage);
+            // append first controllers for pages
+            appendPageControllers(numPages);
+            // Give currentPage class to first page number
+            $(".pagecontroller-num").eq(0).addClass("currentPage");
+            paginate(currentPage, numPerPage);
+            pagecontrollersClick();
+            filterPages();
+        }
+
+        /**
+        Pagination function: reorganize entire table by pages
+        curPage = (can be null) current page if it's set
+        perPage = (can be null) number of rows per page
+        **/
+        function paginate(curPage = null, perPage = null) {
+            var curPage = curPage === null ? currentPage : curPage;
+            var perPage = perPage === null ? numPerPage : perPage;
+            Table.on("paginating", function () {
+                $(this)
+                    .find("tbody tr")
+                    .hide()
+                    .slice(curPage * perPage, (curPage + 1) * perPage)
+                    .show();
+            });
+            Table.trigger("paginating");
+        }
+
+        /**
+        Page controllers append: generate page controllers and append them on bottom of table
+        **/
+        function appendPageControllers(nPages) {
+            // reset div
+            $("#pagesControllers").html("");
+            // First
+            $("#pagesControllers").append(
+                $("<button>", {
+                    value: "first",
+                    text: "<<",
+                    class: "pagecontroller pagecontroller-f",
+                    type: "button",
+                })
+            );
+            // Previous
+            $("#pagesControllers").append(
+                $("<button>", {
+                    value: "prev",
+                    text: "<",
+                    class: "pagecontroller pagecontroller-p",
+                    type: "button",
+                })
+            );
+            // Numbers
+            for (i = 1; i <= nPages; i++) {
+                $("#pagesControllers").append(
+                    $("<button>", {
+                        value: i,
+                        text: i,
+                        class: "pagecontroller pagecontroller-num",
+                        type: "button",
+                    })
+                );
+            }
+            // Next
+            $("#pagesControllers").append(
+                $("<button>", {
+                    value: "next",
+                    text: ">",
+                    class: "pagecontroller pagecontroller-n",
+                    type: "button",
+                })
+            );
+            // Last
+            $("#pagesControllers").append(
+                $("<button>", {
+                    value: "last",
+                    text: ">>",
+                    class: "pagecontroller pagecontroller-l",
+                    type: "button",
+                })
+            );
+        }
+
+        /**
+        Page controllers click: check if pagecontroller has clicked and change page to view
+        **/
+        function pagecontrollersClick() {
+            $(".pagecontroller").on("click", function () {
+                // on click on button do something
+                if ($(this).val() == "first") {
+                    currentPage = 0;
+                    paginate(currentPage, numPerPage);
+                } else if ($(this).val() == "last") {
+                    currentPage = numPages - 1;
+                    paginate(currentPage, numPerPage);
+                } else if ($(this).val() == "prev") {
+                    if (currentPage != 0) {
+                        currentPage = currentPage - 1;
+                        paginate(currentPage, numPerPage);
+                    }
+                } else if ($(this).val() == "next") {
+                    if (currentPage != numPages - 1) {
+                        currentPage = currentPage + 1;
+                        paginate(currentPage, numPerPage);
+                    }
+                } else {
+                    currentPage = $(this).val() - 1;
+                    paginate(currentPage, numPerPage);
+                }
+                // Reset class and give to currentPage
+                $(".pagecontroller-num").removeClass("currentPage");
+                $(".pagecontroller-num")
+                    .eq(currentPage)
+                    .addClass("currentPage");
+
+                filterPages();
+            });
+        }
+
+        function filterPages() {
+            $(".pagecontroller-num")
+                .hide()    
+                .filter(function(i, el) {
+                    let mid = Math.ceil(numOfPages / 2);
+                    if (currentPage < mid) {
+                        if(i < numOfPages) return true;
+                    } else if(currentPage > (numPages - (numOfPages - 1))) {
+                        if(i >= numPages - numOfPages) return true;
+                    } else {
+                        if(numOfPages % 2 == 0) {
+                            if(i >= currentPage - mid && i < currentPage + mid) return true;
+                        } else {
+                            if(i > currentPage - mid && i < currentPage + mid) return true;
+                        }
+                    }
+                })
+                .show();
+        }
+
+        /**
+        Translating function
+        string = string to be translated
+        **/
+        function translate(string) {
+            return string;
+        }
+
+        /**
+        Debug function
+        name = label for data
+        string = string to pass by console.log
+        **/
+        function cLog(name, string = null) {
+            console.log(name);
+            if (string != null) {
+                console.log(JSON.parse(JSON.stringify(string)));
+            }
+        }
+    };
+})(jQuery);

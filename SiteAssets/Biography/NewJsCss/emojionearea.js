@@ -1,1 +1,1743 @@
-var a6_0xc4de0=a6_0x52cc;function a6_0x213f(){var _0x2396e0=['confounded\x20tired_face\x20weary\x20triumph\x20open_mouth\x20scream\x20fearful\x20cold_sweat\x20hushed\x20frowning\x20anguished\x20','flag_by\x20flag_be\x20flag_bz\x20flag_bj\x20flag_bm\x20flag_bt\x20flag_bo\x20flag_ba\x20flag_bw\x20flag_br\x20flag_io\x20flag_vg\x20flag_bn\x20flag_bg\x20flag_bf\x20','&#8203;','enable','test','diamond_shape_with_a_dot_inside\x20m\x20cyclone\x20zzz\x20atm\x20wc\x20wheelchair\x20parking\x20u7a7a\x20sa\x20passport_control\x20customs\x20','flag_white\x20flag_black\x20checkered_flag\x20triangular_flag_on_post\x20rainbow_flag\x20flag_af\x20flag_ax\x20flag_al\x20flag_dz\x20flag_as\x20','green_apple\x20apple\x20pear\x20tangerine\x20lemon\x20banana\x20watermelon\x20grapes\x20strawberry\x20melon\x20cherries\x20peach\x20','flag_nr\x20flag_np\x20flag_nl\x20flag_nc\x20flag_nz\x20flag_ni\x20flag_ne\x20flag_ng\x20flag_nu\x20flag_nf\x20flag_kp\x20flag_mp\x20flag_no\x20flag_om\x20flag_pk\x20','toShort','vertical_traffic_light\x20traffic_light\x20checkered_flag\x20ship\x20ferris_wheel\x20roller_coaster\x20carousel_horse\x20','@picker.show','cloud_rain\x20thunder_cloud_rain\x20cloud_lightning\x20cloud_snow\x20snowman2\x20snowman\x20snowflake\x20wind_blowing_face\x20dash\x20cloud_tornado\x20','takeout_box\x20chopsticks\x20bowl_with_spoon\x20cup_with_straw\x20coconut\x20broccoli\x20pie\x20pretzel\x20cut_of_meat\x20sandwich\x20canned_food','pouting_cat\x20open_hands\x20raised_hands\x20palms_up_together\x20clap\x20pray\x20handshake\x20thumbsup\x20thumbsdown\x20punch\x20fist\x20left_facing_fist\x20','active','man_with_turban\x20cop\x20construction_worker\x20guardsman\x20spy\x20santa\x20angel\x20princess\x20bride_with_veil\x20walking\x20','ready','snowboarder\x20woman_lifting_weights\x20man_lifting_weights\x20woman_cartwheeling\x20','metro\x20tram\x20station\x20helicopter\x20airplane_small\x20airplane\x20airplane_departure\x20airplane_arriving\x20sailboat\x20','factory\x20house\x20house_with_garden\x20homes\x20house_abandoned\x20office\x20department_store\x20post_office\x20european_post_office\x20hospital\x20','pickerPosition','scrollTop','vulcan\x20writing_hand\x20nail_care\x20lips\x20tongue\x20ear\x20nose\x20eye\x20eyes\x20bust_in_silhouette\x20busts_in_silhouette\x20','apply','concat','parent','cc\x20gg\x20im\x20yt\x20nf\x20pn\x20bl\x20pm\x20gs\x20tk\x20bv\x20hm\x20sj\x20um\x20ic\x20ea\x20cp\x20dg\x20as\x20aq\x20vg\x20ck\x20cw\x20eu\x20gf\x20tf\x20gp\x20mq\x20mp\x20sx\x20ss\x20tc\x20','red_circle\x20large_blue_circle\x20small_orange_diamond\x20small_blue_diamond\x20large_orange_diamond\x20large_blue_diamond\x20','/sprites/emojione.sprites.css','heartpulse','<i/>','emojibtn.click','picker-position-','beach\x20island\x20mountain\x20mountain_snow\x20mount_fuji\x20volcano\x20desert\x20camping\x20tent\x20railway_track\x20motorway\x20construction_site\x20','currentTarget','white_square_button\x20black_square_button\x20black_small_square\x20white_small_square\x20black_medium_small_square\x20','woman_lifting_weights\x20man_lifting_weights\x20person_fencing\x20women_wrestling\x20men_wrestling\x20woman_cartwheeling\x20','nail_care\x20ring\x20lipstick\x20kiss\x20lips\x20tongue\x20ear\x20nose\x20footprints\x20eye\x20eyes\x20speaking_head\x20bust_in_silhouette\x20','emojioneAreaText','endOffset','sh\x20kn\x20lc\x20vc\x20ws\x20sm\x20st\x20flag_sa\x20sn\x20rs\x20sc\x20sl\x20sg\x20sk\x20si\x20sb\x20so\x20za\x20kr\x20es\x20lk\x20sd\x20sr\x20sz\x20se\x20ch\x20sy\x20tw\x20tj\x20tz\x20th\x20tl\x20','css','originalEvent','woman_office_worker\x20man_office_worker\x20woman_mechanic\x20man_mechanic\x20woman_scientist\x20man_scientist\x20woman_artist\x20','which','insertNode','breast_feeding\x20woman_bowing\x20man_bowing\x20man_tipping_hand\x20woman_tipping_hand\x20','emoji\x22\x20src=\x22{img}\x22/>','love_letter\x20postbox\x20mailbox_closed\x20mailbox\x20mailbox_with_mail\x20mailbox_with_no_mail\x20package\x20postal_horn\x20','city_sunset\x20city_dusk\x20cityscape\x20night_with_stars\x20bridge_at_night\x20milky_way\x20stars\x20sparkler\x20fireworks\x20','flag_bi\x20flag_kh\x20flag_cm\x20flag_ca\x20flag_ic\x20flag_cv\x20flag_bq\x20flag_ky\x20flag_cf\x20flag_td\x20flag_cl\x20flag_cn\x20flag_cx\x20flag_cc\x20flag_co\x20','yum','track_previous\x20fast_forward\x20rewind\x20twisted_rightwards_arrows\x20repeat\x20repeat_one\x20arrow_backward\x20arrow_up_small\x20','red_car\x20taxi\x20blue_car\x20bus\x20trolleybus\x20race_car\x20police_car\x20ambulance\x20fire_engine\x20minibus\x20truck\x20articulated_lorry\x20tractor\x20','/svg/','man_office_worker\x20woman_mechanic\x20man_mechanic\x20woman_scientist\x20man_scientist\x20woman_artist\x20man_artist\x20','shortcuts','tone.click','&quot;','oncoming_automobile\x20oncoming_taxi\x20aerial_tramway\x20mountain_cableway\x20suspension_railway\x20railway_car\x20','category-block','emojis-list','currency_exchange\x20tm\x20copyright\x20registered\x20wavy_dash\x20curly_loop\x20loop\x20end\x20back\x20on\x20top\x20soon\x20heavy_check_mark\x20','stopPropagation','searchSel','3.0.2','removeClass','Use\x20the\x20TAB\x20key\x20to\x20insert\x20emoji\x20faster','closed_book\x20green_book\x20blue_book\x20orange_book\x20notebook_with_decorative_cover\x20ledger\x20books\x20book\x20link\x20','name','man_judge\x20mrs_claus\x20santa\x20princess\x20prince\x20bride_with_veil\x20man_in_tuxedo\x20angel\x20pregnant_woman\x20','smiley_cat\x20smile_cat\x20joy_cat\x20heart_eyes_cat\x20smirk_cat\x20kissing_cat\x20scream_cat\x20crying_cat_face\x20','five\x20six\x20seven\x20eight\x20nine\x20ten\x201234\x20arrow_forward\x20pause_button\x20play_pause\x20stop_button\x20record_button\x20track_next\x20','men_with_bunny_ears_partying\x20woman_walking\x20man_walking\x20woman_running\x20man_running\x20couple\x20two_women_holding_hands\x20','runner\x20dancer\x20dancers\x20couple\x20two_men_holding_hands\x20two_women_holding_hands\x20bow\x20information_desk_person\x20','aries\x20taurus\x20gemini\x20cancer\x20leo\x20virgo\x20libra\x20scorpius\x20sagittarius\x20capricorn\x20aquarius\x20pisces\x20id\x20atom\x20accept\x20radioactive\x20','man_climbing\x20woman_in_lotus_position\x20man_in_lotus_position\x20bath\x20person_in_bed','animate','enabled','grinning\x20smiley\x20smile\x20grin\x20laughing\x20sweat_smile\x20joy\x20rofl\x20relaxed\x20blush\x20innocent\x20slight_smile\x20upside_down\x20','picker.keyup','cacheBustParam','busts_in_silhouette\x20baby\x20boy\x20girl\x20man\x20woman\x20blond-haired_woman\x20blond_haired_man\x20older_man\x20older_woman\x20','png','length','paste','woman_playing_handball\x20man_playing_handball\x20woman_golfing\x20man_golfing\x20','change','position','children','thinking\x20flushed\x20disappointed\x20worried\x20angry\x20rage\x20pensive\x20confused\x20slight_frown\x20frowning2\x20persevere\x20','curry\x20rice_ball\x20rice\x20rice_cracker\x20oden\x20dango\x20shaved_ice\x20ice_cream\x20icecream\x20cake\x20birthday\x20custard\x20candy\x20','santa\x20runner\x20surfer\x20swimmer\x20lifter\x20ear\x20nose\x20point_up_2\x20point_down\x20point_left\x20point_right\x20punch\x20','unicodeRegexp','<img\x20alt=\x22{alt}\x22\x20class=\x22emojione','2.1.1','snake\x20turtle\x20tropical_fish\x20fish\x20blowfish\x20dolphin\x20whale\x20whale2\x20crocodile\x20leopard\x20tiger2\x20water_buffalo\x20','i.active','scroll-area','3.1.0','jquery','u7533\x20u55b6\x20u6708\x20eight_pointed_black_star\x20vs\x20accept\x20white_flower\x20ideograph_advantage\x20secret\x20congratulations\x20','nose\x20baby\x20boy\x20girl\x20man\x20woman\x20blond-haired_woman\x20blond-haired_man\x20older_man\x20older_woman\x20','elephant\x20rhino\x20gorilla\x20racehorse\x20pig2\x20goat\x20ram\x20sheep\x20dog2\x20poodle\x20cat2\x20rooster\x20turkey\x20dove\x20rabbit2\x20mouse2\x20rat\x20chipmunk\x20dragon\x20','night_with_stars\x20milky_way\x20bridge_at_night\x20foggy\x20flying_saucer','data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==','dollar\x20yen\x20euro\x20pound\x20moneybag\x20credit_card\x20gem\x20scales\x20wrench\x20hammer\x20hammer_pick\x20tools\x20pick\x20nut_and_bolt\x20gear\x20','emoji-placeholder','flag_mq\x20flag_mr\x20flag_mu\x20flag_yt\x20flag_mx\x20flag_fm\x20flag_md\x20flag_mc\x20flag_mn\x20flag_me\x20flag_ms\x20flag_ma\x20flag_mz\x20flag_mm\x20flag_na\x20','showPicker','family_mmbb\x20family_mmgg\x20family_woman_boy\x20family_woman_girl\x20family_woman_girl_boy\x20family_woman_boy_boy\x20','<br/>','copyright\x20registered\x20tm\x20end\x20back\x20on\x20top\x20soon\x20ballot_box_with_check\x20radio_button\x20white_circle\x20black_circle\x20','lollipop\x20chocolate_bar\x20popcorn\x20doughnut\x20cookie\x20beer\x20beers\x20wine_glass\x20cocktail\x20tropical_drink\x20champagne\x20','trigger','preventDefault','isEmptyObject','SEARCH','ms\x20ma\x20mz\x20mm\x20na\x20nr\x20np\x20nl\x20nc\x20nz\x20ni\x20ne\x20flag_ng\x20nu\x20kp\x20no\x20om\x20pk\x20pw\x20ps\x20pa\x20pg\x20py\x20pe\x20ph\x20pl\x20pt\x20pr\x20qa\x20ro\x20ru\x20rw\x20','search.keypress','!resize','motorboat\x20speedboat\x20ferry\x20cruise_ship\x20rocket\x20satellite_orbital\x20seat\x20anchor\x20construction\x20fuelpump\x20busstop\x20','man_playing_water_polo\x20woman_rowing_boat\x20man_rowing_boat\x20horse_racing\x20woman_biking\x20man_biking\x20woman_mountain_biking\x20man_mountain_biking\x20','tonesStyle','isLoading','united_nations\x20england\x20scotland\x20wales','@blur','ajax','picker.show','amd','skin','select','fearful\x20cold_sweat\x20cry\x20disappointed_relieved\x20drooling_face\x20sob\x20sweat\x20sleepy\x20sleeping\x20rolling_eyes\x20thinking\x20','npm/emojione@','arrow_lower_right\x20arrow_lower_left\x20arrow_upper_left\x20arrow_up_down\x20left_right_arrow\x20arrows_counterclockwise\x20','$1\x0a$2','name_badge\x20no_entry_sign\x20100\x20anger\x20hotsprings\x20no_pedestrians\x20do_not_litter\x20no_bicycles\x20non-potable_water\x20underage\x20','om_symbol\x20wheel_of_dharma\x20star_of_david\x20six_pointed_star\x20menorah\x20yin_yang\x20orthodox_cross\x20place_of_worship\x20ophiuchus\x20','data','flag_tc\x20flag_tv\x20flag_vi\x20flag_ug\x20flag_ua\x20flag_ae\x20flag_gb\x20flag_us\x20flag_uy\x20flag_uz\x20flag_vu\x20flag_va\x20flag_ve\x20flag_vn\x20flag_wf\x20','ballot_box_with_check\x20radio_button\x20white_circle\x20black_circle\x20red_circle\x20blue_circle\x20small_red_triangle\x20','_tone','createTextRange','shortnames','sake\x20tea\x20coffee\x20baby_bottle\x20fork_and_knife\x20fork_knife_plate','tone','black_nib\x20paintbrush\x20crayon\x20pencil\x20pencil2\x20mag\x20mag_right\x20lock_with_ink_pen\x20closed_lock_with_key\x20lock\x20unlock','userAgent','sparkles\x20zap\x20fire\x20boom\x20comet\x20sunny\x20white_sun_small_cloud\x20partly_sunny\x20white_sun_cloud\x20white_sun_rain_cloud\x20rainbow\x20cloud\x20','upside_down\x20relaxed\x20yum\x20relieved\x20heart_eyes\x20kissing_heart\x20kissing\x20kissing_smiling_eyes\x20','floatingPicker','tada\x20dolls\x20wind_chime\x20crossed_flags\x20izakaya_lantern\x20envelope\x20envelope_with_arrow\x20incoming_envelope\x20e-mail\x20','2.1.4','inline','filters','container','clipboardData','createElement','2.1.0','maxCount','jsEscapeMap','top','hasClass','head','.lazy-emoji','\x22])','shushing_face\x20face_with_hand_over_mouth\x20lying_face\x20grimacing\x20zipper_mouth\x20face_vomiting\x20nauseated_face\x20sneezing_face\x20mask\x20thermometer_face\x20','octopus\x20monkey_face\x20see_no_evil\x20hear_no_evil\x20speak_no_evil\x20monkey\x20chicken\x20penguin\x20bird\x20baby_chick\x20','bamboo\x20tanabata_tree\x20leaves\x20fallen_leaf\x20maple_leaf\x20mushroom\x20ear_of_rice\x20bouquet\x20tulip\x20rose\x20wilted_rose\x20sunflower\x20blossom\x20','@!resize\x20@keyup\x20@emojibtn.click','height','arrow_down_small\x20arrow_double_up\x20arrow_double_down\x20arrow_right\x20arrow_left\x20arrow_up\x20arrow_down\x20arrow_upper_right\x20','dog\x20cat\x20mouse\x20hamster\x20rabbit\x20fox\x20bear\x20panda_face\x20koala\x20tiger\x20lion_face\x20cow\x20pig\x20pig_nose\x20frog\x20monkey_face\x20see_no_evil\x20','head_bandage\x20sleeping\x20zzz\x20poop\x20smiling_imp\x20imp\x20japanese_ogre\x20japanese_goblin\x20skull\x20ghost\x20alien\x20robot\x20','<input/>','man_gesturing_no\x20woman_gesturing_no\x20man_gesturing_ok\x20woman_gesturing_ok\x20','selection','picker.mouseup','<div>$1</div>','setTimeout','\x22]:not([name=\x22recent\x22])','placement','woman_in_steamy_room\x20man_in_steamy_room\x20woman_climbing\x20man_climbing\x20woman_in_lotus_position\x20man_in_lotus_position\x20','{img}','7cKUnpw','pineapple\x20tomato\x20eggplant\x20hot_pepper\x20corn\x20sweet_potato\x20honey_pot\x20bread\x20cheese\x20poultry_leg\x20meat_on_bone\x20','man_with_gua_pi_mao\x20man_with_turban\x20older_man\x20grandma\x20baby\x20construction_worker\x20princess\x20angel\x20','postbox\x20postal_horn\x20scroll\x20page_with_curl\x20page_facing_up\x20bookmark_tabs\x20bar_chart\x20chart_with_upwards_trend\x20','clock3','find','412268LDKgKh','fixed','hamster','appendChild','man_teacher\x20woman_factory_worker\x20man_factory_worker\x20woman_technologist\x20man_technologist\x20woman_office_worker\x20','setStartAfter','function','flag_ec\x20flag_eg\x20flag_sv\x20flag_gq\x20flag_er\x20flag_ee\x20flag_et\x20flag_eu\x20flag_fk\x20flag_fo\x20flag_fj\x20flag_fi\x20flag_fr\x20flag_gf\x20flag_pf\x20','3074302WuIUxa','scooter\x20bike\x20motor_scooter\x20motorcycle\x20rotating_light\x20oncoming_police_car\x20oncoming_bus\x20oncoming_automobile\x20oncoming_taxi\x20','floppy_disk\x20cd\x20dvd\x20vhs\x20camera\x20camera_with_flash\x20video_camera\x20movie_camera\x20projector\x20film_frames\x20telephone_receiver\x20','html','imagePathPNG','sprite','soccer\x20basketball\x20football\x20baseball\x20tennis\x20volleyball\x20rugby_football\x208ball\x20golf\x20golfer\x20ping_pong\x20','document','emoji','focused','2.2.7','flashlight\x20candle\x20wastebasket\x20oil\x20money_with_wings\x20dollar\x20yen\x20euro\x20pound\x20moneybag\x20credit_card\x20gem\x20scales\x20','split','keypress','@change','</span>','rocket','arrow_right_hook\x20leftwards_arrow_with_hook\x20arrow_heading_up\x20arrow_heading_down\x20hash\x20asterisk\x20information_source\x20','3.0','TEXTAREA','saveEmojisAs','@focus','standalone','offset','man_cartwheeling\x20woman_bouncing_ball\x20man_bouncing_ball\x20','white_square_button\x20speaker\x20sound\x20loud_sound\x20mute\x20mega\x20loudspeaker\x20bell\x20no_bell\x20black_joker\x20mahjong\x20spades\x20','avocado\x20tomato\x20eggplant\x20cucumber\x20carrot\x20corn\x20hot_pepper\x20potato\x20sweet_potato\x20chestnut\x20peanuts\x20honey_pot\x20croissant\x20','chart_with_downwards_trend\x20notepad_spiral\x20calendar_spiral\x20calendar\x20date\x20card_index\x20card_box\x20ballot_box\x20','@search.focus','[data-filter=\x22','filters-position-','abc\x20abcd\x20capital_abcd\x20symbols\x20musical_note\x20notes\x20wavy_dash\x20curly_loop\x20heavy_check_mark\x20arrows_clockwise\x20','closed_umbrella\x20umbrella2\x20brain\x20billed_cap\x20scarf\x20gloves\x20coat\x20socks\x20','remove','indexOf','Animals\x20&\x20Nature','high_brightness\x20part_alternation_mark\x20warning\x20children_crossing\x20trident\x20fleur-de-lis\x20beginner\x20recycle\x20','woman_shrugging\x20man_shrugging\x20man_pouting\x20woman_pouting\x20','Symbols','getText','getData','attr','family_mwbb\x20family_mwgg\x20family_wwb\x20family_wwg\x20family_wwgb\x20family_wwbb\x20family_wwgg\x20family_mmb\x20family_mmg\x20family_mmgb\x20','3.0.1','<i\x20id=\x22','.emojibtn','/assets','unshift','emojione','flag_jm\x20flag_jp\x20crossed_flags\x20flag_je\x20flag_jo\x20flag_kz\x20flag_ke\x20flag_ki\x20flag_xk\x20flag_kw\x20flag_kg\x20flag_la\x20flag_lv\x20flag_lb\x20','insertAfter','defaultBase3','fj\x20fi\x20fr\x20pf\x20ga\x20gm\x20ge\x20de\x20gh\x20gi\x20gr\x20gl\x20gd\x20gu\x20gt\x20gn\x20gw\x20gy\x20ht\x20hn\x20hk\x20hu\x20is\x20in\x20flag_id\x20ir\x20iq\x20ie\x20il\x20it\x20ci\x20jm\x20jp\x20','wrapInner','clock530\x20clock630\x20clock730\x20clock830\x20clock930\x20clock1030\x20clock1130\x20clock1230\x20eye_in_speech_bubble','rowboat\x20swimmer\x20surfer\x20bath\x20basketball_player\x20lifter\x20bicyclist\x20mountain_bicyclist\x20horse_racing\x20levitate\x20','construction_site\x20foggy\x20tokyo_tower\x20factory\x20fountain\x20rice_scene\x20mountain\x20mountain_snow\x20mount_fuji\x20volcano\x20','horse_racing\x20woman_biking\x20man_biking\x20woman_mountain_biking\x20','clearTimeout','raised_hand\x20raised_back_of_hand\x20hand_splayed\x20vulcan\x20wave\x20call_me\x20muscle\x20middle_finger\x20writing_hand\x20selfie\x20','train\x20monorail\x20bullettrain_side\x20bullettrain_front\x20light_rail\x20mountain_railway\x20steam_locomotive\x20train2\x20','emojionearea-text','hidePicker','INPUT','man_shrugging\x20woman_pouting\x20man_pouting\x20woman_frowning\x20man_frowning\x20woman_getting_haircut\x20man_getting_haircut\x20','isReady','recentCategory','two_men_holding_hands\x20couple_with_heart\x20couple_ww\x20couple_mm\x20couplekiss\x20kiss_ww\x20kiss_mm\x20family\x20family_mwg\x20family_mwgb\x20','.skinnable','@!paste','createRange','-{uni}\x22\x20src=\x22','clapper\x20video_game\x20space_invader\x20dart\x20game_die\x20slot_machine\x20bowling','2.1.3','search-position-','eight\x20nine\x20keycap_ten\x201234\x20hash\x20asterisk\x20arrow_forward\x20pause_button\x20play_pause\x20stop_button\x20record_button\x20eject\x20','white_medium_small_square\x20black_medium_square\x20white_medium_square\x20black_large_square\x20white_large_square\x20speaker\x20','japan\x20rice_scene\x20park\x20sunrise\x20sunrise_over_mountains\x20stars\x20sparkler\x20fireworks\x20city_sunset\x20city_dusk\x20cityscape\x20','regUnicode','editor','tumbler_glass\x20cocktail\x20tropical_drink\x20champagne\x20spoon\x20fork_and_knife\x20fork_knife_plate\x20dumpling\x20fortune_cookie\x20','picker.keypress','dog\x20cat\x20mouse\x20hamster\x20rabbit\x20bear\x20panda_face\x20koala\x20tiger\x20lion_face\x20cow\x20pig\x20pig_nose\x20frog\x20','smoking\x20skull_crossbones\x20coffin\x20urn\x20amphora\x20crystal_ball\x20prayer_beads\x20barber\x20alembic\x20telescope\x20microscope\x20','filter.click','flag_eh\x20flag_ye\x20flag_zm\x20flag_zw\x20flag_ac\x20flag_ta\x20flag_bv\x20flag_hm\x20flag_sj\x20flag_um\x20flag_ea\x20flag_cp\x20flag_dg\x20flag_mf\x20','autocomplete','[name=\x22','womans_clothes\x20shirt\x20jeans\x20necktie\x20dress\x20bikini\x20kimono\x20high_heel\x20sandal\x20boot\x20mans_shoe\x20athletic_shoe\x20womans_hat\x20','keyup','blur','compression\x20minidisc\x20floppy_disk\x20cd\x20dvd\x20vhs\x20camera\x20camera_with_flash\x20video_camera\x20movie_camera\x20projector\x20','[data-tone=0]','lasyEmoji','kissing_closed_eyes\x20stuck_out_tongue_winking_eye\x20stuck_out_tongue_closed_eyes\x20stuck_out_tongue\x20','wrench\x20hammer\x20hammer_pick\x20tools\x20pick\x20nut_and_bolt\x20gear\x20chains\x20gun\x20bomb\x20knife\x20dagger\x20crossed_swords\x20shield\x20','2.1.2','1537816wPxHJb','base','appendTo','\x22/>','option','<i\x20class=\x22emojibtn\x22\x20role=\x22button\x22\x20data-name=\x22{name}\x22\x20title=\x22{friendlyName}\x22><img\x20class=\x22emojioneemoji\x20lazy-emoji\x22\x20data-src=\x22{img}\x22/></i>','flag_ad\x20flag_ao\x20flag_ai\x20flag_aq\x20flag_ag\x20flag_ar\x20flag_am\x20flag_aw\x20flag_au\x20flag_at\x20flag_az\x20flag_bs\x20flag_bh\x20flag_bd\x20flag_bb\x20','grinning\x20grimacing\x20grin\x20joy\x20smiley\x20smile\x20sweat_smile\x20laughing\x20innocent\x20wink\x20blush\x20slight_smile\x20',':not([name=\x22recent\x22])','disabled','textComplete','bank\x20hotel\x20convenience_store\x20school\x20love_hotel\x20wedding\x20classical_building\x20church\x20mosque\x20synagogue\x20kaaba\x20shinto_shrine\x20','{alt}','tones-panel','scroll','?v=2.2.7','Activity','wrapper','@keydown','unicode','textcomplete','no_mouth\x20neutral_face\x20expressionless\x20hushed\x20frowning\x20anguished\x20open_mouth\x20astonished\x20dizzy_face\x20exploding_head\x20flushed\x20scream\x20','{name}','fried_shrimp\x20egg\x20hamburger\x20fries\x20hotdog\x20pizza\x20spaghetti\x20taco\x20burrito\x20ramen\x20stew\x20fish_cake\x20sushi\x20bento\x20','&gt;','next','emojiVersion','grey_question\x20bangbang\x20interrobang\x20100\x20low_brightness\x20high_brightness\x20trident\x20fleur-de-lis\x20part_alternation_mark\x20','muscle\x20pray\x20point_up\x20point_up_2\x20point_down\x20point_left\x20point_right\x20middle_finger\x20hand_splayed\x20metal\x20','map','?v=2.1.1',':smiley:','.emojionearea-category-title','picker.hide','getSelection','407170ErLjrQ','picker.click','track_next\x20track_previous\x20fast_forward\x20rewind\x20arrow_double_up\x20arrow_double_down\x20arrow_backward\x20arrow_up_small\x20','-standalone\x20','man_police_officer\x20woman_construction_worker\x20man_construction_worker\x20','giraffe\x20zebra\x20hedgehog\x20sauropod\x20t_rex\x20cricket\x20dragon_face\x20feet\x20cactus\x20christmas_tree\x20evergreen_tree\x20deciduous_tree\x20palm_tree\x20seedling\x20herb\x20shamrock\x20four_leaf_clover\x20','convert','createStyleSheet','defaultBase','getRangeAt','keydown','mouseup','.emojibtn[data-name*=\x22','man_getting_face_massage\x20woman_getting_face_massage\x20man_in_business_suit_levitating\x20dancer\x20man_dancing\x20','emojiTemplateAlt','imageType','jQuery','hatching_chick\x20hatched_chick\x20wolf\x20boar\x20horse\x20unicorn\x20bee\x20bug\x20snail\x20beetle\x20ant\x20spider\x20scorpion\x20crab\x20','options','emojione/','Flags','<object[^>]*>.*?</object>|<span[^>]*>.*?</span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>|(','woman_surfing\x20man_surfing\x20woman_swimming\x20man_swimming\x20woman_playing_water_polo\x20','?v=2.1.3','button','arrow_down_small\x20arrow_right\x20arrow_left\x20arrow_up\x20arrow_down\x20arrow_upper_right\x20arrow_lower_right\x20arrow_lower_left\x20','application','@tone.click','/sprites/emojione.sprites.svg','&#x27;','emojionearea-disable','replace','articulated_lorry\x20tractor\x20motorcycle\x20bike\x20rotating_light\x20oncoming_police_car\x20oncoming_bus\x20','20px','</div>','no_good\x20ok_woman\x20raising_hand\x20person_with_pouting_face\x20person_frowning\x20haircut\x20massage\x20couple_with_heart\x20','art\x20circus_tent\x20microphone\x20headphones\x20musical_score\x20musical_keyboard\x20saxophone\x20trumpet\x20guitar\x20violin\x20','flag_rw\x20flag_ws\x20flag_sm\x20flag_st\x20flag_sa\x20flag_sn\x20flag_rs\x20flag_sc\x20flag_sl\x20flag_sg\x20flag_sx\x20flag_sk\x20flag_si\x20flag_gs\x20flag_sb\x20','Objects','customs\x20baggage_claim\x20left_luggage\x20wheelchair\x20no_smoking\x20wc\x20parking\x20potable_water\x20mens\x20womens\x20baby_symbol\x20','substr',':disabled','stayFocused','@emojibtn.click','hide','aquarius\x20pisces\x20id\x20atom\x20u7a7a\x20u5272\x20radioactive\x20biohazard\x20mobile_phone_off\x20vibration_mode\x20u6709\x20u7121\x20','woman_in_steamy_room\x20man_in_steamy_room\x20woman_climbing\x20','family_woman_girl_girl\x20family_man_boy\x20family_man_girl\x20family_man_girl_boy\x20family_man_boy_boy\x20family_man_girl_girl\x20','shortnameToUnicode','arrow_heading_down\x20twisted_rightwards_arrows\x20repeat\x20repeat_one\x20arrows_counterclockwise\x20arrows_clockwise\x20','pop','japan\x20camping\x20tent\x20park\x20motorway\x20railway_track\x20sunrise\x20sunrise_over_mountains\x20desert\x20beach\x20island\x20','3.1.1','defaults','anger_right\x20spades\x20clubs\x20hearts\x20diamonds\x20black_joker\x20flower_playing_cards\x20mahjong\x20clock1\x20clock2\x20clock3\x20clock4\x20clock5\x20','heart\x20yellow_heart\x20green_heart\x20blue_heart\x20purple_heart\x20broken_heart\x20heart_exclamation\x20two_hearts\x20','getTime','src','addClass','emojioneArea','man_mountain_biking\x20woman_juggling\x20man_juggling\x20','\x22></i>','1px','tones','family_mmgg\x20womans_clothes\x20shirt\x20jeans\x20necktie\x20dress\x20bikini\x20kimono\x20lipstick\x20kiss\x20footprints\x20high_heel\x20','isArray','56410fXNYLu','extend','love_letter\x20inbox_tray\x20outbox_tray\x20package\x20label\x20mailbox_closed\x20mailbox\x20mailbox_with_mail\x20mailbox_with_no_mail\x20','@!mousedown','append','contenteditable','call','woman_walking\x20man_walking\x20woman_running\x20man_running\x20adult\x20child\x20older_adult\x20','prop','emojiBtnTemplate','val','clock730\x20clock830\x20clock930\x20clock1030\x20clock1130\x20clock1230','clapper\x20microphone\x20headphones\x20musical_score\x20musical_keyboard\x20drum\x20saxophone\x20trumpet\x20guitar\x20violin\x20game_die\x20dart\x20bowling\x20','flag_se\x20flag_ch\x20flag_sy\x20flag_tw\x20flag_tj\x20flag_tz\x20flag_th\x20flag_tl\x20flag_tg\x20flag_tk\x20flag_to\x20flag_tt\x20flag_tn\x20flag_tr\x20flag_tm\x20','setText','je\x20jo\x20kz\x20ke\x20ki\x20xk\x20kw\x20kg\x20la\x20lv\x20lb\x20ls\x20lr\x20ly\x20li\x20lt\x20lu\x20mo\x20mk\x20mg\x20mw\x20my\x20mv\x20ml\x20mt\x20mh\x20mr\x20mu\x20mx\x20fm\x20md\x20mc\x20mn\x20me\x20','deciduous_tree\x20palm_tree\x20seedling\x20herb\x20shamrock\x20four_leaf_clover\x20bamboo\x20tanabata_tree\x20leaves\x20','emojiSize','Food\x20&\x20Drink','shortname','30VMfTJq','filter-','cv\x20kh\x20cm\x20ca\x20ky\x20cf\x20td\x20flag_cl\x20cn\x20co\x20km\x20cg\x20flag_cd\x20cr\x20hr\x20cu\x20cy\x20cz\x20dk\x20dj\x20dm\x20do\x20ec\x20eg\x20sv\x20gq\x20er\x20ee\x20et\x20fk\x20fo\x20','text/plain','fries\x20stuffed_flatbread\x20taco\x20burrito\x20salad\x20shallow_pan_of_food\x20spaghetti\x20ramen\x20stew\x20fish_cake\x20sushi\x20bento\x20curry\x20','stopwatch\x20timer\x20alarm_clock\x20clock\x20hourglass_flowing_sand\x20hourglass\x20satellite\x20battery\x20electric_plug\x20bulb\x20','first_quarter_moon\x20waxing_gibbous_moon\x20new_moon_with_face\x20full_moon_with_face\x20first_quarter_moon_with_face\x20','filter','full_moon_with_face\x20sun_with_face\x20first_quarter_moon_with_face\x20last_quarter_moon_with_face\x20crescent_moon\x20dizzy\x20star\x20star2\x20','ctrlKey','pizza','object','setFocus','https://cdn.jsdelivr.net/','startContainer','raised_back_of_hand\x20hand_splayed\x20vulcan\x20wave\x20call_me\x20muscle\x20middle_finger\x20writing_hand\x20selfie\x20nail_care\x20ear\x20','flag_so\x20flag_za\x20flag_kr\x20flag_ss\x20flag_es\x20flag_lk\x20flag_bl\x20flag_sh\x20flag_kn\x20flag_lc\x20flag_pm\x20flag_vc\x20flag_sd\x20flag_sr\x20flag_sz\x20','returnValue','useInternalCDN','\x20active','thunder_cloud_rain\x20cloud_lightning\x20zap\x20fire\x20boom\x20snowflake\x20cloud_snow\x20snowman2\x20snowman\x20wind_blowing_face\x20','hole\x20pill\x20syringe\x20thermometer\x20label\x20bookmark\x20toilet\x20shower\x20bathtub\x20key\x20key2\x20couch\x20sleeping_accommodation\x20','Recent','robot\x20jack_o_lantern\x20clown\x20smiley_cat\x20smile_cat\x20joy_cat\x20heart_eyes_cat\x20smirk_cat\x20kissing_cat\x20scream_cat\x20crying_cat_face\x20','body','.active','setStart','flag_ls\x20flag_lr\x20flag_ly\x20flag_li\x20flag_lt\x20flag_lu\x20flag_mo\x20flag_mk\x20flag_mg\x20flag_mw\x20flag_my\x20flag_mv\x20flag_ml\x20flag_mt\x20flag_mh\x20','?v=2.1.2','1.5.2','recent','pasteHTML','hourglass_flowing_sand\x20satellite\x20battery\x20electric_plug\x20bulb\x20flashlight\x20candle\x20wastebasket\x20oil\x20money_with_wings\x20','placeholder','couple_ww\x20couple_mm\x20couplekiss\x20kiss_ww\x20kiss_mm\x20family\x20family_mwg\x20family_mwgb\x20family_mwbb\x20family_mwgg\x20','@search.keypress','green_apple\x20apple\x20pear\x20tangerine\x20lemon\x20banana\x20watermelon\x20grapes\x20strawberry\x20melon\x20cherries\x20peach\x20pineapple\x20kiwi\x20','each','join','push','chart_with_downwards_trend\x20page_facing_up\x20date\x20calendar\x20calendar_spiral\x20card_index\x20card_box\x20ballot_box\x20','emojioneList','script','open_hands\x20raised_hands\x20palms_up_together\x20clap\x20pray\x20thumbsup\x20thumbsdown\x20punch\x20fist\x20left_facing_fist\x20right_facing_fist\x20','toLowerCase','3.0.3','addRange','black_nib\x20pencil\x20pencil2\x20crayon\x20paintbrush\x20mag\x20mag_right','emojione/assets/','show','content','heavy_plus_sign\x20heavy_minus_sign\x20heavy_division_sign\x20heavy_multiplication_x\x20heavy_dollar_sign\x20currency_exchange\x20','onKeydown','last_quarter_moon_with_face\x20sun_with_face\x20crescent_moon\x20star\x20star2\x20dizzy\x20sparkles\x20comet\x20sunny\x20','inbox_tray\x20outbox_tray\x20scroll\x20page_with_curl\x20bookmark_tabs\x20bar_chart\x20chart_with_upwards_trend\x20','svg','<link/>','hideSource','man_judge\x20mrs_claus\x20santa\x20princess\x20prince\x20bride_with_veil\x20man_in_tuxedo\x20angel\x20pregnant_woman\x20breast_feeding\x20woman_bowing\x20','rangeCount','deleteContents','static','onLoad','text','source','28urXoYD','cowboy\x20smirk\x20unamused\x20disappointed\x20pensive\x20worried\x20face_with_raised_eyebrow\x20face_with_monocle\x20confused\x20slight_frown\x20','_sh_timer','moveToElementText','imagePathSVG','head_bandage\x20smiling_imp\x20imp\x20japanese_ogre\x20japanese_goblin\x20poop\x20ghost\x20skull\x20skull_crossbones\x20alien\x20space_invader\x20','marginRight','do_not_litter\x20no_bicycles\x20non-potable_water\x20underage\x20no_mobile_phones\x20exclamation\x20grey_exclamation\x20question\x20','uc_base','flag_pw\x20flag_ps\x20flag_pa\x20flag_pg\x20flag_py\x20flag_pe\x20flag_ph\x20flag_pn\x20flag_pl\x20flag_pt\x20flag_pr\x20flag_qa\x20flag_re\x20flag_ro\x20flag_ru\x20','splice','file_cabinet\x20clipboard\x20notepad_spiral\x20file_folder\x20open_file_folder\x20dividers\x20newspaper2\x20newspaper\x20notebook\x20','.focused','airplane_departure\x20airplane_arriving\x20rocket\x20satellite_orbital\x20seat\x20canoe\x20sailboat\x20motorboat\x20speedboat\x20cruise_ship\x20','button.click','ferry\x20ship\x20anchor\x20construction\x20fuelpump\x20busstop\x20vertical_traffic_light\x20traffic_light\x20map\x20moyai\x20statue_of_liberty\x20','toUpperCase','bullettrain_front\x20light_rail\x20steam_locomotive\x20train2\x20metro\x20tram\x20station\x20helicopter\x20airplane_small\x20airplane\x20','tones-','attributes','disable','watch\x20iphone\x20calling\x20computer\x20keyboard\x20desktop\x20printer\x20mouse_three_button\x20trackball\x20joystick\x20','source.change','button-open','startContanier','musical_note\x20notes\x20heavy_plus_sign\x20heavy_minus_sign\x20heavy_division_sign\x20heavy_multiplication_x\x20heavy_dollar_sign\x20','innerHTML','Smileys\x20&\x20People','btn-tone\x20btn-tone-','vulcan\x20no_good\x20ok_woman\x20bow\x20raising_hand\x20raised_hands\x20person_frowning\x20person_with_pouting_face\x20pray\x20rowboat\x20','3.1.2','.emojionearea-filter','no_mobile_phones\x20no_smoking\x20exclamation\x20grey_exclamation\x20question\x20grey_question\x20bangbang\x20interrobang\x20low_brightness\x20','charAt','off','revolving_hearts\x20heartbeat\x20heartpulse\x20sparkling_heart\x20cupid\x20gift_heart\x20heart_decoration\x20peace\x20cross\x20star_and_crescent\x20','woman_fairy\x20man_fairy\x20woman_vampire\x20man_vampire\x20mermaid\x20merman\x20woman_elf\x20man_elf\x20','focus','title','clock6\x20clock7\x20clock8\x20clock9\x20clock10\x20clock11\x20clock12\x20clock130\x20clock230\x20clock330\x20clock430\x20clock530\x20clock630\x20','picker.keydown','man_golfing\x20woman_surfing\x20man_surfing\x20woman_swimming\x20man_swimming\x20woman_playing_water_polo\x20','@source.change','<br>','Control','bulb','<i\x20class=\x22emojibtn\x22\x20role=\x22button\x22\x20data-name=\x22{name}\x22\x20title=\x22{friendlyName}\x22><i\x20class=\x22emojione-{uni}\x22></i></i>','2.0.0','@button.click','mousedown','events','search','firstChild','small_red_triangle_down\x20small_orange_diamond\x20small_blue_diamond\x20large_orange_diamond\x20large_blue_diamond\x20','third_place\x20trophy\x20rosette\x20reminder_ribbon\x20ticket\x20tickets\x20circus_tent\x20woman_juggling\x20man_juggling\x20performing_arts\x20art\x20','scrollArea','house_abandoned\x20office\x20department_store\x20post_office\x20european_post_office\x20hospital\x20bank\x20hotel\x20','white_check_mark\x20diamond_shape_with_a_dot_inside\x20cyclone\x20loop\x20globe_with_meridians\x20m\x20atm\x20sa\x20passport_control\x20','-999px','?v=2.1.4','man_artist\x20woman_firefighter\x20man_firefighter\x20woman_pilot\x20man_pilot\x20woman_astronaut\x20man_astronaut\x20woman_judge\x20','warning\x20children_crossing\x20beginner\x20recycle\x20u6307\x20chart\x20sparkle\x20eight_spoked_asterisk\x20negative_squared_cross_mark\x20','skinnable','paperclip\x20paperclips\x20scissors\x20triangular_ruler\x20straight_ruler\x20pushpin\x20round_pushpin\x20triangular_flag_on_post\x20','u5408\x20u6e80\x20u7981\x20a\x20b\x20ab\x20cl\x20o2\x20sos\x20no_entry\x20name_badge\x20no_entry_sign\x20x\x20o\x20anger\x20hotsprings\x20no_pedestrians\x20','undefined','stop','fountain\x20tokyo_tower\x20european_castle\x20japanese_castle\x20stadium\x20ferris_wheel\x20roller_coaster\x20carousel_horse\x20beach_umbrella\x20','<div>','bearded_person\x20woman_with_headscarf\x20woman_mage\x20man_mage\x20','2289909hZQHoe','key2\x20door\x20couch\x20bed\x20sleeping_accommodation\x20frame_photo\x20shopping_bags\x20shopping_cart\x20gift\x20balloon\x20flags\x20ribbon\x20','alembic\x20telescope\x20microscope\x20hole\x20pill\x20syringe\x20thermometer\x20toilet\x20potable_water\x20shower\x20bathtub\x20bath\x20bellhop\x20key\x20','https://cdnjs.cloudflare.com/ajax/libs/emojione/','emojiTemplate','man_with_chinese_cap\x20woman_wearing_turban\x20man_wearing_turban\x20woman_police_officer\x20','shift','man_bowing\x20woman_tipping_hand\x20man_tipping_hand\x20woman_gesturing_no\x20man_gesturing_no\x20woman_gesturing_ok\x20','3.1','mushroom\x20chestnut\x20jack_o_lantern\x20shell\x20spider_web\x20earth_americas\x20earth_africa\x20earth_asia\x20full_moon\x20','autocompleteTones','search-panel','flag_white\x20flag_black\x20closed_lock_with_key\x20lock\x20unlock\x20lock_with_ink_pen\x20pen_ballpoint\x20pen_fountain\x20','setEnd','setItem','[data-tone=','searchPosition','picker','[data-filter=\x22recent\x22]','<div/>','bottom','cherry_blossom\x20hibiscus\x20earth_americas\x20earth_africa\x20earth_asia\x20full_moon\x20waning_gibbous_moon\x20last_quarter_moon\x20','man_gesturing_ok\x20woman_raising_hand\x20man_raising_hand\x20woman_facepalming\x20man_facepalming\x20woman_shrugging\x20','waning_gibbous_moon\x20last_quarter_moon\x20waning_crescent_moon\x20new_moon\x20waxing_crescent_moon\x20','collapse','red_car\x20taxi\x20blue_car\x20bus\x20trolleybus\x20race_car\x20police_car\x20ambulance\x20fire_engine\x20minibus\x20truck\x20','recentEmojis','removeAllRanges','36puJnsN','sandal\x20boot\x20mans_shoe\x20athletic_shoe\x20womans_hat\x20tophat\x20helmet_with_cross\x20mortar_board\x20crown\x20school_satchel\x20','cloneRange','recent_emojis','film_frames\x20telephone_receiver\x20telephone\x20pager\x20fax\x20tv\x20radio\x20microphone2\x20level_slider\x20control_knobs\x20','removeItem','man_playing_water_polo\x20woman_rowing_boat\x20man_rowing_boat\x20','tophat\x20mortar_board\x20crown\x20helmet_with_cross\x20school_satchel\x20pouch\x20purse\x20handbag\x20briefcase\x20eyeglasses\x20dark_sunglasses\x20','startOffset','!mousedown','money_mouth\x20nerd\x20sunglasses\x20hugging\x20smirk\x20no_mouth\x20neutral_face\x20expressionless\x20unamused\x20rolling_eyes\x20','notebook_with_decorative_cover\x20ledger\x20closed_book\x20green_book\x20blue_book\x20orange_book\x20books\x20book\x20bookmark\x20link\x20','man_cartwheeling\x20woman_bouncing_ball\x20man_bouncing_ball\x20woman_playing_handball\x20man_playing_handball\x20woman_golfing\x20','endContainer','ac\x20af\x20al\x20dz\x20ad\x20ao\x20ai\x20ag\x20ar\x20am\x20aw\x20au\x20at\x20az\x20bs\x20bh\x20bd\x20bb\x20by\x20be\x20bz\x20bj\x20bm\x20bt\x20bo\x20ba\x20bw\x20br\x20bn\x20bg\x20bf\x20bi\x20','baggage_claim\x20left_luggage\x20mens\x20womens\x20baby_symbol\x20restroom\x20put_litter_in_its_place\x20cinema\x20signal_strength\x20koko\x20','black_medium_square\x20white_medium_square\x20black_medium_small_square\x20white_medium_small_square\x20black_square_button\x20','@filter.click','&lt;','slice','jsecapeMap','wave\x20ok_hand\x20thumbsup\x20thumbsdown\x20clap\x20open_hands\x20boy\x20girl\x20man\x20woman\x20cop\x20bride_with_veil\x20person_with_blond_hair\x20','rice_ball\x20rice\x20rice_cracker\x20oden\x20dango\x20shaved_ice\x20ice_cream\x20icecream\x20cake\x20birthday\x20custard\x20lollipop\x20candy\x20','dog2\x20poodle\x20cat2\x20rabbit2\x20chipmunk\x20feet\x20dragon\x20dragon_face\x20cactus\x20christmas_tree\x20evergreen_tree\x20','white_check_mark\x20u6307\x20chart\x20sparkle\x20eight_spoked_asterisk\x20negative_squared_cross_mark\x20globe_with_meridians\x20','stuck_out_tongue_winking_eye\x20stuck_out_tongue_closed_eyes\x20stuck_out_tongue\x20money_mouth\x20hugging\x20nerd\x20sunglasses\x20','bread\x20french_bread\x20cheese\x20egg\x20cooking\x20bacon\x20pancakes\x20fried_shrimp\x20poultry_leg\x20meat_on_bone\x20pizza\x20hotdog\x20hamburger\x20',':not(.skinnable)','right_facing_fist\x20fingers_crossed\x20v\x20metal\x20love_you_gesture\x20ok_hand\x20point_left\x20point_right\x20point_up_2\x20point_down\x20point_up\x20','type','running_shirt_with_sash\x20medal\x20military_medal\x20first_place\x20second_place\x20','man_with_chinese_cap\x20woman_wearing_turban\x20man_wearing_turban\x20woman_police_officer\x20police_officer\x20','prependTo','place_of_worship\x20ophiuchus\x20aries\x20taurus\x20gemini\x20cancer\x20leo\x20virgo\x20libra\x20scorpius\x20sagittarius\x20capricorn\x20','speaking_head\x20baby\x20boy\x20girl\x20man\x20woman\x20person_with_blond_hair\x20older_man\x20older_woman\x20man_with_gua_pi_mao\x20','isFunction','rainbow\x20homes\x20european_castle\x20japanese_castle\x20stadium\x20statue_of_liberty\x20house\x20house_with_garden\x20','Travel\x20&\x20Places','click','hidePickerOnBlur','buttonTitle','recentFilter','small_red_triangle\x20black_small_square\x20white_small_square\x20black_large_square\x20white_large_square\x20small_red_triangle_down\x20','flag_gb','category','search.blur','3503004ZcqpuY','biohazard\x20mobile_phone_off\x20vibration_mode\x20u6709\x20u7121\x20u7533\x20u55b6\x20u6708\x20eight_pointed_black_star\x20vs\x20white_flower\x20','prototype','cry\x20disappointed_relieved\x20sleepy\x20sweat\x20sob\x20dizzy_face\x20astonished\x20zipper_mouth\x20mask\x20thermometer_face\x20','cricket_game\x20golf\x20bow_and_arrow\x20fishing_pole_and_fish\x20boxing_glove\x20martial_arts_uniform\x20ice_skate\x20ski\x20skier\x20snowboarder\x20','tropical_fish\x20fish\x20blowfish\x20dolphin\x20shark\x20whale\x20whale2\x20crocodile\x20leopard\x20tiger2\x20water_buffalo\x20ox\x20cow2\x20deer\x20dromedary_camel\x20camel\x20'];a6_0x213f=function(){return _0x2396e0;};return a6_0x213f();}function a6_0x52cc(_0x582dc5,_0x2e94a6){var _0x213f7c=a6_0x213f();return a6_0x52cc=function(_0x52cce0,_0x1daaec){_0x52cce0=_0x52cce0-0x1f2;var _0x378af8=_0x213f7c[_0x52cce0];return _0x378af8;},a6_0x52cc(_0x582dc5,_0x2e94a6);}(function(_0x4dfcea,_0x52e6a8){var _0x410fde=a6_0x52cc,_0x18533a=_0x4dfcea();while(!![]){try{var _0x429c3b=parseInt(_0x410fde(0x2c3))/0x1*(parseInt(_0x410fde(0x318))/0x2)+parseInt(_0x410fde(0x35e))/0x3+parseInt(_0x410fde(0x1f5))/0x4*(parseInt(_0x410fde(0x2d7))/0x5)+parseInt(_0x410fde(0x3a8))/0x6*(-parseInt(_0x410fde(0x467))/0x7)+parseInt(_0x410fde(0x25e))/0x8*(-parseInt(_0x410fde(0x37a))/0x9)+-parseInt(_0x410fde(0x281))/0xa+-parseInt(_0x410fde(0x1fd))/0xb;if(_0x429c3b===_0x52e6a8)break;else _0x18533a['push'](_0x18533a['shift']());}catch(_0x2dbbf2){_0x18533a['push'](_0x18533a['shift']());}}}(a6_0x213f,0x79b48),window=typeof global!=='undefined'?global:typeof self!==a6_0xc4de0(0x359)?self:typeof window!==a6_0xc4de0(0x359)?window:{},document=window[a6_0xc4de0(0x204)]||{});;(function(_0x230ba1,_0x2bbc31){var _0x373af8=a6_0xc4de0;if(typeof require===_0x373af8(0x1fb)&&typeof exports==='object'&&typeof module===_0x373af8(0x2e2))_0x230ba1(require(_0x373af8(0x413)));else typeof define===_0x373af8(0x1fb)&&define[_0x373af8(0x430)]?define([_0x373af8(0x413)],_0x230ba1):_0x230ba1(_0x2bbc31[_0x373af8(0x291)]);}(function(_0x22eefd){'use strict';var _0x121165=a6_0xc4de0;var _0x457ec8=0x0,_0xe058f1={},_0x3fa092={},_0x16c95c=window[_0x121165(0x22d)],_0x413107=[];function _0x9351d9(_0x2d25dd){var _0x18d35e=_0x121165;_0x16c95c?_0x2d25dd():_0x413107[_0x18d35e(0x2fe)](_0x2d25dd);};var _0x430fad=_0x121165(0x418),_0x4c220c=[][_0x121165(0x38d)],_0x490d79='emojionearea',_0x497a36=0x0,_0x1933ce=_0x121165(0x3b0);function _0x2be12b(_0x3b3c31,_0x3fc604,_0x45cbcd){var _0x482de6=_0x121165,_0x11c182=!![],_0x30ac2f=0x1;if(_0x3fc604){_0x3fc604=_0x3fc604[_0x482de6(0x303)]();do{var _0x475845=_0x30ac2f==0x1?'@'+_0x3fc604:_0x3fc604;_0xe058f1[_0x3b3c31['id']][_0x475845]&&_0xe058f1[_0x3b3c31['id']][_0x475845][_0x482de6(0x403)]&&_0x22eefd[_0x482de6(0x2fc)](_0xe058f1[_0x3b3c31['id']][_0x475845],function(_0x276d59,_0x268871){return _0x11c182=_0x268871['apply'](_0x3b3c31,_0x45cbcd||[])!==![];});}while(_0x11c182&&!!_0x30ac2f--);}return _0x11c182;}function _0x27584d(_0x4bf414,_0x2f028e,_0x2e7092,_0x14e091){var _0x556c5d=_0x121165;_0x14e091=_0x14e091||function(_0x306b86,_0x627ad5){var _0x36b180=a6_0x52cc;return _0x22eefd(_0x627ad5[_0x36b180(0x3d1)]);},_0x22eefd[_0x556c5d(0x2fc)](_0x2e7092,function(_0x42b10f,_0x181358){var _0x33f74a=_0x556c5d;_0x42b10f=_0x22eefd[_0x33f74a(0x2c2)](_0x2e7092)?_0x181358:_0x42b10f,(_0x3fa092[_0x4bf414['id']][_0x181358]||(_0x3fa092[_0x4bf414['id']][_0x181358]=[]))[_0x33f74a(0x2fe)]([_0x2f028e,_0x42b10f,_0x14e091]);});}function _0xcb8585(_0x39423a,_0xded376,_0x192648){var _0x47404c=_0x121165,_0x959eba=_0x16c95c[_0x47404c(0x290)],_0x34ba13;_0x959eba==_0x47404c(0x30e)?_0x34ba13=_0x16c95c[_0x47404c(0x31c)]:_0x34ba13=_0x16c95c[_0x47404c(0x201)];var _0x30bcd2='';_0x192648&&(_0x30bcd2=_0x192648[_0x47404c(0x2a9)](0x1,_0x192648[_0x47404c(0x403)]-0x2)[_0x47404c(0x2a0)](/_/g,'\x20')[_0x47404c(0x2a0)](/\w\S*/g,function(_0x26d137){var _0x19f27c=_0x47404c;return _0x26d137[_0x19f27c(0x339)](0x0)[_0x19f27c(0x328)]()+_0x26d137['substr'](0x1)[_0x19f27c(0x303)]();}));var _0x55af25='';return _0xded376[_0x47404c(0x320)]&&_0x497a36>0x4?(_0x55af25=_0xded376[_0x47404c(0x320)],_0xded376=_0xded376['uc_output'][_0x47404c(0x328)]()):_0x55af25=_0xded376,_0x39423a=_0x39423a[_0x47404c(0x2a0)](_0x47404c(0x274),_0x192648||'')[_0x47404c(0x2a0)]('{friendlyName}',_0x30bcd2)[_0x47404c(0x2a0)](_0x47404c(0x466),_0x34ba13+(_0x497a36<0x2?_0x55af25[_0x47404c(0x328)]():_0x55af25)+'.'+_0x959eba)[_0x47404c(0x2a0)]('{uni}',_0xded376),_0x192648?_0x39423a=_0x39423a[_0x47404c(0x2a0)]('{alt}',_0x16c95c[_0x47404c(0x2b1)](_0x192648)):_0x39423a=_0x39423a[_0x47404c(0x2a0)](_0x47404c(0x26a),_0x16c95c[_0x47404c(0x287)](_0xded376)),_0x39423a;};function _0xf1e694(_0x5d6866,_0xf33493,_0x422cb3){var _0x4a5369=_0x121165;return _0x5d6866[_0x4a5369(0x2a0)](/:?\+?[\w_\-]+:?/g,function(_0x38e73a){var _0x570030=_0x4a5369;_0x38e73a=':'+_0x38e73a['replace'](/:$/,'')[_0x570030(0x2a0)](/^:/,'')+':';var _0x47b144=_0x16c95c['emojioneList'][_0x38e73a];if(_0x47b144){if(_0x497a36>0x4)return _0xcb8585(_0xf33493,_0x47b144,_0x38e73a);else{if(_0x497a36>0x3)_0x47b144=_0x47b144[_0x570030(0x271)];return _0xcb8585(_0xf33493,_0x47b144[_0x47b144['length']-0x1],_0x38e73a);}}return _0x422cb3?'':_0x38e73a;});};function _0x48624b(_0x287a09){var _0x20e60a=_0x121165,_0x2bf232,_0x162c6a;if(window[_0x20e60a(0x280)]){_0x2bf232=window['getSelection']();if(_0x2bf232[_0x20e60a(0x28a)]&&_0x2bf232[_0x20e60a(0x312)]){_0x162c6a=_0x2bf232[_0x20e60a(0x28a)](0x0),_0x162c6a[_0x20e60a(0x313)]();var _0x1c468c=document[_0x20e60a(0x44c)]('div');_0x1c468c[_0x20e60a(0x332)]=_0x287a09;var _0xdc72d6=document['createDocumentFragment'](),_0x357340,_0x914520;while(_0x357340=_0x1c468c[_0x20e60a(0x34c)]){_0x914520=_0xdc72d6[_0x20e60a(0x1f8)](_0x357340);}_0x162c6a[_0x20e60a(0x3dc)](_0xdc72d6),_0x914520&&(_0x162c6a=_0x162c6a[_0x20e60a(0x37c)](),_0x162c6a[_0x20e60a(0x1fa)](_0x914520),_0x162c6a[_0x20e60a(0x376)](!![]),_0x2bf232[_0x20e60a(0x379)](),_0x2bf232[_0x20e60a(0x305)](_0x162c6a));}}else document['selection']&&document['selection'][_0x20e60a(0x397)]!=_0x20e60a(0x344)&&document['selection'][_0x20e60a(0x243)]()[_0x20e60a(0x2f6)](_0x287a09);}function _0x3512d3(){var _0x24bfe4=_0x121165;return window['emojioneVersion']||_0x24bfe4(0x336);};function _0x5a0d59(_0x2ddf47){return typeof _0x2ddf47==='object';};function _0x5967cb(_0x170985){var _0x15cedd=_0x121165,_0x41c742;if(_0x170985[_0x15cedd(0x400)]){_0x41c742=_0x170985[_0x15cedd(0x400)];if(!_0x5a0d59(_0x170985[_0x15cedd(0x44f)]))return'1.5.2';if(_0x41c742==='?v=1.2.4')return _0x15cedd(0x347);if(_0x41c742==='?v=2.0.1')return _0x15cedd(0x44d);if(_0x41c742===_0x15cedd(0x27c))return _0x15cedd(0x40e);if(_0x41c742===_0x15cedd(0x2f3))return _0x15cedd(0x25d);if(_0x41c742===_0x15cedd(0x298))return _0x15cedd(0x246);if(_0x41c742===_0x15cedd(0x353))return _0x15cedd(0x447);if(_0x41c742===_0x15cedd(0x26d))return'2.2.7';return _0x15cedd(0x207);}else return _0x170985[_0x15cedd(0x278)];};function _0x248512(_0x28e796){var _0x263f49=_0x121165;switch(_0x28e796){case _0x263f49(0x2f4):return 0x0;case _0x263f49(0x347):return 0x1;case _0x263f49(0x44d):case'2.1.1':return 0x2;case _0x263f49(0x25d):return 0x3;case _0x263f49(0x246):case _0x263f49(0x447):case _0x263f49(0x207):return 0x4;case _0x263f49(0x228):case _0x263f49(0x3f0):case _0x263f49(0x304):case _0x263f49(0x20f):return 0x5;case _0x263f49(0x412):case _0x263f49(0x2b5):case _0x263f49(0x336):case _0x263f49(0x366):default:return 0x6;}};function _0xa168c4(){var _0x39c018=_0x121165;if(_0x22eefd['fn'][_0x39c018(0x2bc)]&&_0x22eefd['fn'][_0x39c018(0x2bc)][_0x39c018(0x2b6)])return _0x22eefd['fn'][_0x39c018(0x2bc)]['defaults'];var _0x1d37e7={'attributes':{'dir':'ltr','spellcheck':![],'autocomplete':'off','autocorrect':'off','autocapitalize':_0x39c018(0x33a)},'search':!![],'placeholder':null,'emojiPlaceholder':_0x39c018(0x27d),'searchPlaceholder':_0x39c018(0x424),'container':null,'hideSource':!![],'shortnames':!![],'sprite':!![],'pickerPosition':'top','filtersPosition':'top','searchPosition':_0x39c018(0x450),'hidePickerOnBlur':!![],'buttonTitle':_0x39c018(0x3f2),'tones':!![],'tonesStyle':'bullet','inline':null,'saveEmojisAs':'unicode','shortcuts':!![],'autocomplete':!![],'autocompleteTones':![],'standalone':![],'useInternalCDN':!![],'imageType':_0x39c018(0x402),'recentEmojis':!![],'textcomplete':{'maxCount':0xf,'placement':null}},_0x4a35dd=!_0x16c95c?_0x248512(_0x3512d3()):_0x248512(_0x5967cb(_0x16c95c));_0x4a35dd>0x4?_0x1d37e7[_0x39c018(0x449)]={'tones':{'title':'Diversity','emoji':_0x39c018(0x302)+'fingers_crossed\x20v\x20metal\x20love_you_gesture\x20ok_hand\x20point_left\x20point_right\x20point_up_2\x20point_down\x20point_up\x20raised_hand\x20'+_0x39c018(0x2e6)+_0x39c018(0x415)+_0x39c018(0x363)+_0x39c018(0x285)+'woman_guard\x20man_guard\x20woman_detective\x20man_detective\x20woman_health_worker\x20man_health_worker\x20'+'woman_farmer\x20man_farmer\x20woman_cook\x20man_cook\x20woman_student\x20man_student\x20woman_singer\x20man_singer\x20woman_teacher\x20'+_0x39c018(0x1f9)+_0x39c018(0x3e6)+'woman_firefighter\x20man_firefighter\x20woman_pilot\x20man_pilot\x20woman_astronaut\x20man_astronaut\x20woman_judge\x20'+_0x39c018(0x3f5)+_0x39c018(0x3dd)+_0x39c018(0x45e)+'man_raising_hand\x20woman_raising_hand\x20woman_facepalming\x20man_facepalming\x20'+_0x39c018(0x222)+'man_frowning\x20woman_frowning\x20man_getting_haircut\x20woman_getting_haircut\x20'+_0x39c018(0x28e)+_0x39c018(0x2ca)+_0x39c018(0x35d)+_0x39c018(0x33c)+_0x39c018(0x3c0)+_0x39c018(0x215)+_0x39c018(0x405)+_0x39c018(0x297)+_0x39c018(0x380)+_0x39c018(0x236)+_0x39c018(0x2bd)+_0x39c018(0x2af)+_0x39c018(0x3fb)},'recent':{'icon':_0x39c018(0x1f3),'title':_0x39c018(0x2ed),'emoji':''},'smileys_people':{'icon':_0x39c018(0x3e2),'title':'Smileys\x20&\x20People','emoji':_0x39c018(0x3fe)+'wink\x20relieved\x20crazy_face\x20star_struck\x20heart_eyes\x20kissing_heart\x20kissing\x20kissing_smiling_eyes\x20kissing_closed_eyes\x20yum\x20'+_0x39c018(0x393)+_0x39c018(0x319)+'frowning2\x20persevere\x20confounded\x20tired_face\x20weary\x20triumph\x20angry\x20rage\x20face_with_symbols_over_mouth\x20'+_0x39c018(0x273)+_0x39c018(0x433)+_0x39c018(0x455)+_0x39c018(0x31d)+_0x39c018(0x2ee)+_0x39c018(0x3bc)+_0x39c018(0x396)+_0x39c018(0x238)+_0x39c018(0x3d4)+_0x39c018(0x401)+_0x39c018(0x399)+'woman_construction_worker\x20construction_worker\x20woman_guard\x20guard\x20woman_detective\x20detective\x20woman_health_worker\x20'+'man_health_worker\x20woman_farmer\x20man_farmer\x20woman_cook\x20man_cook\x20woman_student\x20man_student\x20woman_singer\x20man_singer\x20'+'woman_teacher\x20man_teacher\x20woman_factory_worker\x20man_factory_worker\x20woman_technologist\x20man_technologist\x20'+_0x39c018(0x3da)+_0x39c018(0x354)+_0x39c018(0x311)+_0x39c018(0x365)+_0x39c018(0x374)+_0x39c018(0x23d)+'woman_getting_face_massage\x20man_getting_face_massage\x20man_in_business_suit_levitating\x20dancer\x20man_dancing\x20women_with_bunny_ears_partying\x20'+_0x39c018(0x3f8)+_0x39c018(0x240)+_0x39c018(0x227)+_0x39c018(0x41d)+_0x39c018(0x2b0)+'bearded_person\x20woman_with_headscarf\x20woman_mage\x20man_mage\x20woman_fairy\x20man_fairy\x20woman_vampire\x20man_vampire\x20'+'mermaid\x20merman\x20woman_elf\x20man_elf\x20woman_genie\x20man_genie\x20woman_zombie\x20man_zombie\x20'+_0x39c018(0x255)+_0x39c018(0x381)+_0x39c018(0x21d)},'animals_nature':{'icon':_0x39c018(0x1f7),'title':_0x39c018(0x220),'emoji':_0x39c018(0x45b)+'hear_no_evil\x20speak_no_evil\x20monkey\x20chicken\x20penguin\x20bird\x20baby_chick\x20hatching_chick\x20hatched_chick\x20duck\x20eagle\x20owl\x20bat\x20wolf\x20boar\x20'+'horse\x20unicorn\x20bee\x20bug\x20butterfly\x20snail\x20shell\x20beetle\x20ant\x20spider\x20spider_web\x20turtle\x20snake\x20lizard\x20scorpion\x20crab\x20squid\x20octopus\x20shrimp\x20'+_0x39c018(0x3ad)+_0x39c018(0x416)+_0x39c018(0x286)+_0x39c018(0x457)+_0x39c018(0x373)+'waning_crescent_moon\x20new_moon\x20waxing_crescent_moon\x20first_quarter_moon\x20waxing_gibbous_moon\x20new_moon_with_face\x20'+_0x39c018(0x2df)+_0x39c018(0x443)+_0x39c018(0x3ba)+'fog\x20ocean\x20droplet\x20sweat_drops\x20umbrella\x20'},'food_drink':{'icon':_0x39c018(0x2e1),'title':_0x39c018(0x2d5),'emoji':_0x39c018(0x2fb)+_0x39c018(0x217)+_0x39c018(0x394)+_0x39c018(0x2db)+_0x39c018(0x390)+'chocolate_bar\x20popcorn\x20doughnut\x20cookie\x20milk\x20baby_bottle\x20coffee\x20tea\x20sake\x20beer\x20beers\x20champagne_glass\x20wine_glass\x20'+_0x39c018(0x24d)+_0x39c018(0x3bb)},'activity':{'icon':'basketball','title':'Activity','emoji':'soccer\x20basketball\x20football\x20baseball\x20tennis\x20volleyball\x20rugby_football\x208ball\x20ping_pong\x20badminton\x20goal\x20hockey\x20field_hockey\x20'+_0x39c018(0x3ac)+_0x39c018(0x3d3)+_0x39c018(0x386)+_0x39c018(0x341)+_0x39c018(0x429)+_0x39c018(0x465)+_0x39c018(0x398)+_0x39c018(0x34e)+_0x39c018(0x2cf)+'video_game\x20slot_machine\x20sled\x20curling_stone\x20'},'travel_places':{'icon':_0x39c018(0x20d),'title':_0x39c018(0x39f),'emoji':_0x39c018(0x3e4)+_0x39c018(0x1fe)+'aerial_tramway\x20mountain_cableway\x20suspension_railway\x20railway_car\x20train\x20mountain_railway\x20monorail\x20bullettrain_side\x20'+_0x39c018(0x329)+_0x39c018(0x325)+_0x39c018(0x327)+_0x39c018(0x35b)+_0x39c018(0x3d0)+_0x39c018(0x3c2)+_0x39c018(0x269)+_0x39c018(0x24a)+_0x39c018(0x417)},'objects':{'icon':_0x39c018(0x345),'title':_0x39c018(0x2a7),'emoji':'watch\x20iphone\x20calling\x20computer\x20keyboard\x20desktop\x20printer\x20mouse_three_button\x20trackball\x20joystick\x20compression\x20minidisc\x20'+_0x39c018(0x1ff)+'telephone\x20pager\x20fax\x20tv\x20radio\x20microphone2\x20level_slider\x20control_knobs\x20stopwatch\x20timer\x20alarm_clock\x20clock\x20hourglass\x20'+_0x39c018(0x2f7)+_0x39c018(0x419)+'chains\x20gun\x20bomb\x20knife\x20dagger\x20crossed_swords\x20shield\x20smoking\x20coffin\x20urn\x20amphora\x20crystal_ball\x20prayer_beads\x20barber\x20'+_0x39c018(0x360)+_0x39c018(0x35f)+'confetti_ball\x20tada\x20dolls\x20izakaya_lantern\x20wind_chime\x20envelope\x20envelope_with_arrow\x20incoming_envelope\x20e-mail\x20'+_0x39c018(0x2c5)+_0x39c018(0x1f2)+_0x39c018(0x218)+'file_cabinet\x20clipboard\x20file_folder\x20open_file_folder\x20dividers\x20newspaper2\x20newspaper\x20notebook\x20'+_0x39c018(0x385)+'paperclip\x20paperclips\x20triangular_ruler\x20straight_ruler\x20pushpin\x20round_pushpin\x20scissors\x20pen_ballpoint\x20pen_fountain\x20'+_0x39c018(0x441)},'symbols':{'icon':_0x39c018(0x3cc),'title':_0x39c018(0x223),'emoji':'heart\x20orange_heart\x20yellow_heart\x20green_heart\x20blue_heart\x20purple_heart\x20black_heart\x20broken_heart\x20heart_exclamation\x20two_hearts\x20'+_0x39c018(0x33b)+_0x39c018(0x438)+_0x39c018(0x3fa)+_0x39c018(0x3a9)+'ideograph_advantage\x20secret\x20congratulations\x20u5408\x20u6e80\x20u5272\x20u7981\x20a\x20b\x20ab\x20cl\x20o2\x20sos\x20x\x20o\x20octagonal_sign\x20no_entry\x20'+_0x39c018(0x437)+_0x39c018(0x338)+_0x39c018(0x221)+_0x39c018(0x392)+_0x39c018(0x3b3)+_0x39c018(0x389)+'symbols\x20information_source\x20abc\x20abcd\x20capital_abcd\x20ng\x20ok\x20up\x20cool\x20new\x20free\x20zero\x20one\x20two\x20three\x20four\x20five\x20six\x20seven\x20'+_0x39c018(0x248)+_0x39c018(0x283)+_0x39c018(0x29a)+'arrow_upper_left\x20arrow_up_down\x20left_right_arrow\x20arrow_right_hook\x20leftwards_arrow_with_hook\x20arrow_heading_up\x20'+_0x39c018(0x2b2)+_0x39c018(0x331)+_0x39c018(0x3ed)+_0x39c018(0x43b)+_0x39c018(0x34d)+_0x39c018(0x3d2)+_0x39c018(0x249)+'mute\x20sound\x20loud_sound\x20bell\x20no_bell\x20mega\x20loudspeaker\x20speech_left\x20eye_in_speech_bubble\x20speech_balloon\x20thought_balloon\x20'+_0x39c018(0x2b7)+_0x39c018(0x33f)+_0x39c018(0x2ce)},'flags':{'icon':_0x39c018(0x3a5),'title':_0x39c018(0x295),'emoji':_0x39c018(0x3b4)+_0x39c018(0x264)+_0x39c018(0x3af)+_0x39c018(0x3e1)+'flag_km\x20flag_cg\x20flag_cd\x20flag_ck\x20flag_cr\x20flag_ci\x20flag_hr\x20flag_cu\x20flag_cw\x20flag_cy\x20flag_cz\x20flag_dk\x20flag_dj\x20flag_dm\x20flag_do\x20'+_0x39c018(0x1fc)+'flag_tf\x20flag_ga\x20flag_gm\x20flag_ge\x20flag_de\x20flag_gh\x20flag_gi\x20flag_gr\x20flag_gl\x20flag_gd\x20flag_gp\x20flag_gu\x20flag_gt\x20flag_gg\x20flag_gn\x20'+'flag_gw\x20flag_gy\x20flag_ht\x20flag_hn\x20flag_hk\x20flag_hu\x20flag_is\x20flag_in\x20flag_id\x20flag_ir\x20flag_iq\x20flag_ie\x20flag_im\x20flag_il\x20flag_it\x20'+_0x39c018(0x22e)+_0x39c018(0x2f2)+_0x39c018(0x41b)+_0x39c018(0x3b6)+_0x39c018(0x321)+_0x39c018(0x2a6)+_0x39c018(0x2e7)+_0x39c018(0x2d0)+_0x39c018(0x43a)+_0x39c018(0x252)+_0x39c018(0x42c)}}:_0x1d37e7['filters']={'tones':{'title':'Diversity','emoji':_0x39c018(0x40b)+_0x39c018(0x38f)+_0x39c018(0x469)+'information_desk_person\x20guardsman\x20dancer\x20nail_care\x20massage\x20haircut\x20muscle\x20spy\x20hand_splayed\x20middle_finger\x20'+_0x39c018(0x335)+'bicyclist\x20mountain_bicyclist\x20walking\x20bath\x20metal\x20point_up\x20basketball_player\x20fist\x20raised_hand\x20v\x20writing_hand'},'recent':{'icon':_0x39c018(0x1f3),'title':_0x39c018(0x2ed),'emoji':''},'smileys_people':{'icon':_0x39c018(0x3e2),'title':_0x39c018(0x333),'emoji':_0x39c018(0x265)+_0x39c018(0x444)+_0x39c018(0x25b)+_0x39c018(0x384)+_0x39c018(0x409)+_0x39c018(0x3ae)+_0x39c018(0x3ab)+_0x39c018(0x45c)+_0x39c018(0x3f6)+'pouting_cat\x20raised_hands\x20clap\x20wave\x20thumbsup\x20thumbsdown\x20punch\x20fist\x20v\x20ok_hand\x20raised_hand\x20open_hands\x20'+_0x39c018(0x27a)+_0x39c018(0x3c5)+_0x39c018(0x39c)+_0x39c018(0x3be)+_0x39c018(0x3f9)+_0x39c018(0x2a4)+_0x39c018(0x2f9)+'family_wwb\x20family_wwg\x20family_wwgb\x20family_wwbb\x20family_wwgg\x20family_mmb\x20family_mmg\x20family_mmgb\x20family_mmbb\x20'+_0x39c018(0x2c1)+_0x39c018(0x37b)+'pouch\x20purse\x20handbag\x20briefcase\x20eyeglasses\x20dark_sunglasses\x20ring\x20closed_umbrella'},'animals_nature':{'icon':_0x39c018(0x1f7),'title':_0x39c018(0x220),'emoji':_0x39c018(0x24f)+_0x39c018(0x456)+_0x39c018(0x292)+_0x39c018(0x40f)+'ox\x20cow2\x20dromedary_camel\x20camel\x20elephant\x20goat\x20ram\x20sheep\x20racehorse\x20pig2\x20rat\x20mouse2\x20rooster\x20turkey\x20dove\x20'+_0x39c018(0x391)+_0x39c018(0x2d3)+'fallen_leaf\x20maple_leaf\x20ear_of_rice\x20hibiscus\x20sunflower\x20rose\x20tulip\x20blossom\x20cherry_blossom\x20bouquet\x20'+_0x39c018(0x367)+_0x39c018(0x375)+_0x39c018(0x2dd)+_0x39c018(0x30c)+'white_sun_small_cloud\x20partly_sunny\x20white_sun_cloud\x20white_sun_rain_cloud\x20cloud\x20cloud_rain\x20'+_0x39c018(0x2eb)+'dash\x20cloud_tornado\x20fog\x20umbrella2\x20umbrella\x20droplet\x20sweat_drops\x20ocean'},'food_drink':{'icon':_0x39c018(0x2e1),'title':_0x39c018(0x2d5),'emoji':_0x39c018(0x3b5)+_0x39c018(0x468)+_0x39c018(0x275)+_0x39c018(0x40a)+_0x39c018(0x420)+_0x39c018(0x43f)},'activity':{'icon':'basketball','title':_0x39c018(0x26e),'emoji':_0x39c018(0x203)+'badminton\x20hockey\x20field_hockey\x20cricket\x20ski\x20skier\x20snowboarder\x20ice_skate\x20bow_and_arrow\x20fishing_pole_and_fish\x20'+_0x39c018(0x234)+'trophy\x20running_shirt_with_sash\x20medal\x20military_medal\x20reminder_ribbon\x20rosette\x20ticket\x20tickets\x20performing_arts\x20'+_0x39c018(0x2a5)+_0x39c018(0x245)},'travel_places':{'icon':_0x39c018(0x20d),'title':_0x39c018(0x39f),'emoji':_0x39c018(0x377)+_0x39c018(0x2a1)+_0x39c018(0x3ea)+_0x39c018(0x239)+_0x39c018(0x3c1)+_0x39c018(0x428)+_0x39c018(0x3b8)+_0x39c018(0x235)+_0x39c018(0x2b4)+_0x39c018(0x3e0)+_0x39c018(0x39e)+_0x39c018(0x350)+'convenience_store\x20school\x20love_hotel\x20wedding\x20classical_building\x20church\x20mosque\x20synagogue\x20kaaba\x20shinto_shrine'},'objects':{'icon':_0x39c018(0x345),'title':'Objects','emoji':_0x39c018(0x32d)+_0x39c018(0x258)+_0x39c018(0x37e)+_0x39c018(0x2dc)+_0x39c018(0x208)+_0x39c018(0x25c)+_0x39c018(0x250)+_0x39c018(0x2ec)+'bed\x20door\x20bellhop\x20frame_photo\x20map\x20beach_umbrella\x20moyai\x20shopping_bags\x20balloon\x20flags\x20ribbon\x20gift\x20confetti_ball\x20'+_0x39c018(0x446)+_0x39c018(0x3df)+_0x39c018(0x30d)+_0x39c018(0x2ff)+_0x39c018(0x323)+_0x39c018(0x3f3)+_0x39c018(0x357)+_0x39c018(0x36a)+_0x39c018(0x306)},'symbols':{'icon':_0x39c018(0x3cc),'title':_0x39c018(0x223),'emoji':_0x39c018(0x2b8)+'revolving_hearts\x20heartbeat\x20heartpulse\x20sparkling_heart\x20cupid\x20gift_heart\x20heart_decoration\x20peace\x20cross\x20'+'star_and_crescent\x20om_symbol\x20wheel_of_dharma\x20star_of_david\x20six_pointed_star\x20menorah\x20yin_yang\x20orthodox_cross\x20'+_0x39c018(0x39b)+_0x39c018(0x2ae)+_0x39c018(0x414)+_0x39c018(0x358)+_0x39c018(0x31f)+_0x39c018(0x279)+_0x39c018(0x355)+_0x39c018(0x351)+_0x39c018(0x2a8)+'restroom\x20put_litter_in_its_place\x20cinema\x20signal_strength\x20koko\x20ng\x20ok\x20up\x20cool\x20new\x20free\x20zero\x20one\x20two\x20three\x20four\x20'+_0x39c018(0x3f7)+_0x39c018(0x3e3)+_0x39c018(0x45a)+_0x39c018(0x435)+_0x39c018(0x20e)+_0x39c018(0x21c)+_0x39c018(0x30a)+_0x39c018(0x41f)+_0x39c018(0x3ca)+_0x39c018(0x3a4)+_0x39c018(0x38a)+_0x39c018(0x216)+'clubs\x20hearts\x20diamonds\x20flower_playing_cards\x20thought_balloon\x20anger_right\x20speech_balloon\x20clock1\x20clock2\x20clock3\x20'+'clock4\x20clock5\x20clock6\x20clock7\x20clock8\x20clock9\x20clock10\x20clock11\x20clock12\x20clock130\x20clock230\x20clock330\x20clock430\x20'+_0x39c018(0x233)},'flags':{'icon':_0x39c018(0x3a5),'title':_0x39c018(0x295),'emoji':_0x39c018(0x388)+_0x39c018(0x2d9)+_0x39c018(0x231)+_0x39c018(0x2d2)+_0x39c018(0x425)+_0x39c018(0x3d7)+'tg\x20to\x20tt\x20tn\x20tr\x20flag_tm\x20flag_tm\x20ug\x20ua\x20ae\x20gb\x20us\x20vi\x20uy\x20uz\x20vu\x20va\x20ve\x20vn\x20wf\x20eh\x20ye\x20zm\x20zw\x20re\x20ax\x20ta\x20io\x20bq\x20cx\x20'+_0x39c018(0x3c9)}};;return _0x1d37e7;};function _0x4b8f4e(_0x599012){var _0x44dc00=_0x121165,_0x1d0045=_0xa168c4();if(_0x599012&&_0x599012[_0x44dc00(0x449)]){var _0x3ca4ce=_0x1d0045[_0x44dc00(0x449)];_0x22eefd[_0x44dc00(0x2fc)](_0x599012[_0x44dc00(0x449)],function(_0x458dec,_0x2ac1d1){var _0x4fddfe=_0x44dc00;if(!_0x5a0d59(_0x2ac1d1)||_0x22eefd[_0x4fddfe(0x423)](_0x2ac1d1)){delete _0x3ca4ce[_0x458dec];return;}_0x22eefd['each'](_0x2ac1d1,function(_0x2ad59a,_0x3cfc89){_0x3ca4ce[_0x458dec][_0x2ad59a]=_0x3cfc89;});}),_0x599012[_0x44dc00(0x449)]=_0x3ca4ce;}return _0x22eefd[_0x44dc00(0x2c4)]({},_0x1d0045,_0x599012);};var _0x1049f5,_0xd1871d;if(window[_0x121165(0x280)]&&document[_0x121165(0x243)])_0x1049f5=function(_0x2e129c){var _0x5bc3f2=_0x121165,_0x362e89=window[_0x5bc3f2(0x280)]&&window[_0x5bc3f2(0x280)]();if(_0x362e89&&_0x362e89[_0x5bc3f2(0x312)]>0x0)return _0x362e89[_0x5bc3f2(0x28a)](0x0);},_0xd1871d=function(_0x3854af,_0x467084){var _0x2d9ae3=_0x121165,_0x6be8e4=document[_0x2d9ae3(0x243)]();_0x6be8e4[_0x2d9ae3(0x2f1)](_0x467084[_0x2d9ae3(0x2e5)],_0x467084[_0x2d9ae3(0x382)]),_0x6be8e4[_0x2d9ae3(0x36b)](_0x467084[_0x2d9ae3(0x387)],_0x467084[_0x2d9ae3(0x3d6)]),_0x467084=window[_0x2d9ae3(0x280)](),_0x467084['removeAllRanges'](),_0x467084[_0x2d9ae3(0x305)](_0x6be8e4);};else document[_0x121165(0x45f)]&&document[_0x121165(0x2ef)][_0x121165(0x43d)]&&(_0x1049f5=function(_0x138105){var _0xc225b4=_0x121165;return document[_0xc225b4(0x45f)][_0xc225b4(0x243)]();},_0xd1871d=function(_0xcff704,_0x48e908){var _0x44bf21=_0x121165,_0x573678=document[_0x44bf21(0x2ef)][_0x44bf21(0x43d)]();_0x573678[_0x44bf21(0x31b)](_0xcff704),_0x573678[_0x44bf21(0x2f1)](_0x48e908[_0x44bf21(0x330)],_0x48e908[_0x44bf21(0x382)]),_0x573678[_0x44bf21(0x36b)](_0x48e908['endContainer'],_0x48e908[_0x44bf21(0x3d6)]),_0x573678[_0x44bf21(0x432)]();});var _0x53955e;function _0x53be99(_0x53681b,_0x11270b){var _0x555193=_0x121165;return _0x53681b[_0x555193(0x2a0)](_0x53955e,function(_0x55322d){var _0x4e5293=_0x555193,_0x248131=_0x16c95c[_0x497a36===0x0?_0x4e5293(0x38e):_0x4e5293(0x44f)];if(typeof _0x55322d!==_0x4e5293(0x359)&&_0x55322d in _0x248131)return _0xcb8585(_0x11270b,_0x248131[_0x55322d],_0x16c95c[_0x4e5293(0x3b7)](_0x55322d));return _0x55322d;});}function _0x1aa197(_0x261a81,_0x58d749){var _0x42477b=_0x121165;return _0x261a81=_0x261a81['replace'](/&/g,'&amp;')[_0x42477b(0x2a0)](/</g,_0x42477b(0x38c))[_0x42477b(0x2a0)](/>/g,_0x42477b(0x276))[_0x42477b(0x2a0)](/"/g,_0x42477b(0x3e9))[_0x42477b(0x2a0)](/'/g,_0x42477b(0x29e))[_0x42477b(0x2a0)](/`/g,'&#x60;')[_0x42477b(0x2a0)](/(?:\r\n|\r|\n)/g,'\x0a')['replace'](/(\n+)/g,_0x42477b(0x461))['replace'](/\n/g,_0x42477b(0x41e))['replace'](/<br\/><\/div>/g,_0x42477b(0x2a3)),_0x58d749[_0x42477b(0x43e)]&&(_0x261a81=_0x16c95c[_0x42477b(0x2b1)](_0x261a81)),_0x53be99(_0x261a81,_0x58d749['emojiTemplate'])[_0x42477b(0x2a0)](/\t/g,'&nbsp;&nbsp;&nbsp;&nbsp;')[_0x42477b(0x2a0)](/  /g,'&nbsp;&nbsp;');}function _0x203712(_0x46e77e,_0x8840d1){var _0x298073=_0x121165;_0x46e77e=_0x46e77e[_0x298073(0x2a0)](/&#10;/g,'\x0a')[_0x298073(0x2a0)](/&#09;/g,'\x09')[_0x298073(0x2a0)](/<img[^>]*alt="([^"]+)"[^>]*>/ig,'$1')['replace'](/\n|\r/g,'')['replace'](/<br[^>]*>/ig,'\x0a')[_0x298073(0x2a0)](/(?:<(?:div|p|ol|ul|li|pre|code|object)[^>]*>)+/ig,_0x298073(0x35c))[_0x298073(0x2a0)](/(?:<\/(?:div|p|ol|ul|li|pre|code|object)>)+/ig,'</div>')[_0x298073(0x2a0)](/\n<div><\/div>/ig,'\x0a')[_0x298073(0x2a0)](/<div><\/div>\n/ig,'\x0a')[_0x298073(0x2a0)](/(?:<div>)+<\/div>/ig,'\x0a')[_0x298073(0x2a0)](/([^\n])<\/div><div>/ig,'$1\x0a')[_0x298073(0x2a0)](/(?:<\/div>)+/ig,_0x298073(0x2a3))[_0x298073(0x2a0)](/([^\n])<\/div>([^\n])/ig,_0x298073(0x436))[_0x298073(0x2a0)](/<\/div>/ig,'')[_0x298073(0x2a0)](/([^\n])<div>/ig,'$1\x0a')[_0x298073(0x2a0)](/\n<div>/ig,'\x0a')[_0x298073(0x2a0)](/<div>\n/ig,'\x0a\x0a')[_0x298073(0x2a0)](/<(?:[^>]+)?>/g,'')[_0x298073(0x2a0)](new RegExp(_0x1933ce,'g'),'')[_0x298073(0x2a0)](/&nbsp;/g,'\x20')[_0x298073(0x2a0)](/&lt;/g,'<')[_0x298073(0x2a0)](/&gt;/g,'>')[_0x298073(0x2a0)](/&quot;/g,'\x22')['replace'](/&#x27;/g,'\x27')[_0x298073(0x2a0)](/&#x60;/g,'`')[_0x298073(0x2a0)](/&#60;/g,'<')[_0x298073(0x2a0)](/&#62;/g,'>')[_0x298073(0x2a0)](/&amp;/g,'&');switch(_0x8840d1['saveEmojisAs']){case'image':_0x46e77e=_0x53be99(_0x46e77e,_0x8840d1[_0x298073(0x362)]);break;case _0x298073(0x2d6):_0x46e77e=_0x16c95c[_0x298073(0x3b7)](_0x46e77e);}return _0x46e77e;}function _0x17e722(){var _0x1603b3=_0x121165,_0x426db0=this,_0x25c363=_0x426db0['editor'][0x0]['offsetWidth']-_0x426db0['editor'][0x0]['clientWidth'],_0x5c2f03=parseInt(_0x426db0[_0x1603b3(0x299)]['css'](_0x1603b3(0x31e)));_0x5c2f03!==_0x25c363&&(_0x426db0[_0x1603b3(0x299)][_0x1603b3(0x3d8)]({'marginRight':_0x25c363}),_0x426db0[_0x1603b3(0x445)]&&_0x426db0[_0x1603b3(0x36f)][_0x1603b3(0x3d8)]({'right':parseInt(_0x426db0[_0x1603b3(0x36f)][_0x1603b3(0x3d8)]('right'))-_0x5c2f03+_0x25c363}));}function _0x67ca8e(){var _0x136fc5=_0x121165,_0x27e4a3=this;if(!_0x27e4a3['sprite']&&_0x27e4a3[_0x136fc5(0x25a)][0x0]&&_0x27e4a3[_0x136fc5(0x25a)]['eq'](0x0)['is'](_0x136fc5(0x453))){var _0x340c19=_0x27e4a3[_0x136fc5(0x36f)]['offset']()[_0x136fc5(0x450)],_0x5e1f3b=_0x340c19+_0x27e4a3['picker']['height']()+0x14;_0x27e4a3[_0x136fc5(0x25a)][_0x136fc5(0x2fc)](function(){var _0x136f67=_0x136fc5,_0x3ad250=_0x22eefd(this),_0x3f7d97=_0x3ad250[_0x136f67(0x214)]()[_0x136f67(0x450)];_0x3f7d97>_0x340c19&&_0x3f7d97<_0x5e1f3b&&_0x3ad250['attr'](_0x136f67(0x2ba),_0x3ad250[_0x136f67(0x439)](_0x136f67(0x2ba)))[_0x136f67(0x3f1)]('lazy-emoji');if(_0x3f7d97>_0x5e1f3b)return![];}),_0x27e4a3[_0x136fc5(0x25a)]=_0x27e4a3[_0x136fc5(0x25a)]['filter'](_0x136fc5(0x453));}};function _0x393a00(_0x3f3c15,_0x433009){return(_0x433009?'':'.')+_0x490d79+(_0x3f3c15?'-'+_0x3f3c15:'');}function _0x58faa2(_0x77a602){var _0xdc608b=_0x121165,_0x2a9876=_0x22eefd(_0xdc608b(0x371),_0x5a0d59(_0x77a602)?_0x77a602:{'class':_0x393a00(_0x77a602,!![])});return _0x22eefd[_0xdc608b(0x2fc)](_0x4c220c['call'](arguments)[_0xdc608b(0x38d)](0x1),function(_0x43573c,_0x4d9e73){var _0x318d8b=_0xdc608b;_0x22eefd[_0x318d8b(0x39d)](_0x4d9e73)&&(_0x4d9e73=_0x4d9e73['call'](_0x2a9876)),_0x4d9e73&&_0x22eefd(_0x4d9e73)[_0x318d8b(0x260)](_0x2a9876);}),_0x2a9876;}function _0x981d35(){var _0x17cff0=_0x121165;return localStorage['getItem'](_0x17cff0(0x37d))||'';}function _0x146cbb(_0x48877c,_0x22a693){var _0xf7b56d=_0x121165,_0x4474f1=_0x981d35();if(!_0x48877c['recent']||_0x48877c[_0xf7b56d(0x2f5)]!==_0x4474f1||_0x22a693){if(_0x4474f1[_0xf7b56d(0x403)]){var _0x1bab9=_0x48877c['scrollArea']['is'](_0xf7b56d(0x241)),_0x3e83bc,_0x37de7e;!_0x1bab9&&(_0x3e83bc=_0x48877c[_0xf7b56d(0x34f)]['scrollTop'](),_0x22a693&&_0x48877c['recentCategory']['show'](),_0x37de7e=_0x48877c[_0xf7b56d(0x23f)]['is'](':visible')?_0x48877c[_0xf7b56d(0x23f)][_0xf7b56d(0x459)]():0x0);var _0x26d760=_0xf1e694(_0x4474f1,_0x48877c['emojiBtnTemplate'],!![])[_0xf7b56d(0x209)]('|')[_0xf7b56d(0x2fd)]('');_0x48877c[_0xf7b56d(0x23f)][_0xf7b56d(0x408)]('.emojibtn')[_0xf7b56d(0x21e)](),_0x22eefd(_0x26d760)[_0xf7b56d(0x22f)](_0x48877c['recentCategory'][_0xf7b56d(0x408)](_0xf7b56d(0x27e))),_0x48877c[_0xf7b56d(0x23f)]['children'](_0xf7b56d(0x22a))['on']('click',function(){var _0x1829c6=_0xf7b56d;_0x48877c['trigger'](_0x1829c6(0x3ce),_0x22eefd(this));}),_0x48877c['recentFilter'][_0xf7b56d(0x308)]();if(!_0x1bab9){_0x48877c[_0xf7b56d(0x23f)]['show']();var _0x6aea01=_0x48877c[_0xf7b56d(0x23f)][_0xf7b56d(0x459)]();_0x37de7e!==_0x6aea01&&_0x48877c[_0xf7b56d(0x34f)][_0xf7b56d(0x3c4)](_0x3e83bc+_0x6aea01-_0x37de7e);}}else _0x48877c['recentFilter'][_0xf7b56d(0x451)]('active')&&_0x48877c['recentFilter'][_0xf7b56d(0x3f1)](_0xf7b56d(0x3bd))[_0xf7b56d(0x277)]()[_0xf7b56d(0x2bb)](_0xf7b56d(0x3bd)),_0x48877c[_0xf7b56d(0x23f)][_0xf7b56d(0x2ad)](),_0x48877c[_0xf7b56d(0x3a3)][_0xf7b56d(0x2ad)]();_0x48877c['recent']=_0x4474f1;}};function _0x1e7086(_0x2d09a9,_0x5b3ab0){var _0x221d4d=_0x121165,_0x10db21=_0x981d35(),_0x5a0f0c=_0x10db21[_0x221d4d(0x209)]('|'),_0x4b128f=_0x5a0f0c['indexOf'](_0x5b3ab0);_0x4b128f!==-0x1&&_0x5a0f0c['splice'](_0x4b128f,0x1),_0x5a0f0c[_0x221d4d(0x22c)](_0x5b3ab0),_0x5a0f0c['length']>0x9&&_0x5a0f0c[_0x221d4d(0x2b3)](),localStorage[_0x221d4d(0x36c)](_0x221d4d(0x37d),_0x5a0f0c[_0x221d4d(0x2fd)]('|')),_0x146cbb(_0x2d09a9);};function _0x222fb5(){var _0x163f7b=_0x121165,_0x5758f4=_0x163f7b(0x3b2);try{return localStorage[_0x163f7b(0x36c)](_0x5758f4,_0x5758f4),localStorage[_0x163f7b(0x37f)](_0x5758f4),!![];}catch(_0x452b99){return![];}}function _0xa2df96(_0x478928,_0x31164a,_0x42f7e4){var _0x1a8400=_0x121165;_0x478928[_0x1a8400(0x293)]=_0x42f7e4=_0x4b8f4e(_0x42f7e4),_0x478928[_0x1a8400(0x202)]=_0x42f7e4['sprite']&&_0x497a36<0x3,_0x478928['inline']=_0x42f7e4[_0x1a8400(0x448)]===null?_0x31164a['is'](_0x1a8400(0x23c)):_0x42f7e4['inline'],_0x478928[_0x1a8400(0x43e)]=_0x42f7e4[_0x1a8400(0x43e)],_0x478928[_0x1a8400(0x211)]=_0x42f7e4[_0x1a8400(0x211)],_0x478928[_0x1a8400(0x213)]=_0x42f7e4[_0x1a8400(0x213)],_0x478928['emojiTemplate']=_0x1a8400(0x40d)+(_0x478928['sprite']?_0x1a8400(0x244)+_0x430fad+_0x1a8400(0x261):_0x1a8400(0x3de)),_0x478928['emojiTemplateAlt']=_0x478928[_0x1a8400(0x202)]?'<i\x20class=\x22emojione-{uni}\x22/>':'<img\x20class=\x22emojioneemoji\x22\x20src=\x22{img}\x22/>',_0x478928[_0x1a8400(0x2cc)]='<i\x20class=\x22emojibtn\x22\x20role=\x22button\x22\x20data-name=\x22{name}\x22\x20title=\x22{friendlyName}\x22>'+_0x478928['emojiTemplateAlt']+'</i>',_0x478928[_0x1a8400(0x378)]=_0x42f7e4[_0x1a8400(0x378)]&&_0x222fb5();var _0x51937c=_0x42f7e4[_0x1a8400(0x3c3)];_0x478928[_0x1a8400(0x445)]=_0x51937c==='top'||_0x51937c===_0x1a8400(0x372),_0x478928[_0x1a8400(0x317)]=_0x31164a;(_0x31164a['is'](_0x1a8400(0x2aa))||_0x31164a['is']('.disabled'))&&_0x478928[_0x1a8400(0x32c)]();var _0x190a5f=_0x31164a['is'](_0x1a8400(0x210))||_0x31164a['is'](_0x1a8400(0x23c))?_0x1a8400(0x2cd):_0x1a8400(0x316),_0x4e68dd,_0x3d0a93,_0x5f27dd,_0x5d969d,_0x503817,_0x390084,_0x2376ce,_0x542978,_0x39fa24,_0x2b19d5,_0x359a58=_0x58faa2(_0x1a8400(0x2c0),_0x42f7e4['tones']?function(){var _0x53cbc1=_0x1a8400;this[_0x53cbc1(0x2bb)](_0x393a00(_0x53cbc1(0x32a)+_0x42f7e4[_0x53cbc1(0x42a)],!![]));for(var _0x2f1323=0x0;_0x2f1323<=0x5;_0x2f1323++){this[_0x53cbc1(0x2c7)](_0x22eefd(_0x53cbc1(0x3cd),{'class':_0x53cbc1(0x334)+_0x2f1323+(!_0x2f1323?_0x53cbc1(0x2ea):''),'data-skin':_0x2f1323,'role':_0x53cbc1(0x299)}));}}:null),_0x3f36c1=_0x58faa2({'class':_0x490d79+(_0x478928[_0x1a8400(0x213)]?'\x20'+_0x490d79+_0x1a8400(0x284):'\x20')+(_0x31164a[_0x1a8400(0x226)]('class')||''),'role':_0x1a8400(0x29b)},_0x4e68dd=_0x478928[_0x1a8400(0x24c)]=_0x58faa2('editor')[_0x1a8400(0x226)]({'contenteditable':_0x478928[_0x1a8400(0x213)]?![]:!![],'placeholder':_0x42f7e4[_0x1a8400(0x2f8)]||_0x31164a['data'](_0x1a8400(0x2f8))||_0x31164a[_0x1a8400(0x226)](_0x1a8400(0x2f8))||'','tabindex':0x0}),_0x3d0a93=_0x478928[_0x1a8400(0x299)]=_0x58faa2('button',_0x58faa2(_0x1a8400(0x32f)),_0x58faa2('button-close'))['attr'](_0x1a8400(0x33e),_0x42f7e4[_0x1a8400(0x3a2)]),_0x5f27dd=_0x478928[_0x1a8400(0x36f)]=_0x58faa2(_0x1a8400(0x36f),_0x58faa2(_0x1a8400(0x26f),_0x5d969d=_0x58faa2(_0x1a8400(0x449)),_0x42f7e4[_0x1a8400(0x34b)]?_0x390084=_0x58faa2(_0x1a8400(0x369),_0x58faa2(_0x1a8400(0x34b),_0x42f7e4['search']?function(){var _0xc3f719=_0x1a8400;_0x478928['search']=_0x22eefd(_0xc3f719(0x45d),{'placeholder':_0x42f7e4['searchPlaceholder']||'','type':_0xc3f719(0x316),'class':_0xc3f719(0x34b)}),this[_0xc3f719(0x2c7)](_0x478928['search']);}:null),_0x359a58):null,_0x2b19d5=_0x58faa2(_0x1a8400(0x411),_0x42f7e4['tones']&&!_0x42f7e4[_0x1a8400(0x34b)]?_0x58faa2(_0x1a8400(0x26b),_0x359a58):null,_0x2376ce=_0x58faa2(_0x1a8400(0x3ec)))))['addClass'](_0x393a00(_0x1a8400(0x3cf)+_0x42f7e4[_0x1a8400(0x3c3)],!![]))[_0x1a8400(0x2bb)](_0x393a00(_0x1a8400(0x21b)+_0x42f7e4['filtersPosition'],!![]))['addClass'](_0x393a00(_0x1a8400(0x247)+_0x42f7e4[_0x1a8400(0x36e)],!![]))[_0x1a8400(0x2bb)]('hidden'));_0x42f7e4[_0x1a8400(0x34b)]&&_0x390084['addClass'](_0x393a00('with-search',!![]));_0x478928[_0x1a8400(0x3ef)]=null,_0x4e68dd[_0x1a8400(0x439)](_0x31164a[_0x1a8400(0x439)]()),_0x22eefd[_0x1a8400(0x2fc)](_0x42f7e4[_0x1a8400(0x32b)],function(_0x423327,_0x5317df){_0x4e68dd['attr'](_0x423327,_0x5317df);});var _0x5d12e7=_0x58faa2(_0x1a8400(0x3eb))[_0x1a8400(0x226)]({'data-tone':0x0})[_0x1a8400(0x39a)](_0x2376ce);_0x22eefd[_0x1a8400(0x2fc)](_0x42f7e4['filters'],function(_0x23d7a2,_0x165635){var _0x2981cc=_0x1a8400,_0x59c442=0x0;if(_0x23d7a2===_0x2981cc(0x2f5)&&!_0x478928[_0x2981cc(0x378)])return;if(_0x23d7a2!==_0x2981cc(0x2c0))_0x22eefd('<i/>',{'class':_0x393a00('filter',!![])+'\x20'+_0x393a00(_0x2981cc(0x2d8)+_0x23d7a2,!![]),'data-filter':_0x23d7a2,'title':_0x165635[_0x2981cc(0x33e)]})[_0x2981cc(0x232)](_0xf1e694(_0x165635['icon'],_0x478928[_0x2981cc(0x28f)]))[_0x2981cc(0x260)](_0x5d969d);else{if(_0x42f7e4[_0x2981cc(0x2c0)])_0x59c442=0x5;else return;}do{var _0x1507a9,_0x12adbe=_0x165635[_0x2981cc(0x205)][_0x2981cc(0x2a0)](/[\s,;]+/g,'|');_0x59c442===0x0?_0x1507a9=_0x58faa2(_0x2981cc(0x3a6))[_0x2981cc(0x226)]({'name':_0x23d7a2,'data-tone':_0x59c442})[_0x2981cc(0x260)](_0x5d12e7):_0x1507a9=_0x58faa2('category-block')[_0x2981cc(0x226)]({'name':_0x23d7a2,'data-tone':_0x59c442})['appendTo'](_0x2376ce),_0x59c442>0x0&&(_0x1507a9['hide'](),_0x12adbe=_0x12adbe[_0x2981cc(0x209)]('|')[_0x2981cc(0x2fd)](_0x2981cc(0x43c)+_0x59c442+'|')+'_tone'+_0x59c442),_0x23d7a2===_0x2981cc(0x2f5)&&(_0x12adbe=_0x981d35()),_0x12adbe=_0xf1e694(_0x12adbe,_0x478928[_0x2981cc(0x202)]?_0x2981cc(0x346):_0x2981cc(0x263),!![])[_0x2981cc(0x209)]('|')[_0x2981cc(0x2fd)](''),_0x1507a9['html'](_0x12adbe),_0x22eefd('<div\x20class=\x22emojionearea-category-title\x22/>')[_0x2981cc(0x316)](_0x165635['title'])[_0x2981cc(0x39a)](_0x1507a9);}while(--_0x59c442>0x0);}),_0x42f7e4[_0x1a8400(0x449)]=null;!_0x478928[_0x1a8400(0x202)]&&(_0x478928['lasyEmoji']=_0x2376ce[_0x1a8400(0x1f4)](_0x1a8400(0x453)));_0x503817=_0x5d969d['find'](_0x393a00('filter')),_0x503817['eq'](0x0)['addClass'](_0x1a8400(0x3bd)),_0x39fa24=_0x2376ce[_0x1a8400(0x1f4)](_0x393a00(_0x1a8400(0x3eb))),_0x542978=_0x2376ce[_0x1a8400(0x1f4)](_0x393a00(_0x1a8400(0x3a6))),_0x478928[_0x1a8400(0x3a3)]=_0x503817[_0x1a8400(0x2de)](_0x1a8400(0x370)),_0x478928[_0x1a8400(0x23f)]=_0x542978[_0x1a8400(0x2de)]('[name=recent]'),_0x478928[_0x1a8400(0x34f)]=_0x2b19d5;_0x42f7e4[_0x1a8400(0x44a)]?_0x22eefd(_0x42f7e4[_0x1a8400(0x44a)])[_0x1a8400(0x232)](_0x3f36c1):_0x3f36c1[_0x1a8400(0x22f)](_0x31164a);_0x42f7e4[_0x1a8400(0x310)]&&_0x31164a['hide']();_0x478928[_0x1a8400(0x2d1)](_0x31164a[_0x190a5f]()),_0x31164a[_0x190a5f](_0x478928[_0x1a8400(0x224)]()),_0x17e722[_0x1a8400(0x3c6)](_0x478928);if(_0x478928[_0x1a8400(0x213)]&&!_0x478928[_0x1a8400(0x224)]()['length']){var _0xca08ea=_0x22eefd(_0x31164a)['data'](_0x1a8400(0x41a))||_0x42f7e4['emojiPlaceholder'];_0x478928[_0x1a8400(0x2d1)](_0xca08ea),_0x4e68dd[_0x1a8400(0x2bb)]('has-placeholder');}_0x27584d(_0x478928,_0x2376ce[_0x1a8400(0x1f4)](_0x1a8400(0x22a)),{'click':'emojibtn.click'}),_0x27584d(_0x478928,window,{'resize':_0x1a8400(0x427)}),_0x27584d(_0x478928,_0x359a58[_0x1a8400(0x408)](),{'click':_0x1a8400(0x3e8)}),_0x27584d(_0x478928,[_0x5f27dd,_0x3d0a93],{'mousedown':_0x1a8400(0x383)},_0x4e68dd),_0x27584d(_0x478928,_0x3d0a93,{'click':_0x1a8400(0x326)}),_0x27584d(_0x478928,_0x4e68dd,{'paste':'!paste'},_0x4e68dd),_0x27584d(_0x478928,_0x4e68dd,[_0x1a8400(0x33d),_0x1a8400(0x257)],function(){var _0x462320=_0x1a8400;return _0x478928[_0x462320(0x2ab)]?![]:_0x4e68dd;}),_0x27584d(_0x478928,_0x5f27dd,{'mousedown':'picker.mousedown','mouseup':_0x1a8400(0x460),'click':_0x1a8400(0x282),'keyup':_0x1a8400(0x3ff),'keydown':_0x1a8400(0x340),'keypress':_0x1a8400(0x24e)}),_0x27584d(_0x478928,_0x4e68dd,[_0x1a8400(0x349),_0x1a8400(0x28c),_0x1a8400(0x3a0),_0x1a8400(0x256),_0x1a8400(0x28b),_0x1a8400(0x20a)]),_0x27584d(_0x478928,_0x5f27dd['find'](_0x1a8400(0x337)),{'click':_0x1a8400(0x251)}),_0x27584d(_0x478928,_0x31164a,{'change':_0x1a8400(0x32e)});_0x42f7e4[_0x1a8400(0x34b)]&&_0x27584d(_0x478928,_0x478928[_0x1a8400(0x34b)],{'keyup':_0x1a8400(0x426),'focus':'search.focus','blur':_0x1a8400(0x3a7)});var _0x14490a=![];_0x2b19d5['on'](_0x1a8400(0x26c),function(){var _0x41ad49=_0x1a8400;if(!_0x14490a){_0x67ca8e[_0x41ad49(0x2c9)](_0x478928);if(_0x2b19d5['is'](_0x41ad49(0x395))){var _0x534d57=_0x542978['eq'](0x0),_0x4acb88=_0x2b19d5[_0x41ad49(0x214)]()[_0x41ad49(0x450)];_0x542978[_0x41ad49(0x2fc)](function(_0x53aa74,_0x4831c4){var _0x4c2331=_0x41ad49;if(_0x22eefd(_0x4831c4)[_0x4c2331(0x214)]()[_0x4c2331(0x450)]-_0x4acb88>=0xa)return![];_0x534d57=_0x22eefd(_0x4831c4);});var _0x13232f=_0x503817['filter'](_0x41ad49(0x21a)+_0x534d57[_0x41ad49(0x226)](_0x41ad49(0x3f4))+'\x22]');_0x13232f[0x0]&&!_0x13232f['is']('.active')&&(_0x503817[_0x41ad49(0x3f1)](_0x41ad49(0x3bd)),_0x13232f['addClass'](_0x41ad49(0x3bd)));}}}),_0x478928['on'](_0x1a8400(0x38b),function(_0x287ded){var _0x1516d3=_0x1a8400,_0x2c1c32=_0x287ded['is'](_0x1516d3(0x2f0));if(_0x2b19d5['is'](_0x1516d3(0x241))){if(_0x2c1c32)return;_0x359a58['children']()['eq'](0x0)['click']();}_0x14490a=!![];!_0x2c1c32&&(_0x503817['filter'](_0x1516d3(0x2f0))[_0x1516d3(0x3f1)](_0x1516d3(0x3bd)),_0x287ded[_0x1516d3(0x2bb)](_0x1516d3(0x3bd)));var _0x366a84=_0x542978[_0x1516d3(0x2de)](_0x1516d3(0x254)+_0x287ded[_0x1516d3(0x439)]('filter')+'\x22]')['offset']()[_0x1516d3(0x450)],_0xdd57e3=_0x2b19d5[_0x1516d3(0x3c4)](),_0xac69a1=_0x2b19d5[_0x1516d3(0x214)]()[_0x1516d3(0x450)];_0x2b19d5[_0x1516d3(0x35a)]()[_0x1516d3(0x3fc)]({'scrollTop':_0x366a84+_0xdd57e3-_0xac69a1-0x2},0xc8,'swing',function(){var _0x13953b=_0x1516d3;_0x67ca8e[_0x13953b(0x2c9)](_0x478928),_0x14490a=![];});})['on'](_0x1a8400(0x3b9),function(){var _0x55baea=_0x1a8400;_0x478928[_0x55baea(0x378)]&&_0x146cbb(_0x478928),_0x67ca8e[_0x55baea(0x2c9)](_0x478928);})['on'](_0x1a8400(0x29c),function(_0x379667){var _0x45495b=_0x1a8400;_0x359a58[_0x45495b(0x408)]()[_0x45495b(0x3f1)](_0x45495b(0x3bd));var _0x33f91d=_0x379667[_0x45495b(0x2bb)](_0x45495b(0x3bd))[_0x45495b(0x439)](_0x45495b(0x431));_0x33f91d?(_0x2b19d5[_0x45495b(0x2bb)]('skinnable'),_0x39fa24['hide']()['filter'](_0x45495b(0x36d)+_0x33f91d+']')[_0x45495b(0x308)](),_0x503817[_0x45495b(0x3f1)](_0x45495b(0x3bd))):(_0x2b19d5[_0x45495b(0x3f1)](_0x45495b(0x356)),_0x39fa24['hide']()[_0x45495b(0x2de)](_0x45495b(0x259))['show'](),_0x503817['eq'](0x0)['click']()),_0x67ca8e['call'](_0x478928),_0x42f7e4[_0x45495b(0x34b)]&&_0x478928[_0x45495b(0x421)]('search.keypress');})['on'](_0x1a8400(0x348),function(_0x4484b8){var _0x4e3612=_0x1a8400;_0x4484b8['is'](_0x4e3612(0x2f0))?_0x478928[_0x4e3612(0x23b)]():(_0x478928[_0x4e3612(0x41c)](),_0x478928[_0x4e3612(0x3ef)]=null);})['on'](_0x1a8400(0x242),function(_0x1d2f8e,_0x5040a7){var _0x49e1d0=_0x1a8400,_0x2f596a=function(_0x3467b7){var _0x3fb46c=a6_0x52cc,_0x590c43='caret-'+new Date()[_0x3fb46c(0x2b9)](),_0x4b44c9=_0x1aa197(_0x3467b7,_0x478928);_0x48624b(_0x4b44c9),_0x48624b(_0x3fb46c(0x229)+_0x590c43+_0x3fb46c(0x2be)),_0x1d2f8e[_0x3fb46c(0x3c4)](_0x62d7f9);var _0x1fb715=_0x22eefd('#'+_0x590c43),_0x22c4bd=_0x1fb715['offset']()[_0x3fb46c(0x450)]-_0x1d2f8e[_0x3fb46c(0x214)]()['top'],_0x187993=_0x1d2f8e[_0x3fb46c(0x459)]();(_0x62d7f9+_0x22c4bd>=_0x187993||_0x62d7f9>_0x22c4bd)&&_0x1d2f8e[_0x3fb46c(0x3c4)](_0x62d7f9+_0x22c4bd-0x2*_0x187993/0x3),_0x1fb715[_0x3fb46c(0x21e)](),_0x478928['stayFocused']=![],_0x17e722[_0x3fb46c(0x3c6)](_0x478928),_0x2be12b(_0x478928,_0x3fb46c(0x404),[_0x1d2f8e,_0x3467b7,_0x4b44c9]);};if(_0x5040a7[_0x49e1d0(0x3d9)][_0x49e1d0(0x44b)]){var _0x2ae48d=_0x5040a7['originalEvent'][_0x49e1d0(0x44b)][_0x49e1d0(0x225)](_0x49e1d0(0x2da));return _0x2f596a(_0x2ae48d),_0x5040a7[_0x49e1d0(0x422)]?_0x5040a7[_0x49e1d0(0x422)]():_0x5040a7[_0x49e1d0(0x35a)](),_0x5040a7[_0x49e1d0(0x2e8)]=![],_0x5040a7[_0x49e1d0(0x3ee)](),![];}_0x478928[_0x49e1d0(0x2ab)]=!![],_0x48624b('<span>'+_0x1933ce+_0x49e1d0(0x20c));var _0x1b6ced=_0x1049f5(_0x1d2f8e[0x0]),_0x62d7f9=_0x1d2f8e[_0x49e1d0(0x3c4)](),_0x4d0101=_0x22eefd(_0x49e1d0(0x371),{'contenteditable':!![]})['css']({'position':_0x49e1d0(0x1f6),'left':_0x49e1d0(0x352),'width':'1px','height':_0x49e1d0(0x2bf),'top':_0x49e1d0(0x2a2),'overflow':'hidden'})['appendTo'](_0x22eefd('BODY'))[_0x49e1d0(0x33d)]();window[_0x49e1d0(0x462)](function(){var _0x55f8a4=_0x49e1d0;_0x1d2f8e[_0x55f8a4(0x33d)](),_0xd1871d(_0x1d2f8e[0x0],_0x1b6ced);var _0x58a4c3=_0x203712(_0x4d0101[_0x55f8a4(0x200)]()[_0x55f8a4(0x2a0)](/\r\n|\n|\r/g,_0x55f8a4(0x343)),_0x478928);_0x4d0101[_0x55f8a4(0x21e)](),_0x2f596a(_0x58a4c3);},0xc8);})['on'](_0x1a8400(0x2ac),function(_0x5b22e6){var _0x39a5dd=_0x1a8400;_0x4e68dd[_0x39a5dd(0x3f1)]('has-placeholder'),_0x478928[_0x39a5dd(0x3ef)]!==null&&(_0x4e68dd[_0x39a5dd(0x33d)](),_0xd1871d(_0x4e68dd[0x0],_0x478928[_0x39a5dd(0x3ef)]),_0x478928[_0x39a5dd(0x3ef)]=null),_0x478928['standalone']?(_0x4e68dd[_0x39a5dd(0x200)](_0xf1e694(_0x5b22e6['data'](_0x39a5dd(0x3f4)),_0x478928['emojiTemplate'])),_0x478928[_0x39a5dd(0x421)](_0x39a5dd(0x257))):(_0x1049f5(_0x4e68dd[0x0]),_0x48624b(_0xf1e694(_0x5b22e6[_0x39a5dd(0x439)]('name'),_0x478928['emojiTemplate']))),_0x478928[_0x39a5dd(0x378)]&&_0x1e7086(_0x478928,_0x5b22e6[_0x39a5dd(0x439)](_0x39a5dd(0x3f4))),_0x478928[_0x39a5dd(0x421)](_0x39a5dd(0x426));})['on'](_0x1a8400(0x458),_0x17e722)['on'](_0x1a8400(0x2c6),function(_0x41a67b,_0x98a78b){var _0x5c7f71=_0x1a8400;return _0x22eefd(_0x98a78b['target'])['hasClass'](_0x5c7f71(0x34b))?(_0x478928['stayFocused']=!![],_0x478928[_0x5c7f71(0x3ef)]===null&&(_0x478928[_0x5c7f71(0x3ef)]=_0x1049f5(_0x41a67b[0x0]))):(!_0x3f36c1['is'](_0x5c7f71(0x324))&&_0x41a67b[_0x5c7f71(0x421)](_0x5c7f71(0x33d)),_0x98a78b[_0x5c7f71(0x422)]()),![];})['on'](_0x1a8400(0x20b),function(){var _0x41fee0=_0x1a8400,_0x10f998=_0x478928[_0x41fee0(0x24c)][_0x41fee0(0x200)]()[_0x41fee0(0x2a0)](/<\/?(?:div|span|p)[^>]*>/ig,'');(!_0x10f998[_0x41fee0(0x403)]||/^<br[^>]*>$/i[_0x41fee0(0x3b2)](_0x10f998))&&_0x478928['editor'][_0x41fee0(0x200)](_0x478928[_0x41fee0(0x309)]=''),_0x31164a[_0x190a5f](_0x478928[_0x41fee0(0x224)]());})['on'](_0x1a8400(0x342),function(){var _0x348025=_0x1a8400;_0x478928[_0x348025(0x2d1)](_0x31164a[_0x190a5f]()),_0x2be12b(_0x348025(0x406));})['on'](_0x1a8400(0x212),function(){var _0x16ccb6=_0x1a8400;_0x3f36c1[_0x16ccb6(0x2bb)]('focused');})['on'](_0x1a8400(0x42d),function(){var _0xf493b9=_0x1a8400;_0x3f36c1[_0xf493b9(0x3f1)]('focused');_0x42f7e4[_0xf493b9(0x3a1)]&&_0x478928[_0xf493b9(0x23b)]();var _0x510165=_0x478928[_0xf493b9(0x24c)][_0xf493b9(0x200)]();_0x478928[_0xf493b9(0x309)]!==_0x510165?(_0x478928['content']=_0x510165,_0x2be12b(_0x478928,_0xf493b9(0x406),[_0x478928[_0xf493b9(0x24c)]]),_0x31164a[_0xf493b9(0x421)]('blur')['trigger'](_0xf493b9(0x406))):_0x31164a[_0xf493b9(0x421)](_0xf493b9(0x257)),_0x42f7e4[_0xf493b9(0x34b)]&&(_0x478928[_0xf493b9(0x34b)][_0xf493b9(0x2cd)](''),_0x478928['trigger'](_0xf493b9(0x426),!![]));});_0x42f7e4['search']&&_0x478928['on'](_0x1a8400(0x219),function(){var _0x23913a=_0x1a8400;_0x478928['stayFocused']=!![],_0x478928[_0x23913a(0x34b)][_0x23913a(0x2bb)](_0x23913a(0x206));})['on'](_0x1a8400(0x2fa),function(_0x44b82d){var _0x27ee33=_0x1a8400,_0x2b9e9c=_0x5f27dd[_0x27ee33(0x1f4)](_0x27ee33(0x337)),_0x478250=_0x42f7e4['tones']?_0x359a58[_0x27ee33(0x1f4)](_0x27ee33(0x410))[_0x27ee33(0x439)]('skin'):0x0,_0x2c0298=_0x478928[_0x27ee33(0x34b)][_0x27ee33(0x2cd)]()[_0x27ee33(0x2a0)](/ /g,'_')['replace'](/"/g,'\x5c\x22');_0x2c0298&&_0x2c0298['length']?(_0x478928['recentFilter'][_0x27ee33(0x451)]('active')&&_0x478928[_0x27ee33(0x3a3)][_0x27ee33(0x3f1)]('active')[_0x27ee33(0x277)]()['addClass']('active'),_0x478928['recentCategory'][_0x27ee33(0x2ad)](),_0x478928[_0x27ee33(0x3a3)][_0x27ee33(0x2ad)](),_0x39fa24[_0x27ee33(0x2fc)](function(){var _0x12ecd3=_0x27ee33,_0x55cba2=function(_0x16713d,_0x5077ef){var _0x268b81=a6_0x52cc,_0x7f424f=_0x16713d[_0x268b81(0x1f4)](_0x268b81(0x28d)+_0x2c0298+'\x22]');if(_0x7f424f[_0x268b81(0x403)]===0x0)_0x16713d[_0x268b81(0x439)]('tone')===_0x5077ef&&_0x16713d[_0x268b81(0x2ad)](),_0x2b9e9c[_0x268b81(0x2de)](_0x268b81(0x21a)+_0x16713d[_0x268b81(0x226)](_0x268b81(0x3f4))+'\x22]')['hide']();else{var _0x4ad548=_0x16713d[_0x268b81(0x1f4)]('.emojibtn:not([data-name*=\x22'+_0x2c0298+_0x268b81(0x454));_0x4ad548['hide'](),_0x7f424f[_0x268b81(0x308)](),_0x16713d[_0x268b81(0x439)](_0x268b81(0x440))===_0x5077ef&&_0x16713d['show'](),_0x2b9e9c[_0x268b81(0x2de)]('[data-filter=\x22'+_0x16713d[_0x268b81(0x226)]('name')+'\x22]')[_0x268b81(0x308)]();}},_0x40a689=_0x22eefd(this);_0x40a689[_0x12ecd3(0x439)](_0x12ecd3(0x440))===0x0?_0x542978['filter'](_0x12ecd3(0x266))[_0x12ecd3(0x2fc)](function(){_0x55cba2(_0x22eefd(this),0x0);}):_0x55cba2(_0x40a689,_0x478250);}),!_0x14490a?_0x2b19d5[_0x27ee33(0x421)](_0x27ee33(0x26c)):_0x67ca8e['call'](_0x478928)):(_0x146cbb(_0x478928,!![]),_0x39fa24['filter']('[data-tone=\x22'+_0x359a58[_0x27ee33(0x1f4)]('i.active')['data']('skin')+_0x27ee33(0x463))['show'](),_0x22eefd(_0x27ee33(0x22a),_0x39fa24)[_0x27ee33(0x308)](),_0x2b9e9c[_0x27ee33(0x308)](),_0x67ca8e[_0x27ee33(0x2c9)](_0x478928));})['on']('@search.blur',function(){var _0x379cf7=_0x1a8400;_0x478928[_0x379cf7(0x2ab)]=![],_0x478928[_0x379cf7(0x34b)][_0x379cf7(0x3f1)](_0x379cf7(0x206)),_0x478928[_0x379cf7(0x421)](_0x379cf7(0x257));});_0x42f7e4[_0x1a8400(0x3e7)]&&_0x478928['on'](_0x1a8400(0x270),function(_0x1469c0,_0xfa9d4){var _0x5e2613=_0x1a8400;if(!_0xfa9d4['ctrlKey']){if(_0xfa9d4[_0x5e2613(0x3db)]==0x9)_0xfa9d4['preventDefault'](),_0x3d0a93[_0x5e2613(0x3a0)]();else _0xfa9d4[_0x5e2613(0x3db)]==0x1b&&(_0xfa9d4[_0x5e2613(0x422)](),_0x3d0a93['is']('.active')&&_0x478928[_0x5e2613(0x23b)]());}});_0x5a0d59(_0x42f7e4[_0x1a8400(0x34a)])&&!_0x22eefd[_0x1a8400(0x423)](_0x42f7e4[_0x1a8400(0x34a)])&&_0x22eefd['each'](_0x42f7e4[_0x1a8400(0x34a)],function(_0x50835a,_0x3f770c){var _0x383ea2=_0x1a8400;_0x478928['on'](_0x50835a[_0x383ea2(0x2a0)](/_/g,'.'),_0x3f770c);});if(_0x42f7e4[_0x1a8400(0x253)]){var _0x380777=function(){var _0x22000b=_0x1a8400,_0x1051e2={'maxCount':_0x42f7e4[_0x22000b(0x272)][_0x22000b(0x44e)],'placement':_0x42f7e4[_0x22000b(0x272)][_0x22000b(0x464)]};_0x42f7e4[_0x22000b(0x3e7)]&&(_0x1051e2[_0x22000b(0x30b)]=function(_0x53f9ac,_0x3b949f){var _0x15edd4=_0x22000b;if(!_0x53f9ac[_0x15edd4(0x2e0)]&&_0x53f9ac[_0x15edd4(0x3db)]==0xd)return _0x3b949f['KEY_ENTER'];});var _0x9d5a9e=_0x22eefd['map'](_0x16c95c[_0x22000b(0x300)],function(_0x4aec22,_0x4d5574){var _0x16aa89=_0x22000b;return!_0x42f7e4[_0x16aa89(0x368)]?/_tone[12345]/[_0x16aa89(0x3b2)](_0x4d5574)?null:_0x4d5574:_0x4d5574;});_0x9d5a9e['sort'](),_0x4e68dd[_0x22000b(0x272)]([{'id':_0x490d79,'match':/\B(:[\-+\w]*)$/,'search':function(_0x421f09,_0x30a4bc){var _0x379bd5=_0x22000b;_0x30a4bc(_0x22eefd[_0x379bd5(0x27b)](_0x9d5a9e,function(_0x2d816a){var _0x5e1672=_0x379bd5;return _0x2d816a[_0x5e1672(0x21f)](_0x421f09)===0x0?_0x2d816a:null;}));},'template':function(_0x455b6e){var _0x36af49=_0x22000b;return _0xf1e694(_0x455b6e,_0x478928[_0x36af49(0x362)])+'\x20'+_0x455b6e[_0x36af49(0x2a0)](/:/g,'');},'replace':function(_0x4b1d39){var _0x51c13e=_0x22000b;return _0xf1e694(_0x4b1d39,_0x478928[_0x51c13e(0x362)]);},'cache':!![],'index':0x1}],_0x1051e2),_0x42f7e4['textcomplete'][_0x22000b(0x464)]&&(_0x22eefd(_0x4e68dd['data']('textComplete')[_0x22000b(0x262)]['appendTo'])['css'](_0x22000b(0x407))==_0x22000b(0x314)&&_0x22eefd(_0x4e68dd[_0x22000b(0x439)](_0x22000b(0x268))[_0x22000b(0x262)]['appendTo'])[_0x22000b(0x3d8)]('position','relative'));},_0x5708f7=function(){if(_0x478928['disabled']){var _0x5bc68a=function(){var _0x451ca4=a6_0x52cc;_0x478928['off'](_0x451ca4(0x3fd),_0x5bc68a),_0x380777();};_0x478928['on']('enabled',_0x5bc68a);}else _0x380777();};_0x22eefd['fn']['textcomplete']?_0x5708f7():_0x22eefd['ajax']({'url':'https://cdn.rawgit.com/yuku-t/jquery-textcomplete/v1.3.4/dist/jquery.textcomplete.js','dataType':_0x1a8400(0x301),'cache':!![],'success':_0x5708f7});}_0x478928[_0x1a8400(0x448)]&&(_0x3f36c1[_0x1a8400(0x2bb)](_0x393a00(_0x1a8400(0x448),!![])),_0x478928['on'](_0x1a8400(0x270),function(_0x3e459f,_0x1f1730){var _0x594d76=_0x1a8400;_0x1f1730['which']==0xd&&_0x1f1730[_0x594d76(0x422)]();})),/firefox/i[_0x1a8400(0x3b2)](navigator[_0x1a8400(0x442)])&&document['execCommand']('enableObjectResizing',![],![]),_0x478928[_0x1a8400(0x23e)]=!![],_0x478928[_0x1a8400(0x421)](_0x1a8400(0x315),_0x4e68dd),_0x478928[_0x1a8400(0x421)](_0x1a8400(0x3bf),_0x4e68dd);};var _0x295659={'defaultBase':_0x121165(0x361),'defaultBase3':_0x121165(0x2e4),'base':null,'isLoading':![]};function _0x255b3a(_0x3d3fcf){var _0x11373d=_0x121165,_0x32fd6f=_0x3512d3();_0x3d3fcf=_0x4b8f4e(_0x3d3fcf);if(!_0x295659[_0x11373d(0x42b)]){if(!_0x16c95c||_0x248512(_0x5967cb(_0x16c95c))<0x2){_0x295659[_0x11373d(0x42b)]=!![];var _0x31f87d;if(_0x248512(_0x32fd6f)>0x5)_0x31f87d=_0x295659['defaultBase3']+_0x11373d(0x434)+_0x32fd6f;else _0x248512(_0x32fd6f)>0x4?_0x31f87d=_0x295659[_0x11373d(0x230)]+_0x11373d(0x294)+_0x32fd6f:_0x31f87d=_0x295659[_0x11373d(0x289)]+'/'+_0x32fd6f;_0x22eefd[_0x11373d(0x42e)]({'url':_0x31f87d+'/lib/js/emojione.min.js','dataType':_0x11373d(0x301),'cache':!![],'success':function(){var _0x3e9066=_0x11373d;_0x16c95c=window[_0x3e9066(0x22d)],_0x32fd6f=_0x5967cb(_0x16c95c),_0x497a36=_0x248512(_0x32fd6f);var _0x1305da;_0x497a36>0x4?(_0x295659[_0x3e9066(0x25f)]=_0x295659[_0x3e9066(0x230)]+'emojione/assets/'+_0x32fd6f,_0x1305da=_0x295659[_0x3e9066(0x25f)]+'/sprites/emojione-sprite-'+_0x16c95c[_0x3e9066(0x2d4)]+'.css'):(_0x295659[_0x3e9066(0x25f)]=_0x295659[_0x3e9066(0x289)]+_0x32fd6f+_0x3e9066(0x22b),_0x1305da=_0x295659['base']+_0x3e9066(0x3cb));_0x3d3fcf['sprite']&&(document[_0x3e9066(0x288)]?document[_0x3e9066(0x288)](_0x1305da):_0x22eefd(_0x3e9066(0x30f),{'rel':'stylesheet','href':_0x1305da})['appendTo'](_0x3e9066(0x452)));while(_0x413107[_0x3e9066(0x403)]){_0x413107[_0x3e9066(0x364)]()[_0x3e9066(0x2c9)]();}_0x295659[_0x3e9066(0x42b)]=![];}});}else _0x32fd6f=_0x5967cb(_0x16c95c),_0x497a36=_0x248512(_0x32fd6f),_0x497a36>0x4?_0x295659[_0x11373d(0x25f)]=_0x295659['defaultBase3']+_0x11373d(0x307)+_0x32fd6f:_0x295659[_0x11373d(0x25f)]=_0x295659[_0x11373d(0x289)]+_0x32fd6f+_0x11373d(0x22b);}_0x9351d9(function(){var _0x377a7a=_0x11373d,_0x5911d4='';if(_0x3d3fcf[_0x377a7a(0x2e9)]){if(_0x497a36>0x4)_0x5911d4=_0x16c95c[_0x377a7a(0x2d4)]+'/';_0x16c95c[_0x377a7a(0x201)]=_0x295659['base']+'/png/'+_0x5911d4,_0x16c95c[_0x377a7a(0x31c)]=_0x295659[_0x377a7a(0x25f)]+_0x377a7a(0x3e5)+_0x5911d4,_0x16c95c['imagePathSVGSprites']=_0x295659[_0x377a7a(0x25f)]+_0x377a7a(0x29d),_0x16c95c[_0x377a7a(0x290)]=_0x3d3fcf[_0x377a7a(0x290)];}_0x248512(_0x32fd6f)>0x4?(_0x53955e=_0x16c95c[_0x377a7a(0x24b)],_0x16c95c[_0x377a7a(0x290)]=_0x3d3fcf[_0x377a7a(0x290)]||_0x377a7a(0x402)):_0x53955e=new RegExp(_0x377a7a(0x296)+_0x16c95c[_0x377a7a(0x40c)]+')','gi');});};var _0x58916d=function(_0x463fcb,_0x22d542){var _0x5665be=this;_0x255b3a(_0x22d542),_0xe058f1[_0x5665be['id']=++_0x457ec8]={},_0x3fa092[_0x5665be['id']]={},_0x9351d9(function(){_0xa2df96(_0x5665be,_0x463fcb,_0x22d542);});};function _0x3c6cf9(_0x286012,_0x1621fa){var _0x338f73=_0x121165;_0x1621fa=_0x1621fa[_0x338f73(0x2a0)](/^@/,'');var _0xe7263f=_0x286012['id'];_0x3fa092[_0xe7263f][_0x1621fa]&&(_0x22eefd[_0x338f73(0x2fc)](_0x3fa092[_0xe7263f][_0x1621fa],function(_0x244ed6,_0x385137){var _0x264d68=_0x338f73;_0x22eefd[_0x264d68(0x2fc)](_0x22eefd['isArray'](_0x385137[0x0])?_0x385137[0x0]:[_0x385137[0x0]],function(_0x3b2d58,_0x1e8082){_0x22eefd(_0x1e8082)['on'](_0x385137[0x1],function(){var _0x38b890=a6_0x52cc,_0x8f2938=_0x4c220c['call'](arguments),_0x98f3cc=_0x22eefd[_0x38b890(0x39d)](_0x385137[0x2])?_0x385137[0x2][_0x38b890(0x3c6)](_0x286012,[_0x1621fa][_0x38b890(0x3c7)](_0x8f2938)):_0x385137[0x2];_0x98f3cc&&_0x2be12b(_0x286012,_0x1621fa,[_0x98f3cc][_0x38b890(0x3c7)](_0x8f2938));});});}),_0x3fa092[_0xe7263f][_0x1621fa]=null);}_0x58916d[_0x121165(0x3aa)]['on']=function(_0x4655c4,_0x569652){var _0x5f0bd8=_0x121165;if(_0x4655c4&&_0x22eefd[_0x5f0bd8(0x39d)](_0x569652)){var _0x1b5b31=this;_0x22eefd[_0x5f0bd8(0x2fc)](_0x4655c4[_0x5f0bd8(0x303)]()[_0x5f0bd8(0x209)]('\x20'),function(_0x103d16,_0x329bbc){var _0x24345c=_0x5f0bd8;_0x3c6cf9(_0x1b5b31,_0x329bbc),(_0xe058f1[_0x1b5b31['id']][_0x329bbc]||(_0xe058f1[_0x1b5b31['id']][_0x329bbc]=[]))[_0x24345c(0x2fe)](_0x569652);});}return this;},_0x58916d['prototype']['off']=function(_0x5da56a,_0x1b4508){var _0x21b3b3=_0x121165;if(_0x5da56a){var _0x3d0954=this['id'];_0x22eefd[_0x21b3b3(0x2fc)](_0x5da56a[_0x21b3b3(0x303)]()[_0x21b3b3(0x2a0)](/_/g,'.')[_0x21b3b3(0x209)]('\x20'),function(_0x5d7982,_0x434fae){var _0x2a999f=_0x21b3b3;_0xe058f1[_0x3d0954][_0x434fae]&&!/^@/[_0x2a999f(0x3b2)](_0x434fae)&&(_0x1b4508?_0x22eefd['each'](_0xe058f1[_0x3d0954][_0x434fae],function(_0x23879c,_0x325d2b){var _0x207204=_0x2a999f;_0x325d2b===_0x1b4508&&_0xe058f1[_0x3d0954][_0x434fae][_0x207204(0x322)](_0x23879c,0x1);}):_0xe058f1[_0x3d0954][_0x434fae]=[]);});}return this;},_0x58916d[_0x121165(0x3aa)][_0x121165(0x421)]=function(){var _0x3e86b1=_0x121165,_0x1e5863=_0x4c220c['call'](arguments),_0x5f12d4=[this][_0x3e86b1(0x3c7)](_0x1e5863[_0x3e86b1(0x38d)](0x0,0x1));return _0x5f12d4[_0x3e86b1(0x2fe)](_0x1e5863[_0x3e86b1(0x38d)](0x1)),_0x2be12b[_0x3e86b1(0x3c6)](this,_0x5f12d4);},_0x58916d['prototype'][_0x121165(0x2e3)]=function(){var _0x433f76=this;return _0x9351d9(function(){var _0xbfd1bd=a6_0x52cc;_0x433f76[_0xbfd1bd(0x24c)][_0xbfd1bd(0x33d)]();}),_0x433f76;},_0x58916d[_0x121165(0x3aa)][_0x121165(0x2d1)]=function(_0xcdfc0a){var _0x21f370=this;return _0x9351d9(function(){var _0x189d19=a6_0x52cc;_0x21f370[_0x189d19(0x24c)][_0x189d19(0x200)](_0x1aa197(_0xcdfc0a,_0x21f370)),_0x21f370[_0x189d19(0x309)]=_0x21f370[_0x189d19(0x24c)][_0x189d19(0x200)](),_0x2be12b(_0x21f370,_0x189d19(0x406),[_0x21f370[_0x189d19(0x24c)]]),_0x17e722[_0x189d19(0x3c6)](_0x21f370);}),_0x21f370;},_0x58916d['prototype']['getText']=function(){var _0x19de96=_0x121165;return _0x203712(this['editor'][_0x19de96(0x200)](),this);},_0x58916d[_0x121165(0x3aa)][_0x121165(0x41c)]=function(){var _0x26c83d=_0x121165,_0xcc08ac=this;return _0xcc08ac[_0x26c83d(0x31a)]&&window[_0x26c83d(0x237)](_0xcc08ac['_sh_timer']),_0xcc08ac[_0x26c83d(0x36f)][_0x26c83d(0x3f1)]('hidden'),_0xcc08ac[_0x26c83d(0x31a)]=window[_0x26c83d(0x462)](function(){var _0x124cdb=_0x26c83d;_0xcc08ac[_0x124cdb(0x299)]['addClass']('active');},0x32),_0x2be12b(_0xcc08ac,_0x26c83d(0x42f),[_0xcc08ac[_0x26c83d(0x36f)]]),_0xcc08ac;},_0x58916d[_0x121165(0x3aa)]['hidePicker']=function(){var _0x17a053=_0x121165,_0x5a13dc=this;return _0x5a13dc[_0x17a053(0x31a)]&&window[_0x17a053(0x237)](_0x5a13dc[_0x17a053(0x31a)]),_0x5a13dc['button'][_0x17a053(0x3f1)](_0x17a053(0x3bd)),_0x5a13dc[_0x17a053(0x31a)]=window['setTimeout'](function(){var _0x710b79=_0x17a053;_0x5a13dc['picker'][_0x710b79(0x2bb)]('hidden');},0x1f4),_0x2be12b(_0x5a13dc,_0x17a053(0x27f),[_0x5a13dc[_0x17a053(0x36f)]]),_0x5a13dc;},_0x58916d[_0x121165(0x3aa)][_0x121165(0x3b1)]=function(){var _0x152168=_0x121165,_0x196d8f=this,_0x419269=function(){var _0x45c348=a6_0x52cc;_0x196d8f['disabled']=![],_0x196d8f['editor'][_0x45c348(0x2cb)](_0x45c348(0x2c8),!![]),_0x196d8f[_0x45c348(0x299)][_0x45c348(0x308)]();var _0x47f569=_0x196d8f[_0x196d8f[_0x45c348(0x213)]?_0x45c348(0x299):'editor'];_0x47f569[_0x45c348(0x3c8)]()[_0x45c348(0x3f1)]('emojionearea-disable'),_0x2be12b(_0x196d8f,_0x45c348(0x3fd),[_0x47f569]);};return _0x196d8f[_0x152168(0x23e)]?_0x419269():_0x196d8f['on'](_0x152168(0x3bf),_0x419269),_0x196d8f;},_0x58916d[_0x121165(0x3aa)][_0x121165(0x32c)]=function(){var _0x42b341=_0x121165,_0x1f6447=this;_0x1f6447[_0x42b341(0x267)]=!![];var _0xc2a746=function(){var _0x53cf0d=_0x42b341;_0x1f6447[_0x53cf0d(0x24c)][_0x53cf0d(0x2cb)](_0x53cf0d(0x2c8),![]),_0x1f6447[_0x53cf0d(0x23b)](),_0x1f6447[_0x53cf0d(0x299)][_0x53cf0d(0x2ad)]();var _0x3e2187=_0x1f6447[_0x1f6447[_0x53cf0d(0x213)]?'button':'editor'];_0x3e2187[_0x53cf0d(0x3c8)]()[_0x53cf0d(0x2bb)](_0x53cf0d(0x29f)),_0x2be12b(_0x1f6447,_0x53cf0d(0x267),[_0x3e2187]);};return _0x1f6447[_0x42b341(0x23e)]?_0xc2a746():_0x1f6447['on'](_0x42b341(0x3bf),_0xc2a746),_0x1f6447;},_0x22eefd['fn'][_0x121165(0x2bc)]=function(_0x4ad466){var _0x4abe54=_0x121165;return this[_0x4abe54(0x2fc)](function(){var _0xdf97ef=_0x4abe54;if(!!this[_0xdf97ef(0x2bc)])return this[_0xdf97ef(0x2bc)];return _0x22eefd[_0xdf97ef(0x439)](this,_0xdf97ef(0x2bc),this['emojioneArea']=new _0x58916d(_0x22eefd(this),_0x4ad466)),this[_0xdf97ef(0x2bc)];});},_0x22eefd['fn'][_0x121165(0x2bc)][_0x121165(0x2b6)]=_0xa168c4(),_0x22eefd['fn'][_0x121165(0x3d5)]=function(_0x46feb4){var _0x554b33=_0x121165;_0x46feb4=_0x4b8f4e(_0x46feb4);var _0x22d31a=this,_0x4a6e9e={'shortnames':_0x46feb4&&typeof _0x46feb4[_0x554b33(0x43e)]!=='undefined'?_0x46feb4['shortnames']:!![],'emojiTemplate':_0x554b33(0x40d)+(_0x46feb4&&_0x46feb4['sprite']&&_0x497a36<0x3?_0x554b33(0x244)+_0x430fad:'emoji\x22\x20src=\x22{img}')+'\x22/>'};return _0x255b3a(_0x46feb4),_0x9351d9(function(){var _0x281c56=_0x554b33;_0x22d31a[_0x281c56(0x2fc)](function(){var _0xb482e7=_0x281c56,_0x1c515e=_0x22eefd(this);return!_0x1c515e[_0xb482e7(0x451)](_0xb482e7(0x23a))&&_0x1c515e['addClass']('emojionearea-text')[_0xb482e7(0x200)](_0x1aa197(_0x1c515e['is'](_0xb482e7(0x210))||_0x1c515e['is'](_0xb482e7(0x23c))?_0x1c515e[_0xb482e7(0x2cd)]():_0x1c515e[_0xb482e7(0x316)](),_0x4a6e9e)),_0x1c515e;});}),this;};},window));
+/*!
+ * EmojioneArea v3.4.1
+ * https://github.com/mervick/emojionearea
+ * Copyright Andrey Izman and other contributors
+ * Released under the MIT license
+ * Date: 2018-04-27T09:03Z
+ */
+window = ( typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {} );
+document = window.document || {};
+
+; ( function ( factory, global ) {
+    if ( typeof require === "function" && typeof exports === "object" && typeof module === "object" ) {
+
+        // CommonJS
+        factory( require( "jquery" ) );
+    } else if ( typeof define === "function" && define.amd ) {
+
+        // AMD
+        define( [ "jquery" ], factory );
+    } else {
+
+        // Normal script tag
+        factory( global.jQuery );
+    }
+}( function ( $ ) {
+    "use strict";
+
+    var unique = 0;
+    var eventStorage = {};
+    var possibleEvents = {};
+    var emojione = window.emojione;
+    var readyCallbacks = [];
+    function emojioneReady (fn) {
+        if (emojione) {
+            fn();
+        } else {
+            readyCallbacks.push(fn);
+        }
+    };
+    var blankImg = 'data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==';
+    var slice = [].slice;
+    var css_class = "emojionearea";
+    var emojioneSupportMode = 0;
+    var invisibleChar = '&#8203;';
+    function trigger(self, event, args) {
+        var result = true, j = 1;
+        if (event) {
+            event = event.toLowerCase();
+            do {
+                var _event = j==1 ? '@' + event : event;
+                if (eventStorage[self.id][_event] && eventStorage[self.id][_event].length) {
+                    $.each(eventStorage[self.id][_event], function (i, fn) {
+                        return result = fn.apply(self, args|| []) !== false;
+                    });
+                }
+            } while (result && !!j--);
+        }
+        return result;
+    }
+    function attach(self, element, events, target) {
+        target = target || function (event, callerEvent) { return $(callerEvent.currentTarget) };
+        $.each(events, function(event, link) {
+            event = $.isArray(events) ? link : event;
+            (possibleEvents[self.id][link] || (possibleEvents[self.id][link] = []))
+                .push([element, event, target]);
+        });
+    }
+    function getTemplate(template, unicode, shortname) {
+        var imageType = emojione.imageType, imagePath;
+        if (imageType=='svg'){
+            imagePath = emojione.imagePathSVG;
+        } else {
+            imagePath = emojione.imagePathPNG;
+        }
+        var friendlyName = '';
+        if (shortname) {
+            friendlyName = shortname.substr(1, shortname.length - 2).replace(/_/g, ' ').replace(/\w\S*/g, function(txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+        }
+        var fname = '';
+        if (unicode.uc_base && emojioneSupportMode > 4) {
+            fname = unicode.uc_base;
+            unicode = unicode.uc_output.toUpperCase();
+        } else {
+            fname = unicode;
+        }
+        template = template.replace('{name}', shortname || '')
+            .replace('{friendlyName}', friendlyName)
+            .replace('{img}', imagePath + (emojioneSupportMode < 2 ? fname.toUpperCase() : fname) + '.' + imageType)
+            .replace('{uni}', unicode);
+
+        if(shortname) {
+            template = template.replace('{alt}', emojione.shortnameToUnicode(shortname));
+        } else {
+            template = template.replace('{alt}', emojione.convert(unicode));
+        }
+
+        return template;
+    };
+    function shortnameTo(str, template, clear) {
+        return str.replace(/:?\+?[\w_\-]+:?/g, function(shortname) {
+            shortname = ":" + shortname.replace(/:$/,'').replace(/^:/,'') + ":";
+            var unicode = emojione.emojioneList[shortname];
+            if (unicode) {
+                if (emojioneSupportMode > 4) {
+                    return getTemplate(template, unicode, shortname);
+                } else {
+                    if (emojioneSupportMode > 3) unicode = unicode.unicode;
+                    return getTemplate(template, unicode[unicode.length-1], shortname);
+                }
+            }
+            return clear ? '' : shortname;
+        });
+    };
+    function pasteHtmlAtCaret(html) {
+        var sel, range;
+        if (window.getSelection) {
+            sel = window.getSelection();
+            if (sel.getRangeAt && sel.rangeCount) {
+                range = sel.getRangeAt(0);
+                range.deleteContents();
+                var el = document.createElement("div");
+                el.innerHTML = html;
+                var frag = document.createDocumentFragment(), node, lastNode;
+                while ( (node = el.firstChild) ) {
+                    lastNode = frag.appendChild(node);
+                }
+                range.insertNode(frag);
+                if (lastNode) {
+                    range = range.cloneRange();
+                    range.setStartAfter(lastNode);
+                    range.collapse(true);
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                }
+            }
+        } else if (document.selection && document.selection.type != "Control") {
+            document.selection.createRange().pasteHTML(html);
+        }
+    }
+    function getEmojioneVersion() {
+        return window.emojioneVersion || '3.1.2';
+    };
+    function isObject(variable) {
+        return typeof variable === 'object';
+    };
+    function detectVersion(emojione) {
+        var version;
+        if (emojione.cacheBustParam) {
+            version = emojione.cacheBustParam;
+            if (!isObject(emojione['jsEscapeMap'])) return '1.5.2';
+            if (version === "?v=1.2.4") return '2.0.0';
+            if (version === "?v=2.0.1") return '2.1.0'; // v2.0.1 || v2.1.0
+            if (version === "?v=2.1.1") return '2.1.1';
+            if (version === "?v=2.1.2") return '2.1.2';
+            if (version === "?v=2.1.3") return '2.1.3';
+            if (version === "?v=2.1.4") return '2.1.4';
+            if (version === "?v=2.2.7") return '2.2.7';
+            return '2.2.7';
+        } else {
+            return emojione.emojiVersion;
+        }
+    };
+    function getSupportMode(version) {
+        switch (version) {
+            case '1.5.2': return 0;
+            case '2.0.0': return 1;
+            case '2.1.0':
+            case '2.1.1': return 2;
+            case '2.1.2': return 3;
+            case '2.1.3':
+            case '2.1.4':
+            case '2.2.7': return 4;
+            case '3.0.1':
+            case '3.0.2':
+            case '3.0.3':
+            case '3.0': return 5;
+            case '3.1.0':
+            case '3.1.1':
+            case '3.1.2':
+            case '3.1':
+            default: return 6;
+        }
+    };
+    function getDefaultOptions () {
+        if ($.fn.emojioneArea && $.fn.emojioneArea.defaults) {
+            return $.fn.emojioneArea.defaults;
+        }
+
+        var defaultOptions = {
+            attributes: {
+                dir               : "ltr",
+                spellcheck        : false,
+                autocomplete      : "off",
+                autocorrect       : "off",
+                autocapitalize    : "off",
+            },
+            search            : true,
+            placeholder       : null,
+            emojiPlaceholder  : ":smiley:",
+            searchPlaceholder : "SEARCH",
+            container         : null,
+            hideSource        : true,
+            shortnames        : true,
+            sprite            : true,
+            pickerPosition    : "top", // top | bottom | right
+            filtersPosition   : "top", // top | bottom
+            searchPosition    : "top", // top | bottom
+            hidePickerOnBlur  : true,
+            buttonTitle       : "Use the TAB key to insert emoji faster",
+            tones             : true,
+            tonesStyle        : "bullet", // bullet | radio | square | checkbox
+            inline            : null, // null - auto
+            saveEmojisAs      : "unicode", // unicode | shortname | image
+            shortcuts         : true,
+            autocomplete      : true,
+            autocompleteTones : false,
+            standalone        : false,
+            useInternalCDN    : true, // Use the self loading mechanism
+            imageType         : "png", // Default image type used by internal CDN
+            recentEmojis      : true,
+            textcomplete: {
+                maxCount      : 15,
+                placement     : null // null - default | top | absleft | absright
+            }
+        };
+
+        var supportMode = !emojione ? getSupportMode(getEmojioneVersion()) : getSupportMode(detectVersion(emojione));
+
+        if (supportMode > 4) {
+            defaultOptions.filters = {
+                tones: {
+                    title: "Diversity",
+                    emoji: "open_hands raised_hands palms_up_together clap pray thumbsup thumbsdown punch fist left_facing_fist right_facing_fist " +
+                    "fingers_crossed v metal love_you_gesture ok_hand point_left point_right point_up_2 point_down point_up raised_hand " +
+                    "raised_back_of_hand hand_splayed vulcan wave call_me muscle middle_finger writing_hand selfie nail_care ear " +
+                    "nose baby boy girl man woman blond-haired_woman blond-haired_man older_man older_woman " +
+                    "man_with_chinese_cap woman_wearing_turban man_wearing_turban woman_police_officer " +
+                    "man_police_officer woman_construction_worker man_construction_worker " +
+                    "woman_guard man_guard woman_detective man_detective woman_health_worker man_health_worker " +
+                    "woman_farmer man_farmer woman_cook man_cook woman_student man_student woman_singer man_singer woman_teacher " +
+                    "man_teacher woman_factory_worker man_factory_worker woman_technologist man_technologist woman_office_worker " +
+                    "man_office_worker woman_mechanic man_mechanic woman_scientist man_scientist woman_artist man_artist " +
+                    "woman_firefighter man_firefighter woman_pilot man_pilot woman_astronaut man_astronaut woman_judge " +
+                    "man_judge mrs_claus santa princess prince bride_with_veil man_in_tuxedo angel pregnant_woman " +
+                    "breast_feeding woman_bowing man_bowing man_tipping_hand woman_tipping_hand " +
+                    "man_gesturing_no woman_gesturing_no man_gesturing_ok woman_gesturing_ok " +
+                    "man_raising_hand woman_raising_hand woman_facepalming man_facepalming " +
+                    "woman_shrugging man_shrugging man_pouting woman_pouting " +
+                    "man_frowning woman_frowning man_getting_haircut woman_getting_haircut " +
+                    "man_getting_face_massage woman_getting_face_massage man_in_business_suit_levitating dancer man_dancing " +
+                    "woman_walking man_walking woman_running man_running adult child older_adult " +
+                    "bearded_person woman_with_headscarf woman_mage man_mage " +
+                    "woman_fairy man_fairy woman_vampire man_vampire mermaid merman woman_elf man_elf " +
+                    "snowboarder woman_lifting_weights man_lifting_weights woman_cartwheeling " +
+                    "man_cartwheeling woman_bouncing_ball man_bouncing_ball " +
+                    "woman_playing_handball man_playing_handball woman_golfing man_golfing " +
+                    "woman_surfing man_surfing woman_swimming man_swimming woman_playing_water_polo " +
+                    "man_playing_water_polo woman_rowing_boat man_rowing_boat " +
+                    "horse_racing woman_biking man_biking woman_mountain_biking " +
+                    "man_mountain_biking woman_juggling man_juggling " +
+                    "woman_in_steamy_room man_in_steamy_room woman_climbing " +
+                    "man_climbing woman_in_lotus_position man_in_lotus_position bath person_in_bed"
+                },
+
+                recent: {
+                    icon: "clock3",
+                    title: "Recent",
+                    emoji: ""
+                },
+
+                smileys_people: {
+                    icon: "yum",
+                    title: "Smileys & People",
+                    emoji: "grinning smiley smile grin laughing sweat_smile joy rofl relaxed blush innocent slight_smile upside_down " +
+                    "wink relieved crazy_face star_struck heart_eyes kissing_heart kissing kissing_smiling_eyes kissing_closed_eyes yum " +
+                    "stuck_out_tongue_winking_eye stuck_out_tongue_closed_eyes stuck_out_tongue money_mouth hugging nerd sunglasses " +
+                    "cowboy smirk unamused disappointed pensive worried face_with_raised_eyebrow face_with_monocle confused slight_frown " +
+                    "frowning2 persevere confounded tired_face weary triumph angry rage face_with_symbols_over_mouth " +
+                    "no_mouth neutral_face expressionless hushed frowning anguished open_mouth astonished dizzy_face exploding_head flushed scream " +
+                    "fearful cold_sweat cry disappointed_relieved drooling_face sob sweat sleepy sleeping rolling_eyes thinking " +
+                    "shushing_face face_with_hand_over_mouth lying_face grimacing zipper_mouth face_vomiting nauseated_face sneezing_face mask thermometer_face " +
+                    "head_bandage smiling_imp imp japanese_ogre japanese_goblin poop ghost skull skull_crossbones alien space_invader " +
+                    "robot jack_o_lantern clown smiley_cat smile_cat joy_cat heart_eyes_cat smirk_cat kissing_cat scream_cat crying_cat_face " +
+                    "pouting_cat open_hands raised_hands palms_up_together clap pray handshake thumbsup thumbsdown punch fist left_facing_fist " +
+                    "right_facing_fist fingers_crossed v metal love_you_gesture ok_hand point_left point_right point_up_2 point_down point_up " +
+                    "raised_hand raised_back_of_hand hand_splayed vulcan wave call_me muscle middle_finger writing_hand selfie " +
+                    "nail_care ring lipstick kiss lips tongue ear nose footprints eye eyes speaking_head bust_in_silhouette " +
+                    "busts_in_silhouette baby boy girl man woman blond-haired_woman blond_haired_man older_man older_woman " +
+                    "man_with_chinese_cap woman_wearing_turban man_wearing_turban woman_police_officer police_officer " +
+                    "woman_construction_worker construction_worker woman_guard guard woman_detective detective woman_health_worker " +
+                    "man_health_worker woman_farmer man_farmer woman_cook man_cook woman_student man_student woman_singer man_singer " +
+                    "woman_teacher man_teacher woman_factory_worker man_factory_worker woman_technologist man_technologist " +
+                    "woman_office_worker man_office_worker woman_mechanic man_mechanic woman_scientist man_scientist woman_artist " +
+                    "man_artist woman_firefighter man_firefighter woman_pilot man_pilot woman_astronaut man_astronaut woman_judge " +
+                    "man_judge mrs_claus santa princess prince bride_with_veil man_in_tuxedo angel pregnant_woman breast_feeding woman_bowing " +
+                    "man_bowing woman_tipping_hand man_tipping_hand woman_gesturing_no man_gesturing_no woman_gesturing_ok " +
+                    "man_gesturing_ok woman_raising_hand man_raising_hand woman_facepalming man_facepalming woman_shrugging " +
+                    "man_shrugging woman_pouting man_pouting woman_frowning man_frowning woman_getting_haircut man_getting_haircut " +
+                    "woman_getting_face_massage man_getting_face_massage man_in_business_suit_levitating dancer man_dancing women_with_bunny_ears_partying " +
+                    "men_with_bunny_ears_partying woman_walking man_walking woman_running man_running couple two_women_holding_hands " +
+                    "two_men_holding_hands couple_with_heart couple_ww couple_mm couplekiss kiss_ww kiss_mm family family_mwg family_mwgb " +
+                    "family_mwbb family_mwgg family_wwb family_wwg family_wwgb family_wwbb family_wwgg family_mmb family_mmg family_mmgb " +
+                    "family_mmbb family_mmgg family_woman_boy family_woman_girl family_woman_girl_boy family_woman_boy_boy " +
+                    "family_woman_girl_girl family_man_boy family_man_girl family_man_girl_boy family_man_boy_boy family_man_girl_girl " +
+                    "bearded_person woman_with_headscarf woman_mage man_mage woman_fairy man_fairy woman_vampire man_vampire " +
+                    "mermaid merman woman_elf man_elf woman_genie man_genie woman_zombie man_zombie " +
+                    "womans_clothes shirt jeans necktie dress bikini kimono high_heel sandal boot mans_shoe athletic_shoe womans_hat " +
+                    "tophat mortar_board crown helmet_with_cross school_satchel pouch purse handbag briefcase eyeglasses dark_sunglasses " +
+                    "closed_umbrella umbrella2 brain billed_cap scarf gloves coat socks "
+                },
+
+                animals_nature: {
+                    icon: "hamster",
+                    title: "Animals & Nature",
+                    emoji: "dog cat mouse hamster rabbit fox bear panda_face koala tiger lion_face cow pig pig_nose frog monkey_face see_no_evil " +
+                    "hear_no_evil speak_no_evil monkey chicken penguin bird baby_chick hatching_chick hatched_chick duck eagle owl bat wolf boar " +
+                    "horse unicorn bee bug butterfly snail shell beetle ant spider spider_web turtle snake lizard scorpion crab squid octopus shrimp " +
+                    "tropical_fish fish blowfish dolphin shark whale whale2 crocodile leopard tiger2 water_buffalo ox cow2 deer dromedary_camel camel " +
+                    "elephant rhino gorilla racehorse pig2 goat ram sheep dog2 poodle cat2 rooster turkey dove rabbit2 mouse2 rat chipmunk dragon " +
+                    "giraffe zebra hedgehog sauropod t_rex cricket dragon_face feet cactus christmas_tree evergreen_tree deciduous_tree palm_tree seedling herb shamrock four_leaf_clover " +
+                    "bamboo tanabata_tree leaves fallen_leaf maple_leaf mushroom ear_of_rice bouquet tulip rose wilted_rose sunflower blossom " +
+                    "cherry_blossom hibiscus earth_americas earth_africa earth_asia full_moon waning_gibbous_moon last_quarter_moon " +
+                    "waning_crescent_moon new_moon waxing_crescent_moon first_quarter_moon waxing_gibbous_moon new_moon_with_face " +
+                    "full_moon_with_face sun_with_face first_quarter_moon_with_face last_quarter_moon_with_face crescent_moon dizzy star star2 " +
+                    "sparkles zap fire boom comet sunny white_sun_small_cloud partly_sunny white_sun_cloud white_sun_rain_cloud rainbow cloud " +
+                    "cloud_rain thunder_cloud_rain cloud_lightning cloud_snow snowman2 snowman snowflake wind_blowing_face dash cloud_tornado " +
+                    "fog ocean droplet sweat_drops umbrella "
+                },
+
+                food_drink: {
+                    icon: "pizza",
+                    title: "Food & Drink",
+                    emoji: "green_apple apple pear tangerine lemon banana watermelon grapes strawberry melon cherries peach pineapple kiwi " +
+                    "avocado tomato eggplant cucumber carrot corn hot_pepper potato sweet_potato chestnut peanuts honey_pot croissant " +
+                    "bread french_bread cheese egg cooking bacon pancakes fried_shrimp poultry_leg meat_on_bone pizza hotdog hamburger " +
+                    "fries stuffed_flatbread taco burrito salad shallow_pan_of_food spaghetti ramen stew fish_cake sushi bento curry " +
+                    "rice_ball rice rice_cracker oden dango shaved_ice ice_cream icecream cake birthday custard lollipop candy " +
+                    "chocolate_bar popcorn doughnut cookie milk baby_bottle coffee tea sake beer beers champagne_glass wine_glass " +
+                    "tumbler_glass cocktail tropical_drink champagne spoon fork_and_knife fork_knife_plate dumpling fortune_cookie " +
+                    "takeout_box chopsticks bowl_with_spoon cup_with_straw coconut broccoli pie pretzel cut_of_meat sandwich canned_food"
+                },
+
+                activity: {
+                    icon: "basketball",
+                    title: "Activity",
+                    emoji: "soccer basketball football baseball tennis volleyball rugby_football 8ball ping_pong badminton goal hockey field_hockey " +
+                    "cricket_game golf bow_and_arrow fishing_pole_and_fish boxing_glove martial_arts_uniform ice_skate ski skier snowboarder " +
+                    "woman_lifting_weights man_lifting_weights person_fencing women_wrestling men_wrestling woman_cartwheeling " +
+                    "man_cartwheeling woman_bouncing_ball man_bouncing_ball woman_playing_handball man_playing_handball woman_golfing " +
+                    "man_golfing woman_surfing man_surfing woman_swimming man_swimming woman_playing_water_polo " +
+                    "man_playing_water_polo woman_rowing_boat man_rowing_boat horse_racing woman_biking man_biking woman_mountain_biking man_mountain_biking " +
+                    "woman_in_steamy_room man_in_steamy_room woman_climbing man_climbing woman_in_lotus_position man_in_lotus_position " +
+                    "running_shirt_with_sash medal military_medal first_place second_place " +
+                    "third_place trophy rosette reminder_ribbon ticket tickets circus_tent woman_juggling man_juggling performing_arts art " +
+                    "clapper microphone headphones musical_score musical_keyboard drum saxophone trumpet guitar violin game_die dart bowling " +
+                    "video_game slot_machine sled curling_stone "
+                },
+
+                travel_places: {
+                    icon: "rocket",
+                    title: "Travel & Places",
+                    emoji: "red_car taxi blue_car bus trolleybus race_car police_car ambulance fire_engine minibus truck articulated_lorry tractor " +
+                    "scooter bike motor_scooter motorcycle rotating_light oncoming_police_car oncoming_bus oncoming_automobile oncoming_taxi " +
+                    "aerial_tramway mountain_cableway suspension_railway railway_car train mountain_railway monorail bullettrain_side " +
+                    "bullettrain_front light_rail steam_locomotive train2 metro tram station helicopter airplane_small airplane " +
+                    "airplane_departure airplane_arriving rocket satellite_orbital seat canoe sailboat motorboat speedboat cruise_ship " +
+                    "ferry ship anchor construction fuelpump busstop vertical_traffic_light traffic_light map moyai statue_of_liberty " +
+                    "fountain tokyo_tower european_castle japanese_castle stadium ferris_wheel roller_coaster carousel_horse beach_umbrella " +
+                    "beach island mountain mountain_snow mount_fuji volcano desert camping tent railway_track motorway construction_site " +
+                    "factory house house_with_garden homes house_abandoned office department_store post_office european_post_office hospital " +
+                    "bank hotel convenience_store school love_hotel wedding classical_building church mosque synagogue kaaba shinto_shrine " +
+                    "japan rice_scene park sunrise sunrise_over_mountains stars sparkler fireworks city_sunset city_dusk cityscape " +
+                    "night_with_stars milky_way bridge_at_night foggy flying_saucer"
+                },
+
+                objects: {
+                    icon: "bulb",
+                    title: "Objects",
+                    emoji: "watch iphone calling computer keyboard desktop printer mouse_three_button trackball joystick compression minidisc " +
+                    "floppy_disk cd dvd vhs camera camera_with_flash video_camera movie_camera projector film_frames telephone_receiver " +
+                    "telephone pager fax tv radio microphone2 level_slider control_knobs stopwatch timer alarm_clock clock hourglass " +
+                    "hourglass_flowing_sand satellite battery electric_plug bulb flashlight candle wastebasket oil money_with_wings " +
+                    "dollar yen euro pound moneybag credit_card gem scales wrench hammer hammer_pick tools pick nut_and_bolt gear " +
+                    "chains gun bomb knife dagger crossed_swords shield smoking coffin urn amphora crystal_ball prayer_beads barber " +
+                    "alembic telescope microscope hole pill syringe thermometer toilet potable_water shower bathtub bath bellhop key " +
+                    "key2 door couch bed sleeping_accommodation frame_photo shopping_bags shopping_cart gift balloon flags ribbon " +
+                    "confetti_ball tada dolls izakaya_lantern wind_chime envelope envelope_with_arrow incoming_envelope e-mail " +
+                    "love_letter inbox_tray outbox_tray package label mailbox_closed mailbox mailbox_with_mail mailbox_with_no_mail " +
+                    "postbox postal_horn scroll page_with_curl page_facing_up bookmark_tabs bar_chart chart_with_upwards_trend " +
+                    "chart_with_downwards_trend notepad_spiral calendar_spiral calendar date card_index card_box ballot_box " +
+                    "file_cabinet clipboard file_folder open_file_folder dividers newspaper2 newspaper notebook " +
+                    "notebook_with_decorative_cover ledger closed_book green_book blue_book orange_book books book bookmark link " +
+                    "paperclip paperclips triangular_ruler straight_ruler pushpin round_pushpin scissors pen_ballpoint pen_fountain " +
+                    "black_nib paintbrush crayon pencil pencil2 mag mag_right lock_with_ink_pen closed_lock_with_key lock unlock"
+                },
+
+                symbols: {
+                    icon: "heartpulse",
+                    title: "Symbols",
+                    emoji: "heart orange_heart yellow_heart green_heart blue_heart purple_heart black_heart broken_heart heart_exclamation two_hearts " +
+                    "revolving_hearts heartbeat heartpulse sparkling_heart cupid gift_heart heart_decoration peace cross star_and_crescent " +
+                    "om_symbol wheel_of_dharma star_of_david six_pointed_star menorah yin_yang orthodox_cross place_of_worship ophiuchus " +
+                    "aries taurus gemini cancer leo virgo libra scorpius sagittarius capricorn aquarius pisces id atom accept radioactive " +
+                    "biohazard mobile_phone_off vibration_mode u6709 u7121 u7533 u55b6 u6708 eight_pointed_black_star vs white_flower " +
+                    "ideograph_advantage secret congratulations u5408 u6e80 u5272 u7981 a b ab cl o2 sos x o octagonal_sign no_entry " +
+                    "name_badge no_entry_sign 100 anger hotsprings no_pedestrians do_not_litter no_bicycles non-potable_water underage " +
+                    "no_mobile_phones no_smoking exclamation grey_exclamation question grey_question bangbang interrobang low_brightness " +
+                    "high_brightness part_alternation_mark warning children_crossing trident fleur-de-lis beginner recycle " +
+                    "white_check_mark u6307 chart sparkle eight_spoked_asterisk negative_squared_cross_mark globe_with_meridians " +
+                    "diamond_shape_with_a_dot_inside m cyclone zzz atm wc wheelchair parking u7a7a sa passport_control customs " +
+                    "baggage_claim left_luggage mens womens baby_symbol restroom put_litter_in_its_place cinema signal_strength koko " +
+                    "symbols information_source abc abcd capital_abcd ng ok up cool new free zero one two three four five six seven " +
+                    "eight nine keycap_ten 1234 hash asterisk arrow_forward pause_button play_pause stop_button record_button eject " +
+                    "track_next track_previous fast_forward rewind arrow_double_up arrow_double_down arrow_backward arrow_up_small " +
+                    "arrow_down_small arrow_right arrow_left arrow_up arrow_down arrow_upper_right arrow_lower_right arrow_lower_left " +
+                    "arrow_upper_left arrow_up_down left_right_arrow arrow_right_hook leftwards_arrow_with_hook arrow_heading_up " +
+                    "arrow_heading_down twisted_rightwards_arrows repeat repeat_one arrows_counterclockwise arrows_clockwise " +
+                    "musical_note notes heavy_plus_sign heavy_minus_sign heavy_division_sign heavy_multiplication_x heavy_dollar_sign " +
+                    "currency_exchange tm copyright registered wavy_dash curly_loop loop end back on top soon heavy_check_mark " +
+                    "ballot_box_with_check radio_button white_circle black_circle red_circle blue_circle small_red_triangle " +
+                    "small_red_triangle_down small_orange_diamond small_blue_diamond large_orange_diamond large_blue_diamond " +
+                    "white_square_button black_square_button black_small_square white_small_square black_medium_small_square " +
+                    "white_medium_small_square black_medium_square white_medium_square black_large_square white_large_square speaker " +
+                    "mute sound loud_sound bell no_bell mega loudspeaker speech_left eye_in_speech_bubble speech_balloon thought_balloon " +
+                    "anger_right spades clubs hearts diamonds black_joker flower_playing_cards mahjong clock1 clock2 clock3 clock4 clock5 " +
+                    "clock6 clock7 clock8 clock9 clock10 clock11 clock12 clock130 clock230 clock330 clock430 clock530 clock630 " +
+                    "clock730 clock830 clock930 clock1030 clock1130 clock1230"
+                },
+
+                flags: {
+                    icon: "flag_gb",
+                    title: "Flags",
+                    emoji: "flag_white flag_black checkered_flag triangular_flag_on_post rainbow_flag flag_af flag_ax flag_al flag_dz flag_as " +
+                    "flag_ad flag_ao flag_ai flag_aq flag_ag flag_ar flag_am flag_aw flag_au flag_at flag_az flag_bs flag_bh flag_bd flag_bb " +
+                    "flag_by flag_be flag_bz flag_bj flag_bm flag_bt flag_bo flag_ba flag_bw flag_br flag_io flag_vg flag_bn flag_bg flag_bf " +
+                    "flag_bi flag_kh flag_cm flag_ca flag_ic flag_cv flag_bq flag_ky flag_cf flag_td flag_cl flag_cn flag_cx flag_cc flag_co " +
+                    "flag_km flag_cg flag_cd flag_ck flag_cr flag_ci flag_hr flag_cu flag_cw flag_cy flag_cz flag_dk flag_dj flag_dm flag_do " +
+                    "flag_ec flag_eg flag_sv flag_gq flag_er flag_ee flag_et flag_eu flag_fk flag_fo flag_fj flag_fi flag_fr flag_gf flag_pf " +
+                    "flag_tf flag_ga flag_gm flag_ge flag_de flag_gh flag_gi flag_gr flag_gl flag_gd flag_gp flag_gu flag_gt flag_gg flag_gn " +
+                    "flag_gw flag_gy flag_ht flag_hn flag_hk flag_hu flag_is flag_in flag_id flag_ir flag_iq flag_ie flag_im flag_il flag_it " +
+                    "flag_jm flag_jp crossed_flags flag_je flag_jo flag_kz flag_ke flag_ki flag_xk flag_kw flag_kg flag_la flag_lv flag_lb " +
+                    "flag_ls flag_lr flag_ly flag_li flag_lt flag_lu flag_mo flag_mk flag_mg flag_mw flag_my flag_mv flag_ml flag_mt flag_mh " +
+                    "flag_mq flag_mr flag_mu flag_yt flag_mx flag_fm flag_md flag_mc flag_mn flag_me flag_ms flag_ma flag_mz flag_mm flag_na " +
+                    "flag_nr flag_np flag_nl flag_nc flag_nz flag_ni flag_ne flag_ng flag_nu flag_nf flag_kp flag_mp flag_no flag_om flag_pk " +
+                    "flag_pw flag_ps flag_pa flag_pg flag_py flag_pe flag_ph flag_pn flag_pl flag_pt flag_pr flag_qa flag_re flag_ro flag_ru " +
+                    "flag_rw flag_ws flag_sm flag_st flag_sa flag_sn flag_rs flag_sc flag_sl flag_sg flag_sx flag_sk flag_si flag_gs flag_sb " +
+                    "flag_so flag_za flag_kr flag_ss flag_es flag_lk flag_bl flag_sh flag_kn flag_lc flag_pm flag_vc flag_sd flag_sr flag_sz " +
+                    "flag_se flag_ch flag_sy flag_tw flag_tj flag_tz flag_th flag_tl flag_tg flag_tk flag_to flag_tt flag_tn flag_tr flag_tm " +
+                    "flag_tc flag_tv flag_vi flag_ug flag_ua flag_ae flag_gb flag_us flag_uy flag_uz flag_vu flag_va flag_ve flag_vn flag_wf " +
+                    "flag_eh flag_ye flag_zm flag_zw flag_ac flag_ta flag_bv flag_hm flag_sj flag_um flag_ea flag_cp flag_dg flag_mf " +
+                    "united_nations england scotland wales"
+                }
+            };
+        } else {
+            defaultOptions.filters = {
+                tones: {
+                    title: "Diversity",
+                    emoji: "santa runner surfer swimmer lifter ear nose point_up_2 point_down point_left point_right punch " +
+                    "wave ok_hand thumbsup thumbsdown clap open_hands boy girl man woman cop bride_with_veil person_with_blond_hair " +
+                    "man_with_gua_pi_mao man_with_turban older_man grandma baby construction_worker princess angel " +
+                    "information_desk_person guardsman dancer nail_care massage haircut muscle spy hand_splayed middle_finger " +
+                    "vulcan no_good ok_woman bow raising_hand raised_hands person_frowning person_with_pouting_face pray rowboat " +
+                    "bicyclist mountain_bicyclist walking bath metal point_up basketball_player fist raised_hand v writing_hand"
+                },
+
+                recent: {
+                    icon: "clock3",
+                    title: "Recent",
+                    emoji: ""
+                },
+
+                smileys_people: {
+                    icon: "yum",
+                    title: "Smileys & People",
+                    emoji: "grinning grimacing grin joy smiley smile sweat_smile laughing innocent wink blush slight_smile " +
+                    "upside_down relaxed yum relieved heart_eyes kissing_heart kissing kissing_smiling_eyes " +
+                    "kissing_closed_eyes stuck_out_tongue_winking_eye stuck_out_tongue_closed_eyes stuck_out_tongue " +
+                    "money_mouth nerd sunglasses hugging smirk no_mouth neutral_face expressionless unamused rolling_eyes " +
+                    "thinking flushed disappointed worried angry rage pensive confused slight_frown frowning2 persevere " +
+                    "confounded tired_face weary triumph open_mouth scream fearful cold_sweat hushed frowning anguished " +
+                    "cry disappointed_relieved sleepy sweat sob dizzy_face astonished zipper_mouth mask thermometer_face " +
+                    "head_bandage sleeping zzz poop smiling_imp imp japanese_ogre japanese_goblin skull ghost alien robot " +
+                    "smiley_cat smile_cat joy_cat heart_eyes_cat smirk_cat kissing_cat scream_cat crying_cat_face " +
+                    "pouting_cat raised_hands clap wave thumbsup thumbsdown punch fist v ok_hand raised_hand open_hands " +
+                    "muscle pray point_up point_up_2 point_down point_left point_right middle_finger hand_splayed metal " +
+                    "vulcan writing_hand nail_care lips tongue ear nose eye eyes bust_in_silhouette busts_in_silhouette " +
+                    "speaking_head baby boy girl man woman person_with_blond_hair older_man older_woman man_with_gua_pi_mao " +
+                    "man_with_turban cop construction_worker guardsman spy santa angel princess bride_with_veil walking " +
+                    "runner dancer dancers couple two_men_holding_hands two_women_holding_hands bow information_desk_person " +
+                    "no_good ok_woman raising_hand person_with_pouting_face person_frowning haircut massage couple_with_heart " +
+                    "couple_ww couple_mm couplekiss kiss_ww kiss_mm family family_mwg family_mwgb family_mwbb family_mwgg " +
+                    "family_wwb family_wwg family_wwgb family_wwbb family_wwgg family_mmb family_mmg family_mmgb family_mmbb " +
+                    "family_mmgg womans_clothes shirt jeans necktie dress bikini kimono lipstick kiss footprints high_heel " +
+                    "sandal boot mans_shoe athletic_shoe womans_hat tophat helmet_with_cross mortar_board crown school_satchel " +
+                    "pouch purse handbag briefcase eyeglasses dark_sunglasses ring closed_umbrella"
+                },
+
+                animals_nature: {
+                    icon: "hamster",
+                    title: "Animals & Nature",
+                    emoji: "dog cat mouse hamster rabbit bear panda_face koala tiger lion_face cow pig pig_nose frog " +
+                    "octopus monkey_face see_no_evil hear_no_evil speak_no_evil monkey chicken penguin bird baby_chick " +
+                    "hatching_chick hatched_chick wolf boar horse unicorn bee bug snail beetle ant spider scorpion crab " +
+                    "snake turtle tropical_fish fish blowfish dolphin whale whale2 crocodile leopard tiger2 water_buffalo " +
+                    "ox cow2 dromedary_camel camel elephant goat ram sheep racehorse pig2 rat mouse2 rooster turkey dove " +
+                    "dog2 poodle cat2 rabbit2 chipmunk feet dragon dragon_face cactus christmas_tree evergreen_tree " +
+                    "deciduous_tree palm_tree seedling herb shamrock four_leaf_clover bamboo tanabata_tree leaves " +
+                    "fallen_leaf maple_leaf ear_of_rice hibiscus sunflower rose tulip blossom cherry_blossom bouquet " +
+                    "mushroom chestnut jack_o_lantern shell spider_web earth_americas earth_africa earth_asia full_moon " +
+                    "waning_gibbous_moon last_quarter_moon waning_crescent_moon new_moon waxing_crescent_moon " +
+                    "first_quarter_moon waxing_gibbous_moon new_moon_with_face full_moon_with_face first_quarter_moon_with_face " +
+                    "last_quarter_moon_with_face sun_with_face crescent_moon star star2 dizzy sparkles comet sunny " +
+                    "white_sun_small_cloud partly_sunny white_sun_cloud white_sun_rain_cloud cloud cloud_rain " +
+                    "thunder_cloud_rain cloud_lightning zap fire boom snowflake cloud_snow snowman2 snowman wind_blowing_face " +
+                    "dash cloud_tornado fog umbrella2 umbrella droplet sweat_drops ocean"
+                },
+
+                food_drink: {
+                    icon: "pizza",
+                    title: "Food & Drink",
+                    emoji: "green_apple apple pear tangerine lemon banana watermelon grapes strawberry melon cherries peach " +
+                    "pineapple tomato eggplant hot_pepper corn sweet_potato honey_pot bread cheese poultry_leg meat_on_bone " +
+                    "fried_shrimp egg hamburger fries hotdog pizza spaghetti taco burrito ramen stew fish_cake sushi bento " +
+                    "curry rice_ball rice rice_cracker oden dango shaved_ice ice_cream icecream cake birthday custard candy " +
+                    "lollipop chocolate_bar popcorn doughnut cookie beer beers wine_glass cocktail tropical_drink champagne " +
+                    "sake tea coffee baby_bottle fork_and_knife fork_knife_plate"
+                },
+
+                activity: {
+                    icon: "basketball",
+                    title: "Activity",
+                    emoji: "soccer basketball football baseball tennis volleyball rugby_football 8ball golf golfer ping_pong " +
+                    "badminton hockey field_hockey cricket ski skier snowboarder ice_skate bow_and_arrow fishing_pole_and_fish " +
+                    "rowboat swimmer surfer bath basketball_player lifter bicyclist mountain_bicyclist horse_racing levitate " +
+                    "trophy running_shirt_with_sash medal military_medal reminder_ribbon rosette ticket tickets performing_arts " +
+                    "art circus_tent microphone headphones musical_score musical_keyboard saxophone trumpet guitar violin " +
+                    "clapper video_game space_invader dart game_die slot_machine bowling"
+                },
+
+                travel_places: {
+                    icon: "rocket",
+                    title: "Travel & Places",
+                    emoji: "red_car taxi blue_car bus trolleybus race_car police_car ambulance fire_engine minibus truck " +
+                    "articulated_lorry tractor motorcycle bike rotating_light oncoming_police_car oncoming_bus " +
+                    "oncoming_automobile oncoming_taxi aerial_tramway mountain_cableway suspension_railway railway_car " +
+                    "train monorail bullettrain_side bullettrain_front light_rail mountain_railway steam_locomotive train2 " +
+                    "metro tram station helicopter airplane_small airplane airplane_departure airplane_arriving sailboat " +
+                    "motorboat speedboat ferry cruise_ship rocket satellite_orbital seat anchor construction fuelpump busstop " +
+                    "vertical_traffic_light traffic_light checkered_flag ship ferris_wheel roller_coaster carousel_horse " +
+                    "construction_site foggy tokyo_tower factory fountain rice_scene mountain mountain_snow mount_fuji volcano " +
+                    "japan camping tent park motorway railway_track sunrise sunrise_over_mountains desert beach island " +
+                    "city_sunset city_dusk cityscape night_with_stars bridge_at_night milky_way stars sparkler fireworks " +
+                    "rainbow homes european_castle japanese_castle stadium statue_of_liberty house house_with_garden " +
+                    "house_abandoned office department_store post_office european_post_office hospital bank hotel " +
+                    "convenience_store school love_hotel wedding classical_building church mosque synagogue kaaba shinto_shrine"
+                },
+
+                objects: {
+                    icon: "bulb",
+                    title: "Objects",
+                    emoji: "watch iphone calling computer keyboard desktop printer mouse_three_button trackball joystick " +
+                    "compression minidisc floppy_disk cd dvd vhs camera camera_with_flash video_camera movie_camera projector " +
+                    "film_frames telephone_receiver telephone pager fax tv radio microphone2 level_slider control_knobs " +
+                    "stopwatch timer alarm_clock clock hourglass_flowing_sand hourglass satellite battery electric_plug bulb " +
+                    "flashlight candle wastebasket oil money_with_wings dollar yen euro pound moneybag credit_card gem scales " +
+                    "wrench hammer hammer_pick tools pick nut_and_bolt gear chains gun bomb knife dagger crossed_swords shield " +
+                    "smoking skull_crossbones coffin urn amphora crystal_ball prayer_beads barber alembic telescope microscope " +
+                    "hole pill syringe thermometer label bookmark toilet shower bathtub key key2 couch sleeping_accommodation " +
+                    "bed door bellhop frame_photo map beach_umbrella moyai shopping_bags balloon flags ribbon gift confetti_ball " +
+                    "tada dolls wind_chime crossed_flags izakaya_lantern envelope envelope_with_arrow incoming_envelope e-mail " +
+                    "love_letter postbox mailbox_closed mailbox mailbox_with_mail mailbox_with_no_mail package postal_horn " +
+                    "inbox_tray outbox_tray scroll page_with_curl bookmark_tabs bar_chart chart_with_upwards_trend " +
+                    "chart_with_downwards_trend page_facing_up date calendar calendar_spiral card_index card_box ballot_box " +
+                    "file_cabinet clipboard notepad_spiral file_folder open_file_folder dividers newspaper2 newspaper notebook " +
+                    "closed_book green_book blue_book orange_book notebook_with_decorative_cover ledger books book link " +
+                    "paperclip paperclips scissors triangular_ruler straight_ruler pushpin round_pushpin triangular_flag_on_post " +
+                    "flag_white flag_black closed_lock_with_key lock unlock lock_with_ink_pen pen_ballpoint pen_fountain " +
+                    "black_nib pencil pencil2 crayon paintbrush mag mag_right"
+                },
+
+                symbols: {
+                    icon: "heartpulse",
+                    title: "Symbols",
+                    emoji: "heart yellow_heart green_heart blue_heart purple_heart broken_heart heart_exclamation two_hearts " +
+                    "revolving_hearts heartbeat heartpulse sparkling_heart cupid gift_heart heart_decoration peace cross " +
+                    "star_and_crescent om_symbol wheel_of_dharma star_of_david six_pointed_star menorah yin_yang orthodox_cross " +
+                    "place_of_worship ophiuchus aries taurus gemini cancer leo virgo libra scorpius sagittarius capricorn " +
+                    "aquarius pisces id atom u7a7a u5272 radioactive biohazard mobile_phone_off vibration_mode u6709 u7121 " +
+                    "u7533 u55b6 u6708 eight_pointed_black_star vs accept white_flower ideograph_advantage secret congratulations " +
+                    "u5408 u6e80 u7981 a b ab cl o2 sos no_entry name_badge no_entry_sign x o anger hotsprings no_pedestrians " +
+                    "do_not_litter no_bicycles non-potable_water underage no_mobile_phones exclamation grey_exclamation question " +
+                    "grey_question bangbang interrobang 100 low_brightness high_brightness trident fleur-de-lis part_alternation_mark " +
+                    "warning children_crossing beginner recycle u6307 chart sparkle eight_spoked_asterisk negative_squared_cross_mark " +
+                    "white_check_mark diamond_shape_with_a_dot_inside cyclone loop globe_with_meridians m atm sa passport_control " +
+                    "customs baggage_claim left_luggage wheelchair no_smoking wc parking potable_water mens womens baby_symbol " +
+                    "restroom put_litter_in_its_place cinema signal_strength koko ng ok up cool new free zero one two three four " +
+                    "five six seven eight nine ten 1234 arrow_forward pause_button play_pause stop_button record_button track_next " +
+                    "track_previous fast_forward rewind twisted_rightwards_arrows repeat repeat_one arrow_backward arrow_up_small " +
+                    "arrow_down_small arrow_double_up arrow_double_down arrow_right arrow_left arrow_up arrow_down arrow_upper_right " +
+                    "arrow_lower_right arrow_lower_left arrow_upper_left arrow_up_down left_right_arrow arrows_counterclockwise " +
+                    "arrow_right_hook leftwards_arrow_with_hook arrow_heading_up arrow_heading_down hash asterisk information_source " +
+                    "abc abcd capital_abcd symbols musical_note notes wavy_dash curly_loop heavy_check_mark arrows_clockwise " +
+                    "heavy_plus_sign heavy_minus_sign heavy_division_sign heavy_multiplication_x heavy_dollar_sign currency_exchange " +
+                    "copyright registered tm end back on top soon ballot_box_with_check radio_button white_circle black_circle " +
+                    "red_circle large_blue_circle small_orange_diamond small_blue_diamond large_orange_diamond large_blue_diamond " +
+                    "small_red_triangle black_small_square white_small_square black_large_square white_large_square small_red_triangle_down " +
+                    "black_medium_square white_medium_square black_medium_small_square white_medium_small_square black_square_button " +
+                    "white_square_button speaker sound loud_sound mute mega loudspeaker bell no_bell black_joker mahjong spades " +
+                    "clubs hearts diamonds flower_playing_cards thought_balloon anger_right speech_balloon clock1 clock2 clock3 " +
+                    "clock4 clock5 clock6 clock7 clock8 clock9 clock10 clock11 clock12 clock130 clock230 clock330 clock430 " +
+                    "clock530 clock630 clock730 clock830 clock930 clock1030 clock1130 clock1230 eye_in_speech_bubble"
+                },
+
+                flags: {
+                    icon: "flag_gb",
+                    title: "Flags",
+                    emoji: "ac af al dz ad ao ai ag ar am aw au at az bs bh bd bb by be bz bj bm bt bo ba bw br bn bg bf bi " +
+                    "cv kh cm ca ky cf td flag_cl cn co km cg flag_cd cr hr cu cy cz dk dj dm do ec eg sv gq er ee et fk fo " +
+                    "fj fi fr pf ga gm ge de gh gi gr gl gd gu gt gn gw gy ht hn hk hu is in flag_id ir iq ie il it ci jm jp " +
+                    "je jo kz ke ki xk kw kg la lv lb ls lr ly li lt lu mo mk mg mw my mv ml mt mh mr mu mx fm md mc mn me " +
+                    "ms ma mz mm na nr np nl nc nz ni ne flag_ng nu kp no om pk pw ps pa pg py pe ph pl pt pr qa ro ru rw " +
+                    "sh kn lc vc ws sm st flag_sa sn rs sc sl sg sk si sb so za kr es lk sd sr sz se ch sy tw tj tz th tl " +
+                    "tg to tt tn tr flag_tm flag_tm ug ua ae gb us vi uy uz vu va ve vn wf eh ye zm zw re ax ta io bq cx " +
+                    "cc gg im yt nf pn bl pm gs tk bv hm sj um ic ea cp dg as aq vg ck cw eu gf tf gp mq mp sx ss tc "
+                }
+            };
+        };
+
+        return defaultOptions;
+    };
+    function getOptions(options) {
+        var default_options = getDefaultOptions();
+        if (options && options['filters']) {
+            var filters = default_options.filters;
+            $.each(options['filters'], function(filter, data) {
+                if (!isObject(data) || $.isEmptyObject(data)) {
+                    delete filters[filter];
+                    return;
+                }
+                $.each(data, function(key, val) {
+                    filters[filter][key] = val;
+                });
+            });
+            options['filters'] = filters;
+        }
+        return $.extend({}, default_options, options);
+    };
+
+    var saveSelection, restoreSelection;
+    if (window.getSelection && document.createRange) {
+        saveSelection = function(el) {
+            var sel = window.getSelection && window.getSelection();
+            if (sel && sel.rangeCount > 0) {
+                return sel.getRangeAt(0);
+            }
+        };
+
+        restoreSelection = function(el, sel) {
+            var range = document.createRange();
+            range.setStart(sel.startContainer, sel.startOffset);
+            range.setEnd(sel.endContainer, sel.endOffset)
+
+            sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    } else if (document.selection && document.body.createTextRange) {
+        saveSelection = function(el) {
+            return document.selection.createRange();
+        };
+
+        restoreSelection = function(el, sel) {
+            var textRange = document.body.createTextRange();
+            textRange.moveToElementText(el);
+            textRange.setStart(sel.startContanier, sel.startOffset);
+            textRange.setEnd(sel.endContainer, sel.endOffset);
+            textRange.select();
+        };
+    }
+
+
+    var uniRegexp;
+    function unicodeTo(str, template) {
+        return str.replace(uniRegexp, function(unicodeChar) {
+            var map = emojione[(emojioneSupportMode === 0 ? 'jsecapeMap' : 'jsEscapeMap')];
+            if (typeof unicodeChar !== 'undefined' && unicodeChar in map) {
+                return getTemplate(template, map[unicodeChar], emojione.toShort(unicodeChar));
+            }
+            return unicodeChar;
+        });
+    }
+    function htmlFromText(str, self) {
+        str = str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#x27;')
+            .replace(/`/g, '&#x60;')
+            .replace(/(?:\r\n|\r|\n)/g, '\n')
+            .replace(/(\n+)/g, '<div>$1</div>')
+            .replace(/\n/g, '<br/>')
+            .replace(/<br\/><\/div>/g, '</div>');
+        if (self.shortnames) {
+            str = emojione.shortnameToUnicode(str);
+        }
+        return unicodeTo(str, self.emojiTemplate)
+            .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+            .replace(/  /g, '&nbsp;&nbsp;');
+    }
+    function textFromHtml(str, self) {
+        str = str
+            .replace(/&#10;/g, '\n')
+            .replace(/&#09;/g, '\t')
+            .replace(/<img[^>]*alt="([^"]+)"[^>]*>/ig, '$1')
+            .replace(/\n|\r/g, '')
+            .replace(/<br[^>]*>/ig, '\n')
+            .replace(/(?:<(?:div|p|ol|ul|li|pre|code|object)[^>]*>)+/ig, '<div>')
+            .replace(/(?:<\/(?:div|p|ol|ul|li|pre|code|object)>)+/ig, '</div>')
+            .replace(/\n<div><\/div>/ig, '\n')
+            .replace(/<div><\/div>\n/ig, '\n')
+            .replace(/(?:<div>)+<\/div>/ig, '\n')
+            .replace(/([^\n])<\/div><div>/ig, '$1\n')
+            .replace(/(?:<\/div>)+/ig, '</div>')
+            .replace(/([^\n])<\/div>([^\n])/ig, '$1\n$2')
+            .replace(/<\/div>/ig, '')
+            .replace(/([^\n])<div>/ig, '$1\n')
+            .replace(/\n<div>/ig, '\n')
+            .replace(/<div>\n/ig, '\n\n')
+            .replace(/<(?:[^>]+)?>/g, '')
+            .replace(new RegExp(invisibleChar, 'g'), '')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&#x27;/g, "'")
+            .replace(/&#x60;/g, '`')
+            .replace(/&#60;/g, '<')
+            .replace(/&#62;/g, '>')
+            .replace(/&amp;/g, '&');
+
+        switch (self.saveEmojisAs) {
+            case 'image':
+                str = unicodeTo(str, self.emojiTemplate);
+                break;
+            case 'shortname':
+                str = emojione.toShort(str);
+        }
+        return str;
+    }
+    function calcButtonPosition() {
+        var self = this,
+            offset = self.editor[0].offsetWidth - self.editor[0].clientWidth,
+            current = parseInt(self.button.css('marginRight'));
+        if (current !== offset) {
+            self.button.css({marginRight: offset});
+            if (self.floatingPicker) {
+                self.picker.css({right: parseInt(self.picker.css('right')) - current + offset});
+            }
+        }
+    }
+    function lazyLoading() {
+        var self = this;
+        if (!self.sprite && self.lasyEmoji[0] && self.lasyEmoji.eq(0).is(".lazy-emoji")) {
+            var pickerTop = self.picker.offset().top,
+                pickerBottom = pickerTop + self.picker.height() + 20;
+
+            self.lasyEmoji.each(function() {
+                var e = $(this), top = e.offset().top;
+
+                if (top > pickerTop && top < pickerBottom) {
+                    e.attr("src", e.data("src")).removeClass("lazy-emoji");
+                }
+
+                if (top > pickerBottom) {
+                    return false;
+                }
+            });
+            self.lasyEmoji = self.lasyEmoji.filter(".lazy-emoji");
+        }
+    };
+    function selector (prefix, skip_dot) {
+        return (skip_dot ? '' : '.') + css_class + (prefix ? ("-" + prefix) : "");
+    }
+    function div(prefix) {
+        var parent = $('<div/>', isObject(prefix) ? prefix : {"class" : selector(prefix, true)});
+        $.each(slice.call(arguments).slice(1), function(i, child) {
+            if ($.isFunction(child)) {
+                child = child.call(parent);
+            }
+            if (child) {
+                $(child).appendTo(parent);
+            }
+        });
+        return parent;
+    }
+    function getRecent () {
+        return localStorage.getItem("recent_emojis") || "";
+    }
+    function updateRecent(self, show) {
+        var emojis = getRecent();
+        if (!self.recent || self.recent !== emojis || show) {
+            if (emojis.length) {
+                var skinnable = self.scrollArea.is(".skinnable"),
+                    scrollTop, height;
+
+                if (!skinnable) {
+                    scrollTop = self.scrollArea.scrollTop();
+                    if (show) {
+                        self.recentCategory.show();
+                    }
+                    height = self.recentCategory.is(":visible") ? self.recentCategory.height() : 0;
+                }
+
+                var items = shortnameTo(emojis, self.emojiBtnTemplate, true).split('|').join('');
+                self.recentCategory.children(".emojibtn").remove();
+                $(items).insertAfter(self.recentCategory.children(".emojionearea-category-title"));
+
+
+                self.recentCategory.children(".emojibtn").on("click", function() {
+                    self.trigger("emojibtn.click", $(this));
+                });
+
+                self.recentFilter.show();
+
+                if (!skinnable) {
+                    self.recentCategory.show();
+
+                    var height2 = self.recentCategory.height();
+
+                    if (height !== height2) {
+                        self.scrollArea.scrollTop(scrollTop + height2 - height);
+                    }
+                }
+            } else {
+                if (self.recentFilter.hasClass("active")) {
+                    self.recentFilter.removeClass("active").next().addClass("active");
+                }
+                self.recentCategory.hide();
+                self.recentFilter.hide();
+            }
+            self.recent = emojis;
+        }
+    };
+    function setRecent(self, emoji) {
+        var recent = getRecent();
+        var emojis = recent.split("|");
+
+        var index = emojis.indexOf(emoji);
+        if (index !== -1) {
+            emojis.splice(index, 1);
+        }
+        emojis.unshift(emoji);
+
+        if (emojis.length > 9) {
+            emojis.pop();
+        }
+
+        localStorage.setItem("recent_emojis", emojis.join("|"));
+
+        updateRecent(self);
+    };
+// see https://github.com/Modernizr/Modernizr/blob/master/feature-detects/storage/localstorage.js
+    function supportsLocalStorage () {
+        var test = 'test';
+        try {
+            localStorage.setItem(test, test);
+            localStorage.removeItem(test);
+            return true;
+        } catch(e) {
+            return false;
+        }
+    }
+    function init(self, source, options) {
+        //calcElapsedTime('init', function() {
+        self.options = options = getOptions(options);
+        self.sprite = options.sprite && emojioneSupportMode < 3;
+        self.inline = options.inline === null ? source.is("INPUT") : options.inline;
+        self.shortnames = options.shortnames;
+        self.saveEmojisAs = options.saveEmojisAs;
+        self.standalone = options.standalone;
+        self.emojiTemplate = '<img alt="{alt}" class="emojione' + (self.sprite ? '-{uni}" src="' + blankImg + '"/>' : 'emoji" src="{img}"/>');
+        self.emojiTemplateAlt = self.sprite ? '<i class="emojione-{uni}"/>' : '<img class="emojioneemoji" src="{img}"/>';
+        self.emojiBtnTemplate = '<i class="emojibtn" role="button" data-name="{name}" title="{friendlyName}">' + self.emojiTemplateAlt + '</i>';
+        self.recentEmojis = options.recentEmojis && supportsLocalStorage();
+
+        var pickerPosition = options.pickerPosition;
+        self.floatingPicker = pickerPosition === 'top' || pickerPosition === 'bottom';
+        self.source = source;
+
+        if (source.is(":disabled") || source.is(".disabled")) {
+            self.disable();
+        }
+
+        var sourceValFunc = source.is("TEXTAREA") || source.is("INPUT") ? "val" : "text",
+            editor, button, picker, filters, filtersBtns, searchPanel, emojisList, categories, categoryBlocks, scrollArea,
+            tones = div('tones',
+                options.tones ?
+                    function() {
+                        this.addClass(selector('tones-' + options.tonesStyle, true));
+                        for (var i = 0; i <= 5; i++) {
+                            this.append($("<i/>", {
+                                "class": "btn-tone btn-tone-" + i + (!i ? " active" : ""),
+                                "data-skin": i,
+                                role: "button"
+                            }));
+                        }
+                    } : null
+            ),
+            app = div({
+                "class" : css_class + ((self.standalone) ? " " + css_class + "-standalone " : " ") + (source.attr("class") || ""),
+                role: "application"
+            },
+            editor = self.editor = div("editor").attr({
+                contenteditable: (self.standalone) ? false : true,
+                placeholder: options.placeholder || source.data("placeholder") || source.attr("placeholder") || "",
+                tabindex: 0
+            }),
+            button = self.button = div('button',
+                div('button-open'),
+                div('button-close')
+            ).attr('title', options.buttonTitle),
+            picker = self.picker = div('picker',
+                div('wrapper',
+                    filters = div('filters'),
+                    (options.search ?
+                        searchPanel = div('search-panel',
+                            div('search',
+                                options.search ?
+                                function() {
+                                    self.search = $("<input/>", {
+                                        "placeholder": options.searchPlaceholder || "",
+                                        "type": "text",
+                                        "class": "search"
+                                    });
+                                    this.append(self.search);
+                                } : null
+                            ),
+                            tones
+                        ) : null
+                    ),
+                    scrollArea = div('scroll-area',
+                        options.tones && !options.search ? div('tones-panel',
+                            tones
+                        ) : null,
+                        emojisList = div('emojis-list')
+                    )
+                )
+            ).addClass(selector('picker-position-' + options.pickerPosition, true))
+             .addClass(selector('filters-position-' + options.filtersPosition, true))
+             .addClass(selector('search-position-' + options.searchPosition, true))
+             .addClass('hidden')
+        );
+
+        if (options.search) {
+            searchPanel.addClass(selector('with-search', true));
+        }
+
+        self.searchSel = null;
+
+        editor.data(source.data());
+
+        $.each(options.attributes, function(attr, value) {
+            editor.attr(attr, value);
+        });
+
+        var mainBlock = div('category-block').attr({"data-tone": 0}).prependTo(emojisList);
+
+        $.each(options.filters, function(filter, params) {
+            var skin = 0;
+            if (filter === 'recent' && !self.recentEmojis) {
+                return;
+            }
+            if (filter !== 'tones') {
+                $("<i/>", {
+                    "class": selector("filter", true) + " " + selector("filter-" + filter, true),
+                    "data-filter": filter,
+                    title: params.title
+                })
+                .wrapInner(shortnameTo(params.icon, self.emojiTemplateAlt))
+                .appendTo(filters);
+            } else if (options.tones) {
+                skin = 5;
+            } else {
+                return;
+            }
+
+            do {
+                var category,
+                    items = params.emoji.replace(/[\s,;]+/g, '|');
+
+                if (skin === 0) {
+                    category = div('category').attr({
+                        name: filter,
+                        "data-tone": skin
+                    }).appendTo(mainBlock);
+                } else {
+                    category = div('category-block').attr({
+                        name: filter,
+                        "data-tone": skin
+                    }).appendTo(emojisList);
+                }
+
+                if (skin > 0) {
+                    category.hide();
+                    items = items.split('|').join('_tone' + skin + '|') + '_tone' + skin;
+                }
+
+                if (filter === 'recent') {
+                    items = getRecent();
+                }
+
+                items = shortnameTo(items,
+                    self.sprite ?
+                        '<i class="emojibtn" role="button" data-name="{name}" title="{friendlyName}"><i class="emojione-{uni}"></i></i>' :
+                        '<i class="emojibtn" role="button" data-name="{name}" title="{friendlyName}"><img class="emojioneemoji lazy-emoji" data-src="{img}"/></i>',
+                    true).split('|').join('');
+
+                category.html(items);
+                $('<div class="emojionearea-category-title"/>').text(params.title).prependTo(category);
+            } while (--skin > 0);
+        });
+
+        options.filters = null;
+        if (!self.sprite) {
+            self.lasyEmoji = emojisList.find(".lazy-emoji");
+        }
+
+        filtersBtns = filters.find(selector("filter"));
+        filtersBtns.eq(0).addClass("active");
+        categoryBlocks = emojisList.find(selector("category-block"))
+        categories = emojisList.find(selector("category"))
+
+        self.recentFilter = filtersBtns.filter('[data-filter="recent"]');
+        self.recentCategory = categories.filter("[name=recent]");
+
+        self.scrollArea = scrollArea;
+
+        if (options.container) {
+            $(options.container).wrapInner(app);
+        } else {
+            app.insertAfter(source);
+        }
+
+        if (options.hideSource) {
+            source.hide();
+        }
+
+        self.setText(source[sourceValFunc]());
+        source[sourceValFunc](self.getText());
+        calcButtonPosition.apply(self);
+
+        // if in standalone mode and no value is set, initialise with a placeholder
+        if (self.standalone && !self.getText().length) {
+            var placeholder = $(source).data("emoji-placeholder") || options.emojiPlaceholder;
+            self.setText(placeholder);
+            editor.addClass("has-placeholder");
+        }
+
+        // attach() must be called before any .on() methods !!!
+        // 1) attach() stores events into possibleEvents{},
+        // 2) .on() calls bindEvent() and stores handlers into eventStorage{},
+        // 3) bindEvent() finds events in possibleEvents{} and bind founded via jQuery.on()
+        // 4) attached events via jQuery.on() calls trigger()
+        // 5) trigger() calls handlers stored into eventStorage{}
+
+        attach(self, emojisList.find(".emojibtn"), {click: "emojibtn.click"});
+        attach(self, window, {resize: "!resize"});
+        attach(self, tones.children(), {click: "tone.click"});
+        attach(self, [picker, button], {mousedown: "!mousedown"}, editor);
+        attach(self, button, {click: "button.click"});
+        attach(self, editor, {paste :"!paste"}, editor);
+        attach(self, editor, ["focus", "blur"], function() { return self.stayFocused ? false : editor; } );
+        attach(self, picker, {mousedown: "picker.mousedown", mouseup: "picker.mouseup", click: "picker.click",
+            keyup: "picker.keyup", keydown: "picker.keydown", keypress: "picker.keypress"});
+        attach(self, editor, ["mousedown", "mouseup", "click", "keyup", "keydown", "keypress"]);
+        attach(self, picker.find(".emojionearea-filter"), {click: "filter.click"});
+        attach(self, source, {change: "source.change"});
+
+        if (options.search) {
+            attach(self, self.search, {keyup: "search.keypress", focus: "search.focus", blur: "search.blur"});
+        }
+
+        var noListenScroll = false;
+        scrollArea.on('scroll', function () {
+            if (!noListenScroll) {
+                lazyLoading.call(self);
+                if (scrollArea.is(":not(.skinnable)")) {
+                    var item = categories.eq(0), scrollTop = scrollArea.offset().top;
+                    categories.each(function (i, e) {
+                        if ($(e).offset().top - scrollTop >= 10) {
+                            return false;
+                        }
+                        item = $(e);
+                    });
+                    var filter = filtersBtns.filter('[data-filter="' + item.attr("name") + '"]');
+                    if (filter[0] && !filter.is(".active")) {
+                        filtersBtns.removeClass("active");
+                        filter.addClass("active");
+                    }
+                }
+            }
+        });
+
+        self.on("@filter.click", function(filter) {
+            var isActive = filter.is(".active");
+            if (scrollArea.is(".skinnable")) {
+                if (isActive) return;
+                tones.children().eq(0).click();
+            }
+            noListenScroll = true;
+            if (!isActive) {
+                filtersBtns.filter(".active").removeClass("active");
+                filter.addClass("active");
+            }
+            var headerOffset = categories.filter('[name="' + filter.data('filter') + '"]').offset().top,
+                scroll = scrollArea.scrollTop(),
+                offsetTop = scrollArea.offset().top;
+
+            scrollArea.stop().animate({
+                scrollTop: headerOffset + scroll - offsetTop - 2
+            }, 200, 'swing', function () {
+                lazyLoading.call(self);
+                noListenScroll = false;
+            });
+        })
+
+        .on("@picker.show", function() {
+            if (self.recentEmojis) {
+                updateRecent(self);
+            }
+            lazyLoading.call(self);
+        })
+
+        .on("@tone.click", function(tone) {
+            tones.children().removeClass("active");
+            var skin = tone.addClass("active").data("skin");
+            if (skin) {
+                scrollArea.addClass("skinnable");
+                categoryBlocks.hide().filter("[data-tone=" + skin + "]").show();
+                filtersBtns.removeClass("active");//.not('[data-filter="recent"]').eq(0).addClass("active");
+            } else {
+                scrollArea.removeClass("skinnable");
+                categoryBlocks.hide().filter("[data-tone=0]").show();
+                filtersBtns.eq(0).click();
+            }
+            lazyLoading.call(self);
+            if (options.search) {
+                self.trigger('search.keypress');
+            }
+        })
+
+        .on("@button.click", function(button) {
+            if (button.is(".active")) {
+                self.hidePicker();
+            } else {
+                self.showPicker();
+                self.searchSel = null;
+            }
+        })
+
+        .on("@!paste", function(editor, event) {
+
+            var pasteText = function(text) {
+                var caretID = "caret-" + (new Date()).getTime();
+                var html = htmlFromText(text, self);
+                pasteHtmlAtCaret(html);
+                pasteHtmlAtCaret('<i id="' + caretID +'"></i>');
+                editor.scrollTop(editorScrollTop);
+                var caret = $("#" + caretID),
+                    top = caret.offset().top - editor.offset().top,
+                    height = editor.height();
+                if (editorScrollTop + top >= height || editorScrollTop > top) {
+                    editor.scrollTop(editorScrollTop + top - 2 * height/3);
+                }
+                caret.remove();
+                self.stayFocused = false;
+                calcButtonPosition.apply(self);
+                trigger(self, 'paste', [editor, text, html]);
+            };
+
+            if (event.originalEvent.clipboardData) {
+                var text = event.originalEvent.clipboardData.getData('text/plain');
+                pasteText(text);
+
+                if (event.preventDefault){
+                    event.preventDefault();
+                } else {
+                    event.stop();
+                }
+
+                event.returnValue = false;
+                event.stopPropagation();
+                return false;
+            }
+
+            self.stayFocused = true;
+            // insert invisible character for fix caret position
+            pasteHtmlAtCaret('<span>' + invisibleChar + '</span>');
+
+            var sel = saveSelection(editor[0]),
+                editorScrollTop = editor.scrollTop(),
+                clipboard = $("<div/>", {contenteditable: true})
+                    .css({position: "fixed", left: "-999px", width: "1px", height: "1px", top: "20px", overflow: "hidden"})
+                    .appendTo($("BODY"))
+                    .focus();
+
+            window.setTimeout(function() {
+                editor.focus();
+                restoreSelection(editor[0], sel);
+                var text = textFromHtml(clipboard.html().replace(/\r\n|\n|\r/g, '<br>'), self);
+                clipboard.remove();
+                pasteText(text);
+            }, 200);
+        })
+
+        .on("@emojibtn.click", function(emojibtn) {
+            editor.removeClass("has-placeholder");
+
+            if (self.searchSel !== null) {
+                editor.focus();
+                restoreSelection(editor[0], self.searchSel);
+                self.searchSel = null;
+            }
+
+            if (self.standalone) {
+                editor.html(shortnameTo(emojibtn.data("name"), self.emojiTemplate));
+                self.trigger("blur");
+            } else {
+                saveSelection(editor[0]);
+                pasteHtmlAtCaret(shortnameTo(emojibtn.data("name"), self.emojiTemplate));
+            }
+
+            if (self.recentEmojis) {
+                setRecent(self, emojibtn.data("name"));
+            }
+
+            // self.search.val('').trigger("change");
+            self.trigger('search.keypress');
+        })
+
+        .on("@!resize @keyup @emojibtn.click", calcButtonPosition)
+
+        .on("@!mousedown", function(editor, event) {
+            if ($(event.target).hasClass('search')) {
+                // Allow search clicks
+                self.stayFocused = true;
+                if (self.searchSel === null) {
+                    self.searchSel = saveSelection(editor[0]);
+                }
+            } else {
+                if (!app.is(".focused")) {
+                    editor.trigger("focus");
+                }
+                event.preventDefault();
+            }
+            return false;
+        })
+
+        .on("@change", function() {
+            var html = self.editor.html().replace(/<\/?(?:div|span|p)[^>]*>/ig, '');
+            // clear input: chrome adds <br> when contenteditable is empty
+            if (!html.length || /^<br[^>]*>$/i.test(html)) {
+                self.editor.html(self.content = '');
+            }
+            source[sourceValFunc](self.getText());
+        })
+
+        .on("@source.change", function() {
+            self.setText(source[sourceValFunc]());
+            trigger('change');
+        })
+
+        .on("@focus", function() {
+            app.addClass("focused");
+        })
+
+        .on("@blur", function() {
+            app.removeClass("focused");
+
+            if (options.hidePickerOnBlur) {
+                self.hidePicker();
+            }
+
+            var content = self.editor.html();
+            if (self.content !== content) {
+                self.content = content;
+                trigger(self, 'change', [self.editor]);
+                source.trigger("blur").trigger("change");
+            } else {
+                source.trigger("blur");
+            }
+
+            if (options.search) {
+                self.search.val('');
+                self.trigger('search.keypress', true);
+            }
+        });
+
+        if (options.search) {
+            self.on("@search.focus", function() {
+                self.stayFocused = true;
+                self.search.addClass("focused");
+            })
+
+            .on("@search.keypress", function(hide) {
+                var filterBtns = picker.find(".emojionearea-filter");
+                var activeTone = (options.tones ? tones.find("i.active").data("skin") : 0);
+                var term = self.search.val().replace( / /g, "_" ).replace(/"/g, "\\\"");
+
+                if (term && term.length) {
+                    if (self.recentFilter.hasClass("active")) {
+                        self.recentFilter.removeClass("active").next().addClass("active");
+                    }
+
+                    self.recentCategory.hide();
+                    self.recentFilter.hide();
+
+                    categoryBlocks.each(function() {
+                        var matchEmojis = function(category, activeTone) {
+                            var $matched = category.find('.emojibtn[data-name*="' + term + '"]');
+                            if ($matched.length === 0) {
+                                if (category.data('tone') === activeTone) {
+                                    category.hide();
+                                }
+                                filterBtns.filter('[data-filter="' + category.attr('name') + '"]').hide();
+                            } else {
+                                var $notMatched = category.find('.emojibtn:not([data-name*="' + term + '"])');
+                                $notMatched.hide();
+
+                                $matched.show();
+
+                                if (category.data('tone') === activeTone) {
+                                    category.show();
+                                }
+
+                                filterBtns.filter('[data-filter="' + category.attr('name') + '"]').show();
+                            }
+                        }
+
+                        var $block = $(this);
+                        if ($block.data('tone') === 0) {
+                            categories.filter(':not([name="recent"])').each(function() {
+                                matchEmojis($(this), 0);
+                            })
+                        } else {
+                            matchEmojis($block, activeTone);
+                        }
+                    });
+                    if (!noListenScroll) {
+                        scrollArea.trigger('scroll');
+                    } else {
+                        lazyLoading.call(self);
+                    }
+                } else {
+                    updateRecent(self, true);
+                    categoryBlocks.filter('[data-tone="' + tones.find("i.active").data("skin") + '"]:not([name="recent"])').show();
+                    $('.emojibtn', categoryBlocks).show();
+                    filterBtns.show();
+                    lazyLoading.call(self);
+                }
+            })
+
+            .on("@search.blur", function() {
+                self.stayFocused = false;
+                self.search.removeClass("focused");
+                self.trigger("blur");
+            });
+        }
+
+        if (options.shortcuts) {
+            self.on("@keydown", function(_, e) {
+                if (!e.ctrlKey) {
+                    if (e.which == 9) {
+                        e.preventDefault();
+                        button.click();
+                    }
+                    else if (e.which == 27) {
+                        e.preventDefault();
+                        if (button.is(".active")) {
+                            self.hidePicker();
+                        }
+                    }
+                }
+            });
+        }
+
+        if (isObject(options.events) && !$.isEmptyObject(options.events)) {
+            $.each(options.events, function(event, handler) {
+                self.on(event.replace(/_/g, '.'), handler);
+            });
+        }
+
+        if (options.autocomplete) {
+            var autocomplete = function() {
+                var textcompleteOptions = {
+                    maxCount: options.textcomplete.maxCount,
+                    placement: options.textcomplete.placement
+                };
+
+                if (options.shortcuts) {
+                    textcompleteOptions.onKeydown = function (e, commands) {
+                        if (!e.ctrlKey && e.which == 13) {
+                            return commands.KEY_ENTER;
+                        }
+                    };
+                }
+
+                var map = $.map(emojione.emojioneList, function (_, emoji) {
+                    return !options.autocompleteTones ? /_tone[12345]/.test(emoji) ? null : emoji : emoji;
+                });
+                map.sort();
+                editor.textcomplete([
+                    {
+                        id: css_class,
+                        match: /\B(:[\-+\w]*)$/,
+                        search: function (term, callback) {
+                            callback($.map(map, function (emoji) {
+                                return emoji.indexOf(term) === 0 ? emoji : null;
+                            }));
+                        },
+                        template: function (value) {
+                            return shortnameTo(value, self.emojiTemplate) + " " + value.replace(/:/g, '');
+                        },
+                        replace: function (value) {
+                            return shortnameTo(value, self.emojiTemplate);
+                        },
+                        cache: true,
+                        index: 1
+                    }
+                ], textcompleteOptions);
+
+                if (options.textcomplete.placement) {
+                    // Enable correct positioning for textcomplete
+                    if ($(editor.data('textComplete').option.appendTo).css("position") == "static") {
+                        $(editor.data('textComplete').option.appendTo).css("position", "relative");
+                    }
+                }
+            };
+
+            var initAutocomplete = function() {
+                if (self.disabled) {
+                    var enable = function () {
+                        self.off('enabled', enable);
+                        autocomplete();
+                    };
+                    self.on('enabled', enable);
+                } else {
+                    autocomplete();
+                }
+            }
+
+            if ($.fn.textcomplete) {
+                initAutocomplete();
+            } else {
+                $.ajax({
+                    url: "https://cdn.rawgit.com/yuku-t/jquery-textcomplete/v1.3.4/dist/jquery.textcomplete.js",
+                    dataType: "script",
+                    cache: true,
+                    success: initAutocomplete
+                });
+            }
+        }
+
+        if (self.inline) {
+            app.addClass(selector('inline', true));
+            self.on("@keydown", function(_, e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                }
+            });
+        }
+
+        if (/firefox/i.test(navigator.userAgent)) {
+            // disabling resize images on Firefox
+            document.execCommand("enableObjectResizing", false, false);
+        }
+
+        self.isReady = true;
+        self.trigger("onLoad", editor);
+        self.trigger("ready", editor);
+        //}, self.id === 1); // calcElapsedTime()
+    };
+    var cdn = {
+        defaultBase: "https://cdnjs.cloudflare.com/ajax/libs/emojione/",
+        defaultBase3: "https://cdn.jsdelivr.net/",
+        base: null,
+        isLoading: false
+    };
+    function loadEmojione(options) {
+        var emojioneVersion = getEmojioneVersion()
+        options = getOptions(options);
+
+        if (!cdn.isLoading) {
+            if (!emojione || getSupportMode(detectVersion(emojione)) < 2) {
+                cdn.isLoading = true;
+                var emojioneJsCdnUrlBase;
+                if (getSupportMode(emojioneVersion) > 5) {
+                    emojioneJsCdnUrlBase = cdn.defaultBase3 + "npm/emojione@" + emojioneVersion;
+                } else if (getSupportMode(emojioneVersion) > 4) {
+                    emojioneJsCdnUrlBase = cdn.defaultBase3 + "emojione/" + emojioneVersion;
+                } else {
+                    emojioneJsCdnUrlBase = cdn.defaultBase + "/" + emojioneVersion;
+                }
+
+                $.ajax({
+                    url: emojioneJsCdnUrlBase + "/lib/js/emojione.min.js",
+                    dataType: "script",
+                    cache: true,
+                    success: function () {
+                        emojione = window.emojione;
+                        emojioneVersion = detectVersion(emojione);
+                        emojioneSupportMode = getSupportMode(emojioneVersion);
+                        var sprite;
+                        if (emojioneSupportMode > 4) {
+                            cdn.base = cdn.defaultBase3 + "emojione/assets/" + emojioneVersion;
+                            sprite = cdn.base + "/sprites/emojione-sprite-" + emojione.emojiSize + ".css";
+                        } else {
+                            cdn.base = cdn.defaultBase + emojioneVersion + "/assets";
+                            sprite = cdn.base + "/sprites/emojione.sprites.css";
+                        }
+                        if (options.sprite) {
+                            if (document.createStyleSheet) {
+                                document.createStyleSheet(sprite);
+                            } else {
+                                $('<link/>', {rel: 'stylesheet', href: sprite}).appendTo('head');
+                            }
+                        }
+                        while (readyCallbacks.length) {
+                            readyCallbacks.shift().call();
+                        }
+                        cdn.isLoading = false;
+                    }
+                });
+            } else {
+                emojioneVersion = detectVersion(emojione);
+                emojioneSupportMode = getSupportMode(emojioneVersion);
+                if (emojioneSupportMode > 4) {
+                    cdn.base = cdn.defaultBase3 + "emojione/assets/" + emojioneVersion;
+                } else {
+                    cdn.base = cdn.defaultBase + emojioneVersion + "/assets";
+                }
+            }
+        }
+
+        emojioneReady(function() {
+            var emojiSize = "";
+            if (options.useInternalCDN) {
+                if (emojioneSupportMode > 4) emojiSize = emojione.emojiSize + "/";
+
+                emojione.imagePathPNG = cdn.base + "/png/" + emojiSize;
+                emojione.imagePathSVG = cdn.base + "/svg/" + emojiSize;
+                emojione.imagePathSVGSprites = cdn.base + "/sprites/emojione.sprites.svg";
+                emojione.imageType = options.imageType;
+            }
+            if (getSupportMode(emojioneVersion) > 4) {
+                uniRegexp = emojione.regUnicode;
+                emojione.imageType = options.imageType || "png";
+            } else {
+                uniRegexp = new RegExp("<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>|(" + emojione.unicodeRegexp + ")", "gi");
+            }
+        });
+    };
+    var EmojioneArea = function(element, options) {
+        var self = this;
+        loadEmojione(options);
+        eventStorage[self.id = ++unique] = {};
+        possibleEvents[self.id] = {};
+        emojioneReady(function() {
+            init(self, element, options);
+        });
+    };
+    function bindEvent(self, event) {
+        event = event.replace(/^@/, '');
+        var id = self.id;
+        if (possibleEvents[id][event]) {
+            $.each(possibleEvents[id][event], function(i, ev) {
+                // ev[0] = element
+                // ev[1] = event
+                // ev[2] = target
+                $.each($.isArray(ev[0]) ? ev[0] : [ev[0]], function(i, el) {
+                    $(el).on(ev[1], function() {
+                        var args = slice.call(arguments),
+                            target = $.isFunction(ev[2]) ? ev[2].apply(self, [event].concat(args)) : ev[2];
+                        if (target) {
+                            trigger(self, event, [target].concat(args));
+                        }
+                    });
+                });
+            });
+            possibleEvents[id][event] = null;
+        }
+    }
+
+    EmojioneArea.prototype.on = function(events, handler) {
+        if (events && $.isFunction(handler)) {
+            var self = this;
+            $.each(events.toLowerCase().split(' '), function(i, event) {
+                bindEvent(self, event);
+                (eventStorage[self.id][event] || (eventStorage[self.id][event] = [])).push(handler);
+            });
+        }
+        return this;
+    };
+
+    EmojioneArea.prototype.off = function(events, handler) {
+        if (events) {
+            var id = this.id;
+            $.each(events.toLowerCase().replace(/_/g, '.').split(' '), function(i, event) {
+                if (eventStorage[id][event] && !/^@/.test(event)) {
+                    if (handler) {
+                        $.each(eventStorage[id][event], function(j, fn) {
+                            if (fn === handler) {
+                                eventStorage[id][event].splice(j, 1);
+                            }
+                        });
+                    } else {
+                        eventStorage[id][event] = [];
+                    }
+                }
+            });
+        }
+        return this;
+    };
+
+    EmojioneArea.prototype.trigger = function() {
+        var args = slice.call(arguments),
+            call_args = [this].concat(args.slice(0,1));
+        call_args.push(args.slice(1));
+        return trigger.apply(this, call_args);
+    };
+
+    EmojioneArea.prototype.setFocus = function () {
+        var self = this;
+        emojioneReady(function () {
+            self.editor.focus();
+        });
+        return self;
+    };
+
+    EmojioneArea.prototype.setText = function (str) {
+        var self = this;
+        emojioneReady(function () {
+            self.editor.html(htmlFromText(str, self));
+            self.content = self.editor.html();
+            trigger(self, 'change', [self.editor]);
+            calcButtonPosition.apply(self);
+        });
+        return self;
+    }
+
+    EmojioneArea.prototype.getText = function() {
+        return textFromHtml(this.editor.html(), this);
+    }
+
+    EmojioneArea.prototype.showPicker = function () {
+        var self = this;
+        if (self._sh_timer) {
+            window.clearTimeout(self._sh_timer);
+        }
+        self.picker.removeClass("hidden");
+        self._sh_timer =  window.setTimeout(function() {
+            self.button.addClass("active");
+        }, 50);
+        trigger(self, "picker.show", [self.picker]);
+        return self;
+    }
+
+    EmojioneArea.prototype.hidePicker = function () {
+        var self = this;
+        if (self._sh_timer) {
+            window.clearTimeout(self._sh_timer);
+        }
+        self.button.removeClass("active");
+        self._sh_timer =  window.setTimeout(function() {
+            self.picker.addClass("hidden");
+        }, 500);
+        trigger(self, "picker.hide", [self.picker]);
+        return self;
+    }
+
+    EmojioneArea.prototype.enable = function () {
+        var self = this;
+        var next = function () {
+            self.disabled = false;
+            self.editor.prop('contenteditable', true);
+            self.button.show();
+            var editor = self[(self.standalone) ? "button" : "editor"];
+            editor.parent().removeClass('emojionearea-disable');
+            trigger(self, 'enabled', [editor]);
+        };
+        self.isReady ? next() : self.on("ready", next);
+        return self;
+    }
+
+    EmojioneArea.prototype.disable = function () {
+        var self = this;
+        self.disabled = true;
+        var next = function () {
+            self.editor.prop('contenteditable', false);
+            self.hidePicker();
+            self.button.hide();
+            var editor = self[(self.standalone) ? "button" : "editor"];
+            editor.parent().addClass('emojionearea-disable');
+            trigger(self, 'disabled', [editor]);
+        };
+        self.isReady ? next() : self.on("ready", next);
+        return self;
+    }
+
+    $.fn.emojioneArea = function(options) {
+        return this.each(function() {
+            if (!!this.emojioneArea) return this.emojioneArea;
+            $.data(this, 'emojioneArea', this.emojioneArea = new EmojioneArea($(this), options));
+            return this.emojioneArea;
+        });
+    };
+
+    $.fn.emojioneArea.defaults = getDefaultOptions();
+
+    $.fn.emojioneAreaText = function(options) {
+        options = getOptions(options);
+
+        var self = this, pseudoSelf = {
+            shortnames: (options && typeof options.shortnames !== 'undefined' ? options.shortnames : true),
+            emojiTemplate: '<img alt="{alt}" class="emojione' + (options && options.sprite && emojioneSupportMode < 3 ? '-{uni}" src="' + blankImg : 'emoji" src="{img}') + '"/>'
+        };
+
+        loadEmojione(options);
+        emojioneReady(function() {
+            self.each(function() {
+                var $this = $(this);
+                if (!$this.hasClass('emojionearea-text')) {
+                    $this.addClass('emojionearea-text').html(htmlFromText(($this.is('TEXTAREA') || $this.is('INPUT') ? $this.val() : $this.text()), pseudoSelf));
+                }
+                return $this;
+            });
+        });
+
+        return this;
+    };
+
+}, window ) );

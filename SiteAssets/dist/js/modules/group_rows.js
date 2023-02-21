@@ -1,1 +1,1052 @@
-var a24_0x39d6a4=a24_0xa587;function a24_0xa587(_0x1f7c8a,_0x244a11){var _0xb5c074=a24_0xb5c0();return a24_0xa587=function(_0xa58799,_0x583787){_0xa58799=_0xa58799-0x7b;var _0x5023ee=_0xb5c074[_0xa58799];return _0x5023ee;},a24_0xa587(_0x1f7c8a,_0x244a11);}(function(_0x207f67,_0x1542db){var _0x5b5193=a24_0xa587,_0x165eaf=_0x207f67();while(!![]){try{var _0x541a62=parseInt(_0x5b5193(0x92))/0x1*(parseInt(_0x5b5193(0xf9))/0x2)+parseInt(_0x5b5193(0xe2))/0x3*(-parseInt(_0x5b5193(0x97))/0x4)+parseInt(_0x5b5193(0xe0))/0x5+-parseInt(_0x5b5193(0x102))/0x6+parseInt(_0x5b5193(0xff))/0x7+-parseInt(_0x5b5193(0x111))/0x8+-parseInt(_0x5b5193(0xd2))/0x9;if(_0x541a62===_0x1542db)break;else _0x165eaf['push'](_0x165eaf['shift']());}catch(_0x4f9c3e){_0x165eaf['push'](_0x165eaf['shift']());}}}(a24_0xb5c0,0xb405c));function a24_0xb5c0(){var _0x106ef8=['Error\x20creating\x20group\x20headers,\x20groupHeader\x20array\x20is\x20shorter\x20than\x20groupBy\x20array','field','hasTopCalcs','tabulator-arrow','both','tabulator-group-visible','columnManager','splice','prototype','initialized','items','getRowCount','groupDblTap','innerHTML','addRow','setCellHeight','assignRowToExistingGroup','getVisibility','initializeBottomRow','groupHeader','columnCalcs','wipe','getGroup','firstChild','_addRow','groupDblClick','stopPropagation','generateGroups','getDisplayIndex','isArray','div','updateGroupRows','getElement','concat','headerContent','appendChild','setDisplayRows','GroupComponent','visible','createElement','tabulator-group-level-','table','top','height','element','clearCellHeight','removeGroup','hasSubGroups','createElements','group','removeChild','groups','1cxcKcC','call','push','add','checkClassicModeGroupHeaderWidth','160rPwJat','click','style','parentNode','bottomCalc','deleteCells','getGroupedData','allowedValues','data','getGroups','detachElement','groupVisibilityChanged','updateData','length','elementContents','nextSibling','recalcGroup','dblclick','touchstart','setHeight','initializeTopRow','initializeGroupHeader','<span>(','conformRowData','_createGroup','refreshActiveData','childNodes','func','groupClosedShowCalcs','slice','generateGroupHeaderContents','_visSet','groupTap','getParentGroup','outerHeight','addEventListener','groupTapHold','forEach','getField','_addRowToGroup','bottom','movableRows','remove','createGroup','topCalc','groupClick','dataGrouping','moveRow','string','arrowElement','arrow','rows','setAttribute','setDisplayIndex','groupStartOpen','classic','calcs','insertRow','unshift','4041765vTEcYG','generateTopRow','getComponent','classList','getColumnByField','contextmenu','stopImmediatePropagation','type','tabulator-group-toggle','getRealColumns','toggle','addBindings','toggleVisibility','initialize','4807420NHRRJv','groupIDLookups','41331fRKRhX','getSubGroups','getTable','getRows','scrollHeaders','scrollHeader','modExists','removeRow','createValueGroups','displayIndex','rowgroup','undefined','insertBefore','_group','dataGrouped','indexOf','groupContext','rowCount','groupValues','getRowGroup','generator','touchend','role','130518rDSTzJ','headerGenerator','rowManager','registerModule','countGroups','getHeadersAndRows','9316923AruvQz','key','warn','1744074BlJVIu','_getSelf','old','level','normalizeHeight','groupToggleElement','parent','hasBottomCalcs','getData','groupManager','pagination','modules','groups|item','hide','function','2636128treOwj','pullGroupListData','generateBottomRow','groupBy','startOpen','groupList','options','getKey','assignRowToGroup','removeCalcs','getRenderMode','show'];a24_0xb5c0=function(){return _0x106ef8;};return a24_0xb5c0();}var GroupComponent=function GroupComponent(_0x455757){var _0x52123d=a24_0xa587;this[_0x52123d(0xef)]=_0x455757,this[_0x52123d(0xd9)]=_0x52123d(0x83);};GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x118)]=function(){var _0x299759=a24_0x39d6a4;return this[_0x299759(0xef)][_0x299759(0x100)];},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xbd)]=function(){var _0x20f363=a24_0x39d6a4;return this['_group'][_0x20f363(0x11e)];},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x7e)]=function(){var _0x385a53=a24_0x39d6a4;return this[_0x385a53(0xef)][_0x385a53(0x8a)];},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe5)]=function(){var _0x31f586=a24_0x39d6a4;return this[_0x31f586(0xef)][_0x31f586(0xe5)](!![]);},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe3)]=function(){var _0x34bc34=a24_0x39d6a4;return this['_group'][_0x34bc34(0xe3)](!![]);},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xb8)]=function(){var _0x3760b9=a24_0x39d6a4;return this[_0x3760b9(0xef)]['parent']?this['_group'][_0x3760b9(0x108)][_0x3760b9(0xd4)]():![];},GroupComponent['prototype'][a24_0x39d6a4(0x12e)]=function(){var _0x1e3992=a24_0x39d6a4;return this[_0x1e3992(0xef)][_0x1e3992(0x84)];},GroupComponent['prototype']['show']=function(){this['_group']['show']();},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x10f)]=function(){var _0x5e126c=a24_0x39d6a4;this[_0x5e126c(0xef)][_0x5e126c(0x10f)]();},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xdc)]=function(){var _0x2ca1a0=a24_0x39d6a4;this[_0x2ca1a0(0xef)][_0x2ca1a0(0xde)]();},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x103)]=function(){var _0x546d45=a24_0x39d6a4;return this[_0x546d45(0xef)];},GroupComponent[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe4)]=function(){var _0x3bc999=a24_0x39d6a4;return this['_group'][_0x3bc999(0x10b)]['table'];};var Group=function Group(_0x7598b6,_0x581354,_0x16545b,_0x5335a0,_0x1444b6,_0x454092,_0x287bee){var _0x1c579b=a24_0x39d6a4;this['groupManager']=_0x7598b6,this[_0x1c579b(0x108)]=_0x581354,this[_0x1c579b(0x100)]=_0x5335a0,this[_0x1c579b(0x105)]=_0x16545b,this[_0x1c579b(0x11e)]=_0x1444b6,this[_0x1c579b(0x8d)]=_0x16545b<_0x7598b6[_0x1c579b(0xe1)][_0x1c579b(0xa4)]-0x1,this['addRow']=this[_0x1c579b(0x8d)]?this[_0x1c579b(0xbe)]:this[_0x1c579b(0x135)],this['type']='group',this['old']=_0x287bee,this[_0x1c579b(0xca)]=[],this[_0x1c579b(0x91)]=[],this['groupList']=[],this['generator']=_0x454092,this[_0x1c579b(0xa5)]=![],this['height']=0x0,this['outerHeight']=0x0,this['initialized']=![],this['calcs']={},this[_0x1c579b(0x126)]=![],this[_0x1c579b(0x10d)]={},this['arrowElement']=![],this[_0x1c579b(0x84)]=_0x287bee?_0x287bee[_0x1c579b(0x84)]:typeof _0x7598b6[_0x1c579b(0x115)][_0x16545b]!==_0x1c579b(0xed)?_0x7598b6[_0x1c579b(0x115)][_0x16545b]:_0x7598b6[_0x1c579b(0x115)][0x0],this[_0x1c579b(0x8e)](),this[_0x1c579b(0xdd)](),this[_0x1c579b(0xea)]();};Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x132)]=function(){var _0x15ecc2=a24_0x39d6a4;this[_0x15ecc2(0x116)][_0x15ecc2(0xa4)]?this[_0x15ecc2(0x116)]['forEach'](function(_0x2be520){var _0x45b2d9=_0x15ecc2;_0x2be520[_0x45b2d9(0x132)]();}):(this[_0x15ecc2(0x8a)]=![],this[_0x15ecc2(0xc8)]=![],this[_0x15ecc2(0xa5)]=![]);},Group['prototype'][a24_0x39d6a4(0x8e)]=function(){var _0x373d25=a24_0x39d6a4,_0xd2af37=document[_0x373d25(0x85)](_0x373d25(0x7c));_0xd2af37[_0x373d25(0xd5)][_0x373d25(0x95)](_0x373d25(0x120)),this[_0x373d25(0x8a)]=document[_0x373d25(0x85)]('div'),this[_0x373d25(0x8a)][_0x373d25(0xd5)][_0x373d25(0x95)]('tabulator-row'),this[_0x373d25(0x8a)][_0x373d25(0xd5)][_0x373d25(0x95)]('tabulator-group'),this[_0x373d25(0x8a)][_0x373d25(0xd5)][_0x373d25(0x95)](_0x373d25(0x86)+this[_0x373d25(0x105)]),this[_0x373d25(0x8a)][_0x373d25(0xcb)](_0x373d25(0xf8),_0x373d25(0xec)),this['arrowElement']=document[_0x373d25(0x85)](_0x373d25(0x7c)),this['arrowElement'][_0x373d25(0xd5)][_0x373d25(0x95)](_0x373d25(0xda)),this['arrowElement'][_0x373d25(0x81)](_0xd2af37),this[_0x373d25(0x10b)]['table'][_0x373d25(0x117)][_0x373d25(0xc0)]!==![]&&this[_0x373d25(0x10b)][_0x373d25(0x87)][_0x373d25(0xe8)](_0x373d25(0xc6))&&this[_0x373d25(0x10b)][_0x373d25(0x87)]['modules'][_0x373d25(0xc6)][_0x373d25(0xac)](this);},Group['prototype']['createValueGroups']=function(){var _0x2e49d9=a24_0x39d6a4,_0x438e3d=this,_0x59de2d=this[_0x2e49d9(0x105)]+0x1;this['groupManager'][_0x2e49d9(0x9e)]&&this[_0x2e49d9(0x10b)][_0x2e49d9(0x9e)][_0x59de2d]&&this[_0x2e49d9(0x10b)][_0x2e49d9(0x9e)][_0x59de2d][_0x2e49d9(0xbc)](function(_0x5b3344){var _0x343bee=_0x2e49d9;_0x438e3d[_0x343bee(0xaf)](_0x5b3344,_0x59de2d);});},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xdd)]=function(){var _0x3f28e7=a24_0x39d6a4,_0xcefea1=this,_0x1585bf,_0x3d9607,_0x36124a,_0x1113e5;_0xcefea1['groupManager'][_0x3f28e7(0x87)][_0x3f28e7(0x117)][_0x3f28e7(0xc4)]&&_0xcefea1['element'][_0x3f28e7(0xba)]('click',function(_0x292ef1){var _0x2c85fc=_0x3f28e7;_0xcefea1[_0x2c85fc(0x10b)][_0x2c85fc(0x87)][_0x2c85fc(0x117)]['groupClick'][_0x2c85fc(0x93)](_0xcefea1[_0x2c85fc(0x10b)]['table'],_0x292ef1,_0xcefea1[_0x2c85fc(0xd4)]());}),_0xcefea1['groupManager'][_0x3f28e7(0x87)][_0x3f28e7(0x117)][_0x3f28e7(0x136)]&&_0xcefea1[_0x3f28e7(0x8a)]['addEventListener'](_0x3f28e7(0xa8),function(_0x2b52a1){var _0x498a7a=_0x3f28e7;_0xcefea1[_0x498a7a(0x10b)][_0x498a7a(0x87)][_0x498a7a(0x117)][_0x498a7a(0x136)]['call'](_0xcefea1[_0x498a7a(0x10b)]['table'],_0x2b52a1,_0xcefea1[_0x498a7a(0xd4)]());}),_0xcefea1[_0x3f28e7(0x10b)][_0x3f28e7(0x87)][_0x3f28e7(0x117)][_0x3f28e7(0xf2)]&&_0xcefea1['element']['addEventListener'](_0x3f28e7(0xd7),function(_0x4d4a8e){var _0xfbba05=_0x3f28e7;_0xcefea1['groupManager'][_0xfbba05(0x87)][_0xfbba05(0x117)][_0xfbba05(0xf2)][_0xfbba05(0x93)](_0xcefea1[_0xfbba05(0x10b)][_0xfbba05(0x87)],_0x4d4a8e,_0xcefea1[_0xfbba05(0xd4)]());}),_0xcefea1[_0x3f28e7(0x10b)][_0x3f28e7(0x87)]['options'][_0x3f28e7(0xb7)]&&(_0x36124a=![],_0xcefea1[_0x3f28e7(0x8a)][_0x3f28e7(0xba)](_0x3f28e7(0xa9),function(_0x3bec73){_0x36124a=!![];},{'passive':!![]}),_0xcefea1[_0x3f28e7(0x8a)]['addEventListener']('touchend',function(_0x108487){var _0x1f9e3e=_0x3f28e7;_0x36124a&&_0xcefea1['groupManager'][_0x1f9e3e(0x87)][_0x1f9e3e(0x117)][_0x1f9e3e(0xb7)](_0x108487,_0xcefea1[_0x1f9e3e(0xd4)]()),_0x36124a=![];})),_0xcefea1[_0x3f28e7(0x10b)]['table'][_0x3f28e7(0x117)][_0x3f28e7(0x129)]&&(_0x1585bf=null,_0xcefea1[_0x3f28e7(0x8a)][_0x3f28e7(0xba)]('touchend',function(_0x40f574){var _0x838d73=_0x3f28e7;_0x1585bf?(clearTimeout(_0x1585bf),_0x1585bf=null,_0xcefea1[_0x838d73(0x10b)][_0x838d73(0x87)][_0x838d73(0x117)][_0x838d73(0x129)](_0x40f574,_0xcefea1[_0x838d73(0xd4)]())):_0x1585bf=setTimeout(function(){clearTimeout(_0x1585bf),_0x1585bf=null;},0x12c);})),_0xcefea1['groupManager'][_0x3f28e7(0x87)][_0x3f28e7(0x117)][_0x3f28e7(0xbb)]&&(_0x3d9607=null,_0xcefea1[_0x3f28e7(0x8a)][_0x3f28e7(0xba)]('touchstart',function(_0xde26d1){clearTimeout(_0x3d9607),_0x3d9607=setTimeout(function(){var _0x59404e=a24_0xa587;clearTimeout(_0x3d9607),_0x3d9607=null,_0x36124a=![],_0xcefea1[_0x59404e(0x10b)][_0x59404e(0x87)][_0x59404e(0x117)]['groupTapHold'](_0xde26d1,_0xcefea1['getComponent']());},0x3e8);},{'passive':!![]}),_0xcefea1[_0x3f28e7(0x8a)][_0x3f28e7(0xba)](_0x3f28e7(0xf7),function(_0x548d9c){clearTimeout(_0x3d9607),_0x3d9607=null;})),_0xcefea1['groupManager'][_0x3f28e7(0x87)][_0x3f28e7(0x117)][_0x3f28e7(0x107)]&&(_0x1113e5=_0xcefea1[_0x3f28e7(0x10b)]['table'][_0x3f28e7(0x117)]['groupToggleElement']==_0x3f28e7(0xc9)?_0xcefea1['arrowElement']:_0xcefea1[_0x3f28e7(0x8a)],_0x1113e5['addEventListener'](_0x3f28e7(0x98),function(_0x1db417){var _0x3227c7=_0x3f28e7;_0x1db417[_0x3227c7(0x137)](),_0x1db417[_0x3227c7(0xd8)](),_0xcefea1[_0x3227c7(0xde)]();}));},Group[a24_0x39d6a4(0x125)]['_createGroup']=function(_0x5803de,_0x2e2dd6){var _0x344c64=a24_0x39d6a4,_0x58dc10=_0x2e2dd6+'_'+_0x5803de,_0x5c92e7=new Group(this['groupManager'],this,_0x2e2dd6,_0x5803de,this['groupManager']['groupIDLookups'][_0x2e2dd6]['field'],this['groupManager'][_0x344c64(0xfa)][_0x2e2dd6]||this[_0x344c64(0x10b)][_0x344c64(0xfa)][0x0],this[_0x344c64(0x104)]?this[_0x344c64(0x104)][_0x344c64(0x91)][_0x58dc10]:![]);this['groups'][_0x58dc10]=_0x5c92e7,this[_0x344c64(0x116)]['push'](_0x5c92e7);},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xbe)]=function(_0x3055db){var _0x1d3d29=a24_0x39d6a4,_0x1ea00d=this[_0x1d3d29(0x105)]+0x1;if(this[_0x1d3d29(0x8d)]){var _0x24b998=this['groupManager'][_0x1d3d29(0xe1)][_0x1ea00d][_0x1d3d29(0xb2)](_0x3055db[_0x1d3d29(0x10a)]()),_0x1c322c=_0x1ea00d+'_'+_0x24b998;this[_0x1d3d29(0x10b)][_0x1d3d29(0x9e)]&&this[_0x1d3d29(0x10b)]['allowedValues'][_0x1ea00d]?this[_0x1d3d29(0x91)][_0x1c322c]&&this['groups'][_0x1c322c][_0x1d3d29(0x12b)](_0x3055db):(!this[_0x1d3d29(0x91)][_0x1c322c]&&this[_0x1d3d29(0xaf)](_0x24b998,_0x1ea00d),this[_0x1d3d29(0x91)][_0x1c322c][_0x1d3d29(0x12b)](_0x3055db));}},Group[a24_0x39d6a4(0x125)]['_addRow']=function(_0x571d00){var _0x4dc632=a24_0x39d6a4;this[_0x4dc632(0xca)][_0x4dc632(0x94)](_0x571d00),_0x571d00[_0x4dc632(0x10d)]['group']=this;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xd0)]=function(_0x4037e2,_0x2b6a77,_0x26de41){var _0x343a5e=a24_0x39d6a4,_0x52eda9=this[_0x343a5e(0xae)]({});_0x4037e2[_0x343a5e(0xa3)](_0x52eda9);var _0x2a91de=this[_0x343a5e(0xca)][_0x343a5e(0xf1)](_0x2b6a77);_0x2a91de>-0x1?_0x26de41?this['rows'][_0x343a5e(0x124)](_0x2a91de+0x1,0x0,_0x4037e2):this[_0x343a5e(0xca)][_0x343a5e(0x124)](_0x2a91de,0x0,_0x4037e2):_0x26de41?this[_0x343a5e(0xca)][_0x343a5e(0x94)](_0x4037e2):this['rows'][_0x343a5e(0xd1)](_0x4037e2),_0x4037e2[_0x343a5e(0x10d)][_0x343a5e(0x8f)]=this,this[_0x343a5e(0xb5)](),this[_0x343a5e(0x10b)][_0x343a5e(0x87)]['modExists']('columnCalcs')&&this[_0x343a5e(0x10b)]['table'][_0x343a5e(0x117)]['columnCalcs']!=_0x343a5e(0x87)&&this[_0x343a5e(0x10b)][_0x343a5e(0x87)]['modules'][_0x343a5e(0x131)]['recalcGroup'](this),this[_0x343a5e(0x10b)][_0x343a5e(0x7d)](!![]);},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe7)]=function(_0x2792cd){var _0x26c22a=a24_0x39d6a4;this['arrowElement'][_0x26c22a(0x99)]['marginLeft']=_0x2792cd,this['groupList'][_0x26c22a(0xbc)](function(_0x178d27){var _0x3f17cb=_0x26c22a;_0x178d27[_0x3f17cb(0xe7)](_0x2792cd);});},Group[a24_0x39d6a4(0x125)]['getRowIndex']=function(_0x93bc4c){},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xae)]=function(_0x50340a){var _0x4671c8=a24_0x39d6a4;return this[_0x4671c8(0x11e)]?_0x50340a[this[_0x4671c8(0x11e)]]=this[_0x4671c8(0x100)]:console['warn']('Data\x20Conforming\x20Error\x20-\x20Cannot\x20conform\x20row\x20data\x20to\x20match\x20new\x20group\x20as\x20groupBy\x20is\x20a\x20function'),this[_0x4671c8(0x108)]&&(_0x50340a=this[_0x4671c8(0x108)][_0x4671c8(0xae)](_0x50340a)),_0x50340a;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe9)]=function(_0x363ea9){var _0x5e1544=a24_0x39d6a4,_0x3d38da=this['rows'][_0x5e1544(0xf1)](_0x363ea9),_0x332ad0=_0x363ea9['getElement']();_0x3d38da>-0x1&&this['rows']['splice'](_0x3d38da,0x1),!this[_0x5e1544(0x10b)][_0x5e1544(0x87)][_0x5e1544(0x117)][_0x5e1544(0xf4)]&&!this[_0x5e1544(0xca)][_0x5e1544(0xa4)]?(this[_0x5e1544(0x108)]?this[_0x5e1544(0x108)][_0x5e1544(0x8c)](this):this['groupManager'][_0x5e1544(0x8c)](this),this[_0x5e1544(0x10b)][_0x5e1544(0x7d)](!![])):(_0x332ad0[_0x5e1544(0x9a)]&&_0x332ad0[_0x5e1544(0x9a)][_0x5e1544(0x90)](_0x332ad0),this[_0x5e1544(0xb5)](),this['groupManager'][_0x5e1544(0x87)][_0x5e1544(0xe8)](_0x5e1544(0x131))&&this['groupManager'][_0x5e1544(0x87)][_0x5e1544(0x117)][_0x5e1544(0x131)]!=_0x5e1544(0x87)&&this[_0x5e1544(0x10b)]['table'][_0x5e1544(0x10d)][_0x5e1544(0x131)][_0x5e1544(0xa7)](this));},Group[a24_0x39d6a4(0x125)]['removeGroup']=function(_0x43b7da){var _0x1edf31=a24_0x39d6a4,_0xeb770=_0x43b7da[_0x1edf31(0x105)]+'_'+_0x43b7da[_0x1edf31(0x100)],_0x337a99;this[_0x1edf31(0x91)][_0xeb770]&&(delete this['groups'][_0xeb770],_0x337a99=this['groupList'][_0x1edf31(0xf1)](_0x43b7da),_0x337a99>-0x1&&this[_0x1edf31(0x116)]['splice'](_0x337a99,0x1),!this[_0x1edf31(0x116)][_0x1edf31(0xa4)]&&(this[_0x1edf31(0x108)]?this[_0x1edf31(0x108)][_0x1edf31(0x8c)](this):this[_0x1edf31(0x10b)][_0x1edf31(0x8c)](this)));},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xfe)]=function(_0x2c67fe){var _0x12ccd9=a24_0x39d6a4,_0xdda281=[];return _0xdda281[_0x12ccd9(0x94)](this),this[_0x12ccd9(0xb6)](),this[_0x12ccd9(0x84)]?this[_0x12ccd9(0x116)][_0x12ccd9(0xa4)]?this[_0x12ccd9(0x116)][_0x12ccd9(0xbc)](function(_0x2ae2b7){var _0x42c36d=_0x12ccd9;_0xdda281=_0xdda281['concat'](_0x2ae2b7[_0x42c36d(0xfe)](_0x2c67fe));}):(!_0x2c67fe&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0x117)][_0x12ccd9(0x131)]!='table'&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0xe8)](_0x12ccd9(0x131))&&this['groupManager'][_0x12ccd9(0x87)]['modules'][_0x12ccd9(0x131)][_0x12ccd9(0x11f)]()&&(this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)]&&(this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)]['detachElement'](),this[_0x12ccd9(0xcf)]['top'][_0x12ccd9(0x9c)]()),this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)]=this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0x10d)][_0x12ccd9(0x131)][_0x12ccd9(0xd3)](this[_0x12ccd9(0xca)]),_0xdda281[_0x12ccd9(0x94)](this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)])),_0xdda281=_0xdda281[_0x12ccd9(0x7f)](this[_0x12ccd9(0xca)]),!_0x2c67fe&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)]['options'][_0x12ccd9(0x131)]!=_0x12ccd9(0x87)&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0xe8)](_0x12ccd9(0x131))&&this['groupManager'][_0x12ccd9(0x87)][_0x12ccd9(0x10d)]['columnCalcs']['hasBottomCalcs']()&&(this[_0x12ccd9(0xcf)][_0x12ccd9(0xbf)]&&(this['calcs'][_0x12ccd9(0xbf)]['detachElement'](),this['calcs']['bottom'][_0x12ccd9(0x9c)]()),this[_0x12ccd9(0xcf)][_0x12ccd9(0xbf)]=this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0x10d)][_0x12ccd9(0x131)][_0x12ccd9(0x113)](this['rows']),_0xdda281[_0x12ccd9(0x94)](this[_0x12ccd9(0xcf)][_0x12ccd9(0xbf)]))):!this[_0x12ccd9(0x116)]['length']&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0x117)][_0x12ccd9(0x131)]!=_0x12ccd9(0x87)&&(this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0xe8)](_0x12ccd9(0x131))&&(!_0x2c67fe&&this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)]['modules']['columnCalcs']['hasTopCalcs']()&&(this[_0x12ccd9(0xcf)]['top']&&(this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)][_0x12ccd9(0xa1)](),this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)][_0x12ccd9(0x9c)]()),this[_0x12ccd9(0x10b)][_0x12ccd9(0x87)][_0x12ccd9(0x117)][_0x12ccd9(0xb3)]&&(this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)]=this['groupManager']['table'][_0x12ccd9(0x10d)][_0x12ccd9(0x131)][_0x12ccd9(0xd3)](this[_0x12ccd9(0xca)]),_0xdda281[_0x12ccd9(0x94)](this[_0x12ccd9(0xcf)][_0x12ccd9(0x88)]))),!_0x2c67fe&&this['groupManager']['table'][_0x12ccd9(0x10d)]['columnCalcs'][_0x12ccd9(0x109)]()&&(this[_0x12ccd9(0xcf)]['bottom']&&(this[_0x12ccd9(0xcf)]['bottom']['detachElement'](),this[_0x12ccd9(0xcf)][_0x12ccd9(0xbf)][_0x12ccd9(0x9c)]()),this[_0x12ccd9(0x10b)]['table'][_0x12ccd9(0x117)][_0x12ccd9(0xb3)]&&(this[_0x12ccd9(0xcf)]['bottom']=this[_0x12ccd9(0x10b)]['table'][_0x12ccd9(0x10d)][_0x12ccd9(0x131)][_0x12ccd9(0x113)](this['rows']),_0xdda281[_0x12ccd9(0x94)](this['calcs'][_0x12ccd9(0xbf)]))))),_0xdda281;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x10a)]=function(_0x5c5c90,_0x137a11){var _0x47be01=a24_0x39d6a4,_0x5ca53b=this,_0x5b9435=[];return this[_0x47be01(0xb6)](),(!_0x5c5c90||_0x5c5c90&&this[_0x47be01(0x84)])&&this['rows'][_0x47be01(0xbc)](function(_0x54e098){var _0x499a49=_0x47be01;_0x5b9435[_0x499a49(0x94)](_0x54e098[_0x499a49(0x10a)](_0x137a11||_0x499a49(0x9f)));}),_0x5b9435;},Group[a24_0x39d6a4(0x125)]['getRowCount']=function(){var _0xb1f70c=a24_0x39d6a4,_0x4aef8a=0x0;return this[_0xb1f70c(0x116)][_0xb1f70c(0xa4)]?this[_0xb1f70c(0x116)][_0xb1f70c(0xbc)](function(_0x35f75b){_0x4aef8a+=_0x35f75b['getRowCount']();}):_0x4aef8a=this[_0xb1f70c(0xca)]['length'],_0x4aef8a;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xde)]=function(){var _0x4fe166=a24_0x39d6a4;this[_0x4fe166(0x84)]?this['hide']():this[_0x4fe166(0x11c)]();},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x10f)]=function(){var _0x424b86=a24_0x39d6a4;this['visible']=![],this[_0x424b86(0x10b)]['table'][_0x424b86(0xfb)][_0x424b86(0x11b)]()==_0x424b86(0xce)&&!this[_0x424b86(0x10b)][_0x424b86(0x87)][_0x424b86(0x117)][_0x424b86(0x10c)]?(this['element'][_0x424b86(0xd5)][_0x424b86(0xc1)]('tabulator-group-visible'),this[_0x424b86(0x116)]['length']?this[_0x424b86(0x116)][_0x424b86(0xbc)](function(_0x488b0e){var _0x5aab69=_0x424b86,_0x489609=_0x488b0e[_0x5aab69(0xfe)]();_0x489609[_0x5aab69(0xbc)](function(_0x232df4){var _0x2bf870=_0x5aab69;_0x232df4[_0x2bf870(0xa1)]();});}):this[_0x424b86(0xca)][_0x424b86(0xbc)](function(_0x5addfa){var _0x5b2804=_0x424b86,_0x52905a=_0x5addfa[_0x5b2804(0x7e)]();_0x52905a['parentNode'][_0x5b2804(0x90)](_0x52905a);}),this[_0x424b86(0x10b)][_0x424b86(0x87)]['rowManager'][_0x424b86(0x82)](this[_0x424b86(0x10b)]['updateGroupRows'](),this[_0x424b86(0x10b)]['getDisplayIndex']()),this[_0x424b86(0x10b)][_0x424b86(0x87)][_0x424b86(0xfb)]['checkClassicModeGroupHeaderWidth']()):this[_0x424b86(0x10b)][_0x424b86(0x7d)](!![]),this[_0x424b86(0x10b)][_0x424b86(0x87)][_0x424b86(0x117)][_0x424b86(0xa2)]['call'](this[_0x424b86(0x87)],this[_0x424b86(0xd4)](),![]);},Group[a24_0x39d6a4(0x125)]['show']=function(){var _0x1c2856=a24_0x39d6a4,_0x15f46e=this;_0x15f46e['visible']=!![];if(this['groupManager'][_0x1c2856(0x87)][_0x1c2856(0xfb)]['getRenderMode']()==_0x1c2856(0xce)&&!this['groupManager']['table'][_0x1c2856(0x117)][_0x1c2856(0x10c)]){this[_0x1c2856(0x8a)][_0x1c2856(0xd5)]['add']('tabulator-group-visible');var _0xf485e3=_0x15f46e['getElement']();this[_0x1c2856(0x116)][_0x1c2856(0xa4)]?this[_0x1c2856(0x116)]['forEach'](function(_0x561420){var _0x50e27b=_0x1c2856,_0x1a321d=_0x561420[_0x50e27b(0xfe)]();_0x1a321d[_0x50e27b(0xbc)](function(_0x19fb9d){var _0x4b59d8=_0x50e27b,_0x4a6ae2=_0x19fb9d[_0x4b59d8(0x7e)]();_0xf485e3[_0x4b59d8(0x9a)]['insertBefore'](_0x4a6ae2,_0xf485e3[_0x4b59d8(0xa6)]),_0x19fb9d['initialize'](),_0xf485e3=_0x4a6ae2;});}):_0x15f46e[_0x1c2856(0xca)][_0x1c2856(0xbc)](function(_0x2896ab){var _0x3f22ea=_0x1c2856,_0x28160d=_0x2896ab[_0x3f22ea(0x7e)]();_0xf485e3[_0x3f22ea(0x9a)]['insertBefore'](_0x28160d,_0xf485e3[_0x3f22ea(0xa6)]),_0x2896ab['initialize'](),_0xf485e3=_0x28160d;}),this[_0x1c2856(0x10b)][_0x1c2856(0x87)]['rowManager']['setDisplayRows'](this[_0x1c2856(0x10b)][_0x1c2856(0x7d)](),this[_0x1c2856(0x10b)][_0x1c2856(0x139)]()),this[_0x1c2856(0x10b)][_0x1c2856(0x87)]['rowManager'][_0x1c2856(0x96)]();}else this['groupManager'][_0x1c2856(0x7d)](!![]);this[_0x1c2856(0x10b)][_0x1c2856(0x87)][_0x1c2856(0x117)][_0x1c2856(0xa2)][_0x1c2856(0x93)](this[_0x1c2856(0x87)],this[_0x1c2856(0xd4)](),!![]);},Group['prototype'][a24_0x39d6a4(0xb6)]=function(){var _0x493438=a24_0x39d6a4,_0x2c0ae1=[];typeof this[_0x493438(0x84)]==_0x493438(0x110)&&(this[_0x493438(0xca)][_0x493438(0xbc)](function(_0x2149cf){var _0x50898c=_0x493438;_0x2c0ae1['push'](_0x2149cf[_0x50898c(0x10a)]());}),this[_0x493438(0x84)]=this['visible'](this[_0x493438(0x100)],this[_0x493438(0x128)](),_0x2c0ae1,this['getComponent']()));},Group['prototype'][a24_0x39d6a4(0xf5)]=function(_0x16e5ac){var _0x13e513=a24_0x39d6a4,_0x242663=![];return this[_0x13e513(0x116)]['length']?this['groupList'][_0x13e513(0xbc)](function(_0x404a89){var _0x3149be=_0x13e513,_0x164ed8=_0x404a89[_0x3149be(0xf5)](_0x16e5ac);_0x164ed8&&(_0x242663=_0x164ed8);}):this['rows']['find'](function(_0x56f071){return _0x56f071===_0x16e5ac;})&&(_0x242663=this),_0x242663;},Group['prototype'][a24_0x39d6a4(0xe3)]=function(_0x27cb6d){var _0x49cfa5=a24_0x39d6a4,_0x37c6ba=[];return this[_0x49cfa5(0x116)]['forEach'](function(_0x202fac){var _0x170d30=_0x49cfa5;_0x37c6ba[_0x170d30(0x94)](_0x27cb6d?_0x202fac['getComponent']():_0x202fac);}),_0x37c6ba;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe5)]=function(_0x58f237){var _0x2c62=a24_0x39d6a4,_0x14000b=[];return this[_0x2c62(0xca)][_0x2c62(0xbc)](function(_0x484610){var _0x41bf05=_0x2c62;_0x14000b[_0x41bf05(0x94)](_0x58f237?_0x484610[_0x41bf05(0xd4)]():_0x484610);}),_0x14000b;},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xb5)]=function(){var _0x25e3bf=a24_0x39d6a4,_0x4951d1=[];this['rows'][_0x25e3bf(0xbc)](function(_0x226e84){var _0x2df0c9=_0x25e3bf;_0x4951d1[_0x2df0c9(0x94)](_0x226e84[_0x2df0c9(0x10a)]());}),this[_0x25e3bf(0xa5)]=this[_0x25e3bf(0xf6)](this[_0x25e3bf(0x100)],this[_0x25e3bf(0x128)](),_0x4951d1,this[_0x25e3bf(0xd4)]());while(this[_0x25e3bf(0x8a)]['firstChild']){this[_0x25e3bf(0x8a)][_0x25e3bf(0x90)](this[_0x25e3bf(0x8a)][_0x25e3bf(0x134)]);}typeof this[_0x25e3bf(0xa5)]===_0x25e3bf(0xc7)?this['element'][_0x25e3bf(0x12a)]=this[_0x25e3bf(0xa5)]:this[_0x25e3bf(0x8a)][_0x25e3bf(0x81)](this[_0x25e3bf(0xa5)]),this['element'][_0x25e3bf(0xee)](this['arrowElement'],this['element'][_0x25e3bf(0x134)]);},Group['prototype'][a24_0x39d6a4(0x7e)]=function(){var _0x287132=a24_0x39d6a4;this['addBindingsd']=![],this[_0x287132(0xb6)]();this['visible']?this[_0x287132(0x8a)][_0x287132(0xd5)][_0x287132(0x95)](_0x287132(0x122)):this[_0x287132(0x8a)]['classList'][_0x287132(0xc1)]('tabulator-group-visible');for(var _0x1d2960=0x0;_0x1d2960<this[_0x287132(0x8a)][_0x287132(0xb1)]['length'];++_0x1d2960){this[_0x287132(0x8a)][_0x287132(0xb1)][_0x1d2960]['parentNode'][_0x287132(0x90)](this[_0x287132(0x8a)][_0x287132(0xb1)][_0x1d2960]);}return this['generateGroupHeaderContents'](),this['element'];},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xa1)]=function(){var _0xca145d=a24_0x39d6a4;this[_0xca145d(0x8a)]&&this['element']['parentNode']&&this[_0xca145d(0x8a)][_0xca145d(0x9a)][_0xca145d(0x90)](this[_0xca145d(0x8a)]);},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x106)]=function(){var _0x22aec0=a24_0x39d6a4;this[_0x22aec0(0xaa)](this['element']['clientHeight']);},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xdf)]=function(_0x415d46){var _0x1c3878=a24_0x39d6a4;(!this[_0x1c3878(0x126)]||_0x415d46)&&(this['normalizeHeight'](),this['initialized']=!![]);},Group['prototype']['reinitialize']=function(){var _0x48d466=a24_0x39d6a4;this[_0x48d466(0x126)]=![],this[_0x48d466(0x89)]=0x0,Tabulator[_0x48d466(0x125)]['helpers']['elVisible'](this[_0x48d466(0x8a)])&&this[_0x48d466(0xdf)](!![]);},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xaa)]=function(_0x49ffa4){var _0x4b2f28=a24_0x39d6a4;this[_0x4b2f28(0x89)]!=_0x49ffa4&&(this['height']=_0x49ffa4,this[_0x4b2f28(0xb9)]=this[_0x4b2f28(0x8a)]['offsetHeight']);},Group['prototype']['getHeight']=function(){var _0x20f217=a24_0x39d6a4;return this[_0x20f217(0xb9)];},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x133)]=function(){return this;},Group['prototype']['reinitializeHeight']=function(){},Group[a24_0x39d6a4(0x125)]['calcHeight']=function(){},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x12c)]=function(){},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x8b)]=function(){},Group[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xd4)]=function(){return new GroupComponent(this);};var GroupRows=function GroupRows(_0x1e2afc){var _0x178f2d=a24_0x39d6a4;this['table']=_0x1e2afc,this[_0x178f2d(0xe1)]=![],this[_0x178f2d(0x115)]=[function(){return![];}],this[_0x178f2d(0xfa)]=[function(){return'';}],this[_0x178f2d(0x116)]=[],this[_0x178f2d(0x9e)]=![],this[_0x178f2d(0x91)]={},this[_0x178f2d(0xeb)]=0x0;};GroupRows[a24_0x39d6a4(0x125)]['initialize']=function(){var _0x321ace=a24_0x39d6a4,_0xe8491e=this,_0x1eb526=_0xe8491e[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0x114)],_0x5ee397=_0xe8491e['table'][_0x321ace(0x117)][_0x321ace(0xcd)],_0x895239=_0xe8491e[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0x130)];this['allowedValues']=_0xe8491e[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0xf4)];Array[_0x321ace(0x7b)](_0x1eb526)&&Array['isArray'](_0x895239)&&_0x1eb526[_0x321ace(0xa4)]>_0x895239[_0x321ace(0xa4)]&&console[_0x321ace(0x101)](_0x321ace(0x11d));_0xe8491e[_0x321ace(0xfa)]=[function(){return'';}],this['startOpen']=[function(){return![];}],_0xe8491e[_0x321ace(0x87)][_0x321ace(0x10d)]['localize']['bind'](_0x321ace(0x10e),function(_0x4e939e,_0x20dccb){var _0x3c1882=_0x321ace;_0xe8491e[_0x3c1882(0xfa)][0x0]=function(_0x1ba5d2,_0x675777,_0x158f22){var _0x2645f8=_0x3c1882;return(typeof _0x1ba5d2===_0x2645f8(0xed)?'':_0x1ba5d2)+_0x2645f8(0xad)+_0x675777+'\x20'+(_0x675777===0x1?_0x4e939e:_0x20dccb[_0x2645f8(0x91)][_0x2645f8(0x127)])+')</span>';};}),this[_0x321ace(0xe1)]=[];if(Array['isArray'](_0x1eb526)||_0x1eb526)this[_0x321ace(0x87)]['modExists']('columnCalcs')&&this[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0x131)]!=_0x321ace(0x87)&&this[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0x131)]!=_0x321ace(0x121)&&this[_0x321ace(0x87)]['modules'][_0x321ace(0x131)][_0x321ace(0x11a)]();else{if(this[_0x321ace(0x87)][_0x321ace(0xe8)](_0x321ace(0x131))&&this[_0x321ace(0x87)][_0x321ace(0x117)][_0x321ace(0x131)]!=_0x321ace(0x8f)){var _0xea3a63=this[_0x321ace(0x87)][_0x321ace(0x123)][_0x321ace(0xdb)]();_0xea3a63[_0x321ace(0xbc)](function(_0xeb1eed){var _0x402705=_0x321ace;_0xeb1eed['definition'][_0x402705(0xc3)]&&_0xe8491e[_0x402705(0x87)][_0x402705(0x10d)][_0x402705(0x131)][_0x402705(0xab)](),_0xeb1eed['definition'][_0x402705(0x9b)]&&_0xe8491e[_0x402705(0x87)]['modules'][_0x402705(0x131)][_0x402705(0x12f)]();});}}!Array[_0x321ace(0x7b)](_0x1eb526)&&(_0x1eb526=[_0x1eb526]),_0x1eb526[_0x321ace(0xbc)](function(_0x5a5ac6,_0x409a9d){var _0x5e7188=_0x321ace,_0x3ab3ed,_0x52d70d;typeof _0x5a5ac6==_0x5e7188(0x110)?_0x3ab3ed=_0x5a5ac6:(_0x52d70d=_0xe8491e[_0x5e7188(0x87)][_0x5e7188(0x123)][_0x5e7188(0xd6)](_0x5a5ac6),_0x52d70d?_0x3ab3ed=function _0x36c26a(_0x1e9c29){return _0x52d70d['getFieldValue'](_0x1e9c29);}:_0x3ab3ed=function _0xc47aa5(_0x2c31ba){return _0x2c31ba[_0x5a5ac6];}),_0xe8491e[_0x5e7188(0xe1)][_0x5e7188(0x94)]({'field':typeof _0x5a5ac6===_0x5e7188(0x110)?![]:_0x5a5ac6,'func':_0x3ab3ed,'values':_0xe8491e[_0x5e7188(0x9e)]?_0xe8491e[_0x5e7188(0x9e)][_0x409a9d]:![]});}),_0x5ee397&&(!Array['isArray'](_0x5ee397)&&(_0x5ee397=[_0x5ee397]),_0x5ee397['forEach'](function(_0x3e298e){var _0x284f75=_0x321ace;_0x3e298e=typeof _0x3e298e==_0x284f75(0x110)?_0x3e298e:function(){return!![];};}),_0xe8491e['startOpen']=_0x5ee397),_0x895239&&(_0xe8491e[_0x321ace(0xfa)]=Array[_0x321ace(0x7b)](_0x895239)?_0x895239:[_0x895239]),this['initialized']=!![];},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xcc)]=function(_0x3ebe0c){var _0x1d2869=a24_0x39d6a4;this[_0x1d2869(0xeb)]=_0x3ebe0c;},GroupRows[a24_0x39d6a4(0x125)]['getDisplayIndex']=function(){var _0x2557d6=a24_0x39d6a4;return this[_0x2557d6(0xeb)];},GroupRows[a24_0x39d6a4(0x125)]['getRows']=function(_0x5012ca){var _0x2503ed=a24_0x39d6a4;return this[_0x2503ed(0xe1)][_0x2503ed(0xa4)]?(this[_0x2503ed(0x87)][_0x2503ed(0x117)][_0x2503ed(0xc5)][_0x2503ed(0x93)](this[_0x2503ed(0x87)]),this[_0x2503ed(0x138)](_0x5012ca),this[_0x2503ed(0x87)][_0x2503ed(0x117)][_0x2503ed(0xf0)]&&this['table'][_0x2503ed(0x117)][_0x2503ed(0xf0)][_0x2503ed(0x93)](this[_0x2503ed(0x87)],this[_0x2503ed(0xa0)](!![])),this[_0x2503ed(0x7d)]()):_0x5012ca[_0x2503ed(0xb4)](0x0);},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xa0)]=function(_0x1dca2d){var _0x219bae=a24_0x39d6a4,_0x5ebf01=[];return this[_0x219bae(0x116)][_0x219bae(0xbc)](function(_0xdb962b){var _0xb47892=_0x219bae;_0x5ebf01[_0xb47892(0x94)](_0x1dca2d?_0xdb962b[_0xb47892(0xd4)]():_0xdb962b);}),_0x5ebf01;},GroupRows[a24_0x39d6a4(0x125)]['wipe']=function(){var _0x22e4dd=a24_0x39d6a4;this[_0x22e4dd(0x116)][_0x22e4dd(0xbc)](function(_0x2a3660){var _0x3b9bf1=_0x22e4dd;_0x2a3660[_0x3b9bf1(0x132)]();});},GroupRows['prototype'][a24_0x39d6a4(0x112)]=function(_0x306722){var _0x22c513=a24_0x39d6a4,_0xb2793d=this,_0x463574=[];return _0x306722[_0x22c513(0xbc)](function(_0x12a90e){var _0x1bf1e1=_0x22c513,_0x5e0d72={};_0x5e0d72[_0x1bf1e1(0x105)]=0x0,_0x5e0d72[_0x1bf1e1(0xf3)]=0x0,_0x5e0d72[_0x1bf1e1(0x80)]='';var _0x50a56a=[];_0x12a90e[_0x1bf1e1(0x8d)]?(_0x50a56a=_0xb2793d[_0x1bf1e1(0x112)](_0x12a90e[_0x1bf1e1(0x116)]),_0x5e0d72[_0x1bf1e1(0x105)]=_0x12a90e[_0x1bf1e1(0x105)],_0x5e0d72[_0x1bf1e1(0xf3)]=_0x50a56a['length']-_0x12a90e['groupList'][_0x1bf1e1(0xa4)],_0x5e0d72['headerContent']=_0x12a90e[_0x1bf1e1(0xf6)](_0x12a90e['key'],_0x5e0d72['rowCount'],_0x12a90e[_0x1bf1e1(0xca)],_0x12a90e),_0x463574[_0x1bf1e1(0x94)](_0x5e0d72),_0x463574=_0x463574[_0x1bf1e1(0x7f)](_0x50a56a)):(_0x5e0d72[_0x1bf1e1(0x105)]=_0x12a90e[_0x1bf1e1(0x105)],_0x5e0d72[_0x1bf1e1(0x80)]=_0x12a90e[_0x1bf1e1(0xf6)](_0x12a90e[_0x1bf1e1(0x100)],_0x12a90e[_0x1bf1e1(0xca)][_0x1bf1e1(0xa4)],_0x12a90e[_0x1bf1e1(0xca)],_0x12a90e),_0x5e0d72['rowCount']=_0x12a90e[_0x1bf1e1(0xe5)]()['length'],_0x463574[_0x1bf1e1(0x94)](_0x5e0d72),_0x12a90e[_0x1bf1e1(0xe5)]()[_0x1bf1e1(0xbc)](function(_0x3e4228){var _0x2daa2c=_0x1bf1e1;_0x463574['push'](_0x3e4228[_0x2daa2c(0x10a)]('data'));}));}),_0x463574;},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x9d)]=function(){var _0x436e17=a24_0x39d6a4;return this[_0x436e17(0x112)](this[_0x436e17(0x116)]);},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xf5)]=function(_0x1b86dd){var _0x16bc15=a24_0x39d6a4,_0x10cfd5=![];return this[_0x16bc15(0x116)][_0x16bc15(0xbc)](function(_0x1607b1){var _0x3cbbbc=_0x1607b1['getRowGroup'](_0x1b86dd);_0x3cbbbc&&(_0x10cfd5=_0x3cbbbc);}),_0x10cfd5;},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xfd)]=function(){var _0x11ddb9=a24_0x39d6a4;return this[_0x11ddb9(0x116)][_0x11ddb9(0xa4)];},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x138)]=function(_0x45ac2b){var _0x3818f0=a24_0x39d6a4,_0x148050=this,_0x26a061=_0x148050[_0x3818f0(0x91)];_0x148050[_0x3818f0(0x91)]={},_0x148050[_0x3818f0(0x116)]=[],this[_0x3818f0(0x9e)]&&this[_0x3818f0(0x9e)][0x0]?(this[_0x3818f0(0x9e)][0x0][_0x3818f0(0xbc)](function(_0x90396f){var _0x51f87e=_0x3818f0;_0x148050[_0x51f87e(0xc2)](_0x90396f,0x0,_0x26a061);}),_0x45ac2b['forEach'](function(_0x452de0){var _0x3ffaa6=_0x3818f0;_0x148050[_0x3ffaa6(0x12d)](_0x452de0,_0x26a061);})):_0x45ac2b[_0x3818f0(0xbc)](function(_0x593b9){var _0x11c063=_0x3818f0;_0x148050[_0x11c063(0x119)](_0x593b9,_0x26a061);});},GroupRows['prototype'][a24_0x39d6a4(0xc2)]=function(_0x26575b,_0x20b3af,_0x1231b1){var _0x45f8fc=a24_0x39d6a4,_0x28d42=_0x20b3af+'_'+_0x26575b,_0x37be93;_0x1231b1=_0x1231b1||[],_0x37be93=new Group(this,![],_0x20b3af,_0x26575b,this['groupIDLookups'][0x0][_0x45f8fc(0x11e)],this[_0x45f8fc(0xfa)][0x0],_0x1231b1[_0x28d42]),this['groups'][_0x28d42]=_0x37be93,this[_0x45f8fc(0x116)]['push'](_0x37be93);},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0x12d)]=function(_0x4af694,_0x1269e8){var _0x58503d=a24_0x39d6a4,_0x4181d1=this['groupIDLookups'][0x0][_0x58503d(0xb2)](_0x4af694[_0x58503d(0x10a)]()),_0xec1c46='0_'+_0x4181d1;this[_0x58503d(0x91)][_0xec1c46]&&this[_0x58503d(0x91)][_0xec1c46][_0x58503d(0x12b)](_0x4af694);},GroupRows[a24_0x39d6a4(0x125)]['assignRowToGroup']=function(_0x340e83,_0x50b899){var _0x3e70af=a24_0x39d6a4,_0x5bfced=this[_0x3e70af(0xe1)][0x0]['func'](_0x340e83[_0x3e70af(0x10a)]()),_0x4e5a14=!this[_0x3e70af(0x91)]['0_'+_0x5bfced];return _0x4e5a14&&this[_0x3e70af(0xc2)](_0x5bfced,0x0,_0x50b899),this['groups']['0_'+_0x5bfced]['addRow'](_0x340e83),!_0x4e5a14;},GroupRows['prototype'][a24_0x39d6a4(0x7d)]=function(_0x170c09){var _0x1972d7=a24_0x39d6a4,_0x36d107=this,_0x2c5a9f=[],_0x7cd8b0;_0x36d107[_0x1972d7(0x116)]['forEach'](function(_0x4e0a64){var _0x1d5e1a=_0x1972d7;_0x2c5a9f=_0x2c5a9f[_0x1d5e1a(0x7f)](_0x4e0a64['getHeadersAndRows']());});if(_0x170c09){var _0x2afc7a=_0x36d107[_0x1972d7(0x87)]['rowManager'][_0x1972d7(0x82)](_0x2c5a9f,this['getDisplayIndex']());_0x2afc7a!==!![]&&this[_0x1972d7(0xcc)](_0x2afc7a),_0x36d107[_0x1972d7(0x87)][_0x1972d7(0xfb)][_0x1972d7(0xb0)](_0x1972d7(0x8f),!![],!![]);}return _0x2c5a9f;},GroupRows[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xe6)]=function(_0x257171){var _0x189d66=a24_0x39d6a4;_0x257171=_0x257171+'px',this[_0x189d66(0x116)][_0x189d66(0xbc)](function(_0x4a0f73){_0x4a0f73['scrollHeader'](_0x257171);});},GroupRows['prototype'][a24_0x39d6a4(0x8c)]=function(_0x1fd5c6){var _0x5cea93=a24_0x39d6a4,_0x306951=_0x1fd5c6['level']+'_'+_0x1fd5c6[_0x5cea93(0x100)],_0x43dca6;this['groups'][_0x306951]&&(delete this[_0x5cea93(0x91)][_0x306951],_0x43dca6=this[_0x5cea93(0x116)][_0x5cea93(0xf1)](_0x1fd5c6),_0x43dca6>-0x1&&this[_0x5cea93(0x116)]['splice'](_0x43dca6,0x1));},Tabulator[a24_0x39d6a4(0x125)][a24_0x39d6a4(0xfc)]('groupRows',GroupRows);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+//public group object
+var GroupComponent = function GroupComponent(group) {
+	this._group = group;
+	this.type = "GroupComponent";
+};
+
+GroupComponent.prototype.getKey = function () {
+	return this._group.key;
+};
+
+GroupComponent.prototype.getField = function () {
+	return this._group.field;
+};
+
+GroupComponent.prototype.getElement = function () {
+	return this._group.element;
+};
+
+GroupComponent.prototype.getRows = function () {
+	return this._group.getRows(true);
+};
+
+GroupComponent.prototype.getSubGroups = function () {
+	return this._group.getSubGroups(true);
+};
+
+GroupComponent.prototype.getParentGroup = function () {
+	return this._group.parent ? this._group.parent.getComponent() : false;
+};
+
+GroupComponent.prototype.getVisibility = function () {
+	return this._group.visible;
+};
+
+GroupComponent.prototype.show = function () {
+	this._group.show();
+};
+
+GroupComponent.prototype.hide = function () {
+	this._group.hide();
+};
+
+GroupComponent.prototype.toggle = function () {
+	this._group.toggleVisibility();
+};
+
+GroupComponent.prototype._getSelf = function () {
+	return this._group;
+};
+
+GroupComponent.prototype.getTable = function () {
+	return this._group.groupManager.table;
+};
+
+//////////////////////////////////////////////////
+//////////////// Group Functions /////////////////
+//////////////////////////////////////////////////
+
+var Group = function Group(groupManager, parent, level, key, field, generator, oldGroup) {
+
+	this.groupManager = groupManager;
+	this.parent = parent;
+	this.key = key;
+	this.level = level;
+	this.field = field;
+	this.hasSubGroups = level < groupManager.groupIDLookups.length - 1;
+	this.addRow = this.hasSubGroups ? this._addRowToGroup : this._addRow;
+	this.type = "group"; //type of element
+	this.old = oldGroup;
+	this.rows = [];
+	this.groups = [];
+	this.groupList = [];
+	this.generator = generator;
+	this.elementContents = false;
+	this.height = 0;
+	this.outerHeight = 0;
+	this.initialized = false;
+	this.calcs = {};
+	this.initialized = false;
+	this.modules = {};
+	this.arrowElement = false;
+
+	this.visible = oldGroup ? oldGroup.visible : typeof groupManager.startOpen[level] !== "undefined" ? groupManager.startOpen[level] : groupManager.startOpen[0];
+
+	this.createElements();
+	this.addBindings();
+
+	this.createValueGroups();
+};
+
+Group.prototype.wipe = function () {
+	if (this.groupList.length) {
+		this.groupList.forEach(function (group) {
+			group.wipe();
+		});
+	} else {
+		this.element = false;
+		this.arrowElement = false;
+		this.elementContents = false;
+	}
+};
+
+Group.prototype.createElements = function () {
+	var arrow = document.createElement("div");
+	arrow.classList.add("tabulator-arrow");
+
+	this.element = document.createElement("div");
+	this.element.classList.add("tabulator-row");
+	this.element.classList.add("tabulator-group");
+	this.element.classList.add("tabulator-group-level-" + this.level);
+	this.element.setAttribute("role", "rowgroup");
+
+	this.arrowElement = document.createElement("div");
+	this.arrowElement.classList.add("tabulator-group-toggle");
+	this.arrowElement.appendChild(arrow);
+
+	//setup movable rows
+	if (this.groupManager.table.options.movableRows !== false && this.groupManager.table.modExists("moveRow")) {
+		this.groupManager.table.modules.moveRow.initializeGroupHeader(this);
+	}
+};
+
+Group.prototype.createValueGroups = function () {
+	var _this = this;
+
+	var level = this.level + 1;
+	if (this.groupManager.allowedValues && this.groupManager.allowedValues[level]) {
+		this.groupManager.allowedValues[level].forEach(function (value) {
+			_this._createGroup(value, level);
+		});
+	}
+};
+
+Group.prototype.addBindings = function () {
+	var self = this,
+	    dblTap,
+	    tapHold,
+	    tap,
+	    toggleElement;
+
+	//handle group click events
+	if (self.groupManager.table.options.groupClick) {
+		self.element.addEventListener("click", function (e) {
+			self.groupManager.table.options.groupClick.call(self.groupManager.table, e, self.getComponent());
+		});
+	}
+
+	if (self.groupManager.table.options.groupDblClick) {
+		self.element.addEventListener("dblclick", function (e) {
+			self.groupManager.table.options.groupDblClick.call(self.groupManager.table, e, self.getComponent());
+		});
+	}
+
+	if (self.groupManager.table.options.groupContext) {
+		self.element.addEventListener("contextmenu", function (e) {
+			self.groupManager.table.options.groupContext.call(self.groupManager.table, e, self.getComponent());
+		});
+	}
+
+	if (self.groupManager.table.options.groupTap) {
+
+		tap = false;
+
+		self.element.addEventListener("touchstart", function (e) {
+			tap = true;
+		}, { passive: true });
+
+		self.element.addEventListener("touchend", function (e) {
+			if (tap) {
+				self.groupManager.table.options.groupTap(e, self.getComponent());
+			}
+
+			tap = false;
+		});
+	}
+
+	if (self.groupManager.table.options.groupDblTap) {
+
+		dblTap = null;
+
+		self.element.addEventListener("touchend", function (e) {
+
+			if (dblTap) {
+				clearTimeout(dblTap);
+				dblTap = null;
+
+				self.groupManager.table.options.groupDblTap(e, self.getComponent());
+			} else {
+
+				dblTap = setTimeout(function () {
+					clearTimeout(dblTap);
+					dblTap = null;
+				}, 300);
+			}
+		});
+	}
+
+	if (self.groupManager.table.options.groupTapHold) {
+
+		tapHold = null;
+
+		self.element.addEventListener("touchstart", function (e) {
+			clearTimeout(tapHold);
+
+			tapHold = setTimeout(function () {
+				clearTimeout(tapHold);
+				tapHold = null;
+				tap = false;
+				self.groupManager.table.options.groupTapHold(e, self.getComponent());
+			}, 1000);
+		}, { passive: true });
+
+		self.element.addEventListener("touchend", function (e) {
+			clearTimeout(tapHold);
+			tapHold = null;
+		});
+	}
+
+	if (self.groupManager.table.options.groupToggleElement) {
+		toggleElement = self.groupManager.table.options.groupToggleElement == "arrow" ? self.arrowElement : self.element;
+
+		toggleElement.addEventListener("click", function (e) {
+			e.stopPropagation();
+			e.stopImmediatePropagation();
+			self.toggleVisibility();
+		});
+	}
+};
+
+Group.prototype._createGroup = function (groupID, level) {
+	var groupKey = level + "_" + groupID;
+	var group = new Group(this.groupManager, this, level, groupID, this.groupManager.groupIDLookups[level].field, this.groupManager.headerGenerator[level] || this.groupManager.headerGenerator[0], this.old ? this.old.groups[groupKey] : false);
+
+	this.groups[groupKey] = group;
+	this.groupList.push(group);
+};
+
+Group.prototype._addRowToGroup = function (row) {
+
+	var level = this.level + 1;
+
+	if (this.hasSubGroups) {
+		var groupID = this.groupManager.groupIDLookups[level].func(row.getData()),
+		    groupKey = level + "_" + groupID;
+
+		if (this.groupManager.allowedValues && this.groupManager.allowedValues[level]) {
+			if (this.groups[groupKey]) {
+				this.groups[groupKey].addRow(row);
+			}
+		} else {
+			if (!this.groups[groupKey]) {
+				this._createGroup(groupID, level);
+			}
+
+			this.groups[groupKey].addRow(row);
+		}
+	}
+};
+
+Group.prototype._addRow = function (row) {
+	this.rows.push(row);
+	row.modules.group = this;
+};
+
+Group.prototype.insertRow = function (row, to, after) {
+	var data = this.conformRowData({});
+
+	row.updateData(data);
+
+	var toIndex = this.rows.indexOf(to);
+
+	if (toIndex > -1) {
+		if (after) {
+			this.rows.splice(toIndex + 1, 0, row);
+		} else {
+			this.rows.splice(toIndex, 0, row);
+		}
+	} else {
+		if (after) {
+			this.rows.push(row);
+		} else {
+			this.rows.unshift(row);
+		}
+	}
+
+	row.modules.group = this;
+
+	this.generateGroupHeaderContents();
+
+	if (this.groupManager.table.modExists("columnCalcs") && this.groupManager.table.options.columnCalcs != "table") {
+		this.groupManager.table.modules.columnCalcs.recalcGroup(this);
+	}
+
+	this.groupManager.updateGroupRows(true);
+};
+
+Group.prototype.scrollHeader = function (left) {
+	this.arrowElement.style.marginLeft = left;
+
+	this.groupList.forEach(function (child) {
+		child.scrollHeader(left);
+	});
+};
+
+Group.prototype.getRowIndex = function (row) {};
+
+//update row data to match grouping contraints
+Group.prototype.conformRowData = function (data) {
+	if (this.field) {
+		data[this.field] = this.key;
+	} else {
+		console.warn("Data Conforming Error - Cannot conform row data to match new group as groupBy is a function");
+	}
+
+	if (this.parent) {
+		data = this.parent.conformRowData(data);
+	}
+
+	return data;
+};
+
+Group.prototype.removeRow = function (row) {
+	var index = this.rows.indexOf(row);
+	var el = row.getElement();
+
+	if (index > -1) {
+		this.rows.splice(index, 1);
+	}
+
+	if (!this.groupManager.table.options.groupValues && !this.rows.length) {
+		if (this.parent) {
+			this.parent.removeGroup(this);
+		} else {
+			this.groupManager.removeGroup(this);
+		}
+
+		this.groupManager.updateGroupRows(true);
+	} else {
+
+		if (el.parentNode) {
+			el.parentNode.removeChild(el);
+		}
+
+		this.generateGroupHeaderContents();
+
+		if (this.groupManager.table.modExists("columnCalcs") && this.groupManager.table.options.columnCalcs != "table") {
+			this.groupManager.table.modules.columnCalcs.recalcGroup(this);
+		}
+	}
+};
+
+Group.prototype.removeGroup = function (group) {
+	var groupKey = group.level + "_" + group.key,
+	    index;
+
+	if (this.groups[groupKey]) {
+		delete this.groups[groupKey];
+
+		index = this.groupList.indexOf(group);
+
+		if (index > -1) {
+			this.groupList.splice(index, 1);
+		}
+
+		if (!this.groupList.length) {
+			if (this.parent) {
+				this.parent.removeGroup(this);
+			} else {
+				this.groupManager.removeGroup(this);
+			}
+		}
+	}
+};
+
+Group.prototype.getHeadersAndRows = function (noCalc) {
+	var output = [];
+
+	output.push(this);
+
+	this._visSet();
+
+	if (this.visible) {
+		if (this.groupList.length) {
+			this.groupList.forEach(function (group) {
+				output = output.concat(group.getHeadersAndRows(noCalc));
+			});
+		} else {
+			if (!noCalc && this.groupManager.table.options.columnCalcs != "table" && this.groupManager.table.modExists("columnCalcs") && this.groupManager.table.modules.columnCalcs.hasTopCalcs()) {
+				if (this.calcs.top) {
+					this.calcs.top.detachElement();
+					this.calcs.top.deleteCells();
+				}
+
+				this.calcs.top = this.groupManager.table.modules.columnCalcs.generateTopRow(this.rows);
+				output.push(this.calcs.top);
+			}
+
+			output = output.concat(this.rows);
+
+			if (!noCalc && this.groupManager.table.options.columnCalcs != "table" && this.groupManager.table.modExists("columnCalcs") && this.groupManager.table.modules.columnCalcs.hasBottomCalcs()) {
+				if (this.calcs.bottom) {
+					this.calcs.bottom.detachElement();
+					this.calcs.bottom.deleteCells();
+				}
+
+				this.calcs.bottom = this.groupManager.table.modules.columnCalcs.generateBottomRow(this.rows);
+				output.push(this.calcs.bottom);
+			}
+		}
+	} else {
+		if (!this.groupList.length && this.groupManager.table.options.columnCalcs != "table") {
+
+			if (this.groupManager.table.modExists("columnCalcs")) {
+
+				if (!noCalc && this.groupManager.table.modules.columnCalcs.hasTopCalcs()) {
+					if (this.calcs.top) {
+						this.calcs.top.detachElement();
+						this.calcs.top.deleteCells();
+					}
+
+					if (this.groupManager.table.options.groupClosedShowCalcs) {
+						this.calcs.top = this.groupManager.table.modules.columnCalcs.generateTopRow(this.rows);
+						output.push(this.calcs.top);
+					}
+				}
+
+				if (!noCalc && this.groupManager.table.modules.columnCalcs.hasBottomCalcs()) {
+					if (this.calcs.bottom) {
+						this.calcs.bottom.detachElement();
+						this.calcs.bottom.deleteCells();
+					}
+
+					if (this.groupManager.table.options.groupClosedShowCalcs) {
+						this.calcs.bottom = this.groupManager.table.modules.columnCalcs.generateBottomRow(this.rows);
+						output.push(this.calcs.bottom);
+					}
+				}
+			}
+		}
+	}
+
+	return output;
+};
+
+Group.prototype.getData = function (visible, transform) {
+	var self = this,
+	    output = [];
+
+	this._visSet();
+
+	if (!visible || visible && this.visible) {
+		this.rows.forEach(function (row) {
+			output.push(row.getData(transform || "data"));
+		});
+	}
+
+	return output;
+};
+
+// Group.prototype.getRows = function(){
+// 	this._visSet();
+
+// 	return this.visible ? this.rows : [];
+// };
+
+Group.prototype.getRowCount = function () {
+	var count = 0;
+
+	if (this.groupList.length) {
+		this.groupList.forEach(function (group) {
+			count += group.getRowCount();
+		});
+	} else {
+		count = this.rows.length;
+	}
+	return count;
+};
+
+Group.prototype.toggleVisibility = function () {
+	if (this.visible) {
+		this.hide();
+	} else {
+		this.show();
+	}
+};
+
+Group.prototype.hide = function () {
+	this.visible = false;
+
+	if (this.groupManager.table.rowManager.getRenderMode() == "classic" && !this.groupManager.table.options.pagination) {
+
+		this.element.classList.remove("tabulator-group-visible");
+
+		if (this.groupList.length) {
+			this.groupList.forEach(function (group) {
+
+				var rows = group.getHeadersAndRows();
+
+				rows.forEach(function (row) {
+					row.detachElement();
+				});
+			});
+		} else {
+			this.rows.forEach(function (row) {
+				var rowEl = row.getElement();
+				rowEl.parentNode.removeChild(rowEl);
+			});
+		}
+
+		this.groupManager.table.rowManager.setDisplayRows(this.groupManager.updateGroupRows(), this.groupManager.getDisplayIndex());
+
+		this.groupManager.table.rowManager.checkClassicModeGroupHeaderWidth();
+	} else {
+		this.groupManager.updateGroupRows(true);
+	}
+
+	this.groupManager.table.options.groupVisibilityChanged.call(this.table, this.getComponent(), false);
+};
+
+Group.prototype.show = function () {
+	var self = this;
+
+	self.visible = true;
+
+	if (this.groupManager.table.rowManager.getRenderMode() == "classic" && !this.groupManager.table.options.pagination) {
+
+		this.element.classList.add("tabulator-group-visible");
+
+		var prev = self.getElement();
+
+		if (this.groupList.length) {
+			this.groupList.forEach(function (group) {
+				var rows = group.getHeadersAndRows();
+
+				rows.forEach(function (row) {
+					var rowEl = row.getElement();
+					prev.parentNode.insertBefore(rowEl, prev.nextSibling);
+					row.initialize();
+					prev = rowEl;
+				});
+			});
+		} else {
+			self.rows.forEach(function (row) {
+				var rowEl = row.getElement();
+				prev.parentNode.insertBefore(rowEl, prev.nextSibling);
+				row.initialize();
+				prev = rowEl;
+			});
+		}
+
+		this.groupManager.table.rowManager.setDisplayRows(this.groupManager.updateGroupRows(), this.groupManager.getDisplayIndex());
+
+		this.groupManager.table.rowManager.checkClassicModeGroupHeaderWidth();
+	} else {
+		this.groupManager.updateGroupRows(true);
+	}
+
+	this.groupManager.table.options.groupVisibilityChanged.call(this.table, this.getComponent(), true);
+};
+
+Group.prototype._visSet = function () {
+	var data = [];
+
+	if (typeof this.visible == "function") {
+
+		this.rows.forEach(function (row) {
+			data.push(row.getData());
+		});
+
+		this.visible = this.visible(this.key, this.getRowCount(), data, this.getComponent());
+	}
+};
+
+Group.prototype.getRowGroup = function (row) {
+	var match = false;
+	if (this.groupList.length) {
+		this.groupList.forEach(function (group) {
+			var result = group.getRowGroup(row);
+
+			if (result) {
+				match = result;
+			}
+		});
+	} else {
+		if (this.rows.find(function (item) {
+			return item === row;
+		})) {
+			match = this;
+		}
+	}
+
+	return match;
+};
+
+Group.prototype.getSubGroups = function (component) {
+	var output = [];
+
+	this.groupList.forEach(function (child) {
+		output.push(component ? child.getComponent() : child);
+	});
+
+	return output;
+};
+
+Group.prototype.getRows = function (compoment) {
+	var output = [];
+
+	this.rows.forEach(function (row) {
+		output.push(compoment ? row.getComponent() : row);
+	});
+
+	return output;
+};
+
+Group.prototype.generateGroupHeaderContents = function () {
+	var data = [];
+
+	this.rows.forEach(function (row) {
+		data.push(row.getData());
+	});
+
+	this.elementContents = this.generator(this.key, this.getRowCount(), data, this.getComponent());
+
+	while (this.element.firstChild) {
+		this.element.removeChild(this.element.firstChild);
+	}if (typeof this.elementContents === "string") {
+		this.element.innerHTML = this.elementContents;
+	} else {
+		this.element.appendChild(this.elementContents);
+	}
+
+	this.element.insertBefore(this.arrowElement, this.element.firstChild);
+};
+
+////////////// Standard Row Functions //////////////
+
+Group.prototype.getElement = function () {
+	this.addBindingsd = false;
+
+	this._visSet();
+
+	if (this.visible) {
+		this.element.classList.add("tabulator-group-visible");
+	} else {
+		this.element.classList.remove("tabulator-group-visible");
+	}
+
+	for (var i = 0; i < this.element.childNodes.length; ++i) {
+		this.element.childNodes[i].parentNode.removeChild(this.element.childNodes[i]);
+	}
+
+	this.generateGroupHeaderContents();
+
+	// this.addBindings();
+
+	return this.element;
+};
+
+Group.prototype.detachElement = function () {
+	if (this.element && this.element.parentNode) {
+		this.element.parentNode.removeChild(this.element);
+	}
+};
+
+//normalize the height of elements in the row
+Group.prototype.normalizeHeight = function () {
+	this.setHeight(this.element.clientHeight);
+};
+
+Group.prototype.initialize = function (force) {
+	if (!this.initialized || force) {
+		this.normalizeHeight();
+		this.initialized = true;
+	}
+};
+
+Group.prototype.reinitialize = function () {
+	this.initialized = false;
+	this.height = 0;
+
+	if (Tabulator.prototype.helpers.elVisible(this.element)) {
+		this.initialize(true);
+	}
+};
+
+Group.prototype.setHeight = function (height) {
+	if (this.height != height) {
+		this.height = height;
+		this.outerHeight = this.element.offsetHeight;
+	}
+};
+
+//return rows outer height
+Group.prototype.getHeight = function () {
+	return this.outerHeight;
+};
+
+Group.prototype.getGroup = function () {
+	return this;
+};
+
+Group.prototype.reinitializeHeight = function () {};
+Group.prototype.calcHeight = function () {};
+Group.prototype.setCellHeight = function () {};
+Group.prototype.clearCellHeight = function () {};
+
+//////////////// Object Generation /////////////////
+Group.prototype.getComponent = function () {
+	return new GroupComponent(this);
+};
+
+//////////////////////////////////////////////////
+////////////// Group Row Extension ///////////////
+//////////////////////////////////////////////////
+
+var GroupRows = function GroupRows(table) {
+
+	this.table = table; //hold Tabulator object
+
+	this.groupIDLookups = false; //enable table grouping and set field to group by
+	this.startOpen = [function () {
+		return false;
+	}]; //starting state of group
+	this.headerGenerator = [function () {
+		return "";
+	}];
+	this.groupList = []; //ordered list of groups
+	this.allowedValues = false;
+	this.groups = {}; //hold row groups
+	this.displayIndex = 0; //index in display pipeline
+};
+
+//initialize group configuration
+GroupRows.prototype.initialize = function () {
+	var self = this,
+	    groupBy = self.table.options.groupBy,
+	    startOpen = self.table.options.groupStartOpen,
+	    groupHeader = self.table.options.groupHeader;
+
+	this.allowedValues = self.table.options.groupValues;
+
+	if (Array.isArray(groupBy) && Array.isArray(groupHeader) && groupBy.length > groupHeader.length) {
+		console.warn("Error creating group headers, groupHeader array is shorter than groupBy array");
+	}
+
+	self.headerGenerator = [function () {
+		return "";
+	}];
+	this.startOpen = [function () {
+		return false;
+	}]; //starting state of group
+
+	self.table.modules.localize.bind("groups|item", function (langValue, lang) {
+		self.headerGenerator[0] = function (value, count, data) {
+			//header layout function
+			return (typeof value === "undefined" ? "" : value) + "<span>(" + count + " " + (count === 1 ? langValue : lang.groups.items) + ")</span>";
+		};
+	});
+
+	this.groupIDLookups = [];
+
+	if (Array.isArray(groupBy) || groupBy) {
+		if (this.table.modExists("columnCalcs") && this.table.options.columnCalcs != "table" && this.table.options.columnCalcs != "both") {
+			this.table.modules.columnCalcs.removeCalcs();
+		}
+	} else {
+		if (this.table.modExists("columnCalcs") && this.table.options.columnCalcs != "group") {
+
+			var cols = this.table.columnManager.getRealColumns();
+
+			cols.forEach(function (col) {
+				if (col.definition.topCalc) {
+					self.table.modules.columnCalcs.initializeTopRow();
+				}
+
+				if (col.definition.bottomCalc) {
+					self.table.modules.columnCalcs.initializeBottomRow();
+				}
+			});
+		}
+	}
+
+	if (!Array.isArray(groupBy)) {
+		groupBy = [groupBy];
+	}
+
+	groupBy.forEach(function (group, i) {
+		var lookupFunc, column;
+
+		if (typeof group == "function") {
+			lookupFunc = group;
+		} else {
+			column = self.table.columnManager.getColumnByField(group);
+
+			if (column) {
+				lookupFunc = function lookupFunc(data) {
+					return column.getFieldValue(data);
+				};
+			} else {
+				lookupFunc = function lookupFunc(data) {
+					return data[group];
+				};
+			}
+		}
+
+		self.groupIDLookups.push({
+			field: typeof group === "function" ? false : group,
+			func: lookupFunc,
+			values: self.allowedValues ? self.allowedValues[i] : false
+		});
+	});
+
+	if (startOpen) {
+
+		if (!Array.isArray(startOpen)) {
+			startOpen = [startOpen];
+		}
+
+		startOpen.forEach(function (level) {
+			level = typeof level == "function" ? level : function () {
+				return true;
+			};
+		});
+
+		self.startOpen = startOpen;
+	}
+
+	if (groupHeader) {
+		self.headerGenerator = Array.isArray(groupHeader) ? groupHeader : [groupHeader];
+	}
+
+	this.initialized = true;
+};
+
+GroupRows.prototype.setDisplayIndex = function (index) {
+	this.displayIndex = index;
+};
+
+GroupRows.prototype.getDisplayIndex = function () {
+	return this.displayIndex;
+};
+
+//return appropriate rows with group headers
+GroupRows.prototype.getRows = function (rows) {
+	if (this.groupIDLookups.length) {
+
+		this.table.options.dataGrouping.call(this.table);
+
+		this.generateGroups(rows);
+
+		if (this.table.options.dataGrouped) {
+			this.table.options.dataGrouped.call(this.table, this.getGroups(true));
+		}
+
+		return this.updateGroupRows();
+	} else {
+		return rows.slice(0);
+	}
+};
+
+GroupRows.prototype.getGroups = function (compoment) {
+	var groupComponents = [];
+
+	this.groupList.forEach(function (group) {
+		groupComponents.push(compoment ? group.getComponent() : group);
+	});
+
+	return groupComponents;
+};
+
+GroupRows.prototype.wipe = function () {
+	this.groupList.forEach(function (group) {
+		group.wipe();
+	});
+};
+
+GroupRows.prototype.pullGroupListData = function (groupList) {
+	var self = this;
+	var groupListData = [];
+
+	groupList.forEach(function (group) {
+		var groupHeader = {};
+		groupHeader.level = 0;
+		groupHeader.rowCount = 0;
+		groupHeader.headerContent = "";
+		var childData = [];
+
+		if (group.hasSubGroups) {
+			childData = self.pullGroupListData(group.groupList);
+
+			groupHeader.level = group.level;
+			groupHeader.rowCount = childData.length - group.groupList.length; // data length minus number of sub-headers
+			groupHeader.headerContent = group.generator(group.key, groupHeader.rowCount, group.rows, group);
+
+			groupListData.push(groupHeader);
+			groupListData = groupListData.concat(childData);
+		} else {
+			groupHeader.level = group.level;
+			groupHeader.headerContent = group.generator(group.key, group.rows.length, group.rows, group);
+			groupHeader.rowCount = group.getRows().length;
+
+			groupListData.push(groupHeader);
+
+			group.getRows().forEach(function (row) {
+				groupListData.push(row.getData("data"));
+			});
+		}
+	});
+
+	return groupListData;
+};
+
+GroupRows.prototype.getGroupedData = function () {
+
+	return this.pullGroupListData(this.groupList);
+};
+
+GroupRows.prototype.getRowGroup = function (row) {
+	var match = false;
+
+	this.groupList.forEach(function (group) {
+		var result = group.getRowGroup(row);
+
+		if (result) {
+			match = result;
+		}
+	});
+
+	return match;
+};
+
+GroupRows.prototype.countGroups = function () {
+	return this.groupList.length;
+};
+
+GroupRows.prototype.generateGroups = function (rows) {
+	var self = this,
+	    oldGroups = self.groups;
+
+	self.groups = {};
+	self.groupList = [];
+
+	if (this.allowedValues && this.allowedValues[0]) {
+		this.allowedValues[0].forEach(function (value) {
+			self.createGroup(value, 0, oldGroups);
+		});
+
+		rows.forEach(function (row) {
+			self.assignRowToExistingGroup(row, oldGroups);
+		});
+	} else {
+		rows.forEach(function (row) {
+			self.assignRowToGroup(row, oldGroups);
+		});
+	}
+};
+
+GroupRows.prototype.createGroup = function (groupID, level, oldGroups) {
+	var groupKey = level + "_" + groupID,
+	    group;
+
+	oldGroups = oldGroups || [];
+
+	group = new Group(this, false, level, groupID, this.groupIDLookups[0].field, this.headerGenerator[0], oldGroups[groupKey]);
+
+	this.groups[groupKey] = group;
+	this.groupList.push(group);
+};
+
+// GroupRows.prototype.assignRowToGroup = function(row, oldGroups){
+// 	var groupID = this.groupIDLookups[0].func(row.getData()),
+// 	groupKey = "0_" + groupID;
+
+// 	if(!this.groups[groupKey]){
+// 		this.createGroup(groupID, 0, oldGroups);
+// 	}
+
+// 	this.groups[groupKey].addRow(row);
+// };
+
+GroupRows.prototype.assignRowToExistingGroup = function (row, oldGroups) {
+	var groupID = this.groupIDLookups[0].func(row.getData()),
+	    groupKey = "0_" + groupID;
+
+	if (this.groups[groupKey]) {
+		this.groups[groupKey].addRow(row);
+	}
+};
+
+GroupRows.prototype.assignRowToGroup = function (row, oldGroups) {
+	var groupID = this.groupIDLookups[0].func(row.getData()),
+	    newGroupNeeded = !this.groups["0_" + groupID];
+
+	if (newGroupNeeded) {
+		this.createGroup(groupID, 0, oldGroups);
+	}
+
+	this.groups["0_" + groupID].addRow(row);
+
+	return !newGroupNeeded;
+};
+
+GroupRows.prototype.updateGroupRows = function (force) {
+	var self = this,
+	    output = [],
+	    oldRowCount;
+
+	self.groupList.forEach(function (group) {
+		output = output.concat(group.getHeadersAndRows());
+	});
+
+	//force update of table display
+	if (force) {
+
+		var displayIndex = self.table.rowManager.setDisplayRows(output, this.getDisplayIndex());
+
+		if (displayIndex !== true) {
+			this.setDisplayIndex(displayIndex);
+		}
+
+		self.table.rowManager.refreshActiveData("group", true, true);
+	}
+
+	return output;
+};
+
+GroupRows.prototype.scrollHeaders = function (left) {
+	left = left + "px";
+
+	this.groupList.forEach(function (group) {
+		group.scrollHeader(left);
+	});
+};
+
+GroupRows.prototype.removeGroup = function (group) {
+	var groupKey = group.level + "_" + group.key,
+	    index;
+
+	if (this.groups[groupKey]) {
+		delete this.groups[groupKey];
+
+		index = this.groupList.indexOf(group);
+
+		if (index > -1) {
+			this.groupList.splice(index, 1);
+		}
+	}
+};
+
+Tabulator.prototype.registerModule("groupRows", GroupRows);

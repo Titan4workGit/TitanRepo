@@ -1,1 +1,580 @@
-function a36_0x2922(){var _0x2e0776=['dropComplete','disconnectFromTables','Mover\x20Row\x20Error\x20-\x20no\x20matching\x20sender\x20found:','height','left','tabulator-block-select','movableRowsReceiver','moveHoverConnections','movableRowsSent','previousSibling','removeChild','comms','moveHover','parentNode','movableRowsReceivedFailed','initializeGroupHeader','createElement','576345WJpNiQ','77nsRlkN','getData','endMove','getTableElement','getComponent','634104hNXaRJ','initialize','helpers','string','senders','group','scrollTop','mouseup','createPlaceholderElement','dropcomplete','pageXOffset','overflow','nextSibling','pageX','stopImmediatePropagation','moveHoverTable','movableRowsSender','commsReceived','movableRowsSendingStart','_unbindMouseMove','call','placeholderElement','forEach','toRowAfter','mousedown','cloneNode','success','Move\x20Row\x20Error\x20-\x20Table\x20cannot\x20accept\x20connection,\x20already\x20connected\x20to\x20table:','setStartPosition','tableRowDropEvent','getConnections','touchmove','function','insertBefore','tableRowDrop','hoverElement','element','getHeight','79060tJzayX','registerModule','whiteSpace','nextRow','elOffset','style','table','rowManager','connection','toRow','send','checkPeriod','connectToTables','delete','addEventListener','remove','movableRowsSentFailed','2731516zLUKyC','235736pnkFFb','prevRow','warn','connectedTable','startMove','tabulator-row','modules','pointerEvents','startX','hidden','connectedRow','moving','initializeCell','initializeRow','classList','receivers','options','3549408ZbMctm','add','movableRowsReceivingStart','checkTimeout','moveRow','_bindMouseMove','949544aeCUJd','hasHandle','prototype','getDisplayRows','top','touchstart','startY','preventDefault','width','touches','movableRowsConnectedTables','disconnect','pageY','bindTouchEvents','div','tabulator-movingrow-receiving','which','type','touchMove','mousemove','setHandle','body','pageYOffset','symbol','iterator','tabulator-moving','appendChild','row','connect','tabulator-row-placeholder','bind','Mover\x20Row\x20Error\x20-\x20no\x20matching\x20receiver\x20found:','tabulator-movingrow-sending','removeEventListener','getBoundingClientRect','addRow','getElement'];a36_0x2922=function(){return _0x2e0776;};return a36_0x2922();}var a36_0x4c6a3c=a36_0x11df;function a36_0x11df(_0x3475fa,_0x29ace2){var _0x2922f4=a36_0x2922();return a36_0x11df=function(_0x11df07,_0x36aaa2){_0x11df07=_0x11df07-0x19e;var _0x55c8b0=_0x2922f4[_0x11df07];return _0x55c8b0;},a36_0x11df(_0x3475fa,_0x29ace2);}(function(_0x3665d7,_0x3f1e44){var _0x229ae3=a36_0x11df,_0x1e4c10=_0x3665d7();while(!![]){try{var _0x4f9778=parseInt(_0x229ae3(0x227))/0x1+parseInt(_0x229ae3(0x1f1))/0x2+-parseInt(_0x229ae3(0x1a2))/0x3+-parseInt(_0x229ae3(0x1d9))/0x4+-parseInt(_0x229ae3(0x1c8))/0x5+parseInt(_0x229ae3(0x1eb))/0x6+parseInt(_0x229ae3(0x228))/0x7*(-parseInt(_0x229ae3(0x1da))/0x8);if(_0x4f9778===_0x3f1e44)break;else _0x1e4c10['push'](_0x1e4c10['shift']());}catch(_0x32ebf0){_0x1e4c10['push'](_0x1e4c10['shift']());}}}(a36_0x2922,0x63ba9));var _typeof=typeof Symbol===a36_0x4c6a3c(0x1c2)&&typeof Symbol[a36_0x4c6a3c(0x209)]===a36_0x4c6a3c(0x208)?function(_0x11bbce){return typeof _0x11bbce;}:function(_0x3b44b7){var _0x5a5fed=a36_0x4c6a3c;return _0x3b44b7&&typeof Symbol==='function'&&_0x3b44b7['constructor']===Symbol&&_0x3b44b7!==Symbol[_0x5a5fed(0x1f3)]?_0x5a5fed(0x208):typeof _0x3b44b7;},MoveRows=function MoveRows(_0x120621){var _0x18adf3=a36_0x4c6a3c;this[_0x18adf3(0x1ce)]=_0x120621,this[_0x18adf3(0x1b7)]=this['createPlaceholderElement'](),this[_0x18adf3(0x1c5)]=![],this['checkTimeout']=![],this[_0x18adf3(0x1d3)]=0x96,this['moving']=![],this[_0x18adf3(0x1d1)]=![],this[_0x18adf3(0x1b9)]=![],this[_0x18adf3(0x1f2)]=![],this[_0x18adf3(0x1f7)]=0x0,this[_0x18adf3(0x1e2)]=0x0,this['moveHover']=this[_0x18adf3(0x222)][_0x18adf3(0x20f)](this),this[_0x18adf3(0x19f)]=this['endMove']['bind'](this),this[_0x18adf3(0x1bf)]=![],this[_0x18adf3(0x203)]=![],this[_0x18adf3(0x1d0)]=![],this['connections']=[],this[_0x18adf3(0x1dd)]=![],this[_0x18adf3(0x1e4)]=![];};MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1aa)]=function(){var _0x1c1d0d=a36_0x4c6a3c,_0x3d4f0e=document[_0x1c1d0d(0x226)](_0x1c1d0d(0x1ff));return _0x3d4f0e[_0x1c1d0d(0x1e8)][_0x1c1d0d(0x1ec)](_0x1c1d0d(0x1df)),_0x3d4f0e[_0x1c1d0d(0x1e8)][_0x1c1d0d(0x1ec)](_0x1c1d0d(0x20e)),_0x3d4f0e;},MoveRows['prototype'][a36_0x4c6a3c(0x1a3)]=function(_0x3c6083){var _0x5cacff=a36_0x4c6a3c;this[_0x5cacff(0x1d0)]=this[_0x5cacff(0x1ce)][_0x5cacff(0x1ea)][_0x5cacff(0x1fb)];},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x205)]=function(_0x2b3df0){var _0x2b31aa=a36_0x4c6a3c;this[_0x2b31aa(0x1f2)]=_0x2b3df0;},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x225)]=function(_0x373e52){var _0x461ad3=a36_0x4c6a3c,_0x174986=this,_0x37c041={},_0x416266;_0x37c041[_0x461ad3(0x1a9)]=function(_0x277124){var _0x1e882b=_0x461ad3;_0x174986[_0x1e882b(0x1c4)](_0x277124,row);}[_0x461ad3(0x20f)](_0x174986),_0x37c041[_0x461ad3(0x204)]=function(_0x385497){var _0x1a6ca0=_0x461ad3;if(_0x385497[_0x1a6ca0(0x1fd)]-Tabulator[_0x1a6ca0(0x1f3)]['helpers'][_0x1a6ca0(0x1cc)](_0x373e52[_0x1a6ca0(0x1c6)])[_0x1a6ca0(0x1f5)]+_0x174986[_0x1a6ca0(0x1ce)]['rowManager'][_0x1a6ca0(0x1c6)][_0x1a6ca0(0x1a8)]>_0x373e52[_0x1a6ca0(0x1c7)]()/0x2){if(_0x174986[_0x1a6ca0(0x1d1)]!==_0x373e52||!_0x174986[_0x1a6ca0(0x1b9)]){var _0x191802=_0x373e52[_0x1a6ca0(0x215)]();_0x191802[_0x1a6ca0(0x223)][_0x1a6ca0(0x1c3)](_0x174986['placeholderElement'],_0x191802['nextSibling']),_0x174986[_0x1a6ca0(0x1ef)](_0x373e52,!![]);}}else{if(_0x174986[_0x1a6ca0(0x1d1)]!==_0x373e52||_0x174986[_0x1a6ca0(0x1b9)]){var _0x191802=_0x373e52['getElement']();_0x191802[_0x1a6ca0(0x21f)]&&(_0x191802[_0x1a6ca0(0x223)][_0x1a6ca0(0x1c3)](_0x174986[_0x1a6ca0(0x1b7)],_0x191802),_0x174986[_0x1a6ca0(0x1ef)](_0x373e52,![]));}}}['bind'](_0x174986),_0x373e52[_0x461ad3(0x1e0)]['moveRow']=_0x37c041;},MoveRows['prototype'][a36_0x4c6a3c(0x1e7)]=function(_0x282610){var _0x26918e=a36_0x4c6a3c,_0x8f0447=this,_0x118e5f={},_0x316624;_0x118e5f[_0x26918e(0x1a9)]=function(_0x538e0d){var _0x8b3ba=_0x26918e;_0x8f0447[_0x8b3ba(0x1c4)](_0x538e0d,_0x282610);}['bind'](_0x8f0447),_0x118e5f['mousemove']=function(_0x1fc4e4){var _0x308a91=_0x26918e;if(_0x1fc4e4[_0x308a91(0x1fd)]-Tabulator[_0x308a91(0x1f3)][_0x308a91(0x1a4)]['elOffset'](_0x282610[_0x308a91(0x1c6)])[_0x308a91(0x1f5)]+_0x8f0447[_0x308a91(0x1ce)]['rowManager'][_0x308a91(0x1c6)][_0x308a91(0x1a8)]>_0x282610[_0x308a91(0x1c7)]()/0x2){if(_0x8f0447['toRow']!==_0x282610||!_0x8f0447['toRowAfter']){var _0x477fe2=_0x282610[_0x308a91(0x215)]();_0x477fe2['parentNode']['insertBefore'](_0x8f0447[_0x308a91(0x1b7)],_0x477fe2['nextSibling']),_0x8f0447['moveRow'](_0x282610,!![]);}}else{if(_0x8f0447[_0x308a91(0x1d1)]!==_0x282610||_0x8f0447['toRowAfter']){var _0x477fe2=_0x282610[_0x308a91(0x215)]();_0x477fe2['parentNode'][_0x308a91(0x1c3)](_0x8f0447[_0x308a91(0x1b7)],_0x477fe2),_0x8f0447[_0x308a91(0x1ef)](_0x282610,![]);}}}[_0x26918e(0x20f)](_0x8f0447),!this[_0x26918e(0x1f2)]&&(_0x316624=_0x282610[_0x26918e(0x215)](),_0x316624[_0x26918e(0x1d6)]('mousedown',function(_0x3b6d4c){var _0x511b46=_0x26918e;_0x3b6d4c['which']===0x1&&(_0x8f0447['checkTimeout']=setTimeout(function(){var _0x5d3da9=a36_0x11df;_0x8f0447[_0x5d3da9(0x1de)](_0x3b6d4c,_0x282610);},_0x8f0447[_0x511b46(0x1d3)]));}),_0x316624['addEventListener'](_0x26918e(0x1a9),function(_0x1f752a){var _0x5afbc7=_0x26918e;_0x1f752a[_0x5afbc7(0x201)]===0x1&&(_0x8f0447['checkTimeout']&&clearTimeout(_0x8f0447[_0x5afbc7(0x1ee)]));}),this[_0x26918e(0x1fe)](_0x282610,_0x282610[_0x26918e(0x215)]())),_0x282610[_0x26918e(0x1e0)][_0x26918e(0x1ef)]=_0x118e5f;},MoveRows['prototype'][a36_0x4c6a3c(0x1e6)]=function(_0x2ef102){var _0x1fe5b7=a36_0x4c6a3c,_0x30f119=this,_0x560fdf=_0x2ef102[_0x1fe5b7(0x215)]();_0x560fdf[_0x1fe5b7(0x1d6)](_0x1fe5b7(0x1ba),function(_0x6b12f4){var _0x5b5ac5=_0x1fe5b7;_0x6b12f4[_0x5b5ac5(0x201)]===0x1&&(_0x30f119[_0x5b5ac5(0x1ee)]=setTimeout(function(){var _0x5140cb=_0x5b5ac5;_0x30f119[_0x5140cb(0x1de)](_0x6b12f4,_0x2ef102[_0x5140cb(0x20c)]);},_0x30f119[_0x5b5ac5(0x1d3)]));}),_0x560fdf[_0x1fe5b7(0x1d6)](_0x1fe5b7(0x1a9),function(_0x278b88){var _0x390d3d=_0x1fe5b7;_0x278b88[_0x390d3d(0x201)]===0x1&&(_0x30f119[_0x390d3d(0x1ee)]&&clearTimeout(_0x30f119[_0x390d3d(0x1ee)]));}),this[_0x1fe5b7(0x1fe)](_0x2ef102[_0x1fe5b7(0x20c)],_0x2ef102[_0x1fe5b7(0x215)]());},MoveRows['prototype'][a36_0x4c6a3c(0x1fe)]=function(_0x155583,_0x43db89){var _0x5e09a0=a36_0x4c6a3c,_0x37557f=this,_0x5bb383=![],_0x565de6=![],_0x12263c,_0x21ef78,_0x18577f,_0x2268d0,_0x38fb41,_0x272c5d,_0x260259;_0x43db89[_0x5e09a0(0x1d6)](_0x5e09a0(0x1f6),function(_0x2232a0){var _0x525092=_0x5e09a0;_0x37557f[_0x525092(0x1ee)]=setTimeout(function(){var _0xe51b8a=_0x525092;_0x37557f['touchMove']=!![],_0x12263c=_0x155583,_0x21ef78=_0x155583[_0xe51b8a(0x1cb)](),_0x2268d0=_0x21ef78?_0x21ef78[_0xe51b8a(0x1c7)]()/0x2:0x0,_0x18577f=_0x155583[_0xe51b8a(0x1db)](),_0x38fb41=_0x18577f?_0x18577f['getHeight']()/0x2:0x0,_0x272c5d=0x0,_0x260259=0x0,_0x5bb383=![],_0x37557f[_0xe51b8a(0x1de)](_0x2232a0,_0x155583);},_0x37557f[_0x525092(0x1d3)]);},{'passive':!![]}),(this[_0x5e09a0(0x1e5)],this[_0x5e09a0(0x1d1)],this[_0x5e09a0(0x1b9)]),_0x43db89[_0x5e09a0(0x1d6)](_0x5e09a0(0x1c1),function(_0x1f3657){var _0x164ac5=_0x5e09a0,_0x6e2d81,_0x42c784,_0x192b71;_0x37557f['moving']&&(_0x1f3657[_0x164ac5(0x1f8)](),_0x37557f['moveHover'](_0x1f3657),!_0x5bb383&&(_0x5bb383=_0x1f3657[_0x164ac5(0x1fa)][0x0][_0x164ac5(0x1fd)]),_0x42c784=_0x1f3657[_0x164ac5(0x1fa)][0x0][_0x164ac5(0x1fd)]-_0x5bb383,_0x42c784>0x0?_0x21ef78&&_0x42c784-_0x272c5d>_0x2268d0&&(_0x192b71=_0x21ef78,_0x192b71!==_0x155583&&(_0x5bb383=_0x1f3657[_0x164ac5(0x1fa)][0x0]['pageY'],_0x192b71[_0x164ac5(0x215)]()[_0x164ac5(0x223)][_0x164ac5(0x1c3)](_0x37557f['placeholderElement'],_0x192b71['getElement']()[_0x164ac5(0x1ae)]),_0x37557f[_0x164ac5(0x1ef)](_0x192b71,!![]))):_0x18577f&&-_0x42c784-_0x260259>_0x38fb41&&(_0x192b71=_0x18577f,_0x192b71!==_0x155583&&(_0x5bb383=_0x1f3657[_0x164ac5(0x1fa)][0x0]['pageY'],_0x192b71[_0x164ac5(0x215)]()[_0x164ac5(0x223)][_0x164ac5(0x1c3)](_0x37557f[_0x164ac5(0x1b7)],_0x192b71[_0x164ac5(0x215)]()),_0x37557f[_0x164ac5(0x1ef)](_0x192b71,![]))),_0x192b71&&(_0x12263c=_0x192b71,_0x21ef78=_0x192b71[_0x164ac5(0x1cb)](),_0x272c5d=_0x2268d0,_0x2268d0=_0x21ef78?_0x21ef78[_0x164ac5(0x1c7)]()/0x2:0x0,_0x18577f=_0x192b71[_0x164ac5(0x1db)](),_0x260259=_0x38fb41,_0x38fb41=_0x18577f?_0x18577f['getHeight']()/0x2:0x0));}),_0x43db89[_0x5e09a0(0x1d6)]('touchend',function(_0x59ee73){var _0x49d33c=_0x5e09a0;_0x37557f['checkTimeout']&&clearTimeout(_0x37557f['checkTimeout']),_0x37557f[_0x49d33c(0x1e5)]&&(_0x37557f[_0x49d33c(0x19f)](_0x59ee73),_0x37557f[_0x49d33c(0x203)]=![]);});},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1f0)]=function(){var _0x42ca9e=a36_0x4c6a3c,_0x2d3c6e=this;_0x2d3c6e['table'][_0x42ca9e(0x1cf)]['getDisplayRows']()[_0x42ca9e(0x1b8)](function(_0x386545){var _0x237728=_0x42ca9e;(_0x386545[_0x237728(0x202)]===_0x237728(0x20c)||_0x386545[_0x237728(0x202)]===_0x237728(0x1a7))&&_0x386545['modules'][_0x237728(0x1ef)]['mousemove']&&_0x386545[_0x237728(0x215)]()[_0x237728(0x1d6)](_0x237728(0x204),_0x386545[_0x237728(0x1e0)][_0x237728(0x1ef)][_0x237728(0x204)]);});},MoveRows['prototype'][a36_0x4c6a3c(0x1b5)]=function(){var _0x51fcd3=a36_0x4c6a3c,_0x428e4b=this;_0x428e4b[_0x51fcd3(0x1ce)][_0x51fcd3(0x1cf)][_0x51fcd3(0x1f4)]()[_0x51fcd3(0x1b8)](function(_0x66b9e9){var _0x26994c=_0x51fcd3;(_0x66b9e9[_0x26994c(0x202)]===_0x26994c(0x20c)||_0x66b9e9['type']===_0x26994c(0x1a7))&&_0x66b9e9['modules'][_0x26994c(0x1ef)]['mousemove']&&_0x66b9e9[_0x26994c(0x215)]()[_0x26994c(0x212)](_0x26994c(0x204),_0x66b9e9[_0x26994c(0x1e0)][_0x26994c(0x1ef)][_0x26994c(0x204)]);});},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1de)]=function(_0x30d08e,_0x3dbd32){var _0xdfa60=a36_0x4c6a3c,_0x59090d=_0x3dbd32[_0xdfa60(0x215)]();this[_0xdfa60(0x1be)](_0x30d08e,_0x3dbd32),this['moving']=_0x3dbd32,this['table'][_0xdfa60(0x1c6)][_0xdfa60(0x1e8)][_0xdfa60(0x1ec)]('tabulator-block-select'),this[_0xdfa60(0x1b7)][_0xdfa60(0x1cd)][_0xdfa60(0x1f9)]=_0x3dbd32['getWidth']()+'px',this['placeholderElement'][_0xdfa60(0x1cd)][_0xdfa60(0x219)]=_0x3dbd32[_0xdfa60(0x1c7)]()+'px',!this[_0xdfa60(0x1d0)]?(_0x59090d[_0xdfa60(0x223)]['insertBefore'](this[_0xdfa60(0x1b7)],_0x59090d),_0x59090d[_0xdfa60(0x223)][_0xdfa60(0x220)](_0x59090d)):(this[_0xdfa60(0x1ce)][_0xdfa60(0x1c6)][_0xdfa60(0x1e8)][_0xdfa60(0x1ec)]('tabulator-movingrow-sending'),this[_0xdfa60(0x1d4)](_0x3dbd32)),this['hoverElement']=_0x59090d[_0xdfa60(0x1bb)](!![]),this[_0xdfa60(0x1c5)][_0xdfa60(0x1e8)][_0xdfa60(0x1ec)](_0xdfa60(0x20a)),this['connection']?(document[_0xdfa60(0x206)]['appendChild'](this[_0xdfa60(0x1c5)]),this[_0xdfa60(0x1c5)][_0xdfa60(0x1cd)]['left']='0',this['hoverElement'][_0xdfa60(0x1cd)][_0xdfa60(0x1f5)]='0',this[_0xdfa60(0x1c5)][_0xdfa60(0x1cd)][_0xdfa60(0x1f9)]=this[_0xdfa60(0x1ce)][_0xdfa60(0x1c6)]['clientWidth']+'px',this[_0xdfa60(0x1c5)][_0xdfa60(0x1cd)][_0xdfa60(0x1ca)]='nowrap',this[_0xdfa60(0x1c5)][_0xdfa60(0x1cd)][_0xdfa60(0x1ad)]=_0xdfa60(0x1e3),this['hoverElement'][_0xdfa60(0x1cd)][_0xdfa60(0x1e1)]='none'):(this[_0xdfa60(0x1ce)]['rowManager'][_0xdfa60(0x1a0)]()[_0xdfa60(0x20b)](this[_0xdfa60(0x1c5)]),this['hoverElement'][_0xdfa60(0x1cd)][_0xdfa60(0x21a)]='0',this[_0xdfa60(0x1c5)][_0xdfa60(0x1cd)]['top']='0',this[_0xdfa60(0x1f0)]()),document[_0xdfa60(0x206)]['addEventListener']('mousemove',this['moveHover']),document[_0xdfa60(0x206)][_0xdfa60(0x1d6)](_0xdfa60(0x1a9),this['endMove']),this['moveHover'](_0x30d08e);},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1be)]=function(_0x37cbb6,_0x58fe98){var _0xba3141=a36_0x4c6a3c,_0x22e7cb=this[_0xba3141(0x203)]?_0x37cbb6[_0xba3141(0x1fa)][0x0]['pageX']:_0x37cbb6[_0xba3141(0x1af)],_0x11810d=this[_0xba3141(0x203)]?_0x37cbb6[_0xba3141(0x1fa)][0x0][_0xba3141(0x1fd)]:_0x37cbb6[_0xba3141(0x1fd)],_0x596f56,_0x54d055;_0x596f56=_0x58fe98[_0xba3141(0x215)](),this[_0xba3141(0x1d0)]?(_0x54d055=_0x596f56[_0xba3141(0x213)](),this['startX']=_0x54d055[_0xba3141(0x21a)]-_0x22e7cb+window[_0xba3141(0x1ac)],this['startY']=_0x54d055[_0xba3141(0x1f5)]-_0x11810d+window[_0xba3141(0x207)]):this[_0xba3141(0x1f7)]=_0x11810d-_0x596f56[_0xba3141(0x213)]()[_0xba3141(0x1f5)];},MoveRows['prototype'][a36_0x4c6a3c(0x19f)]=function(_0x2f27a1){var _0x5bfdff=a36_0x4c6a3c;(!_0x2f27a1||_0x2f27a1[_0x5bfdff(0x201)]===0x1||this[_0x5bfdff(0x203)])&&(this[_0x5bfdff(0x1b5)](),!this[_0x5bfdff(0x1d0)]&&(this[_0x5bfdff(0x1b7)][_0x5bfdff(0x223)][_0x5bfdff(0x1c3)](this[_0x5bfdff(0x1e5)]['getElement'](),this[_0x5bfdff(0x1b7)]['nextSibling']),this['placeholderElement'][_0x5bfdff(0x223)]['removeChild'](this[_0x5bfdff(0x1b7)])),this[_0x5bfdff(0x1c5)][_0x5bfdff(0x223)][_0x5bfdff(0x220)](this[_0x5bfdff(0x1c5)]),this[_0x5bfdff(0x1ce)][_0x5bfdff(0x1c6)][_0x5bfdff(0x1e8)][_0x5bfdff(0x1d7)](_0x5bfdff(0x21b)),this[_0x5bfdff(0x1d1)]&&this[_0x5bfdff(0x1ce)][_0x5bfdff(0x1cf)][_0x5bfdff(0x1ef)](this['moving'],this[_0x5bfdff(0x1d1)],this[_0x5bfdff(0x1b9)]),this[_0x5bfdff(0x1e5)]=![],this[_0x5bfdff(0x1d1)]=![],this[_0x5bfdff(0x1b9)]=![],document['body'][_0x5bfdff(0x212)](_0x5bfdff(0x204),this[_0x5bfdff(0x222)]),document[_0x5bfdff(0x206)]['removeEventListener']('mouseup',this['endMove']),this['connection']&&(this['table'][_0x5bfdff(0x1c6)]['classList']['remove'](_0x5bfdff(0x211)),this[_0x5bfdff(0x217)]()));},MoveRows[a36_0x4c6a3c(0x1f3)]['moveRow']=function(_0x4766e1,_0x3a9870){var _0xba049e=a36_0x4c6a3c;this[_0xba049e(0x1d1)]=_0x4766e1,this['toRowAfter']=_0x3a9870;},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x222)]=function(_0x3ce86e){var _0x27a825=a36_0x4c6a3c;this[_0x27a825(0x1d0)]?this[_0x27a825(0x21d)][_0x27a825(0x1b6)](this,_0x3ce86e):this[_0x27a825(0x1b1)][_0x27a825(0x1b6)](this,_0x3ce86e);},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1b1)]=function(_0x512171){var _0x1f6d8f=a36_0x4c6a3c,_0x8564f6=this[_0x1f6d8f(0x1ce)][_0x1f6d8f(0x1cf)][_0x1f6d8f(0x215)](),_0x5914d9=_0x8564f6[_0x1f6d8f(0x1a8)],_0x4ee986=(this[_0x1f6d8f(0x203)]?_0x512171['touches'][0x0][_0x1f6d8f(0x1fd)]:_0x512171[_0x1f6d8f(0x1fd)])-_0x8564f6['getBoundingClientRect']()[_0x1f6d8f(0x1f5)]+_0x5914d9,_0x4fce62;this[_0x1f6d8f(0x1c5)][_0x1f6d8f(0x1cd)]['top']=_0x4ee986-this[_0x1f6d8f(0x1f7)]+'px';},MoveRows['prototype'][a36_0x4c6a3c(0x21d)]=function(_0x1cd7ec){var _0x1867e4=a36_0x4c6a3c;this[_0x1867e4(0x1c5)][_0x1867e4(0x1cd)][_0x1867e4(0x21a)]=this[_0x1867e4(0x1e2)]+(this[_0x1867e4(0x203)]?_0x1cd7ec[_0x1867e4(0x1fa)][0x0][_0x1867e4(0x1af)]:_0x1cd7ec[_0x1867e4(0x1af)])+'px',this[_0x1867e4(0x1c5)][_0x1867e4(0x1cd)][_0x1867e4(0x1f5)]=this[_0x1867e4(0x1f7)]+(this[_0x1867e4(0x203)]?_0x1cd7ec[_0x1867e4(0x1fa)][0x0][_0x1867e4(0x1fd)]:_0x1cd7ec[_0x1867e4(0x1fd)])+'px';},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1d4)]=function(_0x106673){var _0x1227a8=a36_0x4c6a3c,_0x350f3c=this,_0x202fc6=this[_0x1227a8(0x1ce)]['modules']['comms'][_0x1227a8(0x1c0)](this[_0x1227a8(0x1d0)]);this[_0x1227a8(0x1ce)][_0x1227a8(0x1ea)][_0x1227a8(0x1b4)]['call'](this[_0x1227a8(0x1ce)],_0x202fc6),this[_0x1227a8(0x1ce)][_0x1227a8(0x1e0)]['comms'][_0x1227a8(0x1d2)](this['connection'],'moveRow',_0x1227a8(0x20d),{'row':_0x106673});},MoveRows['prototype'][a36_0x4c6a3c(0x217)]=function(){var _0x9cd073=a36_0x4c6a3c,_0x4de03c=this,_0xb20285=this[_0x9cd073(0x1ce)][_0x9cd073(0x1e0)][_0x9cd073(0x221)][_0x9cd073(0x1c0)](this[_0x9cd073(0x1d0)]);this[_0x9cd073(0x1ce)][_0x9cd073(0x1ea)]['movableRowsSendingStop']['call'](this[_0x9cd073(0x1ce)],_0xb20285),this[_0x9cd073(0x1ce)]['modules'][_0x9cd073(0x221)][_0x9cd073(0x1d2)](this[_0x9cd073(0x1d0)],_0x9cd073(0x1ef),'disconnect');},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x20d)]=function(_0x3cbe04,_0x120abf){var _0xa5df02=a36_0x4c6a3c,_0x1fca13=this;return!this[_0xa5df02(0x1dd)]?(this['connectedTable']=_0x3cbe04,this[_0xa5df02(0x1e4)]=_0x120abf,this[_0xa5df02(0x1ce)]['element'][_0xa5df02(0x1e8)]['add'](_0xa5df02(0x200)),_0x1fca13[_0xa5df02(0x1ce)][_0xa5df02(0x1cf)][_0xa5df02(0x1f4)]()[_0xa5df02(0x1b8)](function(_0x5c8f84){var _0x1570f1=_0xa5df02;_0x5c8f84[_0x1570f1(0x202)]===_0x1570f1(0x20c)&&_0x5c8f84[_0x1570f1(0x1e0)][_0x1570f1(0x1ef)]&&_0x5c8f84[_0x1570f1(0x1e0)][_0x1570f1(0x1ef)][_0x1570f1(0x1a9)]&&_0x5c8f84[_0x1570f1(0x215)]()[_0x1570f1(0x1d6)](_0x1570f1(0x1a9),_0x5c8f84['modules'][_0x1570f1(0x1ef)]['mouseup']);}),_0x1fca13[_0xa5df02(0x1bf)]=_0x1fca13[_0xa5df02(0x1c4)][_0xa5df02(0x20f)](_0x1fca13),_0x1fca13['table'][_0xa5df02(0x1c6)]['addEventListener'](_0xa5df02(0x1a9),_0x1fca13[_0xa5df02(0x1bf)]),this[_0xa5df02(0x1ce)][_0xa5df02(0x1ea)][_0xa5df02(0x1ed)][_0xa5df02(0x1b6)](this['table'],_0x120abf,_0x3cbe04),!![]):(console[_0xa5df02(0x1dc)](_0xa5df02(0x1bd),this[_0xa5df02(0x1dd)]),![]);},MoveRows['prototype']['disconnect']=function(_0x20ad7e){var _0x1c8f77=a36_0x4c6a3c,_0x59627d=this;_0x20ad7e===this[_0x1c8f77(0x1dd)]?(this[_0x1c8f77(0x1dd)]=![],this[_0x1c8f77(0x1e4)]=![],this['table'][_0x1c8f77(0x1c6)][_0x1c8f77(0x1e8)]['remove']('tabulator-movingrow-receiving'),_0x59627d['table']['rowManager'][_0x1c8f77(0x1f4)]()[_0x1c8f77(0x1b8)](function(_0x2772cf){var _0x3709c8=_0x1c8f77;_0x2772cf[_0x3709c8(0x202)]===_0x3709c8(0x20c)&&_0x2772cf[_0x3709c8(0x1e0)]['moveRow']&&_0x2772cf['modules'][_0x3709c8(0x1ef)][_0x3709c8(0x1a9)]&&_0x2772cf['getElement']()[_0x3709c8(0x212)]('mouseup',_0x2772cf[_0x3709c8(0x1e0)][_0x3709c8(0x1ef)][_0x3709c8(0x1a9)]);}),_0x59627d['table'][_0x1c8f77(0x1c6)][_0x1c8f77(0x212)](_0x1c8f77(0x1a9),_0x59627d[_0x1c8f77(0x1bf)]),this['table'][_0x1c8f77(0x1ea)]['movableRowsReceivingStop']['call'](this[_0x1c8f77(0x1ce)],_0x20ad7e)):console[_0x1c8f77(0x1dc)]('Move\x20Row\x20Error\x20-\x20trying\x20to\x20disconnect\x20from\x20non\x20connected\x20table');},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x216)]=function(_0x4c92ad,_0x3fbcd2,_0x228597){var _0x8fb7df=a36_0x4c6a3c,_0x307744=![];if(_0x228597){switch(_typeof(this['table'][_0x8fb7df(0x1ea)][_0x8fb7df(0x1b2)])){case _0x8fb7df(0x1a5):_0x307744=this[_0x8fb7df(0x1a6)][this[_0x8fb7df(0x1ce)]['options'][_0x8fb7df(0x1b2)]];break;case'function':_0x307744=this[_0x8fb7df(0x1ce)][_0x8fb7df(0x1ea)][_0x8fb7df(0x1b2)];break;}_0x307744?_0x307744[_0x8fb7df(0x1b6)](this,this[_0x8fb7df(0x1e5)]['getComponent'](),_0x3fbcd2?_0x3fbcd2[_0x8fb7df(0x1a1)]():undefined,_0x4c92ad):this[_0x8fb7df(0x1ce)][_0x8fb7df(0x1ea)][_0x8fb7df(0x1b2)]&&console[_0x8fb7df(0x1dc)](_0x8fb7df(0x218),this[_0x8fb7df(0x1ce)][_0x8fb7df(0x1ea)][_0x8fb7df(0x1b2)]),this[_0x8fb7df(0x1ce)]['options'][_0x8fb7df(0x21e)]['call'](this[_0x8fb7df(0x1ce)],this[_0x8fb7df(0x1e5)]['getComponent'](),_0x3fbcd2?_0x3fbcd2['getComponent']():undefined,_0x4c92ad);}else this[_0x8fb7df(0x1ce)][_0x8fb7df(0x1ea)][_0x8fb7df(0x1d8)]['call'](this[_0x8fb7df(0x1ce)],this[_0x8fb7df(0x1e5)][_0x8fb7df(0x1a1)](),_0x3fbcd2?_0x3fbcd2[_0x8fb7df(0x1a1)]():undefined,_0x4c92ad);this['endMove']();},MoveRows['prototype'][a36_0x4c6a3c(0x1c4)]=function(_0x23d3d1,_0x2f2070){var _0x46b378=a36_0x4c6a3c,_0x5720d3=![],_0x37ec53=![];_0x23d3d1[_0x46b378(0x1b0)]();switch(_typeof(this[_0x46b378(0x1ce)][_0x46b378(0x1ea)][_0x46b378(0x21c)])){case _0x46b378(0x1a5):_0x5720d3=this[_0x46b378(0x1e9)][this['table'][_0x46b378(0x1ea)][_0x46b378(0x21c)]];break;case _0x46b378(0x1c2):_0x5720d3=this[_0x46b378(0x1ce)][_0x46b378(0x1ea)][_0x46b378(0x21c)];break;}_0x5720d3?_0x37ec53=_0x5720d3['call'](this,this['connectedRow'][_0x46b378(0x1a1)](),_0x2f2070?_0x2f2070[_0x46b378(0x1a1)]():undefined,this[_0x46b378(0x1dd)]):console[_0x46b378(0x1dc)](_0x46b378(0x210),this[_0x46b378(0x1ce)]['options'][_0x46b378(0x21c)]),_0x37ec53?this[_0x46b378(0x1ce)][_0x46b378(0x1ea)]['movableRowsReceived']['call'](this[_0x46b378(0x1ce)],this['connectedRow']['getComponent'](),_0x2f2070?_0x2f2070['getComponent']():undefined,this[_0x46b378(0x1dd)]):this[_0x46b378(0x1ce)][_0x46b378(0x1ea)][_0x46b378(0x224)][_0x46b378(0x1b6)](this[_0x46b378(0x1ce)],this['connectedRow'][_0x46b378(0x1a1)](),_0x2f2070?_0x2f2070[_0x46b378(0x1a1)]():undefined,this[_0x46b378(0x1dd)]),this[_0x46b378(0x1ce)]['modules'][_0x46b378(0x221)][_0x46b378(0x1d2)](this[_0x46b378(0x1dd)],'moveRow',_0x46b378(0x1ab),{'row':_0x2f2070,'success':_0x37ec53});},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1e9)]={'insert':function insert(_0x400a67,_0x283a28,_0x4c9fb0){var _0x4a89e5=a36_0x4c6a3c;return this['table'][_0x4a89e5(0x214)](_0x400a67[_0x4a89e5(0x19e)](),undefined,_0x283a28),!![];},'add':function add(_0x4083c1,_0x1ef206,_0x3228d0){var _0x557113=a36_0x4c6a3c;return this[_0x557113(0x1ce)][_0x557113(0x214)](_0x4083c1[_0x557113(0x19e)]()),!![];},'update':function update(_0x57a2e5,_0x3b9cba,_0x55eaeb){var _0x5c1b9d=a36_0x4c6a3c;if(_0x3b9cba)return _0x3b9cba['update'](_0x57a2e5[_0x5c1b9d(0x19e)]()),!![];return![];},'replace':function replace(_0x8dc127,_0x5b9144,_0x1aafc1){var _0x49e861=a36_0x4c6a3c;if(_0x5b9144)return this['table'][_0x49e861(0x214)](_0x8dc127[_0x49e861(0x19e)](),undefined,_0x5b9144),_0x5b9144[_0x49e861(0x1d5)](),!![];return![];}},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1a6)]={'delete':function _delete(_0x5c08da,_0x204f0e,_0x8b3be6){var _0x475e8e=a36_0x4c6a3c;_0x5c08da[_0x475e8e(0x1d5)]();}},MoveRows[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1b3)]=function(_0x315270,_0x2e00c5,_0x13afea){var _0x2508f7=a36_0x4c6a3c;switch(_0x2e00c5){case _0x2508f7(0x20d):return this[_0x2508f7(0x20d)](_0x315270,_0x13afea[_0x2508f7(0x20c)]);break;case _0x2508f7(0x1fc):return this[_0x2508f7(0x1fc)](_0x315270);break;case _0x2508f7(0x1ab):return this[_0x2508f7(0x216)](_0x315270,_0x13afea['row'],_0x13afea[_0x2508f7(0x1bc)]);break;}},Tabulator[a36_0x4c6a3c(0x1f3)][a36_0x4c6a3c(0x1c9)](a36_0x4c6a3c(0x1ef),MoveRows);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var MoveRows = function MoveRows(table) {
+
+	this.table = table; //hold Tabulator object
+	this.placeholderElement = this.createPlaceholderElement();
+	this.hoverElement = false; //floating row header element
+	this.checkTimeout = false; //click check timeout holder
+	this.checkPeriod = 150; //period to wait on mousedown to consider this a move and not a click
+	this.moving = false; //currently moving row
+	this.toRow = false; //destination row
+	this.toRowAfter = false; //position of moving row relative to the desitnation row
+	this.hasHandle = false; //row has handle instead of fully movable row
+	this.startY = 0; //starting Y position within header element
+	this.startX = 0; //starting X position within header element
+
+	this.moveHover = this.moveHover.bind(this);
+	this.endMove = this.endMove.bind(this);
+	this.tableRowDropEvent = false;
+
+	this.touchMove = false;
+
+	this.connection = false;
+	this.connections = [];
+
+	this.connectedTable = false;
+	this.connectedRow = false;
+};
+
+MoveRows.prototype.createPlaceholderElement = function () {
+	var el = document.createElement("div");
+
+	el.classList.add("tabulator-row");
+	el.classList.add("tabulator-row-placeholder");
+
+	return el;
+};
+
+MoveRows.prototype.initialize = function (handle) {
+	this.connection = this.table.options.movableRowsConnectedTables;
+};
+
+MoveRows.prototype.setHandle = function (handle) {
+	this.hasHandle = handle;
+};
+
+MoveRows.prototype.initializeGroupHeader = function (group) {
+	var self = this,
+	    config = {},
+	    rowEl;
+
+	//inter table drag drop
+	config.mouseup = function (e) {
+		self.tableRowDrop(e, row);
+	}.bind(self);
+
+	//same table drag drop
+	config.mousemove = function (e) {
+		if (e.pageY - Tabulator.prototype.helpers.elOffset(group.element).top + self.table.rowManager.element.scrollTop > group.getHeight() / 2) {
+			if (self.toRow !== group || !self.toRowAfter) {
+				var rowEl = group.getElement();
+				rowEl.parentNode.insertBefore(self.placeholderElement, rowEl.nextSibling);
+				self.moveRow(group, true);
+			}
+		} else {
+			if (self.toRow !== group || self.toRowAfter) {
+				var rowEl = group.getElement();
+				if (rowEl.previousSibling) {
+					rowEl.parentNode.insertBefore(self.placeholderElement, rowEl);
+					self.moveRow(group, false);
+				}
+			}
+		}
+	}.bind(self);
+
+	group.modules.moveRow = config;
+};
+
+MoveRows.prototype.initializeRow = function (row) {
+	var self = this,
+	    config = {},
+	    rowEl;
+
+	//inter table drag drop
+	config.mouseup = function (e) {
+		self.tableRowDrop(e, row);
+	}.bind(self);
+
+	//same table drag drop
+	config.mousemove = function (e) {
+		if (e.pageY - Tabulator.prototype.helpers.elOffset(row.element).top + self.table.rowManager.element.scrollTop > row.getHeight() / 2) {
+			if (self.toRow !== row || !self.toRowAfter) {
+				var rowEl = row.getElement();
+				rowEl.parentNode.insertBefore(self.placeholderElement, rowEl.nextSibling);
+				self.moveRow(row, true);
+			}
+		} else {
+			if (self.toRow !== row || self.toRowAfter) {
+				var rowEl = row.getElement();
+				rowEl.parentNode.insertBefore(self.placeholderElement, rowEl);
+				self.moveRow(row, false);
+			}
+		}
+	}.bind(self);
+
+	if (!this.hasHandle) {
+
+		rowEl = row.getElement();
+
+		rowEl.addEventListener("mousedown", function (e) {
+			if (e.which === 1) {
+				self.checkTimeout = setTimeout(function () {
+					self.startMove(e, row);
+				}, self.checkPeriod);
+			}
+		});
+
+		rowEl.addEventListener("mouseup", function (e) {
+			if (e.which === 1) {
+				if (self.checkTimeout) {
+					clearTimeout(self.checkTimeout);
+				}
+			}
+		});
+
+		this.bindTouchEvents(row, row.getElement());
+	}
+
+	row.modules.moveRow = config;
+};
+
+MoveRows.prototype.initializeCell = function (cell) {
+	var self = this,
+	    cellEl = cell.getElement();
+
+	cellEl.addEventListener("mousedown", function (e) {
+		if (e.which === 1) {
+			self.checkTimeout = setTimeout(function () {
+				self.startMove(e, cell.row);
+			}, self.checkPeriod);
+		}
+	});
+
+	cellEl.addEventListener("mouseup", function (e) {
+		if (e.which === 1) {
+			if (self.checkTimeout) {
+				clearTimeout(self.checkTimeout);
+			}
+		}
+	});
+
+	this.bindTouchEvents(cell.row, cell.getElement());
+};
+
+MoveRows.prototype.bindTouchEvents = function (row, element) {
+	var self = this,
+	    startYMove = false,
+	    //shifting center position of the cell
+	dir = false,
+	    currentRow,
+	    nextRow,
+	    prevRow,
+	    nextRowHeight,
+	    prevRowHeight,
+	    nextRowHeightLast,
+	    prevRowHeightLast;
+
+	element.addEventListener("touchstart", function (e) {
+		self.checkTimeout = setTimeout(function () {
+			self.touchMove = true;
+			currentRow = row;
+			nextRow = row.nextRow();
+			nextRowHeight = nextRow ? nextRow.getHeight() / 2 : 0;
+			prevRow = row.prevRow();
+			prevRowHeight = prevRow ? prevRow.getHeight() / 2 : 0;
+			nextRowHeightLast = 0;
+			prevRowHeightLast = 0;
+			startYMove = false;
+
+			self.startMove(e, row);
+		}, self.checkPeriod);
+	}, { passive: true });
+	this.moving, this.toRow, this.toRowAfter;
+	element.addEventListener("touchmove", function (e) {
+
+		var halfCol, diff, moveToRow;
+
+		if (self.moving) {
+			e.preventDefault();
+
+			self.moveHover(e);
+
+			if (!startYMove) {
+				startYMove = e.touches[0].pageY;
+			}
+
+			diff = e.touches[0].pageY - startYMove;
+
+			if (diff > 0) {
+				if (nextRow && diff - nextRowHeightLast > nextRowHeight) {
+					moveToRow = nextRow;
+
+					if (moveToRow !== row) {
+						startYMove = e.touches[0].pageY;
+						moveToRow.getElement().parentNode.insertBefore(self.placeholderElement, moveToRow.getElement().nextSibling);
+						self.moveRow(moveToRow, true);
+					}
+				}
+			} else {
+				if (prevRow && -diff - prevRowHeightLast > prevRowHeight) {
+					moveToRow = prevRow;
+
+					if (moveToRow !== row) {
+						startYMove = e.touches[0].pageY;
+						moveToRow.getElement().parentNode.insertBefore(self.placeholderElement, moveToRow.getElement());
+						self.moveRow(moveToRow, false);
+					}
+				}
+			}
+
+			if (moveToRow) {
+				currentRow = moveToRow;
+				nextRow = moveToRow.nextRow();
+				nextRowHeightLast = nextRowHeight;
+				nextRowHeight = nextRow ? nextRow.getHeight() / 2 : 0;
+				prevRow = moveToRow.prevRow();
+				prevRowHeightLast = prevRowHeight;
+				prevRowHeight = prevRow ? prevRow.getHeight() / 2 : 0;
+			}
+		}
+	});
+
+	element.addEventListener("touchend", function (e) {
+		if (self.checkTimeout) {
+			clearTimeout(self.checkTimeout);
+		}
+		if (self.moving) {
+			self.endMove(e);
+			self.touchMove = false;
+		}
+	});
+};
+
+MoveRows.prototype._bindMouseMove = function () {
+	var self = this;
+
+	self.table.rowManager.getDisplayRows().forEach(function (row) {
+		if ((row.type === "row" || row.type === "group") && row.modules.moveRow.mousemove) {
+			row.getElement().addEventListener("mousemove", row.modules.moveRow.mousemove);
+		}
+	});
+};
+
+MoveRows.prototype._unbindMouseMove = function () {
+	var self = this;
+
+	self.table.rowManager.getDisplayRows().forEach(function (row) {
+		if ((row.type === "row" || row.type === "group") && row.modules.moveRow.mousemove) {
+			row.getElement().removeEventListener("mousemove", row.modules.moveRow.mousemove);
+		}
+	});
+};
+
+MoveRows.prototype.startMove = function (e, row) {
+	var element = row.getElement();
+
+	this.setStartPosition(e, row);
+
+	this.moving = row;
+
+	this.table.element.classList.add("tabulator-block-select");
+
+	//create placeholder
+	this.placeholderElement.style.width = row.getWidth() + "px";
+	this.placeholderElement.style.height = row.getHeight() + "px";
+
+	if (!this.connection) {
+		element.parentNode.insertBefore(this.placeholderElement, element);
+		element.parentNode.removeChild(element);
+	} else {
+		this.table.element.classList.add("tabulator-movingrow-sending");
+		this.connectToTables(row);
+	}
+
+	//create hover element
+	this.hoverElement = element.cloneNode(true);
+	this.hoverElement.classList.add("tabulator-moving");
+
+	if (this.connection) {
+		document.body.appendChild(this.hoverElement);
+		this.hoverElement.style.left = "0";
+		this.hoverElement.style.top = "0";
+		this.hoverElement.style.width = this.table.element.clientWidth + "px";
+		this.hoverElement.style.whiteSpace = "nowrap";
+		this.hoverElement.style.overflow = "hidden";
+		this.hoverElement.style.pointerEvents = "none";
+	} else {
+		this.table.rowManager.getTableElement().appendChild(this.hoverElement);
+
+		this.hoverElement.style.left = "0";
+		this.hoverElement.style.top = "0";
+
+		this._bindMouseMove();
+	}
+
+	document.body.addEventListener("mousemove", this.moveHover);
+	document.body.addEventListener("mouseup", this.endMove);
+
+	this.moveHover(e);
+};
+
+MoveRows.prototype.setStartPosition = function (e, row) {
+	var pageX = this.touchMove ? e.touches[0].pageX : e.pageX,
+	    pageY = this.touchMove ? e.touches[0].pageY : e.pageY,
+	    element,
+	    position;
+
+	element = row.getElement();
+	if (this.connection) {
+		position = element.getBoundingClientRect();
+
+		this.startX = position.left - pageX + window.pageXOffset;
+		this.startY = position.top - pageY + window.pageYOffset;
+	} else {
+		this.startY = pageY - element.getBoundingClientRect().top;
+	}
+};
+
+MoveRows.prototype.endMove = function (e) {
+	if (!e || e.which === 1 || this.touchMove) {
+		this._unbindMouseMove();
+
+		if (!this.connection) {
+			this.placeholderElement.parentNode.insertBefore(this.moving.getElement(), this.placeholderElement.nextSibling);
+			this.placeholderElement.parentNode.removeChild(this.placeholderElement);
+		}
+
+		this.hoverElement.parentNode.removeChild(this.hoverElement);
+
+		this.table.element.classList.remove("tabulator-block-select");
+
+		if (this.toRow) {
+			this.table.rowManager.moveRow(this.moving, this.toRow, this.toRowAfter);
+		}
+
+		this.moving = false;
+		this.toRow = false;
+		this.toRowAfter = false;
+
+		document.body.removeEventListener("mousemove", this.moveHover);
+		document.body.removeEventListener("mouseup", this.endMove);
+
+		if (this.connection) {
+			this.table.element.classList.remove("tabulator-movingrow-sending");
+			this.disconnectFromTables();
+		}
+	}
+};
+
+MoveRows.prototype.moveRow = function (row, after) {
+	this.toRow = row;
+	this.toRowAfter = after;
+};
+
+MoveRows.prototype.moveHover = function (e) {
+	if (this.connection) {
+		this.moveHoverConnections.call(this, e);
+	} else {
+		this.moveHoverTable.call(this, e);
+	}
+};
+
+MoveRows.prototype.moveHoverTable = function (e) {
+	var rowHolder = this.table.rowManager.getElement(),
+	    scrollTop = rowHolder.scrollTop,
+	    yPos = (this.touchMove ? e.touches[0].pageY : e.pageY) - rowHolder.getBoundingClientRect().top + scrollTop,
+	    scrollPos;
+
+	this.hoverElement.style.top = yPos - this.startY + "px";
+};
+
+MoveRows.prototype.moveHoverConnections = function (e) {
+	this.hoverElement.style.left = this.startX + (this.touchMove ? e.touches[0].pageX : e.pageX) + "px";
+	this.hoverElement.style.top = this.startY + (this.touchMove ? e.touches[0].pageY : e.pageY) + "px";
+};
+
+//establish connection with other tables
+MoveRows.prototype.connectToTables = function (row) {
+	var self = this,
+	    connections = this.table.modules.comms.getConnections(this.connection);
+
+	this.table.options.movableRowsSendingStart.call(this.table, connections);
+
+	this.table.modules.comms.send(this.connection, "moveRow", "connect", {
+		row: row
+	});
+};
+
+//disconnect from other tables
+MoveRows.prototype.disconnectFromTables = function () {
+	var self = this,
+	    connections = this.table.modules.comms.getConnections(this.connection);
+
+	this.table.options.movableRowsSendingStop.call(this.table, connections);
+
+	this.table.modules.comms.send(this.connection, "moveRow", "disconnect");
+};
+
+//accept incomming connection
+MoveRows.prototype.connect = function (table, row) {
+	var self = this;
+	if (!this.connectedTable) {
+		this.connectedTable = table;
+		this.connectedRow = row;
+
+		this.table.element.classList.add("tabulator-movingrow-receiving");
+
+		self.table.rowManager.getDisplayRows().forEach(function (row) {
+			if (row.type === "row" && row.modules.moveRow && row.modules.moveRow.mouseup) {
+				row.getElement().addEventListener("mouseup", row.modules.moveRow.mouseup);
+			}
+		});
+
+		self.tableRowDropEvent = self.tableRowDrop.bind(self);
+
+		self.table.element.addEventListener("mouseup", self.tableRowDropEvent);
+
+		this.table.options.movableRowsReceivingStart.call(this.table, row, table);
+
+		return true;
+	} else {
+		console.warn("Move Row Error - Table cannot accept connection, already connected to table:", this.connectedTable);
+		return false;
+	}
+};
+
+//close incomming connection
+MoveRows.prototype.disconnect = function (table) {
+	var self = this;
+	if (table === this.connectedTable) {
+		this.connectedTable = false;
+		this.connectedRow = false;
+
+		this.table.element.classList.remove("tabulator-movingrow-receiving");
+
+		self.table.rowManager.getDisplayRows().forEach(function (row) {
+			if (row.type === "row" && row.modules.moveRow && row.modules.moveRow.mouseup) {
+				row.getElement().removeEventListener("mouseup", row.modules.moveRow.mouseup);
+			}
+		});
+
+		self.table.element.removeEventListener("mouseup", self.tableRowDropEvent);
+
+		this.table.options.movableRowsReceivingStop.call(this.table, table);
+	} else {
+		console.warn("Move Row Error - trying to disconnect from non connected table");
+	}
+};
+
+MoveRows.prototype.dropComplete = function (table, row, success) {
+	var sender = false;
+
+	if (success) {
+
+		switch (_typeof(this.table.options.movableRowsSender)) {
+			case "string":
+				sender = this.senders[this.table.options.movableRowsSender];
+				break;
+
+			case "function":
+				sender = this.table.options.movableRowsSender;
+				break;
+		}
+
+		if (sender) {
+			sender.call(this, this.moving.getComponent(), row ? row.getComponent() : undefined, table);
+		} else {
+			if (this.table.options.movableRowsSender) {
+				console.warn("Mover Row Error - no matching sender found:", this.table.options.movableRowsSender);
+			}
+		}
+
+		this.table.options.movableRowsSent.call(this.table, this.moving.getComponent(), row ? row.getComponent() : undefined, table);
+	} else {
+		this.table.options.movableRowsSentFailed.call(this.table, this.moving.getComponent(), row ? row.getComponent() : undefined, table);
+	}
+
+	this.endMove();
+};
+
+MoveRows.prototype.tableRowDrop = function (e, row) {
+	var receiver = false,
+	    success = false;
+
+	e.stopImmediatePropagation();
+
+	switch (_typeof(this.table.options.movableRowsReceiver)) {
+		case "string":
+			receiver = this.receivers[this.table.options.movableRowsReceiver];
+			break;
+
+		case "function":
+			receiver = this.table.options.movableRowsReceiver;
+			break;
+	}
+
+	if (receiver) {
+		success = receiver.call(this, this.connectedRow.getComponent(), row ? row.getComponent() : undefined, this.connectedTable);
+	} else {
+		console.warn("Mover Row Error - no matching receiver found:", this.table.options.movableRowsReceiver);
+	}
+
+	if (success) {
+		this.table.options.movableRowsReceived.call(this.table, this.connectedRow.getComponent(), row ? row.getComponent() : undefined, this.connectedTable);
+	} else {
+		this.table.options.movableRowsReceivedFailed.call(this.table, this.connectedRow.getComponent(), row ? row.getComponent() : undefined, this.connectedTable);
+	}
+
+	this.table.modules.comms.send(this.connectedTable, "moveRow", "dropcomplete", {
+		row: row,
+		success: success
+	});
+};
+
+MoveRows.prototype.receivers = {
+	insert: function insert(fromRow, toRow, fromTable) {
+		this.table.addRow(fromRow.getData(), undefined, toRow);
+		return true;
+	},
+
+	add: function add(fromRow, toRow, fromTable) {
+		this.table.addRow(fromRow.getData());
+		return true;
+	},
+
+	update: function update(fromRow, toRow, fromTable) {
+		if (toRow) {
+			toRow.update(fromRow.getData());
+			return true;
+		}
+
+		return false;
+	},
+
+	replace: function replace(fromRow, toRow, fromTable) {
+		if (toRow) {
+			this.table.addRow(fromRow.getData(), undefined, toRow);
+			toRow.delete();
+			return true;
+		}
+
+		return false;
+	}
+};
+
+MoveRows.prototype.senders = {
+	delete: function _delete(fromRow, toRow, toTable) {
+		fromRow.delete();
+	}
+};
+
+MoveRows.prototype.commsReceived = function (table, action, data) {
+	switch (action) {
+		case "connect":
+			return this.connect(table, data.row);
+			break;
+
+		case "disconnect":
+			return this.disconnect(table);
+			break;
+
+		case "dropcomplete":
+			return this.dropComplete(table, data.row, data.success);
+			break;
+	}
+};
+
+Tabulator.prototype.registerModule("moveRow", MoveRows);

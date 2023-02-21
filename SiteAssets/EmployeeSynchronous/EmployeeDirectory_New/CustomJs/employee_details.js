@@ -1,1 +1,1906 @@
-var a21_0x598e4b=a21_0x1a63;(function(_0x4a3aa0,_0x282faf){var _0x5bbf60=a21_0x1a63,_0x4fc376=_0x4a3aa0();while(!![]){try{var _0x1435ea=parseInt(_0x5bbf60(0x218))/0x1+-parseInt(_0x5bbf60(0x29d))/0x2+-parseInt(_0x5bbf60(0x26e))/0x3*(parseInt(_0x5bbf60(0x268))/0x4)+parseInt(_0x5bbf60(0x247))/0x5+-parseInt(_0x5bbf60(0x21f))/0x6+parseInt(_0x5bbf60(0x184))/0x7*(-parseInt(_0x5bbf60(0x23b))/0x8)+parseInt(_0x5bbf60(0x277))/0x9;if(_0x1435ea===_0x282faf)break;else _0x4fc376['push'](_0x4fc376['shift']());}catch(_0x3a8686){_0x4fc376['push'](_0x4fc376['shift']());}}}(a21_0x547e,0x77c49));var currentCompanyid='',employeedIddetails='',modeofrequest='',departmentID='',sourcelocation='',newUserEmailIdGlobalVariable='',_UserfullName='',oldDateOfJoin='',olddeptname='',DepartnemtUrl='',currentDlg='',IsTFWUser=![],IsHRAdmin=![],NewUserDept='',specialKeys=new Array();specialKeys[a21_0x598e4b(0x27c)](0x8),$(a21_0x598e4b(0x251))[a21_0x598e4b(0x1bb)](function(){this['value']=this['value']['replace'](/[^0-9]/g,'');});function validateEmail(_0x4762e7){var _0x107c3c=a21_0x598e4b;if(_0x4762e7!=''){var _0x8bee4=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;if(_0x8bee4[_0x107c3c(0x243)](_0x4762e7)==![])return $(_0x107c3c(0x185))['val'](''),alert(_0x107c3c(0x2a6)),$('#inputEmail')['focus'](),![];return!![];}}function GetLicencedUsersCount(_0x30cb46){var _0x435c22=a21_0x598e4b,_0x4a4453=0x0,_0x2c350a='?$top=5000&$expand=LogonName&$select=ID,FullName,LogonName/UserName&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20PrimaryCompany\x20eq\x20\x27Primary\x27',_0x382a47=_spPageContextInfo[_0x435c22(0x19d)]+_0x435c22(0x169)+_0x2c350a;return $[_0x435c22(0x1f0)]({'url':_0x382a47,'data':{'format':_0x435c22(0x1ea)},'type':_0x435c22(0x1a1),'dataType':_0x435c22(0x1ea),'async':![],'success':function(_0x49e0f0){var _0xa6610d=_0x435c22;_0x4a4453=_0x49e0f0[_0xa6610d(0x1fb)][_0xa6610d(0x1e6)];}}),_0x4a4453;}var app=angular[a21_0x598e4b(0x12a)](a21_0x598e4b(0x123),[]);function a21_0x1a63(_0xd3c482,_0x351218){var _0x547eee=a21_0x547e();return a21_0x1a63=function(_0x1a633a,_0x4b8b10){_0x1a633a=_0x1a633a-0x116;var _0x18852a=_0x547eee[_0x1a633a];return _0x18852a;},a21_0x1a63(_0xd3c482,_0x351218);}function updateItemWithID(_0x4dd720,_0x39bc32,_0x3cd14d){var _0x1e9328=a21_0x598e4b,_0x56f1cd=$[_0x1e9328(0x246)]();return $[_0x1e9328(0x1f0)]({'url':_spPageContextInfo[_0x1e9328(0x19d)]+'/_api/web/lists/getbytitle(\x27'+_0x4dd720+_0x1e9328(0x136)+_0x3cd14d+'\x27)','type':'POST','headers':{'accept':_0x1e9328(0x19e),'X-RequestDigest':$(_0x1e9328(0x248))[_0x1e9328(0x1f6)](),'content-Type':_0x1e9328(0x19e),'X-Http-Method':'PATCH','If-Match':'*'},'data':JSON['stringify'](_0x39bc32),'async':![],'success':function(_0x43bb48){_0x56f1cd['resolve'](!![]);},'error':function(_0x341a9b){var _0x16e0ad=_0x1e9328;alert(JSON[_0x16e0ad(0x2a9)](_0x341a9b)),_0x56f1cd['reject'](_0x341a9b);}}),_0x56f1cd['promise']();}function GetItemTypeForListName(_0x154fdd){var _0x6ad4dd=a21_0x598e4b;return _0x6ad4dd(0x12d)+_0x154fdd[_0x6ad4dd(0x23e)](0x0)[_0x6ad4dd(0x1ae)]()+_0x154fdd['split']('\x20')[_0x6ad4dd(0x17a)]('')[_0x6ad4dd(0x274)](0x1)+_0x6ad4dd(0x1da);}function GetDateStandardFormat(_0x1c571a){var _0x184129=a21_0x598e4b,_0x3e8b86=ConvertDateFormatToddMMyyyy(_0x1c571a),_0x26f2cd=new Date(_0x3e8b86),_0x1e07a5=0x3c*0x3c*0x18*0x3e8,_0x3c7515=new Date(_0x26f2cd[_0x184129(0x1e2)]()),_0x3a7326=_0x3c7515['toISOString']();return _0x3a7326;}function ConvertDateFormatToddMMyyyy(_0x26f908){var _0x44b8a9=a21_0x598e4b,_0x284e56=stringToDate(_0x26f908,_0x44b8a9(0x222),'/');return _0x284e56;}function stringToDate(_0x409045,_0x172b82,_0x2f4676){var _0x317e76=a21_0x598e4b,_0x456e38=_0x172b82[_0x317e76(0x1b7)](),_0x1354df=_0x456e38[_0x317e76(0x17b)](_0x2f4676),_0x11ecb2=_0x409045[_0x317e76(0x17b)](_0x2f4676),_0x3bab15=_0x1354df[_0x317e76(0x1a9)]('mm'),_0x46ef1b=_0x1354df[_0x317e76(0x1a9)]('dd'),_0x425a48=_0x1354df[_0x317e76(0x1a9)](_0x317e76(0x142)),_0x32284d=parseInt(_0x11ecb2[_0x3bab15]);_0x32284d-=0x1;var _0x1cdb37=new Date(_0x11ecb2[_0x425a48],_0x32284d,_0x11ecb2[_0x46ef1b]);return _0x1cdb37;}function a21_0x547e(){var _0x183cf1=['ParentId','toString','#txtNewUseremail','/_api/web/lists/GetByTitle(\x27Companies\x27)/items?$select=ID,CompanyName','New\x20Joinee','showWaitScreenWithNoClose','datepicker','SearchPrincipalSource','.btnHR','ServerRelativeUrl','mode','pop','DELETE','exec','input[type=radio][name=datasend]','modal','Kindly\x20select\x20any\x20option.','/_api/web/lists/GetByTitle(\x27Employees\x27)/items?$select=ID,Email,LinkedIn_Account,LogonNameId,DateofTermination,Gender,EmployeeID,GroupName,HomeAddress,HomePhone,JoiningDate,PostalAddresses,OtherEMailAddress,StateProvince,Status,ZIPPostalCode,Country,DateOfAnniversary,DateOfBirth,City,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/UserName,ManagerLoginName/UserName,Department/ID,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName,OfficeLocation/Region&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department,AttachmentFiles&$top=5000&$filter=ID\x20\x20eq\x20\x27','\x20KB.','DateOfBirth','getElementById','/_api/contextinfo','editViewDisable','reject','Kindly\x20fill\x20manager\x20name.','#SuccessPopupText','Company','User','GetAttachment','newEmployeePicker_TopSpan','MM\x20dd,\x20yy','Redirecting...','Employee\x20Name\x0aEmail\x0aCompany\x0aDepartment\x0aOffice\x20Location\x0aDate\x20of\x20Joining\x20can\x20not\x20be\x20blank\x20.','Gender','pointer','Region','/_api/web/lists/getbytitle(\x27Employees\x27)/items','DepartmentId','imageUrl','EmployeeID','curreLogonLookkpuID','ShowAlert','OnValueChangedClientScript','/_api/web/lists/getbytitle(\x27Employees\x27)/items(\x27','show','dateofTermination','#txtEmpEmail','FullName','done','dd\x20M\x20yy','Designation','PostalAddresses','designation','join','split','\x27)/items','Employee\x20has\x20been\x20updated\x20successfully.','LinkedIn_Account','#chkSameAddress','The\x20file\x20you\x20are\x20trying\x20to\x20upload\x20is\x20too\x20large\x20(max\x20100KB).','href','#ChiefExecute','ZIPPostalCode','7eCOIQv','#inputEmail','myWelcome','PageLod','#managerLoginName','showDepartment','close','DocumentManagementSystem/','MyDashboard','css','Departments','otherEmail','click','checkFileExists','alert','formatDate','PrimaryCompany','City','currentUser','/_api/web/getFileByServerRelativeUrl(\x27','data','#sameCheck','edit','Url','#modalTitanPreview','webAbsoluteUrl','application/json;odata=verbose','#Companysec','SPClientPeoplePickerDict','GET','MobileNumber','#Linkedln','<option\x20value=\x22TFW\x20Labs,\x20Inc.\x22>TFW\x20Labs,\x20Inc.</option>','attr','DateOfAnniversary','ngModel','?$select=Id,WebPartName,Contributors/EMail&$expand=Contributors&$top=5000&$filter=WebPartName\x20eq\x20\x27HR\x20Admin\x27\x20and\x20Contributors/EMail\x20eq\x20\x27','indexOf','#designation','showData','parmanentAddress','dateofBirth','toUpperCase','ResolvePrincipalSource','\x27)/items/','getMonth','<br\x20/>Please\x20wait!!','\x27)/AttachmentFiles/\x20add(FileName=\x27','HomeAddress','officeLocation','null','toLowerCase','\x27\x20and\x20(WebPartName\x20eq\x20\x27HR\x20Admin\x27\x20or\x20WebPartName\x20\x20eq\x20\x27Tech\x20Admin\x27)','DOJ:\x20','HomePhone','keyup','append','redirectCancel','getFullYear','LogonNameId','Permission\x20has\x20been\x20breaked\x20successfully!','Employees','getDate','siteAbsoluteUrl','FormDigestValue','?$select=Introduction&$filter=ID\x20\x20eq\x20\x27','status','Introduction','/_api/web/lists/GetByTitle(\x27Departments\x27)/items?$select=ID,DepartmentName,CompanyIDId&$filter=CompanyIDId\x20eq\x20\x27','Exists','toFixed','terminatestatus','=([^&#]*)','getItemsWithQueryItem','message','promise','statusText','Employee\x20is\x20updated\x20successfully.','sourcelocation','StateProvince','OfficeLocationsId','files','get','format','undefined','CompanyId','ListItem','Data\x20Send\x20to\x20Announcements\x20Failed','\x27\x20and\x20CompanyId\x20eq\x20\x27','mobileNo','?WebAppId=','/_api/web/sitegroups/getByName(\x27TFW_Employees\x27)/Users?$select=Email,Id','#profile-image1','readAsArrayBuffer','getTime','Welcome','.richText-editor','#DOB','length','showCompany','name','You\x20don\x27t\x20have\x20enough\x20licence','json','\x27)/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=CompanyId\x20eq\x20\x27','AddUserinSharePointGroup','city','contenteditable','DateofTermination','ajax','clone','You\x20don\x27t\x20have\x20permission\x20to\x20access.','LinkedlnAccount','parse','#input5country','val','replace','i:0#.f|membership|','then','AddAttachments','value','/_api/web/folders','AttachmentFiles','true','#dateofJoining','#department\x20option:selected','This\x20user\x20is\x20not\x20added\x20on\x20this\x20site,Please\x20add\x20this\x20user\x20on\x20this\x20site.','ready','all','UserInfoFullName','dateofAnniversary','Chief\x20Executive','AddUserKeys','change','ng-hide','Primary','onload','---Select---','ListOfUsers','ManagerFullName','png','SP.Folder','RedirectPage','URL',')/users','#NotifyAnnoucement','employeeCode','/_api/web/lists/GetByTitle(\x27EnvironmentalSettings\x27)/Items?$select=Title,Active,scope,ListOfUsers/ID&$expand=ListOfUsers&$filter=Title\x20eq\x20\x27EmployeePersonalInfo\x27','groupName','71675KoZwWE','ExtensionName','#txtEmpName','AllowMultipleValues','Employee\x20Name\x20can\x27t\x20be\x20blank\x20.','#txtEmpDept','#nosenddata','1981584IbLUQx','extension','log','dd/MM/yyyy','gender','homePhone','directive','#Gender','Status','false','Add','trim','/_layouts/15/userphoto.aspx?accountname=','teamporaryImageUrl','addNewEmployeeLoder','clearFileControl','resolve','Announcements','GetCompany','/_api/web/lists/getbytitle(\x27Departments\x27)/items?$select=ID,SiteURL,DepartmentName&$filter=ID\x20eq\x20\x27','EntityData','employeedIddetails','Error\x20occured.','executeFunc','urlParam','AddNewEmployee','#txtSomethingWentWrong','src','3934648UeShKx','clientpeoplepicker.js','#locationsec','charAt','removeClass','Permission\x20has\x20been\x20assigned\x20successfully!','/_api/web/siteusers(@v)?@v=\x27','#uploadFile1','test','Email','checked','Deferred','1588525EnOxkr','#__REQUESTDIGEST','responseJSON','employeeName','prop','#txtEmpReg','.txtCurrAddress','SP.Data.AnnouncementsListItem','/_api/web/sitegroups/getbyname(\x27Contributors\x27)?$select=id','AddFileAttachmmentOnNewEmployeeAddtion','.Number','Everyone','https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg','../Pages/EmployeeDirectory.aspx?WebAppId=','updateInformationButton','JoiningDate','#managerFullName','User\x20is\x20already\x20added\x20in\x20this\x20company','results','.richText-toolbar','#chiefexecutive','ValidFiles','Location','hide','size','managerLoginName','onCompanyChange','CurrentUSerIDForCheck','/_api/web/lists/getByTitle(\x27DepartmentalDMS\x27)/breakroleinheritance(copyRoleAssignments=false,\x20clearSubscopes=true)','clickTerminateButton','jpeg','html','email','2536KwSaIJ',':checked','EmployeeName','state','myCtrl','when','2493Eolzsb','GetOfficeLocation','DD/MM/YYYY','department','#managerDiv','OfficeLocationId','slice','SP.FieldUrlValue','allcontrols','15407793WHWBfK','1073741826','OfficeName','/_api/web/sitegroups(','GetUserId','push','Announcement_Type','SetEmployeeDetails','controller','LogonName\x20is\x20not\x20in\x20valid\x20format\x20!','#txtEmpLoc','Adding...','/_api/web/lists/getByTitle(\x27DepartmentalDMS\x27)/roleassignments/addroleassignment(principalid=','.zip','You\x20are\x20not\x20authorized\x20to\x20perform\x20this\x20action.\x20Kindly\x20contact\x20administrator.','setMonth','[id^=\x27','getCurrentUserREST','Internal\x20Users','mm/dd/yy','currentitemId','getQueryStringParameter','Data\x20Send\x20to\x20Announcements','&$top=5000&$filter=LogonName/UserName\x20\x20eq\x20\x27','Reporting\x20manager\x20is\x20not\x20valid.','UserType','\x20and\x20LogonNameId\x20eq\x20','TFW\x20Labs,\x20Inc.','GetGroupIDByGroupName','target','#officeLocation\x20option:selected','GetDepartment','GetAllUserInfo','location','#DateOfAnniversary','/_api/web/currentUser','OfficeLocation','MaximumEntitySuggestions','523678JbLFSS','AddItemToList','Manager','PrincipalAccountType','AddNewEmployeeDetails','editview','userId','application/json;\x20odata=verbose','country','Invalid\x20Email\x20Address','User\x20Added','Employee\x20is\x20updated\x20successfully','stringify','OtherEMailAddress','dateofJoining','#ddlUserCompany','SPClientPeoplePicker','SP.User','newEmployeePicker','POST','.txtPermAddress','disabled','#input5state','[?&]','EmployeeCheckListValidation','#Corporatesec','../Pages/AdminPortal.aspx?WebAppId=','text','&employeedIddetails=','modePopup','result','DeleteFile','/_api/web/lists/getbytitle(\x27','Country','#addInfo','SOD','currentAddress','ProcessApprovers','myApp','#txtEmpDesignation','DepartmentsId','#addsuccessful','manager','Title','ModalDialog','module','GroupName','Audience','SP.Data.','../Pages/EmployeeDirectory.aspx','Publish_Date','zip','load','ApprovalStatus','replaceWith','#input5city','abs','\x27)/GetItemById(\x27','error','Description','Error\x20occured\x20in\x20GetEnvironmentalSettings()','#UpdateInfo','SiteURL','responseText','cursor','/_api/web/lists/GetByTitle(\x27Announcements\x27)/items','GetEmployees','company','#MobNo','yyyy','add','Department'];a21_0x547e=function(){return _0x183cf1;};return a21_0x547e();}function SetFormatedDateToDDMMYYYY(_0x1d783b){var _0x52dfae=a21_0x598e4b,_0x52b47b='';if(_0x1d783b!=''&&_0x1d783b!=null){var _0x1e1bfa=new Date(_0x1d783b);_0x52b47b=$[_0x52dfae(0x14b)][_0x52dfae(0x193)](_0x52dfae(0x163),_0x1e1bfa);}return _0x52b47b;}function getUserInfo(_0x5ef20f){var _0xb7d183=a21_0x598e4b,_0x291b3c=$(_0xb7d183(0x287)+_0x5ef20f+'\x27]'),_0x428c8c=SPClientPeoplePicker[_0xb7d183(0x1a0)][_0x291b3c[0x1]['id']],_0x4a5e5a=_0x428c8c[_0xb7d183(0x297)](),_0x549cda='';return _0x4a5e5a['length']>0x0&&(_0x549cda=_0x4a5e5a[0x0]['Key']),_0x549cda;}function SetPeoplePicker_Multiselect(_0x589092,_0x4d8035){var _0x486a8a=a21_0x598e4b;_0x4d8035==null&&(_0x4d8035=![]);var _0x496914={};_0x496914[_0x486a8a(0x2a0)]=_0x486a8a(0x160),_0x496914[_0x486a8a(0x14c)]=0xf,_0x496914[_0x486a8a(0x1af)]=0xf,_0x496914[_0x486a8a(0x21b)]=_0x4d8035,_0x496914[_0x486a8a(0x29c)]=0x32,_0x496914['Width']='',SPClientPeoplePicker_InitStandaloneControlWrapper(_0x589092,null,_0x496914);}var userEmail;function PeoplePickerChangeEvent(){var _0x185749=a21_0x598e4b,_0x23dae8='';this[_0x185749(0x2ad)][_0x185749(0x1a0)][_0x185749(0x162)][_0x185749(0x16f)]=function(_0x3cade8,_0x4cb3f5){var _0x323812=_0x185749;_0x4cb3f5[_0x323812(0x1e6)]>0x0?(console[_0x323812(0x221)](_0x4cb3f5[0x0]['EntityData'][_0x323812(0x244)]),newUserEmailIdGlobalVariable=_0x4cb3f5[0x0][_0x323812(0x233)][_0x323812(0x244)],_0x23dae8=_0x4cb3f5[0x0]['DisplayText']):(newUserEmailIdGlobalVariable='',_0x23dae8=''),$(_0x323812(0x147))[_0x323812(0x1f6)](newUserEmailIdGlobalVariable),$('#profile-image1')[_0x323812(0x1a5)](_0x323812(0x23a),_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(newUserEmailIdGlobalVariable)),$(_0x323812(0x173))[_0x323812(0x118)](newUserEmailIdGlobalVariable),$(_0x323812(0x21a))[_0x323812(0x118)](_0x23dae8);};}app[a21_0x598e4b(0x225)](a21_0x598e4b(0x14b),function(){var _0x2d3b9c=a21_0x598e4b;return{'restrict':'A','require':_0x2d3b9c(0x1a7),'link':function(_0x5ed339,_0x50734d,_0x1b977b,_0x4c9d47){$(function(){var _0x2edfce=a21_0x1a63;_0x50734d[_0x2edfce(0x14b)]({'dateFormat':'dd/mm/yy','onSelect':function(_0xede7a0){_0x4c9d47['$setViewValue'](_0xede7a0),_0x5ed339['$apply']();}});});}};}),app[a21_0x598e4b(0x27f)](a21_0x598e4b(0x26c),function(_0x37314e,_0x339b91,_0x7a658){var _0x15fa5a=a21_0x598e4b;currentCompanyid=titanForWork[_0x15fa5a(0x28c)]('CompanyId'),departmentID=titanForWork['getQueryStringParameter'](_0x15fa5a(0x271)),employeedIddetails=titanForWork[_0x15fa5a(0x28c)](_0x15fa5a(0x234)),modeofrequest=titanForWork[_0x15fa5a(0x28c)]('mode'),sourcelocation=titanForWork[_0x15fa5a(0x28c)](_0x15fa5a(0x1d2)),_0x37314e[_0x15fa5a(0x28b)]=employeedIddetails,_0x37314e[_0x15fa5a(0x14f)]=modeofrequest,_0x37314e[_0x15fa5a(0x22c)]='',_0x37314e[_0x15fa5a(0x16b)]=_0x15fa5a(0x253),_0x37314e['company']=currentCompanyid,_0x37314e[_0x15fa5a(0x223)]='---Select---';if(departmentID!=''&&departmentID!=null)try{_0x37314e[_0x15fa5a(0x271)]=parseInt(departmentID);}catch(_0x5a073e){}SetPeoplePicker_Multiselect(_0x15fa5a(0x2af),![]),SP[_0x15fa5a(0x120)][_0x15fa5a(0x236)](_0x15fa5a(0x23c),_0x15fa5a(0x2ad),function(){var _0x53ad90=_0x15fa5a;SetPeoplePicker_Multiselect(_0x53ad90(0x260),![]);}),setTimeout(function(){PeoplePickerChangeEvent();},0xbb8);(_0x37314e[_0x15fa5a(0x14f)]==_0x15fa5a(0x19a)||_0x37314e[_0x15fa5a(0x14f)]=='add')&&(CheckUserPermissionToShowButton(),$(_0x15fa5a(0x188))[_0x15fa5a(0x171)](),$(_0x15fa5a(0x257))[_0x15fa5a(0x25e)](),$(_0x15fa5a(0x182))[_0x15fa5a(0x171)]());_0x37314e[_0x15fa5a(0x14f)]==_0x15fa5a(0x2a2)?(_0x37314e[_0x15fa5a(0x15b)]=_0x15fa5a(0x203),_0x37314e[_0x15fa5a(0x276)]=_0x15fa5a(0x203),$(_0x15fa5a(0x188))[_0x15fa5a(0x25e)](),$(_0x15fa5a(0x257))['show'](),$('#ChiefExecute')[_0x15fa5a(0x25e)]()):_0x37314e[_0x15fa5a(0x15b)]='No';_0x37314e[_0x15fa5a(0x187)]=function(){var _0x451490=_0x15fa5a;_0x37314e[_0x451490(0x14f)]==_0x451490(0x2a2)&&(_0x37314e[_0x451490(0x288)](),$(_0x451490(0x14d))[_0x451490(0x25e)]()),_0x37314e[_0x451490(0x1c6)]='Active',_0x37314e[_0x451490(0x231)](),_0x37314e[_0x451490(0x26f)](_0x37314e[_0x451490(0x140)]),$[_0x451490(0x26d)](_0x37314e['GetEmployees']())[_0x451490(0x175)](function(_0x39e8e1){_0x37314e['GetDepartment'](_0x37314e['company']);});},_0x37314e['getCurrentUserREST']=function(){var _0x1bd5e5=_0x15fa5a;$[_0x1bd5e5(0x1f0)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0x1bd5e5(0x29a),'method':'GET','headers':{'Accept':_0x1bd5e5(0x2a4)},'success':function(_0xb92551){var _0x3bb374=_0x1bd5e5;_0x37314e[_0x3bb374(0x262)]=_0xb92551['d']['Id'];},'error':function(_0x3db370){}});},_0x37314e['RedirectPage']=function(_0x4d8c7b){var _0x81a27f=_0x15fa5a;if(_0x4d8c7b!=null&&_0x4d8c7b!=''&&_0x4d8c7b!=_0x81a27f(0x1b6)){var _0x576aa0='';if(_0x4d8c7b['includes'](_0x81a27f(0x18c))==!![])$(location)['attr'](_0x81a27f(0x181),_0x81a27f(0x254)+Logged_CompanyId);else departmentID!=null&&departmentID!=''&&(_0x576aa0='&DepartmentId='+departmentID);var _0x1f0b1d=_0x4d8c7b+_0x81a27f(0x1de)+_0x37314e[_0x81a27f(0x140)]+_0x576aa0;$(location)[_0x81a27f(0x1a5)](_0x81a27f(0x181),_0x1f0b1d);}else $(location)[_0x81a27f(0x1a5)]('href',_0x81a27f(0x254)+Logged_CompanyId);},_0x37314e[_0x15fa5a(0x264)]=function(){var _0x310108=_0x15fa5a;if(IsHRAdmin==!![]){var _0x45cc9e='../Pages/employee_termination.aspx',_0x4c3a69='';departmentID!=null&&departmentID!=''&&(_0x4c3a69='&DepartmentId='+departmentID);var _0x484170=_0x45cc9e+_0x310108(0x1de)+_0x37314e[_0x310108(0x140)]+_0x310108(0x119)+_0x37314e[_0x310108(0x28b)]+_0x4c3a69+'&sourcelocation=../Pages/Show_Employee.aspx';$(location)['attr'](_0x310108(0x181),_0x484170);}else{alert(_0x310108(0x285));return;}},_0x37314e[_0x15fa5a(0x1bd)]=function(){var _0x23fd23=_0x15fa5a;_0x37314e[_0x23fd23(0x211)](sourcelocation);},_0x37314e[_0x15fa5a(0x11a)]=function(){var _0x286ab7=_0x15fa5a;$(_0x286ab7(0x19c))[_0x286ab7(0x154)](_0x286ab7(0x171));},_0x37314e[_0x15fa5a(0x22e)]=function(){var _0x514f4f=_0x15fa5a,_0x29936c=$(_0x514f4f(0x242));_0x29936c[_0x514f4f(0x133)](_0x29936c=_0x29936c[_0x514f4f(0x1f1)](!![]));},_0x37314e[_0x15fa5a(0x25c)]=function(_0x448d5b){var _0x2f8c2a=_0x15fa5a,_0xbcc59a=!![],_0x5262da=_0x448d5b[_0x2f8c2a(0x17b)]('.')[_0x2f8c2a(0x150)]()[_0x2f8c2a(0x1b7)]();return $['inArray'](_0x5262da,[_0x2f8c2a(0x265),'jpg',_0x2f8c2a(0x20f)])!=-0x1?_0xbcc59a=!![]:_0xbcc59a=![],_0xbcc59a;},_0x37314e[_0x15fa5a(0x191)]=function(){var _0x1b68af=_0x15fa5a;if(_0x37314e[_0x1b68af(0x22c)]['length']>0x0){var _0x4a24ee=$(_0x1b68af(0x242))[_0x1b68af(0x1f6)]()[_0x1b68af(0x1f7)](/.*(\/|\\)/,'');_0x37314e[_0x1b68af(0x25c)](_0x4a24ee)==!![]?$[_0x1b68af(0x1f0)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0x1b68af(0x197)+_0x37314e['teamporaryImageUrl']+'\x27)','method':'GET','headers':{'Accept':_0x1b68af(0x2a4)},'success':function(_0x127340){var _0x507174=_0x1b68af;_0x127340['d'][_0x507174(0x1c9)]&&_0x37314e[_0x507174(0x11c)]();},'error':function(_0x4e3459){var _0x596d53=_0x1b68af;_0x37314e[_0x596d53(0x1fa)]($(_0x596d53(0x242)));}}):alert('Picture\x20is\x20not\x20in\x20valid\x20format.');}else _0x37314e[_0x1b68af(0x1fa)]($('#uploadFile1'));},_0x37314e[_0x15fa5a(0x11c)]=function(){var _0x2dc6be=_0x15fa5a;$[_0x2dc6be(0x1f0)]({'url':_spPageContextInfo[_0x2dc6be(0x19d)]+'/_api/web/getFileByServerRelativeUrl(\x27'+_0x37314e[_0x2dc6be(0x22c)]+'\x27)','method':_0x2dc6be(0x151),'headers':{'X-RequestDigest':document[_0x2dc6be(0x159)]('__REQUESTDIGEST')[_0x2dc6be(0x1fb)]},'success':function(_0x207c8d){var _0x56ba78=_0x2dc6be;_0x37314e[_0x56ba78(0x1fa)]($(_0x56ba78(0x242)));},'error':function(_0xb0aba7){var _0x29746d=_0x2dc6be;console[_0x29746d(0x221)](_0xb0aba7);}});},_0x37314e[_0x15fa5a(0x250)]=function(){var _0x2955f4=_0x15fa5a;_0x37314e[_0x2955f4(0x1fa)]($(_0x2955f4(0x242)));},_0x37314e[_0x15fa5a(0x1fa)]=function(_0x3f45ae,_0x26e3ef){var _0x31abab=_0x15fa5a,_0x38c209='';$[_0x31abab(0x1f0)]({'url':_spPageContextInfo[_0x31abab(0x19d)]+_0x31abab(0x15a),'method':_0x31abab(0x2b0),'headers':{'ACCEPT':_0x31abab(0x19e),'content-type':'application/json;odata=verbose'},'success':function(_0x47bd93){var _0x5b4836=_0x31abab;_0x38c209=_0x47bd93['d']['GetContextWebInformation'][_0x5b4836(0x1c4)];},'error':function(_0x147af5){}})['done'](function(){var _0x4826ac=_0x31abab,_0x511dbd=_0x3f45ae,_0x1196d8=_0x511dbd[0x0]['files'][0x0][_0x4826ac(0x1e8)];_0x1196d8=_0x511dbd[0x0][_0x4826ac(0x1d5)][0x0][_0x4826ac(0x1e8)][_0x4826ac(0x1f7)](/[^a-zA-Z0-9-. ]/g,''),_0x1196d8=_0x1196d8[_0x4826ac(0x1f7)](/\s/g,'');var _0x56c71a=new FileReader();_0x56c71a[_0x4826ac(0x20b)]=function(_0x986030){var _0x25848c=_0x4826ac,_0x1baefe=_0x986030[_0x25848c(0x294)][_0x25848c(0x11b)],_0x2d0129=$['ajax']({'url':_spPageContextInfo[_0x25848c(0x19d)]+_0x25848c(0x170)+_0x37314e['currentitemId']+_0x25848c(0x1b3)+_0x1196d8+'\x27)','method':_0x25848c(0x2b0),'binaryStringRequestBody':!![],'data':_0x1baefe,'processData':![],'headers':{'ACCEPT':_0x25848c(0x19e),'X-RequestDigest':_0x38c209},'success':function(_0x78a657){var _0x3e6291=_0x25848c;if(_0x37314e[_0x3e6291(0x14f)]==_0x3e6291(0x143)){}else _0x37314e[_0x3e6291(0x22e)](),_0x37314e[_0x3e6291(0x13f)](),$(_0x3e6291(0x19c))[_0x3e6291(0x154)](_0x3e6291(0x25e)),$('#uploadFile1')[_0x3e6291(0x1f6)](null);},'error':function(_0x20a2c7){var _0x314159=_0x25848c;alert(_0x314159(0x235)+_0x20a2c7[_0x314159(0x13c)]);}});},_0x56c71a[_0x4826ac(0x1e1)](_0x511dbd[0x0][_0x4826ac(0x1d5)][0x0]);});},_0x37314e[_0x15fa5a(0x13f)]=function(){var _0x34e926=_0x15fa5a;_0x339b91({'url':_spPageContextInfo[_0x34e926(0x19d)]+_0x34e926(0x156)+_0x37314e[_0x34e926(0x28b)]+'\x27','method':_0x34e926(0x1a1),'headers':{'Accept':_0x34e926(0x19e)}})[_0x34e926(0x1f9)](function _0x36946f(_0x4d5e86){var _0x284fcf=_0x34e926;_0x37314e['company']=parseInt(currentCompanyid);if(_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)]['length']>0x0){_0x37314e[_0x284fcf(0x1ab)]=_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)][0x0],oldDateOfJoin=_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)][0x0]['JoiningDate'],olddeptname=_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)][0x0][_0x284fcf(0x144)]['ID'];var _0x408c96=_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)][0x0]['ManagerLoginName']['UserName'];_0x408c96!=null&&_0x408c96!=''&&SetAndResolvePeoplePicker(_0x284fcf(0x260),_0x408c96),_0x37314e[_0x284fcf(0x27e)](_0x4d5e86[_0x284fcf(0x198)]['d'][_0x284fcf(0x259)][0x0]),_0x37314e[_0x284fcf(0x296)](_0x37314e[_0x284fcf(0x140)]);}_0x37314e['mode']=='edit'||_0x37314e[_0x284fcf(0x14f)]==_0x284fcf(0x143)?($(_0x284fcf(0x1e4))[_0x284fcf(0x1a5)](_0x284fcf(0x1ee),_0x284fcf(0x1fe)),$(_0x284fcf(0x25a))[_0x284fcf(0x171)](),_0x37314e[_0x284fcf(0x14f)]==_0x284fcf(0x19a)&&$(_0x284fcf(0x13a))[_0x284fcf(0x171)](),_0x37314e['mode']==_0x284fcf(0x143)&&$('.picTab')[_0x284fcf(0x23f)](_0x284fcf(0x209))):($(_0x284fcf(0x199))[_0x284fcf(0x25e)](),$('.richText-editor')['attr'](_0x284fcf(0x1ee),_0x284fcf(0x228)),$('#UpdateInfo')[_0x284fcf(0x25e)](),$(_0x284fcf(0x25a))[_0x284fcf(0x25e)]());if(_0x37314e[_0x284fcf(0x28b)]!=''){var _0x26c64a=_0x284fcf(0x1c5)+_0x37314e[_0x284fcf(0x28b)]+'\x27';$[_0x284fcf(0x26d)](getItemsWithQuery('Employees',_0x26c64a))[_0x284fcf(0x175)](function(_0x53744d){var _0x5323bb=_0x284fcf;if(_0x53744d['length']>0x0){var _0x44c9b6=_0x53744d[0x0][_0x5323bb(0x1c7)];$(_0x5323bb(0x1e4))[_0x5323bb(0x266)](_0x44c9b6);}});}IsTFWUser==!![]&&$(_0x284fcf(0x2ac))[_0x284fcf(0x1bc)](_0x284fcf(0x1a4));},function _0xdafaa7(_0x5801f3){var _0x2d5609=_0x34e926;_0x37314e[_0x2d5609(0x186)]=_0x5801f3[_0x2d5609(0x1d0)];});},_0x37314e[_0x15fa5a(0x231)]=function(){var _0x48bd9e=_0x15fa5a;_0x339b91({'url':_spPageContextInfo['webAbsoluteUrl']+_0x48bd9e(0x148),'method':_0x48bd9e(0x1a1),'headers':{'Accept':_0x48bd9e(0x19e)}})['then'](function _0x3043e5(_0x53bb4d){var _0x3fa91f=_0x48bd9e;_0x37314e[_0x3fa91f(0x1e7)]=_0x53bb4d[_0x3fa91f(0x198)]['d'][_0x3fa91f(0x259)],_0x37314e[_0x3fa91f(0x140)]=currentCompanyid;},function _0x2ac5ec(_0x28bff1){var _0x244d6e=_0x48bd9e;_0x37314e[_0x244d6e(0x186)]=_0x28bff1['statusText'];});},_0x37314e[_0x15fa5a(0x261)]=function(){var _0x813f75=_0x15fa5a;_0x37314e[_0x813f75(0x296)](_0x37314e[_0x813f75(0x140)]),_0x37314e[_0x813f75(0x26f)](_0x37314e[_0x813f75(0x140)]);},_0x37314e['GetDepartment']=function(_0x5c1c26){var _0x53238b=_0x15fa5a;(_0x5c1c26==''||_0x5c1c26==null)&&(_0x5c1c26=currentCompanyid),_0x339b91({'url':_spPageContextInfo[_0x53238b(0x19d)]+_0x53238b(0x1c8)+_0x5c1c26+'\x27','method':'GET','headers':{'Accept':'application/json;odata=verbose'}})[_0x53238b(0x1f9)](function _0xccf55(_0x438f5f){var _0x796048=_0x53238b;_0x37314e[_0x796048(0x189)]=_0x438f5f[_0x796048(0x198)]['d'][_0x796048(0x259)];},function _0x43173b(_0x5a4061){var _0x5b4b44=_0x53238b;_0x37314e[_0x5b4b44(0x186)]=_0x5a4061['statusText'];});},_0x37314e['GetOfficeLocation']=function(_0x1141e5){var _0x494027=_0x15fa5a;_0x339b91({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/GetByTitle(\x27OfficeLocation\x27)/items?$select=ID,OfficeName,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=OfficeLocationId\x20eq\x20\x270\x27\x20and\x20CompanyID/ID\x20eq\x20\x27'+_0x1141e5+'\x27','method':_0x494027(0x1a1),'headers':{'Accept':'application/json;odata=verbose'}})[_0x494027(0x1f9)](function _0x420c66(_0x210841){var _0x19454b=_0x494027,_0x487b5b=new Array(),_0x48fb9f={};_0x48fb9f['ID']=0x0,_0x48fb9f[_0x19454b(0x279)]=_0x19454b(0x20c),_0x487b5b[_0x19454b(0x27c)](_0x48fb9f);for(var _0x15440e=0x0;_0x15440e<_0x210841[_0x19454b(0x198)]['d'][_0x19454b(0x259)][_0x19454b(0x1e6)];_0x15440e++){var _0x1d5fd6={};_0x1d5fd6['ID']=_0x210841[_0x19454b(0x198)]['d'][_0x19454b(0x259)][_0x15440e]['ID'],_0x1d5fd6[_0x19454b(0x279)]=_0x210841[_0x19454b(0x198)]['d'][_0x19454b(0x259)][_0x15440e][_0x19454b(0x279)],_0x487b5b['push'](_0x1d5fd6);}_0x37314e['showOffice']=_0x487b5b,_0x37314e['officeLocation']=0x0;},function _0x59f6ba(_0x5944b7){var _0x3b6565=_0x494027;_0x37314e[_0x3b6565(0x186)]=_0x5944b7[_0x3b6565(0x1d0)];});},_0x37314e[_0x15fa5a(0x27e)]=function(_0x2a2782){var _0x563eaa=_0x15fa5a;_0x37314e[_0x563eaa(0x16d)]=_0x2a2782[_0x563eaa(0x1bf)],CheckTFWEmp(_0x2a2782[_0x563eaa(0x1bf)]),_0x37314e['currentitemId']=_0x2a2782['ID'],_0x37314e[_0x563eaa(0x24a)]=_0x2a2782[_0x563eaa(0x174)];var _0xe1bb23=_0x37314e[_0x563eaa(0x16b)]=_0x37314e[_0x563eaa(0x161)](_0x2a2782[_0x563eaa(0x1fd)],_0x2a2782[_0x563eaa(0x244)]);_0x37314e['designation']=_0x2a2782['Designation'],_0x37314e['groupName']=_0x2a2782[_0x563eaa(0x12b)],_0x37314e[_0x563eaa(0x127)]=_0x2a2782[_0x563eaa(0x29f)];_0x2a2782[_0x563eaa(0x29f)]=='Chief\x20Executive'&&$(_0x563eaa(0x25b))[_0x563eaa(0x24b)](_0x563eaa(0x245),!![]);$(_0x563eaa(0x21a))[_0x563eaa(0x118)](_0x2a2782['FullName']);_0x2a2782['Designation']==null||_0x2a2782[_0x563eaa(0x177)]=='null'?$(_0x563eaa(0x124))[_0x563eaa(0x118)](''):$(_0x563eaa(0x124))[_0x563eaa(0x118)](_0x2a2782[_0x563eaa(0x177)]);_0x2a2782[_0x563eaa(0x29b)][_0x563eaa(0x279)]!=null&&_0x2a2782[_0x563eaa(0x29b)][_0x563eaa(0x279)]!=_0x563eaa(0x1b6)?$(_0x563eaa(0x281))[_0x563eaa(0x118)](_0x2a2782[_0x563eaa(0x29b)]['OfficeName']):$(_0x563eaa(0x281))[_0x563eaa(0x118)]('');_0x2a2782[_0x563eaa(0x29b)][_0x563eaa(0x168)]!=null&&_0x2a2782['OfficeLocation'][_0x563eaa(0x168)]!=_0x563eaa(0x1b6)?$('#txtEmpReg')[_0x563eaa(0x118)]('\x20('+_0x2a2782[_0x563eaa(0x29b)]['Region']+')'):$(_0x563eaa(0x24c))[_0x563eaa(0x25e)]();if(_0x2a2782['PostalAddresses']!=null&&_0x2a2782[_0x563eaa(0x1b4)]!=null&&_0x2a2782[_0x563eaa(0x1b4)]!=''&&_0x2a2782[_0x563eaa(0x178)]!=''){var _0xaf0a02=(_0x2a2782[_0x563eaa(0x178)]!=null?_0x2a2782[_0x563eaa(0x178)]:'')+'\x0a'+(_0x2a2782[_0x563eaa(0x195)]!=null?_0x2a2782[_0x563eaa(0x195)]:'')+'\x0a'+(_0x2a2782[_0x563eaa(0x1d3)]!=null?_0x2a2782[_0x563eaa(0x1d3)]:'')+','+(_0x2a2782[_0x563eaa(0x183)]!=null?_0x2a2782[_0x563eaa(0x183)]:'')+'\x0a'+(_0x2a2782[_0x563eaa(0x11e)]!=null?_0x2a2782[_0x563eaa(0x11e)]:'');_0x2a2782[_0x563eaa(0x1b4)]==_0xaf0a02?($(_0x563eaa(0x17f))[_0x563eaa(0x24b)](_0x563eaa(0x245),!![]),$('.txtPermAddress')[_0x563eaa(0x1a5)](_0x563eaa(0x2b2),'disabled')):$('.txtPermAddress')['attr']('disabled',![]);}$(_0x563eaa(0x21d))[_0x563eaa(0x118)](_0x2a2782['Department']['DepartmentName']),$(_0x563eaa(0x173))['text'](_0x2a2782['Email']),_0x37314e[_0x563eaa(0x1dd)]=_0x2a2782[_0x563eaa(0x1a2)],_0x37314e[_0x563eaa(0x220)]=_0x2a2782[_0x563eaa(0x219)],_0x37314e['email']=_0x2a2782['Email'],_0x37314e['dateofBirth']=SetFormatedDateToDDMMYYYY(_0x2a2782[_0x563eaa(0x158)]),_0x37314e[_0x563eaa(0x205)]=SetFormatedDateToDDMMYYYY(_0x2a2782[_0x563eaa(0x1a6)]),_0x37314e[_0x563eaa(0x223)]=_0x2a2782[_0x563eaa(0x166)],_0x37314e[_0x563eaa(0x215)]=_0x2a2782['EmployeeID'],_0x37314e[_0x563eaa(0x140)]=_0x2a2782['Company']['ID'],_0x37314e[_0x563eaa(0x271)]=_0x2a2782[_0x563eaa(0x144)]['ID'],_0x37314e[_0x563eaa(0x1b5)]=_0x2a2782[_0x563eaa(0x29b)]['ID'],_0x37314e['status']=_0x2a2782[_0x563eaa(0x227)],_0x37314e[_0x563eaa(0x2ab)]=SetFormatedDateToDDMMYYYY(_0x2a2782[_0x563eaa(0x256)]),_0x37314e['dateofTermination']=SetFormatedDateToDDMMYYYY(_0x2a2782['DateofTermination']),_0x37314e[_0x563eaa(0x121)]=_0x2a2782[_0x563eaa(0x178)],_0x2a2782[_0x563eaa(0x17e)]!=null&&(_0x37314e[_0x563eaa(0x1f3)]=_0x2a2782['LinkedIn_Account'][_0x563eaa(0x19b)],_0x37314e[_0x563eaa(0x14f)]==_0x563eaa(0x2a2)&&($('#linkedAccunt')['attr'](_0x563eaa(0x181),_0x2a2782[_0x563eaa(0x17e)][_0x563eaa(0x19b)]),$(_0x563eaa(0x1a3))[_0x563eaa(0x18d)](_0x563eaa(0x13d),_0x563eaa(0x167)))),_0x37314e[_0x563eaa(0x1ed)]=_0x2a2782[_0x563eaa(0x195)],_0x37314e[_0x563eaa(0x26b)]=_0x2a2782[_0x563eaa(0x1d3)],_0x37314e[_0x563eaa(0x130)]=_0x2a2782[_0x563eaa(0x183)],_0x37314e[_0x563eaa(0x2a5)]=_0x2a2782[_0x563eaa(0x11e)],_0x37314e[_0x563eaa(0x224)]=_0x2a2782[_0x563eaa(0x1ba)],_0x37314e[_0x563eaa(0x18f)]=_0x2a2782[_0x563eaa(0x2aa)],_0x37314e['parmanentAddress']=_0x2a2782['HomeAddress'],_0x37314e['mode']=='editview'?_0x37314e[_0x563eaa(0x262)]==_0x2a2782[_0x563eaa(0x1bf)]&&(_0x37314e[_0x563eaa(0x15b)]=_0x563eaa(0x196)):$(_0x563eaa(0x242))[_0x563eaa(0x23f)](_0x563eaa(0x209)),_0x37314e[_0x563eaa(0x1cb)]=_0x2a2782[_0x563eaa(0x227)];},_0x37314e['updateInformation']=function(_0x3e5b52,_0x1cc217,_0x4998d8){var _0x260285=_0x15fa5a;try{$(_0x260285(0x25b))['is'](_0x260285(0x269))==!![]&&(_0x4998d8=-0x1,_0x37314e[_0x260285(0x20e)]=_0x260285(0x206),_0x1cc217=null);var _0x40a7fd,_0xc765ca=GetItemTypeForListName(_0x3e5b52);$(_0x260285(0x17f))['is'](_0x260285(0x269))==!![]&&(_0x37314e[_0x260285(0x1ac)]=$('.txtPermAddress')['val']());var _0x177411=_0x37314e[_0x260285(0x1ad)];_0x37314e[_0x260285(0x1ad)]==''?_0x177411=null:_0x177411=GetDateStandardFormat(moment(_0x37314e[_0x260285(0x1ad)])[_0x260285(0x1d7)](_0x260285(0x270)));var _0x3d7b71=_0x37314e['dateofAnniversary'];_0x37314e[_0x260285(0x205)]==''?_0x3d7b71=null:_0x3d7b71=GetDateStandardFormat(moment(_0x37314e[_0x260285(0x205)])[_0x260285(0x1d7)](_0x260285(0x270)));var _0x1fda4d=_0x37314e[_0x260285(0x172)];_0x37314e[_0x260285(0x172)]==''?_0x1fda4d=null:_0x1fda4d=GetDateStandardFormat(moment(_0x37314e[_0x260285(0x172)])['format'](_0x260285(0x270))),_0x40a7fd={'__metadata':{'type':_0xc765ca},'FullName':_0x37314e[_0x260285(0x24a)],'Title':_0x37314e[_0x260285(0x24a)],'Designation':_0x37314e[_0x260285(0x179)],'GroupName':_0x37314e[_0x260285(0x217)],'ParentId':_0x4998d8,'Manager':_0x37314e[_0x260285(0x20e)],'ManagerLoginNameId':_0x1cc217,'MobileNumber':_0x37314e[_0x260285(0x1dd)],'ExtensionName':_0x37314e[_0x260285(0x220)],'Email':_0x37314e[_0x260285(0x267)],'DateOfBirth':_0x177411,'DateOfAnniversary':_0x3d7b71,'Gender':_0x37314e['gender'],'EmployeeID':_0x37314e['employeeCode'],'CompanyId':_0x37314e[_0x260285(0x140)],'DepartmentId':_0x37314e[_0x260285(0x271)],'OfficeLocationId':_0x37314e[_0x260285(0x1b5)],'Status':_0x37314e[_0x260285(0x1c6)],'JoiningDate':GetDateStandardFormat(moment(_0x37314e[_0x260285(0x2ab)])[_0x260285(0x1d7)]('DD/MM/YYYY')),'DateofTermination':_0x1fda4d,'PostalAddresses':_0x37314e[_0x260285(0x121)],'City':_0x37314e['city'],'StateProvince':_0x37314e[_0x260285(0x26b)],'ZIPPostalCode':_0x37314e[_0x260285(0x130)],'Country':_0x37314e[_0x260285(0x2a5)],'HomePhone':_0x37314e['homePhone'],'OtherEMailAddress':_0x37314e[_0x260285(0x18f)],'HomeAddress':_0x37314e['parmanentAddress'],'Introduction':$('.richText-editor')[_0x260285(0x266)]()},_0x40a7fd['LinkedIn_Account']={'__metadata':{'type':_0x260285(0x275)},'Description':_0x37314e['LinkedlnAccount'],'Url':_0x37314e[_0x260285(0x1f3)]},(_0x37314e[_0x260285(0x24a)]==null||_0x37314e[_0x260285(0x24a)]=='')&&delete _0x40a7fd['FullName'],(_0x4998d8==null||_0x4998d8=='')&&delete _0x40a7fd[_0x260285(0x145)],(_0x37314e[_0x260285(0x20e)]==null||_0x37314e[_0x260285(0x20e)]=='')&&delete _0x40a7fd[_0x260285(0x29f)],(_0x37314e[_0x260285(0x179)]==null||_0x37314e[_0x260285(0x179)]=='')&&delete _0x40a7fd[_0x260285(0x177)],(_0x37314e[_0x260285(0x217)]==null||_0x37314e[_0x260285(0x217)]=='')&&delete _0x40a7fd[_0x260285(0x12b)],(_0x37314e[_0x260285(0x1ad)]==null||_0x37314e[_0x260285(0x1ad)]=='')&&delete _0x40a7fd[_0x260285(0x158)],(_0x37314e[_0x260285(0x205)]==null||_0x37314e[_0x260285(0x205)]=='')&&delete _0x40a7fd[_0x260285(0x1a6)],(_0x37314e[_0x260285(0x223)]==null||_0x37314e[_0x260285(0x223)]=='')&&delete _0x40a7fd[_0x260285(0x166)],(_0x37314e[_0x260285(0x215)]==null||_0x37314e['employeeCode']=='')&&delete _0x40a7fd['EmployeeID'],(_0x37314e[_0x260285(0x140)]==null||_0x37314e['company']==''||_0x37314e['company']=='0')&&delete _0x40a7fd[_0x260285(0x1d9)],(_0x37314e['department']==null||_0x37314e[_0x260285(0x271)]==''||_0x37314e[_0x260285(0x271)]=='0')&&delete _0x40a7fd['DepartmentId'],(_0x37314e['officeLocation']==null||_0x37314e[_0x260285(0x1b5)]==''||_0x37314e[_0x260285(0x1b5)]=='0')&&delete _0x40a7fd['OfficeLocationId'],(_0x37314e[_0x260285(0x2ab)]==null||_0x37314e[_0x260285(0x2ab)]=='')&&delete _0x40a7fd[_0x260285(0x256)],(_0x37314e[_0x260285(0x172)]==null||_0x37314e[_0x260285(0x172)]=='')&&delete _0x40a7fd[_0x260285(0x1ef)],$[_0x260285(0x26d)](updateItemWithID(_0x3e5b52,_0x40a7fd,_0x37314e[_0x260285(0x28b)]))[_0x260285(0x175)](function(_0x95f09e){var _0x1a0207=_0x260285,_0x5643d6=$('#uploadFile1')[_0x1a0207(0x1f6)]();_0x5643d6['length']>0x0&&_0x37314e[_0x1a0207(0x191)]();if(_0x37314e[_0x1a0207(0x14f)]=='edit'){_0x37314e['department']!=olddeptname&&BreakInheritePermissionDMSLibrary(_0x37314e[_0x1a0207(0x16d)],_0x1a0207(0x278),'Add');var _0x1ec0fc='?$select=ID,EmployeeName,EmployeeID,Publish_Date,Company/CompanyName&$expand=Company&$top=1&$orderby=Created\x20desc&$filter=WebPartName\x20eq\x20\x27Welcome\x27and\x20Announcement_Type\x20eq\x20\x27Welcome\x27\x20and\x20EmployeeID\x20eq\x20\x27'+_0x37314e['currentitemId']+'\x27';$['when'](getItemsWithQuery(_0x1a0207(0x230),_0x1ec0fc))[_0x1a0207(0x175)](function(_0x3d8d2f){var _0x5d51c8=_0x1a0207;if(_0x3d8d2f[_0x5d51c8(0x1e6)]>0x0){var _0x1d0ef6=oldDateOfJoin,_0x1d0ef6=new Date(_0x1d0ef6);_0x1d0ef6['setDate'](_0x1d0ef6['getDate']());var _0x1d0ef6=(_0x1d0ef6[_0x5d51c8(0x1c2)]()<0xa?'0':'')+_0x1d0ef6[_0x5d51c8(0x1c2)]()+'/'+(_0x1d0ef6[_0x5d51c8(0x1b1)]()+0x1<0xa?'0':'')+(_0x1d0ef6[_0x5d51c8(0x1b1)]()+0x1)+'/'+_0x1d0ef6[_0x5d51c8(0x1be)](),_0x882dbe=ConvertddmmyyTommddyy(moment($(_0x5d51c8(0x1ff))[_0x5d51c8(0x1f6)]())[_0x5d51c8(0x1d7)](_0x5d51c8(0x270)));if(GetDateStandardFormat(moment(_0x1d0ef6)['format']('DD/MM/YYYY'))!=GetDateStandardFormat(moment(_0x882dbe))[_0x5d51c8(0x1d7)](_0x5d51c8(0x270))){var _0x126622=_0x3d8d2f[0x0]['ID'],_0x89a4a3=_0x5d51c8(0x230),_0x4c2bb5=new Date();_0x4c2bb5=$[_0x5d51c8(0x14b)][_0x5d51c8(0x193)](_0x5d51c8(0x28a),_0x4c2bb5);var _0x59332e=new Date();_0x59332e[_0x5d51c8(0x286)](_0x59332e[_0x5d51c8(0x1b1)]()+0x3),_0x59332e=$[_0x5d51c8(0x14b)][_0x5d51c8(0x193)](_0x5d51c8(0x28a),_0x59332e);var _0x10dcf1=ConvertddmmyyTommddyy(moment($(_0x5d51c8(0x1ff))[_0x5d51c8(0x1f6)]())[_0x5d51c8(0x1d7)](_0x5d51c8(0x270)));_0x10dcf1=new Date(_0x10dcf1),_0x10dcf1=$[_0x5d51c8(0x14b)][_0x5d51c8(0x193)]('dd\x20M\x20yy',_0x10dcf1);var _0x8224fe,_0x513e95=GetItemTypeForListName(_0x89a4a3);_0x8224fe={'__metadata':{'type':_0x513e95},'Designation':$(_0x5d51c8(0x1aa))['val'](),'Department':$(_0x5d51c8(0x200))[_0x5d51c8(0x118)](),'OfficeLocation':$(_0x5d51c8(0x295))[_0x5d51c8(0x118)](),'Publish_Date':_0x4c2bb5,'Expires':_0x59332e,'Description':_0x5d51c8(0x1b9)+_0x10dcf1},$['when'](updateItemWithID(_0x5d51c8(0x230),_0x8224fe,_0x126622))[_0x5d51c8(0x175)](function(_0x28591f){var _0x4ba4f0=_0x5d51c8;_0x37314e[_0x4ba4f0(0x16e)]('1'),_0x37314e[_0x4ba4f0(0x211)](sourcelocation);});}else _0x37314e[_0x5d51c8(0x16e)]('1'),_0x37314e[_0x5d51c8(0x211)](sourcelocation);}else{_0x1d0ef6=ConvertddmmyyTommddyy(moment($(_0x5d51c8(0x1ff))[_0x5d51c8(0x1f6)]())[_0x5d51c8(0x1d7)](_0x5d51c8(0x270))),_0x1d0ef6=new Date(_0x1d0ef6);var _0x2d7e3e=new Date(),_0x2c5fc2=Math[_0x5d51c8(0x135)](_0x2d7e3e-_0x1d0ef6),_0x3d6fa3=parseInt(_0x2c5fc2/(0x3e8*0xe10*0x18));_0x3d6fa3<=0x1e?($(_0x5d51c8(0x15e))[_0x5d51c8(0x118)](_0x5d51c8(0x17d)),$(_0x5d51c8(0x126))[_0x5d51c8(0x154)](_0x5d51c8(0x171)),$(_0x5d51c8(0x214))[_0x5d51c8(0x190)](function(){var _0x3e89ef=_0x5d51c8;if($(_0x3e89ef(0x116))['prop']('checked')||$(_0x3e89ef(0x19f))[_0x3e89ef(0x24b)]('checked')||$('#Departmentsec')['prop']('checked')||$('#locationsec')[_0x3e89ef(0x24b)](_0x3e89ef(0x245))||$(_0x3e89ef(0x21e))[_0x3e89ef(0x24b)](_0x3e89ef(0x245)))$(_0x3e89ef(0x21e))[_0x3e89ef(0x24b)](_0x3e89ef(0x245))==![]?($('#NotifyAnnoucement')['attr'](_0x3e89ef(0x2b2),'disabled'),_UserfullName=_0x37314e[_0x3e89ef(0x24a)],InsertWelcomeInAnnouncementList(_0x37314e['currentitemId']),(sourcelocation==''||sourcelocation==null)&&(sourcelocation=_0x3e89ef(0x12e)),_0x37314e['RedirectPage'](sourcelocation)):_0x37314e[_0x3e89ef(0x211)](sourcelocation);else return alert('Kindly\x20select\x20any\x20option.'),![];})):(alert(_0x5d51c8(0x2a8)),_0x37314e['RedirectPage'](sourcelocation));}});}else _0x37314e[_0x1a0207(0x16e)]('1'),_0x37314e[_0x1a0207(0x211)](sourcelocation);});}catch(_0x3829cb){console[_0x260285(0x221)](_0x3829cb['message']);}},_0x37314e[_0x15fa5a(0x293)]=function(_0x5df85c){var _0x3acc97=_0x15fa5a,_0x12b432='',_0x357d5e=_spPageContextInfo[_0x3acc97(0x19d)]+_0x3acc97(0x24f);return $[_0x3acc97(0x1f0)]({'url':_0x357d5e,'method':_0x3acc97(0x1a1),'async':![],'headers':{'Accept':_0x3acc97(0x2a4)},'success':function(_0x24eea3){var _0xd96ef8=_0x3acc97;_0x12b432=_0x24eea3['d']['Id'],_0x37314e[_0xd96ef8(0x1ec)](_0x12b432,_0x5df85c);},'error':function(_0x142df8){var _0x590f18=_0x3acc97;console[_0x590f18(0x221)](_0x142df8);}}),_0x12b432;},_0x37314e[_0x15fa5a(0x1ec)]=function(_0x2e71a2,_0x4afe78){var _0x1ba129=_0x15fa5a,_0xed43c6=_spPageContextInfo[_0x1ba129(0x19d)]+_0x1ba129(0x27a)+_0x2e71a2+_0x1ba129(0x213);$['ajax']({'url':_0xed43c6,'type':'POST','async':![],'data':JSON[_0x1ba129(0x2a9)]({'__metadata':{'type':_0x1ba129(0x2ae)},'LoginName':_0x4afe78}),'headers':{'accept':_0x1ba129(0x19e),'content-type':_0x1ba129(0x19e),'X-RequestDigest':$(_0x1ba129(0x248))[_0x1ba129(0x1f6)]()},'success':_0x38f487,'error':_0x5689dd});function _0x38f487(_0x726f5d){var _0x83c466=_0x1ba129;console[_0x83c466(0x221)](_0x83c466(0x2a7));}function _0x5689dd(_0x3c7e5e){var _0x39aae9=_0x1ba129;console['log'](JSON[_0x39aae9(0x2a9)](_0x3c7e5e));}},_0x37314e[_0x15fa5a(0x22d)]=function(){var _0x582149=_0x15fa5a;if(IsHRAdmin==!![]){var _0x45eeda=_0x582149(0x282),_0x59b5d1=_0x582149(0x1b2),_0x2b606c=0xc8,_0x397b38=0x190;currentDlg=SP['UI'][_0x582149(0x129)][_0x582149(0x14a)](_0x45eeda,_0x59b5d1,_0x2b606c,_0x397b38),setTimeout(function(){var _0x3794ab=_0x582149;_0x37314e[_0x3794ab(0x2a1)]();},0x3e8);}else{alert(_0x582149(0x285));return;}},_0x37314e[_0x15fa5a(0x2a1)]=function(){var _0x13e2de=_0x15fa5a;if($(_0x13e2de(0x1aa))['val']()[_0x13e2de(0x22a)]()=='')return alert('Kindly\x20fill\x20designation.'),currentDlg[_0x13e2de(0x18a)](),![];var _0x288583=getUserInfo('newEmployeePicker'),_0x58181d=getUserInfo('managerLoginName');if(_0x288583!=''){_0x37314e['GetGroupIDByGroupName'](_0x288583);var _0x184a8e=_0x37314e['GetUserId'](_0x288583);if($('#chiefexecutive')['is'](_0x13e2de(0x269))!=!![]){if(_0x58181d!=''){var _0x3b05d7=_0x14a6a7(_0x58181d),_0x3fcfe6=IsMangerActive(_0x3b05d7);if(!_0x3fcfe6)return alert(_0x13e2de(0x28f)),_0x3fcfe6='',currentDlg[_0x13e2de(0x18a)](),![];}else return alert(_0x13e2de(0x15d)),currentDlg[_0x13e2de(0x18a)](),![];}if(_0x184a8e==null||_0x184a8e==''||_0x37314e[_0x13e2de(0x267)]==''||_0x37314e['email']==null||_0x37314e[_0x13e2de(0x140)]==''||_0x37314e[_0x13e2de(0x140)]==null||_0x37314e[_0x13e2de(0x271)]==''||_0x37314e[_0x13e2de(0x271)]==null||_0x37314e[_0x13e2de(0x1b5)]==0x0||_0x37314e['officeLocation']==null||_0x37314e[_0x13e2de(0x2ab)]==''||_0x37314e[_0x13e2de(0x2ab)]==null)alert('Please\x20fill\x20all\x20require\x20fields.\x0aCompany\x0aDepartment\x0aOffice\x20Location\x0aDate\x20of\x20Joining\x0aName\x0aEmail.'),currentDlg[_0x13e2de(0x18a)]();else{var _0x54144=_0x288583['split']('|')[0x2],_0x431af5=GetLicencedUsersCount(_0x54144),_0x196c67=UsersLicenceRequired;if(_0x196c67<_0x431af5+0x1)return alert(_0x13e2de(0x1e9)),currentDlg[_0x13e2de(0x18a)](),![];var _0x43cdaa='';_0x184a8e!=''&&_0x184a8e!=null&&(_0x43cdaa=_0x288583[_0x13e2de(0x17b)]('|')[0x2]),_0x37314e[_0x13e2de(0x2b5)](_0x43cdaa,_0x37314e[_0x13e2de(0x140)])==![]?_0x37314e[_0x13e2de(0x2b5)](_0x43cdaa,'')==![]?_0x37314e[_0x13e2de(0x238)](_0x13e2de(0x1c1),_0x184a8e,_0x3b05d7,_0x3fcfe6,_0x13e2de(0x20a)):_0x37314e[_0x13e2de(0x238)](_0x13e2de(0x1c1),_0x184a8e,_0x3b05d7,_0x3fcfe6,''):(alert(_0x13e2de(0x258)),currentDlg['close']());}}else alert(_0x13e2de(0x21c)),currentDlg[_0x13e2de(0x18a)]();},_0x37314e['EmployeeCheckListValidation']=function(_0x39b3c1,_0x121c2f){var _0x5b64a2=_0x15fa5a,_0x5566d4=![];try{var _0x5d7b6d='';_0x121c2f==''?_0x5d7b6d=_0x5b64a2(0x28e)+_0x39b3c1+'\x27':_0x5d7b6d=_0x5b64a2(0x28e)+_0x39b3c1+_0x5b64a2(0x1dc)+_0x121c2f+'\x27';var _0x238c97=_spPageContextInfo[_0x5b64a2(0x19d)]+'/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=ID,DepartmentId,LogonName/UserName,Company/ID&$expand=LogonName,Company'+_0x5d7b6d;$[_0x5b64a2(0x1f0)]({'url':_0x238c97,'headers':{'Accept':_0x5b64a2(0x19e)},'async':![],'success':function(_0x3c5119){var _0x2fe93d=_0x5b64a2,_0x526d59=_0x3c5119['d'][_0x2fe93d(0x259)];_0x526d59[_0x2fe93d(0x1e6)]>0x0&&(_0x5566d4=!![]);},'eror':function(_0x11be11){var _0x53b92f=_0x5b64a2;console[_0x53b92f(0x221)]('error');}});}catch(_0x12f177){alert(_0x5b64a2(0x280));}return _0x5566d4;},_0x37314e[_0x15fa5a(0x238)]=function(_0x268ae0,_0x7cdbef,_0x3110a7,_0x54501d,_0x1bf269){var _0x341865=_0x15fa5a;try{$(_0x341865(0x25b))['is'](_0x341865(0x269))==!![]&&(_0x54501d=-0x1,_0x37314e['ManagerFullName']=_0x341865(0x206));_UserfullName=_0x37314e[_0x341865(0x204)];var _0xf68cb4,_0x2ce0c4=GetItemTypeForListName(_0x268ae0);$(_0x341865(0x17f))['is'](_0x341865(0x269))==!![]&&(_0x37314e[_0x341865(0x1ac)]=$(_0x341865(0x2b1))[_0x341865(0x1f6)]()),_0xf68cb4={'__metadata':{'type':_0x2ce0c4},'LogonNameId':_0x7cdbef,'FullName':_0x37314e[_0x341865(0x204)],'Title':_0x37314e[_0x341865(0x204)],'ParentId':_0x54501d,'Designation':_0x37314e[_0x341865(0x179)],'GroupName':_0x37314e['groupName'],'Manager':_0x37314e['ManagerFullName'],'ManagerLoginNameId':_0x3110a7,'MobileNumber':_0x37314e[_0x341865(0x1dd)],'ExtensionName':_0x37314e[_0x341865(0x220)],'Email':_0x37314e[_0x341865(0x267)],'DateOfBirth':GetDateStandardFormat(moment(_0x37314e[_0x341865(0x1ad)])[_0x341865(0x1d7)]('DD/MM/YYYY')),'DateOfAnniversary':GetDateStandardFormat(moment(_0x37314e['dateofAnniversary'])[_0x341865(0x1d7)]('DD/MM/YYYY')),'Gender':_0x37314e[_0x341865(0x223)],'EmployeeID':_0x37314e[_0x341865(0x215)],'CompanyId':_0x37314e['company'],'DepartmentId':_0x37314e[_0x341865(0x271)],'OfficeLocationId':_0x37314e['officeLocation'],'Status':_0x37314e[_0x341865(0x1c6)],'JoiningDate':GetDateStandardFormat(moment(_0x37314e['dateofJoining'])[_0x341865(0x1d7)](_0x341865(0x270))),'DateofTermination':GetDateStandardFormat(moment(_0x37314e[_0x341865(0x172)])[_0x341865(0x1d7)](_0x341865(0x270))),'PostalAddresses':_0x37314e[_0x341865(0x121)],'City':_0x37314e[_0x341865(0x1ed)],'StateProvince':_0x37314e[_0x341865(0x26b)],'ZIPPostalCode':_0x37314e[_0x341865(0x130)],'Country':_0x37314e[_0x341865(0x2a5)],'HomePhone':_0x37314e[_0x341865(0x224)],'OtherEMailAddress':_0x37314e['otherEmail'],'HomeAddress':_0x37314e[_0x341865(0x1ac)],'Introduction':$(_0x341865(0x1e4))[_0x341865(0x266)](),'PrimaryCompany':_0x1bf269},_0xf68cb4['LinkedIn_Account']={'__metadata':{'type':_0x341865(0x275)},'Description':_0x37314e[_0x341865(0x1f3)],'Url':_0x37314e[_0x341865(0x1f3)]},(_0x1bf269==null||_0x1bf269=='')&&delete _0xf68cb4[_0x341865(0x194)],(_0x37314e[_0x341865(0x179)]==null||_0x37314e[_0x341865(0x179)]=='')&&delete _0xf68cb4[_0x341865(0x177)],(_0x37314e[_0x341865(0x217)]==null||_0x37314e['groupName']=='')&&delete _0xf68cb4[_0x341865(0x12b)],(_0x37314e[_0x341865(0x20e)]==null||_0x37314e[_0x341865(0x20e)]=='')&&delete _0xf68cb4[_0x341865(0x29f)],(_0x3110a7==null||_0x3110a7=='')&&delete _0xf68cb4['ManagerLoginNameId'],(_0x37314e[_0x341865(0x1ad)]==null||_0x37314e[_0x341865(0x1ad)]=='')&&delete _0xf68cb4[_0x341865(0x158)],(_0x37314e['dateofAnniversary']==null||_0x37314e[_0x341865(0x205)]=='')&&delete _0xf68cb4[_0x341865(0x1a6)],(_0x37314e[_0x341865(0x223)]==null||_0x37314e[_0x341865(0x223)]=='')&&delete _0xf68cb4['Gender'],(_0x37314e[_0x341865(0x215)]==null||_0x37314e['employeeCode']=='')&&delete _0xf68cb4[_0x341865(0x16c)],(_0x37314e[_0x341865(0x140)]==null||_0x37314e['company']==''||_0x37314e['company']=='0')&&delete _0xf68cb4['CompanyId'],(_0x37314e[_0x341865(0x271)]==null||_0x37314e[_0x341865(0x271)]==''||_0x37314e[_0x341865(0x271)]=='0')&&delete _0xf68cb4[_0x341865(0x16a)],(_0x37314e['officeLocation']==null||_0x37314e[_0x341865(0x1b5)]==''||_0x37314e[_0x341865(0x1b5)]=='0')&&delete _0xf68cb4[_0x341865(0x273)],(_0x37314e[_0x341865(0x2ab)]==null||_0x37314e[_0x341865(0x2ab)]=='')&&delete _0xf68cb4[_0x341865(0x256)],(_0x37314e[_0x341865(0x172)]==null||_0x37314e[_0x341865(0x172)]=='')&&delete _0xf68cb4['DateofTermination'],$[_0x341865(0x26d)](_0x37314e[_0x341865(0x29e)](_0x268ae0,_0xf68cb4))[_0x341865(0x175)](function(_0x309941){var _0x52cdb0=_0x341865,_0x210807=$['urlParam'](_0x52cdb0(0x14f));createNewEmpFolder(),_0x37314e[_0x52cdb0(0x28b)]=_0x309941['d']['ID'];var _0x7efb19=_0x309941['d']['ID'],_0x4a88f5=$('#uploadFile1')[_0x52cdb0(0x1f6)]();doj=ConvertddmmyyTommddyy(moment($(_0x52cdb0(0x1ff))[_0x52cdb0(0x1f6)]())['format']('DD/MM/YYYY')),doj=new Date(doj);var _0x5f23ff=new Date(),_0x12175c=Math[_0x52cdb0(0x135)](_0x5f23ff-doj),_0xed663d=parseInt(_0x12175c/(0x3e8*0xe10*0x18));if(_0x4a88f5[_0x52cdb0(0x1e6)]>0x0)_0x37314e[_0x52cdb0(0x250)](),_0xed663d<=0x1e&&($('#addsuccessful')[_0x52cdb0(0x154)](_0x52cdb0(0x171)),$(_0x52cdb0(0x214))[_0x52cdb0(0x190)](function(){var _0x204d64=_0x52cdb0;if($(_0x204d64(0x116))[_0x204d64(0x24b)](_0x204d64(0x245))||$('#Companysec')['prop'](_0x204d64(0x245))||$('#Departmentsec')[_0x204d64(0x24b)](_0x204d64(0x245))||$('#locationsec')[_0x204d64(0x24b)]('checked')||$(_0x204d64(0x21e))['prop'](_0x204d64(0x245)))$(_0x204d64(0x21e))[_0x204d64(0x24b)](_0x204d64(0x245))==![]?($(_0x204d64(0x214))['attr']('disabled',_0x204d64(0x2b2)),InsertWelcomeInAnnouncementList(_0x7efb19),_0x37314e[_0x204d64(0x211)](sourcelocation)):_0x37314e[_0x204d64(0x211)](sourcelocation);else return alert(_0x204d64(0x155)),![];}));else{BreakInheritePermissionDMSLibrary(_0x7cdbef,'1073741826',_0x52cdb0(0x229)),currentDlg[_0x52cdb0(0x18a)]();if(_0xed663d<=0x1e)$(_0x52cdb0(0x126))[_0x52cdb0(0x154)]('show'),$('#NotifyAnnoucement')['click'](function(){var _0x1b25b3=_0x52cdb0;if($(_0x1b25b3(0x116))['prop'](_0x1b25b3(0x245))||$(_0x1b25b3(0x19f))[_0x1b25b3(0x24b)]('checked')||$('#Departmentsec')[_0x1b25b3(0x24b)](_0x1b25b3(0x245))||$(_0x1b25b3(0x23d))['prop'](_0x1b25b3(0x245))||$(_0x1b25b3(0x21e))['prop'](_0x1b25b3(0x245)))$(_0x1b25b3(0x21e))[_0x1b25b3(0x24b)](_0x1b25b3(0x245))==![]?($('#NotifyAnnoucement')[_0x1b25b3(0x1a5)]('disabled',_0x1b25b3(0x2b2)),InsertWelcomeInAnnouncementList(_0x7efb19),_0x37314e[_0x1b25b3(0x211)](sourcelocation)):_0x37314e[_0x1b25b3(0x211)](sourcelocation);else return alert(_0x1b25b3(0x155)),![];});else{alert('Employee\x20has\x20been\x20added\x20successfully.');var _0x12a5b6=_0x52cdb0(0x164),_0x516e43=_0x52cdb0(0x1b2),_0x3452a4=0xc8,_0x3139c8=0x190;currentDlg=SP['UI'][_0x52cdb0(0x129)][_0x52cdb0(0x14a)](_0x12a5b6,_0x516e43,_0x3452a4,_0x3139c8),setTimeout(function(){var _0x27b121=_0x52cdb0;_0x37314e[_0x27b121(0x211)](sourcelocation);},0x64);}}});}catch(_0xab594f){alert(_0xab594f[_0x341865(0x1ce)]),currentDlg[_0x341865(0x18a)]();}};var _0x4777f4='';_0x37314e[_0x15fa5a(0x27b)]=function(_0x9cdf7b){var _0x4af71e=_0x15fa5a,_0x43cfd9='',_0x3fb58e=_0x4af71e(0x1f8),_0x2dba54=_spPageContextInfo[_0x4af71e(0x1c3)],_0x5e5bcc=_0x9cdf7b;return $[_0x4af71e(0x1f0)]({'url':_0x2dba54+_0x4af71e(0x241)+encodeURIComponent(_0x5e5bcc)+'\x27','method':'GET','headers':{'Accept':_0x4af71e(0x2a4)},'async':![],'success':function(_0xddfe9){var _0x213efb=_0x4af71e;_0x43cfd9=_0xddfe9['d']['Id'],_0x4777f4=_0xddfe9['d'][_0x213efb(0x128)],_0x37314e[_0x213efb(0x204)]=_0xddfe9['d'][_0x213efb(0x128)],_0x37314e['email']=_0xddfe9['d'][_0x213efb(0x244)];},'error':function(_0x1e41eb){var _0x17b43f=_0x4af71e;console[_0x17b43f(0x221)](JSON[_0x17b43f(0x2a9)](_0x1e41eb)),alert(_0x17b43f(0x201));}}),_0x43cfd9;};function _0x14a6a7(_0x1214a3){var _0x39949c=_0x15fa5a,_0x18433f='',_0x5275a4=_0x39949c(0x1f8),_0x2ca615=_spPageContextInfo['siteAbsoluteUrl'],_0xc936b6=_0x1214a3;return $[_0x39949c(0x1f0)]({'url':_0x2ca615+_0x39949c(0x241)+encodeURIComponent(_0xc936b6)+'\x27','method':_0x39949c(0x1a1),'headers':{'Accept':_0x39949c(0x2a4)},'async':![],'success':function(_0x14c005){_0x18433f=_0x14c005['d']['Id'],_0x37314e['ManagerFullName']=_0x14c005['d']['Title'];},'error':function(_0x4a1b0c){var _0x937747=_0x39949c;console[_0x937747(0x221)](JSON['stringify'](_0x4a1b0c));}}),_0x18433f;}_0x37314e['ShowAlert']=function(_0x4098c8){var _0x5baeab=_0x15fa5a;_0x7a658[_0x5baeab(0x192)](_0x5baeab(0x1d1));},_0x37314e[_0x15fa5a(0x255)]=function(){var _0x1b06f2=_0x15fa5a;if(IsHRAdmin==!![]){if($(_0x1b06f2(0x25b))['is'](_0x1b06f2(0x269))!=!![]){var _0x260ae2=getUserInfo(_0x1b06f2(0x260));if(_0x260ae2!=''){var _0x309c7a=_0x14a6a7(_0x260ae2),_0x4b43cd=IsMangerActive(_0x309c7a);if(!_0x4b43cd)return alert(_0x1b06f2(0x28f)),_0x4b43cd='',currentDlg[_0x1b06f2(0x18a)](),![];}else return alert(_0x1b06f2(0x15d)),currentDlg[_0x1b06f2(0x18a)](),![];}_0x37314e[_0x1b06f2(0x24a)]==''||_0x37314e['employeeName']==null||_0x37314e[_0x1b06f2(0x267)]==''||_0x37314e[_0x1b06f2(0x267)]==null||_0x37314e['company']==''||_0x37314e['company']==null||_0x37314e[_0x1b06f2(0x271)]==''||_0x37314e[_0x1b06f2(0x271)]==null||_0x37314e[_0x1b06f2(0x1b5)]==''||_0x37314e[_0x1b06f2(0x1b5)]==null||_0x37314e['dateofJoining']==''||_0x37314e[_0x1b06f2(0x2ab)]==null?alert(_0x1b06f2(0x165)):_0x37314e['updateInformation']('Employees',_0x309c7a,_0x4b43cd);}else{alert(_0x1b06f2(0x285));return;}},_0x37314e[_0x15fa5a(0x161)]=function(_0x35f685,_0x192ab6){var _0x557c5a=_0x15fa5a,_0x439903=_spPageContextInfo[_0x557c5a(0x19d)]+_0x557c5a(0x22b)+escapeProperly(_0x192ab6);return _0x35f685[_0x557c5a(0x259)][_0x557c5a(0x1e6)]>0x0&&(_0x439903=_0x35f685['results'][0x0][_0x557c5a(0x14e)],_0x37314e[_0x557c5a(0x22c)]=_0x35f685[_0x557c5a(0x259)][0x0][_0x557c5a(0x14e)]),_0x439903;},$('#department')[_0x15fa5a(0x190)](function(){var _0x1017fc=_0x15fa5a;NewUserDept=_0x37314e[_0x1017fc(0x271)],_0x37314e[_0x1017fc(0x271)]!=null&&GetUserDepartmentUrl(_0x1017fc(0x18e),_0x37314e[_0x1017fc(0x271)]);}),_0x37314e['AddItemToList']=function(_0x2d47ef,_0x1fb8c5){var _0x4f37e4=_0x15fa5a,_0xd60c1e=$[_0x4f37e4(0x246)]();return $[_0x4f37e4(0x1f0)]({'url':_spPageContextInfo[_0x4f37e4(0x19d)]+_0x4f37e4(0x11d)+_0x2d47ef+_0x4f37e4(0x17c),'type':'POST','async':![],'headers':{'accept':_0x4f37e4(0x19e),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x4f37e4(0x1f6)](),'content-Type':_0x4f37e4(0x19e)},'data':JSON[_0x4f37e4(0x2a9)](_0x1fb8c5),'success':function(_0x211933){var _0xdbc712=_0x4f37e4;_0xd60c1e[_0xdbc712(0x22f)](_0x211933);},'error':function(_0x5ecff3,_0x337f4a,_0x17151d){var _0x5575c5=_0x4f37e4,_0x16c1c6=JSON[_0x5575c5(0x1f4)](_0x5ecff3[_0x5575c5(0x13c)]),_0x506168=_0x5ecff3['status'],_0x4587e6=_0x16c1c6[_0x5575c5(0x137)][_0x5575c5(0x1ce)][_0x5575c5(0x1fb)];alert(_0x4587e6),currentDlg[_0x5575c5(0x18a)]();}}),_0xd60c1e[_0x4f37e4(0x1cf)]();};}),$(window)[a21_0x598e4b(0x131)](function(){var _0x2f8515=a21_0x598e4b;IsTFWUser==!![]&&$(_0x2f8515(0x2ac))[_0x2f8515(0x1f6)](_0x2f8515(0x292));});var checkedAudience='';$(document)[a21_0x598e4b(0x202)](function(){var _0x3324e9=a21_0x598e4b;checkHR_Admin(),userActivityNotificationEntry(_spPageContextInfo[_0x3324e9(0x2a3)],window[_0x3324e9(0x298)]),IsHRAdmin==![]&&IsCurrentUserInEinv(),$(_0x3324e9(0x242))['on']('change',function(){var _0x18a71a=_0x3324e9;if(typeof $(_0x18a71a(0x242))[0x0][_0x18a71a(0x1d5)]!=_0x18a71a(0x1d8)){var _0x250d0c=parseFloat($(_0x18a71a(0x242))[0x0][_0x18a71a(0x1d5)][0x0][_0x18a71a(0x25f)]/0x400)[_0x18a71a(0x1ca)](0x2);return console[_0x18a71a(0x221)](_0x250d0c+_0x18a71a(0x157)),_0x250d0c<=0x64?(document[_0x18a71a(0x159)]('profile-image1')[_0x18a71a(0x23a)]=window[_0x18a71a(0x212)]['createObjectURL'](this[_0x18a71a(0x1d5)][0x0]),!![]):(alert(_0x18a71a(0x180)),$(_0x18a71a(0x242))[_0x18a71a(0x1f6)](null),$(_0x18a71a(0x1e0))[_0x18a71a(0x1a5)](_0x18a71a(0x23a),_0x18a71a(0x253)),![]);}}),$(_0x3324e9(0x153))[_0x3324e9(0x208)](function(){checkedAudience=this['value'];}),$(_0x3324e9(0x17f))[_0x3324e9(0x190)](function(){var _0x2db9d9=_0x3324e9;if($(_0x2db9d9(0x17f))['is'](_0x2db9d9(0x269))==!![]){var _0x154e1d=($(_0x2db9d9(0x24d))[_0x2db9d9(0x1f6)]()['trim']()!=''?$(_0x2db9d9(0x24d))['val']()[_0x2db9d9(0x22a)]():'')+($(_0x2db9d9(0x134))[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]()!=''?'\x0a'+$('#input5city')[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]():'')+($(_0x2db9d9(0x2b3))[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]()!=''?'\x0a'+$('#input5state')[_0x2db9d9(0x1f6)]()['trim']():'')+($(_0x2db9d9(0x284))[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]()!=''?','+$(_0x2db9d9(0x284))[_0x2db9d9(0x1f6)]()['trim']():'')+($('#input5country')[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]()!=''?'\x0a'+$(_0x2db9d9(0x1f5))[_0x2db9d9(0x1f6)]()[_0x2db9d9(0x22a)]():'');$(_0x2db9d9(0x2b1))[_0x2db9d9(0x1f6)](_0x154e1d),$(_0x2db9d9(0x2b1))['attr'](_0x2db9d9(0x2b2),_0x2db9d9(0x2b2));}else $(_0x2db9d9(0x2b1))[_0x2db9d9(0x1a5)](_0x2db9d9(0x2b2),![]);}),$(_0x3324e9(0x284))[_0x3324e9(0x208)](function(){var _0x58d055=_0x3324e9;if($('#chkSameAddress')['is'](_0x58d055(0x269))==!![]){$(_0x58d055(0x2b1))[_0x58d055(0x1f6)]('');var _0x5bb066=($(_0x58d055(0x24d))[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]()!=''?$(_0x58d055(0x24d))[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]():'')+($('#input5city')[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]()!=''?'\x0a'+$(_0x58d055(0x134))[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]():'')+($(_0x58d055(0x2b3))[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]()!=''?'\x0a'+$(_0x58d055(0x2b3))[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]():'')+(this[_0x58d055(0x1fb)]!=''?','+this['value']:'')+($(_0x58d055(0x1f5))['val']()[_0x58d055(0x22a)]()!=''?'\x0a'+$('#input5country')[_0x58d055(0x1f6)]()[_0x58d055(0x22a)]():'');$('.txtPermAddress')['val'](_0x5bb066);}}),$(_0x3324e9(0x24d))['change'](function(){var _0x5101c4=_0x3324e9;if($('#chkSameAddress')['is'](_0x5101c4(0x269))==!![]){$(_0x5101c4(0x2b1))[_0x5101c4(0x1f6)]('');var _0x55cb17=(this['value']!=''?this[_0x5101c4(0x1fb)]:'')+($('#input5city')[_0x5101c4(0x1f6)]()[_0x5101c4(0x22a)]()!=''?'\x0a'+$(_0x5101c4(0x134))['val']()[_0x5101c4(0x22a)]():'')+($(_0x5101c4(0x2b3))[_0x5101c4(0x1f6)]()['trim']()!=''?'\x0a'+$('#input5state')[_0x5101c4(0x1f6)]()[_0x5101c4(0x22a)]():'')+($(_0x5101c4(0x284))[_0x5101c4(0x1f6)]()['trim']()!=''?','+$('.zip')['val']()[_0x5101c4(0x22a)]():'')+($(_0x5101c4(0x1f5))['val']()[_0x5101c4(0x22a)]()!=''?'\x0a'+$('#input5country')[_0x5101c4(0x1f6)]()[_0x5101c4(0x22a)]():'');$('.txtPermAddress')[_0x5101c4(0x1f6)](_0x55cb17);}}),$(_0x3324e9(0x134))['change'](function(){var _0xd49031=_0x3324e9;if($(_0xd49031(0x17f))['is'](_0xd49031(0x269))==!![]){$('.txtPermAddress')[_0xd49031(0x1f6)]('');var _0x11d9b5=($(_0xd49031(0x24d))[_0xd49031(0x1f6)]()['trim']()!=''?$(_0xd49031(0x24d))[_0xd49031(0x1f6)]()[_0xd49031(0x22a)]():'')+(this['value']!=''?'\x0a'+this[_0xd49031(0x1fb)]:'')+($('#input5state')[_0xd49031(0x1f6)]()[_0xd49031(0x22a)]()!=''?'\x0a'+$('#input5state')[_0xd49031(0x1f6)]()[_0xd49031(0x22a)]():'')+($(_0xd49031(0x284))['val']()['trim']()!=''?','+$(_0xd49031(0x284))['val']()[_0xd49031(0x22a)]():'')+($(_0xd49031(0x1f5))[_0xd49031(0x1f6)]()[_0xd49031(0x22a)]()!=''?'\x0a'+$(_0xd49031(0x1f5))[_0xd49031(0x1f6)]()[_0xd49031(0x22a)]():'');$(_0xd49031(0x2b1))[_0xd49031(0x1f6)](_0x11d9b5);}}),$(_0x3324e9(0x2b3))[_0x3324e9(0x208)](function(){var _0x559a44=_0x3324e9;if($(_0x559a44(0x17f))['is'](_0x559a44(0x269))==!![]){$(_0x559a44(0x2b1))[_0x559a44(0x1f6)]('');var _0x3ddc28=($('.txtCurrAddress')[_0x559a44(0x1f6)]()['trim']()!=''?$('.txtCurrAddress')[_0x559a44(0x1f6)]()['trim']():'')+($(_0x559a44(0x134))[_0x559a44(0x1f6)]()[_0x559a44(0x22a)]()!=''?'\x0a'+$('#input5city')['val']()[_0x559a44(0x22a)]():'')+(this[_0x559a44(0x1fb)]!=''?'\x0a'+this['value']:'')+($('.zip')['val']()[_0x559a44(0x22a)]()!=''?','+$(_0x559a44(0x284))[_0x559a44(0x1f6)]()[_0x559a44(0x22a)]():'')+($('#input5country')[_0x559a44(0x1f6)]()['trim']()!=''?'\x0a'+$('#input5country')[_0x559a44(0x1f6)]()['trim']():'');$('.txtPermAddress')[_0x559a44(0x1f6)](_0x3ddc28);}}),$(_0x3324e9(0x1f5))['change'](function(){var _0xc9781d=_0x3324e9;if($(_0xc9781d(0x17f))['is'](':checked')==!![]){$(_0xc9781d(0x2b1))[_0xc9781d(0x1f6)]('');var _0x3734b8=($(_0xc9781d(0x24d))['val']()[_0xc9781d(0x22a)]()!=''?$(_0xc9781d(0x24d))[_0xc9781d(0x1f6)]()[_0xc9781d(0x22a)]():'')+($(_0xc9781d(0x134))['val']()[_0xc9781d(0x22a)]()!=''?'\x0a'+$(_0xc9781d(0x134))[_0xc9781d(0x1f6)]()[_0xc9781d(0x22a)]():'')+($(_0xc9781d(0x2b3))[_0xc9781d(0x1f6)]()[_0xc9781d(0x22a)]()!=''?'\x0a'+$(_0xc9781d(0x2b3))[_0xc9781d(0x1f6)]()[_0xc9781d(0x22a)]():'')+($(_0xc9781d(0x284))[_0xc9781d(0x1f6)]()['trim']()!=''?','+$('.zip')[_0xc9781d(0x1f6)]()[_0xc9781d(0x22a)]():'')+(this['value']!=''?'\x0a'+this[_0xc9781d(0x1fb)]:'');$(_0xc9781d(0x2b1))[_0xc9781d(0x1f6)](_0x3734b8);}}),$(_0x3324e9(0x25b))[_0x3324e9(0x208)](function(_0x37956b){var _0x239b57=_0x3324e9;this['checked']?$(_0x239b57(0x272))['hide']():$(_0x239b57(0x272))[_0x239b57(0x171)]();});});function IsCurrentUserInEinv(){var _0x3171c7=a21_0x598e4b,_0x2f655d=_spPageContextInfo[_0x3171c7(0x19d)]+_0x3171c7(0x216);$[_0x3171c7(0x1f0)]({'url':_0x2f655d,'type':_0x3171c7(0x1a1),'headers':{'accept':_0x3171c7(0x19e)},'success':function(_0x5dbb0f){var _0x186249=_0x3171c7,_0x4923f8=_0x5dbb0f['d'][_0x186249(0x259)],_0x201ecf=_0x4923f8[0x0]['Active'],_0x3b95bf=_0x4923f8[0x0]['scope'];if(_0x201ecf==!![]){if(_0x201ecf==!![]&&_0x3b95bf=='Selective'){var _0x24fe39=_0x4923f8[0x0][_0x186249(0x20d)][_0x186249(0x259)];if(_0x24fe39!=null)for(var _0x73eb33=0x0;_0x73eb33<_0x24fe39['length'];_0x73eb33++){if(_0x24fe39[_0x73eb33]['ID']==_spPageContextInfo['userId']){$(_0x186249(0x11f))[_0x186249(0x171)](),$(_0x186249(0x141))[_0x186249(0x171)](),$(_0x186249(0x1e5))['show'](),$(_0x186249(0x299))[_0x186249(0x171)](),$('#Gender')[_0x186249(0x171)]();return;}else $(_0x186249(0x11f))[_0x186249(0x25e)](),$(_0x186249(0x141))[_0x186249(0x25e)](),$(_0x186249(0x1e5))[_0x186249(0x25e)](),$('#DateOfAnniversary')[_0x186249(0x25e)](),$(_0x186249(0x226))[_0x186249(0x25e)]();}}else _0x201ecf==!![]&&_0x3b95bf==_0x186249(0x252)&&$(_0x186249(0x11f))['show']();}else $(_0x186249(0x11f))[_0x186249(0x25e)](),$('#MobNo')[_0x186249(0x25e)](),$('#DOB')[_0x186249(0x25e)](),$('#DateOfAnniversary')[_0x186249(0x25e)](),$(_0x186249(0x226))[_0x186249(0x25e)]();},'error':function(_0x51905c){var _0x4104ee=_0x3171c7;console[_0x4104ee(0x221)](_0x4104ee(0x139));}});}function InsertWelcomeInAnnouncementList(_0xad6955){var _0x28ed12=a21_0x598e4b,_0x253330=new Date();_0x253330=$['datepicker'][_0x28ed12(0x193)]('mm/dd/yy',_0x253330);var _0x57eb94=new Date();_0x57eb94[_0x28ed12(0x286)](_0x57eb94['getMonth']()+0x3),_0x57eb94=$[_0x28ed12(0x14b)][_0x28ed12(0x193)]('mm/dd/yy',_0x57eb94);var _0x1eb428=ConvertddmmyyTommddyy(moment($('#dateofJoining')['val']())[_0x28ed12(0x1d7)](_0x28ed12(0x270)));_0x1eb428=new Date(_0x1eb428),_0x1eb428=$[_0x28ed12(0x14b)][_0x28ed12(0x193)](_0x28ed12(0x176),_0x1eb428);var _0x1ce289=[],_0x1ae848=[],_0x4c1425=[];_0x4c1425[_0x28ed12(0x27c)](Logged_CompanyId);var _0x36ca72;_0x36ca72={'__metadata':{'type':_0x28ed12(0x24e)}},(_0x36ca72[_0x28ed12(0x27d)]=_0x28ed12(0x1e3),_0x36ca72[_0x28ed12(0x16c)]=_0xad6955[_0x28ed12(0x146)](),_0x36ca72[_0x28ed12(0x128)]=_0x28ed12(0x149),_0x36ca72[_0x28ed12(0x26a)]=_UserfullName,_0x36ca72['Designation']=$(_0x28ed12(0x1aa))[_0x28ed12(0x1f6)](),_0x36ca72[_0x28ed12(0x144)]=$(_0x28ed12(0x200))['text'](),_0x36ca72[_0x28ed12(0x29b)]=$(_0x28ed12(0x295))[_0x28ed12(0x118)](),_0x36ca72[_0x28ed12(0x290)]=_0x28ed12(0x289),_0x36ca72['WebPartName']=_0x28ed12(0x1e3),_0x36ca72[_0x28ed12(0x12c)]=checkedAudience,_0x36ca72[_0x28ed12(0x132)]='Approved',_0x36ca72[_0x28ed12(0x12f)]=_0x253330,_0x36ca72['Expires']=_0x57eb94,_0x36ca72[_0x28ed12(0x138)]='DOJ:\x20'+_0x1eb428);if(checkedAudience=='Corporate')_0x4c1425=[0x0],_0x1ce289=[0x0],_0x1ae848=[0x0],_0x36ca72[_0x28ed12(0x1d9)]={'results':_0x4c1425},_0x36ca72[_0x28ed12(0x125)]={'results':_0x1ae848},_0x36ca72[_0x28ed12(0x1d4)]={'results':_0x1ce289};else{if(checkedAudience==_0x28ed12(0x15f))_0x4c1425[_0x28ed12(0x27c)](Logged_CompanyId),_0x1ce289=[0x0],_0x1ae848=[0x0],_0x36ca72[_0x28ed12(0x1d9)]={'results':_0x4c1425},_0x36ca72[_0x28ed12(0x125)]={'results':_0x1ae848},_0x36ca72[_0x28ed12(0x1d4)]={'results':_0x1ce289};else{if(checkedAudience==_0x28ed12(0x144))_0x4c1425=[0x0],_0x1ce289=[0x0],_0x1ae848[_0x28ed12(0x27c)](NewUserDept),_0x36ca72[_0x28ed12(0x1d9)]={'results':_0x4c1425},_0x36ca72[_0x28ed12(0x125)]={'results':_0x1ae848},_0x36ca72[_0x28ed12(0x1d4)]={'results':_0x1ce289};else checkedAudience==_0x28ed12(0x25d)&&(_0x4c1425=[0x0],_0x1ce289[_0x28ed12(0x27c)]($('#officeLocation')['val']()['split'](':')[0x1]),_0x1ae848=[0x0],_0x36ca72['CompanyId']={'results':_0x4c1425},_0x36ca72[_0x28ed12(0x125)]={'results':_0x1ae848},_0x36ca72[_0x28ed12(0x1d4)]={'results':_0x1ce289});}}$[_0x28ed12(0x1f0)]({'url':_spPageContextInfo[_0x28ed12(0x19d)]+_0x28ed12(0x13e),'type':_0x28ed12(0x2b0),'async':![],'data':JSON[_0x28ed12(0x2a9)](_0x36ca72),'headers':{'Accept':_0x28ed12(0x19e),'Content-Type':_0x28ed12(0x19e),'X-RequestDigest':$(_0x28ed12(0x248))[_0x28ed12(0x1f6)](),'X-HTTP-Method':'POST'},'success':function(_0x2de5c6,_0x1afacb,_0x3c5baf){var _0x4c8825=_0x28ed12;console[_0x4c8825(0x221)](_0x4c8825(0x28d));},'error':function(_0x1a26ca){var _0x38841c=_0x28ed12;console[_0x38841c(0x221)](_0x1a26ca),console[_0x38841c(0x221)](_0x38841c(0x1db)),currentDlg[_0x38841c(0x18a)]();}});}$[a21_0x598e4b(0x237)]=function(_0x3fd2b0){var _0x9264f3=a21_0x598e4b,_0x3d5d76=new RegExp(_0x9264f3(0x2b4)+_0x3fd2b0+_0x9264f3(0x1cc))[_0x9264f3(0x152)](window[_0x9264f3(0x298)][_0x9264f3(0x181)]);return _0x3d5d76==null?_0x3d5d76='null':_0x3d5d76[0x1]||0x0;},getItemsWithQuery=function(_0x239819,_0x48061a){var _0x3cca80=a21_0x598e4b,_0x2de6a9=$[_0x3cca80(0x246)](),_0x2f9ca0=_spPageContextInfo[_0x3cca80(0x19d)]+_0x3cca80(0x11d)+_0x239819+_0x3cca80(0x1b0)+_0x48061a;return $[_0x3cca80(0x1f0)]({'url':_0x2f9ca0,'type':_0x3cca80(0x1a1),'async':![],'headers':{'accept':_0x3cca80(0x19e)},'success':function(_0xdd82af){var _0x2fdc7b=_0x3cca80;_0x2de6a9['resolve'](_0xdd82af['d'][_0x2fdc7b(0x259)]);},'error':function(_0xfe6455){var _0x447bc8=_0x3cca80;_0x2de6a9[_0x447bc8(0x15c)](_0xfe6455);}}),_0x2de6a9[_0x3cca80(0x1cf)]();};function CheckUserPermissionToShowButton(){var _0x29141e=a21_0x598e4b,_0x4ccb51=_0x29141e(0x122),_0x25dd3a=titanForWork['getQueryStringParameter'](_0x29141e(0x1d9)),_0x46fcea=_spPageContextInfo[_0x29141e(0x19d)]+'/_api/web/lists/getbytitle(\x27'+_0x4ccb51+_0x29141e(0x1eb)+_0x25dd3a+'\x27\x20and\x20ContributorsId\x20eq\x20\x27'+_spPageContextInfo['userId']+_0x29141e(0x1b8);$[_0x29141e(0x1f0)]({'url':_0x46fcea,'type':_0x29141e(0x1d6),'headers':{'Accept':_0x29141e(0x19e)},'success':function(_0x209d38){var _0x1b7409=_0x29141e,_0x100041='',_0x32e120=_0x209d38['d']['results'];if(_0x32e120[_0x1b7409(0x1e6)]>0x0){}else window[_0x1b7409(0x298)][_0x1b7409(0x181)]=_0x1b7409(0x117)+_0x25dd3a+'',alert(_0x1b7409(0x1f2));},'error':function(_0x3e17d7){var _0x399b5c=_0x29141e;console[_0x399b5c(0x221)](_0x3e17d7[_0x399b5c(0x249)][_0x399b5c(0x137)]);}});}function ConvertddmmyyTommddyy(_0x3ee0a4){var _0x1b67ef=a21_0x598e4b;return _0x3ee0a4[_0x1b67ef(0x17b)]('/')[0x1]+'/'+_0x3ee0a4[_0x1b67ef(0x17b)]('/')[0x0]+'/'+_0x3ee0a4[_0x1b67ef(0x17b)]('/')[0x2];}function BreakInheritePermissionDMSLibrary(_0x3f46b5,_0x2044ef,_0x5d5a11){var _0x3c7d70=a21_0x598e4b,_0x54db5e=DepartnemtUrl,_0x5e646b={'Accept':_0x3c7d70(0x19e),'content-Type':_0x3c7d70(0x19e),'X-RequestDigest':jQuery('#__REQUESTDIGEST')[_0x3c7d70(0x1f6)]()},_0x9e8b03=_0x54db5e+_0x3c7d70(0x263);$[_0x3c7d70(0x1f0)]({'url':_0x9e8b03,'type':_0x3c7d70(0x2b0),'headers':_0x5e646b,'async':![],'dataType':'json','success':function(_0x21983b){var _0x26fea0=_0x3c7d70;console[_0x26fea0(0x221)](_0x26fea0(0x1c0)),_0x5d5a11==_0x26fea0(0x229)&&$[_0x26fea0(0x26d)](AssignPermissiononDMSLibary(_0x3f46b5,_0x2044ef))[_0x26fea0(0x175)](function(_0x3e6d5b){var _0x56fb8f=_0x26fea0;console['log'](_0x56fb8f(0x240));});},'error':function(_0x36d4d5){var _0x47908e=_0x3c7d70;console[_0x47908e(0x221)](JSON[_0x47908e(0x2a9)](_0x36d4d5));}});}function AssignPermissiononDMSLibary(_0x27f1e8,_0x21fe07){var _0x5e6551=a21_0x598e4b,_0xd57585=DepartnemtUrl,_0x534fc0={'Accept':_0x5e6551(0x19e),'content-Type':_0x5e6551(0x19e),'X-RequestDigest':jQuery(_0x5e6551(0x248))[_0x5e6551(0x1f6)]()},_0x1f7886=_0xd57585+_0x5e6551(0x283)+_0x27f1e8+',roleDefId='+_0x21fe07+')';$[_0x5e6551(0x1f0)]({'url':_0x1f7886,'type':_0x5e6551(0x2b0),'headers':_0x534fc0,'dataType':_0x5e6551(0x1ea),'async':![],'success':function(_0x4f5879){var _0x432d1c=_0x5e6551;console[_0x432d1c(0x221)]('User\x20has\x20been\x20assigned\x20permission\x20.');},'error':function(_0x73217a){var _0x395f9a=_0x5e6551;console[_0x395f9a(0x221)](JSON[_0x395f9a(0x2a9)](_0x73217a));}});}function GetUserDepartmentUrl(_0x392810,_0x3556db){var _0x2e0317=a21_0x598e4b,_0x3e8a0a=_spPageContextInfo[_0x2e0317(0x19d)]+_0x2e0317(0x232)+_0x3556db+'\x27';$['ajax']({'url':_0x3e8a0a,'headers':{'Accept':_0x2e0317(0x19e)},'async':!![],'success':function(_0x57ead2){var _0x7329b6=_0x2e0317,_0x236317=_0x57ead2['d']['results'];_0x236317[_0x7329b6(0x1e6)]>0x0&&(DepartnemtUrl=_0x236317[0x0][_0x7329b6(0x13b)],console[_0x7329b6(0x221)](_0x3556db),console[_0x7329b6(0x221)](DepartnemtUrl));},'eror':function(_0x166902){var _0x440adc=_0x2e0317;console[_0x440adc(0x221)]($(_0x440adc(0x239))['val']());}});}function IsMangerActive(_0x50afa3){var _0xa5673=a21_0x598e4b,_0x142306=titanForWork[_0xa5673(0x28c)]('CompanyId'),_0x3037db='';return RestQuery='?$select=*,LogonName/EMail,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail&$expand=LogonName\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20'+_0x142306+_0xa5673(0x291)+_0x50afa3+'',$['when'](CommonFunction[_0xa5673(0x1cd)](_0xa5673(0x1c1),RestQuery))['done'](function(_0x15818b){var _0x2df8c3=_0xa5673;try{_0x15818b[_0x2df8c3(0x259)][_0x2df8c3(0x1e6)]>0x0?_0x3037db=_0x15818b[_0x2df8c3(0x259)][0x0]['ID']:_0x3037db=![];}catch(_0x5cd260){alert(_0x5cd260);}}),_0x3037db;}function SetAndResolvePeoplePicker(_0x504e63,_0x7f3bb0){var _0x21be00=a21_0x598e4b,_0x1e77eb=$(_0x21be00(0x287)+_0x504e63+'\x27]'),_0x26123a=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x1e77eb[0x1]['id']];_0x26123a[_0x21be00(0x207)](_0x7f3bb0,![]);}function CheckTFWEmp(_0x39266c){var _0x324d51=a21_0x598e4b,_0x301cac=_spPageContextInfo[_0x324d51(0x19d)]+_0x324d51(0x1df);$[_0x324d51(0x1f0)]({'url':_0x301cac,'method':_0x324d51(0x1a1),'headers':{'Accept':_0x324d51(0x2a4)},'async':![],'success':function(_0x5c0dd1){var _0x5a2f42=_0x324d51,_0x23bd80=_0x5c0dd1['d'][_0x5a2f42(0x259)];if(_0x23bd80[_0x5a2f42(0x1e6)]>0x0)for(var _0x257898=0x0;_0x257898<_0x23bd80[_0x5a2f42(0x1e6)];_0x257898++){if(_0x39266c==_0x23bd80[_0x257898]['Id']){IsTFWUser=!![];break;}}},'error':function(_0x4d285f){return console['log'](_0x4d285f),![];}});}function checkHR_Admin(){var _0x13104c=a21_0x598e4b,_0x4db70d=_0x13104c(0x1a8)+_spPageContextInfo['userEmail']+'\x27\x20';$[_0x13104c(0x26d)](CommonFunction[_0x13104c(0x1cd)]('ProcessApprovers',_0x4db70d))[_0x13104c(0x175)](function(_0x190b39){var _0x47edc0=_0x13104c;UResults=_0x190b39[_0x47edc0(0x259)],UResults[_0x47edc0(0x1e6)]>0x0&&(IsHRAdmin=!![]);});}function createNewEmpFolder(){var _0x1ebefd=a21_0x598e4b;$[_0x1ebefd(0x1f0)]({'url':_spPageContextInfo[_0x1ebefd(0x19d)]+_0x1ebefd(0x1fc),'type':_0x1ebefd(0x2b0),'data':JSON[_0x1ebefd(0x2a9)]({'__metadata':{'type':_0x1ebefd(0x210)},'ServerRelativeUrl':_0x1ebefd(0x18b)+$('#txtNewUseremail')[_0x1ebefd(0x1f6)]()}),'async':![],'headers':{'accept':_0x1ebefd(0x19e),'content-type':_0x1ebefd(0x19e),'X-RequestDigest':$(_0x1ebefd(0x248))[_0x1ebefd(0x1f6)]()},'success':function(_0x302c0a){var _0x1fa760=_0x1ebefd;console[_0x1fa760(0x221)](_0x1fa760(0x1c0));},'error':function(_0xe29477){var _0x39360d=_0x1ebefd;console[_0x39360d(0x221)](JSON[_0x39360d(0x2a9)](_0xe29477));}});}
+var currentCompanyid = "";
+var employeedIddetails = "";
+var modeofrequest = "";
+var departmentID = "";
+var sourcelocation = "";
+var newUserEmailIdGlobalVariable = "";
+var _UserfullName = '';
+var oldDateOfJoin = '';
+var olddeptname = "";
+var DepartnemtUrl = "";
+var currentDlg = "";
+var IsTFWUser = false;
+var IsHRAdmin = false;
+var NewUserDept = '';
+///Validation//////////////////
+var specialKeys = new Array();
+specialKeys.push(8); //Backspace
+
+$('.Number').keyup(function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+
+function validateEmail(emailField) {
+    if (emailField != "") {
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test(emailField) == false) {
+            $("#inputEmail").val("");
+            alert('Invalid Email Address');
+            $("#inputEmail").focus();
+            return false;
+        }
+        return true;
+    }
+}
+
+function GetLicencedUsersCount(newUserName) {
+    var licencedCount = 0;
+    var restQuery = "?$top=5000&$expand=LogonName&$select=ID,FullName,LogonName/UserName&$filter=Status eq 'Active' and PrimaryCompany eq 'Primary'";
+    var methodURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items" + restQuery;
+    $.ajax({
+        url: methodURL,
+        data: {
+            format: 'json'
+        },
+        type: 'GET',
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            licencedCount = data.value.length;
+        }
+    });
+    return licencedCount;
+}
+//////////Validation end here/////////////
+
+
+var app = angular.module('myApp', []);
+
+function updateItemWithID(ListName, Metadata, ID) {
+
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + ID + "')",
+        type: "POST",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        async: false,
+        success: function (RESULT) {
+            // console.log();
+            dfd.resolve(true);
+
+        },
+        error: function (error) {
+
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+
+        }
+    });
+    return dfd.promise();
+}
+function GetItemTypeForListName(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+function GetDateStandardFormat(date) {
+    var dateS = ConvertDateFormatToddMMyyyy(date);
+    var startDate = new Date(dateS);
+    var day = 60 * 60 * 24 * 1000;
+    var endDate = new Date(startDate.getTime());
+    var newDate = endDate.toISOString();
+    return newDate;
+}
+
+function ConvertDateFormatToddMMyyyy(date) {
+    var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+    return formatedDate;
+}
+
+function stringToDate(_date, _format, _delimiter) {
+    var formatLowerCase = _format.toLowerCase();
+    var formatItems = formatLowerCase.split(_delimiter);
+    var dateItems = _date.split(_delimiter);
+    var monthIndex = formatItems.indexOf("mm");
+    var dayIndex = formatItems.indexOf("dd");
+    var yearIndex = formatItems.indexOf("yyyy");
+    var month = parseInt(dateItems[monthIndex]);
+    month -= 1;
+    var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+    return formatedDate;
+}
+
+function SetFormatedDateToDDMMYYYY(dateValue) {
+    var valueDate = "";
+    if (dateValue != "" && dateValue != null) {
+        var ReleseDate = new Date(dateValue);
+        valueDate = $.datepicker.formatDate('MM dd, yy', ReleseDate);
+    }
+    return valueDate;
+}
+// Query the picker for user information.
+function getUserInfo(pickerPickerControlId) {
+    var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+
+    var users = peoplePicker.GetAllUserInfo();
+    var returnValue = "";
+    if (users.length > 0) {
+        returnValue = users[0].Key
+    }
+    // Get the first user's ID by using the login name.
+    return returnValue;        // return username
+}
+
+function SetPeoplePicker_Multiselect(peoplePickerElementId, allowMultiple) {
+    if (allowMultiple == null) {
+        allowMultiple = false;
+    }
+    var schema = {};
+    //schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = allowMultiple;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '';
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+var userEmail;
+function PeoplePickerChangeEvent() {
+    var DisplayName = '';
+    this.SPClientPeoplePicker.SPClientPeoplePickerDict.newEmployeePicker_TopSpan.OnValueChangedClientScript = function (peoplePickerId, selectedUsersInfo) {
+        if (selectedUsersInfo.length > 0) {
+            console.log(selectedUsersInfo[0].EntityData.Email);
+            newUserEmailIdGlobalVariable = selectedUsersInfo[0].EntityData.Email;
+            DisplayName = selectedUsersInfo[0].DisplayText;
+        }
+        else {
+            newUserEmailIdGlobalVariable = "";
+            DisplayName = '';
+        }
+        $('#txtNewUseremail').val(newUserEmailIdGlobalVariable);
+        $('#profile-image1').attr('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(newUserEmailIdGlobalVariable))
+        $('#txtEmpEmail').text(newUserEmailIdGlobalVariable);
+        $('#txtEmpName').text(DisplayName);
+    };
+}
+
+
+app.directive('datepicker', function () {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function (scope, element, attrs, ngModelCtrl) {
+            $(function () {
+                element.datepicker({
+                    dateFormat: 'dd/mm/yy',
+                    onSelect: function (date) {
+                        ngModelCtrl.$setViewValue(date);
+                        scope.$apply();
+                    }
+                });
+            });
+        }
+    }
+});
+app.controller('myCtrl', function ($scope, $http, $window) {
+    currentCompanyid = titanForWork.getQueryStringParameter("CompanyId");
+    departmentID = titanForWork.getQueryStringParameter("department");
+    employeedIddetails = titanForWork.getQueryStringParameter("employeedIddetails");
+    modeofrequest = titanForWork.getQueryStringParameter("mode");
+    sourcelocation = titanForWork.getQueryStringParameter("sourcelocation");
+    $scope.currentitemId = employeedIddetails;
+    $scope.mode = modeofrequest;
+    $scope.teamporaryImageUrl = "";
+    $scope.imageUrl = "https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
+    $scope.company = currentCompanyid;
+    $scope.gender = "---Select---";
+    if (departmentID != "" && departmentID != null) {
+        try {
+            $scope.department = parseInt(departmentID);
+        }
+        catch (e) {
+
+        }
+    }
+    SetPeoplePicker_Multiselect("newEmployeePicker", false);
+    SP.SOD.executeFunc('clientpeoplepicker.js', 'SPClientPeoplePicker', function () {
+        SetPeoplePicker_Multiselect("managerLoginName", false);
+    });
+
+
+    setTimeout(function () { PeoplePickerChangeEvent() }, 3000);
+    if ($scope.mode == "edit" || $scope.mode == "add") {
+        CheckUserPermissionToShowButton();
+        $("#managerLoginName").show();
+        $("#managerFullName").hide();
+        $("#ChiefExecute").show();
+
+
+
+    }
+
+    if ($scope.mode == "editview") {
+        $scope.editViewDisable = "all";
+        $scope.allcontrols = "all";
+        $("#managerLoginName").hide();
+        $("#managerFullName").show();
+        $("#ChiefExecute").hide();
+
+    }
+    else {
+        $scope.editViewDisable = "No";
+    }
+
+    $scope.PageLod = function () {
+        if ($scope.mode == "editview") {
+            $scope.getCurrentUserREST();
+            $(".btnHR").hide();
+        }
+        $scope.status = "Active";
+        $scope.GetCompany();
+        $scope.GetOfficeLocation($scope.company);
+        //  $scope.GetManagerList(currentCompanyid);
+        $.when($scope.GetEmployees()).done(function (MainExamListItemTemp) {
+            $scope.GetDepartment($scope.company);
+        });
+
+    }
+    $scope.getCurrentUserREST = function () {
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/currentUser",
+            method: "GET",
+            headers: {
+                "Accept": "application/json; odata=verbose"
+            },
+            success: function (data) {
+                $scope.CurrentUSerIDForCheck = data.d.Id; //Assigning UserId Variable  
+                ///alert("Current User Id= " + UserId);  
+            },
+            error: function (data) { }
+        });
+    }
+    $scope.RedirectPage = function (urllink) {
+        if (urllink != null && urllink != "" && urllink != "null") {
+            var departmentLink = "";
+            if (urllink.includes("MyDashboard") == true) {
+                $(location).attr('href', "../Pages/EmployeeDirectory.aspx?WebAppId=" + Logged_CompanyId);
+            }
+            else if (departmentID != null && departmentID != "") {
+                departmentLink = "&DepartmentId=" + departmentID;
+            }
+            var url = urllink + "?WebAppId=" + $scope.company + departmentLink;
+            $(location).attr('href', url);
+        }
+
+        else {
+            $(location).attr('href', "../Pages/EmployeeDirectory.aspx?WebAppId=" + Logged_CompanyId);
+        }
+    }
+    $scope.clickTerminateButton = function () {
+        if (IsHRAdmin == true) {
+            var urllinkk = "../Pages/employee_termination.aspx";
+            var departmentLink = "";
+            if (departmentID != null && departmentID != "") {
+                departmentLink = "&DepartmentId=" + departmentID;
+            }
+            var url = urllinkk + "?WebAppId=" + $scope.company + "&employeedIddetails=" + $scope.currentitemId + departmentLink + "&sourcelocation=../Pages/Show_Employee.aspx";
+            $(location).attr('href', url);
+        }
+        else {
+            alert("You are not authorized to perform this action. Kindly contact administrator.");
+            return;
+        }
+    }
+    $scope.redirectCancel = function () {
+        $scope.RedirectPage(sourcelocation);
+    }
+    $scope.modePopup = function () {
+        $("#modalTitanPreview").modal('show');
+
+    }
+    $scope.clearFileControl = function () {
+        var control = $("#uploadFile1");
+        control.replaceWith(control = control.clone(true));
+    }
+    $scope.ValidFiles = function (fileName) {
+        var fileName_flag = true;
+        var ext = fileName.split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['jpeg', 'jpg', 'png']) != -1) {
+            fileName_flag = true
+        }
+        else {
+            fileName_flag = false;
+        }
+        return fileName_flag
+    }
+
+    $scope.checkFileExists = function () {
+        if ($scope.teamporaryImageUrl.length > 0) {
+
+            var txtfilename = $('#uploadFile1').val().replace(/.*(\/|\\)/, '');
+            if ($scope.ValidFiles(txtfilename) == true) {
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/getFileByServerRelativeUrl('" + $scope.teamporaryImageUrl + "')",//sitecollectionurl/Lists/Employees/Attachments/"+$scope.urlNo+"/"+$scope.fileNameIs+"')",
+                    method: "GET",
+                    headers: { "Accept": "application/json; odata=verbose" },
+                    success: function (data) {
+                        if (data.d.Exists) {
+                            //delete file if it already exists
+                            $scope.DeleteFile();
+                        }
+                    },
+                    error: function (data) {
+                        //check if file not found error
+                        $scope.AddAttachments($('#uploadFile1'));
+                    }
+                });
+            }
+            else {
+                alert('Picture is not in valid format.');
+            }
+        }
+        else {
+            $scope.AddAttachments($('#uploadFile1'));
+        }
+    }
+    $scope.DeleteFile = function () {
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/getFileByServerRelativeUrl('" + $scope.teamporaryImageUrl + "')",//sitecollectionurl/Lists/Employees/Attachments/"+$scope.urlNo+"/"+$scope.fileNameIs+"')",
+            method: 'DELETE',
+            headers: {
+                'X-RequestDigest': document.getElementById("__REQUESTDIGEST").value
+            },
+            success: function (data) {
+                $scope.AddAttachments($('#uploadFile1'));
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    }
+    $scope.AddFileAttachmmentOnNewEmployeeAddtion = function () {
+        $scope.AddAttachments($('#uploadFile1'));
+    }
+    $scope.AddAttachments = function (fileControl, formAction) {
+        var digest = "";
+        $.ajax(
+		{
+		    url: _spPageContextInfo.webAbsoluteUrl + "/_api/contextinfo",
+		    method: "POST",
+		    headers: {
+		        "ACCEPT": "application/json;odata=verbose",
+		        "content-type": "application/json;odata=verbose"
+		    },
+		    success: function (data) {
+		        digest = data.d.GetContextWebInformation.FormDigestValue;
+		    },
+		    error: function (data) {
+
+		    }
+		}).done(function () {
+		    var fileInput = fileControl;// $('#uploadFile');
+		    var fileName = fileInput[0].files[0].name;
+		    fileName = fileInput[0].files[0].name.replace(/[^a-zA-Z0-9-. ]/g, "");    //Remove Special Char
+		    fileName = fileName.replace(/\s/g, "");                                    //Remove space
+
+		    var reader = new FileReader();
+		    reader.onload = function (e) {
+		        var fileData = e.target.result;
+		        var res11 = $.ajax(
+                {
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items('" + $scope.currentitemId + "')/AttachmentFiles/ add(FileName='" + fileName + "')",
+                    method: "POST",
+                    binaryStringRequestBody: true,
+                    data: fileData,
+                    processData: false,
+                    headers: {
+                        "ACCEPT": "application/json;odata=verbose",
+                        "X-RequestDigest": digest
+                        //,
+                        //"content-length": fileData.byteLength
+                    },
+                    success: function (data) {
+                        if ($scope.mode == "add") {
+                            //alert("Employee is added successfully .");
+                            //$scope.RedirectPage(sourcelocation);
+                        }
+                        else {
+                            $scope.clearFileControl();
+                            $scope.GetEmployees();
+                            //alert('Picture is updated successfully.');
+                            $("#modalTitanPreview").modal('hide');
+                            $("#uploadFile1").val(null);
+                        }
+                    },
+                    error: function (data) {
+                        alert("Error occured." + data.responseText);
+                    }
+                });
+		    };
+		    reader.readAsArrayBuffer(fileInput[0].files[0]);
+
+		});
+    }
+    $scope.GetEmployees = function () {
+        $http({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Employees')/items?$select=ID,Email,LinkedIn_Account,LogonNameId,DateofTermination,Gender,EmployeeID,GroupName,HomeAddress,HomePhone,JoiningDate,PostalAddresses,OtherEMailAddress,StateProvince,Status,ZIPPostalCode,Country,DateOfAnniversary,DateOfBirth,City,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/UserName,ManagerLoginName/UserName,Department/ID,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName,OfficeLocation/Region&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department,AttachmentFiles&$top=5000&$filter=ID  eq '" + $scope.currentitemId + "'",
+            method: "GET",
+            headers: { "Accept": "application/json;odata=verbose" }
+        }).then(function mySuccess(response) {
+            $scope.company = parseInt(currentCompanyid);
+            if (response.data.d.results.length > 0) {
+                $scope.showData = response.data.d.results[0];
+                oldDateOfJoin = response.data.d.results[0].JoiningDate;
+                olddeptname = response.data.d.results[0].Department.ID;
+
+                var MangerLoginName = response.data.d.results[0].ManagerLoginName.UserName;
+                if (MangerLoginName != null && MangerLoginName != "") {
+                    SetAndResolvePeoplePicker("managerLoginName", MangerLoginName);
+                }
+                $scope.SetEmployeeDetails(response.data.d.results[0]);
+                $scope.GetDepartment($scope.company);
+            }
+            //get interoduction starts
+            if ($scope.mode == 'edit' || $scope.mode == 'add') {
+                $('.richText-editor').attr("contenteditable", "true");
+                $('.richText-toolbar').show();
+                if ($scope.mode == 'edit') {
+                    $('#UpdateInfo').show();
+                }
+                if ($scope.mode == 'add') {
+                    $(".picTab").removeClass("ng-hide");
+                }
+            }
+            else {
+                $('#sameCheck').hide();
+                $('.richText-editor').attr("contenteditable", "false");
+                $('#UpdateInfo').hide();
+                $('.richText-toolbar').hide();
+            }
+            if ($scope.currentitemId != "") {
+                var restQueryPersonalDMS = "?$select=Introduction&$filter=ID  eq '" + $scope.currentitemId + "'";
+                $.when(getItemsWithQuery("Employees", restQueryPersonalDMS)).done(function (EmpInfoData) {
+                    if (EmpInfoData.length > 0) {
+                        var EmpDataInfo = EmpInfoData[0].Introduction;
+                        $(".richText-editor").html(EmpDataInfo);
+                    }
+                });
+            }
+            //get interoduction ends
+            if (IsTFWUser == true) {
+                $('#ddlUserCompany').append('<option value="TFW Labs, Inc.">TFW Labs, Inc.</option>');
+            }
+        }, function myError(response) {
+            $scope.myWelcome = response.statusText;
+        });
+    }
+    $scope.GetCompany = function () {
+        $http({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Companies')/items?$select=ID,CompanyName",
+            method: "GET",
+            headers: { "Accept": "application/json;odata=verbose" }
+        }).then(function mySuccess(response) {
+            $scope.showCompany = response.data.d.results;
+            $scope.company = currentCompanyid;
+        }, function myError(response) {
+            $scope.myWelcome = response.statusText;
+        });
+    }
+    $scope.onCompanyChange = function () {
+        $scope.GetDepartment($scope.company);
+        $scope.GetOfficeLocation($scope.company)
+    }
+    $scope.GetDepartment = function (companyChangedId) {
+        if (companyChangedId == "" || companyChangedId == null) {
+
+            companyChangedId = currentCompanyid;
+        }
+        $http({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Departments')/items?$select=ID,DepartmentName,CompanyIDId&$filter=CompanyIDId eq '" + companyChangedId + "'",
+            method: "GET",
+            headers: { "Accept": "application/json;odata=verbose" }
+        }).then(function mySuccess(response) {
+            $scope.showDepartment = response.data.d.results;
+
+        }, function myError(response) {
+            $scope.myWelcome = response.statusText;
+        });
+    }
+    $scope.GetOfficeLocation = function (officeLocationID) {
+        $http({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('OfficeLocation')/items?$select=ID,OfficeName,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=OfficeLocationId eq '0' and CompanyID/ID eq '" + officeLocationID + "'",
+            method: "GET",
+            headers: { "Accept": "application/json;odata=verbose" }
+        }).then(function mySuccess(response) {
+
+
+            var managerListsItemss = new Array();
+            var office1 = {};
+            office1.ID = 0;
+            office1.OfficeName = "---Select---";
+            managerListsItemss.push(office1);
+
+            for (var i = 0; i < response.data.d.results.length; i++) {
+                var office = {};
+                office.ID = response.data.d.results[i].ID;
+                office.OfficeName = response.data.d.results[i].OfficeName;
+                managerListsItemss.push(office);
+            }
+            $scope.showOffice = managerListsItemss;//response.data.d.results;
+            $scope.officeLocation = 0;
+        }, function myError(response) {
+            $scope.myWelcome = response.statusText;
+        });
+    }
+    $scope.SetEmployeeDetails = function (employeeInformation) {
+        $scope.curreLogonLookkpuID = employeeInformation.LogonNameId;
+        CheckTFWEmp(employeeInformation.LogonNameId);
+        $scope.currentitemId = employeeInformation.ID;
+        $scope.employeeName = employeeInformation.FullName;
+        var imageURL = $scope.imageUrl = $scope.GetAttachment(employeeInformation.AttachmentFiles, employeeInformation.Email);
+        $scope.designation = employeeInformation.Designation;
+        $scope.groupName = employeeInformation.GroupName;
+
+        $scope.manager = employeeInformation.Manager;
+        if (employeeInformation.Manager == "Chief Executive") {
+            $("#chiefexecutive").prop('checked', true);
+
+        }
+        //get details on top starts
+        $("#txtEmpName").text(employeeInformation.FullName);
+        if (employeeInformation.Designation == null || employeeInformation.Designation == "null") {
+            $("#txtEmpDesignation").text("");
+        }
+        else {
+            $("#txtEmpDesignation").text(employeeInformation.Designation);
+        }
+        if (employeeInformation.OfficeLocation.OfficeName != null && employeeInformation.OfficeLocation.OfficeName != "null") {
+            $("#txtEmpLoc").text(employeeInformation.OfficeLocation.OfficeName);
+        }
+        else {
+            $("#txtEmpLoc").text('');
+        }
+        if (employeeInformation.OfficeLocation.Region != null && employeeInformation.OfficeLocation.Region != "null") {
+            $("#txtEmpReg").text(' ('+employeeInformation.OfficeLocation.Region +')');
+        }
+        else {
+            $("#txtEmpReg").hide();
+        }
+        if(employeeInformation.PostalAddresses!=null&&employeeInformation.HomeAddress!=null&&employeeInformation.HomeAddress!=""&&employeeInformation.PostalAddresses!="")
+        {
+            //bhawana
+                      var pAdd=(employeeInformation.PostalAddresses!=null?employeeInformation.PostalAddresses:"")+"\n"+(employeeInformation.City!=null?employeeInformation.City:"")+"\n"+(employeeInformation.StateProvince!=null?employeeInformation.StateProvince:"")+","+(employeeInformation.ZIPPostalCode!=null?employeeInformation.ZIPPostalCode:"")+"\n"+(employeeInformation.Country!=null?employeeInformation.Country:"");
+            if(employeeInformation.HomeAddress==pAdd)
+            {
+                $('#chkSameAddress').prop("checked",true);
+                $(".txtPermAddress").attr('disabled', 'disabled');
+            }
+            else 
+            {
+                $(".txtPermAddress").attr('disabled', false);
+            }
+        }
+        $("#txtEmpDept").text(employeeInformation.Department.DepartmentName);
+        //var Picture=$('#profile-image1');
+        //Picture.attr('src',imageURL); 
+        $("#txtEmpEmail").text(employeeInformation.Email);
+        //get details on top ends
+        $scope.mobileNo = employeeInformation.MobileNumber;
+        $scope.extension = employeeInformation.ExtensionName;
+        $scope.email = employeeInformation.Email;
+        $scope.dateofBirth = SetFormatedDateToDDMMYYYY(employeeInformation.DateOfBirth);
+        $scope.dateofAnniversary = SetFormatedDateToDDMMYYYY(employeeInformation.DateOfAnniversary);
+        $scope.gender = employeeInformation.Gender;
+        $scope.employeeCode = employeeInformation.EmployeeID;
+        $scope.company = employeeInformation.Company.ID;
+        $scope.department = employeeInformation.Department.ID;
+        $scope.officeLocation = employeeInformation.OfficeLocation.ID;
+        $scope.status = employeeInformation.Status;
+        $scope.dateofJoining = SetFormatedDateToDDMMYYYY(employeeInformation.JoiningDate);
+        $scope.dateofTermination = SetFormatedDateToDDMMYYYY(employeeInformation.DateofTermination);
+        $scope.currentAddress = employeeInformation.PostalAddresses;
+        if (employeeInformation.LinkedIn_Account != null) {
+            $scope.LinkedlnAccount = employeeInformation.LinkedIn_Account.Url;
+            if ($scope.mode == "editview") {
+                $("#linkedAccunt").attr("href", employeeInformation.LinkedIn_Account.Url);
+                $('#Linkedln').css('cursor', 'pointer');
+            }
+        }
+        $scope.city = employeeInformation.City;
+        $scope.state = employeeInformation.StateProvince;
+        $scope.zip = employeeInformation.ZIPPostalCode;
+        $scope.country = employeeInformation.Country;
+        $scope.homePhone = employeeInformation.HomePhone;
+        $scope.otherEmail = employeeInformation.OtherEMailAddress;
+        $scope.parmanentAddress = employeeInformation.HomeAddress;
+
+        if ($scope.mode == "editview") {
+            //$(".picTab").hide();
+            if ($scope.CurrentUSerIDForCheck == employeeInformation.LogonNameId) {
+                $scope.editViewDisable = "currentUser";
+            }
+        }
+        else {
+            //$(".picTab").show();
+            $("#uploadFile1").removeClass("ng-hide");
+        }
+        $scope.terminatestatus = employeeInformation.Status;
+    }
+    $scope.updateInformation = function (ListName, MangerLoginId, ManagerItemid) {
+
+        try {
+            if ($('#chiefexecutive').is(':checked') == true) {
+                ManagerItemid = -1;
+                $scope.ManagerFullName = "Chief Executive";
+                MangerLoginId = null;
+            }
+
+            var Metadata;
+            var ItemType = GetItemTypeForListName(ListName);
+            if ($('#chkSameAddress').is(":checked") == true) {
+                //bhawana
+                //$scope.parmanentAddress = $scope.currentAddress+"\n"+$scope.city+"\n"+$scope.state+","+$scope.zip+"\n"+ $scope.country;
+                $scope.parmanentAddress = $(".txtPermAddress").val();                
+            }
+            var DOBDATE = $scope.dateofBirth;
+            if($scope.dateofBirth== "") {
+            	DOBDATE = null;
+            }
+            else {
+            	DOBDATE = GetDateStandardFormat(moment($scope.dateofBirth).format('DD/MM/YYYY'))
+            }
+            var AnniDATE = $scope.dateofAnniversary;
+            if($scope.dateofAnniversary == "") {
+            	AnniDATE = null;
+            }
+            else {
+            	AnniDATE = GetDateStandardFormat(moment($scope.dateofAnniversary).format('DD/MM/YYYY'))
+            }
+            
+            var TermDATE = $scope.dateofTermination;
+            if($scope.dateofTermination== "") {
+            	TermDATE = null;
+            }
+            else {
+            	TermDATE = GetDateStandardFormat(moment($scope.dateofTermination).format('DD/MM/YYYY'))
+            }
+
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                FullName: $scope.employeeName,
+                Title: $scope.employeeName,
+                Designation: $scope.designation,
+                GroupName: $scope.groupName,
+                ParentId: ManagerItemid,
+                Manager: $scope.ManagerFullName,
+                ManagerLoginNameId: MangerLoginId,
+                MobileNumber: $scope.mobileNo,
+                ExtensionName: $scope.extension,
+                Email: $scope.email,
+                DateOfBirth: DOBDATE,
+                DateOfAnniversary: AnniDATE,
+                Gender: $scope.gender,
+                EmployeeID: $scope.employeeCode,
+                CompanyId: $scope.company,
+                DepartmentId: $scope.department,
+                OfficeLocationId: $scope.officeLocation,
+                Status: $scope.status,
+                JoiningDate: GetDateStandardFormat(moment($scope.dateofJoining).format('DD/MM/YYYY')),
+                DateofTermination: TermDATE,
+                PostalAddresses: $scope.currentAddress,
+                City: $scope.city,
+                StateProvince: $scope.state,
+                ZIPPostalCode: $scope.zip,
+                Country: $scope.country,
+                HomePhone: $scope.homePhone,
+                OtherEMailAddress: $scope.otherEmail,
+                HomeAddress: $scope.parmanentAddress,
+                Introduction: $(".richText-editor").html()
+            };
+
+            Metadata["LinkedIn_Account"] = {
+                '__metadata': { 'type': 'SP.FieldUrlValue' },
+                'Description': $scope.LinkedlnAccount,
+                'Url': $scope.LinkedlnAccount
+            }
+
+            if ($scope.employeeName == null || $scope.employeeName == "") {
+                delete Metadata["FullName"];
+            }
+
+            if (ManagerItemid == null || ManagerItemid == "") {
+                delete Metadata["ParentId"];
+            }
+            if ($scope.ManagerFullName == null || $scope.ManagerFullName == "") {
+                delete Metadata["Manager"];
+            }
+
+
+            if ($scope.designation == null || $scope.designation == "") {
+                delete Metadata["Designation"];
+            }
+
+
+            if ($scope.groupName == null || $scope.groupName == "") {
+                delete Metadata["GroupName"];
+            }
+
+            if ($scope.dateofBirth == null || $scope.dateofBirth == "") {
+                delete Metadata["DateOfBirth"];
+            }
+            if ($scope.dateofAnniversary == null || $scope.dateofAnniversary == "") {
+                delete Metadata["DateOfAnniversary"];
+            }
+            if ($scope.gender == null || $scope.gender == "") {
+                delete Metadata["Gender"];
+            }
+            if ($scope.employeeCode == null || $scope.employeeCode == "") {
+                delete Metadata["EmployeeID"];
+            }
+            if ($scope.company == null || $scope.company == "" || $scope.company == "0") {
+                delete Metadata["CompanyId"];
+            }
+            if ($scope.department == null || $scope.department == "" || $scope.department == "0") {
+                delete Metadata["DepartmentId"];
+            }
+            if ($scope.officeLocation == null || $scope.officeLocation == "" || $scope.officeLocation == "0") {
+                delete Metadata["OfficeLocationId"];
+            }
+            if ($scope.dateofJoining == null || $scope.dateofJoining == "") {
+                delete Metadata["JoiningDate"];
+            }
+            if ($scope.dateofTermination == null || $scope.dateofTermination == "") {
+                delete Metadata["DateofTermination"];
+            }
+
+            $.when(updateItemWithID(ListName, Metadata, $scope.currentitemId)).done(function (MainExamListItemTemp) {
+                var fileImageexist = $('#uploadFile1').val();
+                if (fileImageexist.length > 0) {
+                    $scope.checkFileExists();
+                }
+                if ($scope.mode == "edit") {
+                    if ($scope.department != olddeptname) {
+                        BreakInheritePermissionDMSLibrary($scope.curreLogonLookkpuID, "1073741826", "Add");
+                    }
+                    var restQueryPersonalDMS = "?$select=ID,EmployeeName,EmployeeID,Publish_Date,Company/CompanyName&$expand=Company&$top=1&$orderby=Created desc&$filter=WebPartName eq 'Welcome'and Announcement_Type eq 'Welcome' and EmployeeID eq '" + $scope.currentitemId + "'";
+                    $.when(getItemsWithQuery("Announcements", restQueryPersonalDMS)).done(function (AnnouncementData) {
+                        if (AnnouncementData.length > 0) {
+
+                            var dateofjoin = oldDateOfJoin;
+                            var dateofjoin = new Date(dateofjoin);
+                            dateofjoin.setDate(dateofjoin.getDate());
+                            var dateofjoin = ((dateofjoin.getDate()) < 10 ? '0' : '') + (dateofjoin.getDate()) + '/' + ((dateofjoin.getMonth() + 1) < 10 ? '0' : '') + (dateofjoin.getMonth() + 1) + '/' + dateofjoin.getFullYear();
+
+                            var newdateofjoin = ConvertddmmyyTommddyy(moment($("#dateofJoining").val()).format('DD/MM/YYYY'));
+                            if (GetDateStandardFormat(moment(dateofjoin).format('DD/MM/YYYY')) != GetDateStandardFormat(moment(newdateofjoin)).format('DD/MM/YYYY')) {
+
+                                var currentitemid = AnnouncementData[0].ID;
+                                var ListName = "Announcements";
+
+                                var today = new Date();
+                                today = $.datepicker.formatDate('mm/dd/yy', today);
+
+                                var expiredate = new Date();
+                                expiredate.setMonth(expiredate.getMonth() + 3);
+                                expiredate = $.datepicker.formatDate('mm/dd/yy', expiredate);
+
+                                var doj = ConvertddmmyyTommddyy(moment($("#dateofJoining").val()).format('DD/MM/YYYY'));
+                                doj = new Date(doj);
+                                doj = $.datepicker.formatDate('dd M yy', doj);
+
+
+                                var Metadata;
+                                var itemType = GetItemTypeForListName(ListName);
+
+                                Metadata = {
+                                    __metadata: {
+                                        'type': itemType
+                                    },
+                                    Designation: $("#designation").val(),
+                                    Department: $("#department option:selected").text(),
+                                    OfficeLocation: $("#officeLocation option:selected").text(),
+                                    Publish_Date: today,
+                                    Expires: expiredate,
+                                    Description: "DOJ: " + doj
+
+                                };
+                                $.when(updateItemWithID("Announcements", Metadata, currentitemid)).done(function (MainExamList) {
+                                    $scope.ShowAlert('1');
+                                    $scope.RedirectPage(sourcelocation);
+
+                                });
+                            }
+                            else {
+                                $scope.ShowAlert('1');
+                                $scope.RedirectPage(sourcelocation);
+                            }
+                        }
+                        else {
+                            dateofjoin = ConvertddmmyyTommddyy(moment($("#dateofJoining").val()).format('DD/MM/YYYY'));
+                            dateofjoin = new Date(dateofjoin)
+                            var todaydate = new Date();
+                            var difference = Math.abs(todaydate - dateofjoin);
+                            var days = parseInt(difference / (1000 * 3600 * 24));
+                            if (days <= 30) {
+                                $("#SuccessPopupText").text("Employee has been updated successfully.");
+                                $("#addsuccessful").modal('show');
+                                $("#NotifyAnnoucement").click(function () {
+                                    if ($("#Corporatesec").prop("checked") || $("#Companysec").prop("checked") || $("#Departmentsec").prop("checked") || $("#locationsec").prop("checked") || $("#nosenddata").prop("checked")) {
+                                        if ($("#nosenddata").prop("checked") == false) {
+                                        	$("#NotifyAnnoucement").attr('disabled', 'disabled');
+                                            _UserfullName = $scope.employeeName;
+                                            InsertWelcomeInAnnouncementList($scope.currentitemId);
+                                            if(sourcelocation == "" || sourcelocation == null) {
+                                            	sourcelocation = "../Pages/EmployeeDirectory.aspx"
+                                            }
+                                            $scope.RedirectPage(sourcelocation);
+                                        }
+                                        else {
+                                            $scope.RedirectPage(sourcelocation);
+                                        }
+                                    }
+                                    else {
+                                        alert("Kindly select any option.");
+                                        return false;
+                                    }
+                                });
+                            }
+                            else {
+                                alert("Employee is updated successfully");
+                                $scope.RedirectPage(sourcelocation);
+                            }
+                        }
+                    });
+                }
+                else {
+                    $scope.ShowAlert('1');
+                    $scope.RedirectPage(sourcelocation);
+                }
+            });
+        }
+        catch (error) {
+            console.log(error.message);
+        }
+    }
+
+
+    $scope.GetGroupIDByGroupName = function (loginnameWithDomain) {
+        var groupID = "";
+        var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getbyname('Contributors')?$select=id";
+        $.ajax({
+            url: url,
+            method: "GET",
+            async: false,
+            headers: { "Accept": "application/json; odata=verbose" },
+            success: function (data) {
+
+                groupID = data.d.Id;
+                $scope.AddUserinSharePointGroup(groupID, loginnameWithDomain)
+            },
+            error: function (data) {
+                console.log(data);
+
+            }
+        });
+        return groupID;
+    }
+
+    $scope.AddUserinSharePointGroup = function (groupId, loginnameWithDomain) {
+
+        var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups(" + groupId + ")/users";
+        $.ajax({
+            url: requestUri,
+            type: "POST",
+            async: false,
+            data: JSON.stringify({ '__metadata': { 'type': 'SP.User' }, 'LoginName': loginnameWithDomain }),
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "content-type": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+            },
+            success: onSuccess,
+            error: onError
+        });
+        function onSuccess(data) {
+            console.log('User Added');
+        }
+        function onError(error) {
+            console.log(JSON.stringify(error));
+        }
+
+    }
+
+    $scope.addNewEmployeeLoder = function () {
+        //waitingDialog.show();
+        if (IsHRAdmin == true) {
+            var dlgTitle = 'Adding...';
+            var dlgMsg = '<br />Please wait!!';
+            var dlgHeight = 200;
+            var dlgWidth = 400;
+            currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+            setTimeout(function () {
+                $scope.AddNewEmployeeDetails();
+            }, 1000);
+        }
+        else {
+            alert("You are not authorized to perform this action. Kindly contact administrator.");
+            return;
+        }
+    }
+
+
+    $scope.AddNewEmployeeDetails = function () {
+        //Validation for Designation
+        if ($("#designation").val().trim() == "") {
+            alert("Kindly fill designation.");
+            currentDlg.close();
+            return false;
+        }
+        var logonName = getUserInfo('newEmployeePicker');
+        var ManagerLoginName = getUserInfo('managerLoginName');
+        if (logonName != "") {
+            $scope.GetGroupIDByGroupName(logonName);
+            var userId = $scope.GetUserId(logonName);
+
+            if ($('#chiefexecutive').is(':checked') != true) {
+                if (ManagerLoginName != "") {
+                    var MangerLoginId = GetUserIdForManager(ManagerLoginName);
+                    var ManagerItemid = IsMangerActive(MangerLoginId);
+                    if (!ManagerItemid) {
+                        alert("Reporting manager is not valid.");
+                        ManagerItemid = "";
+                        currentDlg.close();
+                        //waitingDialog.hide();
+                        return false;
+                    }
+                }
+                else {
+                    alert("Kindly fill manager name.");
+                    currentDlg.close();
+                    //waitingDialog.hide();
+                    return false;
+                }
+            }
+
+            if (userId == null || userId == "" || $scope.email == "" || $scope.email == null ||
+                $scope.company == "" || $scope.company == null || $scope.department == "" || $scope.department == null || $scope.officeLocation == 0 || $scope.officeLocation == null || $scope.dateofJoining == "" || $scope.dateofJoining == null) {
+                alert("Please fill all require fields.\nCompany\nDepartment\nOffice Location\nDate of Joining\nName\nEmail.");
+                currentDlg.close();
+                //waitingDialog.hide();
+            }
+            else {
+                ///User liceneced Section/////////////////////
+                var newUserValidation = logonName.split('|')[2];
+                var consumedusersLicenced = GetLicencedUsersCount(newUserValidation);
+                /*if (consumedusersLicenced === false) {
+                    waitingDialog.hide();
+                    return false;
+
+                }*/
+                var usersLicenced = UsersLicenceRequired;
+                if (usersLicenced < consumedusersLicenced + 1) {
+                    alert("You don't have enough licence");
+                    currentDlg.close();
+                    //waitingDialog.hide();
+                    return false;
+
+                }
+                //////////////////////////////////////////
+
+                var prefix = "";
+                if (userId != "" && userId != null) {
+                    prefix = logonName.split('|')[2];
+                }
+
+                if ($scope.EmployeeCheckListValidation(prefix, $scope.company) == false) {
+                    if ($scope.EmployeeCheckListValidation(prefix, "") == false) {
+                        $scope.AddNewEmployee("Employees", userId, MangerLoginId, ManagerItemid, "Primary");
+                        //waitingDialog.hide();
+                    }
+                    else {
+                        $scope.AddNewEmployee("Employees", userId, MangerLoginId, ManagerItemid, "");
+                        // waitingDialog.hide();
+                    }
+                }
+                else {
+                    alert("User is already added in this company");
+                    currentDlg.close();
+                    //waitingDialog.hide();
+                }
+            }
+        }
+        else {
+            alert("Employee Name can't be blank .");
+            currentDlg.close();
+            //waitingDialog.hide();
+        }
+    }
+    $scope.EmployeeCheckListValidation = function (userId, companyId) {
+        var validationEmployeeExist = false;
+        try {
+
+            var restQuery = "";
+            if (companyId == "") {
+                restQuery = "&$top=5000&$filter=LogonName/UserName  eq '" + userId + "'";
+            }
+            else {
+                restQuery = "&$top=5000&$filter=LogonName/UserName  eq '" + userId + "' and CompanyId eq '" + companyId + "'";
+            }
+            var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=ID,DepartmentId,LogonName/UserName,Company/ID&$expand=LogonName,Company" + restQuery;
+            $.ajax({
+                url: Ownurl,
+                headers: { Accept: "application/json;odata=verbose" },
+                async: false,
+                success: function (data) {
+                    var items = data.d.results;
+                    if (items.length > 0) {
+                        validationEmployeeExist = true;
+                    }
+                }, eror: function (data) {
+                    console.log('error');
+                }
+            });
+        }
+        catch (e) {
+            alert('LogonName is not in valid format !');
+        }
+        return validationEmployeeExist;
+    }
+    $scope.AddNewEmployee = function (ListName, userId, MangerLoginId, ManagerItemid, primaryCompany) {
+        try {
+
+            if ($('#chiefexecutive').is(':checked') == true) {
+                ManagerItemid = -1;
+                $scope.ManagerFullName = "Chief Executive";
+                // MangerLoginId = null;  
+            }
+            _UserfullName = $scope.UserInfoFullName;
+
+            var Metadata;
+            var ItemType = GetItemTypeForListName(ListName);
+            if ($('#chkSameAddress').is(":checked") == true) {
+                //bhawana
+              //  $scope.parmanentAddress = $scope.currentAddress;
+              $scope.parmanentAddress = $(".txtPermAddress").val(); 
+            }
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                LogonNameId: userId,
+                FullName: $scope.UserInfoFullName,
+                Title: $scope.UserInfoFullName,
+                // ParentId: $scope.hostSelectedManager.value,
+                ParentId: ManagerItemid,
+                Designation: $scope.designation,
+                GroupName: $scope.groupName,
+                Manager: $scope.ManagerFullName,
+                ManagerLoginNameId: MangerLoginId,
+                MobileNumber: $scope.mobileNo,
+                ExtensionName: $scope.extension,
+                Email: $scope.email,
+                DateOfBirth: GetDateStandardFormat(moment($scope.dateofBirth).format('DD/MM/YYYY')),
+                DateOfAnniversary: GetDateStandardFormat(moment($scope.dateofAnniversary).format('DD/MM/YYYY')),
+                Gender: $scope.gender,
+                EmployeeID: $scope.employeeCode,
+                CompanyId: $scope.company,
+                DepartmentId: $scope.department,
+                OfficeLocationId: $scope.officeLocation,
+                Status: $scope.status,
+                JoiningDate: GetDateStandardFormat(moment($scope.dateofJoining).format('DD/MM/YYYY')),
+                DateofTermination: GetDateStandardFormat(moment($scope.dateofTermination).format('DD/MM/YYYY')),
+                PostalAddresses: $scope.currentAddress,
+                City: $scope.city,
+                StateProvince: $scope.state,
+                ZIPPostalCode: $scope.zip,
+                Country: $scope.country,
+                HomePhone: $scope.homePhone,
+                OtherEMailAddress: $scope.otherEmail,
+                HomeAddress: $scope.parmanentAddress,
+                Introduction: $(".richText-editor").html(),
+                PrimaryCompany: primaryCompany
+            };
+
+            Metadata["LinkedIn_Account"] = {
+                '__metadata': { 'type': 'SP.FieldUrlValue' },
+                'Description': $scope.LinkedlnAccount,
+                'Url': $scope.LinkedlnAccount
+            }
+
+            if (primaryCompany == null || primaryCompany == "") {
+                delete Metadata["PrimaryCompany"];
+            }
+
+            if ($scope.designation == null || $scope.designation == "") {
+                delete Metadata["Designation"];
+            }
+
+            if ($scope.groupName == null || $scope.groupName == "") {
+                delete Metadata["GroupName"];
+            }
+            if ($scope.ManagerFullName == null || $scope.ManagerFullName == "") {
+                delete Metadata["Manager"];
+            }
+
+            if (MangerLoginId == null || MangerLoginId == "") {
+                delete Metadata["ManagerLoginNameId"];
+            }
+
+
+            if ($scope.dateofBirth == null || $scope.dateofBirth == "") {
+                delete Metadata["DateOfBirth"];
+            }
+            if ($scope.dateofAnniversary == null || $scope.dateofAnniversary == "") {
+                delete Metadata["DateOfAnniversary"];
+            }
+            if ($scope.gender == null || $scope.gender == "") {
+                delete Metadata["Gender"];
+            }
+            if ($scope.employeeCode == null || $scope.employeeCode == "") {
+                delete Metadata["EmployeeID"];
+            }
+            if ($scope.company == null || $scope.company == "" || $scope.company == "0") {
+                delete Metadata["CompanyId"];
+            }
+            if ($scope.department == null || $scope.department == "" || $scope.department == "0") {
+                delete Metadata["DepartmentId"];
+            }
+            if ($scope.officeLocation == null || $scope.officeLocation == "" || $scope.officeLocation == "0") {
+                delete Metadata["OfficeLocationId"];
+            }
+            if ($scope.dateofJoining == null || $scope.dateofJoining == "") {
+                delete Metadata["JoiningDate"];
+            }
+            if ($scope.dateofTermination == null || $scope.dateofTermination == "") {
+                delete Metadata["DateofTermination"];
+            }
+
+            $.when($scope.AddItemToList(ListName, Metadata)).done(function (MainExamListItemTemp) {
+                var urlmode = $.urlParam('mode');
+                createNewEmpFolder();
+                $scope.currentitemId = MainExamListItemTemp.d.ID;
+                var _ItemId = MainExamListItemTemp.d.ID;
+                var fileImageexist = $('#uploadFile1').val();
+                //if joining date is before 7 days, announcement will not be saved
+                doj = ConvertddmmyyTommddyy(moment($("#dateofJoining").val()).format('DD/MM/YYYY'));
+                doj = new Date(doj);
+                //var beforeDate = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+                //beforeDate = beforeDate.setHours(0, 0, 0, 0);
+                //beforeDate = new Date(beforeDate);
+                var TodayDate = new Date();
+
+                var difference = Math.abs(TodayDate - doj);
+                var days = parseInt(difference / (1000 * 3600 * 24));
+
+                if (fileImageexist.length > 0) {
+                    $scope.AddFileAttachmmentOnNewEmployeeAddtion();
+                    if (days <= 30) {
+                        $("#addsuccessful").modal('show');
+                        $("#NotifyAnnoucement").click(function () {
+                            if ($("#Corporatesec").prop("checked") || $("#Companysec").prop("checked") || $("#Departmentsec").prop("checked") || $("#locationsec").prop("checked") || $("#nosenddata").prop("checked")) {
+                                if ($("#nosenddata").prop("checked") == false) {
+                                	$("#NotifyAnnoucement").attr('disabled', 'disabled');
+                                    InsertWelcomeInAnnouncementList(_ItemId);
+                                    $scope.RedirectPage(sourcelocation);
+                                }
+                                else {
+                                    $scope.RedirectPage(sourcelocation);
+                                }
+                            }
+                            else {
+                                alert("Kindly select any option.");
+                                return false;
+                            }
+                        });
+                    }
+                }
+                else {
+                    BreakInheritePermissionDMSLibrary(userId, "1073741826", "Add");//read permission
+                    currentDlg.close();
+                    if (days <= 30) {
+	                    $("#addsuccessful").modal('show');
+	                    $("#NotifyAnnoucement").click(function () {
+	                        if ($("#Corporatesec").prop("checked") || $("#Companysec").prop("checked") || $("#Departmentsec").prop("checked") || $("#locationsec").prop("checked") || $("#nosenddata").prop("checked")) {
+	                            if ($("#nosenddata").prop("checked") == false) {
+	                            	$("#NotifyAnnoucement").attr('disabled', 'disabled');
+	                                InsertWelcomeInAnnouncementList(_ItemId);
+	                                $scope.RedirectPage(sourcelocation);
+	                            }
+	                            else {
+	                                $scope.RedirectPage(sourcelocation);
+	                            }
+	                        }
+	                        else {
+	                            alert("Kindly select any option.");
+	                            return false;
+	                        }
+	                    });
+	                }
+	                else {
+	                	alert("Employee has been added successfully.");
+		                var dlgTitle = 'Redirecting...';
+	                    var dlgMsg = '<br />Please wait!!';
+	                    var dlgHeight = 200;
+	                    var dlgWidth = 400;
+	                    currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+	                    setTimeout(function () {
+	                        $scope.RedirectPage(sourcelocation);
+	                    }, 100);
+	                }
+                }
+            });
+        }
+        catch (error) {
+            alert(error.message);
+            currentDlg.close();
+        }
+    }
+
+    //this Function Only for New Employee Name,email
+    var _Username = '';
+    $scope.GetUserId = function (userName) {
+        var userID = "";
+        var prefix = "i:0#.f|membership|";
+        var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+        var accountName = userName;// prefix+userName;       
+        $.ajax({
+            url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+                encodeURIComponent(accountName) + "'",
+            method: "GET",
+            headers: { "Accept": "application/json; odata=verbose" },
+            async: false,
+            success: function (data) {
+                userID = data.d.Id;
+                _Username = data.d.Title;
+                $scope.UserInfoFullName = data.d.Title;
+                $scope.email = data.d.Email;
+                //alert("Received UserId" + data.d.Id);
+                // alert(JSON.stringify(data));
+            },
+            error: function (data) {
+                console.log(JSON.stringify(data));
+                alert('This user is not added on this site,Please add this user on this site.');
+            }
+        });
+        return userID;
+    }
+
+    //This Function Only Use For Manager
+    function GetUserIdForManager(userName) {
+        var userID = "";
+        var prefix = "i:0#.f|membership|";
+        var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+        var accountName = userName; // prefix+userName;       
+        $.ajax({
+            url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+                encodeURIComponent(accountName) + "'",
+            method: "GET",
+            headers: {
+                "Accept": "application/json; odata=verbose"
+            },
+            async: false,
+            success: function (data) {
+                userID = data.d.Id;
+                $scope.ManagerFullName = data.d.Title;
+            },
+            error: function (data) {
+                console.log(JSON.stringify(data));
+            }
+        });
+        return userID;
+    }
+
+    $scope.ShowAlert = function (validationValue) {
+        $window.alert("Employee is updated successfully.");
+    }
+    $scope.updateInformationButton = function () {
+        if (IsHRAdmin == true) {
+            if ($('#chiefexecutive').is(':checked') != true) {
+                var ManagerLoginName = getUserInfo('managerLoginName');
+                if (ManagerLoginName != "") {
+                    var MangerLoginId = GetUserIdForManager(ManagerLoginName);
+                    var ManagerItemid = IsMangerActive(MangerLoginId);
+                    if (!ManagerItemid) {
+                        alert("Reporting manager is not valid.");
+                        ManagerItemid = "";
+                        currentDlg.close();
+                        //waitingDialog.hide();
+                        return false;
+                    }
+                }
+                else {
+                    alert("Kindly fill manager name.");
+                    currentDlg.close();
+                    return false;
+                }
+            }
+            if ($scope.employeeName == "" || $scope.employeeName == null || $scope.email == "" || $scope.email == null || $scope.company == "" || $scope.company == null || $scope.department == "" || $scope.department == null || $scope.officeLocation == "" || $scope.officeLocation == null || $scope.dateofJoining == "" || $scope.dateofJoining == null) {
+                alert("Employee Name\nEmail\nCompany\nDepartment\nOffice Location\nDate of Joining can not be blank .");
+            }
+            else {
+                $scope.updateInformation("Employees", MangerLoginId, ManagerItemid);
+            }
+        }
+        else {
+            alert("You are not authorized to perform this action. Kindly contact administrator.");
+            return;
+        }
+    }
+    $scope.GetAttachment = function (attachmentcollection, EMail) {
+        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EMail) //"https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
+        if (attachmentcollection.results.length > 0) {
+            attachmentUrl = attachmentcollection.results[0].ServerRelativeUrl;
+            $scope.teamporaryImageUrl = attachmentcollection.results[0].ServerRelativeUrl
+        }
+        return attachmentUrl;
+    }
+
+    $("#department").click(function () {
+    	NewUserDept = $scope.department;
+        if ($scope.department != null) {
+            GetUserDepartmentUrl("Departments", $scope.department)
+        }
+    })
+
+    /*$scope.UpdateEmployeeInfo = function () {
+        var ListName = "Employees";
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Introduction: $(".richText-editor").html()
+        }
+
+        $.when(updateItemWithID(ListName, Metadata, $scope.currentitemId)).done(function (MainExamListItemTemp) {
+            alert("Information updated successfully.");
+            $('#EmployeeIntro').modal('hide');
+        });
+    }*/
+
+    /*$scope.getEmployeeInfo = function () {
+        if ($scope.mode == 'edit' || $scope.mode == 'add') {
+            $('.richText-editor').attr("contenteditable", "true");
+            $('.richText-toolbar').show();
+            if ($scope.mode == 'edit') {
+                $('#UpdateInfo').show();
+            }
+        }
+        else {
+            $('.richText-editor').attr("contenteditable", "false");
+            $('#UpdateInfo').hide();
+            $('.richText-toolbar').hide();
+        }
+        $('#EmployeeIntro').modal('show');
+        if ($scope.currentitemId != "") {
+            var restQueryPersonalDMS = "?$select=Introduction&$filter=ID  eq '" + $scope.currentitemId + "'";
+            $.when(getItemsWithQuery("Employees", restQueryPersonalDMS)).done(function (EmpInfoData) {
+                var EmpDataInfo = EmpInfoData[0].Introduction;
+                $(".richText-editor").html(EmpDataInfo);
+            });
+        }
+    }*/
+
+    $scope.AddItemToList = function (ListName, Metadata) {
+        var dfd = $.Deferred();
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+            type: "POST",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose"
+            },
+            data: JSON.stringify(Metadata),
+            success: function (data) {
+                // console.log(data);
+                dfd.resolve(data);
+            },
+            error: function (xhr, data, error) {
+                var err = JSON.parse(xhr.responseText);
+                var errorType = xhr.status;
+                var errorMessage = err.error.message.value;
+                alert(errorMessage);
+                currentDlg.close();
+            }
+        });
+        return dfd.promise();
+    }
+});
+$(window).load(function () {
+    if (IsTFWUser == true) {
+        $('#ddlUserCompany').val("TFW Labs, Inc.");
+    }
+});
+var checkedAudience = '';
+$(document).ready(function () {
+    //CheckTFWEmp();
+    checkHR_Admin();
+    userActivityNotificationEntry(_spPageContextInfo.userId, window.location);
+    if (IsHRAdmin == false) {
+        IsCurrentUserInEinv();
+    }
+    $("#uploadFile1").on('change', function () {
+        if (typeof ($("#uploadFile1")[0].files) != "undefined") {
+            var size = parseFloat($("#uploadFile1")[0].files[0].size / 1024).toFixed(2);
+            console.log(size + " KB.");
+            if (size <= 100) {
+                document.getElementById('profile-image1').src = window.URL.createObjectURL(this.files[0]);
+                return true;
+            }
+
+            else {
+                alert("The file you are trying to upload is too large (max 100KB).");
+                $("#uploadFile1").val(null);
+                $('#profile-image1').attr("src", "https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg");
+                return false;
+            }
+        }
+    });
+    $('input[type=radio][name=datasend]').change(function () {
+        checkedAudience = this.value;
+    });
+    $("#chkSameAddress").click(function () {
+        if ($('#chkSameAddress').is(":checked") == true) {
+            //Bhawana
+            var sameAdd=($(".txtCurrAddress").val().trim()!=""?$(".txtCurrAddress").val().trim():"")+($("#input5city").val().trim()!=""?"\n"+$("#input5city").val().trim():"")+($("#input5state").val().trim()!=""?"\n"+$("#input5state").val().trim():"")+($(".zip").val().trim()!=""?","+$(".zip").val().trim():"")+($("#input5country").val().trim()!=""?"\n"+$("#input5country").val().trim():"");
+            $(".txtPermAddress").val(sameAdd);
+            $(".txtPermAddress").attr('disabled', 'disabled');
+        }
+        else {
+            $(".txtPermAddress").attr('disabled', false);
+        }
+
+    });
+    //bhawana
+    $('.zip').change(function () {
+        //checkedAudience = this.value;
+        if ($('#chkSameAddress').is(":checked") == true)
+        {
+         $(".txtPermAddress").val('');
+        var sameAdd=($(".txtCurrAddress").val().trim()!=""?$(".txtCurrAddress").val().trim():"")+($("#input5city").val().trim()!=""?"\n"+$("#input5city").val().trim():"")+($("#input5state").val().trim()!=""?"\n"+$("#input5state").val().trim():"")+(this.value!=""?","+this.value:"")+($("#input5country").val().trim()!=""?"\n"+$("#input5country").val().trim():"");
+         $(".txtPermAddress").val(sameAdd);
+    }
+    });
+    $('.txtCurrAddress').change(function () {
+        //checkedAudience = this.value;
+        if ($('#chkSameAddress').is(":checked") == true)
+        {
+         $(".txtPermAddress").val('');
+        var sameAdd=(this.value!=""?this.value:"")+($("#input5city").val().trim()!=""?"\n"+$("#input5city").val().trim():"")+($("#input5state").val().trim()!=""?"\n"+$("#input5state").val().trim():"")+($('.zip').val().trim()!=""?","+$('.zip').val().trim():"")+($("#input5country").val().trim()!=""?"\n"+$("#input5country").val().trim():"");
+         $(".txtPermAddress").val(sameAdd);
+    }
+    });
+    $('#input5city').change(function () {
+        //checkedAudience = this.value;
+        if ($('#chkSameAddress').is(":checked") == true)
+        {
+         $(".txtPermAddress").val('');
+        var sameAdd=($(".txtCurrAddress").val().trim()!=""?$(".txtCurrAddress").val().trim():"")+(this.value!=""?"\n"+this.value:"")+($("#input5state").val().trim()!=""?"\n"+$("#input5state").val().trim():"")+($('.zip').val().trim()!=""?","+$('.zip').val().trim():"")+($("#input5country").val().trim()!=""?"\n"+$("#input5country").val().trim():"");
+         $(".txtPermAddress").val(sameAdd);
+        }
+    });
+     $('#input5state').change(function () {
+        //checkedAudience = this.value;
+        if ($('#chkSameAddress').is(":checked") == true){
+         $(".txtPermAddress").val('');
+        var sameAdd=($(".txtCurrAddress").val().trim()!=""?$(".txtCurrAddress").val().trim():"")+($("#input5city").val().trim()!=""?"\n"+$("#input5city").val().trim():"")+(this.value!=""?"\n"+this.value:"")+($('.zip').val().trim()!=""?","+$('.zip').val().trim():"")+($("#input5country").val().trim()!=""?"\n"+$("#input5country").val().trim():"");
+         $(".txtPermAddress").val(sameAdd);
+        }
+    });
+    $('#input5country').change(function () {
+        //checkedAudience = this.value;
+        if ($('#chkSameAddress').is(":checked") == true){
+         $(".txtPermAddress").val('');
+        var sameAdd=($(".txtCurrAddress").val().trim()!=""?$(".txtCurrAddress").val().trim():"")+($("#input5city").val().trim()!=""?"\n"+$("#input5city").val().trim():"")+($("#input5state").val().trim()!=""?"\n"+$("#input5state").val().trim():"")+($('.zip').val().trim()!=""?","+$('.zip').val().trim():"")+(this.value!=""?"\n"+this.value:"");
+         $(".txtPermAddress").val(sameAdd);
+        }
+    });
+    /*$("#uploadFile").on('change', function () {
+        if (typeof ($("#uploadFile")[0].files) != "undefined") {
+            var size = parseFloat($("#uploadFile")[0].files[0].size / 1024).toFixed(2);
+            console.log(size + " KB.");
+            if (size <= 50) {
+                return true;
+            }
+
+            else {
+                alert("The file you are trying to upload is too large (max 50KB).");
+                $("#uploadFile").val(null);
+                return false;
+            }
+        }
+    });*/
+
+    $("#chiefexecutive").change(function (event) {
+        if (this.checked) {
+            $("#managerDiv").hide();
+        } else {
+            $("#managerDiv").show();
+        }
+    });
+
+});
+
+
+function IsCurrentUserInEinv() {
+    var requestURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('EnvironmentalSettings')/Items?$select=Title,Active,scope,ListOfUsers/ID&$expand=ListOfUsers&$filter=Title eq 'EmployeePersonalInfo'";
+
+    $.ajax({
+        url: requestURL,
+        type: 'GET',
+        headers: { "accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var results = data.d.results;
+            var ActiveVlaue = results[0].Active;
+            var Scope = results[0].scope
+            if (ActiveVlaue == true) {
+                if (ActiveVlaue == true && Scope == "Selective") {
+
+                    var ListOfUser = results[0].ListOfUsers.results;
+                    if (ListOfUser != null) {
+                        for (var index = 0; index < ListOfUser.length; index++) {
+                            if (ListOfUser[index].ID == _spPageContextInfo.userId) {
+                                $("#addInfo").show();
+                                $("#MobNo").show();
+                                $("#DOB").show();
+                                $("#DateOfAnniversary").show();
+                                $("#Gender").show();
+                                return;
+                            }
+                            else {
+                                $("#addInfo").hide();
+                                $("#MobNo").hide();
+                                $("#DOB").hide();
+                                $("#DateOfAnniversary").hide();
+                                $("#Gender").hide();
+                            }
+                        }
+                    }
+                }
+                else if (ActiveVlaue == true && Scope == "Everyone") {
+                    $("#addInfo").show();
+                }
+            }
+            else {
+                $("#addInfo").hide();
+                $("#MobNo").hide();
+                $("#DOB").hide();
+                $("#DateOfAnniversary").hide();
+                $("#Gender").hide();
+
+            }
+        },
+        error: function (error) {
+            console.log("Error occured in GetEnvironmentalSettings()");
+        }
+    })
+}
+
+function InsertWelcomeInAnnouncementList(_ItemID) {
+    var today = new Date();
+    today = $.datepicker.formatDate('mm/dd/yy', today);
+
+    var expiredate = new Date();
+    expiredate.setMonth(expiredate.getMonth() + 3);
+    expiredate = $.datepicker.formatDate('mm/dd/yy', expiredate);
+
+    var doj = ConvertddmmyyTommddyy(moment($("#dateofJoining").val()).format('DD/MM/YYYY'));
+    doj = new Date(doj);
+    doj = $.datepicker.formatDate('dd M yy', doj);
+    var OfficeLOc = [];
+    var DeptId = [];
+    var CompanyId = [];
+    CompanyId.push(Logged_CompanyId);
+    
+	var metadataDescription;
+    metadataDescription = { "__metadata": { 'type': "SP.Data.AnnouncementsListItem"} };
+    
+    metadataDescription["Announcement_Type"] =  "Welcome",
+    metadataDescription["EmployeeID"] =  _ItemID.toString(),
+    metadataDescription["Title"] =  "New Joinee",
+    metadataDescription["EmployeeName"] =  _UserfullName,
+    metadataDescription["Designation"] =  $("#designation").val(),
+    metadataDescription["Department"] =  $("#department option:selected").text(),
+    metadataDescription["OfficeLocation"] =  $("#officeLocation option:selected").text(),
+    metadataDescription["UserType"] =  "Internal Users",
+    metadataDescription["WebPartName"] =  "Welcome",
+    metadataDescription["Audience"] =  checkedAudience,
+    metadataDescription["ApprovalStatus"] =  "Approved",
+    metadataDescription["Publish_Date"] =  today,
+    metadataDescription["Expires"] =  expiredate,
+    metadataDescription["Description"] =  "DOJ: " + doj
+    
+    
+    if(checkedAudience == "Corporate"){
+    	CompanyId = [0];
+    	OfficeLOc = [0];
+    	DeptId = [0];
+    	metadataDescription["CompanyId"] = { "results": CompanyId};
+    	metadataDescription["DepartmentsId"] = { "results": DeptId};
+		metadataDescription["OfficeLocationsId"] = { "results": OfficeLOc};
+    }
+    else if(checkedAudience == "Company"){
+    	CompanyId.push(Logged_CompanyId);
+    	OfficeLOc = [0];
+    	DeptId = [0];
+    	metadataDescription["CompanyId"] = { "results": CompanyId };
+    	metadataDescription["DepartmentsId"] = { "results": DeptId };
+		metadataDescription["OfficeLocationsId"] = { "results": OfficeLOc };
+    }
+	else if(checkedAudience == "Department"){
+		CompanyId = [0];
+    	OfficeLOc = [0];
+    	DeptId.push(NewUserDept);
+    	metadataDescription["CompanyId"] = { "results": CompanyId };
+    	metadataDescription["DepartmentsId"] = { "results": DeptId };
+		metadataDescription["OfficeLocationsId"] = { "results": OfficeLOc };
+    }
+	else if(checkedAudience == "Location"){
+		CompanyId = [0];
+    	OfficeLOc.push($("#officeLocation").val().split(':')[1]);
+    	DeptId = [0];
+    	metadataDescription["CompanyId"] = { "results": CompanyId };
+    	metadataDescription["DepartmentsId"] = { "results": DeptId };
+		metadataDescription["OfficeLocationsId"] = { "results": OfficeLOc };
+    }
+    
+    
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Announcements')/items",
+        type: "POST",
+        async: false,
+        data: JSON.stringify(metadataDescription),
+        headers:
+        {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "X-HTTP-Method": "POST"
+        },
+        success: function (data, status, xhr) {
+            console.log("Data Send to Announcements");
+        },
+        error: function (data) {
+            console.log(data);
+            console.log("Data Send to Announcements Failed");
+            currentDlg.close();
+            //waitingDialog.hide();
+        }
+    });
+}
+
+$.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) { return results = "null"; }
+    else {
+        return results[1] || 0;
+    }
+}
+
+getItemsWithQuery = function (ListName, Query) {
+    var dfd = $.Deferred();
+    var siteurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query;
+    $.ajax({
+        url: siteurl,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+            dfd.resolve(data.d.results);
+            //   console.log();
+        },
+        error: function (error) {
+            //alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function CheckUserPermissionToShowButton() {
+    var listName = 'ProcessApprovers';
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '" + _spPageContextInfo.userId + "' and (WebPartName eq 'HR Admin' or WebPartName  eq 'Tech Admin')";
+    //  var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=(CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'DepartmentDocument_Access') or (CompanyId eq '" + txtCompanyId + "' and Owner eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'Documents') ";
+    $.ajax({
+        url: siteURL,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var option = "";
+            var valuesArray = data.d.results;
+            if (valuesArray.length > 0) {
+            }
+            else {
+                window.location.href = "../Pages/AdminPortal.aspx?WebAppId=" + txtCompanyId + "";
+                alert("You don't have permission to access.");
+            }
+        },
+        error: function (data) {
+            console.log(data.responseJSON.error);
+        }
+    });
+}
+
+function ConvertddmmyyTommddyy(ddmmyyyString) {
+    return ddmmyyyString.split('/')[1] + "/" + ddmmyyyString.split('/')[0] + "/" + ddmmyyyString.split('/')[2];
+}
+
+
+
+function BreakInheritePermissionDMSLibrary(userPrincipleId, permissionLevel, commandAddRemove) {
+    var deptSiteURL = DepartnemtUrl;
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var endPointUrl = deptSiteURL + "/_api/web/lists/getByTitle('DepartmentalDMS')/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)";
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        dataType: 'json', success: function (data) {
+            console.log("Permission has been breaked successfully!");
+            if (commandAddRemove == "Add") {
+                $.when(AssignPermissiononDMSLibary(userPrincipleId, permissionLevel)).done(function (MainExamListItemTemp) {
+                    console.log("Permission has been assigned successfully!");
+                });
+            }
+
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+function AssignPermissiononDMSLibary(userPrincpleId, permissionLevel) {
+    var deptSiteURL = DepartnemtUrl
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+    }
+    var webUrl = deptSiteURL + "/_api/web/lists/getByTitle('DepartmentalDMS')/roleassignments/addroleassignment(principalid=" + userPrincpleId + ",roleDefId=" + permissionLevel + ")";
+    $.ajax(
+    {
+        url: webUrl,
+        type: "POST",
+        headers: headers,
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log("User has been assigned permission .");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+function GetUserDepartmentUrl(listName, ItemID) {
+    var siteURL1 = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?$select=ID,SiteURL,DepartmentName&$filter=ID eq '" + ItemID + "'";
+    $.ajax({
+        url: siteURL1,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0) {
+                DepartnemtUrl = items[0].SiteURL;
+                console.log(ItemID);
+                console.log(DepartnemtUrl);
+            }
+
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+function IsMangerActive(managerName) {
+    var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var mangerInfoItemId = '';
+
+    RestQuery = "?$select=*,LogonName/EMail,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail&$expand=LogonName &$filter= Status eq 'Active' and Company/ID eq " + txtCompanyId + " and LogonNameId eq " + managerName + "";
+    $.when(CommonFunction.getItemsWithQueryItem("Employees", RestQuery)).done(function (ManagerName) {
+
+        try {
+            //  var ManagerInfo=  ManagerName.results.length;
+            if (ManagerName.results.length > 0) {
+                mangerInfoItemId = ManagerName.results[0].ID;
+            }
+            else {
+                mangerInfoItemId = false;
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    return mangerInfoItemId;
+}
+
+function SetAndResolvePeoplePicker(controlNameID, LoginNameOrEmail) {
+    var peoplePickerDiv = $("[id^='" + controlNameID + "']");
+    // Get the people picker object from the page.
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[1].id];
+    peoplePicker.AddUserKeys(LoginNameOrEmail, false);
+}
+
+//check TFW user or not
+function CheckTFWEmp(checkUserId) {
+    var GroupUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getByName('TFW_Employees')/Users?$select=Email,Id";
+    $.ajax({
+        url: GroupUrl,
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data) {
+            var TFWArray = data.d.results;
+            if (TFWArray.length > 0) {
+                for (var i = 0; i < TFWArray.length; i++) {
+                    if (checkUserId == TFWArray[i].Id) {
+                        IsTFWUser = true;
+                        break;
+                    }
+                }
+            }
+        },
+        error: function (error) {
+            console.log(error);
+            return false;
+        }
+    });
+}
+
+// to check if user is HR admin or not
+function checkHR_Admin() {
+    var Query = "?$select=Id,WebPartName,Contributors/EMail&$expand=Contributors&$top=5000&$filter=WebPartName eq 'HR Admin' and Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+    $.when(CommonFunction.getItemsWithQueryItem('ProcessApprovers', Query)).done(function (UserResults) {
+        UResults = UserResults.results;
+        if (UResults.length > 0) {
+            IsHRAdmin = true;
+        }
+    });
+}
+
+//create a new employee folder with Foldername as his/her email
+function createNewEmpFolder() {
+    $.ajax({
+        url:  _spPageContextInfo.webAbsoluteUrl + "/_api/web/folders",
+        type: "POST",
+        data: JSON.stringify({
+            '__metadata': { 'type': 'SP.Folder' },
+            'ServerRelativeUrl': 'DocumentManagementSystem/' + $("#txtNewUseremail").val()
+        }),
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            console.log("Permission has been breaked successfully!");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}

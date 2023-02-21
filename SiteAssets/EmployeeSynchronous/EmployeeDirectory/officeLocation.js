@@ -1,1 +1,85 @@
-var a20_0x2de56a=a20_0x199c;(function(_0x295c11,_0x485008){var _0x2e93ef=a20_0x199c,_0x326e0d=_0x295c11();while(!![]){try{var _0x331b=-parseInt(_0x2e93ef(0x153))/0x1+parseInt(_0x2e93ef(0x154))/0x2*(-parseInt(_0x2e93ef(0x149))/0x3)+parseInt(_0x2e93ef(0x14c))/0x4+-parseInt(_0x2e93ef(0x14b))/0x5*(-parseInt(_0x2e93ef(0x148))/0x6)+-parseInt(_0x2e93ef(0x161))/0x7*(-parseInt(_0x2e93ef(0x15b))/0x8)+-parseInt(_0x2e93ef(0x15d))/0x9*(parseInt(_0x2e93ef(0x155))/0xa)+parseInt(_0x2e93ef(0x140))/0xb*(parseInt(_0x2e93ef(0x13d))/0xc);if(_0x331b===_0x485008)break;else _0x326e0d['push'](_0x326e0d['shift']());}catch(_0x2a831c){_0x326e0d['push'](_0x326e0d['shift']());}}}(a20_0x49c0,0x6bd11));function a20_0x49c0(){var _0x34fcb8=['myWelcome','statusText','605150PjjuJf','404576udhuqK','30lavdWP','each','data','/_api/web/lists/GetByTitle(\x27OfficeLocation\x27)/items?$select=ID,OfficeMapUrl,Region,Address,City,State,Country,PinCode,TelephoneNo,EmailID,ContactPerson,ContactNo,OfficeName,CompanyID/ID,CompanyID/CompanyName&$expand=CompanyID&$filter=OfficeLocationId\x20eq\x20\x270\x27\x20and\x20CompanyID/ID\x20eq\x20\x27','application/json;odata=verbose','toString','128IqyIMX','#myDIVID','289314CvbMpw','GetOfficeLocationUrl','linkurl','#ClickHereForLocationLocal','120862acpTgH','trigger','webAbsoluteUrl','module','ClickHereForLocation','selectedCompanyId','GetCompaniesList','CompanyId','push','text','userId','myCtrl','results','25008gvbXbq','GET','company','1958vvObPb','location','length','html','then','/_api/web/lists/GetByTitle(\x27Companies\x27)/items?$select=ID,CompanyName','companiesListArray','click','7422jLahiQ','6BTHrsh','<iframe\x20src=\x27','2315acTJeb','1311368xVuHtZ','element','CompanyName','querySelector','myApp'];a20_0x49c0=function(){return _0x34fcb8;};return a20_0x49c0();}var currentCompanyid='';$(document)['ready'](function(){var _0x4be3ec=a20_0x199c;userActivityNotificationEntry(_spPageContextInfo[_0x4be3ec(0x13a)],window[_0x4be3ec(0x141)]);});var app=angular[a20_0x2de56a(0x164)](a20_0x2de56a(0x150),[]);function a20_0x199c(_0x586882,_0xfbd6c6){var _0x49c0b6=a20_0x49c0();return a20_0x199c=function(_0x199cbe,_0x5dd33b){_0x199cbe=_0x199cbe-0x13a;var _0x398d87=_0x49c0b6[_0x199cbe];return _0x398d87;},a20_0x199c(_0x586882,_0xfbd6c6);}app['controller'](a20_0x2de56a(0x13b),function(_0x2ddc29,_0x1373a7,_0x2062af){var _0x54cf6e=a20_0x2de56a;$('#langClickEvent')[_0x54cf6e(0x147)](function(){var _0x25c92c=_0x54cf6e;$('[data-localize]')[_0x25c92c(0x156)](function(_0x31f8bd,_0x5bf58f){var _0x348183=_0x25c92c;try{var _0x361cfc=$(this)['attr']('data-localize');_0x361cfc==_0x348183(0x165)&&$(this)[_0x348183(0x143)]($(_0x348183(0x160))[_0x348183(0x16a)]());}catch(_0x3a12db){}});}),currentCompanyid=titanForWork['getQueryStringParameter'](_0x54cf6e(0x168)),_0x2ddc29[_0x54cf6e(0x166)]=currentCompanyid,_0x2ddc29[_0x54cf6e(0x13f)]=currentCompanyid,_0x2ddc29['GetOfficeLocation']=function(){var _0xb99be9=_0x54cf6e;_0x1373a7({'url':_spPageContextInfo[_0xb99be9(0x163)]+_0xb99be9(0x158)+_0x2ddc29['selectedCompanyId']+'\x27','method':_0xb99be9(0x13e),'headers':{'Accept':_0xb99be9(0x159)}})[_0xb99be9(0x144)](function _0x10dd3d(_0x200960){var _0x5505c4=_0xb99be9;_0x2ddc29['showOffice']=_0x200960['data']['d'][_0x5505c4(0x13c)];},function _0x5ed248(_0x5bb86a){var _0xbe5ce3=_0xb99be9;_0x2ddc29[_0xbe5ce3(0x151)]=_0x5bb86a[_0xbe5ce3(0x152)];});},setInterval(function(){var _0x41f268=_0x54cf6e;$('#langClickEvent')[_0x41f268(0x162)](_0x41f268(0x147));},0xbb8),_0x2ddc29[_0x54cf6e(0x167)]=function(){var _0x117184=_0x54cf6e;_0x1373a7({'url':_spPageContextInfo[_0x117184(0x163)]+_0x117184(0x145),'method':_0x117184(0x13e),'headers':{'Accept':_0x117184(0x159)}})[_0x117184(0x144)](function _0x2e08fa(_0x3d9154){var _0x2a3ec1=_0x117184,_0x323fa2=new Array();for(var _0x1db7af=0x0;_0x1db7af<_0x3d9154['data']['d'][_0x2a3ec1(0x13c)][_0x2a3ec1(0x142)];_0x1db7af++){var _0x1b8568={};_0x1b8568['ID']=_0x3d9154[_0x2a3ec1(0x157)]['d'][_0x2a3ec1(0x13c)][_0x1db7af]['ID'][_0x2a3ec1(0x15a)](),_0x1b8568[_0x2a3ec1(0x14e)]=_0x3d9154[_0x2a3ec1(0x157)]['d']['results'][_0x1db7af][_0x2a3ec1(0x14e)],_0x323fa2[_0x2a3ec1(0x169)](_0x1b8568);}_0x2ddc29[_0x2a3ec1(0x146)]=_0x323fa2;},function _0x26d821(_0x35d42e){var _0x4ef6d9=_0x117184;_0x2ddc29['myWelcome']=_0x35d42e[_0x4ef6d9(0x152)];});},_0x2ddc29[_0x54cf6e(0x15e)]=function(_0x111ac0){var _0x479a19=_0x54cf6e,_0x2b9a1e=_0x111ac0;_0x2ddc29[_0x479a19(0x15f)]=_0x479a19(0x14a)+_0x2b9a1e+'\x27\x20width=\x27564\x27\x20height=\x27450\x27\x20frameborder=\x270\x27\x20style=\x27border:0\x27\x20allowfullscreen></iframe>';var _0x336906=angular[_0x479a19(0x14d)](document[_0x479a19(0x14f)](_0x479a19(0x15c)));_0x336906[_0x479a19(0x143)](''),_0x336906['append'](_0x2ddc29[_0x479a19(0x15f)]);};});
+var currentCompanyid="";
+
+$(document).ready(function(){
+ userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+})
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope,$http,$window) 
+{ 
+
+$('#langClickEvent').click(function(){
+
+$("[data-localize]").each(function (i, el) 
+	{
+		try
+	 	{
+				var controlLabelText=$(this).attr('data-localize');
+				if(controlLabelText=="ClickHereForLocation")
+				{
+			     	$(this).html($('#ClickHereForLocationLocal').text());
+				}			
+         }
+         catch(ex)
+         {}
+     }); 
+
+});
+
+
+     currentCompanyid=titanForWork.getQueryStringParameter("CompanyId");	
+     $scope.selectedCompanyId=currentCompanyid;
+	$scope.company=currentCompanyid;
+    $scope.GetOfficeLocation = function ()
+    {		
+			$http({
+			    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('OfficeLocation')/items?$select=ID,OfficeMapUrl,Region,Address,City,State,Country,PinCode,TelephoneNo,EmailID,ContactPerson,ContactNo,OfficeName,CompanyID/ID,CompanyID/CompanyName&$expand=CompanyID&$filter=OfficeLocationId eq '0' and CompanyID/ID eq '" + $scope.selectedCompanyId+ "'",
+				method: "GET",
+				headers: { "Accept": "application/json;odata=verbose" }
+			}).then(function mySuccess(response) 
+		    {		
+              $scope.showOffice =response.data.d.results;		              		  
+		    }, function myError(response) 
+		   {
+		     $scope.myWelcome = response.statusText;
+		   });		
+    }
+    setInterval(function(){ $('#langClickEvent').trigger('click'); }, 3000);
+  $scope.GetCompaniesList = function ()
+  {
+    $http({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Companies')/items?$select=ID,CompanyName",
+        method: "GET",
+        headers: { "Accept": "application/json;odata=verbose" }
+    }).then(function mySuccess(response)
+    {
+        var companiesListArray = new Array();
+       // var item1 = {};
+       // item1.ID = "0";
+       //  item1.CompanyName = "All";
+       //  companiesListArray.push(item1);
+        for (var s = 0; s < response.data.d.results.length; s++)
+        {
+            var item = {};
+            item.ID = response.data.d.results[s].ID.toString();
+            item.CompanyName = response.data.d.results[s].CompanyName;
+            companiesListArray.push(item);
+        }
+        $scope.companiesListArray = companiesListArray;
+       
+    }, function myError(response)
+    {
+        $scope.myWelcome = response.statusText;
+    });
+}
+	$scope.GetOfficeLocationUrl = function (officeMapUrl)
+    {		
+	
+         var linkurkActivity = officeMapUrl;//"https://www.google.com/maps/embed?q="+adderessValue+cityValue+stateValue+pinccodeValue+countryValue;
+	     $scope.linkurl= "<iframe src='"+linkurkActivity+"' width='564' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>"
+         var myEl = angular.element( document.querySelector('#myDIVID' ));
+		 myEl.html(''); 
+         myEl.append($scope.linkurl); 
+	}
+
+});

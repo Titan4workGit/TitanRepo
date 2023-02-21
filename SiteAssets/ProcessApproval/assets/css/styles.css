@@ -1021,9 +1021,16 @@ select#ddlTblNameList{
     font-size: 15px !important;
     font-weight: 600;
 }
+
+
 .newitem:last-of-type{
  margin-left: 15px;
 }
+
+.newitem:first-of-type{
+ margin-left:0px;
+}
+
 
 
 .newitem:before {
@@ -1230,7 +1237,7 @@ a.linkopts{
 }
 
 #new_Procesing_tbs .modal-dialog{
-  width:78%;
+  width:58%;
   margin:5px auto;
 }
 

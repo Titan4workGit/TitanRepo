@@ -1,1 +1,1309 @@
-function a15_0x1beb(){var _0x4488c7=['Active','<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>','ready','Kindly\x20enter\x20remarks.','&Mode=View&sourcelocation=../Pages/MyDashboard.aspx?MODAL','#txtFilterApprovalStatusInbox\x20option:selected','<input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssItemID\x27\x20value=\x27','Publish_Date','SP.Data.','stringify','Events','#btnContinue','May','\x27&$OrderBy=\x20Modified\x20desc','#ApprovalinboxChip','UpdateApprovalToList','getDate','#totalrecordsApprovalInbox','&Mode=View&Type=Initiative&sourcelocation=../Pages/MyDashboard.aspx?MODAL','prototype','totalpages','SuggestionType','/Pages/QuestionAnswer.aspx?WebAppId=','message','currentpageApprovalInbox','5301688AYyePj','?$select=ID,Title,Status,WebpartName,ApprovedDate,Remarks,ItemId,DepartmentId/ID,Details,DepartmentId/DepartmentName,ApprovedBy/Title,Author/Title,*&$Expand=ApprovedBy,Author,DepartmentId&$OrderBy=Modified\x20desc&$top=5000&$Filter=ApproversId\x20eq\x20\x27','#SeeMoreApprovalIn','</p></td>','\x27)/Items(','oddselected','ImageURL','&ItemId=','val','Departments','btoa','getQueryStringParameter','currentpage','done','ajax','#categoryApprovalInbox','\x27><a\x20class=\x27projectGridInboxTaskEvent1444\x27\x20style=\x27cursor:pointer\x27\x20onclick=\x27getActionbtnValuesInbox(\x22','.NoRecordFound','Banners','endrecord','Upload','Title','Action\x20taken\x20successfully.','ModalPopupApproval','charAt','.mainDivApprovalInbox','#txtApprovalAction','<tr>','ApprovedTask','empty','#siteViewmodal','/_api/web/lists/getbytitle(\x27CategoryMaster\x27)/items?$select=CategoryType,CatogeryName&$filter=CategoryType\x20eq\x20\x27','get','/Pages/Announcements.aspx?WebAppId=','#TotalItemsApprovalIn','#suggestionType','Media','Occasion','promise','All','Remarks','UpdateDepartmentalMainList','trigger','attr','#myViewEventModal','\x22)\x27>Action</button></td>','CompanyId','css','length','reject','?$top=5000&$select=ID,Publish_Date&$filter=ID\x20eq\x20','/_api/web/lists/getbytitle(\x27ApprovalTaskList\x27)/items?$filter=ID\x20eq\x20(\x27','and\x20Status\x20eq\x20\x27','Item','Deferred','and\x20Category\x20eq\x20\x27','CatogeryName','body','#btnAction','1925187RzPfPt','ActionCancel','DepartmentDocument_Access','Process\x20identify','Department\x20MediaGallary','\x27><div\x20style=\x27display:none\x27\x20class=\x27cssTitle\x27>','<td\x20class=\x27text-center\x27><div\x20class=\x27\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>','totalrecordsApprovalInbox','ServerRelativeUrl','BannerImages','Status','attributes','responseJSON','DepartmentId','ApprovalInboxPeople','POST','#ApprovalInboxPeople_TopSpan_ResolvedList','PATCH','120vGHNVU','Details','/Pages/ExperienceEntry.aspx?itemId=','Knowledge','.action','</option>','MainPollsList','oddrow','#tablenavApprovalInbox','endrecordApprovalInbox','</div><div\x20style=\x27display:none\x27\x20class=\x27cssRemarks\x27>','when','Suggesion','\x27)\x22>Details</a>','SP.Data.Questions_x005f_MasterListItem','getFullYear','Recognition','#mainDivAreaApprovalInbox','SuggestionDetails','IdeaBank','results','Mar','\x27><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssStausId\x27\x20value=\x27','totalpagesApprovalInbox','\x27\x20and\x20Status\x20eq\x20\x27Initiated\x27','ApprovedDate','match','Edit','.deleteClickEditCompanyEvent','\x27)/items?$select=ID,SiteURL&$filter=ID\x20eq\x20\x27','<td\x20class=\x27text-center\x20vertical-align-middle\x27><button\x20type=\x27button\x27\x20class=\x27btn\x20custom-btn\x20custom-btn-two\x27\x20\x20onclick=\x27getActionbtnValuesInbox(\x22','/_api/web/lists/getbytitle(\x27Announcements\x27)/GetItemById(\x27','getMinutes','\x27><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssDepartmentId\x27\x20value=\x27','Initiated','change','The\x20attempted\x20operation\x20is\x20prohibited\x20because\x20it\x20exceeds\x20the\x20list\x20view\x20threshold.','\x27&$expand=AttachmentFiles','error','Questions_Master','#columnsApprovalInbox','Polls','#selectedrowApprovalInbox','&sourcelocation=../Pages/MyDashboard.aspx?MODAL','ApprovedBy','MERGE','text','#btnContinueOutBox','TaskPhase','#ddlApprovalIn','.addClickEditCompanyEvent','asc','#labelEventTitle','GetApprovalInboxTasks','ItemId','EventDate','Approved','value','#categoryApprovalInbox\x20option:selected','hide','DepartmentalDMS','userEmail','required','show','CompanySiteUrl','__next','Activity','ApproverComments','userId','General','Emergency\x20Annoucements','application/json;odata=verbose','join','#currentpageApprovalInbox','PageLoad','#ShowTotalApprovalIn','toUpperCase','Department\x20Banners','modal','Nov','Tech\x20Admin','#ApprovalInCount','each','Oct','getHours','\x27)/items?$select=ID,Title,Location,EventDate,EndDate,Description,Category,Department,ChooseImage\x20,ImageURL,Author/ID,ApprovalStatus&$expand=Author&$filter=ID\x20eq\x20\x27','SuggestionTitle','</div>','#endrecordApprovalInbox','#txtRemarks','Idea\x20Bank','concat','<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20mb-10\x27>','fail','NoRecordFound','#ThresholdError','/Pages/AddSlider.aspx?WebAppId=','\x27\x20and\x20Created\x20ge\x20datetime\x27','#labelDepartment','ProjectModules','SuggestionCategory','New\x20Initiative','Project\x20Admin','evenselected','</tr>','DepartmentIdId','SetControls','2022444qgkbUK','getMonth','tableTempApprovalInbox','ActionSubmit','\x27)/GetItemById(\x27','disabled','append','#slctimage','InitializeControls','Alert','8LIbRRZ','?$select=ID,MassMailID,CompanyIDId/ID,SiteURL&$top=5000&$filter=ID\x20eq\x20\x27','/Pages/RecognitionEntry.aspx?WebAppId=','src','UpdateMainListItem','GET','ShowCommonStandardDateFormat','/_api/web/lists/GetByTitle(\x27','\x22)\x27>Action</a>','and\x20(AuthorId\x20eq\x20\x27','\x27\x20&$OrderBy=Modified\x20desc','slice','setHours','indexOf','ApprovalAction','click','tablenav','#show','removeClass','#WebpartApprovalInbox','Author','https','ApprovalTaskList','href','#labelNewEventCategory','/Pages/AddPolls.aspx?WebAppId=','Documents','Discussion','DepartmentName','</div><div\x20style=\x27display:none\x27\x20class=\x27cssdetails\x27\x20>','&WebAppId=','Cancelled','&Rec=','ApprovalIn','Suggestion','#tableTempApprovalInbox>tbody\x20tr','UpdateCompanyMainList','#suggestionDetails','AttachmentFiles','trim','toISOString','columnsApprovalInbox','AllApprovalInboxTasks','#NoRecordFoundApprovalInbox','/_api/Web/Lists/getByTitle(\x27DepartmentalDMS\x27)/Items(','#labelImageURL','#lblRemarks','/_api/web/lists/getbytitle(\x27','appendTo','#labelEndDateTime','Departmental\x20Documents','ListItem','evenrow','updateMainList','#ApprovalPendingTask','#SeeMoreFilterApprovalIn','nodeName','13669110gwqWON','split','</div><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssListItemId\x27\x20value=\x27','?$select=ID,Title,Status,WebpartName,ApprovedDate,Remarks,ItemId,DepartmentId/ID,Details,DepartmentId/DepartmentName,ApprovedBy/Title,Author/Title,*&$Expand=ApprovedBy,Author,DepartmentId&$Filter=ApproversId\x20eq\x20\x27','Jan','#labelStatus','<option\x20value=\x27','Category','<a\x20class=\x22btn\x20custom-btn\x20w-70\x22\x20href=','Information','</p></div></td>','&Mode=View&Type=Alert?MODAL','log','updateApprovalDetails','78380lPeTvF','BindEvents','webAbsoluteUrl','find','unbind','Rejected','parseHTML','Media\x20Gallery','\x27\x20and\x20Status\x20eq\x20\x20\x27','ChooseImage','\x27,\x20\x27','1302464WVqYhR','Departmental\x20Events','#txtApprovalAction\x20option:selected','Dec','July','/Pages/Activity.aspx?WebAppId=','Announcements','Filter','Location','#__REQUESTDIGEST','/_api/web/lists/getbytitle(\x27Announcements\x27)/items/','<td><p\x20class=\x27m-0\x20ellipsis-2\x27>','#labelStartDateTime','Jun','QuestionAnswer','#txtFilterApprovalStatusInbox','SiteURL','Mode','html','Discussions','1MitBbo','5050500WfKxtg','resolve','&PollId=','Event','#suggestionTitle','WebpartName','/_api/lists/getbytitle(\x27ApprovalTaskList\x27)/items?$select=*,Approvers/EMail&$top=5000&$expand=Approvers&$Filter=ApproversId/EMail\x20eq\x20\x27','#lblNewEventDescription','#ShowApprovalIn','<div\x20class=\x27upload-chip\x27>','&Mode=','Approved\x20Success!','Description','#totalpagesApprovalInbox','Department','sorterApprovalInbox','#EventCancel','setFullYear','Aug','ApprovalStatus','#startrecordApprovalInbox','HR\x20Admin','\x20target=\x22_blank\x22>Details</a>'];a15_0x1beb=function(){return _0x4488c7;};return a15_0x1beb();}var a15_0x1fe436=a15_0x5ba5;(function(_0x2b415d,_0xb4b21f){var _0x451218=a15_0x5ba5,_0x4dcb15=_0x2b415d();while(!![]){try{var _0x295b8d=parseInt(_0x451218(0x291))/0x1*(parseInt(_0x451218(0x27d))/0x2)+-parseInt(_0x451218(0x2fd))/0x3+parseInt(_0x451218(0x30f))/0x4*(parseInt(_0x451218(0x272))/0x5)+parseInt(_0x451218(0x292))/0x6+parseInt(_0x451218(0x2c2))/0x7+-parseInt(_0x451218(0x22b))/0x8*(parseInt(_0x451218(0x221))/0x9)+-parseInt(_0x451218(0x264))/0xa;if(_0x295b8d===_0xb4b21f)break;else _0x4dcb15['push'](_0x4dcb15['shift']());}catch(_0x481c24){_0x4dcb15['push'](_0x4dcb15['shift']());}}}(a15_0x1beb,0x76f7a));var sorterApprovalInbox,ApprovalInbox=function(){var _0x17e1ec=a15_0x5ba5;this[_0x17e1ec(0x28e)],this[_0x17e1ec(0x28d)],this[_0x17e1ec(0x2f0)],this[_0x17e1ec(0x33f)],this[_0x17e1ec(0x20c)]=$(_0x17e1ec(0x296)),this['SuggestionType']=$(_0x17e1ec(0x2e5)),this[_0x17e1ec(0x21a)]=$('#suggestionCategory'),this['SuggestionDetails']=$(_0x17e1ec(0x250)),this[_0x17e1ec(0x239)]=$(_0x17e1ec(0x2dc)),this[_0x17e1ec(0x2ea)]=$('#txtRemarks'),this[_0x17e1ec(0x224)]=$(_0x17e1ec(0x2fc)),this['ActionCancel']=$('#EventCancel'),this['ModalPopupApproval']=$('#modalApproval'),this[_0x17e1ec(0x255)]=$(_0x17e1ec(0x2db)),this[_0x17e1ec(0x214)]=$(_0x17e1ec(0x2d3)),this['columns']=$(_0x17e1ec(0x337)),this[_0x17e1ec(0x2ce)]=$(_0x17e1ec(0x1ff)),this[_0x17e1ec(0x2bd)]=$(_0x17e1ec(0x29f)),this['startrecord']=$(_0x17e1ec(0x2a6)),this[_0x17e1ec(0x2d5)]=$(_0x17e1ec(0x20e)),this['totalrecords']=$(_0x17e1ec(0x2ba)),this['selectedrow']=$(_0x17e1ec(0x339)),this['pagedropdown']=$('#pagedropdownApprovalInbox'),this[_0x17e1ec(0x23b)]=$(_0x17e1ec(0x317));},existStatus='',Process='';ApprovalInbox['prototype'][a15_0x1fe436(0x229)]=function InitializeControls(){var _0x17ea40=a15_0x1fe436,_0x427a07=this;_0x427a07[_0x17ea40(0x2f0)]=Logged_CompanyId,_0x427a07[_0x17ea40(0x28d)]=titanForWork['getQueryStringParameter'](_0x17ea40(0x1f6));},ApprovalInbox[a15_0x1fe436(0x2bc)]['SetControls']=function SetControls(){var _0x38c141=a15_0x1fe436,_0x54fa05=this;_0x54fa05['TaskPhase']=_0x38c141(0x331);},ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x273)]=function BindEvents(){var _0x34e7c3=this;};var itemsarray='',NextURLApprovalIn='';ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x344)]=function GetApprovalInboxTasks(_0x17a1c8){var _0x377c26=a15_0x1fe436;$('#SeeMoreFilterApprovalIn')['hide']();var _0x280575=new Date();_0x280575=_0x280575[_0x377c26(0x2a3)](_0x280575['getFullYear']()-0x1),_0x280575=new Date(_0x280575);var _0x82c196=this;if(_0x17a1c8==_0x377c26(0x200)){var _0x524780;$(_0x377c26(0x320))[_0x377c26(0x2df)]();var _0x3e200a='';if(_0x82c196[_0x377c26(0x33f)]=='All')var _0x11b783=_0x377c26(0x267)+_spPageContextInfo[_0x377c26(0x1fa)]+_0x377c26(0x217)+_0x280575[_0x377c26(0x253)]()+_0x377c26(0x2b6);else var _0x11b783=_0x377c26(0x267)+_spPageContextInfo['userId']+_0x377c26(0x27a)+_0x82c196[_0x377c26(0x33f)]+_0x377c26(0x217)+_0x280575[_0x377c26(0x253)]()+_0x377c26(0x235);}else{if(NextURLApprovalIn!=null)var _0x11b783='?'+NextURLApprovalIn[_0x377c26(0x265)]('?')[0x1];else{$(_0x377c26(0x2c4))[_0x377c26(0x1f1)]();return;}}$[_0x377c26(0x31a)](getItemsWithQueryItem(_0x377c26(0x241),_0x11b783,_0x377c26(0x24c)))[_0x377c26(0x2cf)](function(_0x3fe548){var _0x4f0933=_0x377c26,_0x5cc78d='';_0x5cc78d+=_0x4f0933(0x29b)+_0x82c196[_0x4f0933(0x33f)]+_0x4f0933(0x20d),$(_0x4f0933(0x2b7))[_0x4f0933(0x2df)](),$(_0x4f0933(0x2b7))[_0x4f0933(0x227)](_0x5cc78d);NextURLApprovalIn==null&&$('#SeeMoreApprovalIn')[_0x4f0933(0x1f1)]();var _0x53afbc=_0x3fe548['results'];itemsarray=_0x53afbc;var _0xed2431='';for(var _0x56f7c1=0x0;_0x56f7c1<_0x53afbc[_0x4f0933(0x2f2)];_0x56f7c1++){var _0x2fd0ec=_0x53afbc[_0x56f7c1]['ID'],_0x317afe=_0x53afbc[_0x56f7c1][_0x4f0933(0x2d7)],_0x3a1686=_0x53afbc[_0x56f7c1][_0x4f0933(0x23f)][_0x4f0933(0x2d7)],_0x36c439=_0x53afbc[_0x56f7c1]['Status'],_0x2aeb8c=_0x53afbc[_0x56f7c1][_0x4f0933(0x297)],_0x506cd2=_0x53afbc[_0x56f7c1][_0x4f0933(0x26b)],_0x36c983=_0x53afbc[_0x56f7c1][_0x4f0933(0x30a)]['DepartmentName']==undefined?'':_0x53afbc[_0x56f7c1]['DepartmentId']['DepartmentName'],_0x289048=_0x53afbc[_0x56f7c1][_0x4f0933(0x328)],_0x5f05ac=_0x53afbc[_0x56f7c1][_0x4f0933(0x33b)]['Title'],_0x1d1b01=_0x53afbc[_0x56f7c1][_0x4f0933(0x2ea)],_0x32a4ac=_0x53afbc[_0x56f7c1]['WebpartName'];_0x32a4ac=='Banners'&&(_0x32a4ac=_0x4f0933(0x26d));var _0x1f373c=_0x53afbc[_0x56f7c1][_0x4f0933(0x310)],_0x32f218=_0x53afbc[_0x56f7c1]['ItemId'],_0x1c564c=_0x53afbc[_0x56f7c1][_0x4f0933(0x30a)]['ID'];_0x1d1b01==null&&(_0x1d1b01='');_0x289048==null?_0x289048='':(_0x289048=new Date(_0x289048),_0x289048=titanForWork[_0x4f0933(0x231)](_0x289048));_0x5f05ac==null&&(_0x5f05ac='');_0x506cd2==null&&(_0x506cd2=_0x32a4ac);var _0x5acb0d=[];_0x5acb0d['push'](_0x2fd0ec,_0x317afe,_0x1d1b01,_0x32f218,_0x36c439,_0x1c564c,_0x2aeb8c);var _0x7ee09c='';_0x7ee09c=_0x4f0933(0x2af)+_0x2fd0ec+_0x4f0933(0x302)+_0x317afe+_0x4f0933(0x319)+_0x1d1b01+_0x4f0933(0x248)+_0x1f373c+'</div><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssListItemId\x27\x20value=\x27'+_0x32f218+_0x4f0933(0x325)+_0x36c439+_0x4f0933(0x330)+_0x1c564c+'\x27><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssProcessType\x27\x20value=\x27'+_0x2aeb8c+'\x27><a\x20class=\x27projectGridInboxTaskEvent1444\x27\x20style=\x27cursor:pointer\x27\x20onclick=\x27getActionbtnValuesInbox(\x22'+_0x2fd0ec+_0x4f0933(0x233),_0xed2431+='<tr>'+_0x4f0933(0x288)+truncate(_0x317afe,0x37)+_0x4f0933(0x2c5)+_0x4f0933(0x303)+_0x3a1686+_0x4f0933(0x26e)+'<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x36c439+_0x4f0933(0x2c5)+_0x4f0933(0x2aa)+_0x32a4ac+_0x4f0933(0x2c5)+_0x4f0933(0x2aa)+_0x506cd2+_0x4f0933(0x2c5)+_0x4f0933(0x212)+_0x289048+'</p></td>'+_0x4f0933(0x2aa)+_0x5f05ac+_0x4f0933(0x2c5)+_0x4f0933(0x32d)+_0x2fd0ec+_0x4f0933(0x2ef)+_0x4f0933(0x21e);}_0x53afbc[_0x4f0933(0x2f2)]==0x0?$('#NoRecordFoundApprovalInbox')['show']():$('#NoRecordFoundApprovalInbox')[_0x4f0933(0x1f1)](),$(_0x4f0933(0x320))[_0x4f0933(0x227)](_0xed2431),$(_0x4f0933(0x24e))['length']>0x64&&NextURLApprovalIn!=null?($('#ShowTotalApprovalIn')[_0x4f0933(0x1f1)](),$(_0x4f0933(0x29a))[_0x4f0933(0x1f5)](),$(_0x4f0933(0x207))[_0x4f0933(0x33d)]($('#tableTempApprovalInbox>tbody\x20tr')[_0x4f0933(0x2f2)])):($('#ShowTotalApprovalIn')[_0x4f0933(0x1f5)](),$(_0x4f0933(0x29a))[_0x4f0933(0x1f1)](),$(_0x4f0933(0x2e4))[_0x4f0933(0x33d)](_0x53afbc[_0x4f0933(0x2f2)])),$('#tableTempApprovalInbox>tbody\x20tr')[_0x4f0933(0x2f2)]==0x1388&&(NextURLApprovalIn=null,$(_0x4f0933(0x2c4))['hide']()),_0x53afbc['length']>0x0&&GenerateTableApprovalInbox();})[_0x377c26(0x213)](function(_0x1cd42f){var _0x1e08f1=_0x377c26;_0x1cd42f[_0x1e08f1(0x309)][_0x1e08f1(0x335)][_0x1e08f1(0x2c0)][_0x1e08f1(0x1ef)]['indexOf'](_0x1e08f1(0x333))!=-0x1?($(_0x1e08f1(0x215))[_0x1e08f1(0x204)](_0x1e08f1(0x1f5)),$(_0x1e08f1(0x2b4))[_0x1e08f1(0x1f1)](),$(_0x1e08f1(0x33e))[_0x1e08f1(0x1f1)]()):HandleError(_0x1cd42f);});};function getActionbtnValuesInbox(_0x2603cd){var _0x98093e=a15_0x1fe436;existStatus='',Process='';var _0xcf82a5=_spPageContextInfo[_0x98093e(0x274)]+_0x98093e(0x2f5)+_0x2603cd+'\x27)';$['ajax']({'url':_0xcf82a5,'headers':{'Accept':_0x98093e(0x1fd)},'async':![],'success':function(_0x4d6b80){var _0x4d6e29=_0x98093e,_0x19fcf2=_0x4d6b80['d']['results'];if(_0x19fcf2[_0x4d6e29(0x2f2)]>0x0){var _0x5d6775=_0x19fcf2[0x0]['ID'],_0x485f49=_0x19fcf2[0x0]['Title'],_0x13c824=_0x19fcf2[0x0]['ItemId'],_0x4bda73=_0x19fcf2[0x0][_0x4d6e29(0x2ea)],_0x548c54=_0x19fcf2[0x0][_0x4d6e29(0x21f)],_0x1b5bd7=_0x19fcf2[0x0]['WebpartName'],_0x792874=_0x19fcf2[0x0][_0x4d6e29(0x26b)],_0x3ce2fe=_0x19fcf2[0x0][_0x4d6e29(0x310)],_0x2f656e=_0x19fcf2[0x0][_0x4d6e29(0x307)];existStatus=_0x2f656e,Process=_0x1b5bd7,$('#txtApprovalAction')[_0x4d6e29(0x2ca)](_0x2f656e),objApprovalInbox[_0x4d6e29(0x2de)](_0x5d6775,_0x485f49,_0x792874,_0x13c824,_0x548c54,_0x1b5bd7,_0x4bda73,_0x2f656e,_0x3ce2fe,_0x19fcf2[0x0][_0x4d6e29(0x2f0)]);}},'error':function(_0x48d821){var _0x12fded=_0x98093e;console[_0x12fded(0x270)](_0x48d821);}});}var globalEventId='',webUrlDeptSite='';function a15_0x5ba5(_0x15bfb6,_0x56eb78){var _0x1bebd8=a15_0x1beb();return a15_0x5ba5=function(_0x5ba517,_0x587066){_0x5ba517=_0x5ba517-0x1ef;var _0x10ac04=_0x1bebd8[_0x5ba517];return _0x10ac04;},a15_0x5ba5(_0x15bfb6,_0x56eb78);}ApprovalInbox[a15_0x1fe436(0x2bc)]['ApprovedTask']=function ApprovedTask(_0x35d746,_0x56a071,_0x26017a,_0x2c3088,_0x33ae81,_0x4c6fa1,_0x53465c,_0x1d5c3d,_0x3f0660,_0x552b06){var _0x593d69=a15_0x1fe436,_0xdc58b4=this;_0xdc58b4['ModalPopupApproval'][_0x593d69(0x204)](_0x593d69(0x1f5)),_0xdc58b4[_0x593d69(0x321)][_0x593d69(0x28f)](''),globalEventId=_0x2c3088;if(_0x4c6fa1=='Events')_0x1d5c3d=='Approved'?($(_0x593d69(0x23c))[_0x593d69(0x1f5)](),$(_0x593d69(0x250))[_0x593d69(0x1f1)](),$(_0x593d69(0x2a2))['show']()):($(_0x593d69(0x23c))[_0x593d69(0x1f5)](),$(_0x593d69(0x250))[_0x593d69(0x1f1)](),$('#EventCancel')['hide']());else{$(_0x593d69(0x250))[_0x593d69(0x1f5)](),$(_0x593d69(0x23c))['hide'](),$(_0x593d69(0x2a2))['hide']();if(_0x4c6fa1==_0x593d69(0x25d)){var _0xc82852=$[_0x593d69(0x278)](_0x3f0660),_0x40a699=[];$[_0x593d69(0x208)](_0xc82852,function(_0x3aa12b,_0x325b23){var _0x5d1e81=_0x593d69;_0x325b23[_0x5d1e81(0x263)]=='A'&&(link=_0x325b23[_0x5d1e81(0x308)][_0x5d1e81(0x242)][_0x5d1e81(0x1ef)]);}),webUrlDeptSite=getDeptSiteURL(_0x552b06,_0x33ae81),_0xdc58b4[_0x593d69(0x321)][_0x593d69(0x227)](_0x593d69(0x26c)+link+_0x593d69(0x2a8));}else _0xdc58b4[_0x593d69(0x321)][_0x593d69(0x227)]('<a\x20class=\x22btn\x20custom-btn\x20w-70\x22\x20target=\x22\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#modalDetails\x22\x20id=\x22btnDetails\x22\x20onclick=\x22ViewApprovalDetails(\x27'+_0x2c3088+_0x593d69(0x27c)+_0x4c6fa1+_0x593d69(0x31c));}_0xdc58b4[_0x593d69(0x20c)][_0x593d69(0x33d)](_0x56a071),_0x4c6fa1==_0x593d69(0x2d4)&&(_0x4c6fa1=_0x593d69(0x26d)),_0xdc58b4[_0x593d69(0x2be)]['text'](_0x4c6fa1),_0xdc58b4[_0x593d69(0x21a)][_0x593d69(0x33d)](_0x26017a),_0xdc58b4[_0x593d69(0x2ea)][_0x593d69(0x33d)](_0x53465c),_0x1d5c3d!=existStatus?(_0xdc58b4[_0x593d69(0x2ea)][_0x593d69(0x2ca)](_0x53465c),$('#btnAction')['show'](),$(_0x593d69(0x2dc))[_0x593d69(0x2ed)](_0x593d69(0x226),![]),$(_0x593d69(0x20f))[_0x593d69(0x2ed)](_0x593d69(0x226),![])):(_0xdc58b4['Remarks'][_0x593d69(0x2ca)](''),$(_0x593d69(0x2fc))[_0x593d69(0x1f1)](),$(_0x593d69(0x2dc))[_0x593d69(0x2ed)](_0x593d69(0x226),![]),$(_0x593d69(0x20f))[_0x593d69(0x2ed)](_0x593d69(0x226),![]),$(_0x593d69(0x313))[_0x593d69(0x1f1)]()),_0xdc58b4[_0x593d69(0x2fe)]['unbind']()['click'](function(){var _0xeea3a7=_0x593d69,_0x3f3da1=_0xeea3a7(0x24a);objApprovalInbox[_0xeea3a7(0x271)]('ApprovalTaskList',_0x3f3da1,_0x53465c,_0x35d746,_0x2c3088,_0x33ae81,_0x4c6fa1),_0xdc58b4[_0xeea3a7(0x2d9)]['modal'](_0xeea3a7(0x1f1)),objApprovalInbox[_0xeea3a7(0x344)](_0xeea3a7(0x200));}),_0xdc58b4['ActionSubmit'][_0x593d69(0x276)]()['click'](function(){var _0x4270a9=_0x593d69,_0x2e01e6=$(_0x4270a9(0x27f))[_0x4270a9(0x33d)](),_0x9b6eca=_0xdc58b4['Remarks']['val']();if(_0x2e01e6!=''&&_0x9b6eca[_0x4270a9(0x252)]()!=''){if(_0x2e01e6==_0x4270a9(0x277)||_0x2e01e6==_0x4270a9(0x347)){if(_0x9b6eca[_0x4270a9(0x252)]()=='')return alert('Kindly\x20enter\x20remarks.'),![];else{objApprovalInbox[_0x4270a9(0x271)](_0x4270a9(0x241),_0x2e01e6,_0x9b6eca,_0x35d746,_0x2c3088,_0x33ae81,_0x4c6fa1),_0xdc58b4[_0x4270a9(0x2d9)]['modal'](_0x4270a9(0x1f1)),objApprovalInbox[_0x4270a9(0x344)]('PageLoad');if(webUrlDeptSite!=''&&$(_0x4270a9(0x2e5))['text']()==_0x4270a9(0x25d))UpdateFileStatus(_0x2c3088);else($('#suggestionType')['text']()==_0x4270a9(0x283)||$(_0x4270a9(0x2e5))['text']()==_0x4270a9(0x1fb)||$(_0x4270a9(0x2e5))[_0x4270a9(0x33d)]()==_0x4270a9(0x31f)||$(_0x4270a9(0x2e5))[_0x4270a9(0x33d)]()=='Information')&&updateAnnouncementsStatus(_0x2c3088,$(_0x4270a9(0x2e5))[_0x4270a9(0x33d)]());}}else objApprovalInbox[_0x4270a9(0x271)]('ApprovalTaskList',_0x2e01e6,_0x9b6eca,_0x35d746,_0x2c3088,_0x33ae81,_0x4c6fa1),_0xdc58b4[_0x4270a9(0x2d9)][_0x4270a9(0x204)]('hide'),objApprovalInbox['GetApprovalInboxTasks'](_0x4270a9(0x200));}else alert(_0x4270a9(0x2ac));});};function UpdateFileStatus(_0x363998){var _0x3ed8e0=a15_0x1fe436,_0x167d19,_0x57b842=GetItemTypeForListNameLibrary(_0x3ed8e0(0x1f2));_0x167d19={'__metadata':{'type':_0x57b842},'ApprovalStatus':$('#txtApprovalAction')[_0x3ed8e0(0x2ca)]()};var _0x560d63=$[_0x3ed8e0(0x2f8)](),_0xf9b161=webUrlDeptSite+_0x3ed8e0(0x257)+_0x363998+')';return $[_0x3ed8e0(0x2d0)]({'url':_0xf9b161,'type':'POST','async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x3ed8e0(0x286))[_0x3ed8e0(0x2ca)](),'content-Type':_0x3ed8e0(0x1fd),'X-Http-Method':_0x3ed8e0(0x30e),'If-Match':'*'},'data':JSON['stringify'](_0x167d19),'success':function(_0x513559){var _0x11612d=_0x3ed8e0;webUrlDeptSite='',_0x560d63[_0x11612d(0x293)](!![]);},'error':function(_0x162fcc){alert(JSON['stringify'](_0x162fcc)),_0x560d63['reject'](_0x162fcc);}}),_0x560d63[_0x3ed8e0(0x2e8)]();}var response=response||[];function getItems(_0x635d42,_0x221969){var _0x4bf3ed=a15_0x1fe436;return $[_0x4bf3ed(0x2d0)]({'url':_0x635d42,'type':_0x4bf3ed(0x230),'async':![],'headers':{'accept':_0x4bf3ed(0x1fd)},'success':function(_0x5c92e2){var _0xc721c7=_0x4bf3ed;response=response[_0xc721c7(0x211)](_0x5c92e2['d']['results']),_0x5c92e2['d'][_0xc721c7(0x1f7)]?(_0x635d42=_0x5c92e2['d'][_0xc721c7(0x1f7)],getItems(_0x635d42,_0x221969)):_0x221969[_0xc721c7(0x293)](response);},'error':function(_0x2423b5){var _0x5cf1d3=_0x4bf3ed;_0x221969['reject'](_0x2423b5),console[_0x5cf1d3(0x270)](_0x2423b5);}}),_0x221969[_0x4bf3ed(0x2e8)]();}function updateAnnouncementsStatus(_0x493299,_0x2db370){var _0x6307be=a15_0x1fe436,_0x8bdb82=![],_0x53caf0=$[_0x6307be(0x2f8)](),_0x3ca641=new Date(),_0x3ca641=_0x3ca641[_0x6307be(0x237)](0x0,0x0,0x0,0x0);_0x3ca641=new Date(_0x3ca641);var _0x41cd3b=_0x6307be(0x2f4)+_0x493299+'\x20and\x20Publish_Date\x20lt\x20\x27'+_0x3ca641[_0x6307be(0x253)]()+'\x27\x20';url=_spPageContextInfo[_0x6307be(0x274)]+_0x6307be(0x287)+_0x41cd3b,$['when'](getItems(url,_0x53caf0))['done'](function(_0x46fbdc){var _0x49107f=_0x6307be;response=[],_0x46fbdc[_0x49107f(0x2f2)]>0x0&&(_0x8bdb82=!![]);});var _0x32f187,_0x587ec7=GetItemTypeForList(_0x6307be(0x283));_0x32f187={'__metadata':{'type':_0x587ec7},'ApprovedById':_spPageContextInfo[_0x6307be(0x1fa)],'ApprovedDate':new Date(),'Publish_Date':new Date()};_0x8bdb82==![]&&delete _0x32f187[_0x6307be(0x2b0)];var _0x3670e5=$['Deferred'](),_0x408663=_spPageContextInfo['webAbsoluteUrl']+_0x6307be(0x32e)+_0x493299+'\x27)';return $['ajax']({'url':_0x408663,'type':_0x6307be(0x30c),'async':![],'headers':{'accept':_0x6307be(0x1fd),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x6307be(0x2ca)](),'content-Type':'application/json;odata=verbose','X-Http-Method':_0x6307be(0x30e),'If-Match':'*'},'data':JSON[_0x6307be(0x2b2)](_0x32f187),'success':function(_0x8a0746){_0x3670e5['resolve'](_0x8a0746);},'error':function(_0x331228){var _0xc32f6=_0x6307be;alert(JSON[_0xc32f6(0x2b2)](_0x331228)),_0x3670e5[_0xc32f6(0x2f3)](_0x331228);}}),_0x3670e5[_0x6307be(0x2e8)]();}function GetItemTypeForListNameLibrary(_0x345729){var _0x24f31d=a15_0x1fe436;return _0x24f31d(0x2b1)+_0x345729['charAt'](0x0)['toUpperCase']()+_0x345729[_0x24f31d(0x265)]('\x20')['join']('')[_0x24f31d(0x236)](0x1)+_0x24f31d(0x2f7);}ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x271)]=function updateApprovalDetails(_0x386fc9,_0x3355f9,_0x359e5d,_0x2a031d,_0xa9dc9c,_0x39bfbb,_0x557acd){var _0x172851=a15_0x1fe436;try{var _0x5da0f0=_spPageContextInfo[_0x172851(0x1fa)],_0x4f9f1a=new Date(),_0x609918,_0x3e74be=GetItemTypeForList(_0x386fc9);_0x609918={'__metadata':{'type':_0x3e74be},'Remarks':_0x359e5d,'Status':_0x3355f9,'ApprovedById':_0x5da0f0,'ApprovedDate':_0x4f9f1a},objApprovalInbox[_0x172851(0x2b8)](_0x386fc9,_0x609918,_0x2a031d,_0xa9dc9c,_0x39bfbb,_0x3355f9,_0x557acd);}catch(_0x1fd8b2){console['log'](_0x1fd8b2[_0x172851(0x2c0)]);}};function getDeptSiteURL(_0x1529ad,_0x55f9eb){var _0x1fe280=a15_0x1fe436,_0x27a600='',_0x226615=_0x1fe280(0x22c)+_0x55f9eb+'\x27\x20and\x20CompanyIDId\x20eq\x20\x27'+_0x1529ad+'\x27';return $[_0x1fe280(0x31a)](getItemsWithQueryItem('Departments',_0x226615,''))['done'](function(_0x39c781){var _0x449d9a=_0x1fe280;_0x27a600=_0x39c781['results'][0x0][_0x449d9a(0x28d)];}),_0x27a600;}ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x2b8)]=function UpdateApprovalToList(_0x9ecbeb,_0x2634c4,_0x114770,_0x567b24,_0x27996d,_0x287ef1,_0x14dc12){var _0x1126e8=a15_0x1fe436,_0x219a58=$['Deferred'](),_0x26b2a8=_spPageContextInfo[_0x1126e8(0x274)]+_0x1126e8(0x25a)+_0x9ecbeb+_0x1126e8(0x225)+_0x114770+'\x27)';return $[_0x1126e8(0x2d0)]({'url':_0x26b2a8,'type':_0x1126e8(0x30c),'async':![],'headers':{'accept':_0x1126e8(0x1fd),'X-RequestDigest':$('#__REQUESTDIGEST')['val'](),'content-Type':'application/json;odata=verbose','X-Http-Method':_0x1126e8(0x30e),'If-Match':'*'},'data':JSON[_0x1126e8(0x2b2)](_0x2634c4),'success':function(_0x3e1cc5){var _0x13f4c2=_0x1126e8;_0x219a58[_0x13f4c2(0x293)](_0x3e1cc5);if(_0x14dc12=='Announcements'||_0x14dc12==_0x13f4c2(0x2d4)||_0x14dc12==_0x13f4c2(0x26d)||_0x14dc12==_0x13f4c2(0x1fb)||_0x14dc12==_0x13f4c2(0x31f)||_0x14dc12==_0x13f4c2(0x2b3)||_0x14dc12==_0x13f4c2(0x210)||_0x14dc12=='Polls')objApprovalInbox[_0x13f4c2(0x24f)](_0x567b24,_0x27996d,_0x287ef1,_0x14dc12);else{if(_0x14dc12==_0x13f4c2(0x21b)||_0x14dc12==_0x13f4c2(0x1f8)||_0x14dc12=='Suggestion'||_0x14dc12==_0x13f4c2(0x31b)){var _0x3c65f5=titanForWork[_0x13f4c2(0x2cd)](_0x13f4c2(0x1f6)),_0x253f91=_0x13f4c2(0x1f8),_0x41891c={'__metadata':{'type':'SP.Data.'+_0x253f91+_0x13f4c2(0x25e)},'ApprovalStatus':_0x287ef1,'ApprovarName':_spPageContextInfo['userDisplayName']};UniversalUpdate(_0x3c65f5,_0x253f91,_0x41891c,_0x567b24);}else{if(_0x14dc12==_0x13f4c2(0x28b)){var _0x3c65f5=_spPageContextInfo[_0x13f4c2(0x274)],_0x253f91=_0x13f4c2(0x336),_0x41891c={'__metadata':{'type':_0x13f4c2(0x31d)},'ApprovalStatus':_0x287ef1,'ApprovedById':_spPageContextInfo[_0x13f4c2(0x1fa)]};UniversalUpdate(_0x3c65f5,_0x253f91,_0x41891c,_0x567b24);}else objApprovalInbox[_0x13f4c2(0x2eb)](_0x567b24,_0x27996d,_0x287ef1,_0x14dc12);}}},'error':function(_0x2b6f82){var _0x163854=_0x1126e8;console[_0x163854(0x270)](JSON['stringify'](_0x2b6f82)),_0x219a58[_0x163854(0x2f3)](_0x2b6f82);}}),_0x219a58['promise']();},ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x24f)]=function UpdateCompanyMainList(_0x561e6f,_0x5c0a7d,_0x4859c0,_0x331ef9){var _0x26a262=a15_0x1fe436;objApprovalInbox[_0x26a262(0x260)](_0x561e6f,_0x4859c0,_0x331ef9);},ApprovalInbox[a15_0x1fe436(0x2bc)]['UpdateDepartmentalMainList']=function UpdateDepartmentalMainList(_0x1b3e26,_0x2fed9b,_0x15d747,_0x477313){var _0x1b1c03=a15_0x1fe436,_0x24c149=_0x1b1c03(0x2cb),_0x15a97f=_spPageContextInfo[_0x1b1c03(0x274)]+_0x1b1c03(0x25a)+_0x24c149+_0x1b1c03(0x32c)+_0x2fed9b+'\x27';$[_0x1b1c03(0x2d0)]({'url':_0x15a97f,'headers':{'Accept':'application/json;odata=verbose'},'async':![],'success':function(_0x4e838e){var _0x301aad=_0x1b1c03,_0x3895f4=_0x4e838e['d'][_0x301aad(0x323)];if(_0x3895f4[_0x301aad(0x2f2)]>0x0){var _0x466174=_0x3895f4[0x0][_0x301aad(0x28d)];objApprovalInbox[_0x301aad(0x260)](_0x1b3e26,_0x466174,_0x15d747,_0x477313);}},'error':function(_0x5d0b14){console['log'](_0x5d0b14);}});},ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x260)]=function updateMainList(_0x103ee2,_0x41dfd8,_0x2f16c6){var _0x2be280=a15_0x1fe436,_0x57e60f=this;try{var _0x8c7df2=_spPageContextInfo[_0x2be280(0x1fa)],_0x3cf7a1=new Date(),_0x2de965='',_0x134e66='',_0x2587de;_0x41dfd8==_0x2be280(0x347)?_0x2de965=!![]:_0x2de965=![];if(_0x2f16c6=='Discussion')_0x134e66=_0x2be280(0x290);else{if(_0x2f16c6=='Suggestion')_0x134e66=_0x2be280(0x1f8),siteURL=titanForWork[_0x2be280(0x2cd)]('CompanySiteUrl');else{if(_0x2f16c6=='Activity')_0x134e66=_0x2be280(0x1f8),siteURL=titanForWork[_0x2be280(0x2cd)]('CompanySiteUrl');else{if(_0x2f16c6==_0x2be280(0x21b))_0x134e66=_0x2be280(0x1f8),siteURL=titanForWork['getQueryStringParameter'](_0x2be280(0x1f6));else{if(_0x2f16c6=='Banners'||_0x2f16c6==_0x2be280(0x26d))_0x134e66=_0x2be280(0x283),siteURL=titanForWork[_0x2be280(0x2cd)](_0x2be280(0x1f6));else{if(_0x2f16c6==_0x2be280(0x283))_0x134e66=_0x2be280(0x283),siteURL=titanForWork['getQueryStringParameter'](_0x2be280(0x1f6));else{if(_0x2f16c6==_0x2be280(0x1fb))_0x134e66=_0x2be280(0x283),siteURL=titanForWork[_0x2be280(0x2cd)](_0x2be280(0x1f6));else{if(_0x2f16c6=='Recognition')_0x134e66=_0x2be280(0x283),siteURL=titanForWork[_0x2be280(0x2cd)](_0x2be280(0x1f6));else{if(_0x2f16c6=='Polls')_0x134e66=_0x2be280(0x315),siteURL=_spPageContextInfo[_0x2be280(0x274)];else{if(_0x2f16c6==_0x2be280(0x210))_0x134e66=_0x2be280(0x322),siteURL=titanForWork[_0x2be280(0x2cd)]('CompanySiteUrl');else{if(_0x2f16c6=='Events')_0x134e66='Event',siteURL=titanForWork['getQueryStringParameter']('CompanySiteUrl');else _0x2f16c6==_0x2be280(0x27e)&&(_0x134e66=_0x2be280(0x2b3));}}}}}}}}}}_0x2587de=GetItemTypeForList(_0x134e66);_0x2f16c6==_0x2be280(0x25d)&&(_0x134e66=_0x2be280(0x1f2),_0x2587de='SP.Data.'+_0x134e66[_0x2be280(0x2da)](0x0)[_0x2be280(0x202)]()+_0x134e66[_0x2be280(0x265)]('\x20')[_0x2be280(0x1fe)]('')[_0x2be280(0x236)](0x1)+_0x2be280(0x2f7));var _0x5ce620;_0x5ce620={'__metadata':{'type':_0x2587de},'Active':_0x2de965,'ApprovalStatus':_0x41dfd8,'ApprovedById':_0x8c7df2,'ApprovedDate':_0x3cf7a1},_0x2f16c6==_0x2be280(0x338)&&(_0x41dfd8==_0x2be280(0x347)&&(_0x41dfd8='Active'),_0x5ce620='',_0x5ce620={'__metadata':{'type':_0x2587de},'Status':_0x41dfd8}),_0x2f16c6==_0x2be280(0x246)||_0x2f16c6==_0x2be280(0x24d)?delete _0x5ce620['ApprovalStatus']:delete _0x5ce620[_0x2be280(0x2a9)],_0x2f16c6==_0x2be280(0x210)&&(_0x5ce620[_0x2be280(0x1f9)]=_0x57e60f[_0x2be280(0x2ea)][_0x2be280(0x2ca)]()),objApprovalInbox[_0x2be280(0x22f)](_0x134e66,_0x5ce620,_0x103ee2,siteURL);}catch(_0x1b71ff){console['log'](_0x1b71ff[_0x2be280(0x2c0)]);}},ApprovalInbox[a15_0x1fe436(0x2bc)][a15_0x1fe436(0x22f)]=function UpdateMainListItem(_0x4e57cd,_0x51ac65,_0x466586,_0x26c5a4){var _0x55674a=a15_0x1fe436,_0x55ad68=this;if(_0x4e57cd==_0x55674a(0x283))var _0x28455c=_spPageContextInfo[_0x55674a(0x274)]+'/_api/web/lists/getbytitle(\x27'+_0x4e57cd+_0x55674a(0x225)+_0x466586+'\x27)';else var _0x28455c=_0x26c5a4+_0x55674a(0x25a)+_0x4e57cd+_0x55674a(0x225)+_0x466586+'\x27)';_0x4e57cd=='BannerImages'&&alert(_0x55674a(0x300));var _0x128201=$[_0x55674a(0x2f8)]();return $[_0x55674a(0x2d0)]({'url':_0x28455c,'type':_0x55674a(0x30c),'async':![],'headers':{'accept':_0x55674a(0x1fd),'X-RequestDigest':$(_0x55674a(0x286))[_0x55674a(0x2ca)](),'content-Type':_0x55674a(0x1fd),'X-Http-Method':_0x55674a(0x30e),'If-Match':'*'},'data':JSON['stringify'](_0x51ac65),'success':function(_0x3fc199){var _0x212c2c=_0x55674a;_0x128201[_0x212c2c(0x293)](_0x3fc199),alert(_0x212c2c(0x2d8)),_0x55ad68[_0x212c2c(0x2d9)][_0x212c2c(0x204)](_0x212c2c(0x1f1)),objApprovalInbox['GetApprovalInboxTasks']('PageLoad');},'error':function(_0x3abcde){var _0x1b8154=_0x55674a;console['log'](JSON[_0x1b8154(0x2b2)](_0x3abcde)),_0x128201[_0x1b8154(0x2f3)](_0x3abcde);}}),_0x128201[_0x55674a(0x2e8)]();},ApprovalInbox['prototype']['GetItemTypeForListName']=function GetItemTypeForListName(_0x3836af){var _0x394010=a15_0x1fe436;return _0x394010(0x2b1)+_0x3836af[_0x394010(0x2da)](0x0)['toUpperCase']()+_0x3836af[_0x394010(0x265)]('\x20')[_0x394010(0x1fe)]('')[_0x394010(0x236)](0x1)+_0x394010(0x25e);},$(document)[a15_0x1fe436(0x2ab)](function(){var _0x5d3c86=a15_0x1fe436;GetApprovalInboxCount(),objApprovalInbox=new ApprovalInbox(),objApprovalInbox[_0x5d3c86(0x229)](),objApprovalInbox[_0x5d3c86(0x220)](),objApprovalInbox[_0x5d3c86(0x344)](_0x5d3c86(0x200)),$(_0x5d3c86(0x2dc))[_0x5d3c86(0x332)](function(){var _0xa71672=_0x5d3c86,_0x61e920=$(_0xa71672(0x27f))[_0xa71672(0x33d)]();_0x61e920==existStatus?($(_0xa71672(0x259))[_0xa71672(0x23d)](_0xa71672(0x1f4)),$(_0xa71672(0x313))['hide'](),$(_0xa71672(0x2fc))['addClass']('hide')):($(_0xa71672(0x313))[_0xa71672(0x1f5)](),$(_0xa71672(0x2fc))[_0xa71672(0x23d)](_0xa71672(0x1f1)),$(_0xa71672(0x2a2))[_0xa71672(0x1f1)]());}),$(_0x5d3c86(0x2c4))['click'](function(){var _0x3a83a9=_0x5d3c86,_0x532d19=$('#ddlApprovalIn')[_0x3a83a9(0x2ca)]();objApprovalInbox[_0x3a83a9(0x344)](''),$(_0x3a83a9(0x340))[_0x3a83a9(0x2ca)](_0x532d19),$(_0x3a83a9(0x340))[_0x3a83a9(0x2ec)]('change');}),$('#ApprovalPendingTask')[_0x5d3c86(0x23a)](function(){var _0x27973e=_0x5d3c86;objApprovalInbox[_0x27973e(0x344)](_0x27973e(0x200));}),$(_0x5d3c86(0x262))[_0x5d3c86(0x23a)](function(){var _0x191e81=_0x5d3c86,_0x585c88=$(_0x191e81(0x340))[_0x191e81(0x2ca)]();if(NextURLApprovalIn!=null)var _0x33c604='?'+NextURLApprovalIn[_0x191e81(0x265)]('?')[0x1];FilterApprovalData(_0x33c604,''),$(_0x191e81(0x340))['val'](_0x585c88),$(_0x191e81(0x340))[_0x191e81(0x2ec)]('change');});});function ViewApprovalDetails(_0x12c781,_0x27d0aa){var _0x503642=a15_0x1fe436,_0x10c833=PageNameByProcessType(_0x12c781,_0x27d0aa);$(_0x503642(0x2e0))[_0x503642(0x2ed)](_0x503642(0x22e),_0x10c833),setInterval(function(){var _0x24b1c7=_0x503642;$('#siteViewmodal')['contents']()[_0x24b1c7(0x275)]('html')[_0x24b1c7(0x2f1)]({'overflow-y':'unset'}),$(_0x24b1c7(0x2e0))['contents']()[_0x24b1c7(0x275)](_0x24b1c7(0x2fb))[_0x24b1c7(0x2f1)]({'overflow-y':'scroll'});},0x3e8);}function truncate(_0x1c8b27,_0x40c7a0){var _0x44ada7=a15_0x1fe436;if(_0x1c8b27!=null)return _0x1c8b27[_0x44ada7(0x2f2)]>_0x40c7a0?_0x1c8b27['slice'](0x0,_0x40c7a0-0x1)+'…':_0x1c8b27;}function UpdateApprovalStatus(_0x10038d,_0x34090c,_0x20686f){var _0x5807ad=a15_0x1fe436,_0x2ee790=_0x5807ad(0x306),_0xcd9e0d=titanForWork[_0x5807ad(0x2cd)]('CompanySiteUrl')+'/_api/Web/Lists/getByTitle(\x27'+_0x2ee790+_0x5807ad(0x2c6)+_0x10038d+')';$[_0x5807ad(0x2d0)]({'url':_0xcd9e0d,'type':_0x5807ad(0x30c),'async':![],'data':JSON[_0x5807ad(0x2b2)]({'__metadata':{'type':'SP.Data.BannerImagesItem'},'ApprovalStatus':_0x34090c}),'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x5807ad(0x286))[_0x5807ad(0x2ca)](),'content-Type':_0x5807ad(0x1fd),'X-Http-Method':_0x5807ad(0x30e),'If-Match':'*'},'success':function(_0x3825e8,_0x5b3894,_0x4ce7d1){var _0xca1e2f=_0x5807ad;console[_0xca1e2f(0x270)](_0xca1e2f(0x29d));},'error':function(_0x529987){var _0x3ca851=_0x5807ad;console[_0x3ca851(0x270)](_0x529987);}});}function PageNameByProcessType(_0x2bcd93,_0x3b177a){var _0x245b12=a15_0x1fe436,_0x1a35a4,_0x26ddcd;switch(_0x3b177a){case _0x245b12(0x22a):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x2e3)+Logged_CompanyId+_0x245b12(0x2c9)+_0x2bcd93+'&Mode=View&Type=Alert?MODAL';break;case _0x245b12(0x283):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+'/Pages/Announcements.aspx?WebAppId='+Logged_CompanyId+'&ItemId='+_0x2bcd93+'&Mode=View&Type=Announcement?MODAL';break;case _0x245b12(0x2d4):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x216)+Logged_CompanyId+_0x245b12(0x24b)+window[_0x245b12(0x2cc)](_0x2bcd93)+_0x245b12(0x29c)+window[_0x245b12(0x2cc)](_0x245b12(0x32a))+'&sourcelocation=../Pages/TaskDashboard.aspx?MODAL';break;case _0x245b12(0x203):_0x1a35a4='Department\x20Banners';break;case _0x245b12(0x301):_0x1a35a4='Department\x20MediaGallary';break;case'Departmental\x20Events':_0x1a35a4='Departmental\x20Events';break;case _0x245b12(0x2ff):_0x1a35a4='DepartmentDocument_Access';break;case _0x245b12(0x246):_0x1a35a4=_0x245b12(0x246);break;case _0x245b12(0x245):_0x1a35a4='Documents';break;case _0x245b12(0x1fc):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x2e3)+Logged_CompanyId+_0x245b12(0x2c9)+_0x2bcd93+_0x245b12(0x26f);break;case'General':_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x311)+_0x2bcd93+_0x245b12(0x249)+Logged_CompanyId+_0x245b12(0x24b)+window['btoa'](_0x2bcd93)+_0x245b12(0x29c)+window[_0x245b12(0x2cc)](_0x245b12(0x32a))+'&sourcelocation=../Pages/TaskDashboard.aspx?MODAL';break;case'HR\x20Admin':_0x1a35a4=_0x245b12(0x2a7);break;case _0x245b12(0x312):_0x1a35a4='Knowledge';break;case _0x245b12(0x2e6):_0x1a35a4=_0x245b12(0x2e6);break;case _0x245b12(0x279):_0x1a35a4=_0x245b12(0x279);break;case _0x245b12(0x21b):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x282)+Logged_CompanyId+_0x245b12(0x2c9)+_0x2bcd93+_0x245b12(0x2bb);break;case'Occasion':_0x1a35a4=_0x245b12(0x2e7);break;case _0x245b12(0x338):_0x1a35a4=_spPageContextInfo['webAbsoluteUrl']+_0x245b12(0x244)+Logged_CompanyId+_0x245b12(0x294)+window[_0x245b12(0x2cc)](_0x2bcd93)+_0x245b12(0x2ad);break;case _0x245b12(0x21c):_0x1a35a4=_0x245b12(0x21c);break;case _0x245b12(0x28b):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x2bf)+Logged_CompanyId+_0x245b12(0x2c9)+_0x2bcd93+_0x245b12(0x2ad);break;case _0x245b12(0x31f):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x22d)+Logged_CompanyId+_0x245b12(0x24b)+window[_0x245b12(0x2cc)](_0x2bcd93)+_0x245b12(0x29c)+window[_0x245b12(0x2cc)](_0x245b12(0x32a))+_0x245b12(0x33a);break;case _0x245b12(0x31b):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x282)+Logged_CompanyId+'&ItemId='+_0x2bcd93+'&Mode=View&Type=Suggestion&sourcelocation=../Pages/MyDashboard.aspx?MODAL';break;case _0x245b12(0x1f8):_0x1a35a4=_spPageContextInfo[_0x245b12(0x274)]+_0x245b12(0x282)+Logged_CompanyId+_0x245b12(0x2c9)+_0x2bcd93+'&Mode=View&Type=Activities&sourcelocation=../Pages/MyDashboard.aspx?MODAL';break;case _0x245b12(0x206):_0x1a35a4='Tech\x20Admin';break;case'Trello\x20Board':_0x1a35a4='Trello\x20Board';}return _0x1a35a4;}function EventPopup(_0x2fcdf8){var _0xd7a0a4=a15_0x1fe436;$(_0xd7a0a4(0x341))['hide'](),$(_0xd7a0a4(0x32b))['hide']();var _0x317edc=titanForWork[_0xd7a0a4(0x2cd)](_0xd7a0a4(0x1f6)),_0x292d3e=_0xd7a0a4(0x295),_0x3bbecb=_0x317edc+'/_api/web/lists/getbytitle(\x27'+_0x292d3e+_0xd7a0a4(0x20b)+_0x2fcdf8+_0xd7a0a4(0x334);$[_0xd7a0a4(0x2d0)]({'url':_0x3bbecb,'headers':{'Accept':_0xd7a0a4(0x1fd)},'async':![],'success':function(_0x4de8b3){var _0x523d34=_0xd7a0a4;$(_0x523d34(0x2ee))[_0x523d34(0x204)](_0x523d34(0x1f5));var _0x12bb92=_0x4de8b3['d'][_0x523d34(0x323)];if(_0x12bb92[_0x523d34(0x2f2)]>0x0){var _0x501e1e=_0x12bb92[0x0][_0x523d34(0x2d7)];_0x501e1e==null&&(_0x501e1e='');$(_0x523d34(0x343))['text'](_0x501e1e);var _0x556f6f=_0x12bb92[0x0][_0x523d34(0x285)];_0x556f6f==null&&(_0x556f6f='');$('#labelLocation')['text'](_0x556f6f);var _0x2f6eca=_0x12bb92[0x0][_0x523d34(0x346)];_0x2f6eca!=null&&$(_0x523d34(0x289))[_0x523d34(0x33d)](convertJSONDateAMPMWithDate(_0x2f6eca));var _0x3ffc71=_0x12bb92[0x0]['EndDate'];_0x3ffc71!=null&&$(_0x523d34(0x25c))[_0x523d34(0x33d)](convertJSONDateAMPMWithDate(_0x3ffc71));var _0xffe678=_0x12bb92[0x0][_0x523d34(0x29e)];_0xffe678==null&&(_0xffe678='');if(_0xffe678[_0x523d34(0x329)](_0x523d34(0x240))){var _0x4b64f7=_0xffe678[_0x523d34(0x265)](_0x523d34(0x240)),_0x1c1fcb=_0x4b64f7[0x1][_0x523d34(0x236)](0x5),_0xffe678=_0x4b64f7[0x0]+'https:'+_0x1c1fcb;$('#lblNewEventDescription')[_0x523d34(0x33d)](_0xffe678);}else $(_0x523d34(0x299))[_0x523d34(0x33d)](_0xffe678);var _0xecfdef=_0x12bb92[0x0][_0x523d34(0x26b)];_0xecfdef==null&&(_0xecfdef='');$(_0x523d34(0x243))[_0x523d34(0x33d)](_0xecfdef);var _0x65a58b=_0x12bb92[0x0][_0x523d34(0x2a0)];_0x65a58b==null&&(_0x65a58b='');$(_0x523d34(0x218))[_0x523d34(0x33d)](_0x65a58b);var _0x14bbd2=_0x12bb92[0x0][_0x523d34(0x27b)];$(_0x523d34(0x228))[_0x523d34(0x33d)](_0x65a58b);if(_0x14bbd2==_0x523d34(0x2d6)){var _0x2d141d=_0x12bb92[0x0][_0x523d34(0x251)][_0x523d34(0x323)][0x0][_0x523d34(0x305)],_0x56a21d=$('#labelImageURL');_0x565448==null&&(_0x565448=''),_0x56a21d[0x0][_0x523d34(0x22e)]=_0x2d141d;}else{var _0x565448=_0x12bb92[0x0][_0x523d34(0x2c8)],_0x56a21d=$(_0x523d34(0x258));_0x565448==null&&(_0x565448=''),_0x56a21d[0x0][_0x523d34(0x22e)]=_0x565448;}ApprovalStatus=_0x12bb92[0x0][_0x523d34(0x2a5)],$(_0x523d34(0x269))[_0x523d34(0x33d)](ApprovalStatus);}},'eror':function(_0x4e43fa){var _0x4f522a=_0xd7a0a4;console[_0x4f522a(0x270)]($('#txtSomethingWentWrong')['val']());}});}function convertJSONDateAMPMWithDate(_0x59ce72){var _0x4a8777=a15_0x1fe436,_0x3b4225=new Date(_0x59ce72),_0x212521=[_0x4a8777(0x268),'Feb',_0x4a8777(0x324),'Apr',_0x4a8777(0x2b5),_0x4a8777(0x28a),_0x4a8777(0x281),_0x4a8777(0x2a4),'Sept',_0x4a8777(0x209),_0x4a8777(0x205),_0x4a8777(0x280)],_0x3a2dfe=_0x3b4225[_0x4a8777(0x20a)](),_0x53dee2=_0x3b4225[_0x4a8777(0x32f)](),_0x420bee=_0x3b4225[_0x4a8777(0x20a)]()>=0xc?'PM':'AM';_0x3a2dfe=_0x3a2dfe%0xc,_0x3a2dfe=_0x3a2dfe?_0x3a2dfe:0xc,_0x53dee2=_0x53dee2<0xa?'0'+_0x53dee2:_0x53dee2;var _0x3b2744=_0x3a2dfe+':'+_0x53dee2+'\x20'+_0x420bee;return _0x3b4225[_0x4a8777(0x2b9)]()+'-'+_0x212521[_0x3b4225[_0x4a8777(0x222)]()]+'-'+_0x3b4225[_0x4a8777(0x31e)]()+'\x20'+_0x3b2744;}function UniversalUpdate(_0x234e28,_0x2ec780,_0x51b667,_0x2fdf5f){var _0x38ce84=a15_0x1fe436;$[_0x38ce84(0x2d0)]({'url':_0x234e28+_0x38ce84(0x232)+_0x2ec780+'\x27)/items(\x27'+_0x2fdf5f+'\x27)','type':_0x38ce84(0x30c),'async':![],'data':JSON[_0x38ce84(0x2b2)](_0x51b667),'headers':{'Accept':_0x38ce84(0x1fd),'Content-Type':_0x38ce84(0x1fd),'X-RequestDigest':$(_0x38ce84(0x286))[_0x38ce84(0x2ca)](),'IF-MATCH':'*','X-HTTP-Method':_0x38ce84(0x33c)},'success':function(_0x1227fb,_0x401b19,_0xe31f5a){var _0x2f4b45=_0x38ce84;alert(_0x2f4b45(0x2d8));},'error':function(_0x57444b){var _0x521524=_0x38ce84;alert('An\x20error\x20occurred.\x20Please\x20contact\x20your\x20system\x20administrator\x20/\x20Refresh\x20a\x20WebPage\x20!'),console[_0x521524(0x270)](_0x57444b);}});}function GenerateTableApprovalInbox(){var _0x2042ac=a15_0x1fe436;sorterApprovalInbox=new TINY['table']['sorter'](_0x2042ac(0x2a1),_0x2042ac(0x223),{'ascclass':_0x2042ac(0x342),'descclass':'desc','evenclass':_0x2042ac(0x25f),'oddclass':_0x2042ac(0x316),'evenselclass':_0x2042ac(0x21d),'oddselclass':_0x2042ac(0x2c7),'paginate':!![],'size':0xa,'colddid':_0x2042ac(0x254),'currentid':_0x2042ac(0x2c1),'totalid':_0x2042ac(0x326),'startingrecid':'startrecordApprovalInbox','endingrecid':_0x2042ac(0x318),'totalrecid':_0x2042ac(0x304),'pageddid':'pagedropdownApprovalInbox','navid':'tablenavApprovalInbox','sortdir':0x1,'init':!![]});}$(document)[a15_0x1fe436(0x2ab)](function(){var _0x18e2fb=a15_0x1fe436;initializePeoplePicker(_0x18e2fb(0x30b)),$(_0x18e2fb(0x23e))[_0x18e2fb(0x332)](function(){var _0x49f56f=_0x18e2fb,_0x4510a9=this[_0x49f56f(0x1ef)];if(_0x4510a9!=_0x49f56f(0x2e9))catagoryBasedOnWebPartName(_0x4510a9);else{}});});function catagoryBasedOnWebPartName(_0x49125b){var _0x331a0d=a15_0x1fe436;$('#categoryApprovalInbox')[_0x331a0d(0x2df)](),$('<option\x20value=\x22All\x22>All</option>')[_0x331a0d(0x25b)](_0x331a0d(0x2d1));var _0x2788b3=_0x331a0d(0x219),_0x2cc19d=_spPageContextInfo[_0x331a0d(0x274)]+_0x331a0d(0x2e1)+_0x49125b+'\x27';$[_0x331a0d(0x2d0)]({'url':_0x2cc19d,'type':_0x331a0d(0x2e2),'headers':{'Accept':_0x331a0d(0x1fd)},'success':function(_0x15205f){var _0x4b5bca=_0x331a0d,_0x2e963a='',_0x1413c9=_0x15205f['d'][_0x4b5bca(0x323)];$['each'](_0x1413c9,function(_0xfef933,_0x1e8d1e){var _0x4caa09=_0x4b5bca;_0x2e963a+=_0x4caa09(0x26a)+_0x1e8d1e[_0x4caa09(0x2fa)]+'\x27>'+_0x1e8d1e[_0x4caa09(0x2fa)]+_0x4caa09(0x314);}),$('#categoryApprovalInbox')[_0x4b5bca(0x227)](_0x2e963a);},'error':function(_0x1dec27){var _0x316bfc=_0x331a0d;console['log'](_0x1dec27[_0x316bfc(0x309)][_0x316bfc(0x335)]);}});}function FilterApprovalInbox(){var _0x5bb2a3=a15_0x1fe436;$(_0x5bb2a3(0x2c4))[_0x5bb2a3(0x1f1)](),$(_0x5bb2a3(0x262))[_0x5bb2a3(0x1f5)]();var _0x3345d0='',_0x1f4511='';$(_0x5bb2a3(0x28c))[_0x5bb2a3(0x2ca)]()!=_0x5bb2a3(0x2e9)&&(_0x3345d0+=_0x5bb2a3(0x2f6)+$('#txtFilterApprovalStatusInbox')[_0x5bb2a3(0x2ca)]()+'\x27\x20',_0x1f4511+=_0x5bb2a3(0x29b)+$(_0x5bb2a3(0x2ae))[_0x5bb2a3(0x33d)]()+_0x5bb2a3(0x20d));$('#WebpartApprovalInbox')[_0x5bb2a3(0x2ca)]()!='All'&&(_0x3345d0+='and\x20WebpartName\x20eq\x20\x27'+$(_0x5bb2a3(0x23e))['val']()+'\x27\x20',_0x1f4511+='<div\x20class=\x27upload-chip\x27>'+$('#WebpartApprovalInbox\x20option:selected')['text']()+_0x5bb2a3(0x20d));$(_0x5bb2a3(0x2d1))[_0x5bb2a3(0x2ca)]()!='All'&&(_0x3345d0+=_0x5bb2a3(0x2f9)+$('#categoryApprovalInbox')[_0x5bb2a3(0x2ca)]()+'\x27\x20',_0x1f4511+=_0x5bb2a3(0x29b)+$(_0x5bb2a3(0x1f0))[_0x5bb2a3(0x33d)]()+_0x5bb2a3(0x20d));if($(_0x5bb2a3(0x30d))[_0x5bb2a3(0x33d)]()!=''){var _0x5d7aa9=getUserInformation(_0x5bb2a3(0x30b));_0x1f4511+=_0x5bb2a3(0x29b)+assignBy[_0x5bb2a3(0x1fe)](',\x20')+_0x5bb2a3(0x20d);if(_0x5d7aa9[_0x5bb2a3(0x2f2)]>0x0){_0x3345d0+=_0x5bb2a3(0x234)+_0x5d7aa9[0x0]+'\x27\x20';for(var _0x19dd09=0x0;_0x19dd09<_0x5d7aa9['length'];_0x19dd09++){_0x5d7aa9[_0x19dd09]!=_0x5d7aa9[0x0]&&(_0x3345d0+='or\x20AuthorId\x20eq\x20\x27'+_0x5d7aa9[_0x19dd09]+'\x27');}_0x3345d0+=')';}}$(_0x5bb2a3(0x2b7))[_0x5bb2a3(0x2df)](),$(_0x5bb2a3(0x2b7))[_0x5bb2a3(0x227)](_0x1f4511);var _0x224630=new Date();_0x224630=_0x224630['setFullYear'](_0x224630['getFullYear']()-0x1),_0x224630=new Date(_0x224630);var _0x2efe27=_0x5bb2a3(0x2c3)+_spPageContextInfo[_0x5bb2a3(0x1fa)]+_0x5bb2a3(0x217)+_0x224630[_0x5bb2a3(0x253)]()+'\x27\x20'+_0x3345d0;FilterApprovalData(_0x2efe27,_0x5bb2a3(0x284));}function FilterApprovalData(_0x3f4fd2,_0x4e6c04){var _0x34a27c=a15_0x1fe436,_0xe3e146=_0x4e6c04;$['when'](getItemsWithQueryItem(_0x34a27c(0x241),_0x3f4fd2,_0x34a27c(0x24c)))['done'](function(_0x92812a){var _0x121352=_0x34a27c;_0xe3e146=='Filter'&&$(_0x121352(0x320))[_0x121352(0x2df)]();NextURLApprovalIn==null?$(_0x121352(0x262))[_0x121352(0x1f1)]():$('#SeeMoreFilterApprovalIn')[_0x121352(0x1f5)]();var _0x2daec4=_0x92812a['results'];itemsarray=_0x2daec4;var _0x4eaf63='';for(var _0x18b774=0x0;_0x18b774<_0x2daec4[_0x121352(0x2f2)];_0x18b774++){var _0x43d640=_0x2daec4[_0x18b774]['ID'],_0x17096d=_0x2daec4[_0x18b774][_0x121352(0x2d7)],_0x28cdb0=_0x2daec4[_0x18b774][_0x121352(0x23f)][_0x121352(0x2d7)],_0x2e782c=_0x2daec4[_0x18b774]['Status'],_0x32e2d0=_0x2daec4[_0x18b774]['WebpartName'],_0x33de68=_0x2daec4[_0x18b774][_0x121352(0x26b)],_0x205e41=_0x2daec4[_0x18b774][_0x121352(0x30a)]['DepartmentName']==undefined?'':_0x2daec4[_0x18b774]['DepartmentId'][_0x121352(0x247)],_0x4336ce=_0x2daec4[_0x18b774][_0x121352(0x328)],_0x5ad702=_0x2daec4[_0x18b774][_0x121352(0x33b)]['Title'],_0x22aaee=_0x2daec4[_0x18b774][_0x121352(0x2ea)],_0x2783d1=_0x2daec4[_0x18b774][_0x121352(0x297)];_0x2783d1=='Banners'&&(_0x2783d1=_0x121352(0x26d));var _0x43c877=_0x2daec4[_0x18b774]['Details'],_0x5be2ce=_0x2daec4[_0x18b774][_0x121352(0x345)],_0x3b4803=_0x2daec4[_0x18b774][_0x121352(0x30a)]['ID'];_0x22aaee==null&&(_0x22aaee='');_0x4336ce==null?_0x4336ce='':(_0x4336ce=new Date(_0x4336ce),_0x4336ce=titanForWork[_0x121352(0x231)](_0x4336ce));_0x5ad702==null&&(_0x5ad702='');_0x33de68==null&&(_0x33de68=_0x2783d1);var _0x1fd50f=[];_0x1fd50f['push'](_0x43d640,_0x17096d,_0x22aaee,_0x5be2ce,_0x2e782c,_0x3b4803,_0x32e2d0);var _0x7c1a89='';_0x7c1a89='<input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssItemID\x27\x20value=\x27'+_0x43d640+_0x121352(0x302)+_0x17096d+'</div><div\x20style=\x27display:none\x27\x20class=\x27cssRemarks\x27>'+_0x22aaee+_0x121352(0x248)+_0x43c877+_0x121352(0x266)+_0x5be2ce+_0x121352(0x325)+_0x2e782c+_0x121352(0x330)+_0x3b4803+'\x27><input\x20style=\x27display:none\x27\x20type=\x27text\x27\x20class=\x27cssProcessType\x27\x20value=\x27'+_0x32e2d0+_0x121352(0x2d2)+_0x43d640+_0x121352(0x233),_0x4eaf63+=_0x121352(0x2dd)+_0x121352(0x288)+truncate(_0x17096d,0x37)+_0x121352(0x2c5)+_0x121352(0x303)+_0x28cdb0+'</p></div></td>'+_0x121352(0x2aa)+_0x2e782c+_0x121352(0x2c5)+'<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x2783d1+_0x121352(0x2c5)+'<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x33de68+_0x121352(0x2c5)+_0x121352(0x212)+_0x4336ce+'</p></td>'+'<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x5ad702+_0x121352(0x2c5)+'<td\x20class=\x27text-center\x20vertical-align-middle\x27><button\x20type=\x27button\x27\x20class=\x27btn\x20custom-btn\x20custom-btn-two\x27\x20\x20onclick=\x27getActionbtnValuesInbox(\x22'+_0x43d640+'\x22)\x27>Action</button></td>'+_0x121352(0x21e);}_0x2daec4[_0x121352(0x2f2)]==0x0?$(_0x121352(0x256))[_0x121352(0x1f5)]():$(_0x121352(0x256))['hide'](),$(_0x121352(0x320))[_0x121352(0x227)](_0x4eaf63),$('#tableTempApprovalInbox>tbody\x20tr')[_0x121352(0x2f2)]>0x64&&NextURLApprovalIn!=null?($(_0x121352(0x201))['hide'](),$(_0x121352(0x29a))[_0x121352(0x1f5)](),$(_0x121352(0x207))['text']($(_0x121352(0x24e))['length'])):($('#ShowTotalApprovalIn')[_0x121352(0x1f5)](),$(_0x121352(0x29a))[_0x121352(0x1f1)](),$(_0x121352(0x2e4))[_0x121352(0x33d)](_0x2daec4[_0x121352(0x2f2)])),$('#tableTempApprovalInbox>tbody\x20tr')['length']==0x1388&&(NextURLApprovalIn=null,$('#SeeMoreFilterApprovalIn')[_0x121352(0x1f1)]()),_0x2daec4['length']>0x0&&GenerateTableApprovalInbox();})['fail'](function(_0x50efe6){var _0x458d68=_0x34a27c;_0x50efe6[_0x458d68(0x309)]['error'][_0x458d68(0x2c0)][_0x458d68(0x1ef)][_0x458d68(0x238)](_0x458d68(0x333))!=-0x1?($(_0x458d68(0x215))[_0x458d68(0x204)]('show'),$(_0x458d68(0x2b4))[_0x458d68(0x1f1)](),$(_0x458d68(0x33e))['hide']()):HandleError(_0x50efe6);});}function GetApprovalInboxCount(){var _0x48c0cd=a15_0x1fe436,_0x572365=_spPageContextInfo[_0x48c0cd(0x274)]+_0x48c0cd(0x298)+_spPageContextInfo[_0x48c0cd(0x1f3)]+_0x48c0cd(0x327);$[_0x48c0cd(0x2d0)]({'url':_0x572365,'type':_0x48c0cd(0x230),'async':![],'headers':{'ACCEPT':'application/json;odata=verbose'},'success':function(_0x13b227){var _0x3c66a6=_0x48c0cd,_0x22ce9a=_0x13b227['d']['results'];$(_0x3c66a6(0x261))[_0x3c66a6(0x227)](_0x22ce9a['length']);},'error':function(){alert('Error\x20getting\x20the\x20Approver\x20Inbox\x20Count\x20.');}});}function ClearApprovalInboxFilter(){var _0x3a1257=a15_0x1fe436;$(_0x3a1257(0x28c))['val'](_0x3a1257(0x331)),$('#WebpartApprovalInbox')['val']('All'),$('#categoryApprovalInbox')[_0x3a1257(0x2ca)](_0x3a1257(0x2e9)),$(_0x3a1257(0x2b7))[_0x3a1257(0x2df)](),clearPeoplePickerControl('ApprovalInboxPeople');var _0x49e664=this;_0x49e664['TaskPhase']=_0x3a1257(0x331),objApprovalInbox[_0x3a1257(0x344)](_0x3a1257(0x200));}
+//TASK IS TO LOAD DASHBOARD AS PER RIGHT ASSIGNMENT FOR THE USERS
+var sorterApprovalInbox;
+var ApprovalInbox = function () {
+    this.Mode;					// Add, Update, View
+    this.SiteURL;
+    this.CompanyId;
+    this.TaskPhase;
+    this.SuggestionTitle = $("#suggestionTitle");
+    this.SuggestionType = $("#suggestionType");
+    this.SuggestionCategory = $("#suggestionCategory");
+    this.SuggestionDetails = $("#suggestionDetails");
+    this.ApprovalAction = $("#txtApprovalAction");
+    this.Remarks = $("#txtRemarks");
+    this.ActionSubmit = $("#btnAction");
+    this.ActionCancel = $("#EventCancel");
+    this.ModalPopupApproval = $("#modalApproval");
+    this.AllApprovalInboxTasks = $(".mainDivApprovalInbox"); //$("#mainDivApprovalInbox");
+    this.NoRecordFound = $(".NoRecordFound");
+    this.columns = $("#columnsApprovalInbox");
+    this.currentpage = $("#currentpageApprovalInbox");
+    this.totalpages = $("#totalpagesApprovalInbox");
+    this.startrecord = $("#startrecordApprovalInbox");
+    this.endrecord = $("#endrecordApprovalInbox");
+    this.totalrecords = $("#totalrecordsApprovalInbox");
+    this.selectedrow = $("#selectedrowApprovalInbox");
+    this.pagedropdown = $("#pagedropdownApprovalInbox");
+    this.tablenav = $("#tablenavApprovalInbox");
+};
+
+var existStatus = '';
+var Process = '';
+
+ApprovalInbox.prototype.InitializeControls = function InitializeControls() {
+    var Handler = this;
+    Handler.CompanyId = Logged_CompanyId;		// Get Company ID from QueryString
+    Handler.SiteURL = titanForWork.getQueryStringParameter('CompanySiteUrl');   // Get Company Site URL
+}
+
+ApprovalInbox.prototype.SetControls = function SetControls() {
+    var Handler = this;
+    Handler.TaskPhase = "Initiated";		// Default Filter Value	
+}
+
+ApprovalInbox.prototype.BindEvents = function BindEvents() {
+    var Handler = this;
+}
+
+var itemsarray = '';
+var NextURLApprovalIn = '';
+ApprovalInbox.prototype.GetApprovalInboxTasks = function GetApprovalInboxTasks(Action) {
+    $("#SeeMoreFilterApprovalIn").hide();
+    var dateFilter = new Date();
+    dateFilter = dateFilter.setFullYear(dateFilter.getFullYear() - 1);
+    dateFilter = new Date(dateFilter);
+    var Handler = this;
+    if (Action == "PageLoad") {
+        var restQuery;
+        $("#mainDivAreaApprovalInbox").empty();
+        var Type = "";
+        if (Handler.TaskPhase == "All") {
+            var Query = "?$select=ID,Title,Status,WebpartName,ApprovedDate,Remarks,ItemId,DepartmentId/ID,Details,DepartmentId/DepartmentName,ApprovedBy/Title,Author/Title,*&$Expand=ApprovedBy,Author,DepartmentId&$Filter=ApproversId eq '" + _spPageContextInfo.userId + "' and Created ge datetime'" + dateFilter.toISOString() + "'&$OrderBy= Modified desc";
+        }
+        else {
+            var Query = "?$select=ID,Title,Status,WebpartName,ApprovedDate,Remarks,ItemId,DepartmentId/ID,Details,DepartmentId/DepartmentName,ApprovedBy/Title,Author/Title,*&$Expand=ApprovedBy,Author,DepartmentId&$Filter=ApproversId eq '" + _spPageContextInfo.userId + "' and Status eq  '" + Handler.TaskPhase + "' and Created ge datetime'" + dateFilter.toISOString() + "' &$OrderBy=Modified desc";
+        }
+    }
+    else {
+        if (NextURLApprovalIn != null) {
+            var Query = "?" + NextURLApprovalIn.split('?')[1];
+        }
+        else {
+            $("#SeeMoreApprovalIn").hide();
+            return;
+        }
+    }
+    $.when(getItemsWithQueryItem('ApprovalTaskList', Query, "ApprovalIn")).done(function (TaskResults) {
+        var ApprovalinboxChip = '';
+        ApprovalinboxChip += "<div class='upload-chip'>" + Handler.TaskPhase + "</div>";
+        $("#ApprovalinboxChip").empty();
+        $("#ApprovalinboxChip").append(ApprovalinboxChip);
+        if (NextURLApprovalIn == null) {
+            $("#SeeMoreApprovalIn").hide();
+        }
+        var items = TaskResults.results;
+
+        itemsarray = items;
+        var tableItemsHTML = "";
+        for (var i = 0; i < items.length; i++) {
+            var itemId = items[i].ID;
+            var Title = items[i].Title;
+            var TaskAssignFrom = items[i].Author.Title;
+            //TaskAssignFrom=getUserName(TaskAssignFrom);			// Need to change this piece of code.
+            var CurrentPhase = items[i].Status;
+            var ProcessType = items[i].WebpartName;
+            var ProcessTypeCategory = items[i].Category;
+            var DepartmentName = items[i].DepartmentId.DepartmentName == undefined ? '' : items[i].DepartmentId.DepartmentName;
+            var approvedDate = items[i].ApprovedDate;
+            var approvedBy = items[i].ApprovedBy.Title;
+            var remarks = items[i].Remarks;
+            var webpartname = items[i].WebpartName;
+            if(webpartname == "Banners"){
+            	webpartname = "Information"
+            }
+            var details = items[i].Details;
+            var ListItemId = items[i].ItemId;
+            var DepartmentId = items[i].DepartmentId.ID;
+            if (remarks == null) { remarks = ''; }
+            if (approvedDate == null) { approvedDate = ''; }
+            else {
+                approvedDate = new Date(approvedDate);
+                approvedDate = titanForWork.ShowCommonStandardDateFormat(approvedDate);//.toLocaleDateString();
+            }
+
+            if (approvedBy == null) { approvedBy = ''; }
+            if (ProcessTypeCategory == null) { ProcessTypeCategory = webpartname; }
+            var ItemDtlList = [];
+            ItemDtlList.push(itemId, Title, remarks, ListItemId, CurrentPhase, DepartmentId, ProcessType);
+
+
+            var Action = "";
+            Action = "<input style='display:none' type='text' class='cssItemID' value='" + itemId + "'><div style='display:none' class='cssTitle'>" + Title + "</div><div style='display:none' class='cssRemarks'>" + remarks + "</div><div style='display:none' class='cssdetails' >" + details + "</div><input style='display:none' type='text' class='cssListItemId' value='" + ListItemId + "'><input style='display:none' type='text' class='cssStausId' value='" + CurrentPhase + "'><input style='display:none' type='text' class='cssDepartmentId' value='" + DepartmentId + "'><input style='display:none' type='text' class='cssProcessType' value='" + ProcessType + "'><a class='projectGridInboxTaskEvent1444' style='cursor:pointer' onclick='getActionbtnValuesInbox(\"" + itemId + "\")'>Action</a>";
+            //tableItemsHTML += "<tr><td>" + truncate(Title, 55) + "</td><td>" + TaskAssignFrom + "</td><td>" + CurrentPhase + "</td><td>" + webpartname + "</td><td>" + ProcessTypeCategory + "</td><td>" + approvedDate + "</td><td>" + approvedBy + "</td><td>" + truncate(remarks, 100) + "</td>";
+            //tableItemsHTML += "<td>" + Action + "</td></tr>";
+            tableItemsHTML += "<tr>" +
+            "<td><p class='m-0 ellipsis-2'>" + truncate(Title, 55) + "</p></td>" +
+            "<td class='text-center'><div class=''><p class='m-0 ellipsis-2'>" + TaskAssignFrom + "</p></div></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + CurrentPhase + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + webpartname + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + ProcessTypeCategory + "</p></td>" +
+            "<td class='text-center'><p class='m-0 mb-10'>" + approvedDate + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + approvedBy + "</p></td>" +
+            "<td class='text-center vertical-align-middle'><button type='button' class='btn custom-btn custom-btn-two'  onclick='getActionbtnValuesInbox(\"" + itemId + "\")'>Action</button></td>" +
+            "</tr>";
+        }
+
+        if (items.length == 0) {
+            $('#NoRecordFoundApprovalInbox').show();
+        }
+        else {
+            $('#NoRecordFoundApprovalInbox').hide();
+        }
+
+        // $(".TaskOutBoxTable").append(tableOutboxHtml);
+        $("#mainDivAreaApprovalInbox").append(tableItemsHTML);
+        //Showing data out of total
+        if ($('#tableTempApprovalInbox>tbody tr').length > 100 && NextURLApprovalIn != null) {
+            $("#ShowTotalApprovalIn").hide();
+            $("#ShowApprovalIn").show();
+            $("#ApprovalInCount").text($('#tableTempApprovalInbox>tbody tr').length);
+        }
+        else {
+            $("#ShowTotalApprovalIn").show();
+            $("#ShowApprovalIn").hide();
+            $("#TotalItemsApprovalIn").text(items.length);
+        }
+        if ($('#tableTempApprovalInbox>tbody tr').length == 5000) {
+            NextURLApprovalIn = null;
+            $("#SeeMoreApprovalIn").hide();
+        }
+        if (items.length > 0) {
+            GenerateTableApprovalInbox()
+        }
+        //table.rows.add($(tableItemsHTML)).draw();
+        //objApprovalInbox.ApprovalTaskInboxEvent();		// Bind Action Form events. //Commented by Amit kumar Not Usefull Function.   
+        //objApprovalInbox.TableConfiguration();        // comment by harsh
+    }).fail(function (error) {
+            if(error.responseJSON.error.message.value.indexOf("The attempted operation is prohibited because it exceeds the list view threshold.") != -1){
+                $("#ThresholdError").modal('show');
+                $("#btnContinue").hide();
+                $("#btnContinueOutBox").hide();
+            }
+            else {
+                HandleError(error);
+            }
+        });
+}
+
+//New Get Action Value function  created by Rahul Rana 
+
+function getActionbtnValuesInbox(ItemID) {
+
+    existStatus = '';
+    Process = '';
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTaskList')/items?$filter=ID eq ('" + ItemID + "')";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+
+            var items = data.d.results;
+            if (items.length > 0) {
+                var ItemID = items[0].ID;
+                var title = items[0].Title;
+                var ListItemId = items[0].ItemId;
+                var Remarks = items[0].Remarks;
+                var DepartmentId = items[0].DepartmentIdId;
+                var ProcessType = items[0].WebpartName;
+                var Category = items[0].Category;
+                var detail = items[0].Details;
+                var SatusId = items[0].Status;
+                existStatus = SatusId;
+                Process = ProcessType;
+                $('#txtApprovalAction').val(SatusId);
+                objApprovalInbox.ApprovedTask(ItemID, title, Category, ListItemId, DepartmentId, ProcessType, Remarks, SatusId, detail, items[0].CompanyId);
+
+            }
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+}
+
+/*
+function getActionbtnValuesInbox(_ItemDtlList) {
+ 
+	var Handler = this;
+	  
+	var ItemID = _ItemDtlList[0];
+	var title = _ItemDtlList[1];
+	var ListItemId = _ItemDtlList[3];
+	var DepartmentId = _ItemDtlList[5];
+	var ProcessType = _ItemDtlList[6];
+	Remarks = _ItemDtlList[2];
+	SatusId = _ItemDtlList[4];
+	$('#txtApprovalAction').val(SatusId);
+	objApprovalInbox.ApprovedTask(ItemID, title, ListItemId, DepartmentId, ProcessType, Remarks, SatusId);
+
+}*/
+
+
+// Commented by Amit kumar Not Usefull Function.
+/*
+ApprovalInbox.prototype.ApprovalTaskInboxEvent = function ApprovalTaskInboxEvent()
+{
+	var Handler=this;	
+    $('.projectGridInboxTaskEvent_ghghjgj').unbind().click(function ()
+    {
+    	//Handler.Remarks.val('');
+    	Handler.ApprovalAction.val(0);
+    	Handler.ActionSubmit.attr('disabled',false);
+    	
+		var $row = jQuery(this).closest('tr');
+		var $columns = $row.find('td');
+		var ItemID="";
+		
+		var ListItemId="";
+		var DepartmentId="";
+		var ProcessType = "";
+		
+		ItemID = jQuery(this).closest('tr').find('.cssItemID').val();
+		var  title = jQuery(this).closest('tr').find('.cssTitle').text();
+		var  details = jQuery(this).closest('tr').find('.cssdetails').html();//text();
+		ListItemId = jQuery(this).closest('tr').find('.cssListItemId').val();
+		DepartmentId = jQuery(this).closest('tr').find('.cssDepartmentId').val();
+		SatusId= jQuery(this).closest('tr').find('.cssStausId').val();
+		Remarks = jQuery(this).closest('tr').find('.cssRemarks').text();
+		ProcessType = jQuery(this).closest('tr').find('.cssProcessType').val();
+		
+		//objApprovalInbox.ApprovedTask(ItemID, title, details, ListItemId, DepartmentId, $.trim(ProcessType),Remarks,SatusId);
+    });
+}
+*/
+var globalEventId = "";
+var webUrlDeptSite = '';
+ApprovalInbox.prototype.ApprovedTask = function ApprovedTask(ItemID, title, Category, ListItemId, DepartmentId, ProcessType, Remarks, SatusId, detail, CompanyId) {
+	
+    var Handler = this;
+    Handler.ModalPopupApproval.modal('show');
+    Handler.SuggestionDetails.html('');
+    globalEventId = ListItemId;
+    if (ProcessType == "Events") {
+        //Handler.SuggestionDetails.append( <a class="projectGridInboxTaskEvent1444" style="cursor:pointer" onclick=" ">Action</a> );//text(details);
+        if (SatusId == "Approved") {
+            $('#show').show();
+            $('#suggestionDetails').hide();
+            $('#EventCancel').show();
+        }
+        else {
+            $('#show').show();
+            $('#suggestionDetails').hide();
+            $('#EventCancel').hide();
+
+        }
+    }
+    else {
+        $('#suggestionDetails').show();
+        $('#show').hide();
+        $('#EventCancel').hide();
+        if (ProcessType == "Departmental Documents") {
+            //var link=  $(detail).closest('a').attr('href');
+            var html = $.parseHTML(detail);
+            var nodeNames = [];
+            $.each(html, function (i, el) {
+                if (el.nodeName == "A") {
+                    link = el.attributes.href.value;
+                }
+            });
+            webUrlDeptSite = getDeptSiteURL(CompanyId, DepartmentId);
+            Handler.SuggestionDetails.append('<a class="btn custom-btn w-70" href=' + link + ' target="_blank">Details</a>');//text(details);
+        }
+        else {
+            //   Handler.SuggestionDetails.append('<a class="btn custom-btn w-70" href=' + PageNameByProcessType(ListItemId, ProcessType) + ' target="_blank">Details</a>');//text(details);''
+            Handler.SuggestionDetails.append('<a class="btn custom-btn w-70" target="" data-toggle="modal" data-target="#modalDetails" id="btnDetails" onclick="ViewApprovalDetails(\'' + ListItemId + '\', \'' + ProcessType + '\')">Details</a>');   //text(details);
+        }
+    }
+    Handler.SuggestionTitle.text(title);
+    if(ProcessType == "Banners"){
+        ProcessType = "Information";
+    }
+    Handler.SuggestionType.text(ProcessType);
+    Handler.SuggestionCategory.text(Category);
+    Handler.Remarks.text(Remarks);
+    /*	if (SatusId != "Initiated") {            // commneted by harsh
+            Han`dler.Remarks.val(Remarks);
+            $("#btnAction").show();
+            $("#txtApprovalAction").attr("disabled", false);
+            $("#txtRemarks").attr("disabled", false);
+        }
+        else {
+            Handler.Remarks.val('');
+            $("#btnAction").show();
+            $("#txtApprovalAction").attr("disabled", false);
+            $("#txtRemarks").attr("disabled", false);
+        }   */
+
+    if (SatusId != existStatus) {
+        Handler.Remarks.val(Remarks);
+        $("#btnAction").show();
+        $("#txtApprovalAction").attr("disabled", false);
+        $("#txtRemarks").attr("disabled", false);
+    }
+
+    else {
+        Handler.Remarks.val('');
+        $("#btnAction").hide();
+        $("#txtApprovalAction").attr("disabled", false);
+        $("#txtRemarks").attr("disabled", false);
+        $(".action").hide()
+    }
+    //For Cancel an Approved Event Added By Rahul Rana
+    Handler.ActionCancel.unbind().click(function () {
+        var ActionTaken = "Cancelled";
+        objApprovalInbox.updateApprovalDetails("ApprovalTaskList", ActionTaken, Remarks, ItemID, ListItemId, DepartmentId, ProcessType);
+        Handler.ModalPopupApproval.modal('hide');
+        objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+
+
+    });
+
+
+
+    Handler.ActionSubmit.unbind().click(function () {
+
+        var ActionTaken = $("#txtApprovalAction option:selected").text();
+        var Remarks = Handler.Remarks.val();
+        if (ActionTaken != '' && Remarks.trim() != '') {
+            if (ActionTaken == "Rejected" || ActionTaken == "Approved") {
+                if (Remarks.trim() == "") {
+                    alert('Kindly enter remarks.');
+                    return false;
+                }
+                else {
+                    objApprovalInbox.updateApprovalDetails("ApprovalTaskList", ActionTaken, Remarks, ItemID, ListItemId, DepartmentId, ProcessType);
+                    Handler.ModalPopupApproval.modal('hide');
+                    objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+                    //update the file's Status in Department site in case of Departmental Documents only
+                    if (webUrlDeptSite != "" && $("#suggestionType").text() == "Departmental Documents") {
+                        UpdateFileStatus(ListItemId);
+                    }
+                    else if($("#suggestionType").text() == "Announcements" || $("#suggestionType").text() == "General" || $("#suggestionType").text() == "Recognition" || $("#suggestionType").text() == "Information") {
+                    	updateAnnouncementsStatus(ListItemId, $("#suggestionType").text());
+                    }
+                }
+            }
+            else {
+                objApprovalInbox.updateApprovalDetails("ApprovalTaskList", ActionTaken, Remarks, ItemID, ListItemId, DepartmentId, ProcessType);
+                Handler.ModalPopupApproval.modal('hide');
+                objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+            }
+        }
+        else {
+            alert("Kindly enter remarks.")
+        }
+    });
+}
+
+//Update file status in Department site
+function UpdateFileStatus(ID) {
+	var Metadata;
+	var ItemType = GetItemTypeForListNameLibrary('DepartmentalDMS');
+
+	Metadata = {
+	    __metadata: {
+	        'type': ItemType
+	    },
+	    ApprovalStatus: $("#txtApprovalAction").val()
+	};
+	var dfd = $.Deferred();
+	var oweburl = webUrlDeptSite + "/_api/Web/Lists/getByTitle('DepartmentalDMS')/Items(" + ID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            webUrlDeptSite = '';
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+
+var response = response || [];
+//Get details from SP list above 5000
+function getItems(url, dfds) {
+    $.ajax({
+        url: url,
+        type: 'GET',
+        async: false,
+        headers: {
+            'accept': 'application/json;odata=verbose'
+        },
+        success: function (data) {
+
+            response = response.concat(data.d.results);
+            if (data.d.__next) {
+                url = data.d.__next;
+                getItems(url, dfds);
+            }
+            else {
+                dfds.resolve(response);
+            }
+        },
+        error: function (error) {
+            dfds.reject(error);
+            console.log(error);
+        }
+    })
+    return dfds.promise();
+}
+//Update Approved_by and Approved_Date in Announcements list
+function updateAnnouncementsStatus(updateId, Type){
+	var updatePublishDate = false;
+	//get publish Date if the Publish Date is less than current date
+	var dfds = $.Deferred(),
+		currentDate = new Date(),
+		currentDate = currentDate.setHours(0,0,0,0);
+    	currentDate = new Date(currentDate);
+	var Query = "?$top=5000&$select=ID,Publish_Date&$filter=ID eq " + updateId + " and Publish_Date lt '" + currentDate.toISOString() + "' ";
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Announcements')/items/" + Query;
+    $.when(getItems(url, dfds)).done(function (Results) {
+        response = [];
+        if (Results.length > 0) {
+        	updatePublishDate = true;
+        }
+    });
+	var Metadata;
+	var ItemType = GetItemTypeForList('Announcements');
+
+	Metadata = {
+	    __metadata: {
+	        'type': ItemType
+	    },
+	    ApprovedById: _spPageContextInfo.userId,
+	    ApprovedDate: new Date(),
+	    Publish_Date: new Date()
+	};
+	if(updatePublishDate == false){
+		delete Metadata["Publish_Date"];
+	}
+	var dfd = $.Deferred();
+    var webURI = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Announcements')/GetItemById('" + updateId+ "')";
+    $.ajax({
+        url: webURI,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function GetItemTypeForListNameLibrary(Library) {
+    return "SP.Data." + Library.charAt(0).toUpperCase() + Library.split(" ").join("").slice(1) + "Item";//"SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+ApprovalInbox.prototype.updateApprovalDetails = function updateApprovalDetails(ListName, ActionTaken, Remarks, ItemID, ListItemId, DepartmentId, ProcessType) {
+    try {
+        var currentUserID = _spPageContextInfo.userId;
+        var currentDate = new Date();
+        var Metadata;
+        var ItemType = GetItemTypeForList(ListName);
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Remarks: Remarks,
+            Status: ActionTaken,
+            ApprovedById: currentUserID,
+            ApprovedDate: currentDate
+        };
+        objApprovalInbox.UpdateApprovalToList(ListName, Metadata, ItemID, ListItemId, DepartmentId, ActionTaken, ProcessType);
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+}
+
+//get Department site URL to update Status
+function getDeptSiteURL(Company, Department){
+	var WebURL = '';
+	var Query = "?$select=ID,MassMailID,CompanyIDId/ID,SiteURL&$top=5000&$filter=ID eq '" + Department + "' and CompanyIDId eq '" + Company + "'"
+	$.when(getItemsWithQueryItem('Departments', Query, "")).done(function (TaskResults) {    	
+	 	WebURL  = TaskResults.results[0].SiteURL;
+    });
+    return WebURL ;
+}
+
+
+
+ApprovalInbox.prototype.UpdateApprovalToList = function UpdateApprovalToList(ListName, Metadata, ItemID, ListItemId, DepartmentId, ActionTaken, ProcessType) {
+    var dfd = $.Deferred();
+    var webURI = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + ItemID + "')"; //_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items?$select=ID,DepartmentId/ID&$expand=DepartmentId&$filter=DepartmentId/ID eq "+ItemID+"";
+    $.ajax({
+        url: webURI,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+
+            if (ProcessType == "Announcements" || ProcessType == "Banners" || ProcessType == "Information" || ProcessType == "General" || ProcessType == "Recognition" || ProcessType == "Events" || ProcessType == "Idea Bank" || ProcessType == "Polls") {
+                objApprovalInbox.UpdateCompanyMainList(ListItemId, DepartmentId, ActionTaken, ProcessType);
+            }
+                //else if (ProcessType == "Banners") 
+                //{
+                //	UpdateApprovalStatus(ListItemId, ActionTaken, ProcessType);
+                //}
+            else if (ProcessType == "New Initiative" || ProcessType == "Activity" || ProcessType == "Suggestion" || ProcessType == "Suggesion") {
+                var Siteurl = titanForWork.getQueryStringParameter("CompanySiteUrl");
+                var listName = "Activity";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'ApprovalStatus': ActionTaken, 'ApprovarName': _spPageContextInfo.userDisplayName };
+                UniversalUpdate(Siteurl, listName, item, ListItemId);
+            }
+            else if (ProcessType == "QuestionAnswer") {
+                var Siteurl = _spPageContextInfo.webAbsoluteUrl;
+                var listName = "Questions_Master";
+                var item = { '__metadata': { type: 'SP.Data.Questions_x005f_MasterListItem' }, 'ApprovalStatus': ActionTaken, 'ApprovedById': _spPageContextInfo.userId };
+                UniversalUpdate(Siteurl, listName, item, ListItemId);
+            }
+
+            else {
+                objApprovalInbox.UpdateDepartmentalMainList(ListItemId, DepartmentId, ActionTaken, ProcessType);
+            }
+        },
+        error: function (error) {
+
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//////// For Company Level Approvals
+ApprovalInbox.prototype.UpdateCompanyMainList = function UpdateCompanyMainList(ListItemId, DepartmentId, ActionTaken, ProcessType) {
+    //objApprovalInbox.updateMainList(ListItemId, siteURL, ActionTaken, ProcessType);
+    objApprovalInbox.updateMainList(ListItemId, ActionTaken, ProcessType);
+}
+
+//////// For Departmental Level Approvals
+ApprovalInbox.prototype.UpdateDepartmentalMainList = function UpdateDepartmentalMainList(ListItemId, DepartmentId, ActionTaken, ProcessType) {
+    var listName = 'Departments';
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,SiteURL&$filter=ID eq '" + DepartmentId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0) {
+                var siteURL = items[0].SiteURL;
+                objApprovalInbox.updateMainList(ListItemId, siteURL, ActionTaken, ProcessType);
+            }
+
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+}
+
+
+//ApprovalInbox.prototype.updateMainList = function updateMainList(ListItemId, siteURL, ActionTaken, ProcessType) {
+ApprovalInbox.prototype.updateMainList = function updateMainList(ListItemId, ActionTaken, ProcessType) {
+    var Handler = this;
+    try {
+        var currentUserID = _spPageContextInfo.userId;
+        var currentDate = new Date();
+        var activeStatus = '';
+        var contentListName = '';
+        var ItemType;
+        if (ActionTaken == "Approved") {
+            activeStatus = true;
+        }
+        else {
+            activeStatus = false;
+        }
+        if (ProcessType == "Discussion") {
+            contentListName = "Discussions";
+        }
+        else if (ProcessType == "Suggestion") {
+            contentListName = "Activity";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+        }
+        else if (ProcessType == "Activity") {
+            contentListName = "Activity";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+        }
+        else if (ProcessType == "New Initiative") {
+            contentListName = "Activity";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+        }
+        else if (ProcessType == "Banners" || ProcessType == "Information") {
+            contentListName = "Announcements";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Announcemnets List exists on Company Level
+        }
+        else if (ProcessType == "Announcements") {
+            contentListName = "Announcements";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Announcemnets List exists on Company Level
+        }
+        else if (ProcessType == "General") {
+            contentListName = "Announcements";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Announcemnets List exists on Company Level
+        }
+        else if (ProcessType == "Recognition") {
+            contentListName = "Announcements";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Announcemnets List exists on Company Level
+        }
+        else if (ProcessType == "Polls") {
+            contentListName = "MainPollsList";
+            //siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// MainPollsList List exists on Company Level
+            siteURL = _spPageContextInfo.webAbsoluteUrl;
+        }
+
+        else if (ProcessType == "Idea Bank") {
+            contentListName = "IdeaBank";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Events List exists on Company Level
+        }
+        else if (ProcessType == "Events") {
+            contentListName = "Event";
+            siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");		// Events List exists on Company Level
+        }
+        else if (ProcessType == "Departmental Events")				// Events List exists on Departmental Level
+        {
+            contentListName = "Events";
+        }
+        ItemType = GetItemTypeForList(contentListName);
+        if (ProcessType == "Departmental Documents") {
+            contentListName = "DepartmentalDMS";
+            ItemType = "SP.Data." + contentListName.charAt(0).toUpperCase() + contentListName.split(" ").join("").slice(1) + "Item";
+        }
+        var Metadata;
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Active: activeStatus,
+            ApprovalStatus: ActionTaken,
+            ApprovedById: currentUserID,
+            ApprovedDate: currentDate
+        };
+        if (ProcessType == "Polls") {
+            if (ActionTaken == "Approved") {
+                ActionTaken = "Active";
+            }
+            Metadata = '';
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                //Active: activeStatus,
+                Status: ActionTaken,
+                //ApprovedById: currentUserID,
+                //ApprovedDate: currentDate
+            };
+        }
+        if (ProcessType == "Discussion" || ProcessType == "Suggestion")		// For Discussions and Suggestions, Active Column is used but for All Others Lists and Libraries, ApprovalStatus column will be used.
+        {
+            delete Metadata["ApprovalStatus"];
+        }
+        else {
+            delete Metadata["Active"];
+        }
+        if (ProcessType == "Idea Bank") {
+            Metadata.ApproverComments = Handler.Remarks.val();
+        }
+        objApprovalInbox.UpdateMainListItem(contentListName, Metadata, ListItemId, siteURL);
+
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+}
+
+ApprovalInbox.prototype.UpdateMainListItem = function UpdateMainListItem(contentListName, Metadata, ListItemId, siteURL) {
+    var Handler = this;
+    if (contentListName == "Announcements") {
+        var webURI = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + contentListName + "')/GetItemById('" + ListItemId + "')";
+    }
+    else {
+        var webURI = siteURL + "/_api/web/lists/getbytitle('" + contentListName + "')/GetItemById('" + ListItemId + "')";
+    }
+    if (contentListName == "BannerImages") { alert("Process identify"); }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: webURI,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+            //getDepartmentURL(ListItemId,DepartmentId,ActionTaken);
+            alert("Action taken successfully.");
+            Handler.ModalPopupApproval.modal('hide');
+            objApprovalInbox.GetApprovalInboxTasks("PageLoad");		// Get Announcements
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+ApprovalInbox.prototype.GetItemTypeForListName = function GetItemTypeForListName(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+$(document).ready(function () {
+	GetApprovalInboxCount();
+    objApprovalInbox = new ApprovalInbox();
+    objApprovalInbox.InitializeControls();
+    objApprovalInbox.SetControls();
+    objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+
+    $("#txtApprovalAction").change(function () {
+        var Action = $("#txtApprovalAction option:selected").text();
+
+        if (Action == existStatus) {
+
+            $('#lblRemarks').removeClass('required')
+            $('.action').hide()
+            $('#btnAction').addClass('hide')
+
+        }
+        else {
+            $('.action').show()
+            $('#btnAction').removeClass('hide')
+            $('#EventCancel').hide();
+        }
+    });
+    $("#SeeMoreApprovalIn").click(function () {
+        var lastPage = $("#ddlApprovalIn").val();
+        objApprovalInbox.GetApprovalInboxTasks("");
+        $("#ddlApprovalIn").val(lastPage);
+        $("#ddlApprovalIn").trigger("change");
+    });
+    $("#ApprovalPendingTask").click(function () {
+        objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+    });
+
+    $("#SeeMoreFilterApprovalIn").click(function () {
+        var lastPage = $("#ddlApprovalIn").val();
+        if (NextURLApprovalIn != null) {
+            var Query = "?" + NextURLApprovalIn.split('?')[1];
+        }
+        FilterApprovalData(Query, "");
+        $("#ddlApprovalIn").val(lastPage);
+        $("#ddlApprovalIn").trigger("change");
+    });
+});
+
+function ViewApprovalDetails(ListItemId, ProcessType) {
+    var Url = PageNameByProcessType(ListItemId, ProcessType);
+    $('#siteViewmodal').attr('src', Url);
+    setInterval(function () {
+        $('#siteViewmodal').contents().find('html').css({ "overflow-y": "unset" });
+        $('#siteViewmodal').contents().find('body').css({ "overflow-y": "scroll" });
+    }, 1000);
+}
+
+function truncate(source, size) {
+    if (source != null) {
+        return source.length > size ? source.slice(0, size - 1) + "…" : source;
+    }
+}
+
+function UpdateApprovalStatus(ListItemId, ActionTaken, ProcessType) {
+    var documentLibraryName = "BannerImages";
+    var _url = titanForWork.getQueryStringParameter('CompanySiteUrl') + "/_api/Web/Lists/getByTitle('" + documentLibraryName + "')/Items(" + ListItemId + ")";
+    $.ajax
+		({
+		    url: _url,
+		    type: "POST",
+		    async: false,
+		    data: JSON.stringify
+				({
+				    __metadata:
+					{
+					    type: "SP.Data.BannerImagesItem"
+					},
+				    ApprovalStatus: ActionTaken
+				}),
+		    headers: {
+		        "accept": "application/json;odata=verbose",
+		        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+		        "content-Type": "application/json;odata=verbose",
+		        "X-Http-Method": "PATCH",
+		        "If-Match": '*'
+		    },
+		    success: function (data, status, xhr) { console.log("Approved Success!"); },
+		    error: function (error) { console.log(error); }
+		});
+}
+
+
+
+function PageNameByProcessType(ListItemId, _ProcessType) {
+    var PageName;
+    var event_pop;
+    switch (_ProcessType) {
+        case 'Alert': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Alert?MODAL"; break;
+        case 'Announcements': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Announcement?MODAL"; break;
+            //case 'Banners': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/AddSlider.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View?MODAL"; break;
+        case 'Banners': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/AddSlider.aspx?WebAppId=" + Logged_CompanyId + "&Rec=" + window.btoa(ListItemId) + "&Mode="+window.btoa('Edit')+"&sourcelocation=../Pages/TaskDashboard.aspx?MODAL"; break;
+        case 'Department Banners': PageName = "Department Banners"; break;
+        case 'Department MediaGallary': PageName = "Department MediaGallary"; break;
+        case 'Departmental Events': PageName = "Departmental Events"; break;
+        case 'DepartmentDocument_Access': PageName = "DepartmentDocument_Access"; break;
+        case 'Discussion': PageName = "Discussion"; break;
+        case 'Documents': PageName = "Documents"; break;
+        case 'Emergency Annoucements': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Alert?MODAL"; break;
+
+        //case 'General': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/BiographyWebpart.aspx?itemId=" + ListItemId + "&WebAppId=" + Logged_CompanyId + "&Mode=View?MODAL"; break;
+        case 'General': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/ExperienceEntry.aspx?itemId=" + ListItemId + "&WebAppId=" + Logged_CompanyId + "&Rec=" + window.btoa(ListItemId) + "&Mode="+window.btoa('Edit')+"&sourcelocation=../Pages/TaskDashboard.aspx?MODAL"; break;
+        case 'HR Admin': PageName = "HR Admin"; break;
+        case 'Knowledge': PageName = "Knowledge"; break;
+        case 'Media': PageName = "Media"; break;
+        case 'Media Gallery': PageName = "Media Gallery"; break;
+        case 'New Initiative': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Activity.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Initiative&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Occasion': PageName = "Occasion"; break;
+        case 'Polls': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/AddPolls.aspx?WebAppId=" + Logged_CompanyId + "&PollId=" + window.btoa(ListItemId) + "&Mode=View&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Project Admin': PageName = "Project Admin"; break;
+        case 'QuestionAnswer': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/QuestionAnswer.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        //case 'Recognition': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Empofthemonth.aspx?WebAppId=" + Logged_CompanyId + "&itemId=" + ListItemId + "&Mode=View&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Recognition': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/RecognitionEntry.aspx?WebAppId=" + Logged_CompanyId + "&Rec=" + window.btoa(ListItemId) + "&Mode="+window.btoa('Edit')+"&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Suggesion': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Activity.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Suggestion&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Activity': PageName = _spPageContextInfo.webAbsoluteUrl + "/Pages/Activity.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + ListItemId + "&Mode=View&Type=Activities&sourcelocation=../Pages/MyDashboard.aspx?MODAL"; break;
+        case 'Tech Admin': PageName = "Tech Admin"; break;
+        case 'Trello Board': PageName = "Trello Board";
+    }
+    return PageName;
+}
+
+
+
+
+//Add to event popup   
+
+function EventPopup(globalEventId) {
+
+    $('.addClickEditCompanyEvent').hide();
+    $('.deleteClickEditCompanyEvent').hide();
+    // globalEventId = ListItemId;
+
+    var companySiteUrlLink = titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var listName = 'Event';
+    var siteURL = companySiteUrlLink + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,Title,Location,EventDate,EndDate,Description,Category,Department,ChooseImage ,ImageURL,Author/ID,ApprovalStatus&$expand=Author&$filter=ID eq '" + globalEventId + "'&$expand=AttachmentFiles";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+
+
+            $("#myViewEventModal").modal('show');
+            var items = data.d.results;
+            if (items.length > 0) {
+                var title = items[0].Title;
+                if (title == null) {
+                    title = "";
+                }
+                $('#labelEventTitle').text(title);
+                var txtLocation = items[0].Location;
+                if (txtLocation == null) {
+                    txtLocation = "";
+                }
+                $('#labelLocation').text(txtLocation);
+
+                var txtEventDate = items[0].EventDate;
+                if (txtEventDate != null) {
+                    $('#labelStartDateTime').text(convertJSONDateAMPMWithDate(txtEventDate));
+                }
+                var txtEndDate = items[0].EndDate;
+                if (txtEndDate != null) {
+                    $('#labelEndDateTime').text(convertJSONDateAMPMWithDate(txtEndDate));
+                }
+                var txtDescription = items[0].Description;
+                if (txtDescription == null) {
+                    txtDescription = "";
+                }
+                if (txtDescription.match("https")) {
+                    var strsplit = txtDescription.split("https");
+                    var removespl = strsplit[1].slice(5);
+                    var txtDescription = strsplit[0] + "https:" + removespl;
+                    $('#lblNewEventDescription').text(txtDescription);
+                }
+                else {
+                    $('#lblNewEventDescription').text(txtDescription);
+                }
+                var txtCategory = items[0].Category;
+                if (txtCategory == null) {
+                    txtCategory = "";
+                }
+                $('#labelNewEventCategory').text(txtCategory);
+                var txtDepartment = items[0].Department;
+                if (txtDepartment == null) {
+                    txtDepartment = "";
+                }
+                $('#labelDepartment').text(txtDepartment);
+                var ChooseImage = items[0].ChooseImage;
+                $('#slctimage').text(txtDepartment);
+
+                if (ChooseImage == "Upload") {
+                    var Picture = items[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                    var image = $('#labelImageURL');
+                    if (txtImageURL == null) {
+                        txtImageURL = "";
+                    }
+                    // $('#labelImageURL').text(txtImageURL);
+                    image[0].src = Picture;
+                }
+                else {
+                    var txtImageURL = items[0].ImageURL;
+                    var image = $('#labelImageURL');
+
+                    if (txtImageURL == null) {
+                        txtImageURL = "";
+                    }
+                    // $('#labelImageURL').text(txtImageURL);
+                    image[0].src = txtImageURL;
+                }
+                ApprovalStatus = items[0].ApprovalStatus;
+                $('#labelStatus').text(ApprovalStatus);
+
+            }
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+
+}
+function convertJSONDateAMPMWithDate(jsonDateTime) {
+
+    var date = new Date(jsonDateTime);
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		"July", "Aug", "Sept", "Oct", "Nov", "Dec"
+    ];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return date.getDate() + "-" + monthNames[date.getMonth()] + "-" + date.getFullYear() + " " + strTime;
+    // return monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear() + " " + strTime;
+}
+
+function UniversalUpdate(Siteurl, listName, item, dataid) {
+    $.ajax({
+        url: Siteurl + "/_api/web/lists/GetByTitle('" + listName + "')/items('" + dataid + "')",
+        type: "POST",
+        async: false,
+        data: JSON.stringify(item),
+        headers:
+        {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE"
+        },
+        success: function (data, status, xhr) { alert("Action taken successfully."); },
+        error: function (data) {
+            alert("An error occurred. Please contact your system administrator / Refresh a WebPage !");
+            console.log(data);
+        }
+    });
+}
+
+
+
+function GenerateTableApprovalInbox() {
+    sorterApprovalInbox = new TINY.table.sorter('sorterApprovalInbox', 'tableTempApprovalInbox', {
+        // headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columnsApprovalInbox',
+        currentid: 'currentpageApprovalInbox',
+        totalid: 'totalpagesApprovalInbox',
+        startingrecid: 'startrecordApprovalInbox',
+        endingrecid: 'endrecordApprovalInbox',
+        totalrecid: 'totalrecordsApprovalInbox',
+        //hoverid: 'selectedrowSharedWithMe',
+        pageddid: 'pagedropdownApprovalInbox',
+        navid: 'tablenavApprovalInbox',
+        //sortcolumn: 1,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+$(document).ready(function () {
+    initializePeoplePicker("ApprovalInboxPeople");
+    $("#WebpartApprovalInbox").change(function () {
+        var webpartName = this.value;
+        if (webpartName != "All") {
+            catagoryBasedOnWebPartName(webpartName);
+        }
+        else {
+            // $('#ProjectModule').attr('disabled', true);
+            // $("#ProjectModule").empty();
+            //   $('<option value="All">All</option>').appendTo("#ProjectModule");
+        }
+    });
+});
+
+
+function catagoryBasedOnWebPartName(webpartName) {
+    //  $('#ProjectModule').attr('disabled', false);
+    $("#categoryApprovalInbox").empty()
+    //  var uniqueValues = [];
+    //  var result;
+    $('<option value="All">All</option>').appendTo("#categoryApprovalInbox");
+    var listName = 'ProjectModules';
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('CategoryMaster')/items?$select=CategoryType,CatogeryName&$filter=CategoryType eq '" + webpartName + "'";
+    $.ajax({
+        url: siteURL,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var option = "";
+            var valuesArray = data.d.results;
+
+            $.each(valuesArray, function (i, el) {
+                option += "<option value='" + el.CatogeryName + "'>" + el.CatogeryName + "</option>";
+            });
+
+            $("#categoryApprovalInbox").append(option);
+        },
+        error: function (data) {
+            console.log(data.responseJSON.error);
+
+        }
+
+    });
+}
+
+function FilterApprovalInbox() {
+    $("#SeeMoreApprovalIn").hide();
+    $("#SeeMoreFilterApprovalIn").show();
+    var restquery = "";
+    var ApprovalinboxChip = "";
+
+    if ($('#txtFilterApprovalStatusInbox').val() != "All") {
+        restquery += "and Status eq '" + $('#txtFilterApprovalStatusInbox').val() + "' ";
+        ApprovalinboxChip += "<div class='upload-chip'>" + $('#txtFilterApprovalStatusInbox option:selected').text() + "</div>";
+
+
+    }
+    if ($('#WebpartApprovalInbox').val() != "All") {
+        restquery += "and WebpartName eq '" + $('#WebpartApprovalInbox').val() + "' ";
+        ApprovalinboxChip += "<div class='upload-chip'>" + $('#WebpartApprovalInbox option:selected').text() + "</div>";
+
+    }
+
+    if ($('#categoryApprovalInbox').val() != "All") {
+        restquery += "and Category eq '" + $('#categoryApprovalInbox').val() + "' ";
+        ApprovalinboxChip += "<div class='upload-chip'>" + $('#categoryApprovalInbox option:selected').text() + "</div>";
+
+    }
+    if ($("#ApprovalInboxPeople_TopSpan_ResolvedList").text() != "") {
+        var assigntobyme = getUserInformation('ApprovalInboxPeople');
+        ApprovalinboxChip += "<div class='upload-chip'>" + assignBy.join(', ') + "</div>";
+        if (assigntobyme.length > 0) {
+            restquery += "and (AuthorId eq '" + assigntobyme[0] + "' ";
+            for (var i = 0; i < assigntobyme.length; i++) {
+                if (assigntobyme[i] != assigntobyme[0]) {
+                    restquery += "or AuthorId eq '" + assigntobyme[i] + "'";
+                    //ApprovalinboxChip +="<div class='upload-chip'>"+assigntobyme[i]+"</div>"; 
+                }
+            }
+            restquery += ")";
+        }
+    }
+    $("#ApprovalinboxChip").empty();
+    $("#ApprovalinboxChip").append(ApprovalinboxChip);
+	var dateFilter = new Date();
+    dateFilter = dateFilter.setFullYear(dateFilter.getFullYear() - 1);
+    dateFilter = new Date(dateFilter);
+    var requestUri = "?$select=ID,Title,Status,WebpartName,ApprovedDate,Remarks,ItemId,DepartmentId/ID,Details,DepartmentId/DepartmentName,ApprovedBy/Title,Author/Title,*&$Expand=ApprovedBy,Author,DepartmentId&$OrderBy=Modified desc&$top=5000&$Filter=ApproversId eq '" + _spPageContextInfo.userId + "' and Created ge datetime'" + dateFilter.toISOString() + "' " + restquery;
+
+    FilterApprovalData(requestUri, "Filter");
+}
+
+
+function FilterApprovalData(Query, Action) {
+	var EmptyAction = Action;
+    $.when(getItemsWithQueryItem('ApprovalTaskList', Query, "ApprovalIn")).done(function (TaskResults) {
+
+        if (EmptyAction == "Filter") { // Empty the table
+            $("#mainDivAreaApprovalInbox").empty();
+        }
+        if (NextURLApprovalIn == null) {
+            $("#SeeMoreFilterApprovalIn").hide();
+        }
+        else {
+            $("#SeeMoreFilterApprovalIn").show();
+        }
+        var items = TaskResults.results;
+
+
+        itemsarray = items;
+        var tableItemsHTML = "";
+        for (var i = 0; i < items.length; i++) {
+            var itemId = items[i].ID;
+            var Title = items[i].Title;
+            var TaskAssignFrom = items[i].Author.Title;
+            //TaskAssignFrom=getUserName(TaskAssignFrom);			// Need to change this piece of code.
+            var CurrentPhase = items[i].Status;
+            var ProcessType = items[i].WebpartName;
+            var ProcessTypeCategory = items[i].Category;
+            var DepartmentName = items[i].DepartmentId.DepartmentName == undefined ? '' : items[i].DepartmentId.DepartmentName;
+            var approvedDate = items[i].ApprovedDate;
+            var approvedBy = items[i].ApprovedBy.Title;
+            var remarks = items[i].Remarks;
+            var webpartname = items[i].WebpartName;
+            if(webpartname == "Banners"){
+            	webpartname = "Information";
+            }
+            var details = items[i].Details;
+            var ListItemId = items[i].ItemId;
+            var DepartmentId = items[i].DepartmentId.ID;
+            if (remarks == null) { remarks = ''; }
+            if (approvedDate == null) { approvedDate = ''; }
+            else {
+                approvedDate = new Date(approvedDate);
+                approvedDate = titanForWork.ShowCommonStandardDateFormat(approvedDate);//.toLocaleDateString();
+            }
+
+            if (approvedBy == null) { approvedBy = ''; }
+            if (ProcessTypeCategory == null) { ProcessTypeCategory = webpartname; }
+            var ItemDtlList = [];
+            ItemDtlList.push(itemId, Title, remarks, ListItemId, CurrentPhase, DepartmentId, ProcessType);
+
+
+            var Action = "";
+            Action = "<input style='display:none' type='text' class='cssItemID' value='" + itemId + "'><div style='display:none' class='cssTitle'>" + Title + "</div><div style='display:none' class='cssRemarks'>" + remarks + "</div><div style='display:none' class='cssdetails' >" + details + "</div><input style='display:none' type='text' class='cssListItemId' value='" + ListItemId + "'><input style='display:none' type='text' class='cssStausId' value='" + CurrentPhase + "'><input style='display:none' type='text' class='cssDepartmentId' value='" + DepartmentId + "'><input style='display:none' type='text' class='cssProcessType' value='" + ProcessType + "'><a class='projectGridInboxTaskEvent1444' style='cursor:pointer' onclick='getActionbtnValuesInbox(\"" + itemId + "\")'>Action</a>";
+            //tableItemsHTML += "<tr><td>" + truncate(Title, 55) + "</td><td>" + TaskAssignFrom + "</td><td>" + CurrentPhase + "</td><td>" + webpartname + "</td><td>" + ProcessTypeCategory + "</td><td>" + approvedDate + "</td><td>" + approvedBy + "</td><td>" + truncate(remarks, 100) + "</td>";
+            //tableItemsHTML += "<td>" + Action + "</td></tr>";
+            tableItemsHTML += "<tr>" +
+            "<td><p class='m-0 ellipsis-2'>" + truncate(Title, 55) + "</p></td>" +
+            "<td class='text-center'><div class=''><p class='m-0 ellipsis-2'>" + TaskAssignFrom + "</p></div></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + CurrentPhase + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + webpartname + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + ProcessTypeCategory + "</p></td>" +
+            "<td class='text-center'><p class='m-0 mb-10'>" + approvedDate + "</p></td>" +
+            "<td class='text-center'><p class='m-0 ellipsis-2'>" + approvedBy + "</p></td>" +
+            "<td class='text-center vertical-align-middle'><button type='button' class='btn custom-btn custom-btn-two'  onclick='getActionbtnValuesInbox(\"" + itemId + "\")'>Action</button></td>" +
+            "</tr>";
+
+
+
+        }
+
+        if (items.length == 0) {
+            $('#NoRecordFoundApprovalInbox').show();
+        }
+        else {
+            $('#NoRecordFoundApprovalInbox').hide();
+        }
+
+        // $(".TaskOutBoxTable").append(tableOutboxHtml);
+        $("#mainDivAreaApprovalInbox").append(tableItemsHTML);
+
+        //Showing data out of total
+        if ($('#tableTempApprovalInbox>tbody tr').length > 100 && NextURLApprovalIn != null) {
+            $("#ShowTotalApprovalIn").hide();
+            $("#ShowApprovalIn").show();
+            $("#ApprovalInCount").text($('#tableTempApprovalInbox>tbody tr').length);
+        }
+        else {
+            $("#ShowTotalApprovalIn").show();
+            $("#ShowApprovalIn").hide();
+            $("#TotalItemsApprovalIn").text(items.length);
+        }
+        if ($('#tableTempApprovalInbox>tbody tr').length == 5000) {
+            NextURLApprovalIn = null;
+            $("#SeeMoreFilterApprovalIn").hide();
+        }
+        if (items.length > 0) {
+
+            GenerateTableApprovalInbox()
+        }
+
+        //table.rows.add($(tableItemsHTML)).draw();
+        //objApprovalInbox.ApprovalTaskInboxEvent();		// Bind Action Form events. //Commented by Amit kumar Not Usefull Function.   
+        //objApprovalInbox.TableConfiguration();        // comment by harsh
+
+    }).fail(function (error) {
+            if(error.responseJSON.error.message.value.indexOf("The attempted operation is prohibited because it exceeds the list view threshold.") != -1){
+                $("#ThresholdError").modal('show');
+                $("#btnContinue").hide();
+                $("#btnContinueOutBox").hide();
+            }
+            else {
+                HandleError(error);
+            }
+        });
+}
+
+function GetApprovalInboxCount(){
+	//var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('ApprovalTaskList')/items?$select=*,Author/EMail&$expand=Author&$Filter=Author/EMail eq '"+_spPageContextInfo.userEmail+"' and CompanyId eq '"+Logged_CompanyId+"' and Status eq 'Initiated'";
+	var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('ApprovalTaskList')/items?$select=*,Approvers/EMail&$top=5000&$expand=Approvers&$Filter=ApproversId/EMail eq '"+_spPageContextInfo.userEmail+"' and Status eq 'Initiated'";
+	$.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+				var items=data.d.results;
+				$("#ApprovalPendingTask").append(items.length);
+				
+			},
+			error: function () {
+                alert("Error getting the Approver Inbox Count .");
+            } 
+	});
+}
+
+function ClearApprovalInboxFilter() {
+    $('#txtFilterApprovalStatusInbox').val("Initiated");
+    $('#WebpartApprovalInbox').val("All");
+    $('#categoryApprovalInbox').val("All");
+    $("#ApprovalinboxChip").empty();
+    clearPeoplePickerControl("ApprovalInboxPeople");
+    var Handler = this;
+    Handler.TaskPhase = "Initiated";
+    objApprovalInbox.GetApprovalInboxTasks("PageLoad");
+}

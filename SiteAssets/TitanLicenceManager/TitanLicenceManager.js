@@ -1,1 +1,2156 @@
-var a508_0x430fe8=a508_0x48b3;(function(_0x45ecea,_0x1ca182){var _0x4cd61d=a508_0x48b3,_0x1ba473=_0x45ecea();while(!![]){try{var _0x5131c4=-parseInt(_0x4cd61d(0x31a))/0x1*(parseInt(_0x4cd61d(0x2a4))/0x2)+-parseInt(_0x4cd61d(0x2d0))/0x3+-parseInt(_0x4cd61d(0x331))/0x4*(-parseInt(_0x4cd61d(0x34f))/0x5)+-parseInt(_0x4cd61d(0x35f))/0x6+-parseInt(_0x4cd61d(0x21f))/0x7*(parseInt(_0x4cd61d(0x2c1))/0x8)+parseInt(_0x4cd61d(0x2b2))/0x9*(parseInt(_0x4cd61d(0x290))/0xa)+parseInt(_0x4cd61d(0x2fd))/0xb*(parseInt(_0x4cd61d(0x220))/0xc);if(_0x5131c4===_0x1ca182)break;else _0x1ba473['push'](_0x1ba473['shift']());}catch(_0x121e83){_0x1ba473['push'](_0x1ba473['shift']());}}}(a508_0x347d,0xdc5b1));var AllEmployeeUser='',IsIntranet=![],IsDMS=![],IsProjectTask=![],AssignIntranet='',AssignDMS='',AssignProject='',assignusertable='',IntranetCount=0x0,DMSCount=0x0,ProjectCount=0x0,BPassCount=0x0,ConsumedLicense=0x0,RestQuery='',IsNotSubscribedIntrenet=![],IsNotSubscribedDMS=![],IsNotSubscribedProject=![],IsValueSet=![],AllEmployees=[],LicProjectTaskAvilableCount=0x0,ConsumedLicenseType='',LicIntranetAvilableCount=0x0,LicDMSAvilableCount=0x0,SetNewProject=![],SetNewInternet=![],SetNewDMS=![],SetNewBpass=![];$(document)[a508_0x430fe8(0x1e2)](function(){var _0x1f4e39=a508_0x430fe8;!activeCheck&&$(_0x1f4e39(0x2cc))[_0x1f4e39(0x25f)](_0x1f4e39(0x241));licenseValidDate[_0x1f4e39(0x31d)](licenseValidDate[_0x1f4e39(0x227)]()-0x1),$(_0x1f4e39(0x362))[_0x1f4e39(0x35c)](licenseValidDate['toLocaleDateString'](_0x1f4e39(0x22c),{'day':_0x1f4e39(0x212),'month':_0x1f4e39(0x363),'year':_0x1f4e39(0x212)}));var _0x378d06=getCompanyApprovers(),_0x614c41=_0x378d06[_0x1f4e39(0x232)](function(_0x3299a9){var _0x5ca677=_0x1f4e39;return _0x3299a9['Id']==_spPageContextInfo[_0x5ca677(0x35b)];});_0x614c41[_0x1f4e39(0x1f8)]==0x0&&_spPageContextInfo['isSiteAdmin']==![]?(alert('Authorization\x20has\x20been\x20denied\x20for\x20this\x20page'),document[_0x1f4e39(0x247)][_0x1f4e39(0x218)]=_spPageContextInfo[_0x1f4e39(0x352)]):Getallinfomation(),$('#txtSearch')['keyup'](function(){var _0x3d34ff=_0x1f4e39;assignusertable[_0x3d34ff(0x29d)]($(this)[_0x3d34ff(0x1fc)]())[_0x3d34ff(0x23f)]();}),$('#DefaultHome')[_0x1f4e39(0x35c)](''),$(_0x1f4e39(0x34c))[_0x1f4e39(0x389)]('<option\x20value=\x22-Select-\x22>-Select-</option>'),IsNotSubscribedIntrenet&&($(_0x1f4e39(0x34c))[_0x1f4e39(0x389)]('<option\x20value=\x22Pages/Home.aspx\x22>Intranet\x20Home</option>'),$(_0x1f4e39(0x34c))[_0x1f4e39(0x389)](_0x1f4e39(0x315))),IsNotSubscribedDMS&&($('#DefaultHome')['append'](_0x1f4e39(0x300)),$(_0x1f4e39(0x34c))[_0x1f4e39(0x389)](_0x1f4e39(0x260))),IsNotSubscribedProject&&$(_0x1f4e39(0x34c))[_0x1f4e39(0x389)]('<option\x20value=\x22Pages/ViewAllProjects.aspx\x22>Projects\x20Dashboard</option>'),IsBpassModules&&$(_0x1f4e39(0x34c))[_0x1f4e39(0x389)](_0x1f4e39(0x2ca)),selectElement(_0x1f4e39(0x2d6),GetWelcomePage()),$(_0x1f4e39(0x34c))['change'](function(){var _0x4948bc=_0x1f4e39;$(_0x4948bc(0x34d),$(this))[_0x4948bc(0x1fc)]()!=_0x4948bc(0x271)&&SetDefaultPage($(_0x4948bc(0x34d),$(this))[_0x4948bc(0x1fc)](),!![]);});});function selectElement(_0x554d79,_0x463e91){var _0x1551ae=a508_0x430fe8;let _0x4f864c=document[_0x1551ae(0x2a9)](_0x554d79);_0x4f864c[_0x1551ae(0x277)]=_0x463e91;}function Getallinfomation(){var _0xa11f80=a508_0x430fe8,_0x55c394=GetAvailbleLicence();BPassCount=GetApprovalProcessMaster(),ConsumedLicense=UsersLicenceRequired-_0x55c394,$(_0xa11f80(0x1f1))[_0xa11f80(0x35c)](''),$('#ConsumedLicense')[_0xa11f80(0x389)](_0xa11f80(0x2e1)+ConsumedLicense+_0xa11f80(0x2dc)),$('#AvilableLicense')[_0xa11f80(0x35c)](''),$(_0xa11f80(0x35a))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+_0x55c394+_0xa11f80(0x2dc));if(TypeofLincnse!='Enterprise'){IntranetCount=0x0,DMSCount=0x0,ProjectCount=0x0;for(var _0xaaaf84=0x0;_0xaaaf84<AllEmployees[_0xa11f80(0x1f8)];_0xaaaf84++){IsDMS=![],IsIntranet=![],IsProjectTask=![];if(AllEmployees[_0xaaaf84][_0xa11f80(0x32e)]!=null){var _0x18f5ff=CryptoJS[_0xa11f80(0x1ff)][_0xa11f80(0x37b)](AllEmployees[_0xaaaf84][_0xa11f80(0x32e)],_0xa11f80(0x309)),_0x24e68c=_0x18f5ff[_0xa11f80(0x34a)](CryptoJS['enc'][_0xa11f80(0x2b4)]);_0x24e68c[_0xa11f80(0x29d)](/Internet/i)>0x0?(IsIntranet=!![],IntranetCount++):IsIntranet=![],_0x24e68c[_0xa11f80(0x29d)](/DMS/i)>0x0?(IsDMS=!![],DMSCount++):IsDMS=![],_0x24e68c['search'](/Project/i)>0x0?(IsProjectTask=!![],ProjectCount++):IsProjectTask=![];}}}$(_0xa11f80(0x210))[_0xa11f80(0x203)](TypeofLincnse),$('#NomberofuserCount')[_0xa11f80(0x35c)](''),$(_0xa11f80(0x279))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+UsersLicenceRequired+_0xa11f80(0x2d2)),$(_0xa11f80(0x1f9))[_0xa11f80(0x35c)](''),$(_0xa11f80(0x1fb))['html'](''),$(_0xa11f80(0x37f))[_0xa11f80(0x35c)]('');if(IsBpassModules){var _0x742bfc=LicBPaas-BPassCount;$(_0xa11f80(0x1f9))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+LicBPaas+_0xa11f80(0x216)),$(_0xa11f80(0x1fb))[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>'+BPassCount+_0xa11f80(0x216)),$(_0xa11f80(0x37f))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+_0x742bfc+_0xa11f80(0x216));}else $(_0xa11f80(0x1f9))[_0xa11f80(0x389)](_0xa11f80(0x37a));$('#LicIntranet')[_0xa11f80(0x35c)](''),$(_0xa11f80(0x365))[_0xa11f80(0x35c)](''),$(_0xa11f80(0x339))[_0xa11f80(0x35c)](''),$(_0xa11f80(0x226))[_0xa11f80(0x35c)]('');var _0x2d6b13='';if(LicIntranet==_0xa11f80(0x259))IsIntranet=!![],$(_0xa11f80(0x2d3))[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20Everyone\x20</h4>'),$('#LicIntranetAvilable')[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20-\x20</h4>'),$('#LicIntranetconsumed')[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20-\x20</h4>'),IsNotSubscribedIntrenet=!![],_0x2d6b13=_0xa11f80(0x30f)+_0xa11f80(0x361)+_0xa11f80(0x20d)+_0xa11f80(0x38b)+'</div>'+_0xa11f80(0x230),$('#Intrnetpopup')[_0xa11f80(0x389)](_0x2d6b13);else{if(LicIntranet>0x0){IsNotSubscribedIntrenet=!![];var _0x166ffe=LicIntranet-IntranetCount;LicIntranetAvilableCount=_0x166ffe,$('#LicIntranetAvilable')[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20'+_0x166ffe+_0xa11f80(0x2dc)),$('#divInternetassign')[_0xa11f80(0x241)](),$(_0xa11f80(0x2d3))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+LicIntranet+_0xa11f80(0x2d2)),$('#LicIntranetconsumed')[_0xa11f80(0x389)](_0xa11f80(0x2c4)+IntranetCount+_0xa11f80(0x2b0)+_0x166ffe+'\x27,\x27true\x27)\x22\x20><h4\x20class=\x22m-0cursor-pointer\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22>'+IntranetCount+'\x20</h4></a>'),_0x2d6b13=_0xa11f80(0x30f)+_0xa11f80(0x361)+_0xa11f80(0x20d)+'<div\x20class=\x22main-card-data2\x20color-green\x20main-card-data2-title\x20assign-user-card-count-align\x22\x20>'+_0xa11f80(0x1f4)+_0xa11f80(0x32d)+_0xa11f80(0x2e0)+IntranetCount+_0xa11f80(0x22a)+_0xa11f80(0x230)+_0xa11f80(0x2f4)+_0xa11f80(0x1f3)+'<span\x20id=\x22LicIntranetAvilableCount\x22>'+_0x166ffe+_0xa11f80(0x22a)+'</div>'+'</div>'+_0xa11f80(0x230)+_0xa11f80(0x230),$(_0xa11f80(0x365))[_0xa11f80(0x389)](_0x2d6b13);}else $(_0xa11f80(0x217))[_0xa11f80(0x264)](),IsNotSubscribedIntrenet=![],$(_0xa11f80(0x2d3))[_0xa11f80(0x389)](_0xa11f80(0x32a)),_0x2d6b13=_0xa11f80(0x30f)+_0xa11f80(0x361)+_0xa11f80(0x20d)+'<div\x20class=\x22main-card-data2\x20color-grey\x20main-card-data2-title\x20assign-user-card-count-align\x22>Not\x20subscribed</div>'+'</div>'+_0xa11f80(0x230),$('#Intrnetpopup')[_0xa11f80(0x389)](_0x2d6b13);}$(_0xa11f80(0x27a))[_0xa11f80(0x35c)](''),$('#LicDMSconsumed')[_0xa11f80(0x35c)](''),$('#LicDMSAvilable')[_0xa11f80(0x35c)](''),$(_0xa11f80(0x332))[_0xa11f80(0x35c)](''),_0x2d6b13='';if(LicDMS==_0xa11f80(0x259))$(_0xa11f80(0x27a))[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20Everyone\x20</h4>'),$('#LicDMSconsumed')[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20-\x20</h4>'),$(_0xa11f80(0x25d))['append'](_0xa11f80(0x296)),IsDMS=!![],IsNotSubscribedDMS=!![],_0x2d6b13='<div\x20class=\x22col-xs-12\x20assign-licence-top-card-hight\x22>'+_0xa11f80(0x361)+_0xa11f80(0x2ab)+_0xa11f80(0x38b)+_0xa11f80(0x230)+_0xa11f80(0x230),$(_0xa11f80(0x332))[_0xa11f80(0x389)](_0x2d6b13);else{if(LicDMS>0x0){var _0x3872bc=LicDMS-DMSCount;LicDMSAvilableCount=_0x3872bc,IsNotSubscribedDMS=!![],$(_0xa11f80(0x27a))[_0xa11f80(0x389)](_0xa11f80(0x2e1)+LicDMS+_0xa11f80(0x2d2)),$('#divDMSassign')['show'](),$('#LicDMSconsumed')['append'](_0xa11f80(0x254)+DMSCount+'\x27,\x27'+_0x3872bc+'\x27,\x27true\x27)\x22\x20><h4\x20class=\x22m-0\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22>'+DMSCount+'\x20</h4><a/>'),$('#LicDMSAvilable')[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>'+_0x3872bc+_0xa11f80(0x2d2)),_0x2d6b13=_0xa11f80(0x2c0)+'<div\x20class=\x22main-card-data1\x22>'+_0xa11f80(0x2ab)+_0xa11f80(0x310)+_0xa11f80(0x1f4)+_0xa11f80(0x32d)+'<span\x20id=\x22LicDMSConsumedCount\x22>\x20'+DMSCount+_0xa11f80(0x22a)+_0xa11f80(0x230)+_0xa11f80(0x2f4)+_0xa11f80(0x1f3)+_0xa11f80(0x2b1)+_0x3872bc+_0xa11f80(0x22a)+'</div>'+_0xa11f80(0x230)+'</div>'+'</div>',$(_0xa11f80(0x332))[_0xa11f80(0x389)](_0x2d6b13);}else $(_0xa11f80(0x27a))[_0xa11f80(0x389)](_0xa11f80(0x21a)),$(_0xa11f80(0x39b))[_0xa11f80(0x264)](),IsNotSubscribedDMS=![],_0x2d6b13='<div\x20class=\x22col-xs-12\x20assign-licence-top-card-hight\x22>'+_0xa11f80(0x361)+_0xa11f80(0x2ab)+_0xa11f80(0x322)+_0xa11f80(0x230)+_0xa11f80(0x230),$('#DMSpopup')['append'](_0x2d6b13);}$(_0xa11f80(0x2ac))[_0xa11f80(0x35c)](''),$(_0xa11f80(0x2ae))[_0xa11f80(0x35c)](''),$(_0xa11f80(0x21e))['html'](''),$('#Taskpopup')[_0xa11f80(0x35c)](''),_0x2d6b13='';if(LicProjectTask=='All')$('#LicProjectTask')[_0xa11f80(0x389)](_0xa11f80(0x229)),$(_0xa11f80(0x2ae))[_0xa11f80(0x389)](_0xa11f80(0x296)),$(_0xa11f80(0x21e))[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>\x20-\x20</h4>'),IsProjectTask=!![],IsNotSubscribedProject=!![],_0x2d6b13=_0xa11f80(0x30f)+'<div\x20class=\x22main-card-data1\x22>'+_0xa11f80(0x345)+_0xa11f80(0x38b)+_0xa11f80(0x230)+_0xa11f80(0x230),$(_0xa11f80(0x28a))[_0xa11f80(0x389)](_0x2d6b13);else LicProjectTask>0x0?($('#divProjectassign')[_0xa11f80(0x241)](),IsNotSubscribedProject=!![],LicProjectTaskAvilableCount=LicProjectTask-ProjectCount,$(_0xa11f80(0x2ac))[_0xa11f80(0x389)]('<h4\x20class=\x22m-0\x22>'+LicProjectTask+_0xa11f80(0x2d2)),$(_0xa11f80(0x2ae))[_0xa11f80(0x389)](_0xa11f80(0x2e2)+ProjectCount+_0xa11f80(0x2b0)+LicProjectTaskAvilableCount+_0xa11f80(0x1e9)+ProjectCount+_0xa11f80(0x2b7)),$(_0xa11f80(0x21e))['append'](_0xa11f80(0x2e1)+LicProjectTaskAvilableCount+_0xa11f80(0x2d2)),_0x2d6b13=_0xa11f80(0x30f)+_0xa11f80(0x361)+'<span>Project\x20&\x20Task</span>'+_0xa11f80(0x310)+_0xa11f80(0x1f4)+'<span>Consumed:&nbsp;</span>'+_0xa11f80(0x2a1)+ProjectCount+_0xa11f80(0x22a)+_0xa11f80(0x230)+_0xa11f80(0x2f4)+_0xa11f80(0x1f3)+'<span\x20id=\x22LicProjectTaskAvilableCount\x22>'+LicProjectTaskAvilableCount+'</span>'+_0xa11f80(0x230)+_0xa11f80(0x230)+_0xa11f80(0x230)+_0xa11f80(0x230),$('#Taskpopup')[_0xa11f80(0x389)](_0x2d6b13)):($(_0xa11f80(0x2ac))[_0xa11f80(0x389)](_0xa11f80(0x21a)),$(_0xa11f80(0x2ae))[_0xa11f80(0x389)](_0xa11f80(0x296)),$(_0xa11f80(0x21e))['append'](_0xa11f80(0x296)),$(_0xa11f80(0x26a))[_0xa11f80(0x264)](),IsNotSubscribedProject=![],_0x2d6b13=_0xa11f80(0x30f)+'<div\x20class=\x22main-card-data1\x22>'+_0xa11f80(0x345)+'<div\x20class=\x22main-card-data2\x20color-grey\x20main-card-data2-title\x20assign-user-card-count-align\x22>Not\x20subscribed</div>'+'</div>'+_0xa11f80(0x230),$('#Taskpopup')[_0xa11f80(0x389)](_0x2d6b13));(LicProjectTask==_0xa11f80(0x259)||LicProjectTask=='0')&&(LicDMS==_0xa11f80(0x259)||LicDMS=='0')&&(LicIntranet==_0xa11f80(0x259)||LicIntranet=='0')?$(_0xa11f80(0x201))[_0xa11f80(0x264)]():$(_0xa11f80(0x201))[_0xa11f80(0x241)]();}$(a508_0x430fe8(0x24f))['on'](a508_0x430fe8(0x31b),function(){var _0x5187ff=a508_0x430fe8,_0x2329f4='';if($(_0x5187ff(0x2f2))[_0x5187ff(0x1fc)]()!=''){var _0x5cb1f2=CryptoJS['AES']['decrypt']($(_0x5187ff(0x2f2))['val'](),_0x5187ff(0x309));_0x5cb1f2=_0x5cb1f2[_0x5187ff(0x34a)](CryptoJS[_0x5187ff(0x242)][_0x5187ff(0x2b4)])['split']('|');if(_0x5cb1f2[_0x5187ff(0x1f8)]>0x7){var _0x2832cf=new Date();_0x2329f4=new Date(_0x5cb1f2[0x1]),_0x2329f4[_0x5187ff(0x31d)](_0x2329f4[_0x5187ff(0x227)]()+0x1);var _0x24f6b1=_0x5cb1f2[0x2][_0x5187ff(0x286)]('=')[0x1],_0x2a36e9=_0x5cb1f2[0x4][_0x5187ff(0x286)]('=')[0x1],_0x153a47=_0x5cb1f2[0x5]['split']('=')[0x1],_0x5dc814=_0x5cb1f2[0x6][_0x5187ff(0x286)]('=')[0x1],_0x5738f1=_0x5cb1f2[0x7][_0x5187ff(0x286)]('=')[0x1],_0x184eb7=0x0,_0x12de5e=0x0,_0x5b53a6=0x0,_0x2bd6e0=_0x5738f1,_0x421b5f=new Date(_0x5cb1f2[0x1]),_0x1798c2='';}else return alert(_0x5187ff(0x1ea)),![];if(window[_0x5187ff(0x247)][_0x5187ff(0x1e8)]['toLowerCase']()!=_0x5cb1f2[0x0]['toLowerCase']())return alert(_0x5187ff(0x370)),![];if(Date[_0x5187ff(0x2b5)](_0x2832cf)<Date[_0x5187ff(0x2b5)](_0x2329f4)){}else return alert(_0x5187ff(0x29f)),![];$('#Validuptomanage')['text'](_0x421b5f[_0x5187ff(0x26e)](_0x5187ff(0x22c),{'day':_0x5187ff(0x212),'month':_0x5187ff(0x363),'year':'numeric'})),$(_0x5187ff(0x2cf))['html'](_0x24f6b1),NewAvailable=_0x24f6b1-ConsumedLicense;NewAvailable>0x0?$('#Consumed-license-AlreadyLicensConsumed-manage-TotalUser')[_0x5187ff(0x35c)](ConsumedLicense):$(_0x5187ff(0x2d1))[_0x5187ff(0x35c)]('<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27ActiveUser\x27,\x27'+_0x24f6b1+_0x5187ff(0x2b0)+NewAvailable+_0x5187ff(0x270)+ConsumedLicense+_0x5187ff(0x2b7));$(_0x5187ff(0x342))[_0x5187ff(0x35c)](NewAvailable),$(_0x5187ff(0x285))[_0x5187ff(0x35c)](''),$(_0x5187ff(0x2f3))[_0x5187ff(0x35c)](''),$(_0x5187ff(0x38c))[_0x5187ff(0x35c)]('');if(_0x2a36e9=='All')$(_0x5187ff(0x36c))[_0x5187ff(0x35c)](_0x5187ff(0x2ce)),$(_0x5187ff(0x285))[_0x5187ff(0x35c)]('-'),$('#Consumed-license-BalanceLicense-manage-Intranet')[_0x5187ff(0x35c)]('-'),_0x184eb7=0x1,SetNewInternet=!![];else{if(_0x2a36e9=='0')_0x184eb7=_0x2a36e9-IntranetCount,$(_0x5187ff(0x36c))[_0x5187ff(0x35c)](_0x5187ff(0x2bd)),$('#Consumed-license-AlreadyLicensConsumed-manage-Intranet')['append']('<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27Internet\x27,\x27'+IntranetCount+'\x27,\x27'+_0x184eb7+_0x5187ff(0x270)+IntranetCount+_0x5187ff(0x2b7)),$(_0x5187ff(0x26d))['html'](_0x184eb7),SetNewInternet=![],parseInt(_0x2a36e9)==_0x184eb7&&(_0x184eb7=0x1);else _0x2a36e9>0x0?(_0x184eb7=_0x2a36e9-IntranetCount,$(_0x5187ff(0x36c))['html'](_0x2a36e9),$('#Consumed-license-AlreadyLicensConsumed-manage-Intranet')[_0x5187ff(0x35c)](IntranetCount),$(_0x5187ff(0x26d))[_0x5187ff(0x35c)](_0x184eb7),SetNewInternet=!![]):$(_0x5187ff(0x285))['append']('<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27Internet\x27,\x27'+IntranetCount+_0x5187ff(0x2b0)+_0x184eb7+_0x5187ff(0x270)+IntranetCount+'\x20</h4></a>');}if(_0x153a47==_0x5187ff(0x259))$('#Consumed-license-NewAlreadyLicens-manage-DMS')[_0x5187ff(0x35c)]('Everyone'),$(_0x5187ff(0x2f3))['html']('-'),$(_0x5187ff(0x282))[_0x5187ff(0x35c)]('-'),_0x12de5e=0x1,SetNewDMS=!![];else{if(_0x153a47=='0')_0x12de5e=_0x153a47-DMSCount,$(_0x5187ff(0x37d))[_0x5187ff(0x35c)](_0x5187ff(0x2bd)),$(_0x5187ff(0x2f3))[_0x5187ff(0x389)]('<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27DMS\x27,\x27'+DMSCount+_0x5187ff(0x2b0)+_0x12de5e+_0x5187ff(0x270)+DMSCount+_0x5187ff(0x2b7)),$(_0x5187ff(0x282))['html'](_0x12de5e),SetNewDMS=![],parseInt(_0x153a47)==_0x12de5e&&(_0x12de5e=0x1);else _0x153a47>0x0?(_0x12de5e=_0x153a47-DMSCount,$(_0x5187ff(0x37d))[_0x5187ff(0x35c)](_0x153a47),$('#Consumed-license-AlreadyLicensConsumed-manage-DMS')[_0x5187ff(0x35c)](DMSCount),$(_0x5187ff(0x282))[_0x5187ff(0x35c)](_0x12de5e),SetNewDMS=!![]):$(_0x5187ff(0x2f3))[_0x5187ff(0x389)](_0x5187ff(0x254)+DMSCount+_0x5187ff(0x2b0)+_0x12de5e+_0x5187ff(0x2cb)+DMSCount+_0x5187ff(0x2b7));}if(_0x5dc814==_0x5187ff(0x259))$(_0x5187ff(0x257))[_0x5187ff(0x35c)]('Everyone'),$(_0x5187ff(0x38c))[_0x5187ff(0x35c)]('-'),$(_0x5187ff(0x24a))[_0x5187ff(0x35c)]('-'),SetNewProject=!![],_0x5b53a6=0x1;else{if(_0x5dc814=='0')_0x5b53a6=_0x5dc814-ProjectCount,$(_0x5187ff(0x257))['html']('Not\x20Subscribed'),$(_0x5187ff(0x38c))[_0x5187ff(0x389)](_0x5187ff(0x2e2)+ProjectCount+'\x27,\x27'+_0x5b53a6+_0x5187ff(0x20c)+ProjectCount+_0x5187ff(0x2b7)),$('#Consumed-license-BalanceLicense-manage-Project')['html'](_0x5b53a6),SetNewProject=![],parseInt(_0x5dc814)==_0x5b53a6&&(_0x5b53a6=0x1);else _0x5dc814>0x0?(_0x5b53a6=_0x5dc814-ProjectCount,$(_0x5187ff(0x257))[_0x5187ff(0x35c)](_0x5dc814),$(_0x5187ff(0x38c))[_0x5187ff(0x35c)](ProjectCount),$(_0x5187ff(0x24a))[_0x5187ff(0x35c)](_0x5b53a6),SetNewProject=!![]):$(_0x5187ff(0x38c))[_0x5187ff(0x389)]('<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27Project\x27,\x27'+ProjectCount+_0x5187ff(0x2b0)+_0x5b53a6+_0x5187ff(0x20c)+ProjectCount+_0x5187ff(0x2b7));}_0x5738f1>0x0?(_0x2bd6e0=_0x5738f1-BPassCount,$(_0x5187ff(0x38f))[_0x5187ff(0x35c)](_0x5738f1),$(_0x5187ff(0x2de))[_0x5187ff(0x35c)](BPassCount),$(_0x5187ff(0x1e6))[_0x5187ff(0x35c)](_0x2bd6e0),SetNewBpass=!![]):(_0x2bd6e0=_0x5738f1-BPassCount,$(_0x5187ff(0x38f))[_0x5187ff(0x35c)]('Not\x20Subscribed'),$(_0x5187ff(0x2de))[_0x5187ff(0x35c)](BPassCount),$(_0x5187ff(0x1e6))['html'](_0x2bd6e0),SetNewBpass=![]),$(_0x5187ff(0x23e))[_0x5187ff(0x25f)]('show');}else alert(_0x5187ff(0x20f));_0x184eb7>=0x0&&_0x12de5e>=0x0&&_0x5b53a6>=0x0&&_0x2bd6e0>=0x0?($(_0x5187ff(0x2dd))[_0x5187ff(0x241)](),$(_0x5187ff(0x256))[_0x5187ff(0x264)](),$(_0x5187ff(0x2dd))[_0x5187ff(0x27e)](_0x5187ff(0x32b),'webdevLicenced.LicenseSubmit()')):($(_0x5187ff(0x2dd))['hide'](),$(_0x5187ff(0x256))[_0x5187ff(0x241)](),$(_0x5187ff(0x2dd))[_0x5187ff(0x381)]('onclick',null));}),$(a508_0x430fe8(0x222))['on'](a508_0x430fe8(0x31b),function(){var _0x513316=a508_0x430fe8;confirm('Are\x20you\x20want\x20to\x20accept\x20end\x20user\x20Software\x20License\x20Agreement')?Active=!![]:(Active=![],$(_0x513316(0x2cc))[_0x513316(0x25f)](_0x513316(0x241)));}),$(a508_0x430fe8(0x20b))['on']('change',function(){var _0x2baf88=a508_0x430fe8;$(_0x2baf88(0x398))[_0x2baf88(0x381)](_0x2baf88(0x33f),!![]),$(_0x2baf88(0x27d))[_0x2baf88(0x381)](_0x2baf88(0x33f),!![]),$(_0x2baf88(0x359))['prop']('disabled',!![]),$(_0x2baf88(0x204))['prop'](_0x2baf88(0x33f),!![]),$(_0x2baf88(0x2c5))[_0x2baf88(0x381)]('disabled',!![]),$(_0x2baf88(0x1fd))[_0x2baf88(0x381)](_0x2baf88(0x33f),!![]);if($(_0x2baf88(0x20b))[_0x2baf88(0x1fc)]()=='Employee')$('#FilterEditEventCateory')[_0x2baf88(0x381)]('disabled',![]),$(_0x2baf88(0x27d))[_0x2baf88(0x381)](_0x2baf88(0x33f),![]),$(_0x2baf88(0x359))['prop'](_0x2baf88(0x33f),![]),$(_0x2baf88(0x399))[_0x2baf88(0x381)](_0x2baf88(0x33f),![]),$(_0x2baf88(0x204))[_0x2baf88(0x381)](_0x2baf88(0x33f),![]),$(_0x2baf88(0x2c5))['prop'](_0x2baf88(0x33f),![]),$(_0x2baf88(0x1fa))[_0x2baf88(0x203)](_0x2baf88(0x1eb)),$('.invisibleddl')[_0x2baf88(0x241)](),$(_0x2baf88(0x287))[_0x2baf88(0x264)]();else $(_0x2baf88(0x20b))[_0x2baf88(0x1fc)]()==_0x2baf88(0x37e)&&($(_0x2baf88(0x1fd))[_0x2baf88(0x381)](_0x2baf88(0x33f),![]),$(_0x2baf88(0x1fa))[_0x2baf88(0x203)](_0x2baf88(0x301)),$(_0x2baf88(0x386))[_0x2baf88(0x264)](),$(_0x2baf88(0x287))[_0x2baf88(0x241)]());});var Asignvalue='';$(a508_0x430fe8(0x266))['on'](a508_0x430fe8(0x31b),function(){var _0x440240=a508_0x430fe8,_0x1437a0=![],_0x4b16ef=![],_0x417a6a=![];_0x1437a0=$(_0x440240(0x294))['is'](_0x440240(0x29c)),_0x4b16ef=$(_0x440240(0x311))['is'](_0x440240(0x29c)),_0x417a6a=$(_0x440240(0x211))['is'](_0x440240(0x29c)),IntranetCount=$('#LicIntranetConsumedCount')[_0x440240(0x203)](),LicIntranetAvilableCount=$('#LicIntranetAvilableCount')[_0x440240(0x203)](),LicIntranetAvilableCount=parseInt(LicIntranetAvilableCount)+parseInt(IntranetCount),IntranetCount=0x0,DMSCount=$('#LicDMSConsumedCount')[_0x440240(0x203)](),LicDMSAvilableCount=$(_0x440240(0x376))['text'](),LicDMSAvilableCount=parseInt(LicDMSAvilableCount)+parseInt(DMSCount),DMSCount=0x0,ProjectCount=$('#LicProjectConsumedCount')[_0x440240(0x203)](),LicProjectTaskAvilableCount=$(_0x440240(0x206))[_0x440240(0x203)](),LicProjectTaskAvilableCount=parseInt(LicProjectTaskAvilableCount)+parseInt(ProjectCount),ProjectCount=0x0,$(_0x440240(0x205))[_0x440240(0x1f8)]>0x0?($(_0x440240(0x205))[_0x440240(0x243)](function(){var _0x2019e9=_0x440240;_0x417a6a&&(LicIntranetAvilableCount=LicIntranetAvilableCount-0x1,IntranetCount=parseInt(IntranetCount)+0x1);$(_0x2019e9(0x292))[_0x2019e9(0x35c)](LicIntranetAvilableCount),$('#LicIntranetConsumedCount')[_0x2019e9(0x35c)](IntranetCount);_0x4b16ef&&(LicProjectTaskAvilableCount=LicProjectTaskAvilableCount-0x1,ProjectCount=parseInt(ProjectCount)+0x1);$(_0x2019e9(0x206))[_0x2019e9(0x35c)](LicProjectTaskAvilableCount),$(_0x2019e9(0x2e4))[_0x2019e9(0x35c)](ProjectCount);_0x1437a0&&(LicDMSAvilableCount=LicDMSAvilableCount-0x1,DMSCount=parseInt(DMSCount)+0x1);$(_0x2019e9(0x21b))['html'](DMSCount),$(_0x2019e9(0x376))[_0x2019e9(0x35c)](LicDMSAvilableCount);var _0x296df5=$(this)['closest']('tr')[0x0];if($(_0x296df5[_0x2019e9(0x378)][0x4][_0x2019e9(0x297)])[0x0]!=undefined){var _0x5adebe=$(_0x296df5['cells'][0x4][_0x2019e9(0x297)])[0x0][_0x2019e9(0x1e5)][0x0]['id'];$('#'+_0x5adebe)[_0x2019e9(0x381)](_0x2019e9(0x221),_0x417a6a);}if($(_0x296df5['cells'][0x5][_0x2019e9(0x297)])[0x0]!=undefined){var _0x328d82=$(_0x296df5[_0x2019e9(0x378)][0x5]['innerHTML'])[0x0][_0x2019e9(0x1e5)][0x0]['id'];$('#'+_0x328d82)[_0x2019e9(0x381)](_0x2019e9(0x221),_0x1437a0);}if($(_0x296df5['cells'][0x6][_0x2019e9(0x297)])[0x0]!=undefined){var _0x41e693=$(_0x296df5[_0x2019e9(0x378)][0x6][_0x2019e9(0x297)])[0x0]['children'][0x0]['id'];$('#'+_0x41e693)[_0x2019e9(0x381)](_0x2019e9(0x221),_0x4b16ef);}$(_0x2019e9(0x2f8))[_0x2019e9(0x381)](_0x2019e9(0x221),![]),$(_0x2019e9(0x2da))[_0x2019e9(0x381)](_0x2019e9(0x221),![]);}),IsVisibleSubmitButton()):alert(_0x440240(0x37c));}),$(a508_0x430fe8(0x357))['on'](a508_0x430fe8(0x31b),function(){var _0xe0cbb=a508_0x430fe8;IsValueSet==![]&&CommonFunctionLic[_0xe0cbb(0x1f5)](),CommonFunctionLic['initializePeoplePicker'](_0xe0cbb(0x335),!![]),CommonFunctionLic[_0xe0cbb(0x299)]('pplEmployee',!![]);}),$(a508_0x430fe8(0x330))['on']('click',function(){var _0x1ecb0c=a508_0x430fe8;$(_0x1ecb0c(0x211))['prop']('checked',![]),$(_0x1ecb0c(0x311))[_0x1ecb0c(0x381)](_0x1ecb0c(0x221),![]),$(_0x1ecb0c(0x294))[_0x1ecb0c(0x381)](_0x1ecb0c(0x221),![]);});function allcheck(_0x2a3896,_0x132874,_0x5d246d){var _0x22aa6c=a508_0x430fe8,_0x5d8db3=$(_0x22aa6c(0x239))['is'](_0x22aa6c(0x29c));$(_0x22aa6c(0x39a))['html'](''),$(_0x22aa6c(0x273))['html']('');var _0x172202=Consumedlicensetable[_0x22aa6c(0x25b)]()['data']();_0x5d8db3?($(_0x22aa6c(0x39a))['html'](_0x172202['length']),$('#Available-license-Count-Internet')[_0x22aa6c(0x35c)](_0x5d246d),$(_0x22aa6c(0x355))[_0x22aa6c(0x381)](_0x22aa6c(0x221),_0x5d8db3)):($('.checkboxConsumed')[_0x22aa6c(0x381)](_0x22aa6c(0x221),_0x5d8db3),$(_0x22aa6c(0x39a))[_0x22aa6c(0x35c)](0x0),AvailableCount=parseInt(_0x132874)+parseInt(_0x5d246d),$(_0x22aa6c(0x273))[_0x22aa6c(0x35c)](AvailableCount),_0x132874=0x0),AvailableCount>=0x0?$(_0x22aa6c(0x34e))['show']():$(_0x22aa6c(0x34e))['hide']();}$(a508_0x430fe8(0x391))['on'](a508_0x430fe8(0x31b),function(){var _0x206847=a508_0x430fe8;$[_0x206847(0x321)]({'cache':![],'beforeSend':function(){var _0x5d8f36=_0x206847;$('#overlaysearch')[_0x5d8f36(0x329)]();},'success':function(_0x54578f){SubmituserLic();}});}),$(a508_0x430fe8(0x249))['on'](a508_0x430fe8(0x30a),function(){});var EmployeeUsers=[],Consumedlicensetable='',AvailableCount;function GetConsumedLic(_0x4ab338,_0x39a532,_0xea5c33,_0xf550d){var _0x4f8a16=a508_0x430fe8;ConsumedLicenseType=_0x4ab338,$(_0x4f8a16(0x239))[_0x4f8a16(0x27e)](_0x4f8a16(0x32b),_0x4f8a16(0x2e3)+_0x4ab338+'\x27,\x27'+_0x39a532+_0x4f8a16(0x2b0)+_0xea5c33+'\x27)'),$('#Consumed-license-tbody-Internet')[_0x4f8a16(0x35c)](''),$(_0x4f8a16(0x269))['html'](''),_0x4ab338==_0x4f8a16(0x2c9)?$(_0x4f8a16(0x269))[_0x4f8a16(0x35c)](_0x4f8a16(0x308)):$(_0x4f8a16(0x269))[_0x4f8a16(0x35c)](_0x4ab338),$(_0x4f8a16(0x239))[_0x4f8a16(0x381)](_0x4f8a16(0x221),![]),TableId=_0x4f8a16(0x214),$('#Available-license-Count-Internet')[_0x4f8a16(0x35c)](_0xea5c33),$(_0x4f8a16(0x39a))[_0x4f8a16(0x35c)](_0x39a532),_0xf550d==_0x4f8a16(0x2aa)?($(_0x4f8a16(0x234))[_0x4f8a16(0x241)](),$(_0x4f8a16(0x25c))[_0x4f8a16(0x203)](_0x4f8a16(0x2fb))):($('#btn-Consumed-license-add-Internet')[_0x4f8a16(0x264)](),$(_0x4f8a16(0x25c))[_0x4f8a16(0x203)](_0x4f8a16(0x2df))),LoadConsumedhtml(AllEmployees);}var ConsumedlicenseCount=0x0;function LoadConsumedhtml(_0x268cdf){var _0x101aa3=a508_0x430fe8,_0x4e49c0='';ConsumedlicenseCount=0x0;for(var _0x32d0bb=0x0;_0x32d0bb<_0x268cdf[_0x101aa3(0x1f8)];_0x32d0bb++){var _0x64baca=![];if(ConsumedLicenseType==_0x101aa3(0x28d))_0x64baca=!![];else{if(_0x268cdf[_0x32d0bb]['EmpLicense']!=null){var _0x13858b=CryptoJS[_0x101aa3(0x1ff)][_0x101aa3(0x37b)](_0x268cdf[_0x32d0bb]['EmpLicense'],_0x101aa3(0x309)),_0x7c4e16=_0x13858b['toString'](CryptoJS[_0x101aa3(0x242)]['Utf8']);_0x7c4e16[_0x101aa3(0x29d)](ConsumedLicenseType)>0x0&&(_0x64baca=!![],ConsumedlicenseCount++);}}if(_0x268cdf[_0x32d0bb][_0x101aa3(0x28b)]!=null){if(_0x64baca){var _0x295179=_0x7c4e16;_0x4e49c0+='<tr>\x20<td></td>'+_0x101aa3(0x377)+'<div\x20class=\x22assign-user-card\x22>'+_0x101aa3(0x347)+_0x101aa3(0x375)+_0x268cdf[_0x32d0bb][_0x101aa3(0x2a0)]+_0x101aa3(0x21c)+_0x101aa3(0x230)+_0x101aa3(0x23c)+'<div\x20class=\x22assign-user-card-body-info\x20text-ellipsis\x22>'+_0x101aa3(0x2e6)+_0x268cdf[_0x32d0bb][_0x101aa3(0x382)]+_0x101aa3(0x280)+_0x101aa3(0x358)+_0x268cdf[_0x32d0bb][_0x101aa3(0x28b)]+_0x101aa3(0x252)+_0x101aa3(0x230)+_0x101aa3(0x230)+'</div>'+_0x101aa3(0x1df)+_0x32d0bb+'\x22>\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>'+_0x268cdf[_0x32d0bb]['Type']+_0x101aa3(0x38e)+_0x295179+_0x101aa3(0x1ec)+_0x268cdf[_0x32d0bb]['Id']+_0x101aa3(0x394),_0x268cdf[_0x32d0bb][_0x101aa3(0x374)]=='Employees'?_0x4e49c0+='<td>'+_0x101aa3(0x272)+_0x268cdf[_0x32d0bb][_0x101aa3(0x338)]+'</h3>'+_0x101aa3(0x27c)+_0x101aa3(0x2a7)+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22>Employees</h3>'+_0x101aa3(0x272)+_0x268cdf[_0x32d0bb][_0x101aa3(0x337)][_0x101aa3(0x251)]+_0x101aa3(0x258)+'</div>\x20</td>':_0x4e49c0+=_0x101aa3(0x377)+_0x101aa3(0x272)+_0x268cdf[_0x32d0bb][_0x101aa3(0x338)]+_0x101aa3(0x258)+_0x101aa3(0x27c)+'<td>\x20\x20\x20\x20\x20<div\x20class=\x22assign-user-card-body-info\x20text-ellipsis\x22>'+_0x101aa3(0x2fa)+_0x101aa3(0x272)+_0x268cdf[_0x32d0bb][_0x101aa3(0x267)]+_0x101aa3(0x258)+_0x101aa3(0x2c7),_0x4e49c0+=_0x101aa3(0x33c)+_0x101aa3(0x35d)+_0x32d0bb+'\x22\x20class=\x22checkboxConsumed\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCount(this)\x22\x20checked=\x22checked\x22\x20></label>'+_0x101aa3(0x27c);}_0x4e49c0+='</tr>';}}AvailableCount=AvailableCount-ConsumedlicenseCount,$(_0x101aa3(0x38d))['html'](''),$(_0x101aa3(0x38d))[_0x101aa3(0x389)](_0x4e49c0),AvailableCount>0x0?$(_0x101aa3(0x34e))[_0x101aa3(0x241)]():$('#btn-consumed-license-Internet')['hide'](),Consumedlicensetable=$('#'+TableId)[_0x101aa3(0x238)]({'order':[[0x1,'asc']],'columnDefs':[{'targets':[0x0,0x4],'searchable':![],'orderable':![]}],'searching':![],'bPaginate':![],'bLengthChange':![],'bFilter':!![],'bInfo':![],'bAutoWidth':![],'language':{'searchPlaceholder':_0x101aa3(0x2ef)}});}function GetCheckCount(_0x35833a){var _0x22f390=a508_0x430fe8;AvailableCount=$(_0x22f390(0x273))['text'](),$(_0x35833a)[_0x22f390(0x27e)](_0x22f390(0x2bf),_0x35833a['checked']),ConsumedlicenseCount=$(_0x22f390(0x39a))[_0x22f390(0x203)](),_0x35833a['checked']==!![]?(AvailableCount=AvailableCount-0x1,ConsumedlicenseCount=parseInt(ConsumedlicenseCount)+0x1):($(_0x22f390(0x239))[_0x22f390(0x381)](_0x22f390(0x221),![]),AvailableCount=parseInt(AvailableCount)+0x1,ConsumedlicenseCount=parseInt(ConsumedlicenseCount)-0x1),$(_0x22f390(0x273))[_0x22f390(0x35c)](''),$(_0x22f390(0x273))[_0x22f390(0x35c)](AvailableCount),$(_0x22f390(0x39a))[_0x22f390(0x35c)](''),$(_0x22f390(0x39a))[_0x22f390(0x35c)](ConsumedlicenseCount),AvailableCount>=0x0?$(_0x22f390(0x34e))['show']():$('#btn-consumed-license-Internet')[_0x22f390(0x264)]();}$(a508_0x430fe8(0x234))['on'](a508_0x430fe8(0x31b),function(){var _0x33e785=a508_0x430fe8;$('#divemployeesection')[_0x33e785(0x35c)](''),UserEmail=[],$('#pplEmployeeProject')[_0x33e785(0x2a8)](_0x33e785(0x30d)),CommonFunctionLic[_0x33e785(0x299)](_0x33e785(0x1e3),!![]),onChangeAddUser(_0x33e785(0x38a),_0x33e785(0x1e3),_0x33e785(0x2a2));});function clearTextBox(){var _0x3da1d1=a508_0x430fe8;$(_0x3da1d1(0x2f2))['val']('');}var Consumedlicensefilter=![];$(a508_0x430fe8(0x307))['on'](a508_0x430fe8(0x31b),function(){Consumedlicensefilter=!![];}),$(a508_0x430fe8(0x325))['on'](a508_0x430fe8(0x31b),function(){var _0x653eb7=a508_0x430fe8;AvailableCount=$(_0x653eb7(0x273))[_0x653eb7(0x203)](),ConsumedlicenseCount=$(_0x653eb7(0x39a))[_0x653eb7(0x203)]();if(AvailableCount>0x0){var _0x454035=Consumedlicensetable['rows']()['data']();_0x454035[_0x653eb7(0x243)](function(_0x52b2ec,_0x14377f){var _0x28f20a=_0x653eb7,_0x3e1544=$($(_0x52b2ec)[0x4])[0x0][_0x28f20a(0x312)][0x0]['id'],_0x102260=$($(_0x52b2ec)[0x1])[0x0]['childNodes'][0x1]['children'][0x0][_0x28f20a(0x312)][0x2]['innerHTML'],_0x2515d6=UserEmail['filter'](function(_0x4d5b4a){var _0x4765bc=_0x28f20a;return _0x4d5b4a['UserEmail'][_0x4765bc(0x293)]()==_0x102260['toLowerCase']();});if(_0x2515d6[_0x28f20a(0x1f8)]>0x0){UserEmail=UserEmail[_0x28f20a(0x232)](function(_0x103cc5){var _0x7a1cbf=_0x28f20a;return _0x103cc5['UserEmail'][_0x7a1cbf(0x293)]()!==_0x102260[_0x7a1cbf(0x293)]();});if(AvailableCount>0x0){var _0x3a9a1a=$('#'+_0x3e1544)['is'](_0x28f20a(0x29c));_0x3a9a1a==![]&&($('#'+_0x3e1544)[_0x28f20a(0x381)](_0x28f20a(0x221),!![]),AvailableCount=AvailableCount-0x1,ConsumedlicenseCount=parseInt(ConsumedlicenseCount)+0x1);}else alert(_0x28f20a(0x224));}});var _0x132f14=![],_0x32a823='';for(var _0x3345f4=0x0;_0x3345f4<UserEmail[_0x653eb7(0x1f8)];_0x3345f4++){var _0x34d231=AllEmployees[_0x653eb7(0x232)](function(_0x12efd0){var _0x2bc7f5=_0x653eb7;if(_0x12efd0['EMail']!=null)return _0x12efd0['EMail'][_0x2bc7f5(0x293)]()==UserEmail[_0x3345f4]['UserEmail'][_0x2bc7f5(0x293)]();});if(_0x34d231[_0x653eb7(0x1f8)]>0x0){if(_0x34d231[0x0]['EmpLicense']!=null){var _0x57a4f4=CryptoJS[_0x653eb7(0x1ff)][_0x653eb7(0x37b)](_0x34d231[0x0]['EmpLicense'],_0x653eb7(0x309)),_0x273de6=_0x57a4f4['toString'](CryptoJS['enc'][_0x653eb7(0x2b4)]);_0x273de6[_0x653eb7(0x29d)](ConsumedLicenseType)>0x0&&(_0x132f14=!![]);}if(_0x34d231[0x0][_0x653eb7(0x28b)]!=null){var _0x43f67d=_0x273de6;_0x32a823='<tr>\x20<td></td>'+_0x653eb7(0x377)+_0x653eb7(0x253)+_0x653eb7(0x347)+_0x653eb7(0x375)+_0x34d231[0x0][_0x653eb7(0x2a0)]+_0x653eb7(0x21c)+_0x653eb7(0x230)+_0x653eb7(0x23c)+_0x653eb7(0x36f)+_0x653eb7(0x2e6)+_0x34d231[0x0][_0x653eb7(0x382)]+_0x653eb7(0x280)+_0x653eb7(0x358)+_0x34d231[0x0][_0x653eb7(0x28b)]+_0x653eb7(0x252)+_0x653eb7(0x230)+'</div>'+_0x653eb7(0x230)+_0x653eb7(0x1df)+_0x3345f4+'\x22>\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>'+_0x34d231[0x0][_0x653eb7(0x374)]+'</p>\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>'+_0x43f67d+_0x653eb7(0x1ec)+_0x34d231[0x0]['Id']+_0x653eb7(0x394),_0x34d231[0x0][_0x653eb7(0x374)]=='Employees'?_0x32a823+=_0x653eb7(0x377)+_0x653eb7(0x272)+_0x34d231[0x0][_0x653eb7(0x338)]+_0x653eb7(0x258)+_0x653eb7(0x27c)+_0x653eb7(0x2a7)+_0x653eb7(0x354)+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20150px;\x22\x20>'+_0x34d231[0x0][_0x653eb7(0x337)][_0x653eb7(0x251)]+'</h3>'+_0x653eb7(0x2c7):_0x32a823+='<td>'+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20150px;\x22\x20>'+_0x34d231[0x0][_0x653eb7(0x338)]+_0x653eb7(0x258)+_0x653eb7(0x27c)+_0x653eb7(0x2a7)+_0x653eb7(0x2fa)+_0x653eb7(0x272)+_0x34d231[0x0][_0x653eb7(0x267)]+_0x653eb7(0x258)+_0x653eb7(0x2c7),_0x32a823+=_0x653eb7(0x33c)+_0x653eb7(0x35d)+_0x3345f4+'\x22\x20class=\x22checkboxConsumed\x22\x20checked=\x22checked\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCount(this)\x22\x20></label>'+_0x653eb7(0x27c),_0x32a823+='</tr>';}if(AvailableCount>0x0){const _0x111f23=$(_0x32a823);Consumedlicensetable['row'][_0x653eb7(0x26c)](_0x111f23[0x0])[_0x653eb7(0x23f)](),AvailableCount=AvailableCount-0x1,ConsumedlicenseCount=parseInt(ConsumedlicenseCount)+0x1,$(_0x653eb7(0x34e))[_0x653eb7(0x241)]();}else alert('License\x20is\x20not\x20available.');}}}else alert(_0x653eb7(0x224)),$(_0x653eb7(0x34e))['hide']();$(_0x653eb7(0x369))[_0x653eb7(0x25f)](_0x653eb7(0x264)),$(_0x653eb7(0x273))[_0x653eb7(0x35c)](AvailableCount),$(_0x653eb7(0x39a))[_0x653eb7(0x35c)](ConsumedlicenseCount);}),$('#btn-consumed-license-Internet')['on'](a508_0x430fe8(0x31b),function(){var _0x381d72=a508_0x430fe8;$[_0x381d72(0x321)]({'cache':![],'beforeSend':function(){$('#overlaysearch')['fadeIn']();},'success':function(_0x28036c){consumedlicense();}});});function consumedlicense(){var _0x5a4854=a508_0x430fe8,_0x4b6148=0x0;$('#Consumed-license-table-Internet\x20input[class=checkboxConsumed]')[_0x5a4854(0x243)](function(_0x36c050,_0x2428ab){var _0x2b3179=_0x5a4854;_0x4b6148++,console[_0x2b3179(0x30c)](_0x2428ab+_0x2b3179(0x202)+_0x4b6148);});var _0x5e5d47=Consumedlicensetable[_0x5a4854(0x25b)]()[_0x5a4854(0x225)](),_0x36e98='';_0x5e5d47[_0x5a4854(0x243)](function(_0x855c8f,_0x4f4377){var _0xb97cbb=_0x5a4854,_0x32f41d='',_0x96002=$($(_0x855c8f)[0x1])[0x1]['childNodes'][0x5]['innerHTML'],_0x3d7c14=$($(_0x855c8f)[0x1])[0x1]['childNodes'][0x3][_0xb97cbb(0x297)],_0x1bc277=$($(_0x855c8f)[0x1])[0x1]['childNodes'][0x1][_0xb97cbb(0x297)],_0x2b4931=$($(_0x855c8f)[0x4])[0x0][_0xb97cbb(0x312)][0x0]['id'],_0x175a0b=$('#'+_0x2b4931)['is'](_0xb97cbb(0x29c)),_0x43d688='';_0x1bc277==_0xb97cbb(0x2db)?_0x43d688=_0xb97cbb(0x2db):_0x43d688=_0xb97cbb(0x353);var _0xb09f31,_0x4c949c=CommonFunctionLic[_0xb97cbb(0x1f6)](_0x43d688);if(ConsumedLicenseType==_0xb97cbb(0x28d))_0x175a0b?_0x36e98=_0xb97cbb(0x33b):_0x36e98='InActive',_0xb09f31={'__metadata':{'type':_0x4c949c},'Status':_0x36e98};else{if(_0x175a0b){if(_0x3d7c14[_0xb97cbb(0x29d)](ConsumedLicenseType)>0x0){}else _0x3d7c14+=ConsumedLicenseType+'|';}else _0x3d7c14=_0x3d7c14[_0xb97cbb(0x1e0)](ConsumedLicenseType,'');userLicsensecreate=_0x3d7c14,_0x32f41d+=CryptoJS[_0xb97cbb(0x1ff)]['encrypt'](_0x3d7c14,_0xb97cbb(0x309));var _0x3e607a=_0x32f41d;_0x32f41d='',_0xb09f31={'__metadata':{'type':_0x4c949c},'EmpLicense':_0x3e607a};}console[_0xb97cbb(0x30c)](_0x3d7c14+'\x20\x20\x20UserType\x20'+_0x1bc277+'\x20\x20\x20\x20message'+_0x3e607a+_0xb97cbb(0x275)+_0x96002+'Status\x20\x20'+_0x36e98),$[_0xb97cbb(0x2bb)](CommonFunctionLic['updateItemWithID'](_0x96002,_0x43d688,_0xb09f31))[_0xb97cbb(0x336)](function(_0x30df62){});}),Getallinfomation(),$(_0x5a4854(0x323))[_0x5a4854(0x349)](),$(_0x5a4854(0x334))[_0x5a4854(0x25f)](_0x5a4854(0x264)),Consumedlicensetable['destroy']();}function SubmituserLic(){var _0x1835f8=a508_0x430fe8;try{var _0x563172='';$(_0x1835f8(0x323))[_0x1835f8(0x329)](),$(_0x1835f8(0x284))[_0x1835f8(0x243)](function(){var _0x71543b=_0x1835f8,_0x301ea0='',_0x41e8c8=$(this)[_0x71543b(0x22f)]('tr')[0x0],_0x5caa2e=$(_0x41e8c8[_0x71543b(0x378)][0x1][_0x71543b(0x297)])[0x1]['childNodes'][0x1]['innerHTML'],_0x19e3dc=$(_0x41e8c8[_0x71543b(0x378)][0x3][_0x71543b(0x297)])[0x0][_0x71543b(0x1e5)][0x0][_0x71543b(0x23b)];if(IsNotSubscribedIntrenet){var _0x3a7082=$(_0x41e8c8[_0x71543b(0x378)][0x4][_0x71543b(0x297)])[0x0][_0x71543b(0x1e5)][0x0]['id'],_0x234d5f=$('#'+_0x3a7082)['is'](_0x71543b(0x29c));_0x234d5f?AssignIntranet='|Internet':AssignIntranet='';}if(IsNotSubscribedDMS){var _0x13a58e=$(_0x41e8c8[_0x71543b(0x378)][0x5]['innerHTML'])[0x0][_0x71543b(0x1e5)][0x0]['id'],_0x234d5f=$('#'+_0x13a58e)['is'](_0x71543b(0x29c));_0x234d5f?AssignDMS=_0x71543b(0x2ff):AssignDMS='';}if(IsNotSubscribedProject){var _0x49611f=$(_0x41e8c8[_0x71543b(0x378)][0x6][_0x71543b(0x297)])[0x0]['children'][0x0]['id'],_0x234d5f=$('#'+_0x49611f)['is'](':checked');_0x234d5f?AssignProject='|Project':AssignProject='';}Asignvalue=AssignIntranet+AssignDMS+AssignProject+'|',_0x301ea0=$(_0x41e8c8[_0x71543b(0x378)][0x1]['innerHTML'])[0x0][_0x71543b(0x312)][0x1][_0x71543b(0x1e5)][0x0][_0x71543b(0x312)][0x2][_0x71543b(0x297)]+Asignvalue,console[_0x71543b(0x30c)](_0x301ea0),_0x563172+=CryptoJS['AES'][_0x71543b(0x2fc)](_0x301ea0,'@d@ptT!t@n');var _0x40c880=_0x563172;_0x563172='';var _0x5f14b6='';_0x19e3dc==_0x71543b(0x2db)?_0x5f14b6=_0x71543b(0x2db):_0x5f14b6=_0x71543b(0x353);var _0x22b9b5,_0x1bb9b7=CommonFunctionLic[_0x71543b(0x1f6)](_0x5f14b6);_0x22b9b5={'__metadata':{'type':_0x1bb9b7},'EmpLicense':_0x40c880},$[_0x71543b(0x2bb)](CommonFunctionLic[_0x71543b(0x351)](_0x5caa2e,_0x5f14b6,_0x22b9b5))[_0x71543b(0x336)](function(_0x23cdf4){});}),assignusertable[_0x1835f8(0x36b)](),Getallinfomation(),$(_0x1835f8(0x323))[_0x1835f8(0x349)](),$(_0x1835f8(0x29a))[_0x1835f8(0x25f)](_0x1835f8(0x264)),$('#assignusertable-select-all')[_0x1835f8(0x381)]('checked',![]);}catch(_0x50561b){alert(_0x50561b),$('#overlaysearch')[_0x1835f8(0x349)]();}}function a508_0x347d(){var _0x30bfb4=['#assignlicensemodal','\x20\x20\x20','text','#pplManager_TopSpan','#assignusertable\x20input[class=assignu]:checked','#LicProjectTaskAvilableCount','error','<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x20\x22><input\x20id=\x22DMSChk','User','\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20checked\x20disabled></label>','#FilterEditEventType','\x27,\x27false\x27)\x22\x20><h4\x20class=\x22m-0\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22\x20style=\x22color:\x20blue\x20!important;\x22>','<span>Intranet</span>','Client_Name','Enter\x20New\x20License\x20Key','#Licensetype','#chkInternetassign','numeric','\x22\x20class=\x22checkboxInternet\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCountInternet(this)\x22\x20\x20></label>','Consumed-license-table-Internet','/_api/web/lists/GetByTitle(\x27OfficeLocation\x27)/items?$select=ID,Region,OfficeName,CompanyID/ID&$expand=CompanyID&$filter=OfficeLocationId\x20eq\x20\x270\x27\x20and\x20CompanyID/ID\x20eq\x20\x27','\x20Processes\x20</h4>','#divInternetassign','href','width','<h4\x20class=\x22m-0\x20color-red\x22>Not\x20Subscribed\x20</h4>','#LicDMSConsumedCount','\x22\x20alt=\x22user\x22>','#FilterEditEventCateory\x20:selected','#LicProjectTaskAvilable','6884129vmbflN','92436DondAe','checked','#btnAccept','MobileNumber&$expand=LogonName,ManagerLoginName,Company,Department,OfficeLocation,AttachmentFiles&$filter=PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20Status\x20eq\x20\x27Active\x27\x20','License\x20is\x20not\x20available.','data','#LicIntranetconsumed','getDate','/_api/web/ensureuser','<h4\x20class=\x22m-0\x22>\x20Everyone\x20</h4>','</span>','<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x22\x20><input\x20class=\x22checkboxproject\x22\x20id=\x22projectChk','en-GB','AttachmentFiles','#FilterEditEventDepartment\x20:selected','closest','</div>','</div></div></div>','filter','success','#btn-Consumed-license-add-Internet','LoginName','OfficeLocation/OfficeName,OfficeLocation/Region,Email,Department/DepartmentName,Designation,','#assignFilterCloseBtn,\x20#assignFilterClearBtn,\x20#assignFilterApplyBtn,\x20#assign-filter','DataTable','#chk-Consumed-license-table-Internet','\x22><div\x20class=\x22employeesection\x22>','innerText','<div\x20class=\x22assign-user-card-body\x22>','\x22\x20type=\x22checkbox\x22\x20onclick=\x22GetCheckCountProject(this)\x22\x20value=\x22\x22\x20\x20></label>','#consumed-license-modal-manage','draw','.sp-peoplepicker-editorInput','show','enc','each','\x22>\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>','Success','charAt','location','#employeeusers','.checkboxInternet','#Consumed-license-BalanceLicense-manage-Project','HasInputError',');\x22\x20class=\x22crosebox\x22><i\x20class=\x22fa\x20fa-times\x22></i></span>','ManagerLoginName','351px','#btnGetlicense','Employee','DepartmentName','</p>','<div\x20class=\x22assign-user-card\x22>','<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27DMS\x27,\x27','/_api/web/lists/getbytitle(\x27ClientMaster\x27)/items?$select=ID,CompanyIDId/ID,Title&$filter=CompanyIDId\x20\x20eq\x20\x27','#div-consumed-license-Warning','#Consumed-license-NewAlreadyLicens-manage-Project','</h3>','All','\x20and\x20OfficeLocation/OfficeName\x20eq\x20\x27','rows','#spnavailable','#LicDMSAvilable','SP.Data.','modal','<option\x20value=\x22Pages/DocumentTypesCounter.aspx\x22>Company\x20Documents</option>','EntityType','removeAttr','/_api/web/lists/getbytitle(\x27Companies\x27)/items?$select=ID,CompanyName','hide','UserName','#asignSubmitBtn','Company','#chkheaderProject','#Consumed-license-Title','#divProjectassign','-Select\x20Department-','add','#Consumed-license-BalanceLicense-manage-Intranet','toLocaleDateString','PATCH','\x27,\x27false\x27)\x22\x20><h4\x20class=\x22m-0cursor-pointer\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22\x20style=\x22color:\x20blue\x20!important;\x22>','-Select-','<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20150px;\x22\x20>','#Available-license-Count-Internet','getItemsWithQueryItem','\x20\x20\x20Id:\x20\x20\x20','Contributors','value','[id^=\x27','#NomberofuserCount','#LicDMS','\x22\x20value=\x22\x22></label></td>','</td>','#FilterEditEventDepartment','attr','#btnAssignclose,\x20#btnAssignCancel','</h3>\x20','EntityData','#Consumed-license-BalanceLicense-manage-DMS','close','#assignusertable\x20input[class=assignu]','#Consumed-license-AlreadyLicensConsumed-manage-Intranet','split','.GuestCoustomer','\x20and\x20substringof(\x27','__next','#Taskpopup','EMail','\x22\x20class=\x22checkboxDMS\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20\x20onclick=\x22GetCheckCountDMS(this)\x22\x20></label>','ActiveUser','\x20and\x20Supervisor/EMail\x20eq\x20\x27','MobileNumber&$expand=LogonName,ManagerLoginName,Company,Department,OfficeLocation,AttachmentFiles&$filter=Visible_in_directory\x20ne\x20\x27No\x27\x20and\x20Company/ID\x20eq\x20\x20\x27','70qkaNUJ','\x22\x20alt=\x22\x22>','#LicIntranetAvilableCount','toLowerCase','#chkDMSassign','Supervisor','<h4\x20class=\x22m-0\x22>\x20-\x20</h4>','innerHTML','indeterminate','initializePeoplePicker','#assign-license-modal','Title',':checked','search','/_api/web/rootfolder','Your\x20subscription\x20has\x20expired','AttachmentFile','<span\x20id=\x22LicProjectConsumedCount\x22>','divemployeesection','application/json;odata=verbose','6kjBqEP','ApprovalProcessMaster','UserEmail','<td>\x20\x20\x20\x20\x20<div\x20class=\x22assign-user-card-body-info\x20text-ellipsis\x22>','removeClass','getElementById','true','<span>DMS</span>','#LicProjectTask','\x27)\x20and\x20(Status\x20eq\x20\x27Active\x27)','#LicProjectTaskconsumed','replace','\x27,\x27','<span\x20id=\x22LicDMSAvilableCount\x22>','1283481UZbSWI','\x27)/items(','Utf8','parse','OnValueChangedClientScript','\x20</h4></a>','ListItem','SearchPrincipalSource','<input\x20type=\x22checkbox\x22\x20class=\x22assignu\x22\x20name=\x22id[]\x22\x20value=\x22','when','GetClientMaster','Not\x20Subscribed','modal-open','name','<div\x20class=\x22col-xs-12\x20assign-licence-top-card-hight\x20\x22>','8JGXSlU','GetAllUserInfo','indexOf','<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27Internet\x27,\x27','#pplEmployee_TopSpan','\x22\x20class=\x22checkboxInternet\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCountInternet(this)\x22\x20checked\x20></label>','</div>\x20</td>','SPGroupID','Internet','<option\x20value=\x22Pages/approvals.aspx\x22>Approvals\x20Dashboard</option>','\x27,\x27false\x27)\x22\x20><h4\x20class=\x22m-0cursor-pointer\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22style=\x22color:\x20blue\x20!important;\x22>','#view-agreement-modal','\x27,\x20\x27','Everyone','#Consumed-license-NewLicense-manage-TotalUser','4045797OcliZD','#Consumed-license-AlreadyLicensConsumed-manage-TotalUser','\x20</h4>','#LicIntranet','</p>\x20</div>\x20</td>','UserId','DefaultHome','includes','concat','webAbsoluteUrl','#assignusertable-select-all','Employees','</h4>','#btn-consumed-license-manage','#Consumed-license-AlreadyLicensConsumed-manage-LicBPaas','Balance\x20License','<span\x20id=\x22LicIntranetConsumedCount\x22\x20>','<h4\x20class=\x22m-0\x22>','<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22GetConsumedLic(\x27Project\x27,\x27','allcheck(\x27','#LicProjectConsumedCount','.close-consumed-license-modal','<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22>','/_api/web/lists/getbytitle(\x27ExternalUsers\x27)/items?$select=*,InternalStakeholders/Title,Supervisor_Guest/Title,Client_Name/Title,LoginName/Title,LoginName/EMail,Supervisor/EMail,\x20Supervisor/Title&$expand=\x20LoginName,Supervisor,Client_Name,Supervisor_Guest,InternalStakeholders,AttachmentFiles\x20&$filter=\x20(ValidUpto\x20ge\x20\x27','<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x20\x22><input\x20id=\x22projectChk','chkInternetassign','.checkboxDMS','\x20and\x20LogonName/UserName\x20eq\x20\x27','<tr>\x20<td><label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x22><input\x20type=\x22checkbox\x22\x20class=\x22assignu\x22\x20id=\x22checkselect','</div><div\x20class=\x22employeeinfo\x22><h3>','PrincipalAccountType','Search\x20records','#assignFilterApplyBtn','#LicIntranetConsumedCount','#LicenseDescription','#Consumed-license-AlreadyLicensConsumed-manage-DMS','<div\x20class=\x22d-flex\x20justify-content-between\x20color-green\x22>','\x27,Designation)','<div/>','toISOString','.assignu','\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCountProject(this)\x22\x20checked\x20\x20></label>','<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22>Guest</h3>','Available\x20License','encrypt','3784zIhpkc','ServerRelativeUrl','|DMS','<option\x20value=\x22Pages/Document.aspx\x22>My\x20Document</option>','Supervisor:','Region','<option\x20value=\x220\x22>-Select\x20Department-</option>','GetOfficeLocation','stringify','LogonName','#btn-Consumed-license-filter','Intranet','@d@ptT!t@n','change','results','log','activingss','POST','<div\x20class=\x22col-xs-12\x20assign-licence-top-card-hight\x22>','<div\x20class=\x22main-card-data2\x20color-green\x20main-card-data2-title\x20assign-user-card-count-align\x22\x20>','#chkProjectassign','childNodes','\x22\x20class=\x22checkboxDMS\x22\x20type=\x22checkbox\x22\x20value=\x22\x22\x20onclick=\x22GetCheckCountDMS(this)\x22\x20checked\x20\x20></label>','-Select\x20Customer-','<option\x20value=\x22Pages/Myworkplace.aspx\x22>My\x20Workplace</option>','HasResolvedUsers','\x27,\x20','?$select=*\x20&$filter=\x20Active\x20eq\x20\x271\x27\x20and\x20(TrialStatus\x20eq\x20\x27Licenced\x27)\x20\x20&$top=5000','.checkboxproject','17819xuZikR','click','SP.Folder','setDate','\x20the\x20user\x20already\x20exists','Enterprise','/_api/web/lists/getbytitle(\x27Departments\x27)/items?$select=ID,CompanyIDId/ID,DepartmentName&$filter=CompanyIDId\x20\x20eq\x20\x27','ajax','<div\x20class=\x22main-card-data2\x20color-grey\x20main-card-data2-title\x20assign-user-card-count-align\x22>Not\x20subscribed</div>','#overlaysearch','Guest','#btnapplyadduser','\x27)\x22>','<span\x20onclick=\x22removeUser(this,\x20\x27','GetDepartment','fadeIn','<h4\x20class=\x22m-0\x20color-red\x22>Not\x20Subscribed</h4>','onclick','.parentremove','<span>Consumed:&nbsp;</span>','EmpLicense','GET','#assignmodal','4QxGUMa','#DMSpopup','ResolvePrincipalSource','#consumed-license-modal-Internet','pplManager','done','Department','Designation','#LicIntranetAvilable','#__REQUESTDIGEST','Active','<td\x20class=\x22text-center\x22>','DisplayText','/_api/web/lists/GetByTitle(\x27','disabled','<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x20\x22><input\x20id=\x22InternetChk','/_api/web/lists/getbytitle(\x27Employees\x27)/items/','#Consumed-license-BalanceLicense-manage-TotalUser','\x20and\x20ManagerLoginName/EMail\x20eq\x20\x27','SPClientPeoplePickerDict','<span>Project\x20&\x20Task</span>','trim','<div\x20class=\x22assign-user-card-head\x22>','/_layouts/15/userphoto.aspx?accountname=','fadeOut','toString','/_api/web/lists/getBytitle(\x27ProcessApprovers\x27)/items?$select=*,Approver/Title,Approver/EMail,Approver/Id,Approver/UserName,Owner/Title,Owner/EMail,Owner/Id,Owner/UserName,Contributors/Title,Contributors/Id,Contributors/UserName,Contributors/EMail&$expand=Approver,Contributors,Owner&$filter=CompanyId\x20eq\x20\x27','#DefaultHome','option:selected','#btn-consumed-license-Internet','1103145WdPHNX','\x20and\x20Department/DepartmentName\x20eq\x20\x27','updateItemWithID','webServerRelativeUrl','ExternalUsers','<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22>Employees</h3>','.checkboxConsumed','#assignusertable\x20tbody','#btnAssignFilter,\x20.filterBox','<p\x20class=\x22assign-user-email\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20250px;\x22\x20>','#ddlFilterLoc','#AvilableLicense','userId','html','<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x20\x22><input\x20id=\x22ConsumedChk','Welcome\x20Page\x20has\x20been\x20updated\x20successfully.','3483864VZmAiB','resolve','<div\x20class=\x22main-card-data1\x22>','#validuptodate','short','OfficeLocation','#Intrnetpopup','_TopSpan','<td\x20class=\x22td-desibled\x20text-center\x22>-</td>','siteAbsoluteUrl','#add_user_teams_Project','\x27)/items/','destroy','#Consumed-license-NewAlreadyLicens-manage-Intranet','OfficeName','nodes','<div\x20class=\x22assign-user-card-body-info\x20text-ellipsis\x22>','License\x20is\x20not\x20valid\x20for\x20this\x20Domain','filterEmployee','SPClientPeoplePicker','<option></option>','Type','<img\x20src=\x22','#LicDMSAvilableCount','<td>','cells','reject','<h4\x20class=\x22m-0\x22>No\x20Processes\x20</h4>','decrypt','Select\x20at\x20list\x20one\x20user\x20checkbox\x20','#Consumed-license-NewAlreadyLicens-manage-DMS','Guest\x20User','#BPassAvilable','AllowMultipleValues','prop','FullName','#FilterEditEventGuestCoustomer\x20:selected','getPeopleUserInfoGroups','Key','.invisibleddl','get','#chkheaderDMS','append','pplEmployeeProject_TopSpan','<div\x20class=\x22main-card-data2\x20color-green\x20main-card-data2-title\x20assign-user-card-count-align\x22>\x20Everyone</div>','#Consumed-license-AlreadyLicensConsumed-manage-Project','#Consumed-license-tbody-Internet','</p>\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>','#Consumed-license-NewAlreadyLicens-manage-LicBPaas','?$top=5000&$select=ID,Visible_in_directory,Status,ParentId,PrimaryCompany,JoiningDate,DateOfAnniversary,Manager,FullName,EmpLicense,DateOfBirth,LogonName/UserName,LogonName/Id,','#btnAssignSubmitusers','#asignCloseBtn,\x20#asignCancelBtn,\x20#asignSubmitBtn,\x20#assign-modal','<span\x20class=\x22employeeemail\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27','</p>\x20\x20</div>\x20</td>','promise','ContributorsId','\x27)\x20and\x20(Status\x20eq\x20\x27Active\x27)\x20','#FilterEditEventCateory','#FilterDesignation','#Consumed-license-Count-Internet','#divDMSassign','<div\x20id=\x22UserId','replaceAll','addClass','ready','pplEmployeeProject','empty','children','#Consumed-license-BalanceLicense-manage-LicBPaas','getItems','host','\x27,\x27true\x27)\x22\x20><h4\x20class=\x22m-0\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#consumed-license-modal-Internet\x22\x20data-backdrop=\x22static\x22>','Enter\x20correct\x20license\x20key','Manager:','</p>\x20\x20<p\x20style=\x22display:none\x22\x20class=\x22\x22>','\x20and\x20LoginName/EMail\x20eq\x20\x27','push','<option\x20value=\x220\x22>-Select\x20Office\x20Location-</option>','#chkheaderIntranet','#ConsumedLicense','forEach','<span>Available:&nbsp;</span>','<div\x20class=\x22mb5\x20d-flex\x20justify-content-between\x20color-red\x22>','SetValuesInFilter','GetItemTypeForListName','WebPartName','length','#BPass','#lblManager','#BPassconsumed','val','#FilterEditEventGuestCoustomer','MERGE','AES','Deferred'];a508_0x347d=function(){return _0x30bfb4;};return a508_0x347d();}$(a508_0x430fe8(0x2da))['on'](a508_0x430fe8(0x31b),function(){var _0xa570b5=a508_0x430fe8,_0xe87d31=assignusertable[_0xa570b5(0x25b)]({'search':'applied'})[_0xa570b5(0x36e)]();$(_0xa570b5(0x2f8),_0xe87d31)[_0xa570b5(0x381)](_0xa570b5(0x221),this['checked']);}),$(a508_0x430fe8(0x356))['on'](a508_0x430fe8(0x30a),'.assignu',function(){var _0x32fefd=a508_0x430fe8;if(!this[_0x32fefd(0x221)]){var _0x325f37=$(_0x32fefd(0x2da))[_0x32fefd(0x387)](0x0);_0x325f37&&_0x325f37[_0x32fefd(0x221)]&&_0x32fefd(0x298)in _0x325f37&&(_0x325f37[_0x32fefd(0x298)]=!![]);}}),$(a508_0x430fe8(0x201))['on'](a508_0x430fe8(0x31b),function(){var _0x1f8fd2=a508_0x430fe8;(LicIntranetAvilableCount>=0x0||LicIntranetAvilableCount==NaN)&&(LicDMSAvilableCount>=0x0||LicDMSAvilableCount==NaN)&&(LicProjectTaskAvilableCount>=0x0||LicProjectTaskAvilableCount==NaN)?$(_0x1f8fd2(0x391))[_0x1f8fd2(0x241)]():$('#btnAssignSubmitusers')[_0x1f8fd2(0x264)](),Consumedlicensefilter=![],LoadGridhtml(AllEmployees);});function LoadGridhtml(_0x3b76f3){var _0x313a89=a508_0x430fe8;assignusertable='';var _0x4d7d7f='';IntranetCount=0x0,DMSCount=0x0,ProjectCount=0x0;for(var _0x3c9876=0x0;_0x3c9876<_0x3b76f3['length'];_0x3c9876++){IsIntranet=![],IsDMS=![],IsProjectTask=![];if(_0x3b76f3[_0x3c9876]['EmpLicense']!=null){var _0x142535=CryptoJS[_0x313a89(0x1ff)][_0x313a89(0x37b)](_0x3b76f3[_0x3c9876][_0x313a89(0x32e)],_0x313a89(0x309)),_0x5cbaf7=_0x142535[_0x313a89(0x34a)](CryptoJS[_0x313a89(0x242)][_0x313a89(0x2b4)]);_0x5cbaf7['search'](/Internet/i)>0x0?(IsIntranet=!![],IntranetCount++):IsIntranet=![],_0x5cbaf7[_0x313a89(0x29d)](/DMS/i)>0x0?(IsDMS=!![],DMSCount++):IsDMS=![],_0x5cbaf7[_0x313a89(0x29d)](/Project/i)>0x0?(IsProjectTask=!![],ProjectCount++):IsProjectTask=![];}var _0x3e3a7c='';if(TypeofLincnse==_0x313a89(0x31f))$(_0x313a89(0x201))[_0x313a89(0x264)]();else{$(_0x313a89(0x201))[_0x313a89(0x241)]();if(_0x3b76f3[_0x3c9876][_0x313a89(0x28b)]!=null){_0x4d7d7f+=_0x313a89(0x2ec)+_0x3c9876+_0x313a89(0x27b)+_0x313a89(0x377)+_0x313a89(0x253)+_0x313a89(0x347)+_0x313a89(0x375)+_0x3b76f3[_0x3c9876][_0x313a89(0x2a0)]+_0x313a89(0x21c)+_0x313a89(0x230)+'<div\x20class=\x22assign-user-card-body\x22>'+'<div\x20class=\x22assign-user-card-body-info\x20text-ellipsis\x22>'+_0x313a89(0x2e6)+_0x3b76f3[_0x3c9876][_0x313a89(0x382)]+_0x313a89(0x280)+_0x313a89(0x358)+_0x3b76f3[_0x3c9876][_0x313a89(0x28b)]+'</p>'+_0x313a89(0x230)+_0x313a89(0x230)+'</div>'+'<div\x20id=\x22UserId'+_0x3c9876+_0x313a89(0x244)+_0x3b76f3[_0x3c9876]['Id']+_0x313a89(0x2d4);_0x3b76f3[_0x3c9876][_0x313a89(0x374)]==_0x313a89(0x2db)?_0x4d7d7f+=_0x313a89(0x377)+_0x313a89(0x272)+_0x3b76f3[_0x3c9876][_0x313a89(0x338)]+_0x313a89(0x258)+_0x313a89(0x27c)+_0x313a89(0x2a7)+_0x313a89(0x354)+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20150px;\x22\x20>'+_0x3b76f3[_0x3c9876][_0x313a89(0x337)]['DepartmentName']+'</h3>'+_0x313a89(0x2c7):_0x4d7d7f+=_0x313a89(0x377)+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22\x20style=\x22text-overflow:\x20ellipsis;\x20width:\x20150px;\x22\x20>'+_0x3b76f3[_0x3c9876][_0x313a89(0x338)]+_0x313a89(0x258)+_0x313a89(0x27c)+_0x313a89(0x2a7)+'<h3\x20class=\x22assign-user-name\x20text-ellipsis\x22>Guest</h3>'+_0x313a89(0x272)+_0x3b76f3[_0x3c9876][_0x313a89(0x267)]+_0x313a89(0x258)+_0x313a89(0x2c7);if(LicIntranet=='All')$(_0x313a89(0x211))[_0x313a89(0x27e)]('disabled',!![]),$('#chkheaderIntranet')[_0x313a89(0x27e)](_0x313a89(0x33f),!![]),$(_0x313a89(0x211))[_0x313a89(0x381)](_0x313a89(0x221),!![]),_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x340)+_0x3c9876+_0x313a89(0x20a)+_0x313a89(0x27c);else LicIntranet>0x0?($(_0x313a89(0x2e9))['removeAttr']('disabled'),$(_0x313a89(0x1f0))['removeAttr'](_0x313a89(0x33f)),IsIntranet?_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x340)+_0x3c9876+_0x313a89(0x2c6)+'</td>':_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x340)+_0x3c9876+_0x313a89(0x213)+'</td>'):_0x4d7d7f+=_0x313a89(0x367);if(LicDMS==_0x313a89(0x259))$(_0x313a89(0x294))[_0x313a89(0x27e)]('disabled',!![]),$(_0x313a89(0x388))[_0x313a89(0x27e)]('disabled',!![]),$(_0x313a89(0x294))[_0x313a89(0x381)](_0x313a89(0x221),!![]),_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x208)+_0x3c9876+_0x313a89(0x20a)+_0x313a89(0x27c);else LicDMS>0x0?($(_0x313a89(0x294))['removeAttr'](_0x313a89(0x33f)),$(_0x313a89(0x388))[_0x313a89(0x262)](_0x313a89(0x33f)),IsDMS?_0x4d7d7f+='<td\x20class=\x22text-center\x22>'+_0x313a89(0x208)+_0x3c9876+_0x313a89(0x313)+'</td>':_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x208)+_0x3c9876+_0x313a89(0x28c)+'</td>'):_0x4d7d7f+=_0x313a89(0x367);if(LicProjectTask==_0x313a89(0x259))$(_0x313a89(0x311))[_0x313a89(0x27e)](_0x313a89(0x33f),!![]),$('#chkheaderProject')[_0x313a89(0x27e)](_0x313a89(0x33f),!![]),$(_0x313a89(0x311))[_0x313a89(0x381)]('checked',!![]),_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x2e8)+_0x3c9876+_0x313a89(0x20a)+'</td>';else LicProjectTask>0x0?($(_0x313a89(0x311))['removeAttr'](_0x313a89(0x33f)),$(_0x313a89(0x268))[_0x313a89(0x262)]('disabled'),IsProjectTask?_0x4d7d7f+=_0x313a89(0x33c)+_0x313a89(0x22b)+_0x3c9876+_0x313a89(0x2f9)+_0x313a89(0x27c):_0x4d7d7f+=_0x313a89(0x33c)+'<label\x20class=\x22checkbox-inline\x20assign-usercheckbox-inline\x22\x20checkboxproject><input\x20class=\x22checkboxproject\x22\x20id=\x22projectChk'+_0x3c9876+_0x313a89(0x23d)+_0x313a89(0x27c)):_0x4d7d7f+='<td\x20class=\x22td-desibled\x20text-center\x22>-</td>';_0x4d7d7f+='</tr>';}}}$('#employeeusers')['html'](''),$(_0x313a89(0x248))[_0x313a89(0x389)](_0x4d7d7f),assignusertable=$('#assignusertable')['DataTable']({'columnDefs':[{'targets':0x0,'searchable':![],'orderable':![],'render':function(_0x1b23dc,_0x154292,_0x5d2503,_0xf8e8ad){var _0x33fc36=_0x313a89;return _0x33fc36(0x2ba)+$(_0x33fc36(0x2f6))['text'](_0x1b23dc)['html']()+'\x22>';}}],'order':[[0x1,'asc']],'searching':!![],'bPaginate':![],'bLengthChange':![],'bFilter':!![],'bInfo':![],'bAutoWidth':![],'language':{'searchPlaceholder':'Search\x20records'},'columnDefs':[{'targets':[0x0,0x4,0x5,0x6],'searchable':![],'orderable':![]}]});}$(a508_0x430fe8(0x388))['on'](a508_0x430fe8(0x31b),function(){var _0x47ba72=a508_0x430fe8,_0x46966a=$('#chkheaderDMS')['is'](':checked');$(_0x47ba72(0x376))[_0x47ba72(0x35c)](''),$(_0x47ba72(0x21b))['html'](''),AvailableCount=LicDMS;var _0x3a41c0=assignusertable[_0x47ba72(0x25b)]()[_0x47ba72(0x225)]();_0x46966a?($('.checkboxDMS')[_0x47ba72(0x381)]('checked',_0x46966a),$(_0x47ba72(0x21b))[_0x47ba72(0x35c)](_0x3a41c0['length']),ConsumedlicenseCount=_0x3a41c0[_0x47ba72(0x1f8)],AvailableCount=AvailableCount-_0x3a41c0[_0x47ba72(0x1f8)],$(_0x47ba72(0x376))[_0x47ba72(0x35c)](AvailableCount)):($(_0x47ba72(0x2ea))[_0x47ba72(0x381)]('checked',_0x46966a),$(_0x47ba72(0x21b))['html'](0x0),$('#LicDMSAvilableCount')[_0x47ba72(0x35c)](AvailableCount),ConsumedlicenseCount=0x0),DMSCount=ConsumedlicenseCount,LicDMSAvilableCount=AvailableCount,IsVisibleSubmitButton();});function GetCheckCountDMS(_0x16d5f4){var _0x478438=a508_0x430fe8;DMSCount=$(_0x478438(0x21b))[_0x478438(0x203)](),LicDMSAvilableCount=$(_0x478438(0x376))[_0x478438(0x203)](),_0x16d5f4['checked']==!![]?(LicDMSAvilableCount=LicDMSAvilableCount-0x1,DMSCount=parseInt(DMSCount)+0x1):(LicDMSAvilableCount=parseInt(LicDMSAvilableCount)+0x1,DMSCount=DMSCount-0x1),$(_0x478438(0x388))[_0x478438(0x381)]('checked',![]),$(_0x478438(0x21b))[_0x478438(0x35c)](DMSCount),$('#LicDMSAvilableCount')[_0x478438(0x35c)](LicDMSAvilableCount),IsVisibleSubmitButton();}$('#chkheaderIntranet')['on'](a508_0x430fe8(0x31b),function(){var _0x16526d=a508_0x430fe8,_0x502cc9=$(_0x16526d(0x1f0))['is'](':checked');$(_0x16526d(0x292))[_0x16526d(0x35c)](''),$(_0x16526d(0x2f1))[_0x16526d(0x35c)](''),AvailableCount=LicIntranet;var _0x2b60cb=assignusertable['rows']()[_0x16526d(0x225)]();_0x502cc9?($(_0x16526d(0x249))['prop']('checked',_0x502cc9),$('#LicIntranetConsumedCount')[_0x16526d(0x35c)](_0x2b60cb[_0x16526d(0x1f8)]),ConsumedlicenseCount=_0x2b60cb['length'],AvailableCount=AvailableCount-_0x2b60cb['length'],$(_0x16526d(0x292))[_0x16526d(0x35c)](AvailableCount)):($(_0x16526d(0x249))['prop'](_0x16526d(0x221),_0x502cc9),$('#LicIntranetConsumedCount')[_0x16526d(0x35c)](0x0),$('#LicIntranetAvilableCount')[_0x16526d(0x35c)](AvailableCount),ConsumedlicenseCount=0x0),IntranetCount=ConsumedlicenseCount,LicIntranetAvilableCount=AvailableCount,IsVisibleSubmitButton();});function GetCheckCountInternet(_0x446f99){var _0x1a8e92=a508_0x430fe8;IntranetCount=$(_0x1a8e92(0x2f1))['text'](),LicIntranetAvilableCount=$(_0x1a8e92(0x292))[_0x1a8e92(0x203)](),_0x446f99[_0x1a8e92(0x221)]==!![]?(LicIntranetAvilableCount=LicIntranetAvilableCount-0x1,IntranetCount=parseInt(IntranetCount)+0x1):($(_0x1a8e92(0x1f0))['prop']('checked',![]),LicIntranetAvilableCount=parseInt(LicIntranetAvilableCount)+0x1,IntranetCount=parseInt(IntranetCount)-0x1),$(_0x1a8e92(0x292))['html'](LicIntranetAvilableCount),$(_0x1a8e92(0x2f1))['html'](IntranetCount),IsVisibleSubmitButton();}function GetCheckCountProject(_0x52cd9d){var _0x24cd40=a508_0x430fe8;ProjectCount=$(_0x24cd40(0x2e4))[_0x24cd40(0x203)](),LicProjectTaskAvilableCount=$(_0x24cd40(0x206))[_0x24cd40(0x203)](),_0x52cd9d[_0x24cd40(0x221)]==!![]?(LicProjectTaskAvilableCount=LicProjectTaskAvilableCount-0x1,ProjectCount=parseInt(ProjectCount)+0x1):($('#chkheaderProject')['prop'](_0x24cd40(0x221),![]),LicProjectTaskAvilableCount=parseInt(LicProjectTaskAvilableCount)+0x1,ProjectCount=ProjectCount-0x1),$(_0x24cd40(0x206))[_0x24cd40(0x35c)](''),$(_0x24cd40(0x206))[_0x24cd40(0x35c)](LicProjectTaskAvilableCount),$('#LicProjectConsumedCount')[_0x24cd40(0x35c)](ProjectCount),IsVisibleSubmitButton();}$(a508_0x430fe8(0x268))['on']('click',function(){var _0x221c0f=a508_0x430fe8,_0x3e624a=$('#chkheaderProject')['is'](':checked');$('#LicProjectTaskAvilableCount')['html'](''),$('#LicProjectConsumedCount')[_0x221c0f(0x35c)](''),AvailableCount=LicProjectTask;var _0x11f56b=assignusertable['rows']()[_0x221c0f(0x225)]();_0x3e624a?($('.checkboxproject')[_0x221c0f(0x381)](_0x221c0f(0x221),_0x3e624a),$(_0x221c0f(0x2e4))[_0x221c0f(0x35c)](_0x11f56b[_0x221c0f(0x1f8)]),ConsumedlicenseCount=_0x11f56b[_0x221c0f(0x1f8)],AvailableCount=AvailableCount-_0x11f56b[_0x221c0f(0x1f8)],$(_0x221c0f(0x206))['html'](AvailableCount)):($(_0x221c0f(0x319))[_0x221c0f(0x381)](_0x221c0f(0x221),_0x3e624a),$(_0x221c0f(0x2e4))[_0x221c0f(0x35c)](0x0),$(_0x221c0f(0x206))['html'](AvailableCount),ConsumedlicenseCount=0x0),ProjectCount=ConsumedlicenseCount,LicProjectTaskAvilableCount=AvailableCount,IsVisibleSubmitButton();});function IsVisibleSubmitButton(){var _0x4200be=a508_0x430fe8;(LicIntranetAvilableCount>=0x0||LicIntranetAvilableCount==NaN)&&(LicDMSAvilableCount>=0x0||LicDMSAvilableCount==NaN)&&(LicProjectTaskAvilableCount>=0x0||LicProjectTaskAvilableCount==NaN)?$(_0x4200be(0x391))['show']():$(_0x4200be(0x391))['hide']();}$(a508_0x430fe8(0x392))['on'](a508_0x430fe8(0x31b),function(){setTimeout(function(){var _0x27b7a5=a508_0x48b3;$('body')[_0x27b7a5(0x1e1)](_0x27b7a5(0x2be));},0x258);}),$(a508_0x430fe8(0x27f))['on'](a508_0x430fe8(0x31b),function(){var _0x335467=a508_0x430fe8;assignusertable[_0x335467(0x36b)]();}),$(a508_0x430fe8(0x2e5))['on'](a508_0x430fe8(0x31b),function(){Consumedlicensetable['destroy']();}),$(a508_0x430fe8(0x2f0))['on']('click',function(){var _0x3cc9ce=a508_0x430fe8;CommonFunctionLic[_0x3cc9ce(0x371)]();}),$(a508_0x430fe8(0x237))['on'](a508_0x430fe8(0x31b),function(){setTimeout(function(){var _0x804b6a=a508_0x48b3;$('body')[_0x804b6a(0x1e1)]('modal-open');},0x258);}),$('#assignFilterClearBtn')['on'](a508_0x430fe8(0x31b),function(){var _0xdad55=a508_0x430fe8;assignusertable[_0xdad55(0x36b)](),Consumedlicensefilter=![],LoadGridhtml(AllEmployees);});function GetApprovalProcessMaster(){var _0x50533c=a508_0x430fe8,_0x286233='';return RestQuery=_0x50533c(0x318),$['when'](CommonFunctionLic['getItemsWithQueryItem'](_0x50533c(0x2a5),RestQuery))['done'](function(_0x32ec4a){var _0x5515de=_0x50533c;_0x286233=_0x32ec4a[_0x5515de(0x30b)]['length'];}),_0x286233;}function GetAvailbleLicence(){var _0x16db59=a508_0x430fe8;AllEmployees=[];var _0x2b710f='',_0xbebf33=_0x16db59(0x390)+_0x16db59(0x236)+'Company/CompanyName,Company/ID,ManagerLoginName/Id,ManagerLoginName/EMail,'+_0x16db59(0x223);dfds=$[_0x16db59(0x200)](),extdfds=$[_0x16db59(0x200)]();var _0x35718b='',_0x36d98e,_0x24b9be;return url=_spPageContextInfo[_0x16db59(0x2d9)]+_0x16db59(0x341)+_0xbebf33,$['when'](CommonFunctionLic[_0x16db59(0x1e7)](url,dfds))[_0x16db59(0x336)](function(_0x2b697c){var _0x3b6927=_0x16db59;response=[],_0x36d98e=_0x2b697c['length'],AllEmployeeUser=_0x2b697c;for(var _0x131f6c=0x0;_0x131f6c<AllEmployeeUser[_0x3b6927(0x1f8)];_0x131f6c++){var _0x49d10b='';AllEmployeeUser[_0x131f6c][_0x3b6927(0x22d)][_0x3b6927(0x30b)]['length']>0x0?_0x49d10b=AllEmployeeUser[_0x131f6c][_0x3b6927(0x22d)][_0x3b6927(0x30b)][0x0][_0x3b6927(0x2fe)]:_0x49d10b=_spPageContextInfo[_0x3b6927(0x2d9)]+_0x3b6927(0x348)+AllEmployeeUser[_0x131f6c][_0x3b6927(0x306)][_0x3b6927(0x265)],AllEmployees['push']({'Id':AllEmployeeUser[_0x131f6c]['Id'],'EMail':AllEmployeeUser[_0x131f6c]['LogonName'][_0x3b6927(0x265)],'FullName':AllEmployeeUser[_0x131f6c][_0x3b6927(0x382)],'EmpLicense':AllEmployeeUser[_0x131f6c]['EmpLicense'],'ManagerLoginName':AllEmployeeUser[_0x131f6c][_0x3b6927(0x24d)],'Designation':AllEmployeeUser[_0x131f6c][_0x3b6927(0x338)]==null?'':AllEmployeeUser[_0x131f6c][_0x3b6927(0x338)],'OfficeLocation':AllEmployeeUser[_0x131f6c]['OfficeLocation'],'Department':AllEmployeeUser[_0x131f6c][_0x3b6927(0x337)],'Company':AllEmployeeUser[_0x131f6c][_0x3b6927(0x267)],'AttachmentFile':_0x49d10b,'Type':'Employees'});}var _0x3fece7=_spPageContextInfo[_0x3b6927(0x2d9)]+_0x3b6927(0x2e7)+new Date()[_0x3b6927(0x2f7)]()+_0x3b6927(0x2ad);$[_0x3b6927(0x2bb)](CommonFunctionLic[_0x3b6927(0x1e7)](_0x3fece7,extdfds))[_0x3b6927(0x336)](function(_0x3b9bfa){var _0x31c724=_0x3b6927;response=[],_0x24b9be=_0x3b9bfa[_0x31c724(0x1f8)];for(var _0x49cb6d=0x0;_0x49cb6d<_0x3b9bfa['length'];_0x49cb6d++){var _0x262848='';_0x3b9bfa[_0x49cb6d][_0x31c724(0x22d)][_0x31c724(0x30b)][_0x31c724(0x1f8)]>0x0?_0x262848=_0x3b9bfa[_0x49cb6d][_0x31c724(0x22d)][_0x31c724(0x30b)][0x0]['ServerRelativeUrl']:_0x262848=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+_0x3b9bfa[_0x49cb6d]['LoginName'][_0x31c724(0x28b)],AllEmployees[_0x31c724(0x1ee)]({'Id':_0x3b9bfa[_0x49cb6d]['Id'],'EMail':_0x3b9bfa[_0x49cb6d][_0x31c724(0x235)][_0x31c724(0x28b)],'FullName':_0x3b9bfa[_0x49cb6d]['Title'],'EmpLicense':_0x3b9bfa[_0x49cb6d][_0x31c724(0x32e)],'ManagerLoginName':_0x3b9bfa[_0x49cb6d]['Supervisor'][_0x31c724(0x28b)],'Designation':_0x3b9bfa[_0x49cb6d][_0x31c724(0x338)]==null?'':_0x3b9bfa[_0x49cb6d][_0x31c724(0x338)],'OfficeLocation':'','Department':'','Company':_0x3b9bfa[_0x49cb6d][_0x31c724(0x20e)][_0x31c724(0x29b)],'AttachmentFile':_0x262848,'Type':'Guest'});}}),_0x35718b=parseInt(_0x36d98e)+parseInt(_0x24b9be),_0x2b710f=parseInt(UsersLicenceRequired)-parseInt(_0x35718b);}),_0x2b710f;}var response=response||[],CommonFunctionLic=[];CommonFunctionLic[a508_0x430fe8(0x274)]=function(_0x5c7c13,_0x129b46){var _0x219ca9=a508_0x430fe8;return DeferredObj=$['Deferred'](),$[_0x219ca9(0x321)]({'url':_spPageContextInfo[_0x219ca9(0x2d9)]+'/_api/web/lists/getbytitle(\x27'+_0x5c7c13+_0x219ca9(0x36a)+_0x129b46,'type':'GET','async':![],'headers':{'ACCEPT':_0x219ca9(0x2a3),'X-RequestDigest':$(_0x219ca9(0x33a))[_0x219ca9(0x1fc)]()},'success':function(_0x3ac7c8){var _0x67afc8=_0x219ca9;DeferredObj[_0x67afc8(0x360)](_0x3ac7c8['d']);},'error':function(_0x171cdb){var _0x124732=_0x219ca9;DeferredObj[_0x124732(0x379)](_0x171cdb);}}),DeferredObj[_0x219ca9(0x395)]();},CommonFunctionLic[a508_0x430fe8(0x351)]=function(_0x58d876,_0x3a44ba,_0x517370){var _0x6493ef=a508_0x430fe8,_0x1b44e1=$[_0x6493ef(0x200)]();return $[_0x6493ef(0x321)]({'url':_spPageContextInfo[_0x6493ef(0x2d9)]+_0x6493ef(0x33e)+_0x3a44ba+_0x6493ef(0x2b3)+_0x58d876+')','type':'POST','async':![],'headers':{'accept':_0x6493ef(0x2a3),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x6493ef(0x1fc)](),'content-Type':_0x6493ef(0x2a3),'IF-MATCH':'*','X-HTTP-Method':_0x6493ef(0x1fe)},'data':JSON[_0x6493ef(0x305)](_0x517370),'success':function(_0x318b69){var _0x34d19e=_0x6493ef;console[_0x34d19e(0x30c)](_0x34d19e(0x233)),_0x1b44e1[_0x34d19e(0x360)](_0x318b69);},'error':function(_0x666f0d){var _0x45327d=_0x6493ef;console[_0x45327d(0x30c)](JSON[_0x45327d(0x305)](_0x666f0d)),_0x1b44e1[_0x45327d(0x379)](_0x666f0d);}}),_0x1b44e1['promise']();},CommonFunctionLic[a508_0x430fe8(0x1f6)]=function(_0x584851){var _0x3f2c0a=a508_0x430fe8;return _0x3f2c0a(0x25e)+_0x584851[_0x3f2c0a(0x246)](0x0)['toUpperCase']()+_0x584851[_0x3f2c0a(0x286)]('\x20')['join']('')['slice'](0x1)+_0x3f2c0a(0x2b8);},CommonFunctionLic['getItems']=function(_0x1a17f7,_0x3c6d27){var _0x2ef156=a508_0x430fe8;return $[_0x2ef156(0x321)]({'url':_0x1a17f7,'type':_0x2ef156(0x32f),'async':![],'headers':{'accept':_0x2ef156(0x2a3)},'success':function(_0x13c5cc){var _0x260e61=_0x2ef156;response=response['concat'](_0x13c5cc['d'][_0x260e61(0x30b)]),_0x13c5cc['d']['__next']?(_0x1a17f7=_0x13c5cc['d'][_0x260e61(0x289)],CommonFunctionLic['getItems'](_0x1a17f7,_0x3c6d27)):_0x3c6d27[_0x260e61(0x360)](response);},'error':function(_0x311265){var _0x22712b=_0x2ef156;_0x3c6d27[_0x22712b(0x379)](_0x311265),console[_0x22712b(0x30c)](_0x311265);}}),_0x3c6d27[_0x2ef156(0x395)]();},CommonFunctionLic[a508_0x430fe8(0x1f5)]=function(){var _0x48f536=a508_0x430fe8,_0x2f44ef=_spPageContextInfo[_0x48f536(0x2d9)]+_0x48f536(0x263);$[_0x48f536(0x321)]({'url':_0x2f44ef,'headers':{'Accept':_0x48f536(0x2a3)},'async':![],'success':function(_0x29b16a){var _0x1cf5b8=_0x48f536,_0x162902=_0x29b16a['d']['results'];$(_0x1cf5b8(0x398))[_0x1cf5b8(0x35c)]('');for(var _0x36676d=0x0;_0x36676d<_0x162902[_0x1cf5b8(0x1f8)];_0x36676d++){$('#FilterEditEventCateory')[_0x1cf5b8(0x389)]($(_0x1cf5b8(0x373))[_0x1cf5b8(0x27e)](_0x1cf5b8(0x277),_0x29b16a['d'][_0x1cf5b8(0x30b)][_0x36676d]['ID'])['text'](_0x29b16a['d']['results'][_0x36676d]['CompanyName']));}IsValueSet=!![],CommonFunctionLic['GetDepartment'](Logged_CompanyId),$(_0x1cf5b8(0x398))['val'](Logged_CompanyId);},'eror':function(_0x17ff84){var _0x5d10e3=_0x48f536;console[_0x5d10e3(0x30c)](_0x5d10e3(0x207));}});},CommonFunctionLic[a508_0x430fe8(0x328)]=function(_0x2844b5){var _0x1e4753=a508_0x430fe8;$(_0x1e4753(0x27d))['empty']()['append'](_0x1e4753(0x303));var _0x109527=_spPageContextInfo['webAbsoluteUrl']+_0x1e4753(0x320)+_0x2844b5+'\x27';$['ajax']({'url':_0x109527,'headers':{'Accept':_0x1e4753(0x2a3)},'async':![],'success':function(_0x32559d){var _0x365645=_0x1e4753,_0x46d10d=_0x32559d['d'][_0x365645(0x30b)];for(var _0x1f862b=0x0;_0x1f862b<_0x46d10d[_0x365645(0x1f8)];_0x1f862b++){$(_0x365645(0x27d))[_0x365645(0x389)]($('<option></option>')[_0x365645(0x27e)](_0x365645(0x277),_0x32559d['d'][_0x365645(0x30b)][_0x1f862b]['ID'])[_0x365645(0x203)](_0x32559d['d']['results'][_0x1f862b][_0x365645(0x251)]));}CommonFunctionLic[_0x365645(0x304)](_0x2844b5);},'eror':function(_0x3b54f7){var _0x3a8779=_0x1e4753;console[_0x3a8779(0x30c)]('error');}});};var arrRegion=[];CommonFunctionLic[a508_0x430fe8(0x304)]=function(_0xd59408){var _0xa15867=a508_0x430fe8;$(_0xa15867(0x359))['empty']()[_0xa15867(0x389)](_0xa15867(0x1ef)),arrRegion=[];var _0xf5e56f=_spPageContextInfo[_0xa15867(0x2d9)]+_0xa15867(0x215)+_0xd59408+'\x27';$[_0xa15867(0x321)]({'url':_0xf5e56f,'headers':{'Accept':_0xa15867(0x2a3)},'async':![],'success':function(_0x37113f){var _0x38f15e=_0xa15867,_0x4090ad=_0x37113f['d'][_0x38f15e(0x30b)];for(var _0x42a2ab=0x0;_0x42a2ab<_0x4090ad['length'];_0x42a2ab++){$(_0x38f15e(0x359))['append']($(_0x38f15e(0x373))[_0x38f15e(0x27e)](_0x38f15e(0x277),_0x37113f['d'][_0x38f15e(0x30b)][_0x42a2ab]['ID'])[_0x38f15e(0x203)](_0x37113f['d'][_0x38f15e(0x30b)][_0x42a2ab][_0x38f15e(0x36d)]));var _0x23e1d3='';_0x23e1d3=_0x4090ad[_0x42a2ab][_0x38f15e(0x302)],_0x23e1d3!=null&&arrRegion[_0x38f15e(0x1ee)](_0x37113f['d'][_0x38f15e(0x30b)][_0x42a2ab][_0x38f15e(0x302)]);}CommonFunctionLic[_0x38f15e(0x2bc)](Logged_CompanyId);},'eror':function(_0x3f8920){var _0x57c062=_0xa15867;console[_0x57c062(0x30c)]('error');}});},CommonFunctionLic[a508_0x430fe8(0x2bc)]=function(_0x5ec960){var _0x25a29e=a508_0x430fe8;$(_0x25a29e(0x1fd))[_0x25a29e(0x1e4)]()[_0x25a29e(0x389)]('<option\x20value=\x220\x22>-Select\x20Customer-</option>');var _0x41bedd=_spPageContextInfo[_0x25a29e(0x2d9)]+_0x25a29e(0x255)+_0x5ec960+'\x27\x20and\x20IsActive\x20eq\x201';$[_0x25a29e(0x321)]({'url':_0x41bedd,'headers':{'Accept':_0x25a29e(0x2a3)},'async':![],'success':function(_0x167cf5){var _0x39eb7c=_0x25a29e,_0x56a6ad=_0x167cf5['d'][_0x39eb7c(0x30b)];for(var _0x1af42d=0x0;_0x1af42d<_0x56a6ad['length'];_0x1af42d++){$(_0x39eb7c(0x1fd))[_0x39eb7c(0x389)]($(_0x39eb7c(0x373))[_0x39eb7c(0x27e)]('value',_0x167cf5['d'][_0x39eb7c(0x30b)][_0x1af42d]['ID'])[_0x39eb7c(0x203)](_0x167cf5['d']['results'][_0x1af42d]['Title']));}},'eror':function(_0x3359df){var _0x1da658=_0x25a29e;console[_0x1da658(0x30c)]('error');}});},CommonFunctionLic[a508_0x430fe8(0x371)]=function(){var _0x459367=a508_0x430fe8,_0x286771=[];response=[];var _0x536bb9=CommonFunctionLic[_0x459367(0x384)](_0x459367(0x335)),_0x5739d9=CommonFunctionLic[_0x459367(0x384)]('pplEmployee'),_0x2245dc=$('#FilterDesignation')[_0x459367(0x1fc)](),_0x56d189='',_0x18c3e4=$(_0x459367(0x21d))['text']();if($('#FilterEditEventType')['val']()==_0x459367(0x250)){var _0x5bce7a=$(_0x459367(0x22e))[_0x459367(0x203)](),_0x18cdf1=$('#ddlFilterLoc\x20:selected')[_0x459367(0x203)]();_0x2245dc[_0x459367(0x346)]()!=''&&(_0x56d189+=_0x459367(0x288)+_0x2245dc+_0x459367(0x2f5));_0x5bce7a!=_0x459367(0x26b)&&(_0x56d189+=_0x459367(0x350)+_0x5bce7a+'\x27');_0x18cdf1!='-Select\x20Office\x20Location-'&&(_0x56d189+=_0x459367(0x25a)+_0x18cdf1+'\x27');_0x536bb9[_0x459367(0x1f8)]>0x0&&(_0x56d189+=_0x459367(0x343)+_0x536bb9[0x0]+'\x27');_0x5739d9[_0x459367(0x1f8)]>0x0&&(_0x56d189+=_0x459367(0x2eb)+_0x5739d9[0x0]+'\x27');var _0x129fb6=_0x459367(0x390)+_0x459367(0x236)+'Company/CompanyName,Company/ID,ManagerLoginName/Id,ManagerLoginName/EMail,'+_0x459367(0x28f)+$(_0x459367(0x398))['val']()+'\x27'+_0x56d189+'\x20',_0x218b96=$[_0x459367(0x200)](),_0x3794fc=_spPageContextInfo[_0x459367(0x2d9)]+_0x459367(0x341)+_0x129fb6;$[_0x459367(0x2bb)](CommonFunctionLic[_0x459367(0x1e7)](_0x3794fc,_0x218b96))[_0x459367(0x336)](function(_0x1fae5d){var _0x46087e=_0x459367;for(var _0x52edfc=0x0;_0x52edfc<_0x1fae5d[_0x46087e(0x1f8)];_0x52edfc++){var _0x555f84='';_0x1fae5d[_0x52edfc][_0x46087e(0x22d)][_0x46087e(0x30b)][_0x46087e(0x1f8)]>0x0?_0x555f84=_0x1fae5d[_0x52edfc][_0x46087e(0x22d)][_0x46087e(0x30b)][0x0][_0x46087e(0x2fe)]:_0x555f84=_spPageContextInfo['webAbsoluteUrl']+_0x46087e(0x348)+_0x1fae5d[_0x52edfc][_0x46087e(0x306)][_0x46087e(0x265)],_0x286771['push']({'Id':_0x1fae5d[_0x52edfc]['Id'],'EMail':_0x1fae5d[_0x52edfc]['LogonName'][_0x46087e(0x265)],'FullName':_0x1fae5d[_0x52edfc]['FullName'],'EmpLicense':_0x1fae5d[_0x52edfc][_0x46087e(0x32e)],'ManagerLoginName':_0x1fae5d[_0x52edfc]['ManagerLoginName'],'Designation':_0x1fae5d[_0x52edfc]['Designation']==null?'':_0x1fae5d[_0x52edfc][_0x46087e(0x338)],'OfficeLocation':_0x1fae5d[_0x52edfc][_0x46087e(0x364)],'Department':_0x1fae5d[_0x52edfc][_0x46087e(0x337)],'Company':_0x1fae5d[_0x52edfc][_0x46087e(0x267)],'AttachmentFile':_0x555f84,'Type':'Employees'});}});}else{if($(_0x459367(0x20b))['val']()==_0x459367(0x37e)){var _0x18c3e4=$(_0x459367(0x383))[_0x459367(0x1fc)]();_0x18c3e4!=_0x459367(0x314)&&(_0x56d189+='\x20and\x20Client_NameId\x20eq\x20\x27'+_0x18c3e4+'\x27');_0x2245dc[_0x459367(0x346)]()!=''&&(_0x56d189+=_0x459367(0x288)+_0x2245dc+_0x459367(0x2f5));_0x536bb9[_0x459367(0x1f8)]>0x0&&(_0x56d189+=_0x459367(0x28e)+_0x536bb9[0x0]+'\x27');_0x5739d9[_0x459367(0x1f8)]>0x0&&(_0x56d189+=_0x459367(0x1ed)+_0x5739d9[0x0]+'\x27');var _0x4f5ad0=$[_0x459367(0x200)](),_0x23c9ad=_spPageContextInfo[_0x459367(0x2d9)]+'/_api/web/lists/getbytitle(\x27ExternalUsers\x27)/items?$select=*,InternalStakeholders/Title,Supervisor_Guest/Title,Client_Name/Title,Client_Name/Id,LoginName/Title,LoginName/EMail,Supervisor/EMail,\x20Supervisor/Title&$expand=\x20LoginName,Supervisor,Client_Name,Supervisor_Guest,InternalStakeholders,AttachmentFiles\x20&$filter=\x20(ValidUpto\x20ge\x20\x27'+new Date()[_0x459367(0x2f7)]()+_0x459367(0x397)+_0x56d189+'';$['when'](CommonFunctionLic[_0x459367(0x1e7)](_0x23c9ad,_0x4f5ad0))[_0x459367(0x336)](function(_0x4a80af){var _0x4062c8=_0x459367;response=[];for(var _0xfd4faf=0x0;_0xfd4faf<_0x4a80af[_0x4062c8(0x1f8)];_0xfd4faf++){var _0x20aedf='';_0x4a80af[_0xfd4faf][_0x4062c8(0x22d)][_0x4062c8(0x30b)]['length']>0x0?_0x20aedf=_0x4a80af[_0xfd4faf][_0x4062c8(0x22d)][_0x4062c8(0x30b)][0x0][_0x4062c8(0x2fe)]:_0x20aedf=_spPageContextInfo[_0x4062c8(0x2d9)]+_0x4062c8(0x348)+_0x4a80af[_0xfd4faf][_0x4062c8(0x235)][_0x4062c8(0x28b)],_0x286771[_0x4062c8(0x1ee)]({'Id':_0x4a80af[_0xfd4faf]['Id'],'EMail':_0x4a80af[_0xfd4faf][_0x4062c8(0x235)][_0x4062c8(0x28b)],'FullName':_0x4a80af[_0xfd4faf]['Title'],'EmpLicense':_0x4a80af[_0xfd4faf][_0x4062c8(0x32e)],'ManagerLoginName':_0x4a80af[_0xfd4faf][_0x4062c8(0x295)][_0x4062c8(0x28b)],'Designation':_0x4a80af[_0xfd4faf][_0x4062c8(0x338)]==null?'':_0x4a80af[_0xfd4faf][_0x4062c8(0x338)],'OfficeLocation':'','Department':'','Company':_0x4a80af[_0xfd4faf][_0x4062c8(0x20e)][_0x4062c8(0x29b)],'AttachmentFile':_0x20aedf,'Type':_0x4062c8(0x324)});}});}}Consumedlicensefilter?(Consumedlicensetable[_0x459367(0x36b)](),LoadConsumedhtml(_0x286771)):(assignusertable[_0x459367(0x36b)](),LoadGridhtml(_0x286771));},CommonFunctionLic[a508_0x430fe8(0x384)]=function(_0x1bae9a){var _0x4ab83a=a508_0x430fe8;SharedUserName=[];var _0x173315=new Array(),_0x2103b5=$(_0x4ab83a(0x278)+_0x1bae9a+'\x27]'),_0x44787c=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x2103b5[0x1]['id']],_0x5b5daf=_0x44787c[_0x4ab83a(0x2c2)]();if(_0x5b5daf[_0x4ab83a(0x1f8)]>0x0){var _0x4ac527=new Array(),_0x173ac5=new Array();for(var _0x342f3d=0x0;_0x342f3d<_0x5b5daf['length'];_0x342f3d++){var _0x34c4fa=_0x5b5daf[_0x342f3d]['Key'],_0x16384d=_0x5b5daf[_0x342f3d][_0x4ab83a(0x261)];if(_0x16384d=='User')_0x173315[_0x4ab83a(0x1ee)](_0x5b5daf[_0x342f3d][_0x4ab83a(0x385)][_0x4ab83a(0x286)]('|')[0x2]),SharedUserName[_0x4ab83a(0x1ee)](_0x5b5daf[_0x342f3d]['DisplayText']);else{var _0x34c4fa=_0x5b5daf[_0x342f3d][_0x4ab83a(0x281)][_0x4ab83a(0x2c8)],_0x239cd3=new Array();_0x239cd3[_0x4ab83a(0x1ee)](siteusers(_0x34c4fa));var _0x118157=_0x173315[_0x4ab83a(0x2d8)]['apply']([],_0x239cd3);_0x173315=_0x173315[_0x4ab83a(0x2d8)](_0x118157);}}}return _0x173315;},CommonFunctionLic['initializePeoplePicker']=function(_0x10ae49,_0x4f9cd6){var _0x27730f=a508_0x430fe8,_0x5520fe={};_0x5520fe[_0x27730f(0x2ee)]=_0x27730f(0x209),_0x5520fe[_0x27730f(0x2b9)]=0xf,_0x5520fe[_0x27730f(0x333)]=0xf,_0x5520fe[_0x27730f(0x380)]=_0x4f9cd6,_0x5520fe['MaximumEntitySuggestions']=0x32,_0x5520fe['Width']=_0x27730f(0x24e),SPClientPeoplePicker_InitStandaloneControlWrapper(_0x10ae49,null,_0x5520fe),$(_0x27730f(0x240))[_0x27730f(0x219)](0xfa);};function getUserInformation(_0x201072,_0x53baf1,_0x33c257,_0x22ae1a){var _0xf58700=a508_0x430fe8,_0x39a387=[],_0x36b0fb=[],_0x15b37d=this[_0xf58700(0x372)][_0xf58700(0x344)][_0x201072+_0xf58700(0x366)];if(!_0x15b37d['IsEmpty']()){if(_0x15b37d[_0xf58700(0x24b)])return![];else{if(!_0x15b37d[_0xf58700(0x316)]())return![];else{if(_0x15b37d['TotalUserCount']>0x0){var _0x579651=_0x15b37d[_0xf58700(0x2c2)](),_0x3eb007='',_0x543485='',_0x42dc65='';for(var _0x4e7be0=0x0;_0x4e7be0<_0x579651[_0xf58700(0x1f8)];_0x4e7be0++){var _0x3d784c=_0x579651[_0x4e7be0][_0xf58700(0x385)];_0x579651[_0x4e7be0][_0xf58700(0x281)]['Email'],_0x579651[_0x4e7be0][_0xf58700(0x33d)];var _0x525b77=GetUserID(_0x3d784c);_0x525b77!=-0x1?_0x36b0fb[_0xf58700(0x2c3)](_0x525b77)==-0x1&&(_0x36b0fb[_0xf58700(0x1ee)](_0x525b77),_0x39a387[_0xf58700(0x1ee)](_0x525b77)):_0x39a387[_0xf58700(0x1ee)](parseInt(_0x579651[_0x4e7be0][_0xf58700(0x281)][_0xf58700(0x2c8)]));}return _0x39a387;}}}}else return _0x42dc65;}function EmptyPeoplePicker(_0x1342fd){var _0x3cd6e6=a508_0x430fe8,_0x3d7746=this[_0x3cd6e6(0x372)][_0x3cd6e6(0x344)][_0x1342fd+_0x3cd6e6(0x366)],_0x3d00ac=_0x3d7746[_0x3cd6e6(0x2c2)]();_0x3d00ac['forEach'](function(_0x2f3686){_0x3d7746['DeleteProcessedUser'](_0x3d00ac[_0x2f3686]);});}function GetUserID(_0x120d56){var _0x768235=a508_0x430fe8,_0x9026b6={'logonName':_0x120d56},_0x3449ab=-0x1,_0x346cf6=$[_0x768235(0x321)]({'url':_spPageContextInfo[_0x768235(0x368)]+_0x768235(0x228),'type':_0x768235(0x30e),'async':![],'contentType':'application/json;odata=verbose','data':JSON['stringify'](_0x9026b6),'headers':{'Accept':_0x768235(0x2a3),'X-RequestDigest':$(_0x768235(0x33a))[_0x768235(0x1fc)]()},'success':function(_0x135509){_0x3449ab=_0x135509['d']['Id'];},'error':function(_0x4b3b46){var _0x3d3d54=_0x768235;console[_0x3d3d54(0x30c)](_0x4b3b46),currentDlg!=''&&currentDlg[_0x3d3d54(0x283)]();}});return _0x3449ab;}var UserEmail=[];function onChangeAddUser(_0x52bcfe,_0x4bfb94,_0x5b698a){var _0x1f000e=a508_0x430fe8,_0x179a29=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x52bcfe],_0x1deed4='';_0x179a29[_0x1f000e(0x2b6)]=function(_0x27a9da,_0x9bb0f){var _0xb9a3c=_0x1f000e;if(_0x9bb0f[_0xb9a3c(0x1f8)]>0x0){_0x1deed4='',tempUserId=parseInt(getUserInformation(_0x4bfb94));var _0x297123=_0x9bb0f[0x0][_0xb9a3c(0x385)][_0xb9a3c(0x286)]('|')[0x2];_0x297123[_0xb9a3c(0x2d7)]('#')==!![]&&(_0x297123=_0x297123[_0xb9a3c(0x286)]('#ext')[0x0],_0x297123=_0x297123[_0xb9a3c(0x2af)]('_','@'));var _0x46812b=[];_0x46812b=UserEmail[_0xb9a3c(0x232)](function(_0x54ea34){var _0x1be11b=_0xb9a3c;return _0x54ea34[_0x1be11b(0x2d5)]==tempUserId;}),_0x46812b[_0xb9a3c(0x1f8)]==0x0?(UserEmail[_0xb9a3c(0x1ee)]({'UserId':tempUserId,'UserEmail':_0x297123,'UserName':_0x9bb0f[0x0][_0xb9a3c(0x33d)]}),attachment=_spPageContextInfo['webAbsoluteUrl']+_0xb9a3c(0x348)+escapeProperly(_0x297123),_0x1deed4+='<div\x20class=\x22col-sm-4\x20parentremove\x20User'+tempUserId+_0xb9a3c(0x23a),_0x1deed4+=_0xb9a3c(0x327)+_0x297123+_0xb9a3c(0x2cd)+_0x9bb0f[0x0]['DisplayText']+_0xb9a3c(0x317)+tempUserId+_0xb9a3c(0x24c),_0x1deed4+='<div\x20class=\x22empoyeeimg\x22><img\x20src=\x22'+attachment+_0xb9a3c(0x291),_0x1deed4+=_0xb9a3c(0x2ed)+_0x9bb0f[0x0][_0xb9a3c(0x33d)]+_0xb9a3c(0x258),_0x1deed4+=_0xb9a3c(0x393)+_0x297123+_0xb9a3c(0x326)+_0x297123+_0xb9a3c(0x22a),_0x1deed4+=_0xb9a3c(0x231),$('#'+_0x5b698a)[_0xb9a3c(0x389)](_0x1deed4)):alert(_0xb9a3c(0x31e)),EmptyPeoplePicker(_0x4bfb94);}else{}};}function removeUser(_0x3f7f6c,_0x452f25,_0x1421a9,_0x2554c6,_0x2bf4ce){var _0x247048=a508_0x430fe8;$(_0x3f7f6c)['parents'](_0x247048(0x32c))['remove'](),UserEmail=UserEmail[_0x247048(0x232)](function(_0x283636){var _0x4fa9c7=_0x247048;return _0x283636[_0x4fa9c7(0x2a6)][_0x4fa9c7(0x293)]()!==_0x452f25['toLowerCase']();}),UserEmail=UserEmail['filter'](function(_0xfd9f04){var _0x2eb11e=_0x247048;return _0xfd9f04['UserName'][_0x2eb11e(0x293)]()!==_0x1421a9[_0x2eb11e(0x293)]();}),UserEmail=UserEmail[_0x247048(0x232)](function(_0x2dca6b){var _0x1569fe=_0x247048;return _0x2dca6b[_0x1569fe(0x2d5)]!=_0x2554c6;});}var IsHomepageUrl='';function SetDefaultPage(_0x14bc1a,_0x5e17f7){var _0xf05eb5=a508_0x430fe8;IsHomepageUrl=_0x14bc1a,$['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+_0xf05eb5(0x29e),'type':_0xf05eb5(0x30e),'async':![],'data':JSON[_0xf05eb5(0x305)]({'__metadata':{'type':_0xf05eb5(0x31c)},'WelcomePage':_0x14bc1a}),'headers':{'Accept':_0xf05eb5(0x2a3),'Content-Type':'application/json;odata=verbose','IF-MATCH':'*','X-HTTP-Method':_0xf05eb5(0x26f),'X-RequestDigest':$(_0xf05eb5(0x33a))[_0xf05eb5(0x1fc)]()},'success':function(_0x651099,_0x19ac94,_0xad9f19){var _0x5845a2=_0xf05eb5;console['log'](_0x5845a2(0x245));if(_0x5e17f7)alert(_0x5845a2(0x35e));else{var _0x1dba9a=GetWelcomePage();if(IsHomepageUrl!=_0x1dba9a)var _0x4f3974=setTimeout(SetDefaultPage(IsHomepageUrl,![]),0x7d0);}},'error':function(_0x305010,_0x4ade3d,_0x4a424e){var _0x138599=_0xf05eb5;console[_0x138599(0x30c)]('Failed');}});}function GetWelcomePage(){var _0x2f8797=a508_0x430fe8,_0x297036='';return $['ajax']({'url':_spPageContextInfo[_0x2f8797(0x368)]+_0x2f8797(0x29e),'type':_0x2f8797(0x32f),'async':![],'headers':{'accept':_0x2f8797(0x2a3)},'success':function(_0x9bd7d5){_0x297036=_0x9bd7d5['d']['WelcomePage'];},'error':function(_0x95f53e){}}),_0x297036;}function a508_0x48b3(_0x24476b,_0x31b92b){var _0x347dbd=a508_0x347d();return a508_0x48b3=function(_0x48b33b,_0x1a164c){_0x48b33b=_0x48b33b-0x1df;var _0x593ded=_0x347dbd[_0x48b33b];return _0x593ded;},a508_0x48b3(_0x24476b,_0x31b92b);}var TechAdminArr=[];function getCompanyApprovers(){var _0x36c815=a508_0x430fe8,_0x294206=_spPageContextInfo[_0x36c815(0x2d9)]+_0x36c815(0x34b)+Logged_CompanyId+'\x27';return $[_0x36c815(0x321)]({'url':_0x294206,'headers':{'ACCEPT':'application/json;odata=verbose'},'async':![],'success':function(_0x191bb7){var _0x76dbed=_0x36c815,_0x19abb0=_0x191bb7['d']['results'];g_ApprovalItems=_0x19abb0;for(let _0x1e52b6=0x0;_0x1e52b6<_0x19abb0[_0x76dbed(0x1f8)];_0x1e52b6++){if(_0x19abb0[_0x1e52b6][_0x76dbed(0x1f7)]=='Tech\x20Admin'){var _0x29c29e=_0x19abb0[_0x1e52b6][_0x76dbed(0x276)];_0x19abb0[_0x1e52b6][_0x76dbed(0x396)]!=null&&_0x29c29e[_0x76dbed(0x30b)][_0x76dbed(0x1f2)](function(_0x206490){var _0x3622f3=_0x76dbed,_0x39535a=_0x206490[_0x3622f3(0x28b)],_0x550bc3=_0x206490['Title'],_0x4a4a4a=_0x206490['Id'];TechAdminArr['push']({'EMail':_0x39535a,'Id':_0x4a4a4a,'UserName':_0x550bc3});});}}},'error':function(_0x2eb843){alert(_0x2eb843);}}),TechAdminArr;}
+var AllEmployeeUser = "";
+var IsIntranet = false;
+var IsDMS = false;
+var IsProjectTask = false;
+var AssignIntranet = "";
+var AssignDMS = "";
+var AssignProject = "";
+var assignusertable = "";
+var assignusertablefilter = "";
+var IntranetCount = 0;
+var DMSCount = 0;
+var ProjectCount = 0;
+var BPassCount = 0;
+var ConsumedLicense = 0;
+var RestQuery = ""
+var IsNotSubscribedIntrenet = false;
+var IsNotSubscribedDMS = false;
+var IsNotSubscribedProject = false;
+var IsValueSet = false;
+var AllEmployees = [];
+var LicProjectTaskAvilableCount = 0;
+var ConsumedLicenseType = "";
+var LicIntranetAvilableCount = 0;
+var LicDMSAvilableCount = 0;
+var SetNewProject = false;
+var SetNewInternet = false;
+var SetNewDMS = false;
+var SetNewBpass = false;
+var filtermessage="Retrieve the Employee list";
+$(document).ready(function() {
+    if(!activeCheck) {
+        $('#view-agreement-modal').modal('show');
+    }
+    licenseValidDate.setDate(licenseValidDate.getDate() - 1);
+    $('#validuptodate').html(licenseValidDate.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+    }));
+    //var localStorageData = JSON.parse(localStorageLanguage);
+    //$("#LogoImages").attr("src", localStorageData.data);
+    var TechAdmins = getCompanyApprovers();
+    var IsUser = TechAdmins.filter(function(obj) {
+        return obj.Id == _spPageContextInfo.userId;
+    });
+    if(IsUser.length == 0 && _spPageContextInfo.isSiteAdmin == false) {
+        alert("Authorization has been denied for this page");
+        document.location.href = _spPageContextInfo.webServerRelativeUrl;
+    } else {
+        Getallinfomation();
+    }
+    $('#txtSearch').keyup(function() {
+        // var table = $('#assignusertable').DataTable();
+        assignusertable.search($(this).val()).draw();
+    })
+    $('#DefaultHome').html("");
+    $('#DefaultHome').append('<option value="-Select-">-Select-</option>');
+    if(IsNotSubscribedIntrenet) {
+        $('#DefaultHome').append('<option value="Pages/Home.aspx">Intranet Home</option>');
+        $('#DefaultHome').append('<option value="Pages/Myworkplace.aspx">My Workplace</option>');
+    }
+    if(IsNotSubscribedDMS) {
+        $('#DefaultHome').append('<option value="Pages/Document.aspx">My Document</option>');
+        $('#DefaultHome').append('<option value="Pages/DocumentTypesCounter.aspx">Company Documents</option>');
+    }
+    if(IsNotSubscribedProject) {
+        $('#DefaultHome').append('<option value="Pages/ViewAllProjects.aspx">Projects Dashboard</option>');
+        //$('#DefaultHome').append('<option value=""></option>');
+    }
+    if(IsBpassModules) {
+        $('#DefaultHome').append('<option value="Pages/approvals.aspx">Approvals Dashboard</option>');
+    }
+    selectElement('DefaultHome', GetWelcomePage());
+    $("#DefaultHome").change(function() {
+        if($('option:selected', $(this)).val() != "-Select-") {
+            SetDefaultPage($('option:selected', $(this)).val(), true);
+        }
+    });
+});
+
+function selectElement(id, valueToSelect) {
+    let element = document.getElementById(id);
+    element.value = valueToSelect;
+}
+
+function Getallinfomation() {
+    var AvilableLicense = GetAvailbleLicence();
+    BPassCount = GetApprovalProcessMaster();
+    ConsumedLicense = UsersLicenceRequired - AvilableLicense;
+    $('#ConsumedLicense').html('');
+    $('#ConsumedLicense').append('<h4 class="m-0">' + ConsumedLicense + '</h4>');
+    $('#AvilableLicense').html('');
+    $('#AvilableLicense').append('<h4 class="m-0">' + AvilableLicense + '</h4>');
+    if(TypeofLincnse != "Enterprise") {
+        IntranetCount = 0;
+        DMSCount = 0;
+        ProjectCount = 0;
+        for(var i = 0; i < AllEmployees.length; i++) {
+            IsDMS = false;
+            IsIntranet = false;
+            IsProjectTask = false;
+            if(AllEmployees[i].EmpLicense != null) {
+                var EmpLicense = CryptoJS.AES.decrypt(AllEmployees[i].EmpLicense, "@d@ptT!t@n");
+                var EmpLinceseEncript = EmpLicense.toString(CryptoJS.enc.Utf8);
+                if(EmpLinceseEncript.search(/Internet/i) > 0) {
+                    IsIntranet = true;
+                    IntranetCount++;
+                } else {
+                    IsIntranet = false;
+                }
+                if(EmpLinceseEncript.search(/DMS/i) > 0) {
+                    IsDMS = true;
+                    DMSCount++;
+                } else {
+                    IsDMS = false;
+                }
+                if(EmpLinceseEncript.search(/Project/i) > 0) {
+                    IsProjectTask = true;
+                    ProjectCount++;
+                } else {
+                    IsProjectTask = false;
+                }
+            }
+        }
+    }
+    $("#Licensetype").text(TypeofLincnse)
+    $('#NomberofuserCount').html('');
+    $('#NomberofuserCount').append('<h4 class="m-0">' + UsersLicenceRequired + ' </h4>');
+    $('#BPass').html('');
+    $('#BPassconsumed').html('');
+    $('#BPassAvilable').html('');
+    if(IsBpassModules) {
+        var BPassAvilable = LicBPaas - BPassCount;
+        $('#BPass').append('<h4 class="m-0">' + LicBPaas + ' Processes </h4>');
+        $('#BPassconsumed').append('<h4 class="m-0">' + BPassCount + ' Processes </h4>');
+        $('#BPassAvilable').append('<h4 class="m-0">' + BPassAvilable + ' Processes </h4>');
+    } else {
+        $('#BPass').append('<h4 class="m-0">No Processes </h4>');
+    }
+    $('#LicIntranet').html('');
+    $('#Intrnetpopup').html('');
+    $('#LicIntranetAvilable').html('');
+    $('#LicIntranetconsumed').html('')
+    var Popuphtml = ""
+    if(LicIntranet == "All") {
+        IsIntranet = true;
+        $('#LicIntranet').append('<h4 class="m-0"> Everyone </h4>');
+        $('#LicIntranetAvilable').append('<h4 class="m-0"> - </h4>');
+        $('#LicIntranetconsumed').append('<h4 class="m-0"> - </h4>');
+        IsNotSubscribedIntrenet = true;
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Intranet</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align"> Everyone</div>' + '</div>' + '</div>';
+        $('#Intrnetpopup').append(Popuphtml);
+    } else if(LicIntranet > 0) {
+        IsNotSubscribedIntrenet = true;
+        var LicIntranetAvilable = LicIntranet - IntranetCount;
+        LicIntranetAvilableCount = LicIntranetAvilable;
+        $('#LicIntranetAvilable').append('<h4 class="m-0"> ' + LicIntranetAvilable + '</h4>');
+        $("#divInternetassign").show();
+        $('#LicIntranet').append('<h4 class="m-0">' + LicIntranet + ' </h4>');
+        $('#LicIntranetconsumed').append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Internet\',\'' + IntranetCount + '\',\'' + LicIntranetAvilable + '\',\'true\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static">' + IntranetCount + ' </h4></a>');
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Intranet</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align" >' + '<div class="mb5 d-flex justify-content-between color-red">' + '<span id="LicIntranetSelecte">Consumed:&nbsp;</span>' + '<span id="LicIntranetConsumedCount" >' + IntranetCount + '</span>' + '</div>' + '<div class="d-flex justify-content-between color-green">' + '<span>Available:&nbsp;</span>' + '<span id="LicIntranetAvilableCount">' + LicIntranetAvilable + '</span>' + '</div>' + '</div>' + '</div>' + '</div>';
+        $('#Intrnetpopup').append(Popuphtml);
+    } else {
+        $("#divInternetassign").hide();
+        IsNotSubscribedIntrenet = false;
+        $('#LicIntranet').append('<h4 class="m-0 color-red">Not Subscribed</h4>');
+        //$('#Intrnetpopup').append('<div class="main-card-data2 color-grey main-card-data2-title assign-user-card-count-align"> Not subscribed</div>');
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Intranet</span>' + '<div class="main-card-data2 color-grey main-card-data2-title assign-user-card-count-align">Not subscribed</div>' + '</div>' + '</div>';
+        $('#Intrnetpopup').append(Popuphtml);
+    }
+    $('#LicDMS').html('');
+    $('#LicDMSconsumed').html('');
+    $('#LicDMSAvilable').html('');
+    $('#DMSpopup').html('');
+    Popuphtml = ""
+    if(LicDMS == "All") {
+        $('#LicDMS').append('<h4 class="m-0"> Everyone </h4>');
+        $('#LicDMSconsumed').append('<h4 class="m-0"> - </h4>');
+        $('#LicDMSAvilable').append('<h4 class="m-0"> - </h4>');
+        IsDMS = true;
+        IsNotSubscribedDMS = true;
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>DMS</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align"> Everyone</div>' + '</div>' + '</div>';
+        $('#DMSpopup').append(Popuphtml);
+    } else if(LicDMS > 0) {
+        var LicDMSAvilable = LicDMS - DMSCount;
+        LicDMSAvilableCount = LicDMSAvilable;
+        IsNotSubscribedDMS = true;
+        $('#LicDMS').append('<h4 class="m-0">' + LicDMS + ' </h4>');
+        $("#divDMSassign").show();
+        $('#LicDMSconsumed').append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'DMS\',\'' + DMSCount + '\',\'' + LicDMSAvilable + '\',\'true\')" ><h4 class="m-0" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static">' + DMSCount + ' </h4><a/>');
+        $('#LicDMSAvilable').append('<h4 class="m-0">' + LicDMSAvilable + ' </h4>');
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight ">' + '<div class="main-card-data1">' + '<span>DMS</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align" >' + '<div class="mb5 d-flex justify-content-between color-red">' + '<span id="LicdmsSelected" >Consumed:&nbsp;</span>' + '<span id="LicDMSConsumedCount"> ' + DMSCount + '</span>' + '</div>' + '<div class="d-flex justify-content-between color-green">' + '<span>Available:&nbsp;</span>' + '<span id="LicDMSAvilableCount">' + LicDMSAvilable + '</span>' + '</div>' + '</div>' + '</div>' + '</div>';
+        $('#DMSpopup').append(Popuphtml);
+    } else {
+        $('#LicDMS').append('<h4 class="m-0 color-red">Not Subscribed </h4>');
+        $("#divDMSassign").hide();
+        IsNotSubscribedDMS = false;
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>DMS</span>' + '<div class="main-card-data2 color-grey main-card-data2-title assign-user-card-count-align">Not subscribed</div>' + '</div>' + '</div>';
+        $('#DMSpopup').append(Popuphtml);
+    }
+    $('#LicProjectTask').html('');
+    $('#LicProjectTaskconsumed').html('');
+    $('#LicProjectTaskAvilable').html('');
+    $('#Taskpopup').html('');
+    Popuphtml = ""
+    if(LicProjectTask == "All") {
+        $('#LicProjectTask').append('<h4 class="m-0"> Everyone </h4>');
+        $('#LicProjectTaskconsumed').append('<h4 class="m-0"> - </h4>');
+        $('#LicProjectTaskAvilable').append('<h4 class="m-0"> - </h4>');
+        IsProjectTask = true;
+        IsNotSubscribedProject = true
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Project & Task</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align"> Everyone</div>' + '</div>' + '</div>';
+        $('#Taskpopup').append(Popuphtml);
+    } else if(LicProjectTask > 0) {
+        $("#divProjectassign").show();
+        IsNotSubscribedProject = true;
+        LicProjectTaskAvilableCount = LicProjectTask - ProjectCount;
+        $('#LicProjectTask').append('<h4 class="m-0">' + LicProjectTask + ' </h4>');
+        $('#LicProjectTaskconsumed').append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Project\',\'' + ProjectCount + '\',\'' + LicProjectTaskAvilableCount + '\',\'true\')" ><h4 class="m-0" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static">' + ProjectCount + ' </h4></a>');
+        $('#LicProjectTaskAvilable').append('<h4 class="m-0">' + LicProjectTaskAvilableCount + ' </h4>');
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Project & Task</span>' + '<div class="main-card-data2 color-green main-card-data2-title assign-user-card-count-align" >' + '<div class="mb5 d-flex justify-content-between color-red">' + '<span id="LicProjectSelected">Consumed:&nbsp;</span>' + '<span id="LicProjectConsumedCount">' + ProjectCount + '</span>' + '</div>' + '<div class="d-flex justify-content-between color-green">' + '<span>Available:&nbsp;</span>' + '<span id="LicProjectTaskAvilableCount">' + LicProjectTaskAvilableCount + '</span>' + '</div>' + '</div>' + '</div>' + '</div>';
+        $('#Taskpopup').append(Popuphtml);
+    } else {
+        $('#LicProjectTask').append('<h4 class="m-0 color-red">Not Subscribed </h4>');
+        $('#LicProjectTaskconsumed').append('<h4 class="m-0"> - </h4>');
+        $('#LicProjectTaskAvilable').append('<h4 class="m-0"> - </h4>');
+        $("#divProjectassign").hide();
+        IsNotSubscribedProject = false;
+        Popuphtml = '<div class="col-xs-12 assign-licence-top-card-hight">' + '<div class="main-card-data1">' + '<span>Project & Task</span>' + '<div class="main-card-data2 color-grey main-card-data2-title assign-user-card-count-align">Not subscribed</div>' + '</div>' + '</div>';
+        $('#Taskpopup').append(Popuphtml);
+    }
+    if((LicProjectTask == "All" || LicProjectTask == "0") && (LicDMS == "All" || LicDMS == "0") && (LicIntranet == "All" || LicIntranet == "0")) {
+        $("#assignlicensemodal").hide();
+    } else {
+        $("#assignlicensemodal").show();
+    }
+}
+$('#btnGetlicense').on('click', function() {
+    var ConsumedValidDate = "";
+    if($("#LicenseDescription").val() != "") {
+        var LicensedManageDecript = CryptoJS.AES.decrypt($("#LicenseDescription").val(), "@d@ptT!t@n");
+        LicensedManageDecript = LicensedManageDecript.toString(CryptoJS.enc.Utf8).split('|');
+        if(LicensedManageDecript.length > 7) {
+            var ConsumedtodayDate = new Date();
+            ConsumedValidDate = new Date(LicensedManageDecript[1]);
+            ConsumedValidDate.setDate(ConsumedValidDate.getDate() + 1);
+            var TotalLicense = LicensedManageDecript[2].split("=")[1];
+            var NewInternet = LicensedManageDecript[4].split("=")[1];
+            var NewDMS = LicensedManageDecript[5].split("=")[1];
+            var NewProject = LicensedManageDecript[6].split("=")[1];
+            var NewBPass = LicensedManageDecript[7].split("=")[1];
+            var BalanceLicenseAvlIntranet = 0;
+            var BalanceLicenseAvlDMS = 0;
+            var BalanceLicenseAvlProject = 0;
+            var BalanceLicenseAvlBPass = NewBPass;
+            var validupto = new Date(LicensedManageDecript[1]);
+            var NewLicense = "";
+        } else {
+            alert("Enter correct license key")
+            return false;
+        }
+        if(window.location.host.toLowerCase() != LicensedManageDecript[0].toLowerCase()) {
+            alert("License is not valid for this Domain");
+            return false;
+        }
+        if((Date.parse(ConsumedtodayDate) < Date.parse(ConsumedValidDate))) {} else {
+            alert("Your subscription has expired");
+            return false;
+        }
+        //validupto.setDate(validupto.getDate() + 1);
+        $("#Validuptomanage").text(validupto.toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric'
+        }));
+        $("#Consumed-license-NewLicense-manage-TotalUser").html(TotalLicense);
+        NewAvailable = TotalLicense - ConsumedLicense;
+        if(NewAvailable > 0) {
+            $("#Consumed-license-AlreadyLicensConsumed-manage-TotalUser").html(ConsumedLicense)
+            // $("#Consumed-license-BalanceLicense-manage-TotalUser").html('<a href="javascript:void(0)" onclick="GetConsumedLic(\'ActiveUser\',\'' + TotalLicense + '\',\'' + NewAvailable + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + NewAvailable + ' </h4></a>')
+        } else {
+            $("#Consumed-license-AlreadyLicensConsumed-manage-TotalUser").html('<a href="javascript:void(0)" onclick="GetConsumedLic(\'ActiveUser\',\'' + TotalLicense + '\',\'' + NewAvailable + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + ConsumedLicense + ' </h4></a>')
+        }
+        $("#Consumed-license-BalanceLicense-manage-TotalUser").html(NewAvailable)
+        $("#Consumed-license-AlreadyLicensConsumed-manage-Intranet").html('');
+        $("#Consumed-license-AlreadyLicensConsumed-manage-DMS").html("");
+        $("#Consumed-license-AlreadyLicensConsumed-manage-Project").html("");
+        if(NewInternet == "All") {
+            $("#Consumed-license-NewAlreadyLicens-manage-Intranet").html("Everyone")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Intranet").html("-")
+            $("#Consumed-license-BalanceLicense-manage-Intranet").html("-")
+            BalanceLicenseAvlIntranet = 1;
+            SetNewInternet = true;
+        } else if(NewInternet == "0") {
+            BalanceLicenseAvlIntranet = NewInternet - IntranetCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-Intranet").html("Not Subscribed")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Intranet").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Internet\',\'' + IntranetCount + '\',\'' + BalanceLicenseAvlIntranet + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + IntranetCount + ' </h4></a>'); //html(IntranetCount)
+            $("#Consumed-license-BalanceLicense-manage-Intranet").html(BalanceLicenseAvlIntranet);
+            SetNewInternet = false;
+            if(parseInt(NewInternet) == BalanceLicenseAvlIntranet) {
+                BalanceLicenseAvlIntranet = 1;
+            }
+            // BalanceLicenseAvlIntranet = 1;
+        } else if(NewInternet > 0) {
+            BalanceLicenseAvlIntranet = NewInternet - IntranetCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-Intranet").html(NewInternet)
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Intranet").html(IntranetCount);
+            $("#Consumed-license-BalanceLicense-manage-Intranet").html(BalanceLicenseAvlIntranet)
+            SetNewInternet = true;
+        } else {
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Intranet").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Internet\',\'' + IntranetCount + '\',\'' + BalanceLicenseAvlIntranet + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + IntranetCount + ' </h4></a>');
+        }
+        if(NewDMS == "All") {
+            $("#Consumed-license-NewAlreadyLicens-manage-DMS").html("Everyone")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-DMS").html("-")
+            $("#Consumed-license-BalanceLicense-manage-DMS").html("-")
+            BalanceLicenseAvlDMS = 1;
+            SetNewDMS = true;
+        } else if(NewDMS == "0") {
+            BalanceLicenseAvlDMS = NewDMS - DMSCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-DMS").html("Not Subscribed")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-DMS").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'DMS\',\'' + DMSCount + '\',\'' + BalanceLicenseAvlDMS + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + DMSCount + ' </h4></a>');
+            $("#Consumed-license-BalanceLicense-manage-DMS").html(BalanceLicenseAvlDMS);
+            SetNewDMS = false;
+            if(parseInt(NewDMS) == BalanceLicenseAvlDMS) {
+                BalanceLicenseAvlDMS = 1;
+            }
+            //  BalanceLicenseAvlDMS = 1;
+        } else if(NewDMS > 0) {
+            BalanceLicenseAvlDMS = NewDMS - DMSCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-DMS").html(NewDMS)
+            $("#Consumed-license-AlreadyLicensConsumed-manage-DMS").html(DMSCount)
+            $("#Consumed-license-BalanceLicense-manage-DMS").html(BalanceLicenseAvlDMS)
+            SetNewDMS = true;
+        } else {
+            $("#Consumed-license-AlreadyLicensConsumed-manage-DMS").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'DMS\',\'' + DMSCount + '\',\'' + BalanceLicenseAvlDMS + '\',\'false\')" ><h4 class="m-0cursor-pointer" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static"style="color: blue !important;">' + DMSCount + ' </h4></a>');
+        }
+        if(NewProject == "All") {
+            $("#Consumed-license-NewAlreadyLicens-manage-Project").html("Everyone")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Project").html("-")
+            $("#Consumed-license-BalanceLicense-manage-Project").html("-")
+            SetNewProject = true;
+            BalanceLicenseAvlProject = 1;
+        } else if(NewProject == "0") {
+            BalanceLicenseAvlProject = NewProject - ProjectCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-Project").html("Not Subscribed")
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Project").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Project\',\'' + ProjectCount + '\',\'' + BalanceLicenseAvlProject + '\',\'false\')" ><h4 class="m-0" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + ProjectCount + ' </h4></a>');
+            $("#Consumed-license-BalanceLicense-manage-Project").html(BalanceLicenseAvlProject);
+            SetNewProject = false;
+            if(parseInt(NewProject) == BalanceLicenseAvlProject) {
+                BalanceLicenseAvlProject = 1;
+            }
+        } else if(NewProject > 0) {
+            BalanceLicenseAvlProject = NewProject - ProjectCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-Project").html(NewProject);
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Project").html(ProjectCount);
+            $("#Consumed-license-BalanceLicense-manage-Project").html(BalanceLicenseAvlProject);
+            SetNewProject = true;
+        } else {
+            $("#Consumed-license-AlreadyLicensConsumed-manage-Project").append('<a href="javascript:void(0)" onclick="GetConsumedLic(\'Project\',\'' + ProjectCount + '\',\'' + BalanceLicenseAvlProject + '\',\'false\')" ><h4 class="m-0" data-toggle="modal" data-target="#consumed-license-modal-Internet" data-backdrop="static" style="color: blue !important;">' + ProjectCount + ' </h4></a>');
+        }
+        if(NewBPass > 0) {
+            BalanceLicenseAvlBPass = NewBPass - BPassCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-LicBPaas").html(NewBPass)
+            $("#Consumed-license-AlreadyLicensConsumed-manage-LicBPaas").html(BPassCount);
+            $("#Consumed-license-BalanceLicense-manage-LicBPaas").html(BalanceLicenseAvlBPass);
+            SetNewBpass = true;
+        } else {
+            BalanceLicenseAvlBPass = NewBPass - BPassCount;
+            $("#Consumed-license-NewAlreadyLicens-manage-LicBPaas").html("Not Subscribed");
+            $("#Consumed-license-AlreadyLicensConsumed-manage-LicBPaas").html(BPassCount);
+            $("#Consumed-license-BalanceLicense-manage-LicBPaas").html(BalanceLicenseAvlBPass);
+            SetNewBpass = false;
+        }
+        $('#consumed-license-modal-manage').modal('show');
+    } else {
+        alert("Enter New License Key");
+    }
+    if(BalanceLicenseAvlIntranet >= 0 && BalanceLicenseAvlDMS >= 0 && BalanceLicenseAvlProject >= 0 && BalanceLicenseAvlBPass >= 0) {
+        $("#btn-consumed-license-manage").show();
+        $("#div-consumed-license-Warning").hide();
+        $("#btn-consumed-license-manage").attr('onclick', "webdevLicenced.LicenseSubmit()");
+    } else {
+        $("#btn-consumed-license-manage").hide();
+        $("#div-consumed-license-Warning").show();
+        $("#btn-consumed-license-manage").prop('onclick', null);
+    }
+});
+$('#btnAccept').on('click', function() {
+    if(confirm("Are you want to accept end user Software License Agreement")) {
+        Active = true;
+    } else {
+        Active = false;
+        $('#view-agreement-modal').modal('show');
+    }
+});
+$('#FilterEditEventType').on('change', function() {
+    $("#FilterEditEventCateory").prop("disabled", true);
+    $("#FilterEditEventDepartment").prop("disabled", true);
+    $("#ddlFilterLoc").prop("disabled", true);
+    $("#pplManager_TopSpan").prop("disabled", true);
+    $("#pplEmployee_TopSpan").prop("disabled", true);
+    $("#FilterEditEventGuestCoustomer").prop("disabled", true);
+    if($('#FilterEditEventType').val() == "Employee") {
+        $("#FilterEditEventCateory").prop("disabled", false);
+        $("#FilterEditEventDepartment").prop("disabled", false);
+        $("#ddlFilterLoc").prop("disabled", false);
+        $("#FilterDesignation").prop("disabled", false);
+        $("#pplManager_TopSpan").prop("disabled", false);
+        $("#pplEmployee_TopSpan").prop("disabled", false);
+        $("#lblManager").text("Manager:");
+        $(".invisibleddl").show();
+        $(".GuestCoustomer").hide();
+    } else if($('#FilterEditEventType').val() == "Guest User") {
+        $("#FilterEditEventGuestCoustomer").prop("disabled", false);
+        $("#lblManager").text("Supervisor:");
+        $(".invisibleddl").hide();
+        $(".GuestCoustomer").show();
+        filtermessage="Retrieve the Guest User list";
+        
+    }
+});
+var Asignvalue = "";
+$('#asignSubmitBtn').on('click', function() {
+    // Asignvalue = AssignIntranet + AssignDMS + AssignProject + "|";
+    // alert(Asignvalue);
+    var isDMS = false;
+    var isTask = false;
+    var isIntranet = false;
+    isDMS = $("#chkDMSassign").is(':checked');
+    isTask = $("#chkProjectassign").is(':checked');
+    isIntranet = $("#chkInternetassign").is(':checked');
+    IntranetCount = $('#LicIntranetConsumedCount').text();
+    LicIntranetAvilableCount = $("#LicIntranetAvilableCount").text();
+    LicIntranetAvilableCount = parseInt(LicIntranetAvilableCount) + parseInt(IntranetCount);
+    IntranetCount = 0;
+    DMSCount = $('#LicDMSConsumedCount').text();
+    LicDMSAvilableCount = $("#LicDMSAvilableCount").text();
+    LicDMSAvilableCount = parseInt(LicDMSAvilableCount) + parseInt(DMSCount);
+    DMSCount = 0;
+    ProjectCount = $('#LicProjectConsumedCount').text();
+    LicProjectTaskAvilableCount = $("#LicProjectTaskAvilableCount").text();
+    LicProjectTaskAvilableCount = parseInt(LicProjectTaskAvilableCount) + parseInt(ProjectCount)
+    ProjectCount = 0;
+    if($("#assignusertable input[class=assignu]:checked").length > 0) {
+        $("#assignusertable input[class=assignu]:checked").each(function() {
+            if(isIntranet) {
+                LicIntranetAvilableCount = LicIntranetAvilableCount - 1;
+                IntranetCount = parseInt(IntranetCount) + 1;
+            }
+            $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+            $('#LicIntranetConsumedCount').html(IntranetCount);
+            if(isTask) {
+                LicProjectTaskAvilableCount = LicProjectTaskAvilableCount - 1;
+                ProjectCount = parseInt(ProjectCount) + 1;
+            }
+            $("#LicProjectTaskAvilableCount").html(LicProjectTaskAvilableCount);
+            $('#LicProjectConsumedCount').html(ProjectCount);
+            if(isDMS) {
+                LicDMSAvilableCount = LicDMSAvilableCount - 1;
+                DMSCount = parseInt(DMSCount) + 1;
+            }
+            $('#LicDMSConsumedCount').html(DMSCount);
+            $("#LicDMSAvilableCount").html(LicDMSAvilableCount);
+            var row = $(this).closest("tr")[0];
+            if($(row.cells[4].innerHTML)[0] != undefined) {
+                var chkInternetId = $(row.cells[4].innerHTML)[0].children[0].id;
+                $("#" + chkInternetId).prop('checked', isIntranet);
+            }
+            if($(row.cells[5].innerHTML)[0] != undefined) {
+                var ChkDMSId = $(row.cells[5].innerHTML)[0].children[0].id;
+                $("#" + ChkDMSId).prop('checked', isDMS);
+            }
+            if($(row.cells[6].innerHTML)[0] != undefined) {
+                var ChkProjectId = $(row.cells[6].innerHTML)[0].children[0].id;
+                $("#" + ChkProjectId).prop('checked', isTask);
+            }
+            $('.assignu').prop('checked', false);
+            $('#assignusertable-select-all').prop('checked', false);
+        });
+        IsVisibleSubmitButton();
+    } else {
+        alert("Select at list one user checkbox ");
+    }
+    //  $("#assignusertable-select-all").click();
+});
+$('#btnAssignFilter, .filterBox').on('click', function() {
+    if(IsValueSet == false) {
+        CommonFunctionLic.SetValuesInFilter();
+    }
+    //$("#DivpplManager").html('');
+    //$("#DivpplManager").append('<span id="pplManager"></span>');
+    LoadGridhtmlfilter([]);
+    $("#chkfilterIntranet").prop('checked', false);
+    $("#chkfilterDMS").prop('checked', false);
+    $("#chkfilterProject").prop('checked', false);
+    filtermessage="Retrieve the Employee list";
+    $("#assignusertablefilter-select-all").prop('checked', false);
+    CommonFunctionLic.initializePeoplePicker("pplManager", true); //For Manager
+    CommonFunctionLic.initializePeoplePicker("pplEmployee", true); //For Manager
+    
+  
+});
+$('#assignmodal').on('click', function() {
+    // Test
+    $("#chkInternetassign").prop('checked', false);
+    $("#chkProjectassign").prop('checked', false);
+    $("#chkDMSassign").prop('checked', false);
+});
+
+function allcheck(ConsumedLicenseType, ConsumedlicenseCount, AvailableCounts) {
+    // Test
+    var checked = $("#chk-Consumed-license-table-Internet").is(':checked');
+    $('#Consumed-license-Count-Internet').html('');
+    $("#Available-license-Count-Internet").html("");
+    var data = Consumedlicensetable.rows().data();
+    if(checked) {
+        $('#Consumed-license-Count-Internet').html(data.length);
+        //ConsumedlicenseCount = data.length;
+        // AvailableCount = AvailableCounts - data.length;
+        $("#Available-license-Count-Internet").html(AvailableCounts);
+        $(".checkboxConsumed").prop('checked', checked);
+    } else {
+        $(".checkboxConsumed").prop('checked', checked);
+        $('#Consumed-license-Count-Internet').html(0);
+        AvailableCount = parseInt(ConsumedlicenseCount) + parseInt(AvailableCounts);
+        $("#Available-license-Count-Internet").html(AvailableCount);
+        ConsumedlicenseCount = 0;
+    }
+    if(AvailableCount >= 0) {
+        $("#btn-consumed-license-Internet").show();
+    } else {
+        $("#btn-consumed-license-Internet").hide();
+    }
+}
+$('#btnAssignSubmitusers').on('click', function() {
+    $.ajax({
+        cache: false,
+        beforeSend: function() {
+            $("#overlaysearch").fadeIn();
+        },
+        success: function(html) {
+            SubmituserLic();
+        },
+    });
+});
+$('.checkboxInternet').on('change', function() {
+    //assignusertable.rows().select();
+});
+var EmployeeUsers = [];
+var Consumedlicensetable = "";
+var AvailableCount;
+
+function GetConsumedLic(type, ConsumedCount, AvailableLicenseCount, IsbuttonOnOff) {
+    ConsumedLicenseType = type;
+    $("#chk-Consumed-license-table-Internet").attr('onclick', "allcheck('" + type + "','" + ConsumedCount + "','" + AvailableLicenseCount + "')");
+    $('#Consumed-license-tbody-Internet').html('');
+    $("#Consumed-license-Title").html('');
+    if(type == "Internet") {
+        $("#Consumed-license-Title").html("Intranet");
+    } else {
+        $("#Consumed-license-Title").html(type);
+    }
+    $("#chk-Consumed-license-table-Internet").prop('checked', false);
+    TableId = "Consumed-license-table-Internet";
+    $("#Available-license-Count-Internet").html(AvailableLicenseCount);
+    $('#Consumed-license-Count-Internet').html(ConsumedCount);
+    if(IsbuttonOnOff == "true") {
+        $("#btn-Consumed-license-add-Internet").show();
+        $("#spnavailable").text("Available License");
+    } else {
+        $("#btn-Consumed-license-add-Internet").hide();
+        $("#spnavailable").text("Balance License");
+    }
+    LoadConsumedhtml(AllEmployees)
+}
+var ConsumedlicenseCount = 0;
+
+function LoadConsumedhtml(EmployeeUsers) {
+    var tablehtml = "";
+    ConsumedlicenseCount = 0;
+    for(var i = 0; i < EmployeeUsers.length; i++) {
+        var IsConsumed = false;
+        if(ConsumedLicenseType == "ActiveUser") {
+            IsConsumed = true;
+        } else {
+            if(EmployeeUsers[i].EmpLicense != null) {
+                var EmpLicense = CryptoJS.AES.decrypt(EmployeeUsers[i].EmpLicense, "@d@ptT!t@n");
+                var EmpLinceseEncript = EmpLicense.toString(CryptoJS.enc.Utf8);
+                if(EmpLinceseEncript.search(ConsumedLicenseType) > 0) {
+                    IsConsumed = true;
+                    ConsumedlicenseCount++
+                }
+            }
+        }
+        if(EmployeeUsers[i].EMail != null) {
+            if(IsConsumed) {
+                var Asignvalue = EmpLinceseEncript;
+                tablehtml += '<tr> <td></td>' + '<td>' + '<div class="assign-user-card">' + '<div class="assign-user-card-head">' + '<img src="' + EmployeeUsers[i].AttachmentFile + '" alt="user">' + '</div>' + '<div class="assign-user-card-body">' + '<div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">' + EmployeeUsers[i].FullName + '</h3> ' + '<p class="assign-user-email text-ellipsis" style="text-overflow: ellipsis; width: 250px;" >' + EmployeeUsers[i].EMail + '</p>' + '</div>' + '</div>' + '</div>' + '<div id="UserId' + i + '"> <p style="display:none" class="">' + EmployeeUsers[i].Type + '</p> <p style="display:none" class="">' + Asignvalue + '</p>  <p style="display:none" class="">' + EmployeeUsers[i].Id + '</p>  </div> </td>';
+                if(EmployeeUsers[i].Type == "Employees") {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Employees</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Department.DepartmentName + '</h3>' + '</div> </td>';
+                } else {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Guest</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Company + '</h3>' + '</div> </td>';
+                }
+                tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="ConsumedChk' + i + '" class="checkboxConsumed" type="checkbox" value="" onclick="GetCheckCount(this)" checked="checked" ></label>' + '</td>';
+            }
+            tablehtml += '</tr>';
+        }
+    }
+    AvailableCount = AvailableCount - ConsumedlicenseCount;
+    $('#Consumed-license-tbody-Internet').html('');
+    $('#Consumed-license-tbody-Internet').append(tablehtml);
+    if(AvailableCount > 0) {
+        $("#btn-consumed-license-Internet").show();
+    } else {
+        $("#btn-consumed-license-Internet").hide();
+    }
+    Consumedlicensetable = $('#' + TableId).DataTable({
+        'order': [
+            [1, 'asc']
+        ],
+        'columnDefs': [{
+            'targets': [0, 4],
+            'searchable': false,
+            'orderable': false,
+        }],
+        'searching': false,
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        language: {
+            searchPlaceholder: "Search records"
+        }
+    });
+}
+
+function GetCheckCount(checkBox) {
+    AvailableCount = $("#Available-license-Count-Internet").text();
+    $(checkBox).attr('name', checkBox.checked);
+    //$('.dataTables_filter input[type="search"]').val('');
+    //Consumedlicensetable.draw();
+    ConsumedlicenseCount = $('#Consumed-license-Count-Internet').text();
+    if(checkBox.checked == true) {
+        AvailableCount = AvailableCount - 1;
+        ConsumedlicenseCount = parseInt(ConsumedlicenseCount) + 1;
+        // alert(LicProjectTaskAvilableCount);
+    } else {
+        $("#chk-Consumed-license-table-Internet").prop('checked', false);
+        AvailableCount = parseInt(AvailableCount) + 1;
+        ConsumedlicenseCount = parseInt(ConsumedlicenseCount) - 1;
+        //alert(LicProjectTaskAvilableCount);
+    }
+    $("#Available-license-Count-Internet").html("");
+    $("#Available-license-Count-Internet").html(AvailableCount);
+    $('#Consumed-license-Count-Internet').html('');
+    $('#Consumed-license-Count-Internet').html(ConsumedlicenseCount);
+    if(AvailableCount >= 0) {
+        $("#btn-consumed-license-Internet").show();
+    } else {
+        $("#btn-consumed-license-Internet").hide();
+    }
+}
+$('#btn-Consumed-license-add-Internet').on('click', function() {
+    $("#divemployeesection").html('');
+    UserEmail = [];
+    $("#pplEmployeeProject").removeClass("activingss")
+    CommonFunctionLic.initializePeoplePicker("pplEmployeeProject", true);
+    onChangeAddUser('pplEmployeeProject_TopSpan', 'pplEmployeeProject', "divemployeesection");
+});
+
+function clearTextBox() {
+    $("#LicenseDescription").val("")
+}
+var Consumedlicensefilter = false;
+$('#btn-Consumed-license-filter').on('click', function() {
+    Consumedlicensefilter = true;
+});
+$('#btnapplyadduser').on('click', function() {
+    AvailableCount = $("#Available-license-Count-Internet").text();
+    ConsumedlicenseCount = $('#Consumed-license-Count-Internet').text();
+    if(AvailableCount > 0) {
+        var data = Consumedlicensetable.rows().data();
+        data.each(function(value, index) {
+            var ChkId = $($(value)[4])[0].childNodes[0].id;
+            var Email = $($(value)[1])[0].childNodes[1].children[0].childNodes[2].innerHTML;
+            var IsUser = UserEmail.filter(function(obj) {
+                return obj.UserEmail.toLowerCase() == Email.toLowerCase();
+            });
+            if(IsUser.length > 0) {
+                UserEmail = UserEmail.filter(function(obj) {
+                    return obj.UserEmail.toLowerCase() !== Email.toLowerCase();
+                });
+                if(AvailableCount > 0) {
+                    var checked = $("#" + ChkId).is(':checked');
+                    if(checked == false) {
+                        $("#" + ChkId).prop('checked', true);
+                        AvailableCount = AvailableCount - 1;
+                        ConsumedlicenseCount = parseInt(ConsumedlicenseCount) + 1;
+                    }
+                } else {
+                    alert("License is not available.");
+                }
+            }
+        });
+        //AllEmployeeUser
+        var IsConsumed = false;
+        var tablehtml = "";
+        for(var i = 0; i < UserEmail.length; i++) {
+            var EmployeeUsers = AllEmployees.filter(function(obj) {
+                if(obj.EMail != null) {
+                    return obj.EMail.toLowerCase() == UserEmail[i].UserEmail.toLowerCase();
+                }
+            });
+            if(EmployeeUsers.length > 0) {
+                if(EmployeeUsers[0].EmpLicense != null) {
+                    var EmpLicense = CryptoJS.AES.decrypt(EmployeeUsers[0].EmpLicense, "@d@ptT!t@n");
+                    var EmpLinceseEncript = EmpLicense.toString(CryptoJS.enc.Utf8);
+                    if(EmpLinceseEncript.search(ConsumedLicenseType) > 0) {
+                        IsConsumed = true;
+                    }
+                }
+                if(EmployeeUsers[0].EMail != null) {
+                    var Asignvalue = EmpLinceseEncript;
+                    tablehtml = '<tr> <td></td>' + '<td>' + '<div class="assign-user-card">' + '<div class="assign-user-card-head">' + '<img src="' + EmployeeUsers[0].AttachmentFile + '" alt="user">' + '</div>' + '<div class="assign-user-card-body">' + '<div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">' + EmployeeUsers[0].FullName + '</h3> ' + '<p class="assign-user-email text-ellipsis" style="text-overflow: ellipsis; width: 250px;" >' + EmployeeUsers[0].EMail + '</p>' + '</div>' + '</div>' + '</div>' + '<div id="UserId' + i + '"> <p style="display:none" class="">' + EmployeeUsers[0].Type + '</p> <p style="display:none" class="">' + Asignvalue + '</p>  <p style="display:none" class="">' + EmployeeUsers[0].Id + '</p>  </div> </td>';
+                    if(EmployeeUsers[0].Type == "Employees") {
+                        tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[0].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Employees</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[0].Department.DepartmentName + '</h3>' + '</div> </td>';
+                    } else {
+                        tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[0].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Guest</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[0].Company + '</h3>' + '</div> </td>';
+                    }
+                    tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="ConsumedChk' + i + '" class="checkboxConsumed" checked="checked" type="checkbox" value="" onclick="GetCheckCount(this)" ></label>' + '</td>';
+                    tablehtml += '</tr>';
+                }
+                if(AvailableCount > 0) {
+                    const tr = $(tablehtml);
+                    Consumedlicensetable.row.add(tr[0]).draw();
+                    AvailableCount = AvailableCount - 1;
+                    ConsumedlicenseCount = parseInt(ConsumedlicenseCount) + 1;
+                    $("#btn-consumed-license-Internet").show();
+                } else {
+                    alert("License is not available.");
+                }
+            }
+        }
+    } else {
+        alert("License is not available.");
+        $("#btn-consumed-license-Internet").hide();
+    }
+    $('#add_user_teams_Project').modal('hide');
+    $("#Available-license-Count-Internet").html(AvailableCount);
+    $('#Consumed-license-Count-Internet').html(ConsumedlicenseCount);
+});
+$('#btn-consumed-license-Internet').on('click', function() {
+    $.ajax({
+        cache: false,
+        beforeSend: function() {
+            $("#overlaysearch").fadeIn();
+        },
+        success: function(html) {
+            consumedlicense();
+        },
+    });
+});
+
+function consumedlicense() {
+    var icount = 0;
+    $("#Consumed-license-table-Internet input[class=checkboxConsumed]").each(function(value, index) {
+        icount++
+        console.log(index + "   " + icount);
+    });
+    var data = Consumedlicensetable.rows().data();
+    var UsersActiveInactive = "";
+    data.each(function(value, index) {
+        var message = "";
+        var userId = $($(value)[1])[1].childNodes[5].innerHTML;
+        var LiceneddencryptType = $($(value)[1])[1].childNodes[3].innerHTML;
+        var UserType = $($(value)[1])[1].childNodes[1].innerHTML;
+        var ChkId = $($(value)[4])[0].childNodes[0].id;
+        //$($(value)[2])[0].childNodes[0].id;
+        var checked = $("#" + ChkId).is(':checked');
+        var ListName = ""
+        if(UserType == "Employees") {
+            ListName = "Employees";
+        } else {
+            ListName = "ExternalUsers";
+        }
+        var Metadata;
+        var ItemType = CommonFunctionLic.GetItemTypeForListName(ListName);
+        if(ConsumedLicenseType == "ActiveUser") {
+            if(checked) {
+                UsersActiveInactive = "Active";
+            } else {
+                UsersActiveInactive = "InActive";
+            }
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                Status: UsersActiveInactive
+            };
+        } else {
+            if(checked) {
+                if(LiceneddencryptType.search(ConsumedLicenseType) > 0) {} else {
+                    LiceneddencryptType += ConsumedLicenseType + "|";
+                }
+            } else {
+                LiceneddencryptType = LiceneddencryptType.replaceAll(ConsumedLicenseType, "");
+            }
+            userLicsensecreate = LiceneddencryptType;
+            message += CryptoJS.AES.encrypt(LiceneddencryptType, '@d@ptT!t@n');
+            var encryptLic = message;
+            message = "";
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                EmpLicense: encryptLic
+            };
+        }
+        console.log(LiceneddencryptType + "   UserType " + UserType + "    message" + encryptLic + "   Id:   " + userId + "Status  " + UsersActiveInactive)
+        $.when(CommonFunctionLic.updateItemWithID(userId, ListName, Metadata)).done(function(valuesArray) {});
+    });
+    Getallinfomation();
+    $("#overlaysearch").fadeOut();
+    $('#consumed-license-modal-Internet').modal('hide');
+    Consumedlicensetable.destroy();
+}
+
+function SubmituserLic() {
+    try {
+        var message = "";
+        $("#overlaysearch").fadeIn();
+        // if($("#assignusertable input[class=assignu]:checked").length > 0) {
+        $("#assignusertable input[class=assignu]").each(function() {
+            var userLicsensecreate = "";
+            var row = $(this).closest("tr")[0];
+            //$("#DMSChk0").is(':checked')
+            var userId = $(row.cells[1].innerHTML)[1].childNodes[1].innerHTML;
+            var UserType = $(row.cells[3].innerHTML)[0].children[0].innerText;
+            if(IsNotSubscribedIntrenet) {
+                var chkInternetId = $(row.cells[4].innerHTML)[0].children[0].id;
+                var checked = $("#" + chkInternetId).is(':checked');
+                if(checked) {
+                    AssignIntranet = "|Internet";
+                } else {
+                    AssignIntranet = "";
+                }
+            }
+            if(IsNotSubscribedDMS) {
+                var ChkDMSId = $(row.cells[5].innerHTML)[0].children[0].id;
+                var checked = $("#" + ChkDMSId).is(':checked');
+                if(checked) {
+                    AssignDMS = "|DMS";
+                } else {
+                    AssignDMS = "";
+                }
+            }
+            if(IsNotSubscribedProject) {
+                var ChkProjectId = $(row.cells[6].innerHTML)[0].children[0].id;
+                var checked = $("#" + ChkProjectId).is(':checked');
+                if(checked) {
+                    AssignProject = "|Project";
+                } else {
+                    AssignProject = ""
+                }
+            }
+            Asignvalue = AssignIntranet + AssignDMS + AssignProject + "|";
+            // alert(row.cells[1].innerText.split('\n')[2] + "   " + $("#" + DDMS).is(':checked'))
+            // console.log( $(row.cells[1].innerHTML)[0].childNodes[1].children[0].childNodes[1].innerText);
+            userLicsensecreate = $(row.cells[1].innerHTML)[0].childNodes[1].children[0].childNodes[2].innerHTML + Asignvalue;
+            // message += row.cells[1].innerText.split('\n')[2] + Asignvalue;
+            //  message += '\n';
+            console.log(userLicsensecreate);
+            message += CryptoJS.AES.encrypt(userLicsensecreate, '@d@ptT!t@n');
+            var encryptLic = message;
+            message = "";
+            // message += '\n';
+            // encryptLic=CryptoJS.AES.encrypt(userLicsensecreate, '@d@ptT!t@n');
+            var ListName = ""
+            if(UserType == "Employees") {
+                ListName = "Employees";
+            } else {
+                ListName = "ExternalUsers";
+            }
+            var Metadata;
+            var ItemType = CommonFunctionLic.GetItemTypeForListName(ListName);
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                EmpLicense: encryptLic
+            };
+            $.when(CommonFunctionLic.updateItemWithID(userId, ListName, Metadata)).done(function(valuesArray) {});
+        });
+        // } else {
+        //  alert("Select at list one user")
+        // }
+        //console.log(userLicsensecreate)
+        assignusertable.destroy();
+        Getallinfomation();
+        $("#overlaysearch").fadeOut();
+        $('#assign-license-modal').modal('hide');
+        $('#assignusertable-select-all').prop('checked', false);
+    } catch (err) {
+        alert(err);
+        $("#overlaysearch").fadeOut();
+    }
+}
+/*
+$('#assignusertable tbody').on('click', '.checkboxInternet,.checkboxDMS,.checkboxproject', function() {
+        // $(this).toggleClass('selected');
+        var row = $(this).closest("tr")[0];
+        var check = $(row.cells[0].innerHTML)[0].id;
+        $('#' + check).prop('checked', true);
+});
+*/
+$('#assignusertable-select-all').on('click', function() {
+    // Get all rows with search applied
+    var rows = assignusertable.rows({
+        'search': 'applied'
+    }).nodes();
+    // Check/uncheck checkboxes for all rows in the table
+    $('.assignu', rows).prop('checked', this.checked);
+});
+$('#assignusertablefilter-select-all').on('click', function() {
+    // Get all rows with search applied
+    var rows = assignusertablefilter.rows({
+        'search': 'applied'
+    }).nodes();
+    // Check/uncheck checkboxes for all rows in the table
+    $('.assignu', rows).prop('checked', this.checked);
+});
+$('#assignusertable tbody').on('change', '.assignu', function() {
+    // If checkbox is not checked
+    if(!this.checked) {
+        var el = $('#assignusertable-select-all').get(0);
+        // If "Select all" control is checked and has 'indeterminate' property
+        if(el && el.checked && ('indeterminate' in el)) {
+            // Set visual state of "Select all" control
+            // as 'indeterminate'
+            el.indeterminate = true;
+        }
+    }
+});
+/*
+$('#chkInternetassign').on('change', function() {
+        var checked = this.checked;
+        if(checked) {
+               // AssignIntranet = "|Internet";
+                $('.checkboxInternet').prop('checked',true);
+        } else {
+                //AssignIntranet = "";
+                $('.checkboxInternet').removeAttr('checked');
+        }
+});
+$('#chkDMSassign').on('change', function() {
+        var checked = this.checked
+        if(checked) {
+               // AssignDMS = "|DMS";
+                $('.checkboxDMS').prop('checked',true);
+        } else {
+               // AssignDMS = "";
+                $('.checkboxDMS').removeAttr('checked');
+        }
+});
+$('#chkProjectassign').on('change', function() {
+        var checked = this.checked
+        if(checked) {
+               // AssignProject = "|Project";
+                $('.checkboxproject').prop('checked',true);
+        } else {
+                //AssignProject = ""
+                $('.checkboxproject').removeAttr('checked');
+        }
+});
+
+*/
+$('#assignlicensemodal').on('click', function() {
+    if((LicIntranetAvilableCount >= 0 || isNaN(LicIntranetAvilableCount)) && (LicDMSAvilableCount >= 0 || isNaN(LicDMSAvilableCount)) && (LicProjectTaskAvilableCount >= 0 || isNaN(LicProjectTaskAvilableCount))) {
+        $("#btnAssignSubmitusers").show();
+    } else {
+        $("#btnAssignSubmitusers").hide();
+    }
+    Consumedlicensefilter = false;
+    LoadGridhtml(AllEmployees);
+});
+
+function LoadGridhtml(EmployeeUsers) {
+    assignusertable = ""
+    var tablehtml = "";
+    IntranetCount = 0;
+    DMSCount = 0;
+    ProjectCount = 0;
+    for(var i = 0; i < EmployeeUsers.length; i++) {
+        IsIntranet = false;
+        IsDMS = false;
+        IsProjectTask = false;
+        if(EmployeeUsers[i].EmpLicense != null) {
+            var EmpLicense = CryptoJS.AES.decrypt(EmployeeUsers[i].EmpLicense, "@d@ptT!t@n");
+            var EmpLinceseEncript = EmpLicense.toString(CryptoJS.enc.Utf8);
+            if(EmpLinceseEncript.search(/Internet/i) > 0) {
+                IsIntranet = true;
+                IntranetCount++
+                $("#LicIntranetSelecte").text("Consumed:");
+                $('#LicIntranetConsumedCount').html(IntranetCount);
+            } else {
+                IsIntranet = false;
+            }
+            if(EmpLinceseEncript.search(/DMS/i) > 0) {
+                IsDMS = true;
+                DMSCount++
+                $("#LicdmsSelected").text("Consumed:");
+                $("#LicDMSConsumedCount").html(DMSCount);
+            } else {
+                IsDMS = false;
+            }
+            if(EmpLinceseEncript.search(/Project/i) > 0) {
+                IsProjectTask = true;
+                ProjectCount++
+                $("#LicProjectSelected").text("Consumed:");
+                $("#LicProjectConsumedCount").html(ProjectCount);
+            } else {
+                IsProjectTask = false;
+            }
+        }
+        var AttachmentURL = "";
+        if(TypeofLincnse == "Enterprise") {
+            $("#assignlicensemodal").hide();
+        } else {
+            $("#assignlicensemodal").show();
+            //  if(EmployeeUsers[i].AttachmentFiles.results.length > 0) {
+            //       AttachmentURL = EmployeeUsers[i].AttachmentFiles.results[0].ServerRelativeUrl;
+            // } else {
+            //   AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + EmployeeUsers[i].LogonName.UserName;
+            //   }
+            if(EmployeeUsers[i].EMail != null) {
+                tablehtml += '<tr> <td><label class="checkbox-inline assign-usercheckbox-inline"><input type="checkbox" class="assignu" id="checkselect' + i + '" value=""></label></td>' + '<td>' + '<div class="assign-user-card">' + '<div class="assign-user-card-head">' + '<img src="' + EmployeeUsers[i].AttachmentFile + '" alt="user">' + '</div>' + '<div class="assign-user-card-body">' + '<div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">' + EmployeeUsers[i].FullName + '</h3> ' + '<p class="assign-user-email text-ellipsis" style="text-overflow: ellipsis; width: 250px;" >' + EmployeeUsers[i].EMail + '</p>' + '</div>' + '</div>' + '</div>' + '<div id="UserId' + i + '"> <p style="display:none" class="">' + EmployeeUsers[i].Id + '</p> </div> </td>';
+                if(EmployeeUsers[i].Type == "Employees") {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Employees</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Department.DepartmentName + '</h3>' + '</div> </td>';
+                } else {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Guest</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Company + '</h3>' + '</div> </td>';
+                }
+                if(LicIntranet == "All") {
+                    $("#chkInternetassign").attr("disabled", true);
+                    $("#chkheaderIntranet").attr("disabled", true);
+                    $('#chkInternetassign').prop('checked', true);
+                    tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="InternetChk' + i + '" type="checkbox" value="" checked disabled></label>' + '</td>';
+                } else if(LicIntranet > 0) {
+                    $("chkInternetassign").removeAttr("disabled");
+                    $("#chkheaderIntranet").removeAttr("disabled");
+                    if(IsIntranet) {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="InternetChk' + i + '" class="checkboxInternet" type="checkbox" value="" onclick="GetCheckCountInternet(this)" checked ></label>' + '</td>';
+                    } else {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="InternetChk' + i + '" class="checkboxInternet" type="checkbox" value="" onclick="GetCheckCountInternet(this)"  ></label>' + '</td>';
+                    }
+                } else {
+                    $("#chkheaderIntranet").hide();
+                    tablehtml += '<td class="td-desibled text-center">-</td>';
+                }
+                if(LicDMS == "All") {
+                    $("#chkDMSassign").attr("disabled", true);
+                    $("#chkheaderDMS").attr("disabled", true);
+                    $('#chkDMSassign').prop('checked', true);
+                    tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="DMSChk' + i + '" type="checkbox" value="" checked disabled></label>' + '</td>';
+                } else if(LicDMS > 0) {
+                    $("#chkDMSassign").removeAttr("disabled");
+                    $("#chkheaderDMS").removeAttr("disabled");
+                    if(IsDMS) {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="DMSChk' + i + '" class="checkboxDMS" type="checkbox" value="" onclick="GetCheckCountDMS(this)" checked  ></label>' + '</td>';
+                    } else {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="DMSChk' + i + '" class="checkboxDMS" type="checkbox" value=""  onclick="GetCheckCountDMS(this)" ></label>' + '</td>';
+                    }
+                } else {
+                    $("#chkheaderDMS").hide();
+                    tablehtml += '<td class="td-desibled text-center">-</td>';
+                }
+                if(LicProjectTask == "All") {
+                    $("#chkProjectassign").attr("disabled", true);
+                    $("#chkheaderProject").attr("disabled", true);
+                    $('#chkProjectassign').prop('checked', true);
+                    tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline "><input id="projectChk' + i + '" type="checkbox" value="" checked disabled></label>' + '</td>';
+                } else if(LicProjectTask > 0) {
+                    $("#chkProjectassign").removeAttr("disabled");
+                    $("#chkheaderProject").removeAttr("disabled");
+                    if(IsProjectTask) {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline" ><input class="checkboxproject" id="projectChk' + i + '" type="checkbox" value="" onclick="GetCheckCountProject(this)" checked  ></label>' + '</td>';
+                    } else {
+                        tablehtml += '<td class="text-center">' + '<label class="checkbox-inline assign-usercheckbox-inline" checkboxproject><input class="checkboxproject" id="projectChk' + i + '" type="checkbox" onclick="GetCheckCountProject(this)" value=""  ></label>' + '</td>';
+                    }
+                } else {
+                    $("#chkheaderProject").hide();
+                    tablehtml += '<td class="td-desibled text-center">-</td>';
+                }
+                tablehtml += '</tr>';
+            }
+        }
+    }
+    /*
+     LicIntranetAvilableCount=LicIntranet-IntranetCount;
+    $('#LicIntranetConsumedCount').html(IntranetCount);
+    $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+    
+    
+     LicDMSAvilableCount=LicDMS-DMSCount;
+    $('#LicDMSConsumedCount').html(DMSCount);
+    $("#LicDMSAvilableCount").html(LicDMSAvilableCount);
+    
+     LicProjectTaskAvilableCount=LicProjectTask-ProjectCount;
+    $('#LicProjectConsumedCount').html(ProjectCount);
+    $("#LicProjectTaskAvilableCount").html(LicProjectTaskAvilableCount);
+
+
+    */
+    $('#employeeusers').html('');
+    $('#employeeusers').append(tablehtml);
+    assignusertable = $('#assignusertable').DataTable({
+        'columnDefs': [{
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'render': function(data, type, full, meta) {
+                return '<input type="checkbox" class="assignu" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+            },
+        }],
+        'order': [
+            [1, 'asc']
+        ],
+        'searching': false,
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        language: {
+            searchPlaceholder: "Search records"
+        },
+        'columnDefs': [{
+            'targets': [0, 4, 5, 6],
+            'searchable': false,
+            'orderable': false,
+        }],
+    });
+}
+
+function LoadGridhtmlfilter(EmployeeUsers) {
+    assignusertablefilter = ""
+    var tablehtml = "";
+    IntranetCount = 0;
+    DMSCount = 0;
+    ProjectCount = 0;
+    for(var i = 0; i < EmployeeUsers.length; i++) {
+        var AttachmentURL = "";
+        if(TypeofLincnse == "Enterprise") {
+            $("#assignlicensemodal").hide();
+        } else {
+            $("#assignlicensemodal").show();
+            //  if(EmployeeUsers[i].AttachmentFiles.results.length > 0) {
+            //       AttachmentURL = EmployeeUsers[i].AttachmentFiles.results[0].ServerRelativeUrl;
+            // } else {
+            //   AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + EmployeeUsers[i].LogonName.UserName;
+            //   }
+            if(EmployeeUsers[i].EMail != null) {
+                tablehtml += '<tr> <td><label class="checkbox-inline assign-usercheckbox-inline"><input type="checkbox" class="assignu" id="checkselect' + i + '" value=""></label></td>' + '<td>' + '<div class="assign-user-card">' + '<div class="assign-user-card-head">' + '<img src="' + EmployeeUsers[i].AttachmentFile + '" alt="user">' + '</div>' + '<div class="assign-user-card-body">' + '<div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">' + EmployeeUsers[i].FullName + '</h3> ' + '<p class="assign-user-email text-ellipsis" style="text-overflow: ellipsis; width: 250px;" >' + EmployeeUsers[i].EMail + '</p>' + '</div>' + '</div>' + '</div>' + '<div id="UserId' + i + '"> <p style="display:none" class="">' + EmployeeUsers[i].Id + '</p> </div> </td>';
+                if(EmployeeUsers[i].Type == "Employees") {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Employees</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Department.DepartmentName + '</h3>' + '</div> </td>';
+                } else {
+                    tablehtml += '<td>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Designation + '</h3>' + '</td>' + '<td>     <div class="assign-user-card-body-info text-ellipsis">' + '<h3 class="assign-user-name text-ellipsis">Guest</h3>' + '<h3 class="assign-user-name text-ellipsis" style="text-overflow: ellipsis; width: 150px;" >' + EmployeeUsers[i].Company + '</h3>' + '</div> </td>';
+                }
+                tablehtml += '</tr>';
+            }
+        }
+    }
+    $('#employeeusersfilter').html('');
+    $('#employeeusersfilter').append(tablehtml);
+    assignusertablefilter = $('#assignusertablefilter').DataTable({
+        'columnDefs': [{
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'render': function(data, type, full, meta) {
+                return '<input type="checkbox" class="assignu" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+            },
+        }],
+        'order': [
+            [1, 'asc']
+        ],
+        'searching': true,
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        "bDestroy": false,
+        language: {
+            searchPlaceholder: "Search records"
+        },
+        'columnDefs': [{
+            'targets': [0],
+            'searchable': false,
+            'orderable': false,
+        }],
+    });
+}
+$('#chkheaderDMS').on('click', function() {
+    // Test
+    var checked = $("#chkheaderDMS").is(':checked');
+    $("#LicDMSAvilableCount").html("");
+    $('#LicDMSConsumedCount').html("");
+    AvailableCount = LicDMS;
+    var data = assignusertable.rows().data();
+    if(checked) {
+        $(".checkboxDMS").prop('checked', checked);
+        $('#LicDMSConsumedCount').html(data.length);
+        ConsumedlicenseCount = data.length;
+        AvailableCount = AvailableCount - data.length;
+        $("#LicDMSAvilableCount").html(AvailableCount);
+    } else {
+        $(".checkboxDMS").prop('checked', checked);
+        $('#LicDMSConsumedCount').html(0);
+        $("#LicDMSAvilableCount").html(AvailableCount);
+        ConsumedlicenseCount = 0;
+    }
+    DMSCount = ConsumedlicenseCount;
+    LicDMSAvilableCount = AvailableCount;
+    IsVisibleSubmitButton();
+});
+
+function GetCheckCountDMS(CheckBox) {
+    DMSCount = $('#LicDMSConsumedCount').text();
+    LicDMSAvilableCount = $("#LicDMSAvilableCount").text();
+    if(CheckBox.checked == true) {
+        LicDMSAvilableCount = LicDMSAvilableCount - 1;
+        DMSCount = parseInt(DMSCount) + 1;
+        $("#LicdmsSelected").text("Selected:");
+    } else {
+        LicDMSAvilableCount = parseInt(LicDMSAvilableCount) + 1;
+        DMSCount = DMSCount - 1;
+    }
+    $("#chkheaderDMS").prop('checked', false);
+    $('#LicDMSConsumedCount').html(DMSCount);
+    $("#LicDMSAvilableCount").html(LicDMSAvilableCount);
+    IsVisibleSubmitButton();
+}
+$('#chkheaderIntranet').on('click', function() {
+    // Test
+    var checked = $("#chkheaderIntranet").is(':checked');
+    $("#LicIntranetAvilableCount").html("");
+    $('#LicIntranetConsumedCount').html("");
+    AvailableCount = LicIntranet;
+    var data = assignusertable.rows().data();
+    if(checked) {
+        $(".checkboxInternet").prop('checked', checked);
+        $('#LicIntranetConsumedCount').html(data.length);
+        ConsumedlicenseCount = data.length;
+        AvailableCount = AvailableCount - data.length;
+        $("#LicIntranetAvilableCount").html(AvailableCount);
+    } else {
+        $(".checkboxInternet").prop('checked', checked);
+        $('#LicIntranetConsumedCount').html(0);
+        $("#LicIntranetAvilableCount").html(AvailableCount);
+        ConsumedlicenseCount = 0;
+    }
+    IntranetCount = ConsumedlicenseCount;
+    LicIntranetAvilableCount = AvailableCount;
+    IsVisibleSubmitButton();
+});
+
+function GetCheckCountInternet(CheckBox) {
+    IntranetCount = $('#LicIntranetConsumedCount').text();
+    LicIntranetAvilableCount = $("#LicIntranetAvilableCount").text();
+    if(CheckBox.checked == true) {
+        LicIntranetAvilableCount = LicIntranetAvilableCount - 1;
+        IntranetCount = parseInt(IntranetCount) + 1;
+        $("#LicIntranetSelecte").text("Selected:");
+    } else {
+        //chkheaderIntranet
+        $("#chkheaderIntranet").prop('checked', false);
+        LicIntranetAvilableCount = parseInt(LicIntranetAvilableCount) + 1;
+        IntranetCount = parseInt(IntranetCount) - 1;
+    }
+    $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+    $('#LicIntranetConsumedCount').html(IntranetCount);
+    IsVisibleSubmitButton();
+}
+
+function GetCheckCountProject(CheckBox) {
+    ProjectCount = $('#LicProjectConsumedCount').text();
+    LicProjectTaskAvilableCount = $("#LicProjectTaskAvilableCount").text();
+    if(CheckBox.checked == true) {
+        LicProjectTaskAvilableCount = LicProjectTaskAvilableCount - 1;
+        ProjectCount = parseInt(ProjectCount) + 1;
+        $("#LicProjectSelected").text("Selected:");
+    } else {
+        $("#chkheaderProject").prop('checked', false);
+        LicProjectTaskAvilableCount = parseInt(LicProjectTaskAvilableCount) + 1;
+        ProjectCount = ProjectCount - 1;
+    }
+    $("#LicProjectTaskAvilableCount").html("");
+    $("#LicProjectTaskAvilableCount").html(LicProjectTaskAvilableCount);
+    $('#LicProjectConsumedCount').html(ProjectCount);
+    IsVisibleSubmitButton();
+}
+$('#chkheaderProject').on('click', function() {
+    // Test
+    var checked = $("#chkheaderProject").is(':checked');
+    $("#LicProjectTaskAvilableCount").html("");
+    $('#LicProjectConsumedCount').html("");
+    AvailableCount = LicProjectTask;
+    var data = assignusertable.rows().data();
+    if(checked) {
+        $(".checkboxproject").prop('checked', checked);
+        $('#LicProjectConsumedCount').html(data.length);
+        ConsumedlicenseCount = data.length;
+        AvailableCount = AvailableCount - data.length;
+        $("#LicProjectTaskAvilableCount").html(AvailableCount);
+    } else {
+        $(".checkboxproject").prop('checked', checked);
+        $('#LicProjectConsumedCount').html(0);
+        $("#LicProjectTaskAvilableCount").html(AvailableCount);
+        ConsumedlicenseCount = 0;
+    }
+    ProjectCount = ConsumedlicenseCount;
+    LicProjectTaskAvilableCount = AvailableCount;
+    IsVisibleSubmitButton();
+});
+
+function IsVisibleSubmitButton() {
+    if((LicIntranetAvilableCount >= 0 || isNaN(LicIntranetAvilableCount)) && (LicDMSAvilableCount >= 0 || isNaN(LicDMSAvilableCount)) && (LicProjectTaskAvilableCount >= 0 || isNaN(LicProjectTaskAvilableCount))) {
+        $("#btnAssignSubmitusers").show();
+    } else {
+        $("#btnAssignSubmitusers").hide();
+    }
+}
+$('#asignCloseBtn, #asignCancelBtn, #asignSubmitBtn, #assign-modal').on('click', function() {
+    //assignusertable.destroy();
+    setTimeout(function() {
+        $('body').addClass('modal-open');
+    }, 600);
+});
+$('#btnAssignclose, #btnAssignCancel').on('click', function() {
+    assignusertable.destroy();
+});
+$('.close-consumed-license-modal').on('click', function() {
+    Consumedlicensetable.destroy();
+});
+$('#assignFilterApplyBtn').on('click', function() {
+    assignusertablefilter.destroy();
+    filtermessage="Select at list one user checkbox ";
+    CommonFunctionLic.filterEmployee();
+});
+
+
+
+
+$('#assignFilterApplyBtnSubmit').on('click', function() {
+
+    if($("#assignusertablefilter input[class=assignu]:checked").length > 0) {
+        $.ajax({
+            cache: false,
+            beforeSend: function() {
+                $("#overlaysearch").fadeIn();
+            },
+            success: function(data) {
+                $("#assignusertablefilter input[class=assignu]:checked").each(function() {
+                    var row = $(this).closest("tr")[0];
+                    //$("#DMSChk0").is(':checked')
+                    var userId = $(row.cells[1].innerHTML)[1].childNodes[1].innerHTML;
+                    var UserType = $(row.cells[3].innerHTML)[0].children[0].innerText;
+                    var userEmail = $(row.cells[1].innerHTML)[0].childNodes[1].children[0].childNodes[2].innerHTML;
+                    selectedfilter(userEmail)
+                });
+                $("#overlaysearch").fadeOut();
+            }
+        });
+        assignusertablefilter.destroy();
+        IsVisibleSubmitButton();
+        $('#assign-filter').modal('hide');
+    }else
+    {
+    alert(filtermessage);
+    //assignusertablefilter.destroy();
+    
+    }
+});
+
+
+
+
+// assign filter modal
+$('#assignFilterClearBtn, #assign-filter').on('click', function() {
+    setTimeout(function() {
+        $('body').addClass('modal-open');
+    }, 600);
+});
+$('#assignFilterCloseBtn').on('click', function() {
+    if(assignusertablefilter != "") {
+        assignusertablefilter.destroy();
+    }
+});
+$('#assignFilterClearBtn').on('click', function() {
+    assignusertablefilter.destroy();
+    Consumedlicensefilter = false;
+    //LoadGridhtml(AllEmployees)
+});
+
+
+
+function selectedfilter(userEmail) {
+    $("#assignusertable input[class=assignu]").each(function() {
+        var userLicsensecreate = "";
+        var row = $(this).closest("tr")[0];
+        //$("#DMSChk0").is(':checked')
+        var userId = $(row.cells[1].innerHTML)[1].childNodes[1].innerHTML;
+        var UserType = $(row.cells[3].innerHTML)[0].children[0].innerText;
+        var Email = $(row.cells[1].innerHTML)[0].childNodes[1].children[0].childNodes[2].innerHTML;
+        if(userEmail == Email) {
+            var IsfilterIntranet = false;
+            var IsfilterDMS = false;
+            var IsFilterProject = false;
+            IsfilterIntranet = $("#chkfilterIntranet").is(':checked');
+            IsfilterDMS = $("#chkfilterDMS").is(':checked');
+            IsFilterProject = $("#chkfilterProject").is(':checked');
+            if(IsNotSubscribedIntrenet) {
+                IntranetCount = $('#LicIntranetConsumedCount').text();
+                LicIntranetAvilableCount = $("#LicIntranetAvilableCount").text();
+                var chkInternetId = $(row.cells[4].innerHTML)[0].children[0].id;
+                var checked = $("#" + chkInternetId).is(':checked');
+                $("#LicIntranetSelecte").text("Selected:");
+                if(checked && IsfilterIntranet) {
+                    $("#" + chkInternetId).prop('checked', IsfilterIntranet);
+                    // LicIntranetAvilableCount = parseInt(LicIntranetAvilableCount) + 1;
+                    //IntranetCount = parseInt(IntranetCount) - 1;
+                    $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+                    $('#LicIntranetConsumedCount').html(IntranetCount);
+                } else {
+                    if(IsfilterIntranet) {
+                        $("#" + chkInternetId).prop('checked', IsfilterIntranet);
+                        LicIntranetAvilableCount = parseInt(LicIntranetAvilableCount) - 1;
+                        IntranetCount = parseInt(IntranetCount) + 1;
+                        $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+                        $('#LicIntranetConsumedCount').html(IntranetCount);
+                    } else {
+                        if(checked) {
+                            $("#" + chkInternetId).prop('checked', IsfilterIntranet);
+                            LicIntranetAvilableCount = parseInt(LicIntranetAvilableCount) + 1;
+                            IntranetCount = parseInt(IntranetCount) - 1;
+                        }
+                        $("#LicIntranetAvilableCount").html(LicIntranetAvilableCount);
+                        $('#LicIntranetConsumedCount').html(IntranetCount);
+                    }
+                }
+            }
+            if(IsNotSubscribedDMS) {
+                DMSCount = $('#LicDMSConsumedCount').text();
+                LicDMSAvilableCount = $("#LicDMSAvilableCount").text();
+                $("#LicdmsSelected").text("Selected:");
+                var ChkDMSId = $(row.cells[5].innerHTML)[0].children[0].id;
+                var checked = $("#" + ChkDMSId).is(':checked');
+                if(checked && IsfilterDMS) {
+                    $("#" + ChkDMSId).prop('checked', IsfilterDMS);
+                    // LicDMSAvilableCount = parseInt(LicDMSAvilableCount) + 1;
+                    //DMSCount = parseInt(DMSCount) - 1;
+                } else {
+                    if(IsfilterDMS) {
+                        $("#" + ChkDMSId).prop('checked', IsfilterDMS);
+                        LicDMSAvilableCount = parseInt(LicDMSAvilableCount) - 1;
+                        DMSCount = parseInt(DMSCount) + 1;
+                    } else {
+                        if(checked) {
+                            $("#" + ChkDMSId).prop('checked', IsfilterDMS);
+                            LicDMSAvilableCount = parseInt(LicDMSAvilableCount) + 1;
+                            DMSCount = parseInt(DMSCount) - 1;
+                        }
+                    }
+                }
+                $('#LicDMSConsumedCount').html(DMSCount);
+                $("#LicDMSAvilableCount").html(LicDMSAvilableCount);
+            }
+            if(IsNotSubscribedProject) {
+                ProjectCount = $('#LicProjectConsumedCount').text();
+                LicProjectTaskAvilableCount = $("#LicProjectTaskAvilableCount").text();
+                $("#LicProjectSelected").text("Selected:");
+                var ChkProjectId = $(row.cells[6].innerHTML)[0].children[0].id;
+                var checked = $("#" + ChkProjectId).is(':checked');
+                if(checked && IsFilterProject) {
+                    $("#" + ChkProjectId).prop('checked', IsFilterProject);
+                    //LicProjectTaskAvilableCount = parseInt(LicProjectTaskAvilableCount) + 1;
+                    // ProjectCount = parseInt(ProjectCount) - 1;
+                } else {
+                    if(IsFilterProject) {
+                        $("#" + ChkProjectId).prop('checked', IsFilterProject);
+                        LicProjectTaskAvilableCount = LicProjectTaskAvilableCount - 1;
+                        ProjectCount = parseInt(ProjectCount) + 1;
+                    } else {
+                        if(checked) {
+                            $("#" + ChkProjectId).prop('checked', IsFilterProject);
+                            LicProjectTaskAvilableCount = parseInt(LicProjectTaskAvilableCount) + 1;
+                            ProjectCount = parseInt(ProjectCount) - 1;
+                        }
+                    }
+                }
+                $("#LicProjectTaskAvilableCount").html("");
+                $("#LicProjectTaskAvilableCount").html(LicProjectTaskAvilableCount);
+                $('#LicProjectConsumedCount').html(ProjectCount);
+            }
+        }
+    });
+    IsVisibleSubmitButton();
+}
+
+
+
+function GetApprovalProcessMaster() {
+    var BpassLenth = "";
+    RestQuery = "?$select=* &$filter= Active eq '1' and (TrialStatus eq 'Licenced')  &$top=5000";
+    $.when(CommonFunctionLic.getItemsWithQueryItem("ApprovalProcessMaster", RestQuery)).done(function(ApprovalProcessMaster) {
+        BpassLenth = ApprovalProcessMaster.results.length;
+    });
+    return BpassLenth;
+}
+
+function GetAvailbleLicence() {
+    AllEmployees = [];
+    var Totalemployee = "";
+    var Query = "?$top=5000&$select=ID,Visible_in_directory,Status,ParentId,PrimaryCompany,JoiningDate,DateOfAnniversary,Manager,FullName,EmpLicense,DateOfBirth,LogonName/UserName,LogonName/Id," + "OfficeLocation/OfficeName,OfficeLocation/Region,Email,Department/DepartmentName,Designation," + "Company/CompanyName,Company/ID,ManagerLoginName/Id,ManagerLoginName/EMail," + "MobileNumber&$expand=LogonName,ManagerLoginName,Company,Department,OfficeLocation,AttachmentFiles&$filter=PrimaryCompany eq 'Primary' and Status eq 'Active' ";
+    dfds = $.Deferred(),
+        extdfds = $.Deferred();
+    var AllEmployeeList = "";
+    var entrnalempcolut, extrnalempcount;
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + Query;
+    $.when(CommonFunctionLic.getItems(url, dfds)).done(function(EmployeesResults) {
+        response = [];
+        entrnalempcolut = EmployeesResults.length;
+        AllEmployeeUser = EmployeesResults;
+        for(var i = 0; i < AllEmployeeUser.length; i++) {
+            var AttachmentURL = ""
+            if(AllEmployeeUser[i].AttachmentFiles.results.length > 0) {
+                AttachmentURL = AllEmployeeUser[i].AttachmentFiles.results[0].ServerRelativeUrl;
+            } else {
+                AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + AllEmployeeUser[i].LogonName.UserName;
+            }
+            AllEmployees.push({
+                'Id': AllEmployeeUser[i].Id,
+                'EMail': AllEmployeeUser[i].LogonName.UserName,
+                'FullName': AllEmployeeUser[i].FullName,
+                'EmpLicense': AllEmployeeUser[i].EmpLicense,
+                'ManagerLoginName': AllEmployeeUser[i].ManagerLoginName,
+                'Designation': AllEmployeeUser[i].Designation == null ? "" : AllEmployeeUser[i].Designation,
+                'OfficeLocation': AllEmployeeUser[i].OfficeLocation,
+                'Department': AllEmployeeUser[i].Department,
+                'Company': AllEmployeeUser[i].Company,
+                'AttachmentFile': AttachmentURL,
+                'Type': "Employees",
+            })
+        }
+        // active and validateup to >= that today
+        //(Status eq 'Initiated') or (Status eq 'Invited' )or (Status eq 'Pending')or
+        var ExternalQuery = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items?$select=*,InternalStakeholders/Title,Supervisor_Guest/Title,Client_Name/Title,LoginName/Title,LoginName/EMail,Supervisor/EMail, Supervisor/Title&$expand= LoginName,Supervisor,Client_Name,Supervisor_Guest,InternalStakeholders,AttachmentFiles &$filter= (ValidUpto ge '" + new Date().toISOString() + "') and (Status eq 'Active')";
+        $.when(CommonFunctionLic.getItems(ExternalQuery, extdfds)).done(function(ExternalResults) {
+            response = [];
+            // AllEmployeeUser =[];
+            extrnalempcount = ExternalResults.length;
+            // AllEmployeeUser = ExternalResults;
+            for(var i = 0; i < ExternalResults.length; i++) {
+                var AttachmentURL = ""
+                if(ExternalResults[i].AttachmentFiles.results.length > 0) {
+                    AttachmentURL = ExternalResults[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                } else {
+                    AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + ExternalResults[i].LoginName.EMail;
+                }
+                AllEmployees.push({
+                    'Id': ExternalResults[i].Id,
+                    'EMail': ExternalResults[i].LoginName.EMail,
+                    'FullName': ExternalResults[i].Title,
+                    'EmpLicense': ExternalResults[i].EmpLicense,
+                    'ManagerLoginName': ExternalResults[i].Supervisor.EMail,
+                    'Designation': ExternalResults[i].Designation == null ? "" : ExternalResults[i].Designation,
+                    'OfficeLocation': "",
+                    'Department': "",
+                    'Company': ExternalResults[i].Client_Name.Title,
+                    'AttachmentFile': AttachmentURL,
+                    'Type': "Guest",
+                })
+            }
+        });
+        AllEmployeeList = parseInt(entrnalempcolut) + parseInt(extrnalempcount);
+        Totalemployee = (parseInt(UsersLicenceRequired) - parseInt(AllEmployeeList));
+    });
+    return Totalemployee;
+}
+var response = response || [];
+//Get details from SP list above 5000
+var CommonFunctionLic = [];
+CommonFunctionLic.getItemsWithQueryItem = function(ListName, Query) {
+    DeferredObj = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query,
+        type: "GET",
+        async: false,
+        headers: {
+            ACCEPT: "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function(data) {
+            DeferredObj.resolve(data.d);
+            //   console.log();
+        },
+        error: function(error) {
+            //alert(JSON.stringify(error));
+            DeferredObj.reject(error);
+        }
+    });
+    return DeferredObj.promise();
+};
+CommonFunctionLic.updateItemWithID = function(Id, ListName, Metadata) {
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + ListName + "')/items(" + Id + ")",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE"
+        },
+        data: JSON.stringify(Metadata),
+        success: function(data) {
+            console.log("success");
+            dfd.resolve(data);
+        },
+        error: function(error) {
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+};
+CommonFunctionLic.GetItemTypeForListName = function(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+CommonFunctionLic.getItems = function(url, dfds) {
+    $.ajax({
+        url: url,
+        type: 'GET',
+        async: false,
+        headers: {
+            'accept': 'application/json;odata=verbose'
+        },
+        success: function(data) {
+            response = response.concat(data.d.results);
+            if(data.d.__next) {
+                url = data.d.__next;
+                CommonFunctionLic.getItems(url, dfds);
+            } else {
+                dfds.resolve(response);
+            }
+        },
+        error: function(error) {
+            dfds.reject(error)
+            console.log(error);
+        }
+    })
+    return dfds.promise()
+}
+CommonFunctionLic.SetValuesInFilter = function() {
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Companies')/items?$select=ID,CompanyName";
+    $.ajax({
+        url: Ownurl,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var items = data.d.results;
+            $("#FilterEditEventCateory").html('');
+            for(var i = 0; i < items.length; i++) {
+                $("#FilterEditEventCateory").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].CompanyName));
+            }
+            IsValueSet = true;
+            CommonFunctionLic.GetDepartment(Logged_CompanyId);
+            $("#FilterEditEventCateory").val(Logged_CompanyId);
+            //initializePeoplePicker("pplManager");
+            //$("#ddlFilterCompany").trigger("change");
+        },
+        eror: function(data) {
+            console.log('error');
+        }
+    });
+};
+//Bind department name according to company
+CommonFunctionLic.GetDepartment = function(companyID) {
+    $('#FilterEditEventDepartment').empty().append('<option value="0">-Select Department-</option>');
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?$select=ID,CompanyIDId/ID,DepartmentName&$filter=CompanyIDId  eq '" + companyID + "'";
+    $.ajax({
+        url: Ownurl,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var items = data.d.results;
+            for(var i = 0; i < items.length; i++) {
+                $("#FilterEditEventDepartment").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].DepartmentName));
+            }
+            CommonFunctionLic.GetOfficeLocation(companyID);
+        },
+        eror: function(data) {
+            console.log('error');
+        }
+    });
+};
+//Bind Locations name according to company
+var arrRegion = [];
+CommonFunctionLic.GetOfficeLocation = function(currentCopanyIDLocation) {
+    $('#ddlFilterLoc').empty().append('<option value="0">-Select Location-</option>');
+    //$('#ddlFilterRegion').empty().append('<option value="0">-Select Region-</option>');
+    arrRegion = [];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('OfficeLocation')/items?$select=ID,Region,OfficeName,CompanyID/ID&$expand=CompanyID&$filter=OfficeLocationId eq '0' and CompanyID/ID eq '" + currentCopanyIDLocation + "'";
+    $.ajax({
+        url: Ownurl,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var items = data.d.results;
+            for(var i = 0; i < items.length; i++) {
+                $("#ddlFilterLoc").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].OfficeName));
+                var Region = '';
+                Region = items[i].Region;
+                if(Region != null) {
+                    arrRegion.push(data.d.results[i].Region);
+                }
+            }
+            CommonFunctionLic.GetClientMaster(Logged_CompanyId);
+        },
+        eror: function(data) {
+            console.log('error');
+        }
+    });
+};
+//Bind department name according to Customer company
+CommonFunctionLic.GetClientMaster = function(companyID) {
+    $('#FilterEditEventGuestCoustomer').empty().append('<option value="0">-Select Customer-</option>');
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ClientMaster')/items?$select=ID,CompanyIDId/ID,Title&$filter=CompanyIDId  eq '" + companyID + "' and IsActive eq 1";
+    $.ajax({
+        url: Ownurl,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var items = data.d.results;
+            for(var i = 0; i < items.length; i++) {
+                $("#FilterEditEventGuestCoustomer").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].Title));
+            }
+        },
+        eror: function(data) {
+            console.log('error');
+        }
+    });
+};
+CommonFunctionLic.filterEmployee = function() {
+    var arrFilter = [];
+    response = [];
+    var ManagerIds = CommonFunctionLic.getPeopleUserInfoGroups("pplManager");
+    var EmployeeIds = CommonFunctionLic.getPeopleUserInfoGroups("pplEmployee");
+    var Designation = $("#FilterDesignation").val();
+    var filter = "";
+    var CompanyName = $("#FilterEditEventCateory :selected").text();
+    if($('#FilterEditEventType').val() == "Employee") {
+        var DeptName = $("#FilterEditEventDepartment :selected").text(),
+            LocationName = $("#ddlFilterLoc :selected").text();
+        //For showing filter results ends//
+        if(Designation.trim() != "") {
+            filter += " and substringof('" + Designation + "',Designation)";
+            //filter += " and Designation eq '" + Designation + "'";
+        }
+        if(DeptName != "-Select Department-") {
+            filter += " and Department/DepartmentName eq '" + DeptName + "'";
+        }
+        if(LocationName != "-Select Location-") {
+            filter += " and OfficeLocation/OfficeName eq '" + LocationName + "'";
+        }
+        if(ManagerIds.length > 0) {
+            filter += " and ManagerLoginName/EMail eq '" + ManagerIds[0] + "'";
+        }
+        if(EmployeeIds.length > 0) {
+            filter += " and LogonName/UserName eq '" + EmployeeIds[0] + "'";
+        }
+        var Query = "?$top=5000&$select=ID,Visible_in_directory,Status,ParentId,PrimaryCompany,JoiningDate,DateOfAnniversary,Manager,FullName,EmpLicense,DateOfBirth,LogonName/UserName,LogonName/Id," + "OfficeLocation/OfficeName,OfficeLocation/Region,Email,Department/DepartmentName,Designation," + "Company/CompanyName,Company/ID,ManagerLoginName/Id,ManagerLoginName/EMail," + "MobileNumber&$expand=LogonName,ManagerLoginName,Company,Department,OfficeLocation,AttachmentFiles&$filter=PrimaryCompany eq 'Primary' and Status eq 'Active' and Visible_in_directory ne 'No' and Company/ID eq  '" + $("#FilterEditEventCateory").val() + "'" + filter + " ";
+        var dfds = $.Deferred();
+        var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + Query;
+        $.when(CommonFunctionLic.getItems(url, dfds)).done(function(EmployeesResultss) {
+            //AllEmployeeUser=EmployeesResults;
+            for(var i = 0; i < EmployeesResultss.length; i++) {
+                var AttachmentURL = ""
+                if(EmployeesResultss[i].AttachmentFiles.results.length > 0) {
+                    AttachmentURL = EmployeesResultss[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                } else {
+                    AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + EmployeesResultss[i].LogonName.UserName;
+                }
+                arrFilter.push({
+                    'Id': EmployeesResultss[i].Id,
+                    'EMail': EmployeesResultss[i].LogonName.UserName,
+                    'FullName': EmployeesResultss[i].FullName,
+                    'EmpLicense': EmployeesResultss[i].EmpLicense,
+                    'ManagerLoginName': EmployeesResultss[i].ManagerLoginName,
+                    'Designation': EmployeesResultss[i].Designation == null ? "" : EmployeesResultss[i].Designation,
+                    'OfficeLocation': EmployeesResultss[i].OfficeLocation,
+                    'Department': EmployeesResultss[i].Department,
+                    'Company': EmployeesResultss[i].Company,
+                    'AttachmentFile': AttachmentURL,
+                    'Type': "Employees",
+                })
+            }
+        });
+    } else if($('#FilterEditEventType').val() == "Guest User") {
+        var CompanyName = $("#FilterEditEventGuestCoustomer :selected").val();
+        if(CompanyName != "-Select Customer-") {
+            filter += " and Client_NameId eq '" + CompanyName + "'";
+        }
+        if(Designation.trim() != "") {
+            filter += " and substringof('" + Designation + "',Designation)";
+            //filter += " and Designation eq '" + Designation + "'";
+        }
+        if(ManagerIds.length > 0) {
+            filter += " and Supervisor/EMail eq '" + ManagerIds[0] + "'";
+        }
+        if(EmployeeIds.length > 0) {
+            filter += " and LoginName/EMail eq '" + EmployeeIds[0] + "'";
+        }
+        var extdfds = $.Deferred();
+        //and Client_NameId eq  '" + $("#FilterEditEventGuestCoustomer").val() + "'
+        var ExternalQuery = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items?$select=*,InternalStakeholders/Title,Supervisor_Guest/Title,Client_Name/Title,Client_Name/Id,LoginName/Title,LoginName/EMail,Supervisor/EMail, Supervisor/Title&$expand= LoginName,Supervisor,Client_Name,Supervisor_Guest,InternalStakeholders,AttachmentFiles &$filter= (ValidUpto ge '" + new Date().toISOString() + "') and (Status eq 'Active') " + filter + "";
+        $.when(CommonFunctionLic.getItems(ExternalQuery, extdfds)).done(function(GuestExternalResult) {
+            response = [];
+            for(var i = 0; i < GuestExternalResult.length; i++) {
+                var AttachmentURL = ""
+                if(GuestExternalResult[i].AttachmentFiles.results.length > 0) {
+                    AttachmentURL = GuestExternalResult[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                } else {
+                    AttachmentURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + GuestExternalResult[i].LoginName.EMail;
+                }
+                arrFilter.push({
+                    'Id': GuestExternalResult[i].Id,
+                    'EMail': GuestExternalResult[i].LoginName.EMail,
+                    'FullName': GuestExternalResult[i].Title,
+                    'EmpLicense': GuestExternalResult[i].EmpLicense,
+                    'ManagerLoginName': GuestExternalResult[i].Supervisor.EMail,
+                    'Designation': GuestExternalResult[i].Designation == null ? "" : GuestExternalResult[i].Designation,
+                    'OfficeLocation': "",
+                    'Department': "",
+                    'Company': GuestExternalResult[i].Client_Name.Title,
+                    'AttachmentFile': AttachmentURL,
+                    'Type': "Guest",
+                })
+            }
+        });
+    }
+    if(Consumedlicensefilter) {
+        Consumedlicensetable.destroy();
+        LoadConsumedhtml(arrFilter)
+    } else {
+        LoadGridhtmlfilter(arrFilter);
+    }
+};
+//get user Ids from People picker
+CommonFunctionLic.getPeopleUserInfoGroups = function(pickerPickerControlId) {
+    SharedUserName = [];
+    var UserArrayList = new Array();
+    var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+    var users = peoplePicker.GetAllUserInfo();
+    if(users.length > 0) {
+        var allUsersID = new Array();
+        var usersEmailIDs = new Array();
+        for(var i = 0; i < users.length; i++) {
+            var grpid = users[i].Key;
+            var autokey = users[i].EntityType;
+            if(autokey == "User") {
+                //UserArrayList.push(GetUserIdGroups(users[i].Key));
+                UserArrayList.push(users[i].Key.split('|')[2]);
+                SharedUserName.push(users[i].DisplayText);
+            } else {
+                var grpid = users[i].EntityData.SPGroupID;
+                var myArrays = new Array();
+                myArrays.push(siteusers(grpid));
+                //  var c = UserArrayList.concat(myArrays);
+                var c = UserArrayList.concat.apply([], myArrays);
+                UserArrayList = UserArrayList.concat(c);
+            }
+            //UserArrayList.push(GetUserIdGroups(users[i].Key));
+        }
+    }
+    return UserArrayList;
+}
+// Render and initialize the client-side People Picker.
+CommonFunctionLic.initializePeoplePicker = function(peoplePickerElementId, AllowMultipleValues) {
+    // Create a schema to store picker properties, and set the properties.
+    var schema = {};
+    schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = AllowMultipleValues;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '351px';
+    // Render and initialize the picker. 
+    // Pass the ID of the DOM element that contains the picker, an array of initial
+    // PickerEntity objects to set the picker value, and a schema that defines
+    // picker properties.
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+    $(".sp-peoplepicker-editorInput").width(250);
+}
+//get user information from people picker
+function getUserInformation(PeoplepickerId, multipleEmailAddress, assignUserName, StepCount) {
+    // Get the people picker object from the page. 
+    var userIds = [];
+    var uniqueValues = [];
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[PeoplepickerId + "_TopSpan"];
+    if(!peoplePicker.IsEmpty()) {
+        if(peoplePicker.HasInputError) return false; // if any error  
+        else if(!peoplePicker.HasResolvedUsers()) return false; // if any invalid users  
+        else if(peoplePicker.TotalUserCount > 0) {
+            // Get information about all users.  
+            var users = peoplePicker.GetAllUserInfo();
+            var userInfo = '';
+            var promise = '';
+            var UsersID = '';
+            for(var i = 0; i < users.length; i++) {
+                // UsersID += GetUserID(users[i].Key);
+                var accountName = users[i].Key;
+                users[i].EntityData.Email;
+                users[i].DisplayText;
+                var userId = GetUserID(accountName);
+                if(userId != -1) {
+                    if(uniqueValues.indexOf(userId) == -1) {
+                        uniqueValues.push(userId);
+                        userIds.push(userId);
+                    }
+                } else {
+                    userIds.push(parseInt(users[i].EntityData.SPGroupID));
+                }
+            }
+            return userIds;
+        }
+    } else {
+        return UsersID;
+    }
+}
+//empty the people picker
+function EmptyPeoplePicker(peoplePickerId) {
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerId + "_TopSpan"];
+    var usersobject = peoplePicker.GetAllUserInfo();
+    usersobject.forEach(function(index) {
+        peoplePicker.DeleteProcessedUser(usersobject[index]);
+    });
+}
+// Get the user ID.
+function GetUserID(logonName) {
+    var item = {
+        'logonName': logonName
+    }
+    var userId = -1;
+    var UserId = $.ajax({
+        url: _spPageContextInfo.siteAbsoluteUrl + '/_api/web/ensureuser',
+        type: 'POST',
+        async: false,
+        contentType: 'application/json;odata=verbose',
+        data: JSON.stringify(item),
+        headers: {
+            'Accept': 'application/json;odata=verbose',
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+        },
+        success: function(data) {
+            userId = data.d.Id;
+        },
+        error: function(data) {
+            console.log(data)
+            if(currentDlg != "") {
+                currentDlg.close();
+            }
+        }
+    })
+    return userId;
+}
+var UserEmail = [];
+//on change peoplePIcker
+function onChangeAddUser(HTMLID, PplPickerId, userHTMLId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function(elementId, userInfo) {
+        if(userInfo.length > 0) {
+            BindUser = '';
+            tempUserId = parseInt(getUserInformation(PplPickerId));
+            //SharingUserId.push(tempUserId);
+            var tempEmail = userInfo[0].Key.split('|')[2];
+            // ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+            if(tempEmail.includes('#') == true) {
+                tempEmail = tempEmail.split('#ext')[0];
+                tempEmail = tempEmail.replace("_", '@');
+            }
+            // SharingUserEmail.push(tempEmail);
+            // SharingUserName.push(userInfo[0].DisplayText);
+            var tempUserEmail = []
+            tempUserEmail = UserEmail.filter(function(obj) {
+                return obj.UserId == tempUserId;
+            });
+            if(tempUserEmail.length == 0) {
+                UserEmail.push({
+                    'UserId': tempUserId,
+                    'UserEmail': tempEmail,
+                    'UserName': userInfo[0].DisplayText
+                });
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                BindUser += '<div class="col-sm-4 parentremove User' + tempUserId + '"><div class="employeesection">';
+                BindUser += '<span onclick="removeUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+                BindUser += '<div class="empoyeeimg"><img src="' + attachment + '" alt="">';
+                BindUser += '</div><div class="employeeinfo"><h3>' + userInfo[0].DisplayText + '</h3>';
+                BindUser += '<span class="employeeemail" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</span>';
+                BindUser += '</div></div></div>';
+                $("#" + userHTMLId).append(BindUser);
+            } else {
+                alert(" the user already exists");
+            }
+            EmptyPeoplePicker(PplPickerId);
+            //$("#pplEmployeeProject").removeClass("activingss");
+        } else {
+            //$("#userList").hide();
+        }
+    };
+}
+//remove user from each step
+function removeUser(Action, Email, DisplayName, EmpId, count) {
+    $(Action).parents('.parentremove').remove();
+    UserEmail = UserEmail.filter(function(obj) {
+        return obj.UserEmail.toLowerCase() !== Email.toLowerCase();
+    });
+    UserEmail = UserEmail.filter(function(obj) {
+        return obj.UserName.toLowerCase() !== DisplayName.toLowerCase();
+    });
+    UserEmail = UserEmail.filter(function(obj) {
+        return obj.UserId != EmpId;
+    });
+    /*if (SharingUserEmail.length == 0) {
+        $(".userBox").hide();
+    }*/
+}
+var IsHomepageUrl = "";
+
+function SetDefaultPage(HomepageUrl, Istrue) {
+    IsHomepageUrl = HomepageUrl;
+    $.ajax({
+        // _spPageContextInfo.webAbsoluteUrl - will give absolute URL of the site where you are running the code.
+        // You can replace this with other site URL where you want to apply the function
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/rootfolder",
+        type: "POST",
+        async: false,
+        data: JSON.stringify({
+            '__metadata': {
+                // Type that you are modifying.
+                'type': 'SP.Folder'
+            },
+            // Specify Server relative URL of the page, you want to set as Home page
+            'WelcomePage': HomepageUrl
+        }),
+        headers: {
+            // Accept header: Specifies the format for response data from the server.
+            "Accept": "application/json;odata=verbose",
+            //Content-Type header: Specifies the format of the data that the client is sending to the server
+            "Content-Type": "application/json;odata=verbose",
+            // IF-MATCH header: Provides a way to verify that the object being changed has not been changed since it was last retrieved.
+            // "IF-MATCH":"*", will overwrite any modification in the object, since it was last retrieved.
+            "IF-MATCH": "*",
+            //X-HTTP-Method:  The MERGE method updates only the properties of the entity , while the PUT method replaces the existing entity with a new one that you supply in the body of the POST
+            "X-HTTP-Method": "PATCH",
+            // X-RequestDigest header: When you send a POST request, it must include the form digest value in X-RequestDigest header
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function(data, status, xhr) {
+            console.log("Success");
+            if(Istrue) {
+                alert("Welcome Page has been updated successfully.");
+            } else {
+                var OldHomepage = GetWelcomePage();
+                if(IsHomepageUrl != OldHomepage) {
+                    var time = setTimeout(SetDefaultPage(IsHomepageUrl, false), 2000);
+                }
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log("Failed");
+        }
+    });
+}
+
+function GetWelcomePage() {
+    var WelcomePage = "";
+    $.ajax({
+        url: _spPageContextInfo.siteAbsoluteUrl + '/_api/web/rootfolder',
+        type: 'GET',
+        async: false,
+        headers: {
+            'accept': 'application/json;odata=verbose'
+        },
+        success: function(data) {
+            // alert(data);
+            WelcomePage = data.d.WelcomePage
+        },
+        error: function(data) {}
+    })
+    return WelcomePage;
+}
+var TechAdminArr = [];
+
+function getCompanyApprovers() {
+    var siteUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getBytitle('ProcessApprovers')/items?$select=*,Approver/Title,Approver/EMail,Approver/Id,Approver/UserName,Owner/Title,Owner/EMail,Owner/Id,Owner/UserName,Contributors/Title,Contributors/Id,Contributors/UserName,Contributors/EMail&$expand=Approver,Contributors,Owner&$filter=CompanyId eq '" + Logged_CompanyId + "'";
+    $.ajax({
+        url: siteUrl,
+        //headers:{"ACCEPT":"application/json;odata=verbose"},
+        headers: {
+            "ACCEPT": "application/json;odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var results = data.d.results;
+            g_ApprovalItems = results;
+            for(let i = 0; i < results.length; i++) {
+                //var scope = results[i].Scope;
+                //var ApproverRequired = results[i].ApproverRequired;
+                if(results[i].WebPartName == 'Tech Admin') {
+                    var Contributors = results[i].Contributors;
+                    if(results[i].ContributorsId != null) {
+                        Contributors.results.forEach(function(Items) {
+                            var email = Items.EMail;
+                            var userName = Items.Title;
+                            var userId = Items.Id;
+                            TechAdminArr.push({
+                                EMail: email,
+                                Id: userId,
+                                UserName: userName
+                            });
+                        })
+                    }
+                }
+            }
+        },
+        error: function(error) {
+            alert(error);
+        }
+    })
+    return TechAdminArr;
+}

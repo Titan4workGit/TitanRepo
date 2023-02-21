@@ -1,1 +1,769 @@
-function a6_0x45e7(_0x5e179d,_0x36118d){var _0x3e1dc2=a6_0x3e1d();return a6_0x45e7=function(_0x45e7a8,_0x43e860){_0x45e7a8=_0x45e7a8-0xf7;var _0xd7e5f1=_0x3e1dc2[_0x45e7a8];return _0xd7e5f1;},a6_0x45e7(_0x5e179d,_0x36118d);}(function(_0x9dd56,_0x3e40fb){var _0x3433df=a6_0x45e7,_0x5ba5ca=_0x9dd56();while(!![]){try{var _0x1947c1=parseInt(_0x3433df(0x17e))/0x1+-parseInt(_0x3433df(0x114))/0x2*(parseInt(_0x3433df(0x17f))/0x3)+parseInt(_0x3433df(0x11c))/0x4*(parseInt(_0x3433df(0x132))/0x5)+parseInt(_0x3433df(0x150))/0x6+parseInt(_0x3433df(0x13f))/0x7*(-parseInt(_0x3433df(0xff))/0x8)+parseInt(_0x3433df(0x153))/0x9*(parseInt(_0x3433df(0x107))/0xa)+-parseInt(_0x3433df(0xfc))/0xb*(-parseInt(_0x3433df(0x17d))/0xc);if(_0x1947c1===_0x3e40fb)break;else _0x5ba5ca['push'](_0x5ba5ca['shift']());}catch(_0x5cb171){_0x5ba5ca['push'](_0x5ba5ca['shift']());}}}(a6_0x3e1d,0x333b2),function(_0x11d4b4){'use strict';var _0x3fd16a=a6_0x45e7;var _0x1703fe=_0x5388e7(),_0x31a22e=_0x594a58(),_0x4ae41e=_0x4e7225(),_0x7bdcd9=_0x6e65a7(),_0x2fd747={'imagePlaceholder':undefined,'cacheBust':![]},_0x1be630={'toSvg':_0x5a9a71,'toPng':_0x50da10,'toJpeg':_0x350514,'toBlob':_0x25784d,'toPixelData':_0x4bb678,'impl':{'fontFaces':_0x4ae41e,'images':_0x7bdcd9,'util':_0x1703fe,'inliner':_0x31a22e,'options':{}}};if(typeof module!==_0x3fd16a(0x157))module[_0x3fd16a(0x144)]=_0x1be630;else _0x11d4b4[_0x3fd16a(0x13d)]=_0x1be630;function _0x5a9a71(_0x3f7521,_0x70427d){var _0x310522=_0x3fd16a;_0x70427d=_0x70427d||{},_0x34cde9(_0x70427d);return Promise[_0x310522(0x15e)](_0x3f7521)[_0x310522(0x108)](function(_0x3e716e){var _0x1387b2=_0x310522;return _0x4127df(_0x3e716e,_0x70427d[_0x1387b2(0x155)],!![]);})['then'](_0x63e21b)[_0x310522(0x108)](_0xd19c9d)[_0x310522(0x108)](_0x13faae)[_0x310522(0x108)](function(_0x121b1d){var _0x3d1046=_0x310522;return _0x1ed62(_0x121b1d,_0x70427d[_0x3d1046(0x166)]||_0x1703fe[_0x3d1046(0x166)](_0x3f7521),_0x70427d[_0x3d1046(0x16c)]||_0x1703fe[_0x3d1046(0x16c)](_0x3f7521));});function _0x13faae(_0x58dea0){var _0x16604b=_0x310522;if(_0x70427d[_0x16604b(0x106)])_0x58dea0[_0x16604b(0x10c)]['backgroundColor']=_0x70427d[_0x16604b(0x106)];if(_0x70427d[_0x16604b(0x166)])_0x58dea0[_0x16604b(0x10c)][_0x16604b(0x166)]=_0x70427d[_0x16604b(0x166)]+'px';if(_0x70427d[_0x16604b(0x16c)])_0x58dea0['style'][_0x16604b(0x16c)]=_0x70427d['height']+'px';if(_0x70427d[_0x16604b(0x10c)])Object[_0x16604b(0xfa)](_0x70427d['style'])['forEach'](function(_0x549623){var _0x407df3=_0x16604b;_0x58dea0[_0x407df3(0x10c)][_0x549623]=_0x70427d['style'][_0x549623];});return _0x58dea0;}}function _0x4bb678(_0x59e63b,_0x47d84c){return _0x43a465(_0x59e63b,_0x47d84c||{})['then'](function(_0x21d7e0){var _0x383512=a6_0x45e7;return _0x21d7e0[_0x383512(0x167)]('2d')['getImageData'](0x0,0x0,_0x1703fe['width'](_0x59e63b),_0x1703fe[_0x383512(0x16c)](_0x59e63b))[_0x383512(0x171)];});}function _0x50da10(_0xe8e0ce,_0x2b1feb){var _0x3e9db8=_0x3fd16a;return _0x43a465(_0xe8e0ce,_0x2b1feb||{})[_0x3e9db8(0x108)](function(_0x2914c5){var _0x1c687d=_0x3e9db8;return _0x2914c5[_0x1c687d(0xfb)]();});}function _0x350514(_0x3d91ed,_0x39750d){var _0x5c689d=_0x3fd16a;return _0x39750d=_0x39750d||{},_0x43a465(_0x3d91ed,_0x39750d)[_0x5c689d(0x108)](function(_0x1cf398){var _0x22c019=_0x5c689d;return _0x1cf398[_0x22c019(0xfb)](_0x22c019(0x133),_0x39750d[_0x22c019(0x16d)]||0x1);});}function _0x25784d(_0x572352,_0xdfad0f){var _0x18207b=_0x3fd16a;return _0x43a465(_0x572352,_0xdfad0f||{})[_0x18207b(0x108)](_0x1703fe[_0x18207b(0x100)]);}function _0x34cde9(_0x414c4a){var _0x5bf4dc=_0x3fd16a;typeof _0x414c4a[_0x5bf4dc(0x127)]===_0x5bf4dc(0x157)?_0x1be630[_0x5bf4dc(0x17a)][_0x5bf4dc(0x141)][_0x5bf4dc(0x127)]=_0x2fd747[_0x5bf4dc(0x127)]:_0x1be630[_0x5bf4dc(0x17a)][_0x5bf4dc(0x141)]['imagePlaceholder']=_0x414c4a[_0x5bf4dc(0x127)],typeof _0x414c4a[_0x5bf4dc(0x11e)]===_0x5bf4dc(0x157)?_0x1be630[_0x5bf4dc(0x17a)][_0x5bf4dc(0x141)]['cacheBust']=_0x2fd747[_0x5bf4dc(0x11e)]:_0x1be630['impl'][_0x5bf4dc(0x141)][_0x5bf4dc(0x11e)]=_0x414c4a['cacheBust'];}function _0x43a465(_0x53c378,_0x2e413c){var _0x13809e=_0x3fd16a;return _0x5a9a71(_0x53c378,_0x2e413c)[_0x13809e(0x108)](_0x1703fe[_0x13809e(0x11b)])[_0x13809e(0x108)](_0x1703fe[_0x13809e(0x13b)](0x64))[_0x13809e(0x108)](function(_0x2827c4){var _0x50de74=_0x13809e,_0x4dcf45=_0xf864f5(_0x53c378);return _0x4dcf45[_0x50de74(0x167)]('2d')[_0x50de74(0x170)](_0x2827c4,0x0,0x0),_0x4dcf45;});function _0xf864f5(_0x3572e0){var _0x45271f=_0x13809e,_0x29f490=document[_0x45271f(0x11f)](_0x45271f(0x179));_0x29f490[_0x45271f(0x166)]=_0x2e413c[_0x45271f(0x166)]||_0x1703fe[_0x45271f(0x166)](_0x3572e0),_0x29f490['height']=_0x2e413c[_0x45271f(0x16c)]||_0x1703fe[_0x45271f(0x16c)](_0x3572e0);if(_0x2e413c['bgcolor']){var _0x5ef0e4=_0x29f490[_0x45271f(0x167)]('2d');_0x5ef0e4[_0x45271f(0x14e)]=_0x2e413c['bgcolor'],_0x5ef0e4[_0x45271f(0x15f)](0x0,0x0,_0x29f490[_0x45271f(0x166)],_0x29f490['height']);}return _0x29f490;}}function _0x4127df(_0x21dcfc,_0x327d91,_0x1de001){var _0x28b37d=_0x3fd16a;if(!_0x1de001&&_0x327d91&&!_0x327d91(_0x21dcfc))return Promise['resolve']();return Promise[_0x28b37d(0x15e)](_0x21dcfc)['then'](_0x22e1a4)['then'](function(_0x4ac040){return _0x3d4f15(_0x21dcfc,_0x4ac040,_0x327d91);})[_0x28b37d(0x108)](function(_0x554210){return _0x55ae12(_0x21dcfc,_0x554210);});function _0x22e1a4(_0xa8ccf6){var _0x3e14a2=_0x28b37d;if(_0xa8ccf6 instanceof HTMLCanvasElement)return _0x1703fe[_0x3e14a2(0x11b)](_0xa8ccf6[_0x3e14a2(0xfb)]());return _0xa8ccf6[_0x3e14a2(0x101)](![]);}function _0x3d4f15(_0x35e9ea,_0x240f50,_0x131bc3){var _0x792917=_0x28b37d,_0x29b9b5=_0x35e9ea['childNodes'];if(_0x29b9b5[_0x792917(0x13a)]===0x0)return Promise[_0x792917(0x15e)](_0x240f50);return _0x2e9a69(_0x240f50,_0x1703fe['asArray'](_0x29b9b5),_0x131bc3)[_0x792917(0x108)](function(){return _0x240f50;});function _0x2e9a69(_0x3e47da,_0x1b80d2,_0x4e0ca3){var _0x4a2520=_0x792917,_0x3a695c=Promise['resolve']();return _0x1b80d2[_0x4a2520(0x152)](function(_0x457246){var _0x410012=_0x4a2520;_0x3a695c=_0x3a695c[_0x410012(0x108)](function(){return _0x4127df(_0x457246,_0x4e0ca3);})[_0x410012(0x108)](function(_0x50de7c){var _0x2cebc9=_0x410012;if(_0x50de7c)_0x3e47da[_0x2cebc9(0x126)](_0x50de7c);});}),_0x3a695c;}}function _0x55ae12(_0x29d187,_0x2ae770){var _0x285352=_0x28b37d;if(!(_0x2ae770 instanceof Element))return _0x2ae770;return Promise[_0x285352(0x15e)]()['then'](_0x276e26)[_0x285352(0x108)](_0x183c90)[_0x285352(0x108)](_0x45371d)[_0x285352(0x108)](_0x1aa9a7)[_0x285352(0x108)](function(){return _0x2ae770;});function _0x276e26(){_0x1968ac(window['getComputedStyle'](_0x29d187),_0x2ae770['style']);function _0x1968ac(_0x2d852d,_0x49b964){var _0x2941ca=a6_0x45e7;if(_0x2d852d[_0x2941ca(0x116)])_0x49b964[_0x2941ca(0x116)]=_0x2d852d[_0x2941ca(0x116)];else _0x4d93e2(_0x2d852d,_0x49b964);function _0x4d93e2(_0x1e8a40,_0x2a6c34){var _0x3a0c93=_0x2941ca;_0x1703fe['asArray'](_0x1e8a40)[_0x3a0c93(0x152)](function(_0x27de3c){var _0x1050ab=_0x3a0c93;_0x2a6c34[_0x1050ab(0x138)](_0x27de3c,_0x1e8a40[_0x1050ab(0x10f)](_0x27de3c),_0x1e8a40['getPropertyPriority'](_0x27de3c));});}}}function _0x183c90(){var _0x50e55f=_0x285352;[_0x50e55f(0x173),_0x50e55f(0x12d)][_0x50e55f(0x152)](function(_0x42c544){_0x102d1f(_0x42c544);});function _0x102d1f(_0x12732c){var _0x5d17a3=_0x50e55f,_0x312caa=window[_0x5d17a3(0x16b)](_0x29d187,_0x12732c),_0x13e8bd=_0x312caa[_0x5d17a3(0x10f)](_0x5d17a3(0x103));if(_0x13e8bd===''||_0x13e8bd==='none')return;var _0x41697c=_0x1703fe[_0x5d17a3(0x165)]();_0x2ae770[_0x5d17a3(0x163)]=_0x2ae770['className']+'\x20'+_0x41697c;var _0x75aa46=document['createElement'](_0x5d17a3(0x10c));_0x75aa46[_0x5d17a3(0x126)](_0x33b0e9(_0x41697c,_0x12732c,_0x312caa)),_0x2ae770[_0x5d17a3(0x126)](_0x75aa46);function _0x33b0e9(_0x4f4147,_0x13b438,_0x2ef31d){var _0xa1c209=_0x5d17a3,_0x214afd='.'+_0x4f4147+':'+_0x13b438,_0x4a031a=_0x2ef31d[_0xa1c209(0x116)]?_0x965d67(_0x2ef31d):_0x3b381c(_0x2ef31d);return document[_0xa1c209(0x14c)](_0x214afd+'{'+_0x4a031a+'}');function _0x965d67(_0x3ca4d7){var _0x487731=_0xa1c209,_0x3bdb9f=_0x3ca4d7['getPropertyValue']('content');return _0x3ca4d7['cssText']+_0x487731(0x148)+_0x3bdb9f+';';}function _0x3b381c(_0x57f91c){var _0x55d024=_0xa1c209;return _0x1703fe[_0x55d024(0x147)](_0x57f91c)[_0x55d024(0x134)](_0x2977bc)['join'](';\x20')+';';function _0x2977bc(_0x1afdb4){var _0x56fd14=_0x55d024;return _0x1afdb4+':\x20'+_0x57f91c[_0x56fd14(0x10f)](_0x1afdb4)+(_0x57f91c[_0x56fd14(0x130)](_0x1afdb4)?_0x56fd14(0xf7):'');}}}}}function _0x45371d(){var _0x298e23=_0x285352;if(_0x29d187 instanceof HTMLTextAreaElement)_0x2ae770[_0x298e23(0x177)]=_0x29d187[_0x298e23(0x178)];if(_0x29d187 instanceof HTMLInputElement)_0x2ae770[_0x298e23(0x104)](_0x298e23(0x178),_0x29d187[_0x298e23(0x178)]);}function _0x1aa9a7(){var _0x156e22=_0x285352;if(!(_0x2ae770 instanceof SVGElement))return;_0x2ae770['setAttribute'](_0x156e22(0x16a),_0x156e22(0x117));if(!(_0x2ae770 instanceof SVGRectElement))return;[_0x156e22(0x166),_0x156e22(0x16c)][_0x156e22(0x152)](function(_0x160064){var _0x578936=_0x156e22,_0x1edbf4=_0x2ae770[_0x578936(0x15a)](_0x160064);if(!_0x1edbf4)return;_0x2ae770[_0x578936(0x10c)][_0x578936(0x138)](_0x160064,_0x1edbf4);});}}}function _0x63e21b(_0x59fb84){var _0x424404=_0x3fd16a;return _0x4ae41e[_0x424404(0x129)]()[_0x424404(0x108)](function(_0x13bf2b){var _0x155414=_0x424404,_0x3d0fbf=document[_0x155414(0x11f)](_0x155414(0x10c));return _0x59fb84[_0x155414(0x126)](_0x3d0fbf),_0x3d0fbf['appendChild'](document[_0x155414(0x14c)](_0x13bf2b)),_0x59fb84;});}function _0xd19c9d(_0x382d8d){var _0x38211c=_0x3fd16a;return _0x7bdcd9[_0x38211c(0x16f)](_0x382d8d)['then'](function(){return _0x382d8d;});}function _0x1ed62(_0x55a1da,_0x59f8c6,_0x2a9b9e){var _0x595728=_0x3fd16a;return Promise[_0x595728(0x15e)](_0x55a1da)[_0x595728(0x108)](function(_0x408eba){var _0x5ecb2c=_0x595728;return _0x408eba['setAttribute'](_0x5ecb2c(0x16a),_0x5ecb2c(0xf8)),new XMLSerializer()[_0x5ecb2c(0x121)](_0x408eba);})[_0x595728(0x108)](_0x1703fe['escapeXhtml'])['then'](function(_0x4240e0){var _0x1ddd28=_0x595728;return _0x1ddd28(0x137)+_0x4240e0+_0x1ddd28(0x123);})[_0x595728(0x108)](function(_0x544552){var _0x4a7e21=_0x595728;return _0x4a7e21(0x162)+_0x59f8c6+'\x22\x20height=\x22'+_0x2a9b9e+'\x22>'+_0x544552+'</svg>';})[_0x595728(0x108)](function(_0x155b2b){var _0x4f16d8=_0x595728;return _0x4f16d8(0x112)+_0x155b2b;});}function _0x5388e7(){return{'escape':_0x34128f,'parseExtension':_0x231034,'mimeType':_0x417fd0,'dataAsUrl':_0x488118,'isDataUrl':_0x4bbb4d,'canvasToBlob':_0x16b1eb,'resolveUrl':_0x49a393,'getAndEncode':_0x491813,'uid':_0x438803(),'delay':_0xef9004,'asArray':_0xf0973,'escapeXhtml':_0x3eb06c,'makeImage':_0x44d613,'width':_0x514f09,'height':_0x1017f7};function _0x292619(){var _0x21e4f6=a6_0x45e7,_0x2962ef='application/font-woff',_0x3ea8bc=_0x21e4f6(0x133);return{'woff':_0x2962ef,'woff2':_0x2962ef,'ttf':'application/font-truetype','eot':_0x21e4f6(0x151),'png':_0x21e4f6(0x111),'jpg':_0x3ea8bc,'jpeg':_0x3ea8bc,'gif':_0x21e4f6(0x15c),'tiff':_0x21e4f6(0x135),'svg':_0x21e4f6(0x172)};}function _0x231034(_0x14ca05){var _0x30d355=a6_0x45e7,_0x4c9644=/\.([^\.\/]*?)$/g[_0x30d355(0x156)](_0x14ca05);if(_0x4c9644)return _0x4c9644[0x1];else return'';}function _0x417fd0(_0x519fc2){var _0x230458=a6_0x45e7,_0x2d0beb=_0x231034(_0x519fc2)[_0x230458(0x161)]();return _0x292619()[_0x2d0beb]||'';}function _0x4bbb4d(_0x5aaa62){var _0x5a9a61=a6_0x45e7;return _0x5aaa62[_0x5a9a61(0xfd)](/^(data:)/)!==-0x1;}function _0x6c0d82(_0x41f6e9){return new Promise(function(_0xb772fe){var _0x12a5e9=a6_0x45e7,_0xdda5fd=window['atob'](_0x41f6e9[_0x12a5e9(0xfb)]()[_0x12a5e9(0x11d)](',')[0x1]),_0x3da635=_0xdda5fd['length'],_0x290cfa=new Uint8Array(_0x3da635);for(var _0x3703d8=0x0;_0x3703d8<_0x3da635;_0x3703d8++)_0x290cfa[_0x3703d8]=_0xdda5fd[_0x12a5e9(0x143)](_0x3703d8);_0xb772fe(new Blob([_0x290cfa],{'type':_0x12a5e9(0x111)}));});}function _0x16b1eb(_0x1cdd99){var _0x16b5da=a6_0x45e7;if(_0x1cdd99[_0x16b5da(0x11a)])return new Promise(function(_0x37f9f2){_0x1cdd99['toBlob'](_0x37f9f2);});return _0x6c0d82(_0x1cdd99);}function _0x49a393(_0x15e1ca,_0x31d909){var _0x1fa59f=a6_0x45e7,_0x200450=document['implementation'][_0x1fa59f(0x146)](),_0x458e61=_0x200450[_0x1fa59f(0x11f)](_0x1fa59f(0x12b));_0x200450[_0x1fa59f(0x139)][_0x1fa59f(0x126)](_0x458e61);var _0x4d2a4c=_0x200450[_0x1fa59f(0x11f)]('a');return _0x200450[_0x1fa59f(0x140)][_0x1fa59f(0x126)](_0x4d2a4c),_0x458e61[_0x1fa59f(0x12a)]=_0x31d909,_0x4d2a4c[_0x1fa59f(0x12a)]=_0x15e1ca,_0x4d2a4c[_0x1fa59f(0x12a)];}function _0x438803(){var _0x549a4f=0x0;return function(){return'u'+_0x3b8b1f()+_0x549a4f++;function _0x3b8b1f(){var _0x49da93=a6_0x45e7;return(_0x49da93(0x12f)+(Math[_0x49da93(0x10e)]()*Math[_0x49da93(0x17c)](0x24,0x4)<<0x0)[_0x49da93(0x12e)](0x24))['slice'](-0x4);}};}function _0x44d613(_0x4afafc){return new Promise(function(_0x16e764,_0x334c4b){var _0x34d248=a6_0x45e7,_0x58f00a=new Image();_0x58f00a[_0x34d248(0x149)]=function(){_0x16e764(_0x58f00a);},_0x58f00a[_0x34d248(0x10a)]=_0x334c4b,_0x58f00a[_0x34d248(0x10d)]=_0x4afafc;});}function _0x491813(_0x23899b){var _0x36b795=a6_0x45e7,_0x124001=0x7530;return _0x1be630[_0x36b795(0x17a)][_0x36b795(0x141)]['cacheBust']&&(_0x23899b+=(/\?/[_0x36b795(0x14f)](_0x23899b)?'&':'?')+new Date()['getTime']()),new Promise(function(_0x3b38bd){var _0x4b8e0f=_0x36b795,_0x2ebe9d=new XMLHttpRequest();_0x2ebe9d[_0x4b8e0f(0x115)]=_0x26ca2d,_0x2ebe9d[_0x4b8e0f(0x124)]=_0x2891d9,_0x2ebe9d[_0x4b8e0f(0x158)]='blob',_0x2ebe9d[_0x4b8e0f(0x17b)]=_0x124001,_0x2ebe9d[_0x4b8e0f(0x142)](_0x4b8e0f(0x160),_0x23899b,!![]),_0x2ebe9d[_0x4b8e0f(0x118)]();var _0x11dedf;if(_0x1be630['impl'][_0x4b8e0f(0x141)][_0x4b8e0f(0x127)]){var _0x5ba944=_0x1be630[_0x4b8e0f(0x17a)][_0x4b8e0f(0x141)]['imagePlaceholder'][_0x4b8e0f(0x11d)](/,/);_0x5ba944&&_0x5ba944[0x1]&&(_0x11dedf=_0x5ba944[0x1]);}function _0x26ca2d(){var _0x54e217=_0x4b8e0f;if(_0x2ebe9d[_0x54e217(0x110)]!==0x4)return;if(_0x2ebe9d[_0x54e217(0x13e)]!==0xc8){_0x11dedf?_0x3b38bd(_0x11dedf):_0x5302de(_0x54e217(0x15d)+_0x23899b+_0x54e217(0x176)+_0x2ebe9d['status']);return;}var _0x3444dc=new FileReader();_0x3444dc['onloadend']=function(){var _0x39bd14=_0x54e217,_0x1b996d=_0x3444dc[_0x39bd14(0x14b)][_0x39bd14(0x11d)](/,/)[0x1];_0x3b38bd(_0x1b996d);},_0x3444dc[_0x54e217(0x125)](_0x2ebe9d['response']);}function _0x2891d9(){var _0x25aec6=_0x4b8e0f;_0x11dedf?_0x3b38bd(_0x11dedf):_0x5302de(_0x25aec6(0x14a)+_0x124001+_0x25aec6(0x159)+_0x23899b);}function _0x5302de(_0x1d2046){var _0x48a17a=_0x4b8e0f;console[_0x48a17a(0x180)](_0x1d2046),_0x3b38bd('');}});}function _0x488118(_0x4b18ea,_0xd30850){var _0x228164=a6_0x45e7;return _0x228164(0x113)+_0xd30850+';base64,'+_0x4b18ea;}function _0x34128f(_0xeabca6){var _0x587f51=a6_0x45e7;return _0xeabca6[_0x587f51(0x154)](/([.*+?^${}()|\[\]\/\\])/g,_0x587f51(0x109));}function _0xef9004(_0x303ad2){return function(_0x309ebf){return new Promise(function(_0x6ec45b){setTimeout(function(){_0x6ec45b(_0x309ebf);},_0x303ad2);});};}function _0xf0973(_0x39256d){var _0x292055=a6_0x45e7,_0x109858=[],_0x42d23c=_0x39256d[_0x292055(0x13a)];for(var _0x424250=0x0;_0x424250<_0x42d23c;_0x424250++)_0x109858[_0x292055(0x131)](_0x39256d[_0x424250]);return _0x109858;}function _0x3eb06c(_0x2cc17a){var _0x2e9ee1=a6_0x45e7;return _0x2cc17a['replace'](/#/g,_0x2e9ee1(0x164))[_0x2e9ee1(0x154)](/\n/g,_0x2e9ee1(0x119));}function _0x514f09(_0x5aba22){var _0x4e3556=a6_0x45e7,_0x5e9eb3=_0x1537e7(_0x5aba22,'border-left-width'),_0x451e10=_0x1537e7(_0x5aba22,'border-right-width');return _0x5aba22[_0x4e3556(0x128)]+_0x5e9eb3+_0x451e10;}function _0x1017f7(_0x5ad319){var _0x18eea5=a6_0x45e7,_0x3161fe=_0x1537e7(_0x5ad319,_0x18eea5(0x175)),_0x50299f=_0x1537e7(_0x5ad319,'border-bottom-width');return _0x5ad319[_0x18eea5(0x13c)]+_0x3161fe+_0x50299f;}function _0x1537e7(_0x16748d,_0x24e859){var _0x176874=a6_0x45e7,_0xeb0455=window[_0x176874(0x16b)](_0x16748d)['getPropertyValue'](_0x24e859);return parseFloat(_0xeb0455[_0x176874(0x154)]('px',''));}}function _0x594a58(){var _0x3c8689=/url\(['"]?([^'"]+?)['"]?\)/g;return{'inlineAll':_0x2a5110,'shouldProcess':_0xb4d3a5,'impl':{'readUrls':_0x2730dd,'inline':_0x56e720}};function _0xb4d3a5(_0x494cd5){var _0x39b246=a6_0x45e7;return _0x494cd5[_0x39b246(0xfd)](_0x3c8689)!==-0x1;}function _0x2730dd(_0x3059b2){var _0x87aade=a6_0x45e7,_0x31e6b0=[],_0x81a5ff;while((_0x81a5ff=_0x3c8689['exec'](_0x3059b2))!==null){_0x31e6b0[_0x87aade(0x131)](_0x81a5ff[0x1]);}return _0x31e6b0['filter'](function(_0x1fe55b){var _0x2272e8=_0x87aade;return!_0x1703fe[_0x2272e8(0x10b)](_0x1fe55b);});}function _0x56e720(_0x57151b,_0x46a6c3,_0x122008,_0x433256){var _0xc55829=a6_0x45e7;return Promise[_0xc55829(0x15e)](_0x46a6c3)[_0xc55829(0x108)](function(_0x33e2a2){var _0x4de6a9=_0xc55829;return _0x122008?_0x1703fe[_0x4de6a9(0x120)](_0x33e2a2,_0x122008):_0x33e2a2;})[_0xc55829(0x108)](_0x433256||_0x1703fe[_0xc55829(0x14d)])[_0xc55829(0x108)](function(_0x457343){var _0x519068=_0xc55829;return _0x1703fe[_0x519068(0x16e)](_0x457343,_0x1703fe[_0x519068(0x12c)](_0x46a6c3));})[_0xc55829(0x108)](function(_0x1d8e2d){return _0x57151b['replace'](_0x1e96a4(_0x46a6c3),'$1'+_0x1d8e2d+'$3');});function _0x1e96a4(_0x2cd9fd){var _0x3434bf=_0xc55829;return new RegExp('(url\x5c([\x27\x22]?)('+_0x1703fe['escape'](_0x2cd9fd)+_0x3434bf(0xfe),'g');}}function _0x2a5110(_0x1ebff8,_0x44dfb1,_0x384357){var _0x313745=a6_0x45e7;if(_0x113a92())return Promise[_0x313745(0x15e)](_0x1ebff8);return Promise['resolve'](_0x1ebff8)[_0x313745(0x108)](_0x2730dd)[_0x313745(0x108)](function(_0x5b06d9){var _0x509008=_0x313745,_0x1f7463=Promise['resolve'](_0x1ebff8);return _0x5b06d9[_0x509008(0x152)](function(_0x258f6b){var _0xcbbb35=_0x509008;_0x1f7463=_0x1f7463[_0xcbbb35(0x108)](function(_0x12d73d){return _0x56e720(_0x12d73d,_0x258f6b,_0x44dfb1,_0x384357);});}),_0x1f7463;});function _0x113a92(){return!_0xb4d3a5(_0x1ebff8);}}}function _0x4e7225(){return{'resolveAll':_0x344d86,'impl':{'readAll':_0x33ca67}};function _0x344d86(){var _0x21197e=a6_0x45e7;return _0x33ca67(document)[_0x21197e(0x108)](function(_0x53186b){var _0x44a6a8=_0x21197e;return Promise[_0x44a6a8(0x168)](_0x53186b['map'](function(_0x5dd7ae){return _0x5dd7ae['resolve']();}));})[_0x21197e(0x108)](function(_0x53f8db){return _0x53f8db['join']('\x0a');});}function _0x33ca67(){var _0x3461b6=a6_0x45e7;return Promise[_0x3461b6(0x15e)](_0x1703fe[_0x3461b6(0x147)](document['styleSheets']))[_0x3461b6(0x108)](_0x48f1c0)['then'](_0x316aa5)[_0x3461b6(0x108)](function(_0x282d6c){var _0x31313d=_0x3461b6;return _0x282d6c[_0x31313d(0x134)](_0x368913);});function _0x316aa5(_0x4121ce){return _0x4121ce['filter'](function(_0x30bac4){var _0x3c16b0=a6_0x45e7;return _0x30bac4[_0x3c16b0(0x174)]===CSSRule[_0x3c16b0(0x145)];})['filter'](function(_0x1736f2){var _0x3f7d6f=a6_0x45e7;return _0x31a22e[_0x3f7d6f(0x105)](_0x1736f2[_0x3f7d6f(0x10c)][_0x3f7d6f(0x10f)](_0x3f7d6f(0x10d)));});}function _0x48f1c0(_0xf44546){var _0x155ed2=_0x3461b6,_0x17a50f=[];return _0xf44546[_0x155ed2(0x152)](function(_0x76cb32){var _0x4c3390=_0x155ed2;try{_0x1703fe['asArray'](_0x76cb32[_0x4c3390(0x136)]||[])[_0x4c3390(0x152)](_0x17a50f[_0x4c3390(0x131)]['bind'](_0x17a50f));}catch(_0x4631fc){console[_0x4c3390(0x102)]('Error\x20while\x20reading\x20CSS\x20rules\x20from\x20'+_0x76cb32['href'],_0x4631fc[_0x4c3390(0x12e)]());}}),_0x17a50f;}function _0x368913(_0x198646){return{'resolve':function _0x49972d(){var _0x107705=a6_0x45e7,_0x372b9d=(_0x198646[_0x107705(0xf9)]||{})[_0x107705(0x12a)];return _0x31a22e[_0x107705(0x16f)](_0x198646[_0x107705(0x116)],_0x372b9d);},'src':function(){var _0x54ed1e=a6_0x45e7;return _0x198646[_0x54ed1e(0x10c)][_0x54ed1e(0x10f)](_0x54ed1e(0x10d));}};}}}function _0x6e65a7(){return{'inlineAll':_0x5df0a2,'impl':{'newImage':_0x251f97}};function _0x251f97(_0x3cf688){return{'inline':_0x1b7ed9};function _0x1b7ed9(_0x570f17){var _0x2a4ddf=a6_0x45e7;if(_0x1703fe[_0x2a4ddf(0x10b)](_0x3cf688[_0x2a4ddf(0x10d)]))return Promise[_0x2a4ddf(0x15e)]();return Promise[_0x2a4ddf(0x15e)](_0x3cf688['src'])[_0x2a4ddf(0x108)](_0x570f17||_0x1703fe[_0x2a4ddf(0x14d)])['then'](function(_0x2ef91d){var _0xc707e7=_0x2a4ddf;return _0x1703fe[_0xc707e7(0x16e)](_0x2ef91d,_0x1703fe['mimeType'](_0x3cf688[_0xc707e7(0x10d)]));})[_0x2a4ddf(0x108)](function(_0x5e0067){return new Promise(function(_0x180e7c,_0x19d091){var _0x2fc138=a6_0x45e7;_0x3cf688[_0x2fc138(0x149)]=_0x180e7c,_0x3cf688[_0x2fc138(0x10a)]=_0x19d091,_0x3cf688['src']=_0x5e0067;});});}}function _0x5df0a2(_0x5410b1){var _0x17383d=a6_0x45e7;if(!(_0x5410b1 instanceof Element))return Promise[_0x17383d(0x15e)](_0x5410b1);return _0xfb47f9(_0x5410b1)[_0x17383d(0x108)](function(){var _0x299548=_0x17383d;if(_0x5410b1 instanceof HTMLImageElement)return _0x251f97(_0x5410b1)[_0x299548(0x169)]();else return Promise[_0x299548(0x168)](_0x1703fe['asArray'](_0x5410b1[_0x299548(0x15b)])[_0x299548(0x134)](function(_0x524d8c){return _0x5df0a2(_0x524d8c);}));});function _0xfb47f9(_0x445388){var _0xa1b780=_0x17383d,_0x1d3c68=_0x445388[_0xa1b780(0x10c)][_0xa1b780(0x10f)](_0xa1b780(0x122));if(!_0x1d3c68)return Promise['resolve'](_0x445388);return _0x31a22e['inlineAll'](_0x1d3c68)[_0xa1b780(0x108)](function(_0x553659){var _0x168cd3=_0xa1b780;_0x445388[_0x168cd3(0x10c)]['setProperty'](_0x168cd3(0x122),_0x553659,_0x445388[_0x168cd3(0x10c)][_0x168cd3(0x130)](_0x168cd3(0x122)));})[_0xa1b780(0x108)](function(){return _0x445388;});}}}}(this));function a6_0x3e1d(){var _0x46414f=['createTextNode','getAndEncode','fillStyle','test','23940EnsEXa','application/vnd.ms-fontobject','forEach','1140183ZQwGXU','replace','filter','exec','undefined','responseType','ms\x20occured\x20while\x20fetching\x20resource:\x20','getAttribute','childNodes','image/gif','cannot\x20fetch\x20resource:\x20','resolve','fillRect','GET','toLowerCase','<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20width=\x22','className','%23','uid','width','getContext','all','inline','xmlns','getComputedStyle','height','quality','dataAsUrl','inlineAll','drawImage','data','image/svg+xml',':before','type','border-top-width',',\x20status:\x20','innerHTML','value','canvas','impl','timeout','pow','48jmnTZc','276353QBFpLF','57WjwgyU','error','\x20!important','http://www.w3.org/1999/xhtml','parentStyleSheet','keys','toDataURL','361031mkpGkp','search',')([\x27\x22]?\x5c))','8xigeYM','canvasToBlob','cloneNode','log','content','setAttribute','shouldProcess','bgcolor','10gUarmY','then','\x5c$1','onerror','isDataUrl','style','src','random','getPropertyValue','readyState','image/png','data:image/svg+xml;charset=utf-8,','data:','4798SNpQpp','onreadystatechange','cssText','http://www.w3.org/2000/svg','send','%0A','toBlob','makeImage','8oBGRfC','split','cacheBust','createElement','resolveUrl','serializeToString','background','</foreignObject>','ontimeout','readAsDataURL','appendChild','imagePlaceholder','scrollWidth','resolveAll','href','base','mimeType',':after','toString','0000','getPropertyPriority','push','324305DaWjpZ','image/jpeg','map','image/tiff','cssRules','<foreignObject\x20x=\x220\x22\x20y=\x220\x22\x20width=\x22100%\x22\x20height=\x22100%\x22>','setProperty','head','length','delay','scrollHeight','domtoimage','status','2888291ZEplzi','body','options','open','charCodeAt','exports','FONT_FACE_RULE','createHTMLDocument','asArray','\x20content:\x20','onload','timeout\x20of\x20','result'];a6_0x3e1d=function(){return _0x46414f;};return a6_0x3e1d();}
+(function (global) {
+    'use strict';
+
+    var util = newUtil();
+    var inliner = newInliner();
+    var fontFaces = newFontFaces();
+    var images = newImages();
+
+    // Default impl options
+    var defaultOptions = {
+        // Default is to fail on error, no placeholder
+        imagePlaceholder: undefined,
+        // Default cache bust is false, it will use the cache
+        cacheBust: false
+    };
+
+    var domtoimage = {
+        toSvg: toSvg,
+        toPng: toPng,
+        toJpeg: toJpeg,
+        toBlob: toBlob,
+        toPixelData: toPixelData,
+        impl: {
+            fontFaces: fontFaces,
+            images: images,
+            util: util,
+            inliner: inliner,
+            options: {}
+        }
+    };
+
+    if (typeof module !== 'undefined')
+        module.exports = domtoimage;
+    else
+        global.domtoimage = domtoimage;
+
+
+    /**
+     * @param {Node} node - The DOM Node object to render
+     * @param {Object} options - Rendering options
+     * @param {Function} options.filter - Should return true if passed node should be included in the output
+     *          (excluding node means excluding it's children as well). Not called on the root node.
+     * @param {String} options.bgcolor - color for the background, any valid CSS color value.
+     * @param {Number} options.width - width to be applied to node before rendering.
+     * @param {Number} options.height - height to be applied to node before rendering.
+     * @param {Object} options.style - an object whose properties to be copied to node's style before rendering.
+     * @param {Number} options.quality - a Number between 0 and 1 indicating image quality (applicable to JPEG only),
+                defaults to 1.0.
+     * @param {String} options.imagePlaceholder - dataURL to use as a placeholder for failed images, default behaviour is to fail fast on images we can't fetch
+     * @param {Boolean} options.cacheBust - set to true to cache bust by appending the time to the request url
+     * @return {Promise} - A promise that is fulfilled with a SVG image data URL
+     * */
+    function toSvg(node, options) {
+        options = options || {};
+        copyOptions(options);
+        return Promise.resolve(node)
+            .then(function (node) {
+                return cloneNode(node, options.filter, true);
+            })
+            .then(embedFonts)
+            .then(inlineImages)
+            .then(applyOptions)
+            .then(function (clone) {
+                return makeSvgDataUri(clone,
+                    options.width || util.width(node),
+                    options.height || util.height(node)
+                );
+            });
+
+        function applyOptions(clone) {
+            if (options.bgcolor) clone.style.backgroundColor = options.bgcolor;
+
+            if (options.width) clone.style.width = options.width + 'px';
+            if (options.height) clone.style.height = options.height + 'px';
+
+            if (options.style)
+                Object.keys(options.style).forEach(function (property) {
+                    clone.style[property] = options.style[property];
+                });
+
+            return clone;
+        }
+    }
+
+    /**
+     * @param {Node} node - The DOM Node object to render
+     * @param {Object} options - Rendering options, @see {@link toSvg}
+     * @return {Promise} - A promise that is fulfilled with a Uint8Array containing RGBA pixel data.
+     * */
+    function toPixelData(node, options) {
+        return draw(node, options || {})
+            .then(function (canvas) {
+                return canvas.getContext('2d').getImageData(
+                    0,
+                    0,
+                    util.width(node),
+                    util.height(node)
+                ).data;
+            });
+    }
+
+    /**
+     * @param {Node} node - The DOM Node object to render
+     * @param {Object} options - Rendering options, @see {@link toSvg}
+     * @return {Promise} - A promise that is fulfilled with a PNG image data URL
+     * */
+    function toPng(node, options) {
+        return draw(node, options || {})
+            .then(function (canvas) {
+                return canvas.toDataURL();
+            });
+    }
+
+    /**
+     * @param {Node} node - The DOM Node object to render
+     * @param {Object} options - Rendering options, @see {@link toSvg}
+     * @return {Promise} - A promise that is fulfilled with a JPEG image data URL
+     * */
+    function toJpeg(node, options) {
+        options = options || {};
+        return draw(node, options)
+            .then(function (canvas) {
+                return canvas.toDataURL('image/jpeg', options.quality || 1.0);
+            });
+    }
+
+    /**
+     * @param {Node} node - The DOM Node object to render
+     * @param {Object} options - Rendering options, @see {@link toSvg}
+     * @return {Promise} - A promise that is fulfilled with a PNG image blob
+     * */
+    function toBlob(node, options) {
+        return draw(node, options || {})
+            .then(util.canvasToBlob);
+    }
+
+    function copyOptions(options) {
+        // Copy options to impl options for use in impl
+        if(typeof(options.imagePlaceholder) === 'undefined') {
+            domtoimage.impl.options.imagePlaceholder = defaultOptions.imagePlaceholder;
+        } else {
+            domtoimage.impl.options.imagePlaceholder = options.imagePlaceholder;
+        }
+
+        if(typeof(options.cacheBust) === 'undefined') {
+            domtoimage.impl.options.cacheBust = defaultOptions.cacheBust;
+        } else {
+            domtoimage.impl.options.cacheBust = options.cacheBust;
+        }
+    }
+
+    function draw(domNode, options) {
+        return toSvg(domNode, options)
+            .then(util.makeImage)
+            .then(util.delay(100))
+            .then(function (image) {
+                var canvas = newCanvas(domNode);
+                canvas.getContext('2d').drawImage(image, 0, 0);
+                return canvas;
+            });
+
+        function newCanvas(domNode) {
+            var canvas = document.createElement('canvas');
+            canvas.width = options.width || util.width(domNode);
+            canvas.height = options.height || util.height(domNode);
+
+            if (options.bgcolor) {
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle = options.bgcolor;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+
+            return canvas;
+        }
+    }
+
+    function cloneNode(node, filter, root) {
+        if (!root && filter && !filter(node)) return Promise.resolve();
+
+        return Promise.resolve(node)
+            .then(makeNodeCopy)
+            .then(function (clone) {
+                return cloneChildren(node, clone, filter);
+            })
+            .then(function (clone) {
+                return processClone(node, clone);
+            });
+
+        function makeNodeCopy(node) {
+            if (node instanceof HTMLCanvasElement) return util.makeImage(node.toDataURL());
+            return node.cloneNode(false);
+        }
+
+        function cloneChildren(original, clone, filter) {
+            var children = original.childNodes;
+            if (children.length === 0) return Promise.resolve(clone);
+
+            return cloneChildrenInOrder(clone, util.asArray(children), filter)
+                .then(function () {
+                    return clone;
+                });
+
+            function cloneChildrenInOrder(parent, children, filter) {
+                var done = Promise.resolve();
+                children.forEach(function (child) {
+                    done = done
+                        .then(function () {
+                            return cloneNode(child, filter);
+                        })
+                        .then(function (childClone) {
+                            if (childClone) parent.appendChild(childClone);
+                        });
+                });
+                return done;
+            }
+        }
+
+        function processClone(original, clone) {
+            if (!(clone instanceof Element)) return clone;
+
+            return Promise.resolve()
+                .then(cloneStyle)
+                .then(clonePseudoElements)
+                .then(copyUserInput)
+                .then(fixSvg)
+                .then(function () {
+                    return clone;
+                });
+
+            function cloneStyle() {
+                copyStyle(window.getComputedStyle(original), clone.style);
+
+                function copyStyle(source, target) {
+                    if (source.cssText) target.cssText = source.cssText;
+                    else copyProperties(source, target);
+
+                    function copyProperties(source, target) {
+                        util.asArray(source).forEach(function (name) {
+                            target.setProperty(
+                                name,
+                                source.getPropertyValue(name),
+                                source.getPropertyPriority(name)
+                            );
+                        });
+                    }
+                }
+            }
+
+            function clonePseudoElements() {
+                [':before', ':after'].forEach(function (element) {
+                    clonePseudoElement(element);
+                });
+
+                function clonePseudoElement(element) {
+                    var style = window.getComputedStyle(original, element);
+                    var content = style.getPropertyValue('content');
+
+                    if (content === '' || content === 'none') return;
+
+                    var className = util.uid();
+                    clone.className = clone.className + ' ' + className;
+                    var styleElement = document.createElement('style');
+                    styleElement.appendChild(formatPseudoElementStyle(className, element, style));
+                    clone.appendChild(styleElement);
+
+                    function formatPseudoElementStyle(className, element, style) {
+                        var selector = '.' + className + ':' + element;
+                        var cssText = style.cssText ? formatCssText(style) : formatCssProperties(style);
+                        return document.createTextNode(selector + '{' + cssText + '}');
+
+                        function formatCssText(style) {
+                            var content = style.getPropertyValue('content');
+                            return style.cssText + ' content: ' + content + ';';
+                        }
+
+                        function formatCssProperties(style) {
+
+                            return util.asArray(style)
+                                .map(formatProperty)
+                                .join('; ') + ';';
+
+                            function formatProperty(name) {
+                                return name + ': ' +
+                                    style.getPropertyValue(name) +
+                                    (style.getPropertyPriority(name) ? ' !important' : '');
+                            }
+                        }
+                    }
+                }
+            }
+
+            function copyUserInput() {
+                if (original instanceof HTMLTextAreaElement) clone.innerHTML = original.value;
+                if (original instanceof HTMLInputElement) clone.setAttribute("value", original.value);
+            }
+
+            function fixSvg() {
+                if (!(clone instanceof SVGElement)) return;
+                clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+
+                if (!(clone instanceof SVGRectElement)) return;
+                ['width', 'height'].forEach(function (attribute) {
+                    var value = clone.getAttribute(attribute);
+                    if (!value) return;
+
+                    clone.style.setProperty(attribute, value);
+                });
+            }
+        }
+    }
+
+    function embedFonts(node) {
+        return fontFaces.resolveAll()
+            .then(function (cssText) {
+                var styleNode = document.createElement('style');
+                node.appendChild(styleNode);
+                styleNode.appendChild(document.createTextNode(cssText));
+                return node;
+            });
+    }
+
+    function inlineImages(node) {
+        return images.inlineAll(node)
+            .then(function () {
+                return node;
+            });
+    }
+
+    function makeSvgDataUri(node, width, height) {
+        return Promise.resolve(node)
+            .then(function (node) {
+                node.setAttribute('xmlns', 'http://www.w3.org/1999/xhtml');
+                return new XMLSerializer().serializeToString(node);
+            })
+            .then(util.escapeXhtml)
+            .then(function (xhtml) {
+                return '<foreignObject x="0" y="0" width="100%" height="100%">' + xhtml + '</foreignObject>';
+            })
+            .then(function (foreignObject) {
+                return '<svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '">' +
+                    foreignObject + '</svg>';
+            })
+            .then(function (svg) {
+                return 'data:image/svg+xml;charset=utf-8,' + svg;
+            });
+    }
+
+    function newUtil() {
+        return {
+            escape: escape,
+            parseExtension: parseExtension,
+            mimeType: mimeType,
+            dataAsUrl: dataAsUrl,
+            isDataUrl: isDataUrl,
+            canvasToBlob: canvasToBlob,
+            resolveUrl: resolveUrl,
+            getAndEncode: getAndEncode,
+            uid: uid(),
+            delay: delay,
+            asArray: asArray,
+            escapeXhtml: escapeXhtml,
+            makeImage: makeImage,
+            width: width,
+            height: height
+        };
+
+        function mimes() {
+            /*
+             * Only WOFF and EOT mime types for fonts are 'real'
+             * see http://www.iana.org/assignments/media-types/media-types.xhtml
+             */
+            var WOFF = 'application/font-woff';
+            var JPEG = 'image/jpeg';
+
+            return {
+                'woff': WOFF,
+                'woff2': WOFF,
+                'ttf': 'application/font-truetype',
+                'eot': 'application/vnd.ms-fontobject',
+                'png': 'image/png',
+                'jpg': JPEG,
+                'jpeg': JPEG,
+                'gif': 'image/gif',
+                'tiff': 'image/tiff',
+                'svg': 'image/svg+xml'
+            };
+        }
+
+        function parseExtension(url) {
+            var match = /\.([^\.\/]*?)$/g.exec(url);
+            if (match) return match[1];
+            else return '';
+        }
+
+        function mimeType(url) {
+            var extension = parseExtension(url).toLowerCase();
+            return mimes()[extension] || '';
+        }
+
+        function isDataUrl(url) {
+            return url.search(/^(data:)/) !== -1;
+        }
+
+        function toBlob(canvas) {
+            return new Promise(function (resolve) {
+                var binaryString = window.atob(canvas.toDataURL().split(',')[1]);
+                var length = binaryString.length;
+                var binaryArray = new Uint8Array(length);
+
+                for (var i = 0; i < length; i++)
+                    binaryArray[i] = binaryString.charCodeAt(i);
+
+                resolve(new Blob([binaryArray], {
+                    type: 'image/png'
+                }));
+            });
+        }
+
+        function canvasToBlob(canvas) {
+            if (canvas.toBlob)
+                return new Promise(function (resolve) {
+                    canvas.toBlob(resolve);
+                });
+
+            return toBlob(canvas);
+        }
+
+        function resolveUrl(url, baseUrl) {
+            var doc = document.implementation.createHTMLDocument();
+            var base = doc.createElement('base');
+            doc.head.appendChild(base);
+            var a = doc.createElement('a');
+            doc.body.appendChild(a);
+            base.href = baseUrl;
+            a.href = url;
+            return a.href;
+        }
+
+        function uid() {
+            var index = 0;
+
+            return function () {
+                return 'u' + fourRandomChars() + index++;
+
+                function fourRandomChars() {
+                    /* see http://stackoverflow.com/a/6248722/2519373 */
+                    return ('0000' + (Math.random() * Math.pow(36, 4) << 0).toString(36)).slice(-4);
+                }
+            };
+        }
+
+        function makeImage(uri) {
+            return new Promise(function (resolve, reject) {
+                var image = new Image();
+                image.onload = function () {
+                    resolve(image);
+                };
+                image.onerror = reject;
+                image.src = uri;
+            });
+        }
+
+        function getAndEncode(url) {
+            var TIMEOUT = 30000;
+            if(domtoimage.impl.options.cacheBust) {
+                // Cache bypass so we dont have CORS issues with cached images
+                // Source: https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#Bypassing_the_cache
+                url += ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime();
+            }
+
+            return new Promise(function (resolve) {
+                var request = new XMLHttpRequest();
+
+                request.onreadystatechange = done;
+                request.ontimeout = timeout;
+                request.responseType = 'blob';
+                request.timeout = TIMEOUT;
+                request.open('GET', url, true);
+                request.send();
+
+                var placeholder;
+                if(domtoimage.impl.options.imagePlaceholder) {
+                    var split = domtoimage.impl.options.imagePlaceholder.split(/,/);
+                    if(split && split[1]) {
+                        placeholder = split[1];
+                    }
+                }
+
+                function done() {
+                    if (request.readyState !== 4) return;
+
+                    if (request.status !== 200) {
+                        if(placeholder) {
+                            resolve(placeholder);
+                        } else {
+                            fail('cannot fetch resource: ' + url + ', status: ' + request.status);
+                        }
+
+                        return;
+                    }
+
+                    var encoder = new FileReader();
+                    encoder.onloadend = function () {
+                        var content = encoder.result.split(/,/)[1];
+                        resolve(content);
+                    };
+                    encoder.readAsDataURL(request.response);
+                }
+
+                function timeout() {
+                    if(placeholder) {
+                        resolve(placeholder);
+                    } else {
+                        fail('timeout of ' + TIMEOUT + 'ms occured while fetching resource: ' + url);
+                    }
+                }
+
+                function fail(message) {
+                    console.error(message);
+                    resolve('');
+                }
+            });
+        }
+
+        function dataAsUrl(content, type) {
+            return 'data:' + type + ';base64,' + content;
+        }
+
+        function escape(string) {
+            return string.replace(/([.*+?^${}()|\[\]\/\\])/g, '\\$1');
+        }
+
+        function delay(ms) {
+            return function (arg) {
+                return new Promise(function (resolve) {
+                    setTimeout(function () {
+                        resolve(arg);
+                    }, ms);
+                });
+            };
+        }
+
+        function asArray(arrayLike) {
+            var array = [];
+            var length = arrayLike.length;
+            for (var i = 0; i < length; i++) array.push(arrayLike[i]);
+            return array;
+        }
+
+        function escapeXhtml(string) {
+            return string.replace(/#/g, '%23').replace(/\n/g, '%0A');
+        }
+
+        function width(node) {
+            var leftBorder = px(node, 'border-left-width');
+            var rightBorder = px(node, 'border-right-width');
+            return node.scrollWidth + leftBorder + rightBorder;
+        }
+
+        function height(node) {
+            var topBorder = px(node, 'border-top-width');
+            var bottomBorder = px(node, 'border-bottom-width');
+            return node.scrollHeight + topBorder + bottomBorder;
+        }
+
+        function px(node, styleProperty) {
+            var value = window.getComputedStyle(node).getPropertyValue(styleProperty);
+            return parseFloat(value.replace('px', ''));
+        }
+    }
+
+    function newInliner() {
+        var URL_REGEX = /url\(['"]?([^'"]+?)['"]?\)/g;
+
+        return {
+            inlineAll: inlineAll,
+            shouldProcess: shouldProcess,
+            impl: {
+                readUrls: readUrls,
+                inline: inline
+            }
+        };
+
+        function shouldProcess(string) {
+            return string.search(URL_REGEX) !== -1;
+        }
+
+        function readUrls(string) {
+            var result = [];
+            var match;
+            while ((match = URL_REGEX.exec(string)) !== null) {
+                result.push(match[1]);
+            }
+            return result.filter(function (url) {
+                return !util.isDataUrl(url);
+            });
+        }
+
+        function inline(string, url, baseUrl, get) {
+            return Promise.resolve(url)
+                .then(function (url) {
+                    return baseUrl ? util.resolveUrl(url, baseUrl) : url;
+                })
+                .then(get || util.getAndEncode)
+                .then(function (data) {
+                    return util.dataAsUrl(data, util.mimeType(url));
+                })
+                .then(function (dataUrl) {
+                    return string.replace(urlAsRegex(url), '$1' + dataUrl + '$3');
+                });
+
+            function urlAsRegex(url) {
+                return new RegExp('(url\\([\'"]?)(' + util.escape(url) + ')([\'"]?\\))', 'g');
+            }
+        }
+
+        function inlineAll(string, baseUrl, get) {
+            if (nothingToInline()) return Promise.resolve(string);
+
+            return Promise.resolve(string)
+                .then(readUrls)
+                .then(function (urls) {
+                    var done = Promise.resolve(string);
+                    urls.forEach(function (url) {
+                        done = done.then(function (string) {
+                            return inline(string, url, baseUrl, get);
+                        });
+                    });
+                    return done;
+                });
+
+            function nothingToInline() {
+                return !shouldProcess(string);
+            }
+        }
+    }
+
+    function newFontFaces() {
+        return {
+            resolveAll: resolveAll,
+            impl: {
+                readAll: readAll
+            }
+        };
+
+        function resolveAll() {
+            return readAll(document)
+                .then(function (webFonts) {
+                    return Promise.all(
+                        webFonts.map(function (webFont) {
+                            return webFont.resolve();
+                        })
+                    );
+                })
+                .then(function (cssStrings) {
+                    return cssStrings.join('\n');
+                });
+        }
+
+        function readAll() {
+            return Promise.resolve(util.asArray(document.styleSheets))
+                .then(getCssRules)
+                .then(selectWebFontRules)
+                .then(function (rules) {
+                    return rules.map(newWebFont);
+                });
+
+            function selectWebFontRules(cssRules) {
+                return cssRules
+                    .filter(function (rule) {
+                        return rule.type === CSSRule.FONT_FACE_RULE;
+                    })
+                    .filter(function (rule) {
+                        return inliner.shouldProcess(rule.style.getPropertyValue('src'));
+                    });
+            }
+
+            function getCssRules(styleSheets) {
+                var cssRules = [];
+                styleSheets.forEach(function (sheet) {
+                    try {
+                        util.asArray(sheet.cssRules || []).forEach(cssRules.push.bind(cssRules));
+                    } catch (e) {
+                        console.log('Error while reading CSS rules from ' + sheet.href, e.toString());
+                    }
+                });
+                return cssRules;
+            }
+
+            function newWebFont(webFontRule) {
+                return {
+                    resolve: function resolve() {
+                        var baseUrl = (webFontRule.parentStyleSheet || {}).href;
+                        return inliner.inlineAll(webFontRule.cssText, baseUrl);
+                    },
+                    src: function () {
+                        return webFontRule.style.getPropertyValue('src');
+                    }
+                };
+            }
+        }
+    }
+
+    function newImages() {
+        return {
+            inlineAll: inlineAll,
+            impl: {
+                newImage: newImage
+            }
+        };
+
+        function newImage(element) {
+            return {
+                inline: inline
+            };
+
+            function inline(get) {
+                if (util.isDataUrl(element.src)) return Promise.resolve();
+
+                return Promise.resolve(element.src)
+                    .then(get || util.getAndEncode)
+                    .then(function (data) {
+                        return util.dataAsUrl(data, util.mimeType(element.src));
+                    })
+                    .then(function (dataUrl) {
+                        return new Promise(function (resolve, reject) {
+                            element.onload = resolve;
+                            element.onerror = reject;
+                            element.src = dataUrl;
+                        });
+                    });
+            }
+        }
+
+        function inlineAll(node) {
+            if (!(node instanceof Element)) return Promise.resolve(node);
+
+            return inlineBackground(node)
+                .then(function () {
+                    if (node instanceof HTMLImageElement)
+                        return newImage(node).inline();
+                    else
+                        return Promise.all(
+                            util.asArray(node.childNodes).map(function (child) {
+                                return inlineAll(child);
+                            })
+                        );
+                });
+
+            function inlineBackground(node) {
+                var background = node.style.getPropertyValue('background');
+
+                if (!background) return Promise.resolve(node);
+
+                return inliner.inlineAll(background)
+                    .then(function (inlined) {
+                        node.style.setProperty(
+                            'background',
+                            inlined,
+                            node.style.getPropertyPriority('background')
+                        );
+                    })
+                    .then(function () {
+                        return node;
+                    });
+            }
+        }
+    }
+})(this);

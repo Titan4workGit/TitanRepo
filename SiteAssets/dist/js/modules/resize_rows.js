@@ -1,1 +1,98 @@
-function a50_0x33bd(_0x20a95c,_0x409ddc){var _0x2e3518=a50_0x2e35();return a50_0x33bd=function(_0x33bd36,_0x557f17){_0x33bd36=_0x33bd36-0x164;var _0x3c6a77=_0x2e3518[_0x33bd36];return _0x3c6a77;},a50_0x33bd(_0x20a95c,_0x409ddc);}var a50_0x3fd8a1=a50_0x33bd;(function(_0x282543,_0x32b644){var _0x25c6bb=a50_0x33bd,_0x43703a=_0x282543();while(!![]){try{var _0x38ee2a=parseInt(_0x25c6bb(0x177))/0x1*(parseInt(_0x25c6bb(0x169))/0x2)+-parseInt(_0x25c6bb(0x165))/0x3+-parseInt(_0x25c6bb(0x182))/0x4*(parseInt(_0x25c6bb(0x16c))/0x5)+parseInt(_0x25c6bb(0x176))/0x6*(parseInt(_0x25c6bb(0x17e))/0x7)+parseInt(_0x25c6bb(0x193))/0x8+parseInt(_0x25c6bb(0x188))/0x9*(parseInt(_0x25c6bb(0x18b))/0xa)+-parseInt(_0x25c6bb(0x17d))/0xb*(parseInt(_0x25c6bb(0x167))/0xc);if(_0x38ee2a===_0x32b644)break;else _0x43703a['push'](_0x43703a['shift']());}catch(_0x46eace){_0x43703a['push'](_0x43703a['shift']());}}}(a50_0x2e35,0x464bf));function a50_0x2e35(){var _0x4dde9e=['touchstart','73552cSSZof','undefined','tabulator-row-resize-handle','5NlOoiU','options','touchmove','touches','startY','tabulator-row-resize-handle\x20prev','prevDisplayRow','body','prototype','getComponent','4422MDDIey','8crmtwt','handle','appendChild','_mouseDown','getHeight','mouseup','99bIftvA','385vdiZZs','screenY','className','startRow','559032mICeQI','tabulator-block-select','registerModule','startHeight','addEventListener','table','4534551BnJJbl','element','rowManager','10xmfCSN','mousemove','remove','touchend','rowResized','call','createElement','getElement','3479856rpBdWR','resizeRows','stopPropagation','classList','prevHandle','removeEventListener','setHeight','div','925875nmACTP','mousedown','716328IYIimL'];a50_0x2e35=function(){return _0x4dde9e;};return a50_0x2e35();}var ResizeRows=function ResizeRows(_0x4c0548){var _0x1358cd=a50_0x33bd;this[_0x1358cd(0x187)]=_0x4c0548,this['startColumn']=![],this[_0x1358cd(0x170)]=![],this[_0x1358cd(0x185)]=![],this[_0x1358cd(0x178)]=null,this[_0x1358cd(0x197)]=null;};ResizeRows['prototype']['initializeRow']=function(_0x4719fa){var _0xeff80=a50_0x33bd,_0x5af9dc=this,_0x44cc8d=_0x4719fa[_0xeff80(0x192)](),_0x147e91=document[_0xeff80(0x191)](_0xeff80(0x164));_0x147e91[_0xeff80(0x180)]=_0xeff80(0x16b);var _0x361462=document[_0xeff80(0x191)](_0xeff80(0x164));_0x361462['className']=_0xeff80(0x171),_0x147e91[_0xeff80(0x186)]('click',function(_0x392b61){var _0x2ab9e3=_0xeff80;_0x392b61[_0x2ab9e3(0x195)]();});var _0xbb4568=function _0x4e53ad(_0x3b2c27){var _0x49e87e=_0xeff80;_0x5af9dc[_0x49e87e(0x181)]=_0x4719fa,_0x5af9dc['_mouseDown'](_0x3b2c27,_0x4719fa,_0x147e91);};_0x147e91[_0xeff80(0x186)](_0xeff80(0x166),_0xbb4568),_0x147e91[_0xeff80(0x186)](_0xeff80(0x168),_0xbb4568,{'passive':!![]}),_0x361462[_0xeff80(0x186)]('click',function(_0x3b77df){var _0x30eb8c=_0xeff80;_0x3b77df[_0x30eb8c(0x195)]();});var _0x16e7fd=function _0xa29352(_0x2f5bb9){var _0x4d6e48=_0xeff80,_0x571ec5=_0x5af9dc[_0x4d6e48(0x187)][_0x4d6e48(0x18a)][_0x4d6e48(0x172)](_0x4719fa);_0x571ec5&&(_0x5af9dc[_0x4d6e48(0x181)]=_0x571ec5,_0x5af9dc['_mouseDown'](_0x2f5bb9,_0x571ec5,_0x361462));};_0x361462[_0xeff80(0x186)](_0xeff80(0x166),_0x16e7fd),_0x361462['addEventListener'](_0xeff80(0x168),_0x16e7fd,{'passive':!![]}),_0x44cc8d[_0xeff80(0x179)](_0x147e91),_0x44cc8d[_0xeff80(0x179)](_0x361462);},ResizeRows['prototype'][a50_0x3fd8a1(0x17a)]=function(_0x31060b,_0x596d13,_0x44b2fb){var _0x1c55d2=a50_0x3fd8a1,_0x54b087=this;_0x54b087[_0x1c55d2(0x187)][_0x1c55d2(0x189)][_0x1c55d2(0x196)]['add'](_0x1c55d2(0x183));function _0x530d35(_0x307989){var _0x4b48f4=_0x1c55d2;_0x596d13[_0x4b48f4(0x199)](_0x54b087['startHeight']+((typeof _0x307989[_0x4b48f4(0x17f)]===_0x4b48f4(0x16a)?_0x307989['touches'][0x0][_0x4b48f4(0x17f)]:_0x307989[_0x4b48f4(0x17f)])-_0x54b087[_0x4b48f4(0x170)]));}function _0x2b89a1(_0x44de43){var _0x11b869=_0x1c55d2;document['body']['removeEventListener'](_0x11b869(0x17c),_0x530d35),document[_0x11b869(0x173)][_0x11b869(0x198)](_0x11b869(0x18c),_0x530d35),_0x44b2fb[_0x11b869(0x198)](_0x11b869(0x16e),_0x530d35),_0x44b2fb[_0x11b869(0x198)](_0x11b869(0x18e),_0x2b89a1),_0x54b087[_0x11b869(0x187)][_0x11b869(0x189)]['classList'][_0x11b869(0x18d)](_0x11b869(0x183)),_0x54b087[_0x11b869(0x187)][_0x11b869(0x16d)][_0x11b869(0x18f)][_0x11b869(0x190)](this[_0x11b869(0x187)],_0x596d13[_0x11b869(0x175)]());}_0x31060b[_0x1c55d2(0x195)](),_0x54b087[_0x1c55d2(0x170)]=typeof _0x31060b[_0x1c55d2(0x17f)]===_0x1c55d2(0x16a)?_0x31060b[_0x1c55d2(0x16f)][0x0][_0x1c55d2(0x17f)]:_0x31060b[_0x1c55d2(0x17f)],_0x54b087[_0x1c55d2(0x185)]=_0x596d13[_0x1c55d2(0x17b)](),document[_0x1c55d2(0x173)][_0x1c55d2(0x186)](_0x1c55d2(0x18c),_0x530d35),document[_0x1c55d2(0x173)][_0x1c55d2(0x186)](_0x1c55d2(0x17c),_0x2b89a1),_0x44b2fb['addEventListener'](_0x1c55d2(0x16e),_0x530d35,{'passive':!![]}),_0x44b2fb[_0x1c55d2(0x186)]('touchend',_0x2b89a1);},Tabulator[a50_0x3fd8a1(0x174)][a50_0x3fd8a1(0x184)](a50_0x3fd8a1(0x194),ResizeRows);
+/* Tabulator v4.5.3 (c) Oliver Folkerd */
+
+var ResizeRows = function ResizeRows(table) {
+	this.table = table; //hold Tabulator object
+	this.startColumn = false;
+	this.startY = false;
+	this.startHeight = false;
+	this.handle = null;
+	this.prevHandle = null;
+};
+
+ResizeRows.prototype.initializeRow = function (row) {
+	var self = this,
+	    rowEl = row.getElement();
+
+	var handle = document.createElement('div');
+	handle.className = "tabulator-row-resize-handle";
+
+	var prevHandle = document.createElement('div');
+	prevHandle.className = "tabulator-row-resize-handle prev";
+
+	handle.addEventListener("click", function (e) {
+		e.stopPropagation();
+	});
+
+	var handleDown = function handleDown(e) {
+		self.startRow = row;
+		self._mouseDown(e, row, handle);
+	};
+
+	handle.addEventListener("mousedown", handleDown);
+	handle.addEventListener("touchstart", handleDown, { passive: true });
+
+	prevHandle.addEventListener("click", function (e) {
+		e.stopPropagation();
+	});
+
+	var prevHandleDown = function prevHandleDown(e) {
+		var prevRow = self.table.rowManager.prevDisplayRow(row);
+
+		if (prevRow) {
+			self.startRow = prevRow;
+			self._mouseDown(e, prevRow, prevHandle);
+		}
+	};
+
+	prevHandle.addEventListener("mousedown", prevHandleDown);
+	prevHandle.addEventListener("touchstart", prevHandleDown, { passive: true });
+
+	rowEl.appendChild(handle);
+	rowEl.appendChild(prevHandle);
+};
+
+ResizeRows.prototype._mouseDown = function (e, row, handle) {
+	var self = this;
+
+	self.table.element.classList.add("tabulator-block-select");
+
+	function mouseMove(e) {
+		row.setHeight(self.startHeight + ((typeof e.screenY === "undefined" ? e.touches[0].screenY : e.screenY) - self.startY));
+	}
+
+	function mouseUp(e) {
+
+		// //block editor from taking action while resizing is taking place
+		// if(self.startColumn.modules.edit){
+		// 	self.startColumn.modules.edit.blocked = false;
+		// }
+
+		document.body.removeEventListener("mouseup", mouseMove);
+		document.body.removeEventListener("mousemove", mouseMove);
+
+		handle.removeEventListener("touchmove", mouseMove);
+		handle.removeEventListener("touchend", mouseUp);
+
+		self.table.element.classList.remove("tabulator-block-select");
+
+		self.table.options.rowResized.call(this.table, row.getComponent());
+	}
+
+	e.stopPropagation(); //prevent resize from interfereing with movable columns
+
+	//block editor from taking action while resizing is taking place
+	// if(self.startColumn.modules.edit){
+	// 	self.startColumn.modules.edit.blocked = true;
+	// }
+
+	self.startY = typeof e.screenY === "undefined" ? e.touches[0].screenY : e.screenY;
+	self.startHeight = row.getHeight();
+
+	document.body.addEventListener("mousemove", mouseMove);
+	document.body.addEventListener("mouseup", mouseUp);
+
+	handle.addEventListener("touchmove", mouseMove, { passive: true });
+	handle.addEventListener("touchend", mouseUp);
+};
+
+Tabulator.prototype.registerModule("resizeRows", ResizeRows);

@@ -1,1 +1,312 @@
-'use strict';const a2_0xefd523=a2_0x3271;(function(_0x4315b4,_0x17ea41){const _0x4b28b5=a2_0x3271,_0xecfe8=_0x4315b4();while(!![]){try{const _0x3ffc48=-parseInt(_0x4b28b5(0x123))/0x1*(parseInt(_0x4b28b5(0x110))/0x2)+parseInt(_0x4b28b5(0x101))/0x3+-parseInt(_0x4b28b5(0x13e))/0x4*(parseInt(_0x4b28b5(0x112))/0x5)+parseInt(_0x4b28b5(0x116))/0x6*(-parseInt(_0x4b28b5(0x108))/0x7)+-parseInt(_0x4b28b5(0x139))/0x8+-parseInt(_0x4b28b5(0x10f))/0x9+-parseInt(_0x4b28b5(0x132))/0xa*(-parseInt(_0x4b28b5(0x117))/0xb);if(_0x3ffc48===_0x17ea41)break;else _0xecfe8['push'](_0xecfe8['shift']());}catch(_0x470757){_0xecfe8['push'](_0xecfe8['shift']());}}}(a2_0xf902,0x22604));function a2_0xf902(){const _0x560f64=['tbody\x20tr\x20#bEdit','_rowDelete','data-status','show','table','3092zToTEV','Actions','_rowAccept','</tr>','attr','onclick','_addOnClickEventsToActions','tbody','_modifyEachColumn','td[name=\x22bstable-actions\x22]','onDelete','#bDel','tbody\x20tr','_rowEdit','tbody\x20tr\x20#bDel','10cZovio','<input\x20class=\x22form-control\x20input-sm\x22\x20\x20data-original-value=\x22','length','clone','<tr>','click','name','145272rBFtpO','#bCanc','$addButton','actionsColumnHTML','thead\x20tr','92252bEpYOT','each','advanced','#bEdit','_actionsModeNormal','extend','</td>','<td\x20name=\x22bstable-actions\x22>','hide','remove','log','</th>','refresh','columnLabel','init','_rowCancel','onBeforeDelete','141717wuQJDT','tr:last','<th\x20name=\x22bstable-actions\x22>','<div\x20class=\x22btn-group\x20pull-right\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bEdit\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-edit\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bDel\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-trash\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bAcep\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-check-circle\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22bCanc\x22\x20type=\x22button\x22\x20class=\x22btn\x20btn-sm\x20btn-default\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fa\x20fa-times-circle\x22\x20>\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','editing','destroy','tbody\x20tr\x20#bAcep','338891PpTcZT','split','currentlyEditingRow','parent','_actionAddRow','append','editableColumns','989505XTHJIg','124wnoQyt','find','35DtIDCF','input','buttonHTML','html','18APEyXI','7920583JidkER','options','<div\x20style=\x22display:\x20none;\x22>','<td></td>','#bAcep','bstable-actions','parents'];a2_0xf902=function(){return _0x560f64;};return a2_0xf902();}function a2_0x3271(_0x550877,_0x2ded29){const _0xf90234=a2_0xf902();return a2_0x3271=function(_0x32717d,_0x368d81){_0x32717d=_0x32717d-0xfd;let _0x2e205c=_0xf90234[_0x32717d];return _0x2e205c;},a2_0x3271(_0x550877,_0x2ded29);}class BSTable{constructor(_0xa40c7d,_0x259b92){const _0x260eb5=a2_0x3271;var _0x294992={'editableColumns':null,'$addButton':null,'onEdit':function(){},'onBeforeDelete':function(){},'onDelete':function(){},'onAdd':function(){},'advanced':{'columnLabel':_0x260eb5(0x124),'buttonHTML':_0x260eb5(0x104)}};this[_0x260eb5(0x122)]=$('#'+_0xa40c7d),this[_0x260eb5(0x118)]=$[_0x260eb5(0x143)](!![],_0x294992,_0x259b92),this[_0x260eb5(0x13c)]=_0x260eb5(0x145)+this[_0x260eb5(0x118)][_0x260eb5(0x140)][_0x260eb5(0x114)]+_0x260eb5(0x144),this[_0x260eb5(0x118)][_0x260eb5(0x10e)]!=null&&(this['options'][_0x260eb5(0x10e)]=this[_0x260eb5(0x118)][_0x260eb5(0x10e)][_0x260eb5(0x109)](','));}[a2_0xefd523(0xfe)](){const _0x54d2eb=a2_0xefd523;this[_0x54d2eb(0x122)][_0x54d2eb(0x111)](_0x54d2eb(0x13d))[_0x54d2eb(0x10d)](_0x54d2eb(0x103)+this[_0x54d2eb(0x118)][_0x54d2eb(0x140)][_0x54d2eb(0xfd)]+_0x54d2eb(0x149)),this[_0x54d2eb(0x122)][_0x54d2eb(0x111)](_0x54d2eb(0x12f))['append'](this[_0x54d2eb(0x13c)]),this[_0x54d2eb(0x129)]();if(this['options']['$addButton']!=null){let _0x562570=this;this['options'][_0x54d2eb(0x13b)][_0x54d2eb(0x137)](function(){const _0x28bac6=_0x54d2eb;_0x562570[_0x28bac6(0x10c)]();});}}[a2_0xefd523(0x106)](){const _0x26ea14=a2_0xefd523;this[_0x26ea14(0x122)]['find']('th[name=\x22bstable-actions\x22]')['remove'](),this[_0x26ea14(0x122)][_0x26ea14(0x111)](_0x26ea14(0x12c))['remove']();}[a2_0xefd523(0x14a)](){const _0x4015a0=a2_0xefd523;this['destroy'](),this[_0x4015a0(0xfe)]();}['currentlyEditingRow'](_0x20c644){const _0x26b858=a2_0xefd523;return _0x20c644[_0x26b858(0x127)](_0x26b858(0x120))==_0x26b858(0x105)?!![]:![];}['_actionsModeNormal'](_0x5001c5){const _0x46b0b2=a2_0xefd523;$(_0x5001c5)[_0x46b0b2(0x10b)]()['find'](_0x46b0b2(0x11b))[_0x46b0b2(0x146)](),$(_0x5001c5)[_0x46b0b2(0x10b)]()[_0x46b0b2(0x111)](_0x46b0b2(0x13a))['hide'](),$(_0x5001c5)[_0x46b0b2(0x10b)]()[_0x46b0b2(0x111)](_0x46b0b2(0x141))['show'](),$(_0x5001c5)['parent']()['find'](_0x46b0b2(0x12e))[_0x46b0b2(0x121)]();let _0x1858bc=$(_0x5001c5)[_0x46b0b2(0x11d)]('tr');_0x1858bc[_0x46b0b2(0x127)](_0x46b0b2(0x120),'');}['_actionsModeEdit'](_0x3c8f04){const _0x1a69f0=a2_0xefd523;$(_0x3c8f04)[_0x1a69f0(0x10b)]()[_0x1a69f0(0x111)](_0x1a69f0(0x11b))[_0x1a69f0(0x121)](),$(_0x3c8f04)['parent']()[_0x1a69f0(0x111)]('#bCanc')[_0x1a69f0(0x121)](),$(_0x3c8f04)[_0x1a69f0(0x10b)]()['find'](_0x1a69f0(0x141))['hide'](),$(_0x3c8f04)['parent']()['find'](_0x1a69f0(0x12e))['hide']();let _0x672192=$(_0x3c8f04)[_0x1a69f0(0x11d)]('tr');_0x672192[_0x1a69f0(0x127)](_0x1a69f0(0x120),'editing');}[a2_0xefd523(0x130)](_0x50e60b){const _0x1903a7=a2_0xefd523;let _0x543fdc=$(_0x50e60b)[_0x1903a7(0x11d)]('tr');console[_0x1903a7(0x148)](_0x543fdc);let _0x14125f=_0x543fdc[_0x1903a7(0x111)]('td');console['log'](_0x14125f);if(this[_0x1903a7(0x10a)](_0x543fdc))return;this['_modifyEachColumn'](this[_0x1903a7(0x118)][_0x1903a7(0x10e)],_0x14125f,function(_0x5ca115){const _0x25d789=_0x1903a7;let _0x44cbe5=_0x5ca115[_0x25d789(0x115)]();console[_0x25d789(0x148)](_0x44cbe5);let _0x4ec741=_0x25d789(0x119)+_0x44cbe5+'</div>',_0x251200=_0x25d789(0x133)+_0x44cbe5+'\x22\x20value=\x22'+_0x44cbe5+'\x22>';_0x5ca115[_0x25d789(0x115)](_0x4ec741+_0x251200);}),this['_actionsModeEdit'](_0x50e60b);}[a2_0xefd523(0x11f)](_0x85e104){const _0xc2cc93=a2_0xefd523;let _0x43cc87=$(_0x85e104)[_0xc2cc93(0x11d)]('tr');this['options'][_0xc2cc93(0x100)](_0x43cc87),_0x43cc87[_0xc2cc93(0x147)](),this['options'][_0xc2cc93(0x12d)]();}[a2_0xefd523(0x125)](_0x257a31){const _0x4b4844=a2_0xefd523;let _0x9ae8df=$(_0x257a31)[_0x4b4844(0x11d)]('tr');console[_0x4b4844(0x148)](_0x9ae8df);let _0x4827e0=_0x9ae8df['find']('td');if(!this['currentlyEditingRow'](_0x9ae8df))return;this['_modifyEachColumn'](this[_0x4b4844(0x118)][_0x4b4844(0x10e)],_0x4827e0,function(_0x4bce60){const _0x464793=_0x4b4844;let _0x124acc=_0x4bce60[_0x464793(0x111)](_0x464793(0x113))['val']();_0x4bce60[_0x464793(0x115)](_0x124acc);}),this[_0x4b4844(0x142)](_0x257a31),this[_0x4b4844(0x118)]['onEdit'](_0x9ae8df[0x0]);}[a2_0xefd523(0xff)](_0x39ac42){const _0x4fefb7=a2_0xefd523;let _0x17469c=$(_0x39ac42)[_0x4fefb7(0x11d)]('tr'),_0x29931e=_0x17469c[_0x4fefb7(0x111)]('td');if(!this[_0x4fefb7(0x10a)](_0x17469c))return;this['_modifyEachColumn'](this['options'][_0x4fefb7(0x10e)],_0x29931e,function(_0x2e99ac){const _0x305f89=_0x4fefb7;let _0x35a56a=_0x2e99ac[_0x305f89(0x111)]('div')[_0x305f89(0x115)]();_0x2e99ac['html'](_0x35a56a);}),this[_0x4fefb7(0x142)](_0x39ac42);}['_actionAddRow'](){const _0x30d0cc=a2_0xefd523;let _0x3eee97=this[_0x30d0cc(0x122)]['find']('tbody\x20tr');if(_0x3eee97[_0x30d0cc(0x134)]==0x0){let _0x301aeb=this['table']['find'](_0x30d0cc(0x13d)),_0x297a1e=_0x301aeb[_0x30d0cc(0x111)]('th'),_0x37ab00='';_0x297a1e[_0x30d0cc(0x13f)](function(){const _0x42077d=_0x30d0cc;let _0x472537=this;$(_0x472537)['attr']('name')==_0x42077d(0x11c)?_0x37ab00=_0x37ab00+actionsColumnHTML:_0x37ab00=_0x37ab00+_0x42077d(0x11a);}),this[_0x30d0cc(0x122)][_0x30d0cc(0x111)](_0x30d0cc(0x12a))['append'](_0x30d0cc(0x136)+_0x37ab00+_0x30d0cc(0x126));}else{let _0x28bb08=this['table'][_0x30d0cc(0x111)](_0x30d0cc(0x102));_0x28bb08[_0x30d0cc(0x135)]()['appendTo'](_0x28bb08[_0x30d0cc(0x10b)]()),_0x28bb08=this['table'][_0x30d0cc(0x111)](_0x30d0cc(0x102));let _0x5aa22c=_0x28bb08[_0x30d0cc(0x111)]('td');_0x5aa22c[_0x30d0cc(0x13f)](function(){const _0x50a110=_0x30d0cc;let _0x55e993=this;if($(_0x55e993)[_0x50a110(0x127)](_0x50a110(0x138))==_0x50a110(0x11c)){}else $(_0x55e993)[_0x50a110(0x115)]('');});}this['_addOnClickEventsToActions'](),this[_0x30d0cc(0x118)]['onAdd']();}[a2_0xefd523(0x12b)](_0x1a7e94,_0x58b6ea,_0x5432df){const _0x3c2419=a2_0xefd523;let _0x239b94=0x0;_0x58b6ea[_0x3c2419(0x13f)](function(){const _0x311456=_0x3c2419;_0x239b94++;if($(this)[_0x311456(0x127)](_0x311456(0x138))=='bstable-actions')return;if(!_0xa0d85e(_0x239b94-0x1))return;_0x5432df($(this));});function _0xa0d85e(_0x300f9a){const _0x1a07ac=_0x3c2419;if(_0x1a7e94==null)return!![];else{for(let _0x26ea9c=0x0;_0x26ea9c<_0x1a7e94[_0x1a07ac(0x134)];_0x26ea9c++){if(_0x300f9a==_0x1a7e94[_0x26ea9c])return!![];}return![];}}}['_addOnClickEventsToActions'](){const _0x100548=a2_0xefd523;let _0x5e3d1c=this;this['table'][_0x100548(0x111)](_0x100548(0x11e))[_0x100548(0x13f)](function(){const _0x346a41=_0x100548;let _0x4c6e47=this;_0x4c6e47[_0x346a41(0x128)]=function(){const _0x16d12c=_0x346a41;_0x5e3d1c[_0x16d12c(0x130)](_0x4c6e47);};}),this[_0x100548(0x122)][_0x100548(0x111)](_0x100548(0x131))[_0x100548(0x13f)](function(){let _0x1bd7d8=this;_0x1bd7d8['onclick']=function(){const _0x3ee8d9=a2_0x3271;_0x5e3d1c[_0x3ee8d9(0x11f)](_0x1bd7d8);};}),this[_0x100548(0x122)][_0x100548(0x111)](_0x100548(0x107))[_0x100548(0x13f)](function(){const _0x9ffa88=_0x100548;let _0x52bcda=this;_0x52bcda[_0x9ffa88(0x128)]=function(){const _0x21ffcc=_0x9ffa88;_0x5e3d1c[_0x21ffcc(0x125)](_0x52bcda);};}),this['table'][_0x100548(0x111)]('tbody\x20tr\x20#bCanc')[_0x100548(0x13f)](function(){let _0x1aec40=this;_0x1aec40['onclick']=function(){_0x5e3d1c['_rowCancel'](_0x1aec40);};});}['convertTableToCSV'](_0x2340a3){const _0x53f74a=a2_0xefd523;let _0x14ad29=this,_0x44804a='',_0x10fcc5='';return _0x14ad29[_0x53f74a(0x122)][_0x53f74a(0x111)](_0x53f74a(0x12f))['each'](function(){const _0x494aac=_0x53f74a;_0x14ad29[_0x494aac(0x10a)]($(this))&&$(this)[_0x494aac(0x111)](_0x494aac(0x11b))['click']();let _0x47c6bc=$(this)[_0x494aac(0x111)]('td');_0x44804a='',_0x47c6bc[_0x494aac(0x13f)](function(){const _0x3694fe=_0x494aac;if($(this)[_0x3694fe(0x127)](_0x3694fe(0x138))==_0x3694fe(0x11c)){}else _0x44804a=_0x44804a+$(this)['html']()+_0x2340a3;}),_0x44804a!=''&&(_0x44804a=_0x44804a['substr'](0x0,_0x44804a['length']-_0x2340a3[_0x494aac(0x134)])),_0x10fcc5=_0x10fcc5+_0x44804a+'\x0a';}),_0x10fcc5;}}
+/*
+ * BSTable
+ * @description  Javascript (JQuery) library to make bootstrap tables editable. Inspired by Tito Hinostroza's library Bootstable. BSTable Copyright (C) 2020 Thomas Rokicki
+ * 
+ * @version 1.0
+ * @author Thomas Rokicki (CraftingGamerTom), Tito Hinostroza (t-edson)
+ */
+
+"use strict";
+
+/** @class BSTable class that represents an editable bootstrap table. */
+class BSTable {
+
+  /**
+   * Creates an instance of BSTable.
+   *
+   * @constructor
+   * @author: Thomas Rokicki (CraftingGamerTom)
+   * @param {tableId} tableId The id of the table to make editable.
+   * @param {options} options The desired options for the editable table.
+   */
+  constructor(tableId, options) {
+
+    var defaults = {
+      editableColumns: null,          // Index to editable columns. If null all td will be editable. Ex.: "1,2,3,4,5"
+      $addButton: null,               // Jquery object of "Add" button
+      onEdit: function() {},          // Called after editing (accept button clicked)
+      onBeforeDelete: function() {},  // Called before deletion
+      onDelete: function() {},        // Called after deletion
+      onAdd: function() {},           // Called when added a new row
+      advanced: {                     // Do not override advanced unless you know what youre doing
+          columnLabel: 'Actions',
+          buttonHTML: `<div class="btn-group pull-right">
+                <button id="bEdit" type="button" class="btn btn-sm btn-default">
+                    <span class="fa fa-edit" > </span>
+                </button>
+                <button id="bDel" type="button" class="btn btn-sm btn-default">
+                    <span class="fa fa-trash" > </span>
+                </button>
+                <button id="bAcep" type="button" class="btn btn-sm btn-default" style="display:none;">
+                    <span class="fa fa-check-circle" > </span>
+                </button>
+                <button id="bCanc" type="button" class="btn btn-sm btn-default" style="display:none;">
+                    <span class="fa fa-times-circle" > </span>
+                </button>
+            </div>`
+      }
+    };
+
+    this.table = $('#' + tableId);
+    this.options = $.extend(true, defaults, options);
+
+    /** @private */ this.actionsColumnHTML = '<td name="bstable-actions">' + this.options.advanced.buttonHTML + '</td>'; 
+
+    //Process "editableColumns" parameter. Sets the columns that will be editable
+    if (this.options.editableColumns != null) {
+      // console.log("[DEBUG] editable columns: ", this.options.editableColumns);
+      
+      //Extract felds
+      this.options.editableColumns = this.options.editableColumns.split(',');
+    }
+  }
+
+  // --------------------------------------------------
+  // -- Public Functions
+  // --------------------------------------------------
+
+  /**
+   * Initializes the editable table. Creates the actions column.
+   * @since 1.0.0
+   */
+  init() {
+    this.table.find('thead tr').append('<th name="bstable-actions">' + this.options.advanced.columnLabel + '</th>');  // Append column to header
+    this.table.find('tbody tr').append(this.actionsColumnHTML);
+
+    this._addOnClickEventsToActions(); // Add onclick events to each action button in all rows
+
+    // Process "addButton" parameter
+    if (this.options.$addButton != null) {
+      let _this = this;
+      // Add a managed onclick event to the button
+      this.options.$addButton.click(function() {
+        _this._actionAddRow();
+      });
+    }
+  }
+
+  /**
+   * Destroys the editable table. Removes the actions column.
+   * @since 1.0.0
+   */
+  destroy() {
+    this.table.find('th[name="bstable-actions"]').remove(); //remove header
+    this.table.find('td[name="bstable-actions"]').remove(); //remove body rows
+  }
+
+  /**
+   * Refreshes the editable table. 
+   *
+   * Literally just removes and initializes the editable table again, wrapped in one function.
+   * @since 1.0.0
+   */
+  refresh() {
+    this.destroy();
+    this.init();
+  }
+
+  // --------------------------------------------------
+  // -- 'Static' Functions
+  // --------------------------------------------------
+
+  /**
+   * Returns whether the provided row is currently being edited.
+   *
+   * @param {Object} row
+   * @return {boolean} true if row is currently being edited.
+   * @since 1.0.0
+   */
+  currentlyEditingRow($currentRow) {
+    // Check if the row is currently being edited
+    if ($currentRow.attr('data-status')=='editing') {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+  // --------------------------------------------------
+  // -- Button Mode Functions
+  // --------------------------------------------------
+
+  _actionsModeNormal(button) {
+    $(button).parent().find('#bAcep').hide();
+    $(button).parent().find('#bCanc').hide();
+    $(button).parent().find('#bEdit').show();
+    $(button).parent().find('#bDel').show();
+    let $currentRow = $(button).parents('tr');         // get the row
+    $currentRow.attr('data-status', '');               // remove editing status
+  }
+  _actionsModeEdit(button) {
+    $(button).parent().find('#bAcep').show();
+    $(button).parent().find('#bCanc').show();
+    $(button).parent().find('#bEdit').hide();
+    $(button).parent().find('#bDel').hide();
+    let $currentRow = $(button).parents('tr');         // get the row
+    $currentRow.attr('data-status', 'editing');        // indicate the editing status
+  }
+
+  // --------------------------------------------------
+  // -- Private Event Functions
+  // --------------------------------------------------
+
+  _rowEdit(button) {                  
+  // Indicate user is editing the row
+    let $currentRow = $(button).parents('tr');       // access the row
+    console.log($currentRow);
+    let $cols = $currentRow.find('td');              // read rows
+    console.log($cols);
+    if (this.currentlyEditingRow($currentRow)) return;    // not currently editing, return
+    //Pone en modo de edición
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+      let content = $td.html();             // read content
+      console.log(content);
+      let div = '<div style="display: none;">' + content + '</div>';  // hide content (save for later use)
+      let input = '<input class="form-control input-sm"  data-original-value="' + content + '" value="' + content + '">';
+      $td.html(div + input);                // set content
+    });
+    this._actionsModeEdit(button);
+  }
+  _rowDelete(button) {                        
+  // Remove the row
+    let $currentRow = $(button).parents('tr');       // access the row
+    this.options.onBeforeDelete($currentRow);
+    $currentRow.remove();
+    this.options.onDelete();
+  }
+  _rowAccept(button) {
+  // Accept the changes to the row
+    let $currentRow = $(button).parents('tr');    // access the row
+    console.log($currentRow);
+    let $cols = $currentRow.find('td');              // read fields
+    if (!this.currentlyEditingRow($currentRow)) return;   // not currently editing, return
+    
+    // Finish editing the row & save edits
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+      let cont = $td.find('input').val();     // read through each input
+      $td.html(cont);                         // set the content and remove the input fields
+    });
+    this._actionsModeNormal(button);
+    this.options.onEdit($currentRow[0]);
+  }
+  _rowCancel(button) {
+  // Reject the changes
+    let $currentRow = $(button).parents('tr');       // access the row
+    let $cols = $currentRow.find('td');              // read fields
+    if (!this.currentlyEditingRow($currentRow)) return;   // not currently editing, return
+
+    // Finish editing the row & delete changes
+    this._modifyEachColumn(this.options.editableColumns, $cols, function($td) {  // modify each column
+        let cont = $td.find('div').html();    // read div content
+        $td.html(cont);                       // set the content and remove the input fields
+    });
+    this._actionsModeNormal(button);
+  }
+  _actionAddRow() {
+    // Add row to this table
+
+    let $allRows = this.table.find('tbody tr');
+    if ($allRows.length==0) { // there are no rows. we must create them
+      let $currentRow = this.table.find('thead tr');  // find header
+      let $cols = $currentRow.find('th');  // read each header field
+      // create the new row
+      let newColumnHTML = '';
+      $cols.each(function() {
+        let column = this; // Inner function this (column object)
+        if ($(column).attr('name')=='bstable-actions') {
+          newColumnHTML = newColumnHTML + actionsColumnHTML;  // add action buttons
+        } else {
+          newColumnHTML = newColumnHTML + '<td></td>';
+        }
+      });
+      this.table.find('tbody').append('<tr>'+newColumnHTML+'</tr>');
+    } else { // there are rows in the table. We will clone the last row
+      let $lastRow = this.table.find('tr:last');
+      $lastRow.clone().appendTo($lastRow.parent());  
+      $lastRow = this.table.find('tr:last');
+      let $cols = $lastRow.find('td');  //lee campos
+      $cols.each(function() {
+        let column = this; // Inner function this (column object)
+        if ($(column).attr('name')=='bstable-actions') {
+          // action buttons column. change nothing
+        } else {
+          $(column).html('');  // clear the text
+        }
+      });
+    }
+    this._addOnClickEventsToActions(); // Add onclick events to each action button in all rows
+    this.options.onAdd();
+  }
+
+  // --------------------------------------------------
+  // -- Helper Functions
+  // --------------------------------------------------
+
+  _modifyEachColumn($editableColumns, $cols, howToModify) {
+  // Go through each editable field and perform the howToModifyFunction function
+    let n = 0;
+    $cols.each(function() {
+      n++;
+      if ($(this).attr('name')=='bstable-actions') return;    // exclude the actions column
+      if (!isEditableColumn(n-1)) return;                     // Check if the column is editable
+      howToModify($(this));                                   // If editable, call the provided function
+    });
+    // console.log("Number of modified columns: " + n); // debug log
+    
+
+    function isEditableColumn(columnIndex) {
+    // Indicates if the column is editable, based on configuration
+        if ($editableColumns==null) {                           // option not defined
+            return true;                                        // all columns are editable
+        } else {                                                // option is defined
+            //console.log('isEditableColumn: ' + columnIndex);  // DEBUG
+            for (let i = 0; i < $editableColumns.length; i++) {
+              if (columnIndex == $editableColumns[i]) return true;
+            }
+            return false;  // column not found
+        }
+    }
+  }
+
+  _addOnClickEventsToActions() {
+    let _this = this;
+    // Add onclick events to each action button
+    this.table.find('tbody tr #bEdit').each(function() {let button = this; button.onclick = function() {_this._rowEdit(button)} });
+    this.table.find('tbody tr #bDel').each(function() {let button = this; button.onclick = function() {_this._rowDelete(button)} });
+    this.table.find('tbody tr #bAcep').each(function() {let button = this; button.onclick = function() {_this._rowAccept(button)} });
+    this.table.find('tbody tr #bCanc').each(function() {let button = this; button.onclick = function() {_this._rowCancel(button)} });
+  }
+
+  // --------------------------------------------------
+  // -- Conversion Functions
+  // --------------------------------------------------
+
+  convertTableToCSV(separator) {  
+  // Convert table to CSV
+    let _this = this;
+    let $currentRowValues = '';
+    let tableValues = '';
+
+    _this.table.find('tbody tr').each(function() {
+        // force edits to complete if in progress
+        if (_this.currentlyEditingRow($(this))) {
+            $(this).find('#bAcep').click();       // Force Accept Edit
+        }
+        let $cols = $(this).find('td');           // read columns
+        $currentRowValues = '';
+        $cols.each(function() {
+            if ($(this).attr('name')=='bstable-actions') {
+                // buttons column - do nothing
+            } else {
+                $currentRowValues = $currentRowValues + $(this).html() + separator;
+            }
+        });
+        if ($currentRowValues!='') {
+            $currentRowValues = $currentRowValues.substr(0, $currentRowValues.length-separator.length); 
+        }
+        tableValues = tableValues + $currentRowValues + '\n';
+    });
+    return tableValues;
+  }
+
+}

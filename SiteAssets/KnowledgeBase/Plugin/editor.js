@@ -1,1 +1,1617 @@
-(function(_0x1987cc,_0x8b79f2){var _0x4c383a=a11_0x5be1,_0x69fe33=_0x1987cc();while(!![]){try{var _0x57159b=parseInt(_0x4c383a(0x186))/0x1*(parseInt(_0x4c383a(0x33b))/0x2)+-parseInt(_0x4c383a(0x1da))/0x3*(parseInt(_0x4c383a(0x319))/0x4)+-parseInt(_0x4c383a(0x295))/0x5+-parseInt(_0x4c383a(0x137))/0x6+parseInt(_0x4c383a(0xe0))/0x7*(-parseInt(_0x4c383a(0x167))/0x8)+parseInt(_0x4c383a(0x2b4))/0x9+-parseInt(_0x4c383a(0x232))/0xa*(-parseInt(_0x4c383a(0x14f))/0xb);if(_0x57159b===_0x8b79f2)break;else _0x69fe33['push'](_0x69fe33['shift']());}catch(_0x6ec569){_0x69fe33['push'](_0x69fe33['shift']());}}}(a11_0x8b2d,0x9f19e),function(_0x3980ea){var _0x1be428=a11_0x5be1,_0x2cc7bc,_0x372bdf={'saveSelection':function(){var _0x1450b3=a11_0x5be1;_0x3980ea(this)[_0x1450b3(0x2b7)](_0x1450b3(0x1af))[_0x1450b3(0x1d9)]();if(window[_0x1450b3(0x1fc)])sel=window[_0x1450b3(0x1fc)](),sel[_0x1450b3(0xd9)]&&sel[_0x1450b3(0x323)]&&_0x3980ea(this)[_0x1450b3(0x2b7)](_0x1450b3(0x175),sel[_0x1450b3(0xd9)](0x0));else{if(document[_0x1450b3(0x18e)]&&document['selection']['createRange'])_0x3980ea(this)[_0x1450b3(0x2b7)](_0x1450b3(0x175),document[_0x1450b3(0x18e)][_0x1450b3(0x182)]());else _0x3980ea(this)[_0x1450b3(0x2b7)](_0x1450b3(0x175),null);}},'restoreSelection':function(_0x4a7f0a,_0x218726){var _0x71df53=a11_0x5be1,_0xe186f0;typeof _0x4a7f0a!==_0x71df53(0x28b)?_0x4a7f0a:![],typeof _0x218726!==_0x71df53(0x28b)?_0x218726:'';var _0x2b108d=_0x3980ea(this)[_0x71df53(0x2b7)](_0x71df53(0x175));if(_0x2b108d){if(window[_0x71df53(0x1fc)]){if(_0x4a7f0a){_0x2b108d['deleteContents']();if(_0x218726==_0x71df53(0x213)){var _0x3358bd=document['createElement'](_0x71df53(0x257));_0x3358bd['innerHTML']=_0x4a7f0a;var _0x2d13a2=document[_0x71df53(0x34c)](),_0xe186f0,_0x1a4d21;while(_0xe186f0=_0x3358bd[_0x71df53(0x26b)]){_0x1a4d21=_0x2d13a2[_0x71df53(0x23b)](_0xe186f0);}_0x2b108d[_0x71df53(0x1a1)](_0x2d13a2);}else _0x2b108d[_0x71df53(0x1a1)](document[_0x71df53(0x14e)](_0x4a7f0a));}sel=window[_0x71df53(0x1fc)](),sel[_0x71df53(0x11e)](),sel[_0x71df53(0x1c6)](_0x2b108d);}else{if(document[_0x71df53(0x18e)]&&_0x2b108d[_0x71df53(0x10d)]){_0x2b108d[_0x71df53(0x10d)]();if(_0x4a7f0a){if(_0x218726==_0x71df53(0x213))_0x2b108d[_0x71df53(0x238)](_0x4a7f0a);else _0x2b108d[_0x71df53(0x255)]=_0x4a7f0a;}}}}},'restoreIESelection':function(){var _0x281780=a11_0x5be1,_0x5da3d1=_0x3980ea(this)[_0x281780(0x2b7)]('currentRange');if(_0x5da3d1){if(window['getSelection'])sel=window['getSelection'](),sel[_0x281780(0x11e)](),sel[_0x281780(0x1c6)](_0x5da3d1);else document[_0x281780(0x18e)]&&_0x5da3d1[_0x281780(0x10d)]&&_0x5da3d1[_0x281780(0x10d)]();}},'insertTextAtSelection':function(_0x156d6d,_0x445f5d){var _0x4785aa=a11_0x5be1,_0x31363f,_0x1ba1f1,_0x1d49db;typeof _0x445f5d!==_0x4785aa(0x28b)?_0x445f5d:'';if(window[_0x4785aa(0x1fc)]){_0x31363f=window[_0x4785aa(0x1fc)]();if(_0x31363f[_0x4785aa(0xd9)]&&_0x31363f[_0x4785aa(0x323)]){_0x1ba1f1=_0x31363f[_0x4785aa(0xd9)](0x0),_0x1ba1f1[_0x4785aa(0x1e2)]();var _0x360b16=document['createTextNode'](_0x156d6d);if(_0x445f5d=='html'){var _0x36ef48=document['createElement'](_0x4785aa(0x257));_0x36ef48[_0x4785aa(0x2f1)]=_0x156d6d;var _0x40f3e2=document[_0x4785aa(0x34c)](),_0x1d49db,_0x1d0819;while(_0x1d49db=_0x36ef48[_0x4785aa(0x26b)]){_0x1d0819=_0x40f3e2[_0x4785aa(0x23b)](_0x1d49db);}_0x1ba1f1[_0x4785aa(0x1a1)](_0x40f3e2);}else _0x1ba1f1[_0x4785aa(0x1a1)](_0x360b16),_0x1ba1f1['selectNode'](_0x360b16);_0x31363f[_0x4785aa(0x11e)](),_0x1ba1f1=_0x1ba1f1[_0x4785aa(0xd2)](),_0x1ba1f1[_0x4785aa(0x2c5)](![]),_0x31363f['addRange'](_0x1ba1f1);}}else document[_0x4785aa(0x18e)]&&document[_0x4785aa(0x18e)]['createRange']&&(_0x1ba1f1=document['selection'][_0x4785aa(0x182)](),_0x1ba1f1[_0x4785aa(0x238)](_0x156d6d),_0x1ba1f1[_0x4785aa(0x10d)]());},'imageWidget':function(){var _0xc0ee65=a11_0x5be1,_0x256dcf=this[_0xc0ee65(0x1ab)]('id'),_0x3048e3=_0x3980ea(_0xc0ee65(0x14a),{'class':_0xc0ee65(0x1bf)})['append'](_0x3980ea(_0xc0ee65(0x14a),{'id':_0xc0ee65(0x324)+_0x256dcf})),_0x501b5f=_0x3980ea(_0xc0ee65(0x14a),{'class':_0xc0ee65(0x1d2)}),_0x230f10=_0x3980ea(_0xc0ee65(0x2b2),{'class':_0xc0ee65(0x292)})[_0xc0ee65(0x1a5)](_0x3980ea(_0xc0ee65(0x315),{'class':'active'})[_0xc0ee65(0x1a5)](_0x3980ea(_0xc0ee65(0x111),{'href':_0xc0ee65(0x290)+_0x256dcf,'data-toggle':_0xc0ee65(0x20c)})[_0xc0ee65(0x213)](_0xc0ee65(0x17c))))[_0xc0ee65(0x1a5)](_0x3980ea(_0xc0ee65(0x315))[_0xc0ee65(0x1a5)](_0x3980ea('<a/>',{'href':_0xc0ee65(0x199)+_0x256dcf,'data-toggle':_0xc0ee65(0x20c)})['html'](_0xc0ee65(0x2ff)))),_0x411a91=_0x3980ea('<div/>',{'class':_0xc0ee65(0x34f)}),_0x2545df=_0x3980ea(_0xc0ee65(0x14a),{'id':_0xc0ee65(0x304)+_0x256dcf,'class':_0xc0ee65(0x138)});handleFileSelect=function(_0x51e484){var _0x599959=_0xc0ee65,_0x18cb32=_0x51e484[_0x599959(0x27f)][_0x599959(0x2a6)],_0x348453=[];for(var _0x50004f=0x0,_0x5c8bd6;_0x5c8bd6=_0x18cb32[_0x50004f];_0x50004f++){if(!_0x5c8bd6[_0x599959(0x2bd)][_0x599959(0x26c)](_0x599959(0xe9))||!_0x5c8bd6[_0x599959(0x2ae)][_0x599959(0x26c)](/(?:gif|jpg|png|jpeg)$/)){_0x372bdf[_0x599959(0x21e)][_0x599959(0x1bd)](this,[_0x599959(0x324)+_0x256dcf,_0x599959(0x30d)]);continue;}var _0x14265c=new FileReader();_0x14265c[_0x599959(0x2d7)]=function(_0x45ca98){return function(_0x122d34){var _0x455719=a11_0x5be1,_0x3be09a=_0x3980ea(_0x455719(0x315),{'class':_0x455719(0x2bc)}),_0x544f16=_0x3980ea(_0x455719(0x111),{'href':'javascript:void(0)','class':_0x455719(0x2a9)}),_0x5d6813=_0x3980ea('<img/>',{'src':_0x122d34[_0x455719(0x27f)]['result'],'title':escape(_0x45ca98['name'])})['appendTo'](_0x544f16)[_0x455719(0x34d)](function(){var _0x11c25a=_0x455719;_0x3980ea(_0x11c25a(0x1ff)+_0x256dcf)['data'](_0x11c25a(0x13b),_0x3980ea(this)[_0x11c25a(0x1ab)](_0x11c25a(0x20f)));});_0x3be09a['append'](_0x544f16)[_0x455719(0x15e)](_0x3980ea(_0x455719(0x1ff)+_0x256dcf));};}(_0x5c8bd6),_0x14265c[_0x599959(0x31a)](_0x5c8bd6);}};var _0x51aefc=_0x3980ea(_0xc0ee65(0x28f),{'type':_0xc0ee65(0x301),'class':_0xc0ee65(0x1c5),'multiple':_0xc0ee65(0x284)});_0x51aefc['on']('change',handleFileSelect),_0x2545df['append'](_0x51aefc);var _0x153512=_0x3980ea(_0xc0ee65(0x14a),{'id':_0xc0ee65(0x28c)+_0x256dcf,'class':_0xc0ee65(0x12c)}),_0x2f4f30=_0x3980ea(_0xc0ee65(0x14a),{'class':_0xc0ee65(0x158)}),_0x1616ae=_0x3980ea('<input/>',{'type':_0xc0ee65(0x135),'class':_0xc0ee65(0x2df),'id':_0xc0ee65(0x305)+_0x256dcf,'placeholder':'Enter\x20URL'})[_0xc0ee65(0x15e)](_0x2f4f30),_0x4fc9f2=_0x3980ea(_0xc0ee65(0x310),{'class':_0xc0ee65(0x33d),'type':'button'})[_0xc0ee65(0x213)](_0xc0ee65(0x1d5))[_0xc0ee65(0x34d)](function(){var _0x568f8e=_0xc0ee65,_0x38606d=_0x3980ea('#imageURL_'+_0x256dcf)[_0x568f8e(0x312)]();if(_0x38606d=='')return _0x372bdf[_0x568f8e(0x21e)][_0x568f8e(0x1bd)](this,['imgErrMsg_'+_0x256dcf,_0x568f8e(0xdd)]),![];var _0x1bf437=_0x3980ea(_0x568f8e(0x315),{'class':'span6\x20col-xs-12\x20col-sm-6\x20col-md-3\x20col-lg-3'}),_0x266845=_0x3980ea(_0x568f8e(0x111),{'href':_0x568f8e(0x2ac),'class':_0x568f8e(0x2a9)}),_0x2dabe2=_0x3980ea(_0x568f8e(0x24b),{'src':_0x38606d})[_0x568f8e(0x345)](function(){var _0x3db431=_0x568f8e;return _0x372bdf['showMessage'][_0x3db431(0x1bd)](this,[_0x3db431(0x324)+_0x256dcf,'Invalid\x20image\x20url']),![];})['load'](function(){var _0x1dfc02=_0x568f8e;_0x3980ea(this)[_0x1dfc02(0x15e)](_0x266845)['click'](function(){var _0x4a5d3f=_0x1dfc02;_0x3980ea('#imageList_'+_0x256dcf)[_0x4a5d3f(0x2b7)](_0x4a5d3f(0x13b),_0x3980ea(this)[_0x4a5d3f(0x1ab)](_0x4a5d3f(0x20f)));}),_0x1bf437[_0x1dfc02(0x1a5)](_0x266845)['appendTo'](_0x3980ea(_0x1dfc02(0x1ff)+_0x256dcf));});})[_0xc0ee65(0x15e)](_0x3980ea(_0xc0ee65(0xfa),{'class':_0xc0ee65(0xea)})[_0xc0ee65(0x15e)](_0x2f4f30));_0x153512[_0xc0ee65(0x1a5)](_0x2f4f30),_0x411a91[_0xc0ee65(0x1a5)](_0x2545df)[_0xc0ee65(0x1a5)](_0x153512),_0x501b5f[_0xc0ee65(0x1a5)](_0x230f10)[_0xc0ee65(0x1a5)](_0x411a91);var _0x1af860=_0x3980ea('<div/>',{'class':_0xc0ee65(0x260)}),_0x4c9b67=_0x3980ea(_0xc0ee65(0x2b2),{'class':_0xc0ee65(0x109),'id':_0xc0ee65(0x270)+_0x256dcf})[_0xc0ee65(0x15e)](_0x1af860);return _0x3048e3[_0xc0ee65(0x1a5)](_0x501b5f)[_0xc0ee65(0x1a5)](_0x1af860),_0x3048e3;},'tableWidget':function(_0x591e54){var _0x16967b=a11_0x5be1,_0x53cb6f='_'+_0x3980ea(this)['attr']('id');typeof _0x591e54!==_0x16967b(0x28b)&&(_0x53cb6f='_'+_0x2cc7bc[_0x16967b(0x1ab)]('id')+'_Edt');var _0x153365=_0x3980ea(_0x16967b(0x14a),{'class':_0x16967b(0x349)})['append'](_0x3980ea('<div/>',{'id':_0x16967b(0x263)+_0x53cb6f}))[_0x16967b(0x1a5)](_0x3980ea('<form/>',{'id':_0x16967b(0x13f)+_0x53cb6f})['append'](_0x3980ea(_0x16967b(0x14a),{'class':_0x16967b(0x1bf)})['append'](_0x3980ea(_0x16967b(0x14a),{'id':_0x16967b(0x1a6)+_0x53cb6f,'class':_0x16967b(0x15a)})[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x210)+_0x53cb6f,'text':_0x16967b(0x348)}))['append'](_0x3980ea(_0x16967b(0x28f),{'id':_0x16967b(0x210)+_0x53cb6f,'type':_0x16967b(0x255),'class':'form-control\x20form-control-width','value':0x2}))[_0x16967b(0x1a5)](_0x3980ea('<label/>',{'for':_0x16967b(0x12b)+_0x53cb6f,'text':_0x16967b(0x28e)}))['append'](_0x3980ea('<input/>',{'id':_0x16967b(0x12b)+_0x53cb6f,'type':_0x16967b(0x255),'class':_0x16967b(0x15b),'value':0x2}))['append'](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x2e3)+_0x53cb6f,'text':_0x16967b(0x1d4)}))['append'](_0x3980ea(_0x16967b(0x28f),{'id':'tblWidth'+_0x53cb6f,'type':_0x16967b(0x255),'class':'form-control\x20form-control-width','value':0x190}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x27e)+_0x53cb6f,'text':_0x16967b(0x21d)}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x28f),{'id':'tblHeight'+_0x53cb6f,'type':_0x16967b(0x255),'class':_0x16967b(0x15b)})))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x14a),{'id':_0x16967b(0x311)+_0x53cb6f,'class':_0x16967b(0x15a)})[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x1e0)+_0x53cb6f,'text':_0x16967b(0x2c1)}))['append'](_0x3980ea(_0x16967b(0x1c2),{'id':_0x16967b(0x1e0)+_0x53cb6f,'class':_0x16967b(0x15b)})[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x113),{'text':_0x16967b(0x230),'value':''}))[_0x16967b(0x1a5)](_0x3980ea('<option/>',{'text':'Left','value':_0x16967b(0x2bb)}))['append'](_0x3980ea(_0x16967b(0x113),{'text':_0x16967b(0x29a),'value':_0x16967b(0x14c)}))['append'](_0x3980ea('<option/>',{'text':'Right','value':_0x16967b(0x1ec)})))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':'tblBorder'+_0x53cb6f,'text':_0x16967b(0x282)}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x28f),{'id':_0x16967b(0x341)+_0x53cb6f,'type':'text','class':_0x16967b(0x15b),'value':0x1}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x1a8)+_0x53cb6f,'text':_0x16967b(0x128)}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x28f),{'id':_0x16967b(0x1a8)+_0x53cb6f,'type':_0x16967b(0x255),'class':_0x16967b(0x15b),'value':0x1}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0xec),{'for':_0x16967b(0x32e)+_0x53cb6f,'text':_0x16967b(0x130)}))[_0x16967b(0x1a5)](_0x3980ea(_0x16967b(0x28f),{'id':_0x16967b(0x32e)+_0x53cb6f,'type':'text','class':_0x16967b(0x15b),'value':0x1})))));return _0x153365;},'imageAttributeWidget':function(){var _0x56cd4a=a11_0x5be1,_0x493d44=_0x3980ea('<div/>',{'class':_0x56cd4a(0x349)})[_0x56cd4a(0x1a5)](_0x3980ea(_0x56cd4a(0x14a),{'id':_0x56cd4a(0x1aa)}))[_0x56cd4a(0x1a5)](_0x3980ea('<input/>',{'id':'imgAlt','type':'text','class':_0x56cd4a(0x346),'placeholder':_0x56cd4a(0x2ba)}))[_0x56cd4a(0x1a5)](_0x3980ea('<input/>',{'id':_0x56cd4a(0x1c3),'class':'form-control\x20form-control-link\x20','type':_0x56cd4a(0x255),'placeholder':_0x56cd4a(0x1e1)}))[_0x56cd4a(0x1a5)](_0x3980ea(_0x56cd4a(0x28f),{'id':'imgHidden','type':_0x56cd4a(0x10c)}));return _0x493d44;},'getHTMLTable':function(_0x4fe053,_0x509b47,_0x39bd22){var _0x15d9c4=a11_0x5be1,_0x48cd72=_0x3980ea(_0x15d9c4(0x31b),{'class':_0x15d9c4(0x300)});for(var _0x36de16=0x0;_0x36de16<_0x39bd22[_0x15d9c4(0x16a)];_0x36de16++){if(_0x39bd22[_0x36de16][_0x15d9c4(0x1ad)]!=''){if(_0x39bd22[_0x36de16]['attribute']==_0x15d9c4(0x104)||_0x39bd22[_0x36de16]['attribute']==_0x15d9c4(0x235))_0x48cd72['css'](_0x39bd22[_0x36de16][_0x15d9c4(0x272)],_0x39bd22[_0x36de16][_0x15d9c4(0x1ad)]);else _0x48cd72[_0x15d9c4(0x1ab)](_0x39bd22[_0x36de16][_0x15d9c4(0x272)],_0x39bd22[_0x36de16]['value']);}}for(var _0x36de16=0x1;_0x36de16<=_0x4fe053;_0x36de16++){var _0x1e4510=_0x3980ea(_0x15d9c4(0x1b9));for(var _0x20ee0a=0x1;_0x20ee0a<=_0x509b47;_0x20ee0a++){var _0x148b13=_0x3980ea(_0x15d9c4(0x207))['html'](_0x15d9c4(0x294));_0x148b13['appendTo'](_0x1e4510);}_0x1e4510[_0x15d9c4(0x15e)](_0x48cd72);}return _0x48cd72;},'init':function(_0x499dea){var _0x4a253c=a11_0x5be1;(_0x3980ea(this)[_0x4a253c(0x1ab)]('id')===undefined||_0x3980ea(this)[_0x4a253c(0x1ab)]('id')==='')&&_0x3980ea(this)[_0x4a253c(0x1ab)]('id',Date[_0x4a253c(0xdf)]());var _0x26d95f={'Sans\x20serif':'arial,helvetica,sans-serif','Serif':_0x4a253c(0x225),'Wide':'arial\x20black,sans-serif','Narrow':_0x4a253c(0x299),'Comic\x20Sans\x20MS':_0x4a253c(0x220),'Courier\x20New':_0x4a253c(0x1fd),'Garamond':'garamond,serif','Georgia':_0x4a253c(0x16c),'Tahoma':_0x4a253c(0x154),'Trebuchet\x20MS':_0x4a253c(0x1ce),'Verdana':_0x4a253c(0x1fa)},_0x1d3c8a={'Heading\x201':'<h1>','Heading\x202':_0x4a253c(0x152),'Heading\x203':'<h3>','Heading\x204':_0x4a253c(0x1cc),'Heading\x205':_0x4a253c(0x2e1),'Heading\x206':_0x4a253c(0x2c6),'Paragraph':_0x4a253c(0x2f2)},_0xb66194={'Small':'2','Normal':'3','Medium':'4','Large':'5','Huge':'6'},_0x4d0ab7=[{'name':_0x4a253c(0x2c4),'hex':_0x4a253c(0x24e)},{'name':'MediumBlack','hex':_0x4a253c(0x1cf)},{'name':_0x4a253c(0x1c0),'hex':'#666666'},{'name':_0x4a253c(0x14d),'hex':_0x4a253c(0x170)},{'name':_0x4a253c(0x309),'hex':_0x4a253c(0x10e)},{'name':_0x4a253c(0x139),'hex':'#EEEEEE'},{'name':_0x4a253c(0x22d),'hex':_0x4a253c(0x190)},{'name':_0x4a253c(0x1b7),'hex':_0x4a253c(0x2c0)},{'name':_0x4a253c(0x327),'hex':null},{'name':'Red','hex':_0x4a253c(0x191)},{'name':_0x4a253c(0x1db),'hex':_0x4a253c(0x254)},{'name':_0x4a253c(0x240),'hex':_0x4a253c(0x33f)},{'name':'Lime','hex':_0x4a253c(0x1e3)},{'name':_0x4a253c(0x227),'hex':_0x4a253c(0x234)},{'name':'Blue','hex':'#0000FF'},{'name':_0x4a253c(0x1b6),'hex':_0x4a253c(0x150)},{'name':_0x4a253c(0x347),'hex':_0x4a253c(0x145)},{'name':_0x4a253c(0x327),'hex':null},{'name':_0x4a253c(0x302),'hex':_0x4a253c(0x19e)},{'name':'Bisque','hex':_0x4a253c(0x31c)},{'name':_0x4a253c(0x214),'hex':_0x4a253c(0x29c)},{'name':_0x4a253c(0x335),'hex':_0x4a253c(0xf4)},{'name':_0x4a253c(0x2cf),'hex':'#D0E0E3'},{'name':_0x4a253c(0x2db),'hex':_0x4a253c(0x1b2)},{'name':_0x4a253c(0x350),'hex':_0x4a253c(0x32c)},{'name':_0x4a253c(0x208),'hex':_0x4a253c(0x107)},{'name':_0x4a253c(0x164),'hex':_0x4a253c(0xd5)},{'name':_0x4a253c(0x134),'hex':_0x4a253c(0xdb)},{'name':_0x4a253c(0x262),'hex':_0x4a253c(0x108)},{'name':_0x4a253c(0x2d8),'hex':_0x4a253c(0xe6)},{'name':'LightBlue','hex':_0x4a253c(0x13c)},{'name':_0x4a253c(0x171),'hex':_0x4a253c(0x2ef)},{'name':_0x4a253c(0x2cd),'hex':_0x4a253c(0x21b)},{'name':_0x4a253c(0x129),'hex':'#D5A6BD'},{'name':_0x4a253c(0x180),'hex':_0x4a253c(0x261)},{'name':_0x4a253c(0x17d),'hex':_0x4a253c(0x275)},{'name':'Khaki','hex':_0x4a253c(0x34b)},{'name':_0x4a253c(0x2a8),'hex':'#93C47D'},{'name':_0x4a253c(0x31d),'hex':_0x4a253c(0x203)},{'name':'DeepSkyBlue','hex':_0x4a253c(0x28d)},{'name':_0x4a253c(0xdc),'hex':'#8E7CC3'},{'name':_0x4a253c(0x2e5),'hex':_0x4a253c(0x25a)},{'name':_0x4a253c(0x24f),'hex':_0x4a253c(0x278)},{'name':_0x4a253c(0x29d),'hex':_0x4a253c(0x2fc)},{'name':'Gold','hex':_0x4a253c(0x31f)},{'name':_0x4a253c(0x100),'hex':_0x4a253c(0x2f7)},{'name':'Teal','hex':_0x4a253c(0x332)},{'name':'SteelBlue','hex':_0x4a253c(0x27c)},{'name':_0x4a253c(0xf3),'hex':'#674EA7'},{'name':_0x4a253c(0x160),'hex':_0x4a253c(0x126)},{'name':_0x4a253c(0x188),'hex':'#990000'},{'name':_0x4a253c(0x18d),'hex':'#B45F06'},{'name':'GoldenRod','hex':'#BF9000'},{'name':'Green','hex':'#38761D'},{'name':_0x4a253c(0x2eb),'hex':'#134F5C'},{'name':_0x4a253c(0xf0),'hex':_0x4a253c(0x19d)},{'name':_0x4a253c(0xf9),'hex':'#351C75'},{'name':_0x4a253c(0x30b),'hex':_0x4a253c(0x189)},{'name':_0x4a253c(0x1ef),'hex':_0x4a253c(0x287)},{'name':_0x4a253c(0x1d3),'hex':_0x4a253c(0x114)},{'name':_0x4a253c(0x20e),'hex':'#7F6000'},{'name':_0x4a253c(0x161),'hex':_0x4a253c(0x34a)},{'name':_0x4a253c(0xd4),'hex':'#0C343D'},{'name':_0x4a253c(0x15f),'hex':_0x4a253c(0x112)},{'name':_0x4a253c(0x127),'hex':_0x4a253c(0x331)},{'name':_0x4a253c(0x2da),'hex':_0x4a253c(0x247)}],_0x1a0304=[{'name':_0x4a253c(0x22c),'text':'!'},{'name':'At','text':'@'},{'name':_0x4a253c(0x1b5),'text':'#'},{'name':'Percentage','text':'%'},{'name':'Uppercase','text':'^'},{'name':_0x4a253c(0x248),'text':'&'},{'name':_0x4a253c(0x11b),'text':'*'},{'name':_0x4a253c(0x169),'text':'('},{'name':_0x4a253c(0x17e),'text':')'},{'name':_0x4a253c(0x258),'text':'_'},{'name':_0x4a253c(0x1f3),'text':'-'},{'name':_0x4a253c(0x216),'text':'+'},{'name':_0x4a253c(0x2dc),'text':'='},{'name':_0x4a253c(0x181),'text':'['},{'name':_0x4a253c(0x183),'text':']'},{'name':'OpenCurly','text':'{'},{'name':_0x4a253c(0x322),'text':'}'},{'name':_0x4a253c(0x132),'text':'|'},{'name':'Colon','text':':'},{'name':'Semicolon','text':';'},{'name':_0x4a253c(0x289),'text':_0x4a253c(0x15d)},{'name':_0x4a253c(0x179),'text':_0x4a253c(0x30e)},{'name':_0x4a253c(0x2fe),'text':'&lsquo;'},{'name':_0x4a253c(0x136),'text':_0x4a253c(0x1f2)},{'name':'Forward-slash','text':_0x4a253c(0xf1)},{'name':_0x4a253c(0x118),'text':_0x4a253c(0x2c3)},{'name':'LessThan','text':'<'},{'name':_0x4a253c(0x14b),'text':'>'},{'name':_0x4a253c(0x120),'text':'?'},{'name':'Tilda','text':'~'},{'name':_0x4a253c(0x224),'text':'`'},{'name':_0x4a253c(0x133),'text':_0x4a253c(0x22b)},{'name':_0x4a253c(0x205),'text':_0x4a253c(0xfb)},{'name':_0x4a253c(0x249),'text':'&plusmn;'},{'name':'Trademark','text':_0x4a253c(0x2b8)},{'name':_0x4a253c(0x273),'text':_0x4a253c(0x115)},{'name':'Registered','text':_0x4a253c(0x2f6)},{'name':_0x4a253c(0x256),'text':_0x4a253c(0x2d3)},{'name':_0x4a253c(0x306),'text':'&#187;'},{'name':'fraction\x20one\x20quarter','text':_0x4a253c(0x18f)},{'name':_0x4a253c(0x228),'text':_0x4a253c(0xfc)},{'name':_0x4a253c(0x337),'text':_0x4a253c(0x26d)},{'name':_0x4a253c(0x266),'text':'$'},{'name':_0x4a253c(0x26f),'text':'&euro;'},{'name':'Pound','text':_0x4a253c(0x31e)},{'name':'Yen','text':_0x4a253c(0x245)},{'name':_0x4a253c(0x2fa),'text':_0x4a253c(0x25e)},{'name':'IndianRupee','text':'&#8377;'}],_0x2b9f4f={'fonteffects':!![],'texteffects':!![],'aligneffects':!![],'textformats':!![],'actions':!![],'insertoptions':!![],'extraeffects':!![],'advancedoptions':!![],'screeneffects':!![],'fonts':{'select':!![],'default':_0x4a253c(0x22a),'tooltip':_0x4a253c(0x293),'commandname':_0x4a253c(0x326),'custom':null},'styles':{'select':!![],'default':_0x4a253c(0x197),'tooltip':_0x4a253c(0x1e4),'commandname':_0x4a253c(0xf2),'custom':null},'font_size':{'select':!![],'default':_0x4a253c(0x195),'tooltip':'Font\x20Size','commandname':_0x4a253c(0x166),'custom':null},'color':{'text':'A','icon':_0x4a253c(0x23e),'tooltip':_0x4a253c(0x226),'commandname':null,'custom':function(_0x2f8dd7){var _0x4982b7=_0x4a253c,_0x6b19b2=_0x3980ea(this),_0x553748=0x0,_0x5ba27f=_0x3980ea(_0x4982b7(0x14a),{'id':_0x4982b7(0x286),'class':'activeColour','css':{'display':'none','width':_0x4982b7(0x1de)}})[_0x4982b7(0x34d)](function(_0x5a334c){var _0xf3e0b1=_0x4982b7;_0x5a334c[_0xf3e0b1(0xf6)]();}),_0x53eebd=_0x3980ea('<div/>',{'id':_0x4982b7(0x2d4)}),_0x43a515=_0x3980ea(_0x4982b7(0x17f),{'id':'color_ui'})[_0x4982b7(0x1a5)](_0x3980ea(_0x4982b7(0xf5))[_0x4982b7(0x27b)]({'width':_0x4982b7(0x23f),'display':_0x4982b7(0xfe),'height':_0x4982b7(0x291)})[_0x4982b7(0x213)](_0x4982b7(0x2b9))),_0x4f2492=_0x3980ea(_0x4982b7(0x14a),{'id':_0x4982b7(0xd8)}),_0xf03c81=_0x3980ea(_0x4982b7(0x17f),{'id':_0x4982b7(0x184)})[_0x4982b7(0x1a5)](_0x3980ea('<li\x20/>')[_0x4982b7(0x27b)]({'width':_0x4982b7(0x23f),'display':_0x4982b7(0xfe),'height':'25px'})[_0x4982b7(0x213)](_0x4982b7(0xe8)));if(_0x6b19b2[_0x4982b7(0x2b7)](_0x4982b7(0x18c)))_0x553748=0x1,_0x6b19b2[_0x4982b7(0x2b7)](_0x4982b7(0x18c),null);else _0x6b19b2[_0x4982b7(0x2b7)](_0x4982b7(0x18c),0x1);if(_0x553748==0x0){for(var _0x2e55db=0x0;_0x2e55db<_0x4d0ab7[_0x4982b7(0x16a)];_0x2e55db++){_0x4d0ab7[_0x2e55db]['hex']!=null?(_0x43a515[_0x4982b7(0x1a5)](_0x3980ea(_0x4982b7(0xf5))[_0x4982b7(0x27b)]('background-color',_0x4d0ab7[_0x2e55db]['hex'])[_0x4982b7(0x330)](function(_0x54897d){var _0x5a3c7c=_0x4982b7;_0x54897d[_0x5a3c7c(0x2c9)]();})[_0x4982b7(0x34d)](function(){var _0x1de882=_0x4982b7,_0x3a2460=_0x372bdf[_0x1de882(0x193)]['apply'](this,[_0x3980ea(this)[_0x1de882(0x27b)](_0x1de882(0x2e0))]);_0x372bdf['restoreSelection']['apply'](this),_0x372bdf['setStyleWithCSS'][_0x1de882(0x1bd)](this),document[_0x1de882(0x1d1)](_0x1de882(0xf8),![],_0x3a2460),_0x3980ea(_0x1de882(0x163))['remove'](),_0x6b19b2[_0x1de882(0x2b7)](_0x1de882(0x18c),null);})),_0xf03c81['append'](_0x3980ea(_0x4982b7(0xf5))[_0x4982b7(0x27b)](_0x4982b7(0x2e0),_0x4d0ab7[_0x2e55db][_0x4982b7(0x325)])['mousedown'](function(_0x17e76c){var _0x32f998=_0x4982b7;_0x17e76c[_0x32f998(0x2c9)]();})['click'](function(){var _0x19ae66=_0x4982b7,_0xd3abe9=_0x372bdf[_0x19ae66(0x193)]['apply'](this,[_0x3980ea(this)['css']('background-color')]);_0x372bdf[_0x19ae66(0x211)][_0x19ae66(0x1bd)](this),_0x372bdf[_0x19ae66(0x1c7)][_0x19ae66(0x1bd)](this),document[_0x19ae66(0x1d1)]('backColor',![],_0xd3abe9),_0x3980ea(_0x19ae66(0x163))[_0x19ae66(0x125)](),_0x6b19b2[_0x19ae66(0x2b7)](_0x19ae66(0x18c),null);}))):(_0x43a515[_0x4982b7(0x1a5)](_0x3980ea(_0x4982b7(0xf5))[_0x4982b7(0x27b)]({'width':_0x4982b7(0x23f),'display':_0x4982b7(0xfe),'height':_0x4982b7(0x2be)})),_0xf03c81['append'](_0x3980ea(_0x4982b7(0xf5))[_0x4982b7(0x27b)]({'width':_0x4982b7(0x23f),'display':_0x4982b7(0xfe),'height':_0x4982b7(0x2be)})));}_0x43a515[_0x4982b7(0x15e)](_0x53eebd),_0xf03c81[_0x4982b7(0x15e)](_0x4f2492),_0x53eebd['appendTo'](_0x5ba27f),_0x4f2492[_0x4982b7(0x15e)](_0x5ba27f),_0x5ba27f[_0x4982b7(0x194)](_0x2f8dd7),_0x3980ea(_0x4982b7(0x163))['slideDown'](_0x4982b7(0x20d));}else _0x3980ea('#paletteCntr')[_0x4982b7(0x125)]();}},'bold':{'text':'B','icon':_0x4a253c(0x116),'tooltip':'Bold','commandname':_0x4a253c(0x148),'custom':null},'italics':{'text':'I','icon':_0x4a253c(0x12f),'tooltip':_0x4a253c(0xed),'commandname':'italic','custom':null},'underline':{'text':'U','icon':_0x4a253c(0x1a3),'tooltip':_0x4a253c(0x268),'commandname':_0x4a253c(0x121),'custom':null},'strikeout':{'text':_0x4a253c(0x237),'icon':'fa\x20fa-strikethrough','tooltip':_0x4a253c(0xe2),'commandname':'strikeThrough','custom':null},'ol':{'text':'N','icon':_0x4a253c(0x269),'tooltip':_0x4a253c(0x317),'commandname':_0x4a253c(0x320),'custom':null},'ul':{'text':_0x4a253c(0x285),'icon':_0x4a253c(0x119),'tooltip':_0x4a253c(0x1ca),'commandname':'insertunorderedlist','custom':null},'undo':{'text':_0x4a253c(0x336),'icon':_0x4a253c(0x16e),'tooltip':_0x4a253c(0x274),'commandname':_0x4a253c(0x336),'custom':null},'redo':{'text':_0x4a253c(0x174),'icon':_0x4a253c(0x223),'tooltip':_0x4a253c(0x2a0),'commandname':'redo','custom':null},'l_align':{'text':_0x4a253c(0x149),'icon':_0x4a253c(0x33c),'tooltip':_0x4a253c(0x1c8),'commandname':'justifyleft','custom':null},'r_align':{'text':_0x4a253c(0x11d),'icon':_0x4a253c(0x2ad),'tooltip':_0x4a253c(0x22f),'commandname':_0x4a253c(0x1a7),'custom':null},'c_align':{'text':'centeralign','icon':_0x4a253c(0x1e7),'tooltip':_0x4a253c(0x1cb),'commandname':_0x4a253c(0x11c),'custom':null},'justify':{'text':_0x4a253c(0x339),'icon':_0x4a253c(0x19b),'tooltip':_0x4a253c(0x20a),'commandname':_0x4a253c(0x21c),'custom':null},'unlink':{'text':_0x4a253c(0x340),'icon':_0x4a253c(0x1c1),'tooltip':_0x4a253c(0x340),'commandname':_0x4a253c(0x26e),'custom':null},'insert_link':{'modal':!![],'modalId':'InsertLink_'+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'icon':_0x4a253c(0x2b0),'tooltip':_0x4a253c(0x1e8),'modalHeader':_0x4a253c(0x123),'modalBody':_0x3980ea(_0x4a253c(0x14a),{'class':_0x4a253c(0x162)})[_0x4a253c(0x1a5)](_0x3980ea(_0x4a253c(0x14a),{'id':_0x4a253c(0x1e6)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id')}))[_0x4a253c(0x1a5)](_0x3980ea('<input/>',{'type':_0x4a253c(0x255),'id':_0x4a253c(0x24d)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'class':_0x4a253c(0x346),'placeholder':'Text\x20to\x20Display'}))[_0x4a253c(0x1a5)](_0x3980ea(_0x4a253c(0x28f),{'type':_0x4a253c(0x255),'id':_0x4a253c(0x239)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'required':!![],'class':_0x4a253c(0x303),'placeholder':'Enter\x20URL'})),'beforeLoad':function(){var _0xd438d7=_0x4a253c;_0x2cc7bc=this;var _0x12b3c7='_'+this[_0xd438d7(0x1ab)]('id');_0x3980ea(_0xd438d7(0x1dd)+_0x12b3c7),_0x3980ea(_0xd438d7(0x25c)+_0x12b3c7),_0x3980ea(_0xd438d7(0x22e))[_0xd438d7(0x172)](_0xd438d7(0xee)),_0x3980ea(_0x2cc7bc)[_0xd438d7(0x2b7)](_0xd438d7(0x175))!=''&&_0x3980ea(_0xd438d7(0x10b)+_0x12b3c7)[_0xd438d7(0x312)](_0x3980ea(_0x2cc7bc)['data'](_0xd438d7(0x175)));},'onSave':function(){var _0x35d7cb=_0x4a253c,_0x3e08c3=/(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/,_0x53e074='_'+_0x2cc7bc['attr']('id'),_0x1cc091=_0x3980ea(_0x35d7cb(0x1dd)+_0x53e074)['val'](),_0x5e2a0f=_0x3980ea(_0x35d7cb(0x25c)+_0x53e074)['val'](),_0x415442=_0x3980ea(_0x2cc7bc)['data'](_0x35d7cb(0x175));if(_0x5e2a0f=='')return _0x372bdf['showMessage']['apply'](_0x2cc7bc,[_0x35d7cb(0x185),_0x35d7cb(0x328)]),![];if(!_0x5e2a0f[_0x35d7cb(0x26c)](_0x3e08c3))return _0x372bdf['showMessage']['apply'](_0x2cc7bc,[_0x35d7cb(0x185),_0x35d7cb(0x222)]),![];_0x415442==''&&_0x1cc091==''&&(_0x1cc091=_0x5e2a0f);if(navigator[_0x35d7cb(0x231)][_0x35d7cb(0x26c)](/MSIE/i)||navigator['userAgent'][_0x35d7cb(0x26c)](/Windows NT.*Trident\//)){var _0x92e7a4='<a\x20href=\x22'+_0x5e2a0f+'\x22\x20target=\x22_blank\x22>'+_0x1cc091+_0x35d7cb(0x1e5);_0x372bdf[_0x35d7cb(0x211)][_0x35d7cb(0x1bd)](_0x2cc7bc,[_0x92e7a4,_0x35d7cb(0x213)]);}else _0x372bdf['restoreSelection']['apply'](_0x2cc7bc,[_0x1cc091]),document[_0x35d7cb(0x1d1)]('createLink',![],_0x5e2a0f);return _0x3980ea(_0x2cc7bc)[_0x35d7cb(0x2b7)]('editor')[_0x35d7cb(0x101)](_0x35d7cb(0x259)+_0x5e2a0f+'\x22]')['each'](function(){var _0xc5f0ac=_0x35d7cb;_0x3980ea(this)[_0xc5f0ac(0x1ab)](_0xc5f0ac(0x27f),_0xc5f0ac(0x2cc));}),_0x3980ea(_0x35d7cb(0x22e))[_0x35d7cb(0x172)](_0x35d7cb(0xee)),_0x3980ea(_0x35d7cb(0x243)+_0x53e074)['modal'](_0x35d7cb(0x105)),_0x3980ea(_0x2cc7bc)[_0x35d7cb(0x2b7)](_0x35d7cb(0x1af))[_0x35d7cb(0x1d9)](),![];}},'insert_img':{'modal':![],'modalId':_0x4a253c(0xd3)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'icon':_0x4a253c(0x11f),'tooltip':_0x4a253c(0x19f),'modalHeader':_0x4a253c(0x19f),'modalBody':_0x372bdf[_0x4a253c(0x23c)]['apply'](this),'beforeLoad':function(){var _0x44f3df=_0x4a253c;_0x2cc7bc=this;var _0x121ab8=_0x2cc7bc[_0x44f3df(0x1ab)]('id');_0x3980ea('#imageURL_'+_0x121ab8)['val'](''),_0x3980ea('#uploadImageBar_'+_0x121ab8+_0x44f3df(0x34e))[_0x44f3df(0x312)](''),_0x3980ea(_0x44f3df(0x1ff)+_0x121ab8)[_0x44f3df(0x2b7)](_0x44f3df(0x13b),'');},'onSave':function(){var _0x5668b2=_0x4a253c,_0x3940d4='_'+_0x2cc7bc[_0x5668b2(0x1ab)]('id');_0x372bdf['restoreSelection'][_0x5668b2(0x1bd)](this);if(_0x3980ea(_0x5668b2(0x2f0)+_0x3940d4)[_0x5668b2(0x2b7)](_0x5668b2(0x13b))){if(navigator[_0x5668b2(0x231)][_0x5668b2(0x26c)](/MSIE/i)||navigator['userAgent'][_0x5668b2(0x26c)](/Windows NT.*Trident\//)){var _0x1c3d62=_0x5668b2(0x267)+_0x3980ea(_0x5668b2(0x2f0)+_0x3940d4)['data'](_0x5668b2(0x13b))+_0x5668b2(0x1a2);_0x372bdf[_0x5668b2(0x211)][_0x5668b2(0x1bd)](this,[_0x1c3d62,'html']);}else document[_0x5668b2(0x1d1)](_0x5668b2(0x313),![],_0x3980ea('#imageList'+_0x3940d4)['data'](_0x5668b2(0x13b)));}else return _0x372bdf[_0x5668b2(0x21e)]['apply'](this,['imgErrMsg'+_0x3940d4,_0x5668b2(0x2d6)]),![];_0x3980ea('#InsertImage'+_0x3940d4)[_0x5668b2(0xfd)](_0x5668b2(0x105)),_0x3980ea(this)[_0x5668b2(0x2b7)](_0x5668b2(0x1af))[_0x5668b2(0x1d9)]();}},'insert_table':{'modal':!![],'modalId':_0x4a253c(0xe3)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'icon':_0x4a253c(0x1b4),'tooltip':_0x4a253c(0x1ba),'modalHeader':_0x4a253c(0x1ba),'modalBody':_0x372bdf[_0x4a253c(0x131)][_0x4a253c(0x1bd)](this),'beforeLoad':function(){var _0x28311c=_0x4a253c;_0x2cc7bc=this,_0x3980ea(_0x28311c(0x241)+_0x2cc7bc['attr']('id'))[_0x28311c(0x2d5)](function(){this['reset']();});},'onSave':function(){var _0x3ff39f=_0x4a253c;_idSuffix='_'+_0x2cc7bc[_0x3ff39f(0x1ab)]('id'),_0x372bdf[_0x3ff39f(0x211)][_0x3ff39f(0x1bd)](this);var _0x3f8fa3=_0x3980ea(_0x3ff39f(0x2e7)+_idSuffix)[_0x3ff39f(0x312)](),_0x4a87bb=_0x3980ea('#tblColumns'+_idSuffix)[_0x3ff39f(0x312)](),_0x51ccd9=_0x3980ea(_0x3ff39f(0x168)+_idSuffix)[_0x3ff39f(0x312)](),_0x4d236d=_0x3980ea('#tblHeight'+_idSuffix)[_0x3ff39f(0x312)](),_0xef84ab=_0x3980ea(_0x3ff39f(0x11a)+_idSuffix)[_0x3ff39f(0x312)](),_0x36c3b9=_0x3980ea(_0x3ff39f(0x212)+_idSuffix)[_0x3ff39f(0x312)](),_0x3cc035=_0x3980ea(_0x3ff39f(0x18b)+_idSuffix)['val'](),_0x3ab98c=_0x3980ea(_0x3ff39f(0x2d2)+_idSuffix)[_0x3ff39f(0x312)](),_0x340d96=/^[0-9]+$/,_0x1c1b4b=/^auto$|^[+-]?[0-9]+\.?([0-9]+)?(px|em|ex|%|in|cm|mm|pt|pc)?$/ig,_0x4d940a=/^[0-9]+\.?([0-9])?$/;if(!_0x3f8fa3[_0x3ff39f(0x26c)](_0x340d96))return _0x372bdf['showMessage'][_0x3ff39f(0x1bd)](this,[_0x3ff39f(0x263),_0x3ff39f(0x21f)]),![];if(!_0x4a87bb[_0x3ff39f(0x26c)](_0x340d96))return _0x372bdf[_0x3ff39f(0x21e)]['apply'](this,['tblErrMsg',_0x3ff39f(0x16b)]),![];if(_0x51ccd9!=''&&!_0x51ccd9[_0x3ff39f(0x26c)](_0x1c1b4b))return _0x372bdf['showMessage']['apply'](this,['tblErrMsg',_0x3ff39f(0x2b1)]),![];if(_0x4d236d!=''&&!_0x4d236d[_0x3ff39f(0x26c)](_0x1c1b4b))return _0x372bdf[_0x3ff39f(0x21e)][_0x3ff39f(0x1bd)](this,[_0x3ff39f(0x263),_0x3ff39f(0x2b1)]),![];if(_0x36c3b9!=''&&!_0x36c3b9[_0x3ff39f(0x26c)](_0x4d940a))return _0x372bdf[_0x3ff39f(0x21e)][_0x3ff39f(0x1bd)](this,[_0x3ff39f(0x263),_0x3ff39f(0x16f)]),![];if(_0x3cc035!=''&&!_0x3cc035['match'](_0x4d940a))return _0x372bdf['showMessage'][_0x3ff39f(0x1bd)](this,[_0x3ff39f(0x263),_0x3ff39f(0x173)]),![];if(_0x3ab98c!=''&&!_0x3ab98c['match'](_0x4d940a))return _0x372bdf[_0x3ff39f(0x21e)][_0x3ff39f(0x1bd)](this,[_0x3ff39f(0x263),_0x3ff39f(0x1c9)]),![];var _0x545cc5=_0x3980ea('<div/>'),_0x5941c4=[{'attribute':'align','value':_0xef84ab},{'attribute':_0x3ff39f(0x1f9),'value':_0x36c3b9},{'attribute':'cellspacing','value':_0x3cc035},{'attribute':_0x3ff39f(0x18a),'value':_0x3ab98c},{'attribute':_0x3ff39f(0x104),'value':_0x51ccd9},{'attribute':_0x3ff39f(0x235),'value':_0x4d236d}],_0x1c97c4=_0x372bdf[_0x3ff39f(0x201)][_0x3ff39f(0x1bd)](this,[_0x3f8fa3,_0x4a87bb,_0x5941c4]);_0x1c97c4[_0x3ff39f(0x15e)](_0x545cc5);if(navigator[_0x3ff39f(0x231)][_0x3ff39f(0x26c)](/MSIE/i)||navigator[_0x3ff39f(0x231)][_0x3ff39f(0x26c)](/Windows NT.*Trident\//))_0x372bdf[_0x3ff39f(0x211)][_0x3ff39f(0x1bd)](this,[_0x545cc5[_0x3ff39f(0x213)](),_0x3ff39f(0x213)]);else document[_0x3ff39f(0x1d1)](_0x3ff39f(0x1ed),![],_0x545cc5[_0x3ff39f(0x213)]());_0x3980ea(_0x3ff39f(0x242)+_idSuffix)['modal'](_0x3ff39f(0x105)),_0x3980ea(this)[_0x3ff39f(0x2b7)](_0x3ff39f(0x1af))[_0x3ff39f(0x1d9)]();}},'hr_line':{'text':'HR','icon':_0x4a253c(0x27a),'tooltip':_0x4a253c(0x177),'commandname':_0x4a253c(0x1fb),'custom':null},'block_quote':{'text':_0x4a253c(0x2f3),'icon':_0x4a253c(0xf7),'tooltip':_0x4a253c(0x2f3),'commandname':null,'custom':function(){var _0x4cecd6=_0x4a253c;_0x372bdf[_0x4cecd6(0x1c7)]['apply'](this),navigator['userAgent'][_0x4cecd6(0x26c)](/MSIE/i)||navigator[_0x4cecd6(0x231)][_0x4cecd6(0x26c)](/Windows NT.*Trident\//)?document[_0x4cecd6(0x1d1)](_0x4cecd6(0xda),![],null):document[_0x4cecd6(0x1d1)](_0x4cecd6(0xf2),![],_0x4cecd6(0x2fd));}},'indent':{'text':_0x4a253c(0x2fb),'icon':'fa\x20fa-indent','tooltip':_0x4a253c(0x342),'commandname':_0x4a253c(0xda),'custom':null},'outdent':{'text':_0x4a253c(0x251),'icon':'fa\x20fa-outdent','tooltip':_0x4a253c(0x25f),'commandname':_0x4a253c(0x1df),'custom':null},'print':{'text':_0x4a253c(0x2b5),'icon':'fa\x20fa-print','tooltip':'Print','commandname':null,'custom':function(){var _0x584036=_0x4a253c;oDoc=_0x3980ea(this)[_0x584036(0x2b7)](_0x584036(0x1af));var _0x423086=window[_0x584036(0x23a)]('','_blank',_0x584036(0x30c));_0x423086['document'][_0x584036(0x23a)](),_0x423086[_0x584036(0x1ee)][_0x584036(0xe4)](_0x584036(0x2d1)+oDoc[_0x584036(0x213)]()+_0x584036(0x250)),_0x423086[_0x584036(0x1ee)][_0x584036(0xee)]();}},'rm_format':{'text':'Remove\x20format','icon':_0x4a253c(0x1f6),'tooltip':_0x4a253c(0xd7),'commandname':_0x4a253c(0x279),'custom':null},'select_all':{'text':'Select\x20all','icon':_0x4a253c(0x2c2),'tooltip':_0x4a253c(0x32d),'commandname':null,'custom':function(){var _0x1d497f=_0x4a253c;document[_0x1d497f(0x1d1)]('selectall',null,null);}},'togglescreen':{'text':_0x4a253c(0x13e),'icon':_0x4a253c(0xe1),'tooltip':_0x4a253c(0x13e),'commandname':null,'custom':function(_0x2ded60,_0x1d9669){var _0x2d87d8=_0x4a253c;_0x3980ea(this)[_0x2d87d8(0x2b7)](_0x2d87d8(0x1af))[_0x2d87d8(0x2ca)]()['toggleClass'](_0x2d87d8(0x25b));var _0x1caea9=0x0;_0x3980ea(this)['data'](_0x2d87d8(0x27d))[_0x2d87d8(0x16a)]&&(_0x1caea9=_0x3980ea(this)[_0x2d87d8(0x2b7)](_0x2d87d8(0x27d))['height']());if(_0x3980ea(this)['data'](_0x2d87d8(0x1af))[_0x2d87d8(0x2ca)]()[_0x2d87d8(0x296)](_0x2d87d8(0x25b)))_0x3980ea(this)[_0x2d87d8(0x2b7)](_0x2d87d8(0x1af))[_0x2d87d8(0x27b)]({'height':_0x3980ea(this)[_0x2d87d8(0x2b7)](_0x2d87d8(0x1af))[_0x2d87d8(0x2ca)]()[_0x2d87d8(0x235)]()-(_0x3980ea(this)['data']('menuBar')[_0x2d87d8(0x235)]()+_0x1caea9)-0xd});else _0x3980ea(this)[_0x2d87d8(0x2b7)](_0x2d87d8(0x1af))[_0x2d87d8(0x27b)]({'height':''});}},'splchars':{'text':'S','icon':_0x4a253c(0x276),'tooltip':_0x4a253c(0x13a),'commandname':null,'custom':function(_0x417ed8){var _0x39d30f=_0x4a253c;_0x372bdf[_0x39d30f(0x333)][_0x39d30f(0x1bd)](this);var _0x2a83d9=0x0,_0x2838ab=_0x3980ea(_0x39d30f(0x14a),{'id':_0x39d30f(0x206),'class':_0x39d30f(0xde),'css':{'display':'none'}})[_0x39d30f(0x34d)](function(_0x8b96ea){var _0x958277=_0x39d30f;_0x8b96ea[_0x958277(0xf6)]();}),_0x38deb0=_0x3980ea(_0x39d30f(0x17f),{'id':'special_ui'}),_0x4f557b=this;if(_0x3980ea(this)[_0x39d30f(0x2b7)](_0x39d30f(0x1af))[_0x39d30f(0x2b7)](_0x39d30f(0x102)))_0x2a83d9=0x1,_0x3980ea(this)[_0x39d30f(0x2b7)]('editor')[_0x39d30f(0x2b7)]('splcharsBtn',null);else _0x3980ea(this)['data'](_0x39d30f(0x1af))[_0x39d30f(0x2b7)](_0x39d30f(0x102),0x1);if(_0x2a83d9==0x0){for(var _0x2563aa=0x0;_0x2563aa<_0x1a0304['length'];_0x2563aa++){_0x38deb0[_0x39d30f(0x1a5)](_0x3980ea(_0x39d30f(0xf5))[_0x39d30f(0x213)](_0x1a0304[_0x2563aa][_0x39d30f(0x255)])[_0x39d30f(0x1ab)](_0x39d30f(0x229),_0x1a0304[_0x2563aa][_0x39d30f(0x2ae)])[_0x39d30f(0x330)](function(_0x53df23){var _0x4843ef=_0x39d30f;_0x53df23[_0x4843ef(0x2c9)]();})[_0x39d30f(0x34d)](function(_0x80b409){var _0x1e8365=_0x39d30f;if(navigator[_0x1e8365(0x231)]['match'](/MSIE/i)||navigator[_0x1e8365(0x231)][_0x1e8365(0x26c)](/Windows NT.*Trident\//)){var _0x11b9a8=_0x3980ea(this)[_0x1e8365(0x213)]();_0x372bdf['insertTextAtSelection'][_0x1e8365(0x1bd)](this,[_0x11b9a8,_0x1e8365(0x213)]);}else document[_0x1e8365(0x1d1)](_0x1e8365(0x1ed),![],_0x3980ea(this)[_0x1e8365(0x213)]());_0x3980ea(_0x1e8365(0x196))[_0x1e8365(0x125)](),_0x3980ea(_0x4f557b)[_0x1e8365(0x2b7)](_0x1e8365(0x1af))[_0x1e8365(0x2b7)](_0x1e8365(0x102),null);}));}_0x38deb0[_0x39d30f(0x2a1)](_0x2838ab),_0x2838ab['insertAfter'](_0x417ed8),_0x3980ea('#specialchar')['slideDown'](_0x39d30f(0x20d));}else _0x3980ea(_0x39d30f(0x196))[_0x39d30f(0x125)]();}},'source':{'text':_0x4a253c(0xff),'icon':_0x4a253c(0x2ea),'tooltip':_0x4a253c(0xff),'commandname':null,'custom':function(_0xb74b32,_0x591dc3){var _0x4a4e95=_0x4a253c;_0x372bdf[_0x4a4e95(0x10a)][_0x4a4e95(0x1bd)](this,[_0xb74b32,_0x591dc3]);}},'params':{'obj':null}},_0xe01d1c={'texteffects':[_0x4a253c(0x148),'italics',_0x4a253c(0x121),_0x4a253c(0x1a4)],'aligneffects':[_0x4a253c(0x283),_0x4a253c(0x153),_0x4a253c(0x2e9),'justify'],'textformats':['indent',_0x4a253c(0x1df),_0x4a253c(0x187),'ol','ul'],'fonteffects':['fonts',_0x4a253c(0x2a3),'font_size'],'actions':[_0x4a253c(0x336),'redo'],'insertoptions':[_0x4a253c(0x215),_0x4a253c(0x26e),_0x4a253c(0x318),_0x4a253c(0x26a)],'extraeffects':['strikeout',_0x4a253c(0x308),_0x4a253c(0x110)],'advancedoptions':[_0x4a253c(0x2aa),'rm_format',_0x4a253c(0x2f9),_0x4a253c(0x29e)],'screeneffects':[_0x4a253c(0x147)]},_0x490a33=_0x3980ea[_0x4a253c(0x1e9)]({'texteffects':!![],'aligneffects':!![],'textformats':!![],'fonteffects':!![],'actions':!![],'insertoptions':!![],'extraeffects':!![],'advancedoptions':!![],'screeneffects':!![],'bold':!![],'italics':!![],'underline':!![],'ol':!![],'ul':!![],'undo':!![],'redo':!![],'l_align':!![],'r_align':!![],'c_align':!![],'justify':!![],'insert_link':!![],'unlink':!![],'insert_img':![],'hr_line':!![],'block_quote':!![],'source':!![],'strikeout':!![],'indent':!![],'outdent':!![],'fonts':_0x26d95f,'styles':_0x1d3c8a,'print':!![],'rm_format':!![],'status_bar':!![],'font_size':_0xb66194,'color':_0x4d0ab7,'splchars':_0x1a0304,'insert_table':!![],'select_all':!![],'togglescreen':!![]},_0x499dea),_0x29cd0c=_0x3980ea(_0x4a253c(0x14a),{'class':_0x4a253c(0x244)}),_0x30794a=_0x3980ea(this)['hide']();_0x30794a[_0x4a253c(0x117)](_0x29cd0c);var _0x4fc422=_0x3980ea(_0x4a253c(0x14a),{'id':'menuBarDiv_'+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'class':_0x4a253c(0x2b3)})[_0x4a253c(0x2a1)](_0x29cd0c),_0x565d47=_0x3980ea(_0x4a253c(0x14a),{'class':_0x4a253c(0x122),'css':{'overflow':_0x4a253c(0x221)},'contenteditable':_0x4a253c(0x13d)})[_0x4a253c(0x15e)](_0x29cd0c),_0x5d6810=_0x3980ea(_0x4a253c(0x14a),{'id':_0x4a253c(0x32f)+_0x3980ea(this)[_0x4a253c(0x1ab)]('id'),'class':_0x4a253c(0x2ee),'unselectable':'on'})[_0x4a253c(0x15e)](_0x29cd0c);_0x3980ea(this)[_0x4a253c(0x2b7)]('menuBar',_0x4fc422),_0x3980ea(this)[_0x4a253c(0x2b7)](_0x4a253c(0x1af),_0x565d47),_0x3980ea(this)[_0x4a253c(0x2b7)](_0x4a253c(0x27d),_0x5d6810);var _0x209b45=this;_0x490a33[_0x4a253c(0x1f7)]&&_0x565d47[_0x4a253c(0x1f4)](function(_0x16a923){var _0x1c1bef=_0x4a253c,_0xa5d35f=_0x372bdf[_0x1c1bef(0xef)]['apply'](_0x209b45),_0x23a7d4=_0x372bdf['getCharCount'][_0x1c1bef(0x1bd)](_0x209b45);_0x3980ea(_0x209b45)[_0x1c1bef(0x2b7)]('statusBar')['html'](_0x1c1bef(0x2d0)+_0x1c1bef(0x281)+_0xa5d35f+'</div>'),_0x3980ea(_0x209b45)['data'](_0x1c1bef(0x27d))[_0x1c1bef(0x1a5)](_0x1c1bef(0x2d0)+'Characters\x20:\x20'+_0x23a7d4+'</div>');});for(var _0x39d235 in _0x2b9f4f){if(!_0x490a33[_0x39d235]){if(_0x490a33[_0x39d235]in _0xe01d1c)for(var _0x2ade5d in _0xe01d1c[_0x39d235]){_0x490a33[_0x2ade5d]=![];}continue;}if(_0x39d235 in _0xe01d1c){var _0x4413a7=_0x3980ea(_0x4a253c(0x14a),{'class':'btn-group'});for(var _0x5352d9=0x0;_0x5352d9<_0xe01d1c[_0x39d235][_0x4a253c(0x16a)];_0x5352d9++){var _0x1fadaf=_0xe01d1c[_0x39d235][_0x5352d9];if(_0x490a33[_0x1fadaf]){var _0x2cfc76=_0x372bdf['createMenuItem'][_0x4a253c(0x1bd)](this,[_0x2b9f4f[_0x1fadaf],_0x490a33[_0x1fadaf],!![]]);_0x4413a7[_0x4a253c(0x1a5)](_0x2cfc76);}_0x490a33[_0x1fadaf]=![];}_0x4fc422['append'](_0x4413a7);}else{var _0x2cfc76=_0x372bdf[_0x4a253c(0x23d)][_0x4a253c(0x1bd)](this,[_0x2b9f4f[_0x39d235],_0x490a33[_0x39d235],!![]]);_0x4fc422[_0x4a253c(0x1a5)](_0x2cfc76);}}_0x3980ea(document[_0x4a253c(0x32b)])[_0x4a253c(0x330)](function(_0x92d44c){var _0x57db7b=_0x4a253c,_0x456dc4=_0x3980ea(_0x92d44c[_0x57db7b(0x27f)]);!_0x456dc4['parents']()[_0x57db7b(0x25d)]()['is']('#context-menu')&&_0x3980ea(_0x57db7b(0x19a))[_0x57db7b(0x125)](),!_0x456dc4[_0x57db7b(0x1be)]()[_0x57db7b(0x25d)]()['is'](_0x57db7b(0x196))&&_0x456dc4[_0x57db7b(0x2a2)]('a')[_0x57db7b(0x213)]()!=_0x57db7b(0x1b8)&&(_0x3980ea(_0x57db7b(0x196))['is'](_0x57db7b(0x329))&&(_0x3980ea(_0x209b45)[_0x57db7b(0x2b7)]('editor')[_0x57db7b(0x2b7)](_0x57db7b(0x102),null),_0x3980ea(_0x57db7b(0x196))[_0x57db7b(0x125)]())),!_0x456dc4['parents']()[_0x57db7b(0x25d)]()['is'](_0x57db7b(0x163))&&_0x456dc4['closest']('a')[_0x57db7b(0x213)]()!=_0x57db7b(0x264)&&(_0x3980ea(_0x57db7b(0x163))['is'](_0x57db7b(0x329))&&(_0x3980ea(_0x209b45)[_0x57db7b(0x2b7)]('editor')[_0x57db7b(0x2b7)](_0x57db7b(0x18c),null),_0x3980ea(_0x57db7b(0x163))[_0x57db7b(0x125)]()));}),_0x565d47['bind'](_0x4a253c(0x1b3),function(_0x29151b){var _0x9e4d5f=_0x4a253c;if(_0x3980ea(_0x9e4d5f(0x19a))[_0x9e4d5f(0x16a)])_0x3980ea(_0x9e4d5f(0x19a))[_0x9e4d5f(0x125)]();var _0x563e5c=_0x3980ea(_0x9e4d5f(0x14a),{'id':_0x9e4d5f(0x1ac)})[_0x9e4d5f(0x27b)]({'position':_0x9e4d5f(0x17a),'top':_0x29151b[_0x9e4d5f(0x252)],'left':_0x29151b['pageX'],'z-index':0x270f})['click'](function(_0xbb87a2){var _0x4dc323=_0x9e4d5f;_0xbb87a2[_0x4dc323(0xf6)]();}),_0x176cf0=_0x3980ea(_0x9e4d5f(0x2b2),{'class':_0x9e4d5f(0x1f1),'role':'menu'});_0x29151b[_0x9e4d5f(0x2c9)]();if(_0x3980ea(_0x29151b[_0x9e4d5f(0x27f)])['is']('a'))_0x372bdf['createLinkContext'][_0x9e4d5f(0x1bd)](this,[_0x29151b,_0x176cf0]),_0x176cf0[_0x9e4d5f(0x15e)](_0x563e5c),_0x563e5c['appendTo'](_0x9e4d5f(0x32b));else{if(_0x3980ea(_0x29151b[_0x9e4d5f(0x27f)])['is']('td')||_0x3980ea(_0x29151b['target'])['is']('th'))_0x372bdf[_0x9e4d5f(0x297)][_0x9e4d5f(0x1bd)](this,[_0x29151b,_0x176cf0]),_0x176cf0[_0x9e4d5f(0x15e)](_0x563e5c),_0x563e5c[_0x9e4d5f(0x15e)](_0x9e4d5f(0x32b));else _0x3980ea(_0x29151b[_0x9e4d5f(0x27f)])['is']('img')&&(_0x372bdf[_0x9e4d5f(0x157)][_0x9e4d5f(0x1bd)](this,[_0x29151b,_0x176cf0]),_0x176cf0[_0x9e4d5f(0x15e)](_0x563e5c),_0x563e5c[_0x9e4d5f(0x15e)](_0x9e4d5f(0x32b)));}});},'createLinkContext':function(_0xe7ba06,_0x3ce64d){var _0x19e268=a11_0x5be1,_0x548846=_0x3980ea(_0x19e268(0x315))[_0x19e268(0x1a5)](_0x3980ea(_0x19e268(0x111),{'id':'rem_link','href':_0x19e268(0x2ac),'text':'RemoveLink'})['click'](function(_0xdf7e43){return function(){var _0x155e69=a11_0x5be1;_0x3980ea(_0xdf7e43[_0x155e69(0x27f)])[_0x155e69(0x19c)]()[_0x155e69(0x338)](),_0x3980ea(_0x155e69(0x19a))['remove']();};}(_0xe7ba06)));_0x548846[_0x19e268(0x15e)](_0x3ce64d);},'createImageContext':function(_0x14b512,_0x326cd9){var _0x459944=a11_0x5be1,_0x4de222='imgAttribute',_0xbdcb48=_0x459944(0x12d),_0x20345e=_0x372bdf[_0x459944(0x2c7)][_0x459944(0x1bd)](this,[_0x459944(0x1eb)]),_0x63e4a1=function(){var _0x55217e=_0x459944,_0x4ae01c=/(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/,_0x3ae2ff=_0x3980ea(_0x55217e(0x28a))[_0x55217e(0x312)](),_0x27d1b9=_0x3980ea(_0x55217e(0x1ea))[_0x55217e(0x312)]();if(_0x3ae2ff=='')return _0x372bdf[_0x55217e(0x21e)]['apply'](this,[_0x55217e(0x1aa),_0x55217e(0x140)]),![];if(_0x27d1b9!=''&&!_0x27d1b9['match'](_0x4ae01c))return _0x372bdf['showMessage']['apply'](this,[_0x55217e(0x1aa),_0x55217e(0x20b)]),![];if(_0x3980ea(_0x55217e(0x298))['val']()!=''){var _0x334777=_0x3980ea('#imgHidden')[_0x55217e(0x312)]();_0x3980ea('#'+_0x334777)[_0x55217e(0x1ab)](_0x55217e(0x2e6),_0x3ae2ff);if(_0x27d1b9!=''){if(_0x3980ea(_0x55217e(0x33e)+_0x334777)['length'])_0x3980ea(_0x55217e(0x33e)+_0x334777)[_0x55217e(0x1ab)](_0x55217e(0x12e),_0x27d1b9);else _0x3980ea('#'+_0x334777)[_0x55217e(0x143)](_0x3980ea(_0x55217e(0x111),{'id':_0x55217e(0x2f4)+_0x334777,'href':_0x27d1b9,'target':_0x55217e(0x2cc)}));}else{if(_0x3980ea('#wrap_'+_0x334777)[_0x55217e(0x16a)])_0x3980ea('#'+_0x334777)[_0x55217e(0x338)]();}}_0x3980ea('#imgAttribute')['modal'](_0x55217e(0x105)),_0x2cc7bc[_0x55217e(0x2b7)](_0x55217e(0x1af))[_0x55217e(0x1d9)]();};_0x372bdf[_0x459944(0x2de)][_0x459944(0x1bd)](this,[_0x4de222,_0xbdcb48,_0x20345e,_0x63e4a1]);var _0x410d7d=_0x3980ea(_0x459944(0x111),{'href':'#'+_0x4de222,'text':_0x459944(0x12d),'data-toggle':_0x459944(0xfd)})[_0x459944(0x34d)](function(_0x5f1c74){return function(){var _0x31f502=a11_0x5be1;_0x3980ea('#context-menu')['remove']();var _0x5bb448=new Date()[_0x31f502(0x176)]();_0x3980ea(_0x31f502(0x28a))['val'](_0x3980ea(_0x5f1c74[_0x31f502(0x27f)])['closest'](_0x31f502(0x307))[_0x31f502(0x1ab)]('alt')),_0x3980ea(_0x31f502(0x1ea))[_0x31f502(0x312)]('');if(typeof _0x3980ea(_0x5f1c74[_0x31f502(0x27f)])[_0x31f502(0x2a2)](_0x31f502(0x307))['attr']('id')!=='undefined'){var _0x4537f2=_0x3980ea(_0x5f1c74[_0x31f502(0x27f)])['closest'](_0x31f502(0x307))[_0x31f502(0x1ab)]('id');_0x3980ea('#imgHidden')[_0x31f502(0x312)](_0x4537f2);if(_0x3980ea('#wrap_'+_0x4537f2)[_0x31f502(0x16a)])_0x3980ea('#imgTarget')['val'](_0x3980ea(_0x31f502(0x33e)+_0x4537f2)[_0x31f502(0x1ab)](_0x31f502(0x12e)));else _0x3980ea(_0x31f502(0x1ea))['val']('');}else _0x3980ea(_0x5f1c74[_0x31f502(0x27f)])[_0x31f502(0x2a2)](_0x31f502(0x307))[_0x31f502(0x1ab)]('id',_0x31f502(0x21a)+_0x5bb448),_0x3980ea(_0x31f502(0x298))[_0x31f502(0x312)](_0x31f502(0x21a)+_0x5bb448);};}(_0x14b512));_0x326cd9['append'](_0x3980ea('<li/>')[_0x459944(0x1a5)](_0x410d7d))[_0x459944(0x1a5)](_0x3980ea('<li/>')[_0x459944(0x1a5)](_0x3980ea(_0x459944(0x111),{'text':_0x459944(0xe7)})[_0x459944(0x34d)](function(_0xe4707e){return function(){var _0x53a109=a11_0x5be1;_0x3980ea(_0x53a109(0x19a))['remove'](),_0x3980ea(_0xe4707e['target'])[_0x53a109(0x2a2)](_0x53a109(0x307))[_0x53a109(0x125)]();};}(_0x14b512))));},'createTableContext':function(_0x5848b3,_0x5ce5d1){var _0x1b6c6a=a11_0x5be1,_0x48f9fd='_'+_0x2cc7bc[_0x1b6c6a(0x1ab)]('id')+_0x1b6c6a(0x155),_0x22d740='editProperties_'+_0x2cc7bc[_0x1b6c6a(0x1ab)]('id');_0x3980ea('#'+_0x22d740)['remove']();var _0x2114d5='Table\x20Properties',_0x499bc=_0x372bdf['tableWidget']['apply'](this,['edit']),_0x3b3325=function(){var _0x17ef66=_0x1b6c6a,_0x110be5=_0x3980ea(_0x17ef66(0x168)+_0x48f9fd)['val'](),_0xb1889a=_0x3980ea('#tblHeight'+_0x48f9fd)['val'](),_0x2497e6=_0x3980ea(_0x17ef66(0x212)+_0x48f9fd)[_0x17ef66(0x312)](),_0x1f7b3f=_0x3980ea('#tblAlign'+_0x48f9fd)[_0x17ef66(0x312)](),_0x54fa78=_0x3980ea(_0x17ef66(0x18b)+_0x48f9fd)[_0x17ef66(0x312)](),_0x51e37f=_0x3980ea(_0x17ef66(0x2d2)+_0x48f9fd)[_0x17ef66(0x312)](),_0x5b3cdc=/^auto$|^[+-]?[0-9]+\.?([0-9]+)?(px|em|ex|%|in|cm|mm|pt|pc)?$/ig,_0x2e445b=/^[0-9]+\.?([0-9])?$/;if(_0x110be5!=''&&!_0x110be5['match'](_0x5b3cdc))return _0x372bdf[_0x17ef66(0x21e)][_0x17ef66(0x1bd)](this,['tblErrMsgEdt',_0x17ef66(0x2b1)]),![];if(_0xb1889a!=''&&!_0xb1889a['match'](_0x5b3cdc))return _0x372bdf['showMessage'][_0x17ef66(0x1bd)](this,[_0x17ef66(0x1f8),_0x17ef66(0x2b1)]),![];if(_0x2497e6!=''&&!_0x2497e6[_0x17ef66(0x26c)](_0x2e445b))return _0x372bdf['showMessage']['apply'](this,[_0x17ef66(0x1f8),_0x17ef66(0x16f)]),![];if(_0x54fa78!=''&&!_0x54fa78['match'](_0x2e445b))return _0x372bdf['showMessage'][_0x17ef66(0x1bd)](this,[_0x17ef66(0x1f8),_0x17ef66(0x173)]),![];if(_0x51e37f!=''&&!_0x51e37f[_0x17ef66(0x26c)](_0x2e445b))return _0x372bdf['showMessage'][_0x17ef66(0x1bd)](this,[_0x17ef66(0x1f8),_0x17ef66(0x1c9)]),![];_0x3980ea(_0x5848b3[_0x17ef66(0x27f)])['closest'](_0x17ef66(0x300))['css'](_0x17ef66(0x104),_0x110be5);if(_0xb1889a!='')_0x3980ea(_0x5848b3['target'])[_0x17ef66(0x2a2)]('table')['css']('height',_0xb1889a);_0x3980ea(_0x5848b3[_0x17ef66(0x27f)])[_0x17ef66(0x2a2)]('table')[_0x17ef66(0x1ab)](_0x17ef66(0x10f),_0x1f7b3f),_0x3980ea(_0x5848b3[_0x17ef66(0x27f)])[_0x17ef66(0x2a2)](_0x17ef66(0x300))[_0x17ef66(0x1ab)](_0x17ef66(0x1f9),_0x2497e6),_0x3980ea(_0x5848b3[_0x17ef66(0x27f)])[_0x17ef66(0x2a2)]('table')[_0x17ef66(0x1ab)](_0x17ef66(0x277),_0x54fa78),_0x3980ea(_0x5848b3[_0x17ef66(0x27f)])[_0x17ef66(0x2a2)](_0x17ef66(0x300))['attr']('cellpadding',_0x51e37f),_0x3980ea('#'+_0x22d740)[_0x17ef66(0xfd)]('hide'),_0x2cc7bc['data'](_0x17ef66(0x1af))[_0x17ef66(0x1d9)]();};_0x372bdf[_0x1b6c6a(0x2de)][_0x1b6c6a(0x1bd)](this,[_0x22d740,_0x2114d5,_0x499bc,_0x3b3325]);var _0x486c59=_0x3980ea(_0x1b6c6a(0x111),{'href':'#'+_0x22d740,'text':_0x1b6c6a(0x30a),'data-toggle':_0x1b6c6a(0xfd)})[_0x1b6c6a(0x34d)](function(_0x342bc2){return function(){var _0x2b4768=a11_0x5be1,_0x197c5b='_'+_0x2cc7bc[_0x2b4768(0x1ab)]('id')+_0x2b4768(0x155);_0x3980ea('#context-menu')[_0x2b4768(0x125)](),_0x3980ea(_0x2b4768(0x2e7)+_0x197c5b)['val'](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)](_0x2b4768(0x300))[_0x2b4768(0x29b)](_0x2b4768(0x198))[_0x2b4768(0x16a)]),_0x3980ea(_0x2b4768(0x1f0)+_0x197c5b)[_0x2b4768(0x312)](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)]('table')['find']('tr')[0x0]['cells'][_0x2b4768(0x16a)]),_0x3980ea(_0x2b4768(0x2e7)+_0x197c5b)[_0x2b4768(0x1ab)](_0x2b4768(0x24a),_0x2b4768(0x24a)),_0x3980ea(_0x2b4768(0x1f0)+_0x197c5b)[_0x2b4768(0x1ab)](_0x2b4768(0x24a),'disabled'),_0x3980ea(_0x2b4768(0x168)+_0x197c5b)[_0x2b4768(0x312)](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)](_0x2b4768(0x300))[_0x2b4768(0x2e2)](0x0)[_0x2b4768(0x209)][_0x2b4768(0x104)]),_0x3980ea(_0x2b4768(0x271)+_0x197c5b)[_0x2b4768(0x312)](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)](_0x2b4768(0x300))[_0x2b4768(0x2e2)](0x0)['style'][_0x2b4768(0x235)]),_0x3980ea('#tblAlign'+_0x197c5b)[_0x2b4768(0x312)](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])['closest']('table')[_0x2b4768(0x1ab)](_0x2b4768(0x10f))),_0x3980ea(_0x2b4768(0x212)+_0x197c5b)['val'](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)](_0x2b4768(0x300))[_0x2b4768(0x1ab)](_0x2b4768(0x1f9))),_0x3980ea(_0x2b4768(0x18b)+_0x197c5b)['val'](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])['closest'](_0x2b4768(0x300))[_0x2b4768(0x1ab)]('cellspacing')),_0x3980ea(_0x2b4768(0x2d2)+_0x197c5b)['val'](_0x3980ea(_0x342bc2[_0x2b4768(0x27f)])[_0x2b4768(0x2a2)](_0x2b4768(0x300))[_0x2b4768(0x1ab)](_0x2b4768(0x18a)));};}(_0x5848b3));_0x5ce5d1[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315),{'class':_0x1b6c6a(0x1f5),'css':{'display':_0x1b6c6a(0x124)}})['append'](_0x3980ea(_0x1b6c6a(0x111),{'tabindex':'-1','href':_0x1b6c6a(0x2ac),'text':_0x1b6c6a(0x265)}))[_0x1b6c6a(0x1a5)](_0x3980ea('<ul/>',{'class':_0x1b6c6a(0x156)})[_0x1b6c6a(0x1a5)](_0x3980ea('<li/>')['append'](_0x3980ea(_0x1b6c6a(0x111),{'id':_0x1b6c6a(0x15c),'href':_0x1b6c6a(0x2ac),'text':'Add\x20Row'})['click'](function(_0x30cdad){return function(){var _0x16d3e2=a11_0x5be1;_0x3980ea('#context-menu')[_0x16d3e2(0x125)]();var _0x203df5=_0x3980ea(_0x30cdad[_0x16d3e2(0x27f)])[_0x16d3e2(0x2a2)]('tr'),_0x200770=_0x3980ea(_0x16d3e2(0x1b9));_0x203df5['children']()[_0x16d3e2(0x2d5)](function(){var _0x12707c=_0x16d3e2,_0x178cd9=_0x3980ea('<'+_0x3980ea(this)[_0x12707c(0x29b)](_0x12707c(0x2ab))+'/>')[_0x12707c(0x213)](_0x12707c(0x294));_0x200770[_0x12707c(0x1a5)](_0x178cd9);}),_0x203df5[_0x16d3e2(0x117)](_0x200770);};}(_0x5848b3))))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x111),{'text':_0x1b6c6a(0x1a0)})[_0x1b6c6a(0x34d)](function(_0x36b2d9){return function(){var _0x42c11d=a11_0x5be1;_0x3980ea(_0x42c11d(0x19a))[_0x42c11d(0x125)](),_0x3980ea(_0x36b2d9[_0x42c11d(0x27f)])[_0x42c11d(0x2a2)]('tr')[_0x42c11d(0x125)]();};}(_0x5848b3))))))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315),{'class':_0x1b6c6a(0x1f5),'css':{'display':_0x1b6c6a(0x124)}})[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x111),{'tabindex':'-1','href':_0x1b6c6a(0x2ac),'text':_0x1b6c6a(0x288)}))['append'](_0x3980ea(_0x1b6c6a(0x2b2),{'class':'dropdown-menu'})[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x111),{'id':_0x1b6c6a(0x1ae),'href':_0x1b6c6a(0x2ac),'text':_0x1b6c6a(0x253)})[_0x1b6c6a(0x34d)](function(_0x1cb5e6){return function(){var _0x554bc0=a11_0x5be1;_0x3980ea(_0x554bc0(0x19a))[_0x554bc0(0x125)]();var _0x5d1b2c=_0x3980ea(_0x1cb5e6['target']),_0x5e33c3=_0x5d1b2c['siblings']()[_0x554bc0(0x2a4)]()[_0x554bc0(0xe5)](_0x5d1b2c);_0x5d1b2c['closest'](_0x554bc0(0x300))[_0x554bc0(0x101)]('tr')[_0x554bc0(0x2d5)](function(){var _0x107ae9=_0x554bc0,_0x4b533e=_0x3980ea(this)[_0x107ae9(0x159)](_0x107ae9(0x1b0)+_0x5e33c3+')'),_0x4ccbba=_0x3980ea('<'+_0x4b533e[_0x107ae9(0x29b)]('nodeName')+'/>')[_0x107ae9(0x213)](_0x107ae9(0x294));_0x4b533e[_0x107ae9(0x117)](_0x4ccbba);});};}(_0x5848b3))))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315))['append'](_0x3980ea(_0x1b6c6a(0x111),{'text':_0x1b6c6a(0x1c4)})[_0x1b6c6a(0x34d)](function(_0x24af47){return function(){var _0x51ed51=a11_0x5be1;_0x3980ea(_0x51ed51(0x19a))[_0x51ed51(0x125)]();var _0x583536=_0x3980ea(_0x24af47[_0x51ed51(0x27f)]),_0x685ee1=_0x583536[_0x51ed51(0x1d6)]()[_0x51ed51(0x2a4)]()[_0x51ed51(0xe5)](_0x583536);_0x583536[_0x51ed51(0x2a2)](_0x51ed51(0x300))[_0x51ed51(0x101)]('tr')[_0x51ed51(0x2d5)](function(){var _0x9c76d4=_0x51ed51;_0x3980ea(this)[_0x9c76d4(0x159)](_0x9c76d4(0x1b0)+_0x685ee1+')')['remove']();});};}(_0x5848b3)))))),_0x5ce5d1[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315))['append'](_0x486c59))[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x315),{'class':_0x1b6c6a(0xeb)}))[_0x1b6c6a(0x1a5)](_0x3980ea('<li/>')[_0x1b6c6a(0x1a5)](_0x3980ea(_0x1b6c6a(0x111),{'text':'Remove\x20Table'})[_0x1b6c6a(0x34d)](function(_0x2e952d){return function(){var _0x41ea9e=a11_0x5be1;_0x3980ea(_0x41ea9e(0x19a))['remove'](),_0x3980ea(_0x2e952d['target'])[_0x41ea9e(0x2a2)]('table')[_0x41ea9e(0x125)]();};}(_0x5848b3))));},'createModal':function(_0x58fd0b,_0x184991,_0x2e6fb2,_0x4dd389){var _0x53418f=a11_0x5be1,_0x231d40=_0x3980ea('<a/>',{'href':'#'+_0x58fd0b,'role':_0x53418f(0x1b1),'class':_0x53418f(0x321),'data-toggle':_0x53418f(0xfd)}),_0x2777e1=_0x3980ea('<div/>',{'id':_0x58fd0b,'class':_0x53418f(0x2e8),'tabindex':'-1','role':'dialog','aria-labelledby':_0x53418f(0x2b6)+_0x58fd0b,'aria-hidden':_0x53418f(0x13d)})['append'](_0x3980ea(_0x53418f(0x1bb),{'class':_0x53418f(0x280)})[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x1bb),{'class':'modal-content'})['append'](_0x3980ea('<div>',{'class':_0x53418f(0x2af)})[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x310),{'type':_0x53418f(0x1b1),'class':_0x53418f(0x343),'data-dismiss':_0x53418f(0xfd),'aria-hidden':'true'})[_0x53418f(0x213)]('x'))[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x344),{'class':_0x53418f(0x144),'id':'h3_'+_0x58fd0b})[_0x53418f(0x213)](_0x184991)))[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x1bb),{'class':_0x53418f(0x178)})[_0x53418f(0x1a5)](_0x2e6fb2))[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x1bb),{'class':_0x53418f(0x334)})[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x310),{'type':_0x53418f(0x1b1),'class':_0x53418f(0x2ed),'data-dismiss':_0x53418f(0xfd),'aria-hidden':'true'})[_0x53418f(0x213)](_0x53418f(0x219)))[_0x53418f(0x1a5)](_0x3980ea(_0x53418f(0x310),{'type':_0x53418f(0x1b1),'class':_0x53418f(0x103)})[_0x53418f(0x213)](_0x53418f(0x2f8))[_0x53418f(0x330)](function(_0x2f19b0){var _0x19e147=_0x53418f;_0x2f19b0[_0x19e147(0x2c9)]();})['click'](function(_0x52a94e){return function(){_0x4dd389['apply'](_0x52a94e);};}(this))))));return _0x2777e1[_0x53418f(0x15e)](_0x53418f(0x32b)),_0x231d40;},'createMenuItem':function(_0x1f6212,_0x45dadf,_0x19aca1){var _0x12dbd1=a11_0x5be1;typeof _0x19aca1!=='undefined'?_0x19aca1:![];if(_0x1f6212['select']){var _0x1aa149=_0x3980ea(_0x12dbd1(0x14a),{'class':_0x12dbd1(0xd6)}),_0x11586f=_0x3980ea(_0x12dbd1(0x2b2),{'class':_0x12dbd1(0x156)});_0x1aa149[_0x12dbd1(0x1a5)](_0x3980ea('<a/>',{'class':_0x12dbd1(0x218),'data-toggle':_0x12dbd1(0x233),'href':_0x12dbd1(0x2ac),'title':_0x1f6212[_0x12dbd1(0x200)]})[_0x12dbd1(0x213)](_0x1f6212[_0x12dbd1(0x33a)])['append'](_0x3980ea(_0x12dbd1(0xfa),{'class':_0x12dbd1(0x2ce)}))[_0x12dbd1(0x330)](function(_0x228e49){var _0x361b70=_0x12dbd1;_0x228e49[_0x361b70(0x2c9)]();})),_0x3980ea[_0x12dbd1(0x2d5)](_0x45dadf,function(_0x166a48,_0x40d232){var _0x322383=_0x12dbd1,_0x2ece2c=_0x3980ea('<li/>');_0x3980ea(_0x322383(0x111),{'tabindex':'-1','href':_0x322383(0x2ac)})['html'](_0x166a48)[_0x322383(0x15e)](_0x2ece2c),_0x2ece2c['click'](function(){var _0x1c448d=_0x322383;_0x3980ea(this)[_0x1c448d(0x2ca)]()[_0x1c448d(0x2ca)]()[_0x1c448d(0x2b7)](_0x1c448d(0x1ad),_0x40d232),_0x3980ea(this)[_0x1c448d(0x2ca)]()[_0x1c448d(0x2ca)]()[_0x1c448d(0x2cb)]('change');}),_0x11586f['append'](_0x2ece2c);});var _0x3b29bb=_0x12dbd1(0x142);}else{if(_0x1f6212[_0x12dbd1(0xfd)]){var _0x1aa149=_0x372bdf['createModal'][_0x12dbd1(0x1bd)](this,[_0x1f6212[_0x12dbd1(0x1d0)],_0x1f6212[_0x12dbd1(0x2d9)],_0x1f6212[_0x12dbd1(0x17b)],_0x1f6212['onSave']]),_0x11586f=_0x3980ea(_0x12dbd1(0x314));if(_0x1f6212[_0x12dbd1(0x2a5)])_0x11586f[_0x12dbd1(0x2ec)](_0x1f6212[_0x12dbd1(0x2a5)]);else _0x11586f[_0x12dbd1(0x213)](_0x1f6212[_0x12dbd1(0x255)]);return _0x1aa149['append'](_0x11586f),_0x1aa149[_0x12dbd1(0x330)](function(_0x15b7aa,_0x387420,_0x1ad04f){return function(_0x365c38){var _0x156e79=a11_0x5be1;_0x365c38[_0x156e79(0x2c9)](),_0x387420[_0x156e79(0x1bc)][_0x156e79(0x1bd)](_0x15b7aa),_0x1ad04f&&_0x1ad04f[_0x156e79(0x1bd)](_0x15b7aa);};}(this,_0x372bdf,_0x1f6212['beforeLoad'])),_0x1aa149[_0x12dbd1(0x1ab)](_0x12dbd1(0x229),_0x1f6212[_0x12dbd1(0x200)]),_0x1aa149;}else{var _0x1aa149=_0x3980ea(_0x12dbd1(0x111),{'href':'javascript:void(0)','class':_0x12dbd1(0x321)}),_0x11586f=_0x3980ea(_0x12dbd1(0x314));if(_0x1f6212[_0x12dbd1(0x2a5)])_0x11586f['addClass'](_0x1f6212[_0x12dbd1(0x2a5)]);else _0x11586f['html'](_0x1f6212[_0x12dbd1(0x255)]);var _0x3b29bb=_0x12dbd1(0x34d);}}_0x1f6212[_0x12dbd1(0x32a)]?_0x1aa149['bind'](_0x3b29bb,function(_0x5bb305,_0x581078){return function(){var _0x5a81f2=a11_0x5be1;_0x372bdf[_0x5a81f2(0x1bc)][_0x5a81f2(0x1bd)](_0x5bb305),_0x1f6212[_0x5a81f2(0x32a)][_0x5a81f2(0x1bd)](_0x5bb305,[_0x3980ea(this),_0x581078]);};}(this,_0x1f6212[_0x12dbd1(0x202)])):(_0x1aa149[_0x12dbd1(0x2b7)](_0x12dbd1(0x2c8),_0x1f6212[_0x12dbd1(0x204)]),_0x1aa149['data'](_0x12dbd1(0x1af),_0x3980ea(this)[_0x12dbd1(0x2b7)]('editor')),_0x1aa149[_0x12dbd1(0x2dd)](_0x3b29bb,function(){var _0x4365fc=_0x12dbd1;_0x372bdf['setTextFormat'][_0x4365fc(0x1bd)](this);}));_0x1aa149[_0x12dbd1(0x1ab)](_0x12dbd1(0x229),_0x1f6212[_0x12dbd1(0x200)]),_0x1aa149[_0x12dbd1(0x27b)](_0x12dbd1(0x2e4),_0x12dbd1(0x30f)),_0x1aa149[_0x12dbd1(0x1a5)](_0x11586f);if(_0x19aca1)return _0x1aa149;_0x3980ea(this)[_0x12dbd1(0x2b7)](_0x12dbd1(0x151))[_0x12dbd1(0x1a5)](_0x1aa149);},'setTextFormat':function(){var _0x2cf646=a11_0x5be1;return _0x372bdf[_0x2cf646(0x1c7)][_0x2cf646(0x1bd)](this),document['execCommand'](_0x3980ea(this)[_0x2cf646(0x2b7)](_0x2cf646(0x2c8)),![],_0x3980ea(this)[_0x2cf646(0x2b7)](_0x2cf646(0x1ad))||null),_0x3980ea(this)['data'](_0x2cf646(0x1af))[_0x2cf646(0x1d9)](),![];},'getSource':function(_0x1814af,_0x231dbc){var _0xd0a544=a11_0x5be1,_0x199287=0x0;if(_0x1814af[_0xd0a544(0x2b7)](_0xd0a544(0x165)))_0x199287=0x1,_0x1814af[_0xd0a544(0x2b7)]('state',null);else _0x1814af[_0xd0a544(0x2b7)](_0xd0a544(0x165),0x1);_0x3980ea(this)[_0xd0a544(0x2b7)]('source-mode',!_0x199287);var _0x143968=_0x3980ea(this)[_0xd0a544(0x2b7)](_0xd0a544(0x1af)),_0x4f75f3;if(_0x199287==0x0)_0x4f75f3=document['createTextNode'](_0x143968['html']()),_0x143968[_0xd0a544(0x2bf)](),_0x143968[_0xd0a544(0x1ab)](_0xd0a544(0x29f),![]),preElement=_0x3980ea('<pre/>',{'contenteditable':!![]}),preElement[_0xd0a544(0x1a5)](_0x4f75f3),_0x143968[_0xd0a544(0x1a5)](preElement),_0x1814af[_0xd0a544(0x2ca)]()[_0xd0a544(0x1d6)]()['hide'](),_0x1814af[_0xd0a544(0x1d6)]()[_0xd0a544(0x105)]();else{var _0x27dd92=_0x143968[_0xd0a544(0x159)]()[_0xd0a544(0x146)]()[_0xd0a544(0x255)]();_0x143968[_0xd0a544(0x213)](_0x27dd92),_0x143968[_0xd0a544(0x1ab)](_0xd0a544(0x29f),!![]),_0x1814af[_0xd0a544(0x2ca)]()[_0xd0a544(0x1d6)]()[_0xd0a544(0x16d)](),_0x1814af[_0xd0a544(0x1d6)]()[_0xd0a544(0x16d)]();}},'countWords':function(_0x5bac7e){var _0x58e42c=a11_0x5be1,_0x4fdb5b=0x0,_0x4a2a88=_0x5bac7e[_0x58e42c(0x19c)]()['filter'](function(){var _0x930c68=_0x58e42c;return this[_0x930c68(0x2f5)]==0x3;});for(var _0xf361fe=0x0;_0xf361fe<_0x4a2a88[_0x58e42c(0x16a)];_0xf361fe++){text=_0x4a2a88[_0xf361fe][_0x58e42c(0x236)],text=text['replace'](/[^-\w\s]/gi,'\x20'),text=_0x3980ea[_0x58e42c(0x1d8)](text),_0x4fdb5b=_0x4fdb5b+text[_0x58e42c(0x1a9)](/\s+/)['length'];}var _0x471c42=_0x5bac7e[_0x58e42c(0x159)]()[_0x58e42c(0x2d5)](function(){var _0x28d9a9=_0x58e42c;_0x4fdb5b=_0x4fdb5b+_0x372bdf['countWords'][_0x28d9a9(0x1bd)](this,[_0x3980ea(this)]);});return _0x4fdb5b;},'countChars':function(_0x5d1388){var _0x1a62fb=a11_0x5be1,_0x32e141=0x0,_0x22a032=_0x5d1388['contents']()['filter'](function(){var _0x3d7e0a=a11_0x5be1;return this[_0x3d7e0a(0x2f5)]==0x3;});for(var _0x1084e2=0x0;_0x1084e2<_0x22a032[_0x1a62fb(0x16a)];_0x1084e2++){text=_0x22a032[_0x1084e2][_0x1a62fb(0x236)],_0x32e141=_0x32e141+text[_0x1a62fb(0x16a)];}var _0xb19511=_0x5d1388[_0x1a62fb(0x159)]()['each'](function(){var _0x2d31ef=_0x1a62fb;_0x32e141=_0x32e141+_0x372bdf[_0x2d31ef(0x2a7)]['apply'](this,[_0x3980ea(this)]);});return _0x32e141;},'getWordCount':function(){var _0x21929d=a11_0x5be1;return _0x372bdf[_0x21929d(0x1d7)][_0x21929d(0x1bd)](this,[_0x3980ea(this)[_0x21929d(0x2b7)](_0x21929d(0x1af))]);},'getCharCount':function(){var _0x31725f=a11_0x5be1;return _0x372bdf[_0x31725f(0x2a7)][_0x31725f(0x1bd)](this,[_0x3980ea(this)[_0x31725f(0x2b7)](_0x31725f(0x1af))]);},'rgbToHex':function(_0x1b14ef){var _0x3c604d=a11_0x5be1;return _0x1b14ef=_0x1b14ef['match'](/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/),'#'+('0'+parseInt(_0x1b14ef[0x1],0xa)['toString'](0x10))[_0x3c604d(0x141)](-0x2)+('0'+parseInt(_0x1b14ef[0x2],0xa)['toString'](0x10))['slice'](-0x2)+('0'+parseInt(_0x1b14ef[0x3],0xa)[_0x3c604d(0x1fe)](0x10))['slice'](-0x2);},'showMessage':function(_0x2f1acc,_0x519921){var _0x368b98=a11_0x5be1,_0x46bf78=_0x3980ea(_0x368b98(0x14a),{'class':'alert\x20alert-danger'})[_0x368b98(0x1a5)](_0x3980ea(_0x368b98(0x310),{'type':_0x368b98(0x1b1),'class':_0x368b98(0xee),'data-dismiss':_0x368b98(0x172),'html':'x'}))['append'](_0x3980ea(_0x368b98(0xfa))[_0x368b98(0x213)](_0x519921));_0x46bf78[_0x368b98(0x15e)](_0x3980ea('#'+_0x2f1acc)),setTimeout(function(){var _0xff98a1=_0x368b98;_0x3980ea(_0xff98a1(0x22e))[_0xff98a1(0x172)](_0xff98a1(0xee));},0xbb8);},'getText':function(){var _0x4717bb=a11_0x5be1;if(!_0x3980ea(this)[_0x4717bb(0x2b7)](_0x4717bb(0x316)))return _0x3980ea(this)[_0x4717bb(0x2b7)](_0x4717bb(0x1af))['html']();else return _0x3980ea(this)[_0x4717bb(0x2b7)]('editor')[_0x4717bb(0x159)]()[_0x4717bb(0x146)]()[_0x4717bb(0x255)]();},'setText':function(_0x402fa1){var _0x2da298=a11_0x5be1;if(!_0x3980ea(this)[_0x2da298(0x2b7)](_0x2da298(0x316)))_0x3980ea(this)['data'](_0x2da298(0x1af))[_0x2da298(0x213)](_0x402fa1);else _0x3980ea(this)[_0x2da298(0x2b7)](_0x2da298(0x1af))[_0x2da298(0x159)]()[_0x2da298(0x146)]()[_0x2da298(0x255)](_0x402fa1);},'setStyleWithCSS':function(){var _0x4bb691=a11_0x5be1;if(navigator[_0x4bb691(0x231)][_0x4bb691(0x26c)](/MSIE/i))try{Editor[_0x4bb691(0x1d1)]('styleWithCSS',0x0,![]);}catch(_0x229c7b){try{Editor['execCommand'](_0x4bb691(0x246),0x0,!![]);}catch(_0x5cbffc){try{Editor[_0x4bb691(0x1d1)](_0x4bb691(0x1dc),![],![]);}catch(_0x1bb964){}}}else document[_0x4bb691(0x1d1)](_0x4bb691(0x1dc),null,!![]);}};_0x3980ea['fn'][_0x1be428(0x192)]=function(_0xfb6b82){var _0x488669=_0x1be428;if(_0x372bdf[_0xfb6b82])return _0x372bdf[_0xfb6b82][_0x488669(0x1bd)](this,Array[_0x488669(0x106)][_0x488669(0x141)][_0x488669(0x12a)](arguments,0x1));else{if(typeof _0xfb6b82==='object'||!_0xfb6b82)return _0x372bdf[_0x488669(0x1cd)][_0x488669(0x1bd)](this,arguments);else _0x3980ea['error'](_0x488669(0x217)+_0xfb6b82+_0x488669(0x24c));}};}(jQuery));function a11_0x5be1(_0x1679ee,_0x28cda4){var _0x8b2d9b=a11_0x8b2d();return a11_0x5be1=function(_0x5be10e,_0x1b9499){_0x5be10e=_0x5be10e-0xd2;var _0x3acfb4=_0x8b2d9b[_0x5be10e];return _0x3acfb4;},a11_0x5be1(_0x1679ee,_0x28cda4);}function a11_0x8b2d(){var _0x4729dc=['#tblCellspacing','colorBtn','Chocolate','selection','&#188;','#F3F3F3','#FF0000','Editor','rgbToHex','insertAfter','Font\x20size','#specialchar','Formatting','rows','#imageFromLinkBar_','#context-menu','fa\x20fa-align-justify','contents','#0B5394','#FFB6C1','Insert\x20Image','Remove\x20Row','insertNode','\x22/>','fa\x20fa-underline','color','append','tblInputsLeft','justifyright','tblCellspacing','split','imageErrMsg','attr','context-menu','value','tbl_addcolumn','editor',':eq(','button','#CFE2F3','contextmenu','fa\x20fa-table','Hash','BlueViolet','White','<i\x20class=\x22fa\x20fa-asterisk\x22></i>','<tr/>','Insert\x20Table','<div>','saveSelection','apply','parents','row','LightBlack','fa\x20fa-unlink','<select/>','imgTarget','Remove\x20Column','inline-form-control','addRange','setStyleWithCSS','Align\x20Left','Cell\x20padding\x20must\x20be\x20a\x20positive\x20number','Insert/Remove\x20Bulleted\x20List','Align\x20Center','<h4>','init','trebuchet\x20ms,sans-serif','#444444','modalId','execCommand','tabbable\x20tabs-left\x20col-md-12','SaddleBrown','Width','Go!','siblings','countWords','trim','focus','2335785vbKCZC','Orange','styleWithCSS','#inputText','335px','outdent','tblAlign','Link\x20Target','deleteContents','#00FF00','Paragraph\x20Format','</a>','errMsg_','fa\x20fa-align-center','Insert\x20Link','extend','#imgTarget','edit','right','insertHTML','document','DarkRed','#tblColumns','dropdown-menu\x20on','&rsquo;','Hiphen','keyup','dropdown-submenu','fa\x20fa-eraser','status_bar','tblErrMsgEdt','border','verdana,sans-serif','insertHorizontalRule','getSelection','courier\x20new,monospace','toString','#imageList_','tooltip','getHTMLTable','params','#76A5AF','commandname','Paragraph\x20sign','specialchar','<td/>','Thistle','style','Justify','Please\x20enter\x20valid\x20url','tab','slow','DarkGoldenRod','src','tblRows','restoreSelection','#tblBorder','html','BlanchedAlmond','insert_link','Plus','Method\x20','btn\x20btn-default\x20dropdown-toggle','Cancel','img_','#B4A7D6','justifyfull','Height','showMessage','Rows\x20must\x20be\x20a\x20positive\x20number','comic\x20sans\x20ms,sans-serif','auto','Enter\x20valid\x20url','fa\x20fa-repeat','Grave\x20accent','times\x20new\x20roman,serif','Text/Background\x20Color','Cyan','fraction\x20one\x20half','title','Font','&micro;','Exclamation\x20','LightGray','.alert','Align\x20Right','Choose','userAgent','4050AnGlFD','dropdown','#00FFFF','height','textContent','Strikeout','pasteHTML','inputUrl_','open','appendChild','imageWidget','createMenuItem','fa\x20fa-font','145px','Yellow','#tblForm_','#InsertTable','#InsertLink','row-fluid\x20Editor-container','&yen;','useCSS','#4C1130','Ampersand','Plus/minus','disabled','<img/>','\x20does\x20not\x20exist\x20on\x20jQuery.Editor','inputText_','#000000','Crimson','</body></html>','Outdent','pageY','Add\x20Column','#FF9900','text','Section','div','Underscore','a[href=\x22','#C27BA0','fullscreen','#inputUrl','andSelf','&#162;','Decrease\x20Indent','col-xs-12\x20col-sm-12\x20col-md-12\x20col-lg-12','#E06666','NavajoWhite','tblErrMsg','<i\x20class=\x22fa\x20fa-font\x22></i>','Row','Dollar','<img\x20src=\x22','Underline','fa\x20fa-list-ol','insert_table','firstChild','match','&#190;','unlink','Euro','imageList_','#tblHeight','attribute','Copyright','Undo','#F6B26B','fa\x20fa-asterisk','cellspacing','#CC0000','removeformat','fa\x20fa-minus','css','#3D85C6','statusBar','tblHeight','target','modal-dialog','Words\x20:\x20','Border\x20size','l_align','multiple','Bullet','paletteCntr','#660000','Column','Single\x20quote','#imgAlt','undefined','imageFromLinkBar_','#6FA8DC','Columns','<input/>','#uploadImageBar_','25px','nav\x20nav-tabs\x20shadow3','Fonts','&nbsp;','1869320kJllse','hasClass','createTableContext','#imgHidden','arial\x20narrow,sans-serif','Center','prop','#FFF2CC','SandyBrown','source','contenteditable','Redo','prependTo','closest','styles','addBack','icon','files','countChars','YellowGreen','thumbnail','print','nodeName','javascript:void(0)','fa\x20fa-align-right','name','modal-header\x20panel-head-4','fa\x20fa-link','Please\x20enter\x20positive\x20number\x20with\x20or\x20without\x20a\x20valid\x20CSS\x20measurement\x20unit\x20(px,em,ex,%,in,cm,mm,pt,pc)','<ul/>','row-fluid\x20line-control-menu-bar','5328234AOEaVD','Print','h3_','data','&trade;','<div>Text\x20Color</div>','Alt\x20Text','left','col-xs-12\x20col-sm-6\x20col-md-3\x20col-lg-3','type','5px','empty','#FFFFFF','Alignment','fa\x20fa-file-text','&#92;','Black','collapse','<h6>','imageAttributeWidget','commandName','preventDefault','parent','trigger','_blank','LightPurple','caret','LightCyan','<div\x20class=\x22label\x22>','<!doctype\x20html><html><head><title>Print</title></head><body\x20onload=\x22print();\x22>','#tblCellpadding','&sect;','colorpellete','each','Please\x20select\x20an\x20image','onload','DarkSeaGreen','modalHeader','DarkMaroon','AliceBlue','Equalto','bind','createModal','form-control','background-color','<h5>','get','tblWidth','cursor','MediumVioletRed','alt','#tblRows','modal\x20fade','r_align','fa\x20fa-code','SlateGray','addClass','btn\x20btn-outline-secondary','row-fluid\x20line-control-status-bar','#9FC5E8','#imageList','innerHTML','<p>','Block\x20Quote','wrap_','nodeType','&reg;','#6AA84F','Done','select_all','Cent','Indent','#E69138','<blockquote>','Left\x20single\x20curly\x20quote','From\x20URL','table','file','LightPink','form-control\x20form-control-link','uploadImageBar_','imageURL_','right\x20double\x20angle\x20quotes','img','hr_line','Gray','Table\x20Properties','Maroon','width=450,height=470,left=400,top=100,menubar=yes,toolbar=no,location=no,scrollbars=yes','Invalid\x20file\x20type','&#34;','pointer','<button/>','tblInputsRight','val','insertimage','<i/>','<li/>','source-mode','Insert/Remove\x20Numbered\x20List','insert_img','4BrAlIz','readAsDataURL','<table/>','#FCE5CD','CadetBlue','&pound;','#F1C232','insertorderedlist','btn\x20btn-default','CloseCurly','rangeCount','imgErrMsg_','hex','fontName','libreak','Please\x20enter\x20url',':visible','custom','body','#D9D2E9','Select\x20All','tblCellpadding','statusbar_','mousedown','#20124D','#45818E','restoreIESelection','modal-footer','LightLime','undo','fraction\x20three\x20quarters','unwrap','justify','default','4ySPMTi','fa\x20fa-align-left','btn\x20btn-outline-success\x20go-btn','#wrap_','#FFFF00','Unlink','tblBorder','Increase\x20Indent','close\x20h4-color','<h4/>','error','form-control\x20form-control-link\x20','Magenta','Rows','row-fluid','#274E13','#FFD966','createDocumentFragment','click','\x20:input','tab-content','Lavender','cloneRange','InsertImage_','DarkSlateGray','#EA9999','btn-group','Remove\x20Formatting','bg_colorpellete','getRangeAt','indent','#F9CB9C','MediumPurple','Please\x20enter\x20image\x20url','specialCntr','now','7QjlxwL','fa\x20fa-arrows-alt','Strike\x20Through','InsertTable_','write','index','#B6D7A8','Remove\x20Image','<div>Background\x20Color</div>','image.*','input-group-btn\x20form-control-button-right','divider','<label/>','Italics','close','getWordCount','RoyalBlue','&#47;','formatBlock','SlateBlue','#D9EAD3','<li\x20/>','stopPropagation','fa\x20fa-quote-right','forecolor','Indigo','<span/>','&para;','&#189;','modal','Block','Source','MediumSeaGreen','find','splcharsBtn','btn\x20btn-outline-success','width','hide','prototype','#EAD1DC','#FFE599','thumbnails\x20padding-top\x20list-unstyled','getSource','#inputText_','hidden','select','#CCCCCC','align','splchars','<a/>','#073763','<option/>','#783F04','&copy;','fa\x20fa-bold','after','Back-slash','fa\x20fa-list-ul','#tblAlign','Asterisk','justifycenter','rightalign','removeAllRanges','fa\x20fa-picture-o','QuestionMark','underline','Editor-editor','Insert\x20Hyperlink','block','remove','#A64D79','MidnightBlue','Cell\x20spacing','PaleVioletRed','call','tblColumns','tab-pane','Image\x20Attributes','href','fa\x20fa-italic','Cell\x20padding','tableWidget','Pipe','Micron','Wheat','url','right\x20single\x20curly\x20quote','4533762pflODT','tab-pane\x20active','DimGray','Insert\x20Special\x20Character','current','#A2C4C9','true','Toggle\x20Screen','tblForm','Please\x20enter\x20image\x20alternative\x20text','slice','change','wrap','modal-title\x20h4-color','#FF00FF','first','togglescreen','bold','leftalign','<div/>','GreaterThan','center','DimBlack','createTextNode','47421WXQPjZ','#8A2BE2','menuBar','<h2>','c_align','tahoma,sans-serif','_Edt','dropdown-menu','createImageContext','input-group','children','col-xs-12\x20col-sm-6\x20col-md-6\x20col-lg-6','form-control\x20form-control-width','tbl_addrow','&#39;','appendTo','Navy','VioletRed','DarkGreen','form-group','#paletteCntr','LightCoral','state','fontSize','716088YQzsxu','#tblWidth','OpenBracket','length','Columns\x20must\x20be\x20a\x20positive\x20number','georgia,serif','show','fa\x20fa-undo','Border\x20size\x20must\x20be\x20a\x20positive\x20number','#999999','SkyBlue','alert','Cell\x20spacing\x20must\x20be\x20a\x20positive\x20number','redo','currentRange','getTime','Horizontal\x20Rule','modal-body','Double\x20quote','absolute','modalBody','From\x20Computer','LightSandyBrown','CloseBracket','<ul\x20/>','IndianRed','OpenSquareBracket','createRange','CloseSquareBracket','bgcolor_ui','errMsg','155647eRRjxf','block_quote','Brown','#741B47','cellpadding'];a11_0x8b2d=function(){return _0x4729dc;};return a11_0x8b2d();}
+
+(function( $ ){
+	var editorObj;
+	var methods = {
+		saveSelection: function() {
+			//Function to save the text selection range from the editor
+			$(this).data('editor').focus();
+		    if (window.getSelection) {
+		        sel = window.getSelection();
+		        if (sel.getRangeAt && sel.rangeCount) {
+		            $(this).data('currentRange', sel.getRangeAt(0));
+		        }
+		    } else if (document.selection && document.selection.createRange) {
+		        $(this).data('currentRange',document.selection.createRange());
+		    }
+		    else
+		    	$(this).data('currentRange', null);
+		},
+
+		restoreSelection: function(text,mode) {
+			//Function to restore the text selection range from the editor
+			var node;
+			typeof text !== 'undefined' ? text : false;
+			typeof mode !== 'undefined' ? mode : "";
+			var range = $(this).data('currentRange');
+		    if (range) {
+		        if (window.getSelection) {
+		        	if(text){
+		            	range.deleteContents();
+		            	if(mode=="html")
+	            		{
+    			            var el = document.createElement("div");
+				            el.innerHTML = text;
+				            var frag = document.createDocumentFragment(), node, lastNode;
+				            while ( (node = el.firstChild) ) {
+				                lastNode = frag.appendChild(node);
+				            }
+				            range.insertNode(frag);
+	            		}
+		            	else
+            				range.insertNode( document.createTextNode(text) );
+
+		            }
+		            sel = window.getSelection();
+		            sel.removeAllRanges();
+		            sel.addRange(range);		            
+		        }
+		        else if (document.selection && range.select) {
+		            range.select();
+		            if(text)
+		            {
+		            	if(mode=="html")
+		            		range.pasteHTML(text);
+		            	else
+		            		range.text = text;
+		            }
+		        }
+		    }
+		},
+
+		restoreIESelection:function() {
+			//Function to restore the text selection range from the editor in IE
+			var range = $(this).data('currentRange');
+		    if (range) {
+		        if (window.getSelection) {
+		            sel = window.getSelection();
+		            sel.removeAllRanges();
+		            sel.addRange(range);
+		        } else if (document.selection && range.select) {
+		            range.select();
+		        }
+		    }
+		},
+
+		insertTextAtSelection:function(text,mode) {
+		    var sel, range, node ;
+		    typeof mode !== 'undefined' ? mode : "";
+		    if (window.getSelection) {
+		        sel = window.getSelection();
+		        if (sel.getRangeAt && sel.rangeCount) {
+		            range = sel.getRangeAt(0);
+		            range.deleteContents();
+		            var textNode = document.createTextNode(text); 
+		            
+		            if(mode=="html")
+		            { 
+		                var el = document.createElement("div");
+		                el.innerHTML = text;
+		                var frag = document.createDocumentFragment(), node, lastNode;
+		                while ( (node = el.firstChild) ) {
+		                    lastNode = frag.appendChild(node);
+		                }
+		                range.insertNode(frag);
+		            }
+		            else
+		            { 
+		            	range.insertNode(textNode);
+		            	range.selectNode(textNode);
+		            }
+		            sel.removeAllRanges();
+		            range = range.cloneRange();		            
+		            range.collapse(false);
+		            sel.addRange(range);
+		        }
+		    } else if (document.selection && document.selection.createRange) { 
+		        range = document.selection.createRange();
+		        range.pasteHTML(text);
+		        range.select();
+		    }
+		},
+
+		imageWidget: function(){
+			//Class for Widget Handling the upload of Files
+			var _idSuffix = this.attr("id");
+			var row = $('<div/>',{
+				"class":"row"
+			}).append($('<div/>',{
+				id :"imgErrMsg_" + _idSuffix
+			}));
+			var container = $('<div/>',{'class':"tabbable tabs-left col-md-12"});
+			var navTabs = $('<ul/>',
+									{ class: "nav nav-tabs shadow3"
+							}).append($('<li/>',
+										{ class:"active"
+									}).append($('<a/>',{
+											"href":"#uploadImageBar_" + _idSuffix,
+											"data-toggle":"tab"
+										}).html("From Computer")
+							)).append($('<li/>').append($('<a/>',{
+											"href":"#imageFromLinkBar_" + _idSuffix,
+											"data-toggle":"tab"
+										}).html("From URL")));
+
+			var tabContent 		= $("<div/>", {class:"tab-content"});
+			var uploadImageBar  = $("<div/>",{
+				id: "uploadImageBar_" + _idSuffix,
+				class: "tab-pane active"
+			});
+
+			handleFileSelect = function(evt) {
+    			var files = evt.target.files; // FileList object
+				var output = [];
+				for (var i = 0, f; f = files[i]; i++) {
+					//Loop thorugh all the files
+					if(!f.type.match('image.*') || !f.name.match(/(?:gif|jpg|png|jpeg)$/)){ //Process only Images
+						methods.showMessage.apply(this,["imgErrMsg_" + _idSuffix,"Invalid file type"]);
+						continue;
+					}
+					var reader = new FileReader();
+					reader.onload = (function(imageFile){
+						return function(e){
+							//Render Thumnails
+							var li = $('<li/>',{class:"col-xs-12 col-sm-6 col-md-3 col-lg-3"});
+							var a = $('<a/>',{
+								href:"javascript:void(0)",
+								class:"thumbnail"
+							});
+							var image = $('<img/>',{
+								src:e.target.result,
+								title:escape(imageFile.name)
+							}).appendTo(a).click(function(){
+								$('#imageList_' + _idSuffix).data('current', $(this).attr('src'));
+								});
+							li.append(a).appendTo($('#imageList_' + _idSuffix));
+						}
+					})(f);
+					reader.readAsDataURL(f);					
+				}				
+			}
+			var chooseFromLocal = $('<input/>',{
+				type: "file",
+				class:"inline-form-control",
+				multiple: "multiple"
+			});
+			chooseFromLocal.on('change', handleFileSelect);
+			uploadImageBar.append(chooseFromLocal);
+			var imageFromLinkBar = $("<div/>",{
+				id: "imageFromLinkBar_" + _idSuffix,
+				class: "tab-pane"
+			});		
+			var getImageURL = $("<div/>", {class:"input-group"});
+			var imageURL = $('<input/>',{
+				type: "url",
+				class:'form-control',
+				id:"imageURL_" + _idSuffix,
+				placeholder: "Enter URL"
+			}).appendTo(getImageURL);
+			var getURL = $("<button/>",{
+				class:"btn btn-outline-success go-btn",
+				type:"button"
+			}).html("Go!").click(function(){
+				var url = $('#imageURL_' + _idSuffix).val();
+				if(url ==''){
+					methods.showMessage.apply(this,["imgErrMsg_" + _idSuffix,"Please enter image url"]);
+					return false;
+				}
+				var li = $('<li/>',{class:"span6 col-xs-12 col-sm-6 col-md-3 col-lg-3"});
+				var a = $('<a/>',{
+					href:"javascript:void(0)",
+					class:"thumbnail"
+				});
+				var image = $('<img/>',{
+					src:url,
+				}).error(function(){
+				  	methods.showMessage.apply(this,["imgErrMsg_" + _idSuffix,"Invalid image url"]);
+				  	return false;
+				}).load( function() { $(this).appendTo(a).click(function(){
+					$('#imageList_' + _idSuffix).data('current', $(this).attr('src'));
+				});
+				li.append(a).appendTo($('#imageList_' + _idSuffix));
+			});
+			}).appendTo($("<span/>", {class:"input-group-btn form-control-button-right"}).appendTo(getImageURL));
+
+			imageFromLinkBar.append(getImageURL);
+			tabContent.append(uploadImageBar).append(imageFromLinkBar);
+			container.append(navTabs).append(tabContent);						
+
+			var imageListContainer = $("<div/>",{'class': 'col-xs-12 col-sm-12 col-md-12 col-lg-12'});
+			var imageList = $('<ul/>',{"class":"thumbnails padding-top list-unstyled",
+										"id": 'imageList_' + _idSuffix
+			}).appendTo(imageListContainer);
+			row.append(container).append(imageListContainer);
+			return row;
+		},
+
+		tableWidget: function(mode){
+			//Function to generate the table input form
+			var idExtn = "_" + $(this).attr("id");
+			if (typeof mode!=='undefined') {
+				idExtn = "_" + editorObj.attr("id") + "_Edt";
+			}
+			var tblCntr = $('<div/>',{ //Outer Container Div
+				class:"row-fluid"
+				}).append($('<div/>',{ //Err Message Div
+				 	id :"tblErrMsg"+idExtn 
+				})).append($('<form/>',{ //Form 
+					id:"tblForm"+idExtn 
+					}).append($('<div/>',{ //Inner Container Div
+						class:"row" 
+						}).append($('<div/>',{ //Left input Container Div
+							id :"tblInputsLeft"+idExtn,
+							class:"col-xs-12 col-sm-6 col-md-6 col-lg-6"
+							}).append($('<label/>',{ for:"tblRows"+idExtn,	text:"Rows"}
+							)).append($('<input/>',{
+								id:"tblRows"+idExtn,
+								type:"text",
+								class:"form-control form-control-width",
+								value:2
+							})).append($('<label/>',{ for:"tblColumns"+idExtn,	text:"Columns"}
+							)).append($('<input/>',{
+								id:"tblColumns"+idExtn,
+								type:"text",
+							 	class:"form-control form-control-width",
+							 	value:2
+							})).append($('<label/>',{ for:"tblWidth"+idExtn, text:"Width"}
+							)).append($('<input/>',{
+								id:"tblWidth"+idExtn,
+								type:"text",
+								class:"form-control form-control-width",
+								value:400
+							})).append($('<label/>',{ for:"tblHeight"+idExtn, text:"Height"}
+							)).append($('<input/>',{ 
+								id:"tblHeight"+idExtn,
+								type:"text",
+								class:"form-control form-control-width", 
+							}))
+						).append($('<div/>',{ //Right input Container Div
+							id :"tblInputsRight"+idExtn,
+							class:"col-xs-12 col-sm-6 col-md-6 col-lg-6"
+							}).append($('<label/>',{ for:"tblAlign"+idExtn, text:"Alignment"}
+							)).append($('<select/>',{ id:"tblAlign"+idExtn, class:"form-control form-control-width"}
+								).append($('<option/>',{ text:"Choose", value:""}
+								)).append($('<option/>',{ text:"Left", value:"left"}
+								)).append($('<option/>',{ text:"Center", value:"center"}
+								)).append($('<option/>',{ text:"Right",	value:"right"}))
+							).append($('<label/>',{	for:"tblBorder"+idExtn, text:"Border size"}
+							)).append($('<input/>',{ 
+								id:"tblBorder"+idExtn,
+								type:"text",
+								class:"form-control form-control-width",
+								value:1
+							})).append($('<label/>',{ for:"tblCellspacing"+idExtn,	text:"Cell spacing"}
+							)).append($('<input/>',{
+								id:"tblCellspacing"+idExtn,
+								type:"text", 
+								class:"form-control form-control-width",
+								value:1
+							})).append($('<label/>',{ for:"tblCellpadding"+idExtn,	text:"Cell padding"}
+							)).append($('<input/>',{
+								id:"tblCellpadding"+idExtn,
+								type:"text",
+								class:"form-control form-control-width",
+								value:1
+							}))
+						)
+					)
+				)																	
+			return tblCntr;
+		},
+
+		imageAttributeWidget: function(){
+
+			var edtTablecntr=$('<div/>',{ 
+				class:"row-fluid"}
+				).append($('<div/>',{ //Err Message Div
+				 	id :"imageErrMsg" 
+				})).append($('<input/>',{ 
+						id:"imgAlt",
+						type:"text",
+						class:"form-control form-control-link ",
+						placeholder:"Alt Text",
+					})).append($('<input/>',{
+						id:"imgTarget",
+						class:"form-control form-control-link ",
+						type:"text",
+						placeholder:"Link Target"
+					})).append($('<input/>',{
+						id:"imgHidden",
+						type:"hidden"						
+					}))
+					
+				return edtTablecntr;
+
+		},
+
+		getHTMLTable: function(tblRows,tblColumns,attributes){
+			//Function to generate html table. Supplied arguments: tablerows-no.of rows, no.of columns, table attributes.
+			var tableElement = $('<table/>',{ class:"table" });
+			for (var i = 0; i < attributes.length; i++){
+				if(attributes[i].value!=''){
+					if(attributes[i].attribute=="width" || attributes[i].attribute=="height")
+	                  	tableElement.css(attributes[i].attribute,attributes[i].value);
+					else
+						tableElement.attr(attributes[i].attribute,attributes[i].value);
+				}
+			}
+			for(var i=1; i<=tblRows; i++){
+				var tblRow = $('<tr/>');
+			 	for(var j=1; j<=tblColumns; j++){
+			 		var tblColumn = $('<td/>').html('&nbsp;');
+			 		tblColumn.appendTo(tblRow);
+			 	}				
+				tblRow.appendTo(tableElement);
+			}
+			return tableElement;
+		},
+
+		init : function( options )
+		{
+			if ($(this).attr("id") === undefined || $(this).attr("id") === "") {
+				$(this).attr("id", Date.now());
+			}
+			var fonts = { "Sans serif"	 : "arial,helvetica,sans-serif",
+						  "Serif"	 	 : "times new roman,serif",
+						  "Wide"	 	 : "arial black,sans-serif",
+						  "Narrow"	 	 : "arial narrow,sans-serif",
+						  "Comic Sans MS": "comic sans ms,sans-serif",
+						  "Courier New"  : "courier new,monospace",
+						  "Garamond"	 : "garamond,serif",
+						  "Georgia"	 	 : "georgia,serif",
+						  "Tahoma" 		 : "tahoma,sans-serif",
+						  "Trebuchet MS" : "trebuchet ms,sans-serif",
+						  "Verdana" 	 : "verdana,sans-serif"};
+
+			var styles = {  "Heading 1":"<h1>",
+							"Heading 2":"<h2>",
+							"Heading 3":"<h3>",
+							"Heading 4":"<h4>",
+							"Heading 5":"<h5>",
+							"Heading 6":"<h6>",
+							"Paragraph":"<p>" };
+
+			var fontsizes = {	"Small"	:"2",
+								"Normal":"3",
+								"Medium":"4",
+								"Large"	:"5",
+								"Huge"	:"6" };
+
+			var colors = [	{ name: 'Black', hex: '#000000' },
+							{ name: 'MediumBlack', hex: '#444444' },
+							{ name: 'LightBlack', hex: '#666666' },
+							{ name: 'DimBlack', hex: '#999999' },
+							{ name: 'Gray', hex: '#CCCCCC' },
+							{ name: 'DimGray', hex: '#EEEEEE' },
+							{ name: 'LightGray', hex: '#F3F3F3' },
+							{ name: 'White', hex: '#FFFFFF' },
+
+							{ name: 'libreak', hex: null },
+
+							{ name: 'Red', hex: '#FF0000' },
+							{ name: 'Orange', hex: '#FF9900' },
+							{ name: 'Yellow', hex: '#FFFF00' },
+							{ name: 'Lime', hex: '#00FF00' },
+							{ name: 'Cyan', hex: '#00FFFF' },
+							{ name: 'Blue', hex: '#0000FF' },
+							{ name: 'BlueViolet', hex: '#8A2BE2' },
+							{ name: 'Magenta', hex: '#FF00FF' },
+
+							{ name: 'libreak', hex: null },
+							
+							{ name: 'LightPink', hex: '#FFB6C1'},
+							{ name: 'Bisque', hex: '#FCE5CD'},
+							{ name: 'BlanchedAlmond', hex: '#FFF2CC'},
+							{ name: 'LightLime', hex: '#D9EAD3'},
+							{ name: 'LightCyan', hex: '#D0E0E3'},
+							{ name: 'AliceBlue', hex: '#CFE2F3'},
+							{ name: 'Lavender', hex: '#D9D2E9'},
+							{ name: 'Thistle', hex: '#EAD1DC'},
+
+							{ name: 'LightCoral', hex: '#EA9999' },
+							{ name: 'Wheat', hex: '#F9CB9C' },
+							{ name: 'NavajoWhite', hex: '#FFE599' },
+							{ name: 'DarkSeaGreen', hex: '#B6D7A8' },
+							{ name: 'LightBlue', hex: '#A2C4C9' },
+							{ name: 'SkyBlue', hex: '#9FC5E8' },
+							{ name: 'LightPurple', hex: '#B4A7D6' },
+							{ name: 'PaleVioletRed', hex: '#D5A6BD' },
+
+							{ name: 'IndianRed', hex: '#E06666' },
+							{ name: 'LightSandyBrown', hex: '#F6B26B' },
+							{ name: 'Khaki', hex: '#FFD966' },
+							{ name: 'YellowGreen', hex: '#93C47D' },
+							{ name: 'CadetBlue', hex: '#76A5AF' },
+							{ name: 'DeepSkyBlue', hex: '#6FA8DC' },
+							{ name: 'MediumPurple', hex: '#8E7CC3' },
+							{ name: 'MediumVioletRed', hex: '#C27BA0' },
+
+							{ name: 'Crimson', hex: '#CC0000' },
+							{ name: 'SandyBrown', hex: '#E69138' },
+							{ name: 'Gold', hex: '#F1C232' },
+							{ name: 'MediumSeaGreen', hex: '#6AA84F' },
+							{ name: 'Teal', hex: '#45818E' },
+							{ name: 'SteelBlue', hex: '#3D85C6' },
+							{ name: 'SlateBlue', hex: '#674EA7' },
+							{ name: 'VioletRed', hex: '#A64D79' },
+
+							{ name: 'Brown', hex: '#990000' },
+							{ name: 'Chocolate', hex: '#B45F06' },
+							{ name: 'GoldenRod', hex: '#BF9000' },
+							{ name: 'Green', hex: '#38761D' },
+							{ name: 'SlateGray', hex: '#134F5C' },
+							{ name: 'RoyalBlue', hex: '#0B5394' },
+							{ name: 'Indigo', hex: '#351C75' },
+							{ name: 'Maroon', hex: '#741B47' },
+
+							{ name: 'DarkRed', hex: '#660000' },
+							{ name: 'SaddleBrown', hex: '#783F04' },
+							{ name: 'DarkGoldenRod', hex: '#7F6000' },
+							{ name: 'DarkGreen', hex: '#274E13' },
+							{ name: 'DarkSlateGray', hex: '#0C343D' },
+							{ name: 'Navy', hex: '#073763' },
+							{ name: 'MidnightBlue', hex: '#20124D' },
+							{ name: 'DarkMaroon', hex: '#4C1130' } ];
+
+			var specialchars = [{ name:"Exclamation ", text:"!"},
+								{ name:"At", text:"@"},
+								{ name:"Hash", text:"#"},
+								{ name:"Percentage", text:"%"},
+								{ name:"Uppercase", text:"^"},
+								{ name:"Ampersand", text:"&"},
+								{ name:"Asterisk", text:"*"},
+								{ name:"OpenBracket", text:"("},
+								{ name:"CloseBracket", text:")"},
+								{ name:"Underscore", text:"_"},
+								{ name:"Hiphen", text:"-"},
+								{ name:"Plus", text:"+"},
+								{ name:"Equalto", text:"="},
+								{ name:"OpenSquareBracket", text:"["},
+								{ name:"CloseSquareBracket", text:"]"},
+								{ name:"OpenCurly", text:"{"},
+								{ name:"CloseCurly", text:"}"},
+								{ name:"Pipe", text:"|"},
+								{ name:"Colon", text:":"},
+								{ name:"Semicolon", text:";"},
+								{ name:"Single quote", text:"&#39;"},
+								{ name:"Double quote", text:"&#34;"},
+								{ name:"Left single curly quote", text:"&lsquo;"},
+								{ name:"right single curly quote", text:"&rsquo;"},
+								{ name:"Forward-slash", text:"&#47;"},
+								{ name:"Back-slash", text:"&#92;"},
+								{ name:"LessThan", text:"<"},
+								{ name:"GreaterThan", text:">"},
+								{ name:"QuestionMark", text:"?"},
+								{ name:"Tilda", text:"~"},
+								{ name:"Grave accent", text:"`"},
+								{ name:"Micron", text:"&micro;"},
+								{ name:"Paragraph sign", text:"&para;"},
+								{ name:"Plus/minus", text:"&plusmn;"},
+								{ name:"Trademark", text:"&trade;"},
+								{ name:"Copyright", text:"&copy;"},
+								{ name:"Registered", text:"&reg;"},
+								{ name:"Section", text:"&sect;"},
+								{ name:"right double angle quotes", text:"&#187;"},
+								{ name:"fraction one quarter", text:"&#188;"},
+								{ name:"fraction one half", text:"&#189;"},
+								{ name:"fraction three quarters", text:"&#190;"},
+								{ name:"Dollar", text:"$"},
+								{ name:"Euro", text:"&euro;"},
+								{ name:"Pound", text:"&pound;"},
+								{ name:"Yen", text:"&yen;"},
+								{ name:"Cent", text:"&#162;"},
+								{ name:"IndianRupee", text:"&#8377;"},];
+			
+			var menuItems = { 'fonteffects': true,
+							  'texteffects': true,
+							  'aligneffects': true,
+							  'textformats':true,
+							  'actions' : true,
+							  'insertoptions' : true,
+							  'extraeffects' : true,
+							  'advancedoptions' : true,
+							  'screeneffects':true,
+
+							  'fonts'	: { "select":true,
+											"default": "Font",
+											"tooltip": "Fonts",
+											"commandname": "fontName",
+											"custom":null },
+
+							  'styles'	: { "select":true,
+											"default": "Formatting",
+											"tooltip": "Paragraph Format",
+											"commandname": "formatBlock",
+												"custom":null },
+
+							 'font_size': {	"select":true,
+											"default": "Font size",
+											"tooltip": "Font Size",
+											"commandname":"fontSize", 
+											"custom":null },
+
+							  'color'	: { "text":"A",
+											"icon": "fa fa-font", 
+											"tooltip": "Text/Background Color",
+											"commandname":null,
+											"custom":function(button){
+													var editor = $(this);
+													var flag = 0;
+													var paletteCntr   = $('<div/>',{id:"paletteCntr",class:"activeColour", css :{"display":"none","width":"335px"}}).click(function(event){event.stopPropagation();});
+													var paletteDiv    = $('<div/>',{id:"colorpellete"});
+													var palette       = $('<ul />',{id:"color_ui"}).append($('<li />').css({"width":"145px","display":"Block","height":"25px"}).html('<div>Text Color</div>'));
+													var bgPalletteDiv = $('<div/>',{id:"bg_colorpellete"});
+													var bgPallette    = $('<ul />',{id:"bgcolor_ui"}).append($('<li />').css({"width":"145px","display":"Block","height":"25px"}).html('<div>Background Color</div>'));
+													if(editor.data("colorBtn")){
+														flag = 1;
+														editor.data("colorBtn",null);
+													}
+													else
+														editor.data("colorBtn",1);
+													if(flag==0){
+														for (var i = 0; i < colors.length; i++){
+															if(colors[i].hex!=null){
+															    palette.append($('<li />').css('background-color', colors[i].hex).mousedown(function(event){ event.preventDefault();}).click(function(){															
+																	var hexcolor = methods.rgbToHex.apply(this,[$(this).css('background-color')]);
+																	methods.restoreSelection.apply(this);
+																	methods.setStyleWithCSS.apply(this);
+																	document.execCommand('forecolor',false,hexcolor);
+																	$('#paletteCntr').remove();
+
+																	editor.data("colorBtn",null);
+																}));
+
+																bgPallette.append($('<li />').css('background-color', colors[i].hex).mousedown(function(event){ event.preventDefault();}).click(function(){															
+																var hexcolor = methods.rgbToHex.apply(this,[$(this).css('background-color')]);
+																methods.restoreSelection.apply(this);
+																methods.setStyleWithCSS.apply(this);
+																document.execCommand('backColor',false,hexcolor);
+																$('#paletteCntr').remove();
+																editor.data("colorBtn",null);
+																}));
+															}
+															else{
+																palette.append($('<li />').css({"width":"145px","display":"Block","height":"5px"}));
+																bgPallette.append($('<li />').css({"width":"145px","display":"Block","height":"5px"}));
+															}
+														} 
+														palette.appendTo(paletteDiv);
+														bgPallette.appendTo(bgPalletteDiv);
+														paletteDiv.appendTo(paletteCntr);
+														bgPalletteDiv.appendTo(paletteCntr)																												
+														paletteCntr.insertAfter(button);
+														$('#paletteCntr').slideDown('slow');
+													}
+													else 
+														$('#paletteCntr').remove();
+												}},
+							
+							  'bold'	: { "text": "B", 
+											"icon": "fa fa-bold", 
+											"tooltip": "Bold", 
+											"commandname":"bold", 
+											"custom":null },
+
+						      'italics'	: { "text":"I", 
+											"icon":"fa fa-italic", 
+											"tooltip":"Italics", 
+											"commandname":"italic",
+											"custom":null },
+
+						     'underline': { "text":"U", 
+											"icon":"fa fa-underline", 
+											"tooltip":"Underline", 
+											"commandname":"underline",
+											"custom":null },
+											
+						     'strikeout': { "text": "Strikeout", 
+											"icon":"fa fa-strikethrough", 
+											"tooltip": "Strike Through", 
+											"commandname":"strikeThrough", 
+											"custom":null },
+
+						     'ol'		: { "text": "N", 
+											"icon": "fa fa-list-ol", 
+											"tooltip": "Insert/Remove Numbered List", 
+											"commandname":"insertorderedlist", 
+											"custom":null },
+
+						     'ul'		: { "text": "Bullet", 
+											"icon": "fa fa-list-ul", 
+											"tooltip": "Insert/Remove Bulleted List", 
+											"commandname":"insertunorderedlist", 
+											"custom":null },
+
+						     'undo'		: { "text": "undo", 
+											"icon": "fa fa-undo", 
+											"tooltip": "Undo", 
+											"commandname":"undo", 
+											"custom":null },
+
+						     'redo'		: { "text": "redo", 
+											"icon": "fa fa-repeat", 
+											"tooltip": "Redo", 
+											"commandname":"redo", 
+											"custom":null },
+
+						     'l_align'	: { "text": "leftalign", 
+											"icon": "fa fa-align-left", 
+											"tooltip": "Align Left", 
+											"commandname":"justifyleft", 
+											"custom":null },
+
+						     'r_align'	: { "text": "rightalign", 
+											"icon": "fa fa-align-right", 
+											"tooltip": "Align Right", 
+											"commandname":"justifyright", 
+											"custom":null },
+
+						     'c_align'	: { "text": "centeralign", 
+											"icon": "fa fa-align-center", 
+											"tooltip": "Align Center", 
+											"commandname":"justifycenter", 
+											"custom":null },
+
+						     'justify'	: { "text": "justify", 
+											"icon": "fa fa-align-justify", 
+											"tooltip": "Justify", 
+											"commandname":"justifyfull", 
+											"custom":null },
+
+							  'unlink'	: { "text": "Unlink", 
+											"icon": "fa fa-unlink", 
+											"tooltip": "Unlink", 
+											"commandname":"unlink", 
+											"custom":null },
+
+						   'insert_link': { "modal": true,
+						   					"modalId": "InsertLink_" + $(this).attr("id"),
+											"icon":"fa fa-link", 
+											"tooltip": "Insert Link", 
+											"modalHeader": "Insert Hyperlink",
+											"modalBody": $('<div/>',{   class:"form-group"
+																	}).append($('<div/>',{
+																		id :"errMsg_" + $(this).attr("id")
+																	})).append($('<input/>',{
+																		type:"text",
+																		id:"inputText_" + $(this).attr("id"),
+																		class:"form-control form-control-link ",
+																		placeholder:"Text to Display",
+																	})).append($('<input/>',{
+																		type:"text",
+																		id:"inputUrl_" + $(this).attr("id"),
+																		required:true,
+																		class:"form-control form-control-link",
+																		placeholder:"Enter URL"
+																	})),
+											"beforeLoad":function(){ 
+												editorObj = this;
+												var _idSuffix = "_" + this.attr("id");
+												$('#inputText' + _idSuffix);
+												$('#inputUrl' + _idSuffix);
+												$(".alert").alert("close");
+												if($(editorObj).data('currentRange')!=''){ 
+													$('#inputText_' +  _idSuffix).val($(editorObj).data('currentRange'));
+												}
+											},
+											"onSave":function(){
+												var urlPattern = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+												var _idSuffix = "_" + editorObj.attr("id");
+												var targetText = $('#inputText' + _idSuffix).val();
+												var targetURL  = $('#inputUrl' + _idSuffix).val();
+												var range      = $(editorObj).data('currentRange');
+												if(targetURL ==''){
+													methods.showMessage.apply(editorObj,["errMsg","Please enter url"]);
+													return false;
+												}												
+												if(!targetURL.match(urlPattern)){
+													methods.showMessage.apply(editorObj,["errMsg","Enter valid url"]);
+													return false;
+												}													
+												if(range=='' && targetText==''){ 
+													targetText =targetURL;	
+												}
+												if(navigator.userAgent.match(/MSIE/i) || navigator.userAgent.match(/Windows NT.*Trident\//)){	
+													var targetLink='<a href="'+targetURL+'" target="_blank">'+targetText+'</a>';
+													methods.restoreSelection.apply(editorObj,[targetLink,'html']);
+												}
+												else{
+												    methods.restoreSelection.apply(editorObj, [targetText]);																																		
+													document.execCommand('createLink',false,targetURL);
+												}
+												$(editorObj).data("editor").find('a[href="'+targetURL+'"]').each(function(){ $(this).attr("target", "_blank"); });
+												$(".alert").alert("close");
+												$("#InsertLink" + _idSuffix).modal("hide");
+												$(editorObj).data("editor").focus();
+												return false;
+											}},
+
+						   'insert_img'	: { "modal": false,// change by lakhan
+						   					"modalId": "InsertImage_" + $(this).attr("id"), 
+											"icon":"fa fa-picture-o", 
+											"tooltip": "Insert Image", 
+											"modalHeader": "Insert Image",
+											"modalBody": methods.imageWidget.apply(this),
+											"beforeLoad":function(){
+												editorObj = this;
+												var _idSuffix = editorObj.attr("id");
+												$('#imageURL_' + _idSuffix).val("");
+												$("#uploadImageBar_" + _idSuffix + " :input").val("");
+												$('#imageList_' + _idSuffix).data('current',"");																																				
+											},
+											"onSave": function(){
+												var _idSuffix = "_" + editorObj.attr("id");
+												methods.restoreSelection.apply(this);												
+												if($('#imageList' + _idSuffix).data('current')){
+													if(navigator.userAgent.match(/MSIE/i) || navigator.userAgent.match(/Windows NT.*Trident\//)){
+														var imageStr = '<img src="'+$('#imageList' + _idSuffix).data('current')+'"/>'
+														methods.restoreSelection.apply(this,[imageStr,'html'])
+													}
+													else{
+														document.execCommand('insertimage', false, $('#imageList' + _idSuffix).data('current'));
+													}
+												}
+												else{
+													methods.showMessage.apply(this,["imgErrMsg" + _idSuffix,"Please select an image"]);
+													return false;
+												}
+												$("#InsertImage" + _idSuffix).modal("hide");
+												$(this).data("editor").focus();
+											}},
+
+						'insert_table'	: { "modal": true,
+					   						"modalId": "InsertTable_" + $(this).attr("id"), 
+											"icon":"fa fa-table", 
+											"tooltip": "Insert Table", 
+											"modalHeader": "Insert Table",
+											"modalBody":methods.tableWidget.apply(this),
+											"beforeLoad":function(){
+												editorObj = this;
+												$('#tblForm_' + editorObj.attr("id")).each (function(){ this.reset(); });																																	
+											},
+											"onSave": function(){
+												_idSuffix = "_" + editorObj.attr("id");
+												methods.restoreSelection.apply(this);
+												var tblRows        = $('#tblRows' + _idSuffix).val();
+												var tblColumns     = $('#tblColumns' + _idSuffix).val();
+												var tblWidth       = $('#tblWidth' + _idSuffix).val();
+												var tblHeight      = $('#tblHeight' + _idSuffix).val();
+												var tblAlign       = $('#tblAlign'  + _idSuffix).val();
+												var tblBorder      = $('#tblBorder' + _idSuffix).val();
+												var tblCellspacing = $('#tblCellspacing' + _idSuffix).val();
+												var tblCellpadding = $('#tblCellpadding' + _idSuffix).val();
+												var intReg 		   = /^[0-9]+$/;
+												var cssReg 		   = /^auto$|^[+-]?[0-9]+\.?([0-9]+)?(px|em|ex|%|in|cm|mm|pt|pc)?$/ig;
+												var numReg 		   = /^[0-9]+\.?([0-9])?$/;
+												
+												if(!tblRows.match(intReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Rows must be a positive number"]);
+													return false;
+												}													
+												if(!tblColumns.match(intReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Columns must be a positive number"]);
+													return false;
+												}
+												if(tblWidth!="" && !tblWidth.match(cssReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Please enter positive number with or without a valid CSS measurement unit (px,em,ex,%,in,cm,mm,pt,pc)"]);
+													return false;
+												}
+												if(tblHeight!="" && !tblHeight.match(cssReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Please enter positive number with or without a valid CSS measurement unit (px,em,ex,%,in,cm,mm,pt,pc)"]);
+													return false;
+												}
+												if(tblBorder!="" && !tblBorder.match(numReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Border size must be a positive number"]);
+													return false;
+												}
+												if(tblCellspacing!="" && !tblCellspacing.match(numReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Cell spacing must be a positive number"]);
+													return false;
+												}
+												if(tblCellpadding!="" && !tblCellpadding.match(numReg)){
+													methods.showMessage.apply(this,["tblErrMsg","Cell padding must be a positive number"]);
+													return false;
+												}
+
+												var htmlTableCntr = $('<div/>');
+												var tblAttributes = [	
+																		{attribute:"align",value:tblAlign},
+																		{attribute:"border",value:tblBorder},
+																		{attribute:"cellspacing",value:tblCellspacing},
+																		{attribute:"cellpadding",value:tblCellpadding},
+																		{attribute:"width",value:tblWidth},
+																		{attribute:"height",value:tblHeight},
+																	];
+												var htmlTable     = methods.getHTMLTable.apply(this, [tblRows, tblColumns, tblAttributes]);
+												htmlTable.appendTo(htmlTableCntr);
+												if(navigator.userAgent.match(/MSIE/i) || navigator.userAgent.match(/Windows NT.*Trident\//))
+												methods.restoreSelection.apply(this,[htmlTableCntr.html(),'html']);
+												else
+												document.execCommand('insertHTML', false, htmlTableCntr.html());
+												$("#InsertTable" + _idSuffix).modal("hide");
+												$(this).data("editor").focus();
+											}},
+
+						   'hr_line'	: { "text": "HR", 
+											"icon":"fa fa-minus", 
+											"tooltip": "Horizontal Rule", 
+											"commandname":"insertHorizontalRule", 
+											"custom":null },
+
+						   'block_quote': { "text": "Block Quote", 
+											"icon":"fa fa-quote-right", 
+											"tooltip": "Block Quote", 
+											"commandname":null, 
+											"custom":function(){ 
+												methods.setStyleWithCSS.apply(this);
+												if(navigator.userAgent.match(/MSIE/i) || navigator.userAgent.match(/Windows NT.*Trident\//)){													 
+													document.execCommand('indent', false, null); 	
+												}
+												else{
+													document.execCommand('formatBlock', false, '<blockquote>');
+												}
+											}},						   
+
+						   'indent'		: { "text": "Indent", 
+											"icon":"fa fa-indent", 
+											"tooltip": "Increase Indent", 
+											"commandname":"indent", 
+											"custom":null },
+
+						   'outdent'	: { "text": "Outdent", 
+											"icon":"fa fa-outdent", 
+											"tooltip": "Decrease Indent", 
+											"commandname":"outdent", 
+											"custom":null },
+
+							'print'		: { "text": "Print", 
+											"icon":"fa fa-print", 
+											"tooltip": "Print", 
+											"commandname":null, 
+											"custom":function(){
+											oDoc = $(this).data("editor");
+											var oPrntWin = window.open("","_blank","width=450,height=470,left=400,top=100,menubar=yes,toolbar=no,location=no,scrollbars=yes");
+											oPrntWin.document.open();
+											oPrntWin.document.write("<!doctype html><html><head><title>Print</title></head><body onload=\"print();\">" + oDoc.html() + "</body></html>");
+											oPrntWin.document.close();
+											}},
+
+							'rm_format'	: { "text": "Remove format", 
+											"icon":"fa fa-eraser", 
+											"tooltip": "Remove Formatting", 
+											"commandname":"removeformat", 
+											"custom":null },
+
+							'select_all': { "text": "Select all", 
+											"icon":"fa fa-file-text", 
+											"tooltip": "Select All", 
+											"commandname":null, 
+											"custom":function(){ 
+												document.execCommand("selectall", null, null);												    
+											}},
+
+							'togglescreen':{ "text": "Toggle Screen",
+											 "icon": "fa fa-arrows-alt",
+											 "tooltip": "Toggle Screen",
+											 "commandname":null,
+											 "custom":function(button, parameters){
+												$(this).data("editor").parent().toggleClass('fullscreen');
+												var statusdBarHeight=0;
+												if($(this).data("statusBar").length)
+												{
+													statusdBarHeight = $(this).data("statusBar").height();
+												}
+												if($(this).data("editor").parent().hasClass('fullscreen'))
+													$(this).data("editor").css({"height":$(this).data("editor").parent().height()-($(this).data("menuBar").height()+statusdBarHeight)-13});
+						                        else
+													$(this).data("editor").css({"height":""});
+						                    }},
+
+							'splchars'	: { "text": "S", 
+											"icon": "fa fa-asterisk", 
+											"tooltip": "Insert Special Character", 
+											"commandname":null, 
+											"custom":function(button){
+													methods.restoreIESelection.apply(this);
+													var flag =0;
+													var splCharDiv = $('<div/>',{id:"specialchar", class:"specialCntr", css :{"display":"none"}}).click(function(event) { event.stopPropagation();});
+													var splCharUi  = $('<ul />',{id:"special_ui"});
+													var editor_Content = this; 
+													if($(this).data("editor").data("splcharsBtn")){
+														flag = 1;
+														$(this).data("editor").data("splcharsBtn", null);
+													}
+													else
+														$(this).data("editor").data("splcharsBtn", 1);
+
+													if(flag==0){
+														for (var i = 0; i < specialchars.length; i++){															
+															splCharUi.append($('<li />').html(specialchars[i].text).attr('title',specialchars[i].name).mousedown(function(event){ event.preventDefault();}).click(function(event){
+																if(navigator.userAgent.match(/MSIE/i) || navigator.userAgent.match(/Windows NT.*Trident\//)){
+																	var specCharHtml = $(this).html();
+																	methods.insertTextAtSelection.apply(this,[specCharHtml,'html']);
+																}
+																else{
+																	document.execCommand('insertHTML',false,$(this).html());
+																}
+																$('#specialchar').remove();
+																$(editor_Content).data("editor").data("splcharsBtn", null);
+															}));
+														}														
+														splCharUi.prependTo(splCharDiv);
+														splCharDiv.insertAfter(button)
+														$('#specialchar').slideDown('slow');
+													}
+													else
+														$('#specialchar').remove();
+											}},
+
+							'source'	: { "text": "Source", 
+											"icon":"fa fa-code", 
+											"tooltip": "Source", 
+											"commandname":null, 
+											"custom":function(button, params){ methods.getSource.apply(this, [button, params]) } },
+											"params": {"obj":null},
+										   };
+
+			var menuGroups = {'texteffects' : ['bold', 'italics', 'underline', 'color'],
+							  'aligneffects': ['l_align','c_align', 'r_align', 'justify'],
+							  'textformats': ['indent', 'outdent', 'block_quote', 'ol', 'ul'],
+							  'fonteffects' : ['fonts', 'styles', 'font_size'],
+							  'actions' : ['undo', 'redo'],
+							  'insertoptions' : ['insert_link', 'unlink', 'insert_img', 'insert_table'],
+							  'extraeffects' : ['strikeout', 'hr_line', 'splchars'],
+							  'advancedoptions' : ['print', 'rm_format', 'select_all', 'source'],
+							  'screeneffects' : ['togglescreen']
+							};
+
+			var settings = $.extend({				
+				'texteffects':true,
+				'aligneffects':true,
+				'textformats':true,
+				'fonteffects':true,
+				'actions' : true,
+				'insertoptions' : true,
+				'extraeffects' : true,
+				'advancedoptions' : true,
+				'screeneffects':true,
+				'bold': true,
+				'italics': true,
+				'underline':true,
+				'ol':true,
+				'ul':true,
+				'undo':true,
+				'redo':true,
+				'l_align':true,
+				'r_align':true,
+				'c_align':true,
+				'justify':true,
+				'insert_link':true,
+				'unlink':true,
+				'insert_img':false,//hide by lakhan 
+				'hr_line':true,
+				'block_quote':true,
+				'source':true,
+				'strikeout':true,
+				'indent':true,
+				'outdent':true,
+				'fonts':fonts,
+				'styles':styles,
+				'print':true,
+				'rm_format':true,
+				'status_bar':true,
+				'font_size':fontsizes,
+				'color':colors,
+				'splchars':specialchars,
+				'insert_table':true,
+				'select_all':true,
+				'togglescreen':true
+			},options);
+
+	       	var containerDiv = $("<div/>",{ class : "row-fluid Editor-container" });
+			var $this = $(this).hide();	       	
+	       	$this.after(containerDiv); 
+	       	var menuBar = $( "<div/>",{ id : "menuBarDiv_" + $(this).attr("id"),
+								  		class : "row-fluid line-control-menu-bar"
+							}).prependTo(containerDiv);
+	       	var editor  = $( "<div/>",{	class : "Editor-editor",
+										css : {overflow: "auto"},
+										contenteditable:"true"
+						 	}).appendTo(containerDiv);
+			var statusBar = $("<div/>", {	id : "statusbar_" + $(this).attr("id"),
+											class: "row-fluid line-control-status-bar",
+											unselectable:"on",
+							}).appendTo(containerDiv);
+	       	$(this).data("menuBar", menuBar);
+	       	$(this).data("editor", editor);
+	       	$(this).data("statusBar", statusBar);
+	       	var editor_Content = this;
+	       	if(settings['status_bar']){
+				editor.keyup(function(event){
+					var wordCount = methods.getWordCount.apply(editor_Content);
+					var charCount = methods.getCharCount.apply(editor_Content);
+					$(editor_Content).data("statusBar").html('<div class="label">'+'Words : '+wordCount+'</div>');
+					$(editor_Content).data("statusBar").append('<div class="label">'+'Characters : '+charCount+'</div>');
+            	});
+	        }	        
+	       	
+	       	
+	       	for(var item in menuItems){
+	       		if(!settings[item] ){ //if the display is not set to true for the button in the settings.	       		
+	       			if(settings[item] in menuGroups){
+	       				for(var each in menuGroups[item]){
+	       					settings[each] = false;
+	       				}
+	       			}
+	       			continue;
+	       		}
+	       		if(item in menuGroups){
+	       			var group = $("<div/>",{class:"btn-group"});	       			
+	       			for(var index=0;index<menuGroups[item].length;index++){
+	       				var value = menuGroups[item][index];	       				
+	       				if(settings[value]){
+       						var menuItem = methods.createMenuItem.apply(this,[menuItems[value], settings[value], true]);
+       						group.append(menuItem);
+       					}
+       					settings[value] = false;
+	       			}
+	       			menuBar.append(group);	       				       			
+	       		}
+	       		else{
+	       			var menuItem = methods.createMenuItem.apply(this,[menuItems[item], settings[item],true]);
+	       			menuBar.append(menuItem);
+	       		}	       		
+	       	}
+
+	       	//For contextmenu	       	
+		    $(document.body).mousedown(function(event) {
+		        var target = $(event.target);
+		        if (!target.parents().andSelf().is('#context-menu')) { // Clicked outside
+		            $('#context-menu').remove();
+		        } 
+		        if (!target.parents().andSelf().is('#specialchar') && (target.closest('a').html()!='<i class="fa fa-asterisk"></i>')) { //Clicked outside
+		        	if($("#specialchar").is(':visible'))
+		            {
+						$(editor_Content).data("editor").data("splcharsBtn", null);
+						$('#specialchar').remove();
+		           	}
+		        }
+		        if (!target.parents().andSelf().is('#paletteCntr') && (target.closest('a').html()!='<i class="fa fa-font"></i>')) { //Clicked outside
+		        	if($("#paletteCntr").is(':visible'))
+		            {
+						$(editor_Content).data("editor").data("colorBtn", null);
+						$('#paletteCntr').remove();
+		           	}
+		        }
+		    });
+		    editor.bind("contextmenu", function(e){
+	       		if($('#context-menu').length)
+	       			$('#context-menu').remove();
+	       		var cMenu 	= $('<div/>',{id:"context-menu"
+	       						}).css({position:"absolute", top:e.pageY, left: e.pageX, "z-index":9999
+	       						}).click(function(event){
+								    event.stopPropagation();
+								});
+	       		var cMenuUl = $('<ul/>',{ class:"dropdown-menu on","role":"menu"});
+	       		e.preventDefault();
+	       		if($(e.target).is('a')){
+	       			methods.createLinkContext.apply(this,[e,cMenuUl]);
+	       			cMenuUl.appendTo(cMenu);
+	       		    cMenu.appendTo('body');
+	       		}
+	       		else if($(e.target).is('td') || $(e.target).is("th")){
+	       			methods.createTableContext.apply(this,[e,cMenuUl]);
+	       			cMenuUl.appendTo(cMenu);
+	       		    cMenu.appendTo('body');
+	       		}
+	       		else if($(e.target).is('img')){
+	       				       			
+	       			methods.createImageContext.apply(this,[e,cMenuUl]);
+	       			cMenuUl.appendTo(cMenu);
+	       			cMenu.appendTo('body');
+	       		}
+	       	});
+		},
+		createLinkContext: function(event,cMenuUl){
+			var cMenuli = $('<li/>').append($('<a/>',{
+				id:"rem_link",
+				"href":"javascript:void(0)",
+				"text":"RemoveLink"
+			}).click(function(e){
+				return function(){
+				$(e.target).contents().unwrap();
+				$('#context-menu').remove();
+			}}(event)));
+			cMenuli.appendTo(cMenuUl);
+
+		},
+
+		createImageContext: function(event,cMenuUl){
+			var cModalId="imgAttribute";
+			var cModalHeader="Image Attributes";
+			var imgModalBody=methods.imageAttributeWidget.apply(this,["edit"]);
+			var onSave = function(){
+				var urlPattern = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+				var imageAlt = $('#imgAlt').val();
+				var imageTarget = $('#imgTarget').val();
+				if(imageAlt==""){
+					methods.showMessage.apply(this,["imageErrMsg","Please enter image alternative text"]);
+					return false;
+				}
+				if(imageTarget!=""&& !imageTarget.match(urlPattern)){
+					methods.showMessage.apply(this,["imageErrMsg","Please enter valid url"]);
+					return false;
+				}
+				if($("#imgHidden").val()!=""){
+                        var imgId = $("#imgHidden").val();
+	       				$("#"+imgId).attr('alt',imageAlt);
+	       				if(imageTarget!="")
+	       				{
+	       				 if($("#wrap_"+imgId).length)
+	       				 $("#wrap_"+imgId).attr("href",imageTarget);	
+	       				 else
+					     $("#"+imgId).wrap($('<a/>',{ id:"wrap_"+imgId,href:imageTarget,target:"_blank"}));
+					    }
+					    else
+					    {
+					    	if($("#wrap_"+imgId).length)
+					    	$("#"+imgId).unwrap();
+					    }
+	       		}	       		
+				$("#imgAttribute").modal("hide");
+				editorObj.data("editor").focus();
+			};
+			methods.createModal.apply(this,[cModalId,cModalHeader, imgModalBody, onSave]);
+			var modalTrigger = $('<a/>',{	href:"#"+cModalId,
+       										"text":"Image Attributes",
+											"data-toggle":"modal"
+			}).click( function(e){ 
+				return function(){	
+			        $('#context-menu').remove();
+			        var stamp   = (new Date).getTime();			        
+			        $('#imgAlt').val($(e.target).closest("img").attr("alt"));
+			        $('#imgTarget').val('');
+
+			        if(typeof $(e.target).closest("img").attr("id")!=="undefined"){	
+			            var identifier = $(e.target).closest("img").attr("id");		        	
+			        	$('#imgHidden').val(identifier);
+			        	if($('#wrap_'+identifier).length)
+			        		$('#imgTarget').val($('#wrap_'+identifier).attr("href"));
+			        	else
+			        	 	$('#imgTarget').val('');	
+			        }
+			    	else{			    		
+			    		$(e.target).closest("img").attr("id","img_"+stamp)
+			    		$('#imgHidden').val("img_"+stamp);
+			    	}
+					
+			}}(event));
+			cMenuUl.append($('<li/>').append(modalTrigger))
+					.append($('<li/>').append($('<a/>',{text:"Remove Image"}).click( 
+						function(e) { return function(){ 
+								$('#context-menu').remove();
+								$(e.target).closest("img").remove(); 
+						}}(event))));
+		},
+
+		createTableContext: function(event,cMenuUl){
+			var _idSuffix = "_" + editorObj.attr("id") + "_Edt";
+			var modalId="editProperties_" + editorObj.attr("id");
+			$("#" + modalId).remove();
+       		var modalHeader="Table Properties";
+       		var tblModalBody= methods.tableWidget.apply(this,["edit"]);
+       		var onSave = function(){ 
+       			var tblWidthEdt			= $('#tblWidth' + _idSuffix).val();
+       			var tblHeightEdt		= $('#tblHeight' + _idSuffix).val();
+       			var tblBorderEdt		= $('#tblBorder' + _idSuffix).val();
+       			var tblAlignEdt	        = $('#tblAlign' + _idSuffix).val();
+       			var tblCellspacingEdt	= $('#tblCellspacing' + _idSuffix).val();
+       			var tblCellpaddingEdt	= $('#tblCellpadding' + _idSuffix).val();
+				var tblEdtCssReg 		= /^auto$|^[+-]?[0-9]+\.?([0-9]+)?(px|em|ex|%|in|cm|mm|pt|pc)?$/ig;
+				var tblEdtNumReg 		= /^[0-9]+\.?([0-9])?$/;
+				if(tblWidthEdt!="" && !tblWidthEdt.match(tblEdtCssReg)){
+					methods.showMessage.apply(this,["tblErrMsgEdt","Please enter positive number with or without a valid CSS measurement unit (px,em,ex,%,in,cm,mm,pt,pc)"]);
+					return false;
+				}
+				if(tblHeightEdt!="" && !tblHeightEdt.match(tblEdtCssReg)){
+					methods.showMessage.apply(this,["tblErrMsgEdt","Please enter positive number with or without a valid CSS measurement unit (px,em,ex,%,in,cm,mm,pt,pc)"]);
+					return false;
+				}
+				if(tblBorderEdt!="" && !tblBorderEdt.match(tblEdtNumReg)){
+					methods.showMessage.apply(this,["tblErrMsgEdt","Border size must be a positive number"]);
+					return false;
+				}
+				if(tblCellspacingEdt!="" && !tblCellspacingEdt.match(tblEdtNumReg)){
+					methods.showMessage.apply(this,["tblErrMsgEdt","Cell spacing must be a positive number"]);
+					return false;
+				}
+				if(tblCellpaddingEdt!="" && !tblCellpaddingEdt.match(tblEdtNumReg)){
+					methods.showMessage.apply(this,["tblErrMsgEdt","Cell padding must be a positive number"]);
+					return false;
+				}
+				$(event.target).closest('table').css('width',tblWidthEdt);
+				if(tblHeightEdt!="")
+				$(event.target).closest('table').css('height',tblHeightEdt);
+			    $(event.target).closest('table').attr('align',tblAlignEdt);
+			    $(event.target).closest('table').attr('border',tblBorderEdt);
+			    $(event.target).closest('table').attr('cellspacing',tblCellspacingEdt);
+			    $(event.target).closest('table').attr('cellpadding',tblCellpaddingEdt);
+			    $("#" + modalId).modal("hide");
+				editorObj.data("editor").focus();
+       		};
+       		methods.createModal.apply(this,[modalId,modalHeader, tblModalBody, onSave]);
+       		var modalTrigger = $('<a/>',{	href:"#"+modalId,
+       										"text":"Table Properties",
+											"data-toggle":"modal"
+			}).click( function(e){ return function(){
+					var _idSuffix = "_" + editorObj.attr("id") + "_Edt";
+			        $('#context-menu').remove();			
+					$('#tblRows' + _idSuffix).val($(e.target).closest('table').prop('rows').length);			
+				    $('#tblColumns' + _idSuffix).val($(e.target).closest('table').find('tr')[0].cells.length);
+				    $('#tblRows' + _idSuffix).attr('disabled','disabled');   
+				    $('#tblColumns' + _idSuffix).attr('disabled','disabled');
+				    $('#tblWidth' + _idSuffix).val($(e.target).closest('table').get(0).style.width);
+				    $('#tblHeight' + _idSuffix).val($(e.target).closest('table').get(0).style.height);
+				    $('#tblAlign' + _idSuffix).val($(e.target).closest('table').attr("align"));
+				    $('#tblBorder' + _idSuffix).val($(e.target).closest('table').attr("border"));
+				    $('#tblCellspacing' + _idSuffix).val($(e.target).closest('table').attr("cellspacing"));
+				    $('#tblCellpadding' + _idSuffix).val($(e.target).closest('table').attr("cellpadding"));
+
+				    
+			}}(event));
+       		
+			cMenuUl.append($('<li/>',{class:"dropdown-submenu",css:{display:"block"}})
+       						.append($('<a/>',{"tabindex":"-1", href:"javascript:void(0)","text":"Row"}))
+       						.append($('<ul/>',{class:"dropdown-menu"})
+       								.append($('<li/>').append($('<a/>',{
+											id:"tbl_addrow",
+											"href":"javascript:void(0)",
+											"text":"Add Row"
+											}).click(function(e){
+												return function(){
+													$("#context-menu").remove();
+													var selectedRow = $(e.target).closest("tr");
+													var newRow = $("<tr/>");
+													selectedRow.children().each(function() {
+														var newColumn = $("<" + $(this).prop("nodeName") + "/>").html("&nbsp;");
+														newRow.append(newColumn);
+													});
+													selectedRow.after(newRow);
+												}
+											}(event))))
+       								.append($('<li/>').append($('<a/>',{text:"Remove Row"}).click( 
+											function(e) { return function(){ 
+													$('#context-menu').remove();
+													$(e.target).closest("tr").remove(); 
+											}}(event))))
+       			)).append($('<li/>',{class:"dropdown-submenu",css:{display:"block"}})
+   						.append($('<a/>',{"tabindex":"-1", href:"javascript:void(0)","text":"Column"}))
+   						.append($('<ul/>',{class:"dropdown-menu"})
+   								.append($('<li/>').append($('<a/>',{
+										id:"tbl_addcolumn",
+										"href":"javascript:void(0)",
+										"text":"Add Column",
+										}).click(function(e){
+											return function(){
+												$('#context-menu').remove();
+												var selectedCell = $(e.target);
+												var columnIndex = selectedCell.siblings().addBack().index(selectedCell);
+												selectedCell.closest("table").find("tr").each(function() {
+													var cellInSelectedColumn = $(this).children(":eq(" + columnIndex + ")");
+													var newCell = $("<" + cellInSelectedColumn.prop("nodeName") + "/>").html("&nbsp;");
+													cellInSelectedColumn.after(newCell);
+												});
+											}
+										}(event))))
+   								.append($('<li/>').append($('<a/>',{text:"Remove Column"}).click( 
+										function(e) { return function(){ 
+												$('#context-menu').remove();
+												var selectedCell = $(e.target);
+												var columnIndex = selectedCell.siblings().addBack().index(selectedCell);
+												selectedCell.closest("table").find("tr").each(function() {
+													$(this).children(":eq(" + columnIndex + ")").remove();
+												});
+										}}(event))))
+   						));
+			cMenuUl.append($('<li/>').append(modalTrigger))
+					.append($('<li/>',{class:"divider"}))
+					.append($('<li/>').append($('<a/>',{text:"Remove Table"}).click( 
+						function(e){ return function(){ 
+								$('#context-menu').remove();
+								$(e.target).closest("table").remove(); 
+						}}(event))));
+
+		},
+
+		createModal: function(modalId, modalHeader, modalBody, onSave){
+			//Create a Modal for the button.		
+			var modalTrigger = $('<a/>',{	href:"#"+modalId,
+											role:"button",
+											class:"btn btn-default",
+											"data-toggle":"modal"
+			});
+			var modalElement = $('<div/>',{ id: modalId,
+								           class: "modal fade",
+								              tabindex: "-1",
+								              role: "dialog",
+								              "aria-labelledby":"h3_"+modalId,
+								              "aria-hidden":"true"
+								          }).append($('<div>',{
+								            	class:"modal-dialog"
+								         		}).append($('<div>',{
+							            			class:"modal-content"
+									         		}).append($('<div>',{
+									           			class:"modal-header panel-head-4"
+									           			}).append($('<button/>',{
+										                	type:"button",
+										                	class:"close h4-color",
+										                	"data-dismiss":"modal",
+										                	"aria-hidden":"true"
+										               		}).html('x')
+									            		).append($('<h4/>',{
+									            			class:"modal-title h4-color",
+									                		id:"h3_"+modalId
+									           				}).html(modalHeader))
+									         		).append($('<div>',{
+									           			class:"modal-body"
+									           			}).append(modalBody)
+									          		).append($('<div>',{
+									            		class:"modal-footer"
+									         			}).append($('<button/>',{
+									                		type:"button",
+									                		class:"btn btn-outline-secondary",
+									                		"data-dismiss":"modal",
+									                		"aria-hidden":"true"
+									               			}).html('Cancel')
+								           	  			).append($('<button/>',{
+								                			type:"button",
+								                			class:"btn btn-outline-success",
+								               				}).html('Done').mousedown(function(e){
+								                			e.preventDefault();
+								               				}).click(function(obj){return function(){onSave.apply(obj)}}(this)))
+	         								  		)
+       											)	
+       									);	
+			modalElement.appendTo("body");
+			return modalTrigger;
+		},
+
+		createMenuItem: function(itemSettings, options, returnElement){
+			//Function to perform multiple actions.supplied arguments: itemsettings-list of buttons and button options, options: options for select input, returnelement: boolean.
+			//1.Create Select Options using Bootstrap Dropdown.
+			//2.Create modal dialog using bootstrap options
+			//3.Create menubar buttons binded with corresponding event actions
+			typeof returnElement !== 'undefined' ? returnElement : false;
+
+			if(itemSettings["select"]){
+				var menuWrapElement = $("<div/>", {class:"btn-group"});
+				var menuElement 	= $("<ul/>", {class:"dropdown-menu"});
+				menuWrapElement.append($('<a/>',{
+										class:"btn btn-default dropdown-toggle",
+										"data-toggle":"dropdown",
+										"href":"javascript:void(0)",
+										"title":itemSettings["tooltip"]
+										}).html(itemSettings["default"]).append($("<span/>",{class:"caret"})).mousedown(function(e){
+											e.preventDefault();
+										}));
+				$.each(options,function(i,v){
+					var option = $('<li/>')
+		            $("<a/>",{
+		              tabindex : "-1",
+		              href : "javascript:void(0)"
+		            }).html(i).appendTo(option);
+
+		            option.click(function(){
+		            	$(this).parent().parent().data("value", v);
+		            	$(this).parent().parent().trigger("change")
+		            });
+		            menuElement.append(option);		            
+		        });
+				var action = "change";
+		    }
+		    else if(itemSettings["modal"]){
+		    	var menuWrapElement = methods.createModal.apply(this,[itemSettings["modalId"], itemSettings["modalHeader"], itemSettings["modalBody"], itemSettings["onSave"]]);		    			    	
+		    	var menuElement = $("<i/>");
+		    	if(itemSettings["icon"])
+					menuElement.addClass(itemSettings["icon"]);
+				else
+					menuElement.html(itemSettings["text"]);
+				menuWrapElement.append(menuElement);
+				menuWrapElement.mousedown(function(obj, methods, beforeLoad){
+					return function(e){
+						e.preventDefault();
+						methods.saveSelection.apply(obj);
+						if(beforeLoad){		    	    
+							beforeLoad.apply(obj); 					
+				    	}
+					}
+				}(this, methods,itemSettings["beforeLoad"]));
+				menuWrapElement.attr('title', itemSettings['tooltip']);
+				return menuWrapElement;
+		    }
+			else{
+				var menuWrapElement = $("<a/>",{href:'javascript:void(0)', class:'btn btn-default'});
+				var menuElement = $("<i/>");
+				if(itemSettings["icon"])
+					menuElement.addClass(itemSettings["icon"]);
+				else
+					menuElement.html(itemSettings["text"]);
+				var action = "click";
+			}
+			if(itemSettings["custom"]){
+				menuWrapElement.bind(action, (function(obj, params){
+						return function(){
+						methods.saveSelection.apply(obj);
+						itemSettings["custom"].apply(obj, [$(this), params]);
+						}
+					})(this, itemSettings['params']));
+			}
+			else{
+				menuWrapElement.data("commandName", itemSettings["commandname"]);
+				menuWrapElement.data("editor", $(this).data("editor"));
+				menuWrapElement.bind(action, function(){ methods.setTextFormat.apply(this) });
+			}
+			menuWrapElement.attr('title', itemSettings['tooltip']);
+			menuWrapElement.css('cursor', 'pointer');
+			menuWrapElement.append(menuElement);
+			if(returnElement)
+				return menuWrapElement;
+			$(this).data("menuBar").append(menuWrapElement);
+		},
+
+		setTextFormat: function(){			
+			//Function to run the text formatting options using execCommand.
+			methods.setStyleWithCSS.apply(this);
+			document.execCommand($(this).data("commandName"), false, $(this).data("value") || null);
+			$(this).data("editor").focus();
+			return false;
+		},
+
+		getSource: function(button, params){
+			//Function to show the html source code to the editor and toggle the text display.
+			var flag = 0;
+			if(button.data('state')){
+				flag = 1;
+				button.data('state', null);
+			}
+			else
+				button.data('state', 1);
+			$(this).data("source-mode", !flag);
+			var editor = $(this).data('editor');
+			var content;
+			if(flag==0){ //Convert text to HTML			
+				content = document.createTextNode(editor.html());
+				editor.empty();
+				editor.attr('contenteditable', false);
+				preElement = $("<pre/>",{
+					contenteditable: true					
+					});
+				preElement.append(content);				
+				editor.append(preElement);
+				button.parent().siblings().hide();
+				button.siblings().hide();
+			}
+			else{
+				var html = editor.children().first().text();
+				editor.html(html);
+				editor.attr('contenteditable', true);
+				button.parent().siblings().show();
+				button.siblings().show();
+			}
+		},
+
+		countWords: function(node){
+			//Function to count the number of words recursively as the text grows in the editor.
+			var count = 0;	
+    		var textNodes = node.contents().filter(function() { 
+				return (this.nodeType == 3); 
+			});			
+			for(var index=0;index<textNodes.length;index++){
+				text = textNodes[index].textContent;
+				text = text.replace(/[^-\w\s]/gi, ' ');
+				text = $.trim(text);
+				count = count + text.split(/\s+/).length;
+			}
+			var childNodes = node.children().each(function(){
+				count = count + methods.countWords.apply(this, [$(this)]);
+			});
+			return count
+		},
+
+		countChars: function(node){
+			//Function to count the number of characters recursively as the text grows in the editor.
+			var count = 0;
+    		var textNodes = node.contents().filter(function() { 
+				return (this.nodeType == 3); 
+			});
+			for(var index=0;index<textNodes.length;index++){
+				text = textNodes[index].textContent;
+				count = count + text.length;
+			}
+			var childNodes = node.children().each(function(){
+				count = count + methods.countChars.apply(this, [$(this)]);
+			});
+			return count;
+		},
+
+		getWordCount: function(){
+			//Function to return the word count of the text in the editor
+			return methods.countWords.apply(this, [$(this).data("editor")]);
+		},
+
+		getCharCount: function(){
+			//Function to return the character count of the text in the editor
+			return methods.countChars.apply(this, [$(this).data("editor")]);
+		},
+
+		rgbToHex: function(rgb){
+			//Function to convert the rgb color codes into hexadecimal code
+			rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+			return "#" +
+			("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+			("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+			("0" + parseInt(rgb[3],10).toString(16)).slice(-2);
+		},
+
+		showMessage: function(target,message){
+			//Function to show the error message. Supplied arguments:target-div id, message-message text to be displayed.
+			var errorDiv=$('<div/>',{ class:"alert alert-danger"	}
+				).append($('<button/>',{
+									type:"button",
+									class:"close",
+									"data-dismiss":"alert",
+									html:"x"
+				})).append($('<span/>').html(message));
+			errorDiv.appendTo($('#'+target));
+			setTimeout(function() { $('.alert').alert('close'); }, 3000);								
+		},
+		
+		getText: function(){
+			//Function to get the source code.
+			if(!$(this).data("source-mode"))
+				return $(this).data("editor").html();
+			else
+				return $(this).data("editor").children().first().text();
+		},
+
+		setText: function(text){
+			//Function to set the source code
+			if(!$(this).data("source-mode"))
+				$(this).data("editor").html(text);
+			else
+				$(this).data("editor").children().first().text(text);
+		},
+
+		setStyleWithCSS:function(){
+			if(navigator.userAgent.match(/MSIE/i)){	//for IE10
+				try {
+                	Editor.execCommand("styleWithCSS", 0, false);
+            	} catch (e) {
+	                try {
+	                    Editor.execCommand("useCSS", 0, true);
+	                } catch (e) {
+	                    try {
+	                        Editor.execCommand('styleWithCSS', false, false);
+	                    }
+	                    catch (e) {
+	                    }
+	                }
+            	}
+			}
+			else{
+				document.execCommand("styleWithCSS", null, true);
+			}
+		},				
+
+	}
+
+	$.fn.Editor = function( method ){
+
+		if ( methods[method] ) {
+			return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+		} else if ( typeof method === 'object' || ! method ) {
+			return methods.init.apply( this, arguments );
+		} else {
+			$.error( 'Method ' +  method + ' does not exist on jQuery.Editor' );
+		}    
+	}; 
+})( jQuery );

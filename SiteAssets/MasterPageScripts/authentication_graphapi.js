@@ -1,1 +1,102 @@
-var a0_0x1b7ecc=a0_0x48f6;(function(_0x207758,_0x37bb02){var _0x40b367=a0_0x48f6,_0x59da33=_0x207758();while(!![]){try{var _0x5e4996=parseInt(_0x40b367(0x1d7))/0x1+parseInt(_0x40b367(0x1dc))/0x2+parseInt(_0x40b367(0x1e9))/0x3*(-parseInt(_0x40b367(0x1db))/0x4)+-parseInt(_0x40b367(0x1d8))/0x5*(-parseInt(_0x40b367(0x1ea))/0x6)+-parseInt(_0x40b367(0x1da))/0x7+-parseInt(_0x40b367(0x1e2))/0x8+-parseInt(_0x40b367(0x1e1))/0x9*(-parseInt(_0x40b367(0x1de))/0xa);if(_0x5e4996===_0x37bb02)break;else _0x59da33['push'](_0x59da33['shift']());}catch(_0x20594a){_0x59da33['push'](_0x59da33['shift']());}}}(a0_0x3718,0xc971e));function a0_0x48f6(_0x26acb4,_0x11835d){var _0x3718a0=a0_0x3718();return a0_0x48f6=function(_0x48f65c,_0x59aedb){_0x48f65c=_0x48f65c-0x1d3;var _0xe27e3d=_0x3718a0[_0x48f65c];return _0xe27e3d;},a0_0x48f6(_0x26acb4,_0x11835d);}var clientid='895e6de8-6dbb-47e1-a171-af9b8ad5f5c2',tenant=a0_0x1b7ecc(0x1e3),redirecturl='https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/Pages/GuestPortalAdmin.aspx',token1='',authContext=new AuthenticationContext({'clientId':clientid,'tenant':tenant,'postLogoutRedirectUri':window[a0_0x1b7ecc(0x1f1)],'redirectUri':redirecturl,'endpoints':{'graphApiUri':a0_0x1b7ecc(0x1e7)},'cacheLocation':a0_0x1b7ecc(0x1eb)});function a0_0x3718(){var _0x1ed952=['3VqOGRD','1920NgBiCm','localStorage','_saveItem','acquireToken','STORAGE','Signed\x20in\x20as:\x20','handleWindowCallback','location','login','Not\x20signed\x20in.','getLoginError','isCallback','CONSTANTS','1116813IWSynH','635lRQTTu','USERNAME','5388621rPKEId','2665892kIKQLo','3248206wCRMvp','logintoken','10PvSILS','ready','log','8978661rSWyme','12142328CjWOxy','3c55c7bf-896d-4f85-aceb-124dca48c080','setItem','getCachedUser','userName','https://graph.microsoft.com','getItem'];a0_0x3718=function(){return _0x1ed952;};return a0_0x3718();}if(authContext[a0_0x1b7ecc(0x1d5)](window['location']['hash'])){authContext[a0_0x1b7ecc(0x1f0)]();var err=authContext[a0_0x1b7ecc(0x1d4)]();if(err){}}else{var user=authContext[a0_0x1b7ecc(0x1e5)]();user?(console['log'](a0_0x1b7ecc(0x1ef)+user[a0_0x1b7ecc(0x1e6)]),authContext[a0_0x1b7ecc(0x1ec)](authContext[a0_0x1b7ecc(0x1d6)][a0_0x1b7ecc(0x1ee)][a0_0x1b7ecc(0x1d9)],user[a0_0x1b7ecc(0x1e6)]),authContext[a0_0x1b7ecc(0x1ed)]('https://graph.microsoft.com',function(_0x4e3c89,_0x25e1c6){var _0x2c8d19=a0_0x1b7ecc;console[_0x2c8d19(0x1e0)](_0x25e1c6),console[_0x2c8d19(0x1e0)](_0x4e3c89);if(_0x4e3c89||!_0x25e1c6)return;localStorage[_0x2c8d19(0x1e4)]('logintoken',_0x25e1c6);})):(console['log'](a0_0x1b7ecc(0x1d3)),authContext[a0_0x1b7ecc(0x1f2)]());}$(document)[a0_0x1b7ecc(0x1df)](function(){setInterval(function(){var _0x2acaa0=a0_0x48f6;token1=localStorage['getItem'](_0x2acaa0(0x1dd)),token=localStorage[_0x2acaa0(0x1e8)](_0x2acaa0(0x1dd)),(token1==null||token1=='')&&authContext[_0x2acaa0(0x1ed)]('https://graph.microsoft.com',function(_0x58e323,_0x57bd19){var _0xff4930=_0x2acaa0;console[_0xff4930(0x1e0)](_0x57bd19),console[_0xff4930(0x1e0)](_0x58e323);if(_0x58e323||!_0x57bd19)return;localStorage[_0xff4930(0x1e4)]('logintoken',_0x57bd19),_0x57bd19=localStorage['getItem'](_0xff4930(0x1dd)),token1=localStorage[_0xff4930(0x1e8)]('logintoken');});},0x1388);});
+
+		var clientid="895e6de8-6dbb-47e1-a171-af9b8ad5f5c2";
+        var tenant="3c55c7bf-896d-4f85-aceb-124dca48c080";
+        var redirecturl = "https://adaptindia.sharepoint.com/sites/Titan_3_0_Master/Pages/GuestPortalAdmin.aspx";
+        //debugger
+
+
+var token1="";
+            // #1: Set up ADAL
+            var authContext = new AuthenticationContext({
+                clientId: clientid, //Need to change in client environment
+				tenant: tenant,  //Need to change in client environment
+                postLogoutRedirectUri: window.location,
+                redirectUri: redirecturl,  //Need to change in client environment
+				endpoints: {
+					graphApiUri: "https://graph.microsoft.com"
+				  },
+				  cacheLocation: "localStorage"
+			});
+
+            // #3: Handle redirect after token requests
+            if (authContext.isCallback(window.location.hash)) {
+
+                authContext.handleWindowCallback();
+                var err = authContext.getLoginError();
+                if (err) {
+                    // TODO: Handle errors signing in and getting tokens
+                }
+
+            } else {
+
+                // If logged in, get access token and make an API request
+                var user = authContext.getCachedUser();
+                if (user) {
+
+                    console.log('Signed in as: ' + user.userName);
+                    
+                    authContext._saveItem(authContext.CONSTANTS.STORAGE.USERNAME,user.userName)
+
+                    // #4: Get an access token to the Microsoft Graph API
+                    authContext.acquireToken("https://graph.microsoft.com",
+                        function (error, token) {
+                        
+                        console.log(token);
+                        console.log(error);
+
+                        
+                            if (error || !token) { 
+                                                        		
+                            		return;
+                            
+							}
+                            
+                            localStorage.setItem('logintoken',token);
+							
+                        }
+                    );
+                } else {
+
+                    console.log('Not signed in.');
+                    authContext.login();
+
+                }
+            }
+            
+            
+    
+    $(document).ready(function(){
+    
+    	setInterval(function(){
+    	//debugger;
+   		 token1=localStorage.getItem('logintoken');
+     token=localStorage.getItem('logintoken');
+
+     
+   		 if(token1==null || token1=="")
+   		 {
+    		
+    			authContext.acquireToken("https://graph.microsoft.com",
+                        function (error, token) {
+                        
+                        console.log(token);
+                        console.log(error);
+                        
+
+                            if (error || !token) { 
+                                                        	
+                            		return;
+                            
+							}
+							
+							localStorage.setItem('logintoken',token);
+							token=localStorage.getItem('logintoken');
+							token1=localStorage.getItem('logintoken');
+
+                            
+                        }
+                    );
+       	  }
+    	},5000);
+    	
+    });
