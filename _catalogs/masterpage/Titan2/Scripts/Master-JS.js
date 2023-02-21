@@ -1,4 +1,4 @@
-﻿ $(window).load(function() {
+ $(window).load(function() {
 		// Animate loader off screen
 		//&& strHref.indexOf(_spPageContextInfo.currentUICultureName.toLowerCase())==-1 
 		$(".se-pre-con").fadeOut("slow");;
