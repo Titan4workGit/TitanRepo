@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	    <link rel="stylesheet" href="css/home-style.css">
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        
+<style>
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+	
+.navbar-custom {
+	margin-bottom: 0px;
+}
+
+
+.container-content {
+	width:95%;
+	position:relative;
+}
+
+
+
+
+
+.panel-heading-question-detail {
+    padding: 20px 0px 20px 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+	
+.question-head-text-detail {
+    padding: 4px 12px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    background-color: #ff9e20 !important;
+    width: 100%;
+}
+
+
+.question-detail-area {
+	
+}
+.question-detail {
+	padding:0px 10px 0px 0px;
+}
+.question-detail h1 {
+	margin-top:0px;
+	font-size: 30px;
+	word-break: break-word;
+}
+.question-author-detail {
+    font-size: 16px;
+    font-weight: 700;
+}
+.question-description p {
+	font-size: 16px;
+	word-break: break-word;
+}
+	
+.attachment-badge {
+    display: block;
+    text-align: center;
+}
+.attachment-badge a {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #666 !important;
+    background-color: transparent !important;
+    border: 1px solid #666 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+
+.question-like-button, .question-reply-button, .question-edit-button, .question-delete-button{
+	display: inline-block;
+}	
+
+.question-like-button a, .question-reply-button a, .question-edit-button a, .question-delete-button a {
+    font-size: 16px;
+    color: #666;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.question-like-button a:hover, .question-reply-button a:hover, .question-edit-button a:hover, .question-delete-button a:hover {
+    color: #333;
+}
+.question-like-button p, .question-reply-button p, .question-edit-button p, .question-delete-button p {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.like-count span {
+    font-size: 14px;
+	font-weight: 600;
+}
+	
+.question-filter {
+	display:inline-block;
+	float: right;
+}
+.reply-box {
+	padding: 10px;
+    background: #e6e6e6;
+    border-radius: 8px;
+	clear: both;
+}
+.reply-box h4 {
+	margin-top:0px;
+	word-break: break-word;
+}
+	
+.reply-box-in {
+	padding: 10px;
+    background: #d2cfcf;#e6e6e6;
+    border-radius: 8px
+}
+.reply-box-in h4 {
+	margin-top:0px;
+	word-break: break-word;
+}
+.reply-author-detail {
+    font-size: 16px;
+    font-weight: 500;
+	display: inline-block;
+}
+
+.reply-author-detail span {
+    font-size: 16px;
+    font-weight: 700;
+	display: inline-block;
+}
+.comment-box {
+	padding: 10px;
+    background: #e6e6e6;
+    border-radius: 8px
+}
+
+.btn-post {
+    background-color: #386cbb;
+    color: #fff;
+	height: 53px;
+}
+
+
+	
+/*media-query-classes*/
+
+
+
+@media only screen and (min-width: 1200px) {
+li.dropdown-custom ul li {
+    display: inline-flex;
+}
+
+
+.open>.dropdown-menu#company {
+    display: flex;
+    flex: 1 auto;
+    left: -470px;
+    padding: 0px 0;
+}
+}
+
+@media (max-width: 425px) and (min-width: 320px) {
+
+.question-head-text-detail {
+    font-size: 20px;
+}
+.question-detail h1 {
+    font-size: 24px;
+}
+}
+	
+@media (max-width: 767px) and (min-width: 320px) {
+.question-detail {
+	padding:0px;
+}
+}
+	
+@media only screen and (width: 320px) {
+
+.close-margin {
+	margin-top:10px;
+}
+}
+/*media-query-classes*/
+
+	
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1297</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">09b61de8-1af9-4d65-b087-9f2a74187485</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1297, ADMIN-1645029823-1297</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">129700.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>
+    
+<body class="custom-scroll">
+	
+
+	
+
+	
+	
+<div class="container-fluid container-content pt40">
+	<div id="question_detail_main_area" class="col-sm-12 question-detail-area">
+		<div class="panel panel-default ">
+			<div class="panel-heading panel-heading-question-detail">
+				<span class="question-head-text-detail">Questions &amp; Answers</span>
+			</div>
+			<div class="panel-body pl20 pr20 pt0 pb20">
+				<div id=""  class="col-md-12 col-sm-12 question-detail">
+					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ?</h1>
+				<div class="col-md-12 col-sm-12 question-author-detail p0">
+					<span class="mr10"><img src="images/user.jpg" class="img-circle" width="36" height="36" alt=""/></span>
+					<span>Tom Patrick</span> - <span>24 Feb</span> at <span> 4:15 pm</span>
+				</div>
+				<div class="col-md-12 col-sm-12 question-description pl0 pr0 pb0 pt10">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Tellus cras adipiscing enim eu turpis egestas pretium. Mauris cursus mattis molestie a iaculis. Pretium lectus quam id leo in vitae turpis massa. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Nam at lectus urna duis convallis convallis tellus.</p>
+					
+					<p>Morbi quis commodo odio aenean sed adipiscing diam. Sed id semper risus in hendrerit gravida. Ultrices dui sapien eget mi. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Nunc lobortis mattis aliquam faucibus purus in. Curabitur vitae nunc sed velit dignissim. Platea dictumst quisque sagittis purus sit amet volutpat. Iaculis at erat pellentesque adipiscing commodo. Vestibulum sed arcu non odio euismod lacinia at quis. Nisl suscipit adipiscing bibendum est ultricies.</p>
+				</div>
+				<div class="col-md-12 col-sm-12 p0">
+				   <div class="attachment-badge mt-10">
+					<a href="#"><span>Attachment1.png</span> <span><i class="fa fa-eye"></i></span></a>
+					<a href="#"><span>Img1.png</span> <span><i class="fa fa-eye"></i></span></a>
+					<a href="#"><span>Img2.png</span> <span><i class="fa fa-eye"></i></span></a>
+					<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>     
+				   </div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 col-sm-12 pt10 pl0 pr0">
+					<span class="question-like-button"><a href="#"><i class="fa fa-thumbs-up"></i> </a> <p>Like</p> </span>
+					<span class="question-reply-button mml5 ml20"><a href="#"><i class="fa fa-reply"></i> </a> <p>Reply</p> </span>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 col-sm-12 p0 like-count">
+					<span>Patrick Gould, John Davis and 4 others like this</span>
+					<div class="form-group col-sm-3 col-xs-12 mpl0 tpl0 tpt10 mpt10 pr0 question-filter">
+					  <select class="form-control">
+						<option>Replied By</option>
+						<option>Name Here</option>
+						<option>Name Here</option>
+						<option>Name Here</option>
+					  </select>
+					</div>
+				</div>
+				<div id="reply_area">
+				    <div class="col-md-12 col-sm-12 reply-box mt5">
+						<div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb20 pt0">
+							<span class="mr10"><img src="images/user-1.jpg" class="img-circle" width="36" height="36" alt=""/></span>
+							<span>Patrick Gould</span> in reply to <span>Tom Patrick</span> - <span>24 Feb</span> at <span> 4:30 pm</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+						<div class="col-md-12 col-sm-12 p0">
+						   <div class="attachment-badge mt-10">
+							<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>     
+						   </div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-md-12 pt10 pl0 pr0">
+							<span class="question-like-button"><a href="#"><i class="fa fa-thumbs-up"></i> </a> <p>Like</p> </span>
+							<span class="question-reply-button mml5 ml20"><a href="#"><i class="fa fa-reply"></i> </a> <p>Reply</p> </span>
+							<span class="question-edit-button mml5 ml20"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+							<span class="question-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+						</div>
+						<div class="col-md-12 col-sm-12 reply-box-in mt5">
+							<div class="col-sm-12 reply-author-detail pl0 pr0 pb20 pt0">
+								<span class="mr10"><img src="images/user.jpg" class="img-circle" width="36" height="36" alt=""/></span>
+								<span>Tom Patrick</span> in reply to <span>Patrick Gould</span> - <span>24 Feb</span> at <span> 4:30 pm</span>
+							</div>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+							<div class="col-md-12 col-sm-12 p0">
+							   <div class="attachment-badge mt-10">
+								<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>     
+							   </div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-md-12 col-md-12 pt10 pl0 pr0">
+								<span class="question-like-button"><a href="#"><i class="fa fa-thumbs-up"></i> </a> <p>Like</p> </span>
+								<span class="question-reply-button mml5 ml20"><a href="#"><i class="fa fa-reply"></i> </a> <p>Reply</p> </span>
+								<span class="question-edit-button mml5 ml20"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+								<span class="question-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12  reply-box mt5">
+						<div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb20 pt0">
+							<span class="mr10"><img src="images/user-2.jpg" class="img-circle" width="36" height="36" alt=""/></span>
+							<span>John Davis</span> in reply to <span>Tom Patrick</span> - <span>24 Feb</span> at <span> 4:50 pm</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+							<div class="col-md-12 col-sm-12 p0">
+							   <div class="attachment-badge mt-10">
+								<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>     
+							   </div>
+							</div>
+							<div class="clearfix"></div>
+						<div class="col-md-12 col-sm-12 pt10 pl0 pr0">
+							<span class="question-like-button"><a href="#"><i class="fa fa-thumbs-up"></i> </a> <p>Like</p> </span>
+							<span class="question-reply-button mml5 ml20"><a href="#"><i class="fa fa-reply"></i> </a> <p>Reply</p> </span>
+							<span class="question-edit-button mml5 ml20"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+							<span class="question-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12  reply-box mt5">
+						<div class="col-sm-12 reply-author-detail pl0 pr0 pb20 pt0">
+							<span class="mr10"><img src="images/user-3.jpg" class="img-circle" width="36" height="36" alt=""/></span>
+							<span>Angela Parker</span> in reply to <span>Tom Patrick</span> - <span>24 Feb</span> at <span> 6:30 pm</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+							<div class="col-md-12 col-sm-12 p0">
+							   <div class="attachment-badge mt-10">
+								<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>     
+							   </div>
+							</div>
+							<div class="clearfix"></div>
+						<div class="col-md-12 col-sm-12 pt10 pl0 pr0">
+							<span class="question-like-button"><a href="#"><i class="fa fa-thumbs-up"></i> </a> <p>Like</p> </span>
+							<span class="question-reply-button mml5 ml20"><a href="#"><i class="fa fa-reply"></i> </a> <p>Reply</p> </span>
+							<span class="question-edit-button mml5 ml20"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+							<span class="question-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+							
+						</div>
+					</div>
+				</div>
+				<div id="comment_area">
+				    <div class="col-md-12 col-sm-12  comment-box mt5">
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 p0"><span class="mr10"><img src="images/user-3.jpg" class="img-circle" width="36" height="36" alt=""/></span></div>
+						<div class="col-lg-10 col-md-9 col-sm-8 col-xs-10 p0 tpl10 tpb10"><span><textarea class="form-control custom-control" rows="2" id="comment" style="resize:none;"></textarea></span></div>
+						
+						<button type="button" id="" class="btn btn-post pull-right pt10"><label>Post</label></button>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-12 pt10 text-center">
+					<button type="button" id="" class="btn btn-primary pt10"><label>View All Questions</label>
+					</button>
+					<button type="button" id="" class="btn btn-primary close-margin pt10"><label>Close</label>
+					</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	
+
+
+	
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+	
+
+
+
+</body>
+</html>

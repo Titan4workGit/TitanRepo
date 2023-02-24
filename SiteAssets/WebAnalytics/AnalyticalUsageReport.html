@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Attendance Report</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+	  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/css/padding.css">	
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/css/styles.css">	
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/jquery-ui.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/jquery-ui.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/Mytable.js"></script>	       	
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Polls/PollResults_New/FileSaver.min.js"></script>
+		<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> 
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/table2excel.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/sort-table.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/sort-table.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Attendance/assets/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/testpnp/pnp.js" type="text/javascript"></script>
+		<!--<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/Analytical_usageReport_new.js?v22"></script>-->
+		
+		<script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js"></script>
+		<link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+		
+		
+
+<style>
+
+.ajusting{
+   display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items:center;
+  -webkit-align-items:center;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -o-align-items:center;
+
+}
+
+.taging,
+#lbTotal,
+#lbWeb,
+#lbMob{
+  width:16%;
+  text-align:center;
+  font-size:14px;
+  color:#1d6ec0;
+}
+
+.taging{
+ font-size:12px !important;	
+}
+
+#lbTotal,lbWeb,lbMob{
+ font-size:16px;	
+}
+
+/*table#tblAllVisitedUser thead tr th:nth-child(1){
+	width:50% !important;
+}
+
+table#tblAllVisitedUser thead tr th:nth-child(2){
+	width:20% !important;
+}
+
+table#tblAllVisitedUser thead tr th:nth-child(3){
+	width:20% !important;
+}*/
+
+.analytical-user-image-text{
+	padding-left:10px !important;
+}
+
+
+.analytical-report-box .progress{
+ width:65%;
+ height:42px !important;	
+
+}
+
+.modal-header button.close{
+	min-width:1em !important;
+	color:#000;
+	background-color:#fff;
+	transition:0.5s;
+	line-height:1.3;
+}
+
+.modal-header button.close:hover{
+	background-color:#000;
+	color:#fff;
+}
+
+
+a[type="button"]{
+	color:#fff !important;
+	margin-bottom:5px;
+}
+
+table#tblAllVisitedUser tr td p:nth-child(2),
+table#tblNonActiveuser tr td p:nth-child(2){
+	font-size:12px !important;
+}
+
+#dvpieChart{
+ position:relative;	
+}
+
+
+#dvpieChart .canvasjs-chart-container:before{
+
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -5px;
+    background-color: #ffffff;
+    height: 26px;
+    width: 70px;
+    display: block;
+    z-index: 996;    
+
+}
+
+#dvpieChart:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    background-color: #ffffff;
+    height: 26px;
+    width: 70px;
+    display: block;
+    z-index: 996;    
+}
+
+#dvpieChart:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #ffffff;
+    height: 26px;
+    width: 70px;
+    display: block;
+    z-index: 996;    
+}
+
+#dvpieChart .covering_left{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -5px;
+    background-color: #ffffff;
+    height: 26px;
+    width: 70px;
+    display: block;
+    z-index: 996;    
+}
+
+
+
+#dvpieChart .covering_right{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background-color: #ffffff;
+    height: 26px;
+    width: 70px;
+    display: block;
+    z-index: 996;    
+}
+
+
+#attendance-report-filter{
+	width:100% !important;
+}
+
+html,body{
+ overflow-x:hidden;	
+}
+
+#tbContent tbody tr td p:nth-child(2),
+#tblContentEntry tbody tr td p:nth-child(2),
+#tblViewDept tbody tr td p:nth-child(2),
+#tblViewedPage tbody tr td p:nth-child(2){
+  	font-size:12px !important;
+}
+
+#tblContentEntry .analytical-user-image-box img,
+#tbContent .analytical-user-image-box img,
+#tblViewDept .analytical-user-image-box img,
+#tblViewedPage .analytical-user-image-box img,
+.analytical-user-image-box img{
+  
+}
+
+.Emailfont{
+	font-size:12px !important;
+}
+.progress{
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-image:linear-gradient(top,#ebebeb 0,#f5f5f5 100%);
+    background-image:-webkit-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);
+    background-image:-moz-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);
+    background-image:-ms-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);
+    background-image:-o-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);
+    border-radius: 4px;
+    box-shadow: inset 0 -2px 2px #fff !important;
+    border: 1px solid #d8d8d8 !important;
+    border-radius: 50px !important;
+
+}
+
+
+body{
+ padding-right:0 !Important;
+}
+
+.panel-head,
+.panel-body{
+ background-color: #f8f8fb87 !important;	
+}
+
+.analytical-report-box{
+ background: rgba(255,255,255,1) !important;
+ border:1px solid #e1e1e1;	
+
+}
+
+#selectByTask{
+    background:linear-gradient(to bottom, #fff, #e9e9e9);
+    background:-ms-linear-gradient(to bottom, #fff, #e9e9e9);
+	background:-moz-linear-gradient(to bottom, #fff, #e9e9e9);
+	background:-webkit-linear-gradient(to bottom, #fff, #e9e9e9);
+	background:-o-linear-gradient(to bottom, #fff, #e9e9e9);
+    min-height: 40px;
+    box-shadow: inset 0px 1px 0px #afafaf;
+}
+
+.attendance-report-btn-position{
+ padding-top:14px;	
+}
+
+#Userto_TopSpan{
+ padding:6px 25px 6px 0px;	
+}
+
+#Userto_TopSpan_EditorInput{
+  border:none !important;	
+}
+
+h3.chart-heading{
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    left: -10px;		
+}
+
+.analytical-report-box .progress{
+  padding:2px 0;	
+}
+
+.progress-bar{
+ border-radius:50px;
+ position:relative;
+}
+
+
+@media (min-width: 1200px){
+	
+.header-container {
+    width: 100% !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+}
+
+@media(max-width:767px){
+	
+.ajusting{
+ display:block;	
+}
+.taging,
+#lbTotal,
+#lbWeb,
+#lbMob{
+  width:100%;
+  text-align:left;
+}
+
+.analytical-report-box{
+ padding: 20px 5px;	
+}
+
+.analytical-report-box .progress{
+ width:100%;
+ height:42px !important;	
+
+}
+
+h3.chart-heading{
+     left: -5px;
+}
+
+	
+}
+
+@media(min-width:992px){
+
+.tab-content{
+ padding:0 5px;	
+}
+	
+}
+
+@media(max-width:992px){
+
+#tbluserActivity{
+ min-width:992px !important;	
+}
+	
+}
+
+
+@media(min-width:991px){
+
+#Non-Visited-User-modal .modal-dialog.custom-modal-dialog{
+ width:50% !important;	
+}
+
+#Non-Visited-User-modal .modal-dialog.custom-modal-dialog .table-responsive table{
+	min-width:600px !Important;
+}
+ 
+#Visited-User-modal .modal-dialog.custom-modal-dialog{
+ 	width:65.5% !important;
+}
+
+.custom-modal-dialog{
+ width:82%;	
+}
+	
+}
+
+
+@media(min-width:860px){
+
+.adjustingwidth{
+ width:94% !important;	
+}
+	
+}
+
+#od-loading {		
+  background: rgba(255,255,255,.8) url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/spinner_grey_40_transparent.gif') 50% 50% no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+}
+
+body.loading #od-loading {
+  display: block;
+}
+				
+		.chartWrapper {
+		  position: relative;
+		}
+		
+		.chartWrapper > canvas {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  pointer-events: none;
+		}
+		
+		.chartAreaWrapper {
+		  width: 600px;
+		  overflow-x: scroll;
+		}
+	
+		.search-box{
+		  max-width:100% !important;	
+		}
+		
+      .search-box input{
+	    max-width:200px !important;
+      }
+      #overlayq{
+		  background: #ffffff;
+		  color: #666666;
+		  position: fixed;
+		  height: 100%;
+		  width: 100%;
+		  z-index: 5000;
+		  top: 0;
+		  left: 0;
+		  float: left;
+		  text-align: center;
+		  padding-top: 25%;
+		  opacity: .80;
+		}
+		.spinner {
+		    margin: 0 auto;
+		    height: 64px;
+		    width: 64px;
+		    animation: rotate 0.8s infinite linear;
+		    border: 5px solid firebrick;
+		    border-right-color: transparent;
+		    border-radius: 50%;
+		}
+
+/* new css added on 08/9/2021 */
+
+#FilterChips {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 12px;
+}
+
+/* new css added on 14/9/2021 */
+
+.chart-heading2 {
+    margin-bottom: 16px !important;
+}
+.analytical-user-image-text {
+    font-size: 13px;
+}
+#List-of-Instances-modal .close-round {
+    top: 10px;
+}
+
+/* new css added on 22/9/2021 */
+
+#tbdyAllVisitedUsers tr td:nth-child(1) {
+    width: 55.5%;
+}
+#tbdyAllVisitedUsers tr td:nth-child(2) {
+    width: 28%;
+}
+#tbdyAllVisitedUsers tr td:nth-child(3) {
+    width: 16.5%;
+}
+
+</style>
+
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2356</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1a6410c1-fae9-4291-8f00-14aaced41947</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2356, ADMIN-1645029823-2356</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">235600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>		
+		<div id="od-loading"></div> 
+		<div class="container adjustingwidth">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Analytical Usage Report
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0 mb-8">
+								<div id="overlayq" style="display: none;">
+				<div class="spinner"></div> <br>	Loading...</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="row m-0 attendance-report-right-top-box">
+											<div class="col-xs-3 attendance-report-right-time-box-one">
+												<div class="text-center">
+													<p class="m-0">From Date</p>
+													<h3 class="m-0" id="Fromdt">12 Jan 2021</h3>
+												</div>
+											</div>
+											<div class="col-xs-3 attendance-report-right-time-box-one">
+												<div class="text-center">
+													<p class="m-0">To Date</p>
+													<h3 class="m-0" id="Todt">12 Mar 2021</h3>
+												</div>
+											</div>
+											<div class="col-xs-3 attendance-report-right-time-box-one">
+												<div class="text-center">
+													<p class="m-0">Total License</p>
+													<h3 class="m-0" id="lbttlLicenesedUser">2356</h3>
+												</div>
+											</div>
+											<div class="col-xs-3 attendance-report-right-time-box-three">
+												<div class="text-center">
+													<p class="m-0">Consumed License</p>
+													<h3 class="m-0" id="lbLicenesedUser"></h3>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12 analytical-btn-m">
+										<div class="text-right attendance-report-btn-position">
+											<div>
+												<button class="btn custom-btn mr5" type="button" data-toggle="modal" data-target="#attendance-report-filter">Get Report</button>
+												<!--<button class="btn custom-btn" type="button" id="btnReport">Refresh</button>-->
+											</div>
+											<div class="form-group custom-form-group mb0 mt15">
+												<select class="form-control" id="selectByTask" onchange="LoadDetailsActivities(this.value)">
+													<option value="Dashboard">Dashboard</option>
+													<option value="Viewed-Pages">Visited Pages</option>
+													<option value="Department-wise-activities">Department wise activities</option>
+													<option value="Viewed-write-up">Viewed Contents</option>
+													<option value="Content-Entry">Content Entry</option>
+													<option value="Details-Activities" onselect>Details Activities</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- dashboard -->
+								<div id="dashboard" class="row m-0 mt10">
+									<div class="col-xs-12">
+										<div class="analytical-report-box">
+											<div class="ajusting">
+												
+												<label id="lbTotal"></label>
+												
+												<div class="progress mb0">
+												  	<div class="progress-bar" role="progressbar" aria-valuenow="57" onclick="GetAllVisitedUserss();"
+												  aria-valuemin="0" aria-valuemax="100" style="" id="ProgressTtldiv" >												    	
+												  	</div>
+												  	<div class="progress-bar-deta" ><a href="#" onclick="GetAllVisitedUserss();" id="TotalVisit" ></a></div>
+												</div>
+												
+												<label id="" class="taging"><a href="#" data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="BindNonActiveUsers('');" >Non-Active User</a></label>
+											</div>
+											<div class="mt15 ajusting">
+												
+												<label id="lbWeb"></label>
+												
+												<div class="progress mb0">
+												  	<div class="progress-bar" role="progressbar" aria-valuenow="57" onclick="GetAllWebsiteVisitedUserss();"
+												  aria-valuemin="0" aria-valuemax="100" style="" id="ProgressWebdiv" >												    	
+												  	</div>
+												  	<div class="progress-bar-deta"><a href="#" onclick="GetAllWebsiteVisitedUserss();" id="WebVisit" ></a></div>
+												</div>
+												
+												<label id="" color:blue" class="taging"><a href="#" data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="BindNonActiveUsers('Website');" >Non-Active User</a></label>
+												
+											</div>
+											<div class="mt15 ajusting">
+												
+												<label id="lbMob"></label>
+												
+												<div class="progress mb0">
+												  	<div class="progress-bar" role="progressbar" aria-valuenow="57" onclick="GetAllMobileVisitedUserss();"
+												  aria-valuemin="0" aria-valuemax="100" style="" id="ProgressMobdiv" >												    	
+												  	</div>
+												  	<div class="progress-bar-deta" ><a href="#" onclick="GetAllMobileVisitedUserss();" id="MobVisit" ></a></div>
+												</div>
+												
+												<label id="" style="float:right" class="taging"><a href="#" data-toggle="modal" data-target="#Non-Visited-User-modal" onclick="BindNonActiveUsers('Mobile App');" >Non-Active User</a></label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="analytical-report-box">
+											<h3 class="m-0 chart-heading mb5 panel-heading-bg-txt-clr">Date wise Usage</h3>
+											<div class="chart-container" style="position: relative; height:377px; width:100%" id="dvlineChart">
+												<canvas id="line-Chart"></canvas>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="analytical-report-box">
+											<h3 class="m-0 chart-heading mb5 panel-heading-bg-txt-clr">Activities</h3>
+											<div class="chart-container" style="height: 377px; max-width: 920px; margin: 0px auto;" id="dvpieChart">
+							     <!--		<canvas id="pieChart" data-toggle="modal" data-target="#Visited-User-modal"></canvas>   -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Viewed Pages -->
+								<div id="Viewed-Pages" class="row m-0 mt30" style="display: none;">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-sm-6 col-xs-6">
+												<h3 class="m-0 chart-heading2 mb5">Visited Pages</h3>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<div class="text-right">
+												<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>  -->
+													<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblVisitedPages');">Export</a>
+												</div>
+											</div> 	
+										</div>
+										<div class="table-responsive attendance-report-table scrollbar-panel">   
+										   <table class="table mb-0 custom-table js-sort-table" id="tblVisitedPages">
+											    <thead>
+											    	<tr>
+											        	<th class="border-bottom-0">Page</th>
+												        <th class="text-center border-bottom-0" colspan="2">Over all </th>
+												        <th class="text-center border-bottom-0" colspan="2">Website</th>
+												        <th class="text-center border-bottom-0" colspan="2">Mobile</th>
+											        </tr>
+											        <tr>
+											        	<th class="text-left border-bottom-0"></th>
+												        <th class="text-left border-bottom-0 js-sort-number" >Total Visit </th>
+												        <th class="text-left border-bottom-0">Users</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Total Visit</th>
+												        <th class="text-left border-bottom-0">Users</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Total Visit</th>
+												        <th class="text-left border-bottom-0">Users</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbVisitedpages">
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Intranet
+												        </td>
+												        <td class="text-left">
+												        	<a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">1567</a>
+												        </td>
+												        <td>
+												        	<a href="#">12</a>
+												        </td>
+												        <td>
+												        	<a href="#">1234</a>
+												        </td>
+												        <td>
+												        	<a href="#">10</a>
+												        </td>
+												        <td>
+												        	<a href="#">498</a>
+												        </td>
+												        <td>
+												        	<a href="#">5</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Workplace
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">1234</a></td>
+												        <td>
+												        	<a href="#">10</a>
+												        </td>
+												        <td><a href="#">345</a></td>
+												        <td>
+												        	<a href="#">8</a>
+												        </td>
+												        <td>
+												        	<a href="#">1234</a>
+												        </td>
+												        <td>
+												        	<a href="#">4</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Task Dashboard
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">87</a></td>
+												        <td>
+												        	<a href="#">5</a>
+												        </td>
+												        <td><a href="#">67</a></td>
+												        <td>
+												        	<a href="#">4</a>
+												        </td>
+												        <td>
+												        	<a href="#">34</a>
+												        </td>
+												        <td>
+												        	<a href="#">2</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Document Library
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">89</a></td>
+												        <td>
+												        	<a href="#">4</a>
+												        </td>
+												        <td><a href="#">46</a></td>
+												        <td>
+												        	<a href="#">3</a>
+												        </td>
+												        <td>
+												        	<a href="#">56</a>
+												        </td>
+												        <td>
+												        	<a href="#">3</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Project Dashboard
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">23</a></td>
+												        <td>
+												        	<a href="#">3</a>
+												        </td>
+												        <td><a href="#">37</a></td>
+												        <td>
+												        	<a href="#">2</a>
+												        </td>
+												        <td>
+												        	<a href="#">23</a>
+												        </td>
+												        <td>
+												        	<a href="#">2</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Admin Panel
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">45</a></td>
+												        <td>
+												        	<a href="#">2</a>
+												        </td>
+												        <td><a href="#">23</a></td>
+												        <td>
+												        	<a href="#">1</a>
+												        </td>
+												        <td>
+												        	<a href="#">45</a>
+												        </td>
+												        <td>
+												        	<a href="#">1</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Employee Directory
+												        </td>
+												        <td class="text-left"><a href="#" data-toggle="modal" data-target="#Viewed-Pages-modal">56</a></td>
+												        <td>
+												        	<a href="#">1</a>
+												        </td>
+												        <td><a href="#">21</a></td>
+												        <td>
+												        	<a href="#">1</a>
+												        </td>
+												        <td>
+												        	<a href="#">21</a>
+												        </td>
+												        <td>
+												        	<a href="#">1</a>
+												        </td>
+											        </tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+								</div>
+								<!-- Department wise activities -->
+								<div id="Department-wise-activities" class="row m-0 mt30" style="display: none;">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-sm-6 col-xs-6">
+											<!--	<div class="form-group custom-form-group search-box">
+													<input class="form-control" type="text" name="" placeholder="Search">  											
+												</div> -->
+												<h3 class="m-0 chart-heading2 mb5">Department wise activities</h3>
+											</div>
+											 <div class="col-sm-6 col-xs-6">
+												<div class="text-right">
+												<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>  -->
+													<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tbldeptActivity');">Export</a>
+												</div>
+											</div>
+										</div> 	
+										
+										<div class="table-responsive attendance-report-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table js-sort-table" id="tbldeptActivity">
+											    <thead>
+											        <tr>
+											        	<th class="text-left border-bottom-0">Department</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Page Visit</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Content Read</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Content Write</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Message</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbDeptwiseCount">
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Marketing
+												        </td>
+												        <td class="text-left">
+												        	<a href="#" data-toggle="modal" data-target="#Department-wise-activities-modal">1567</a>
+												        </td>
+												        <td>
+												        	<a href="#">1234</a>
+												        </td>
+												        <td>
+												        	<a href="#">498</a>
+												        </td>
+												        <td>
+												        	<a href="#">345</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		HR
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">1234</a>
+												        </td>
+												        <td>
+												        	<a href="#">345</a>
+												        </td>
+												        <td>
+												        	<a href="#">1234</a>
+												        </td>
+												        <td>
+												        	<a href="#">666</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Technical
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">87</a>
+												        </td>
+												        <td>
+												        	<a href="#">67</a>
+												        </td>
+												        <td>
+												        	<a href="#">34</a>
+												        </td>
+												        <td>
+												        	<a href="#">777</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Sales
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">89</a>
+												        </td>
+												        <td>
+												        	<a href="#">46</a>
+												        </td>
+												        <td>
+												        	<a href="#">56</a>
+												        </td>
+												        <td>
+												        	<a href="#">888</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Accounting
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">23</a>
+												        </td>
+												        <td>
+												        	<a href="#">37</a>
+												        </td>
+												        <td>
+												        	<a href="#">23</a>
+												        </td>
+												        <td>
+												        	<a href="#">657</a>
+												        </td>
+											        </tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+								</div>
+
+								<!-- Viewed write-up -->
+								<div id="Viewed-write-up" class="row m-0 mt30" style="display: none;">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-xs-6 col-sm-6">
+												<h3 class="m-0 chart-heading2 mb5">Viewed Contents</h3>
+											</div>
+											<div class="col-xs-6 col-sm-6">
+												<div class="text-right">																						
+													<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblViewedContents');">Export</a>
+												</div>
+											</div>
+										</div>
+										<div class="table-responsive attendance-report-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table js-sort-table" id="tblViewedContents">
+											    <thead>
+											        <tr>
+											        	<th class="text-left border-bottom-0">Web-part</th>
+												        <th class="text-left border-bottom-0">Category</th>
+												        <th class="text-left border-bottom-0">Title</th>
+												        <th class="text-left border-bottom-0 js-sort-number">Total View</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbViewedContents">
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Experiences
+												        </td>
+												        
+												        <td>
+												        	Visit, Reading etc.
+												        </td>
+												        <td>
+												        	Title of the Item
+												        </td>
+												        <td class="text-left">
+												        	<a href="#" data-toggle="modal" data-target="#Viewed-write-up-modal">1498</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Recognition
+												        </td>
+												        
+												        <td>
+												        	Recognition
+												        </td>
+												        <td>
+												        	Title of the Item
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">1234</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Information
+												        </td>
+												        
+												        <td>
+												        	Article, Blog etc.
+												        </td>
+												        <td>
+												        	Title of the Item
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">74</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Experiences
+												        </td>
+												        
+												        <td>
+												        	Article, Blog etc.
+												        </td>
+												        <td>
+												        	Title of the Item
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">54</a>
+												        </td>
+											        </tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+								</div>
+
+								<!-- Content-Entry -->
+								<div id="Content-Entry" class="row m-0 mt30" style="display: none;">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-sm-6 col-xs-6">
+												<h3 class="m-0 chart-heading2 mb5">Content Entry</h3>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<div class="text-right">											
+													<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblWebpart');">Export</a>
+												</div>
+											</div> 
+										</div>
+										<div class="table-responsive attendance-report-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table js-sort-table" id="tblWebpart">
+											    <thead>
+											        <tr>
+											        	<th class="text-left border-bottom-0">Web-part</th>
+												        <th class="text-left border-bottom-0 w-6 js-sort-number">Number of Items</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbContrntEnrty">
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Experiences
+												        </td>
+												        <td class="text-left">
+												        	<a href="#" data-toggle="modal" data-target="#Content-Entry-modal">498</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Recognition
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">1234</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Information
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">34</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Question&Answer
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">34</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Perticipate in Survey
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">67</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		New Suggestion
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">23</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		New Initiatives
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">44</a>
+												        </td>
+											        </tr>
+											        <tr class="text-left">
+												        <td class="text-left">
+											        		Messaging
+												        </td>
+												        <td class="text-left">
+												        	<a href="#">56</a>
+												        </td>
+											        </tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>	
+										
+									</div>
+								</div>
+
+								<!-- Details Activities mt30 -->
+								<div id="Details-Activities" class="row m-0" style="display: none;">
+									<div class="col-xs-12">
+										<h3 class="m-0 chart-heading2 mb5">Details Activities</h3>
+										<div class="row">
+											<div class="col-sm-12 col-xs-12">
+												<div id="FilterChips">
+													
+												</div>
+											</div>
+										</div>
+										<div class="row mt20 attendance-report-inbox-istab">
+											<div class="col-sm-6 col-xs-6">
+												<div class="form-group custom-form-group search-box">
+													<input class="form-control" type="text" name="" placeholder="Search" id="txtSearch" onkeyup="sorter.search('txtSearch')">
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<div class="text-right">													
+													<a href="#" type="button" class="btn custom-btn wpx-80 mr5" data-toggle="modal" data-target="#details-activities-filter" onclick="Loadfilterctrl()">Filter</a>
+													<a href="#" type="button" class="btn custom-btn wpx-80" onclick="fnExcelReport();">Export</a>
+													<a href="#" type="button" class="btn custom-btn w-121 mr5" onclick="ExcelDataReport('tbluserActivity');">Export to CSV</a>
+													<a href="#" type="button" class="btn custom-btn w-121 mr5" data-toggle="modal" data-target="#archivingListData">Archiving</a>
+												</div>
+											</div>
+										</div>
+										
+										<div id="tableheader" style="height: auto !important;">
+											<div class="search" style="display:none;">
+												<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+											</div>
+											<div>
+												<span class="details">
+													<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+													<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+												</span>
+											</div>
+										</div>
+										<div class="table-responsive attendance-report-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table custom-table2 tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table" id="tbluserActivity">
+											    <thead>
+											   <!-- <tr style="display:none"> 
+											    		<th class="text-center border-bottom-0">Analytical Report</th>
+											    		<th class="text-center border-bottom-0" id="thDatePeriod"></th>
+											    	</tr>  -->
+											        <tr>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="Date">Date Time</h6></th>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="User">User</h6></th>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="Action">Action</h6></th>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="Web-part">Web-part</h6></th>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="Category">Category</h6></th>
+											        	<th class="text-left border-bottom-0"><h6 data-localize="Title">Title</h6></th>											        	
+											        	
+											        	<th class="text-left border-bottom-0" style="display:none"><h6>Company</h6></th>
+											        	<th class="text-left border-bottom-0" style="display:none"><h6>Department</h6></th>
+											        	<th class="text-left border-bottom-0" style="display:none"><h6>Location</h6></th>
+											        	<th class="text-left border-bottom-0" style="display:none"><h6>Designation</h6></th>
+											      <!--  	<th class="text-left border-bottom-0" style="display:none"><h6>Details</h6></th>  -->
+											        	<th class="text-left border-bottom-0" style="width:10.5%"><h6 data-localize="Application">Application</h6></th>
+											        	<th class="text-left border-bottom-0 nosort" style="width:10%"><h6 data-localize="App Version">App Version</h6></th>
+											        	<th class="text-left border-bottom-0" style="display:none"><h6>Enviroment</h6></th>
+											        	
+											        	
+											        	
+											        </tr>
+											    </thead>
+											    <tbody class="panel" id="tbActivityDetails">
+											     <!--   <tr class="text-left">
+												        <td>12 Jan 2021 1:30 PM</td>
+												        <td>Dipankar</td>
+												        <td>Viewed Page</td>
+												        <td>Intranet</td>
+												        <td>Home</td>
+												        <td>Default.aspx</td>
+												        <td>Website</td>
+												        <td>1.6.01</td>
+											        </tr>   
+											        <tr class="norecords">
+											        	<td colspan="8" class="Normal" style="text-align: center">No records were found</td>
+											        </tr>  -->										        
+											    </tbody>
+										    </table>
+										</div>
+										<div id="tablefooter" style="margin-bottom: 10px;">
+											<div id="tablenav">
+												<div>
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+												</div>
+												<div>
+													<select id="pagedropdown"></select>
+												</div>
+												<div>
+													<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+												</div>
+											</div>
+											<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+											<div id="tablelocation">						
+												<div>
+													<span data-localize="LinesPerPage"></span>
+													<select onchange="sorter.size(this.value)">
+														<option value="5" >5</option>
+														<option value="10" selected="selected">10</option>
+														<option value="20">20</option>
+														<option value="50">50</option>
+														<option value="100">100</option>
+													</select>
+												</div>						
+												<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+    <!-- details activities filter -->
+        <div class="modal fade" id="details-activities-filter" role="dialog">
+            <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close close-round" data-dismiss="modal">
+                          <span class="cross-position">&times;</span>
+                      </button>
+                      <h4 class="modal-title">Filter</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row attendance-report-inbox-istab">
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <!--<div class="form-group custom-form-group">
+                                    <label>User:</label>                                   
+                                    <div id="Userto" class=""></div>
+                                </div>-->
+                                <div class="form-group custom-form-group">
+                                    <label>Department:</label>
+                                    <select class="form-control" id="ddlDepartment">
+                                        <option>All</option>                                       
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>Designation:</label>
+                                    <!--<input type="text" placeholder="Designation" class="form-control" id="txtDesignation">-->
+                                    <select class="form-control"id="ddlDesignation">
+                                    	<option>All</option>                                        
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>Location:</label>
+                                    <select class="form-control" id="ddlLocation">
+                                        <option>All</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>Activity:</label>
+                                    <select class="form-control"id="ddlActivity">
+                                    	<option>All</option>                                        
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>Webpart:</label>
+                                    <!--<input type="text" placeholder="Webpart" class="form-control" id="txtWebpart">-->
+                                    <select class="form-control"id="txtWebpart">
+                                    	<option>All</option>                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>Application:</label>
+                                    <select class="form-control" id="ddlApplication">
+                                        <option>All</option>                                      
+                                        <option>Website</option>
+                                        <option>Mobile App</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="form-group custom-form-group">
+                                    <label>User:</label>                                   
+                                    <div id="Userto" class=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer attendance-report-modal-footer">
+                        <a class="btn custom-btn mr-8" data-dismiss="modal" id="btnApplyFilter" onclick="ActivityFilter();">Apply</a>  
+                  <!--  <button class="btn custom-btn mr-8" data-dismiss="modal" id="btnApplyFilter" onclick="FilterResultView();">Apply</button>-->  
+                        <button class="btn custom-btn-two-cancel" data-dismiss="modal" id="btnClearFilter"onclick="ResetControls()">Clear</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+		<!-- Set Date Range modal -->
+		<div class="modal fade" id="attendance-report-filter" role="dialog">
+			<div class="modal-dialog modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title">Set Date Range</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>From Date:</label>
+									<!--<input type="date" placeholder="" class="form-control" id="attendance-reportFrom" name="attendance-reportDat">-->
+									<input type="text" placeholder="" class="form-control" id="attendance-reportFrom" name="attendance-reportDat" readonly="readonly">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>To Date:</label>
+									<!--<input type="date" placeholder="" class="form-control" id="attendance-reportTo" name="attendance-reportDate">-->
+									<input type="text" placeholder="" class="form-control" id="attendance-reportTo" name="attendance-reportDate" readonly="readonly">
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer attendance-report-modal-footer">
+				    	<a class="btn custom-btn mr-8" id="btnApply">Apply</a>
+						<!--<button class="btn custom-btn-two-cancel" data-dismiss="modal" id="btnClear">Clear</button>-->
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- Archiving List Data modal -->
+		<div class="modal fade" id="archivingListData" role="dialog">
+			<div class="modal-dialog modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title">Archiving</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-4 col-xs-4">
+								<div class="form-group custom-form-group">
+									<label>Cut-off Date to Archiving:</label>									
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">																		
+									<input type="text" placeholder="" class="form-control" id="From_data" name="attendance-reportDat" readonly="readonly">
+								</div>
+							</div>							
+						</div>
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-4 col-xs-4">
+								<div class="form-group custom-form-group">
+									<input type="button" class="btn custom-btn mr-8" id="btnStartArchiving" value="Start">									
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">																		
+									<input type="button" class="btn custom-btn mr-8" data-dismiss="modal" id="btnCancelArchiving" value="Cancel">	
+								</div>
+							</div>							
+						</div>
+				    </div>
+				    
+			  	</div>
+			</div>
+		</div>
+
+
+
+		
+
+		<!-- Attendance-report filter Modal -->
+		<div class="modal fade" id="Viewed-Pages-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog ">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title" id="ViewPageTitle">Viewed Page</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group search-box">
+								<!--	<input class="form-control" type="text" name="" placeholder="Search" style="display:none">  -->
+								<h5 id="ViewedPeriod"></h5>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="text-right">
+								<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>  -->
+								<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblViewedPage');">Export</a>
+								</div>
+							</div> 
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tblViewedPage">
+							    <thead>
+							    	<tr style="display:none">
+							        	<th class="text-left border-bottom-0">Period : </th>
+								        <th class="text-left border-bottom-0" id="fromDate"></th>
+								        <th class="text-left border-bottom-0" id="EndDate"></th>
+							        </tr>
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-title" style="width: 25%;">User</th>
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">Date</th>
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">WebPart</th>
+								        <th class="text-left border-bottom-0" style="width: 20%;">Title</th>
+								        <th class="text-left border-bottom-0" style="width: 9%;">Application</th>
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbViewDeatils">
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Indramani</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Amit Kumar</p>
+							        				<p class="mb0">PM, Technical</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Mobile
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Dipankar</p>
+							        				<p class="mb0">Manager, Sales</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		
+		<!-- Visited Users Modal -->
+		<div class="modal fade" id="Visited-User-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog ">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title">Active Users</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+						<!--<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group search-box">
+									<input class="form-control" type="text" name="" placeholder="Search">  
+								</div> 
+							</div> -->
+							<div class="col-sm-6 col-xs-6">
+								<div class="text-left">
+									<h5 id="lbDatesPeriod">Duration </h5>
+								</div>								
+							</div> 
+							<div class="col-sm-6 col-xs-6">
+								<div class="text-right">																						
+									<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblAllVisitedUser');">Export</a>
+								</div>
+							</div>		
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table js-sort-2 js-sort-desc " id="tblAllVisitedUser">
+							    <thead>
+							    	<tr style="display:none">
+							    		<th class="text-left border-bottom-0" id="thUserTitle"></th>	
+							    		<th class="text-left border-bottom-0">Period :</th>								        
+							        	<th class="text-left border-bottom-0" id="thdatePeriod"></th>								        
+							        </tr>
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-text" style="width: 50%;">User</th>
+								        <th class="text-left border-bottom-0" style="width: 25%;">Last Action</th>
+								        <th class="text-left border-bottom-0 js-sort-number js-sort-active" data-js-sort-colnum="2" style="width: 16%;">Total Activities</th>
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbdyAllVisitedUsers">
+							 <!--       <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Indramani</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	25 May 2021 12:15 PM
+								        </td>
+								        <td>
+								        	343
+								        </td>
+							        </tr>     -->
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>		
+
+		<!-- Non Visites users -->
+		<div class="modal fade" id="Non-Visited-User-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title" id="txtTitle">Non-Visited User</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+					<!--	<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group search-box">
+									<input class="form-control" type="text" name="" placeholder="Search">
+								</div>
+							</div>  -->
+							 <div class="col-sm-8 col-xs-8 non-active-user-duration">
+								<div class="text-left">
+									<h5 id="lbNonDatesPeriod">Duration : </h5>
+								</div>
+							</div> 
+							<div class="col-sm-4 col-xs-4 non-active-user-export">
+								<div class="text-right">																						
+									<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblNonActiveuser');">Export</a>
+								</div>
+							</div>	
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tblNonActiveuser">
+							    <thead>
+							    	<tr style="display:none">
+							    		<th class="text-left border-bottom-0" id="thnonUserTitle"></th>	
+							    		<th class="text-left border-bottom-0">Period :</th>								        
+							        	<th class="text-left border-bottom-0" id="thdatePrd"></th>								        
+							        </tr>
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-text">User</th>								       
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbdyNonActiveuser">
+							        <tr class="text-left js-sort-number">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Ramesh</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>								        
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/user_pic.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Sunil Kumar</p>
+							        				<p class="mb0">PM, Technical</p>
+							        			</div>
+							        		</div>
+								        </td>								       
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/user_pic.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Harsh Kumar</p>
+							        				<p class="mb0">Manager, Sales</p>
+							        			</div>
+							        		</div>
+								        </td>								        
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		<!-- List of Instances-->
+		<div class="modal fade" id="List-of-Instances-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title">Activity Details</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+						<!-- <div class="col-sm-12 col-xs-12 "> -->
+							<div class="col-sm-6 col-xs-6">
+							<!--<div class="form-group custom-form-group search-box">
+									<input class="form-control" type="text" name="" placeholder="Search" style="display:none">  
+								</div> -->							
+								<h5 id="lbActivity" style="float:left">pppp</h5>
+								<h5 id="lbDates" style="text-align:right">11-apr-2021</h5>
+							</div>		
+							<div class="col-sm-6 col-xs-6">
+								<h5 id="lbActivityCount" style="float:left">120</h5	>
+								<div class="text-right activity-details-export-btn">																						
+									<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblInstance');">Export</a>
+								</div>
+							</div>	
+						<!-- </div>	-->
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tblInstance">
+							    <thead>
+							    	<tr style="display:none">
+							           	<th class="Normal" style="text-align: center" id="thactivity"></th>
+							           	<th colspan="3" class="" style="text-align: center" id="thPeriod"></th>						       
+							        	
+							        </tr>
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-text" style="width: 25%;">User</th>								       
+							        	<th class="text-left border-bottom-0" style="width: 15%;">Web-part</th>								       
+							        	<th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">Date</th>
+							        	<th class="text-left border-bottom-0" style="width: 20%;">Title</th>								       
+							        	<th class="text-left border-bottom-0" style="width: 9%;">Application</th>								       
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbInstance">
+							        <tr class="text-left">								        
+								        <td>Dipankar</td>
+								        <td>Viewed Page</td>
+								        <td>12 Jan 2021 1:30 PM</td>
+								        <td>Website</td>								        
+							        </tr>   
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">							        			
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">View Page</p>
+							        				<p class="mb0">(40%)</p>
+							        			</div>
+							        		</div>
+								        </td>								       
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">							        			
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Page Visited</p>
+							        				<p class="mb0">(45%)</p>
+							        			</div>
+							        		</div>
+								        </td>								        
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">							        			
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Content Read</p>
+							        				<p class="mb0">(2%)</p>
+							        			</div>
+							        		</div>
+								        </td>								        
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- Department wise activities modal -->
+		<div class="modal fade" id="Department-wise-activities-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title" id="txtDeptTitle">Viewed Page : Marketing Department</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group search-box">
+									<h5 id="ViewedDuration"></h5>
+							<!--		<input class="form-control" type="text" name="" placeholder="Search" style="display:none">  -->
+								</div>
+							</div>
+							 <div class="col-sm-6 col-xs-6">
+								<div class="text-right">
+							<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>  -->									
+									<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblInstance');">Export</a>
+								</div>
+							</div> 
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tblViewDept">
+							    <thead>
+							    	<tr style="display:none">
+							        	<th class="text-left border-bottom-0">Period : </th>
+								        <th class="text-left border-bottom-0" id="fDate">Page</th>
+								        <th class="text-left border-bottom-0" id="eDate">Date</th>								        
+							        </tr>
+
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-title" style="width: 25%;">User</th>
+								        <th class="text-left border-bottom-0" style="width: 15%;">Page</th>
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">Date</th>					
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 20%;">Title</th>
+								        <th class="text-left border-bottom-0" style="width: 9%;">Application</th>
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbdyDepyDetails">
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Indramani</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td>
+								        	Intranet
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Amit Kumar</p>
+							        				<p class="mb0">PM, Technical</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td>
+								        	Workplace
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Mobile
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Dipankar</p>
+							        				<p class="mb0">Manager, Sales</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td>
+								        	Task
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- Viewed write up modal -->
+		<div class="modal fade" id="Viewed-write-up-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title" >Viewed Contents</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-10 col-xs-10">
+								<!--<div class="form-group custom-form-group search-box">
+									<input class="form-control" type="text" name="" placeholder="Search" style="display:none">
+									<h5 id="lbContntDate" style="float:left"></h5>
+								</div>-->
+								<span id="txtContentViewTitle"></span>
+							</div>
+							 <div class="col-sm-2 col-xs-2">
+								<div class="text-right">
+								<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>   -->
+								<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tbContent');">Export</a>
+								</div>
+							</div>
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tbContent">
+							    <thead>
+							    	<tr style="display:none">
+							    		<th class="text-left border-bottom-0" id="txtCViewTitle"> </th>
+							        	<th class="text-left border-bottom-0">Period : </th>
+								        <th class="text-left border-bottom-0" id="StDate">Date</th>
+								        <th class="text-left border-bottom-0" id="EnDate">Application</th>
+							        </tr>
+
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-title" style="width: 25%;">User</th>
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">Date</th>
+								        <th class="text-left border-bottom-0" style="width: 20%;">Category</th>
+								        <th class="text-left border-bottom-0" style="width: 9%;">Application</th>
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tblContentView">
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Indramani</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Amit Kumar</p>
+							        				<p class="mb0">PM, Technical</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Mobile
+								        </td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Dipankar</p>
+							        				<p class="mb0">Manager, Sales</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>
+								        	Website
+								        </td>
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- Content Entry -->
+		<div class="modal fade" id="Content-Entry-modal" role="dialog">
+			<div class="modal-dialog custom-modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title" id="txtContentEntryTitle">Content Entry</h4>
+				    </div>
+				    <div class="modal-body">
+						<div class="row attendance-report-inbox-istab">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group search-box">
+								<!--	<input class="form-control" type="text" name="" placeholder="Search">  -->
+								<h5 id="lbPeriod">Duration : </h5>
+								</div>
+							</div>
+							 <div class="col-sm-6 col-xs-6">
+								<div class="text-right">
+								<!--	<a href="#" type="button" class="btn custom-btn pr-8 wpx-80">Filter</a>  -->
+									<a href="#" type="button" class="btn custom-btn wpx-80" onclick="ExcelDataReport('tblContentEntry');">Export</a>
+								</div>
+							</div> 
+						</div>
+						<div class="table-responsive attendance-report-table scrollbar-panel">     
+						    <table class="table mb-0 custom-table js-sort-table" id="tblContentEntry">
+							    <thead>
+							    	<tr style="display:none">
+							        	<th class="text-left border-bottom-0">Period : </th>
+								        <th class="text-left border-bottom-0" id="stDt"></th>
+								        <th class="text-left border-bottom-0" id="enDt"></th>								        
+							        </tr>
+
+							        <tr>
+							        	<th class="text-left border-bottom-0 js-sort-title" style="width: 25%;">User</th>
+								        <th class="text-left border-bottom-0 js-sort-number" style="width: 15%;">Date</th>
+								        <th class="text-left border-bottom-0" style="width: 15%;">Web-part</th>
+								        <th class="text-left border-bottom-0" style="width: 15%;">Category</th>
+								        <th class="text-left border-bottom-0" style="width: 20%;">Title</th>
+							        </tr>
+							    </thead>
+							    <tbody class="scrollbar-panel" id="tbContentEntry">
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Indramani</p>
+							        				<p class="mb0">Manager, IT</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>Information</td>
+								        <td>Article</td>
+								        <td>Title…...</td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Amit Kumar</p>
+							        				<p class="mb0">PM, Technical</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>Information</td>
+								        <td>Article</td>
+								        <td>Title…...</td>
+							        </tr>
+							        <tr class="text-left">
+								        <td class="text-left">
+							        		<div class="analytical-user-image-box">
+							        			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/images/img-21.jpg">
+							        			<div class="analytical-user-image-text">
+							        				<p class="mb0">Dipankar</p>
+							        				<p class="mb0">Manager, Sales</p>
+							        			</div>
+							        		</div>
+								        </td>
+								        <td class="text-left">
+								        	12 Jan 2021 4:15 PM
+								        </td>
+								        <td>Information</td>
+								        <td>Article</td>
+								        <td>Title…...</td>
+							        </tr>
+							    </tbody>
+							</table>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+		<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/WebAnalytics/assets/js/Analytical_usageReport.js"></script>
+
+		<script>
+			// 
+				$("#selectByTask").on("change",function(){
+				  	var val = $(this).find('option:selected').val();
+
+				  	if (val == 'Dashboard') {
+				  		$("#dashboard").show();
+				  		$("#Viewed-Pages").hide();
+				  		$("#Department-wise-activities").hide();
+				  		$("#Viewed-write-up").hide();
+				  		$("#Content-Entry").hide();
+				  		$("#Details-Activities").hide();
+				  	}
+				  	else if (val == 'Viewed-Pages') {
+				  		$("#dashboard").hide();
+				  		$("#Viewed-Pages").show();
+				  		$("#Department-wise-activities").hide();
+				  		$("#Viewed-write-up").hide();
+				  		$("#Content-Entry").hide();
+				  		$("#Details-Activities").hide();
+				  	}
+				  	else if (val == 'Department-wise-activities') {
+				  		$("#dashboard").hide();
+				  		$("#Viewed-Pages").hide();
+				  		$("#Department-wise-activities").show();
+				  		$("#Viewed-write-up").hide();
+				  		$("#Content-Entry").hide();
+				  		$("#Details-Activities").hide();
+				  	}
+				  	else if (val == 'Viewed-write-up') {
+				  		$("#dashboard").hide();
+				  		$("#Viewed-Pages").hide();
+				  		$("#Department-wise-activities").hide();
+				  		$("#Viewed-write-up").show();
+				  		$("#Content-Entry").hide();
+				  		$("#Details-Activities").hide();
+				  	}
+				  	else if (val == 'Content-Entry') {
+				  		$("#dashboard").hide();
+				  		$("#Viewed-Pages").hide();
+				  		$("#Department-wise-activities").hide();
+				  		$("#Viewed-write-up").hide();
+				  		$("#Content-Entry").show();
+				  		$("#Details-Activities").hide();
+				  	}
+				  	else if (val == 'Details-Activities') {
+				  		$("#dashboard").hide();
+				  		$("#Viewed-Pages").hide();
+				  		$("#Department-wise-activities").hide();
+				  		$("#Viewed-write-up").hide();
+				  		$("#Content-Entry").hide();
+				  		$("#Details-Activities").show();
+				  	}
+				});
+		</script>
+
+		<script>
+		
+		/*	var ctx = $("#line-Chart");
+			var lineChart = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr"],
+					datasets: [{
+						label: "2021",
+						data: [10,8,6,12],
+						fill: false,
+						borderColor: 'rgb(75, 192, 192)'
+					}]
+
+				}
+			});  */
+		</script>
+
+		<script>
+		$(document).ready(function() {
+			
+		});
+		/*	var ctx = document.getElementById('pieChart').getContext('2d');
+			var pieChart = new Chart(ctx, {
+				type: 'pie',
+				options: 'options',
+				data: {
+				//	labels: ['Visit Page 47%', 'Content Read 23%', 'Content Write 34%', 'messageing 18%',],
+					datasets: [{
+						label: '# of Votes',
+						data: [47, 23, 34, 18],
+						backgroundColor: [
+							'rgba(91, 155, 213, 0.2)',
+							'rgba(237, 125, 49, 0.2)',
+							'rgba(165, 165, 165, 0.2)',
+							'rgba(255, 192, 0, 0.2)'
+						],
+						borderColor: [
+							'rgba(91, 155, 213, 1)',
+							'rgba(237, 125, 49, 1)',
+							'rgba(165, 165, 165, 1)',
+							'rgba(255, 192, 0, 1)'
+						],
+						borderWidth: 1
+					}]
+				},
+			});  */
+		</script>
+		<style>
+		
+
+	</style>
+	
+	</body>
+</html>

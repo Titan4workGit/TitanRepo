@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<title>Titan</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/padding.css">
+<style></style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2251</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a1490e3c-350c-4920-b45b-79edb4837a86</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2251, ADMIN-1645029823-2251</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">225100.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-custom header-nav">
+  <div class="container-fluid">
+    <div class="navbar-header navbar-header-custom"> <a class="navbar-brand col-sm-3 col-xs-12" href="Titan-External-Employee-Portal.html"><img src="images/Titan-Logo.png" class="logo" alt=""/></a>
+      <div class="col-md-5 col-sm-12 col-xs-12 pr0 tpr15 col-md-offset-6">
+        <div class="col-xs-12 external-emp-profile-box">
+          <div class="ml5 mr15">
+            <h3 id="text" class="mb5">Damien Walterman Scott Jr.</h3>
+            <div id="text2" class="user-type">Vender</div>
+            <div id="text3" class="user-organization">Adapt india pvt ltd</div>
+            
+          </div>
+          <div class="dropdown custom-card-menu">
+            <a href="#" class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">
+              <img src="images/1.png" class="img-circle" alt=""/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#" class="my-profile" data-toggle="modal" data-target="#modal_profile">My Profile</a></li>
+              <li><a href="#" class="logout">Logout</a></li>
+              <li>
+                <a href="#">Last Login<br><span class="pr5">24 Jan 2021</span><span>04:30 PM</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="custom-panel customer-project-details">
+    <div class="panel-body p0">
+      <div class="row external-emp-box">
+        <div class="col-md-12 col-sm-12 col-xs-12 external-emp-tab-area">
+          <ul class="breadcrumb">
+              <li><a href="Titan-External-Employee-Portal.html">Home</a></li>
+              <li>Project Detail</li>
+          </ul>
+          <div class="project-title">
+            <h3 class="m-0"> Project: <span>Name Here</span> </h3>
+          </div>
+          <ul class="nav nav-pills">
+              
+<!--
+            <li class="active"><a data-toggle="pill" href="#dashboard_tab">Dashboard</a> </li>
+            <li><a data-toggle="pill" href="#document_tab">Documents</a> </li>
+            <li><a data-toggle="pill" href="#task_tab">Tasks</a> </li>
+-->
+            
+            <li class="active">
+                <a data-toggle="pill" href="#dashboard_tab">
+                    <div class="d-flex">
+                        <span class="mt3">Dashboard</span>
+                    </div>
+                </a> 
+            </li>
+            <li>
+                <a data-toggle="pill" href="#document_tab">
+                    <div class="d-flex">
+                        <span class="mt3">Documents</span>
+                    </div>
+                </a> 
+            </li>
+            <li>
+                <a data-toggle="pill" href="#task_tab">
+                    <div class="d-flex">
+                        <span class="mt3">Tasks</span>
+                    </div>
+                </a> 
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="dashboard_tab" class="tab-pane fade in active">
+              <div class="col-sm-12 col-xs-12 pl0 pr0">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel panel-default mb15">
+                    <div class="panel-body px-0 pt-8 word-break-word">
+                      <div class="row ml0 mr0 mb15 tmb0">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Customer</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>ABC Group of Companies</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row ml0 mr0 mb15 tmb0">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Planned Start Date</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>31-Oct-2020</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Planned End Date</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>31-Dec-2020</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Department</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>Software Delivery</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row ml0 mr0 mb15 tmb0">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Project Manager</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>Liam Scott</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Stakeholder (Internal)</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>Mike Newson</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <label>Location</label>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                              <p>New Delhi</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row ml0 mr0 tmb0">
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-sm-1 col-xs-12">
+                              <label>Details</label>
+                            </div>
+                            <div class="col-sm-11 col-xs-12 pl55 tpl15">
+                              <p>Solution for ABC to send Appreciation messages to their colleagues which get added on a Christmas tree within Bulb or Balls or Star.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-display-option col-sm-12 p0">
+                  <div class="col-md-12 col-sm-6 col-xs-12 pl0 pr0 tpl0">
+                    <div class="panel panel-default mb15 pb15"> 
+                      <!--
+						<div class="panel-head">
+							<h3 class="m-0">
+
+							</h3>
+						</div>
+			-->
+                      <div class="panel-body scrollbar-panel px-0 pt10 pb0">
+                        <div class="row m-0">
+                          <div class="col-xs-12"> <img src="images/chart-1.png" class="center-block" width="257" height="210" alt=""/> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-6 col-xs-12 pr0 tpl0">
+                    <div class="panel panel-default mb15 pb15"> 
+                      <!--
+						<div class="panel-head">
+							<h3 class="m-0">
+
+							</h3>
+						</div>
+			-->
+                      <div class="panel-body scrollbar-panel px-0 pt10 pb0">
+                        <div class="row m-0">
+                          <div class="col-xs-12"> <img src="images/chart-2.png" class="center-block" width="257" height="210" alt=""/> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 pr0 tpl0">
+                    <div class="panel panel-default mb15 pb15"> 
+                      <!--
+						<div class="panel-head">
+							<h3 class="m-0">
+
+							</h3>
+						</div>
+			-->
+                      <div class="panel-body scrollbar-panel px-0 pt10 pb0">
+                        <div class="row m-0">
+                          <div class="col-xs-12"> <img src="images/chart-3.png" class="center-block" width="257" height="210" alt=""/> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xs-12 pl0 pr0">
+                <div class="col-md-8 col-sm-6 col-xs-12 pl0 pr0 tpb15">
+                  <div class="panel panel-default mb0 pb15">
+                    <div class="panel-head">
+                      <h3 class="m-0"> Modules </h3>
+                    </div>
+                    <div class="panel-body customer-project-panel-3 scrollbar-panel px-0 pt10 pb0">
+                      <div class="row m-0">
+                        <div class="col-xs-12">
+                          <div class="table-responsive table-responsive-2 scrollbar-panel">
+                            <table class="table mb-0 custom-table external-emp-table">
+                              <thead>
+                                <tr>
+                                  <th class="w-15 border-bottom-0 text-center">Module Name</th>
+                                  <th class="w-10 border-bottom-0 text-center">Description</th>
+                                  <th class="w-10 border-bottom-0 text-center">Status</th>
+                                  <th class="w-5 border-bottom-0 text-center">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Module 1</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">ABC Constructions work in Basement</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Pending</span></td>
+                                  <td><div class="attendance-view-btn-box text-center"> <a href="#" class="custom-view-btn"> <i class="fa fa-edit"></i> </a> </div></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Module 2</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">ABC Constructions work in Basement</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Pending</span></td>
+                                  <td><div class="attendance-view-btn-box text-center"> <a href="#" class="custom-view-btn"> <i class="fa fa-edit"></i> </a> </div></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Module 3</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">ABC Constructions work in Basement</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Pending</span></td>
+                                  <td><div class="attendance-view-btn-box text-center"> <a href="#" class="custom-view-btn"> <i class="fa fa-edit"></i> </a> </div></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Module 4</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">ABC Constructions work in Basement</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Pending</span></td>
+                                  <td><div class="attendance-view-btn-box text-center"> <a href="#" class="custom-view-btn"> <i class="fa fa-edit"></i> </a> </div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 pr0 tpl0">
+                  <div class="panel panel-default mb0 pb15">
+                    <div class="panel-head">
+                      <h3 class="m-0"> Team Members </h3>
+                    </div>
+                    <div class="panel-body customer-project-panel-3 scrollbar-panel px-0 pt10 pb0">
+                      <div class="row m-0">
+                        <div class="col-xs-12">
+                          <div class="table-responsive table-responsive-2 scrollbar-panel">
+                            <table class="table mb-0 custom-table external-emp-table">
+                              <thead>
+                                <tr>
+                                  <th class="border-bottom-0 text-center">Team Member</th>
+                                  <th class="border-bottom-0 text-center">Role</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                                <tr class="text-center">
+                                  <td><span class="external-emp-table-ellipsis-2">Dre Werner</span></td>
+                                  <td><span class="external-emp-table-ellipsis-2">Software Developer</span></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="document_tab" class="tab-pane fade">
+              <h1>Document Content Here</h1>
+            </div>
+            <div id="task_tab" class="tab-pane fade">
+              <div class="row m-0">
+                <div class="col-xs-12  px-0">
+                  <div class="scrollbar-panel chip-panel">
+                    <div class="chip-box">
+                      <div class="upload-chip">Open</div>
+                      <div class="upload-chip">Robert Williamson</div>
+                      <div class="upload-chip">Medium</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-0 mb-8 mt10 inbox-istab">
+                <div class="col-xs-6  px-0">
+                  <div class="form-group custom-form-group search-box">
+                    <input class="form-control" type="text" name="" placeholder="Search">
+                  </div>
+                </div>
+                <div class="col-xs-6 px-0">
+                  <div class="text-right add-task-position">
+                    <button class="btn custom-btn pr-8 w-102" data-toggle="modal" data-target="#Inbox">Filter</button>
+                    <a type="button" class="btn add-task custom-btn w-102" href="#"> <span class="glyphicon glyphicon-plus"></span><span class="ml-4" data-localize="AddTask">Add Task</span> </a> </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="Inbox" role="dialog" style="display: none;">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                        <h4 class="modal-title">Filter</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Project:</label>
+                              <select class="form-control">
+                                <option>All</option>
+                                <option>General Task</option>
+                                <option>TITAN</option>
+                                <option>ABC Bank</option>
+                                <option>TITAN V2-4</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Module:</label>
+                              <select class="form-control">
+                                <option>All</option>
+                                <option>All</option>
+                                <option>All</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Work Type:</label>
+                              <select class="form-control">
+                                <option>All</option>
+                                <option>All</option>
+                                <option>All</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Priority:</label>
+                              <select class="form-control">
+                                <option>Medium</option>
+                                <option>Top</option>
+                                <option>Medium</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Status:</label>
+                              <select class="form-control">
+                                <option>Open</option>
+                                <option>Open</option>
+                                <option>Open</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Task Due Date:</label>
+                              <!-- <input class="form-control" type="date" name=""> -->
+                              <input type="date" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn">
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Assign To:</label>
+                              <select class="form-control">
+                                <option>All</option>
+                                <option>Tom Patrick</option>
+                                <option>Neha Kaushik</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                              <label for="Project">Assigned By:</label>
+                              <select class="form-control">
+                                <option>Neha Kaushik</option>
+                                <option>Tom Patrick</option>
+                                <option>Ashish Kamotra</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer text-center">
+                        <button class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
+                        <button class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive px-15  scrollbar-panel">
+                <table class="table custom-table custom-table-border">
+                  <thead>
+                    <tr>
+                      <th class="w-25">Task</th>
+                      <th class="text-center w-20">Work Type</th>
+                      <th class="text-center w-10">Assigned By</th>
+                      <th class="text-center w-10">Assigned To</th>
+                      <th class="text-center w-10">Status</th>
+                      <th class="text-center w-10">Dependency</th>
+                      <th class="text-center w-10">Time Sheet</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#" class="task-name-box"><b class="ellipsis-2">Review the content and design warframe</b></a>
+                        <p class="m-0 mt-4 ellipsis-1">
+                          <label class="m-0 b-400">Project:</label>
+                          <span class="ml-4">TITAN warframe design</span></p></td>
+                      <td class="text-center"><div class="">
+                          <p class="m-0 ellipsis-1">Design</p>
+                          <p class="m-0 ellipsis-1 mt-29">Titan  1.0</p>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Robert Williamson</p></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Amelia</p>
+                        <div class="text-center mt-4 position-relative">
+                          <button class="btn custom-btn custom-btn-two" data-toggle="modal" data-target="#taskGroup1">Group</button>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 mb-10"> Open </p>
+                        <p class="m-0 font-12"> Due:<span>23-Jul</span> </p>
+                        <div class="progress custom-progress progress-success m-0 mt-4">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%"> </div>
+                        </div></td>
+                      <td class="text-center"><h4 class="m-0">3</h4>
+                        <button class="btn custom-btn custom-btn-two mt-16" data-toggle="modal" data-target="#ActionInbox">Action</button></td>
+                      <td class="text-center"><h4 class="m-0 cursor-pointer" data-toggle="modal" data-target="#timeSheet">3h 25m</h4>
+                        <button class="btn btn-danger custom-btn-two custom-btn-two-danger mt-16">Fill</button></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#" class="task-name-box"><b class="ellipsis-2">Complete the assigned HTML</b></a>
+                        <p class="m-0 mt-4 ellipsis-1">
+                          <label class="m-0 b-400">Project:</label>
+                          <span class="ml-4">TITAN HTML design</span></p></td>
+                      <td class="text-center"><div class="">
+                          <p class="m-0 ellipsis-1">Design</p>
+                          <p class="m-0 ellipsis-1 mt-29">Titan 1.2</p>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Robert Williamson</p></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Ronan</p>
+                        <div class="text-center mt-4 position-relative">
+                          <button class="btn custom-btn custom-btn-two" data-toggle="modal" data-target="#taskGroup1">Group</button>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 mb-10"> Open </p>
+                        <p class="m-0 font-12"> Due:<span>23-Jul</span> </p>
+                        <div class="progress custom-progress progress-success m-0 mt-4">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%"> </div>
+                        </div></td>
+                      <td class="text-center"><h4 class="m-0">3</h4>
+                        <button class="btn custom-btn custom-btn-two mt-16" data-toggle="modal" data-target="#ActionInbox">Action</button></td>
+                      <td class="text-center"><h4 class="m-0 cursor-pointer" data-toggle="modal" data-target="#timeSheet">3h 25m</h4>
+                        <button class="btn btn-danger custom-btn-two custom-btn-two-danger mt-16">Fill</button></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#" class="task-name-box"><b class="ellipsis-2">Testing of site</b></a>
+                        <p class="m-0 mt-4 ellipsis-1">
+                          <label class="m-0 b-400">Project:</label>
+                          <span class="ml-4">TITAN HTML testing</span></p></td>
+                      <td class="text-center"><div class="">
+                          <p class="m-0 ellipsis-1">Testing</p>
+                          <p class="m-0 ellipsis-1 mt-29">Titan 2.4</p>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Robert Williamson</p></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Hugo</p>
+                        <div class="text-center mt-4 position-relative">
+                          <button class="btn custom-btn custom-btn-two" data-toggle="modal" data-target="#taskGroup1">Group</button>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 mb-10"> Open </p>
+                        <p class="m-0 font-12"> Due:<span>03-Dec</span> </p>
+                        <div class="progress custom-progress progress-danger m-0 mt-4">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"> </div>
+                        </div></td>
+                      <td class="text-center"><h4 class="m-0">3</h4>
+                        <button class="btn custom-btn custom-btn-two mt-16" data-toggle="modal" data-target="#ActionInbox">Action</button></td>
+                      <td class="text-center"><h4 class="m-0 cursor-pointer" data-toggle="modal" data-target="#timeSheet">3h 25m</h4>
+                        <button class="btn btn-danger custom-btn-two custom-btn-two-danger mt-16">Fill</button></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#" class="task-name-box"><b class="ellipsis-2">Development of site</b></a>
+                        <p class="m-0 mt-4 ellipsis-1">
+                          <label class="m-0 b-400">Project:</label>
+                          <span class="ml-4">TITAN 2.4 On-line project</span></p></td>
+                      <td class="text-center"><div class="">
+                          <p class="m-0 ellipsis-1">Development</p>
+                          <p class="m-0 ellipsis-1 mt-29">Titan 2.4</p>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Robert Williamson</p></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Steffan</p>
+                        <div class="text-center mt-4 position-relative">
+                          <button class="btn custom-btn custom-btn-two" data-toggle="modal" data-target="#taskGroup1">Group</button>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 mb-10"> Open </p>
+                        <p class="m-0 font-12"> Due:<span>03-Dec</span> </p>
+                        <div class="progress custom-progress progress-danger m-0 mt-4">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"> </div>
+                        </div></td>
+                      <td class="text-center"><h4 class="m-0">3</h4>
+                        <button class="btn custom-btn custom-btn-two mt-16" data-toggle="modal" data-target="#ActionInbox">Action</button></td>
+                      <td class="text-center"><h4 class="m-0 cursor-pointer" data-toggle="modal" data-target="#timeSheet">3h 25m</h4>
+                        <button class="btn btn-danger custom-btn-two custom-btn-two-danger mt-16">Fill</button></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#" class="task-name-box"><b class="ellipsis-2">Review the content of showcase Review the content of showcase Review the content of showcase Review the content of showcase</b></a>
+                        <p class="m-0 mt-4 ellipsis-1">
+                          <label class="m-0 b-400">Project:</label>
+                          <span class="ml-4">ABC Construction ABC Construction ABC Construction</span></p></td>
+                      <td class="text-center"><div class="">
+                          <p class="m-0 ellipsis-1">Development Development Development Development Development</p>
+                          <p class="m-0 ellipsis-1 mt-29">Module Name Module Name Module Name</p>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Robert Williamson Williamson</p></td>
+                      <td class="text-center"><p class="m-0 ellipsis-2">Subhankar Subhankar Subhankar</p>
+                        <div class="text-center mt-4 position-relative">
+                          <button class="btn custom-btn custom-btn-two" data-toggle="modal" data-target="#taskGroup1">Group</button>
+                        </div></td>
+                      <td class="text-center"><p class="m-0 mb-10"> Open </p>
+                        <p class="m-0 font-12"> Due:<span>23-Jul</span> </p>
+                        <div class="progress custom-progress progress-success m-0 mt-4">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%"> </div>
+                        </div></td>
+                      <td class="text-center"><h4 class="m-0">3</h4>
+                        <button class="btn custom-btn custom-btn-two mt-16" data-toggle="modal" data-target="#ActionInbox">Action</button></td>
+                      <td class="text-center"><h4 class="m-0 cursor-pointer" data-toggle="modal" data-target="#timeSheet">3h 25m</h4>
+                        <button class="btn btn-danger custom-btn-two custom-btn-two-danger mt-16">Fill</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Modal -->
+<div class="modal fade" id="Inbox" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Filter</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Project:</label>
+              <select class="form-control">
+                <option>All</option>
+                <option>General Task</option>
+                <option>TITAN</option>
+                <option>ABC Bank</option>
+                <option>TITAN V2-4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Module:</label>
+              <select class="form-control">
+                <option>All</option>
+                <option>All</option>
+                <option>All</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Work Type:</label>
+              <select class="form-control">
+                <option>All</option>
+                <option>All</option>
+                <option>All</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Priority:</label>
+              <select class="form-control">
+                <option>Medium</option>
+                <option>Top</option>
+                <option>Medium</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Status:</label>
+              <select class="form-control">
+                <option>Open</option>
+                <option>Open</option>
+                <option>Open</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Task Due Date:</label>
+              <!-- <input class="form-control" type="date" name=""> -->
+              <input type="date" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Assign To:</label>
+              <select class="form-control">
+                <option>All</option>
+                <option>Tom Patrick</option>
+                <option>Neha Kaushik</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="form-group custom-form-group">
+              <label for="Project">Assigned By:</label>
+              <select class="form-control">
+                <option>Neha Kaushik</option>
+                <option>Tom Patrick</option>
+                <option>Ashish Kamotra</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer text-center">
+        <button class="btn custom-btn mr-8"  data-dismiss="modal">Apply</button>
+        <button class="btn custom-btn-two-cancel"  data-dismiss="modal">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Assigned to modal -->
+<div class="modal fade" id="taskGroup1" role="dialog">
+  <div id="taskGroupItem1" class="group-taks-item scrollbar-panel modal-dialog modal-sm">
+    <ul class="group-taks-item-panel">
+      <li class="text-right sticky-box px-0"> <span id="taskGroupCrs" class="glyphicon glyphicon-remove close-round" class="close" data-dismiss="modal"></span> </li>
+      <li>Tom Patrick</li>
+      <li>Neha Kaushik</li>
+      <li>Steve Davis</li>
+      <li>Angela Parakar</li>
+      <li>James Perry</li>
+      <li>Monica Geller</li>
+      <li>John Davis</li>
+      <li>Tom Patrick</li>
+      <li>Neha Kaushik</li>
+      <li>Steve Davis</li>
+      <li>Angela Parakar</li>
+      <li>James Perry</li>
+      <li>Monica Geller</li>
+      <li>John Davis</li>
+    </ul>
+  </div>
+</div>
+<!-- Dependency modal -->
+<div class="modal fade" id="ActionInbox" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+        <h4 class="modal-title text-left d-flex">
+          <label class="m-0" style="white-space: nowrap;">Task:</label>
+          <span class="ellipsis-2 ml-4 mr-4">Complete the assigned HTML</span> </h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive table-responsive-2 scrollbar-panel">
+          <table class="table mb-0 custom-table word-break-word">
+            <thead>
+              <tr>
+                <th class="w-50 text-center border-bottom-0">Dependency</th>
+                <th class="w-20 text-center border-bottom-0">Assigned to</th>
+                <th class="w-20 text-center border-bottom-0">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left"><div>Creating webparts for timesheet and management and creation of Creating webparts for timesheet and management and creation of Creating webparts for timesheet and management and creation of</div></td>
+                <td class="text-center">Neha Kaushik</td>
+                <td class="text-center"><div>
+                    <button type="button" class="btn btn-toggle active mt-14" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <div class="handle"></div>
+                    </button>
+                  </div></td>
+              </tr>
+              <tr>
+                <td class="text-left">Testing webparts</td>
+                <td class="text-center">Bgargav</td>
+                <td class="text-center"><div>
+                    <button type="button" class="btn btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <div class="handle"></div>
+                    </button>
+                  </div></td>
+              </tr>
+              <tr>
+                <td class="text-left"><div>Design detail page</div></td>
+                <td class="text-center">Ishan</td>
+                <td class="text-center"><div>
+                    <button type="button" class="btn btn-toggle mt-14" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <div class="handle"></div>
+                    </button>
+                  </div></td>
+              </tr>
+              <tr>
+                <td class="text-left"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                <td class="text-center">Neha</td>
+                <td class="text-center"><div>
+                    <button type="button" class="btn btn-toggle active mt-14" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <div class="handle"></div>
+                    </button>
+                  </div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Titan-ExternalUserPortal/JS/CreateQrCode.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/js/jquery.qrcode.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function() {
+  // Add minus icon for collapse element which is open by default
+  $(".collapse.in").each(function() {
+    $(this)
+      .siblings(".panel-heading")
+      .find(".glyphicon-chevron-right")
+      .addClass("rotate");
+  });
+
+  // Toggle plus minus icon on show hide of collapse element
+  $(".collapse")
+    .on("show.bs.collapse", function() {
+      $(this)
+        .parent()
+        .find(".glyphicon-chevron-right")
+        .addClass("rotate");
+    })
+    .on("hide.bs.collapse", function() {
+      $(this)
+        .parent()
+        .find(".glyphicon-chevron-right")
+        .removeClass("rotate");
+    });
+});
+
+</script> 
+<script>
+var length = 20;
+
+var text = document.getElementById('text')
+var string = text.innerHTML
+var trimmedString = string.length > length ?
+  string.substring(0, length - 3) + "..." :
+  string
+
+text.innerHTML = trimmedString
+  
+</script> 
+<script>
+var length = 30;
+
+var text2 = document.getElementById('text2')
+var string = text2.innerHTML
+var trimmedString = string.length > length ?
+  string.substring(0, length - 3) + "..." :
+  string
+
+text2.innerHTML = trimmedString
+  
+</script> 
+<script>
+var length = 30;
+
+var text3 = document.getElementById('text3')
+var string = text3.innerHTML
+var trimmedString = string.length > length ?
+  string.substring(0, length - 3) + "..." :
+  string
+
+text3.innerHTML = trimmedString
+  
+</script>
+<script> 
+$(".popup-toggle").click(function(){
+    $(".popup-menu").toggle();
+});
+
+    
+$(".my-profile, .logout").on("click", function(){
+    $(".popup-menu").hide();
+});
+</script>
+</body>
+</html>

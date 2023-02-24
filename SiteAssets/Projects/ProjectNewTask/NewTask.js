@@ -1,1 +1,3717 @@
-var a455_0x31754c=a455_0x5b5a;(function(_0x5687ef,_0x5f4640){var _0x24508e=a455_0x5b5a,_0xfe3ae0=_0x5687ef();while(!![]){try{var _0x17e460=parseInt(_0x24508e(0x399))/0x1+parseInt(_0x24508e(0x382))/0x2+parseInt(_0x24508e(0x2b4))/0x3*(parseInt(_0x24508e(0x460))/0x4)+parseInt(_0x24508e(0x412))/0x5*(-parseInt(_0x24508e(0x39e))/0x6)+parseInt(_0x24508e(0x3a9))/0x7*(parseInt(_0x24508e(0x25b))/0x8)+parseInt(_0x24508e(0x1d5))/0x9+-parseInt(_0x24508e(0x40f))/0xa;if(_0x17e460===_0x5f4640)break;else _0xfe3ae0['push'](_0xfe3ae0['shift']());}catch(_0x2a52cf){_0xfe3ae0['push'](_0xfe3ae0['shift']());}}}(a455_0x5771,0x20fe1));var currentTaskItemId='',taskToUsers=[],DependecyId='',taskCCUsersUsers=[],taskItemDetails=[],emailBodyContent='',taskEmailSubject='',ProjectType='',currentDlgTask='',CurrentPhase='',TaskAssignID='',Audience='',DependecyRecrd='',DependecyToUser=[],GuestUser=[],arrAlreadyAssinEmp=[],IsOwner=![],IsCustomerBind=![],IsProjectBind=![],ActiveCustomers=[],InactiveCustomers=[],AllTaskUsersEmployeeuser=[],arrGeneralTask=[],NextURLGeneral='',NextURLGuestTeam='',IsModal='',DependenciesNames='',TabId=titanForWork['getQueryStringParameter'](a455_0x31754c(0x384)),DeleteCheck=!![],TaskAction=titanForWork[a455_0x31754c(0x1d0)](a455_0x31754c(0x297)),IsProjectAdmin=![],TaskKind='',selectedText,CommentUserImage='',LoginUserID='',TaskusersProjectTeam=[],IsCheckUser=![],NextURLProject='',NextUrlGuest='',ClientName='',NextUrlDept='',arrDeptTask=[],finalFiles=[],FinalFiles4Upload=[],Tcounter=0x0,RemoveDuplicate=[],UpdateItemID='',arrMyGroup=[],IsTaskRecursive=titanForWork[a455_0x31754c(0x1d0)]('Type'),RecursiveTaskId='',IsEditMode=titanForWork['getQueryStringParameter'](a455_0x31754c(0x2c6)),IntervalId='',LibraryTreeBind=![];$(window)[a455_0x31754c(0x2da)](function(){var _0xff9c85=a455_0x31754c;IsTaskRecursive==_0xff9c85(0x413)&&(waitingDialog['show'](),setTimeout(function(){PageLoadRecTask();},0x1f4));}),$(document)[a455_0x31754c(0x34b)](function(){var _0x2c80a1=a455_0x31754c;$(_0x2c80a1(0x366))[_0x2c80a1(0x3bb)](),$('#DeleteTask')['hide'](),IsModal=window['atob']($[_0x2c80a1(0x30b)](_0x2c80a1(0x37e))),RecursiveTaskId=window['atob']($[_0x2c80a1(0x30b)](_0x2c80a1(0x3d6))),currentTaskItemId=titanForWork['getQueryStringParameter'](_0x2c80a1(0x1c3));currentTaskItemId!=undefined&&(currentTaskItemId=window[_0x2c80a1(0x344)](currentTaskItemId),$('#btnchangeHistorys')[_0x2c80a1(0x218)]());$(_0x2c80a1(0x39a))['click'](function(){getOnChangeHistory(currentTaskItemId);});var _0x1e8180=titanForWork[_0x2c80a1(0x1d0)](_0x2c80a1(0x2e3));(_0x1e8180!=_0x2c80a1(0x3ab)||_0x1e8180!=null)&&GetAllModule(_0x1e8180);$(_0x2c80a1(0x246))['keypress'](function(_0xc472a7){return![];}),$('.DueDate')[_0x2c80a1(0x39d)](function(_0x193cea){return![];}),$(_0x2c80a1(0x439))[_0x2c80a1(0x39d)](function(_0x541e68){return![];}),$(_0x2c80a1(0x374))[_0x2c80a1(0x39d)](function(_0x29935e){return![];});if(IsModal==_0x2c80a1(0x1cb))getExternalClient();else{}$(_0x2c80a1(0x462))[_0x2c80a1(0x379)](function(){var _0x4eb175=_0x2c80a1;Audience=$('#Audience')[_0x4eb175(0x308)](),IsCustomerBind=![];}),$(_0x2c80a1(0x20b))[_0x2c80a1(0x379)](function(){var _0x11e87a=_0x2c80a1,_0x3bbad8=daysInMonth($(this)[_0x11e87a(0x308)](),new Date()['getFullYear']());for(var _0xc1a7b7=0x0;_0xc1a7b7<_0x3bbad8;_0xc1a7b7++){$(_0x11e87a(0x211))[_0x11e87a(0x222)](_0x11e87a(0x39f)+[_0xc1a7b7+0x1]+_0x11e87a(0x1d1));}}),$(_0x2c80a1(0x2d1))[_0x2c80a1(0x39d)](function(_0x235fe3){var _0x5d39cc=_0x2c80a1;_0x235fe3[_0x5d39cc(0x315)]!=0x8&&isNaN(String['fromCharCode'](_0x235fe3[_0x5d39cc(0x315)]))&&_0x235fe3['preventDefault']();}),$(_0x2c80a1(0x2d1))['on']('mouseleave',function(_0x57a650){var _0x12481e=_0x2c80a1,_0x4de532=0x1,_0x2823e8=0x3e7;if(parseInt($(this)[_0x12481e(0x308)]())<_0x4de532)alert(_0x12481e(0x42f)),$(this)[_0x12481e(0x308)]('');else{if(parseInt($(this)[_0x12481e(0x308)]())>_0x2823e8)alert(_0x12481e(0x409)),$(this)[_0x12481e(0x308)]('');else{}}}),$('#rdioYearly')[_0x2c80a1(0x249)](function(){var _0x4265d0=_0x2c80a1;$('#everymonths')[_0x4265d0(0x308)]('1'),$(_0x4265d0(0x20b))[_0x4265d0(0x28d)](_0x4265d0(0x379));}),$(_0x2c80a1(0x227))[_0x2c80a1(0x249)](function(){IsCustomerBind==![]&&getClientMaster([]);}),$(_0x2c80a1(0x208))[_0x2c80a1(0x379)](function(){var _0x3a256f=_0x2c80a1;$('#CustomerStatus')[_0x3a256f(0x308)]()==_0x3a256f(0x26a)?getClientMaster(ActiveCustomers):getClientMasterInActive(InactiveCustomers);}),$(_0x2c80a1(0x25a))[_0x2c80a1(0x379)](function(){var _0x1b77eb=_0x2c80a1;getGuestUsers('Onchange',$(_0x1b77eb(0x25a))[_0x1b77eb(0x308)]());}),$('#StatusProj,#DepartmentsProject')['change'](function(){var _0x1d3acf=_0x2c80a1,_0x38b2ca=_0x1d3acf(0x230),_0x1a8a32=_0x1d3acf(0x461),_0x263fc2=0xc8,_0x509351=0x190;SP[_0x1d3acf(0x302)]['loadMultiple']([_0x1d3acf(0x322),_0x1d3acf(0x437)],function(){var _0xf8501a=_0x1d3acf;currentDlgTask=SP['UI']['ModalDialog'][_0xf8501a(0x325)](_0x38b2ca,_0x1a8a32,_0x263fc2,_0x509351);}),setTimeout(function(){loadprojectinsearch();},0x64);}),$(_0x2c80a1(0x29a))[_0x2c80a1(0x249)](function(){setCustomerValue();}),$(_0x2c80a1(0x3b7))[_0x2c80a1(0x249)](function(){setProjectValue();}),$(_0x2c80a1(0x1d9))[_0x2c80a1(0x249)](function(){var _0x3c082d=_0x2c80a1;if(IsOwner==!![]){if(IsReassigneeClicked==![]){$(_0x3c082d(0x35d))[_0x3c082d(0x478)](''),IsReassigneeClicked=!![],$(_0x3c082d(0x35d))[_0x3c082d(0x222)](_0x3c082d(0x453)),initializePeoplePicker_AssaginTaskTeam(_0x3c082d(0x2dd)),onChangeTask(_0x3c082d(0x403),_0x3c082d(0x2dd),_0x3c082d(0x318));var _0x142558='';for(var _0x115461=0x0;_0x115461<arrAlreadyAssinEmp['length'];_0x115461++){var _0x131773=arrAlreadyAssinEmp[_0x115461]['Email'];_0x131773['includes']('#')==!![]&&(_0x131773=_0x131773['replace'](_0x3c082d(0x2ce),''),_0x131773=_0x131773['replace']('_','@'));_0x142558='';var _0x5a2e27=_spPageContextInfo[_0x3c082d(0x41b)]+_0x3c082d(0x46a)+escapeProperly(_0x131773);_0x142558+='<div\x20class=\x22col-sm-6\x20userBoxParent\x22><div\x20class=\x22gridbox\x22><img\x20src=\x22'+_0x5a2e27+_0x3c082d(0x2b8),_0x142558+=_0x3c082d(0x286)+arrAlreadyAssinEmp[_0x115461][_0x3c082d(0x1fc)]+_0x3c082d(0x245)+_0x131773+_0x3c082d(0x283)+_0x131773+'</span></div>',_0x142558+=_0x3c082d(0x1da)+_0x131773+_0x3c082d(0x39c)+arrAlreadyAssinEmp[_0x115461]['DisplayName']+_0x3c082d(0x463)+arrAlreadyAssinEmp[_0x115461][_0x3c082d(0x411)]+');\x22><i\x20class=\x22fa\x20fa-times\x22></i></span></div></div>',$('#ReassigneeUserBox')[_0x3c082d(0x222)](_0x142558);}}$(_0x3c082d(0x201))['modal'](_0x3c082d(0x218));}else return alert('You\x20are\x20not\x20authorized\x20to\x20perform\x20this\x20action.'),![];}),$('#btnOkReassign')[_0x2c80a1(0x249)](function(){SaveReassignee();}),SP[_0x2c80a1(0x302)][_0x2c80a1(0x362)](getCurrentURL_EventManageTaskCreation,_0x2c80a1(0x459)),(currentTaskItemId==null||TaskAction==_0x2c80a1(0x1e3))&&PageLoadAddTask(),$(_0x2c80a1(0x31e))[_0x2c80a1(0x249)](function(){var _0x140ab3=_0x2c80a1;SortProjectTable(this[_0x140ab3(0x3ef)]);}),$(_0x2c80a1(0x267))['click'](function(){var _0x4f466c=_0x2c80a1;SortPredSuccTable(this[_0x4f466c(0x3ef)]);}),$(_0x2c80a1(0x2ae))[_0x2c80a1(0x249)](function(){CreateNewTask();}),$('#cancelTaskCreation')[_0x2c80a1(0x249)](function(){var _0x41f9a4=_0x2c80a1;if(IsModal!=_0x41f9a4(0x1cb)){var _0x3f247c=titanForWork[_0x41f9a4(0x1d0)](_0x41f9a4(0x2e3)),_0x46969e=Logged_CompanyId,_0x1d15de=titanForWork[_0x41f9a4(0x1d0)](_0x41f9a4(0x29f)),_0x384dc7=_spPageContextInfo['webServerRelativeUrl'],_0x1f21a3='';_0x3f247c!=''&&_0x3f247c!=null&&_0x3f247c!=undefined?_0x1f21a3=_0x384dc7+'/Pages/ViewProjectDetails.aspx?WebAppId='+_0x46969e+_0x41f9a4(0x44f)+_0x3f247c+_0x41f9a4(0x3f2)+window[_0x41f9a4(0x38c)](_0x41f9a4(0x44d)):_0x1f21a3=_0x384dc7+_0x41f9a4(0x421)+_0x46969e+_0x41f9a4(0x3f2)+window['btoa'](_0x41f9a4(0x44d))+_0x41f9a4(0x212)+TabId,location[_0x41f9a4(0x28e)]=_0x1f21a3;}else{var _0x29d41a=$[_0x41f9a4(0x30b)](_0x41f9a4(0x275));_0x29d41a[_0x41f9a4(0x2d3)](_0x41f9a4(0x204))==!![]?location[_0x41f9a4(0x28e)]=$[_0x41f9a4(0x30b)](_0x41f9a4(0x275)):$(_0x41f9a4(0x45a))[_0x41f9a4(0x2f3)]()=='-Select-'?location[_0x41f9a4(0x28e)]=$[_0x41f9a4(0x30b)](_0x41f9a4(0x275))+_0x41f9a4(0x282)+$(_0x41f9a4(0x464))['val']():location[_0x41f9a4(0x28e)]=$['urlParam'](_0x41f9a4(0x275))+'&ProjectName='+$(_0x41f9a4(0x45a))['text']();}}),$(_0x2c80a1(0x35c))[_0x2c80a1(0x249)](function(){var _0x398047=_0x2c80a1;IsModal!=_0x398047(0x1cb)?($(_0x398047(0x3b9))[_0x398047(0x449)](),$('#txtserch')[_0x398047(0x308)](''),$(_0x398047(0x348))[_0x398047(0x235)](),$(_0x398047(0x2f7))[_0x398047(0x222)](_0x398047(0x469)),$(_0x398047(0x2f7))[_0x398047(0x222)](_0x398047(0x3bc)),$(_0x398047(0x2f7))[_0x398047(0x222)](_0x398047(0x2ac)),$(_0x398047(0x2f7))[_0x398047(0x222)]('<option\x20value=\x228\x22>My\x20group</option>'),selectedText=_0x398047(0x452),$(_0x398047(0x354))[_0x398047(0x218)](),$('#txtserchdiv')[_0x398047(0x218)](),$(_0x398047(0x466))[_0x398047(0x3bb)](),$('#ddlDepartment')[_0x398047(0x3bb)](),$(_0x398047(0x25a))[_0x398047(0x3bb)](),$(_0x398047(0x354))[_0x398047(0x478)](''),$(_0x398047(0x354))['append'](_0x398047(0x33d)),GetGeneralTaskEmps(_0x398047(0x3e4))):($(_0x398047(0x3b9))[_0x398047(0x449)](),$(_0x398047(0x3c9))[_0x398047(0x308)](''),$('#ddlShowUser\x20option')[_0x398047(0x235)](),$('#ddlShowUser')[_0x398047(0x222)](_0x398047(0x327)),selectedText=_0x398047(0x452),$('#lblShowuser')['show'](),$(_0x398047(0x446))[_0x398047(0x218)](),$('#lblDepartment')[_0x398047(0x3bb)](),$(_0x398047(0x317))['hide'](),$(_0x398047(0x25a))['hide'](),$(_0x398047(0x354))[_0x398047(0x478)](''),$('#lblShowuser')[_0x398047(0x222)]('Name\x20like:'),getGuestTeamMembrs(_0x398047(0x3e4),!![]));}),$(_0x2c80a1(0x1dd))[_0x2c80a1(0x249)](function(){var _0x3c79de=_0x2c80a1;$(_0x3c79de(0x3b9))[_0x3c79de(0x449)](),$(_0x3c79de(0x348))[_0x3c79de(0x235)](),$(_0x3c79de(0x2f7))[_0x3c79de(0x1fb)](_0x3c79de(0x24e)),$('#lblShowuser')[_0x3c79de(0x3bb)](),$(_0x3c79de(0x446))['show'](),$(_0x3c79de(0x466))[_0x3c79de(0x3bb)](),$(_0x3c79de(0x317))['hide'](),$('#ddlClients')[_0x3c79de(0x3bb)](),$(_0x3c79de(0x21c))[_0x3c79de(0x3bb)]();var _0x873356=$(_0x3c79de(0x28f))[_0x3c79de(0x308)]();GetProjectTeamMembers(_0x873356,'Onchange'),LoadShowUser(TaskusersProjectTeam),$('#txtserch')['val']('');}),$(_0x2c80a1(0x21c))[_0x2c80a1(0x379)](function(){var _0x166215=_0x2c80a1;$(_0x166215(0x21c))[_0x166215(0x308)]()!='0'?getSelectedGroupMembers():LoadShowUser([]);}),$(_0x2c80a1(0x2f7))['change'](function(){showUserChange(this);}),$('#AssaginTaskTeam_TopSpan')[_0x2c80a1(0x350)](function(){var _0x243059=_0x2c80a1;console[_0x243059(0x326)](_0x243059(0x34e));var _0x581762=peoplePicker[_0x243059(0x35a)]();for(var _0x44ccb1=0x0;_0x44ccb1<_0x581762[_0x243059(0x269)]-0x1;_0x44ccb1++){_0x581762[_0x581762[_0x243059(0x269)]-0x1][_0x243059(0x470)]==_0x581762[_0x44ccb1]['Key']&&alert(_0x243059(0x375));}}),$(_0x2c80a1(0x1ef))['click'](function(){var _0x5ee13e=_0x2c80a1,_0x13721a=$(_0x5ee13e(0x28f))['val']();GetProjectTeamMembers(_0x13721a,'');}),$(_0x2c80a1(0x2a9))['click'](function(){GetGeneralTaskEmps('');}),$(_0x2c80a1(0x37d))[_0x2c80a1(0x249)](function(){Departmentfilter('');}),$(_0x2c80a1(0x383))[_0x2c80a1(0x249)](function(){var _0x4526e7=_0x2c80a1;getGuestUsers('',$(_0x4526e7(0x25a))[_0x4526e7(0x308)]());}),$('#txtserch')[_0x2c80a1(0x350)](function(){SearchAssigneeTable();}),$(_0x2c80a1(0x28c))[_0x2c80a1(0x249)](function(){var _0x426aa9=_0x2c80a1;$(_0x426aa9(0x47a))[_0x426aa9(0x2f3)]('Successor\x20Task'),PredSuccTaskValidate();}),$(_0x2c80a1(0x213))[_0x2c80a1(0x249)](function(){var _0xf8b01b=_0x2c80a1;$(_0xf8b01b(0x47a))[_0xf8b01b(0x2f3)](_0xf8b01b(0x42b)),PredSuccTaskValidate();}),$(_0x2c80a1(0x46c))['click'](function(){SelectSuccPredTask();}),$(_0x2c80a1(0x471))[_0x2c80a1(0x249)](function(){var _0x56aea5=_0x2c80a1;$(_0x56aea5(0x353))['prop'](_0x56aea5(0x440),'');}),LoadShowUser(AllTaskUsersEmployeeuser),$('#FileUpload')['on'](_0x2c80a1(0x379),function(){var _0x378c2e=_0x2c80a1;FinalFiles4Upload=[];var _0x50652b=this[_0x378c2e(0x1eb)]['length'],_0x443353=0x0;$[_0x378c2e(0x24a)](this[_0x378c2e(0x1eb)],function(_0x36f780,_0x56b898){var _0x4723c1=_0x378c2e;finalFiles[finalFiles[_0x4723c1(0x269)]]=_0x56b898;}),RemoveDuplicate=[];var _0x5143f4=finalFiles[_0x378c2e(0x2a0)](function(_0x5cce60){var _0x438e3a=_0x378c2e;if(RemoveDuplicate['indexOf'](_0x5cce60[_0x438e3a(0x419)])==-0x1)return RemoveDuplicate[_0x438e3a(0x309)](_0x5cce60[_0x438e3a(0x419)]),!![];return![];});FinalFiles4Upload=ReinitializeArray(_0x5143f4),$('#filename')[_0x378c2e(0x2ab)]();for(_0x443353;_0x443353<FinalFiles4Upload[_0x378c2e(0x269)];_0x443353++){$(_0x378c2e(0x1c5))[_0x378c2e(0x222)](_0x378c2e(0x2a5)+Tcounter+_0x378c2e(0x2e9)+Tcounter+_0x378c2e(0x313)+RemoveDuplicate[_0x443353]+_0x378c2e(0x45f)+Tcounter+_0x378c2e(0x217)),Tcounter=Tcounter+0x1;}}),IsModal==_0x2c80a1(0x1cb)&&($('#s4-bodyContainer\x20.navbar-custom')['hide'](),$(_0x2c80a1(0x296))[_0x2c80a1(0x3bb)](),$('#ms-designer-ribbon')[_0x2c80a1(0x3bb)](),$('#masterFooter')['hide'](),$(_0x2c80a1(0x462))[_0x2c80a1(0x1ea)](_0x2c80a1(0x3f6),_0x2c80a1(0x3f6)),$(_0x2c80a1(0x227))['remove'](),(Logged_CompanyId==''||Logged_CompanyId==null||Logged_CompanyId==_0x2c80a1(0x3ea))&&(Logged_CompanyId=$[_0x2c80a1(0x30b)](_0x2c80a1(0x226)))),userActivityNotificationEntry(_spPageContextInfo[_0x2c80a1(0x411)],window[_0x2c80a1(0x372)]),IsTaskRecursive=='Recursive'||IsTaskRecursive==_0x2c80a1(0x413)?($(_0x2c80a1(0x1e9))['remove'](),$(_0x2c80a1(0x2b6))['remove'](),$(_0x2c80a1(0x2a2))[_0x2c80a1(0x235)](),$(_0x2c80a1(0x268))['remove'](),$(_0x2c80a1(0x455))['remove'](),$('.EndDateRecursive')[_0x2c80a1(0x20f)](),$(_0x2c80a1(0x38e))['hide'](),$(_0x2c80a1(0x439))[_0x2c80a1(0x20f)]({'changeMonth':!![],'changeYear':!![],'minDate':0x1,'onSelect':function(_0x1b8258){var _0x23ccf4=_0x2c80a1,_0x315ac1=GetDateStandardFormat(moment(_0x1b8258)[_0x23ccf4(0x343)](_0x23ccf4(0x29d))),_0x3655f1=new Date(_0x315ac1),_0x214185=0x5265c00,_0x253ef2=new Date(_0x3655f1['getTime']()+_0x214185);$(_0x23ccf4(0x374))[_0x23ccf4(0x20f)](_0x23ccf4(0x1ce),'dateFormat',_0x23ccf4(0x2fe)),$(_0x23ccf4(0x374))['datepicker'](_0x23ccf4(0x1ce),'minDate',_0x253ef2);}}),$('.StartDateRecursive')[_0x2c80a1(0x20f)](_0x2c80a1(0x1ce),'dateFormat',_0x2c80a1(0x2fe))):$(_0x2c80a1(0x479))[_0x2c80a1(0x235)](),$('.LibTreeStruct')[_0x2c80a1(0x249)](function(){LibraryTreeBind==![]&&(TreeStructure(),myShareDepartmentCopy(),LibraryTreeBind=!![]);});}),$[a455_0x31754c(0x30b)]=function(_0x42e3d2){var _0x28ac8a=a455_0x31754c,_0x4f29a8=new RegExp('[?&]'+_0x42e3d2+_0x28ac8a(0x434))[_0x28ac8a(0x2bf)](window[_0x28ac8a(0x372)][_0x28ac8a(0x28e)]);return _0x4f29a8==null?_0x4f29a8=_0x28ac8a(0x3ea):_0x4f29a8[0x1]||0x0;};function LoadShowUser(_0x16ad26){var _0x10747b=a455_0x31754c;tabledata=new Tabulator(_0x10747b(0x3dc),{'height':_0x10747b(0x364),'pagination':_0x10747b(0x1c8),'paginationSize':0x6,'layout':_0x10747b(0x2ec),'placeholder':_0x10747b(0x2c3),'data':_0x16ad26,'columns':[{'formatter':_0x10747b(0x432),'titleFormatter':_0x10747b(0x432),'align':_0x10747b(0x206),'field':_0x10747b(0x288),'width':0xf,'headerSort':![],'cellClick':function(_0x18f64a,_0x369d31){var _0x5c9513=_0x10747b;_0x369d31[_0x5c9513(0x35b)]()['toggleSelect']();}},{'title':'Name','field':_0x10747b(0x32d),'formatter':'html','width':0xe6,'height':0x25},{'title':'Designation','field':_0x10747b(0x467),'width':0xc8,'align':'left','sorter':_0x10747b(0x3df)},{'title':_0x10747b(0x27b),'field':_0x10747b(0x27b),'align':_0x10747b(0x456),'width':0xb4},{'title':_0x10747b(0x2ad),'field':_0x10747b(0x2ad),'align':_0x10747b(0x456),'width':0xbe},{'title':_0x10747b(0x37c),'field':_0x10747b(0x400),'width':0x11b}]}),$(_0x10747b(0x1f8))['html']('Total\x20Row\x20Count:\x20'+_0x16ad26[_0x10747b(0x269)]);}function getCurrentURL_EventManageTaskCreation(){var _0xd173ac=a455_0x31754c,_0xd4f281=titanForWork['getQueryStringParameter'](_0xd173ac(0x2e3));if(_0xd4f281==undefined){var _0x4e050b=_0xd173ac(0x360);_0x4e050b+='<option\x20value=\x220\x22>-Select-</option>',_0x4e050b+=_0xd173ac(0x30a),_0x4e050b+='<button\x20type=\x22button\x22\x20class=\x22btn\x20custom-btn\x20ml-8\x20w-87\x22\x20id=\x22searchProject\x22><i\x20class=\x22fa\x20fa-search\x22\x20aria-hidden=\x22true\x22></i></button>',$('#ProjectName')['append'](_0x4e050b),$('#searchProject')[_0xd173ac(0x249)](function(){var _0x3a0066=_0xd173ac;if(IsProjectBind==![]){var _0x547a56=_0x3a0066(0x319),_0x19bc98=_0x3a0066(0x461),_0x339648=0xc8,_0x28e163=0x190;SP[_0x3a0066(0x302)][_0x3a0066(0x3b8)]([_0x3a0066(0x322),_0x3a0066(0x437)],function(){var _0x2a683d=_0x3a0066;currentDlgTask=SP['UI'][_0x2a683d(0x266)][_0x2a683d(0x325)](_0x547a56,_0x19bc98,_0x339648,_0x28e163);}),setTimeout(function(){ReadDepartment(),loadprojectinsearch();},0x64);}$(_0x3a0066(0x335))['modal'](_0x3a0066(0x218));});}else BindProjectsForProjectsDashboard(),TaskforProjectOnly(_0xd4f281,currentTaskItemId),GetAllModule(_0xd4f281);TaskAction==_0xd173ac(0x1e3)?(getCopiedTaskDetails(),GetAllModule(_0xd4f281)):setDefaultClientMaster(),waitingDialog[_0xd173ac(0x3bb)]();}function ReadDepartment(){var _0x1824e5=a455_0x31754c,_0x661e27='',_0x4c9079=_0x1824e5(0x3d8)+Logged_CompanyId+_0x1824e5(0x26c);$['when'](getItemsWithQueryItem(_0x1824e5(0x27c),_0x4c9079,''))[_0x1824e5(0x356)](function(_0x4c69a8){var _0x145d85=_0x1824e5,_0x2f2459=_0x4c69a8['results'];if(_0x2f2459[_0x145d85(0x269)]>0x0){$(_0x145d85(0x330))['text'](_0x145d85(0x2a1)),$('#DepartmentsProject')['empty'](),$(_0x145d85(0x23c))['append']($('<option></option>')['val'](_0x145d85(0x2a1))['html'](_0x145d85(0x2a1)));for(i=0x0;i<_0x2f2459[_0x145d85(0x269)];i++){parseInt(_0x2f2459[i][_0x145d85(0x32f)][_0x145d85(0x269)])>0x22?_0x661e27=_0x2f2459[i][_0x145d85(0x32f)][_0x145d85(0x3ee)](0x0,0x22)+_0x145d85(0x221):_0x661e27=_0x2f2459[i][_0x145d85(0x32f)],$(_0x145d85(0x23c))['append']('<option\x20value=\x22'+_0x2f2459[i][_0x145d85(0x32f)]+'\x22\x20title=\x22'+_0x2f2459[i]['Title']+'\x22>'+_0x661e27+'</option>');}$('#DepartmentsProject')['val'](_0x145d85(0x2a1));}});}function loadprojectinsearch(){var _0x42235b=a455_0x31754c,_0x6266c0='',_0x12919a=[],_0x1a3b3e='';$(_0x42235b(0x251))['empty']();var _0x4b826d=0x0,_0x3ec156=_0x42235b(0x3a3)+_spPageContextInfo[_0x42235b(0x395)]+_0x42235b(0x20d);$[_0x42235b(0x293)](getItemsWithQueryItem(_0x42235b(0x38a),_0x3ec156,''))['done'](function(_0x2e987a){var _0x5e6121=_0x42235b,_0x40891b=_0x2e987a[_0x5e6121(0x3fe)];for(var _0x3be036=0x0;_0x3be036<_0x40891b[_0x5e6121(0x269)];_0x3be036++){_0x12919a[_0x5e6121(0x309)](_0x40891b[_0x3be036]['ProjectId']);}_0x6266c0=_0x12919a[_0x5e6121(0x2a0)](function(_0x2bc677,_0x5287b8,_0x254baf){var _0x286515=_0x5e6121;return _0x5287b8==_0x254baf[_0x286515(0x417)](_0x2bc677);});});var _0x10ec2f=[];if(_0x6266c0[_0x42235b(0x269)]>0x0){for(var _0x52463e=0x0;_0x52463e<_0x6266c0[_0x42235b(0x269)];_0x52463e++){var _0x41ac07=_0x6266c0[_0x52463e],_0x26a698=$(_0x42235b(0x2d9))[_0x42235b(0x308)](),_0x55c0c3=$(_0x42235b(0x392))[_0x42235b(0x308)]();if(_0x26a698!=_0x42235b(0x2a1)){if(_0x55c0c3!=_0x42235b(0x2a1))var _0x3ec156=_0x42235b(0x2e1)+_0x26a698+'\x27)\x20and\x20DepartmentName\x20eq\x20(\x27'+_0x55c0c3+'\x27)and\x20ID\x20eq\x20\x27'+_0x41ac07+'\x27\x20';else var _0x3ec156='?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status\x20eq\x20(\x27'+_0x26a698+_0x42235b(0x42d)+_0x41ac07+'\x27\x20';}else{if(_0x55c0c3!=_0x42235b(0x2a1))var _0x3ec156=_0x42235b(0x331)+_0x55c0c3+_0x42235b(0x1d8)+_0x41ac07+'\x27';else var _0x3ec156=_0x42235b(0x454)+_0x41ac07+'\x27';}$[_0x42235b(0x293)](getItemsWithQueryItem(_0x42235b(0x2b7),_0x3ec156,''))[_0x42235b(0x356)](function(_0x2b1f4f){var _0x33d623=_0x42235b,_0x14edb6=_0x2b1f4f[_0x33d623(0x3fe)];IsProjectBind=!![];if(_0x14edb6['length']>0x0)for(var _0x3e2fce=0x0;_0x3e2fce<_0x14edb6[_0x33d623(0x269)];_0x3e2fce++){var _0x2f4f85=_0x14edb6[_0x3e2fce]['ID'];if(_0x14edb6[_0x3e2fce][_0x33d623(0x241)]==_0x33d623(0x45b))colorCss=_0x33d623(0x3ed);else{if(_0x14edb6[_0x3e2fce][_0x33d623(0x241)]=='OnHold')colorCss='holdcolor';else _0x14edb6[_0x3e2fce][_0x33d623(0x241)]=='Completed'?colorCss='Completecolor':colorCss='Terminatedcolor';}var _0x1e577b=_0x14edb6[_0x3e2fce]['ProjectName'];_0x14edb6[_0x3e2fce][_0x33d623(0x29f)][_0x33d623(0x269)]>0x78&&(_0x1e577b=_0x1e577b[_0x33d623(0x3ee)](0x0,0x78));var _0x5393ae=_0x14edb6[_0x3e2fce][_0x33d623(0x345)][_0x33d623(0x32f)];_0x14edb6[_0x3e2fce][_0x33d623(0x345)][_0x33d623(0x32f)][_0x33d623(0x269)]>0x78&&(_0x5393ae=_0x5393ae[_0x33d623(0x3ee)](0x0,0x78));var _0x3cc402=_0x14edb6[_0x3e2fce][_0x33d623(0x408)]?_0x14edb6[_0x3e2fce][_0x33d623(0x408)]:'';_0x3cc402[_0x33d623(0x269)]>0x1e&&(_0x3cc402=_0x3cc402[_0x33d623(0x3ee)](0x0,0x1e));_0x4b826d++;var _0x554cdb=_spPageContextInfo[_0x33d623(0x41b)]+_0x33d623(0x46a)+escapeProperly(_0x14edb6[_0x3e2fce]['ManagerName'][_0x33d623(0x400)]);_0x1a3b3e+='<tr><td><input\x20type=\x27radio\x27\x20class=\x27ProjectchkList\x27\x20name=\x27TaskListchk\x27\x20title=\x27'+_0x14edb6[_0x3e2fce][_0x33d623(0x29f)]+_0x33d623(0x3fd)+_0x2f4f85+_0x33d623(0x223),_0x1a3b3e+=_0x33d623(0x262)+_0x1e577b+_0x33d623(0x238)+_0x3cc402+'</span></td>',_0x1a3b3e+=_0x33d623(0x1f7)+_0x5393ae+_0x33d623(0x2cd)+colorCss+'\x27>'+_0x14edb6[_0x3e2fce][_0x33d623(0x241)]+_0x33d623(0x32c),_0x1a3b3e+='<td><div\x20class=\x27managersec\x27><div\x20class=\x27mangimg\x27><img\x20src='+_0x554cdb+_0x33d623(0x45e),_0x1a3b3e+='<h4>'+_0x14edb6[_0x3e2fce]['ManagerName']['Title']+_0x33d623(0x3ad)+_0x14edb6[_0x3e2fce]['ManagerName'][_0x33d623(0x400)]+'</span></div>',_0x1a3b3e+='</div></div></td>',_0x1a3b3e+=_0x33d623(0x3d2);}});}$(_0x42235b(0x251))[_0x42235b(0x222)](_0x1a3b3e),_0x4b826d==0x0?(_0x1a3b3e+=_0x42235b(0x2c0),$('#ProjectTables')[_0x42235b(0x222)](_0x1a3b3e),$('#tablelocation')[_0x42235b(0x3bb)]()):(TableConfigurationProject(),$('#tablelocation')['show']()),$(_0x42235b(0x2a7))[_0x42235b(0x2f3)](_0x4b826d);}currentDlgTask!=''&&currentDlgTask[_0x42235b(0x2e2)]();}function TableConfigurationProject(){var _0x43869e=a455_0x31754c;sorter=new TINY[(_0x43869e(0x2d0))][(_0x43869e(0x311))](_0x43869e(0x311),'TableProjects',{'headclass':_0x43869e(0x2c8),'ascclass':'asc','descclass':_0x43869e(0x291),'evenclass':_0x43869e(0x3f5),'oddclass':'oddrow','evenselclass':_0x43869e(0x33f),'oddselclass':'oddselected','paginate':!![],'size':0x5,'colddid':_0x43869e(0x3a0),'currentid':_0x43869e(0x444),'totalid':_0x43869e(0x233),'startingrecid':_0x43869e(0x290),'endingrecid':_0x43869e(0x26e),'totalrecid':_0x43869e(0x25e),'hoverid':'selectedrow','pageddid':_0x43869e(0x256),'navid':_0x43869e(0x393),'sortdir':0x1,'init':!![]});}function setProjectValue(){var _0x57c1d8=a455_0x31754c;if($(_0x57c1d8(0x31d))[0x0]!=null){$(_0x57c1d8(0x1c0))[_0x57c1d8(0x478)]('');var _0x1a9ea0=$(_0x57c1d8(0x31d))[0x0]['attributes']['title']['value'],_0xba7b8e=_0x57c1d8(0x1ca)+$(_0x57c1d8(0x31d))[_0x57c1d8(0x308)]()+_0x57c1d8(0x26f)+_0x1a9ea0+_0x57c1d8(0x1d1);$(_0x57c1d8(0x1c0))[_0x57c1d8(0x222)](_0xba7b8e),$(_0x57c1d8(0x335))[_0x57c1d8(0x449)]('hide'),$(_0x57c1d8(0x349))['empty'](),$('#aTaskButton')[_0x57c1d8(0x218)](),$(_0x57c1d8(0x27f))[_0x57c1d8(0x218)](),initializePeoplePicker(_0x57c1d8(0x3ae)),peoplePickerDiv=$(_0x57c1d8(0x1c9));var _0x1a5cb1=$('#ProjectName\x20:selected')['val']();onChangeTask(_0x57c1d8(0x225),_0x57c1d8(0x3ae),'userHTMLBox'),getProjectPlanedDate(_0x1a5cb1),GetAllModule(_0x1a5cb1);}}function getClientMaster(_0x103c4e){var _0xb3a989=a455_0x31754c,_0x1fd507=_0xb3a989(0x436),_0x191698='';if(_0x103c4e['length']==0x0){Audience==0x2?RestQuery=_0xb3a989(0x369):RestQuery=_0xb3a989(0x424)+Logged_CompanyId+_0xb3a989(0x1ee);$(_0xb3a989(0x1f5))[_0xb3a989(0x478)]('');var _0x354569=$['Deferred'](),_0x5ea846=_spPageContextInfo[_0xb3a989(0x41b)]+_0xb3a989(0x2ea)+RestQuery;$[_0xb3a989(0x293)](getItems(_0x5ea846,_0x354569))[_0xb3a989(0x356)](function(_0x2bbe77){var _0x4622b5=_0xb3a989;response=[],ActiveCustomers=_0x2bbe77;for(var _0x369fca=0x0;_0x369fca<_0x2bbe77[_0x4622b5(0x269)];_0x369fca++){var _0x2a6709=_0x2bbe77[_0x369fca]['ID'],_0x4017f1=_0x2bbe77[_0x369fca][_0x4622b5(0x32f)],_0x15e07a=_0x2bbe77[_0x369fca]['SelfCompany'];_0x2bbe77[_0x369fca][_0x4622b5(0x3c1)]=_0x2bbe77[_0x369fca][_0x4622b5(0x3c1)]?_0x2bbe77[_0x369fca][_0x4622b5(0x3c1)]:'',_0x2bbe77[_0x369fca][_0x4622b5(0x2dc)]=_0x2bbe77[_0x369fca]['Attn_Name']?_0x2bbe77[_0x369fca][_0x4622b5(0x2dc)]:'',_0x2bbe77[_0x369fca][_0x4622b5(0x477)]=_0x2bbe77[_0x369fca][_0x4622b5(0x477)]?_0x2bbe77[_0x369fca][_0x4622b5(0x477)]:'',_0x15e07a==!![]?(_0x191698+=_0x4622b5(0x28b)+_0x4017f1+_0x4622b5(0x3fd)+_0x2a6709+_0x4622b5(0x37a),_0x191698+=_0x4622b5(0x23b)+_0x4017f1+_0x4622b5(0x35f)+_0x2a6709+_0x4622b5(0x32c),_0x191698+=_0x4622b5(0x23b)+_0x2bbe77[_0x369fca][_0x4622b5(0x3c1)]+'</span></td><td><span>'+_0x2bbe77[_0x369fca]['Attn_Name']+_0x4622b5(0x210)+_0x2bbe77[_0x369fca][_0x4622b5(0x477)]+'</span></td></tr>'):(_0x191698+='<tr><td><label><input\x20type=\x27radio\x27\x20name=\x27Customer\x27\x20title=\x27'+_0x4017f1+'\x27\x20value=\x27'+_0x2a6709+'\x27\x20class=\x27CustomerchkList\x27></label></td>',_0x191698+=_0x4622b5(0x23b)+_0x4017f1+_0x4622b5(0x35f)+_0x2a6709+'</span></td>',_0x191698+=_0x4622b5(0x23b)+_0x2bbe77[_0x369fca][_0x4622b5(0x3c1)]+'</span></td><td><span>'+_0x2bbe77[_0x369fca][_0x4622b5(0x2dc)]+_0x4622b5(0x210)+_0x2bbe77[_0x369fca]['CustType']+'</span></td></tr>');}$(_0x4622b5(0x1f5))[_0x4622b5(0x222)](_0x191698),GenerateTableMyCustomerList(),IsCustomerBind=!![];});}else{$(_0xb3a989(0x1f5))[_0xb3a989(0x478)]('');for(var _0x104211=0x0;_0x104211<_0x103c4e['length'];_0x104211++){var _0x373e03=_0x103c4e[_0x104211]['ID'],_0x275144=_0x103c4e[_0x104211][_0xb3a989(0x32f)],_0x377df9=_0x103c4e[_0x104211][_0xb3a989(0x1f2)];_0x377df9==!![]?(_0x191698+=_0xb3a989(0x28b)+_0x275144+_0xb3a989(0x3fd)+_0x373e03+'\x27\x20class=\x27CustomerchkList\x27\x20checked></label></td>',_0x191698+=_0xb3a989(0x23b)+_0x275144+'</span></td><td\x20style=\x27display:none;\x27><span>'+_0x373e03+_0xb3a989(0x32c),_0x191698+='<td><span>'+_0x103c4e[_0x104211][_0xb3a989(0x3c1)]+_0xb3a989(0x210)+_0x103c4e[_0x104211][_0xb3a989(0x2dc)]+'</span></td><td><span>'+_0x103c4e[_0x104211]['CustType']+_0xb3a989(0x295)):(_0x191698+=_0xb3a989(0x285)+_0x275144+_0xb3a989(0x3fd)+_0x373e03+_0xb3a989(0x2a8),_0x191698+=_0xb3a989(0x23b)+_0x275144+_0xb3a989(0x35f)+_0x373e03+_0xb3a989(0x32c),_0x191698+='<td><span>'+_0x103c4e[_0x104211]['Client_Code']+'</span></td><td><span>'+_0x103c4e[_0x104211][_0xb3a989(0x2dc)]+_0xb3a989(0x210)+_0x103c4e[_0x104211][_0xb3a989(0x477)]+_0xb3a989(0x295));}$(_0xb3a989(0x1f5))['append'](_0x191698),GenerateTableMyCustomerList();}}function getClientMasterInActive(_0x18b248){var _0x5c69b9=a455_0x31754c,_0x13126f=_0x5c69b9(0x436),_0x54f2e0='';if(_0x18b248[_0x5c69b9(0x269)]==0x0){Audience==0x2?RestQuery=_0x5c69b9(0x31f):RestQuery=_0x5c69b9(0x424)+Logged_CompanyId+_0x5c69b9(0x41a);$('#mainDivAreaClientmaster')['html']('');var _0x3802ca=$[_0x5c69b9(0x40a)](),_0x1424c1=_spPageContextInfo[_0x5c69b9(0x41b)]+'/_api/web/lists/getbytitle(\x27ClientMaster\x27)/items/'+RestQuery;$[_0x5c69b9(0x293)](getItems(_0x1424c1,_0x3802ca))['done'](function(_0x1d7da3){var _0x5de7a3=_0x5c69b9;response=[],InactiveCustomers=_0x1d7da3;for(var _0x17a2df=0x0;_0x17a2df<_0x1d7da3[_0x5de7a3(0x269)];_0x17a2df++){var _0x134dcb=_0x1d7da3[_0x17a2df]['ID'],_0x516242=_0x1d7da3[_0x17a2df][_0x5de7a3(0x32f)],_0x1733fc=_0x1d7da3[_0x17a2df][_0x5de7a3(0x1f2)];_0x1733fc==!![]?(_0x54f2e0+=_0x5de7a3(0x28b)+_0x516242+_0x5de7a3(0x3fd)+_0x134dcb+_0x5de7a3(0x37a),_0x54f2e0+='<td><span>'+_0x516242+_0x5de7a3(0x35f)+_0x134dcb+_0x5de7a3(0x32c),_0x54f2e0+=_0x5de7a3(0x23b)+_0x1d7da3[_0x17a2df][_0x5de7a3(0x3c1)]+'</span></td><td><span>'+_0x1d7da3[_0x17a2df]['Attn_Name']+_0x5de7a3(0x210)+_0x1d7da3[_0x17a2df]['CustType']+'</span></td></tr>'):(_0x54f2e0+=_0x5de7a3(0x285)+_0x516242+_0x5de7a3(0x3fd)+_0x134dcb+_0x5de7a3(0x2a8),_0x54f2e0+='<td><span>'+_0x516242+'</span></td><td\x20style=\x27display:none;\x27><span>'+_0x134dcb+_0x5de7a3(0x32c),_0x54f2e0+=_0x5de7a3(0x23b)+_0x1d7da3[_0x17a2df][_0x5de7a3(0x3c1)]+'</span></td><td><span>'+_0x1d7da3[_0x17a2df][_0x5de7a3(0x2dc)]+_0x5de7a3(0x210)+_0x1d7da3[_0x17a2df]['CustType']+_0x5de7a3(0x295));}$(_0x5de7a3(0x1f5))[_0x5de7a3(0x222)](_0x54f2e0),GenerateTableMyCustomerList(),IsCustomerBind=!![];});}else{$(_0x5c69b9(0x1f5))[_0x5c69b9(0x478)]('');for(var _0x26b615=0x0;_0x26b615<_0x18b248[_0x5c69b9(0x269)];_0x26b615++){var _0x49b119=_0x18b248[_0x26b615]['ID'],_0x65ae87=_0x18b248[_0x26b615][_0x5c69b9(0x32f)],_0x36c292=_0x18b248[_0x26b615][_0x5c69b9(0x1f2)];_0x36c292==!![]?(_0x54f2e0+=_0x5c69b9(0x28b)+_0x65ae87+_0x5c69b9(0x3fd)+_0x49b119+'\x27\x20class=\x27CustomerchkList\x27\x20checked></label></td>',_0x54f2e0+=_0x5c69b9(0x23b)+_0x65ae87+_0x5c69b9(0x35f)+_0x49b119+_0x5c69b9(0x32c),_0x54f2e0+=_0x5c69b9(0x23b)+_0x18b248[_0x26b615][_0x5c69b9(0x3c1)]+_0x5c69b9(0x210)+_0x18b248[_0x26b615]['Attn_Name']+_0x5c69b9(0x210)+_0x18b248[_0x26b615][_0x5c69b9(0x477)]+_0x5c69b9(0x295)):(_0x54f2e0+=_0x5c69b9(0x285)+_0x65ae87+'\x27\x20value=\x27'+_0x49b119+_0x5c69b9(0x2a8),_0x54f2e0+=_0x5c69b9(0x23b)+_0x65ae87+_0x5c69b9(0x35f)+_0x49b119+_0x5c69b9(0x32c),_0x54f2e0+=_0x5c69b9(0x23b)+_0x18b248[_0x26b615]['Client_Code']+'</span></td><td><span>'+_0x18b248[_0x26b615]['Attn_Name']+_0x5c69b9(0x210)+_0x18b248[_0x26b615][_0x5c69b9(0x477)]+_0x5c69b9(0x295));}$(_0x5c69b9(0x1f5))[_0x5c69b9(0x222)](_0x54f2e0),GenerateTableMyCustomerList();}}function setCustomerValue(){var _0x2b5a2f=a455_0x31754c;$(_0x2b5a2f(0x433))[_0x2b5a2f(0x478)]('');var _0x427ef8=$(_0x2b5a2f(0x1ed))[0x0]['attributes'][_0x2b5a2f(0x451)][_0x2b5a2f(0x337)],_0x566eab=_0x2b5a2f(0x1ca)+$(_0x2b5a2f(0x1ed))[_0x2b5a2f(0x308)]()+'\x22\x20Selected>'+_0x427ef8+_0x2b5a2f(0x1d1);$(_0x2b5a2f(0x433))['append'](_0x566eab),$('#otherCustomerSearch')[_0x2b5a2f(0x449)]('hide');}function setDefaultClientMaster(){var _0x4f4827=a455_0x31754c,_0x26a158=_0x4f4827(0x436),_0x3226f7='';Audience==0x2?RestQuery='?$select=*&$filter=IsActive\x20eq\x201\x20and\x20SelfCompany\x20eq\x201&$top=5000':RestQuery=_0x4f4827(0x424)+Logged_CompanyId+'\x27\x20and\x20IsActive\x20eq\x201\x20and\x20SelfCompany\x20eq\x201&$top=5000';$(_0x4f4827(0x1f5))[_0x4f4827(0x478)]('');var _0x3335e4=$[_0x4f4827(0x40a)](),_0x187d98=_spPageContextInfo['webAbsoluteUrl']+_0x4f4827(0x2ea)+RestQuery;$['when'](getItems(_0x187d98,_0x3335e4))[_0x4f4827(0x356)](function(_0x171487){var _0x213e16=_0x4f4827;response=[];if(_0x171487['length']>0x0){var _0x374c02=_0x171487[0x0]['ID'],_0x3284c9=_0x171487[0x0][_0x213e16(0x32f)];$(_0x213e16(0x433))['html']('');var _0x26d59a=_0x213e16(0x1ca)+_0x374c02+_0x213e16(0x26f)+_0x3284c9+_0x213e16(0x1d1);$(_0x213e16(0x433))[_0x213e16(0x222)](_0x26d59a);}});}function GenerateTableMyCustomerList(){var _0x3c7f23=a455_0x31754c;sorterTableCustomerList=new TINY['table'][(_0x3c7f23(0x311))](_0x3c7f23(0x2ba),_0x3c7f23(0x445),{'headclass':_0x3c7f23(0x2c8),'ascclass':_0x3c7f23(0x1c7),'descclass':'desc','evenclass':_0x3c7f23(0x3f5),'oddclass':'oddrow','evenselclass':'evenselected','oddselclass':_0x3c7f23(0x22d),'paginate':!![],'size':0x5,'currentid':_0x3c7f23(0x1e1),'totalid':_0x3c7f23(0x3ca),'startingrecid':_0x3c7f23(0x3be),'endingrecid':_0x3c7f23(0x258),'totalrecid':_0x3c7f23(0x24d),'hoverid':_0x3c7f23(0x401),'pageddid':_0x3c7f23(0x1fe),'navid':_0x3c7f23(0x22f),'sortdir':0x1,'init':!![]});}function getWorkType(){var _0x63b95b=a455_0x31754c,_0x5badd9=Logged_CompanyId,_0x2340c9='CategoryMaster',_0x5badd9=Logged_CompanyId;RestQuery=_0x63b95b(0x2d8),$[_0x63b95b(0x293)](CommonFunction[_0x63b95b(0x1dc)](_0x63b95b(0x3ff),RestQuery))[_0x63b95b(0x356)](function(_0x299144){var _0x14a2bb=_0x63b95b,_0x21e470=_0x14a2bb(0x40c);_0x21e470+=_0x14a2bb(0x30f);for(var _0x3d0a7c=0x0;_0x3d0a7c<_0x299144[_0x14a2bb(0x3fe)]['length'];_0x3d0a7c++){var _0xe9c061=_0x299144[_0x14a2bb(0x3fe)][_0x3d0a7c]['ID'],_0x5f34a6=_0x299144[_0x14a2bb(0x3fe)][_0x3d0a7c]['CatogeryName'];_0x21e470+=_0x14a2bb(0x1ca)+_0x5f34a6+'\x22>'+_0x5f34a6+_0x14a2bb(0x1d1);}_0x21e470+=_0x14a2bb(0x30a),$('#WorkType')[_0x14a2bb(0x222)](_0x21e470);});}function TaskforProjectOnly(_0xcb0f72,_0x52ac4b){var _0x5bb212=a455_0x31754c;initializePeoplePicker(_0x5bb212(0x3ae)),onChangeTask('AssaginTaskProjectTeam_TopSpan',_0x5bb212(0x3ae),_0x5bb212(0x357)),peoplePickerDiv=$(_0x5bb212(0x1c9)),$(_0x5bb212(0x3bd))[_0x5bb212(0x1ea)](_0x5bb212(0x45c),_0x5bb212(0x45c)),$(_0x5bb212(0x2e5))[_0x5bb212(0x1ea)]('disabled',!![]),$(_0x5bb212(0x464))['attr'](_0x5bb212(0x3f6),!![]),$('.projectName')[_0x5bb212(0x218)](),$(_0x5bb212(0x464))['find']('select#ProjectNameDetails\x20option[value=\x22'+_0xcb0f72+'\x22]')[_0x5bb212(0x1ea)]('selected',_0x5bb212(0x45c)),$(_0x5bb212(0x1c0))[_0x5bb212(0x1ea)]('disabled',!![]);(_0x52ac4b==''||_0x52ac4b=='null'||_0x52ac4b==null)&&($(_0x5bb212(0x246))[_0x5bb212(0x20f)](_0x5bb212(0x3cc)),$(_0x5bb212(0x255))[_0x5bb212(0x20f)]('destroy'),$(_0x5bb212(0x246))[_0x5bb212(0x20f)]({'changeMonth':!![],'changeYear':!![],'yearRange':_0x5bb212(0x25c)}),$(_0x5bb212(0x246))[_0x5bb212(0x20f)]('option',_0x5bb212(0x3d1),_0x5bb212(0x2fe)),$(_0x5bb212(0x255))[_0x5bb212(0x20f)]({'changeMonth':!![],'changeYear':!![],'yearRange':_0x5bb212(0x25c)}),$(_0x5bb212(0x255))[_0x5bb212(0x20f)](_0x5bb212(0x1ce),'dateFormat',_0x5bb212(0x2fe)),$(_0x5bb212(0x246))[_0x5bb212(0x20f)](_0x5bb212(0x2fc),new Date()));var _0x2d96d2=$(_0x5bb212(0x28f))[_0x5bb212(0x308)]();_0x52ac4b!=undefined?($(_0x5bb212(0x378))[_0x5bb212(0x3bb)](),$(_0x5bb212(0x237))[_0x5bb212(0x3bb)]()):($(_0x5bb212(0x42c))['show'](),$(_0x5bb212(0x378))[_0x5bb212(0x218)](),$('.IntimateProjectTeam')[_0x5bb212(0x3bb)]()),getProjectPlanedDate(_0xcb0f72);}function getCopiedTaskDetails(){var _0x50bc8f=a455_0x31754c,_0x5aeab0='?$select=*,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles&$top=5000&$expand=AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=ID\x20eq\x20\x27'+currentTaskItemId+'\x27';$['when'](getItemsWithQueryItem('EmployeeTaskDetails',_0x5aeab0,''))[_0x50bc8f(0x356)](function(_0x56acee){var _0xdd9bf0=_0x50bc8f,_0x17506c=_0x56acee[_0xdd9bf0(0x3fe)];$(_0xdd9bf0(0x404))[_0xdd9bf0(0x308)]('Copy\x20of\x20'+_0x17506c[0x0][_0xdd9bf0(0x32f)]),$(_0xdd9bf0(0x2e5))[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x361)]),$(_0xdd9bf0(0x2e5))[_0xdd9bf0(0x28d)](_0xdd9bf0(0x379)),$(_0xdd9bf0(0x328))[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x247)]);if($('#TaskType')[_0xdd9bf0(0x308)]()=='2'){var _0x3459b9='AssaginTaskTeam';$('#categoryType')[_0xdd9bf0(0x2ab)]();var _0x201d1=_0xdd9bf0(0x1ca)+_0x17506c[0x0]['ClientID']['ID']+'\x22\x20Selected>'+_0x17506c[0x0][_0xdd9bf0(0x345)][_0xdd9bf0(0x32f)]+_0xdd9bf0(0x1d1);$('#categoryType')[_0xdd9bf0(0x222)](_0x201d1);}else{var _0x3459b9=_0xdd9bf0(0x3ae);$('#ProjectNameDetails')['empty']();var _0x201d1='<option\x20value=\x22'+_0x17506c[0x0][_0xdd9bf0(0x2ef)]+_0xdd9bf0(0x26f)+_0x17506c[0x0][_0xdd9bf0(0x22a)]+'</option>';$(_0xdd9bf0(0x1c0))['append'](_0x201d1),$(_0xdd9bf0(0x349))[_0xdd9bf0(0x2ab)](),$(_0xdd9bf0(0x42c))['show'](),$(_0xdd9bf0(0x27f))[_0xdd9bf0(0x218)](),initializePeoplePicker(_0xdd9bf0(0x3ae)),peoplePickerDiv=$('[id$=\x27AssaginTaskProjectTeam_TopSpan\x27]');var _0x589a11=$(_0xdd9bf0(0x28f))[_0xdd9bf0(0x308)]();getProjectPlanedDate(_0x589a11),GetAllModule(_0x589a11),$('#projectModule')[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x351)]);}var _0x37b830='';for(var _0x4ee9ed=0x0;_0x4ee9ed<_0x17506c[0x0]['TaskAssignTo'][_0xdd9bf0(0x3fe)]['length'];_0x4ee9ed++){$(_0xdd9bf0(0x457))['show'](),EmpIds[_0xdd9bf0(0x309)](_0x17506c[0x0]['TaskAssignTo'][_0xdd9bf0(0x3fe)][_0x4ee9ed]['Id']),multipleEmailAddress[_0xdd9bf0(0x309)](_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed]['EMail']['toLowerCase']()),assignUserName[_0xdd9bf0(0x309)](_0x17506c[0x0][_0xdd9bf0(0x205)]['results'][_0x4ee9ed][_0xdd9bf0(0x32f)]);var _0x13e9a1=_spPageContextInfo[_0xdd9bf0(0x41b)]+_0xdd9bf0(0x46a)+escapeProperly(_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed][_0xdd9bf0(0x400)]);_0x37b830+=_0xdd9bf0(0x347)+_0x13e9a1+'\x22><div\x20class=\x22peopleinfo\x22>',_0x37b830+=_0xdd9bf0(0x286)+_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed][_0xdd9bf0(0x32f)]+_0xdd9bf0(0x245)+_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed]['EMail']+'\x27);\x22>'+_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed][_0xdd9bf0(0x400)]+_0xdd9bf0(0x36f),_0x37b830+=_0xdd9bf0(0x1da)+_0x17506c[0x0]['TaskAssignTo']['results'][_0x4ee9ed][_0xdd9bf0(0x400)]+_0xdd9bf0(0x39c)+_0x17506c[0x0][_0xdd9bf0(0x205)][_0xdd9bf0(0x3fe)][_0x4ee9ed][_0xdd9bf0(0x32f)]+_0xdd9bf0(0x463)+_0x17506c[0x0][_0xdd9bf0(0x205)]['results'][_0x4ee9ed]['Id']+_0xdd9bf0(0x1f6);}$(_0xdd9bf0(0x333))[_0xdd9bf0(0x222)](_0x37b830),$(_0xdd9bf0(0x37b))[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x1e5)]);var _0x2617ce=new Date();_0x2617ce=$[_0xdd9bf0(0x20f)][_0xdd9bf0(0x381)]('MM\x20dd,\x20yy',_0x2617ce),$(_0xdd9bf0(0x246))[_0xdd9bf0(0x308)](_0x2617ce),$(_0xdd9bf0(0x2e8))[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x23f)]),$(_0xdd9bf0(0x2e7))['val'](_0x17506c[0x0]['Distribution']),_0x17506c[0x0][_0xdd9bf0(0x388)]!=null&&$(_0xdd9bf0(0x405))[_0xdd9bf0(0x308)](_0x17506c[0x0][_0xdd9bf0(0x388)][_0xdd9bf0(0x476)]?_0x17506c[0x0][_0xdd9bf0(0x388)]['Url']:''),onChangeTask(_0xdd9bf0(0x225),_0xdd9bf0(0x3ae),'userHTMLBox');});}function checkProjTimeSheet(){var _0x55b669=a455_0x31754c;IsCheck=![];var _0x441466=_0x55b669(0x3e7)+currentTaskItemId+'\x27\x20';return $[_0x55b669(0x293)](getItemsWithQueryItem(_0x55b669(0x2f4),_0x441466,''))[_0x55b669(0x356)](function(_0x4785b6){var _0x43aab7=_0x55b669;_0x4785b6['results'][_0x43aab7(0x269)]>0x0&&(IsCheck=!![]);}),IsCheck;}function SetAndResolvePeoplePicker(_0x2ecba6,_0x121596,_0x2a5762){var _0x5a09d3=a455_0x31754c,_0x1d10b1=$(_0x5a09d3(0x2f2)+_0x2ecba6+'\x27]'),_0x1a6984=SPClientPeoplePicker[_0x5a09d3(0x215)][_0x1d10b1[0x1]['id']];_0x1a6984['AddUserKeys'](_0x121596),_0x2a5762==!![]&&($('#'+_0x2ecba6+'_TopSpan_EditorInput')['attr']('disabled',!![]),$(_0x5a09d3(0x3d4))[_0x5a09d3(0x3bb)]());}function getUserName(_0x5b31c2){var _0x2ae9e1=a455_0x31754c,_0x69d89b='',_0x2a83d2=_spPageContextInfo[_0x2ae9e1(0x41b)]+_0x2ae9e1(0x324)+_0x5b31c2+')';return $['ajax']({'url':_0x2a83d2,'headers':{'Accept':_0x2ae9e1(0x30d)},'async':![],'success':function(_0x5d1dc6){_0x69d89b=_0x5d1dc6['d']['Title'];},'eror':function(_0x13cd1c){var _0x19c08f=_0x2ae9e1;alert($(_0x19c08f(0x320))['val']());}}),_0x69d89b;}function BindProjectsForProjectsDashboard(){var _0x5a9a7c=a455_0x31754c,_0x162b88=titanForWork[_0x5a9a7c(0x1d0)](_0x5a9a7c(0x2e3));RestQuery=_0x5a9a7c(0x334)+_0x162b88+_0x5a9a7c(0x33b),$['when'](getItemsWithQueryItem(_0x5a9a7c(0x2b7),RestQuery,''))['done'](function(_0x298e2e){var _0x20cdcf=_0x5a9a7c,_0x29d3ae=_0x298e2e[_0x20cdcf(0x3fe)];if(_0x29d3ae['length']>0x0){var _0x4e1567='<select\x20name=\x22projectName\x22\x20id=\x22ProjectNameDetails\x22\x20class=\x22form-control\x22>';_0x4e1567+=_0x20cdcf(0x30f);var _0x482560=_0x29d3ae[0x0][_0x20cdcf(0x241)];_0x482560!='Live'&&($(_0x20cdcf(0x2ae))[_0x20cdcf(0x3bb)](),$(_0x20cdcf(0x385))['attr'](_0x20cdcf(0x3f6),_0x20cdcf(0x3f6)),$(_0x20cdcf(0x21d))[_0x20cdcf(0x1ea)](_0x20cdcf(0x3f6),_0x20cdcf(0x3f6)));for(i=0x0;i<_0x29d3ae[_0x20cdcf(0x269)];i++){var _0x3747f5=_0x29d3ae[i]['ID'],_0x4bcdc2=_0x29d3ae[i][_0x20cdcf(0x29f)];_0x4e1567+=_0x20cdcf(0x1ca)+_0x3747f5+'\x22>'+_0x4bcdc2+_0x20cdcf(0x1d1);}_0x4e1567+=_0x20cdcf(0x30a),$(_0x20cdcf(0x464))[_0x20cdcf(0x478)](''),$(_0x20cdcf(0x464))[_0x20cdcf(0x222)](_0x4e1567);}});}function GetProjectTeamMembers(_0x546e60,_0x3fc5f3){var _0x5b3ec8=a455_0x31754c,_0x37dc17=0x0;$(_0x5b3ec8(0x2a9))[_0x5b3ec8(0x3bb)](),$(_0x5b3ec8(0x37d))[_0x5b3ec8(0x3bb)](),$(_0x5b3ec8(0x383))['hide'](),$(_0x5b3ec8(0x2e6))[_0x5b3ec8(0x218)](),$(_0x5b3ec8(0x24b))[_0x5b3ec8(0x3bb)]();if(_0x3fc5f3=='Onchange'){Taskusers=[],TaskusersProjectTeam=[],_0x549b4d=_0x5b3ec8(0x281)+_0x546e60+_0x5b3ec8(0x3cf);var _0x352d41=$['Deferred']();url=_spPageContextInfo[_0x5b3ec8(0x41b)]+_0x5b3ec8(0x3a1)+_0x549b4d,$[_0x5b3ec8(0x293)](getItems(url,_0x352d41))['done'](function(_0x201aa9){var _0x55caf2=_0x5b3ec8;response=[],_0x201aa9[_0x55caf2(0x269)]>0x0&&(_0x37dc17=_0x201aa9[_0x55caf2(0x269)]),$(_0x55caf2(0x3eb))[_0x55caf2(0x2f3)](_0x37dc17);});}else{if(NextURLProject!=null)var _0x549b4d='?'+NextURLProject[_0x5b3ec8(0x3b1)]('?')[0x1];else{$('.ProjectSeeView')[_0x5b3ec8(0x3bb)]();return;}}$['when'](getItemsWithQueryItem(_0x5b3ec8(0x38a),_0x549b4d,_0x5b3ec8(0x465)))[_0x5b3ec8(0x356)](function(_0x100f92){var _0x8c9d0b=_0x5b3ec8,_0x2350f8;IsNotTeamMember='';NextURLProject==null&&$('.ProjectSeeView')['hide']();for(var _0x36980e=0x0;_0x36980e<_0x100f92[_0x8c9d0b(0x3fe)][_0x8c9d0b(0x269)];_0x36980e++){_0x2350f8=checkUserValid(_0x100f92['results'][_0x36980e][_0x8c9d0b(0x3b2)][_0x8c9d0b(0x400)]);if(_0x2350f8['length']==0x0)IsNotTeamMember+=_0x100f92[_0x8c9d0b(0x3fe)][_0x36980e][_0x8c9d0b(0x3b2)][_0x8c9d0b(0x32f)]+',',IsCheckUser=!![];else{var _0x7dd3cc=_spPageContextInfo[_0x8c9d0b(0x41b)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x2350f8[0x0][_0x8c9d0b(0x400)]),_0x34ea98=_0x8c9d0b(0x2bd)+_0x7dd3cc+_0x8c9d0b(0x3f0)+_0x2350f8[0x0][_0x8c9d0b(0x32d)]+'</span></div>';TaskusersProjectTeam[_0x8c9d0b(0x309)]({'UserId':_0x2350f8[0x0][_0x8c9d0b(0x1e0)],'EMail':_0x2350f8[0x0]['EMail'],'LoginName':_0x2350f8[0x0][_0x8c9d0b(0x32d)],'Designation':_0x2350f8[0x0][_0x8c9d0b(0x467)],'Manager':_0x2350f8[0x0][_0x8c9d0b(0x2ad)],'DepartmentId':_0x2350f8[0x0]['DepartmentId'],'Department':_0x2350f8[0x0]['Department'],'FullName':_0x34ea98,'CompanyID':_0x2350f8[0x0][_0x8c9d0b(0x20a)],'EmployeeID':_0x2350f8[0x0][_0x8c9d0b(0x1e0)],'Skill':''});}}LoadShowUser(TaskusersProjectTeam),_0x3fc5f3==''&&(_0x37dc17=TaskusersProjectTeam[_0x8c9d0b(0x269)]),_0x37dc17>0x64&&NextURLProject!=null?($(_0x8c9d0b(0x1f8))[_0x8c9d0b(0x3bb)](),$('#ShowProject')[_0x8c9d0b(0x218)](),$(_0x8c9d0b(0x2e6))[_0x8c9d0b(0x218)](),$('#DiplayProject')[_0x8c9d0b(0x2f3)](TaskusersProjectTeam[_0x8c9d0b(0x269)])):($('#Rowcount')[_0x8c9d0b(0x218)](),$(_0x8c9d0b(0x43c))[_0x8c9d0b(0x3bb)](),$(_0x8c9d0b(0x2e6))['hide']()),IsCheckUser&&(IsCheckUser=![],IsNotTeamMember[IsNotTeamMember[_0x8c9d0b(0x269)]-0x1]==','&&(IsNotTeamMember=IsNotTeamMember[_0x8c9d0b(0x44e)](',','\x20')),IsNotTeamMember+=_0x8c9d0b(0x307),alert(IsNotTeamMember));});}function checkUserValid(_0x3a894c){var _0x576651=a455_0x31754c,_0x19f4fc=[],_0x503add=Logged_CompanyId;return Audience==0x2?RestQuery='?$select=*,AttachmentFiles,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,\x20Department/DepartmentName,Company/ID&$orderby=\x20FullName\x20asc\x20&$expand=AttachmentFiles,LogonName,Department,Company\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20(LogonName/EMail\x20eq\x20\x27'+_0x3a894c+_0x576651(0x32a)+_0x3a894c+_0x576651(0x3b5):RestQuery=_0x576651(0x2cf)+_0x503add+_0x576651(0x414)+_0x3a894c+_0x576651(0x32a)+_0x3a894c+_0x576651(0x3b5),dfds=$[_0x576651(0x40a)](),url=_spPageContextInfo['webAbsoluteUrl']+_0x576651(0x26d)+RestQuery,$['when'](getItems(url,dfds))[_0x576651(0x356)](function(_0x4be133){var _0x583b23=_0x576651;try{response=[];if(_0x4be133[_0x583b23(0x269)]>0x0)for(k=0x0;k<_0x4be133[_0x583b23(0x269)];k++){_0x19f4fc[_0x583b23(0x309)]({'EMail':_0x4be133[0x0][_0x583b23(0x37c)],'Designation':_0x4be133[0x0]['Designation']?_0x4be133[0x0][_0x583b23(0x467)]:_0x583b23(0x33c),'Manager':_0x4be133[0x0][_0x583b23(0x2ad)],'DepartmentId':_0x4be133[0x0][_0x583b23(0x41c)]?_0x4be133[0x0][_0x583b23(0x41c)]:'N/A','Department':_0x4be133[0x0]['Department'][_0x583b23(0x2f6)]?_0x4be133[0x0][_0x583b23(0x27b)][_0x583b23(0x2f6)]:_0x583b23(0x33c),'FullName':_0x4be133[0x0][_0x583b23(0x32d)],'CompanyID':_0x4be133[0x0][_0x583b23(0x35e)]['ID'],'EmployeeID':_0x4be133[0x0]['LogonName']['Id'],'Skill':'','AttachmentFiles':_0x4be133[0x0]['AttachmentFiles']});}else{var _0x520647=_0x583b23(0x2db)+_0x3a894c+_0x583b23(0x252)+_0x3a894c+'\x27&$top=5000';dfds=$[_0x583b23(0x40a)](),url=_spPageContextInfo[_0x583b23(0x41b)]+_0x583b23(0x390)+_0x520647,$['when'](getItems(url,dfds))[_0x583b23(0x356)](function(_0x46b33a){var _0x19d328=_0x583b23;response=[],_0x46b33a[_0x19d328(0x269)]>0x0&&_0x19f4fc[_0x19d328(0x309)]({'EMail':_0x46b33a[0x0][_0x19d328(0x431)][_0x19d328(0x400)],'Designation':_0x46b33a[0x0]['Designation']?_0x46b33a[0x0][_0x19d328(0x467)]:'N/A','Manager':_0x46b33a[0x0][_0x19d328(0x3f1)][_0x19d328(0x32f)],'DepartmentId':'','Department':'','FullName':_0x46b33a[0x0][_0x19d328(0x431)][_0x19d328(0x32f)],'CompanyID':Logged_CompanyId,'EmployeeID':_0x46b33a[0x0][_0x19d328(0x431)]['Id'],'Skill':'','AttachmentFiles':_0x46b33a[0x0][_0x19d328(0x248)]});});}}catch(_0x76aaec){alert(_0x76aaec);}}),_0x19f4fc;}function getClientNames(){var _0x1b9f29=a455_0x31754c;$(_0x1b9f29(0x2a9))[_0x1b9f29(0x3bb)](),$(_0x1b9f29(0x37d))[_0x1b9f29(0x3bb)](),$(_0x1b9f29(0x383))[_0x1b9f29(0x218)](),$(_0x1b9f29(0x2e6))[_0x1b9f29(0x3bb)](),$(_0x1b9f29(0x24b))[_0x1b9f29(0x3bb)](),$(_0x1b9f29(0x383))[_0x1b9f29(0x3bb)]();var _0x2f7731=_0x1b9f29(0x2ed)+_spPageContextInfo[_0x1b9f29(0x395)]+_0x1b9f29(0x3a8)+_spPageContextInfo[_0x1b9f29(0x395)]+_0x1b9f29(0x44c),_0x29b9aa=$['Deferred'](),_0x52dfda='';$['when'](getItemsWithQueryItem(_0x1b9f29(0x436),_0x2f7731,''))[_0x1b9f29(0x356)](function(_0x5260c4){var _0x7d8997=_0x1b9f29;_0x52dfda+=_0x7d8997(0x371),$[_0x7d8997(0x24a)](_0x5260c4['results'],function(_0x1f2efa,_0x2df890){var _0x2aadd6=_0x7d8997,_0xa24b10=_0x2df890['Id'],_0x22f6a6=_0x2df890['Title'];_0x52dfda+=_0x2aadd6(0x1ca)+_0xa24b10+'\x22>'+_0x22f6a6+_0x2aadd6(0x1d1);}),$(_0x7d8997(0x25a))[_0x7d8997(0x478)](''),$(_0x7d8997(0x25a))[_0x7d8997(0x222)](_0x52dfda);});}function getGuestUsers(_0x9008a9,_0x35197e){var _0x403ed4=a455_0x31754c,_0x258006=0x0;if(_0x9008a9==_0x403ed4(0x3e4)){_0x24c41d='?$select=*,AttachmentFiles,InternalStakeholders/EMail,Supervisor/EMail,Supervisor/Title,Client_Name/Title,Client_Name/Id,LoginName/Title&$expand=AttachmentFiles,InternalStakeholders,LoginName,Supervisor,Client_Name&$top=100&$filter=Client_Name/Id\x20eq\x20\x27'+_0x35197e+'\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$orderby\x20=\x20Title\x20asc\x20';var _0x5c14a9=_0x403ed4(0x292)+_0x35197e+_0x403ed4(0x22e);TaskusersProjectTeam=[];var _0x22e638=$[_0x403ed4(0x40a)](),_0x29c76=_spPageContextInfo['webAbsoluteUrl']+_0x403ed4(0x26d)+_0x5c14a9;$['when'](getItems(_0x29c76,_0x22e638))[_0x403ed4(0x356)](function(_0x4c17f6){var _0x32a9f3=_0x403ed4;response=[],_0x4c17f6[_0x32a9f3(0x269)]>0x0&&(_0x258006=_0x4c17f6[_0x32a9f3(0x269)]),$('#TotalProject')[_0x32a9f3(0x2f3)](_0x258006);});}else{if(NextUrlGuest!=null)var _0x24c41d='?'+NextUrlGuest['split']('?')[0x1];else{$('#SeeMoreGuest')[_0x403ed4(0x3bb)]();return;}}$[_0x403ed4(0x293)](getItemsWithQueryItem(_0x403ed4(0x429),_0x24c41d,_0x403ed4(0x321)))[_0x403ed4(0x356)](function(_0x23de88){var _0x2548d4=_0x403ed4,_0x4a52b9='';IsNotExrernal='';NextUrlGuest==null&&$(_0x2548d4(0x383))['hide']();for(var _0x50d067=0x0;_0x50d067<_0x23de88[_0x2548d4(0x3fe)][_0x2548d4(0x269)];_0x50d067++){_0x4a52b9=_0x23de88[_0x2548d4(0x3fe)];if(_0x4a52b9[_0x50d067][_0x2548d4(0x248)][_0x2548d4(0x3fe)][_0x2548d4(0x269)]>0x0)var _0x10e588=_0x4a52b9[_0x50d067]['AttachmentFiles']['results'][0x0][_0x2548d4(0x370)];else var _0x10e588=_spPageContextInfo[_0x2548d4(0x41b)]+_0x2548d4(0x46a)+escapeProperly(_0x4a52b9[_0x50d067]['email']);TaskusersProjectTeam['push']({'UserId':_0x4a52b9[_0x50d067][_0x2548d4(0x1d6)],'EMail':_0x4a52b9[_0x50d067]['email'],'LoginName':_0x4a52b9[_0x50d067]['LoginName'][_0x2548d4(0x32f)],'Designation':_0x4a52b9[_0x50d067][_0x2548d4(0x467)]?_0x4a52b9[_0x50d067][_0x2548d4(0x467)]:'NA','Manager':_0x4a52b9[_0x50d067][_0x2548d4(0x3f1)][_0x2548d4(0x32f)],'DepartmentId':_0x4a52b9[_0x50d067][_0x2548d4(0x41c)],'Department':_0x4a52b9[_0x50d067][_0x2548d4(0x27b)],'FullName':_0x2548d4(0x2bd)+_0x10e588+'><span>'+_0x4a52b9[_0x50d067][_0x2548d4(0x431)][_0x2548d4(0x32f)]+_0x2548d4(0x36f),'CompanyID':_0x4a52b9[_0x50d067]['CompanyID'],'EmployeeID':_0x4a52b9[_0x50d067][_0x2548d4(0x1e0)],'Skill':_0x4a52b9[_0x50d067]['Skill']?_0x4a52b9[_0x50d067][_0x2548d4(0x3c5)]:'NA'});}LoadShowUser(TaskusersProjectTeam),_0x9008a9==''&&(_0x258006=TaskusersProjectTeam[_0x2548d4(0x269)]),_0x258006>0x64&&NextUrlDept!=null?($('#Rowcount')[_0x2548d4(0x3bb)](),$(_0x2548d4(0x43c))[_0x2548d4(0x218)](),$(_0x2548d4(0x383))[_0x2548d4(0x218)](),$(_0x2548d4(0x253))['text'](TaskusersProjectTeam[_0x2548d4(0x269)])):($('#Rowcount')[_0x2548d4(0x218)](),$(_0x2548d4(0x43c))['hide'](),$(_0x2548d4(0x383))[_0x2548d4(0x3bb)]()),IsCheckUser&&(IsCheckUser=![],IsNotExrernal+='is\x20not\x20a\x20valid\x20user',alert(IsNotExrernal));});}function a455_0x5b5a(_0x37ba18,_0x577628){var _0x577120=a455_0x5771();return a455_0x5b5a=function(_0x5b5a10,_0x35fc6f){_0x5b5a10=_0x5b5a10-0x1c0;var _0xd83d91=_0x577120[_0x5b5a10];return _0xd83d91;},a455_0x5b5a(_0x37ba18,_0x577628);}function getProjectPlanedDate(_0x3889a4){var _0x116744=a455_0x31754c,_0x94dae8=_0x116744(0x3a2)+_0x3889a4+'\x27';$[_0x116744(0x293)](getItemsWithQueryItem(_0x116744(0x2b7),_0x94dae8,''))[_0x116744(0x356)](function(_0x3e8437){var _0x2f2569=_0x116744,_0x2e9d17=_0x3e8437[_0x2f2569(0x3fe)],_0x4f72d0=new Date(_0x2e9d17[0x0][_0x2f2569(0x312)]),_0x3b83f9=new Date(_0x2e9d17[0x0][_0x2f2569(0x21f)]);});}function saveEmployeeTask(){var _0x2f9c87=a455_0x31754c,_0x296809=![],_0x36feb9=![],_0x348fad='',_0x4e0c3c='',_0x51829c=new Array(),_0x360487=new Array(),_0x50a777='',_0x4a906b='',_0x26d41f=Logged_CompanyId,_0x53de75=$('#TaskName')['val']();_0x53de75==''&&(_0x296809=!![]);var _0x434641=$(_0x2f9c87(0x2e5))['val']();_0x434641==0x0&&(_0x296809=!![]);var _0x3d0c5f=$(_0x2f9c87(0x37b))[_0x2f9c87(0x308)](),_0x4d7527='',_0x45095f=![];for(var _0x224292=0x0;_0x224292<multipleEmailAddress['length'];_0x224292++){var _0x1e59a8=checkUserValid(multipleEmailAddress[_0x224292]);if(_0x1e59a8[_0x2f9c87(0x269)]==0x0)for(k=0x0;k<GuestUser[_0x2f9c87(0x269)];k++){GuestUser[k]['email']['toLowerCase']()==multipleEmailAddress[_0x224292][_0x2f9c87(0x301)]()&&_0x51829c[_0x2f9c87(0x309)](GuestUser[k][_0x2f9c87(0x1d6)]);}else _0x51829c['push'](_0x1e59a8[0x0][_0x2f9c87(0x1e0)]);}if(_0x434641==0x1)_0x348fad=$('#ProjectName')['find'](_0x2f9c87(0x1c0))[_0x2f9c87(0x308)](),_0x4e0c3c=$('#ProjectName')['find'](_0x2f9c87(0x473))['text'](),(_0x348fad==0x0||_0x51829c[_0x2f9c87(0x269)]==0x0)&&(_0x296809=!![]),RestQuery=_0x2f9c87(0x340)+_0x348fad+'\x27',$[_0x2f9c87(0x293)](CommonFunction['getItemsWithQueryItem'](_0x2f9c87(0x2b7),RestQuery))[_0x2f9c87(0x356)](function(_0x595e61){var _0x2863e4=_0x2f9c87;_0x4a906b=_0x595e61[_0x2863e4(0x3fe)][0x0]['ClientIDId'],_0x4a906b==null&&(_0x296809=!![],_0x36feb9=!![]);});else _0x434641==0x2&&(_0x51829c[_0x2f9c87(0x269)]==0x0&&(_0x296809=!![]),_0x4a906b=$(_0x2f9c87(0x433))[_0x2f9c87(0x308)](),_0x4a906b==0x0&&(_0x296809=!![]));var _0x4bf626=$(_0x2f9c87(0x246))[_0x2f9c87(0x308)]();_0x4bf626==''&&(_0x296809=!![]);var _0x507bed='';_0x4bf626!=null&&_0x4bf626!=''&&(_0x507bed=GetDateStandardFormat(moment(_0x4bf626)[_0x2f9c87(0x343)]('DD/MM/YYYY')));var _0x3af425=$('#projectModule')[_0x2f9c87(0x308)]();if(_0x3af425==''){}var _0x121fad=$('#category')[_0x2f9c87(0x308)]();_0x121fad==0x0&&(_0x296809=!![]);var _0x5f051a=$('.DueDate')[_0x2f9c87(0x308)]();_0x5f051a==''&&(_0x296809=!![]);var _0x1b22a5='';_0x5f051a!=null&&_0x5f051a!=''&&(_0x1b22a5=GetDateStandardFormat(moment(_0x5f051a)['format'](_0x2f9c87(0x29d))));var _0x1593db=$(_0x2f9c87(0x2e8))[_0x2f9c87(0x308)](),_0x5ee85b=$(_0x2f9c87(0x385))[_0x2f9c87(0x308)](),_0x54b546='';_0x5ee85b<_0x4bf626?alert('Completion\x20Date\x20should\x20not\x20be\x20less\x20then\x20Assign\x20Date.'):_0x5ee85b!=null&&_0x5ee85b!=''&&(_0x54b546=GetDateStandardFormat(moment(_0x5ee85b)[_0x2f9c87(0x343)](_0x2f9c87(0x29d))));var _0x2d0b67=$(_0x2f9c87(0x2e7))[_0x2f9c87(0x308)](),_0x1a27eb=$('#ProjectCurrentPhase')['val']();if(_0x1b22a5>=_0x507bed&&_0x296809==![]){if(_0x2d0b67==_0x2f9c87(0x3fc))for(i=0x0;i<_0x51829c['length'];i++){var _0x1762d8=new Array();_0x1762d8[_0x2f9c87(0x309)](_0x51829c[i]),AddNewTak(_0x2f9c87(0x430),_0x53de75,_0x434641,_0x3d0c5f,_0x4a906b,_0x3af425,_0x121fad,_0x507bed,_0x1b22a5,_0x50a777,_0x1a27eb,_0x348fad,_0x4e0c3c,_0x1762d8,_0x1593db,_0x26d41f,_0x2d0b67,_0x51829c[_0x2f9c87(0x269)],i);}else _0x2d0b67=='Consolidated'&&AddNewTak(_0x2f9c87(0x430),_0x53de75,_0x434641,_0x3d0c5f,_0x4a906b,_0x3af425,_0x121fad,_0x507bed,_0x1b22a5,_0x50a777,_0x1a27eb,_0x348fad,_0x4e0c3c,_0x51829c,_0x1593db,_0x26d41f,_0x2d0b67,'','');}else _0x296809==!![]?_0x296809==!![]&&_0x36feb9==!![]?(alert('This\x20Project\x20does\x20not\x20defined\x20with\x20any\x20Client.\x0a\x20Please\x20update\x20this\x20Project\x20with\x20a\x20valid\x20Client\x20first.'),currentDlgTask[_0x2f9c87(0x2e2)]()):(alert(_0x2f9c87(0x447)),currentDlgTask[_0x2f9c87(0x2e2)]()):(alert(_0x2f9c87(0x47b)),currentDlgTask['close']());}function AddNewTak(_0x2cab03,_0x5525c0,_0x18ee6b,_0x225f69,_0x15de13,_0x46db74,_0x2f0132,_0x28ab99,_0x44b33a,_0x39cf9a,_0xa02947,_0x466faa,_0x3cb939,_0x4da761,_0x585b72,_0x25dfb3,_0x311f72,_0x43f4c8,_0x33e99a){var _0x8b0e19=a455_0x31754c;try{var _0x56cb1b,_0x4e31ee=[];(IsTaskRecursive==_0x8b0e19(0x236)||IsTaskRecursive==_0x8b0e19(0x413))&&(_0x2cab03='RecurringTaskSetup',$boxes=$(_0x8b0e19(0x202)),$boxes['each'](function(_0xdc9f9b){_0x4e31ee['push'](this['value']);}));var _0x15dc80=GetItemTypeForListName(_0x2cab03);_0x56cb1b={'__metadata':{'type':_0x15dc80},'Title':_0x5525c0,'TaskType':_0x18ee6b,'ProjectName':_0x466faa,'ProjectFullName':_0x3cb939,'ProjectIDId':_0x466faa,'TaskAssignToId':{'results':_0x4da761},'WeekDays':{'results':_0x4e31ee},'Description':_0x225f69,'StartDate':_0x28ab99,'DueDate':_0x44b33a,'TaskPriority':_0x585b72,'CurrentPhase':_0xa02947,'CompletionPersent':_0x39cf9a,'CompanyId':_0x25dfb3,'Distribution':_0x311f72,'ClientIDId':_0x15de13,'ModuleId':_0x46db74,'AssignedById':_spPageContextInfo['userId'],'SuccessorTaskId':$(_0x8b0e19(0x2de))[_0x8b0e19(0x1ea)](_0x8b0e19(0x419)),'PredecessorTaskId':$('#txtPredTask')[_0x8b0e19(0x1ea)](_0x8b0e19(0x419)),'Worktype':_0x2f0132,'DocumentLink':$(_0x8b0e19(0x209))[_0x8b0e19(0x308)](),'ReferenceLink':{'__metadata':{'type':'SP.FieldUrlValue'},'Description':$(_0x8b0e19(0x405))[_0x8b0e19(0x308)](),'Url':$(_0x8b0e19(0x405))['val']()}};$('#txtSuccTask')[_0x8b0e19(0x1ea)](_0x8b0e19(0x419))==''&&(_0x56cb1b['SuccessorTaskId']=0x0);$(_0x8b0e19(0x2b9))[_0x8b0e19(0x1ea)](_0x8b0e19(0x419))==''&&(_0x56cb1b[_0x8b0e19(0x43b)]=0x0);if(IsTaskRecursive=='Recursive'||IsTaskRecursive==_0x8b0e19(0x413)){delete _0x56cb1b['SuccessorTaskId'],delete _0x56cb1b['PredecessorTaskId'];var _0x4d2324='';if($(_0x8b0e19(0x3c8))['prop']('checked')==!![])_0x4d2324=_0x8b0e19(0x216);else{if($(_0x8b0e19(0x3da))['prop'](_0x8b0e19(0x440))==!![])_0x4d2324=_0x8b0e19(0x3b3),_0x4e31ee==[]&&delete _0x56cb1b[_0x8b0e19(0x425)];else{if($(_0x8b0e19(0x273))[_0x8b0e19(0x41e)](_0x8b0e19(0x440))==!![])_0x4d2324=_0x8b0e19(0x3b0),_0x56cb1b[_0x8b0e19(0x2b0)]=parseInt($('#MonthlyDays')[_0x8b0e19(0x308)]());else $('#YearlyBox')[_0x8b0e19(0x41e)](_0x8b0e19(0x440))==!![]&&(_0x56cb1b[_0x8b0e19(0x3d0)]=parseInt($(_0x8b0e19(0x394))['val']()),_0x56cb1b[_0x8b0e19(0x2ff)]=$('#everymonths\x20:selected')[_0x8b0e19(0x2f3)](),_0x4d2324=_0x8b0e19(0x36d));}}_0x56cb1b[_0x8b0e19(0x278)]=_0x4d2324,_0x56cb1b[_0x8b0e19(0x26b)]=parseInt(_0x25dfb3),_0x56cb1b['StartDate']=GetDateStandardFormat(moment($(_0x8b0e19(0x439))[_0x8b0e19(0x308)]())[_0x8b0e19(0x343)]('DD/MM/YYYY')),$(_0x8b0e19(0x374))[_0x8b0e19(0x308)]()!=null&&$(_0x8b0e19(0x374))[_0x8b0e19(0x308)]()!=''&&(_0x56cb1b['EndDate']=GetDateStandardFormat(moment($(_0x8b0e19(0x374))[_0x8b0e19(0x308)]())[_0x8b0e19(0x343)](_0x8b0e19(0x29d)))),_0x56cb1b['DueDays']=$(_0x8b0e19(0x2d1))['val'](),_0x56cb1b[_0x8b0e19(0x241)]=_0x8b0e19(0x26a),delete _0x56cb1b[_0x8b0e19(0x29f)],delete _0x56cb1b[_0x8b0e19(0x34a)];}else(_0x28ab99==null||_0x28ab99=='')&&delete _0x56cb1b[_0x8b0e19(0x3e0)],delete _0x56cb1b['WeekDays'];(_0x44b33a==null||_0x44b33a=='')&&delete _0x56cb1b['DueDate'],(_0x466faa==null||_0x466faa=='')&&delete _0x56cb1b[_0x8b0e19(0x2ef)],IsTaskRecursive=='RecursiveUpdate'?(delete _0x56cb1b['Status'],$[_0x8b0e19(0x293)](UpdateTaskList(_0x8b0e19(0x46b),_0x56cb1b,RecursiveTaskId))[_0x8b0e19(0x356)](function(_0x1b5345){var _0x4ad17b=_0x8b0e19;currentDlgTask!=''&&currentDlgTask[_0x4ad17b(0x2e2)](),alert(_0x4ad17b(0x44a)),redirectedPage=_0x4ad17b(0x43f)+_0x25dfb3+_0x4ad17b(0x3f2)+window[_0x4ad17b(0x38c)]('Tasks')+_0x4ad17b(0x212)+TabId,location[_0x4ad17b(0x28e)]=redirectedPage;})):AddItemToList(_0x2cab03,_0x56cb1b,_0x43f4c8,_0x33e99a);}catch(_0x8d95dc){console['log'](_0x8d95dc[_0x8b0e19(0x30c)]),currentDlgTask[_0x8b0e19(0x2e2)]();}}function AddItemToList(_0x5e6149,_0x36cf52,_0x3ee842,_0x3ecb02){var _0xee2f79=a455_0x31754c,_0x502804=$['Deferred']();return $['ajax']({'url':_spPageContextInfo['webAbsoluteUrl']+_0xee2f79(0x22c)+_0x5e6149+_0xee2f79(0x3d3),'type':_0xee2f79(0x257),'async':![],'headers':{'accept':_0xee2f79(0x30d),'X-RequestDigest':$(_0xee2f79(0x37f))[_0xee2f79(0x308)](),'content-Type':_0xee2f79(0x30d)},'data':JSON[_0xee2f79(0x2e0)](_0x36cf52),'success':function(_0x5839ea){var _0xf1899d=_0xee2f79;_0x502804[_0xf1899d(0x1f1)](_0x5839ea),$(_0xf1899d(0x2ae))[_0xf1899d(0x1ea)](_0xf1899d(0x3f6),!![]);currentDlgTask!=''&&currentDlgTask[_0xf1899d(0x2e2)]();if(IsTaskRecursive==_0xf1899d(0x236))alert(_0xf1899d(0x287)),_0x237ec1=_0xf1899d(0x43f)+_0x43141f+_0xf1899d(0x3f2)+window[_0xf1899d(0x38c)](_0xf1899d(0x44d))+'&Location='+TabId,location['href']=_0x237ec1;else{taskItemDetails=[];var _0x149625=_0x5839ea['d'];currentTaskItemId=_0x149625['ID'];if(FinalFiles4Upload[_0xf1899d(0x269)]>0x0)uploadattachment(currentTaskItemId);else{var _0x5901a1=titanForWork[_0xf1899d(0x1d0)]('ProjectID'),_0x43141f=Logged_CompanyId,_0xd3807a=titanForWork[_0xf1899d(0x1d0)](_0xf1899d(0x3e3)),_0x2e0b9a=_spPageContextInfo['webServerRelativeUrl'],_0x237ec1='';_0x5901a1!=''&&_0x5901a1!=null&&_0x5901a1!=undefined?_0x237ec1=_0x2e0b9a+_0xf1899d(0x23d)+_0x43141f+_0xf1899d(0x44f)+_0x5901a1+_0xf1899d(0x3f2)+window[_0xf1899d(0x38c)](_0xf1899d(0x44d)):_0x237ec1=_0x2e0b9a+'/Pages/mydashboard.aspx?WebAppId='+_0x43141f+_0xf1899d(0x3f2)+window[_0xf1899d(0x38c)](_0xf1899d(0x44d))+_0xf1899d(0x212)+TabId;}_0x3ee842!=''?_0x3ecb02==_0x3ee842-0x1&&(alert(_0xf1899d(0x1d7)),IsModal==_0xf1899d(0x1cb)?$[_0xf1899d(0x30b)](_0xf1899d(0x275))['includes'](_0xf1899d(0x3f7))==!![]?location[_0xf1899d(0x28e)]=$[_0xf1899d(0x30b)]('sourceLocation')+_0xf1899d(0x282)+$('#ProjectNameDetails\x20:selected')[_0xf1899d(0x2f3)]():location[_0xf1899d(0x28e)]=$['urlParam']('sourceLocation'):location[_0xf1899d(0x28e)]=_0x237ec1):(alert('New\x20task\x20created\x20successfully.'),IsModal==_0xf1899d(0x1cb)?$[_0xf1899d(0x30b)](_0xf1899d(0x275))[_0xf1899d(0x2d3)](_0xf1899d(0x3f7))==!![]?location[_0xf1899d(0x28e)]=$[_0xf1899d(0x30b)]('sourceLocation')+_0xf1899d(0x282)+$(_0xf1899d(0x45a))['text']():location['href']=$[_0xf1899d(0x30b)](_0xf1899d(0x275)):location[_0xf1899d(0x28e)]=_0x237ec1);}},'error':function(_0x3418e7){var _0x4c0d99=_0xee2f79;alert(JSON['stringify'](_0x3418e7)),_0x502804[_0x4c0d99(0x36c)](_0x3418e7),currentDlgTask['close']();}}),_0x502804[_0xee2f79(0x38f)]();}function GetItemTypeForListName(_0x35a804){var _0x26ac72=a455_0x31754c;return'SP.Data.'+_0x35a804[_0x26ac72(0x31b)](0x0)[_0x26ac72(0x2ca)]()+_0x35a804[_0x26ac72(0x3b1)]('\x20')['join']('')['slice'](0x1)+_0x26ac72(0x3ba);}function GetDateStandardFormat(_0x7c3010){var _0x5ccf68=a455_0x31754c,_0x1b097f=ConvertDateFormatToddMMyyyy(_0x7c3010),_0x15e1f9=new Date(_0x1b097f),_0x46b557=0x3c*0x3c*0x18*0x3e8,_0x3e2e29=new Date(_0x15e1f9[_0x5ccf68(0x2fa)]()),_0x49ad80=_0x3e2e29[_0x5ccf68(0x367)]();return _0x49ad80;}function ConvertDateFormatToddMMyyyy(_0x5f2d85){var _0xd63366=a455_0x31754c,_0x81b89f=stringToDate(_0x5f2d85,_0xd63366(0x260),'/');return _0x81b89f;}function stringToDate(_0x26c769,_0x307938,_0x198726){var _0x517fab=a455_0x31754c,_0x26809c=_0x307938['toLowerCase'](),_0x1f24e3=_0x26809c[_0x517fab(0x3b1)](_0x198726),_0x2c5031=_0x26c769[_0x517fab(0x3b1)](_0x198726),_0x5e8352=_0x1f24e3[_0x517fab(0x417)]('mm'),_0x2820ae=_0x1f24e3['indexOf']('dd'),_0x16b997=_0x1f24e3[_0x517fab(0x417)](_0x517fab(0x3af)),_0x3cf29c=parseInt(_0x2c5031[_0x5e8352]);_0x3cf29c-=0x1;var _0x215a47=new Date(_0x2c5031[_0x16b997],_0x3cf29c,_0x2c5031[_0x2820ae]);return _0x215a47;}function a455_0x5771(){var _0x15fda2=['DepartmentName','#ddlShowUser','\x20are\x20not\x20a\x20valid\x20user.','</td><td\x20style=\x22display:none;\x22>','getTime','<td><div\x20\x20class=\x22task_OName\x20ellipsis-2\x22>','setDate','Please\x20wait...','MM\x20dd,\x20yy','MonthOfYear','oddrow','toLowerCase','SOD','</div>','\x27)\x20and\x20PrimaryCompany\x20eq\x20\x27Primary\x27\x20','Guest\x20User','#successortask','is\x20not\x20a\x20valid\x20user.','val','push','</select>','urlParam','message','application/json;odata=verbose','?$top=5000&$select=*,LastActionby/ID,LastActionby/Title&$Expand=LastActionby&$filter=TaskID\x20eq\x20\x27','<option\x20value=\x220\x22>-Select-</option>','CompletionDate','sorter','PlanedStartDate','</strong></span>\x20','xls','which','fileurl','#ddlDepartment','ReassigneeUserBox','Loading\x20Projects...','<td\x20class=\x22text-left\x22>Guest\x20Client</td>','charAt','&sourcelocation=../Pages/timesheet.aspx','input[name=\x22TaskListchk\x22]:checked','.SortProject','?$select=*&$filter=IsActive\x20eq\x200&$top=5000&$orderby=Title\x20asc','#txtSomethingWentWrong','GuestTask','strings.js','98%','/_api/web/getuserbyid(','showWaitScreenWithNoClose','log','<option\x20value=\x222\x22>Guest\x20team\x20members</option>','#category','Modified','\x27\x20or\x20Email\x20eq\x20\x27','<td><a\x20href=javascript:void(0)\x20style=\x22cursor:text;color:black;\x22\x20name\x20=\x20','</span></td>','FullName','?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby=\x20FullName\x20asc\x20&$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27','Title','#SelectedItems','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=DepartmentName\x20eq\x20(\x27','?$top=5000&$select=email,Status,ValidUpto,Supervisor/EMail,InternalStakeholders/EMail,LoginName/EMail&$expand=Supervisor,InternalStakeholders,LoginName&$filter=(InternalStakeholders/EMail\x20eq\x20\x27','#userHTMLBox','?$select=*,ID,ProjectName&$filter=ID\x20eq\x20\x27','#otherProjectSearch',':\x20</span><span>','value','<img\x20title=\x22','appendTo','Client_Name','\x27&$orderby\x20=\x20Title\x20asc','N/A','Name\x20like:','Subject','evenselected','?$Select=*,ClientID/ID,ClientID/Title&$expand=ClientID/ID&$filter=ID\x20eq\x20\x27','\x22\x20name=\x22mutlradio\x22\x20checked=\x22checked\x22></div>','ppt','format','atob','ClientID','setHours','<div\x20class=\x22col-md-6\x20userBoxParent\x22><div\x20class=\x22gridbox\x22><img\x20src=\x22','#ddlShowUser\x20option','#ProjectTeam','CompletionPersent','ready','result','responseText','inside\x20OnUserResolvedClientScript','</td>','keyup','ModuleId','?$select=*,AttachmentFiles,LoginName/EMail,LoginName/Id,LoginName/Title,Client_Name/Title,InternalStakeholders/EMail,InternalStakeholders/Id,InternalStakeholders/Title,Supervisor/EMail,Supervisor/Title,Supervisor_Guest/EMail,Supervisor_Guest/Title&$orderby=\x20Title\x20asc\x20&$expand=LoginName,Client_Name,InternalStakeholders,Supervisor,Supervisor_Guest,AttachmentFiles&$filter=Client_Name/Title\x20eq\x20\x27','.PredSuccTasks','#lblShowuser','<td><span\x20class=\x22date_dfine\x22>','done','userHTMLBox','#RefURLUpdate','<tr><td><div\x20class=\x22dividorbox\x22><div\x20class=\x22checkboxinside\x22><input\x20class=\x22PredSuccTasks\x22\x20type=\x22radio\x22\x20value=\x22','GetAllUserInfo','getRow','#aTaskTeam','#tempPpl','Company','</span></td><td\x20style=\x27display:none;\x27><span>','<select\x20name=\x22projectName\x22\x20id=\x22ProjectNameDetails\x22\x20class=\x22form-control\x22\x20disabled=disabled>','TaskType','executeOrDelayUntilScriptLoaded','<td><div\x20\x20class=\x22task_newName\x20ellipsis-2\x22>','253px','Recent\x20Task','#reminderTask','toISOString','#viewALLModule','?$select=*&$filter=IsActive\x20eq\x201&$top=5000&$orderby=Title\x20asc','GetContextWebInformation','DocumentLink','reject','Yearly','trim','</span></div>','ServerRelativeUrl','<option\x20value=\x220\x22>-dropdown\x20of\x20clients-</option>','location','.TaskTeam','.EndDateRecursive','User\x20already\x20exists!!','SuccTableTask','Projecttask','.ProjectTeam','change','\x27\x20class=\x27CustomerchkList\x27\x20checked></label></td>','#comment','Email','#SeeMoreDept','IsModal','#__REQUESTDIGEST','DueDays','formatDate','341108cWQiSB','#SeeMoreGuest','source','.CompletionDate','docx','#btnAttchmentsView','ReferenceLink','<tr><td\x20style=\x22text-align:center\x22>No\x20record\x20founds</td></tr>','ProjectTeamDetails','#bodyChangeHistory','btoa','SharedUsers','#DeleteTask','promise','/_api/web/lists/getbytitle(\x27ExternalUsers\x27)/items/','\x22\x20value=\x22\x22></label></div></td>','select#DepartmentsProject\x20option:selected','tablenav','#DayOfYear','userEmail','#uploadFile','Kindly\x20fill\x20atleast\x20one\x20assign\x20to.','GuestTeam','152694FAnWdG','#btnchangeHistorys','Customer','\x27,\x20\x27','keypress','44004sKVOmo','<option>','columns','/_api/web/lists/getbytitle(\x27ProjectTeamDetails\x27)/items/','?$select=*&$filter=ID\x20eq\x20\x27','?$select=*,TeamMember/EMail&$expand=TeamMember&$filter=TeamMember/EMail\x20eq\x20(\x27','#noenddate','?$select=ID,Body,Subject,EmailType,Title&$filter=Title\x20eq\x20\x27','Body','yes','\x27\x20or\x20InternalMembers/EMail\x20eq\x20\x27','351687BWmONR','\x27)/AttachmentFiles/\x20add(FileName=\x27','undefined','\x20is\x20not\x20a\x20valid\x20Team\x20member','</h4><div\x20class=\x27mailsec\x27><span\x20onclick=\x27OpenEmail(this)\x27>','AssaginTaskProjectTeam','yyyy','Monthly','split','TeamMember','Weekly','?$select=ID,LogonUser/ID,LogonUser/Title,LogonUser/EMail,SharingLevel&$expand=LogonUser&$orderby=ID\x20asc&$top=5000&$filter=LogonUser/EMail\x20eq\x20\x27','\x27)&$top=5000','EmployeeId','#btnProjectSelect','loadMultiple','#myModal','ListItem','hide','<option\x20value=\x226\x22>Department</option>','#TaskType\x20option[value=\x221\x22]','startrecordMyCustomer','.Audience','.clientNameDiv','Client_Code','You\x20can\x27t\x20assign\x20task\x20to\x20more\x20that\x20200\x20employees\x20at\x20once.','#ViewAllTeamModule','Kindly\x20select\x20the\x20task\x20type\x20first.','Skill','?$top=5000&$select=ID,Status,Email&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20Email\x20eq\x20\x27','GenaralTask','#DailyBox','#txtserch','totalpagesMyCustomer','Adding','destroy','.IntimateTaskTeam','#Audience\x20option:selected','\x27&$orderby\x20=\x20Title\x20asc\x20','DayOfYear','dateFormat','</tr>','\x27)/items','.sp-peoplepicker-delImage','&TaskId=','RecursiveId','#SortTaskDue','?$select=ID,Title&$filter=CompanyID\x20eq\x20\x27','Close','#WeeklyBox','?$select=Id,Title,IsActive,CompanyID/Id,DocumentLibrary,InternalMembers/EMail,InternalSupervisor/EMail&$orderby=Title\x20asc&$expand=CompanyID,InternalMembers,InternalSupervisor&$top=5000&$filter=DocumentLibrary\x20ne\x20null\x20and\x20IsActive\x20eq\x20\x271\x27\x20and\x20Id\x20eq\x20\x27','#example-table','<button\x20type=\x22button\x22\x20class=\x22seemorebox\x22>+','button','number','StartDate','error','#CustomerProjSort','IsProject','Onchange','/_layouts/15/Doc.aspx?sourcedoc=','<iframe>','?$select=TaskID/Id,Employee/EMail&$expand=TaskID,Employee&$filter=TaskID/Id\x20eq\x20\x27','EndDate','\x27\x20and\x20(LoginName/EMail\x20eq\x20\x27','null','#TotalProject','LogonName','livcolor','substring','textContent','><span>','Supervisor','&Source=','webServerRelativeUrl','<td><div\x20class=\x22assignprimg\x22>','evenrow','disabled','../SitePages/ProjectDetails.aspx?','<span>Date:\x20</span><span>','2-digit','\x22\x20alt=\x22\x22>','Please\x20specify\x20Start\x20and\x20End\x20date.','Individual','\x27\x20value=\x27','results','CategoryMaster','EMail','selectedrowMyCustomer','/_api/web/lists/getbytitle(\x27EmployeeTaskDetails\x27)/items(\x27','txtReassignee_TopSpan','#TaskName','#RefURL','\x27\x20and\x20TaskType\x20eq\x20\x272\x27\x20and\x20(CurrentPhase\x20eq\x20\x27Open\x27\x20or\x20CurrentPhase\x20eq\x20\x27Close\x27\x20or\x20CurrentPhase\x20eq\x20\x27Completed\x27)','#ModuleName','ProjectCode','value\x20should\x20be\x20smaller\x20than\x20999.','Deferred','\x27&$top=5000','<select\x20name=\x22CategogryType\x22\x20id=\x22category\x22\x20class=\x22form-control\x22>','<tr><td\x20colspan=\x223\x22><div\x20style=\x22text-align:center;\x22>\x20No\x20task\x20found.</div></td></tr>','<div\x20class=\x22daskboxsec\x22><h4>','6181660tewUBP','\x27\x20and\x20ProjectID/Id\x20eq\x20\x27','userId','50LcHjVa','RecursiveUpdate','\x27\x20and\x20(LogonName/EMail\x20eq\x20\x27','Kindly\x20select\x20the\x20project\x20first','email','indexOf','#txtDocLinkEdit','name','\x27\x20and\x20IsActive\x20eq\x200&$top=5000&$orderby=Title\x20asc','webAbsoluteUrl','DepartmentId','then','prop','\x27\x20and\x20(CurrentPhase\x20eq\x20\x27Open\x27\x20or\x20CurrentPhase\x20eq\x20\x27Close\x27\x20or\x20CurrentPhase\x20eq\x20\x27Completed\x27)',',ProjectSeeView','/Pages/mydashboard.aspx?WebAppId=','&action=interactivepreview','AssaginTaskTeam','?$select=SelfCompany,Title,ID,Client_Code,Attn_Name,EmailId,CustType,City,TemplateType,IsActive,Supervisor/Id,Supervisor/Title,SalesPerson/Id,InternalMembers/Title,InternalMembers/Id,InternalSupervisor/Title,InternalSupervisor/Id,SalesPerson/Title&$expand=SalesPerson,Supervisor,InternalSupervisor,InternalMembers&$filter=CompanyID\x20eq\x20\x27','WeekDays','/_api/web/lists/getbytitle(\x27EmployeeTaskDetails\x27)/items(','DocumentSharedGroups','Kindly\x20select\x20atleast\x20one\x20employee.','ExternalUsers','#doc-viewer','Predecessor\x20Task','#aTaskButton','\x27)\x20and\x20ID\x20eq\x20\x27','iframe-viewer','value\x20should\x20be\x20greater\x20than\x20zero.','EmployeeTaskDetails','LoginName','rowSelection','#categoryType','=([^&#]*)','#SortTaskTitle','ClientMaster','sp.ui.dialog.js','#ProjectSort','.StartDateRecursive','<td\x20style=\x22display:none;\x22>','PredecessorTaskId','#ShowProject','Completed','#txtPredTaskEdit','../Pages/mydashboard.aspx?WebAppId=','checked','OnChange','My\x20Subordinates','#txtSuccTaskEdit','currentpageProj','TempTableClientMaster','#txtserchdiv','Please\x20fill\x20all\x20mandatory\x20field.','pagedropdownSucc','modal','Recursive\x20task\x20has\x20been\x20updated.','match','\x27)\x20and\x20IsActive\x20eq\x201&$orderby\x20=\x20Title\x20asc\x20','Tasks','replace','&ProjectID=','False','title','Having\x20Name\x20Like','<div\x20id=\x22txtReassignee\x22></div>','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=ID\x20eq\x20\x27','#ParentPredecessorTask','left','.peoplepickerbox','\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$top=5000','sp.js','#ProjectNameDetails\x20:selected','Live','selected','</span></div></td>','\x20alt=\x27\x27></div><div\x20class=\x27managerdetails\x27>','&nbsp;&nbsp;<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x22\x20style=\x22color:red;\x22\x20\x20onclick=\x22removeLine(this.id);\x22\x20id=\x22file_','164388HltsDr','<br\x20/>Please\x20wait!!','#Audience','\x27,\x20','#ProjectName','Project','#lblDepartment','Designation','\x27\x20or\x20SupervisorId\x20eq\x20\x27','<option\x20value=\x222\x22>My\x20Subordinates</option>','/_layouts/15/userphoto.aspx?accountname=','RecurringTaskSetup','#btnSelectPredSuccTask','SharingLevel','getSelectedRows','parents','Key','#btnClearPredSuccTask','ajax','select#ProjectNameDetails\x20option:selected','#create_task_without_comts','<b>Client:</b>\x20<span>','Url','CustType','html','.RecursiveHide','#txtModalTaskHeader','Due\x20Date\x20can\x20not\x20less\x20than\x20Start\x20Date','\x27\x20and\x20TeamMember/EMail\x20eq\x20\x27','#ProjectNameDetails','Employees','reddate','TaskId','inArray','#filename','selectedrow','asc','local','[id$=\x27AssaginTaskProjectTeam_TopSpan\x27]','<option\x20value=\x22','true','</div></div></div></td>','DueDate','option','#SeeMoreMyGroup','getQueryStringParameter','</option>','data','pop','find','1694556OGfQXS','LoginNameId','New\x20task\x20created\x20successfully.','\x27)and\x20ID\x20eq\x20\x27','#linkReassignee','<span\x20class=\x22crosebox\x22\x20onclick=\x22removeUserBox(this,\x20\x27','Successor\x20and\x20Predecessor\x20can\x27t\x20be\x20same.','getItemsWithQueryItem','#aTaskProjectTeam','My\x20group','<td><div\x20\x20class=\x22modify_dfine\x22>','EmployeeID','currentpageMyCustomer','input[name=\x22mutlradio\x22]:checked','CopyTask','#projectModule','Description','Corporate','Supervisor_Guest','_row','.AssignDateHide','attr','files','/_layouts/15/WopiFrame.aspx?sourcedoc=','input[name=\x22Customer\x22]:checked','\x27\x20and\x20IsActive\x20eq\x201&$top=5000&$orderby=Title\x20asc','#SeeMoreTeam','.taskCompletionDetails','resolve','SelfCompany','#AssignTo','\x22\x20title=\x22','#mainDivAreaClientmaster',');\x22><i\x20class=\x22fa\x20fa-times\x22></i></span></div></div>','<td><p\x20class=\x27customernamshow\x27>','#Rowcount','\x20is\x20not\x20a\x20valid\x20user\x20in\x20the\x20company','Kindly\x20select\x20any\x20day.','prepend','DisplayName','<td>','pagedropdownMyCustomer','CurrentValues','pptx','#Reassignee-Popup','.chkDayName:checked','\x27\x20and\x20Status\x20eq\x20\x27Active\x27','Guestportal','TaskAssignTo','center','toLocaleUpperCase','#CustomerStatus','#txtDocLink','CompanyID','#everymonths','Task\x20Name','\x27)\x20and\x20Status\x20eq\x20\x27Active\x27\x20and\x20TaskPermission\x20eq\x20\x271\x27&$orderby=Modified\x20desc','EmailTemplate','datepicker','</span></td><td><span>','.multidays','&Location=','#btnPredTasks','</h4><div\x20class=\x22projectsec\x22>','SPClientPeoplePickerDict','Daily','\x22\x22\x20title=\x22remove\x22></span></div>','show','ShowCommonStandardDateFormat','<td><div\x20\x20class=\x22task_dName\x20ellipsis-2\x22>','onload','#ddlMyGroup','#ProjectCurrentPhase','#completionInPersent','PlanedEndDate','dataset','...','append','\x27></td>','Mon','AssaginTaskProjectTeam_TopSpan','WebAppId','#searchCustomer','ProjectModules','GeneralTask','ProjectFullName','CurrentPhase','/_api/web/lists/getbytitle(\x27','oddselected','\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$orderby\x20=\x20Title\x20asc\x20','tablenavMyCustomer','Filtering\x20projects...','DeptTask','#SortTaskPhase','totalpagesProj','toLocaleTimeString','remove','Recursive','.IntimateProjectTeam','</p><span\x20class=\x27spanmg\x27>Ref:</span><span\x20class=\x27spanmg\x20projectlg\x27>','SuccStartrecord','<div\x20class=\x22dutesection\x20','<td><span>','#DepartmentsProject','/Pages/ViewProjectDetails.aspx?WebAppId=','/_api/contextinfo','TaskPriority','Add','Status','#AttachmentView','Project\x20Name','day','</h5><span\x20onclick=\x22OpenEmail(\x27','.StartDate','Worktype','AttachmentFiles','click','each','#SeeMoreGuestTeam','[id$=\x27AssaginTaskTeam_TopSpan\x27]','totalrecordsMyCustomer','<option\x20value=\x221\x22>All\x20Team\x20Members</option>','#AppHeaderPanel','?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles,ProjectID/Id&$top=5000&$expand=ProjectID,AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail\x20eq\x20\x27','#ProjectTables','\x27\x20or\x20email\x20eq\x20\x27','#DiplayProject','.AssignTo','.DueDate','pagedropdownProject','POST','endrecordMyCustomer','Succendrecord','#ddlClients','24ikowlA','-50:+50','totalpagesSucc','totalrecords','&IsModal=dHJ1ZQ==&sourceLocation=TaskDetails','dd/MM/yyyy','Document\x20Link\x20is\x20not\x20valid.','<td><p\x20class=\x27pjecname\x27>','/Pages/TimeSheetEntry.aspx?WebAppId=','.SuccPredTaskTables','getDate','ModalDialog','.SortPredSucc','#ParentSuccessorTask','length','Active','CompanyId','\x27&$orderby=Title\x20asc','/_api/web/lists/getbytitle(\x27Employees\x27)/items/','endrecord','\x22\x20Selected>','</button>','Due','doc','#MonthlyBox','#spanAttachmentCollection','sourceLocation','.CompletionDateButton','Tue','RecurrenceType','OnValueChangedClientScript','\x27\x20and\x20Employee/EMail\x20eq\x20\x27','Department','Departments','\x22\x20src=\x22','test','.moduleName','&Dependency=','?$select=*,TeamMember/Id,TeamMember/Name,TeamMember/Title,TeamMember/EMail&$expand=TeamMember&$top=100&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20ProjectId\x20eq\x20\x27','&ProjectName=','\x27);\x22>','readAsArrayBuffer','<tr><td><label><input\x20type=\x27radio\x27\x20name=\x27Customer\x27\x20title=\x27','<h5>','Recursive\x20task\x20has\x20been\x20created\x20successfully.','UserId','#iframe-viewer','#create_task_with_comts','<tr><td><label><input\x20type=\x27radio\x27\x20class=\x27radioCust\x27\x20name=\x27Customer\x27\x20title=\x27','#btnSuccTasks','trigger','href','#ProjectName\x20:selected','startrecord','desc','?$select=*,AttachmentFiles,InternalStakeholders/EMail,Supervisor/EMail,Supervisor/Title,Client_Name/Title,Client_Name/Id,LoginName/Title&$expand=AttachmentFiles,InternalStakeholders,LoginName,Supervisor,Client_Name&$top=100&$filter=Client_Name/Id\x20eq\x20\x27','when','\x27)\x20and\x20Status\x20eq\x20\x27Active\x27\x20and\x20ValidUpto\x20ge\x20datetime\x27','</span></td></tr>','.SideTabMenu','Action','\x22><span>','/_api/lists/getbytitle(\x27Departments\x27)/items?$select=ID,DepartmentName&$Filter=CompanyID\x20eq\x20','#btnSelectCustomer','The\x20file\x20name\x20is\x20already\x20exist.','All\x20Team\x20Members','DD/MM/YYYY','Select\x20Document\x20Link','ProjectName','filter','All','.AttachmentHide','\x27\x20and\x20ManagerLoginName/EMail\x20eq\x20\x27','</div><div\x20class=\x22dutesection\x22>','<div\x20id=\x22file_','InternalStakeholders','#TotalItemscountProject','\x27\x20class=\x27CustomerchkList\x27></label></td>','#SeeMoreGeneral','#MonthlyDays','empty','<option\x20value=\x227\x22>Guest\x20User</option>','Manager','#createNewTask','contents','DayOfEveryMonth','mailto:','SkillSet','\x20is\x20not\x20a\x20valid\x20user.','12ViZHQc','attributes','.CurrentPhaseHide','ProjectDetails','\x22><div\x20class=\x22peopleinfo\x22>','#txtPredTask','sorterTableCustomerList','#everymonths\x20option','?$select=email,LoginName/EMail,Client_Name/Title,Client_Name/Id&$expand=LoginName,Client_Name&$filter=LoginName/EMail\x20eq\x20\x27','<div><img\x20style=\x22width:30px;height:30px;border-radius:50%;\x22\x20src=','target','exec','<tr><td\x20class=\x27NoRecordFound\x27\x20colspan=\x274\x27\x20style=\x27text-align:\x20center;font-size:14px;\x27\x20data-localize=\x27NoRecordFound\x27>No\x20record\x20found!!</td></tr>','\x27&$top=100','?$top=5000&$select=*&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20ValidUpto\x20ge\x20datetime\x27','No\x20user\x20found.','?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles&$top=5000&$expand=AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail\x20eq\x20\x27','LastActionby','EditMode','Due\x20Date','head','#YearlyBox','toUpperCase','?$select=*,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail&$expand=Module,ClientID,TaskAssignTo,Author&$top=5000&$filter=Id\x20eq\x20\x27','.projectName','</p><span\x20class=\x27spanmg\x27>Status:</span>\x20<span\x20class=\x27spanmg\x20','#ext#@adaptindia.onmicrosoft.com','?$select=*,AttachmentFiles,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,\x20Department/DepartmentName,Company/ID&$orderby=\x20FullName\x20asc\x20&$expand=AttachmentFiles,LogonName,Department,Company\x20&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27','table','#txtDueDay','?web=1','includes','</div\x20></td>','\x27\x20and\x20Department/ID\x20eq\x20\x27','Successor\x20Task','Designation\x20like:','?$select=*&$filter=CategoryType\x20eq\x20\x27Work\x20Type\x27\x20and\x20Status\x20eq\x20\x27Yes\x27&$orderby=\x20CatogeryName\x20asc','select#StatusProj\x20option:selected','load','?$select=*,AttachmentFiles,LoginName/EMail,LoginName/Title,LoginName/Id,Supervisor/Title,Designation,Client_Name/Title,Client_Name/Id&$expand=AttachmentFiles,LoginName,Client_Name,Supervisor&$filter=LoginName/EMail\x20eq\x20\x27','Attn_Name','txtReassignee','#txtSuccTask','<b>Project:</b>\x20<span>','stringify','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status\x20eq\x20(\x27','close','ProjectID','Distribution','#TaskType','.ProjectSeeView','#TaskDistribution','#Priority','\x22><span\x20class=\x22fa-stack\x20fa-lg\x22\x20style=\x22line-height:\x201em;\x20height:\x201em;\x22><i\x20class=\x22fa\x20fa-paperclip\x22\x20style=\x22font-size:\x2020px;\x20font-weight:\x20500;\x22></i></i><strong\x20class=\x22fa-stack-1x\x22\x20style=\x22color:#FFF;display:none;\x20font-size:12px;\x20margin-top:2px;\x22>','/_api/web/lists/getbytitle(\x27ClientMaster\x27)/items/','<select\x20name=\x22ProjectModule\x22\x20id=\x22projectModule\x22\x20class=\x22form-control\x22>','fitColumns','?$select=*,InternalSupervisor/EMail,InternalMembers/EMail&$expand=InternalMembers,InternalSupervisor&$top=5000&$filter=(InternalSupervisor/EMail\x20eq\x20\x27','True','ProjectIDId','</span>','?$select=*,LoginName/EMail,LoginName/Id,LoginName/Title,Client_Name/Title,InternalStakeholders/EMail,InternalStakeholders/Id,InternalStakeholders/Title,Supervisor/EMail,Supervisor/Title,Supervisor_Guest/EMail,Supervisor_Guest/Title&$orderby=\x20Title\x20asc\x20&$expand=LoginName,Client_Name,InternalStakeholders,Supervisor,Supervisor_Guest,AttachmentFiles&$filter=LoginName/EMail\x20eq\x20\x27','[id^=\x27','text','EmpTimeSheet','&Mode='];a455_0x5771=function(){return _0x15fda2;};return a455_0x5771();}function AddAttachments(_0x14bea0){var _0x1f4860=a455_0x31754c,_0xcb8371='';$['ajax']({'url':_spPageContextInfo[_0x1f4860(0x41b)]+_0x1f4860(0x23e),'method':_0x1f4860(0x257),'headers':{'ACCEPT':_0x1f4860(0x30d),'content-type':'application/json;odata=verbose'},'success':function(_0x4a5474){var _0x1d6b62=_0x1f4860;_0xcb8371=_0x4a5474['d'][_0x1d6b62(0x36a)]['FormDigestValue'];},'error':function(_0x11339){}})[_0x1f4860(0x356)](function(){var _0x1f28ae=_0x1f4860,_0x14f2cb=$(_0x1f28ae(0x396)),_0x40e904=_0x14f2cb[0x0][_0x1f28ae(0x1eb)][0x0][_0x1f28ae(0x419)],_0xa8c68e=new FileReader();_0xa8c68e[_0x1f28ae(0x21b)]=function(_0x15d015){var _0x3670a8=_0x1f28ae,_0x1fa33c=_0x15d015[_0x3670a8(0x2be)][_0x3670a8(0x34c)],_0x38efbc=$[_0x3670a8(0x472)]({'url':_spPageContextInfo[_0x3670a8(0x41b)]+_0x3670a8(0x402)+_0x14bea0+_0x3670a8(0x3aa)+_0x40e904+'\x27)','method':_0x3670a8(0x257),'binaryStringRequestBody':!![],'data':_0x1fa33c,'processData':![],'headers':{'ACCEPT':'application/json;odata=verbose','X-RequestDigest':_0xcb8371},'success':function(_0x5676fc){var _0x2ced8e=_0x3670a8;$(_0x2ced8e(0x274))[_0x2ced8e(0x218)](),$('#uploadFile')[_0x2ced8e(0x308)](null);},'error':function(_0x502071){var _0x367f9a=_0x3670a8;alert(_0x367f9a(0x29b));}});},_0xa8c68e[_0x1f28ae(0x284)](_0x14f2cb[0x0][_0x1f28ae(0x1eb)][0x0]);});}function GetTaskEmailTemplate(_0xaef3d3){var _0x3a7f6a=a455_0x31754c,_0x4f770d=_0x3a7f6a(0x3a5)+_0xaef3d3+'\x27';$['when'](getItemsWithQueryItem(_0x3a7f6a(0x20e),_0x4f770d,''))[_0x3a7f6a(0x356)](function(_0x17b5af){var _0x1d3769=_0x3a7f6a,_0x4ac825=_0x17b5af['results'];for(var _0x4f89ca=0x0;_0x4f89ca<_0x4ac825[_0x1d3769(0x269)];_0x4f89ca++){_0x4ac825[_0x4f89ca][_0x1d3769(0x3a6)]!=null&&(emailBodyContent=_0x4ac825[_0x4f89ca][_0x1d3769(0x3a6)]),_0x4ac825[_0x4f89ca][_0x1d3769(0x33e)]!=null&&(taskEmailSubject=_0x4ac825[_0x4f89ca]['Subject']);}});}function getExternalClient(){var _0x15ec51=a455_0x31754c,_0x27265e=_0x15ec51(0x2bc)+_spPageContextInfo[_0x15ec51(0x395)]+'\x27\x20or\x20email\x20eq\x20\x27'+_spPageContextInfo[_0x15ec51(0x395)]+_0x15ec51(0x40b);dfds=$['Deferred'](),url=_spPageContextInfo[_0x15ec51(0x41b)]+_0x15ec51(0x390)+_0x27265e,$[_0x15ec51(0x293)](getItems(url,dfds))['done'](function(_0x492953){var _0x5ce585=_0x15ec51;response=[];if(_0x492953[_0x5ce585(0x269)]>0x0){ClientName=_0x492953[0x0]['Client_Name'][_0x5ce585(0x32f)][_0x5ce585(0x36e)](),$(_0x5ce585(0x433))[_0x5ce585(0x478)]('');var _0x3a2d9d=_0x5ce585(0x1ca)+_0x492953[0x0][_0x5ce585(0x33a)]['Id']+_0x5ce585(0x26f)+_0x492953[0x0][_0x5ce585(0x33a)][_0x5ce585(0x32f)][_0x5ce585(0x36e)]()+_0x5ce585(0x1d1);$(_0x5ce585(0x433))[_0x5ce585(0x222)](_0x3a2d9d);var _0xec284f='',_0x512611=_0x5ce585(0x3db)+_0x492953[0x0][_0x5ce585(0x33a)]['Id']+'\x27\x20';$['when'](getItemsWithQuery('ClientMaster',_0x512611))[_0x5ce585(0x356)](function(_0x12e9ac){var _0x29443d=_0x5ce585;if(_0x12e9ac[_0x29443d(0x269)]>0x0)for(var _0x50b296=0x0;_0x50b296<_0x12e9ac['length'];_0x50b296++){var _0x557e92=_0x12e9ac[_0x50b296];_0x557e92['DocumentLibrary']!=null&&(_0xec284f+='<tr><td><div\x20class=\x22checkbox\x20m-0\x22><label><input\x20class=\x22DocLib\x22\x20name=\x22Library\x22\x20type=\x22radio\x22\x20id=\x22chkClientMaster'+_0x50b296+_0x29443d(0x391),_0xec284f+=_0x29443d(0x31a),_0xec284f+=_0x29443d(0x32b)+_0x557e92['DocumentLibrary']+'>'+_0x557e92[_0x29443d(0x32f)]+'</a></td></tr>');}$('#tbdyCopyFileLib')['append'](_0xec284f);});}});}function getGuestTeamMembrs(_0x4c4c66,_0x8498bd){var _0x5ed9a0=a455_0x31754c;$(_0x5ed9a0(0x2a9))['hide'](),$(_0x5ed9a0(0x2e6))['hide'](),$(_0x5ed9a0(0x37d))[_0x5ed9a0(0x3bb)](),$('#SeeMoreGuest')[_0x5ed9a0(0x3bb)](),$(_0x5ed9a0(0x43c))[_0x5ed9a0(0x3bb)](),$(_0x5ed9a0(0x24b))[_0x5ed9a0(0x3bb)]();var _0xebe9d2=0x0,_0x4be09d=[],_0x33247f=[];if(_0x4c4c66==_0x5ed9a0(0x3e4)){arrGeneralTask=[];var _0x134ac0=Logged_CompanyId;RestQuery=_0x5ed9a0(0x352)+encodeURIComponent(ClientName)+_0x5ed9a0(0x458);}$[_0x5ed9a0(0x293)](getItemsWithQueryItem(_0x5ed9a0(0x429),RestQuery,_0x5ed9a0(0x398)))[_0x5ed9a0(0x356)](function(_0x3a82bc){var _0xda6375=_0x5ed9a0;try{if(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x2a6)][_0xda6375(0x3fe)]!=null&&_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x2a6)][_0xda6375(0x3fe)]!='')for(var _0x29b4bb=0x0;_0x29b4bb<_0x3a82bc[_0xda6375(0x3fe)][0x0]['InternalStakeholders']['results'][_0xda6375(0x269)];_0x29b4bb++){if(jQuery['inArray'](_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x2a6)][_0xda6375(0x3fe)][_0x29b4bb]['EMail'],_0x4be09d)!='-1'){}else{_0x33247f=[],_0x33247f=getGuestTeamDetails(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x2a6)]['results'][_0x29b4bb]['EMail']);if(_0x33247f[_0xda6375(0x269)]>0x0){if(_0x33247f[0x0][_0xda6375(0x248)][_0xda6375(0x3fe)]['length']>0x0)var _0x2b9c96=_0x33247f[0x0][_0xda6375(0x248)]['results'][0x0]['ServerRelativeUrl'];else var _0x2b9c96=_spPageContextInfo[_0xda6375(0x41b)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x33247f[0x0][_0xda6375(0x37c)]);var _0x88404d=_0xda6375(0x2bd)+_0x2b9c96+_0xda6375(0x3f0)+_0x33247f[0x0]['FullName']+'</span></div>';arrGeneralTask[_0xda6375(0x309)]({'UserId':_0x33247f[0x0][_0xda6375(0x288)],'EMail':_0x33247f[0x0][_0xda6375(0x37c)],'LoginName':_0x33247f[0x0][_0xda6375(0x1fc)]?_0x33247f[0x0][_0xda6375(0x1fc)]:'NA','Designation':_0x33247f[0x0][_0xda6375(0x467)],'Manager':_0x33247f[0x0]['Manager'],'DepartmentId':_0x33247f[0x0]['DepartmentId'],'Department':_0x33247f[0x0][_0xda6375(0x27b)],'FullName':_0x88404d,'CompanyID':_0x33247f[0x0][_0xda6375(0x26b)],'EmployeeID':_0x33247f[0x0][_0xda6375(0x3b6)],'Skill':_0x33247f[0x0][_0xda6375(0x3c5)]});}_0x4be09d[_0xda6375(0x309)](_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x2a6)][_0xda6375(0x3fe)][_0x29b4bb]['EMail']);}}if(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x3f1)]!=null&&_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x3f1)]!=''){if(jQuery['inArray'](_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x3f1)][_0xda6375(0x400)],_0x4be09d)!='-1'){}else{_0x33247f=[],_0x33247f=getGuestTeamDetails(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x3f1)]['EMail']);if(_0x33247f[_0xda6375(0x269)]>0x0){if(_0x33247f[0x0][_0xda6375(0x248)][_0xda6375(0x3fe)][_0xda6375(0x269)]>0x0)var _0x2b9c96=_0x33247f[0x0][_0xda6375(0x248)][_0xda6375(0x3fe)][0x0]['ServerRelativeUrl'];else var _0x2b9c96=_spPageContextInfo[_0xda6375(0x41b)]+_0xda6375(0x46a)+escapeProperly(_0x33247f[0x0]['Email']);var _0x88404d=_0xda6375(0x2bd)+_0x2b9c96+'><span>'+_0x33247f[0x0]['FullName']+'</span></div>';arrGeneralTask[_0xda6375(0x309)]({'UserId':_0x33247f[0x0][_0xda6375(0x288)],'EMail':_0x33247f[0x0][_0xda6375(0x37c)],'LoginName':_0x33247f[0x0][_0xda6375(0x1fc)]?_0x33247f[0x0]['DisplayName']:'NA','Designation':_0x33247f[0x0]['Designation'],'Manager':_0x33247f[0x0][_0xda6375(0x2ad)],'DepartmentId':_0x33247f[0x0][_0xda6375(0x41c)],'Department':_0x33247f[0x0][_0xda6375(0x27b)],'FullName':_0x88404d,'CompanyID':_0x33247f[0x0][_0xda6375(0x26b)],'EmployeeID':_0x33247f[0x0][_0xda6375(0x3b6)],'Skill':_0x33247f[0x0][_0xda6375(0x3c5)]});}_0x4be09d['push'](_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x3f1)][_0xda6375(0x400)]);}}if(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x1e7)]!=null&&_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x1e7)]!=''){if(jQuery[_0xda6375(0x1c4)](_0x3a82bc[_0xda6375(0x3fe)][0x0]['Supervisor_Guest'][_0xda6375(0x400)],_0x4be09d)!='-1'){}else{_0x33247f=[],_0x33247f=getGuestTeamDetails(_0x3a82bc[_0xda6375(0x3fe)][0x0][_0xda6375(0x1e7)][_0xda6375(0x400)]);if(_0x33247f[_0xda6375(0x269)]>0x0){if(_0x33247f[0x0][_0xda6375(0x248)][_0xda6375(0x3fe)][_0xda6375(0x269)]>0x0)var _0x2b9c96=_0x33247f[0x0][_0xda6375(0x248)]['results'][0x0][_0xda6375(0x370)];else var _0x2b9c96=_spPageContextInfo[_0xda6375(0x41b)]+_0xda6375(0x46a)+escapeProperly(_0x33247f[0x0][_0xda6375(0x37c)]);var _0x88404d=_0xda6375(0x2bd)+_0x2b9c96+_0xda6375(0x3f0)+_0x33247f[0x0][_0xda6375(0x32d)]+_0xda6375(0x36f);arrGeneralTask[_0xda6375(0x309)]({'UserId':_0x33247f[0x0][_0xda6375(0x288)],'EMail':_0x33247f[0x0][_0xda6375(0x37c)],'LoginName':_0x33247f[0x0]['DisplayName']?_0x33247f[0x0][_0xda6375(0x1fc)]:'NA','Designation':_0x33247f[0x0][_0xda6375(0x467)],'Manager':_0x33247f[0x0]['Manager'],'DepartmentId':_0x33247f[0x0][_0xda6375(0x41c)],'Department':_0x33247f[0x0][_0xda6375(0x27b)],'FullName':_0x88404d,'CompanyID':_0x33247f[0x0][_0xda6375(0x26b)],'EmployeeID':_0x33247f[0x0][_0xda6375(0x3b6)],'Skill':_0x33247f[0x0][_0xda6375(0x3c5)]});}_0x4be09d['push'](_0x3a82bc[_0xda6375(0x3fe)][0x0]['Supervisor_Guest'][_0xda6375(0x400)]);}}if(_0x3a82bc[_0xda6375(0x3fe)]!=null&&_0x3a82bc[_0xda6375(0x3fe)]!='')for(var _0x40eb1b=0x0;_0x40eb1b<_0x3a82bc[_0xda6375(0x3fe)]['length'];_0x40eb1b++){if(jQuery[_0xda6375(0x1c4)](_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x400)],_0x4be09d)!='-1'){}else{_0x33247f=[];if(_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b]['AttachmentFiles'][_0xda6375(0x3fe)][_0xda6375(0x269)]>0x0)var _0x2b9c96=_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x248)][_0xda6375(0x3fe)][0x0][_0xda6375(0x370)];else var _0x2b9c96=_spPageContextInfo[_0xda6375(0x41b)]+_0xda6375(0x46a)+escapeProperly(_0x3a82bc['results'][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x400)]);var _0x88404d=_0xda6375(0x2bd)+_0x2b9c96+_0xda6375(0x3f0)+_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x32f)]+'</span></div>';arrGeneralTask[_0xda6375(0x309)]({'UserId':_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)]['Id'],'EMail':_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x400)],'LoginName':_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x32f)]?_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x32f)]:'NA','Designation':_0x3a82bc['results'][_0x40eb1b][_0xda6375(0x467)],'Manager':_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b]['Supervisor'][_0xda6375(0x32f)],'DepartmentId':'','Department':'','FullName':_0x88404d,'CompanyID':'','EmployeeID':_0x3a82bc['results'][_0x40eb1b]['Id'],'Skill':_0x3a82bc['results'][_0x40eb1b]['SkillSet']?_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x2b2)]:'NA'}),_0x4be09d[_0xda6375(0x309)](_0x3a82bc[_0xda6375(0x3fe)][_0x40eb1b][_0xda6375(0x431)][_0xda6375(0x400)]);}}_0x8498bd==!![]&&LoadShowUser(arrGeneralTask);}catch(_0x3eaef2){alert(_0x3eaef2);}});}function getGuestTeamDetails(_0x41e245){var _0xe9ca56=a455_0x31754c,_0x27adcf=[],_0xe1ad2='?$select=Email,AttachmentFiles,Id,Title,PrimaryCompany,Status,FullName,LogonName/EMail,LogonName/Id,Company/Id,Department/Id,Department/Title,Manager,Designation&$expand=LogonName,Company,Department,AttachmentFiles&$top=5000&$filter=(LogonName/EMail\x20eq\x20\x27'+_0x41e245+_0xe9ca56(0x32a)+_0x41e245+_0xe9ca56(0x304);return dfds=$[_0xe9ca56(0x40a)](),url=_spPageContextInfo[_0xe9ca56(0x41b)]+'/_api/web/lists/getbytitle(\x27Employees\x27)/items/'+_0xe1ad2,$['when'](getItems(url,dfds))['done'](function(_0x59140a){var _0x2b4062=_0xe9ca56;response=[];if(_0x59140a['length']>0x0)_0x27adcf[_0x2b4062(0x309)]({'UserId':_0x59140a[0x0][_0x2b4062(0x3ec)]['Id'],'Email':_0x59140a[0x0]['LogonName'][_0x2b4062(0x400)],'DisplayName':_0x59140a[0x0][_0x2b4062(0x32d)],'Designation':_0x59140a[0x0][_0x2b4062(0x467)],'Manager':_0x59140a[0x0][_0x2b4062(0x2ad)],'DepartmentId':_0x59140a[0x0][_0x2b4062(0x27b)]['Id'],'Department':_0x59140a[0x0]['Department'][_0x2b4062(0x32f)],'FullName':_0x59140a[0x0][_0x2b4062(0x32d)],'CompanyId':_0x59140a[0x0][_0x2b4062(0x35e)]['Id'],'EmployeeId':_0x59140a[0x0]['Id'],'Skill':_0x59140a[0x0][_0x2b4062(0x2b2)]?_0x59140a[0x0][_0x2b4062(0x2b2)]:'NA','AttachmentFiles':_0x59140a[0x0][_0x2b4062(0x248)]});else{var _0xcfb82c=_0x2b4062(0x2f1)+_0x41e245+'\x27\x20or\x20email\x20eq\x20\x27'+_0x41e245+_0x2b4062(0x40b);dfds=$[_0x2b4062(0x40a)](),url=_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27ExternalUsers\x27)/items/'+_0xcfb82c,$['when'](getItems(url,dfds))[_0x2b4062(0x356)](function(_0x1a6d46){var _0x529948=_0x2b4062;response=[],_0x1a6d46[_0x529948(0x269)]>0x0&&_0x27adcf['push']({'UserId':_0x1a6d46[0x0]['LoginName']['Id'],'Email':_0x1a6d46[0x0][_0x529948(0x431)][_0x529948(0x400)],'DisplayName':_0x1a6d46[0x0][_0x529948(0x32f)],'Designation':_0x1a6d46[0x0][_0x529948(0x467)],'Manager':_0x1a6d46[0x0]['Supervisor'][_0x529948(0x32f)],'DepartmentId':'','Department':'','FullName':_0x1a6d46[0x0][_0x529948(0x32f)],'CompanyId':'','EmployeeId':_0x1a6d46[0x0]['Id'],'Skill':_0x1a6d46[0x0][_0x529948(0x2b2)]?_0x59140a[0x0][_0x529948(0x2b2)]:'NA','AttachmentFiles':_0x1a6d46[0x0]['AttachmentFiles']});});}}),_0x27adcf;}function GetGeneralTaskEmps(_0x9e4e6b){var _0x2477b2=a455_0x31754c;$(_0x2477b2(0x2a9))['show'](),$(_0x2477b2(0x2e6))[_0x2477b2(0x3bb)](),$(_0x2477b2(0x37d))['hide'](),$('#SeeMoreGuest')[_0x2477b2(0x3bb)](),$(_0x2477b2(0x24b))['hide']();var _0x35c6e2=0x0;if(_0x9e4e6b=='Onchange'){arrGeneralTask=[];var _0x263df1=Logged_CompanyId;_0x5e70c5=_0x2477b2(0x32e)+_0x263df1+_0x2477b2(0x2a3)+_spPageContextInfo[_0x2477b2(0x395)]+_0x2477b2(0x2c1),AllQuery='?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby=\x20FullName\x20asc\x20&$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27'+_0x263df1+'\x27\x20and\x20ManagerLoginName/EMail\x20eq\x20\x27'+_spPageContextInfo[_0x2477b2(0x395)]+_0x2477b2(0x40b),(dfds=$['Deferred'](),url=_spPageContextInfo['webAbsoluteUrl']+_0x2477b2(0x26d)+AllQuery),$[_0x2477b2(0x293)](getItems(url,dfds))[_0x2477b2(0x356)](function(_0x5242d0){var _0x1f62b2=_0x2477b2;response=[],_0x5242d0[_0x1f62b2(0x269)]>0x0&&(_0x35c6e2=_0x5242d0[_0x1f62b2(0x269)]),$('#TotalProject')[_0x1f62b2(0x2f3)](_0x35c6e2);});}else{if(NextURLGeneral!=null)var _0x5e70c5='?'+NextURLGeneral[_0x2477b2(0x3b1)]('?')[0x1];else{$(_0x2477b2(0x2a9))[_0x2477b2(0x3bb)]();return;}}$[_0x2477b2(0x293)](getItemsWithQueryItem(_0x2477b2(0x1c1),_0x5e70c5,_0x2477b2(0x229)))['done'](function(_0x36d1da){var _0x5a0b22=_0x2477b2;try{NextURLGeneral==null&&$(_0x5a0b22(0x2a9))[_0x5a0b22(0x3bb)]();for(var _0x4eb899=0x0;_0x4eb899<_0x36d1da[_0x5a0b22(0x3fe)][_0x5a0b22(0x269)];_0x4eb899++){if(_0x36d1da['results'][_0x4eb899][_0x5a0b22(0x248)]['results'][_0x5a0b22(0x269)]>0x0)var _0x48a645=_0x36d1da['results'][_0x4eb899]['AttachmentFiles'][_0x5a0b22(0x3fe)][0x0][_0x5a0b22(0x370)];else var _0x48a645=_spPageContextInfo[_0x5a0b22(0x41b)]+_0x5a0b22(0x46a)+escapeProperly(_0x36d1da['results'][_0x4eb899]['LogonName'][_0x5a0b22(0x400)]);var _0x131cae=_0x5a0b22(0x2bd)+_0x48a645+_0x5a0b22(0x3f0)+_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x32d)]+_0x5a0b22(0x36f);arrGeneralTask[_0x5a0b22(0x309)]({'UserId':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x3ec)]['Id'],'EMail':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x3ec)][_0x5a0b22(0x400)],'LoginName':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899]['LogonName']['Title']?_0x36d1da['results'][_0x4eb899][_0x5a0b22(0x3ec)][_0x5a0b22(0x32f)]:'NA','Designation':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x467)]?_0x36d1da['results'][_0x4eb899][_0x5a0b22(0x467)]:'NA','Manager':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899]['Manager'],'DepartmentId':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x27b)]['ID'],'Department':_0x36d1da['results'][_0x4eb899][_0x5a0b22(0x27b)]['DepartmentName'],'FullName':_0x131cae,'CompanyID':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x35e)]['ID'],'EmployeeID':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899]['Id'],'Skill':_0x36d1da[_0x5a0b22(0x3fe)][_0x4eb899][_0x5a0b22(0x2b2)]?_0x36d1da['results'][_0x4eb899][_0x5a0b22(0x2b2)]:'NA'});}LoadShowUser(arrGeneralTask),_0x9e4e6b==''&&(_0x35c6e2=arrGeneralTask[_0x5a0b22(0x269)]),_0x35c6e2>0x64&&NextURLGeneral!=null?($(_0x5a0b22(0x1f8))['hide'](),$('#ShowProject')['show'](),$(_0x5a0b22(0x2a9))[_0x5a0b22(0x218)](),$(_0x5a0b22(0x253))[_0x5a0b22(0x2f3)](arrGeneralTask[_0x5a0b22(0x269)])):($(_0x5a0b22(0x1f8))[_0x5a0b22(0x218)](),$(_0x5a0b22(0x43c))[_0x5a0b22(0x3bb)](),$('.ProjectSeeView')['hide']());}catch(_0x487cc6){alert(_0x487cc6);}});}function Departmentfilter(_0x14b47e){var _0x2d26d1=a455_0x31754c;$(_0x2d26d1(0x2a9))['hide'](),$('.ProjectSeeView')['hide'](),$(_0x2d26d1(0x37d))[_0x2d26d1(0x218)](),$(_0x2d26d1(0x383))['hide']();var _0x23ee6e=0x0;if(_0x14b47e==_0x2d26d1(0x3e4)){arrDeptTask=[];var _0x5239d2=Logged_CompanyId;_0x78fcce=_0x2d26d1(0x32e)+_0x5239d2+_0x2d26d1(0x2d5)+$(_0x2d26d1(0x317))[_0x2d26d1(0x308)]()+_0x2d26d1(0x2c1),AllQuery='?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby=\x20FullName\x20asc\x20&$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20Company/ID\x20eq\x20\x27'+_0x5239d2+'\x27\x20and\x20Department/ID\x20eq\x20\x27'+$('#ddlDepartment')[_0x2d26d1(0x308)]()+'\x27&$top=5000',(dfds=$['Deferred'](),url=_spPageContextInfo[_0x2d26d1(0x41b)]+_0x2d26d1(0x26d)+AllQuery),$['when'](getItems(url,dfds))['done'](function(_0x9b16b0){var _0x7626ee=_0x2d26d1;response=[],_0x9b16b0['length']>0x0&&(_0x23ee6e=_0x9b16b0[_0x7626ee(0x269)]),$(_0x7626ee(0x3eb))[_0x7626ee(0x2f3)](_0x23ee6e);});}else{if(NextUrlDept!=null)var _0x78fcce='?'+NextUrlDept[_0x2d26d1(0x3b1)]('?')[0x1];else{$(_0x2d26d1(0x37d))[_0x2d26d1(0x3bb)]();return;}}$['when'](getItemsWithQueryItem(_0x2d26d1(0x1c1),_0x78fcce,_0x2d26d1(0x231)))['done'](function(_0x15df19){var _0x544c36=_0x2d26d1;try{NextUrlDept==null&&$(_0x544c36(0x37d))[_0x544c36(0x3bb)]();for(var _0x379b4e=0x0;_0x379b4e<_0x15df19[_0x544c36(0x3fe)][_0x544c36(0x269)];_0x379b4e++){if(_0x15df19['results'][_0x379b4e][_0x544c36(0x248)]['results'][_0x544c36(0x269)]>0x0)var _0x2682d1=_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x248)][_0x544c36(0x3fe)][0x0][_0x544c36(0x370)];else var _0x2682d1=_spPageContextInfo['webAbsoluteUrl']+_0x544c36(0x46a)+escapeProperly(_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x3ec)]['EMail']);var _0xb97f18='<div><img\x20style=\x22width:30px;height:30px;border-radius:50%;\x22\x20src='+_0x2682d1+'><span>'+_0x15df19['results'][_0x379b4e]['FullName']+_0x544c36(0x36f);arrDeptTask[_0x544c36(0x309)]({'UserId':_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x3ec)]['Id'],'EMail':_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x3ec)][_0x544c36(0x400)],'LoginName':_0x15df19['results'][_0x379b4e][_0x544c36(0x3ec)][_0x544c36(0x32f)]?_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x3ec)]['Title']:'NA','Designation':_0x15df19['results'][_0x379b4e][_0x544c36(0x467)]?_0x15df19[_0x544c36(0x3fe)][_0x379b4e]['Designation']:'NA','Manager':_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x2ad)],'DepartmentId':_0x15df19[_0x544c36(0x3fe)][_0x379b4e][_0x544c36(0x27b)]['ID'],'Department':_0x15df19['results'][_0x379b4e][_0x544c36(0x27b)][_0x544c36(0x2f6)],'FullName':_0xb97f18,'CompanyID':_0x15df19[_0x544c36(0x3fe)][_0x379b4e]['Company']['ID'],'EmployeeID':_0x15df19[_0x544c36(0x3fe)][_0x379b4e]['Id'],'Skill':_0x15df19['results'][_0x379b4e][_0x544c36(0x2b2)]?_0x15df19['results'][_0x379b4e][_0x544c36(0x2b2)]:'NA'});}LoadShowUser(arrDeptTask),_0x14b47e==''&&(_0x23ee6e=arrDeptTask[_0x544c36(0x269)]),_0x23ee6e>0x64&&NextUrlDept!=null?($(_0x544c36(0x1f8))['hide'](),$(_0x544c36(0x43c))['show'](),$(_0x544c36(0x37d))[_0x544c36(0x218)](),$(_0x544c36(0x253))[_0x544c36(0x2f3)](arrDeptTask[_0x544c36(0x269)])):($(_0x544c36(0x1f8))['show'](),$(_0x544c36(0x43c))[_0x544c36(0x3bb)](),$('#SeeMoreDept')['hide']());}catch(_0x1a5367){alert(_0x1a5367);}});}function uploadattachment(_0x18a39a){var _0x35d1d0=a455_0x31754c;FinalFiles4Upload[_0x35d1d0(0x269)]>0x0&&$[_0x35d1d0(0x24a)](FinalFiles4Upload,function(_0xe413fb,_0x44641e){var _0x4381ea=_0x35d1d0;getFileBuffer(_0x44641e)[_0x4381ea(0x41d)](function(_0x255918){var _0x4ac350=_0x4381ea;$[_0x4ac350(0x472)]({'url':_spPageContextInfo[_0x4ac350(0x41b)]+_0x4ac350(0x426)+_0x18a39a+')/AttachmentFiles/add(\x20FileName=\x27'+_0x44641e['name']+'\x27)','method':_0x4ac350(0x257),'data':_0x255918,'async':![],'processData':![],'headers':{'Accept':_0x4ac350(0x30d),'content-type':_0x4ac350(0x30d),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x4ac350(0x308)]()},'success':function(_0x37cc5b){var _0x3b4849=_0x4ac350,_0x23bb20=titanForWork[_0x3b4849(0x1d0)]('ProjectID'),_0x5e3e63=Logged_CompanyId,_0x1d0bbb=titanForWork[_0x3b4849(0x1d0)](_0x3b4849(0x3e3)),_0x12e818=_spPageContextInfo[_0x3b4849(0x3f3)],_0x178e57='';_0x23bb20!=''&&_0x23bb20!=null&&_0x23bb20!=undefined?_0x178e57=_0x12e818+'/Pages/ViewProjectDetails.aspx?WebAppId='+_0x5e3e63+'&ProjectID='+_0x23bb20+_0x3b4849(0x3f2)+window[_0x3b4849(0x38c)](_0x3b4849(0x44d)):_0x178e57=_0x12e818+'/Pages/mydashboard.aspx?WebAppId='+_0x5e3e63+'&Source='+window[_0x3b4849(0x38c)]('Tasks')+'&Location='+TabId,location[_0x3b4849(0x28e)]=_0x178e57;},'error':function(_0x164336){var _0x3e4575=_0x4ac350;console[_0x3e4575(0x326)](_0x164336[_0x3e4575(0x34d)]['error']),alert(_0x164336[_0x3e4575(0x34d)][_0x3e4575(0x3e1)]);}});});});}function priviewfile(_0x34cea1){var _0x31bd82=a455_0x31754c;ServerSrc=_0x34cea1[_0x31bd82(0x419)];_0x34cea1[_0x31bd82(0x419)]==null&&(ServerSrc=_0x34cea1[_0x31bd82(0x451)]);var _0x181080=_0x34cea1[_0x31bd82(0x220)]['filename'][_0x31bd82(0x3b1)]('.')[_0x31bd82(0x1d3)]();_0x181080==_0x31bd82(0x272)||_0x181080==_0x31bd82(0x386)||_0x181080==_0x31bd82(0x314)||_0x181080=='xlsx'||_0x181080==_0x31bd82(0x342)||_0x181080==_0x31bd82(0x200)||_0x181080=='pdf'?iframeUrl1=_spPageContextInfo[_0x31bd82(0x41b)]+_0x31bd82(0x1ec)+_0x34cea1['dataset']['fileurl']+_0x31bd82(0x422):iframeUrl1=_0x34cea1[_0x31bd82(0x220)][_0x31bd82(0x316)];var _0x35f256=$(_0x31bd82(0x42a))['empty']();ServerSrc[_0x31bd82(0x44b)](/\.(docx|xlsx)$/)!=null?src=_spPageContextInfo[_0x31bd82(0x41b)]+_0x31bd82(0x3e5)+ServerSrc+'&action=view&mobileredirect=true':src=ServerSrc+_0x31bd82(0x2d2),$(_0x31bd82(0x3e6),{'src':iframeUrl1,'id':_0x31bd82(0x42e),'frameborder':0x0,'scrolling':_0x31bd82(0x3a7),'width':'100%','height':_0x31bd82(0x323)})[_0x31bd82(0x339)](_0x35f256),IntervalId=setInterval(function(){var _0x1995cd=_0x31bd82;$(_0x1995cd(0x289))[_0x1995cd(0x2af)]()[_0x1995cd(0x1d4)](_0x1995cd(0x24f))[_0x1995cd(0x3bb)](),$(_0x1995cd(0x289))[_0x1995cd(0x2af)]()[_0x1995cd(0x1d4)](_0x1995cd(0x24f))[_0x1995cd(0x235)]();},0x7d0),$(_0x31bd82(0x242))[_0x31bd82(0x449)](_0x31bd82(0x218));}function ClosedIframe(){clearInterval(IntervalId);}function GetAllModule(_0x25e00b){var _0x554155=a455_0x31754c,_0x6a34c0='?$select=*&$Filter=ProjectId\x20eq\x20\x27'+_0x25e00b+_0x554155(0x203);$[_0x554155(0x293)](getItemsWithQueryItem(_0x554155(0x228),_0x6a34c0,''))[_0x554155(0x356)](function(_0x43279d){var _0xaede7b=_0x554155,_0x26c1f9=_0x43279d[_0xaede7b(0x3fe)];$(_0xaede7b(0x3c3))['modal'](_0xaede7b(0x218));var _0x35cc42=$(_0xaede7b(0x368)),_0x2ba012=0x1;$('.moduleName')['show'](),$(_0xaede7b(0x407))['html']('');var _0x580408=_0xaede7b(0x2eb);_0x580408+=_0xaede7b(0x30f);var _0x5c96e2='';for(var _0x4af6d4=0x0;_0x4af6d4<_0x26c1f9[_0xaede7b(0x269)];_0x4af6d4++){_0x26c1f9[_0x4af6d4][_0xaede7b(0x32f)][_0xaede7b(0x269)]>0x32?_0x5c96e2=_0x26c1f9[_0x4af6d4][_0xaede7b(0x32f)][_0xaede7b(0x3ee)](0x0,0x32)+'...':_0x5c96e2=_0x26c1f9[_0x4af6d4][_0xaede7b(0x32f)],_0x580408+=_0xaede7b(0x1ca)+_0x26c1f9[_0x4af6d4]['Id']+_0xaede7b(0x1f4)+_0x26c1f9[_0x4af6d4]['Title']+'\x22>'+_0x5c96e2+_0xaede7b(0x1d1);}_0x580408+=_0xaede7b(0x30a),$(_0xaede7b(0x407))[_0xaede7b(0x222)](_0x580408);});}function timeSheetEntry(_0x207512,_0x2412fe){var _0x24c43b=a455_0x31754c;(_0x207512==null||_0x207512=='')&&(_0x207512=currentTaskItemId);var _0x8063de=Logged_CompanyId;if(IsModal==_0x24c43b(0x1cb))var _0x1adc26=_spPageContextInfo[_0x24c43b(0x41b)]+_0x24c43b(0x263)+_0x8063de+_0x24c43b(0x280)+window[_0x24c43b(0x38c)](_0x2412fe)+'&TaskId='+window['btoa'](_0x207512)+'&Mode='+window[_0x24c43b(0x38c)](_0x24c43b(0x240))+_0x24c43b(0x25f);else var _0x1adc26=_spPageContextInfo['webAbsoluteUrl']+_0x24c43b(0x263)+_0x8063de+'&Dependency='+window[_0x24c43b(0x38c)](_0x2412fe)+'&TaskId='+window[_0x24c43b(0x38c)](_0x207512)+'&Mode='+window['btoa']('Add')+_0x24c43b(0x31c);window['location']['href']=_0x1adc26;}function taskDepTimeSheetEntry(_0x3ca4db,_0x1de1e2){var _0x323d3d=a455_0x31754c;(_0x3ca4db==null||_0x3ca4db=='')&&(_0x3ca4db=currentTaskItemId);var _0x246464=Logged_CompanyId,_0x5d5969=_spPageContextInfo['webAbsoluteUrl']+'/Pages/TimeSheetEntry.aspx?WebAppId='+_0x246464+_0x323d3d(0x280)+window[_0x323d3d(0x38c)](_0x1de1e2)+_0x323d3d(0x3d5)+window[_0x323d3d(0x38c)](_0x3ca4db)+_0x323d3d(0x2f5)+window[_0x323d3d(0x38c)](_0x323d3d(0x240))+'&sourcelocation=../Pages/timesheet.aspx';window[_0x323d3d(0x372)][_0x323d3d(0x28e)]=_0x5d5969;}function ConvertddmmyyTommddyyForDateCheck(_0x454126){var _0x58ac1f=a455_0x31754c;return _0x454126[_0x58ac1f(0x3b1)]('/')[0x1]+'/'+_0x454126[_0x58ac1f(0x3b1)]('/')[0x0]+'/'+_0x454126['split']('/')[0x2];}function getExternalusers(_0x127506){var _0x351d61=a455_0x31754c;GuestUser=[];var _0x27139c=new Date();_0x27139c=_0x27139c[_0x351d61(0x2fc)](_0x27139c[_0x351d61(0x265)]()-0x1),_0x27139c=new Date(_0x27139c);if(_0x127506=='Company')var _0x528c1f='?$top=5000&$select=*&$filter=(InternalStakeholdersId\x20eq\x20\x27'+_spPageContextInfo[_0x351d61(0x411)]+_0x351d61(0x468)+_spPageContextInfo[_0x351d61(0x411)]+'\x27)\x20and\x20Status\x20eq\x20\x27Active\x27\x20and\x20ValidUpto\x20ge\x20datetime\x27'+_0x27139c[_0x351d61(0x367)]()+'\x27';else var _0x528c1f=_0x351d61(0x2c2)+_0x27139c['toISOString']()+'\x27';$[_0x351d61(0x293)](getItemsWithQueryItem('ExternalUsers',_0x528c1f,''))[_0x351d61(0x356)](function(_0x5566b9){var _0x2f6c63=_0x351d61,_0x439fc5=_0x5566b9[_0x2f6c63(0x3fe)];if(_0x439fc5[_0x2f6c63(0x269)]>0x0)for(i=0x0;i<_0x439fc5['length'];i++){GuestUser[_0x2f6c63(0x309)](_0x439fc5[i]),taskToUsers[_0x2f6c63(0x309)]({'userEmail':_0x439fc5[i][_0x2f6c63(0x416)],'userId':_0x439fc5[i][_0x2f6c63(0x1d6)]});}});}function GetGuestEmployee(){var _0x39f96d=a455_0x31754c,_0x5f501e=Logged_CompanyId,_0xcff9ed=new Date();_0xcff9ed=$[_0x39f96d(0x20f)][_0x39f96d(0x381)]('dd/mm/yy',_0xcff9ed),RestQuery='?$top=5000&$select=*&$filter=Status\x20eq\x20\x27Active\x27\x20',$[_0x39f96d(0x293)](CommonFunction[_0x39f96d(0x1dc)]('ExternalUsers',RestQuery))[_0x39f96d(0x356)](function(_0x3d931d){var _0x3f0d6b=_0x39f96d;try{for(var _0xc665e9=0x0;_0xc665e9<_0x3d931d[_0x3f0d6b(0x3fe)][_0x3f0d6b(0x269)];_0xc665e9++){AllGuestUsers['push']({'UserId':_0x3d931d[_0x3f0d6b(0x3fe)][_0xc665e9][_0x3f0d6b(0x1d6)],'EMail':_0x3d931d['results'][_0xc665e9]['email']});}}catch(_0x2a1d5e){alert(_0x2a1d5e);}});}function checkEmployeeStatus(_0x2f3314){var _0x206de2=a455_0x31754c,_0x145fc6=![],_0x3b4308=new Date();_0x3b4308=_0x3b4308['setDate'](_0x3b4308[_0x206de2(0x265)]()-0x1),_0x3b4308=new Date(_0x3b4308);var _0x2ddb53=_0x206de2(0x3c6)+_0x2f3314+'\x27\x20';return dfds=$['Deferred'](),url=_spPageContextInfo[_0x206de2(0x41b)]+_0x206de2(0x26d)+_0x2ddb53,$[_0x206de2(0x293)](getItems(url,dfds))['done'](function(_0x5966c1){var _0xdff97=_0x206de2;response=[];if(_0x5966c1[_0xdff97(0x269)]==0x0){var _0x2a3b80=_0xdff97(0x332)+_spPageContextInfo[_0xdff97(0x395)]+'\x27\x20or\x20Supervisor/EMail\x20eq\x20\x27'+_spPageContextInfo[_0xdff97(0x395)]+_0xdff97(0x294)+_0x3b4308[_0xdff97(0x367)]()+_0xdff97(0x3e9)+_0x2f3314+_0xdff97(0x252)+_0x2f3314+'\x27)\x20';dfds=$[_0xdff97(0x40a)](),url=_spPageContextInfo[_0xdff97(0x41b)]+_0xdff97(0x390)+_0x2a3b80,$[_0xdff97(0x293)](getItems(url,dfds))[_0xdff97(0x356)](function(_0x5b4a48){var _0x32bc87=_0xdff97;response=[],_0x5b4a48[_0x32bc87(0x269)]==0x0?_0x145fc6=![]:_0x145fc6=!![];});}else _0x145fc6=!![];}),_0x145fc6;}function checkProjectMember(_0x32cb09){var _0x56c1ce=a455_0x31754c;RestQuery='?$select=*,TeamMember/Id,TeamMember/Name,TeamMember/Title,TeamMember/EMail&$expand=TeamMember&$top=100&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20ProjectId\x20eq\x20\x27'+ProjectId+_0x56c1ce(0x47c)+_0x32cb09+'\x27\x20';var _0x559035=$[_0x56c1ce(0x40a)]();return url=_spPageContextInfo['webAbsoluteUrl']+_0x56c1ce(0x3a1)+RestQuery,$[_0x56c1ce(0x293)](getItems(url,_0x559035))[_0x56c1ce(0x356)](function(_0x50270f){var _0x4b8838=_0x56c1ce;response=[],_0x50270f[_0x4b8838(0x269)]==0x0?IsValid=![]:IsValid=!![];}),IsValid;}function checkTimeSheet(_0x4813d4){var _0x25fe2c=a455_0x31754c;IsCheck=![];var _0x3df891=_0x25fe2c(0x3e7)+currentTaskItemId+_0x25fe2c(0x27a)+_0x4813d4+'\x27\x20';return $['when'](getItemsWithQueryItem(_0x25fe2c(0x2f4),_0x3df891,''))['done'](function(_0x4075b0){var _0xb161c2=_0x25fe2c;_0x4075b0[_0xb161c2(0x3fe)][_0xb161c2(0x269)]>0x0&&(IsCheck=!![]);}),IsCheck;}function BindMyGroup(){var _0x41923c=a455_0x31754c,_0x396b71='',_0x317d67=_0x41923c(0x3b4)+_spPageContextInfo[_0x41923c(0x395)]+'\x27';$[_0x41923c(0x293)](getItemsWithQueryItem(_0x41923c(0x427),_0x317d67,''))[_0x41923c(0x356)](function(_0x2ed974){var _0x15c2df=_0x41923c;_0x2ed974['results'][_0x15c2df(0x269)]>0x0&&(_0x396b71+=_0x15c2df(0x30f),$['each'](_0x2ed974[_0x15c2df(0x3fe)],function(_0x1125e7,_0x337832){var _0x4ca423=_0x15c2df,_0x245cd2=_0x337832['ID'],_0x3bd6fc=_0x337832[_0x4ca423(0x46d)];_0x396b71+=_0x4ca423(0x1ca)+_0x245cd2+'\x22>'+_0x3bd6fc+'</option>';}),$(_0x15c2df(0x21c))[_0x15c2df(0x478)](''),$('#ddlMyGroup')['append'](_0x396b71));});}function getSelectedGroupMembers(){var _0x29a4b3=a455_0x31754c,_0x1711fa=[];arrMyGroup=[],$(_0x29a4b3(0x1f8))[_0x29a4b3(0x218)](),$(_0x29a4b3(0x43c))[_0x29a4b3(0x3bb)]();var _0x155426='?$select=ID,SharedUsers/ID,SharedUsers/Title,SharedUsers/EMail,LogonUser/ID,LogonUser/Title,LogonUser/UserName,SharingLevel&$expand=SharedUsers,LogonUser&$orderby=ID\x20asc&$top=5000&$filter=ID\x20eq\x20\x27'+$(_0x29a4b3(0x21c))['val']()+'\x27';$['when'](getItemsWithQueryItem(_0x29a4b3(0x427),_0x155426,''))[_0x29a4b3(0x356)](function(_0xa567c){var _0x1dd64e=_0x29a4b3,_0x166020=_0xa567c[_0x1dd64e(0x3fe)];if(_0x166020[0x0][_0x1dd64e(0x38d)][_0x1dd64e(0x3fe)]!=null){for(var _0x4fcdcb=0x0;_0x4fcdcb<_0x166020[0x0][_0x1dd64e(0x38d)][_0x1dd64e(0x3fe)]['length'];_0x4fcdcb++){_0x1711fa=checkUserValid(_0x166020[0x0][_0x1dd64e(0x38d)][_0x1dd64e(0x3fe)][_0x4fcdcb]['EMail']);if(_0x1711fa[_0x1dd64e(0x269)]!=0x0){if(_0x1711fa[0x0][_0x1dd64e(0x248)][_0x1dd64e(0x3fe)][_0x1dd64e(0x269)]>0x0)var _0x5cd2a5=_0x1711fa[0x0][_0x1dd64e(0x248)][_0x1dd64e(0x3fe)][0x0][_0x1dd64e(0x370)];else var _0x5cd2a5=_spPageContextInfo['webAbsoluteUrl']+_0x1dd64e(0x46a)+escapeProperly(_0x1711fa[0x0]['EMail']);var _0x49f7a8=_0x1dd64e(0x2bd)+_0x5cd2a5+_0x1dd64e(0x3f0)+_0x1711fa[0x0]['FullName']+_0x1dd64e(0x36f);arrMyGroup['push']({'UserId':_0x1711fa[0x0]['EmployeeID'],'EMail':_0x1711fa[0x0][_0x1dd64e(0x400)],'LoginName':_0x1711fa[0x0][_0x1dd64e(0x32d)],'Designation':_0x1711fa[0x0][_0x1dd64e(0x467)],'Manager':_0x1711fa[0x0][_0x1dd64e(0x2ad)],'DepartmentId':_0x1711fa[0x0]['DepartmentId'],'Department':_0x1711fa[0x0][_0x1dd64e(0x27b)],'FullName':_0x49f7a8,'CompanyID':_0x1711fa[0x0][_0x1dd64e(0x20a)],'EmployeeID':_0x1711fa[0x0][_0x1dd64e(0x1e0)],'Skill':''});}}LoadShowUser(arrMyGroup);}else LoadShowUser(arrMyGroup);});}function ReviewTimeSheet(){var _0x36bf76=a455_0x31754c;IsCheck=![];var _0x5b4668=_0x36bf76(0x3e7)+currentTaskItemId+'\x27\x20';return $['when'](getItemsWithQueryItem(_0x36bf76(0x2f4),_0x5b4668,''))['done'](function(_0x47d34f){var _0x1878ba=_0x36bf76;_0x47d34f['results'][_0x1878ba(0x269)]>0x0&&(IsCheck=!![]);}),IsCheck;}function SortProjectTable(_0x4a4166){var _0x1b7c4d=a455_0x31754c;if(_0x4a4166==_0x1b7c4d(0x243))$(_0x1b7c4d(0x438))[_0x1b7c4d(0x28d)](_0x1b7c4d(0x249));else _0x4a4166==_0x1b7c4d(0x39b)&&$(_0x1b7c4d(0x3e2))[_0x1b7c4d(0x28d)](_0x1b7c4d(0x249));}function onChangeTask(_0xef6d95,_0x1eb0db,_0xc676cf){var _0x2c96ea=a455_0x31754c,_0x2fe4f5=SPClientPeoplePicker[_0x2c96ea(0x215)][_0xef6d95];_0x2fe4f5[_0x2c96ea(0x279)]=function(_0x4f63da,_0x1e80dd){var _0x21140f=_0x2c96ea;user='';if(_0x1e80dd['length']>0x0){if(jQuery[_0x21140f(0x1c4)](_0x1e80dd[0x0]['Key'][_0x21140f(0x3b1)]('|')[0x2][_0x21140f(0x301)](),multipleEmailAddress)!='-1'){}else{$(_0x21140f(0x457))[_0x21140f(0x218)](),tempUserId=parseInt(getUserInformationTeam(_0x1eb0db,multipleEmailAddress,assignUserName)),EmpIds['push'](tempUserId);var _0x5aaefb=_0x1e80dd[0x0]['Key'][_0x21140f(0x3b1)]('|')[0x2];_0x5aaefb[_0x21140f(0x2d3)]('#')==!![]&&(_0x5aaefb=_0x5aaefb[_0x21140f(0x44e)](_0x21140f(0x2ce),''),_0x5aaefb=_0x5aaefb[_0x21140f(0x44e)]('_','@'));var _0x2f86c9=_spPageContextInfo['webAbsoluteUrl']+_0x21140f(0x46a)+escapeProperly(_0x5aaefb);user+='<div\x20class=\x22col-sm-6\x20userBoxParent\x22><div\x20class=\x22gridbox\x22><img\x20src=\x22'+_0x2f86c9+_0x21140f(0x2b8),user+=_0x21140f(0x286)+_0x1e80dd[0x0]['DisplayText']+_0x21140f(0x245)+_0x5aaefb+_0x21140f(0x283)+_0x5aaefb+'</span></div>',user+=_0x21140f(0x1da)+_0x5aaefb+_0x21140f(0x39c)+_0x1e80dd[0x0]['DisplayText']+_0x21140f(0x463)+tempUserId+_0x21140f(0x1f6),$('#'+_0xc676cf)[_0x21140f(0x222)](user);}EmptyPeoplePicker(_0x1eb0db);}else{}};}function PageLoadRecTask(){var _0x1b118d=a455_0x31754c,_0x29cd11=_0x1b118d(0x2cb)+RecursiveTaskId+'\x27\x20';$[_0x1b118d(0x293)](getItemsWithQueryItem(_0x1b118d(0x46b),_0x29cd11,''))[_0x1b118d(0x356)](function(_0x2334c0){var _0x5e8aa8=_0x1b118d;RecurrenceTask=_0x2334c0['results'],$('#TaskName')[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x32f)]),$(_0x5e8aa8(0x2e5))[_0x5e8aa8(0x308)](RecurrenceTask[0x0]['TaskType']),$(_0x5e8aa8(0x2e5))['trigger'](_0x5e8aa8(0x379)),$(_0x5e8aa8(0x328))[_0x5e8aa8(0x308)](RecurrenceTask[0x0]['Worktype']);RecurrenceTask[0x0][_0x5e8aa8(0x36b)]!=''&&RecurrenceTask[0x0][_0x5e8aa8(0x36b)]!='null'&&RecurrenceTask[0x0]['DocumentLink']!=null&&$('#txtDocLink')['val'](RecurrenceTask[0x0]['DocumentLink']);if($(_0x5e8aa8(0x2e5))[_0x5e8aa8(0x308)]()=='2'){var _0x4b0f79=_0x5e8aa8(0x423);$(_0x5e8aa8(0x433))[_0x5e8aa8(0x2ab)]();var _0x3b8029=_0x5e8aa8(0x1ca)+RecurrenceTask[0x0][_0x5e8aa8(0x345)]['ID']+_0x5e8aa8(0x26f)+RecurrenceTask[0x0][_0x5e8aa8(0x345)][_0x5e8aa8(0x32f)]+_0x5e8aa8(0x1d1);$('#categoryType')[_0x5e8aa8(0x222)](_0x3b8029);}else{var _0x4b0f79=_0x5e8aa8(0x3ae);$(_0x5e8aa8(0x1c0))[_0x5e8aa8(0x2ab)]();var _0x3b8029=_0x5e8aa8(0x1ca)+RecurrenceTask[0x0][_0x5e8aa8(0x2ef)]+_0x5e8aa8(0x26f)+RecurrenceTask[0x0][_0x5e8aa8(0x22a)]+_0x5e8aa8(0x1d1);$('#ProjectNameDetails')[_0x5e8aa8(0x222)](_0x3b8029),$('#ProjectTeam')[_0x5e8aa8(0x2ab)](),$(_0x5e8aa8(0x42c))[_0x5e8aa8(0x218)](),$(_0x5e8aa8(0x27f))['show'](),initializePeoplePicker(_0x5e8aa8(0x3ae)),peoplePickerDiv=$(_0x5e8aa8(0x1c9));var _0x28b6c5=$(_0x5e8aa8(0x28f))[_0x5e8aa8(0x308)]();getProjectPlanedDate(_0x28b6c5),GetAllModule(_0x28b6c5),$(_0x5e8aa8(0x1e4))[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x351)]);}var _0x1f5afd='';for(var _0x152e34=0x0;_0x152e34<RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)]['length'];_0x152e34++){$(_0x5e8aa8(0x457))['show'](),EmpIds[_0x5e8aa8(0x309)](RecurrenceTask[0x0]['TaskAssignTo'][_0x5e8aa8(0x3fe)][_0x152e34]['Id']),multipleEmailAddress['push'](RecurrenceTask[0x0]['TaskAssignTo']['results'][_0x152e34][_0x5e8aa8(0x400)][_0x5e8aa8(0x301)]()),assignUserName[_0x5e8aa8(0x309)](RecurrenceTask[0x0]['TaskAssignTo'][_0x5e8aa8(0x3fe)][_0x152e34]['Title']);var _0x4b2e64=_spPageContextInfo[_0x5e8aa8(0x41b)]+_0x5e8aa8(0x46a)+escapeProperly(RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34][_0x5e8aa8(0x400)]);_0x1f5afd+=_0x5e8aa8(0x347)+_0x4b2e64+_0x5e8aa8(0x2b8),_0x1f5afd+=_0x5e8aa8(0x286)+RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34][_0x5e8aa8(0x32f)]+_0x5e8aa8(0x245)+RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34][_0x5e8aa8(0x400)]+_0x5e8aa8(0x283)+RecurrenceTask[0x0][_0x5e8aa8(0x205)]['results'][_0x152e34][_0x5e8aa8(0x400)]+_0x5e8aa8(0x36f),_0x1f5afd+=_0x5e8aa8(0x1da)+RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34][_0x5e8aa8(0x400)]+_0x5e8aa8(0x39c)+RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34]['Title']+_0x5e8aa8(0x463)+RecurrenceTask[0x0][_0x5e8aa8(0x205)][_0x5e8aa8(0x3fe)][_0x152e34]['Id']+_0x5e8aa8(0x1f6);}$(_0x5e8aa8(0x333))[_0x5e8aa8(0x222)](_0x1f5afd),$(_0x5e8aa8(0x37b))[_0x5e8aa8(0x308)](RecurrenceTask[0x0]['Description']),$(_0x5e8aa8(0x2e8))[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x23f)]),$('#TaskDistribution')[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x2e4)]);RecurrenceTask[0x0]['ReferenceLink']!=null&&$(_0x5e8aa8(0x405))[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x388)][_0x5e8aa8(0x476)]?RecurrenceTask[0x0][_0x5e8aa8(0x388)]['Url']:'');$(_0x5e8aa8(0x439))[_0x5e8aa8(0x308)](moment(new Date(RecurrenceTask[0x0][_0x5e8aa8(0x3e0)]))['format'](_0x5e8aa8(0x2fe)));RecurrenceTask[0x0][_0x5e8aa8(0x3e8)]!=null?($(_0x5e8aa8(0x374))['val'](moment(new Date(RecurrenceTask[0x0][_0x5e8aa8(0x3e8)]))[_0x5e8aa8(0x343)]('MM\x20dd,\x20yy')),$(_0x5e8aa8(0x374))[_0x5e8aa8(0x1ea)](_0x5e8aa8(0x3f6),![])):($(_0x5e8aa8(0x374))[_0x5e8aa8(0x41e)](_0x5e8aa8(0x3f6),_0x5e8aa8(0x3f6)),$(_0x5e8aa8(0x3a4))[_0x5e8aa8(0x41e)]('checked',_0x5e8aa8(0x440)));$(_0x5e8aa8(0x2d1))[_0x5e8aa8(0x308)](RecurrenceTask[0x0][_0x5e8aa8(0x380)]);if(RecurrenceTask[0x0][_0x5e8aa8(0x278)]==_0x5e8aa8(0x216))$(_0x5e8aa8(0x3c8))['prop']('checked',_0x5e8aa8(0x440)),$('#DailyBox')[_0x5e8aa8(0x28d)](_0x5e8aa8(0x249));else{if(RecurrenceTask[0x0]['RecurrenceType']=='Weekly'){$(_0x5e8aa8(0x3da))[_0x5e8aa8(0x41e)]('checked',_0x5e8aa8(0x440)),$(_0x5e8aa8(0x3da))[_0x5e8aa8(0x28d)](_0x5e8aa8(0x249));if(RecurrenceTask[0x0]['WeekDays']!=null)for(var _0xe11b1b=0x0;_0xe11b1b<RecurrenceTask[0x0]['WeekDays'][_0x5e8aa8(0x3fe)]['length'];_0xe11b1b++){if(RecurrenceTask[0x0][_0x5e8aa8(0x425)][_0x5e8aa8(0x3fe)][_0xe11b1b]==_0x5e8aa8(0x224))$('#'+RecurrenceTask[0x0][_0x5e8aa8(0x425)][_0x5e8aa8(0x3fe)][_0xe11b1b][_0x5e8aa8(0x301)]()+_0x5e8aa8(0x244))[_0x5e8aa8(0x41e)](_0x5e8aa8(0x440),_0x5e8aa8(0x440));else RecurrenceTask[0x0][_0x5e8aa8(0x425)]['results'][_0xe11b1b]==_0x5e8aa8(0x277)||RecurrenceTask[0x0]['WeekDays'][_0x5e8aa8(0x3fe)][_0xe11b1b]=='Wed'||RecurrenceTask[0x0][_0x5e8aa8(0x425)][_0x5e8aa8(0x3fe)][_0xe11b1b]=='Thu'?$('#'+RecurrenceTask[0x0][_0x5e8aa8(0x425)][_0x5e8aa8(0x3fe)][_0xe11b1b][_0x5e8aa8(0x301)]())[_0x5e8aa8(0x41e)](_0x5e8aa8(0x440),_0x5e8aa8(0x440)):$('#'+RecurrenceTask[0x0][_0x5e8aa8(0x425)][_0x5e8aa8(0x3fe)][_0xe11b1b])['prop'](_0x5e8aa8(0x440),_0x5e8aa8(0x440));}}else RecurrenceTask[0x0][_0x5e8aa8(0x278)]==_0x5e8aa8(0x3b0)?($('#MonthlyBox')[_0x5e8aa8(0x41e)](_0x5e8aa8(0x440),'checked'),$(_0x5e8aa8(0x273))[_0x5e8aa8(0x28d)](_0x5e8aa8(0x249)),$(_0x5e8aa8(0x2aa))[_0x5e8aa8(0x308)](RecurrenceTask[0x0]['DayOfEveryMonth'])):($(_0x5e8aa8(0x2c9))[_0x5e8aa8(0x41e)](_0x5e8aa8(0x440),_0x5e8aa8(0x440)),$(_0x5e8aa8(0x2c9))['trigger']('click'),$(_0x5e8aa8(0x2bb))[_0x5e8aa8(0x2a0)](function(){var _0x46108a=_0x5e8aa8;return $(this)[_0x46108a(0x2f3)]()==RecurrenceTask[0x0]['MonthOfYear'];})[_0x5e8aa8(0x41e)](_0x5e8aa8(0x45c),!![]),$(_0x5e8aa8(0x20b))[_0x5e8aa8(0x28d)](_0x5e8aa8(0x379)),$('#DayOfYear')['val'](RecurrenceTask[0x0][_0x5e8aa8(0x3d0)]));}waitingDialog[_0x5e8aa8(0x3bb)](),onChangeTask(_0x5e8aa8(0x225),_0x5e8aa8(0x3ae),_0x5e8aa8(0x357));});}function PageLoadAddTask(){var _0x47d6fe=a455_0x31754c;$(_0x47d6fe(0x387))[_0x47d6fe(0x3bb)](),$('#btn2CloseAttachmentForm')[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x474))['show'](),$(_0x47d6fe(0x28a))['remove'](),$(_0x47d6fe(0x2cc))[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x378))['hide'](),$('.clientNameDiv')[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x27f))[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x254))[_0x47d6fe(0x3bb)](),$('.IntimationCompletion')['hide'](),$('.TaskTeam')['hide'](),$('.IntimateProjectTeam')[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x3cd))['hide'](),$(_0x47d6fe(0x21e))[_0x47d6fe(0x41e)](_0x47d6fe(0x3f6),!![]),$('#rateYo')[_0x47d6fe(0x3bb)](),$(_0x47d6fe(0x276))[_0x47d6fe(0x1d4)](_0x47d6fe(0x3de))['attr'](_0x47d6fe(0x3f6),!![]),$(_0x47d6fe(0x1f0))['hide'](),$(_0x47d6fe(0x21d))[_0x47d6fe(0x1ea)](_0x47d6fe(0x3f6),'disabled'),$('#TaskStatus')[_0x47d6fe(0x3bb)](),getWorkType(),$('#TaskType')[_0x47d6fe(0x379)](function(){var _0xdef806=_0x47d6fe;$(_0xdef806(0x349))['empty'](),$('.StartDate')[_0xdef806(0x20f)](_0xdef806(0x3cc)),$(_0xdef806(0x255))[_0xdef806(0x20f)](_0xdef806(0x3cc)),$(_0xdef806(0x246))[_0xdef806(0x20f)]({'changeMonth':!![],'changeYear':!![],'yearRange':_0xdef806(0x25c)}),$('.StartDate')[_0xdef806(0x20f)]('option','dateFormat',_0xdef806(0x2fe)),$(_0xdef806(0x255))[_0xdef806(0x20f)]({'changeMonth':!![],'changeYear':!![],'yearRange':'-50:+50'}),$(_0xdef806(0x255))[_0xdef806(0x20f)](_0xdef806(0x1ce),_0xdef806(0x3d1),'MM\x20dd,\x20yy');var _0x54bca9=this[_0xdef806(0x337)];EmpIds=[],multipleEmailAddress=[],assignUserName=[],$(_0xdef806(0x457))[_0xdef806(0x3bb)](),$('#txtSuccTask')[_0xdef806(0x308)](''),$(_0xdef806(0x2de))['attr'](_0xdef806(0x419),''),$(_0xdef806(0x2b9))[_0xdef806(0x1ea)](_0xdef806(0x419),''),$(_0xdef806(0x2b9))[_0xdef806(0x308)]('');if(_0x54bca9==0x1)$(_0xdef806(0x333))[_0xdef806(0x2ab)](),$(_0xdef806(0x2cc))[_0xdef806(0x218)](),$(_0xdef806(0x378))['show'](),$(_0xdef806(0x3c0))[_0xdef806(0x3bb)](),$(_0xdef806(0x237))['hide'](),$(_0xdef806(0x373))[_0xdef806(0x3bb)](),ProjectType=_0xdef806(0x377),$('.IntimateTaskTeam')[_0xdef806(0x3bb)](),$(_0xdef806(0x3bf))['hide'](),$(_0xdef806(0x464))['unbind']()[_0xdef806(0x379)](function(){var _0x5356ec=_0xdef806;$(_0x5356ec(0x349))['empty'](),$('#aTaskButton')[_0x5356ec(0x218)](),$('.moduleName')[_0x5356ec(0x218)](),initializePeoplePicker(_0x5356ec(0x3ae)),peoplePickerDiv=$('[id$=\x27AssaginTaskProjectTeam_TopSpan\x27]');var _0x16b51e=$(_0x5356ec(0x28f))[_0x5356ec(0x308)]();getProjectPlanedDate(_0x16b51e),GetAllModule(_0x16b51e);}),$('.StartDate')[_0xdef806(0x20f)](_0xdef806(0x2fc),new Date());else _0x54bca9==0x2?($('#userHTMLBox')['empty'](),$(_0xdef806(0x2cc))[_0xdef806(0x3bb)](),$(_0xdef806(0x378))[_0xdef806(0x3bb)](),$(_0xdef806(0x3c0))['show'](),$('.moduleName')[_0xdef806(0x3bb)](),$('.Audience')[_0xdef806(0x218)](),$(_0xdef806(0x237))[_0xdef806(0x3bb)](),$(_0xdef806(0x373))[_0xdef806(0x218)](),$(_0xdef806(0x3cd))[_0xdef806(0x3bb)](),$(_0xdef806(0x27f))[_0xdef806(0x3bb)](),ProjectType=_0xdef806(0x3c7),initializePeoplePicker_AssaginTaskTeam(_0xdef806(0x423)),onChangeTask('AssaginTaskTeam_TopSpan','AssaginTaskTeam',_0xdef806(0x357)),peoplePickerDiv=$(_0xdef806(0x24c)),$(_0xdef806(0x246))[_0xdef806(0x20f)](_0xdef806(0x2fc),new Date())):($(_0xdef806(0x457))[_0xdef806(0x3bb)](),$(_0xdef806(0x2cc))['hide'](),$(_0xdef806(0x378))[_0xdef806(0x3bb)](),$(_0xdef806(0x373))[_0xdef806(0x3bb)](),$(_0xdef806(0x237))[_0xdef806(0x3bb)](),$(_0xdef806(0x3cd))[_0xdef806(0x3bb)]());});}function CreateNewTask(){var _0x3a9367=a455_0x31754c,_0x171fe9=IsEditMode;_0x171fe9!=undefined&&(_0x171fe9=window[_0x3a9367(0x344)](_0x171fe9));if(_0x171fe9==null||_0x171fe9==_0x3a9367(0x3ab)){if(multipleEmailAddress[_0x3a9367(0x269)]==0x0)return alert('Kindly\x20fill\x20all\x20the\x20mandatory\x20fields.'),![];var _0x4c1527='',_0x29b8b6='',_0x24fc56=![],_0x297b24=![],_0x4f0cc7=![],_0x470e21=[],_0x104e8f=[];multipleEmailAddress['length']>0xc8&&(multipleEmailAddress[_0x3a9367(0x269)]=0xc8);for(var _0x328bc9=0x0;_0x328bc9<multipleEmailAddress[_0x3a9367(0x269)];_0x328bc9++){var _0x579306=checkUserValid(multipleEmailAddress[_0x328bc9]);_0x579306[_0x3a9367(0x269)]==0x0&&$(_0x3a9367(0x3ce))['text']()=='Corporate'?(_0x4c1527+=assignUserName[_0x328bc9]+',',_0x24fc56=!![],_0x4f0cc7=!![],_0x470e21[_0x3a9367(0x309)](multipleEmailAddress[_0x328bc9]),_0x104e8f['push'](assignUserName[_0x328bc9])):_0x579306['length']==0x0&&(_0x4c1527+=assignUserName[_0x328bc9]+',',_0x24fc56=!![],_0x4f0cc7=!![],_0x470e21['push'](multipleEmailAddress[_0x328bc9]),_0x104e8f[_0x3a9367(0x309)](assignUserName[_0x328bc9]));}if($(_0x3a9367(0x2e5))[_0x3a9367(0x308)]()==0x1){TaskusersProjectTeam[_0x3a9367(0x269)]==0x0&&GetProjectTeamMembers($('#ProjectName\x20:selected')[_0x3a9367(0x308)](),_0x3a9367(0x3e4));for(var _0x328bc9=0x0;_0x328bc9<multipleEmailAddress['length'];_0x328bc9++){var _0x579306=TaskusersProjectTeam['filter'](function(_0x231e8a){var _0x11275e=_0x3a9367;return _0x231e8a[_0x11275e(0x400)]['toLowerCase']()[_0x11275e(0x36e)]()==multipleEmailAddress[_0x328bc9][_0x11275e(0x301)]()[_0x11275e(0x36e)]();});_0x579306['length']==0x0&&(_0x29b8b6+=assignUserName[_0x328bc9]+',',_0x297b24=!![]);}if(_0x297b24)return _0x29b8b6+=_0x3a9367(0x3ac),alert(_0x29b8b6),![];}else{if($(_0x3a9367(0x2e5))['val']()==0x2){_0x29b8b6='';if(IsModal!=_0x3a9367(0x1cb)){$('#Audience\x20option:selected')[_0x3a9367(0x2f3)]()==_0x3a9367(0x35e)?getExternalusers(_0x3a9367(0x35e)):getExternalusers(_0x3a9367(0x1e6));if(_0x4f0cc7){for(var _0x328bc9=0x0;_0x328bc9<_0x470e21[_0x3a9367(0x269)];_0x328bc9++){if(GuestUser['length']>0x0)for(k=0x0;k<GuestUser['length'];k++){if(GuestUser[k][_0x3a9367(0x416)][_0x3a9367(0x301)]()!=_0x470e21[_0x328bc9][_0x3a9367(0x301)]())_0x29b8b6[_0x3a9367(0x2d3)](_0x104e8f[_0x328bc9])==![]&&GuestUser[_0x3a9367(0x269)]==k+0x1&&(_0x29b8b6+=_0x104e8f[_0x328bc9]+'\x20,'),_0x297b24=!![];else{_0x297b24=![];break;}}else _0x297b24=!![],_0x104e8f[_0x328bc9][_0x3a9367(0x417)](_0x29b8b6)!==-0x1&&(_0x29b8b6+=_0x104e8f[_0x328bc9]+',');}if(_0x297b24||_0x29b8b6!='')return _0x29b8b6=_0x29b8b6['substring'](0x0,_0x29b8b6[_0x3a9367(0x269)]-0x2),_0x29b8b6['includes'](',')==!![]?_0x29b8b6+=_0x3a9367(0x2f8):_0x29b8b6+=_0x3a9367(0x2b3),alert(_0x29b8b6),![];}}else{var _0x3a9627='';getGuestTeamMembrs(_0x3a9367(0x3e4),![]);for(var _0x328bc9=0x0;_0x328bc9<multipleEmailAddress[_0x3a9367(0x269)];_0x328bc9++){var _0x3a8fe1=arrGeneralTask['filter'](function(_0xd7ab8a){var _0x1a97c1=_0x3a9367;return _0xd7ab8a[_0x1a97c1(0x400)][_0x1a97c1(0x301)]()[_0x1a97c1(0x36e)]()==multipleEmailAddress[_0x328bc9][_0x1a97c1(0x301)]()[_0x1a97c1(0x36e)]();});_0x3a8fe1[_0x3a9367(0x269)]==0x0&&(_0x3a9627+=assignUserName[_0x328bc9]+',\x20');}if(_0x3a9627!=''){_0x3a9627=_0x3a9627[_0x3a9367(0x3ee)](0x0,_0x3a9627[_0x3a9367(0x269)]-0x2),alert(_0x3a9627+'\x20user(s)\x20are\x20not\x20a\x20valid.');return;}}}else{if(_0x24fc56)return _0x4c1527+=_0x3a9367(0x1f9),alert(_0x4c1527),![];}}if(IsTaskRecursive==_0x3a9367(0x236)||IsTaskRecursive==_0x3a9367(0x413)){if($('.StartDateRecursive')[_0x3a9367(0x308)]()=='')return alert(_0x3a9367(0x3fb)),![];else{if($(_0x3a9367(0x374))[_0x3a9367(0x308)]()==''&&$(_0x3a9367(0x3a4))[_0x3a9367(0x41e)](_0x3a9367(0x440))==![])return alert('Please\x20specify\x20Start\x20and\x20End\x20date.'),![];else{if($(_0x3a9367(0x2d1))['val']()=='')return alert('Due\x20Days\x20cannot\x20be\x20empty.'),![];else{if($('#WeeklyBox')['prop'](_0x3a9367(0x440))==!![]){if($(_0x3a9367(0x202))[_0x3a9367(0x269)]==0x0)return alert(_0x3a9367(0x1fa)),![];}}}}}else{if($(_0x3a9367(0x2de))['attr'](_0x3a9367(0x419))!=''&&$(_0x3a9367(0x2b9))[_0x3a9367(0x1ea)](_0x3a9367(0x419))!=''&&$(_0x3a9367(0x2de))[_0x3a9367(0x1ea)](_0x3a9367(0x419))!=null&&$(_0x3a9367(0x2b9))[_0x3a9367(0x1ea)](_0x3a9367(0x419))!=null){if($(_0x3a9367(0x2b9))[_0x3a9367(0x1ea)](_0x3a9367(0x419))==$(_0x3a9367(0x2de))[_0x3a9367(0x1ea)](_0x3a9367(0x419)))return alert(_0x3a9367(0x1db)),![];}}if($('#txtDocLink')[_0x3a9367(0x308)]()!=''){if(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i[_0x3a9367(0x27e)]($(_0x3a9367(0x209))['val']())==![])return alert(_0x3a9367(0x261)),![];}if($(_0x3a9367(0x405))[_0x3a9367(0x308)]()!=''){if(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i[_0x3a9367(0x27e)]($(_0x3a9367(0x405))['val']()))currentDlgTask=SP['UI'][_0x3a9367(0x266)]['showWaitScreenWithNoClose']('Adding',_0x3a9367(0x2fd)),setTimeout(function(){saveEmployeeTask();},0x3e8);else return alert('Reference\x20URL\x20is\x20invalid.'),![];}else currentDlgTask=SP['UI']['ModalDialog'][_0x3a9367(0x325)](_0x3a9367(0x3cb),_0x3a9367(0x2fd)),setTimeout(function(){saveEmployeeTask();},0x3e8);}else{if(_0x171fe9==_0x3a9367(0x2ee)||_0x171fe9==_0x3a9367(0x450)){if($(_0x3a9367(0x443))[_0x3a9367(0x1ea)](_0x3a9367(0x419))!=''&&$(_0x3a9367(0x43e))[_0x3a9367(0x1ea)]('name')!=''&&$(_0x3a9367(0x443))[_0x3a9367(0x1ea)](_0x3a9367(0x419))!=null&&$(_0x3a9367(0x43e))['attr'](_0x3a9367(0x419))!=null){if($(_0x3a9367(0x43e))[_0x3a9367(0x1ea)](_0x3a9367(0x419))==$('#txtSuccTaskEdit')['attr']('name'))return alert('Successor\x20and\x20Predecessor\x20can\x27t\x20be\x20same.'),![];}if($(_0x3a9367(0x418))['text']()!=_0x3a9367(0x29e)){if(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i['test']($('#txtDocLinkEdit')['attr'](_0x3a9367(0x28e)))==![])return alert(_0x3a9367(0x261)),![];}if($(_0x3a9367(0x1f3))[_0x3a9367(0x478)]()!=''){if($('#RefURLUpdate')[_0x3a9367(0x308)]()!=''){if(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i['test']($(_0x3a9367(0x358))[_0x3a9367(0x308)]()))currentDlgTask=SP['UI']['ModalDialog'][_0x3a9367(0x325)]('Updating',_0x3a9367(0x2fd)),setTimeout(function(){updateCurrentTaskStatus();},0x3e8);else return alert('Reference\x20URL\x20is\x20invalid.'),![];}else currentDlgTask=SP['UI']['ModalDialog'][_0x3a9367(0x325)]('Updating',_0x3a9367(0x2fd)),setTimeout(function(){updateCurrentTaskStatus();},0x3e8);}else return alert(_0x3a9367(0x397)),![];}}}function showUserChange(_0x336975){var _0x1c0fa5=a455_0x31754c;selectedText=$(_0x336975)[_0x1c0fa5(0x1d4)]('option:selected')[_0x1c0fa5(0x2f3)](),$(_0x1c0fa5(0x3c9))[_0x1c0fa5(0x308)]('');if(_0x1c0fa5(0x442)==selectedText)$(_0x1c0fa5(0x354))[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x1cf))['hide'](),$(_0x1c0fa5(0x446))['show'](),$(_0x1c0fa5(0x354))[_0x1c0fa5(0x478)](''),$(_0x1c0fa5(0x354))[_0x1c0fa5(0x222)](_0x1c0fa5(0x2d7)),$(_0x1c0fa5(0x466))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x317))[_0x1c0fa5(0x3bb)](),$('#ddlMyGroup')[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x25a))['hide'](),$(_0x1c0fa5(0x37d))['hide'](),$(_0x1c0fa5(0x383))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x24b))['hide'](),LoadShowUser(arrGeneralTask),NextURLGeneral!=null?($(_0x1c0fa5(0x1f8))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x43c))['show'](),$(_0x1c0fa5(0x2a9))[_0x1c0fa5(0x218)](),$('#DiplayProject')['text'](arrGeneralTask['length'])):($(_0x1c0fa5(0x1f8))[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x43c))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x2e6))[_0x1c0fa5(0x3bb)]());else{if(_0x1c0fa5(0x27b)==selectedText){$(_0x1c0fa5(0x354))[_0x1c0fa5(0x3bb)](),$('#SeeMoreMyGroup')[_0x1c0fa5(0x3bb)](),$('#txtserchdiv')[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x466))[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x317))['show'](),$(_0x1c0fa5(0x21c))[_0x1c0fa5(0x3bb)](),$('#ddlClients')[_0x1c0fa5(0x3bb)](),$('#SeeMoreDept')['hide'](),$(_0x1c0fa5(0x383))['hide'](),$(_0x1c0fa5(0x24b))[_0x1c0fa5(0x3bb)](),LoadShowUser([]);var _0x419c12=[],_0x59cfb3=[],_0x3c6f9e=$(_0x1c0fa5(0x317));_0x3c6f9e[_0x1c0fa5(0x2ab)](),$(_0x1c0fa5(0x43c))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x2a9))['hide'](),$('#Rowcount')[_0x1c0fa5(0x218)]();var _0x2278bb=_spPageContextInfo[_0x1c0fa5(0x41b)]+_0x1c0fa5(0x299)+Logged_CompanyId+'';$[_0x1c0fa5(0x472)]({'url':_0x2278bb,'type':'GET','async':![],'headers':{'ACCEPT':_0x1c0fa5(0x30d)},'success':function(_0x542b0c){var _0x2014c0=_0x1c0fa5,_0x27e194;_0x27e194+=_0x2014c0(0x30f),$[_0x2014c0(0x24a)](_0x542b0c['d']['results'],function(_0x57a435,_0x5d422a){var _0x3e8077=_0x2014c0,_0x14f413=_0x5d422a['ID'],_0x474a92=_0x5d422a[_0x3e8077(0x2f6)];_0x27e194+='<option\x20value=\x22'+_0x14f413+'\x22>'+_0x474a92+_0x3e8077(0x1d1);}),$(_0x2014c0(0x317))[_0x2014c0(0x478)](''),$(_0x2014c0(0x317))[_0x2014c0(0x222)](_0x27e194);},'error':function(_0x4a1829){return alert('Error\x20in\x20binding\x20departments\x20--\x20'+_0x4a1829),![];}});}else{if(_0x1c0fa5(0x29c)==selectedText)LoadShowUser(TaskusersProjectTeam),$(_0x1c0fa5(0x354))['hide'](),$(_0x1c0fa5(0x446))[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x3c9))[_0x1c0fa5(0x308)](''),$(_0x1c0fa5(0x466))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x317))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x21c))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x25a))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x1cf))[_0x1c0fa5(0x3bb)]();else{if(_0x1c0fa5(0x305)==selectedText)$('#SeeMoreDept')[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x2a9))['hide'](),LoadShowUser([]),getClientNames(),$(_0x1c0fa5(0x354))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x446))[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x3c9))[_0x1c0fa5(0x308)](''),$(_0x1c0fa5(0x466))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x317))[_0x1c0fa5(0x3bb)](),$('#ddlMyGroup')[_0x1c0fa5(0x3bb)](),$('#ddlClients')[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x24b))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x1cf))['hide']();else _0x1c0fa5(0x1de)==selectedText?($(_0x1c0fa5(0x37d))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x2a9))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x24b))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x1ef))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x383))['hide'](),$('#SeeMoreMyGroup')[_0x1c0fa5(0x218)](),BindMyGroup(),$(_0x1c0fa5(0x354))[_0x1c0fa5(0x3bb)](),$('#txtserchdiv')[_0x1c0fa5(0x218)](),$(_0x1c0fa5(0x3c9))[_0x1c0fa5(0x308)](''),$(_0x1c0fa5(0x466))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x317))['hide'](),$('#ddlMyGroup')['show'](),$(_0x1c0fa5(0x25a))['hide'](),$(_0x1c0fa5(0x21c))[_0x1c0fa5(0x28d)](_0x1c0fa5(0x379))):($(_0x1c0fa5(0x354))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x446))[_0x1c0fa5(0x218)](),$('#lblDepartment')[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x317))['hide'](),$('#ddlMyGroup')[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x25a))[_0x1c0fa5(0x3bb)](),$(_0x1c0fa5(0x1cf))['hide'](),LoadShowUser(TaskusersProjectTeam));}}}}function SearchAssigneeTable(){var _0x9f7ce3=a455_0x31754c;if(ProjectType==_0x9f7ce3(0x3c7)){if($(_0x9f7ce3(0x2f7))[_0x9f7ce3(0x308)]()=='2'){if($('#txtserch')[_0x9f7ce3(0x308)]()['trim']()!=''){var _0xc751cd=arrGeneralTask[_0x9f7ce3(0x2a0)](function(_0x2f7ada){var _0x3bfcff=_0x9f7ce3;return _0x2f7ada[_0x3bfcff(0x467)]==null&&(_0x2f7ada['Designation']=''),_0x2f7ada['Department']==null&&(_0x2f7ada[_0x3bfcff(0x27b)]=''),_0x2f7ada[_0x3bfcff(0x467)]['toLowerCase']()['indexOf']($(_0x3bfcff(0x3c9))[_0x3bfcff(0x308)]()[_0x3bfcff(0x301)]())!=-0x1||_0x2f7ada[_0x3bfcff(0x32d)]['toLowerCase']()[_0x3bfcff(0x417)]($(_0x3bfcff(0x3c9))['val']()[_0x3bfcff(0x301)]())!=-0x1||_0x2f7ada[_0x3bfcff(0x400)][_0x3bfcff(0x301)]()[_0x3bfcff(0x417)]($(_0x3bfcff(0x3c9))[_0x3bfcff(0x308)]()['toLowerCase']())!=-0x1||_0x2f7ada[_0x3bfcff(0x27b)][_0x3bfcff(0x301)]()[_0x3bfcff(0x417)]($(_0x3bfcff(0x3c9))[_0x3bfcff(0x308)]()[_0x3bfcff(0x301)]())!=-0x1||_0x2f7ada[_0x3bfcff(0x2ad)]['toLowerCase']()[_0x3bfcff(0x417)]($(_0x3bfcff(0x3c9))[_0x3bfcff(0x308)]()[_0x3bfcff(0x301)]())!=-0x1;});LoadShowUser(_0xc751cd),$('#ShowProject')[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x2a9))[_0x9f7ce3(0x3bb)](),$('#Rowcount')[_0x9f7ce3(0x218)]();}else LoadShowUser(arrGeneralTask),arrGeneralTask['length']>0x63&&NextURLGeneral!=null?($(_0x9f7ce3(0x1f8))['hide'](),$(_0x9f7ce3(0x43c))[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x2a9))['show'](),$(_0x9f7ce3(0x253))[_0x9f7ce3(0x2f3)](arrGeneralTask[_0x9f7ce3(0x269)])):($(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x43c))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x2a9))['hide']());}else{if($(_0x9f7ce3(0x2f7))[_0x9f7ce3(0x308)]()=='6'){if($(_0x9f7ce3(0x3c9))[_0x9f7ce3(0x308)]()[_0x9f7ce3(0x36e)]()!=''){var _0xc751cd=arrDeptTask[_0x9f7ce3(0x2a0)](function(_0x6b69bb){var _0x4b0bbd=_0x9f7ce3;return _0x6b69bb[_0x4b0bbd(0x467)]['toLowerCase']()[_0x4b0bbd(0x417)]($(_0x4b0bbd(0x3c9))[_0x4b0bbd(0x308)]()[_0x4b0bbd(0x301)]())!=-0x1||_0x6b69bb[_0x4b0bbd(0x32d)][_0x4b0bbd(0x301)]()[_0x4b0bbd(0x417)]($(_0x4b0bbd(0x3c9))[_0x4b0bbd(0x308)]()['toLowerCase']())!=-0x1||_0x6b69bb[_0x4b0bbd(0x400)][_0x4b0bbd(0x301)]()[_0x4b0bbd(0x417)]($(_0x4b0bbd(0x3c9))[_0x4b0bbd(0x308)]()[_0x4b0bbd(0x301)]())!=-0x1||_0x6b69bb['Department'][_0x4b0bbd(0x301)]()[_0x4b0bbd(0x417)]($('#txtserch')['val']()['toLowerCase']())!=-0x1||_0x6b69bb[_0x4b0bbd(0x2ad)][_0x4b0bbd(0x301)]()[_0x4b0bbd(0x417)]($('#txtserch')['val']()['toLowerCase']())!=-0x1;});LoadShowUser(_0xc751cd),$('#ShowProject')['hide'](),$(_0x9f7ce3(0x37d))['hide'](),$(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x218)]();}else LoadShowUser(arrDeptTask),arrDeptTask['length']>0x63&&NextUrlDept!=null?($(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x43c))[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x37d))['show'](),$('#DiplayProject')[_0x9f7ce3(0x2f3)](arrDeptTask[_0x9f7ce3(0x269)])):($('#Rowcount')['show'](),$(_0x9f7ce3(0x43c))['hide'](),$('#SeeMoreDept')[_0x9f7ce3(0x3bb)]());}else{if($(_0x9f7ce3(0x2f7))[_0x9f7ce3(0x308)]()=='8'){if($(_0x9f7ce3(0x3c9))['val']()[_0x9f7ce3(0x36e)]()!=''){var _0xc751cd=arrMyGroup['filter'](function(_0x446c4e){var _0x5bbdc6=_0x9f7ce3;return _0x446c4e[_0x5bbdc6(0x467)][_0x5bbdc6(0x301)]()[_0x5bbdc6(0x417)]($(_0x5bbdc6(0x3c9))[_0x5bbdc6(0x308)]()[_0x5bbdc6(0x301)]())!=-0x1||_0x446c4e['FullName'][_0x5bbdc6(0x301)]()[_0x5bbdc6(0x417)]($(_0x5bbdc6(0x3c9))['val']()[_0x5bbdc6(0x301)]())!=-0x1||_0x446c4e['EMail']['toLowerCase']()['indexOf']($(_0x5bbdc6(0x3c9))['val']()[_0x5bbdc6(0x301)]())!=-0x1||_0x446c4e[_0x5bbdc6(0x27b)][_0x5bbdc6(0x301)]()[_0x5bbdc6(0x417)]($(_0x5bbdc6(0x3c9))[_0x5bbdc6(0x308)]()[_0x5bbdc6(0x301)]())!=-0x1||_0x446c4e['Manager'][_0x5bbdc6(0x301)]()[_0x5bbdc6(0x417)]($(_0x5bbdc6(0x3c9))[_0x5bbdc6(0x308)]()[_0x5bbdc6(0x301)]())!=-0x1;});LoadShowUser(_0xc751cd),$(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x218)]();}else LoadShowUser(arrMyGroup);}else{if($(_0x9f7ce3(0x3c9))[_0x9f7ce3(0x308)]()['trim']()!=''){var _0xc751cd=TaskusersProjectTeam['filter'](function(_0x22fcce){var _0x257215=_0x9f7ce3;return _0x22fcce['Designation'][_0x257215(0x301)]()['indexOf']($(_0x257215(0x3c9))[_0x257215(0x308)]()[_0x257215(0x301)]())!=-0x1||_0x22fcce[_0x257215(0x32d)][_0x257215(0x301)]()[_0x257215(0x417)]($(_0x257215(0x3c9))['val']()[_0x257215(0x301)]())!=-0x1||_0x22fcce[_0x257215(0x400)][_0x257215(0x301)]()[_0x257215(0x417)]($('#txtserch')['val']()[_0x257215(0x301)]())!=-0x1||_0x22fcce[_0x257215(0x2ad)]['toLowerCase']()[_0x257215(0x417)]($(_0x257215(0x3c9))[_0x257215(0x308)]()['toLowerCase']())!=-0x1;});LoadShowUser(_0xc751cd),$(_0x9f7ce3(0x43c))['hide'](),$(_0x9f7ce3(0x383))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x218)]();}else LoadShowUser(TaskusersProjectTeam),TaskusersProjectTeam[_0x9f7ce3(0x269)]>0x63&&NextUrlGuest!=null?($('#Rowcount')[_0x9f7ce3(0x3bb)](),$('#ShowProject')[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x383))[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x253))[_0x9f7ce3(0x2f3)](TaskusersProjectTeam['length'])):($('#Rowcount')[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x43c))['hide'](),$(_0x9f7ce3(0x383))[_0x9f7ce3(0x3bb)]());}}}}if(ProjectType==_0x9f7ce3(0x377)){if($('#txtserch')[_0x9f7ce3(0x308)]()['trim']()!=''){var _0xc751cd=TaskusersProjectTeam['filter'](function(_0x5ca577){var _0x4155c7=_0x9f7ce3;return _0x5ca577[_0x4155c7(0x467)][_0x4155c7(0x301)]()[_0x4155c7(0x417)]($(_0x4155c7(0x3c9))[_0x4155c7(0x308)]()[_0x4155c7(0x301)]())!=-0x1||_0x5ca577['FullName'][_0x4155c7(0x301)]()[_0x4155c7(0x417)]($('#txtserch')[_0x4155c7(0x308)]()[_0x4155c7(0x301)]())!=-0x1||_0x5ca577[_0x4155c7(0x400)][_0x4155c7(0x301)]()[_0x4155c7(0x417)]($(_0x4155c7(0x3c9))[_0x4155c7(0x308)]()[_0x4155c7(0x301)]())!=-0x1||_0x5ca577[_0x4155c7(0x27b)][_0x4155c7(0x301)]()[_0x4155c7(0x417)]($(_0x4155c7(0x3c9))['val']()[_0x4155c7(0x301)]())!=-0x1||_0x5ca577[_0x4155c7(0x2ad)][_0x4155c7(0x301)]()[_0x4155c7(0x417)]($(_0x4155c7(0x3c9))[_0x4155c7(0x308)]()[_0x4155c7(0x301)]())!=-0x1;});LoadShowUser(_0xc751cd),$(_0x9f7ce3(0x43c))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x1ef))[_0x9f7ce3(0x3bb)](),$('#Rowcount')[_0x9f7ce3(0x218)]();}else LoadShowUser(TaskusersProjectTeam),TaskusersProjectTeam[_0x9f7ce3(0x269)]>0x63&&NextURLProject!=null?($(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x43c))['show'](),$(_0x9f7ce3(0x2e6))[_0x9f7ce3(0x218)](),$('#DiplayProject')[_0x9f7ce3(0x2f3)](TaskusersProjectTeam[_0x9f7ce3(0x269)])):($(_0x9f7ce3(0x1f8))[_0x9f7ce3(0x218)](),$(_0x9f7ce3(0x43c))[_0x9f7ce3(0x3bb)](),$(_0x9f7ce3(0x420))[_0x9f7ce3(0x3bb)]());}}function GetSelectItem(){var _0x178ee4=a455_0x31754c,_0x489ff4=tabledata[_0x178ee4(0x46e)](),_0x3c2a66=_0x489ff4[_0x178ee4(0x269)];_0x489ff4[_0x178ee4(0x269)]>0xc8&&(_0x489ff4[_0x178ee4(0x269)]=0xc8);$(_0x178ee4(0x457))[_0x178ee4(0x218)]();var _0x1eea27='';if(_0x489ff4['length']>0x0){for(var _0x1a0275=0x0;_0x1a0275<_0x489ff4[_0x178ee4(0x269)];_0x1a0275++){if(jQuery[_0x178ee4(0x1c4)](_0x489ff4[_0x1a0275]['_row'][_0x178ee4(0x1d2)][_0x178ee4(0x400)][_0x178ee4(0x301)](),multipleEmailAddress)!='-1'){}else{var _0x426852=SPClientPeoplePicker['SPClientPeoplePickerDict'][peoplePickerDiv[0x0]['id']],_0x18bff9=_0x426852['GetAllUserInfo'](),_0x4d8a49=_0x18bff9[_0x178ee4(0x2a0)](function(_0x3ad806){var _0x43eb2d=_0x178ee4;return _0x3ad806['Description']==_0x489ff4[_0x1a0275][_0x43eb2d(0x1e8)][_0x43eb2d(0x1d2)]['EMail'];});EmpIds[_0x178ee4(0x309)](_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)][_0x178ee4(0x288)]),multipleEmailAddress['push'](_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)]['data'][_0x178ee4(0x400)][_0x178ee4(0x301)]()),assignUserName['push'](_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)][_0x178ee4(0x431)]);var _0x1c8e26=_spPageContextInfo[_0x178ee4(0x41b)]+_0x178ee4(0x46a)+escapeProperly(_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)]['data'][_0x178ee4(0x400)]);_0x1eea27+='<div\x20class=\x22col-md-6\x20userBoxParent\x22><div\x20class=\x22gridbox\x22><img\x20src=\x22'+_0x1c8e26+_0x178ee4(0x2b8),_0x1eea27+=_0x178ee4(0x286)+_0x489ff4[_0x1a0275]['_row'][_0x178ee4(0x1d2)][_0x178ee4(0x431)]+_0x178ee4(0x245)+_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)][_0x178ee4(0x400)]+_0x178ee4(0x283)+_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)]['EMail']+_0x178ee4(0x36f),_0x1eea27+=_0x178ee4(0x1da)+_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)][_0x178ee4(0x400)]+_0x178ee4(0x39c)+_0x489ff4[_0x1a0275][_0x178ee4(0x1e8)][_0x178ee4(0x1d2)][_0x178ee4(0x431)]+_0x178ee4(0x463)+_0x489ff4[_0x1a0275]['_row']['data']['UserId']+_0x178ee4(0x1f6);}}$('#userHTMLBox')['append'](_0x1eea27),$(_0x178ee4(0x3b9))['modal'](_0x178ee4(0x3bb)),_0x3c2a66>0xc8&&alert(_0x178ee4(0x3c2));}else return multipleEmailAddress[_0x178ee4(0x269)]==0x0&&$(_0x178ee4(0x457))[_0x178ee4(0x3bb)](),alert(_0x178ee4(0x428)),![];}function removeUserBox(_0x43d999,_0x5637cf,_0x124b58,_0x1a9c31){var _0x2f188b=a455_0x31754c;$(_0x43d999)[_0x2f188b(0x46f)]('.userBoxParent')[_0x2f188b(0x235)](),multipleEmailAddress=multipleEmailAddress[_0x2f188b(0x2a0)](function(_0x1549e9){var _0x5cf2da=_0x2f188b;return _0x1549e9[_0x5cf2da(0x301)]()!==_0x5637cf['toLowerCase']();}),assignUserName=assignUserName['filter'](function(_0x35329c){var _0xe5e5b6=_0x2f188b;return _0x35329c[_0xe5e5b6(0x301)]()!==_0x124b58[_0xe5e5b6(0x301)]();}),EmpIds=EmpIds['filter'](function(_0x5d0214){return _0x5d0214!=_0x1a9c31;}),multipleEmailAddress[_0x2f188b(0x269)]==0x0&&$('.peoplepickerbox')[_0x2f188b(0x3bb)]();}function daysInMonth(_0xcfac0a,_0x56a4f1){var _0xec5f81=a455_0x31754c;return new Date(_0x56a4f1,_0xcfac0a,0x0)[_0xec5f81(0x265)]();}function OpenEmail(_0x3c1523){var _0x24a4a1=a455_0x31754c;window[_0x24a4a1(0x372)]=_0x24a4a1(0x2b1)+_0x3c1523[_0x24a4a1(0x3ef)];}function PredSuccTaskValidate(){var _0x4192a7=a455_0x31754c;if($('#TaskType')[_0x4192a7(0x308)]()!='0'){if($('#TaskType')['val']()=='1'){if($(_0x4192a7(0x1c0))[_0x4192a7(0x308)]()!='0')LoadPredSuccecessorTasks(_0x4192a7(0x240));else return alert(_0x4192a7(0x415)),![];}else LoadPredSuccecessorTasks(_0x4192a7(0x240));}else return alert(_0x4192a7(0x3c4)),![];}function LoadPredSuccecessorTasks(_0x330054){var _0x11a00d=a455_0x31754c,_0xb1f789='';if(_0x330054==_0x11a00d(0x240)){if($(_0x11a00d(0x2e5))[_0x11a00d(0x308)]()=='1')var _0x180890='?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles,ProjectID/Id&$top=5000&$expand=ProjectID,AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail\x20eq\x20\x27'+_spPageContextInfo[_0x11a00d(0x395)]+_0x11a00d(0x410)+$('#ProjectNameDetails')[_0x11a00d(0x308)]()+_0x11a00d(0x41f);else var _0x180890=_0x11a00d(0x2c4)+_spPageContextInfo[_0x11a00d(0x395)]+_0x11a00d(0x406);}else{if(TaskKind=='1')var _0x180890=_0x11a00d(0x250)+_spPageContextInfo[_0x11a00d(0x395)]+'\x27\x20and\x20ProjectID/Id\x20eq\x20\x27'+$(_0x11a00d(0x1c0))['val']()+'\x27\x20and\x20(CurrentPhase\x20eq\x20\x27Open\x27\x20or\x20CurrentPhase\x20eq\x20\x27Close\x27\x20or\x20CurrentPhase\x20eq\x20\x27Completed\x27)';else var _0x180890=_0x11a00d(0x2c4)+_spPageContextInfo[_0x11a00d(0x395)]+'\x27\x20and\x20TaskType\x20eq\x20\x272\x27\x20and\x20(CurrentPhase\x20eq\x20\x27Open\x27\x20or\x20CurrentPhase\x20eq\x20\x27Close\x27\x20or\x20CurrentPhase\x20eq\x20\x27Completed\x27)';}var _0x5c9fab='Due',_0x1edc26='',_0x57dd77='',_0x1d9d8f='',_0x22fd29='';if(_0x330054==_0x11a00d(0x240)){if($(_0x11a00d(0x47a))[_0x11a00d(0x2f3)]()==_0x11a00d(0x42b))_0x22fd29=$(_0x11a00d(0x2b9))[_0x11a00d(0x1ea)]('name');else $('#txtModalTaskHeader')[_0x11a00d(0x2f3)]()==_0x11a00d(0x2d6)?_0x22fd29=$(_0x11a00d(0x2de))[_0x11a00d(0x1ea)](_0x11a00d(0x419)):_0x22fd29='';}else{if($(_0x11a00d(0x47a))[_0x11a00d(0x2f3)]()=='Predecessor\x20Task')_0x22fd29=$(_0x11a00d(0x43e))[_0x11a00d(0x1ea)](_0x11a00d(0x419));else $(_0x11a00d(0x47a))[_0x11a00d(0x2f3)]()=='Successor\x20Task'?_0x22fd29=$(_0x11a00d(0x443))['attr'](_0x11a00d(0x419)):_0x22fd29='';}$[_0x11a00d(0x293)](getItemsWithQueryItem('EmployeeTaskDetails',_0x180890,''))[_0x11a00d(0x356)](function(_0x1d9660){var _0x36d74c=_0x11a00d,_0x507962=_0x1d9660['results'];if(_0x507962[_0x36d74c(0x269)]>0x0){for(var _0x10b3a5=0x0;_0x10b3a5<_0x507962['length'];_0x10b3a5++){_0x1d9d8f='';var _0x36d010=_0x507962[_0x10b3a5][_0x36d74c(0x22a)];_0x36d010==null?_0x36d010=_0x36d74c(0x475)+_0x507962[_0x10b3a5]['ClientID']['Title']+_0x36d74c(0x2f0):_0x36d010=_0x36d74c(0x2df)+_0x36d010+_0x36d74c(0x2f0);var _0x55d350=_0x507962[_0x10b3a5][_0x36d74c(0x205)];if(_0x55d350[_0x36d74c(0x3fe)][_0x36d74c(0x269)]>=0x4)for(assignto=0x0;assignto<0x4;assignto++){_0x1edc26=_spPageContextInfo[_0x36d74c(0x41b)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x55d350[_0x36d74c(0x3fe)][assignto][_0x36d74c(0x400)]),_0x1d9d8f+=_0x36d74c(0x338)+_0x55d350[_0x36d74c(0x3fe)][assignto]['Title']+_0x36d74c(0x27d)+_0x1edc26+_0x36d74c(0x3fa);}else for(assignto=0x0;assignto<_0x55d350[_0x36d74c(0x3fe)][_0x36d74c(0x269)];assignto++){_0x1edc26=_spPageContextInfo[_0x36d74c(0x41b)]+_0x36d74c(0x46a)+escapeProperly(_0x55d350[_0x36d74c(0x3fe)][assignto][_0x36d74c(0x400)]),_0x1d9d8f+=_0x36d74c(0x338)+_0x55d350['results'][assignto][_0x36d74c(0x32f)]+'\x20\x0a'+_0x55d350[_0x36d74c(0x3fe)][assignto]['EMail']+_0x36d74c(0x27d)+_0x1edc26+_0x36d74c(0x3fa);}_0x55d350[_0x36d74c(0x3fe)][_0x36d74c(0x269)]>0x4&&(_0x1d9d8f+=_0x36d74c(0x3dd)+(_0x55d350[_0x36d74c(0x3fe)][_0x36d74c(0x269)]-0x4)+_0x36d74c(0x270));var _0x3608ec=new Date(_0x507962[_0x10b3a5]['StartDate']);_0x3608ec=titanForWork[_0x36d74c(0x219)](_0x3608ec);var _0x46b48f=_0x507962[_0x10b3a5][_0x36d74c(0x1cd)],_0x20d9e3=_0x507962[_0x10b3a5][_0x36d74c(0x22b)];_0x5c9fab=_0x36d74c(0x271);_0x46b48f!=null&&_0x20d9e3!='Completed'&&_0x20d9e3!=_0x36d74c(0x3d9)&&(_0x46b48f=new Date(_0x46b48f),_0x46b48f=titanForWork[_0x36d74c(0x219)](_0x46b48f));var _0x58a457=_0x507962[_0x10b3a5]['CompletionPersent'];(_0x20d9e3==_0x36d74c(0x43d)||_0x20d9e3==_0x36d74c(0x3d9))&&(_0x5c9fab=_0x36d74c(0x43d),_0x46b48f=new Date(_0x507962[_0x10b3a5][_0x36d74c(0x310)]),_0x46b48f=titanForWork[_0x36d74c(0x219)](_0x46b48f)),DueDateClass='',new Date()>new Date(_0x507962[_0x10b3a5][_0x36d74c(0x1cd)])&&(DueDateClass=_0x36d74c(0x1c2)),_0x22fd29==_0x507962[_0x10b3a5]['Id']?_0xb1f789+=_0x36d74c(0x359)+_0x507962[_0x10b3a5]['Id']+_0x36d74c(0x1f4)+_0x507962[_0x10b3a5][_0x36d74c(0x32f)]+_0x36d74c(0x341):_0xb1f789+=_0x36d74c(0x359)+_0x507962[_0x10b3a5]['Id']+'\x22\x20title=\x22'+_0x507962[_0x10b3a5][_0x36d74c(0x32f)]+'\x22\x20name=\x22mutlradio\x22></div>',_0xb1f789+=_0x36d74c(0x40e)+_0x507962[_0x10b3a5][_0x36d74c(0x32f)]+_0x36d74c(0x214)+_0x36d010+_0x36d74c(0x1cc),_0xb1f789+=_0x36d74c(0x3f4)+_0x1d9d8f+_0x36d74c(0x2a4),_0xb1f789+=_0x36d74c(0x3f8)+_0x3608ec+'</span></div></td><td><div\x20class=\x22multeventbox\x22>'+_0x20d9e3+_0x36d74c(0x303),_0xb1f789+=_0x36d74c(0x23a)+DueDateClass+_0x36d74c(0x298)+_0x5c9fab+_0x36d74c(0x336)+_0x46b48f+_0x36d74c(0x45d),_0xb1f789+=_0x36d74c(0x43a)+new Date(_0x507962[_0x10b3a5]['Created'])+_0x36d74c(0x2f9)+new Date(_0x507962[_0x10b3a5][_0x36d74c(0x1cd)])+_0x36d74c(0x2f9)+_0x20d9e3+_0x36d74c(0x34f),_0xb1f789+=_0x36d74c(0x3d2);}$(_0x36d74c(0x264))[_0x36d74c(0x2ab)]()[_0x36d74c(0x222)](_0xb1f789);}else $(_0x36d74c(0x264))[_0x36d74c(0x2ab)]()[_0x36d74c(0x222)](_0x36d74c(0x40d));_0xb1f789!=''&&TableConfSuccPredTask(),$(_0x36d74c(0x306))[_0x36d74c(0x449)](_0x36d74c(0x218));});}function TableConfSuccPredTask(){var _0x2dcd9a=a455_0x31754c;sorter=new TINY[(_0x2dcd9a(0x2d0))]['sorter'](_0x2dcd9a(0x311),_0x2dcd9a(0x376),{'headclass':'head','ascclass':_0x2dcd9a(0x1c7),'descclass':_0x2dcd9a(0x291),'evenclass':_0x2dcd9a(0x3f5),'oddclass':_0x2dcd9a(0x300),'evenselclass':'evenselected','oddselclass':_0x2dcd9a(0x22d),'paginate':!![],'size':0x5,'colddid':'Succcolumns','currentid':'currentpageSucc','totalid':_0x2dcd9a(0x25d),'startingrecid':_0x2dcd9a(0x239),'endingrecid':_0x2dcd9a(0x259),'totalrecid':'Succtotalrecords','hoverid':_0x2dcd9a(0x1c6),'pageddid':_0x2dcd9a(0x448),'navid':'Succtablenav','sortdir':0x1,'init':!![]});}function SelectSuccPredTask(){var _0x4dbd35=a455_0x31754c;EditMode=IsEditMode,EditMode!=undefined&&(EditMode=window[_0x4dbd35(0x344)](EditMode)),$('input[name=\x22mutlradio\x22]:checked')[0x0]!=null?$(_0x4dbd35(0x47a))['text']()==_0x4dbd35(0x2d6)?EditMode==_0x4dbd35(0x2ee)?($(_0x4dbd35(0x443))['val']($(_0x4dbd35(0x1e2))[0x0]['attributes'][_0x4dbd35(0x451)][_0x4dbd35(0x337)]),$('#txtSuccTaskEdit')[_0x4dbd35(0x1ea)](_0x4dbd35(0x419),$('input[name=\x22mutlradio\x22]:checked')['val']())):($('#txtSuccTask')[_0x4dbd35(0x308)]($(_0x4dbd35(0x1e2))[0x0][_0x4dbd35(0x2b5)][_0x4dbd35(0x451)][_0x4dbd35(0x337)]),$(_0x4dbd35(0x2de))[_0x4dbd35(0x1ea)]('name',$(_0x4dbd35(0x1e2))['val']())):EditMode==_0x4dbd35(0x2ee)?($(_0x4dbd35(0x43e))[_0x4dbd35(0x308)]($(_0x4dbd35(0x1e2))[0x0][_0x4dbd35(0x2b5)][_0x4dbd35(0x451)]['value']),$('#txtPredTaskEdit')['attr'](_0x4dbd35(0x419),$(_0x4dbd35(0x1e2))[_0x4dbd35(0x308)]())):($(_0x4dbd35(0x2b9))[_0x4dbd35(0x308)]($(_0x4dbd35(0x1e2))[0x0][_0x4dbd35(0x2b5)][_0x4dbd35(0x451)][_0x4dbd35(0x337)]),$(_0x4dbd35(0x2b9))['attr']('name',$('input[name=\x22mutlradio\x22]:checked')[_0x4dbd35(0x308)]())):$(_0x4dbd35(0x47a))['text']()=='Successor\x20Task'?($('#txtSuccTask')[_0x4dbd35(0x308)](''),$('#txtSuccTask')[_0x4dbd35(0x1ea)](_0x4dbd35(0x419),''),$(_0x4dbd35(0x443))[_0x4dbd35(0x308)](''),$(_0x4dbd35(0x443))[_0x4dbd35(0x1ea)](_0x4dbd35(0x419),'')):($(_0x4dbd35(0x2b9))[_0x4dbd35(0x308)](''),$(_0x4dbd35(0x2b9))[_0x4dbd35(0x1ea)](_0x4dbd35(0x419),''),$(_0x4dbd35(0x43e))[_0x4dbd35(0x308)](''),$(_0x4dbd35(0x43e))[_0x4dbd35(0x1ea)](_0x4dbd35(0x419),'')),$(_0x4dbd35(0x306))[_0x4dbd35(0x449)](_0x4dbd35(0x3bb));}function SortPredSuccTable(_0x187b0d){var _0x3d6de4=a455_0x31754c;if(_0x187b0d==_0x3d6de4(0x20c))$(_0x3d6de4(0x435))[_0x3d6de4(0x28d)](_0x3d6de4(0x249));else{if(_0x187b0d==_0x3d6de4(0x365))$('#SortTaskRecent')[_0x3d6de4(0x28d)](_0x3d6de4(0x249));else _0x187b0d==_0x3d6de4(0x2c7)?$(_0x3d6de4(0x3d7))[_0x3d6de4(0x28d)]('click'):$(_0x3d6de4(0x232))[_0x3d6de4(0x28d)]('click');}}function getOnChangeHistory(_0x5831fb){var _0x43ddee=a455_0x31754c,_0x4c94a9=new Date();_0x4c94a9=_0x4c94a9[_0x43ddee(0x346)](0x0,0x0,0x0,0x0),_0x4c94a9=new Date(_0x4c94a9);var _0x41c785=_0x43ddee(0x30e)+_0x5831fb+'\x27';$[_0x43ddee(0x293)](getItemsWithQuery('TaskAuditTrail',_0x41c785))[_0x43ddee(0x356)](function(_0x39b583){var _0x5333c1=_0x43ddee;$('#bodyChangeHistory')[_0x5333c1(0x478)]('');var _0x4b9eda='';if(_0x39b583[_0x5333c1(0x269)]>0x0)for(var _0x151989=0x0;_0x151989<_0x39b583[_0x5333c1(0x269)];_0x151989++){var _0x4e65e6=_0x39b583[_0x151989][_0x5333c1(0x329)];_0x4e65e6=changeDateFormate(_0x4e65e6);var _0x59ac67=_0x39b583[_0x151989]['Activity'],_0x3366ab=_0x39b583[_0x151989][_0x5333c1(0x441)];if(_0x3366ab==null)_0x3366ab='';var _0x38a8ba=_0x39b583[_0x151989]['OldValues'];if(_0x38a8ba==null)_0x38a8ba='';var _0x579d03=_0x39b583[_0x151989][_0x5333c1(0x1ff)];if(_0x579d03==null)_0x579d03='';var _0x2b4e76=_0x39b583[_0x151989][_0x5333c1(0x2c5)][_0x5333c1(0x32f)];_0x4b9eda+='<tr>',_0x4b9eda+=_0x5333c1(0x355)+_0x4e65e6+_0x5333c1(0x32c),_0x4b9eda+=_0x5333c1(0x1df)+_0x59ac67+_0x5333c1(0x2d4),_0x4b9eda+=_0x5333c1(0x21a)+_0x3366ab+_0x5333c1(0x2d4),_0x4b9eda+=_0x5333c1(0x2fb)+_0x38a8ba+_0x5333c1(0x2d4),_0x4b9eda+=_0x5333c1(0x363)+_0x579d03+_0x5333c1(0x2d4),_0x4b9eda+=_0x5333c1(0x1fd)+_0x2b4e76+_0x5333c1(0x34f),_0x4b9eda+=_0x5333c1(0x3d2);}else _0x4b9eda+=_0x5333c1(0x389);$(_0x5333c1(0x38b))[_0x5333c1(0x222)](_0x4b9eda);});}function changeDateFormate(_0x38ef61){var _0x358455=a455_0x31754c,_0x38ef61=new Date(_0x38ef61),_0x3ddc87=new Date(_0x38ef61)[_0x358455(0x234)]([],{'hour':'2-digit','minute':_0x358455(0x3f9),'hour12':!![]})[_0x358455(0x207)]();tempDate=$[_0x358455(0x20f)][_0x358455(0x381)](_0x358455(0x2fe),_0x38ef61);var _0x399ee4=tempDate+'\x20'+_0x3ddc87;return _0x399ee4;}
+var currentTaskItemId = "";
+var taskToUsers = [];
+var DependecyId = '';
+var taskCCUsersUsers = [];
+var taskItemDetails = [];
+var emailBodyContent = "";
+var taskEmailSubject = "";
+var ProjectType = "";
+var currentDlgTask = '';
+var CurrentPhase = '';
+var TaskAssignID = '';
+var Audience = '';
+var DependecyRecrd = '';
+var DependecyToUser = [];
+var GuestUser = [];
+var arrAlreadyAssinEmp = [];
+var IsOwner = false;
+var IsCustomerBind = false;
+var IsProjectBind = false;
+var ActiveCustomers = [];
+var InactiveCustomers = [];
+var AllTaskUsersEmployeeuser = [];
+var arrGeneralTask = [];
+var NextURLGeneral = '';
+var NextURLGuestTeam = '';
+var IsModal = "";
+var DependenciesNames = '';
+var TabId = titanForWork.getQueryStringParameter("source");
+var DeleteCheck = true;
+var TaskAction = titanForWork.getQueryStringParameter("Action");
+var IsProjectAdmin = false;
+var TaskKind = '';
+var selectedText;
+var CommentUserImage = '';
+var LoginUserID = '';
+var TaskusersProjectTeam = [];
+var IsCheckUser = false;
+var NextURLProject = ""
+var NextUrlGuest = '';
+var ClientName = '';
+var NextUrlDept = '';
+var arrDeptTask = [];
+var finalFiles = [];
+var FinalFiles4Upload = [];
+var Tcounter = 0;
+var RemoveDuplicate = [];
+var UpdateItemID = '';
+var arrMyGroup = [];
+var IsTaskRecursive = titanForWork.getQueryStringParameter('Type'); //Value will be Recursive or blank('')
+var RecursiveTaskId = '';
+var IsEditMode = titanForWork.getQueryStringParameter("EditMode");
+var IntervalId = '';
+var LibraryTreeBind = false;
+$(window).load(function () {
+    /*var $select = $("#MonthlyDays");
+    for (i = 1; i <= 28; i++) {
+        $select.append($('<option></option>').val(i).html(i))
+    }*/
+    if (IsTaskRecursive == "RecursiveUpdate") {
+        waitingDialog.show();
+        setTimeout(function () {
+            PageLoadRecTask();
+        }, 500);
+    }
+});
+$(document).ready(function () {
+	$("#reminderTask").hide();
+	$("#DeleteTask").hide();
+    IsModal = window.atob($.urlParam('IsModal'));
+    RecursiveTaskId = window.atob($.urlParam('RecursiveId'));
+    currentTaskItemId = titanForWork.getQueryStringParameter("TaskId");
+    if (currentTaskItemId != undefined) {
+        currentTaskItemId = window.atob(currentTaskItemId);
+        $('#btnchangeHistorys').show();
+    }
+    
+    $("#btnchangeHistorys").click(function () {
+        getOnChangeHistory(currentTaskItemId);
+    });
+    var prmProjectID = titanForWork.getQueryStringParameter("ProjectID");
+    if(prmProjectID!='undefined' || prmProjectID!=null)
+    {
+       GetAllModule(prmProjectID);
+    }
+    $('.StartDate').keypress(function (e) {
+        return false
+    });
+    $('.DueDate').keypress(function (e) {
+        return false
+    });
+    $('.StartDateRecursive').keypress(function (e) {
+        return false
+    });
+    $('.EndDateRecursive').keypress(function (e) {
+        return false
+    });
+    if (IsModal == "true") {
+        getExternalClient();
+    }
+    else {
+        //myShareDepartmentCopy();
+    }
+    $("#Audience").change(function () {
+        Audience = $("#Audience").val();
+        IsCustomerBind = false;
+    });
+    $("#everymonths").change(function () {
+        var NumOfDays = daysInMonth($(this).val(), new Date().getFullYear());
+        for (var day = 0; day < NumOfDays; day++) {
+            $('.multidays').append('<option>' + [day + 1] + '</option>');
+        }
+    });
+    $('#txtDueDay').keypress(function (event) {
+        if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
+            event.preventDefault();
+        }
+    });
+    $('#txtDueDay').on('mouseleave', function (event) {
+        var minLength = 1;
+        var maxLength = 999;
+        if (parseInt($(this).val()) < minLength) {
+            alert("value should be greater than zero.");
+            $(this).val('');
+        } else if (parseInt($(this).val()) > maxLength) {
+            alert("value should be smaller than 999.");
+            $(this).val('');
+        } else {
+
+        }
+    });
+
+    $("#rdioYearly").click(function () {
+        $("#everymonths").val('1');
+        $("#everymonths").trigger('change');
+    });
+
+    $("#searchCustomer").click(function () {
+        if (IsCustomerBind == false) {
+            getClientMaster([]);
+        }
+    });
+
+    $("#CustomerStatus").change(function () {
+        if ($("#CustomerStatus").val() == 'Active') {
+            getClientMaster(ActiveCustomers);
+        }
+        else {
+            getClientMasterInActive(InactiveCustomers);
+        }
+    });
+    $("#ddlClients").change(function () {
+        getGuestUsers("Onchange", $("#ddlClients").val());
+    });
+    $("#StatusProj,#DepartmentsProject").change(function () {
+        var dlgTitle = 'Filtering projects...';
+        var dlgMsg = '<br />Please wait!!';
+        var dlgHeight = 200;
+        var dlgWidth = 400;
+        SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+            currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+        });
+        setTimeout(function () {
+            loadprojectinsearch();
+        }, 100);
+    });
+
+    $("#btnSelectCustomer").click(function () {
+        setCustomerValue();
+    });
+    $("#btnProjectSelect").click(function () {
+        setProjectValue();
+    });
+
+    //to open Reassignee button
+    $("#linkReassignee").click(function () {
+        if (IsOwner == true) {
+            if (IsReassigneeClicked == false) {
+                $("#tempPpl").html('');
+                IsReassigneeClicked = true;
+                $("#tempPpl").append('<div id="txtReassignee"></div>');
+                initializePeoplePicker_AssaginTaskTeam("txtReassignee");//For Employee
+                onChangeTask("txtReassignee_TopSpan", "txtReassignee", 'ReassigneeUserBox');
+                var user = '';
+                //EmpIds = [];
+                //multipleEmailAddress = [];
+                //assignUserName = [];
+                for (var j = 0; j < arrAlreadyAssinEmp.length; j++) {
+                    //EmpIds.push(arrAlreadyAssinEmp[j].userId);
+                    //assignUserName.push(arrAlreadyAssinEmp[j].DisplayName);
+                    var tempEmail = arrAlreadyAssinEmp[j].Email;
+                    if (tempEmail.includes('#') == true) {
+                        tempEmail = tempEmail.replace("#ext#@adaptindia.onmicrosoft.com", '');
+                        tempEmail = tempEmail.replace("_", '@');
+                    }
+                    //multipleEmailAddress.push(tempEmail);
+                    user = '';
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+                    user += '<div class="col-sm-6 userBoxParent"><div class="gridbox"><img src="' + attachment + '"><div class="peopleinfo">';
+                    user += '<h5>' + arrAlreadyAssinEmp[j].DisplayName + '</h5><span onclick="OpenEmail(\'' + tempEmail + '\');">' + tempEmail + '</span></div>';
+                    user += '<span class="crosebox" onclick="removeUserBox(this, \'' + tempEmail + '\', \'' + arrAlreadyAssinEmp[j].DisplayName + '\', ' + arrAlreadyAssinEmp[j].userId + ');"><i class="fa fa-times"></i></span></div></div>';
+                    $("#ReassigneeUserBox").append(user);
+                    //SetAndResolvePeoplePicker('txtReassignee', arrAlreadyAssinEmp[j].Email, false); //set People picker in Reassignee popup
+                }
+            }
+            $("#Reassignee-Popup").modal('show');
+        }
+        else {
+            alert("You are not authorized to perform this action.");
+            return false;
+        }
+    });
+
+    $("#btnOkReassign").click(function () {
+        SaveReassignee();
+    });
+
+    SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventManageTaskCreation, "sp.js");
+
+    if (currentTaskItemId == null || TaskAction == "CopyTask") {
+        PageLoadAddTask();
+    }
+
+    $(".SortProject").click(function () {
+        SortProjectTable(this.textContent);
+    });
+    $(".SortPredSucc").click(function () {
+        SortPredSuccTable(this.textContent);
+    });
+
+    $('#createNewTask').click(function () {
+        CreateNewTask();
+    });
+
+    $("#cancelTaskCreation").click(function () {
+        if (IsModal != "true") {
+            var txtProjectID = titanForWork.getQueryStringParameter("ProjectID");
+            var txtCompanyId = Logged_CompanyId;
+            var ProjectName = titanForWork.getQueryStringParameter("ProjectName");
+
+            var url = _spPageContextInfo.webServerRelativeUrl;
+            var redirectedPage = '';
+            if (txtProjectID != '' && txtProjectID != null && txtProjectID != undefined) {
+                redirectedPage = url + "/Pages/ViewProjectDetails.aspx?WebAppId=" + txtCompanyId + "&ProjectID=" + txtProjectID + "&Source=" + window.btoa('Tasks');
+            } else {
+                redirectedPage = url + "/Pages/mydashboard.aspx?WebAppId=" + txtCompanyId + "&Source=" + window.btoa('Tasks') + "&Location=" + TabId;
+            }
+
+            location.href = redirectedPage;
+        }
+        else {
+            var locationPage = $.urlParam('sourceLocation');
+            if (locationPage.includes("Guestportal") == true) {
+                location.href = $.urlParam('sourceLocation');
+            }
+            else {
+                if ($("#ProjectNameDetails :selected").text() == "-Select-") {
+                    location.href = $.urlParam('sourceLocation') + "&ProjectName=" + $("#ProjectName").val();
+                }
+                else {
+                    location.href = $.urlParam('sourceLocation') + "&ProjectName=" + $("#ProjectNameDetails :selected").text();
+                }
+            }
+        }
+    });
+
+    $("#aTaskTeam").click(function () {
+        if (IsModal != "true") { //If not guest user
+            $("#myModal").modal();
+            $("#txtserch").val('');
+            $("#ddlShowUser option").remove();
+            $("#ddlShowUser").append('<option value="2">My Subordinates</option>');
+            $("#ddlShowUser").append('<option value="6">Department</option>');
+            $("#ddlShowUser").append('<option value="7">Guest User</option>');
+            $("#ddlShowUser").append('<option value="8">My group</option>');
+            selectedText = "Having Name Like";
+            $("#lblShowuser").show();
+            $("#txtserchdiv").show();
+            $("#lblDepartment").hide();
+            $("#ddlDepartment").hide();
+            $("#ddlClients").hide();
+            $("#lblShowuser").html('');
+            $("#lblShowuser").append("Name like:");
+            GetGeneralTaskEmps('Onchange');
+        }
+        else {
+            $("#myModal").modal();
+            $("#txtserch").val('');
+            $("#ddlShowUser option").remove();
+            $("#ddlShowUser").append('<option value="2">Guest team members</option>');
+            selectedText = "Having Name Like";
+            $("#lblShowuser").show();
+            $("#txtserchdiv").show();
+            $("#lblDepartment").hide();
+            $("#ddlDepartment").hide();
+            $("#ddlClients").hide();
+            $("#lblShowuser").html('');
+            $("#lblShowuser").append("Name like:");
+            getGuestTeamMembrs('Onchange', true);
+        }
+    });
+
+    $("#aTaskProjectTeam").click(function () {
+        $("#myModal").modal();
+        $("#ddlShowUser option").remove();
+        $("#ddlShowUser").prepend('<option value="1">All Team Members</option>');
+        $("#lblShowuser").hide();
+        $("#txtserchdiv").show();
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlClients").hide();
+        $("#ddlMyGroup").hide();
+        var projectvalue = $("#ProjectName :selected").val();
+        GetProjectTeamMembers(projectvalue, "Onchange");
+        LoadShowUser(TaskusersProjectTeam);
+        $("#txtserch").val('');
+    });
+
+    //MY group Change Name
+    $("#ddlMyGroup").change(function () {
+        if ($("#ddlMyGroup").val() != "0") {
+            getSelectedGroupMembers();
+        }
+        else {
+            LoadShowUser([]);
+        }
+    });
+    $("#ddlShowUser").change(function () {
+        showUserChange(this);
+    });
+
+    $("#AssaginTaskTeam_TopSpan").keyup(function () {
+        console.log('inside OnUserResolvedClientScript');
+        var users = peoplePicker.GetAllUserInfo();
+        for (var i = 0; i < users.length - 1; i++) {
+            if (users[users.length - 1].Key == users[i].Key) {
+                alert("User already exists!!");
+            }
+
+        }
+    });
+    //calling function to see more team members (load 100 at a time)
+    $("#SeeMoreTeam").click(function () {
+        var projectvalue = $("#ProjectName :selected").val();
+        GetProjectTeamMembers(projectvalue, '');
+    });
+    //calling function to see more employee(General Task) (load 100 at a time)
+    $("#SeeMoreGeneral").click(function () {
+        GetGeneralTaskEmps('');
+    });
+
+    $("#SeeMoreDept").click(function () {
+        Departmentfilter('');
+    });
+    $("#SeeMoreGuest").click(function () {
+        getGuestUsers('', $("#ddlClients").val());
+    });
+    $("#txtserch").keyup(function () {
+        SearchAssigneeTable();
+    });
+    $("#btnSuccTasks").click(function () {
+        $("#txtModalTaskHeader").text('Successor Task');
+        PredSuccTaskValidate();
+    });
+    $("#btnPredTasks").click(function () {
+        $("#txtModalTaskHeader").text("Predecessor Task");
+        PredSuccTaskValidate();
+    });
+    $("#btnSelectPredSuccTask").click(function () {
+        SelectSuccPredTask();
+    });
+    $("#btnClearPredSuccTask").click(function () {
+        $(".PredSuccTasks").prop('checked', '');
+    });
+    
+    LoadShowUser(AllTaskUsersEmployeeuser);
+
+    $("#FileUpload").on('change', function () {
+        FinalFiles4Upload = [];
+        var fileNum = this.files.length,
+            initial = 0;
+        $.each(this.files, function (idx, elm) {
+            finalFiles[finalFiles.length] = elm;
+        });
+        RemoveDuplicate = [];
+        var arr = finalFiles.filter(function (el) {
+            if (RemoveDuplicate.indexOf(el.name) == -1) {
+                RemoveDuplicate.push(el.name);
+                return true;
+            }
+            return false;
+        });
+        FinalFiles4Upload = ReinitializeArray(arr);
+        $('#filename').empty();
+        for (initial; initial < FinalFiles4Upload.length; initial++) {
+            $('#filename').append('<div id="file_' + Tcounter + '"><span class="fa-stack fa-lg" style="line-height: 1em; height: 1em;"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i><strong class="fa-stack-1x" style="color:#FFF;display:none; font-size:12px; margin-top:2px;">' + Tcounter + '</strong></span> ' + RemoveDuplicate[initial] + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="removeLine(this.id);" id="file_' + Tcounter + '"" title="remove"></span></div>');
+            Tcounter = Tcounter + 1;
+        }
+    });
+
+    //to hide master page
+    if (IsModal == "true") {
+        $("#s4-bodyContainer .navbar-custom").hide();
+        $(".SideTabMenu").hide();
+        $("#ms-designer-ribbon").hide();
+        $("#masterFooter").hide();
+        $("#Audience").attr("disabled", "disabled");
+        $("#searchCustomer").remove();
+        if (Logged_CompanyId == "" || Logged_CompanyId == null || Logged_CompanyId == "null") {
+            Logged_CompanyId = $.urlParam('WebAppId');
+        }
+        //$("#cancelTaskCreation").remove();
+    }
+    userActivityNotificationEntry(_spPageContextInfo.userId, window.location);
+    //if type is not recursive hide the some control boxes 
+    if (IsTaskRecursive == "Recursive" || IsTaskRecursive == "RecursiveUpdate") {
+        $(".AssignDateHide").remove();
+        $(".CurrentPhaseHide").remove();
+        $(".AttachmentHide").remove();
+        $("#ParentSuccessorTask").remove();
+        $("#ParentPredecessorTask").remove();
+        $('.EndDateRecursive').datepicker();
+        $("#DeleteTask").hide();
+        //$('.EndDateRecursive').datepicker("option", "dateFormat", "dd/mm/yy");
+        //$('.DueDate').datepicker("destroy");
+        $('.StartDateRecursive').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            minDate: 1,
+            onSelect: function (date) {
+                var tempDate = GetDateStandardFormat(moment(date).format('DD/MM/YYYY'));
+                var selectedDate = new Date(tempDate);
+                var msecsInADay = 86400000;
+                var endDate = new Date(selectedDate.getTime() + msecsInADay);
+
+                //Set Minimum Date of EndDatePicker After Selected Date of StartDatePicker
+                $(".EndDateRecursive").datepicker("option", "dateFormat", "MM dd, yy");
+                $(".EndDateRecursive").datepicker("option", "minDate", endDate);
+
+            }
+            //dateFormat: "dd/mm/yy",
+        });
+        $('.StartDateRecursive').datepicker("option", "dateFormat", "MM dd, yy");
+        //
+    }
+    else {
+        $(".RecursiveHide").remove();
+    }
+    $(".LibTreeStruct").click(function () {
+    	if(LibraryTreeBind == false) {
+	    	TreeStructure();
+	        myShareDepartmentCopy();
+	        LibraryTreeBind = true;
+        }
+    });
+});
+
+$.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) { return results = "null"; }
+    else {
+        return results[1] || 0;
+    }
+}
+
+//to make a table of Assign to
+function LoadShowUser(AllTaskUsersEmployeeuser) {
+    //Build Tabulator
+    tabledata = new Tabulator("#example-table", {
+        height: "253px",
+        pagination: "local",
+        paginationSize: 6,
+        layout: "fitColumns",
+        placeholder: "No user found.",
+        data: AllTaskUsersEmployeeuser, //set initial table data
+        columns: [{
+            formatter: "rowSelection",
+            titleFormatter: "rowSelection",
+            align: "center",
+            field: "UserId",
+            width: 15,
+            headerSort: false,
+            cellClick: function (e, cell) {
+                cell.getRow().toggleSelect();
+            }
+        },
+        {
+            title: "Name",
+            field: "FullName",
+            formatter: "html",
+            width: 230,
+            height: 37,
+        },
+        {
+            title: "Designation",
+            field: "Designation",
+            width: 200,
+            align: "left",
+            sorter: "number"
+        },
+        {
+            title: "Department",
+            field: "Department",
+            align: "left",
+            width: 180
+        },
+        {
+            title: "Manager",
+            field: "Manager",
+            align: "left",
+            width: 190
+        },
+        {
+            title: "Email",
+            field: "EMail",
+            width: 283
+        },
+        ],
+    });
+    $("#Rowcount").html("Total Row Count: " + AllTaskUsersEmployeeuser.length)
+}
+
+// Task creation according to project ID
+function getCurrentURL_EventManageTaskCreation() {
+    var txtProjectID = titanForWork.getQueryStringParameter("ProjectID");
+    if (txtProjectID == undefined) {
+        var ProjectNameHTML = '<select name="projectName" id="ProjectNameDetails" class="form-control" disabled=disabled>';
+        ProjectNameHTML += '<option value="0">-Select-</option>';
+        ProjectNameHTML += '</select>';
+        ProjectNameHTML += '<button type="button" class="btn custom-btn ml-8 w-87" id="searchProject"><i class="fa fa-search" aria-hidden="true"></i></button>';
+        $("#ProjectName").append(ProjectNameHTML);
+        $("#searchProject").click(function () {
+            if (IsProjectBind == false) {
+                var dlgTitle = 'Loading Projects...';
+                var dlgMsg = '<br />Please wait!!';
+                var dlgHeight = 200;
+                var dlgWidth = 400;
+                SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+                    currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+                });
+                setTimeout(function () {
+                    ReadDepartment();
+                    loadprojectinsearch();
+                }, 100);
+            }
+            $("#otherProjectSearch").modal('show');
+        });
+
+    } else {
+        BindProjectsForProjectsDashboard();
+        TaskforProjectOnly(txtProjectID, currentTaskItemId);
+        //CheckProjectStatus(txtProjectID);
+        GetAllModule(txtProjectID);
+        
+    }
+    if (TaskAction == "CopyTask") {
+        //GetTaskEmailTemplate(3);
+        getCopiedTaskDetails();
+        GetAllModule(txtProjectID)      //lakhan
+    }
+    else {
+        setDefaultClientMaster();
+    }
+    waitingDialog.hide();
+}
+
+//Read Department for Project list
+function ReadDepartment() {
+    var splittedDeptName = "";
+    var RestQuery = "?$select=ID,Title&$filter=CompanyID eq '" + Logged_CompanyId + "'&$orderby=Title asc";
+    $.when(getItemsWithQueryItem("Departments", RestQuery, "")).done(function (DeptResults) {
+        var items = DeptResults.results;
+        if (items.length > 0) {
+            $("#SelectedItems").text("All");
+            $('#DepartmentsProject').empty();
+            $("#DepartmentsProject").append($("<option></option>").val("All").html("All"));
+            for (i = 0; i < items.length; i++) {
+                if (parseInt(items[i].Title.length) > 34) {
+                    splittedDeptName = items[i].Title.substring(0, 34) + "...";
+                }
+                else {
+                    splittedDeptName = items[i].Title;
+                }
+                $("#DepartmentsProject").append('<option value="' + items[i].Title + '" title="' + items[i].Title + '">' + splittedDeptName + '</option>');
+            }
+            $("#DepartmentsProject").val("All");
+        }
+    });
+}
+
+//get list of projects
+function loadprojectinsearch() {
+    var ProjectsListunique = '';
+    var ProjectsList = [];
+    var tableItemsHTML = '';
+    $("#ProjectTables").empty();
+    var CountProject = 0;
+    var RestQuery = "?$select=*,TeamMember/EMail&$expand=TeamMember&$filter=TeamMember/EMail eq ('" + _spPageContextInfo.userEmail + "') and Status eq 'Active' and TaskPermission eq '1'&$orderby=Modified desc";
+    $.when(getItemsWithQueryItem("ProjectTeamDetails", RestQuery, "")).done(function (ProjResults) {
+        var items = ProjResults.results;
+        for (var x = 0; x < items.length; x++) {
+            ProjectsList.push(items[x].ProjectId);
+        }
+        ProjectsListunique = ProjectsList.filter(function (itm, i, ProjectsList) {
+            return i == ProjectsList.indexOf(itm);
+        });
+    });
+
+    var UserProjectList = [];
+    if (ProjectsListunique.length > 0) {
+        for (var K = 0; K < ProjectsListunique.length; K++) {
+            var PROJID = ProjectsListunique[K];
+            var sTatuS = $('select#StatusProj option:selected').val();
+            var Department = $('select#DepartmentsProject option:selected').val();
+
+            if (sTatuS != "All") {
+                if (Department != "All") {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status eq ('" + sTatuS + "') and DepartmentName eq ('" + Department + "')and ID eq '" + PROJID + "' ";
+                }
+                else {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status eq ('" + sTatuS + "') and ID eq '" + PROJID + "' ";
+                }
+            }
+            else {
+                if (Department != "All") {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=DepartmentName eq ('" + Department + "')and ID eq '" + PROJID + "'";
+                }
+                else {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=ID eq '" + PROJID + "'";
+                }
+            }
+            $.when(getItemsWithQueryItem("ProjectDetails", RestQuery, "")).done(function (ProjDetails) {
+                var items = ProjDetails.results;
+                IsProjectBind = true;
+                if (items.length > 0) {
+                    for (var i = 0; i < items.length; i++) {
+                        var itemId = items[i].ID;
+                        if (items[i].Status == "Live") {
+                            colorCss = "livcolor";
+                        }
+                        else if (items[i].Status == "OnHold") {
+                            colorCss = "holdcolor";
+                        }
+                        else if (items[i].Status == "Completed") {
+                            colorCss = "Completecolor";
+                        }
+                        else {
+                            colorCss = "Terminatedcolor";
+                        }
+                        var ProjectName = items[i].ProjectName;
+                        if (items[i].ProjectName.length > 120) {
+                            ProjectName = ProjectName.substring(0, 120);
+                        }
+                        var ClientName = items[i].ClientID.Title;
+                        if (items[i].ClientID.Title.length > 120) {
+                            ClientName = ClientName.substring(0, 120);
+                        }
+                        var ProjectCode = (items[i].ProjectCode ? items[i].ProjectCode : '');
+                        if (ProjectCode.length > 30) {
+                            ProjectCode = ProjectCode.substring(0, 30);
+                        }
+                        //get Employee Details
+                        CountProject++;
+                        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].ManagerName.EMail);
+                        tableItemsHTML += "<tr><td><input type='radio' class='ProjectchkList' name='TaskListchk' title='" + items[i].ProjectName + "' value='" + itemId + "'></td>";
+                        tableItemsHTML += "<td><p class='pjecname'>" + ProjectName + "</p><span class='spanmg'>Ref:</span><span class='spanmg projectlg'>" + ProjectCode + "</span></td>";
+                        tableItemsHTML += "<td><p class='customernamshow'>" + ClientName + "</p><span class='spanmg'>Status:</span> <span class='spanmg " + colorCss + "'>" + items[i].Status + "</span></td>";
+                        tableItemsHTML += "<td><div class='managersec'><div class='mangimg'><img src=" + attachmentUrl + " alt=''></div><div class='managerdetails'>";
+                        tableItemsHTML += "<h4>" + items[i].ManagerName.Title + "</h4><div class='mailsec'><span onclick='OpenEmail(this)'>" + items[i].ManagerName.EMail + "</span></div>";
+                        tableItemsHTML += "</div></div></td>";
+                        tableItemsHTML += '</tr>';
+                    }
+                }
+            });
+        }
+        $("#ProjectTables").append(tableItemsHTML);
+        if (CountProject == 0) {
+            tableItemsHTML += "<tr><td class='NoRecordFound' colspan='4' style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No record found!!</td></tr>"
+            $("#ProjectTables").append(tableItemsHTML);
+            $("#tablelocation").hide()
+        }
+        else {
+            TableConfigurationProject();
+            $("#tablelocation").show();
+        }
+        $("#TotalItemscountProject").text(CountProject);
+    }
+    if (currentDlgTask != "") {
+        currentDlgTask.close();
+    }
+}
+
+//Table configuration of projects
+function TableConfigurationProject() {
+    sorter = new TINY.table.sorter('sorter', 'TableProjects', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 5,
+        colddid: 'columns',
+        currentid: 'currentpageProj',
+        totalid: 'totalpagesProj',
+        startingrecid: 'startrecord',
+        endingrecid: 'endrecord',
+        totalrecid: 'totalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pagedropdownProject',
+        navid: 'tablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+//Set project value on radio button selection
+function setProjectValue() {
+    if ($('input[name="TaskListchk"]:checked')[0] != null) {
+        $("#ProjectNameDetails").html('');
+        var customerValue = $('input[name="TaskListchk"]:checked')[0].attributes.title.value;
+        var value = '<option value="' + $('input[name="TaskListchk"]:checked').val() + '" Selected>' + customerValue + '</option>';
+        $("#ProjectNameDetails").append(value);
+        $("#otherProjectSearch").modal('hide');
+        //show assign to
+        $("#ProjectTeam").empty();
+        $("#aTaskButton").show();
+        $(".moduleName").show();
+        initializePeoplePicker('AssaginTaskProjectTeam');
+        peoplePickerDiv = $("[id$='AssaginTaskProjectTeam_TopSpan']");
+        var projectvalue = $("#ProjectName :selected").val();
+        onChangeTask("AssaginTaskProjectTeam_TopSpan", "AssaginTaskProjectTeam", "userHTMLBox");
+        getProjectPlanedDate(projectvalue);
+        GetAllModule(projectvalue);
+    }
+}
+
+//get Client master list
+function getClientMaster(array) {
+    var listName = 'ClientMaster';
+    var ClientHTML = '';
+    if (array.length == 0) {
+        if (Audience == 2) {
+            RestQuery = "?$select=*&$filter=IsActive eq 1&$top=5000&$orderby=Title asc";
+        }
+        else {
+            RestQuery = "?$select=SelfCompany,Title,ID,Client_Code,Attn_Name,EmailId,CustType,City,TemplateType,IsActive,Supervisor/Id,Supervisor/Title,SalesPerson/Id,InternalMembers/Title,InternalMembers/Id,InternalSupervisor/Title,InternalSupervisor/Id,SalesPerson/Title&$expand=SalesPerson,Supervisor,InternalSupervisor,InternalMembers&$filter=CompanyID eq '" + Logged_CompanyId + "' and IsActive eq 1&$top=5000&$orderby=Title asc";
+        }
+        $('#mainDivAreaClientmaster').html('');
+        var dfds = $.Deferred();
+        var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ClientMaster')/items/" + RestQuery;
+        $.when(getItems(url, dfds)).done(function (CalientDetails) {
+            response = [];
+            ActiveCustomers = CalientDetails;
+            for (var i = 0; i < CalientDetails.length; i++) {
+
+                var ClientID = CalientDetails[i].ID;
+                var ClientTitle = CalientDetails[i].Title;
+                var selfCompany = CalientDetails[i].SelfCompany;
+                CalientDetails[i].Client_Code = CalientDetails[i].Client_Code ? CalientDetails[i].Client_Code : "";
+                CalientDetails[i].Attn_Name = CalientDetails[i].Attn_Name ? CalientDetails[i].Attn_Name : "";
+                CalientDetails[i].CustType = CalientDetails[i].CustType ? CalientDetails[i].CustType : "";
+                if (selfCompany == true) {
+                    ClientHTML += "<tr><td><label><input type='radio' class='radioCust' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList' checked></label></td>";
+                    ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                    ClientHTML += "<td><span>" + CalientDetails[i].Client_Code + "</span></td><td><span>" + CalientDetails[i].Attn_Name + "</span></td><td><span>" + CalientDetails[i].CustType + "</span></td></tr>";
+                }
+                else {
+                    ClientHTML += "<tr><td><label><input type='radio' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList'></label></td>";
+                    ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                    ClientHTML += "<td><span>" + CalientDetails[i].Client_Code + "</span></td><td><span>" + CalientDetails[i].Attn_Name + "</span></td><td><span>" + CalientDetails[i].CustType + "</span></td></tr>";
+                }
+            }
+            $('#mainDivAreaClientmaster').append(ClientHTML);
+            GenerateTableMyCustomerList();
+            IsCustomerBind = true;
+        });
+    }
+    else {
+        $('#mainDivAreaClientmaster').html('');
+        for (var i = 0; i < array.length; i++) {
+            var ClientID = array[i].ID;
+            var ClientTitle = array[i].Title;
+            var selfCompany = array[i].SelfCompany;
+            if (selfCompany == true) {
+                ClientHTML += "<tr><td><label><input type='radio' class='radioCust' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList' checked></label></td>";
+                ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                ClientHTML += "<td><span>" + array[i].Client_Code + "</span></td><td><span>" + array[i].Attn_Name + "</span></td><td><span>" + array[i].CustType + "</span></td></tr>";
+            }
+            else {
+                ClientHTML += "<tr><td><label><input type='radio' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList'></label></td>";
+                ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                ClientHTML += "<td><span>" + array[i].Client_Code + "</span></td><td><span>" + array[i].Attn_Name + "</span></td><td><span>" + array[i].CustType + "</span></td></tr>";
+            }
+        }
+        $('#mainDivAreaClientmaster').append(ClientHTML);
+        GenerateTableMyCustomerList();
+    }
+}
+
+//get All clients - Active and Inactive
+function getClientMasterInActive(array) {
+    var listName = 'ClientMaster';
+    var ClientHTML = '';
+    if (array.length == 0) {
+        if (Audience == 2) {
+            RestQuery = "?$select=*&$filter=IsActive eq 0&$top=5000&$orderby=Title asc";
+        }
+        else {
+            RestQuery = "?$select=SelfCompany,Title,ID,Client_Code,Attn_Name,EmailId,CustType,City,TemplateType,IsActive,Supervisor/Id,Supervisor/Title,SalesPerson/Id,InternalMembers/Title,InternalMembers/Id,InternalSupervisor/Title,InternalSupervisor/Id,SalesPerson/Title&$expand=SalesPerson,Supervisor,InternalSupervisor,InternalMembers&$filter=CompanyID eq '" + Logged_CompanyId + "' and IsActive eq 0&$top=5000&$orderby=Title asc";
+        }
+        $('#mainDivAreaClientmaster').html('');
+        var dfds = $.Deferred();
+        var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ClientMaster')/items/" + RestQuery;
+        $.when(getItems(url, dfds)).done(function (CalientDetails) {
+            response = [];
+            InactiveCustomers = CalientDetails;
+            for (var i = 0; i < CalientDetails.length; i++) {
+
+                var ClientID = CalientDetails[i].ID;
+                var ClientTitle = CalientDetails[i].Title;
+                var selfCompany = CalientDetails[i].SelfCompany;
+                if (selfCompany == true) {
+                    ClientHTML += "<tr><td><label><input type='radio' class='radioCust' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList' checked></label></td>";
+                    ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                    ClientHTML += "<td><span>" + CalientDetails[i].Client_Code + "</span></td><td><span>" + CalientDetails[i].Attn_Name + "</span></td><td><span>" + CalientDetails[i].CustType + "</span></td></tr>";
+                }
+                else {
+                    ClientHTML += "<tr><td><label><input type='radio' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList'></label></td>";
+                    ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                    ClientHTML += "<td><span>" + CalientDetails[i].Client_Code + "</span></td><td><span>" + CalientDetails[i].Attn_Name + "</span></td><td><span>" + CalientDetails[i].CustType + "</span></td></tr>";
+                }
+            }
+            $('#mainDivAreaClientmaster').append(ClientHTML);
+            GenerateTableMyCustomerList();
+            IsCustomerBind = true;
+        });
+    }
+    else {
+        $('#mainDivAreaClientmaster').html('');
+        for (var i = 0; i < array.length; i++) {
+            var ClientID = array[i].ID;
+            var ClientTitle = array[i].Title;
+            var selfCompany = array[i].SelfCompany;
+            if (selfCompany == true) {
+                ClientHTML += "<tr><td><label><input type='radio' class='radioCust' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList' checked></label></td>";
+                ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                ClientHTML += "<td><span>" + array[i].Client_Code + "</span></td><td><span>" + array[i].Attn_Name + "</span></td><td><span>" + array[i].CustType + "</span></td></tr>";
+            }
+            else {
+                ClientHTML += "<tr><td><label><input type='radio' name='Customer' title='" + ClientTitle + "' value='" + ClientID + "' class='CustomerchkList'></label></td>";
+                ClientHTML += "<td><span>" + ClientTitle + "</span></td><td style='display:none;'><span>" + ClientID + "</span></td>";
+                ClientHTML += "<td><span>" + array[i].Client_Code + "</span></td><td><span>" + array[i].Attn_Name + "</span></td><td><span>" + array[i].CustType + "</span></td></tr>";
+            }
+        }
+        $('#mainDivAreaClientmaster').append(ClientHTML);
+        GenerateTableMyCustomerList();
+    }
+}
+
+////Set customer value on radio button selection
+function setCustomerValue() {
+    $("#categoryType").html('');
+    var customerValue = $('input[name="Customer"]:checked')[0].attributes.title.value;
+    var value = '<option value="' + $('input[name="Customer"]:checked').val() + '" Selected>' + customerValue + '</option>';
+    $("#categoryType").append(value);
+    $("#otherCustomerSearch").modal('hide');
+}
+
+//set Default value of customer
+function setDefaultClientMaster() {
+    var listName = 'ClientMaster';
+    var ClientHTML = '';
+    if (Audience == 2) {
+        RestQuery = "?$select=*&$filter=IsActive eq 1 and SelfCompany eq 1&$top=5000";
+    }
+    else {
+        RestQuery = "?$select=SelfCompany,Title,ID,Client_Code,Attn_Name,EmailId,CustType,City,TemplateType,IsActive,Supervisor/Id,Supervisor/Title,SalesPerson/Id,InternalMembers/Title,InternalMembers/Id,InternalSupervisor/Title,InternalSupervisor/Id,SalesPerson/Title&$expand=SalesPerson,Supervisor,InternalSupervisor,InternalMembers&$filter=CompanyID eq '" + Logged_CompanyId + "' and IsActive eq 1 and SelfCompany eq 1&$top=5000";
+    }
+    $('#mainDivAreaClientmaster').html('');
+
+    var dfds = $.Deferred();
+    var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ClientMaster')/items/" + RestQuery;
+    $.when(getItems(url, dfds)).done(function (CalientDetails) {
+        response = [];
+        if (CalientDetails.length > 0) {
+            var ClientID = CalientDetails[0].ID;
+            var ClientTitle = CalientDetails[0].Title;
+            $("#categoryType").html('');
+            var value = '<option value="' + ClientID + '" Selected>' + ClientTitle + '</option>';
+            $("#categoryType").append(value);
+        }
+    });
+}
+
+//Table configuration of customers
+function GenerateTableMyCustomerList() {
+    sorterTableCustomerList = new TINY.table.sorter('sorterTableCustomerList', 'TempTableClientMaster', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 5,
+        // colddid: 'columnsMyCustomer',
+        currentid: 'currentpageMyCustomer',
+        totalid: 'totalpagesMyCustomer',
+        startingrecid: 'startrecordMyCustomer',
+        endingrecid: 'endrecordMyCustomer',
+        totalrecid: 'totalrecordsMyCustomer',
+        hoverid: 'selectedrowMyCustomer',
+        pageddid: 'pagedropdownMyCustomer',
+        navid: 'tablenavMyCustomer',
+        //sortcolumn: 1,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+//get all worktype list and bind
+function getWorkType() {
+    var txtCompanyId = Logged_CompanyId;
+    var listName = 'CategoryMaster';
+    var txtCompanyId = Logged_CompanyId
+    //debugger;
+    RestQuery = "?$select=*&$filter=CategoryType eq 'Work Type' and Status eq 'Yes'&$orderby= CatogeryName asc";
+    $.when(CommonFunction.getItemsWithQueryItem("CategoryMaster", RestQuery)).done(function (CategoryDetails) {
+        var CategoryHTML = '<select name="CategogryType" id="category" class="form-control">';
+        CategoryHTML += '<option value="0">-Select-</option>';
+
+        for (var i = 0; i < CategoryDetails.results.length; i++) {
+
+            var CategoryID = CategoryDetails.results[i].ID;
+            var Category = CategoryDetails.results[i].CatogeryName;
+            CategoryHTML += '<option value="' + Category + '">' + Category + '</option>';
+        }
+        CategoryHTML += '</select>';
+        $("#WorkType").append(CategoryHTML);
+    });
+}
+
+
+function TaskforProjectOnly(txtProjectID, TaskId) {
+    initializePeoplePicker('AssaginTaskProjectTeam');
+    onChangeTask('AssaginTaskProjectTeam_TopSpan', 'AssaginTaskProjectTeam', 'userHTMLBox');
+    peoplePickerDiv = $("[id$='AssaginTaskProjectTeam_TopSpan']");
+
+    $('#TaskType option[value="1"]').attr('selected', 'selected');
+    $('#TaskType').attr("disabled", true);
+    $('#ProjectName').attr("disabled", true);
+    $(".projectName").show();
+    $('#ProjectName').find('select#ProjectNameDetails option[value="' + txtProjectID + '"]').attr('selected', 'selected');
+    $('#ProjectNameDetails').attr("disabled", true);
+	if(TaskId == "" || TaskId == "null" || TaskId == null) {
+	    $('.StartDate').datepicker("destroy");
+	    $('.DueDate').datepicker("destroy");
+	    $('.StartDate').datepicker({
+	        changeMonth: true,
+	        changeYear: true,
+	        yearRange: "-50:+50"
+	    });
+	    $('.StartDate').datepicker("option", "dateFormat", "MM dd, yy");
+	
+	    $('.DueDate').datepicker({
+	        changeMonth: true,
+	        changeYear: true,
+	        yearRange: "-50:+50"
+	    });
+	    $('.DueDate').datepicker("option", "dateFormat", "MM dd, yy");
+	
+	
+	    $('.StartDate').datepicker("setDate", new Date());
+	}
+
+    var projectvalue = $("#ProjectName :selected").val();
+    if (TaskId != undefined) {
+        $(".ProjectTeam").hide();
+        $(".IntimateProjectTeam").hide();
+    } else {
+        $("#aTaskButton").show();
+        $(".ProjectTeam").show();
+        //$(".IntimateProjectTeam").show();
+        $(".IntimateProjectTeam").hide(); //hide
+
+    }
+    getProjectPlanedDate(txtProjectID);
+}
+
+//get metadata of copied task
+function getCopiedTaskDetails() {
+    var RestQuery = "?$select=*,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles&$top=5000&$expand=AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=ID eq '" + currentTaskItemId + "'";
+    $.when(getItemsWithQueryItem("EmployeeTaskDetails", RestQuery, "")).done(function (TaskResults) {
+        var items = TaskResults.results;
+        //getWorkType();
+        $("#TaskName").val("Copy of " + items[0].Title);
+        $("#TaskType").val(items[0].TaskType);
+        $("#TaskType").trigger("change");
+        $('#category').val(items[0].Worktype);
+        if ($("#TaskType").val() == "2") {
+            var PeoplePickId = "AssaginTaskTeam";
+            $("#categoryType").empty();
+            var value = '<option value="' + items[0].ClientID.ID + '" Selected>' + items[0].ClientID.Title + '</option>';
+            $("#categoryType").append(value);
+        }
+        else {
+            var PeoplePickId = "AssaginTaskProjectTeam";
+            $("#ProjectNameDetails").empty();
+            var value = '<option value="' + items[0].ProjectIDId + '" Selected>' + items[0].ProjectFullName + '</option>';
+            $("#ProjectNameDetails").append(value);
+            //show assign to
+            $("#ProjectTeam").empty();
+            $("#aTaskButton").show();
+            $(".moduleName").show();
+            initializePeoplePicker('AssaginTaskProjectTeam');
+            peoplePickerDiv = $("[id$='AssaginTaskProjectTeam_TopSpan']");
+            var projectvalue = $("#ProjectName :selected").val();
+            getProjectPlanedDate(projectvalue);
+            GetAllModule(projectvalue);
+            $("#projectModule").val(items[0].ModuleId);
+        }
+        var user = '';
+        for (var usr = 0; usr < items[0].TaskAssignTo.results.length; usr++) {
+            $(".peoplepickerbox").show();
+            EmpIds.push(items[0].TaskAssignTo.results[usr].Id);
+            multipleEmailAddress.push(items[0].TaskAssignTo.results[usr].EMail.toLowerCase());
+            assignUserName.push(items[0].TaskAssignTo.results[usr].Title);
+            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].TaskAssignTo.results[usr].EMail);
+            user += '<div class="col-md-6 userBoxParent"><div class="gridbox"><img src="' + attachment + '"><div class="peopleinfo">';
+            user += '<h5>' + items[0].TaskAssignTo.results[usr].Title + '</h5><span onclick="OpenEmail(\'' + items[0].TaskAssignTo.results[usr].EMail + '\');">' + items[0].TaskAssignTo.results[usr].EMail + '</span></div>';
+            user += '<span class="crosebox" onclick="removeUserBox(this, \'' + items[0].TaskAssignTo.results[usr].EMail + '\', \'' + items[0].TaskAssignTo.results[usr].Title + '\', ' + items[0].TaskAssignTo.results[usr].Id + ');"><i class="fa fa-times"></i></span></div></div>';
+            //SetAndResolvePeoplePicker(PeoplePickId, items[0].TaskAssignTo.results[usr].EMail, false);
+        }
+        $("#userHTMLBox").append(user);
+        $("#comment").val(items[0].Description);
+        var FinalStartDate = new Date();
+        FinalStartDate = $.datepicker.formatDate('MM dd, yy', FinalStartDate);
+        $('.StartDate').val(FinalStartDate);
+        //var FinalDueDate = new Date(items[0].DueDate);
+        //FinalDueDate = $.datepicker.formatDate('dd/mm/yy', FinalDueDate);
+        //$('.DueDate').val(FinalDueDate);
+        $("#Priority").val(items[0].TaskPriority);
+        $("#TaskDistribution").val(items[0].Distribution);
+        if (items[0].ReferenceLink != null) {
+            $("#RefURL").val(items[0].ReferenceLink.Url ? items[0].ReferenceLink.Url : "");
+        }
+        onChangeTask('AssaginTaskProjectTeam_TopSpan', 'AssaginTaskProjectTeam', 'userHTMLBox');
+    });
+}
+
+//check if any assignee filled the timesheet
+function checkProjTimeSheet() {
+    IsCheck = false;
+    var RestQuery = "?$select=TaskID/Id,Employee/EMail&$expand=TaskID,Employee&$filter=TaskID/Id eq '" + currentTaskItemId + "' ";
+    $.when(getItemsWithQueryItem("EmpTimeSheet", RestQuery, "")).done(function (TimeSheetResults) {
+        if (TimeSheetResults.results.length > 0) {
+            IsCheck = true;
+        }
+    });
+    return IsCheck;
+}
+
+//set name in People picker
+function SetAndResolvePeoplePicker(controlNameID, LoginNameOrEmail, peoplePickerDisable) {
+    var peoplePickerDiv = $("[id^='" + controlNameID + "']");
+    // Get the people picker object from the page.
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[1].id];
+    peoplePicker.AddUserKeys(LoginNameOrEmail);
+    if (peoplePickerDisable == true) {
+        $('#' + controlNameID + '_TopSpan_EditorInput').attr('disabled', true);
+        $('.sp-peoplepicker-delImage').hide();
+    }
+}
+
+//get userName by user ID
+function getUserName(createdBy) {
+    var items = '';
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + createdBy + ")";
+    $.ajax({
+        url: siteURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            items = data.d.Title;
+        },
+        eror: function (data) {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+    return items;
+}
+
+
+function BindProjectsForProjectsDashboard() {
+    var projectID = titanForWork.getQueryStringParameter("ProjectID");
+    RestQuery = "?$select=*,ID,ProjectName&$filter=ID eq '" + projectID + "'&$orderby = Title asc";
+    $.when(getItemsWithQueryItem("ProjectDetails", RestQuery, "")).done(function (ProjResults) {
+        var items = ProjResults.results;
+
+        if (items.length > 0) {
+            var ProjectNameHTML = '<select name="projectName" id="ProjectNameDetails" class="form-control">';
+            ProjectNameHTML += '<option value="0">-Select-</option>';
+            var projectStatus = items[0]['Status'];
+            if (projectStatus != "Live") {
+                $("#createNewTask").hide();
+                $(".CompletionDate").attr('disabled', 'disabled');
+                $("#ProjectCurrentPhase").attr('disabled', 'disabled');
+            }
+            for (i = 0; i < items.length; i++) {
+                var ProjectID = items[i].ID;
+                var ProjectName = items[i].ProjectName;
+                ProjectNameHTML += '<option value="' + ProjectID + '">' + ProjectName + '</option>';
+            }
+            ProjectNameHTML += '</select>';
+            $("#ProjectName").html('');
+            $("#ProjectName").append(ProjectNameHTML);
+            
+        }
+    });
+}
+
+//get team members of selected project
+function GetProjectTeamMembers(ProjectId, Action) {
+    var totalTeamUsers = 0;
+    $("#SeeMoreGeneral").hide();
+    $("#SeeMoreDept").hide();
+    $("#SeeMoreGuest").hide();
+    $(".ProjectSeeView").show();
+    $("#SeeMoreGuestTeam").hide();
+    if (Action == "Onchange") {
+        Taskusers = [];
+        TaskusersProjectTeam = [];
+        RestQuery = "?$select=*,TeamMember/Id,TeamMember/Name,TeamMember/Title,TeamMember/EMail&$expand=TeamMember&$top=100&$filter= Status eq 'Active' and ProjectId eq '" + ProjectId + "'&$orderby = Title asc ";
+        var dfds = $.Deferred();
+        url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProjectTeamDetails')/items/" + RestQuery;
+        $.when(getItems(url, dfds)).done(function (EmpResults) {
+            response = [];
+            if (EmpResults.length > 0) {
+                totalTeamUsers = EmpResults.length;
+            }
+            $("#TotalProject").text(totalTeamUsers);
+        });
+    }
+    else {
+        if (NextURLProject != null) {
+            var RestQuery = "?" + NextURLProject.split('?')[1];
+        }
+        else {
+            $(".ProjectSeeView").hide();
+            return;
+        }
+    }
+    $.when(getItemsWithQueryItem("ProjectTeamDetails", RestQuery, "Project")).done(function (ProjectTeamDetails) {
+        var TeamMembers;
+        IsNotTeamMember = "";
+
+        if (NextURLProject == null) {
+            $(".ProjectSeeView").hide();
+        }
+
+        for (var i = 0; i < ProjectTeamDetails.results.length; i++) {
+            TeamMembers = checkUserValid(ProjectTeamDetails.results[i].TeamMember.EMail);
+            if (TeamMembers.length == 0) {
+                IsNotTeamMember += ProjectTeamDetails.results[i].TeamMember.Title + ",";
+                IsCheckUser = true;
+            } else {
+                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TeamMembers[0].EMail);
+                var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + TeamMembers[0].FullName + '</span></div>';
+                TaskusersProjectTeam.push({
+                    'UserId': TeamMembers[0].EmployeeID,
+                    'EMail': TeamMembers[0].EMail,
+                    'LoginName': TeamMembers[0].FullName,
+                    'Designation': TeamMembers[0].Designation,
+                    'Manager': TeamMembers[0].Manager,
+                    'DepartmentId': TeamMembers[0].DepartmentId,
+                    'Department': TeamMembers[0].Department,
+                    'FullName': FullAttachmentURL,
+                    'CompanyID': TeamMembers[0].CompanyID,
+                    'EmployeeID': TeamMembers[0].EmployeeID,
+                    'Skill': ""
+                })
+            }
+        }
+
+        LoadShowUser(TaskusersProjectTeam);
+
+        if (Action == "") {
+            totalTeamUsers = TaskusersProjectTeam.length;
+        }
+
+        //Showing data out of total
+        if (totalTeamUsers > 100 && NextURLProject != null) {
+            $("#Rowcount").hide();
+            $("#ShowProject").show();
+            $(".ProjectSeeView").show();
+            $("#DiplayProject").text(TaskusersProjectTeam.length);
+        }
+        else {
+            $("#Rowcount").show();
+            $("#ShowProject").hide();
+            $(".ProjectSeeView").hide();
+        }
+
+        if (IsCheckUser) {
+            IsCheckUser = false;
+            if (IsNotTeamMember[IsNotTeamMember.length - 1] == ",") {
+                IsNotTeamMember = IsNotTeamMember.replace(',', ' ');
+            }
+            IsNotTeamMember += "is not a valid user.";
+            alert(IsNotTeamMember);
+        }
+    });
+}
+
+//check if user id valid or not - Internal and External both
+function checkUserValid(Email) {
+    var userValid = [];
+    var txtCompanyId = Logged_CompanyId;//Logged_CompanyId
+    if (Audience == 2) {
+        RestQuery = "?$select=*,AttachmentFiles,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company &$filter= Status eq 'Active' and (LogonName/EMail eq '" + Email + "' or Email eq '" + Email + "')&$top=5000";
+    } else {
+        RestQuery = "?$select=*,AttachmentFiles,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company &$filter= Status eq 'Active' and Company/ID eq '" + txtCompanyId + "' and (LogonName/EMail eq '" + Email + "' or Email eq '" + Email + "')&$top=5000";
+    }
+    dfds = $.Deferred(),
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + RestQuery;
+    $.when(getItems(url, dfds)).done(function (Employees) {
+        try {
+            response = [];
+            if (Employees.length > 0) {
+                for (k = 0; k < Employees.length; k++) {
+                    userValid.push({
+                        EMail: Employees[0].Email,
+                        //LoginName: Employees[0].LoginName,
+                        Designation: Employees[0].Designation ? Employees[0].Designation : "N/A",
+                        Manager: Employees[0].Manager,
+                        DepartmentId: Employees[0].DepartmentId ? Employees[0].DepartmentId : "N/A",
+                        Department: Employees[0].Department.DepartmentName ? Employees[0].Department.DepartmentName : "N/A",
+                        FullName: Employees[0].FullName,
+                        CompanyID: Employees[0].Company.ID,
+                        EmployeeID: Employees[0].LogonName.Id,
+                        Skill: "",
+                        AttachmentFiles: Employees[0].AttachmentFiles
+                    });
+                }
+            }
+            else {
+                //Check in External Users list
+                var Query = "?$select=*,AttachmentFiles,LoginName/EMail,LoginName/Title,LoginName/Id,Supervisor/Title,Designation,Client_Name/Title,Client_Name/Id&$expand=AttachmentFiles,LoginName,Client_Name,Supervisor&$filter=LoginName/EMail eq '" + Email + "' or email eq '" + Email + "'&$top=5000";
+                dfds = $.Deferred();
+                url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+                $.when(getItems(url, dfds)).done(function (ExtResults) {
+                    response = [];
+                    if (ExtResults.length > 0) {
+                        userValid.push({
+                            EMail: ExtResults[0].LoginName.EMail,
+                            //LoginName: Employees[0].LoginName,
+                            Designation: ExtResults[0].Designation ? ExtResults[0].Designation : "N/A",
+                            Manager: ExtResults[0].Supervisor.Title,
+                            DepartmentId: "",
+                            Department: "",
+                            FullName: ExtResults[0].LoginName.Title,
+                            CompanyID: Logged_CompanyId,
+                            EmployeeID: ExtResults[0].LoginName.Id,
+                            Skill: "",
+                            AttachmentFiles: ExtResults[0].AttachmentFiles
+                        });
+                    }
+                });
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+    return userValid;
+}
+
+
+//get client name 
+function getClientNames() {
+    $("#SeeMoreGeneral").hide();
+    $("#SeeMoreDept").hide();
+    $("#SeeMoreGuest").show();
+    $(".ProjectSeeView").hide();
+    $("#SeeMoreGuestTeam").hide();
+    $("#SeeMoreGuest").hide();
+    var RestQuery = "?$select=*,InternalSupervisor/EMail,InternalMembers/EMail&$expand=InternalMembers,InternalSupervisor&$top=5000&$filter=(InternalSupervisor/EMail eq '" + _spPageContextInfo.userEmail + "' or InternalMembers/EMail eq '" + _spPageContextInfo.userEmail + "') and IsActive eq 1&$orderby = Title asc ",
+        dfds = $.Deferred(),
+        Client = '';
+    $.when(getItemsWithQueryItem("ClientMaster", RestQuery, "")).done(function (ClientName) {
+        Client += "<option value=\"0\">-dropdown of clients-</option>"
+        $.each(ClientName.results, function (i, item) {
+            var ID = item.Id;
+            var ClientTitle = item.Title;
+            Client += "<option value=\"" + ID + "\">" + ClientTitle + "</option>";
+        });
+        $("#ddlClients").html('');
+        $("#ddlClients").append(Client);
+    });
+}
+
+
+
+
+//get guest users list
+function getGuestUsers(Action, ClientID) {
+    var totalTeamUsers = 0;
+    if (Action == "Onchange") {
+        RestQuery = "?$select=*,AttachmentFiles,InternalStakeholders/EMail,Supervisor/EMail,Supervisor/Title,Client_Name/Title,Client_Name/Id,LoginName/Title&$expand=AttachmentFiles,InternalStakeholders,LoginName,Supervisor,Client_Name&$top=100&$filter=Client_Name/Id eq '" + ClientID + "' and Status eq 'Active'&$orderby = Title asc ";
+        var AllQuery = "?$select=*,AttachmentFiles,InternalStakeholders/EMail,Supervisor/EMail,Supervisor/Title,Client_Name/Title,Client_Name/Id,LoginName/Title&$expand=AttachmentFiles,InternalStakeholders,LoginName,Supervisor,Client_Name&$top=100&$filter=Client_Name/Id eq '" + ClientID + "' and Status eq 'Active'&$orderby = Title asc ";
+        TaskusersProjectTeam = [];
+        var dfds = $.Deferred(),
+    	url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + AllQuery;
+        $.when(getItems(url, dfds)).done(function (EmpResults) {
+            response = [];
+            if (EmpResults.length > 0) {
+                totalTeamUsers = EmpResults.length;
+            }
+            $("#TotalProject").text(totalTeamUsers);
+        });
+    }
+    else {
+        if (NextUrlGuest != null) {
+            var RestQuery = "?" + NextUrlGuest.split('?')[1];
+        }
+        else {
+            $("#SeeMoreGuest").hide();
+            return;
+        }
+    }
+
+    $.when(getItemsWithQueryItem("ExternalUsers", RestQuery, "GuestTask")).done(function (ProjectTeamDetails) {
+        var Exrernal = '';
+        IsNotExrernal = "";
+
+        if (NextUrlGuest == null) {
+            $("#SeeMoreGuest").hide();
+        }
+        for (var i = 0; i < ProjectTeamDetails.results.length; i++) {
+            Exrernal = ProjectTeamDetails.results;
+            if (Exrernal[i].AttachmentFiles.results.length > 0) {
+                var employeePicURL = Exrernal[i].AttachmentFiles.results[0].ServerRelativeUrl;
+            }
+            else {
+                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Exrernal[i].email)
+            }
+            TaskusersProjectTeam.push({
+                'UserId': Exrernal[i].LoginNameId,
+                'EMail': Exrernal[i].email,
+                'LoginName': Exrernal[i].LoginName.Title,
+                'Designation': Exrernal[i].Designation ? Exrernal[i].Designation : "NA",
+                'Manager': Exrernal[i].Supervisor.Title,
+                'DepartmentId': Exrernal[i].DepartmentId,
+                'Department': Exrernal[i].Department,
+                'FullName': '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + Exrernal[i].LoginName.Title + '</span></div>', //Exrernal[i].FullName,
+                'CompanyID': Exrernal[i].CompanyID,
+                'EmployeeID': Exrernal[i].EmployeeID,
+                'Skill': Exrernal[i].Skill ? Exrernal[i].Skill : "NA"
+            })
+        }
+        LoadShowUser(TaskusersProjectTeam);
+        if (Action == "") {
+            totalTeamUsers = TaskusersProjectTeam.length;
+        }
+        //Showing data out of total
+        if (totalTeamUsers > 100 && NextUrlDept != null) {
+            $("#Rowcount").hide();
+            $("#ShowProject").show();
+            $("#SeeMoreGuest").show();
+            $("#DiplayProject").text(TaskusersProjectTeam.length);
+
+        }
+        else {
+            $("#Rowcount").show();
+            $("#ShowProject").hide();
+            $("#SeeMoreGuest").hide();
+        }
+
+        if (IsCheckUser) {
+            IsCheckUser = false;
+            IsNotExrernal += "is not a valid user";
+            alert(IsNotExrernal);
+        }
+    });
+}
+
+//get project planned date by ID 
+function getProjectPlanedDate(projectvalue) {
+    var RestQuery = "?$select=*&$filter=ID eq '" + projectvalue + "'";
+    $.when(getItemsWithQueryItem("ProjectDetails", RestQuery, "")).done(function (ProjectDetails) {
+        var items = ProjectDetails.results;
+        var PlanedStartDateGlobal1 = new Date(items[0].PlanedStartDate);
+        var PlanedEndDateGlobal1 = new Date(items[0].PlanedEndDate);
+    });
+}
+
+//save Task in SP list
+function saveEmployeeTask() {
+    var validation = false;
+    var cutomervalidate = false;
+    var ProjectNameDetails = '';
+    var ProjectFullName = '';
+    var TaskAssignTo = new Array();
+    var TaskManager = new Array();
+    var completionInPersent = '';
+    var cutsomer = '';
+    var txtCompanyId = Logged_CompanyId
+
+    var TaskName = $('#TaskName').val();
+    if (TaskName == '') {
+        validation = true;
+    }
+
+    var TaskType = $('#TaskType').val();
+    if (TaskType == 0) {
+        validation = true;
+    }
+    var Discription = $('#comment').val();
+    var DoesNotexietuser = "";
+    var IsTrue = false;
+    for (var j = 0; j < multipleEmailAddress.length; j++) {
+        var arrSubVisaLetters = checkUserValid(multipleEmailAddress[j]);
+
+        if (arrSubVisaLetters.length == 0) {
+            for (k = 0; k < GuestUser.length; k++) {
+                if (GuestUser[k].email.toLowerCase() == multipleEmailAddress[j].toLowerCase()) {
+                    TaskAssignTo.push(GuestUser[k].LoginNameId)
+                }
+            }
+        }
+        else {
+            TaskAssignTo.push(arrSubVisaLetters[0].EmployeeID);
+        }
+    }
+    if (TaskType == 1) {
+        ProjectNameDetails = $('#ProjectName').find('#ProjectNameDetails').val(); //$(this).find('.ddlGeneralInfo_TypeOfProgram').val();
+        ProjectFullName = $('#ProjectName').find("select#ProjectNameDetails option:selected").text();
+
+        if (ProjectNameDetails == 0 || TaskAssignTo.length == 0) {
+            validation = true;
+        }
+        RestQuery = "?$Select=*,ClientID/ID,ClientID/Title&$expand=ClientID/ID&$filter=ID eq '" + ProjectNameDetails + "'";
+        $.when(CommonFunction.getItemsWithQueryItem("ProjectDetails", RestQuery)).done(function (ProjectDetails) {
+            cutsomer = ProjectDetails.results[0].ClientIDId;
+            if (cutsomer == null) {
+                validation = true;
+                cutomervalidate = true;
+            }
+        })
+    } else if (TaskType == 2) {
+
+        if (TaskAssignTo.length == 0) {
+            validation = true;
+        }
+        // cutsomer = $('#clientName').val()
+        cutsomer = $('#categoryType').val()
+        if (cutsomer == 0) {
+            validation = true;
+        }
+    }
+
+    var StartDate = $('.StartDate').val();
+    if (StartDate == '') {
+        validation = true;
+    }
+    var FinalStartDate = "";
+    if (StartDate != null && StartDate != "") {
+        FinalStartDate = GetDateStandardFormat(moment(StartDate).format('DD/MM/YYYY'));
+    }
+    var Module = $('#projectModule').val(); //$('#projectModule option:selected' ).text()
+    if (Module == '') {
+
+    }
+    var Worktype = $('#category').val();
+    if (Worktype == 0) {
+        validation = true;
+    }
+
+    var DueDate = $('.DueDate').val();
+    if (DueDate == '') {
+        validation = true;
+    }
+    var FinalDueDate = "";
+    if (DueDate != null && DueDate != "") {
+        FinalDueDate = GetDateStandardFormat(moment(DueDate).format('DD/MM/YYYY'));
+    }
+    var Priority = $('#Priority').val();
+
+    var CompletionDate = $('.CompletionDate').val();
+    var FinalCompletionDate = "";
+    if (CompletionDate < StartDate) {
+        alert('Completion Date should not be less then Assign Date.');
+    }
+    else {
+        if (CompletionDate != null && CompletionDate != "") {
+            FinalCompletionDate = GetDateStandardFormat(moment(CompletionDate).format('DD/MM/YYYY'));
+        }
+    }
+    var Distribution = $('#TaskDistribution').val();
+    var ProjectCurrentPhase = $('#ProjectCurrentPhase').val();
+    if (FinalDueDate >= FinalStartDate && validation == false) {
+        if (Distribution == 'Individual') {
+            for (i = 0; i < TaskAssignTo.length; i++) {
+
+                var taskAssignTo = new Array();
+                taskAssignTo.push(TaskAssignTo[i]);
+                AddNewTak("EmployeeTaskDetails", TaskName, TaskType, Discription, cutsomer, Module, Worktype, FinalStartDate, FinalDueDate, completionInPersent, ProjectCurrentPhase, ProjectNameDetails, ProjectFullName, taskAssignTo, Priority, txtCompanyId, Distribution, TaskAssignTo.length, i);
+            }
+        } else if (Distribution == 'Consolidated') {
+            AddNewTak("EmployeeTaskDetails", TaskName, TaskType, Discription, cutsomer, Module, Worktype, FinalStartDate, FinalDueDate, completionInPersent, ProjectCurrentPhase, ProjectNameDetails, ProjectFullName, TaskAssignTo, Priority, txtCompanyId, Distribution, '', '');
+        }
+
+    } else if (validation == true) {
+        if (validation == true && cutomervalidate == true) {
+            alert("This Project does not defined with any Client.\n Please update this Project with a valid Client first.");
+            currentDlgTask.close();
+        }
+        else {
+            alert("Please fill all mandatory field.");
+            currentDlgTask.close();
+        }
+    }
+    else {
+        alert("Due Date can not less than Start Date");
+        currentDlgTask.close();
+    }
+}
+
+//colled metadata for task
+function AddNewTak(ListName, TaskName, TaskType, Discription, cutsomer, Module, Worktype, FinalStartDate, FinalDueDate, completionInPersent, ProjectCurrentPhase, ProjectNameDetails, ProjectFullName, TaskAssignTo, Priority, txtCompanyId, Distribution, TotalUsers, currentIndex) {
+    try {
+        var Metadata;
+        var arrDays = [];
+        if (IsTaskRecursive == "Recursive" || IsTaskRecursive == "RecursiveUpdate") {
+            ListName = 'RecurringTaskSetup';
+            $boxes = $('.chkDayName:checked');
+            $boxes.each(function (val) {
+                arrDays.push(this.value);
+            });
+        }
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+
+            Title: TaskName,
+            TaskType: TaskType,
+            ProjectName: ProjectNameDetails,
+            ProjectFullName: ProjectFullName,
+            ProjectIDId: ProjectNameDetails,
+            TaskAssignToId: {
+                'results': TaskAssignTo
+            },
+            WeekDays: {
+                'results': arrDays
+            },
+            Description: Discription,
+            StartDate: FinalStartDate,
+            DueDate: FinalDueDate,
+            TaskPriority: Priority,
+            CurrentPhase: ProjectCurrentPhase,
+            CompletionPersent: completionInPersent,
+            CompanyId: txtCompanyId,
+            Distribution: Distribution,
+            ClientIDId: cutsomer,
+            ModuleId: Module,
+            AssignedById: _spPageContextInfo.userId,
+            SuccessorTaskId: $("#txtSuccTask").attr("name"),
+            PredecessorTaskId: $("#txtPredTask").attr("name"),
+            Worktype: Worktype,
+            DocumentLink: $("#txtDocLink").val(),
+            ReferenceLink: {
+                '__metadata': { 'type': 'SP.FieldUrlValue' },
+                'Description': $("#RefURL").val(),
+                'Url': $("#RefURL").val()
+            }
+        };
+
+        if ($("#txtSuccTask").attr("name") == "") {
+            Metadata["SuccessorTaskId"] = 0;
+        }
+        if ($("#txtPredTask").attr("name") == "") {
+            Metadata["PredecessorTaskId"] = 0;
+        }
+
+        if (IsTaskRecursive == "Recursive" || IsTaskRecursive == "RecursiveUpdate") {
+            delete Metadata["SuccessorTaskId"];
+            delete Metadata["PredecessorTaskId"];
+            var RecurrenceType = '';
+            if ($("#DailyBox").prop("checked") == true) {
+                RecurrenceType = 'Daily';
+            }
+            else if ($("#WeeklyBox").prop("checked") == true) {
+                RecurrenceType = 'Weekly';
+                if (arrDays == []) {
+                    delete Metadata["WeekDays"];
+                }
+
+            }
+            else if ($("#MonthlyBox").prop("checked") == true) {
+                RecurrenceType = 'Monthly';
+                Metadata["DayOfEveryMonth"] = parseInt($("#MonthlyDays").val());
+            }
+            else if ($("#YearlyBox").prop("checked") == true) {
+                Metadata["DayOfYear"] = parseInt($("#DayOfYear").val());
+                Metadata["MonthOfYear"] = $("#everymonths :selected").text();
+                RecurrenceType = 'Yearly';
+            }
+            Metadata["RecurrenceType"] = RecurrenceType;
+            Metadata["CompanyId"] = parseInt(txtCompanyId);
+            Metadata["StartDate"] = GetDateStandardFormat(moment($('.StartDateRecursive').val()).format('DD/MM/YYYY'));
+            if ($('.EndDateRecursive').val() != null && $('.EndDateRecursive').val() != "") {
+                Metadata["EndDate"] = GetDateStandardFormat(moment($('.EndDateRecursive').val()).format('DD/MM/YYYY'));
+            }
+            Metadata["DueDays"] = $('#txtDueDay').val();
+            Metadata["Status"] = 'Active';
+            delete Metadata["ProjectName"];
+            //delete Metadata["ProjectFullName"];
+            delete Metadata["CompletionPersent"];
+        }
+        else {
+            if (FinalStartDate == null || FinalStartDate == "") {
+                delete Metadata["StartDate"];
+            }
+            delete Metadata["WeekDays"];
+        }
+
+        if (FinalDueDate == null || FinalDueDate == "") {
+            delete Metadata["DueDate"];
+        }
+
+        if (ProjectNameDetails == null || ProjectNameDetails == "") {
+            delete Metadata["ProjectIDId"];
+        }
+        if (IsTaskRecursive == "RecursiveUpdate") {
+            delete Metadata["Status"];
+            $.when(UpdateTaskList('RecurringTaskSetup', Metadata, RecursiveTaskId)).done(function (data) {
+                if (currentDlgTask != "") {
+                    currentDlgTask.close();
+                }
+                alert("Recursive task has been updated.");
+                redirectedPage = "../Pages/mydashboard.aspx?WebAppId=" + txtCompanyId + "&Source=" + window.btoa('Tasks') + "&Location=" + TabId;
+                location.href = redirectedPage;
+            });
+        }
+        else {
+            AddItemToList(ListName, Metadata, TotalUsers, currentIndex);
+        }
+    } catch (error) {
+        console.log(error.message);
+        currentDlgTask.close();
+    }
+}
+
+//add item in list
+function AddItemToList(ListName, Metadata, TotalUsers, currentIndex) {
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+            $('#createNewTask').attr("disabled", true);
+            if (currentDlgTask != "") {
+                currentDlgTask.close();
+            }
+            if (IsTaskRecursive == "Recursive") {
+                alert("Recursive task has been created successfully.");
+                redirectedPage = "../Pages/mydashboard.aspx?WebAppId=" + txtCompanyId + "&Source=" + window.btoa('Tasks') + "&Location=" + TabId;
+                location.href = redirectedPage;
+            }
+            else {
+                taskItemDetails = [];
+                var item = data.d;
+                currentTaskItemId = item.ID;
+                if (FinalFiles4Upload.length > 0) {
+                    uploadattachment(currentTaskItemId);
+                }
+                else {
+                    var txtProjectID = titanForWork.getQueryStringParameter("ProjectID");
+                    var txtCompanyId = Logged_CompanyId
+                    var IsProject = titanForWork.getQueryStringParameter("IsProject");
+                    var url = _spPageContextInfo.webServerRelativeUrl;
+                    var redirectedPage = '';
+                    if (txtProjectID != '' && txtProjectID != null && txtProjectID != undefined) {
+                        redirectedPage = url + "/Pages/ViewProjectDetails.aspx?WebAppId=" + txtCompanyId + "&ProjectID=" + txtProjectID + "&Source=" + window.btoa('Tasks');
+                    } else {
+                        redirectedPage = url + "/Pages/mydashboard.aspx?WebAppId=" + txtCompanyId + "&Source=" + window.btoa('Tasks') + "&Location=" + TabId;
+                    }
+                }
+                if (TotalUsers != '') {
+                    if (currentIndex == (TotalUsers - 1)) {
+                        alert("New task created successfully.");
+                        if (IsModal == "true") {
+                            if ($.urlParam('sourceLocation').includes("../SitePages/ProjectDetails.aspx?") == true) {
+                                location.href = $.urlParam('sourceLocation') + "&ProjectName=" + $("#ProjectNameDetails :selected").text();
+                            }
+                            else {
+                                location.href = $.urlParam('sourceLocation');
+                            }
+                        }
+                        else {
+                            location.href = redirectedPage;
+                        }
+                    }
+                }
+                else {
+                    alert("New task created successfully.");
+                    if (IsModal == "true") {
+                        if ($.urlParam('sourceLocation').includes("../SitePages/ProjectDetails.aspx?") == true) {
+                            location.href = $.urlParam('sourceLocation') + "&ProjectName=" + $("#ProjectNameDetails :selected").text();
+                        }
+                        else {
+                            location.href = $.urlParam('sourceLocation');
+                        }
+                    }
+                    else {
+                        location.href = redirectedPage;
+                    }
+                }
+            }
+
+        },
+        error: function (error) {
+
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+            currentDlgTask.close();
+        }
+    });
+    return dfd.promise();
+}
+
+function GetItemTypeForListName(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+function GetDateStandardFormat(date) {
+    var dateS = ConvertDateFormatToddMMyyyy(date);
+    var startDate = new Date(dateS);
+    var day = 60 * 60 * 24 * 1000;
+    var endDate = new Date(startDate.getTime());
+    var newDate = endDate.toISOString();
+    return newDate;
+}
+
+function ConvertDateFormatToddMMyyyy(date) {
+    var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+    return formatedDate;
+}
+
+function stringToDate(_date, _format, _delimiter) {
+    var formatLowerCase = _format.toLowerCase();
+    var formatItems = formatLowerCase.split(_delimiter);
+    var dateItems = _date.split(_delimiter);
+    var monthIndex = formatItems.indexOf("mm");
+    var dayIndex = formatItems.indexOf("dd");
+    var yearIndex = formatItems.indexOf("yyyy");
+    var month = parseInt(dateItems[monthIndex]);
+    month -= 1;
+    var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+    return formatedDate;
+}
+
+//Add Attachments in SharePoint list.
+function AddAttachments(itemId) {
+    var digest = "";
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/contextinfo",
+        method: "POST",
+        headers: {
+            "ACCEPT": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            digest = data.d.GetContextWebInformation.FormDigestValue;
+        },
+        error: function (data) { }
+    }).done(function () {
+        var fileInput = $('#uploadFile');
+        var fileName = fileInput[0].files[0].name;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var fileData = e.target.result;
+            var res11 = $.ajax({
+                url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('EmployeeTaskDetails')/items('" + itemId + "')/AttachmentFiles/ add(FileName='" + fileName + "')",
+                method: "POST",
+                binaryStringRequestBody: true,
+                data: fileData,
+                processData: false,
+                headers: {
+                    "ACCEPT": "application/json;odata=verbose",
+                    "X-RequestDigest": digest
+                },
+                success: function (data) {
+                    //GetAttachments(itemId);
+                    $("#spanAttachmentCollection").show();
+                    $("#uploadFile").val(null);
+                },
+                error: function (data) {
+                    alert("The file name is already exist.");
+                }
+            });
+        };
+        reader.readAsArrayBuffer(fileInput[0].files[0]);
+    });
+}
+
+//get email template to send mail
+function GetTaskEmailTemplate(filterItemId) {
+    var RestQuery = "?$select=ID,Body,Subject,EmailType,Title&$filter=Title eq '" + filterItemId + "'";
+    $.when(getItemsWithQueryItem("EmailTemplate", RestQuery, "")).done(function (EmailTemplate) {
+        var items = EmailTemplate.results;
+        for (var itemIndex = 0; itemIndex < items.length; itemIndex++) {
+            if (items[itemIndex].Body != null) {
+                emailBodyContent = items[itemIndex].Body;
+            }
+            if (items[itemIndex].Subject != null) {
+                taskEmailSubject = items[itemIndex].Subject;
+            }
+
+        }
+    });
+}
+
+//This code runs when task created by External users to find Client name of logged in guest user
+function getExternalClient() {
+    var Query = "?$select=email,LoginName/EMail,Client_Name/Title,Client_Name/Id&$expand=LoginName,Client_Name&$filter=LoginName/EMail eq '" + _spPageContextInfo.userEmail + "' or email eq '" + _spPageContextInfo.userEmail + "'&$top=5000";
+    dfds = $.Deferred();
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+    $.when(getItems(url, dfds)).done(function (ExtResults) {
+        response = [];
+        if (ExtResults.length > 0) {
+            ClientName = ExtResults[0].Client_Name.Title.trim();
+            $("#categoryType").html('');
+            var value = '<option value="' + ExtResults[0].Client_Name.Id + '" Selected>' + ExtResults[0].Client_Name.Title.trim() + '</option>';
+            $("#categoryType").append(value);
+
+            //Bind Guest client Library
+            var DocLibraries = '';
+            var Query = "?$select=Id,Title,IsActive,CompanyID/Id,DocumentLibrary,InternalMembers/EMail,InternalSupervisor/EMail&$orderby=Title asc&$expand=CompanyID,InternalMembers,InternalSupervisor&$top=5000&$filter=DocumentLibrary ne null and IsActive eq '1' and Id eq '" + ExtResults[0].Client_Name.Id + "' ";
+            $.when(getItemsWithQuery("ClientMaster", Query)).done(function (Clients) {
+                if (Clients.length > 0) {
+                    for (var i = 0; i < Clients.length; i++) {
+                        var value = Clients[i];
+                        if (value.DocumentLibrary != null) {
+                            DocLibraries += '<tr><td><div class="checkbox m-0"><label><input class="DocLib" name="Library" type="radio" id="chkClientMaster' + i + '" value=""></label></div></td>';
+                            DocLibraries += '<td class="text-left">Guest Client</td>';
+                            DocLibraries += '<td><a href=javascript:void(0) style="cursor:text;color:black;" name = ' + value.DocumentLibrary + '>' + value.Title + '</a></td></tr>';
+                        }
+                    }
+                }
+                $("#tbdyCopyFileLib").append(DocLibraries);
+            });
+        }
+    });
+}
+
+function getGuestTeamMembrs(Action, IsBind) {
+    $("#SeeMoreGeneral").hide();
+    $(".ProjectSeeView").hide();
+    $("#SeeMoreDept").hide();
+    $("#SeeMoreGuest").hide();
+    $("#ShowProject").hide();
+    $("#SeeMoreGuestTeam").hide();
+    var totalTeamUsers = 0;
+    var arrTempEmail = [];
+    var arrUserDetails = [];
+    if (Action == "Onchange") {
+        arrGeneralTask = [];
+        var txtCompanyId = Logged_CompanyId;//Logged_CompanyId
+        RestQuery = "?$select=*,AttachmentFiles,LoginName/EMail,LoginName/Id,LoginName/Title,Client_Name/Title,InternalStakeholders/EMail,InternalStakeholders/Id,InternalStakeholders/Title,Supervisor/EMail,Supervisor/Title,Supervisor_Guest/EMail,Supervisor_Guest/Title&$orderby= Title asc &$expand=LoginName,Client_Name,InternalStakeholders,Supervisor,Supervisor_Guest,AttachmentFiles&$filter=Client_Name/Title eq '" + encodeURIComponent(ClientName) + "' and Status eq 'Active'&$top=5000";
+    }
+    $.when(getItemsWithQueryItem("ExternalUsers", RestQuery, "GuestTeam")).done(function (GuestTeam) {
+        try {
+            //Internal StakeHolders
+            if (GuestTeam.results[0].InternalStakeholders.results != null && GuestTeam.results[0].InternalStakeholders.results != "") {
+                for (var stakeh = 0; stakeh < GuestTeam.results[0].InternalStakeholders.results.length; stakeh++) {
+                    if (jQuery.inArray(GuestTeam.results[0].InternalStakeholders.results[stakeh].EMail, arrTempEmail) != '-1') {
+                        //Do Nothing. Array contains this already
+                    }
+                    else {
+                        arrUserDetails = [];
+                        //getting details of Stakeholders from External users or Employees list  
+                        arrUserDetails = getGuestTeamDetails(GuestTeam.results[0].InternalStakeholders.results[stakeh].EMail);
+                        if (arrUserDetails.length > 0) {
+                            if (arrUserDetails[0].AttachmentFiles.results.length > 0) {
+                                var employeePicURL = arrUserDetails[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                            }
+                            else {
+                                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrUserDetails[0].Email)
+                            }
+                            var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + arrUserDetails[0].FullName + '</span></div>';
+                            arrGeneralTask.push({
+                                'UserId': arrUserDetails[0].UserId,
+                                'EMail': arrUserDetails[0].Email,
+                                'LoginName': arrUserDetails[0].DisplayName ? arrUserDetails[0].DisplayName : "NA",
+                                'Designation': arrUserDetails[0].Designation,
+                                'Manager': arrUserDetails[0].Manager,
+                                'DepartmentId': arrUserDetails[0].DepartmentId,
+                                'Department': arrUserDetails[0].Department,
+                                'FullName': FullAttachmentURL,
+                                'CompanyID': arrUserDetails[0].CompanyId,
+                                'EmployeeID': arrUserDetails[0].EmployeeId,
+                                'Skill': arrUserDetails[0].Skill
+                            });
+                        }
+                        arrTempEmail.push(GuestTeam.results[0].InternalStakeholders.results[stakeh].EMail);
+                    }
+                }
+            }
+            //Internal Supervisor
+            if (GuestTeam.results[0].Supervisor != null && GuestTeam.results[0].Supervisor != "") {
+                {
+                    if (jQuery.inArray(GuestTeam.results[0].Supervisor.EMail, arrTempEmail) != '-1') {
+                        //Do Nothing. Array contains this already
+                    }
+                    else {
+                        arrUserDetails = [];
+                        //getting details of Internal Supervisor from External users or Employees list  
+                        arrUserDetails = getGuestTeamDetails(GuestTeam.results[0].Supervisor.EMail);
+                        if (arrUserDetails.length > 0) {
+                            if (arrUserDetails[0].AttachmentFiles.results.length > 0) {
+                                var employeePicURL = arrUserDetails[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                            }
+                            else {
+                                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrUserDetails[0].Email)
+                            }
+                            var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + arrUserDetails[0].FullName + '</span></div>';
+                            arrGeneralTask.push({
+                                'UserId': arrUserDetails[0].UserId,
+                                'EMail': arrUserDetails[0].Email,
+                                'LoginName': arrUserDetails[0].DisplayName ? arrUserDetails[0].DisplayName : "NA",
+                                'Designation': arrUserDetails[0].Designation,
+                                'Manager': arrUserDetails[0].Manager,
+                                'DepartmentId': arrUserDetails[0].DepartmentId,
+                                'Department': arrUserDetails[0].Department,
+                                'FullName': FullAttachmentURL,
+                                'CompanyID': arrUserDetails[0].CompanyId,
+                                'EmployeeID': arrUserDetails[0].EmployeeId,
+                                'Skill': arrUserDetails[0].Skill
+                            });
+                        }
+
+                        arrTempEmail.push(GuestTeam.results[0].Supervisor.EMail);
+                    }
+                }
+            }
+            //External Supervisor
+            if (GuestTeam.results[0].Supervisor_Guest != null && GuestTeam.results[0].Supervisor_Guest != "") {
+                {
+                    if (jQuery.inArray(GuestTeam.results[0].Supervisor_Guest.EMail, arrTempEmail) != '-1') {
+                        //Do Nothing. Array contains this already
+                    }
+                    else {
+                        arrUserDetails = [];
+                        //getting details of External Supervisor from External users or Employees list  
+                        arrUserDetails = getGuestTeamDetails(GuestTeam.results[0].Supervisor_Guest.EMail);
+                        if (arrUserDetails.length > 0) {
+                            if (arrUserDetails[0].AttachmentFiles.results.length > 0) {
+                                var employeePicURL = arrUserDetails[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                            }
+                            else {
+                                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrUserDetails[0].Email)
+                            }
+                            var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + arrUserDetails[0].FullName + '</span></div>';
+                            arrGeneralTask.push({
+                                'UserId': arrUserDetails[0].UserId,
+                                'EMail': arrUserDetails[0].Email,
+                                'LoginName': arrUserDetails[0].DisplayName ? arrUserDetails[0].DisplayName : "NA",
+                                'Designation': arrUserDetails[0].Designation,
+                                'Manager': arrUserDetails[0].Manager,
+                                'DepartmentId': arrUserDetails[0].DepartmentId,
+                                'Department': arrUserDetails[0].Department,
+                                'FullName': FullAttachmentURL,
+                                'CompanyID': arrUserDetails[0].CompanyId,
+                                'EmployeeID': arrUserDetails[0].EmployeeId,
+                                'Skill': arrUserDetails[0].Skill
+                            });
+                        }
+                        arrTempEmail.push(GuestTeam.results[0].Supervisor_Guest.EMail);
+                    }
+                }
+            }
+            //External Employees
+            if (GuestTeam.results != null && GuestTeam.results != "") {
+                for (var Emp = 0; Emp < GuestTeam.results.length; Emp++) {
+                    if (jQuery.inArray(GuestTeam.results[Emp].LoginName.EMail, arrTempEmail) != '-1') {
+                        //Do Nothing. Array contains this already
+                    }
+                    else {
+                        arrUserDetails = [];
+                        if (GuestTeam.results[Emp].AttachmentFiles.results.length > 0) {
+                            var employeePicURL = GuestTeam.results[Emp].AttachmentFiles.results[0].ServerRelativeUrl;
+                        }
+                        else {
+                            var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(GuestTeam.results[Emp].LoginName.EMail)
+                        }
+                        var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + GuestTeam.results[Emp].LoginName.Title + '</span></div>';
+
+                        arrGeneralTask.push({
+                            'UserId': GuestTeam.results[Emp].LoginName.Id,
+                            'EMail': GuestTeam.results[Emp].LoginName.EMail,
+                            'LoginName': GuestTeam.results[Emp].LoginName.Title ? GuestTeam.results[Emp].LoginName.Title : "NA",
+                            'Designation': GuestTeam.results[Emp].Designation,
+                            'Manager': GuestTeam.results[Emp].Supervisor.Title,
+                            'DepartmentId': '',
+                            'Department': '',
+                            'FullName': FullAttachmentURL,
+                            'CompanyID': '',
+                            'EmployeeID': GuestTeam.results[Emp].Id,
+                            'Skill': GuestTeam.results[Emp].SkillSet ? GuestTeam.results[Emp].SkillSet : "NA"
+                        });
+                        arrTempEmail.push(GuestTeam.results[Emp].LoginName.EMail);
+                    }
+                }
+            }
+            if (IsBind == true) {
+                LoadShowUser(arrGeneralTask);
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+}
+
+//get guest Team members metadata
+function getGuestTeamDetails(Email) {
+    var arrMetadata = [];
+    var Query = "?$select=Email,AttachmentFiles,Id,Title,PrimaryCompany,Status,FullName,LogonName/EMail,LogonName/Id,Company/Id,Department/Id,Department/Title,Manager,Designation&$expand=LogonName,Company,Department,AttachmentFiles&$top=5000&$filter=(LogonName/EMail eq '" + Email + "' or Email eq '" + Email + "') and PrimaryCompany eq 'Primary' ";
+    dfds = $.Deferred();
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + Query;
+    $.when(getItems(url, dfds)).done(function (IntResults) {
+        response = [];
+        if (IntResults.length > 0) {
+            arrMetadata.push({
+                UserId: IntResults[0].LogonName.Id,
+                Email: IntResults[0].LogonName.EMail,
+                DisplayName: IntResults[0].FullName,
+                Designation: IntResults[0].Designation,
+                Manager: IntResults[0].Manager,
+                DepartmentId: IntResults[0].Department.Id,
+                Department: IntResults[0].Department.Title,
+                FullName: IntResults[0].FullName,
+                CompanyId: IntResults[0].Company.Id,
+                EmployeeId: IntResults[0].Id,
+                Skill: IntResults[0].SkillSet ? IntResults[0].SkillSet : "NA",
+                AttachmentFiles: IntResults[0].AttachmentFiles
+            });
+        }
+        else {
+            var Query = "?$select=*,LoginName/EMail,LoginName/Id,LoginName/Title,Client_Name/Title,InternalStakeholders/EMail,InternalStakeholders/Id,InternalStakeholders/Title,Supervisor/EMail,Supervisor/Title,Supervisor_Guest/EMail,Supervisor_Guest/Title&$orderby= Title asc &$expand=LoginName,Client_Name,InternalStakeholders,Supervisor,Supervisor_Guest,AttachmentFiles&$filter=LoginName/EMail eq '" + Email + "' or email eq '" + Email + "'&$top=5000";
+            dfds = $.Deferred();
+            url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+            $.when(getItems(url, dfds)).done(function (ExtResults) {
+                response = [];
+                if (ExtResults.length > 0) {
+                    arrMetadata.push({
+                        UserId: ExtResults[0].LoginName.Id,
+                        Email: ExtResults[0].LoginName.EMail,
+                        DisplayName: ExtResults[0].Title,
+                        Designation: ExtResults[0].Designation,
+                        Manager: ExtResults[0].Supervisor.Title,
+                        DepartmentId: '',
+                        Department: '',
+                        FullName: ExtResults[0].Title,
+                        CompanyId: '',
+                        EmployeeId: ExtResults[0].Id,
+                        Skill: ExtResults[0].SkillSet ? IntResults[0].SkillSet : "NA",
+                        AttachmentFiles: ExtResults[0].AttachmentFiles
+                    });
+                }
+            });
+        }
+    });
+    return arrMetadata;
+}
+
+function GetGeneralTaskEmps(Action) {
+    $("#SeeMoreGeneral").show();
+    $(".ProjectSeeView").hide();
+    $("#SeeMoreDept").hide();
+    $("#SeeMoreGuest").hide();
+    $("#SeeMoreGuestTeam").hide();
+    var totalTeamUsers = 0;
+    if (Action == "Onchange") {
+        arrGeneralTask = [];
+        var txtCompanyId = Logged_CompanyId;//Logged_CompanyId
+        RestQuery = "?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status eq 'Active' and Company/ID eq '" + txtCompanyId + "' and ManagerLoginName/EMail eq '" + _spPageContextInfo.userEmail + "'&$top=100";
+        AllQuery = "?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status eq 'Active' and Company/ID eq '" + txtCompanyId + "' and ManagerLoginName/EMail eq '" + _spPageContextInfo.userEmail + "'&$top=5000";
+
+        dfds = $.Deferred(),
+    	url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + AllQuery;
+        $.when(getItems(url, dfds)).done(function (EmpResults) {
+            response = [];
+            if (EmpResults.length > 0) {
+                totalTeamUsers = EmpResults.length;
+            }
+            $("#TotalProject").text(totalTeamUsers);
+        });
+    }
+    else {
+        if (NextURLGeneral != null) {
+            var RestQuery = "?" + NextURLGeneral.split('?')[1];
+        }
+        else {
+            $("#SeeMoreGeneral").hide();
+            return;
+        }
+    }
+    $.when(getItemsWithQueryItem("Employees", RestQuery, "GeneralTask")).done(function (Employees) {
+
+        try {
+            if (NextURLGeneral == null) {
+                $("#SeeMoreGeneral").hide();
+            }
+
+            for (var i = 0; i < Employees.results.length; i++) {
+                if (Employees.results[i].AttachmentFiles.results.length > 0) {
+                    var employeePicURL = Employees.results[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                }
+                else {
+                    var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Employees.results[i].LogonName.EMail)
+                }
+                var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + Employees.results[i].FullName + '</span></div>';
+                arrGeneralTask.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'LoginName': Employees.results[i].LogonName.Title ? Employees.results[i].LogonName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': Employees.results[i].Manager,
+                    'DepartmentId': Employees.results[i].Department.ID,
+                    'Department': Employees.results[i].Department.DepartmentName,
+                    'FullName': FullAttachmentURL,
+                    'CompanyID': Employees.results[i].Company.ID,
+                    'EmployeeID': Employees.results[i].Id,
+                    'Skill': Employees.results[i].SkillSet ? Employees.results[i].SkillSet : "NA"
+                });
+            }
+
+            LoadShowUser(arrGeneralTask);
+            if (Action == "") {
+                totalTeamUsers = arrGeneralTask.length;
+            }
+            //Showing data out of total
+            if (totalTeamUsers > 100 && NextURLGeneral != null) {
+                $("#Rowcount").hide();
+                $("#ShowProject").show();
+                $("#SeeMoreGeneral").show();
+                $("#DiplayProject").text(arrGeneralTask.length);
+
+            }
+            else {
+                $("#Rowcount").show();
+                $("#ShowProject").hide();
+                $(".ProjectSeeView").hide();
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+}
+
+function Departmentfilter(Action) {
+    $("#SeeMoreGeneral").hide();
+    $(".ProjectSeeView").hide();
+    $("#SeeMoreDept").show();
+    $("#SeeMoreGuest").hide();
+
+    var totalTeamUsers = 0;
+    if (Action == "Onchange") {
+        arrDeptTask = [];
+        var txtCompanyId = Logged_CompanyId;//Logged_CompanyId
+        RestQuery = "?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status eq 'Active' and Company/ID eq '" + txtCompanyId + "' and Department/ID eq '" + $("#ddlDepartment").val() + "'&$top=100";
+        AllQuery = "?$select=*,AttachmentFiles,ManagerLoginName/EMail,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/ID&$orderby= FullName asc &$expand=AttachmentFiles,LogonName,Department,Company,ManagerLoginName&$filter=Status eq 'Active' and Company/ID eq '" + txtCompanyId + "' and Department/ID eq '" + $("#ddlDepartment").val() + "'&$top=5000";
+
+        dfds = $.Deferred(),
+    	url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + AllQuery;
+        $.when(getItems(url, dfds)).done(function (EmpResults) {
+            response = [];
+            if (EmpResults.length > 0) {
+                totalTeamUsers = EmpResults.length;
+            }
+            $("#TotalProject").text(totalTeamUsers);
+        });
+    }
+    else {
+        if (NextUrlDept != null) {
+            var RestQuery = "?" + NextUrlDept.split('?')[1];
+        }
+        else {
+            $("#SeeMoreDept").hide();
+            return;
+        }
+    }
+    $.when(getItemsWithQueryItem("Employees", RestQuery, "DeptTask")).done(function (Employees) {
+
+        try {
+            if (NextUrlDept == null) {
+                $("#SeeMoreDept").hide();
+            }
+
+            for (var i = 0; i < Employees.results.length; i++) {
+                if (Employees.results[i].AttachmentFiles.results.length > 0) {
+                    var employeePicURL = Employees.results[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                }
+                else {
+                    var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Employees.results[i].LogonName.EMail)
+                }
+                var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + Employees.results[i].FullName + '</span></div>';
+                arrDeptTask.push({
+                    'UserId': Employees.results[i].LogonName.Id,
+                    'EMail': Employees.results[i].LogonName.EMail,
+                    'LoginName': Employees.results[i].LogonName.Title ? Employees.results[i].LogonName.Title : "NA",
+                    'Designation': Employees.results[i].Designation ? Employees.results[i].Designation : "NA",
+                    'Manager': Employees.results[i].Manager,
+                    'DepartmentId': Employees.results[i].Department.ID,
+                    'Department': Employees.results[i].Department.DepartmentName,
+                    'FullName': FullAttachmentURL,
+                    'CompanyID': Employees.results[i].Company.ID,
+                    'EmployeeID': Employees.results[i].Id,
+                    'Skill': Employees.results[i].SkillSet ? Employees.results[i].SkillSet : "NA"
+                })
+            }
+
+            LoadShowUser(arrDeptTask);
+            if (Action == "") {
+                totalTeamUsers = arrDeptTask.length;
+            }
+            //Showing data out of total
+            if (totalTeamUsers > 100 && NextUrlDept != null) {
+                $("#Rowcount").hide();
+                $("#ShowProject").show();
+                $("#SeeMoreDept").show();
+                $("#DiplayProject").text(arrDeptTask.length);
+
+            }
+            else {
+                $("#Rowcount").show();
+                $("#ShowProject").hide();
+                $("#SeeMoreDept").hide();
+                //$("#TotalItemscount").text(items.length);
+            }
+        } catch (e) {
+            alert(e);
+        }
+    });
+}
+
+function uploadattachment(id) {
+    if (FinalFiles4Upload.length > 0) {
+        $.each(FinalFiles4Upload, function (index, value) {
+            getFileBuffer(value).then(function (buffer) {
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('EmployeeTaskDetails')/items(" + id + ")/AttachmentFiles/add( FileName='" + value.name + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: false,
+                    processData: false,
+                    headers: {
+                        "Accept": "application/json;odata=verbose",
+                        "content-type": "application/json;odata=verbose",
+                        "X-RequestDigest": $("#__REQUESTDIGEST").val()
+                    },
+                    success: function (data) {
+                        // alert('file uploaded') 
+                        var txtProjectID = titanForWork.getQueryStringParameter("ProjectID");
+                        var txtCompanyId = Logged_CompanyId;
+                        var IsProject = titanForWork.getQueryStringParameter("IsProject");
+                        var url = _spPageContextInfo.webServerRelativeUrl;
+                        var redirectedPage = '';
+                        if (txtProjectID != '' && txtProjectID != null && txtProjectID != undefined) {
+                            redirectedPage = url + "/Pages/ViewProjectDetails.aspx?WebAppId=" + txtCompanyId + "&ProjectID=" + txtProjectID + "&Source=" + window.btoa('Tasks');
+                        } else {
+                            redirectedPage = url + "/Pages/mydashboard.aspx?WebAppId=" + txtCompanyId + "&Source=" + window.btoa('Tasks') + "&Location=" + TabId;
+                        }
+                        location.href = redirectedPage;
+                    },
+                    error: function (data) {
+                        console.log(data.responseText.error);
+                        alert(data.responseText.error)
+                        //alert(data.responseText);
+                    }
+                });
+            });
+        });
+    }
+}
+
+//open the attachments in Iframe
+function priviewfile(Action) {
+    ServerSrc = Action.name;
+    if (Action.name == null) {
+        ServerSrc = Action.title;
+    }
+    var docExt = Action.dataset.filename.split('.').pop();
+    if (docExt == 'doc' || docExt == 'docx' || docExt == 'xls' || docExt == 'xlsx' || docExt == 'ppt' || docExt == 'pptx' || docExt == 'pdf') {
+        iframeUrl1 = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/WopiFrame.aspx?sourcedoc=' + Action.dataset.fileurl + '&action=interactivepreview';
+    }
+    else {
+        iframeUrl1 = Action.dataset.fileurl;
+    }
+    var container = $("#doc-viewer").empty();
+    if (ServerSrc.match(/\.(docx|xlsx)$/) != null) {
+        src = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/Doc.aspx?sourcedoc=" + ServerSrc + "&action=view&mobileredirect=true";
+    }
+    else {
+        src = ServerSrc + "?web=1";
+    }
+    $('<iframe>', {
+        src: iframeUrl1,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+
+    IntervalId = setInterval(function () {
+        $("#iframe-viewer").contents().find("#AppHeaderPanel").hide();
+        $("#iframe-viewer").contents().find("#AppHeaderPanel").remove();
+    }, 2000);
+    $("#AttachmentView").modal("show");
+}
+
+function ClosedIframe() {
+    clearInterval(IntervalId);
+}
+
+// Get Project Modules
+function GetAllModule(itemId) {
+    var RestQuery = "?$select=*&$Filter=ProjectId eq '" + itemId + "' and Status eq 'Active'";
+    $.when(getItemsWithQueryItem("ProjectModules", RestQuery, "")).done(function (ProjectModules) {
+        var items = ProjectModules.results;
+        $("#ViewAllTeamModule").modal("show");
+        var dvTable = $("#viewALLModule");
+        var counter = 1;
+        $('.moduleName').show();
+        $('#ModuleName').html('');
+        var ModuleHTML = '<select name="ProjectModule" id="projectModule" class="form-control">';
+        ModuleHTML += '<option value="0">-Select-</option>';
+        var moduleTitle = '';
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].Title.length > 50) {
+                moduleTitle = items[i].Title.substring(0, 50) + '...';
+            }
+            else {
+                moduleTitle = items[i].Title;
+            }
+            ModuleHTML += '<option value="' + items[i].Id + '" title="' + items[i].Title + '">' + moduleTitle + '</option>';
+        }
+        ModuleHTML += '</select>';
+        $("#ModuleName").append(ModuleHTML);
+    });
+}
+
+function timeSheetEntry(taskid,DependencyId) {
+    if (taskid == null || taskid == '') {
+        taskid = currentTaskItemId
+    }
+    var txtCompanyId = Logged_CompanyId;
+    if (IsModal == "true") {
+        var url = _spPageContextInfo.webAbsoluteUrl + "/Pages/TimeSheetEntry.aspx?WebAppId=" + txtCompanyId + "&Dependency=" + window.btoa(DependencyId) + "&TaskId=" + window.btoa(taskid) + "&Mode=" + window.btoa('Add') + "&IsModal=dHJ1ZQ==&sourceLocation=TaskDetails";
+    }
+    else {
+        var url = _spPageContextInfo.webAbsoluteUrl + "/Pages/TimeSheetEntry.aspx?WebAppId=" + txtCompanyId + "&Dependency=" + window.btoa(DependencyId) + "&TaskId=" + window.btoa(taskid) + "&Mode=" + window.btoa('Add') + "&sourcelocation=../Pages/timesheet.aspx";
+    }
+    window.location.href = url;
+}
+
+function taskDepTimeSheetEntry(taskid, itemid) {
+    if (taskid == null || taskid == '') {
+        taskid = currentTaskItemId
+    }
+
+    var txtCompanyId = Logged_CompanyId;
+    var url = _spPageContextInfo.webAbsoluteUrl + "/Pages/TimeSheetEntry.aspx?WebAppId=" + txtCompanyId + "&Dependency=" + window.btoa(itemid) + "&TaskId=" + window.btoa(taskid) + "&Mode=" + window.btoa('Add') + "&sourcelocation=../Pages/timesheet.aspx";
+    window.location.href = url;
+}
+
+function ConvertddmmyyTommddyyForDateCheck(ddmmyyyString) {
+    return ddmmyyyString.split('/')[1] + "/" + ddmmyyyString.split('/')[0] + "/" + ddmmyyyString.split('/')[2];
+}
+
+function getExternalusers(Audience) {
+    GuestUser = [];
+    var todayDate = new Date();
+    todayDate = todayDate.setDate(todayDate.getDate() - 1);
+    todayDate = new Date(todayDate);
+    if (Audience == "Company") {
+        var RestQuery = "?$top=5000&$select=*&$filter=(InternalStakeholdersId eq '" + _spPageContextInfo.userId + "' or SupervisorId eq '" + _spPageContextInfo.userId + "') and Status eq 'Active' and ValidUpto ge datetime'" + todayDate.toISOString() + "'";
+    }
+    else { //Corporate
+        var RestQuery = "?$top=5000&$select=*&$filter=Status eq 'Active' and ValidUpto ge datetime'" + todayDate.toISOString() + "'";
+    }
+    $.when(getItemsWithQueryItem("ExternalUsers", RestQuery, "")).done(function (ExternalUsers) {
+        var items = ExternalUsers.results;
+        if (items.length > 0) {
+            for (i = 0; i < items.length; i++) {
+                GuestUser.push(items[i]);
+                taskToUsers.push({
+                    userEmail: items[i].email,
+                    userId: items[i].LoginNameId
+                });
+            }
+        }
+    });
+}
+
+function GetGuestEmployee() {
+    var txtCompanyId = Logged_CompanyId;
+    var todaysDate = new Date();
+    todaysDate = $.datepicker.formatDate('dd/mm/yy', todaysDate);
+
+    RestQuery = "?$top=5000&$select=*&$filter=Status eq 'Active' ";
+    $.when(CommonFunction.getItemsWithQueryItem("ExternalUsers", RestQuery)).done(function (Guests) {
+        try {
+            for (var i = 0; i < Guests.results.length; i++) {
+                AllGuestUsers.push({
+                    'UserId': Guests.results[i].LoginNameId,
+                    'EMail': Guests.results[i].email
+                })
+            }
+
+        } catch (e) {
+            alert(e);
+        }
+    });
+}
+
+// to check Employee Active in Internal user and check validUpto & Internalmember/Supervisor in External user case
+function checkEmployeeStatus(UserEmail) {
+    var IsValid = false;
+    var todayDate = new Date();
+    todayDate = todayDate.setDate(todayDate.getDate() - 1);
+    todayDate = new Date(todayDate);
+
+    //checking for Internal employee
+    var Query = "?$top=5000&$select=ID,Status,Email&$filter=Status eq 'Active' and Email eq '" + UserEmail + "' ";
+    dfds = $.Deferred();
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + Query;
+    $.when(getItems(url, dfds)).done(function (Results) {
+        response = [];
+        if (Results.length == 0) {
+            //checking for External user
+            var Query = "?$top=5000&$select=email,Status,ValidUpto,Supervisor/EMail,InternalStakeholders/EMail,LoginName/EMail&$expand=Supervisor,InternalStakeholders,LoginName&$filter=(InternalStakeholders/EMail eq '" + _spPageContextInfo.userEmail + "' or Supervisor/EMail eq '" + _spPageContextInfo.userEmail + "') and Status eq 'Active' and ValidUpto ge datetime'" + todayDate.toISOString() + "' and (LoginName/EMail eq '" + UserEmail + "' or email eq '" + UserEmail + "') ";
+            dfds = $.Deferred();
+            url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+            $.when(getItems(url, dfds)).done(function (Results) {
+                response = [];
+                if (Results.length == 0) {
+                    IsValid = false;
+                }
+                else {
+                    IsValid = true;
+                }
+            });
+        }
+        else {
+            IsValid = true;
+        }
+    });
+    return IsValid;
+}
+
+// check if the user is project team member or not
+function checkProjectMember(UserEmail) {
+    RestQuery = "?$select=*,TeamMember/Id,TeamMember/Name,TeamMember/Title,TeamMember/EMail&$expand=TeamMember&$top=100&$filter=Status eq 'Active' and ProjectId eq '" + ProjectId + "' and TeamMember/EMail eq '" + UserEmail + "' ";
+    var dfds = $.Deferred();
+    url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProjectTeamDetails')/items/" + RestQuery;
+    $.when(getItems(url, dfds)).done(function (EmpResults) {
+        response = [];
+        if (EmpResults.length == 0) {
+            IsValid = false;
+        }
+        else {
+            IsValid = true;
+        }
+    });
+    return IsValid;
+}
+
+// to check if user have filled timesheet in a project
+function checkTimeSheet(EmpEmail) {
+    IsCheck = false;
+    var RestQuery = "?$select=TaskID/Id,Employee/EMail&$expand=TaskID,Employee&$filter=TaskID/Id eq '" + currentTaskItemId + "' and Employee/EMail eq '" + EmpEmail + "' ";
+    $.when(getItemsWithQueryItem("EmpTimeSheet", RestQuery, "")).done(function (EmpTimeSheet) {
+        if (EmpTimeSheet.results.length > 0) {
+            IsCheck = true;
+        }
+    });
+    return IsCheck;
+}
+
+//My-Group functionality 
+function BindMyGroup() {
+    var Group = '';
+    var RestQuery = "?$select=ID,LogonUser/ID,LogonUser/Title,LogonUser/EMail,SharingLevel&$expand=LogonUser&$orderby=ID asc&$top=5000&$filter=LogonUser/EMail eq '" + _spPageContextInfo.userEmail + "'";
+    $.when(getItemsWithQueryItem("DocumentSharedGroups", RestQuery, "")).done(function (DocumentSharedGroups) {
+        if (DocumentSharedGroups.results.length > 0) {
+            Group += "<option value=\"0\">-Select-</option>";
+            $.each(DocumentSharedGroups.results, function (i, item) {
+                var ID = item.ID;
+                var GroupName = item.SharingLevel;
+                Group += "<option value=\"" + ID + "\">" + GroupName + "</option>";
+            });
+            $("#ddlMyGroup").html('');
+            $("#ddlMyGroup").append(Group);
+        }
+    });
+}
+
+//get selected group members and bind it to table
+function getSelectedGroupMembers() {
+    var MyGroupUser = [];
+    arrMyGroup = [];
+    $("#Rowcount").show();
+    $("#ShowProject").hide();
+    var RestQuery = "?$select=ID,SharedUsers/ID,SharedUsers/Title,SharedUsers/EMail,LogonUser/ID,LogonUser/Title,LogonUser/UserName,SharingLevel&$expand=SharedUsers,LogonUser&$orderby=ID asc&$top=5000&$filter=ID eq '" + $("#ddlMyGroup").val() + "'";
+    $.when(getItemsWithQueryItem("DocumentSharedGroups", RestQuery, "")).done(function (DocumentSharedGroups) {
+        var item = DocumentSharedGroups.results;
+        if (item[0].SharedUsers.results != null) {
+            for (var subGrroupIndex = 0; subGrroupIndex < item[0].SharedUsers.results.length; subGrroupIndex++) {
+                MyGroupUser = checkUserValid(item[0].SharedUsers.results[subGrroupIndex].EMail);
+                if (MyGroupUser.length != 0) {
+                    if (MyGroupUser[0].AttachmentFiles.results.length > 0) {
+                        var employeePicURL = MyGroupUser[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                    }
+                    else {
+                        var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(MyGroupUser[0].EMail)
+                    }
+                    var FullAttachmentURL = '<div><img style="width:30px;height:30px;border-radius:50%;" src=' + employeePicURL + '><span>' + MyGroupUser[0].FullName + '</span></div>';
+
+                    arrMyGroup.push({
+                        'UserId': MyGroupUser[0].EmployeeID,
+                        'EMail': MyGroupUser[0].EMail,
+                        'LoginName': MyGroupUser[0].FullName,
+                        'Designation': MyGroupUser[0].Designation,
+                        'Manager': MyGroupUser[0].Manager,
+                        'DepartmentId': MyGroupUser[0].DepartmentId,
+                        'Department': MyGroupUser[0].Department,
+                        'FullName': FullAttachmentURL,
+                        'CompanyID': MyGroupUser[0].CompanyID,
+                        'EmployeeID': MyGroupUser[0].EmployeeID,
+                        'Skill': ""
+                    });
+                }
+            }
+            LoadShowUser(arrMyGroup);
+        }
+        else {
+            LoadShowUser(arrMyGroup);
+        }
+    });
+}
+
+// to check if user have filled timesheet in a project
+function ReviewTimeSheet() {
+    IsCheck = false;
+    var RestQuery = "?$select=TaskID/Id,Employee/EMail&$expand=TaskID,Employee&$filter=TaskID/Id eq '" + currentTaskItemId + "' ";
+    $.when(getItemsWithQueryItem("EmpTimeSheet", RestQuery, "")).done(function (EmpTimeSheet) {
+        if (EmpTimeSheet.results.length > 0) {
+            IsCheck = true;
+        }
+    });
+    return IsCheck;
+}
+
+//Project table sort
+function SortProjectTable(Name) {
+    if (Name == "Project Name") {
+        $("#ProjectSort").trigger("click");
+    }
+    else if (Name == "Customer") {
+        $("#CustomerProjSort").trigger("click");
+    }
+}
+
+//on change people picker
+function onChangeTask(HTMLID, PplPickerId, UserBoxId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        user = '';
+        if (userInfo.length > 0) {
+        	if (jQuery.inArray(userInfo[0].Key.split('|')[2].toLowerCase(), multipleEmailAddress) != '-1') {
+            	//Do Nothing. Elements contains this already
+            }
+            else {
+	            $(".peoplepickerbox").show();
+	            tempUserId = parseInt(getUserInformationTeam(PplPickerId, multipleEmailAddress, assignUserName));
+	            EmpIds.push(tempUserId);
+	            var tempEmail = userInfo[0].Key.split('|')[2];
+	            if (tempEmail.includes('#') == true) {
+	                tempEmail = tempEmail.replace("#ext#@adaptindia.onmicrosoft.com", '');
+	                tempEmail = tempEmail.replace("_", '@');
+	            }
+	            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+	            user += '<div class="col-sm-6 userBoxParent"><div class="gridbox"><img src="' + attachment + '"><div class="peopleinfo">';
+	            user += '<h5>' + userInfo[0].DisplayText + '</h5><span onclick="OpenEmail(\'' + tempEmail + '\');">' + tempEmail + '</span></div>';
+	            user += '<span class="crosebox" onclick="removeUserBox(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');"><i class="fa fa-times"></i></span></div></div>';
+	            $("#" + UserBoxId).append(user);
+	        }
+	        EmptyPeoplePicker(PplPickerId);
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+//Load task details to update Recursive task
+function PageLoadRecTask() {
+    var RestQuery = "?$select=*,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail&$expand=Module,ClientID,TaskAssignTo,Author&$top=5000&$filter=Id eq '" + RecursiveTaskId + "' ";
+    $.when(getItemsWithQueryItem("RecurringTaskSetup", RestQuery, "")).done(function (TaskResults) {
+        RecurrenceTask = TaskResults.results;
+        $("#TaskName").val(RecurrenceTask[0].Title);
+        $("#TaskType").val(RecurrenceTask[0].TaskType);
+        $("#TaskType").trigger("change");
+        $('#category').val(RecurrenceTask[0].Worktype);
+        if (RecurrenceTask[0].DocumentLink != "" && RecurrenceTask[0].DocumentLink != "null" && RecurrenceTask[0].DocumentLink != null) {
+            $("#txtDocLink").val(RecurrenceTask[0].DocumentLink);
+        }
+        if ($("#TaskType").val() == "2") {
+            var PeoplePickId = "AssaginTaskTeam";
+            $("#categoryType").empty();
+            var value = '<option value="' + RecurrenceTask[0].ClientID.ID + '" Selected>' + RecurrenceTask[0].ClientID.Title + '</option>';
+            $("#categoryType").append(value);
+        }
+        else {
+            var PeoplePickId = "AssaginTaskProjectTeam";
+            $("#ProjectNameDetails").empty();
+            var value = '<option value="' + RecurrenceTask[0].ProjectIDId + '" Selected>' + RecurrenceTask[0].ProjectFullName + '</option>';
+            $("#ProjectNameDetails").append(value);
+            //show assign to
+            $("#ProjectTeam").empty();
+            $("#aTaskButton").show();
+            $(".moduleName").show();
+            initializePeoplePicker('AssaginTaskProjectTeam');
+            peoplePickerDiv = $("[id$='AssaginTaskProjectTeam_TopSpan']");
+            var projectvalue = $("#ProjectName :selected").val();
+            getProjectPlanedDate(projectvalue);
+            GetAllModule(projectvalue);
+            $("#projectModule").val(RecurrenceTask[0].ModuleId);
+        }
+        var user = '';
+        for (var usr = 0; usr < RecurrenceTask[0].TaskAssignTo.results.length; usr++) {
+            $(".peoplepickerbox").show();
+            EmpIds.push(RecurrenceTask[0].TaskAssignTo.results[usr].Id);
+            multipleEmailAddress.push(RecurrenceTask[0].TaskAssignTo.results[usr].EMail.toLowerCase());
+            assignUserName.push(RecurrenceTask[0].TaskAssignTo.results[usr].Title);
+            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(RecurrenceTask[0].TaskAssignTo.results[usr].EMail);
+            user += '<div class="col-md-6 userBoxParent"><div class="gridbox"><img src="' + attachment + '"><div class="peopleinfo">';
+            user += '<h5>' + RecurrenceTask[0].TaskAssignTo.results[usr].Title + '</h5><span onclick="OpenEmail(\'' + RecurrenceTask[0].TaskAssignTo.results[usr].EMail + '\');">' + RecurrenceTask[0].TaskAssignTo.results[usr].EMail + '</span></div>';
+            user += '<span class="crosebox" onclick="removeUserBox(this, \'' + RecurrenceTask[0].TaskAssignTo.results[usr].EMail + '\', \'' + RecurrenceTask[0].TaskAssignTo.results[usr].Title + '\', ' + RecurrenceTask[0].TaskAssignTo.results[usr].Id + ');"><i class="fa fa-times"></i></span></div></div>';
+            //SetAndResolvePeoplePicker(PeoplePickId, items[0].TaskAssignTo.results[usr].EMail, false);
+        }
+        $("#userHTMLBox").append(user);
+        $("#comment").val(RecurrenceTask[0].Description);
+        $("#Priority").val(RecurrenceTask[0].TaskPriority);
+        $("#TaskDistribution").val(RecurrenceTask[0].Distribution);
+        if (RecurrenceTask[0].ReferenceLink != null) {
+            $("#RefURL").val(RecurrenceTask[0].ReferenceLink.Url ? RecurrenceTask[0].ReferenceLink.Url : "");
+        }
+
+        $(".StartDateRecursive").val(moment(new Date(RecurrenceTask[0].StartDate)).format("MM dd, yy"));
+        if (RecurrenceTask[0].EndDate != null) {
+            $(".EndDateRecursive").val(moment(new Date(RecurrenceTask[0].EndDate)).format("MM dd, yy"));
+            $('.EndDateRecursive').attr('disabled', false);
+        }
+        else {
+            $(".EndDateRecursive").prop('disabled', 'disabled');
+            $("#noenddate").prop('checked', 'checked');
+        }
+        $("#txtDueDay").val(RecurrenceTask[0].DueDays);
+        if (RecurrenceTask[0].RecurrenceType == "Daily") {
+            $("#DailyBox").prop('checked', 'checked');
+            $("#DailyBox").trigger('click');
+        }
+        else if (RecurrenceTask[0].RecurrenceType == "Weekly") {
+            $("#WeeklyBox").prop('checked', 'checked');
+            $("#WeeklyBox").trigger('click');
+            if (RecurrenceTask[0].WeekDays != null) {
+                for (var day = 0; day < RecurrenceTask[0].WeekDays.results.length; day++) {
+                    if (RecurrenceTask[0].WeekDays.results[day] == "Mon") {
+                        $("#" + RecurrenceTask[0].WeekDays.results[day].toLowerCase() + "day").prop('checked', 'checked');
+                    }
+                    else if (RecurrenceTask[0].WeekDays.results[day] == "Tue" || RecurrenceTask[0].WeekDays.results[day] == "Wed" || RecurrenceTask[0].WeekDays.results[day] == "Thu") {
+                        $("#" + RecurrenceTask[0].WeekDays.results[day].toLowerCase()).prop('checked', 'checked');
+                    }
+                    else {
+                        $("#" + RecurrenceTask[0].WeekDays.results[day]).prop('checked', 'checked');
+                    }
+                }
+            }
+        }
+        else if (RecurrenceTask[0].RecurrenceType == "Monthly") {
+            $("#MonthlyBox").prop('checked', 'checked');
+            $("#MonthlyBox").trigger('click');
+            $("#MonthlyDays").val(RecurrenceTask[0].DayOfEveryMonth);
+        }
+        else { //Yearly
+            $("#YearlyBox").prop('checked', 'checked');
+            $("#YearlyBox").trigger('click');
+            $('#everymonths option').filter(function () {
+                return ($(this).text() == RecurrenceTask[0].MonthOfYear); //To select Blue
+            }).prop('selected', true);
+            $("#everymonths").trigger('change');
+            $("#DayOfYear").val(RecurrenceTask[0].DayOfYear);
+        }
+        waitingDialog.hide();
+        onChangeTask('AssaginTaskProjectTeam_TopSpan', 'AssaginTaskProjectTeam', 'userHTMLBox');
+    });
+}
+
+
+//Load task details for copy task
+function PageLoadAddTask() {
+    $("#btnAttchmentsView").hide();
+    $("#btn2CloseAttachmentForm").hide();
+    $('#create_task_without_comts').show();
+    $('#create_task_with_comts').remove();
+    //$('#reminderTask').hide(); 
+    $(".projectName").hide();
+    $(".ProjectTeam").hide();
+    $(".clientNameDiv").hide();
+    $(".moduleName").hide();
+    $(".AssignTo").hide();
+    $(".IntimationCompletion").hide();
+    $(".TaskTeam").hide();
+    $(".IntimateProjectTeam").hide();
+    $(".IntimateTaskTeam").hide();
+    $("#completionInPersent").prop("disabled", true);
+    $("#rateYo").hide();
+    $('.CompletionDateButton').find('button').attr("disabled", true);
+    //$('.CompletionDate').prop('disabled','disabled');
+    $('.taskCompletionDetails').hide();
+    $('#ProjectCurrentPhase').attr('disabled', 'disabled');
+    $("#TaskStatus").hide();
+    getWorkType();
+
+    $("#TaskType").change(function () {
+        $("#ProjectTeam").empty();
+        $('.StartDate').datepicker("destroy");
+        $('.DueDate').datepicker("destroy");
+        $('.StartDate').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "-50:+50",
+            //maxDate: new Date()
+        });
+        $('.StartDate').datepicker("option", "dateFormat", "MM dd, yy");
+
+        $('.DueDate').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "-50:+50"
+        });
+        $('.DueDate').datepicker("option", "dateFormat", "MM dd, yy");
+
+        var value = this.value;
+        EmpIds = [];
+        multipleEmailAddress = [];
+        assignUserName = [];
+        $(".peoplepickerbox").hide();
+        $("#txtSuccTask").val('');
+        $("#txtSuccTask").attr("name", '');
+        $("#txtPredTask").attr("name", '');
+        $("#txtPredTask").val('');
+        if (value == 1) {
+            $("#userHTMLBox").empty();
+            //$(".peoplepickerbox").show();
+            $(".projectName").show();
+            $(".ProjectTeam").show();
+            $(".clientNameDiv").hide();
+            $(".IntimateProjectTeam").hide(); //Hide 
+            $(".TaskTeam").hide();
+            ProjectType = "Projecttask";
+            $(".IntimateTaskTeam").hide();
+            $(".Audience").hide();
+            $("#ProjectName").unbind().change(function () {
+                $("#ProjectTeam").empty();
+                $("#aTaskButton").show();
+                $(".moduleName").show();
+                initializePeoplePicker('AssaginTaskProjectTeam');
+                peoplePickerDiv = $("[id$='AssaginTaskProjectTeam_TopSpan']");
+                var projectvalue = $("#ProjectName :selected").val();
+                getProjectPlanedDate(projectvalue);
+                GetAllModule(projectvalue);
+            });
+            $('.StartDate').datepicker("setDate", new Date());
+
+        } else if (value == 2) {
+            $("#userHTMLBox").empty();
+            //$(".peoplepickerbox").show();
+            $(".projectName").hide();
+            $(".ProjectTeam").hide();
+            $(".clientNameDiv").show();
+            $(".moduleName").hide();
+            $(".Audience").show();
+            $(".IntimateProjectTeam").hide();
+            $(".TaskTeam").show();
+            $(".IntimateTaskTeam").hide();
+            $(".moduleName").hide()
+            ProjectType = "GenaralTask";
+            initializePeoplePicker_AssaginTaskTeam('AssaginTaskTeam');
+            onChangeTask("AssaginTaskTeam_TopSpan", "AssaginTaskTeam", "userHTMLBox");
+            peoplePickerDiv = $("[id$='AssaginTaskTeam_TopSpan']");
+            $('.StartDate').datepicker("setDate", new Date());
+        } else {
+            $(".peoplepickerbox").hide();
+            $(".projectName").hide();
+            $(".ProjectTeam").hide();
+            $(".TaskTeam").hide();
+            $(".IntimateProjectTeam").hide();
+            $(".IntimateTaskTeam").hide();
+        }
+    });
+}
+
+function CreateNewTask() {
+
+    var EditMode = IsEditMode;
+    if (EditMode != undefined) {
+        EditMode = window.atob(EditMode);
+    }
+    if (EditMode == null || EditMode == "undefined") {
+        // Get the people picker object from the page.
+        if (multipleEmailAddress.length == 0) {
+            alert("Kindly fill all the mandatory fields.");
+            return false;
+        }
+        var DoesNotexietuser = "";
+        var Notexietuser = "";
+        var IsTrue = false;
+        var IsUser = false;
+        var IsGuestRequired = false;
+        var OtherUsers = [];
+        var OtherUserName = [];
+        if (multipleEmailAddress.length > 200) {
+            multipleEmailAddress.length = 200;
+        }
+        for (var j = 0; j < multipleEmailAddress.length; j++) {
+            var arrSubVisaLetters = checkUserValid(multipleEmailAddress[j]);
+            if (arrSubVisaLetters.length == 0 && $("#Audience option:selected").text() == "Corporate") {
+                DoesNotexietuser += assignUserName[j] + ",";
+                IsTrue = true;
+                IsGuestRequired = true;
+                OtherUsers.push(multipleEmailAddress[j]);
+                OtherUserName.push(assignUserName[j]);
+            }
+            else { //For Company
+                if (arrSubVisaLetters.length == 0) {
+                    DoesNotexietuser += assignUserName[j] + ",";
+                    IsTrue = true;
+                    IsGuestRequired = true;
+                    OtherUsers.push(multipleEmailAddress[j]);
+                    OtherUserName.push(assignUserName[j]);
+                }
+            }
+        }
+        if ($('#TaskType').val() == 1) {
+            if (TaskusersProjectTeam.length == 0) {
+                GetProjectTeamMembers($("#ProjectName :selected").val(), "Onchange");
+            }
+            for (var j = 0; j < multipleEmailAddress.length; j++) {
+                var arrSubVisaLetters = TaskusersProjectTeam.filter(function (filterData) {
+                    return filterData.EMail.toLowerCase().trim() == multipleEmailAddress[j].toLowerCase().trim();
+                });
+                if (arrSubVisaLetters.length == 0) {
+                    Notexietuser += assignUserName[j] + ",";
+                    IsUser = true;
+                }
+            }
+            if (IsUser) {
+                Notexietuser += " is not a valid Team member";
+                alert(Notexietuser);
+                return false;
+            }
+        }
+        else if ($('#TaskType').val() == 2) {
+            Notexietuser = '';
+            if (IsModal != "true") {
+                if ($("#Audience option:selected").text() == "Company") {
+                    getExternalusers("Company");
+                }
+                else {
+                    getExternalusers("Corporate");
+                }
+                if (IsGuestRequired) {
+                    for (var j = 0; j < OtherUsers.length; j++) {
+                        if (GuestUser.length > 0) {
+                            for (k = 0; k < GuestUser.length; k++) {
+                                if (GuestUser[k].email.toLowerCase() != OtherUsers[j].toLowerCase()) {
+                                    if (Notexietuser.includes(OtherUserName[j]) == false && GuestUser.length == (k + 1)) {
+                                        Notexietuser += OtherUserName[j] + " ,";
+                                    }
+                                    IsUser = true;
+                                }
+                                else {
+                                    IsUser = false;
+                                    break;
+                                }
+                            }
+                        } else {
+                            IsUser = true;
+                            if (OtherUserName[j].indexOf(Notexietuser) !== -1) {
+                                Notexietuser += OtherUserName[j] + ",";
+                            }
+                        }
+                    }
+                    if (IsUser || Notexietuser != "") {
+                        Notexietuser = Notexietuser.substring(0, Notexietuser.length - 2);
+                        if (Notexietuser.includes(',') == true) {
+                            Notexietuser += " are not a valid user.";
+                        }
+                        else {
+                            Notexietuser += " is not a valid user.";
+                        }
+                        alert(Notexietuser);
+                        return false;
+                    }
+                }
+            }
+            else {
+                var NotValidGuest = '';
+                getGuestTeamMembrs("Onchange", false);
+                for (var j = 0; j < multipleEmailAddress.length; j++) {
+                    var arrNotValid = arrGeneralTask.filter(function (filterData) {
+                        return filterData.EMail.toLowerCase().trim() == multipleEmailAddress[j].toLowerCase().trim();
+                    });
+                    if (arrNotValid.length == 0) {
+                        NotValidGuest += assignUserName[j] + ", ";
+                    }
+                }
+                if (NotValidGuest != "") {
+                    NotValidGuest = NotValidGuest.substring(0, NotValidGuest.length - 2);
+                    alert(NotValidGuest + " user(s) are not a valid.");
+                    return;
+                }
+            }
+        }
+        else {
+            if (IsTrue) {
+                DoesNotexietuser += " is not a valid user in the company";
+                alert(DoesNotexietuser);
+                return false;
+            }
+        }
+        //Recursive Task Validation
+        if (IsTaskRecursive == "Recursive" || IsTaskRecursive == "RecursiveUpdate") {
+            if ($(".StartDateRecursive").val() == '') {
+                alert("Please specify Start and End date.");
+                return false;
+            }
+            else if ($(".EndDateRecursive").val() == '' && $("#noenddate").prop('checked') == false) {
+                alert("Please specify Start and End date.");
+                return false;
+            }
+
+            else if ($("#txtDueDay").val() == '') {
+                alert("Due Days cannot be empty.");
+                return false;
+            }
+                /*else if(parseInt($("#txtDueDay").val()) < 0){
+                }*/
+            else if ($("#WeeklyBox").prop("checked") == true) {
+                if ($(".chkDayName:checked").length == 0) {
+                    alert("Kindly select any day.");
+                    return false;
+                }
+            }
+        }
+        else {
+            if ($("#txtSuccTask").attr("name") != "" && $("#txtPredTask").attr("name") != "" && $("#txtSuccTask").attr("name") != null && $("#txtPredTask").attr("name") != null) {
+                if ($("#txtPredTask").attr("name") == $("#txtSuccTask").attr("name")) {
+                    alert("Successor and Predecessor can't be same.");
+                    return false;
+                }
+            }
+        }
+        if ($("#txtDocLink").val() != '') {
+            if (/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test($("#txtDocLink").val()) == false) {
+                alert("Document Link is not valid.");
+                return false;
+            }
+        }
+        if ($("#RefURL").val() != '') {
+            if (/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test($("#RefURL").val())) {
+                currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose("Adding", "Please wait...");
+                setTimeout(function () {
+                    saveEmployeeTask();
+                }, 1000);
+            }
+            else {
+                alert("Reference URL is invalid.");
+                return false;
+            }
+        }
+        else {
+            currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose("Adding", "Please wait...");
+            setTimeout(function () {
+                saveEmployeeTask();
+            }, 1000);
+        }
+
+    }
+    else if (EditMode == "True" || EditMode == "False") {
+        if ($("#txtSuccTaskEdit").attr("name") != "" && $("#txtPredTaskEdit").attr("name") != "" && $("#txtSuccTaskEdit").attr("name") != null && $("#txtPredTaskEdit").attr("name") != null) {
+            if ($("#txtPredTaskEdit").attr("name") == $("#txtSuccTaskEdit").attr("name")) {
+                alert("Successor and Predecessor can't be same.");
+                return false;
+            }
+        }
+        if ($("#txtDocLinkEdit").text() != 'Select Document Link') {
+            if (/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test($("#txtDocLinkEdit").attr('href')) == false) {
+                alert("Document Link is not valid.");
+                return false;
+            }
+        }
+        if ($("#AssignTo").html() != "") {
+            if ($("#RefURLUpdate").val() != '') {
+                if (/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test($("#RefURLUpdate").val())) {
+                    currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose("Updating", "Please wait...");
+                    setTimeout(function () {
+                        updateCurrentTaskStatus();
+                    }, 1000);
+                }
+                else {
+                    alert("Reference URL is invalid.");
+                    return false;
+                }
+            }
+            else {
+                currentDlgTask = SP.UI.ModalDialog.showWaitScreenWithNoClose("Updating", "Please wait...");
+                setTimeout(function () {
+                    updateCurrentTaskStatus();
+                }, 1000);
+            }
+        }
+        else {
+            alert("Kindly fill atleast one assign to.");
+            return false;
+        }
+    }
+}
+
+function showUserChange(Action) {
+    selectedText = $(Action).find("option:selected").text();
+    $("#txtserch").val('');
+    if ("My Subordinates" == selectedText) {
+        $("#lblShowuser").show();
+        $("#SeeMoreMyGroup").hide();
+        $("#txtserchdiv").show();
+        $("#lblShowuser").html('');
+        $("#lblShowuser").append("Designation like:");
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlMyGroup").hide();
+        $("#ddlClients").hide();
+        $("#SeeMoreDept").hide();
+        $("#SeeMoreGuest").hide();
+        $("#SeeMoreGuestTeam").hide();
+        LoadShowUser(arrGeneralTask);
+        //Showing data out of total
+        if (NextURLGeneral != null) {
+            $("#Rowcount").hide();
+            $("#ShowProject").show();
+            $("#SeeMoreGeneral").show();
+            $("#DiplayProject").text(arrGeneralTask.length);
+        }
+        else {
+            $("#Rowcount").show();
+            $("#ShowProject").hide();
+            $(".ProjectSeeView").hide();
+        }
+    }
+    else if ("Department" == selectedText) {
+        $("#lblShowuser").hide();
+        $("#SeeMoreMyGroup").hide();
+        $("#txtserchdiv").show();
+        $("#lblDepartment").show();
+        $("#ddlDepartment").show();
+        $("#ddlMyGroup").hide();
+        $("#ddlClients").hide();
+        $("#SeeMoreDept").hide();
+        $("#SeeMoreGuest").hide();
+        $("#SeeMoreGuestTeam").hide();
+        LoadShowUser([]);
+        var ids = [];
+        var clean = [];
+        var dropdown = $('#ddlDepartment');
+        dropdown.empty();
+        $("#ShowProject").hide();
+        $("#SeeMoreGeneral").hide();
+        $("#Rowcount").show();
+
+        var requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('Departments')/items?$select=ID,DepartmentName&$Filter=CompanyID eq " + Logged_CompanyId + "";
+        $.ajax({
+            url: requestURI,
+            type: "GET",
+            async: false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+
+                var Deptlocations;
+                Deptlocations += "<option value=\"0\">-Select-</option>";
+                $.each(data.d.results, function (i, item) {
+                    var ID = item.ID;
+                    var Department = item.DepartmentName;
+                    Deptlocations += "<option value=\"" + ID + "\">" + Department + "</option>";
+                });
+                $("#ddlDepartment").html('');
+                $("#ddlDepartment").append(Deptlocations);
+            },
+            error: function (error) {
+                alert("Error in binding departments -- " + error);
+                return false;
+            }
+        });
+
+    }
+    else if ("All Team Members" == selectedText) {
+        LoadShowUser(TaskusersProjectTeam);
+        $("#lblShowuser").hide();
+        $("#txtserchdiv").show();
+        $("#txtserch").val("");
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlMyGroup").hide();
+        $("#ddlClients").hide();
+        $("#SeeMoreMyGroup").hide();
+
+    }
+    else if ("Guest User" == selectedText) {
+        $("#SeeMoreDept").hide();
+        $("#SeeMoreGeneral").hide();
+        LoadShowUser([]);
+        getClientNames();
+        $("#lblShowuser").hide();
+        $("#txtserchdiv").show();
+        $("#txtserch").val("");
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlMyGroup").hide();
+        $("#ddlClients").show();
+        $("#SeeMoreGuestTeam").hide();
+        $("#SeeMoreMyGroup").hide();
+
+    }
+    else if ("My group" == selectedText) {
+        $("#SeeMoreDept").hide();
+        $("#SeeMoreGeneral").hide();
+        $("#SeeMoreGuestTeam").hide();
+        $("#SeeMoreTeam").hide();
+        $("#SeeMoreGuest").hide();
+        $("#SeeMoreMyGroup").show();
+        BindMyGroup();
+        $("#lblShowuser").hide();
+        $("#txtserchdiv").show();
+        $("#txtserch").val("");
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlMyGroup").show();
+        $("#ddlClients").hide();
+        $("#ddlMyGroup").trigger("change");
+    }
+
+    else {
+        $("#lblShowuser").hide();
+        $("#txtserchdiv").show();
+        $("#lblDepartment").hide();
+        $("#ddlDepartment").hide();
+        $("#ddlMyGroup").hide();
+        $("#ddlClients").hide();
+        $("#SeeMoreMyGroup").hide();
+        LoadShowUser(TaskusersProjectTeam);
+
+    }
+}
+
+function SearchAssigneeTable() {
+    if (ProjectType == "GenaralTask") {
+        if ($("#ddlShowUser").val() == "2") { //My-Subordinates
+            if ($("#txtserch").val().trim() != '') {
+                var textfilterdata = arrGeneralTask.filter(function (user) {
+                    // returns true or false
+                    if (user.Designation == null) {
+                        user.Designation = "";
+                    }
+                    if (user.Department == null) {
+                        user.Department = "";
+                    }
+                    return user.Designation.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.FullName.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.EMail.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Department.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Manager.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                });
+                LoadShowUser(textfilterdata);
+                $("#ShowProject").hide();
+                $("#SeeMoreGeneral").hide();
+                $("#Rowcount").show();
+            }
+            else {
+                LoadShowUser(arrGeneralTask);
+                if (arrGeneralTask.length > 99 && NextURLGeneral != null) {
+                    $("#Rowcount").hide();
+                    $("#ShowProject").show();
+                    $("#SeeMoreGeneral").show();
+                    $("#DiplayProject").text(arrGeneralTask.length);
+                }
+                else {
+                    $("#Rowcount").show();
+                    $("#ShowProject").hide();
+                    $("#SeeMoreGeneral").hide();
+                    //$("#TotalItemscount").text(items.length);
+                }
+            }
+        }
+        else if ($("#ddlShowUser").val() == "6") { //Department
+            if ($("#txtserch").val().trim() != '') {
+                var textfilterdata = arrDeptTask.filter(function (user) {
+                    // returns true or false
+                    return user.Designation.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.FullName.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.EMail.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Department.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Manager.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                    //user.Skill.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                });
+                LoadShowUser(textfilterdata);
+                $("#ShowProject").hide();
+                $("#SeeMoreDept").hide();
+                $("#Rowcount").show();
+            }
+            else {
+                LoadShowUser(arrDeptTask);
+                if (arrDeptTask.length > 99 && NextUrlDept != null) {
+                    $("#Rowcount").hide();
+                    $("#ShowProject").show();
+                    $("#SeeMoreDept").show();
+                    $("#DiplayProject").text(arrDeptTask.length);
+                }
+                else {
+                    $("#Rowcount").show();
+                    $("#ShowProject").hide();
+                    $("#SeeMoreDept").hide();
+                    //$("#TotalItemscount").text(items.length);
+                }
+            }
+        }
+        else if ($("#ddlShowUser").val() == "8") { //My-Group
+            if ($("#txtserch").val().trim() != '') {
+                var textfilterdata = arrMyGroup.filter(function (user) {
+                    // returns true or false
+                    return user.Designation.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.FullName.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.EMail.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Department.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Manager.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                    //user.Skill.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                });
+                LoadShowUser(textfilterdata);
+                $("#Rowcount").show();
+            }
+            else {
+                LoadShowUser(arrMyGroup);
+            }
+        }
+        else { //Guest
+            if ($("#txtserch").val().trim() != '') {
+                var textfilterdata = TaskusersProjectTeam.filter(function (user) {
+                    // returns true or false
+                    return user.Designation.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.FullName.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.EMail.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                            user.Manager.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                    //user.Skill.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                });
+                LoadShowUser(textfilterdata);
+                $("#ShowProject").hide();
+                $("#SeeMoreGuest").hide();
+                $("#Rowcount").show();
+            }
+            else {
+                LoadShowUser(TaskusersProjectTeam);
+                if (TaskusersProjectTeam.length > 99 && NextUrlGuest != null) {
+                    $("#Rowcount").hide();
+                    $("#ShowProject").show();
+                    $("#SeeMoreGuest").show();
+                    $("#DiplayProject").text(TaskusersProjectTeam.length);
+                }
+                else {
+                    $("#Rowcount").show();
+                    $("#ShowProject").hide();
+                    $("#SeeMoreGuest").hide();
+                }
+            }
+        }
+    }
+    if (ProjectType == "Projecttask") {
+        if ($("#txtserch").val().trim() != '') {
+            var textfilterdata = TaskusersProjectTeam.filter(function (user) {
+                // returns true or false
+                return user.Designation.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                        user.FullName.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                        user.EMail.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                        user.Department.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1 ||
+                        user.Manager.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+                //user.Skill.toLowerCase().indexOf($("#txtserch").val().toLowerCase()) != -1;
+            });
+            LoadShowUser(textfilterdata);
+            $("#ShowProject").hide();
+            $("#SeeMoreTeam").hide();
+            $("#Rowcount").show();
+        }
+        else {
+            LoadShowUser(TaskusersProjectTeam);
+            if (TaskusersProjectTeam.length > 99 && NextURLProject != null) {
+                $("#Rowcount").hide();
+                $("#ShowProject").show();
+                $(".ProjectSeeView").show();
+                $("#DiplayProject").text(TaskusersProjectTeam.length);
+            }
+            else {
+                $("#Rowcount").show();
+                $("#ShowProject").hide();
+                $(",ProjectSeeView").hide();
+            }
+        }
+    }
+}
+
+function GetSelectItem() {
+    var selectedRows = tabledata.getSelectedRows(); //get array of currently selected row components.
+    var tempLength = selectedRows.length;
+    if (selectedRows.length > 200) {
+        selectedRows.length = 200;
+    }
+    $(".peoplepickerbox").show();
+    var user = '';
+    if (selectedRows.length > 0) {
+        for (var i = 0; i < selectedRows.length; i++) {
+            if (jQuery.inArray(selectedRows[i]._row.data.EMail.toLowerCase(), multipleEmailAddress) != '-1') {
+                //Do Nothing. Elements contains this already
+            }
+            else {
+                var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+                var allUserInfo = peoplePicker.GetAllUserInfo()
+                var IsUser = allUserInfo.filter(function (users) {
+                    return users.Description == selectedRows[i]._row.data.EMail;
+                });
+                /*if (IsUser.length == 0) {
+                    peoplePicker.AddUserKeys(selectedRows[i]._row.data.EMail, false);
+                }*/
+                EmpIds.push(selectedRows[i]._row.data.UserId);
+                multipleEmailAddress.push(selectedRows[i]._row.data.EMail.toLowerCase());
+                assignUserName.push(selectedRows[i]._row.data.LoginName);
+                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(selectedRows[i]._row.data.EMail);
+                user += '<div class="col-md-6 userBoxParent"><div class="gridbox"><img src="' + attachment + '"><div class="peopleinfo">';
+                user += '<h5>' + selectedRows[i]._row.data.LoginName + '</h5><span onclick="OpenEmail(\'' + selectedRows[i]._row.data.EMail + '\');">' + selectedRows[i]._row.data.EMail + '</span></div>';
+                user += '<span class="crosebox" onclick="removeUserBox(this, \'' + selectedRows[i]._row.data.EMail + '\', \'' + selectedRows[i]._row.data.LoginName + '\', ' + selectedRows[i]._row.data.UserId + ');"><i class="fa fa-times"></i></span></div></div>';           
+			}
+        }
+        $("#userHTMLBox").append(user);
+        $('#myModal').modal('hide');
+        if (tempLength > 200) {
+            alert("You can't assign task to more that 200 employees at once.");
+        }
+    }
+    else {
+        if (multipleEmailAddress.length == 0) {
+            $(".peoplepickerbox").hide();
+        }
+        alert("Kindly select atleast one employee.");
+        return false;
+    }
+}
+
+//function remove user details box
+function removeUserBox(Action, userEmail, UserName, UserId) {
+    $(Action).parents('.userBoxParent').remove();
+    multipleEmailAddress = multipleEmailAddress.filter(function (obj) {
+        return obj.toLowerCase() !== userEmail.toLowerCase();
+    });
+    assignUserName = assignUserName.filter(function (obj) {
+        return obj.toLowerCase() !== UserName.toLowerCase();
+    });
+    EmpIds = EmpIds.filter(function (obj) {
+        return obj != UserId;
+    });
+    if (multipleEmailAddress.length == 0) {
+        $(".peoplepickerbox").hide();
+    }
+}
+
+// Month in JavaScript is 0-indexed (January is 0, February is 1, etc), 
+// but by using 0 as the day it will give us the last day of the prior
+// month. So passing in 1 as the month number will return the last day
+// of January, not February
+function daysInMonth(month, year) {
+    return new Date(year, month, 0).getDate();
+}
+
+function OpenEmail(Email) {
+    window.location = "mailto:" + Email.textContent;
+}
+
+//Validation check before opening tasks
+function PredSuccTaskValidate() {
+    if ($("#TaskType").val() != '0') {
+        if ($("#TaskType").val() == '1') {
+            if ($("#ProjectNameDetails").val() != "0") {
+                LoadPredSuccecessorTasks("Add");
+            }
+            else {
+                alert("Kindly select the project first");
+                return false;
+            }
+        }
+        else {
+            LoadPredSuccecessorTasks("Add");
+        }
+    }
+    else {
+        alert("Kindly select the task type first.");
+        return false;
+    }
+}
+
+//Get all the Predecessor tasks
+function LoadPredSuccecessorTasks(Action) {
+    var TaskHTML = '';
+    if (Action == "Add") {
+        if ($("#TaskType").val() == '1') {
+            var RestQuery = "?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles,ProjectID/Id&$top=5000&$expand=ProjectID,AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail eq '" + _spPageContextInfo.userEmail + "' and ProjectID/Id eq '" + $("#ProjectNameDetails").val() + "' and (CurrentPhase eq 'Open' or CurrentPhase eq 'Close' or CurrentPhase eq 'Completed')";
+        }
+        else {
+            var RestQuery = "?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles&$top=5000&$expand=AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail eq '" + _spPageContextInfo.userEmail + "' and TaskType eq '2' and (CurrentPhase eq 'Open' or CurrentPhase eq 'Close' or CurrentPhase eq 'Completed')";
+        }
+    }
+    else {
+        if (TaskKind == '1') {
+            var RestQuery = "?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles,ProjectID/Id&$top=5000&$expand=ProjectID,AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail eq '" + _spPageContextInfo.userEmail + "' and ProjectID/Id eq '" + $("#ProjectNameDetails").val() + "' and (CurrentPhase eq 'Open' or CurrentPhase eq 'Close' or CurrentPhase eq 'Completed')";
+        }
+        else {
+            var RestQuery = "?$select=*,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Module/Title,ClientID/ID,ClientID/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/Id,TaskAssignToId,Author/Title,Author/EMail,AttachmentFiles&$top=5000&$expand=AssignedBy,AttachmentFiles,ClientID,Module,TaskAssignTo,Author&$filter=AssignedBy/EMail eq '" + _spPageContextInfo.userEmail + "' and TaskType eq '2' and (CurrentPhase eq 'Open' or CurrentPhase eq 'Close' or CurrentPhase eq 'Completed')";
+        }
+    }
+    var DateText = "Due";
+    var attachment = '';
+    var StartDate = '';
+    var TaskAssignToUsers = '';
+    var SelectPSTask = '';
+    if (Action == "Add") {
+        if ($("#txtModalTaskHeader").text() == 'Predecessor Task') {
+            SelectPSTask = $("#txtPredTask").attr('name');
+        }
+        else if ($("#txtModalTaskHeader").text() == 'Successor Task') {
+            SelectPSTask = $("#txtSuccTask").attr('name');
+        }
+        else {
+            SelectPSTask = '';
+        }
+    }
+    else {
+        if ($("#txtModalTaskHeader").text() == 'Predecessor Task') {
+            SelectPSTask = $("#txtPredTaskEdit").attr('name');
+        }
+        else if ($("#txtModalTaskHeader").text() == 'Successor Task') {
+            SelectPSTask = $("#txtSuccTaskEdit").attr('name');
+        }
+        else {
+            SelectPSTask = '';
+        }
+    }
+    $.when(getItemsWithQueryItem("EmployeeTaskDetails", RestQuery, "")).done(function (Tasks) {
+        var items = Tasks.results;
+        if (items.length > 0) {
+            for (var i = 0; i < items.length; i++) {
+                TaskAssignToUsers = '';
+                var ProjectFullName = items[i].ProjectFullName;
+                if (ProjectFullName == null) {
+                    ProjectFullName = "<b>Client:</b> <span>" + items[i].ClientID.Title + "</span>";
+                }
+                else {
+                    ProjectFullName = "<b>Project:</b> <span>" + ProjectFullName + "</span>";
+                }
+                var TaskAssignTo = items[i].TaskAssignTo;
+                if (TaskAssignTo.results.length >= 4) {
+                    for (assignto = 0; assignto < 4; assignto++) {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TaskAssignTo.results[assignto].EMail);
+                        TaskAssignToUsers += '<img title="' + TaskAssignTo.results[assignto].Title + '" src="' + attachment + '" alt="">';
+                    }
+                }
+                else {
+                    for (assignto = 0; assignto < TaskAssignTo.results.length; assignto++) {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TaskAssignTo.results[assignto].EMail);
+                        TaskAssignToUsers += '<img title="' + TaskAssignTo.results[assignto].Title + ' \n' + TaskAssignTo.results[assignto].EMail + '" src="' + attachment + '" alt="">';
+                    }
+                }
+                if (TaskAssignTo.results.length > 4) {
+                    TaskAssignToUsers += '<button type="button" class="seemorebox">+' + (TaskAssignTo.results.length - 4) + '</button>';
+                }
+                var StartDate = new Date(items[i].StartDate);
+                StartDate = titanForWork.ShowCommonStandardDateFormat(StartDate);
+                var DueDate = items[i].DueDate;
+                var CurrentPhase = items[i].CurrentPhase;
+                DateText = "Due";
+                if (DueDate != null && CurrentPhase != "Completed" && CurrentPhase != "Close") {
+                    DueDate = new Date(DueDate);
+                    DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+                }
+
+                var CompletionPersent = items[i].CompletionPersent;
+                if (CurrentPhase == "Completed" || CurrentPhase == "Close") {
+                    DateText = "Completed";
+                    DueDate = new Date(items[i].CompletionDate);
+                    DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+                }
+                DueDateClass = '';
+                if (new Date() > new Date(items[i].DueDate)) {
+                    DueDateClass = "reddate"
+                }
+
+                if (SelectPSTask == items[i].Id) {
+                    TaskHTML += '<tr><td><div class="dividorbox"><div class="checkboxinside"><input class="PredSuccTasks" type="radio" value="' + items[i].Id + '" title="' + items[i].Title + '" name="mutlradio" checked="checked"></div>';
+                }
+                else {
+                    TaskHTML += '<tr><td><div class="dividorbox"><div class="checkboxinside"><input class="PredSuccTasks" type="radio" value="' + items[i].Id + '" title="' + items[i].Title + '" name="mutlradio"></div>';
+                }
+                TaskHTML += '<div class="daskboxsec"><h4>' + items[i].Title + '</h4><div class="projectsec">' + ProjectFullName + '</div></div></div></td>';
+                TaskHTML += '<td><div class="assignprimg">' + TaskAssignToUsers + '</div><div class="dutesection">';
+                TaskHTML += '<span>Date: </span><span>' + StartDate + '</span></div></td><td><div class="multeventbox">' + CurrentPhase + '</div>';
+                TaskHTML += '<div class="dutesection ' + DueDateClass + '"><span>' + DateText + ': </span><span>' + DueDate + '</span></div></td>';
+                TaskHTML += '<td style="display:none;">' + new Date(items[i].Created) + '</td><td style="display:none;">' + new Date(items[i].DueDate) + '</td><td style="display:none;">' + CurrentPhase + '</td>';
+                TaskHTML += '</tr>';
+            }
+            $(".SuccPredTaskTables").empty().append(TaskHTML);
+        }
+        else {
+            $(".SuccPredTaskTables").empty().append('<tr><td colspan="3"><div style="text-align:center;"> No task found.</div></td></tr>');
+        }
+        if (TaskHTML != '') {
+            TableConfSuccPredTask();
+        }
+        $("#successortask").modal("show");
+    });
+}
+
+//Table configuration of projects
+function TableConfSuccPredTask() {
+    sorter = new TINY.table.sorter('sorter', 'SuccTableTask', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 5,
+        colddid: 'Succcolumns',
+        currentid: 'currentpageSucc',
+        totalid: 'totalpagesSucc',
+        startingrecid: 'SuccStartrecord',
+        endingrecid: 'Succendrecord',
+        totalrecid: 'Succtotalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pagedropdownSucc',
+        navid: 'Succtablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+//Select Successor or Predecessor task
+function SelectSuccPredTask() {
+    EditMode = IsEditMode;
+    if (EditMode != undefined) {
+        EditMode = window.atob(EditMode);
+    }
+    /*$("#txtSuccTask").val('');
+    $("#txtSuccTask").attr("name", '');
+    $("#txtSuccTaskEdit").val('');
+    $("#txtSuccTaskEdit").attr("name", '');
+    $("#txtPredTaskEdit").val('');
+    $("#txtPredTaskEdit").attr("name", '');
+    $("#txtPredTask").val('');
+    $("#txtPredTask").attr("name", '');*/
+    if ($('input[name="mutlradio"]:checked')[0] != null) {
+        if ($("#txtModalTaskHeader").text() == "Successor Task") {
+            if (EditMode == "True") {
+                $("#txtSuccTaskEdit").val($('input[name="mutlradio"]:checked')[0].attributes.title.value);
+                $("#txtSuccTaskEdit").attr("name", $('input[name="mutlradio"]:checked').val());
+            }
+            else {
+                $("#txtSuccTask").val($('input[name="mutlradio"]:checked')[0].attributes.title.value);
+                $("#txtSuccTask").attr("name", $('input[name="mutlradio"]:checked').val());
+            }
+        }
+        else {
+            if (EditMode == "True") {
+                $("#txtPredTaskEdit").val($('input[name="mutlradio"]:checked')[0].attributes.title.value);
+                $("#txtPredTaskEdit").attr("name", $('input[name="mutlradio"]:checked').val());
+            }
+            else {
+                $("#txtPredTask").val($('input[name="mutlradio"]:checked')[0].attributes.title.value);
+                $("#txtPredTask").attr("name", $('input[name="mutlradio"]:checked').val());
+            }
+        }
+    }
+    else {
+        if ($("#txtModalTaskHeader").text() == "Successor Task") {
+            $("#txtSuccTask").val('');
+            $("#txtSuccTask").attr("name", '');
+            $("#txtSuccTaskEdit").val('');
+            $("#txtSuccTaskEdit").attr("name", '');
+        }
+        else {
+            $("#txtPredTask").val('');
+            $("#txtPredTask").attr("name", '');
+            $("#txtPredTaskEdit").val('');
+            $("#txtPredTaskEdit").attr("name", '');
+        }
+    }
+    $("#successortask").modal("hide");
+}
+
+//Sort Succ/Pred tasks
+function SortPredSuccTable(Name) {
+    if (Name == "Task Name") {
+        $("#SortTaskTitle").trigger("click");
+    }
+    else if (Name == "Recent Task") {
+        $("#SortTaskRecent").trigger("click");
+    }
+    else if (Name == "Due Date") {
+        $("#SortTaskDue").trigger("click");
+    }
+    else {
+        $("#SortTaskPhase").trigger("click");
+    }
+
+}
+/******************************Change History lakhan******************************************-*/
+
+function getOnChangeHistory(TaskId) {
+    var CurrentDate = new Date();
+    CurrentDate = CurrentDate.setHours(0, 0, 0, 0);
+    CurrentDate = new Date(CurrentDate);
+    var Query = "?$top=5000&$select=*,LastActionby/ID,LastActionby/Title&$Expand=LastActionby&$filter=TaskID eq '" + TaskId + "'";
+    $.when(getItemsWithQuery('TaskAuditTrail', Query)).done(function (TaskAuditTrail) {
+        $('#bodyChangeHistory').html('');
+        var tblHTML='';
+        if(TaskAuditTrail.length>0)
+        {
+            
+            for(var i=0;i<TaskAuditTrail.length;i++)
+            {
+                var Modified=TaskAuditTrail[i].Modified;
+                Modified=changeDateFormate(Modified);
+                var Activity=TaskAuditTrail[i].Activity;
+                var OnChange=TaskAuditTrail[i].OnChange;
+                if(OnChange==null)OnChange='';
+                var OldValues=TaskAuditTrail[i].OldValues;
+                if(OldValues==null)OldValues='';
+                var CurrentValues=TaskAuditTrail[i].CurrentValues;
+                if(CurrentValues==null)CurrentValues='';
+                var LastActionby=TaskAuditTrail[i].LastActionby.Title;
+                tblHTML+='<tr>'
+                    tblHTML+='<td><span class="date_dfine">'+Modified+'</span></td>'
+                    tblHTML+='<td><div  class="modify_dfine">'+Activity+'</div ></td>'
+                    tblHTML+='<td><div  class="task_dName ellipsis-2">'+OnChange+'</div ></td>'
+                    tblHTML+='<td><div  class="task_OName ellipsis-2">'+OldValues+'</div ></td>'
+                    tblHTML+='<td><div  class="task_newName ellipsis-2">'+CurrentValues+'</div ></td>'
+                    tblHTML+='<td>'+LastActionby+'</td>'
+               tblHTML+='</tr>';
+            }
+        }
+        else
+        {
+            tblHTML+='<tr><td style="text-align:center">No record founds</td></tr>';
+        }
+        $('#bodyChangeHistory').append(tblHTML);
+       
+    });
+}
+
+function changeDateFormate(modified)
+{
+    var modified=new Date(modified);
+    var tempTime=new Date(modified).toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    }).toLocaleUpperCase();
+
+    tempDate=$.datepicker.formatDate('MM dd, yy', modified);
+    var finalDateTime=(tempDate+ " " + tempTime);
+
+    return finalDateTime;
+}

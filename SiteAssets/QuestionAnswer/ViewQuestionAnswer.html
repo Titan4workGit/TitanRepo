@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>Announcement</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"  href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/QuestionAnswer/ViewQuestionAnswer.css">
+	<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/js/bootstrap-datepicker.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/OccasionView/js/moment.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/QuestionAnswer/newViewQuestionAnswer.js?12345'></script>
+		
+	
+
+<style>
+
+.questions-inner-card-body p{
+ margin-bottom:6px !important;	
+}
+
+div.ms-webpart-cell-vertical-inline-table,
+.ms-webpart-chrome-vertical{
+	display:block !important;
+}
+
+/* new css added on 13/8/2021 */
+
+.experiences-inner-card-row, .experiences-card-panel-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.experiences-inner-card {
+    display: flex;
+    align-items: center;
+}
+.experiences-inner-card-head {
+    max-width: 55px;
+    min-width: 55px;
+    height: 55px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.experiences-inner-card-head>img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: contain;*/
+    object-fit: cover;
+}
+.experiences-inner-card-body {
+    padding-left: 12px;
+    width: 100%;
+}
+.member-deg, .member-dep, .member-date {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.member-deg {
+    margin-bottom: 2px;
+}
+.member-deg, .member-date {
+    font-size: 12px;
+}
+.member-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+.member-date {
+    margin-bottom: 0px;
+}
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.experiences-inner-card-btn-panel {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: flex-end;
+}
+.experiences-inner-card-btn-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.experiences-inner-card-btn-panel div {
+    line-height: 0px;
+    font-size: 14px;
+}
+.experiences-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+.experiences-inner-card-btn-panel-icon button {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 0px;
+}
+.experiences-inner-card-btn-panel-icon button:active {
+    box-shadow: none;
+}
+.experiences-inner-card-btn-panel-icon img {
+    max-width: 16px;
+}
+.experiences-inner-card-btn-panel-dot span {
+	display: block;
+	height: 4px;
+	width: 4px;
+	border-radius: 50%;
+	background-color: #000000;
+	margin: 0px 8px;
+	margin-top: 2px;
+	opacity: 0.4;
+}
+.questions-card-body-dec {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    /*min-height: 54px;*/
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+}
+.experiences-inner-card-body .experiences-inner-card-body-info .member-deg, .experiences-inner-card-body .experiences-inner-card-body-info .member-date {
+    margin-bottom: 4px;
+}
+.last-comment-detail {
+    font-weight: 500;
+    margin-left: 3px;
+}
+.draft-info {
+    padding: 12px 9px;
+}
+.experiences-inner-card-btn-panel-dot {
+    opacity: 0;
+}
+
+.pending {
+    opacity: 0;
+}
+
+
+/* new css added on 12/8/2021 */
+
+.questions-card-body-head .button-ed-menu {
+    min-width: 2em;
+}
+
+/* new css added on 18/8/2021 */
+
+.experiences-inner-card-head {
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+}
+.experiences-inner-card-body .member-name {
+    font-weight: 500;
+    font-size: 12px;
+}
+.experiences-inner-card-body .member-date {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 0 !important;
+}
+.questions-card-body-dec {
+    margin-bottom: 28px;
+}
+
+/* new css added on 20/8/2021 */
+
+.view-QA-head-panel {
+    margin-bottom: 20px;
+}
+.view-QA-head-panel .chip-panel {
+    overflow-x: auto;
+}
+.view-QA-head-panel .chip-panel .chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.view-QA-head-panel .chip-panel .chip-box .upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 12px;
+}
+.view-QA-head-panel .chip-panel .chip-box .upload-chip:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+.view-QA-sorting .dropdown-filter {
+    margin-right: 10px;
+}
+.custom-dropdown .dropdown-menu li a {
+    cursor: pointer;
+}
+#announcement-filter .close .close-icon {
+    top: -1px;
+}
+
+/* new css added on 24/8/2021, 13/1/2022 */
+
+.questions-card-body {
+    padding: 15px 0px 15px 0px !important;
+}
+.experiences-inner-card-row, .experiences-card-panel-row {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.questions-inner-card-row .mb10 {
+    margin-bottom: 0 !important;
+}
+.questions-inner-card-row .audience-name {
+    margin-bottom: 14px;
+}
+.questions-inner-card-row .posted-date {
+    margin-bottom: 0;
+}
+.questions-card-body-dec>div {
+    max-height: 75px !important;
+}
+.container-content {
+    width: 100% !important;
+}
+
+.questions-inner-card-head>img,
+.experiences-inner-card-head a img,
+.questions-inner-card-head a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* new css added on 16-dec-022 */
+
+.panel-img-heading-questions.CategoryDiv {
+    background-color: #494948 !important;
+    color: #fff !important;
+    position: relative;
+    left: -15px;
+    top: -15px;
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 6px 0px 8px 0px;
+}
+
+/* responsive css start */
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+
+	.questions-card-body-dec {
+	    -webkit-line-clamp: 2;
+	}
+	.questions-inner-card-row .experiences-inner-card-btn-panel {
+	    margin-bottom: 15px;
+	} 
+	.questions-inner-card-row .experiences-inner-card-btn-panel img {
+	    max-width: 14px;
+	}
+
+}
+
+@media(max-width:767px) {
+
+	.article-content{
+	  	margin:20px 3px !important;	
+	}
+	.view-QA-sorting {
+	    flex-wrap: wrap;
+	}
+	.experiences-inner-card-row, .experiences-card-panel-row {
+	    position: relative;
+	    bottom: auto;
+	}
+	.experiences-inner-card-btn-panel {
+	    justify-content: flex-start;
+	    margin-bottom: 15px;
+	}
+	
+}
+
+@media all and (max-width: 367px) and (min-width: 320px){
+
+    .view-QA-sorting .dropdown-sorting {
+	    margin-top: 10px;
+	}
+	
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1229</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3244c757-82dc-41e0-99fc-8ddb78359ce0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1229, ADMIN-1645029823-1229</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">122900.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid container-content all-align-gap-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="custom-panel">
+					<div class="panel-head">
+						<h1 class="announcement-head-text" data-localize="Questions & Answers">Questions</h1>
+					</div>
+					<div class="panel-body announcement-panel-body" id="">
+
+						<div class="row announcement-head-panel view-QA-head-panel">
+							<div class="col-md-12 col-sm-12 view-QA-head-panel-inside">
+								<div class="scrollbar-panel chip-panel">
+									<div class="chip-box" id="occasionChip">
+										<!-- <span class="upload-chip" id="chipcategoryDev"></span>
+										<span class="upload-chip" id="chipPostedByDev"></span> -->
+									</div>
+								</div>
+							</div>
+			    		</div>
+
+						<div class="row announcement-head-panel">
+							<div class="col-sm-6">
+								<div class="input-group custom-form-group announcement-form-group">
+									<input type="text" class="form-control" id="SearchInput" name="" placeholder="Search">
+									<button class="input-group-addon" type="button" id="btnSearchtxt">
+										<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/search-icon.png" class="search-icon" alt="search-icon"></button>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="announcement-head-btn view-QA-sorting">
+									<div class="my_view_announce_add_btn dropdown pull-right">
+									<button type="button" id="btnaddQuestion" class="btn custom-btn" >New</button>
+			   						</div>
+	  								<button type="button" class="btn custom-btn w-87 dropdown-filter" data-toggle="modal" data-target="#announcement-filter" style="padding:0;">Filter</button>
+	  								<div class="dropdown custom-dropdown Not4Banners dropdown-sorting">
+										<button type="button" class="btn custom-btn dropdown-toggle w-87" data-toggle="dropdown" aria-expanded="false">Sorting</button>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a onclick="ArrangeData('Most_Recent')">Most Recent</a></li>
+											<li><a onclick="ArrangeData('Most_Viewed')">Most Viewed</a></li>
+											<li><a onclick="ArrangeData('Most_Liked')">Most Liked</a></li>
+											<li><a onclick="ArrangeData('Most_Commented')">Most Answerd</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div id=""></div>
+						<div class="questions-card-panel" id="ViewAllQuestionee">
+						
+						<div class="row questions-card-panel-row questions-card-panel-row-bg mx-0">
+								<div class="col-xs-12">
+									<div class="questions-card-body">
+										<div class="row questions-inner-card-row">
+											<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+												<div class="panel-img-heading-questions">Questions & Answers</div>
+												<div class="mb10">
+													<p class="audience-name text-ellipsis">
+														<span>Audience: <span>Corporate</span></span>
+													</p>
+													<p class="posted-date text-ellipsis">
+														<span>Posted on: 08 Feb 2021</span>
+													</p>
+												</div>
+												<div class="questions-inner-card">
+													<div class="questions-inner-card-head">
+														<img src="assets/images/img-21.jpg" alt="user">
+													</div>
+													<div class="questions-inner-card-body text-ellipsis">
+														<div class="questions-inner-card-body-info text-ellipsis">
+															<h3 class="member-name text-ellipsis">Narayan Das</h3>
+															<p class="member-deg text-ellipsis">
+																<span>Project Leader</span>
+															</p>
+															<p class="member-date text-ellipsis">
+																<span>Marketting</span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+												<div class="questions-card-body-head">
+													<h3 class="m-0 questions-card-body-head-text"><a href="questions-Details.html">What is best feature in M51?</a></h3>
+													<div class="dropdown custom-card-menu">
+														<button class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">
+															<img src="assets/images/more-horiz.png">
+														</button>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="questions-card-body-dec">Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, Details of achievements, â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦</div>
+												<div class="questions-inner-card-btn-panel questions-inner-card-btn-panel-isTab">
+													<div class="draft-info">Draft</div>
+													<ul class="questions-inner-card-btn-item" style="display: none;">
+														<li class="questions-inner-card-btn-panel-icon">
+															<img src="assets/images/like-icon.png">
+														</li>
+														<li class="questions-inner-card-btn-panel-count">236</li>
+														<li class="questions-inner-card-btn-panel-dot"><span></span></li>
+														<li class="questions-inner-card-btn-panel-icon">
+															<img src="assets/images/chat-icon.png">
+														</li>
+														<li class="questions-inner-card-btn-panel-count">146</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						
+						
+						
+						
+						</div>-->
+						
+						<div id="ViewAllQuestion"></div>
+						
+						<div class="announcement-pagination-panel">
+							<button type="button" class="btn custom-btn w-87" style="display:none" id="btnSeeMore">See More</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="announcement-filter" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close close-round" data-dismiss="modal"><span
+							class="close-icon">×</span></button>
+					<h4 class="modal-title">Filter</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Display From:</label>
+								<input class="form-control" type="date" id="fromPublishDate">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Display To:</label>
+								<input class="form-control" type="date" id="ToPublishDate">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Category:</label>
+								<select class="form-control" id="ddlCategory">
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Posted By:</label>
+								<div id="PostedByPplPicker"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer announcement-modal-footer">
+					<button type="button" class="btn custom-btn mr-8 w-87" id="btnApply" data-dismiss="modal">Apply</button>
+					<button type="button" class="btn custom-btn-two-cancel w-87" id="btnClear">Clear</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--new Display Announcements popup starts-->
+    <div id="Announcement_Alert" class="modal fade" role="dialog" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg new-announcement-alert-modal">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                        <button type="button" class="close common-modal-close" id="btnCloseViewModal">×</button>
+                        <div class="panel-heading panel-heading-common-popup">
+                            <span class="common-head-text-popup" id="_ModelHeading">Announcement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+                        <div class="common-image-section-popup">
+                            <img id="NoticeBgImage" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png" class="img-responsive" alt="" />
+                            <div class="shade-common-popup"></div>
+                        </div>
+
+                        <div class="col-md-9 col-sm-9 col-xs-12 common-content-popup pl20 pr0">
+                            <p class="common-title-popup" id="_TextTitle"></p>
+                            <p><span class="date-time-card" id="AnnouncmntAuthor"></span> | <span class="date-time-card" id="AnnouncmntCreated"> </span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pt15 pl20 pr20 pb15">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-popup-description-text">
+                            <p id="_DtlDescription"><a class="common-popup-description-more" href="javascript:void(0);" id="annReadMore" style="display:none;">Read More</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 common-popup-link p0" id="divLink">
+                            <strong>Link :</strong>
+                            <a href="javascript:void(0);" id="_WebLink"></a>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                        <div class="col-md-12 col-sm-12 col-xs-12 pt10 pl0 pr0">
+                            <div class="attachment-badge-popup mt-10" id="_AttachDocument">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-10 col-sm-12 col-xs-12 p0 ma0 overmanage">
+                            <div id="imagesgeneral" class="col-sm-12 pt10 pl0 pr0 pb40" style="display:none;">
+                                <div id="myCarousel" class="carousel slide common-media-image " data-ride="carousel" data-interval="false">
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" id="AnnouncemntImages">
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control arrow-custom ImageArrow" href="javascript:void(0);" data-slide="prev" data-target="#myCarousel">
+                                        <span class="glyphicon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control arrow-custom ImageArrow" href="javascript:void(0);" data-slide="next" data-target="#myCarousel">
+                                        <span class="glyphicon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--new Display Announcements popup ends-->
+    
+	<!--Iframe Image POpup starts-->
+	<div class="modal fade" id="AttachmentView" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	
+	        <!-- Modal content-->
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title">Attachment View
+	                </h4>
+	            </div>
+	            <div class="modal-body form-horizontal">
+	
+	                <div class="embed-responsive embed-responsive-16by9">
+	                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+	                    <div id="doc-viewer" style="height:415px">
+	                                                        </div>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!--Iframe Image POpup ends-->
+	<script>
+		$("#datepicker").datepicker({
+		    format: "yyyy",
+		    viewMode: "years", 
+		    minViewMode: "years"
+		});
+	$(document).ready(function(){
+	  ChangeLabels();
+	})
+	
+	/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'Home Page' ";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}        
+</script>
+
+</body>
+
+</html>

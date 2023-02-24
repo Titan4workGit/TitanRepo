@@ -1,0 +1,370 @@
+﻿
+body #s4-bodyContainer {
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
+}
+
+#s4-bodyContainer {
+	 /* font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important; */
+}
+#s4-bodyContainer {
+    /* font-family: BasierSquare-Regular; */
+}
+@font-face {
+    font-family: BasierSquare-Regular;
+    src: url('../fonts/BasierSquare-Regular.woff'); 
+}
+
+
+/*
+button:focus {
+    outline: none !important;	
+}
+a {
+    color: #333;
+    text-decoration: none !important;
+}
+.w-15 {
+    width: 15%;
+}
+.w-10 {
+    width: 10%;
+}
+.font-12 {
+    font-size: 12px;
+}
+.m-0 {
+    margin: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.ml-8 {
+    margin-left: 8px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-20 {
+    width: 20%;
+}
+.w-30 {
+    width: 30%;
+}
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+}
+
+.timesheet-panel-head {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 425px) {
+    .timesheet-panel-head {
+        flex-direction: column;
+    }
+    .timesheet-add-new {
+        text-align: right;
+        margin-top: 6px;
+    }
+}
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+
+.scrollbar-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+.table-responsive-2 {
+    border: 1px solid #ddd;
+}
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+@media (max-width: 991px) {
+    .table-responsive-2 .custom-table {
+        min-width: 800px;
+    }
+}
+@media screen and (max-width: 767px){
+    .table-responsive>.table>tbody>tr>td, 
+    .table-responsive>.table>tbody>tr>th, 
+    .table-responsive>.table>tfoot>tr>td, 
+    .table-responsive>.table>tfoot>tr>th, 
+    .table-responsive>.table>thead>tr>td, 
+    .table-responsive>.table>thead>tr>th {
+         white-space: normal; 
+    }
+}
+.custom-btn {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover, .custom-btn:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+
+// timesheet  stye
+
+.timesheet-table {
+    word-break: break-word;
+}
+.custom-timesheet-panel .panel {
+    border-radius: 0px;
+}
+.timesheet-date-file {
+    max-width: 250px;
+    width: 100%;
+}
+.timesheet-box {
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+.timesheet-today-date-panel {
+    width: 30%;
+    text-align: right;
+    padding: 0 15px;  
+    display: flex;
+    justify-content: flex-end;  
+}
+.timesheet-today-date {
+    padding: 4px 10px;
+    text-align: center;
+    background: #f5f5f5;
+    max-width: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.panel-group .timesheet-panel-heading {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;  
+    cursor: pointer;
+}
+.timesheet-panel-heading .panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timesheet-hrs {
+    color: #1d6ec0;
+}
+.timesheet-hrs:hover {
+    text-decoration: underline !important;
+}
+.timesheet-panel-heading .panel-title .panel-title-link {
+    display: flex;
+    align-items: center;
+    width: 88%;
+    padding: 10px 0;
+}
+.timesheet-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.timesheet-right-time-box-one {
+    border-right: 1px solid #d2d2d2;
+}
+.timesheet-right-time-box-two,
+.timesheet-right-time-box-one {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 575px) {
+    .timesheet-t-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .timesheet-t-pr {
+        font-size: 12px;
+    }
+    .timesheet-right-time-box-two, .timesheet-right-time-box-one {
+        padding: 10px 0px;
+    }
+}
+@media (max-width: 991px) {
+    .timesheet-panel-heading .panel-title .panel-title-link {
+        width: 83%;
+    }
+}
+@media (max-width: 680px) {
+    .timesheet-panel-heading .panel-title .panel-title-link {
+        width: 80%;
+    }
+}
+@media (max-width: 575px) {
+    .timesheet-panel-heading .panel-title .panel-title-link {
+        width: 72%;
+    }
+}
+@media (max-width: 432px) {
+    .timesheet-panel-heading .panel-title .panel-title-link {
+        width: 64%;
+    }
+}
+@media (max-width: 375px) {
+    .timesheet-panel-heading .panel-title .panel-title-link {
+        width: 54%;
+    }
+}
+.timesheet-panel-heading .panel-title .panel-title-link .timesheet-project-name-box {
+    display: flex;
+    width: 100%;
+    margin-left: 8px;
+    font-size: 14px;
+} 
+.timesheet-panel-heading .panel-title .panel-title-link .timesheet-project-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+
+}
+.timesheet-panel-heading .panel-title .timesheet-total-time {
+    padding: 11px 0;
+    background: #f5f5f5;
+    max-width: 84px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.timesheet-panel-heading .panel-title .panel-title-link .collapse-arrow {
+    transition: all 0.4s;
+    transform-origin: center;
+    color: #1d6ec0;
+}
+.timesheet-panel-heading[aria-expanded="true"] .panel-title .panel-title-link .collapse-arrow {
+    transform: rotate(90deg);
+}
+.timesheet-table tr th {
+    font-weight: 400;
+}
+@media (max-width: 1199px) {
+    .timesheet-table {
+        min-width: 1070px !important;
+    }
+}
+.custom-btn-two-cancel {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover, .custom-btn-two-cancel:focus {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.w-102 {
+    width: 102px;
+}
+.chip-panel {
+    overflow-x: auto;
+}
+.chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+}
+.upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+}
+.upload-chip:hover {
+    background-color: #f2f2f2;
+}
+.timesheet-table-ellipsis-2 {
+    -webkit-line-clamp: 2;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.timesheet-modal-footer {
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .timesheet-btn-position {
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .timesheet-btn-position {
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .timesheet-date-box-isPhone {
+        width: 100%;
+    }
+    .timesheet-filter-istab .col-xs-6 {
+        width: 100%;
+    }
+}
+
+*/
