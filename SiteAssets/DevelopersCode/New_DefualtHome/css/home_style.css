@@ -22,7 +22,7 @@ body {
 }
 @font-face {
   font-family: BasierSquare-Regular;
-  src: url('../../DefaultHome/fonts/BasierSquare-Regular.woff'); 
+  src: url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DefaultHome/fonts/BasierSquare-Regular.woff'); 
 }
 
 ol, ul {
@@ -8606,6 +8606,10 @@ right: 3px;
 {
    width: 56px !important;
   height: 56px !important;
+}
+
+#DeltaPlaceHolderMain .ms-webpart-cell-horizontal {
+    display: block;
 }
 
 /* End CSS For Left and Right Arrow For BirthdayWebpart
