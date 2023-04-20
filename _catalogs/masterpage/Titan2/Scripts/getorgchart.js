@@ -1,4 +1,4 @@
-getOrgChartW = '</div>';
+getOrgChartW = '</div>'; 
 var getOrgChartW;
 getOrgChart = function (b, a) {
     this.config = {
