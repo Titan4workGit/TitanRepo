@@ -9688,7 +9688,10 @@ function GetDocumentsSharedWithMe(SectionName) {
             $("#divPendingAck").hide();
         }
         ChangeLabels();
-    });
+    }).error(function() {
+		alert("error");
+		$('.loading_tbl').hide();
+	  });
 }
 //Bhawana
 //Bind approval for share
