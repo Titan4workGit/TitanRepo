@@ -44,7 +44,14 @@
             GetCompanies();
             initializePeoplePicker("spnPplManager");//For Manager
             getAllEmplCount();
+			setTimeout(function()
+			{
+				$("#btnApply").trigger("click");
+				
+			},5000);
         }, 500);
+		
+		
     }
 
     //Clear all selection in filter popup
