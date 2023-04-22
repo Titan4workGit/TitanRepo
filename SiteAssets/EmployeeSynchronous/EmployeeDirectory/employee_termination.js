@@ -1,1 +1,552 @@
-var a241_0x4a440b=a241_0x3cb2;(function(_0x57286a,_0xd039b9){var _0x5dfb52=a241_0x3cb2,_0xe75112=_0x57286a();while(!![]){try{var _0x33e8a7=-parseInt(_0x5dfb52(0x1b3))/0x1+-parseInt(_0x5dfb52(0x1a3))/0x2*(parseInt(_0x5dfb52(0x1bc))/0x3)+parseInt(_0x5dfb52(0x1b0))/0x4+parseInt(_0x5dfb52(0x18b))/0x5+-parseInt(_0x5dfb52(0x14e))/0x6*(-parseInt(_0x5dfb52(0x14d))/0x7)+parseInt(_0x5dfb52(0x146))/0x8+parseInt(_0x5dfb52(0x150))/0x9*(-parseInt(_0x5dfb52(0x180))/0xa);if(_0x33e8a7===_0xd039b9)break;else _0xe75112['push'](_0xe75112['shift']());}catch(_0x3e8330){_0xe75112['push'](_0xe75112['shift']());}}}(a241_0x2cf9,0xdf304));var currentCompanyid='',employeedIddetails='',departmentID='',sourcelocation='',openTaskID=new Array(),app=angular['module']('myApp',[]);function updateItemWithID(_0x2e8030,_0x536fc3,_0x489718){var _0x315fb8=a241_0x3cb2,_0x1e137b=$[_0x315fb8(0x1ca)]();return $[_0x315fb8(0x154)]({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27'+_0x2e8030+_0x315fb8(0x196)+_0x489718+'\x27)','type':_0x315fb8(0x168),'async':![],'headers':{'accept':_0x315fb8(0x1ac),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x315fb8(0x144)](),'content-Type':_0x315fb8(0x1ac),'X-Http-Method':_0x315fb8(0x156),'If-Match':'*'},'data':JSON['stringify'](_0x536fc3),'success':function(_0x2184f6){_0x1e137b['resolve'](!![]);},'error':function(_0x507576){var _0x2f0370=_0x315fb8;alert(JSON[_0x2f0370(0x145)](_0x507576)),_0x1e137b[_0x2f0370(0x171)](_0x507576);}}),_0x1e137b[_0x315fb8(0x174)]();}function GetItemTypeForListName(_0x2790e3){var _0x389767=a241_0x3cb2;return _0x389767(0x19e)+_0x2790e3[_0x389767(0x1ae)](0x0)[_0x389767(0x151)]()+_0x2790e3['split']('\x20')[_0x389767(0x193)]('')[_0x389767(0x1b2)](0x1)+_0x389767(0x1d0);}function a241_0x2cf9(){var _0x56777c=['statusText','100%','CompanyId','show','ListItem','department','hide','Designation','EMail','dateofTermination','getTime','val','stringify','10012360pyRdWO','Access\x20shifted\x20due\x20to\x20termination','Terminated','LogonNameId','\x27\x20and\x20Status\x20eq\x20\x27Active\x27','/_layouts/15/userphoto.aspx?accountname=','ProjectTeamDetails','7909349JiOZbp','6hWqbZR','GetAttachment','17736084uKXrfP','toUpperCase','log','datepicker','ajax','Cancelled','PATCH','message','SP.Data.DMS_x005f_Access_x005f_DelegationListItem','ManagerLoginName','OfficeLocation','ServerRelativeUrl','teamporaryImageUrl','#__REQUESTDIGEST','resolve','dd/mm/yy','employeedIddetails','RedirectPage','EmployeeCheckListValidation','Please\x20Enter\x20reassigned\x20to\x20Project\x20Mamber!','accountObjecttion','dd/MM/yyyy','Please\x20Enter\x20personal\x20documents\x20reassigned\x20to\x20Project\x20Mamber\x20Name!','DisplayText','POST','Successfully\x20Terminated.','itObjecttion','updateInformation','when','currentitemId','Please\x20Enter\x20personal\x20documents\x20reassigned\x20to\x20subordinates\x20Project\x20Mamber\x20Name!','AllowMultipleValues','company','reject','option','ProjectManagerPicker','promise','getQueryStringParameter','indexOf','controller','length','/_api/web/Lists/GetByTitle(\x27DMS_Access_Delegation\x27)/Items','DMS_Access_Delegation','imageUrl','FullName','DepartmentName','allTaskClosed','?WebAppId=','10KAexvD','updateTerminationInformation','/_api/web/lists/GetByTitle(\x27ProjectTeamDetails\x27)/items?$select=ID,TeamMember,TeamMember/UserName&$expand=TeamMember&$filter=TeamMember/UserName\x20\x20eq\x20\x27','ProjectName','SetEmployeeDetails','https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/DocumentManagementSystem/Forms/AllItems.aspx','LogonName','GetEmployeeTeamList','User','userID','Please\x20Enter\x20reassigned\x20to\x20subordinates\x20Mamber!','7514130nqGEpJ','Status','generalOpenTask','hraObjecttion','eMail','GetEmployeeTasks','i:0#.f|membership|','managerPicker','join','sourcelocation','subordinatesManagerPicker','\x27)/GetItemById(\x27','push','EmployeeTaskDetails','officeLocation','MY\x20DMS','myWelcome','[id^=\x27','ResolvePrincipalSource','SP.Data.','Please\x20try\x20again,\x20something\x20went\x20wrong\x20.','/_api/web/lists/GetByTitle(\x27Employees\x27)/items?$select=ID,Email,LogonNameId,DateofTermination,Gender,EmployeeID,GroupName,HomeAddress,HomePhone,JoiningDate,PostalAddresses,OtherEMailAddress,StateProvince,Status,ZIPPostalCode,Country,DateOfAnniversary,DateOfBirth,City,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/UserName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName,ManagerLoginName/EMail&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department,AttachmentFiles&$filter=ID\x20\x20eq\x20\x27','Department','-10:+0','7580XdzBTn','siteAbsoluteUrl','Active','attr','Email','updateTeamStatusInformation','/_api/web/siteusers(@v)?@v=\x27','SearchPrincipalSource','confirmation','application/json;odata=verbose','add\x20DMS_Access_Delegation\x20!','charAt','then','620676JZetMC','Please\x20Enter\x20the\x20Termination\x20Date\x20of\x20the\x20Employee.','slice','919611SgqbYt','projectTask','dateFormat','GET','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=ID,DepartmentId,LogonName/EMail,Company/ID&$expand=LogonName,Company&$filter=LogonName/EMail\x20\x20eq\x20\x27','webAbsoluteUrl','GetEmployees','Do\x20You\x20Want\x20to\x20Terminate\x20this\x20Employee?','application/json;\x20odata=verbose','186CGcnqs','\x27\x20and\x20CurrentPhase\x20eq\x20\x27Open\x27','data','redirectCancel','SPClientPeoplePickerDict','mystatus','closeAllOpenTasks','employeeName','AttachmentFiles','split','results','toISOString','Key','&DepartmentId=','Deferred','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg'];a241_0x2cf9=function(){return _0x56777c;};return a241_0x2cf9();}function GetDateStandardFormat(_0xc2467d){var _0x57df89=a241_0x3cb2,_0x13789d='';if(_0xc2467d!=null&&_0xc2467d!=''){var _0x35f4ad=ConvertDateFormatToddMMyyyy(_0xc2467d),_0x2dc733=new Date(_0x35f4ad),_0x3d0bb7=0x3c*0x3c*0x18*0x3e8,_0x11a478=new Date(_0x2dc733[_0x57df89(0x143)]());_0x13789d=_0x11a478[_0x57df89(0x1c7)]();}return _0x13789d;}function ConvertDateFormatToddMMyyyy(_0x1592ed){var _0x53961a=a241_0x3cb2,_0x1d5ec3=stringToDate(_0x1592ed,_0x53961a(0x165),'/');return _0x1d5ec3;}function stringToDate(_0x361401,_0xc11478,_0x259651){var _0x4e87a7=a241_0x3cb2,_0x39138a=_0xc11478['toLowerCase'](),_0x3a8ddd=_0x39138a['split'](_0x259651),_0x52c6c8=_0x361401[_0x4e87a7(0x1c5)](_0x259651),_0x48d0f4=_0x3a8ddd[_0x4e87a7(0x176)]('mm'),_0x43c962=_0x3a8ddd['indexOf']('dd'),_0x389d57=_0x3a8ddd['indexOf']('yyyy'),_0x58d5c4=parseInt(_0x52c6c8[_0x48d0f4]);_0x58d5c4-=0x1;var _0x125857=new Date(_0x52c6c8[_0x389d57],_0x58d5c4,_0x52c6c8[_0x43c962]);return _0x125857;}app[a241_0x4a440b(0x177)]('myCtrl',function(_0x2b8544,_0x5358c1){var _0x4372a9=a241_0x4a440b;currentCompanyid=titanForWork[_0x4372a9(0x175)](_0x4372a9(0x1ce)),departmentID=titanForWork['getQueryStringParameter']('department'),employeedIddetails=titanForWork[_0x4372a9(0x175)](_0x4372a9(0x160)),sourcelocation=titanForWork[_0x4372a9(0x175)](_0x4372a9(0x194)),_0x2b8544['currentitemId']=employeedIddetails,_0x2b8544[_0x4372a9(0x15c)]='',_0x2b8544[_0x4372a9(0x17b)]=_0x4372a9(0x1cb),_0x2b8544[_0x4372a9(0x170)]=currentCompanyid,_0x2b8544['managerObject']=![],_0x2b8544[_0x4372a9(0x164)]=![],_0x2b8544[_0x4372a9(0x16a)]=![],_0x2b8544[_0x4372a9(0x18e)]=![],_0x2b8544[_0x4372a9(0x17e)]=![],_0x2b8544[_0x4372a9(0x142)]='',_0x2b8544['EmployeeCheckListValidation']=function(){var _0x1a7678=_0x4372a9;try{var _0x2627ff=_spPageContextInfo[_0x1a7678(0x1b8)]+_0x1a7678(0x1b7)+_0x2b8544[_0x1a7678(0x189)]+'\x27';_0x5358c1({'url':_0x2627ff,'method':_0x1a7678(0x1b6),'async':![],'headers':{'Accept':_0x1a7678(0x1ac)}})[_0x1a7678(0x1af)](function _0x17f00d(_0x5d7448){var _0x55d2db=_0x1a7678;for(var _0x13e2ca=0x0;_0x13e2ca<_0x5d7448[_0x55d2db(0x1be)]['d'][_0x55d2db(0x1c6)]['length'];_0x13e2ca++){_0x2b8544[_0x55d2db(0x16b)](_0x5d7448[_0x55d2db(0x1be)]['d'][_0x55d2db(0x1c6)][_0x13e2ca]['ID'],_0x55d2db(0x148),'Employees');}},function _0x4e28a4(_0x233714){var _0xa254b8=_0x1a7678;_0x2b8544[_0xa254b8(0x19b)]=_0x233714[_0xa254b8(0x1cc)];});}catch(_0x254713){waitingDialog[_0x1a7678(0x13f)](),alert('LogonName\x20is\x20not\x20in\x20valid\x20format\x20!');}},_0x2b8544['updateTerminationInformation']=function(){var _0x52ffb4=_0x4372a9;try{waitingDialog[_0x52ffb4(0x1cf)](),$[_0x52ffb4(0x16c)](_0x2b8544[_0x52ffb4(0x162)]())['done'](function(_0xc3447f){var _0x592502=_0x52ffb4;for(var _0x522eac=0x0;_0x522eac<openTaskID['length'];_0x522eac++){_0x2b8544[_0x592502(0x1c2)](openTaskID[_0x522eac],_0x592502(0x155),_0x592502(0x198));}_0x2b8544[_0x592502(0x187)](),setTimeout(function(){var _0x427f43=_0x592502;alert(_0x427f43(0x169)),waitingDialog['hide']();},0x2710);});}catch(_0x4b07ef){alert(_0x52ffb4(0x19f)),_0x2b8544[_0x52ffb4(0x1c1)]=_0x52ffb4(0x1a5),waitingDialog[_0x52ffb4(0x13f)]();}},_0x2b8544[_0x4372a9(0x1ab)]=function(){var _0x1eade7=_0x4372a9,_0x59f3a9,_0x44fa62=confirm(_0x1eade7(0x1ba));if(_0x44fa62==!![]){if(_0x2b8544['dateofTermination']!=''&&_0x2b8544[_0x1eade7(0x142)]!=null){var _0x4372c6=getPeopleUserInfoGroups('ProjectManagerPicker');if(_0x4372c6[_0x1eade7(0x178)]==0x0)return alert(_0x1eade7(0x166)),![];var _0xad5188=getPeopleUserInfoGroups(_0x1eade7(0x195));if(_0xad5188[_0x1eade7(0x178)]==0x0)return alert(_0x1eade7(0x16e)),![];var _0x42b876=getPeopleUserInfoGroups(_0x1eade7(0x192));if(_0x42b876[_0x1eade7(0x178)]==0x0)return alert('Please\x20Enter\x20personal\x20documents\x20reassigned\x20to\x20Mamber\x20Name!'),![];_0x2b8544[_0x1eade7(0x181)](),addDMS_Access_Delegation(_0x2b8544[_0x1eade7(0x18f)],_0x2b8544[_0x1eade7(0x149)]);}else alert(_0x1eade7(0x1b1));}else{}},_0x2b8544[_0x4372a9(0x1bf)]=function(){var _0x503621=_0x4372a9;_0x2b8544[_0x503621(0x161)](sourcelocation);},_0x2b8544[_0x4372a9(0x161)]=function(_0x2a9ef9){var _0x44229f=_0x4372a9,_0x56a59c='';departmentID!=null&&departmentID!=''&&(_0x56a59c=_0x44229f(0x1c9)+departmentID);var _0x207c94=_0x2a9ef9+_0x44229f(0x17f)+_0x2b8544['company']+_0x56a59c;$(location)[_0x44229f(0x1a6)]('href',_0x207c94);},_0x2b8544['updateInformation']=function(_0x23e059,_0x3efdcf,_0x261c3e){var _0x53a9f8=_0x4372a9;try{_0x2b8544[_0x53a9f8(0x1c1)]=_0x53a9f8(0x148);var _0xf269b2,_0x266594=GetItemTypeForListName(_0x261c3e);_0xf269b2={'__metadata':{'type':_0x266594},'Status':_0x3efdcf,'DateofTermination':GetDateStandardFormat(_0x2b8544[_0x53a9f8(0x142)])},updateItemWithID(_0x261c3e,_0xf269b2,_0x23e059);}catch(_0x38c2b1){waitingDialog[_0x53a9f8(0x13f)](),_0x2b8544[_0x53a9f8(0x1c1)]=_0x53a9f8(0x1a5),console[_0x53a9f8(0x152)](_0x38c2b1[_0x53a9f8(0x157)]);}},_0x2b8544[_0x4372a9(0x1b9)]=function(){var _0x3b400c=_0x4372a9;_0x5358c1({'url':_spPageContextInfo[_0x3b400c(0x1b8)]+_0x3b400c(0x1a0)+_0x2b8544['currentitemId']+'\x27','method':_0x3b400c(0x1b6),'headers':{'Accept':_0x3b400c(0x1ac)}})['then'](function _0x5e5dc6(_0x4ac6f9){var _0x2454fd=_0x3b400c;_0x4ac6f9[_0x2454fd(0x1be)]['d'][_0x2454fd(0x1c6)][_0x2454fd(0x178)]>0x0&&(_0x2b8544[_0x2454fd(0x184)](_0x4ac6f9[_0x2454fd(0x1be)]['d'][_0x2454fd(0x1c6)][0x0]),console[_0x2454fd(0x152)](_0x4ac6f9[_0x2454fd(0x1be)]['d'][_0x2454fd(0x1c6)][0x0]));},function _0x4d73f2(_0x4626d0){var _0x1ab09a=_0x3b400c;_0x2b8544['myWelcome']=_0x4626d0[_0x1ab09a(0x1cc)];});},_0x2b8544[_0x4372a9(0x1c2)]=function(_0xa6009b,_0x124c7c,_0x131d77){var _0x50d928=_0x4372a9;try{_0x2b8544[_0x50d928(0x1c1)]=_0x50d928(0x148);var _0x461b2f,_0x4781bc=GetItemTypeForListName(_0x131d77);_0x461b2f={'__metadata':{'type':_0x4781bc},'CurrentPhase':_0x124c7c},updateItemWithID(_0x131d77,_0x461b2f,_0xa6009b);}catch(_0x3fbcaa){waitingDialog[_0x50d928(0x13f)](),console[_0x50d928(0x152)](_0x3fbcaa[_0x50d928(0x157)]),_0x2b8544['mystatus']=_0x50d928(0x1a5);}},_0x2b8544[_0x4372a9(0x190)]=function(){var _0xc626b3=_0x4372a9;openTaskID=[],_0x5358c1({'url':_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/GetByTitle(\x27EmployeeTaskDetails\x27)/items?$select=ID,ProjectName,TaskAssignTo,CurrentPhase,TaskAssignTo/UserName&$expand=TaskAssignTo&$filter=TaskAssignTo/UserName\x20\x20eq\x20\x27'+_0x2b8544[_0xc626b3(0x189)]+_0xc626b3(0x1bd),'method':'GET','headers':{'Accept':_0xc626b3(0x1ac)}})[_0xc626b3(0x1af)](function _0xb8f7d6(_0x1b5c21){var _0x58272f=_0xc626b3,_0x577bf0=0x0,_0x5dde12=0x0;for(var _0x5471a2=0x0;_0x5471a2<_0x1b5c21['data']['d'][_0x58272f(0x1c6)][_0x58272f(0x178)];_0x5471a2++){var _0x5e5e78=_0x1b5c21[_0x58272f(0x1be)]['d'][_0x58272f(0x1c6)][_0x5471a2][_0x58272f(0x183)];_0x5e5e78==null||_0x5e5e78==''?_0x577bf0++:_0x5dde12++,openTaskID['push'](_0x1b5c21['data']['d'][_0x58272f(0x1c6)][_0x5471a2]['ID']);}_0x2b8544[_0x58272f(0x18d)]=_0x577bf0,_0x2b8544[_0x58272f(0x1b4)]=_0x5dde12;},function _0x3ebef8(_0x28ac98){var _0x28b6f1=_0xc626b3;_0x2b8544['myWelcome']=_0x28ac98[_0x28b6f1(0x1cc)];});},_0x2b8544['GetEmployeeTeamList']=function(){var _0xea0625=_0x4372a9;_0x5358c1({'url':_spPageContextInfo[_0xea0625(0x1b8)]+_0xea0625(0x182)+_0x2b8544[_0xea0625(0x189)]+_0xea0625(0x14a),'method':'GET','headers':{'Accept':'application/json;odata=verbose'}})[_0xea0625(0x1af)](function _0x4308a1(_0x437242){var _0x136c28=_0xea0625;for(var _0x4cb020=0x0;_0x4cb020<_0x437242[_0x136c28(0x1be)]['d'][_0x136c28(0x1c6)]['length'];_0x4cb020++){_0x2b8544['updateTeamStatusInformation'](_0x437242[_0x136c28(0x1be)]['d'][_0x136c28(0x1c6)][_0x4cb020]['ID'],'Terminated',_0x136c28(0x14c));}},function _0x5ac534(_0x3212e3){var _0x1a5345=_0xea0625;_0x2b8544[_0x1a5345(0x19b)]=_0x3212e3[_0x1a5345(0x1cc)];});},_0x2b8544[_0x4372a9(0x1a8)]=function(_0x1fa14d,_0xadf574,_0xda6e22){var _0x3f4830=_0x4372a9;try{_0x2b8544[_0x3f4830(0x1c1)]='Terminated';var _0x13dec8,_0x13d800=GetItemTypeForListName(_0xda6e22);_0x13dec8={'__metadata':{'type':_0x13d800},'Status':_0xadf574},updateItemWithID(_0xda6e22,_0x13dec8,_0x1fa14d);}catch(_0x48c4fd){waitingDialog[_0x3f4830(0x13f)](),_0x2b8544[_0x3f4830(0x1c1)]='Active',console[_0x3f4830(0x152)](_0x48c4fd['message']);}},_0x2b8544['SetEmployeeDetails']=function(_0x29b6a9){var _0x4c40f9=_0x4372a9;_0x2b8544[_0x4c40f9(0x16d)]=_0x29b6a9['ID'],_0x2b8544[_0x4c40f9(0x1c3)]=_0x29b6a9[_0x4c40f9(0x17c)],_0x2b8544['imageUrl']=_0x2b8544[_0x4c40f9(0x14f)](_0x29b6a9[_0x4c40f9(0x1c4)],_0x29b6a9[_0x4c40f9(0x1a7)]),_0x2b8544['designation']=_0x29b6a9[_0x4c40f9(0x140)],_0x2b8544[_0x4c40f9(0x18f)]=_0x29b6a9[_0x4c40f9(0x1a7)],_0x2b8544[_0x4c40f9(0x149)]=_0x29b6a9['LogonNameId'],_0x2b8544[_0x4c40f9(0x199)]=_0x29b6a9[_0x4c40f9(0x15a)]['OfficeName'],_0x2b8544[_0x4c40f9(0x1d1)]=_0x29b6a9[_0x4c40f9(0x1a1)][_0x4c40f9(0x17d)],_0x2b8544[_0x4c40f9(0x189)]=_0x29b6a9[_0x4c40f9(0x186)]['EMail'],_0x2b8544[_0x4c40f9(0x1c1)]=_0x29b6a9[_0x4c40f9(0x18c)];var _0x30363c=new Date(_0x29b6a9['JoiningDate']);$('#date')[_0x4c40f9(0x153)]({'changeMonth':!![],'changeYear':!![],'minDate':_0x30363c,'maxDate':0x0,'yearRange':_0x4c40f9(0x1a2)}),$('#date')[_0x4c40f9(0x153)](_0x4c40f9(0x172),_0x4c40f9(0x1b5),_0x4c40f9(0x15f)),setPeoplePickerUsersInfoCurrentGroups('managerPicker',_0x29b6a9['ManagerLoginName']['EMail']),setPeoplePickerUsersInfoCurrentGroups('ProjectManagerPicker',_0x29b6a9['ManagerLoginName'][_0x4c40f9(0x141)]),setPeoplePickerUsersInfoCurrentGroups(_0x4c40f9(0x195),_0x29b6a9[_0x4c40f9(0x159)][_0x4c40f9(0x141)]),_0x2b8544[_0x4c40f9(0x190)]();},_0x2b8544[_0x4372a9(0x14f)]=function(_0x5128d1,_0xb56a23){var _0x3d94a7=_0x4372a9,_0x1b0a03=_spPageContextInfo['webAbsoluteUrl']+_0x3d94a7(0x14b)+escapeProperly(_0xb56a23);return _0x5128d1[_0x3d94a7(0x1c6)][_0x3d94a7(0x178)]>0x0&&(_0x1b0a03=_0x5128d1[_0x3d94a7(0x1c6)][0x0]['ServerRelativeUrl'],_0x2b8544[_0x3d94a7(0x15c)]=_0x5128d1[_0x3d94a7(0x1c6)][0x0][_0x3d94a7(0x15b)]),_0x1b0a03;};}),$(document)['ready'](function(){var _0x59d84d=a241_0x4a440b;InitializePeoplePicker('managerPicker',!![]),InitializePeoplePicker('ProjectManagerPicker',![]),InitializePeoplePicker(_0x59d84d(0x195),![]);});function InitializePeoplePicker(_0x4022d6,_0x1ba2d4){var _0x378378=a241_0x4a440b;_0x1ba2d4==null&&(_0x1ba2d4=![]);var _0x1e4b53={};_0x1e4b53['PrincipalAccountType']=_0x378378(0x188),_0x1e4b53[_0x378378(0x1aa)]=0xf,_0x1e4b53[_0x378378(0x19d)]=0xf,_0x1e4b53[_0x378378(0x16f)]=_0x1ba2d4,_0x1e4b53['MaximumEntitySuggestions']=0x32,_0x1e4b53['Width']=_0x378378(0x1cd),SPClientPeoplePicker_InitStandaloneControlWrapper(_0x4022d6,null,_0x1e4b53);}function setPeoplePickerUsersInfoCurrentGroups(_0x3e9e9f,_0x253880){var _0xeac40a=a241_0x4a440b,_0x1e9be6=$(_0xeac40a(0x19c)+_0x3e9e9f+'\x27]'),_0x2ccb26=SPClientPeoplePicker[_0xeac40a(0x1c0)][_0x1e9be6[0x1]['id']];_0x2ccb26['AddUserKeys'](_0x253880,![]);}function getPeopleUserInfoGroups(_0x499662){var _0x386d5f=a241_0x4a440b;DisplayText=[];var _0x30b33d=new Array(),_0x1ef8ef=$(_0x386d5f(0x19c)+_0x499662+'\x27]'),_0x486819=SPClientPeoplePicker[_0x386d5f(0x1c0)][_0x1ef8ef[0x1]['id']],_0x3c95f3=_0x486819['GetAllUserInfo']();if(_0x3c95f3[_0x386d5f(0x178)]>0x0)for(var _0x190a7c=0x0;_0x190a7c<_0x3c95f3[_0x386d5f(0x178)];_0x190a7c++){_0x30b33d['push'](GetUserIdGroups(_0x3c95f3[_0x190a7c][_0x386d5f(0x1c8)])),DisplayText[_0x386d5f(0x197)](_0x3c95f3[_0x190a7c][_0x386d5f(0x167)]);}return _0x30b33d;}function GetUserIdGroups(_0x27cd5b){var _0x541af4=a241_0x4a440b,_0x2965ec='',_0x167704=_0x541af4(0x191),_0x516b7d=_spPageContextInfo[_0x541af4(0x1a4)],_0x563e23=_0x27cd5b;return $[_0x541af4(0x154)]({'url':_0x516b7d+_0x541af4(0x1a9)+encodeURIComponent(_0x563e23)+'\x27','method':_0x541af4(0x1b6),'headers':{'Accept':_0x541af4(0x1bb)},'async':![],'success':function(_0x96f318){_0x2965ec=_0x96f318['d']['Id'];},'error':function(_0x15b5d5){var _0x3de582=_0x541af4;console[_0x3de582(0x152)](JSON[_0x3de582(0x145)](_0x15b5d5));}}),_0x2965ec;}function addDMS_Access_Delegation(_0x534f5a,_0x367856){var _0x42cda7=a241_0x4a440b,_0x5058af=getPeopleUserInfoGroups(_0x42cda7(0x173));if(_0x5058af[_0x42cda7(0x178)]==0x0)return alert(_0x42cda7(0x163)),![];var _0x27dc7a=getPeopleUserInfoGroups(_0x42cda7(0x195));if(_0x27dc7a['length']==0x0)return alert(_0x42cda7(0x18a)),![];var _0x30b8e3=getPeopleUserInfoGroups(_0x42cda7(0x192));if(_0x30b8e3[_0x42cda7(0x178)]==0x0)return alert('Please\x20Enter\x20reassigned\x20to\x20Mamber!'),![];var _0x17d470=_0x42cda7(0x185),_0x278cd4=_0x42cda7(0x17a),_0x204797;_0x204797={'__metadata':{'type':_0x42cda7(0x158)},'Title':_0x42cda7(0x147),'Original_UserId':_0x367856,'SubordinatesManagerId':_0x27dc7a[0x0],'ProjectManagerId':_0x5058af[0x0],'Delegated_UserId':{'results':_0x30b8e3},'DMS_Name':_0x42cda7(0x19a),'DMS_Folder':_0x534f5a,'DMS_Link':{'__metadata':{'type':'SP.FieldUrlValue'},'Description':_0x17d470,'Url':_0x17d470},'Reason':'Termination'},$[_0x42cda7(0x16c)](AddItemToList(_0x278cd4,_0x204797))['done'](function(_0x241336){var _0x287b6c=_0x42cda7;console[_0x287b6c(0x152)](_0x287b6c(0x1ad));});}function a241_0x3cb2(_0xa6724a,_0xfc10c1){var _0x2cf9a8=a241_0x2cf9();return a241_0x3cb2=function(_0x3cb2e7,_0x45231f){_0x3cb2e7=_0x3cb2e7-0x13f;var _0x3c0356=_0x2cf9a8[_0x3cb2e7];return _0x3c0356;},a241_0x3cb2(_0xa6724a,_0xfc10c1);}function AddItemToList(_0x13c94c,_0x3fb029){var _0x10cda6=a241_0x4a440b,_0x1dc666=$['Deferred'](),_0x1e4ce7=_spPageContextInfo['webAbsoluteUrl']+_0x10cda6(0x179);return $[_0x10cda6(0x154)]({'url':_0x1e4ce7,'type':'POST','async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x10cda6(0x15d))['val'](),'content-Type':_0x10cda6(0x1ac)},'data':JSON[_0x10cda6(0x145)](_0x3fb029),'success':function(_0x2bf9fd){var _0x39d847=_0x10cda6;_0x1dc666[_0x39d847(0x15e)](_0x2bf9fd);},'error':function(_0xcd7d69){var _0x26d955=_0x10cda6;alert(JSON[_0x26d955(0x145)](_0xcd7d69)),_0x1dc666[_0x26d955(0x171)](_0xcd7d69);}}),_0x1dc666[_0x10cda6(0x174)]();}
+var currentCompanyid="";
+var employeedIddetails="";
+var departmentID="";
+var sourcelocation="";
+var openTaskID=new Array();
+var app = angular.module('myApp', []);
+function updateItemWithID(ListName, Metadata, ID) 
+{
+	
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + ID + "')",
+        type: "POST",
+		async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+           // console.log();
+            dfd.resolve(true);
+
+        },
+        error: function (error) {
+			
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+
+        }
+    });
+    return dfd.promise();
+}
+
+function GetItemTypeForListName (ListName) 
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+function GetDateStandardFormat(datek)
+{	
+var newDate="";
+if(datek!=null && datek!="")
+{
+	  var dateS=ConvertDateFormatToddMMyyyy(datek);
+      var startDate = new Date(dateS);
+     // seconds * minutes * hours * milliseconds = 1 day
+			var day = 60 * 60 * 24 * 1000;
+			//var endDate = new Date(startDate.getTime() + day);
+            var endDate = new Date(startDate.getTime());
+             newDate =endDate.toISOString();
+}
+			return newDate; 
+}
+function ConvertDateFormatToddMMyyyy(date1) {
+        var formatedDate = stringToDate(date1, 'dd/MM/yyyy', "/")
+        // var year = formatedDate.getFullYear();
+        // var month = (1 + formatedDate.getMonth()).toString();
+        // month = month.length > 1 ? month : '0' + month;
+        // var day = formatedDate.getDate().toString()   
+        // day = day.length > 1 ? day : '0' + day;
+        return formatedDate;
+    }
+    function stringToDate(_date, _format, _delimiter) 
+	{
+        var formatLowerCase = _format.toLowerCase();
+        var formatItems = formatLowerCase.split(_delimiter);
+        var dateItems = _date.split(_delimiter);
+        var monthIndex = formatItems.indexOf("mm");
+        var dayIndex = formatItems.indexOf("dd");
+        var yearIndex = formatItems.indexOf("yyyy");
+        var month = parseInt(dateItems[monthIndex]);
+        month -= 1;
+        var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+        return formatedDate;
+    }
+app.controller('myCtrl', function($scope,$http) 
+{
+	 currentCompanyid=titanForWork.getQueryStringParameter("CompanyId");	
+	 departmentID=titanForWork.getQueryStringParameter("department");	
+	 employeedIddetails=titanForWork.getQueryStringParameter("employeedIddetails");	 
+
+	 sourcelocation=titanForWork.getQueryStringParameter("sourcelocation");
+	 $scope.currentitemId=employeedIddetails;
+	
+	 $scope.teamporaryImageUrl="";
+	 $scope.imageUrl="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+	 $scope.company=currentCompanyid;
+	 $scope.managerObject=false;
+	 $scope.accountObjecttion=false;
+	 $scope.itObjecttion=false;
+	 $scope.hraObjecttion=false;
+	 $scope.allTaskClosed=false;
+	 $scope.dateofTermination="";
+	 $scope.EmployeeCheckListValidation=function ()
+	{			
+		try
+		{        		
+		     var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=ID,DepartmentId,LogonName/EMail,Company/ID&$expand=LogonName,Company&$filter=LogonName/EMail  eq '" + $scope.userID +"'";				 
+             $http({
+				url: Ownurl,
+				method: "GET",
+				async: false,
+				headers: { "Accept": "application/json;odata=verbose" }
+			}).then(function mySuccess(response) 
+		    {			
+                for(var i=0;i<response.data.d.results.length;i++)
+				{
+					$scope.updateInformation(response.data.d.results[i].ID,"Terminated","Employees");
+				}
+               				
+		    }, function myError(response) 
+		   {
+		     $scope.myWelcome = response.statusText;
+		   });
+		}
+		catch(e)
+		{waitingDialog.hide();
+			alert('LogonName is not in valid format !');	
+		}		 
+	}
+	
+	$scope.updateTerminationInformation=function()
+	{	
+	
+         try 
+			{
+		//if($scope.managerObject==true && $scope.accountObjecttion==true && $scope.itObjecttion==true && $scope.hraObjecttion==true && $scope.allTaskClosed==true)
+		//{	
+	             waitingDialog.show();
+				 $.when($scope.EmployeeCheckListValidation()).done(function (MainExamListItemTemp) 
+				 {					
+					 for(var k=0;k<openTaskID.length;k++)
+					 {					   
+					   $scope.closeAllOpenTasks(openTaskID[k],"Cancelled","EmployeeTaskDetails");
+					 }
+					 $scope.GetEmployeeTeamList();//Terminate team memeber	
+                     setTimeout(function(){alert('Successfully Terminated.');waitingDialog.hide();},10000);					 
+				 });
+		//}
+		/*else
+		{
+			alert("Please agree and check-out all declaration points.");
+		}*/
+			}
+			catch(e)
+			{
+				alert('Please try again, something went wrong .');
+				$scope.mystatus="Active";
+				waitingDialog.hide();
+			}
+	}
+	$scope.confirmation=function () 
+	{
+		var txt;
+		var r = confirm("Do You Want to Terminate this Employee?");
+		if (r == true) 
+		{
+			if($scope.dateofTermination!="" && $scope.dateofTermination!=null)
+			{				
+			  var ProjectManager=getPeopleUserInfoGroups('ProjectManagerPicker');
+			    if(ProjectManager.length==0){
+			      alert('Please Enter personal documents reassigned to Project Mamber Name!')
+			      return false;
+			    }
+			    var subordinatesManager=getPeopleUserInfoGroups('subordinatesManagerPicker');
+			    if(subordinatesManager.length==0){
+			      alert('Please Enter personal documents reassigned to subordinates Project Mamber Name!')
+			      return false;
+			    }
+			    var Delegated_UserId=getPeopleUserInfoGroups('managerPicker');
+			    if(Delegated_UserId.length==0){
+			      alert('Please Enter personal documents reassigned to Mamber Name!')
+			      return false;
+			    }
+
+			  
+			  $scope.updateTerminationInformation();
+			  
+			  addDMS_Access_Delegation($scope.eMail,$scope.LogonNameId);
+			  
+			}
+			else
+			{
+				alert('Please Enter the Termination Date of the Employee.');				
+			}			
+		} else 
+		{
+			
+		}
+    }
+	$scope.redirectCancel=function()
+	{
+		 $scope.RedirectPage(sourcelocation);
+	}
+	$scope.RedirectPage=function(urllink)
+	{
+		var departmentLink="";
+		if(departmentID!=null && departmentID!="")
+		{
+			
+			departmentLink="&DepartmentId="+departmentID;
+		}
+		var url = urllink+"?WebAppId="+$scope.company+departmentLink;
+		$(location).attr('href',url);	
+	}
+    $scope.updateInformation=function(currentitemId,status,ListName)
+	{		
+			try 
+			{
+				$scope.mystatus="Terminated";
+			var Metadata;
+			var ItemType =GetItemTypeForListName(ListName);
+
+					Metadata = {
+						__metadata: {
+							'type': ItemType
+						},
+						Status:status,
+						DateofTermination:GetDateStandardFormat($scope.dateofTermination)					 
+					};
+				
+				updateItemWithID(ListName, Metadata,currentitemId);							
+		} 
+		catch (error)
+		{waitingDialog.hide();
+			$scope.mystatus="Active";
+			console.log(error.message);
+		}
+	}
+    $scope.GetEmployees = function ()
+    {		
+			$http({
+				url: _spPageContextInfo.webAbsoluteUrl +"/_api/web/lists/GetByTitle('Employees')/items?$select=ID,Email,LogonNameId,DateofTermination,Gender,EmployeeID,GroupName,HomeAddress,HomePhone,JoiningDate,PostalAddresses,OtherEMailAddress,StateProvince,Status,ZIPPostalCode,Country,DateOfAnniversary,DateOfBirth,City,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/UserName,LogonName/EMail,Department/ID,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName,ManagerLoginName/EMail&$orderby=FullName&$expand=LogonName,ManagerLoginName,OfficeLocation,Company,Department,AttachmentFiles&$filter=ID  eq '" + $scope.currentitemId +"'",
+				method: "GET",				
+				headers: { "Accept": "application/json;odata=verbose" }
+			}).then(function mySuccess(response) 
+		    {
+				
+				if(response.data.d.results.length>0)
+				{			                  
+					 $scope.SetEmployeeDetails(response.data.d.results[0]);
+					 console.log(response.data.d.results[0]);                   					 
+				}			  			 
+		    }, function myError(response) 
+		   {
+		     $scope.myWelcome = response.statusText;
+		   });		
+    }
+	 $scope.closeAllOpenTasks=function(currentitemId,status,ListName)
+		{		
+				try 
+				{
+				$scope.mystatus="Terminated";
+				var Metadata;
+				var ItemType =GetItemTypeForListName(ListName);
+
+						Metadata = {
+							__metadata: {
+								'type': ItemType
+							},
+							CurrentPhase:status					 
+						};
+					
+					updateItemWithID(ListName, Metadata,currentitemId);							
+			} 
+			catch (error)
+			{waitingDialog.hide();
+				console.log(error.message);
+				$scope.mystatus="Active";
+			}
+		}	
+    $scope.GetEmployeeTasks = function ()
+    {	
+           openTaskID=[];	
+			$http({
+				url: _spPageContextInfo.webAbsoluteUrl +"/_api/web/lists/GetByTitle('EmployeeTaskDetails')/items?$select=ID,ProjectName,TaskAssignTo,CurrentPhase,TaskAssignTo/UserName&$expand=TaskAssignTo&$filter=TaskAssignTo/UserName  eq '" + $scope.userID +"' and CurrentPhase eq 'Open'",
+				method: "GET",
+				headers: { "Accept": "application/json;odata=verbose" }
+			}).then(function mySuccess(response) 
+		    {
+				var generalOpenTask=0;
+				var projectTask=0;
+				for(var j=0;j<response.data.d.results.length;j++)
+				{
+					var projectName=response.data.d.results[j].ProjectName;
+					if(projectName==null || projectName=="")
+					{
+						generalOpenTask++;
+					}
+					else
+					{
+						projectTask++;
+					}
+					openTaskID.push(response.data.d.results[j].ID);
+				}
+				$scope.generalOpenTask=generalOpenTask;
+				$scope.projectTask=projectTask;
+				
+		    }, function myError(response) 
+		   {
+		     $scope.myWelcome = response.statusText;
+		   });		
+    }
+
+
+$scope.GetEmployeeTeamList = function ()
+    {	
+       	
+			$http({
+				url: _spPageContextInfo.webAbsoluteUrl +"/_api/web/lists/GetByTitle('ProjectTeamDetails')/items?$select=ID,TeamMember,TeamMember/UserName&$expand=TeamMember&$filter=TeamMember/UserName  eq '" + $scope.userID +"' and Status eq 'Active'",
+				method: "GET",
+				headers: { "Accept": "application/json;odata=verbose" }
+			}).then(function mySuccess(response) 
+		    {
+			
+				for(var j=0;j<response.data.d.results.length;j++)
+				{
+					  $scope.updateTeamStatusInformation(response.data.d.results[j].ID,"Terminated","ProjectTeamDetails");
+				}
+		    }, function myError(response) 
+		   {
+		     $scope.myWelcome = response.statusText;
+		   });		
+    }	
+    
+    $scope.updateTeamStatusInformation=function(currentitemId,status,ListName)
+	{		
+			try 
+			{
+				$scope.mystatus="Terminated";
+			var Metadata;
+			var ItemType =GetItemTypeForListName(ListName);
+
+					Metadata = {
+						__metadata: {
+							'type': ItemType
+						},
+						Status:status				 
+					};
+				
+				updateItemWithID(ListName, Metadata,currentitemId);							
+		} 
+		catch (error)
+		{waitingDialog.hide();
+			$scope.mystatus="Active";
+			console.log(error.message);
+		}
+	}
+    	
+	$scope.SetEmployeeDetails=function(employeeInformation)
+	{		
+		$scope.currentitemId=employeeInformation.ID;
+		$scope.employeeName=employeeInformation.FullName;
+		$scope.imageUrl=$scope.GetAttachment(employeeInformation.AttachmentFiles,employeeInformation.Email);
+		$scope.designation=employeeInformation.Designation;
+		$scope.eMail=employeeInformation.Email;
+		$scope.LogonNameId=employeeInformation.LogonNameId;
+		$scope.officeLocation=employeeInformation.OfficeLocation.OfficeName;
+		$scope.department=employeeInformation.Department.DepartmentName;	
+        $scope.userID=employeeInformation.LogonName.EMail;
+		$scope.mystatus=employeeInformation.Status;
+		
+		var joiningDate=new Date(employeeInformation.JoiningDate);
+		        $('#date').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  minDate:joiningDate,
+					 maxDate: 0, 
+					 yearRange: "-10:+0"
+				 }); 
+			    $('#date').datepicker("option", "dateFormat", "dd/mm/yy");
+		setPeoplePickerUsersInfoCurrentGroups('managerPicker',employeeInformation.ManagerLoginName.EMail);
+		setPeoplePickerUsersInfoCurrentGroups('ProjectManagerPicker',employeeInformation.ManagerLoginName.EMail);
+		setPeoplePickerUsersInfoCurrentGroups('subordinatesManagerPicker',employeeInformation.ManagerLoginName.EMail);
+		
+		$scope.GetEmployeeTasks();
+	}
+	$scope.GetAttachment=function(attachmentcollection,EMail)
+	{
+		var attachmentUrl=_spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EMail)    //"../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+		if(attachmentcollection.results.length>0)
+		{
+			attachmentUrl=attachmentcollection.results[0].ServerRelativeUrl;
+			$scope.teamporaryImageUrl=attachmentcollection.results[0].ServerRelativeUrl
+		}
+	    return attachmentUrl;
+	}
+});
+
+
+
+/*----------18/09/2021--Lakhan --------*/
+
+
+$(document).ready(function(){
+
+InitializePeoplePicker("managerPicker", true);
+InitializePeoplePicker("ProjectManagerPicker", false);
+InitializePeoplePicker("subordinatesManagerPicker", false);
+});
+
+
+function InitializePeoplePicker(peoplePickerElementId, allowMultiple) {
+    if (allowMultiple == null) {
+        allowMultiple = false;
+    }
+    var schema = {};
+    //schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = allowMultiple;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '100%';
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+
+
+
+
+function setPeoplePickerUsersInfoCurrentGroups(controlNameID, LoginNameOrEmail) 
+{
+    var peoplePickerDiv = $("[id^='" + controlNameID + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[1].id];
+    peoplePicker.AddUserKeys(LoginNameOrEmail, false);
+}
+
+
+
+function getPeopleUserInfoGroups(pickerPickerControlId) {
+    DisplayText=[];
+    var sharedUserArrayList = new Array();
+    var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+    var users = peoplePicker.GetAllUserInfo();
+    if (users.length > 0) {
+      //  var allUsersID = new Array();
+      //  var usersEmailIDs = new Array();
+        for (var i = 0; i < users.length; i++) {
+            sharedUserArrayList.push(GetUserIdGroups(users[i].Key));
+            DisplayText.push(users[i].DisplayText);
+        }
+    }
+    return sharedUserArrayList;
+}
+function GetUserIdGroups(userName) {
+    var userID = "";
+    var prefix = "i:0#.f|membership|";
+    var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+    var accountName = userName;// prefix+userName;       
+    $.ajax({
+        url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+            encodeURIComponent(accountName) + "'",
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data) {
+            userID = data.d.Id;
+            //$scope.UserInfoFullName = data.d.Title;
+            // alert("Received UserId" + data.d.Id);
+            // alert(JSON.stringify(data));
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+    return userID;
+}
+
+
+function addDMS_Access_Delegation(UserEMail,UserId){   
+   
+	var ProjectManager=getPeopleUserInfoGroups('ProjectManagerPicker');
+	    if(ProjectManager.length==0){
+	      alert('Please Enter reassigned to Project Mamber!')
+	      return false;
+	    }
+	var subordinatesManager=getPeopleUserInfoGroups('subordinatesManagerPicker');
+	    if(subordinatesManager.length==0){
+	      alert('Please Enter reassigned to subordinates Mamber!')
+	      return false;
+	    }
+	var Delegated_UserId=getPeopleUserInfoGroups('managerPicker');
+	    if(Delegated_UserId.length==0){
+	      alert('Please Enter reassigned to Mamber!')
+	      return false;
+	    }            
+
+   
+    var DMS_Link="https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/DocumentManagementSystem/Forms/AllItems.aspx";
+    var ListName='DMS_Access_Delegation';
+    var Metadata;
+       //itemType=GetItemTypeForListName(ListName)
+    		Metadata = {
+        __metadata: {'type': 'SP.Data.DMS_x005f_Access_x005f_DelegationListItem'},
+        Title : 'Access shifted due to termination',
+		Original_UserId:UserId,
+		SubordinatesManagerId:subordinatesManager[0],
+		ProjectManagerId:ProjectManager[0],
+		Delegated_UserId:{ 'results' : Delegated_UserId},
+	    DMS_Name:'MY DMS',
+	    DMS_Folder:UserEMail,
+	    DMS_Link:
+        {
+            '__metadata': { 'type': 'SP.FieldUrlValue' },
+            'Description': DMS_Link,
+            'Url': DMS_Link
+        },	    
+	    Reason:'Termination'
+	    	    
+    };       
+       
+    $.when(AddItemToList(ListName,Metadata)).done(function(responseIdmore)
+    {   		     
+	    console.log('add DMS_Access_Delegation !')        
+		    				   
+	})
+  }
+
+
+function AddItemToList(ListName,Metadata)
+{
+    var dfd = $.Deferred();
+
+    var ownURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('DMS_Access_Delegation')/Items";
+    $.ajax({    	
+        url: ownURL,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data:JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+        },
+        error: function (error) {
+           alert(JSON.stringify(error));
+           dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+
