@@ -5903,7 +5903,7 @@ function updateItemWithIDItemListDocuments(ListName, Metadata, undefineditemID, 
             "X-Http-Method": "PATCH",
             "If-Match": '*'
         },
-        data: JSON.stringify(Metadata),
+        body: JSON.stringify(Metadata),
         success: function (RESULT) {
             RequestDigest = $("#__REQUESTDIGEST").val();
             console.log(undefineditemID + ': Item is set permission');
