@@ -5895,7 +5895,7 @@ function updateItemWithIDItemListDocuments(ListName, Metadata, undefineditemID, 
     $.ajax({
         url: oweburl,
         type: "POST",
-        async: false,
+        //async: false,
         headers: {
             "accept": "application/json;odata=verbose",
             "X-RequestDigest": RequestDigest,
@@ -5903,7 +5903,7 @@ function updateItemWithIDItemListDocuments(ListName, Metadata, undefineditemID, 
             "X-Http-Method": "PATCH",
             "If-Match": '*'
         },
-        body: JSON.stringify(Metadata),
+        data: JSON.stringify(Metadata),
         success: function (RESULT) {
             RequestDigest = $("#__REQUESTDIGEST").val();
             console.log(undefineditemID + ': Item is set permission');
