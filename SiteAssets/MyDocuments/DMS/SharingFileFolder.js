@@ -9544,7 +9544,12 @@ function GetDocumentsSharedWithMe(SectionName) {
             $("#divPendingAck").hide();
         }
         ChangeLabels();
-    }).fail(function(){ waitingDialog.hide(); });
+    }).fail(function(){
+		$('.loading_tbl').hide();
+		//waitingDialog.hide(); 
+		
+	});
+	$('.loading_tbl').hide();
 }
 //Bhawana
 //Bind approval for share
