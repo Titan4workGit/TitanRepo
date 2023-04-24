@@ -755,7 +755,7 @@ function MyDocumentEnv() {
                         '<h4 class="panel-title">' +
                         '<a data-toggle="pill" href="#" id="'+tempTitle + PersonalDMSData[j].Id.toString() +'" data-LibraryType="' + PersonalDMSData[j].LibraryType + '" data-MSTeamID="' + PersonalDMSData[j].MSTeamID + '" data-PrivateChID="' + PersonalDMSData[j].PrivateChannelName + '" onclick="' + GetLib + '"  class="dms-left-panel-tab-inner" name="' + myOwnDocumentsUrl + '">' +
                         '<div class="d-flex align-items-center">' +
-                        '<img src="../SiteAssets/MyDocuments/DMS/assets/images/group-ico.png" alt="Group Documents">' +
+                        '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/group-ico.png" alt="Group Documents">' +
                         '<span class="mobile-hide-tabs-name mt3 ml10">' + title + '</span>' +
                         '</div>' +
                         '</a>' +
@@ -773,7 +773,7 @@ function MyDocumentEnv() {
                 '<h4 class="panel-title">' +
                 '<a href="#" data-toggle="modal" data-target="#add-new-group-dms" onclick="cleartextbox()" class="dms-left-panel-tab-inner">' +
                 '<div class="d-flex align-items-center">' +
-                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/add-group.png" alt="add group">' +
+                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/add-group.png" alt="add group">' +
                 '<span class="mobile-hide-tabs-name mt3 ml10">  Add New Library </span>' +
                 '</div>' +
                 '</a>' +
@@ -789,7 +789,7 @@ function MyDocumentEnv() {
                 '<h4 class="panel-title">' +
                 '<a href="#" data-toggle="modal" data-target="#add-new-group-dms" onclick="cleartextbox()" class="dms-left-panel-tab-inner">' +
                 '<div class="d-flex align-items-center">' +
-                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/add-group.png" alt="add group">' +
+                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/add-group.png" alt="add group">' +
                 '<span class="mobile-hide-tabs-name mt3 ml10">  Add New Library </span>' +
                 '</div>' +
                 '</a>' +
@@ -3073,7 +3073,7 @@ function GenratepermissionHtmlOthers(data, arrEmps) {
 
 
             Divrow += '<div class="member-status-image-box">' +
-                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/' + data[i].PermissionImage + '.png" alt="">' +
+                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + data[i].PermissionImage + '.png" alt="">' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -3130,7 +3130,7 @@ function BindDefinitionDept(data) {
 	                                '<option value="1073741829" selected>Owner</option>' +
 	                           '</select>';
 	                           Divrow += '<div class="member-status-image-box">' +
-	                            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Full-control-m.png" alt="">' +
+	                            '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Full-control-m.png" alt="">' +
 	                            '</div>' +
 	                            '</div>' +
 	                            '</div>' +
@@ -3143,7 +3143,7 @@ function BindDefinitionDept(data) {
 	                                '<option value="1073741830" selected>Member</option>' +
 	                           '</select>';
 	                           Divrow += '<div class="member-status-image-box">' +
-	                            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
+	                            '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
 	                            '</div>' +
 	                            '</div>' +
 	                            '</div>' +
@@ -3174,7 +3174,7 @@ function BindDefinitionDept(data) {
                                 '<option value="1073741830" selected>Member</option>' +
                             '</select>';
                             Divrow += '<div class="member-status-image-box">' +
-                                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
+                                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
                                 '</div>' +
                                 '</div>' +
                                 '</div>' +
@@ -3209,7 +3209,7 @@ function BindDefinitionDept(data) {
                         '<option value="1073741826" selected>Reader</option>' +
                     '</select>';
                     Divrow += '<div class="member-status-image-box">' +
-                        '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Reader-m.png" alt="">' +
+                        '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Reader-m.png" alt="">' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -3249,7 +3249,7 @@ function BindDefinitionProj(data) {
                 '<option value="1073741829" selected>Owner</option>' +
             '</select>';
             Divrow += '<div class="member-status-image-box">' +
-                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Full-control-m.png" alt="">' +
+                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Full-control-m.png" alt="">' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -3283,7 +3283,7 @@ function BindDefinitionProj(data) {
                                 '<option value="1073741830" selected>Member</option>' +
                            '</select>';
                             Divrow += '<div class="member-status-image-box">' +
-                             '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
+                             '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Contributor-m.png" alt="">' +
                              '</div>' +
                              '</div>' +
                              '</div>' +
@@ -3296,7 +3296,7 @@ function BindDefinitionProj(data) {
                                 '<option value="1073741826" selected>Reader</option>' +
                            '</select>';
                             Divrow += '<div class="member-status-image-box">' +
-                             '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Reader-m.png" alt="">' +
+                             '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Reader-m.png" alt="">' +
                              '</div>' +
                              '</div>' +
                              '</div>' +
@@ -3424,7 +3424,7 @@ function GenratepermissionHtml(data, DivId) {
 
 
         Divrow += '<div class="member-status-image-box">' +
-            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/' + data[i].PermissionImage + '.png" alt="">' +
+            '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + data[i].PermissionImage + '.png" alt="">' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -6213,7 +6213,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
     var PermissionHisHTML = '';
     if(files.ListItemAllFields != undefined) {
         if(files.ListItemAllFields.Titan_Permission != undefined) {
-            PermissionHisHTML = '<div class="clsPermHis" onclick="ShowPermissionHistory(\'' + files.ServerRelativeUrl + '\', \'' + Type + '\');"><img src="../SiteAssets/MyDocuments/DMS/assets/images/user_permission.png" alt="#"></div>';
+            PermissionHisHTML = '<div class="clsPermHis" onclick="ShowPermissionHistory(\'' + files.ServerRelativeUrl + '\', \'' + Type + '\');"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/user_permission.png" alt="#"></div>';
         }
         DocumentId = files.ListItemAllFields.ID;
         Isinherit = files.ListItemAllFields.HasUniqueRoleAssignments
@@ -6250,7 +6250,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
             DocumentId = files.ItemId;
         }
         if(files.Titan_Permission != undefined) {
-            PermissionHisHTML = '<div class="clsPermHis" onclick="ShowPermissionHistory(\'' + files.ServerRelativeUrl + '\', \'' + Type + '\');"><img src="../SiteAssets/MyDocuments/DMS/assets/images/user_permission.png" alt="#"></div>';
+            PermissionHisHTML = '<div class="clsPermHis" onclick="ShowPermissionHistory(\'' + files.ServerRelativeUrl + '\', \'' + Type + '\');"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/user_permission.png" alt="#"></div>';
         }
         SubDocType = files.SubCategory;
         if(files.SubCategory == null || files.SubCategory == "null" || files.SubCategory == "-Select-" || files.SubCategory == "--select--") {
@@ -6261,8 +6261,8 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
     if(files.CheckOutType == "0") {
         checkOutHTML = '<div class="checkTypeClass" tile="" onmouseover="getcheckOutName(this, \'' + files.ServerRelativeUrl + '\');"><i class="fa fa-lock" style="font-size:24px"></i></div>';
     }
-    //var tr = $('<tr>' + '<td class="text-center">' + '<div class="chexbox_mg">' + PermissionHisHTML + '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + encodeURIComponent(files.ServerRelativeUrl) + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + encodeURIComponent(files.Name) + ', ' + encodeURIComponent(CopyFileLink) + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' + '<label for="myCheckboxgd' + rowCount + '">' + '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '" >' + checkOutHTML + '</label>' + '</div>' + '</td>');//22 March 23
-    var tr = $('<tr>' + '<td class="text-center">' + '<div class="chexbox_mg">' + PermissionHisHTML + '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + encodeURIComponent(files.ServerRelativeUrl) + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + encodeURIComponent(files.Name) + ', ' + encodeURIComponent(CopyFileLink) + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' + '<label for="myCheckboxgd' + rowCount + '">' + '<img onerror="showDefaultIcon(this);" width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '" >' + checkOutHTML + '</label>' + '</div>' + '</td>');
+    //var tr = $('<tr>' + '<td class="text-center">' + '<div class="chexbox_mg">' + PermissionHisHTML + '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + encodeURIComponent(files.ServerRelativeUrl) + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + encodeURIComponent(files.Name) + ', ' + encodeURIComponent(CopyFileLink) + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' + '<label for="myCheckboxgd' + rowCount + '">' + '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '" >' + checkOutHTML + '</label>' + '</div>' + '</td>');//22 March 23
+    var tr = $('<tr>' + '<td class="text-center">' + '<div class="chexbox_mg">' + PermissionHisHTML + '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + encodeURIComponent(files.ServerRelativeUrl) + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + encodeURIComponent(files.Name) + ', ' + encodeURIComponent(CopyFileLink) + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' + '<label for="myCheckboxgd' + rowCount + '">' + '<img onerror="showDefaultIcon(this);" width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '" >' + checkOutHTML + '</label>' + '</div>' + '</td>');
     for(var j = 0; j < ColumnCount.length; j++) {
         var cell = "";
         if(ColumnCount[j].ColumnName == "Reference") {
@@ -6365,17 +6365,17 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                     ApprovedDate = ''
                 }
                 if(files.ApprovalStatus == "Approved") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Approved by ' + files.ApprovedBy + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Approved by ' + files.ApprovedBy + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if(files.ApprovalStatus == "Reject" || files.ApprovalStatus == "Rejected") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' + DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' + DateHTML + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if(files.ApprovalStatus == "Cancelled") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' + DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' + '</td>');
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' + DateHTML + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' + '</td>');
                 } else if(files.ApprovalStatus == "Pending") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else {
@@ -6390,19 +6390,19 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                     ApprovedDate = ''
                 }
                 if(files.ListItemAllFields[ApprovedById] == "Approved") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Approved by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Approved by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if(files.ListItemAllFields[ApprovedById] == "Reject") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if(files.ListItemAllFields[ApprovedById] == "Cancelled") {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' + DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else {
-                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                    cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 }
@@ -6422,9 +6422,9 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 //to Open Chat box
                 if(Type != "folder") {
                     if(files.CommentCount != null && files.CommentCount != "null" && files.CommentCount != 0 && files.CommentCount != "0") {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy + '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy + '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
                     } else {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy + '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy + '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
                     }
                 }
                 if(files.SharedId != null && files.SharedId != "null") {
@@ -6432,20 +6432,20 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                         cell = $('<td class="text-left" onclick="GetSharedHistory(this,\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + ChatBoxHTML + '</td>');
                     } else {
                         if(files.AccessLevel == "Everyone") {
-                            EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                            EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                         } else if(files.AccessLevel == "Revoked") {
-                            EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
+                            EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
                         }
-                        cell = $('<td class="text-left">' + '<span class="shardHist" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + '</span>' + ChatBoxHTML + '</td>');
+                        cell = $('<td class="text-left">' + '<span class="shardHist" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + '</span>' + ChatBoxHTML + '</td>');
                     }
                 } else {
                     if(files.AccessLevel == "Everyone") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                     } else if(files.AccessLevel == "Revoked") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
                     }
                     if(files.SecurityLevel == "Revoked") {
-                        EveryonceHTML += '<img src="../SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">';
+                        EveryonceHTML += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">';
                     }
                     cell = $('<td class="text-left">' + EveryonceHTML + '</td>');
                 }
@@ -6453,38 +6453,38 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 //to Open Chat box
                 if(Type != "folder") {
                     if(files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
                     } else {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
                     }
                 }
                 if(files.ListItemAllFields.SharedId == null && files.ListItemAllFields.AccessLevel == "Everyone") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';;
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';;
                     cell = $('<td class="text-left" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + ChatBoxHTML + '</td>');
                 } else {
                     if(files.ListItemAllFields.AccessLevel == "Everyone") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                     } else if(files.ListItemAllFields.AccessLevel == "Revoked") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
                     }
-                    cell = $('<td class="text-left">' + '<span class="shardHist" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + '</span>' + ChatBoxHTML + '</td>');
+                    cell = $('<td class="text-left">' + '<span class="shardHist" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML + '</span>' + ChatBoxHTML + '</td>');
                 }
             } else {
                 //to Open Chat box
                 if(Type != "folder") {
                     if(files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
                     } else {
-                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                        ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
                     }
                 }
                 if(files.ListItemAllFields.AccessLevel == "Everyone") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                 } else if(files.ListItemAllFields.AccessLevel == "Revoked") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Everyone_Revoked.png" style="width:20px; margin:0 2px;">';
                 }
                 if(files.ListItemAllFields.SecurityLevel == "Revoked") {
-                    EveryonceHTML += '<img src="../SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">';
+                    EveryonceHTML += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">';
                 }
                 cell = $('<td class="text-left">' + EveryonceHTML + ChatBoxHTML + '</td>');
             }
@@ -6500,13 +6500,13 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                         ApprovedDate = ''
                     }
                     if(files.ListItemAllFields[ColumnCount[j].ColumnName] == "Approved") {
-                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" title="Approved by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' +
+                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" title="Approved by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(0, 128, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' +
                             //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                             '</td>');
                     } else if(files.ListItemAllFields[ColumnCount[j].ColumnName] == "Rejected" || files.ListItemAllFields[ColumnCount[j].ColumnName] == "Reject") {
-                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" title="Rejected by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' + '</td>');
+                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" title="Rejected by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(255, 0, 0);">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' + '</td>');
                     } else if(files.ListItemAllFields[ColumnCount[j].ColumnName] == "Pending") {
-                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' + '</td>')
+                        cell = $('<td class="text-left">' + '<div class="detail-title ellipsis-2" style="color: rgb(0, 128, 0);" title="Pending">' + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' + DateHTML + '</div>' + '</td>')
                     } else {
                         if(ColumnCount[j].DataType == "Date") {
                             cell.html(moment(files.ListItemAllFields[ColumnCount[j].ColumnName]).format('MMM D, YYYY'));
@@ -6534,7 +6534,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
 }
 function showDefaultIcon(img)
 {
- img.src='../SiteAssets/MyDocuments/DMS/assets/images/file.png';
+ img.src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/file.png';
 }
 //get check out by name on hover
 function getcheckOutName(Action, ServerURL) {
@@ -8182,7 +8182,7 @@ function PermissionsControlOffolder(data, Isinherit) {
                 '<div class="col-md-4">' +
                 '<div class="control_img">' +
                 '<h3 title="' + data.RoleAssignments.results[i].RoleDefinitionBindings.results[0].Description + '">' + data.RoleAssignments.results[i].RoleDefinitionBindings.results[0].Name + '</h3>' +
-                '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Acsesscontrol + '.png" alt="">' +
+                '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Acsesscontrol + '.png" alt="">' +
                 '</div>' +
                 '</div>' +
 
