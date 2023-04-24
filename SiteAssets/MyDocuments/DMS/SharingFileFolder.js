@@ -1473,7 +1473,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
             	$("#ParentFullView").empty();
             }
             else {
-	            $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+	            $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
 	            $("#btnFileFullView").click(function () {
 	                if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
 	                    window.open(propertiesServerRelativeUrl, '_blank');
@@ -1558,7 +1558,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xlsx" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xls" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "csv") {
                     propertiesServerRelativeUrl = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
                     $(".txtCopyLink").val(propertiesServerRelativeUrl);
-                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                     $("#btnFileFullView").click(function () {
                         if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                             window.open(propertiesServerRelativeUrl, '_blank');
@@ -1620,7 +1620,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         width: '100%',
                         height: '98%'
                     }).appendTo(container);
-                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                     $("#btnFileFullView").click(function () {
                         if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                             window.open(ImageLINK, '_blank');
@@ -1643,7 +1643,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         if (Extension == "pptx") {
                             propertiesServerRelativeUrl = $(".txtCopyLink").val()
                         }
-                        $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                        $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                         $("#btnFileFullView").click(function () {
                             if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                                 window.open(EditFileLink, '_blank');
@@ -9544,7 +9544,7 @@ function GetDocumentsSharedWithMe(SectionName) {
             $("#divPendingAck").hide();
         }
         ChangeLabels();
-    });
+    }).fail(function(){ waitingDialog.hide(); });
 }
 //Bhawana
 //Bind approval for share
