@@ -1,1 +1,1225 @@
-(function(_0x277280,_0x3e01ba){var _0x557e81=a352_0x1a78,_0x40c676=_0x277280();while(!![]){try{var _0x2fc87b=-parseInt(_0x557e81(0x105))/0x1*(parseInt(_0x557e81(0x1f7))/0x2)+-parseInt(_0x557e81(0x1bd))/0x3+-parseInt(_0x557e81(0x10d))/0x4+parseInt(_0x557e81(0x1b6))/0x5*(-parseInt(_0x557e81(0x1a0))/0x6)+-parseInt(_0x557e81(0x12e))/0x7*(parseInt(_0x557e81(0x1a8))/0x8)+-parseInt(_0x557e81(0x14e))/0x9*(-parseInt(_0x557e81(0x121))/0xa)+parseInt(_0x557e81(0x1ce))/0xb*(parseInt(_0x557e81(0x24a))/0xc);if(_0x2fc87b===_0x3e01ba)break;else _0x40c676['push'](_0x40c676['shift']());}catch(_0x4ac5ae){_0x40c676['push'](_0x40c676['shift']());}}}(a352_0x51be,0x28253));var arrPermission=[],FileCommentType='Parent',FileCommentResponse=FileCommentResponse||[],getLatestMsgId='',ModifyRecId='',finalFiles=[],Tcounter=0x0,RemoveDuplicate=[];function myShareDepartment(){var _0x55b077=a352_0x1a78,_0x427c8e='';$(_0x55b077(0x14a))[_0x55b077(0x1a3)](),$(_0x55b077(0x12a))[_0x55b077(0x1e5)](),$(_0x55b077(0x1ea))[_0x55b077(0x1e5)](),$(_0x55b077(0x174))[_0x55b077(0x1e5)](),$(_0x55b077(0x1eb))[_0x55b077(0x1e5)](),arrFileFolder=[],$(_0x55b077(0x241))[_0x55b077(0x1a3)](),HeadingTitle=_0x55b077(0x148),$(_0x55b077(0x188))[_0x55b077(0x155)]('');var _0x3943ff='?$select=*,Department/DepartmentName,Department/ID,Contributors/EMail,Owner/EMail&$top=5000&$orderby=Department/DepartmentName\x20asc&$expand=Department,Contributors,Owner&$filter=(CompanyId\x20eq\x20\x27'+Logged_CompanyId+_0x55b077(0x125)+_spPageContextInfo['userEmail']+_0x55b077(0x150)+Logged_CompanyId+_0x55b077(0x113)+_spPageContextInfo[_0x55b077(0x208)]+_0x55b077(0x202)+_spPageContextInfo[_0x55b077(0x208)]+_0x55b077(0x1f5)+Logged_CompanyId+_0x55b077(0x125)+_spPageContextInfo[_0x55b077(0x208)]+_0x55b077(0x114);$[_0x55b077(0x130)](getItemsWithQuery(_0x55b077(0x21a),_0x3943ff,_spPageContextInfo[_0x55b077(0x1f0)]))[_0x55b077(0x1ae)](function(_0x2005fd){var _0x469734=_0x55b077,_0x4f4877=getDepartmentURL(Logged_DepartmentId);_0x4f4877=_0x4f4877+'/DepartmentalDMS/Forms/AllItems.aspx';var _0x52dcc9=Logged_DepartmentName;tempTitle=_0x52dcc9[_0x469734(0x234)](/[^A-Z0-9]/ig,'');var _0x2e475d='javascript:GetLibarayDetails(this,\x27'+_0x4f4877+'\x27,\x27'+_0x52dcc9+_0x469734(0x219)+Logged_DepartmentId+_0x469734(0x219)+HeadingTitle+'\x27)';_0x427c8e+=_0x469734(0x19f)+_0x469734(0x180)+_0x469734(0x236)+'<a\x20href=\x22javascript:void(0)\x22\x20id=\x22'+tempTitle+Logged_DepartmentId+_0x469734(0x100)+_0x2e475d+'\x22\x20class=\x22dms-left-panel-tab-inner\x22\x20data-toggle=\x22pill\x22>'+_0x469734(0x206)+'<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/depart-ico.png\x22\x20alt=\x22Departmental\x20Documents\x22>'+_0x469734(0x16d)+Logged_DepartmentName+_0x469734(0x107)+_0x469734(0x17e)+_0x469734(0x13b)+_0x469734(0x1f1)+_0x469734(0x17e)+'</div>',_0x2005fd=_0x2005fd['filter']((_0x204cd3,_0x2014c9,_0x3f91d5)=>_0x3f91d5[_0x469734(0x128)](_0x41ddae=>_0x41ddae[_0x469734(0x148)]['ID']===_0x204cd3[_0x469734(0x148)]['ID'])===_0x2014c9),_0x2005fd=_0x2005fd[_0x469734(0x109)](function(_0x2d5116){var _0x226e9d=_0x469734;return _0x2d5116[_0x226e9d(0x148)][_0x226e9d(0x115)]!=null;}),$['each'](_0x2005fd,function(_0x4c4ab8,_0x23b6d2){var _0x32ea4f=_0x469734;if(_0x23b6d2[_0x32ea4f(0x148)][_0x32ea4f(0x115)][_0x32ea4f(0x22e)]()!=Logged_DepartmentName['toLowerCase']()){var _0x13c499=getDepartmentURL(_0x23b6d2[_0x32ea4f(0x148)]['ID']);_0x13c499=_0x13c499+_0x32ea4f(0x199);var _0xd4afdc=_0x23b6d2['Department'][_0x32ea4f(0x115)];tempTitle=_0xd4afdc[_0x32ea4f(0x234)](/[^A-Z0-9]/ig,'');var _0x56c403=_0x32ea4f(0x10b)+_0x13c499+'\x27,\x27'+_0xd4afdc+_0x32ea4f(0x219)+_0x23b6d2[_0x32ea4f(0x148)]['ID']+'\x27,\x27'+HeadingTitle+'\x27)';_0x427c8e+='<div\x20class=\x22panel\x20panel-default\x22>'+'<div\x20class=\x22panel-heading\x22>'+'<h4\x20class=\x22panel-title\x22>'+_0x32ea4f(0x104)+tempTitle+_0x23b6d2[_0x32ea4f(0x148)]['ID']+_0x32ea4f(0x100)+_0x56c403+_0x32ea4f(0x1e9)+_0x32ea4f(0x206)+'<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/depart-ico.png\x22\x20alt=\x22Departmental\x20Documents\x22>'+_0x32ea4f(0x16d)+_0x23b6d2[_0x32ea4f(0x148)][_0x32ea4f(0x115)]+_0x32ea4f(0x107)+_0x32ea4f(0x17e)+_0x32ea4f(0x13b)+_0x32ea4f(0x1f1)+_0x32ea4f(0x17e)+_0x32ea4f(0x17e);}}),$('#accordioninner')['append'](_0x427c8e);});}function getDepartmentURL(_0x2188b2){var _0x170568=a352_0x1a78,_0x3c0e3c='',_0x29e790=_0x170568(0xfb)+Logged_CompanyId+'\x27\x20and\x20ID\x20eq\x20\x27'+_0x2188b2+'\x27';return $[_0x170568(0x130)](getItemsWithQuery(_0x170568(0x112),_0x29e790,_spPageContextInfo[_0x170568(0x1f0)]))['done'](function(_0x2e8b0d){var _0x46fd48=_0x170568;if(_0x2e8b0d[_0x46fd48(0x167)]>0x0){var _0xfde060=_0x2e8b0d[0x0][_0x46fd48(0x221)];_0xfde060!=null&&_0xfde060!=''&&(_0x3c0e3c=_0xfde060);}}),_0x3c0e3c;}function getUserRoles_Dept(_0x42ece7){var _0xb8a3dc=a352_0x1a78;arrPermission=[];var _0x195c76=_0xb8a3dc(0x238)+Logged_CompanyId+'\x27\x20and\x20Department/DepartmentName\x20eq\x20\x27'+_0x42ece7+_0xb8a3dc(0x126)+_spPageContextInfo['userEmail']+'\x27';$['when'](getItemsWithQuery('ProcessApprovers',_0x195c76,_spPageContextInfo['webAbsoluteUrl']))[_0xb8a3dc(0x1ae)](function(_0x1128eb){var _0x4e4fe1=_0xb8a3dc;if(_0x1128eb['length']>0x0)arrPermission[_0x4e4fe1(0x1b9)]({'UserFullAccess':!![],'UserContri':![],'UserReader':![]});else{var _0x563b74=_0x4e4fe1(0x170)+Logged_CompanyId+_0x4e4fe1(0x197)+_0x42ece7+'\x27\x20and\x20(Contributors/EMail\x20eq\x20\x27'+_spPageContextInfo['userEmail']+_0x4e4fe1(0x142)+_spPageContextInfo[_0x4e4fe1(0x208)]+'\x27)\x20and\x20WebPartName\x20eq\x20\x27Documents\x27)\x20';$[_0x4e4fe1(0x130)](getItemsWithQuery(_0x4e4fe1(0x21a),_0x563b74,_spPageContextInfo[_0x4e4fe1(0x1f0)]))['done'](function(_0x42380){var _0x20002e=_0x4e4fe1;_0x42380[_0x20002e(0x167)]>0x0?($(_0x20002e(0x1dc))['hide'](),$(_0x20002e(0x1b5))[_0x20002e(0x1a3)](),$(_0x20002e(0x146))['hide'](),arrPermission[_0x20002e(0x1b9)]({'UserFullAccess':![],'UserContri':!![],'UserReader':![]})):($('#liPermission')['hide'](),$(_0x20002e(0x1b5))['hide'](),$(_0x20002e(0x146))['hide'](),$(_0x20002e(0x12a))[_0x20002e(0x1a3)](),$(_0x20002e(0x1ea))[_0x20002e(0x1a3)](),$(_0x20002e(0x174))[_0x20002e(0x1a3)](),$('#divProperties')[_0x20002e(0x1a3)](),$('#btnMultiMove')[_0x20002e(0x1a3)](),$('#liAlert')['hide'](),$('#divDelete')[_0x20002e(0x1a3)](),$(_0x20002e(0x207))['hide'](),$('#liRemoveGroup')['hide'](),$('#divShare')[_0x20002e(0x1a3)](),arrPermission['push']({'UserFullAccess':![],'UserContri':![],'UserReader':!![]}));});}});}function getUserRoles_Project(_0x23becf){var _0x42baee=a352_0x1a78;arrPermission=[];var _0x50afbd='?$select=Title,CompanyId,ManagerName/EMail&$top=5000&$expand=ManagerName&$filter=CompanyId\x20eq\x20\x27'+Logged_CompanyId+_0x42baee(0x1ad)+encodeURIComponent(_0x23becf)+_0x42baee(0x1c1)+_spPageContextInfo[_0x42baee(0x208)]+'\x27\x20';$['when'](getItemsWithQuery(_0x42baee(0x1d6),_0x50afbd,_spPageContextInfo['webAbsoluteUrl']))[_0x42baee(0x1ae)](function(_0x5c927f){var _0x5601a9=_0x42baee;if(_0x5c927f[_0x5601a9(0x167)]>0x0)arrPermission[_0x5601a9(0x1b9)]({'UserFullAccess':!![],'UserContri':![],'UserReader':![]});else{var _0x46929a='?$select=Title,CompanyId,TeamMember/EMail,Project/Title,DocumentPermission&$top=5000&$expand=TeamMember,Project&$filter=CompanyId\x20eq\x20\x27'+Logged_CompanyId+_0x5601a9(0x1df)+_0x23becf+_0x5601a9(0x195)+_spPageContextInfo['userEmail']+_0x5601a9(0xf9);$['when'](getItemsWithQuery(_0x5601a9(0x108),_0x46929a,_spPageContextInfo[_0x5601a9(0x1f0)]))['done'](function(_0x19f027){var _0x103280=_0x5601a9;_0x19f027[_0x103280(0x167)]>0x0?($(_0x103280(0x1dc))[_0x103280(0x1a3)](),$(_0x103280(0x1b5))[_0x103280(0x1a3)](),$(_0x103280(0x146))[_0x103280(0x1a3)](),arrPermission[_0x103280(0x1b9)]({'UserFullAccess':![],'UserContri':!![],'UserReader':![]})):($(_0x103280(0x1dc))['hide'](),$(_0x103280(0x1b5))['hide'](),$(_0x103280(0x146))[_0x103280(0x1a3)](),$(_0x103280(0x12a))[_0x103280(0x1a3)](),$('#divUpload')[_0x103280(0x1a3)](),$('#liEmails')[_0x103280(0x1a3)](),$(_0x103280(0x111))['hide'](),$('#btnMultiMove')[_0x103280(0x1a3)](),$(_0x103280(0x241))[_0x103280(0x1a3)](),$(_0x103280(0x145))['hide'](),$(_0x103280(0x207))[_0x103280(0x1a3)](),$(_0x103280(0x14a))[_0x103280(0x1a3)](),$('#divShare')[_0x103280(0x1a3)](),arrPermission[_0x103280(0x1b9)]({'UserFullAccess':![],'UserContri':![],'UserReader':!![]}));});}});}function getUserRoles_Client(_0x15cb51){var _0x20f220=a352_0x1a78;arrPermission=[];var _0x11abf8='?$select=Title,CompanyID/Id,InternalSupervisor/EMail,Supervisor/EMail&$top=5000&$expand=CompanyID,InternalSupervisor,Supervisor&$filter=(CompanyID/Id\x20eq\x20\x27'+Logged_CompanyId+_0x20f220(0x1ad)+_0x15cb51+_0x20f220(0x229)+_spPageContextInfo['userEmail']+_0x20f220(0x1c9)+_spPageContextInfo[_0x20f220(0x208)]+_0x20f220(0x1db);$[_0x20f220(0x130)](getItemsWithQuery(_0x20f220(0x12c),_0x11abf8,_spPageContextInfo[_0x20f220(0x1f0)]))[_0x20f220(0x1ae)](function(_0x5dbb1d){var _0x35771f=_0x20f220;_0x5dbb1d[_0x35771f(0x167)]>0x0?arrPermission[_0x35771f(0x1b9)]({'UserFullAccess':!![],'UserContri':![],'UserReader':![]}):($('#liPermission')[_0x35771f(0x1a3)](),$(_0x35771f(0x1b5))[_0x35771f(0x1a3)](),$(_0x35771f(0x146))[_0x35771f(0x1a3)](),arrPermission[_0x35771f(0x1b9)]({'UserFullAccess':![],'UserContri':!![],'UserReader':![]}));});}function AddFileViewCount(){var _0x2701a7=a352_0x1a78,_0x44c78e=_0x2701a7(0x22a),_0x150896=CopyLibrary;$(_0x2701a7(0x118))['css'](_0x2701a7(0x179))=='none'&&(_0x150896=CheckLibary);var _0x3ec171=_0x2701a7(0x22d)+_spPageContextInfo[_0x2701a7(0x208)]+_0x2701a7(0x20c)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($('#FileName')['text']())+'\x27\x20and\x20(Views\x20eq\x20\x27Yes\x27\x20or\x20Views\x20eq\x20\x27No\x27)';$[_0x2701a7(0x130)](getItemsWithQuery('DocumentComments',_0x3ec171,_spPageContextInfo[_0x2701a7(0x1f0)]))[_0x2701a7(0x1ae)](function(_0x143b33){var _0x22e789=_0x2701a7;if(_0x143b33['length']>0x0){if(_0x143b33[0x0][_0x22e789(0x223)]=='No'){var _0x292aa4={'__metadata':{'type':'SP.Data.'+_0x44c78e+_0x22e789(0x177)},'Views':_0x22e789(0x1e8),'ViewsById':parseInt(_spPageContextInfo[_0x22e789(0x110)])};updateItemWithIDItemListDocuments(_0x44c78e,_0x292aa4,_0x143b33[0x0]['ID'],_spPageContextInfo['webAbsoluteUrl'],![]);}}else{if(_0x143b33[_0x22e789(0x167)]==0x0){var _0x292aa4={'__metadata':{'type':_0x22e789(0x15d)+_0x44c78e+_0x22e789(0x177)},'Title':$(_0x22e789(0x11f))[_0x22e789(0x240)](),'EmployeeId':parseInt(_spPageContextInfo[_0x22e789(0x110)]),'Views':_0x22e789(0x1e8),'ViewsById':parseInt(_spPageContextInfo['userId']),'DocumentId':parseInt(DocumentId),'FileName':$('#FileName')['text'](),'DocumentTitle':$('#FileTitle')['text'](),'FileCategory':$(_0x22e789(0x1cb))[_0x22e789(0x240)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$('#FilePath')['text'](),'LibraryName':_0x150896};AddItemToListGroups(_0x44c78e,_0x292aa4);}}});}function PushRootComment(){var _0x1b0070=a352_0x1a78,_0x1670ec=_0x1b0070(0x22a),_0x28ba22=$('#FileCommArea\x20.emojionearea-editor')[_0x1b0070(0x155)]()[_0x1b0070(0x19a)](),_0x517c69=CopyLibrary;$(_0x1b0070(0x118))[_0x1b0070(0x1fb)](_0x1b0070(0x179))==_0x1b0070(0x237)&&(_0x517c69=CheckLibary);if(_0x28ba22!=''){if(FileCommentType==_0x1b0070(0x224)){var _0x51cdcb={'__metadata':{'type':_0x1b0070(0x15d)+_0x1670ec+_0x1b0070(0x177)},'EmployeeId':_spPageContextInfo['userId'],'ReplierId':_spPageContextInfo[_0x1b0070(0x110)],'Comments':_0x28ba22,'Initials':_0x1b0070(0x224),'ReplyforId':_spPageContextInfo[_0x1b0070(0x110)],'Title':$(_0x1b0070(0x11f))[_0x1b0070(0x240)](),'DocumentId':parseInt(DocumentId),'FileName':$('#FileName')[_0x1b0070(0x240)](),'DocumentTitle':$(_0x1b0070(0x1d7))[_0x1b0070(0x240)](),'FileCategory':$(_0x1b0070(0x1cb))[_0x1b0070(0x240)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$('#FilePath')['text'](),'LibraryName':_0x517c69};AddDocComments(_0x1670ec,_0x51cdcb,'0'),$('#FileCommArea\x20.emojionearea-editor')[_0x1b0070(0x155)]('');}else{if(FileCommentType==_0x1b0070(0x15c)){var _0x51cdcb={'__metadata':{'type':'SP.Data.'+_0x1670ec+'ListItem'},'EmployeeId':_spPageContextInfo[_0x1b0070(0x110)],'ReplierId':_spPageContextInfo[_0x1b0070(0x110)],'Comments':_0x28ba22,'Initials':_0x1b0070(0x15c),'ReplyTo':$(_0x1b0070(0x18c))['text'](),'ReplyAgainst':$(_0x1b0070(0x137))['attr'](_0x1b0070(0x156)),'Title':$(_0x1b0070(0x11f))['text'](),'DocumentId':parseInt(DocumentId),'FileName':$(_0x1b0070(0x11f))['text'](),'DocumentTitle':$(_0x1b0070(0x1d7))[_0x1b0070(0x240)](),'FileCategory':$(_0x1b0070(0x1cb))[_0x1b0070(0x240)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$(_0x1b0070(0x21c))[_0x1b0070(0x240)](),'LibraryName':_0x517c69};AddDocComments(_0x1670ec,_0x51cdcb,'0'),$(_0x1b0070(0x165))[_0x1b0070(0x155)](''),FileCommentType=_0x1b0070(0x224);}else FileCommentType==_0x1b0070(0x21e)&&UpdateEditComment(ModifyRecId);}}else return alert(_0x1b0070(0x22c)),![];}function AddDocComments(_0xbc0f62,_0x1ac628,_0x321ab8){var _0x447abc=a352_0x1a78;$[_0x447abc(0xff)]({'url':_spPageContextInfo[_0x447abc(0x1f0)]+'/_api/web/lists/GetByTitle(\x27'+_0xbc0f62+'\x27)/items','type':_0x447abc(0x171),'contentType':_0x447abc(0x203),'data':JSON['stringify'](_0x1ac628),'async':![],'headers':{'Accept':'application/json;odata=verbose','X-RequestDigest':$(_0x447abc(0xf3))[_0x447abc(0x1ca)]()},'success':function(_0x4a0a1f){var _0x1b5ffe=_0x447abc;$(_0x1b5ffe(0x101))[_0x1b5ffe(0x240)](parseInt($('#TotalComments')[_0x1b5ffe(0x240)]())+0x1),FinalFiles4Upload['length']>0x0?(uploadattachment(_0x4a0a1f['d']['ID']),$(_0x1b5ffe(0x1de))['empty'](),$(_0x1b5ffe(0x11a))[_0x1b5ffe(0x12b)]()):(AutoRefreshComments('GetAll','Logged_InUser'),$('.emojionearea-editor')[_0x1b5ffe(0x12b)](),FinalFiles4Upload=[],finalFiles=[]),$(_0x1b5ffe(0x173))[_0x1b5ffe(0x1a3)](),$('#NewAttachmentFiles')[_0x1b5ffe(0x12b)](),$(_0x1b5ffe(0x1a7))['val']('');},'error':function(_0x21aaff){var _0x315110=_0x447abc;console[_0x315110(0x246)](_0x21aaff);}});}function AutoRefreshComments(_0x2d44a4,_0x169f8a){var _0x54c43e=a352_0x1a78,_0x32ffdf=_spPageContextInfo[_0x54c43e(0x1f0)]+_0x54c43e(0x1c0)+getLatestMsgId+_0x54c43e(0x1c2)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x54c43e(0x11f))[_0x54c43e(0x240)]())+_0x54c43e(0x157),_0x4deeea=OccasionExecuteFilter(_0x32ffdf,_0x2d44a4,_0x169f8a);}function previewfile(_0x1f257d){var _0x4dc690=a352_0x1a78;ServerSrc=_0x1f257d[_0x4dc690(0x230)];_0x1f257d[_0x4dc690(0x230)]==null&&(ServerSrc=_0x1f257d[_0x4dc690(0x20d)]);var _0x4f7967=_0x1f257d[_0x4dc690(0x1e0)][_0x4dc690(0x235)][_0x4dc690(0x1a2)]('.')[_0x4dc690(0x13d)]();_0x4f7967==_0x4dc690(0x133)||_0x4f7967==_0x4dc690(0x16f)||_0x4f7967==_0x4dc690(0x129)||_0x4f7967=='xlsx'||_0x4f7967==_0x4dc690(0x24c)||_0x4f7967==_0x4dc690(0x1b8)||_0x4f7967=='pdf'?iframeUrl1=_spPageContextInfo[_0x4dc690(0x1f0)]+_0x4dc690(0x1af)+_0x1f257d[_0x4dc690(0x1e0)][_0x4dc690(0x143)]+'&action=interactivepreview':iframeUrl1=_0x1f257d[_0x4dc690(0x1e0)][_0x4dc690(0x143)];var _0x5c756f=$('#sign-viewer')[_0x4dc690(0x12b)]();$('<iframe>',{'src':iframeUrl1,'id':_0x4dc690(0x11d),'frameborder':0x0,'scrolling':_0x4dc690(0x1ee),'width':_0x4dc690(0x152),'height':'98%'})[_0x4dc690(0x1e1)](_0x5c756f),$(_0x4dc690(0x1bc))[_0x4dc690(0x160)]('show'),setInterval(function(){var _0x54785b=_0x4dc690;$(_0x54785b(0x1e3))[_0x54785b(0x1c4)]()[_0x54785b(0x1d3)](_0x54785b(0x19e))[_0x54785b(0x1a3)](),$(_0x54785b(0x1e3))[_0x54785b(0x1c4)]()['find']('#AppHeaderPanel')['remove'](),$(_0x54785b(0x1e3))[_0x54785b(0x1c4)]()[_0x54785b(0x1d3)](_0x54785b(0x178))[_0x54785b(0x155)]()==''&&$(_0x54785b(0x1bc))['modal']('hide');},0xbb8);}function previewImage(_0x47b048){var _0x26cce0=a352_0x1a78;src=_0x47b048[_0x26cce0(0x196)]+_0x26cce0(0x22f);var _0x564d2f=$('#sign-viewer')[_0x26cce0(0x12b)]();$(_0x26cce0(0x1fd),{'src':src,'id':'iframe-viewer','frameborder':0x0,'scrolling':_0x26cce0(0x1ee),'width':_0x26cce0(0x152),'height':_0x26cce0(0x227)})[_0x26cce0(0x1e1)](_0x564d2f),$('#AttachmentView')['modal'](_0x26cce0(0x1e5));}function uploadattachment(_0x89c185){var _0x11966f=a352_0x1a78,_0x5afab6=0x0;FinalFiles4Upload[_0x11966f(0x167)]>0x0&&$[_0x11966f(0x13e)](FinalFiles4Upload,function(_0x2c5c11,_0xf87868){var _0x13a7c2=_0x11966f;getFileBuffer(_0xf87868)[_0x13a7c2(0x212)](function(_0x402070){var _0x4263f3=_0x13a7c2,_0x235d49=_0xf87868['name'],_0x512325=_0x235d49[_0x4263f3(0x234)](/[^.a-zA-Z0-9]/ig,'');$[_0x4263f3(0xff)]({'url':_spPageContextInfo[_0x4263f3(0x1f0)]+_0x4263f3(0x247)+_0x89c185+_0x4263f3(0x1b3)+_0x512325+'\x27)','method':_0x4263f3(0x171),'data':_0x402070,'async':![],'processData':![],'headers':{'Accept':_0x4263f3(0x203),'content-type':_0x4263f3(0x203),'X-RequestDigest':$(_0x4263f3(0xf3))[_0x4263f3(0x1ca)]()},'success':function(_0x10f20f){var _0x1fc844=_0x4263f3;_0x5afab6=_0x5afab6+0x1,FinalFiles4Upload[_0x1fc844(0x167)]==_0x5afab6&&(AutoRefreshComments('GetAll','Logged_InUser'),finalFiles=[],FinalFiles4Upload=[]);},'error':function(_0x11f16a){var _0x50bb03=_0x4263f3;console[_0x50bb03(0x246)](_0x11f16a[_0x50bb03(0x181)][_0x50bb03(0x217)]);}});});});}function GetComments(_0x4a4bfd,_0x4865a2){var _0x11b10d=a352_0x1a78;getTotalViewCount(),Ownurl=_spPageContextInfo[_0x11b10d(0x1f0)]+_0x11b10d(0x11e)+DocumentId+_0x11b10d(0x168)+encodeURIComponent($('#FileName')['text']())+_0x11b10d(0x157);var _0x5387c4=OccasionExecuteFilter(Ownurl,_0x4a4bfd,_0x4865a2);}function OccasionExecuteFilter(_0x20703b,_0x443e98,_0x5d8034){var _0x1f37cf=a352_0x1a78;FileCommentResponse=[];var _0x21ecc8='';_0x20703b['indexOf'](_0x1f37cf(0x20f))!=-0x1?_0x21ecc8=_0x20703b:Ownurl=_0x21ecc8=_0x20703b,ReadOccasionComment(_0x443e98,_0x5d8034,_0x21ecc8,'');}function ReadOccasionComment(_0x351323,_0x3c5891,_0xf638a9,_0x61a192){var _0x113425=a352_0x1a78;$[_0x113425(0xff)]({'url':_0xf638a9,'headers':{'Accept':_0x113425(0x203)},'async':![],'success':function(_0x25c4dd){var _0x23ea3d=_0x113425;FileCommentResponse=FileCommentResponse['concat'](_0x25c4dd['d']['results']),FileCommentResponse[_0x23ea3d(0x13a)]((_0x8a8fd5,_0x2760ae)=>_0x8a8fd5['ID']-_0x2760ae['ID']),FileCommentResponse[_0x23ea3d(0x167)]>0x0&&(getLatestMsgId!=FileCommentResponse[FileCommentResponse['length']-0x1]['Id']&&_0x351323==_0x23ea3d(0x15f)&&$(_0x23ea3d(0x164))[_0x23ea3d(0x198)]()<-0x5&&_0x3c5891!='Logged_InUser'&&$(_0x23ea3d(0x14d))[_0x23ea3d(0x1e5)](),_0x61a192!=_0x23ea3d(0x23f)&&(getLatestMsgId=FileCommentResponse[FileCommentResponse['length']-0x1]['Id'])),FileCommentResponse[_0x23ea3d(0x167)]>0x0?_0xf638a9[_0x23ea3d(0x117)]('$skipToken')!=-0x1?DesignChatting(FileCommentResponse,'refreshMode'):DesignChatting(FileCommentResponse,''):($(_0x23ea3d(0x1e6))[_0x23ea3d(0x12b)](),$(_0x23ea3d(0x101))[_0x23ea3d(0x240)]('0')),_0x25c4dd['d'][_0x23ea3d(0x18d)]?(Ownurl=_0x25c4dd['d'][_0x23ea3d(0x18d)],$(_0x23ea3d(0x120))['css'](_0x23ea3d(0x179),_0x23ea3d(0xf2))):_0xf638a9['indexOf']('$skipToken')==-0x1&&$('#seemorebtnGeneral')[_0x23ea3d(0x1fb)](_0x23ea3d(0x179),_0x23ea3d(0x237));},'error':function(_0x2e565b){var _0x1e8cc0=_0x113425;console[_0x1e8cc0(0x246)](_0x2e565b);}});}function OccasionCommentCount(_0x2cdf29){var _0x5dfe60=a352_0x1a78;_0x2cdf29==_0x5dfe60(0x15f)&&(UrlCommentTotal=_spPageContextInfo[_0x5dfe60(0x1f0)]+_0x5dfe60(0x1c6)+CurrentYear+_0x5dfe60(0x228)+EmployeeID+'\x27\x20and\x20OccasionType\x20\x20eq\x20\x27'+OccasionType+_0x5dfe60(0x157)),OccasionresponseComment=[],ReadOccasionCommentTotal();}function a352_0x1a78(_0x11eec8,_0x4dfbb4){var _0x51be4f=a352_0x51be();return a352_0x1a78=function(_0x1a785c,_0x593926){_0x1a785c=_0x1a785c-0xf2;var _0x3349d6=_0x51be4f[_0x1a785c];return _0x3349d6;},a352_0x1a78(_0x11eec8,_0x4dfbb4);}function DesignChatting(_0x17d2c8,_0x59536e){var _0x4d3d8b=a352_0x1a78;_0x59536e==''&&$(_0x4d3d8b(0x101))[_0x4d3d8b(0x240)](_0x17d2c8[_0x4d3d8b(0x167)]);var _0x1e9895='',_0x8b5c82=[],_0x5ca2ea=[],_0x28ef22=_0x4d3d8b(0x14b);for(var _0x4853c5=0x0;_0x4853c5<_0x17d2c8[_0x4d3d8b(0x167)];_0x4853c5++){var _0xbc9e3f=_0x17d2c8[_0x4853c5]['LikeCount'],_0x480bce=_0x4d3d8b(0x154);_0x59536e!=_0x4d3d8b(0x1b4)?(_0xbc9e3f=checkLikeCommentUser(_0x17d2c8[_0x4853c5]['Id']),_0xbc9e3f>0x0?(_0x28ef22=_0x4d3d8b(0x1cd),_0x480bce=_0x4d3d8b(0x154)):(_0xbc9e3f=0x0,_0x480bce=_0x4d3d8b(0x237))):_0xbc9e3f==null&&(_0xbc9e3f=0x0,_0x480bce='none');var _0x14cc76=new Date(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x162)]),_0x19b287=_0x14cc76[_0x4d3d8b(0x14c)](),_0x15dd3f=+_0x19b287[_0x4d3d8b(0x1f8)](0x0,0x2),_0x31e28f=_0x15dd3f%0xc||0xc,_0x24eb89=_0x15dd3f<0xc?'\x20AM':_0x4d3d8b(0x1bf);_0x19b287=_0x31e28f+_0x19b287[_0x4d3d8b(0x1f8)](0x2,0x3)+_0x24eb89;if(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x1c7)]==_0x4d3d8b(0x224))_spPageContextInfo['userEmail'][_0x4d3d8b(0x22e)]()==_0x17d2c8[_0x4853c5][_0x4d3d8b(0x222)][_0x4d3d8b(0x1d9)]['toLowerCase']()?_0x1e9895=_0x1e9895+'<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-my\x27\x20id=\x27CommentDivRecNo'+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+'<div\x20class=\x27col-md-12\x20col-sm-12\x20pl0\x20pr0\x20pb10\x27>'+_0x4d3d8b(0xf4)+formatDateComment(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x162)])+'</span>\x20at\x20<span>\x20'+_0x19b287+'</span><span\x20id=\x27LikeSpan'+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1fe)+_0x480bce+_0x4d3d8b(0x1ab)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1ec)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1cc)+_0xbc9e3f+_0x4d3d8b(0x1ac)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x135)+_0x4d3d8b(0x123)+_0x4d3d8b(0x1a9)+_0x4d3d8b(0x16b)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x209)+_0x4d3d8b(0x1cf)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0xf7)+'<li><a\x20type=\x27button\x27\x20class=\x27logout\x27\x20onclick=\x27DeleteComments('+_0x17d2c8[_0x4853c5]['ID']+')\x27\x20>Delete</a></li>'+'</ul>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x232)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x20b)]+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1f1)+_0x4d3d8b(0x1a4)+_0x4d3d8b(0x1f9)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1be)+'</div>':(attachment=_spPageContextInfo['webAbsoluteUrl']+_0x4d3d8b(0x169)+escapeProperly(_0x17d2c8[_0x4853c5]['Author']['EMail']),_0x1e9895=_0x1e9895+_0x4d3d8b(0x1f4)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x1b2)+attachment+'\x27\x20class=\x27img-circle\x20chat-user-image\x27\x20width=\x2730\x27\x20height=\x2730\x27\x20data-themekey=\x27#\x27></span><span\x20class=\x27b-500\x27\x20id=\x27Username'+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x222)][_0x4d3d8b(0x192)]+_0x4d3d8b(0x18f)+formatDateComment(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x162)])+'</span>\x20at\x20<span>\x20'+_0x19b287+_0x4d3d8b(0x176)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1fe)+_0x480bce+_0x4d3d8b(0x1ab)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1ec)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1cc)+_0xbc9e3f+_0x4d3d8b(0x163)+'<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x27>'+'<div\x20class=\x27mt-4\x20my-chat-edit-delete-panel-inside\x27\x20id=\x27CommentText'+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x20b)]+'</div>'+_0x4d3d8b(0x1ba)+'<img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png\x27\x20alt=\x27more\x20horiz\x27\x20data-themekey=\x27#\x27>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x209)+_0x4d3d8b(0x17b)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x175)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1cc)+_0x28ef22+_0x4d3d8b(0x218)+_0x4d3d8b(0x19d)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x12f)+_0x4d3d8b(0x1c5)+_0x4d3d8b(0x1f1)+_0x4d3d8b(0x1a4)+_0x4d3d8b(0x1f9)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1be)+_0x4d3d8b(0x17e));else _0x17d2c8[_0x4853c5]['Initials']=='Reply'&&(_spPageContextInfo[_0x4d3d8b(0x110)]==_0x17d2c8[_0x4853c5][_0x4d3d8b(0x1d2)]?_0x1e9895=_0x1e9895+'<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-my\x27\x20id=\x27CommentDivRecNo'+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x18e)+_0x4d3d8b(0xf4)+formatDateComment(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x162)])+_0x4d3d8b(0x184)+_0x19b287+'</span><span\x20id=\x27LikeSpan'+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1fe)+_0x480bce+'\x27><span><img\x20class=\x27msg-like-img\x27\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png\x27\x20data-themekey=\x27#\x27></span><span\x20class=\x27countInnerLikes\x27\x20id=\x27LikesCount'+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1ec)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x248)+_0xbc9e3f+_0x4d3d8b(0x1ac)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1ff)+_0x4d3d8b(0x1a5)+'<a\x20href=\x27#\x27\x20class=\x27comment-reply-user-name-info\x27>@<span\x20>'+_0x17d2c8[_0x4853c5]['ReplyTo']+_0x4d3d8b(0x186)+_0x4d3d8b(0x17d)+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x23a)]+_0x4d3d8b(0x107)+_0x4d3d8b(0x1ba)+_0x4d3d8b(0x16b)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x209)+_0x4d3d8b(0x1cf)+_0x17d2c8[_0x4853c5]['ID']+')\x27>Edit</a></li>'+_0x4d3d8b(0x226)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x187)+_0x4d3d8b(0x1c5)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x24b)+_0x4d3d8b(0x16c)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+''+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x20b)]+''+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1f1)+'<div\x20class=\x27col-md-12\x20col-sm-12\x20p0\x27>'+_0x4d3d8b(0x1f9)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+'<div\x20class=\x27clearfix\x27></div>'+'</div>':(attachment=_spPageContextInfo[_0x4d3d8b(0x1f0)]+_0x4d3d8b(0x169)+escapeProperly(_0x17d2c8[_0x4853c5]['Author'][_0x4d3d8b(0x1d9)]),_0x1e9895=_0x1e9895+_0x4d3d8b(0xfa)+_0x4d3d8b(0x1b2)+attachment+_0x4d3d8b(0x136)+_0x17d2c8[_0x4853c5][_0x4d3d8b(0x222)][_0x4d3d8b(0x192)]+'</span><span\x20class=\x27pl5\x20pr5\x27>-</span><span>'+formatDateComment(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x162)])+_0x4d3d8b(0x184)+_0x19b287+'</span><span\x20id=\x27LikeSpan'+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1fe)+_0x480bce+_0x4d3d8b(0x20a)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1ec)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1cc)+_0xbc9e3f+'</span></span>\x20</div>'+'<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x27>'+_0x4d3d8b(0x19c)+_0x17d2c8[_0x4853c5]['ReplyTo']+_0x4d3d8b(0x144)+_0x17d2c8[_0x4853c5]['ReplyAgainst']+'</span>'+_0x4d3d8b(0x1ba)+_0x4d3d8b(0x191)+_0x4d3d8b(0x17e)+'<ul\x20class=\x27dropdown-menu\x20dropdown-menu-right\x20chat-edit-delete-dropdown\x27>'+'<li><a\x20type=\x27button\x27\x20class=\x27LikeCmnt'+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x216)+_0x17d2c8[_0x4853c5]['ID']+_0x4d3d8b(0x1cc)+_0x28ef22+_0x4d3d8b(0x185)+_0x4d3d8b(0x124)+_0x17d2c8[_0x4853c5]['ID']+')\x27>Reply</a></li>'+'</ul>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x24b)+'<div\x20class=\x27reply-text-box\x20my-chat-edit-delete-panel-inside\x20reply-inside-text-box\x27\x20id=\x27CommentText'+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+''+_0x17d2c8[_0x4853c5]['Comments']+''+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1f1)+_0x4d3d8b(0x1a4)+_0x4d3d8b(0x1f9)+_0x17d2c8[_0x4853c5]['ID']+'\x27>'+_0x4d3d8b(0x17e)+_0x4d3d8b(0x17e)+_0x4d3d8b(0x1be)+_0x4d3d8b(0x17e)));if(_0x17d2c8[_0x4853c5][_0x4d3d8b(0x200)][_0x4d3d8b(0xfd)][_0x4d3d8b(0x167)]>0x0){_0x5ca2ea[_0x4d3d8b(0x1b9)](_0x17d2c8[_0x4853c5]['ID']);for(var _0x4404f2=0x0;_0x4404f2<_0x17d2c8[_0x4853c5]['AttachmentFiles'][_0x4d3d8b(0xfd)][_0x4d3d8b(0x167)];_0x4404f2++){_0x8b5c82[_0x4d3d8b(0x1b9)]({'RecordId':_0x17d2c8[_0x4853c5]['ID'],'FileName':_0x17d2c8[_0x4853c5][_0x4d3d8b(0x200)][_0x4d3d8b(0xfd)][_0x4404f2][_0x4d3d8b(0x1f3)],'ServerRelativeUrl':_0x17d2c8[_0x4853c5][_0x4d3d8b(0x200)]['results'][_0x4404f2][_0x4d3d8b(0x16e)]});}}}_0x59536e==_0x4d3d8b(0x1b4)?$('#CommentsArea')['append'](_0x1e9895):$(_0x4d3d8b(0x1e6))[_0x4d3d8b(0x12b)]()[_0x4d3d8b(0x1ef)](_0x1e9895);for(var _0x48538a=0x0;_0x48538a<_0x5ca2ea['length'];_0x48538a++){var _0x2cd0fa=_0x5ca2ea[_0x48538a],_0x3234da=$[_0x4d3d8b(0x102)](_0x8b5c82,function(_0x54309b){var _0x42a217=_0x4d3d8b;return _0x54309b[_0x42a217(0x211)]==_0x5ca2ea[_0x48538a];}),_0x238e80='';$(_0x4d3d8b(0x134)+_0x2cd0fa)[_0x4d3d8b(0x12b)]();for(var _0xc9b9cf=0x0;_0xc9b9cf<_0x3234da['length'];_0xc9b9cf++){if(_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]['indexOf'](_0x4d3d8b(0x16f))!=-0x1)_0x238e80=_0x238e80+'<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_Docx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png\x27></img><span\x20title=\x27'+_0x3234da[_0xc9b9cf]['ServerRelativeUrl']+_0x4d3d8b(0x1a1)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+'\x27\x20onclick=\x27previewfile(this);\x27\x20data-fileurl=\x27'+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27>'+_0x3234da[_0xc9b9cf]['FileName']+_0x4d3d8b(0x14f)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+_0x4d3d8b(0x161);else{if(_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]['indexOf'](_0x4d3d8b(0x1c8))!=-0x1)_0x238e80=_0x238e80+'<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_PDF\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png\x27></img><span\x20title=\x27'+_0x3234da[_0xc9b9cf]['ServerRelativeUrl']+_0x4d3d8b(0x1a1)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+_0x4d3d8b(0x182)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27>'+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+_0x4d3d8b(0x14f)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+_0x4d3d8b(0x161);else{if(_0x3234da[_0xc9b9cf]['FileName'][_0x4d3d8b(0x117)]('xlsx')!=-0x1||_0x3234da[_0xc9b9cf]['FileName'][_0x4d3d8b(0x117)](_0x4d3d8b(0xf5))!=-0x1)_0x238e80=_0x238e80+_0x4d3d8b(0x12d)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+_0x4d3d8b(0x1a1)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+'\x27\x20onclick=\x27previewfile(this);\x27\x20data-fileurl=\x27'+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27>'+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+_0x4d3d8b(0x14f)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27\x20download><i\x20class=\x27fa\x20fa-download\x20cursor-pointer\x20px-4\x27\x20aria-hidden=\x27true\x27></i></a></span>\x20</div>';else _0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)][_0x4d3d8b(0x117)]('jpg')!=-0x1||_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)][_0x4d3d8b(0x117)](_0x4d3d8b(0x1d4))!=-0x1||_0x3234da[_0xc9b9cf]['FileName']['indexOf'](_0x4d3d8b(0x17f))!=-0x1||_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]['indexOf'](_0x4d3d8b(0x139))!=-0x1||_0x3234da[_0xc9b9cf]['FileName'][_0x4d3d8b(0x117)](_0x4d3d8b(0x243))!=-0x1?_0x238e80=_0x238e80+'<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Image\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27'+_0x3234da[_0xc9b9cf]['ServerRelativeUrl']+_0x4d3d8b(0x231)+_0x3234da[_0xc9b9cf]['FileName']+_0x4d3d8b(0x10c):_0x238e80=_0x238e80+_0x4d3d8b(0x116)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27\x20data-filename=\x27'+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x1f3)]+_0x4d3d8b(0x182)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27>'+_0x3234da[_0xc9b9cf]['FileName']+_0x4d3d8b(0x14f)+_0x3234da[_0xc9b9cf][_0x4d3d8b(0x16e)]+'\x27\x20download><i\x20class=\x27fa\x20fa-download\x20cursor-pointer\x20px-4\x27\x20aria-hidden=\x27true\x27></i></a></span>\x20</div>';}}}$(_0x4d3d8b(0x134)+_0x2cd0fa)['append'](_0x238e80);}}function EditComment(_0x551528){var _0x27e29e=a352_0x1a78;FileCommentType=_0x27e29e(0x21e),ModifyRecId=_0x551528;var _0x5c81dc='?$filter=ID\x20eq\x20\x27'+_0x551528+_0x27e29e(0x1e7);$['when'](getItemsWithQuery(_0x27e29e(0x22a),_0x5c81dc,_spPageContextInfo[_0x27e29e(0x1f0)]))[_0x27e29e(0x1ae)](function(_0xe187ff){var _0x1a81b3=_0x27e29e;if(_0xe187ff[_0x1a81b3(0x167)]>0x0){$(_0x1a81b3(0x11a))[_0x1a81b3(0x155)](_0xe187ff[0x0][_0x1a81b3(0x20b)]),$(_0x1a81b3(0xfc))[_0x1a81b3(0x12b)]();if(_0xe187ff[0x0][_0x1a81b3(0x200)][_0x1a81b3(0xfd)][_0x1a81b3(0x167)]>0x0){var _0x40a243='';for(var _0x2aadb0=0x0;_0x2aadb0<_0xe187ff[0x0][_0x1a81b3(0x200)]['results'][_0x1a81b3(0x167)];_0x2aadb0++){_0x40a243=_0x40a243+'<div\x20class=\x27comment-upload-chip\x20'+_0xe187ff[0x0]['ID']+'-'+_0x2aadb0+'\x27><span\x20class=\x27attachment-badge-name\x20comment-box-chip-text-box\x27><a\x20target=\x27_blank\x27\x20href=\x27'+_0xe187ff[0x0][_0x1a81b3(0x200)]['results'][_0x2aadb0][_0x1a81b3(0x16e)]+_0x1a81b3(0x10f)+_0xe187ff[0x0][_0x1a81b3(0x200)][_0x1a81b3(0xfd)][_0x2aadb0][_0x1a81b3(0x1f3)]+_0x1a81b3(0x1d0)+_0xe187ff[0x0]['ID']+_0x1a81b3(0x15e)+_0xe187ff[0x0]['ID']+_0x1a81b3(0x138)+_0xe187ff[0x0]['ID']+'-'+_0x2aadb0+_0x1a81b3(0x201)+_0xe187ff[0x0][_0x1a81b3(0x200)][_0x1a81b3(0xfd)][_0x2aadb0][_0x1a81b3(0x1f3)]+'\x27\x20onclick=\x27DeleteAttachment(this.id)\x27></i></span></div>';}$(_0x1a81b3(0xfc))[_0x1a81b3(0x1ef)](_0x40a243);}}else $(_0x1a81b3(0x11a))[_0x1a81b3(0x12b)]();});}function DeleteAttachment(_0x317e9c,_0x36f92e){var _0x25a903=a352_0x1a78,_0x33a0a9=$[_0x25a903(0x225)](),_0x297e2a=_0x317e9c['split']('-'),_0x123de6=$('#'+_0x317e9c)[_0x25a903(0x140)](_0x25a903(0x156)),_0x433ddc=_spPageContextInfo[_0x25a903(0x1f0)]+_0x25a903(0x149)+_0x297e2a[0x0]+_0x25a903(0x1f6)+_0x123de6+_0x25a903(0x11b);return $[_0x25a903(0xff)]({'url':_0x433ddc,'type':'DELETE','contentType':_0x25a903(0x203),'headers':{'X-RequestDigest':$(_0x25a903(0xf3))[_0x25a903(0x1ca)](),'X-HTTP-Method':_0x25a903(0x204),'Accept':'application/json;odata=verbose'},'success':function(_0x3125ea){var _0x4310b5=_0x25a903;_0x33a0a9['resolve'](_0x3125ea),$('.'+_0x317e9c)[_0x4310b5(0x1a3)](),$('#'+_0x317e9c)['hide']();},'error':function(_0x54539d){var _0x2dbc5b=_0x25a903;_0x33a0a9[_0x2dbc5b(0x1b1)](JSON['stringify'](_0x54539d)),console[_0x2dbc5b(0x246)](_0x54539d);}}),_0x33a0a9[_0x25a903(0x233)]();}function UpdateEditComment(_0x18316f){var _0xfec521=a352_0x1a78,_0x3502be={'__metadata':{'type':_0xfec521(0x20e)},'Comments':$(_0xfec521(0x165))[_0xfec521(0x155)]()};$[_0xfec521(0x130)](updateItemWithIDItemListDocuments(_0xfec521(0x22a),_0x3502be,_0x18316f,_spPageContextInfo[_0xfec521(0x1f0)],![]))[_0xfec521(0x1ae)](function(_0x57567e){var _0x3deb81=_0xfec521;FinalFiles4Upload[_0x3deb81(0x167)]>0x0?Edituploadattachment(_0x18316f):RetriveUpdateData(_0x18316f),alert(_0x3deb81(0x13c)),$(_0x3deb81(0xf8)+_0x18316f)[_0x3deb81(0x155)]($(_0x3deb81(0x165))['html']()),FileCommentType=_0x3deb81(0x224),$(_0x3deb81(0x1de))['empty'](),$(_0x3deb81(0xfc))[_0x3deb81(0x12b)](),$(_0x3deb81(0x11a))[_0x3deb81(0x12b)]();});}function a352_0x51be(){var _0x30dca5=['substr','<div\x20class=\x27attachment-badge\x20chip-box\x27\x20id=\x27Attachmentlist','#LikeSpan','css','?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=DocumentId\x20eq\x20\x27','<iframe>','\x27\x20style=\x27display:','<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x20others-reply-text-box\x27>','AttachmentFiles','\x27\x20value=\x27','\x27\x20or\x20Contributors/EMail\x20eq\x20\x27','application/json;odata=verbose','DELETE','getTime','<div\x20class=\x22d-flex\x20align-items-center\x22>','#LiLeavethegroup','userEmail','<ul\x20class=\x27dropdown-menu\x20dropdown-menu-right\x20chat-edit-delete-dropdown\x27>','\x27><span><img\x20class=\x27msg-like-img\x27\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png\x27></span><span\x20class=\x27countInnerLikes\x27\x20id=\x27LikesCount','Comments','\x27\x20and\x20DocumentId\x20eq\x20\x27','title','SP.Data.DocumentCommentsListItem','$skipToken','getFullYear','RecordId','then','#TotalLikes','#CommentDivRecNo','\x27)\x20and\x20DocumentId\x20eq\x20\x27','\x27\x20onclick=\x27Pushlikeforcomment(','error','</button></li>','\x27,\x27','ProcessApprovers','\x27)\x20and\x20(LikeComment\x20eq\x20\x27Yes\x27\x20or\x20LikeComment\x20eq\x20\x27No\x27)','#FilePath','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png','Modify','#CommentLikeList','#like-Img-color','SiteURL','Author','Views','Parent','Deferred','<li><a\x20class=\x27logout\x27\x20onclick=\x27DeleteComments(','98%','\x27\x20and\x20EmployeeCode\x20eq\x20\x27','\x27\x20and\x20(Supervisor/EMail\x20eq\x20\x27','DocumentComments','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_xlsx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png\x27></img><a\x20name=\x27','Please\x20type\x20a\x20message\x20to\x20continue.','?$select=*,Author/EMail&$expand=Author&$filter=Author/EMail\x20eq\x20\x27','toLowerCase','?web=1','name','\x27\x20title=','<div\x20class=\x27my-chat-edit-delete-panel-inside\x27\x20id=\x27CommentText','promise','replace','filename','<h4\x20class=\x22panel-title\x22>','none','?$select=*,Department/DepartmentName,Contributors/EMail&$top=5000&$expand=Department,Contributors&$filter=CompanyId\x20eq\x20\x27','includes','ReplyAgainst','<h4>No\x20views!!</h4>','Done','Jun','toString','ViewMore','text','#liAlert','hasClass','PNG','?$filter=DocumentId\x20eq\x20\x27','\x27\x20and\x20LikeCommentID\x20eq\x20\x27','log','/_api/web/lists/getbytitle(\x27DocumentComments\x27)/items(',')\x27\x20>','</a></span>\x20<span\x20class=\x27chip-icon-box\x27>\x20<a\x20href=\x27','60snMALJ','<div\x20class=\x27mt-14\x27>','ppt','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon.png','block','#__REQUESTDIGEST','<span>','csv','#Likeshitlist',')\x27>Edit</a></li>','#CommentText','\x27\x20and\x20DocumentPermission\x20eq\x20\x271\x27\x20','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-ext\x27>','?$select=ID,SiteURL,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=CompanyID/ID\x20eq\x20\x27','#oldfilename','results','An\x20error\x20occurred.\x20Please\x20contact\x20your\x20system\x20administrator\x20/\x20Refresh\x20a\x20WebPage\x20!','ajax','\x22\x20onclick=\x22','#TotalComments','grep','\x27\x20onclick=\x27previewfile(this);\x27\x20href=\x27javascript:void(0)\x27>','<a\x20href=\x22#groupDocuments_tab\x22\x20id=\x22','279716XmLKae','</li>','</span>','ProjectTeamDetails','filter','LikeComment','javascript:GetLibarayDetails(this,\x27','\x20onclick=\x27previewImage(this);\x27></img></div>','171240RomPLU','\x27></div>','\x27><span>','userId','#divProperties','Departments','\x27\x20and\x20(Owner/EMail\x20eq\x20\x27','\x27\x20and\x20WebPartName\x20eq\x20\x27Head\x20of\x20the\x20Department\x27)\x20','DepartmentName','<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Others\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png\x27></img><span\x20title=\x27','indexOf','#ModalDisplayProperty','#Username','.emojionearea-editor','\x27)\x20\x20','?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=\x20(Author/EMail\x20eq\x20(\x27','iframe-viewer','/_api/web/Lists/GetByTitle(\x27DocumentComments\x27)/Items?$select=*,ID,Author/Title,Author/Id,Author/EMail,AttachmentFiles&$expand=Author,AttachmentFiles&$orderby=Created\x20desc&$top=5000&$filter=(DocumentId\x20eq\x20\x27','#FileName','#seemorebtnGeneral','542690tZczYG','#likes','<div>','<li><a\x20type=\x27button\x27\x20onclick=\x27ActiveReplyCtrl(','\x27\x20and\x20Contributors/EMail\x20eq\x20\x27','\x27\x20and\x20WebPartName\x20eq\x20\x27Head\x20of\x20the\x20department\x27\x20and\x20Contributors/EMail\x20eq\x20\x27','#TotalHits','findIndex','xls','#divNew','empty','ClientMaster','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_xlsx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png\x27></img><span\x20title=\x27','7VVnOxH',')\x27>Reply</a></li>','when','\x27\x20and\x20LikeComment\x20eq\x20\x27Yes\x27\x20and\x20LikeCommentID\x20eq\x20\x27','\x27)\x20and\x20(Like\x20eq\x20\x27Yes\x27\x20or\x20Like\x20eq\x20\x27No\x27))&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles','doc','#Attachmentlist','<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x27>','\x27\x20class=\x27img-circle\x20chat-user-image\x27\x20width=\x2730\x27\x20height=\x2730\x27></span>\x20<span\x20class=\x27b-500\x27>','#ReplyforMsg','\x27\x20style=\x27color:red;\x27\x20id=\x27','png','sort','</a>','Comment\x20has\x20been\x20updated.','pop','each','getMonth','attr','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_PDF\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png\x27></img><a\x20name=\x27','\x27\x20or\x20Owner/EMail\x20eq\x20\x27','fileurl','</span>\x20:</a><span\x20class=\x27replymsg\x27>','#divDelete','#liMembers','Comment','Department','/_api/web/lists/GetByTitle(\x27DocumentComments\x27)/GetItemById(','#liRemoveGroup','Like','toTimeString','#ToastPopup','36cCgzKs','</span></span>\x20<span\x20class=\x27chip-icon-box\x27>\x20<a\x20href=\x27','\x27\x20and\x20WebPartName\x20eq\x20\x27DepartmentDocument_Access\x27)\x20or\x20(CompanyId\x20eq\x20\x27','Jul','100%','May','inline-block','html','value','\x27\x20and\x20(Initials\x20eq\x20\x27Parent\x27\x20or\x20Initials\x20eq\x20\x27Reply\x27))','<div\x20class=\x27like-user-name\x27>','?$select=*,Author/EMail,Author/Title,Author/Id&$expand=Author&$filter=\x20DocumentId\x20eq\x20\x27','<div\x20class=\x27comment-reply-user-name\x27><span\x20class=\x27comment-reply-user-name-lt\x27>TD</span><img\x20class=\x27comment-reply-user-name-img\x27\x20id=\x27ViewHitsProfileImages\x27\x20src=\x27','show-inner-likes-box-hide','Reply','SP.Data.','\x27><i\x20class=\x27fa\x20fa-close\x20','GetAll','modal','\x27\x20download><i\x20class=\x27fa\x20fa-download\x20cursor-pointer\x20px-4\x27\x20aria-hidden=\x27true\x27></i></a></span>\x20</div>','Created','</span></span>\x20</div>','#hideCommentScroll','#FileCommArea\x20.emojionearea-editor','Sept','length','\x27\x20and\x20FileName\x20eq\x20\x27','/_layouts/15/userphoto.aspx?accountname=','/_api/web/lists/GetByTitle(\x27','<img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png\x27\x20alt=\x27more\x20horiz\x27\x20data-themekey=\x27#\x27>','<div\x20class=\x27reply-text-box\x20my-chat-edit-delete-panel-inside\x20reply-inside-text-box\x27\x20id=\x27CommentText','<span\x20class=\x22mobile-hide-tabs-name\x20mt3\x20ml10\x22>','ServerRelativeUrl','docx','?$select=*,Department/DepartmentName,Department/ID,Contributors/EMail,Owner/EMail&$top=5000&$expand=Owner,Department,Contributors&$filter=(CompanyId\x20eq\x20\x27','POST','xlsx','#replyTextarea','#liEmails','\x27\x20data-toggle=\x27collapse\x27\x20data-target=\x27#messageReplyBox\x27\x20aria-expanded=\x27false\x27\x20onclick=\x27Pushlikeforcomment(','</span><span\x20id=\x27LikeSpan','ListItem','body','display','\x27\x20and\x20Like\x20eq\x20\x27Yes\x27\x20&$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy','<li><button\x20id=\x27messageEdit\x27\x20type=\x27button\x27\x20class=\x27btn\x20LikeCmnt','\x27\x20and\x20Views\x20eq\x20\x27Yes\x27&$select=*,ViewsBy/Title,ViewsBy/EMail,ViewsBy/ID&$expand=ViewsBy','<span\x20class=\x27replymsg\x27>','</div>','JPEG','<div\x20class=\x22panel-heading\x22>','responseText','\x27\x20onclick=\x27previewfile(this);\x27\x20data-fileurl=\x27','LikeCount','</span>\x20at\x20<span>\x20','</a></li>','</span>\x20:</a>',')\x27>Delete</a></li>','#accordioninner','Nov','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_Docx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png\x27></img><a\x20name=\x27','removeClass','#replyforuser','__next','<div\x20class=\x27col-md-12\x20col-sm-12\x20pl0\x20pr0\x20pb10\x27>','</span><span\x20class=\x27pl5\x20pr5\x27>-</span><span>','#ViewHitList','<img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png\x27\x20alt=\x27more\x20horiz\x27>','Title','?$filter=ID\x20eq\x20\x27','<h4>','\x27\x20and\x20TeamMember/EMail\x20eq\x20\x27','src','\x27\x20and\x20Department/DepartmentName\x20eq\x20\x27','scrollTop','/DepartmentalDMS/Forms/AllItems.aspx','trim','Oct','<div\x20class=\x27reply-text-line\x27><a\x20href=\x27#\x27\x20class=\x27comment-reply-user-name-info\x27>@<span\x20>','<li><a\x20class=\x27logout\x27\x20onclick=\x27ActiveReplyCtrl(','#AppHeaderPanel','<div\x20class=\x22panel\x20panel-default\x22>','1082946GDsdYC','\x27\x20data-filename=\x27','split','hide','<div\x20class=\x27col-md-12\x20col-sm-12\x20p0\x27>','<div\x20class=\x27reply-text-line\x27>','jpg','#CommentFileAttach','951344dnOyBG','<div\x20id=\x27editMenuOpen2\x27\x20class=\x27chat-edit-delete-panel\x20dropdown-toggle\x27\x20data-toggle=\x27dropdown\x27\x20aria-expanded=\x27false\x27>','.like-img','\x27><span><img\x20class=\x27msg-like-img\x27\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png\x27\x20data-themekey=\x27#\x27></span><span\x20class=\x27countInnerLikes\x27\x20id=\x27LikesCount','</span></span>','\x27\x20and\x20Title\x20eq\x20\x27','done','/_layouts/15/WopiFrame.aspx?sourcedoc=','LikeBy','reject','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-author-detail\x20pl0\x20pr0\x20pb10\x20pt0\x27>\x20<span\x20class=\x27mr10\x27><img\x20src=\x27',')/AttachmentFiles/add(\x20FileName=\x27','refreshMode','#liSettings','5njQpZZ','Are\x20you\x20sure\x20to\x20delete\x20this\x20comment\x20?','pptx','push','<div\x20class=\x27chat-edit-delete-panel\x20dropdown-toggle\x27\x20data-toggle=\x27dropdown\x27\x20aria-expanded=\x27false\x27>','<h4>No\x20Likes!!</h4>','#AttachmentView','71568lDnxGo','<div\x20class=\x27clearfix\x27></div>','\x20PM','/_api/web/Lists/GetByTitle(\x27DocumentComments\x27)/Items?$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles&$orderby=Created\x20desc&$top=10&$skipToken=Paged=TRUE%26p_ID=','\x27\x20and\x20ManagerName/EMail\x20eq\x20\x27','&$filter=\x20(DocumentId\x20eq\x20\x27','<li\x20class=\x27likes-box\x27>','contents','</ul>','/_api/web/Lists/GetByTitle(\x27OccasionReplies\x27)/Items?$select=ID&$orderby=Created\x20desc&$top=5000&$filter=\x20(Year\x20eq\x20\x27','Initials','pdf','\x27\x20or\x20InternalSupervisor/EMail\x20eq\x20\x27','val','#FileDocType',')\x27>','Unlike','1304930WKkBdT','<li><a\x20type=\x27button\x27\x20onclick=\x27EditComment(','</span></a></span><span\x20class=\x27Closebtn\x27\x20id=\x27Closebtn','?$select=*&$filter=ID\x20eq\x20\x27','AuthorId','find','jpeg','\x27\x20and\x20Author/EMail\x20eq\x20\x27','ProjectDetails','#FileTitle','trigger','EMail','Feb','\x27))\x20','#liPermission','#LikesCount','#NewAttachmentFiles','\x27\x20and\x20Project/Title\x20eq\x20\x27','dataset','appendTo','click','#iframe-viewer','Aug','show','#CommentsArea','\x27&$select=*,Author/Title,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles','Yes','\x22\x20class=\x22dms-left-panel-tab-inner\x22\x20data-toggle=\x22pill\x22>','#divUpload','#btnAppMore','\x27\x20onclick=\x27GetAllLikesComment(','active','yes','append','webAbsoluteUrl','</h4>','Apr','FileName','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-ext\x27\x20id=\x27CommentDivRecNo','\x27)\x20and\x20WebPartName\x20eq\x20\x27Documents\x27)\x20or\x20(CompanyId\x20eq\x20\x27',')/AttachmentFiles/getByFileName(\x27','2rJypHG'];a352_0x51be=function(){return _0x30dca5;};return a352_0x51be();}function Edituploadattachment(_0x47a6c2){var _0x5ad36f=a352_0x1a78,_0x4443a9=$(_0x5ad36f(0xf3))[_0x5ad36f(0x1ca)](),_0x3a6d3e=0x0;FinalFiles4Upload['length']>0x0&&$[_0x5ad36f(0x13e)](FinalFiles4Upload,function(_0x22c74b,_0xdb319c){var _0x14eb02=_0x5ad36f;getFileBuffer(_0xdb319c)[_0x14eb02(0x212)](function(_0x4b169e){var _0x503950=_0x14eb02,_0x36d5cf=_0xdb319c[_0x503950(0x230)],_0x32f06d=_0x36d5cf[_0x503950(0x234)](/[^.a-zA-Z0-9]/ig,'');$['ajax']({'url':_spPageContextInfo[_0x503950(0x1f0)]+'/_api/web/lists/getbytitle(\x27DocumentComments\x27)/items('+_0x47a6c2+_0x503950(0x1b3)+_0x32f06d+'\x27)','method':_0x503950(0x171),'data':_0x4b169e,'async':!![],'processData':![],'headers':{'Accept':'application/json;odata=verbose','content-type':'application/json;odata=verbose','X-RequestDigest':_0x4443a9},'success':function(_0x4728fc){var _0x351b75=_0x503950;_0x3a6d3e=_0x3a6d3e+0x1,_0x3a6d3e==FinalFiles4Upload[_0x351b75(0x167)]&&RetriveUpdateData(_0x47a6c2);},'error':function(_0xd344f8){var _0xba9f0c=_0x503950;console[_0xba9f0c(0x246)](_0xd344f8[_0xba9f0c(0x181)]['error']);}});});});}function DeleteComments(_0x4818fd){var _0x3c9ac2=a352_0x1a78;confirm(_0x3c9ac2(0x1b7))&&$[_0x3c9ac2(0xff)]({'url':_spPageContextInfo[_0x3c9ac2(0x1f0)]+'/_api/web/lists/GetByTitle(\x27DocumentComments\x27)/items('+_0x4818fd+')','type':'POST','async':!![],'headers':{'X-RequestDigest':$(_0x3c9ac2(0xf3))[_0x3c9ac2(0x1ca)](),'IF-MATCH':'*','X-HTTP-Method':_0x3c9ac2(0x204)},'success':function(_0x30c6e1,_0x2708db,_0x33a07e){var _0x1454e3=_0x3c9ac2;$(_0x1454e3(0x214)+_0x4818fd)['hide'](),$(_0x1454e3(0x101))[_0x1454e3(0x240)](parseInt($(_0x1454e3(0x101))['text']())-0x1);},'error':function(_0xfe01e0,_0x4462f5,_0x128956){var _0x2f9e6b=_0x3c9ac2;return alert(data['responseJSON'][_0x2f9e6b(0x217)]),![];}});}function RetriveUpdateData(_0x4d6991){var _0x22f2a7=a352_0x1a78,_0x293d2d=_0x22f2a7(0x193)+_0x4d6991+'\x27&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles';$[_0x22f2a7(0x130)](getItemsWithQuery('DocumentComments',_0x293d2d,_spPageContextInfo[_0x22f2a7(0x1f0)]))[_0x22f2a7(0x1ae)](function(_0x4a2297){var _0x20785f=_0x22f2a7;if(_0x4a2297[_0x20785f(0x167)]>0x0){$(_0x20785f(0xf8)+_0x4a2297[0x0]['ID'])[_0x20785f(0x155)](_0x4a2297[0x0][_0x20785f(0x147)]),$(_0x20785f(0x134)+_0x4a2297[0x0]['ID'])['empty']();if(_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0x20785f(0x167)]>0x0){var _0x3d80df='';for(var _0xe49527=0x0;_0xe49527<_0x4a2297[0x0]['AttachmentFiles'][_0x20785f(0xfd)][_0x20785f(0x167)];_0xe49527++){if(_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x1f3)][_0x20785f(0x117)]('docx')!=-0x1)_0x3d80df=_0x3d80df+_0x20785f(0x18a)+_0x4a2297[0x0]['AttachmentFiles'][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+'\x27\x20onclick=\x27previewfile(this);\x27\x20href=\x27javascript:void(0)\x27>'+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['FileName']+_0x20785f(0x249)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+_0x20785f(0x161);else{if(_0x4a2297[0x0]['AttachmentFiles'][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x1f3)][_0x20785f(0x117)](_0x20785f(0x1c8))!=-0x1)_0x3d80df=_0x3d80df+_0x20785f(0x141)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+'\x27\x20onclick=\x27previewfile(this);\x27\x20href=\x27javascript:void(0)\x27>'+_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0xe49527][_0x20785f(0x1f3)]+_0x20785f(0x249)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['ServerRelativeUrl']+'\x27\x20download><i\x20class=\x27fa\x20fa-download\x20cursor-pointer\x20px-4\x27\x20aria-hidden=\x27true\x27></i></a></span>\x20</div>';else{if(_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['FileName']['indexOf'](_0x20785f(0x172))!=-0x1||_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0xe49527][_0x20785f(0x1f3)]['indexOf'](_0x20785f(0xf5))!=-0x1)_0x3d80df=_0x3d80df+_0x20785f(0x22b)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+_0x20785f(0x103)+_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0xe49527][_0x20785f(0x1f3)]+_0x20785f(0x249)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+_0x20785f(0x161);else _0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['FileName']['indexOf'](_0x20785f(0x1a6))!=-0x1||_0x4a2297[0x0]['AttachmentFiles'][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x1f3)][_0x20785f(0x117)](_0x20785f(0x1d4))!=-0x1||_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0xe49527][_0x20785f(0x1f3)]['indexOf']('JPEG')!=-0x1||_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x1f3)]['indexOf'](_0x20785f(0x139))!=-0x1||_0x4a2297[0x0][_0x20785f(0x200)]['results'][_0xe49527][_0x20785f(0x1f3)][_0x20785f(0x117)]('PNG')!=-0x1?_0x3d80df=_0x3d80df+'<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Image\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27'+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+'\x27\x20title='+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['FileName']+_0x20785f(0x10c):_0x3d80df=_0x3d80df+'<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Others\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png\x27></img><a\x20name=\x27'+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['ServerRelativeUrl']+_0x20785f(0x103)+_0x4a2297[0x0][_0x20785f(0x200)][_0x20785f(0xfd)][_0xe49527]['FileName']+_0x20785f(0x249)+_0x4a2297[0x0]['AttachmentFiles'][_0x20785f(0xfd)][_0xe49527][_0x20785f(0x16e)]+_0x20785f(0x161);}}}$(_0x20785f(0x134)+_0x4a2297[0x0]['ID'])['append'](_0x3d80df);}}});}function checkLikeCommentUser(_0x255997){var _0x5a0e23=a352_0x1a78,_0x154488=0x0,_0x559524=_0x5a0e23(0x1fc)+DocumentId+_0x5a0e23(0x168)+encodeURIComponent($(_0x5a0e23(0x11f))[_0x5a0e23(0x240)]())+'\x27\x20and\x20LikeComment\x20eq\x20\x27Yes\x27\x20and\x20LikeCommentID\x20eq\x20\x27'+_0x255997+_0x5a0e23(0x1d5)+_spPageContextInfo['userEmail']+'\x27';return $[_0x5a0e23(0x130)](getItemsWithQuery(_0x5a0e23(0x22a),_0x559524,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x41be0a){var _0x2ba247=_0x5a0e23;_0x154488=_0x41be0a[_0x2ba247(0x167)],_0x41be0a[_0x2ba247(0x167)]>0x0&&(textValue=_0x2ba247(0x1cd));}),_0x154488;}function Pushlikeforcomment(_0x2ee1e9){var _0x5c3abf=a352_0x1a78,_0x6a1876=new Date(),_0x2f3f3a=_0x6a1876[_0x5c3abf(0x210)](),_0x39561d=CopyLibrary;$('#ModalDisplayProperty')[_0x5c3abf(0x1fb)](_0x5c3abf(0x179))==_0x5c3abf(0x237)&&(_0x39561d=CheckLibary);var _0x3b61e0=_0x5c3abf(0x11c)+_spPageContextInfo[_0x5c3abf(0x208)]+_0x5c3abf(0x215)+DocumentId+_0x5c3abf(0x168)+encodeURIComponent($('#FileName')[_0x5c3abf(0x240)]())+_0x5c3abf(0x245)+_0x2ee1e9+_0x5c3abf(0x21b);$['when'](getItemsWithQuery(_0x5c3abf(0x22a),_0x3b61e0,_spPageContextInfo[_0x5c3abf(0x1f0)]))[_0x5c3abf(0x1ae)](function(_0x54bd73){var _0x596eba=_0x5c3abf;if(_0x54bd73[_0x596eba(0x167)]>0x0){if(_0x54bd73[0x0][_0x596eba(0x10a)]=='No'){var _0x4ac32d=$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)]();$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)](parseInt(_0x4ac32d)+0x1);parseInt(_0x4ac32d)+0x1>0x0?$('#LikeSpan'+_0x2ee1e9)[_0x596eba(0x1fb)](_0x596eba(0x179),'inline-block'):$(_0x596eba(0x1fa)+_0x2ee1e9)[_0x596eba(0x1fb)](_0x596eba(0x179),'none');var _0x1ad746=_0x596eba(0x22a),_0x5a9f8c={'__metadata':{'type':_0x596eba(0x15d)+_0x1ad746+_0x596eba(0x177)},'LikeComment':'Yes','LikeCount':parseInt(_0x54bd73[0x0]['LikeCount'])+0x1};DocCommentUpdate(_0x1ad746,_0x5a9f8c,_0x54bd73[0x0]['ID']);}else{if(_0x54bd73[0x0]['LikeComment']=='Yes'){var _0x4ac32d=$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)]();$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)](parseInt(_0x4ac32d)-0x1);parseInt(_0x4ac32d)-0x1>0x0?$(_0x596eba(0x1fa)+_0x2ee1e9)['css'](_0x596eba(0x179),_0x596eba(0x154)):$(_0x596eba(0x1fa)+_0x2ee1e9)[_0x596eba(0x1fb)]('display',_0x596eba(0x237));var _0x1ad746='DocumentComments',_0x5a9f8c={'__metadata':{'type':_0x596eba(0x15d)+_0x1ad746+_0x596eba(0x177)},'LikeComment':'No','LikeCount':parseInt(_0x54bd73[0x0][_0x596eba(0x183)])-0x1},_0xf29727=DocCommentUpdate(_0x1ad746,_0x5a9f8c,_0x54bd73[0x0]['ID']);}else{if(_0x54bd73[0x0]['LikeComment']==null){var _0x4ac32d=$(_0x596eba(0x1dd)+_0x2ee1e9)['text']();$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)](parseInt(_0x4ac32d)+0x1);parseInt(_0x4ac32d)+0x1>0x0?$(_0x596eba(0x1fa)+_0x2ee1e9)[_0x596eba(0x1fb)](_0x596eba(0x179),_0x596eba(0x154)):$(_0x596eba(0x1fa)+_0x2ee1e9)[_0x596eba(0x1fb)](_0x596eba(0x179),_0x596eba(0x237));var _0x1ad746=_0x596eba(0x22a),_0x5a9f8c={'__metadata':{'type':_0x596eba(0x15d)+_0x1ad746+'ListItem'},'LikeComment':_0x596eba(0x1e8),'LikeCount':parseInt(_0x54bd73[0x0][_0x596eba(0x183)])+0x1},_0xf29727=DocCommentUpdate(_0x1ad746,_0x5a9f8c,_0x54bd73[0x0]['ID']);}}}}else{var _0x4ac32d=$(_0x596eba(0x1dd)+_0x2ee1e9)[_0x596eba(0x240)]();$('#LikesCount'+_0x2ee1e9)[_0x596eba(0x240)](parseInt(_0x4ac32d)+0x1);parseInt(_0x4ac32d)+0x1>0x0?$('#LikeSpan'+_0x2ee1e9)[_0x596eba(0x1fb)]('display',_0x596eba(0x154)):$(_0x596eba(0x1fa)+_0x2ee1e9)[_0x596eba(0x1fb)]('display','none');var _0x1ad746='DocumentComments',_0x5a9f8c={'__metadata':{'type':_0x596eba(0x15d)+_0x1ad746+_0x596eba(0x177)},'LikeComment':_0x596eba(0x1e8),'LikeCommentID':_0x2ee1e9[_0x596eba(0x23e)](),'Title':$(_0x596eba(0x11f))['text'](),'EmployeeId':parseInt(_spPageContextInfo['userId']),'DocumentId':parseInt(DocumentId),'FileName':$(_0x596eba(0x11f))[_0x596eba(0x240)](),'DocumentTitle':$('#FileTitle')['text'](),'FileCategory':$(_0x596eba(0x1cb))['text'](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$(_0x596eba(0x21c))['text'](),'LikeCount':0x1,'LibraryName':_0x39561d};AddDocComments(_0x1ad746,_0x5a9f8c);}});}function formatDateComment(_0x2534f4){var _0x1cb08d=a352_0x1a78,_0x2daf1a=new Date(_0x2534f4);if(isNaN(_0x2daf1a[_0x1cb08d(0x205)]()))return _0x2534f4;else{var _0x5a0005=new Array();return _0x5a0005[0x0]='Jan',_0x5a0005[0x1]=_0x1cb08d(0x1da),_0x5a0005[0x2]='Mar',_0x5a0005[0x3]=_0x1cb08d(0x1f2),_0x5a0005[0x4]=_0x1cb08d(0x153),_0x5a0005[0x5]=_0x1cb08d(0x23d),_0x5a0005[0x6]=_0x1cb08d(0x151),_0x5a0005[0x7]=_0x1cb08d(0x1e4),_0x5a0005[0x8]=_0x1cb08d(0x166),_0x5a0005[0x9]=_0x1cb08d(0x19b),_0x5a0005[0xa]=_0x1cb08d(0x189),_0x5a0005[0xb]='Dec',day=_0x2daf1a['getDate'](),day<0xa&&(day='0'+day),day+'\x20'+_0x5a0005[_0x2daf1a[_0x1cb08d(0x13f)]()];}}function getTotalViewCount(){var _0x203c9c=a352_0x1a78;getTotalLikes();var _0x17cfd5='',_0x1224ad=_0x203c9c(0x244)+DocumentId+_0x203c9c(0x168)+encodeURIComponent($(_0x203c9c(0x11f))[_0x203c9c(0x240)]())+_0x203c9c(0x17c);$[_0x203c9c(0x130)](getItemsWithQuery('DocumentComments',_0x1224ad,_spPageContextInfo[_0x203c9c(0x1f0)]))[_0x203c9c(0x1ae)](function(_0x2c98e4){var _0x2668dc=_0x203c9c;$(_0x2668dc(0x127))[_0x2668dc(0x240)](_0x2c98e4[_0x2668dc(0x167)]);if(_0x2c98e4[_0x2668dc(0x167)]>0x0){for(var _0x15cc35=0x0;_0x15cc35<_0x2c98e4[_0x2668dc(0x167)];_0x15cc35++){attachment=_spPageContextInfo['webAbsoluteUrl']+_0x2668dc(0x169)+escapeProperly(_0x2c98e4[_0x15cc35]['ViewsBy']['EMail']),_0x17cfd5=_0x17cfd5+'<li\x20class=\x27likes-box\x27>'+_0x2668dc(0x15a)+attachment+_0x2668dc(0x10e)+_0x2668dc(0x158)+'<h4>'+_0x2c98e4[_0x15cc35]['ViewsBy'][_0x2668dc(0x192)]+_0x2668dc(0x1f1)+_0x2668dc(0x17e)+_0x2668dc(0x106);}$(_0x2668dc(0x190))[_0x2668dc(0x12b)]()['append'](_0x17cfd5);}else _0x17cfd5=_0x17cfd5+_0x2668dc(0x1c3)+'<div\x20class=\x27comment-reply-user-name\x27\x20style=\x27width:212px\x20!important;border-radius:3%\x20!important\x27>'+_0x2668dc(0x23b)+_0x2668dc(0x17e)+_0x2668dc(0x106),$(_0x2668dc(0x190))[_0x2668dc(0x12b)]()[_0x2668dc(0x1ef)](_0x17cfd5);});}function getTotalLikes(){var _0x49bfad=a352_0x1a78,_0x15c73e='',_0x279832='?$filter=\x20DocumentId\x20eq\x20\x27'+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x49bfad(0x11f))['text']())+_0x49bfad(0x17a);$[_0x49bfad(0x130)](getItemsWithQuery(_0x49bfad(0x22a),_0x279832,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x44f440){var _0x482e60=_0x49bfad;$(_0x482e60(0x213))[_0x482e60(0x240)](_0x44f440['length']);if(_0x44f440['length']>0x0){for(var _0x3b4e1d=0x0;_0x3b4e1d<_0x44f440['length'];_0x3b4e1d++){attachment=_spPageContextInfo[_0x482e60(0x1f0)]+_0x482e60(0x169)+escapeProperly(_0x44f440[_0x3b4e1d][_0x482e60(0x1b0)][_0x482e60(0x1d9)]),_0x15c73e=_0x15c73e+_0x482e60(0x1c3)+'<div\x20class=\x27comment-reply-user-name\x27><span\x20class=\x27comment-reply-user-name-lt\x27>TD</span><img\x20class=\x27comment-reply-user-name-img\x27\x20id=\x27ViewHitsProfileImages\x27\x20src=\x27'+attachment+_0x482e60(0x10e)+_0x482e60(0x158)+'<h4>'+_0x44f440[_0x3b4e1d]['LikeBy'][_0x482e60(0x192)]+_0x482e60(0x1f1)+_0x482e60(0x17e)+'</li>';}$(_0x482e60(0xf6))['empty']()[_0x482e60(0x1ef)](_0x15c73e);}else _0x15c73e=_0x15c73e+'<li\x20class=\x27likes-box\x27>'+'<div\x20class=\x27comment-reply-user-name\x27\x20style=\x27width:212px\x20!important;border-radius:3%\x20!important\x27>'+_0x482e60(0x1bb)+_0x482e60(0x17e)+_0x482e60(0x106),$(_0x482e60(0xf6))['empty']()[_0x482e60(0x1ef)](_0x15c73e);});}function TriggerLikes(){var _0x4b4522=a352_0x1a78,_0x5e3e56='?$filter=((Author/EMail\x20eq\x20(\x27'+_spPageContextInfo[_0x4b4522(0x208)]+'\x27)\x20and\x20DocumentId\x20eq\x20\x27'+DocumentId+_0x4b4522(0x168)+encodeURIComponent($(_0x4b4522(0x11f))[_0x4b4522(0x240)]())+_0x4b4522(0x132);$[_0x4b4522(0x130)](getItemsWithQuery('DocumentComments',_0x5e3e56,_spPageContextInfo[_0x4b4522(0x1f0)]))['done'](function(_0x27f52f){var _0x72db63=_0x4b4522,_0x4711e1='DocumentComments';if(_0x27f52f['length']>0x0){if(_0x27f52f[0x0][_0x72db63(0x14b)]=='No')var _0x4b19cb={'__metadata':{'type':_0x72db63(0x15d)+_0x4711e1+_0x72db63(0x177)},'Like':_0x72db63(0x1e8),'LikeById':parseInt(_spPageContextInfo['userId'])},_0x10e528=DocCommentUpdate(_0x4711e1,_0x4b19cb,_0x27f52f[0x0]['ID']);else{if(_0x27f52f[0x0][_0x72db63(0x14b)]=='Yes')var _0x4b19cb={'__metadata':{'type':_0x72db63(0x15d)+_0x4711e1+_0x72db63(0x177)},'Like':'No','LikeById':parseInt(_spPageContextInfo[_0x72db63(0x110)])},_0x10e528=DocCommentUpdate(_0x4711e1,_0x4b19cb,_0x27f52f[0x0]['ID']);}var _0x36c45b='?$filter=\x20DocumentId\x20eq\x20\x27'+DocumentId+_0x72db63(0x168)+encodeURIComponent($(_0x72db63(0x11f))['text']())+_0x72db63(0x17a);$[_0x72db63(0x130)](getItemsWithQuery(_0x72db63(0x22a),_0x36c45b,_spPageContextInfo['webAbsoluteUrl']))['done'](function(_0x35167f){var _0x3f456b=_0x72db63;if(_0x35167f[_0x3f456b(0x167)]>0x0){$(_0x3f456b(0x213))['text'](_0x35167f[_0x3f456b(0x167)]),$(_0x3f456b(0xf6))['empty']();var _0x2fbb05='';for(var _0x4b7e79=0x0;_0x4b7e79<_0x35167f['length'];_0x4b7e79++){attachment=_spPageContextInfo[_0x3f456b(0x1f0)]+_0x3f456b(0x169)+escapeProperly(_0x35167f[_0x4b7e79]['LikeBy'][_0x3f456b(0x1d9)]),_0x2fbb05=_0x2fbb05+_0x3f456b(0x1c3)+_0x3f456b(0x15a)+attachment+_0x3f456b(0x10e)+'<div\x20class=\x27like-user-name\x27>'+'<h4>'+_0x35167f[_0x4b7e79][_0x3f456b(0x1b0)][_0x3f456b(0x192)]+_0x3f456b(0x1f1)+_0x3f456b(0x17e)+_0x3f456b(0x106);}$(_0x3f456b(0xf6))[_0x3f456b(0x1ef)](_0x2fbb05);}else $('#TotalLikes')['text']('0'),$(_0x3f456b(0xf6))['empty']();});}$(_0x72db63(0x1aa))[_0x72db63(0x140)](_0x72db63(0x196))==_0x72db63(0x24d)||$('.like-img')[_0x72db63(0x140)](_0x72db63(0x196))[_0x72db63(0x239)]('like-icon.png')==!![]?$(_0x72db63(0x220))['attr'](_0x72db63(0x196),_0x72db63(0x21d)):$(_0x72db63(0x220))[_0x72db63(0x140)](_0x72db63(0x196),_0x72db63(0x24d)),$(_0x72db63(0x122))[_0x72db63(0x242)](_0x72db63(0x1ed))==!![]&&$(_0x72db63(0x213))[_0x72db63(0x1d8)](_0x72db63(0x1e2));});}function ActiveReplyCtrl(_0x258556){var _0x2f5950=a352_0x1a78;FileCommentType=_0x2f5950(0x15c);var _0x2f89f3=_0x2f5950(0x1d1)+_0x258556+'\x27';$[_0x2f5950(0x130)](getItemsWithQuery(_0x2f5950(0x22a),_0x2f89f3,_spPageContextInfo[_0x2f5950(0x1f0)]))[_0x2f5950(0x1ae)](function(_0x4ac9eb){var _0x574a7e=_0x2f5950;_0x4ac9eb[_0x574a7e(0x167)]>0x0&&($(_0x574a7e(0x137))['html'](_0x4ac9eb[0x0][_0x574a7e(0x20b)]),$(_0x574a7e(0x137))[_0x574a7e(0x140)](_0x574a7e(0x156),_0x4ac9eb[0x0]['Comments']),_0x4ac9eb[0x0]['Initials']==_0x574a7e(0x15c)?$(_0x574a7e(0x18c))[_0x574a7e(0x240)](_0x4ac9eb[0x0]['ReplyTo']):$('#replyforuser')[_0x574a7e(0x240)]($(_0x574a7e(0x119)+_0x258556)[_0x574a7e(0x240)]()));}),$(_0x2f5950(0x173))[_0x2f5950(0x1e5)]();}function DeActiveReplyControl(){var _0x373a1a=a352_0x1a78;FileCommentType=_0x373a1a(0x224),$(_0x373a1a(0x173))[_0x373a1a(0x1a3)](),$(_0x373a1a(0x11a))[_0x373a1a(0x12b)](),$(_0x373a1a(0x1de))['empty']();}function GetAllLikesComment(_0x27a14e){var _0x4f120b=a352_0x1a78,_0x4043c3=_0x4f120b(0x159)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x4f120b(0x11f))[_0x4f120b(0x240)]())+_0x4f120b(0x131)+_0x27a14e+'\x27';$[_0x4f120b(0x130)](getItemsWithQuery('DocumentComments',_0x4043c3,_spPageContextInfo[_0x4f120b(0x1f0)]))[_0x4f120b(0x1ae)](function(_0x36dba0){var _0x59b51d=_0x4f120b;if(_0x36dba0['length']>0x0){$(_0x59b51d(0x21f))['empty']();var _0x3164b1='';for(var _0x5f1bdc=0x0;_0x5f1bdc<_0x36dba0[_0x59b51d(0x167)];_0x5f1bdc++){attachment=_spPageContextInfo[_0x59b51d(0x1f0)]+_0x59b51d(0x169)+escapeProperly(_0x36dba0[_0x5f1bdc][_0x59b51d(0x222)][_0x59b51d(0x1d9)]),_0x3164b1=_0x3164b1+_0x59b51d(0x1c3)+_0x59b51d(0x15a)+attachment+'\x27></div>'+_0x59b51d(0x158)+_0x59b51d(0x194)+_0x36dba0[_0x5f1bdc]['Author'][_0x59b51d(0x192)]+_0x59b51d(0x1f1)+_0x59b51d(0x17e)+_0x59b51d(0x106);}$(_0x59b51d(0x21f))[_0x59b51d(0x1ef)](_0x3164b1);}else $('#CommentLikeList')[_0x59b51d(0x12b)]();$('#showInnerLikes')[_0x59b51d(0x18b)](_0x59b51d(0x15b));});}function DocCommentUpdate(_0x49038f,_0x4ad4f2,_0xa28ec3){var _0x2222b8=a352_0x1a78,_0x5733c2='';return $[_0x2222b8(0xff)]({'url':_spPageContextInfo[_0x2222b8(0x1f0)]+_0x2222b8(0x16a)+_0x49038f+'\x27)/items(\x27'+_0xa28ec3+'\x27)','type':_0x2222b8(0x171),'async':![],'data':JSON['stringify'](_0x4ad4f2),'headers':{'Accept':_0x2222b8(0x203),'Content-Type':_0x2222b8(0x203),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x2222b8(0x1ca)](),'IF-MATCH':'*','X-HTTP-Method':'MERGE'},'success':function(_0x3fddfb){var _0x147013=_0x2222b8;console[_0x147013(0x246)](_0x147013(0x23c)),_0x5733c2=_0x3fddfb;},'error':function(_0x462f2d){var _0xbc1a73=_0x2222b8;_0x5733c2=_0x462f2d,console[_0xbc1a73(0x246)](_0x462f2d),alert(_0xbc1a73(0xfe));}}),_0x5733c2;}
+var arrPermission = [];
+var FileCommentType = "Parent";
+var FileCommentResponse= FileCommentResponse || [];
+var getLatestMsgId = '';
+var ModifyRecId = '';
+var finalFiles = [];
+var Tcounter = 0;
+var RemoveDuplicate = [];
+
+function myShareDepartment() {
+    var DocLibraries = '';
+    $("#liRemoveGroup").hide();
+    $("#divNew").show();
+    $("#divUpload").show();
+    $("#liEmails").show();
+    $("#btnAppMore").show();
+    arrFileFolder = [];
+    $("#liAlert").hide();
+    HeadingTitle = "Department"
+    //  $(".headdingLinks").html("");
+    //   $(".headdingLinks").html(HeadingTitle);
+
+    $("#accordioninner").html("");
+    var Query = "?$select=*,Department/DepartmentName,Department/ID,Contributors/EMail,Owner/EMail&$top=5000&$orderby=Department/DepartmentName asc&$expand=Department,Contributors,Owner&$filter=(CompanyId eq '" + Logged_CompanyId + "' and Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' and WebPartName eq 'DepartmentDocument_Access') or (CompanyId eq '" + Logged_CompanyId + "' and (Owner/EMail eq '" + _spPageContextInfo.userEmail + "' or Contributors/EMail eq '" + _spPageContextInfo.userEmail + "') and WebPartName eq 'Documents') or (CompanyId eq '" + Logged_CompanyId + "' and Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' and WebPartName eq 'Head of the Department') ";
+    $.when(getItemsWithQuery("ProcessApprovers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function(valuesArray) {
+        //LOgged_In department
+        var DeptURL = getDepartmentURL(Logged_DepartmentId);
+        DeptURL = DeptURL + "/DepartmentalDMS/Forms/AllItems.aspx";
+        var DepartmentName = Logged_DepartmentName;
+        tempTitle = DepartmentName.replace(/[^A-Z0-9]/ig, "");
+        var GetLib = "javascript:GetLibarayDetails(this,'" + DeptURL + "','" + DepartmentName + "','" + Logged_DepartmentId + "','"+HeadingTitle+"')";
+
+        DocLibraries += '<div class="panel panel-default">' +
+            '<div class="panel-heading">' +
+            '<h4 class="panel-title">' +
+            '<a href="javascript:void(0)" id="'+tempTitle +Logged_DepartmentId+'" onclick="' + GetLib + '" class="dms-left-panel-tab-inner" data-toggle="pill">' +
+            '<div class="d-flex align-items-center">' +
+            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/depart-ico.png" alt="Departmental Documents">' +
+            '<span class="mobile-hide-tabs-name mt3 ml10">' + Logged_DepartmentName + '</span>' +
+            '</div>' +
+            '</a>' +
+            '</h4>' +
+            '</div>' +
+            '</div>';
+        //Remove Duplicate objects
+        valuesArray = valuesArray.filter((v,i,a)=>a.findIndex(t=>(t.Department.ID===v.Department.ID))===i);
+        valuesArray = valuesArray.filter(function (el) {
+		  return el.Department.DepartmentName != null;
+		});
+        $.each(valuesArray, function(i, el) {
+            if(el.Department.DepartmentName.toLowerCase() != Logged_DepartmentName.toLowerCase()){
+                var DeptURL = getDepartmentURL(el.Department.ID);
+                DeptURL = DeptURL + "/DepartmentalDMS/Forms/AllItems.aspx";
+                var DepartmentName =el.Department.DepartmentName;
+                tempTitle = DepartmentName.replace(/[^A-Z0-9]/ig, "");
+                var GetLib = "javascript:GetLibarayDetails(this,'" + DeptURL + "','" + DepartmentName + "','" + el.Department.ID+ "','"+HeadingTitle+"')";
+	
+                DocLibraries += '<div class="panel panel-default">' +
+	                '<div class="panel-heading">' +
+	                '<h4 class="panel-title">' +
+	                '<a href="#groupDocuments_tab" id="'+ tempTitle + el.Department.ID +'" onclick="' + GetLib + '" class="dms-left-panel-tab-inner" data-toggle="pill">' +
+	                '<div class="d-flex align-items-center">' +
+	                '<img src="../SiteAssets/MyDocuments/DMS/assets/images/depart-ico.png" alt="Departmental Documents">' +
+	                '<span class="mobile-hide-tabs-name mt3 ml10">' + el.Department.DepartmentName + '</span>' +
+	                '</div>' +
+	                '</a>' +
+	                '</h4>' +
+	                '</div>' +
+	                '</div>';
+            }
+
+        });
+
+
+
+
+        $("#accordioninner").append(DocLibraries);
+
+    });
+}
+
+
+//to get dept URL 
+function getDepartmentURL(ItemId) {
+    var DeptDocumentsUrl = '';
+    var restQueryPersonalDMS = "?$select=ID,SiteURL,CompanyID/ID&$expand=CompanyID&$top=5000&$filter=CompanyID/ID eq '" + Logged_CompanyId + "' and ID eq '" + ItemId + "'";
+    $.when(getItemsWithQuery("Departments", restQueryPersonalDMS, _spPageContextInfo.webAbsoluteUrl)).done(function(ProjectDetailData) {
+        if (ProjectDetailData.length > 0) {
+            var siteURL = ProjectDetailData[0].SiteURL;
+            if (siteURL != null && siteURL != "") {
+                DeptDocumentsUrl = siteURL;
+            }
+        }
+    });
+    return DeptDocumentsUrl;
+
+}
+
+
+//on click of department get Logged_In Roles - Full Owner, Contributor, Reader
+function getUserRoles_Dept(DeptName) {
+    arrPermission = [];
+    var Query = "?$select=*,Department/DepartmentName,Contributors/EMail&$top=5000&$expand=Department,Contributors&$filter=CompanyId eq '" + Logged_CompanyId + "' and Department/DepartmentName eq '" + DeptName + "' and WebPartName eq 'Head of the department' and Contributors/EMail eq '" + _spPageContextInfo.userEmail + "'";
+    $.when(getItemsWithQuery("ProcessApprovers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+        if (valuesArray.length > 0) {
+            arrPermission.push({ //User is HOD
+                UserFullAccess: true,
+                UserContri: false,
+                UserReader: false
+            });
+        }
+        else { //check for Contributor
+            //var Query = "?$select=*,Department/DepartmentName,Department/ID,Contributors/EMail&$top=5000&$expand=Department,Contributors&$filter=(CompanyId eq '" + Logged_CompanyId + "' and Department/DepartmentName eq '" + DeptName + "' and Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' and (WebPartName eq 'DepartmentDocument_Access' or WebPartName eq 'Documents')) ";
+            var Query = "?$select=*,Department/DepartmentName,Department/ID,Contributors/EMail,Owner/EMail&$top=5000&$expand=Owner,Department,Contributors&$filter=(CompanyId eq '" + Logged_CompanyId + "' and Department/DepartmentName eq '" + DeptName + "' and (Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' or Owner/EMail eq '" + _spPageContextInfo.userEmail + "') and WebPartName eq 'Documents') ";
+            $.when(getItemsWithQuery("ProcessApprovers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function(valuesArray) {
+                if (valuesArray.length > 0) {
+                    $("#liPermission").hide();
+                    $("#liSettings").hide();
+                    $("#liMembers").hide();
+                    //$("#liSahringRule").hide();//Bhawana
+                    arrPermission.push({ //User is HOD
+                        UserFullAccess: false,
+                        UserContri: true,
+                        UserReader: false
+                    });
+                }
+                else {//Reader
+                    //$("#liSahringRule").hide();//Bhawana
+                    $("#liPermission").hide();
+                    $("#liSettings").hide();
+                    $("#liMembers").hide();
+                    $("#divNew").hide();
+                    $("#divUpload").hide();
+                    $("#liEmails").hide();
+                    $("#divProperties").hide();
+                    $("#btnMultiMove").hide();
+                    $("#liAlert").hide();
+                    $("#divDelete").hide();
+                    $("#LiLeavethegroup").hide();
+                    $("#liRemoveGroup").hide();
+                    $("#divShare").hide();
+                    arrPermission.push({ //User is HOD
+                        UserFullAccess: false,
+                        UserContri: false,
+                        UserReader: true
+                    });
+                }
+            });
+        }
+    });
+}
+
+
+//on click of Projects get Logged_In Roles - Full Owner, Contributor, Reader
+function getUserRoles_Project(ProjectName) {
+    arrPermission = [];
+    var Query = "?$select=Title,CompanyId,ManagerName/EMail&$top=5000&$expand=ManagerName&$filter=CompanyId eq '" + Logged_CompanyId + "' and Title eq '" + encodeURIComponent(ProjectName) + "' and ManagerName/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+    $.when(getItemsWithQuery("ProjectDetails", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+        if (valuesArray.length > 0) {
+            arrPermission.push({ //User has Full control
+                UserFullAccess: true,
+                UserContri: false,
+                UserReader: false
+            });
+        }
+        else { //check for Contributor
+            var Query = "?$select=Title,CompanyId,TeamMember/EMail,Project/Title,DocumentPermission&$top=5000&$expand=TeamMember,Project&$filter=CompanyId eq '" + Logged_CompanyId + "' and Project/Title eq '" + ProjectName + "' and TeamMember/EMail eq '" + _spPageContextInfo.userEmail + "' and DocumentPermission eq '1' ";
+            $.when(getItemsWithQuery("ProjectTeamDetails", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+                if (valuesArray.length > 0) {
+                    $("#liPermission").hide();
+                    $("#liSettings").hide();
+                    $("#liMembers").hide();
+                    //$("#liSahringRule").hide();//Bhawana
+                    arrPermission.push({ //User is HOD
+                        UserFullAccess: false,
+                        UserContri: true,
+                        UserReader: false
+                    });
+                }
+                else {
+                   // $("#liSahringRule").hide();//Bhawana
+                    $("#liPermission").hide();
+                    $("#liSettings").hide();
+                    $("#liMembers").hide();
+                    $("#divNew").hide();
+                    $("#divUpload").hide();
+                    $("#liEmails").hide();
+                    $("#divProperties").hide();
+                    $("#btnMultiMove").hide();
+                    $("#liAlert").hide();
+                    $("#divDelete").hide();
+                    $("#LiLeavethegroup").hide();
+                    $("#liRemoveGroup").hide();
+                    $("#divShare").hide();
+                    arrPermission.push({ //User is HOD
+                        UserFullAccess: false,
+                        UserContri: false,
+                        UserReader: true
+                    });
+                }
+            });
+        }
+    });
+}
+
+//on click of Guest-Clients get Logged_In Roles - Full Owner, Contributor, Reader
+function getUserRoles_Client(ClientName) {
+    arrPermission = [];
+    var Query = "?$select=Title,CompanyID/Id,InternalSupervisor/EMail,Supervisor/EMail&$top=5000&$expand=CompanyID,InternalSupervisor,Supervisor&$filter=(CompanyID/Id eq '" + Logged_CompanyId + "' and Title eq '" + ClientName + "' and (Supervisor/EMail eq '" + _spPageContextInfo.userEmail + "' or InternalSupervisor/EMail eq '" + _spPageContextInfo.userEmail + "')) ";
+    $.when(getItemsWithQuery("ClientMaster", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+        if (valuesArray.length > 0) {
+            arrPermission.push({ //User has Full control
+                UserFullAccess: true,
+                UserContri: false,
+                UserReader: false
+            });
+        }
+        else { //check for Contributor
+            $("#liPermission").hide();
+            $("#liSettings").hide();
+            $("#liMembers").hide();
+            //$("#liSahringRule").hide();//Bhawana
+            arrPermission.push({ //User is HOD
+                UserFullAccess: false,
+                UserContri: true,
+                UserReader: false
+            });
+        }
+    });
+}
+
+
+//-------------------------------------------Document Comments code starts---------------------------------
+
+//Add File View-Count
+function AddFileViewCount() {
+    var listName = "DocumentComments";
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    var Query = "?$select=*,Author/EMail&$expand=Author&$filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Views eq 'Yes' or Views eq 'No')";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (FilterResult) {
+        if (FilterResult.length > 0) {
+            if (FilterResult[0].Views == "No") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Views': 'Yes', 'ViewsById': parseInt(_spPageContextInfo.userId) };
+                updateItemWithIDItemListDocuments(listName, item, FilterResult[0].ID, _spPageContextInfo.webAbsoluteUrl, false);
+            }
+        }
+        else if (FilterResult.length == 0) {
+            var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 
+                'Title': $("#FileName").text(),
+                'EmployeeId': parseInt(_spPageContextInfo.userId), 
+                'Views': 'Yes', 
+                'ViewsById': parseInt(_spPageContextInfo.userId), 
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            };
+            AddItemToListGroups(listName, item);
+        }
+    });
+}
+
+//to add comments on file
+function PushRootComment() { 
+    var listName="DocumentComments";
+    var comment = $("#FileCommArea .emojionearea-editor").html().trim();
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    if(comment != "") {
+        if(FileCommentType == "Parent") {
+            var item = {
+                '__metadata': { type: 'SP.Data.' + listName + 'ListItem' },
+                'EmployeeId': _spPageContextInfo.userId,
+                'ReplierId': _spPageContextInfo.userId,
+                'Comments': comment,
+                'Initials': "Parent",
+                'ReplyforId': _spPageContextInfo.userId,
+                'Title': $("#FileName").text(),
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            }
+            AddDocComments(listName, item, '0'); 
+            $("#FileCommArea .emojionearea-editor").html(''); 	
+        }
+        else if(FileCommentType == "Reply") {
+            var item = {
+                '__metadata': { type: 'SP.Data.' + listName + 'ListItem' },
+                'EmployeeId': _spPageContextInfo.userId,
+                'ReplierId': _spPageContextInfo.userId,
+                'Comments': comment,
+                'Initials': "Reply",
+                'ReplyTo': $("#replyforuser").text(),
+                'ReplyAgainst': $("#ReplyforMsg").attr('value'),
+                'Title': $("#FileName").text(),
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            }
+            AddDocComments(listName, item, '0');
+            $("#FileCommArea .emojionearea-editor").html('');
+            FileCommentType = "Parent";
+        }
+        else if (FileCommentType == "Modify") {
+            UpdateEditComment(ModifyRecId);
+        }
+        //6 April 23
+        if(cmntIcon!=""&&cmntIcon!=undefined&&cmntIcon!=null&&cmntIcon!='undefined'&&cmntIcon!='null')
+        $(cmntIcon).find('img:first').prop('src',"../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png");
+    }
+    else {
+        alert("Please type a message to continue.");
+        return false;
+    }
+}
+
+function AddDocComments(listName,item,ControlID) {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+listName+"')/items",
+        type: "POST",
+        contentType: "application/json;odata=verbose",
+        data: JSON.stringify(item),
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) { 	
+            $("#TotalComments").text(parseInt($("#TotalComments").text()) + 1);
+            if(FinalFiles4Upload.length>0) {
+                uploadattachment(data.d.ID);
+                $("#NewAttachmentFiles").empty();
+                $('.emojionearea-editor').empty(); 
+            }
+            else {
+                AutoRefreshComments('GetAll', 'Logged_InUser');
+                $('.emojionearea-editor').empty();
+                FinalFiles4Upload=[];
+                finalFiles = [];
+            }
+            $("#replyTextarea").hide();
+            $("#NewAttachmentFiles").empty();
+            $("#CommentFileAttach").val('');
+        },
+        error: function (data) { 
+            console.log(data); 
+        }
+    });
+}
+
+//Auto refresh the Chat box
+function AutoRefreshComments(Action, Source) {
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('DocumentComments')/Items?$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles&$orderby=Created desc&$top=10&$skipToken=Paged=TRUE%26p_ID=" + getLatestMsgId + "&$filter= (DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    var QueryResult = OccasionExecuteFilter(Ownurl, Action, Source);
+}
+
+//to open file in Iframe
+function previewfile(Action) {
+    ServerSrc = Action.name;
+    if (Action.name == null) {
+        ServerSrc = Action.title;
+    }
+    var docExt = Action.dataset.filename.split('.').pop();
+    if (docExt == 'doc' || docExt == 'docx' || docExt == 'xls' || docExt == 'xlsx' || docExt == 'ppt' || docExt == 'pptx' || docExt == 'pdf') {
+        iframeUrl1 = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/WopiFrame.aspx?sourcedoc=' + Action.dataset.fileurl + '&action=interactivepreview';
+    }
+    else {
+        iframeUrl1 = Action.dataset.fileurl;
+    }
+    /*if (ServerSrc.match(/\.(docx|xlsx)$/) != null) {
+        iframeUrl1 = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/Doc.aspx?sourcedoc=" + ServerSrc + "&action=view&mobileredirect=true";
+    }
+    else {
+        iframeUrl1 = ServerSrc + "?web=1";
+    }*/
+    
+    var container = $("#sign-viewer").empty();
+    $('<iframe>', {
+        src: iframeUrl1,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#AttachmentView").modal("show");
+    setInterval(function () {
+    	$("#iframe-viewer").contents().find("#AppHeaderPanel").hide();
+        $("#iframe-viewer").contents().find("#AppHeaderPanel").remove();
+        if($('#iframe-viewer').contents().find('body').html() == ""){
+            $("#AttachmentView").modal("hide");
+        }
+    }, 3000);
+}
+
+//Preview Image in Iframe
+function previewImage(Action) {
+    src = Action.src + "?web=1";
+    var container = $("#sign-viewer").empty();
+    $('<iframe>', {
+        src: src,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#AttachmentView").modal("show");
+}
+//upload Attachment of the comments
+function uploadattachment(id) {
+    var counter = 0;
+    if (FinalFiles4Upload.length > 0) {
+        $.each(FinalFiles4Upload, function (index, value) {
+            getFileBuffer(value).then(function (buffer) {
+
+                var OrginalFileName = value.name;
+                var ModifiedFileName = OrginalFileName.replace(/[^.a-zA-Z0-9]/ig, "");
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentComments')/items(" + id + ")/AttachmentFiles/add( FileName='" + ModifiedFileName + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: false,
+                    processData: false,
+                    headers:
+    				{
+    				    "Accept": "application/json;odata=verbose",
+    				    "content-type": "application/json;odata=verbose",
+    				    "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+    				},
+                    success: function (data) {
+                        counter = counter + 1;
+                        if (FinalFiles4Upload.length == counter) {
+                            AutoRefreshComments('GetAll', 'Logged_InUser');
+                            finalFiles = [];
+                            FinalFiles4Upload = [];
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText.error);
+                    }
+                });
+            });
+        });
+    }
+}
+
+//get Documents comments list
+function GetComments(Action, Source){
+    getTotalViewCount();
+    Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('DocumentComments')/Items?$select=*,ID,Author/Title,Author/Id,Author/EMail,AttachmentFiles&$expand=Author,AttachmentFiles&$orderby=Created desc&$top=5000&$filter=(DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    var QueryResult = OccasionExecuteFilter(Ownurl, Action, Source);
+}
+
+function OccasionExecuteFilter(_query, Action, Source) {
+    FileCommentResponse = [];
+    var tempURL = '';
+    if(_query.indexOf("$skipToken") != -1) {
+        tempURL = _query;
+    }
+    else {
+        Ownurl = tempURL = _query;
+    }	
+    ReadOccasionComment(Action, Source, tempURL, '');
+}
+
+//get Document commets
+function ReadOccasionComment(Action, Source, URL, IsViewMore) {
+    $.ajax({
+        url: URL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            FileCommentResponse= FileCommentResponse.concat(data.d.results);
+            FileCommentResponse.sort((a, b) => a.ID - b.ID);   
+            
+            if(FileCommentResponse.length > 0){ 
+                if(getLatestMsgId != FileCommentResponse[(FileCommentResponse.length -1)].Id && Action == "GetAll" && $("#hideCommentScroll").scrollTop() < -5 && Source != "Logged_InUser") {
+                    $("#ToastPopup").show();
+                }
+                if(IsViewMore != "ViewMore"){
+                    getLatestMsgId = FileCommentResponse[(FileCommentResponse.length -1)].Id;  
+                }
+            }     
+
+            if(FileCommentResponse.length > 0) {            	
+                if(URL.indexOf("$skipToken") != -1) {
+                    //'skiptoken' substring found
+                    DesignChatting(FileCommentResponse, 'refreshMode');
+                }
+                else {
+                    //no 'skiptoken' substring
+                    DesignChatting(FileCommentResponse, '');
+                }
+            }
+            else {
+                $("#CommentsArea").empty();
+                $("#TotalComments").text('0');
+            }
+            if (data.d.__next) {
+                Ownurl = data.d.__next;
+                $("#seemorebtnGeneral").css("display", "block");
+            }
+            else {
+                if(URL.indexOf("$skipToken") == -1) {
+                    $("#seemorebtnGeneral").css("display", "none");
+                }
+            }
+            /*if(Action != "PageLoad"){
+                AutoRefreshComments('GetAll', 'Logged_InUser');
+            }*/
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+}
+
+function OccasionCommentCount(Action) {
+    if(Action == "GetAll"){
+        UrlCommentTotal = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('OccasionReplies')/Items?$select=ID&$orderby=Created desc&$top=5000&$filter= (Year eq '"+CurrentYear+"' and EmployeeCode eq '"+EmployeeID+"' and OccasionType  eq '"+OccasionType+"' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    }
+    OccasionresponseComment= [];
+    ReadOccasionCommentTotal();
+}
+
+//HTML design for Chatting
+function DesignChatting(FileCommentResponse, Mode) {
+    if(Mode == '') {
+        $("#TotalComments").text(FileCommentResponse.length);
+    }
+    var Commenthtmldesign = '';
+    var Attachmnetlist = [];
+    var AttachmnetIDs = [];
+    var CommentLikeValue = 'Like';
+    //$("#CommentsArea").empty();	
+    for (var i = 0; i < FileCommentResponse.length; i++) {
+        var likesCount = FileCommentResponse[i].LikeCount;
+        var DisplayLikeDiv = "inline-block";
+        if (Mode != "refreshMode") {
+            likesCount = checkLikeCommentUser(FileCommentResponse[i].Id);
+            if(likesCount > 0) {
+                CommentLikeValue = 'Unlike';
+                DisplayLikeDiv = "inline-block";
+            }
+            else {
+                likesCount = 0;
+                DisplayLikeDiv = "none";
+            }
+        }
+        else {
+            if(likesCount == null) {
+                likesCount = 0;
+                DisplayLikeDiv = "none";
+            }
+        }
+        var eventDateObj = new Date(FileCommentResponse[i].Created);
+        var Event_time = eventDateObj.toTimeString();
+        var H = +Event_time.substr(0, 2);
+        var h = (H % 12) || 12;
+        var ampm = H < 12 ? " AM" : " PM";
+        Event_time = h + Event_time.substr(2, 3) + ampm;
+        if (FileCommentResponse[i].Initials == "Parent") {
+            if (_spPageContextInfo.userEmail.toLowerCase() == FileCommentResponse[i].Author.EMail.toLowerCase()) {
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span>" +
+	                    								"</div>" +
+	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+	                      									"<div>" +
+	                        									"<div id='editMenuOpen2' class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        									"</div>" +
+	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
+	                          										"<li><a type='button' class='logout' onclick='DeleteComments(" + FileCommentResponse[i].ID + ")' >Delete</a></li>" +
+	                        									"</ul>" +
+	                      									"</div>" +
+	                      									"<div class='my-chat-edit-delete-panel-inside' id='CommentText" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Comments + "</div>" +
+	                    								"</h4>" +
+	                    								"<div class='col-md-12 col-sm-12 p0'>" +
+	                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      									"</div>" +
+	                    								"</div>" +
+	                    								"<div class='clearfix'></div>" +
+	                  								"</div>";
+            }
+            else {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+
+	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='Username" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+	                    									"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+	                      										"<div class='mt-4 my-chat-edit-delete-panel-inside' id='CommentText" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Comments + "</div>" +
+	                      											"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          											"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        										"</div>" +
+	                        										"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          											"<li><button id='messageEdit' type='button' class='btn LikeCmnt" + FileCommentResponse[i].ID + "' data-toggle='collapse' data-target='#messageReplyBox' aria-expanded='false' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</button></li>" +
+	                          											"<li><a class='logout' onclick='ActiveReplyCtrl(" + FileCommentResponse[i].ID + ")'>Reply</a></li>" +
+	                        										"</ul>" +
+	                    									"</h4>" +
+	                    									"<div class='col-md-12 col-sm-12 p0'>" +
+	                      										"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      										"</div>" +
+	                    									"</div>" +
+	                    									"<div class='clearfix'></div>" +
+														"</div>";
+            }
+        }
+        else if (FileCommentResponse[i].Initials == "Reply") {
+            if (_spPageContextInfo.userId == FileCommentResponse[i].AuthorId) {
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")' >" + likesCount + "</span></span>" +
+	                    								"</div>" +
+	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel others-reply-text-box'>" +
+	                      									"<div class='reply-text-line'>" +
+	                        									"<a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a>" +
+	                        									"<span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
+	                        									"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        									"</div>" +
+	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
+	                          										"<li><a class='logout' onclick='DeleteComments(" + FileCommentResponse[i].ID + ")'>Delete</a></li>" +
+	                        									"</ul>" +
+	                      									"</div>" +
+	                      									"<div class='mt-14'>" +
+	                        									"<div class='reply-text-box my-chat-edit-delete-panel-inside reply-inside-text-box' id='CommentText" + FileCommentResponse[i].ID + "'>" +
+	                          										"" + FileCommentResponse[i].Comments + "" +
+	                        									"</div>" +
+	                      									"</div>" +
+	                    								"</h4>" +
+	                    								"<div class='col-md-12 col-sm-12 p0'>" +
+	                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      									"</div>" +
+	                    								"</div>" +
+	                    								"<div class='clearfix'></div>" +
+	                  								"</div>";
+
+            }
+            else {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext'>" +
+		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+		                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+		                      									"<div class='reply-text-line'><a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a><span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
+		                      										"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+		                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>" +
+		                        									"</div>" +
+		                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+		                          										"<li><a type='button' class='LikeCmnt" + FileCommentResponse[i].ID + "' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</a></li>" +
+		                          										"<li><a type='button' onclick='ActiveReplyCtrl(" + FileCommentResponse[i].ID + ")'>Reply</a></li>" +
+		                        									"</ul>" +
+		                        								"</div>" +
+		                        								"<div class='mt-14'>" +
+			                        								"<div class='reply-text-box my-chat-edit-delete-panel-inside reply-inside-text-box' id='CommentText" + FileCommentResponse[i].ID + "'>" +
+			                          									"" + FileCommentResponse[i].Comments + "" +
+			                        								"</div>" +
+		                      									"</div>" +
+		                    								"</h4>" +
+		                    								"<div class='col-md-12 col-sm-12 p0'>" +
+		                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+		                      									"</div>" +
+		                    								"</div>" +
+		                    								"<div class='clearfix'></div>" +
+	                  									"</div>";
+
+            }
+        }
+
+        if (FileCommentResponse[i].AttachmentFiles.results.length > 0) {
+            AttachmnetIDs.push(FileCommentResponse[i].ID);
+            for (var j = 0; j < FileCommentResponse[i].AttachmentFiles.results.length; j++) {
+                Attachmnetlist.push({
+                    RecordId: FileCommentResponse[i].ID,
+                    FileName: FileCommentResponse[i].AttachmentFiles.results[j].FileName,
+                    ServerRelativeUrl: FileCommentResponse[i].AttachmentFiles.results[j].ServerRelativeUrl,
+                });
+            }
+        }
+
+    }
+    if (Mode == "refreshMode") {
+        $("#CommentsArea").append(Commenthtmldesign);
+    }
+    else {
+        $("#CommentsArea").empty().append(Commenthtmldesign);
+    }
+
+    for (var k = 0; k < AttachmnetIDs.length; k++) {
+        var RecId = AttachmnetIDs[k];
+        var FilterResult = $.grep(Attachmnetlist, function (e) { return e.RecordId == AttachmnetIDs[k]; });
+        var Attachmentdesign = '';
+        $("#Attachmentlist" + RecId).empty();
+        for (var p = 0; p < FilterResult.length; p++) {
+            if (FilterResult[p].FileName.indexOf("docx") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+            else if (FilterResult[p].FileName.indexOf("pdf") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+            else if (FilterResult[p].FileName.indexOf("xlsx") != -1 || FilterResult[p].FileName.indexOf("csv") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+
+            else if (FilterResult[p].FileName.indexOf("jpg") != -1 || FilterResult[p].FileName.indexOf("jpeg") != -1 || FilterResult[p].FileName.indexOf("JPEG") != -1 || FilterResult[p].FileName.indexOf("png") != -1 || FilterResult[p].FileName.indexOf("PNG") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + FilterResult[p].ServerRelativeUrl + "' title=" + FilterResult[p].FileName + " onclick='previewImage(this);'></img></div>";
+            }
+            else {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+        }
+        $("#Attachmentlist" + RecId).append(Attachmentdesign);
+    }
+}
+//to update any comment of any file
+function EditComment(RecID){
+    FileCommentType="Modify";
+    ModifyRecId = RecID;
+    var Query = "?$filter=ID eq '"+RecID+"'&$select=*,Author/Title,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if(Items.length>0) {
+            $('.emojionearea-editor').html(Items[0].Comments);
+            $("#oldfilename").empty(); 
+            if(Items[0].AttachmentFiles.results.length>0)
+            {
+                var AttachmentDesign ='';
+                for(var y=0; y<Items[0].AttachmentFiles.results.length; y++)
+                {
+                    AttachmentDesign = AttachmentDesign +"<div class='comment-upload-chip "+Items[0].ID+"-"+y+"'><span class='attachment-badge-name comment-box-chip-text-box'><a target='_blank' href='" +Items[0].AttachmentFiles.results[y].ServerRelativeUrl+ "'><span>"+Items[0].AttachmentFiles.results[y].FileName+"</span></a></span><span class='Closebtn' id='Closebtn"+Items[0].ID+"'><i class='fa fa-close "+Items[0].ID+"' style='color:red;' id='"+Items[0].ID+"-"+y+"' value='"+Items[0].AttachmentFiles.results[y].FileName+"' onclick='DeleteAttachment(this.id)'></i></span></div>";    	
+                }
+                $("#oldfilename").append(AttachmentDesign); 
+            } 	
+        }
+        else
+        {
+            $('.emojionearea-editor').empty();    		
+        }
+    });
+}
+//to delete the comment attachement
+function DeleteAttachment(ItemId,filename) 
+{
+    var Dfd = $.Deferred();
+    var dataID = ItemId.split("-");
+    var DocumentName =$("#"+ItemId).attr('value');
+    var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('DocumentComments')/GetItemById(" + dataID[0]+ ")/AttachmentFiles/getByFileName('" + DocumentName+ "')  ";
+    $.ajax({
+        url: Url,
+        type: 'DELETE',
+        contentType: 'application/json;odata=verbose',
+        headers: {
+            'X-RequestDigest': $('#__REQUESTDIGEST').val(),
+            'X-HTTP-Method': 'DELETE',
+            'Accept': 'application/json;odata=verbose'
+        },
+        success: function (data) 
+        {
+            Dfd.resolve(data);
+            $("."+ItemId).hide();
+            $("#"+ItemId).hide();            
+            //TotalCommentsCounts=[];
+            //GetTotalComments();          
+        },
+        error: function (error) 
+        {
+            Dfd.reject(JSON.stringify(error));
+            console.log(error);
+        }
+    });
+    return Dfd.promise();
+}
+
+//Update comment of any user
+function UpdateEditComment(RecID) {
+    var item = {
+        __metadata:{
+            type: "SP.Data.DocumentCommentsListItem"
+        },
+        Comments: $("#FileCommArea .emojionearea-editor").html()
+    }
+    $.when(updateItemWithIDItemListDocuments('DocumentComments', item, RecID, _spPageContextInfo.webAbsoluteUrl, false)).done(function (FilterResult) {
+        if (FinalFiles4Upload.length > 0) {
+            Edituploadattachment(RecID);
+        }
+        else {
+            RetriveUpdateData(RecID);
+        }
+        alert("Comment has been updated.");
+        $("#CommentText" + RecID).html($("#FileCommArea .emojionearea-editor").html());
+        FileCommentType = "Parent";
+        $("#NewAttachmentFiles").empty();
+        $("#oldfilename").empty();
+        $('.emojionearea-editor').empty();
+    });
+}
+
+function Edituploadattachment(id) 
+{	
+    var xRequestDigest = $("#__REQUESTDIGEST").val();	
+    var counter = 0;
+    if(FinalFiles4Upload.length>0)
+    {
+        $.each(FinalFiles4Upload, function(index, value){
+            getFileBuffer(value).then(function (buffer) {                
+                var OrginalFileName = value.name;
+                var ModifiedFileName = OrginalFileName.replace(/[^.a-zA-Z0-9]/ig,"");		  
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl+ "/_api/web/lists/getbytitle('DocumentComments')/items(" + id + ")/AttachmentFiles/add( FileName='" + ModifiedFileName + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: true,
+                    processData: false,
+                    headers: 
+    				{
+    				    "Accept": "application/json;odata=verbose",
+    				    "content-type": "application/json;odata=verbose",
+    				    "X-RequestDigest": xRequestDigest
+    				},
+                    success: function (data)
+                    {
+                        counter  = counter + 1;    					
+                        if(counter == FinalFiles4Upload.length)
+                        {
+                            RetriveUpdateData(id);		    					 
+                        }
+                    },
+                    error: function (data) 
+                    {
+                        console.log(data.responseText.error);
+                    }
+                });
+            });
+        });
+    }	
+}
+
+//To delete the comment
+function DeleteComments(RecordID) {
+    if (confirm('Are you sure to delete this comment ?')) {
+        $.ajax({  
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('DocumentComments')/items("+RecordID+")",  
+            type: "POST",
+            async: true,  
+            headers: {  
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                "IF-MATCH": "*",  
+                "X-HTTP-Method": "DELETE"  
+            },  
+            success: function(data, status, xhr) {  
+                $('#CommentDivRecNo'+RecordID).hide();
+                $("#TotalComments").text(parseInt($("#TotalComments").text()) - 1);
+            },  
+            error: function(xhr, status, error) {  
+                alert(data.responseJSON.error); 
+                return false; 
+            }  
+        });  
+    } 
+}
+
+//bind updated comment
+function RetriveUpdateData(RecID) {
+    var Query = "?$filter=ID eq '" + RecID + "'&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $('#CommentText' + Items[0].ID).html(Items[0].Comment);
+            $("#Attachmentlist" + Items[0].ID).empty();
+            if (Items[0].AttachmentFiles.results.length > 0) {
+                var Attachmentdesign = '';
+                for (var y = 0; y < Items[0].AttachmentFiles.results.length; y++) {
+                    if (Items[0].AttachmentFiles.results[y].FileName.indexOf("docx") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("pdf") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("xlsx") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("csv") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("jpg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("jpeg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("JPEG") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("png") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("PNG") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' title=" + Items[0].AttachmentFiles.results[y].FileName + " onclick='previewImage(this);'></img></div>";
+                    }
+                    else {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                }
+                $("#Attachmentlist" + Items[0].ID).append(Attachmentdesign);
+            }
+        }
+    });
+}
+//to decide text - Unlike or Like
+function checkLikeCommentUser(RecId) {
+    var LikeCount = 0;
+    var Query = "?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeComment eq 'Yes' and LikeCommentID eq '" + RecId + "' and Author/EMail eq '" + _spPageContextInfo.userEmail + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (FilterResult) {
+        LikeCount = FilterResult.length;
+        if (FilterResult.length > 0) {
+            textValue = "Unlike";
+        }
+    });
+    return LikeCount;
+}
+
+//To add or remove comment like
+function Pushlikeforcomment(RecordID) {
+    var d = new Date();
+    var CurrentYear = d.getFullYear();
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    var Query = "?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter= (Author/EMail eq ('" + _spPageContextInfo.userEmail + "') and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeCommentID eq '" + RecordID + "') and (LikeComment eq 'Yes' or LikeComment eq 'No')";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        if (QueryResult.length > 0) {
+            if (QueryResult[0].LikeComment == "No") {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+                if (parseInt(OldLikes) + 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'Yes', 'LikeCount': parseInt(QueryResult[0].LikeCount) + 1};
+                DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].LikeComment == "Yes") {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) - 1);
+                if (parseInt(OldLikes) - 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'No', 'LikeCount': parseInt(QueryResult[0].LikeCount) - 1};
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].LikeComment == null) {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+                if (parseInt(OldLikes) + 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'Yes', 'LikeCount': parseInt(QueryResult[0].LikeCount) + 1};
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+        }
+        else {
+            var OldLikes = $("#LikesCount" + RecordID).text();
+            $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+            if (parseInt(OldLikes) + 1 > 0) {
+                $("#LikeSpan" + RecordID).css("display", "inline-block");
+            }
+            else {
+                $("#LikeSpan" + RecordID).css("display", "none");
+            }
+
+            var listName = "DocumentComments";
+            var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 
+                'LikeComment': 'Yes', 
+                'LikeCommentID': RecordID.toString(),
+                'Title': $("#FileName").text(),
+                'EmployeeId': parseInt(_spPageContextInfo.userId), 
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LikeCount': 1,
+                'LibraryName': LibraryName
+            };
+            AddDocComments(listName, item);
+        }
+    });
+}
+
+function formatDateComment(d) {
+    var date = new Date(d);
+    if (isNaN(date.getTime())) { return d; }
+    else
+    {
+        var month = new Array();
+        month[0] = "Jan";
+        month[1] = "Feb";
+        month[2] = "Mar";
+        month[3] = "Apr";
+        month[4] = "May";
+        month[5] = "Jun";
+        month[6] = "Jul";
+        month[7] = "Aug";
+        month[8] = "Sept";
+        month[9] = "Oct";
+        month[10] = "Nov";
+        month[11] = "Dec";
+        day = date.getDate();
+        if (day < 10) { day = "0" + day; }
+        return day + " " + month[date.getMonth()];
+    }
+}
+
+
+//get Total View Count of any document
+function getTotalViewCount() {
+    getTotalLikes();
+    var Html_Design = '';
+    var Query = "?$filter=DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Views eq 'Yes'&$select=*,ViewsBy/Title,ViewsBy/EMail,ViewsBy/ID&$expand=ViewsBy";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        $("#TotalHits").text(QueryResult.length);
+        if(QueryResult.length > 0) {
+            for(var i=0; i < QueryResult.length; i++) {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryResult[i].ViewsBy.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+	    									"<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='"+attachment+"'></div>"+
+											"<div class='like-user-name'>"+
+											"<h4>"+QueryResult[i].ViewsBy.Title+"</h4>"+
+											"</div>"+
+											"</li>";
+            }
+            $("#ViewHitList").empty().append(Html_Design);
+        }
+        else {
+            Html_Design = Html_Design + "<li class='likes-box'>" +
+	                                           "<div class='comment-reply-user-name' style='width:212px !important;border-radius:3% !important'>"+
+	                                           "<h4>No views!!</h4>"+
+	                                           "</div>"+
+	                                           "</li>";
+            $("#ViewHitList").empty().append(Html_Design);
+        }
+    });
+}
+
+//to get Total likes of any Document
+function getTotalLikes() {
+    var Html_Design = '';
+    var Query = "?$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Like eq 'Yes' &$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TotalLike) {
+        $("#TotalLikes").text(TotalLike.length);
+        if(TotalLike.length > 0) {
+            for(var i=0; i<TotalLike.length; i++){ 		
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TotalLike[i].LikeBy.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+    									"<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='"+attachment+"'></div>"+
+										"<div class='like-user-name'>"+
+										"<h4>"+TotalLike[i].LikeBy.Title+"</h4>"+
+										"</div>"+
+										"</li>";
+            }
+            $("#Likeshitlist").empty().append(Html_Design);
+        }
+        else {
+            Html_Design = Html_Design + "<li class='likes-box'>" +
+	                                       "<div class='comment-reply-user-name' style='width:212px !important;border-radius:3% !important'>"+
+	                                       "<h4>No Likes!!</h4>"+
+	                                       "</div>"+
+	                                       "</li>";
+            $("#Likeshitlist").empty().append(Html_Design);
+        }
+    });
+}
+
+//to like any Document
+function TriggerLikes() {
+    var Query = "?$filter=((Author/EMail eq ('" + _spPageContextInfo.userEmail + "') and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "') and (Like eq 'Yes' or Like eq 'No'))&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        var listName = "DocumentComments";
+        if (QueryResult.length > 0) {
+            if (QueryResult[0].Like == "No") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Like': 'Yes', 'LikeById': parseInt(_spPageContextInfo.userId) };
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].Like == "Yes") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Like': 'No', 'LikeById': parseInt(_spPageContextInfo.userId) };
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+
+            var Query = "?$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Like eq 'Yes' &$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy";
+            $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TotalLike) {
+                if (TotalLike.length > 0) {
+                    $("#TotalLikes").text(TotalLike.length);
+                    $("#Likeshitlist").empty();
+                    var Html_Design = "";
+                    for (var i = 0; i < TotalLike.length; i++) {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TotalLike[i].LikeBy.EMail);
+                        Html_Design = Html_Design + "<li class='likes-box'>" +
+                                                "<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='" + attachment + "'></div>" +
+                                                "<div class='like-user-name'>" +
+                                                "<h4>" + TotalLike[i].LikeBy.Title + "</h4>" +
+                                                "</div>" +
+                                                "</li>";
+                    }
+                    $("#Likeshitlist").append(Html_Design);
+                }
+                else {
+                    $("#TotalLikes").text("0");
+                    $("#Likeshitlist").empty();
+                }
+            });
+        }
+        if ($(".like-img").attr("src") == "../SiteAssets/Biography/Experience/assets/images/like-icon.png" || $(".like-img").attr("src").includes('like-icon.png') == true) {
+            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
+        }
+        else {
+            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon.png");
+        }
+        if ($("#likes").hasClass("active") == true) {
+            $('#TotalLikes').trigger('click');
+        }
+    });
+}
+
+//Open Comment Reply mode
+function ActiveReplyCtrl(ControlId) {
+    FileCommentType = "Reply";
+    var Query = "?$select=*&$filter=ID eq '" + ControlId + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $("#ReplyforMsg").html(Items[0].Comments);
+            $("#ReplyforMsg").attr('value', Items[0].Comments);
+
+            if (Items[0].Initials == "Reply") {
+                $("#replyforuser").text(Items[0].ReplyTo);
+            }
+            else {
+                $("#replyforuser").text($("#Username" + ControlId).text());
+            }
+        }
+    });
+    $("#replyTextarea").show();
+}
+
+//Close Comment Reply mode
+function DeActiveReplyControl() {
+    FileCommentType= "Parent";
+    $("#replyTextarea").hide();
+    $(".emojionearea-editor").empty();
+    $("#NewAttachmentFiles").empty();
+}
+
+//get all the users who likes the comment
+function GetAllLikesComment(RecId) {
+    var Query = "?$select=*,Author/EMail,Author/Title,Author/Id&$expand=Author&$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeComment eq 'Yes' and LikeCommentID eq '" + RecId + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $("#CommentLikeList").empty();
+            var Html_Design = "";
+            for (var i = 0; i < Items.length; i++) {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Items[i].Author.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+                                    "<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='" + attachment + "'></div>" +
+                                    "<div class='like-user-name'>" +
+                                    "<h4>" + Items[i].Author.Title + "</h4>" +
+                                    "</div>" +
+                                    "</li>";
+            }
+            $("#CommentLikeList").append(Html_Design);
+        }
+        else {
+            $("#CommentLikeList").empty();
+        }
+        $("#showInnerLikes").removeClass("show-inner-likes-box-hide");
+    });
+}
+
+//update Document comments list metadata
+function DocCommentUpdate(listName, item, dataid) {
+    var Responce = "";
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + listName + "')/items('" + dataid + "')",
+        type: "POST",
+        async: false,
+        data: JSON.stringify(item),
+        headers:
+        {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE"
+        },
+        success: function (data) {
+            console.log("Done");
+            Responce = data;
+
+        },
+        error: function (data) {
+            Responce = data;
+            console.log(data);
+            alert("An error occurred. Please contact your system administrator / Refresh a WebPage !");
+        }
+    });
+    return Responce;
+}
+//-------------------------------------------Document Comments code ends---------------------------------
+
