@@ -1241,6 +1241,9 @@ function GetClientName() {
                 }
                 var Supervisor = items[i].Supervisor.Title;
                 var SupervisorId = items[i].Supervisor.Id;
+                if(SupervisorId==null){
+                   SupervisorId=0;
+                }
                 var SalesPerson = items[i].SalesPerson.Title;
                 var TemplateType = items[i].TemplateType;
                 var IntSupervisor = items[i].InternalSupervisor.Title;
