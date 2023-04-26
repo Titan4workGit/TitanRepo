@@ -1008,6 +1008,7 @@ table#layoutsTable, table#layoutsTable > tbody, table#layoutsTable > tbody:first
     line-height: 1.2;
     transition: 0.2s;
     opacity: 0;
+    visibility:hidden;
     width: 130px;
 }
 
@@ -1086,6 +1087,7 @@ table#layoutsTable, table#layoutsTable > tbody, table#layoutsTable > tbody:first
 .main-menu-panel #liMyDocuments:hover::before,
 .main-menu-panel #liFavoriteDocuments:hover::before {
     opacity: 1;
+    visibility:visible;
 }
 
 .main-menu-panel #advanceserach:hover::after,
@@ -1256,7 +1258,8 @@ table#layoutsTable, table#layoutsTable > tbody, table#layoutsTable > tbody:first
             border:none;
             border-top: 1px solid #ccc;
             border-bottom: 1px solid #cdcdcdbf;
-            min-width:116px !important;
+            min-width:110px !important;
+            font-size:12px;
         }
     #groupDocumentGrid thead tr th:nth-child(1) {
 	    min-width: 50px !important;
@@ -3727,6 +3730,119 @@ justify-content: space-between;
     min-height: calc(100% - 80px) !important;
 }
 
+
+li.hiddenmy#liSharedDocs div[data-toggle="collapse"]{
+ display:none;  
+}
+
+li.hiddenmy #sharedDoc{
+ display:block !important;  
+}
+
+li.hiddenmy #sharedDoc .inner-collapse-panel{
+ padding:5px; 
+}
+
+.main-menu-panel li.hiddenmy .inner-collapse-panel .panel-group {
+    max-height: 210px;
+    overflow-y: visible;
+    box-shadow: none;
+}
+
+.main-menu-panel li.hiddenmy #sharedDoc .inner-collapse-panel {
+    padding: 5px 0;
+    width: 48px;
+    /* left: 0; */
+    /* overflow: visible; */
+}
+
+.main-menu-panel li.hiddenmy .inner-collapse-panel-mobile {
+   box-shadow:none !important;
+}
+
+.main-menu-panel li.hiddenmy #sharedDoc {
+    display: block !important;
+    width: 48px;
+    position: relative;
+    left: 0;
+}
+
+.main-menu-panel li.hiddenmy#liSharedDocs::before {
+    display:none !important;
+}
+.main-menu-panel li.hiddenmy#liSharedDocs::after {
+    display:none !important;
+}
+
+.sharewithme{
+ display:none;	
+}
+
+li.hiddenmy .sharewithme{
+ display:block;
+ width:31px;	
+}
+
+li.hiddenmy .sharewithme_od{
+ display:none;	
+}
+
+#tabSharedByMe,
+#tabSharedToMe{
+ position:relative;	
+}
+
+.main-menu-panel li.hiddenmy #tabSharedByMe::before,
+.main-menu-panel li.hiddenmy #tabSharedToMe::before{
+   position: absolute;
+    background: #dfdfdf;
+    color: #333;
+    top: 10px;
+    left: 45px;
+    padding: 4px 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: 0.2s;
+    opacity: 0;
+    width: 150px;
+	
+}
+
+.main-menu-panel li.hiddenmy #tabSharedToMe::before{
+ content:'Marketting Collerateral';	
+}
+
+.main-menu-panel li.hiddenmy #tabSharedByMe::before{
+ content:'Shared by Me';	
+}
+
+
+li.hiddenmy #tabSharedByMe::after,
+li.hiddenmy #tabSharedToMe::after{
+   content: '';
+    position: absolute;
+    top: 18px;
+    left: 37px;
+    opacity: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #9d9c9c;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.main-menu-panel li.hiddenmy #tabSharedToMe:hover::before,
+.main-menu-panel li.hiddenmy #tabSharedToMe:hover::after{
+ opacity:1;	
+}
+
+.main-menu-panel li.hiddenmy #tabSharedByMe:hover::before,
+.main-menu-panel li.hiddenmy #tabSharedByMe:hover::after{
+ opacity:1;		
+}
+
+
 /*****april-11-22 ed********/ 
 
 
@@ -4471,8 +4587,8 @@ overflow: auto;
 }
 
 .advance_setion .d-flexing .combineflxbxsec {
-    width: 145px;
-    min-width: 145px;
+    width: 281px;
+    min-width:145px;
 }
 
 @media(min-width:992px){

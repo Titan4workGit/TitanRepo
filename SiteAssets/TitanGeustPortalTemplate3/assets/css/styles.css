@@ -1,4 +1,4 @@
-
+﻿
 body {
     font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
 }
@@ -1793,7 +1793,7 @@ margin-bottom:5px;
 
 .emojionearea .emojionearea-button>div, 
 .emojionearea .emojionearea-picker .emojionearea-wrapper:after{
-    background-image: url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/emoji.png')!important;
+    background-image: url('../SiteAssets/MyDocuments/DMS/assets/images/emoji.png')!important;
 }
 
 .emojionearea .emojionearea-picker.emojionearea-picker-position-left, .emojionearea .emojionearea-picker.emojionearea-picker-position-right {
@@ -2444,4 +2444,21 @@ padding: 5px;
 
 #AttachmentView .modal-dialog{
  margin:10px auto;	
+}
+
+
+
+#chat_sec .modal-dialog{
+ margin-top:7px;
+ margin-bottom:7px;	
+} 
+.my-chat-edit-delete-panel-inside .emojioneemoji {
+    width: 20px;
+    margin: 0px 2px;
+}
+
+.reply-text-line #ReplyforMsg img.emojioneemoji {
+    max-width: 16px;
+    overflow: visible;
+    margin:0 1px;
 }
