@@ -1,1 +1,972 @@
-var a88_0x41b7a8=a88_0x4a66;(function(_0x2e1a0f,_0x1f9d87){var _0x297743=a88_0x4a66,_0x479fb6=_0x2e1a0f();while(!![]){try{var _0x366e3e=-parseInt(_0x297743(0xbd))/0x1*(-parseInt(_0x297743(0xef))/0x2)+parseInt(_0x297743(0x18a))/0x3+parseInt(_0x297743(0x135))/0x4*(parseInt(_0x297743(0xf3))/0x5)+-parseInt(_0x297743(0x189))/0x6+-parseInt(_0x297743(0x16b))/0x7+-parseInt(_0x297743(0x15d))/0x8*(parseInt(_0x297743(0x113))/0x9)+parseInt(_0x297743(0xea))/0xa*(parseInt(_0x297743(0x168))/0xb);if(_0x366e3e===_0x1f9d87)break;else _0x479fb6['push'](_0x479fb6['shift']());}catch(_0x3984e5){_0x479fb6['push'](_0x479fb6['shift']());}}}(a88_0xd866,0x75b90));function a88_0x4a66(_0x18dd1e,_0x1df664){var _0xd86647=a88_0xd866();return a88_0x4a66=function(_0x4a661f,_0x3fc695){_0x4a661f=_0x4a661f-0xb6;var _0x6b2a6b=_0xd86647[_0x4a661f];return _0x6b2a6b;},a88_0x4a66(_0x18dd1e,_0x1df664);}var _0x4f34ab=_0x3380;(function(_0x33f748,_0x293929){var _0x349d1c=a88_0x4a66,_0x44d81d=_0x3380,_0x55c941=_0x33f748();while(!![]){try{var _0x5ae8f2=parseInt(_0x44d81d(0x18b))/0x1+-parseInt(_0x44d81d(0xf4))/0x2+-parseInt(_0x44d81d(0x135))/0x3*(-parseInt(_0x44d81d(0x193))/0x4)+-parseInt(_0x44d81d(0x197))/0x5+-parseInt(_0x44d81d(0x1b1))/0x6+parseInt(_0x44d81d(0x19e))/0x7*(parseInt(_0x44d81d(0x177))/0x8)+parseInt(_0x44d81d(0xe9))/0x9*(parseInt(_0x44d81d(0x1c0))/0xa);if(_0x5ae8f2===_0x293929)break;else _0x55c941[_0x349d1c(0xdb)](_0x55c941['shift']());}catch(_0x1e89d4){_0x55c941[_0x349d1c(0xdb)](_0x55c941['shift']());}}}(_0x597a,0xf1ec3));var lastLogin=_spPageContextInfo,UserItemid,FileTitle,IsprofilePic=![],todayDate=new Date(),UserEmail,userDocumenturl,one_day=0x3e8*0x3c*0x3c*0x18,months=[_0x4f34ab(0x1c3),_0x4f34ab(0x1a4),a88_0x41b7a8(0xb6),_0x4f34ab(0x1af),_0x4f34ab(0x11b),a88_0x41b7a8(0x122),_0x4f34ab(0x151),_0x4f34ab(0x1ae),a88_0x41b7a8(0xca),_0x4f34ab(0x1c2),a88_0x41b7a8(0x13f),_0x4f34ab(0x187)],currentClientName='',Logged_CompanyId='',LabelDefaultLangauge=[],labels=[];function _0x597a(){var _0x5a26cd=a88_0x41b7a8,_0x411feb=[_0x5a26cd(0x127),_0x5a26cd(0x126),'replace',_0x5a26cd(0x17c),_0x5a26cd(0xe9),_0x5a26cd(0x104),_0x5a26cd(0x163),_0x5a26cd(0x173),'background-color:\x20hsla(0,\x200%,\x20100%,\x201)\x20!important',_0x5a26cd(0xcb),'#userDisplayName','\x20key\x20not\x20found.',_0x5a26cd(0x11c),'.btnAppFilter','ValidUpto',_0x5a26cd(0x116),_0x5a26cd(0xd0),')/AttachmentFiles/getByFileName(\x27',_0x5a26cd(0x141),'#UserOrganization',_0x5a26cd(0x172),_0x5a26cd(0x124),_0x5a26cd(0xf2),_0x5a26cd(0xff),'ExternalUsers',_0x5a26cd(0xd5),_0x5a26cd(0x18c),_0x5a26cd(0x110),_0x5a26cd(0xbf),_0x5a26cd(0xd3),_0x5a26cd(0x115),_0x5a26cd(0x11f),_0x5a26cd(0x180),_0x5a26cd(0x150),_0x5a26cd(0x195),_0x5a26cd(0xd1),'Guestportal1.aspx',_0x5a26cd(0xcd),_0x5a26cd(0x114),_0x5a26cd(0x185),_0x5a26cd(0xdc),_0x5a26cd(0xfe),_0x5a26cd(0x183),_0x5a26cd(0x13c),'#txtSupervisor',_0x5a26cd(0x18f),_0x5a26cd(0xd8),_0x5a26cd(0x17e),'#SharedFilterBox',_0x5a26cd(0x13e),_0x5a26cd(0x194),'SPClientPeoplePickerDict',_0x5a26cd(0x170),'.ShareSectionAct','/SitePages/GuestHomepage.aspx',_0x5a26cd(0x13b),_0x5a26cd(0x108),_0x5a26cd(0xb9),_0x5a26cd(0xd4),_0x5a26cd(0xc7),_0x5a26cd(0x16a),_0x5a26cd(0xe1),_0x5a26cd(0xc9),'Your\x20Picture\x20has\x20not\x20been\x20update',_0x5a26cd(0xd9),_0x5a26cd(0x181),_0x5a26cd(0x188),_0x5a26cd(0xe5),_0x5a26cd(0x166),_0x5a26cd(0x174),_0x5a26cd(0xfa),'resolve','Are\x20you\x20sure\x20to\x20logout\x20SharePoint?','?$select=*,CompanyID/Id&$expand=CompanyID&$top=5000&$filter=Id\x20eq\x20\x27','pop',_0x5a26cd(0xde),'#dark-light-side-opt\x20span.material-icons','append',_0x5a26cd(0x155),_0x5a26cd(0x130),'GetAllUserInfo',_0x5a26cd(0x197),'TemplateType',_0x5a26cd(0x160),_0x5a26cd(0xfd),'charAt',_0x5a26cd(0x10c),_0x5a26cd(0x177),_0x5a26cd(0x17a),_0x5a26cd(0x101),_0x5a26cd(0xc1),_0x5a26cd(0x151),_0x5a26cd(0x164),_0x5a26cd(0x140),_0x5a26cd(0x142),_0x5a26cd(0xfb),_0x5a26cd(0x175),_0x5a26cd(0x193),_0x5a26cd(0x12f),';\x20expires=','#Logoimg','value',_0x5a26cd(0x196),'Supervisor',_0x5a26cd(0x15f),_0x5a26cd(0x158),'each',_0x5a26cd(0xb8),_0x5a26cd(0x10e),'length',_0x5a26cd(0xc5),_0x5a26cd(0x10f),_0x5a26cd(0x16d),_0x5a26cd(0x136),'Dec',_0x5a26cd(0xe2),_0x5a26cd(0x157),'InternalStakeholders','1791983iHUrfg',_0x5a26cd(0xeb),'DELETE','DarkMode',_0x5a26cd(0x106),'html',_0x5a26cd(0x16f),_0x5a26cd(0xce),_0x5a26cd(0x10a),_0x5a26cd(0xc6),_0x5a26cd(0x13d),_0x5a26cd(0x17f),_0x5a26cd(0xda),_0x5a26cd(0x132),_0x5a26cd(0xba),'change',_0x5a26cd(0x186),_0x5a26cd(0x161),_0x5a26cd(0x11b),'7RiqEDQ',_0x5a26cd(0xbc),_0x5a26cd(0x112),_0x5a26cd(0xc2),_0x5a26cd(0x156),'#divDownload',_0x5a26cd(0xd2),_0x5a26cd(0x16c),_0x5a26cd(0x137),_0x5a26cd(0x176),_0x5a26cd(0x184),'setTime',_0x5a26cd(0x107),_0x5a26cd(0x138),_0x5a26cd(0xe8),_0x5a26cd(0xcc),_0x5a26cd(0x17b),'Apr',_0x5a26cd(0x125),_0x5a26cd(0x11e),_0x5a26cd(0x117),_0x5a26cd(0x182),_0x5a26cd(0x14a),'push','Client_Name',_0x5a26cd(0x179),_0x5a26cd(0x13a),_0x5a26cd(0x152),'undefined',_0x5a26cd(0x14d),_0x5a26cd(0xbe),_0x5a26cd(0x11d),_0x5a26cd(0x12b),_0x5a26cd(0x14b),_0x5a26cd(0x111),_0x5a26cd(0xdd),_0x5a26cd(0x198),_0x5a26cd(0x154),_0x5a26cd(0x144),_0x5a26cd(0x17d),_0x5a26cd(0xbb),'#divFilter',_0x5a26cd(0x15a),_0x5a26cd(0x109),_0x5a26cd(0x14f),_0x5a26cd(0x143),_0x5a26cd(0xcf),_0x5a26cd(0x100),_0x5a26cd(0x153),_0x5a26cd(0x192),_0x5a26cd(0x131),_0x5a26cd(0x103),_0x5a26cd(0x12c),_0x5a26cd(0x10b),'\x27)\x20\x20',_0x5a26cd(0x12d),'files',_0x5a26cd(0xfc),_0x5a26cd(0x18d),_0x5a26cd(0x15e),_0x5a26cd(0xe4),'3509456HQKqHI',_0x5a26cd(0x139),_0x5a26cd(0xf8),'TotalUserCount',_0x5a26cd(0x14e),_0x5a26cd(0xf6),_0x5a26cd(0xec),_0x5a26cd(0x18b),_0x5a26cd(0xc3),_0x5a26cd(0x146),_0x5a26cd(0xb7),_0x5a26cd(0x171),_0x5a26cd(0x190),_0x5a26cd(0x178),_0x5a26cd(0x12a),_0x5a26cd(0xc4),_0x5a26cd(0x14c),'split',_0x5a26cd(0x15c),_0x5a26cd(0x133),'liSharedDocs',_0x5a26cd(0xf5),'POST',';\x20path=/',_0x5a26cd(0xf1),_0x5a26cd(0x167),_0x5a26cd(0x123),_0x5a26cd(0x149),_0x5a26cd(0xe3),_0x5a26cd(0x128),_0x5a26cd(0xed),'#txtType',_0x5a26cd(0xe6)];return _0x597a=function(){return _0x411feb;},_0x597a();}function ShortDateTime(_0x13e87a,_0x4f11d8){var _0x5d3561=a88_0x41b7a8,_0x7c0099=_0x4f34ab,_0x13e87a=new Date(_0x13e87a),_0x2261f1=_0x13e87a[_0x7c0099(0x101)](),_0x16c2b6=_0x13e87a[_0x7c0099(0xee)](),_0x306a96=_0x13e87a[_0x7c0099(0x185)]();if(_0x16c2b6<0xa)_0x16c2b6='0'+_0x16c2b6;var _0x5daa1d=_0x16c2b6+'-'+months[_0x306a96]+'-'+_0x2261f1,_0x6d0bb7=_0x13e87a[_0x7c0099(0x107)](),_0x465859=_0x6d0bb7>=0xc?'PM':'AM',_0x2f911a=_0x6d0bb7>0xc?_0x6d0bb7-0xc:_0x6d0bb7,_0x2f911a=_0x2f911a<0xa?'0'+_0x2f911a:_0x2f911a,_0x1c9cf6=_0x13e87a[_0x5d3561(0xe0)](),_0x46d93c=_0x13e87a[_0x5d3561(0x105)]();if(_0x6d0bb7<0xa)_0x6d0bb7='0'+_0x6d0bb7;if(_0x1c9cf6<0xa)_0x1c9cf6='0'+_0x1c9cf6;if(_0x46d93c<0xa)_0x46d93c='0'+_0x46d93c;var _0x25ca24='';return _0x4f11d8?_0x25ca24=_0x2f911a+':'+_0x1c9cf6+'\x20'+_0x465859:_0x25ca24='',_0x5daa1d+'\x20'+_0x25ca24;}$(document)[_0x4f34ab(0x1a1)](function(){var _0x1bd31d=a88_0x41b7a8,_0xf858c4=_0x4f34ab,_0x4f373f=new Date(),_0x5a604e=_0x4f373f[_0xf858c4(0x101)]()+'-'+(_0x4f373f[_0xf858c4(0x185)]()+0x1)+'-'+_0x4f373f[_0xf858c4(0xee)](),_0x1b9133=_0x4f373f[_0xf858c4(0x107)]()+':'+_0x4f373f[_0x1bd31d(0xe0)]()+':'+_0x4f373f[_0x1bd31d(0x105)](),_0x2ba867=_0x5a604e+'\x20'+_0x1b9133;$('#ChangeUploadPic')[_0xf858c4(0x19a)](function(){var _0x10c2d7=_0x1bd31d,_0x35efe2=_0xf858c4;readURL(this),IsprofilePic?$[_0x10c2d7(0x136)](DeleteItemAttachment(UserItemid,FileTitle))[_0x35efe2(0x196)](function(_0xe5f9d8){UploadAttachement(UserItemid);}):UploadAttachement(UserItemid);}),onloadGetItem(),SetStoredTheme();});function getUserInformationProject(_0x4090b6){var _0x4a30fb=a88_0x41b7a8,_0x38deb1=_0x4f34ab,_0x4cac26=[],_0x48139f=this[_0x4a30fb(0xee)][_0x38deb1(0x148)][_0x4090b6+_0x38deb1(0x144)];if(!_0x48139f[_0x38deb1(0xf0)]()){if(_0x48139f[_0x38deb1(0xec)])return![];else{if(!_0x48139f[_0x4a30fb(0x169)]())return![];else{if(_0x48139f[_0x38deb1(0xf7)]>0x0){var _0x453912=_0x48139f[_0x38deb1(0x165)](),_0x3a9657='',_0x404c04='',_0x3992c3='';for(var _0x47828e=0x0;_0x47828e<_0x453912[_0x38deb1(0x182)];_0x47828e++){var _0xefb1c4=_0x453912[_0x47828e]['Key'];_0xefb1c4!=null&&_0x4cac26[_0x4a30fb(0xdb)](_0xefb1c4[_0x38deb1(0x105)]('|')[0x2]);}return _0x4cac26;}}}}else return _0x3992c3;}function readURL(_0x1eff9a){var _0x5efc66=a88_0x41b7a8,_0x5f52a5=_0x4f34ab;if(_0x1eff9a[_0x5f52a5(0xef)]&&_0x1eff9a['files'][0x0]){var _0x4928a3=new FileReader();_0x4928a3[_0x5f52a5(0xfd)]=function(_0x2ad826){var _0x23831d=a88_0x4a66,_0x3bbd3f=_0x5f52a5;$(_0x3bbd3f(0xe7))[_0x3bbd3f(0x189)](_0x3bbd3f(0x1ca),_0x2ad826[_0x23831d(0x17a)][_0x3bbd3f(0x115)]),$(_0x3bbd3f(0x13e))[_0x3bbd3f(0x189)](_0x3bbd3f(0x1ca),_0x2ad826[_0x3bbd3f(0x16d)][_0x3bbd3f(0x115)]);},_0x4928a3[_0x5efc66(0x120)](_0x1eff9a[_0x5efc66(0xd6)][0x0]);}}function UploadAttachement(_0x26afda){var _0x24d317=a88_0x41b7a8,_0x2ac279=_0x4f34ab;try{var _0x32822a=$(_0x2ac279(0x1a2));if(_0x32822a[0x0][_0x2ac279(0xef)][_0x24d317(0x159)]==0x0)alert(_0x2ac279(0x147));else{var _0x24f652=_0x26afda,_0x3e4c55=_0x32822a[0x0][_0x2ac279(0xef)][_0x24d317(0x159)],_0x418c4c=[],_0x34a470=_0x32822a[0x0][_0x2ac279(0xef)][0x0][_0x2ac279(0x1ad)];_0x34a470=_0x32822a[0x0][_0x2ac279(0xef)][0x0][_0x2ac279(0x1ad)][_0x2ac279(0x117)](/[^a-zA-Z0-9-. ]/g,''),_0x34a470=_0x34a470[_0x24d317(0x145)](/\s/g,'');for(var _0x12eed6=0x0;_0x12eed6<_0x3e4c55;_0x12eed6++){_0x418c4c[_0x2ac279(0x1b5)](_0x32822a[0x0][_0x2ac279(0xef)][_0x12eed6]);}uploadFileSP(_0x2ac279(0x12d),_0x24f652,_0x418c4c,_0x3e4c55,_0x34a470);}}catch(_0x5b9b33){alert(_0x2ac279(0x154)),waitingDialog[_0x2ac279(0x1b0)]();}}function getFileBuffer(_0x4683af){var _0x3f6032=a88_0x41b7a8,_0x18937e=_0x4f34ab,_0x137ff4=$[_0x3f6032(0xe3)](),_0x205315=new FileReader();return _0x205315[_0x18937e(0xfd)]=function(_0x1903d9){var _0x17e9e1=_0x18937e;_0x137ff4[_0x17e9e1(0x15c)](_0x1903d9[_0x17e9e1(0x16d)][_0x17e9e1(0x115)]);},_0x205315['onerror']=function(_0x1168b2){var _0x184f6=_0x18937e;_0x137ff4[_0x184f6(0x138)](_0x1168b2[_0x184f6(0x16d)][_0x184f6(0x10e)]);},_0x205315[_0x18937e(0x13f)](_0x4683af),_0x137ff4[_0x18937e(0x1b3)]();}function DeleteItemAttachment(_0x20368f,_0x1926f4){var _0x5c57c0=a88_0x41b7a8,_0x46df24=_0x4f34ab,_0x5e561c=$[_0x46df24(0x110)](),_0xf1e69e=_spPageContextInfo[_0x46df24(0x1c9)]+_0x46df24(0x132)+_0x20368f+_0x46df24(0x126)+_0x1926f4+_0x46df24(0xed);return $[_0x46df24(0x100)]({'url':_0xf1e69e,'type':'DELETE','contentType':_0x5c57c0(0x13c),'headers':{'X-RequestDigest':$(_0x46df24(0x10c))['val'](),'X-HTTP-Method':_0x46df24(0x18d),'Accept':_0x46df24(0x140)},'success':function(_0x694505){var _0x55e760=_0x5c57c0;_0x5e561c[_0x55e760(0x119)](_0x694505);},'error':function(_0x4e82a3){var _0x5a1af6=_0x46df24;waitingDialog[_0x5a1af6(0x1b0)](),_0x5e561c[_0x5a1af6(0x138)](JSON[_0x5a1af6(0x10d)](_0x4e82a3));}}),_0x5e561c[_0x46df24(0x1b3)]();}function uploadFileSP(_0x1568cf,_0x2b6651,_0x5f0410,_0x7085a4,_0x46ad1f){var _0x21d2e9=_0x4f34ab,_0x29dbd0=0x0,_0x2afeed=$['Deferred'](),_0x17019f='',_0x178b62=_0x5f0410[0x0],_0x3fe6c6=getFileBuffer(_0x178b62);return _0x3fe6c6[_0x21d2e9(0x196)](function(_0x7c9753,_0x5da092,_0x289bc9){var _0x4f9f77=a88_0x4a66,_0x251f0b=_0x21d2e9,_0x5ef0d1=new Uint8Array(_0x7c9753),_0x485766=new SP[(_0x251f0b(0x143))](),_0x5d1f87=_spPageContextInfo[_0x251f0b(0x1c9)]+_0x251f0b(0x1a6)+_0x1568cf+_0x251f0b(0x12c)+_0x2b6651+_0x4f9f77(0x165)+_0x46ad1f+'\x27)',_0x15e3ef=0x0;$[_0x251f0b(0x100)]({'url':_0x5d1f87,'type':_0x251f0b(0x10a),'processData':![],'contentType':_0x4f9f77(0x13c),'data':_0x7c9753,'headers':{'accept':_0x251f0b(0x140),'X-RequestDigest':$(_0x251f0b(0x10c))[_0x251f0b(0x104)](),'content-length':_0x7c9753[_0x4f9f77(0xc0)]},'success':function(_0x106b75){var _0x57346e=_0x4f9f77,_0x3d7232=_0x251f0b;_0x29dbd0++,_0x17019f=_0x29dbd0,_0x5f0410[_0x3d7232(0x1a7)](),_0x5f0410[_0x3d7232(0x182)]>0x0?uploadFileSP(_0x3d7232(0x12d),_0x2b6651,_0x5f0410,_0x5f0410[_0x3d7232(0x182)]):(alert(_0x3d7232(0x160)),$(_0x57346e(0xf7))[_0x3d7232(0x192)](_0x3d7232(0x129)));},'error':function(_0x1c9db5){var _0x536c94=_0x251f0b;waitingDialog[_0x536c94(0x1b0)](),alert(_0x536c94(0x1c6));}}),_0x2afeed[_0x251f0b(0x15c)](_0x17019f);}),_0x3fe6c6[_0x21d2e9(0x15b)](function(_0x15ac61){var _0x3f335d=_0x21d2e9;waitingDialog[_0x3f335d(0x1b0)](),_0x2afeed[_0x3f335d(0x138)](_0x15ac61);}),_0x2afeed[_0x21d2e9(0x1b3)]();}function logout(){var _0x40b96b=a88_0x41b7a8,_0x5ef5d1=_0x4f34ab,_0x1038c1=confirm(_0x5ef5d1(0x15d));_0x1038c1&&(window['location'][_0x5ef5d1(0x19b)]=_spPageContextInfo[_0x40b96b(0x102)]+_0x5ef5d1(0x164));}function GetExtrenalEmployees(){var _0x40c622=a88_0x41b7a8,_0x4f3822=_0x4f34ab,_0x57690b=_spPageContextInfo[_0x40c622(0x109)]+_0x4f3822(0xf2)+_spPageContextInfo[_0x40c622(0x162)]+_0x40c622(0x121),_0x1e3f98=$[_0x4f3822(0x110)]();return $[_0x4f3822(0x100)]({'url':_0x57690b,'headers':{'Accept':_0x4f3822(0x140)},'async':![],'success':function(_0x55ef1c){var _0x4a4e2a=_0x40c622,_0x443ef0=_0x4f3822;_0x1e3f98[_0x4a4e2a(0x119)](_0x55ef1c['d'][_0x443ef0(0x14e)]);},'error':function(_0x58c2cd){var _0x49a1e1=_0x40c622,_0x228b03=_0x4f3822;waitingDialog[_0x228b03(0x1b0)](),console[_0x228b03(0x103)](_0x58c2cd),_0x1e3f98[_0x49a1e1(0xd1)](_0x58c2cd);}}),_0x1e3f98[_0x4f3822(0x1b3)]();}function GetCompanyName(){var _0x110694=_0x4f34ab,_0x2c4692=_spPageContextInfo[_0x110694(0x1c9)]+_0x110694(0x172),_0x22eca9=$[_0x110694(0x110)]();return $[_0x110694(0x100)]({'url':_0x2c4692,'headers':{'Accept':_0x110694(0x140)},'async':![],'success':function(_0x2002f8){var _0x53cf95=a88_0x4a66,_0x45197e=_0x110694;_0x22eca9[_0x53cf95(0x119)](_0x2002f8['d'][_0x45197e(0x14e)]);},'error':function(_0x2cc650){var _0x1b59da=a88_0x4a66,_0x2b2fb1=_0x110694;waitingDialog[_0x2b2fb1(0x1b0)](),console[_0x1b59da(0xc4)](_0x2cc650),_0x22eca9[_0x2b2fb1(0x138)](_0x2cc650);}}),_0x22eca9[_0x110694(0x1b3)]();}function onloadGetItem(){var _0x34420c=a88_0x41b7a8,_0x3e3353=_0x4f34ab;$(_0x3e3353(0x1cd))[_0x3e3353(0x102)](_0x3e3353(0x13b)),$[_0x34420c(0x136)](GetExtrenalEmployees(),GetCompanyName())[_0x34420c(0x17f)](function(_0x20ed78,_0x3d3d22){var _0x42796a=_0x34420c,_0x4cfe9d=_0x3e3353;if(_0x20ed78[_0x4cfe9d(0x182)]>0x0){var _0x2c4f2b=window[_0x42796a(0xe6)][_0x4cfe9d(0x152)],_0x298d7a=_0x2c4f2b['split']('/')[_0x4cfe9d(0x15f)](),_0x1e84d5='';if(_0x20ed78[0x0][_0x4cfe9d(0x167)]==_0x42796a(0x134))_0x1e84d5=_0x4cfe9d(0x14c);else _0x20ed78[0x0]['TemplateType']==_0x4cfe9d(0x11c)?_0x1e84d5=_0x4cfe9d(0x169):_0x1e84d5=_0x4cfe9d(0x139);if(_0x298d7a[_0x4cfe9d(0x155)]()==_0x1e84d5[_0x4cfe9d(0x155)]()){$(_0x4cfe9d(0x11f))[_0x4cfe9d(0x102)](''),$(_0x4cfe9d(0x11f))[_0x42796a(0x12a)](_spPageContextInfo[_0x4cfe9d(0x1a8)]),$(_0x4cfe9d(0x195))[_0x4cfe9d(0x1b0)](),userDocumenturl=_0x20ed78[0x0][_0x4cfe9d(0x109)],currentClientName=_0x20ed78[0x0]['Client_Name'][_0x4cfe9d(0x14f)],getCompanyId(_0x20ed78[0x0][_0x4cfe9d(0x1b6)]['Id']);if(userDocumenturl==null){waitingDialog[_0x4cfe9d(0x1b0)](),$(_0x4cfe9d(0x14d))[_0x4cfe9d(0x1b0)]();var _0x37fe33=_0x4cfe9d(0x11a)+_0x4cfe9d(0x188)+'<div\x20class=\x22panel-body\x22\x20style=\x22padding:60px;\x22><div\x20class=\x22row\x20text-center\x22><br>'+_0x4cfe9d(0x174);$(_0x4cfe9d(0x112))[_0x4cfe9d(0x118)]()[_0x4cfe9d(0x190)](_0x37fe33);}else UrlExists(userDocumenturl,function(_0x1a6fb6){var _0x381bfe=_0x42796a,_0x12370e=_0x4cfe9d;if(_0x1a6fb6===0xc8)$(_0x381bfe(0x108))[_0x381bfe(0x16c)](),GetLibarayDetails('',userDocumenturl,_0x20ed78[0x0][_0x12370e(0x1b6)][_0x12370e(0x14f)],'',_0x12370e(0x1b7));else{waitingDialog[_0x12370e(0x1b0)](),$(_0x12370e(0x14d))[_0x12370e(0x1b0)](),$(_0x12370e(0xf8))[_0x12370e(0x162)](_0x12370e(0x133));var _0x308dcd='<div\x20class=\x22col-md-12\x22>'+_0x12370e(0x188)+_0x12370e(0x1b9)+_0x12370e(0x174);$(_0x12370e(0x112))[_0x12370e(0x118)]()[_0x12370e(0x190)](_0x308dcd);}});dateTime=ShowCommonStandardDateFormat(todayDate),$('#LastLogin')[_0x4cfe9d(0x102)](dateTime);var _0x1fa727=_0x20ed78[0x0][_0x4cfe9d(0x123)],_0x45ae5a=new Date(_0x1fa727);_0x45ae5a=new Date(_0x45ae5a);var _0x308c74=Math[_0x4cfe9d(0x17e)](_0x45ae5a[_0x4cfe9d(0x171)]()-todayDate[_0x4cfe9d(0x171)]())/one_day;if(_0x308c74>0x0){UserItemid=_0x20ed78[0x0]['ID'],$(_0x4cfe9d(0x113))[_0x4cfe9d(0x102)](''),$('#txtType')[_0x4cfe9d(0x102)](_0x20ed78[0x0]['CollaborationType']),$(_0x4cfe9d(0x125))['text'](_0x3d3d22[0x0][_0x4cfe9d(0x1b2)]),$(_0x4cfe9d(0x179))[_0x42796a(0x157)](_0x4cfe9d(0x1ca),_0x3d3d22[0x0][_0x4cfe9d(0xf3)][_0x4cfe9d(0x127)]),$(_0x4cfe9d(0x128))[_0x4cfe9d(0x102)](_0x20ed78[0x0][_0x4cfe9d(0x1b6)][_0x42796a(0xd4)]),$(_0x4cfe9d(0x146))[_0x4cfe9d(0x102)](_0x20ed78[0x0][_0x42796a(0x10e)]);if(_0x20ed78[0x0][_0x4cfe9d(0x16c)][_0x4cfe9d(0x14e)][_0x4cfe9d(0x182)]>0x0){var _0x1b46d3=_0x20ed78[0x0][_0x4cfe9d(0x16c)][_0x4cfe9d(0x14e)][0x0][_0x4cfe9d(0x13c)];FileTitle=_0x20ed78[0x0][_0x4cfe9d(0x16c)][_0x4cfe9d(0x14e)][0x0][_0x4cfe9d(0x1bf)],IsprofilePic=!![],$(_0x4cfe9d(0xe7))[_0x4cfe9d(0x189)](_0x4cfe9d(0x1ca),_0x1b46d3),$(_0x4cfe9d(0x13e))[_0x4cfe9d(0x189)](_0x4cfe9d(0x1ca),_0x1b46d3);}else $(_0x4cfe9d(0xe7))['attr'](_0x4cfe9d(0x1ca),_spPageContextInfo[_0x42796a(0x109)]+_0x4cfe9d(0x191)+escapeProperly(_0x20ed78[0x0][_0x42796a(0x150)])),$(_0x4cfe9d(0x13e))[_0x4cfe9d(0x189)](_0x42796a(0x14f),_spPageContextInfo[_0x4cfe9d(0x1c9)]+_0x4cfe9d(0x191)+escapeProperly(_0x20ed78[0x0][_0x4cfe9d(0x136)]));var _0x330dea='';for(var _0x514d02=0x0;_0x514d02<_0x20ed78[0x0][_0x4cfe9d(0x18a)][_0x42796a(0xb9)][_0x4cfe9d(0x182)];_0x514d02++){_0x514d02==0x0?_0x330dea=_0x20ed78[0x0][_0x4cfe9d(0x18a)][_0x4cfe9d(0x14e)][_0x514d02][_0x4cfe9d(0x14f)]:_0x330dea+=_0x4cfe9d(0xfc)+_0x20ed78[0x0][_0x4cfe9d(0x18a)][_0x4cfe9d(0x14e)][_0x514d02][_0x4cfe9d(0x14f)];}$(_0x4cfe9d(0x16f))[_0x4cfe9d(0x104)](_0x20ed78[0x0]['ReferenceCode']),$(_0x4cfe9d(0x163))[_0x42796a(0x14c)](_0x330dea),$(_0x4cfe9d(0x17d))[_0x4cfe9d(0x104)](_0x20ed78[0x0][_0x42796a(0x191)][_0x4cfe9d(0x14f)]),$(_0x4cfe9d(0x116))[_0x4cfe9d(0x104)](_0x20ed78[0x0][_0x42796a(0x150)]),$('#txtDesignation')[_0x4cfe9d(0x104)](_0x20ed78[0x0][_0x4cfe9d(0x19c)]),$(_0x4cfe9d(0x141))[_0x42796a(0x14c)](_0x20ed78[0x0][_0x4cfe9d(0x17c)][_0x4cfe9d(0x14f)]),$(_0x42796a(0x129))[_0x4cfe9d(0x104)](_0x20ed78[0x0][_0x4cfe9d(0x181)]);}else $(_0x4cfe9d(0x166))[_0x4cfe9d(0x102)](''),$(_0x4cfe9d(0x1ac))[_0x4cfe9d(0x1b0)](),alert(_0x4cfe9d(0x1ab)),waitingDialog[_0x4cfe9d(0x1b0)]();}else alert(_0x4cfe9d(0x183)),window[_0x4cfe9d(0x114)][_0x4cfe9d(0x117)](_spPageContextInfo[_0x4cfe9d(0x1c9)]+_0x4cfe9d(0x14b));}else $(_0x42796a(0x197))[_0x4cfe9d(0x102)](''),$(_0x4cfe9d(0x1ac))[_0x4cfe9d(0x1b0)](),$(_0x4cfe9d(0x195))[_0x4cfe9d(0x1b0)](),alert(_0x42796a(0xc8)),waitingDialog[_0x4cfe9d(0x1b0)]();});}function UrlExists(_0x477668,_0x4a6578){var _0xb6aae1=a88_0x41b7a8,_0xbdf23d=_0x4f34ab;jQuery[_0xbdf23d(0x100)]({'url':_0x477668,'dataType':'text','type':_0xb6aae1(0xf9),'complete':function(_0x418895){var _0x5c9667=_0xbdf23d;if(typeof _0x4a6578===_0x5c9667(0x1bd))_0x4a6578[_0x5c9667(0xea)](this,[_0x418895[_0x5c9667(0x180)]]);}});}function ActionBtnControls(){var _0x27f011=a88_0x41b7a8,_0x48e72b=_0x4f34ab;arrPermission=[],$('#divNew')[_0x48e72b(0x1a5)](),$(_0x48e72b(0x1bb))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x156))[_0x27f011(0x16c)](),$(_0x48e72b(0x1a0))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x12e))[_0x48e72b(0x1b0)](),$(_0x27f011(0x107))[_0x48e72b(0x1b0)]();if(currentSectionType==_0x48e72b(0x1b7)||currentSectionType==_0x48e72b(0x13a))$(_0x48e72b(0x158))['show'](),$(_0x27f011(0x18c))[_0x27f011(0x16c)](),$(_0x48e72b(0x1bb))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x1a3))[_0x27f011(0x16c)](),$(_0x48e72b(0x156))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x1c5))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x1c7))[_0x48e72b(0x1a5)](),$(_0x27f011(0x18e))[_0x48e72b(0x1b0)](),$(_0x27f011(0x148))[_0x27f011(0x16c)](),$(_0x27f011(0x11f))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x153))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x15a))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x13d))[_0x48e72b(0x1b0)](),$(_0x48e72b(0xe8))[_0x48e72b(0x1b0)](),$('.btnAppFilter')[_0x48e72b(0x1b0)](),$(_0x48e72b(0x145))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1c8))[_0x48e72b(0x1b0)]();else{if(currentSectionType==_0x48e72b(0x1c4)||currentSectionType==_0x27f011(0x16e))$('#divDownloadApp')[_0x48e72b(0x1a5)](),$(_0x48e72b(0x15a))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x122))[_0x48e72b(0x1a5)](),$('.otherSectAct')['show'](),$(_0x48e72b(0x1aa))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x158))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1bb))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1a3))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x156))[_0x27f011(0x125)](),$(_0x48e72b(0x1c5))[_0x48e72b(0x1b0)](),$(_0x27f011(0x18e))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x134))[_0x27f011(0x16c)](),$(_0x48e72b(0x153))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x13d))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x145))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1c8))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1c7))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x12f))['hide'](),currentSectionType==_0x48e72b(0x1c4)?($(_0x48e72b(0x15a))[_0x27f011(0x16c)](),$(_0x48e72b(0x13d))[_0x48e72b(0x1b0)]()):($(_0x48e72b(0x15a))[_0x48e72b(0x1b0)](),$('#DivAppOutCount')[_0x48e72b(0x1a5)]());else{if(currentSectionType==_0x48e72b(0x175)||currentSectionType==_0x48e72b(0x1bc)||currentSectionType==_0x48e72b(0x142)||$(_0x48e72b(0x1c1))[_0x27f011(0x139)](_0x48e72b(0x176))['attr']('id')==_0x48e72b(0x108)){$(_0x48e72b(0x158))[_0x48e72b(0x1b0)](),$(_0x48e72b(0xe8))[_0x27f011(0x125)](),$(_0x48e72b(0x122))['hide'](),$(_0x48e72b(0x1bb))[_0x48e72b(0x1b0)](),$('#divDownload')[_0x27f011(0x16c)](),$(_0x27f011(0x181))[_0x48e72b(0x1b0)](),$('#divDelete')[_0x48e72b(0x1b0)](),$(_0x48e72b(0x150))[_0x27f011(0x125)](),$(_0x48e72b(0x12f))['hide'](),$(_0x27f011(0x187))['hide'](),$(_0x48e72b(0x145))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x168))[_0x27f011(0x16c)](),$(_0x48e72b(0x1c8))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x137))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x14a))['show'](),$('.otherSectAct')['hide'](),$(_0x48e72b(0x134))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x15a))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x13d))[_0x27f011(0x125)](),$(_0x27f011(0xf4))[_0x27f011(0x125)](),$(_0x48e72b(0x12e))[_0x48e72b(0x1b0)]();if(currentSectionType=='SharedWithMe')$(_0x48e72b(0x153))[_0x48e72b(0x1a5)](),$(_0x48e72b(0x1a0))[_0x48e72b(0x1a5)]();else currentSectionType==_0x27f011(0x18f)?($(_0x27f011(0x112))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x12e))[_0x48e72b(0x1a5)]()):($('#AddArchiveBox')[_0x48e72b(0x1b0)](),$(_0x27f011(0xc9))[_0x48e72b(0x1b0)](),$(_0x48e72b(0x1c8))[_0x48e72b(0x1a5)]());}}}}function getCompanyId(_0x27733f){var _0x4e4500=a88_0x41b7a8,_0x2413d4=_0x4f34ab,_0x17e8d1=_0x2413d4(0x15e)+_0x27733f+'\x27\x20';$[_0x2413d4(0x186)](getItemsWithQuery(_0x2413d4(0x119),_0x17e8d1,_spPageContextInfo[_0x2413d4(0x1c9)]))[_0x4e4500(0x17f)](function(_0x46b0cc){var _0x363bb9=_0x2413d4;_0x46b0cc[_0x363bb9(0x182)]>0x0&&(Logged_CompanyId=_0x46b0cc[0x0][_0x363bb9(0x10f)]['Id']);});}function ApplyDarkThemes(){var _0x12a2a1=a88_0x41b7a8,_0x5d37cd=_0x4f34ab;$(_0x5d37cd(0x173))['is'](_0x5d37cd(0x131))?($(document[_0x5d37cd(0x124)])[_0x5d37cd(0x19f)](_0x5d37cd(0xf6)),$(_0x5d37cd(0x19d))['text'](_0x5d37cd(0x1be)),$(_0x5d37cd(0x161))[_0x5d37cd(0x190)](_0x5d37cd(0xf1)),$(document[_0x5d37cd(0x124)])[_0x5d37cd(0x189)](_0x5d37cd(0x198),_0x12a2a1(0x188)),document[_0x5d37cd(0x16b)]=_0x5d37cd(0x130)+_0x5d37cd(0x17b),createCookie(_0x5d37cd(0x130),_0x12a2a1(0x10d),0x3e8)):($(document[_0x5d37cd(0x124)])[_0x5d37cd(0x106)]('dark-theme'),$(_0x5d37cd(0x19d))['text'](_0x5d37cd(0xff)),$(_0x5d37cd(0x161))[_0x5d37cd(0x190)](_0x12a2a1(0x12c)),$(document[_0x5d37cd(0x124)])[_0x5d37cd(0x189)](_0x5d37cd(0x198),_0x5d37cd(0x11d)),document[_0x5d37cd(0x16b)]=_0x5d37cd(0x130)+_0x5d37cd(0x17b),createCookie('LightDarkMode',_0x5d37cd(0x159),0x3e8));}function _0x3380(_0x313c1f,_0x45fdf8){var _0x2051f5=_0x597a();return _0x3380=function(_0xab91a7,_0x40e50a){_0xab91a7=_0xab91a7-0xe7;var _0x51738a=_0x2051f5[_0xab91a7];return _0x51738a;},_0x3380(_0x313c1f,_0x45fdf8);}function createCookie(_0x404dd1,_0x5d5a2f,_0x43854f){var _0x1de53b=a88_0x41b7a8,_0xd2d3df=_0x4f34ab;if(_0x43854f){var _0x5799ff=new Date();_0x5799ff[_0xd2d3df(0x1a9)](_0x5799ff[_0x1de53b(0x164)]()+_0x43854f*0x18*0x3c*0x3c*0x3e8);var _0xcdd9e9=_0xd2d3df(0x178)+_0x5799ff[_0xd2d3df(0x111)]();}else var _0xcdd9e9='';document[_0x1de53b(0x10c)]=_0x404dd1+'='+_0x5d5a2f+_0xcdd9e9+_0xd2d3df(0x10b);};function getCookie(_0x4b1ff0){var _0x21b11d=a88_0x41b7a8,_0x39bbf3=_0x4f34ab,_0x2ae1e2=_0x4b1ff0+'=',_0x4cebb4=document[_0x39bbf3(0x16b)][_0x21b11d(0x15b)](';');for(var _0x3a3eaa=0x0;_0x3a3eaa<_0x4cebb4[_0x39bbf3(0x182)];_0x3a3eaa++){var _0x44a94c=_0x4cebb4[_0x3a3eaa];while(_0x44a94c[_0x39bbf3(0x16a)](0x0)=='\x20')_0x44a94c=_0x44a94c[_0x39bbf3(0x149)](0x1,_0x44a94c[_0x39bbf3(0x182)]);if(_0x44a94c[_0x21b11d(0xe7)](_0x2ae1e2)==0x0)return _0x44a94c[_0x21b11d(0x170)](_0x2ae1e2[_0x39bbf3(0x182)],_0x44a94c[_0x39bbf3(0x182)]);}return null;}function SetStoredTheme(){var _0x382538=a88_0x41b7a8,_0x5ad779=_0x4f34ab,_0x503d01=getCookie(_0x5ad779(0x130)),_0x72aa3=window[_0x5ad779(0x114)][_0x5ad779(0x152)],_0x4952d1=_0x72aa3[_0x5ad779(0x105)]('/')[_0x382538(0x11a)]();_0x503d01==_0x5ad779(0x18e)?($(_0x5ad779(0x173))[_0x5ad779(0x1b4)](_0x5ad779(0x1cc),!![]),$(document['body'])[_0x5ad779(0x19f)](_0x5ad779(0xf6)),$(_0x5ad779(0x19d))[_0x5ad779(0x102)](_0x5ad779(0x1be)),$(_0x382538(0x118))[_0x5ad779(0x190)](_0x5ad779(0xf1)),$(document[_0x5ad779(0x124)])[_0x5ad779(0x189)](_0x382538(0x132),_0x5ad779(0x157))):($(document[_0x5ad779(0x124)])[_0x382538(0x15c)](_0x5ad779(0xf6)),$('#dark-light-side-opt\x20.dark-theme-btn-label')[_0x5ad779(0x102)](_0x5ad779(0xff)),$(_0x5ad779(0x161))[_0x5ad779(0x190)](_0x5ad779(0xeb)),$(document[_0x5ad779(0x124)])[_0x5ad779(0x189)](_0x5ad779(0x198),_0x5ad779(0x11d)));}function ChangeLabels(){var _0xe420a3=_0x4f34ab,_0xd5cb24=_0xe420a3(0x12b);if(LabelDefaultLangauge[_0xe420a3(0x182)]==0x0){var _0x27fd5c=_0xe420a3(0x11e);$[_0xe420a3(0x186)](getItemsWithQuery(_0xe420a3(0x12a),_0x27fd5c,_spPageContextInfo[_0xe420a3(0x1c9)]))[_0xe420a3(0x196)](function(_0x3a1d2e){try{LabelDefaultLangauge=_0x3a1d2e,SetDMSText(_0x3a1d2e,_0xd5cb24);}catch(_0x2eac62){alert(_0x2eac62);}});}else SetDMSText(LabelDefaultLangauge,_0xd5cb24);}function a88_0xd866(){var _0x30f3b8=['CorporateName','#dark-light-side-opt\x20span.material-icons','resolve','pop','#dark-light-side-opt\x20.dark-theme-btn-label','labelText_Actual','function','652140GfAmZd','.fixed-table-footer','readAsDataURL','\x27\x20and\x20Status\x20eq\x20\x27Active\x27\x20','Jun','error','LabelsSettings','hide','#txtEmail','result','toGMTString','#txtOrganization','text','Dark\x20Mode','light_mode','getDate','button','538256rOipkt','/_layouts/signout.aspx','9AWQfQX','style','getHours','Template2','1658896XKjinI','when','/_api/lists/GetByTitle(\x27','\x20Access\x20Denied.\x0a\x20The\x20access\x20period\x20has\x20expired.','find','safari','Guestportal2.aspx','application/json;odata=verbose','#s4-ribbonrow','#userVendor','Nov','/_api/web/lists/GetByTitle(\x27CompanySettings\x27)/items','Url','#dark-theme-btn','pushNotification','ApprovalInbox','replace','onload','value','.otherSectAct','CompanyID','prop','FileName','val','#divUpload','#groupDocumentGridtbody','src','email','[data-localize]','<div\x20class=\x22panel-body\x22\x20style=\x22padding:60px;\x22><div\x20class=\x22row\x20text-center\x22><br>','#extuserPic','Jan','#txtMembers','#ChangeUploadPic','attr','round','length','#divRevokeSharedTbl','split','removeClass','3128368wMqFVz','/_api/web/lists/GetByTitle(\x27ExternalUsers\x27)/items?$top=1&$select=*,Client_Name/Title,Client_Name/Id,ID,LoginName/Title,InternalStakeholders/Title,Supervisor/Title,AttachmentFiles\x20&$expand=LoginName,InternalStakeholders,Supervisor,AttachmentFiles,Client_Name&$filter=\x20email\x20eq\x20\x27','#txtName','#divRefreshSharedTbl','Designation','userLoginName','May','getTime',')/AttachmentFiles/add(FileName=\x27','LightMode','stringify','61919yjiYsq','HasResolvedUsers','Jul','3377717jbUCIO','show','getMonth','ApprovalOutbox','/_layouts/15/userphoto.aspx?accountname=','substring','Light\x20Mode','toggle','Template3','#DivAppInCount','SharedWithMe','shift','AttachmentFiles','getFullYear','GuestDocuments','target','Aug','empty','#divDelete','_TopSpan','done','9SpZEor','#divProperties','promise','readAsArrayBuffer','userDisplayName','ServerRelativeUrl','href','#divFilter','background-color:\x20hsla(228,\x205%,\x2022%,\x201)\x20!important','985800AsUhtZ','2087064FwmMPy','HTMLElement','#divShare','dark_mode','.ShareSectionAct','Archive','ajax','LoginName','#divDownloadApp','li.active','please\x20Upload\x20file','#DivAppFilter','=;\x20Path=/;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;','#contentBox','Oct','Mar','null','status','results','[object\x20SafariRemoteNotification]','Idea\x20has\x20been\x20submitted\x20but\x20some\x20files\x20failed\x20to\x20upload.','addClass','19icYbDS','SharedByMe',':checked','byteLength','#txtReferenceNumber','ready','\x20,\x20','log','You\x20are\x20not\x20authorized\x20to\x20access\x20Digital\x20Workplace','documentMode','#btnAdduser','\x20Access\x20Denied.\x0a\x20You\x20are\x20not\x20an\x20authorized\x20user.','#divPendingAck','Sep','?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title\x20eq\x20\x27DMS\x27\x20','name','Reassigned','modal','checked','#txtCompany','reject','Feb','/_api/web/lists/GetByTitle(\x27ExternalUsers\x27)/GetItemById(','Title','#removeArchiveBox','files','data-localize','Base64EncodedByteArray','toLowerCase','7839010XvITdu','push','#DivAppOutCount','ul#accordion','Your\x20picture\x20has\x20been\x20update\x20successfully!','html','getMinutes','pathname','<div\x20class=\x22panel\x20panel-default\x20shadow2\x22\x20style=\x22margin:100px;\x22>','Deferred','CompanyLogo','#divNew','location','indexOf','#titlerow','ClientMaster','580YZsgLE','lableText_Converted','toString','#DMSTable','SPClientPeoplePicker','49918ARVWDR','test','#__REQUESTDIGEST','DefaultLanguage','5ZVcCAh','#onlyforGroup','DocumentLibrary','trim','#modal_profile','dark-theme','GET','fail','<span><h2\x20class=\x22text-center\x22>Project\x20site\x20has\x20been\x20deleted.\x20Please\x20contact\x20administrator.</h2></span>','IsEmpty','Guestportal3.aspx','#headerimageprofile','\x27)/items(','.headdingLinks','Key','webServerRelativeUrl','apply','<div\x20class=\x22col-md-12\x22>','getSeconds','hasClass','#DivAppExport','.HeaderArea','webAbsoluteUrl','634124cdgvOi','HasInputError','cookie','DarkMode','Organization','Multilingual\x20:\x20','LightDarkMode','20872770avxgSx','#AddArchiveBox','18orykaY','My\x20Documents','<tr><td\x20colspan=\x278\x27\x20style=\x27text-align:\x20center;\x27>Project\x20site\x20has\x20been\x20deleted.\x20Please\x20contact\x20administrator.</td></tr>','body'];a88_0xd866=function(){return _0x30f3b8;};return a88_0xd866();}function SetDMSText(_0x151863,_0x2da112){var _0xd39208=_0x4f34ab;labels=[],$[_0xd39208(0x17f)](_0x151863,function(_0x4537c1,_0x54fc0a){var _0x280d81=_0xd39208,_0x5802db=_0x54fc0a[_0x280d81(0x16e)],_0x496c94=_0x54fc0a[_0x2da112];if(_0x496c94==null||_0x496c94==''||_0x496c94==undefined)_0x496c94=_0x54fc0a['DefaultLanguage'];var _0x878de2={'labelText_Actual':_0x5802db,'lableText_Converted':_0x496c94};labels[_0x280d81(0x1b5)](_0x878de2);}),DetectBrowser();}function DetectBrowser(){var _0x6c1137=a88_0x41b7a8,_0x3b3584=_0x4f34ab,_0x59d073=/constructor/i[_0x6c1137(0xf0)](window[_0x3b3584(0xfb)])||function(_0x463956){var _0x342e86=_0x3b3584;return _0x463956[_0x342e86(0xfa)]()===_0x342e86(0x199);}(!window[_0x3b3584(0x1b8)]||typeof safari!==_0x3b3584(0x1ba)&&safari[_0x3b3584(0x1cb)]),_0x5e9468=![]||!!document[_0x3b3584(0x194)];_0x59d073||_0x5e9468?ChangeWebPartsHeadings_OldBrowser():ChangeWebPartsHeadings();}function ChangeWebPartsHeadings(){var _0x353745=_0x4f34ab;try{$(_0x353745(0x170))[_0x353745(0x17f)](function(_0xef5083,_0x56b5e5){var _0x422384=a88_0x4a66,_0x2d61a1=_0x353745;try{var _0x4db8ee=$(this)[_0x422384(0x157)](_0x422384(0xd7)),_0x57d1ee=labels[_0x422384(0x139)](function(_0x417b5e){var _0x2c1730=_0x3380;return _0x417b5e[_0x2c1730(0x121)][_0x2c1730(0xf9)]()===_0x4db8ee;})[_0x2d61a1(0x18c)];if($(this)[_0x422384(0x139)]('a')[_0x2d61a1(0x182)]>0x0)$(this)['find']('a')[_0x2d61a1(0x190)](_0x57d1ee);else{if($(this)[_0x2d61a1(0xf5)]('b')[_0x2d61a1(0x182)]>0x0)$(this)[_0x422384(0x139)]('b')[_0x2d61a1(0x190)](_0x57d1ee);else{if($(this)[_0x2d61a1(0xf5)]('p')['length']>0x0)$(this)['find']('p')[_0x2d61a1(0x190)](_0x57d1ee);else $(this)[_0x2d61a1(0x18f)]('button')?$(this)[_0x2d61a1(0x189)](_0x2d61a1(0x17a),_0x57d1ee):$(this)[_0x2d61a1(0x190)](_0x57d1ee);}}}catch(_0x100e1b){console[_0x2d61a1(0x103)](_0x2d61a1(0x184)+_0x4db8ee+_0x2d61a1(0x120)),$(this)[_0x422384(0x157)](_0x2d61a1(0x17a),$(this)[_0x2d61a1(0x104)]());}});}catch(_0x4b5829){console[_0x353745(0x103)](_0x353745(0x184)+_0x4b5829);}}function ChangeWebPartsHeadings_OldBrowser(){var _0x506917=a88_0x41b7a8,_0xf4830=_0x4f34ab;try{$(_0xf4830(0x170))[_0xf4830(0x17f)](function(_0x1f71be,_0x4ea94a){var _0xb5131a=a88_0x4a66,_0x27f95d=_0xf4830;try{var _0x2da1b5=$(this)[_0x27f95d(0x189)]('data-localize'),_0x3bd049=findObjectByKey(labels,_0x2da1b5,_0x2da1b5);if($(this)[_0x27f95d(0xf5)]('a')[_0xb5131a(0x159)]>0x0)$(this)[_0x27f95d(0xf5)]('a')[_0x27f95d(0x190)](_0x3bd049);else{if($(this)[_0x27f95d(0xf5)]('b')[_0x27f95d(0x182)]>0x0)$(this)['find']('b')[_0x27f95d(0x190)](_0x3bd049);else{if($(this)[_0xb5131a(0x139)]('p')[_0xb5131a(0x159)]>0x0)$(this)[_0xb5131a(0x139)]('p')[_0xb5131a(0xdf)](_0x3bd049);else $(this)[_0x27f95d(0x18f)](_0xb5131a(0x12e))?_0x3bd049!=null&&_0x3bd049!=_0x27f95d(0xfe)&&_0x3bd049!=''?$(this)[_0x27f95d(0x189)](_0x27f95d(0x17a),_0x3bd049):$(this)[_0x27f95d(0x189)](_0xb5131a(0x147),$(this)[_0xb5131a(0x14c)]()):_0x3bd049!=null&&_0x3bd049!=_0x27f95d(0xfe)&&_0x3bd049!=''?$(this)[_0x27f95d(0x190)](_0x3bd049):$(this)[_0x27f95d(0x190)]($(this)[_0x27f95d(0x102)]());}}}catch(_0x4e2def){console[_0x27f95d(0x103)](_0x27f95d(0x184)+_0x2da1b5+_0x27f95d(0x120)),$(this)[_0x27f95d(0x189)](_0x27f95d(0x17a),$(this)[_0x27f95d(0x104)]());}});}catch(_0x10f63f){console[_0x506917(0xc4)](_0xf4830(0x184)+_0x10f63f);}}function findObjectByKey(_0x4889cc,_0x8bae4,_0x4cad7c){var _0x432eff=a88_0x41b7a8,_0x3d0589=_0x4f34ab;for(var _0x4ce50b=0x0;_0x4ce50b<_0x4889cc[_0x432eff(0x159)];_0x4ce50b++){if(_0x4889cc[_0x4ce50b][_0x3d0589(0x121)]==_0x4cad7c)return _0x4889cc[_0x4ce50b][_0x3d0589(0x18c)];}return null;}
+var lastLogin = _spPageContextInfo;
+var UserItemid, FileTitle, IsprofilePic = false;
+var todayDate = new Date();
+var UserEmail;
+var userDocumenturl;
+// One day Time in ms (milliseconds) 
+var one_day = 1000 * 60 * 60 * 24;
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var currentClientName = '';
+var Logged_CompanyId = '';
+var LabelDefaultLangauge = [];
+var labels = [];
+var currentTemplate="";
+var Logged_CompanySiteURlg='';//2 march 23
+
+function ShortDateTime(date, IsTime) {
+
+    var date = new Date(date);
+    var aaaa = date.getFullYear();
+    var gg = date.getDate();
+    var mm = (date.getMonth());
+
+    if (gg < 10)
+        gg = "0" + gg;
+
+    var cur_day = gg + "-" + months[mm] + "-" + aaaa;
+
+    var hours = date.getHours()
+    var suffix = hours >= 12 ? "PM" : "AM";
+    var hour = hours > 12 ? hours - 12 : hours;
+    var hour = hour < 10 ? "0" + hour : hour;
+    var minutes = date.getMinutes()
+    var seconds = date.getSeconds();
+
+    if (hours < 10)
+        hours = "0" + hours;
+
+    if (minutes < 10)
+        minutes = "0" + minutes;
+
+    if (seconds < 10)
+        seconds = "0" + seconds;
+
+    var time = "";
+    if (IsTime) {
+        time = hour + ":" + minutes + " " + suffix;
+
+    } else {
+        time = "";
+    }
+
+    return cur_day + " " + time;
+
+}
+
+$(document).ready(function () {
+    var today = new Date();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + ' ' + time;
+
+    $("#ChangeUploadPic").change(function () {
+        readURL(this);
+        if (IsprofilePic) {
+            $.when(DeleteItemAttachment(UserItemid, FileTitle)).done(function (response) {
+                UploadAttachement(UserItemid);
+
+            });
+        } else {
+            UploadAttachement(UserItemid);
+        }
+    });
+    waitingDialog.show();//27 feb 23
+    
+    onloadGetItem();
+   // ChangeNavigationLabels();
+    //ChangeLabels();
+    
+    
+    SetStoredTheme();
+});
+
+
+
+//get EmailIds of peoplePicker
+function getUserInformationProject(PeoplepickerId) {
+    // Get the people picker object from the page. 
+    var userIds = [];
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[PeoplepickerId + "_TopSpan"];
+    if (!peoplePicker.IsEmpty()) {
+        if (peoplePicker.HasInputError) return false; // if any error  
+        else if (!peoplePicker.HasResolvedUsers()) return false; // if any invalid users  
+        else if (peoplePicker.TotalUserCount > 0) {
+            // Get information about all users.  
+            var users = peoplePicker.GetAllUserInfo();
+            var userInfo = '';
+            var promise = '';
+            var UsersID = '';
+            for (var i = 0; i < users.length; i++) {
+                var accountName = users[i].Key;
+                //var userId = GetUserID_Project(accountName);
+                if (accountName != null) {
+                    userIds.push(accountName.split('|')[2]);
+                }
+            }
+            return userIds;
+        }
+    } else {
+        return UsersID;
+    }
+}
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('#extuserPic').attr('src', e.target.result);
+            $('#headerimageprofile').attr('src', e.target.result);
+
+        }
+        reader.readAsDataURL(input.files[0]); // convert to base64 string
+    }
+}
+
+
+function UploadAttachement(UserItemid) {
+
+    try {
+        var fileInput = $('#ChangeUploadPic');
+        if (fileInput[0].files.length == 0) {
+            alert("please Upload file");
+        } else {
+            //File Upload
+            var itemId = UserItemid;
+
+            var fileCount = fileInput[0].files.length;
+            var fileArray = [];
+            var fileName = fileInput[0].files[0].name;
+            fileName = fileInput[0].files[0].name.replace(/[^a-zA-Z0-9-. ]/g, ""); //Remove Special Char
+            fileName = fileName.replace(/\s/g, ""); //Remove space
+
+            // var reader = new FileReader();
+
+            for (var i = 0; i < fileCount; i++) {
+                fileArray.push(fileInput[0].files[i]);
+            }
+            uploadFileSP("ExternalUsers", itemId, fileArray, fileCount, fileName);
+        }
+
+    } catch (error) {
+        alert("Your Picture has not been update");
+        waitingDialog.hide();
+    }
+}
+
+function getFileBuffer(file) {
+    var deferred = $.Deferred();
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        deferred.resolve(e.target.result);
+    }
+    reader.onerror = function (e) {
+        deferred.reject(e.target.error);
+    }
+    reader.readAsArrayBuffer(file);
+    return deferred.promise();
+}
+
+
+
+function DeleteItemAttachment(ItemId, FileTitle) {
+    var Dfd = $.Deferred();
+    var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ExternalUsers')/GetItemById(" + ItemId + ")/AttachmentFiles/getByFileName('" + FileTitle + "')  ";
+    $.ajax({
+        url: Url,
+        type: 'DELETE',
+        contentType: 'application/json;odata=verbose',
+        headers: {
+            'X-RequestDigest': $('#__REQUESTDIGEST').val(),
+            'X-HTTP-Method': 'DELETE',
+            'Accept': 'application/json;odata=verbose'
+        },
+        success: function (data) {
+            Dfd.resolve(data);
+        },
+        error: function (error) {
+            waitingDialog.hide();
+            Dfd.reject(JSON.stringify(error));
+        }
+    });
+    return Dfd.promise();
+}
+
+
+
+function uploadFileSP(listName, id, fileArray, fileCount, fileName) {
+    var FilesCount = 0;
+    var deferred = $.Deferred();
+    var uploadStatus = "";
+    var file = fileArray[0];
+    var getFile = getFileBuffer(file);
+
+    getFile.done(function (buffer, status, xhr) {
+        var bytes = new Uint8Array(buffer);
+        var content = new SP.Base64EncodedByteArray();
+        var queryUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/GetByTitle('" + listName + "')/items(" + id + ")/AttachmentFiles/add(FileName='" + fileName + "')";
+        var uploadCount = 0;
+        $.ajax({
+            url: queryUrl,
+            type: "POST",
+            processData: false,
+            contentType: "application/json;odata=verbose",
+            data: buffer,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-length": buffer.byteLength
+            },
+            success: function (data) {
+                FilesCount++;
+                uploadStatus = FilesCount;
+                fileArray.shift();
+                if (fileArray.length > 0) {
+                    uploadFileSP("ExternalUsers", id, fileArray, fileArray.length);
+                } else {
+                    alert("Your picture has been update successfully!");
+                    $('#modal_profile').modal('toggle');
+                }
+            },
+            error: function (err) {
+                waitingDialog.hide();
+                alert("Idea has been submitted but some files failed to upload.");
+            }
+        });
+        deferred.resolve(uploadStatus);
+    });
+
+    getFile.fail(function (err) {
+        waitingDialog.hide();
+        deferred.reject(err);
+    });
+    return deferred.promise();
+}
+
+
+function logout() {
+
+    var Istrue = confirm("Are you sure to logout SharePoint?")
+    if (Istrue) {
+        ///_layouts/15/closeConnection.aspx?loginasanotheruser=true
+        window.location.href = _spPageContextInfo.webServerRelativeUrl + "/_layouts/signout.aspx";
+    }
+}
+
+
+
+function GetExtrenalEmployees() {
+    var GetQueryURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ExternalUsers')/items?$top=1&$select=*,Client_Name/Title,Client_Name/Id,ID,LoginName/Title,InternalStakeholders/Title,Supervisor/Title,AttachmentFiles &$expand=LoginName,InternalStakeholders,Supervisor,AttachmentFiles,Client_Name&$filter= email eq '" + _spPageContextInfo.userLoginName + "' and Status eq 'Active' ";
+
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: GetQueryURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            dfd.resolve(data.d.results);
+        },
+        error: function (data) {
+            waitingDialog.hide();
+            console.log(data);
+            dfd.reject(data);
+        }
+    });
+
+    return dfd.promise();
+
+
+}
+
+function GetCompanyName() {
+    var GetQueryURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('CompanySettings')/items";
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: GetQueryURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            dfd.resolve(data.d.results);
+
+        },
+        error: function (data) {
+            waitingDialog.hide();
+            console.log(data);
+            dfd.reject(data);
+        }
+    });
+
+    return dfd.promise();
+}
+
+function onloadGetItem() {
+    //$(".headdingLinks").text('My Documents');    
+    $(".headdingLinks").text('Common Documents');
+    $.when(GetExtrenalEmployees(), GetCompanyName()).done(function (ExtreanlEmployees, CompanyName) {
+
+        if (ExtreanlEmployees.length > 0) {
+            var path = window.location.pathname;
+            var LoggedInPage = path.split("/").pop();
+            var CorrectPageName = '';
+            currentTemplate=ExtreanlEmployees[0].TemplateType;
+            
+            if (ExtreanlEmployees[0].TemplateType == "Template2") {
+                CorrectPageName = "Guestportal2.aspx";
+            }
+            else if (ExtreanlEmployees[0].TemplateType == "Template3") {
+                CorrectPageName = "Guestportal3.aspx";
+            }
+            //else if (ExtreanlEmployees[0].TemplateType == "Adapt Marketing") 
+            else if (ExtreanlEmployees[0].TemplateType == "TFW Partner Portal") 
+            {
+                CorrectPageName = "Guestportal3.aspx";
+            }
+            else if (ExtreanlEmployees[0].TemplateType == "Real Estate") 
+            {
+                CorrectPageName = "Guestportal4.aspx";
+            }
+            else {
+                CorrectPageName = "Guestportal1.aspx";
+            }
+            if (LoggedInPage.toLowerCase() == CorrectPageName.toLowerCase()) {
+                $("#userDisplayName").text("");
+                $("#userDisplayName").text(_spPageContextInfo.userDisplayName);
+                $("#s4-ribbonrow").hide();
+                userDocumenturl = ExtreanlEmployees[0].DocumentLibrary;
+                currentClientName = ExtreanlEmployees[0].Client_Name.Title;
+                getCompanyId(ExtreanlEmployees[0].Client_Name.Id);
+                getProjectData();
+                getGroupData() ;
+                //if(currentTemplate=="Adapt Marketing")//7 feb 23
+                 if(currentTemplate=="TFW Partner Portal")//22 feb 23                
+                {
+                    $("#liApprovedDocs").hide();
+                    $("#divArchive").hide();
+                    $("#liSharedDocs").addClass('hiddenmy');
+                }
+                ChangeNavigationLabels();
+                LabelDefaultLangauge=[];
+                if (userDocumenturl == null) {
+                    waitingDialog.hide();
+                    $(".HeaderArea").hide();
+                    var htmlNotAuthorized = '<div class="col-md-12">' +
+                    '<div class="panel panel-default shadow2" style="margin:100px;">' +
+                    '<div class="panel-body" style="padding:60px;"><div class="row text-center"><br>' +
+                    '<span><h2 class="text-center">Project site has been deleted. Please contact administrator.</h2></span>';
+                    $("#DMSTable").empty().html(htmlNotAuthorized);
+                    /*setTimeout(function () { $('#Userdocumentlib').append('<div width="100%" id="viewMyDocuments" style="min-height:500px;">' + htmlNotAuthorized + '</div>'); }, 2000);*/
+                }
+                else {
+                    UrlExists(userDocumenturl, function (status) {
+                        if (status === 200) {
+                            $(".HeaderArea").show();
+                            GetLibarayDetails('', userDocumenturl, ExtreanlEmployees[0].Client_Name.Title, '', 'GuestDocuments');
+                            //$("#Userdocumentlib").append('<iframe width="100%" id="" style="min-height:650px;" src="' + userDocumenturl + '"></iframe>');
+                        }
+                        else {
+                            waitingDialog.hide();
+                            $(".HeaderArea").hide();
+                            $("#groupDocumentGridtbody").append("<tr><td colspan='8' style='text-align: center;'>Project site has been deleted. Please contact administrator.</td></tr>");
+                            var htmlNotAuthorized = '<div class="col-md-12">' +
+                                '<div class="panel panel-default shadow2" style="margin:100px;">' +
+                                '<div class="panel-body" style="padding:60px;"><div class="row text-center"><br>' +
+                                '<span><h2 class="text-center">Project site has been deleted. Please contact administrator.</h2></span>';
+                            $("#DMSTable").empty().html(htmlNotAuthorized);
+                            /*setTimeout(function () { $('#Userdocumentlib').append('<div width="100%" id="viewMyDocuments" style="min-height:500px;">' + htmlNotAuthorized + '</div>'); }, 2000);*/
+                        }
+                    });
+                }
+
+                dateTime = ShowCommonStandardDateFormat(todayDate);
+                $("#LastLogin").text(dateTime);
+                var IsValidUpto = ExtreanlEmployees[0].ValidUpto;
+                var modifiedDate = new Date(IsValidUpto);
+                modifiedDate = new Date(modifiedDate);
+                var diffDaysServices = Math.round(modifiedDate.getTime() - todayDate.getTime()) / (one_day);
+                if (diffDaysServices > 0) {
+
+                    UserItemid = ExtreanlEmployees[0].ID;
+                    $("#txtType").text("");
+                    $("#txtType").text(ExtreanlEmployees[0].CollaborationType);
+                    $("#txtCompany").text(CompanyName[0].CorporateName);
+                    $("#Logoimg").attr('src', CompanyName[0].CompanyLogo.Url);
+                    $("#UserOrganization").text(ExtreanlEmployees[0].Client_Name.Title);
+                    $("#userVendor").text(ExtreanlEmployees[0].Organization);
+                    if (ExtreanlEmployees[0].AttachmentFiles.results.length > 0) {
+                        var imageUrl = ExtreanlEmployees[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                        FileTitle = ExtreanlEmployees[0].AttachmentFiles.results[0].FileName;
+                        IsprofilePic = true;
+                        $('#extuserPic').attr('src', imageUrl);
+                        $("#headerimageprofile").attr('src', imageUrl);
+                    } else {
+                        $('#extuserPic').attr('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(ExtreanlEmployees[0].email));
+                        $("#headerimageprofile").attr('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(ExtreanlEmployees[0].email));
+
+                    }
+                    var txtMember = "";
+                    for (var i = 0; i < ExtreanlEmployees[0].InternalStakeholders.results.length; i++) {
+                        if (i == 0) {
+                            txtMember = ExtreanlEmployees[0].InternalStakeholders.results[i].Title;
+                        } else {
+                            txtMember += " , " + ExtreanlEmployees[0].InternalStakeholders.results[i].Title;
+                        }
+                    }
+                    $("#txtReferenceNumber").val(ExtreanlEmployees[0].ReferenceCode);
+                    $("#txtMembers").val(txtMember);
+                    $("#txtName").val(ExtreanlEmployees[0].LoginName.Title);
+                    $("#txtEmail").val(ExtreanlEmployees[0].email);
+                    $("#txtDesignation").val(ExtreanlEmployees[0].Designation);
+                    $("#txtSupervisor").val(ExtreanlEmployees[0].Supervisor.Title);
+                    $("#txtOrganization").val(ExtreanlEmployees[0].Organization);
+                } else {
+                    $("#contentBox").text("");
+                    $("#titlerow").hide();
+                    alert(" Access Denied.\n The access period has expired.");
+                    waitingDialog.hide();
+                }
+            }
+            else {
+                alert("You are not authorized to access Digital Workplace");
+                window.location.replace(_spPageContextInfo.webAbsoluteUrl+ "/SitePages/GuestHomepage.aspx");
+            }
+        }
+        else {
+            $("#contentBox").text("");
+            $("#titlerow").hide();
+            $("#s4-ribbonrow").hide();
+            alert(" Access Denied.\n You are not an authorized user.");
+            waitingDialog.hide();
+        }
+
+    });
+
+}
+
+//to check if UrL exists or not
+function UrlExists(url, cb) {
+    jQuery.ajax({
+        url: url,
+        dataType: 'text',
+        type: 'GET',
+        complete: function (xhr) {
+            if (typeof cb === 'function')
+                cb.apply(this, [xhr.status]);
+        }
+    });
+}
+
+//Show hide the buttons section-wise
+function ActionBtnControls() {
+    arrPermission = [];
+    $("#divNew").show();
+    $("#divUpload").show();
+    $("#divProperties").show();
+    $("#AddArchiveBox").hide();
+    $("#removeArchiveBox").hide();   
+    $("#DivAppExport").hide(); 
+    if (currentSectionType == 'GuestDocuments' || currentSectionType == 'Reassigned') {
+        $("#divNew").show();
+        //$("#divShare").show();//04 April 23
+        $("#divUpload").show();
+        $("#divDownload").show();
+        $("#divProperties").show();
+        $("#divDelete").show();
+        $("#divFilter").show();
+        $(".ShareSectionAct").hide();
+        $(".otherSectAct").show();
+        $(".fixed-table-footer").hide();
+        $("#divPendingAck").hide();
+        $("#DivAppInCount").hide();
+        $("#DivAppOutCount").hide();
+        $("#divDownloadApp").hide();
+        $(".btnAppFilter").hide();
+        $("#SharedFilterBox").hide();
+        $("#divRevokeSharedTbl").hide();
+    } 
+    else if (currentSectionType == 'ApprovalInbox' || currentSectionType == 'ApprovalOutbox') {
+        $("#divDownloadApp").show();
+        $("#DivAppInCount").show();
+        $(".btnAppFilter").show();
+        $(".otherSectAct").show();
+        $("#DivAppExport").show(); 
+        $("#divNew").hide();
+        $("#divUpload").hide();
+        $("#divDownload").hide();
+        $("#divProperties").hide();
+        $("#divDelete").hide();
+        $(".ShareSectionAct").hide();
+        $(".fixed-table-footer").show();
+        $("#divPendingAck").hide();
+        $("#DivAppOutCount").hide();
+        $("#SharedFilterBox").hide();
+        $("#divRevokeSharedTbl").hide();
+        $("#divFilter").hide();
+        $("#divShare").hide();
+        if (currentSectionType == 'ApprovalInbox'){
+        	$("#DivAppInCount").show();
+        	$("#DivAppOutCount").hide();
+        }
+        else {
+        	$("#DivAppInCount").hide();
+        	$("#DivAppOutCount").show();
+        }
+    } 
+    else if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive' || $('ul#accordion').find('li.active').attr('id') == 'liSharedDocs')     {
+        $("#divNew").hide();
+        $("#divDownloadApp").hide();
+        $(".btnAppFilter").hide()
+        $("#divUpload").hide();
+        $("#divDownload").show();
+        $("#divProperties").hide();
+        $("#divDelete").hide();
+        $("#btnAdduser").hide();
+        $("#divShare").hide();
+        $("#divFilter").hide();
+        $("#SharedFilterBox").show();
+        $("#divRefreshSharedTbl").show();
+        $("#divRevokeSharedTbl").hide();
+        $("#DivAppFilter").hide();
+        $(".ShareSectionAct").show();
+        $(".otherSectAct").hide();
+        $(".fixed-table-footer").show();
+        $("#DivAppInCount").hide();
+        $("#DivAppOutCount").hide();
+        $("#onlyforGroup").hide();
+        $("#removeArchiveBox").hide();
+        if (currentSectionType == 'SharedWithMe') {
+            if(currentTemplate=="TFW Partner Portal")
+                $("#AddArchiveBox").hide();//27 feb 23
+            else
+                $("#AddArchiveBox").show();
+
+            $("#divPendingAck").show();
+            //$("#AddArchiveBox").show();
+        }
+        else if (currentSectionType == 'Archive') { //Archiving will work only in Shared With Me section
+            $("#AddArchiveBox").hide();
+            $("#removeArchiveBox").show();
+        }
+        else { //Shared By Me
+            $("#AddArchiveBox").hide();
+            $("#divPendingAck").hide();
+            $("#divRevokeSharedTbl").show();
+        }
+    } 
+    else  if (currentSectionType == 'ProjectDocuments') {//2 MArch 23
+        $("#divNew").hide();
+        $("#divShare").hide();
+        $("#divUpload").hide();
+        $("#divDownload").show();
+        $("#divProperties").hide();
+        $("#divDelete").hide();
+        $("#divFilter").show();
+        $(".ShareSectionAct").hide();
+        $(".otherSectAct").hide();
+        $(".fixed-table-footer").hide();
+        $("#divPendingAck").hide();
+        $("#DivAppInCount").hide();
+        $("#DivAppOutCount").hide();
+        $("#divDownloadApp").hide();
+        $(".btnAppFilter").hide();
+        $("#SharedFilterBox").hide();
+        $("#divRevokeSharedTbl").hide();
+        getUserRoles_Project($(".headdingLinks").text());//3 march 23
+    } 
+    else if (currentSectionType == 'Group Documents') {
+        $("#divNew").show();
+        $("#btnAdduser").show();
+        $("#divUpload").show();
+        $("#liEmails").show();
+        $("#liPermission").show();
+        $("#divDownload").show();
+        $("#divProperties").show();
+        $("#divDelete").show();
+        //$("#divShare").show();
+        $("#divFilter").show();
+        $("#SharedFilterBox").hide();
+        $("#divRefreshSharedTbl").hide();
+        $("#divRevokeSharedTbl").hide();
+        $("#DivAppFilter").hide();
+        $("#btnRemoveFavorite").hide();
+        $("#btnAppMore").show();
+        $(".ShareSectionAct").hide();
+        $(".otherSectAct").show();
+        $(".fixed-table-footer").show();
+        $("#liSharedGuest").hide();
+        $("#divPendingAck").hide();
+        $("#DivAppInCount").hide();
+        $("#DivAppOutCount").hide();
+        $("#LiAbouttheLibrary").show();
+        $("#onlyforGroup").show();
+        $("#LiLeavethegroup").show();
+        $("#liRemoveGroup").show();
+        $(".fixed-table-footer").show();
+        $("#btnaboutthegroup").show();
+        //Topmenuhideshow('Group Documents');
+        $("#btnaboutthegroup").hide();
+        $("#onlyforGroup").hide();
+        //$("#liSahringRule").show();//Bhawana 
+        /*if (GlobalAnchorObj.dataset.librarytype == "Customs") {
+            $("#divRadioDeletelib").show();
+            $("#divRadioremoveLink").hide();
+        } else {
+            $("#divRadioDeletelib").hide();
+            $("#divRadioremoveLink").show();
+        }*/
+        /*if (GlobalAnchorObj.dataset.librarytype == "Team") {
+            IsTeamLibary = true;
+            MsTeamId = GlobalAnchorObj.dataset.msteamid;
+            PrivateChId = GlobalAnchorObj.dataset.PrivateChID;
+        } else {
+            IsTeamLibary = false;
+            MsTeamId = "";
+            PrivateChId ='';
+            $("#forTeams").hide()
+        }*/
+        getUserRoles_Group();
+    } 
+}
+
+//get companyId of an employee
+function getCompanyId(ClientId){
+    var Query = "?$select=*,CompanyID/Id,CompanyID/SiteURL&$expand=CompanyID&$top=5000&$filter=Id eq '" + ClientId + "' ";
+    $.when(getItemsWithQuery("ClientMaster", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+    	if(valuesArray.length > 0){
+    		Logged_CompanyId = valuesArray[0].CompanyID.Id;
+            Logged_CompanySiteURlg=valuesArray[0].CompanyID.SiteURL;
+    	}
+	});
+}
+
+// For dark theme apply 19/4/2022 START
+function ApplyDarkThemes(){
+	if ($("#dark-theme-btn").is(":checked")) { 
+		$(document.body).addClass('dark-theme');
+		$("#dark-light-side-opt .dark-theme-btn-label").text("Dark Mode");
+		$("#dark-light-side-opt span.material-icons").html("dark_mode");
+		$(document.body).attr('style', 'background-color: hsla(228, 5%, 22%, 1) !important');
+		// $(".dark-theme .panel-heading-bg-txt-clr").attr("style","background: #494948 !important;color: #fff !important;");
+		//Priyanshu - To store Mode in Cookies -----------------------Starts
+		document.cookie = "LightDarkMode" +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;'; //Delete the cookie first
+		createCookie("LightDarkMode", "DarkMode", 1000);
+		//-----------------------------------------------------------Ends
+	}
+	else {
+		$(document.body).removeClass('dark-theme');
+		$("#dark-light-side-opt .dark-theme-btn-label").text("Light Mode");
+		$("#dark-light-side-opt span.material-icons").html("light_mode");
+		$(document.body).attr('style', 'background-color: hsla(0, 0%, 100%, 1) !important');
+		//Priyanshu - To store Mode in Cookies -----------------------Starts
+		document.cookie = "LightDarkMode" +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';//Delete the cookie first
+		createCookie("LightDarkMode", "LightMode", 1000);
+		//-----------------------------------------------------------Ends
+	}
+}
+
+//Create cookie
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    } else var expires = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
+};
+
+//to get the stored cookie value -- Priyanshu
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+//to set the stored cookie value -- Priyanshu
+function SetStoredTheme() {
+    var SetMode = getCookie("LightDarkMode");
+    var path = window.location.pathname;
+    var Logged_InPageName = path.split("/").pop();
+    if (SetMode == "DarkMode") {
+    	$("#dark-theme-btn").prop('checked', true);
+        $(document.body).addClass('dark-theme');
+        $("#dark-light-side-opt .dark-theme-btn-label").text("Dark Mode");
+        $("#dark-light-side-opt span.material-icons").html("dark_mode");
+        $(document.body).attr('style', 'background-color: hsla(228, 5%, 22%, 1) !important');
+    }
+    else {
+        $(document.body).removeClass('dark-theme');
+        $("#dark-light-side-opt .dark-theme-btn-label").text("Light Mode");
+        $("#dark-light-side-opt span.material-icons").html("light_mode");
+        $(document.body).attr('style', 'background-color: hsla(0, 0%, 100%, 1) !important');
+    }
+}
+
+// For dark theme apply 19/4/2022 END
+
+//change label as per the 'LabelSettings' list
+function ChangeNavigationLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        //var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'DMS' ";
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq '"+currentTemplate+"' ";//7 feb 23
+        $.when(getItemsWithQuery("LabelsSettings", RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings;
+                SetDMSTextNAV(LabelsSettings, preferredLanguage);
+
+            } catch (e) {
+                alert(e);
+            }
+
+        });
+    }
+    else {
+        SetDMSTextNAV(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'DMS' ";
+        //var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq '"+currentTemplate+"' ";//7 feb 23
+        $.when(getItemsWithQuery("LabelsSettings", RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings;
+                SetDMSText(LabelsSettings, preferredLanguage);
+
+            } catch (e) {
+                alert(e);
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+function SetDMSTextNAV(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowserNAV(); // First Detect Browser then Change All Headings as per selected language.
+}
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+function DetectBrowserNAV() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowserNAV();
+    } else {
+        ChangeWebPartsHeadingsNAV();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+               // console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+function ChangeWebPartsHeadingsNAV() {
+    try {
+        $(".guestTemplateNAV").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+               // console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+function ChangeWebPartsHeadings_OldBrowserNAV() {
+    try {
+        $(".guestTemplateNAV").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}

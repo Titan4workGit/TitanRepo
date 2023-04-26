@@ -1,1 +1,781 @@
-var a84_0x390c56=a84_0x2eff;(function(_0x357ba7,_0x4b5bce){var _0x39b650=a84_0x2eff,_0x4661bb=_0x357ba7();while(!![]){try{var _0x4c3142=parseInt(_0x39b650(0xf8))/0x1*(-parseInt(_0x39b650(0x12a))/0x2)+parseInt(_0x39b650(0x130))/0x3+parseInt(_0x39b650(0x153))/0x4*(parseInt(_0x39b650(0x117))/0x5)+parseInt(_0x39b650(0xba))/0x6*(parseInt(_0x39b650(0x11d))/0x7)+parseInt(_0x39b650(0x146))/0x8+-parseInt(_0x39b650(0x96))/0x9*(-parseInt(_0x39b650(0xd0))/0xa)+-parseInt(_0x39b650(0xcc))/0xb;if(_0x4c3142===_0x4b5bce)break;else _0x4661bb['push'](_0x4661bb['shift']());}catch(_0x545f43){_0x4661bb['push'](_0x4661bb['shift']());}}}(a84_0x3265,0x455fb));var _0x3548aa=_0x1032;function _0x1ede(){var _0xfc817b=a84_0x2eff,_0x87c196=[_0xfc817b(0x134),_0xfc817b(0x13f),_0xfc817b(0xe0),_0xfc817b(0xf1),_0xfc817b(0x118),_0xfc817b(0xa6),'rar',_0xfc817b(0xb1),_0xfc817b(0x9e),_0xfc817b(0xb2),_0xfc817b(0xe3),_0xfc817b(0xfd),_0xfc817b(0x152),_0xfc817b(0x110),'</td>',_0xfc817b(0xb3),'<thead\x20style=\x22display:none\x22>',_0xfc817b(0x123),_0xfc817b(0xa7),_0xfc817b(0xae),'File',_0xfc817b(0x12f),'webAbsoluteUrl',_0xfc817b(0x149),_0xfc817b(0x9f),'\x27);\x22\x20name=\x22',_0xfc817b(0x12e),_0xfc817b(0x125),_0xfc817b(0x10c),_0xfc817b(0x13a),_0xfc817b(0xc6),_0xfc817b(0xf3),_0xfc817b(0x155),_0xfc817b(0xfc),_0xfc817b(0xa0),'tiff',_0xfc817b(0xcd),_0xfc817b(0x13c),'load',_0xfc817b(0x129),_0xfc817b(0x135),'createElement',_0xfc817b(0xe2),'aac',_0xfc817b(0xb6),'slice',_0xfc817b(0x121),_0xfc817b(0x109),'close',_0xfc817b(0x14b),_0xfc817b(0x139),_0xfc817b(0x14d),_0xfc817b(0x147),_0xfc817b(0xca),_0xfc817b(0xb8),_0xfc817b(0xda),_0xfc817b(0x10f),_0xfc817b(0xf0),'<span\x20data-localize=\x22Library\x22>Library</span><span>:</span>\x20<span>',_0xfc817b(0x108),_0xfc817b(0xcf),_0xfc817b(0x137),'attr','<span\x20data-localize=\x22Size\x22>Size</span><span>:</span>\x20<span>',_0xfc817b(0xd9),_0xfc817b(0xd5),_0xfc817b(0xfb),_0xfc817b(0xf4),'PrimaryQueryResult',_0xfc817b(0xac),'DataTable',_0xfc817b(0x100),_0xfc817b(0xf9),_0xfc817b(0x122),_0xfc817b(0xdc),_0xfc817b(0x99),_0xfc817b(0xf5),'\x27,\x20\x27','\x22\x20onclick=\x22DisplayFileProperty(this,\x20\x27',_0xfc817b(0x11a),_0xfc817b(0x14e),_0xfc817b(0xa1),_0xfc817b(0x107),_0xfc817b(0xbe),_0xfc817b(0x119),_0xfc817b(0x95),'--select--',_0xfc817b(0xaf),_0xfc817b(0x11e),_0xfc817b(0xe7),_0xfc817b(0xe9),_0xfc817b(0xf7),_0xfc817b(0x11b),_0xfc817b(0x12b),_0xfc817b(0xd3),_0xfc817b(0xaa),_0xfc817b(0xbb),_0xfc817b(0x103),_0xfc817b(0xc9),'<span\x20data-localize=\x22Reference\x22>Reference</span><span>:</span>\x20<span>',_0xfc817b(0x126),_0xfc817b(0x13e),_0xfc817b(0xa8),_0xfc817b(0xc7),_0xfc817b(0xc3),_0xfc817b(0xd1),_0xfc817b(0x14f),_0xfc817b(0xab),_0xfc817b(0x10e),_0xfc817b(0xc2),_0xfc817b(0x9d),_0xfc817b(0xd2),_0xfc817b(0xf2),_0xfc817b(0x14c),_0xfc817b(0xb9),_0xfc817b(0xee),'Details',_0xfc817b(0x148),_0xfc817b(0xec),_0xfc817b(0xf6),_0xfc817b(0xd8),_0xfc817b(0xfe),_0xfc817b(0x9b),_0xfc817b(0xd7),_0xfc817b(0xea),_0xfc817b(0x127),'order',_0xfc817b(0xe6),_0xfc817b(0xc0),_0xfc817b(0xdb),_0xfc817b(0x104),'trim',_0xfc817b(0xad),_0xfc817b(0xc8),_0xfc817b(0x9a),_0xfc817b(0xe1),_0xfc817b(0x97),'target','Please\x20select\x20any\x20file\x20first.',_0xfc817b(0xb7),_0xfc817b(0x9c),_0xfc817b(0x101),_0xfc817b(0xeb),_0xfc817b(0xe5),_0xfc817b(0x13b),_0xfc817b(0x11c),'<td\x20class=\x22text-left\x20w-50\x22>',_0xfc817b(0x142),_0xfc817b(0x102),_0xfc817b(0x11f),_0xfc817b(0xdf),_0xfc817b(0x12c),_0xfc817b(0xa9),_0xfc817b(0xb5),_0xfc817b(0xce),'init',_0xfc817b(0xb4),_0xfc817b(0xc5),_0xfc817b(0x128),_0xfc817b(0x13d),_0xfc817b(0xe4),_0xfc817b(0x138),_0xfc817b(0x115),_0xfc817b(0xd4),_0xfc817b(0xbf),'\x27,Title)\x20',_0xfc817b(0x143),_0xfc817b(0x144),'<div\x20class=\x22ellipsis-1\x22>',_0xfc817b(0x98),_0xfc817b(0xed),_0xfc817b(0xa5),'showWaitScreenWithNoClose',_0xfc817b(0x145),'TimeLastModified',_0xfc817b(0x124),_0xfc817b(0xbd),_0xfc817b(0x106),'hide','application/json;odata=verbose','#ddlDocumentType\x20option:selected',_0xfc817b(0x158),_0xfc817b(0xa4),_0xfc817b(0xde),'\x27,DocumentNo)','*))\x27',_0xfc817b(0x120),'ogv',_0xfc817b(0x141),'<span\x20data-localize=\x22Author\x22>Author</span><span>:</span>\x20<span>',_0xfc817b(0x111),_0xfc817b(0x133),'<th>Country</th>',_0xfc817b(0x140),'Advance\x20Search','<th>Last\x20name</th>',_0xfc817b(0x105),_0xfc817b(0x116),_0xfc817b(0xfa),_0xfc817b(0xc4),_0xfc817b(0xd6)];return _0x1ede=function(){return _0x87c196;},_0x1ede();}(function(_0xaa42e5,_0x5a2fde){var _0x4884cc=a84_0x2eff,_0x1142ab=_0x1032,_0x1bb977=_0xaa42e5();while(!![]){try{var _0x129a92=parseInt(_0x1142ab(0x7b))/0x1*(-parseInt(_0x1142ab(0xde))/0x2)+-parseInt(_0x1142ab(0xac))/0x3+-parseInt(_0x1142ab(0xf0))/0x4*(parseInt(_0x1142ab(0xc0))/0x5)+-parseInt(_0x1142ab(0x7c))/0x6*(-parseInt(_0x1142ab(0x118))/0x7)+parseInt(_0x1142ab(0xb2))/0x8*(parseInt(_0x1142ab(0xb1))/0x9)+parseInt(_0x1142ab(0x113))/0xa+parseInt(_0x1142ab(0x9e))/0xb;if(_0x129a92===_0x5a2fde)break;else _0x1bb977[_0x4884cc(0xe3)](_0x1bb977['shift']());}catch(_0x36fe34){_0x1bb977[_0x4884cc(0xe3)](_0x1bb977[_0x4884cc(0x151)]());}}}(_0x1ede,0xb6eb4));function a84_0x3265(){var _0x961769=['isDataTable','333621PXrSVy','#btnSearch','The\x20crawling\x20services\x20is\x20failed,\x20try\x20with\x20proper\x20searching\x20text','DocumentType\x20eq\x20\x27','pdf.png','#DMSTable,#ButtonArea,#SearchArea','RelevantResults','gif','</span>','#btnAdSearchClear','click','flv','28740HVOENm','_blank','lastIndexOf','CSV.png','399zhLpys','13505330MHeTQa','/_api/lists/GetByTitle(\x27','Author','pdf','<a\x20href=\x22javascript:void(0);\x22\x20id=\x22Fileid','4172616kdhyvO','mpeg','<span\x20data-localize=\x22Category\x22>Category</span><span>:</span>\x20<span>','<img\x20width=\x2230px\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/','\x27,DocumentNo)','val','prop','ServerUrl','onError','html','Details','shift','txt','212pECeho','<div\x20class=\x22ellipsis-1\x22>','length','Please\x20select\x20document\x20library\x20to\x20search.','when','\x22\x20id=\x22myCheckbox','1508952sRkRGc','45nZPEYv','toLowerCase','<td\x20class=\x22w-18\x22>','FileExtension','#btnAdSearchDownload','file.png','\x27)/id','arz','Cells','GET','#chkSharedLibrary','<div>','trim','url','#txtReference','checked','Table','filter','name=\x22','asc','Type\x20to\x20find....','<input\x20type=\x22checkbox\x22\x20class=\x22chkFileFolder\x22\x20value=\x22','&$filter=\x20','</label>','Path','),IsDocument:(true),Title:(','File','ready','Value','<th>ZIP\x20/\x20Post\x20code</th>','xlsx','500aEvyim','=asc','#txtContentsearchBox','#ddlDocumentType','#txtTitlesearchBox','18594jfKPVs','name','.advance_setion','Name','<label\x20for=\x22myCheckbox','</tr>','onSuccess','ModalDialog','indexOf','ServerURL','</thead>','All','mp3','docx.png','<tr>','*\x20\x27&rowlimit=\x275000\x27\x20&sortlist=\x27rank:descending,modifiedby:ascending\x27\x20&selectproperties=\x27Path,FileExtension,Author,Size,Name,Title,DocumentNo,Regarding,Details,Shared,Department,DepartmentName,Shared\x20With,DocumentType,LastModifiedTime,ID\x27\x20&refinementfilters=\x27and(ListId:(','setAttribute','image-icon.png','13889810TJCEPn','69125QBmfsR','query','Rlfrtip','724360SYANhM','49355toNOZT','=desc','null','ajax','jpg','Rows','/_api/search/query?querytext=\x20\x27','#SearchResultsGrid','.chkFileFolder','ServerRelativeUrl','<span\x20data-localize=\x22Modify\x22>Modify</span><span>:</span>\x20<span>','DocumentNo','<div\x20class=\x22chexbox_mg\x22>','draw','LastModifiedTime','split','38sJpJgs','\x27,FileLeafRef)\x20or\x20substringof(\x27','push','/Forms','and\x20substringof(\x27','-Select-','<a\x20href=\x22javascript:void(0)\x22\x20name=\x22','DocumentManagementSystem/indramani.gautam@adapt-india.com/','9yDRbjK','</div>','wav','video.png','value','</a>','Documents','rpm','\x22\x20class=\x22table-title\x22\x20target=\x22\x22>','Length','<span>File\x20name:</span>\x20<span>','done','pptx','doc','1918688HqMZrH','274jatPUP','DocumentType','fail','mp4','Searching...','#chkMyLibrary','Library','wma','21296781EEWqIx','cab','Guest\x20Client\x20:\x20','csv','<td\x20class=\x22w-25\x22>','psd','zip','bmp','<h3>An\x20error\x20occured</h3><br\x20/>','?$orderby=Id\x20desc\x20&$top=4999\x20&$select=*,Author/Title\x20&$expand=File,File/Author/Title,\x20Author,File/ListItemAllFields','#searchResults','#ddlDocumentType\x20option','Title','pptx.png','and\x20DocumentType\x20eq\x20\x27','Size','png','substringof(\x27','avi','</td>','Shared\x20Documents','stringify','<tbody>','24425JeNoFM','mov','pcm','audio.png','<td\x20class=\x22vertical-align-middle\x20w-2\x20\x22>','href','910qovhNz','results','Shared%20Documents','?$orderby=Id\x20desc\x20&$select=*,Author/Title\x20&$expand=File,File/Author/Title,\x20Author,File/ListItemAllFields\x20&$filter=FileLeafRef\x20eq\x20\x27','ZIP.png','show','jpeg','txt.png','docx','wmv','element','<br\x20/>Please\x20wait!!','#advanceserach','802aJlfYB','log','.headdingLinks','destroy','\x22\x20/>'];a84_0x3265=function(){return _0x961769;};return a84_0x3265();}var GloblListId='',GloblSiteurl=_spPageContextInfo[_0x3548aa(0x136)],table,getFileDetails=[],path=a84_0x390c56(0xe8),AddDocumentLib,linkDocumentLib,IsMyDocument=![],withoutLastChunk,arrAdSearchFiles=[];$(document)[_0x3548aa(0x127)](function(){var _0x5bac9d=a84_0x390c56,_0x2ad7a4=_0x3548aa;$(_0x2ad7a4(0x7e))[_0x2ad7a4(0x74)](function(){var _0xcb66a=a84_0x2eff,_0x2d5060=_0x2ad7a4;$(_0x2d5060(0xee))[_0x2d5060(0xc1)](_0x2d5060(0x119)),$(_0xcb66a(0xbc))[_0x2d5060(0xa0)](),$(_0x2d5060(0x7f))[_0x2d5060(0x109)](),$(_0xcb66a(0x10b))[_0x2d5060(0x77)]==0x0&&BindDMSDocumentType();}),$(_0x5bac9d(0x131))[_0x2ad7a4(0x74)](function(){StartSearch();}),$(_0x2ad7a4(0x89))[_0x5bac9d(0x13a)](function(){clearAll();}),$(_0x2ad7a4(0xdd))[_0x2ad7a4(0x74)](function(){downloadfiles();});});function a84_0x2eff(_0x1c0f53,_0xe77efe){var _0x326575=a84_0x3265();return a84_0x2eff=function(_0x2eff6f,_0x5f0fc3){_0x2eff6f=_0x2eff6f-0x95;var _0x57eb01=_0x326575[_0x2eff6f];return _0x57eb01;},a84_0x2eff(_0x1c0f53,_0xe77efe);}function StartSearch(){var _0x58fa1a=a84_0x390c56,_0x18d35e=_0x3548aa;$[_0x18d35e(0xfa)]({'type':_0x58fa1a(0x9f),'beforeSend':function(){var _0x4043f6=_0x58fa1a,_0x591d40=_0x18d35e;if($(_0x4043f6(0xfd))[_0x591d40(0xc8)](_0x591d40(0x102))==!![]||$(_0x4043f6(0xa0))[_0x591d40(0xc8)](_0x591d40(0x102))==!![]){var _0x32ac5a=_0x591d40(0x78),_0x30ab84=_0x591d40(0xf5),_0x2e73ba=0xc8,_0x5a74eb=0x190;currentDlg=SP['UI'][_0x4043f6(0xc1)][_0x591d40(0x103)](_0x32ac5a,_0x30ab84,_0x2e73ba,_0x5a74eb),setTimeout(function(){getFileDetails=[],GenrateAdSearchGrid(getFileDetails);},0x64);}else return alert(_0x4043f6(0x156)),![];},'success':function(_0x5c202a){var _0x3eda1=_0x18d35e;console[_0x3eda1(0xb4)](_0x5c202a),executeSearch();},'error':function(_0x43db66){alert(JSON['stringify'](_0x43db66));}})[_0x18d35e(0x11d)](function(_0x7fc0f){var _0x7867a7=_0x18d35e;alert(JSON[_0x7867a7(0xf9)](_0x7fc0f));});}function GenrateAdSearchGrid(_0x388c21){var _0x35b151=a84_0x390c56,_0x1dfcf5=_0x3548aa,_0x150711='',_0x4d3003=_0x1dfcf5(0xb5);$(_0x1dfcf5(0xcf))[_0x1dfcf5(0xc1)](''),_0x150711+=_0x1dfcf5(0x130)+_0x1dfcf5(0xdc)+'<th>First\x20name</th>'+_0x1dfcf5(0x11a)+_0x1dfcf5(0x12f)+_0x1dfcf5(0x117)+_0x1dfcf5(0xfb)+_0x1dfcf5(0x11e)+_0x1dfcf5(0x11c);for(var _0x4d7db0=0x0;_0x4d7db0<_0x388c21[_0x35b151(0x155)];_0x4d7db0++){var _0x3af69b=_0x1dfcf5(0xd1);if(_0x1dfcf5(0x13b)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xce)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)])_0x3af69b=_0x1dfcf5(0xbe);else{if(_0x1dfcf5(0xfe)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)])_0x3af69b=_0x1dfcf5(0x120);else{if(_0x1dfcf5(0x98)==_0x388c21[_0x4d7db0][_0x35b151(0x99)]||_0x1dfcf5(0x11b)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x7a)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x94)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xa9)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x131)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x12d)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)])_0x3af69b=_0x35b151(0xcb);else{if(_0x1dfcf5(0xf3)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)])_0x3af69b='xlsx.png';else{if(_0x1dfcf5(0xa3)==_0x388c21[_0x4d7db0][_0x35b151(0x99)])_0x3af69b=_0x35b151(0x10d);else{if(_0x1dfcf5(0x12c)==_0x388c21[_0x4d7db0][_0x35b151(0x99)])_0x3af69b=_0x1dfcf5(0x106);else{if(_0x1dfcf5(0xb8)==_0x388c21[_0x4d7db0][_0x35b151(0x99)])_0x3af69b=_0x1dfcf5(0x121);else{if(_0x1dfcf5(0x108)==_0x388c21[_0x4d7db0][_0x35b151(0x99)]||_0x1dfcf5(0x126)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||'7z'==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xc5)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xe4)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x90)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||'wim'==_0x388c21[_0x4d7db0]['FileExtension'])_0x3af69b=_0x1dfcf5(0x85);else{if(_0x1dfcf5(0x99)==_0x388c21[_0x4d7db0][_0x35b151(0x99)]||_0x1dfcf5(0xbb)==_0x388c21[_0x4d7db0][_0x35b151(0x99)]||_0x35b151(0x112)==_0x388c21[_0x4d7db0][_0x35b151(0x99)]||_0x1dfcf5(0x8b)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xe7)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x124)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xe5)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x112)==_0x388c21[_0x4d7db0][_0x35b151(0x99)])_0x3af69b=_0x1dfcf5(0xcd);else(_0x1dfcf5(0x75)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x35b151(0xff)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0x82)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)]||_0x1dfcf5(0xab)==_0x388c21[_0x4d7db0][_0x1dfcf5(0xa2)])&&(_0x3af69b=_0x1dfcf5(0xa6));}}}}}}}}(_0x388c21[_0x4d7db0][_0x1dfcf5(0x9f)]==_0x1dfcf5(0xd6)||_0x388c21[_0x4d7db0][_0x1dfcf5(0x9f)]==null||_0x388c21[_0x4d7db0][_0x35b151(0xf9)]==_0x1dfcf5(0xb5)||_0x388c21[_0x4d7db0][_0x1dfcf5(0x9f)]==_0x1dfcf5(0xad))&&(_0x388c21[_0x4d7db0][_0x1dfcf5(0x9f)]=''),(_0x388c21[_0x4d7db0][_0x1dfcf5(0xa1)]==null||_0x388c21[_0x4d7db0][_0x1dfcf5(0xa1)]==_0x1dfcf5(0xb5))&&(_0x388c21[_0x4d7db0][_0x1dfcf5(0xa1)]=''),_0x150711+=_0x1dfcf5(0xdc)+_0x1dfcf5(0xb3)+_0x35b151(0xdd)+_0x1dfcf5(0xc2)+_0x388c21[_0x4d7db0][_0x35b151(0xae)]+_0x1dfcf5(0x10c)+_0x4d7db0+_0x1dfcf5(0x13a)+_0x1dfcf5(0xaa)+_0x4d7db0+'\x22>'+_0x1dfcf5(0x137)+_0x3af69b+_0x1dfcf5(0x13a)+_0x1dfcf5(0xdb)+_0x1dfcf5(0xd3)+_0x35b151(0x113)+_0x1dfcf5(0xe9)+_0x1dfcf5(0x104)+_0x4d7db0+_0x1dfcf5(0xa5)+_0x388c21[_0x4d7db0][_0x1dfcf5(0x8a)]+_0x1dfcf5(0xa4)+_0x388c21[_0x4d7db0][_0x35b151(0xfe)]+_0x1dfcf5(0xa4)+_0x4d3003+_0x1dfcf5(0x139)+_0x388c21[_0x4d7db0][_0x1dfcf5(0x133)]+_0x1dfcf5(0x123)+_0x388c21[_0x4d7db0][_0x35b151(0x10c)]+_0x1dfcf5(0xca)+_0x1dfcf5(0xff)+_0x1dfcf5(0x76)+_0x388c21[_0x4d7db0][_0x1dfcf5(0x107)]+_0x1dfcf5(0xf8)+_0x1dfcf5(0xd3)+_0x1dfcf5(0x12e)+_0x1dfcf5(0xd9)+_0x35b151(0x154)+_0x1dfcf5(0xcc)+_0x388c21[_0x4d7db0][_0x1dfcf5(0x9f)]+_0x1dfcf5(0xf8)+'</div>'+_0x1dfcf5(0xff)+_0x1dfcf5(0xba)+_0x388c21[_0x4d7db0][_0x1dfcf5(0xa1)]+_0x1dfcf5(0xf8)+_0x1dfcf5(0xd3)+_0x35b151(0x154)+_0x1dfcf5(0x91)+_0x388c21[_0x4d7db0][_0x1dfcf5(0xd0)]+_0x1dfcf5(0xf8)+_0x1dfcf5(0xd3)+_0x1dfcf5(0x12e)+_0x1dfcf5(0x100)+_0x1dfcf5(0xa8)+_0x1dfcf5(0xd8)+ShowCommonStandardDateFormat(_0x388c21[_0x4d7db0][_0x1dfcf5(0xed)])+_0x1dfcf5(0xf8)+_0x1dfcf5(0xd3)+_0x1dfcf5(0xff)+_0x1dfcf5(0x114)+_0x388c21[_0x4d7db0][_0x1dfcf5(0xfd)]+_0x1dfcf5(0xf8)+_0x1dfcf5(0xd3)+_0x1dfcf5(0xa8)+_0x1dfcf5(0x96)+bytesToSize(_0x388c21[_0x4d7db0][_0x1dfcf5(0x8f)])+_0x35b151(0x138)+_0x1dfcf5(0xd3)+_0x1dfcf5(0x12e)+_0x1dfcf5(0xfb);}$(_0x1dfcf5(0xcf))[_0x1dfcf5(0xc1)](_0x150711),$['fn']['dataTable'][_0x1dfcf5(0x135)](_0x1dfcf5(0xcf))?(table[_0x35b151(0x12d)](),table=$(_0x1dfcf5(0xcf))[_0x1dfcf5(0x9d)]({'bPaginate':!![],'bJQueryUI':!![],'bLengthChange':![],'bFilter':!![],'bSort':!![],'bInfo':!![],'bAutoWidth':!![],'bProcessing':!![],'iDisplayLength':0x8,'dom':_0x1dfcf5(0x93),'colReorder':{'allowReorder':!![]},'language':{'searchPlaceholder':_0x1dfcf5(0xb6),'sSearch':''}})):table=$(_0x35b151(0xd8))[_0x1dfcf5(0x9d)]({'bPaginate':!![],'bJQueryUI':!![],'bLengthChange':![],'bFilter':!![],'bSort':!![],'bInfo':!![],'bAutoWidth':!![],'bProcessing':!![],'iDisplayLength':0x8,'dom':_0x1dfcf5(0x93),'colReorder':{'allowReorder':!![]},'language':{'searchPlaceholder':_0x1dfcf5(0xb6),'sSearch':''}}),$(_0x1dfcf5(0x97))[_0x1dfcf5(0x74)](function(){var _0x12b724=_0x35b151,_0x303346=_0x1dfcf5,_0x34eceb=this[_0x303346(0x101)];if(this[_0x303346(0x102)]==!![])arrAdSearchFiles[_0x303346(0x12a)]({'ServerURL':_0x34eceb[_0x303346(0xda)]()});else{var _0x5d1fc9=this[_0x12b724(0xed)];arrAdSearchFiles=arrAdSearchFiles[_0x303346(0x132)](function(_0x3dadb3){var _0x13527d=_0x303346;return _0x3dadb3[_0x13527d(0xbf)]!=_0x34eceb[_0x13527d(0xda)]();});}}),ChangeLabels();}function executeSearch(){var _0x71b92f=a84_0x390c56,_0x55d1b1=_0x3548aa;try{var _0x671d55=$(_0x55d1b1(0xe2))[_0x55d1b1(0x88)]()[_0x55d1b1(0xda)](),_0x4314d1=$(_0x55d1b1(0xc9))[_0x55d1b1(0x88)]()[_0x71b92f(0xa2)]();AddDocumentLib='';if($(_0x55d1b1(0x12b))[_0x55d1b1(0xc8)](_0x71b92f(0xa5))==!![]||$(_0x55d1b1(0x79))[_0x55d1b1(0xc8)](_0x55d1b1(0x102))==!![]){var _0x2aba2b=_0x55d1b1(0xb0)+userDocumenturl+'\x22>'+currentClientName+_0x71b92f(0xee);IsMyDocument=![],linkDocumentLib=_0x2aba2b[_0x55d1b1(0x122)](_0x55d1b1(0xbd))[0x1][_0x55d1b1(0x122)]('\x22>')[0x0],GetListId(linkDocumentLib),AddDocumentLib=_0x55d1b1(0xeb)+_0x2aba2b[_0x71b92f(0xe0)](_0x55d1b1(0xbd))[0x1][_0x55d1b1(0x122)]('\x22>')[0x1][_0x55d1b1(0x122)](_0x55d1b1(0xca))[0x0];if(_0x671d55!=''){SPSearchResults={'element':'','url':'','init':function(_0x47f724){var _0x4a245c=_0x71b92f,_0x4a7ab8=_0x55d1b1;SPSearchResults[_0x4a7ab8(0xd4)]=_0x47f724,SPSearchResults[_0x4a245c(0xa3)]=GloblSiteurl+_0x4a7ab8(0xd2)+_0x671d55+_0x4a7ab8(0xb9)+GloblListId+_0x4a7ab8(0xae)+_0x4314d1+_0x4a7ab8(0x110);},'load':function(){var _0x2015d4=_0x71b92f,_0x17fa0e=_0x55d1b1;$[_0x17fa0e(0xfa)]({'url':SPSearchResults[_0x2015d4(0xa3)],'method':_0x17fa0e(0x138),'async':![],'headers':{'accept':'application/json;odata=verbose'},'success':SPSearchResults[_0x17fa0e(0xd7)],'error':SPSearchResults[_0x17fa0e(0xa7)]});},'onSuccess':function(_0x33109f){var _0x254989=_0x71b92f,_0x144878=_0x55d1b1,_0x4747f5=_0x33109f['d'][_0x144878(0xf1)][_0x144878(0x9b)][_0x254989(0x136)][_0x144878(0x125)][_0x144878(0x11f)][_0x144878(0xaf)];for(var _0x15ff94=0x0;_0x15ff94<_0x4747f5[_0x254989(0x155)];_0x15ff94++){var _0x465212=_0x4747f5[_0x15ff94][_0x144878(0x128)][_0x144878(0xaf)][0x0][_0x254989(0xb2)];if(IsMyDocument==![]){RestQuery=_0x144878(0x111)+_0x4747f5[_0x15ff94][_0x144878(0x128)][_0x254989(0x11e)][0x0]['Value'][_0x144878(0x122)]('/')[_0x4747f5[_0x15ff94][_0x144878(0x128)][_0x144878(0xaf)][0x0][_0x144878(0x129)][_0x144878(0x122)]('/')[_0x144878(0x77)]-0x1]+'\x27\x20';var _0x5bf698=GetFileDetails(RestQuery,Documentname,withoutLastChunk);_0x5bf698!=undefined&&getFileDetails[_0x144878(0x12a)]({'Path':_0x5bf698[0x0][_0x144878(0x134)][_0x254989(0xda)],'FileExtension':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x107)]['split']('.')[0x1],'Author':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0xfd)][_0x144878(0x73)],'Size':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0xc7)],'Name':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x107)],'Title':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x73)]==null||_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x73)]==''?_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x107)][_0x144878(0x122)]('.')[0x0]:_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x73)],'DocumentNo':_0x5bf698[0x0][_0x144878(0xa1)],'Details':_0x5bf698[0x0][_0x254989(0x150)],'DocumentType':_0x5bf698[0x0][_0x144878(0x9f)],'LastModifiedTime':_0x5bf698[0x0][_0x144878(0x134)][_0x144878(0x105)],'Library':AddDocumentLib,'ServerUrl':withoutLastChunk});}}},'onError':function(_0x3c6ab5){var _0x13bfe7=_0x71b92f,_0x589434=_0x55d1b1;$(_0x13bfe7(0x10a))[_0x589434(0xc1)](_0x589434(0x92)+JSON[_0x589434(0xf9)](_0x3c6ab5));}},SPSearchResults[_0x55d1b1(0xf2)]($(_0x71b92f(0x10a))),SPSearchResults[_0x55d1b1(0x7d)](),RestQuery=_0x71b92f(0xac);var _0x59672d=![];_0x4314d1!=''&&(_0x59672d=!![],RestQuery+=_0x55d1b1(0x115)+_0x4314d1+_0x55d1b1(0x81)+_0x4314d1+_0x55d1b1(0xfc)),$('#txtReference')[_0x71b92f(0x14b)]()!=''&&(_0x59672d?RestQuery+=_0x55d1b1(0xe6)+$(_0x55d1b1(0x10d))[_0x55d1b1(0x88)]()+_0x55d1b1(0x10f):(RestQuery+=_0x55d1b1(0x115)+$(_0x55d1b1(0x10d))[_0x55d1b1(0x88)]()+_0x55d1b1(0x10f),_0x59672d=!![])),$('#ddlDocumentType\x20option:selected')[_0x55d1b1(0x88)]()!=_0x55d1b1(0xf4)&&(_0x59672d?(RestQuery+=_0x55d1b1(0xc3)+$(_0x55d1b1(0x10b))['val']()+'\x27',_0x59672d=![]):RestQuery+=_0x55d1b1(0x116)+$(_0x55d1b1(0x10b))[_0x55d1b1(0x88)]()+'\x27'),(_0x4314d1!=''||$(_0x71b92f(0xa4))[_0x71b92f(0x14b)]()!=''||$(_0x55d1b1(0x10b))[_0x55d1b1(0x88)]()!='All')&&(getFileDetails=getFileDetails[_0x55d1b1(0x132)](function(_0x1b69d0,_0x31cda1){var _0x5bcd9a=_0x71b92f,_0x294f25=_0x55d1b1;return(_0x1b69d0[_0x294f25(0xa1)]==null||_0x1b69d0[_0x294f25(0xa1)]=='')&&(_0x1b69d0[_0x294f25(0xa1)]=_0x5bcd9a(0xd3)),(_0x1b69d0[_0x294f25(0x73)]==null||_0x1b69d0[_0x294f25(0x73)]=='')&&(_0x1b69d0[_0x5bcd9a(0xdc)]=_0x294f25(0xb5)),(_0x1b69d0[_0x294f25(0x107)]==null||_0x1b69d0[_0x294f25(0x107)]=='')&&(_0x1b69d0['Name']=_0x294f25(0xb5)),($(_0x294f25(0x8d))[_0x5bcd9a(0x14b)]()==_0x294f25(0xf4)?_0x1b69d0[_0x294f25(0x9f)]!='':_0x1b69d0[_0x5bcd9a(0xf9)]==$(_0x294f25(0x8d))[_0x294f25(0x88)]())&&($(_0x294f25(0x10d))[_0x294f25(0x88)]()[_0x294f25(0xda)]()=='null'?_0x1b69d0[_0x294f25(0xa1)]!=_0x5bcd9a(0xd3):_0x1b69d0[_0x294f25(0xa1)][_0x5bcd9a(0x97)]()==$(_0x294f25(0x10d))[_0x294f25(0x88)]()[_0x294f25(0xdf)]()||_0x1b69d0[_0x294f25(0xa1)][_0x294f25(0xdf)]()[_0x294f25(0xc4)]($(_0x294f25(0x10d))[_0x294f25(0x88)]()[_0x5bcd9a(0x97)]())!=-0x1)&&($(_0x294f25(0xc9))[_0x5bcd9a(0x14b)]()[_0x294f25(0xda)]()==_0x294f25(0xb5)?_0x1b69d0[_0x294f25(0x73)]!=_0x294f25(0xb5):_0x1b69d0[_0x294f25(0x73)][_0x294f25(0xdf)]()==$(_0x294f25(0xc9))[_0x294f25(0x88)]()[_0x294f25(0xdf)]()||_0x1b69d0[_0x5bcd9a(0x10c)][_0x5bcd9a(0x97)]()[_0x5bcd9a(0xc2)]($(_0x294f25(0xc9))[_0x294f25(0x88)]()[_0x294f25(0xdf)]())!=-0x1||$(_0x294f25(0xc9))[_0x294f25(0x88)]()[_0x294f25(0xda)]()==_0x294f25(0xb5)?_0x1b69d0[_0x294f25(0x107)]!=_0x294f25(0xb5):_0x1b69d0[_0x294f25(0x107)][_0x294f25(0xdf)]()==$(_0x294f25(0xc9))[_0x294f25(0x88)]()[_0x5bcd9a(0x97)]()||_0x1b69d0[_0x5bcd9a(0xbd)][_0x294f25(0xdf)]()[_0x294f25(0xc4)]($('#txtTitlesearchBox')[_0x294f25(0x88)]()[_0x294f25(0xdf)]())!=-0x1);}));}else{RestQuery=_0x55d1b1(0x9c);var _0x59672d=![];_0x4314d1!=''&&(_0x59672d=!![],RestQuery+=_0x71b92f(0x111)+_0x4314d1+_0x55d1b1(0x81)+_0x4314d1+_0x55d1b1(0xfc)),$(_0x55d1b1(0x10d))[_0x71b92f(0x14b)]()!=''&&(_0x59672d?RestQuery+=_0x55d1b1(0xe6)+$(_0x55d1b1(0x10d))[_0x55d1b1(0x88)]()+_0x55d1b1(0x10f):(RestQuery+=_0x71b92f(0x111)+$(_0x55d1b1(0x10d))[_0x55d1b1(0x88)]()+_0x71b92f(0x14a),_0x59672d=!![])),$(_0x55d1b1(0x10b))[_0x55d1b1(0x88)]()!=_0x55d1b1(0xf4)&&(_0x59672d?(RestQuery+=_0x55d1b1(0xc3)+$(_0x55d1b1(0x10b))[_0x55d1b1(0x88)]()+'\x27',_0x59672d=![]):RestQuery+=_0x55d1b1(0x116)+$(_0x55d1b1(0x10b))[_0x55d1b1(0x88)]()+'\x27');var _0x482bf4=GetFileDetails(_0x55d1b1(0x86)+RestQuery,Documentname,withoutLastChunk);if(_0x482bf4!=undefined)for(var _0xe59c40=0x0;_0xe59c40<_0x482bf4[_0x71b92f(0x155)];_0xe59c40++){var _0xe4a6fb=_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x71b92f(0xda)];_0xe4a6fb!=undefined&&(IsMyDocument==![]&&getFileDetails[_0x55d1b1(0x12a)]({'Path':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x55d1b1(0x8e)],'FileExtension':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x71b92f(0xbd)][_0x55d1b1(0x122)]('.')[0x1],'Author':_0x482bf4[_0xe59c40][_0x71b92f(0xb0)][_0x55d1b1(0xfd)][_0x55d1b1(0x73)],'Size':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x55d1b1(0xc7)],'Name':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x55d1b1(0x107)],'Title':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x71b92f(0x10c)]==null||_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x55d1b1(0x73)]==''?_0x482bf4[_0xe59c40][_0x71b92f(0xb0)][_0x55d1b1(0x107)][_0x55d1b1(0x122)]('.')[0x0]:_0x482bf4[_0xe59c40][_0x71b92f(0xb0)][_0x55d1b1(0x73)],'DocumentNo':_0x482bf4[_0xe59c40][_0x71b92f(0xdc)]==null?'':_0x482bf4[_0xe59c40][_0x71b92f(0xdc)],'Details':_0x482bf4[_0xe59c40][_0x55d1b1(0xcb)],'DocumentType':_0x482bf4[_0xe59c40][_0x55d1b1(0x9f)]==null?'':_0x482bf4[_0xe59c40][_0x71b92f(0xf9)],'LastModifiedTime':_0x482bf4[_0xe59c40][_0x55d1b1(0x134)][_0x55d1b1(0x105)],'Library':AddDocumentLib,'ServerUrl':withoutLastChunk}));}}}GenrateAdSearchGrid(getFileDetails),currentDlg[_0x55d1b1(0x87)]();}catch(_0x58aa06){currentDlg[_0x55d1b1(0x87)](),console['log'](_0x58aa06),alert(_0x71b92f(0x132));}}function GetListId(_0x24a184){var _0x33cabd=a84_0x390c56,_0x32a9ad=_0x3548aa;const _0x2563da=_0x24a184[_0x32a9ad(0x122)](_0x32a9ad(0xf7))[0x0];var _0x55a5a8='';Documentname=_0x55a5a8=_0x2563da[_0x32a9ad(0x122)]('/')[_0x2563da[_0x32a9ad(0x122)]('/')[_0x33cabd(0x155)]-0x1],(_0x55a5a8==_0x32a9ad(0xec)||_0x55a5a8==_0x33cabd(0x114))&&(_0x55a5a8=_0x33cabd(0xef)),(withoutLastChunk=_0x2563da[_0x32a9ad(0x84)](0x0,_0x2563da[_0x32a9ad(0xbc)]('/')),GloblSiteurl=withoutLastChunk);var _0x361daf=withoutLastChunk+_0x32a9ad(0xea)+_0x55a5a8+_0x32a9ad(0xe3);GloblListId=GetListItemById(_0x361daf);}function _0x1032(_0x51de41,_0x425430){var _0xadb292=_0x1ede();return _0x1032=function(_0x5b9bd3,_0x4208af){_0x5b9bd3=_0x5b9bd3-0x73;var _0x1428e6=_0xadb292[_0x5b9bd3];return _0x1428e6;},_0x1032(_0x51de41,_0x425430);}function GetListItemById(_0x46cf43){var _0x3df857=_0x3548aa,_0x2e682c=0x1;return $[_0x3df857(0xfa)]({'url':_0x46cf43,'method':_0x3df857(0x138),'async':![],'headers':{'Accept':_0x3df857(0x10a)},'success':function(_0x359a87,_0x16b4c4,_0x362978){var _0x4a2b1d=_0x359a87['d'];_0x2e682c=_0x359a87['d']['Id'];},'error':function(_0x54b73e,_0x48f221,_0x3036b1){var _0x29ce2b=a84_0x2eff;console[_0x29ce2b(0x12b)]('Failed');}}),_0x2e682c;}function GetFileDetails(_0x5945f2,_0x44994b,_0x28213e){var _0x3d0cca=a84_0x390c56,_0x4ccf2f=_0x3548aa,_0x5d8624;return $[_0x3d0cca(0x157)](getItemsWithQuery(_0x44994b,_0x5945f2,_0x28213e))[_0x4ccf2f(0x9a)](function(_0x30e27b){var _0x5281d1=_0x4ccf2f;_0x30e27b[_0x5281d1(0x77)]>0x0&&(_0x5d8624=_0x30e27b);}),_0x5d8624;}function downloadfiles(){var _0x4963d8=a84_0x390c56,_0x194c03=_0x3548aa;if(arrAdSearchFiles[_0x194c03(0x77)]>0x0)for(var _0x2b6f0b=0x0;_0x2b6f0b<arrAdSearchFiles[_0x194c03(0x77)];_0x2b6f0b++){var _0x44dd5b=arrAdSearchFiles[_0x2b6f0b][_0x194c03(0xbf)],_0x2804ad=document[_0x194c03(0x80)]('a');_0x2804ad[_0x194c03(0x8c)](_0x194c03(0xe8),_0x44dd5b),_0x2804ad[_0x194c03(0x8c)]('download',''),_0x2804ad[_0x194c03(0x8c)](_0x194c03(0xe0),_0x194c03(0xf6)),_0x2804ad[_0x194c03(0x74)](),_0x2b6f0b+0x1==arrAdSearchFiles[_0x194c03(0x77)]&&(arrAdSearchFiles=[],$(_0x194c03(0x97))[_0x4963d8(0x14c)](_0x194c03(0x102),''));}else return alert(_0x194c03(0xe1)),![];}function Tablesorting(_0x515004,_0x56ea0a){var _0x1f8fca=a84_0x390c56,_0xf84d61=_0x3548aa,_0x1e9463=$('#'+_0x515004['id']+'')[_0xf84d61(0x95)](_0xf84d61(0xb7))[_0xf84d61(0x122)]('=');_0x1e9463[0x1]==_0xf84d61(0xef)?$('#'+_0x515004['id']+'')[_0xf84d61(0x95)](_0x1f8fca(0xbb),_0xf84d61(0xc6)):$('#'+_0x515004['id']+'')[_0xf84d61(0x95)](_0xf84d61(0xb7),_0xf84d61(0x83)),table[_0xf84d61(0xd5)]([_0x56ea0a,_0x1e9463[0x1]])[_0xf84d61(0x10e)]();}function clearAll(){var _0x235172=a84_0x390c56,_0x3cecad=_0x3548aa;$(_0x3cecad(0xc9))[_0x3cecad(0x88)](''),$(_0x3cecad(0xe2))[_0x235172(0x14b)](''),$(_0x3cecad(0x10d))[_0x3cecad(0x88)](''),$(_0x3cecad(0x8d))[_0x3cecad(0x88)](_0x3cecad(0xf4));}
+﻿var GloblListId = "";
+var GloblSiteurl = _spPageContextInfo.webAbsoluteUrl;
+var table;
+var getFileDetails = [];
+var path = "DocumentManagementSystem/indramani.gautam@adapt-india.com/";
+var AddDocumentLib;
+var linkDocumentLib;
+var IsMyDocument = false;
+var withoutLastChunk;
+var arrAdSearchFiles = [];
+var ShareAllItemswithFolder = [];
+var txtContent = "";
+var txtTitle = "";
+
+$(document).ready(function () {
+    $("#advanceserach").click(function () {
+        $(".headdingLinks").html('Advance Search');
+        $(".advance_setion").show();
+        $("#DMSTable,#ButtonArea,#SearchArea").hide();
+        if ($('#ddlDocumentType option').length == 0) {
+            BindDMSDocumentType();
+        }
+    });
+    $('#btnSearch').click(function () {
+        StartSearch();
+    });
+    $('#btnAdSearchClear').click(function () {
+        clearAll();
+    });
+    $('#btnAdSearchDownload').click(function () {
+        downloadfiles();
+    });    
+});
+
+//on Search - start the content/Advance Search
+function StartSearch() {
+    $.ajax({
+        type: 'GET',
+        beforeSend: function () {
+            if ($("#chkMyLibrary").prop('checked') == true || $("#chkSharedLibrary").prop('checked') == true) {
+                var dlgTitle = 'Searching...';
+                var dlgMsg = '<br />Please wait!!';
+                var dlgHeight = 200;
+                var dlgWidth = 400;
+                currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+                setTimeout(function () {
+                    getFileDetails = [];
+                    GenrateAdSearchGrid(getFileDetails);
+                }, 100);
+            } else {
+                alert("Please select document library to search.");
+                return false;
+            }
+        },
+        success: function (data) {
+            console.log(data);
+            executeSearch();
+        },
+        error: function (result) {
+            alert(JSON.stringify(result));
+        }
+    }).fail(function (error) {
+        alert(JSON.stringify(error));
+    });
+}
+
+function GenrateAdSearchGrid(results) {
+    var html = "";
+    var filePermission = 'null';
+    $("#SearchResultsGrid").html("");
+    
+    html += '<thead style="display:none">' +
+
+        '</thead>' +
+        '<tbody>';
+
+        
+    for (var i = 0; i < results.length; i++) {
+        var Icon = "file.png";
+        if ("docx" == results[i].FileExtension || "doc" == results[i].FileExtension) {
+            Icon = "docx.png";
+        } else if ("pdf" == results[i].FileExtension) {
+            Icon = "pdf.png";
+        } else if ("jpg" == results[i].FileExtension || "psd" == results[i].FileExtension || "tiff" == results[i].FileExtension || "gif" == results[i].FileExtension || "bmp" == results[i].FileExtension || "jpeg" == results[i].FileExtension || "png" == results[i].FileExtension) {
+            Icon = "image-icon.png";
+        } else if ("xlsx" == results[i].FileExtension) {
+            Icon = "xlsx.png";
+        } else if ("pptx" == results[i].FileExtension) {
+            Icon = "pptx.png";
+        } else if ("txt" == results[i].FileExtension) {
+            Icon = "txt.png";
+        } else if ("csv" == results[i].FileExtension) {
+            Icon = "CSV.png";
+
+        } else if ("zip" == results[i].FileExtension || "rar" == results[i].FileExtension || "7z" == results[i].FileExtension || "arz" == results[i].FileExtension || "cab" == results[i].FileExtension || "rpm" == results[i].FileExtension || "wim" == results[i].FileExtension) {
+            Icon = "ZIP.png";
+
+        } else if ("mp4" == results[i].FileExtension || "wmv" == results[i].FileExtension || "avi" == results[i].FileExtension || "mpeg" == results[i].FileExtension || "flv" == results[i].FileExtension || "mov" == results[i].FileExtension || "wav" == results[i].FileExtension || "ogv" == results[i].FileExtension) {
+            Icon = "video.png";
+
+        } else if ("mp3" == results[i].FileExtension || "wma" == results[i].FileExtension || "aac" == results[i].FileExtension || "pcm" == results[i].FileExtension) {
+            Icon = "audio.png";
+
+        }
+
+        if (results[i].DocumentType == "-Select-" || results[i].DocumentType == null || results[i].DocumentType == "null" || results[i].DocumentType == "--select--") {
+            results[i].DocumentType = '';
+        }
+
+        if (results[i].DocumentNo == null || results[i].DocumentNo == "null") {
+            results[i].DocumentNo = '';
+        }
+
+        html += '<tr>' + '<td class="vertical-align-middle w-2 ">' + '<div class="chexbox_mg">' + '<input type="checkbox" class="chkFileFolder" value="'+results[i].Path+'" id="myCheckbox' + i + '" />' +
+            '<label for="myCheckbox' + i + '">' +
+            '<img width="30px" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Icon + '" />' +
+            '</label>' +
+
+            '</div>' +
+
+            '</td>' +
+
+            '<td class="text-left w-50">' +
+            '<a href="javascript:void(0);" id="Fileid' + i + '" onclick="DisplayFileProperty(this, \'' + results[i].ServerUrl + '\', \'' + results[i].Library + '\', \'' + filePermission + '\');" name="' + results[i].Path + '" class="table-title" target="">' + results[i].Title + '</a>' +
+            '<div class="ellipsis-1">' +
+            '<span>File name:</span> <span>' + results[i].Name + '</span>' +
+            '</div>' +
+            '</td>' +
+            '<td class="w-25">' +
+            '<div class="ellipsis-1">' +
+            '<span data-localize="Category">Category</span><span>:</span> <span>' + results[i].DocumentType + '</span>' +
+            '</div>' +
+            '<div class="ellipsis-1">' +
+            '<span data-localize="Reference">Reference</span><span>:</span> <span>' + results[i].DocumentNo + '</span>' +
+            '</div>' +
+            '<div class="ellipsis-1">' +
+            '<span data-localize="Library">Library</span><span>:</span> <span>' + results[i].Library + '</span>' +
+            '</div>' +
+            '</td>' +
+            '<td class="w-18">' +
+            '<div>' +
+            '<span data-localize="Modify">Modify</span><span>:</span> <span>' + ShowCommonStandardDateFormat(results[i].LastModifiedTime) + '</span>' +
+            '</div>' +
+            '<div class="ellipsis-1">' +
+            '<span data-localize="Author">Author</span><span>:</span> <span>' + results[i].Author + '</span>' +
+            '</div>' +
+            '<div>' +
+            '<span data-localize="Size">Size</span><span>:</span> <span>' + bytesToSize(results[i].Size) + '</span>' +
+            '</div>' +
+            '</td>' +
+            '</tr>';
+    }
+    $("#SearchResultsGrid").html(html);
+    
+     $('#SearchResultsGrid').DataTable();
+    /*
+    if ($.fn.dataTable.isDataTable('#SearchResultsGrid')) {
+        table.destroy();
+        table = $('#SearchResultsGrid').DataTable({
+            "bPaginate": true,
+            "bJQueryUI": true, // ThemeRoller-stöd
+            "bLengthChange": false,
+            "bFilter": true,
+            "bSort": true,
+            "bInfo": true,
+            "bAutoWidth": true,
+            "bProcessing": true,
+            "iDisplayLength": 8,
+            "dom": 'Rlfrtip',
+            "colReorder": {
+                'allowReorder': true
+            },
+            "language": {
+                "searchPlaceholder": "Type to find....",
+                "sSearch": ""
+            }
+        });
+    } else {
+        table = $('#SearchResultsGrid').DataTable({
+            "bPaginate": true,
+            "bJQueryUI": true, // ThemeRoller-stöd
+            "bLengthChange": false,
+            "bFilter": true,
+            "bSort": true,
+            "bInfo": true,
+            "bAutoWidth": true,
+            "bProcessing": true,
+            "iDisplayLength": 8,
+            "dom": 'Rlfrtip',
+            "colReorder": {
+                'allowReorder': true
+            },
+            "language": {
+                "searchPlaceholder": "Type to find....",
+                "sSearch": ""
+            }
+
+        });
+    }
+   */
+    
+    $(".chkFileFolder").click(function () {
+        var Properties = this.value;
+        if (this.checked == true) {
+            arrAdSearchFiles.push({
+                ServerURL: Properties.trim(),
+            });
+        } else {
+            var selected = this.value;
+            arrAdSearchFiles = arrAdSearchFiles.filter(function (obj) {
+                return obj.ServerURL != Properties.trim();
+            });
+        }
+    });
+    ChangeLabels();
+}
+
+
+// Called from the ASPX Page
+function executeSearch() {
+    try {
+        var txtContent = $("#txtContentsearchBox").val().trim();
+        var txtTitle = $("#txtTitlesearchBox").val().trim();
+        AddDocumentLib = "";
+        if($("#chkMyLibrary").prop('checked') == true || $("#chkSharedLibrary").prop('checked') == true) {
+            var strLink = '<a href="javascript:void(0)" name="' + userDocumenturl + '">' + currentClientName + '</a>';
+            IsMyDocument = false;
+            linkDocumentLib = strLink.split('name="')[1].split('">')[0];
+            GetListId(linkDocumentLib)
+            AddDocumentLib = "Guest Client : " + strLink.split('name="')[1].split('">')[1].split('</a>')[0];
+            if($("#chkSharedLibrary").prop('checked') == true) {
+                ShareAllItemswithFolder = [];
+                SharewithMe();
+                getFileDetails = getFileDetails.concat(ShareAllItemswithFolder);
+                if(txtTitle != "") {
+                    var Filenametxt = txtTitle.toString();
+                    getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.Title.toString().includes(Filenametxt));
+                }
+                if($("#txtReference").val() != "") {
+                    getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.DocumentNo.includes($("#txtReference").val()));
+                }
+                if($("#ddlDocumentType option:selected").val() != "All") {
+                    getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.DocumentType.includes($("#ddlDocumentType option:selected").val()));
+                }
+            }
+            if(txtContent != "") {
+                // run
+                //&enablequeryrules='false' &Author='"+_spPageContextInfo.userDisplayName+"'
+                SPSearchResults = {
+                    element: '',
+                    url: '',
+                    init: function(element) {
+                        SPSearchResults.element = element;
+                        SPSearchResults.url = GloblSiteurl + "/_api/search/query?querytext= '" + txtContent + "* '&rowlimit='5000' &sortlist='rank:descending,modifiedby:ascending' &selectproperties='Path,FileExtension,Author,Size,Name,Title,DocumentNo,Regarding,Details,Shared,Department,DepartmentName,Shared With,DocumentType,LastModifiedTime,ID' &refinementfilters='and(ListId:(" + GloblListId + "),IsDocument:(true),Title:(" + txtTitle + "*))'";
+                    },
+                    load: function() {
+                        $.ajax({
+                            url: SPSearchResults.url,
+                            method: "GET",
+                            async: false,
+                            headers: {
+                                "accept": "application/json;odata=verbose",
+                            },
+                            success: SPSearchResults.onSuccess,
+                            error: SPSearchResults.onError
+                        });
+                    },
+                    onSuccess: function(data) {
+                        var results = data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results;
+                        for(var i = 0; i < results.length; i++) {
+                            var findUrl = results[i].Cells.results[0].Value;
+                            if(IsMyDocument == false) {
+                                RestQuery = "?$orderby=Id desc &$select=*,Author/Title &$expand=File,File/Author/Title, Author,File/ListItemAllFields &$filter=FileLeafRef eq '" + results[i].Cells.results[0].Value.split('/')[results[i].Cells.results[0].Value.split('/').length - 1] + "' ";
+                                var selectproperties = GetFileDetails(RestQuery, Documentname, withoutLastChunk);
+                                if(selectproperties != undefined) {
+                                    getFileDetails.push({
+                                        'Path': selectproperties[0].File.ServerRelativeUrl,
+                                        'FileExtension': selectproperties[0].File.Name.split('.')[1],
+                                        'Author': selectproperties[0].File.Author.Title,
+                                        'Size': selectproperties[0].File.Length,
+                                        'Name': selectproperties[0].File.Name,
+                                        'Title': (selectproperties[0].File.Title == null || selectproperties[0].File.Title == "") ? selectproperties[0].File.Name.split('.')[0] : selectproperties[0].File.Title,
+                                        'DocumentNo': selectproperties[0].DocumentNo,
+                                        'Details': selectproperties[0].Details,
+                                        'DocumentType': selectproperties[0].DocumentType,
+                                        'LastModifiedTime': selectproperties[0].File.TimeLastModified,
+                                        'Library': AddDocumentLib,
+                                        'ServerUrl': withoutLastChunk
+                                    });
+                                }
+                            }
+                        }
+                    },
+                    onError: function(err) {
+                        $("#searchResults").html("<h3>An error occured</h3><br />" + JSON.stringify(err));
+                    }
+                };
+                // Call our Init-function
+                SPSearchResults.init($('#searchResults'));
+                // Call our Load-function which will post the actual query
+                SPSearchResults.load();
+                RestQuery = "&$filter= ";
+                var IsAndOp = false;
+                if(txtTitle != "") {
+                    IsAndOp = true;
+                    RestQuery += "substringof('" + txtTitle + "',FileLeafRef) or substringof('" + txtTitle + "',Title) "
+                }
+                if($("#txtReference").val() != "") {
+                    if(IsAndOp) {
+                        RestQuery += "and substringof('" + $("#txtReference").val() + "',DocumentNo)"
+                    } else {
+                        RestQuery += "substringof('" + $("#txtReference").val() + "',DocumentNo)";
+                        IsAndOp = true;
+                    }
+                }
+                if($("#ddlDocumentType option:selected").val() != "All") {
+                    if(IsAndOp) {
+                        RestQuery += "and DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+                        IsAndOp = false
+                    } else {
+                        RestQuery += "DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+                    }
+                }
+                if(txtTitle != "" || $("#txtReference").val() != "" || $("#ddlDocumentType option:selected").val() != "All") {
+                    getFileDetails = getFileDetails.filter(function(obj, index) {
+                        if(obj.DocumentNo == null || obj.DocumentNo == '') {
+                            obj.DocumentNo = "null";
+                        }
+                        if(obj.Title == null || obj.Title == '') {
+                            obj.DocumentNo = "null";
+                        }
+                        if(obj.Name == null || obj.Name == '') {
+                            obj.Name = "null";
+                        }
+                        return ($("#ddlDocumentType").val() == "All" ? obj.DocumentType != "" : obj.DocumentType == $("#ddlDocumentType").val()) && ($("#txtReference").val().trim() == "null" ? obj.DocumentNo != "null" : (obj.DocumentNo.toLowerCase() == $("#txtReference").val().toLowerCase() || obj.DocumentNo.toLowerCase().indexOf($("#txtReference").val().toLowerCase()) != -1)) && ($("#txtTitlesearchBox").val().trim() == "null" ? obj.Title != "null" : (obj.Title.toLowerCase() == $("#txtTitlesearchBox").val().toLowerCase() || obj.Title.toLowerCase().indexOf($("#txtTitlesearchBox").val().toLowerCase()) != -1) || $("#txtTitlesearchBox").val().trim() == "null" ? obj.Name != "null" : (obj.Name.toLowerCase() == $("#txtTitlesearchBox").val().toLowerCase() || obj.Name.toLowerCase().indexOf($("#txtTitlesearchBox").val().toLowerCase()) != -1));
+                    });
+                }
+            } else {
+                if($("#chkMyLibrary").prop('checked') == true) {
+                    RestQuery = "&$filter= ";
+                    var IsAndOp = false;
+                    if(txtTitle != "") {
+                        IsAndOp = true;
+                        RestQuery += "substringof('" + txtTitle + "',FileLeafRef) or substringof('" + txtTitle + "',Title) "
+                    }
+                    if($("#txtReference").val() != "") {
+                        if(IsAndOp) {
+                            RestQuery += "and substringof('" + $("#txtReference").val() + "',DocumentNo)"
+                        } else {
+                            RestQuery += "substringof('" + $("#txtReference").val() + "',DocumentNo)";
+                            IsAndOp = true;
+                        }
+                    }
+                    if($("#ddlDocumentType option:selected").val() != "All") {
+                        if(IsAndOp) {
+                            RestQuery += "and DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+                            IsAndOp = false
+                        } else {
+                            RestQuery += "DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+                        }
+                    }
+                    var selectproperties = GetFileDetails("?$orderby=Id desc &$top=4999 &$select=*,Author/Title &$expand=File,File/Author/Title, Author,File/ListItemAllFields" + RestQuery, Documentname, withoutLastChunk);
+                    if(selectproperties != undefined) {
+                        for(var i = 0; i < selectproperties.length; i++) {
+                            var findUrl = selectproperties[i].File.ServerRelativeUrl;
+                            if(findUrl != undefined) {
+                                if(IsMyDocument == false) {
+                                    getFileDetails.push({
+                                        'Path': selectproperties[i].File.ServerRelativeUrl,
+                                        'FileExtension': selectproperties[i].File.Name.split('.')[1],
+                                        'Author': selectproperties[i].File.Author.Title,
+                                        'Size': selectproperties[i].File.Length,
+                                        'Name': selectproperties[i].File.Name,
+                                        'Title': (selectproperties[i].File.Title == null || selectproperties[i].File.Title == "") ? selectproperties[i].File.Name.split('.')[0] : selectproperties[i].File.Title,
+                                        'DocumentNo': (selectproperties[i].DocumentNo == null) ? "" : selectproperties[i].DocumentNo,
+                                        'Details': selectproperties[i].Details,
+                                        'DocumentType': (selectproperties[i].DocumentType == null) ? "" : selectproperties[i].DocumentType,
+                                        'LastModifiedTime': selectproperties[i].File.TimeLastModified,
+                                        'Library': AddDocumentLib,
+                                        'ServerUrl': withoutLastChunk
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        GenrateAdSearchGrid(getFileDetails)
+        currentDlg.close();
+    } catch (err) {
+        currentDlg.close();
+        console.log(err);
+        alert("The crawling services is failed, try with proper searching text");
+    }
+}
+
+
+
+function SharewithMe() {
+    //itemsShareWithme = [];
+    IsShareDocumnet = true;
+    IsMyDocument = false;
+    if(ShareAllItemswithFolder.length == 0) {
+        itemsShareWithme = GetDocumentsSharedWithMeSearch("SharedWithMe");
+        itemsShareWithme = removeDuplicates(itemsShareWithme);
+        var CountItem = "";
+        for(var i = 0; i < itemsShareWithme.length; i++) {
+            console.log(itemsShareWithme[i].DocumentURL);
+            // debugger
+            CountItem = i;
+            if(itemsShareWithme[i].DocumentType.toLowerCase() == "folder") {
+                console.log(itemsShareWithme[i].DocumentURL);
+                RequestDigest = $("#__REQUESTDIGEST").val();
+                if(itemsShareWithme[i].SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                    $.when(GetFormDigestValue(itemsShareWithme[i].SiteURL)).done(function(GetFormDigestValue) {
+                        RequestDigest = GetFormDigestValue
+                    });
+                }
+                //   selectproperties = "";
+                var ListNamewithfolder = itemsShareWithme[i].DocumentURL;
+                var SiteUrlFolder = itemsShareWithme[i].SiteURL
+                var LibraryName = itemsShareWithme[i].LibraryName
+                $.when(getItemsWithQueryUsersDocuments(ListNamewithfolder, SiteUrlFolder)).done(function(DocumentFolderfiles) {
+                    for(var i = 0; i < DocumentFolderfiles.Files.results.length; i++) {
+                        console.log(DocumentFolderfiles.Files.results[i].Name);
+                        ShareAllItemswithFolder.push({
+                            'Path': DocumentFolderfiles.Files.results[i].ServerRelativeUrl,
+                            'FileExtension': DocumentFolderfiles.Files.results[i].Name.split('.')[1],
+                            'Author': (DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentWrittenBy == null) ? "" : DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentWrittenBy,
+                            'Size': DocumentFolderfiles.Files.results[i].Length,
+                            'Name': DocumentFolderfiles.Files.results[i].Name,
+                            'Title': (DocumentFolderfiles.Files.results[i].Title == null || DocumentFolderfiles.Files.results[i].Title == "") ? DocumentFolderfiles.Files.results[i].Name.split('.')[0] : DocumentFolderfiles.Files.results[i].Title,
+                            'DocumentNo': (DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentNo == null) ? "" : DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentNo,
+                            'Details': DocumentFolderfiles.Files.results[i].ListItemAllFields.Details,
+                            'DocumentType': (DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentType == null) ? "" : DocumentFolderfiles.Files.results[i].ListItemAllFields.DocumentType,
+                            'LastModifiedTime': DocumentFolderfiles.Files.results[i].TimeLastModified,
+                            'Library': LibraryName,
+                            'ServerUrl': SiteUrlFolder,
+                            'SubCategory': (DocumentFolderfiles.Files.results[i].ListItemAllFields.SubCategory == null) ? "" : DocumentFolderfiles.Files.results[i].ListItemAllFields.SubCategory
+                        })
+                    }
+                    for(var j = 0; j < DocumentFolderfiles.Folders.results.length; j++) {
+                        console.log(DocumentFolderfiles.Folders.results[j].Name);
+                        //var SiteUrlFolderServerRelativeUrl = DocumentFolderfiles.Folders.results[j].ServerRelativeUrl
+                        $.when(getItemsWithQueryUsersDocuments(DocumentFolderfiles.Folders.results[j].ServerRelativeUrl, SiteUrlFolder)).done(function(DocumentsubFolderfiles) {
+                            for(var i = 0; i < DocumentsubFolderfiles.Files.results.length; i++) {
+                                console.log(DocumentsubFolderfiles.Files.results[i].Name);
+                                ShareAllItemswithFolder.push({
+                                    'Path': DocumentsubFolderfiles.Files.results[i].ServerRelativeUrl,
+                                    'FileExtension': DocumentsubFolderfiles.Files.results[i].Name.split('.')[1],
+                                    'Author': (DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentWrittenBy == null) ? "" : DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentWrittenBy,
+                                    'Size': DocumentsubFolderfiles.Files.results[i].Length,
+                                    'Name': DocumentsubFolderfiles.Files.results[i].Name,
+                                    'Title': (DocumentsubFolderfiles.Files.results[i].Title == null || DocumentsubFolderfiles.Files.results[i].Title == "") ? DocumentsubFolderfiles.Files.results[i].Name.split('.')[0] : DocumentsubFolderfiles.Files.results[i].Title,
+                                    'DocumentNo': (DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentNo == null) ? "" : DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentNo,
+                                    'Details': DocumentsubFolderfiles.Files.results[i].ListItemAllFields.Details,
+                                    'DocumentType': (DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentType == null) ? "" : DocumentsubFolderfiles.Files.results[i].ListItemAllFields.DocumentType,
+                                    'LastModifiedTime': DocumentsubFolderfiles.Files.results[i].TimeLastModified,
+                                    'Library': LibraryName,
+                                    'ServerUrl': SiteUrlFolder,
+                                    'SubCategory': (DocumentsubFolderfiles.Files.results[i].ListItemAllFields.SubCategory == null) ? "" : DocumentsubFolderfiles.Files.results[i].ListItemAllFields.SubCategory
+                                })
+                            }
+                            for(var i = 0; i < DocumentsubFolderfiles.Folders.results.length; i++) {
+                                DocumentFolderfiles.Folders.results.push(DocumentsubFolderfiles.Folders.results[i]);
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    }
+    RestQuery = "&$filter= ";
+    var IsAndOp = false;
+    if(txtTitle != "") {
+        IsAndOp = true;
+        RestQuery += "substringof('" + txtTitle + "',FileLeafRef) or substringof('" + txtTitle + "',Title) "
+    }
+    if($("#txtReference").val() != "") {
+        if(IsAndOp) {
+            RestQuery += "and substringof('" + $("#txtReference").val() + "',DocumentNo)"
+        } else {
+            RestQuery += "substringof('" + $("#txtReference").val() + "',DocumentNo)";
+            IsAndOp = true;
+        }
+    }
+    if($("#ddlDocumentType option:selected").val() != "All") {
+        if(IsAndOp) {
+            RestQuery += "and DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+            IsAndOp = false
+        } else {
+            RestQuery += "DocumentType eq '" + $("#ddlDocumentType option:selected").val() + "'"
+        }
+    }
+    var selectproperties = "";
+    if(itemsShareWithme.length > 0 && IsShareDocumnet == true) {
+        // debugger
+        for(var i = 0; i < itemsShareWithme.length; i++) {
+            if(itemsShareWithme[i].DocumentType.toLowerCase() == "file") {
+                RestQuery = "&$filter=Id eq '" + itemsShareWithme[i].DOC_ID.ID + "'" 
+                RequestDigest = $("#__REQUESTDIGEST").val();
+                if(itemsShareWithme[i].SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                    $.when(GetFormDigestValue(itemsShareWithme[i].SiteURL)).done(function(GetFormDigestValue) {
+                        RequestDigest = GetFormDigestValue
+                    });
+                }
+                selectproperties = "";
+                if(itemsShareWithme[i].LibraryName == "Shared Documents" || itemsShareWithme[i].LibraryName == "Shared%20Documents") {
+                    itemsShareWithme[i].LibraryName = "Documents";
+                }
+                selectproperties = GetFileDetails("?$orderby=Id desc &$top=4999 &$select=*,Author/Title &$expand=File,File/Author/Title, Author,File/ListItemAllFields" + RestQuery, itemsShareWithme[i].LibraryName, itemsShareWithme[i].SiteURL);
+                if(selectproperties != undefined) {
+                    var findUrl = selectproperties[0].File.ServerRelativeUrl;
+                    if(findUrl != undefined) {
+                        getFileDetails.push({
+                            'Path': selectproperties[0].File.ServerRelativeUrl,
+                            'FileExtension': selectproperties[0].File.Name.split('.')[1],
+                            'Author': selectproperties[0].File.Author.Title,
+                            'Size': selectproperties[0].File.Length,
+                            'Name': selectproperties[0].File.Name,
+                            'Title': (selectproperties[0].File.Title == null || selectproperties[0].File.Title == "") ? selectproperties[0].File.Name.split('.')[0] : selectproperties[0].File.Title,
+                            'DocumentNo': (selectproperties[0].DocumentNo == null) ? "" : selectproperties[0].DocumentNo,
+                            'Details': selectproperties[0].Details,
+                            'DocumentType': (selectproperties[0].DocumentType == null) ? "" : selectproperties[0].DocumentType,
+                            'LastModifiedTime': selectproperties[0].File.TimeLastModified,
+                            'Library': itemsShareWithme[i].LibraryName,
+                            'ServerUrl': itemsShareWithme[i].SiteURL,
+                            'SubCategory': (selectproperties[0].SubCategory == null) ? "" : selectproperties[0].SubCategory,
+                        })
+                    }
+                }
+            }
+        }
+        getFileDetails = getFileDetails.concat(ShareAllItemswithFolder);
+        if(txtTitle != "") {
+            var Filenametxt = txtTitle.toString();
+            getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.Title.toString().includes(Filenametxt));
+        }
+        if($("#txtReference").val() != "") {
+            getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.DocumentNo.includes($("#txtReference").val()));
+        }
+        if($("#ddlDocumentType option:selected").val() != "All") {
+            getFileDetails = getFileDetails.filter(getFileDetails => getFileDetails.DocumentType.includes($("#ddlDocumentType option:selected").val()));
+        }
+    }
+}
+
+
+
+function GetListId(GetdocUrl) {
+    const UrlLink = GetdocUrl.split('/Forms')[0];
+    var TempDocName = '';
+    Documentname = TempDocName = UrlLink.split('/')[UrlLink.split('/').length - 1];
+    if (TempDocName == "Shared%20Documents" || TempDocName == "Shared Documents") {
+        TempDocName = "Documents";
+    }
+    withoutLastChunk = UrlLink.slice(0, UrlLink.lastIndexOf("/"));
+    GloblSiteurl = withoutLastChunk;
+    //https://adaptindia.sharepoint.com/sites/Titan_2_4_QC/adaptindia/DMS/6a80cb64-991e-4461-9dea-1fc36fdfd220/_api/lists/GetByTitle('Documents')/id
+    var DynmicUrl = withoutLastChunk + "/_api/lists/GetByTitle('" + TempDocName + "')/id"
+    GloblListId = GetListItemById(DynmicUrl);
+}
+
+function GetListItemById(UrlLink) {
+    // Specify the Id of the Item that you want to fetch
+    var Itemid = 1;
+    $.ajax({
+        url: UrlLink,
+        method: "GET",
+        async: false,
+        headers: {
+            // Accept header: Specifies the format for response data from the server.
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function (data, status, xhr) {
+            var dataresults = data.d;
+            Itemid = data.d.Id;
+            //console.log("ID- " + dataresults.Id + " | " + dataresults.Description + " | " + dataresults.New_x0020_Column);
+        },
+        error: function (xhr, status, error) {
+            console.log("Failed");
+        }
+    });
+    return Itemid;
+}
+
+function GetFileDetails(RestQuery, listName, Siteurl) {
+    var FileDetails;
+    $.when(getItemsWithQuery(listName, RestQuery, Siteurl)).done(function (docsresults) {
+        if (docsresults.length > 0) {
+            FileDetails = docsresults;
+        }
+    });
+    return FileDetails;
+}
+
+//to download multiple files - Search box
+function downloadfiles() {
+    if (arrAdSearchFiles.length > 0) {
+        for (var index = 0; index < arrAdSearchFiles.length; index++) {
+            var url = arrAdSearchFiles[index].ServerURL;
+            var a = document.createElement("a");
+            a.setAttribute('href', url);
+            a.setAttribute('download', '');
+            a.setAttribute('target', '_blank');
+            a.click();
+            if ((index + 1) == arrAdSearchFiles.length) {
+                arrAdSearchFiles = [];
+                $('.chkFileFolder').prop("checked", "");
+            }
+        }
+    }
+    else {
+        alert("Please select any file first.");
+        return false;
+    }
+}
+
+function Tablesorting(id, columnIndex) {
+
+    var direction = $("#" + id.id + "").attr('name').split('=');
+
+    if (direction[1] == "asc") {
+        $("#" + id.id + "").attr("name", "=desc");
+    } else {
+        $("#" + id.id + "").attr("name", "=asc");
+    }
+    table.order([columnIndex, direction[1]]).draw();
+}
+
+//to clear all control boxes
+function clearAll() {
+    $("#txtTitlesearchBox").val("");
+    $("#txtContentsearchBox").val("");
+    $("#txtReference").val("");
+    $("#ddlDocumentType").val("All");
+}
+
+
+//Get all the Documents which are shared with me/shared by me.
+function GetDocumentsSharedWithMeSearch(SectionName) {
+    //Geenrating the THead of table
+    LoggedUserSPGp = GetSPGroupSearch();
+    var SharedUserFilter = "";
+    for (var gp = 0; gp < LoggedUserSPGp.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + LoggedUserSPGp[gp].Id + "' ";
+    }
+    var EveryoneUserId = getTargetGroupIdSearch();
+    for (var gp = 0; gp < EveryoneUserId.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + EveryoneUserId[gp] + "' ";
+    }
+
+    SharedUserFilter = SharedUserFilter.substring(0, SharedUserFilter.length - 1) + ")";
+
+    if (SectionName == 'SharedByMe') {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail,DOC_ID/ID,DOC_ID/Title,DOC_ID/DocumentNo,DOC_ID/DocumentType&$orderby=Modified desc&$expand=DOC_ID,SharedUsers,Author&$filter=(Author/EMail eq '" + _spPageContextInfo.userEmail + "' and IsArchive ne 1) ";
+    } else if (SectionName == "Archive") {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail,DOC_ID/ID,DOC_ID/Title,DOC_ID/DocumentNo,DOC_ID/DocumentType&$orderby=Modified desc&$expand=DOC_ID,SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and (PermissionType eq 'Read' or PermissionType eq 'Contribute' or PermissionType eq 'Restricted View') and (PermissionStatus ne 'Deleted') and (IsArchive eq 1)";
+    } else {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail,DOC_ID/ID,DOC_ID/Title,DOC_ID/DocumentNo,DOC_ID/DocumentType&$orderby=Modified desc&$expand=DOC_ID,SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and PermissionStatus ne 'Revoked'";
+    }
+    $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function(items) {
+        if (SectionName == 'SharedByMe') {
+            arrSharedBy = items.filter(function(f) {
+                return f;
+            });
+        } else {
+            arrSharedTo = items.filter(function(f) {
+                return f;
+            });
+        }
+    });
+
+    return arrSharedTo;
+}
+
+
+function GetSPGroupSearch() {
+    var arrSPGroup = [];
+    var endpointUrl = _spPageContextInfo.webServerRelativeUrl + '/_api/web/currentuser/?$expand=groups';
+    $.ajax({
+        url: endpointUrl,
+        method: "GET",
+        async: false,
+        contentType: "application/json;odata=verbose",
+        headers: {
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function(data) {
+            var arrAllGp = [];
+            arrAllGp = data.d.Groups.results;
+            if (arrAllGp.length > 0) {
+                arrSPGroup = arrAllGp.filter(function(obj) {
+                    return obj.OwnerTitle !== "System Account" && obj.Title !== "Contributors" && obj.Title !== "Owners" && obj.Title !== "SPMember" && obj.Title !== "TFW_Employees";
+                });
+            }
+        },
+        eror: function(error) {
+            alert(JSON.stringify(error));
+            waitingDialog.hide();
+        }
+    });
+    return arrSPGroup;
+}
+
+//get GroupId of 'Everyone' and 'All_Employee'
+function getTargetGroupIdSearch() {
+    var arrEveryOneId = [];
+    var siteurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getbyname('ALL_EMPLOYEE')?$select=id";
+    $.ajax({
+        url: siteurl,
+        type: 'GET',
+        headers: {
+            'accept': 'application/json;odata=verbose'
+        },
+        async: false,
+        success: function(data, status, xhr) {
+            arrEveryOneId.push(data.d.Id);
+        },
+        error: function(data, status, error) {
+            console.log(data.responseJSON.error);
+        }
+    });
+
+
+    return arrEveryOneId;
+}
+
+function GetFormDigestValue(SiteUrl) {
+    // _spPageContextInfo.webAbsoluteUrl - will give absolute URL of the site where you are running the code.
+    // You can replace this with other site URL where you want to apply the function
+    var dfd = $.Deferred();
+    $.ajax({
+        url: SiteUrl + "/_api/contextinfo",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose"
+        },
+        success: function(data) {
+            var FormDigestValue = data.d.GetContextWebInformation.FormDigestValue;
+            dfd.resolve(FormDigestValue);
+            //console.log(FormDigestValue);
+        },
+        error: function(xhr, status, error) {
+            console.log("Failed");
+        }
+    });
+    return dfd.promise();
+}
+
+function getItemsWithQueryUsersDocuments(ListName, Siteurl) {
+    var dfd = $.Deferred();
+    //var siteurl = Siteurl + "/_api/web/Lists/GetByTitle('" + ListName + "')/Items?$select=Acknowledgement,ID,File_x0020_Type,ServerRedirectedEmbedUri,DocumentNo,PermissionLevel,DocumentType,Details,DocumentWrittenBy,Modified,Title,SecurityLevel,AccessLevel,Author/Title,Author/EMail,File/Name,File/ServerRelativeUrl&$top=5000&$orderby=Modified desc&$expand=Author,File";
+    var siteurl = Siteurl + "/_api/Web/GetFolderByServerRelativeUrl('" + ListName + "')?$select=Author/Title,ID,EncodedAbsUrl,File_x0020_Type,DocumentWrittenBy&$expand=Author,Folders,Folders/ListItemAllFields/HasUniqueRoleAssignments,Files/ModifiedBy/Title,Files/ListItemAllFields/HasUniqueRoleAssignments,Folders/ListItemAllFields,Files,Files/ListItemAllFields,Files/ListItemAllFields/FileSizeDisplay&$orderby=Modified desc";
+    $.ajax({
+        url: siteurl,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function(data) {
+            dfd.resolve(data.d);
+            //   console.log();
+        },
+        error: function(error) {
+            //alert(JSON.stringify(error));
+            dfd.reject(error);
+            alert(error.responseJSON.error.message.value);
+        }
+    });
+    return dfd.promise();
+}
+
+function removeDuplicates(array) {
+    let uniq = {};
+    return array.filter(obj => !uniq[obj.DocumentID] && (uniq[obj.DocumentID] = true))
+}
+

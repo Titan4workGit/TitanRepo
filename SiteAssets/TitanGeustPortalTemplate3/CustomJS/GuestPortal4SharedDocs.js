@@ -1,1 +1,4322 @@
-var a86_0x227ab8=a86_0x3481;(function(_0x2edad8,_0x2c6af5){var _0x5d4ba4=a86_0x3481,_0x31a4da=_0x2edad8();while(!![]){try{var _0x297de9=-parseInt(_0x5d4ba4(0x1dc))/0x1*(-parseInt(_0x5d4ba4(0x299))/0x2)+-parseInt(_0x5d4ba4(0x1e2))/0x3+-parseInt(_0x5d4ba4(0x2ed))/0x4*(parseInt(_0x5d4ba4(0x2c1))/0x5)+parseInt(_0x5d4ba4(0x1df))/0x6+parseInt(_0x5d4ba4(0x238))/0x7*(-parseInt(_0x5d4ba4(0x3eb))/0x8)+parseInt(_0x5d4ba4(0x1e6))/0x9+-parseInt(_0x5d4ba4(0x39c))/0xa*(parseInt(_0x5d4ba4(0x311))/0xb);if(_0x297de9===_0x2c6af5)break;else _0x31a4da['push'](_0x31a4da['shift']());}catch(_0x2e77ab){_0x31a4da['push'](_0x31a4da['shift']());}}}(a86_0x1e25,0xabeee));var _0x5a5f90=_0x23d6;(function(_0x484255,_0x1efaba){var _0x1ab83b=a86_0x3481,_0x84e905=_0x23d6,_0x21e938=_0x484255();while(!![]){try{var _0x5bdfee=parseInt(_0x84e905(0x2a0))/0x1+-parseInt(_0x84e905(0x15e))/0x2+-parseInt(_0x84e905(0x2eb))/0x3+parseInt(_0x84e905(0x13a))/0x4+-parseInt(_0x84e905(0x1e4))/0x5+parseInt(_0x84e905(0x82))/0x6*(parseInt(_0x84e905(0x2d4))/0x7)+parseInt(_0x84e905(0xaf))/0x8*(parseInt(_0x84e905(0x275))/0x9);if(_0x5bdfee===_0x1efaba)break;else _0x21e938[_0x1ab83b(0x37d)](_0x21e938['shift']());}catch(_0x93178c){_0x21e938['push'](_0x21e938[_0x1ab83b(0x2eb)]());}}}(_0x579d,0x9e8ac));var arrayLinksDoctype=new Array(),LoggedIn_TimeZone=new Date()[_0x5a5f90(0xaa)]()[_0x5a5f90(0x210)](/([A-Z]+[\+-][0-9]+.*)/)[0x1],to=[],SharingUserEmail=[],SharingUserId=[],SharingUserName=[],ShareHostoryTable='',SharedMeTable='',selectedHistoryDoc=[],arrSharedBy=[],arrSharedTo=[],AllApprovers=[],FilePermissions=[],arrAckAllUser=[],currentSharedHistory=[],PermissionStatus='',ShareUserPrincipleMail=[],currentSharedItemId='';$(document)[a86_0x227ab8(0x27f)](function(){var _0x24a659=a86_0x227ab8,_0xb6784b=_0x5a5f90;initializePeoplePicker(_0xb6784b(0xf0),!![]),onChangeSharing(_0x24a659(0x384),_0xb6784b(0xf0),_0xb6784b(0x93)),$(_0xb6784b(0x1b6))[_0xb6784b(0x87)](function(){var _0x551f46=_0x24a659,_0x3db024=_0xb6784b;arrPermission=[],$(_0x551f46(0x37e))[_0x551f46(0x290)](),$(_0x3db024(0x1a9))[_0x3db024(0x209)](),waitingDialog[_0x3db024(0x209)](),$(_0x551f46(0x358))[_0x3db024(0x12a)](_0x3db024(0x269)),$(_0x551f46(0x1c4))[_0x3db024(0x12a)](''),$(_0x551f46(0x417))[_0x551f46(0x1ac)](_0x3db024(0x269)),$(_0x3db024(0x1e7))[_0x3db024(0x12a)](_0x3db024(0x235)),$(_0x3db024(0x1c5))[_0x3db024(0x12a)](_0x3db024(0x269)),setTimeout(function(){var _0x4f60e6=_0x551f46,_0xdfffd9=_0x3db024;$(_0xdfffd9(0x240))[_0x4f60e6(0x35f)](_0xdfffd9(0x10e)),currentSectionType=_0xdfffd9(0x2d3),DMS_Type=_0xdfffd9(0x2ba),$(_0xdfffd9(0x2b7))[_0x4f60e6(0x290)](),GetDocumentsSharedWithMe(_0xdfffd9(0x2d3));},0x64);}),$(_0x24a659(0x2f5))[_0x24a659(0x233)](function(_0x4187a6){var _0x95e115=_0x24a659,_0x4a44e1=_0xb6784b;this[_0x95e115(0x2cb)]==!![]?($(_0x4a44e1(0x207))[_0x4a44e1(0x27a)](_0x95e115(0x2cb),''),$(_0x4a44e1(0x207))[_0x4a44e1(0x1c9)](_0x4a44e1(0x87))):($(_0x4a44e1(0x207))['prop'](_0x4a44e1(0x1b5),''),to=[]);}),$(_0xb6784b(0x1da))[_0xb6784b(0x87)](function(){var _0x112a1c=_0xb6784b;$(_0x112a1c(0x247))['prop'](_0x112a1c(0x1b5),$(this)[_0x112a1c(0x27a)]('checked')),selectedHistoryDoc=[],selectedHistoryDocrelativeurl=[],$(_0x112a1c(0x247))[_0x112a1c(0x245)](function(){var _0x1d71da=a86_0x3481,_0x3dd670=_0x112a1c;$(this)[_0x3dd670(0x27a)](_0x3dd670(0x1b5))==!![]?(selectedHistoryDoc[_0x1d71da(0x37d)]($(this)[_0x3dd670(0x12a)]()),$(_0x3dd670(0x248))[_0x3dd670(0x209)]()):$(_0x1d71da(0x217))[_0x3dd670(0x8b)]();});}),$(_0x24a659(0x2a1))[_0xb6784b(0x87)](function(_0x5a1c3a){var _0x1510f5=_0x24a659,_0x39a53b=_0xb6784b;currentSharedItemId='',currentSharedHistory=[],$(_0x39a53b(0x20e))[_0x1510f5(0x1ac)](_0x39a53b(0x269));}),$(_0xb6784b(0x1de))[_0xb6784b(0x87)](function(){var _0x321d9d=_0x24a659,_0x46d443=_0xb6784b;arrPermission=[],$(_0x46d443(0x2a2))[_0x46d443(0x8b)](),$(_0x46d443(0x1a9))[_0x46d443(0x209)](),waitingDialog[_0x321d9d(0x31e)](),$(_0x46d443(0x2fe))[_0x46d443(0x8b)](),$(_0x46d443(0x22c))[_0x46d443(0x12a)](_0x321d9d(0x227)),$(_0x46d443(0x125))[_0x321d9d(0x1ac)](''),$(_0x46d443(0x134))[_0x46d443(0x12a)](_0x321d9d(0x227)),$(_0x321d9d(0x323))[_0x46d443(0x12a)](_0x46d443(0x235)),$(_0x46d443(0x1c5))[_0x46d443(0x12a)](_0x46d443(0x269)),setTimeout(function(){var _0x55046f=_0x321d9d,_0x6c0927=_0x46d443;$(_0x6c0927(0x240))[_0x6c0927(0x1ee)](_0x6c0927(0xda)),currentSectionType=_0x55046f(0x1f2),DMS_Type=_0x6c0927(0xda),$(_0x6c0927(0x2b7))['show'](),GetDocumentsSharedWithMe(_0x6c0927(0x22e));},0x64);}),$(_0xb6784b(0x23d))[_0xb6784b(0x87)](function(){var _0xb40611=_0x24a659,_0x39aa20=_0xb6784b;$(_0x39aa20(0x2a2))[_0x39aa20(0x8b)](),$(_0x39aa20(0x1a9))[_0xb40611(0x31e)](),arrPermission=[],waitingDialog[_0x39aa20(0x209)](),$(_0x39aa20(0x22c))[_0x39aa20(0x12a)](_0x39aa20(0x269)),$(_0x39aa20(0x125))[_0x39aa20(0x12a)](''),$(_0x39aa20(0x134))['val'](_0xb40611(0x227)),$(_0x39aa20(0x1e7))[_0x39aa20(0x12a)](_0x39aa20(0x235)),$(_0xb40611(0x1af))[_0x39aa20(0x12a)](_0x39aa20(0x269)),setTimeout(function(){var _0x154c3c=_0xb40611,_0x296991=_0x39aa20;$(_0x154c3c(0x25a))[_0x296991(0x1ee)](_0x296991(0xa7)),currentSectionType=_0x296991(0xa7),DMS_Type=_0x296991(0xa7),$(_0x296991(0x2b7))[_0x296991(0x8b)](),GetDocumentsSharedWithMe(_0x296991(0xa7));},0x64);}),$(_0x24a659(0x3f0))[_0xb6784b(0xb8)](function(_0x1bcb8a){var _0x308175=_0x24a659,_0x10a2e2=_0xb6784b;FilterShareHistory(DocumentId,$(_0x10a2e2(0x1c0))[_0x10a2e2(0x1ee)](),$(_0x308175(0x376))[_0x308175(0x35f)](),$(_0x308175(0x276))[_0x10a2e2(0x1ee)](),$(_0x10a2e2(0x12b))[_0x10a2e2(0x1ee)](),_0x10a2e2(0x16d),_0x10a2e2(0x30a),currentSharedItemId);}),$(_0xb6784b(0x20e))[_0xb6784b(0xb8)](function(_0x2954b3){var _0x12c384=_0x24a659,_0x5ed440=_0xb6784b;FilterShareHistory(DocumentId,$(_0x5ed440(0x1c0))[_0x5ed440(0x1ee)](),$('#FileTitle')['text'](),$(_0x5ed440(0x238))[_0x5ed440(0x1ee)](),$(_0x12c384(0x23e))[_0x5ed440(0x1ee)](),_0x5ed440(0x16d),_0x5ed440(0x30a),currentSharedItemId);}),$(_0x24a659(0x34e))[_0xb6784b(0x87)](function(){var _0x239756=_0x24a659;waitingDialog[_0x239756(0x31e)](),setTimeout(function(){var _0x5002ec=_0x239756,_0x10c15c=_0x23d6;if($(_0x10c15c(0x240))[_0x5002ec(0x35f)]()==_0x10c15c(0xda))GetDocumentsSharedFilter(_0x5002ec(0x1f2));else $(_0x10c15c(0x240))[_0x10c15c(0x1ee)]()=='Archive'?GetDocumentsSharedFilter(_0x10c15c(0xa7)):GetDocumentsSharedFilter(_0x10c15c(0x2d3));},0x64);}),$(_0xb6784b(0x16e))[_0xb6784b(0x87)](function(){var _0x543ebc=_0x24a659,_0x23bf3f=_0xb6784b;$(_0x23bf3f(0x2b1))[_0x23bf3f(0x1ee)]()!=''&&EmptyPeoplePicker(_0x23bf3f(0x221)),$(_0x23bf3f(0x22c))[_0x23bf3f(0x12a)](_0x23bf3f(0x269)),$(_0x23bf3f(0x125))[_0x23bf3f(0x12a)](''),$(_0x23bf3f(0x134))[_0x23bf3f(0x12a)](_0x23bf3f(0x269)),$(_0x23bf3f(0x1e7))[_0x543ebc(0x1ac)](_0x23bf3f(0x235)),$(_0x23bf3f(0x1c5))[_0x23bf3f(0x12a)]('All'),$(_0x543ebc(0x313))[_0x23bf3f(0x12a)]('');}),$(_0x24a659(0x33a))[_0xb6784b(0x87)](function(){var _0x1b4b7d=_0x24a659,_0x2f7a71=[];if(arrFileFolder['length']>0x0)AddToArchive();else return alert(_0x1b4b7d(0x40d)),![];}),$(_0xb6784b(0x186))[_0xb6784b(0x87)](function(){var _0x23843b=_0xb6784b,_0x345376=[];if(arrFileFolder['length']>0x0)RemoveArchive();else return alert(_0x23843b(0x239)),![];}),$(_0xb6784b(0xde))[_0xb6784b(0x87)](function(){var _0x4a74fe=_0x24a659,_0x1888ab=_0xb6784b;$(_0x1888ab(0x1e3))[_0x1888ab(0x209)](),$(_0x1888ab(0xe8))[_0x1888ab(0x8b)](),$(_0x1888ab(0x309))[_0x1888ab(0x209)](),$(_0x1888ab(0x26f))[_0x1888ab(0x2e6)]==0x0&&BindDMSDocumentType(),$(_0x4a74fe(0x25a))[_0x1888ab(0x1ee)]()==_0x1888ab(0xda)?$(_0x4a74fe(0x1c3))[_0x1888ab(0x1ee)](_0x1888ab(0x264)):$(_0x1888ab(0x1fe))['text'](_0x1888ab(0x21d)),$(_0x4a74fe(0x1ad))[_0x1888ab(0xd0)]()==''&&initializePeoplePicker(_0x1888ab(0x221),!![]);}),$(_0xb6784b(0xef))[_0xb6784b(0x87)](function(){var _0xcac3b5=_0xb6784b;if(arrFileFolder[_0xcac3b5(0x2e6)]>0x0)waitingDialog[_0xcac3b5(0x209)](),setTimeout(function(){RevokeMultiPermission();},0x64);else return alert(_0xcac3b5(0x1db)),![];}),$(_0xb6784b(0x16b))[_0x24a659(0x233)](function(){var _0x28e959=_0x24a659,_0x4b5bf=_0xb6784b,_0xe5cec7=[];SharingUserEmail=[],ShareUserPrincipleMail=[],SharingUserId=[],SharingUserName=[],$(_0x4b5bf(0x187))[_0x28e959(0x28a)](),_0xe5cec7=arrFileFolder[_0x4b5bf(0x273)](function(_0x3ca3ad){var _0x574482=_0x4b5bf;return _0x3ca3ad[_0x574482(0xdd)][_0x574482(0x300)]()==_0x574482(0xdb);}),_0xe5cec7[_0x4b5bf(0x2e6)]>0x0&&$(_0x4b5bf(0x1d1))[_0x4b5bf(0x8b)]();if(arrFileFolder[_0x4b5bf(0x2e6)]>0x0)$(_0x4b5bf(0x281))[_0x4b5bf(0x2d8)](_0x4b5bf(0x237)),$('#expiredats')[_0x4b5bf(0x2d8)]({'changeMonth':!![],'changeYear':!![],'minDate':0x1}),$(_0x28e959(0x2ce))[_0x4b5bf(0x2d8)](_0x28e959(0x2ad),_0x28e959(0x2ab),_0x4b5bf(0x257)),$(_0x28e959(0x1ff))[_0x4b5bf(0x209)](),$(_0x4b5bf(0x124))[_0x4b5bf(0x8b)]();else return alert(_0x4b5bf(0x114)),![];}),$(_0xb6784b(0x12e))[_0x24a659(0x233)](function(){ShareFileValidation()==!![]&&shareFileMulti();}),$(_0xb6784b(0x1c7))['on'](_0xb6784b(0xb8),function(){var _0x2dc6b2=_0x24a659,_0x237f0c=_0xb6784b,_0x515090=$(_0x237f0c(0x1b4))[_0x237f0c(0x2c5)](_0x237f0c(0xc9));$(_0x2dc6b2(0x3cc))['each'](function(){var _0x3f4692=_0x2dc6b2,_0x48e9b8=_0x237f0c,_0x6ca0be=$(this)[_0x3f4692(0x1d7)](_0x48e9b8(0xed));_0x515090==_0x6ca0be&&$(this)[_0x48e9b8(0x209)]()[_0x48e9b8(0x2a6)]()[_0x48e9b8(0x8b)]();});}),$(_0xb6784b(0x175))[_0xb6784b(0x87)](function(){var _0x13cd59=_0x24a659,_0x31d9ca=_0xb6784b;$(_0x31d9ca(0x1c2))[_0x31d9ca(0x12a)](''),$(_0x13cd59(0x364))[_0x31d9ca(0x12a)](_0x31d9ca(0x20f)),$(_0x31d9ca(0x1c7))[_0x31d9ca(0x1c9)](_0x31d9ca(0xb8)),$(_0x13cd59(0x1f0))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),_0x31d9ca(0x1b5)),$(_0x31d9ca(0x108))[_0x31d9ca(0x27a)](_0x13cd59(0x2cb),''),$(_0x31d9ca(0x281))[_0x31d9ca(0xe7)](_0x13cd59(0x239)),$(_0x31d9ca(0x266))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),''),$(_0x31d9ca(0xcc))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),''),$(_0x31d9ca(0x2fb))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),''),$(_0x13cd59(0x1ea))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),''),$(_0x31d9ca(0x1b3))[_0x31d9ca(0x27a)](_0x31d9ca(0x1b5),''),$(_0x31d9ca(0x293))[_0x31d9ca(0x1ee)](_0x31d9ca(0x288)),$(_0x31d9ca(0x271))[_0x31d9ca(0x12a)](_0x31d9ca(0x12f)),$(_0x31d9ca(0x271))[_0x31d9ca(0x1c9)](_0x31d9ca(0xb8)),$(_0x31d9ca(0x1d1))[_0x31d9ca(0x209)]();}),$(_0xb6784b(0x2e7))[_0x24a659(0x233)](function(){var _0x70227e=_0x24a659,_0x2d6e2f=_0xb6784b;$(_0x2d6e2f(0x281))[_0x70227e(0x347)](_0x2d6e2f(0x237)),$(_0x2d6e2f(0x281))['datepicker']({'changeMonth':!![],'changeYear':!![],'minDate':0x1}),$(_0x70227e(0x2ce))[_0x2d6e2f(0x2d8)](_0x2d6e2f(0x13f),_0x2d6e2f(0x17f),'MM\x20dd,\x20yy'),$(_0x70227e(0x1ff))[_0x70227e(0x290)](),$(_0x2d6e2f(0x124))[_0x2d6e2f(0x209)]();}),$(_0xb6784b(0x124))[_0xb6784b(0x87)](function(){ShareFileValidation()==!![]&&shareFile();}),$(_0xb6784b(0x1c8))[_0xb6784b(0x87)](function(_0x3a3bfd){var _0x2c71d2=_0x24a659,_0x165897=_0xb6784b;$(_0x165897(0x26f))[_0x2c71d2(0x3c5)]==0x0&&BindDMSDocumentType(),$(_0x165897(0xe9))[_0x165897(0xd0)]()==''&&initializePeoplePicker(_0x165897(0x221),!![]),$('.CloseShareFilter')[_0x165897(0x1c9)](_0x165897(0x87)),$(_0x165897(0x1c5))[_0x165897(0x12a)]('Pending'),$(_0x165897(0x1e3))[_0x165897(0x1c9)](_0x165897(0x87));});});function GetDocumentsSharedWithMe(_0x3c6cfa){var _0x58e9c8=a86_0x227ab8,_0x2303b5=_0x5a5f90;$(_0x58e9c8(0x241))['empty'](),$(_0x2303b5(0x118))[_0x2303b5(0xc4)]()[_0x58e9c8(0x34d)](_0x2303b5(0x1f4));var _0x1635cf='',_0x20e99c='';_0x1635cf+=_0x2303b5(0x215)+_0x58e9c8(0x333)+_0x2303b5(0xd6),$(_0x58e9c8(0x362))[_0x58e9c8(0x2be)]();if(_0x3c6cfa=='SharedByMe')var _0x4ab23d=[_0x2303b5(0x16d),_0x2303b5(0x1a6),'Reference',_0x2303b5(0x28e),_0x58e9c8(0x39f),_0x2303b5(0x1ca),''];else var _0x4ab23d=[_0x2303b5(0x16d),'Title',_0x2303b5(0x229),_0x2303b5(0x28e),_0x58e9c8(0x268),_0x58e9c8(0x2c7)];for(var _0x7cbd42=0x0;_0x7cbd42<_0x4ab23d[_0x2303b5(0x2e6)];_0x7cbd42++){_0x1635cf+=_0x2303b5(0x303)+_0x4ab23d[_0x7cbd42]+'\x22>'+_0x4ab23d[_0x7cbd42]+_0x2303b5(0xd6);}$(_0x2303b5(0x1ba))[_0x2303b5(0x2b4)](_0x1635cf),LoggedUserSPGp=GetSPGroup();var _0x38b4b7='';for(var _0x5c3974=0x0;_0x5c3974<LoggedUserSPGp['length'];_0x5c3974++){_0x38b4b7+=_0x58e9c8(0x246)+LoggedUserSPGp[_0x5c3974]['Id']+'\x27\x20';}_0x38b4b7=_0x38b4b7[_0x2303b5(0x14c)](0x0,_0x38b4b7[_0x2303b5(0x2e6)]-0x1)+')';if(_0x3c6cfa==_0x2303b5(0x22e))var _0x2f8ad9=_0x2303b5(0x17a)+_spPageContextInfo[_0x2303b5(0xf1)]+_0x2303b5(0x11a);else{if(_0x3c6cfa==_0x2303b5(0xa7))var _0x2f8ad9=_0x2303b5(0x2a8)+_spPageContextInfo[_0x2303b5(0xa9)]+'\x27\x20'+_0x38b4b7+_0x2303b5(0x1ff);else var _0x2f8ad9=_0x2303b5(0x2a8)+_spPageContextInfo[_0x2303b5(0xa9)]+'\x27\x20'+_0x38b4b7+_0x2303b5(0x140);}$[_0x2303b5(0x28d)](getItemsWithQuery(_0x2303b5(0x28b),_0x2f8ad9,_spPageContextInfo[_0x58e9c8(0x318)]))[_0x2303b5(0x1ad)](function(_0x16833c){var _0x224ebd=_0x58e9c8,_0x415e65=_0x2303b5;_0x3c6cfa==_0x415e65(0x22e)?arrSharedBy=_0x16833c[_0x415e65(0x273)](function(_0x5a1715){return _0x5a1715;}):arrSharedTo=_0x16833c[_0x415e65(0x273)](function(_0x347ba9){return _0x347ba9;}),_0x16833c[_0x415e65(0x2e6)]?($(_0x415e65(0x2c4))[_0x415e65(0x209)](),_0x3c6cfa==_0x415e65(0x22e)?SharedByMeItems(_0x16833c):(_0x16833c=_0x16833c[_0x415e65(0x273)](function(_0x5295fa){var _0x1b9832=_0x415e65;return _0x5295fa[_0x1b9832(0x292)]!=_0x1b9832(0x15f);}),SharedWithMeItems(_0x16833c,_0x224ebd(0x23d))),waitingDialog['hide']()):($(_0x415e65(0x2c4))[_0x415e65(0x8b)](),$(_0x224ebd(0x286))[_0x224ebd(0x290)](),$(_0x224ebd(0x3a6))[_0x224ebd(0x290)](),$(_0x415e65(0x2fe))[_0x415e65(0x8b)](),waitingDialog[_0x415e65(0x8b)](),_0x20e99c+=_0x415e65(0x1ea),$(_0x415e65(0x30b))[_0x415e65(0xc4)]()['append'](_0x20e99c));});}function GetDocumentsSharedWithMe_Temp(_0x1fc44c){var _0x233bbc=a86_0x227ab8,_0x2ffcb8=_0x5a5f90;LoggedUserSPGp=GetSPGroup();var _0x5ad1c1='';for(var _0x19ae1f=0x0;_0x19ae1f<LoggedUserSPGp[_0x2ffcb8(0x2e6)];_0x19ae1f++){_0x5ad1c1+=_0x2ffcb8(0x123)+LoggedUserSPGp[_0x19ae1f]['Id']+'\x27\x20';}_0x5ad1c1=_0x5ad1c1[_0x2ffcb8(0x14c)](0x0,_0x5ad1c1[_0x233bbc(0x3c5)]-0x1)+')';var _0x103cd2=_0x2ffcb8(0x2a8)+_spPageContextInfo[_0x233bbc(0x29f)]+'\x27\x20'+_0x5ad1c1+_0x2ffcb8(0x140);$[_0x2ffcb8(0x28d)](getItemsWithQuery(_0x2ffcb8(0x28b),_0x103cd2,_spPageContextInfo[_0x2ffcb8(0x23f)]))[_0x233bbc(0x231)](function(_0x20437c){var _0x22dc7a=_0x2ffcb8;_0x20437c[_0x22dc7a(0x2e6)]&&(_0x20437c=_0x20437c[_0x22dc7a(0x273)](function(_0x273758){var _0x245911=_0x22dc7a;return _0x273758[_0x245911(0x292)]!=_0x245911(0x15f);}));});}function SharedWithMeItems(_0x65bda9){var _0x1088a0=a86_0x227ab8,_0x3d49c3=_0x5a5f90;arrFileFolder=[];var _0x45c8f0=[],_0x348cae=[],_0x3ee8ee=0x0;ActionHTML='';var _0x319ec3=_0x3d49c3(0x2d3),_0x4d332e='';for(var _0x519535=0x0;_0x519535<_0x65bda9[_0x3d49c3(0x2e6)];_0x519535++){var _0x549aa9='',_0x2d445e=_0x65bda9[_0x519535][_0x3d49c3(0x13b)]!=null&&_0x65bda9[_0x519535][_0x3d49c3(0x13b)]!=_0x3d49c3(0x110)?_0x65bda9[_0x519535][_0x3d49c3(0x13b)]:'';if(_0x65bda9[_0x519535][_0x3d49c3(0x2ef)]==!![]||_0x65bda9[_0x519535][_0x3d49c3(0x2ef)]==_0x3d49c3(0x9b)){}else _0x549aa9=_0x2d445e;var _0x1e338c=_0x65bda9[_0x519535][_0x3d49c3(0x88)]?_0x65bda9[_0x519535][_0x3d49c3(0x88)]:'',_0x52aeff=_0x65bda9[_0x519535][_0x3d49c3(0x121)]?_0x65bda9[_0x519535][_0x3d49c3(0x121)]:'',_0x7ba618=_0x65bda9[_0x519535][_0x1088a0(0x34f)]?_0x65bda9[_0x519535][_0x3d49c3(0x88)]:'',_0x140156=_0x65bda9[_0x519535][_0x3d49c3(0x170)]?_0x65bda9[_0x519535][_0x3d49c3(0x170)]:'',_0x29e1f0=_0x65bda9[_0x519535][_0x1088a0(0x3bd)];_0x29e1f0!='Revoked'&&_0x29e1f0!=_0x1088a0(0x303)?_0x29e1f0=_0x140156:_0x29e1f0=_0x29e1f0[_0x3d49c3(0x24b)](_0x3d49c3(0x130)),(_0x7ba618==_0x1088a0(0x383)||_0x7ba618==_0x3d49c3(0x1ae))&&(_0x7ba618='');var _0xabfa16=_0x65bda9[_0x519535][_0x3d49c3(0x1a6)]?_0x65bda9[_0x519535][_0x3d49c3(0x1a6)]:'',_0x100dc3=_0x65bda9[_0x519535][_0x1088a0(0x372)]?_0x65bda9[_0x519535][_0x3d49c3(0x8d)]:'',_0x4f6bed=_0x65bda9[_0x519535][_0x3d49c3(0x1f0)][_0x3d49c3(0x1a6)],_0x5702fa=_0x65bda9[_0x519535][_0x3d49c3(0x2f9)];(_0x5702fa==null||_0x5702fa=='')&&(_0x5702fa=_0x65bda9[_0x519535][_0x3d49c3(0x91)]),_0x5702fa=_0x5702fa[_0x3d49c3(0x1f2)](_0x3d49c3(0xe0),_0x1088a0(0x2b4));var _0x3b37a8='',_0x152332='',_0x560c94='',_0xb039d8='.'+_0xabfa16[_0x3d49c3(0x14c)](_0xabfa16[_0x3d49c3(0x302)]('.')+0x1);sharedFrom=getSharedFromValue(_0x65bda9[_0x519535][_0x1088a0(0x39a)],_0x65bda9[_0x519535][_0x3d49c3(0x122)]);if(_0x1e338c[_0x3d49c3(0x300)]()!=_0x3d49c3(0xdb)){Icon=_0x3d49c3(0x1b7);if(_0x1088a0(0x262)==_0xb039d8||_0x3d49c3(0x177)==_0xb039d8)Icon=_0x3d49c3(0x1a2);else{if(_0x3d49c3(0x133)==_0xb039d8)Icon='pdf.png';else{if(_0x3d49c3(0x2a7)==_0xb039d8||_0x3d49c3(0x285)==_0xb039d8||_0x1088a0(0x32d)==_0xb039d8||_0x3d49c3(0x2f1)==_0xb039d8||_0x1088a0(0x283)==_0xb039d8||_0x1088a0(0x242)==_0xb039d8||_0x3d49c3(0x84)==_0xb039d8)Icon=_0x3d49c3(0x2c0);else{if(_0x3d49c3(0x13c)==_0xb039d8||_0x3d49c3(0xac)==_0xb039d8)Icon=_0x3d49c3(0x1b8);else{if(_0x3d49c3(0x29c)==_0xb039d8||_0x3d49c3(0x156)==_0xb039d8)Icon=_0x3d49c3(0xd1);else{if(_0x3d49c3(0x11e)==_0xb039d8)Icon=_0x1088a0(0x396);else{if(_0x3d49c3(0x1f9)==_0xb039d8)Icon=_0x3d49c3(0x2d5);else{if(_0x3d49c3(0x2cd)==_0xb039d8||_0x3d49c3(0xfa)==_0xb039d8||_0x3d49c3(0x18e)==_0xb039d8||_0x3d49c3(0x301)==_0xb039d8||_0x3d49c3(0x228)==_0xb039d8||_0x3d49c3(0x25e)==_0xb039d8||_0x3d49c3(0x29b)==_0xb039d8)Icon=_0x3d49c3(0x1e5);else{if(_0x3d49c3(0x242)==_0xb039d8||_0x1088a0(0x21c)==_0xb039d8||_0x3d49c3(0x113)==_0xb039d8||_0x3d49c3(0x1f6)==_0xb039d8||_0x3d49c3(0xfd)==_0xb039d8||_0x3d49c3(0x168)==_0xb039d8||_0x3d49c3(0x181)==_0xb039d8||_0x3d49c3(0x24c)==_0xb039d8)Icon=_0x3d49c3(0x1bc);else(_0x3d49c3(0x10b)==_0xb039d8||_0x3d49c3(0x1dc)==_0xb039d8||_0x3d49c3(0x129)==_0xb039d8||_0x3d49c3(0x19b)==_0xb039d8)&&(Icon=_0x3d49c3(0x1d3));}}}}}}}}if(_0x65bda9[_0x519535][_0x1088a0(0x3bd)]!=_0x3d49c3(0x15f)&&_0x65bda9[_0x519535][_0x3d49c3(0x292)]!=_0x3d49c3(0xcf)){var _0xe20824='';_0x65bda9[_0x519535][_0x3d49c3(0x111)]==null||_0x65bda9[_0x519535][_0x3d49c3(0x111)]==_0x3d49c3(0x26b)||_0x65bda9[_0x519535][_0x3d49c3(0x111)]==_0x3d49c3(0x225)?DMS_Type=_0x1088a0(0x3a0):DMS_Type=_0x65bda9[_0x519535][_0x3d49c3(0x111)]+':\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x122)],_0x65bda9[_0x519535][_0x3d49c3(0x243)]==_0x1088a0(0x33d)||_0x65bda9[_0x519535][_0x3d49c3(0x243)]==null||_0x65bda9[_0x519535][_0x3d49c3(0x243)]==_0x3d49c3(0x75)||_0x65bda9[_0x519535][_0x3d49c3(0x243)]==undefined?encodeURI(_0x65bda9[_0x519535][_0x3d49c3(0x91)])[_0x3d49c3(0x19f)](_0x1088a0(0x1d6))!=-0x1?_0xe20824=window[_0x3d49c3(0x2f2)][_0x3d49c3(0x148)]+encodeURI(_0x65bda9[_0x519535][_0x3d49c3(0x91)])[_0x3d49c3(0x2b8)]('DepartmentalDMS')[0x0]:_0xe20824=_spPageContextInfo[_0x3d49c3(0x23f)]:_0xe20824=_0x65bda9[_0x519535][_0x3d49c3(0x243)];var _0x4289fe=_0x3d49c3(0x201);_0x3b37a8=_0x3d49c3(0x2a1)+_0x65bda9[_0x519535][_0x1088a0(0x1e3)]+_0x3d49c3(0xa8)+_0x65bda9[_0x519535]['Id']+_0x3d49c3(0x310)+_0xe20824+_0x3d49c3(0x28a)+DMS_Type+_0x1088a0(0x291)+_0x29e1f0+_0x3d49c3(0x28a)+_0x4289fe+_0x3d49c3(0x28a)+_0x4289fe+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x1088a0(0x1e3)]+_0x1088a0(0x291)+_0x65bda9[_0x519535]['Id']+_0x3d49c3(0x28a)+_0x4289fe+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x3d49c3(0x2ad)]+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x1088a0(0x255)]+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x3d49c3(0x2fa)]+_0x3d49c3(0x27e)+_0xabfa16+_0x3d49c3(0x217),_0x560c94=_0x3d49c3(0x298)+encodeURI(_0x65bda9[_0x519535][_0x3d49c3(0x91)])+_0x3d49c3(0x94);}else _0x3b37a8=_0x3d49c3(0x2a1)+_0x65bda9[_0x519535][_0x3d49c3(0x91)]+'\x22>'+_0xabfa16+_0x1088a0(0x33e);}else{Icon='folder.png';var _0x5aa3d2='';_0x65bda9[_0x519535][_0x3d49c3(0x111)]==null||_0x65bda9[_0x519535]['SharedType']==_0x3d49c3(0x26b)||_0x65bda9[_0x519535]['SharedType']==_0x3d49c3(0x225)?_0x5aa3d2=_0x3d49c3(0x8a):_0x5aa3d2=_0x65bda9[_0x519535][_0x3d49c3(0x111)]+':\x20'+_0x65bda9[_0x519535][_0x1088a0(0x390)];var _0x3b23a3=_0x29e1f0;_0x29e1f0==_0x3d49c3(0x290)&&(_0x3b23a3=_0x3d49c3(0x15f)),RunBreadCrumb=!![],_0x3b37a8+=_0x3d49c3(0x14d)+_0x65bda9[_0x519535]['Id']+_0x3d49c3(0x2da)+encodeURI(_0x65bda9[_0x519535][_0x1088a0(0x1e3)])+_0x3d49c3(0x28a)+_0x3b23a3+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x3d49c3(0x243)]+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x1088a0(0x30f)]+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x3d49c3(0x1a6)]+_0x3d49c3(0x28a)+_0x549aa9+_0x3d49c3(0x28a)+_0x7ba618+_0x3d49c3(0x28a)+_0x4f6bed+'\x27,\x20\x27'+sharedFrom+_0x3d49c3(0x28a)+_0x65bda9[_0x519535][_0x3d49c3(0x24a)]+_0x1088a0(0x291)+_0x5aa3d2+_0x3d49c3(0x28a)+RunBreadCrumb+_0x1088a0(0x3d4)+_0xabfa16+_0x3d49c3(0x217),_0x100dc3=_0xabfa16,_0x7ba618=_0x3d49c3(0x2fc);}if(_0x65bda9[_0x519535][_0x3d49c3(0x250)]==!![])var _0x3c37a0=AckUserStatus(_0x65bda9[_0x519535]['Id'],_spPageContextInfo[_0x1088a0(0x2f3)],_0x65bda9[_0x519535]['DocumentURL'],_0x65bda9[_0x519535][_0x3d49c3(0x243)],_0x65bda9[_0x519535][_0x1088a0(0x2c6)],_0x65bda9[_0x519535][_0x3d49c3(0xb9)],_0x65bda9[_0x519535][_0x3d49c3(0x122)]);else var _0x3c37a0='';_0x3c37a0[_0x3d49c3(0x19f)](_0x3d49c3(0x261))!==-0x1&&_0x3ee8ee++;if($(_0x3d49c3(0x1c5))[_0x3d49c3(0x12a)]()==_0x3d49c3(0x2e1))_0x3c37a0[_0x1088a0(0x2df)](_0x3d49c3(0x2e1))!==-0x1&&(_0x4d332e+=_0x3d49c3(0x109)+_0x65bda9[_0x519535]['Id']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x88)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x1b9)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x23c)]+',\x20'+_0x65bda9[_0x519535]['DocumentURL']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x246)]['results'][0x0]['ID']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x243)]+',\x20'+_0x65bda9[_0x519535][_0x1088a0(0x2a8)]+_0x3d49c3(0x8f)+_0x519535+'\x22\x20class=\x22chkShareToMe\x22><label\x20for=\x22ShareToMe'+_0x519535+'\x22>',_0x4d332e+=_0x3d49c3(0x27c)+Icon+_0x3d49c3(0x2d9)+Icon+_0x1088a0(0x226),_0x4d332e+=_0x3d49c3(0x2f4)+_0x3b37a8+_0x3d49c3(0x2a9),_0x65bda9[_0x519535][_0x3d49c3(0x8d)]=_0x65bda9[_0x519535][_0x1088a0(0x372)]?_0x65bda9[_0x519535][_0x3d49c3(0x8d)]:'',_0x4d332e+=_0x3d49c3(0x2b5)+_0x65bda9[_0x519535][_0x3d49c3(0x8d)]+'</div></td>',_0x4d332e+=_0x3d49c3(0x2b5)+_0x549aa9+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x7ba618+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x4f6bed+_0x3d49c3(0x202),_0x4d332e+=_0x1088a0(0x216)+_0x29e1f0+'<br>',_0x4d332e+=''+_0x3c37a0+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2cf));else $(_0x3d49c3(0x1c5))[_0x3d49c3(0x12a)]()==_0x3d49c3(0x259)?_0x3c37a0['search'](/\bAcknowledge\b/)>=0x0&&(_0x4d332e+=_0x3d49c3(0x109)+_0x65bda9[_0x519535]['Id']+',\x20'+_0x65bda9[_0x519535][_0x1088a0(0x34f)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x1b9)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x23c)]+',\x20'+_0x65bda9[_0x519535]['DocumentURL']+',\x20'+_0x65bda9[_0x519535]['SharedUsers'][_0x3d49c3(0x29f)][0x0]['ID']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x243)]+',\x20'+_0x65bda9[_0x519535][_0x1088a0(0x2a8)]+_0x3d49c3(0x8f)+_0x519535+_0x3d49c3(0x1ec)+_0x519535+'\x22>',_0x4d332e+=_0x1088a0(0x413)+Icon+_0x3d49c3(0x2d9)+Icon+_0x1088a0(0x226),_0x4d332e+=_0x3d49c3(0x2f4)+_0x3b37a8+_0x3d49c3(0x2a9),_0x65bda9[_0x519535][_0x3d49c3(0x8d)]=_0x65bda9[_0x519535][_0x3d49c3(0x8d)]?_0x65bda9[_0x519535]['SharedFileTitle']:'',_0x4d332e+=_0x3d49c3(0x2b5)+_0x65bda9[_0x519535][_0x3d49c3(0x8d)]+_0x3d49c3(0x202),_0x4d332e+=_0x1088a0(0x216)+_0x549aa9+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x7ba618+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x4f6bed+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x29e1f0+_0x3d49c3(0xeb),_0x4d332e+=''+_0x3c37a0+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2cf)):(_0x4d332e+=_0x3d49c3(0x109)+_0x65bda9[_0x519535]['Id']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x88)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x1b9)]+',\x20'+_0x65bda9[_0x519535][_0x1088a0(0x40a)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x91)]+',\x20'+_0x65bda9[_0x519535]['SharedUsers'][_0x3d49c3(0x29f)][0x0]['ID']+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x243)]+',\x20'+_0x65bda9[_0x519535][_0x3d49c3(0x24a)]+_0x3d49c3(0x8f)+_0x519535+_0x3d49c3(0x1ec)+_0x519535+'\x22>',_0x4d332e+=_0x3d49c3(0x27c)+Icon+_0x3d49c3(0x2d9)+Icon+_0x3d49c3(0x2ed),_0x4d332e+=_0x3d49c3(0x2f4)+_0x3b37a8+_0x3d49c3(0x2a9),_0x65bda9[_0x519535][_0x1088a0(0x372)]=_0x65bda9[_0x519535][_0x3d49c3(0x8d)]?_0x65bda9[_0x519535][_0x1088a0(0x372)]:'',_0x4d332e+=_0x3d49c3(0x2b5)+_0x65bda9[_0x519535][_0x3d49c3(0x8d)]+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x549aa9+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x7ba618+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x4f6bed+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2b5)+_0x29e1f0+_0x3d49c3(0xeb),_0x4d332e+=''+_0x3c37a0+_0x3d49c3(0x202),_0x4d332e+=_0x3d49c3(0x2cf));}MyDoctable!=''&&MyDoctable[_0x3d49c3(0x237)](),$(_0x3d49c3(0x30b))[_0x3d49c3(0xc4)]()[_0x3d49c3(0x2b4)](_0x4d332e),_0x3ee8ee==0x0?$(_0x1088a0(0x287))['hide']():($(_0x3d49c3(0x1c8))[_0x3d49c3(0x1ee)](_0x3ee8ee),$(_0x1088a0(0x287))[_0x3d49c3(0x209)]()),$(_0x3d49c3(0xad))[_0x3d49c3(0x87)](function(){var _0x39936e=_0x1088a0,_0x2ec16b=_0x3d49c3,_0x4afaa8=this[_0x2ec16b(0xc9)][_0x2ec16b(0x2b8)](',');if(this[_0x2ec16b(0x1b5)]==!![])arrFileFolder[_0x39936e(0x37d)]({'SharedItemId':_0x4afaa8[0x0][_0x2ec16b(0x234)](),'type':_0x4afaa8[0x1][_0x2ec16b(0x234)](),'SharedTo':_0x4afaa8[0x2][_0x2ec16b(0x234)](),'DocumentId':_0x4afaa8[0x3][_0x2ec16b(0x234)](),'ServerURL':_0x4afaa8[0x4][_0x2ec16b(0x234)](),'userOrgId':_0x4afaa8[0x5][_0x2ec16b(0x234)](),'SiteURL':_0x4afaa8[0x6][_0x39936e(0x3a4)]()});else{var _0x19435a=this[_0x2ec16b(0xc9)];arrFileFolder=arrFileFolder[_0x2ec16b(0x273)](function(_0x459499){var _0x388d7f=_0x39936e,_0x1667cb=_0x2ec16b;return _0x459499[_0x388d7f(0x212)]!=_0x4afaa8[0x0][_0x1667cb(0x234)]();});}}),$(_0x3d49c3(0x2bd))[_0x3d49c3(0x87)](function(_0x493e27){var _0x2877f5=_0x3d49c3;waitingDialog[_0x2877f5(0x209)](),setTimeout(function(){var _0x138596=a86_0x3481,_0x42c74f=_0x2877f5;$(_0x42c74f(0x2bd))[_0x138596(0x409)](_0x42c74f(0x1b5))==!![]?($(_0x42c74f(0xad))[_0x42c74f(0x27a)](_0x42c74f(0x1b5),''),$(_0x138596(0x1db))[_0x42c74f(0x1c9)](_0x42c74f(0x87))):($('.chkShareToMe')[_0x42c74f(0x27a)](_0x138596(0x2cb),''),arrFileFolder=[]),waitingDialog[_0x42c74f(0x8b)]();},0x64);}),Tableagination();}function SharedByMeItems(_0xe1c888){var _0x1f62dc=a86_0x227ab8,_0x1672e5=_0x5a5f90;arrFileFolder=[];var _0x28d940=[],_0x49f003=[],_0x46cc58=[],_0x5e9947=[],_0x283a3d='',_0x12ee19=_0x1672e5(0x277),_0x67be3d=[],_0xa5f4b7=_0x1672e5(0x22e),_0x47e19b='';for(var _0x583499=0x0;_0x583499<_0xe1c888[_0x1672e5(0x2e6)];_0x583499++){_0xe1c888[_0x583499][_0x1672e5(0x24a)]='No',_0x12ee19=_0x1672e5(0x277);var _0x1aa6e1='',_0x77b220='',_0x5d0fa6='';if(jQuery[_0x1672e5(0x1ce)](_0xe1c888[_0x583499][_0x1672e5(0x23c)],_0x49f003)=='-1'){_0x49f003[_0x1f62dc(0x37d)](_0xe1c888[_0x583499][_0x1672e5(0x23c)]),_0x67be3d=_0xe1c888[_0x1672e5(0x273)](function(_0x491772){var _0x42a402=_0x1672e5;return _0x491772[_0x42a402(0x23c)]==_0xe1c888[_0x583499][_0x42a402(0x23c)];});var _0x489598=_0x67be3d[0x0]['Title'];_0x67be3d[_0x1672e5(0x2e6)]>0x1&&(_0x12ee19=_0x1672e5(0x2b9)),_0x46cc58=_0x67be3d[_0x1672e5(0x273)](function(_0x1c7ec5){var _0x4ce254=_0x1f62dc,_0x2f9992=_0x1672e5;return _0x1c7ec5[_0x2f9992(0x292)]!=_0x4ce254(0x21b)&&_0x1c7ec5[_0x4ce254(0x3bd)]!=_0x2f9992(0xcf);}),_0x46cc58[_0x1f62dc(0x3c5)]==0x0&&(_0x12ee19=_0x1f62dc(0x38f));var _0x824669=_0x67be3d[0x0][_0x1672e5(0x13b)]?_0x67be3d[0x0][_0x1672e5(0x13b)]:'',_0x1b1bbd=_0x67be3d[0x0][_0x1672e5(0x1f0)][_0x1f62dc(0x1b5)],_0x11c710=_0x67be3d[0x0][_0x1672e5(0x88)]?_0x67be3d[0x0][_0x1672e5(0x88)]:'',_0x320a7a=_0x67be3d[0x0][_0x1f62dc(0x2d1)]?_0x67be3d[0x0][_0x1672e5(0x121)]:'',_0x5604a6=_0x67be3d[0x0][_0x1672e5(0x88)]?_0x67be3d[0x0]['DocumentType']:'';(_0x5604a6==_0x1f62dc(0x383)||_0x5604a6==_0x1672e5(0x1ae))&&(_0x5604a6='');var _0x2fdbf8=_0x67be3d[0x0]['SharedFileTitle']?_0x67be3d[0x0][_0x1f62dc(0x372)]:'',_0x159226=_0x67be3d[0x0][_0x1672e5(0x2f9)];(_0x159226==null||_0x159226=='')&&(_0x159226=_0x67be3d[0x0][_0x1672e5(0x91)]),_0x159226=_0x159226[_0x1672e5(0x1f2)](_0x1672e5(0xe0),_0x1672e5(0xb7));var _0xf50ecc='.'+_0x489598[_0x1f62dc(0x3f7)](_0x489598[_0x1672e5(0x302)]('.')+0x1);sharedFrom=getSharedFromValue(_0x67be3d[0x0][_0x1f62dc(0x39a)],_0x67be3d[0x0][_0x1f62dc(0x390)]);if(_0x11c710[_0x1672e5(0x300)]()!=_0x1672e5(0xdb)){Icon=_0x1672e5(0x1b7);if(_0x1f62dc(0x262)==_0xf50ecc||_0x1672e5(0x177)==_0xf50ecc)Icon=_0x1672e5(0x1a2);else{if(_0x1672e5(0x133)==_0xf50ecc)Icon=_0x1672e5(0x1fa);else{if(_0x1f62dc(0x38a)==_0xf50ecc||_0x1672e5(0x285)==_0xf50ecc||_0x1672e5(0x76)==_0xf50ecc||_0x1f62dc(0x26a)==_0xf50ecc||_0x1672e5(0x224)==_0xf50ecc||_0x1672e5(0x17d)==_0xf50ecc||_0x1672e5(0x84)==_0xf50ecc)Icon=_0x1672e5(0x2c0);else{if(_0x1672e5(0x13c)==_0xf50ecc||_0x1672e5(0xac)==_0xf50ecc)Icon=_0x1672e5(0x1b8);else{if(_0x1f62dc(0x3a7)==_0xf50ecc||_0x1672e5(0x156)==_0xf50ecc)Icon=_0x1f62dc(0x3a9);else{if(_0x1672e5(0x11e)==_0xf50ecc)Icon=_0x1672e5(0x262);else{if(_0x1f62dc(0x228)==_0xf50ecc)Icon=_0x1672e5(0x2d5);else{if(_0x1672e5(0x2cd)==_0xf50ecc||_0x1672e5(0xfa)==_0xf50ecc||_0x1672e5(0x18e)==_0xf50ecc||_0x1672e5(0x301)==_0xf50ecc||_0x1f62dc(0x34b)==_0xf50ecc||_0x1672e5(0x25e)==_0xf50ecc||_0x1672e5(0x29b)==_0xf50ecc)Icon='ZIP.png';else{if(_0x1672e5(0x242)==_0xf50ecc||_0x1672e5(0x2b2)==_0xf50ecc||_0x1672e5(0x113)==_0xf50ecc||_0x1f62dc(0x2f1)==_0xf50ecc||_0x1672e5(0xfd)==_0xf50ecc||_0x1672e5(0x168)==_0xf50ecc||_0x1672e5(0x181)==_0xf50ecc||_0x1f62dc(0x250)==_0xf50ecc)Icon=_0x1672e5(0x1bc);else(_0x1f62dc(0x35b)==_0xf50ecc||_0x1672e5(0x1dc)==_0xf50ecc||_0x1672e5(0x129)==_0xf50ecc||_0x1672e5(0x19b)==_0xf50ecc)&&(Icon=_0x1672e5(0x1d3));}}}}}}}}var _0x4f7a45='';_0x67be3d[0x0][_0x1672e5(0x111)]==null||_0x67be3d[0x0][_0x1672e5(0x111)]==_0x1672e5(0x26b)||_0x67be3d[0x0][_0x1672e5(0x111)]==_0x1672e5(0x225)?DMS_Type=_0x1672e5(0x8a):DMS_Type=_0x67be3d[0x0][_0x1672e5(0x111)]+':\x20'+_0x67be3d[0x0][_0x1672e5(0x122)],_0x67be3d[0x0][_0x1672e5(0x243)]==_0x1672e5(0x110)||_0x67be3d[0x0][_0x1672e5(0x243)]==null||_0x67be3d[0x0][_0x1672e5(0x243)]==_0x1672e5(0x75)||_0x67be3d[0x0][_0x1672e5(0x243)]==undefined?encodeURI(_0x67be3d[0x0][_0x1672e5(0x91)])[_0x1f62dc(0x2df)](_0x1672e5(0x19c))!=-0x1?_0x4f7a45=window[_0x1672e5(0x2f2)][_0x1f62dc(0x385)]+encodeURI(_0x67be3d[0x0][_0x1672e5(0x91)])['split'](_0x1672e5(0x19c))[0x0]:_0x4f7a45=_spPageContextInfo[_0x1672e5(0x23f)]:_0x4f7a45=_0x67be3d[0x0][_0x1672e5(0x243)];var _0xe132ff=_0x1f62dc(0x350);_0x1aa6e1=_0x1672e5(0x2a1)+_0x67be3d[0x0][_0x1672e5(0x91)]+_0x1672e5(0xa8)+_0x67be3d[0x0]['Id']+_0x1672e5(0x310)+_0x4f7a45+_0x1672e5(0x28a)+DMS_Type+_0x1672e5(0x28a)+_0x12ee19+_0x1672e5(0x28a)+_0xe132ff+_0x1672e5(0x28a)+_0xe132ff+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x91)]+_0x1672e5(0x28a)+_0x67be3d[0x0]['Id']+_0x1672e5(0x28a)+_0xe132ff+_0x1f62dc(0x29d)+_0x67be3d[0x0][_0x1672e5(0x2ad)]+_0x1672e5(0x1e6)+_0x67be3d[_0x583499][_0x1f62dc(0x255)]+_0x1672e5(0x28a)+_0x67be3d[_0x583499][_0x1672e5(0x2fa)]+'\x27);\x22>'+_0x489598+_0x1672e5(0x217),_0x5d0fa6=_0x1672e5(0x298)+encodeURI(_0x67be3d[0x0][_0x1672e5(0x91)])+_0x1672e5(0x94);}else{Icon=_0x1f62dc(0x24f);var _0x148ce3='';_0x67be3d[0x0][_0x1f62dc(0x39a)]==null||_0x67be3d[0x0][_0x1f62dc(0x39a)]==_0x1672e5(0x26b)||_0x67be3d[0x0][_0x1f62dc(0x39a)]==_0x1672e5(0x225)?_0x148ce3=_0x1672e5(0x8a):_0x148ce3=_0x67be3d[0x0][_0x1672e5(0x111)]+':\x20'+_0x67be3d[0x0][_0x1f62dc(0x390)];var _0x25d9ae=_0x12ee19;_0x12ee19==_0x1672e5(0x29a)&&(_0x25d9ae=_0x1672e5(0x15f)),RunBreadCrumb=!![],_0x1aa6e1+='<a\x20href=\x22javascript:void(0);\x22\x20rel=\x22'+_0x67be3d[0x0]['Id']+_0x1672e5(0x2da)+encodeURI(_0x67be3d[0x0][_0x1f62dc(0x1e3)])+_0x1f62dc(0x291)+_0x25d9ae+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x243)]+_0x1672e5(0x28a)+_0x67be3d[0x0]['LibraryName']+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x1a6)]+_0x1672e5(0x28a)+_0x824669+_0x1f62dc(0x291)+_0x5604a6+_0x1f62dc(0x291)+_0x1b1bbd+_0x1672e5(0x28a)+sharedFrom+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x24a)]+_0x1672e5(0x28a)+_0x148ce3+_0x1672e5(0x28a)+RunBreadCrumb+_0x1672e5(0x267)+_0x489598+_0x1672e5(0x217),_0x2fdbf8=_0x489598,_0x5604a6=_0x1672e5(0x2fc);}_0x12ee19==_0x1672e5(0x29a)?_0x47e19b+=_0x1672e5(0x8e)+_0x583499+_0x1672e5(0x1ed)+_0x583499+'\x22>':_0x47e19b+=_0x1f62dc(0x363)+_0x67be3d[0x0]['Id']+',\x20'+_0x67be3d[0x0][_0x1672e5(0x88)]+',\x20'+_0x67be3d[0x0][_0x1672e5(0x1b9)]+',\x20'+_0x67be3d[0x0][_0x1672e5(0x23c)]+',\x20'+_0x67be3d[0x0][_0x1672e5(0x91)]+',\x20'+_0x67be3d[0x0][_0x1672e5(0x246)][_0x1f62dc(0x314)][0x0]['ID']+',\x20'+_0x67be3d[0x0][_0x1672e5(0x243)]+',\x20'+_0x67be3d[0x0][_0x1672e5(0x24a)]+_0x1672e5(0x8f)+_0x583499+_0x1672e5(0x1ec)+_0x583499+'\x22>';if(_0x12ee19!=_0x1672e5(0x29a)){_0x5e9947=_0x67be3d[_0x1672e5(0x273)](function(_0x553664){var _0x2491ea=_0x1f62dc,_0x275bec=_0x1672e5;return _0x553664[_0x275bec(0x1b9)]==_0x275bec(0x1bb)&&(_0x553664[_0x275bec(0x292)]!=_0x275bec(0x15f)&&_0x553664[_0x275bec(0x292)]!=_0x2491ea(0x303));});var _0x3f96df=_0x67be3d[_0x1672e5(0x273)](function(_0x38b681){var _0x555db2=_0x1672e5;return _0x38b681[_0x555db2(0x292)]!=_0x555db2(0x15f)&&_0x38b681[_0x555db2(0x292)]!='Deleted';});_0x5e9947[_0x1672e5(0x2e6)]>0x0&&_0x5e9947[_0x1672e5(0x2e6)]==_0x3f96df[_0x1f62dc(0x3c5)]?_0x283a3d=_0x1672e5(0x90)+_0x67be3d[0x0]['DocumentID']+_0x1f62dc(0x291)+_0x67be3d[0x0][_0x1f62dc(0x1e3)]+_0x1f62dc(0x291)+_0x489598+_0x1672e5(0x28a)+_0x824669+_0x1672e5(0x28a)+_0x2fdbf8+_0x1672e5(0x28a)+_0x11c710+_0x1f62dc(0x291)+_0xa5f4b7+_0x1672e5(0x28a)+_0xe1c888[_0x583499]['Id']+_0x1672e5(0x7c):_0x5e9947[_0x1672e5(0x2e6)]>0x0&&_0x5e9947[_0x1672e5(0x2e6)]!=_0x67be3d[_0x1672e5(0x2e6)]?_0x283a3d=_0x1672e5(0x85)+_0x67be3d[0x0][_0x1672e5(0x23c)]+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x91)]+_0x1672e5(0x28a)+_0x489598+_0x1f62dc(0x291)+_0x824669+'\x27,\x20\x27'+_0x2fdbf8+'\x27,\x20\x27'+_0x11c710+_0x1f62dc(0x291)+_0xa5f4b7+_0x1672e5(0x28a)+_0xe1c888[_0x583499]['Id']+_0x1672e5(0x2c3)+_0x67be3d[0x0][_0x1672e5(0x23c)]+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x91)]+_0x1672e5(0x28a)+_0x489598+_0x1672e5(0x28a)+_0x824669+_0x1672e5(0x28a)+_0x2fdbf8+_0x1f62dc(0x291)+_0x11c710+_0x1672e5(0x28a)+_0xa5f4b7+_0x1672e5(0x28a)+_0x67be3d[0x0]['Id']+_0x1672e5(0x7c):_0x283a3d=_0x1f62dc(0x36e)+_0x67be3d[0x0][_0x1672e5(0x23c)]+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1672e5(0x91)]+'\x27,\x20\x27'+_0x489598+_0x1672e5(0x28a)+_0x824669+_0x1672e5(0x28a)+_0x2fdbf8+_0x1672e5(0x28a)+_0x11c710+_0x1672e5(0x28a)+_0xa5f4b7+_0x1672e5(0x28a)+_0xe1c888[_0x583499]['Id']+_0x1672e5(0x7c);}else _0x283a3d=_0x1672e5(0x85)+_0x67be3d[0x0][_0x1672e5(0x23c)]+_0x1672e5(0x28a)+_0x67be3d[0x0][_0x1f62dc(0x1e3)]+_0x1672e5(0x28a)+_0x489598+_0x1672e5(0x28a)+_0x824669+_0x1f62dc(0x291)+_0x2fdbf8+_0x1f62dc(0x291)+_0x11c710+_0x1672e5(0x28a)+_0xa5f4b7+_0x1672e5(0x28a)+_0xe1c888[_0x583499]['Id']+_0x1672e5(0x7c);_0x47e19b+=_0x1f62dc(0x413)+Icon+_0x1672e5(0x2d9)+Icon+_0x1672e5(0x2ed),_0x47e19b+=_0x1672e5(0x2f4)+_0x1aa6e1+_0x1672e5(0x2a9),_0x67be3d[0x0]['SharedFileTitle']=_0x67be3d[0x0][_0x1672e5(0x8d)]?_0x67be3d[0x0][_0x1672e5(0x8d)]:'',_0x47e19b+=_0x1672e5(0x2b5)+_0x67be3d[0x0][_0x1672e5(0x8d)]+_0x1672e5(0x202),_0x47e19b+='<td\x20class=\x22text-left\x22><div\x20class=\x22dms-table-ellipsis-2\x22>'+_0x824669+_0x1f62dc(0x3ba),_0x47e19b+=_0x1672e5(0x2b5)+_0x5604a6+_0x1672e5(0x202),_0x12ee19==_0x1672e5(0x29a)?_0x47e19b+=_0x1672e5(0x11d):_0x47e19b+=_0x1672e5(0x2b5)+_0x12ee19+_0x1f62dc(0x3ba),_0x47e19b+=_0x1672e5(0x211)+_0x283a3d+_0x1672e5(0x21e);}}MyDoctable!=''&&MyDoctable[_0x1672e5(0x237)](),$(_0x1672e5(0x30b))[_0x1672e5(0xc4)]()[_0x1f62dc(0x371)](_0x47e19b),$(_0x1672e5(0xad))[_0x1672e5(0x87)](function(){var _0x403184=_0x1f62dc,_0x150642=_0x1672e5,_0x16bb80=this[_0x150642(0xc9)][_0x150642(0x2b8)](',');if(this[_0x150642(0x1b5)]==!![])arrFileFolder[_0x150642(0x203)]({'SharedItemId':_0x16bb80[0x0][_0x403184(0x3a4)](),'type':_0x16bb80[0x1][_0x150642(0x234)](),'SharedTo':_0x16bb80[0x2][_0x150642(0x234)](),'DocumentId':_0x16bb80[0x3][_0x150642(0x234)](),'ServerURL':_0x16bb80[0x4][_0x150642(0x234)](),'userOrgId':_0x16bb80[0x5][_0x150642(0x234)](),'SiteURL':_0x16bb80[0x6][_0x150642(0x234)]()});else{var _0x47dc91=this[_0x403184(0x334)];arrFileFolder=arrFileFolder[_0x150642(0x273)](function(_0x15d489){var _0x31df72=_0x150642;return _0x15d489[_0x31df72(0x101)]!=_0x16bb80[0x0][_0x31df72(0x234)]();});}}),$(_0x1672e5(0x2bd))[_0x1672e5(0x87)](function(_0x183acd){var _0x4fcb84=_0x1f62dc;waitingDialog[_0x4fcb84(0x31e)](),setTimeout(function(){var _0x5c542e=_0x4fcb84,_0x1f488e=_0x23d6;$(_0x5c542e(0x415))[_0x5c542e(0x409)](_0x1f488e(0x1b5))==!![]?($(_0x1f488e(0xad))[_0x1f488e(0x27a)](_0x1f488e(0x1b5),''),$(_0x1f488e(0xad))[_0x1f488e(0x1c9)](_0x1f488e(0x87))):($(_0x5c542e(0x1db))[_0x1f488e(0x27a)](_0x1f488e(0x1b5),''),arrFileFolder=[]),waitingDialog[_0x1f488e(0x8b)]();},0x64);}),Tableagination();}function getSharedFromValue(_0x2ebcd6,_0x58c43b){var _0x517b2e=_0x5a5f90;return _0x2ebcd6==_0x517b2e(0x26b)||_0x2ebcd6==null||_0x2ebcd6==_0x517b2e(0x110)||_0x2ebcd6==_0x517b2e(0x225)?_0x58c43b==null?_0x2ebcd6=_0x517b2e(0x225):_0x517b2e(0x225)+':\x20'+_0x58c43b:_0x2ebcd6+':\x20'+_0x58c43b;}function a86_0x3481(_0x12fb30,_0x677413){var _0x1e2569=a86_0x1e25();return a86_0x3481=function(_0x3481d5,_0x5e23dc){_0x3481d5=_0x3481d5-0x19f;var _0x564ade=_0x1e2569[_0x3481d5];return _0x564ade;},a86_0x3481(_0x12fb30,_0x677413);}function GetSharedFolderDocuments(_0x16ded2,_0x109cf5,_0x4937ab,_0x1e97ad,_0x4b9655,_0x2eb49d,_0x1d4169,_0x11bc0a,_0x3abf9d,_0x49b77e,_0x3f8c02,_0x4881bb,_0x5d28fe){var _0x17cdaa=a86_0x227ab8,_0x499b98=_0x5a5f90,_0x44b208=0x1,_0x25b745='';$(_0x499b98(0x118))[_0x17cdaa(0x2be)]()[_0x17cdaa(0x34d)]('<table\x20class=\x22table\x20mb-0\x20custom-table\x22\x20id=\x22groupDocumentGrid\x22><thead><tr\x20id=\x22theadItem\x22></tr></thead><tbody\x20id=\x22groupDocumentGridtbody\x22></tbody></table>'),_0x25b745+=_0x17cdaa(0x2e4)+_0x499b98(0x2e4)+_0x499b98(0xd6);if($(_0x499b98(0x240))[_0x17cdaa(0x35f)]()==_0x499b98(0xda))var _0x5bbc3c=[_0x499b98(0x16d),_0x499b98(0x1a6),_0x499b98(0x229),_0x499b98(0x28e),_0x17cdaa(0x39f),_0x499b98(0x1ca),''];else var _0x5bbc3c=[_0x499b98(0x16d),_0x499b98(0x1a6),_0x499b98(0x229),_0x499b98(0x28e),_0x499b98(0x138),_0x17cdaa(0x2c7)];for(var _0xa6585c=0x0;_0xa6585c<_0x5bbc3c['length'];_0xa6585c++){_0x25b745+=_0x499b98(0x303)+_0x5bbc3c[_0xa6585c]+'\x22>'+_0x5bbc3c[_0xa6585c]+_0x499b98(0xd6);}$(_0x499b98(0x1ba))[_0x499b98(0xc4)]()[_0x499b98(0x2b4)](_0x25b745),(_0x1e97ad=='null'||_0x1e97ad==null||_0x1e97ad==_0x499b98(0x75)||_0x1e97ad==undefined)&&(_0x109cf5[_0x499b98(0x19f)](_0x499b98(0x19c))!=-0x1?_0x1e97ad=window[_0x499b98(0x2f2)][_0x499b98(0x148)]+_0x109cf5[_0x499b98(0x2b8)](_0x17cdaa(0x1d6))[0x0]:_0x1e97ad=_spPageContextInfo['webAbsoluteUrl']);var _0x3b6f8d='',_0x175347='',_0x180f9c=_0x1e97ad+_0x499b98(0x149)+_0x109cf5+_0x17cdaa(0x2c3);$[_0x499b98(0x185)]({'url':_0x180f9c,'headers':{'Accept':_0x499b98(0x17e)},'async':![],'success':function(_0xe93e30){var _0xf039bd=_0x17cdaa,_0x34cf35=_0x499b98,_0x516886=_0xe93e30['d'][_0x34cf35(0x97)][_0x34cf35(0x29f)],_0x1195d4=_0xe93e30['d'][_0x34cf35(0x194)][_0x34cf35(0x29f)];if(_0x516886[_0x34cf35(0x2e6)]==0x0&&_0x1195d4[_0x34cf35(0x2e6)]==0x0)waitingDialog[_0x34cf35(0x8b)](),_0x175347+=_0xf039bd(0x300),$(_0x34cf35(0x30b))[_0x34cf35(0xc4)]()[_0x34cf35(0x2b4)](_0x175347);else{for(var _0x3b2800=0x0;_0x3b2800<_0x1195d4[_0x34cf35(0x2e6)];_0x3b2800++){Icon=_0x34cf35(0x1b0);var _0x1064d4=_0x109cf5+'/'+_0x1195d4[_0x3b2800][_0x34cf35(0x308)],_0x3d2c6a=!![],_0x352269='';FileType=_0x34cf35(0xdb),_0x3b6f8d=_0x34cf35(0x14d)+_0x16ded2[_0x34cf35(0xc8)]+_0x34cf35(0x2da)+_0x1064d4+_0xf039bd(0x291)+_0x4937ab+_0x34cf35(0x28a)+_0x1e97ad+_0xf039bd(0x291)+_0x4b9655+_0x34cf35(0x28a)+_0x2eb49d+_0x34cf35(0x28a)+_0x1d4169+_0xf039bd(0x291)+_0x11bc0a+_0xf039bd(0x291)+_0x3abf9d+_0x34cf35(0x28a)+_0x49b77e+_0x34cf35(0x28a)+_0x3f8c02+_0x34cf35(0x28a)+_0x4881bb+_0x34cf35(0x28a)+_0x3d2c6a+_0x34cf35(0x1af)+_0x1195d4[_0x3b2800][_0xf039bd(0x32f)]+_0xf039bd(0x33e);var _0x3b2bd9=_0x34cf35(0x306);_0x3f8c02==_0x34cf35(0x23e)?_0x175347+=_0x34cf35(0x270)+decodeURI(_0x109cf5)+_0xf039bd(0x3c1)+_0x1195d4[_0x3b2800][_0x34cf35(0x176)]['Id']+',\x20'+FileType+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+_0x1195d4[_0x3b2800][_0x34cf35(0x147)]+',\x20'+_0x352269+',\x20'+_0x1e97ad+',\x20'+_0x3f8c02+_0x34cf35(0x8f)+_0x44b208+_0x34cf35(0x1ed)+_0x44b208+'\x22>':_0x175347+=_0x34cf35(0x270)+decodeURI(_0x109cf5)+_0xf039bd(0x3c1)+_0x1195d4[_0x3b2800][_0x34cf35(0x176)]['Id']+',\x20'+FileType+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+_0x1195d4[_0x3b2800][_0x34cf35(0x147)]+',\x20'+_0x352269+',\x20'+_0x1e97ad+',\x20'+_0x3f8c02+_0x34cf35(0x8f)+_0x44b208+_0x34cf35(0x1ec)+_0x44b208+'\x22>',(_0x44b208++,_0x175347+=_0xf039bd(0x413)+Icon+_0x34cf35(0x2d9)+Icon+_0xf039bd(0x226),_0x175347+=_0x34cf35(0x2f4)+_0x3b6f8d+'',_0x175347+=_0x34cf35(0x2b5)+_0x2eb49d+_0x34cf35(0x202),_0x175347+=_0x34cf35(0x2b5)+_0x1d4169+_0x34cf35(0x202),_0x175347+=_0x34cf35(0x1df));if($(_0x34cf35(0x240))['text']()!=_0x34cf35(0xda))_0x175347+=_0x34cf35(0x2b5)+_0x3abf9d+_0xf039bd(0x3ba);else{}_0x175347+=_0xf039bd(0x216)+_0x4937ab+_0x34cf35(0x202);}for(var _0x3b2800=0x0;_0x3b2800<_0x516886[_0x34cf35(0x2e6)];_0x3b2800++){var _0x173320='.'+_0x516886[_0x3b2800][_0x34cf35(0x308)][_0x34cf35(0x14c)](_0x516886[_0x3b2800][_0x34cf35(0x308)][_0x34cf35(0x302)]('.')+0x1);Icon=_0xf039bd(0x3c3);if(_0x34cf35(0x1f8)==_0x173320||_0xf039bd(0x1cd)==_0x173320)Icon=_0x34cf35(0x1a2);else{if(_0x34cf35(0x133)==_0x173320)Icon=_0x34cf35(0x1fa);else{if(_0xf039bd(0x38a)==_0x173320||_0xf039bd(0x258)==_0x173320||_0x34cf35(0x76)==_0x173320||_0x34cf35(0x2f1)==_0x173320||_0x34cf35(0x224)==_0x173320||_0x34cf35(0x17d)==_0x173320||_0x34cf35(0x84)==_0x173320)Icon=_0x34cf35(0x2c0);else{if(_0x34cf35(0x13c)==_0x173320||_0x34cf35(0xac)==_0x173320)Icon=_0x34cf35(0x1b8);else{if(_0x34cf35(0x29c)==_0x173320||_0x34cf35(0x156)==_0x173320)Icon=_0xf039bd(0x3a9);else{if(_0x34cf35(0x11e)==_0x173320)Icon=_0x34cf35(0x262);else{if(_0x34cf35(0x1f9)==_0x173320)Icon=_0x34cf35(0x2d5);else{if(_0x34cf35(0x2cd)==_0x173320||'.rar'==_0x173320||_0x34cf35(0x18e)==_0x173320||_0x34cf35(0x301)==_0x173320||_0x34cf35(0x228)==_0x173320||_0x34cf35(0x25e)==_0x173320||_0x34cf35(0x29b)==_0x173320)Icon=_0x34cf35(0x1e5);else{if(_0x34cf35(0x242)==_0x173320||_0x34cf35(0x2b2)==_0x173320||_0x34cf35(0x113)==_0x173320||_0x34cf35(0x1f6)==_0x173320||_0x34cf35(0xfd)==_0x173320||_0x34cf35(0x168)==_0x173320||_0xf039bd(0x292)==_0x173320||_0xf039bd(0x250)==_0x173320)Icon=_0x34cf35(0x1bc);else(_0x34cf35(0x10b)==_0x173320||_0x34cf35(0x1dc)==_0x173320||_0x34cf35(0x129)==_0x173320||_0xf039bd(0x33c)==_0x173320)&&(Icon=_0xf039bd(0x2f9));}}}}}}}}var _0x158b5d='NullValue';_0x3b6f8d=_0x34cf35(0x2a1)+_0x516886[_0x3b2800][_0x34cf35(0x147)]+_0x34cf35(0x231)+_0x1e97ad+_0xf039bd(0x291)+_0x4881bb+_0x34cf35(0x28a)+_0x4937ab+_0xf039bd(0x291)+_0x158b5d+_0x34cf35(0x28a)+_0x158b5d+_0x34cf35(0x28a)+_0x516886[_0x3b2800][_0x34cf35(0x147)]+_0x34cf35(0x28a)+_0x158b5d+_0x34cf35(0x28a)+_0x158b5d+_0x34cf35(0x28a)+_0x516886[_0x3b2800][_0x34cf35(0x2ad)]+_0x34cf35(0x27e)+_0x516886[_0x3b2800][_0x34cf35(0x308)]+_0x34cf35(0x217),downloadlink=_0x34cf35(0x298)+encodeURI(_0x516886[_0x3b2800][_0x34cf35(0x147)])+_0x34cf35(0x94);var _0x3b2bd9=_0x34cf35(0x306),_0x352269='';FileType=_0x34cf35(0x9a),_0x3f8c02==_0xf039bd(0x354)?_0x175347+=_0x34cf35(0x270)+decodeURI(_0x109cf5)+_0xf039bd(0x236)+_0x352269+',\x20'+FileType+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+encodeURI(_0x516886[_0x3b2800][_0x34cf35(0x147)])+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+_0x3f8c02+_0x34cf35(0x8f)+_0x44b208+_0x34cf35(0x1ed)+_0x44b208+'\x22>':_0x175347+=_0x34cf35(0x270)+decodeURI(_0x109cf5)+_0xf039bd(0x236)+_0x352269+',\x20'+FileType+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+encodeURI(_0x516886[_0x3b2800][_0x34cf35(0x147)])+',\x20'+_0x352269+',\x20'+_0x352269+',\x20'+_0x3f8c02+_0x34cf35(0x8f)+_0x44b208+_0x34cf35(0x1ec)+_0x44b208+'\x22>',(_0x44b208++,_0x175347+=_0xf039bd(0x413)+Icon+_0x34cf35(0x2d9)+Icon+_0x34cf35(0x2ed),_0x175347+=_0x34cf35(0x2f4)+_0x3b6f8d+'',_0x175347+='<td\x20class=\x22text-left\x22><div\x20class=\x22dms-table-ellipsis-2\x22>'+_0x2eb49d+_0x34cf35(0x202),_0x175347+=_0x34cf35(0x2b5)+_0x1d4169+_0x34cf35(0x202)),(_0x516886[_0x3b2800][_0x34cf35(0x176)][_0x34cf35(0x88)]==null||_0x516886[_0x3b2800][_0x34cf35(0x176)][_0x34cf35(0x88)]==undefined||_0x516886[_0x3b2800][_0xf039bd(0x36f)][_0xf039bd(0x34f)]==_0x34cf35(0x110)||_0x516886[_0x3b2800][_0xf039bd(0x36f)][_0x34cf35(0x88)]==_0x34cf35(0xf2)||_0x516886[_0x3b2800][_0x34cf35(0x176)][_0x34cf35(0x88)]==_0x34cf35(0x1ae))&&(_0x516886[_0x3b2800][_0x34cf35(0x176)][_0x34cf35(0x88)]=''),_0x175347+=_0x34cf35(0x2b5)+_0x516886[_0x3b2800][_0x34cf35(0x176)][_0x34cf35(0x88)]+_0x34cf35(0x202);if($('.headdingLinks')[_0x34cf35(0x1ee)]()!=_0x34cf35(0xda))_0x175347+=_0x34cf35(0x2b5)+_0x3abf9d+_0x34cf35(0x202);else{}_0x175347+=_0x34cf35(0x2b5)+_0x4937ab+_0x34cf35(0x202);}MyDoctable!=''&&MyDoctable[_0x34cf35(0x237)](),$(_0x34cf35(0x30b))[_0x34cf35(0xc4)]()[_0x34cf35(0x2b4)](_0x175347),Tableagination(),$(_0x34cf35(0xad))[_0x34cf35(0x87)](function(){var _0x620b0e=_0xf039bd,_0x5bc4ff=_0x34cf35,_0x3845a9=this[_0x5bc4ff(0xc9)]['split'](',');if(this[_0x5bc4ff(0x1b5)]==!![])arrFileFolder['push']({'SharedItemId':_0x3845a9[0x0][_0x5bc4ff(0x234)](),'type':_0x3845a9[0x1][_0x5bc4ff(0x234)](),'SharedTo':_0x3845a9[0x2][_0x5bc4ff(0x234)](),'DocumentId':_0x3845a9[0x3][_0x5bc4ff(0x234)](),'ServerURL':_0x3845a9[0x4][_0x620b0e(0x3a4)](),'userOrgId':_0x3845a9[0x5][_0x5bc4ff(0x234)](),'SiteURL':_0x3845a9[0x6][_0x5bc4ff(0x234)](),'IsBlock':_0x3845a9[0x7][_0x5bc4ff(0x234)]()});else{var _0x12524e=this[_0x5bc4ff(0xc9)];arrFileFolder=arrFileFolder[_0x5bc4ff(0x273)](function(_0x2fa017){var _0x12ea3b=_0x620b0e,_0x334f34=_0x5bc4ff;return _0x2fa017[_0x334f34(0x101)]!=_0x3845a9[0x0][_0x12ea3b(0x3a4)]();});}}),$('#selectAllChk')['click'](function(_0x5a23a5){var _0x3a008d=_0xf039bd;waitingDialog[_0x3a008d(0x31e)](),setTimeout(function(){var _0x22eda4=_0x3a008d,_0xdffbf2=_0x23d6;this[_0x22eda4(0x2cb)]==!![]?($(_0x22eda4(0x1db))[_0xdffbf2(0x27a)](_0xdffbf2(0x1b5),''),$(_0x22eda4(0x1db))[_0xdffbf2(0x1c9)](_0xdffbf2(0x87))):($(_0x22eda4(0x1db))[_0xdffbf2(0x27a)](_0xdffbf2(0x1b5),''),arrFileFolder=[]),waitingDialog[_0xdffbf2(0x8b)]();},0x64);}),waitingDialog[_0x34cf35(0x8b)]();}},'eror':function(_0x3248a9){var _0x1ef541=_0x499b98;alert(JSON['stringify'](_0x3248a9)),waitingDialog[_0x1ef541(0x8b)]();}}),(_0x5d28fe==!![]||_0x5d28fe==_0x499b98(0x9b))&&($(_0x17cdaa(0x241))[_0x499b98(0xc4)](),CheckLibary=_0x4b9655,$('.headdingLinks')[_0x499b98(0x1ee)]()==_0x499b98(0x10e)||$('.headdingLinks')[_0x17cdaa(0x35f)]()==_0x499b98(0xda)?GetSubShareFolders(_0x109cf5,_0x16ded2,_0x109cf5,_0x4937ab,_0x1e97ad,_0x4b9655,_0x2eb49d,_0x1d4169,_0x11bc0a,_0x3abf9d,_0x49b77e,_0x3f8c02,_0x4881bb,![]):GetSubFolders(_0x109cf5));}function AckUserStatus(_0x508ff1,_0x141548,_0x34ec96,_0x3b0338,_0x4a6369,_0x36b237,_0x33d592){var _0x5a497a=a86_0x227ab8,_0x1160db=_0x5a5f90;_0x36b237==_0x1160db(0x11c)?_0x36b237=_0x5a497a(0x3a0):_0x36b237=_0x33d592;var _0x12e0a6='',_0x2ee741=_0x1160db(0xbd)+_0x508ff1+_0x1160db(0x22a)+_0x141548+_0x1160db(0x1c4);return $[_0x1160db(0x28d)](getItemsWithQuery(_0x1160db(0x2e5),_0x2ee741,_spPageContextInfo[_0x1160db(0x23f)]))[_0x1160db(0x1ad)](function(_0x32611f){var _0x3c0cb1=_0x5a497a,_0x1d8a88=_0x1160db;if(_0x32611f[_0x3c0cb1(0x3c5)]>0x0)_0x12e0a6=_0x3c0cb1(0x2ba);else{var _0x164574=_0x1d8a88(0x201);_0x12e0a6=_0x1d8a88(0x14d)+_0x508ff1+_0x3c0cb1(0x3e3)+_0x34ec96+_0x1d8a88(0x310)+_0x3b0338+_0x1d8a88(0x28a)+_0x36b237+'\x27,\x20\x27'+_0x4a6369+_0x1d8a88(0x28a)+_0x164574+_0x1d8a88(0x28a)+_0x164574+_0x1d8a88(0x28a)+_0x34ec96+_0x1d8a88(0x28a)+_0x508ff1+'\x27,\x20\x27'+_0x164574+_0x3c0cb1(0x243);}}),_0x12e0a6;}function OpenAckNotify(_0x7f9195,_0x390290,_0x43eedb,_0x3ef241,_0x3cd135,_0x3e506c,_0x455ad5,_0x4d8f23,_0x16c67a,_0x377627,_0x1a8972,_0x5c0e93){var _0xa2fdac=_0x5a5f90;waitingDialog[_0xa2fdac(0x209)](),setTimeout(function(){var _0x25d522=a86_0x3481,_0x479472=_0xa2fdac;$(_0x479472(0x22d))[_0x479472(0xc4)](),arrAckAllUser=[];var _0x5df94b='',_0x3ec6ec='';$(_0x479472(0x18b))[_0x25d522(0x31e)]();if(_0x7f9195==_0x479472(0x2d3)){$(_0x25d522(0x1e8))[_0x25d522(0x290)]();var _0x1156fd=_0x25d522(0x2fe)+_0x3ef241+_0x25d522(0x2b1)+_spPageContextInfo[_0x479472(0xf1)]+_0x479472(0x1c4);$['when'](getItemsWithQuery(_0x479472(0x2e5),_0x1156fd,_spPageContextInfo[_0x479472(0x23f)]))[_0x479472(0x1ad)](function(_0xa2864b){var _0x365097=_0x25d522,_0x261f79=_0x479472;_0xa2864b[_0x365097(0x3c5)]>0x0?(_0x5df94b=_spPageContextInfo[_0x261f79(0x23f)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_spPageContextInfo[_0x261f79(0xf1)]),_0x3ec6ec+=_0x261f79(0x272)+_0x5df94b+'\x22>',_0x3ec6ec+=_0x261f79(0x1d5)+_spPageContextInfo[_0x261f79(0x72)]+_0x261f79(0x2f3)+_spPageContextInfo[_0x261f79(0xf1)]+_0x261f79(0x27e)+_spPageContextInfo[_0x261f79(0xf1)]+_0x261f79(0x2db),_0x3ec6ec+=_0x365097(0x308)+ShowCommonStandardDateFormat(_0xa2864b[0x0][_0x261f79(0x173)])+_0x261f79(0x1d8)+(_0xa2864b[0x0][_0x261f79(0x2d2)]?_0xa2864b[0x0][_0x365097(0x30e)]:'')+_0x261f79(0x2a3)+_0xa2864b[0x0][_0x261f79(0x104)]+_0x261f79(0x1f3)):(_0x5df94b=_spPageContextInfo[_0x365097(0x318)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_spPageContextInfo[_0x261f79(0xf1)]),_0x3ec6ec+=_0x261f79(0x272)+_0x5df94b+'\x22>',_0x3ec6ec+=_0x261f79(0x1d5)+_spPageContextInfo[_0x261f79(0x72)]+_0x261f79(0x2f3)+_spPageContextInfo[_0x365097(0x2f3)]+_0x261f79(0x27e)+_spPageContextInfo[_0x261f79(0xf1)]+_0x261f79(0x2db),_0x3ec6ec+=_0x261f79(0x1d4)+_0x3cd135+_0x261f79(0x28a)+_0x3e506c+_0x365097(0x291)+_0x455ad5+_0x365097(0x291)+_spPageContextInfo[_0x261f79(0x72)]+_0x261f79(0x28a)+_spPageContextInfo[_0x261f79(0xf1)]+_0x261f79(0x28a)+_0x1a8972+_0x261f79(0x28a)+_0x5c0e93+_0x261f79(0xc0));}),$(_0x479472(0x22d))[_0x479472(0x2b4)](_0x3ec6ec),arrAckAllUser[_0x479472(0x203)]({'AckName':_spPageContextInfo[_0x25d522(0x35c)],'AckEmail':_spPageContextInfo[_0x479472(0xf1)],'AckPermission':_0x455ad5,'AckSharedOn':_0x3e506c,'AckSharedValid':_0x3cd135,'AckShareBy':_0x1a8972,'AckDocType':_0x5c0e93});}else{if(_0x390290==_0x479472(0x1dd)||_0x390290==_0x479472(0x1d9)){$(_0x25d522(0x1e8))[_0x479472(0x8b)]();var _0x1156fd=_0x479472(0xcd)+_0x3ef241+_0x479472(0x22a)+_0x4d8f23+_0x479472(0x1c4);$[_0x479472(0x28d)](getItemsWithQuery(_0x479472(0x2e5),_0x1156fd,_spPageContextInfo[_0x479472(0x23f)]))[_0x479472(0x1ad)](function(_0x13217b){var _0x4dfe4f=_0x25d522,_0x3c9426=_0x479472;_0x13217b[_0x4dfe4f(0x3c5)]>0x0?(_0x5df94b=_spPageContextInfo[_0x3c9426(0x23f)]+_0x3c9426(0x166)+escapeProperly(_0x4d8f23),_0x3ec6ec+='<li><div\x20class=\x22detailsectionbox\x22><span\x20class=\x22imgboxsectin\x22><img\x20src=\x22'+_0x5df94b+'\x22>',_0x3ec6ec+=_0x4dfe4f(0x1dd)+_0x16c67a+_0x3c9426(0x2f3)+_0x4d8f23+_0x3c9426(0x27e)+_0x4d8f23+_0x3c9426(0x2db),_0x3ec6ec+=_0x3c9426(0xd9)+ShowCommonStandardDateFormat(_0x13217b[0x0][_0x3c9426(0x173)])+_0x3c9426(0x1d8)+(_0x13217b[0x0][_0x4dfe4f(0x30e)]?_0x13217b[0x0][_0x3c9426(0x2d2)]:'')+_0x3c9426(0x2a3)+_0x13217b[0x0][_0x4dfe4f(0x3cd)]+_0x3c9426(0x1f3)):(_0x5df94b=_spPageContextInfo[_0x3c9426(0x23f)]+_0x3c9426(0x166)+escapeProperly(_0x4d8f23),_0x3ec6ec+=_0x3c9426(0x272)+_0x5df94b+'\x22>',_0x3ec6ec+=_0x3c9426(0x1d5)+_0x16c67a+_0x3c9426(0x2f3)+_0x4d8f23+_0x3c9426(0x27e)+_0x4d8f23+_0x3c9426(0x2db),_0x3ec6ec+=_0x3c9426(0x1a5)+_0x3cd135+_0x3c9426(0x28a)+_0x3e506c+_0x3c9426(0x28a)+_0x455ad5+_0x3c9426(0x28a)+_0x16c67a+_0x4dfe4f(0x291)+_0x4d8f23+_0x3c9426(0x28a)+_0x1a8972+_0x3c9426(0x28a)+_0x5c0e93+_0x3c9426(0xc0));}),$(_0x25d522(0x3ee))[_0x479472(0x2b4)](_0x3ec6ec),arrAckAllUser[_0x479472(0x203)]({'AckName':_0x16c67a,'AckEmail':_0x4d8f23,'AckPermission':_0x455ad5,'AckSharedOn':_0x3e506c,'AckSharedValid':_0x3cd135,'AckShareBy':_0x1a8972,'AckDocType':_0x5c0e93});}else{var _0x38dbaa=[];_0x390290==_0x479472(0x158)?_0x38dbaa=GetUserFromSPGp(_0x43eedb):_0x38dbaa=GetUserFromEmp(_0x43eedb);for(var _0x5698fc=0x0;_0x5698fc<_0x38dbaa[_0x25d522(0x3c5)];_0x5698fc++){_0x3ec6ec='';var _0x1156fd=_0x479472(0xcd)+_0x3ef241+_0x479472(0x22a)+_0x38dbaa[_0x5698fc][_0x479472(0x192)]+_0x479472(0x1c4);$[_0x479472(0x28d)](getItemsWithQuery(_0x479472(0x2e5),_0x1156fd,_spPageContextInfo[_0x479472(0x23f)]))[_0x25d522(0x231)](function(_0x5784bd){var _0x2b849b=_0x25d522,_0x35526d=_0x479472;_0x5784bd[_0x2b849b(0x3c5)]>0x0?(_0x5df94b=_spPageContextInfo[_0x35526d(0x23f)]+_0x2b849b(0x1bc)+escapeProperly(_0x38dbaa[_0x5698fc][_0x35526d(0x192)]),_0x3ec6ec+=_0x35526d(0x272)+_0x5df94b+'\x22>',_0x3ec6ec+=_0x35526d(0x1d5)+_0x38dbaa[_0x5698fc]['Title']+_0x35526d(0x2f3)+_0x38dbaa[_0x5698fc]['Email']+_0x35526d(0x27e)+_0x38dbaa[_0x5698fc]['Email']+_0x35526d(0x2db),_0x3ec6ec+=_0x35526d(0xd9)+ShowCommonStandardDateFormat(_0x5784bd[0x0][_0x35526d(0x173)])+_0x35526d(0x1d8)+(_0x5784bd[0x0][_0x35526d(0x2d2)]?_0x5784bd[0x0][_0x35526d(0x2d2)]:'')+_0x35526d(0x2a3)+_0x5784bd[0x0][_0x35526d(0x104)]+_0x35526d(0x1f3),$(_0x2b849b(0x3ee))[_0x35526d(0x2b4)](_0x3ec6ec)):(_0x5df94b=_spPageContextInfo[_0x35526d(0x23f)]+_0x35526d(0x166)+escapeProperly(_0x38dbaa[_0x5698fc][_0x35526d(0x192)]),_0x3ec6ec+=_0x35526d(0x272)+_0x5df94b+'\x22>',_0x3ec6ec+=_0x35526d(0x1d5)+_0x38dbaa[_0x5698fc][_0x35526d(0x1a6)]+_0x35526d(0x2f3)+_0x38dbaa[_0x5698fc][_0x35526d(0x192)]+_0x35526d(0x27e)+_0x38dbaa[_0x5698fc][_0x35526d(0x192)]+_0x2b849b(0x40e),_0x377627==_0x35526d(0x15f)?($(_0x2b849b(0x1e8))[_0x35526d(0x8b)](),_0x3ec6ec+=_0x35526d(0x119)+_0x5698fc+_0x35526d(0x274)+_0x5698fc+_0x35526d(0x16c)+_0x3cd135+_0x35526d(0x28a)+_0x3e506c+_0x35526d(0x28a)+_0x455ad5+_0x35526d(0x28a)+_0x38dbaa[_0x5698fc][_0x35526d(0x1a6)]+_0x35526d(0x28a)+_0x38dbaa[_0x5698fc][_0x35526d(0x192)]+_0x35526d(0x28a)+_0x1a8972+_0x35526d(0x28a)+_0x5c0e93+_0x2b849b(0x3bc)):_0x3ec6ec+=_0x35526d(0x119)+_0x5698fc+_0x35526d(0x274)+_0x5698fc+_0x35526d(0x16c)+_0x3cd135+_0x35526d(0x28a)+_0x3e506c+_0x35526d(0x28a)+_0x455ad5+_0x35526d(0x28a)+_0x38dbaa[_0x5698fc][_0x35526d(0x1a6)]+_0x35526d(0x28a)+_0x38dbaa[_0x5698fc][_0x35526d(0x192)]+_0x2b849b(0x291)+_0x1a8972+_0x35526d(0x28a)+_0x5c0e93+'\x27);\x22>Notify</button></div></div></li>',$(_0x35526d(0x22d))[_0x35526d(0x2b4)](_0x3ec6ec),arrAckAllUser[_0x35526d(0x203)]({'AckName':_0x38dbaa[_0x5698fc][_0x35526d(0x1a6)],'AckEmail':_0x38dbaa[_0x5698fc][_0x35526d(0x192)],'AckPermission':_0x455ad5,'AckSharedOn':_0x3e506c,'AckSharedValid':_0x3cd135,'AckShareBy':_0x1a8972,'AckDocType':_0x5c0e93}));});}}}$(_0x479472(0x1f7))[_0x25d522(0x3e2)](_0x479472(0x209)),waitingDialog[_0x479472(0x8b)]();},0x64);}function NotifyAllAck(){var _0x23f2e7=a86_0x227ab8,_0x2c3835=_0x5a5f90,_0x18b1f2=_spPageContextInfo[_0x2c3835(0x23f)]+_0x2c3835(0x299),_0x3b97e1=_spPageContextInfo['userDisplayName']+_0x2c3835(0x1a1);for(var _0xe09726=0x0;_0xe09726<arrAckAllUser[_0x23f2e7(0x3c5)];_0xe09726++){Metadata='';var _0x159c96='',_0x5f0a0b='';arrAckAllUser[_0xe09726][_0x23f2e7(0x3ca)]==null||arrAckAllUser[_0xe09726][_0x2c3835(0x287)]==_0x2c3835(0x110)||arrAckAllUser[_0xe09726][_0x2c3835(0x287)]==''?_0x5f0a0b='':_0x5f0a0b=_0x2c3835(0x142)+arrAckAllUser[_0xe09726][_0x2c3835(0x287)]+_0x2c3835(0xc2),(_0x159c96=_0x2c3835(0xc6)+arrAckAllUser[_0xe09726][_0x2c3835(0x1fb)]+_0x23f2e7(0x1e5)+_spPageContextInfo[_0x2c3835(0x72)]+_0x2c3835(0x2ce),_0x159c96=_0x159c96+_0x2c3835(0x2d0)+$(_0x2c3835(0xb2))[_0x2c3835(0x1ee)]()+_0x23f2e7(0x1b0)+_0x2c3835(0x2e2)+$(_0x23f2e7(0x3d2))[_0x2c3835(0x1ee)]()+_0x2c3835(0xa6)+_0x2c3835(0xf8)+arrAckAllUser[_0xe09726][_0x23f2e7(0x2e5)]+_0x2c3835(0xa6)+'<div\x20data-localize=\x27Reference\x27><strong>Reference</strong><strong>:</strong>\x20'+$(_0x2c3835(0x2bf))[_0x2c3835(0x1ee)]()+_0x2c3835(0xa6)+_0x2c3835(0x25c)+arrAckAllUser[_0xe09726][_0x2c3835(0x153)]+'</div>'+_0x23f2e7(0x406)+arrAckAllUser[_0xe09726][_0x2c3835(0x1b2)]+_0x23f2e7(0x1b0)+_0x2c3835(0x1e8)+arrAckAllUser[_0xe09726][_0x2c3835(0x14b)]+_0x2c3835(0xa6)+_0x5f0a0b+_0x2c3835(0x184)+'<div><a\x20href='+_0x18b1f2+'>Click\x20here</a>\x20to\x20open\x20and\x20acknowledge\x20the\x20document.</div>'+_0x2c3835(0x312),_0x159c96+=_0x2c3835(0x160));for(var _0x17d44a=0x0;_0x17d44a<LabelDefaultLangauge[_0x2c3835(0x2e6)];_0x17d44a++){_0x159c96[_0x2c3835(0x198)](LabelDefaultLangauge[_0x17d44a][_0x2c3835(0x2aa)])==!![]&&(_0x159c96=_0x159c96[_0x2c3835(0x218)](LabelDefaultLangauge[_0x17d44a][_0x2c3835(0x2aa)],LabelDefaultLangauge[_0x17d44a][_0x2c3835(0x159)]));}Metadata={'properties':{'__metadata':{'type':_0x23f2e7(0x288)},'From':_spPageContextInfo[_0x2c3835(0xf1)],'To':{'results':[arrAckAllUser[_0xe09726][_0x2c3835(0x25d)]]},'Body':_0x159c96,'Subject':_0x3b97e1}};var _0x301e52=_spPageContextInfo[_0x2c3835(0x92)]+_0x23f2e7(0x2b3);$[_0x2c3835(0x185)]({'contentType':_0x2c3835(0x1e2),'url':_0x301e52,'type':_0x2c3835(0x1eb),'async':![],'data':JSON[_0x2c3835(0x20a)](Metadata),'headers':{'Accept':_0x2c3835(0x17e),'content-type':_0x2c3835(0x17e),'X-RequestDigest':$(_0x23f2e7(0x1d5))[_0x23f2e7(0x1ac)]()},'success':function(_0x15e607){var _0x1f1500=_0x2c3835;arrAckAllUser[_0x1f1500(0x2e6)]==_0xe09726+0x1&&(waitingDialog[_0x1f1500(0x8b)](),alert(_0x1f1500(0xb3)));},'error':function(_0xec18){var _0x5b3df0=_0x2c3835;return alert(_0x5b3df0(0x95)+JSON[_0x5b3df0(0x20a)](_0xec18)),![];}});}}function SendAckMail(_0x14cc7e,_0x37bc47,_0x1b057b,_0x48b01d,_0x26291b,_0x491acf,_0x5eda87,_0x1d79db){var _0x3b3737=a86_0x227ab8,_0xdd92a3=_0x5a5f90,_0xf01b42='',_0x4d211b=_spPageContextInfo[_0xdd92a3(0x72)]+_0xdd92a3(0x1a1),_0x427ac8=_spPageContextInfo[_0xdd92a3(0x23f)]+_0xdd92a3(0x299),_0x202013='';_0x37bc47==null||_0x37bc47==_0xdd92a3(0x110)||_0x37bc47==''?_0x202013='':_0x202013=_0xdd92a3(0x142)+_0x37bc47+_0x3b3737(0x289),(_0xf01b42=_0xdd92a3(0xc6)+_0x26291b+_0x3b3737(0x1e5)+_spPageContextInfo['userDisplayName']+_0xdd92a3(0x2ce),_0xf01b42=_0xf01b42+_0xdd92a3(0x2d0)+$(_0xdd92a3(0xb2))[_0xdd92a3(0x1ee)]()+_0xdd92a3(0xa6)+_0xdd92a3(0x2e2)+$(_0xdd92a3(0x2bc))[_0xdd92a3(0x1ee)]()+_0xdd92a3(0xa6)+_0xdd92a3(0xf8)+_0x1d79db+_0x3b3737(0x1b0)+_0xdd92a3(0xec)+$(_0xdd92a3(0x2bf))[_0x3b3737(0x35f)]()+_0xdd92a3(0xa6)+_0xdd92a3(0x25c)+_0x48b01d+_0x3b3737(0x1b0)+_0x3b3737(0x406)+_0x5eda87+_0xdd92a3(0xa6)+_0xdd92a3(0x1e8)+_0x1b057b+'</div>'+_0x202013+'<br/><br/><br/>'+_0xdd92a3(0x131)+_0x427ac8+_0xdd92a3(0x282)+_0xdd92a3(0x312),_0xf01b42+=_0xdd92a3(0x160));for(var _0x213a84=0x0;_0x213a84<LabelDefaultLangauge[_0xdd92a3(0x2e6)];_0x213a84++){_0xf01b42[_0xdd92a3(0x198)](LabelDefaultLangauge[_0x213a84][_0xdd92a3(0x2aa)])==!![]&&(_0xf01b42=_0xf01b42[_0xdd92a3(0x218)](LabelDefaultLangauge[_0x213a84][_0xdd92a3(0x2aa)],LabelDefaultLangauge[_0x213a84][_0xdd92a3(0x159)]));}Metadata={'properties':{'__metadata':{'type':_0x3b3737(0x288)},'From':_spPageContextInfo[_0xdd92a3(0xf1)],'To':{'results':[_0x491acf]},'Body':_0xf01b42,'Subject':_0x4d211b}};var _0x32e389=_spPageContextInfo[_0xdd92a3(0x92)]+_0x3b3737(0x2b3);$[_0xdd92a3(0x185)]({'contentType':_0xdd92a3(0x1e2),'url':_0x32e389,'type':_0xdd92a3(0x1eb),'data':JSON[_0xdd92a3(0x20a)](Metadata),'headers':{'Accept':_0x3b3737(0x3f5),'content-type':_0xdd92a3(0x17e),'X-RequestDigest':$('#__REQUESTDIGEST')[_0xdd92a3(0x12a)]()},'success':function(_0xf9b8a8){var _0xaf0e73=_0xdd92a3;$(_0xaf0e73(0x2ae)+_0x14cc7e['id'])[_0xaf0e73(0xc4)]()[_0xaf0e73(0x2b4)](_0xaf0e73(0x2ec));},'error':function(_0x411ec8){var _0x1b1ac7=_0x3b3737,_0x1470a6=_0xdd92a3;alert(_0x1470a6(0x95)+JSON[_0x1b1ac7(0x30d)](_0x411ec8));}});}function GetSharedHistory(_0x958225,_0x3c8291,_0x54aabc,_0x58b2d2,_0x1eeaf9,_0x168aef,_0x52be7f,_0x4ad6b3){var _0x3ed2ec=_0x5a5f90;waitingDialog[_0x3ed2ec(0x209)](),setTimeout(function(){var _0xa32600=a86_0x3481,_0x2604fc=_0x3ed2ec;_0x1eeaf9=/[^/]*$/[_0x2604fc(0x127)](_0x3c8291)[0x0],$(_0x2604fc(0x1c0))[_0xa32600(0x35f)](_0x3c8291),selectedHistoryDoc=[];var _0x51317e='',_0xe4050b=[],_0x58b675=[],_0x963f6c=[],_0x2b2486=[],_0x5a92ea=[];SharedTo='';var _0x478a2a=_0x2604fc(0x9b),_0x35e02c=_0xa32600(0x1ec);$(_0x2604fc(0x20d))[_0x2604fc(0x27a)](_0x2604fc(0x1b5),![]),$('#revokebtn')[_0x2604fc(0x8b)](),$(_0x2604fc(0x1a3))[_0xa32600(0x290)](),$(_0x2604fc(0xe3))[_0x2604fc(0xd0)](''),$(_0x2604fc(0xe6))['modal'](_0xa32600(0x31e)),$(_0x2604fc(0x116))[_0xa32600(0x35f)](_0x2604fc(0x28f)),$(_0x2604fc(0x2f0))[_0xa32600(0x35f)](_0xa32600(0x268));if(_0x52be7f==_0x2604fc(0x30a)&&$(_0xa32600(0x3f0))[_0x2604fc(0x12a)]()!=_0x2604fc(0x269)&&$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()!=_0x2604fc(0x269)){if($(_0x2604fc(0x1d6))[_0x2604fc(0x12a)]()==_0x2604fc(0x269)&&$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()!=_0xa32600(0x227)){var _0x2d704f='';$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()==_0x2604fc(0x9b)?_0x2d704f=_0x2604fc(0x73):_0x2d704f=_0x2604fc(0x189)+$(_0x2604fc(0x20e))[_0xa32600(0x1ac)]()+'\x27\x20';var _0x257af9=_0x2604fc(0xff)+_0x958225+_0x2604fc(0x200)+_0x2d704f+_0x2604fc(0xbb);}else{if($(_0x2604fc(0x1d6))[_0x2604fc(0x12a)]()!=_0xa32600(0x227)&&$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()==_0x2604fc(0x269))var _0x257af9=_0x2604fc(0xff)+_0x958225+_0x2604fc(0x2ff)+$(_0x2604fc(0x1d6))[_0x2604fc(0x12a)]()+_0x2604fc(0x1ac)+$(_0xa32600(0x3f0))['val']()+_0x2604fc(0x2e8);else{if($(_0x2604fc(0x1d6))[_0x2604fc(0x12a)]()!=_0x2604fc(0x269)&&$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()!=_0x2604fc(0x269)){var _0x2d704f='';$(_0x2604fc(0x20e))[_0x2604fc(0x12a)]()==_0xa32600(0x381)?_0x2d704f=_0x2604fc(0x73):_0x2d704f=_0x2604fc(0x189)+$(_0xa32600(0x1de))[_0x2604fc(0x12a)]()+'\x27\x20';var _0x257af9=_0x2604fc(0xff)+_0x958225+_0x2604fc(0x2ff)+$('#shreduser')[_0x2604fc(0x12a)]()+_0xa32600(0x1bf)+$(_0x2604fc(0x1d6))[_0x2604fc(0x12a)]()+_0x2604fc(0x205)+_0x2d704f+_0x2604fc(0x17c);}}}}else{if(_0x52be7f==_0x2604fc(0x2d3)){DocumentId=_0x958225,$(_0x2604fc(0x116))[_0x2604fc(0x1ee)](_0xa32600(0x268)),$(_0x2604fc(0x2f0))[_0x2604fc(0x1ee)](_0xa32600(0x3f4));var _0x12c2fe='',_0x257af9=_0xa32600(0x2ef)+_spPageContextInfo[_0x2604fc(0xf1)]+_0xa32600(0x3f1)+_spPageContextInfo[_0x2604fc(0xf1)]+'\x27\x20';$[_0xa32600(0x219)](getItemsWithQuery(_0x2604fc(0x26c),_0x257af9,_spPageContextInfo[_0x2604fc(0x23f)]))[_0xa32600(0x231)](function(_0x583fde){var _0x34313a=_0x2604fc;if(_0x583fde[_0x34313a(0x2e6)]>0x0)for(var _0x27f586=0x0;_0x27f586<_0x583fde[_0x34313a(0x2e6)];_0x27f586++){_0x12c2fe+=_0x34313a(0x78)+_0x583fde[_0x27f586][_0x34313a(0x1a6)]+'\x27\x20';}});if(_0x4ad6b3==''||_0x4ad6b3==null||_0x4ad6b3==_0x2604fc(0x110))var _0x257af9=_0x2604fc(0x30c)+_0x958225+_0x2604fc(0x163)+_spPageContextInfo[_0x2604fc(0xa9)]+_0xa32600(0x399)+_0x12c2fe+_0x2604fc(0x208);else var _0x257af9=_0x2604fc(0x12d)+_0x4ad6b3+_0x2604fc(0x213)+_0x958225+_0x2604fc(0x163)+_spPageContextInfo[_0x2604fc(0xa9)]+_0x2604fc(0x2be)+_0x12c2fe+_0x2604fc(0x208);}else{if(_0x52be7f==_0x2604fc(0x22e)){DocumentId=_0x958225;var _0x257af9=_0x2604fc(0xf6)+_spPageContextInfo[_0x2604fc(0xf1)]+_0x2604fc(0x213)+_0x958225+_0x2604fc(0x304)+_0x1eeaf9+_0x2604fc(0x289);}else{DocumentId=_0x958225;var _0x257af9=_0x2604fc(0xff)+_0x958225+'\x27\x20and\x20Title\x20eq\x20\x27'+_0x1eeaf9+_0xa32600(0x1a6);}}}$[_0x2604fc(0x28d)](getItemsWithQuery(_0x2604fc(0x28b),_0x257af9,_spPageContextInfo[_0x2604fc(0x23f)]))[_0x2604fc(0x1ad)](function(_0x521fcf){var _0xa296fc=_0xa32600,_0x56e91e=_0x2604fc;$(_0x56e91e(0xb2))[_0x56e91e(0xd0)](_0x1eeaf9),_0x58b2d2==_0x56e91e(0x110)?$(_0x56e91e(0x2bf))[_0x56e91e(0xd0)](''):$(_0x56e91e(0x2bf))[_0x56e91e(0xd0)](_0x58b2d2),currentSharedHistory=_0x521fcf[_0x56e91e(0x273)](function(_0x16126c){return _0x16126c;});if(_0x521fcf[_0x56e91e(0x2e6)]>0x0){var _0xd3565a='';_0x51317e+=_0x56e91e(0x2b0);for(var _0x456c1a=0x0;_0x456c1a<_0x521fcf[_0xa296fc(0x3c5)];_0x456c1a++){var _0xc1495='',_0x5a83e8=_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0xa296fc(0x1b5)];_0x521fcf[_0x456c1a][_0x56e91e(0x243)]==_0x56e91e(0x110)||_0x521fcf[_0x456c1a][_0x56e91e(0x243)]==null||_0x521fcf[_0x456c1a][_0x56e91e(0x243)]==_0x56e91e(0x75)||_0x521fcf[_0x456c1a][_0x56e91e(0x243)]==undefined?encodeURI(_0x521fcf[_0x456c1a][_0x56e91e(0x91)])[_0x56e91e(0x19f)](_0xa296fc(0x1d6))!=-0x1?_0xc1495=window[_0x56e91e(0x2f2)][_0x56e91e(0x148)]+encodeURI(_0x521fcf[_0x456c1a]['DocumentURL'])[_0x56e91e(0x2b8)](_0x56e91e(0x19c))[0x0]:_0xc1495=_spPageContextInfo[_0x56e91e(0x23f)]:_0xc1495=_0x521fcf[_0x456c1a][_0x56e91e(0x243)];var _0x5d0bba=_0x521fcf[_0x456c1a][_0x56e91e(0x1a6)],_0x4bf03a=DisplayPermissionType=_0x521fcf[_0x456c1a][_0x56e91e(0x170)];if(DisplayPermissionType==_0x56e91e(0x20f))DisplayPermissionType=_0xa296fc(0x37b);else DisplayPermissionType==_0x56e91e(0x188)?DisplayPermissionType=_0xa296fc(0x3ec):DisplayPermissionType=_0xa296fc(0x1b6);var _0x248d1d=_0x521fcf[_0x456c1a]['ID'],_0x30b86b=_0x521fcf[_0x456c1a][_0xa296fc(0x3bd)];_0x521fcf[_0x456c1a][_0xa296fc(0x372)]!=null?$(_0x56e91e(0x2bc))[_0x56e91e(0xd0)](_0x521fcf[_0x456c1a][_0x56e91e(0x8d)]):$(_0x56e91e(0x2bc))[_0x56e91e(0xd0)]('');var _0xca2b00='',_0x613152='',_0x19ad29='',_0x1a4aff=_0x521fcf[_0x456c1a][_0x56e91e(0x250)];_0x1a4aff==!![]?_0x1a4aff=_0x56e91e(0x1e1):_0x1a4aff=_0x56e91e(0x180);var _0x5b5676='';_0x521fcf[_0x456c1a][_0x56e91e(0x14f)]!=null&&(_0x5b5676=moment(_0x521fcf[_0x456c1a][_0xa296fc(0x282)])['format'](_0x56e91e(0x1bd)));for(var _0x2a5d9b=0x0;_0x2a5d9b<_0x521fcf[_0x456c1a][_0xa296fc(0x3d0)]['results'][_0xa296fc(0x3c5)];_0x2a5d9b++){_0xe4050b['indexOf'](_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][_0x2a5d9b][_0x56e91e(0x1a6)])==-0x1&&(_0xe4050b[_0x56e91e(0x203)](_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][_0x2a5d9b][_0x56e91e(0x1a6)]),_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)]!=_0xa296fc(0x244)?_0x51317e+=_0x56e91e(0x98)+_0x521fcf[_0x456c1a][_0x56e91e(0x305)]+_0x56e91e(0x1f5)+_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][_0x2a5d9b][_0x56e91e(0x1a6)]+'\x27>'+_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0xa296fc(0x314)][_0x2a5d9b][_0x56e91e(0x1a6)]+_0x56e91e(0xd7):jQuery[_0x56e91e(0x1ce)](_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0xa296fc(0x1b5)],_0x5a92ea)=='-1'&&(_0x51317e+=_0x56e91e(0x98)+_0x521fcf[_0x456c1a]['SharedClient'][_0x56e91e(0x1a6)]+_0xa296fc(0x1e0)+_0x521fcf[_0x456c1a]['SharedClient'][_0x56e91e(0x1a6)]+'\x27>'+_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0x56e91e(0x1a6)]+_0x56e91e(0xd7),_0x5a92ea[_0x56e91e(0x203)](_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0x56e91e(0x1a6)]))),_0xca2b00=_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][_0x2a5d9b][_0xa296fc(0x1b5)],_0x613152=_0x521fcf[_0x456c1a][_0x56e91e(0x305)],_0x613152=_0x613152?_0x613152:'',_0x19ad29=_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0xa296fc(0x314)][_0x2a5d9b]['Id'];}if(_0x521fcf[_0x456c1a][_0xa296fc(0x230)]!=_0xa296fc(0x244)){if(_0x30b86b==_0x56e91e(0x15f)){_0xd3565a+=_0x56e91e(0x23a);if(_0x52be7f!=_0x56e91e(0x2d3)){var _0x4fa3f4=_spPageContextInfo[_0x56e91e(0x23f)]+_0xa296fc(0x1bc)+escapeProperly(_0x613152);_0x521fcf[_0x456c1a][_0xa296fc(0x230)]==_0x56e91e(0x1bb)?_0xd3565a+=_0x56e91e(0x183)+_0xca2b00[_0x56e91e(0x230)](0x0)+_0x56e91e(0xbc):_0xd3565a+='<td><div\x20class=\x27flexingtwo\x27><img\x20src=\x27'+_0x4fa3f4+_0x56e91e(0x2c9),_0xd3565a+=_0xa296fc(0x3d1)+_0xca2b00+_0x56e91e(0x8c),_0xd3565a+=_0x56e91e(0x1d7)+_0x613152+_0x56e91e(0x137)+_0x613152+_0x56e91e(0x30f);}else{var _0x4fa3f4=_spPageContextInfo[_0x56e91e(0x23f)]+_0xa296fc(0x1bc)+escapeProperly(_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]);_0xd3565a+='<td><div\x20class=\x27flexingtwo\x27><img\x20src=\x27'+_0x4fa3f4+'\x27\x20data-themekey=\x27#\x27><div\x20class=\x27designationtype\x27>',_0xd3565a+=_0x56e91e(0x24d)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+_0x56e91e(0x8c),_0xd3565a+='<a\x20href=\x27javascript:void(0);\x27\x20class=\x27emailsec\x27\x20onclick=\x27OpenEmail(\x22'+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]+_0xa296fc(0x1b7)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0xa296fc(0x41b)]+_0x56e91e(0x30f);}_0xd3565a+=_0xa296fc(0x2aa)+DisplayPermissionType+_0x56e91e(0x2a9),_0xd3565a+=_0x56e91e(0x26e)+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)])+_0x56e91e(0x2a9),_0x52be7f!=_0x56e91e(0x2d3)?_0xd3565a+=_0xa296fc(0x2aa)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+_0x56e91e(0x2a9):_0xd3565a+=_0x56e91e(0x26e)+_0xca2b00+_0x56e91e(0x2a9),_0xd3565a+=_0x56e91e(0x26e)+_0x5b5676+_0x56e91e(0x2a9);if(_0x1a4aff==_0xa296fc(0x2d6)){if(_0x52be7f!=_0x56e91e(0x2d3)){var _0xa79052=getAcknowledgeValue('',_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,_0x613152,_0xca2b00,_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a][_0x56e91e(0x106)]);_0xd3565a+=_0x56e91e(0x26e)+_0xa79052+_0x56e91e(0x2a9);}else{var _0xa79052=getAcknowledgeValue(_0x56e91e(0x2d3),_0x521fcf[_0x456c1a][_0xa296fc(0x230)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0xa296fc(0x314)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,_0x613152,_0xca2b00,_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a][_0x56e91e(0x106)]);_0xd3565a+='<td>'+_0xa79052+_0xa296fc(0x37f);}}else _0xd3565a+=_0xa296fc(0x379);var _0x2cfad1='';_0x521fcf[_0x456c1a][_0x56e91e(0x2c7)]!=null&&(_0x2cfad1=_0x521fcf[_0x456c1a][_0x56e91e(0x2c7)][_0x56e91e(0x14c)](0x0,0x14)),_0xd3565a+=_0x56e91e(0x182)+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x173)])+_0xa296fc(0x2ae)+_0x2cfad1+'</span></td>',_0xd3565a+=_0xa296fc(0x3a1);}else{SharedTo=_0xa296fc(0x1e9);var _0x1ab343=_0xa296fc(0x1e9);_0xd3565a+=_0x56e91e(0x2c8),_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)]==_0x56e91e(0x1bb)?(_0x1ab343=_0xa296fc(0x3c0),IsBtnHide=getApprovalStatus(_0x521fcf[_0x456c1a][_0x56e91e(0xb9)],_0x521fcf[_0x456c1a][_0x56e91e(0x243)],_0x521fcf[_0x456c1a][_0x56e91e(0x23c)])):IsBtnHide=![],_0xd3565a+=_0xa296fc(0x22f)+_0x958225+','+encodeURI(_0x3c8291)+','+_0x19ad29+','+_0x248d1d+','+_0x35e02c+','+_0x168aef+','+SharedTo+','+_0x1ab343+','+_0xc1495+','+_0x613152+_0x56e91e(0x11f)+_0x19ad29+_0x56e91e(0x2c2);if(_0x52be7f!=_0x56e91e(0x2d3)){var _0x4fa3f4=_spPageContextInfo[_0xa296fc(0x318)]+_0x56e91e(0x166)+escapeProperly(_0x613152);_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)]==_0x56e91e(0x1bb)?_0xd3565a+=_0x56e91e(0x183)+_0xca2b00[_0x56e91e(0x230)](0x0)+_0x56e91e(0xbc):_0xd3565a+=_0x56e91e(0x154)+_0x4fa3f4+_0x56e91e(0x2c9),_0xd3565a+=_0x56e91e(0x24d)+_0xca2b00+_0xa296fc(0x3b2),_0xd3565a+=_0x56e91e(0x1d7)+_0x613152+_0x56e91e(0x137)+_0x613152+_0x56e91e(0x30f);}else{var _0x4fa3f4=_spPageContextInfo[_0x56e91e(0x23f)]+_0x56e91e(0x166)+escapeProperly(_0x521fcf[_0x456c1a]['Author'][_0x56e91e(0x24e)]);_0xd3565a+='<td><div\x20class=\x27flexingtwo\x27><img\x20src=\x27'+_0x4fa3f4+_0x56e91e(0x2c9),_0xd3565a+=_0x56e91e(0x24d)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+'</h3>',_0xd3565a+=_0x56e91e(0x1d7)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0xa296fc(0x41b)]+_0x56e91e(0x137)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]+_0x56e91e(0x30f);}_0xd3565a+=_0x56e91e(0x26e)+DisplayPermissionType+_0x56e91e(0x2a9),_0xd3565a+='<td>'+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)])+_0x56e91e(0x2a9),_0x52be7f!=_0xa296fc(0x23d)?_0xd3565a+=_0x56e91e(0x26e)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+'</td>':_0xd3565a+=_0x56e91e(0x26e)+_0xca2b00+_0xa296fc(0x37f),_0xd3565a+=_0x56e91e(0x26e)+_0x5b5676+_0x56e91e(0x2a9);if(IsBtnHide==![]){if(_0x1a4aff==_0xa296fc(0x2d6)){if(_0x52be7f!=_0xa296fc(0x23d)){var _0xa79052=getAcknowledgeValue('',_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)],_0x521fcf[_0x456c1a][_0xa296fc(0x3d0)][_0xa296fc(0x314)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,_0x613152,_0xca2b00,_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a][_0x56e91e(0x106)]);_0xd3565a+=_0xa296fc(0x2aa)+_0xa79052+_0x56e91e(0x2a9);}else{var _0xa79052=getAcknowledgeValue(_0x56e91e(0x2d3),_0x521fcf[_0x456c1a]['SharedGroup'],_0x521fcf[_0x456c1a][_0xa296fc(0x3d0)][_0x56e91e(0x29f)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,_0x613152,_0xca2b00,_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a]['DocType']);_0xd3565a+=_0x56e91e(0x26e)+_0xa79052+_0x56e91e(0x2a9);}}else _0xd3565a+=_0x56e91e(0x223);_0x52be7f!=_0x56e91e(0x2d3)?_0xd3565a+=_0x56e91e(0x21a)+_0x958225+',\x27'+encodeURI(_0x3c8291)+'\x27,'+_0x19ad29+','+_0x248d1d+_0x56e91e(0x1cf)+_0x478a2a+_0x56e91e(0x28a)+_0x521fcf[_0x456c1a][_0xa296fc(0x34f)]+_0x56e91e(0x28a)+_0x1ab343+'\x27,\x20\x27'+_0xc1495+_0x56e91e(0x28a)+_0x613152+_0x56e91e(0x151):_0xd3565a+=_0xa296fc(0x23f);}else _0xd3565a+='<td></td>',_0xd3565a+='<td>Approval\x20Pending</td>';_0xd3565a+=_0x56e91e(0x2cf);}}else{if(_0x30b86b==_0xa296fc(0x21b)){_0xd3565a+=_0x56e91e(0x23a);if(_0x52be7f!=_0x56e91e(0x2d3))_0xd3565a+=_0x56e91e(0x15b)+_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0x56e91e(0x1a6)][_0x56e91e(0x230)](0x0)+_0x56e91e(0xfc),_0xd3565a+=_0x56e91e(0x139)+_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0x56e91e(0x1a6)]+'</h3><p>Guest\x20Client</p></td>';else{var _0x4fa3f4=_spPageContextInfo[_0x56e91e(0x23f)]+_0x56e91e(0x166)+escapeProperly(_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]);_0xd3565a+=_0xa296fc(0x3ea)+_0x4fa3f4+_0x56e91e(0x2c9),_0xd3565a+=_0x56e91e(0x24d)+_0x521fcf[_0x456c1a]['Author'][_0x56e91e(0x1a6)]+_0x56e91e(0x8c),_0xd3565a+=_0x56e91e(0x1d7)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]+_0x56e91e(0x137)+_0x521fcf[_0x456c1a][_0xa296fc(0x31a)][_0x56e91e(0x24e)]+_0x56e91e(0x30f);}_0xd3565a+=_0x56e91e(0x14e)+DisplayPermissionType+_0x56e91e(0x2a9),_0xd3565a+='<td>'+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)])+_0x56e91e(0x2a9),_0x52be7f!=_0x56e91e(0x2d3)?_0xd3565a+=_0x56e91e(0x26e)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+_0x56e91e(0x2a9):_0xd3565a+=_0x56e91e(0x26e)+_0x521fcf[_0x456c1a][_0xa296fc(0x336)][_0x56e91e(0x1a6)]+_0x56e91e(0x2a9),_0xd3565a+=_0x56e91e(0x26e)+_0x5b5676+_0x56e91e(0x2a9);if(_0x1a4aff==_0x56e91e(0x1e1)){if(_0x52be7f!=_0x56e91e(0x2d3)){var _0xa79052=getAcknowledgeValue('',_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,'','',_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a][_0x56e91e(0x106)]);_0xd3565a+=_0x56e91e(0x26e)+_0xa79052+_0x56e91e(0x2a9);}else{var _0xa79052=getAcknowledgeValue(_0xa296fc(0x23d),_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0][_0xa296fc(0x1b5)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,'','',_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a]['DocType']);_0xd3565a+=_0x56e91e(0x26e)+_0xa79052+_0xa296fc(0x37f);}}else _0xd3565a+=_0x56e91e(0x223);var _0x2cfad1='';_0x521fcf[_0x456c1a][_0x56e91e(0x2c7)]!=null&&(_0x2cfad1=_0x521fcf[_0x456c1a][_0x56e91e(0x2c7)][_0x56e91e(0x14c)](0x0,0x14)),_0xd3565a+='<td><div\x20class=\x27RevokedDetails\x27><span\x20style=\x27cursor:\x20not-allowed;color:\x20Red;\x27>Revoked</span><span>'+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x173)])+_0xa296fc(0x2ae)+_0x2cfad1+_0x56e91e(0x26d);}else{SharedTo=_0x56e91e(0x158);var _0x1ab343=_0xa296fc(0x1e9);_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)]==_0x56e91e(0x1bb)&&(_0x1ab343=_0x56e91e(0x1bb)),(_0xd3565a+=_0x56e91e(0x2c8),_0xd3565a+=_0x56e91e(0x162)+_0x958225+','+encodeURI(_0x3c8291)+','+_0x19ad29+','+_0x248d1d+','+_0x35e02c+','+_0x168aef+','+SharedTo+','+_0x1ab343+','+_0xc1495+_0x56e91e(0x11f)+_0x19ad29+'\x27\x27></td>');if(_0x52be7f!=_0x56e91e(0x2d3))_0xd3565a+='<td><div\x20class=\x27flexingtwo\x27><div\x20id=\x27profileImage\x27>'+_0x521fcf[_0x456c1a][_0x56e91e(0xc1)]['Title'][_0x56e91e(0x230)](0x0)+_0x56e91e(0xbc),_0xd3565a+=_0x56e91e(0x24d)+_0x521fcf[_0x456c1a][_0x56e91e(0xc1)][_0x56e91e(0x1a6)]+_0x56e91e(0x8c),_0xd3565a+='</div></div></td>';else{var _0x4fa3f4=_spPageContextInfo[_0x56e91e(0x23f)]+_0x56e91e(0x166)+escapeProperly(_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]);_0xd3565a+=_0xa296fc(0x3ea)+_0x4fa3f4+_0x56e91e(0x2c9),_0xd3565a+=_0x56e91e(0x24d)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)]['Title']+_0x56e91e(0x8c),_0xd3565a+=_0x56e91e(0x1d7)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]+_0x56e91e(0x137)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x24e)]+_0x56e91e(0x30f);}_0xd3565a+=_0x56e91e(0x26e)+DisplayPermissionType+_0x56e91e(0x2a9),_0xd3565a+=_0x56e91e(0x26e)+ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)])+_0xa296fc(0x37f),_0x52be7f!='SharedWithMe'?_0xd3565a+=_0x56e91e(0x26e)+_0x521fcf[_0x456c1a][_0x56e91e(0x1f0)][_0x56e91e(0x1a6)]+_0x56e91e(0x2a9):_0xd3565a+=_0x56e91e(0x26e)+_0x521fcf[_0x456c1a][_0xa296fc(0x336)][_0x56e91e(0x1a6)]+'</td>',_0xd3565a+=_0x56e91e(0x26e)+_0x5b5676+_0x56e91e(0x2a9);if(_0x1a4aff==_0x56e91e(0x1e1)){if(_0x52be7f!=_0x56e91e(0x2d3)){var _0xa79052=getAcknowledgeValue('',_0x521fcf[_0x456c1a][_0x56e91e(0x1b9)],_0x521fcf[_0x456c1a][_0xa296fc(0x3d0)][_0x56e91e(0x29f)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)]['results'][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,'','',_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a][_0xa296fc(0x40b)]);_0xd3565a+=_0x56e91e(0x26e)+_0xa79052+_0x56e91e(0x2a9);}else{var _0xa79052=getAcknowledgeValue(_0x56e91e(0x2d3),_0x521fcf[_0x456c1a][_0xa296fc(0x230)],_0x521fcf[_0x456c1a][_0x56e91e(0x246)][_0x56e91e(0x29f)][0x0][_0x56e91e(0x1a6)],_0x521fcf[_0x456c1a]['SharedUsers'][_0x56e91e(0x29f)][0x0]['Id'],_0x521fcf[_0x456c1a]['Id'],_0x5b5676,ShowCommonStandardDateFormat(_0x521fcf[_0x456c1a][_0x56e91e(0x1fc)]),_0x4bf03a,'','',_0x30b86b,_0x5a83e8,_0x521fcf[_0x456c1a]['DocType']);_0xd3565a+='<td>'+_0xa79052+_0x56e91e(0x2a9);}}else _0xd3565a+='<td>Not\x20Required</td>';_0x52be7f!=_0x56e91e(0x2d3)?_0xd3565a+=_0x56e91e(0x20b)+_0x19ad29+',\x20'+_0x248d1d+_0x56e91e(0x1cf)+_0x478a2a+_0x56e91e(0x28a)+_0x521fcf[_0x456c1a]['DocumentType']+_0x56e91e(0x28a)+_0x1ab343+_0x56e91e(0x28a)+encodeURI(_0x3c8291)+_0x56e91e(0x28a)+_0xc1495+_0x56e91e(0xd5):_0xd3565a+=_0x56e91e(0x17b),_0xd3565a+=_0xa296fc(0x3a1);}}}_0x521fcf[_0x56e91e(0x2e6)]==0x0?$(_0x56e91e(0x115))[_0x56e91e(0x209)]():$(_0xa296fc(0x20f))[_0x56e91e(0x8b)](),ShareHostoryTable!=''&&ShareHostoryTable[_0x56e91e(0x237)](),$(_0x56e91e(0xe3))[_0xa296fc(0x2be)]()[_0x56e91e(0x2b4)](_0xd3565a),$(_0x56e91e(0xf7))[_0x56e91e(0x1ee)](_0x521fcf[_0x56e91e(0x2e6)]),_0x521fcf[_0x56e91e(0x2e6)]>0x0&&(_0x52be7f!=_0xa296fc(0x260)&&$(_0xa296fc(0x3f0))[_0x56e91e(0xc4)]()[_0x56e91e(0x2b4)](_0x51317e),selectedHistoryDocEvent(),TablePaginationShareHistory(),currentSectionType!=_0x56e91e(0x8a)&&currentSectionType!=_0x56e91e(0x2d3)&&currentSectionType!=_0x56e91e(0x22e)&&(getListUserEffectivePermissions(_0xc1495,listTitle,!![],parseInt(_0x958225),_0x56e91e(0x311)+_spPageContextInfo[_0x56e91e(0x2e9)]+''),IsNotpermission==!![]?IsContributor==![]&&IsFullControl==![]&&$(_0x56e91e(0xa1))[_0x56e91e(0x8b)]():arrPermission[_0x56e91e(0x2e6)]>0x0&&$(_0x56e91e(0xa1))[_0xa296fc(0x290)]()));}else $(_0x56e91e(0x115))[_0x56e91e(0x209)](),$(_0xa296fc(0x1f4))[_0x56e91e(0x1ee)]('0');waitingDialog[_0x56e91e(0x8b)]();});},0x64);}function GetSPGroup(){var _0x48a3b0=a86_0x227ab8,_0x51f3b8=_0x5a5f90,_0x215c7e=[],_0x5cc430=_spPageContextInfo[_0x51f3b8(0x92)]+_0x51f3b8(0x2cc);return $[_0x48a3b0(0x306)]({'url':_0x5cc430,'method':_0x51f3b8(0x294),'async':![],'contentType':_0x51f3b8(0x17e),'headers':{'Accept':_0x51f3b8(0x17e)},'success':function(_0x281eb5){var _0x3423f3=_0x51f3b8,_0x448187=[];_0x448187=_0x281eb5['d'][_0x3423f3(0x296)][_0x3423f3(0x29f)],_0x448187[_0x3423f3(0x2e6)]>0x0&&(_0x215c7e=_0x448187[_0x3423f3(0x273)](function(_0x45cee7){var _0xe99f33=a86_0x3481,_0x83aff8=_0x3423f3;return _0x45cee7['OwnerTitle']!==_0xe99f33(0x259)&&_0x45cee7[_0xe99f33(0x1b5)]!==_0xe99f33(0x273)&&_0x45cee7[_0xe99f33(0x1b5)]!==_0x83aff8(0xc3)&&_0x45cee7[_0x83aff8(0x1a6)]!==_0x83aff8(0x212)&&_0x45cee7[_0x83aff8(0x1a6)]!==_0x83aff8(0x255);}));},'eror':function(_0x265682){var _0x2d81b5=_0x51f3b8;alert(JSON[_0x2d81b5(0x20a)](_0x265682)),waitingDialog[_0x2d81b5(0x8b)]();}}),_0x215c7e;}function getTargetGroupId(){var _0x2e21b0=a86_0x227ab8,_0x59a00f=_0x5a5f90,_0x2a6286=[],_0x18be5c=_spPageContextInfo['webAbsoluteUrl']+_0x2e21b0(0x1a3);return $[_0x59a00f(0x185)]({'url':_0x18be5c,'type':_0x2e21b0(0x1b8),'headers':{'accept':_0x59a00f(0x17e)},'async':![],'success':function(_0xf599e,_0x34efec,_0x318af8){var _0x5c16ca=_0x59a00f;_0x2a6286[_0x5c16ca(0x203)](_0xf599e['d']['Id']);},'error':function(_0x362fb8,_0x1b75cf,_0x5d0a3a){var _0x33cd29=_0x59a00f;console[_0x33cd29(0xd3)](_0x362fb8[_0x33cd29(0x117)][_0x33cd29(0x165)]);}}),_0x2a6286;}function getApprovalStatus(_0x14110b,_0x210329,_0x39b7e9){var _0x340aee=a86_0x227ab8,_0x4f1562=_0x5a5f90,_0x5f5640=![],_0x1f91ef=_0x4f1562(0x1d2)+_0x39b7e9+_0x4f1562(0xba);return $[_0x340aee(0x219)](getItemsWithQuery(_0x14110b,_0x1f91ef,_0x210329))[_0x4f1562(0x1ad)](function(_0x16b7f1){var _0x25238c=_0x4f1562;_0x16b7f1[_0x25238c(0x2e6)]==0x0&&(_0x5f5640=!![]);}),_0x5f5640;}function TablePaginationShareHistory(){var _0x4eedeb=_0x5a5f90;ShareHostoryTable=$(_0x4eedeb(0x315))[_0x4eedeb(0x2d1)]({'columnDefs':[{'orderable':![],'targets':0x0}],'bPaginate':!![],'bJQueryUI':!![],'bLengthChange':![],'bFilter':!![],'bSort':!![],'bInfo':!![],'bAutoWidth':![],'bProcessing':!![],'iDisplayLength':0x5,'dom':_0x4eedeb(0x1e0),'colReorder':{'allowReorder':!![]},'language':{'searchPlaceholder':_0x4eedeb(0x2a5),'sSearch':''}}),$(_0x4eedeb(0xa3))[_0x4eedeb(0x8b)](),$(_0x4eedeb(0x161))[_0x4eedeb(0x2ee)](function(){var _0x114b71=_0x4eedeb;ShareHostoryTable[_0x114b71(0x2f8)]($(this)[_0x114b71(0x12a)]())[_0x114b71(0x172)]();});}function selectedHistoryDocEvent(){var _0x24b8ae=a86_0x227ab8;$(_0x24b8ae(0x207))['change'](function(){var _0x5c46e6=_0x24b8ae,_0x529f15=_0x23d6;selectedHistoryDoc=[],selectedHistoryDocrelativeurl=[],$(_0x529f15(0x247))[_0x529f15(0x245)](function(){var _0x46869b=a86_0x3481,_0x2eea50=_0x529f15;$(this)[_0x2eea50(0x27a)](_0x2eea50(0x1b5))==!![]&&selectedHistoryDoc['push']($(this)[_0x46869b(0x1ac)]());}),selectedHistoryDoc[_0x529f15(0x2e6)]==0x0?$(_0x529f15(0x248))[_0x529f15(0x8b)]():$(_0x5c46e6(0x217))[_0x529f15(0x209)](),$(_0x529f15(0x10c))[_0x529f15(0x2e6)]==$(_0x529f15(0x247))[_0x529f15(0x2e6)]?$(_0x529f15(0x20d))[_0x529f15(0x27a)](_0x529f15(0x1b5),!![]):$(_0x529f15(0x20d))[_0x529f15(0x27a)](_0x529f15(0x1b5),![]);});}function getSingleShareInfo(_0x8da625,_0x473f18){var _0x395a2c=a86_0x227ab8,_0x14a7f5=_0x5a5f90,_0x4944bc=_0x14a7f5(0x1cd)+_0x473f18+_0x14a7f5(0x213)+_0x8da625+'\x27\x20and\x20(PermissionStatus\x20ne\x20\x27Revoked\x27\x20or\x20PermissionStatus\x20ne\x20\x27Deleted\x27)';$[_0x14a7f5(0x28d)](getItemsWithQuery(_0x14a7f5(0x28b),_0x4944bc,_spPageContextInfo[_0x14a7f5(0x23f)]))[_0x395a2c(0x231)](function(_0x1ef965){var _0x1c2227=_0x395a2c,_0x486a95=_0x14a7f5;_0x1ef965[_0x486a95(0x2e6)]>0x0?(currentSharedItemId=_0x1ef965[0x0]['Id'],_0x1ef965[0x0][_0x486a95(0x250)]==!![]?getAcknowledgeStatus(_0x1ef965[0x0]['Id'],_0x8da625):$('#ParentAck')[_0x486a95(0x8b)](),$(_0x486a95(0xf5))[_0x1c2227(0x35f)](_0x1ef965[0x0][_0x486a95(0x1f0)][_0x486a95(0x1a6)]),$('#txtShareOn')[_0x486a95(0x1ee)](ShowCommonStandardDateFormat(_0x1ef965[0x0][_0x486a95(0x1fc)])),$(_0x486a95(0xcb))[_0x486a95(0x1ee)](_0x1ef965[0x0][_0x1c2227(0x2c6)]),$(_0x486a95(0x1fd))[_0x486a95(0x1ee)](_0x486a95(0x233)+_0x1ef965[0x0][_0x486a95(0x246)][_0x486a95(0x29f)][0x0][_0x486a95(0x1a6)])):($(_0x486a95(0x258))[_0x486a95(0x8b)](),$(_0x486a95(0xf5))[_0x1c2227(0x35f)](''),$(_0x1c2227(0x234))['text'](''),$(_0x486a95(0xcb))[_0x1c2227(0x35f)](''),$('#ShareTabSharing')[_0x486a95(0x1ee)](''));});}function getAcknowledgeStatus(_0x4e8ffd,_0x15dfa4){var _0x342ae8=a86_0x227ab8,_0x3bf3e7=_0x5a5f90;$(_0x3bf3e7(0x258))[_0x342ae8(0x31e)]();var _0x41b624='';$(_0x3bf3e7(0x258))[_0x3bf3e7(0xc4)]()[_0x3bf3e7(0x2b4)](_0x3bf3e7(0x2dd));var _0x53235d=_0x3bf3e7(0xbd)+_0x4e8ffd+_0x342ae8(0x2b1)+_spPageContextInfo['userEmail']+'\x27';$[_0x3bf3e7(0x28d)](getItemsWithQuery(_0x3bf3e7(0x2e5),_0x53235d,_spPageContextInfo[_0x3bf3e7(0x23f)]))['done'](function(_0x587521){var _0x47267c=_0x342ae8,_0xb3c982=_0x3bf3e7;_0x587521[_0xb3c982(0x2e6)]>0x0?(_0x41b624=_0x587521[0x0]['Id'],_0x587521[0x0][_0xb3c982(0x80)]==!![]?($(_0xb3c982(0x2df))[_0x47267c(0x35f)](_0x47267c(0x327)),$(_0xb3c982(0x2df))[_0xb3c982(0x199)](_0xb3c982(0x278),_0xb3c982(0x19e)),$(_0xb3c982(0x2ca))[_0x47267c(0x290)](),$(_0xb3c982(0x297))[_0xb3c982(0x27a)](_0xb3c982(0x2f6),_0xb3c982(0x2f6)),$(_0xb3c982(0x297))[_0xb3c982(0x27a)](_0xb3c982(0x1b5),'checked')):(_0x587521[0x0]['View']!=!![]&&ViewAckDocument(_0x4e8ffd,_0x15dfa4),$('#AckHeading')[_0xb3c982(0x1ee)](_0xb3c982(0x80)),$(_0xb3c982(0x2df))[_0xb3c982(0x199)](_0xb3c982(0x278),_0x47267c(0x319)),$(_0xb3c982(0x2ca))[_0xb3c982(0x209)](),$('#txtAcknoldge')[_0xb3c982(0x27a)](_0x47267c(0x2f6),''),$(_0xb3c982(0x297))[_0xb3c982(0x27a)](_0xb3c982(0x1b5),''),$(_0x47267c(0x28e))[_0xb3c982(0x87)](function(){AcknowledgeDocument(_0x41b624);}))):(_0x41b624=ViewAckDocument(_0x4e8ffd,_0x15dfa4),$(_0xb3c982(0x2df))[_0xb3c982(0x1ee)](_0xb3c982(0x80)),$(_0x47267c(0x3b4))[_0xb3c982(0x199)](_0xb3c982(0x278),'black'),$(_0xb3c982(0x2ca))[_0xb3c982(0x209)](),$(_0xb3c982(0x297))[_0xb3c982(0x27a)](_0xb3c982(0x2f6),''),$(_0xb3c982(0x297))[_0x47267c(0x409)](_0xb3c982(0x1b5),''),$('#txtAcknoldge')[_0x47267c(0x233)](function(){AcknowledgeDocument(_0x41b624);}));});}function AcknowledgeDocument(_0x11e14f){var _0x4f4437=a86_0x227ab8,_0x202c72=_0x5a5f90;if(confirm(_0x202c72(0x236))==!![]){var _0x9debca;(CurrentIpAddress==undefined||CurrentIpAddress==null)&&(CurrentIpAddress=''),($(_0x202c72(0x297))[_0x202c72(0x27a)](_0x202c72(0x2f6),_0x202c72(0x2f6)),_0x9debca={'__metadata':{'type':'SP.Data.DocumentAcknowledgementListItem'},'Acknowledge':!![],'IPAddress':CurrentIpAddress,'ActionByTimeZone':LoggedIn_TimeZone});var _0x3602c9=$[_0x202c72(0x11b)](),_0x3eaf19=_spPageContextInfo['webAbsoluteUrl']+'/_api/Web/Lists/getByTitle(\x27DocumentAcknowledgement\x27)/Items('+_0x11e14f+')';return $[_0x202c72(0x185)]({'url':_0x3eaf19,'type':_0x202c72(0x1eb),'async':![],'headers':{'accept':_0x202c72(0x17e),'X-RequestDigest':$(_0x202c72(0x16f))[_0x202c72(0x12a)](),'content-Type':_0x4f4437(0x3f5),'X-Http-Method':_0x202c72(0x10a),'If-Match':'*'},'data':JSON[_0x202c72(0x20a)](_0x9debca),'success':function(_0x67c2ea){var _0x289be8=_0x4f4437,_0x3e7f21=_0x202c72;$(_0x3e7f21(0x2df))[_0x289be8(0x35f)](_0x3e7f21(0x2e1)),$(_0x3e7f21(0x2df))[_0x3e7f21(0x199)](_0x3e7f21(0x278),_0x3e7f21(0x19e)),$(_0x289be8(0x1a4))['hide'](),$(_0x289be8(0x223))[_0x3e7f21(0x1c9)](_0x3e7f21(0x87));},'error':function(_0x977ee8){var _0xb87e4=_0x4f4437,_0x67396b=_0x202c72;alert(JSON[_0x67396b(0x20a)](_0x977ee8)),$(_0xb87e4(0x28e))[_0x67396b(0x27a)]('disabled',''),_0x3602c9[_0x67396b(0xa0)](_0x977ee8);}}),_0x3602c9[_0x202c72(0x102)]();}}function ViewAckDocument(_0x57a4d2,_0x109a1c){var _0x22e922=a86_0x227ab8,_0x521b5c=_0x5a5f90,_0x2fb840,_0x19fe3c='';_0x2fb840={'__metadata':{'type':_0x521b5c(0x2b3)},'ViewsById':_spPageContextInfo[_0x521b5c(0xa9)],'Title':$(_0x521b5c(0x12b))[_0x521b5c(0x1ee)](),'DocumentID':parseInt(_0x57a4d2),'DocID':parseInt(_0x109a1c)};var _0x357f43=$[_0x22e922(0x252)]();return $[_0x521b5c(0x185)]({'url':_spPageContextInfo[_0x521b5c(0x23f)]+_0x521b5c(0x2e0),'type':_0x521b5c(0x1eb),'async':![],'headers':{'accept':_0x521b5c(0x17e),'X-RequestDigest':$(_0x521b5c(0x16f))[_0x22e922(0x1ac)](),'content-Type':_0x521b5c(0x17e)},'data':JSON[_0x521b5c(0x20a)](_0x2fb840),'success':function(_0x3c6668){_0x19fe3c=_0x3c6668['d']['Id'];},'error':function(_0x381640){var _0x137318=_0x521b5c;alert(JSON[_0x137318(0x20a)](_0x381640)),$(_0x137318(0x297))[_0x137318(0x27a)]('disabled','');}}),_0x19fe3c;}function FilterShareHistory(_0x47ad47,_0x4cf9d6,_0x140db5,_0x5403a0,_0x5d7c97,_0x3e3c8e,_0x4b8550,_0x46fd9a){var _0x302348=a86_0x227ab8,_0x397e44=_0x5a5f90;selectedHistoryDoc=[],$(_0x397e44(0x1c0))[_0x397e44(0x1ee)](_0x4cf9d6);var _0x33618f=[],_0x170221=[],_0x3bf996=[],_0x51b5ad=[],_0x3d1049=[];SharedTo='';var _0x44cb64=_0x397e44(0x9b),_0x52b175=_0x397e44(0x7f);$(_0x397e44(0x20d))[_0x397e44(0x27a)](_0x397e44(0x1b5),![]),$(_0x397e44(0x248))[_0x397e44(0x8b)](),$('.context-menu')[_0x397e44(0x8b)](),$(_0x397e44(0xe3))[_0x397e44(0xd0)](''),currentSectionType==_0x397e44(0x2d3)?_0x4b8550=_0x397e44(0x2d3):_0x4b8550=_0x397e44(0x22e);var _0x3c78e0=[];if($(_0x397e44(0x1d6))[_0x302348(0x1ac)]()!=_0x397e44(0x269)||$(_0x397e44(0x20e))[_0x302348(0x1ac)]()!=_0x302348(0x227)){if($(_0x397e44(0x1d6))[_0x397e44(0x12a)]()==_0x397e44(0x269)&&$(_0x397e44(0x20e))[_0x397e44(0x12a)]()!=_0x397e44(0x269)){var _0x18e24e='';$(_0x397e44(0x20e))[_0x397e44(0x12a)]()==_0x397e44(0x9b)?_0x18e24e=!![]:_0x18e24e=$(_0x397e44(0x20e))[_0x397e44(0x12a)](),_0x3c78e0=currentSharedHistory['filter'](function(_0x2a66fd){var _0x3e5f90=_0x397e44;return _0x2a66fd[_0x3e5f90(0x250)]==_0x18e24e||_0x2a66fd[_0x3e5f90(0x170)]==_0x18e24e;});}else{if($(_0x397e44(0x1d6))[_0x397e44(0x12a)]()!=_0x397e44(0x269)&&$(_0x397e44(0x20e))[_0x397e44(0x12a)]()==_0x397e44(0x269))_0x3c78e0=currentSharedHistory[_0x302348(0x1cc)](function(_0x27c340){var _0x5e58ff=_0x302348,_0x17ba53=_0x397e44;return _0x27c340[_0x17ba53(0xc1)][_0x17ba53(0x1a6)]==$(_0x17ba53(0x1d6))['val']()||_0x27c340[_0x17ba53(0x305)]==$(_0x5e58ff(0x3f0))['val']();});else{if($(_0x397e44(0x1d6))[_0x397e44(0x12a)]()!=_0x397e44(0x269)&&$(_0x397e44(0x20e))[_0x397e44(0x12a)]()!=_0x397e44(0x269)){var _0x18e24e='';$(_0x302348(0x1de))[_0x397e44(0x12a)]()==_0x397e44(0x9b)?_0x18e24e=!![]:_0x18e24e=$(_0x397e44(0x20e))[_0x302348(0x1ac)](),_0x3c78e0=currentSharedHistory[_0x397e44(0x273)](function(_0x2b2fb2){var _0x5ccb46=_0x302348,_0x36cd68=_0x397e44;return(_0x2b2fb2[_0x36cd68(0x250)]==_0x18e24e||_0x2b2fb2[_0x36cd68(0x170)]==_0x18e24e)&&(_0x2b2fb2[_0x36cd68(0xc1)][_0x36cd68(0x1a6)]==$(_0x36cd68(0x1d6))[_0x36cd68(0x12a)]()||_0x2b2fb2['SharedUserEmail']==$(_0x36cd68(0x1d6))[_0x5ccb46(0x1ac)]());});}}}}else _0x3c78e0=currentSharedHistory[_0x397e44(0x273)](function(_0x3c0833){return _0x3c0833;});if(_0x3c78e0[_0x397e44(0x2e6)]>0x0){var _0x4c95dd='';for(var _0x3c195d=0x0;_0x3c195d<_0x3c78e0[_0x397e44(0x2e6)];_0x3c195d++){var _0x4c181e='';_0x3c78e0[_0x3c195d][_0x397e44(0x243)]==_0x397e44(0x110)||_0x3c78e0[_0x3c195d][_0x302348(0x254)]==null||_0x3c78e0[_0x3c195d][_0x397e44(0x243)]==_0x397e44(0x75)||_0x3c78e0[_0x3c195d][_0x397e44(0x243)]==undefined?encodeURI(_0x3c78e0[_0x3c195d][_0x302348(0x1e3)])[_0x397e44(0x19f)](_0x397e44(0x19c))!=-0x1?_0x4c181e=window[_0x302348(0x2e2)][_0x397e44(0x148)]+encodeURI(_0x3c78e0[_0x3c195d][_0x397e44(0x91)])[_0x397e44(0x2b8)](_0x397e44(0x19c))[0x0]:_0x4c181e=_spPageContextInfo[_0x397e44(0x23f)]:_0x4c181e=_0x3c78e0[_0x3c195d][_0x302348(0x254)];var _0x3b484f=_0x3c78e0[_0x3c195d][_0x397e44(0x1a6)],_0x5d4f22=DisplayPermissionType=_0x3c78e0[_0x3c195d][_0x397e44(0x170)];if(DisplayPermissionType==_0x397e44(0x20f))DisplayPermissionType=_0x397e44(0x1ab);else DisplayPermissionType==_0x302348(0x213)?DisplayPermissionType=_0x397e44(0x21c):DisplayPermissionType=_0x397e44(0x28c);var _0xc33420=_0x3c78e0[_0x3c195d]['ID'],_0x56f554=_0x3c78e0[_0x3c195d][_0x397e44(0x292)],_0x17665c='',_0x106928='',_0x1a685f='',_0x3f82e3=_0x3c78e0[_0x3c195d][_0x397e44(0x250)];_0x3f82e3==!![]?_0x3f82e3=_0x302348(0x2d6):_0x3f82e3=_0x397e44(0x180);var _0x1e04ff='';_0x3c78e0[_0x3c195d][_0x302348(0x282)]!=null&&(_0x1e04ff=moment(_0x3c78e0[_0x3c195d][_0x397e44(0x14f)])[_0x302348(0x27d)](_0x397e44(0x1bd)));for(var _0x474ee4=0x0;_0x474ee4<_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][_0x397e44(0x2e6)];_0x474ee4++){if(_0x33618f[_0x397e44(0x19f)](_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][_0x474ee4][_0x397e44(0x1a6)])==-0x1){_0x33618f[_0x397e44(0x203)](_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x302348(0x314)][_0x474ee4][_0x397e44(0x1a6)]);if(_0x3c78e0[_0x3c195d][_0x302348(0x230)]!=_0x397e44(0x158)){}else jQuery['inArray'](_0x3c78e0[_0x3c195d]['SharedClient'][_0x302348(0x1b5)],_0x3d1049)=='-1'&&_0x3d1049[_0x302348(0x37d)](_0x3c78e0[_0x3c195d][_0x397e44(0xc1)][_0x397e44(0x1a6)]);}_0x17665c=_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x302348(0x314)][_0x474ee4][_0x397e44(0x1a6)],_0x106928=_0x3c78e0[_0x3c195d][_0x397e44(0x305)],_0x106928=_0x106928?_0x106928:'',_0x1a685f=_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][_0x474ee4]['Id'];}var _0x18ef6a=_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x1a6)];if(_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)]!=_0x397e44(0x158)){if(_0x56f554==_0x397e44(0x15f)){_0x4c95dd+='<tr><td></td>';if(_0x4b8550!=_0x397e44(0x2d3)){var _0x4ffe87=_spPageContextInfo[_0x397e44(0x23f)]+_0x397e44(0x166)+escapeProperly(_0x106928);_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)]==_0x302348(0x3c0)?_0x4c95dd+=_0x397e44(0x183)+_0x17665c[_0x302348(0x3ff)](0x0)+_0x397e44(0xbc):_0x4c95dd+=_0x397e44(0x154)+_0x4ffe87+_0x397e44(0x2c9),_0x4c95dd+=_0x397e44(0x24d)+_0x17665c+_0x397e44(0x8c),_0x4c95dd+=_0x397e44(0x1d7)+_0x106928+_0x397e44(0x137)+_0x106928+_0x397e44(0x30f);}else{var _0x4ffe87=_spPageContextInfo[_0x397e44(0x23f)]+_0x397e44(0x166)+escapeProperly(_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]);_0x4c95dd+=_0x397e44(0x154)+_0x4ffe87+_0x302348(0x369),_0x4c95dd+=_0x302348(0x3d1)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x1a6)]+_0x302348(0x3b2),_0x4c95dd+=_0x397e44(0x1d7)+_0x3c78e0[_0x3c195d][_0x302348(0x31a)][_0x397e44(0x24e)]+'\x22);\x27>'+_0x3c78e0[_0x3c195d][_0x302348(0x31a)]['EMail']+_0x397e44(0x30f);}_0x4c95dd+=_0x302348(0x2aa)+DisplayPermissionType+'</td>',_0x4c95dd+=_0x397e44(0x26e)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)])+_0x397e44(0x2a9),_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x302348(0x1b5)]+_0x302348(0x37f):_0x4c95dd+=_0x397e44(0x26e)+_0x17665c+_0x397e44(0x2a9),_0x4c95dd+=_0x397e44(0x26e)+_0x1e04ff+_0x397e44(0x2a9);if(_0x3f82e3==_0x397e44(0x1e1)){if(_0x4b8550!=_0x397e44(0x2d3)){var _0x3dc077=getAcknowledgeValue('',_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,_0x106928,_0x17665c,_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x302348(0x40b)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+_0x397e44(0x2a9);}else{var _0x3dc077=getAcknowledgeValue('SharedWithMe',_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x302348(0x314)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x302348(0x3d0)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,_0x106928,_0x17665c,_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+_0x302348(0x37f);}}else _0x4c95dd+=_0x302348(0x379);var _0x1d6a12='';_0x3c78e0[_0x3c195d][_0x397e44(0x2c7)]!=null&&(_0x1d6a12=_0x3c78e0[_0x3c195d][_0x302348(0x2c2)][_0x397e44(0x14c)](0x0,0x14)),_0x4c95dd+=_0x302348(0x3c9)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x302348(0x31b)])+_0x397e44(0x2f7)+_0x1d6a12+_0x397e44(0x26d),_0x4c95dd+=_0x397e44(0x2cf);}else{SharedTo=_0x397e44(0xce);var _0x31b2d6=_0x397e44(0xce);_0x4c95dd+=_0x397e44(0x2c8),_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)]==_0x397e44(0x1bb)&&(_0x31b2d6=_0x397e44(0x1bb)),_0x4c95dd+=_0x302348(0x22f)+DocumentId+','+encodeURI(_0x4cf9d6)+','+_0x1a685f+','+_0xc33420+','+_0x52b175+','+_0x3e3c8e+','+SharedTo+','+_0x31b2d6+','+_0x4c181e+','+_0x106928+_0x302348(0x253)+_0x1a685f+_0x397e44(0x2c2);if(_0x4b8550!=_0x397e44(0x2d3)){var _0x4ffe87=_spPageContextInfo[_0x397e44(0x23f)]+_0x397e44(0x166)+escapeProperly(_0x106928);_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)]==_0x397e44(0x1bb)?(IsBtnHide=getApprovalStatus(_0x3c78e0[_0x3c195d][_0x397e44(0xb9)],_0x3c78e0[_0x3c195d][_0x397e44(0x243)],_0x3c78e0[_0x3c195d][_0x397e44(0x23c)]),_0x4c95dd+=_0x397e44(0x183)+_0x17665c[_0x397e44(0x230)](0x0)+_0x397e44(0xbc)):(IsBtnHide=![],_0x4c95dd+=_0x397e44(0x154)+_0x4ffe87+_0x302348(0x369)),_0x4c95dd+=_0x302348(0x3d1)+_0x17665c+_0x302348(0x3b2),_0x4c95dd+=_0x302348(0x1ce)+_0x106928+_0x302348(0x1b7)+_0x106928+_0x397e44(0x30f);}else{var _0x4ffe87=_spPageContextInfo[_0x302348(0x318)]+_0x302348(0x1bc)+escapeProperly(_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]);_0x4c95dd+='<td><div\x20class=\x27flexingtwo\x27><img\x20src=\x27'+_0x4ffe87+_0x397e44(0x2c9),_0x4c95dd+=_0x302348(0x3d1)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x1a6)]+_0x302348(0x3b2),_0x4c95dd+=_0x397e44(0x1d7)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]+_0x302348(0x1b7)+_0x3c78e0[_0x3c195d]['Author'][_0x397e44(0x24e)]+_0x397e44(0x30f);}_0x4c95dd+=_0x302348(0x2aa)+DisplayPermissionType+_0x397e44(0x2a9),_0x4c95dd+=_0x397e44(0x26e)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d]['Created'])+_0x397e44(0x2a9),_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x1a6)]+_0x397e44(0x2a9):_0x4c95dd+=_0x397e44(0x26e)+_0x17665c+_0x397e44(0x2a9),_0x4c95dd+='<td>'+_0x1e04ff+_0x397e44(0x2a9);if(IsBtnHide==![]){if(_0x3f82e3==_0x397e44(0x1e1)){if(_0x4b8550!=_0x302348(0x23d)){var _0x3dc077=getAcknowledgeValue('',_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x302348(0x3d0)][_0x397e44(0x29f)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,_0x106928,_0x17665c,_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+_0x397e44(0x2a9);}else{var _0x3dc077=getAcknowledgeValue(_0x397e44(0x2d3),_0x3c78e0[_0x3c195d][_0x302348(0x230)],_0x3c78e0[_0x3c195d][_0x302348(0x3d0)][_0x397e44(0x29f)][0x0][_0x302348(0x1b5)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,_0x106928,_0x17665c,_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+_0x397e44(0x2a9);}}else _0x4c95dd+=_0x397e44(0x223);_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x397e44(0x21a)+DocumentId+',\x27'+encodeURI(_0x4cf9d6)+'\x27,'+_0x1a685f+','+_0xc33420+_0x302348(0x403)+_0x44cb64+_0x397e44(0x28a)+_0x3c78e0[_0x3c195d][_0x397e44(0x88)]+_0x397e44(0x28a)+_0x31b2d6+_0x302348(0x291)+_0x4c181e+'\x27,\x20\x27'+_0x106928+_0x397e44(0x151):_0x4c95dd+='<td></td>';}else _0x4c95dd+=_0x397e44(0x17b),_0x4c95dd+=_0x397e44(0x284);_0x4c95dd+=_0x397e44(0x2cf);}}else{if(_0x56f554==_0x397e44(0x15f)){_0x4c95dd+='<tr><td></td>';if(_0x4b8550!=_0x397e44(0x2d3))_0x4c95dd+='<td><div\x20class=\x27flexingtwo\x27><div\x20class=\x27empoyeeimg\x20clientnameshow\x27><span\x20class=\x27clienttext\x27><div\x20id=\x27profileImage\x27>'+_0x3c78e0[_0x3c195d][_0x397e44(0xc1)][_0x397e44(0x1a6)][_0x397e44(0x230)](0x0)+_0x397e44(0xfc),_0x4c95dd+=_0x397e44(0x139)+_0x3c78e0[_0x3c195d][_0x397e44(0xc1)][_0x397e44(0x1a6)]+_0x397e44(0x96);else{var _0x4ffe87=_spPageContextInfo[_0x397e44(0x23f)]+_0x397e44(0x166)+escapeProperly(_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]);_0x4c95dd+=_0x397e44(0x154)+_0x4ffe87+'\x27\x20data-themekey=\x27#\x27><div\x20class=\x27designationtype\x27>',_0x4c95dd+=_0x302348(0x3d1)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)]['Title']+_0x397e44(0x8c),_0x4c95dd+=_0x397e44(0x1d7)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]+_0x397e44(0x137)+_0x3c78e0[_0x3c195d][_0x302348(0x31a)][_0x397e44(0x24e)]+_0x397e44(0x30f);}_0x4c95dd+=_0x397e44(0x14e)+DisplayPermissionType+_0x397e44(0x2a9),_0x4c95dd+=_0x397e44(0x26e)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x302348(0x40f)])+'</td>',_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x1a6)]+_0x397e44(0x2a9):_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d]['SharedClient'][_0x397e44(0x1a6)]+_0x397e44(0x2a9),_0x4c95dd+=_0x397e44(0x26e)+_0x1e04ff+_0x302348(0x37f);if(_0x3f82e3==_0x397e44(0x1e1)){if(_0x4b8550!=_0x397e44(0x2d3)){var _0x3dc077=getAcknowledgeValue('',_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x302348(0x3d0)][_0x397e44(0x29f)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,'','',_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+'</td>';}else{var _0x3dc077=getAcknowledgeValue(_0x397e44(0x2d3),_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d]['SharedUsers'][_0x302348(0x314)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,'','',_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d]['DocType']);_0x4c95dd+=_0x302348(0x2aa)+_0x3dc077+_0x397e44(0x2a9);}}else _0x4c95dd+=_0x397e44(0x223);var _0x1d6a12='';_0x3c78e0[_0x3c195d][_0x397e44(0x2c7)]!=null&&(_0x1d6a12=_0x3c78e0[_0x3c195d][_0x397e44(0x2c7)][_0x397e44(0x14c)](0x0,0x14)),_0x4c95dd+=_0x397e44(0x182)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x173)])+_0x397e44(0x2f7)+_0x1d6a12+_0x397e44(0x26d);}else{SharedTo='Organization';var _0x31b2d6=_0x397e44(0xce);_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)]==_0x397e44(0x1bb)&&(_0x31b2d6=_0x397e44(0x1bb)),(_0x4c95dd+=_0x302348(0x34c),_0x4c95dd+=_0x397e44(0x162)+DocumentId+','+encodeURI(_0x4cf9d6)+','+_0x1a685f+','+_0xc33420+','+_0x52b175+','+_0x3e3c8e+','+SharedTo+','+_0x31b2d6+','+_0x4c181e+_0x397e44(0x11f)+_0x1a685f+_0x397e44(0x2c2));if(_0x4b8550!=_0x397e44(0x2d3))_0x4c95dd+=_0x397e44(0x183)+_0x3c78e0[_0x3c195d][_0x397e44(0xc1)][_0x397e44(0x1a6)][_0x302348(0x3ff)](0x0)+_0x302348(0x37c),_0x4c95dd+=_0x302348(0x3d1)+_0x3c78e0[_0x3c195d][_0x397e44(0xc1)][_0x397e44(0x1a6)]+_0x302348(0x3b2),_0x4c95dd+=_0x397e44(0x191);else{var _0x4ffe87=_spPageContextInfo[_0x397e44(0x23f)]+_0x397e44(0x166)+escapeProperly(_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x302348(0x41b)]);_0x4c95dd+=_0x397e44(0x154)+_0x4ffe87+_0x397e44(0x2c9),_0x4c95dd+=_0x397e44(0x24d)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x302348(0x1b5)]+_0x397e44(0x8c),_0x4c95dd+=_0x397e44(0x1d7)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]+_0x302348(0x1b7)+_0x3c78e0[_0x3c195d][_0x397e44(0x1f0)][_0x397e44(0x24e)]+_0x397e44(0x30f);}_0x4c95dd+=_0x397e44(0x26e)+DisplayPermissionType+_0x302348(0x37f),_0x4c95dd+=_0x397e44(0x26e)+ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)])+'</td>',_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d][_0x302348(0x31a)][_0x397e44(0x1a6)]+_0x397e44(0x2a9):_0x4c95dd+=_0x397e44(0x26e)+_0x3c78e0[_0x3c195d]['SharedClient'][_0x302348(0x1b5)]+_0x397e44(0x2a9),_0x4c95dd+=_0x397e44(0x26e)+_0x1e04ff+_0x397e44(0x2a9);if(_0x3f82e3==_0x302348(0x2d6)){if(_0x4b8550!=_0x397e44(0x2d3)){var _0x3dc077=getAcknowledgeValue('',_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,'','',_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x397e44(0x26e)+_0x3dc077+_0x397e44(0x2a9);}else{var _0x3dc077=getAcknowledgeValue(_0x397e44(0x2d3),_0x3c78e0[_0x3c195d][_0x397e44(0x1b9)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0][_0x397e44(0x1a6)],_0x3c78e0[_0x3c195d][_0x397e44(0x246)][_0x397e44(0x29f)][0x0]['Id'],_0x3c78e0[_0x3c195d]['Id'],_0x1e04ff,ShowCommonStandardDateFormat(_0x3c78e0[_0x3c195d][_0x397e44(0x1fc)]),_0x5d4f22,'','',_0x56f554,_0x18ef6a,_0x3c78e0[_0x3c195d][_0x397e44(0x106)]);_0x4c95dd+=_0x302348(0x2aa)+_0x3dc077+_0x397e44(0x2a9);}}else _0x4c95dd+=_0x302348(0x379);_0x4b8550!=_0x397e44(0x2d3)?_0x4c95dd+=_0x302348(0x267)+_0x1a685f+',\x20'+_0xc33420+_0x397e44(0x1cf)+_0x44cb64+_0x302348(0x291)+_0x3c78e0[_0x3c195d][_0x397e44(0x88)]+_0x397e44(0x28a)+_0x31b2d6+_0x397e44(0x28a)+encodeURI(_0x4cf9d6)+_0x397e44(0x28a)+_0x4c181e+_0x397e44(0xd5):_0x4c95dd+=_0x397e44(0x17b),_0x4c95dd+=_0x397e44(0x2cf);}}}_0x3c78e0['length']==0x0?$(_0x397e44(0x115))[_0x302348(0x31e)]():$(_0x397e44(0x115))[_0x397e44(0x8b)](),ShareHostoryTable!=''&&ShareHostoryTable[_0x397e44(0x237)](),$(_0x397e44(0xe3))[_0x397e44(0xc4)]()[_0x302348(0x371)](_0x4c95dd),$(_0x397e44(0xf7))[_0x397e44(0x1ee)](_0x3c78e0[_0x397e44(0x2e6)]),_0x3c78e0['length']>0x0&&(selectedHistoryDocEvent(),TablePaginationShareHistory(),currentSectionType!=_0x397e44(0x8a)&&currentSectionType!=_0x397e44(0x2d3)&&currentSectionType!=_0x397e44(0x22e)&&(getListUserEffectivePermissions(_0x4c181e,listTitle,!![],parseInt(_0x47ad47),_0x397e44(0x311)+_spPageContextInfo[_0x397e44(0x2e9)]+''),IsNotpermission==!![]?IsContributor==![]&&IsFullControl==![]&&$(_0x397e44(0xa1))[_0x302348(0x290)]():arrPermission[_0x302348(0x3c5)]>0x0&&$(_0x397e44(0xa1))[_0x397e44(0x8b)]()));}else $(_0x302348(0x20f))[_0x397e44(0x209)](),$(_0x397e44(0xf7))[_0x397e44(0x1ee)]('0');}function getAcknowledgeValue(_0x39f577,_0x3385e6,_0x30735a,_0x1f7019,_0x43ada8,_0x4c492b,_0x57e3ae,_0x479b4b,_0x55da94,_0x30735a,_0x5e059b,_0x24a3d1,_0x43d327){var _0x2e8083=a86_0x227ab8,_0x58f203=_0x5a5f90,_0x896dd2='',_0x5a4571=0x0;$(_0x58f203(0x18b))[_0x58f203(0x209)]();if(_0x39f577=='SharedWithMe'){var _0x36d333=_0x58f203(0xbd)+_0x43ada8+_0x58f203(0x22a)+_spPageContextInfo[_0x58f203(0xf1)]+'\x27\x20and\x20Acknowledge\x20eq\x20\x271\x27';$[_0x58f203(0x28d)](getItemsWithQuery(_0x58f203(0x2e5),_0x36d333,_spPageContextInfo[_0x58f203(0x23f)]))[_0x58f203(0x1ad)](function(_0x4efd29){var _0x24c996=a86_0x3481,_0x7f093a=_0x58f203;_0x4efd29[_0x7f093a(0x2e6)]>0x0?_0x896dd2=_0x7f093a(0x112)+_0x39f577+_0x7f093a(0x28a)+_0x3385e6+_0x7f093a(0x28a)+_0x1f7019+'\x27,\x20\x27'+_0x43ada8+_0x7f093a(0x28a)+_0x4c492b+'\x27,\x20\x27'+_0x57e3ae+_0x7f093a(0x28a)+_0x479b4b+_0x7f093a(0x28a)+_0x55da94+'\x27,\x20\x27'+_0x30735a+_0x24c996(0x291)+_0x5e059b+_0x7f093a(0x28a)+_0x24a3d1+_0x7f093a(0x28a)+_0x43d327+_0x7f093a(0xae):_0x5e059b==_0x7f093a(0x15f)?($('#btnAckNotifyAll')[_0x7f093a(0x8b)](),_0x896dd2=_0x7f093a(0x81)):_0x896dd2=_0x7f093a(0x280)+_0x39f577+_0x24c996(0x291)+_0x3385e6+_0x7f093a(0x28a)+_0x1f7019+'\x27,\x20\x27'+_0x43ada8+_0x24c996(0x291)+_0x4c492b+_0x7f093a(0x28a)+_0x57e3ae+_0x7f093a(0x28a)+_0x479b4b+_0x7f093a(0x28a)+_0x55da94+_0x7f093a(0x28a)+_0x30735a+_0x7f093a(0x28a)+_0x5e059b+_0x7f093a(0x28a)+_0x24a3d1+_0x24c996(0x291)+_0x43d327+_0x7f093a(0x12c);});}else{if(_0x3385e6==_0x58f203(0x1dd)||_0x3385e6==_0x2e8083(0x368)){var _0x36d333=_0x2e8083(0x392)+_0x43ada8+_0x58f203(0x105)+_0x1f7019+'\x27\x20and\x20Acknowledge\x20eq\x20\x271\x27';$[_0x58f203(0x28d)](getItemsWithQuery(_0x2e8083(0x342),_0x36d333,_spPageContextInfo[_0x58f203(0x23f)]))[_0x58f203(0x1ad)](function(_0x2a2a61){var _0x3a0134=_0x2e8083,_0x1d60d0=_0x58f203;_0x2a2a61[_0x3a0134(0x3c5)]>0x0?_0x896dd2=_0x1d60d0(0x112)+_0x39f577+_0x1d60d0(0x28a)+_0x3385e6+_0x1d60d0(0x28a)+_0x1f7019+_0x1d60d0(0x28a)+_0x43ada8+_0x1d60d0(0x28a)+_0x4c492b+_0x1d60d0(0x28a)+_0x57e3ae+_0x3a0134(0x291)+_0x479b4b+_0x1d60d0(0x28a)+_0x55da94+_0x1d60d0(0x28a)+_0x30735a+_0x1d60d0(0x28a)+_0x5e059b+_0x3a0134(0x291)+_0x24a3d1+_0x1d60d0(0x28a)+_0x43d327+_0x1d60d0(0xae):_0x5e059b==_0x1d60d0(0x15f)?($(_0x1d60d0(0x18b))[_0x1d60d0(0x8b)](),_0x896dd2=_0x1d60d0(0x81)):_0x896dd2=_0x1d60d0(0x280)+_0x39f577+_0x1d60d0(0x28a)+_0x3385e6+_0x1d60d0(0x28a)+_0x1f7019+_0x1d60d0(0x28a)+_0x43ada8+_0x1d60d0(0x28a)+_0x4c492b+_0x3a0134(0x291)+_0x57e3ae+_0x1d60d0(0x28a)+_0x479b4b+_0x1d60d0(0x28a)+_0x55da94+_0x1d60d0(0x28a)+_0x30735a+_0x1d60d0(0x28a)+_0x5e059b+_0x1d60d0(0x28a)+_0x24a3d1+_0x1d60d0(0x28a)+_0x43d327+_0x3a0134(0x25b);});}else{var _0x24f73f=[];_0x3385e6==_0x58f203(0x158)?_0x24f73f=GetUserFromSPGp(_0x1f7019):_0x24f73f=GetUserFromEmp(_0x1f7019);for(var _0x16abb8=0x0;_0x16abb8<_0x24f73f[_0x58f203(0x2e6)];_0x16abb8++){var _0x36d333=_0x2e8083(0x2fe)+_0x43ada8+_0x58f203(0x22a)+_0x24f73f[_0x16abb8][_0x58f203(0x192)]+_0x58f203(0x1c4);$[_0x58f203(0x28d)](getItemsWithQuery(_0x58f203(0x2e5),_0x36d333,_spPageContextInfo[_0x58f203(0x23f)]))[_0x58f203(0x1ad)](function(_0x21db06){var _0x3b6e33=_0x58f203;_0x21db06[_0x3b6e33(0x2e6)]>0x0&&_0x5a4571++;});}_0x5e059b==_0x58f203(0x15f)?($(_0x2e8083(0x1e8))[_0x58f203(0x8b)](),_0x896dd2=_0x58f203(0x280)+_0x39f577+_0x58f203(0x28a)+_0x3385e6+_0x2e8083(0x291)+_0x1f7019+_0x58f203(0x28a)+_0x43ada8+_0x58f203(0x28a)+_0x4c492b+_0x58f203(0x28a)+_0x57e3ae+_0x2e8083(0x291)+_0x479b4b+_0x58f203(0x28a)+_0x55da94+_0x58f203(0x28a)+_0x30735a+_0x58f203(0x28a)+_0x5e059b+_0x58f203(0x28a)+_0x24a3d1+_0x58f203(0x28a)+_0x43d327+_0x2e8083(0x3ac)+_0x5a4571+_0x58f203(0x217)):_0x896dd2=_0x2e8083(0x1a7)+_0x39f577+_0x58f203(0x28a)+_0x3385e6+_0x58f203(0x28a)+_0x1f7019+_0x58f203(0x28a)+_0x43ada8+_0x58f203(0x28a)+_0x4c492b+_0x58f203(0x28a)+_0x57e3ae+_0x58f203(0x28a)+_0x479b4b+_0x58f203(0x28a)+_0x55da94+_0x58f203(0x28a)+_0x30735a+_0x58f203(0x28a)+_0x5e059b+_0x58f203(0x28a)+_0x24a3d1+_0x58f203(0x28a)+_0x43d327+_0x58f203(0x19d)+_0x5a4571+_0x58f203(0x217);}}return _0x896dd2;}function GetDocumentsSharedFilter(_0x270062){var _0x2f5471=a86_0x227ab8,_0x2eb320=_0x5a5f90;arrFileFolder=[];var _0x5e48b0=[],_0x4d514e='';$(_0x2eb320(0x118))[_0x2eb320(0xc4)]()[_0x2eb320(0xd0)](_0x2eb320(0x1f4)),_0x4d514e+=_0x2eb320(0x215)+_0x2f5471(0x333)+_0x2eb320(0xd6);if(_0x270062==_0x2eb320(0x22e))var _0xb443a=[_0x2eb320(0x16d),_0x2eb320(0x1a6),_0x2eb320(0x229),_0x2eb320(0x28e),_0x2eb320(0x24f),_0x2eb320(0x1ca),''];else var _0xb443a=[_0x2eb320(0x16d),_0x2f5471(0x1b5),_0x2eb320(0x229),_0x2eb320(0x28e),_0x2eb320(0x138),_0x2eb320(0x1ca)];for(var _0x6d2584=0x0;_0x6d2584<_0xb443a[_0x2eb320(0x2e6)];_0x6d2584++){_0x4d514e+=_0x2f5471(0x2f4)+_0xb443a[_0x6d2584]+'\x22>'+_0xb443a[_0x6d2584]+_0x2eb320(0xd6);}$(_0x2f5471(0x362))[_0x2eb320(0xc4)]()[_0x2f5471(0x371)](_0x4d514e),_0x5e48b0=GetSPGroup();var _0x2afb90='';_0x270062==_0x2eb320(0x22e)?items=arrSharedBy[_0x2f5471(0x1cc)](function(_0x1f3ce1){return _0x1f3ce1;}):items=arrSharedTo[_0x2eb320(0x273)](function(_0x2becde){return _0x2becde;});var _0x3fe774=getUserInformation(_0x2f5471(0x1b1)),_0x33dfa6=[],_0x36ba2f=$(_0x2eb320(0x1e7))[_0x2f5471(0x1ac)]();$(_0x2eb320(0x1e7))[_0x2f5471(0x1ac)]()==_0x2eb320(0x235)&&(_0x36ba2f=null);var _0x1bde55='';if($(_0x2eb320(0x1c5))[_0x2eb320(0x12a)]()==_0x2eb320(0x1e1)||$(_0x2eb320(0x1c5))[_0x2eb320(0x12a)]()==_0x2eb320(0x2e1)||$(_0x2eb320(0x1c5))[_0x2eb320(0x12a)]()==_0x2eb320(0x259))_0x1bde55=!![];else $(_0x2eb320(0x1c5))[_0x2eb320(0x12a)]()=='All'?_0x1bde55=_0x2eb320(0x269):_0x1bde55=![];_0x270062==_0x2eb320(0x22e)?items=items[_0x2eb320(0x273)](function(_0x35caca,_0x2d3ceb){var _0x2449e0=_0x2f5471,_0xe4c384=_0x2eb320;if($(_0xe4c384(0x2b1))[_0xe4c384(0x1ee)]()!='')for(var _0x26e279=0x0;_0x26e279<_0x3fe774[_0xe4c384(0x2e6)];_0x26e279++){_0x26e279==0x0?_0x33dfa6[_0xe4c384(0x203)](_0x35caca['SharedUsers']['results'][0x0]['ID']==_0x3fe774[_0x26e279]):_0x33dfa6[_0xe4c384(0x203)](_0x35caca[_0xe4c384(0x246)][_0xe4c384(0x29f)][0x0]['ID']==_0x3fe774[_0x26e279]);}else{var _0x3589a7=[];_0x33dfa6[_0xe4c384(0x203)](!![]);}_0x33dfa6[_0x2449e0(0x3b7)](function(_0x540e7d,_0x5186de){_0x5186de==0x0?_0x2afb90=_0x540e7d:_0x2afb90=_0x540e7d||_0x2afb90;}),(_0x35caca[_0xe4c384(0x13b)]==null||_0x35caca[_0xe4c384(0x13b)]=='')&&(_0x35caca[_0xe4c384(0x13b)]=_0xe4c384(0x110));var _0x545d9c=_0x35caca[_0xe4c384(0x250)];return $(_0xe4c384(0x1c5))[_0xe4c384(0x12a)]()==_0x2449e0(0x227)&&(_0x545d9c=!![]),_0x33dfa6=[],_0x2afb90&&($(_0xe4c384(0x125))[_0xe4c384(0x12a)]()[_0x2449e0(0x3a4)]()==_0xe4c384(0x110)?_0x35caca[_0xe4c384(0x13b)]!=_0xe4c384(0x110):_0x35caca[_0xe4c384(0x13b)][_0xe4c384(0x300)]()==$('#ShareFilterRef')[_0xe4c384(0x12a)]()[_0xe4c384(0x300)]()||_0x35caca[_0xe4c384(0x13b)][_0x2449e0(0x1fa)]()[_0xe4c384(0x19f)]($(_0xe4c384(0x125))[_0xe4c384(0x12a)]()[_0xe4c384(0x300)]())!=-0x1)&&($(_0xe4c384(0x134))[_0xe4c384(0x12a)]()==_0xe4c384(0x269)?_0x35caca[_0xe4c384(0x106)]!='':_0x35caca[_0xe4c384(0x106)]==$('#FilterShareDocType')[_0x2449e0(0x1ac)]())&&(_0x36ba2f==_0xe4c384(0x269)?_0x35caca[_0xe4c384(0x292)]!='':_0x35caca[_0x2449e0(0x3bd)]==_0x36ba2f)&&(_0x1bde55==_0xe4c384(0x269)?_0x545d9c!='':_0x545d9c==_0x1bde55),($(_0xe4c384(0x22c))[_0x2449e0(0x1ac)]()==_0xe4c384(0x269)?_0x35caca[_0x2449e0(0x2c6)]!='':_0x35caca[_0x2449e0(0x2c6)]==$(_0xe4c384(0x22c))[_0x2449e0(0x1ac)]())&&_0x2afb90&&($(_0x2449e0(0x1c4))[_0x2449e0(0x1ac)]()[_0xe4c384(0x234)]()==_0xe4c384(0x110)?_0x35caca[_0xe4c384(0x13b)]!=_0xe4c384(0x110):_0x35caca[_0xe4c384(0x13b)][_0x2449e0(0x1fa)]()==$(_0x2449e0(0x1c4))[_0xe4c384(0x12a)]()[_0xe4c384(0x300)]()||_0x35caca[_0xe4c384(0x13b)][_0xe4c384(0x300)]()[_0xe4c384(0x19f)]($(_0xe4c384(0x125))[_0xe4c384(0x12a)]()[_0xe4c384(0x300)]())!=-0x1)&&($(_0x2449e0(0x417))['val']()==_0xe4c384(0x269)?_0x35caca[_0xe4c384(0x106)]!='':_0x35caca[_0xe4c384(0x106)]==$(_0xe4c384(0x134))[_0x2449e0(0x1ac)]())&&(_0x36ba2f==_0xe4c384(0x269)?_0x35caca[_0xe4c384(0x292)]!='':_0x35caca[_0xe4c384(0x292)]==_0x36ba2f)&&(_0x1bde55==_0xe4c384(0x269)?_0x545d9c!='':_0x545d9c==_0x1bde55)&&($(_0xe4c384(0x26a))[_0xe4c384(0x12a)]()==''?_0x35caca[_0x2449e0(0x390)]!=null:$(_0xe4c384(0x26a))[_0xe4c384(0x12a)]()[_0xe4c384(0x234)]()==_0x35caca[_0xe4c384(0x122)]);}):items=items[_0x2eb320(0x273)](function(_0x35b38a,_0x39811e){var _0x21cbd8=_0x2f5471,_0x24228a=_0x2eb320;if($(_0x24228a(0x2b1))[_0x24228a(0x1ee)]()!='')for(var _0x438ff6=0x0;_0x438ff6<_0x3fe774[_0x24228a(0x2e6)];_0x438ff6++){_0x438ff6==0x0?_0x33dfa6[_0x21cbd8(0x37d)](_0x35b38a[_0x24228a(0x1f0)]['ID']==_0x3fe774[_0x438ff6]):_0x33dfa6[_0x24228a(0x203)](_0x35b38a[_0x24228a(0x1f0)]['ID']==_0x3fe774[_0x438ff6]);}else{var _0x2bddd3=[];_0x33dfa6[_0x24228a(0x203)](!![]);}_0x33dfa6[_0x24228a(0x103)](function(_0x1ce444,_0x209f18){_0x209f18==0x0?_0x2afb90=_0x1ce444:_0x2afb90=_0x1ce444||_0x2afb90;}),_0x33dfa6=[],(_0x35b38a[_0x24228a(0x13b)]==null||_0x35b38a[_0x24228a(0x13b)]=='')&&(_0x35b38a[_0x24228a(0x13b)]=_0x21cbd8(0x33d));var _0x41c450=_0x35b38a[_0x24228a(0x250)];return $(_0x24228a(0x1c5))[_0x24228a(0x12a)]()==_0x24228a(0x269)&&(_0x41c450=!![]),_0x2afb90&&($(_0x24228a(0x125))[_0x24228a(0x12a)]()[_0x24228a(0x234)]()==_0x24228a(0x110)?_0x35b38a['DocumentNo']!=_0x24228a(0x110):_0x35b38a[_0x21cbd8(0x36a)][_0x24228a(0x300)]()==$(_0x21cbd8(0x1c4))[_0x24228a(0x12a)]()[_0x24228a(0x300)]()||_0x35b38a[_0x24228a(0x13b)][_0x21cbd8(0x1fa)]()[_0x24228a(0x19f)]($(_0x24228a(0x125))[_0x21cbd8(0x1ac)]()[_0x24228a(0x300)]())!=-0x1)&&($(_0x24228a(0x134))[_0x24228a(0x12a)]()==_0x24228a(0x269)?_0x35b38a[_0x24228a(0x106)]!='':_0x35b38a[_0x24228a(0x106)]==$(_0x24228a(0x134))[_0x24228a(0x12a)]())&&(_0x36ba2f==_0x21cbd8(0x227)?_0x35b38a['PermissionStatus']!='':_0x35b38a[_0x24228a(0x292)]==_0x36ba2f)&&(_0x1bde55==_0x24228a(0x269)?_0x41c450!='':_0x41c450==_0x1bde55),($(_0x24228a(0x22c))[_0x24228a(0x12a)]()==_0x24228a(0x269)?_0x35b38a[_0x24228a(0x170)]!='':_0x35b38a[_0x24228a(0x170)]==$(_0x24228a(0x22c))[_0x24228a(0x12a)]())&&_0x2afb90&&($(_0x24228a(0x125))['val']()[_0x21cbd8(0x3a4)]()==_0x24228a(0x110)?_0x35b38a['DocumentNo']!=_0x21cbd8(0x33d):_0x35b38a[_0x24228a(0x13b)][_0x21cbd8(0x1fa)]()==$(_0x24228a(0x125))['val']()[_0x21cbd8(0x1fa)]()||_0x35b38a[_0x24228a(0x13b)][_0x24228a(0x300)]()['indexOf']($(_0x24228a(0x125))[_0x24228a(0x12a)]()[_0x24228a(0x300)]())!=-0x1)&&($(_0x24228a(0x134))[_0x24228a(0x12a)]()==_0x24228a(0x269)?_0x35b38a[_0x24228a(0x106)]!='':_0x35b38a[_0x24228a(0x106)]==$(_0x21cbd8(0x417))[_0x24228a(0x12a)]())&&(_0x36ba2f==_0x24228a(0x269)?_0x35b38a[_0x24228a(0x292)]!='':_0x35b38a[_0x24228a(0x292)]==_0x36ba2f)&&(_0x1bde55==_0x24228a(0x269)?_0x41c450!='':_0x41c450==_0x1bde55)&&($(_0x24228a(0x26a))[_0x24228a(0x12a)]()==''?_0x35b38a[_0x24228a(0x122)]!=null:$(_0x24228a(0x26a))[_0x24228a(0x12a)]()[_0x24228a(0x234)]()==_0x35b38a[_0x24228a(0x122)]);});var _0x410bd2='';items[_0x2eb320(0x2e6)]>0x0?(_0x270062==_0x2eb320(0x22e)?SharedByMeItems(items):SharedWithMeItems(items,_0x2eb320(0x2d3)),waitingDialog[_0x2eb320(0x8b)]()):(waitingDialog[_0x2eb320(0x8b)](),_0x410bd2+=_0x2eb320(0x1ea),$(_0x2eb320(0x30b))[_0x2eb320(0xc4)]()[_0x2eb320(0x2b4)](_0x410bd2)),$(_0x2eb320(0x2ab))[_0x2f5471(0x3e2)](_0x2eb320(0x8b));}function AddToArchive(){var _0x46ba95=a86_0x227ab8,_0x5547e9=_0x5a5f90,_0x3c0907=[];_0x3c0907=arrFileFolder[_0x5547e9(0x273)](function(_0x1544eb){var _0x298861=_0x5547e9;return _0x1544eb[_0x298861(0x7b)]==_0x298861(0x1bb);}),_0x3c0907[_0x5547e9(0x2e6)]>0x0&&(arrFileFolder=arrFileFolder[_0x5547e9(0x273)](function(_0x223d1c){var _0x2dc7a2=a86_0x3481,_0x594682=_0x5547e9;return _0x223d1c[_0x594682(0x7b)]!=_0x2dc7a2(0x3c0);}));if(arrFileFolder[_0x5547e9(0x2e6)]==0x0)return alert(_0x46ba95(0x1f6)),![];arrFileFolder[_0x5547e9(0x103)](function(_0x40c188,_0xae94d3){var _0x3bff2a=_0x5547e9,_0x26b504=_0x3bff2a(0x28b),_0x265c06,_0x4fd9d3=GetItemTypeForListName(_0x26b504);_0x265c06={'__metadata':{'type':_0x4fd9d3},'IsArchive':!![]};var _0x4a2646=$[_0x3bff2a(0x11b)]();return $[_0x3bff2a(0x185)]({'url':_spPageContextInfo[_0x3bff2a(0x23f)]+_0x3bff2a(0x254)+_0x26b504+_0x3bff2a(0xd4)+_0x40c188[_0x3bff2a(0x101)]+'\x27)','type':_0x3bff2a(0x1eb),'async':![],'headers':{'accept':_0x3bff2a(0x17e),'X-RequestDigest':$(_0x3bff2a(0x16f))[_0x3bff2a(0x12a)](),'content-Type':_0x3bff2a(0x17e),'X-Http-Method':_0x3bff2a(0x10a),'If-Match':'*'},'data':JSON[_0x3bff2a(0x20a)](_0x265c06),'success':function(_0x17f223){var _0x36eaac=a86_0x3481,_0x4d6630=_0x3bff2a;arrSharedTo=arrSharedTo[_0x4d6630(0x273)](function(_0x4374f7){var _0x5b30b2=a86_0x3481;return _0x4374f7['Id']!=_0x40c188[_0x5b30b2(0x212)];}),arrFileFolder[_0x36eaac(0x3c5)]==_0xae94d3+0x1&&($(_0x4d6630(0x26f))[_0x36eaac(0x3c5)]==0x0&&BindDMSDocumentType(),$(_0x4d6630(0xe9))[_0x4d6630(0xd0)]()==''&&initializePeoplePicker(_0x4d6630(0x221),!![]),$(_0x4d6630(0x1e3))[_0x4d6630(0x1c9)](_0x36eaac(0x233)),arrFileFolder=[],_0x3c0907[_0x36eaac(0x3c5)]==0x0?alert(_0x4d6630(0x291)):(_0x3c0907=[],alert(_0x4d6630(0xa4))),$(_0x4d6630(0xad))[_0x4d6630(0x27a)](_0x36eaac(0x2cb),''),$(_0x4d6630(0xad))[_0x4d6630(0x87)](function(){var _0x15ba32=_0x36eaac,_0x17d94c=_0x4d6630,_0x193199=this[_0x15ba32(0x334)]['split'](',');if(this[_0x17d94c(0x1b5)]==!![])arrFileFolder[_0x15ba32(0x37d)]({'SharedItemId':_0x193199[0x0][_0x15ba32(0x3a4)](),'type':_0x193199[0x1][_0x17d94c(0x234)](),'SharedTo':_0x193199[0x2][_0x15ba32(0x3a4)](),'DocumentId':_0x193199[0x3][_0x17d94c(0x234)](),'ServerURL':_0x193199[0x4][_0x17d94c(0x234)](),'userOrgId':_0x193199[0x5][_0x17d94c(0x234)](),'SiteURL':_0x193199[0x6][_0x15ba32(0x3a4)](),'IsBlock':_0x193199[0x7][_0x17d94c(0x234)]()});else{var _0x42e059=this[_0x17d94c(0xc9)];arrFileFolder=arrFileFolder[_0x17d94c(0x273)](function(_0x417dcb){var _0x429b8a=_0x17d94c;return _0x417dcb[_0x429b8a(0x101)]!=_0x193199[0x0][_0x429b8a(0x234)]();});}}),$(_0x4d6630(0x2bd))[_0x4d6630(0x87)](function(_0xe458b2){var _0x5cfe5b=_0x36eaac,_0x5d6589=_0x4d6630;this[_0x5d6589(0x1b5)]==!![]?($(_0x5d6589(0xad))[_0x5d6589(0x27a)](_0x5d6589(0x1b5),''),$(_0x5d6589(0xad))[_0x5cfe5b(0x269)](_0x5cfe5b(0x233))):($(_0x5d6589(0xad))[_0x5cfe5b(0x409)](_0x5d6589(0x1b5),''),arrFileFolder=[]);}));},'error':function(_0x21aeed){var _0x577e2f=a86_0x3481,_0x50b7b1=_0x3bff2a;console[_0x50b7b1(0xd3)](JSON[_0x577e2f(0x30d)](_0x21aeed)),_0x4a2646[_0x50b7b1(0xa0)](_0x21aeed);}}),_0x4a2646[_0x3bff2a(0x102)]();});}function RemoveArchive(){var _0x948435=_0x5a5f90;arrFileFolder[_0x948435(0x103)](function(_0x571f5d,_0x33996b){var _0x195baa=a86_0x3481,_0x3af68c=_0x948435,_0x230a33=_0x195baa(0x263),_0xa1fbaf,_0x46c255=GetItemTypeForListName(_0x230a33);_0xa1fbaf={'__metadata':{'type':_0x46c255},'IsArchive':![]};var _0x3aa3a3=$[_0x3af68c(0x11b)]();return $['ajax']({'url':_spPageContextInfo[_0x3af68c(0x23f)]+_0x3af68c(0x254)+_0x230a33+_0x195baa(0x201)+_0x571f5d[_0x3af68c(0x101)]+'\x27)','type':_0x3af68c(0x1eb),'async':![],'headers':{'accept':_0x3af68c(0x17e),'X-RequestDigest':$(_0x195baa(0x1d5))[_0x3af68c(0x12a)](),'content-Type':_0x195baa(0x3f5),'X-Http-Method':_0x3af68c(0x10a),'If-Match':'*'},'data':JSON[_0x3af68c(0x20a)](_0xa1fbaf),'success':function(_0x103a55){var _0x3aec1f=_0x195baa,_0x405b03=_0x3af68c;arrSharedTo=arrSharedTo[_0x405b03(0x273)](function(_0x23bd37){var _0x51ea7f=_0x405b03;return _0x23bd37['Id']!=_0x571f5d[_0x51ea7f(0x101)];}),arrFileFolder[_0x405b03(0x2e6)]==_0x33996b+0x1&&($(_0x3aec1f(0x1a9))[_0x405b03(0x2e6)]==0x0&&BindDMSDocumentType(),$(_0x405b03(0xe9))[_0x405b03(0xd0)]()==''&&initializePeoplePicker(_0x3aec1f(0x1b1),!![]),$(_0x405b03(0x1e3))[_0x3aec1f(0x269)](_0x3aec1f(0x233)),alert(_0x405b03(0x253)),arrFileFolder=[],$(_0x405b03(0x21b))[_0x405b03(0x27a)](_0x405b03(0x1b5),''),$(_0x405b03(0xad))[_0x405b03(0x87)](function(){var _0x4f979b=_0x3aec1f,_0x139094=_0x405b03,_0x374d67=this[_0x139094(0xc9)]['split'](',');if(this[_0x139094(0x1b5)]==!![])arrFileFolder[_0x4f979b(0x37d)]({'SharedItemId':_0x374d67[0x0][_0x139094(0x234)](),'type':_0x374d67[0x1][_0x139094(0x234)](),'SharedTo':_0x374d67[0x2][_0x139094(0x234)](),'DocumentId':_0x374d67[0x3][_0x139094(0x234)](),'ServerURL':_0x374d67[0x4][_0x139094(0x234)](),'userOrgId':_0x374d67[0x5][_0x139094(0x234)](),'SiteURL':_0x374d67[0x6][_0x4f979b(0x3a4)](),'IsBlock':_0x374d67[0x7][_0x4f979b(0x3a4)]()});else{var _0x7f04b0=this[_0x4f979b(0x334)];arrFileFolder=arrFileFolder[_0x4f979b(0x1cc)](function(_0x282774){var _0x4baa1c=_0x139094;return _0x282774[_0x4baa1c(0x101)]!=_0x374d67[0x0][_0x4baa1c(0x234)]();});}}),$(_0x405b03(0x2bd))[_0x405b03(0x87)](function(_0x1ad133){var _0x23f8de=_0x3aec1f,_0x572e23=_0x405b03;this[_0x572e23(0x1b5)]==!![]?($(_0x23f8de(0x1db))[_0x572e23(0x27a)](_0x572e23(0x1b5),''),$(_0x572e23(0xad))[_0x572e23(0x1c9)](_0x572e23(0x87))):($(_0x23f8de(0x1db))[_0x572e23(0x27a)](_0x23f8de(0x2cb),''),arrFileFolder=[]);}));},'error':function(_0x242da2){var _0x4ca4e7=_0x3af68c;console[_0x4ca4e7(0xd3)](JSON[_0x4ca4e7(0x20a)](_0x242da2)),_0x3aa3a3[_0x4ca4e7(0xa0)](_0x242da2);}}),_0x3aa3a3['promise']();});}function RevokePermission(_0x4dc308,_0x14229b,_0x22c21c,_0xf27211,_0x54cc34,_0x36bf0d,_0x193b63,_0x44797e,_0x5aa0f6){var _0x4dbff1=a86_0x227ab8,_0x97ffe9=_0x5a5f90;if(_0x193b63==_0x97ffe9(0x1bb)){if(CheckForEveryone()==![])return alert(_0x97ffe9(0xd8)),![];}$(_0x97ffe9(0x9e))[_0x97ffe9(0x12a)](''),$('#RevokePermission')[_0x4dbff1(0x3e2)](_0x97ffe9(0x209)),$(_0x97ffe9(0x219))[_0x97ffe9(0xc4)]()[_0x97ffe9(0x2b4)](_0x97ffe9(0x2dc)),$(_0x4dbff1(0x256))[_0x97ffe9(0x87)](function(){var _0xeb0f8d=_0x97ffe9;confirm(_0xeb0f8d(0x1cb))&&revokeFile(_0x4dc308,_0x14229b,_0x22c21c,_0xf27211,_0x54cc34,_0x36bf0d,_0x193b63,_0x44797e,_0x5aa0f6);});}function revokeFile(_0x4b4142,_0x1ee0aa,_0x31c92f,_0x5208d9,_0x324b09,_0x2486bf,_0xed0271,_0x59b21a,_0x9e90e1){var _0x40b492=a86_0x227ab8,_0x48dbd=_0x5a5f90;CopySourceURL=_0x59b21a,_0x1ee0aa[_0x48dbd(0x198)](_0x48dbd(0xc7))==!![]&&_0x1ee0aa[_0x48dbd(0x198)](_0x48dbd(0x204))==![]&&(_0x1ee0aa=_0x1ee0aa[_0x48dbd(0x1f2)](_0x48dbd(0xc7),_0x48dbd(0x204))),_0x59b21a!=_spPageContextInfo[_0x48dbd(0x23f)]&&$[_0x48dbd(0x28d)](GetFormDigestValue(_0x59b21a))[_0x48dbd(0x1ad)](function(_0x1efa2b){RequestDigest=_0x1efa2b;});if(_0x2486bf[_0x48dbd(0x300)]()==_0x48dbd(0x9a))var _0x54e53f=_0x59b21a+_0x48dbd(0x1a0)+_0x1ee0aa+_0x48dbd(0x18c);else var _0x54e53f=_0x59b21a+_0x48dbd(0xe1)+_0x1ee0aa+_0x48dbd(0x18c);var _0x14c03c={'Accept':_0x48dbd(0x17e),'content-Type':_0x48dbd(0x17e),'X-RequestDigest':RequestDigest};$[_0x40b492(0x306)]({'url':_0x54e53f,'type':_0x48dbd(0x1eb),'headers':_0x14c03c,'async':![],'dataType':_0x48dbd(0x152),'success':function(_0x1fa8fb){var _0x50d813=_0x48dbd;RequestDigest=$('#__REQUESTDIGEST')[_0x50d813(0x12a)](),DeleateUserPermission(_0x31c92f,_0x1ee0aa,_0x4b4142,_0x5208d9,'Selective',0x0,0x0,_0x324b09,_0x2486bf,_0xed0271,_0x9e90e1);},'error':function(_0x5e54bd){var _0x1f3103=_0x40b492,_0x339d91=_0x48dbd;RequestDigest=$(_0x339d91(0x16f))[_0x1f3103(0x1ac)](),DeleateUserPermission(_0x31c92f,_0x1ee0aa,_0x4b4142,_0x5208d9,'Selective',0x0,0x0,_0x324b09,_0x2486bf,_0xed0271,_0x9e90e1),console[_0x339d91(0xd3)](JSON[_0x1f3103(0x30d)](_0x5e54bd));}});}function DeleateUserPermission(_0xafab1,_0x310676,_0x13dc95,_0x2eb9b4,_0x406b4c,_0x4295e2,_0x17caf7,_0x205fd9,_0x2eadc0,_0x4b1b9a,_0x4785b3){var _0x4d38e9=a86_0x227ab8,_0x3cd39d=_0x5a5f90;CopySourceURL!=_spPageContextInfo[_0x3cd39d(0x23f)]&&$[_0x3cd39d(0x28d)](GetFormDigestValue(CopySourceURL))[_0x3cd39d(0x1ad)](function(_0x1f7b99){RequestDigest=_0x1f7b99;});var _0x1348f9={'X-RequestDigest':RequestDigest,'X-HTTP-Method':_0x3cd39d(0x1be)};_0x4785b3!=null&&_0x4785b3!=_0x3cd39d(0x110)&&_0x4785b3!=''&&(_0xafab1=GetUserId(_0x4785b3,CopySourceURL));if(_0x2eadc0[_0x3cd39d(0x300)]()==_0x3cd39d(0x9a))var _0x2bc005=CopySourceURL+_0x3cd39d(0x1a0)+_0x310676+_0x3cd39d(0x222)+_0xafab1+')';else var _0x2bc005=CopySourceURL+_0x3cd39d(0xe1)+_0x310676+_0x3cd39d(0x222)+_0xafab1+')';$[_0x4d38e9(0x306)]({'url':_0x2bc005,'type':_0x3cd39d(0x1eb),'headers':_0x1348f9,'async':![],'success':function(_0x4815a5){var _0x59d71b=_0x4d38e9,_0x4f6d39=_0x3cd39d;RequestDigest=$(_0x4f6d39(0x16f))[_0x4f6d39(0x12a)]();if(_0x4b1b9a==_0x4f6d39(0x1bb)){var _0x149cdc='';Documentname[_0x4f6d39(0x198)]('/')==!![]?_0x149cdc=Documentname[_0x4f6d39(0x2b8)]('/')[0x0]:_0x149cdc=Documentname;var _0x14666a,_0x1ad7cb;_0x149cdc[_0x59d71b(0x2c9)](_0x4f6d39(0xc7))==!![]?_0x1ad7cb=GetItemTypeForLibraryName(_0x4f6d39(0xca)):_0x1ad7cb=GetItemTypeForLibraryName(_0x149cdc),_0x14666a={'__metadata':{'type':_0x1ad7cb},'AccessLevel':_0x4f6d39(0x15f)},updateItemWithIDItemListDocuments(_0x149cdc,_0x14666a,_0x13dc95,CopySourceURL);}var _0x4b04a3=_0x59d71b(0x263),_0x14666a,_0x1ad7cb=GetItemTypeForListName(_0x4b04a3);_0x14666a={'__metadata':{'type':_0x1ad7cb},'PermissionStatus':'Revoked','share_remarks':$(_0x4f6d39(0x9e))[_0x4f6d39(0x12a)](),'SharedEnd':new Date()[_0x4f6d39(0x1bf)]()},$[_0x59d71b(0x219)](updateItemWithIDItemListDocuments(_0x4b04a3,_0x14666a,_0x2eb9b4,_spPageContextInfo[_0x4f6d39(0x23f)]))[_0x4f6d39(0x1ad)](function(_0x4b051f){var _0x22efcc=_0x59d71b,_0x1883fa=_0x4f6d39;SendRevokeEmail(_0x4b1b9a,_0x2eb9b4),$(_0x1883fa(0x143))[_0x1883fa(0x179)](_0x22efcc(0x290)),_0x205fd9!=_0x1883fa(0x18f)&&alert(_0x1883fa(0x1cc)),$(_0x22efcc(0x330))[_0x1883fa(0x179)](_0x1883fa(0x8b));}),console[_0x4f6d39(0xd3)](_0xafab1+_0x4f6d39(0x29e));},'error':function(_0xf5c543){var _0x255765=_0x4d38e9,_0x43d8f0=_0x3cd39d;RequestDigest=$(_0x43d8f0(0x16f))[_0x43d8f0(0x12a)](),_0xf5c543[_0x43d8f0(0x120)][_0x43d8f0(0x198)](_0x43d8f0(0xe4))==!![]?alert(_0x43d8f0(0xf3)+$(_0x255765(0x23e))[_0x43d8f0(0x1ee)]()+_0x43d8f0(0xab)):alert(_0xf5c543[_0x255765(0x388)]);}});}function updateItemWithIDItemListDocuments(_0x538f27,_0xb324f7,_0x58a7b6,_0x259642,_0x293d08){var _0x3052d3=a86_0x227ab8,_0x238318=_0x5a5f90;_0x538f27==_0x238318(0x214)&&(_0x538f27=_0x238318(0x167)),_0x259642!=_spPageContextInfo[_0x238318(0x23f)]&&$['when'](GetFormDigestValue(_0x259642))[_0x238318(0x1ad)](function(_0x258b1e){RequestDigest=_0x258b1e;});var _0x45b41b=$[_0x238318(0x11b)](),_0x44e522=_0x259642+_0x3052d3(0x2ac)+_0x538f27+_0x238318(0x18d)+_0x58a7b6+')';return $[_0x238318(0x185)]({'url':_0x44e522,'type':_0x3052d3(0x3ae),'async':![],'headers':{'accept':_0x3052d3(0x3f5),'X-RequestDigest':RequestDigest,'content-Type':'application/json;odata=verbose','X-Http-Method':_0x238318(0x10a),'If-Match':'*'},'data':JSON[_0x238318(0x20a)](_0xb324f7),'success':function(_0x14911e){var _0x9de421=_0x3052d3,_0x1f1a6d=_0x238318;RequestDigest=$(_0x1f1a6d(0x16f))[_0x9de421(0x1ac)](),console[_0x1f1a6d(0xd3)](_0x58a7b6+_0x1f1a6d(0x197)),_0x45b41b[_0x1f1a6d(0x314)](!![]);},'error':function(_0x301d7e){var _0x386fef=_0x238318;RequestDigest=$(_0x386fef(0x16f))[_0x386fef(0x12a)]();if(_0x301d7e[_0x386fef(0x120)][_0x386fef(0x19f)](_0x386fef(0x1a4))!=-0x1)alert(_0x386fef(0x13e));else{var _0x4b68f6='';_0x301d7e[_0x386fef(0x117)][_0x386fef(0x165)][_0x386fef(0x249)][_0x386fef(0xc9)]==undefined?_0x4b68f6=JSON[_0x386fef(0x20a)](_0x301d7e):_0x4b68f6=_0x301d7e[_0x386fef(0x117)][_0x386fef(0x165)][_0x386fef(0x249)][_0x386fef(0xc9)],alert(_0x4b68f6);}_0x45b41b[_0x386fef(0xa0)](_0x301d7e),waitingDialog[_0x386fef(0x8b)]();}}),_0x45b41b[_0x238318(0x102)]();}function SendRevokeEmail(_0x538ac1,_0x2f3221){var _0x1a7052=_0x5a5f90,_0x55c5e4=_0x1a7052(0xfe)+_0x2f3221+'\x27\x20';$[_0x1a7052(0x28d)](getItemsWithQuery(_0x1a7052(0x28b),_0x55c5e4,_spPageContextInfo[_0x1a7052(0x23f)]))[_0x1a7052(0x1ad)](function(_0x210661){var _0x1a740d=a86_0x3481,_0x1846ed=_0x1a7052,_0x549223='',_0x1a87d3=[],_0x8e3eef='';if(_0x210661[0x0][_0x1846ed(0x1b9)]==_0x1846ed(0x1d9))_0x1a87d3[_0x1846ed(0x203)](_0x210661[0x0][_0x1846ed(0x305)]),_0x549223=_0x210661[0x0][_0x1a740d(0x3d0)][_0x1a740d(0x314)][0x0][_0x1846ed(0x1a6)],_0x8e3eef+=_0x1846ed(0xc6)+_0x549223+_0x1846ed(0xfb)+_spPageContextInfo[_0x1846ed(0x72)]+_0x1846ed(0x29d);else _0x210661[0x0][_0x1846ed(0x1b9)]==_0x1846ed(0x158)&&(_0x1a87d3[_0x1846ed(0x203)](_0x210661[0x0]['SharedUsers'][_0x1846ed(0x29f)][0x0][_0x1846ed(0x1a6)]),_0x549223=_0x210661[0x0][_0x1846ed(0x246)][_0x1846ed(0x29f)][0x0][_0x1846ed(0x1a6)],_0x8e3eef+=_0x1a740d(0x1fe)+_spPageContextInfo[_0x1846ed(0x72)]+_0x1846ed(0x29d));_0x538ac1==_0x1846ed(0x1bb)&&(_0x8e3eef+=_0x1846ed(0x265)+_spPageContextInfo[_0x1846ed(0x72)]+'\x20has\x20revoked\x20the\x20sharing\x20of\x20below\x20document\x20with\x20you.<br/><br/>'),(_0x8e3eef=_0x8e3eef+_0x1a740d(0x3b9)+$(_0x1846ed(0xb2))[_0x1846ed(0x1ee)]()+_0x1846ed(0xa6)+_0x1846ed(0x25f)+$(_0x1a740d(0x3d2))[_0x1a740d(0x35f)]()+_0x1846ed(0xa6)+_0x1846ed(0x1e9)+$(_0x1846ed(0x2bf))[_0x1846ed(0x1ee)]()+_0x1846ed(0xa6)+_0x1846ed(0x2c1)+$(_0x1846ed(0x9e))[_0x1846ed(0x12a)]()+_0x1a740d(0x2c4),_0x8e3eef+=_0x1846ed(0x160));var _0x55a34b;_0x538ac1==_0x1846ed(0x1bb)&&(_0x1a87d3=getCompanyEmailId()),_0x55a34b={'properties':{'__metadata':{'type':_0x1846ed(0x86)},'From':_spPageContextInfo[_0x1846ed(0xf1)],'To':{'results':_0x1a87d3},'Body':_0x8e3eef,'Subject':_0x1a740d(0x23b)}};var _0x3e2b53=_spPageContextInfo[_0x1846ed(0x92)]+_0x1846ed(0x7a);$[_0x1a740d(0x306)]({'contentType':_0x1846ed(0x1e2),'url':_0x3e2b53,'type':_0x1846ed(0x1eb),'async':![],'data':JSON[_0x1a740d(0x30d)](_0x55a34b),'headers':{'Accept':_0x1846ed(0x17e),'content-type':_0x1846ed(0x17e),'X-RequestDigest':$(_0x1846ed(0x16f))[_0x1846ed(0x12a)]()},'success':function(_0x31c008){},'error':function(_0x2e9bca){var _0xd3bbc3=_0x1846ed;waitingDialog[_0xd3bbc3(0x8b)](),alert(_0xd3bbc3(0xc5)+JSON[_0xd3bbc3(0x20a)](_0x2e9bca));}});});}function RevokeOnCheckBox(){var _0x20c6e4=a86_0x227ab8,_0x5328d6=_0x5a5f90;if(selectedHistoryDoc[_0x5328d6(0x2e6)]>0x0)$(_0x5328d6(0x9e))[_0x20c6e4(0x1ac)](''),$(_0x5328d6(0x143))[_0x5328d6(0x179)](_0x5328d6(0x209)),$(_0x5328d6(0x219))[_0x5328d6(0xc4)]()[_0x5328d6(0x2b4)](_0x5328d6(0x2dc)),$(_0x5328d6(0xee))[_0x5328d6(0x87)](function(){var _0x661a53=_0x20c6e4,_0x2b49e6=_0x5328d6;if(confirm(_0x661a53(0x1ae))){var _0x48df18=0x1;for(var _0x2aee68=0x0;_0x2aee68<selectedHistoryDoc[_0x2b49e6(0x2e6)];_0x2aee68++){var _0x5808ed=selectedHistoryDoc[_0x2aee68],_0x5c358e=[];_0x5c358e=_0x5808ed[_0x2b49e6(0x2b8)](','),_0x5c358e[0x6]==_0x2b49e6(0xce)?_0x5c358e[0x7]==_0x2b49e6(0x1bb)?CheckForEveryone()==![]?alert(_0x661a53(0x2bd)+_0x5c358e[0x1][_0x2b49e6(0x2b8)]('/')[_0x2b49e6(0x19a)]()+_0x2b49e6(0x30d)):revokeFile(_0x5c358e[0x0],_0x5c358e[0x1],_0x5c358e[0x2],_0x5c358e[0x3],_0x661a53(0x1ed),_0x2b49e6(0x9a),_0x5c358e[0x7],_0x5c358e[0x8],_0x5c358e[0x9]):revokeFile(_0x5c358e[0x0],_0x5c358e[0x1],_0x5c358e[0x2],_0x5c358e[0x3],_0x2b49e6(0x18f),_0x2b49e6(0x9a),_0x5c358e[0x7],_0x5c358e[0x8],_0x5c358e[0x9]):revokeGpFile(_0x5c358e[0x2],_0x5c358e[0x3],_0x2b49e6(0x18f),_0x2b49e6(0x9a),_0x5c358e[0x7],_0x5c358e[0x1],_0x5c358e[0x8]);}return $(_0x2b49e6(0xe6))[_0x2b49e6(0x179)](_0x661a53(0x290)),![];}});else return alert(_0x5328d6(0x15c)),![];}function CheckForEveryone(){var _0x168f07=a86_0x227ab8,_0x4bb34b=_0x5a5f90,_0x4ceb8d=!![],_0x1b6c04=_0x168f07(0x22d)+SeletedDeptId+_0x168f07(0x397)+Logged_CompanyId+_0x4bb34b(0x178);return $[_0x168f07(0x219)](getItemsWithQuery(_0x4bb34b(0x241),_0x1b6c04,_spPageContextInfo[_0x4bb34b(0x23f)]))['done'](function(_0x394575){var _0x1f0cf4=_0x4bb34b;if(_0x394575[_0x1f0cf4(0x2e6)]>0x0){if(_0x394575[0x0]['ApproverRequired']==!![]){var _0x278f39=_0x1f0cf4(0x2ac)+_spPageContextInfo[_0x1f0cf4(0xf1)]+_0x1f0cf4(0x79)+SeletedDeptId+_0x1f0cf4(0x169)+Logged_CompanyId+'\x27';$[_0x1f0cf4(0x28d)](getItemsWithQuery(_0x1f0cf4(0x241),_0x278f39,_spPageContextInfo['webAbsoluteUrl']))[_0x1f0cf4(0x1ad)](function(_0x4d3287){var _0x26e39b=a86_0x3481;_0x4d3287[_0x26e39b(0x3c5)]>0x0?_0x4ceb8d=!![]:_0x4ceb8d=![];});}}}),_0x4ceb8d;}function RevokeGpPermission(_0xbae639,_0x2c0bd7,_0x3e9741,_0x384cf1,_0x17f3c7,_0x34e869,_0x2b6023){var _0x1f6bd4=_0x5a5f90;$(_0x1f6bd4(0x143))[_0x1f6bd4(0x179)](_0x1f6bd4(0x209)),$(_0x1f6bd4(0x9e))[_0x1f6bd4(0x12a)](''),$(_0x1f6bd4(0x219))[_0x1f6bd4(0xc4)]()[_0x1f6bd4(0x2b4)](_0x1f6bd4(0x2dc)),$(_0x1f6bd4(0xee))[_0x1f6bd4(0x87)](function(){var _0x397686=_0x1f6bd4;confirm(_0x397686(0x1cb))&&revokeGpFile(_0xbae639,_0x2c0bd7,_0x3e9741,_0x384cf1,_0x17f3c7,_0x34e869,_0x2b6023);});}function revokeGpFile(_0x44a56b,_0x3fc11d,_0x2a883a,_0x2bae79,_0x218c0a,_0x4b3097,_0x523f04){var _0x47717c=a86_0x227ab8,_0x492c8d=_0x5a5f90;_0x4b3097[_0x47717c(0x2c9)](_0x492c8d(0x167))==!![]&&_0x4b3097[_0x47717c(0x2c9)](_0x492c8d(0x214))==![]&&_0x4b3097[_0x492c8d(0x1f2)](_0x492c8d(0x167),_0x492c8d(0x214)),_0x523f04!=_spPageContextInfo[_0x492c8d(0x23f)]&&$[_0x492c8d(0x28d)](GetFormDigestValue(_0x523f04))[_0x492c8d(0x1ad)](function(_0x4ca415){RequestDigest=_0x4ca415;});if(_0x2bae79[_0x47717c(0x1fa)]()==_0x492c8d(0x9a))var _0x43b1e6=_0x523f04+_0x47717c(0x395)+_0x4b3097+_0x492c8d(0x222)+_0x44a56b+')';else var _0x43b1e6=_0x523f04+_0x492c8d(0xe1)+_0x4b3097+_0x492c8d(0x222)+_0x44a56b+')';$[_0x492c8d(0x185)]({'url':_0x43b1e6,'type':_0x492c8d(0x1eb),'async':![],'headers':{'X-RequestDigest':RequestDigest,'Accept':_0x492c8d(0x17e),'content-Type':_0x492c8d(0x17e),'X-HTTP-Method':_0x492c8d(0x1be)},'async':![],'success':function(_0x1f9be3){var _0x5915a1=_0x47717c,_0xe3320=_0x492c8d;RequestDigest=$(_0xe3320(0x16f))[_0xe3320(0x12a)]();if(_0x218c0a=='Everyone'){if(Documentname[_0xe3320(0x198)]('/')==!![])var _0x328d6b=Documentname[_0x5915a1(0x2fb)]('/')[0x0];else var _0x328d6b=Documentname;var _0x28e3e6;if(ListName[_0xe3320(0x198)](_0xe3320(0x167))==!![])var _0x1b0237=GetItemTypeForLibraryName(_0xe3320(0x155));else var _0x1b0237=GetItemTypeForLibraryName(ListName);_0x28e3e6={'__metadata':{'type':_0x1b0237},'AccessLevel':_0xe3320(0x15f)},updateItemWithIDItemListDocuments(_0x328d6b,_0x28e3e6,_0x3fc11d,_0x523f04);}var _0x1b0237=GetItemTypeForListName(_0xe3320(0x28b));_0x28e3e6={'__metadata':{'type':_0x1b0237},'PermissionStatus':_0xe3320(0x15f),'share_remarks':$(_0x5915a1(0x2d5))[_0xe3320(0x12a)](),'SharedEnd':new Date()[_0x5915a1(0x211)]()},$[_0xe3320(0x28d)](updateItemWithIDItemListDocuments(_0x5915a1(0x263),_0x28e3e6,_0x3fc11d,_spPageContextInfo[_0x5915a1(0x318)],![]))[_0x5915a1(0x231)](function(_0x4ac2cc){var _0x5f2616=_0x5915a1,_0x433366=_0xe3320;return SendRevokeEmail(_0x218c0a,_0x3fc11d),$(_0x433366(0x143))[_0x433366(0x179)](_0x5f2616(0x290)),_0x2a883a!=_0x433366(0x18f)&&(alert(_0x5f2616(0x284)),$(_0x433366(0xe6))[_0x433366(0x179)](_0x433366(0x8b))),![];});},'error':function(_0x2a725e){var _0x46ec27=_0x47717c,_0x34e0e7=_0x492c8d;return RequestDigest=$(_0x34e0e7(0x16f))[_0x34e0e7(0x12a)](),_0x2a725e[_0x34e0e7(0x120)][_0x34e0e7(0x198)](_0x34e0e7(0xe4))==!![]?alert(_0x34e0e7(0xf3)+$(_0x34e0e7(0x12b))[_0x34e0e7(0x1ee)]()+_0x34e0e7(0xab)):alert(_0x2a725e[_0x34e0e7(0x117)][_0x34e0e7(0x165)][_0x34e0e7(0x249)][_0x46ec27(0x334)]),![];}});}function GetUserId(_0x37aa14,_0x3b2b48){var _0x1786df=a86_0x227ab8,_0x5408d9=_0x5a5f90,_0xfee3c2='',_0x4356bb=_0x5408d9(0x311),_0xb97af0=_0x3b2b48,_0x449160=_0x4356bb+_0x37aa14;return $[_0x5408d9(0x185)]({'url':_0xb97af0+_0x5408d9(0x132)+encodeURIComponent(_0x449160)+'\x27','method':'GET','headers':{'Accept':_0x1786df(0x1cf)},'async':![],'success':function(_0x308c53){_0xfee3c2=_0x308c53['d']['Id'];},'error':function(_0x5ae678){var _0x49dd96=_0x5408d9;console[_0x49dd96(0xd3)](JSON[_0x49dd96(0x20a)](_0x5ae678)),console[_0x49dd96(0xd3)](JSON[_0x49dd96(0x20a)](_0x49dd96(0x20c)+_0x37aa14));}}),_0xfee3c2;}function GetSubShareFolders(_0x390c01,_0xefe3af,_0x33d74a,_0x3b6d17,_0x17c045,_0x7879dd,_0x5df8f6,_0x146a6f,_0x2f5d81,_0xaa08ad,_0x35a9fc,_0x82ebc4,_0x385e3c,_0x5c4419){var _0x2f6d47=a86_0x227ab8,_0x2cba8e=_0x5a5f90,_0x591c96=decodeURI(_0x390c01),_0x4431ac=new Array(),_0x2420f2=_0x591c96[_0x2cba8e(0x2b8)]('/'),_0x97b7dc='';for(var _0x221890=0x0;_0x221890<_0x2420f2[_0x2cba8e(0x2e6)];_0x221890++){_0x2420f2[_0x221890]==_0x2f6d47(0x33f)&&(_0x2420f2[_0x221890]=_0x2cba8e(0x214)),(_0x2420f2[_0x221890]==CheckLibary||_0x4431ac[_0x2f6d47(0x3c5)]>0x0)&&(_0x97b7dc+=_0x2420f2[_0x221890]+'/',_0x2420f2[_0x221890]!=null&&_0x2420f2[_0x221890]!=''&&_0x4431ac['push'](SubFolderProperties(_0x97b7dc,_0x2420f2[_0x221890])));}ShareFolderNavig(_0x4431ac,_0xefe3af,_0x33d74a,_0x3b6d17,_0x17c045,_0x7879dd,_0x5df8f6,_0x146a6f,_0x2f5d81,_0xaa08ad,_0x35a9fc,_0x82ebc4,_0x385e3c,_0x5c4419);}function _0x579d(){var _0x633841=a86_0x227ab8,_0x2398c3=[_0x633841(0x397),_0x633841(0x2d8),'#divShare',_0x633841(0x302),'File',_0x633841(0x3d8),_0x633841(0x1d5),_0x633841(0x2c6),_0x633841(0x26f),_0x633841(0x2f2),_0x633841(0x31b),_0x633841(0x1fc),'.btnClosePopup',_0x633841(0x36f),_0x633841(0x1cd),'\x27\x20and\x20Scope\x20eq\x20\x27HOD\x27',_0x633841(0x3e2),_0x633841(0x2fd),'<td></td>',_0x633841(0x2d3),'.jpeg',_0x633841(0x3f5),_0x633841(0x2ab),_0x633841(0x33b),'.wav',_0x633841(0x3c9),_0x633841(0x2c0),_0x633841(0x214),'ajax',_0x633841(0x1d2),_0x633841(0x1da),_0x633841(0x213),_0x633841(0x208),_0x633841(0x215),'#btnAckNotifyAll',_0x633841(0x3aa),_0x633841(0x1fb),_0x633841(0x30c),_0x633841(0x1ed),_0x633841(0x307),_0x633841(0x22a),'Email','Role','Folders',_0x633841(0x386),_0x633841(0x2de),_0x633841(0x2cc),_0x633841(0x2c9),_0x633841(0x391),'pop',_0x633841(0x33c),'DepartmentalDMS',_0x633841(0x3ac),'green',_0x633841(0x2df),_0x633841(0x395),_0x633841(0x293),_0x633841(0x355),_0x633841(0x378),'does\x20not\x20exist\x20on\x20type',_0x633841(0x2b9),_0x633841(0x1b5),_0x633841(0x222),_0x633841(0x2a9),'#DMSTable,#ButtonArea,#SearchArea',_0x633841(0x21e),'Full\x20Access','\x27\x20or\x20SharedClient/Title\x20eq\x20\x27','done','-Select-',_0x633841(0x23a),_0x633841(0x24f),_0x633841(0x249),_0x633841(0x279),_0x633841(0x1cb),_0x633841(0x294),'checked',_0x633841(0x223),_0x633841(0x3c3),'xlsx.png',_0x633841(0x230),_0x633841(0x362),_0x633841(0x3c0),_0x633841(0x1f1),_0x633841(0x38e),_0x633841(0x237),_0x633841(0x211),_0x633841(0x1a5),_0x633841(0x1a0),'#txtShareMessage',_0x633841(0x356),_0x633841(0x374),_0x633841(0x1af),_0x633841(0x35a),_0x633841(0x364),_0x633841(0x1b2),_0x633841(0x269),_0x633841(0x2c7),_0x633841(0x1ae),'permission\x20deleted\x20sucessfully.','?$select=*,Author/Title,SharedUsers/Title&$expand=Author,SharedUsers&$orderby=Created\x20desc&$filter=Id\x20eq\x20\x27',_0x633841(0x361),',\x20\x27',_0x633841(0x3e8),_0x633841(0x277),_0x633841(0x1e1),'audio.png',_0x633841(0x2ea),_0x633841(0x1dd),_0x633841(0x3f0),_0x633841(0x1ce),_0x633841(0x410),_0x633841(0x368),_0x633841(0x3fb),'Please\x20select\x20any\x20file\x20first.',_0x633841(0x1b9),'My-Groups',_0x633841(0x377),'<td\x20class=\x22text-left\x22><div\x20class=\x22dms-table-ellipsis-2\x22>Folder</div></td>',_0x633841(0x3fe),_0x633841(0x2d6),_0x633841(0x3ef),_0x633841(0x34e),'3646165yVICBl',_0x633841(0x3de),_0x633841(0x29d),_0x633841(0x323),'<div><strong>Shared\x20On:</strong>\x20',_0x633841(0x412),'<tr><td\x20colspan=\x2212\x22\x20style=\x22text-align:center;\x22>No\x20file\x20or\x20folder\x20found.</td></tr>',_0x633841(0x3ae),_0x633841(0x419),_0x633841(0x322),_0x633841(0x35f),_0x633841(0x353),_0x633841(0x31a),_0x633841(0x3c7),_0x633841(0x1d8),'</p></div></li>',_0x633841(0x38b),_0x633841(0x1e0),_0x633841(0x2f1),_0x633841(0x2fa),'.docx','.csv',_0x633841(0x298),_0x633841(0x404),_0x633841(0x40f),_0x633841(0x25f),_0x633841(0x1c3),'\x20and\x20(PermissionType\x20eq\x20\x27Read\x27\x20or\x20PermissionType\x20eq\x20\x27Contribute\x27\x20or\x20PermissionType\x20eq\x20\x27Restricted\x20View\x27)\x20and\x20(PermissionStatus\x20ne\x20\x27Deleted\x27)\x20and\x20(IsArchive\x20eq\x201)','\x27\x20and\x20',_0x633841(0x350),'</div></td>',_0x633841(0x37d),_0x633841(0x41a),_0x633841(0x20b),_0x633841(0x1f7),'.chkNotify',_0x633841(0x382),_0x633841(0x31e),'stringify',_0x633841(0x267),'This\x20user:-',_0x633841(0x3f3),_0x633841(0x1de),_0x633841(0x407),_0x633841(0x200),_0x633841(0x2e9),'SPMember','\x27\x20and\x20DocumentID\x20eq\x20\x27',_0x633841(0x3e7),_0x633841(0x2e4),_0x633841(0x367),_0x633841(0x33e),'replaceAll',_0x633841(0x2b5),_0x633841(0x335),_0x633841(0x3b5),_0x633841(0x3ec),'Shared\x20By:',_0x633841(0x3ad),_0x633841(0x2dc),_0x633841(0x2b2),_0x633841(0x1b1),_0x633841(0x205),_0x633841(0x379),_0x633841(0x283),_0x633841(0x408),'unbind','FileTitle','.cab',_0x633841(0x321),'\x27\x20and\x20ViewsBy/EMail\x20eq\x20\x27',_0x633841(0x312),_0x633841(0x358),'#AckUserList',_0x633841(0x1f2),_0x633841(0x265),_0x633841(0x3ff),_0x633841(0x27a),_0x633841(0x393),_0x633841(0x1ba),'trim',_0x633841(0x375),_0x633841(0x23c),_0x633841(0x2b6),_0x633841(0x276),_0x633841(0x40d),_0x633841(0x209),'Kindly\x20enter\x20expiry\x20date.',_0x633841(0x40a),_0x633841(0x309),_0x633841(0x354),_0x633841(0x318),_0x633841(0x25a),_0x633841(0x2b0),'.mp4',_0x633841(0x254),'UserId','each',_0x633841(0x3d0),_0x633841(0x207),_0x633841(0x217),'message',_0x633841(0x2a8),_0x633841(0x2f8),_0x633841(0x250),_0x633841(0x3d1),_0x633841(0x41b),_0x633841(0x39f),'NeedAcknowledgement',_0x633841(0x2db),_0x633841(0x26e),_0x633841(0x418),_0x633841(0x2c8),_0x633841(0x24a),_0x633841(0x370),_0x633841(0x2d9),'#ParentAck',_0x633841(0x2ff),_0x633841(0x3f8),'.txtSharingHistoy',_0x633841(0x2ca),'AckEmail',_0x633841(0x2f7),_0x633841(0x3b8),_0x633841(0x2a0),_0x633841(0x2a7),'txt.png',_0x633841(0x206),_0x633841(0x25d),_0x633841(0x1fe),'#notifymail',_0x633841(0x3d4),_0x633841(0x28c),_0x633841(0x227),_0x633841(0x313),_0x633841(0x360),_0x633841(0x1aa),'</span></td>',_0x633841(0x2aa),_0x633841(0x1a9),'<tr><td\x20class=\x22text-center\x22><div\x20class=\x22chexbox_mg\x22><input\x20type=\x22checkbox\x22\x20name=\x22',_0x633841(0x389),_0x633841(0x35d),_0x633841(0x1cc),'\x22><button\x20class=\x22btn\x20custom-btn\x20w-70\x22\x20id=\x22',_0x633841(0x274),_0x633841(0x32b),_0x633841(0x3e9),_0x633841(0x398),_0x633841(0x22e),'prop','<div><strong>Shared\x20By:</strong>\x20',_0x633841(0x413),_0x633841(0x2d0),'\x27);\x22>','format',_0x633841(0x1a7),_0x633841(0x2ce),_0x633841(0x3a2),'</div><div\x20class=\x22employeeinfo\x22><h3>',_0x633841(0x26c),'.psd',_0x633841(0x2fc),'AckSharedValid',_0x633841(0x1ee),'\x27&$orderby=Created\x20asc',_0x633841(0x291),_0x633841(0x263),_0x633841(0x1b6),_0x633841(0x219),_0x633841(0x2c5),'Shared\x20With',_0x633841(0x2e6),'File(s)/Folder(s)\x20have\x20been\x20archived.',_0x633841(0x3bd),_0x633841(0x32c),_0x633841(0x1b8),_0x633841(0x235),_0x633841(0x1f3),_0x633841(0x28e),_0x633841(0x2d4),_0x633841(0x1c7),_0x633841(0x38f),_0x633841(0x1b4),_0x633841(0x3a7),_0x633841(0x3d7),_0x633841(0x3d6),_0x633841(0x314),_0x633841(0x3af),_0x633841(0x29c),'.advance_setion','</p><p\x20style=\x22color:blue\x22>IP:\x20',_0x633841(0x40c),_0x633841(0x25e),_0x633841(0x325),_0x633841(0x38a),_0x633841(0x3e4),_0x633841(0x37f),_0x633841(0x24b),_0x633841(0x1d0),_0x633841(0x1f8),_0x633841(0x20c),_0x633841(0x3dd),_0x633841(0x1d4),_0x633841(0x31c),_0x633841(0x1c8),_0x633841(0x21c),_0x633841(0x301),_0x633841(0x371),_0x633841(0x216),_0x633841(0x3ed),'#divRevokeSharedTbl','split',_0x633841(0x257),_0x633841(0x352),'File\x20has\x20been\x20shared.',_0x633841(0x3d2),'#selectAllChk',_0x633841(0x399),_0x633841(0x1c5),_0x633841(0x3bb),_0x633841(0x281),'\x27\x27></td>',_0x633841(0x1eb),_0x633841(0x305),'attr',_0x633841(0x1bd),_0x633841(0x2c2),_0x633841(0x34c),_0x633841(0x369),_0x633841(0x1a4),_0x633841(0x204),_0x633841(0x229),_0x633841(0x1bb),_0x633841(0x39d),_0x633841(0x3a1),_0x633841(0x3db),'DataTable',_0x633841(0x30e),_0x633841(0x23d),_0x633841(0x37a),_0x633841(0x2dd),_0x633841(0x241),_0x633841(0x1fd),_0x633841(0x347),'\x22\x20alt=\x22',_0x633841(0x3be),_0x633841(0x40e),_0x633841(0x2cf),_0x633841(0x2ec),_0x633841(0x240),_0x633841(0x3b4),_0x633841(0x225),_0x633841(0x327),_0x633841(0x359),_0x633841(0x1f9),_0x633841(0x333),_0x633841(0x342),'length',_0x633841(0x2a3),'\x27)&$orderby=Created\x20asc','userLoginName','\x20<span\x20class=\x22mobile-hide-tabs-name\x20mt3\x20ml10\x22>',_0x633841(0x357),_0x633841(0x3f2),_0x633841(0x226),_0x633841(0x285),_0x633841(0x255),'#HeadingShareBy',_0x633841(0x26a),'location',_0x633841(0x3a8),_0x633841(0x345),'javascript:applyFilterProperty(this,\x27',_0x633841(0x2f6),_0x633841(0x2ae),_0x633841(0x39e),'ServerRedirectedEmbedURL',_0x633841(0x38c),_0x633841(0x394),'Folder',_0x633841(0x22b),_0x633841(0x287),_0x633841(0x1ef),'toLowerCase',_0x633841(0x3c8),_0x633841(0x271),_0x633841(0x2f4),_0x633841(0x2da),_0x633841(0x36d),_0x633841(0x328),_0x633841(0x1ab),_0x633841(0x32f),_0x633841(0x3a5),'Filter','#groupDocumentGridtbody','?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=(DocumentID\x20eq\x20\x27',_0x633841(0x1a2),_0x633841(0x3df),'</a></div></div></td>','\x22\x20onclick=\x22DisplayFileProperty(\x27',_0x633841(0x31f),_0x633841(0x1a1),'<li\x20title=\x22','resolve','#sharedHistoryTable',_0x633841(0x35c),_0x633841(0x30b),_0x633841(0x310),_0x633841(0x324),_0x633841(0x32d),_0x633841(0x2e3),'\x20or\x20SharedClient/Title\x20eq\x20\x27','\x27\x20and\x20WebPartName\x20eq\x20\x27Head\x20of\x20the\x20department\x27\x20and\x20Department/Id\x20eq\x20\x27',_0x633841(0x2b3),'SharedTo',_0x633841(0x416),_0x633841(0x272),_0x633841(0x1d1),_0x633841(0x1ec),_0x633841(0x2e0),_0x633841(0x1ca),_0x633841(0x28b),_0x633841(0x297),_0x633841(0x2d2),'<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22\x20onclick=\x22GetSharedHistory(\x27',_0x633841(0x288),_0x633841(0x233),_0x633841(0x34f),_0x633841(0x2bc),'My\x20Documents',_0x633841(0x290),_0x633841(0x3b2),_0x633841(0x372),_0x633841(0x411),_0x633841(0x351),_0x633841(0x2ee),_0x633841(0x1e3),_0x633841(0x30a),'AddUserPplPicker',_0x633841(0x1c2),_0x633841(0x38d),_0x633841(0x2e8),_0x633841(0x22c),_0x633841(0x317),_0x633841(0x3d3),_0x633841(0x1f5),'true',_0x633841(0x224),_0x633841(0x2a6),_0x633841(0x2d5),_0x633841(0x39b),'reject',_0x633841(0x27b),_0x633841(0x295),_0x633841(0x3c4),_0x633841(0x278),_0x633841(0x21f),'</div>','Archive','\x22\x20rel=\x22',_0x633841(0x29f),_0x633841(0x3d9),_0x633841(0x3bf),'.xls','.chkShareToMe',_0x633841(0x28d),_0x633841(0x1be),_0x633841(0x34a),'#FileSharing',_0x633841(0x2e1),_0x633841(0x3dc),_0x633841(0x29e),'SharedId',_0x633841(0x3e1),'default&mobileredirect=true',_0x633841(0x1a8),'LibraryName',_0x633841(0x3fc),_0x633841(0x3b0),'</div><div\x20class=\x27designationtype\x27>',_0x633841(0x29a),_0x633841(0x20a),_0x633841(0x341),_0x633841(0x3d5),'SharedClient',_0x633841(0x289),'Owners',_0x633841(0x2be),_0x633841(0x3e6),_0x633841(0x3e5),_0x633841(0x296),_0x633841(0x338),'value',_0x633841(0x2d7),_0x633841(0x3f9),_0x633841(0x1c1),'?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID\x20eq\x20\x27',_0x633841(0x1e9),'Deleted',_0x633841(0x34d),_0x633841(0x3a9),_0x633841(0x32a),_0x633841(0x3b3),_0x633841(0x201),_0x633841(0x3ce),'</th>',_0x633841(0x340),_0x633841(0x339),_0x633841(0x308),_0x633841(0x270),'folder',_0x633841(0x2cd),_0x633841(0x24e),'#SharedFilterBox',_0x633841(0x210),_0x633841(0x373),_0x633841(0x24c),_0x633841(0x2a4),_0x633841(0x203),_0x633841(0x264),_0x633841(0x2c4),_0x633841(0x330),_0x633841(0x2f0),_0x633841(0x332),_0x633841(0x1ad),_0x633841(0x220),'<br>',_0x633841(0x366),_0x633841(0x36c),_0x633841(0x256),_0x633841(0x402),_0x633841(0x20d),_0x633841(0x2f3),_0x633841(0x383),'You\x20don\x27t\x20have\x20the\x20required\x20permission\x20on\x20','/Forms',_0x633841(0x2a2),_0x633841(0x1c0),_0x633841(0x1f4),_0x633841(0x401),_0x633841(0x221),_0x633841(0x3da),_0x633841(0x1e5),_0x633841(0x1d9),_0x633841(0x29b),_0x633841(0x2bb),_0x633841(0x28f),'SelectedLibrary',_0x633841(0x212),_0x633841(0x27c),_0x633841(0x3b7),_0x633841(0x3cd),_0x633841(0x387),_0x633841(0x40b),_0x633841(0x275),_0x633841(0x344),_0x633841(0x363),'PATCH',_0x633841(0x35b),_0x633841(0x331),_0x633841(0x3f6),_0x633841(0x346),'A\x20document\x20has\x20been\x20shared\x20with\x20you.',_0x633841(0x33d),_0x633841(0x39a),_0x633841(0x3cb),_0x633841(0x365),_0x633841(0x21d),_0x633841(0x20f),_0x633841(0x329),_0x633841(0x3b1),_0x633841(0x248),'<div\x20class=\x22Acknowledgementsec\x22><p\x20style=\x22color:red\x22>Not\x20Acknowledged</p><div\x20class=\x22btnParent\x22\x20id=\x22SendAckParent',_0x633841(0x25c),_0x633841(0x252),'DocumentManagementSystem',_0x633841(0x414),_0x633841(0x3c6),_0x633841(0x253),_0x633841(0x388),'Details',_0x633841(0x390),_0x633841(0x246),_0x633841(0x26b),_0x633841(0x1c4),'#FileTitle',_0x633841(0x1c9),_0x633841(0x28a),_0x633841(0x3ab),_0x633841(0x1ac),_0x633841(0x23e),_0x633841(0x25b),_0x633841(0x2b8),'#btnShareMulti',_0x633841(0x35e),_0x633841(0x1b3),_0x633841(0x245),_0x633841(0x32e),'.pdf',_0x633841(0x417),_0x633841(0x349),'FileRef','\x22);\x27>',_0x633841(0x268),'</div><div\x20class=\x27designationtype\x27><h3\x20class=\x27namesection\x27>','3966916nxAtCO','DocumentNo',_0x633841(0x3fa),_0x633841(0x1d3),_0x633841(0x1e7),_0x633841(0x2ad),'\x20and\x20(PermissionType\x20eq\x20\x27Read\x27\x20or\x20PermissionType\x20eq\x20\x27Contribute\x27\x20or\x20PermissionType\x20eq\x20\x27Restricted\x20View\x27\x20or\x20PermissionStatus\x20eq\x20\x27Revoked\x27)\x20and\x20(PermissionStatus\x20ne\x20\x27Deleted\x27\x20and\x20IsArchive\x20ne\x201)',_0x633841(0x20e),_0x633841(0x24d),_0x633841(0x343),'/DocumentManagementSystem/Forms/AllItems.aspx?id=','OnValueChangedClientScript',_0x633841(0x2e7),_0x633841(0x27e),_0x633841(0x385),_0x633841(0x1c6),'?id=','AckSharedOn',_0x633841(0x3f7),_0x633841(0x218),_0x633841(0x3cf),'SharingValidity',_0x633841(0x266),_0x633841(0x202),_0x633841(0x315),_0x633841(0x36b),_0x633841(0x3ea),_0x633841(0x19f),_0x633841(0x3e0),'\x22\x20class=\x22mybradcumb\x20first\x22><a\x20href=\x22',_0x633841(0x244),'DefaultLanguage','<div\x20class=\x22d-flex\x20align-items-center\x22>',_0x633841(0x304),'Please\x20select\x20one\x20or\x20more\x20history\x20for\x20revoke.',_0x633841(0x380),_0x633841(0x1e4),_0x633841(0x21b),_0x633841(0x247),_0x633841(0x326),_0x633841(0x22f),_0x633841(0x280),_0x633841(0x316),'error',_0x633841(0x1bc),_0x633841(0x33f),'.mov'];return _0x579d=function(){return _0x2398c3;},_0x579d();}function ShareFolderNavig(_0x4c4579,_0x320c96,_0x3b7819,_0x25e749,_0x2d12ca,_0x86daa0,_0xe1a35f,_0x25c06f,_0x10ccb6,_0x5d6191,_0x4d64f5,_0x7a434f,_0x5cf378,_0x2128ba){var _0x55162b=a86_0x227ab8,_0x61ba08=_0x5a5f90,_0x38e4c0='',_0x6833d0='';if(DMS_Type==_0x55162b(0x3a0))for(var _0x463b3c=0x0;_0x463b3c<_0x4c4579[_0x61ba08(0x2e6)];_0x463b3c++){if(_0x463b3c!=0x0){var _0x3c304b=_0x3b7819[_0x61ba08(0x2cb)](0x0,_0x3b7819['lastIndexOf']('/')),_0x8aa9c4=_0x61ba08(0x276)+_0x320c96+_0x61ba08(0x28a)+_0x3c304b+_0x61ba08(0x28a)+_0x25e749+_0x61ba08(0x28a)+_0x2d12ca+_0x61ba08(0x28a)+_0x86daa0+_0x61ba08(0x28a)+_0xe1a35f+_0x55162b(0x291)+_0x25c06f+_0x61ba08(0x28a)+_0x10ccb6+_0x61ba08(0x28a)+_0x5d6191+_0x61ba08(0x28a)+_0x4d64f5+_0x55162b(0x291)+_0x7a434f+_0x61ba08(0x28a)+_0x5cf378+_0x55162b(0x291)+_0x2128ba+'\x27)';if(_0x463b3c==0x1)_0x38e4c0+=_0x61ba08(0xe2);else{var _0xaf5592=_0x4c4579[_0x463b3c][_0x55162b(0x22b)];_0xaf5592[_0x61ba08(0x2e6)]>0xf&&(_0xaf5592=_0xaf5592[_0x61ba08(0x14c)](0x0,0xe)+_0x55162b(0x1f7)),_0xaf5592[_0x55162b(0x3c5)]>0x0&&(_0x38e4c0+=_0x61ba08(0x313)+_0x4c4579[_0x463b3c][_0x61ba08(0x2fd)]+_0x61ba08(0x157)+_0x8aa9c4+'\x22>'+_0xaf5592+_0x61ba08(0x7d));}_0x463b3c==_0x4c4579[_0x61ba08(0x2e6)]-0x1&&(_0x6833d0=_0x4c4579[_0x463b3c][_0x61ba08(0x1d0)]);}}else for(var _0x463b3c=0x0;_0x463b3c<_0x4c4579[_0x55162b(0x3c5)];_0x463b3c++){{var _0x3c304b=_0x3b7819[_0x61ba08(0x2cb)](0x0,_0x3b7819[_0x61ba08(0x302)]('/')),_0x8aa9c4=_0x61ba08(0x276)+_0x320c96+_0x61ba08(0x28a)+_0x3c304b+_0x61ba08(0x28a)+_0x25e749+'\x27,\x20\x27'+_0x2d12ca+_0x61ba08(0x28a)+_0x86daa0+_0x61ba08(0x28a)+_0xe1a35f+_0x61ba08(0x28a)+_0x25c06f+_0x55162b(0x291)+_0x10ccb6+_0x61ba08(0x28a)+_0x5d6191+_0x61ba08(0x28a)+_0x4d64f5+_0x61ba08(0x28a)+_0x7a434f+_0x61ba08(0x28a)+_0x5cf378+_0x61ba08(0x28a)+_0x2128ba+'\x27)';if(_0x463b3c==0x0)_0x38e4c0+=_0x61ba08(0xe2);else{var _0xaf5592=_0x4c4579[_0x463b3c][_0x61ba08(0x2fd)];_0xaf5592[_0x61ba08(0x2e6)]>0xf&&(_0xaf5592=_0xaf5592[_0x61ba08(0x14c)](0x0,0xe)+_0x61ba08(0x206)),_0xaf5592[_0x61ba08(0x2e6)]>0x0&&(_0x38e4c0+=_0x61ba08(0x313)+_0x4c4579[_0x463b3c][_0x61ba08(0x2fd)]+'\x22\x20class=\x22mybradcumb\x20first\x22><a\x20href=\x22'+_0x8aa9c4+'\x22>'+_0xaf5592+_0x61ba08(0x7d));}_0x463b3c==_0x4c4579[_0x61ba08(0x2e6)]-0x1&&(_0x6833d0=_0x4c4579[_0x463b3c][_0x61ba08(0x1d0)]);}}var _0x5b6c3f=$(_0x61ba08(0x2d6));_0x5b6c3f['html'](''),_0x5b6c3f[_0x61ba08(0x2b4)](_0x38e4c0),$(_0x61ba08(0x10d))[_0x61ba08(0x226)]()[_0x61ba08(0x87)](function(){var _0x39b0d9=_0x61ba08;$(this)[_0x39b0d9(0x307)]()[_0x39b0d9(0x128)](_0x39b0d9(0x10d));});}function shareTootFolder(){var _0x46d7b4=a86_0x227ab8,_0x26df46=_0x5a5f90;$(_0x26df46(0x240))[_0x46d7b4(0x35f)]()==_0x26df46(0x10e)?$(_0x46d7b4(0x223))[_0x26df46(0x1c9)](_0x26df46(0x87)):$(_0x46d7b4(0x377))[_0x26df46(0x1c9)](_0x26df46(0x87));}function RevokeMultiPermission(){var _0x421e12=_0x5a5f90;confirm(_0x421e12(0x22b))&&arrFileFolder[_0x421e12(0x103)](function(_0x39820a,_0x237211){var _0x286201=a86_0x3481,_0x325b32=_0x421e12,_0x1286cc=_0x325b32(0x1a8)+_0x39820a[_0x325b32(0x16a)]+_0x325b32(0x220);$[_0x325b32(0x28d)](getItemsWithQuery(_0x325b32(0x28b),_0x1286cc,_spPageContextInfo[_0x325b32(0x23f)]))[_0x325b32(0x1ad)](function(_0x5d34db){var _0x3db9aa=a86_0x3481,_0x25a624=_0x325b32;for(var _0xe5aac4=0x0;_0xe5aac4<_0x5d34db[_0x25a624(0x2e6)];_0xe5aac4++){$(_0x3db9aa(0x1a5))[_0x25a624(0x1ee)](_0x5d34db[_0xe5aac4][_0x25a624(0x91)]),CopySourceURL=_0x5d34db[_0xe5aac4][_0x25a624(0x243)],(_0x5d34db[_0xe5aac4][_0x3db9aa(0x254)]==_0x25a624(0x110)||_0x5d34db[_0xe5aac4][_0x25a624(0x243)]==null||_0x5d34db[_0xe5aac4][_0x3db9aa(0x254)]==_0x25a624(0x75)||_0x5d34db[_0xe5aac4][_0x25a624(0x243)]==undefined)&&(_0x5d34db[_0xe5aac4][_0x3db9aa(0x1e3)][_0x3db9aa(0x2df)](_0x3db9aa(0x1d6))!=-0x1?_0x5d34db[_0xe5aac4][_0x3db9aa(0x254)]=window[_0x25a624(0x2f2)][_0x3db9aa(0x385)]+encodeURI(_0x5d34db[_0xe5aac4][_0x25a624(0x91)])[_0x25a624(0x2b8)](_0x25a624(0x19c))[0x0]:_0x5d34db[_0xe5aac4][_0x25a624(0x243)]=_spPageContextInfo[_0x25a624(0x23f)]),_0x5d34db[_0xe5aac4][_0x25a624(0x1b9)]==_0x25a624(0x158)?RevokeGpPermission(_0x5d34db[_0xe5aac4][_0x25a624(0x246)][_0x3db9aa(0x314)][0x0]['ID'],_0x5d34db[_0xe5aac4]['ID'],_0x25a624(0x18f),_0x5d34db[_0xe5aac4][_0x25a624(0x88)][_0x25a624(0x300)](),_0x5d34db[_0xe5aac4][_0x25a624(0x1b9)],_0x5d34db[_0xe5aac4][_0x25a624(0x91)],_0x5d34db[_0xe5aac4][_0x25a624(0x243)]):RevokePermission(_0x5d34db[_0xe5aac4][_0x25a624(0x23c)],_0x5d34db[_0xe5aac4][_0x25a624(0x91)],_0x5d34db[_0xe5aac4][_0x25a624(0x246)][_0x25a624(0x29f)][0x0]['ID'],_0x5d34db[_0xe5aac4]['ID'],_0x25a624(0x18f),_0x5d34db[_0xe5aac4][_0x25a624(0x88)][_0x3db9aa(0x1fa)](),_0x5d34db[_0xe5aac4][_0x25a624(0x1b9)],_0x5d34db[_0xe5aac4]['SiteURL'],_0x5d34db[_0xe5aac4][_0x3db9aa(0x36d)]);}}),arrFileFolder[_0x325b32(0x2e6)]==_0x237211+0x1&&($(_0x325b32(0x13d))[_0x325b32(0x1c9)](_0x286201(0x233)),alert(_0x286201(0x3a3)),$(_0x325b32(0xad))[_0x325b32(0x27a)](_0x286201(0x2cb),''),arrFileFolder=[],waitingDialog[_0x325b32(0x8b)]());});}function ShareFileValidation(){var _0x39d937=a86_0x227ab8,_0x2ef49c=_0x5a5f90;if(SharingUserEmail[_0x2ef49c(0x2e6)]==0x0){if($(_0x39d937(0x389))[_0x2ef49c(0x12a)]()!=_0x2ef49c(0x1bb)){alert(_0x2ef49c(0x196));return;}else{if($(_0x2ef49c(0x108))[_0x2ef49c(0x27a)](_0x2ef49c(0x1b5))&&$(_0x2ef49c(0x281))[_0x2ef49c(0x12a)]()==''){alert(_0x2ef49c(0x23b));return;}else return!![];}}else{if($(_0x2ef49c(0x108))[_0x39d937(0x409)](_0x39d937(0x2cb))&&$(_0x2ef49c(0x281))[_0x2ef49c(0x12a)]()==''){alert(_0x2ef49c(0x23b));return;}else return new Date()>new Date($(_0x2ef49c(0x281))[_0x2ef49c(0x12a)]())?(alert(_0x39d937(0x337)),![]):!![];}}function shareFileMulti(){var _0x1a28a4=a86_0x227ab8,_0x4812ce=_0x5a5f90,_0x18b208=[],_0x1f337b=!![],_0x2a16f8=!![],_0x553e4c=[];sharedUsersIdArrayListItemCollection=[],sharedUsersIdArrayListItemCollection=SharingUserId[_0x4812ce(0x273)](function(_0x37a09c){return _0x37a09c;});var _0x1d0cfa=$('#sharewith')[_0x4812ce(0x12a)](),_0x5d0c73=$(_0x4812ce(0x1c7))[_0x4812ce(0x12a)](),_0x294781='',_0x145627='';if(sharedUsersIdArrayListItemCollection[_0x4812ce(0x2e6)]==0x0){for(var _0x8a7044=0x0;_0x8a7044<SharingUserEmail[_0x4812ce(0x2e6)];_0x8a7044++){SharingUserId[_0x4812ce(0x203)](parseInt(SharingUserEmail[_0x8a7044][_0x1a28a4(0x40c)]));}sharedUsersIdArrayListItemCollection=SharingUserId[_0x4812ce(0x273)](function(_0x16b5cc){return _0x16b5cc;});}FailDueToCheckOut=0x0;if(Documentname[Documentname[_0x4812ce(0x2e6)]-0x1]=='/')var _0x5eaef1=Documentname;else var _0x5eaef1=Documentname+'/';$('#LibProject')['text'](currentClientName),arrFileFolder[_0x4812ce(0x103)](function(_0x353e99,_0x4ef4fc){var _0x1eb1fb=_0x1a28a4,_0x5065f2=_0x4812ce;if(_0x353e99[_0x5065f2(0xdd)][_0x5065f2(0x300)]()==_0x5065f2(0x9a)||_0x353e99[_0x5065f2(0xdd)][_0x5065f2(0x300)]()==_0x5065f2(0xdb)){if(IsFileCheckout(_0x5eaef1,_0x353e99[_0x5065f2(0x1ef)],_0x353e99[_0x5065f2(0x243)],'')!=!![]&&_0x353e99['type']==_0x1eb1fb(0x1f5)){_0x1f337b=!![],_0x294781=DocumentId=_0x353e99[_0x5065f2(0x16a)],CopySourceURL=_0x353e99[_0x5065f2(0x243)],CopyLibrary=_0x353e99[_0x5065f2(0x100)],$(_0x5065f2(0x1c0))[_0x5065f2(0x1ee)](_0x353e99[_0x1eb1fb(0x21f)]),$(_0x5065f2(0x126))[_0x1eb1fb(0x35f)](_0x353e99[_0x5065f2(0x227)]),$(_0x5065f2(0x12b))[_0x5065f2(0x1ee)](_0x353e99[_0x1eb1fb(0x353)]);var _0x286956=_0x353e99[_0x1eb1fb(0x21f)];if(_0x353e99[_0x5065f2(0x1ef)][_0x1eb1fb(0x2c9)](_0x5065f2(0x133))==!![])_0x353e99[_0x1eb1fb(0x21f)][_0x5065f2(0x2f8)](/\bShared%20Documents\b/)>=0x0&&(_0x286956=_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x1f2)](_0x5065f2(0x214),_0x5065f2(0xdf))),$(_0x5065f2(0x2e3))[_0x5065f2(0x12a)](DMS_Link+_0x5065f2(0x14a)+encodeURIComponent(_0x286956)+_0x5065f2(0x216)+_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x2cb)](0x0,_0x286956[_0x5065f2(0x302)]('/'))+_0x5065f2(0x251));else{if(_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x198)]('DocumentManagementSystem')==!![]||_0x353e99['ServerURL'][_0x5065f2(0x198)](_0x5065f2(0x19c))==!![])_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x198)](_0x5065f2(0x11c))==!![]?$(_0x5065f2(0x2e3))[_0x5065f2(0x12a)](_0x353e99[_0x5065f2(0x243)]+_0x5065f2(0x144)+encodeURIComponent(_0x353e99[_0x5065f2(0xa5)])+_0x5065f2(0x216)+encodeURIComponent(_0x353e99[_0x1eb1fb(0x21f)][_0x5065f2(0x2cb)](0x0,_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x302)]('/')+0x0))):$(_0x5065f2(0x2e3))[_0x5065f2(0x12a)](_0x353e99[_0x5065f2(0x243)]+_0x5065f2(0x286)+encodeURIComponent(_0x353e99['ServerURL'])+_0x5065f2(0x216)+encodeURIComponent(_0x353e99[_0x5065f2(0xa5)]['substr'](0x0,_0x353e99['ServerURL'][_0x5065f2(0x302)]('/')+0x0)));else{var _0x5f2ea6=window[_0x5065f2(0x2f2)][_0x1eb1fb(0x385)]+_0x353e99[_0x5065f2(0xa5)][_0x1eb1fb(0x204)](0x0,_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x302)]('/')+0x0);_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x2f8)](/\bShared%20Documents\b/)>=0x0&&(_0x286956=_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x1f2)](_0x5065f2(0x214),_0x5065f2(0xdf))),$(_0x1eb1fb(0x1f9))[_0x5065f2(0x12a)](_0x5f2ea6+_0x5065f2(0x295)+encodeURIComponent(_0x286956)+_0x1eb1fb(0x367)+encodeURIComponent(_0x286956[_0x5065f2(0x2cb)](0x0,_0x353e99[_0x5065f2(0xa5)][_0x5065f2(0x302)]('/')+0x0)));}}_0x145627=SelectedFileServerURL=_0x353e99[_0x5065f2(0xa5)],_0x553e4c=getSharedUsersId(_0x294781),_0x18b208=$[_0x1eb1fb(0x29e)](_0x553e4c,function(_0x525b0a){var _0x9d617=_0x5065f2;return $[_0x9d617(0x1ce)](_0x525b0a,sharedUsersIdArrayListItemCollection)!==-0x1;}),sharedUsersIdArrayListItemCollection=sharedUsersIdArrayListItemCollection[_0x5065f2(0x99)](_0x553e4c),_0x1f337b=ShareFilesFolder(_0x145627,_0x5065f2(0x16d),'',_0x1d0cfa),_0x1f337b!=![]&&(_0x1f337b=!![]);if(sharedUsersIdArrayListItemCollection[_0x1eb1fb(0x3c5)]>0x0&&_0x1f337b==!![]){var _0x466a4d=$(_0x5065f2(0x271))[_0x5065f2(0x12a)]();PermissionStatus==''&&updateDocumentPropertiesOnItemSharing(_0x294781,_0x145627,_0x1d0cfa,sharedUsersIdArrayListItemCollection,CopySourceURL,![]),GetDocumentsRevoke(_0x18b208,_0x294781);var _0x5aa61a=[];_0x5aa61a=getSharedType(),AddSharedLinkToList(_0x145627,SharingUserId,_0x294781,_0x353e99[_0x5065f2(0xdd)],$(_0x5065f2(0x271))[_0x5065f2(0x12a)](),$(_0x1eb1fb(0x364))[_0x5065f2(0x12a)](),_0x5aa61a[0x0],_0x353e99[_0x5065f2(0x106)],_0x5aa61a[0x1]);if($(_0x5065f2(0x266))[_0x5065f2(0x27a)](_0x5065f2(0x1b5))==!![]&&PermissionStatus==''){var _0x37a771=[],_0x20cda4=$(_0x5065f2(0x2b6))[_0x1eb1fb(0x35f)]();if(SharingUserEmail[_0x5065f2(0x2e6)]>0x0){var _0x4caa5d='';ValidityDateHTML='',$(_0x5065f2(0x281))[_0x5065f2(0x12a)]()!=''&&(ValidityDateHTML='<div><strong>Sharing\x20valid\x20till:</strong>\x20'+moment($(_0x5065f2(0x281))[_0x5065f2(0x12a)]())[_0x5065f2(0x27f)](_0x5065f2(0x7e))+_0x1eb1fb(0x1b0)),(_0x4caa5d=_spPageContextInfo[_0x5065f2(0x72)]+_0x5065f2(0x1c3),_0x4caa5d=_0x4caa5d+_0x5065f2(0x2d0)+$(_0x5065f2(0x12b))[_0x5065f2(0x1ee)]()+_0x5065f2(0xa6)+_0x5065f2(0x2e2)+_0x353e99[_0x5065f2(0x227)]+_0x1eb1fb(0x1b0)+_0x5065f2(0xf8)+_0x353e99[_0x5065f2(0x2d7)]+_0x5065f2(0xa6)+_0x5065f2(0xec)+_0x353e99[_0x5065f2(0x136)]+_0x1eb1fb(0x1b0)+_0x1eb1fb(0x2ca)+_0x20cda4+_0x5065f2(0xa6)+_0x5065f2(0x27b)+_spPageContextInfo[_0x5065f2(0x72)]+_0x5065f2(0xa6)+_0x5065f2(0x1e8)+moment(new Date())[_0x1eb1fb(0x27d)](_0x5065f2(0x7e))+'\x20'+new Date()[_0x5065f2(0x9d)]()[_0x1eb1fb(0x1d8)](/([\d]+:[\d]{2})(:[\d]{2})(.*)/,_0x5065f2(0x252))+_0x1eb1fb(0x1b0)+ValidityDateHTML+'</br><div><strong>Message:</strong>\x20'+$(_0x5065f2(0x1c2))[_0x5065f2(0x12a)]()+_0x5065f2(0xe5)+_0x5065f2(0x131)+$(_0x5065f2(0x2e3))[_0x5065f2(0x12a)]()+'>Click\x20here</a>\x20to\x20open\x20the\x20document.</div>'+_0x5065f2(0x312),_0x4caa5d+=_0x5065f2(0x160));for(var _0xa131ea=0x0;_0xa131ea<LabelDefaultLangauge[_0x5065f2(0x2e6)];_0xa131ea++){_0x4caa5d[_0x1eb1fb(0x2c9)](LabelDefaultLangauge[_0xa131ea][_0x1eb1fb(0x24b)])==!![]&&(_0x4caa5d=_0x4caa5d[_0x5065f2(0x218)](LabelDefaultLangauge[_0xa131ea][_0x5065f2(0x2aa)],LabelDefaultLangauge[_0xa131ea][_0x5065f2(0x159)]));}}var _0x434b78;_0x37a771=SharingUserEmail[_0x5065f2(0x273)](function(_0x47f018){return _0x47f018;}),_0x434b78={'properties':{'__metadata':{'type':_0x5065f2(0x86)},'From':_spPageContextInfo[_0x5065f2(0xf1)],'To':{'results':_0x37a771},'Body':_0x4caa5d,'Subject':_0x5065f2(0x10f)}};var _0x49003a=_spPageContextInfo[_0x5065f2(0x92)]+_0x5065f2(0x7a);$[_0x5065f2(0x185)]({'contentType':_0x1eb1fb(0x3ef),'url':_0x49003a,'type':_0x5065f2(0x1eb),'data':JSON[_0x5065f2(0x20a)](_0x434b78),'headers':{'Accept':_0x1eb1fb(0x3f5),'content-type':_0x5065f2(0x17e),'X-RequestDigest':$(_0x1eb1fb(0x1d5))[_0x5065f2(0x12a)]()},'success':function(_0x204228){var _0x2e0d03=_0x1eb1fb,_0x2027c4=_0x5065f2;if(_0x4ef4fc+0x1==arrFileFolder[_0x2e0d03(0x3c5)]){var _0x889364=Documentname;Documentname[_0x2027c4(0x2f8)](/\bDocuments\b/)>=0x0&&(_0x889364=_0x2e0d03(0x3e7)),GetMyDocumentsWithFilesFolder(_0x889364),FailDueToCheckOut==0x0?alert(_0x2027c4(0x2bb)):alert(FailDueToCheckOut+_0x2027c4(0x1c1)),$(_0x2027c4(0xb1))[_0x2027c4(0x1ee)](_0x2027c4(0x233)+$(_0x2027c4(0x271))[_0x2027c4(0x12a)]()),$(_0x2e0d03(0x2af))[_0x2027c4(0x209)](),$(_0x2027c4(0x175))[_0x2e0d03(0x269)](_0x2027c4(0x87)),arrFileFolder=[],FailDueToCheckOut=0x0,$(_0x2027c4(0x21b))[_0x2027c4(0x27a)](_0x2027c4(0x1b5),![]);}},'error':function(_0x7fd923){var _0x8b867b=_0x1eb1fb,_0x5205c6=_0x5065f2;waitingDialog[_0x8b867b(0x290)](),alert(_0x5205c6(0x232)+JSON['stringify'](_0x7fd923));}});}else{if(_0x4ef4fc+0x1==arrFileFolder[_0x5065f2(0x2e6)]){var _0x4cea5c=Documentname;Documentname[_0x5065f2(0x2f8)](/\bDocuments\b/)>=0x0&&(_0x4cea5c=_0x5065f2(0x214)),GetMyDocumentsWithFilesFolder(_0x4cea5c),FailDueToCheckOut==0x0?alert(_0x5065f2(0x2bb)):alert(FailDueToCheckOut+_0x5065f2(0x1c1)),$('#FileSharing')[_0x5065f2(0x1ee)](_0x5065f2(0x233)+$(_0x5065f2(0x271))[_0x5065f2(0x12a)]()),$(_0x5065f2(0x25b))[_0x5065f2(0x209)](),$('.btnClosePopup')[_0x5065f2(0x1c9)](_0x5065f2(0x87)),arrFileFolder=[],FailDueToCheckOut=0x0,$(_0x5065f2(0x21b))[_0x5065f2(0x27a)](_0x5065f2(0x1b5),![]);}}}}else{if(_0x353e99[_0x1eb1fb(0x24e)]==_0x5065f2(0xdb)){_0x1f337b=!![],_0x294781=DocumentId=_0x353e99['DocumentId'],CopySourceURL=_0x353e99[_0x5065f2(0x243)],CopyLibrary=_0x353e99[_0x5065f2(0x100)],$(_0x5065f2(0x1c0))[_0x5065f2(0x1ee)](_0x353e99[_0x5065f2(0xa5)]),$(_0x1eb1fb(0x376))[_0x1eb1fb(0x35f)](_0x353e99[_0x5065f2(0x227)]),$(_0x5065f2(0x12b))[_0x5065f2(0x1ee)](_0x353e99[_0x5065f2(0x1ef)]),_0x353e99[_0x1eb1fb(0x221)][_0x1eb1fb(0x2c9)](_0x5065f2(0x30e))==!![]&&(_0x353e99['CopyFileLink']=_0x353e99[_0x5065f2(0xf9)][_0x5065f2(0x1f2)](_0x1eb1fb(0x3df),_0x5065f2(0x1f1))),($(_0x5065f2(0x2e3))[_0x1eb1fb(0x1ac)](_0x353e99[_0x5065f2(0xf9)]),_0x145627=SelectedFileServerURL=_0x353e99[_0x5065f2(0xa5)],_0x553e4c=getSharedUsersId(_0x294781),_0x18b208=$[_0x1eb1fb(0x29e)](_0x553e4c,function(_0x52e1cb){var _0x9c200e=_0x5065f2;return $[_0x9c200e(0x1ce)](_0x52e1cb,sharedUsersIdArrayListItemCollection)!==-0x1;}),sharedUsersIdArrayListItemCollection=sharedUsersIdArrayListItemCollection[_0x5065f2(0x99)](_0x553e4c),_0x1f337b=ShareFilesFolder(_0x145627,_0x5065f2(0x16d),'',_0x1d0cfa)),_0x1f337b!=![]&&(_0x1f337b=!![]);if(sharedUsersIdArrayListItemCollection[_0x5065f2(0x2e6)]>0x0&&_0x1f337b==!![]){var _0x466a4d=$(_0x1eb1fb(0x389))[_0x5065f2(0x12a)]();PermissionStatus==''&&updateDocumentPropertiesOnItemSharing(_0x294781,_0x145627,_0x1d0cfa,sharedUsersIdArrayListItemCollection,CopySourceURL,![]),GetDocumentsRevoke(_0x18b208,_0x294781);var _0x5aa61a=[];_0x5aa61a=getSharedType(),AddSharedLinkToList(_0x145627,SharingUserId,_0x294781,_0x353e99[_0x1eb1fb(0x24e)],$(_0x5065f2(0x271))[_0x1eb1fb(0x1ac)](),$('#sharedWithPermission')[_0x5065f2(0x12a)](),_0x5aa61a[0x0],_0x353e99[_0x5065f2(0x106)],_0x5aa61a[0x1]);if($(_0x1eb1fb(0x405))[_0x5065f2(0x27a)]('checked')==!![]&&PermissionStatus==''){var _0x37a771=[],_0x20cda4=$('#sharedWithPermission\x20:selected')[_0x5065f2(0x1ee)]();if(SharingUserEmail[_0x5065f2(0x2e6)]>0x0){var _0x4caa5d='';ValidityDateHTML='',$(_0x5065f2(0x281))[_0x1eb1fb(0x1ac)]()!=''&&(ValidityDateHTML='<div><strong>Sharing\x20valid\x20till:</strong>\x20'+moment($(_0x1eb1fb(0x2ce))[_0x1eb1fb(0x1ac)]())[_0x5065f2(0x27f)](_0x5065f2(0x7e))+_0x1eb1fb(0x1b0)),(_0x4caa5d=_spPageContextInfo[_0x1eb1fb(0x35c)]+_0x5065f2(0x1c3),_0x4caa5d=_0x4caa5d+_0x1eb1fb(0x3db)+$(_0x5065f2(0x12b))[_0x5065f2(0x1ee)]()+'</div>'+_0x5065f2(0x2e2)+_0x353e99[_0x1eb1fb(0x2a5)]+_0x5065f2(0xa6)+_0x5065f2(0xf8)+_0x353e99[_0x5065f2(0x2d7)]+_0x5065f2(0xa6)+_0x5065f2(0xec)+_0x353e99[_0x5065f2(0x136)]+'</div>'+_0x5065f2(0x25c)+_0x20cda4+_0x1eb1fb(0x1b0)+_0x5065f2(0x27b)+_spPageContextInfo[_0x5065f2(0x72)]+_0x5065f2(0xa6)+_0x1eb1fb(0x261)+moment(new Date())[_0x1eb1fb(0x27d)](_0x5065f2(0x7e))+'\x20'+new Date()[_0x5065f2(0x9d)]()[_0x1eb1fb(0x1d8)](/([\d]+:[\d]{2})(:[\d]{2})(.*)/,_0x5065f2(0x252))+_0x5065f2(0xa6)+ValidityDateHTML+'</br><div><strong>Message:</strong>\x20'+$(_0x5065f2(0x1c2))[_0x1eb1fb(0x1ac)]()+_0x5065f2(0xe5)+_0x5065f2(0x131)+$(_0x5065f2(0x2e3))[_0x5065f2(0x12a)]()+_0x5065f2(0x1b1)+'<br/><br/>',_0x4caa5d+=_0x5065f2(0x160));for(var _0xa131ea=0x0;_0xa131ea<LabelDefaultLangauge[_0x5065f2(0x2e6)];_0xa131ea++){_0x4caa5d[_0x5065f2(0x198)](LabelDefaultLangauge[_0xa131ea][_0x5065f2(0x2aa)])==!![]&&(_0x4caa5d=_0x4caa5d[_0x5065f2(0x218)](LabelDefaultLangauge[_0xa131ea][_0x5065f2(0x2aa)],LabelDefaultLangauge[_0xa131ea][_0x1eb1fb(0x31d)]));}}var _0x434b78;_0x37a771=SharingUserEmail[_0x1eb1fb(0x1cc)](function(_0x4c8196){return _0x4c8196;}),_0x434b78={'properties':{'__metadata':{'type':_0x5065f2(0x86)},'From':_spPageContextInfo[_0x5065f2(0xf1)],'To':{'results':_0x37a771},'Body':_0x4caa5d,'Subject':_0x5065f2(0x10f)}};var _0x49003a=_spPageContextInfo[_0x5065f2(0x92)]+_0x1eb1fb(0x2b3);$[_0x1eb1fb(0x306)]({'contentType':_0x5065f2(0x1e2),'url':_0x49003a,'type':_0x5065f2(0x1eb),'data':JSON[_0x5065f2(0x20a)](_0x434b78),'headers':{'Accept':_0x5065f2(0x17e),'content-type':_0x1eb1fb(0x3f5),'X-RequestDigest':$(_0x5065f2(0x16f))[_0x5065f2(0x12a)]()},'success':function(_0x41fb11){var _0x379562=_0x1eb1fb,_0x53e95f=_0x5065f2;if(_0x4ef4fc+0x1==arrFileFolder[_0x53e95f(0x2e6)]){var _0x148250=Documentname;Documentname[_0x379562(0x39e)](/\bDocuments\b/)>=0x0&&(_0x148250=_0x53e95f(0x214)),GetMyDocumentsWithFilesFolder(_0x148250),FailDueToCheckOut==0x0?alert('File\x20has\x20been\x20shared.'):alert(FailDueToCheckOut+_0x53e95f(0x1c1)),$(_0x53e95f(0xb1))[_0x53e95f(0x1ee)](_0x53e95f(0x233)+$(_0x53e95f(0x271))['val']()),$(_0x53e95f(0x25b))[_0x53e95f(0x209)](),$(_0x53e95f(0x175))[_0x53e95f(0x1c9)](_0x53e95f(0x87)),arrFileFolder=[],FailDueToCheckOut=0x0,$(_0x53e95f(0x21b))[_0x53e95f(0x27a)]('checked',![]);}},'error':function(_0x4ba972){var _0x4345bb=_0x1eb1fb,_0x19fcab=_0x5065f2;waitingDialog[_0x19fcab(0x8b)](),alert(_0x19fcab(0x232)+JSON[_0x4345bb(0x30d)](_0x4ba972));}});}else{if(_0x4ef4fc+0x1==arrFileFolder[_0x5065f2(0x2e6)]){var _0x4cea5c=Documentname;Documentname[_0x1eb1fb(0x39e)](/\bDocuments\b/)>=0x0&&(_0x4cea5c=_0x5065f2(0x214)),GetMyDocumentsWithFilesFolder(_0x4cea5c),FailDueToCheckOut==0x0?alert(_0x5065f2(0x2bb)):alert(FailDueToCheckOut+_0x5065f2(0x1c1)),$(_0x5065f2(0xb1))[_0x1eb1fb(0x35f)](_0x5065f2(0x233)+$(_0x5065f2(0x271))[_0x1eb1fb(0x1ac)]()),$('.txtSharingHistoy')[_0x5065f2(0x209)](),$(_0x5065f2(0x175))[_0x5065f2(0x1c9)](_0x5065f2(0x87)),arrFileFolder=[],FailDueToCheckOut=0x0,$(_0x1eb1fb(0x3b5))[_0x5065f2(0x27a)](_0x5065f2(0x1b5),![]);}}}}else{FailDueToCheckOut++;if(FailDueToCheckOut==arrFileFolder[_0x1eb1fb(0x3c5)])waitingDialog[_0x5065f2(0x8b)](),FailDueToCheckOut=0x0,alert(_0x5065f2(0x89)),$(_0x1eb1fb(0x26d))[_0x5065f2(0x1ee)]('Shared\x20with\x20'+$(_0x5065f2(0x271))[_0x5065f2(0x12a)]()),$(_0x5065f2(0x25b))[_0x1eb1fb(0x31e)](),$(_0x1eb1fb(0x320))[_0x5065f2(0x1c9)](_0x5065f2(0x87)),arrFileFolder=[],$(_0x5065f2(0x21b))[_0x5065f2(0x27a)](_0x5065f2(0x1b5),![]);else{if(arrFileFolder[_0x5065f2(0x2e6)]==_0x4ef4fc+0x1){var _0x4cea5c=Documentname;Documentname[_0x5065f2(0x2f8)](/\bDocuments\b/)>=0x0&&(_0x4cea5c=_0x5065f2(0x214)),GetMyDocumentsWithFilesFolder(_0x4cea5c),FailDueToCheckOut==0x0?alert(_0x5065f2(0x2bb)):alert(FailDueToCheckOut+_0x5065f2(0x1c1)),waitingDialog[_0x5065f2(0x8b)](),FailDueToCheckOut=0x0,$(_0x5065f2(0xb1))[_0x5065f2(0x1ee)](_0x5065f2(0x233)+$(_0x5065f2(0x271))[_0x5065f2(0x12a)]()),$('.txtSharingHistoy')[_0x5065f2(0x209)](),$(_0x5065f2(0x175))[_0x5065f2(0x1c9)](_0x5065f2(0x87)),arrFileFolder=[],$(_0x5065f2(0x21b))[_0x1eb1fb(0x409)](_0x5065f2(0x1b5),![]);}}}}}});}function a86_0x1e25(){var _0x356a01=['<div><strong>Valid\x20till:</strong>\x20','type','folder.png','.ogv','SP.Sharing.UserRoleAssignment','Deferred','\x20title=\x27','SiteURL','MetaDataRestricted','#btnOpenRevoke','Multiple','.psd','System\x20Account','.headdingLinks','\x27);\x22\x20class=\x22AckDoc\x22\x20style=\x22color:blue;\x22>Pending</a>','\x27\x20and\x20IsArchive\x20ne\x201)\x20','Shared\x20To:','Type\x20to\x20find....','#ShareTabSharing','Filter','<div><strong>Shared\x20On:</strong>\x20','.docx','SharedDocument','Attempted\x20to\x20perform\x20an\x20unauthorized\x20operation','\x22\x20alt=\x22\x22>','\x20</div>','<td><a\x20style=\x22cursor:\x20pointer;\x22\x20class=\x22fileFolderRevoke\x22\x20onclick=\x22\x20RevokeGpPermission(','Shared\x20By','trigger','.gif','#btnShare','<td>Approval\x20Pending</td>','#FileSharing','$1$3','\x20<h4\x20class=\x22panel-title\x22>','Shared\x20by\x20Me','lastIndexOf','</a></li>','Contributors','36MwTItu','/_api/SP.Sharing.DocumentSharingManager.UpdateDocumentSharingInfo','#FileDocType','#NeedAckBox','File(s)/Folder(s)\x20shared\x20to\x20Everyone\x20can\x27t\x20be\x20archived.\x20Rest\x20of\x20the\x20File(s)/Folder(s)\x20have\x20been\x20archived.','AckShareBy','\x22\x20rel=\x22\x22\x20onclick=\x22DisplayFileProperty(\x27','.fileFolderRevoke','promise','format','ServerRelativeUrl','ready','\x27\x20and\x20(SharedUsers/Id\x20eq\x20\x27','</br><div><strong>Message:</strong>\x20','SharingValidity','.bmp','Permission\x20has\x20been\x20revoked.','keyup','#DivAppInCount','#divPendingAck','SP.Utilities.EmailProperties','</div><br/>','remove','30HzLrVr','1073741937','\x27);\x22\x20style=\x22color:green;\x22>Acknowledged</a>','#txtAcknoldge','?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=DocumentID\x20eq\x20\x27','hide','\x27,\x20\x27','.wav','\x20is\x20requesting\x20your\x20acknowledgement\x20on\x20a\x20document.','#sharedWithPermission\x20option:selected','</h4>','/Documents','Restricted\x20View','pdf.png','2531682woiUgK','?$top=5000&$select=*,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID\x20eq\x20\x27','.flv','<a\x20href=\x22javascript:void(0);\x22\x20name=\x22','\x27,\x27','grep','userId','\x20<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/home_ico.png\x22\x20alt=\x22Project\x20Documents\x22\x20>','.closeShareHis','#txtShareBy','#btnShareFile','<li\x20title=\x22Root\x22\x20class=\x22mybradcumb\x20first\x22><a\x20href=\x22javascript:void(0);\x22\x20onclick=\x22shareTootFolder();\x22>Root</a></li>','FileTitle','toLocaleTimeString','DisplayFileProperty','IsBlock','?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified\x20desc&$expand=SharedUsers,Author&$filter=(DocumentID\x20eq\x20\x27','<td>','dateFormat','/_api/Web/Lists/getByTitle(\x27','option','</span><span\x20style=\x27color:\x20Red;\x27>','.txtSharingHistoy','ProcessApprovers','\x27\x20and\x20ViewsBy/EMail\x20eq\x20\x27','\x27\x20and\x20PermissionStatus\x20ne\x20\x27Revoked\x27)\x20','/_api/SP.Utilities.Utility.SendEmail','default&mobileredirect=true','.ParentbtnOpenRevoke','destroy','\x20and\x20(PermissionType\x20eq\x20\x27Read\x27\x20or\x20PermissionType\x20eq\x20\x27Contribute\x27\x20or\x20PermissionType\x20eq\x20\x27Restricted\x20View\x27\x20or\x20PermissionStatus\x20eq\x20\x27Revoked\x27)\x20and\x20(PermissionStatus\x20ne\x20\x27Deleted\x27\x20and\x20IsArchive\x20ne\x201)','?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=(Id\x20eq\x20\x27','<div\x20class=\x22Acknowledgementsec\x22><p\x20style=\x22color:red\x22>Not\x20Acknowledged</p><div\x20class=\x22btnParent\x22\x20id=\x22SendAckParent0\x22><button\x20class=\x22btn\x20custom-btn\x20w-70\x22\x20id=\x220\x22\x20type=\x22button\x22\x20onclick=\x22SendAckMail(this,\x20\x27','<div\x20class=\x22AckStatus\x22\x20style=\x22color:green;\x22>Acknowledged</div>','?$select=*,ID,SharedGroup,SharedUsers/Title&$expand=SharedUsers&$filter=Id\x20eq\x20\x27','Selected\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20shared.','You\x20are\x20not\x20authorized\x20to\x20revoke\x20','empty','\x27,\x20','<td><div\x20class=\x27flexingtwo\x27><div\x20id=\x27profileImage\x27>','1186725RxPoHa','share_remarks','\x27)?$select=ID,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$orderby=Modified\x20desc','</div></br></br></br>','Category','PermissionType','Permission','/_api/web/lists/getbytitle(\x27','includes','<div><strong>Permission:</strong>\x20','checked',':\x20Item\x20is\x20set\x20permission','Acknowledgement','#expiredats','<button\x20type=\x22button\x22\x20class=\x22btn\x20custom-btn\x20mr-8\x20wpx-87\x22\x20id=\x22btnOpenRevoke\x22>Submit</button>','map','Details','.png','&$orderby=Created\x20asc','<a\x20href=\x27','#txtRevokeMsg','Required','/Shared_x0020_Documents','DocumentId','MM\x20dd,\x20yy','\x27\x20and\x20Title\x20eq\x20\x27','&p=true','dms-left-panel-tab-active-inner','CSV.png','Kindly\x20select\x20any\x20users\x20first.','indexOf','Acknowledge','#filenamee','location','Assigned','<th\x20class=\x22text-center\x20border-bottom-0\x20w-2\x22>','AckDocType','<font\x20color=\x22Red\x22>Revoked</font>','</div></div></div>','</h3><p>Guest\x20Client</p></td>','<td\x20class=\x22text-left\x22><div\x20class=\x22ShareAction\x22>','<div\x20class=\x22Acknowledgementsec\x22><p\x20style=\x22color:red\x22>Not\x20Acknowledged</p><div\x20class=\x22btnParent\x22\x20style=\x22display:none;\x22\x20id=\x22SendAckParent0\x22><button\x20class=\x22btn\x20custom-btn\x20w-70\x22\x20id=\x220\x22\x20type=\x22button\x22\x20onclick=\x22SendAckMail(this,\x20\x27','shift','<div\x20class=\x22breakbox\x22><input\x20type=\x22checkbox\x22\x20id=\x22txtAcknoldge\x22><label\x20class=\x22detail-label\x22\x20id=\x22AckHeading\x22>Acknowledgement</label></div><div\x20class=\x22breakbox\x22><label\x20class=\x22detail-label\x22\x20id=\x22AckText\x22>By\x20clicking\x20this\x20you\x20agree\x20that\x20you\x20understand\x20and\x20acknowledge\x20this\x20document.</label></div>','8EbKZcq','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22\x20onclick=\x22GetSharedHistory(\x27','?$select=Id,Title,IsActive,CompanyID/Id,DocumentLibrary,InternalMembers/EMail,InternalSupervisor/EMail&$expand=CompanyID,InternalMembers,InternalSupervisor&$top=5000&$filter=DocumentLibrary\x20ne\x20null\x20and\x20IsActive\x20eq\x20\x271\x27\x20and\x20InternalMembers/EMail\x20eq\x20\x27','removeClass','.mpeg','draw','userEmail','<th\x20data-localize=\x22','#checkall','disabled','.rpm','fontcolor','audio.png','#Acknowledgement','split','/DepartmentalDMS/Forms/AllItems.aspx?id=','?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified\x20desc&$expand=SharedUsers,Author&$filter=(Author/EMail\x20eq\x20\x27','?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID\x20eq\x20\x27','Pending','<tr><td\x20colspan=\x2212\x22\x20style=\x22text-align:center;\x22>No\x20file\x20or\x20folder\x20found.</td></tr>','SP.Data.DocumentAcknowledgementListItem','\x22\x20type=\x22button\x22\x20onclick=\x22SendAckMail(this,\x20\x27','Deleted','<td><div\x20class=\x27flexingtwo\x27><div\x20class=\x27empoyeeimg\x20clientnameshow\x27><span\x20class=\x27clienttext\x27><div\x20id=\x27profileImage\x27>','#ButtonArea','ajax','#ext','<div\x20class=\x22Acknowledgementsec\x22><p\x20style=\x22color:green\x22>Acknowledged</p><p\x20style=\x22color:green\x22>','#tabArchive','webServerRelativeUrl','NeedAcknowledgement\x20eq\x20\x271\x27','.7z','stringify','ActionByTimeZone','LibraryName','sucessfully\x20revoke','297506ycYXtG','It\x20will\x20revoke\x20all\x20the\x20permissions\x20applied\x20to\x20file.\x20Are\x20you\x20sure,\x20you\x20want\x20to\x20revoke?','#filterSharedFrom','results','json',')?$select=ServerRedirectedEmbedUri,File/Name,File/ServerRelativeUrl,Folder/Name,Folder/ServerRelativeUrl,Shared/Title,SharedId&$expand=File,Folder,SharedId','<option\x20value=\x27','webAbsoluteUrl','black','Author','Modified','<option\x20value=\x22All\x22>All</option>','DefaultLanguage','show','i:0#.f|membership|','.btnClosePopup','Reference','\x22\x20class=\x22chkShareToMe\x22\x20disabled=\x22disabled\x22><label\x20for=\x22ShareToMe','#ddlShare','undefined','siblings','#customHistrySearch','Acknowledged','<td\x20class=\x22dwnld_cell\x22\x20style=\x22text-align:center\x22></td>','#HeadingShareWith','<div\x20class=\x22col-sm-6\x20parentremove\x20User','javascript:GetSharedFolderDocuments(\x27','.txtselect','.tiff','/_api/web/siteusers(@v)?@v=\x27','Name','#myModalShareHistory','.historydocid:checked','#btnSharedDocFilter','<label\x20class=\x22checkbox-inline\x20hpx-20\x22><input\x20type=\x22checkbox\x22\x20id=\x22selectAllChk\x22\x20value=\x22\x22></label>','value','<td><a\x20style=\x22cursor:\x20pointer;\x22\x20class=\x22fileFolderRevoke\x22\x20onclick=\x22RevokePermission(','SharedClient','Expiry\x20date\x20should\x20me\x20greater\x20than\x20today.','rel','You\x20are\x20not\x20authorized\x20to\x20revoke\x20file/folder\x20permission.','#btnAddToArchive','Not\x20Required','.pcm','null','</a>','Documents','</option>','SPClientPeoplePickerDict','DocumentAcknowledgement','#RevokePermission','#expiredon','<td\x20class=\x22text-left\x22>','Property\x20Documents','datepicker','Revoked\x20due\x20to\x20re-share','The\x20caller\x20has\x20no\x20permissions\x20to\x20grant\x20permission','#lblSelectedCurrentEmail','.cab','<tr>','html','#btnShareFilter','DocumentType','NullValue','\x22\x20id\x20=\x22ShareToMe','Shared\x20with\x20Me','FileFolderName','Yes','docx.png','\x20has\x20shared\x20the\x20following\x20document\x20with\x20you.<br/><br/>','887466UcUGmT','#FilterShareType','<div\x20data-localize=\x27Title\x27><strong>Title</strong><strong>:</strong>\x20','DisplayText','.mp3','userDisplayName','<li><div\x20class=\x22detailsectionbox\x22><span\x20class=\x22imgboxsectin\x22><img\x20src=\x22','--Select--','text','Personal','inArray','#theadItem','<tr><td\x20class=\x22text-center\x22><div\x20class=\x22chexbox_mg\x22><input\x20type=\x22checkbox\x22\x20value=\x22','#sharedWithPermission','.avi','<div\x20data-localize=\x27Reference\x27><strong>Reference</strong><strong>:</strong>\x20','&parent=','Selective','\x27\x20data-themekey=\x27#\x27><div\x20class=\x27designationtype\x27>','DocumentNo','AckPermission','alt','SharedUserEmail','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22\x20onclick=\x22GetSharedHistory(\x27','ListItemAllFields','.dms-left-panel-tab-inner','append','SharedFileTitle','interactivepreview','\x27\x20and\x20Acknowledge\x20eq\x20\x271\x27','Shared','#FileTitle','#tabSharedByMe','.context-menu','<td>Not\x20Required</td>','860307XarrhS','Full\x20Access','</div><div\x20class=\x27designationtype\x27>','push','.advance_setion','</td>','</span>','true','))&$orderby=Created\x20asc','--select--','SharingPplPicker_TopSpan','origin','<div\x20class=\x22panel\x20panel-default\x22>','\x27\x20and\x20ViewsBy/Id\x20eq\x20\x27','responseText','#sharewith','.jpg','<table\x20class=\x22table\x20mb-0\x20custom-table\x22\x20id=\x22groupDocumentGrid\x22><thead><tr\x20id=\x22theadItem\x22></tr></thead><tbody\x20id=\x22groupDocumentGridtbody\x22></tbody></table>','SharedMessage','SendEmailAckNotification\x20\x20','MMM\x20D\x20YYYY','All\x20revoked','SharedFrom','css','?$top=5000&$select=*,ViewsBy/Id,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID\x20eq\x20\x27','SendEmailSharedNotification\x20\x20','.chkClientName','/_api/web/GetFileByServerRelativeUrl(\x27','txt.png','\x27\x20and\x20CompanyId\x20eq\x20\x27','color','\x27\x20or\x20SharedGroup\x20eq\x20\x27Everyone\x27\x20','SharedType','Guest','50tCwbIt','\x20has\x20shared\x20the\x20following\x20document\x20with\x20you.\x20Your\x20acknowledgment\x20is\x20required\x20on\x20this\x20document.<br/><br/>','search','Shared\x20From','My\x20Documents','</tr>','>Click\x20here</a>\x20to\x20open\x20and\x20acknowledge\x20the\x20document.</div>','All\x20permissions\x20are\x20revoked.','trim','.NewFilter','#DivAppOutCount','.pptx','<a\x20href=\x22javascript:void(0);\x22\x20class=\x22emilbox\x22\x20style=\x22cursor:pointer;color:blue;\x22\x20onclick=\x22OpenEmail(\x27','pptx.png','\x27)/ListItemAllFields/breakroleinheritance(true)','.aac','\x27);\x22\x20class=\x22AckDoc\x22\x20style=\x22color:blue;\x22>','</div></td></tr>','POST','726506zAfDjb','\x20&$orderby=Created\x20asc','responseJSON','</h3>','log','#AckHeading','.chkFileFolder','?$select=ID,DocumentNo,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID&$expand=SharedUsers,Author','forEach','<div><strong>Title:</strong>\x20','<div><strong>File\x20Name:\x20</strong>','</div></td>','image-icon.png','\x27);\x22\x20disabled=\x22disabled\x22>Notify</button></div></div></li>','PermissionStatus','\x22\x20onclick=\x22GetSharedFolderDocuments(this,\x20\x27','\x20to\x20perform\x20this\x20operation.','Everyone','\x22\x20value=\x22','&$filter=SharedUsers/ID\x20eq\x20\x27','file.png','#sharedHistoryTable_filter','length','.txt','/Shared%20Documents/','.arz','<td><div\x20class=\x27RevokedDetails\x27><span\x20style=\x27cursor:\x20not-allowed;color:\x20Red;\x27>Revoked</span><span>','AckSharedValid','<a\x20href=\x22javascript:void(0);\x22\x20class=\x22AckDoc\x22\x20onclick=\x22OpenAckNotify(\x27','.redonlysec','IPAddress','\x27);\x22>Revoke</a></td>','</div></div><td>','SharedUsers','<h3\x20class=\x27namesection\x27>','#filetitle','concat','\x27);\x22\x20class=\x22doc_icon\x22>','\x27);\x22>Notify</button></div></div></li>','\x20Successfully\x20removed\x20Permission\x20!','\x20has\x20revoked\x20the\x20sharing\x20of\x20below\x20document\x20with\x20you.<br/><br/>','.CloseShareFilter','toString','.rar','<div><strong>File\x20Name:</strong>\x20','Notification\x20has\x20been\x20sent\x20to\x20all.','#SendAckParent','ZIP.png','/Documents/','.ppt','fail','modal','\x22\x20name=\x22','?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified\x20desc&$expand=SharedUsers,Author&$filter=(SharedUsers/Id\x20eq\x20\x27','Dear\x20','Send\x20mail\x20Revoke\x20\x20','Shared%20Documents','folderUrl','Single','<td><div\x20class=\x27flexingtwo\x27><img\x20src=\x27','88kUSXKD','Read\x20Access','#sharedWithPermission\x20:selected','#AckUserList','application/json','#shreduser','\x27\x20or\x20InternalSupervisor/EMail\x20eq\x20\x27','<p\x20class=\x22SendMSg\x22>Notification\x20Sent.</p>','.select_all','Shared\x20With','application/json;odata=verbose','.mybradcumb\x20','substring','1073741827','#txtSharePermission','.xlsx','#selectAllHist','\x27\x20and\x20ApprovalStatus\x20eq\x20\x27Approved\x27','File\x20has\x20been\x20shared.','Rlfrtip','charAt','DD/MM/YYYY','<div\x20data-localize=\x27Category\x27><strong>Category</strong><strong>:</strong>\x20','#btnRevokeSharedTbl',',\x20\x27','AckName','#notifymail','<div><strong>Shared\x20By:</strong>\x20','Contribute','My-DMS','prop','DocumentID','DocType','GroupId','Please\x20select\x20any\x20file/folder\x20first.','</a></div></div>','Created','</p><p\x20style=\x22color:black;font-size:12px;\x22>','<tr><td\x20class=\x22text-center\x22><div\x20class=\x22chexbox_mg\x22><input\x20type=\x22checkbox\x22\x20id\x20=\x22ShareToMe','<div><strong>Reference:</strong>\x20','<img\x20width=\x2230px\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/','<td\x20class=\x22text-left\x22><div\x20class=\x22dms-table-ellipsis-2\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/no_shared.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22></div></td>','#selectAllChk','\x27)\x22>','#FilterShareDocType','File(s)/Folder(s)\x20have\x20been\x20restored.','\x22\x20class=\x22chkShareToMe\x22><label\x20for=\x22ShareToMe','/Shared%20Documents','EMail','Shared_x0020_Documents','\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20shared.\x0aOther\x20files(s)\x20have\x20been\x20shared\x20successfully.','<br/><br/>','\x20permission.','/_api/web/sitegroups/getbyname(\x27ALL_EMPLOYEE\x27)?$select=id','#AckText','#FilePath','\x27&$orderby=Created\x20asc','<a\x20href=\x22javascript:void(0);\x22\x20onclick=\x22OpenAckNotify(\x27','change','#FilterShareDocType\x20option','ClientMaster','nextAll','val','#pplSharedBy','Are\x20you\x20sure,\x20you\x20want\x20to\x20revoke\x20permission?','#ddlAckFilter','</div>','pplSharedBy','#txtPendingCount','Red','.wim','Title','Restricted\x20Access','\x22);\x27>','GET','.wma','Shared\x20with\x20','.zip','/_layouts/15/userphoto.aspx?accountname=','before','1233752pgFGoS','\x27\x20or\x20SharedClient/Title\x20eq\x20\x27','?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=Author/EMail\x20eq\x20\x27','.chkGpName','\x27\x20target=\x27_blank\x27\x20download><span\x20class=\x27glyphicon\x20glyphicon-download-alt\x27></span></a>','#filterShareText','#ShareFilterRef','#referNo','/_api/Web/GetFolderByServerRelativeUrl(\x27','/Pages/Document.aspx','#pplSharedBy_TopSpan_ResolvedList','exec','<div\x20class=\x22AckDoc\x22\x20style=\x22color:black;\x22>Pending</div>','#Acknowledgment','filter','.doc','<a\x20href=\x27javascript:void(0);\x27\x20class=\x27emailsec\x27\x20onclick=\x27OpenEmail(\x22','application/json;\x20odata=verbose','#shared-documents-filter','MMM\x20DD\x20YYYY','#btnRemoveArchive','#btnRefreshSharedTbl',');\x22\x20class=\x22crosebox\x22><i\x20class=\x22fa\x20fa-times\x22></i></span>','#__REQUESTDIGEST','DepartmentalDMS','attr','replace','</div></span>','.parentremove','.chkShareToMe','1JQcSsx','</span><div\x20class=\x22detalbox\x22>','#sharedAs','5967666aNNhmM','\x27title=\x27','?$select=Id,ApprovalStatus&$filter=Id\x20eq\x20\x27','202509iReMjH','DocumentURL','2550346YAagPf',',<br/><br/>','4329954xDNObU','Required\x20columns\x20does\x20not\x20exists.\x20Kindly\x20contact\x20administrator\x20to\x20activate\x20features.','#btnAckNotifyAll','User','.chkProjectName','\x27)\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22\x20onclick=\x22GetSharedHistory(\x27','My_Doc','false','Select','\x27\x20and\x20(SharedUsers/EMail\x20eq\x20\x27','#forever','video-files.png','SharedByMe','Groups','#TotalItemscount','file','File(s)/Folder(s)\x20shared\x20to\x20Everyone\x20can\x27t\x20be\x20archived.','...','?$select=*,ID,WebPartName,Department/Id,Contributors/EMail&$top=5000&$expand=Contributors,Department&$filter=Contributors/EMail\x20eq\x20\x27','.txtCopyLink','toLowerCase','\x27)/Items(','#FileReference','FileType','Dear\x20All,<br/><br/>','#btnShareMulti','match','\x27)/GetItemById(\x27','\x27)\x22>Revoke</a></td>','#sharedHistoryList','substr','\x27)/ListItemAllFields/roleassignments/getbyprincipalid(','\x27\x20and\x20PermissionStatus\x20ne\x20\x27Revoked\x27','.historydocid','PermissionType\x20eq\x20\x27','<tr><td></td>','<a\x20href=\x22javascript:void(0);\x22\x20onclick=\x22','\x27)\x20and\x20','LibraryURL','SharingPplPicker','\x22\x20data-toggle=\x22pill\x22\x20class=\x22dms-left-panel-tab-inner\x22>','.NoRecordFound','Shared\x20Documents','toISOString','SharedItemId','Read','<br/><br/><br/>','__metadata','<td\x20class=\x22text-left\x22><div\x20class=\x22dms-table-ellipsis-2\x22>','#revokebtn','<a\x20href=\x22javascript:void(0);\x22\x20rel=\x22','when','Please\x20look\x20at\x20the\x20following\x20File/Folder.','Revoked','.wmv','Please\x20select\x20any\x20file\x20or\x20folder\x20first.','#accordioninnersd','ServerURL','\x27)/items','CopyFileLink','1073741826','#tabSharedToMe','\x20</a>','/_api/web/lists/getbytitle(\x27DocumentAcknowledgement\x27)/items','\x22></label></div></td>','All','.csv','/_api/web/currentuser/?$expand=groups','</div></div></td>','folderName','Files','?$select=ID,ApproverRequired,Approver/Title,Approver/EMail,Approver/Id,WebPartName,Department/Id&$top=5000&$expand=Department,Approver&$filter=WebPartName\x20eq\x20\x27Documents\x27\x20and\x20Department/Id\x20eq\x20\x27','\x22><div\x20class=\x22employeesection\x22>','<td><input\x20type=\x27checkbox\x27\x20class=\x27historydocid\x27\x20value=','SharedGroup','done','\x27)/getItemById(','click','#txtShareOn','/Forms/AllItems.aspx?id=','\x22\x20\x20value=\x22','DELETE','865389JKrgaF','activating','\x27)\x22\x20class=\x22doc_icon\x22>','A\x20document\x20has\x20been\x20shared\x20with\x20you.','Are\x20you\x20sure\x20to\x20acknowledge\x20this\x20document\x20?','SharedWithMe','#FileName','<td></td>','<div><strong>Sharing\x20valid\x20till:</strong>\x20','#generateBradCumbNew','.jpeg','\x27);\x22\x20class=\x22AckStatus\x22>Acknowledge</a>','Organization','<div><a\x20href=','or\x20SharedUsers/Id\x20eq\x20\x27','This\x20is\x20an\x20auto\x20generated\x20email.\x20Please\x20don\x27t\x20reply.','#DMSTable','>Click\x20here</a>\x20to\x20open\x20the\x20document.</div>','TFW_Employees','Key','/_api/web/GetFolderByServerRelativeUrl(\x27'];a86_0x1e25=function(){return _0x356a01;};return a86_0x1e25();}function getSharedUsersId(_0x484d7e){var _0x40b2d9=a86_0x227ab8,_0xe6b586=_0x5a5f90,_0x25d70a=[];CopyLibrary=='Shared%20Documents'&&(CopyLibrary=_0xe6b586(0x167));var _0x547d6c=CopySourceURL+'/_api/web/Lists/GetByTitle(\x27'+CopyLibrary+_0x40b2d9(0x232)+_0x484d7e+_0xe6b586(0x164);return $[_0xe6b586(0x185)]({'url':_0x547d6c,'headers':{'accept':_0xe6b586(0x17e),'content-type':_0xe6b586(0x17e),'X-RequestDigest':$(_0xe6b586(0x16f))[_0xe6b586(0x12a)]()},'async':![],'success':function(_0x5c3d52){var _0x5f4de3=_0x40b2d9,_0x50237e=_0xe6b586;if(_0x5c3d52['d'][_0x50237e(0xb5)]!=null)for(var _0xcd1777=0x0;_0xcd1777<_0x5c3d52['d'][_0x50237e(0xb5)][_0x50237e(0x29f)][_0x5f4de3(0x3c5)];_0xcd1777++){var _0x22bd2d=_0x5c3d52['d'][_0x50237e(0xb5)]['results'][_0xcd1777];_0x25d70a[_0x50237e(0x203)](_0x22bd2d);}},'eror':function(_0x3c25e0){var _0x3aff2b=_0xe6b586;console[_0x3aff2b(0xd3)](_0x3c25e0);}}),_0x25d70a;}function ShareFilesFolder(_0xa63800,_0x5bde8a,_0x31ce5b){var _0x2fd958=a86_0x227ab8,_0x59e984=_0x5a5f90,_0x36da34=[];SharingRespose=!![];var _0x3ffee4=0x2;if($(_0x59e984(0x1c7))[_0x2fd958(0x1ac)]()==_0x59e984(0x188))_0x3ffee4=0x1;else $(_0x59e984(0x1c7))[_0x59e984(0x12a)]()==_0x2fd958(0x297)&&(_0x3ffee4=0x7);_0xa63800[_0x59e984(0x198)](_0x2fd958(0x3df))==!![]&&(_0xa63800=_0xa63800[_0x59e984(0x1f2)](_0x2fd958(0x33f),_0x59e984(0x214)));var _0x47a8bb=createJSONMetadata(SharingUserEmail,_0x3ffee4),_0x27a36b=_spPageContextInfo[_0x59e984(0x23f)]+_0x59e984(0x107);return $[_0x2fd958(0x306)]({'url':_0x27a36b,'method':_0x2fd958(0x3ae),'async':![],'data':JSON[_0x2fd958(0x30d)]({'resourceAddress':document[_0x59e984(0x2f2)][_0x2fd958(0x385)]+_0xa63800,'userRoleAssignments':_0x47a8bb,'validateExistingPermissions':![],'additiveMode':![],'sendServerManagedNotification':![],'customMessage':_0x2fd958(0x21a),'includeAnonymousLinksInNotification':![]}),'headers':{'accept':_0x59e984(0x17e),'content-type':_0x59e984(0x17e),'X-RequestDigest':$(_0x59e984(0x16f))[_0x59e984(0x12a)]()},'success':function(_0x5bea46){var _0x517eb9=_0x59e984;console['log'](_0x517eb9(0x77)),SharingRespose=!![];},'error':function(_0x2cde58){var _0x1c39f2=_0x2fd958,_0x2ea99b=_0x59e984;if(_0x2cde58[_0x1c39f2(0x388)][_0x2ea99b(0x198)](_0x2ea99b(0x135))==!![])SharingRespose=!![],PermissionStatus=_0x2ea99b(0x259);else return SharingRespose=![],alert(_0x2cde58[_0x2ea99b(0x120)]),PermissionStatus='',![];}}),SharingRespose;}function createJSONMetadata(_0x1a06cd,_0x33c0ee){var _0x1fbb4d=a86_0x227ab8,_0x1d2bf1=_0x5a5f90,_0x24aca8=[],_0xa3fe29={};_0xa3fe29[_0x1d2bf1(0xdd)]=_0x1fbb4d(0x251);for(var _0x2d1341=0x0;_0x2d1341<_0x1a06cd[_0x1fbb4d(0x3c5)];_0x2d1341++){var _0x3b39bd={};_0x3b39bd[_0x1d2bf1(0x18a)]=_0xa3fe29,_0x3b39bd[_0x1d2bf1(0x193)]=parseInt(_0x33c0ee),_0x3b39bd[_0x1d2bf1(0x244)]=_0x1a06cd[_0x2d1341],_0x24aca8[_0x1d2bf1(0x203)](_0x3b39bd);}return _0x24aca8;}function updateDocumentPropertiesOnItemSharing(_0x43fc31,_0x5d4410,_0x463c8d,_0x3d177d,_0x5d824c,_0x229adb){var _0x492c2d=a86_0x227ab8,_0x493968=_0x5a5f90,_0x552acc=$(_0x493968(0x1c7))[_0x493968(0x12a)](),_0x1782d0='';if($(_0x493968(0x1c7))[_0x493968(0x12a)]()==_0x493968(0x20f))_0x1782d0=_0x493968(0x25a);else $(_0x492c2d(0x364))[_0x493968(0x12a)]()==_0x493968(0x188)?_0x1782d0=_0x493968(0x1a7):_0x1782d0=_0x493968(0x268);var _0x19a8c6=CopyLibrary,_0x196336;if(_0x19a8c6[_0x493968(0x198)](_0x493968(0x167))==!![])var _0xdd69d4=GetItemTypeForLibraryName(_0x493968(0x155));else var _0xdd69d4=GetItemTypeForLibraryName(_0x19a8c6);if(_0x463c8d==_0x493968(0x1d9)||_0x463c8d==''){if(ShareUserPrincipleMail['length']==0x0)for(var _0x4c7489=0x0;_0x4c7489<SharingUserEmail[_0x493968(0x2e6)];_0x4c7489++){_0x3d177d[_0x493968(0x203)](GetUserId(SharingUserEmail[_0x4c7489],_0x5d824c));}else for(var _0x4c7489=0x0;_0x4c7489<ShareUserPrincipleMail[_0x493968(0x2e6)];_0x4c7489++){_0x3d177d[_0x492c2d(0x37d)](GetUserId(ShareUserPrincipleMail[_0x4c7489],_0x5d824c));}}_0x3d177d=_0x3d177d[_0x493968(0x273)](function(_0x67f329){return _0x67f329!=='';}),_0x196336={'__metadata':{'type':_0xdd69d4},'SecurityLevel':_0x463c8d,'PermissionLevel':_0x552acc,'PermissionLevelId':_0x1782d0,'SharedId':{'results':_0x3d177d}},$(_0x493968(0x1b3))[_0x493968(0x27a)](_0x493968(0x1b5))==!![]&&(_0x196336[_0x493968(0xdc)]=_0x493968(0x1e1)),updateItemWithIDItemListDocuments(_0x19a8c6,_0x196336,_0x43fc31,_0x5d824c,_0x229adb)[_0x492c2d(0x231)](function(){})[_0x493968(0xb6)](function(_0x138805){var _0x3a39e2=_0x493968;console[_0x3a39e2(0xd3)](_0x138805);});}function GetDocumentsRevoke(_0x52a4c4,_0x29638b){var _0x43b519=a86_0x227ab8,_0x398203=_0x5a5f90;arrSharedUser=[],$(_0x43b519(0x389))[_0x398203(0x12a)]()==_0x398203(0x158)?SharingUserEmail[_0x398203(0x103)](function(_0x59216f,_0x57b7b0){var _0x465bad=_0x398203;arrSharedUser[_0x465bad(0x203)](_0x59216f[_0x465bad(0x2a4)]);}):arrSharedUser=_0x52a4c4[_0x398203(0x273)](function(_0x9cd2e9){return _0x9cd2e9;});for(k=0x0;k<arrSharedUser[_0x398203(0x2e6)];k++){var _0x40b6c9=_0x43b519(0x3c2)+arrSharedUser[k]+_0x398203(0x213)+_0x29638b+_0x398203(0x263),_0x33710a=_0x43b519(0x3b6)+_0x40b6c9;$[_0x398203(0x28d)](getItemsWithQuery(_0x398203(0x28b),_0x33710a,_spPageContextInfo[_0x398203(0x23f)]))[_0x43b519(0x231)](function(_0x52bc60){var _0x60fee6=_0x43b519,_0x57870a=_0x398203;for(var _0x3a4ce7=0x0;_0x3a4ce7<_0x52bc60[_0x57870a(0x2e6)];_0x3a4ce7++){currentItemId=_0x52bc60[_0x3a4ce7]['ID'];var _0x36a2d8=_0x57870a(0x28b),_0x38ccb9,_0x286c9e=GetItemTypeForListName(_0x36a2d8);_0x38ccb9={'__metadata':{'type':_0x286c9e},'PermissionStatus':'Revoked','share_remarks':_0x60fee6(0x348),'SharedEnd':new Date()[_0x57870a(0x1bf)]()},$[_0x57870a(0x28d)](updateItemWithIDItemListDocuments(_0x36a2d8,_0x38ccb9,currentItemId,_spPageContextInfo[_0x57870a(0x23f)]))[_0x57870a(0x1ad)](function(_0x43caa9){var _0x181ce7=_0x60fee6,_0x199589=_0x57870a;console[_0x181ce7(0x3b3)](_0x199589(0x74));});}});}}function getSharedType(){var _0x471663=_0x5a5f90,_0x4ab020=[];return _0x4ab020[_0x471663(0x203)](_0x471663(0x9f)),_0x4ab020[_0x471663(0x203)](currentClientName),_0x4ab020;}function AddSharedLinkToList(_0x6c845b,_0x1f727b,_0x8f7521,_0x121217,_0x44ec63,_0x477554,_0x415b26,_0x1eb3b,_0x10200d){var _0x4557c6=a86_0x227ab8,_0x5c8ea8=_0x5a5f90;IsBlock='No';var _0x1f0f19=_0x5c8ea8(0x28b),_0x27b3f3=GetItemTypeForListName(_0x1f0f19),_0x1f881d='';Documentname[_0x5c8ea8(0x19f)]('/')!=-0x1?_0x1f881d=Documentname[_0x5c8ea8(0x2b8)]('/')[0x0]:_0x1f881d=Documentname;for(k=0x0;k<_0x1f727b[_0x4557c6(0x3c5)];k++){var _0x241f7c=[];_0x241f7c[_0x5c8ea8(0x203)](_0x1f727b[k]);var _0x3b3e33;_0x477554==_0x5c8ea8(0x83)&&(IsBlock=_0x5c8ea8(0x23e));var _0x5f5abc=null;$(_0x5c8ea8(0x281))[_0x5c8ea8(0x12a)]()!=''&&(_0x5f5abc=GetDateStandardFormat(moment($(_0x5c8ea8(0x281))[_0x5c8ea8(0x12a)]())['format'](_0x4557c6(0x400)))),_0x3b3e33={'__metadata':{'type':_0x27b3f3},'Title':$(_0x5c8ea8(0x12b))[_0x5c8ea8(0x1ee)](),'SharedFileTitle':$(_0x5c8ea8(0x126))[_0x5c8ea8(0x1ee)](),'DocumentURL':_0x6c845b,'SharedUsersId':{'results':_0x241f7c},'SharedUserEmail':SharingUserEmail[k],'DocumentID':_0x8f7521,'DocumentType':_0x121217,'SharedGroup':_0x44ec63,'PermissionType':_0x477554,'ServerRedirectedEmbedURL':'','IsBlock':IsBlock,'SharedType':_0x415b26,'SharedFrom':_0x10200d,'SharedMessage':$(_0x5c8ea8(0x1c2))[_0x5c8ea8(0x12a)](),'SharingValidity':_0x5f5abc,'NeedAcknowledgement':$(_0x5c8ea8(0x1b3))[_0x5c8ea8(0x27a)](_0x5c8ea8(0x1b5)),'LibraryURL':DMS_Link[_0x4557c6(0x2fb)](_0x5c8ea8(0xf4))[0x0],'LibraryName':_0x1f881d,'SiteURL':DMS_Link[_0x5c8ea8(0x2b8)](_0x5c8ea8(0xf4))[0x0][_0x5c8ea8(0x2cb)](0x0,DMS_Link[_0x5c8ea8(0x2b8)]('/Forms')[0x0][_0x4557c6(0x271)]('/')),'DocType':_0x1eb3b,'IsSendMail':$(_0x5c8ea8(0x266))[_0x5c8ea8(0x27a)](_0x4557c6(0x2cb))},PermissionStatus==_0x5c8ea8(0x259)&&(_0x3b3e33[_0x5c8ea8(0x292)]=_0x5c8ea8(0x259)),$[_0x5c8ea8(0x28d)](AddItemToListGroups(_0x1f0f19,_0x3b3e33))[_0x5c8ea8(0x1ad)](function(_0x58d13b){});}}function AddItemToListGroups(_0x392f19,_0xb96054){var _0x310797=a86_0x227ab8,_0x4c8ed8=_0x5a5f90;_0x392f19==_0x4c8ed8(0x214)&&(_0x392f19=_0x4c8ed8(0x167));var _0x379a4a=$['Deferred']();return $[_0x4c8ed8(0x185)]({'url':_spPageContextInfo[_0x4c8ed8(0x23f)]+_0x4c8ed8(0x254)+_0x392f19+_0x4c8ed8(0xea),'type':_0x310797(0x3ae),'async':![],'headers':{'accept':_0x4c8ed8(0x17e),'X-RequestDigest':$(_0x4c8ed8(0x16f))[_0x310797(0x1ac)](),'content-Type':'application/json;odata=verbose'},'data':JSON[_0x4c8ed8(0x20a)](_0xb96054),'success':function(_0x2d3717){var _0x39ea11=_0x4c8ed8;_0x379a4a[_0x39ea11(0x314)](_0x2d3717);},'error':function(_0x4e01ca){var _0x31760a=_0x4c8ed8;alert(JSON['stringify'](_0x4e01ca)),_0x379a4a[_0x31760a(0xa0)](_0x4e01ca);}}),_0x379a4a[_0x4c8ed8(0x102)]();}function _0x23d6(_0x149cae,_0x515edf){var _0x1a5bfa=_0x579d();return _0x23d6=function(_0x4e9aea,_0x1332c1){_0x4e9aea=_0x4e9aea-0x72;var _0x467839=_0x1a5bfa[_0x4e9aea];return _0x467839;},_0x23d6(_0x149cae,_0x515edf);}function onChangeSharing(_0x33875e,_0x450ec9,_0xc2d666){var _0x24d04f=_0x5a5f90,_0x43757a=SPClientPeoplePicker[_0x24d04f(0xbf)][_0x33875e],_0x144e06='';_0x43757a[_0x24d04f(0x145)]=function(_0x8aee,_0x2c414b){var _0x59e95f=a86_0x3481,_0x10481d=_0x24d04f;if(_0x2c414b[_0x10481d(0x2e6)]>0x0){_0x144e06='',tempUserId=parseInt(getUserInformation(_0x450ec9)),SharingUserId[_0x59e95f(0x37d)](tempUserId);var _0x13bf32=_0x2c414b[0x0][_0x10481d(0x2aa)][_0x10481d(0x2b8)]('|')[0x2];ShareUserPrincipleMail[_0x10481d(0x203)](_0x2c414b[0x0][_0x59e95f(0x24b)]['split']('|')[0x2]),_0x13bf32[_0x10481d(0x198)]('#')==!![]&&(_0x13bf32=_0x13bf32[_0x10481d(0x2b8)](_0x10481d(0x190))[0x0],_0x13bf32=_0x13bf32[_0x10481d(0x1f2)]('_','@')),SharingUserEmail['push'](_0x13bf32),SharingUserName[_0x59e95f(0x37d)](_0x2c414b[0x0][_0x10481d(0x1c6)]),attachment=_spPageContextInfo['webAbsoluteUrl']+_0x10481d(0x166)+escapeProperly(_0x13bf32),_0x144e06+=_0x10481d(0xd2)+tempUserId+_0x10481d(0x279),_0x144e06+='<span\x20onclick=\x22removeShareUser(this,\x20\x27'+_0x13bf32+_0x59e95f(0x291)+_0x2c414b[0x0][_0x10481d(0x1c6)]+_0x59e95f(0x2bf)+tempUserId+_0x10481d(0x2af),_0x144e06+='<div\x20class=\x22empoyeeimg\x22><img\x20src=\x22'+attachment+_0x10481d(0x22f),_0x144e06+=_0x10481d(0x283)+_0x2c414b[0x0][_0x10481d(0x1c6)]+_0x10481d(0x8c),_0x144e06+='<span\x20class=\x22employeeemail\x22\x20style=\x22cursor:pointer;color:blue\x22\x20onclick=\x22OpenEmail(\x27'+_0x13bf32+_0x10481d(0x7c)+_0x13bf32+_0x10481d(0x15d),_0x144e06+=_0x10481d(0x146),$('#'+_0xc2d666)[_0x10481d(0x2c6)](_0x144e06),EmptyPeoplePicker(_0x450ec9);}else{}};}function shareFile(){var _0x28d337=a86_0x227ab8,_0x2211e7=_0x5a5f90,_0x3ff477=[],_0xb15e52=[],_0x395ac6=!![];sharedUsersIdArrayListItemCollection=[],sharedUsersIdArrayListItemCollection=SharingUserId[_0x2211e7(0x273)](function(_0x4853e3){return _0x4853e3;});var _0x1f6def=$(_0x2211e7(0x271))[_0x2211e7(0x12a)](),_0x5a2d4b=$(_0x2211e7(0x1c7))[_0x2211e7(0x12a)](),_0x150ac6=DocumentId[_0x2211e7(0xaa)](),_0x3e5f0a=$(_0x2211e7(0x1c0))['text']();_0x3ff477=getSharedUsersId(_0x150ac6),_0xb15e52=$[_0x2211e7(0xb4)](_0x3ff477,function(_0x26c990){var _0x259d51=a86_0x3481;return $[_0x259d51(0x361)](_0x26c990,sharedUsersIdArrayListItemCollection)!==-0x1;}),sharedUsersIdArrayListItemCollection=sharedUsersIdArrayListItemCollection[_0x2211e7(0x99)](_0x3ff477),_0x395ac6=ShareFilesFolder(_0x3e5f0a,_0x2211e7(0x16d),'',_0x1f6def),_0x395ac6!=![]&&(_0x395ac6=!![]);if(sharedUsersIdArrayListItemCollection['length']>0x0&&_0x395ac6==!![]){var _0x4ae1f6=$(_0x28d337(0x389))[_0x28d337(0x1ac)]();PermissionStatus==''&&updateDocumentPropertiesOnItemSharing(_0x150ac6,_0x3e5f0a,_0x1f6def,sharedUsersIdArrayListItemCollection,CopySourceURL,![]),GetDocumentsRevoke(_0xb15e52,_0x150ac6);var _0x57c1bc=[];_0x57c1bc=getSharedType(),AddSharedLinkToList(_0x3e5f0a,SharingUserId,_0x150ac6,_0x2211e7(0x16d),$(_0x2211e7(0x271))['val'](),$(_0x28d337(0x364))[_0x2211e7(0x12a)](),_0x57c1bc[0x0],$(_0x28d337(0x276))[_0x2211e7(0x1ee)](),_0x57c1bc[0x1]);if($(_0x2211e7(0x266))[_0x2211e7(0x27a)](_0x2211e7(0x1b5))==!![]&&PermissionStatus==''){var _0x245696=[],_0x5ad708=$(_0x2211e7(0x2b6))[_0x2211e7(0x1ee)]();if(SharingUserEmail[_0x2211e7(0x2e6)]>0x0){var _0xf4260b='';ValidityDateHTML='',$(_0x2211e7(0x281))['val']()!=''&&(ValidityDateHTML=_0x2211e7(0x2de)+moment($(_0x2211e7(0x281))[_0x2211e7(0x12a)]())[_0x2211e7(0x27f)](_0x2211e7(0x7e))+_0x2211e7(0xa6)),(_0xf4260b=_spPageContextInfo[_0x2211e7(0x72)]+_0x2211e7(0x1c3),_0xf4260b=_0xf4260b+_0x2211e7(0x2d0)+$(_0x2211e7(0x12b))[_0x2211e7(0x1ee)]()+_0x2211e7(0xa6)+_0x2211e7(0x2e2)+$(_0x2211e7(0x126))[_0x2211e7(0x1ee)]()+_0x2211e7(0xa6)+_0x2211e7(0xf8)+$('#FileDocType')[_0x2211e7(0x1ee)]()+_0x2211e7(0xa6)+_0x2211e7(0xec)+$(_0x2211e7(0x174))[_0x2211e7(0x1ee)]()+_0x28d337(0x1b0)+_0x28d337(0x2ca)+_0x5ad708+_0x2211e7(0xa6)+_0x2211e7(0x27b)+_spPageContextInfo[_0x28d337(0x35c)]+_0x2211e7(0xa6)+_0x2211e7(0x1e8)+moment(new Date())[_0x2211e7(0x27f)](_0x2211e7(0x7e))+'\x20'+new Date()[_0x2211e7(0x9d)]()[_0x2211e7(0x1f2)](/([\d]+:[\d]{2})(:[\d]{2})(.*)/,_0x2211e7(0x252))+_0x2211e7(0xa6)+ValidityDateHTML+_0x2211e7(0x2c1)+$(_0x2211e7(0x1c2))[_0x2211e7(0x12a)]()+_0x2211e7(0xe5)+_0x2211e7(0x131)+$(_0x2211e7(0x2e3))[_0x28d337(0x1ac)]()+_0x2211e7(0x1b1)+_0x2211e7(0x312),_0xf4260b+=_0x2211e7(0x160));for(var _0x22996f=0x0;_0x22996f<LabelDefaultLangauge[_0x2211e7(0x2e6)];_0x22996f++){_0xf4260b[_0x2211e7(0x198)](LabelDefaultLangauge[_0x22996f][_0x2211e7(0x2aa)])==!![]&&(_0xf4260b=_0xf4260b['replaceAll'](LabelDefaultLangauge[_0x22996f][_0x2211e7(0x2aa)],LabelDefaultLangauge[_0x22996f][_0x2211e7(0x159)]));}}var _0x2d0b65=$(_0x2211e7(0xb0))[_0x2211e7(0x1ee)](),_0x522660;_0x245696=SharingUserEmail[_0x28d337(0x1cc)](function(_0x329aeb){return _0x329aeb;}),_0x522660={'properties':{'__metadata':{'type':_0x28d337(0x288)},'From':_spPageContextInfo[_0x2211e7(0xf1)],'To':{'results':_0x245696},'Body':_0xf4260b,'Subject':_0x2211e7(0x10f)}},SendEmailSharedNotification(_0x522660);}else{var _0x5b1f11=Documentname;Documentname['search'](/\bDocuments\b/)>=0x0&&(_0x5b1f11=_0x2211e7(0x214)),GetMyDocumentsWithFilesFolder(_0x5b1f11),alert(_0x28d337(0x3fd)),$(_0x2211e7(0xb1))['text'](_0x2211e7(0x233)+$(_0x2211e7(0x271))[_0x28d337(0x1ac)]()),$('.txtSharingHistoy')[_0x28d337(0x31e)](),$(_0x28d337(0x320))[_0x2211e7(0x1c9)](_0x2211e7(0x87));}}}function SendEmailSharedNotification(_0x2de53c){var _0x20041a=a86_0x227ab8,_0x440651=_0x5a5f90,_0x4e31ef=_spPageContextInfo[_0x440651(0x92)]+_0x440651(0x7a);$['ajax']({'contentType':_0x440651(0x1e2),'url':_0x4e31ef,'type':_0x440651(0x1eb),'data':JSON[_0x440651(0x20a)](_0x2de53c),'headers':{'Accept':'application/json;odata=verbose','content-type':_0x440651(0x17e),'X-RequestDigest':$(_0x440651(0x16f))[_0x20041a(0x1ac)]()},'success':function(_0x234c83){var _0x176c8e=_0x20041a,_0x1fd17e=_0x440651,_0x2d8ddd=Documentname;Documentname[_0x176c8e(0x39e)](/\bDocuments\b/)>=0x0&&(_0x2d8ddd=_0x1fd17e(0x214)),GetMyDocumentsWithFilesFolder(_0x2d8ddd),alert(_0x1fd17e(0x2bb)),$(_0x1fd17e(0xb1))[_0x1fd17e(0x1ee)](_0x176c8e(0x1ba)+$(_0x1fd17e(0x271))[_0x176c8e(0x1ac)]()),$(_0x1fd17e(0x25b))[_0x176c8e(0x31e)](),$(_0x1fd17e(0x175))[_0x1fd17e(0x1c9)](_0x1fd17e(0x87));},'error':function(_0x214f2f){var _0x131d5f=_0x440651;alert(_0x131d5f(0x232)+JSON[_0x131d5f(0x20a)](_0x214f2f));}});}function BindProjects(){var _0x3ffe0b=a86_0x227ab8,_0x3cd7a2=_0x5a5f90,_0x4203aa='',_0xbfdfae=[];$(_0x3cd7a2(0x1aa))[_0x3cd7a2(0xd0)](_0x4203aa),LoggedUserSPGp=GetSPGroup();var _0x5939fa='';for(var _0xb62995=0x0;_0xb62995<LoggedUserSPGp[_0x3cd7a2(0x2e6)];_0xb62995++){_0x5939fa+=_0x3cd7a2(0x123)+LoggedUserSPGp[_0xb62995]['Id']+'\x27\x20';}_0x5939fa=_0x5939fa[_0x3ffe0b(0x3f7)](0x0,_0x5939fa[_0x3cd7a2(0x2e6)]-0x1)+')';var _0x2266d2=_0x3cd7a2(0x2a8)+_spPageContextInfo[_0x3cd7a2(0xa9)]+'\x27\x20'+_0x5939fa+_0x3ffe0b(0x2b7),_0x7cba09='';$[_0x3cd7a2(0x28d)](getItemsWithQuery(_0x3cd7a2(0x28b),_0x2266d2,_spPageContextInfo[_0x3cd7a2(0x23f)]))[_0x3ffe0b(0x231)](function(_0x46ed2c){var _0x510a00=_0x3ffe0b,_0x7af90c=_0x3cd7a2;_0x46ed2c['length']&&(_0x46ed2c=_0x46ed2c[_0x510a00(0x1cc)](function(_0x3c395e){var _0x519578=_0x510a00,_0x4edf61=_0x23d6;return _0x3c395e[_0x519578(0x3bd)]!=_0x4edf61(0x15f);})),_0x46ed2c=_0x46ed2c[_0x7af90c(0x27d)](_0x38faa2=>_0x38faa2['SharedFrom'])[_0x7af90c(0x273)]((_0x1a4728,_0x4e6852,_0x17fc04)=>_0x17fc04[_0x7af90c(0x19f)](_0x1a4728)===_0x4e6852),$[_0x7af90c(0x245)](_0x46ed2c,function(_0x3e4ef5,_0x225a94){var _0x271830=_0x510a00,_0x520bdf=_0x7af90c,_0x36ed55='',_0x36ed55=_0x520bdf(0x2f5)+_0x225a94+'\x27)';$(_0x520bdf(0xe9))[_0x520bdf(0xd0)]()==''&&initializePeoplePicker(_0x271830(0x1b1),!![]),$(_0x520bdf(0x1e3))[_0x271830(0x269)](_0x520bdf(0x87)),_0x4203aa+=_0x520bdf(0x195)+'<div\x20class=\x22panel-heading\x22>'+_0x520bdf(0x171)+_0x520bdf(0xbe)+_0x36ed55+_0x520bdf(0x141)+_0x520bdf(0x15a)+_0x520bdf(0x260)+_0x520bdf(0x2ea)+_0x225a94+_0x271830(0x380)+_0x520bdf(0x150)+_0x520bdf(0x9c)+_0x520bdf(0xa2)+_0x520bdf(0xa6)+_0x271830(0x1b0);}),$(_0x7af90c(0x1aa))[_0x7af90c(0x2b4)](_0x4203aa);});}function applyFilterProperty(_0x1d9814,_0xf54bcb){var _0x3e1065=a86_0x227ab8,_0x10b3aa=_0x5a5f90;$(_0x10b3aa(0x240))[_0x10b3aa(0xd0)](''),$(_0x10b3aa(0x240))[_0x3e1065(0x34d)](_0xf54bcb),$(_0x10b3aa(0x256))[_0x10b3aa(0xe7)](_0x10b3aa(0x21f)),$(_0x1d9814)[_0x10b3aa(0x2a6)]()[_0x10b3aa(0xe7)](_0x10b3aa(0x21f)),$(_0x1d9814)['addClass'](_0x10b3aa(0x21f)),$(_0x10b3aa(0x16e))[_0x10b3aa(0x1c9)](_0x10b3aa(0x87)),$(_0x10b3aa(0xe9))['html']()==''&&initializePeoplePicker(_0x10b3aa(0x221),!![]),$(_0x10b3aa(0x26a))[_0x10b3aa(0x12a)](_0xf54bcb),$(_0x10b3aa(0x1e3))[_0x10b3aa(0x1c9)](_0x10b3aa(0x87));}
+var arrayLinksDoctype = new Array();
+var LoggedIn_TimeZone = new Date().toString().match(/([A-Z]+[\+-][0-9]+.*)/)[1];
+var to = [];
+var SharingUserEmail = [];
+var SharingUserId = [];
+var SharingUserName = [];
+var ShareHostoryTable = '';
+var SharedMeTable = '';
+var selectedHistoryDoc = [];
+var arrSharedBy = [];
+var arrSharedTo = [];
+var AllApprovers = [];
+var FilePermissions = [];
+var arrAckAllUser = [];
+var currentSharedHistory = [];
+var PermissionStatus = '';
+var ShareUserPrincipleMail = [];
+var currentSharedItemId = '';
+$(document).ready(function () {
+    initializePeoplePicker("SharingPplPicker", true);
+    onChangeSharing('SharingPplPicker_TopSpan', 'SharingPplPicker', 'AddUserPplPicker');
+    $("#tabSharedToMe").click(function () {
+        arrPermission = [];
+        $(".advance_setion").hide();
+        $("#DMSTable,#ButtonArea,#SearchArea").show();
+        waitingDialog.show();
+        $("#FilterShareType").val("All");
+        $("#ShareFilterRef").val("");
+        $("#FilterShareDocType").val("All");
+        $("#ddlShare").val("Shared");
+        $("#ddlAckFilter").val("All");
+        setTimeout(function () {
+            $(".headdingLinks").text('Property Documents');
+            currentSectionType = "SharedWithMe";
+            DMS_Type = 'Shared with Me';
+            $("#divRevokeSharedTbl").hide();
+            //ActionBtnControls();
+            GetDocumentsSharedWithMe('SharedWithMe');
+        }, 100);
+    });
+    $("#checkall").click(function (e) {
+        if (this.checked == true) {
+            $('.chkNotify').prop("checked", "");
+            $('.chkNotify').trigger('click');
+        }
+        else {
+            $('.chkNotify').prop("checked", "");
+            to = [];
+        }
+    });
+    $("#selectAllHist").click(function () {
+        $(".historydocid").prop("checked", $(this).prop("checked"));
+        selectedHistoryDoc = [];
+        selectedHistoryDocrelativeurl = [];
+        $('.historydocid').each(function () {
+            if ($(this).prop("checked") == true) {
+                selectedHistoryDoc.push($(this).val());
+                $("#revokebtn").show();
+            }
+            else {
+                $("#revokebtn").hide();
+            }
+        });
+    });
+    $('.closeShareHis').click(function (e) {
+        currentSharedItemId = '';
+        currentSharedHistory = [];
+        $("#sharedAs").val('All');
+    });
+    $("#tabSharedByMe").click(function () {
+        arrPermission = [];
+        $(".advance_setion").hide();
+        $("#DMSTable,#ButtonArea,#SearchArea").show();
+        waitingDialog.show();
+        $("#divPendingAck").hide();
+        $("#FilterShareType").val("All");
+        $("#ShareFilterRef").val("");
+        $("#FilterShareDocType").val("All");
+        $("#ddlShare").val("Shared");
+        $("#ddlAckFilter").val("All");
+        setTimeout(function () {
+            $(".headdingLinks").text('Shared by Me');
+            currentSectionType = "SharedByMe";
+            DMS_Type = 'Shared by Me';
+            $("#divRevokeSharedTbl").show();
+            //ActionBtnControls();
+            GetDocumentsSharedWithMe('SharedByMe');
+        }, 100);
+    });
+    $("#tabArchive").click(function () {
+        $(".advance_setion").hide();
+        $("#DMSTable,#ButtonArea,#SearchArea").show();
+        arrPermission = [];
+        waitingDialog.show();
+        $("#FilterShareType").val("All");
+        $("#ShareFilterRef").val("");
+        $("#FilterShareDocType").val("All");
+        $("#ddlShare").val("Shared");
+        $("#ddlAckFilter").val("All");
+        setTimeout(function () {
+            $(".headdingLinks").text('Archive');
+            currentSectionType = "Archive";
+            DMS_Type = 'Archive';
+            $("#divRevokeSharedTbl").hide();
+            //ActionBtnControls();
+            GetDocumentsSharedWithMe('Archive');
+        }, 100);
+    });
+    $('#shreduser').change(function (e) {
+        FilterShareHistory(DocumentId, $("#FilePath").text(), $("#FileTitle").text(), $("#FileDocType").text(), $("#FileName").text(), "File", 'Filter', currentSharedItemId);
+    });
+    $('#sharedAs').change(function (e) {
+        FilterShareHistory(DocumentId, $("#FilePath").text(), $("#FileTitle").text(), $("#FileDocType").text(), $("#FileName").text(), "File", 'Filter', currentSharedItemId);
+    });
+    $("#btnShareFilter").click(function () {
+        waitingDialog.show();
+        setTimeout(function () {
+            if ($(".headdingLinks").text() == "Shared by Me") {
+                GetDocumentsSharedFilter('SharedByMe');
+            }
+            else if ($(".headdingLinks").text() == "Archive") {
+                GetDocumentsSharedFilter('Archive');
+            }
+            else {
+                GetDocumentsSharedFilter('SharedWithMe');
+            }
+        }, 100);
+    });
+    $(".CloseShareFilter").click(function () {
+        if ($("#pplSharedBy_TopSpan_ResolvedList").text() != "") {
+            EmptyPeoplePicker('pplSharedBy');
+        }
+        $("#FilterShareType").val("All");
+        $("#ShareFilterRef").val("");
+        $("#FilterShareDocType").val("All");
+        $("#ddlShare").val("Shared");
+        $("#ddlAckFilter").val("All");
+        $("#filterSharedFrom").val("");
+
+    });
+    $('#btnAddToArchive').click(function () {
+        var arrTempFolder = [];
+        if (arrFileFolder.length > 0) {
+            AddToArchive();
+        }
+        else {
+            alert("Please select any file/folder first.");
+            return false;
+        }
+    });
+    $('#btnRemoveArchive').click(function () {
+        var arrTempFolder = [];
+        if (arrFileFolder.length > 0) {
+            RemoveArchive();
+        }
+        else {
+            alert("Please select any file/folder first.");
+            return false;
+        }
+    });
+    $("#SharedFilterBox").click(function () {
+        $("#btnShareFilter").show();
+        $("#btnSharedDocFilter").hide();
+        $(".NewFilter").show();
+        if ($('#FilterShareDocType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        if ($(".headdingLinks").text() == "Shared by Me") {
+            $("#filterShareText").text('Shared To:');
+        }
+        else {
+            $("#filterShareText").text("Shared By:");
+        }
+        if ($("#pplSharedBy").html() == '') {
+            initializePeoplePicker("pplSharedBy", true);
+        }
+    });
+    $("#btnRevokeSharedTbl").click(function () {
+        if (arrFileFolder.length > 0) {
+            waitingDialog.show();
+            setTimeout(function () {
+                RevokeMultiPermission();
+            }, 100);
+        }
+        else {
+            alert("Please select any file first.");
+            return false;
+        }
+    });
+    $("#divShare").click(function () {
+        var arrTempFolder = [];
+        SharingUserEmail = [];
+        ShareUserPrincipleMail = [];
+        SharingUserId = [];
+        SharingUserName = [];
+        $(".parentremove").remove();
+        arrTempFolder = arrFileFolder.filter(function (obj) {
+            return obj.type.toLowerCase() == "folder";
+        });
+        if (arrTempFolder.length > 0) {
+            $("#NeedAckBox").hide();
+        }
+
+        if (arrFileFolder.length > 0) {
+            $('#expiredats').datepicker("destroy");
+            $('#expiredats').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                minDate: 1
+            });
+            $('#expiredats').datepicker("option", "dateFormat", "MM dd, yy");
+            $("#btnShareMulti").show();
+            $("#btnShare").hide();
+        }
+        else {
+            alert("Please select any file or folder first.");
+            return false
+        }
+    });
+    $("#btnShareMulti").click(function () {
+        if (ShareFileValidation() == true) {
+            shareFileMulti();
+        }
+    });
+    $('#sharedWithPermission').on('change', function () {
+        var optionValue = $('#sharedWithPermission option:selected').attr("value");
+        $('.redonlysec').each(function () {
+            var stalt = $(this).attr('alt');
+            if (optionValue == stalt) {
+                $(this).show().siblings().hide();
+            }
+        });
+    });
+    $(".btnClosePopup").click(function () {
+        $("#txtShareMessage").val('');
+        $("#sharedWithPermission").val('Contribute');
+        $("#sharedWithPermission").trigger("change");
+        $("#forever").prop("checked", "checked");
+        $("#expiredon").prop("checked", "");
+        $('#expiredats').removeClass('activating');
+        $("#notifymail").prop("checked", "");
+        $(".chkGpName").prop("checked", "");
+        $(".chkClientName").prop("checked", "");
+        $(".chkProjectName").prop("checked", "");
+        $("#Acknowledgment").prop("checked", "");
+        $(".txtselect").text("Select");
+        $("#sharewith").val('--Select--');
+        $("#sharewith").trigger("change");
+        $("#NeedAckBox").show();
+    });
+    $("#btnShareFile").click(function () {
+        $('#expiredats').datepicker("destroy");
+        $('#expiredats').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            minDate: 1
+        });
+        $('#expiredats').datepicker("option", "dateFormat", "MM dd, yy");
+        $("#btnShareMulti").hide();
+        $("#btnShare").show();
+    });
+    $("#btnShare").click(function () {
+        if (ShareFileValidation() == true) {
+            shareFile();
+        }
+    });
+    $('#txtPendingCount').click(function (e) {
+        if ($('#FilterShareDocType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        if ($("#pplSharedBy").html() == '') {
+            initializePeoplePicker("pplSharedBy", true);
+        }
+        $(".CloseShareFilter").trigger("click");
+        $("#ddlAckFilter").val("Pending");
+        $("#btnShareFilter").trigger("click");
+    });
+});
+
+//Get all the Documents which are shared with me/shared by me.
+function GetDocumentsSharedWithMe(SectionName) {
+    //Geenrating the THead of table
+    $("#generateBradCumbNew").empty();
+    $("#DMSTable").empty().html('<table class="table mb-0 custom-table" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+    var ColumnName = "";
+    var sharedWithMeTR = '';
+    ColumnName += '<th class="text-center border-bottom-0 w-2">' +
+        '<label class="checkbox-inline hpx-20"><input type="checkbox" id="selectAllChk" value=""></label>' +
+        '</th>';
+    $("#theadItem").empty();
+    if (SectionName == 'SharedByMe') {
+        var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared From', 'Permission', '',''];
+    }
+    
+    else {
+        //var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Shared From', 'Permission', ''];
+       // var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Permission', ''];
+       var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Permission',''];
+    }
+    for (var i = 0; i < SharedMeColNames.length; i++) {
+        ColumnName += '<th data-localize="' + SharedMeColNames[i] + '">' + SharedMeColNames[i] + '</th>';
+    }
+    $("#theadItem").append(ColumnName);
+    LoggedUserSPGp = GetSPGroup();
+    var SharedUserFilter = "";
+    for (var gp = 0; gp < LoggedUserSPGp.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + LoggedUserSPGp[gp].Id + "' ";
+    }
+    /*var EveryoneUserId = getTargetGroupId();
+    for (var gp = 0; gp < EveryoneUserId.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + EveryoneUserId[gp] + "' ";
+    }*/
+
+    SharedUserFilter = SharedUserFilter.substring(0, SharedUserFilter.length - 1) + ")";
+
+    if (SectionName == 'SharedByMe') {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(Author/EMail eq '" + _spPageContextInfo.userEmail + "' and IsArchive ne 1) ";
+    }
+    else if (SectionName == "Archive") {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and (PermissionType eq 'Read' or PermissionType eq 'Contribute' or PermissionType eq 'Restricted View') and (PermissionStatus ne 'Deleted') and (IsArchive eq 1)";
+    }
+    else {
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and (PermissionType eq 'Read' or PermissionType eq 'Contribute' or PermissionType eq 'Restricted View' or PermissionStatus eq 'Revoked') and (PermissionStatus ne 'Deleted' and IsArchive ne 1)";
+    }
+    $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {
+        if (SectionName == 'SharedByMe') {
+            arrSharedBy = items.filter(function (f) { return f; });
+        }
+        else {
+            arrSharedTo = items.filter(function (f) { return f; });
+        }
+        if (items.length) {
+            $("#ButtonArea").show();
+            if (SectionName == 'SharedByMe') {
+                SharedByMeItems(items);
+            }
+            else {
+                items = items.filter(function (obj) { //Filter array on the basis of PermissionStatus 
+                    return obj.PermissionStatus != "Revoked";
+                });
+                SharedWithMeItems(items, 'SharedWithMe');
+            }
+            waitingDialog.hide();
+        }
+        else {
+            $("#ButtonArea").hide();
+            $("#DivAppInCount").hide();
+           $("#DivAppOutCount").hide();
+            $("#divPendingAck").hide();
+            waitingDialog.hide();
+            sharedWithMeTR += '<tr><td colspan="12" style="text-align:center;">No file or folder found.</td></tr>';
+            $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+            
+        }
+    });
+}
+//Get all the Documents which are shared with me/shared by me.
+function GetDocumentsSharedWithMe_Temp(SectionName) {
+   
+    LoggedUserSPGp = GetSPGroup();
+    var SharedUserFilter = "";
+    for (var gp = 0; gp < LoggedUserSPGp.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + LoggedUserSPGp[gp].Id + "' ";
+    }
+    SharedUserFilter = SharedUserFilter.substring(0, SharedUserFilter.length - 1) + ")";
+
+    
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and (PermissionType eq 'Read' or PermissionType eq 'Contribute' or PermissionType eq 'Restricted View' or PermissionStatus eq 'Revoked') and (PermissionStatus ne 'Deleted' and IsArchive ne 1)";
+    
+    $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {        
+        if (items.length) {
+            items = items.filter(function (obj) { //Filter array on the basis of PermissionStatus 
+                    return obj.PermissionStatus != "Revoked";
+                });
+                //SharedWithMeItems(items, 'SharedWithMe');
+            }
+          
+    });
+}
+
+//bind Shared with me Items
+function SharedWithMeItems(items) {
+    arrFileFolder = [];
+    var LoggedUserSPGp = [],
+        IsEveryone = [],
+         ChatBoxHTML = '',
+        AckCounter = 0;
+    ActionHTML = '';
+
+    var HistoryAction = "SharedWithMe";
+    var sharedWithMeTR = '';
+    for (var i = 0; i < items.length; i++) {
+        var DocumentNo ="";//Bhawana
+        var DocRefNo=(items[i].DocumentNo!=null&&items[i].DocumentNo!='null')?items[i].DocumentNo:"";
+        if(items[i].MetaDataRestricted==true ||items[i].MetaDataRestricted=='true') 
+        {}
+        else
+        {
+            DocumentNo = DocRefNo;
+        }
+
+        var DocumentType = items[i].DocumentType ? items[i].DocumentType : "";
+        var Details = items[i].Details ? items[i].Details : "";
+        var sourceDocType = items[i].DocumentType ? items[i].DocumentType : "";
+        var PermissionType = items[i].PermissionType ? items[i].PermissionType : "";
+
+        var PermissionStatus = items[i].PermissionStatus;
+        if (PermissionStatus != "Revoked" && PermissionStatus != "Deleted") {
+            PermissionStatus = PermissionType;
+        }
+        else {
+            PermissionStatus = PermissionStatus.fontcolor("Red");
+        }
+        if (sourceDocType == "--select--" || sourceDocType == "-Select-") {
+            sourceDocType = '';
+        }
+        var Title = items[i].Title ? items[i].Title : "";
+        var SourceDocTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
+        var sharedBy = items[i].Author.Title
+        var FileServerRelativeUrl = items[i].ServerRedirectedEmbedURL;
+        if (FileServerRelativeUrl == null || FileServerRelativeUrl == "") {
+            FileServerRelativeUrl = items[i].DocumentURL;//items[i].File.ServerRelativeUrl;
+        }
+        FileServerRelativeUrl = FileServerRelativeUrl.replace("interactivepreview", "default&mobileredirect=true");
+        var documentLink = "";
+        var splitDocTypeLink = "";
+        var downloadlink = "";
+        var FileExtension = "." + Title.substring(Title.lastIndexOf('.') + 1);
+        sharedFrom = getSharedFromValue(items[i].SharedType, items[i].SharedFrom);
+        if (DocumentType.toLowerCase() != "folder") {
+            Icon = "file.png";
+            if (".docx" == FileExtension || ".doc" == FileExtension) {
+                Icon = "docx.png";
+            } else if (".pdf" == FileExtension) {
+                Icon = "pdf.png";
+            } else if (".jpg" == FileExtension || ".psd" == FileExtension || ".tiff" == FileExtension || ".gif" == FileExtension || ".bmp" == FileExtension || ".jpeg" == FileExtension || ".png" == FileExtension) {
+                Icon = "image-icon.png";
+            } else if (".xlsx" == FileExtension || ".xls" == FileExtension) {
+                Icon = "xlsx.png";
+            } else if (".pptx" == FileExtension || ".ppt" == FileExtension) {
+                Icon = "pptx.png";
+            } else if (".txt" == FileExtension) {
+                Icon = "txt.png";
+            } else if (".csv" == FileExtension) {
+                Icon = "CSV.png";
+            } else if (".zip" == FileExtension || ".rar" == FileExtension || ".7z" == FileExtension || ".arz" == FileExtension || ".cab" == FileExtension || ".rpm" == FileExtension || ".wim" == FileExtension) {
+                Icon = "ZIP.png";
+            } else if (".mp4" == FileExtension || ".wmv" == FileExtension || ".avi" == FileExtension || ".mpeg" == FileExtension || ".flv" == FileExtension || ".mov" == FileExtension || ".wav" == FileExtension || ".ogv" == FileExtension) {
+                Icon = "video-files.png";
+            } else if (".mp3" == FileExtension || ".wma" == FileExtension || ".aac" == FileExtension || ".pcm" == FileExtension) {
+                Icon = "audio.png";
+            }
+
+            if (items[i].PermissionStatus != "Revoked" && items[i].PermissionStatus != "Deleted") {
+                var SiteURL = '';
+                if (items[i].SharedType == null || items[i].SharedType == "Personal" || items[i].SharedType == "My-DMS") {
+                    DMS_Type = "My Documents";
+                }
+                else {
+                    DMS_Type = items[i].SharedType + ': ' + items[i].SharedFrom;
+                }
+                if (items[i].SiteURL == "null" || items[i].SiteURL == null || items[i].SiteURL == "undefined" || items[i].SiteURL == undefined) {
+                    if (encodeURI(items[i].DocumentURL).indexOf("DepartmentalDMS") != -1) {
+                        SiteURL = window.location.origin + encodeURI(items[i].DocumentURL).split('DepartmentalDMS')[0];
+                    }
+                    else {
+                        SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                    }
+                }
+                else {
+                    SiteURL = items[i].SiteURL;
+                }
+                var NullValue = 'NullValue';
+                var shareMsgg=(items[i].SharedMessage!=""&&items[i].SharedMessage!=null&&items[i].SharedMessage!=undefined&&items[i].SharedMessage!='null'&&items[i].SharedMessage!='undefined')?fixedEncodeURIComponent(items[i].SharedMessage):"";
+                documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + items[i].DocumentURL + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + shareMsgg + '\');">' + Title + '</a>';//Bhawana
+                downloadlink = "<a href='" + encodeURI(items[i].DocumentURL) + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
+            }
+            else {
+                documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '">' + Title + '</a>';
+            }
+             //14 April 23
+            if (items[i].CommentCount != null && items[i].CommentCount != "null" && items[i].CommentCount != 0 && items[i].CommentCount != "0") {
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+            }
+            else {
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+            }
+        }
+        else {
+            ChatBoxHTML = '';
+            Icon = "folder.png";
+            var LibraryType = '';
+            if (items[i].SharedType == null || items[i].SharedType == "Personal" || items[i].SharedType == "My-DMS") {
+                LibraryType = "My Documents";
+            }
+            else {
+                LibraryType = items[i].SharedType + ': ' + items[i].SharedFrom;
+            }
+            var tempStatus = PermissionStatus;
+            if (PermissionStatus == '<font color="Red">Revoked</font>') {
+                tempStatus = "Revoked";
+            }
+            RunBreadCrumb = true;
+            documentLink += '<a href="javascript:void(0);" rel="' + items[i].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[i].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[i].SiteURL + '\', \'' + items[i].LibraryName + '\', \'' + items[i].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[i].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
+            SourceDocTitle = Title;   //Title For Folder
+            sourceDocType = "Folder";
+        }
+
+        if (items[i].NeedAcknowledgement == true) {
+            var AckValue = AckUserStatus(items[i].Id, _spPageContextInfo.userEmail, items[i].DocumentURL, items[i].SiteURL, items[i].PermissionType, items[i].LibraryName, items[i].SharedFrom);
+        }
+        else {
+            var AckValue = '';
+        }
+        if (AckValue.indexOf("DisplayFileProperty") !== -1) {
+            AckCounter++;
+        }
+        if ($("#ddlAckFilter").val() == "Acknowledged") {
+            if (AckValue.indexOf("Acknowledged") !== -1) {
+                sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
+                items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + DocumentNo + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+               // sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
+                sharedWithMeTR += '' + AckValue + '</div></td>';
+               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+               // sharedWithMeTR += '</div></td></tr>';
+               sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
+               sharedWithMeTR += '</tr>';
+            }
+        }
+        else if ($("#ddlAckFilter").val() == "Pending") {
+            if (AckValue.search(/\bAcknowledge\b/) >= 0) {
+                sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
+                items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + DocumentNo + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+               // sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
+                sharedWithMeTR += '' + AckValue + '</div></td>';
+               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+                //sharedWithMeTR += '</div></td></tr>';
+                sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
+                sharedWithMeTR += '</tr>';
+            }
+        }
+
+        else {
+            sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
+            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
+            items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + DocumentNo + '</div></td>';
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+            //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
+            sharedWithMeTR += '' + AckValue + '</div></td>';
+           // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+           // sharedWithMeTR += '</div></td></tr>';
+           sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
+            sharedWithMeTR += '</tr>';
+
+        }
+    }
+    if (MyDoctable != '') {
+        MyDoctable.destroy();
+    }
+    $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+    if (AckCounter == 0) {
+        $("#divPendingAck").hide();
+    }
+    else {
+        $("#txtPendingCount").text(AckCounter);
+        $("#divPendingAck").show();
+    }
+    $(".chkShareToMe").click(function () {
+        var Properties = this.value.split(',');
+        if (this.checked == true) {
+            arrFileFolder.push({
+                SharedItemId: Properties[0].trim(),
+                type: Properties[1].trim(),
+                SharedTo: Properties[2].trim(),
+                DocumentId: Properties[3].trim(),
+                ServerURL: Properties[4].trim(),
+                userOrgId: Properties[5].trim(),
+                SiteURL: Properties[6].trim()
+            });
+        }
+        else {
+            var selected = this.value;
+            arrFileFolder = arrFileFolder.filter(function (obj) {
+                return obj.SharedItemId != Properties[0].trim();
+            });
+        }
+    });
+    $("#selectAllChk").click(function (e) {
+        waitingDialog.show();
+        setTimeout(function () {
+            //if (this.checked == true) //Bhawana
+            if($("#selectAllChk").prop('checked')==true){
+                $('.chkShareToMe').prop("checked", "");
+                $('.chkShareToMe').trigger('click');
+            }
+            else {
+                $('.chkShareToMe').prop("checked", "");
+                arrFileFolder = [];
+            }
+            waitingDialog.hide();
+        }, 100);
+    });
+    Tableagination();
+}
+
+
+//bind Shared by me Items
+function SharedByMeItems(array) {
+    arrFileFolder = [];
+    var LoggedUserSPGp = [],
+        arrDuplicateFile = [],
+        arrRevoked = [],
+        IsEveryone = [],
+        ActionHTML = '',
+         ChatBoxHTML = '',
+        PermissionStatus = 'Single',
+        items = [],
+        HistoryAction = "SharedByMe";
+    var sharedWithMeTR = '';
+    for (var i = 0; i < array.length; i++) {
+        array[i].IsBlock = "No";
+        PermissionStatus = 'Single';
+        var documentLink = "";
+        var splitDocTypeLink = "";
+        var downloadlink = "";
+        if (jQuery.inArray(array[i].DocumentID, arrDuplicateFile) == '-1') {
+            arrDuplicateFile.push(array[i].DocumentID);
+            items = array.filter(function (obj) { //filter the array file-wise
+                return obj.DocumentID == array[i].DocumentID;
+            });
+            var Title = items[0].Title;
+            if (items.length > 1) {
+                PermissionStatus = "Multiple";
+            }
+            //to check if all the permission status are revoked --------
+            arrRevoked = items.filter(function (obj) { //filter the array file-wise
+                return obj.PermissionStatus != "Revoked" && obj.PermissionStatus != "Deleted";
+            });
+            if (arrRevoked.length == 0) {
+                PermissionStatus = "All revoked";
+            }
+
+            //----------------------------------------------------------
+            var DocumentNo = items[0].DocumentNo ? items[0].DocumentNo : "";
+            var sharedBy = items[0].Author.Title;
+            var DocumentType = items[0].DocumentType ? items[0].DocumentType : "";
+            var Details = items[0].Details ? items[0].Details : "";
+            var sourceDocType = items[0].DocumentType ? items[0].DocumentType : "";
+            if (sourceDocType == "--select--" || sourceDocType == "-Select-") {
+                sourceDocType = '';
+            }
+            var SourceDocTitle = items[0].SharedFileTitle ? items[0].SharedFileTitle : "";
+            var FileServerRelativeUrl = items[0].ServerRedirectedEmbedURL;
+            if (FileServerRelativeUrl == null || FileServerRelativeUrl == "") {
+                FileServerRelativeUrl = items[0].DocumentURL;
+            }
+            FileServerRelativeUrl = FileServerRelativeUrl.replace("interactivepreview", "default&mobileredirect=true");
+            var FileExtension = "." + Title.substring(Title.lastIndexOf('.') + 1);
+            sharedFrom = getSharedFromValue(items[0].SharedType, items[0].SharedFrom);
+            if (DocumentType.toLowerCase() != "folder") {
+                Icon = "file.png";
+                if (".docx" == FileExtension || ".doc" == FileExtension) {
+                    Icon = "docx.png";
+                } else if (".pdf" == FileExtension) {
+                    Icon = "pdf.png";
+                } else if (".jpg" == FileExtension || ".psd" == FileExtension || ".tiff" == FileExtension || ".gif" == FileExtension || ".bmp" == FileExtension || ".jpeg" == FileExtension || ".png" == FileExtension) {
+                    Icon = "image-icon.png";
+                } else if (".xlsx" == FileExtension || ".xls" == FileExtension) {
+                    Icon = "xlsx.png";
+                } else if (".pptx" == FileExtension || ".ppt" == FileExtension) {
+                    Icon = "pptx.png";
+                } else if (".txt" == FileExtension) {
+                    Icon = "txt.png";
+                } else if (".csv" == FileExtension) {
+                    Icon = "CSV.png";
+                } else if (".zip" == FileExtension || ".rar" == FileExtension || ".7z" == FileExtension || ".arz" == FileExtension || ".cab" == FileExtension || ".rpm" == FileExtension || ".wim" == FileExtension) {
+                    Icon = "ZIP.png";
+                } else if (".mp4" == FileExtension || ".wmv" == FileExtension || ".avi" == FileExtension || ".mpeg" == FileExtension || ".flv" == FileExtension || ".mov" == FileExtension || ".wav" == FileExtension || ".ogv" == FileExtension) {
+                    Icon = "video-files.png";
+                } else if (".mp3" == FileExtension || ".wma" == FileExtension || ".aac" == FileExtension || ".pcm" == FileExtension) {
+                    Icon = "audio.png";
+                }
+                var SiteURL = '';
+                if (items[0].SharedType == null || items[0].SharedType == "Personal" || items[0].SharedType == "My-DMS") {
+                    DMS_Type = "My Documents";
+                }
+                else {
+                    DMS_Type = items[0].SharedType + ': ' + items[0].SharedFrom;
+                }
+                if (items[0].SiteURL == "null" || items[0].SiteURL == null || items[0].SiteURL == "undefined" || items[0].SiteURL == undefined) {
+                    if (encodeURI(items[0].DocumentURL).indexOf("DepartmentalDMS") != -1) {
+                        SiteURL = window.location.origin + encodeURI(items[0].DocumentURL).split('DepartmentalDMS')[0];
+                    }
+                    else {
+                        SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                    }
+                }
+                else {
+                    SiteURL = items[0].SiteURL;
+                }
+                var NullValue = 'NullValue';
+                var shareMsgg=(items[0].SharedMessage!=""&&items[0].SharedMessage!=undefined&&items[0].SharedMessage!=null&&items[0].SharedMessage!='null'&&items[0].SharedMessage!='undefined')?fixedEncodeURIComponent(items[0].SharedMessage):"";//24 April 23
+                documentLink = '<a href="javascript:void(0);" name="' + items[0].DocumentURL + '" rel="' + items[0].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + items[0].DocumentURL + '\', \'' + items[0].Id + '\', \'' + NullValue + '\',\''+items[0].LibraryURL+'\',\'' + items[i].MetaDataRestricted + '\', \'' + shareMsgg + '\');">' + Title + '</a>';//Bhawana
+                downloadlink = "<a href='" + encodeURI(items[0].DocumentURL) + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
+
+                 //14 April 23
+               if (items[0].CommentCount != null && items[0].CommentCount != "null" && items[0].CommentCount != 0 && items[0].CommentCount != "0") {
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                }
+                else {
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                }
+            }
+            else {
+                ChatBoxHTML = '';
+                Icon = "folder.png";
+                var LibraryType = '';
+                if (items[0].SharedType == null || items[0].SharedType == "Personal" || items[0].SharedType == "My-DMS") {
+                    LibraryType = "My Documents";
+                }
+                else {
+                    LibraryType = items[0].SharedType + ': ' + items[0].SharedFrom;
+                }
+                var tempStatus = PermissionStatus;
+                if (PermissionStatus == 'All revoked') {
+                    tempStatus = "Revoked";
+                }
+                RunBreadCrumb = true;
+                documentLink += '<a href="javascript:void(0);" rel="' + items[0].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[0].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[0].SiteURL + '\', \'' + items[0].LibraryName + '\', \'' + items[0].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[0].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
+                SourceDocTitle = Title;   //Title For Folder
+                sourceDocType = "Folder";
+            }
+            if (PermissionStatus == "All revoked") {
+                sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" id ="ShareToMe' + i + '" class="chkShareToMe" disabled="disabled"><label for="ShareToMe' + i + '">';
+            }
+            else {
+                sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[0].Id + ', ' + items[0].DocumentType + ', ' + items[0].SharedGroup + ', ' + items[0].DocumentID + ', ' + items[0].DocumentURL + ', ' + items[0].SharedUsers.results[0].ID + ', ' + items[0].SiteURL + ', ' + items[0].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
+            }
+            //check if any time file/folder shared to 'Everyone'
+            if (PermissionStatus != "All revoked") {
+                IsEveryone = items.filter(function (obj) { //filter the array file-wise
+                    return obj.SharedGroup == "Everyone" && (obj.PermissionStatus != "Revoked" && obj.PermissionStatus != "Deleted");
+                });
+                var temparray = items.filter(function (obj) { //filter the array file-wise
+                    return (obj.PermissionStatus != "Revoked" && obj.PermissionStatus != "Deleted");
+                });
+                if (IsEveryone.length > 0 && IsEveryone.length == temparray.length) {
+                    ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                }
+                else {
+                    if (IsEveryone.length > 0 && IsEveryone.length != items.length) {
+                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')"><img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[0].Id + '\')">';
+                    }
+                    else {
+                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                    }
+                }
+            }
+            else {
+                ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+            }
+            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
+            items[0].SharedFileTitle = items[0].SharedFileTitle ? items[0].SharedFileTitle : "";
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[0].SharedFileTitle + '</div></td>';
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + DocumentNo + '</div></td>';
+            sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
+            //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+            if (PermissionStatus == "All revoked") {
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"><img src="../SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;"></div></td>';
+            }
+            else {
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '</div></td>';
+            }
+            sharedWithMeTR += '<td class="text-left"><div class="ShareAction">'+ ActionHTML + '</div>' + ChatBoxHTML + '</td></tr>'; 
+        }
+    }
+    if (MyDoctable != '') {
+        MyDoctable.destroy();
+    }
+    $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+    $(".chkShareToMe").click(function () {
+        var Properties = this.value.split(',');
+        if (this.checked == true) {
+            arrFileFolder.push({
+                SharedItemId: Properties[0].trim(),
+                type: Properties[1].trim(),
+                SharedTo: Properties[2].trim(),
+                DocumentId: Properties[3].trim(),
+                ServerURL: Properties[4].trim(),
+                userOrgId: Properties[5].trim(),
+                SiteURL: Properties[6].trim()
+            });
+        }
+        else {
+            var selected = this.value;
+            arrFileFolder = arrFileFolder.filter(function (obj) {
+                return obj.SharedItemId != Properties[0].trim();
+            });
+        }
+    });
+    $("#selectAllChk").click(function (e) {
+        waitingDialog.show();
+        setTimeout(function () {
+            //if (this.checked == true)//Bhawna
+            if($('#selectAllChk').prop('checked')==true)
+             {
+                $('.chkShareToMe').prop("checked", "");
+                $('.chkShareToMe').trigger('click');
+            }
+            else {
+                $('.chkShareToMe').prop("checked", "");
+                arrFileFolder = [];
+            }
+            waitingDialog.hide();
+        }, 100);
+    });
+    Tableagination();
+}
+
+
+//to find the Shared_From value
+function getSharedFromValue(SharedType, SharedFrom) {
+    if (SharedType == "Personal" || SharedType == null || SharedType == "null" || SharedType == "My-DMS") {
+        if (SharedFrom == null) {
+            return (SharedType = "My-DMS");
+        }
+        else {
+            return "My-DMS" + ": " + SharedFrom;
+        }
+    }
+    else {
+        return (SharedType + ": " + SharedFrom);
+    }
+}
+
+//Get all the sub-File/Folder shared with me
+function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+    var ChkCount = 1;
+    var ColumnName = "";
+    $("#DMSTable").empty().html('<table class="table mb-0 custom-table" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+    ColumnName += '<th class="text-center border-bottom-0 w-2">' +
+        '<label class="checkbox-inline hpx-20"><input type="checkbox" id="selectAllChk" value=""></label>' +
+        '</th>';
+    if ($(".headdingLinks").text() == 'Shared by Me') {
+        var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared From', 'Permission', ''];
+    }
+    else {
+       //var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Shared From', 'Permission', ''];
+       var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Permission'];
+    }
+    for (var i = 0; i < SharedMeColNames.length; i++) {
+        ColumnName += '<th data-localize="' + SharedMeColNames[i] + '">' + SharedMeColNames[i] + '</th>';
+    }
+    $("#theadItem").empty().append(ColumnName);
+    if (SiteURL == "null" || SiteURL == null || SiteURL == "undefined" || SiteURL == undefined) {
+        if (folderUrl.indexOf("DepartmentalDMS") != -1) {
+            SiteURL = window.location.origin + folderUrl.split('DepartmentalDMS')[0];
+        }
+        else {
+            SiteURL = _spPageContextInfo.webAbsoluteUrl;
+        }
+    }
+    var documentLink = '';
+    var sharedWithMeTR = '';
+    var Ownurl = SiteURL + "/_api/Web/GetFolderByServerRelativeUrl('" + folderUrl + "')?$select=ID,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$orderby=Modified desc";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var files = data.d.Files.results;
+            var folders = data.d.Folders.results;
+            if (files.length == 0 && folders.length == 0) {
+                waitingDialog.hide();
+                sharedWithMeTR += '<tr><td colspan="12" style="text-align:center;">No file or folder found.</td></tr>';
+                $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+            }
+            else {
+                for (var i = 0; i < folders.length; i++) {
+                    Icon = "folder.png";
+                    var SubfolderUrl = folderUrl + '/' + folders[i].Name;
+                    var RunBreadCrumb = true;
+                    var BlankValueParam = '';
+                    FileType = "folder";
+                    documentLink = '<a href="javascript:void(0);" rel="' + Action.rel + '" onclick="GetSharedFolderDocuments(this, \'' + SubfolderUrl + '\', \'' + PermissionType + '\', \'' + SiteURL + '\', \'' + LibraryName + '\', \'' + ItemTitle + '\', \'' + ItemRef + '\', \'' + ItemDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\')" class="doc_icon">' + folders[i].Name + '</a>';
+                    var IsBlockHTML = '<td class="dwnld_cell" style="text-align:center"></td>';
+                    if (IsBlock == "Yes") {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe" disabled="disabled"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    else {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    ChkCount++;
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<td class="text-left">' + documentLink + '';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">Folder</div></td>';
+                    if ($(".headdingLinks").text() != 'Shared by Me') {
+                        sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+                    }
+                    else {
+                        //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"></div></td>';
+                    }
+                   // sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionType + '</div></td>';
+                    //sharedWithMeTR += IsBlockHTML + '</tr>';
+                }
+                for (var i = 0; i < files.length; i++) {
+                    var FileExtension = "." + files[i].Name.substring(files[i].Name.lastIndexOf('.') + 1);
+                    Icon = "file.png";
+                    if (".docx" == FileExtension || ".doc" == FileExtension) {
+                        Icon = "docx.png";
+                    } else if (".pdf" == FileExtension) {
+                        Icon = "pdf.png";
+                    } else if (".jpg" == FileExtension || ".psd" == FileExtension || ".tiff" == FileExtension || ".gif" == FileExtension || ".bmp" == FileExtension || ".jpeg" == FileExtension || ".png" == FileExtension) {
+                        Icon = "image-icon.png";
+                    } else if (".xlsx" == FileExtension || ".xls" == FileExtension) {
+                        Icon = "xlsx.png";
+                    } else if (".pptx" == FileExtension || ".ppt" == FileExtension) {
+                        Icon = "pptx.png";
+                    } else if (".txt" == FileExtension) {
+                        Icon = "txt.png";
+                    } else if (".csv" == FileExtension) {
+                        Icon = "CSV.png";
+                    } else if (".zip" == FileExtension || ".rar" == FileExtension || ".7z" == FileExtension || ".arz" == FileExtension || ".cab" == FileExtension || ".rpm" == FileExtension || ".wim" == FileExtension) {
+                        Icon = "ZIP.png";
+                    } else if (".mp4" == FileExtension || ".wmv" == FileExtension || ".avi" == FileExtension || ".mpeg" == FileExtension || ".flv" == FileExtension || ".mov" == FileExtension || ".wav" == FileExtension || ".ogv" == FileExtension) {
+                        Icon = "video-files.png";
+                    } else if (".mp3" == FileExtension || ".wma" == FileExtension || ".aac" == FileExtension || ".pcm" == FileExtension) {
+                        Icon = "audio.png";
+                    }
+                    var NullValue = 'NullValue';
+                  //  documentLink = '<a href="javascript:void(0);" name="' + files[i].ServerRelativeUrl + '" rel="" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + LibraryType + '\', \'' + PermissionType + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + files[i].ServerRelativeUrl + '\', \'' + NullValue + '\', \'' + NullValue + '\');">' + files[i].Name + '</a>';
+                    documentLink = '<a href="javascript:void(0);" name="' + files[i].ServerRelativeUrl + '" rel="" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + LibraryType + '\', \'' + PermissionType + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + files[i].ServerRelativeUrl + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + files[i].LibraryURL + '\');">' + files[i].Name + '</a>';//Bhawana
+                    downloadlink = "<a href='" + encodeURI(files[i].ServerRelativeUrl) + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
+                    var IsBlockHTML = '<td class="dwnld_cell" style="text-align:center"></td>';
+                    var BlankValueParam = '';
+                    FileType = "file";
+                    if (IsBlock == "Yes") {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe" disabled="disabled"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    else {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    ChkCount++;
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<td class="text-left">' + documentLink + '';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
+                    if (files[i].ListItemAllFields.DocumentType == null || files[i].ListItemAllFields.DocumentType == undefined || files[i].ListItemAllFields.DocumentType == "null" || files[i].ListItemAllFields.DocumentType == "--select--" || files[i].ListItemAllFields.DocumentType == "-Select-") {
+                        files[i].ListItemAllFields.DocumentType = '';
+                    }
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + files[i].ListItemAllFields.DocumentType + '</div></td>';
+                    if ($(".headdingLinks").text() != 'Shared by Me') {
+                        sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+                    }
+                    else {
+                        //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"></div></td>';
+                    }
+                    //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionType + '</div></td>';
+                    //sharedWithMeTR += IsBlockHTML + '</tr>';
+
+                }
+                if (MyDoctable != '') {
+                    MyDoctable.destroy();
+                }
+                $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+                Tableagination();
+                $(".chkShareToMe").click(function () {
+                    var Properties = this.value.split(',');
+                    if (this.checked == true) {
+                        arrFileFolder.push({
+                            SharedItemId: Properties[0].trim(),
+                            type: Properties[1].trim(),
+                            SharedTo: Properties[2].trim(),
+                            DocumentId: Properties[3].trim(),
+                            ServerURL: Properties[4].trim(),
+                            userOrgId: Properties[5].trim(),
+                            SiteURL: Properties[6].trim(),
+                            IsBlock: Properties[7].trim()
+                        });
+                    }
+                    else {
+                        var selected = this.value;
+                        arrFileFolder = arrFileFolder.filter(function (obj) {
+                            return obj.SharedItemId != Properties[0].trim();
+                        });
+                    }
+                });
+                $("#selectAllChk").click(function (e) {
+                    waitingDialog.show();
+                    setTimeout(function () {
+                        if (this.checked == true) {
+                            $('.chkShareToMe').prop("checked", "");
+                            $('.chkShareToMe').trigger('click');
+                        }
+                        else {
+                            $('.chkShareToMe').prop("checked", "");
+                            arrFileFolder = [];
+                        }
+                        waitingDialog.hide();
+                    }, 100);
+
+                });
+                waitingDialog.hide();
+            }
+        }, eror: function (error) {
+            alert(JSON.stringify(error));
+            waitingDialog.hide();
+        }
+    });
+    if (RunNavigation == true || RunNavigation == "true") {
+        $("#generateBradCumbNew").empty();
+        CheckLibary = LibraryName;
+        if ($(".headdingLinks").text() == 'Property Documents' || $(".headdingLinks").text() == 'Shared by Me') {
+            //folderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
+            GetSubShareFolders(folderUrl, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, false);
+        }
+        else {
+            GetSubFolders(folderUrl);
+        }
+    }
+}
+
+
+//get Acknowledgment when binding Shared With Me Docs
+function AckUserStatus(SharedItemId, SharedUserName, ServerURL, LibraryURL, Permission, LibraryName, SharedFrom) {
+    if (LibraryName == "DocumentManagementSystem") {
+        LibraryName = 'My Documents';
+    }
+    else {
+        LibraryName = SharedFrom;
+    }
+    var AckStatus = '';
+    var restQuery = "?$top=5000&$select=*,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + SharedUserName + "' and Acknowledge eq '1'";
+    $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+        if (DocumentAcknowledgement.length > 0) {
+            AckStatus = '<div class="AckStatus" style="color:green;">Acknowledged</div>';
+        }
+        else {
+        	var NullValue = 'NullValue';
+            AckStatus = '<a href="javascript:void(0);" rel="' + SharedItemId + '" name="' + ServerURL + '" onclick="DisplayFileProperty(\'' + LibraryURL + '\', \'' + LibraryName + '\', \'' + Permission + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + ServerURL + '\', \'' + SharedItemId + '\', \'' + NullValue + '\');" class="AckStatus">Acknowledge</a>';
+        }
+    });
+    return AckStatus;
+}
+
+//open Popup to show which users have Acknowledged or not
+function OpenAckNotify(Section, SharedGroup, SharedUserId, SharedItemId, SharingValidity, SharedOn, PermissionType, SharedUserEmail, SharedUserName, PermissionStatus, ShareBy, DocType) {
+    waitingDialog.show();
+    setTimeout(function () {
+        $("#AckUserList").empty();
+        arrAckAllUser = [];
+        var attachment = '';
+        var AckHistory = '';
+        $("#btnAckNotifyAll").show();
+        if (Section == "SharedWithMe") {
+            $("#btnAckNotifyAll").hide();
+            var restQuery = "?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + _spPageContextInfo.userEmail + "' and Acknowledge eq '1'";
+            $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+                if (DocumentAcknowledgement.length > 0) {
+                    attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail);
+                    AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                    AckHistory += '</span><div class="detalbox">' + _spPageContextInfo.userDisplayName + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + _spPageContextInfo.userEmail + '\');">' + _spPageContextInfo.userEmail + '</a></div></div>';
+                    AckHistory += '<div class="Acknowledgementsec"><p style="color:green">Acknowledged</p><p style="color:green">' + ShowCommonStandardDateFormat(DocumentAcknowledgement[0].Modified) + '</p><p style="color:black;font-size:12px;">' + (DocumentAcknowledgement[0].ActionByTimeZone ? DocumentAcknowledgement[0].ActionByTimeZone : "") + '</p><p style="color:blue">IP: ' + DocumentAcknowledgement[0].IPAddress + '</p></div></li>';
+                }
+                else {
+                    attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail);
+                    AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                    AckHistory += '</span><div class="detalbox">' + _spPageContextInfo.userDisplayName + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + _spPageContextInfo.userEmail + '\');">' + _spPageContextInfo.userEmail + '</a></div></div>';
+                    AckHistory += '<div class="Acknowledgementsec"><p style="color:red">Not Acknowledged</p><div class="btnParent" style="display:none;" id="SendAckParent0"><button class="btn custom-btn w-70" id="0" type="button" onclick="SendAckMail(this, \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + _spPageContextInfo.userDisplayName + '\', \'' + _spPageContextInfo.userEmail + '\', \'' + ShareBy + '\', \'' + DocType + '\');">Notify</button></div></div></li>';
+                }
+            });
+            $("#AckUserList").append(AckHistory);
+            arrAckAllUser.push({
+                AckName: _spPageContextInfo.userDisplayName,
+                AckEmail: _spPageContextInfo.userEmail,
+                AckPermission: PermissionType,
+                AckSharedOn: SharedOn,
+                AckSharedValid: SharingValidity,
+                AckShareBy: ShareBy,
+                AckDocType: DocType
+            });
+        }
+        else {
+            if (SharedGroup == "My-Groups" || SharedGroup == "Selective") {
+                $("#btnAckNotifyAll").hide();
+                var restQuery = "?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + SharedUserEmail + "' and Acknowledge eq '1'";
+                $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+                    if (DocumentAcknowledgement.length > 0) {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(SharedUserEmail);
+                        AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                        AckHistory += '</span><div class="detalbox">' + SharedUserName + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + SharedUserEmail + '\');">' + SharedUserEmail + '</a></div></div>';
+                        AckHistory += '<div class="Acknowledgementsec"><p style="color:green">Acknowledged</p><p style="color:green">' + ShowCommonStandardDateFormat(DocumentAcknowledgement[0].Modified) + '</p><p style="color:black;font-size:12px;">' + (DocumentAcknowledgement[0].ActionByTimeZone ? DocumentAcknowledgement[0].ActionByTimeZone : "") + '</p><p style="color:blue">IP: ' + DocumentAcknowledgement[0].IPAddress + '</p></div></li>';
+                    }
+                    else {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(SharedUserEmail);
+                        AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                        AckHistory += '</span><div class="detalbox">' + SharedUserName + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + SharedUserEmail + '\');">' + SharedUserEmail + '</a></div></div>';
+                        AckHistory += '<div class="Acknowledgementsec"><p style="color:red">Not Acknowledged</p><div class="btnParent" id="SendAckParent0"><button class="btn custom-btn w-70" id="0" type="button" onclick="SendAckMail(this, \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserName + '\', \'' + SharedUserEmail + '\', \'' + ShareBy + '\', \'' + DocType + '\');">Notify</button></div></div></li>';
+                    }
+                });
+                $("#AckUserList").append(AckHistory);
+                arrAckAllUser.push({
+                    AckName: SharedUserName,
+                    AckEmail: SharedUserEmail,
+                    AckPermission: PermissionType,
+                    AckSharedOn: SharedOn,
+                    AckSharedValid: SharingValidity,
+                    AckShareBy: ShareBy,
+                    AckDocType: DocType
+                });
+
+            }
+            else { //"Everyone", "Organization"
+                var GpUserDetails = [];
+                if (SharedGroup == "Organization") {
+                    GpUserDetails = GetUserFromSPGp(SharedUserId);
+                }
+                else { //Everyone
+                    GpUserDetails = GetUserFromEmp(SharedUserId);
+                }
+                for (var gp = 0; gp < GpUserDetails.length; gp++) {
+                    AckHistory = '';
+                    var restQuery = "?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + GpUserDetails[gp].Email + "' and Acknowledge eq '1'";
+                    $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+                        if (DocumentAcknowledgement.length > 0) {
+                            attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(GpUserDetails[gp].Email);
+                            AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                            AckHistory += '</span><div class="detalbox">' + GpUserDetails[gp].Title + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + GpUserDetails[gp].Email + '\');">' + GpUserDetails[gp].Email + '</a></div></div>';
+                            AckHistory += '<div class="Acknowledgementsec"><p style="color:green">Acknowledged</p><p style="color:green">' + ShowCommonStandardDateFormat(DocumentAcknowledgement[0].Modified) + '</p><p style="color:black;font-size:12px;">' + (DocumentAcknowledgement[0].ActionByTimeZone ? DocumentAcknowledgement[0].ActionByTimeZone : "") + '</p><p style="color:blue">IP: ' + DocumentAcknowledgement[0].IPAddress + '</p></div></li>';
+                            $("#AckUserList").append(AckHistory);
+                        }
+                        else {
+                            attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(GpUserDetails[gp].Email);
+                            AckHistory += '<li><div class="detailsectionbox"><span class="imgboxsectin"><img src="' + attachment + '">';
+                            AckHistory += '</span><div class="detalbox">' + GpUserDetails[gp].Title + '<a href="javascript:void(0);" class="emilbox" style="cursor:pointer;color:blue;" onclick="OpenEmail(\'' + GpUserDetails[gp].Email + '\');">' + GpUserDetails[gp].Email + '</a></div></div>';
+
+                            if (PermissionStatus == "Revoked") {
+                                $("#btnAckNotifyAll").hide();
+                                AckHistory += '<div class="Acknowledgementsec"><p style="color:red">Not Acknowledged</p><div class="btnParent" id="SendAckParent' + gp + '"><button class="btn custom-btn w-70" id="' + gp + '" type="button" onclick="SendAckMail(this, \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + GpUserDetails[gp].Title + '\', \'' + GpUserDetails[gp].Email + '\', \'' + ShareBy + '\', \'' + DocType + '\');" disabled="disabled">Notify</button></div></div></li>';
+                            }
+                            else {
+                                AckHistory += '<div class="Acknowledgementsec"><p style="color:red">Not Acknowledged</p><div class="btnParent" id="SendAckParent' + gp + '"><button class="btn custom-btn w-70" id="' + gp + '" type="button" onclick="SendAckMail(this, \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + GpUserDetails[gp].Title + '\', \'' + GpUserDetails[gp].Email + '\', \'' + ShareBy + '\', \'' + DocType + '\');">Notify</button></div></div></li>';
+                            }
+                            $("#AckUserList").append(AckHistory);
+                            arrAckAllUser.push({
+                                AckName: GpUserDetails[gp].Title,
+                                AckEmail: GpUserDetails[gp].Email,
+                                AckPermission: PermissionType,
+                                AckSharedOn: SharedOn,
+                                AckSharedValid: SharingValidity,
+                                AckShareBy: ShareBy,
+                                AckDocType: DocType
+
+                            });
+                        }
+                    });
+                }
+            }
+        }
+        $("#Acknowledgement").modal('show');
+        waitingDialog.hide();
+    }, 100);
+}
+
+
+//send Notify mail to all
+function NotifyAllAck() {
+    var DashboardLink = _spPageContextInfo.webAbsoluteUrl + "/Pages/Document.aspx";
+    var MailSub = _spPageContextInfo.userDisplayName + ' is requesting your acknowledgement on a document.';
+    for (var ack = 0; ack < arrAckAllUser.length; ack++) {
+        Metadata = '';
+        var EmailDesign = '';
+        var SharedValidHTML = '';
+        if (arrAckAllUser[ack].AckSharedValid == null || arrAckAllUser[ack].AckSharedValid == "null" || arrAckAllUser[ack].AckSharedValid == '') {
+            SharedValidHTML = '';
+        }
+        else {
+            SharedValidHTML = "<div><strong>Valid till:</strong> " + arrAckAllUser[ack].AckSharedValid + "</div><br/>";
+        }
+        EmailDesign = "Dear " + arrAckAllUser[ack].AckName + ",<br/><br/>" + _spPageContextInfo.userDisplayName + " has shared the following document with you. Your acknowledgment is required on this document.<br/><br/>";
+        EmailDesign = EmailDesign + "<div><strong>File Name:</strong> " + $("#filenamee").text() + "</div>" +
+        	                        "<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + $("#filetitle").text() + "</div>" +
+        	                        "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + arrAckAllUser[ack].AckDocType + "</div>" +
+	                            "<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + $("#referNo").text() + "</div>" +
+	                             "<div><strong>Permission:</strong> " + arrAckAllUser[ack].AckPermission + "</div>" +
+	                             "<div><strong>Shared By:</strong> " + arrAckAllUser[ack].AckShareBy + "</div>" +
+	                             "<div><strong>Shared On:</strong> " + arrAckAllUser[ack].AckSharedOn + "</div>" +
+	                             SharedValidHTML +
+	                             "<br/><br/><br/>" +
+	                            "<div><a href=" + DashboardLink + ">Click here</a> to open and acknowledge the document.</div>" + "<br/><br/>";
+        EmailDesign += "This is an auto generated email. Please don't reply.";
+        for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+	    	if(EmailDesign.includes(LabelDefaultLangauge[k].Key) == true){
+	    		EmailDesign = EmailDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+	    	}	
+	    }
+        Metadata = {
+            'properties': {
+                '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+                'From': _spPageContextInfo.userEmail,
+                'To': { 'results': [arrAckAllUser[ack].AckEmail] },
+                'Body': EmailDesign,
+                'Subject': MailSub
+            }
+        };
+
+        var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+        $.ajax({
+            contentType: 'application/json',
+            url: sitetemplateurl,
+            type: "POST",
+            async: false,
+            data: JSON.stringify(Metadata),
+            headers: {
+                "Accept": "application/json;odata=verbose",
+                "content-type": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+            },
+            success: function (data) {
+                if (arrAckAllUser.length == ack + 1) {
+                    waitingDialog.hide();
+                    alert("Notification has been sent to all.");
+                }
+            },
+            error: function (err) {
+                alert("SendEmailAckNotification  " + JSON.stringify(err));
+                return false;
+            }
+        });
+    }
+}
+
+//to send Acknowledgement mail to users
+function SendAckMail(Action, SharingValidity, SharedOn, PermissionType, ToUserName, ToUserEmail, ShareBy, DocType) {
+    var EmailDesign = '';
+    var MailSub = _spPageContextInfo.userDisplayName + ' is requesting your acknowledgement on a document.';
+    var DashboardLink = _spPageContextInfo.webAbsoluteUrl + "/Pages/Document.aspx";
+    var SharedValidHTML = '';
+    if (SharingValidity == null || SharingValidity == "null" || SharingValidity == '') {
+        SharedValidHTML = '';
+    }
+    else {
+        SharedValidHTML = "<div><strong>Valid till:</strong> " + SharingValidity + "</div><br/>";
+    }
+    EmailDesign = "Dear " + ToUserName + ",<br/><br/>" + _spPageContextInfo.userDisplayName + " has shared the following document with you. Your acknowledgment is required on this document.<br/><br/>";
+    EmailDesign = EmailDesign + "<div><strong>File Name:</strong> " + $("#filenamee").text() + "</div>" +
+                                "<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + $("#filetitle").text() + "</div>" +
+                                "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + DocType + "</div>" +
+                            "<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + $("#referNo").text() + "</div>" +
+                             "<div><strong>Permission:</strong> " + PermissionType + "</div>" +
+                             "<div><strong>Shared By:</strong> " + ShareBy + "</div>" +
+                             "<div><strong>Shared On:</strong> " + SharedOn + "</div>" +
+                             SharedValidHTML +
+                             "<br/><br/><br/>" +
+                            "<div><a href=" + DashboardLink + ">Click here</a> to open and acknowledge the document.</div>" + "<br/><br/>";
+    EmailDesign += "This is an auto generated email. Please don't reply.";
+    for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+    	if(EmailDesign.includes(LabelDefaultLangauge[k].Key) == true){
+    		EmailDesign = EmailDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+    	}	
+    }
+    Metadata = {
+        'properties': {
+            '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+            'From': _spPageContextInfo.userEmail,
+            'To': { 'results': [ToUserEmail] },
+            'Body': EmailDesign,
+            'Subject': MailSub
+        }
+    };
+
+    var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(Metadata),
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            $("#SendAckParent" + Action.id).empty().append('<p class="SendMSg">Notification Sent.</p>');
+        },
+        error: function (err) {
+            alert("SendEmailAckNotification  " + JSON.stringify(err));
+        }
+    });
+}
+
+//get shared History of File with 'Revoke' option
+function GetSharedHistory(documentid, itemurl, title, documentno, fileName, type, Action, SharedItemId) {
+    waitingDialog.show();
+    setTimeout(function () {
+
+        fileName = /[^/]*$/.exec(itemurl)[0];
+        $("#FilePath").text(itemurl);
+        selectedHistoryDoc = [];
+        var option = "",
+        uniqueValues = [],
+        arrduplicateClient = [],
+        arrduplcteRevokdClient = [],
+        arrduplcteRevokdTime = [],
+        arrDuplicateSharedTo = []; SharedTo = '';
+        var IsModal = 'true';
+        var Doc_Type = 'My_Doc';
+        $(".select_all").prop("checked", false);          //For all Checkbox
+        $("#revokebtn").hide();
+        $(".context-menu").hide();
+        $('#sharedHistoryList').html('');
+        $('#myModalShareHistory').modal('show');//,SharedUsers/EMail
+        $("#HeadingShareWith").text('Shared With');
+        $("#HeadingShareBy").text('Shared By');
+        if (Action == "Filter" && $("#shreduser").val() != "All" && $("#sharedAs").val() != "All") {
+            if ($("#shreduser").val() == "All" && $("#sharedAs").val() != "All") {
+                var PermissionQuery = '';
+                if ($("#sharedAs").val() == "true") {
+                    PermissionQuery = "NeedAcknowledgement eq '1'";
+                }
+                else {
+                    PermissionQuery = "PermissionType eq '" + $("#sharedAs").val() + "' ";
+                }
+                var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=DocumentID eq '" + documentid + "' and " + PermissionQuery + " &$orderby=Created asc";
+            }
+            else if ($("#shreduser").val() != "All" && $("#sharedAs").val() == "All") {
+                var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=DocumentID eq '" + documentid + "' and (SharedUsers/EMail eq '" + $("#shreduser").val() + "' or SharedClient/Title eq '" + $("#shreduser").val() + "')&$orderby=Created asc";
+            }
+            else if ($("#shreduser").val() != "All" && $("#sharedAs").val() != "All") {
+                var PermissionQuery = '';
+                if ($("#sharedAs").val() == "true") {
+                    PermissionQuery = "NeedAcknowledgement eq '1'";
+                }
+                else {
+                    PermissionQuery = "PermissionType eq '" + $("#sharedAs").val() + "' ";
+                }
+                var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=DocumentID eq '" + documentid + "' and (SharedUsers/EMail eq '" + $("#shreduser").val() + "' or SharedClient/Title eq '" + $("#shreduser").val() + "') and " + PermissionQuery + "&$orderby=Created asc";
+            }
+        }
+        else if (Action == "SharedWithMe") {
+            DocumentId = documentid;
+            $("#HeadingShareWith").text('Shared By');
+            $("#HeadingShareBy").text('Shared With');
+            var checkQuery = '';
+            var Query = "?$select=Id,Title,IsActive,CompanyID/Id,DocumentLibrary,InternalMembers/EMail,InternalSupervisor/EMail&$expand=CompanyID,InternalMembers,InternalSupervisor&$top=5000&$filter=DocumentLibrary ne null and IsActive eq '1' and InternalMembers/EMail eq '" + _spPageContextInfo.userEmail + "' or InternalSupervisor/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+            $.when(getItemsWithQuery("ClientMaster", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Clients) {
+                if (Clients.length > 0) {
+                    for (var client = 0; client < Clients.length; client++) {
+                        checkQuery += " or SharedClient/Title eq '" + Clients[client].Title + "' ";
+                    }
+                }
+            });
+            if (SharedItemId == '' || SharedItemId == null || SharedItemId == "null") {
+                var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=(DocumentID eq '" + documentid + "' and (SharedUsers/Id eq '" + _spPageContextInfo.userId + "' or SharedGroup eq 'Everyone' " + checkQuery + "))&$orderby=Created asc";
+            }
+            else {
+                var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=(Id eq '" + SharedItemId + "' and DocumentID eq '" + documentid + "' and (SharedUsers/Id eq '" + _spPageContextInfo.userId + "' or SharedGroup eq 'Everyone' " + checkQuery + "))&$orderby=Created asc";
+            }
+        }
+        else if (Action == "SharedByMe") {
+            DocumentId = documentid;
+            var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' and DocumentID eq '" + documentid + "' and Title eq '" + fileName + "'&$orderby=Created asc";
+        }
+        else {
+            DocumentId = documentid;
+            var Query = "?$select=*,SharedUsers/Id,SharedUsers/Title,SharedClient/Title,Author/Title,Author/EMail&$expand=Author,SharedUsers,SharedClient&$Filter=DocumentID eq '" + documentid + "' and Title eq '" + fileName + "'&$orderby=Created asc";
+        }
+        $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (itemsSharedHistory) {
+
+            $("#filenamee").html(fileName);
+            if (documentno == "null") {
+                $("#referNo").html('');
+            }
+            else {
+                $("#referNo").html(documentno);
+            }
+            //Cloning array
+            currentSharedHistory = itemsSharedHistory.filter(function (f) { return f; });
+            if (itemsSharedHistory.length > 0) {
+                var sharedHistory = "";
+                option += '<option value="All">All</option>';
+
+                for (var index = 0; index < itemsSharedHistory.length; index++) {
+                    var SiteURL = '';
+                    var SharedBYAck = itemsSharedHistory[index].Author.Title;
+                    if (itemsSharedHistory[index].SiteURL == "null" || itemsSharedHistory[index].SiteURL == null || itemsSharedHistory[index].SiteURL == "undefined" || itemsSharedHistory[index].SiteURL == undefined) {
+                        if (encodeURI(itemsSharedHistory[index].DocumentURL).indexOf("DepartmentalDMS") != -1) {
+                            SiteURL = window.location.origin + encodeURI(itemsSharedHistory[index].DocumentURL).split('DepartmentalDMS')[0];
+                        }
+                        else {
+                            SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                        }
+                    }
+                    else {
+                        SiteURL = itemsSharedHistory[index].SiteURL;
+                    }
+
+                    var fileTitle = itemsSharedHistory[index].Title;
+                    var PermissionType = DisplayPermissionType = itemsSharedHistory[index].PermissionType;
+                    if (DisplayPermissionType == "Contribute") {
+                        DisplayPermissionType = "Full Access";
+                    }
+                    else if (DisplayPermissionType == "Read") {
+                        DisplayPermissionType = "Read Access";
+                    }
+                    else { //Restricted View
+                        DisplayPermissionType = "Restricted Access";
+                    }
+
+                    var currentItemId = itemsSharedHistory[index].ID;
+                    var PermissionStatus = itemsSharedHistory[index].PermissionStatus;
+                    if (itemsSharedHistory[index].SharedFileTitle != null) {
+                        $("#filetitle").html(itemsSharedHistory[index].SharedFileTitle);
+                    }
+                    else {
+                        $("#filetitle").html('');
+                    }
+                    var userNamecurretn = "";
+                    var userEmail = '';
+                    var userId = "";
+                    var NeedAck = itemsSharedHistory[index].NeedAcknowledgement;
+                    if (NeedAck == true) {
+                        NeedAck = "Required";
+                    }
+                    else {
+                        NeedAck = "Not Required";
+                    }
+                    var SharingValidity = '';
+                    if (itemsSharedHistory[index].SharingValidity != null) {
+                        SharingValidity = moment(itemsSharedHistory[index].SharingValidity).format('MMM D YYYY');
+                    }
+                    for (var j = 0; j < itemsSharedHistory[index].SharedUsers.results.length; j++) {
+                        if (uniqueValues.indexOf(itemsSharedHistory[index].SharedUsers.results[j].Title) == -1) {
+                            uniqueValues.push(itemsSharedHistory[index].SharedUsers.results[j].Title);
+                            if (itemsSharedHistory[index].SharedGroup != "Organization") {
+                                option += "<option value='" + itemsSharedHistory[index].SharedUserEmail + "'title='" + itemsSharedHistory[index].SharedUsers.results[j].Title + "'>" + itemsSharedHistory[index].SharedUsers.results[j].Title + "</option>";
+                            }
+                            else {
+                                if (jQuery.inArray(itemsSharedHistory[index].SharedClient.Title, arrDuplicateSharedTo) == '-1') {
+                                    option += "<option value='" + itemsSharedHistory[index].SharedClient.Title + "'title='" + itemsSharedHistory[index].SharedClient.Title + "'>" + itemsSharedHistory[index].SharedClient.Title + "</option>";
+                                    arrDuplicateSharedTo.push(itemsSharedHistory[index].SharedClient.Title);
+                                }
+                            }
+                        }
+                        userNamecurretn = itemsSharedHistory[index].SharedUsers.results[j].Title
+                        userEmail = itemsSharedHistory[index].SharedUserEmail;
+                        userEmail = userEmail ? userEmail : "";
+                        userId = itemsSharedHistory[index].SharedUsers.results[j].Id;
+                    }
+
+                    if (itemsSharedHistory[index].SharedGroup != "Organization") {
+                        if (PermissionStatus == "Revoked") {
+                            sharedHistory += "<tr><td></td>";
+                            if (Action != "SharedWithMe") {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(userEmail);
+                                if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                                    sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + userNamecurretn.charAt(0) + "</div><div class='designationtype'>";
+                                }
+                                else {
+                                    sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                }
+                                sharedHistory += "<h3 class='namesection'>" + userNamecurretn + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + userEmail + "\");'>" + userEmail + "</a></div></div></td>";
+                            }
+                            else {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                                sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                            }
+
+                            sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                            sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                            }
+                            else {
+                                sharedHistory += "<td>" + userNamecurretn + "</td>";
+                            }
+                            sharedHistory += "<td>" + SharingValidity + "</td>";
+                            if (NeedAck == "Required") {
+                                if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                                    var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                                else {
+                                    var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                            }
+                            else {
+                                sharedHistory += "<td>Not Required</td>";
+                            }
+                            var RevokeRemarks = '';
+                            if (itemsSharedHistory[index].share_remarks != null) {
+                                RevokeRemarks = (itemsSharedHistory[index].share_remarks.substring(0, 20));
+                            }
+                            sharedHistory += "<td><div class='RevokedDetails'><span style='cursor: not-allowed;color: Red;'>Revoked</span><span>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Modified) + "</span><span style='color: Red;'>" + RevokeRemarks + "</span></td>";
+                            sharedHistory += "</tr>";
+                        }
+                        else {
+                            SharedTo = 'User';
+                            var UserOrGroup = 'User';
+                            sharedHistory += "<tr>";
+                            if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                                UserOrGroup = 'Everyone';
+                                IsBtnHide = getApprovalStatus(itemsSharedHistory[index].LibraryName, itemsSharedHistory[index].SiteURL, itemsSharedHistory[index].DocumentID);
+                            }
+                            else {
+                                IsBtnHide = false;
+                            }
+                            sharedHistory += "<td><input type='checkbox' class='historydocid' value=" + documentid + ',' + encodeURI(itemurl) + ',' + userId + ',' + currentItemId + ',' + Doc_Type + ',' + type + ',' + SharedTo + ',' + UserOrGroup + ',' + SiteURL + ',' + userEmail + " title='" + userId + "''></td>";
+                            if (Action != "SharedWithMe") {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(userEmail);
+                                if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                                    sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + userNamecurretn.charAt(0) + "</div><div class='designationtype'>";
+                                }
+                                else {
+                                    sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                }
+                                sharedHistory += "<h3 class='namesection'>" + userNamecurretn + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + userEmail + "\");'>" + userEmail + "</a></div></div></td>";
+                            }
+                            else {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                                sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                            }
+                            sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                            sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                            }
+                            else {
+                                sharedHistory += "<td>" + userNamecurretn + "</td>";
+                            }
+                            sharedHistory += "<td>" + SharingValidity + "</td>";
+                            if (IsBtnHide == false) {
+                                if (NeedAck == "Required") {
+                                    if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                                        var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                        sharedHistory += "<td>" + AckValue + "</td>";
+                                    }
+                                    else {
+                                        var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                        sharedHistory += "<td>" + AckValue + "</td>";
+                                    }
+                                }
+                                else {
+                                    sharedHistory += "<td>Not Required</td>";
+                                }
+                                if (Action != "SharedWithMe") {
+                                    sharedHistory += '<td><a style="cursor: pointer;" class="fileFolderRevoke" onclick="RevokePermission(' + documentid + ',\'' + encodeURI(itemurl) + '\',' + userId + ',' + currentItemId + ', \'' + IsModal + '\', \'' + itemsSharedHistory[index].DocumentType + '\', \'' + UserOrGroup + '\', \'' + SiteURL + '\', \'' + userEmail + '\')">Revoke</a></td>';
+                                }
+                                else {
+                                    sharedHistory += '<td></td>';
+                                }
+                            }
+                            else {
+                                sharedHistory += "<td></td>";
+                                sharedHistory += '<td>Approval Pending</td>';
+                            }
+
+                            sharedHistory += "</tr>";
+                        }
+                    }
+                    else { //to bind all the external users sharing in one table row [Organizations wise]
+                        if (PermissionStatus == "Revoked") {
+                            //var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].SharedClient.Title);
+                            sharedHistory += "<tr><td></td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td><div class='flexingtwo'><div class='empoyeeimg clientnameshow'><span class='clienttext'><div id='profileImage'>" + itemsSharedHistory[index].SharedClient.Title.charAt(0) + "</div></span>";
+                                sharedHistory += "</div><div class='designationtype'><h3 class='namesection'>" + itemsSharedHistory[index].SharedClient.Title + "</h3><p>Guest Client</p></td>";
+                            }
+                            else {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                                sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                            }
+                            sharedHistory += "</div></div><td>" + DisplayPermissionType + "</td>";
+                            sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                            }
+                            else {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].SharedClient.Title + "</td>";
+                            }
+                            sharedHistory += "<td>" + SharingValidity + "</td>";
+                            if (NeedAck == "Required") {
+                                if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                                    var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                                else {
+                                    var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                            }
+                            else {
+                                sharedHistory += "<td>Not Required</td>";
+                            }
+                            var RevokeRemarks = '';
+                            if (itemsSharedHistory[index].share_remarks != null) {
+                                RevokeRemarks = (itemsSharedHistory[index].share_remarks.substring(0, 20));
+                            }
+                            sharedHistory += "<td><div class='RevokedDetails'><span style='cursor: not-allowed;color: Red;'>Revoked</span><span>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Modified) + "</span><span style='color: Red;'>" + RevokeRemarks + "</span></td>";
+                        }
+                        else {
+                            SharedTo = 'Organization';
+                            var UserOrGroup = 'User';
+                            if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                                UserOrGroup = 'Everyone';
+                            }
+                            //var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].SharedClient.Title);
+                            sharedHistory += "<tr>";
+                            sharedHistory += "<td><input type='checkbox' class='historydocid' value=" + documentid + ',' + encodeURI(itemurl) + ',' + userId + ',' + currentItemId + ',' + Doc_Type + ',' + type + ',' + SharedTo + ',' + UserOrGroup + ',' + SiteURL + " title='" + userId + "''></td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + itemsSharedHistory[index].SharedClient.Title.charAt(0) + "</div><div class='designationtype'>";
+                                sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].SharedClient.Title + "</h3>";
+                                sharedHistory += "</div></div></td>";
+                            }
+                            else {
+                                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                                sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                                sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                                sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                            }
+                            sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                            sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                            }
+                            else {
+                                sharedHistory += "<td>" + itemsSharedHistory[index].SharedClient.Title + "</td>";
+                            }
+                            sharedHistory += "<td>" + SharingValidity + "</td>";
+                            if (NeedAck == "Required") {
+                                if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                                    var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                                else {
+                                    var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                    sharedHistory += "<td>" + AckValue + "</td>";
+                                }
+                            }
+                            else {
+                                sharedHistory += "<td>Not Required</td>";
+                            }
+                            if (Action != "SharedWithMe") {
+                                sharedHistory += '<td><a style="cursor: pointer;" class="fileFolderRevoke" onclick=" RevokeGpPermission(' + userId + ', ' + currentItemId + ', \'' + IsModal + '\', \'' + itemsSharedHistory[index].DocumentType + '\', \'' + UserOrGroup + '\', \'' + encodeURI(itemurl) + '\', \'' + SiteURL + '\');">Revoke</a></td>';
+                            }
+                            else {
+                                sharedHistory += '<td></td>';
+                            }
+                            sharedHistory += "</tr>";
+                        }
+                    }
+                }
+
+                if (itemsSharedHistory.length == 0) {
+                    $(".NoRecordFound").show();
+                }
+                else {
+                    $(".NoRecordFound").hide();
+                }
+                if (ShareHostoryTable != '') {
+                    ShareHostoryTable.destroy();
+                }
+                $("#sharedHistoryList").empty().append(sharedHistory);
+                $("#TotalItemscount").text(itemsSharedHistory.length);
+                if (itemsSharedHistory.length > 0) {
+                    if (Action != "Filter") {
+                        $("#shreduser").empty().append(option);
+                    }
+                    selectedHistoryDocEvent();
+                    TablePaginationShareHistory()
+                    //Check permissions
+                    if (currentSectionType != 'My Documents' && currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe') {
+                        getListUserEffectivePermissions(SiteURL, listTitle, true, parseInt(documentid), 'i:0#.f|membership|' + _spPageContextInfo.userLoginName + '');
+                        if (IsNotpermission == true) {
+                            if (IsContributor == false && IsFullControl == false) { //Reader
+                                $(".fileFolderRevoke").hide();
+                            }
+                        }
+                        else {
+                            if (arrPermission.length > 0) {
+                                $(".fileFolderRevoke").hide();
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                $(".NoRecordFound").show();
+                $("#TotalItemscount").text('0');
+            }
+            waitingDialog.hide();
+        });
+    }, 100);
+}
+
+//get the SP group-names in which logged-In user belongs to
+function GetSPGroup() {
+    var arrSPGroup = [];
+    var endpointUrl = _spPageContextInfo.webServerRelativeUrl + '/_api/web/currentuser/?$expand=groups';
+    $.ajax({
+        url: endpointUrl,
+        method: "GET",
+        async: false,
+        contentType: "application/json;odata=verbose",
+        headers: {
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            var arrAllGp = [];
+            arrAllGp = data.d.Groups.results;
+            if (arrAllGp.length > 0) {
+                arrSPGroup = arrAllGp.filter(function (obj) {
+                    return obj.OwnerTitle !== "System Account" && obj.Title !== "Contributors" && obj.Title !== "Owners" && obj.Title !== "SPMember" && obj.Title !== "TFW_Employees";
+                });
+            }
+        }, eror: function (error) {
+            alert(JSON.stringify(error));
+            waitingDialog.hide();
+        }
+    });
+    return arrSPGroup;
+}
+
+//get GroupId of 'Everyone' and 'All_Employee'
+function getTargetGroupId() {
+    var arrEveryOneId = [];
+    var siteurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getbyname('ALL_EMPLOYEE')?$select=id";
+    $.ajax({
+        url: siteurl,
+        type: 'GET',
+        headers: { 'accept': 'application/json;odata=verbose' },
+        async: false,
+        success: function (data, status, xhr) {
+            arrEveryOneId.push(data.d.Id);
+        },
+        error: function (data, status, error) {
+            console.log(data.responseJSON.error);
+        }
+    });
+
+    return arrEveryOneId;
+}
+
+//to check if Approval process is in 'Pending' or 'Approved' state
+function getApprovalStatus(QueryLibraryName, SiteUrl, DocId) {
+    var IsBtnHide = false;
+    var RestQuery = "?$select=Id,ApprovalStatus&$filter=Id eq '" + DocId + "' and ApprovalStatus eq 'Approved'";
+    //$.when(getDocItemsWithQueryItemById(QueryLibraryName, RestQuery, SiteUrl, DocId)).done(function (docsresults) {
+    $.when(getItemsWithQuery(QueryLibraryName, RestQuery, SiteUrl)).done(function (docsresults) {
+        if (docsresults.length == 0) {
+            IsBtnHide = true;
+        }
+    });
+    return IsBtnHide;
+}
+
+//method for pagination of Approvals
+function TablePaginationShareHistory() {
+    ShareHostoryTable = $('#sharedHistoryTable').DataTable({
+        'columnDefs': [{ 'orderable': false, 'targets': 0 }], // hide sort icon on header of first column
+        "bPaginate": true,
+        "bJQueryUI": true, // ThemeRoller-stöd
+        "bLengthChange": false,
+        "bFilter": true,
+        "bSort": true,
+        "bInfo": true,
+        "bAutoWidth": false,
+        "bProcessing": true,
+        "iDisplayLength": 5,
+        "dom": 'Rlfrtip',
+        "colReorder": {
+            'allowReorder': true
+        },
+        "language": {
+            "searchPlaceholder": "Type to find....",
+            "sSearch": ""
+        }
+    });
+    $("#sharedHistoryTable_filter").hide();
+    $('#customHistrySearch').keyup(function () {
+        ShareHostoryTable.search($(this).val()).draw();
+    });
+
+}
+
+function selectedHistoryDocEvent() {
+    $('.historydocid').change(function () {
+        selectedHistoryDoc = [];
+        selectedHistoryDocrelativeurl = [];
+        $('.historydocid').each(function () {
+            if ($(this).prop("checked") == true) {
+                selectedHistoryDoc.push($(this).val());
+            }
+        });
+        if (selectedHistoryDoc.length == 0) {
+            $("#revokebtn").hide();
+        }
+        else {
+            $("#revokebtn").show();
+        }
+        if ($('.historydocid:checked').length == $('.historydocid').length) {
+            $('.select_all').prop('checked', true);
+        } else {
+            $('.select_all').prop('checked', false);
+        }
+    });
+}
+
+//get Sharing Info for 'Shared With Me'
+function getSingleShareInfo(DocId, SharedId) {
+    var Query = "?$select=*,Author/Title,SharedUsers/Title&$expand=Author,SharedUsers&$orderby=Created desc&$filter=Id eq '" + SharedId + "' and DocumentID eq '" + DocId + "' and (PermissionStatus ne 'Revoked' or PermissionStatus ne 'Deleted')";
+    $.when(getItemsWithQuery('SharedDocument', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SharingInfo) {
+        if (SharingInfo.length > 0) {
+            currentSharedItemId = SharingInfo[0].Id;
+            if (SharingInfo[0].NeedAcknowledgement == true) {
+                getAcknowledgeStatus(SharingInfo[0].Id, DocId);
+            }
+            else {
+                $("#ParentAck").hide();
+            }
+            $("#txtShareBy").text(SharingInfo[0].Author.Title);
+            $("#txtShareOn").text(ShowCommonStandardDateFormat(SharingInfo[0].Created));
+            $("#txtSharePermission").text(SharingInfo[0].PermissionType);
+            $("#ShareTabSharing").text("Shared with " + SharingInfo[0].SharedUsers.results[0].Title);
+        }
+        else {
+            $("#ParentAck").hide();
+            $("#txtShareBy").text('');
+            $("#txtShareOn").text('');
+            $("#txtSharePermission").text('');
+            $("#ShareTabSharing").text('');
+        }
+    });
+}
+
+//get Status of Document of Acknowledgement
+function getAcknowledgeStatus(SharedDocId, LibraryDocId) {
+    $("#ParentAck").show();
+    var AckId = '';
+    $("#ParentAck").empty().append('<div class="breakbox"><input type="checkbox" id="txtAcknoldge"><label class="detail-label" id="AckHeading">Acknowledgement</label></div><div class="breakbox"><label class="detail-label" id="AckText">By clicking this you agree that you understand and acknowledge this document.</label></div>');
+    var restQuery = "?$top=5000&$select=*,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedDocId + "' and ViewsBy/EMail eq '" + _spPageContextInfo.userEmail + "'";
+    $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+        if (DocumentAcknowledgement.length > 0) {
+            AckId = DocumentAcknowledgement[0].Id;
+            if (DocumentAcknowledgement[0].Acknowledge == true) {
+                $("#AckHeading").text('Acknowledged');
+                $("#AckHeading").css('color', 'green');
+                $("#AckText").hide();
+                $("#txtAcknoldge").prop('disabled', 'disabled');
+                $("#txtAcknoldge").prop('checked', 'checked');
+            }
+            else {
+                if (DocumentAcknowledgement[0].View != true) {
+                    ViewAckDocument(SharedDocId, LibraryDocId);
+                }
+                $("#AckHeading").text('Acknowledge');
+                $("#AckHeading").css('color', 'black');
+                $("#AckText").show();
+                $("#txtAcknoldge").prop('disabled', '');
+                $("#txtAcknoldge").prop('checked', '');
+                $("#txtAcknoldge").click(function () {
+                    AcknowledgeDocument(AckId);
+                });
+            }
+        }
+        else {
+            AckId = ViewAckDocument(SharedDocId, LibraryDocId);
+            $("#AckHeading").text('Acknowledge');
+            $("#AckHeading").css('color', 'black');
+            $("#AckText").show();
+            $("#txtAcknoldge").prop('disabled', '');
+            $("#txtAcknoldge").prop('checked', '');
+            $("#txtAcknoldge").click(function () {
+                AcknowledgeDocument(AckId);
+            });
+        }
+    });
+}
+
+//Acknowledge the file - Add mode
+function AcknowledgeDocument(AckId) {
+    if (confirm("Are you sure to acknowledge this document ?") == true) {
+        var Metadata;
+        if (CurrentIpAddress == undefined || CurrentIpAddress == null) {
+            CurrentIpAddress = '';
+        }
+        $("#txtAcknoldge").prop('disabled', 'disabled');
+        Metadata = {
+            __metadata: { 'type': 'SP.Data.DocumentAcknowledgementListItem' },
+            'Acknowledge': true,
+            'IPAddress': CurrentIpAddress,
+            'ActionByTimeZone': LoggedIn_TimeZone
+        };
+        var dfd = $.Deferred();
+        var URL = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/getByTitle('DocumentAcknowledgement')/Items(" + AckId + ")";
+        $.ajax({
+            url: URL,
+            type: "POST",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose",
+                "X-Http-Method": "PATCH",
+                "If-Match": '*'
+            },
+            data: JSON.stringify(Metadata),
+            success: function (RESULT) {
+                $("#AckHeading").text('Acknowledged');
+                $("#AckHeading").css('color', 'green');
+                $("#AckText").hide();
+                $("#tabSharedToMe").trigger("click");
+            },
+            error: function (error) {
+                alert(JSON.stringify(error));
+                $("#txtAcknoldge").prop('disabled', '');
+                dfd.reject(error);
+            }
+        });
+        return dfd.promise();
+    }
+}
+
+
+//Acknowledge the file - view mode
+function ViewAckDocument(SharedDocId, LibraryDocId) {
+    var Metadata;
+    var AckId = '';
+    Metadata = {
+        __metadata: { 'type': 'SP.Data.DocumentAcknowledgementListItem' },
+        'ViewsById': _spPageContextInfo.userId,
+        'Title': $("#FileName").text(),
+        'DocumentID': parseInt(SharedDocId),
+        'DocID': parseInt(LibraryDocId)
+    };
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentAcknowledgement')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            AckId = data.d.Id;
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            $("#txtAcknoldge").prop('disabled', '');
+        }
+    });
+    return AckId;
+}
+
+//Bind Shared History while filtering data
+function FilterShareHistory(documentid, itemurl, title, documentno, fileName, type, Action, SharedItemId) {
+    selectedHistoryDoc = [];
+    $("#FilePath").text(itemurl);
+    var uniqueValues = [],
+	arrduplicateClient = [],
+	arrduplcteRevokdClient = [],
+	arrduplcteRevokdTime = [],
+	arrDuplicateSharedTo = []; SharedTo = '';
+    var IsModal = 'true';
+    var Doc_Type = 'My_Doc';
+    $(".select_all").prop("checked", false);          //For all Checkbox
+    $("#revokebtn").hide();
+    $(".context-menu").hide();
+    $('#sharedHistoryList').html('');
+    
+   // if ($(".headdingLinks").text() == 'Shared with Me')
+    if(currentSectionType== 'SharedWithMe')  
+    {
+        Action = "SharedWithMe";
+    }
+    else {
+        Action = "SharedByMe";
+    }
+    var itemsSharedHistory = [];
+    if ($("#shreduser").val() != "All" || $("#sharedAs").val() != "All") {
+        if ($("#shreduser").val() == "All" && $("#sharedAs").val() != "All") {
+            var PermissionQuery = '';
+            if ($("#sharedAs").val() == "true") {
+                PermissionQuery = true;
+            }
+            else {
+                PermissionQuery = $("#sharedAs").val();
+            }
+            itemsSharedHistory = currentSharedHistory.filter(function (obj) {
+                return obj.NeedAcknowledgement == PermissionQuery || obj.PermissionType == PermissionQuery;
+            });
+        }
+        else if ($("#shreduser").val() != "All" && $("#sharedAs").val() == "All") {
+            itemsSharedHistory = currentSharedHistory.filter(function (obj) {
+                return (obj.SharedClient.Title == $("#shreduser").val() || obj.SharedUserEmail == $("#shreduser").val());
+            });
+        }
+        else if ($("#shreduser").val() != "All" && $("#sharedAs").val() != "All") {
+            var PermissionQuery = '';
+            if ($("#sharedAs").val() == "true") {
+                PermissionQuery = true;
+            }
+            else {
+                PermissionQuery = $("#sharedAs").val();
+            }
+
+            itemsSharedHistory = currentSharedHistory.filter(function (obj) {
+                return (obj.NeedAcknowledgement == PermissionQuery || obj.PermissionType == PermissionQuery) && (obj.SharedClient.Title == $("#shreduser").val() || obj.SharedUserEmail == $("#shreduser").val());
+            });
+        }
+    }
+    else {
+        //Cloning array
+        itemsSharedHistory = currentSharedHistory.filter(function (f) { return f; })
+    }
+    if (itemsSharedHistory.length > 0) {
+        var sharedHistory = "";
+        for (var index = 0; index < itemsSharedHistory.length; index++) {
+            var SiteURL = '';
+            if (itemsSharedHistory[index].SiteURL == "null" || itemsSharedHistory[index].SiteURL == null || itemsSharedHistory[index].SiteURL == "undefined" || itemsSharedHistory[index].SiteURL == undefined) {
+                if (encodeURI(itemsSharedHistory[index].DocumentURL).indexOf("DepartmentalDMS") != -1) {
+                    SiteURL = window.location.origin + encodeURI(itemsSharedHistory[index].DocumentURL).split('DepartmentalDMS')[0];
+                }
+                else {
+                    SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                }
+            }
+            else {
+                SiteURL = itemsSharedHistory[index].SiteURL;
+            }
+
+            var fileTitle = itemsSharedHistory[index].Title;
+            var PermissionType = DisplayPermissionType = itemsSharedHistory[index].PermissionType;
+            if (DisplayPermissionType == "Contribute") {
+                DisplayPermissionType = "Full Access";
+            }
+            else if (DisplayPermissionType == "Read") {
+                DisplayPermissionType = "Read Access";
+            }
+            else { //Restricted View
+                DisplayPermissionType = "Restricted Access";
+            }
+
+            var currentItemId = itemsSharedHistory[index].ID;
+            var PermissionStatus = itemsSharedHistory[index].PermissionStatus;
+            var userNamecurretn = "";
+            var userEmail = '';
+            var userId = "";
+            var NeedAck = itemsSharedHistory[index].NeedAcknowledgement;
+            if (NeedAck == true) {
+                NeedAck = "Required";
+            }
+            else {
+                NeedAck = "Not Required";
+            }
+            var SharingValidity = '';
+            if (itemsSharedHistory[index].SharingValidity != null) {
+                SharingValidity = moment(itemsSharedHistory[index].SharingValidity).format('MMM D YYYY');
+            }
+            for (var j = 0; j < itemsSharedHistory[index].SharedUsers.results.length; j++) {
+                if (uniqueValues.indexOf(itemsSharedHistory[index].SharedUsers.results[j].Title) == -1) {
+                    uniqueValues.push(itemsSharedHistory[index].SharedUsers.results[j].Title);
+                    if (itemsSharedHistory[index].SharedGroup != "Organization") {
+                        //option += "<option value='" + itemsSharedHistory[index].SharedUsers.results[j].Title + "'title='" + itemsSharedHistory[index].SharedUsers.results[j].Title + "'>" + itemsSharedHistory[index].SharedUsers.results[j].Title + "</option>";
+                    }
+                    else {
+                        if (jQuery.inArray(itemsSharedHistory[index].SharedClient.Title, arrDuplicateSharedTo) == '-1') {
+                            //option += "<option value='" + itemsSharedHistory[index].SharedClient.Title + "'title='" + itemsSharedHistory[index].SharedClient.Title + "'>" + itemsSharedHistory[index].SharedClient.Title + "</option>";
+                            arrDuplicateSharedTo.push(itemsSharedHistory[index].SharedClient.Title);
+                        }
+                    }
+                }
+                userNamecurretn = itemsSharedHistory[index].SharedUsers.results[j].Title
+                userEmail = itemsSharedHistory[index].SharedUserEmail;
+                userEmail = userEmail ? userEmail : "";
+                userId = itemsSharedHistory[index].SharedUsers.results[j].Id;
+            }
+            var SharedBYAck = itemsSharedHistory[index].Author.Title;
+            if (itemsSharedHistory[index].SharedGroup != "Organization") {
+                if (PermissionStatus == "Revoked") {
+                    sharedHistory += "<tr><td></td>";
+                    if (Action != "SharedWithMe") {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(userEmail);
+                        if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                            sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + userNamecurretn.charAt(0) + "</div><div class='designationtype'>";
+                        }
+                        else {
+                            sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        }
+                        sharedHistory += "<h3 class='namesection'>" + userNamecurretn + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + userEmail + "\");'>" + userEmail + "</a></div></div></td>";
+                    }
+                    else {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                        sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                    }
+
+                    sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                    sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                    }
+                    else {
+                        sharedHistory += "<td>" + userNamecurretn + "</td>";
+                    }
+                    sharedHistory += "<td>" + SharingValidity + "</td>";
+                    if (NeedAck == "Required") {
+                        if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                            var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                        else {
+                            var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                    }
+                    else {
+                        sharedHistory += "<td>Not Required</td>";
+                    }
+                    var RevokeRemarks = '';
+                    if (itemsSharedHistory[index].share_remarks != null) {
+                        RevokeRemarks = (itemsSharedHistory[index].share_remarks.substring(0, 20));
+                    }
+                    sharedHistory += "<td><div class='RevokedDetails'><span style='cursor: not-allowed;color: Red;'>Revoked</span><span>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Modified) + "</span><span style='color: Red;'>" + RevokeRemarks + "</span></td>";
+                    sharedHistory += "</tr>";
+                }
+                else {
+                    SharedTo = 'User';
+                    var UserOrGroup = 'User';
+                    sharedHistory += "<tr>";
+                    if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                        UserOrGroup = 'Everyone';
+                    }
+                    sharedHistory += "<td><input type='checkbox' class='historydocid' value=" + DocumentId + ',' + encodeURI(itemurl) + ',' + userId + ',' + currentItemId + ',' + Doc_Type + ',' + type + ',' + SharedTo + ',' + UserOrGroup + ',' + SiteURL + ',' + userEmail + " title='" + userId + "''></td>";
+                    if (Action != "SharedWithMe") {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(userEmail);
+                        if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                            IsBtnHide = getApprovalStatus(itemsSharedHistory[index].LibraryName, itemsSharedHistory[index].SiteURL, itemsSharedHistory[index].DocumentID);
+                            sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + userNamecurretn.charAt(0) + "</div><div class='designationtype'>";
+                        }
+                        else {
+                            IsBtnHide = false;
+                            sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        }
+                        sharedHistory += "<h3 class='namesection'>" + userNamecurretn + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + userEmail + "\");'>" + userEmail + "</a></div></div></td>";
+                    }
+                    else {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                        sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                    }
+                    sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                    sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                    }
+                    else {
+                        sharedHistory += "<td>" + userNamecurretn + "</td>";
+                    }
+                    sharedHistory += "<td>" + SharingValidity + "</td>";
+                    if (IsBtnHide == false) {
+                        if (NeedAck == "Required") {
+                            if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                                var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                sharedHistory += "<td>" + AckValue + "</td>";
+                            }
+                            else {
+                                var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, userEmail, userNamecurretn, PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                                sharedHistory += "<td>" + AckValue + "</td>";
+                            }
+                        }
+                        else {
+                            sharedHistory += "<td>Not Required</td>";
+                        }
+                        if (Action != "SharedWithMe") {
+                            sharedHistory += '<td><a style="cursor: pointer;" class="fileFolderRevoke" onclick="RevokePermission(' + DocumentId + ',\'' + encodeURI(itemurl) + '\',' + userId + ',' + currentItemId + ', \'' + IsModal + '\', \'' + itemsSharedHistory[index].DocumentType + '\', \'' + UserOrGroup + '\', \'' + SiteURL + '\', \'' + userEmail + '\')">Revoke</a></td>';
+                        }
+                        else {
+                            sharedHistory += '<td></td>';
+                        }
+                    }
+                    else {
+                        sharedHistory += '<td></td>';
+                        sharedHistory += '<td>Approval Pending</td>';
+                    }
+                    sharedHistory += "</tr>";
+                }
+            }
+            else { //to bind all the external users sharing in one table row [Organizations wise]
+                if (PermissionStatus == "Revoked") {
+                    //var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].SharedClient.Title);
+                    sharedHistory += "<tr><td></td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td><div class='flexingtwo'><div class='empoyeeimg clientnameshow'><span class='clienttext'><div id='profileImage'>" + itemsSharedHistory[index].SharedClient.Title.charAt(0) + "</div></span>";
+                        sharedHistory += "</div><div class='designationtype'><h3 class='namesection'>" + itemsSharedHistory[index].SharedClient.Title + "</h3><p>Guest Client</p></td>";
+                    }
+                    else {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                        sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                    }
+                    sharedHistory += "</div></div><td>" + DisplayPermissionType + "</td>";
+                    sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                    }
+                    else {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].SharedClient.Title + "</td>";
+                    }
+                    sharedHistory += "<td>" + SharingValidity + "</td>";
+                    if (NeedAck == "Required") {
+                        if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                            var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                        else {
+                            var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                    }
+                    else {
+                        sharedHistory += "<td>Not Required</td>";
+                    }
+                    var RevokeRemarks = '';
+                    if (itemsSharedHistory[index].share_remarks != null) {
+                        RevokeRemarks = (itemsSharedHistory[index].share_remarks.substring(0, 20));
+                    }
+                    sharedHistory += "<td><div class='RevokedDetails'><span style='cursor: not-allowed;color: Red;'>Revoked</span><span>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Modified) + "</span><span style='color: Red;'>" + RevokeRemarks + "</span></td>";
+                }
+                else {
+                    SharedTo = 'Organization';
+                    var UserOrGroup = 'User';
+                    if (itemsSharedHistory[index].SharedGroup == 'Everyone') {
+                        UserOrGroup = 'Everyone';
+                    }
+                    //var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].SharedClient.Title);
+                    sharedHistory += "<tr>";
+
+                    sharedHistory += "<td><input type='checkbox' class='historydocid' value=" + DocumentId + ',' + encodeURI(itemurl) + ',' + userId + ',' + currentItemId + ',' + Doc_Type + ',' + type + ',' + SharedTo + ',' + UserOrGroup + ',' + SiteURL + " title='" + userId + "''></td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td><div class='flexingtwo'><div id='profileImage'>" + itemsSharedHistory[index].SharedClient.Title.charAt(0) + "</div><div class='designationtype'>";
+                        sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].SharedClient.Title + "</h3>";
+                        sharedHistory += "</div></div></td>";
+                    }
+                    else {
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(itemsSharedHistory[index].Author.EMail);
+                        sharedHistory += "<td><div class='flexingtwo'><img src='" + attachment + "' data-themekey='#'><div class='designationtype'>";
+                        sharedHistory += "<h3 class='namesection'>" + itemsSharedHistory[index].Author.Title + "</h3>";
+                        sharedHistory += "<a href='javascript:void(0);' class='emailsec' onclick='OpenEmail(\"" + itemsSharedHistory[index].Author.EMail + "\");'>" + itemsSharedHistory[index].Author.EMail + "</a></div></div></td>";
+                    }
+                    sharedHistory += "<td>" + DisplayPermissionType + "</td>";
+                    sharedHistory += "<td>" + ShowCommonStandardDateFormat(itemsSharedHistory[index].Created) + "</td>";
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].Author.Title + "</td>";
+                    }
+                    else {
+                        sharedHistory += "<td>" + itemsSharedHistory[index].SharedClient.Title + "</td>";
+                    }
+                    sharedHistory += "<td>" + SharingValidity + "</td>";
+                    if (NeedAck == "Required") {
+                        if (Action != "SharedWithMe") { //This is 'Shared By Me'
+                            var AckValue = getAcknowledgeValue("", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                        else {
+                            var AckValue = getAcknowledgeValue("SharedWithMe", itemsSharedHistory[index].SharedGroup, itemsSharedHistory[index].SharedUsers.results[0].Title, itemsSharedHistory[index].SharedUsers.results[0].Id, itemsSharedHistory[index].Id, SharingValidity, ShowCommonStandardDateFormat(itemsSharedHistory[index].Created), PermissionType, '', '', PermissionStatus, SharedBYAck, itemsSharedHistory[index].DocType);
+                            sharedHistory += "<td>" + AckValue + "</td>";
+                        }
+                    }
+                    else {
+                        sharedHistory += "<td>Not Required</td>";
+                    }
+                    if (Action != "SharedWithMe") {
+                        sharedHistory += '<td><a style="cursor: pointer;" class="fileFolderRevoke" onclick=" RevokeGpPermission(' + userId + ', ' + currentItemId + ', \'' + IsModal + '\', \'' + itemsSharedHistory[index].DocumentType + '\', \'' + UserOrGroup + '\', \'' + encodeURI(itemurl) + '\', \'' + SiteURL + '\');">Revoke</a></td>';
+                    }
+                    else {
+                        sharedHistory += '<td></td>';
+                    }
+                    sharedHistory += "</tr>";
+                }
+            }
+        }
+
+        if (itemsSharedHistory.length == 0) {
+            $(".NoRecordFound").show();
+        }
+        else {
+            $(".NoRecordFound").hide();
+        }
+        if (ShareHostoryTable != '') {
+            ShareHostoryTable.destroy();
+        }
+        $("#sharedHistoryList").empty().append(sharedHistory);
+        $("#TotalItemscount").text(itemsSharedHistory.length);
+        if (itemsSharedHistory.length > 0) {
+            selectedHistoryDocEvent();
+            TablePaginationShareHistory();
+
+            //Check permissions
+            if (currentSectionType != 'My Documents' && currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe') {
+                getListUserEffectivePermissions(SiteURL, listTitle, true, parseInt(documentid), 'i:0#.f|membership|' + _spPageContextInfo.userLoginName + '');
+                if (IsNotpermission == true) {
+                    if (IsContributor == false && IsFullControl == false) { //Reader
+                        $(".fileFolderRevoke").hide();
+                    }
+                }
+                else {
+                    if (arrPermission.length > 0) {
+                        $(".fileFolderRevoke").hide();
+                    }
+                }
+            }
+        }
+    }
+    else {
+        $(".NoRecordFound").show();
+        $("#TotalItemscount").text('0');
+    }
+}
+
+//get Ack Value for Sharing History
+function getAcknowledgeValue(Section, SharedGroup, SharedUserName, SharedUserId, SharedItemId, SharingValidity, SharedOn, PermissionType, SharedUserEmail, SharedUserName, PermissionStatus, ShareBy, DocType) {
+    var AckValue = '';
+    var AckCounter = 0;
+    $("#btnAckNotifyAll").show();
+    if (Section == "SharedWithMe") {
+        var restQuery = "?$top=5000&$select=*,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + _spPageContextInfo.userEmail + "' and Acknowledge eq '1'";
+        $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+            if (DocumentAcknowledgement.length > 0) {
+                AckValue = '<a href="javascript:void(0);" class="AckDoc" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" style="color:green;">Acknowledged</a>';
+            }
+            else {
+                if (PermissionStatus == "Revoked") {
+                    $("#btnAckNotifyAll").hide();
+                    AckValue = '<div class="AckDoc" style="color:black;">Pending</div>';
+                }
+                else {
+                    AckValue = '<a href="javascript:void(0);" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" class="AckDoc" style="color:blue;">Pending</a>';
+                }
+            }
+        });
+    }
+    else {
+        if (SharedGroup == "My-Groups" || SharedGroup == "Selective") {
+            var restQuery = "?$top=5000&$select=*,ViewsBy/Id,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/Id eq '" + SharedUserId + "' and Acknowledge eq '1'";
+            $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+                if (DocumentAcknowledgement.length > 0) {
+                    AckValue = '<a href="javascript:void(0);" class="AckDoc" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" style="color:green;">Acknowledged</a>';
+                }
+                else {
+                    if (PermissionStatus == "Revoked") {
+                        $("#btnAckNotifyAll").hide();
+                        AckValue = '<div class="AckDoc" style="color:black;">Pending</div>';
+                    }
+                    else {
+                        AckValue = '<a href="javascript:void(0);" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" class="AckDoc" style="color:blue;">Pending</a>';
+                    }
+                }
+            });
+        }
+        else { //"Everyone", "Organization"
+            var GpUserDetails = [];
+            if (SharedGroup == "Organization") {
+                GpUserDetails = GetUserFromSPGp(SharedUserId);
+            }
+            else { //Everyone
+                GpUserDetails = GetUserFromEmp(SharedUserId);
+            }
+            for (var gp = 0; gp < GpUserDetails.length; gp++) {
+                var restQuery = "?$top=5000&$select=*,ViewsBy/Id,ViewsBy/EMail,ViewsBy/Title&$expand=ViewsBy&$filter=DocumentID eq '" + SharedItemId + "' and ViewsBy/EMail eq '" + GpUserDetails[gp].Email + "' and Acknowledge eq '1'";
+                $.when(getItemsWithQuery("DocumentAcknowledgement", restQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (DocumentAcknowledgement) {
+                    if (DocumentAcknowledgement.length > 0) {
+                        AckCounter++;
+                    }
+                });
+            }
+            if (PermissionStatus == "Revoked") {
+                $("#btnAckNotifyAll").hide();
+                AckValue = '<a href="javascript:void(0);" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" class="AckDoc" style="color:blue;">' + AckCounter + '</a>';
+            }
+            else {
+                AckValue = '<a href="javascript:void(0);" onclick="OpenAckNotify(\'' + Section + '\', \'' + SharedGroup + '\', \'' + SharedUserId + '\', \'' + SharedItemId + '\', \'' + SharingValidity + '\', \'' + SharedOn + '\', \'' + PermissionType + '\', \'' + SharedUserEmail + '\', \'' + SharedUserName + '\', \'' + PermissionStatus + '\', \'' + ShareBy + '\', \'' + DocType + '\');" class="AckDoc" style="color:blue;">' + AckCounter + '</a>';
+            }
+        }
+    }
+    return AckValue;
+}
+
+//Get all the Documents which are shared with me --Filter
+function GetDocumentsSharedFilter(SectionName) {
+    //Geenrating the THead of table
+    arrFileFolder = [];
+    var LoggedUserSPGp = [];
+    var ColumnName = "";
+    $("#DMSTable").empty().html('<table class="table mb-0 custom-table" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+    ColumnName += '<th class="text-center border-bottom-0 w-2">' +
+        '<label class="checkbox-inline hpx-20"><input type="checkbox" id="selectAllChk" value=""></label>' +
+        '</th>';
+    if (SectionName == 'SharedByMe') {
+        var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared From', 'Permission', ''];
+    }
+    else {
+       // var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Shared From', 'Permission', ''];
+       // var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Permission', ''];
+        var SharedMeColNames = ['File', 'Title', 'Reference', 'Category', 'Shared By', 'Permission'];
+    }
+    for (var i = 0; i < SharedMeColNames.length; i++) {
+        ColumnName += '<th data-localize="' + SharedMeColNames[i] + '">' + SharedMeColNames[i] + '</th>';
+    }
+    $("#theadItem").empty().append(ColumnName);
+    LoggedUserSPGp = GetSPGroup();
+
+    var assigntoQuery = '';
+    if (SectionName == 'SharedByMe') {
+        items = arrSharedBy.filter(function (f) { return f; });
+    }
+    else {
+        items = arrSharedTo.filter(function (f) { return f; });
+    }
+    var FilterShareById = getUserInformation("pplSharedBy");
+    var StringShareQuery = [];
+    var DropdownSharingValue = $("#ddlShare").val();
+    if ($("#ddlShare").val() == "Shared") {
+        DropdownSharingValue = null;
+    }
+    var NeedAck = '';
+    if ($("#ddlAckFilter").val() == "Required" || $("#ddlAckFilter").val() == "Acknowledged" || $("#ddlAckFilter").val() == "Pending") {
+        NeedAck = true;
+    }
+    else if ($("#ddlAckFilter").val() == "All") {
+        NeedAck = "All";
+    }
+    else {
+        NeedAck = false;
+    }
+    if (SectionName == 'SharedByMe') {
+        items = items.filter(function (obj, index) {
+            if ($("#pplSharedBy_TopSpan_ResolvedList").text() != "") {
+                for (var i = 0; i < FilterShareById.length; i++) {
+                    if (i == 0) {
+                        StringShareQuery.push(obj.SharedUsers.results[0].ID == FilterShareById[i]);
+                    }
+                    else {
+                        StringShareQuery.push(obj.SharedUsers.results[0].ID == FilterShareById[i]);
+                    }
+                }
+            }
+            else {
+                var assigntobyme = [];
+                StringShareQuery.push(true);
+            }
+
+            StringShareQuery.forEach(function (entry, index) {
+                if (index == 0) {
+                    assigntoQuery = entry;
+                }
+                else {
+                    assigntoQuery = entry || assigntoQuery;
+                }
+            });
+
+            if (obj.DocumentNo == null || obj.DocumentNo == '') {
+                obj.DocumentNo = "null";
+            }
+            var tempAck = obj.NeedAcknowledgement;
+            if ($("#ddlAckFilter").val() == "All") {
+                tempAck = true;
+            }
+            StringShareQuery = [];
+           // return ($("#FilterShareType").val() == "All" ? obj.PermissionType != "" : obj.PermissionType == $("#FilterShareType").val()) &&
+                    (assigntoQuery) &&
+                    ($("#ShareFilterRef").val().trim() == "null" ? obj.DocumentNo != "null" : (obj.DocumentNo.toLowerCase() == $("#ShareFilterRef").val().toLowerCase() || obj.DocumentNo.toLowerCase().indexOf($("#ShareFilterRef").val().toLowerCase()) != -1))
+            		&& ($("#FilterShareDocType").val() == "All" ? obj.DocType != "" : obj.DocType == $("#FilterShareDocType").val())
+            		&& (DropdownSharingValue == "All" ? obj.PermissionStatus != "" : obj.PermissionStatus == DropdownSharingValue)
+            		&& (NeedAck == "All" ? tempAck != "" : tempAck == NeedAck);
+            //Bhawana
+            return ($("#FilterShareType").val() == "All" ? obj.PermissionType != "" : obj.PermissionType == $("#FilterShareType").val()) &&
+                    (assigntoQuery) &&
+                    ($("#ShareFilterRef").val().trim() == "null" ? obj.DocumentNo != "null" : (obj.DocumentNo.toLowerCase() == $("#ShareFilterRef").val().toLowerCase() || obj.DocumentNo.toLowerCase().indexOf($("#ShareFilterRef").val().toLowerCase()) != -1))
+            		&& ($("#FilterShareDocType").val() == "All" ? obj.DocType != "" : obj.DocType == $("#FilterShareDocType").val())
+            		&& (DropdownSharingValue == "All" ? obj.PermissionStatus != "" : obj.PermissionStatus == DropdownSharingValue)
+            		&& (NeedAck == "All" ? tempAck != "" : tempAck == NeedAck)&&($("#filterSharedFrom").val() == ""?obj.SharedFrom!=null:$("#filterSharedFrom").val().trim()==obj.SharedFrom);
+
+        });
+    }
+    else {
+        items = items.filter(function (obj, index) {
+            if ($("#pplSharedBy_TopSpan_ResolvedList").text() != "") {
+                for (var i = 0; i < FilterShareById.length; i++) {
+                    if (i == 0) {
+                        StringShareQuery.push(obj.Author.ID == FilterShareById[i]);
+                    }
+                    else {
+                        StringShareQuery.push(obj.Author.ID == FilterShareById[i]);
+                    }
+                }
+            }
+            else {
+                var assigntobyme = [];
+                StringShareQuery.push(true);
+            }
+
+            StringShareQuery.forEach(function (entry, index) {
+                if (index == 0) {
+                    assigntoQuery = entry;
+                }
+                else {
+                    assigntoQuery = entry || assigntoQuery;
+                }
+            });
+            StringShareQuery = [];
+            if (obj.DocumentNo == null || obj.DocumentNo == '') {
+                obj.DocumentNo = "null";
+            }
+            var tempAck = obj.NeedAcknowledgement;
+            if ($("#ddlAckFilter").val() == "All") {
+                tempAck = true;
+            }
+            //return ($("#FilterShareType").val() == "All" ? obj.PermissionType != "" : obj.PermissionType == $("#FilterShareType").val()) &&
+                    (assigntoQuery) &&
+                    ($("#ShareFilterRef").val().trim() == "null" ? obj.DocumentNo != "null" : (obj.DocumentNo.toLowerCase() == $("#ShareFilterRef").val().toLowerCase() || obj.DocumentNo.toLowerCase().indexOf($("#ShareFilterRef").val().toLowerCase()) != -1))
+            		&& ($("#FilterShareDocType").val() == "All" ? obj.DocType != "" : obj.DocType == $("#FilterShareDocType").val())
+                    && (DropdownSharingValue == "All" ? obj.PermissionStatus != "" : obj.PermissionStatus == DropdownSharingValue)
+                    && (NeedAck == "All" ? tempAck != "" : tempAck == NeedAck);
+            //Bhawana
+            return ($("#FilterShareType").val() == "All" ? obj.PermissionType != "" : obj.PermissionType == $("#FilterShareType").val()) &&
+                    (assigntoQuery) &&
+                    ($("#ShareFilterRef").val().trim() == "null" ? obj.DocumentNo != "null" : (obj.DocumentNo.toLowerCase() == $("#ShareFilterRef").val().toLowerCase() || obj.DocumentNo.toLowerCase().indexOf($("#ShareFilterRef").val().toLowerCase()) != -1))
+            		&& ($("#FilterShareDocType").val() == "All" ? obj.DocType != "" : obj.DocType == $("#FilterShareDocType").val())
+            		&& (DropdownSharingValue == "All" ? obj.PermissionStatus != "" : obj.PermissionStatus == DropdownSharingValue)
+            		&& (NeedAck == "All" ? tempAck != "" : tempAck == NeedAck)&&($("#filterSharedFrom").val() == ""?obj.SharedFrom!=null:$("#filterSharedFrom").val().trim()==obj.SharedFrom);
+        });
+    }
+    var sharedWithMeTR = "";
+    if (items.length > 0) {
+        if (SectionName == 'SharedByMe') {
+            SharedByMeItems(items);
+        }
+        else {
+            SharedWithMeItems(items, 'SharedWithMe');
+        }
+
+        waitingDialog.hide();
+    }
+    else {
+        waitingDialog.hide();
+        sharedWithMeTR += '<tr><td colspan="12" style="text-align:center;">No file or folder found.</td></tr>';
+        $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+    }
+    $("#shared-documents-filter").modal('hide');
+}
+
+//To archive multiple files and folders
+function AddToArchive() {
+    var arrTempFolder = [];
+    arrTempFolder = arrFileFolder.filter(function (obj) {
+        return obj.SharedTo == "Everyone";// || obj.SharedTo == "Organization";
+    });
+    if (arrTempFolder.length > 0) {
+        arrFileFolder = arrFileFolder.filter(function (obj) {
+            return obj.SharedTo != "Everyone";// && obj.SharedTo != "Organization";
+        });
+    }
+    if (arrFileFolder.length == 0) {
+        alert("File(s)/Folder(s) shared to Everyone can't be archived.");
+        //waitingDialog.hide();
+        return false
+    }
+    arrFileFolder.forEach(function (entry, index) {
+        var ListName = "SharedDocument";
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: { 'type': ItemType },
+            'IsArchive': true
+        };
+        var dfd = $.Deferred();
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + entry.SharedItemId + "')",
+            type: "POST",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose",
+                "X-Http-Method": "PATCH",
+                "If-Match": '*'
+            },
+            data: JSON.stringify(Metadata),
+            success: function (data) {
+                arrSharedTo = arrSharedTo.filter(function (data) {
+                    return data.Id != entry.SharedItemId;
+                });
+                if (arrFileFolder.length == (index + 1)) {
+                    //SharedWithMeItems(arrSharedTo, 'SharedWithMe');
+                    if ($('#FilterShareDocType option').length == 0) {
+                        BindDMSDocumentType();
+                    }
+                    if ($("#pplSharedBy").html() == '') {
+                        initializePeoplePicker("pplSharedBy", true);
+                    }
+                    $("#btnShareFilter").trigger('click');
+                    //waitingDialog.hide();
+                    arrFileFolder = [];
+                    if (arrTempFolder.length == 0) {
+                        alert("File(s)/Folder(s) have been archived.");
+                    }
+                    else {
+                        arrTempFolder = [];
+                        alert("File(s)/Folder(s) shared to Everyone can't be archived. Rest of the File(s)/Folder(s) have been archived.");
+                    }
+                    $(".chkShareToMe").prop("checked", "");
+                    $(".chkShareToMe").click(function () {
+                        var Properties = this.value.split(',');
+                        if (this.checked == true) {
+                            arrFileFolder.push({
+                                SharedItemId: Properties[0].trim(),
+                                type: Properties[1].trim(),
+                                SharedTo: Properties[2].trim(),
+                                DocumentId: Properties[3].trim(),
+                                ServerURL: Properties[4].trim(),
+                                userOrgId: Properties[5].trim(),
+                                SiteURL: Properties[6].trim(),
+                                IsBlock: Properties[7].trim()
+                            });
+                        }
+                        else {
+                            var selected = this.value;
+                            arrFileFolder = arrFileFolder.filter(function (obj) {
+                                return obj.SharedItemId != Properties[0].trim();
+                            });
+                        }
+                    });
+                    $("#selectAllChk").click(function (e) {
+                        if (this.checked == true) {
+                            $('.chkShareToMe').prop("checked", "");
+                            $('.chkShareToMe').trigger('click');
+                        }
+                        else {
+                            $('.chkShareToMe').prop("checked", "");
+                            arrFileFolder = [];
+                        }
+                        //waitingDialog.hide();
+                    });
+                }
+            },
+            error: function (error) {
+                console.log(JSON.stringify(error));
+                dfd.reject(error);
+            }
+        });
+        return dfd.promise();
+    });
+}
+
+//To remove archive multiple files and folders
+function RemoveArchive() {
+    arrFileFolder.forEach(function (entry, index) {
+        var ListName = "SharedDocument";
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: { 'type': ItemType },
+            'IsArchive': false
+        };
+        var dfd = $.Deferred();
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + entry.SharedItemId + "')",
+            type: "POST",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose",
+                "X-Http-Method": "PATCH",
+                "If-Match": '*'
+            },
+            data: JSON.stringify(Metadata),
+            success: function (data) {
+                /*arrSharedTo.forEach(function (value, i) {   
+	                if (value.Id == entry.SharedItemId) {
+	                    value.IsArchive = null;
+	    			}
+	            }); */
+                arrSharedTo = arrSharedTo.filter(function (data) {
+                    return data.Id != entry.SharedItemId;
+                });
+                if (arrFileFolder.length == (index + 1)) {
+                    if ($('#FilterShareDocType option').length == 0) {
+                        BindDMSDocumentType();
+                    }
+                    if ($("#pplSharedBy").html() == '') {
+                        initializePeoplePicker("pplSharedBy", true);
+                    }
+                    $("#btnShareFilter").trigger('click');
+                    alert("File(s)/Folder(s) have been restored.");
+                    arrFileFolder = [];
+                    $(".chkFileFolder").prop("checked", "");
+                    //waitingDialog.hide();
+                    $(".chkShareToMe").click(function () {
+                        var Properties = this.value.split(',');
+                        if (this.checked == true) {
+                            arrFileFolder.push({
+                                SharedItemId: Properties[0].trim(),
+                                type: Properties[1].trim(),
+                                SharedTo: Properties[2].trim(),
+                                DocumentId: Properties[3].trim(),
+                                ServerURL: Properties[4].trim(),
+                                userOrgId: Properties[5].trim(),
+                                SiteURL: Properties[6].trim(),
+                                IsBlock: Properties[7].trim()
+                            });
+                        }
+                        else {
+                            var selected = this.value;
+                            arrFileFolder = arrFileFolder.filter(function (obj) {
+                                return obj.SharedItemId != Properties[0].trim();
+                            });
+                        }
+                    });
+                    $("#selectAllChk").click(function (e) {
+                        if (this.checked == true) {
+                            $('.chkShareToMe').prop("checked", "");
+                            $('.chkShareToMe').trigger('click');
+                        }
+                        else {
+                            $('.chkShareToMe').prop("checked", "");
+                            arrFileFolder = [];
+                        }
+                        //waitingDialog.hide();
+                    });
+                }
+            },
+            error: function (error) {
+                console.log(JSON.stringify(error));
+                dfd.reject(error);
+            }
+        });
+        return dfd.promise();
+    });
+}
+
+//open confirmation popup for revoking - users
+function RevokePermission(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail) {
+    if (UserOrGroup == "Everyone") {
+        if (CheckForEveryone() == false) {
+            alert("You are not authorized to revoke file/folder permission.");
+            return false;
+        }
+    }
+    $("#txtRevokeMsg").val('');
+    $("#RevokePermission").modal('show');
+    $(".ParentbtnOpenRevoke").empty().append('<button type="button" class="btn custom-btn mr-8 wpx-87" id="btnOpenRevoke">Submit</button>');
+    $("#btnOpenRevoke").click(function () {
+        if (confirm("Are you sure, you want to revoke permission?")) {
+            revokeFile(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail);
+        }
+    });
+}
+
+//to revoke permission for USers
+function revokeFile(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail) {
+    CopySourceURL = SiteURL;
+    if (itemurl.includes('/Documents') == true && itemurl.includes('/Shared%20Documents') == false) {
+        itemurl = itemurl.replace('/Documents', '/Shared%20Documents');
+    }
+    if (SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(SiteURL)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    if (FileFolder.toLowerCase() == 'file') {
+        var endPointUrl = SiteURL + "/_api/web/GetFileByServerRelativeUrl('" + itemurl + "')/ListItemAllFields/breakroleinheritance(true)";
+    }
+    else {
+        var endPointUrl = SiteURL + "/_api/web/GetFolderByServerRelativeUrl('" + itemurl + "')/ListItemAllFields/breakroleinheritance(true)";
+    }
+    var headers = {
+        "Accept": "application/json;odata=verbose",
+        "content-Type": "application/json;odata=verbose",
+        "X-RequestDigest": RequestDigest
+    }
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        dataType: 'json', success: function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            DeleateUserPermission(userId, itemurl, undefineditemID, currentItemId, "Selective", 0, 0, IsModalOpen, FileFolder, UserOrGroup, UserEmail);
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            DeleateUserPermission(userId, itemurl, undefineditemID, currentItemId, "Selective", 0, 0, IsModalOpen, FileFolder, UserOrGroup, UserEmail);
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+
+//Delete permissions of Files
+function DeleateUserPermission(userPrincipleId, itemurl, undefineditemID, currentItemId, userType, currentItem, TotalLength, IsModalOpen, FileFolder, UserOrGroup, UserEmail) {
+    if (CopySourceURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(CopySourceURL)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    var headers = {
+        'X-RequestDigest': RequestDigest,
+        'X-HTTP-Method': 'DELETE'
+    }
+    if (UserEmail != null && UserEmail != "null" && UserEmail != "") {
+        userPrincipleId = GetUserId(UserEmail, CopySourceURL);
+    }
+    if (FileFolder.toLowerCase() == 'file') {
+        var endPointUrl = CopySourceURL + "/_api/web/GetFileByServerRelativeUrl('" + itemurl + "')/ListItemAllFields/roleassignments/getbyprincipalid(" + userPrincipleId + ")";
+    }
+    else {
+        var endPointUrl = CopySourceURL + "/_api/web/GetFolderByServerRelativeUrl('" + itemurl + "')/ListItemAllFields/roleassignments/getbyprincipalid(" + userPrincipleId + ")";
+    }
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        headers: headers,
+        async: false,
+        success: function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (UserOrGroup == "Everyone") {
+                var LibraryName='';//Bhawana
+                if (Documentname.includes('/') == true) {
+                    LibraryName = Documentname.split('/')[0];
+                }
+                else {
+                    LibraryName = Documentname;
+                }
+                var Metadata;
+                var ItemType;
+                if (LibraryName.includes('/Documents') == true) {
+                     ItemType = GetItemTypeForLibraryName('/Shared_x0020_Documents');
+                }
+                else {
+                    ItemType = GetItemTypeForLibraryName(LibraryName);
+                }
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    AccessLevel: "Revoked"
+                }
+                updateItemWithIDItemListDocuments(LibraryName, Metadata, undefineditemID, CopySourceURL);
+            }
+            var ListName = "SharedDocument";
+            var Metadata;
+            var ItemType = GetItemTypeForListName(ListName);
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                PermissionStatus: "Revoked",
+                share_remarks: $("#txtRevokeMsg").val(),
+                SharedEnd: new Date().toISOString()
+            }
+            $.when(updateItemWithIDItemListDocuments(ListName, Metadata, currentItemId, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
+                SendRevokeEmail(UserOrGroup, currentItemId);
+                $("#RevokePermission").modal('hide');
+                if (IsModalOpen != 'false') {
+                    alert("permission deleted sucessfully.");
+                }
+                $('#myModalShareHistory').modal('hide');
+            });
+            console.log(userPrincipleId + ' Successfully removed Permission !');
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.includes("Attempted to perform an unauthorized operation") == true) {
+                alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+            }
+            else {
+                alert(error.responseText);
+            }
+        }
+    });
+}
+
+//update data when revoking permission
+function updateItemWithIDItemListDocuments(ListName, Metadata, undefineditemID, webUrl, asyncCall) {
+    if (ListName == "Shared%20Documents") {
+        ListName = "Documents";
+    }
+    if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(webUrl)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    var dfd = $.Deferred();
+    var oweburl = webUrl + "/_api/Web/Lists/getByTitle('" + ListName + "')/Items(" + undefineditemID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            console.log(undefineditemID + ': Item is set permission');
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.indexOf('does not exist on type') != -1) {
+                alert("Required columns does not exists. Kindly contact administrator to activate features.");
+            }
+            else {
+                var tempError = '';
+                if (error.responseJSON.error.message.value == undefined) {
+                    tempError = JSON.stringify(error);
+                }
+                else {
+                    tempError = error.responseJSON.error.message.value;
+                }
+                alert(tempError);
+            }
+            dfd.reject(error);
+            waitingDialog.hide();
+        }
+    });
+    return dfd.promise();
+}
+
+//Send Email to revoke permission
+function SendRevokeEmail(RevokedTo, ItemId) {
+    var Query = "?$select=*,ID,SharedGroup,SharedUsers/Title&$expand=SharedUsers&$filter=Id eq '" + ItemId + "' ";
+    $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {
+        var ToUserName = '';
+        var ToUserArray = [];
+        var EmailDesign = '';
+        if (items[0].SharedGroup == "Selective") {
+            ToUserArray.push(items[0].SharedUserEmail);
+            ToUserName = items[0].SharedUsers.results[0].Title;
+            EmailDesign += "Dear " + ToUserName + ",<br/><br/>" + _spPageContextInfo.userDisplayName + " has revoked the sharing of below document with you.<br/><br/>";
+        }
+        else if (items[0].SharedGroup == "Organization") {
+            ToUserArray.push(items[0].SharedUsers.results[0].Title);
+            ToUserName = items[0].SharedUsers.results[0].Title;
+            EmailDesign += "Dear All,<br/><br/>" + _spPageContextInfo.userDisplayName + " has revoked the sharing of below document with you.<br/><br/>";
+        }
+        if (RevokedTo == "Everyone") {
+            EmailDesign += "Dear All,<br/><br/>" + _spPageContextInfo.userDisplayName + " has revoked the sharing of below document with you.<br/><br/>";
+        }
+        EmailDesign = EmailDesign + "<div><strong>File Name: </strong>" + $("#filenamee").text() + "</div>" +
+	                                "<div><strong>Title:</strong> " + $("#filetitle").text() + "</div>" +
+	                            "<div><strong>Reference:</strong> " + $("#referNo").text() + "</div>" +
+	                                "</br><div><strong>Message:</strong> " + $("#txtRevokeMsg").val() + "</div></br></br></br>";
+
+        EmailDesign += "This is an auto generated email. Please don't reply.";
+        var Metadata;
+        if (RevokedTo == "Everyone") {
+            ToUserArray = getCompanyEmailId();
+        }
+        Metadata = {
+            'properties': {
+                '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+                'From': _spPageContextInfo.userEmail,
+                'To': { 'results': ToUserArray },
+                //'CC': { 'results': ccUsers },
+                'Body': EmailDesign,
+                'Subject': 'A document has been shared with you.'
+            }
+        };
+
+        var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+        $.ajax({
+            contentType: 'application/json',
+            url: sitetemplateurl,
+            type: "POST",
+            async: false,
+            data: JSON.stringify(Metadata),
+            headers: {
+                "Accept": "application/json;odata=verbose",
+                "content-type": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+            },
+            success: function (data) {
+                //Do Nothing
+            },
+            error: function (err) {
+                waitingDialog.hide();
+                alert("Send mail Revoke  " + JSON.stringify(err));
+            }
+        });
+    });
+
+}
+
+//Multiple revoke for My documents
+function RevokeOnCheckBox() {
+    if (selectedHistoryDoc.length > 0) {
+        $("#txtRevokeMsg").val('');
+        $("#RevokePermission").modal('show');
+        $(".ParentbtnOpenRevoke").empty().append('<button type="button" class="btn custom-btn mr-8 wpx-87" id="btnOpenRevoke">Submit</button>');
+        $("#btnOpenRevoke").click(function () {
+            if (confirm("Are you sure, you want to revoke permission?")) {
+                var filesHistory = 1;
+                for (var index = 0; index < selectedHistoryDoc.length; index++) {
+                    var value = selectedHistoryDoc[index];
+                    var arraycureent = [];
+                    arraycureent = value.split(",");
+                    if (arraycureent[6] == "User") {
+                        if (arraycureent[7] == "Everyone") {
+                            if (CheckForEveryone() == false) {
+                                alert("You are not authorized to revoke " + arraycureent[1].split("/").pop() + " permission.");
+                            }
+                            else {
+                                revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                            }
+                        }
+                        else {
+                            revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                        }
+                    }
+                    else {
+                        revokeGpFile(arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[1], arraycureent[8]);
+                    }
+                }
+                $("#myModalShareHistory").modal("hide");
+                return false;
+            }
+        });
+    }
+    else {
+        alert("Please select one or more history for revoke.");
+        return false;
+    }
+}
+
+//If Scope eq 'HOD'
+//And (Logged_In user ne HOD: - Then don't show Everyone share and Revoke for EveryoneSharing)
+//And (Logged_In user eq HOD: - Then show Everyone share and Revoke for EveryoneSharing);
+function CheckForEveryone() {
+    var IsEveryoneShareRev = true;
+    var Query = "?$select=ID,ApproverRequired,Approver/Title,Approver/EMail,Approver/Id,WebPartName,Department/Id&$top=5000&$expand=Department,Approver&$filter=WebPartName eq 'Documents' and Department/Id eq '" + SeletedDeptId + "' and CompanyId eq '" + Logged_CompanyId + "' and Scope eq 'HOD'";
+    $.when(getItemsWithQuery("ProcessApprovers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+        if (valuesArray.length > 0) {
+            if (valuesArray[0].ApproverRequired == true) {
+                var Query = "?$select=*,ID,WebPartName,Department/Id,Contributors/EMail&$top=5000&$expand=Contributors,Department&$filter=Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' and WebPartName eq 'Head of the department' and Department/Id eq '" + SeletedDeptId + "' and CompanyId eq '" + Logged_CompanyId + "'";
+                $.when(getItemsWithQuery("ProcessApprovers", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+                    if (valuesArray.length > 0) {
+                        IsEveryoneShareRev = true;
+                    }
+                    else {
+                        IsEveryoneShareRev = false;
+                    }
+                });
+            }
+        }
+
+    });
+    return IsEveryoneShareRev;
+}
+
+//Revoke Permission of clients
+function RevokeGpPermission(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL) {
+    $("#RevokePermission").modal('show');
+    $("#txtRevokeMsg").val('');
+    $(".ParentbtnOpenRevoke").empty().append('<button type="button" class="btn custom-btn mr-8 wpx-87" id="btnOpenRevoke">Submit</button>');
+    $("#btnOpenRevoke").click(function () {
+        if (confirm("Are you sure, you want to revoke permission?")) {
+            revokeGpFile(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL);
+        }
+    });
+}
+
+//to revoke permission for Group
+function revokeGpFile(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL) {
+    if (serverURL.includes('Documents') == true && serverURL.includes('Shared%20Documents') == false) {
+        serverURL.replace('Documents', 'Shared%20Documents');
+    }
+    if (SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(SiteURL)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+
+    if (FileFolder.toLowerCase() == 'file') {
+        var endPointUrl = SiteURL + "/_api/web/GetFileByServerRelativeUrl('" + serverURL + "')/ListItemAllFields/roleassignments/getbyprincipalid(" + GroupId + ")";
+    }
+    else {
+        var endPointUrl = SiteURL + "/_api/web/GetFolderByServerRelativeUrl('" + serverURL + "')/ListItemAllFields/roleassignments/getbyprincipalid(" + GroupId + ")";
+    }
+    $.ajax({
+        url: endPointUrl,
+        type: "POST",
+        async: false,
+        headers: {
+            "X-RequestDigest": RequestDigest,
+            "Accept": "application/json;odata=verbose",
+            "content-Type": "application/json;odata=verbose",
+            'X-HTTP-Method': 'DELETE'
+        },
+        async: false,
+        success: function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (UserOrGroup == "Everyone") {
+                if (Documentname.includes('/') == true) {
+                    var LibraryName = Documentname.split('/')[0];
+                }
+                else {
+                    var LibraryName = Documentname;
+                }
+                var Metadata;
+                if (ListName.includes('Documents') == true) {
+                    var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+                }
+                else {
+                    var ItemType = GetItemTypeForLibraryName(ListName);
+                }
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    AccessLevel: "Revoked"
+                }
+                updateItemWithIDItemListDocuments(LibraryName, Metadata, currentItemId, SiteURL);
+            }
+
+            var ItemType = GetItemTypeForListName('SharedDocument');
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                PermissionStatus: "Revoked",
+                share_remarks: $("#txtRevokeMsg").val(),
+                SharedEnd: new Date().toISOString()
+            }
+            $.when(updateItemWithIDItemListDocuments('SharedDocument', Metadata, currentItemId, _spPageContextInfo.webAbsoluteUrl, false)).done(function (Result) {
+                SendRevokeEmail(UserOrGroup, currentItemId);
+                $("#RevokePermission").modal('hide');
+                if (IsModalOpen != 'false') {
+                    alert("Permission has been revoked.");
+                    $('#myModalShareHistory').modal('hide');
+                }
+                return false;
+            });
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.includes("Attempted to perform an unauthorized operation") == true) {
+                alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+            }
+            else {
+                alert(error.responseJSON.error.message.value);
+            }
+            return false;
+        }
+    });
+}
+
+function GetUserId(userName, SiteUrl) {
+    var userID = "";
+    var prefix = "i:0#.f|membership|";
+    var siteUrl = SiteUrl;
+    var accountName = prefix + userName;
+    $.ajax({
+        url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+            encodeURIComponent(accountName) + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            userID = data.d.Id;
+            // alert("Received UserId" + data.d.Id);
+            // alert(JSON.stringify(data));
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+            console.log(JSON.stringify("This user:-" + userName));
+
+        }
+    });
+    return userID;
+}
+
+//get sub-folder/files for Shared Documents/folder
+function GetSubShareFolders(subFolderlLink, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+    var encodedeUrl = decodeURI(subFolderlLink)
+    var surFoldersArray = new Array();
+    var subFolders = encodedeUrl.split('/');
+    var folderurls = "";
+    for (var subFolderIndex = 0; subFolderIndex < subFolders.length; subFolderIndex++) {
+        if (subFolders[subFolderIndex] == "Documents") {
+            subFolders[subFolderIndex] = "Shared%20Documents";
+        }
+        if (subFolders[subFolderIndex] == CheckLibary || surFoldersArray.length > 0) {
+            folderurls += subFolders[subFolderIndex] + "/";
+            if (subFolders[subFolderIndex] != null && subFolders[subFolderIndex] != "") {
+                surFoldersArray.push(SubFolderProperties(folderurls, subFolders[subFolderIndex]));
+            }
+        }
+    }
+    ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation);
+}
+
+//code for Folder-Navigation for Shared Documents/folder
+function ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+    var braCummHtml = "";
+    var targetServerRaltiveUrl = "";
+    if (DMS_Type == "My Documents") {
+        for (var index = 0; index < surFoldersArray.length; index++) {
+            if (index != 0) {
+                var TempfolderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
+                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+                if (index == 1) {
+                    braCummHtml += '<li title="Root" class="mybradcumb first"><a href="javascript:void(0);" onclick="shareTootFolder();">Root</a></li>';
+                } else {
+                    var subfolderLengthCheck = surFoldersArray[index].folderName;
+                    if (subfolderLengthCheck.length > 15) {
+                        subfolderLengthCheck = subfolderLengthCheck.substring(0, 14) + "...";
+                    }
+
+                    if (subfolderLengthCheck.length > 0) {
+                        braCummHtml += '<li title="' + surFoldersArray[index].folderName + '" class="mybradcumb first"><a href="' + targetUrl + '">' + subfolderLengthCheck + '</a></li>';
+                    }
+                }
+                if (index == surFoldersArray.length - 1) {
+                    targetServerRaltiveUrl = surFoldersArray[index].folderUrl;
+                }
+            }
+        }
+    } else {
+        for (var index = 0; index < surFoldersArray.length; index++) {
+            //if (index != 0)
+            {
+                var TempfolderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
+                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+                if (index == 0) {
+                    braCummHtml += '<li title="Root" class="mybradcumb first"><a href="javascript:void(0);" onclick="shareTootFolder();">Root</a></li>';
+                } else {
+                    var subfolderLengthCheck = surFoldersArray[index].folderName;
+                    if (subfolderLengthCheck.length > 15) {
+                        subfolderLengthCheck = subfolderLengthCheck.substring(0, 14) + "...";
+                    }
+
+                    if (subfolderLengthCheck.length > 0) {
+                        braCummHtml += '<li title="' + surFoldersArray[index].folderName + '" class="mybradcumb first"><a href="' + targetUrl + '">' + subfolderLengthCheck + '</a></li>';
+                    }
+                }
+                if (index == surFoldersArray.length - 1) {
+                    targetServerRaltiveUrl = surFoldersArray[index].folderUrl;
+                }
+            }
+        }
+    }
+
+    var bradCumDiv = $("#generateBradCumbNew");
+    bradCumDiv.html("");
+    bradCumDiv.append(braCummHtml);
+    $(".mybradcumb ").unbind().click(function () {
+        $(this).nextAll().remove(".mybradcumb ");
+        //Create Cookies for Target Folder
+    });
+}
+
+function shareTootFolder() {
+    if ($(".headdingLinks").text() == 'Property Documents') {
+        $("#tabSharedToMe").trigger("click");
+    }
+    else {
+        $("#tabSharedByMe").trigger("click");
+    }
+}
+
+//Revoke permission Multiple select
+function RevokeMultiPermission() {
+    if (confirm("It will revoke all the permissions applied to file. Are you sure, you want to revoke?")) {
+        arrFileFolder.forEach(function (entry, index) {
+            //get All the files with Document Id
+            var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(DocumentID eq '" + entry.DocumentId + "' and PermissionStatus ne 'Revoked') ";
+            $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {
+                for (var i = 0; i < items.length; i++) {
+                    $("#FilePath").text(items[i].DocumentURL);
+                    CopySourceURL = items[i].SiteURL;
+                    if (items[i].SiteURL == "null" || items[i].SiteURL == null || items[i].SiteURL == "undefined" || items[i].SiteURL == undefined) {
+                        if (items[i].DocumentURL.indexOf("DepartmentalDMS") != -1) {
+                            items[i].SiteURL = window.location.origin + encodeURI(items[i].DocumentURL).split('DepartmentalDMS')[0];
+                        }
+                        else {
+                            items[i].SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                        }
+                    }
+                    if (items[i].SharedGroup == "Organization") {
+                        RevokeGpPermission(items[i].SharedUsers.results[0].ID, items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].DocumentURL, items[i].SiteURL);
+                    }
+                    else {
+                        RevokePermission(items[i].DocumentID, items[i].DocumentURL, items[i].SharedUsers.results[0].ID, items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].SiteURL, items[i].SharedUserEmail);
+                    }
+                }
+            });
+            if (arrFileFolder.length == (index + 1)) {
+                $("#btnRefreshSharedTbl").trigger("click");
+                alert("All permissions are revoked.");
+                $(".chkShareToMe").prop('checked', '');
+                arrFileFolder = [];
+                waitingDialog.hide();
+            }
+        });
+    }
+}
+
+//-----------------------------------------Sharing Code starts----------------------------------------------------
+//validation while sharing any file
+function ShareFileValidation() {
+    if (SharingUserEmail.length == 0) {
+        if ($("#sharewith").val() != "Everyone") {
+            alert("Kindly select any users first.");
+            return;
+        }
+        else {
+            if ($("#expiredon").prop("checked") && $("#expiredats").val() == "") {
+                alert("Kindly enter expiry date.");
+                return;
+            }
+            else {
+                return true;
+            }
+        }
+    }
+    else if ($("#expiredon").prop("checked") && $("#expiredats").val() == "") {
+        alert("Kindly enter expiry date.");
+        return;
+    }
+    else if (new Date() > new Date($("#expiredats").val())) {
+        alert("Expiry date should me greater than today.");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+//Method for sharing multiple file and Folder
+function shareFileMulti() {
+    var arrRevokeIds = [];
+    var SharingRespose = true;
+    var IsContinueEvery1Share = true;
+    var sharefileuser = [];
+    sharedUsersIdArrayListItemCollection = [];
+    sharedUsersIdArrayListItemCollection = SharingUserId.filter(function (f) { return f; })
+    var txtDocshareingTypePermissionLevel = $('#sharewith').val();
+    var txttsharedWithPermission = $('#sharedWithPermission').val();
+    var txtSharedDocumetnOnDemandId = '';
+    var serverRelativeFileUrl = '';
+    if (sharedUsersIdArrayListItemCollection.length == 0) {
+        for (var groupId = 0; groupId < SharingUserEmail.length; groupId++) {
+            SharingUserId.push(parseInt(SharingUserEmail[groupId].GroupId));
+        }
+        sharedUsersIdArrayListItemCollection = SharingUserId.filter(function (f) { return f; })
+    }
+    FailDueToCheckOut = 0;
+    if (Documentname[Documentname.length - 1] == '/') {
+        var folderName = Documentname;
+    }
+    else {
+        var folderName = Documentname + '/';
+    }
+    $("#LibProject").text(currentClientName);
+    arrFileFolder.forEach(function (entry, index) {
+        if (entry.type.toLowerCase() == 'file' || entry.type.toLowerCase() == "folder") {
+            if (IsFileCheckout(folderName, entry.FileFolderName, entry.SiteURL, '') != true && entry.type == 'file') {
+                SharingRespose = true;
+                txtSharedDocumetnOnDemandId = DocumentId = entry.DocumentId;
+                CopySourceURL = entry.SiteURL;
+                CopyLibrary = entry.SelectedLibrary;
+                $("#FilePath").text(entry.ServerURL);
+                $("#FileTitle").text(entry.FileTitle);//File/Folder Title
+                $("#FileName").text(entry.FileFolderName);
+                //If PDF
+                var tempAction = entry.ServerURL;
+                if (entry.FileFolderName.includes(".pdf") == true) {//to check if it's PDF
+                    if (entry.ServerURL.search(/\bShared%20Documents\b/) >= 0) {
+                        tempAction = entry.ServerURL.replace('Shared%20Documents', "Shared Documents");
+                    }
+                    $(".txtCopyLink").val(DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + entry.ServerURL.substr(0, tempAction.lastIndexOf("/")) + "&p=true");
+                }
+                else {
+                    //If any other file than PDF
+                    if (entry.ServerURL.includes("DocumentManagementSystem") == true || entry.ServerURL.includes("DepartmentalDMS") == true) {
+                        if (entry.ServerURL.includes("DocumentManagementSystem") == true) {
+                            $(".txtCopyLink").val(entry.SiteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + encodeURIComponent(entry.ServerURL) + "&parent=" + encodeURIComponent(entry.ServerURL.substr(0, entry.ServerURL.lastIndexOf("/") + 0)));
+                        } else {
+                            $(".txtCopyLink").val(entry.SiteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + encodeURIComponent(entry.ServerURL) + "&parent=" + encodeURIComponent(entry.ServerURL.substr(0, entry.ServerURL.lastIndexOf("/") + 0)));
+                        }
+                    }
+                    else {
+                        var HostName = window.location.origin + entry.ServerURL.substr(0, entry.ServerURL.lastIndexOf("/") + 0);
+                        if (entry.ServerURL.search(/\bShared%20Documents\b/) >= 0) {
+                            tempAction = entry.ServerURL.replace('Shared%20Documents', "Shared Documents");
+                        }
+                        $(".txtCopyLink").val(HostName + "/Forms/AllItems.aspx?id=" + encodeURIComponent(tempAction) + "&parent=" + encodeURIComponent(tempAction.substr(0, entry.ServerURL.lastIndexOf("/") + 0)));
+                    }
+                }
+                serverRelativeFileUrl = SelectedFileServerURL = entry.ServerURL;
+                sharefileuser = getSharedUsersId(txtSharedDocumetnOnDemandId); //get Id of already shared users
+                //return false;
+                arrRevokeIds = $.grep(sharefileuser, function (element) {
+                    return $.inArray(element, sharedUsersIdArrayListItemCollection) !== -1;
+                });
+
+                sharedUsersIdArrayListItemCollection = sharedUsersIdArrayListItemCollection.concat(sharefileuser);
+                SharingRespose = ShareFilesFolder(serverRelativeFileUrl, "File", '', txtDocshareingTypePermissionLevel);
+                if (SharingRespose != false) {
+                    SharingRespose = true;
+                }
+                if (sharedUsersIdArrayListItemCollection.length > 0 && SharingRespose == true) {
+                    var securityLeveltext = $('#sharewith').val();//Update Document Properties
+                    if (PermissionStatus == "") {
+                        updateDocumentPropertiesOnItemSharing(txtSharedDocumetnOnDemandId, serverRelativeFileUrl, txtDocshareingTypePermissionLevel, sharedUsersIdArrayListItemCollection, CopySourceURL, false);
+                    }
+
+                    GetDocumentsRevoke(arrRevokeIds, txtSharedDocumetnOnDemandId);
+                    var Shared = [];
+                    Shared = getSharedType();
+                    AddSharedLinkToList(serverRelativeFileUrl, SharingUserId, txtSharedDocumetnOnDemandId, entry.type, $('#sharewith').val(), $('#sharedWithPermission').val(), Shared[0], entry.DocType, Shared[1]);
+                    //mail send
+                    if ($('#notifymail').prop('checked') == true && PermissionStatus == "")    //If SendMail Checkbox check for file
+                    {
+                        var ToUserArray = [];
+                        var Permission = $("#sharedWithPermission :selected").text();
+                        if (SharingUserEmail.length > 0) {
+                            var EmailDesign = '';
+                            ValidityDateHTML = '';
+                            if ($("#expiredats").val() != "") {
+                                ValidityDateHTML = "<div><strong>Sharing valid till:</strong> " + moment($('#expiredats').val()).format('MMM DD YYYY') + "</div>";
+                            }
+                            EmailDesign = _spPageContextInfo.userDisplayName + " has shared the following document with you.<br/><br/>";
+                            //for (i = 0; i < SharingUserEmail.length; i++) {
+                            EmailDesign = EmailDesign + "<div><strong>File Name:</strong> " + $("#FileName").text() + "</div>" +
+                                                        "<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + entry.FileTitle + "</div>" +
+                                                        "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + entry.FileType + "</div>" +
+                                                        "<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + entry.FileRef + "</div>" +
+                                                     "<div><strong>Permission:</strong> " + Permission + "</div>" +
+                                                     "<div><strong>Shared By:</strong> " + _spPageContextInfo.userDisplayName + "</div>" +
+                                                     "<div><strong>Shared On:</strong> " + moment(new Date()).format('MMM DD YYYY') + " " + new Date().toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3") + "</div>" +
+                                                     ValidityDateHTML +
+                                                     "</br><div><strong>Message:</strong> " + $("#txtShareMessage").val() + "</div></br></br></br>" +
+                                                    "<div><a href=" + $(".txtCopyLink").val() + ">Click here</a> to open the document.</div>" + "<br/><br/>";
+                            //}
+
+                            EmailDesign += "This is an auto generated email. Please don't reply.";
+							for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+						    	if(EmailDesign.includes(LabelDefaultLangauge[k].Key) == true){
+						    		EmailDesign = EmailDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+						    	}	
+						    }
+                        }
+                        var Metadata;
+                        ToUserArray = SharingUserEmail.filter(function (f) { return f; })
+                        Metadata = {
+                            'properties': {
+                                '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+                                'From': _spPageContextInfo.userEmail,
+                                'To': { 'results': ToUserArray },
+                                //'CC': { 'results': ccUsers },
+                                'Body': EmailDesign,
+                                'Subject': 'A document has been shared with you.'
+                            }
+                        };
+
+                        var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+                        $.ajax({
+                            contentType: 'application/json',
+                            url: sitetemplateurl,
+                            type: "POST",
+                            data: JSON.stringify(Metadata),
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "content-type": "application/json;odata=verbose",
+                                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+                            },
+                            success: function (data) {
+                                if ((index + 1) == arrFileFolder.length) {
+                                    var tempDocName = Documentname;
+                                    if (Documentname.search(/\bDocuments\b/) >= 0) {
+                                        tempDocName = "Shared%20Documents";
+                                    }
+                                    GetMyDocumentsWithFilesFolder(tempDocName);
+                                    if (FailDueToCheckOut == 0) {
+                                        alert("File has been shared.");
+                                    }
+                                    else {
+                                        alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
+                                    }
+                                    $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                                    $(".txtSharingHistoy").show();
+                                    $(".btnClosePopup").trigger("click");
+                                    arrFileFolder = [];
+                                    FailDueToCheckOut = 0;
+                                    $(".chkFileFolder").prop("checked", false);
+                                }
+                            },
+                            error: function (err) {
+                                waitingDialog.hide();
+                                alert("SendEmailSharedNotification  " + JSON.stringify(err));
+                            }
+                        });
+                    }
+                    else {
+                        if ((index + 1) == arrFileFolder.length) {
+                            var tempDocName = Documentname;
+                            if (Documentname.search(/\bDocuments\b/) >= 0) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            GetMyDocumentsWithFilesFolder(tempDocName);
+                            if (FailDueToCheckOut == 0) {
+                                alert("File has been shared.");
+                            }
+                            else {
+                                alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
+                            }
+
+                            $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                            $(".txtSharingHistoy").show();
+                            $(".btnClosePopup").trigger("click");
+                            arrFileFolder = [];
+                            FailDueToCheckOut = 0;
+                            $(".chkFileFolder").prop("checked", false);
+                        }
+                    }
+                }
+            }
+            else {
+                if (entry.type == 'folder') {
+                    SharingRespose = true;
+                    txtSharedDocumetnOnDemandId = DocumentId = entry.DocumentId;
+                    CopySourceURL = entry.SiteURL;
+                    CopyLibrary = entry.SelectedLibrary;
+                    $("#FilePath").text(entry.ServerURL);
+                    $("#FileTitle").text(entry.FileTitle);//File/Folder Title
+                    $("#FileName").text(entry.FileFolderName);
+                    if (entry.CopyFileLink.includes('/Documents/') == true) {
+                        entry.CopyFileLink = entry.CopyFileLink.replace('/Documents/', '/Shared%20Documents/');
+                    }
+                    $(".txtCopyLink").val(entry.CopyFileLink);
+                    serverRelativeFileUrl = SelectedFileServerURL = entry.ServerURL;
+                    sharefileuser = getSharedUsersId(txtSharedDocumetnOnDemandId); //get Id of already shared users
+                    //return false;
+                    arrRevokeIds = $.grep(sharefileuser, function (element) {
+                        return $.inArray(element, sharedUsersIdArrayListItemCollection) !== -1;
+                    });
+
+                    sharedUsersIdArrayListItemCollection = sharedUsersIdArrayListItemCollection.concat(sharefileuser);
+                    SharingRespose = ShareFilesFolder(serverRelativeFileUrl, "File", '', txtDocshareingTypePermissionLevel);
+                    if (SharingRespose != false) {
+                        SharingRespose = true;
+                    }
+                    if (sharedUsersIdArrayListItemCollection.length > 0 && SharingRespose == true) {
+                        var securityLeveltext = $('#sharewith').val();//Update Document Properties
+                        if (PermissionStatus == "") {
+                            updateDocumentPropertiesOnItemSharing(txtSharedDocumetnOnDemandId, serverRelativeFileUrl, txtDocshareingTypePermissionLevel, sharedUsersIdArrayListItemCollection, CopySourceURL, false);
+                        }
+                        GetDocumentsRevoke(arrRevokeIds, txtSharedDocumetnOnDemandId);
+                        var Shared = [];
+                        Shared = getSharedType();
+                        AddSharedLinkToList(serverRelativeFileUrl, SharingUserId, txtSharedDocumetnOnDemandId, entry.type, $('#sharewith').val(), $('#sharedWithPermission').val(), Shared[0], entry.DocType, Shared[1]);
+
+                        //mail send
+                        if ($('#notifymail').prop('checked') == true && PermissionStatus == "")    //If SendMail Checkbox check for file
+                        {
+                            var ToUserArray = [];
+                            var Permission = $("#sharedWithPermission :selected").text();
+                            if (SharingUserEmail.length > 0) {
+                                var EmailDesign = '';
+                                ValidityDateHTML = '';
+                                if ($("#expiredats").val() != "") {
+                                    ValidityDateHTML = "<div><strong>Sharing valid till:</strong> " + moment($('#expiredats').val()).format('MMM DD YYYY') + "</div>";
+                                }
+                                EmailDesign = _spPageContextInfo.userDisplayName + " has shared the following document with you.<br/><br/>";
+                                //for (i = 0; i < SharingUserEmail.length; i++) {
+                                EmailDesign = EmailDesign + "<div><strong>File Name:</strong> " + $("#FileName").text() + "</div>" +
+                                                        "<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + entry.FileTitle + "</div>" +
+                                                         "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + entry.FileType + "</div>" +
+                                                        "<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + entry.FileRef + "</div>" +
+                                                         "<div><strong>Permission:</strong> " + Permission + "</div>" +
+                                                         "<div><strong>Shared By:</strong> " + _spPageContextInfo.userDisplayName + "</div>" +
+                                                         "<div><strong>Shared On:</strong> " + moment(new Date()).format('MMM DD YYYY') + " " + new Date().toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3") + "</div>" +
+                                                         ValidityDateHTML +
+                                                         "</br><div><strong>Message:</strong> " + $("#txtShareMessage").val() + "</div></br></br></br>" +
+                                                        "<div><a href=" + $(".txtCopyLink").val() + ">Click here</a> to open the document.</div>" + "<br/><br/>";
+                                //}
+
+                                EmailDesign += "This is an auto generated email. Please don't reply.";
+								for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+							    	if(EmailDesign.includes(LabelDefaultLangauge[k].Key) == true){
+							    		EmailDesign = EmailDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+							    	}	
+							    }
+                            }
+                            var Metadata;
+                            ToUserArray = SharingUserEmail.filter(function (f) { return f; })
+                            Metadata = {
+                                'properties': {
+                                    '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+                                    'From': _spPageContextInfo.userEmail,
+                                    'To': { 'results': ToUserArray },
+                                    //'CC': { 'results': ccUsers },
+                                    'Body': EmailDesign,
+                                    'Subject': 'A document has been shared with you.'
+                                }
+                            };
+
+                            var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+                            $.ajax({
+                                contentType: 'application/json',
+                                url: sitetemplateurl,
+                                type: "POST",
+                                data: JSON.stringify(Metadata),
+                                headers: {
+                                    "Accept": "application/json;odata=verbose",
+                                    "content-type": "application/json;odata=verbose",
+                                    "X-RequestDigest": $("#__REQUESTDIGEST").val()
+                                },
+                                success: function (data) {
+                                    if ((index + 1) == arrFileFolder.length) {
+                                        var tempDocName = Documentname;
+                                        if (Documentname.search(/\bDocuments\b/) >= 0) {
+                                            tempDocName = "Shared%20Documents";
+                                        }
+                                        GetMyDocumentsWithFilesFolder(tempDocName);
+                                        if (FailDueToCheckOut == 0) {
+                                            alert("File has been shared.");
+                                        }
+                                        else {
+                                            alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
+                                        }
+                                        $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                                        $(".txtSharingHistoy").show();
+                                        $(".btnClosePopup").trigger("click");
+                                        arrFileFolder = [];
+                                        FailDueToCheckOut = 0;
+                                        $(".chkFileFolder").prop("checked", false);
+                                    }
+                                },
+                                error: function (err) {
+                                    waitingDialog.hide();
+                                    alert("SendEmailSharedNotification  " + JSON.stringify(err));
+                                }
+                            });
+                        }
+                        else {
+                            if ((index + 1) == arrFileFolder.length) {
+                                var tempDocName = Documentname;
+                                if (Documentname.search(/\bDocuments\b/) >= 0) {
+                                    tempDocName = "Shared%20Documents";
+                                }
+                                GetMyDocumentsWithFilesFolder(tempDocName);
+                                if (FailDueToCheckOut == 0) {
+                                    alert("File has been shared.");
+                                }
+                                else {
+                                    alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
+                                }
+
+                                $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                                $(".txtSharingHistoy").show();
+                                $(".btnClosePopup").trigger("click");
+                                arrFileFolder = [];
+                                FailDueToCheckOut = 0;
+                                $(".chkFileFolder").prop("checked", false);
+                            }
+                        }
+                    }
+                }
+                else {
+                    FailDueToCheckOut++;
+                    if (FailDueToCheckOut == arrFileFolder.length) {
+                        waitingDialog.hide();
+                        FailDueToCheckOut = 0;
+                        alert("Selected file(s) are locked, couldn't be shared.");
+                        $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                        $(".txtSharingHistoy").show();
+                        $(".btnClosePopup").trigger("click");
+                        arrFileFolder = [];
+                        $(".chkFileFolder").prop("checked", false);
+                    }
+                    else {
+                        if (arrFileFolder.length == (index + 1)) {
+                            var tempDocName = Documentname;
+                            if (Documentname.search(/\bDocuments\b/) >= 0) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            GetMyDocumentsWithFilesFolder(tempDocName);
+                            if (FailDueToCheckOut == 0) {
+                                alert("File has been shared.");
+                            }
+                            else {
+                                alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
+                            }
+                            waitingDialog.hide();
+                            FailDueToCheckOut = 0;
+                            $("#FileSharing").text("Shared with " + $('#sharewith').val());
+                            $(".txtSharingHistoy").show();
+                            $(".btnClosePopup").trigger("click");
+                            arrFileFolder = [];
+                            $(".chkFileFolder").prop("checked", false);
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+function getSharedUsersId(shareDocumentitemIdd) {
+    var sharefileuser = [];
+    if (CopyLibrary == "Shared%20Documents") {
+        CopyLibrary = "Documents";
+    }
+    var resturl = CopySourceURL + "/_api/web/Lists/GetByTitle('" + CopyLibrary + "')/getItemById(" + shareDocumentitemIdd + ")?$select=ServerRedirectedEmbedUri,File/Name,File/ServerRelativeUrl,Folder/Name,Folder/ServerRelativeUrl,Shared/Title,SharedId&$expand=File,Folder,SharedId"
+    $.ajax({
+        url: resturl,
+        headers: {
+            'accept': 'application/json;odata=verbose',
+            'content-type': 'application/json;odata=verbose',
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+        },
+        async: false,
+        success: function (data) {
+            if (data.d.SharedId != null) {
+                for (var m = 0; m < data.d.SharedId.results.length; m++) {
+                    var sharefileuserid = data.d.SharedId.results[m];
+                    sharefileuser.push(sharefileuserid);
+                }
+            }
+        }, eror: function (data) {
+            console.log(data);
+        }
+    });
+    return sharefileuser;
+}
+
+//Share the selected file
+function ShareFilesFolder(sharingLink, typeOfFileFolder, permissionTo) {
+    var UsersId = [];
+    SharingRespose = true;
+    var userRole = 2;
+    if ($('#sharedWithPermission').val() == "Read") {
+        userRole = 1;
+    }
+    else if ($('#sharedWithPermission').val() == "Restricted View") {
+        userRole = 7;
+    }
+    if (sharingLink.includes("/Documents/") == true) {
+        sharingLink = sharingLink.replace('Documents', 'Shared%20Documents');
+    }
+    var userRoleAssignments = createJSONMetadata(SharingUserEmail, userRole);
+    var restSource = _spPageContextInfo.webAbsoluteUrl + "/_api/SP.Sharing.DocumentSharingManager.UpdateDocumentSharingInfo";
+    $.ajax(
+    {
+        'url': restSource,
+        'method': 'POST',
+        async: false,
+        'data': JSON.stringify({
+            'resourceAddress': document.location.origin + sharingLink,
+            'userRoleAssignments': userRoleAssignments,
+            'validateExistingPermissions': false,
+            'additiveMode': false,
+            'sendServerManagedNotification': false,
+            'customMessage': "Please look at the following File/Folder.",
+            'includeAnonymousLinksInNotification': false
+        }),
+        'headers': {
+            'accept': 'application/json;odata=verbose',
+            'content-type': 'application/json;odata=verbose',
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+        },
+        'success': function (data) {
+            console.log("Assigned");
+            SharingRespose = true;
+        },
+        'error': function (err) {
+            if (err.responseText.includes("The caller has no permissions to grant permission") == true) {
+                //It will done by flow then, Pass 'PermissionStatus' equal to 'Pending' in SharedDocument list.
+                //alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+                //return false;
+                SharingRespose = true;
+                PermissionStatus = "Pending";
+            }
+            else {
+                SharingRespose = false;
+                alert(err.responseText);
+                PermissionStatus = '';
+                return false;
+            }
+        }
+    });
+    return SharingRespose;
+}
+
+//convert the email data into JSON format
+function createJSONMetadata(emailIdCollection, roleId) {
+    var jsonObj = [];
+    var commonObj = {};
+    commonObj['type'] = 'SP.Sharing.UserRoleAssignment';
+    for (var index = 0; index < emailIdCollection.length; index++) {
+        var item = {}
+        item['__metadata'] = commonObj;
+        item['Role'] = parseInt(roleId);
+        item['UserId'] = emailIdCollection[index];
+        jsonObj.push(item);
+    }
+    return jsonObj;
+}
+
+//update metadata of shared document
+function updateDocumentPropertiesOnItemSharing(undefineditemID, serverRelativeFileUrl, securityLeveltext, sharedUserArrayListss, webUrl, asyncCall) {
+    var divsharedWithPermission = $('#sharedWithPermission').val();
+    var divtxtPermissionLevelId = '';
+    if ($('#sharedWithPermission').val() == 'Contribute') {
+        divtxtPermissionLevelId = "1073741827";
+    }
+    else if ($('#sharedWithPermission').val() == 'Read') {
+        divtxtPermissionLevelId = "1073741826";
+    }
+    else {
+        divtxtPermissionLevelId = "1073741937";
+    }
+
+    var ListName = CopyLibrary;
+    var Metadata;
+    if (ListName.includes('Documents') == true) {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(ListName);
+    }
+    if (securityLeveltext == "Selective" || securityLeveltext == "") {
+        if (ShareUserPrincipleMail.length == 0) {
+            for (var usr = 0; usr < SharingUserEmail.length; usr++) {
+                sharedUserArrayListss.push(GetUserId(SharingUserEmail[usr], webUrl));
+            }
+        }
+        else {
+            for (var usr = 0; usr < ShareUserPrincipleMail.length; usr++) {
+                sharedUserArrayListss.push(GetUserId(ShareUserPrincipleMail[usr], webUrl));
+            }
+        }
+    }
+    sharedUserArrayListss = sharedUserArrayListss.filter(function (obj) {
+        return obj !== "";
+    });
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        SecurityLevel: securityLeveltext,
+        PermissionLevel: divsharedWithPermission,
+        PermissionLevelId: divtxtPermissionLevelId,
+        SharedId: { 'results': sharedUserArrayListss }
+    };
+    if ($("#Acknowledgment").prop("checked") == true) {
+        Metadata["Acknowledgement"] = 'Required';
+    }
+    updateItemWithIDItemListDocuments(ListName, Metadata, undefineditemID, webUrl, asyncCall).done(function () {
+    }).fail(function (err) {
+        console.log(err);
+    });
+}
+
+//remove the permission
+function GetDocumentsRevoke(sharedHistoryUser, undefineditemID) {
+    arrSharedUser = [];
+    if ($('#sharewith').val() == "Organization") {
+        SharingUserEmail.forEach(function (entry, index) {
+            arrSharedUser.push(entry.GroupId);
+        });
+    }
+    else {
+        arrSharedUser = sharedHistoryUser.filter(function (f) { return f; })
+    }
+    for (k = 0; k < arrSharedUser.length; k++) {
+        var queryFilter = "&$filter=SharedUsers/ID eq '" + arrSharedUser[k] + "' and DocumentID eq '" + undefineditemID + "' and PermissionStatus ne 'Revoked'";
+        var Query = "?$select=ID,DocumentNo,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID&$expand=SharedUsers,Author" + queryFilter;
+        $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {
+            for (var i = 0; i < items.length; i++) {
+                currentItemId = items[i].ID;
+                var ListName = "SharedDocument";
+                var Metadata;
+                var ItemType = GetItemTypeForListName(ListName);
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    PermissionStatus: "Revoked",
+                    share_remarks: "Revoked due to re-share",
+                    SharedEnd: new Date().toISOString()
+                }
+                $.when(updateItemWithIDItemListDocuments(ListName, Metadata, currentItemId, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
+                    console.log("sucessfully revoke");
+                });
+            }
+        });
+    }
+}
+
+//Get shared type of Shared file
+function getSharedType() {
+    var ShareType = [];
+    ShareType.push("Guest");
+    ShareType.push(currentClientName);
+    return ShareType;
+}
+
+// add Shared file metadata in 'SharedDocument' list
+function AddSharedLinkToList(documentURL, sharedUsersId, documentId, documentType, sharedGroup, permissionType, Shared_Type, DocType, SharedFrom) {
+    IsBlock = "No";
+    var ListName = "SharedDocument";
+    var ItemType = GetItemTypeForListName(ListName);
+    var SelectedLibrary = '';
+    if (Documentname.indexOf('/') != -1) {
+        SelectedLibrary = Documentname.split('/')[0];
+    }
+    else {
+        SelectedLibrary = Documentname;
+    }
+
+    for (k = 0; k < sharedUsersId.length; k++) {
+        var shareduserid = [];
+        shareduserid.push(sharedUsersId[k]);
+        var Metadata;
+        //for block download coding
+        if (permissionType == "Restricted View") {
+            IsBlock = "Yes";
+        }
+        var ValidityDate = null;
+        if ($("#expiredats").val() != "") {
+            ValidityDate = GetDateStandardFormat(moment($('#expiredats').val()).format('DD/MM/YYYY'));
+        }
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Title: $("#FileName").text(),//File/Folder name
+            SharedFileTitle: $("#FileTitle").text(),//File/Folder Title
+            DocumentURL: documentURL,//File/Folder url
+            SharedUsersId: { 'results': shareduserid },//Shared users
+            SharedUserEmail: SharingUserEmail[k],
+            DocumentID: documentId,//Shared file/folder id
+            //DOC_IDId: documentId,  //Shared file/folder id Lookupvalue
+            DocumentType: documentType,// File/Folder
+            SharedGroup: sharedGroup,//shared goupname or any label
+            PermissionType: permissionType,//1 for readonly 2 for editor,
+            ServerRedirectedEmbedURL: '',
+            //DocumentNo: sharingLinkDocumentNo,
+            //Details: globalsharingDocumentDetails,
+            IsBlock: IsBlock,
+            SharedType: Shared_Type,
+            SharedFrom: SharedFrom,
+            SharedMessage: $("#txtShareMessage").val(),
+            SharingValidity: ValidityDate,
+            NeedAcknowledgement: $("#Acknowledgment").prop("checked"),
+            LibraryURL: DMS_Link.split('/Forms')[0],
+            LibraryName: SelectedLibrary,
+            SiteURL: DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")),
+            DocType: DocType,
+            IsSendMail: $("#notifymail").prop('checked')
+        };
+        if (PermissionStatus == "Pending") {
+            Metadata["PermissionStatus"] = "Pending";
+        }
+
+        $.when(AddItemToListGroups(ListName, Metadata)).done(function (response) {
+            //if((k+1) == sharedUsersId.length) {
+            //}
+        });
+    }
+}
+
+
+function AddItemToListGroups(ListName, Metadata) {
+    if (ListName == "Shared%20Documents") {
+        ListName = "Documents";
+    }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            // console.log(data);
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+//on change peoplePIcker
+function onChangeSharing(HTMLID, PplPickerId, userHTMLId) {
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[HTMLID];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {
+        if (userInfo.length > 0) {
+            BindUser = '';
+            tempUserId = parseInt(getUserInformation(PplPickerId));
+            SharingUserId.push(tempUserId);
+            var tempEmail = userInfo[0].Key.split('|')[2];
+            ShareUserPrincipleMail.push(userInfo[0].Key.split('|')[2]);
+            if (tempEmail.includes('#') == true) {
+                tempEmail = tempEmail.split('#ext')[0];
+                tempEmail = tempEmail.replace("_", '@');
+            }
+            SharingUserEmail.push(tempEmail);
+            SharingUserName.push(userInfo[0].DisplayText);
+            attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);
+            BindUser += '<div class="col-sm-6 parentremove User' + tempUserId + '"><div class="employeesection">';
+            BindUser += '<span onclick="removeShareUser(this, \'' + tempEmail + '\', \'' + userInfo[0].DisplayText + '\', ' + tempUserId + ');" class="crosebox"><i class="fa fa-times"></i></span>';
+            BindUser += '<div class="empoyeeimg"><img src="' + attachment + '" alt="">';
+            BindUser += '</div><div class="employeeinfo"><h3>' + userInfo[0].DisplayText + '</h3>';
+            BindUser += '<span class="employeeemail" style="cursor:pointer;color:blue" onclick="OpenEmail(\'' + tempEmail + '\')">' + tempEmail + '</span>';
+            BindUser += '</div></div></div>';
+            $("#" + userHTMLId).before(BindUser);
+            EmptyPeoplePicker(PplPickerId);
+        }
+        else {
+            //$("#userList").hide();
+        }
+    };
+}
+
+//method to share single file.
+function shareFile() {
+    var sharefileuser = [];
+    var arrRevokeIds = [];
+    var SharingRespose = true;
+    sharedUsersIdArrayListItemCollection = [];
+    sharedUsersIdArrayListItemCollection = SharingUserId.filter(function (f) { return f; })
+    var txtDocshareingTypePermissionLevel = $('#sharewith').val();
+    var txttsharedWithPermission = $('#sharedWithPermission').val();
+    var txtSharedDocumetnOnDemandId = DocumentId.toString();
+    var serverRelativeFileUrl = $("#FilePath").text();
+
+    sharefileuser = getSharedUsersId(txtSharedDocumetnOnDemandId);
+    arrRevokeIds = $.grep(sharefileuser, function (element) {
+        return $.inArray(element, sharedUsersIdArrayListItemCollection) !== -1;
+    });
+
+    sharedUsersIdArrayListItemCollection = sharedUsersIdArrayListItemCollection.concat(sharefileuser);
+    SharingRespose = ShareFilesFolder(serverRelativeFileUrl, "File", '', txtDocshareingTypePermissionLevel);
+    if (SharingRespose != false) {
+        SharingRespose = true;
+    }
+    if (sharedUsersIdArrayListItemCollection.length > 0 && SharingRespose == true) {
+        var securityLeveltext = $('#sharewith').val();//Update Document Properties
+        if (PermissionStatus == "") {
+            updateDocumentPropertiesOnItemSharing(txtSharedDocumetnOnDemandId, serverRelativeFileUrl, txtDocshareingTypePermissionLevel, sharedUsersIdArrayListItemCollection, CopySourceURL, false);
+        }
+        GetDocumentsRevoke(arrRevokeIds, txtSharedDocumetnOnDemandId);
+        var Shared = [];
+        Shared = getSharedType();
+        AddSharedLinkToList(serverRelativeFileUrl, SharingUserId, txtSharedDocumetnOnDemandId, "File", $('#sharewith').val(), $('#sharedWithPermission').val(), Shared[0], $('#FileDocType').text(), Shared[1]);
+
+        //mail send
+        if ($('#notifymail').prop('checked') == true && PermissionStatus == "")    //If SendMail Checkbox check for file
+        {
+            var ToUserArray = [];
+            var Permission = $("#sharedWithPermission :selected").text();
+            if (SharingUserEmail.length > 0) {
+                var EmailDesign = '';
+                ValidityDateHTML = '';
+                if ($("#expiredats").val() != "") {
+                    ValidityDateHTML = "<div><strong>Sharing valid till:</strong> " + moment($('#expiredats').val()).format('MMM DD YYYY') + "</div>";
+                }
+                EmailDesign = _spPageContextInfo.userDisplayName + " has shared the following document with you.<br/><br/>";
+                EmailDesign = EmailDesign + "<div><strong>File Name:</strong> " + $("#FileName").text() + "</div>" +
+                                        "<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + $("#FileTitle").text() + "</div>" +
+                                        "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + $("#FileDocType").text() + "</div>" +
+                                        "<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + $("#FileReference").text() + "</div>" +
+                                         "<div><strong>Permission:</strong> " + Permission + "</div>" +
+                                         "<div><strong>Shared By:</strong> " + _spPageContextInfo.userDisplayName + "</div>" +
+                                         "<div><strong>Shared On:</strong> " + moment(new Date()).format('MMM DD YYYY') + " " + new Date().toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3") + "</div>" +
+                                         ValidityDateHTML +
+                                         "</br><div><strong>Message:</strong> " + $("#txtShareMessage").val() + "</div></br></br></br>" +
+                                        "<div><a href=" + $(".txtCopyLink").val() + ">Click here</a> to open the document.</div>" + "<br/><br/>";
+                EmailDesign += "This is an auto generated email. Please don't reply.";
+				for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+			    	if(EmailDesign.includes(LabelDefaultLangauge[k].Key) == true){
+			    		EmailDesign = EmailDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+			    	}	
+			    }
+            }
+            var from = $('#lblSelectedCurrentEmail').text();
+            var Metadata;
+            ToUserArray = SharingUserEmail.filter(function (f) { return f; })
+            Metadata = {
+                'properties': {
+                    '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+                    'From': _spPageContextInfo.userEmail,
+                    'To': { 'results': ToUserArray },
+                    //'CC': { 'results': ccUsers },
+                    'Body': EmailDesign,
+                    'Subject': 'A document has been shared with you.'
+                }
+            };
+            SendEmailSharedNotification(Metadata);
+        }
+        else {
+            var tempDocName = Documentname;
+            if (Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            alert("File has been shared.");
+            $("#FileSharing").text("Shared with " + $('#sharewith').val());
+            $(".txtSharingHistoy").show();
+            $(".btnClosePopup").trigger("click");
+        }
+
+    }
+}
+
+//Send email notification to Shared users
+function SendEmailSharedNotification(emailProperties) {
+    var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(emailProperties),
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            var tempDocName = Documentname;
+            if (Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            alert("File has been shared.");
+            $("#FileSharing").text("Shared with " + $('#sharewith').val());
+            $(".txtSharingHistoy").show();
+            $(".btnClosePopup").trigger("click");
+        },
+        error: function (err) {
+            alert("SendEmailSharedNotification  " + JSON.stringify(err));
+        }
+    });
+}
+//-----------------------------------------Sharing Code ends----------------------------------------------------
+
+//to bind the all the Project with DMS URL to which Logged_In user can access
+function BindProjects() {
+    //
+    var DocLibraries = '';
+    var uniqueValues = [];
+    //var sectionType = 'ProjectDocuments';
+    $("#accordioninnersd").html(DocLibraries);
+   LoggedUserSPGp = GetSPGroup();
+    var SharedUserFilter = "";
+    for (var gp = 0; gp < LoggedUserSPGp.length; gp++) {
+        SharedUserFilter += "or SharedUsers/Id eq '" + LoggedUserSPGp[gp].Id + "' ";
+    }
+    SharedUserFilter = SharedUserFilter.substring(0, SharedUserFilter.length - 1) + ")";    
+        var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail&$orderby=Modified desc&$expand=SharedUsers,Author&$filter=(SharedUsers/Id eq '" + _spPageContextInfo.userId + "' " + SharedUserFilter + " and (PermissionType eq 'Read' or PermissionType eq 'Contribute' or PermissionType eq 'Restricted View' or PermissionStatus eq 'Revoked') and (PermissionStatus ne 'Deleted' and IsArchive ne 1)";
+    var items='';
+    $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Sitems) { 
+          
+        if (Sitems.length) {
+            Sitems = Sitems.filter(function (obj) { //Filter array on the basis of PermissionStatus 
+                    return obj.PermissionStatus != "Revoked";
+                });
+                //SharedWithMeItems(items, 'SharedWithMe');
+            }
+        Sitems=Sitems.map(item => item.SharedFrom)
+  .filter((value, index, self) => self.indexOf(value) === index);
+  
+         $.each(Sitems, function(i, el) {
+           
+                var GetLib='';
+                var GetLib = "javascript:applyFilterProperty(this,'" + el + "')";
+               if ($("#pplSharedBy").html() == '') {
+                        initializePeoplePicker("pplSharedBy", true);
+                    }
+                    $("#btnShareFilter").trigger('click');
+
+                    DocLibraries += '<div class="panel panel-default">' +
+                    '<div class="panel-heading">' +
+                    ' <h4 class="panel-title">' +
+                   // id="'+tempTitle + el.Id.toString() +'" 
+                    '<a href="javascript:void(0);" onclick="' + GetLib + '" data-toggle="pill" class="dms-left-panel-tab-inner">' +
+                    '<div class="d-flex align-items-center">' +
+                    ' <img src="../SiteAssets/MyDocuments/DMS/assets/images/home_ico.png" alt="Project Documents" >' +
+                    ' <span class="mobile-hide-tabs-name mt3 ml10">' + el + '</span>' +
+                    ' </div>' +
+                    ' </a>' +
+                    '</h4>' +
+                    '</div>' +
+                    '</div>';
+
+            //}
+        });
+        $("#accordioninnersd").append(DocLibraries);
+          
+   });
+    //
+    /*
+    var DocLibraries = '';
+    var uniqueValues = [];
+    var sectionType = 'ProjectDocuments';
+    $("#accordioninner4").html(DocLibraries);
+    var CompanySiteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var Query = "?$select=DocumentPermission,TeamMember/Id,Project/Id,Project/ProjectName,Project/ProjectInternalName,TeamMember/EMail&$top=5000&$orderby=Project/ProjectName asc&$expand=TeamMember,Project&$filter=CompanyId eq '" + Logged_CompanyId + "' and TeamMember/EMail eq '" + _spPageContextInfo.userEmail + "' and Status eq 'Active'";
+    $.when(getItemsWithQuery("ProjectTeamDetails", Query, _spPageContextInfo.webAbsoluteUrl)).done(function(valuesArray) {
+        $.each(valuesArray, function(i, el) {
+            //if (uniqueValues.indexOf(el.Project.Id) == -1) {
+                //var ProjectURL = getProjectDMS1(el.Project.Id);
+                var siteURL = el.Project.ProjectName;
+                var ProjectURL = '';
+                if (el.Project.ProjectInternalName != null && el.Project.ProjectInternalName != "") {
+	                siteURL = el.Project.ProjectInternalName;
+	                ProjectURL = CompanySiteURL + "/DMS/" + siteURL + "/Shared%20Documents/Forms/AllItems.aspx";
+	            }
+                var GetLib = "javascript:GetLibarayDetails(this,'" + ProjectURL + "','" + el.Project.ProjectName + "','','" + sectionType + "')";
+
+                //uniqueValues.push(el.Project.Id);
+				tempTitle = el.Project.ProjectName.replace(/[^A-Z0-9]/ig, "");
+                DocLibraries += '<div class="panel panel-default">' +
+                    '<div class="panel-heading">' +
+                    ' <h4 class="panel-title">' +
+                   // '<a href="javascript:void(0);" id="'+tempTitle + el.Project.Id.toString() +'" onclick="' + GetLib + '" data-toggle="pill" class="dms-left-panel-tab-inner">' +
+                    '<a href="javascript:void(0);" id="'+tempTitle + el.Id.toString() +'" onclick="' + GetLib + '" data-toggle="pill" class="dms-left-panel-tab-inner">' +
+                    
+                    '<div class="d-flex align-items-center">' +
+                    ' <img src="../SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents">' +
+                    ' <span class="mobile-hide-tabs-name mt3 ml10">' + el.Project.ProjectName + '</span>' +
+                    ' </div>' +
+                    ' </a>' +
+                    '</h4>' +
+                    '</div>' +
+                    '</div>';
+
+            //}
+        });
+        $("#accordioninner4").append(DocLibraries);
+    });
+    */
+}
+function applyFilterProperty(obj,prprtyName)
+{
+    $(".headdingLinks").html("");
+    $(".headdingLinks").html(prprtyName);
+    $(".dms-left-panel-tab-inner").removeClass("dms-left-panel-tab-active-inner");
+    $(obj).siblings().removeClass('dms-left-panel-tab-active-inner');
+    $(obj).addClass('dms-left-panel-tab-active-inner');
+    $(".CloseShareFilter").trigger("click");
+    if ($("#pplSharedBy").html() == '') {
+        initializePeoplePicker("pplSharedBy", true);
+    }
+    $("#filterSharedFrom").val(prprtyName);
+    $("#btnShareFilter").trigger('click');
+    //$(".CloseShareFilter").trigger("click");
+}

@@ -1,1 +1,9164 @@
-var a90_0x13126d=a90_0x41e7;(function(_0x1b9709,_0x555d28){var _0x5017ac=a90_0x41e7,_0x444162=_0x1b9709();while(!![]){try{var _0x394de7=parseInt(_0x5017ac(0x53f))/0x1+-parseInt(_0x5017ac(0x47e))/0x2*(parseInt(_0x5017ac(0x3c4))/0x3)+parseInt(_0x5017ac(0x21d))/0x4*(-parseInt(_0x5017ac(0x1ff))/0x5)+parseInt(_0x5017ac(0x20e))/0x6*(-parseInt(_0x5017ac(0x189))/0x7)+parseInt(_0x5017ac(0x248))/0x8+parseInt(_0x5017ac(0x4e4))/0x9+-parseInt(_0x5017ac(0x480))/0xa;if(_0x394de7===_0x555d28)break;else _0x444162['push'](_0x444162['shift']());}catch(_0x4ae1bc){_0x444162['push'](_0x444162['shift']());}}}(a90_0x189d,0xdc752));var _0x4ce28e=_0x36bf;(function(_0x4922b6,_0x1a1a1b){var _0x44243b=a90_0x41e7,_0x165403=_0x36bf,_0x25b922=_0x4922b6();while(!![]){try{var _0x5694b9=parseInt(_0x165403(0x67b))/0x1*(-parseInt(_0x165403(0x636))/0x2)+parseInt(_0x165403(0x41f))/0x3*(-parseInt(_0x165403(0x194))/0x4)+parseInt(_0x165403(0x199))/0x5*(parseInt(_0x165403(0x210))/0x6)+-parseInt(_0x165403(0x562))/0x7*(-parseInt(_0x165403(0x523))/0x8)+parseInt(_0x165403(0x695))/0x9*(parseInt(_0x165403(0x45f))/0xa)+-parseInt(_0x165403(0x2f8))/0xb*(-parseInt(_0x165403(0x362))/0xc)+-parseInt(_0x165403(0x1aa))/0xd;if(_0x5694b9===_0x1a1a1b)break;else _0x25b922[_0x44243b(0x5ae)](_0x25b922[_0x44243b(0x2f5)]());}catch(_0x368784){_0x25b922[_0x44243b(0x5ae)](_0x25b922[_0x44243b(0x2f5)]());}}}(_0x1987,0x8e1c0));var currentSectionType='',DMS_Type='',DMS_Link='',arrFileFolder=[],arrFilterTable=[],Documentname='',CheckLibary='',IsNotpermission=![],IsFullControl=![],IsContributor=![],IsdeleteListItems=![],arrCurrentColumns=[],MyDoctable='',CopySourceURL='',Filepath='',IsStopInheritancePermissions=![],DocumentId='',SelectedFileServerURL='',CopyLibrary='',arrPermission=[],FinalFiles4Upload=[],FinalFoldersUpload=[],FailDueToCheckOut=0x0,DocUrlCollection=[],arrCustomCol=[],arrCustomColFilter=[],IntervalId='',AllApprovers=[],to=[],RequestDigest=$(_0x4ce28e(0x57c))[_0x4ce28e(0x419)](),OldFileName='',arrMandatoryCols=[],bytesToMegaBytes=_0xef40f7=>_0xef40f7/0x400**0x2,TotalSize=0x0,finalFiles=[],Tcounter=0x0,FileCommentType=_0x4ce28e(0x33b),FileCommentResponse=FileCommentResponse||[],getLatestMsgId='',ModifyRecId='';$(document)[a90_0x13126d(0x2bf)](function(){var _0x43a07f=a90_0x13126d,_0x3ce2d0=_0x4ce28e;$(_0x3ce2d0(0x35f))[_0x3ce2d0(0x382)](function(){var _0x1d945e=_0x3ce2d0;$(_0x1d945e(0x35f))[_0x1d945e(0x667)](_0x1d945e(0x405)),$(_0x1d945e(0x60a))[_0x1d945e(0x667)](_0x1d945e(0x18b)),$(_0x1d945e(0x281))['toggleClass'](_0x1d945e(0x495));}),$(_0x3ce2d0(0x274))[_0x3ce2d0(0x382)](function(){var _0x1950b8=a90_0x41e7,_0x3b1705=_0x3ce2d0;$(_0x1950b8(0x2f9))[_0x1950b8(0x46a)](_0x3b1705(0x685)),$(this)[_0x3b1705(0x28e)](_0x3b1705(0x685));}),$(_0x3ce2d0(0x286))[_0x3ce2d0(0x382)](function(){var _0x3b27a0=a90_0x41e7,_0x3b8459=_0x3ce2d0;$(_0x3b8459(0x286))[_0x3b8459(0x195)]('active'),$(this)[_0x3b8459(0x28e)](_0x3b27a0(0x5e4));}),$(_0x3ce2d0(0x211))[_0x3ce2d0(0x382)](function(){var _0x457e0f=_0x3ce2d0;$(_0x457e0f(0x211))[_0x457e0f(0x195)](_0x457e0f(0x566)),$(this)[_0x457e0f(0x28e)](_0x457e0f(0x566));}),$(_0x43a07f(0x27e))[_0x3ce2d0(0x382)](function(){var _0x3564b3=_0x43a07f,_0x5da44c=_0x3ce2d0;$(_0x5da44c(0x5bb))[_0x5da44c(0x195)](_0x3564b3(0x43d)),$(this)[_0x3564b3(0x225)](_0x5da44c(0x332));}),userActivityNotificationEntry(_spPageContextInfo[_0x3ce2d0(0x2b0)],window[_0x3ce2d0(0x55f)]),$(_0x3ce2d0(0x64d))[_0x3ce2d0(0x382)](function(){var _0x204c14=_0x43a07f,_0x3b57cb=_0x3ce2d0;currentSectionType='GuestDocuments',$('.advance_setion')[_0x204c14(0x39a)](),$(_0x3b57cb(0x22b))[_0x204c14(0x46b)](),waitingDialog[_0x3b57cb(0x6ea)](),setTimeout(function(){onloadGetItem();},0x64);}),$(_0x43a07f(0x532))[_0x3ce2d0(0x382)](function(){var _0x10c942=_0x3ce2d0;waitingDialog[_0x10c942(0x6ea)](),setTimeout(function(){CreateFolder(this);},0x64);}),$('#createWordFile')[_0x3ce2d0(0x382)](function(){var _0x3ab158=_0x43a07f,_0x438ae3=_0x3ce2d0;$(_0x3ab158(0x2fb))[_0x438ae3(0x340)](_0x438ae3(0x1f3)),$(_0x438ae3(0x537))[_0x438ae3(0x419)](''),$(_0x438ae3(0x3d1))[_0x438ae3(0x341)](_0x438ae3(0x6ea)),$(_0x438ae3(0x578))[_0x3ab158(0x1ea)](''),$(_0x438ae3(0x586))['val'](''),$(_0x438ae3(0x3bb))[_0x438ae3(0x419)](_0x438ae3(0x6e4)),$(_0x438ae3(0x634))[_0x438ae3(0x419)](_spPageContextInfo[_0x438ae3(0x4ed)]),$(_0x438ae3(0x1b7))[_0x438ae3(0x419)](''),$(_0x438ae3(0x3b1))[_0x438ae3(0x314)]()[_0x438ae3(0x693)](_0x438ae3(0x2f6)),$(_0x3ab158(0x4b0))['length']==0x0&&BindDMSDocumentType();;$(_0x438ae3(0x4c7))[_0x3ab158(0x39a)]();if(currentSectionType!=_0x3ab158(0x481))for(var _0x4abfaa=0x0;_0x4abfaa<arrMandatoryCols['length'];_0x4abfaa++){$(_0x3ab158(0x55e)+arrMandatoryCols[_0x4abfaa])[_0x438ae3(0x6ea)]();}}),$(_0x43a07f(0x3a2))[_0x3ce2d0(0x382)](function(){var _0x3f0f63=_0x43a07f,_0x1e2be1=_0x3ce2d0;$(_0x1e2be1(0x567))[_0x1e2be1(0x340)](_0x1e2be1(0x52c)),$(_0x3f0f63(0x276))[_0x1e2be1(0x419)](''),$(_0x1e2be1(0x3d1))[_0x1e2be1(0x341)](_0x1e2be1(0x6ea)),$(_0x1e2be1(0x578))[_0x1e2be1(0x419)](''),$('#txtAddFileRef')[_0x1e2be1(0x419)](''),$(_0x1e2be1(0x3bb))[_0x3f0f63(0x1ea)](_0x1e2be1(0x6e4)),$(_0x1e2be1(0x634))[_0x1e2be1(0x419)](_spPageContextInfo[_0x3f0f63(0x39f)]),$(_0x1e2be1(0x1b7))[_0x1e2be1(0x419)](''),$(_0x1e2be1(0x3b1))[_0x1e2be1(0x314)]()[_0x1e2be1(0x693)](_0x3f0f63(0x26a)),$(_0x1e2be1(0x4c7))[_0x3f0f63(0x39a)]();if(currentSectionType!=_0x1e2be1(0x3d3))for(var _0x1bab22=0x0;_0x1bab22<arrMandatoryCols[_0x1e2be1(0x4a1)];_0x1bab22++){$(_0x3f0f63(0x55e)+arrMandatoryCols[_0x1bab22])[_0x1e2be1(0x6ea)]();}$(_0x1e2be1(0x6ba))[_0x1e2be1(0x4a1)]==0x0&&BindDMSDocumentType();;}),$(_0x3ce2d0(0x34e))[_0x43a07f(0x26c)](function(){var _0x123282=_0x43a07f,_0x20e10b=_0x3ce2d0;$(_0x20e10b(0x567))[_0x20e10b(0x340)](_0x20e10b(0x6b5)),$(_0x20e10b(0x537))[_0x20e10b(0x419)](''),$(_0x20e10b(0x3d1))[_0x123282(0x5ce)](_0x20e10b(0x6ea)),$(_0x20e10b(0x578))[_0x20e10b(0x419)](''),$(_0x20e10b(0x586))[_0x20e10b(0x419)](''),$(_0x123282(0x5d0))[_0x20e10b(0x419)](_0x20e10b(0x6e4)),$(_0x20e10b(0x634))[_0x20e10b(0x419)](_spPageContextInfo[_0x20e10b(0x4ed)]),$(_0x20e10b(0x1b7))[_0x20e10b(0x419)](''),$(_0x123282(0x31c))[_0x20e10b(0x314)]()[_0x20e10b(0x693)](_0x20e10b(0x2f6)),$(_0x20e10b(0x4c7))[_0x20e10b(0x3f3)]();if(currentSectionType!=_0x20e10b(0x3d3))for(var _0x415752=0x0;_0x415752<arrMandatoryCols[_0x20e10b(0x4a1)];_0x415752++){$(_0x123282(0x55e)+arrMandatoryCols[_0x415752])[_0x123282(0x46b)]();}$(_0x20e10b(0x6ba))[_0x20e10b(0x4a1)]==0x0&&BindDMSDocumentType();;}),$(_0x3ce2d0(0x408))[_0x3ce2d0(0x382)](function(){var _0x3b6349=_0x43a07f,_0x21797f=_0x3ce2d0;$(_0x21797f(0x567))[_0x21797f(0x340)](_0x3b6349(0x267)),$(_0x21797f(0x537))[_0x21797f(0x419)](''),$(_0x21797f(0x3d1))[_0x21797f(0x341)](_0x21797f(0x6ea)),$(_0x3b6349(0x502))[_0x21797f(0x419)](''),$(_0x21797f(0x586))[_0x21797f(0x419)](''),$(_0x21797f(0x3bb))[_0x3b6349(0x1ea)](_0x21797f(0x6e4)),$(_0x3b6349(0x2c8))[_0x21797f(0x419)](_spPageContextInfo[_0x21797f(0x4ed)]),$(_0x21797f(0x1b7))[_0x21797f(0x419)](''),$(_0x21797f(0x3b1))[_0x21797f(0x314)]()[_0x21797f(0x693)](_0x21797f(0x2f6)),$(_0x21797f(0x4c7))['hide']();if(currentSectionType!=_0x21797f(0x3d3))for(var _0xf39624=0x0;_0xf39624<arrMandatoryCols[_0x21797f(0x4a1)];_0xf39624++){$(_0x21797f(0x477)+arrMandatoryCols[_0xf39624])['show']();}$(_0x21797f(0x6ba))[_0x21797f(0x4a1)]==0x0&&BindDMSDocumentType();;}),$(_0x43a07f(0x5d0))['change'](function(){var _0x20d923=_0x3ce2d0;getSubCategory(this[_0x20d923(0x447)],_0x20d923(0x17e));}),$(_0x3ce2d0(0x589))[_0x3ce2d0(0x382)](function(){var _0x2206f4=_0x3ce2d0;if(AddFileValidate()==!![])waitingDialog[_0x2206f4(0x6ea)](),setTimeout(function(){CreateOnlineFile();},0x64);else return alert(_0x2206f4(0x28f)),![];}),$(_0x43a07f(0x4c2))[_0x3ce2d0(0x382)](function(){MultipleFileDownload();}),$(_0x3ce2d0(0x698))[_0x3ce2d0(0x382)](function(){MultipleFileFolderDelete();}),$(_0x3ce2d0(0x5c4))[_0x3ce2d0(0x382)](function(_0x2260d5){var _0x2b3318=_0x43a07f,_0x1679e1=_0x3ce2d0;this[_0x1679e1(0x3da)]==!![]?($(_0x2b3318(0x644))[_0x1679e1(0x3f3)](),$('.prefix_and_postfix_name')[_0x1679e1(0x6ea)]()):($(_0x1679e1(0x3eb))[_0x1679e1(0x6ea)](),$(_0x2b3318(0x46e))[_0x1679e1(0x3f3)]());}),$(_0x3ce2d0(0x632))[_0x43a07f(0x26c)](function(){var _0x2c886c=_0x43a07f,_0x49bd82=_0x3ce2d0;$(_0x49bd82(0x68f))['prop'](_0x49bd82(0x3da),!![]),$(_0x49bd82(0x68f))['prop'](_0x2c886c(0x45b),''),$(_0x49bd82(0x350))[_0x49bd82(0x47f)](_0x49bd82(0x2fc),''),$(_0x49bd82(0x25e))[_0x49bd82(0x6ea)](),$(_0x49bd82(0x27e))[_0x2c886c(0x39a)]();}),$(_0x43a07f(0x472))[_0x3ce2d0(0x382)](function(){var _0x5acfeb=_0x43a07f,_0x240528=_0x3ce2d0;$(_0x5acfeb(0x4c7))[_0x240528(0x1a0)](_0x240528(0x3da),''),$(_0x240528(0x68f))[_0x240528(0x47f)](_0x5acfeb(0x495),![]),$(_0x5acfeb(0x4b6))[_0x240528(0x47f)](_0x240528(0x2fc),_0x240528(0x2fc)),$(_0x240528(0x350))[_0x240528(0x47f)](_0x5acfeb(0x45b),_0x240528(0x2fc)),$(_0x240528(0x25e))[_0x240528(0x3f3)](),$(_0x5acfeb(0x4c9))[_0x5acfeb(0x235)](_0x240528(0x3da),![]),$(_0x240528(0x27e))[_0x240528(0x3f3)]();}),$(_0x43a07f(0x684))[_0x3ce2d0(0x382)](function(){var _0x41a7fb=_0x43a07f,_0x14c086=_0x3ce2d0;$(_0x14c086(0x632))['attr'](_0x14c086(0x3da),''),$('#chkKeepExist')[_0x14c086(0x47f)](_0x14c086(0x3da),![]),$(_0x14c086(0x68f))[_0x14c086(0x47f)](_0x41a7fb(0x45b),_0x14c086(0x2fc)),$(_0x41a7fb(0x4c9))[_0x14c086(0x47f)](_0x14c086(0x2fc),_0x14c086(0x2fc)),$(_0x41a7fb(0x2b5))[_0x14c086(0x3f3)](),$(_0x14c086(0x350))[_0x14c086(0x47f)](_0x14c086(0x3da),![]),$(_0x14c086(0x27e))[_0x14c086(0x6ea)]();}),$(_0x43a07f(0x661))[_0x3ce2d0(0x382)](function(){var _0x1c3ca7=_0x43a07f,_0xc728c2=_0x3ce2d0;this[_0x1c3ca7(0x495)]?$(_0xc728c2(0x5de))[_0xc728c2(0x6ea)]():$(_0xc728c2(0x5de))[_0x1c3ca7(0x39a)]();}),$(_0x3ce2d0(0x66e))['click'](function(_0x28b16c){var _0xe82512=_0x43a07f,_0x3719e7=_0x3ce2d0;$(_0x3719e7(0x3eb))[_0x3719e7(0x28e)](_0x3719e7(0x394)),$(_0xe82512(0x328))[_0x3719e7(0x4a1)]==0x0&&BindDMSDocumentType(),$(_0x3719e7(0x687))[_0x3719e7(0x3f3)]();if(currentSectionType!=_0x3719e7(0x3d3))for(var _0x97b956=0x0;_0x97b956<arrMandatoryCols[_0xe82512(0x1d9)];_0x97b956++){$(_0x3719e7(0x352)+arrMandatoryCols[_0x97b956])[_0xe82512(0x46b)]();}$('#FileSubType')[_0xe82512(0x51f)]()[_0x3719e7(0x693)](_0xe82512(0x26a)),$(_0x3719e7(0x5c4))[_0xe82512(0x235)](_0x3719e7(0x3da),![]),$(_0x3719e7(0x3eb))[_0x3719e7(0x6ea)](),$(_0x3719e7(0x464))[_0x3719e7(0x3f3)](),$(_0x3719e7(0x4c1))[_0x3719e7(0x419)](_0x3719e7(0x553)),$(_0x3719e7(0x367))[_0x3719e7(0x419)](''),$(_0xe82512(0x3fc))[_0x3719e7(0x419)](''),$(_0x3719e7(0x21b))[_0x3719e7(0x419)](''),$(_0x3719e7(0x21e))[_0x3719e7(0x6ea)](),$(_0x3719e7(0x29f))[_0x3719e7(0x47f)](_0x3719e7(0x3da),''),FinalFiles4Upload=[],FinalFoldersUpload=[],FailDueToCheckOut=0x0,$(_0xe82512(0x3ce))[_0x3719e7(0x314)](),$(_0x3719e7(0x565))[_0x3719e7(0x3f3)](),$(_0x3719e7(0x3eb))[_0xe82512(0x1ea)](''),$(_0xe82512(0x553))[_0x3719e7(0x419)](''),$(_0x3719e7(0x6c8))[_0x3719e7(0x419)](_0x3719e7(0x6e4)),$(_0x3719e7(0x5d8))[_0x3719e7(0x419)](_spPageContextInfo[_0x3719e7(0x4ed)]),$(_0x3719e7(0x47c))[_0x3719e7(0x419)](''),$(_0x3719e7(0x204))[_0x3719e7(0x678)](''),$(_0x3719e7(0x204))[_0x3719e7(0x3f3)](),$(_0x3719e7(0x56d))[_0x3719e7(0x340)](_0xe82512(0x591)),$(_0x3719e7(0x559))[_0x3719e7(0x6ea)](),$(_0x3719e7(0x652))[_0x3719e7(0x3f3)](),$(_0x3719e7(0x29b))[_0x3719e7(0x6ea)](),$(_0x3719e7(0x51f))[_0x3719e7(0x3f3)](),$(_0xe82512(0x2b0))[_0x3719e7(0x6ea)](),$(_0x3719e7(0x670))[_0x3719e7(0x3f3)](),$(_0xe82512(0x255))[_0x3719e7(0x3f3)]();}),$(_0x3ce2d0(0x6be))[_0x43a07f(0x26c)](function(_0x3fd458){var _0x224aae=_0x43a07f,_0x1fd697=_0x3ce2d0;$(_0x1fd697(0x221))[_0x1fd697(0x4a1)]==0x0&&BindDMSDocumentType(),$(_0x1fd697(0x687))[_0x1fd697(0x3f3)]();if(currentSectionType!=_0x1fd697(0x3d3))for(var _0x23c768=0x0;_0x23c768<arrMandatoryCols[_0x224aae(0x1d9)];_0x23c768++){$(_0x1fd697(0x352)+arrMandatoryCols[_0x23c768])[_0x224aae(0x46b)]();}$(_0x224aae(0x315))[_0x224aae(0x51f)]()[_0x1fd697(0x693)](_0x1fd697(0x2f6)),$(_0x224aae(0x242))[_0x1fd697(0x419)](_0x1fd697(0x553)),$(_0x1fd697(0x3eb))[_0x1fd697(0x6ea)](),$(_0x1fd697(0x464))[_0x1fd697(0x3f3)](),$(_0x1fd697(0x21e))[_0x1fd697(0x3f3)](),$(_0x1fd697(0x29f))[_0x1fd697(0x47f)](_0x224aae(0x495),''),FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x1fd697(0x3eb))[_0x1fd697(0x419)](''),$(_0x1fd697(0x565))[_0x1fd697(0x314)](),$(_0x1fd697(0x565))[_0x1fd697(0x3f3)](),$(_0x224aae(0x553))[_0x1fd697(0x419)](''),$('#ddlFileType')[_0x1fd697(0x419)](_0x1fd697(0x6e4)),$(_0x1fd697(0x47c))[_0x1fd697(0x419)](''),$(_0x224aae(0x300))[_0x1fd697(0x47f)]('checked',''),$(_0x1fd697(0x5d8))[_0x1fd697(0x419)](_spPageContextInfo[_0x1fd697(0x4ed)]),$(_0x224aae(0x656))[_0x1fd697(0x678)](''),$(_0x1fd697(0x204))['hide'](),$(_0x1fd697(0x56d))[_0x1fd697(0x340)]('Upload\x20Folder'),$(_0x1fd697(0x3eb))[_0x1fd697(0x419)](''),$(_0x1fd697(0x5b3))[_0x224aae(0x1ea)](''),$(_0x1fd697(0x6c8))[_0x1fd697(0x419)](_0x1fd697(0x6e4)),$(_0x1fd697(0x47c))[_0x1fd697(0x419)](''),$(_0x1fd697(0x559))[_0x1fd697(0x3f3)](),$(_0x1fd697(0x652))[_0x1fd697(0x6ea)](),$(_0x1fd697(0x29b))[_0x1fd697(0x3f3)](),$(_0x1fd697(0x51f))[_0x1fd697(0x6ea)](),$('#AttachAttachmentButton')[_0x224aae(0x39a)](),$(_0x1fd697(0x670))[_0x1fd697(0x6ea)](),$(_0x1fd697(0x49f))[_0x1fd697(0x6ea)]();}),$(_0x3ce2d0(0x5ac))['on'](_0x3ce2d0(0x588),function(_0x20c6c1){var _0xca5305=_0x43a07f,_0x2c367e=_0x3ce2d0,_0x37d2da=[],_0x4de550=this[_0x2c367e(0x3bd)][_0x2c367e(0x4a1)],_0x4774da=0x0;$[_0x2c367e(0x200)](this[_0x2c367e(0x3bd)],function(_0x790fc3,_0x1ef746){var _0x27da0e=_0x2c367e;_0x37d2da[_0x27da0e(0x312)](_0x3abb07=>_0x3abb07[_0x27da0e(0x681)]===_0x1ef746[_0x27da0e(0x681)])['length']==0x0&&(_0x37d2da[_0x37d2da[_0x27da0e(0x4a1)]]=_0x1ef746);}),FinalFiles4Upload[_0x2c367e(0x4a1)]==0x0&&($(_0x2c367e(0x565))[_0x2c367e(0x678)](''),$(_0xca5305(0x3ce))[_0x2c367e(0x3f3)]()),(_0x37d2da=ReinitializeArray(_0x37d2da),FinalFiles4Upload=FinalFiles4Upload[_0x2c367e(0x22e)](_0x37d2da));var _0x3cadb3='',_0x4b73db=$(_0x2c367e(0x565))[_0x2c367e(0x40d)](_0x2c367e(0x1fd))[_0x2c367e(0x4a1)];for(_0x4774da;_0x4774da<_0x37d2da[_0x2c367e(0x4a1)];_0x4774da++){$(_0x2c367e(0x565))[_0xca5305(0x46b)](),_0x37d2da[_0x4774da][_0x2c367e(0x681)][_0x2c367e(0x4a1)]>0xf?(_0x4b73db=_0x4b73db+0x1,_0x3cadb3=_0x37d2da[_0x4774da][_0x2c367e(0x681)][_0x2c367e(0x65b)](0x0,0xf)+_0x2c367e(0x278),$(_0x2c367e(0x565))[_0x2c367e(0x693)](_0x2c367e(0x22f)+_0x37d2da[_0x4774da][_0x2c367e(0x681)]+_0xca5305(0x30a)+_0x4b73db+_0x2c367e(0x1a9)+_0x3cadb3+_0x2c367e(0x3d2)+_0x37d2da[_0x4774da][_0x2c367e(0x681)]+_0x2c367e(0x256)+_0x4b73db+_0x2c367e(0x304))):$(_0x2c367e(0x565))[_0x2c367e(0x693)](_0x2c367e(0x22f)+_0x37d2da[_0x4774da][_0x2c367e(0x681)]+_0x2c367e(0x3fc)+_0x4b73db+_0x2c367e(0x1a9)+_0x37d2da[_0x4774da][_0x2c367e(0x681)]+_0x2c367e(0x3d2)+_0x37d2da[_0x4774da][_0xca5305(0x23b)]+_0x2c367e(0x256)+_0x4b73db+_0xca5305(0x1c0));}$(_0x2c367e(0x5ac))[_0xca5305(0x1ea)]('');}),$(_0x43a07f(0x390))['on'](_0x3ce2d0(0x588),function(_0x558acb){var _0xeb7e83=_0x43a07f,_0x13399a=_0x3ce2d0,_0x4d3e67=[];FinalFoldersUpload=[];var _0x38c45f=this[_0x13399a(0x3bd)][_0x13399a(0x4a1)],_0x35e226=0x0;$[_0x13399a(0x200)](this[_0x13399a(0x3bd)],function(_0x3429d3,_0x734431){var _0x4238b1=a90_0x41e7;_0x4d3e67[_0x4d3e67[_0x4238b1(0x1d9)]]=_0x734431;}),FinalFoldersUpload[_0x13399a(0x4a1)]==0x0&&($(_0x13399a(0x204))[_0x13399a(0x678)](''),$('#txtUploadFolder')[_0x13399a(0x3f3)]()),(_0x4d3e67=ReinitializeArray(_0x4d3e67),FinalFoldersUpload=FinalFoldersUpload[_0x13399a(0x22e)](_0x4d3e67));var _0x4ee256='';this[_0x13399a(0x3bd)][0x0][_0xeb7e83(0x668)][_0x13399a(0x288)]('/')[0x0],$(_0x13399a(0x204))[_0x13399a(0x6ea)](),this[_0x13399a(0x3bd)][0x0][_0x13399a(0x1bd)][_0x13399a(0x288)]('/')[0x0][_0x13399a(0x4a1)]>0xf?(_0x4ee256=this[_0xeb7e83(0x30e)][0x0][_0x13399a(0x1bd)][_0xeb7e83(0x5e5)]('/')[0x0][_0xeb7e83(0x36e)](0x0,0xf)+_0x13399a(0x278),$(_0x13399a(0x204))[_0x13399a(0x314)]()[_0xeb7e83(0x446)](_0x13399a(0x1eb)+this[_0x13399a(0x3bd)][0x0][_0x13399a(0x1bd)][_0x13399a(0x288)]('/')[0x0]+_0x13399a(0x1a9)+_0x4ee256+'&nbsp;&nbsp;<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x20DeletePic\x22\x20style=\x22color:red;\x22\x20onclick=\x22removeLineFolder(this.id,\x20\x27'+this[_0x13399a(0x3bd)][0x0][_0x13399a(0x1bd)][_0x13399a(0x288)]('/')[0x0]+_0x13399a(0x6e7))):$('#txtUploadFolder')[_0x13399a(0x314)]()[_0x13399a(0x693)]('<div\x20class=\x22NewFolderUpload\x22\x20title=\x22'+this[_0x13399a(0x3bd)][0x0][_0x13399a(0x1bd)][_0x13399a(0x288)]('/')[0x0]+_0x13399a(0x1a9)+this[_0xeb7e83(0x30e)][0x0][_0x13399a(0x1bd)][_0xeb7e83(0x5e5)]('/')[0x0]+'&nbsp;&nbsp;<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x20DeletePic\x22\x20style=\x22color:red;\x22\x20onclick=\x22removeLineFolder(this.id,\x20\x27'+this[_0xeb7e83(0x30e)][0x0][_0x13399a(0x1bd)][_0x13399a(0x288)]('/')[0x0]+_0x13399a(0x6e7)),$(_0x13399a(0x650))[_0x13399a(0x419)]('');}),$(_0x3ce2d0(0x532))[_0x3ce2d0(0x382)](function(){var _0x39bbd6=_0x43a07f,_0x4a91a1=_0x3ce2d0;if(AttachmentValidation()==!![]){if(checkFileSize()==!![])saveAttachment();else{if(confirm(_0x4a91a1(0x69b)+TotalSize+_0x4a91a1(0x6ec))==!![])$(_0x4a91a1(0x55c))[_0x4a91a1(0x341)](_0x4a91a1(0x3f3)),OpenLargeUpload();else return $(_0x39bbd6(0x348))[_0x4a91a1(0x341)](_0x39bbd6(0x39a)),![];}}else return alert(_0x4a91a1(0x3a1)),![];}),$('#btnFolderAttachment')[_0x43a07f(0x26c)](function(){var _0x77191f=_0x43a07f,_0x10b394=_0x3ce2d0;if(FinalFoldersUpload[_0x77191f(0x1d9)]>0x0){if(AttachmentValidation()==!![])waitingDialog[_0x77191f(0x46b)](),setTimeout(function(){uploadFolder();},0x64);else return alert(_0x10b394(0x3a1)),![];}else return alert(_0x77191f(0x27b)),![];}),$(_0x3ce2d0(0x658))[_0x3ce2d0(0x382)](function(){var _0x26c859=_0x43a07f,_0x3575fc=_0x3ce2d0;if(arrFileFolder[_0x3575fc(0x4a1)]>0x0){$(_0x3575fc(0x6e2))[_0x3575fc(0x45a)]({'changeMonth':!![],'changeYear':!![],'minDate':new Date()}),$(_0x3575fc(0x6e2))['datepicker'](_0x26c859(0x1ab),'dateFormat',_0x3575fc(0x516)),$(_0x3575fc(0x1c3))[_0x3575fc(0x47f)](_0x3575fc(0x3da),''),$(_0x3575fc(0x5cb))[_0x3575fc(0x47f)](_0x3575fc(0x3da),''),$(_0x3575fc(0x4cd))[_0x26c859(0x235)](_0x26c859(0x495),''),$(_0x26c859(0x28f))[_0x3575fc(0x47f)](_0x3575fc(0x3da),''),$(_0x3575fc(0x4a4))[_0x3575fc(0x47f)](_0x3575fc(0x3da),''),$(_0x26c859(0x687))[_0x3575fc(0x419)](''),$(_0x3575fc(0x1e7))[_0x3575fc(0x419)](_0x3575fc(0x6e4)),$('#txtUpdateRef')[_0x3575fc(0x419)](''),$(_0x26c859(0x2b7))[_0x3575fc(0x419)](''),$(_0x3575fc(0x2c8))[_0x3575fc(0x419)](''),$(_0x3575fc(0x219))[_0x3575fc(0x4a1)]==0x0&&BindDMSDocumentType(),$(_0x3575fc(0x25f))[_0x26c859(0x4e5)]();var _0x16531b=AddCustomColumns();getSingleFileProperty(arrFileFolder[0x0][_0x3575fc(0x4b6)],arrFileFolder[0x0][_0x3575fc(0x457)],arrFileFolder[0x0][_0x3575fc(0x505)],_0x16531b);}else return alert(_0x26c859(0x615)),![];}),$(_0x3ce2d0(0x2fb))[_0x3ce2d0(0x382)](function(_0x3d9f85){var _0x108410=_0x43a07f,_0x4ac605=_0x3ce2d0,_0x1d25f5='';if($(_0x4ac605(0x4e5))[_0x4ac605(0x40d)](_0x4ac605(0x25f))[_0x108410(0x1d9)]>0x0)for(var _0x48e956=0x0;_0x48e956<arrCustomCol[_0x4ac605(0x4a1)];_0x48e956++){_0x1d25f5+=_0x4ac605(0x58d)+arrCustomCol[_0x48e956][_0x4ac605(0x556)]+_0x4ac605(0x6b6);}if(arrFileFolder[_0x108410(0x1d9)]>0x0){$(_0x4ac605(0x2fb))[_0x4ac605(0x1a0)](_0x4ac605(0x2fc),_0x108410(0x45b));if($(_0x4ac605(0x1c3))[_0x108410(0x235)](_0x108410(0x495))==![]&&$(_0x4ac605(0x4cd))[_0x108410(0x235)]('checked')==![]&&$(_0x4ac605(0x5cb))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x5c5))['prop'](_0x4ac605(0x3da))==![]&&$(_0x108410(0x28f))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]&&$(_0x108410(0x1bc))[_0x4ac605(0x47f)](_0x108410(0x495))==![]&&$(_0x4ac605(0x4a4))[_0x4ac605(0x47f)](_0x108410(0x495))==![]+_0x1d25f5)return $('#btnUpdateProp')[_0x108410(0x235)](_0x4ac605(0x2fc),''),alert('Please\x20select\x20any\x20file\x20or\x20folder\x20first.'),![];else UpdateFileFolderProperties();}else{if($(_0x108410(0x521))[_0x4ac605(0x247)](_0x4ac605(0x418))!=_0x4ac605(0x1f5)){$(_0x4ac605(0x2fb))[_0x4ac605(0x1a0)](_0x4ac605(0x2fc),_0x4ac605(0x2fc));if($(_0x4ac605(0x1c3))[_0x4ac605(0x47f)](_0x108410(0x495))==![]&&$(_0x108410(0x389))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x5cb))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x5c5))[_0x4ac605(0x47f)](_0x108410(0x495))==![]&&$(_0x108410(0x28f))[_0x4ac605(0x47f)](_0x108410(0x495))==![]&&$(_0x4ac605(0x181))[_0x108410(0x235)](_0x4ac605(0x3da))==![]&&$(_0x108410(0x37f))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]+_0x1d25f5)return $('#btnUpdateProp')[_0x4ac605(0x47f)](_0x4ac605(0x2fc),''),alert(_0x4ac605(0x24c)),![];else UpdateFileProperties();}else{if($(_0x4ac605(0x1fa))[_0x108410(0x2ef)](_0x108410(0x21e))!=_0x4ac605(0x1f5)){$(_0x4ac605(0x2fb))[_0x4ac605(0x1a0)](_0x4ac605(0x2fc),_0x4ac605(0x2fc));if($(_0x4ac605(0x1c3))['prop'](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x4cd))[_0x4ac605(0x47f)](_0x108410(0x495))==![]&&$(_0x4ac605(0x5cb))[_0x108410(0x235)](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x5c5))[_0x108410(0x235)](_0x4ac605(0x3da))==![]&&$(_0x108410(0x28f))['prop'](_0x4ac605(0x3da))==![]&&$(_0x4ac605(0x181))[_0x4ac605(0x47f)](_0x4ac605(0x3da))==![]&&$(_0x108410(0x37f))[_0x108410(0x235)](_0x4ac605(0x3da))==![]+_0x1d25f5)return $(_0x4ac605(0x2fb))[_0x4ac605(0x47f)](_0x108410(0x45b),''),alert(_0x4ac605(0x24c)),![];else UpdateFileProperties();}else return alert('Please\x20select\x20any\x20file\x20to\x20update.'),![];}}}),$(_0x3ce2d0(0x5aa))[_0x3ce2d0(0x2d8)](function(){var _0xca62d5=_0x3ce2d0;this[_0xca62d5(0x447)][_0xca62d5(0x6ee)]()!=''&&$(_0xca62d5(0x1c3))[_0xca62d5(0x47f)](_0xca62d5(0x3da),_0xca62d5(0x3da));}),$(_0x3ce2d0(0x6c8))[_0x3ce2d0(0x588)](function(){var _0x41a2ad=_0x3ce2d0;getSubCategory(this[_0x41a2ad(0x447)],_0x41a2ad(0x378));}),$('#txtUpdateType')[_0x3ce2d0(0x588)](function(){var _0x5aa365=_0x43a07f,_0x3f9590=_0x3ce2d0;this[_0x5aa365(0x3cd)]['trim']()!=_0x3f9590(0x6e4)&&$(_0x5aa365(0x1e7))[_0x3f9590(0x47f)]('checked',_0x3f9590(0x3da)),getSubCategory(this['value'],_0x3f9590(0x24e));}),$(_0x43a07f(0x1a3))[_0x3ce2d0(0x588)](function(){var _0x221716=_0x43a07f,_0x1ed202=_0x3ce2d0;this[_0x1ed202(0x447)][_0x1ed202(0x6ee)]()==_0x1ed202(0x3f1)?$(_0x221716(0x5ac))[_0x1ed202(0x314)]()[_0x1ed202(0x693)](_0x1ed202(0x43a)):getSubCategory(this[_0x1ed202(0x447)],_0x1ed202(0x64c));}),$(_0x3ce2d0(0x38f))[_0x3ce2d0(0x588)](function(){var _0x5ca170=_0x43a07f,_0x61fb2c=_0x3ce2d0;this[_0x5ca170(0x3cd)][_0x61fb2c(0x6ee)]()!=_0x61fb2c(0x6e4)&&$(_0x61fb2c(0x5c5))[_0x61fb2c(0x47f)](_0x61fb2c(0x3da),_0x61fb2c(0x3da));}),$(_0x3ce2d0(0x572))[_0x3ce2d0(0x2d8)](function(){var _0x3c9dc1=_0x3ce2d0;this[_0x3c9dc1(0x447)][_0x3c9dc1(0x6ee)]()!=''&&$('#chkUpdateRef')[_0x3c9dc1(0x47f)](_0x3c9dc1(0x3da),_0x3c9dc1(0x3da));}),$(_0x3ce2d0(0x571))[_0x43a07f(0x603)](function(){var _0x5b2f5a=_0x3ce2d0;this[_0x5b2f5a(0x447)][_0x5b2f5a(0x6ee)]()!=''&&$(_0x5b2f5a(0x26f))[_0x5b2f5a(0x47f)](_0x5b2f5a(0x3da),_0x5b2f5a(0x3da));}),$('#txtUpdateValidity')[_0x3ce2d0(0x588)](function(){var _0x29a045=_0x43a07f,_0x849d45=_0x3ce2d0;this[_0x29a045(0x3cd)][_0x849d45(0x6ee)]()!=''&&$(_0x849d45(0x181))[_0x849d45(0x47f)](_0x849d45(0x3da),_0x29a045(0x495));}),$('#txtUpdateDetails')[_0x3ce2d0(0x2d8)](function(){var _0x3d3359=_0x43a07f,_0x2a5325=_0x3ce2d0;this[_0x2a5325(0x447)][_0x2a5325(0x6ee)]()!=''&&$(_0x2a5325(0x4a4))[_0x2a5325(0x47f)](_0x2a5325(0x3da),_0x3d3359(0x495));}),$(_0x3ce2d0(0x18f))[_0x43a07f(0x26c)](function(_0x52e7e4){var _0x258dab=_0x43a07f,_0x51bd61=_0x3ce2d0;$(_0x51bd61(0x6a2))[_0x51bd61(0x419)](''),$(_0x51bd61(0x1e7))[_0x51bd61(0x419)](_0x51bd61(0x6e4)),$(_0x51bd61(0x38f))[_0x51bd61(0x419)](_0x51bd61(0x6e4)),$(_0x51bd61(0x285))[_0x51bd61(0x47f)](_0x51bd61(0x3da),_0x51bd61(0x3da)),$(_0x51bd61(0x572))[_0x51bd61(0x419)](''),$(_0x258dab(0x687))[_0x51bd61(0x419)](''),$(_0x51bd61(0x2c8))[_0x51bd61(0x419)]('');}),$(_0x3ce2d0(0x45d))[_0x3ce2d0(0x382)](function(){var _0x29059a=_0x43a07f,_0x4f19da=_0x3ce2d0;$(_0x4f19da(0x641))[_0x4f19da(0x4a1)]==0x0&&BindDMSDocumentType(),$(_0x29059a(0x44f))[_0x4f19da(0x45a)](_0x4f19da(0x5db)),$(_0x4f19da(0x34d))[_0x4f19da(0x45a)]('destroy'),$(_0x29059a(0x44f))[_0x4f19da(0x45a)](),$(_0x4f19da(0x34d))[_0x4f19da(0x45a)](),$(_0x4f19da(0x1f6))[_0x4f19da(0x45a)](_0x4f19da(0x6c2),_0x4f19da(0x20f),_0x4f19da(0x516)),$(_0x4f19da(0x34d))[_0x4f19da(0x45a)](_0x4f19da(0x6c2),_0x4f19da(0x20f),_0x4f19da(0x516)),currentSectionType==_0x4f19da(0x3dd)?$(_0x4f19da(0x640))[_0x4f19da(0x290)]():$(_0x4f19da(0x640))[_0x4f19da(0x290)]();}),$(_0x3ce2d0(0x399))[_0x3ce2d0(0x382)](function(_0x56a5c6){var _0x381f7f=_0x3ce2d0;waitingDialog[_0x381f7f(0x6ea)](),setTimeout(function(){LibraryFilter();},0x64);}),$(_0x3ce2d0(0x198))[_0x43a07f(0x26c)](function(_0x5830c6){ClearLibraryFilter();}),$(_0x3ce2d0(0x2e2))[_0x3ce2d0(0x382)](function(_0x3a74b7){var _0x23a174=_0x3ce2d0;confirm(_0x23a174(0x3b2))&&DeleteFileFromSource(_0x23a174(0x3a0));}),$(_0x3ce2d0(0x6a0))[_0x3ce2d0(0x382)](function(_0x313e06){var _0x12e992=_0x3ce2d0;if($(_0x12e992(0x691))[_0x12e992(0x419)]()[_0x12e992(0x6ee)]()!='')RenameFile();else return alert(_0x12e992(0x1b9)),![];}),$(_0x3ce2d0(0x29c))[_0x43a07f(0x26c)](function(_0x5dbffd){NotifyEmail();}),$(_0x3ce2d0(0x5d7))['click'](function(){SendNotifyEmail();}),$(_0x3ce2d0(0x345))[_0x3ce2d0(0x382)](function(){var _0x2c04f3=_0x43a07f,_0x49999d=_0x3ce2d0;$(_0x49999d(0x219))[_0x49999d(0x4a1)]==0x0&&BindDMSDocumentType(),$(_0x49999d(0x25f))[_0x49999d(0x290)]();var _0x5c77dd=AddCustomColumns();getSingleFileProperty($(_0x2c04f3(0x4c3))[_0x49999d(0x340)](),_0x49999d(0x6b9),CopySourceURL,_0x5c77dd),$(_0x49999d(0x1c3))[_0x49999d(0x47f)]('checked',''),$(_0x2c04f3(0x1e7))[_0x49999d(0x47f)](_0x2c04f3(0x495),''),$(_0x49999d(0x4cd))[_0x49999d(0x47f)](_0x49999d(0x3da),''),$(_0x49999d(0x26f))[_0x49999d(0x47f)](_0x49999d(0x3da),''),$(_0x49999d(0x4a4))[_0x49999d(0x47f)](_0x49999d(0x3da),''),$(_0x49999d(0x5aa))[_0x49999d(0x419)]($(_0x49999d(0x2a5))[_0x2c04f3(0x1ca)]()),$('#txtUpdateRef')[_0x2c04f3(0x1ea)]($(_0x2c04f3(0x3d2))[_0x2c04f3(0x1ca)]()),$(_0x49999d(0x1e7))[_0x49999d(0x419)]($(_0x2c04f3(0x539))[_0x2c04f3(0x1ca)]()),$(_0x49999d(0x571))[_0x49999d(0x419)]($(_0x49999d(0x5ea))[_0x49999d(0x340)]()),$(_0x49999d(0x2c8))[_0x49999d(0x419)]($(_0x2c04f3(0x3d1))['text']());}),$(_0x3ce2d0(0x238))[_0x43a07f(0x26c)](function(_0x5a06fc){var _0x4185e5=_0x43a07f,_0x175e57=_0x3ce2d0;_0x5a06fc[_0x4185e5(0x304)](),$(this)[_0x175e57(0x49d)](_0x4185e5(0x49c))[_0x175e57(0x305)](),document[_0x175e57(0x613)](_0x175e57(0x6c0));}),initializePeoplePicker(_0x3ce2d0(0x6b7),!![]),$('#dueDateField')[_0x3ce2d0(0x45a)]({'changeMonth':!![],'changeYear':!![],'minDate':new Date()}),$(_0x3ce2d0(0x410))[_0x3ce2d0(0x45a)](_0x3ce2d0(0x6c2),_0x3ce2d0(0x20f),_0x3ce2d0(0x516)),$(_0x3ce2d0(0x3f0))[_0x3ce2d0(0x382)](function(){var _0x382bf6=_0x43a07f,_0x22e089=_0x3ce2d0;$(this)['is'](_0x22e089(0x4fa))?$(_0x22e089(0x410))[_0x22e089(0x47f)](_0x22e089(0x2fc),!![]):$(_0x22e089(0x410))[_0x382bf6(0x235)](_0x22e089(0x2fc),![]);}),$(_0x3ce2d0(0x32d))[_0x3ce2d0(0x382)](function(){var _0x12e3b6=_0x43a07f,_0x18f26c=_0x3ce2d0;$(this)['is'](_0x18f26c(0x4fa))?($(_0x18f26c(0x216))[_0x18f26c(0x47f)](_0x18f26c(0x2fc),!![]),$(_0x18f26c(0x216))[_0x18f26c(0x419)]('')):($(_0x12e3b6(0x272))['text']()!=''&&$(_0x18f26c(0x48b))['text']()!=_0x12e3b6(0x181)&&$(_0x18f26c(0x48b))[_0x18f26c(0x340)]()!=null?$(_0x18f26c(0x216))[_0x18f26c(0x419)](moment(new Date($(_0x18f26c(0x48b))[_0x18f26c(0x340)]()))[_0x12e3b6(0x634)](_0x18f26c(0x2fe))):$(_0x12e3b6(0x392))[_0x18f26c(0x419)](''),$(_0x12e3b6(0x279))[_0x18f26c(0x47f)](_0x12e3b6(0x45b),![]));}),$(_0x3ce2d0(0x252))['click'](function(){var _0x1454b9=_0x43a07f,_0x27c42b=_0x3ce2d0;$(_0x1454b9(0x5c8))[_0x27c42b(0x47f)](_0x27c42b(0x3da),!![]),$(_0x27c42b(0x547))[_0x1454b9(0x39a)](),$('#ddlAllDefinedSteps')[_0x27c42b(0x314)](),$(_0x27c42b(0x38e))[_0x27c42b(0x341)](_0x27c42b(0x6ea)),$(_0x27c42b(0x52a))[_0x27c42b(0x419)](''),$('#SuccessorStepHeader')[_0x27c42b(0x340)](_0x1454b9(0x52f)),$(_0x27c42b(0x5b4))[_0x1454b9(0x235)](_0x27c42b(0x3da),![]),multipleEmailAddress=[],assignUserName=[],EmpIds=[],$(_0x27c42b(0x433))[_0x27c42b(0x3f3)](),$(_0x1454b9(0x4c4))[_0x27c42b(0x6ea)](),$(_0x27c42b(0x1d5))[_0x1454b9(0x39a)](),onChangeTask(_0x27c42b(0x4d6),_0x27c42b(0x6b7),_0x27c42b(0x4ca),0x1),$(_0x1454b9(0x49d))[_0x27c42b(0x419)]()==_0x1454b9(0x3b6)?($(_0x1454b9(0x4f3))[_0x27c42b(0x6ea)](),$('#UserSection')[_0x1454b9(0x46b)](),$(_0x1454b9(0x4a1))[_0x1454b9(0x39a)](),$(_0x27c42b(0x4f6))[_0x27c42b(0x3f3)](),$(_0x27c42b(0x547))[_0x1454b9(0x39a)](),$(_0x27c42b(0x547))[_0x27c42b(0x314)]()):($(_0x27c42b(0x30e))[_0x27c42b(0x3f3)](),$(_0x1454b9(0x216))[_0x1454b9(0x39a)](),$(_0x27c42b(0x4e9))[_0x27c42b(0x6ea)](),$('#RunTimeTitanSection')[_0x1454b9(0x46b)](),BindAllDefinedSteps(''));}),$(_0x3ce2d0(0x1f4))[_0x3ce2d0(0x588)](function(){var _0x5dae8b=_0x43a07f,_0x1bb72b=_0x3ce2d0;$(_0x5dae8b(0x233))[_0x5dae8b(0x51f)](),$(_0x1bb72b(0x6bd))[_0x1bb72b(0x3f3)](),this[_0x1bb72b(0x447)]==_0x1bb72b(0x6dc)?($(_0x1bb72b(0x1a8))[_0x1bb72b(0x3f3)](),$(_0x1bb72b(0x42d))[_0x1bb72b(0x6ea)](),$(_0x1bb72b(0x217))[_0x1bb72b(0x6ea)]()):($(_0x1bb72b(0x1a8))[_0x1bb72b(0x6ea)](),getPredfinedTemplates(),$(_0x1bb72b(0x42d))[_0x1bb72b(0x6ea)](),$(_0x1bb72b(0x217))[_0x5dae8b(0x39a)]());}),$(_0x43a07f(0x49d))[_0x3ce2d0(0x588)](function(){var _0xf968b5=_0x43a07f,_0x24efc4=_0x3ce2d0;$(_0xf968b5(0x233))[_0x24efc4(0x314)](),$(_0x24efc4(0x6bd))[_0x24efc4(0x3f3)](),$(_0x24efc4(0x4bc))[_0x24efc4(0x47f)](_0x24efc4(0x3da),_0xf968b5(0x495)),$(_0x24efc4(0x3be))[_0x24efc4(0x6ea)](),$(_0x24efc4(0x224))[_0xf968b5(0x39a)](),$(_0xf968b5(0x5f9))['empty'](),$(_0x24efc4(0x1f4))[_0xf968b5(0x1ea)]()!=_0x24efc4(0x6dc)&&getPredfinedTemplates(),this[_0x24efc4(0x447)]=='Adobe\x20Sign'?($(_0x24efc4(0x25c))[_0x24efc4(0x3f3)](),$(_0x24efc4(0x5b4))[_0x24efc4(0x47f)](_0x24efc4(0x3da),![])):$(_0x24efc4(0x25c))[_0x24efc4(0x6ea)]();}),$(_0x43a07f(0x374))[_0x43a07f(0x259)](function(){var _0x364d14=_0x43a07f,_0x4c691f=_0x3ce2d0;multipleEmailAddress=[],assignUserName=[],EmpIds=[],$(_0x4c691f(0x6cf))[_0x4c691f(0x3f3)](),this[_0x364d14(0x3cd)]==_0x4c691f(0x3a3)?($(_0x4c691f(0x3be))[_0x4c691f(0x3f3)](),$(_0x4c691f(0x224))[_0x4c691f(0x6ea)](),$(_0x4c691f(0x461))[_0x4c691f(0x314)]()):($(_0x4c691f(0x3be))[_0x4c691f(0x6ea)](),$(_0x4c691f(0x224))['hide'](),$(_0x4c691f(0x4dd))[_0x4c691f(0x419)](''),$(_0x364d14(0x68b))[_0x4c691f(0x419)](''));}),$(_0x3ce2d0(0x3a4))[_0x3ce2d0(0x588)](function(){var _0x3900b2=_0x43a07f,_0x169cf2=_0x3ce2d0;this[_0x169cf2(0x447)]==_0x169cf2(0x482)?($(_0x169cf2(0x293))[_0x169cf2(0x3f3)](),$(_0x169cf2(0x547))[_0x169cf2(0x6ea)](),EmptyPeoplePicker(_0x169cf2(0x6b7))):($(_0x169cf2(0x293))[_0x3900b2(0x46b)](),$(_0x169cf2(0x547))[_0x3900b2(0x39a)](),$('#ddlAllDefinedSteps')[_0x169cf2(0x314)]());}),$(_0x3ce2d0(0x2c2))[_0x43a07f(0x26c)](function(){var _0x11834f=_0x43a07f,_0x12a13d=_0x3ce2d0;if($[_0x11834f(0x549)]($(_0x12a13d(0x52a))[_0x12a13d(0x419)]())!=''){if($(_0x12a13d(0x461))[_0x12a13d(0x678)]()!=''){if($(_0x12a13d(0x6bb))[_0x12a13d(0x340)]()=='Edit\x20Step')EditAddedStep(multipleEmailAddress,assignUserName,EmpIds);else{var _0x204cf9=[];_0x204cf9[_0x12a13d(0x4f4)]({'ApproverType':_0x11834f(0x2de),'ApproverRole':'','ApproverDecidingStep':''}),AddMoreStep(multipleEmailAddress,assignUserName,EmpIds,_0x204cf9);}}else{if($(_0x12a13d(0x432))[_0x12a13d(0x47f)](_0x11834f(0x495))==!![]){var _0x204cf9=[];if($(_0x12a13d(0x547))[_0x12a13d(0x419)]()!=null&&$(_0x12a13d(0x547))[_0x12a13d(0x419)]()!='')$(_0x12a13d(0x6bb))[_0x12a13d(0x340)]()==_0x12a13d(0x54e)?EditAddedStep(multipleEmailAddress,assignUserName,EmpIds):(multipleEmailAddress[_0x12a13d(0x4f4)](_0x12a13d(0x62c)),EmpIds[_0x12a13d(0x4f4)](''),assignUserName[_0x11834f(0x5ae)]($(_0x12a13d(0x547))[_0x11834f(0x1ea)]()),_0x204cf9[_0x12a13d(0x4f4)]({'ApproverType':_0x12a13d(0x62c),'ApproverRole':'','ApproverDecidingStep':$(_0x11834f(0x5f9))[_0x11834f(0x1ea)]()}),AddMoreStep(multipleEmailAddress,assignUserName,EmpIds,_0x204cf9));else return alert(_0x12a13d(0x68a)),![];}else{if($[_0x11834f(0x549)]($(_0x11834f(0x325))[_0x12a13d(0x419)]())!=''&&$[_0x12a13d(0x6ee)]($(_0x12a13d(0x4ac))['val']())&&isEmail($(_0x12a13d(0x4ac))[_0x12a13d(0x419)]())!=![]){if($(_0x12a13d(0x6bb))[_0x11834f(0x1ca)]()==_0x12a13d(0x54e))EditAddedStep(multipleEmailAddress,assignUserName,EmpIds);else{var _0x204cf9=[];_0x204cf9[_0x11834f(0x5ae)]({'ApproverType':_0x12a13d(0x313),'ApproverRole':'','ApproverDecidingStep':''}),AddMoreStep(multipleEmailAddress,assignUserName,EmpIds,_0x204cf9);}}else return alert(_0x12a13d(0x368)),![];}}$(_0x12a13d(0x448))[_0x12a13d(0x612)](_0x12a13d(0x382));}else return alert(_0x12a13d(0x185)),![];}),$(_0x3ce2d0(0x448))[_0x3ce2d0(0x382)](function(){var _0x4aece3=_0x3ce2d0;$(_0x4aece3(0x52a))[_0x4aece3(0x419)](''),multipleEmailAddress=[],assignUserName=[],EmpIds=[],$('#userHTMLBox')[_0x4aece3(0x314)](),$(_0x4aece3(0x4dd))[_0x4aece3(0x419)](''),$(_0x4aece3(0x4ac))[_0x4aece3(0x419)](''),$(_0x4aece3(0x6cf))[_0x4aece3(0x3f3)]();}),$(_0x3ce2d0(0x267))[_0x3ce2d0(0x382)](function(_0x7e32d8){var _0x40d75a=_0x3ce2d0;ClearAprovalControls(),$(_0x40d75a(0x389))[_0x40d75a(0x341)](_0x40d75a(0x3f3));}),$(_0x3ce2d0(0x24a))[_0x3ce2d0(0x382)](function(_0x5d57ca){var _0x54b374=_0x43a07f,_0x51948a=_0x3ce2d0;if($['trim']($(_0x51948a(0x23e))[_0x51948a(0x678)]())=='')return alert(_0x51948a(0x62e)),![];else{if($('#noDueDate')[_0x51948a(0x47f)]('checked')==![]&&$(_0x54b374(0x340))[_0x51948a(0x419)]()=='')return alert(_0x54b374(0x1c8)),![];else{if($(_0x51948a(0x32d))[_0x51948a(0x47f)](_0x51948a(0x3da))==![]&&$(_0x51948a(0x216))[_0x51948a(0x419)]()=='')return alert(_0x54b374(0x33f)),![];else{if($(_0x51948a(0x410))[_0x51948a(0x419)]()!=''&&$(_0x51948a(0x216))[_0x51948a(0x419)]()!=''&&new Date($(_0x54b374(0x340))[_0x54b374(0x1ea)]())>new Date($(_0x51948a(0x216))[_0x54b374(0x1ea)]()))return alert(_0x54b374(0x4fb)),![];else ApprovalStartValid()==!![]&&($(_0x51948a(0x358))[_0x51948a(0x184)](),setTimeout(function(){UpdateDocumentStatus();},0x64));}}}}),$(_0x3ce2d0(0x324))[_0x43a07f(0x26c)](function(){var _0x545899=_0x43a07f,_0x43bb93=_0x3ce2d0;$(_0x545899(0x340))[_0x43bb93(0x5a9)](_0x43bb93(0x2fc));}),$(_0x3ce2d0(0x1f1))[_0x3ce2d0(0x382)](function(_0x138141){var _0x4bef94=_0x43a07f,_0x4ffc5e=_0x3ce2d0;$(_0x4ffc5e(0x389))[_0x4ffc5e(0x341)](_0x4bef94(0x46b)),$(_0x4bef94(0x4a0))[_0x4ffc5e(0x3f3)](),$(_0x4ffc5e(0x5b4))[_0x4ffc5e(0x47f)](_0x4bef94(0x495),![]),FinalFiles4Upload=[],$(_0x4bef94(0x430))['val'](''),$(_0x4ffc5e(0x3c1))[_0x4ffc5e(0x678)](''),$(_0x4ffc5e(0x216))[_0x4ffc5e(0x47f)](_0x4ffc5e(0x2fc),!![]),$(_0x4ffc5e(0x216))[_0x4bef94(0x1ea)](''),$(_0x4ffc5e(0x32d))[_0x4ffc5e(0x47f)](_0x4bef94(0x495),!![]);}),$(_0x3ce2d0(0x36f))[_0x3ce2d0(0x382)](function(){var _0x44de14=_0x3ce2d0;$(_0x44de14(0x4c5))[_0x44de14(0x340)]()==_0x44de14(0x46e)?AddFavoriteFile():DeleteFromFavourite();}),$('#btnRenameFile')[_0x3ce2d0(0x382)](function(_0x3cdba0){var _0x54db55=_0x3ce2d0;OldFileName=$(_0x54db55(0x691))[_0x54db55(0x419)]()[_0x54db55(0x6ee)]()+$(_0x54db55(0x5ed))['text']();}),$('#LiAddFolder')[_0x3ce2d0(0x382)](function(){var _0x1ecffb=_0x43a07f,_0x47bc92=_0x3ce2d0;$(_0x47bc92(0x5e6))[_0x47bc92(0x419)](''),$(_0x1ecffb(0x25f))[_0x47bc92(0x419)](''),$(_0x47bc92(0x4df))[_0x1ecffb(0x1ea)](_0x1ecffb(0x463)),$(_0x47bc92(0x4ef))[_0x47bc92(0x419)](_spPageContextInfo[_0x47bc92(0x4ed)]),$(_0x47bc92(0x299))[_0x47bc92(0x419)](''),$(_0x47bc92(0x62b))[_0x47bc92(0x314)]()[_0x47bc92(0x693)](_0x47bc92(0x2f6)),$(_0x47bc92(0x365))[_0x47bc92(0x4a1)]==0x0&&BindDMSDocumentType();;}),$(_0x3ce2d0(0x4df))[_0x43a07f(0x259)](function(){var _0x515aac=_0x3ce2d0;getSubCategory(this[_0x515aac(0x447)],_0x515aac(0x191));}),$(_0x3ce2d0(0x6ce))[_0x3ce2d0(0x528)]({'pickerPosition':_0x3ce2d0(0x257),'tonesStyle':'bullet','events':{'keyup':function(_0x1291a4,_0x9c897b){}}}),$(_0x3ce2d0(0x266))[_0x3ce2d0(0x382)](function(){var _0x121f77=_0x3ce2d0;$(_0x121f77(0x4c3))[_0x121f77(0x3f3)]();}),$(_0x3ce2d0(0x41d))[_0x3ce2d0(0x382)](function(_0x434dca){var _0xbc5ccb=_0x3ce2d0;GetComments(_0xbc5ccb(0x5e2),'');}),$(_0x3ce2d0(0x486))[_0x3ce2d0(0x382)](function(_0x362fc3){PushRootComment();}),$(_0x3ce2d0(0x5d2))['on'](_0x3ce2d0(0x588),function(_0x165c7f){var _0x335f6b=_0x43a07f,_0x20b81f=_0x3ce2d0;FinalFiles4Upload=[];var _0x2b9f43=this[_0x20b81f(0x3bd)]['length'],_0x53e5f2=0x0;$[_0x20b81f(0x200)](this[_0x20b81f(0x3bd)],function(_0x158568,_0x3b6dc7){var _0x4efb29=_0x20b81f;finalFiles[finalFiles[_0x4efb29(0x4a1)]]=_0x3b6dc7;}),RemoveDuplicate=[];var _0x384bc4=finalFiles[_0x20b81f(0x312)](function(_0x1d0a9f){var _0x5932db=a90_0x41e7,_0x3c19f2=_0x20b81f;if(RemoveDuplicate[_0x3c19f2(0x189)](_0x1d0a9f[_0x3c19f2(0x681)])==-0x1)return RemoveDuplicate[_0x5932db(0x5ae)](_0x1d0a9f[_0x3c19f2(0x681)]),!![];return![];});FinalFiles4Upload=ReinitializeArray(_0x384bc4),$(_0x335f6b(0x418))[_0x20b81f(0x314)](),$(_0x20b81f(0x235))[_0x20b81f(0x314)]();var _0x1e835f='';for(_0x53e5f2;_0x53e5f2<FinalFiles4Upload[_0x20b81f(0x4a1)];_0x53e5f2++){RemoveDuplicate[_0x53e5f2][_0x20b81f(0x4a1)]>0xf?(_0x1e835f=RemoveDuplicate[_0x53e5f2][_0x20b81f(0x65b)](0x0,0xf)+_0x20b81f(0x278),$(_0x20b81f(0x235))[_0x20b81f(0x693)](_0x20b81f(0x65a)+RemoveDuplicate[_0x53e5f2]+_0x20b81f(0x3fc)+Tcounter+_0x20b81f(0x4a3)+_0x1e835f+'\x20</span>\x20<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x22\x20style=\x22color:red;\x22\x20\x20onclick=\x22removeLine(this.id);\x22\x20id=\x22file_'+Tcounter+_0x20b81f(0x304))):$(_0x20b81f(0x235))[_0x20b81f(0x693)](_0x20b81f(0x65a)+RemoveDuplicate[_0x53e5f2]+_0x20b81f(0x3fc)+Tcounter+_0x20b81f(0x4a3)+RemoveDuplicate[_0x53e5f2]+_0x20b81f(0x564)+Tcounter+_0x335f6b(0x1c0)),Tcounter=Tcounter+0x1;}$(_0x20b81f(0x5d2))[_0x20b81f(0x419)]('');});});function GetLibarayDetails(_0x126539,_0x369bca,_0x261660,_0x497d92,_0x105616){var _0x52fc15=a90_0x13126d,_0x487927=_0x4ce28e;$(_0x487927(0x3e5))[_0x487927(0x314)](),currentSectionType=_0x105616,DMS_Type=_0x261660,DMS_Link=_0x369bca,arrFileFolder=[],$(_0x52fc15(0x5a5))[_0x52fc15(0x1d4)](_0x487927(0x382)),arrFilterTable=[],$(_0x487927(0x211))[_0x487927(0x195)](_0x487927(0x566));const _0x2aedca=DMS_Link[_0x52fc15(0x5e5)](_0x487927(0x616))[0x0];Documentname=_0x2aedca[_0x487927(0x288)]('/')[_0x2aedca[_0x487927(0x288)]('/')[_0x487927(0x4a1)]-0x1],CheckLibary=Documentname,SiteUrl=_0x2aedca[_0x487927(0x3ee)](0x0,_0x2aedca[_0x487927(0x594)]('/')),DefaultColumnName=[_0x487927(0x5c2),_0x487927(0x664),_0x487927(0x659),_0x487927(0x3ff),_0x487927(0x475),_0x487927(0x614),_0x487927(0x2b8)],SetColumnName=[];for(var _0x2f0acd=0x0;_0x2f0acd<DefaultColumnName[_0x487927(0x4a1)];_0x2f0acd++){SetColumnName[_0x52fc15(0x5ae)]({'ColumnName':DefaultColumnName[_0x2f0acd]});}if(getListUserEffectivePermissions(SiteUrl,_0x3f07ff,![],'',_0x52fc15(0x2ae)+_spPageContextInfo[_0x52fc15(0x57b)]+'')){}else{}var _0x5d1280='',_0x3f07ff=Documentname;Documentname==_0x487927(0x33f)&&(_0x3f07ff=_0x487927(0x1d1)),listTitle=_0x3f07ff;var _0x3fb15d=0x1;return _0x5d1280=_0x52fc15(0x487)+DMS_Type+_0x487927(0x32c),$[_0x487927(0x3a9)](getItemsWithQuery(_0x487927(0x2b4),_0x5d1280,_spPageContextInfo[_0x487927(0x229)]))[_0x487927(0x577)](function(_0x43142c){var _0xa2da1=_0x52fc15,_0x2482bf=_0x487927;$(_0x2482bf(0x554))[_0x2482bf(0x290)](),$(_0xa2da1(0x3d8))[_0x2482bf(0x47f)](_0x2482bf(0x3da),![]),$(_0x2482bf(0x18c))[_0x2482bf(0x47f)](_0x2482bf(0x3da),!![]);if(_0x43142c[_0x2482bf(0x4a1)]>0x0){getMandatoryColumns(_0x43142c),_0x43142c=_0x43142c[_0x2482bf(0x312)](function(_0xeb5cb7){var _0x5b4ef4=_0x2482bf;return _0xeb5cb7[_0x5b4ef4(0x58b)]==!![];}),_0x43142c=getUniqueListBy(_0x43142c,_0x2482bf(0x2ef)),_0x43142c[_0xa2da1(0x1d3)](function(_0x2dbecd,_0x136d3f){var _0x365f7b=_0xa2da1,_0xecf488=_0x2482bf;return _0x2dbecd[_0xecf488(0x420)]-_0x136d3f[_0x365f7b(0x5eb)];});var _0x1f8eac='';SetColumnName=[];var _0xd2d0dc='',_0x48b625='';_0x1f8eac=_0x43142c[_0x2482bf(0x312)](function(_0x2f387d){var _0xfaad8c=_0x2482bf;return _0x2f387d[_0xfaad8c(0x2ef)]==_0xfaad8c(0x5c2);}),_0x48b625=_0x43142c[_0x2482bf(0x312)](function(_0x7097d){var _0x42a6b6=_0x2482bf;return _0x7097d[_0x42a6b6(0x643)]==_0x42a6b6(0x4b3);}),_0x48b625[_0x2482bf(0x4a1)]>0x0&&DefaultRow(_0x48b625),_0xd2d0dc=_0x43142c[_0x2482bf(0x312)](function(_0x8c257c){var _0x49d855=_0x2482bf;return _0x8c257c[_0x49d855(0x643)]==_0x49d855(0x334);}),_0xd2d0dc[_0x2482bf(0x4a1)]>0x0&&addCustomRow(_0xd2d0dc);if(_0x1f8eac[_0x2482bf(0x4a1)]==0x0){SetColumnName[_0xa2da1(0x5ae)]({'ColumnName':_0x2482bf(0x5c2)});for(var _0x25dac6=0x0;_0x25dac6<_0x43142c[_0xa2da1(0x1d9)];_0x25dac6++){SetColumnName[_0x2482bf(0x4f4)]({'ColumnName':_0x43142c[_0x25dac6][_0x2482bf(0x2ef)],'DataType':_0x43142c[_0x25dac6][_0x2482bf(0x606)]});}}else for(var _0x25dac6=0x0;_0x25dac6<_0x43142c[_0xa2da1(0x1d9)];_0x25dac6++){SetColumnName['push']({'ColumnName':_0x43142c[_0x25dac6][_0xa2da1(0x1bb)],'DataType':_0x43142c[_0x25dac6][_0x2482bf(0x606)]});}GenrateHtmlGrid(SetColumnName,![],'');}else GenrateHtmlGrid(SetColumnName,![],'');}),waitingDialog[_0x52fc15(0x39a)](),null;}function addCustomRow(_0x295881){var _0x94557d=a90_0x13126d,_0xcdb56f=_0x4ce28e;$(_0xcdb56f(0x6a1))[_0xcdb56f(0x290)]();for(var _0x551ca5=0x0;_0x551ca5<_0x295881[_0xcdb56f(0x4a1)];_0x551ca5++){CustomRow=_0x94557d(0x585)+_0xcdb56f(0x396)+_0xcdb56f(0x657)+_0xcdb56f(0x2a8)+_0x551ca5+_0xcdb56f(0x579)+_0xcdb56f(0x441)+_0xcdb56f(0x6f0)+_0xcdb56f(0x282)+_0x295881[_0x551ca5][_0xcdb56f(0x2ef)]+_0x94557d(0x29d)+_0xcdb56f(0x282)+_0x295881[_0x551ca5][_0xcdb56f(0x606)]+_0xcdb56f(0x6f0)+_0xcdb56f(0x3ea)+_0x94557d(0x4c0)+_0xcdb56f(0x231)+_0xcdb56f(0x2c3)+_0x551ca5+'\x22>'+_0xcdb56f(0x31a)+_0xcdb56f(0x437)+_0xcdb56f(0x5f9)+_0xcdb56f(0x1c6)+_0x94557d(0x58f)+_0xcdb56f(0x4ea)+_0xcdb56f(0x187)+_0xcdb56f(0x395)+_0x94557d(0x1cd)+_0xcdb56f(0x466)+_0xcdb56f(0x45b)+_0xcdb56f(0x1d8)+_0xcdb56f(0x311)+'<option>15</option>'+_0xcdb56f(0x5a4)+_0xcdb56f(0x3de)+_0xcdb56f(0x2c9)+_0x94557d(0x579)+_0xcdb56f(0x6f0)+_0xcdb56f(0x1d2)+_0x295881[_0x551ca5]['Id']+'\x22\x20href=\x22#\x22>Delete</a></td>'+_0xcdb56f(0x5f2),$(_0xcdb56f(0x1fb))[_0xcdb56f(0x406)](CustomRow),$(_0xcdb56f(0x42b)+_0x551ca5+_0xcdb56f(0x5a5))[_0xcdb56f(0x340)](_0x295881[_0x551ca5][_0xcdb56f(0x420)]),$(_0xcdb56f(0x5c6)+_0x551ca5+'')[_0xcdb56f(0x47f)](_0xcdb56f(0x3da),_0x295881[_0x551ca5][_0xcdb56f(0x58b)]);}}function DefaultRow(_0xc01820){var _0x40cc99=a90_0x13126d,_0x4a597f=_0x4ce28e;for(var _0x47014e=0x0;_0x47014e<_0xc01820[_0x4a597f(0x4a1)];_0x47014e++){if(_0x40cc99(0x55a)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$(_0x4a597f(0x6d5))[_0x4a597f(0x47f)](_0x4a597f(0x3da),!![]);else{if(_0x4a597f(0x5d4)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)]||_0x4a597f(0x659)==_0xc01820[_0x47014e]['ColumnName'])$(_0x4a597f(0x17c))['prop'](_0x4a597f(0x3da),!![]);else{if(_0x4a597f(0x1a5)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)]||_0x4a597f(0x3ff)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$(_0x40cc99(0x5b9))[_0x4a597f(0x47f)](_0x4a597f(0x3da),!![]);else{if(_0x4a597f(0x2f7)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$('#ckbAuthor')[_0x40cc99(0x235)](_0x4a597f(0x3da),!![]);else{if(_0x4a597f(0x509)==_0xc01820[_0x47014e][_0x40cc99(0x1bb)])$(_0x40cc99(0x395))[_0x40cc99(0x235)](_0x4a597f(0x3da),!![]);else{if('Modified'==_0xc01820[_0x47014e][_0x40cc99(0x1bb)])$(_0x4a597f(0x1e2))[_0x40cc99(0x235)](_0x4a597f(0x3da),!![]);else{if(_0x4a597f(0x2a7)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)]||_0x4a597f(0x614)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$(_0x4a597f(0x463))[_0x4a597f(0x47f)](_0x4a597f(0x3da),!![]);else{if(_0x40cc99(0x511)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)]||_0x4a597f(0x2b8)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$(_0x4a597f(0x37a))[_0x4a597f(0x47f)]('checked',!![]);else{if(_0x4a597f(0x50b)==_0xc01820[_0x47014e][_0x4a597f(0x2ef)])$(_0x4a597f(0x28b))['prop'](_0x4a597f(0x3da),!![]);else{}}}}}}}}}}}var arrColsPosition=[];function GenrateHtmlGrid(_0x59ee9e,_0x474705,_0x19a271){var _0xc3ff80=a90_0x13126d,_0x55d7ac=_0x4ce28e,_0x2f2e77='',_0x58cb4='';arrColsPosition=[],arrColsPosition[_0x55d7ac(0x4f4)](0x0),arrCurrentColumns=_0x59ee9e[_0x55d7ac(0x312)](function(_0x5c1215){return _0x5c1215;}),_0x58cb4+=_0x55d7ac(0x4f7)+_0x55d7ac(0x336)+_0x55d7ac(0x27c);for(var _0x4d52eb=0x0;_0x4d52eb<_0x59ee9e[_0xc3ff80(0x1d9)];_0x4d52eb++){if(_0x59ee9e[_0x4d52eb][_0x55d7ac(0x2ef)]==_0x55d7ac(0x3ff))_0x58cb4+=_0x55d7ac(0x3b7);else{if(_0x59ee9e[_0x4d52eb][_0x55d7ac(0x2ef)]==_0xc3ff80(0x5fc))_0x58cb4+=_0x55d7ac(0x344);else{if(_0x59ee9e[_0x4d52eb][_0x55d7ac(0x2ef)]==_0x55d7ac(0x2b8)||_0x59ee9e[_0x4d52eb][_0x55d7ac(0x2ef)]==_0x55d7ac(0x5f5)||_0x59ee9e[_0x4d52eb][_0xc3ff80(0x1bb)]==_0x55d7ac(0x4e8))arrColsPosition[_0xc3ff80(0x5ae)](_0x4d52eb+0x1),_0x58cb4+=_0x55d7ac(0x261);else _0x59ee9e[_0x4d52eb][_0xc3ff80(0x1bb)]==_0x55d7ac(0x2a7)?(arrColsPosition['push'](_0x4d52eb+0x1),_0x58cb4+=_0x55d7ac(0x413)):_0x58cb4+=_0x55d7ac(0x249)+_0x59ee9e[_0x4d52eb]['ColumnName']+'\x22>'+_0x59ee9e[_0x4d52eb][_0x55d7ac(0x2ef)]+'</th>';}}}$(_0x55d7ac(0x4e3))[_0xc3ff80(0x51f)]()[_0x55d7ac(0x678)](_0x55d7ac(0x190)),$(_0x55d7ac(0x18a))[_0x55d7ac(0x678)](''),$(_0x55d7ac(0x18a))[_0x55d7ac(0x693)](_0x58cb4);var _0x472a51=0x0;$(_0xc3ff80(0x2a3))[_0xc3ff80(0x41c)]('');var _0x2edec3=![];$[_0x55d7ac(0x3a9)](getItemsWithQueryUsersDocuments(Documentname,SiteUrl))[_0x55d7ac(0x577)](function(_0x4a7a83){var _0x25bf71=_0xc3ff80,_0x3d0f16=_0x55d7ac,_0x5d302e=_0x4a7a83[_0x3d0f16(0x42e)][_0x3d0f16(0x1e4)],_0x508673=_0x4a7a83[_0x3d0f16(0x600)][_0x3d0f16(0x1e4)];_0x508673[_0x25bf71(0x1d3)](function(_0x221381,_0x4f726d){var _0x2528bb=_0x25bf71,_0x590c62=new Date(_0x221381[_0x2528bb(0x659)]),_0x41b94e=new Date(_0x4f726d['TimeLastModified']);return _0x41b94e-_0x590c62;}),_0x5d302e[_0x3d0f16(0x4c2)](function(_0x5e5771,_0x1d76f7){var _0x1f8587=_0x3d0f16,_0xfbea20=new Date(_0x5e5771[_0x1f8587(0x2a3)]),_0x58203b=new Date(_0x1d76f7[_0x1f8587(0x2a3)]);return _0x58203b-_0xfbea20;});var _0x19650a='',_0x1486f6=_0x3d0f16(0x26a),_0x1863d3=![];for(var _0x36bb04=0x0;_0x36bb04<_0x508673['length'];_0x36bb04++){_0x472a51++,_0x508673[_0x36bb04][_0x25bf71(0x606)]!=_0x3d0f16(0x671)&&(_0x1863d3=!![],genrateHtmlgrid(_0x1486f6,_0x59ee9e,_0x508673[_0x36bb04],_0x472a51,_0x3d0f16(0x306),''));}for(var _0x36bb04=0x0;_0x36bb04<_0x5d302e[_0x3d0f16(0x4a1)];_0x36bb04++){_0x472a51++;var _0x1034ac=_0x5d302e[_0x36bb04][_0x3d0f16(0x5c2)][_0x3d0f16(0x288)]('.')[_0x3d0f16(0x6cc)]();_0x1486f6=_0x3d0f16(0x6c3);if(_0x25bf71(0x1df)==_0x1034ac||_0x25bf71(0x41b)==_0x1034ac)_0x1486f6=_0x3d0f16(0x581);else{if(_0x3d0f16(0x6af)==_0x1034ac)_0x1486f6=_0x25bf71(0x677);else{if(_0x3d0f16(0x2ae)==_0x1034ac||_0x25bf71(0x64c)==_0x1034ac||_0x3d0f16(0x2b2)==_0x1034ac||_0x3d0f16(0x4eb)==_0x1034ac||_0x3d0f16(0x64b)==_0x1034ac||'jpeg'==_0x1034ac||_0x3d0f16(0x4e6)==_0x1034ac)_0x1486f6=_0x3d0f16(0x4cb);else{if(_0x25bf71(0x3dd)==_0x1034ac)_0x1486f6=_0x3d0f16(0x549);else{if(_0x3d0f16(0x6de)==_0x1034ac)_0x1486f6=_0x3d0f16(0x62f);else{if(_0x3d0f16(0x580)==_0x1034ac)_0x1486f6=_0x3d0f16(0x34f);else{if(_0x3d0f16(0x6c1)==_0x1034ac)_0x1486f6=_0x3d0f16(0x5fc);else{if(_0x3d0f16(0x57f)==_0x1034ac||_0x3d0f16(0x319)==_0x1034ac||'7z'==_0x1034ac||_0x3d0f16(0x499)==_0x1034ac||_0x25bf71(0x563)==_0x1034ac||_0x3d0f16(0x53c)==_0x1034ac||_0x25bf71(0x1dc)==_0x1034ac)_0x1486f6=_0x3d0f16(0x40b);else{if('mp4'==_0x1034ac||_0x3d0f16(0x1f8)==_0x1034ac||_0x3d0f16(0x259)==_0x1034ac||_0x3d0f16(0x4de)==_0x1034ac||_0x3d0f16(0x4ab)==_0x1034ac||_0x3d0f16(0x6ca)==_0x1034ac||'wav'==_0x1034ac||_0x3d0f16(0x4d3)==_0x1034ac)_0x1486f6=_0x25bf71(0x5a3);else('mp3'==_0x1034ac||_0x3d0f16(0x183)==_0x1034ac||_0x3d0f16(0x51e)==_0x1034ac||_0x3d0f16(0x246)==_0x1034ac)&&(_0x1486f6=_0x3d0f16(0x4c8));}}}}}}}}_0x2edec3=!![],genrateHtmlgrid(_0x1486f6,_0x59ee9e,_0x5d302e[_0x36bb04],_0x472a51,_0x3d0f16(0x6b9),'');}if(_0x5d302e[_0x25bf71(0x1d9)]==0x0&&_0x1863d3==![]){_0x2edec3=![];var _0x5e36f2=$(_0x25bf71(0x1c6)),_0x25dc65=$(_0x3d0f16(0x1cb));_0x25dc65[_0x25bf71(0x41c)](_0x25bf71(0x488)),_0x5e36f2[_0x25bf71(0x446)](_0x25dc65),$(_0x3d0f16(0x6d4))[_0x25bf71(0x446)](_0x5e36f2);}}),$(_0x55d7ac(0x6b3))[_0xc3ff80(0x26c)](function(){var _0xada2a6=_0xc3ff80,_0x4e5004=_0x55d7ac,_0x5ab2dc=this[_0x4e5004(0x447)][_0x4e5004(0x288)](',');if(this['checked']==!![])arrFileFolder[_0x4e5004(0x4f4)]({'type':_0x5ab2dc[0x0][_0x4e5004(0x6ee)](),'ServerURL':_0x5ab2dc[0x1][_0x4e5004(0x6ee)](),'DocumentId':_0x5ab2dc[0x2][_0x4e5004(0x6ee)](),'SiteURL':_0x5ab2dc[0x3][_0x4e5004(0x6ee)](),'SelectedLibrary':_0x5ab2dc[0x4][_0x4e5004(0x6ee)](),'FileFolderName':_0x5ab2dc[0x5][_0xada2a6(0x549)](),'CopyFileLink':_0x5ab2dc[0x6][_0x4e5004(0x6ee)](),'FileTitle':_0x5ab2dc[0x7][_0x4e5004(0x6ee)](),'FileRef':_0x5ab2dc[0x8][_0x4e5004(0x6ee)](),'FileType':_0x5ab2dc[0x9][_0x4e5004(0x6ee)](),'DocType':_0x5ab2dc[0xa][_0x4e5004(0x6ee)](),'fileFilderInheritance':$(this)[_0x4e5004(0x2c7)](_0x4e5004(0x407))});else{var _0x3800f2=this['value'];arrFileFolder=arrFileFolder[_0x4e5004(0x312)](function(_0x4bfd8e){var _0x3d5693=_0xada2a6,_0x47fe45=_0x4e5004;return _0x4bfd8e[_0x47fe45(0x329)]!=_0x5ab2dc[0x2][_0x3d5693(0x549)]();});}}),$(_0x55d7ac(0x32b))[_0x55d7ac(0x382)](function(_0x420a3){var _0x55f59f=_0xc3ff80,_0x489956=_0x55d7ac;this[_0x55f59f(0x495)]==!![]?($(_0x489956(0x6b3))[_0x489956(0x47f)](_0x489956(0x3da),''),$(_0x489956(0x6b3))[_0x489956(0x612)](_0x489956(0x382))):($(_0x489956(0x6b3))[_0x489956(0x47f)](_0x489956(0x3da),''),arrFileFolder=[]);}),_0x2edec3?Tableagination():(ActionBtnControls(),ChangeLabels());}function Tableagination(){var _0x26f5d8=a90_0x13126d,_0x14c973=_0x4ce28e;MyDoctable=$('#groupDocumentGrid')[_0x26f5d8(0x461)]({'bPaginate':!![],'bJQueryUI':!![],'bLengthChange':![],'bFilter':!![],'bSort':!![],'bInfo':!![],'bAutoWidth':!![],'responsive':!![],'bProcessing':!![],'iDisplayLength':0xa,'dom':_0x14c973(0x64a),'colReorder':{'allowReorder':!![]},'language':{'searchPlaceholder':_0x14c973(0x27b),'sSearch':''}}),$(_0x14c973(0x276))[_0x26f5d8(0x39a)](),$(_0x14c973(0x2ee))[_0x14c973(0x2d8)](function(){var _0x58b3b1=_0x26f5d8,_0x5bcc16=_0x14c973;MyDoctable[_0x5bcc16(0x674)]($(this)[_0x58b3b1(0x1ea)]())[_0x5bcc16(0x68d)]();}),setTimeout(function(){var _0x1114d3=_0x26f5d8,_0x19a315=_0x14c973;$(_0x19a315(0x38c))[_0x1114d3(0x2ef)](_0x19a315(0x611),'');},0x7d0),ActionBtnControls(),ChangeLabels();}function GetSubFolders(_0x219691){var _0xc82781=a90_0x13126d,_0x518f3c=_0x4ce28e,_0x556c8d=decodeURI(_0x219691),_0x4ab21a=new Array(),_0x274f8d=_0x556c8d['split']('/'),_0x2f0f67='';for(var _0x5cd0f2=0x0;_0x5cd0f2<_0x274f8d[_0x518f3c(0x4a1)];_0x5cd0f2++){_0x274f8d[_0x5cd0f2]==_0x518f3c(0x1d1)&&(_0x274f8d[_0x5cd0f2]=_0x518f3c(0x33f)),(_0x274f8d[_0x5cd0f2]==CheckLibary||_0x4ab21a['length']>0x0)&&(_0x2f0f67+=_0x274f8d[_0x5cd0f2]+'/',_0x274f8d[_0x5cd0f2]!=null&&_0x274f8d[_0x5cd0f2]!=''&&_0x4ab21a[_0xc82781(0x5ae)](SubFolderProperties(_0x2f0f67,_0x274f8d[_0x5cd0f2])));}GenerateFolderNavigation(_0x4ab21a);}function SubFolderProperties(_0x128cdd,_0x4b8a4b){var _0x154b26=a90_0x13126d,_0x5c1448=_0x4ce28e,_0x201bf7=[];return _0x201bf7[_0x5c1448(0x696)]=_0x128cdd,_0x201bf7[_0x154b26(0x1ce)]=_0x4b8a4b,_0x201bf7;}function GenerateFolderNavigation(_0x4cb3c3){var _0x531f0a=a90_0x13126d,_0x2cc850=_0x4ce28e,_0x5af853='',_0x1ca160='';for(var _0x222312=0x0;_0x222312<_0x4cb3c3[_0x2cc850(0x4a1)];_0x222312++){{var _0xf92941=_0x2cc850(0x342)+_0x4cb3c3[_0x222312][_0x2cc850(0x696)]+'\x27)';if(_0x222312==0x0)_0x5af853+='<li\x20title=\x22Root\x22\x20class=\x22mybradcumb\x20first\x22><a\x20href=\x22'+_0xf92941+_0x2cc850(0x51a);else{var _0x3149ae=_0x4cb3c3[_0x222312][_0x2cc850(0x28d)];_0x3149ae[_0x2cc850(0x4a1)]>0xf&&(_0x3149ae=_0x3149ae[_0x531f0a(0x36e)](0x0,0xe)+_0x531f0a(0x60a)),_0x3149ae[_0x531f0a(0x1d9)]>0x0&&(_0x5af853+=_0x2cc850(0x5fe)+_0x4cb3c3[_0x222312][_0x2cc850(0x28d)]+_0x2cc850(0x476)+_0xf92941+'\x22>'+_0x3149ae+_0x2cc850(0x24d));}_0x222312==_0x4cb3c3[_0x2cc850(0x4a1)]-0x1&&(_0x1ca160=_0x4cb3c3[_0x222312][_0x531f0a(0x3a8)],GetMyDocumentsWithFilesFolder(_0x1ca160));}}var _0x4babdd=$(_0x531f0a(0x307));_0x4babdd[_0x531f0a(0x41c)](''),_0x4babdd[_0x2cc850(0x693)](_0x5af853),ClickEventBradCumb();}function GetMyDocumentsWithFilesFolder(_0x566478){Documentname=_0x566478,GenrateHtmlGrid(SetColumnName,![],'');}function ClickEventBradCumb(){var _0x167a9b=_0x4ce28e;$('.mybradcumb\x20')[_0x167a9b(0x34c)]()[_0x167a9b(0x382)](function(){var _0x1e903f=_0x167a9b;$(this)[_0x1e903f(0x4b7)]()[_0x1e903f(0x290)](_0x1e903f(0x3ca));});}function genrateHtmlgrid(_0x3fab85,_0x4be324,_0x4dc2cd,_0x5694d9,_0x3fa114,_0x4ee9dd){var _0x59942c=a90_0x13126d,_0x35f1ea=_0x4ce28e;_0x4ee9dd==''&&arrFilterTable[_0x35f1ea(0x4f4)]({'Icon':_0x3fab85,'ColumnCount':_0x4be324,'files':_0x4dc2cd,'rowCount':_0x5694d9,'Type':_0x3fa114});var _0x29833b=_0x35f1ea(0x4e7),_0x35c5ca=DMS_Link[_0x35f1ea(0x288)](_0x35f1ea(0x616))[0x0][_0x59942c(0x2e4)](0x0,DMS_Link[_0x59942c(0x5e5)](_0x35f1ea(0x616))[0x0][_0x35f1ea(0x594)]('/'));DMS_Link==''&&(_0x35c5ca=SiteUrl=_0x4dc2cd[_0x35f1ea(0x505)],_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x3cc)](_0x35f1ea(0x1ea))==!![]?DMS_Type=_0x59942c(0x481):DMS_Type=/[^/]*$/[_0x35f1ea(0x455)](SiteUrl)[0x0]);var _0x33c45a='',_0x16140e='',_0x3a5a71=_0x4dc2cd['ServerRelativeUrl'];if(_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x189)](_0x35f1ea(0x2f4))!=-0x1)_0x3a5a71=_0x4dc2cd[_0x35f1ea(0x33a)],_0x4dc2cd[_0x35f1ea(0x33a)]=_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x4e2)](_0x35f1ea(0x2f4),_0x35f1ea(0x1d1));else _0x4dc2cd[_0x35f1ea(0x33a)][_0x59942c(0x4dc)](_0x35f1ea(0x33f))!=-0x1&&(_0x3a5a71=_0x4dc2cd[_0x35f1ea(0x33a)],_0x4dc2cd[_0x35f1ea(0x33a)]=_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x4e2)]('Shared%20Documents',_0x35f1ea(0x1d1)));Documentname==_0x35f1ea(0x33f)&&(Documentname=_0x35f1ea(0x1d1));if(_0x4dc2cd[_0x59942c(0x238)][_0x35f1ea(0x3cc)](_0x35f1ea(0x1ea))==!![]||_0x4dc2cd[_0x59942c(0x238)][_0x59942c(0x306)](_0x35f1ea(0x6a4))==!![])_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x3cc)](_0x35f1ea(0x1ea))==!![]?(_0x33c45a=_0x35f1ea(0x1ea),_0x16140e=_0x35c5ca+_0x59942c(0x577)+encodeURIComponent(_0x4dc2cd[_0x35f1ea(0x33a)])+_0x35f1ea(0x1a7)+encodeURIComponent(_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x6e8)](0x0,_0x4dc2cd[_0x59942c(0x238)][_0x35f1ea(0x594)]('/')+0x0))):(_0x33c45a=_0x35f1ea(0x6a4),_0x16140e=_0x35c5ca+_0x35f1ea(0x6ae)+encodeURIComponent(_0x4dc2cd[_0x59942c(0x238)])+_0x35f1ea(0x1a7)+encodeURIComponent(_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x6e8)](0x0,_0x4dc2cd[_0x35f1ea(0x33a)]['lastIndexOf']('/')+0x0)));else{Documentname['indexOf']('/')!=-0x1?_0x33c45a=Documentname[_0x35f1ea(0x288)]('/')[0x0]:_0x33c45a=Documentname;var _0x5f41ee=window[_0x35f1ea(0x55f)]['origin']+_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x6e8)](0x0,_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x594)]('/')+0x0);_0x16140e=_0x5f41ee+_0x35f1ea(0x302)+encodeURIComponent(_0x4dc2cd[_0x35f1ea(0x33a)])+_0x35f1ea(0x1a7)+encodeURIComponent(_0x4dc2cd[_0x59942c(0x238)][_0x35f1ea(0x6e8)](0x0,_0x4dc2cd[_0x35f1ea(0x33a)][_0x35f1ea(0x594)]('/')+0x0));}var _0x75b6ca='',_0x19b6b8='',_0x1b611f='',_0x166096='',_0x25479c='',_0xc35585='';_0x4dc2cd[_0x59942c(0x245)]!=undefined?(_0x75b6ca=_0x4dc2cd[_0x35f1ea(0x55e)]['ID'],_0xc35585=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x34a)],(_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]==null||_0x4dc2cd[_0x35f1ea(0x55e)]['Title']==undefined||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]==_0x59942c(0x181)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]==_0x59942c(0x241)||_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x664)]==_0x35f1ea(0x6e4))&&(_0x4dc2cd['ListItemAllFields'][_0x35f1ea(0x664)]=''),_0x19b6b8=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]?_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]:'',_0x1b611f=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x3ff)]?_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x3ff)]:'',_0x166096=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)],_0x25479c=_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x5fc)],SubDocType=_0x4dc2cd['ListItemAllFields'][_0x35f1ea(0x54a)],(_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x5fc)]==null||_0x4dc2cd['ListItemAllFields']['DocumentType']==_0x35f1ea(0x4e7)||_0x4dc2cd['ListItemAllFields']['DocumentType']==_0x59942c(0x463)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)]==_0x59942c(0x241))&&(_0x25479c=''),(_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x54a)]==null||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x54a)]==_0x59942c(0x181)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x54a)]==_0x35f1ea(0x6e4)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x54a)]==_0x35f1ea(0x627))&&(SubDocType='')):(_0x4dc2cd[_0x35f1ea(0x664)]!=null&&_0x4dc2cd[_0x35f1ea(0x664)]!=undefined&&_0x4dc2cd[_0x35f1ea(0x664)]!=_0x35f1ea(0x3a7)&&(_0x19b6b8=_0x4dc2cd[_0x59942c(0x55a)]),_0x4dc2cd['Title']!=null&&_0x4dc2cd[_0x35f1ea(0x664)]!=undefined&&_0x4dc2cd[_0x59942c(0x55a)]!=_0x35f1ea(0x3a7)&&(_0x1b611f=_0x4dc2cd[_0x35f1ea(0x3ff)]),_0x25479c='',_0x4dc2cd[_0x59942c(0x345)]!=null&&_0x4dc2cd[_0x59942c(0x345)]!=undefined&&(_0x75b6ca=_0x4dc2cd[_0x35f1ea(0x5ee)]),SubDocType=_0x4dc2cd[_0x35f1ea(0x54a)],(_0x4dc2cd[_0x35f1ea(0x54a)]==null||_0x4dc2cd[_0x35f1ea(0x54a)]==_0x35f1ea(0x4e7)||_0x4dc2cd[_0x35f1ea(0x54a)]==_0x35f1ea(0x6e4)||_0x4dc2cd[_0x59942c(0x1c3)]==_0x35f1ea(0x627))&&(SubDocType=''));var _0x39e081='';_0x4dc2cd[_0x35f1ea(0x2b1)]=='0'&&(_0x39e081=_0x59942c(0x369)+_0x4dc2cd['ServerRelativeUrl']+_0x35f1ea(0x5cf));var _0xdb722f=$(_0x35f1ea(0x3ac)+_0x35f1ea(0x51d)+_0x35f1ea(0x339)+_0x35f1ea(0x44c)+_0x3a5a71+_0x59942c(0x5e1)+_0xc35585+_0x35f1ea(0x4ba)+_0x3fa114+',\x20'+_0x4dc2cd[_0x35f1ea(0x33a)]+',\x20'+_0x75b6ca+',\x20'+_0x35c5ca+',\x20'+_0x33c45a+',\x20'+_0x4dc2cd[_0x35f1ea(0x5c2)]+',\x20'+_0x16140e+',\x20'+_0x19b6b8+',\x20'+_0x1b611f+',\x20'+_0x166096+',\x20'+_0x25479c+',\x20'+SubDocType+_0x35f1ea(0x575)+_0x5694d9+'\x22>'+_0x35f1ea(0x508)+_0x5694d9+'\x22>'+_0x35f1ea(0x5d3)+_0x3fab85+_0x35f1ea(0x4f8)+_0x3fab85+'\x22>'+_0x39e081+_0x35f1ea(0x3b3)+_0x35f1ea(0x441)+_0x35f1ea(0x6f0));for(var _0x3cb178=0x0;_0x3cb178<_0x4be324[_0x35f1ea(0x4a1)];_0x3cb178++){var _0x36a0d1='';_0x4be324[_0x3cb178]['ColumnName']==_0x35f1ea(0x1a5)&&(_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]=_0x35f1ea(0x3ff));if(_0x59942c(0x606)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){if(_0x3fa114==_0x35f1ea(0x306)){var _0xe9a0e1=encodeURI(_0x4dc2cd[_0x35f1ea(0x33a)]),_0x5944c3=_0x35f1ea(0x387)+_0xe9a0e1+'\x27)';_0x36a0d1=$(_0x59942c(0x4bd)+_0x35f1ea(0x258)+_0x5944c3+'\x22>'+_0x35f1ea(0x51b)+_0x4dc2cd[_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]+_0x59942c(0x47d)+'</a>'+_0x35f1ea(0x6f0));}else{var _0x1fb3d7=_0x35f1ea(0x2d3);_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x316)+_0x3a5a71+_0x35f1ea(0x2d1)+_0xc35585+_0x59942c(0x195)+_0x4dc2cd[_0x35f1ea(0x33a)]+_0x35f1ea(0x531)+SiteUrl+_0x35f1ea(0x5ec)+DMS_Type+_0x35f1ea(0x5ec)+_0x29833b+_0x59942c(0x630)+_0x3a5a71+_0x35f1ea(0x5ec)+_0xc35585+_0x59942c(0x630)+_0x4dc2cd['ServerRelativeUrl']+_0x59942c(0x630)+_0x1fb3d7+_0x35f1ea(0x5ec)+_0x1fb3d7+_0x35f1ea(0x331)+_0x35f1ea(0x51b)+_0x4dc2cd[_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]+_0x35f1ea(0x4a2)+_0x35f1ea(0x442)+_0x59942c(0x29d));}}else{if(_0x59942c(0x55a)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)])(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==null||_0x4dc2cd['ListItemAllFields'][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==undefined||_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x35f1ea(0x4e7)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x35f1ea(0x627)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178]['ColumnName']]==_0x35f1ea(0x6e4))&&(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x59942c(0x1bb)]]=''),_0x36a0d1=$(_0x35f1ea(0x623)+_0x59942c(0x249)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]+_0x35f1ea(0x441)+_0x59942c(0x29d));else{if(_0x35f1ea(0x40e)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){if(_0x3fa114==_0x35f1ea(0x306))var _0x52518b=getModifiedBy(_0x4dc2cd[_0x59942c(0x245)][_0x59942c(0x5b4)]);else var _0x52518b=_0x4dc2cd[_0x35f1ea(0x349)][_0x35f1ea(0x664)];_0x36a0d1=$(_0x35f1ea(0x623)+'<div\x20class=\x22dms-table-ellipsis-2\x22>'+_0x52518b+'</div>'+_0x35f1ea(0x6f0));}else{if(_0x59942c(0x469)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)])_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x4be)]==_0x35f1ea(0x4e7)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x4be)]==null||_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x4be)]==undefined?_0x4dc2cd[_0x59942c(0x245)]['FileSizeDisplay']='':_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x1e1)]=_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x1e1)],_0x36a0d1=$(_0x59942c(0x4bd)+_0x35f1ea(0x679)+bytesToSize(_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x4be)])+_0x35f1ea(0x441)+_0x59942c(0x29d));else{if(_0x35f1ea(0x2b8)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]||_0x59942c(0x23c)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){var _0x49150e=_0x35f1ea(0x4e8);if(_0x4dc2cd[_0x35f1ea(0x55e)]==undefined){var _0xf65aed=_0x4dc2cd[_0x35f1ea(0x348)],_0x69f9db='';_0xf65aed!=null&&_0xf65aed!=_0x35f1ea(0x4e7)&&_0xf65aed!=undefined?_0x69f9db=_0x35f1ea(0x598)+ShowCommonStandardDateFormat(_0xf65aed)+'</span>':_0xf65aed='';if(_0x4dc2cd[_0x35f1ea(0x615)]==_0x35f1ea(0x69c))_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x4dc2cd[_0x35f1ea(0x3d8)]+_0x35f1ea(0x34b)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x3d6)+_0x4dc2cd[_0x35f1ea(0x5f5)]+_0x35f1ea(0x429)+_0x35f1ea(0x40c)+_0x69f9db+_0x35f1ea(0x441)+_0x35f1ea(0x6f0));else{if(_0x4dc2cd[_0x35f1ea(0x615)]=='Reject'||_0x4dc2cd[_0x35f1ea(0x615)]=='Rejected')_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x4dc2cd[_0x35f1ea(0x3d8)]+_0x35f1ea(0x34b)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x1cc)+_0x4dc2cd[_0x35f1ea(0x5f5)]+_0x35f1ea(0x353)+_0x69f9db+_0x35f1ea(0x697)+_0x35f1ea(0x6f0));else{if(_0x4dc2cd[_0x35f1ea(0x615)]==_0x35f1ea(0x6b0))_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x4dc2cd[_0x59942c(0x2f6)]+_0x35f1ea(0x34b)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x26c)+_0x4dc2cd[_0x35f1ea(0x5f5)]+_0x35f1ea(0x353)+_0x69f9db+_0x35f1ea(0x697)+_0x35f1ea(0x6f0));else _0x4dc2cd[_0x35f1ea(0x615)]==_0x59942c(0x45e)?_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x4dc2cd[_0x35f1ea(0x3d8)]+_0x35f1ea(0x34b)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x56e)+_0x35f1ea(0x621)+_0x35f1ea(0x6f0)):_0x36a0d1=$(_0x59942c(0x4c0)+_0x35f1ea(0x6f0));}}}else{if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x4e8)]!=undefined){var _0xf65aed=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x348)],_0x69f9db='';_0xf65aed!=null&&_0xf65aed!=_0x35f1ea(0x4e7)&&_0xf65aed!=undefined?_0x69f9db=_0x59942c(0x421)+ShowCommonStandardDateFormat(_0xf65aed)+_0x35f1ea(0x4a2):_0xf65aed='';if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x49150e]==_0x35f1ea(0x69c))_0x36a0d1=$('<td\x20class=\x22text-left\x22>'+_0x35f1ea(0x2ff)+_0x75b6ca+_0x59942c(0x609)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x3d6)+_0x4dc2cd[_0x59942c(0x245)][_0x4be324[_0x3cb178][_0x59942c(0x1bb)]]+_0x35f1ea(0x429)+_0x35f1ea(0x40c)+_0x69f9db+'</div>'+_0x35f1ea(0x6f0));else{if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x49150e]==_0x35f1ea(0x465))_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x75b6ca+_0x35f1ea(0x34b)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x1cc)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178]['ColumnName']]+_0x35f1ea(0x353)+_0x35f1ea(0x48c)+_0x69f9db+'</div>'+_0x35f1ea(0x6f0));else _0x4dc2cd[_0x35f1ea(0x55e)][_0x49150e]==_0x35f1ea(0x6b0)?_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x75b6ca+_0x35f1ea(0x34b)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x26c)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]+'\x22\x20style=\x22color:\x20rgb(255,\x200,\x200);\x22>'+_0x35f1ea(0x48c)+_0x69f9db+_0x59942c(0x579)+_0x35f1ea(0x6f0)):_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x2ff)+_0x75b6ca+_0x35f1ea(0x34b)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x56e)+_0x59942c(0x3a9)+_0x59942c(0x29d));}}else _0x36a0d1=$(_0x35f1ea(0x513));}}else{if(_0x59942c(0x5c2)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]||_0x35f1ea(0x5f6)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){var _0x3301f7=_0x35f1ea(0x475);_0x36a0d1=$(_0x35f1ea(0x623)+_0x59942c(0x249)+ShowCommonStandardDateFormat(_0x4dc2cd[_0x35f1ea(0x55e)][_0x3301f7])+_0x35f1ea(0x441)+_0x35f1ea(0x6f0));}else{if(_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]==_0x35f1ea(0x659)||_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]==_0x35f1ea(0x315))_0x36a0d1=$(_0x35f1ea(0x513)),_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x54a)]!=null&&_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x54a)]!=_0x35f1ea(0x6e4)&&_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x54a)]!='null'?_0x36a0d1['html'](SubDocType+'\x20('+_0x25479c+')'):_0x36a0d1['html'](_0x25479c);else{if(_0x35f1ea(0x4f3)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){var _0x4cba8d='';_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==null||_0x4dc2cd['ListItemAllFields'][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==undefined||_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x59942c(0x181)?_0x4cba8d='':_0x4cba8d=moment(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x59942c(0x1bb)]])[_0x35f1ea(0x54f)](_0x35f1ea(0x374)),_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x679)+_0x4cba8d+_0x35f1ea(0x441)+_0x59942c(0x29d));}else{if(_0x35f1ea(0x614)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]||_0x35f1ea(0x2a7)==_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]){var _0x1d7c68=_0x35f1ea(0x5e2),_0x6c973d='',_0x351c66='';if(_0x4dc2cd[_0x35f1ea(0x55e)]==undefined)_0x3fa114!=_0x35f1ea(0x306)&&(_0x4dc2cd[_0x35f1ea(0x638)]!=null&&_0x4dc2cd[_0x35f1ea(0x638)]!=_0x35f1ea(0x4e7)&&_0x4dc2cd[_0x35f1ea(0x638)]!=0x0&&_0x4dc2cd[_0x35f1ea(0x638)]!='0'?_0x351c66=_0x59942c(0x59a)+_0x4dc2cd[_0x35f1ea(0x3d8)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x664)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x659)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x349)]+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x45c)]+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x475)]+_0x59942c(0x630)+_0x35c5ca+_0x35f1ea(0x6cd):_0x351c66=_0x35f1ea(0x2e8)+_0x4dc2cd[_0x35f1ea(0x3d8)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x664)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x659)]+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x349)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x45c)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x475)]+_0x35f1ea(0x5ec)+_0x35c5ca+_0x35f1ea(0x1e3)),_0x4dc2cd[_0x35f1ea(0x55d)]!=null&&_0x4dc2cd[_0x35f1ea(0x55d)]!=_0x35f1ea(0x4e7)?(_0x6c973d=_0x35f1ea(0x4d5),_0x4dc2cd[_0x59942c(0x5af)]==null&&_0x4dc2cd[_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)?_0x36a0d1=$(_0x35f1ea(0x2c4)+_0x4dc2cd[_0x35f1ea(0x3d8)]+'\x27,\x20\x27'+_0x4dc2cd[_0x35f1ea(0x33a)]+_0x35f1ea(0x5ec)+_0x19b6b8+_0x35f1ea(0x5ec)+_0x1b611f+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x5ec)+_0x3fa114+_0x35f1ea(0x5ec)+_0x1d7c68+_0x59942c(0x630)+currentSharedItemId+_0x35f1ea(0x561)+_0x6c973d+_0x351c66+_0x35f1ea(0x6f0)):(_0x4dc2cd[_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)&&(_0x6c973d=_0x35f1ea(0x4d5)),_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x4f2)+_0x4dc2cd['DocId']+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x33a)]+_0x59942c(0x630)+_0x19b6b8+_0x35f1ea(0x5ec)+_0x1b611f+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x5ec)+_0x3fa114+_0x35f1ea(0x5ec)+_0x1d7c68+_0x35f1ea(0x5ec)+currentSharedItemId+_0x35f1ea(0x561)+_0x35f1ea(0x375)+_0x6c973d+_0x35f1ea(0x441)+_0x351c66+_0x35f1ea(0x6f0)))):(_0x4dc2cd[_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)&&(_0x6c973d=_0x35f1ea(0x4d5)),_0x36a0d1=$(_0x35f1ea(0x623)+_0x6c973d+_0x351c66+_0x35f1ea(0x6f0)));else{if(_0x4dc2cd[_0x59942c(0x245)]['SharedId']!=null){_0x3fa114!=_0x59942c(0x271)&&(_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x638)]!=null&&_0x4dc2cd[_0x59942c(0x245)][_0x59942c(0x2e8)]!=_0x35f1ea(0x4e7)&&_0x4dc2cd['ListItemAllFields'][_0x35f1ea(0x638)]!=0x0&&_0x4dc2cd['ListItemAllFields'][_0x35f1ea(0x638)]!='0'?_0x351c66=_0x59942c(0x59a)+_0x75b6ca+'\x27,\x20\x27'+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x475)]+_0x35f1ea(0x5ec)+_0x35c5ca+_0x35f1ea(0x6cd):_0x351c66=_0x35f1ea(0x2e8)+_0x75b6ca+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x5c2)]+_0x59942c(0x630)+_0x35c5ca+_0x35f1ea(0x1e3));if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x1e9)]==null&&_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)){_0x6c973d=_0x35f1ea(0x4d5);;_0x36a0d1=$(_0x35f1ea(0x2c4)+_0x75b6ca+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x33a)]+_0x35f1ea(0x5ec)+_0x19b6b8+_0x59942c(0x630)+_0x1b611f+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x5ec)+_0x3fa114+_0x35f1ea(0x5ec)+_0x1d7c68+'\x27,\x20\x27'+currentSharedItemId+_0x35f1ea(0x561)+_0x6c973d+_0x351c66+'</td>');}else _0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)&&(_0x6c973d=_0x35f1ea(0x4d5)),_0x36a0d1=$(_0x35f1ea(0x623)+'<div\x20class=\x22dms-table-ellipsis-2\x20shardHist\x22\x20onclick=\x22GetSharedHistory(\x27'+_0x75b6ca+'\x27,\x20\x27'+_0x4dc2cd[_0x35f1ea(0x33a)]+_0x35f1ea(0x5ec)+_0x19b6b8+_0x59942c(0x630)+_0x1b611f+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x5c2)]+'\x27,\x20\x27'+_0x3fa114+_0x35f1ea(0x5ec)+_0x1d7c68+'\x27,\x20\x27'+currentSharedItemId+_0x35f1ea(0x561)+_0x35f1ea(0x375)+_0x6c973d+_0x35f1ea(0x441)+_0x351c66+_0x59942c(0x29d));}else _0x3fa114!=_0x59942c(0x271)&&(_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x638)]!=null&&_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x638)]!=_0x35f1ea(0x4e7)&&_0x4dc2cd[_0x35f1ea(0x55e)][_0x59942c(0x2e8)]!=0x0&&_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x638)]!='0'?_0x351c66=_0x35f1ea(0x2e8)+_0x75b6ca+'\x27,\x20\x27'+_0x4dc2cd[_0x35f1ea(0x5c2)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x59942c(0x245)][_0x35f1ea(0x664)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)]['EditorId']+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x475)]+_0x35f1ea(0x5ec)+_0x35c5ca+_0x59942c(0x5d3):_0x351c66=_0x35f1ea(0x2e8)+_0x75b6ca+_0x35f1ea(0x5ec)+_0x4dc2cd['Name']+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x664)]+_0x59942c(0x630)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x659)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x220)]+_0x35f1ea(0x5ec)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x475)]+_0x35f1ea(0x5ec)+_0x35c5ca+_0x35f1ea(0x1e3)),_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x5c7)]==_0x35f1ea(0x668)&&(_0x6c973d='<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22>'),_0x36a0d1=$(_0x35f1ea(0x623)+_0x6c973d+_0x351c66+_0x59942c(0x29d));}}else{_0x36a0d1=$(_0x35f1ea(0x513));if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178]['ColumnName']]!=undefined){var _0xf65aed=_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x348)],_0x69f9db='';_0xf65aed!=null&&_0xf65aed!=_0x35f1ea(0x4e7)&&_0xf65aed!=undefined?_0x69f9db=_0x35f1ea(0x598)+ShowCommonStandardDateFormat(_0xf65aed)+'</span>':_0xf65aed='';if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x59942c(0x1bb)]]==_0x35f1ea(0x69c))_0x36a0d1=$('<td\x20class=\x22text-left\x22>'+_0x35f1ea(0x3aa)+_0x4dc2cd['ListItemAllFields'][_0x35f1ea(0x2b8)]+_0x35f1ea(0x429)+_0x35f1ea(0x683)+_0x4dc2cd[_0x35f1ea(0x55e)]['ID']+_0x59942c(0x609)+_0x4dc2cd['Name']+'\x27);\x22>'+_0x69f9db+_0x59942c(0x579)+_0x59942c(0x29d));else{if(_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x35f1ea(0x2ab)||_0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x35f1ea(0x465))_0x36a0d1=$(_0x35f1ea(0x623)+_0x35f1ea(0x3b5)+_0x4dc2cd[_0x35f1ea(0x55e)][_0x35f1ea(0x2b8)]+_0x59942c(0x61a)+_0x35f1ea(0x460)+_0x4dc2cd[_0x59942c(0x245)]['ID']+_0x59942c(0x609)+_0x4dc2cd['Name']+_0x35f1ea(0x331)+_0x69f9db+_0x35f1ea(0x441)+_0x59942c(0x29d));else _0x4dc2cd[_0x35f1ea(0x55e)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]==_0x35f1ea(0x3b6)?_0x36a0d1=$(_0x35f1ea(0x623)+_0x59942c(0x201)+_0x35f1ea(0x485)+_0x4dc2cd[_0x35f1ea(0x55e)]['ID']+_0x35f1ea(0x34b)+_0x4dc2cd[_0x59942c(0x606)]+_0x35f1ea(0x331)+_0x69f9db+_0x59942c(0x579)+_0x35f1ea(0x6f0)):_0x4be324[_0x3cb178][_0x35f1ea(0x606)]==_0x35f1ea(0x25a)?_0x36a0d1[_0x35f1ea(0x678)](moment(_0x4dc2cd[_0x59942c(0x245)][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]])[_0x35f1ea(0x54f)](_0x35f1ea(0x374))):_0x36a0d1[_0x59942c(0x41c)](_0x4dc2cd['ListItemAllFields'][_0x4be324[_0x3cb178][_0x35f1ea(0x2ef)]]);}}}}}}}}}}}_0xdb722f[_0x35f1ea(0x693)](_0x36a0d1);}$(_0x35f1ea(0x6d4))[_0x35f1ea(0x693)](_0xdb722f);}function getModifiedBy(_0x201b3a){var _0x587aab=a90_0x13126d,_0xcbe5ed=_0x4ce28e,_0x5c73c1='',_0x7797b4=_spPageContextInfo[_0xcbe5ed(0x229)]+_0xcbe5ed(0x44e)+_0x201b3a+')',_0x58b846={'accept':_0xcbe5ed(0x4b9)};return $[_0x587aab(0x21a)]({'url':_0x7797b4,'contentType':_0xcbe5ed(0x4b9),'headers':_0x58b846,'async':![],'success':function(_0xd2aae8){var _0x8a995c=_0x587aab,_0x59a0bf=_0xcbe5ed;_0x5c73c1=_0xd2aae8['d'][_0x59a0bf(0x664)],$(_0x8a995c(0x534))[_0x8a995c(0x1ca)](_0xd2aae8['d'][_0x59a0bf(0x377)]),$(_0x8a995c(0x534))[_0x8a995c(0x26c)](function(){var _0x5241d3=_0x59a0bf;OpenEmail(_0xd2aae8['d'][_0x5241d3(0x377)]);}),$(_0x59a0bf(0x1d0))[_0x8a995c(0x235)](_0x59a0bf(0x233),_spPageContextInfo[_0x59a0bf(0x229)]+_0x59a0bf(0x415)+escapeProperly(_0xd2aae8['d'][_0x59a0bf(0x377)]));},'error':function(_0x441cb0){var _0x53160d=_0x587aab,_0x56e238=_0xcbe5ed;console[_0x56e238(0x403)](JSON[_0x53160d(0x2da)](_0x441cb0));}}),_0x5c73c1;}function bytesToSize(_0x51a905){var _0x29901a=a90_0x13126d,_0x528a01=_0x4ce28e,_0x19f296=['Bytes','KB','MB','GB','TB'];if(_0x51a905==0x0)return'';var _0x262540=parseInt(Math[_0x528a01(0x209)](Math[_0x29901a(0x41a)](_0x51a905)/Math[_0x528a01(0x403)](0x400)));return Math[_0x528a01(0x6bc)](_0x51a905/Math[_0x528a01(0x6aa)](0x400,_0x262540),0x2)+'\x20'+_0x19f296[_0x262540];}function getListUserEffectivePermissions(_0x2a144f,_0x5d8216,_0x1cef19,_0x26b953,_0x1c9900){var _0x59fde1=a90_0x13126d,_0x1b5d48=_0x4ce28e;try{RequestDigest=$(_0x1b5d48(0x57c))[_0x1b5d48(0x419)](),_0x2a144f!=_spPageContextInfo[_0x59fde1(0x215)]&&$[_0x59fde1(0x186)](GetFormDigestValue(_0x2a144f))[_0x1b5d48(0x577)](function(_0x2adffb){RequestDigest=_0x2adffb;});var _0x39d78d='';_0x2a144f!=_spPageContextInfo[_0x1b5d48(0x229)]&&$[_0x1b5d48(0x3a9)](GetFormDigestValue(_0x2a144f))[_0x1b5d48(0x577)](function(_0x556597){RequestDigest=_0x556597;}),_0x1cef19?_0x39d78d=_0x2a144f+_0x59fde1(0x33c)+_0x5d8216+_0x1b5d48(0x2b5)+_0x26b953+_0x1b5d48(0x380)+encodeURIComponent(_0x1c9900)+'\x27':_0x39d78d=_0x2a144f+_0x1b5d48(0x206)+_0x5d8216+_0x1b5d48(0x380)+encodeURIComponent(_0x1c9900)+'\x27',getJson(_0x39d78d)['done'](function(_0xbf934d){var _0x5960f1=_0x59fde1;RequestDigest=$(_0x5960f1(0x30d))['val'](),IsNotpermission=!![],parseBasePermissions(_0xbf934d['d']['GetUserEffectivePermissions']);})[_0x1b5d48(0x59d)](function(_0x124ef0){var _0x119ea8=_0x1b5d48;IsNotpermission=![],console[_0x119ea8(0x403)](JSON[_0x119ea8(0x1a4)](_0x124ef0));});}catch(_0xd5db16){alert(_0xd5db16);}return IsNotpermission;}function parseBasePermissions(_0xdb9608){var _0x1caf4b=a90_0x13126d,_0x2581ee=_0x4ce28e,_0x2602e3=new SP[(_0x2581ee(0x456))]();_0x2602e3[_0x2581ee(0x23f)](_0xdb9608),IsFullControl=_0x2602e3[_0x2581ee(0x59f)](SP[_0x2581ee(0x409)][_0x1caf4b(0x50a)]),IsContributor=_0x2602e3[_0x2581ee(0x59f)](SP[_0x2581ee(0x409)][_0x2581ee(0x52d)]),IsdeleteListItems=_0x2602e3[_0x1caf4b(0x5d1)](SP[_0x2581ee(0x409)][_0x2581ee(0x60d)]);var _0x3373da=[];for(var _0x3308b1 in SP[_0x1caf4b(0x251)][_0x2581ee(0x1ca)]){if(SP[_0x1caf4b(0x251)][_0x2581ee(0x469)](_0x3308b1)){var _0x5d6c5b=SP[_0x2581ee(0x409)][_0x2581ee(0x6f1)](_0x3308b1);_0x2602e3[_0x1caf4b(0x5d1)](_0x5d6c5b)&&_0x3373da[_0x1caf4b(0x5ae)](_0x3308b1);}}return _0x3373da;}function getJson(_0x259a89){var _0x3b3bbb=a90_0x13126d,_0x111918=_0x4ce28e;return $[_0x111918(0x42c)]({'url':_0x259a89,'type':_0x111918(0x6c7),'async':![],'contentType':_0x3b3bbb(0x3c6),'headers':{'Accept':_0x111918(0x4b9),'X-RequestDigest':RequestDigest}});}function OpenEditIframe(_0x2f9c86){var _0x2315aa=a90_0x13126d,_0x3064b0=_0x4ce28e,_0x33b5a0=$(_0x2315aa(0x2a7))[_0x3064b0(0x314)]();clearInterval(IntervalId),$(_0x3064b0(0x359))[_0x3064b0(0x340)]()[_0x2315aa(0x309)](/\.(jpeg|jpg|gif|png)$/)!=null?$(_0x3064b0(0x504),{'src':_0x2f9c86,'id':_0x2315aa(0x2af),'frameborder':0x0,'scrolling':_0x3064b0(0x2dc),'width':_0x3064b0(0x6d8),'height':_0x3064b0(0x4d9)})[_0x2315aa(0x1c1)](_0x33b5a0):$(_0x3064b0(0x504),{'src':_0x2f9c86,'id':_0x3064b0(0x22a),'frameborder':0x0,'scrolling':_0x3064b0(0x2dc),'width':_0x3064b0(0x6d8),'height':_0x2315aa(0x5cd)})[_0x3064b0(0x318)](_0x33b5a0),$(_0x3064b0(0x1f1))[_0x3064b0(0x3f3)](),$(_0x2315aa(0x3d9))[_0x2315aa(0x39a)](),$(_0x2315aa(0x290))['hide'](),$(_0x3064b0(0x3f4))[_0x3064b0(0x3f3)](),$(_0x3064b0(0x203))[_0x3064b0(0x3f3)](),$(_0x2315aa(0x56f))[_0x3064b0(0x3f3)](),$(_0x3064b0(0x300))[_0x2315aa(0x39a)](),IntervalId=setInterval(function(){var _0x252229=_0x2315aa,_0x14d72f=_0x3064b0;$(_0x14d72f(0x646))['attr'](_0x14d72f(0x303),_0x14d72f(0x587)),$(_0x252229(0x1b8))[_0x14d72f(0x5a3)]()[_0x14d72f(0x40d)](_0x14d72f(0x1e0))[_0x14d72f(0x290)](),$(_0x252229(0x1b8))[_0x14d72f(0x5a3)]()[_0x252229(0x5f1)](_0x14d72f(0x5ce))[_0x252229(0x4e5)](),$(_0x14d72f(0x646))[_0x14d72f(0x5a3)]()[_0x14d72f(0x40d)](_0x252229(0x680))[_0x14d72f(0x290)](),$(_0x14d72f(0x646))[_0x14d72f(0x5a3)]()[_0x14d72f(0x40d)](_0x14d72f(0x6b2))[_0x14d72f(0x290)]();},0x7d0);}function DisplayFileProperty(_0x120f8a,_0x3869fd,_0x5d3248,_0x43d5d9,_0x2fea2d,_0x42c8e4,_0x5cdfcc,_0x365041,_0x5e4aa6){var _0x34f386=a90_0x13126d,_0x8c629c=_0x4ce28e;CopySourceURL=CommentSiteURL=_0x120f8a,_0x43d5d9!=_0x34f386(0x4d4)&&$(_0x34f386(0x4ee))[_0x8c629c(0x340)]()!=_0x8c629c(0x33c)&&$(_0x34f386(0x4ee))[_0x8c629c(0x340)]()!=_0x8c629c(0x2c6)&&$('.headdingLinks')[_0x34f386(0x1ca)]()!=_0x34f386(0x39b)&&$(_0x8c629c(0x548))[_0x8c629c(0x340)]()!=_0x8c629c(0x20b)&&(IsStopInheritancePermissions=Boolean[_0x8c629c(0x6f1)](_0x2fea2d),Filepath=_0x43d5d9),($('.chkFileFolder')[_0x8c629c(0x47f)](_0x34f386(0x495),![]),$(_0x8c629c(0x32b))[_0x8c629c(0x47f)](_0x8c629c(0x3da),![]),arrFileFolder=[],$(_0x8c629c(0x4c5))[_0x8c629c(0x340)](_0x8c629c(0x46e)),$(_0x8c629c(0x2da))[_0x8c629c(0x6ea)](),$(_0x8c629c(0x435))[_0x8c629c(0x3f3)](),FavouriteId='',$(_0x8c629c(0x6b1))[_0x8c629c(0x6ea)]()),_0x42c8e4[_0x8c629c(0x674)](/\bDocuments\b/)>=0x0&&(_0x42c8e4=_0x42c8e4[_0x8c629c(0x4e2)](_0x8c629c(0x1d1),_0x8c629c(0x33f))),($(_0x8c629c(0x512))[_0x34f386(0x46b)](),$(_0x8c629c(0x424))[_0x8c629c(0x6ea)]()),_0x5d3248==_0x34f386(0x5a4)&&($('#modalDownloadBtn')[_0x8c629c(0x3f3)](),$(_0x8c629c(0x424))[_0x34f386(0x39a)]());var _0x405cf6='';$('#btnDeleteFile')[_0x8c629c(0x6ea)](),$(_0x8c629c(0x202))[_0x8c629c(0x6ea)](),$(_0x8c629c(0x37f))[_0x8c629c(0x6ea)](),$(_0x34f386(0x565))[_0x8c629c(0x6ea)](),$(_0x8c629c(0x1f1))[_0x8c629c(0x6ea)](),$(_0x8c629c(0x67d))[_0x8c629c(0x290)]();var _0x3d8b45='';_0x3d8b45=AddCustomColPopup();var _0x13a970=_0x120f8a+_0x8c629c(0x29d)+_0x42c8e4+_0x34f386(0x3d6)+_0x3d8b45+_0x8c629c(0x31f);while(_0x3d8b45['indexOf'](_0x8c629c(0x4c6))!=-0x1){_0x3d8b45=_0x3d8b45[_0x8c629c(0x4e2)](_0x34f386(0x5fa),'');}_0x3d8b45=_0x3d8b45[_0x34f386(0x36e)](0x0,_0x3d8b45[_0x8c629c(0x4a1)]-0x1),$[_0x8c629c(0x42c)]({'url':_0x13a970,'headers':{'Accept':_0x8c629c(0x4b9)},'async':![],'success':function(_0x59b937){var _0x437d71=_0x34f386,_0x11c8b1=_0x8c629c,_0x16a301=_0x59b937['d']['ListItemAllFields'],_0x135aeb=_0x16a301[_0x11c8b1(0x19f)];DocumentId=_0x59b937['d'][_0x437d71(0x245)]['Id'],SelectedFileServerURL=_0x405cf6=_0x42c8e4,FileCheckOutBy=getCheckedOutBy(),_spPageContextInfo[_0x11c8b1(0x4ed)]!=FileCheckOutBy&&FileCheckOutBy!=''&&FileCheckOutBy!=null?($(_0x11c8b1(0x388))[_0x11c8b1(0x340)](_0x11c8b1(0x19c)),$(_0x437d71(0x2b3))[_0x11c8b1(0x3f3)](),$(_0x437d71(0x363))[_0x437d71(0x46b)](),$(_0x11c8b1(0x3c9))[_0x11c8b1(0x340)](_0x11c8b1(0x604)+FileCheckOutBy),$(_0x11c8b1(0x5c0))[_0x437d71(0x39a)](),$(_0x437d71(0x3e3))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x4a9))[_0x437d71(0x3e0)](_0x11c8b1(0x2fc),_0x11c8b1(0x2fc)),$(_0x437d71(0x362))[_0x437d71(0x3e0)](_0x11c8b1(0x2fc),_0x11c8b1(0x2fc)),$(_0x11c8b1(0x4a9))[_0x11c8b1(0x1a0)](_0x11c8b1(0x2fc),_0x437d71(0x45b)),$(_0x11c8b1(0x424))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x345))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x1f1))[_0x11c8b1(0x3f3)](),FilePermissions==_0x437d71(0x44a)&&$(_0x11c8b1(0x273))[_0x11c8b1(0x6ea)]()):(_spPageContextInfo[_0x11c8b1(0x4ed)]==FileCheckOutBy?($(_0x437d71(0x363))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x3c9))[_0x11c8b1(0x340)](_0x11c8b1(0x33e)),$(_0x11c8b1(0x388))[_0x11c8b1(0x340)](_0x11c8b1(0x19c)),$(_0x11c8b1(0x5e5))[_0x11c8b1(0x1a0)](_0x11c8b1(0x2fc),_0x11c8b1(0x2fc)),$(_0x11c8b1(0x345))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x1f1))[_0x11c8b1(0x3f3)]()):($(_0x11c8b1(0x388))[_0x11c8b1(0x340)](_0x11c8b1(0x391)),$(_0x11c8b1(0x3c9))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x5e5))[_0x11c8b1(0x47f)]('disabled',''),$(_0x437d71(0x57d))[_0x11c8b1(0x6ea)](),_0x5d3248!=_0x11c8b1(0x2ed)&&$(_0x11c8b1(0x424))[_0x11c8b1(0x6ea)]()),$(_0x11c8b1(0x4a9))[_0x11c8b1(0x47f)](_0x11c8b1(0x2fc),''));if(_0x135aeb==null){_0x135aeb=window[_0x11c8b1(0x55f)][_0x11c8b1(0x1ec)]+_0x42c8e4;if(_0x42c8e4[_0x437d71(0x306)](_0x437d71(0x5d5))==!![]||_0x42c8e4[_0x437d71(0x306)](_0x437d71(0x652))==!![])_0x42c8e4[_0x437d71(0x306)](_0x11c8b1(0x1ea))==!![]?(CopyLibrary=_0x11c8b1(0x1ea),$(_0x437d71(0x624))[_0x11c8b1(0x419)](_0x120f8a+_0x11c8b1(0x585)+encodeURIComponent(_0x42c8e4)+_0x11c8b1(0x1a7)+encodeURIComponent(_0x42c8e4[_0x437d71(0x2e4)](0x0,_0x42c8e4[_0x11c8b1(0x594)]('/')+0x0)))):(CopyLibrary=_0x437d71(0x652),$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](_0x120f8a+_0x11c8b1(0x6ae)+encodeURIComponent(_0x42c8e4)+_0x11c8b1(0x1a7)+encodeURIComponent(_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x42c8e4[_0x11c8b1(0x594)]('/')+0x0))));else{_0x42c8e4[_0x11c8b1(0x674)](/\bDocuments\b/)>=0x0||Documentname==undefined||Documentname==''?(CopyLibrary=_0x11c8b1(0x1d1),Documentname=''):Documentname[_0x11c8b1(0x189)]('/')!=-0x1?CopyLibrary=Documentname[_0x11c8b1(0x288)]('/')[0x0]:CopyLibrary=Documentname;var _0x404800=window[_0x437d71(0x367)][_0x11c8b1(0x1ec)]+_0x42c8e4['substr'](0x0,_0x42c8e4[_0x11c8b1(0x594)]('/')+0x0);$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](_0x404800+_0x437d71(0x580)+encodeURIComponent(_0x42c8e4)+_0x11c8b1(0x1a7)+encodeURIComponent(_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x42c8e4[_0x11c8b1(0x594)]('/')+0x0)));}}else{if(_0x42c8e4[_0x437d71(0x306)](_0x11c8b1(0x1ea))==!![])CopyLibrary=_0x11c8b1(0x1ea);else _0x42c8e4[_0x437d71(0x306)](_0x11c8b1(0x6a4))==!![]?CopyLibrary=_0x11c8b1(0x6a4):_0x42c8e4[_0x437d71(0x2d8)](/\bDocuments\b/)>=0x0||Documentname==undefined||Documentname==''?(CopyLibrary=_0x11c8b1(0x1d1),Documentname=''):Documentname['indexOf']('/')!=-0x1?CopyLibrary=Documentname[_0x11c8b1(0x288)]('/')[0x0]:CopyLibrary=Documentname;$(_0x437d71(0x624))[_0x437d71(0x1ea)](_0x135aeb);}$(_0x11c8b1(0x60b))[_0x11c8b1(0x47f)](_0x11c8b1(0x36d),window[_0x11c8b1(0x55f)][_0x11c8b1(0x1ec)]+_0x42c8e4),$(_0x11c8b1(0x6c6))[_0x437d71(0x235)](_0x11c8b1(0x36d),_0x135aeb);if(_0x16a301[_0x11c8b1(0x363)][_0x437d71(0x306)](_0x11c8b1(0x46d))==!![]){_0x42c8e4[_0x437d71(0x2d8)](/\bShared%20Documents\b/)>=0x0&&(_0x405cf6=_0x42c8e4[_0x11c8b1(0x4e2)](_0x437d71(0x339),_0x11c8b1(0x2f4)));var _0x560c65='';_0x5e4aa6!=_0x11c8b1(0x228)&&_0x5e4aa6!=undefined&&_0x5e4aa6!=null&&_0x5e4aa6!=''?(_0x560c65=_0x5e4aa6+_0x11c8b1(0x302)+encodeURIComponent(_0x405cf6)+_0x437d71(0x59d)+_0x42c8e4[_0x437d71(0x2e4)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/'))+_0x11c8b1(0x496),_0x135aeb=_0x5e4aa6+_0x11c8b1(0x302)+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/'))+_0x11c8b1(0x496)):(_0x560c65=DMS_Link+_0x11c8b1(0x4a5)+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/'))+_0x11c8b1(0x496),_0x135aeb=DMS_Link+'?id='+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x437d71(0x4a3)]('/'))+_0x11c8b1(0x496)),$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](_0x560c65),$(_0x11c8b1(0x424))['empty']()[_0x11c8b1(0x693)](_0x11c8b1(0x1c7)),EditFileLink=_0x560c65,$(_0x11c8b1(0x392))[_0x437d71(0x26c)](function(){OpenEditIframe(_0x560c65);});}else{if(_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x3cc)](_0x11c8b1(0x325))==!![]){_0x42c8e4[_0x11c8b1(0x674)](/\bShared%20Documents\b/)>=0x0&&(_0x405cf6=_0x42c8e4[_0x11c8b1(0x4e2)](_0x11c8b1(0x33f),_0x437d71(0x597)));var _0x244111='';_0x5e4aa6!=_0x437d71(0x2bb)&&_0x5e4aa6!=undefined&&_0x5e4aa6!=null&&_0x5e4aa6!=''?(_0x135aeb=_0x5e4aa6+_0x11c8b1(0x302)+encodeURIComponent(_0x405cf6)+_0x437d71(0x59d)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/'))+_0x11c8b1(0x496),_0x244111=_0x5e4aa6+'/Forms/AllItems.aspx?id='+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+encodeURIComponent(_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/')))+_0x11c8b1(0x4af)):(_0x135aeb=DMS_Link+_0x11c8b1(0x4a5)+encodeURIComponent(_0x405cf6)+'&parent='+_0x42c8e4['substr'](0x0,_0x405cf6['lastIndexOf']('/'))+_0x437d71(0x5f5),_0x244111=DMS_Link+_0x11c8b1(0x4a5)+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+encodeURIComponent(_0x42c8e4[_0x437d71(0x2e4)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/')))+_0x11c8b1(0x4af)),$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](_0x244111),$(_0x437d71(0x2ea))[_0x11c8b1(0x314)]()[_0x11c8b1(0x693)](_0x437d71(0x237)),EditFileLink=_0x244111,$(_0x11c8b1(0x392))[_0x11c8b1(0x382)](function(){OpenEditIframe(_0x244111);});}else(_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x65b)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1)==_0x11c8b1(0x3f7)||_0x16a301['FileLeafRef'][_0x11c8b1(0x65b)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1)==_0x11c8b1(0x6dd)||_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x65b)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1)==_0x437d71(0x375))&&(_0x135aeb=_0x135aeb[_0x437d71(0x3ea)](_0x437d71(0x436),_0x11c8b1(0x309)),$(_0x437d71(0x624))[_0x437d71(0x1ea)](_0x135aeb),$(_0x11c8b1(0x6c6))[_0x437d71(0x235)](_0x11c8b1(0x36d),_0x135aeb)),$(_0x11c8b1(0x424))[_0x11c8b1(0x314)]()[_0x11c8b1(0x693)](_0x11c8b1(0x1c7)),_0x16a301[_0x11c8b1(0x363)]['substring'](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1)==_0x11c8b1(0x563)?(EditFileLink=_0x135aeb[_0x11c8b1(0x4e2)](_0x437d71(0x436),_0x11c8b1(0x6ab)),$(_0x11c8b1(0x392))[_0x11c8b1(0x382)](function(){OpenEditIframe(EditFileLink);})):(EditFileLink=_0x135aeb[_0x11c8b1(0x4e2)](_0x437d71(0x436),_0x437d71(0x2a6)),$(_0x11c8b1(0x392))[_0x11c8b1(0x382)](function(){OpenEditIframe(EditFileLink);}));}var _0x3dc461=$(_0x11c8b1(0x2b6))[_0x11c8b1(0x314)]();if(_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x1c2)](/\.(jpeg|jpg|gif|png)$/)!=null){if(_0x5d3248=='Restricted\x20View'){_0x42c8e4[_0x11c8b1(0x674)](/\bShared%20Documents\b/)>=0x0&&(_0x405cf6=_0x42c8e4[_0x11c8b1(0x4e2)](_0x11c8b1(0x33f),_0x11c8b1(0x2f4)));var _0x2bb5d1='';if(_0x5e4aa6!=_0x11c8b1(0x228)&&_0x5e4aa6!=undefined&&_0x5e4aa6!=null&&_0x5e4aa6!='')_0x2bb5d1=_0x5e4aa6+_0x11c8b1(0x302)+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6[_0x11c8b1(0x594)]('/'))+_0x11c8b1(0x496);else _0x2bb5d1=DMS_Link+_0x437d71(0x402)+encodeURIComponent(_0x405cf6)+_0x11c8b1(0x1a7)+_0x42c8e4[_0x11c8b1(0x6e8)](0x0,_0x405cf6['lastIndexOf']('/'))+_0x11c8b1(0x496);$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](_0x2bb5d1),$('<iframe>',{'src':_0x2bb5d1,'id':_0x11c8b1(0x22a),'frameborder':0x0,'scrolling':_0x437d71(0x4e7),'width':_0x11c8b1(0x6d8),'height':_0x11c8b1(0x4d9)})[_0x11c8b1(0x318)](_0x3dc461),$(_0x11c8b1(0x6c6))[_0x11c8b1(0x47f)](_0x437d71(0x595),_0x2bb5d1);}else $(_0x11c8b1(0x2b6))[_0x11c8b1(0x678)](_0x11c8b1(0x484)+_0x135aeb+_0x437d71(0x1a2));}else{var _0x598f6e=_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x65b)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1);_0x598f6e==_0x437d71(0x375)||_0x598f6e==_0x11c8b1(0x1f8)||_0x598f6e==_0x437d71(0x252)||_0x598f6e==_0x11c8b1(0x4bd)||_0x598f6e==_0x11c8b1(0x5ab)||_0x598f6e==_0x11c8b1(0x27a)||_0x598f6e==_0x11c8b1(0x183)||_0x598f6e==_0x11c8b1(0x660)||_0x598f6e==_0x11c8b1(0x5df)||_0x598f6e==_0x11c8b1(0x2b2)||_0x598f6e==_0x437d71(0x433)||_0x598f6e==_0x11c8b1(0x6ca)?_0x135aeb=$('.txtCopyLink')[_0x11c8b1(0x419)]():_0x5d3248=='Restricted\x20View'&&(_0x135aeb=EditFileLink,$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)](EditFileLink),_0x598f6e==_0x11c8b1(0x6de)&&(_0x135aeb=$(_0x11c8b1(0x4a6))[_0x11c8b1(0x419)]()),$(_0x11c8b1(0x6c6))[_0x11c8b1(0x47f)](_0x11c8b1(0x36d),EditFileLink)),_0x365041==_0x11c8b1(0x438)&&(_0x135aeb=EditFileLink),$('<iframe>',{'src':_0x135aeb,'id':_0x11c8b1(0x22a),'frameborder':0x0,'scrolling':_0x437d71(0x4e7),'width':_0x437d71(0x66b),'height':'98%'})['appendTo'](_0x3dc461);}_0x16a301['SecurityLevel']==null||_0x16a301[_0x11c8b1(0x4ad)]==_0x11c8b1(0x522)?_0x16a301[_0x437d71(0x1f9)]==_0x11c8b1(0x668)?($(_0x437d71(0x35b))['text'](_0x11c8b1(0x3ba)),$(_0x11c8b1(0x351))[_0x11c8b1(0x6ea)]()):(_0x16a301[_0x11c8b1(0x4ad)]=_0x437d71(0x5dd),$(_0x11c8b1(0x43c))[_0x11c8b1(0x340)](_0x16a301[_0x437d71(0x520)]),$(_0x437d71(0x317))[_0x11c8b1(0x3f3)]()):($(_0x437d71(0x35b))[_0x11c8b1(0x340)](_0x437d71(0x2cb)+_0x16a301[_0x437d71(0x520)]),$(_0x437d71(0x317))[_0x11c8b1(0x6ea)]());if($(_0x11c8b1(0x548))[_0x11c8b1(0x340)]()==_0x11c8b1(0x2c6))$('.btnNotSharedTab')[_0x11c8b1(0x3f3)](),$(_0x437d71(0x317))[_0x437d71(0x46b)](),getSharingInfo(DocumentId);else $(_0x11c8b1(0x548))[_0x11c8b1(0x340)]()==_0x11c8b1(0x33c)&&($(_0x437d71(0x410))[_0x11c8b1(0x3f3)](),getSingleShareInfo(DocumentId,_0x5cdfcc));var _0x5b72ec=[];if(_0x3d8b45!=''){_0x5b72ec=_0x3d8b45[_0x11c8b1(0x288)](',');for(cus=0x0;cus<_0x5b72ec[_0x11c8b1(0x4a1)];cus++){new Date(_0x16a301[_0x5b72ec[cus]])!=_0x11c8b1(0x540)?_0x16a301[_0x5b72ec[cus]]!=null&&_0x16a301[_0x5b72ec[cus]]!=_0x11c8b1(0x4e7)&&$(_0x11c8b1(0x44b)+_0x5b72ec[cus])[_0x437d71(0x1ca)](ShowCommonStandardDateFormat(_0x16a301[_0x5b72ec[cus]])):$(_0x11c8b1(0x44b)+_0x5b72ec[cus])[_0x437d71(0x1ca)](_0x16a301[_0x5b72ec[cus]]?_0x16a301[_0x5b72ec[cus]]:'');}}$(_0x11c8b1(0x2a5))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x664)]?_0x16a301[_0x11c8b1(0x664)]:''),$(_0x11c8b1(0x1a2))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x664)]?_0x16a301[_0x11c8b1(0x664)]:''),_0x16a301[_0x11c8b1(0x54a)]!=_0x11c8b1(0x627)&&_0x16a301[_0x11c8b1(0x54a)]!=null&&_0x16a301[_0x437d71(0x1c3)]!=_0x11c8b1(0x6e4)?($(_0x11c8b1(0x3b4))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x54a)]),_0x16a301[_0x437d71(0x5fc)]!=_0x11c8b1(0x627)&&_0x16a301[_0x11c8b1(0x659)]!=null&&_0x16a301[_0x11c8b1(0x659)]!=_0x11c8b1(0x6e4)?($(_0x11c8b1(0x2d6))[_0x437d71(0x1ca)]('\x20('+_0x16a301[_0x11c8b1(0x659)]+')'),$(_0x11c8b1(0x6d7))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x659)])):($(_0x11c8b1(0x6d7))[_0x11c8b1(0x340)](''),$('#FileDocType')[_0x11c8b1(0x340)](''))):($(_0x437d71(0x414))[_0x437d71(0x1ca)](''),_0x16a301[_0x437d71(0x5fc)]!=_0x11c8b1(0x627)&&_0x16a301[_0x437d71(0x5fc)]!=null&&_0x16a301[_0x437d71(0x5fc)]!=_0x11c8b1(0x6e4)?($(_0x437d71(0x539))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x659)]),$(_0x11c8b1(0x6d7))[_0x437d71(0x1ca)](_0x16a301[_0x11c8b1(0x659)])):$(_0x11c8b1(0x6d7))[_0x437d71(0x1ca)]('')),($(_0x11c8b1(0x1ed))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x363)]),$(_0x11c8b1(0x5b7))[_0x11c8b1(0x340)](ShowCommonStandardDateFormat(_0x16a301[_0x11c8b1(0x475)])),$(_0x11c8b1(0x4b5))[_0x11c8b1(0x340)](GetUserFullName(_0x16a301[_0x11c8b1(0x317)])),$(_0x437d71(0x31d))[_0x11c8b1(0x340)]($(_0x11c8b1(0x4b5))[_0x11c8b1(0x340)]()),$(_0x11c8b1(0x2ec))[_0x11c8b1(0x340)]($(_0x437d71(0x3e9))[_0x11c8b1(0x340)]()),$(_0x11c8b1(0x337))[_0x11c8b1(0x340)](''),$(_0x11c8b1(0x337))[_0x11c8b1(0x340)](_0x16a301[_0x437d71(0x17f)][_0x11c8b1(0x288)]('|')[0x2]),$(_0x11c8b1(0x1d0))[_0x11c8b1(0x47f)](_0x437d71(0x3e1),_spPageContextInfo['webAbsoluteUrl']+_0x437d71(0x2d9)+escapeProperly(_0x16a301[_0x11c8b1(0x317)][_0x11c8b1(0x288)]('|')[0x2])),$(_0x11c8b1(0x337))[_0x11c8b1(0x382)](function(){var _0xe85181=_0x437d71,_0x8acd6f=_0x11c8b1;OpenEmail(_0x16a301[_0xe85181(0x17f)][_0x8acd6f(0x288)]('|')[0x2]);}),$(_0x11c8b1(0x2a5))['text'](_0x16a301[_0x11c8b1(0x664)]?_0x16a301[_0x11c8b1(0x664)]:'')),_0x16a301[_0x11c8b1(0x659)]!=_0x11c8b1(0x627)&&_0x16a301['DocumentType']!=null&&_0x16a301[_0x437d71(0x5fc)]!=_0x11c8b1(0x6e4)&&$(_0x11c8b1(0x2d6))[_0x11c8b1(0x340)](_0x16a301[_0x437d71(0x5fc)]),($(_0x11c8b1(0x502))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x3ff)]?_0x16a301[_0x11c8b1(0x3ff)]:''),$(_0x11c8b1(0x5ea))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x1da)]?_0x16a301[_0x11c8b1(0x1da)]:''),$(_0x11c8b1(0x59e))[_0x11c8b1(0x340)](_0x16a301[_0x437d71(0x51a)]?_0x16a301[_0x437d71(0x51a)]:'')),_0x16a301['FileValidity']!=null&&_0x16a301[_0x437d71(0x368)]!=''&&_0x16a301[_0x11c8b1(0x4f3)]!=_0x11c8b1(0x4e7)?$(_0x11c8b1(0x48b))['text'](moment(_0x16a301[_0x437d71(0x368)])[_0x11c8b1(0x54f)](_0x11c8b1(0x374))):$(_0x11c8b1(0x48b))[_0x437d71(0x1ca)](''),($(_0x11c8b1(0x570))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x4e8)]?_0x16a301[_0x437d71(0x511)]:''),$(_0x11c8b1(0x453))[_0x11c8b1(0x314)]());if(_0x16a301[_0x11c8b1(0x4e8)]==_0x437d71(0x412))FinalApprovalFile(''),$(_0x11c8b1(0x5b2))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x376))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x570))[_0x11c8b1(0x247)](_0x11c8b1(0x65d),_0x11c8b1(0x5a8));else _0x16a301[_0x437d71(0x511)]==_0x11c8b1(0x465)||_0x16a301[_0x11c8b1(0x4e8)]==_0x11c8b1(0x2ab)?($(_0x11c8b1(0x376))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x5b2))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x570))[_0x11c8b1(0x247)](_0x11c8b1(0x65d),_0x11c8b1(0x492))):($('.RejectSign')[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x5b2))[_0x11c8b1(0x3f3)](),$(_0x437d71(0x2a8))[_0x11c8b1(0x247)](_0x11c8b1(0x65d),'Black'));if(_0x16a301[_0x11c8b1(0x4e8)]!=''&&_0x16a301[_0x11c8b1(0x4e8)]!=null){if($(_0x11c8b1(0x345))[_0x11c8b1(0x247)](_0x11c8b1(0x418))!=_0x11c8b1(0x1f5)){}$('.btnApprovalDetails')[_0x11c8b1(0x6ea)]();}else $(_0x437d71(0x57d))[_0x437d71(0x2ef)](_0x11c8b1(0x418))!=_0x11c8b1(0x1f5)&&$(_0x437d71(0x5aa))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x39d))[_0x11c8b1(0x3f3)]();$(_0x11c8b1(0x2e6))[_0x11c8b1(0x340)](_0x42c8e4),$(_0x437d71(0x20c))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x363)]),$(_0x11c8b1(0x691))[_0x11c8b1(0x419)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x288)]('.')[_0x11c8b1(0x3ee)](0x0,-0x1)[_0x11c8b1(0x3d4)]('.')),$(_0x11c8b1(0x5ed))[_0x11c8b1(0x340)]('.'+_0x16a301[_0x11c8b1(0x363)][_0x437d71(0x36e)](_0x16a301[_0x11c8b1(0x363)][_0x11c8b1(0x594)]('.')+0x1)),$(_0x437d71(0x318))[_0x11c8b1(0x340)](_0x16a301[_0x11c8b1(0x4be)]+_0x11c8b1(0x218)),$(_0x11c8b1(0x1dc))[_0x11c8b1(0x340)](_0x3869fd),IntervalId=setInterval(function(){var _0x3a93f4=_0x437d71,_0x1bbe5b=_0x11c8b1;$(_0x1bbe5b(0x646))[_0x1bbe5b(0x5a3)]()[_0x1bbe5b(0x40d)](_0x1bbe5b(0x2c5))[_0x1bbe5b(0x290)](),$(_0x1bbe5b(0x646))[_0x3a93f4(0x3dc)]()[_0x1bbe5b(0x40d)](_0x3a93f4(0x3ca))[_0x1bbe5b(0x290)](),$(_0x1bbe5b(0x646))[_0x1bbe5b(0x5a3)]()[_0x1bbe5b(0x40d)](_0x3a93f4(0x23f))[_0x3a93f4(0x4e5)](),(_0x365041==_0x1bbe5b(0x438)||_0x598f6e==_0x1bbe5b(0x3f7))&&$(_0x3a93f4(0x1b8))[_0x1bbe5b(0x1a0)](_0x1bbe5b(0x303),'min-height:\x20calc(100vh\x20-\x20104px)\x20!important;\x20height:\x20calc(100vh\x20-\x20104px)\x20!important;margin-top:\x20-58px;width:\x20100%\x20!important;'),(_0x365041==_0x1bbe5b(0x438)||_0x598f6e==_0x3a93f4(0x50c))&&($(_0x1bbe5b(0x646))[_0x1bbe5b(0x5a3)]()[_0x1bbe5b(0x40d)](_0x1bbe5b(0x1e0))[_0x1bbe5b(0x290)](),$(_0x1bbe5b(0x646))[_0x1bbe5b(0x5a3)]()[_0x1bbe5b(0x40d)](_0x1bbe5b(0x5ce))[_0x1bbe5b(0x290)](),$(_0x1bbe5b(0x646))[_0x1bbe5b(0x5a3)]()[_0x1bbe5b(0x40d)](_0x1bbe5b(0x654))[_0x1bbe5b(0x290)]());},0x7d0),$(_0x437d71(0x4ee))[_0x11c8b1(0x340)]()==_0x11c8b1(0x33c)||$(_0x11c8b1(0x548))[_0x11c8b1(0x340)]()==_0x11c8b1(0x2c6)||$(_0x437d71(0x4ee))['text']()==_0x11c8b1(0x3c7)?($(_0x11c8b1(0x530))[_0x437d71(0x46b)](),$(_0x11c8b1(0x2f0))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x6b1))[_0x11c8b1(0x3f3)]()):($(_0x11c8b1(0x530))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x2f0))[_0x11c8b1(0x6ea)](),$('.btnNotSharedTab')[_0x11c8b1(0x6ea)]());if(currentSectionType!=_0x11c8b1(0x688)&&currentSectionType!=_0x11c8b1(0x1f7)&&currentSectionType!=_0x11c8b1(0x3c7)){getListUserEffectivePermissions(_0x120f8a,listTitle,!![],DocumentId,_0x11c8b1(0x2ea)+_spPageContextInfo[_0x11c8b1(0x223)]+'');if(IsNotpermission==!![]){if(IsContributor==!![]&&IsFullControl==![])$(_0x11c8b1(0x2e2))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x424))[_0x437d71(0x46b)](),$(_0x11c8b1(0x202))[_0x11c8b1(0x6ea)](),$(_0x437d71(0x56f))[_0x437d71(0x46b)](),$(_0x11c8b1(0x300))[_0x11c8b1(0x6ea)](),$(_0x437d71(0x5aa))[_0x11c8b1(0x6ea)]();else IsContributor==![]&&IsFullControl==![]&&($(_0x11c8b1(0x2e2))[_0x11c8b1(0x3f3)](),$('#divEditView')[_0x437d71(0x39a)](),$(_0x437d71(0x536))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x37f))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x300))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x1f1))[_0x11c8b1(0x3f3)]());IsdeleteListItems==!![]&&$(_0x11c8b1(0x2e2))[_0x11c8b1(0x6ea)]();}else{if(arrPermission[_0x11c8b1(0x4a1)]>0x0){if(arrPermission[0x0][_0x11c8b1(0x346)]==!![])$(_0x11c8b1(0x2e2))['show'](),$(_0x11c8b1(0x202))[_0x11c8b1(0x6ea)](),_0x5d3248!=_0x11c8b1(0x2ed)&&$(_0x11c8b1(0x424))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x37f))[_0x11c8b1(0x6ea)](),$('#btnPopupChangeprop')[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x1f1))[_0x11c8b1(0x6ea)]();else arrPermission[0x0][_0x11c8b1(0x373)]==!![]&&($(_0x11c8b1(0x2e2))['hide'](),$(_0x11c8b1(0x202))[_0x11c8b1(0x3f3)](),$(_0x437d71(0x2ea))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x37f))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x300))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x1f1))[_0x11c8b1(0x3f3)]());}}}$(_0x11c8b1(0x298))[_0x11c8b1(0x340)](_0x59b937['d'][_0x11c8b1(0x439)]),GetFileVersion(_0x42c8e4,_0x120f8a,_0x16a301[_0x11c8b1(0x363)],_0x16a301[_0x11c8b1(0x664)]?_0x16a301['Title']:''),AddFileViewCount(),_0x365041==_0x11c8b1(0x438)?($(_0x11c8b1(0x1f1))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x2e2))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x327))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x3f4))[_0x11c8b1(0x3f3)](),$(_0x11c8b1(0x203))[_0x11c8b1(0x3f3)](),$(_0x437d71(0x56f))[_0x11c8b1(0x3f3)](),$(_0x437d71(0x565))[_0x437d71(0x39a)]()):($(_0x11c8b1(0x1f1))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x327))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x3f4))[_0x437d71(0x46b)](),$(_0x11c8b1(0x203))[_0x437d71(0x46b)](),$(_0x437d71(0x56f))[_0x11c8b1(0x6ea)](),$(_0x437d71(0x3d9))[_0x11c8b1(0x6ea)](),$(_0x11c8b1(0x300))[_0x11c8b1(0x6ea)]());},'eror':function(_0x2834c2){var _0x5bb4d4=_0x34f386,_0x386b4e=_0x8c629c;$(_0x386b4e(0x1fa))[_0x386b4e(0x341)](_0x386b4e(0x6ea)),console[_0x386b4e(0x403)](JSON[_0x386b4e(0x1a4)](_0x2834c2)),$(_0x5bb4d4(0x4ee))[_0x386b4e(0x340)]()==_0x386b4e(0x2c6)||$(_0x386b4e(0x548))[_0x386b4e(0x340)]()==_0x386b4e(0x33c)||$(_0x5bb4d4(0x4ee))[_0x386b4e(0x340)]()==_0x386b4e(0x3c7)?$(_0x5bb4d4(0x410))[_0x386b4e(0x3f3)]():$(_0x5bb4d4(0x410))[_0x386b4e(0x6ea)]();}})[_0x8c629c(0x59d)](function(_0x15c98b){var _0x19f7d7=_0x34f386,_0x19aefa=_0x8c629c;return _0x42c8e4[_0x19aefa(0x674)](/\bDocuments\b/)>=0x0?alert(_0x19aefa(0x1b0)):alert(_0x15c98b[_0x19aefa(0x32f)][_0x19aefa(0x38d)][_0x19aefa(0x57b)][_0x19f7d7(0x3cd)]),$(_0x19aefa(0x548))[_0x19aefa(0x340)]()=='Shared\x20by\x20Me'||$('.headdingLinks')[_0x19aefa(0x340)]()==_0x19f7d7(0x379)||$(_0x19aefa(0x548))['text']()==_0x19aefa(0x3c7)?$(_0x19f7d7(0x410))[_0x19aefa(0x3f3)]():$(_0x19aefa(0x6b1))[_0x19aefa(0x6ea)](),![];});}function getSharingInfo(_0x5ef850){var _0x1919cf=_0x4ce28e;$(_0x1919cf(0x6e6))['hide']();var _0x445d02=_0x1919cf(0x446)+_0x5ef850+_0x1919cf(0x36c);$[_0x1919cf(0x3a9)](getItemsWithQuery(_0x1919cf(0x2b7),_0x445d02,_spPageContextInfo[_0x1919cf(0x229)]))[_0x1919cf(0x577)](function(_0x58cc4d){var _0x2d4331=a90_0x41e7,_0x43caf9=_0x1919cf;_0x58cc4d[_0x43caf9(0x4a1)]>0x0&&(currentSharedItemId='',$(_0x43caf9(0x3e6))[_0x43caf9(0x340)](_0x58cc4d[_0x58cc4d['length']-0x1][_0x43caf9(0x2f7)][_0x43caf9(0x664)]),$(_0x43caf9(0x275))[_0x43caf9(0x340)](ShowCommonStandardDateFormat(_0x58cc4d[_0x58cc4d[_0x2d4331(0x1d9)]-0x1][_0x2d4331(0x403)])),$(_0x43caf9(0x541))[_0x2d4331(0x1ca)](_0x58cc4d[_0x58cc4d[_0x43caf9(0x4a1)]-0x1][_0x2d4331(0x44b)]),$(_0x43caf9(0x6d0))[_0x43caf9(0x340)](_0x43caf9(0x422)+_0x58cc4d[_0x58cc4d['length']-0x1][_0x43caf9(0x390)][_0x43caf9(0x1e4)][0x0][_0x43caf9(0x664)]));});}function Closepopup(){var _0x4d2e12=a90_0x13126d,_0x2be74e=_0x4ce28e;clearInterval(IntervalId),$(_0x4d2e12(0x2a7))[_0x2be74e(0x314)](),IsNotpermission=![],IsdeleteListItems=![],IsContributor=![],IsFullControl=![];}function GetFileVersion(_0x28b5d8,_0x36a4e8,_0xa4db58,_0x52a44a){var _0x596a46=_0x4ce28e,_0x59a251=_0x36a4e8+_0x596a46(0x66b)+_0x28b5d8+_0x596a46(0x370);$[_0x596a46(0x42c)]({'url':_0x59a251,'headers':{'Accept':_0x596a46(0x4b9)},'async':![],'success':function(_0x405ad1){var _0x1f3bcd=a90_0x41e7,_0x592bf0=_0x596a46,_0x5ab8c4=_0x405ad1['d'][_0x592bf0(0x1e4)];$('#VerHisParent')[_0x592bf0(0x314)]()[_0x592bf0(0x693)](_0x592bf0(0x50a)),$(_0x1f3bcd(0x3ef))[_0x592bf0(0x382)](function(_0x37a415){BindVersionHistory(_0x5ab8c4,_0xa4db58,_0x52a44a,_0x36a4e8);}),$(_0x592bf0(0x30c))[_0x1f3bcd(0x51f)]()[_0x1f3bcd(0x446)]('<a\x20class=\x22detail-panel-inner-link\x22\x20href=\x22javascript:void(0);\x22\x20id=\x22btnAuditHist\x22>Audit\x20Trail</a'),$(_0x592bf0(0x36b))[_0x592bf0(0x382)](function(_0x51cf41){GetAuditHistory(_0x28b5d8,_0x36a4e8,_0xa4db58,_0x52a44a);}),$(_0x592bf0(0x1fa))[_0x592bf0(0x341)](_0x592bf0(0x6ea)),checkFavoriteFile();},'eror':function(_0x5daf4e){var _0x7624ba=a90_0x41e7,_0x552e5f=_0x596a46;$(_0x552e5f(0x1fa))[_0x552e5f(0x341)](_0x7624ba(0x46b)),console[_0x552e5f(0x403)](JSON[_0x552e5f(0x1a4)](_0x5daf4e));}})[_0x596a46(0x59d)](function(_0x7d7e63){var _0xffdb69=a90_0x41e7,_0x58f67c=_0x596a46;_0x7d7e63[_0x58f67c(0x32f)][_0x58f67c(0x38d)][_0x58f67c(0x57b)][_0x58f67c(0x447)]=='Access\x20denied.'?($(_0x58f67c(0x2a0))[_0x58f67c(0x314)]()[_0x58f67c(0x693)](_0x58f67c(0x50a)),$(_0x58f67c(0x23a))[_0x58f67c(0x382)](function(_0x5dd89a){var _0x1a2c72=a90_0x41e7,_0x372d30=_0x58f67c;return alert(_0x372d30(0x270)+$(_0x1a2c72(0x20c))[_0x372d30(0x340)]()+_0x1a2c72(0x648)),![];})):(console[_0x58f67c(0x403)](_0x7d7e63[_0x58f67c(0x32f)][_0x58f67c(0x38d)][_0x58f67c(0x57b)][_0x58f67c(0x447)]),checkFavoriteFile()),$(_0x58f67c(0x1fa))[_0x58f67c(0x341)](_0xffdb69(0x46b));}),setTimeout(function(){var _0x426547=a90_0x41e7,_0x2dec5a=_0x596a46,_0x4a5eb1=$(_0x2dec5a(0x515))[_0x2dec5a(0x611)]();_0x4a5eb1>=0x258?$(_0x2dec5a(0x515))[_0x2dec5a(0x247)]('width',_0x426547(0x66b)):$(_0x2dec5a(0x515))[_0x426547(0x2ef)](_0x2dec5a(0x611),_0x2dec5a(0x1e8));if($(_0x2dec5a(0x646))[_0x426547(0x3dc)]()[_0x2dec5a(0x40d)](_0x2dec5a(0x3d0))['html']()==''){$(_0x2dec5a(0x2b6))[_0x2dec5a(0x314)]();var _0x553951=_0x426547(0x3f8)+_0x2dec5a(0x263)+_0x426547(0x2ba)+_0x2dec5a(0x310);$(_0x2dec5a(0x2b6))[_0x2dec5a(0x693)](_0x426547(0x352)+_0x553951+_0x2dec5a(0x441));}},0x7d0);}function GetAuditHistory(_0x14777c,_0x5815c2,_0x5f200b,_0x21271c){var _0x1f8e96=a90_0x13126d,_0x31fe46=_0x4ce28e,_0x5eeb6f=$(_0x31fe46(0x23b))['empty'](),_0x1a392a=CopyLibrary;(_0x1a392a==_0x1f8e96(0x339)||_0x1a392a==_0x31fe46(0x2f4))&&(_0x1a392a=_0x31fe46(0x1d1)),jQuery[_0x31fe46(0x42c)]({'url':SiteUrl+_0x1f8e96(0x33c)+_0x1a392a+'\x27)?$select=Id','type':_0x31fe46(0x6c7),'async':![],'headers':{'Accept':_0x31fe46(0x4b9)},'success':function(_0x33a2c5,_0x46ce33,_0x139ba8){var _0x16aae4=_0x1f8e96,_0xd50de3=_0x31fe46,_0x1fd882=SiteUrl+_0x16aae4(0x250)+_0x33a2c5['d']['Id']+_0xd50de3(0x6a5)+DocumentId;$(_0x16aae4(0x450),{'src':_0x1fd882,'id':_0xd50de3(0x653),'frameborder':0x0,'scrolling':_0xd50de3(0x2dc),'width':_0xd50de3(0x6d8),'height':'98%'})[_0xd50de3(0x318)](_0x5eeb6f),$(_0xd50de3(0x2d4))['modal'](_0xd50de3(0x6ea)),setInterval(function(){var _0x34012f=_0x16aae4,_0x5b2665=_0xd50de3;$(_0x5b2665(0x427))[_0x5b2665(0x5a3)]()[_0x5b2665(0x40d)](_0x34012f(0x180))[_0x5b2665(0x290)](),$(_0x5b2665(0x427))[_0x5b2665(0x5a3)]()[_0x5b2665(0x40d)](_0x5b2665(0x651))[_0x34012f(0x4e5)]();},0x3e8);},'error':function(_0x2f23d4,_0x303daf,_0x56e4ab){var _0x30a2a7=_0x31fe46;console[_0x30a2a7(0x38d)](_0x30a2a7(0x2be));}});}function BindVersionHistory(_0x3fda8c,_0x11954c,_0x434db0,_0x1c8084){var _0x387e4e=a90_0x13126d,_0x35ec52=_0x4ce28e,_0xc26697='';$(_0x35ec52(0x1ac))[_0x35ec52(0x340)](_0x11954c),$(_0x387e4e(0x343))[_0x35ec52(0x340)](_0x434db0),$(_0x35ec52(0x49b))[_0x35ec52(0x314)]();if(_0x3fda8c[_0x35ec52(0x4a1)]>0x0){for(ver=0x0;ver<_0x3fda8c['length'];ver++){var _0x37a1b2=_0x1c8084+'/'+_0x3fda8c[ver][_0x35ec52(0x268)],_0x43f10f=moment(_0x3fda8c[ver][_0x35ec52(0x66a)])['format'](_0x35ec52(0x6e1)),_0x2c4949='',_0x39e22e='',_0x468d1d=_spPageContextInfo[_0x35ec52(0x229)]+_0x387e4e(0x2d9)+escapeProperly(_0x3fda8c[ver][_0x35ec52(0x6db)][_0x35ec52(0x377)]);RestQuery=_0x35ec52(0x5e3)+_0x3fda8c[ver][_0x35ec52(0x6db)][_0x35ec52(0x377)]+_0x35ec52(0x67f),$[_0x35ec52(0x3a9)](getItemsWithQuery('Employees',RestQuery,_spPageContextInfo[_0x35ec52(0x229)]))[_0x35ec52(0x577)](function(_0x99df42){var _0x3e2f0e=_0x35ec52;_0x99df42[_0x3e2f0e(0x4a1)]>0x0&&(_0x2c4949=_0x99df42[0x0][_0x3e2f0e(0x347)][_0x3e2f0e(0x664)],_0x39e22e=_0x99df42[0x0][_0x3e2f0e(0x31d)],_0x99df42[0x0][_0x3e2f0e(0x526)][_0x3e2f0e(0x1e4)][_0x3e2f0e(0x4a1)]>0x0&&(_0x468d1d=_0x99df42[0x0][_0x3e2f0e(0x526)][_0x3e2f0e(0x1e4)][0x0][_0x3e2f0e(0x33a)]));}),_0xc26697+=_0x387e4e(0x3b2)+_0x3fda8c[ver][_0x387e4e(0x427)]+_0x35ec52(0x4dc)+_0x468d1d+'\x22>',_0xc26697+=_0x35ec52(0x445)+_0x3fda8c[ver][_0x35ec52(0x6db)][_0x35ec52(0x664)]+_0x35ec52(0x546)+_0x39e22e+_0x387e4e(0x47d)+(_0x39e22e!=''?_0x2c4949!=''?',':'':'')+_0x35ec52(0x69f)+_0x2c4949+_0x35ec52(0x40f),_0xc26697+=_0x35ec52(0x287)+_0x43f10f+_0x35ec52(0x2d7)+_0x37a1b2+_0x35ec52(0x644)+$(_0x35ec52(0x1ac))[_0x35ec52(0x340)]()[_0x35ec52(0x6e8)](0x0,$('#VerHisFile')[_0x35ec52(0x340)]()[_0x35ec52(0x594)]('.'))+'\x22>',_0xc26697+=_0x35ec52(0x5eb);}$(_0x35ec52(0x49b))[_0x35ec52(0x693)](_0xc26697);}else _0xc26697+=_0x35ec52(0x4a0),$(_0x35ec52(0x49b))[_0x35ec52(0x693)](_0xc26697);$(_0x35ec52(0x355))[_0x35ec52(0x341)](_0x35ec52(0x6ea));}function checkFavoriteFile(){var _0x56274d=a90_0x13126d,_0x4ea066=_0x4ce28e,_0x2160f1=_0x56274d(0x28b)+$(_0x4ea066(0x359))[_0x4ea066(0x340)]()+_0x4ea066(0x64f)+_spPageContextInfo[_0x4ea066(0x3fb)]+'\x27\x20';$[_0x4ea066(0x3a9)](getItemsWithQuery(_0x4ea066(0x291),_0x2160f1,_spPageContextInfo[_0x4ea066(0x229)]))[_0x4ea066(0x577)](function(_0x11638d){var _0x382a03=_0x4ea066;_0x11638d[_0x382a03(0x4a1)]>0x0&&(FavouriteId=_0x11638d[0x0]['Id'],$('#txtFavorite')[_0x382a03(0x340)](_0x382a03(0x3fd)),$('.unfillstar')[_0x382a03(0x3f3)](),$(_0x382a03(0x435))[_0x382a03(0x6ea)]());});}function AddCustomColPopup(_0x418f14){var _0xcc245f=a90_0x13126d,_0x586c2a=_0x4ce28e,_0x46ee26='',_0xff34f9='',_0x365767='';_0xff34f9=_0xcc245f(0x4b8);if(_0xff34f9!=''){var _0x1736e2=_0x586c2a(0x617)+_0xff34f9+_0x586c2a(0x425)+DMS_Type+_0x586c2a(0x335);$[_0xcc245f(0x186)](getItemsWithQuery(_0x586c2a(0x2b4),_0x1736e2,_spPageContextInfo[_0x586c2a(0x229)]))['done'](function(_0x4998ad){var _0x491831=_0xcc245f,_0x3d30f9=_0x586c2a;if(_0x4998ad[_0x3d30f9(0x4a1)]>0x0)for(var _0x5b2e80=0x0;_0x5b2e80<_0x4998ad[_0x3d30f9(0x4a1)];_0x5b2e80++){_0x365767+=_0x3d30f9(0x4c6)+_0x4998ad[_0x5b2e80][_0x3d30f9(0x2ef)]+',',_0x46ee26='',_0x46ee26+=_0x3d30f9(0x49e),_0x46ee26+=_0x3d30f9(0x1ee)+_0x4998ad[_0x5b2e80][_0x3d30f9(0x2ef)]+_0x491831(0x54d),_0x46ee26+=_0x3d30f9(0x494)+_0x4998ad[_0x5b2e80][_0x3d30f9(0x2ef)]+_0x3d30f9(0x5ba),$(_0x3d30f9(0x4f9))[_0x491831(0x446)](_0x46ee26);}});}return _0x365767;}function getCheckedOutBy(){var _0x2886e6=a90_0x13126d,_0x5275e8=_0x4ce28e,_0x50338b='',_0x4d15ce=_spPageContextInfo[_0x5275e8(0x229)]+_0x2886e6(0x5d7)+SelectedFileServerURL+_0x2886e6(0x4bc);return $[_0x5275e8(0x42c)]({'url':_0x4d15ce,'type':_0x5275e8(0x6c7),'async':![],'headers':{'Accept':_0x5275e8(0x4b9)},'success':function(_0x412255,_0x3f419b,_0x5a0859){var _0x516247=_0x2886e6,_0x19eab9=_0x5275e8;_0x50338b=_0x412255['d'][_0x19eab9(0x664)],$(_0x19eab9(0x3c9))[_0x19eab9(0x6ea)](),$(_0x19eab9(0x3c9))[_0x19eab9(0x340)](_0x19eab9(0x33e)),$(_0x19eab9(0x388))[_0x19eab9(0x340)]('Unlock'),$(_0x19eab9(0x5c0))[_0x516247(0x46b)](),$(_0x19eab9(0x262))['hide']();},'error':function(_0x4dbbb5,_0x2315e4,_0x4407ac){var _0x3fd7c1=_0x2886e6,_0x12252b=_0x5275e8;$(_0x12252b(0x3c9))[_0x12252b(0x3f3)](),$(_0x12252b(0x388))[_0x12252b(0x340)](_0x3fd7c1(0x621)),$(_0x12252b(0x5c0))[_0x12252b(0x3f3)](),$(_0x3fd7c1(0x3e3))[_0x12252b(0x6ea)](),console[_0x12252b(0x403)](SelectedFileServerURL+_0x12252b(0x672));}}),_0x50338b;}function GetUserFullName(_0x521f4b){var _0x4d3d81=a90_0x13126d,_0x3c238a=_0x4ce28e,_0x1fe8d1='',_0x4aa431=_spPageContextInfo[_0x3c238a(0x57e)],_0x3cf8b4=_0x521f4b;return $[_0x3c238a(0x42c)]({'url':_0x4aa431+_0x3c238a(0x6d1)+encodeURIComponent(_0x3cf8b4)+'\x27','method':_0x3c238a(0x6c7),'headers':{'Accept':_0x4d3d81(0x40a)},'async':![],'success':function(_0x3fff4f){var _0x885f61=_0x3c238a;_0x1fe8d1=_0x3fff4f['d'][_0x885f61(0x664)];},'error':function(_0x16b8d){var _0x55dcef=_0x3c238a;$(_0x55dcef(0x1fa))[_0x55dcef(0x341)](_0x55dcef(0x6ea)),console[_0x55dcef(0x403)](JSON[_0x55dcef(0x1a4)](_0x16b8d));}}),_0x1fe8d1;}function CreateFolder(_0x33665a){var _0xfa784c=a90_0x13126d,_0x149d4f=_0x4ce28e,_0xb08b8d=$(_0x149d4f(0x20d))[_0x149d4f(0x419)]()[_0x149d4f(0x6ee)]();if(_0xb08b8d[_0xfa784c(0x549)]()=='')return alert(_0x149d4f(0x4b1)),waitingDialog[_0x149d4f(0x3f3)](),![];var _0xe6ac1f=checkFolderSpecialCharaters(_0xb08b8d);if(_0xe6ac1f==!![])return alert(_0x149d4f(0x542)),waitingDialog[_0x149d4f(0x3f3)](),![];if(_0xb08b8d[_0xfa784c(0x1d9)]<0x2)return alert(_0x149d4f(0x500)),waitingDialog[_0x149d4f(0x3f3)](),![];if(_0xb08b8d[_0x149d4f(0x4a1)]>0x64)return alert(_0x149d4f(0x3d5)),waitingDialog[_0xfa784c(0x39a)](),![];var _0x1b67c0=ChekFolderExistOrNot(Documentname,_0xb08b8d);if(_0x1b67c0==![])return alert(_0x149d4f(0x2bb)),waitingDialog[_0x149d4f(0x3f3)](),![];$['when'](CreateDMSFolder(Documentname,_0xb08b8d,!![]))[_0x149d4f(0x577)](function(_0x25725d){var _0x23ef1c=_0xfa784c,_0x429d08=_0x149d4f;DMS_Link[_0x429d08(0x3cc)](_0x429d08(0x1ea))==!![]||DMS_Link[_0x429d08(0x3cc)](_0x429d08(0x6a4))==!![]?DMS_Link[_0x429d08(0x3cc)](_0x429d08(0x1ea))==!![]?libraryName=_0x429d08(0x1ea):libraryName=_0x23ef1c(0x652):Documentname[_0x429d08(0x189)]('/')!=-0x1?libraryName=Documentname[_0x429d08(0x288)]('/')[0x0]:libraryName=Documentname,Query=_0x429d08(0x5be)+_spPageContextInfo[_0x429d08(0x3fb)]+'\x27\x20',(libraryName[_0x429d08(0x674)](/\bDocuments\b/)>=0x0||libraryName==_0x429d08(0x2f4)||libraryName==_0x429d08(0x33f))&&(libraryName=_0x429d08(0x1d1)),$['when'](getItemsWithQuery(libraryName,Query,DMS_Link[_0x429d08(0x288)](_0x429d08(0x616))[0x0]['substr'](0x0,DMS_Link[_0x429d08(0x288)]('/Forms')[0x0][_0x23ef1c(0x4a3)]('/'))))[_0x429d08(0x577)](function(_0x19cd91){var _0x344a7e=_0x23ef1c,_0x499ca6=_0x429d08;AddFolderProp(libraryName,_0x19cd91[0x0]['Id'],DMS_Link[_0x344a7e(0x5e5)](_0x499ca6(0x616))[0x0][_0x499ca6(0x6e8)](0x0,DMS_Link[_0x344a7e(0x5e5)](_0x499ca6(0x616))[0x0][_0x499ca6(0x594)]('/'))),waitingDialog['hide'](),$(_0x499ca6(0x20d))[_0x499ca6(0x419)](''),$(_0x499ca6(0x357))[_0x499ca6(0x341)](_0x499ca6(0x3f3));var _0xbd314f=Documentname;Documentname[_0x499ca6(0x3cc)](_0x499ca6(0x320))==!![]&&(_0xbd314f=_0x499ca6(0x33f)),GetMyDocumentsWithFilesFolder(_0xbd314f);});});}function AddFolderProp(_0x3ced44,_0x446ce6,_0x18c707){var _0x5cbcef=a90_0x13126d,_0x35335b=_0x4ce28e,_0x512b40;if(_0x3ced44[_0x35335b(0x674)](/\bDocuments\b/)>=0x0||_0x3ced44==_0x35335b(0x2f4)||_0x3ced44==_0x35335b(0x33f))var _0x2553da=GetItemTypeForLibraryName(_0x35335b(0x25d));else var _0x2553da=GetItemTypeForLibraryName(_0x3ced44);_0x512b40={'__metadata':{'type':_0x2553da},'Title':$(_0x35335b(0x5e6))[_0x5cbcef(0x1ea)](),'DocumentNo':$(_0x35335b(0x4f1))[_0x35335b(0x419)](),'DocumentType':$(_0x35335b(0x4df))[_0x5cbcef(0x1ea)](),'DocumentWrittenBy':$(_0x35335b(0x4ef))[_0x35335b(0x419)](),'Details':$(_0x35335b(0x299))[_0x35335b(0x419)](),'SubCategory':$(_0x35335b(0x62b))[_0x35335b(0x419)]()},($(_0x35335b(0x62b))[_0x35335b(0x419)]()==_0x5cbcef(0x241)||$(_0x35335b(0x62b))[_0x35335b(0x419)]()==null||$(_0x35335b(0x62b))[_0x35335b(0x419)]()==_0x35335b(0x6e4))&&delete _0x512b40[_0x35335b(0x54a)],updateFolderFileMetadata(_0x3ced44,_0x512b40,_0x446ce6,_0x18c707);}function checkFolderSpecialCharaters(_0x384d7e){var _0x7efa9e=_0x4ce28e,_0x3e7966='\x27;.<>#%&*{}?:|\x22\x5c/~`';for(i=0x0;i<_0x3e7966[_0x7efa9e(0x4a1)];i++){if(_0x384d7e[_0x7efa9e(0x189)](_0x3e7966[i])>-0x1)return!![];}return![];}function ChekFolderExistOrNot(_0x20d827,_0x55d7a8){var _0x2c27e2=_0x4ce28e,_0x2ac03c=!![],_0x360441=_spPageContextInfo[_0x2c27e2(0x229)]+_0x2c27e2(0x6b4)+_0x20d827+_0x2c27e2(0x61f);return $[_0x2c27e2(0x42c)]({'url':_0x360441,'headers':{'Accept':_0x2c27e2(0x4b9)},'async':![],'success':function(_0x5de2b1){var _0xf16b6a=_0x2c27e2,_0xd1a522=_0x5de2b1['d'][_0xf16b6a(0x600)][_0xf16b6a(0x1e4)];for(var _0x567cf5=0x0;_0x567cf5<_0xd1a522[_0xf16b6a(0x4a1)];_0x567cf5++){_0xd1a522[_0x567cf5][_0xf16b6a(0x5c2)][_0xf16b6a(0x1d9)]()==_0x55d7a8['toLowerCase']()&&(_0x2ac03c=![]);}},'eror':function(_0x275fdc){var _0x148480=a90_0x41e7,_0xa653c5=_0x2c27e2;waitingDialog[_0x148480(0x39a)](),alert(JSON[_0xa653c5(0x1a4)](_0x275fdc));}}),_0x2ac03c;}function CreateDMSFolder(_0x41960f,_0x41481e,_0x5b3074){var _0x2c828d=a90_0x13126d,_0x4d940f=_0x4ce28e,_0x384a10=[],_0x115cd7=DMS_Link[_0x4d940f(0x288)](_0x4d940f(0x616))[0x0][_0x4d940f(0x6e8)](0x0,DMS_Link[_0x4d940f(0x288)](_0x4d940f(0x616))[0x0][_0x4d940f(0x594)]('/'));if(_0x41960f[_0x4d940f(0x3cc)](_0x4d940f(0x320))==!![])_0x41960f=_0x41960f[_0x4d940f(0x4e2)](_0x4d940f(0x320),_0x4d940f(0x506));else{if(_0x41960f=='Documents')_0x41960f=_0x4d940f(0x33f);else _0x41960f[_0x4d940f(0x3cc)](_0x2c828d(0x38a))==!![]&&(_0x41960f[_0x4d940f(0x3cc)](_0x4d940f(0x1ff))==![]&&_0x41960f[_0x2c828d(0x306)](_0x2c828d(0x477))==![])&&(_0x41960f=_0x41960f[_0x4d940f(0x4e2)](_0x4d940f(0x3a6),'Shared%20Documents/'));}if(_0x41960f[_0x41960f[_0x2c828d(0x1d9)]-0x1]=='/')var _0x5c7f73=_0x41960f+_0x41481e;else var _0x5c7f73=_0x41960f+'/'+_0x41481e;return _0x115cd7!=_spPageContextInfo[_0x2c828d(0x215)]&&$[_0x2c828d(0x186)](GetFormDigestValue(_0x115cd7))[_0x4d940f(0x577)](function(_0x9ab762){RequestDigest=_0x9ab762;}),$[_0x4d940f(0x42c)]({'url':_0x115cd7+_0x4d940f(0x1f9),'type':_0x2c828d(0x2f3),'data':JSON[_0x4d940f(0x1a4)]({'__metadata':{'type':_0x4d940f(0x5e7)},'ServerRelativeUrl':_0x5c7f73}),'async':![],'headers':{'accept':_0x4d940f(0x4b9),'content-type':_0x4d940f(0x4b9),'X-RequestDigest':RequestDigest},'success':function(_0x447ed1){var _0x14f557=_0x4d940f;RequestDigest=$('#__REQUESTDIGEST')[_0x14f557(0x419)](),_0x384a10=_0x447ed1['d'],_0x5b3074==!![]&&alert(_0x14f557(0x386));},'error':function(_0x46b63d){var _0x2a4dde=_0x2c828d,_0x5b97ea=_0x4d940f;return waitingDialog[_0x2a4dde(0x39a)](),RequestDigest=$(_0x5b97ea(0x57c))['val'](),_0x46b63d[_0x5b97ea(0x400)][_0x5b97ea(0x3cc)](_0x5b97ea(0x1b3))==!![]?(alert(_0x5b97ea(0x2e9)),![]):(alert(_0x46b63d[_0x5b97ea(0x400)]),![]);}})[_0x4d940f(0x59d)](function(_0x37613d){var _0x50f21c=_0x2c828d,_0x2377e9=_0x4d940f;RequestDigest=$(_0x50f21c(0x30d))[_0x2377e9(0x419)](),waitingDialog[_0x2377e9(0x3f3)](),console[_0x2377e9(0x403)](_0x37613d[_0x2377e9(0x32f)][_0x50f21c(0x335)][_0x2377e9(0x57b)][_0x2377e9(0x447)]);}),_0x384a10;}function AddFileValidate(){var _0x2ebde7=a90_0x13126d,_0x376254=_0x4ce28e,_0x592fe2=!![];if(currentSectionType!=_0x376254(0x3d3))for(var _0x25ef77=0x0;_0x25ef77<arrMandatoryCols[_0x376254(0x4a1)];_0x25ef77++){if('Title'==arrMandatoryCols[_0x25ef77]&&$(_0x376254(0x578))[_0x376254(0x419)]()[_0x376254(0x6ee)]()==''){_0x592fe2=![];break;}if(_0x376254(0x659)==arrMandatoryCols[_0x25ef77]&&$(_0x376254(0x3bb))[_0x376254(0x419)]()==_0x376254(0x6e4)){_0x592fe2=![];break;}if(_0x376254(0x1a5)==arrMandatoryCols[_0x25ef77]&&$(_0x376254(0x586))[_0x2ebde7(0x1ea)]()[_0x376254(0x6ee)]()==''){_0x592fe2=![];break;}if(_0x2ebde7(0x3b0)==arrMandatoryCols[_0x25ef77]&&$(_0x376254(0x634))[_0x376254(0x419)]()[_0x376254(0x6ee)]()==''){_0x592fe2=![];break;}if(_0x2ebde7(0x51a)==arrMandatoryCols[_0x25ef77]&&$(_0x376254(0x1b7))[_0x376254(0x419)]()[_0x376254(0x6ee)]()==''){_0x592fe2=![];break;}}return _0x592fe2;}function createNewDocument(_0x695f17,_0x2633b9,_0x4356a1,_0x2f782e,_0x469974){var _0x158a67=a90_0x13126d,_0x1776fe=_0x4ce28e,_0x86864b=new $[(_0x1776fe(0x5a7))](),_0x4d28fb=new SP[(_0x1776fe(0x1c8))](SiteUrl),_0x51c932=_0x4d28fb[_0x1776fe(0x58e)](),_0x1bd20c=_0x51c932[_0x1776fe(0x656)](_0x2633b9),_0x5825ff=_0x51c932[_0x1776fe(0x5b6)](_0x469974),_0x398ae2=_0x469974,_0x458759=_0x695f17&&_0x695f17[_0x1776fe(0x4a1)]?String[_0x1776fe(0x54f)](_0x1776fe(0x21f),_0x695f17):String['format'](_0x1776fe(0x574),new Date()[_0x1776fe(0x54f)](_0x158a67(0x3c3)));_0x458759=_0x458759['replace'](/[~#!@£$%^&*()\{\}\\:,<>?/|"]+/gi,'-');var _0x18530b=_0x2f782e&&_0x2f782e[_0x1776fe(0x4a1)]?_0x1bd20c[_0x158a67(0x64d)](_0x458759,_0x5825ff,_0x2f782e):_0x1bd20c[_0x1776fe(0x19e)](_0x458759,_0x5825ff,_0x4356a1||0x1),_0x109117=_0x18530b[_0x1776fe(0x618)](SP[_0x1776fe(0x2cd)][_0x1776fe(0x663)][_0x1776fe(0x253)]),_0x31b0cf=_0x18530b[_0x1776fe(0x2cf)]();_0x4d28fb[_0x1776fe(0x384)](_0x1bd20c,_0x1776fe(0x534)),_0x4d28fb[_0x158a67(0x30f)](_0x18530b,'Id'),_0x4d28fb[_0x1776fe(0x384)](_0x31b0cf,_0x1776fe(0x33a),_0x158a67(0x5bc)),_0x4d28fb[_0x1776fe(0x2bc)](_0xb4024f,_0x2a1ad9);return _0x86864b[_0x1776fe(0x297)]();function _0xb4024f(){var _0x4aa4cd=_0x158a67,_0x2249a5=_0x1776fe,_0x199a04=_0x109117[_0x2249a5(0x675)](),_0x410694={'documentName':_0x458759,'editDocumentPropertiesUrl':String[_0x2249a5(0x54f)](_0x2249a5(0x38b),_0x1bd20c[_0x2249a5(0x1ab)](),_0x18530b[_0x2249a5(0x39a)](),_spPageContextInfo[_0x2249a5(0x676)]),'fileServerRelativeUrl':_0x31b0cf[_0x4aa4cd(0x193)](),'wopiEditDocumentUrl':Boolean(_0x199a04)?_0x199a04[_0x2249a5(0x4e2)](/wopiframe\.aspx/gi,_0x2249a5(0x1b2)):''},_0x798dfd=DMS_Link[_0x2249a5(0x288)](_0x2249a5(0x616))[0x0][_0x2249a5(0x6e8)](0x0,DMS_Link['split'](_0x4aa4cd(0x664))[0x0][_0x4aa4cd(0x4a3)]('/')),_0x51e5ba='';DMS_Link[_0x2249a5(0x3cc)](_0x2249a5(0x1ea))==!![]||DMS_Link[_0x2249a5(0x3cc)](_0x2249a5(0x6a4))==!![]?DMS_Link[_0x2249a5(0x3cc)](_0x2249a5(0x1ea))==!![]?_0x51e5ba=_0x2249a5(0x1ea):_0x51e5ba='DepartmentalDMS':Documentname[_0x2249a5(0x189)]('/')!=-0x1?_0x51e5ba=Documentname[_0x2249a5(0x288)]('/')[0x0]:_0x51e5ba=Documentname;var _0xc86d40=$(_0x2249a5(0x567))[_0x2249a5(0x340)]();_0xc86d40==_0x2249a5(0x277)&&(_0xc86d40=_0x2249a5(0x1f3));var _0x56f654=_0x398ae2+'/'+$(_0x2249a5(0x537))['val']()[_0x2249a5(0x6ee)]()+_0xc86d40;$[_0x4aa4cd(0x186)](getTargetIDByUrl(_0x798dfd,_0x56f654))[_0x2249a5(0x577)](function(_0x2a32b1){AddFileProp(_0x51e5ba,_0x2a32b1,_0x798dfd,_0x56f654);});}function _0x2a1ad9(_0x25462b,_0x4406c1){var _0x682472=_0x158a67,_0x3492eb=_0x1776fe;console[_0x3492eb(0x38d)](_0x4406c1['get_message']()),alert(_0x3492eb(0x230)+_0x4406c1[_0x3492eb(0x35d)]()),_0x86864b[_0x3492eb(0x2f3)](_0x682472(0x670)+_0x4406c1[_0x3492eb(0x35d)]()),waitingDialog[_0x3492eb(0x3f3)]();}}function CreateOnlineFile(){var _0x164c8c=a90_0x13126d,_0x210fff=_0x4ce28e,_0xc63026=$(_0x210fff(0x567))[_0x210fff(0x340)]();_0xc63026==_0x210fff(0x277)&&(_0xc63026=_0x210fff(0x1f3));var _0x4517c6=$(_0x210fff(0x537))[_0x164c8c(0x1ea)]()[_0x210fff(0x6ee)](),_0x54df2c=$(_0x210fff(0x537))[_0x210fff(0x419)]()[_0x210fff(0x6ee)]()+_0xc63026;if(_0x4517c6[_0x210fff(0x6ee)]()=='')return alert(_0x210fff(0x69a)),waitingDialog[_0x210fff(0x3f3)](),![];checkSpecialCharaters(_0x54df2c)==!![]&&(_0x54df2c=_0x54df2c[_0x210fff(0x4e2)](/[&\/\\#,+()$~%'":*?<>{}]/g,''));if(_0x4517c6['length']>0x1e)return alert(_0x210fff(0x50c)),waitingDialog[_0x210fff(0x3f3)](),![];if(Documentname[Documentname[_0x210fff(0x4a1)]-0x1]=='/')var _0x1dda1d=Documentname;else var _0x1dda1d=Documentname+'/';var _0x30345e=IsNewFileExist(_0x1dda1d,_0x54df2c,SiteUrl);if(_0x30345e==!![])return alert(_0x210fff(0x411)),waitingDialog[_0x164c8c(0x39a)](),![];var _0x2ca634=Documentname;SiteUrl!=_spPageContextInfo[_0x210fff(0x229)]&&$[_0x210fff(0x3a9)](GetFormDigestValue(SiteUrl))[_0x210fff(0x577)](function(_0x50287b){RequestDigest=_0x50287b;});var _0x55198c=DMS_Link[_0x210fff(0x4e2)](window[_0x210fff(0x55f)][_0x210fff(0x1ec)],'');_0x55198c=_0x55198c[_0x210fff(0x4e2)](_0x210fff(0x669),'');var _0x112dac=DMS_Link[_0x210fff(0x288)](_0x164c8c(0x664))[0x0],_0x12dd7d=_0x112dac;_0x112dac[_0x210fff(0x3cc)](_0x210fff(0x33f))==!![]&&(_0x112dac=_0x112dac[_0x210fff(0x4e2)](_0x210fff(0x33f),_0x210fff(0x2f4)));var _0x2489b3=_spPageContextInfo[_0x210fff(0x229)]+_0x210fff(0x3c0)+$(_0x210fff(0x567))[_0x210fff(0x340)](),_0x5ae8d7=_0x55198c[_0x210fff(0x288)]('/');_0x2ca634=_0x55198c[_0x210fff(0x4e2)](_0x5ae8d7[_0x210fff(0x3ee)](-0x1),'');var _0x2ca634=_0x2ca634+Documentname;if(SiteUrl[_0x210fff(0x3cc)](_spPageContextInfo[_0x210fff(0x229)])==!![])createNewDocument(_0x54df2c,_0x55198c,0x3,_0x2489b3,_0x2ca634);else{if(_0x2ca634[_0x210fff(0x674)](/\bDocuments\b/)>=0x0)_0x2ca634=_0x2ca634[_0x164c8c(0x3ea)](_0x164c8c(0x3cb),_0x210fff(0x2f4));else _0x2ca634[_0x210fff(0x674)](/\bShared%20Documents\b/)>=0x0&&(_0x2ca634=_0x2ca634[_0x210fff(0x4e2)](_0x210fff(0x33f),'Shared\x20Documents'));var _0x322e10=SiteUrl+'/'+_0x164c8c(0x31f)+_0x2ca634+_0x164c8c(0x614)+_0x54df2c+_0x210fff(0x1ef);SiteUrl!=_spPageContextInfo[_0x210fff(0x229)]&&$[_0x210fff(0x3a9)](GetFormDigestValue(SiteUrl))[_0x210fff(0x577)](function(_0x98dcbd){RequestDigest=_0x98dcbd;}),$[_0x210fff(0x42c)]({'url':_0x322e10,'method':_0x210fff(0x1bb),'async':![],'body':'','headers':{'accept':_0x164c8c(0x40a),'content-type':_0x210fff(0x3a2),'X-RequestDigest':RequestDigest},'success':function(_0x1ec4f7){var _0x342202=_0x164c8c,_0x3e716e=_0x210fff,_0x1ac719=DMS_Link[_0x3e716e(0x288)](_0x342202(0x664))[0x0][_0x342202(0x2e4)](0x0,DMS_Link[_0x3e716e(0x288)](_0x3e716e(0x616))[0x0][_0x3e716e(0x594)]('/')),_0x3ff382='';DMS_Link[_0x342202(0x306)](_0x3e716e(0x1ea))==!![]||DMS_Link[_0x3e716e(0x3cc)](_0x342202(0x652))==!![]?DMS_Link[_0x3e716e(0x3cc)](_0x3e716e(0x1ea))==!![]?_0x3ff382=_0x3e716e(0x1ea):_0x3ff382=_0x3e716e(0x6a4):Documentname[_0x342202(0x4dc)]('/')!=-0x1?_0x3ff382=Documentname[_0x3e716e(0x288)]('/')[0x0]:_0x3ff382=Documentname,$[_0x3e716e(0x3a9)](getTargetIDByUrl(_0x1ac719,_0x1ec4f7['d'][_0x3e716e(0x33a)]))['done'](function(_0x273674){var _0x346c08=_0x3e716e;AddFileProp(_0x3ff382,_0x273674,_0x1ac719,_0x1ec4f7['d'][_0x346c08(0x33a)]);});},'eror':function(_0x3fc6a5){waitingDialog['hide'](),alert(JSON['stringify'](_0x3fc6a5));}});}}function AddFileProp(_0x35f2cd,_0xff8372,_0x86a523,_0xc85a3b){var _0x50ca26=a90_0x13126d,_0x2c80b1=_0x4ce28e,_0x4139f9;if(_0x35f2cd['includes'](_0x2c80b1(0x1d1))==!![])var _0x15504c=GetItemTypeForLibraryName(_0x50ca26(0x5e6));else{var _0x11c4bf=_0x35f2cd;_0x11c4bf[_0x50ca26(0x306)]('_')==!![]&&(_0x11c4bf=_0x11c4bf[_0x2c80b1(0x4e2)]('_','_x005f_')),_0x11c4bf[_0x2c80b1(0x3cc)](_0x2c80b1(0x474))==!![]&&(_0x11c4bf=_0x11c4bf[_0x2c80b1(0x4e2)](_0x2c80b1(0x474),_0x2c80b1(0x3bf)));var _0x15504c=GetItemTypeForLibraryName(_0x11c4bf);}_0x4139f9={'__metadata':{'type':_0x15504c},'Title':$(_0x2c80b1(0x578))['val'](),'DocumentNo':$(_0x2c80b1(0x586))[_0x2c80b1(0x419)](),'DocumentType':$(_0x2c80b1(0x3bb))[_0x2c80b1(0x419)](),'DocumentWrittenBy':$(_0x2c80b1(0x634))[_0x2c80b1(0x419)](),'Details':$(_0x2c80b1(0x1b7))['val'](),'SubCategory':$(_0x2c80b1(0x3b1))[_0x2c80b1(0x419)]()},($(_0x2c80b1(0x3b1))[_0x2c80b1(0x419)]()==_0x50ca26(0x241)||$(_0x2c80b1(0x3b1))[_0x2c80b1(0x419)]()==null||$(_0x2c80b1(0x3b1))[_0x2c80b1(0x419)]()==_0x2c80b1(0x6e4))&&delete _0x4139f9[_0x2c80b1(0x54a)],AddFilePropToLib(_0x35f2cd,_0x4139f9,_0xff8372,_0x86a523,_0xc85a3b);}function AddFilePropToLib(_0x955d6f,_0x515a7e,_0x1fc41d,_0x153b8d,_0x3aeb61){var _0x2137c3=a90_0x13126d,_0x1f0f46=_0x4ce28e,_0x3aeb61=_0x3aeb61,_0x58f625=$[_0x1f0f46(0x5a7)]();_0x153b8d!=_spPageContextInfo[_0x2137c3(0x215)]&&$[_0x1f0f46(0x3a9)](GetFormDigestValue(_0x153b8d))[_0x1f0f46(0x577)](function(_0x10b617){RequestDigest=_0x10b617;});var _0x3ac38d=_0x955d6f;(_0x3ac38d==_0x1f0f46(0x33f)||_0x3ac38d==_0x1f0f46(0x2f4))&&(_0x3ac38d=_0x2137c3(0x3cb));var _0x311223=_0x153b8d+_0x2137c3(0x5f8)+_0x3ac38d+_0x1f0f46(0x3c3)+_0x1fc41d+')';return $[_0x1f0f46(0x42c)]({'url':_0x311223,'type':_0x1f0f46(0x1bb),'async':![],'headers':{'accept':_0x1f0f46(0x4b9),'X-RequestDigest':RequestDigest,'content-Type':_0x2137c3(0x3c6),'X-Http-Method':_0x1f0f46(0x525),'If-Match':'*'},'data':JSON[_0x1f0f46(0x1a4)](_0x515a7e),'success':function(_0x3e9493){var _0x3ea111=_0x2137c3,_0x347069=_0x1f0f46;RequestDigest=$(_0x347069(0x57c))[_0x347069(0x419)]();var _0x50eb51=Documentname;(Documentname[_0x347069(0x3cc)](_0x347069(0x320))==!![]||Documentname[_0x347069(0x674)](/\bDocuments\b/)>=0x0)&&(_0x50eb51=_0x3ea111(0x339)),GetMyDocumentsWithFilesFolder(_0x50eb51),$(_0x3ea111(0x246))[_0x3ea111(0x5ce)](_0x347069(0x3f3)),waitingDialog[_0x3ea111(0x39a)](),DisplayFileProperty(SiteUrl,currentSectionType,_0x347069(0x4e7),_0x3aeb61,'NullValue',_0x3aeb61,_0x3ea111(0x4d4),_0x3ea111(0x27c)),_0x58f625[_0x347069(0x321)](!![]);},'error':function(_0x5226bd){var _0x146bb6=_0x2137c3,_0x6a45c1=_0x1f0f46;waitingDialog[_0x6a45c1(0x3f3)](),RequestDigest=$(_0x6a45c1(0x57c))[_0x6a45c1(0x419)]();if(_0x5226bd[_0x146bb6(0x4dd)][_0x6a45c1(0x189)](_0x6a45c1(0x6c9))!=-0x1||_0x5226bd[_0x6a45c1(0x400)][_0x6a45c1(0x189)](_0x6a45c1(0x47e))!=-0x1){var _0x25ad3d=Documentname;Documentname[_0x6a45c1(0x3cc)](_0x6a45c1(0x320))==!![]&&(_0x25ad3d=_0x6a45c1(0x33f)),GetMyDocumentsWithFilesFolder(_0x25ad3d),alert(_0x6a45c1(0x533)),$(_0x6a45c1(0x3d1))[_0x6a45c1(0x341)](_0x146bb6(0x39a));}else{var _0x58b8da='';_0x5226bd[_0x146bb6(0x3f7)][_0x6a45c1(0x38d)][_0x6a45c1(0x57b)][_0x6a45c1(0x447)]==undefined?_0x58b8da=JSON[_0x6a45c1(0x1a4)](_0x5226bd):_0x58b8da=_0x5226bd[_0x6a45c1(0x32f)][_0x6a45c1(0x38d)][_0x6a45c1(0x57b)][_0x6a45c1(0x447)],alert(_0x58b8da);}_0x58f625[_0x146bb6(0x3bf)](_0x5226bd);}}),_0x58f625[_0x1f0f46(0x297)]();}function getItemsWithQuery(_0x1fd64a,_0xeefe39,_0x2ff425){var _0x4bd881=a90_0x13126d,_0x3a8287=_0x4ce28e,_0x5c9583=$[_0x3a8287(0x5a7)](),_0x1bc8e5=_0x2ff425+_0x3a8287(0x206)+_0x1fd64a+_0x3a8287(0x404)+_0xeefe39;return $[_0x4bd881(0x21a)]({'url':_0x1bc8e5,'type':_0x3a8287(0x6c7),'async':![],'headers':{'accept':_0x3a8287(0x4b9)},'success':function(_0x1ca830){var _0x24a777=_0x3a8287;_0x5c9583[_0x24a777(0x321)](_0x1ca830['d'][_0x24a777(0x1e4)]);},'error':function(_0x468318){var _0x4f9721=_0x3a8287;_0x5c9583[_0x4f9721(0x2f3)](_0x468318);}}),_0x5c9583[_0x3a8287(0x297)]();}function ReinitializeArray(_0x4e77e2){var _0x4a68ea=_0x4ce28e,_0x182f1e=[],_0x5175d0=0x0;for(var _0x5270fd=0x0;_0x5270fd<_0x4e77e2[_0x4a68ea(0x4a1)];_0x5270fd++){_0x182f1e[_0x5175d0++]=_0x4e77e2[_0x5270fd];}return _0x182f1e;}function removeLine(_0x5d6d7c,_0x93275a){var _0x280b54=a90_0x13126d,_0xacfa49=_0x4ce28e,_0x230cd8=_0x5d6d7c[_0x280b54(0x5e5)]('_')[0x1];$('#'+_0x5d6d7c)[_0xacfa49(0x290)](),FinalFiles4Upload=FinalFiles4Upload[_0x280b54(0x633)](function(_0x9b194c){var _0x50253d=_0x280b54;return _0x9b194c[_0x50253d(0x23b)]!==_0x93275a;}),FinalFiles4Upload[_0xacfa49(0x4a1)]==0x0&&$(_0xacfa49(0x565))[_0x280b54(0x41c)](''),$(_0xacfa49(0x5ac))[_0xacfa49(0x419)]('');}function removeLineFolder(_0x153f3f,_0x84028){var _0x3baefc=_0x4ce28e;FinalFoldersUpload=[],$(_0x3baefc(0x204))[_0x3baefc(0x678)](''),$(_0x3baefc(0x650))[_0x3baefc(0x419)]('');}function AttachmentValidation(){var _0x331499=a90_0x13126d,_0x4c3620=_0x4ce28e,_0x5deccb=!![];if(currentSectionType!=_0x4c3620(0x3d3))for(var _0x3a642a=0x0;_0x3a642a<arrMandatoryCols[_0x4c3620(0x4a1)];_0x3a642a++){if(_0x4c3620(0x664)==arrMandatoryCols[_0x3a642a]){if($(_0x4c3620(0x5c4))[_0x4c3620(0x47f)](_0x4c3620(0x3da))==![]){if($(_0x331499(0x644))['val']()[_0x4c3620(0x6ee)]()==''){_0x5deccb=![];break;}}}if(_0x4c3620(0x659)==arrMandatoryCols[_0x3a642a]&&$(_0x4c3620(0x6c8))[_0x4c3620(0x419)]()==_0x4c3620(0x6e4)){_0x5deccb=![];break;}if(_0x4c3620(0x1a5)==arrMandatoryCols[_0x3a642a]&&$(_0x4c3620(0x5b3))[_0x4c3620(0x419)]()[_0x4c3620(0x6ee)]()==''){_0x5deccb=![];break;}if(_0x4c3620(0x2f7)==arrMandatoryCols[_0x3a642a]&&$(_0x4c3620(0x5d8))[_0x4c3620(0x419)]()[_0x331499(0x549)]()==''){_0x5deccb=![];break;}if(_0x4c3620(0x509)==arrMandatoryCols[_0x3a642a]&&$(_0x331499(0x1f5))[_0x4c3620(0x419)]()[_0x331499(0x549)]()==''){_0x5deccb=![];break;}}return _0x5deccb;}function checkFileSize(){var _0x3ddcb7=a90_0x13126d,_0x26ce9b=_0x4ce28e;TotalSize=0x0;for(var _0x4dc5b6=0x0;_0x4dc5b6<FinalFiles4Upload[_0x26ce9b(0x4a1)];_0x4dc5b6++){TotalSize+=parseFloat(bytesToMegaBytes(FinalFiles4Upload[_0x4dc5b6][_0x3ddcb7(0x24f)])[_0x26ce9b(0x6ad)](0x2));}return TotalSize>0x12c?![]:!![];}function OpenLargeUpload(){var _0x3a4e36=a90_0x13126d,_0x20b845=_0x4ce28e,_0x1f0492=$(_0x20b845(0x5c8))[_0x20b845(0x314)]();$(_0x20b845(0x504),{'src':DMS_Link[_0x20b845(0x4e2)](_0x3a4e36(0x35e),_0x3a4e36(0x278)),'id':'LargeUploadFile','frameborder':0x0,'scrolling':_0x3a4e36(0x4e7),'width':_0x20b845(0x6d8),'height':_0x20b845(0x4d9)})[_0x20b845(0x318)](_0x1f0492),$(_0x20b845(0x62d))[_0x20b845(0x341)]('show'),setInterval(function(){var _0x4f08b5=_0x3a4e36,_0x1e499f=_0x20b845;$(_0x4f08b5(0x2c9))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x1e499f(0x2e1))[_0x1e499f(0x290)](),$(_0x1e499f(0x1de))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x1e499f(0x6ed))[_0x1e499f(0x290)](),$(_0x1e499f(0x1de))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x4f08b5(0x485))[_0x1e499f(0x290)](),$('#LargeUploadFile')[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x4f08b5(0x3d4))['remove'](),$(_0x4f08b5(0x2c9))[_0x4f08b5(0x3dc)]()[_0x4f08b5(0x5f1)](_0x4f08b5(0x533))[_0x1e499f(0x290)](),$(_0x1e499f(0x1de))['contents']()[_0x1e499f(0x40d)](_0x1e499f(0x1d7))[_0x1e499f(0x290)](),$(_0x4f08b5(0x2c9))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x4f08b5(0x274))[_0x4f08b5(0x4e5)](),currentSectionType==_0x1e499f(0x3d3)&&$(_0x1e499f(0x1de))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x1e499f(0x662))[_0x4f08b5(0x1ea)]('/'+_spPageContextInfo[_0x1e499f(0x3fb)][_0x1e499f(0x1d9)]()),$(_0x1e499f(0x1de))[_0x1e499f(0x5a3)]()[_0x1e499f(0x40d)](_0x1e499f(0x558))[_0x1e499f(0x382)](function(_0x3e8413){var _0xf5874a=0x0;setTimeout(function(){var _0x64e3b3=_0x36bf;_0xf5874a==0x0&&($(_0x64e3b3(0x62d))[_0x64e3b3(0x341)](_0x64e3b3(0x3f3)),onloadGetItem(),_0xf5874a=0x1);},0x7d0);});},0x3e8);}function saveAttachment(){var _0x153fcb=a90_0x13126d,_0x326a28=_0x4ce28e;if($(_0x326a28(0x265))[_0x326a28(0x47f)](_0x326a28(0x3da))==!![]&&$(_0x326a28(0x4c1))['val']()[_0x326a28(0x6ee)]()=='')return alert(_0x153fcb(0x232)),![];if($('#txtUploadFiles')[_0x326a28(0x678)]()[_0x326a28(0x6ee)]()=='')return alert(_0x153fcb(0x34a)),![];else{waitingDialog[_0x326a28(0x6ea)](),FailDueToCheckOut=0x0;for(var _0x379958=0x0;_0x379958<FinalFiles4Upload[_0x326a28(0x4a1)];_0x379958++){var _0x561eec=DMS_Link[_0x326a28(0x288)]('/Forms')[0x0][_0x326a28(0x6e8)](0x0,DMS_Link[_0x326a28(0x288)](_0x326a28(0x616))[0x0][_0x326a28(0x594)]('/'));if(Documentname[Documentname[_0x326a28(0x4a1)]-0x1]=='/')var _0x426e87=Documentname;else var _0x426e87=Documentname+'/';UploadFile(_0x426e87,FinalFiles4Upload[_0x379958],_0x561eec,_0x379958);}FailDueToCheckOut==FinalFiles4Upload[_0x326a28(0x4a1)]&&(waitingDialog[_0x326a28(0x3f3)](),alert(_0x153fcb(0x291)),$(_0x153fcb(0x348))['modal'](_0x326a28(0x3f3)));}}var FailDueToCheckOut=0x0;function UploadFile(_0x239bda,_0x508175,_0x7398cb,_0x46bd36){var _0x4477cc=a90_0x13126d,_0x4454fc=_0x4ce28e,_0x267f59=_0x508175[_0x4477cc(0x23b)],_0xa16529=[];if($(_0x4454fc(0x68f))['is'](_0x4454fc(0x4fa))==!![])IsFileCheckout(_0x239bda,_0x267f59,_0x7398cb,_0x4454fc(0x633))==!![]?FailDueToCheckOut++:(_0xa16529=IsFileExist(_0x239bda,_0x267f59,_0x7398cb),uploadDocuments(_0x239bda,_0x508175,_0x7398cb,_0xa16529,_0x46bd36));else{if($(_0x4477cc(0x4c9))['is'](_0x4454fc(0x4fa))==!![])IsFileCheckout(_0x239bda,_0x267f59,_0x7398cb,_0x4454fc(0x633))==!![]?FailDueToCheckOut++:(_0xa16529=[],uploadDocuments(_0x239bda,_0x508175,_0x7398cb,_0xa16529,_0x46bd36));else{if($(_0x4454fc(0x4bf))['is'](':checked')==!![]){_0xa16529=IsFileExist(_0x239bda,_0x267f59,_0x7398cb);if(_0xa16529[_0x4454fc(0x4a1)]==0x0)uploadDocuments(_0x239bda,_0x508175,_0x7398cb,_0xa16529,_0x46bd36);else{if(FinalFiles4Upload[_0x4454fc(0x4a1)]==_0x46bd36+0x1+FailDueToCheckOut){if($(_0x4477cc(0x64f))[_0x4454fc(0x47f)](_0x4454fc(0x3da))==!![])EmailProperties(_0x7398cb);else{DocUrlCollection=[],FailDueToCheckOut==0x0?alert(_0x4454fc(0x56f)):alert(FailDueToCheckOut+'\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20uploaded.\x0aOther\x20files(s)\x20have\x20been\x20uploaded\x20successfully.'),waitingDialog['hide']();var _0x4fd1d5=Documentname;(Documentname[_0x4454fc(0x3cc)](_0x4454fc(0x320))==!![]||Documentname[_0x4454fc(0x674)](/\bDocuments\b/)>=0x0)&&(_0x4fd1d5=_0x4454fc(0x33f)),GetMyDocumentsWithFilesFolder(_0x4fd1d5);}$(_0x4454fc(0x55c))[_0x4454fc(0x341)](_0x4454fc(0x3f3));}}}else{if($(_0x4454fc(0x265))['is'](_0x4454fc(0x4fa))==!![])IsFileCheckout(_0x239bda,_0x267f59,_0x7398cb,_0x4454fc(0x633))==!![]?FailDueToCheckOut++:(_0xa16529=IsFileExist(_0x239bda,_0x267f59,_0x7398cb),uploadDocuments(_0x239bda,_0x508175,_0x7398cb,_0xa16529,_0x46bd36));else{}}}}}function IsFileCheckout(_0xff3378,_0x4f857e,_0x49b62b,_0x3f5d40){var _0x1bab2d=a90_0x13126d,_0x2c84b9=_0x4ce28e,_0x2a5c18='',_0x232d0e='/'+_0x49b62b[_0x2c84b9(0x65b)](_0x49b62b[_0x2c84b9(0x189)]('/s')+0x1),_0x67d8f4=_0x232d0e+'/'+_0xff3378+_0x4f857e,_0xf818ff=_0x49b62b+_0x1bab2d(0x5d7)+_0x67d8f4+_0x2c84b9(0x196);return $[_0x2c84b9(0x42c)]({'url':_0xf818ff,'type':_0x1bab2d(0x19e),'async':![],'headers':{'Accept':_0x2c84b9(0x4b9)},'success':function(_0x5cb646,_0x2466de,_0x42ed89){var _0x374a92=_0x1bab2d,_0x331850=_0x2c84b9;_0x3f5d40==_0x374a92(0x278)?_0x5cb646['d'][_0x331850(0x377)][_0x331850(0x1d9)]()==_spPageContextInfo[_0x374a92(0x640)][_0x331850(0x1d9)]()?_0x2a5c18=![]:_0x2a5c18=!![]:_0x2a5c18=!![];},'error':function(_0x4576ed,_0x37b299,_0x4b8c8c){_0x2a5c18=![];}}),_0x2a5c18;}function IsFileExist(_0x5dfc21,_0x410742,_0x10de7b){var _0x4926c9=a90_0x13126d,_0x3ed427=_0x4ce28e,_0x21fba9='/'+_0x10de7b[_0x3ed427(0x65b)](_0x10de7b[_0x3ed427(0x189)]('/s')+0x1),_0x4ff47f=_0x21fba9+'/'+_0x5dfc21+_0x410742,_0x1d2ab6=[];return jQuery[_0x4926c9(0x21a)]({'url':_0x10de7b+_0x3ed427(0x3e1)+_0x4ff47f+_0x3ed427(0x624)+_0x3ed427(0x333),'type':_0x3ed427(0x6c7),'async':![],'headers':{'accept':_0x3ed427(0x4b9)},'success':function(_0x133d90){var _0x44c9e5=_0x3ed427;_0x1d2ab6=_0x133d90['d'][_0x44c9e5(0x55e)];},'error':function(_0x345660){var _0x1acaf2=_0x4926c9,_0x547a0f=_0x3ed427;_0x345660[_0x547a0f(0x17f)]==0x194?console[_0x1acaf2(0x41a)](_0x410742+_0x547a0f(0x2db)):waitingDialog[_0x547a0f(0x3f3)]();}}),_0x1d2ab6;}function uploadDocuments(_0x401caa,_0x2ac6e6,_0xd211f9,_0x551867,_0x545abd){var _0x3880d8=_0x4ce28e;url=_0xd211f9+_0x3880d8(0x6cb);var _0x1ab0e1='';$[_0x3880d8(0x42c)]({'url':url,'type':_0x3880d8(0x1bb),'headers':{'Accept':_0x3880d8(0x3a2)},'contentType':_0x3880d8(0x4b9),'success':function(_0x1b37f0){var _0xf2d131=a90_0x41e7,_0x24350f=_0x3880d8,_0x46c6be=_0x1b37f0['d'][_0x24350f(0x584)][_0x24350f(0x48a)],_0x53f03b='';DMS_Link['includes'](_0x24350f(0x1ea))==!![]||DMS_Link[_0x24350f(0x3cc)](_0xf2d131(0x652))==!![]?DMS_Link[_0x24350f(0x3cc)](_0x24350f(0x1ea))==!![]?_0x53f03b=_0x24350f(0x1ea):_0x53f03b=_0x24350f(0x6a4):Documentname[_0x24350f(0x189)]('/')!=-0x1?_0x53f03b=Documentname[_0xf2d131(0x5e5)]('/')[0x0]:_0x53f03b=Documentname;var _0xbfcbd6=new FileReader(),_0x55701a;_0xbfcbd6[_0x24350f(0x295)]=function(_0x5e010d){var _0xeafb53=_0xf2d131,_0x86ff85=_0x24350f;_0x55701a=_0xbfcbd6[_0x86ff85(0x2df)];var _0x416a4a=_spPageContextInfo[_0x86ff85(0x676)]+'/'+_0x53f03b,_0x5e8f06=_0x1ab0e1=_0x2ac6e6[_0x86ff85(0x681)];$(_0x86ff85(0x265))['is'](_0x86ff85(0x4fa))==!![]&&_0x551867[_0x86ff85(0x4a1)]!=0x0&&(_0x5e8f06=_0x2ac6e6[_0x86ff85(0x681)][_0x86ff85(0x288)]('.')[_0x86ff85(0x3ee)](0x0,-0x1)[_0x86ff85(0x3d4)]('.'),_0x5e8f06=$(_0xeafb53(0x649))[_0x86ff85(0x419)]()['trim']()+_0x5e8f06+$(_0x86ff85(0x4c1))[_0xeafb53(0x1ea)]()[_0x86ff85(0x6ee)]()+'.'+_0x2ac6e6[_0x86ff85(0x681)][_0x86ff85(0x65b)](_0x2ac6e6[_0x86ff85(0x681)][_0x86ff85(0x594)]('.')+0x1));if(checkSpecialCharaters(_0x5e8f06)==!![])_0x5e8f06=_0x5e8f06[_0x86ff85(0x4e2)](/[&\/\\#,+()$~%'":*?<>{}]/g,'');else{}_0x401caa[_0x86ff85(0x3cc)]('/Documents/')==!![]?_0x401caa=_0x401caa[_0x86ff85(0x4e2)](_0x86ff85(0x1d1),_0x86ff85(0x2f4)):(CheckLibary==_0x86ff85(0x33f)||CheckLibary=='Shared\x20Documents')&&(_0x401caa[_0xeafb53(0x306)](_0xeafb53(0x597))==![]&&_0x401caa[_0xeafb53(0x306)](_0x86ff85(0x33f))==![]&&(_0x401caa=_0x401caa[_0x86ff85(0x4e2)](_0x86ff85(0x1d1),_0x86ff85(0x2f4)))),_0xd211f9!=_spPageContextInfo[_0xeafb53(0x215)]&&$[_0x86ff85(0x3a9)](GetFormDigestValue(_0xd211f9))[_0x86ff85(0x577)](function(_0x3dc6db){RequestDigest=_0x3dc6db;}),url=_0xd211f9+_0x86ff85(0x39e)+_0x401caa+_0x86ff85(0x4b8)+_0x5e8f06+_0x86ff85(0x4a8)+_0x416a4a+_0x86ff85(0x573);try{$[_0x86ff85(0x42c)]({'url':url,'type':'POST','data':_0x55701a,'headers':{'Accept':_0x86ff85(0x3a2),'X-RequestDigest':RequestDigest},'contentType':_0x86ff85(0x4b9),'processData':![],'success':function(_0x5c2c95){var _0x4c38b5=_0x86ff85;RequestDigest=$(_0x4c38b5(0x57c))[_0x4c38b5(0x419)]();var _0x32fa05=_0x5c2c95['d'][_0x4c38b5(0x5c2)],_0xb4e7f3=_0x5c2c95['d'][_0x4c38b5(0x33a)],_0x75a692='';_0x75a692=_0x5c2c95['d'][_0x4c38b5(0x55e)][_0x4c38b5(0x19f)],(_0x75a692==null||_0x75a692=='')&&(_0x75a692=encodeURI(_0x5c2c95['d'][_0x4c38b5(0x33a)])),_0x5c2c95['d'][_0x4c38b5(0x5c2)][_0x4c38b5(0x3cc)](_0x4c38b5(0x46d))==![]&&(_0x75a692=_0x75a692[_0x4c38b5(0x4e2)](_0x4c38b5(0x648),_0x4c38b5(0x48d))),DocUrlCollection[_0x4c38b5(0x4f4)]({'FileUrl':_0x75a692,'FileName':_0x5c2c95['d'][_0x4c38b5(0x5c2)]}),$[_0x4c38b5(0x3a9)](getTargetIDByUrl(_0xd211f9,_0x5c2c95['d'][_0x4c38b5(0x33a)]))[_0x4c38b5(0x577)](function(_0x17a9a0){updateDocumentProperties(_0x53f03b,_0x17a9a0,_0xd211f9,_0x551867,_0x545abd,_0x1ab0e1);});},'error':function(_0x43d8cf){var _0x53cb30=_0xeafb53,_0x3cc3ad=_0x86ff85;return waitingDialog[_0x3cc3ad(0x3f3)](),RequestDigest=$(_0x53cb30(0x30d))[_0x3cc3ad(0x419)](),_0x43d8cf[_0x53cb30(0x4dd)][_0x3cc3ad(0x3cc)](_0x3cc3ad(0x1b3))==!![]?(alert(_0x3cc3ad(0x1a3)+_0x2ac6e6[_0x3cc3ad(0x681)]+'.'),![]):(alert(_0x43d8cf[_0x3cc3ad(0x400)]),![]);}})[_0xeafb53(0x218)](function(_0xfaf8fe){var _0x2d9b41=_0xeafb53,_0x1751fb=_0x86ff85;return waitingDialog[_0x1751fb(0x3f3)](),RequestDigest=$(_0x1751fb(0x57c))[_0x1751fb(0x419)](),_0xfaf8fe[_0x1751fb(0x32f)][_0x2d9b41(0x335)][_0x2d9b41(0x4d8)][_0x1751fb(0x447)][_0x1751fb(0x3cc)](_0x2d9b41(0x27d))==!![]?![]:(alert(_0xfaf8fe[_0x1751fb(0x32f)][_0x2d9b41(0x335)][_0x1751fb(0x57b)]['value']),![]);});}catch(_0x43e274){return waitingDialog[_0xeafb53(0x39a)](),RequestDigest=$(_0x86ff85(0x57c))[_0x86ff85(0x419)](),console[_0x86ff85(0x403)](_0x43e274),![];}},_0xbfcbd6[_0x24350f(0x60f)](_0x2ac6e6);},'error':function(_0x3d29fc){var _0x4100ac=a90_0x41e7,_0x570f58=_0x3880d8;return waitingDialog[_0x570f58(0x3f3)](),RequestDigest=$(_0x570f58(0x57c))[_0x570f58(0x419)](),_0x3d29fc[_0x4100ac(0x4dd)][_0x570f58(0x3cc)](_0x570f58(0x1b3))==!![]?(alert(_0x4100ac(0x529)+_0x2ac6e6[_0x4100ac(0x23b)]+'.'),![]):(alert(_0x3d29fc[_0x570f58(0x400)]),![]);}});}function getTargetIDByUrl(_0x10739d,_0x2c0d3e){var _0x5c101e=a90_0x13126d,_0x168f90=_0x4ce28e;return $[_0x168f90(0x42c)]({'url':_0x10739d+_0x168f90(0x66b)+_0x2c0d3e+_0x168f90(0x31b),'type':_0x5c101e(0x19e),'async':![],'headers':{'accept':_0x168f90(0x4b9)},'success':function(_0x2d865d){var _0x559e94=_0x168f90;commonserverRedirectedEmbedUri=_0x2d865d['d'][_0x559e94(0x19f)],(commonserverRedirectedEmbedUri==null||commonserverRedirectedEmbedUri=='')&&(commonserverRedirectedEmbedUri=''),targetRoleDefinitionId=_0x2d865d['d']['Id'];},'error':function(_0x45e2f){var _0xdbb6e2=_0x168f90;waitingDialog[_0xdbb6e2(0x3f3)](),alert(JSON[_0xdbb6e2(0x1a4)](error));}}),targetRoleDefinitionId;}function updateDocumentProperties(_0x4e7f14,_0x52e6fb,_0xeb85a0,_0x593e82,_0x5a7037,_0x1fc06a){var _0x58579f=a90_0x13126d,_0x396bb1=_0x4ce28e,_0x27cc0b=![],_0x201ccd,_0x3d989a=$(_0x396bb1(0x3eb))[_0x396bb1(0x419)]();$(_0x396bb1(0x5c4))['is'](_0x396bb1(0x4fa))==!![]&&$(_0x396bb1(0x68f))['is'](_0x396bb1(0x4fa))==![]?(_0x1fc06a=_0x1fc06a[_0x396bb1(0x288)]('.')[_0x396bb1(0x3ee)](0x0,-0x1)['join']('.'),_0x3d989a=$(_0x396bb1(0x58f))[_0x396bb1(0x419)]()[_0x396bb1(0x6ee)]()+_0x1fc06a+$(_0x396bb1(0x367))[_0x396bb1(0x419)]()[_0x396bb1(0x6ee)]()):_0x593e82[_0x396bb1(0x4a1)]==0x0&&$(_0x396bb1(0x5c4))['is'](_0x58579f(0x1bf))==!![]&&(_0x1fc06a=_0x1fc06a[_0x58579f(0x5e5)]('.')[_0x396bb1(0x3ee)](0x0,-0x1)[_0x58579f(0x33d)]('.'),_0x3d989a=$(_0x396bb1(0x58f))[_0x58579f(0x1ea)]()[_0x58579f(0x549)]()+_0x1fc06a+$(_0x396bb1(0x367))[_0x396bb1(0x419)]()[_0x58579f(0x549)]());if(_0x4e7f14[_0x58579f(0x306)](_0x58579f(0x3cb))==!![])var _0x5437af=GetItemTypeForLibraryName(_0x396bb1(0x25d));else{var _0x23ecc6=_0x4e7f14;_0x23ecc6[_0x58579f(0x306)]('_')==!![]&&(_0x23ecc6=_0x23ecc6[_0x396bb1(0x4e2)]('_',_0x396bb1(0x3af))),_0x23ecc6[_0x396bb1(0x3cc)](_0x396bb1(0x474))==!![]&&(_0x23ecc6=_0x23ecc6[_0x396bb1(0x4e2)](_0x396bb1(0x474),'_x0020_'));var _0x5437af=GetItemTypeForLibraryName(_0x23ecc6);}$(_0x396bb1(0x265))['is'](_0x396bb1(0x4fa))==!![]||$(_0x58579f(0x4c9))['is'](_0x396bb1(0x4fa))==!![]?(_0x27cc0b=![],_0x201ccd={'__metadata':{'type':_0x5437af},'Title':_0x3d989a,'DocumentNo':$(_0x396bb1(0x5b3))[_0x396bb1(0x419)](),'DocumentType':$('#ddlFileType')[_0x396bb1(0x419)](),'DocumentWrittenBy':$(_0x396bb1(0x5d8))[_0x396bb1(0x419)](),'Details':$(_0x58579f(0x1f5))[_0x396bb1(0x419)](),'SubCategory':$(_0x396bb1(0x628))[_0x396bb1(0x419)]()},($(_0x396bb1(0x628))[_0x396bb1(0x419)]()==_0x58579f(0x241)||$(_0x396bb1(0x628))[_0x58579f(0x1ea)]()==null||$(_0x396bb1(0x628))[_0x58579f(0x1ea)]()==_0x396bb1(0x6e4))&&delete _0x201ccd[_0x396bb1(0x54a)]):$(_0x396bb1(0x68f))['is'](_0x396bb1(0x4fa))==!![]&&_0x593e82[_0x58579f(0x1d9)]!=0x0?(_0x27cc0b=!![],_0x201ccd={'__metadata':{'type':_0x5437af},'Title':_0x593e82[_0x396bb1(0x664)]?_0x593e82[_0x396bb1(0x664)]:'','DocumentNo':_0x593e82[_0x396bb1(0x3ff)]?_0x593e82[_0x396bb1(0x3ff)]:'','DocumentType':_0x593e82[_0x58579f(0x5fc)]?_0x593e82[_0x396bb1(0x659)]:'','DocumentWrittenBy':_0x593e82[_0x58579f(0x298)]?_0x593e82['DocumentWrittenBy']:'','Details':_0x593e82[_0x396bb1(0x509)]?_0x593e82['Details']:'','SubCategory':_0x593e82[_0x396bb1(0x54a)]?_0x593e82[_0x396bb1(0x54a)]:'','AccessLevel':_0x593e82[_0x396bb1(0x5c7)]?_0x593e82[_0x396bb1(0x5c7)]:'','SecurityLevel':_0x593e82[_0x396bb1(0x4ad)]?_0x593e82[_0x58579f(0x520)]:'','PermissionLevel':_0x593e82[_0x58579f(0x5da)]?_0x593e82[_0x396bb1(0x52b)]:'','PermissionLevelId':_0x593e82[_0x396bb1(0x47a)]?_0x593e82[_0x396bb1(0x47a)]:'','Approval':_0x593e82[_0x396bb1(0x4e8)]},_0x593e82[_0x58579f(0x25d)]!=null&&(_0x201ccd[_0x58579f(0x25d)]={'results':_0x593e82[_0x396bb1(0x55d)]['results']}),(_0x593e82[_0x58579f(0x1c3)]==_0x58579f(0x241)||_0x593e82[_0x396bb1(0x54a)]==null||_0x593e82[_0x396bb1(0x54a)]==_0x396bb1(0x6e4)||_0x593e82[_0x396bb1(0x54a)]=='')&&delete _0x201ccd[_0x396bb1(0x54a)]):(_0x27cc0b=![],_0x201ccd={'__metadata':{'type':_0x5437af},'Title':_0x3d989a,'DocumentNo':$(_0x58579f(0x553))[_0x58579f(0x1ea)](),'DocumentType':$(_0x396bb1(0x6c8))[_0x396bb1(0x419)](),'DocumentWrittenBy':$(_0x396bb1(0x5d8))[_0x396bb1(0x419)](),'Details':$(_0x396bb1(0x47c))[_0x396bb1(0x419)](),'SubCategory':$(_0x396bb1(0x628))[_0x396bb1(0x419)]()},($(_0x58579f(0x315))[_0x396bb1(0x419)]()=='--select--'||$(_0x396bb1(0x628))[_0x396bb1(0x419)]()==null||$('#FileSubType')[_0x396bb1(0x419)]()==_0x396bb1(0x6e4))&&delete _0x201ccd['SubCategory']),updateFileWithID(_0x4e7f14,_0x201ccd,_0x52e6fb,_0xeb85a0,_0x27cc0b,_0x5a7037);}function updateFileWithID(_0x34bf72,_0x430f4c,_0x471fc3,_0x3bf6e1,_0x356adb,_0x272819){var _0x117947=a90_0x13126d,_0x32fd3a=_0x4ce28e,_0x273468=$[_0x32fd3a(0x5a7)]();_0x3bf6e1!=_spPageContextInfo['webAbsoluteUrl']&&$[_0x117947(0x186)](GetFormDigestValue(_0x3bf6e1))['done'](function(_0xdb078){RequestDigest=_0xdb078;});var _0x20d5e9=_0x34bf72;(_0x20d5e9==_0x32fd3a(0x33f)||_0x20d5e9==_0x32fd3a(0x2f4))&&(_0x20d5e9=_0x32fd3a(0x1d1));var _0x4d5a82=_0x3bf6e1+_0x32fd3a(0x1b4)+_0x20d5e9+_0x117947(0x5f7)+_0x471fc3+')';return $['ajax']({'url':_0x4d5a82,'type':_0x32fd3a(0x1bb),'async':![],'headers':{'accept':_0x32fd3a(0x4b9),'X-RequestDigest':RequestDigest,'content-Type':_0x32fd3a(0x4b9),'X-Http-Method':_0x32fd3a(0x525),'If-Match':'*'},'data':JSON[_0x32fd3a(0x1a4)](_0x430f4c),'success':function(_0x18a6f3){var _0x2e6f10=_0x117947,_0x10a0dc=_0x32fd3a;RequestDigest=$(_0x10a0dc(0x57c))[_0x10a0dc(0x419)]();if($('#chkKeepExist')['is'](_0x10a0dc(0x4fa))==![]){var _0x573a41=_0x10a0dc(0x4d4)+_0x471fc3+'\x27\x20';$[_0x10a0dc(0x3a9)](getItemsWithQuery(_0x10a0dc(0x2b7),_0x573a41,_spPageContextInfo[_0x10a0dc(0x229)]))[_0x2e6f10(0x21b)](function(_0x1ba9a1){var _0xf737e0=_0x10a0dc;if(_0x1ba9a1[_0xf737e0(0x4a1)]>0x0)for(var _0x5e4aea=0x0;_0x5e4aea<_0x1ba9a1['length'];_0x5e4aea++){DeleteSharedLinks(_0x1ba9a1[_0x5e4aea]['ID']);}});}if(FinalFiles4Upload[_0x10a0dc(0x4a1)]==_0x272819+0x1+FailDueToCheckOut){if($(_0x2e6f10(0x64f))[_0x10a0dc(0x47f)](_0x2e6f10(0x495))==!![])EmailProperties(_0x3bf6e1);else{DocUrlCollection=[],FailDueToCheckOut==0x0?alert(_0x2e6f10(0x1a7)):alert(FailDueToCheckOut+_0x2e6f10(0x3d0)),waitingDialog[_0x10a0dc(0x3f3)]();var _0xc76293=Documentname;(Documentname[_0x10a0dc(0x3cc)](_0x10a0dc(0x320))==!![]||Documentname[_0x10a0dc(0x674)](/\bDocuments\b/)>=0x0)&&(_0xc76293=_0x10a0dc(0x33f)),GetMyDocumentsWithFilesFolder(_0xc76293);}$(_0x10a0dc(0x55c))[_0x10a0dc(0x341)](_0x10a0dc(0x3f3));}_0x273468[_0x10a0dc(0x321)](!![]);},'error':function(_0x1ac3f7){var _0x957974=_0x117947,_0x3b9f0b=_0x32fd3a;waitingDialog[_0x957974(0x39a)](),RequestDigest=$(_0x3b9f0b(0x57c))['val']();if(_0x1ac3f7[_0x3b9f0b(0x400)][_0x3b9f0b(0x189)](_0x3b9f0b(0x6c9))!=-0x1||_0x1ac3f7[_0x3b9f0b(0x400)]['indexOf'](_0x3b9f0b(0x47e))!=-0x1){var _0x2002ac=Documentname;Documentname[_0x3b9f0b(0x3cc)](_0x957974(0x3a7))==!![]&&(_0x2002ac=_0x3b9f0b(0x33f)),GetMyDocumentsWithFilesFolder(_0x2002ac),alert(_0x957974(0x185)),$(_0x957974(0x348))[_0x3b9f0b(0x341)](_0x3b9f0b(0x3f3)),$(_0x3b9f0b(0x565))[_0x3b9f0b(0x314)](),$(_0x3b9f0b(0x565))[_0x3b9f0b(0x3f3)](),FinalFiles4Upload=[];}else{var _0x7bff0b='';_0x1ac3f7[_0x3b9f0b(0x32f)][_0x957974(0x335)][_0x3b9f0b(0x57b)][_0x3b9f0b(0x447)]==undefined?_0x7bff0b=JSON[_0x3b9f0b(0x1a4)](_0x1ac3f7):_0x7bff0b=_0x1ac3f7[_0x3b9f0b(0x32f)][_0x3b9f0b(0x38d)][_0x3b9f0b(0x57b)][_0x3b9f0b(0x447)],alert(_0x7bff0b);}_0x273468[_0x3b9f0b(0x2f3)](_0x1ac3f7);}}),_0x273468[_0x117947(0x413)]();}function getFromUserEmail(){var _0xcb7e9c=_0x4ce28e,_0x55c431=[],_0x81d4ea=_0xcb7e9c(0x3f6)+currentClientName+'\x27\x20';return $[_0xcb7e9c(0x3a9)](getItemsWithQuery(_0xcb7e9c(0x568),_0x81d4ea,_spPageContextInfo[_0xcb7e9c(0x229)]))[_0xcb7e9c(0x577)](function(_0x34d1df){var _0x4d8752=a90_0x41e7,_0x4dca08=_0xcb7e9c;_0x34d1df[0x0][_0x4dca08(0x3a5)][_0x4d8752(0x55a)]!=undefined&&_0x34d1df[0x0]['GroupName'][_0x4d8752(0x55a)]!=null&&_0x55c431[_0x4d8752(0x5ae)](_0x34d1df[0x0][_0x4dca08(0x3a5)][_0x4dca08(0x664)]),_0x34d1df[0x0][_0x4d8752(0x26d)][_0x4dca08(0x4c0)]!=undefined&&_0x34d1df[0x0][_0x4dca08(0x440)][_0x4dca08(0x4c0)]!=null&&_0x55c431[_0x4d8752(0x5ae)](_0x34d1df[0x0][_0x4dca08(0x440)][_0x4dca08(0x4c0)]),_0x34d1df[0x0][_0x4dca08(0x61e)][_0x4dca08(0x4c0)]!=undefined&&_0x34d1df[0x0][_0x4dca08(0x61e)][_0x4dca08(0x4c0)]!=null&&_0x55c431[_0x4dca08(0x4f4)](_0x34d1df[0x0][_0x4dca08(0x61e)][_0x4dca08(0x4c0)]);if(_0x34d1df[0x0][_0x4dca08(0x481)][_0x4dca08(0x1e4)]!=undefined&&_0x34d1df[0x0][_0x4dca08(0x481)][_0x4dca08(0x1e4)]!=null)for(var _0x5e6c49=0x0;_0x5e6c49<_0x34d1df[0x0][_0x4d8752(0x2ad)][_0x4dca08(0x1e4)][_0x4dca08(0x4a1)];_0x5e6c49++){_0x55c431[_0x4d8752(0x5ae)](_0x34d1df[0x0][_0x4dca08(0x481)][_0x4dca08(0x1e4)][_0x5e6c49][_0x4dca08(0x4c0)]);}}),_0x55c431;}function FolderUploadMail(){var _0x21f01e=a90_0x13126d,_0x2e002e=_0x4ce28e,_0x4ee35d='',_0x1f0da0='',_0x27dcc5=[];$(_0x2e002e(0x6c8))[_0x2e002e(0x419)]()!=_0x2e002e(0x6e4)&&(_0x1f0da0=$(_0x2e002e(0x6c8))[_0x21f01e(0x1ea)]());var _0x8c6753='';_0x8c6753=_0x2e002e(0x292)+currentClientName,_0x4ee35d=_0x2e002e(0x369);var _0x27dcc5=getFromUserEmail();for(var _0x2f3f56=0x0;_0x2f3f56<DocUrlCollection[_0x2e002e(0x4a1)];_0x2f3f56++){var _0x684eb=window[_0x2e002e(0x55f)][_0x2e002e(0x1ec)]+DocUrlCollection[_0x2f3f56][_0x2e002e(0x2ad)];_0x4ee35d=_0x4ee35d+_0x2e002e(0x1f2)+_0x8c6753+_0x2e002e(0x467)+_0x2e002e(0x37d)+DocUrlCollection[_0x2f3f56][_0x2e002e(0x4b4)]+'</div>'+_0x2e002e(0x576)+$(_0x2e002e(0x3eb))[_0x2e002e(0x419)]()+_0x2e002e(0x441)+_0x2e002e(0x280)+$(_0x2e002e(0x5b3))[_0x2e002e(0x419)]()+_0x2e002e(0x441)+_0x2e002e(0x65c)+_0x1f0da0+_0x2e002e(0x441)+_0x2e002e(0x205)+$('#UploadFileComment')[_0x2e002e(0x419)]()+_0x2e002e(0x467)+_0x21f01e(0x486)+_spPageContextInfo[_0x2e002e(0x4ed)]+_0x2e002e(0x441)+_0x2e002e(0x53f)+moment(new Date())[_0x2e002e(0x54f)](_0x2e002e(0x5fb))+_0x21f01e(0x36b)+_0x2e002e(0x694)+_0x684eb+_0x2e002e(0x4b0)+_0x21f01e(0x4f2);}_0x4ee35d+=_0x2e002e(0x507);for(var _0x4459a0=0x0;_0x4459a0<LabelDefaultLangauge[_0x2e002e(0x4a1)];_0x4459a0++){_0x4ee35d[_0x21f01e(0x306)](LabelDefaultLangauge[_0x4459a0][_0x2e002e(0x3b9)])==!![]&&(_0x4ee35d=_0x4ee35d[_0x2e002e(0x3e8)](LabelDefaultLangauge[_0x4459a0][_0x2e002e(0x3b9)],LabelDefaultLangauge[_0x4459a0][_0x2e002e(0x41e)]));}var _0x143d46;_0x143d46={'properties':{'__metadata':{'type':_0x2e002e(0x3e4)},'From':_spPageContextInfo[_0x2e002e(0x3fb)],'To':{'results':_0x27dcc5},'Body':_0x4ee35d,'Subject':_0x2e002e(0x2c0)}};var _0x1411c8=_spPageContextInfo[_0x2e002e(0x676)]+_0x2e002e(0x393);$[_0x2e002e(0x42c)]({'contentType':_0x2e002e(0x3ed),'url':_0x1411c8,'type':_0x21f01e(0x2f3),'data':JSON[_0x2e002e(0x1a4)](_0x143d46),'headers':{'Accept':_0x21f01e(0x3c6),'content-type':_0x2e002e(0x4b9),'X-RequestDigest':$(_0x2e002e(0x57c))[_0x2e002e(0x419)]()},'success':function(_0x52c7ea){DocUrlCollection=[];},'error':function(_0x4c9764,_0x42eb68,_0x8708e){var _0x1751f0=_0x21f01e,_0x2784e3=_0x2e002e;waitingDialog[_0x2784e3(0x3f3)](),DocUrlCollection=[];var _0x9b13f9=JSON[_0x2784e3(0x6f1)](_0x4c9764[_0x2784e3(0x400)]),_0x47f6b6=_0x4c9764[_0x2784e3(0x17f)],_0x32a388=_0x9b13f9[_0x2784e3(0x38d)][_0x1751f0(0x4d8)][_0x2784e3(0x447)];}});}function EmailProperties(_0x56106f){var _0x395d1c=a90_0x13126d,_0x273ed8=_0x4ce28e,_0x42a1b5='',_0x230e6d='',_0x1e6901=[];$('#ddlFileType')[_0x273ed8(0x419)]()!=_0x273ed8(0x6e4)&&(_0x230e6d=$(_0x395d1c(0x457))[_0x273ed8(0x419)]());var _0x2899c8='';if(currentSectionType==_0x273ed8(0x3d3))_0x2899c8=_0x273ed8(0x49a);else{if(currentSectionType==_0x395d1c(0x56e))_0x2899c8=_0x273ed8(0x608)+$(_0x395d1c(0x4ee))[_0x273ed8(0x340)]();else{if(currentSectionType==_0x395d1c(0x1ad))_0x2899c8=_0x395d1c(0x55b)+$(_0x273ed8(0x548))[_0x395d1c(0x1ca)]();else{if(currentSectionType==_0x273ed8(0x3e2))_0x2899c8=_0x395d1c(0x32a)+$(_0x273ed8(0x548))[_0x273ed8(0x340)]();else currentSectionType==_0x395d1c(0x42d)&&(_0x2899c8=_0x273ed8(0x292)+$(_0x273ed8(0x548))[_0x273ed8(0x340)]());}}}_0x42a1b5=_0x395d1c(0x49f);var _0x1e6901=getFromUserEmail();for(var _0x20770b=0x0;_0x20770b<DocUrlCollection[_0x273ed8(0x4a1)];_0x20770b++){var _0x4a701d='',_0x1c0383=DocUrlCollection[_0x20770b][_0x273ed8(0x2ad)];if(DocUrlCollection[_0x20770b][_0x273ed8(0x4b4)][_0x273ed8(0x189)]('xml')!=-0x1||DocUrlCollection[_0x20770b][_0x273ed8(0x4b4)][_0x273ed8(0x189)](_0x273ed8(0x319))!=-0x1||DocUrlCollection[_0x20770b][_0x395d1c(0x3ed)][_0x273ed8(0x189)](_0x273ed8(0x4e6))!=-0x1||DocUrlCollection[_0x20770b][_0x273ed8(0x4b4)]['indexOf'](_0x273ed8(0x2ae))!=-0x1||DocUrlCollection[_0x20770b][_0x273ed8(0x4b4)][_0x395d1c(0x4dc)](_0x395d1c(0x214))!=-0x1){if(_0x1c0383[_0x395d1c(0x306)](_0x395d1c(0x5d5))==!![]||_0x1c0383[_0x395d1c(0x306)](_0x273ed8(0x6a4))==!![])_0x1c0383[_0x273ed8(0x3cc)](_0x273ed8(0x1ea))==!![]?_0x4a701d=_0x56106f+'/DocumentManagementSystem/Forms/AllItems.aspx?id='+encodeURIComponent(_0x1c0383)+_0x395d1c(0x59d)+encodeURIComponent(_0x1c0383[_0x273ed8(0x6e8)](0x0,_0x1c0383[_0x395d1c(0x4a3)]('/')+0x0)):_0x4a701d=_0x56106f+_0x273ed8(0x6ae)+encodeURIComponent(_0x1c0383)+_0x273ed8(0x1a7)+encodeURIComponent(_0x1c0383[_0x273ed8(0x6e8)](0x0,_0x1c0383[_0x273ed8(0x594)]('/')+0x0));else{var _0x188a37=window[_0x273ed8(0x55f)][_0x273ed8(0x1ec)]+_0x1c0383[_0x273ed8(0x6e8)](0x0,_0x1c0383[_0x273ed8(0x594)]('/')+0x0);_0x4a701d=_0x188a37+_0x273ed8(0x302)+encodeURIComponent(_0x1c0383)+_0x273ed8(0x1a7)+encodeURIComponent(_0x1c0383[_0x273ed8(0x6e8)](0x0,_0x1c0383[_0x273ed8(0x594)]('/')+0x0));}}else _0x4a701d=encodeURI(DocUrlCollection[_0x20770b][_0x273ed8(0x2ad)]);_0x42a1b5=_0x42a1b5+_0x273ed8(0x1f2)+_0x2899c8+_0x273ed8(0x467)+_0x273ed8(0x2cb)+DocUrlCollection[_0x20770b][_0x273ed8(0x4b4)]+_0x395d1c(0x579)+_0x273ed8(0x576)+$(_0x273ed8(0x3eb))[_0x273ed8(0x419)]()+'</div>'+_0x273ed8(0x280)+$(_0x273ed8(0x5b3))[_0x273ed8(0x419)]()+'</div>'+_0x273ed8(0x65c)+_0x230e6d+_0x273ed8(0x441)+_0x273ed8(0x205)+$(_0x273ed8(0x47c))[_0x273ed8(0x419)]()+_0x273ed8(0x467)+_0x395d1c(0x486)+_spPageContextInfo[_0x273ed8(0x4ed)]+_0x273ed8(0x441)+_0x395d1c(0x2e5)+moment(new Date())[_0x273ed8(0x54f)](_0x273ed8(0x5fb))+_0x273ed8(0x550)+_0x273ed8(0x694)+_0x4a701d+_0x273ed8(0x208)+_0x395d1c(0x4f2);}_0x42a1b5+=_0x395d1c(0x456);for(var _0xae6681=0x0;_0xae6681<LabelDefaultLangauge[_0x273ed8(0x4a1)];_0xae6681++){_0x42a1b5[_0x273ed8(0x3cc)](LabelDefaultLangauge[_0xae6681]['Key'])==!![]&&(_0x42a1b5=_0x42a1b5[_0x273ed8(0x3e8)](LabelDefaultLangauge[_0xae6681][_0x395d1c(0x5b7)],LabelDefaultLangauge[_0xae6681][_0x273ed8(0x41e)]));}var _0x445fbc;_0x445fbc={'properties':{'__metadata':{'type':_0x273ed8(0x3e4)},'From':_spPageContextInfo[_0x273ed8(0x3fb)],'To':{'results':_0x1e6901},'Body':_0x42a1b5,'Subject':_0x273ed8(0x46b)}};var _0x130524=_spPageContextInfo[_0x273ed8(0x676)]+_0x273ed8(0x393);$[_0x273ed8(0x42c)]({'contentType':_0x395d1c(0x2e3),'url':_0x130524,'type':_0x273ed8(0x1bb),'data':JSON[_0x395d1c(0x2da)](_0x445fbc),'headers':{'Accept':_0x273ed8(0x4b9),'content-type':_0x273ed8(0x4b9),'X-RequestDigest':$(_0x273ed8(0x57c))[_0x273ed8(0x419)]()},'success':function(_0x2e45fb){var _0x147e26=_0x395d1c,_0x43d6e8=_0x273ed8;DocUrlCollection=[],FailDueToCheckOut==0x0?alert(_0x147e26(0x1a7)):alert(FailDueToCheckOut+_0x147e26(0x3d0)),waitingDialog[_0x43d6e8(0x3f3)]();var _0x265299=Documentname;(Documentname[_0x43d6e8(0x3cc)](_0x43d6e8(0x320))==!![]||Documentname[_0x43d6e8(0x674)](/\bDocuments\b/)>=0x0)&&(_0x265299=_0x43d6e8(0x33f)),GetMyDocumentsWithFilesFolder(_0x265299);},'error':function(_0x1e4145,_0x42d423,_0x2561d4){var _0xf3e3df=_0x395d1c,_0x118d7a=_0x273ed8;FailDueToCheckOut==0x0?alert(_0x118d7a(0x56f)):alert(FailDueToCheckOut+_0xf3e3df(0x3d0)),waitingDialog[_0x118d7a(0x3f3)]();var _0xcbee4e=Documentname;(Documentname[_0x118d7a(0x3cc)](_0x118d7a(0x320))==!![]||Documentname[_0x118d7a(0x674)](/\bDocuments\b/)>=0x0)&&(_0xcbee4e='Shared%20Documents'),(GetMyDocumentsWithFilesFolder(_0xcbee4e),DocUrlCollection=[]);var _0x2d952d=JSON[_0x118d7a(0x6f1)](_0x1e4145[_0x118d7a(0x400)]),_0x4eff5d=_0x1e4145[_0x118d7a(0x17f)],_0xa952db=_0x2d952d[_0x118d7a(0x38d)][_0x118d7a(0x57b)]['value'];}});}function checkSpecialCharaters(_0x537807){var _0x42a619=_0x4ce28e,_0x175f1f=_0x42a619(0x610);for(i=0x0;i<_0x175f1f[_0x42a619(0x4a1)];i++){if(_0x537807[_0x42a619(0x189)](_0x175f1f[i])>-0x1)return!![];}return![];}function uploadFolder(){var _0x5e3f7a=a90_0x13126d,_0x114999=_0x4ce28e,_0x68ee7a='',_0x396f0c=[],_0x4201d4=!![],_0x5eeacb=!![],_0x302e25='';DocUrlCollection=[],DocUrlCollection[_0x114999(0x4f4)]({'FileUrl':'','FileName':$(_0x114999(0x5f3))[_0x114999(0x340)]()[_0x114999(0x6ee)]()}),FinalFiles4Upload=[],Documentname[_0x114999(0x6e8)](Documentname['length']-0x1)=='/'&&(Documentname=Documentname['substring'](0x0,Documentname['length']-0x1));for(var _0x414378=0x0;_0x414378<FinalFoldersUpload[_0x114999(0x4a1)];_0x414378++){_0x396f0c=FinalFoldersUpload[_0x414378][_0x114999(0x1bd)][_0x114999(0x6e8)](0x0,FinalFoldersUpload[_0x414378][_0x114999(0x1bd)][_0x5e3f7a(0x4a3)]('/')),_0x396f0c=checkFolderSpecialCharUpload(_0x396f0c);for(Folder=0x0;Folder<_0x396f0c[_0x114999(0x288)]('/')[_0x5e3f7a(0x1d9)];Folder++){Folder==0x0&&(_0x68ee7a=Documentname),Folder==0x0&&_0x414378==0x0?_0x4201d4=!![]:_0x4201d4=![],_0x585234=_0x396f0c[_0x114999(0x288)]('/')[Folder],checkSpecialCharaters(_0x585234)==!![]&&(_0x585234=_0x585234[_0x114999(0x3e8)](/[&\/\\#,+()$~%'":*.?<>{}]/g,''));var _0x585234=_0x396f0c[_0x114999(0x288)]('/')[Folder];if(_0x4201d4==!![]){if(_0x585234[_0x114999(0x4a1)]<0x2)return alert(_0x114999(0x500)),waitingDialog[_0x114999(0x3f3)](),FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x114999(0x3eb))[_0x114999(0x419)](''),$(_0x5e3f7a(0x553))[_0x114999(0x419)](''),$(_0x114999(0x6c8))[_0x114999(0x419)](_0x114999(0x6e4)),$(_0x5e3f7a(0x1f5))[_0x114999(0x419)](''),$(_0x114999(0x204))[_0x5e3f7a(0x41c)](''),$(_0x114999(0x204))[_0x114999(0x3f3)](),$(_0x114999(0x55c))[_0x114999(0x341)](_0x114999(0x3f3)),![];if(_0x585234[_0x114999(0x4a1)]>0xc8)return alert(_0x114999(0x601)),waitingDialog[_0x114999(0x3f3)](),FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x114999(0x3eb))[_0x114999(0x419)](''),$(_0x114999(0x5b3))['val'](''),$(_0x114999(0x6c8))[_0x114999(0x419)](_0x114999(0x6e4)),$(_0x5e3f7a(0x1f5))[_0x5e3f7a(0x1ea)](''),$(_0x5e3f7a(0x656))[_0x114999(0x678)](''),$(_0x114999(0x55c))[_0x5e3f7a(0x5ce)](_0x114999(0x3f3)),![];var _0x324505=ChekFolderExistOrNot(_0x68ee7a,_0x585234);if(_0x324505==![]){if($(_0x114999(0x1c1))[_0x114999(0x47f)](_0x5e3f7a(0x495))==!![])_0x585234=$(_0x114999(0x28c))['val']()[_0x114999(0x6ee)]()+_0x585234+$(_0x5e3f7a(0x242))[_0x114999(0x419)]()[_0x5e3f7a(0x549)]();else return alert(_0x5e3f7a(0x4d6)),waitingDialog[_0x114999(0x3f3)](),FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x114999(0x3eb))[_0x5e3f7a(0x1ea)](''),$(_0x5e3f7a(0x553))[_0x114999(0x419)](''),$(_0x114999(0x6c8))[_0x114999(0x419)](_0x114999(0x6e4)),$(_0x5e3f7a(0x1f5))[_0x114999(0x419)](''),$(_0x114999(0x204))[_0x114999(0x678)](''),$(_0x114999(0x204))[_0x5e3f7a(0x39a)](),$(_0x114999(0x55c))[_0x114999(0x341)](_0x114999(0x3f3)),![];}$[_0x114999(0x3a9)](CreateDMSFolder(_0x68ee7a,_0x585234,![]))[_0x114999(0x577)](function(_0x1cbca4){var _0x3404c0=_0x5e3f7a,_0x3bffb2=_0x114999;_0x1cbca4[_0x3bffb2(0x214)]!=undefined?(DocUrlCollection[0x0][_0x3bffb2(0x4b4)]=checkFolderSpecialCharUpload(DocUrlCollection[0x0][_0x3404c0(0x3ed)]),DocUrlCollection[0x0][_0x3bffb2(0x2ad)]=_0x1cbca4[_0x3bffb2(0x33a)],DMS_Link[_0x3bffb2(0x3cc)](_0x3bffb2(0x1ea))==!![]||DMS_Link[_0x3404c0(0x306)](_0x3404c0(0x652))==!![]?DMS_Link[_0x3404c0(0x306)](_0x3bffb2(0x1ea))==!![]?libraryName=_0x3bffb2(0x1ea):libraryName=_0x3404c0(0x652):Documentname[_0x3bffb2(0x189)]('/')!=-0x1?libraryName=Documentname[_0x3bffb2(0x288)]('/')[0x0]:libraryName=Documentname,Query=_0x3bffb2(0x5be)+_spPageContextInfo[_0x3bffb2(0x3fb)]+'\x27\x20',(libraryName[_0x3bffb2(0x674)](/\bDocuments\b/)>=0x0||libraryName==_0x3bffb2(0x2f4)||libraryName==_0x3404c0(0x339))&&(libraryName=_0x3bffb2(0x1d1)),$[_0x3bffb2(0x3a9)](getItemsWithQuery(libraryName,Query,DMS_Link[_0x3bffb2(0x288)](_0x3bffb2(0x616))[0x0][_0x3404c0(0x2e4)](0x0,DMS_Link[_0x3bffb2(0x288)](_0x3bffb2(0x616))[0x0][_0x3bffb2(0x594)]('/'))))[_0x3bffb2(0x577)](function(_0x153bce){var _0x3ab15f=_0x3bffb2;updateFolderDocProp(libraryName,_0x153bce[0x0]['Id'],DMS_Link[_0x3ab15f(0x288)](_0x3ab15f(0x616))[0x0][_0x3ab15f(0x6e8)](0x0,DMS_Link[_0x3ab15f(0x288)](_0x3ab15f(0x616))[0x0][_0x3ab15f(0x594)]('/')));}),_0x68ee7a=_0x68ee7a+'/'+_0x585234):(_0x5eeacb=![],FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x3404c0(0x348))['modal'](_0x3bffb2(0x3f3)));});}else _0x324505==!![]?$[_0x5e3f7a(0x186)](CreateDMSFolder(_0x68ee7a,_0x585234,![]))[_0x5e3f7a(0x21b)](function(_0x3bc741){var _0x484d87=_0x5e3f7a,_0x2af6e1=_0x114999;_0x3bc741[_0x2af6e1(0x214)]!=undefined?(DMS_Link[_0x2af6e1(0x3cc)](_0x2af6e1(0x1ea))==!![]||DMS_Link[_0x484d87(0x306)](_0x484d87(0x652))==!![]?DMS_Link[_0x2af6e1(0x3cc)](_0x2af6e1(0x1ea))==!![]?libraryName=_0x2af6e1(0x1ea):libraryName='DepartmentalDMS':Documentname[_0x2af6e1(0x189)]('/')!=-0x1?libraryName=Documentname[_0x2af6e1(0x288)]('/')[0x0]:libraryName=Documentname,$(_0x484d87(0x300))[_0x484d87(0x235)](_0x2af6e1(0x3da))==!![]&&((libraryName[_0x2af6e1(0x674)](/\bDocuments\b/)>=0x0||libraryName==_0x2af6e1(0x2f4)||libraryName==_0x2af6e1(0x33f))&&(libraryName=_0x2af6e1(0x1d1)),Query=_0x2af6e1(0x5be)+_spPageContextInfo[_0x2af6e1(0x3fb)]+'\x27\x20',$[_0x2af6e1(0x3a9)](getItemsWithQuery(libraryName,Query,DMS_Link[_0x2af6e1(0x288)](_0x2af6e1(0x616))[0x0][_0x484d87(0x2e4)](0x0,DMS_Link[_0x2af6e1(0x288)]('/Forms')[0x0][_0x2af6e1(0x594)]('/'))))[_0x484d87(0x21b)](function(_0x18c0c8){var _0xe568ac=_0x484d87,_0x35aec0=_0x2af6e1;updateFolderDocProp(libraryName,_0x18c0c8[0x0]['Id'],DMS_Link[_0x35aec0(0x288)](_0x35aec0(0x616))[0x0][_0x35aec0(0x6e8)](0x0,DMS_Link['split'](_0xe568ac(0x664))[0x0][_0x35aec0(0x594)]('/')));})),_0x68ee7a=_0x68ee7a+'/'+_0x585234):(_0x5eeacb=![],FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x484d87(0x348))[_0x2af6e1(0x341)](_0x2af6e1(0x3f3)));}):_0x68ee7a=_0x68ee7a+'/'+_0x585234;}}if(_0x5eeacb==!![]){var _0x4f0a6f=DMS_Link[_0x114999(0x288)](_0x114999(0x616))[0x0][_0x114999(0x6e8)](0x0,DMS_Link[_0x114999(0x288)](_0x114999(0x616))[0x0][_0x114999(0x594)]('/'));if(Documentname[Documentname[_0x114999(0x4a1)]-0x1]=='/')var _0x319851=Documentname;else var _0x319851=Documentname+'/';for(var _0x1c4d14=0x0;_0x1c4d14<FinalFoldersUpload['length'];_0x1c4d14++){var _0x5b6b4c=checkFolderSpecialCharUpload(FinalFoldersUpload[_0x1c4d14][_0x114999(0x1bd)][_0x114999(0x6e8)](0x0,FinalFoldersUpload[_0x1c4d14][_0x114999(0x1bd)][_0x114999(0x594)]('/')));_0x68ee7a=_0x319851+_0x5b6b4c,uploadFolderDocuments(_0x68ee7a,FinalFoldersUpload[_0x1c4d14],_0x4f0a6f,_0x1c4d14);}}}function uploadFolderDocuments(_0x4aca4f,_0x19ab64,_0x2f46b8,_0x6b32c0){var _0x57f7cd=a90_0x13126d,_0x519d72=_0x4ce28e;url=_0x2f46b8+_0x519d72(0x6cb),$[_0x57f7cd(0x21a)]({'url':url,'type':_0x519d72(0x1bb),'headers':{'Accept':_0x57f7cd(0x40a)},'contentType':_0x519d72(0x4b9),'success':function(_0x3e313c){var _0x18a7ae=_0x57f7cd,_0x15c43e=_0x519d72,_0x59897f=_0x3e313c['d'][_0x15c43e(0x584)][_0x15c43e(0x48a)],_0x43436d='';DMS_Link[_0x15c43e(0x3cc)](_0x15c43e(0x1ea))==!![]||DMS_Link['includes'](_0x18a7ae(0x652))==!![]?DMS_Link['includes'](_0x18a7ae(0x5d5))==!![]?_0x43436d=_0x15c43e(0x1ea):_0x43436d=_0x15c43e(0x6a4):Documentname[_0x18a7ae(0x4dc)]('/')!=-0x1?_0x43436d=Documentname[_0x15c43e(0x288)]('/')[0x0]:_0x43436d=Documentname;var _0x389fdf=new FileReader(),_0x440ed5;_0x389fdf[_0x15c43e(0x295)]=function(_0x32fdea){var _0x95307d=_0x18a7ae,_0x45d9a5=_0x15c43e;_0x440ed5=_0x389fdf[_0x45d9a5(0x2df)];var _0x279069=_spPageContextInfo[_0x45d9a5(0x676)]+'/'+_0x43436d;if(checkSpecialCharaters(_0x19ab64[_0x45d9a5(0x681)])==!![])var _0x682ee5=_0x19ab64[_0x45d9a5(0x681)][_0x45d9a5(0x4e2)](/[&\/\\#,+()$~%'":*?<>{}]/g,'');else var _0x682ee5=_0x19ab64[_0x45d9a5(0x681)];if(_0x4aca4f[_0x45d9a5(0x3cc)](_0x45d9a5(0x320))==!![])_0x4aca4f=_0x4aca4f[_0x45d9a5(0x4e2)](_0x45d9a5(0x320),_0x95307d(0x431));else{if(_0x4aca4f==_0x45d9a5(0x1d1))_0x4aca4f=_0x45d9a5(0x33f);else _0x4aca4f['includes'](_0x45d9a5(0x3a6))==!![]&&(_0x4aca4f[_0x45d9a5(0x3cc)]('Shared\x20Documents/')==![]&&_0x4aca4f[_0x45d9a5(0x3cc)](_0x95307d(0x477))==![])&&(_0x4aca4f=_0x4aca4f[_0x45d9a5(0x4e2)](_0x45d9a5(0x3a6),_0x45d9a5(0x552)));}_0x2f46b8!=_spPageContextInfo[_0x45d9a5(0x229)]&&$[_0x45d9a5(0x3a9)](GetFormDigestValue(_0x2f46b8))[_0x45d9a5(0x577)](function(_0x1d78dc){RequestDigest=_0x1d78dc;}),url=_0x2f46b8+_0x45d9a5(0x39e)+_0x4aca4f+_0x45d9a5(0x4b8)+_0x682ee5+_0x45d9a5(0x4a8)+_0x279069+_0x45d9a5(0x573);try{$[_0x45d9a5(0x42c)]({'url':url,'type':_0x45d9a5(0x1bb),'data':_0x440ed5,'headers':{'Accept':_0x95307d(0x40a),'X-RequestDigest':RequestDigest},'contentType':_0x45d9a5(0x4b9),'processData':![],'success':function(_0x4e8b49){var _0x4b6092=_0x95307d,_0x156612=_0x45d9a5;RequestDigest=$(_0x4b6092(0x30d))[_0x156612(0x419)]();var _0x3678e9=_0x4e8b49['d'][_0x156612(0x5c2)],_0x356de4=_0x4e8b49['d'][_0x4b6092(0x238)],_0x586867='';$[_0x156612(0x3a9)](getTargetIDByUrl(_0x2f46b8,_0x4e8b49['d'][_0x156612(0x33a)]))[_0x156612(0x577)](function(_0x334101){var _0x375926=_0x4b6092;$(_0x375926(0x300))[_0x375926(0x235)]('checked')==!![]&&updateFolderDocProp(_0x43436d,_0x334101,_0x2f46b8);});if(FinalFoldersUpload[_0x4b6092(0x1d9)]==_0x6b32c0+0x1){FinalFiles4Upload=[],FinalFoldersUpload=[],$(_0x156612(0x29f))['prop'](_0x156612(0x3da))==!![]?FolderUploadMail():DocUrlCollection=[];var _0x44e656=Documentname;if(Documentname[_0x156612(0x3cc)](_0x4b6092(0x3a7))==!![])_0x44e656=_0x44e656[_0x156612(0x4e2)](_0x156612(0x320),_0x4b6092(0x431));else Documentname==_0x156612(0x1d1)&&(_0x44e656=_0x44e656[_0x156612(0x4e2)](_0x156612(0x1d1),_0x156612(0x33f)));GetMyDocumentsWithFilesFolder(_0x44e656),waitingDialog[_0x156612(0x3f3)](),$('#myModalupload')[_0x156612(0x341)](_0x156612(0x3f3)),alert('Folder\x20has\x20been\x20uploaded.');}},'error':function(_0x404521){var _0x3710f8=_0x95307d,_0xb9f0d0=_0x45d9a5;return RequestDigest=$(_0xb9f0d0(0x57c))[_0xb9f0d0(0x419)](),waitingDialog[_0x3710f8(0x39a)](),alert(_0xb9f0d0(0x322)+JSON[_0xb9f0d0(0x1a4)](_0x404521)),![];}})[_0x95307d(0x218)](function(_0x22f0d2){var _0x2b81a2=_0x95307d,_0xc80fa2=_0x45d9a5;return RequestDigest=$(_0xc80fa2(0x57c))[_0xc80fa2(0x419)](),waitingDialog['hide'](),alert(_0x22f0d2[_0x2b81a2(0x3f7)][_0x2b81a2(0x335)][_0x2b81a2(0x4d8)][_0xc80fa2(0x447)]),![];});}catch(_0x15f96d){return waitingDialog[_0x95307d(0x39a)](),console[_0x45d9a5(0x403)](_0x15f96d),![];}},_0x389fdf[_0x15c43e(0x60f)](_0x19ab64);},'error':function(_0x3c775b){var _0x1488ff=_0x57f7cd,_0x17c4f2=_0x519d72;return waitingDialog[_0x17c4f2(0x3f3)](),alert('Please\x20try\x20again\x20something\x20went\x20wrong.<br/>'+JSON[_0x1488ff(0x2da)](_0x3c775b)),![];}});}function updateFolderDocProp(_0xaabd95,_0x22fe42,_0x31f52f){var _0x56d7ea=a90_0x13126d,_0x275d86=_0x4ce28e,_0x3fc29b;if(_0xaabd95[_0x275d86(0x674)](/\bDocuments\b/)>=0x0||_0xaabd95==_0x275d86(0x2f4)||_0xaabd95==_0x56d7ea(0x339))var _0x39852e=GetItemTypeForLibraryName(_0x275d86(0x25d));else var _0x39852e=GetItemTypeForLibraryName(_0xaabd95);_0x3fc29b={'__metadata':{'type':_0x39852e},'Title':$(_0x275d86(0x3eb))[_0x275d86(0x419)](),'DocumentNo':$(_0x275d86(0x5b3))[_0x275d86(0x419)](),'DocumentType':$(_0x275d86(0x6c8))[_0x56d7ea(0x1ea)](),'DocumentWrittenBy':$(_0x275d86(0x5d8))[_0x275d86(0x419)](),'Details':$(_0x56d7ea(0x1f5))[_0x275d86(0x419)]()},updateFolderFileMetadata(_0xaabd95,_0x3fc29b,_0x22fe42,_0x31f52f);}function updateFolderFileMetadata(_0x116955,_0x14648e,_0x1fbe54,_0x2405ab){var _0x13a020=a90_0x13126d,_0x1ff7af=_0x4ce28e,_0x275923=$[_0x1ff7af(0x5a7)]();(_0x116955[_0x1ff7af(0x674)](/\bDocuments\b/)>=0x0||_0x116955==_0x1ff7af(0x2f4)||_0x116955==_0x1ff7af(0x33f))&&(_0x116955=_0x13a020(0x3cb)),_0x2405ab!=_spPageContextInfo[_0x13a020(0x215)]&&$[_0x1ff7af(0x3a9)](GetFormDigestValue(_0x2405ab))[_0x1ff7af(0x577)](function(_0x25ebde){RequestDigest=_0x25ebde;});var _0x52b37a=_0x2405ab+_0x1ff7af(0x1b4)+_0x116955+_0x1ff7af(0x3c3)+_0x1fbe54+')';return $['ajax']({'url':_0x52b37a,'type':'POST','async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':RequestDigest,'content-Type':_0x1ff7af(0x4b9),'X-Http-Method':_0x1ff7af(0x525),'If-Match':'*'},'data':JSON[_0x1ff7af(0x1a4)](_0x14648e),'success':function(_0x517014){var _0x5e403b=_0x1ff7af;RequestDigest=$(_0x5e403b(0x57c))[_0x5e403b(0x419)](),_0x275923[_0x5e403b(0x321)](!![]);},'error':function(_0x586901){var _0x395990=_0x13a020,_0x52b019=_0x1ff7af;RequestDigest=$(_0x52b019(0x57c))[_0x52b019(0x419)](),waitingDialog[_0x52b019(0x3f3)]();if(_0x586901[_0x52b019(0x400)][_0x52b019(0x189)](_0x52b019(0x6c9))!=-0x1||_0x586901[_0x52b019(0x400)][_0x52b019(0x189)](_0x52b019(0x47e))!=-0x1)alert(_0x52b019(0x533)),$(_0x52b019(0x55c))[_0x52b019(0x341)](_0x52b019(0x3f3)),$(_0x52b019(0x565))[_0x52b019(0x314)](),$(_0x52b019(0x565))[_0x52b019(0x3f3)](),FinalFiles4Upload=[],FinalFoldersUpload=[];else{var _0x51b4c8='';_0x586901[_0x52b019(0x32f)]['error'][_0x52b019(0x57b)][_0x52b019(0x447)]==undefined?_0x51b4c8=JSON[_0x52b019(0x1a4)](_0x586901):_0x51b4c8=_0x586901[_0x52b019(0x32f)][_0x395990(0x335)][_0x52b019(0x57b)]['value'],alert(_0x51b4c8);}_0x275923[_0x395990(0x3bf)](_0x586901);}}),_0x275923[_0x1ff7af(0x297)]();}function checkFolderSpecialCharUpload(_0x56aaf8){var _0xf4549b=_0x4ce28e,_0x445061=_0xf4549b(0x356);for(i=0x0;i<_0x445061[_0xf4549b(0x4a1)];i++){_0x56aaf8[_0xf4549b(0x189)](_0x445061[i])>-0x1&&(_0x56aaf8=_0x56aaf8[_0xf4549b(0x3e8)](_0x445061[i],''));}return _0x56aaf8;}function MultipleFileDownload(){var _0x4bf866=a90_0x13126d,_0x3aec8e=_0x4ce28e,_0x3f0b45=[],_0x542628=[];if(arrFileFolder[_0x3aec8e(0x4a1)]>0x0)arrFileFolder[_0x4bf866(0x2e6)](function(_0x500e4a,_0x3286cf){var _0x4c9acf=_0x4bf866,_0x588d07=_0x3aec8e,_0x20bce8=_0x500e4a[_0x588d07(0x4b6)];if(_0x500e4a[_0x588d07(0x457)]==_0x588d07(0x6b9)){Extension=_0x500e4a[_0x4c9acf(0x1db)][_0x588d07(0x65b)](_0x500e4a[_0x588d07(0x4b6)][_0x588d07(0x594)]('.')+0x1),_0x20bce8[_0x588d07(0x3cc)](_0x588d07(0x320))==!![]&&(_0x20bce8=_0x20bce8[_0x4c9acf(0x3ea)]('/Documents/',_0x4c9acf(0x431)));if(Extension[_0x4c9acf(0x581)]()!=_0x588d07(0x580)&&Extension[_0x588d07(0x1d9)]()!=_0x588d07(0x4e6)&&Extension[_0x588d07(0x1d9)]()!=_0x588d07(0x2ac)&&Extension[_0x588d07(0x1d9)]()!=_0x588d07(0x4eb)&&Extension['toLowerCase']()!=_0x588d07(0x2ae)&&Extension[_0x4c9acf(0x581)]()!='pdf')$['fileDownload'](_0x20bce8);else{var _0x5e7ae8=document[_0x4c9acf(0x586)]('a');_0x5e7ae8[_0x588d07(0x5f1)](_0x588d07(0x36d),window['location'][_0x588d07(0x1ec)]+_0x20bce8),_0x5e7ae8[_0x4c9acf(0x512)](_0x588d07(0x39f),''),_0x5e7ae8[_0x588d07(0x5f1)](_0x588d07(0x255),_0x588d07(0x626)),_0x5e7ae8[_0x588d07(0x382)]();}}else{_0x542628=_0x500e4a[_0x4c9acf(0x231)];if(_0x500e4a[_0x588d07(0x4b6)]['search'](/\bDocuments\b/)>=0x0)_0x500e4a[_0x4c9acf(0x1db)]=_0x500e4a[_0x588d07(0x4b6)][_0x588d07(0x4e2)](_0x588d07(0x1d1),_0x588d07(0x2f4));else _0x500e4a['ServerURL'][_0x588d07(0x674)](/\bShared%20Documents\b/)>=0x0&&(_0x500e4a[_0x4c9acf(0x1db)]=_0x500e4a[_0x4c9acf(0x1db)][_0x588d07(0x4e2)](_0x588d07(0x33f),_0x588d07(0x2f4)));var _0x59650d=_0x500e4a[_0x588d07(0x505)]+_0x588d07(0x6b4)+_0x500e4a['ServerURL']+_0x588d07(0x639);$[_0x588d07(0x42c)]({'url':_0x59650d,'headers':{'Accept':_0x588d07(0x4b9)},'async':!![],'success':function(_0x576345){var _0x40dc9f=_0x4c9acf,_0x50e3d6=_0x588d07,_0x1bc020=_0x576345['d'][_0x40dc9f(0x58a)][_0x40dc9f(0x55c)];for(var _0xbb8295=0x0;_0xbb8295<_0x1bc020[_0x50e3d6(0x4a1)];_0xbb8295++){Extension=_0x1bc020[_0xbb8295][_0x40dc9f(0x606)][_0x50e3d6(0x65b)](_0x1bc020[_0xbb8295][_0x40dc9f(0x606)][_0x50e3d6(0x594)]('.')+0x1),_0x1bc020[_0xbb8295][_0x50e3d6(0x33a)][_0x50e3d6(0x3cc)](_0x50e3d6(0x320))==!![]&&(_0x1bc020[_0xbb8295][_0x50e3d6(0x33a)]=_0x1bc020[_0xbb8295][_0x50e3d6(0x33a)][_0x40dc9f(0x3ea)](_0x50e3d6(0x320),'/Shared%20Documents/'));if(Extension[_0x50e3d6(0x1d9)]()!=_0x40dc9f(0x50c)&&Extension[_0x50e3d6(0x1d9)]()!=_0x40dc9f(0x506)&&Extension[_0x50e3d6(0x1d9)]()!=_0x50e3d6(0x2ac)&&Extension[_0x50e3d6(0x1d9)]()!=_0x50e3d6(0x4eb)&&Extension[_0x50e3d6(0x1d9)]()!=_0x50e3d6(0x2ae)&&Extension[_0x50e3d6(0x1d9)]()!=_0x50e3d6(0x6af))$[_0x50e3d6(0x215)](_0x1bc020[_0xbb8295][_0x50e3d6(0x33a)]);else{var _0x1c3292=document[_0x40dc9f(0x586)]('a');_0x1c3292['setAttribute'](_0x50e3d6(0x36d),window[_0x50e3d6(0x55f)][_0x50e3d6(0x1ec)]+_0x1bc020[_0xbb8295][_0x50e3d6(0x33a)]),_0x1c3292[_0x50e3d6(0x5f1)](_0x50e3d6(0x39f),''),_0x1c3292[_0x40dc9f(0x512)](_0x50e3d6(0x255),_0x50e3d6(0x626)),_0x1c3292[_0x40dc9f(0x26c)]();}}var _0x432fc4=_0x576345['d'][_0x50e3d6(0x600)][_0x50e3d6(0x1e4)];for(var _0x563b99=0x0;_0x563b99<_0x432fc4[_0x50e3d6(0x4a1)];_0x563b99++){downloadFilesFromFolder(_0x542628,_0x432fc4[_0x563b99][_0x40dc9f(0x238)]);}},'eror':function(_0x43f78a){var _0x212185=_0x4c9acf,_0xbf0ed0=_0x588d07;console[_0xbf0ed0(0x403)](_0x212185(0x335));}});}_0x3286cf+0x1==arrFileFolder[_0x588d07(0x4a1)]&&($(_0x588d07(0x6b3))[_0x4c9acf(0x235)](_0x588d07(0x3da),![]),$('#selectAllChk')[_0x588d07(0x47f)](_0x588d07(0x3da),''),$(_0x588d07(0x20a))[_0x588d07(0x47f)](_0x588d07(0x3da),![]),arrFileFolder=[]);});else return alert(_0x3aec8e(0x24c)),![];}function downloadFilesFromFolder(_0x2f870c,_0x2d7926){var _0x5c396c=a90_0x13126d,_0xecae3=_0x4ce28e;_0x2d7926[_0xecae3(0x3cc)](_0x5c396c(0x3cb))==!![]&&_0x2d7926!=_0x5c396c(0x477)&&_0x2d7926[_0x5c396c(0x4dc)](_0xecae3(0x2f4))==-0x1&&(_0x2d7926=_0x2d7926[_0x5c396c(0x3ea)](_0xecae3(0x1d1),_0xecae3(0x2f4)));var _0x469ee5=_0x2f870c+_0xecae3(0x6b4)+_0x2d7926+_0xecae3(0x639);$[_0xecae3(0x42c)]({'url':_0x469ee5,'headers':{'Accept':_0xecae3(0x4b9)},'async':!![],'success':function(_0x12302a){var _0x49c07d=_0x5c396c,_0x4715a7=_0xecae3,_0x49e893=_0x12302a['d'][_0x49c07d(0x58a)][_0x4715a7(0x1e4)];for(var _0x36926b=0x0;_0x36926b<_0x49e893[_0x4715a7(0x4a1)];_0x36926b++){Extension=_0x49e893[_0x36926b][_0x4715a7(0x5c2)][_0x4715a7(0x65b)](_0x49e893[_0x36926b][_0x49c07d(0x606)][_0x4715a7(0x594)]('.')+0x1),_0x49e893[_0x36926b][_0x4715a7(0x33a)][_0x4715a7(0x3cc)](_0x4715a7(0x320))==!![]&&(_0x49e893[_0x36926b][_0x4715a7(0x33a)]=_0x49e893[_0x36926b][_0x4715a7(0x33a)][_0x49c07d(0x3ea)]('/Documents/',_0x4715a7(0x506)));if(Extension[_0x49c07d(0x581)]()!=_0x4715a7(0x580)&&Extension[_0x4715a7(0x1d9)]()!=_0x49c07d(0x506)&&Extension[_0x4715a7(0x1d9)]()!=_0x4715a7(0x2ac)&&Extension[_0x4715a7(0x1d9)]()!=_0x4715a7(0x4eb)&&Extension[_0x4715a7(0x1d9)]()!=_0x4715a7(0x2ae)&&Extension['toLowerCase']()!=_0x4715a7(0x6af))$['fileDownload'](_0x49e893[_0x36926b][_0x4715a7(0x33a)]);else{var _0x1ff615=document[_0x4715a7(0x35e)]('a');_0x1ff615[_0x4715a7(0x5f1)](_0x49c07d(0x595),window[_0x4715a7(0x55f)][_0x4715a7(0x1ec)]+_0x49e893[_0x36926b][_0x49c07d(0x238)]),_0x1ff615[_0x4715a7(0x5f1)](_0x4715a7(0x39f),''),_0x1ff615[_0x4715a7(0x5f1)](_0x49c07d(0x1d1),_0x4715a7(0x626)),_0x1ff615[_0x49c07d(0x26c)]();}}var _0xdcebb6=_0x12302a['d'][_0x4715a7(0x600)]['results'];for(var _0x466c92=0x0;_0x466c92<_0xdcebb6[_0x4715a7(0x4a1)];_0x466c92++){downloadFilesFromFolder(_0x2f870c,_0xdcebb6[_0x466c92][_0x49c07d(0x238)]);}},'eror':function(_0x53eb9a){var _0x3e9a4d=_0xecae3;console[_0x3e9a4d(0x403)](_0x3e9a4d(0x38d));}});}function MultipleFileFolderDelete(){var _0x4208b7=a90_0x13126d,_0x44d2f3=_0x4ce28e;if(arrFileFolder[_0x44d2f3(0x4a1)]>0x0){if(confirm(_0x44d2f3(0x428))==!![]){var _0x22506c=0x0;FailDueToCheckOut=0x0;if(Documentname[Documentname[_0x44d2f3(0x4a1)]-0x1]=='/')var _0x320f3c=Documentname;else var _0x320f3c=Documentname+'/';for(var _0x5dcff9=0x0;_0x5dcff9<arrFileFolder[_0x44d2f3(0x4a1)];_0x5dcff9++){if(arrFileFolder[_0x5dcff9][_0x44d2f3(0x457)]==_0x44d2f3(0x6b9)){if(IsFileCheckout(_0x320f3c,arrFileFolder[_0x5dcff9][_0x4208b7(0x31e)],arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)],'')!=!![])arrFileFolder[_0x5dcff9][_0x44d2f3(0x207)][_0x44d2f3(0x674)](/\bShared%20Documents\b/)>=0x0&&(arrFileFolder[_0x5dcff9][_0x44d2f3(0x207)]=arrFileFolder[_0x5dcff9][_0x44d2f3(0x207)][_0x44d2f3(0x4e2)](_0x44d2f3(0x33f),_0x44d2f3(0x1d1))),arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)]!=_spPageContextInfo[_0x4208b7(0x215)]&&$[_0x44d2f3(0x3a9)](GetFormDigestValue(arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)]))[_0x44d2f3(0x577)](function(_0x5dd2c6){RequestDigest=_0x5dd2c6;}),$[_0x44d2f3(0x42c)]({'url':arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)]+_0x44d2f3(0x3e3)+arrFileFolder[_0x5dcff9][_0x44d2f3(0x207)]+_0x44d2f3(0x2b5)+arrFileFolder[_0x5dcff9][_0x44d2f3(0x329)]+'\x27)','type':_0x44d2f3(0x1bb),'async':![],'headers':{'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x44d2f3(0x473)},'success':function(_0xdb8a9b){var _0x5a2533=_0x44d2f3;_0x22506c++,RequestDigest=$(_0x5a2533(0x57c))[_0x5a2533(0x419)]();if(_0x22506c==arrFileFolder[_0x5a2533(0x4a1)]){FailDueToCheckOut==0x0?alert(_0x5a2533(0x625)):alert(FailDueToCheckOut+_0x5a2533(0x5ad)),($(_0x5a2533(0x6b3))[_0x5a2533(0x47f)](_0x5a2533(0x3da),![]),$(_0x5a2533(0x32b))['prop'](_0x5a2533(0x3da),![]),arrFileFolder=[]);var _0x23fc67=Documentname;Documentname[_0x5a2533(0x674)](/\bDocuments\b/)>=0x0&&(_0x23fc67='Shared%20Documents'),GetMyDocumentsWithFilesFolder(_0x23fc67);}},'error':function(_0x70c44a){var _0x35f82d=_0x44d2f3;return RequestDigest=$(_0x35f82d(0x57c))[_0x35f82d(0x419)](),_0x70c44a[_0x35f82d(0x400)][_0x35f82d(0x3cc)](_0x35f82d(0x3ae))==!![]?(alert(_0x35f82d(0x270)+arrFileFolder[_0x5dcff9][_0x35f82d(0x557)]+_0x35f82d(0x1e6)),![]):(alert(_0x70c44a[_0x35f82d(0x400)]),![]);}});else{FailDueToCheckOut++,_0x22506c++,RequestDigest=$(_0x4208b7(0x30d))[_0x4208b7(0x1ea)](),FailDueToCheckOut==arrFileFolder[_0x44d2f3(0x4a1)]&&(waitingDialog['hide'](),FailDueToCheckOut=0x0,alert(_0x4208b7(0x3fb)),$(_0x44d2f3(0x6b3))[_0x44d2f3(0x47f)](_0x44d2f3(0x3da),![]),$(_0x44d2f3(0x32b))[_0x44d2f3(0x47f)](_0x44d2f3(0x3da),![]),arrFileFolder=[]);if(_0x22506c==arrFileFolder[_0x44d2f3(0x4a1)]){FailDueToCheckOut==0x0?alert(_0x44d2f3(0x625)):alert(FailDueToCheckOut+_0x44d2f3(0x488)),($(_0x44d2f3(0x6b3))['prop'](_0x44d2f3(0x3da),![]),$(_0x44d2f3(0x32b))[_0x44d2f3(0x47f)](_0x44d2f3(0x3da),![]),arrFileFolder=[]);var _0x26c3a6=Documentname;Documentname[_0x44d2f3(0x674)](/\bDocuments\b/)>=0x0&&(_0x26c3a6='Shared%20Documents'),GetMyDocumentsWithFilesFolder(_0x26c3a6);}}}else arrFileFolder[_0x5dcff9][_0x44d2f3(0x4b6)][_0x44d2f3(0x674)](/\bDocuments\b/)>=0x0&&(arrFileFolder[_0x5dcff9][_0x4208b7(0x1db)]=arrFileFolder[_0x5dcff9][_0x44d2f3(0x4b6)][_0x44d2f3(0x4e2)](_0x44d2f3(0x1d1),_0x44d2f3(0x2f4))),arrFileFolder[_0x5dcff9][_0x4208b7(0x231)]!=_spPageContextInfo[_0x44d2f3(0x229)]&&$[_0x44d2f3(0x3a9)](GetFormDigestValue(arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)]))[_0x44d2f3(0x577)](function(_0x1b13f2){RequestDigest=_0x1b13f2;}),$[_0x4208b7(0x21a)]({'url':arrFileFolder[_0x5dcff9][_0x44d2f3(0x505)]+_0x44d2f3(0x39e)+arrFileFolder[_0x5dcff9]['ServerURL']+'\x27)','method':_0x44d2f3(0x1bb),'async':![],'headers':{'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x44d2f3(0x473)},'success':function(_0x8e3363){var _0x88a64d=_0x4208b7,_0x1668ba=_0x44d2f3;_0x22506c++,RequestDigest=$(_0x88a64d(0x30d))[_0x1668ba(0x419)]();var _0x1ce97f=_0x1668ba(0x4d4)+arrFileFolder[_0x5dcff9][_0x1668ba(0x329)]+'\x27\x20';$[_0x88a64d(0x186)](getItemsWithQuery(_0x1668ba(0x2b7),_0x1ce97f,_spPageContextInfo[_0x1668ba(0x229)]))[_0x1668ba(0x577)](function(_0x1bcb4c){var _0x4b16a3=_0x1668ba;if(_0x1bcb4c[_0x4b16a3(0x4a1)]>0x0)for(var _0x260fbf=0x0;_0x260fbf<_0x1bcb4c[_0x4b16a3(0x4a1)];_0x260fbf++){DeleteSharedLinks(_0x1bcb4c[_0x260fbf]['ID']);}});if(_0x22506c==arrFileFolder[_0x1668ba(0x4a1)]){FailDueToCheckOut==0x0?alert(_0x1668ba(0x625)):alert(FailDueToCheckOut+_0x1668ba(0x5ad)),($(_0x1668ba(0x6b3))[_0x1668ba(0x47f)](_0x1668ba(0x3da),![]),$(_0x1668ba(0x32b))[_0x1668ba(0x47f)](_0x88a64d(0x495),![]),arrFileFolder=[]);var _0x3b63bb=Documentname;Documentname['search'](/\bDocuments\b/)>=0x0&&(_0x3b63bb=_0x1668ba(0x33f)),GetMyDocumentsWithFilesFolder(_0x3b63bb);}},'error':function(_0x53cc75){var _0x53d42f=_0x4208b7,_0x59afc5=_0x44d2f3;return RequestDigest=$(_0x59afc5(0x57c))[_0x59afc5(0x419)](),_0x53cc75[_0x59afc5(0x400)][_0x59afc5(0x3cc)](_0x59afc5(0x3ae))==!![]?(alert(_0x53d42f(0x2cf)+arrFileFolder[_0x5dcff9][_0x53d42f(0x31e)]+_0x59afc5(0x1e6)),![]):(alert(_0x53cc75[_0x59afc5(0x400)]),![]);}});}}}else return alert(_0x44d2f3(0x24c)),![];}function AddCustomColumns(){var _0x190f10=a90_0x13126d,_0x5660ca=_0x4ce28e,_0x4f8fce='';arrCustomCol=[];var _0x277c29='',_0xe26c99='';_0xe26c99=_0x5660ca(0x22d);var _0x4fedee=_0x5660ca(0x617)+_0xe26c99+_0x190f10(0x3de)+DMS_Type+'\x27\x20and\x20ColumnType\x20eq\x20\x27Custom\x27\x20';return $[_0x190f10(0x186)](getItemsWithQuery(_0x5660ca(0x2b4),_0x4fedee,_spPageContextInfo[_0x5660ca(0x229)]))[_0x190f10(0x21b)](function(_0x2d6d99){var _0x2cd205=_0x190f10,_0xbad7c0=_0x5660ca;if(_0x2d6d99[_0xbad7c0(0x4a1)]>0x0)for(var _0x1ebd7f=0x0;_0x1ebd7f<_0x2d6d99['length'];_0x1ebd7f++){_0x4f8fce='',_0x277c29+=_0x2cd205(0x5fa)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)]+',',_0x4f8fce+=_0x2cd205(0x527),_0x4f8fce+=_0x2cd205(0x63f)+_0x2d6d99[_0x1ebd7f][_0x2cd205(0x1bb)]+_0xbad7c0(0x3e9);if(_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x606)]==_0xbad7c0(0x4ff))_0x4f8fce+=_0xbad7c0(0x5da)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)]+'\x22>';else{if(_0x2d6d99[_0x1ebd7f][_0x2cd205(0x3a0)]==_0xbad7c0(0x25a))_0x4f8fce+=_0xbad7c0(0x59c)+_0x2d6d99[_0x1ebd7f][_0x2cd205(0x1bb)]+'\x22>';else _0x2d6d99[_0x1ebd7f][_0xbad7c0(0x606)]=='Number'&&(_0x4f8fce+=_0xbad7c0(0x308)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)]+'\x22>');}_0x4f8fce+=_0xbad7c0(0x489),_0x4f8fce+=_0xbad7c0(0x271)+_0x2d6d99[_0x1ebd7f]['ColumnName']+_0xbad7c0(0x4cc),arrCustomCol[_0xbad7c0(0x4f4)]({'chkId':_0x2cd205(0x571)+_0x2d6d99[_0x1ebd7f][_0x2cd205(0x1bb)],'ColName':_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)],'controlId':_0xbad7c0(0x334)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)],'colType':_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x606)]}),$(_0xbad7c0(0x4e5))[_0xbad7c0(0x693)](_0x4f8fce),_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x606)]==_0xbad7c0(0x25a)?($(_0xbad7c0(0x180)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)])['datepicker'](_0xbad7c0(0x5db)),$(_0xbad7c0(0x180)+_0x2d6d99[_0x1ebd7f][_0x2cd205(0x1bb)])[_0xbad7c0(0x45a)](),$(_0xbad7c0(0x180)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)])[_0xbad7c0(0x45a)](_0xbad7c0(0x6c2),_0xbad7c0(0x20f),_0x2cd205(0x617)),$('#Custom'+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)])[_0xbad7c0(0x588)](function(){var _0x14eff9=_0x2cd205,_0x2aeb73=_0xbad7c0;if(this[_0x14eff9(0x3cd)]['trim']()!=''){var _0x29a92f=this['id'][_0x2aeb73(0x4e2)](_0x2aeb73(0x334),'');$(_0x2aeb73(0x1f0)+_0x29a92f)[_0x2aeb73(0x47f)](_0x2aeb73(0x3da),_0x14eff9(0x495));}})):$(_0x2cd205(0x322)+_0x2d6d99[_0x1ebd7f][_0xbad7c0(0x2ef)])[_0xbad7c0(0x2d8)](function(){var _0x3ed2ed=_0xbad7c0;if(this[_0x3ed2ed(0x447)][_0x3ed2ed(0x6ee)]()!=''){var _0x3df831=this['id'][_0x3ed2ed(0x4e2)](_0x3ed2ed(0x334),'');$(_0x3ed2ed(0x1f0)+_0x3df831)[_0x3ed2ed(0x47f)](_0x3ed2ed(0x3da),_0x3ed2ed(0x3da));}});}}),_0x277c29;}function getSingleFileProperty(_0x2384e4,_0x260648,_0x379ba2,_0x3368d6){var _0x32f260=a90_0x13126d,_0xc211d4=_0x4ce28e;if(_0x2384e4[_0xc211d4(0x674)](/\bDocuments\b/)>=0x0)_0x2384e4=_0x2384e4[_0x32f260(0x3ea)](_0xc211d4(0x1d1),_0xc211d4(0x33f));else _0x2384e4[_0xc211d4(0x674)](/\bShared Documents\b/)>=0x0&&(_0x2384e4=_0x2384e4[_0xc211d4(0x4e2)](_0xc211d4(0x2f4),_0xc211d4(0x33f)));if(_0x260648==_0xc211d4(0x6b9))var _0x112c2d=_0x379ba2+_0xc211d4(0x29d)+_0x2384e4+_0xc211d4(0x31e)+_0x3368d6+_0xc211d4(0x31f);else var _0x112c2d=_0x379ba2+'/_api/web/GetFolderByServerRelativeUrl(\x27'+_0x2384e4+_0xc211d4(0x31e)+_0x3368d6+_0xc211d4(0x31f);while(_0x3368d6[_0xc211d4(0x189)](_0xc211d4(0x4c6))!=-0x1){_0x3368d6=_0x3368d6[_0xc211d4(0x4e2)](_0xc211d4(0x4c6),'');}_0x3368d6=_0x3368d6[_0xc211d4(0x65b)](0x0,_0x3368d6[_0x32f260(0x1d9)]-0x1),$[_0xc211d4(0x42c)]({'url':_0x112c2d,'headers':{'Accept':_0xc211d4(0x4b9)},'async':![],'success':function(_0x15cb48){var _0x5521cd=_0x32f260,_0x40c08f=_0xc211d4,_0x2e73ce=_0x15cb48['d'][_0x40c08f(0x55e)];$(_0x5521cd(0x687))[_0x40c08f(0x419)](_0x2e73ce[_0x40c08f(0x664)]?_0x2e73ce[_0x40c08f(0x664)]:''),_0x2e73ce[_0x40c08f(0x659)]!=_0x40c08f(0x627)&&_0x2e73ce[_0x5521cd(0x5fc)]!=null&&_0x2e73ce[_0x5521cd(0x5fc)]!=_0x40c08f(0x6e4)&&$(_0x40c08f(0x1e7))[_0x40c08f(0x419)](_0x2e73ce[_0x40c08f(0x659)]),($(_0x40c08f(0x572))[_0x40c08f(0x419)](_0x2e73ce[_0x40c08f(0x3ff)]?_0x2e73ce[_0x5521cd(0x5a8)]:''),$(_0x40c08f(0x571))[_0x40c08f(0x419)](_0x2e73ce[_0x40c08f(0x1da)])),_0x2e73ce[_0x5521cd(0x368)]!=''&&_0x2e73ce[_0x40c08f(0x4f3)]!=null&&_0x2e73ce[_0x40c08f(0x4f3)]!=_0x5521cd(0x181)&&$(_0x40c08f(0x6e2))[_0x40c08f(0x419)](moment(new Date(_0x2e73ce[_0x40c08f(0x4f3)]))[_0x40c08f(0x54f)](_0x40c08f(0x5fb))),$(_0x40c08f(0x2c8))[_0x40c08f(0x419)](_0x2e73ce[_0x5521cd(0x51a)]?_0x2e73ce['Details']:'');var _0x517cb1=[];if(_0x3368d6!=''){_0x517cb1=_0x3368d6[_0x5521cd(0x5e5)](',');for(cus=0x0;cus<_0x517cb1[_0x5521cd(0x1d9)];cus++){new Date(_0x2e73ce[_0x517cb1[cus]])!=_0x5521cd(0x5f0)?_0x2e73ce[_0x517cb1[cus]]!=null&&_0x2e73ce[_0x517cb1[cus]]!=_0x40c08f(0x4e7)&&$(_0x40c08f(0x180)+_0x517cb1[cus])[_0x40c08f(0x419)](moment(new Date(_0x2e73ce[_0x517cb1[cus]]))[_0x40c08f(0x54f)](_0x40c08f(0x5c9))):$(_0x40c08f(0x180)+_0x517cb1[cus])[_0x40c08f(0x419)](_0x2e73ce[_0x517cb1[cus]]?_0x2e73ce[_0x517cb1[cus]]:'');}}},'eror':function(_0x500fc0){var _0xdc46d=_0x32f260,_0x24ea8f=_0xc211d4;console[_0x24ea8f(0x403)](_0xdc46d(0x438)+JSON[_0xdc46d(0x2da)](_0x500fc0));}})[_0xc211d4(0x59d)](function(_0x263b1c){var _0x5f24c7=_0x32f260,_0x22285f=_0xc211d4;return alert(_0x263b1c[_0x22285f(0x32f)][_0x5f24c7(0x335)][_0x22285f(0x57b)][_0x22285f(0x447)]),![];});}function UpdateFileFolderProperties(){var _0x19f0fa=a90_0x13126d,_0x14a4d4=_0x4ce28e,_0x59be0c=$[_0x14a4d4(0x5a7)](),_0x1ecd8b='',_0x2e2882=arrFileFolder[0x0][_0x14a4d4(0x207)];_0x2e2882[_0x14a4d4(0x3cc)]('_')==!![]&&(_0x2e2882=_0x2e2882[_0x14a4d4(0x4e2)]('_',_0x19f0fa(0x5d9))),_0x2e2882[_0x14a4d4(0x3cc)](_0x14a4d4(0x474))==!![]&&(_0x2e2882=_0x2e2882[_0x14a4d4(0x4e2)](_0x14a4d4(0x474),_0x14a4d4(0x3bf)));if(_0x2e2882[_0x14a4d4(0x674)](/\bDocuments\b/)>=0x0||_0x2e2882==_0x14a4d4(0x2f4)||_0x2e2882==_0x14a4d4(0x33f))var _0x3cbf26=GetItemTypeForLibraryName(_0x14a4d4(0x25d));else var _0x3cbf26=GetItemTypeForLibraryName(_0x2e2882);Metadata={'__metadata':{'type':_0x3cbf26},'Title':$(_0x14a4d4(0x5aa))[_0x14a4d4(0x419)](),'DocumentNo':$(_0x14a4d4(0x572))[_0x19f0fa(0x1ea)](),'DocumentType':$(_0x14a4d4(0x1e7))[_0x14a4d4(0x419)](),'DocumentWrittenBy':$(_0x14a4d4(0x571))[_0x14a4d4(0x419)](),'Details':$(_0x14a4d4(0x2c8))[_0x14a4d4(0x419)](),'SubCategory':$(_0x14a4d4(0x38f))[_0x19f0fa(0x1ea)](),'FileValidity':new Date()[_0x14a4d4(0x647)]()},$(_0x14a4d4(0x1c3))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==![]&&delete Metadata['Title'],$(_0x14a4d4(0x4cd))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==![]&&delete Metadata[_0x14a4d4(0x3ff)],$(_0x14a4d4(0x5cb))[_0x19f0fa(0x235)](_0x14a4d4(0x3da))==![]&&delete Metadata[_0x14a4d4(0x659)],$(_0x14a4d4(0x5c5))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==![]&&delete Metadata[_0x19f0fa(0x1c3)],$(_0x14a4d4(0x26f))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==![]&&delete Metadata[_0x14a4d4(0x1da)],$(_0x14a4d4(0x181))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==!![]?Metadata[_0x14a4d4(0x4f3)]=new Date($(_0x14a4d4(0x6e2))[_0x14a4d4(0x419)]())[_0x14a4d4(0x647)]():delete Metadata[_0x19f0fa(0x368)],$(_0x14a4d4(0x4a4))[_0x14a4d4(0x47f)](_0x14a4d4(0x3da))==![]&&delete Metadata[_0x19f0fa(0x51a)];if($(_0x14a4d4(0x4e5))[_0x14a4d4(0x40d)](_0x14a4d4(0x25f))['length']>0x0)for(var _0x2fb584=0x0;_0x2fb584<arrCustomCol[_0x14a4d4(0x4a1)];_0x2fb584++){if($('#'+arrCustomCol[_0x2fb584][_0x14a4d4(0x556)])[_0x14a4d4(0x47f)](_0x19f0fa(0x495))==!![]){if(arrCustomCol[_0x2fb584][_0x14a4d4(0x5ca)]==_0x14a4d4(0x4ff))Metadata[arrCustomCol[_0x2fb584][_0x19f0fa(0x3fd)]]=$('#'+arrCustomCol[_0x2fb584][_0x19f0fa(0x3f5)])[_0x14a4d4(0x419)]();else{if(arrCustomCol[_0x2fb584][_0x14a4d4(0x5ca)]==_0x14a4d4(0x25a))Metadata[arrCustomCol[_0x2fb584][_0x14a4d4(0x2f9)]]=new Date($('#'+arrCustomCol[_0x2fb584][_0x14a4d4(0x519)])[_0x19f0fa(0x1ea)]())[_0x14a4d4(0x647)]();else arrCustomCol[_0x2fb584][_0x14a4d4(0x5ca)]==_0x14a4d4(0x4ce)&&(Metadata[arrCustomCol[_0x2fb584][_0x14a4d4(0x2f9)]]=parseInt($('#'+arrCustomCol[_0x2fb584][_0x19f0fa(0x3f5)])[_0x14a4d4(0x419)]()));}}}FailDueToCheckOut=0x0;if(Documentname[Documentname[_0x14a4d4(0x4a1)]-0x1]=='/')var _0x1b64c4=Documentname;else var _0x1b64c4=Documentname+'/';arrFileFolder[_0x14a4d4(0x22c)](function(_0xca9f13,_0x599e67){var _0x504d46=_0x19f0fa,_0x1613c0=_0x14a4d4;_0x1ecd8b=_0xca9f13[_0x1613c0(0x557)];if(_0xca9f13[_0x1613c0(0x457)]==_0x1613c0(0x6b9)||_0xca9f13[_0x504d46(0x4f7)][_0x1613c0(0x1d9)]()==_0x1613c0(0x306)){if(IsFileCheckout(_0x1b64c4,_0xca9f13[_0x1613c0(0x557)],_0xca9f13[_0x1613c0(0x505)],'')!=!![]&&_0xca9f13[_0x1613c0(0x457)]==_0x1613c0(0x6b9))return(_0xca9f13[_0x1613c0(0x207)]==_0x1613c0(0x33f)||_0xca9f13[_0x1613c0(0x207)]==_0x1613c0(0x2f4))&&(_0xca9f13[_0x1613c0(0x207)]=_0x1613c0(0x1d1)),_0xca9f13[_0x504d46(0x231)]!=_spPageContextInfo[_0x1613c0(0x229)]&&$['when'](GetFormDigestValue(_0xca9f13[_0x1613c0(0x505)]))['done'](function(_0x1aa695){RequestDigest=_0x1aa695;}),$[_0x504d46(0x21a)]({'url':_0xca9f13[_0x1613c0(0x505)]+_0x504d46(0x33c)+_0xca9f13[_0x1613c0(0x207)]+_0x1613c0(0x53e)+_0xca9f13[_0x1613c0(0x329)]+')','type':_0x1613c0(0x1bb),'async':![],'headers':{'accept':_0x1613c0(0x4b9),'content-type':_0x1613c0(0x4b9),'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x1613c0(0x5c3)},'data':JSON[_0x1613c0(0x1a4)](Metadata),'success':function(_0x5b5a68){var _0xf6674b=_0x504d46,_0x5dfca2=_0x1613c0;RequestDigest=$(_0x5dfca2(0x57c))[_0x5dfca2(0x419)]();if(arrFileFolder[_0x5dfca2(0x4a1)]==_0x599e67+0x1){$(_0x5dfca2(0x18f))[_0xf6674b(0x1d4)](_0x5dfca2(0x382)),FailDueToCheckOut==0x0?alert(_0xf6674b(0x28d)):alert(FailDueToCheckOut+_0x5dfca2(0x468)),($(_0x5dfca2(0x1fa))[_0x5dfca2(0x341)](_0x5dfca2(0x3f3)),$(_0x5dfca2(0x2fb))[_0x5dfca2(0x47f)](_0x5dfca2(0x2fc),''),arrFileFolder=[],$(_0xf6674b(0x557))[_0x5dfca2(0x419)](''),$(_0x5dfca2(0x1e7))[_0x5dfca2(0x419)](_0x5dfca2(0x6e4)),$(_0x5dfca2(0x38f))[_0x5dfca2(0x419)](_0xf6674b(0x463)),$(_0x5dfca2(0x6b3))[_0x5dfca2(0x47f)](_0x5dfca2(0x3da),''));var _0xdf4088=Documentname;Documentname['includes'](_0x5dfca2(0x320))==!![]&&(_0xdf4088=_0x5dfca2(0x33f)),GetMyDocumentsWithFilesFolder(_0xdf4088);}_0x59be0c[_0x5dfca2(0x321)](_0x5b5a68);},'error':function(_0x1f11b2){var _0x4ab9c0=_0x504d46,_0x27a785=_0x1613c0;RequestDigest=$(_0x27a785(0x57c))[_0x27a785(0x419)](),arrFileFolder[_0x27a785(0x4a1)]==_0x599e67+0x1&&(arrFileFolder=[]);if(_0x1f11b2[_0x27a785(0x400)][_0x4ab9c0(0x4dc)](_0x27a785(0x6c9))!=-0x1){var _0x8a2043=Documentname;Documentname[_0x4ab9c0(0x306)](_0x27a785(0x320))==!![]&&(_0x8a2043=_0x27a785(0x33f)),FailDueToCheckOut=0x0;if(_0x8a2043[_0x8a2043[_0x27a785(0x4a1)]-0x1]=='/')var _0x5d3fb6=_0x8a2043;else var _0x5d3fb6=_0x8a2043+'/';GetMyDocumentsWithFilesFolder(_0x5d3fb6),$(_0x27a785(0x483))[_0x27a785(0x341)](_0x27a785(0x3f3)),alert(_0x27a785(0x6e9));}else{if(_0x1f11b2[_0x4ab9c0(0x4dd)][_0x4ab9c0(0x4dc)](_0x27a785(0x3ae))!=-0x1)alert(_0x27a785(0x270)+_0x1ecd8b+_0x27a785(0x1e6));else{var _0x2ec808='';_0x1f11b2['responseJSON'][_0x4ab9c0(0x335)][_0x27a785(0x57b)][_0x27a785(0x447)]==undefined?_0x2ec808=JSON[_0x27a785(0x1a4)](_0x1f11b2):_0x2ec808=_0x1f11b2[_0x27a785(0x32f)][_0x27a785(0x38d)][_0x4ab9c0(0x4d8)][_0x4ab9c0(0x3cd)],alert(_0x1ecd8b+_0x27a785(0x1b5)+_0x2ec808);}}$(_0x27a785(0x2fb))[_0x27a785(0x47f)](_0x4ab9c0(0x45b),''),_0x59be0c[_0x27a785(0x2f3)](_0x1f11b2);}}),_0x59be0c[_0x1613c0(0x297)]();else{if(_0xca9f13[_0x1613c0(0x457)]==_0x1613c0(0x306))return(_0xca9f13[_0x1613c0(0x207)]==_0x1613c0(0x33f)||_0xca9f13[_0x504d46(0x622)]==_0x1613c0(0x2f4))&&(_0xca9f13[_0x1613c0(0x207)]=_0x1613c0(0x1d1)),_0xca9f13[_0x1613c0(0x505)]!=_spPageContextInfo[_0x504d46(0x215)]&&$['when'](GetFormDigestValue(_0xca9f13[_0x1613c0(0x505)]))[_0x1613c0(0x577)](function(_0x58ba6c){RequestDigest=_0x58ba6c;}),$[_0x1613c0(0x42c)]({'url':_0xca9f13[_0x1613c0(0x505)]+_0x1613c0(0x206)+_0xca9f13[_0x1613c0(0x207)]+_0x1613c0(0x53e)+_0xca9f13[_0x1613c0(0x329)]+')','type':_0x1613c0(0x1bb),'async':![],'headers':{'accept':_0x1613c0(0x4b9),'content-type':_0x1613c0(0x4b9),'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x1613c0(0x5c3)},'data':JSON[_0x1613c0(0x1a4)](Metadata),'success':function(_0x4a69c3){var _0x23b608=_0x504d46,_0x6bb59d=_0x1613c0;RequestDigest=$(_0x6bb59d(0x57c))[_0x6bb59d(0x419)]();if(arrFileFolder[_0x6bb59d(0x4a1)]==_0x599e67+0x1){$(_0x6bb59d(0x18f))[_0x6bb59d(0x612)](_0x23b608(0x26c)),FailDueToCheckOut==0x0?alert(_0x6bb59d(0x452)):alert(FailDueToCheckOut+_0x6bb59d(0x468)),($('#ModalDisplayProperty')[_0x23b608(0x5ce)](_0x6bb59d(0x3f3)),$(_0x6bb59d(0x2fb))['prop'](_0x6bb59d(0x2fc),''),arrFileFolder=[],$(_0x6bb59d(0x18d))[_0x6bb59d(0x419)](''),$(_0x23b608(0x570))[_0x6bb59d(0x419)](_0x6bb59d(0x6e4)),$(_0x6bb59d(0x38f))[_0x23b608(0x1ea)](_0x6bb59d(0x6e4)),$(_0x23b608(0x296))[_0x6bb59d(0x47f)](_0x6bb59d(0x3da),''));var _0x5b88ed=Documentname;Documentname[_0x23b608(0x306)]('/Documents/')==!![]&&(_0x5b88ed=_0x6bb59d(0x33f)),GetMyDocumentsWithFilesFolder(_0x5b88ed);}_0x59be0c[_0x23b608(0x44c)](_0x4a69c3);},'error':function(_0x366d32){var _0x28cd41=_0x504d46,_0x4c3dc7=_0x1613c0;RequestDigest=$(_0x4c3dc7(0x57c))[_0x4c3dc7(0x419)](),arrFileFolder[_0x4c3dc7(0x4a1)]==_0x599e67+0x1&&(arrFileFolder=[]);if(_0x366d32[_0x28cd41(0x4dd)][_0x4c3dc7(0x189)](_0x4c3dc7(0x6c9))!=-0x1||_0x366d32[_0x4c3dc7(0x400)][_0x4c3dc7(0x189)](_0x4c3dc7(0x47e))!=-0x1){var _0x516a4a=Documentname;Documentname['includes'](_0x4c3dc7(0x320))==!![]&&(_0x516a4a=_0x4c3dc7(0x33f)),FailDueToCheckOut=0x0;if(_0x516a4a[_0x516a4a[_0x4c3dc7(0x4a1)]-0x1]=='/')var _0x53dcaa=_0x516a4a;else var _0x53dcaa=_0x516a4a+'/';GetMyDocumentsWithFilesFolder(_0x53dcaa),$(_0x4c3dc7(0x483))[_0x4c3dc7(0x341)](_0x28cd41(0x39a)),alert(_0x4c3dc7(0x6e9));}else{if(_0x366d32[_0x4c3dc7(0x400)][_0x4c3dc7(0x189)](_0x4c3dc7(0x3ae))!=-0x1)alert(_0x4c3dc7(0x270)+_0x1ecd8b+_0x4c3dc7(0x1e6));else{var _0x1c674f='';_0x366d32[_0x4c3dc7(0x32f)][_0x4c3dc7(0x38d)][_0x4c3dc7(0x57b)][_0x4c3dc7(0x447)]==undefined?_0x1c674f=JSON[_0x28cd41(0x2da)](_0x366d32):_0x1c674f=_0x366d32[_0x28cd41(0x3f7)][_0x4c3dc7(0x38d)][_0x4c3dc7(0x57b)][_0x4c3dc7(0x447)],alert(_0x1ecd8b+_0x4c3dc7(0x1b5)+_0x1c674f);}}$(_0x4c3dc7(0x2fb))[_0x28cd41(0x235)](_0x4c3dc7(0x2fc),''),_0x59be0c[_0x4c3dc7(0x2f3)](_0x366d32);}}),_0x59be0c[_0x1613c0(0x297)]();else{FailDueToCheckOut++;if(FailDueToCheckOut==arrFileFolder[_0x1613c0(0x4a1)])waitingDialog[_0x1613c0(0x3f3)](),FailDueToCheckOut=0x0,$(_0x1613c0(0x18f))[_0x1613c0(0x612)](_0x1613c0(0x382)),alert(_0x1613c0(0x53b)),$(_0x1613c0(0x1fa))[_0x1613c0(0x341)](_0x1613c0(0x3f3)),$(_0x1613c0(0x2fb))[_0x1613c0(0x47f)](_0x1613c0(0x2fc),''),arrFileFolder=[],$(_0x1613c0(0x18d))[_0x1613c0(0x419)](''),$(_0x1613c0(0x1e7))[_0x1613c0(0x419)](_0x1613c0(0x6e4)),$(_0x1613c0(0x38f))[_0x1613c0(0x419)](_0x1613c0(0x6e4)),$(_0x1613c0(0x6b3))[_0x1613c0(0x47f)](_0x1613c0(0x3da),'');else{if(arrFileFolder[_0x1613c0(0x4a1)]==_0x599e67+0x1){$(_0x1613c0(0x18f))[_0x1613c0(0x612)](_0x1613c0(0x382)),FailDueToCheckOut==0x0?alert(_0x1613c0(0x452)):alert(FailDueToCheckOut+_0x504d46(0x2cc)),($(_0x504d46(0x521))[_0x1613c0(0x341)](_0x1613c0(0x3f3)),$(_0x504d46(0x56c))[_0x504d46(0x235)](_0x1613c0(0x2fc),''),arrFileFolder=[],$(_0x504d46(0x557))[_0x1613c0(0x419)](''),$(_0x1613c0(0x1e7))[_0x1613c0(0x419)](_0x1613c0(0x6e4)),$(_0x504d46(0x66a))[_0x1613c0(0x419)](_0x1613c0(0x6e4)),$('.chkFileFolder')[_0x504d46(0x235)](_0x1613c0(0x3da),''));var _0x4ee73c=Documentname;Documentname[_0x504d46(0x306)](_0x1613c0(0x320))==!![]&&(_0x4ee73c=_0x1613c0(0x33f)),GetMyDocumentsWithFilesFolder(_0x4ee73c);}}}}}else{if(arrFileFolder[_0x1613c0(0x4a1)]==_0x599e67+0x1){$(_0x1613c0(0x18f))[_0x504d46(0x1d4)](_0x1613c0(0x382)),FailDueToCheckOut==0x0?alert(_0x1613c0(0x452)):alert(FailDueToCheckOut+_0x1613c0(0x468)),(FailDueToCheckOut=0x0,$(_0x1613c0(0x1fa))[_0x1613c0(0x341)](_0x1613c0(0x3f3)),$('#btnUpdateProp')[_0x504d46(0x235)](_0x1613c0(0x2fc),''),arrFileFolder=[],$(_0x1613c0(0x6b3))['prop'](_0x504d46(0x495),''));var _0x4ee73c=Documentname;Documentname[_0x1613c0(0x3cc)](_0x1613c0(0x320))==!![]&&(_0x4ee73c=_0x1613c0(0x33f));if(_0x4ee73c[_0x4ee73c[_0x504d46(0x1d9)]-0x1]=='/')var _0xfbaa59=_0x4ee73c;else var _0xfbaa59=_0x4ee73c+'/';GetMyDocumentsWithFilesFolder(_0xfbaa59);}}});}function UpdateFileProperties(){var _0x300517=a90_0x13126d,_0x49f7c8=_0x4ce28e,_0x24a076=$[_0x300517(0x182)]();if(CopyLibrary[_0x49f7c8(0x674)](/\bDocuments\b/)>=0x0)var _0x4ec4f4=GetItemTypeForLibraryName(_0x49f7c8(0x25d));else{if(CopyLibrary==_0x49f7c8(0x2f4)||CopyLibrary==_0x49f7c8(0x33f))var _0x4ec4f4=GetItemTypeForLibraryName(_0x49f7c8(0x25d));else var _0x4ec4f4=GetItemTypeForLibraryName(CopyLibrary);}Metadata={'__metadata':{'type':_0x4ec4f4},'Title':$(_0x49f7c8(0x5aa))[_0x49f7c8(0x419)](),'DocumentNo':$(_0x49f7c8(0x572))[_0x49f7c8(0x419)](),'DocumentType':$(_0x49f7c8(0x1e7))[_0x49f7c8(0x419)](),'DocumentWrittenBy':$(_0x49f7c8(0x571))[_0x49f7c8(0x419)](),'Details':$('#txtUpdateDetails')[_0x49f7c8(0x419)](),'SubCategory':$(_0x49f7c8(0x38f))[_0x49f7c8(0x419)](),'FileValidity':new Date()[_0x49f7c8(0x647)]()},$(_0x300517(0x320))[_0x300517(0x235)](_0x300517(0x495))==![]?delete Metadata[_0x300517(0x55a)]:$(_0x300517(0x282))[_0x49f7c8(0x340)]($('#txtUpdateTitle')[_0x49f7c8(0x419)]()),$(_0x300517(0x389))[_0x49f7c8(0x47f)](_0x49f7c8(0x3da))==![]?delete Metadata[_0x49f7c8(0x3ff)]:$(_0x300517(0x3d2))[_0x300517(0x1ca)]($(_0x49f7c8(0x572))[_0x49f7c8(0x419)]()),$(_0x49f7c8(0x5cb))[_0x49f7c8(0x47f)](_0x49f7c8(0x3da))==![]?delete Metadata[_0x49f7c8(0x659)]:$(_0x49f7c8(0x2d6))[_0x49f7c8(0x340)]('('+$(_0x300517(0x570))[_0x49f7c8(0x419)]()+')'),$(_0x49f7c8(0x5c5))[_0x49f7c8(0x47f)](_0x49f7c8(0x3da))==![]?delete Metadata['SubCategory']:$(_0x49f7c8(0x3b4))[_0x49f7c8(0x340)]($(_0x49f7c8(0x38f))[_0x49f7c8(0x419)]()),$(_0x49f7c8(0x26f))['prop'](_0x49f7c8(0x3da))==![]?delete Metadata[_0x49f7c8(0x1da)]:$(_0x49f7c8(0x5ea))[_0x300517(0x1ca)]($(_0x49f7c8(0x571))['val']()),$(_0x49f7c8(0x181))[_0x300517(0x235)](_0x49f7c8(0x3da))==![]?delete Metadata[_0x49f7c8(0x4f3)]:$('#FileValidityPopup')[_0x49f7c8(0x340)]($(_0x49f7c8(0x6e2))[_0x49f7c8(0x419)]()),$(_0x49f7c8(0x4a4))[_0x49f7c8(0x47f)](_0x300517(0x495))==![]?delete Metadata[_0x300517(0x51a)]:$(_0x49f7c8(0x59e))[_0x49f7c8(0x340)]($(_0x49f7c8(0x2c8))[_0x49f7c8(0x419)]());if($(_0x300517(0x5cf))[_0x49f7c8(0x40d)](_0x49f7c8(0x25f))['length']>0x0)for(var _0x18aa4f=0x0;_0x18aa4f<arrCustomCol[_0x49f7c8(0x4a1)];_0x18aa4f++){if($(_0x300517(0x5cf))[_0x300517(0x5f1)](_0x49f7c8(0x25f))['length']>0x0)for(var _0x18aa4f=0x0;_0x18aa4f<arrCustomCol[_0x300517(0x1d9)];_0x18aa4f++){if($('#'+arrCustomCol[_0x18aa4f][_0x300517(0x4f8)])[_0x49f7c8(0x47f)](_0x49f7c8(0x3da))==!![]){if(arrCustomCol[_0x18aa4f][_0x49f7c8(0x5ca)]==_0x49f7c8(0x4ff))Metadata[arrCustomCol[_0x18aa4f][_0x49f7c8(0x2f9)]]=$('#'+arrCustomCol[_0x18aa4f][_0x49f7c8(0x519)])[_0x300517(0x1ea)](),$(_0x49f7c8(0x44b)+arrCustomCol[_0x18aa4f][_0x49f7c8(0x2f9)])[_0x49f7c8(0x340)]($('#'+arrCustomCol[_0x18aa4f][_0x49f7c8(0x519)])[_0x49f7c8(0x419)]());else{if(arrCustomCol[_0x18aa4f][_0x300517(0x3b7)]=='Date')Metadata[arrCustomCol[_0x18aa4f][_0x49f7c8(0x2f9)]]=new Date($('#'+arrCustomCol[_0x18aa4f][_0x300517(0x3f5)])[_0x49f7c8(0x419)]())['toISOString'](),$(_0x300517(0x574)+arrCustomCol[_0x18aa4f][_0x49f7c8(0x2f9)])[_0x49f7c8(0x340)](titanForWork[_0x49f7c8(0x1b6)](new Date($('#'+arrCustomCol[_0x18aa4f][_0x49f7c8(0x519)])[_0x49f7c8(0x419)]())[_0x49f7c8(0x647)]()));else arrCustomCol[_0x18aa4f][_0x49f7c8(0x5ca)]==_0x300517(0x573)&&(Metadata[arrCustomCol[_0x18aa4f][_0x300517(0x3fd)]]=parseInt($('#'+arrCustomCol[_0x18aa4f][_0x300517(0x3f5)])[_0x49f7c8(0x419)]()),$(_0x49f7c8(0x44b)+arrCustomCol[_0x18aa4f][_0x49f7c8(0x2f9)])[_0x49f7c8(0x340)]($('#'+arrCustomCol[_0x18aa4f][_0x49f7c8(0x519)])[_0x300517(0x1ea)]()));}}}}return(CopyLibrary==_0x300517(0x339)||CopyLibrary==_0x49f7c8(0x2f4))&&(CopyLibrary=_0x300517(0x3cb)),CopySourceURL!=_spPageContextInfo[_0x49f7c8(0x229)]&&$[_0x49f7c8(0x3a9)](GetFormDigestValue(CopySourceURL))[_0x49f7c8(0x577)](function(_0x450a37){RequestDigest=_0x450a37;}),$[_0x49f7c8(0x42c)]({'url':CopySourceURL+_0x49f7c8(0x206)+CopyLibrary+_0x49f7c8(0x53e)+DocumentId+')','type':_0x49f7c8(0x1bb),'async':![],'headers':{'accept':_0x49f7c8(0x4b9),'content-type':_0x49f7c8(0x4b9),'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x49f7c8(0x5c3)},'data':JSON[_0x49f7c8(0x1a4)](Metadata),'success':function(_0x517007){var _0x1fe706=_0x300517,_0x4fedc7=_0x49f7c8;RequestDigest=$(_0x4fedc7(0x57c))['val']();var _0x16e307=Documentname;Documentname[_0x1fe706(0x2d8)](/\bDocuments\b/)>=0x0&&(_0x16e307=_0x4fedc7(0x33f)),GetMyDocumentsWithFilesFolder(_0x16e307),$(_0x4fedc7(0x18f))[_0x4fedc7(0x612)](_0x4fedc7(0x382)),alert(_0x1fe706(0x28d)),$(_0x4fedc7(0x2fb))[_0x4fedc7(0x47f)](_0x1fe706(0x45b),''),_0x24a076[_0x4fedc7(0x321)](_0x517007);},'error':function(_0x1c714b){var _0x5694ee=_0x300517,_0xf0fb52=_0x49f7c8;RequestDigest=$(_0xf0fb52(0x57c))[_0x5694ee(0x1ea)]();if(_0x1c714b[_0x5694ee(0x4dd)][_0x5694ee(0x4dc)](_0xf0fb52(0x6c9))!=-0x1)alert(_0xf0fb52(0x533));else{if(_0x1c714b[_0x5694ee(0x4dd)][_0xf0fb52(0x189)](_0xf0fb52(0x3ae))!=-0x1)alert(_0xf0fb52(0x270)+$(_0x5694ee(0x20c))[_0xf0fb52(0x340)]()+_0x5694ee(0x648));else{var _0x43b451='';_0x1c714b[_0xf0fb52(0x32f)][_0xf0fb52(0x38d)][_0xf0fb52(0x57b)][_0xf0fb52(0x447)]==undefined?_0x43b451=JSON[_0x5694ee(0x2da)](_0x1c714b):_0x43b451=_0x1c714b[_0xf0fb52(0x32f)][_0x5694ee(0x335)][_0xf0fb52(0x57b)][_0xf0fb52(0x447)],alert(_0x43b451);}}$(_0xf0fb52(0x2fb))[_0xf0fb52(0x47f)](_0xf0fb52(0x2fc),''),_0x24a076['reject'](_0x1c714b);}}),_0x24a076[_0x49f7c8(0x297)]();}function DeleteSharedLinks(_0x1a029a){var _0xa93579=a90_0x13126d,_0x1292c4=_0x4ce28e;$[_0x1292c4(0x42c)]({'url':_spPageContextInfo[_0x1292c4(0x229)]+_0x1292c4(0x3ef)+_0x1a029a+'\x27)','type':_0x1292c4(0x1bb),'async':![],'headers':{'X-RequestDigest':$(_0x1292c4(0x57c))[_0xa93579(0x1ea)](),'IF-MATCH':'*','X-HTTP-Method':_0x1292c4(0x473)},'success':function(_0x1999f3,_0x2fc495,_0x5f123f){var _0xabd462=_0x1292c4;console[_0xabd462(0x403)](_0xabd462(0x67a));},'error':function(_0x469c97,_0x2b90fa,_0x37ef6c){var _0x353233=_0xa93579,_0x2de6ae=_0x1292c4;waitingDialog[_0x2de6ae(0x3f3)](),console[_0x353233(0x41a)](_0x469c97[_0x2de6ae(0x400)]);}});}function ClearLibraryFilter(){var _0x5cab4e=a90_0x13126d,_0x366e8b=_0x4ce28e;$(_0x366e8b(0x6b8))['val'](_0x366e8b(0x3f1)),$(_0x5cab4e(0x1a3))[_0x366e8b(0x419)](_0x366e8b(0x3f1)),$(_0x366e8b(0x42f))[_0x366e8b(0x314)]()[_0x366e8b(0x693)](_0x366e8b(0x43a)),$(_0x366e8b(0x32e))['val'](''),$(_0x366e8b(0x294))[_0x5cab4e(0x1ea)](''),$(_0x366e8b(0x27d))[_0x366e8b(0x419)](_0x366e8b(0x3f1)),$(_0x366e8b(0x443))[_0x366e8b(0x419)](_0x366e8b(0x3f1)),$(_0x366e8b(0x1f6))[_0x366e8b(0x419)](''),$(_0x5cab4e(0x277))[_0x366e8b(0x419)]('');}function LibraryFilter(){var _0x5a2801=a90_0x13126d,_0x1f04b4=_0x4ce28e,_0x1497ff=[],_0x24c224=[],_0x5d5a73='',_0x320a85='',_0x5f0da4='',_0x5411c2='',_0x40000b='',_0xe007af='',_0x2723af='',_0x4a665a='',_0x5be75f=moment($(_0x5a2801(0x44f))[_0x1f04b4(0x419)]())[_0x1f04b4(0x54f)](_0x5a2801(0x3a3));;_0x5be75f==_0x5a2801(0x45c)||_0x5be75f==_0x1f04b4(0x540)?_0x5be75f=_0x1f04b4(0x4e7):_0x5be75f=new Date(_0x5be75f);var _0x35bfc3=moment($(_0x5a2801(0x277))[_0x1f04b4(0x419)]())[_0x1f04b4(0x54f)]('MM/DD/YYYY');;_0x35bfc3==_0x1f04b4(0x2cc)||_0x35bfc3==_0x5a2801(0x5f0)?_0x35bfc3=_0x5a2801(0x181):_0x35bfc3=new Date(_0x35bfc3),(_0x24c224=getFileExtenson(),_0x1497ff=arrFilterTable[_0x1f04b4(0x312)](function(_0x34116e,_0x54ad3d){var _0x3cf206=_0x5a2801,_0x177026=_0x1f04b4;return _0x4a665a=_0x34116e[_0x177026(0x3bd)][_0x177026(0x5c2)][_0x177026(0x65b)](_0x34116e[_0x177026(0x3bd)][_0x177026(0x5c2)][_0x3cf206(0x4a3)]('.')+0x1)[_0x177026(0x1d9)](),_0x34116e[_0x177026(0x3bd)][_0x177026(0x55e)]!=undefined?(_0x5d5a73=_0x34116e[_0x177026(0x3bd)][_0x3cf206(0x245)][_0x177026(0x659)],_0x320a85=_0x34116e[_0x177026(0x3bd)][_0x177026(0x55e)][_0x3cf206(0x1c3)],_0x5f0da4=_0x34116e[_0x177026(0x3bd)][_0x177026(0x55e)][_0x177026(0x659)],_0x5411c2=_0x34116e[_0x3cf206(0x30e)][_0x3cf206(0x245)][_0x177026(0x1da)],_0x40000b=_0x34116e[_0x177026(0x3bd)][_0x3cf206(0x245)][_0x177026(0x52b)],_0xe007af=_0x34116e[_0x177026(0x3bd)][_0x3cf206(0x245)][_0x177026(0x4e8)],dt=new Date(_0x34116e['files']['ListItemAllFields'][_0x3cf206(0x5c2)]),ModifiedDate=new Date(moment(dt)[_0x3cf206(0x634)](_0x177026(0x590))),_0x40000b==null&&(_0x40000b=_0x177026(0x630))):(IsMyfavorate=!![],_0x5d5a73=_0x34116e[_0x177026(0x3bd)][_0x177026(0x659)],_0x320a85=_0x34116e[_0x177026(0x3bd)]['SubCategory'],_0x5f0da4=_0x34116e[_0x177026(0x3bd)][_0x177026(0x3ff)],_0x5411c2=_0x34116e[_0x177026(0x3bd)][_0x3cf206(0x298)],_0x40000b=_0x34116e[_0x3cf206(0x30e)][_0x177026(0x52b)],_0xe007af=_0x34116e[_0x177026(0x3bd)][_0x177026(0x615)],dt=new Date(_0x34116e[_0x177026(0x3bd)][_0x3cf206(0x5c2)]),ModifiedDate=new Date(moment(dt)[_0x177026(0x54f)](_0x177026(0x590))),_0x40000b==null&&(_0x40000b=_0x177026(0x630))),(_0x5f0da4==null||_0x5f0da4=='')&&(_0x5f0da4=_0x3cf206(0x181)),(_0x5411c2==null||_0x5411c2=='')&&(_0x5411c2=_0x177026(0x4e7)),(_0x5d5a73==null||_0x5d5a73==''||_0x5d5a73==_0x177026(0x627)||_0x5d5a73==_0x177026(0x6e4))&&(_0x5d5a73=_0x3cf206(0x181)),(_0x320a85==null||_0x320a85==''||_0x320a85==_0x3cf206(0x241)||_0x320a85==_0x177026(0x6e4))&&(_0x320a85=_0x177026(0x4e7)),($(_0x177026(0x6b8))[_0x177026(0x419)]()==_0x3cf206(0x54c)?_0x4a665a!='':_0x24c224[_0x177026(0x3cc)](_0x4a665a[_0x177026(0x1d9)]()))&&($(_0x177026(0x527))[_0x177026(0x419)]()==_0x177026(0x3f1)?_0x5d5a73!='':_0x5d5a73==$(_0x3cf206(0x1a3))[_0x177026(0x419)]())&&($(_0x177026(0x42f))[_0x3cf206(0x1ea)]()==_0x177026(0x3f1)?_0x320a85!='':_0x320a85==$(_0x177026(0x42f))['val']())&&($(_0x3cf206(0x466))[_0x177026(0x419)]()[_0x177026(0x6ee)]()==_0x177026(0x4e7)?_0x5f0da4!='null':_0x5f0da4[_0x177026(0x1d9)]()==$(_0x3cf206(0x466))[_0x177026(0x419)]()[_0x177026(0x1d9)]()||_0x5f0da4[_0x3cf206(0x581)]()[_0x177026(0x189)]($(_0x177026(0x32e))[_0x3cf206(0x1ea)]()[_0x177026(0x1d9)]())!=-0x1)&&($(_0x177026(0x294))[_0x177026(0x419)]()[_0x3cf206(0x549)]()==_0x177026(0x4e7)?_0x5411c2!=_0x177026(0x4e7):_0x5411c2[_0x177026(0x1d9)]()==$(_0x177026(0x294))[_0x177026(0x419)]()[_0x3cf206(0x581)]()||_0x5411c2[_0x177026(0x1d9)]()[_0x177026(0x189)]($(_0x177026(0x294))[_0x177026(0x419)]()[_0x3cf206(0x581)]())!=-0x1)&&($(_0x177026(0x27d))[_0x177026(0x419)]()==_0x177026(0x3f1)?_0x40000b!='':_0x40000b==$(_0x177026(0x27d))[_0x3cf206(0x1ea)]())&&($(_0x177026(0x443))[_0x177026(0x419)]()==_0x3cf206(0x54c)?_0xe007af!='':_0xe007af==$(_0x177026(0x443))[_0x3cf206(0x1ea)]())&&(_0x5be75f==_0x177026(0x4e7)?ModifiedDate!=_0x3cf206(0x181):ModifiedDate>=_0x5be75f)&&(_0x35bfc3==_0x177026(0x4e7)?ModifiedDate!=_0x177026(0x4e7):ModifiedDate<=_0x35bfc3);}),$(_0x1f04b4(0x3e5))[_0x1f04b4(0x314)](),$(_0x5a2801(0x2a3))['empty']());if(_0x1497ff[_0x1f04b4(0x4a1)]==0x0)$(_0x5a2801(0x2a3))[_0x1f04b4(0x693)](_0x1f04b4(0x1af)),waitingDialog[_0x1f04b4(0x3f3)]();else{var _0x584902='';_0x584902+=_0x1f04b4(0x50e)+'<label\x20class=\x22checkbox-inline\x20hpx-20\x22><input\x20type=\x22checkbox\x22\x20id=\x22selectAllChk\x22\x20value=\x22\x22></label>'+_0x5a2801(0x3cc);for(var _0x5a6ffe=0x0;_0x5a6ffe<arrCurrentColumns['length'];_0x5a6ffe++){if(arrCurrentColumns[_0x5a6ffe][_0x5a2801(0x1bb)]==_0x5a2801(0x5a8))_0x584902+=_0x1f04b4(0x2c1);else{if(arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]==_0x5a2801(0x5fc))_0x584902+=_0x1f04b4(0x414);else{if(arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]=='ApprovedByOutsider'||arrCurrentColumns[_0x5a6ffe][_0x5a2801(0x1bb)]=='ApprovedBy')_0x584902+='<th\x20class=\x22disableSort\x22\x20data-localize=\x22Approval\x22>Approval</th>';else{if(arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]==_0x1f04b4(0x614))_0x584902+=_0x1f04b4(0x2de);else arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]==_0x1f04b4(0x475)?_0x584902+=_0x1f04b4(0x450):_0x584902+=_0x1f04b4(0x501)+arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]+'\x22>'+arrCurrentColumns[_0x5a6ffe][_0x1f04b4(0x2ef)]+_0x1f04b4(0x67c);}}}}$(_0x1f04b4(0x4e3))[_0x1f04b4(0x314)]()[_0x5a2801(0x41c)](_0x1f04b4(0x665)),$(_0x5a2801(0x60d))[_0x1f04b4(0x678)](''),$(_0x1f04b4(0x18a))[_0x1f04b4(0x693)](_0x584902),_0x1497ff[_0x1f04b4(0x22c)](function(_0x40a6fd,_0x2509ab){var _0x48a96f=_0x5a2801,_0x51905d=_0x1f04b4;genrateHtmlgrid(_0x40a6fd[_0x51905d(0x543)],_0x40a6fd[_0x48a96f(0x4ec)],_0x40a6fd[_0x51905d(0x3bd)],_0x40a6fd[_0x51905d(0x434)],_0x40a6fd[_0x51905d(0x5d4)],_0x51905d(0x3cd)),_0x1497ff[_0x51905d(0x4a1)]==_0x2509ab+0x1&&waitingDialog[_0x48a96f(0x39a)]();}),$(_0x1f04b4(0x6b3))[_0x1f04b4(0x382)](function(){var _0x5345fb=_0x5a2801,_0x319155=_0x1f04b4,_0x42e8f8=this[_0x319155(0x447)][_0x319155(0x288)](',');if(this[_0x319155(0x3da)]==!![])arrFileFolder[_0x319155(0x4f4)]({'type':_0x42e8f8[0x0][_0x319155(0x6ee)](),'ServerURL':_0x42e8f8[0x1]['trim'](),'DocumentId':_0x42e8f8[0x2][_0x319155(0x6ee)](),'SiteURL':_0x42e8f8[0x3][_0x319155(0x6ee)](),'SelectedLibrary':_0x42e8f8[0x4][_0x5345fb(0x549)](),'FileFolderName':_0x42e8f8[0x5][_0x319155(0x6ee)](),'CopyFileLink':_0x42e8f8[0x6][_0x319155(0x6ee)](),'FileTitle':_0x42e8f8[0x7][_0x319155(0x6ee)](),'FileRef':_0x42e8f8[0x8][_0x319155(0x6ee)](),'FileType':_0x42e8f8[0x9][_0x319155(0x6ee)](),'DocType':_0x42e8f8[0xa][_0x319155(0x6ee)](),'fileFilderInheritance':$(this)[_0x319155(0x2c7)](_0x319155(0x407))});else{var _0x4fcf13=this[_0x319155(0x447)];arrFileFolder=arrFileFolder[_0x319155(0x312)](function(_0x17d571){var _0x1858d1=_0x319155;return _0x17d571[_0x1858d1(0x329)]!=_0x42e8f8[0x2][_0x1858d1(0x6ee)]();});}}),$(_0x1f04b4(0x32b))[_0x5a2801(0x26c)](function(_0x479569){var _0x3888da=_0x5a2801,_0x10c1e4=_0x1f04b4;waitingDialog[_0x3888da(0x46b)](),this[_0x10c1e4(0x3da)]==!![]?($(_0x10c1e4(0x6b3))[_0x10c1e4(0x47f)](_0x3888da(0x495),''),$(_0x10c1e4(0x6b3))['trigger'](_0x10c1e4(0x382))):($('.chkFileFolder')[_0x10c1e4(0x47f)](_0x10c1e4(0x3da),''),arrFileFolder=[]),waitingDialog[_0x10c1e4(0x3f3)]();}),Tableagination();}}function getFileExtenson(_0x2affd3){var _0x4d162e=a90_0x13126d,_0x412660=_0x4ce28e,_0x183384=[];if($(_0x4d162e(0x2a4))[_0x412660(0x419)]()==_0x412660(0x24f))return _0x183384=[_0x412660(0x4bb),_0x412660(0x563)],_0x183384;else{if($(_0x412660(0x6b8))[_0x412660(0x419)]()==_0x4d162e(0x526))return _0x183384=[_0x412660(0x3f7),'xlsm',_0x412660(0x6c1),_0x412660(0x6dd)],_0x183384;else{if($(_0x412660(0x6b8))[_0x412660(0x419)]()==_0x412660(0x582))return _0x183384=[_0x4d162e(0x2e9),_0x412660(0x17a),'ppt',_0x412660(0x68c)],_0x183384;else{if($(_0x412660(0x6b8))[_0x412660(0x419)]()==_0x4d162e(0x25e))return _0x183384=[_0x412660(0x580)],_0x183384;else{if($(_0x412660(0x6b8))['val']()==_0x4d162e(0x2f8))return _0x183384=['pdf','ps'],_0x183384;else{if($(_0x412660(0x6b8))['val']()==_0x412660(0x301))return _0x183384=[_0x412660(0x4e6),_0x412660(0x2ac),_0x412660(0x2ae),_0x412660(0x4eb),_0x412660(0x2b2),_0x412660(0x4f5),_0x4d162e(0x64c)],_0x183384;else{if($(_0x412660(0x6b8))[_0x4d162e(0x1ea)]()==_0x412660(0x4e4))return _0x183384=[_0x412660(0x5ab),_0x412660(0x4bd),_0x412660(0x1f8),_0x4d162e(0x252),_0x412660(0x240),_0x4d162e(0x3e5),_0x412660(0x254)],_0x183384;else{if($(_0x412660(0x6b8))[_0x412660(0x419)]()==_0x412660(0x521))return _0x183384=[_0x412660(0x678),_0x4d162e(0x20f)],_0x183384;else return $(_0x412660(0x6b8))[_0x412660(0x419)]()==_0x412660(0x47b)?(_0x183384=['rar',_0x412660(0x2d2),_0x412660(0x57f)],_0x183384):(_0x183384[_0x412660(0x4f4)](_0x4d162e(0x54c)),_0x183384);}}}}}}}}function DeleteFileFromSource(_0x4ee2f7){var _0x427ae2=a90_0x13126d,_0x1ab664=_0x4ce28e;CopyLibrary==_0x1ab664(0x33f)&&(CopyLibrary=_0x1ab664(0x1d1)),CopySourceURL!=_spPageContextInfo[_0x1ab664(0x229)]&&$[_0x1ab664(0x3a9)](GetFormDigestValue(CopySourceURL))[_0x1ab664(0x577)](function(_0xb037d9){RequestDigest=_0xb037d9;}),$[_0x427ae2(0x21a)]({'url':CopySourceURL+_0x1ab664(0x3e3)+CopyLibrary+'\x27)/items(\x27'+DocumentId+'\x27)','type':_0x1ab664(0x1bb),'async':![],'headers':{'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':'DELETE'},'success':function(_0x333fe9,_0x3e5ec8,_0xd8219a){var _0x4c2b06=_0x427ae2,_0x19b82c=_0x1ab664;RequestDigest=$(_0x19b82c(0x57c))[_0x19b82c(0x419)](),$(_0x19b82c(0x1fa))[_0x19b82c(0x341)](_0x19b82c(0x3f3)),CopyLibrary='',CopyDestURL='';if(_0x4ee2f7==_0x4c2b06(0x5bd)){alert(_0x19b82c(0x2ce));var _0x599b63=Documentname;$('#ModalDisplayProperty')[_0x19b82c(0x341)](_0x19b82c(0x3f3)),Documentname[_0x4c2b06(0x2d8)](/\bDocuments\b/)>=0x0&&(_0x599b63=_0x19b82c(0x33f)),GetMyDocumentsWithFilesFolder(_0x599b63);}else{}},'error':function(_0x2dba72,_0x10546,_0x1af7b8){var _0xbe5058=_0x427ae2,_0x40e31a=_0x1ab664;return RequestDigest=$(_0x40e31a(0x57c))[_0xbe5058(0x1ea)](),_0x2dba72[_0x40e31a(0x400)][_0x40e31a(0x3cc)](_0x40e31a(0x3ae))==!![]?(alert(_0x40e31a(0x2e9)),![]):(alert(_0x2dba72[_0x40e31a(0x400)]),![]);}});}function EditAddedStep(_0x8fa89b,_0x3f53ed,_0x23ecdb){var _0x3aad8a=a90_0x13126d,_0x26f26c=_0x4ce28e,_0x48eeb8=$(_0x26f26c(0x46a))[_0x26f26c(0x340)](),_0x77e536='',_0x36f456=$(_0x26f26c(0x52a))[_0x26f26c(0x419)](),_0x11c420='',_0x1b76c9=!![],_0x465b6a=0x0,_0x90b671=[];if($(_0x26f26c(0x4bc))[_0x26f26c(0x47f)](_0x26f26c(0x3da))){_0x11c420=_0x26f26c(0x20c);if($(_0x26f26c(0x666))[_0x26f26c(0x419)]()!=_0x26f26c(0x2bf))for(var _0x3f5566=0x0;_0x3f5566<_0x23ecdb[_0x26f26c(0x4a1)];_0x3f5566++){_0x1b76c9=checkUserValid(_0x8fa89b[_0x3f5566]),_0x1b76c9==![]&&(_0x90b671[_0x26f26c(0x4f4)](_0x3f53ed[_0x3f5566]),_0x8fa89b=_0x8fa89b[_0x26f26c(0x312)](function(_0x18d4c8){var _0x447653=_0x26f26c;return _0x18d4c8[_0x447653(0x1d9)]()!==_0x8fa89b[_0x3f5566][_0x447653(0x1d9)]();}),_0x3f53ed=_0x3f53ed['filter'](function(_0x172560){var _0x59f9a0=_0x26f26c;return _0x172560[_0x59f9a0(0x1d9)]()!==_0x3f53ed[_0x3f5566]['toLowerCase']();}),_0x23ecdb=_0x23ecdb[_0x26f26c(0x312)](function(_0x359566){return _0x359566!=_0x23ecdb[_0x3f5566];}));}_0x77e536+=_0x26f26c(0x619)+_0x48eeb8+'\x22>'+_0x8fa89b[_0x26f26c(0x470)]()+_0x26f26c(0x5f7)+_0x48eeb8+'\x22>'+_0x23ecdb[_0x3aad8a(0x62d)]()+_0x26f26c(0x289)+_0x48eeb8+'\x22>'+_0x3f53ed[_0x3aad8a(0x62d)]()+_0x3aad8a(0x554)+_0x48eeb8+'\x22>'+_0x36f456+_0x26f26c(0x4f0)+_0x48eeb8+'\x22>'+_0x11c420+_0x26f26c(0x37c),_0x77e536+='<div\x20class=\x22dropdown\x22><button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png\x22\x20alt=\x22\x22>',_0x77e536+=_0x26f26c(0x5f8)+_0x48eeb8+_0x26f26c(0x6e5),_0x77e536+=_0x3aad8a(0x66f)+_0x48eeb8+_0x26f26c(0x57a)+_0x48eeb8+_0x26f26c(0x426),_0x77e536+=_0x3aad8a(0x4eb)+_0x48eeb8+_0x26f26c(0x629)+_0x36f456+_0x26f26c(0x55b);for(var _0x3f5566=0x0;_0x3f5566<_0x23ecdb[_0x26f26c(0x4a1)];_0x3f5566++){_0x465b6a++;var _0x40a7a9=_spPageContextInfo[_0x26f26c(0x229)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x8fa89b[_0x3f5566]);_0x77e536+=_0x26f26c(0x4fe)+_0x40a7a9+_0x26f26c(0x32a),_0x77e536+=_0x26f26c(0x371)+_0x3f53ed[_0x3f5566]+_0x26f26c(0x1dd)+_0x8fa89b[_0x3f5566]+_0x26f26c(0x331)+_0x8fa89b[_0x3f5566]+_0x26f26c(0x1b8);}_0x77e536+=_0x3aad8a(0x579);}else{_0x465b6a++,_0x11c420=_0x3aad8a(0x459),_0x77e536+=_0x26f26c(0x619)+_0x48eeb8+'\x22>'+$(_0x26f26c(0x4ac))[_0x26f26c(0x419)]()+_0x26f26c(0x5f7)+_0x48eeb8+_0x26f26c(0x2a9)+_0x48eeb8+'\x22>'+_0x3f53ed[_0x3aad8a(0x62d)]()+_0x26f26c(0x524)+_0x48eeb8+'\x22>'+_0x36f456+_0x26f26c(0x4f0)+_0x48eeb8+'\x22>'+_0x11c420+_0x26f26c(0x37c),_0x77e536+='<div\x20class=\x22dropdown\x22><button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png\x22\x20alt=\x22\x22>',_0x77e536+=_0x26f26c(0x5f8)+_0x48eeb8+_0x3aad8a(0x354),_0x77e536+=_0x26f26c(0x4aa)+_0x48eeb8+_0x26f26c(0x57a)+_0x48eeb8+_0x26f26c(0x426),_0x77e536+=_0x26f26c(0x1e1)+_0x48eeb8+_0x26f26c(0x629)+_0x36f456+'</h3></div><div\x20class=\x22row\x22>';var _0x40a7a9=_spPageContextInfo[_0x26f26c(0x229)]+_0x26f26c(0x415)+escapeProperly($(_0x26f26c(0x4ac))[_0x3aad8a(0x1ea)]());_0x77e536+=_0x26f26c(0x4fe)+_0x40a7a9+_0x26f26c(0x32a),_0x77e536+=_0x26f26c(0x371)+$(_0x26f26c(0x4dd))[_0x3aad8a(0x1ea)]()+_0x26f26c(0x1dd)+$('#OutsiderEmail')[_0x26f26c(0x419)]()+_0x26f26c(0x331)+$(_0x26f26c(0x4ac))[_0x26f26c(0x419)]()+_0x3aad8a(0x428),_0x77e536+=_0x26f26c(0x441);}multipleEmailAddress=[],assignUserName=[],_0x23ecdb=[],_0x465b6a>0x0&&($(_0x26f26c(0x2e7)+$(_0x26f26c(0x46a))[_0x26f26c(0x340)]())[_0x3aad8a(0x51f)]()[_0x26f26c(0x678)](_0x77e536),$(_0x3aad8a(0x1b5))[_0x26f26c(0x314)](),$('#AddEditStepName')[_0x26f26c(0x419)](''),$(_0x26f26c(0x6cf))[_0x26f26c(0x3f3)]()),$(_0x3aad8a(0x49d))[_0x26f26c(0x419)]()!=_0x26f26c(0x2bf)&&(_0x90b671[_0x26f26c(0x4a1)]>0x0&&alert(_0x90b671[_0x26f26c(0x3d4)](',\x20')+_0x26f26c(0x2f1)));}function AddMoreStep(_0x102f65,_0x1ca3ed,_0x14d9ae,_0x38d17a){var _0x46f7fb=a90_0x13126d,_0x375672=_0x4ce28e,_0x3977d5=$(_0x375672(0x56b))[_0x375672(0x4a1)]+0x1,_0x1864ce='',_0x6aad47=$(_0x375672(0x52a))[_0x46f7fb(0x1ea)](),_0x5e3286='',_0x2ed153=!![],_0x50fa43=[],_0x56ee75=0x0,_0x47abb8=[];if(_0x102f65[0x0]!=_0x46f7fb(0x191)){if($(_0x46f7fb(0x663))[_0x375672(0x47f)](_0x375672(0x3da))){_0x14d9ae=_0x14d9ae[_0x375672(0x312)](function(_0x545550){var _0x286631=_0x46f7fb;return!Number[_0x286631(0x286)](_0x545550);});if($(_0x375672(0x666))[_0x375672(0x419)]()!=_0x375672(0x2bf))for(var _0x5d81ac=0x0;_0x5d81ac<_0x14d9ae[_0x375672(0x4a1)];_0x5d81ac++){_0x2ed153=checkUserValid(_0x102f65[_0x5d81ac]),_0x2ed153==![]&&(_0x47abb8[_0x46f7fb(0x5ae)](_0x1ca3ed[_0x5d81ac]),_0x102f65=_0x102f65[_0x375672(0x312)](function(_0x49cb7d){var _0x24887d=_0x375672;return _0x49cb7d[_0x24887d(0x1d9)]()!==_0x102f65[_0x5d81ac][_0x24887d(0x1d9)]();}),_0x1ca3ed=_0x1ca3ed[_0x46f7fb(0x633)](function(_0x2b39dd){var _0x39a57d=_0x46f7fb,_0x39de57=_0x375672;return _0x2b39dd[_0x39a57d(0x581)]()!==_0x1ca3ed[_0x5d81ac][_0x39de57(0x1d9)]();}),_0x14d9ae=_0x14d9ae[_0x375672(0x312)](function(_0x5bd45a){return _0x5bd45a!=_0x14d9ae[_0x5d81ac];}));}_0x5e3286=_0x375672(0x20c),_0x1864ce+=_0x46f7fb(0x32e)+_0x3977d5+'\x22>',_0x1864ce+=_0x375672(0x619)+_0x3977d5+'\x22>'+_0x102f65[_0x46f7fb(0x62d)]()+_0x46f7fb(0x434)+_0x3977d5+'\x22>'+_0x14d9ae[_0x375672(0x470)]()+_0x375672(0x289)+_0x3977d5+'\x22>'+_0x1ca3ed[_0x375672(0x470)]()+_0x46f7fb(0x554)+_0x3977d5+'\x22>'+_0x6aad47+_0x375672(0x4f0)+_0x3977d5+'\x22>'+_0x5e3286+_0x375672(0x4f0)+_0x3977d5+'\x22>'+_0x5e3286+_0x375672(0x4a2),_0x1864ce+=_0x375672(0x3e0)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x67e)]+_0x375672(0x545)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x46f7fb(0x33a)]+_0x375672(0x6d6)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x272)]+_0x375672(0x65f)+_0x3977d5+'\x22>'+$(_0x375672(0x5b4))[_0x375672(0x47f)](_0x46f7fb(0x495))+_0x375672(0x37c),_0x1864ce+=_0x375672(0x5f0),_0x1864ce+=_0x375672(0x5f8)+_0x3977d5+_0x46f7fb(0x354),_0x1864ce+=_0x46f7fb(0x66f)+_0x3977d5+_0x375672(0x57a)+_0x3977d5+_0x375672(0x426),_0x1864ce+=_0x46f7fb(0x4eb)+_0x3977d5+_0x375672(0x629)+_0x6aad47+_0x375672(0x55b);for(var _0x5d81ac=0x0;_0x5d81ac<_0x14d9ae[_0x375672(0x4a1)];_0x5d81ac++){_0x56ee75++;var _0x51fb09=_spPageContextInfo[_0x375672(0x229)]+_0x375672(0x415)+escapeProperly(_0x102f65[_0x5d81ac]);_0x1864ce+='<div\x20class=\x22col-sm-6\x20flexitem\x22><div\x20class=\x22imgsetion\x22><img\x20src=\x22'+_0x51fb09+_0x375672(0x32a),_0x1864ce+=_0x46f7fb(0x5c0)+_0x1ca3ed[_0x5d81ac]+_0x375672(0x1dd)+_0x102f65[_0x5d81ac]+_0x375672(0x331)+_0x102f65[_0x5d81ac]+_0x375672(0x1b8);}_0x1864ce+=_0x46f7fb(0x596);}else{_0x56ee75++,_0x5e3286=_0x46f7fb(0x459),_0x1864ce+=_0x375672(0x6ac)+_0x3977d5+'\x22>',_0x1864ce+=_0x375672(0x619)+_0x3977d5+'\x22>'+$(_0x375672(0x4ac))[_0x375672(0x419)]()+_0x375672(0x5f7)+_0x3977d5+'\x22>NA</span><span\x20id=\x22NameStep'+_0x3977d5+'\x22>'+$(_0x375672(0x4dd))[_0x375672(0x419)]()+_0x375672(0x524)+_0x3977d5+'\x22>'+_0x6aad47+_0x375672(0x4f0)+_0x3977d5+'\x22>'+_0x5e3286+_0x46f7fb(0x47d),_0x1864ce+='<span\x20id=\x22DecideStep'+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x67e)]+_0x375672(0x545)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x6e0)]+_0x375672(0x6d6)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x272)]+_0x375672(0x65f)+_0x3977d5+_0x375672(0x46c),_0x1864ce+=_0x375672(0x5f0),_0x1864ce+=_0x46f7fb(0x188)+_0x3977d5+_0x375672(0x6e5),_0x1864ce+=_0x375672(0x4aa)+_0x3977d5+_0x375672(0x57a)+_0x3977d5+_0x375672(0x426),_0x1864ce+=_0x375672(0x1e1)+_0x3977d5+_0x375672(0x629)+_0x6aad47+_0x375672(0x55b);var _0x51fb09=_spPageContextInfo[_0x375672(0x229)]+_0x375672(0x415)+escapeProperly($(_0x375672(0x4ac))[_0x375672(0x419)]());_0x1864ce+=_0x375672(0x4fe)+_0x51fb09+_0x46f7fb(0x27a),_0x1864ce+=_0x46f7fb(0x5c0)+$(_0x375672(0x4dd))[_0x46f7fb(0x1ea)]()+_0x375672(0x1dd)+$(_0x375672(0x4ac))['val']()+_0x375672(0x331)+$(_0x375672(0x4ac))[_0x46f7fb(0x1ea)]()+'</a></div></div>',_0x1864ce+=_0x375672(0x239);}}else{_0x56ee75++,_0x5e3286=_0x375672(0x482);if(_0x38d17a[0x0][_0x375672(0x67e)]=='Initiation'){_0x1864ce+=_0x375672(0x6ac)+_0x3977d5+'\x22>',_0x1864ce+=_0x375672(0x619)+_0x3977d5+_0x375672(0x18e)+_0x3977d5+_0x375672(0x2a9)+_0x3977d5+_0x375672(0x6bf)+_0x3977d5+'\x22>'+_0x6aad47+_0x375672(0x4f0)+_0x3977d5+'\x22>'+_0x5e3286+_0x375672(0x4a2),_0x1864ce+=_0x375672(0x3e0)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x67e)]+_0x375672(0x545)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x6e0)]+_0x375672(0x6d6)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x46f7fb(0x385)]+_0x46f7fb(0x4d1)+_0x3977d5+'\x22>'+$(_0x375672(0x5b4))['prop'](_0x375672(0x3da))+_0x375672(0x37c),_0x1864ce+=_0x375672(0x5f0),_0x1864ce+=_0x375672(0x5f8)+_0x3977d5+_0x46f7fb(0x354),_0x1864ce+=_0x375672(0x4aa)+_0x3977d5+_0x375672(0x57a)+_0x3977d5+_0x46f7fb(0x378),_0x1864ce+=_0x375672(0x1e1)+_0x3977d5+_0x46f7fb(0x3e8)+_0x6aad47+_0x375672(0x55b);var _0x51fb09='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg';_0x1864ce+=_0x375672(0x326)+_0x3977d5+_0x375672(0x655)+_0x51fb09+_0x375672(0x32a),_0x1864ce+=_0x375672(0x6c5),_0x1864ce+=_0x375672(0x1df)+_0x3977d5+_0x46f7fb(0x630)+_0x3977d5+_0x375672(0x5ec)+_0x6aad47+_0x375672(0x5ec)+_0x50fa43+_0x375672(0x213),_0x1864ce+=_0x375672(0x511);}else{_0x1864ce+=_0x375672(0x6ac)+_0x3977d5+'\x22>',_0x1864ce+=_0x375672(0x619)+_0x3977d5+_0x375672(0x18e)+_0x3977d5+_0x46f7fb(0x584)+_0x3977d5+_0x375672(0x6bf)+_0x3977d5+'\x22>'+_0x6aad47+_0x375672(0x4f0)+_0x3977d5+'\x22>'+_0x5e3286+_0x375672(0x4a2),_0x1864ce+=_0x375672(0x3e0)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x67e)]+_0x46f7fb(0x2d7)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x6e0)]+_0x375672(0x6d6)+_0x3977d5+'\x22>'+_0x38d17a[0x0][_0x375672(0x272)]+_0x375672(0x65f)+_0x3977d5+'\x22>'+$('#chkFooterSign')[_0x375672(0x47f)](_0x375672(0x3da))+_0x375672(0x37c),_0x1864ce+=_0x375672(0x5f0),_0x1864ce+=_0x375672(0x5f8)+_0x3977d5+_0x375672(0x6e5),_0x1864ce+=_0x375672(0x4aa)+_0x3977d5+_0x375672(0x57a)+_0x3977d5+_0x375672(0x426),_0x1864ce+=_0x46f7fb(0x4eb)+_0x3977d5+_0x375672(0x629)+_0x6aad47+_0x375672(0x55b);var _0x51fb09=_0x375672(0x26e);_0x1864ce+=_0x375672(0x4fe)+_0x51fb09+_0x375672(0x32a),_0x1864ce+=_0x375672(0x3ec)+_0x38d17a[0x0][_0x375672(0x67e)]+_0x46f7fb(0x3c5),_0x1864ce+=_0x375672(0x239);}}_0x56ee75>0x0&&($(_0x375672(0x23e))[_0x375672(0x693)](_0x1864ce),$(_0x375672(0x6bd))[_0x46f7fb(0x46b)](),$(_0x375672(0x6cf))[_0x375672(0x3f3)]()),$(_0x375672(0x666))[_0x46f7fb(0x1ea)]()!=_0x375672(0x2bf)&&(_0x47abb8['length']>0x0&&alert(_0x47abb8[_0x375672(0x3d4)](',\x20')+_0x375672(0x2f1)));}function DisplayInitiatorApp(_0x36965b,_0x1c1b8d,_0x1ad2ec,_0x774f13){var _0x2a8e25=a90_0x13126d,_0x2f4029=_0x4ce28e;initializePeoplePicker(_0x2f4029(0x36a),!![]);if(_0x774f13[_0x2f4029(0x4a1)]>0x0){_0x774f13=_0x774f13[_0x2a8e25(0x5e5)](',');for(var _0x36d295=0x0;_0x36d295<_0x774f13[_0x2f4029(0x4a1)];_0x36d295++){SetAndResolveOutPeoplePicker(_0x2f4029(0x36a),_0x774f13[_0x36d295],![]);}}$(_0x2f4029(0x1b1))[_0x2a8e25(0x5ce)](_0x2f4029(0x6ea)),$(_0x2f4029(0x3cf))[_0x2a8e25(0x51f)]()[_0x2f4029(0x693)](_0x2f4029(0x19d));var _0x3e97ff=_0x36965b,_0x1c1b8d=_0x1c1b8d,_0x1ad2ec=_0x1ad2ec;$(_0x2f4029(0x227))[_0x2a8e25(0x26c)](function(_0x977a2e){AddInitiatorApp(_0x36965b,_0x1c1b8d,_0x1ad2ec,_0x774f13);});}function AddInitiatorApp(_0x483401,_0x5a9caa,_0x21838e){var _0x4d5a28=a90_0x13126d,_0x4df5af=_0x4ce28e,_0x4fc1c5=[],_0x15542a=0x0,_0x1f07de=[],_0x27b4fa=[],_0x475144=[],_0x5e684f=[],_0x1aa02c=_0x4d5a28(0x36a);getPplUserInfo(_0x4df5af(0x36a),_0x475144,_0x27b4fa,_0x5e684f);if(_0x475144[_0x4df5af(0x4a1)]>0x0){for(var _0x547133=0x0;_0x547133<_0x475144[_0x4df5af(0x4a1)];_0x547133++){UserValid=checkUserValid(_0x475144[_0x547133]),UserValid==![]&&(_0x1f07de[_0x4df5af(0x4f4)](_0x27b4fa[_0x547133]),_0x475144=_0x475144['filter'](function(_0x76db1b){var _0x4db496=_0x4df5af;return _0x76db1b[_0x4db496(0x1d9)]()!==_0x475144[_0x547133][_0x4db496(0x1d9)]();}),_0x27b4fa=_0x27b4fa[_0x4df5af(0x312)](function(_0x5172b0){var _0x3a4a33=_0x4df5af;return _0x5172b0[_0x3a4a33(0x1d9)]()!==_0x27b4fa[_0x547133][_0x3a4a33(0x1d9)]();}),_0x5e684f=_0x5e684f[_0x4df5af(0x312)](function(_0x2679b6){return _0x2679b6!=_0x5e684f[_0x547133];}));}_0x4fc1c5+=_0x4df5af(0x619)+_0x5a9caa+'\x22>'+_0x475144[_0x4d5a28(0x62d)]()+_0x4df5af(0x5f7)+_0x5a9caa+'\x22>'+_0x5e684f[_0x4df5af(0x470)]()+_0x4df5af(0x289)+_0x5a9caa+'\x22>'+_0x27b4fa[_0x4df5af(0x470)]()+_0x4df5af(0x524)+_0x5a9caa+'\x22>'+_0x21838e+_0x4df5af(0x4f0)+_0x5a9caa+'\x22>'+_0x1aa02c+_0x4df5af(0x4f0)+_0x5a9caa+'\x22>'+_0x1aa02c+_0x4df5af(0x4a2),_0x4fc1c5+=_0x4df5af(0x3e0)+_0x5a9caa+_0x4d5a28(0x336)+_0x5a9caa+_0x4df5af(0x250)+_0x5a9caa+_0x4df5af(0x43f)+_0x5a9caa+'\x22>'+$(_0x4df5af(0x5b4))[_0x4d5a28(0x235)](_0x4d5a28(0x495))+_0x4df5af(0x37c),_0x4fc1c5+='<div\x20class=\x22dropdown\x20ForCustomizeOnly\x22\x20style=\x22display:none;\x22><button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png\x22\x20alt=\x22\x22>',_0x4fc1c5+=_0x4df5af(0x5f8)+_0x5a9caa+_0x4df5af(0x6e5),_0x4fc1c5+=_0x4df5af(0x4aa)+_0x5a9caa+_0x4d5a28(0x67e)+_0x5a9caa+_0x4d5a28(0x378),_0x4fc1c5+=_0x4df5af(0x1e1)+_0x5a9caa+_0x4df5af(0x629)+_0x21838e+_0x4df5af(0x55b);for(var _0x547133=0x0;_0x547133<_0x5e684f[_0x4df5af(0x4a1)];_0x547133++){_0x15542a++;var _0x214f9f=_spPageContextInfo[_0x4d5a28(0x215)]+_0x4df5af(0x415)+escapeProperly(_0x475144[_0x547133]);_0x4fc1c5+=_0x4df5af(0x4fe)+_0x214f9f+_0x4df5af(0x32a),_0x4fc1c5+=_0x4df5af(0x371)+_0x27b4fa[_0x547133]+_0x4df5af(0x1dd)+_0x475144[_0x547133]+_0x4df5af(0x331)+_0x475144[_0x547133]+'</a></div></div>';}_0x4fc1c5+=_0x4df5af(0x1df)+_0x5a9caa+_0x4df5af(0x5ec)+_0x5a9caa+_0x4df5af(0x5ec)+_0x21838e+_0x4df5af(0x5ec)+_0x475144[_0x4df5af(0x470)]()+_0x4d5a28(0x5a6),_0x4fc1c5+=_0x4df5af(0x441),$('.'+_0x483401)[_0x4df5af(0x314)]()[_0x4df5af(0x693)](_0x4fc1c5),$(_0x4d5a28(0x688))[_0x4d5a28(0x5ce)](_0x4d5a28(0x39a));}else return alert(_0x4df5af(0x2a1)),![];}function SetAndResolveOutPeoplePicker(_0xac2eda,_0xb5140a,_0xa53de4){var _0x3f7804=_0x4ce28e,_0x5c0423=$(_0x3f7804(0x186)+_0xac2eda+'\x27]'),_0x175f2b=SPClientPeoplePicker[_0x3f7804(0x684)][_0x5c0423[0x1]['id']];_0x175f2b[_0x3f7804(0x56a)](_0xb5140a),_0xa53de4==!![]&&($('#'+_0xac2eda+_0x3f7804(0x379))[_0x3f7804(0x1a0)](_0x3f7804(0x2fc),!![]),$('.sp-peoplepicker-delImage')[_0x3f7804(0x3f3)]());}function _0x36bf(_0x1a873c,_0x5e4727){var _0x5eabfa=_0x1987();return _0x36bf=function(_0x1a5cff,_0x4acf72){_0x1a5cff=_0x1a5cff-0x17a;var _0x598486=_0x5eabfa[_0x1a5cff];return _0x598486;},_0x36bf(_0x1a873c,_0x5e4727);}function getPplUserInfo(_0x42a6c1,_0x397561,_0x26f62f,_0x386267){var _0x7dedbe=a90_0x13126d,_0x38cce3=_0x4ce28e,_0x2897c6=[],_0x2e7121=[],_0x291cc6=this[_0x38cce3(0x686)][_0x38cce3(0x684)][_0x42a6c1+_0x38cce3(0x605)];if(!_0x291cc6[_0x38cce3(0x3f9)]()){if(_0x291cc6[_0x7dedbe(0x544)])return![];else{if(!_0x291cc6[_0x38cce3(0x232)]())return![];else{if(_0x291cc6[_0x38cce3(0x68e)]>0x0){var _0x64cbbf=_0x291cc6[_0x7dedbe(0x347)](),_0x23315a='',_0x26744b='',_0x4276d1='';for(var _0x292cdf=0x0;_0x292cdf<_0x64cbbf[_0x38cce3(0x4a1)];_0x292cdf++){var _0xae3f31=_0x64cbbf[_0x292cdf][_0x38cce3(0x3b9)];_0x397561[_0x38cce3(0x4f4)](_0x64cbbf[_0x292cdf][_0x38cce3(0x5fd)][_0x38cce3(0x377)]),_0x26f62f[_0x38cce3(0x4f4)](_0x64cbbf[_0x292cdf][_0x7dedbe(0x39e)]);var _0x5c358b=GetUserID(_0xae3f31);_0x2e7121[_0x38cce3(0x189)](_0x5c358b)==-0x1&&_0x386267[_0x7dedbe(0x5ae)](_0x5c358b);}return _0x386267;}}}}else return _0x386267;}function EditStep(_0x4974d6){var _0x1b5ca5=a90_0x13126d,_0x10fd64=_0x4ce28e;$(_0x10fd64(0x6bb))['text'](_0x1b5ca5(0x616)),$(_0x10fd64(0x46a))[_0x10fd64(0x340)](_0x4974d6);var _0x333e56='';multipleEmailAddress=[],assignUserName=[],EmpIds=[],multipleEmailAddress=$(_0x10fd64(0x264)+_0x4974d6)[_0x1b5ca5(0x1ca)]()[_0x10fd64(0x288)](','),assignUserName=$(_0x10fd64(0x251)+_0x4974d6)[_0x10fd64(0x340)]()[_0x1b5ca5(0x5e5)](','),EmpIds=$(_0x10fd64(0x43e)+_0x4974d6)[_0x10fd64(0x340)]()[_0x10fd64(0x288)](','),$(_0x10fd64(0x52a))[_0x10fd64(0x419)]($(_0x10fd64(0x423)+_0x4974d6)[_0x1b5ca5(0x1ca)]()),$('#'+$(_0x10fd64(0x5cd)+_0x4974d6)[_0x10fd64(0x340)]())[_0x10fd64(0x47f)](_0x10fd64(0x3da),_0x10fd64(0x3da));if($(_0x10fd64(0x5cd)+_0x4974d6)[_0x1b5ca5(0x1ca)]()==_0x10fd64(0x201))$(_0x10fd64(0x4dd))[_0x1b5ca5(0x1ea)](assignUserName[0x0]),$(_0x10fd64(0x4ac))[_0x1b5ca5(0x1ea)](multipleEmailAddress[0x0]),$(_0x10fd64(0x3be))[_0x10fd64(0x3f3)](),$(_0x1b5ca5(0x592))[_0x10fd64(0x6ea)](),$('#userHTMLBox')[_0x10fd64(0x314)]();else{$(_0x1b5ca5(0x458))[_0x10fd64(0x6ea)](),$(_0x10fd64(0x224))[_0x10fd64(0x3f3)](),$(_0x1b5ca5(0x228))[_0x10fd64(0x6ea)](),$(_0x10fd64(0x4dd))[_0x10fd64(0x419)](''),$(_0x10fd64(0x4ac))[_0x10fd64(0x419)]('');for(var _0x3bf505=0x0;_0x3bf505<EmpIds[_0x10fd64(0x4a1)];_0x3bf505++){var _0x129ffb=_spPageContextInfo[_0x10fd64(0x229)]+_0x10fd64(0x415)+escapeProperly(multipleEmailAddress[_0x3bf505]);_0x333e56+=_0x10fd64(0x3bc),_0x333e56+=_0x10fd64(0x338)+multipleEmailAddress[_0x3bf505]+_0x10fd64(0x5ec)+assignUserName[_0x3bf505]+_0x10fd64(0x1ba)+EmpIds[_0x3bf505]+_0x10fd64(0x30d),_0x333e56+=_0x10fd64(0x3cb)+_0x129ffb+_0x1b5ca5(0x618),_0x333e56+=_0x10fd64(0x20e)+assignUserName[_0x3bf505]+_0x10fd64(0x5d6),_0x333e56+=_0x10fd64(0x4d7)+multipleEmailAddress[_0x3bf505]+_0x10fd64(0x331)+multipleEmailAddress[_0x3bf505]+_0x10fd64(0x5d5);}$(_0x1b5ca5(0x1b5))[_0x10fd64(0x693)](_0x333e56);}}function DeleteSeletedStep(_0x193ba5){var _0x5c0887=a90_0x13126d,_0x1e6a6e=_0x4ce28e;$(_0x1e6a6e(0x2e7)+_0x193ba5)[_0x1e6a6e(0x290)](),$[_0x5c0887(0x549)]($(_0x5c0887(0x233))[_0x5c0887(0x41c)]())==''&&$(_0x1e6a6e(0x6bd))[_0x1e6a6e(0x3f3)]();}function checkUserValidOld(_0x9ab537){var _0x5c2db6=a90_0x13126d,_0xbc541d=_0x4ce28e,_0x567db9=![],_0x20d52a=_0xbc541d(0x430)+_0x9ab537+_0x5c2db6(0x46d);return $[_0xbc541d(0x3a9)](getItemsWithQuery(_0x5c2db6(0x382),_0x20d52a,_spPageContextInfo[_0x5c2db6(0x215)]))[_0x5c2db6(0x21b)](function(_0x5084cc){var _0x3b3fbe=_0xbc541d;try{_0x5084cc[_0x3b3fbe(0x4a1)]>0x0&&(_0x567db9=!![]);}catch(_0x25450d){alert(_0x25450d);}}),_0x567db9;}function checkUserValid(_0x252bae){var _0x4b6e3b=a90_0x13126d,_0x1e5509=_0x4ce28e,_0xf5653=![],_0x3e16e4=_0x1e5509(0x430)+_0x252bae+_0x1e5509(0x67f);return $[_0x1e5509(0x3a9)](getItemsWithQuery(_0x1e5509(0x1cf),_0x3e16e4,_spPageContextInfo[_0x4b6e3b(0x215)]))[_0x1e5509(0x577)](function(_0xbf1ceb){var _0x455b8d=_0x1e5509;try{_0xbf1ceb[_0x455b8d(0x4a1)]>0x0?_0xf5653=!![]:(_0x3e16e4=_0x455b8d(0x31c)+_0x252bae+_0x455b8d(0x67f),$[_0x455b8d(0x3a9)](getItemsWithQuery(_0x455b8d(0x596),_0x3e16e4,_spPageContextInfo[_0x455b8d(0x229)]))[_0x455b8d(0x577)](function(_0x42b475){var _0x50f28e=a90_0x41e7;try{_0x42b475[_0x50f28e(0x1d9)]>0x0&&(_0xf5653=!![]);}catch(_0x34730f){alert(_0x34730f);}}));}catch(_0x155e0d){alert(_0x155e0d);}}),_0xf5653;}function ClearAprovalControls(){var _0x14a398=a90_0x13126d,_0x467880=_0x4ce28e;$(_0x467880(0x248))[_0x467880(0x290)](),$(_0x467880(0x461))['empty'](),$(_0x14a398(0x535))[_0x14a398(0x1ea)](''),$(_0x467880(0x645))[_0x467880(0x419)](_0x467880(0x60c)),$(_0x467880(0x689))[_0x14a398(0x1ea)](''),$(_0x467880(0x3f0))[_0x467880(0x47f)](_0x467880(0x3da),_0x467880(0x3da)),$(_0x14a398(0x340))['prop'](_0x14a398(0x45b),_0x467880(0x2fc)),$('#dueDateField')[_0x467880(0x419)](''),$(_0x467880(0x666))[_0x467880(0x419)](_0x467880(0x2bf)),$(_0x467880(0x1f4))[_0x14a398(0x1ea)](_0x467880(0x6dc)),$(_0x467880(0x1f4))[_0x14a398(0x1d4)](_0x467880(0x588)),multipleEmailAddress=[],assignUserName=[],EmpIds=[];}function AddDocApproval(){var _0x4aa7d8=a90_0x13126d,_0x10f511=_0x4ce28e,_0x1dd8e3,_0x3cd3e7=GetItemTypeForListName(_0x10f511(0x5a6)),_0x12ecce=$('#FileTitle')[_0x10f511(0x340)]();_0x12ecce==''&&(_0x12ecce=$(_0x4aa7d8(0x20c))[_0x10f511(0x340)]());var _0x54cdac=[],_0x2a6091=[],_0x13a158=null,_0x13403b=null;$(_0x10f511(0x3f0))[_0x10f511(0x47f)](_0x10f511(0x3da))==![]&&(_0x13a158=GetDateStandardFormat(moment($(_0x10f511(0x410))[_0x4aa7d8(0x1ea)]())[_0x10f511(0x54f)](_0x10f511(0x3f2)))),$(_0x4aa7d8(0x302))[_0x10f511(0x47f)](_0x4aa7d8(0x495))==![]&&(_0x13403b=GetDateStandardFormat(moment($(_0x4aa7d8(0x279))[_0x10f511(0x419)]())[_0x10f511(0x54f)](_0x4aa7d8(0x29c))));var _0x15ba23='';if(CopyLibrary=='DocumentManagementSystem')_0x15ba23=_0x10f511(0x2e0)+_spPageContextInfo[_0x10f511(0x4ed)];else{if(currentSectionType==_0x10f511(0x3dd))_0x15ba23=_0x4aa7d8(0x478)+':\x20'+$(_0x4aa7d8(0x4ee))[_0x10f511(0x340)]();else{if(currentSectionType==_0x10f511(0x347))_0x15ba23=_0x4aa7d8(0x19a)+$('.headdingLinks')[_0x10f511(0x340)]();else{if(currentSectionType==_0x10f511(0x3e2))_0x15ba23=_0x10f511(0x47d)+$(_0x10f511(0x548))[_0x4aa7d8(0x1ca)]();else currentSectionType==_0x10f511(0x243)&&(_0x15ba23=_0x10f511(0x33d)+$(_0x10f511(0x548))[_0x10f511(0x340)]());}}}_0x1dd8e3={'__metadata':{'type':_0x3cd3e7},'OriginDMS':CopyLibrary,'OriginSection':_0x15ba23,'ApprovalFrom':$(_0x4aa7d8(0x4ee))[_0x10f511(0x340)](),'LibraryLink':CopySourceURL,'DocumentID':DocumentId,'FileName':$(_0x10f511(0x359))[_0x10f511(0x340)](),'Title':_0x12ecce,'DocumentType':$(_0x10f511(0x2d6))[_0x10f511(0x340)](),'Reference':$(_0x10f511(0x502))[_0x10f511(0x340)](),'Purpose':$(_0x10f511(0x5b1))[_0x10f511(0x419)](),'ApprovalFileTitle':$(_0x10f511(0x2a5))[_0x10f511(0x340)](),'Remarks':$(_0x4aa7d8(0x1c4))[_0x10f511(0x419)](),'Priority':$(_0x10f511(0x645))[_0x10f511(0x419)](),'DueDate':_0x13a158,'ApprovalValidity':_0x13403b,'SigningApp':$(_0x4aa7d8(0x49d))[_0x10f511(0x419)](),'ApprovalSteps':$(_0x10f511(0x1f4))[_0x10f511(0x419)](),'Status':_0x10f511(0x3b6),'FileServerURL':$(_0x10f511(0x2e6))[_0x10f511(0x340)](),'NextActionbyId':{'results':_0x2a6091},'NextActionApprover':'','NextAction':$(_0x10f511(0x6a9))[_0x10f511(0x340)](),'ApprovedVersion':$(_0x10f511(0x298))[_0x10f511(0x340)](),'ActionByTimeZone':LoggedIn_TimeZone,'SubCategory':$(_0x10f511(0x3b4))[_0x10f511(0x340)]()},$(_0x10f511(0x666))[_0x10f511(0x419)]()==_0x10f511(0x64e)?(_0x54cdac=$(_0x10f511(0x53a))[_0x10f511(0x340)]()[_0x10f511(0x288)](','),_0x54cdac[0x0]=='NA'?(_0x2a6091=[],_0x1dd8e3[_0x10f511(0x29e)]=$(_0x4aa7d8(0x55f))[_0x4aa7d8(0x1ca)]()[_0x4aa7d8(0x5e5)](',')[0x0],delete _0x1dd8e3[_0x4aa7d8(0x2dd)]):(_0x54cdac[_0x10f511(0x312)](function(_0x25edb0){var _0x222e00=_0x10f511;_0x2a6091[_0x222e00(0x4f4)](parseInt(_0x25edb0));}),_0x1dd8e3[_0x10f511(0x23d)][_0x4aa7d8(0x55c)]=_0x2a6091,delete _0x1dd8e3[_0x10f511(0x29e)])):(delete _0x1dd8e3[_0x4aa7d8(0x538)],delete _0x1dd8e3[_0x10f511(0x23d)],delete _0x1dd8e3[_0x10f511(0x29e)]),$[_0x10f511(0x42c)]({'url':_spPageContextInfo[_0x10f511(0x229)]+_0x10f511(0x54b),'type':_0x4aa7d8(0x2f3),'async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x10f511(0x57c))[_0x10f511(0x419)](),'content-Type':_0x10f511(0x4b9)},'data':JSON['stringify'](_0x1dd8e3),'success':function(_0x1408fb){var _0x2b0dff=_0x4aa7d8,_0x4aba2b=_0x10f511;FinalFiles4Upload[_0x2b0dff(0x1d9)]>0x0?UploadSupportedFiles(_0x1408fb['d']['ID'],_0x4aba2b(0x5a6),_0x2b0dff(0x629)):UploadDocAsAttachment(_0x1408fb['d']['ID'],DocumentId,parseInt($(_0x2b0dff(0x3db))[_0x4aba2b(0x340)]())[_0x4aba2b(0x470)]());},'error':function(_0x4e6be2){var _0x324079=_0x10f511;$('#overlaysearch')[_0x324079(0x597)](),console[_0x324079(0x403)](JSON[_0x324079(0x1a4)](_0x4e6be2));}});}function UploadSupportedFiles(_0x24c51a,_0x3ffbd0,_0x2c254f){var _0x39c5fd=_0x4ce28e,_0x536716=0x0;FinalFiles4Upload[_0x39c5fd(0x4a1)]>0x0&&$[_0x39c5fd(0x200)](FinalFiles4Upload,function(_0x5a6f46,_0x314a0c){var _0x1d64bc=_0x39c5fd;getFileBuffer(_0x314a0c)[_0x1d64bc(0x3f8)](function(_0x2fc4e7){var _0x885660=a90_0x41e7,_0x587009=_0x1d64bc,_0x4c2f7b=_0x314a0c[_0x587009(0x681)],_0x2dd5de=_0x4c2f7b[_0x587009(0x4e2)](/[^.a-zA-Z0-9]/ig,'');$[_0x587009(0x42c)]({'url':_spPageContextInfo[_0x885660(0x215)]+_0x587009(0x206)+_0x3ffbd0+_0x587009(0x53e)+_0x24c51a+_0x587009(0x383)+_0x2dd5de+'\x27)','method':_0x885660(0x2f3),'data':_0x2fc4e7,'async':![],'processData':![],'headers':{'Accept':_0x587009(0x4b9),'content-type':_0x587009(0x4b9),'X-RequestDigest':$(_0x587009(0x57c))[_0x587009(0x419)]()},'success':function(_0x14f8cf){var _0x2e62b6=_0x885660,_0x1d4813=_0x587009;_0x536716=_0x536716+0x1;if(FinalFiles4Upload[_0x1d4813(0x4a1)]==_0x536716){if(_0x2c254f==_0x1d4813(0x487))UploadDocAsAttachment(_0x24c51a,DocumentId,parseInt($(_0x1d4813(0x298))[_0x1d4813(0x340)]())[_0x1d4813(0x470)]()),$(_0x2e62b6(0x4fd))[_0x2e62b6(0x41c)]('');else{}$(_0x1d4813(0x192))['html'](''),$(_0x1d4813(0x26d))[_0x1d4813(0x678)](''),$(_0x1d4813(0x4e0))[_0x1d4813(0x678)](''),$(_0x1d4813(0x1fe))[_0x1d4813(0x678)](''),finalFiles=[],FinalFiles4Upload=[];}},'error':function(_0x15b051){var _0x512a16=_0x587009;console[_0x512a16(0x403)](_0x15b051[_0x512a16(0x400)][_0x512a16(0x38d)]);}});});});}function UploadDocAsAttachment(_0x57c1af,_0xa8dc82,_0x4acc79){var _0x722598=a90_0x13126d,_0x3bd201=_0x4ce28e,_0x5a78ec=new XMLHttpRequest(),_0x554573,_0x39ef42=new FileReader();_0x5a78ec[_0x3bd201(0x510)](_0x3bd201(0x6c7),window[_0x722598(0x367)][_0x3bd201(0x1ec)]+$(_0x3bd201(0x2e6))[_0x3bd201(0x340)](),!![]),_0x5a78ec[_0x3bd201(0x29a)]=_0x3bd201(0x637),_0x5a78ec[_0x3bd201(0x237)](_0x3bd201(0x384),function(){var _0x916836=_0x722598,_0x19993c=_0x3bd201;if(_0x5a78ec[_0x19993c(0x17f)]===0xc8){var _0x34933c=$(_0x19993c(0x359))['text']();_0x34933c=_0x34933c[_0x916836(0x3ea)](/[^a-zA-Z0-9-. ]/g,''),_0x34933c=_0x34933c[_0x916836(0x3ea)](/\s/g,'');var _0x576f7c=_0x34933c[_0x916836(0x36e)](_0x34933c[_0x19993c(0x594)]('.')+0x1);_0x34933c=encodeURI(_0x34933c[_0x19993c(0x288)]('.')[_0x916836(0x327)](0x0,-0x1)['join']('.')[_0x19993c(0x65b)](0x0,0x14)+'_'+_0xa8dc82+'_V'+_0x4acc79+'_'+_0x57c1af+_0x19993c(0x234))+'.'+_0x576f7c,$[_0x19993c(0x42c)]({'url':_spPageContextInfo[_0x19993c(0x229)]+_0x19993c(0x53d)+_0x57c1af+_0x19993c(0x4d2)+_0x34933c+'\x27)','method':_0x19993c(0x1bb),'binaryStringRequestBody':!![],'data':_0x5a78ec[_0x19993c(0x328)],'processData':![],'headers':{'ACCEPT':_0x19993c(0x4b9),'X-RequestDigest':$(_0x19993c(0x57c))[_0x19993c(0x419)]()},'success':function(_0x5ceb84){AddApprovalSteps(_0x57c1af);},'error':function(_0x51a730){var _0x783e1d=_0x916836,_0x162ec7=_0x19993c;AddApprovalSteps(_0x57c1af),alert(_0x162ec7(0x6c4)+_0x51a730[_0x783e1d(0x4dd)]);}});}},![]),_0x5a78ec[_0x3bd201(0x6da)]();}function AddApprovalSteps(_0x125879){var _0x540233=a90_0x13126d,_0x5c0751=_0x4ce28e,_0x2906b7=[],_0x3c5539,_0x2bca01='',_0x7a567b=GetItemTypeForListName(_0x5c0751(0x479)),_0x174599='';$('#accordionapprovers\x20.StepClass')[_0x540233(0x1f4)](function(_0x128262){var _0x31e494=_0x540233,_0x58a895=_0x5c0751;multipleEmailAddress=[],assignUserName=[],EmpIds=[],_0x174599=this[_0x31e494(0x30b)][0x2][_0x58a895(0x4e2)](_0x58a895(0x244),''),multipleEmailAddress=$(_0x31e494(0x2df)+_0x174599)[_0x58a895(0x340)]()[_0x58a895(0x288)](','),assignUserName=$(_0x58a895(0x251)+_0x174599)['text']()[_0x31e494(0x5e5)](','),EmpIds=$(_0x31e494(0x514)+_0x174599)[_0x58a895(0x340)]()[_0x31e494(0x5e5)](','),TypeOfApp=$('#AppTypeStep'+_0x174599)[_0x58a895(0x340)](),ApproverRole=$(_0x58a895(0x2a6)+_0x174599)[_0x58a895(0x340)](),ApproverDecidingStep=$(_0x58a895(0x593)+_0x174599)[_0x58a895(0x340)](),IsFooterSign=JSON[_0x58a895(0x6f1)]($(_0x58a895(0x366)+_0x174599)[_0x31e494(0x1ca)]()[_0x58a895(0x1d9)]()),_0x2906b7=[],assignUserName[0x0]!=_0x58a895(0x52e)&&(EmpIds[0x0]=='NA'?(_0x2906b7=[],_0x2bca01=_0x31e494(0x447)):(_0x2bca01=_0x58a895(0x1c5),EmpIds[_0x58a895(0x312)](function(_0x489175){var _0x545208=_0x31e494;_0x2906b7[_0x545208(0x5ae)](parseInt(_0x489175));}))),_0x128262==0x0?$(_0x58a895(0x666))[_0x31e494(0x1ea)]()==_0x58a895(0x64e)?Status=_0x58a895(0x680):Status=_0x58a895(0x3b6):Status=_0x31e494(0x558),AllApprovers=AllApprovers[_0x58a895(0x22e)](_0x2906b7),_0x3c5539={'__metadata':{'type':_0x7a567b},'RequestID':_0x125879,'Title':$(_0x58a895(0x359))[_0x31e494(0x1ca)](),'Sequence_No':parseInt(_0x128262+0x1),'StepName':$(_0x58a895(0x423)+_0x174599)[_0x31e494(0x1ca)](),'ApproversId':{'results':_0x2906b7},'OriginDMS':CopyLibrary,'LibraryLink':CopySourceURL,'DocumentID':DocumentId,'ApproverType':_0x2bca01,'Status':Status,'ApproverRole':ApproverRole,'ApproverDecidingStep':ApproverDecidingStep,'TypeofApprover':TypeOfApp,'PageFooterSign':IsFooterSign},assignUserName[0x0]==_0x31e494(0x510)?(_0x3c5539[_0x58a895(0x529)]=!![],_0x3c5539[_0x31e494(0x397)]=$(_0x31e494(0x4ca)+_0x174599)[_0x31e494(0x1ca)]()):(_0x3c5539[_0x58a895(0x529)]=![],EmpIds[0x0]=='NA'&&(_0x3c5539[_0x58a895(0x1bc)]=multipleEmailAddress[0x0],_0x3c5539[_0x58a895(0x66f)]=assignUserName[0x0])),AddApprovalToList(_0x58a895(0x479),_0x3c5539,_0x128262,_0x125879);});}function AddApprovalToList(_0x3af060,_0x10cb9e,_0x502a7b,_0x47e1b0){var _0x352949=a90_0x13126d,_0x4a9b40=_0x4ce28e;_0x3af060==_0x352949(0x339)&&(_0x3af060=_0x4a9b40(0x1d1));var _0x152bc2=$[_0x4a9b40(0x5a7)]();return $[_0x352949(0x21a)]({'url':_spPageContextInfo[_0x352949(0x215)]+_0x4a9b40(0x206)+_0x3af060+_0x352949(0x5dc),'type':_0x4a9b40(0x1bb),'async':![],'headers':{'accept':_0x4a9b40(0x4b9),'X-RequestDigest':$(_0x4a9b40(0x57c))[_0x4a9b40(0x419)](),'content-Type':_0x4a9b40(0x4b9)},'data':JSON[_0x352949(0x2da)](_0x10cb9e),'success':function(_0x4c3c3d){var _0x24a561=_0x352949,_0x359f73=_0x4a9b40;_0x502a7b+0x1==$(_0x359f73(0x56b))[_0x359f73(0x4a1)]&&(ClearAprovalControls(),$(_0x359f73(0x39d))[_0x359f73(0x6ea)](),$(_0x359f73(0x570))[_0x359f73(0x340)](_0x359f73(0x3b6)),$(_0x359f73(0x389))[_0x359f73(0x341)](_0x359f73(0x3f3)),UpdateAllApprovers(_0x47e1b0),onloadGetItem(),alert(_0x359f73(0x2bd)),_0x152bc2[_0x24a561(0x44c)](_0x4c3c3d));},'error':function(_0x2b18d0){var _0x3c121a=_0x352949,_0x3e7c02=_0x4a9b40;$(_0x3e7c02(0x358))[_0x3c121a(0x53d)](),console[_0x3e7c02(0x403)](JSON[_0x3e7c02(0x1a4)](_0x2b18d0)),_0x152bc2[_0x3e7c02(0x2f3)](_0x2b18d0);}}),_0x152bc2[_0x352949(0x413)]();}function ApprovalStartValid(){var _0x315a57=_0x4ce28e,_0x2d1c86=!![],_0x4c3e88='';return $(_0x315a57(0x56b))[_0x315a57(0x200)](function(_0x5ea82e){var _0x70d1a=a90_0x41e7,_0x444ba7=_0x315a57,_0x46e85b=this[_0x444ba7(0x6d2)][0x2][_0x444ba7(0x4e2)](_0x444ba7(0x244),'');($(_0x444ba7(0x43e)+_0x46e85b)[_0x444ba7(0x340)]()==''||$(_0x70d1a(0x514)+_0x46e85b)[_0x444ba7(0x340)]()=='NA'||$(_0x444ba7(0x43e)+_0x46e85b)[_0x70d1a(0x1ca)]()==_0x444ba7(0x4e7))&&$(_0x444ba7(0x593)+_0x46e85b)['text']()==_0x444ba7(0x1e5)&&(_0x2d1c86=![]);}),_0x2d1c86==![]?(alert(_0x315a57(0x5bf)),![]):!![];}function UpdateDocumentStatus(){var _0x3a74c3=a90_0x13126d,_0x48f7cc=_0x4ce28e,_0x5e25ca=$[_0x3a74c3(0x182)]();if(CopyLibrary[_0x48f7cc(0x3cc)](_0x48f7cc(0x1d1))==!![])var _0x502855=GetItemTypeForLibraryName(_0x3a74c3(0x5e6));else var _0x502855=GetItemTypeForLibraryName(CopyLibrary);return Metadata={'__metadata':{'type':_0x502855},'Approval':_0x48f7cc(0x3b6),'ApprovedVersion':$(_0x48f7cc(0x298))[_0x3a74c3(0x1ca)]()},CopyLibrary==_0x48f7cc(0x33f)&&(CopyLibrary='Documents'),CopySourceURL!=_spPageContextInfo[_0x48f7cc(0x229)]&&$[_0x48f7cc(0x3a9)](GetFormDigestValue(CopySourceURL))[_0x48f7cc(0x577)](function(_0x352c12){RequestDigest=_0x352c12;}),$[_0x48f7cc(0x42c)]({'url':CopySourceURL+_0x48f7cc(0x206)+CopyLibrary+_0x48f7cc(0x53e)+DocumentId+')','type':_0x48f7cc(0x1bb),'async':![],'headers':{'accept':_0x48f7cc(0x4b9),'content-type':_0x48f7cc(0x4b9),'X-RequestDigest':RequestDigest,'IF-MATCH':'*','X-HTTP-Method':_0x48f7cc(0x5c3)},'data':JSON[_0x3a74c3(0x2da)](Metadata),'success':function(_0x416183){var _0x5cdabb=_0x3a74c3,_0x3a1d0d=_0x48f7cc;RequestDigest=$(_0x3a1d0d(0x57c))[_0x3a1d0d(0x419)](),AddDocApproval(),_0x5e25ca[_0x5cdabb(0x44c)](_0x416183);},'error':function(_0x5ae0de){var _0x3e639a=_0x3a74c3,_0x1c9481=_0x48f7cc;RequestDigest=$(_0x3e639a(0x30d))[_0x1c9481(0x419)](),$(_0x1c9481(0x358))[_0x3e639a(0x53d)](),_0x5ae0de[_0x3e639a(0x4dd)][_0x1c9481(0x3cc)](_0x1c9481(0x3ae))==!![]?alert(_0x1c9481(0x270)+$(_0x3e639a(0x20c))[_0x1c9481(0x340)]()+_0x3e639a(0x648)):console[_0x1c9481(0x403)](_0x5ae0de[_0x1c9481(0x400)]),_0x5e25ca[_0x1c9481(0x2f3)](_0x5ae0de);}}),_0x5e25ca['promise']();}function UpdateAllApprovers(_0x31fc06){var _0x4f1bb7=a90_0x13126d,_0x499dbe=_0x4ce28e;AllApprovers=AllApprovers[_0x499dbe(0x312)](function(_0x1666d7,_0x4f22bc){var _0x5d3ce5=a90_0x41e7;return AllApprovers[_0x5d3ce5(0x4dc)](_0x1666d7)==_0x4f22bc;});var _0x5564fe=GetItemTypeForListName(_0x499dbe(0x5a6)),_0x4cfd41=$(_0x499dbe(0x359))[_0x4f1bb7(0x1ca)]();_0x4cfd41=_0x4cfd41[_0x499dbe(0x4e2)](/[^a-zA-Z0-9-. ]/g,''),_0x4cfd41=_0x4cfd41[_0x499dbe(0x4e2)](/\s/g,'');var _0x1cb29d=_0x4cfd41[_0x499dbe(0x65b)](_0x4cfd41[_0x499dbe(0x594)]('.')+0x1);FileVer=parseInt($(_0x4f1bb7(0x3db))[_0x499dbe(0x340)]())[_0x499dbe(0x470)](),_0x4cfd41=encodeURI(_0x4cfd41[_0x499dbe(0x288)]('.')[_0x4f1bb7(0x327)](0x0,-0x1)['join']('.')[_0x499dbe(0x65b)](0x0,0x14)+'_'+DocumentId+'_V'+FileVer+'_'+_0x31fc06+_0x4f1bb7(0x3d3))+'.'+_0x1cb29d,Metadata={'__metadata':{'type':_0x5564fe},'FileNameWithPrefix':_0x4cfd41,'AllApproversId':{'results':AllApprovers}};var _0x4d733b=$[_0x4f1bb7(0x182)]();$[_0x499dbe(0x42c)]({'url':_spPageContextInfo[_0x499dbe(0x229)]+_0x4f1bb7(0x5a2)+_0x31fc06+'\x27)','type':_0x499dbe(0x1bb),'async':![],'headers':{'accept':_0x499dbe(0x4b9),'X-RequestDigest':$(_0x4f1bb7(0x30d))[_0x499dbe(0x419)](),'content-Type':_0x499dbe(0x4b9),'X-Http-Method':_0x499dbe(0x525),'If-Match':'*'},'data':JSON[_0x499dbe(0x1a4)](Metadata),'success':function(_0x4e18fc){var _0xd77cc3=_0x499dbe;AllApprovers=[],$(_0xd77cc3(0x358))[_0xd77cc3(0x597)]();},'eror':function(_0x822c17){var _0x5aec94=_0x4f1bb7,_0x3f6dd5=_0x499dbe;console[_0x3f6dd5(0x403)](_0x3f6dd5(0x46f)+JSON[_0x5aec94(0x2da)](_0x822c17));}})[_0x4f1bb7(0x218)](function(_0x50ac71){var _0x485369=_0x4f1bb7,_0x389837=_0x499dbe;alert(_0x50ac71[_0x389837(0x32f)][_0x485369(0x335)][_0x485369(0x4d8)][_0x389837(0x447)]);});}function GetDateStandardFormat(_0x41e5d9){var _0x13323d=_0x4ce28e,_0x3043ae=ConvertDateFormatToddMMyyyy(_0x41e5d9),_0x4079b9=new Date(_0x3043ae),_0x4c5675=0x3c*0x3c*0x18*0x3e8,_0x58f620=new Date(_0x4079b9[_0x13323d(0x284)]()),_0x1ea80d=_0x58f620[_0x13323d(0x647)]();return _0x1ea80d;}function ConvertDateFormatToddMMyyyy(_0x999f01){var _0x577fc2=stringToDate(_0x999f01,'dd/MM/yyyy','/');return _0x577fc2;}function stringToDate(_0x4c20b7,_0x309f49,_0x275265){var _0x80a35=_0x4ce28e,_0x3fb2b1=_0x309f49[_0x80a35(0x1d9)](),_0x33e732=_0x3fb2b1[_0x80a35(0x288)](_0x275265),_0xc3805a=_0x4c20b7[_0x80a35(0x288)](_0x275265),_0x3a7459=_0x33e732[_0x80a35(0x189)]('mm'),_0x967c0f=_0x33e732[_0x80a35(0x189)]('dd'),_0x180f1c=_0x33e732[_0x80a35(0x189)](_0x80a35(0x4ae)),_0x556f97=parseInt(_0xc3805a[_0x3a7459]);_0x556f97-=0x1;var _0x2f3f30=new Date(_0xc3805a[_0x180f1c],_0x556f97,_0xc3805a[_0x967c0f]);return _0x2f3f30;}function OpenApprovalHistry(_0x347b77,_0x25d192){DocumentId=_0x347b77,ShowAllAppHistory(_0x25d192);}function RenameFile(){var _0x112389=_0x4ce28e,_0x34b9be=CopySourceURL,_0x166fdc=CopyLibrary,_0x41a707=DocumentId,_0x1d3b21=$(_0x112389(0x691))[_0x112389(0x419)]();rename(_0x34b9be,_0x166fdc,_0x41a707,_0x1d3b21)[_0x112389(0x577)](function(_0x5477d0){var _0x59c7a6=a90_0x41e7,_0x11a442=_0x112389;$[_0x59c7a6(0x186)](getSharedDocLinks())[_0x11a442(0x577)](function(_0x5b8df6){var _0x21d151=_0x11a442;$[_0x21d151(0x3a9)](getApprovalDocLinks())[_0x21d151(0x577)](function(_0x21a390){var _0x2fc2d0=a90_0x41e7,_0x4395bf=_0x21d151,_0x3a60a7=Documentname;Documentname[_0x4395bf(0x674)](/\bDocuments\b/)>=0x0&&(_0x3a60a7=_0x4395bf(0x33f)),GetMyDocumentsWithFilesFolder(_0x3a60a7),alert(_0x4395bf(0x5d0)),$(_0x4395bf(0x6e3))[_0x4395bf(0x341)](_0x2fc2d0(0x39a)),$(_0x4395bf(0x1fa))[_0x2fc2d0(0x5ce)](_0x4395bf(0x3f3));});});})[_0x112389(0x59d)](function(_0x44acbb){var _0x129172=a90_0x41e7,_0x3016cb=_0x112389;return _0x44acbb[_0x3016cb(0x400)][_0x129172(0x306)](_0x3016cb(0x3ae))==!![]?(alert(_0x3016cb(0x2e9)),![]):(alert(_0x44acbb[_0x129172(0x4dd)]),![]);});}function getApprovalDocLinks(){var _0x1186db=a90_0x13126d,_0x496b5b=_0x4ce28e,_0x4193eb='?$select=Title,Id,FileServerURL,FileName,DocumentID&$filter=DocumentID\x20eq\x20\x27'+DocumentId[_0x496b5b(0x470)]()+_0x496b5b(0x385)+OldFileName+_0x496b5b(0x3fe);$[_0x496b5b(0x3a9)](getItemsWithQuery(_0x496b5b(0x5a6),_0x4193eb,_spPageContextInfo[_0x496b5b(0x229)]))[_0x1186db(0x21b)](function(_0x4c1d5b){var _0x574487=_0x496b5b;if(_0x4c1d5b[_0x574487(0x4a1)]>0x0)for(var _0xb6b5c7=0x0;_0xb6b5c7<_0x4c1d5b['length'];_0xb6b5c7++){updateApprovalLinks(_0x4c1d5b[_0xb6b5c7]['Id'],_0x4c1d5b[_0xb6b5c7][_0x574487(0x1d4)]);}});}function updateApprovalLinks(_0x52c730,_0x4a936f){var _0x2291de=a90_0x13126d,_0x1170d5=_0x4ce28e,_0x1e2575=_0x2291de(0x209),_0x14eee7,_0x59ceeb=GetItemTypeForListName(_0x1e2575),_0xa03138='';_0xa03138=_0x4a936f[_0x2291de(0x2e4)](0x0,_0x4a936f[_0x1170d5(0x594)]('/'))+'/'+$(_0x1170d5(0x691))[_0x2291de(0x1ea)]()[_0x1170d5(0x6ee)]()+$(_0x1170d5(0x5ed))[_0x2291de(0x1ca)](),_0x14eee7={'__metadata':{'type':_0x59ceeb},'Title':$('#txtRenamefile')[_0x2291de(0x1ea)]()[_0x1170d5(0x6ee)]()+$(_0x1170d5(0x5ed))[_0x1170d5(0x340)](),'FileName':$('#txtRenamefile')[_0x1170d5(0x419)]()[_0x1170d5(0x6ee)]()+$(_0x1170d5(0x5ed))[_0x1170d5(0x340)](),'FileServerURL':_0xa03138},$[_0x1170d5(0x3a9)](updateItemWithIDItemListDocuments(_0x1e2575,_0x14eee7,_0x52c730,_spPageContextInfo[_0x1170d5(0x229)]))[_0x2291de(0x21b)](function(_0x5ea9d9){var _0x13ee9c=_0x2291de,_0x2af511=_0x1170d5,_0x142491=_0x2af511(0x2ca)+_0x52c730+'\x27\x20';$[_0x2af511(0x3a9)](getItemsWithQuery(_0x2af511(0x479),_0x142491,_spPageContextInfo[_0x13ee9c(0x215)]))[_0x13ee9c(0x21b)](function(_0xd03de9){var _0x4f1ee4=_0x13ee9c,_0x304416=_0x2af511;if(_0xd03de9[_0x304416(0x4a1)]>0x0)for(var _0x216e7c=0x0;_0x216e7c<_0xd03de9[_0x304416(0x4a1)];_0x216e7c++){var _0x5c5934=_0x304416(0x479),_0x2c6281,_0x2019c1=GetItemTypeForListName(_0x5c5934);_0x2c6281={'__metadata':{'type':_0x2019c1},'Title':$(_0x304416(0x691))[_0x304416(0x419)]()[_0x304416(0x6ee)]()+$(_0x304416(0x5ed))[_0x304416(0x340)]()},$[_0x304416(0x3a9)](updateItemWithIDItemListDocuments(_0x5c5934,_0x2c6281,_0xd03de9[_0x216e7c]['Id'],_spPageContextInfo[_0x4f1ee4(0x215)]))[_0x304416(0x577)](function(_0x3ad518){var _0x16419b=_0x304416;console[_0x16419b(0x403)](_0x16419b(0x454));});}});});}function rename(_0x25f732,_0x45dbf9,_0x2ce2ee,_0x2b9508){var _0x16cd44=a90_0x13126d,_0x502a9a=_0x4ce28e;_0x45dbf9==_0x16cd44(0x339)&&(_0x45dbf9=_0x502a9a(0x1d1));var _0x1b042d=_0x25f732+_0x502a9a(0x206)+_0x45dbf9+_0x16cd44(0x63d)+_0x2ce2ee+')';return executeJson(_0x1b042d)[_0x502a9a(0x3f8)](function(_0x66e3a7){var _0x2557c0=_0x16cd44,_0x24dcb4=_0x502a9a,_0xf6c664={};_0xf6c664[_0x2557c0(0x626)]={'type':_0x66e3a7['d'][_0x24dcb4(0x3ad)][_0x24dcb4(0x457)]},_0xf6c664[_0x24dcb4(0x363)]=_0x2b9508;var _0x3b9d88=_0x66e3a7['d'][_0x24dcb4(0x3ad)][_0x24dcb4(0x2f2)],_0x5a563c={};return _0x5a563c['X-HTTP-Method']=_0x2557c0(0x40c),_0x5a563c[_0x24dcb4(0x361)]='*',executeJson(_0x3b9d88,_0x2557c0(0x2f3),_0x5a563c,_0xf6c664);});}function executeJson(_0x5ec7d8,_0x35368d,_0x5a8f19,_0x4a5a11){var _0x32e905=a90_0x13126d,_0x57a34a=_0x4ce28e;_0x5a8f19=_0x5a8f19||{},_0x35368d=_0x35368d||_0x57a34a(0x6c7),_0x5a8f19[_0x32e905(0x589)]=_0x57a34a(0x4b9),_0x35368d==_0x57a34a(0x1bb)&&(_0x5a8f19[_0x57a34a(0x5a1)]=$(_0x57a34a(0x57c))[_0x57a34a(0x419)]());var _0x1ceb6a={'url':_0x5ec7d8,'type':_0x35368d,'contentType':'application/json;odata=verbose','headers':_0x5a8f19};return _0x35368d==_0x32e905(0x2f3)&&(_0x1ceb6a[_0x57a34a(0x2c7)]=JSON['stringify'](_0x4a5a11)),$[_0x57a34a(0x42c)](_0x1ceb6a);}function getSharedDocLinks(){var _0x3d122b=a90_0x13126d,_0x414682=_0x4ce28e,_0x4b2438=_0x414682(0x38a)+DocumentId[_0x414682(0x470)]()+'\x27\x20';$[_0x3d122b(0x186)](getItemsWithQuery(_0x414682(0x2b7),_0x4b2438,_spPageContextInfo[_0x414682(0x229)]))[_0x3d122b(0x21b)](function(_0xd890e7){var _0x149b39=_0x3d122b,_0x4ed7c7=_0x414682;if(_0xd890e7[_0x4ed7c7(0x4a1)]>0x0)for(var _0x47eb9d=0x0;_0x47eb9d<_0xd890e7[_0x149b39(0x1d9)];_0x47eb9d++){updateShareLinks(_0xd890e7[_0x47eb9d]['Id'],_0xd890e7[_0x47eb9d][_0x4ed7c7(0x603)]);}});}function updateShareLinks(_0x5b1604,_0x38f0ea){var _0x3876dc=a90_0x13126d,_0x10c4be=_0x4ce28e,_0x9f7ca3=_0x3876dc(0x314),_0x4cdce8,_0x2ca2ec=GetItemTypeForListName(_0x9f7ca3),_0x1615ca='';_0x1615ca=_0x38f0ea[_0x10c4be(0x6e8)](0x0,_0x38f0ea[_0x10c4be(0x594)]('/'))+'/'+$(_0x10c4be(0x691))[_0x10c4be(0x419)]()[_0x10c4be(0x6ee)]()+$(_0x10c4be(0x5ed))[_0x10c4be(0x340)](),_0x4cdce8={'__metadata':{'type':_0x2ca2ec},'Title':$(_0x10c4be(0x691))[_0x10c4be(0x419)]()[_0x10c4be(0x6ee)]()+$(_0x10c4be(0x5ed))[_0x10c4be(0x340)](),'DocumentURL':_0x1615ca},$[_0x10c4be(0x3a9)](updateItemWithIDItemListDocuments(_0x9f7ca3,_0x4cdce8,_0x5b1604,_spPageContextInfo[_0x10c4be(0x229)]))[_0x10c4be(0x577)](function(_0x3e27a4){var _0x32062e=_0x10c4be;console[_0x32062e(0x403)](_0x32062e(0x3db));});}function getUniqueListBy(_0x2f54fa,_0x439112){var _0x44815a=a90_0x13126d,_0x5273f9=_0x4ce28e;return[...new Map(_0x2f54fa[_0x44815a(0x519)](_0x5dd06c=>[_0x5dd06c[_0x439112],_0x5dd06c]))[_0x5273f9(0x539)]()];}function getItemsWithQueryUsersDocuments(_0x4067eb,_0x1a74d9){var _0x4f130f=a90_0x13126d,_0x14e8b2=_0x4ce28e,_0x30d0a0=$[_0x14e8b2(0x5a7)](),_0x544fa0=_0x1a74d9+_0x4f130f(0x2f1)+_0x4067eb+'\x27)?$select=ID,EncodedAbsUrl,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields/HasUniqueRoleAssignments,Files/ModifiedBy/Title,Files/ListItemAllFields/HasUniqueRoleAssignments,Folders/ListItemAllFields,Files,Files/ListItemAllFields,Files/ListItemAllFields/FileSizeDisplay&$orderby=Modified\x20desc';return $[_0x14e8b2(0x42c)]({'url':_0x544fa0,'type':_0x4f130f(0x19e),'async':![],'headers':{'accept':_0x14e8b2(0x4b9)},'success':function(_0xae27dd){var _0x5ce63f=_0x4f130f;_0x30d0a0[_0x5ce63f(0x44c)](_0xae27dd['d']);},'error':function(_0x1dbcf9){var _0x1fd27f=_0x14e8b2;_0x30d0a0[_0x1fd27f(0x2f3)](_0x1dbcf9),alert(_0x1dbcf9[_0x1fd27f(0x32f)][_0x1fd27f(0x38d)][_0x1fd27f(0x57b)][_0x1fd27f(0x447)]);}}),_0x30d0a0[_0x14e8b2(0x297)]();}function NotifyEmail(){var _0x4315b1=a90_0x13126d,_0x5336c5=_0x4ce28e,_0x31643c=[];$('#NotifyHeaderSelect')[_0x5336c5(0x6ea)](),$(_0x5336c5(0x5d7))[_0x5336c5(0x6ea)]();var _0x34ba47=0x1;if(currentSectionType==_0x4315b1(0x42d)){var _0x237b98='';_0x34ba47=-0x1;var _0x4eb716=_0x4315b1(0x284)+currentClientName+'\x27\x20';$[_0x5336c5(0x3a9)](getItemsWithQuery(_0x5336c5(0x568),_0x4eb716,_spPageContextInfo[_0x5336c5(0x229)]))[_0x5336c5(0x577)](function(_0x14f80){var _0x4d41ed=_0x4315b1,_0x2b38ff=_0x5336c5;_0x14f80[0x0][_0x2b38ff(0x440)][_0x2b38ff(0x4c0)]!=undefined&&_0x14f80[0x0][_0x2b38ff(0x440)][_0x4d41ed(0x3c1)]!=null&&(_0x34ba47++,employeePicURL=_spPageContextInfo[_0x2b38ff(0x229)]+_0x2b38ff(0x415)+escapeProperly(_0x14f80[0x0][_0x4d41ed(0x26d)][_0x4d41ed(0x3c1)]),_0x237b98+=_0x2b38ff(0x27f)+_0x2b38ff(0x59b)+_0x34ba47+_0x2b38ff(0x398)+_0x2b38ff(0x5e1)+_0x2b38ff(0x607)+_0x4d41ed(0x2d4)+employeePicURL+_0x2b38ff(0x620)+_0x2b38ff(0x441)+_0x4d41ed(0x441)+_0x2b38ff(0x602)+_0x14f80[0x0][_0x2b38ff(0x440)][_0x2b38ff(0x664)]+'</a>'+_0x2b38ff(0x66c)+'<h4>'+_0x14f80[0x0][_0x2b38ff(0x440)][_0x4d41ed(0x3c1)]+_0x2b38ff(0x242)+_0x4d41ed(0x579)+_0x4d41ed(0x579)+_0x2b38ff(0x441)+_0x2b38ff(0x441)),_0x14f80[0x0][_0x2b38ff(0x61e)][_0x2b38ff(0x4c0)]!=undefined&&_0x14f80[0x0][_0x2b38ff(0x61e)][_0x4d41ed(0x3c1)]!=null&&(employeePicURL=_spPageContextInfo[_0x4d41ed(0x215)]+_0x2b38ff(0x415)+escapeProperly(_0x14f80[0x0][_0x2b38ff(0x61e)][_0x2b38ff(0x4c0)]),_0x34ba47++,_0x237b98+=_0x2b38ff(0x27f)+_0x2b38ff(0x59b)+_0x34ba47+_0x2b38ff(0x398)+_0x4d41ed(0x5e7)+_0x2b38ff(0x607)+'<img\x20src=\x22'+employeePicURL+_0x2b38ff(0x620)+_0x2b38ff(0x441)+_0x4d41ed(0x441)+_0x4d41ed(0x5fe)+_0x14f80[0x0]['Supervisor'][_0x2b38ff(0x664)]+'</a>'+_0x4d41ed(0x593)+_0x2b38ff(0x371)+_0x14f80[0x0][_0x2b38ff(0x61e)][_0x2b38ff(0x4c0)]+_0x2b38ff(0x242)+_0x2b38ff(0x441)+_0x2b38ff(0x441)+'</div>'+_0x2b38ff(0x441));if(_0x14f80[0x0][_0x2b38ff(0x481)][_0x2b38ff(0x1e4)]!=undefined&&_0x14f80[0x0][_0x2b38ff(0x481)][_0x4d41ed(0x55c)]!=null)for(var _0x18555f=0x0;_0x18555f<_0x14f80[0x0][_0x2b38ff(0x481)][_0x2b38ff(0x1e4)][_0x2b38ff(0x4a1)];_0x18555f++){_0x34ba47++,employeePicURL=_spPageContextInfo[_0x2b38ff(0x229)]+_0x2b38ff(0x415)+escapeProperly(_0x14f80[0x0][_0x4d41ed(0x2ad)][_0x2b38ff(0x1e4)][_0x18555f][_0x2b38ff(0x4c0)]),_0x237b98+=_0x2b38ff(0x27f)+_0x2b38ff(0x59b)+_0x34ba47+_0x4d41ed(0x2b2)+_0x2b38ff(0x5e1)+_0x2b38ff(0x607)+_0x4d41ed(0x2d4)+employeePicURL+_0x2b38ff(0x620)+_0x2b38ff(0x441)+_0x2b38ff(0x3c4)+_0x4d41ed(0x5fe)+_0x14f80[0x0][_0x2b38ff(0x481)][_0x2b38ff(0x1e4)][_0x18555f][_0x2b38ff(0x664)]+_0x2b38ff(0x442)+_0x2b38ff(0x66c)+_0x2b38ff(0x371)+_0x14f80[0x0][_0x4d41ed(0x2ad)][_0x2b38ff(0x1e4)][_0x18555f][_0x2b38ff(0x4c0)]+'</h4>'+_0x2b38ff(0x441)+_0x2b38ff(0x441)+_0x2b38ff(0x441)+_0x2b38ff(0x441);}}),_0x237b98!=''?$('#divlistofemployee')[_0x5336c5(0x314)]()[_0x5336c5(0x693)](_0x237b98):($(_0x5336c5(0x692))[_0x5336c5(0x3f3)](),$(_0x5336c5(0x5d7))[_0x5336c5(0x3f3)](),$('#divlistofemployee')[_0x5336c5(0x314)]()[_0x5336c5(0x693)](_0x5336c5(0x1ae))),$(_0x5336c5(0x520))[_0x5336c5(0x59f)](_0x5336c5(0x3e7))[_0x5336c5(0x195)](_0x5336c5(0x23c));}else $(_0x4315b1(0x587))[_0x5336c5(0x3f3)](),$(_0x5336c5(0x3e7))[_0x5336c5(0x314)]()['append'](_0x5336c5(0x60e)),$(_0x5336c5(0x520))[_0x5336c5(0x59f)](_0x5336c5(0x4d1))[_0x5336c5(0x28e)](_0x5336c5(0x23c)),initializePeoplePicker(_0x5336c5(0x35c),!![]);$(_0x5336c5(0x583))[_0x5336c5(0x382)](function(_0x1ee091){var _0x365420=_0x4315b1,_0x2c46e7=_0x5336c5;this[_0x2c46e7(0x3da)]==![]&&$(_0x2c46e7(0x5bc))[_0x2c46e7(0x47f)](_0x365420(0x495),'');}),$(_0x5336c5(0x5bc))[_0x5336c5(0x382)](function(_0x4fe13a){var _0x8ef17a=_0x4315b1,_0x1f358a=_0x5336c5;waitingDialog[_0x1f358a(0x6ea)](),this[_0x1f358a(0x3da)]==!![]?($(_0x1f358a(0x583))[_0x8ef17a(0x235)](_0x8ef17a(0x495),''),$(_0x1f358a(0x583))[_0x8ef17a(0x1d4)](_0x1f358a(0x382))):($(_0x8ef17a(0x63b))[_0x1f358a(0x47f)](_0x8ef17a(0x495),''),to=[]),waitingDialog[_0x1f358a(0x3f3)]();});}function SendNotifyEmail(){var _0x583a2f=a90_0x13126d,_0x3c6561=_0x4ce28e;to=[],$(_0x3c6561(0x3e7))[_0x583a2f(0x5f1)](_0x3c6561(0x4d1))[_0x3c6561(0x4a1)]>0x0?to=getUserInformationEmail(_0x3c6561(0x35c)):$(_0x3c6561(0x5ff))[_0x583a2f(0x1f4)](function(){var _0x64d6d8=_0x583a2f,_0x30fee8=_0x3c6561,_0xf3937e=$(this)[_0x30fee8(0x591)](_0x30fee8(0x63b))[0x0];to['push']($($(this)[_0x30fee8(0x591)](_0x30fee8(0x63b))[0x0])[_0x30fee8(0x40d)](_0x30fee8(0x569))[0x0][_0x64d6d8(0x4e1)]);});if(to[_0x3c6561(0x4a1)]>0x0)processSendEmails();else return alert(_0x3c6561(0x2dd)),![];}function processSendEmails(){var _0x5aadb8=a90_0x13126d,_0x2e0a42=_0x4ce28e,_0x22914d=_0x2e0a42(0x68b)+_0x2e0a42(0x3ac)+_0x5aadb8(0x244)+_spPageContextInfo[_0x2e0a42(0x4ed)]+_0x2e0a42(0x5dc)+'</tr>'+_0x2e0a42(0x3ac)+_0x2e0a42(0x412)+_0x2e0a42(0x1a1)+$(_0x2e0a42(0x359))[_0x5aadb8(0x1ca)]()+_0x2e0a42(0x5d1)+_0x2e0a42(0x5f2)+_0x2e0a42(0x3ac)+_0x2e0a42(0x63e)+_0x2e0a42(0x1a1)+$(_0x5aadb8(0x282))[_0x5aadb8(0x1ca)]()+_0x5aadb8(0x19b)+_0x5aadb8(0x4db)+_0x2e0a42(0x3ac)+_0x5aadb8(0x636)+_0x5aadb8(0x545)+$(_0x2e0a42(0x2d6))[_0x2e0a42(0x340)]()+_0x2e0a42(0x5d1)+_0x2e0a42(0x5f2)+_0x2e0a42(0x3ac)+_0x2e0a42(0x54d)+_0x2e0a42(0x1a1)+$('#txtMessage')[_0x2e0a42(0x419)]()+_0x2e0a42(0x5d1)+_0x5aadb8(0x4db)+_0x2e0a42(0x3ac)+_0x2e0a42(0x5cc)+$(_0x2e0a42(0x444))['val']()+_0x2e0a42(0x4fb)+_0x5aadb8(0x4db)+_0x2e0a42(0x5c1)+_0x2e0a42(0x4fd);for(var _0x321e6e=0x0;_0x321e6e<LabelDefaultLangauge[_0x2e0a42(0x4a1)];_0x321e6e++){_0x22914d[_0x2e0a42(0x3cc)](LabelDefaultLangauge[_0x321e6e][_0x2e0a42(0x3b9)])==!![]&&(_0x22914d=_0x22914d['replaceAll'](LabelDefaultLangauge[_0x321e6e][_0x2e0a42(0x3b9)],LabelDefaultLangauge[_0x321e6e][_0x2e0a42(0x41e)]));}var _0xb9aab=_0x5aadb8(0x243)+_spPageContextInfo[_0x2e0a42(0x4ed)]+_0x2e0a42(0x3ce),_0x56b94e=_0x5aadb8(0x475),_0x2f7ee4;_0x2f7ee4={'properties':{'__metadata':{'type':_0x2e0a42(0x3e4)},'From':_0x56b94e,'To':{'results':to},'Body':_0x22914d,'Subject':_0xb9aab}};var _0x4cb393={'properties':{'__metadata':{'type':_0x2e0a42(0x3e4)},'From':_0x5aadb8(0x30c),'To':{'results':to},'Body':_0x22914d,'Subject':_0xb9aab}},_0x58c338=_spPageContextInfo[_0x2e0a42(0x229)]+_0x2e0a42(0x393);$[_0x2e0a42(0x42c)]({'contentType':_0x2e0a42(0x3ed),'url':_0x58c338,'type':_0x2e0a42(0x1bb),'data':JSON[_0x2e0a42(0x1a4)](_0x4cb393),'async':![],'headers':{'Accept':_0x2e0a42(0x4b9),'content-type':_0x2e0a42(0x4b9),'X-RequestDigest':$(_0x2e0a42(0x57c))[_0x2e0a42(0x419)]()},'success':function(_0x1c7463){var _0x3d978f=_0x5aadb8,_0x194659=_0x2e0a42;alert(_0x194659(0x21c)),$('.checkse')[_0x3d978f(0x235)](_0x194659(0x3da),![]),$(_0x194659(0x3dc))[_0x194659(0x419)](''),$(_0x194659(0x5ae))[_0x194659(0x341)](_0x194659(0x3f3));},'error':function(_0x1e4259){var _0x107668=_0x2e0a42;return alert(_0x107668(0x622)+JSON[_0x107668(0x1a4)](_0x1e4259)),![];}});}function AddFavoriteFile(){var _0x27b149=a90_0x13126d,_0x1b4d5a=_0x4ce28e,_0x471955;_0x471955={'__metadata':{'type':_0x27b149(0x3e7)},'Title':$('#FileName')[_0x1b4d5a(0x340)](),'Name':$(_0x1b4d5a(0x359))[_0x27b149(0x1ca)](),'FileName':$(_0x1b4d5a(0x359))[_0x27b149(0x1ca)](),'Category':'Document','Link':'','UserId':_spPageContextInfo[_0x1b4d5a(0x2b0)],'SiteLink':CopySourceURL,'DMSName':CopyLibrary,'DocumentID':DocumentId,'DocumentLink':$('.txtCopyLink')['val'](),'Icon':{'__metadata':{'type':_0x1b4d5a(0x63a)},'Description':'','Url':_spPageContextInfo[_0x27b149(0x215)]+_0x1b4d5a(0x517)},'Active':!![]};var _0x4250ce=$[_0x1b4d5a(0x5a7)]();return $[_0x1b4d5a(0x42c)]({'url':_spPageContextInfo[_0x1b4d5a(0x229)]+_0x27b149(0x43b),'type':_0x27b149(0x2f3),'async':![],'headers':{'accept':_0x1b4d5a(0x4b9),'X-RequestDigest':$(_0x1b4d5a(0x57c))[_0x1b4d5a(0x419)](),'content-Type':_0x1b4d5a(0x4b9)},'data':JSON['stringify'](_0x471955),'success':function(_0x1a9b9a){var _0x161e6d=_0x27b149,_0x4f7ec4=_0x1b4d5a;FavouriteId=_0x1a9b9a['d']['Id'],$(_0x4f7ec4(0x2da))[_0x4f7ec4(0x3f3)](),$(_0x4f7ec4(0x435))[_0x161e6d(0x46b)](),$(_0x4f7ec4(0x4c5))[_0x4f7ec4(0x340)](_0x4f7ec4(0x3fd));},'error':function(_0x553bec){var _0x3cbe69=_0x1b4d5a;console[_0x3cbe69(0x403)](JSON[_0x3cbe69(0x1a4)](_0x553bec)),_0x4250ce[_0x3cbe69(0x2f3)](_0x553bec);}}),_0x4250ce[_0x1b4d5a(0x297)]();}function DeleteFromFavourite(){var _0x33f042=a90_0x13126d,_0x4d7a49=_0x4ce28e;$[_0x4d7a49(0x42c)]({'url':_spPageContextInfo[_0x4d7a49(0x229)]+_0x4d7a49(0x503)+FavouriteId+')','type':_0x33f042(0x2f3),'headers':{'X-RequestDigest':$(_0x33f042(0x30d))[_0x4d7a49(0x419)](),'IF-MATCH':'*','X-HTTP-Method':_0x33f042(0x2c7)},'success':function(_0x225c8e){var _0x407873=_0x33f042,_0x438c24=_0x4d7a49;$(_0x438c24(0x2da))[_0x407873(0x46b)](),$(_0x438c24(0x435))[_0x407873(0x39a)](),$(_0x407873(0x28c))[_0x438c24(0x340)](_0x407873(0x1e2));},'error':function(_0x22b35f){var _0x2ba445=_0x4d7a49;alert(_0x22b35f['responseJSON'][_0x2ba445(0x38d)]);}});}function GetFormDigestValue(_0x2e427b){var _0x20c64d=a90_0x13126d,_0x527be6=_0x4ce28e,_0x4ab800=$[_0x20c64d(0x182)]();return $[_0x527be6(0x42c)]({'url':_0x2e427b+_0x527be6(0x6cb),'type':_0x527be6(0x1bb),'async':![],'headers':{'accept':_0x527be6(0x4b9)},'success':function(_0x1c9cf5){var _0x530dff=_0x527be6,_0x371519=_0x1c9cf5['d'][_0x530dff(0x584)]['FormDigestValue'];_0x4ab800[_0x530dff(0x321)](_0x371519),console[_0x530dff(0x403)](_0x371519);},'error':function(_0x2020f6,_0x1ff932,_0x3d6bed){var _0x27e28d=_0x20c64d,_0x4df1d7=_0x527be6;console[_0x4df1d7(0x403)](_0x27e28d(0x5ba));}}),_0x4ab800['promise']();}function GetItemTypeForLibraryName(_0x5ae29a){var _0x1b2a30=a90_0x13126d,_0x52ee5d=_0x4ce28e;return _0x52ee5d(0x3c5)+_0x5ae29a[_0x52ee5d(0x54c)](0x0)[_0x52ee5d(0x1cd)]()+_0x5ae29a[_0x1b2a30(0x5e5)]('\x20')[_0x1b2a30(0x33d)]('')['slice'](0x1)+_0x52ee5d(0x37e);}function GetItemTypeForListName(_0xfc1e6c){var _0x466fdc=_0x4ce28e;return _0x466fdc(0x3c5)+_0xfc1e6c['charAt'](0x0)['toUpperCase']()+_0xfc1e6c[_0x466fdc(0x288)]('\x20')[_0x466fdc(0x3d4)]('')[_0x466fdc(0x3ee)](0x1)+_0x466fdc(0x3d9);}function ShowCommonStandardDateFormat(_0x21a410){var _0x17ee3b=a90_0x13126d,_0x239fe1=_0x4ce28e,_0x3300b8=new Date(_0x21a410),_0x510b5f=[_0x17ee3b(0x530),_0x239fe1(0x52f),_0x17ee3b(0x515),_0x239fe1(0x43d),_0x239fe1(0x2fd),_0x239fe1(0x6a7),_0x239fe1(0x2f5),_0x239fe1(0x402),_0x17ee3b(0x54e),_0x239fe1(0x609),_0x239fe1(0x50f),_0x239fe1(0x296)],_0x4e67b5=_0x3300b8[_0x17ee3b(0x183)](),_0x3cbd63=_0x3300b8[_0x17ee3b(0x1e9)](),_0x167faf=_0x3300b8[_0x239fe1(0x449)]()>=0xc?'PM':'AM';_0x4e67b5=_0x4e67b5%0xc,_0x4e67b5=_0x4e67b5?_0x4e67b5:0xc,_0x3cbd63=_0x3cbd63<0xa?'0'+_0x3cbd63:_0x3cbd63;var _0x588da4=_0x4e67b5+':'+_0x3cbd63+'\x20'+_0x167faf;return _0x510b5f[_0x3300b8[_0x239fe1(0x480)]()]+'\x20'+_0x3300b8[_0x239fe1(0x59a)]()+'\x20'+_0x3300b8[_0x239fe1(0x682)]()+'\x20'+_0x588da4;}function initializePeoplePicker(_0x595227){var _0x4f1f1f=a90_0x13126d,_0x2096ba=_0x4ce28e,_0x21c062={};_0x21c062[_0x4f1f1f(0x36f)]=_0x2096ba(0x2d5),_0x21c062['SearchPrincipalSource']=0xf,_0x21c062[_0x2096ba(0x514)]=0xf,_0x21c062[_0x2096ba(0x3fa)]=!![],_0x21c062[_0x4f1f1f(0x543)]=0x32,_0x21c062[_0x4f1f1f(0x415)]=_0x2096ba(0x260),this[_0x2096ba(0x69e)](_0x595227,null,_0x21c062);}function getSubCategory(_0x4d37bb,_0x56da5b){var _0x4cb17f=a90_0x13126d,_0x34ecc9=_0x4ce28e;_0x56da5b==_0x34ecc9(0x24e)||_0x56da5b==_0x34ecc9(0x378)||_0x56da5b==_0x34ecc9(0x191)||_0x56da5b==_0x34ecc9(0x17e)?$('#'+_0x56da5b)['empty']()[_0x34ecc9(0x693)](_0x4cb17f(0x26a)):$('#'+_0x56da5b)[_0x34ecc9(0x314)]()[_0x34ecc9(0x693)](_0x34ecc9(0x43a));var _0x19aedb=_0x34ecc9(0x5fa)+_0x4d37bb+'\x27\x20';$[_0x34ecc9(0x3a9)](getItemsWithQuery(_0x34ecc9(0x54a),_0x19aedb,_spPageContextInfo[_0x34ecc9(0x229)]))[_0x34ecc9(0x577)](function(_0x449313){var _0x2d6d6a=_0x4cb17f,_0x39c6e=_0x34ecc9;if(_0x449313[_0x39c6e(0x4a1)]>0x0)for(var _0x3719a4=0x0;_0x3719a4<_0x449313[_0x39c6e(0x4a1)];_0x3719a4++){$('#'+_0x56da5b)['append'](_0x39c6e(0x19b)+_0x449313[_0x3719a4][_0x39c6e(0x664)]+'\x22>'+_0x449313[_0x3719a4][_0x2d6d6a(0x55a)]+_0x39c6e(0x65e));}});}function getMandatoryColumns(_0x38804a){var _0x291a75=a90_0x13126d,_0x50c867=_0x4ce28e;arrMandatoryCols=[];for(var _0x481b2f=0x0;_0x481b2f<_0x38804a[_0x50c867(0x4a1)];_0x481b2f++){_0x50c867(0x664)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)]&&_0x38804a[_0x481b2f][_0x50c867(0x30f)]==!![]&&($(_0x50c867(0x471))['prop']('checked',!![]),arrMandatoryCols[_0x50c867(0x4f4)](_0x291a75(0x55a))),(_0x50c867(0x5d4)==_0x38804a[_0x481b2f][_0x291a75(0x1bb)]||_0x50c867(0x659)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)]||_0x50c867(0x315)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)])&&_0x38804a[_0x481b2f][_0x50c867(0x30f)]==!![]&&($(_0x291a75(0x273))[_0x50c867(0x47f)](_0x291a75(0x495),!![]),arrMandatoryCols[_0x291a75(0x5ae)](_0x291a75(0x5fc))),(_0x50c867(0x1a5)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)]||_0x50c867(0x3ff)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)])&&_0x38804a[_0x481b2f][_0x50c867(0x30f)]==!![]&&($(_0x50c867(0x360))[_0x50c867(0x47f)](_0x50c867(0x3da),!![]),arrMandatoryCols[_0x50c867(0x4f4)](_0x291a75(0x560))),_0x50c867(0x2f7)==_0x38804a[_0x481b2f][_0x50c867(0x2ef)]&&_0x38804a[_0x481b2f][_0x50c867(0x30f)]==!![]&&($(_0x50c867(0x401))['prop'](_0x50c867(0x3da),!![]),arrMandatoryCols[_0x50c867(0x4f4)](_0x291a75(0x3b0))),_0x50c867(0x509)==_0x38804a[_0x481b2f][_0x291a75(0x1bb)]&&_0x38804a[_0x481b2f][_0x50c867(0x30f)]==!![]&&($(_0x50c867(0x4b2))[_0x50c867(0x47f)](_0x50c867(0x3da),!![]),arrMandatoryCols[_0x50c867(0x4f4)](_0x50c867(0x509)));if(_0x50c867(0x4f3)==_0x38804a[_0x481b2f][_0x291a75(0x1bb)]&&_0x38804a[_0x481b2f][_0x291a75(0x689)]==!![])$(_0x50c867(0x43b))[_0x291a75(0x235)](_0x50c867(0x3da),!![]),arrMandatoryCols['push'](_0x50c867(0x4f3));else{}}}function IsNewFileExist(_0x41af7b,_0x58a155,_0x4e57e0){var _0x440eb6=a90_0x13126d,_0x57b887=_0x4ce28e,_0x5a4bfd='/'+_0x4e57e0[_0x57b887(0x65b)](_0x4e57e0[_0x57b887(0x189)]('/s')+0x1),_0x14bfd8=_0x5a4bfd+'/'+_0x41af7b+_0x58a155,_0x61197e=![];return jQuery[_0x57b887(0x42c)]({'url':_0x4e57e0+'/_api/web/getfilebyserverrelativeurl(\x27'+_0x14bfd8+_0x57b887(0x624)+_0x440eb6(0x281),'type':_0x57b887(0x6c7),'async':![],'headers':{'accept':_0x57b887(0x4b9)},'success':function(_0x5dd74b){_0x61197e=!![];},'error':function(_0x1cba10){var _0x562edc=_0x57b887;_0x1cba10[_0x562edc(0x17f)]==0x194?console[_0x562edc(0x403)](_0x58a155+_0x562edc(0x2db)):waitingDialog[_0x562edc(0x3f3)]();}}),_0x61197e;}function OpenChatBox(_0x8fab3e,_0xb64d6c,_0x2dd2ea,_0x3e821d,_0x50243e,_0x3ef72c,_0x5d3956,_0x1ab299){var _0x5b683e=a90_0x13126d,_0xbf067f=_0x4ce28e;DocumentId=_0x8fab3e,_0x2dd2ea=='null'&&(_0x2dd2ea=''),_0x3e821d==_0xbf067f(0x4e7)&&(_0x3e821d=''),$(_0xbf067f(0x359))[_0xbf067f(0x340)](_0xb64d6c),$(_0xbf067f(0x1a2))[_0xbf067f(0x340)](_0x2dd2ea),CommentSiteURL=_0x1ab299,$(_0xbf067f(0x1ed))[_0x5b683e(0x1ca)](_0xb64d6c),_0x3e821d=='-Select-'||_0x3e821d==null||_0x3e821d==_0xbf067f(0x4e7)?$(_0xbf067f(0x6d7))[_0x5b683e(0x1ca)](''):$(_0xbf067f(0x6d7))[_0xbf067f(0x340)](_0x3e821d),$(_0xbf067f(0x2a5))[_0x5b683e(0x1ca)](_0x2dd2ea),$(_0xbf067f(0x2d6))[_0xbf067f(0x340)](_0x3e821d),currentSectionType!=_0xbf067f(0x1fc)?$(_0xbf067f(0x372))[_0xbf067f(0x340)](getModifiedBy(_0x50243e)):($(_0x5b683e(0x31d))[_0xbf067f(0x340)](_0x50243e),$(_0xbf067f(0x337))[_0x5b683e(0x1ca)](_0x3ef72c),$(_0x5b683e(0x534))[_0x5b683e(0x26c)](function(){OpenEmail(_0x3ef72c);}),$(_0xbf067f(0x1d0))[_0xbf067f(0x47f)](_0x5b683e(0x3e1),_spPageContextInfo[_0xbf067f(0x229)]+_0xbf067f(0x415)+escapeProperly(_0x3ef72c))),$(_0xbf067f(0x2ec))[_0xbf067f(0x340)](ShowCommonStandardDateFormat(new Date(_0x5d3956))),AddFileViewCount(),GetComments(_0x5b683e(0x1ec),'');}function AddFileViewCount(){var _0x160267=a90_0x13126d,_0xa4ea22=_0x4ce28e,_0x4fef05=_0xa4ea22(0x661),_0x577bf5=CopyLibrary;$(_0xa4ea22(0x1fa))[_0xa4ea22(0x247)](_0xa4ea22(0x418))==_0xa4ea22(0x1f5)&&(_0x577bf5=CheckLibary);var _0x506bfa=_0xa4ea22(0x2ba)+_spPageContextInfo[_0x160267(0x640)]+'\x27\x20and\x20DocumentId\x20eq\x20\x27'+DocumentId+_0xa4ea22(0x385)+encodeURIComponent($(_0x160267(0x20c))[_0xa4ea22(0x340)]())+_0xa4ea22(0x4d0);$[_0xa4ea22(0x3a9)](getItemsWithQuery(_0x160267(0x391),_0x506bfa,_spPageContextInfo[_0x160267(0x215)]))[_0xa4ea22(0x577)](function(_0xdf7027){var _0x3b8d5d=_0x160267,_0x3799a7=_0xa4ea22;if(_0xdf7027[_0x3b8d5d(0x1d9)]>0x0){if(_0xdf7027[0x0][_0x3799a7(0x595)]=='No'){var _0x32065b={'__metadata':{'type':_0x3799a7(0x3c5)+_0x4fef05+'ListItem'},'Views':_0x3b8d5d(0x197),'ViewsById':parseInt(_spPageContextInfo[_0x3799a7(0x2b0)])};updateItemWithIDItemListDocuments(_0x4fef05,_0x32065b,_0xdf7027[0x0]['ID'],_spPageContextInfo['webAbsoluteUrl'],![]);}}else{if(_0xdf7027[_0x3799a7(0x4a1)]==0x0){var _0x32065b={'__metadata':{'type':_0x3799a7(0x3c5)+_0x4fef05+_0x3799a7(0x3d9)},'Title':$(_0x3799a7(0x359))[_0x3799a7(0x340)](),'EmployeeId':parseInt(_spPageContextInfo[_0x3799a7(0x2b0)]),'Views':_0x3799a7(0x493),'ViewsById':parseInt(_spPageContextInfo[_0x3799a7(0x2b0)]),'DocumentId':parseInt(DocumentId),'FileName':$(_0x3799a7(0x359))[_0x3799a7(0x340)](),'DocumentTitle':$(_0x3799a7(0x2a5))[_0x3799a7(0x340)](),'FileCategory':$(_0x3799a7(0x2d6))[_0x3799a7(0x340)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$('#FilePath')[_0x3799a7(0x340)](),'LibraryName':_0x577bf5};AddItemToListGroups(_0x4fef05,_0x32065b);}}});}function PushRootComment(){var _0xe3c038=a90_0x13126d,_0x571c6f=_0x4ce28e,_0x41d8dc=_0x571c6f(0x661),_0x4660ab=$(_0x571c6f(0x42a))[_0x571c6f(0x678)]()[_0xe3c038(0x549)](),_0x565c00=CopyLibrary;$(_0xe3c038(0x521))[_0xe3c038(0x2ef)](_0x571c6f(0x418))==_0x571c6f(0x1f5)&&(_0x565c00=CheckLibary);if(_0x4660ab!=''){if(FileCommentType==_0x571c6f(0x33b)){var _0x10c216={'__metadata':{'type':_0x571c6f(0x3c5)+_0x41d8dc+_0x571c6f(0x3d9)},'EmployeeId':_spPageContextInfo[_0x571c6f(0x2b0)],'ReplierId':_spPageContextInfo[_0xe3c038(0x1f6)],'Comments':_0x4660ab,'Initials':_0x571c6f(0x33b),'ReplyforId':_spPageContextInfo[_0x571c6f(0x2b0)],'Title':$(_0x571c6f(0x359))['text'](),'DocumentId':parseInt(DocumentId),'FileName':$(_0x571c6f(0x359))[_0x571c6f(0x340)](),'DocumentTitle':$(_0x571c6f(0x2a5))[_0xe3c038(0x1ca)](),'FileCategory':$(_0x571c6f(0x2d6))[_0x571c6f(0x340)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$(_0x571c6f(0x2e6))[_0x571c6f(0x340)](),'LibraryName':_0x565c00};AddDocComments(_0x41d8dc,_0x10c216,'0'),$(_0x571c6f(0x42a))[_0x571c6f(0x678)]('');}else{if(FileCommentType==_0x571c6f(0x2e3)){var _0x10c216={'__metadata':{'type':_0x571c6f(0x3c5)+_0x41d8dc+_0x571c6f(0x3d9)},'EmployeeId':_spPageContextInfo[_0x571c6f(0x2b0)],'ReplierId':_spPageContextInfo[_0x571c6f(0x2b0)],'Comments':_0x4660ab,'Initials':_0x571c6f(0x2e3),'ReplyTo':$(_0xe3c038(0x34b))[_0x571c6f(0x340)](),'ReplyAgainst':$(_0x571c6f(0x459))[_0x571c6f(0x1a0)](_0x571c6f(0x447)),'Title':$(_0x571c6f(0x359))[_0x571c6f(0x340)](),'DocumentId':parseInt(DocumentId),'FileName':$(_0x571c6f(0x359))[_0x571c6f(0x340)](),'DocumentTitle':$(_0x571c6f(0x2a5))[_0x571c6f(0x340)](),'FileCategory':$(_0x571c6f(0x2d6))[_0x571c6f(0x340)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$(_0x571c6f(0x2e6))[_0x571c6f(0x340)](),'LibraryName':_0x565c00};AddDocComments(_0x41d8dc,_0x10c216,'0'),$(_0x571c6f(0x42a))[_0x571c6f(0x678)](''),FileCommentType=_0xe3c038(0x22e);}else FileCommentType==_0x571c6f(0x2e4)&&UpdateEditComment(ModifyRecId);}}else return alert(_0xe3c038(0x613)),![];}function AddDocComments(_0x25e4bc,_0x1f0bc3,_0x590133){var _0x1b9d3a=a90_0x13126d,_0x3682cc=_0x4ce28e;$[_0x3682cc(0x42c)]({'url':_spPageContextInfo[_0x1b9d3a(0x215)]+_0x3682cc(0x3e3)+_0x25e4bc+_0x3682cc(0x642),'type':_0x3682cc(0x1bb),'contentType':_0x3682cc(0x4b9),'data':JSON[_0x3682cc(0x1a4)](_0x1f0bc3),'async':![],'headers':{'Accept':'application/json;odata=verbose','X-RequestDigest':$(_0x3682cc(0x57c))[_0x3682cc(0x419)]()},'success':function(_0x180b88){var _0x240cee=_0x1b9d3a,_0x41e8c4=_0x3682cc;$(_0x41e8c4(0x17d))[_0x240cee(0x1ca)](parseInt($(_0x41e8c4(0x17d))[_0x41e8c4(0x340)]())+0x1),FinalFiles4Upload[_0x240cee(0x1d9)]>0x0?(uploadattachment(_0x180b88['d']['ID']),$(_0x240cee(0x207))[_0x41e8c4(0x314)](),$(_0x41e8c4(0x364))[_0x41e8c4(0x314)]()):(AutoRefreshComments(_0x240cee(0x499),_0x41e8c4(0x4fc)),$(_0x240cee(0x507))[_0x41e8c4(0x314)](),FinalFiles4Upload=[],finalFiles=[]),$(_0x41e8c4(0x4c3))[_0x41e8c4(0x3f3)](),$(_0x41e8c4(0x235))[_0x41e8c4(0x314)](),$(_0x41e8c4(0x5d2))[_0x41e8c4(0x419)]('');},'error':function(_0x529a0e){var _0x4fff30=_0x3682cc;console[_0x4fff30(0x403)](_0x529a0e);}});}function AutoRefreshComments(_0x998ce7,_0x44a4ad){var _0x267b20=_0x4ce28e,_0x35785d=_spPageContextInfo[_0x267b20(0x229)]+_0x267b20(0x354)+getLatestMsgId+_0x267b20(0x182)+DocumentId+_0x267b20(0x385)+encodeURIComponent($(_0x267b20(0x359))[_0x267b20(0x340)]())+_0x267b20(0x2a4),_0x39e52a=OccasionExecuteFilter(_0x35785d,_0x998ce7,_0x44a4ad);}function _0x1987(){var _0x2f7e29=a90_0x13126d,_0x246d47=[_0x2f7e29(0x400),_0x2f7e29(0x32d),_0x2f7e29(0x3ec),_0x2f7e29(0x1b8),_0x2f7e29(0x5a7),'interactivepreview',_0x2f7e29(0x5d8),_0x2f7e29(0x1be),_0x2f7e29(0x26b),_0x2f7e29(0x5f2),_0x2f7e29(0x546),_0x2f7e29(0x37d),_0x2f7e29(0x4e9),_0x2f7e29(0x390),'.ms-belltown-anonShow',_0x2f7e29(0x572),_0x2f7e29(0x4a9),_0x2f7e29(0x680),_0x2f7e29(0x313),_0x2f7e29(0x60b),_0x2f7e29(0x2d1),_0x2f7e29(0x33b),_0x2f7e29(0x5fc),_0x2f7e29(0x637),'substring','<div\x20data-localize=\x27Category\x27><strong>Category</strong><strong>:</strong>\x20',_0x2f7e29(0x1f8),_0x2f7e29(0x4d3),_0x2f7e29(0x4d1),_0x2f7e29(0x3aa),_0x2f7e29(0x391),_0x2f7e29(0x312),_0x2f7e29(0x58c),'Title',_0x2f7e29(0x240),_0x2f7e29(0x49d),'toggleClass','Everyone',_0x2f7e29(0x50e),_0x2f7e29(0x403),_0x2f7e29(0x1fd),_0x2f7e29(0x593),'\x27><span\x20class=\x27attachment-badge-name\x20comment-box-chip-text-box\x27><a\x20target=\x27_blank\x27\x20href=\x27',_0x2f7e29(0x5f4),_0x2f7e29(0x42a),_0x2f7e29(0x451),_0x2f7e29(0x1af),_0x2f7e29(0x64a),'\x27\x20value=\x27',_0x2f7e29(0x2d8),_0x2f7e29(0x3fe),'webServerRelativeUrl',_0x2f7e29(0x658),_0x2f7e29(0x41c),'<div\x20class=\x22dms-table-ellipsis-2\x22>',_0x2f7e29(0x2cd),_0x2f7e29(0x5ee),_0x2f7e29(0x2b4),_0x2f7e29(0x1b3),'ApproverDecidingStep','\x27&$top=5000',_0x2f7e29(0x5db),_0x2f7e29(0x23b),_0x2f7e29(0x33e),_0x2f7e29(0x337),'SPClientPeoplePickerDict',_0x2f7e29(0x48b),'SPClientPeoplePicker',_0x2f7e29(0x329),_0x2f7e29(0x32b),_0x2f7e29(0x1c4),'Please\x20enter\x20deciding\x20step\x20name.',_0x2f7e29(0x1ee),'ppsm',_0x2f7e29(0x3be),_0x2f7e29(0x440),_0x2f7e29(0x4b6),_0x2f7e29(0x404),_0x2f7e29(0x2ec),_0x2f7e29(0x587),'append',_0x2f7e29(0x5e2),_0x2f7e29(0x4ff),'folderUrl',_0x2f7e29(0x50b),_0x2f7e29(0x21f),_0x2f7e29(0x5ca),_0x2f7e29(0x445),_0x2f7e29(0x38c),_0x2f7e29(0x412),'\x27\x20class=\x27img-circle\x20chat-user-image\x27\x20width=\x2730\x27\x20height=\x2730\x27\x20data-themekey=\x27#\x27></span><span\x20class=\x27b-500\x27\x20id=\x27Username',_0x2f7e29(0x654),_0x2f7e29(0x38f),_0x2f7e29(0x24b),'.dummyRow','.clearPropBox',_0x2f7e29(0x223),_0x2f7e29(0x652),_0x2f7e29(0x411),_0x2f7e29(0x5ff),_0x2f7e29(0x496),_0x2f7e29(0x464),'#StepName1',_0x2f7e29(0x448),'edit&wdAccPdf=0&wdEmbedFS=1',_0x2f7e29(0x32e),_0x2f7e29(0x5ea),'/DepartmentalDMS/Forms/AllItems.aspx?id=',_0x2f7e29(0x433),_0x2f7e29(0x655),_0x2f7e29(0x410),'.od-TextFileEditor-title-bar',_0x2f7e29(0x296),_0x2f7e29(0x2f1),'.pptx','\x22).prop(\x22checked\x22)\x20==\x20false',_0x2f7e29(0x5c5),_0x2f7e29(0x2a4),'file',_0x2f7e29(0x4b0),'#SuccessorStepHeader',_0x2f7e29(0x359),_0x2f7e29(0x601),_0x2f7e29(0x366),'\x22>will\x20be\x20provided\x20at\x20Runtime</span><span\x20id=\x22StepName',_0x2f7e29(0x40e),_0x2f7e29(0x375),'option',_0x2f7e29(0x667),'Error\x20occured.',_0x2f7e29(0x424),_0x2f7e29(0x452),_0x2f7e29(0x19e),_0x2f7e29(0x457),'does\x20not\x20exist\x20on\x20type',_0x2f7e29(0x266),_0x2f7e29(0x60e),_0x2f7e29(0x3f2),'\x27)\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22></span>','#commentText',_0x2f7e29(0x228),_0x2f7e29(0x422),_0x2f7e29(0x5a9),_0x2f7e29(0x30b),_0x2f7e29(0x548),'#groupDocumentGridtbody',_0x2f7e29(0x1f1),_0x2f7e29(0x2aa),_0x2f7e29(0x409),'100%',_0x2f7e29(0x62c),_0x2f7e29(0x28a),_0x2f7e29(0x442),_0x2f7e29(0x287),_0x2f7e29(0x3b4),'pptx','Mar',_0x2f7e29(0x33a),'DD,\x20MMMM\x20YYYY\x20hh:mm\x20A',_0x2f7e29(0x392),'#rename',_0x2f7e29(0x463),');\x22><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#addsuccessor\x22><i\x20class=\x22fa\x20fa-edit\x22\x20aria-hidden=\x22true\x22></i>\x20Edit</a></li>',_0x2f7e29(0x288),_0x2f7e29(0x4ea),'substr',_0x2f7e29(0x31b),_0x2f7e29(0x46b),'dataset',_0x2f7e29(0x4a2),_0x2f7e29(0x2a9),'trim',_0x2f7e29(0x2e1),_0x2f7e29(0x29d),_0x2f7e29(0x268),_0x2f7e29(0x31a),'<li><button\x20id=\x27messageEdit\x27\x20type=\x27button\x27\x20class=\x27btn\x20LikeCmnt',_0x2f7e29(0x468),_0x2f7e29(0x212),'ddlAddFileSubC','status',_0x2f7e29(0x322),_0x2f7e29(0x1bc),'&$filter=\x20(DocumentId\x20eq\x20\x27','wma','fadeIn',_0x2f7e29(0x236),_0x2f7e29(0x65e),_0x2f7e29(0x67b),_0x2f7e29(0x3ab),_0x2f7e29(0x4dc),_0x2f7e29(0x60d),'main-menu-panel',_0x2f7e29(0x1e4),'.clearValue',_0x2f7e29(0x258),_0x2f7e29(0x1cc),_0x2f7e29(0x356),'ddlAddFolderSubC',_0x2f7e29(0x1b1),_0x2f7e29(0x22b),_0x2f7e29(0x4ad),'removeClass','\x27)/CheckedOutByUser/Email',_0x2f7e29(0x289),_0x2f7e29(0x5a5),'521935cIAxzP',_0x2f7e29(0x3f9),'<option\x20value=\x22',_0x2f7e29(0x220),_0x2f7e29(0x38e),_0x2f7e29(0x35f),'ServerRedirectedEmbedUri',_0x2f7e29(0x3e0),_0x2f7e29(0x545),_0x2f7e29(0x316),_0x2f7e29(0x529),_0x2f7e29(0x2da),_0x2f7e29(0x560),_0x2f7e29(0x5f6),_0x2f7e29(0x59d),'.PreDefinedTemplatesBox',_0x2f7e29(0x47f),'3704155KYgNmF','get_defaultEditFormUrl',_0x2f7e29(0x4f1),_0x2f7e29(0x52a),_0x2f7e29(0x66c),'<tr><td\x20colspan=\x2212\x22\x20style=\x22text-align:center;\x22>No\x20result\x20found!</td></tr>',_0x2f7e29(0x341),_0x2f7e29(0x688),'WOPIFrame2.aspx',_0x2f7e29(0x669),_0x2f7e29(0x5f8),'\x20-\x20',_0x2f7e29(0x473),'#txtAddFileDetails',_0x2f7e29(0x428),_0x2f7e29(0x4d7),'\x27,\x20',_0x2f7e29(0x2f3),_0x2f7e29(0x222),_0x2f7e29(0x668),'<li><a\x20class=\x27logout\x27\x20onclick=\x27DeleteComments(','<div\x20class=\x27like-user-name\x27>',_0x2f7e29(0x3ba),_0x2f7e29(0x661),_0x2f7e29(0x309),_0x2f7e29(0x320),_0x2f7e29(0x198),_0x2f7e29(0x21c),_0x2f7e29(0x1e3),_0x2f7e29(0x237),'ClientContext',_0x2f7e29(0x305),_0x2f7e29(0x479),_0x2f7e29(0x5b3),_0x2f7e29(0x639),_0x2f7e29(0x357),_0x2f7e29(0x499),_0x2f7e29(0x382),_0x2f7e29(0x35d),'Documents',_0x2f7e29(0x4f5),_0x2f7e29(0x5cc),'FileServerURL','#btnChangeApprovers','<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Others\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png\x27></img><a\x20name=\x27',_0x2f7e29(0x264),_0x2f7e29(0x500),_0x2f7e29(0x581),_0x2f7e29(0x298),_0x2f7e29(0x206),_0x2f7e29(0x437),_0x2f7e29(0x4fe),'#LargeUploadFile','<div\x20class=\x22InitiatorApp\x22><button\x20type=\x22button\x22\x20class=\x22btn\x20custom-btn\x20wpx-87\x22\x20onclick=\x22DisplayInitiatorApp(\x27NewStep',_0x2f7e29(0x59f),'<div\x20class=\x22approvelheadeing\x22><h3\x20class=\x22mainheading\x22\x20id=\x22txtStep',_0x2f7e29(0x42c),'\x27)\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22></span>','results',_0x2f7e29(0x65b),_0x2f7e29(0x648),_0x2f7e29(0x570),_0x2f7e29(0x508),_0x2f7e29(0x5af),_0x2f7e29(0x5d5),_0x2f7e29(0x1e6),_0x2f7e29(0x3a4),_0x2f7e29(0x61b),_0x2f7e29(0x204),_0x2f7e29(0x676),_0x2f7e29(0x43f),_0x2f7e29(0x5aa),_0x2f7e29(0x3c2),_0x2f7e29(0x2fe),_0x2f7e29(0x3e6),_0x2f7e29(0x555),_0x2f7e29(0x44f),_0x2f7e29(0x501),'wmv',_0x2f7e29(0x484),'#ModalDisplayProperty',_0x2f7e29(0x61d),_0x2f7e29(0x408),'.NewFileUpload',_0x2f7e29(0x55d),'Shared\x20Documents/',_0x2f7e29(0x1f4),'outsidesetion',_0x2f7e29(0x536),'#btnPopupShare',_0x2f7e29(0x656),'<div><strong>Details:</strong>\x20','/_api/web/lists/getbytitle(\x27',_0x2f7e29(0x622),_0x2f7e29(0x505),_0x2f7e29(0x4a5),_0x2f7e29(0x52d),_0x2f7e29(0x1f7),'userselection',_0x2f7e29(0x4cb),_0x2f7e29(0x638),'dateFormat','54OkzKPT',_0x2f7e29(0x2fa),'\x27\x20style=\x27display:','\x27)\x22>Add\x20Approver</button></div>',_0x2f7e29(0x2c2),'fileDownload',_0x2f7e29(0x279),'.CustomizeAddStepBox',_0x2f7e29(0x525),_0x2f7e29(0x42f),_0x2f7e29(0x32f),'#txtNamePrefix',_0x2f7e29(0x3b8),_0x2f7e29(0x5ed),_0x2f7e29(0x492),'{0}','EditorId',_0x2f7e29(0x328),_0x2f7e29(0x190),'userPrincipalName',_0x2f7e29(0x592),_0x2f7e29(0x582),_0x2f7e29(0x4a8),_0x2f7e29(0x449),_0x2f7e29(0x2bb),_0x2f7e29(0x215),'iframeFile-viewer',_0x2f7e29(0x2c3),'forEach','Guest\x20Portal\x20Documents','concat',_0x2f7e29(0x4ac),_0x2f7e29(0x670),_0x2f7e29(0x393),_0x2f7e29(0x350),'src',_0x2f7e29(0x3d3),_0x2f7e29(0x207),_0x2f7e29(0x5c9),_0x2f7e29(0x594),_0x2f7e29(0x489),_0x2f7e29(0x596),_0x2f7e29(0x3ef),'#bdyAuditHist',_0x2f7e29(0x647),_0x2f7e29(0x2dd),'#accordionapprovers',_0x2f7e29(0x2ab),'mkv',_0x2f7e29(0x1a1),_0x2f7e29(0x3bb),'GuestDocuments','NewStep',_0x2f7e29(0x5e8),_0x2f7e29(0x59c),'css','#accordionapprovers\x20.removeDiv',_0x2f7e29(0x58b),'#btnSubmitApproval','SP.Data.DocumentCommentsListItem',_0x2f7e29(0x615),_0x2f7e29(0x52c),_0x2f7e29(0x611),_0x2f7e29(0x1d6),_0x2f7e29(0x5be),_0x2f7e29(0x297),'#btnAddStep',_0x2f7e29(0x301),_0x2f7e29(0x610),_0x2f7e29(0x1d1),_0x2f7e29(0x1a6),_0x2f7e29(0x40b),_0x2f7e29(0x57f),_0x2f7e29(0x252),_0x2f7e29(0x5b8),'<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_PDF\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png\x27></img><span\x20title=\x27','#ParentFooterSign',_0x2f7e29(0x5e6),_0x2f7e29(0x2b5),_0x2f7e29(0x5e3),_0x2f7e29(0x230),'<th\x20class=\x22noWidth\x20sorting_disabled\x22\x20data-localize=\x22Approval\x22>Approval</th>',_0x2f7e29(0x3e3),_0x2f7e29(0x60f),_0x2f7e29(0x2df),_0x2f7e29(0x684),'#replyHide',_0x2f7e29(0x319),'Url','/_api/web/lists/GetByTitle(\x27DocumentComments\x27)/items(',_0x2f7e29(0x27f),_0x2f7e29(0x5c6),'\x27);\x22\x20title=\x22Cancelled\x20by\x20','#UploadBoxForward',_0x2f7e29(0x5f3),_0x2f7e29(0x28f),'You\x20don\x27t\x20have\x20the\x20required\x20permission\x20on\x20',_0x2f7e29(0x490),_0x2f7e29(0x385),_0x2f7e29(0x454),_0x2f7e29(0x2f9),_0x2f7e29(0x373),'#groupDocumentGrid_filter',_0x2f7e29(0x262),_0x2f7e29(0x60a),_0x2f7e29(0x3f0),_0x2f7e29(0x4c6),'Type\x20to\x20find....','</th>',_0x2f7e29(0x623),_0x2f7e29(0x61c),_0x2f7e29(0x4ae),'<div\x20data-localize=\x27Reference\x27><strong>Reference</strong><strong>:</strong>\x20',_0x2f7e29(0x42e),_0x2f7e29(0x4c0),_0x2f7e29(0x239),_0x2f7e29(0x65a),'.chkProperty',_0x2f7e29(0x5b2),_0x2f7e29(0x5ef),_0x2f7e29(0x5e5),_0x2f7e29(0x1c5),_0x2f7e29(0x18d),'#ckbFileSize',_0x2f7e29(0x18e),_0x2f7e29(0x1ce),_0x2f7e29(0x225),_0x2f7e29(0x3c0),_0x2f7e29(0x4e5),'MyFavorites','<strong>Guest\x20Client:</strong>\x20',_0x2f7e29(0x518),_0x2f7e29(0x18c),_0x2f7e29(0x2eb),'Dec',_0x2f7e29(0x413),_0x2f7e29(0x3db),_0x2f7e29(0x22f),_0x2f7e29(0x1ac),_0x2f7e29(0x47a),'#btnPopupNotify',_0x2f7e29(0x5d7),_0x2f7e29(0x22d),_0x2f7e29(0x64f),_0x2f7e29(0x405),_0x2f7e29(0x642),_0x2f7e29(0x40f),_0x2f7e29(0x659),_0x2f7e29(0x662),'#FileTitle',_0x2f7e29(0x3ae),_0x2f7e29(0x657),'<label><input\x20type=\x22checkbox\x22\x20class=\x22checkbox\x22\x20value=\x22\x22\x20id=\x22ckbCustomCol',_0x2f7e29(0x584),_0x2f7e29(0x25b),_0x2f7e29(0x3af),_0x2f7e29(0x214),_0x2f7e29(0x1f2),_0x2f7e29(0x541),'</span></span>\x20<span\x20class=\x27chip-icon-box\x27>\x20<a\x20href=\x27',_0x2f7e29(0x1f6),_0x2f7e29(0x5bc),'tiff',_0x2f7e29(0x311),'DMSColumnSetting',_0x2f7e29(0x513),_0x2f7e29(0x2a7),_0x2f7e29(0x314),'ApprovedByOutsider',_0x2f7e29(0x4fa),_0x2f7e29(0x332),'Folder\x20already\x20exists.',_0x2f7e29(0x1da),_0x2f7e29(0x19f),_0x2f7e29(0x56b),_0x2f7e29(0x3b6),'A\x20folder\x20has\x20been\x20uploaded.',_0x2f7e29(0x24d),_0x2f7e29(0x4c4),_0x2f7e29(0x43c),_0x2f7e29(0x2ca),_0x2f7e29(0x483),_0x2f7e29(0x4d2),_0x2f7e29(0x61e),_0x2f7e29(0x665),'</select>',_0x2f7e29(0x34d),_0x2f7e29(0x5bf),_0x2f7e29(0x45c),_0x2f7e29(0x3e4),_0x2f7e29(0x2c5),'get_file',_0x2f7e29(0x5de),'\x22\x20data-inherit=\x22',_0x2f7e29(0x46c),_0x2f7e29(0x4d4),_0x2f7e29(0x187),'User,DL,SecGroup,SPGroup',_0x2f7e29(0x539),_0x2f7e29(0x4cf),_0x2f7e29(0x603),'Like',_0x2f7e29(0x37e),_0x2f7e29(0x227),_0x2f7e29(0x4e7),_0x2f7e29(0x4b9),'<th\x20class=\x22disableSort\x22\x20data-localize=\x22Sharing\x22>Sharing</th>','result',_0x2f7e29(0x383),'#titlerow',_0x2f7e29(0x3d9),_0x2f7e29(0x2fc),_0x2f7e29(0x2f2),_0x2f7e29(0x2b9),_0x2f7e29(0x4c3),'.NewStep',_0x2f7e29(0x59a),'You\x20don\x27t\x20have\x20the\x20required\x20permission\x20to\x20perform\x20this\x20operation.',_0x2f7e29(0x2ae),'\x27\x20and\x20EmployeeCode\x20eq\x20\x27',_0x2f7e29(0x5a1),_0x2f7e29(0x5a4),_0x2f7e29(0x3a6),_0x2f7e29(0x1bb),_0x2f7e29(0x578),_0x2f7e29(0x683),'uri','reject',_0x2f7e29(0x597),'July',_0x2f7e29(0x26a),_0x2f7e29(0x3b0),_0x2f7e29(0x294),_0x2f7e29(0x3fd),_0x2f7e29(0x24e),'#btnUpdateProp',_0x2f7e29(0x45b),_0x2f7e29(0x5df),'MMMM\x20DD,\x20YYYY',_0x2f7e29(0x4ba),'#btnPopupChangeprop','Image','/Forms/AllItems.aspx?id=',_0x2f7e29(0x57c),_0x2f7e29(0x1c0),_0x2f7e29(0x2d6),'folder',_0x2f7e29(0x2f0),_0x2f7e29(0x1bd),_0x2f7e29(0x2a6),'#iframe-viewer',_0x2f7e29(0x19c),'#AuditHisParent',');\x22>','#OutsideSection',_0x2f7e29(0x689),_0x2f7e29(0x324),_0x2f7e29(0x3f3),_0x2f7e29(0x633),_0x2f7e29(0x2de),'empty',_0x2f7e29(0x4ab),'<a\x20class=\x22dms-table-ellipsis-2\x22\x20href=\x22javascript:void(0);\x22\x20\x20data-FileServerRelativeUrl=\x22','Modified_x0020_By',_0x2f7e29(0x1c1),_0x2f7e29(0x2c1),_0x2f7e29(0x1b4),_0x2f7e29(0x68a),'?$select=Status,email&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20email\x20eq\x20\x27',_0x2f7e29(0x48e),'\x27)?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=\x20LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl,',_0x2f7e29(0x650),_0x2f7e29(0x3a7),_0x2f7e29(0x44c),'Please\x20try\x20again\x20something\x20went\x20wrong.<br/>','?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=\x20(Author/EMail\x20eq\x20(\x27',_0x2f7e29(0x3b3),_0x2f7e29(0x267),'<div\x20class=\x22col-sm-6\x20flexitem\x22\x20id=\x22IniApp',_0x2f7e29(0x290),_0x2f7e29(0x2b8),'DocumentId',_0x2f7e29(0x27a),'#selectAllChk',_0x2f7e29(0x531),_0x2f7e29(0x302),_0x2f7e29(0x466),_0x2f7e29(0x3f7),_0x2f7e29(0x598),'\x27);\x22>',_0x2f7e29(0x43d),_0x2f7e29(0x281),'Custom',_0x2f7e29(0x65d),_0x2f7e29(0x1de),'#CommentModEmail','<div\x20class=\x22employeesection\x22><span\x20class=\x22crosebox\x22\x20onclick=\x22removeUserBox(this,\x20\x27',_0x2f7e29(0x51b),'ServerRelativeUrl',_0x2f7e29(0x22e),'Shared\x20with\x20Me',_0x2f7e29(0x4da),_0x2f7e29(0x61f),_0x2f7e29(0x339),_0x2f7e29(0x1ca),'modal',_0x2f7e29(0x528),_0x2f7e29(0x38d),'<th\x20class=\x22noWidth\x22\x20data-localize=\x22Category\x22>Category</th>',_0x2f7e29(0x57d),_0x2f7e29(0x260),_0x2f7e29(0x56e),_0x2f7e29(0x651),_0x2f7e29(0x673),_0x2f7e29(0x561),_0x2f7e29(0x609),_0x2f7e29(0x22c),_0x2f7e29(0x277),_0x2f7e29(0x628),_0x2f7e29(0x365),_0x2f7e29(0x4c9),_0x2f7e29(0x317),_0x2f7e29(0x18b),_0x2f7e29(0x61a),_0x2f7e29(0x4b4),'#versionhistory',_0x2f7e29(0x1a4),_0x2f7e29(0x293),'#overlaysearch',_0x2f7e29(0x20c),_0x2f7e29(0x34b),_0x2f7e29(0x5fb),_0x2f7e29(0x1b9),_0x2f7e29(0x602),'createElement',_0x2f7e29(0x5d6),_0x2f7e29(0x330),_0x2f7e29(0x48c),_0x2f7e29(0x4cc),_0x2f7e29(0x3b9),_0x2f7e29(0x507),_0x2f7e29(0x1b7),_0x2f7e29(0x2fd),'#txtTitlePostfix',_0x2f7e29(0x280),_0x2f7e29(0x685),_0x2f7e29(0x4fc),'#btnAuditHist','\x27\x20and\x20(PermissionStatus\x20ne\x20\x27Revoked\x27\x20or\x20PermissionStatus\x20ne\x20\x27Deleted\x27)',_0x2f7e29(0x595),_0x2f7e29(0x49e),_0x2f7e29(0x678),_0x2f7e29(0x4de),_0x2f7e29(0x5c0),'#CommentModify','UserReader',_0x2f7e29(0x3e2),_0x2f7e29(0x1c7),'.RejectSign',_0x2f7e29(0x211),'FileSubType',_0x2f7e29(0x342),_0x2f7e29(0x226),_0x2f7e29(0x5b6),'</span></div>','<div><strong>Folder\x20Name\x20:</strong>','Item',_0x2f7e29(0x56f),_0x2f7e29(0x1aa),_0x2f7e29(0x3fa),_0x2f7e29(0x26c),_0x2f7e29(0x3eb),_0x2f7e29(0x30f),'\x27\x20and\x20FileName\x20eq\x20\x27','Folder\x20has\x20been\x20created\x20successfully',_0x2f7e29(0x199),_0x2f7e29(0x423),_0x2f7e29(0x17c),_0x2f7e29(0x2a5),_0x2f7e29(0x29e),_0x2f7e29(0x60c),'error','#addsuccessor',_0x2f7e29(0x66a),'SharedUsers','Lock',_0x2f7e29(0x2e7),_0x2f7e29(0x338),_0x2f7e29(0x4aa),_0x2f7e29(0x3bc),'<td\x20class=\x22vertical-align-middle\x22>',_0x2f7e29(0x39c),_0x2f7e29(0x2b2),'#btnFilterApply',_0x2f7e29(0x20a),_0x2f7e29(0x429),_0x2f7e29(0x295),'.btnApprovalDetails',_0x2f7e29(0x50d),'download',_0x2f7e29(0x5bd),'Kindly\x20fill\x20mandatory\x20fields.',_0x2f7e29(0x40a),'Outsider','.radioEmpTitanSign',_0x2f7e29(0x4cd),_0x2f7e29(0x38a),_0x2f7e29(0x3a5),'#oldfilename',_0x2f7e29(0x186),'<div\x20class=\x22detail-title\x20ellipsis-2\x22\x20title=\x22Approved\x20by\x20','iframe-viewer',_0x2f7e29(0x1c6),_0x2f7e29(0x626),'Access\x20is\x20denied',_0x2f7e29(0x5d9),'?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=DocumentId\x20eq\x20\x27',_0x2f7e29(0x31c),'Are\x20you\x20sure,\x20you\x20want\x20to\x20delete\x20this\x20file?',_0x2f7e29(0x192),_0x2f7e29(0x414),_0x2f7e29(0x353),_0x2f7e29(0x45e),_0x2f7e29(0x32c),_0x2f7e29(0x675),_0x2f7e29(0x5b7),'Shared\x20with\x20Everyone',_0x2f7e29(0x5d0),_0x2f7e29(0x47b),_0x2f7e29(0x30e),'#userbox-1','_x0020_',_0x2f7e29(0x351),_0x2f7e29(0x4fd),'</span></span>','\x27)/Items(',_0x2f7e29(0x441),'SP.Data.',_0x2f7e29(0x4e6),_0x2f7e29(0x39b),_0x2f7e29(0x37a),'#LockStatus',_0x2f7e29(0x3c7),_0x2f7e29(0x4bb),_0x2f7e29(0x306),_0x2f7e29(0x4a7),_0x2f7e29(0x2db),_0x2f7e29(0x63a),_0x2f7e29(0x4c8),_0x2f7e29(0x246),_0x2f7e29(0x17d),_0x2f7e29(0x481),'join','100\x20characters\x20maximum\x20folder\x20length\x20allowed.',_0x2f7e29(0x398),_0x2f7e29(0x34e),_0x2f7e29(0x2f6),_0x2f7e29(0x24a),_0x2f7e29(0x495),'sucessfully\x20URL\x20changed',_0x2f7e29(0x2a2),_0x2f7e29(0x1ad),_0x2f7e29(0x503),_0x2f7e29(0x2d2),_0x2f7e29(0x355),'/_api/web/getfilebyserverrelativeurl(\x27',_0x2f7e29(0x547),_0x2f7e29(0x4e8),'SP.Utilities.EmailProperties','#generateBradCumbNew','#txtShareBy','#divlistofemployee','replaceAll',_0x2f7e29(0x54d),'<td\x20style=\x22display:none\x22>Custom</td>',_0x2f7e29(0x644),_0x2f7e29(0x37c),_0x2f7e29(0x2e3),'slice',_0x2f7e29(0x4b3),'#noDueDate',_0x2f7e29(0x54c),'DD/MM/YYYY',_0x2f7e29(0x39a),_0x2f7e29(0x283),'\x20PM','?$select=Title,InternalMembers/EMail,InternalSupervisor/EMail,GroupName/Id,GroupName/Title,Supervisor/EMail&$expand=GroupName,InternalMembers,InternalSupervisor,Supervisor&$filter=Title\x20eq\x20\x27',_0x2f7e29(0x3dd),'then','IsEmpty',_0x2f7e29(0x358),_0x2f7e29(0x640),_0x2f7e29(0x30a),_0x2f7e29(0x439),'\x27\x20\x20',_0x2f7e29(0x5a8),_0x2f7e29(0x4dd),'#ckbMandAuthor','Aug','log','\x27)/items/',_0x2f7e29(0x1e5),_0x2f7e29(0x1e8),_0x2f7e29(0x4b7),_0x2f7e29(0x64e),_0x2f7e29(0x251),_0x2f7e29(0x36c),_0x2f7e29(0x619),'<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>',_0x2f7e29(0x5f1),_0x2f7e29(0x550),'</span></div></div></td>','#dueDateField',_0x2f7e29(0x331),_0x2f7e29(0x4a6),'<th\x20class=\x22noWidth\x20sorting_disabled\x22\x20data-localize=\x22Sharing\x22>Sharing</th>',_0x2f7e29(0x4be),_0x2f7e29(0x2d9),_0x2f7e29(0x2bc),_0x2f7e29(0x444),_0x2f7e29(0x21e),_0x2f7e29(0x1ea),_0x2f7e29(0x65f),_0x2f7e29(0x476),'Comments',_0x2f7e29(0x471),_0x2f7e29(0x4ed),_0x2f7e29(0x346),_0x2f7e29(0x5eb),_0x2f7e29(0x26f),_0x2f7e29(0x2cb),_0x2f7e29(0x4ca),_0x2f7e29(0x2ea),_0x2f7e29(0x3de),_0x2f7e29(0x378),_0x2f7e29(0x18a),_0x2f7e29(0x2ff),'\x22\x20style=\x22color:\x20rgb(0,\x20128,\x200);\x22>',_0x2f7e29(0x58e),_0x2f7e29(0x2a1),'ajax',_0x2f7e29(0x627),_0x2f7e29(0x58a),_0x2f7e29(0x5ac),_0x2f7e29(0x1f3),_0x2f7e29(0x51e),_0x2f7e29(0x349),_0x2f7e29(0x4af),_0x2f7e29(0x377),_0x2f7e29(0x1b2),'/_api/web/Lists/GetByTitle(\x27OccasionReplies\x27)/Items?$select=ID&$orderby=Created\x20desc&$top=5000&$filter=\x20(Year\x20eq\x20\x27','<option>3</option>','EditMode',_0x2f7e29(0x203),_0x2f7e29(0x3ff),_0x2f7e29(0x407),'#FileSharing','Apr','#EmpIdStep',_0x2f7e29(0x4f9),_0x2f7e29(0x26d),_0x2f7e29(0x579),_0x2f7e29(0x5bb),_0x2f7e29(0x386),'#linkdoc',_0x2f7e29(0x425),_0x2f7e29(0x23d),_0x2f7e29(0x3cd),_0x2f7e29(0x263),_0x2f7e29(0x183),_0x2f7e29(0x67f),_0x2f7e29(0x574),_0x2f7e29(0x568),'\x27><span><img\x20class=\x27msg-like-img\x27\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png\x27\x20data-themekey=\x27#\x27></span><span\x20class=\x27countInnerLikes\x27\x20id=\x27LikesCount','/_api/web/getuserbyid(',_0x2f7e29(0x380),_0x2f7e29(0x4e2),_0x2f7e29(0x52b),_0x2f7e29(0x28d),'.FileApprovalPDF',_0x2f7e29(0x2bd),_0x2f7e29(0x25c),_0x2f7e29(0x474),'type',_0x2f7e29(0x491),_0x2f7e29(0x18f),_0x2f7e29(0x5cb),_0x2f7e29(0x54b),_0x2f7e29(0x34c),'#divFilter',_0x2f7e29(0x2e0),'2652110jCWruU',_0x2f7e29(0x641),_0x2f7e29(0x1b5),_0x2f7e29(0x2d5),_0x2f7e29(0x562),_0x2f7e29(0x46e),_0x2f7e29(0x1ae),_0x2f7e29(0x68c),_0x2f7e29(0x3b5),_0x2f7e29(0x2cc),'hasOwnProperty',_0x2f7e29(0x54a),_0x2f7e29(0x44e),'\x22>false</span></div>','.pdf',_0x2f7e29(0x1e2),_0x2f7e29(0x443),_0x2f7e29(0x62d),_0x2f7e29(0x497),_0x2f7e29(0x2be),'DELETE',_0x2f7e29(0x49a),_0x2f7e29(0x5c2),_0x2f7e29(0x45a),_0x2f7e29(0x55e),_0x2f7e29(0x1fa),_0x2f7e29(0x51d),'PermissionLevelId',_0x2f7e29(0x247),'#UploadFileComment','Project:\x20',_0x2f7e29(0x2f4),_0x2f7e29(0x235),_0x2f7e29(0x588),_0x2f7e29(0x2ad),_0x2f7e29(0x46f),_0x2f7e29(0x41f),_0x2f7e29(0x1b6),_0x2f7e29(0x48a),_0x2f7e29(0x583),'Initiator','\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20deleted.\x0aOther\x20files(s)\x20have\x20been\x20deleted\x20successfully.',_0x2f7e29(0x257),_0x2f7e29(0x1ef),'#FileValidityPopup',_0x2f7e29(0x2d3),_0x2f7e29(0x607),_0x2f7e29(0x29b),_0x2f7e29(0x54f),_0x2f7e29(0x1a9),_0x2f7e29(0x62a),_0x2f7e29(0x208),_0x2f7e29(0x197),_0x2f7e29(0x333),_0x2f7e29(0x376),_0x2f7e29(0x5f5),_0x2f7e29(0x310),_0x2f7e29(0x326),_0x2f7e29(0x556),_0x2f7e29(0x3d5),_0x2f7e29(0x26e),_0x2f7e29(0x530),_0x2f7e29(0x5d2),'<li\x20class=\x22customColModal\x22>',_0x2f7e29(0x255),_0x2f7e29(0x42b),'length',_0x2f7e29(0x47d),'\x22>\x20<span\x20class=\x22comment-box-chip-text-box\x22>','#chkUpdateDetails','?id=','.txtCopyLink',_0x2f7e29(0x4c5),_0x2f7e29(0x494),_0x2f7e29(0x2b3),_0x2f7e29(0x66f),_0x2f7e29(0x370),_0x2f7e29(0x68b),'SecurityLevel',_0x2f7e29(0x4c1),_0x2f7e29(0x620),_0x2f7e29(0x604),_0x2f7e29(0x394),_0x2f7e29(0x5ad),_0x2f7e29(0x419),_0x2f7e29(0x3ed),'#FileLastModifiedBy',_0x2f7e29(0x1db),_0x2f7e29(0x4df),_0x2f7e29(0x396),'application/json;odata=verbose',_0x2f7e29(0x399),_0x2f7e29(0x41b),'#userselection',_0x2f7e29(0x292),_0x2f7e29(0x1e1),'#chkNotUpload',_0x2f7e29(0x3c1),'#txtNamePostfix','sort',_0x2f7e29(0x4ce),_0x2f7e29(0x5b1),_0x2f7e29(0x28c),_0x2f7e29(0x5fa),_0x2f7e29(0x2dc),_0x2f7e29(0x364),_0x2f7e29(0x361),_0x2f7e29(0x671),_0x2f7e29(0x643),_0x2f7e29(0x524),_0x2f7e29(0x389),_0x2f7e29(0x573),_0x2f7e29(0x2ed),_0x2f7e29(0x184),'#NotifyPPlPicker',_0x2f7e29(0x269),_0x2f7e29(0x265),'?$select=ID,DocumentID&$filter=DocumentID\x20eq\x20\x27',_0x2f7e29(0x344),'ApproverName_TopSpan',_0x2f7e29(0x57a),'\x27&$select=*,Author/Title,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles',_0x2f7e29(0x5cd),'Sept',_0x2f7e29(0x48f),'</td><td><div\x20class=\x22flexingtwo\x22><img\x20src=\x22','#OutsiderName',_0x2f7e29(0x308),_0x2f7e29(0x4d5),_0x2f7e29(0x372),_0x2f7e29(0x5e4),_0x2f7e29(0x3ea),_0x2f7e29(0x455),_0x2f7e29(0x566),_0x2f7e29(0x5cf),_0x2f7e29(0x506),_0x2f7e29(0x181),_0x2f7e29(0x511),_0x2f7e29(0x4a1),'<option>7</option>',_0x2f7e29(0x575),_0x2f7e29(0x653),_0x2f7e29(0x39f),_0x2f7e29(0x3ee),_0x2f7e29(0x50f),_0x2f7e29(0x646),_0x2f7e29(0x25f),_0x2f7e29(0x5e9),_0x2f7e29(0x368),'push',_0x2f7e29(0x4f4),'#RunTimeTitanSection',_0x2f7e29(0x660),'\x22\x20alt=\x22',_0x2f7e29(0x2d0),_0x2f7e29(0x1bf),_0x2f7e29(0x3ac),_0x2f7e29(0x62b),_0x2f7e29(0x196),_0x2f7e29(0x3f4),_0x2f7e29(0x25e),_0x2f7e29(0x64b),_0x2f7e29(0x41d),_0x2f7e29(0x3d2),'/_api/web/lists/GetByTitle(\x27MyFavorites\x27)/items(','<iframe>','SiteURL','/Shared%20Documents/',_0x2f7e29(0x456),_0x2f7e29(0x3a1),'Details','<a\x20class=\x22detail-panel-inner-link\x22\x20href=\x22javascript:void(0);\x22\x20id=\x22btnVerHist\x22>Version\x20History</a>',_0x2f7e29(0x469),'30\x20characters\x20maximum\x20file\x20length\x20allowed.',_0x2f7e29(0x1d8),_0x2f7e29(0x321),_0x2f7e29(0x3c9),_0x2f7e29(0x453),_0x2f7e29(0x36d),_0x2f7e29(0x2f7),'<td\x20/>',_0x2f7e29(0x509),_0x2f7e29(0x28e),'MM\x20dd,\x20yy','/SiteAssets/MyFavorite/Images/fav-document.png','?$filter=ID\x20eq\x20\x27',_0x2f7e29(0x3f5),_0x2f7e29(0x285),'<span\x20class=\x22ml-4\x20dms-table-ellipsis-2\x22>','?$select=*,Author/EMail,Author/Title,Author/Id&$expand=Author&$filter=\x20DocumentId\x20eq\x20\x27',_0x2f7e29(0x41e),'aac',_0x2f7e29(0x564),_0x2f7e29(0x1c9),_0x2f7e29(0x1ed),_0x2f7e29(0x522),_0x2f7e29(0x200),_0x2f7e29(0x554),_0x2f7e29(0x53b),_0x2f7e29(0x4d9),'#ddlFilterDocType',_0x2f7e29(0x38b),_0x2f7e29(0x5ec),'#AddEditStepName',_0x2f7e29(0x5da),'.xlsx',_0x2f7e29(0x3cf),_0x2f7e29(0x510),_0x2f7e29(0x56d),_0x2f7e29(0x1d0),_0x2f7e29(0x632),_0x2f7e29(0x2b0),_0x2f7e29(0x185),_0x2f7e29(0x67d),_0x2f7e29(0x4b5),_0x2f7e29(0x420),'#txtNewFileName','<li><a\x20type=\x27button\x27\x20class=\x27logout\x27\x20onclick=\x27DeleteComments(',_0x2f7e29(0x65c),'#EmpIdStep1',_0x2f7e29(0x67c),'rpm','/_api/web/lists/getbytitle(\x27DocumentApprovalRequests\x27)/items(\x27',_0x2f7e29(0x63d),_0x2f7e29(0x2e5),_0x2f7e29(0x5f0),_0x2f7e29(0x2c6),_0x2f7e29(0x1fe),_0x2f7e29(0x219),_0x2f7e29(0x551),_0x2f7e29(0x2d7),_0x2f7e29(0x381),_0x2f7e29(0x5f9),_0x2f7e29(0x4ee),'xlsx.png',_0x2f7e29(0x1c3),_0x2f7e29(0x270),_0x2f7e29(0x44d),_0x2f7e29(0x4b1),_0x2f7e29(0x616),_0x2f7e29(0x634),_0x2f7e29(0x36b),_0x2f7e29(0x275),'Shared%20Documents/',_0x2f7e29(0x43a),'.customTr',_0x2f7e29(0x40d),_0x2f7e29(0x4f8),'FileFolderName',_0x2f7e29(0x205),'#changeProperties',_0x2f7e29(0x504),_0x2f7e29(0x567),_0x2f7e29(0x348),_0x2f7e29(0x25d),_0x2f7e29(0x245),_0x2f7e29(0x367),_0x2f7e29(0x261),_0x2f7e29(0x542),'138859hVlzut','docx',_0x2f7e29(0x1eb),_0x2f7e29(0x3ce),_0x2f7e29(0x681),'#NewFileExtension',_0x2f7e29(0x605),_0x2f7e29(0x45d),_0x2f7e29(0x202),_0x2f7e29(0x467),_0x2f7e29(0x384),_0x2f7e29(0x194),_0x2f7e29(0x401),_0x2f7e29(0x1a7),_0x2f7e29(0x2a8),'#txtUpdateAuthor',_0x2f7e29(0x2ce),'\x27&$expand=ListItemAllFields',_0x2f7e29(0x608),'\x22\x20id=\x22myCheckboxgd',_0x2f7e29(0x323),'done',_0x2f7e29(0x502),'\x22\x20></label>',_0x2f7e29(0x67e),_0x2f7e29(0x4d8),_0x2f7e29(0x30d),_0x2f7e29(0x674),_0x2f7e29(0x5fd),_0x2f7e29(0x66e),'txt',_0x2f7e29(0x34f),'PowerPoint',_0x2f7e29(0x63b),_0x2f7e29(0x590),_0x2f7e29(0x577),'#txtAddFileRef',_0x2f7e29(0x435),'change','#btnCreateFiles','\x27\x20and\x20LikeComment\x20eq\x20\x27Yes\x27\x20and\x20LikeCommentID\x20eq\x20\x27',_0x2f7e29(0x2c0),_0x2f7e29(0x3f6),_0x2f7e29(0x58d),_0x2f7e29(0x35a),_0x2f7e29(0x3fc),_0x2f7e29(0x3a3),'closest',_0x2f7e29(0x57e),_0x2f7e29(0x5c4),_0x2f7e29(0x4a3),'Views',_0x2f7e29(0x67a),_0x2f7e29(0x53d),_0x2f7e29(0x421),_0x2f7e29(0x516),_0x2f7e29(0x371),_0x2f7e29(0x299),'<input\x20type=\x22text\x22\x20class=\x22form-control\x20CustomDateCol\x22\x20id=\x22Custom',_0x2f7e29(0x218),'#FileDetalis','has',_0x2f7e29(0x1f0),_0x2f7e29(0x56a),_0x2f7e29(0x426),_0x2f7e29(0x3dc),'<option>16</option>',_0x2f7e29(0x39d),_0x2f7e29(0x209),'Deferred',_0x2f7e29(0x600),_0x2f7e29(0x29f),_0x2f7e29(0x687),_0x2f7e29(0x23a),_0x2f7e29(0x470),_0x2f7e29(0x1d7),_0x2f7e29(0x43e),_0x2f7e29(0x213),_0x2f7e29(0x45f),_0x2f7e29(0x535),_0x2f7e29(0x37b),_0x2f7e29(0x553),_0x2f7e29(0x4e0),'\x27><span><img\x20class=\x27msg-like-img\x27\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png\x27></span><span\x20class=\x27countInnerLikes\x27\x20id=\x27LikesCount',_0x2f7e29(0x1a8),_0x2f7e29(0x3e9),_0x2f7e29(0x1fc),_0x2f7e29(0x1dd),_0x2f7e29(0x3da),_0x2f7e29(0x27e),_0x2f7e29(0x406),_0x2f7e29(0x217),_0x2f7e29(0x5b0),'Kindly\x20enter\x20approvers\x20first.',_0x2f7e29(0x5a0),_0x2f7e29(0x47c),_0x2f7e29(0x606),_0x2f7e29(0x40c),_0x2f7e29(0x53c),_0x2f7e29(0x388),_0x2f7e29(0x5c1),_0x2f7e29(0x1f9),_0x2f7e29(0x1c2),'YYYY-MM-DD','colType','#chkUpdateType',_0x2f7e29(0x498),_0x2f7e29(0x2b1),_0x2f7e29(0x465),'\x27);\x22><i\x20class=\x22fa\x20fa-lock\x22\x20style=\x22font-size:24px\x22></i></div>',_0x2f7e29(0x20b),'</p></td>','#CommentFileAttach',_0x2f7e29(0x645),_0x2f7e29(0x66d),_0x2f7e29(0x631),_0x2f7e29(0x48d),_0x2f7e29(0x460),'#FileAuthor',_0x2f7e29(0x517),'<input\x20type=\x22text\x22\x20class=\x22form-control\x22\x20maxlength=\x22250\x22\x20id=\x22Custom','destroy',_0x2f7e29(0x254),_0x2f7e29(0x679),_0x2f7e29(0x334),_0x2f7e29(0x666),_0x2f7e29(0x599),_0x2f7e29(0x5e7),_0x2f7e29(0x1ec),'?$select=LogonName/EMail,Designation,Department/Title,AttachmentFiles&$expand=LogonName,Department,AttachmentFiles&$filter=LogonName/EMail\x20eq\x20\x27','#showInnerLikes',_0x2f7e29(0x362),_0x2f7e29(0x686),_0x2f7e29(0x1cf),'#ViewHitList','\x20onclick=\x27previewImage(this);\x27></img></div>','#FileAuthorPopup',_0x2f7e29(0x1ba),'\x27,\x20\x27',_0x2f7e29(0x62e),_0x2f7e29(0x345),_0x2f7e29(0x1a0),_0x2f7e29(0x5c3),_0x2f7e29(0x512),_0x2f7e29(0x4db),_0x2f7e29(0x20d),_0x2f7e29(0x612),_0x2f7e29(0x23c),'Modified\x20Date',_0x2f7e29(0x434),_0x2f7e29(0x188),_0x2f7e29(0x5c7),'?$select=Title,Category/CatogeryName,Category/CategoryType,Active&$expand=Category&$filter=Category/CategoryType\x20eq\x20\x27Document\x27\x20and\x20Active\x20eq\x20\x271\x27\x20and\x20Category/CatogeryName\x20eq\x20\x27',_0x2f7e29(0x3b1),_0x2f7e29(0x23e),_0x2f7e29(0x3ad),_0x2f7e29(0x625),_0x2f7e29(0x22a),'Folders',_0x2f7e29(0x672),_0x2f7e29(0x5fe),_0x2f7e29(0x1cb),_0x2f7e29(0x4ef),'_TopSpan',_0x2f7e29(0x3a0),_0x2f7e29(0x4e3),_0x2f7e29(0x210),_0x2f7e29(0x552),_0x2f7e29(0x59e),_0x2f7e29(0x540),_0x2f7e29(0x51c),_0x2f7e29(0x53e),_0x2f7e29(0x4d0),'readAsArrayBuffer',_0x2f7e29(0x63c),_0x2f7e29(0x1d2),_0x2f7e29(0x1d4),_0x2f7e29(0x234),'Shared','ApprovalStatus','/Forms',_0x2f7e29(0x19d),_0x2f7e29(0x24c),_0x2f7e29(0x462),_0x2f7e29(0x5e0),_0x2f7e29(0x5d4),'\x27\x20and\x20Views\x20eq\x20\x27Yes\x27&$select=*,ViewsBy/Title,ViewsBy/EMail,ViewsBy/ID&$expand=ViewsBy',_0x2f7e29(0x49b),_0x2f7e29(0x360),_0x2f7e29(0x5b5),_0x2f7e29(0x618),'<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22></div>',_0x2f7e29(0x5ab),_0x2f7e29(0x4bd),_0x2f7e29(0x1e0),_0x2f7e29(0x4bf),_0x2f7e29(0x1b0),_0x2f7e29(0x241),_0x2f7e29(0x315),_0x2f7e29(0x3e8),_0x2f7e29(0x493),_0x2f7e29(0x3bd),_0x2f7e29(0x191),_0x2f7e29(0x2a0),_0x2f7e29(0x2b6),_0x2f7e29(0x482),_0x2f7e29(0x25a),_0x2f7e29(0x569),_0x2f7e29(0x4c7),_0x2f7e29(0x278),'#txtAddFileAuth',_0x2f7e29(0x17e),'302jQdOPr',_0x2f7e29(0x1d5),_0x2f7e29(0x2e8),'\x27)?$select=ID,EncodedAbsUrl,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields','SP.FieldUrlValue',_0x2f7e29(0x224),_0x2f7e29(0x4a4),'\x27\x20onclick=\x27GetAllLikesComment(',_0x2f7e29(0x29a),_0x2f7e29(0x1fb),_0x2f7e29(0x2ee),_0x2f7e29(0x635),_0x2f7e29(0x5dc)];return _0x1987=function(){return _0x246d47;},_0x1987();}function previewfile(_0x6f3f4a){var _0x39111f=a90_0x13126d,_0x2f5774=_0x4ce28e;ServerSrc=_0x6f3f4a[_0x2f5774(0x681)],_0x6f3f4a[_0x2f5774(0x681)]==null&&(ServerSrc=_0x6f3f4a[_0x39111f(0x3d7)]);var _0x38205d=_0x6f3f4a[_0x2f5774(0x6eb)][_0x2f5774(0x4ee)][_0x39111f(0x5e5)]('.')[_0x39111f(0x3f2)]();_0x38205d==_0x39111f(0x41b)||_0x38205d==_0x2f5774(0x563)||_0x38205d==_0x2f5774(0x6dd)||_0x38205d==_0x39111f(0x3dd)||_0x38205d==_0x2f5774(0x2e5)||_0x38205d==_0x2f5774(0x6de)||_0x38205d=='pdf'?iframeUrl1=_spPageContextInfo[_0x2f5774(0x229)]+_0x39111f(0x59b)+_0x6f3f4a[_0x2f5774(0x6eb)][_0x2f5774(0x3d7)]+_0x2f5774(0x5ef):iframeUrl1=_0x6f3f4a[_0x2f5774(0x6eb)][_0x39111f(0x34e)];var _0x595dbd=$(_0x2f5774(0x62a))[_0x2f5774(0x314)]();$(_0x2f5774(0x504),{'src':iframeUrl1,'id':'iframe-viewer','frameborder':0x0,'scrolling':_0x2f5774(0x2dc),'width':_0x2f5774(0x6d8),'height':_0x2f5774(0x4d9)})[_0x39111f(0x1c1)](_0x595dbd),$(_0x39111f(0x65f))[_0x39111f(0x5ce)](_0x2f5774(0x6ea)),setInterval(function(){var _0x52883a=_0x39111f,_0x1fdcea=_0x2f5774;$(_0x1fdcea(0x30a))[_0x1fdcea(0x5a3)]()[_0x1fdcea(0x40d)](_0x1fdcea(0x1c9))[_0x1fdcea(0x3f3)](),$(_0x1fdcea(0x30a))[_0x1fdcea(0x5a3)]()[_0x52883a(0x5f1)](_0x1fdcea(0x1c9))[_0x1fdcea(0x290)](),$(_0x1fdcea(0x30a))[_0x52883a(0x3dc)]()[_0x52883a(0x5f1)](_0x1fdcea(0x3d0))[_0x1fdcea(0x678)]()==''&&$(_0x1fdcea(0x41a))['modal'](_0x1fdcea(0x3f3));},0xbb8);}function previewImage(_0x3782aa){var _0x3cef8d=a90_0x13126d,_0x37b1f0=_0x4ce28e;src=_0x3782aa[_0x37b1f0(0x233)]+_0x37b1f0(0x560);var _0x3ede36=$(_0x3cef8d(0x493))[_0x37b1f0(0x314)]();$(_0x37b1f0(0x504),{'src':src,'id':_0x37b1f0(0x3ab),'frameborder':0x0,'scrolling':_0x37b1f0(0x2dc),'width':_0x37b1f0(0x6d8),'height':_0x37b1f0(0x4d9)})[_0x37b1f0(0x318)](_0x3ede36),$(_0x37b1f0(0x41a))[_0x37b1f0(0x341)](_0x37b1f0(0x6ea));}function uploadattachment(_0x1512b8){var _0x3381ed=a90_0x13126d,_0xa3b7da=0x0;FinalFiles4Upload[_0x3381ed(0x1d9)]>0x0&&$['each'](FinalFiles4Upload,function(_0x2554d3,_0x4a309a){var _0x1c2a16=_0x36bf;getFileBuffer(_0x4a309a)[_0x1c2a16(0x3f8)](function(_0x30a477){var _0x53d2ec=a90_0x41e7,_0x26a163=_0x1c2a16,_0xcd01a3=_0x4a309a[_0x26a163(0x681)],_0x521150=_0xcd01a3[_0x53d2ec(0x3ea)](/[^.a-zA-Z0-9]/ig,'');$[_0x26a163(0x42c)]({'url':_spPageContextInfo[_0x26a163(0x229)]+_0x26a163(0x30b)+_0x1512b8+_0x26a163(0x383)+_0x521150+'\x27)','method':_0x53d2ec(0x2f3),'data':_0x30a477,'async':![],'processData':![],'headers':{'Accept':_0x26a163(0x4b9),'content-type':_0x26a163(0x4b9),'X-RequestDigest':$(_0x26a163(0x57c))[_0x26a163(0x419)]()},'success':function(_0x4c85fb){var _0x4a5d0f=_0x53d2ec,_0x388b73=_0x26a163;_0xa3b7da=_0xa3b7da+0x1,FinalFiles4Upload[_0x388b73(0x4a1)]==_0xa3b7da&&(AutoRefreshComments(_0x4a5d0f(0x499),_0x388b73(0x4fc)),finalFiles=[],FinalFiles4Upload=[]);},'error':function(_0x8b3098){var _0x57db63=_0x53d2ec,_0x4ede42=_0x26a163;console[_0x4ede42(0x403)](_0x8b3098[_0x4ede42(0x400)][_0x57db63(0x335)]);}});});});}function a90_0x41e7(_0x2f190c,_0x1f067d){var _0x189db5=a90_0x189d();return a90_0x41e7=function(_0x41e793,_0x52ac20){_0x41e793=_0x41e793-0x17c;var _0x2af6fb=_0x189db5[_0x41e793];return _0x2af6fb;},a90_0x41e7(_0x2f190c,_0x1f067d);}function GetComments(_0x2cfd6c,_0x5501bb){var _0x31965d=a90_0x13126d,_0x45aa90=_0x4ce28e;getTotalViewCount(),Ownurl=_spPageContextInfo[_0x45aa90(0x229)]+_0x31965d(0x52e)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x45aa90(0x359))[_0x31965d(0x1ca)]())+_0x45aa90(0x2a4);var _0x1d3686=OccasionExecuteFilter(Ownurl,_0x2cfd6c,_0x5501bb);}function OccasionExecuteFilter(_0x948a90,_0x3f5d3b,_0x5bd87e){var _0x264d85=_0x4ce28e;FileCommentResponse=[];var _0x37a595='';_0x948a90[_0x264d85(0x189)]('$skipToken')!=-0x1?_0x37a595=_0x948a90:Ownurl=_0x37a595=_0x948a90,ReadOccasionComment(_0x3f5d3b,_0x5bd87e,_0x37a595,'');}function a90_0x189d(){var _0x4bb27c=['#VerHisFile','<br/><br/>','#OutsideSection','raw','<td><a\x20class=\x22deletecustomTr\x22\x20\x20\x20id=\x22','like-icon.png','type','chkId','\x22>Specific</span><span\x20id=\x22InitialsSign',')\x27>Reply</a></li>','Validity\x20date\x20must\x20be\x20greator\x20than\x20Due\x20date.','pplIniTiatorApp','#ApprovlUploadBox','</h4><a\x20href=\x22javascript:void(0);\x22\x20style=\x22cursor:pointer;\x22\x20onclick=\x22OpenEmail(\x27','9rkVnnt','<option>13</option>','SharedByMe','#txtAddFileTitle','<option>17</option>','<img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png\x27\x20alt=\x27more\x20horiz\x27\x20data-themekey=\x27#\x27>','>Click\x20here</a>\x20to\x20open\x20the\x20document.</div>','png','.emojionearea-editor','auto','ResolvePrincipalSource','manageLists','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22></div>','txt','/_api/web/GetFolderByServerRelativeUrl(\x27','/Forms/AllItems.aspx','#ddlAddFolderAuth','will\x20be\x20provided\x20at\x20Runtime','Approval','setAttribute','\x27)/items(\x27','#EmpIdStep','Mar','show-inner-likes-box-hide','#LikeSpan','#ApproverName','map','Details','<div\x20class=\x22chexbox_mg\x22>','Medium','DocumentApprovalQueue','</span>\x20at\x20<span>\x20','empty','SecurityLevel','#ModalDisplayProperty','Private','?$filter=ID\x20eq\x20\x27','\x22></label></div></div>','\x20KB','Excel','<div\x20class=\x22col-sm-6\x20form-check-box\x20customCol\x22><div\x20class=\x22form-group\x20custom-form-group\x22>','javascript:GetMyDocumentsWithFilesFolder(\x27','You\x20don\x27t\x20have\x20the\x20required\x20permission\x20to\x20upload\x20','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_PDF\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png\x27></img><a\x20name=\x27','\x27\x20and\x20Author/EMail\x20eq\x20\x27','</a></li>','.chkShareToMe','/_api/web/Lists/GetByTitle(\x27DocumentComments\x27)/Items?$select=*,ID,Author/Title,Author/Id,Author/EMail,AttachmentFiles&$expand=Author,AttachmentFiles&$orderby=Created\x20desc&$top=5000&$filter=(DocumentId\x20eq\x20\x27','Add\x20Step','Jan','\x27&$orderby=\x20Position\x20asc\x20','#btnAddFolder','#DeltaSiteLogo','#CommentModEmail','#txtPurpose','#btnPopupRename','\x27\x20style=\x27display:','NextAction','#FileDocType','\x27\x20and\x20OccasionType\x20\x20eq\x20\x27','PATCH','#prefix_and_postfix_name','fadeOut','deleteListItems','1630024vvveFg','#DownloadDocs','jpg','\x27)\x22>','MaximumEntitySuggestions','HasInputError','<td><p\x20style=\x22margin:0;\x20padding:0;\x22>','.GuestMyDocTab','ProjectDocuments','Jul','trim','#LiCount','<option\x20>12</option>','All',':</label>','Sept','__next','Modified\x20By','<ul\x20class=\x27dropdown-menu\x20dropdown-menu-right\x20chat-edit-delete-dropdown\x27>','Oct','#txtdocumentNo','</span><span\x20id=\x22StepName','none','arz','.clearValue','Not\x20Started','<div\x20class=\x27reply-text-line\x27>','Title','<strong>Group:</strong>\x20','results','#UploadBoxApprove','#astAddFile','#EmailStep1','Reference','HasUniqueRoleAssignments','#ckbSharing','cab','#FolderUploadControl','#btnPopupChangeprop','Video','</h3></div><div\x20class=\x22row\x22>','<input\x20type=\x22checkbox\x22\x20data-FileServerRelativeUrl=\x22','\x27)\x20\x20','X-RequestDigest','Error.','#btnUpdateProp','Feb','Department','#btnPopupLock','#txtUpdateType','chkUpdate','#changePropertiesFolder','Number','#CustomPopup','gif','/_api/web/lists/GetByTitle(\x27DocumentComments\x27)/GetItemById(','/DocumentManagementSystem/Forms/AllItems.aspx?id=','.otherSectAct','</div>','<span\x20class=\x22employeeemail\x22\x20style=\x22cursor:pointer;\x22\x20onclick=\x22OpenEmail(\x27','userLoginName','style','#btnChangeProp','<img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png\x27\x20alt=\x27more\x20horiz\x27>','<a\x20class=\x22dms-table-ellipsis-2\x22\x20href=\x22','/Forms/AllItems.aspx?id=','toLowerCase','#like-Img-color','#btnAddComment','\x22>NA</span><span\x20id=\x22NameStep','<tr\x20class=\x22customTr\x22>','createElement','#NotifyHeaderSelect','getMonth','Accept','Files','<th\x20class=\x22noWidth\x22\x20data-localize=\x22','SPWOPIFrameAction','&&\x20$(\x22#','#FileCommArea\x20.emojionearea-editor','<option>6</option>','GetContextWebInformation','Upload\x20Files','#userbox-2','<div\x20class=\x22emilbox\x22>','addEventListener','href','</div></li>','Shared\x20Documents','\x27\x20download><i\x20class=\x27fa\x20fa-download\x20cursor-pointer\x20px-4\x27\x20aria-hidden=\x27true\x27></i></a></span>\x20</div>','\x27\x20and\x20LikeCommentID\x20eq\x20\x27','<span\x20class=\x22text-left\x20chatBox\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#chat_sec\x22\x20onclick=\x22OpenChatBox(\x27','/_layouts/15/WopiFrame.aspx?sourcedoc=','pcm','&parent=','.tab-col','.root-74','#lockeffect\x20.unlock','#CommentModTime','/_api/web/lists/getbytitle(\x27DocumentApprovalRequests\x27)/GetItemById(\x27','video-files.png','Restricted\x20View','.btnFilterClear','\x27)\x22>Add\x20Approver</button></div>','toISOString','DocumentNo','/_api/web/siteusers(@v)?@v=\x27','#btnApproval','SendEmailSharedNotification\x20\x20','#ddlFilterSubType','#ckbMandDetails','push','SharedWithUsersId','?$select=Id,Author/EMail&$expand=Author&$orderby=Id\x20desc&$Filter=Author/EMail\x20eq\x20\x27','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_xlsx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png\x27></img><a\x20name=\x27','.panel','<td\x20colspan=\x278\x27\x20style=\x27text-align:\x20center;\x27>','EditorId','\x27)?$select=ID,File_x0020_Type&$expand=Folders','#CommentLikeList','Key','Date','#ckbReferenceNumber','Failed','</a>','CheckOutType','DeleteFile','\x22></span><span\x20id=\x22AppTypeStep','<div><strong>File\x20Name\x20:</strong>','<h4>','#ckbCustomCol','Modified','<div\x20class=\x22dropdown\x20ForCustomizeOnly\x22><button\x20class=\x22dropdown-toggle\x22\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png\x22\x20alt=\x22\x22>','#DecideStep','ApproverName','\x27><i\x20class=\x27fa\x20fa-close\x20','<option>4</option>','#rdoUserTitan','<div\x20class=\x27comment-upload-chip\x20','LikeCount','datepicker','<div\x20class=\x27mt-4\x20my-chat-edit-delete-panel-inside\x27\x20id=\x27CommentText','98%','modal','#ColumnBox','#ddlAddFileCateg','has','siblings','\x27)\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22></span>','\x27\x20onclick=\x27DeleteAttachment(this.id)\x27></i></span></div>','DocumentManagementSystem','#menuIconBox','/_api/web/GetFileByServerRelativeUrl(\x27','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-author-detail\x20pl0\x20pr0\x20pb10\x20pt0\x27>\x20<span\x20class=\x27mr10\x27><img\x20src=\x27','_x005f_','PermissionLevel','Started','\x27)/items','Not\x20shared','<div\x20class=\x27reply-text-line\x27><a\x20href=\x27#\x27\x20class=\x27comment-reply-user-name-info\x27>@<span\x20>','May','Done','\x22\x20data-inherit=\x22','<div><a\x20href=','.customCol','active','split','Shared_x0020_Documents','<div\x20class=\x22row\x22>','</span><span\x20id=\x27LikeSpan','<div\x20class=\x22dms-table-ellipsis-2\x20shardHist\x22\x20onclick=\x22GetSharedHistory(\x27','toFixed','Position','AskApprover','?$filter=\x20DocumentId\x20eq\x20\x27','5260iJmzSs','<td><span\x20class=\x22datearea\x22>','Invalid\x20Date','find','ddlFilterSubType','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg','#anchFileUpload','&p=true',')\x27>','\x27)/Items(','/_api/Web/Lists/getByTitle(\x27','#ddlAllDefinedSteps','ListItemAllFields/',')/AttachmentFiles/getByFileName(\x27','DocumentType','siteAbsoluteUrl','<a\x20href=\x22#\x22\x20class=\x22emplyeename_new\x22>','ViewMore','Green','#ApprovalStepBox','get_message','keyup','>Click\x20here</a>\x20to\x20open\x20the\x20folder.</div>','ClientMaster','Name','default&mobileredirect=true','New\x20Document\x20-\x20{0}.docx',',\x20\x27','...','getList','.noWidth','#theadItem','/_api/contextinfo','<div\x20class=\x22panel\x20panel-default\x20shadow2\x22\x20style=\x22margin:100px;\x22>','webcam','txtUpdateSubType','Unlike','Please\x20type\x20a\x20message\x20to\x20continue.','\x27)/Files/Add(url=\x27','Please\x20select\x20any\x20file\x20or\x20folder\x20first.','Edit\x20Step','MM\x20dd,\x20yy','\x22\x20alt=\x22\x22>','ZIP.png','\x22\x20style=\x22color:\x20rgb(255,\x200,\x200);\x22>','#CommentFileName','.RenameandUpload','#tblColumnsSettings\x20tr:last','data','Locked\x20by\x20me','&p=5','Lock','SelectedLibrary','#ddlShareFilter','.txtCopyLink','<li\x20title=\x22','__metadata','.customizedSteps','#createPPtFile','Initiator','<div\x20class=\x27comment-reply-user-name\x27\x20style=\x27width:212px\x20!important;border-radius:3%\x20!important\x27>','Logged_InUser','<div\x20class=\x27comment-reply-user-name\x27><span\x20class=\x27comment-reply-user-name-lt\x27>TD</span><img\x20class=\x27comment-reply-user-name-img\x27\x20id=\x27ViewHitsProfileImages\x27\x20src=\x27','toString','#txtFileExt','AuthorId','\x27,\x20\x27','</span></div></div></div>','\x22\x20onclick=\x22DisplayFileProperty(\x27','filter','format','#ddlFilterDocType\x20option','<td><p\x20style=\x22margin:0;\x20padding:0;\x22\x20data-localize=\x22Category\x22><b>Category\x20</b><b>:</b></p></td>','<div\x20class=\x22comment-upload-chip\x22\x20title=\x22','</div><div\x20class=\x22employeeinfo\x22><h3>','\x27);\x22\x20title=\x22Rejected\x20by\x20','#ParentbtnAddApp','.chkNotify','<>#%&*{}?:|\x22\x5c/~`\x27','\x27)/items(','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_Docx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png\x27></img><a\x20name=\x27','<label>','userEmail','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22\x20data-target=\x22#approverssec\x22\x20data-toggle=\x22modal\x22\x20onclick=\x22OpenApprovalHistry(','Kindly\x20enter\x20approvers.','image-icon.png','#txtFileTitle','<img\x20width=\x2230px\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/','</span><span\x20id=\x22TypeStep','activing','\x20to\x20perform\x20this\x20operation.','#txtNamePrefix','Not\x20checked\x20out','Folder\x27s\x20length\x20can\x27t\x20be\x20less\x20than\x202\x20character.','psd','createDocumentFromTemplate','#createTextFile','#chkUploadMail','ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By','ApprovedDate','DepartmentalDMS','#CommentText','SPClientPeoplePicker_InitStandaloneControlWrapper','Cancelled','#txtUploadFolder','Sharing','\x27)\x20and\x20(LikeComment\x20eq\x20\x27Yes\x27\x20or\x20LikeComment\x20eq\x20\x27No\x27)','TimeLastModified','getTime','Initiation','values','\x27\x20and\x20ColumnType\x20eq\x20\x27Custom\x27\x20','[id^=\x27','#AttachmentView','<th\x20class=\x22text-center\x20border-bottom-0\x20w-2\x22>','#RenameandUploadFolder','\x27\x20and\x20(Initials\x20eq\x20\x27Parent\x27\x20or\x20Initials\x20eq\x20\x27Reply\x27))','#userselection','/Forms','#txtUpdateDetails','tif','file.png','webkitRelativePath','Access\x20denied','#txtUpdateSubType','100%','<div\x20class=\x22listofemployee\x22>No\x20Employee\x20found.</div>','Type','zip','<li\x20class=\x22DeleteStep\x22\x20id=\x22btnDeleteStep','Critical\x20Error:\x20','userHTMLBox','200\x20characters\x20maximum\x20folder\x20length\x20allowed.','ModifiedBy','Comment\x20has\x20been\x20updated.','<div\x20class=\x27col-md-12\x20col-sm-12\x20pl0\x20pr0\x20pb10\x27>','\x27,\x20overwrite=true)','pdf.png','#starffect','</span></span>\x20</div>','ExternalUsers','<option>8</option>','Selected\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20updated.','DefaultEditFormUrl','\x22\x20onclick=\x22DeleteSeletedStep(','PNG','button[name=Download].ms-CommandBarItem-link','dms-left-panel-tab-active-inner','<div\x20class=\x27like-user-name\x27>','\x20user(s)\x20are\x20not\x20valid.','#RenameandUpload','Following\x20folder\x20has\x20been\x20uploaded.<br/>','#AddFolderTitle','#txtUpdateTitle','#Predefined-Ini-App','IsMandatory','\x27)/ListItemAllFields','#OutsiderEmail','<option>11</option>','#approval-modal','&nbsp;&nbsp;<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x20DeletePic\x22\x20style=\x22color:red;\x22\x20\x20onclick=\x22removeLine(this.id,\x20\x27','#Likeshitlist','Modified_x0020_By','#titlerow','null','Deferred','getHours','\x27\x20and\x20(Views\x20eq\x20\x27Yes\x27\x20or\x20Views\x20eq\x20\x27No\x27)','Required\x20columns\x20does\x20not\x20exists.\x20Kindly\x20contact\x20administrator\x20to\x20activate\x20features.','when','#AuditHistory','</button><ul\x20class=\x22dropdown-menu\x20pull-right\x22><li\x20onclick=\x22EditStep(','91gkpwge','#Audit-viewer','#ast','#txtFilterAuthor','https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon.png','#txtNamePrefixFol','#ReplyforMsg','LikeBy','Runtime','</label>','get_serverRelativeUrl','#UploadHeader','\x22\x20\x20\x20name=\x22','<p\x20style=\x22margin:15px\x200;\x20padding:0;\x22>This\x20is\x20an\x20auto\x20generated\x20e-mail.\x20Please\x20do\x20not\x20reply.</p>','Yes','#Username','javascript:GetSubFolders(\x27','Department:\x20','</p></td>','/_api/web/lists/getbytitle(\x27DocumentComments\x27)/items(','?$select=*&$top=5&$filter=Title\x20eq\x20\x27','GET','Document\x20has\x20been\x20sent\x20for\x20approval.','&action=interactivepreview','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-ext\x27\x20id=\x27CommentDivRecNo','\x27/></div>','#ddlFilterDocType','\x27;.<>#%&*{}?:|\x22\x5c~`()$<>,','\x27)\x20and\x20DocumentId\x20eq\x20\x27','\x27);\x22\x20id=\x22file_','File(s)\x20have\x20been\x20uploaded\x20successfully.','getFolderByServerRelativeUrl','#ToastPopup','\x27)/getusereffectivepermissions(@u)?@u=\x27','option','responseType','Group\x20Documents','Reject','Forms','_blank','#UploadBoxCancel','.fillstar','.customColModal','<option>2</option>','#userHTMLBox','<div\x20class=\x27FlexingBox\x27><img\x20class=\x27AdjustingSize\x27\x20src=\x27','#ddlAddFolderCateg\x20option','#iframeFile-viewer','NotifyPPlPicker','<i\x20class=\x22fa\x20fa-download\x22></i>Download</a></td></tr>','ColumnName','#chkUpdateValidity','<input\x20type=\x22number\x22\x20class=\x22form-control\x22\x20id=\x22Custom','Rlfrtip',':checked','\x22\x22\x20title=\x22remove\x22></span></div>','appendTo','#bdyUploadFile','SubCategory','#txtNote','</span><span\x20id=\x22NameStep','<tr>','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22>','Kindly\x20enter\x20due\x20date.','.coverbox_list','text','DocumentURL','.btnCloseProp','<option>10</option>','folderName','SP.Folder','.ShareSectionAct','target','width','sort','trigger','arraybuffer','Word','\x20files\x20couldn\x27t\x20be\x20deleted\x20because\x20of\x20locked\x20others\x20have\x20been\x20deleted\x20successfully.','</li>','length','executeQueryAsync','ServerURL','wim','grep','<label\x20class=\x22checkbox-inline\x20hpx-20\x22><input\x20type=\x22checkbox\x22\x20id=\x22selectAllChk\x22\x20value=\x22\x22></label>','docx','\x27)?$expand=ListItemAllFields&$select=*,ListItemAllFields/AccessLevel,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentNo,','FileSizeDisplay','Add\x20to\x20Favorite','<option>5</option>','#ckbFileName','menu-icon-active','<div\x20class=\x22NewFolderUpload\x22\x20title=\x22','#chkUpdateType','before','getMinutes','val','</span>\x20<span\x20class=\x22fa\x20fa-close\x20fa-lg\x20closeBtn\x22\x20style=\x22color:red;\x22\x20\x20onclick=\x22removeLine(this.id);\x22\x20id=\x22file_','PageLoad','HTML','<table>','FormDigestValue',')\x27>Delete</a></li>','#ckbTitle','FileUrl','?$select=Status,LogonName/EMail&$expand=LogonName&$filter=\x20Status\x20eq\x20\x27Active\x27\x20and\x20LogonName/EMail\x20eq\x20\x27','each','#UploadFileComment','userId','Advance\x20Search','color','AccessLevel','<div\x20class=\x27mt-14\x27>','Initials','ReplyTo','/_api/Web/GetFileByServerRelativeUrl(\x27','Folder\x20name\x20can\x20not\x20contain\x20the\x20following\x20characters:\x20\x0a.\x20<\x20>\x20#\x20%\x20@\x20&\x20*\x20{\x20}\x20?\x20:\x20;\x20|\x20\x20\x22\x20\x20\x20/\x20~\x20`\x20','200iAzWaf','248pZLVJA','<div\x20class=\x22detail-title\x20ellipsis-2\x22\x20style=\x22color:\x20rgb(0,\x20128,\x200);\x22\x20title=\x22Pending\x22>','AddUserKeys','UIVersionLabel','<label\x20class=\x22detail-label\x22>','input:button','#CommentsArea','#NewAttachmentFiles','Red','DocumentApprovalRequests','get_id','File\x20has\x20been\x20renamed.','#FileName','.NewFolderUpload','154158dYFtdG','htm','<strong>Department:</strong>\x20','Email','#TotalComments','<li\x20class=\x27likes-box\x27>','jpeg','webAbsoluteUrl','#UserSection','</span>\x20:</a>','fail','Icon','ajax','done','User','2920muhKxz','display','#btnMultipleDelete','Unlock','Dec','ApproversEmail','?$filter=DocumentId\x20eq\x20\x27','div','addClass','#ckbApproval','\x20file\x20doesnt\x20exist','.userBox','\x27\x20class=\x27img-circle\x20chat-user-image\x27\x20width=\x2730\x27\x20height=\x2730\x27></span>\x20<span\x20class=\x27b-500\x27>','.listofemployee\x20input[type=checkbox]:checked','$skipToken','unbind','NextActionApprover','Parent','#ddlAddFolderDetails','280px','SiteURL','Kindly\x20enter\x20postfix\x20of\x20file\x20Name.','#accordionapprovers','execCommand','prop','Kindly\x20enter\x20the\x20Step\x20Name.','<a\x20href=\x22javascript:void(0);\x22\x20id=\x22btnEditViewFile\x22><button\x20class=\x22btn\x20dropdown-toggle\x20LockDisable\x22\x20type=\x22button\x22\x20id=\x22FileEditModal\x22><i\x20class=\x22fa\x20fa-edit\x22></i><span\x20data-localize=\x22Edit\x22>Edit</span></button></a>','ServerRelativeUrl','\x27\x20and\x20Like\x20eq\x20\x27Yes\x27\x20&$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy','mp4','name','ApprovedBy','?$select=*,Author/Title,SharedUsers/Title&$expand=Author,SharedUsers&$orderby=Created\x20desc&$filter=DocumentID\x20eq\x20\x27','CSV.png','.WACRibbonPanel','<table\x20class=\x22table\x20mb-0\x20custom-table\x20tablemanager\x22\x20id=\x22groupDocumentGrid\x22><thead><tr\x20id=\x22theadItem\x22></tr></thead><tbody\x20id=\x22groupDocumentGridtbody\x22></tbody></table>','--select--','#txtNamePostfixFold','Notification\x20from\x20','<td\x20colspan=\x222\x22><p\x20style=\x22margin:15px\x200;\x20padding:0;\x22>Notification\x20from\x20<span>','ListItemAllFields','#dms-creat-file','Zip','13679288rymhXc','<div\x20class=\x22dms-table-ellipsis-2\x22>','ListItem','#btnChangeFileName','getWOPIFrameUrl','<th><span\x20class=\x22TblHeader\x22\x20data-localize=\x22Reference\x22>Reference</span></th>','refreshMode','size','/_layouts/versions.aspx?list=','PermissionKind','avi','<li><a\x20type=\x27button\x27\x20onclick=\x27EditComment(','</span>\x20regarding\x20the\x20below\x20document</p></td>','#folderPropertyTag','Comments','</div><div\x20class=\x22checkbox\x20ml5\x20mb0\x22>','\x22>NA</span><span\x20id=\x22EmpIdStep','change','Not\x20Shared','</a></span>\x20<span\x20class=\x27chip-icon-box\x27>\x20<a\x20href=\x27','exec','SharedId','Text','#ddlAddFolderRef','UserContri','?web=1','.dotx','.closeAddEditModal','#zz12_RootAspMenu','ogv','mov','.txt','parse','\x27)/AttachmentFiles/\x20add(FileName=\x27','<option\x20value=\x22-Select-\x22>-Select-</option>','bmp','click','InternalSupervisor','#tbdyVerHis','</span><span\x20class=\x27pl5\x20pr5\x27>-</span><span>','/_api/web/lists/getbytitle(\x27DocumentApprovalRequests\x27)/items','folder','#FileValidityPopup','#ckbMandDocType','.ms-belltown-anonShow','<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x27>','#txtNewFileName','#FilterModTo','Upload','#AppValidDateField','\x22\x20alt=\x22\x22></div><div\x20class=\x22imagecontent\x22>','Please\x20select\x20any\x20folder\x20first.','EditMode','denied','.dms-table-btn','folder.png','Please\x20fill\x20the\x20approver\x27s\x20name\x20or\x20correct\x20the\x20email\x20format.','ListItemAllFields/DocumentType,ListItemAllFields/SharedId,ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Title','#FileTitle','#btnRenameFile','?$select=Title,InternalMembers/EMail,InternalMembers/Title,InternalSupervisor/EMail,InternalSupervisor/Title,Supervisor/EMail,Supervisor/Title&$expand=InternalMembers,InternalSupervisor,Supervisor&$filter=Title\x20eq\x20\x27','\x22>Root</a></li>','isNaN','Customize','#ParentAck','#Attachmentlist','send','?$select=*,Id,Title,User/Id,User/EMail&$expand=User&$filter=Category\x20eq\x20\x27Document\x27\x20and\x20FileName\x20eq\x20\x27','#txtFavorite','Properties\x20have\x20been\x20updated.','.AdjustingSize','#chkUpdateAuthor','#btnMoveFile','Selected\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20uploaded.','mp3','#dms-creat-folder','396zwUgMu','\x27\x20data-filename=\x27','.chkFileFolder','#NameStep','DocumentWrittenBy','<input\x20type=\x22checkbox\x22\x20name=\x22\x22\x20Id=\x22checkbox','<td><p\x20style=\x22margin:0;\x20padding:0;\x22\x20data-localize=\x22Title\x22><b>Title</b><b>:</b></p></td>','</ul>','DD/MM/YYYY','</td>','{0}?ID={1}&Source={2}','removeAttr','#UploadLarge','#ddlCustomCol','#txtMessage','#groupDocumentGridtbody','#FileTypeList','?$select=Id,DocumentURL,DocumentID&$filter=DocumentID\x20eq\x20\x27','view&wdAccPdf=0&wdEmbedFS=1','#File-viewer','#FileApproval','#suiteBarTop','</span><span\x20id=\x22AppTypeStep','initPropertiesFromJson','\x27><span>','InternalMembers','i:0#.f|membership|','iframeFile-viewer','#AttachAttachmentButton','#TypeStep','\x22\x20class=\x22checkse\x20chkNotify\x22>','#lockeffect','</span></th>','.replaceOptions','Kindly\x20add\x20approval\x20steps\x20first.','#txtUpdateAuthor','response','ppt','<div\x20class=\x22panel-body\x22\x20style=\x22padding:60px;\x22><div\x20class=\x22row\x20text-center\x22><br>','undefined','#likes','Approval\x20list\x20link\x20has\x20been\x20updated.',')\x27>Edit</a></li>','ready','Visibility','rar','Exists','#DMSTable,#ButtonArea,#SearchArea',')\x27\x20>Delete</a></li>','File\x20has\x20been\x20successfully\x20deleted.','#txtSharePermission','DELETE','#txtAddFileAuth','#LargeUploadFile','<td\x20class=\x22text-left\x22\x20onclick=\x22GetSharedHistory(\x27','Shared\x20with\x20','\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20updated.\x0aOther\x20files(s)\x20have\x20been\x20updated\x20successfully.','Shared\x20link\x20has\x20been\x20removed.','#txtUpdateRef','You\x20don\x27t\x20have\x20the\x20required\x20permission\x20on\x20','#PopupPropertyBox','<div\x20class=\x22checkbox\x20mt0\x20checkbox-space-align\x22>','<div\x20class=\x27col-md-12\x20col-sm-12\x20p0\x27>','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22>','<img\x20src=\x22','<h4>No\x20Likes!!</h4>','select','</span><span\x20id=\x22AppRoleStep','search','/_layouts/15/userphoto.aspx?accountname=','stringify','\x20regarding\x20a\x20document','.MandSignAddF','NextActionbyId','Specific','#EmailStep','toTimeString','<div\x20class=\x27attachment-badge\x20chip-box\x27\x20id=\x27Attachmentlist','RecordId','application/json','substr','<div><strong>Uploaded\x20On:</strong>\x20','forEach','#btnEditViewFile','CommentCount','pptx','#divEditView','onload','#txtRenamefile','scrollTop','.customColFilter','css','<div\x20class=\x27clearfix\x27></div>','/_api/Web/GetFolderByServerRelativeUrl(\x27','Modify','POST','The\x20security\x20validation\x20for\x20this\x20page\x20is\x20i','shift','DocId','#modalDownloadBtn','PDF','.dms-left-panel-tab','.dms-left-panel-tab-inner','#NewFileExtension','Reply','#InitialsSign','.docx','Are\x20you\x20sure,you\x20want\x20to\x20delete\x20this\x20file/folder?','#chkFolderProp','edit','#noAppValidDate','</span></span>\x20<span\x20class=\x27chip-icon-box\x27>\x20<a\x20href=\x27','preventDefault','#AppHeaderPanel','includes','#generateBradCumbNew','mpeg','match','\x22\x20id=\x22file_','classList','From:\x20no-reply@sharepointonline.com','#__REQUESTDIGEST','files','load','\x27></div>','<div\x20id=\x27editMenuOpen2\x27\x20class=\x27chat-edit-delete-panel\x20dropdown-toggle\x27\x20data-toggle=\x27dropdown\x27\x20aria-expanded=\x27false\x27>','input:text','\x22><div\x20class=\x22imgsetion\x22><img\x20src=\x22','SharedDocument','#FileSubType','#CommentFileTitle','.txtSharingHistoy','#FileSize','.btnCloseApproval','pptm','Required\x20columns\x20does\x20not\x20exist.\x20Kindly\x20contact\x20administrator.','#ddlAddFileSubC','#CommentModify','FileFolderName','_api/web/GetFolderByServerRelativeUrl(\x27','#chkUpdateTitle','<th\x20class=\x22text-center\x20border-bottom-0\x20w-2\x20disableSort\x22>','#Custom','<div\x20data-localize=\x27Title\x27><strong>Title</strong><strong>:</strong>\x20','<span><h2\x20class=\x22text-center\x22>No\x20preview\x20available.\x20File\x20has\x20been\x20downloaded.</h2></span>','#OutsiderName','\x27\x20style=\x27color:red;\x27\x20id=\x27','slice','#ddlFileType\x20option','.MandSign','<strong>Project:</strong>\x20','SharedWithMe','<th\x20class=\x22noWidth\x22\x20data-localize=\x22Reference\x22>Reference</th>','\x22\x20class=\x22downloadsec\x22\x20download=\x22','<li\x20class=\x22StepClass\x20removeDiv\x20NewStep','#hideCommentScroll','#ckbMandRef','file\x20already\x20exists.','?$select=*,Author/EMail&$expand=Author&$filter=Author/EMail\x20eq\x20\x27','<div\x20class=\x22detail-title\x20ellipsis-2\x22\x20id=\x22CustomPopup','.RenameUploadFolder','error','\x22></span><span\x20id=\x22AppRoleStep','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22\x20data-target=\x22#approverssec\x22\x20data-toggle=\x22modal\x22\x20onclick=\x22OpenApprovalHistry(','/_api/SP.Utilities.Utility.SendEmail','Shared%20Documents','ApproverRole','#btnProperties','/_api/web/lists/getbytitle(\x27','join','getFullYear','Kindly\x20enter\x20validity.','#dueDateField','Attempted\x20to\x20perform\x20an\x20unauthorized\x20operation','_TopSpan_EditorInput','#VerHisTitle','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png\x22\x20style=\x22width:20px;\x20margin:0\x202px;\x22>','ItemId','309822KiYhOJ','GetAllUserInfo','#myModalupload','#rdoRunTimeTitan','Please\x20select\x20any\x20file\x20first.','#replyforuser','ModifiedEmail','?$select=Title,Id,RequestID&$filter=RequestID\x20eq\x20\x27','fileurl','docx.png','HasResolvedUsers','/DocumentManagementSystem/Forms/template','<div\x20width=\x22100%\x22\x20id=\x22viewMyDocuments\x22\x20style=\x22min-height:750px;padding-top:0px\x22>','<div\x20class=\x22detail-title\x20ellipsis-2\x22\x20title=\x22Rejected\x20by\x20',');\x22><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#addsuccessor\x22><i\x20class=\x22fa\x20fa-edit\x22\x20aria-hidden=\x22true\x22></i>\x20Edit</a></li>','<span\x20id=\x22DecideStep','<table\x20class=\x22table-responsive\x20table-width\x20tinytable\x20table\x20table-bordered\x20table-striped\x20table-hover\x20js-basic-example\x20dataTable\x20no-footer\x20sharedwithme_table\x20maxwidthmanage\x22\x20id=\x22groupDocumentGrid\x22><thead><tr\x20id=\x22theadItem\x22></tr></thead><tbody\x20id=\x22groupDocumentGridtbody\x22></tbody></table>','toUpperCase','AllowMultipleValues','round','get_web','#FileSharing','<li><a\x20type=\x27button\x27\x20class=\x27LikeCmnt','#CommentModImage','AllItems','createDocument','Supervisor','ReplyAgainst','.LockDisable','#LockStatus','audio.png','txt.png','#anchFolderUpload','location','FileValidity','<div\x20class=\x22checkTypeClass\x22\x20tile=\x22\x22\x20onmouseover=\x22getcheckOutName(this,\x20\x27','userselection','</div><br/><br/>','<li><a\x20class=\x27logout\x27\x20onclick=\x27ActiveReplyCtrl(','</div></div></li>','substring','PrincipalAccountType','flv','getDate','#UploadBoxReject','#txtShareOn','.radioEmp','csv','main-deta-panel','rowCount',');\x22><a\x20href=\x22javascript:void(0);\x22><i\x20class=\x22fa\x20fa-trash-o\x22\x20aria-hidden=\x22true\x22></i>\x20Delete</a></li></ul></div>','Shared\x20with\x20Me','</span></a></span><span\x20class=\x27Closebtn\x27\x20id=\x27Closebtn','.ApproveSign','<h4>Will\x20be\x20decided\x20by\x20','E-Sign','.unfillstar','#chkUpdateDetails','\x27\x20onclick=\x27previewfile(this);\x27\x20data-fileurl=\x27','</h3><span>','Employees','My-DMS:\x20','\x27)\x20and\x20(Like\x20eq\x20\x27Yes\x27\x20or\x20Like\x20eq\x20\x27No\x27))&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles','ApproverType','#ddlFilterApprovl','An\x20error\x20occurred.\x20Please\x20contact\x20your\x20system\x20administrator\x20/\x20Refresh\x20a\x20WebPage\x20!','#chkUpdateSubType','#chkUpdateRef','Documents/','emojioneArea','You\x20are\x20trying\x20to\x20upload\x20','<li><a\x20type=\x27button\x27\x20onclick=\x27ActiveReplyCtrl(','<button\x20type=\x22button\x22\x20class=\x22btn\x20custom-btn\x20wpx-87\x22\x20id=\x22btnAddApp\x22>Submit</button>','<span>','#FolderAttachment','DocumentComments','#txtUpdateValidity','<div\x20class=\x22form-group\x20custom-form-group\x20mb0\x22>','Kindly\x20enter\x20folder\x20name.','#ckbDetails','\x27)/Files/add(url=\x27','ApproverForStep','\x27);\x22\x20title=\x22Approved\x20by\x20','\x22\x20class=\x22chkFileFolder\x22\x20value=\x22','hide','Archive','.like-img','\x20option:selected','DisplayText','userDisplayName','DataType','<label\x20for=\x22myCheckboxgd','#createExcelFile','MM/DD/YYYY','origin','undefined\x20','#CustomSearchMyDoc','/Documents/','folderUrl','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22></div>','one','\x27\x20data-toggle=\x27collapse\x27\x20data-target=\x27#messageReplyBox\x27\x20aria-expanded=\x27false\x27\x20onclick=\x27Pushlikeforcomment(','\x22>Click\x20here</a>\x20to\x20open\x20the\x20document.</td>','EntityData','#AppRoleStep','Rejected','Author','MMM\x20DD\x20YYYY','<tr><td>','input[id$=\x27dueDate\x27]','xls','</div><br/>','Adobe\x20Sign','colType','Notification\x20has\x20been\x20sent.','FileLeafRef','<div\x20class=\x27chat-edit-delete-panel\x20dropdown-toggle\x27\x20data-toggle=\x27dropdown\x27\x20aria-expanded=\x27false\x27>','</h4>','<option>9</option>','#ddlAddFolderSubC','draw','reject','Kindly\x20fill\x20the\x20mandatory\x20fields.','EMail','<div>\x20','yyyy-mm-dd_hhMMss','3JnjQHU','\x20Approvers.</h4><a\x20href=\x22javascript:void(0);\x22\x20style=\x22cursor:pointer;\x22></a></div></div>','application/json;odata=verbose','.mybradcumb\x20','#CommentDivRecNo','Nov','.AppHeaderPanel','Documents','</th>','value','#txtUploadFiles','addListItems','\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20uploaded.\x0aOther\x20files(s)\x20have\x20been\x20uploaded\x20successfully.','#FileDetalis','#FileReference','_Original','#DeltaTopNavigation','<strong>Library:</strong>\x20My\x20Documents','\x27)?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=\x20LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl,','title','.checkbox','#btnDeleteFile','\x22></div></li>','#FileVersion','contents','xlsx','\x27\x20and\x20DMS_Type\x20eq\x20\x27','<a\x20href=\x27#\x27\x20class=\x27comment-reply-user-name-info\x27>@<span\x20>','attr','src','MMM\x20D,\x20YYYY','#lockeffect\x20.lock','Utilities','avchd','#ddlAppStep','SP.Data.MyFavoritesListItem','Name\x22>','#FileLastModified','replace',')/AttachmentFiles/add(\x20FileName=\x27','#ddlPriority','FileName','filename','#btnVerHist','<div\x20class=\x27reply-text-box\x20my-chat-edit-delete-panel-inside\x20reply-inside-text-box\x27\x20id=\x27CommentText','<div\x20class=\x27my-chat-edit-delete-panel-inside\x27\x20id=\x27CommentText','pop','<option>14</option>','<div\x20class=\x22col-sm-6\x20flexitem\x22><div\x20class=\x22imgsetion\x22><img\x20src=\x22','controlId','<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Image\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27','responseJSON','<div\x20class=\x22col-md-12\x22>','\x20AM','#LikesCount','Selected\x20file(s)\x20are\x20locked,\x20couldn\x27t\x20be\x20deleted.','#txtTitlePrefix','ColName','get_value','<option\x20value=\x22All\x22>All</option>','ColumnType','\x27);\x22\x20style=\x22color:\x20rgb(0,\x20128,\x200);\x22\x20title=\x22Pending\x22>','?id=','Created','\x27\x20onclick=\x27previewfile(this);\x27\x20href=\x27javascript:void(0)\x27>','#VerHisParent','#checkall','#ckbMandValidity','MyFavorite','#CommentFileDocType','application/json;\x20odata=verbose','right','MERGE','JPEG','copy','<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-my\x27\x20id=\x27CommentDivRecNo','.btnNotSharedTab','&ID=','Approved','promise','#FileDocSubType','Width','LikeComment','\x27\x20and\x20FileName\x20eq\x20\x27','.NewSelectedAttachment','Default','log','doc','html','<th><span\x20class=\x22TblHeader\x22\x20data-localize=\x22','<td\x20class=\x22text-center\x22>','#Properties','block','<span\x20class=\x22ActionDate\x22>','#ShareTabSharing','#lockeffect\x20.texthere','<h4>Will\x20be\x20decided\x20by\x20Initiator.</h4><a\x20href=\x22javascript:void(0);\x22\x20style=\x22cursor:pointer;\x22></a></div>','<div\x20class=\x22designationtype\x22><h3\x20class=\x22namesection\x22>','<h4>No\x20views!!</h4>','VersionLabel','</a></div></div>','\x27\x20onclick=\x27Pushlikeforcomment(','ApproversName','<tr><td\x20colspan=\x224\x22><div\x20style=\x22text-align:center;\x22>No\x20version\x20found.</div></td></tr>','#ckbModifiedDate','GuestDocuments','.deta-col','#txtUpdateType\x20option','#ApprovlUpload','/Shared%20Documents/',')\x27\x20>','pdf','</span><span\x20id=\x22EmpIdStep','min-height:\x20calc(100vh\x20-\x20104px)\x20!important;\x20height:\x20calc(100vh\x20-\x20104px)\x20!important;margin-top:\x20-58px;width:\x20100%\x20!important;','interactivepreview','#LibProject','Error\x20in\x20getting\x20properties','Delete\x20from\x20Favorite','_Copy','/_api/web/lists/getbytitle(\x27MyFavorites\x27)/items','<select\x20class=\x22form-control\x20numbers\x22\x20id=\x22ddlCustomCol','dms-table-btn-active','#notify','#chkUpdate','TotalUserCount','<div\x20class=\x22col-sm-10\x20user_detail_box\x22>','CreatedBy','An\x20error\x20occurred\x20while\x20add\x20all\x20Approvers.\x20','\x27&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles','Kindly\x20enter\x20file\x20name.','append','Outsider','pow','#btnAddApp','Full\x20Control','PermissionType','resolve','charAt','Documents(s)\x20have\x20been\x20uploaded.','#FilterModFrom','<iframe>','#btnFolderAttachment','#btnFileFullView','open','#btnUndoLock','#DMSTable','This\x20is\x20an\x20auto\x20generated\x20email.\x20Please\x20don\x27t\x20reply.','#ddlFileType','#userbox-1','outsidesetion','\x22\x20class=\x22mybradcumb\x20first\x22><a\x20href=\x22','disabled','Invalid\x20date','.emilbox','Pending','</button></li>','#btnSendNotifyMail','DataTable','<div\x20style=\x22display:none;\x22><span\x20id=\x22EmailStep','-Select-','ViewsBy','button[name=Delete].ms-CommandBarItem-link','#txtFilterRefe','#accordionapprovers\x20.StepClass','#ckbDocumentType','File\x20Size','removeClass','show','xml','\x27&$top=5000','.prefix_and_postfix_name','RunTime','#AttachmentUploadField','#txtDocComments','#chkNotUpload','convertJSONDateAMPMWithDate','BasePermissions','no-reply@sharepointonline.com','#TotalHits','Shared%20Documents/','Group','prototype','#FileUploadControl','<div\x20class=\x22col-sm-6\x20parentremove\x22>','</table>','</span>','264682mJOECf','\x22><i\x20class=\x22fa\x20fa-paperclip\x22\x20style=\x22font-size:\x2020px;\x20font-weight:\x20500;\x22></i></i></span>\x20','26272030bfNdYu','My\x20Documents','pptx.png','.OneUp-commandBar','/_api/web/folders','#s4-ribbonrow','<div><strong>Uploaded\x20by:</strong>\x20','?$select=*,Title,ColumnName,ColumnType,DataType,Position,DMS_Type,DMS_Link,Visibility,Id\x20&$top=5000\x20&$filter=DMS_Type\x20eq\x20\x27','No\x20record\x20found.','button.copyButton','<img\x20style=\x22height:17px;\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png\x22\x20alt=\x22\x22\x20data-themekey=\x22#\x22\x20data-target=\x22#approverssec\x22\x20data-toggle=\x22modal\x22\x20onclick=\x22OpenApprovalHistry(','dms-left-panel-tab-active','If-Match','</h3>','Designation','Comment','<label><input\x20type=\x22checkbox\x22\x20value=\x22\x22\x20id=\x22chkUpdate','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_xlsx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png\x27></img><span\x20title=\x27','.forFileOnly','#sign-viewer','\x27,overwrite=true)?@target=\x27','checked','Jun','#ckbMandTitle','<td><a\x20href=\x22','GetAll','%20','#TotalLikes','input.linkToCopy','#ddlSign','inline-block','Following\x20document(s)\x20have\x20been\x20uploaded.<br/><br/>','#ParentFooterSign','#UserTitanSection','\x20MB\x20file(s).\x20It\x20will\x20take\x20couple\x20of\x20minutes\x20to\x20upload.\x20Do\x20you\x20want\x20to\x20continue\x20?','lastIndexOf','\x27\x20title=','floor','<td><p\x20style=\x22margin:0;\x20padding:0;\x22><b>Name:\x20</b></p></td>','Filter','#seemorebtnGeneral','Audit-viewer','hidemy','Category','<div\x20class=\x22NewFileUpload\x22\x20title=\x22','28qGAqxx','<div\x20class=\x22listofemployee\x22\x20>','#AddSuccStep','#ddlAddFileCateg\x20option','<td><p\x20style=\x22margin:0;\x20padding:0;\x22><b>Message:\x20</b></p></td>','\x27\x20and\x20LikeComment\x20eq\x20\x27Yes\x27\x20and\x20LikeCommentID\x20eq\x20\x27','/_api/web/lists/GetByTitle(\x27SharedDocument\x27)/items(\x27','/_api/web/Lists/GetByTitle(\x27DocumentComments\x27)/Items?$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles&$orderby=Created\x20desc&$top=10&$skipToken=Paged=TRUE%26p_ID=','</span>\x20:</a><span\x20class=\x27replymsg\x27>','#chkKeepExist','inherit','Guest\x20Portal\x20Documents','Kindly\x20select\x20any\x20user.','<div\x20class=\x22detail-title\x20ellipsis-2\x22\x20data-target=\x22#approverssec\x22\x20data-toggle=\x22modal\x22\x20onclick=\x22OpenApprovalHistry(','<i\x20class=\x22fa\x20fa-times\x22></i></span><div\x20class=\x22empoyeeimg\x22><img\x20src=\x22','\x27)/CheckedOutByUser/Title','<td\x20class=\x22text-left\x22>','<th><span\x20class=\x22TblHeader\x22\x20data-localize=\x22Category\x22>Category</span></th>','All\x20the\x20files/folders\x20have\x20been\x20deleted.','<td>','yyyy','#btnDownloadFiles','#FilePath','#AddEditStep','<div\x20class=\x27m-0\x20upload-chip\x20chatAttach_Docx\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png\x27></img><span\x20title=\x27','webm','#chkReplaceVer','body','#chkUploadNew','#StepName','#txtnewSubFolderName','188184vKfGlA','GroupName','#replyTextarea','</span></td><td><a\x20href=\x22','<div\x20class=\x22listofemployee\x22\x20id=\x22NotifyPPlPicker\x22></div>','</span><span\x20id=\x22InitialsSign','Shared\x20by\x20Me','</option>','NullValue','#ddlAddFolderCateg','Folder\x20already\x20exists.','Please\x20enter\x20the\x20name\x20first.','message','AttachmentFiles','Guest:\x20','</tr>','indexOf','responseText','\x27)/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy','nextAll','#chkFooterSign','innerText','<th><span\x20class=\x22TblHeader\x22\x20id=\x22dteModified\x22\x20data-localize=\x22Modified\x22\x20onclick=\x22SortOnDate(this);\x22>Modified</span></th>','<div\x20class=\x22listimg\x20col-md-2\x22>','6172308gSFSzZ','remove','Are\x20you\x20sure\x20to\x20delete\x20this\x20comment\x20?','yes','/_api/web/lists/GetByTitle(\x27','\x27\x20and\x20User/EMail\x20eq\x20\x27','\x27);\x22\x20title=\x22remove\x22></span></div>','<div\x20class=\x22approvelheadeing\x22><h3\x20class=\x22mainheading\x22\x20id=\x22txtStep','ColumnCount','DefaultLanguage','.headdingLinks','Locked\x20by:\x20','<h4\x20class=\x27col-md-12\x20col-sm-12\x20my-chat-edit-delete-panel\x20others-reply-text-box\x27>'];a90_0x189d=function(){return _0x4bb27c;};return a90_0x189d();}function ReadOccasionComment(_0x271c84,_0x253165,_0x1fd3bf,_0x2481e0){var _0x398e3a=a90_0x13126d,_0x3e1809=_0x4ce28e;$[_0x3e1809(0x42c)]({'url':_0x1fd3bf,'headers':{'Accept':_0x398e3a(0x3c6)},'async':![],'success':function(_0x3ad313){var _0x91ef6d=_0x398e3a,_0x47e414=_0x3e1809;FileCommentResponse=FileCommentResponse[_0x47e414(0x22e)](_0x3ad313['d'][_0x91ef6d(0x55c)]),FileCommentResponse[_0x47e414(0x4c2)]((_0x3309b4,_0x11cf80)=>_0x3309b4['ID']-_0x11cf80['ID']),FileCommentResponse[_0x47e414(0x4a1)]>0x0&&(getLatestMsgId!=FileCommentResponse[FileCommentResponse[_0x47e414(0x4a1)]-0x1]['Id']&&_0x271c84==_0x47e414(0x1ce)&&$(_0x47e414(0x21a))[_0x47e414(0x4cf)]()<-0x5&&_0x253165!=_0x47e414(0x4fc)&&$(_0x47e414(0x490))[_0x47e414(0x6ea)](),_0x2481e0!=_0x47e414(0x6a6)&&(getLatestMsgId=FileCommentResponse[FileCommentResponse[_0x91ef6d(0x1d9)]-0x1]['Id'])),FileCommentResponse[_0x47e414(0x4a1)]>0x0?_0x1fd3bf[_0x47e414(0x189)](_0x47e414(0x193))!=-0x1?DesignChatting(FileCommentResponse,_0x47e414(0x2fa)):DesignChatting(FileCommentResponse,''):($(_0x91ef6d(0x206))[_0x47e414(0x314)](),$('#TotalComments')[_0x47e414(0x340)]('0')),_0x3ad313['d'][_0x47e414(0x48f)]?(Ownurl=_0x3ad313['d'][_0x47e414(0x48f)],$(_0x47e414(0x226))[_0x47e414(0x247)](_0x91ef6d(0x21e),_0x47e414(0x536))):_0x1fd3bf['indexOf']('$skipToken')==-0x1&&$(_0x47e414(0x226))[_0x47e414(0x247)](_0x47e414(0x418),_0x47e414(0x1f5));},'error':function(_0xf81673){var _0x4fff46=_0x3e1809;console[_0x4fff46(0x403)](_0xf81673);}});}function OccasionCommentCount(_0x5622d9){var _0x10ca4a=a90_0x13126d,_0x285ae8=_0x4ce28e;_0x5622d9==_0x285ae8(0x1ce)&&(UrlCommentTotal=_spPageContextInfo[_0x285ae8(0x229)]+_0x285ae8(0x436)+CurrentYear+_0x285ae8(0x2eb)+EmployeeID+_0x10ca4a(0x53a)+OccasionType+_0x285ae8(0x2a4)),OccasionresponseComment=[],ReadOccasionCommentTotal();}function DesignChatting(_0x461698,_0x31ac02){var _0x880f04=a90_0x13126d,_0x529b0a=_0x4ce28e;_0x31ac02==''&&$(_0x529b0a(0x17d))[_0x529b0a(0x340)](_0x461698[_0x880f04(0x1d9)]);var _0x30c52d='',_0x4728e8=[],_0x2e8470=[],_0x51d772=_0x529b0a(0x2d9);for(var _0x34c1bc=0x0;_0x34c1bc<_0x461698[_0x529b0a(0x4a1)];_0x34c1bc++){var _0x40ef87=_0x461698[_0x34c1bc][_0x880f04(0x5ca)],_0x25e429=_0x529b0a(0x36e);_0x31ac02!=_0x529b0a(0x2fa)?(_0x40ef87=checkLikeCommentUser(_0x461698[_0x34c1bc]['Id']),_0x40ef87>0x0?(_0x51d772=_0x529b0a(0x5f4),_0x25e429=_0x529b0a(0x36e)):(_0x40ef87=0x0,_0x25e429=_0x880f04(0x555))):_0x40ef87==null&&(_0x40ef87=0x0,_0x25e429=_0x529b0a(0x1f5));var _0x257247=new Date(_0x461698[_0x34c1bc][_0x529b0a(0x66a)]),_0x4725b4=_0x257247[_0x529b0a(0x45e)](),_0x51cc6d=+_0x4725b4[_0x529b0a(0x6e8)](0x0,0x2),_0x161bda=_0x51cc6d%0xc||0xc,_0x52b34c=_0x51cc6d<0xc?_0x529b0a(0x19a):_0x529b0a(0x3f5);_0x4725b4=_0x161bda+_0x4725b4[_0x529b0a(0x6e8)](0x2,0x3)+_0x52b34c;if(_0x461698[_0x34c1bc][_0x529b0a(0x63f)]==_0x529b0a(0x33b))_spPageContextInfo[_0x880f04(0x640)][_0x529b0a(0x1d9)]()==_0x461698[_0x34c1bc][_0x529b0a(0x2f7)][_0x529b0a(0x4c0)][_0x880f04(0x581)]()?_0x30c52d=_0x30c52d+_0x529b0a(0x2a2)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x880f04(0x675)+_0x529b0a(0x69f)+formatDateComment(_0x461698[_0x34c1bc][_0x529b0a(0x66a)])+_0x529b0a(0x431)+_0x4725b4+_0x529b0a(0x245)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x212)+_0x25e429+_0x529b0a(0x44d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x63d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x1a6)+_0x40ef87+_0x529b0a(0x3c2)+_0x529b0a(0x441)+_0x529b0a(0x551)+'<div>'+_0x529b0a(0x2b3)+_0x529b0a(0x55a)+_0x529b0a(0x441)+_0x529b0a(0x544)+_0x880f04(0x253)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x472)+_0x529b0a(0x538)+_0x461698[_0x34c1bc]['ID']+_0x880f04(0x2c4)+_0x880f04(0x29b)+_0x529b0a(0x441)+_0x880f04(0x3f1)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x461698[_0x34c1bc][_0x529b0a(0x41c)]+_0x880f04(0x579)+'</h4>'+_0x529b0a(0x3df)+'<div\x20class=\x27attachment-badge\x20chip-box\x27\x20id=\x27Attachmentlist'+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x441)+_0x529b0a(0x441)+_0x529b0a(0x307)+_0x529b0a(0x441):(attachment=_spPageContextInfo[_0x529b0a(0x229)]+_0x529b0a(0x415)+escapeProperly(_0x461698[_0x34c1bc][_0x880f04(0x3b0)][_0x529b0a(0x4c0)]),_0x30c52d=_0x30c52d+_0x529b0a(0x241)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x649)+attachment+_0x529b0a(0x69d)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x461698[_0x34c1bc][_0x880f04(0x3b0)][_0x529b0a(0x664)]+_0x529b0a(0x421)+formatDateComment(_0x461698[_0x34c1bc][_0x529b0a(0x66a)])+_0x880f04(0x51e)+_0x4725b4+_0x880f04(0x5e8)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x212)+_0x25e429+_0x529b0a(0x44d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x63d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x1a6)+_0x40ef87+'</span></span>\x20</div>'+_0x529b0a(0x551)+_0x529b0a(0x1d3)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x461698[_0x34c1bc][_0x529b0a(0x41c)]+_0x529b0a(0x441)+_0x529b0a(0x1c0)+_0x529b0a(0x55a)+'</div>'+_0x529b0a(0x544)+_0x529b0a(0x17b)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x188)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x1a6)+_0x51d772+_0x529b0a(0x5b0)+_0x529b0a(0x40a)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x2b9)+_0x529b0a(0x48e)+_0x880f04(0x3bb)+_0x529b0a(0x3df)+_0x880f04(0x2e1)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x441)+_0x529b0a(0x441)+_0x880f04(0x2f0)+_0x529b0a(0x441));else _0x461698[_0x34c1bc][_0x529b0a(0x63f)]==_0x880f04(0x2fc)&&(_spPageContextInfo[_0x529b0a(0x2b0)]==_0x461698[_0x34c1bc][_0x880f04(0x62f)]?_0x30c52d=_0x30c52d+_0x529b0a(0x2a2)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x3b8)+_0x529b0a(0x69f)+formatDateComment(_0x461698[_0x34c1bc][_0x529b0a(0x66a)])+_0x529b0a(0x431)+_0x4725b4+_0x529b0a(0x245)+_0x461698[_0x34c1bc]['ID']+_0x880f04(0x537)+_0x25e429+_0x529b0a(0x44d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x63d)+_0x461698[_0x34c1bc]['ID']+_0x880f04(0x432)+_0x40ef87+_0x529b0a(0x3c2)+'</div>'+_0x880f04(0x4f0)+_0x880f04(0x559)+_0x880f04(0x3df)+_0x461698[_0x34c1bc][_0x529b0a(0x5b8)]+_0x529b0a(0x5bd)+'<span\x20class=\x27replymsg\x27>'+_0x461698[_0x34c1bc][_0x529b0a(0x4c9)]+_0x529b0a(0x4a2)+_0x880f04(0x3ba)+_0x529b0a(0x55a)+_0x529b0a(0x441)+_0x529b0a(0x544)+_0x880f04(0x253)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x472)+_0x529b0a(0x1be)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x5a0)+_0x529b0a(0x48e)+'</div>'+_0x529b0a(0x478)+'<div\x20class=\x27reply-text-box\x20my-chat-edit-delete-panel-inside\x20reply-inside-text-box\x27\x20id=\x27CommentText'+_0x461698[_0x34c1bc]['ID']+'\x27>'+''+_0x461698[_0x34c1bc][_0x529b0a(0x41c)]+''+_0x529b0a(0x441)+_0x529b0a(0x441)+_0x529b0a(0x242)+_0x529b0a(0x3df)+_0x529b0a(0x6ef)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x441)+_0x529b0a(0x441)+_0x529b0a(0x307)+'</div>':(attachment=_spPageContextInfo[_0x880f04(0x215)]+_0x529b0a(0x415)+escapeProperly(_0x461698[_0x34c1bc][_0x529b0a(0x2f7)][_0x529b0a(0x4c0)]),_0x30c52d=_0x30c52d+'<div\x20class=\x27col-md-12\x20col-sm-12\x20reply-box-ext\x27>'+_0x529b0a(0x649)+attachment+_0x880f04(0x229)+_0x461698[_0x34c1bc][_0x529b0a(0x2f7)]['Title']+_0x529b0a(0x421)+formatDateComment(_0x461698[_0x34c1bc][_0x529b0a(0x66a)])+_0x529b0a(0x431)+_0x4725b4+_0x529b0a(0x245)+_0x461698[_0x34c1bc]['ID']+'\x27\x20style=\x27display:'+_0x25e429+_0x529b0a(0x5b5)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x63d)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x1a6)+_0x40ef87+_0x529b0a(0x5dd)+_0x529b0a(0x551)+_0x529b0a(0x2d0)+_0x461698[_0x34c1bc][_0x880f04(0x1fc)]+_0x529b0a(0x535)+_0x461698[_0x34c1bc][_0x529b0a(0x4c9)]+_0x529b0a(0x4a2)+_0x529b0a(0x1c0)+_0x529b0a(0x592)+_0x529b0a(0x441)+_0x529b0a(0x544)+_0x880f04(0x35c)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x39b)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x1a6)+_0x51d772+_0x529b0a(0x24d)+_0x529b0a(0x343)+_0x461698[_0x34c1bc]['ID']+_0x529b0a(0x2b9)+_0x529b0a(0x48e)+_0x529b0a(0x441)+_0x529b0a(0x478)+_0x529b0a(0x279)+_0x461698[_0x34c1bc]['ID']+'\x27>'+''+_0x461698[_0x34c1bc][_0x529b0a(0x41c)]+''+_0x880f04(0x579)+_0x529b0a(0x441)+_0x529b0a(0x242)+_0x529b0a(0x3df)+_0x529b0a(0x6ef)+_0x461698[_0x34c1bc]['ID']+'\x27>'+_0x529b0a(0x441)+_0x529b0a(0x441)+_0x529b0a(0x307)+_0x529b0a(0x441)));if(_0x461698[_0x34c1bc][_0x529b0a(0x526)][_0x880f04(0x55c)]['length']>0x0){_0x2e8470[_0x529b0a(0x4f4)](_0x461698[_0x34c1bc]['ID']);for(var _0x5c79de=0x0;_0x5c79de<_0x461698[_0x34c1bc][_0x529b0a(0x526)][_0x880f04(0x55c)][_0x529b0a(0x4a1)];_0x5c79de++){_0x4728e8[_0x529b0a(0x4f4)]({'RecordId':_0x461698[_0x34c1bc]['ID'],'FileName':_0x461698[_0x34c1bc][_0x529b0a(0x526)][_0x529b0a(0x1e4)][_0x5c79de][_0x880f04(0x3ed)],'ServerRelativeUrl':_0x461698[_0x34c1bc][_0x529b0a(0x526)][_0x880f04(0x55c)][_0x5c79de][_0x880f04(0x238)]});}}}_0x31ac02==_0x880f04(0x24e)?$(_0x529b0a(0x1db))[_0x529b0a(0x693)](_0x30c52d):$(_0x529b0a(0x1db))['empty']()[_0x529b0a(0x693)](_0x30c52d);for(var _0x4040a3=0x0;_0x4040a3<_0x2e8470[_0x529b0a(0x4a1)];_0x4040a3++){var _0x46cf8c=_0x2e8470[_0x4040a3],_0x2ee59f=$[_0x529b0a(0x5b9)](_0x4728e8,function(_0x2f5f90){var _0x316319=_0x880f04;return _0x2f5f90[_0x316319(0x2e2)]==_0x2e8470[_0x4040a3];}),_0x228532='';$(_0x880f04(0x289)+_0x46cf8c)[_0x880f04(0x51f)]();for(var _0x4a0c93=0x0;_0x4a0c93<_0x2ee59f[_0x529b0a(0x4a1)];_0x4a0c93++){if(_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x529b0a(0x189)](_0x880f04(0x1df))!=-0x1)_0x228532=_0x228532+_0x529b0a(0x4a7)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+_0x529b0a(0x39c)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x880f04(0x380)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+'\x27>'+_0x2ee59f[_0x4a0c93][_0x880f04(0x3ed)]+_0x529b0a(0x2af)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+_0x529b0a(0x330);else{if(_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x880f04(0x4dc)](_0x880f04(0x433))!=-0x1)_0x228532=_0x228532+_0x529b0a(0x25b)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+_0x529b0a(0x39c)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x880f04(0x380)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+'\x27>'+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x529b0a(0x2af)+_0x2ee59f[_0x4a0c93][_0x880f04(0x238)]+_0x529b0a(0x330);else{if(_0x2ee59f[_0x4a0c93][_0x880f04(0x3ed)][_0x529b0a(0x189)](_0x529b0a(0x3f7))!=-0x1||_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x880f04(0x4dc)](_0x529b0a(0x6c1))!=-0x1)_0x228532=_0x228532+_0x529b0a(0x458)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+_0x529b0a(0x39c)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x529b0a(0x44f)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+'\x27>'+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x529b0a(0x2af)+_0x2ee59f[_0x4a0c93][_0x880f04(0x238)]+_0x529b0a(0x330);else _0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x880f04(0x4dc)](_0x529b0a(0x2ae))!=-0x1||_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]['indexOf']('jpeg')!=-0x1||_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x529b0a(0x189)](_0x529b0a(0x555))!=-0x1||_0x2ee59f[_0x4a0c93][_0x880f04(0x3ed)][_0x529b0a(0x189)](_0x529b0a(0x4e6))!=-0x1||_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)][_0x529b0a(0x189)](_0x529b0a(0x44a))!=-0x1?_0x228532=_0x228532+_0x529b0a(0x58c)+_0x2ee59f[_0x4a0c93][_0x880f04(0x238)]+_0x880f04(0x4a4)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x529b0a(0x5e9):_0x228532=_0x228532+'<div\x20class=\x27m-0\x20\x20upload-chip\x20chatAttach_Others\x27>\x20<span\x20class=\x27pr-8\x20chip-text-box\x27><img\x20src=\x27https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png\x27></img><span\x20title=\x27'+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+'\x27\x20data-filename=\x27'+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x529b0a(0x44f)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+'\x27>'+_0x2ee59f[_0x4a0c93][_0x529b0a(0x4b4)]+_0x880f04(0x303)+_0x2ee59f[_0x4a0c93][_0x529b0a(0x33a)]+_0x529b0a(0x330);}}}$('#Attachmentlist'+_0x46cf8c)[_0x529b0a(0x693)](_0x228532);}}function EditComment(_0x21265f){var _0x3c918d=a90_0x13126d,_0x105bfb=_0x4ce28e;FileCommentType=_0x105bfb(0x2e4),ModifyRecId=_0x21265f;var _0x35b32c=_0x3c918d(0x523)+_0x21265f+_0x105bfb(0x4d8);$['when'](getItemsWithQuery('DocumentComments',_0x35b32c,_spPageContextInfo[_0x3c918d(0x215)]))[_0x105bfb(0x577)](function(_0xb72cf3){var _0x2a8cbf=_0x3c918d,_0x30d79f=_0x105bfb;if(_0xb72cf3[_0x30d79f(0x4a1)]>0x0){$(_0x2a8cbf(0x507))[_0x30d79f(0x678)](_0xb72cf3[0x0][_0x2a8cbf(0x256)]),$(_0x30d79f(0x3a8))[_0x30d79f(0x314)]();if(_0xb72cf3[0x0][_0x30d79f(0x526)][_0x30d79f(0x1e4)]['length']>0x0){var _0x4844ec='';for(var _0x5ccfd5=0x0;_0x5ccfd5<_0xb72cf3[0x0][_0x2a8cbf(0x4d9)][_0x30d79f(0x1e4)][_0x30d79f(0x4a1)];_0x5ccfd5++){_0x4844ec=_0x4844ec+_0x30d79f(0x236)+_0xb72cf3[0x0]['ID']+'-'+_0x5ccfd5+_0x30d79f(0x66d)+_0xb72cf3[0x0][_0x30d79f(0x526)][_0x2a8cbf(0x55c)][_0x5ccfd5][_0x30d79f(0x33a)]+_0x2a8cbf(0x2ac)+_0xb72cf3[0x0][_0x2a8cbf(0x4d9)][_0x30d79f(0x1e4)][_0x5ccfd5]['FileName']+_0x30d79f(0x3c8)+_0xb72cf3[0x0]['ID']+_0x30d79f(0x26b)+_0xb72cf3[0x0]['ID']+_0x30d79f(0x498)+_0xb72cf3[0x0]['ID']+'-'+_0x5ccfd5+_0x30d79f(0x673)+_0xb72cf3[0x0][_0x30d79f(0x526)][_0x30d79f(0x1e4)][_0x5ccfd5]['FileName']+_0x30d79f(0x61b);}$(_0x30d79f(0x3a8))[_0x2a8cbf(0x446)](_0x4844ec);}}else $(_0x30d79f(0x364))[_0x2a8cbf(0x51f)]();});}function DeleteAttachment(_0x2fb910,_0x4ef4b6){var _0x3ea160=a90_0x13126d,_0x26f198=_0x4ce28e,_0x5bfbe3=$[_0x26f198(0x5a7)](),_0x103793=_0x2fb910[_0x26f198(0x288)]('-'),_0x3a3f88=$('#'+_0x2fb910)[_0x26f198(0x1a0)](_0x3ea160(0x3cd)),_0x23bc51=_spPageContextInfo[_0x26f198(0x229)]+_0x3ea160(0x576)+_0x103793[0x0]+_0x26f198(0x35b)+_0x3a3f88+_0x26f198(0x631);return $[_0x26f198(0x42c)]({'url':_0x23bc51,'type':_0x26f198(0x473),'contentType':'application/json;odata=verbose','headers':{'X-RequestDigest':$(_0x26f198(0x57c))[_0x3ea160(0x1ea)](),'X-HTTP-Method':_0x3ea160(0x2c7),'Accept':_0x26f198(0x4b9)},'success':function(_0x1b21fa){var _0x284cf1=_0x26f198;_0x5bfbe3[_0x284cf1(0x321)](_0x1b21fa),$('.'+_0x2fb910)[_0x284cf1(0x3f3)](),$('#'+_0x2fb910)['hide']();},'error':function(_0x2bc0cd){var _0x5ef72b=_0x26f198;_0x5bfbe3[_0x5ef72b(0x2f3)](JSON[_0x5ef72b(0x1a4)](_0x2bc0cd)),console[_0x5ef72b(0x403)](_0x2bc0cd);}}),_0x5bfbe3[_0x26f198(0x297)]();}function UpdateEditComment(_0x4617fe){var _0x2a19a5=a90_0x13126d,_0x4bfddf=_0x4ce28e,_0x45729a={'__metadata':{'type':_0x4bfddf(0x24b)},'Comments':$(_0x2a19a5(0x58e))[_0x4bfddf(0x678)]()};$[_0x4bfddf(0x3a9)](updateItemWithIDItemListDocuments(_0x4bfddf(0x661),_0x45729a,_0x4617fe,_spPageContextInfo[_0x4bfddf(0x229)],![]))[_0x4bfddf(0x577)](function(_0x5b0b49){var _0x278169=_0x2a19a5,_0x45621e=_0x4bfddf;FinalFiles4Upload[_0x45621e(0x4a1)]>0x0?Edituploadattachment(_0x4617fe):RetriveUpdateData(_0x4617fe),alert(_0x45621e(0x57d)),$(_0x45621e(0x4ec)+_0x4617fe)[_0x45621e(0x678)]($(_0x45621e(0x42a))[_0x278169(0x41c)]()),FileCommentType=_0x45621e(0x33b),$(_0x45621e(0x235))[_0x45621e(0x314)](),$(_0x45621e(0x3a8))[_0x45621e(0x314)](),$(_0x45621e(0x364))[_0x45621e(0x314)]();});}function Edituploadattachment(_0x4239e5){var _0x294b07=a90_0x13126d,_0x3ba862=_0x4ce28e,_0x1e631d=$(_0x3ba862(0x57c))[_0x3ba862(0x419)](),_0x4a3ccf=0x0;FinalFiles4Upload[_0x294b07(0x1d9)]>0x0&&$[_0x3ba862(0x200)](FinalFiles4Upload,function(_0x169f31,_0x30cf6b){var _0x29dac5=_0x3ba862;getFileBuffer(_0x30cf6b)[_0x29dac5(0x3f8)](function(_0x355cda){var _0x48e300=a90_0x41e7,_0x47a965=_0x29dac5,_0x4f8037=_0x30cf6b[_0x48e300(0x23b)],_0x2f3773=_0x4f8037[_0x47a965(0x4e2)](/[^.a-zA-Z0-9]/ig,'');$[_0x47a965(0x42c)]({'url':_spPageContextInfo[_0x47a965(0x229)]+_0x47a965(0x30b)+_0x4239e5+_0x47a965(0x383)+_0x2f3773+'\x27)','method':_0x47a965(0x1bb),'data':_0x355cda,'async':!![],'processData':![],'headers':{'Accept':_0x48e300(0x3c6),'content-type':'application/json;odata=verbose','X-RequestDigest':_0x1e631d},'success':function(_0x369419){var _0x388be0=_0x48e300;_0x4a3ccf=_0x4a3ccf+0x1,_0x4a3ccf==FinalFiles4Upload[_0x388be0(0x1d9)]&&RetriveUpdateData(_0x4239e5);},'error':function(_0x47cf2b){var _0x57b753=_0x48e300,_0x128513=_0x47a965;console[_0x57b753(0x41a)](_0x47cf2b['responseText'][_0x128513(0x38d)]);}});});});}function DeleteComments(_0x464838){var _0x1c3123=a90_0x13126d,_0x25081e=_0x4ce28e;confirm(_0x25081e(0x3c6))&&$[_0x1c3123(0x21a)]({'url':_spPageContextInfo[_0x25081e(0x229)]+_0x25081e(0x269)+_0x464838+')','type':_0x25081e(0x1bb),'async':!![],'headers':{'X-RequestDigest':$(_0x1c3123(0x30d))[_0x25081e(0x419)](),'IF-MATCH':'*','X-HTTP-Method':_0x1c3123(0x2c7)},'success':function(_0x186fa3,_0x27429c,_0xb927ac){var _0x4c6fab=_0x1c3123,_0x352abd=_0x25081e;$(_0x4c6fab(0x3c8)+_0x464838)[_0x352abd(0x3f3)](),$(_0x352abd(0x17d))[_0x352abd(0x340)](parseInt($(_0x352abd(0x17d))[_0x352abd(0x340)]())-0x1);},'error':function(_0x135116,_0x3fd3bf,_0x3fadeb){var _0x30b2a3=_0x25081e;return alert(data[_0x30b2a3(0x32f)][_0x30b2a3(0x38d)]),![];}});}function RetriveUpdateData(_0x571728){var _0x54d2c3=a90_0x13126d,_0x113ec2=_0x4ce28e,_0x171e9d=_0x113ec2(0x518)+_0x571728+_0x113ec2(0x417);$[_0x54d2c3(0x186)](getItemsWithQuery(_0x54d2c3(0x391),_0x171e9d,_spPageContextInfo[_0x54d2c3(0x215)]))['done'](function(_0x2f5526){var _0x3bed3d=_0x54d2c3,_0x50d029=_0x113ec2;if(_0x2f5526[_0x50d029(0x4a1)]>0x0){$(_0x50d029(0x4ec)+_0x2f5526[0x0]['ID'])[_0x50d029(0x678)](_0x2f5526[0x0][_0x50d029(0x4db)]),$(_0x50d029(0x197)+_0x2f5526[0x0]['ID'])[_0x50d029(0x314)]();if(_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x50d029(0x1e4)][_0x3bed3d(0x1d9)]>0x0){var _0x2a8a09='';for(var _0x11ba8b=0x0;_0x11ba8b<_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x50d029(0x1e4)][_0x50d029(0x4a1)];_0x11ba8b++){if(_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)][_0x50d029(0x189)](_0x50d029(0x563))!=-0x1)_0x2a8a09=_0x2a8a09+_0x3bed3d(0x63e)+_0x2f5526[0x0][_0x50d029(0x526)]['results'][_0x11ba8b][_0x50d029(0x33a)]+_0x3bed3d(0x404)+_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)]+_0x50d029(0x2aa)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x3bed3d(0x238)]+_0x3bed3d(0x598);else{if(_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x3bed3d(0x3ed)][_0x50d029(0x189)](_0x50d029(0x6af))!=-0x1)_0x2a8a09=_0x2a8a09+_0x50d029(0x1ad)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x33a)]+_0x3bed3d(0x404)+_0x2f5526[0x0][_0x50d029(0x526)][_0x3bed3d(0x55c)][_0x11ba8b][_0x50d029(0x4b4)]+_0x50d029(0x2aa)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x330);else{if(_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)][_0x50d029(0x189)](_0x50d029(0x3f7))!=-0x1||_0x2f5526[0x0][_0x50d029(0x526)][_0x3bed3d(0x55c)][_0x11ba8b][_0x3bed3d(0x3ed)][_0x50d029(0x189)](_0x50d029(0x6c1))!=-0x1)_0x2a8a09=_0x2a8a09+_0x50d029(0x4c4)+_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x3bed3d(0x55c)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x690)+_0x2f5526[0x0][_0x50d029(0x526)][_0x3bed3d(0x55c)][_0x11ba8b][_0x50d029(0x4b4)]+_0x50d029(0x2aa)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x330);else _0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x3bed3d(0x3ed)][_0x3bed3d(0x4dc)](_0x50d029(0x2ae))!=-0x1||_0x2f5526[0x0][_0x50d029(0x526)][_0x3bed3d(0x55c)][_0x11ba8b][_0x50d029(0x4b4)][_0x50d029(0x189)](_0x50d029(0x2ac))!=-0x1||_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x50d029(0x1e4)][_0x11ba8b][_0x3bed3d(0x3ed)][_0x50d029(0x189)](_0x50d029(0x555))!=-0x1||_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)][_0x3bed3d(0x4dc)](_0x50d029(0x4e6))!=-0x1||_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)][_0x50d029(0x189)]('PNG')!=-0x1?_0x2a8a09=_0x2a8a09+_0x50d029(0x58c)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x63c)+_0x2f5526[0x0][_0x3bed3d(0x4d9)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x4b4)]+_0x50d029(0x5e9):_0x2a8a09=_0x2a8a09+_0x50d029(0x1d6)+_0x2f5526[0x0][_0x50d029(0x526)][_0x50d029(0x1e4)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x690)+_0x2f5526[0x0]['AttachmentFiles'][_0x50d029(0x1e4)][_0x11ba8b][_0x3bed3d(0x3ed)]+_0x3bed3d(0x25b)+_0x2f5526[0x0][_0x50d029(0x526)][_0x3bed3d(0x55c)][_0x11ba8b][_0x50d029(0x33a)]+_0x50d029(0x330);}}}$(_0x50d029(0x197)+_0x2f5526[0x0]['ID'])[_0x50d029(0x693)](_0x2a8a09);}}});}function checkLikeCommentUser(_0x734d70){var _0x23b4fd=_0x4ce28e,_0x14afb6=0x0,_0x3d39df=_0x23b4fd(0x3b0)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x23b4fd(0x359))[_0x23b4fd(0x340)]())+_0x23b4fd(0x58a)+_0x734d70+_0x23b4fd(0x451)+_spPageContextInfo[_0x23b4fd(0x3fb)]+'\x27';return $[_0x23b4fd(0x3a9)](getItemsWithQuery(_0x23b4fd(0x661),_0x3d39df,_spPageContextInfo[_0x23b4fd(0x229)]))[_0x23b4fd(0x577)](function(_0x5ebc21){var _0x3db6d5=_0x23b4fd;_0x14afb6=_0x5ebc21['length'],_0x5ebc21[_0x3db6d5(0x4a1)]>0x0&&(textValue=_0x3db6d5(0x5f4));}),_0x14afb6;}function Pushlikeforcomment(_0x19747a){var _0x234f42=a90_0x13126d,_0x3d539e=_0x4ce28e,_0x35d7ef=new Date(),_0x5065b0=_0x35d7ef[_0x3d539e(0x682)](),_0x8a14b3=CopyLibrary;$(_0x234f42(0x521))['css'](_0x3d539e(0x418))==_0x3d539e(0x1f5)&&(_0x8a14b3=CheckLibary);var _0x462cc5=_0x3d539e(0x323)+_spPageContextInfo[_0x3d539e(0x3fb)]+_0x234f42(0x1a5)+DocumentId+_0x234f42(0x417)+encodeURIComponent($(_0x3d539e(0x359))[_0x3d539e(0x340)]())+_0x3d539e(0x5e0)+_0x19747a+_0x3d539e(0x677);$[_0x3d539e(0x3a9)](getItemsWithQuery(_0x3d539e(0x661),_0x462cc5,_spPageContextInfo[_0x3d539e(0x229)]))[_0x3d539e(0x577)](function(_0x44547b){var _0x1ec27b=_0x234f42,_0x40cac9=_0x3d539e;if(_0x44547b[_0x40cac9(0x4a1)]>0x0){if(_0x44547b[0x0][_0x1ec27b(0x416)]=='No'){var _0x35cee5=$(_0x1ec27b(0x3fa)+_0x19747a)[_0x40cac9(0x340)]();$(_0x40cac9(0x381)+_0x19747a)[_0x40cac9(0x340)](parseInt(_0x35cee5)+0x1),parseInt(_0x35cee5)+0x1>0x0?$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)](_0x40cac9(0x418),_0x1ec27b(0x49e)):$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)](_0x40cac9(0x418),_0x40cac9(0x1f5));var _0x36923d=_0x40cac9(0x661),_0x4a3c8b={'__metadata':{'type':_0x40cac9(0x3c5)+_0x36923d+_0x40cac9(0x3d9)},'LikeComment':_0x40cac9(0x493),'LikeCount':parseInt(_0x44547b[0x0][_0x40cac9(0x699)])+0x1};DocCommentUpdate(_0x36923d,_0x4a3c8b,_0x44547b[0x0]['ID']);}else{if(_0x44547b[0x0][_0x1ec27b(0x416)]==_0x40cac9(0x493)){var _0x35cee5=$(_0x40cac9(0x381)+_0x19747a)[_0x40cac9(0x340)]();$(_0x40cac9(0x381)+_0x19747a)[_0x40cac9(0x340)](parseInt(_0x35cee5)-0x1),parseInt(_0x35cee5)-0x1>0x0?$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)](_0x40cac9(0x418),'inline-block'):$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)](_0x40cac9(0x418),'none');var _0x36923d=_0x40cac9(0x661),_0x4a3c8b={'__metadata':{'type':_0x40cac9(0x3c5)+_0x36923d+_0x40cac9(0x3d9)},'LikeComment':'No','LikeCount':parseInt(_0x44547b[0x0][_0x40cac9(0x699)])-0x1},_0x41b695=DocCommentUpdate(_0x36923d,_0x4a3c8b,_0x44547b[0x0]['ID']);}else{if(_0x44547b[0x0]['LikeComment']==null){var _0x35cee5=$(_0x40cac9(0x381)+_0x19747a)[_0x1ec27b(0x1ca)]();$(_0x40cac9(0x381)+_0x19747a)[_0x1ec27b(0x1ca)](parseInt(_0x35cee5)+0x1),parseInt(_0x35cee5)+0x1>0x0?$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)]('display',_0x40cac9(0x36e)):$(_0x40cac9(0x5d9)+_0x19747a)[_0x40cac9(0x247)](_0x1ec27b(0x21e),_0x1ec27b(0x555));var _0x36923d='DocumentComments',_0x4a3c8b={'__metadata':{'type':_0x40cac9(0x3c5)+_0x36923d+_0x1ec27b(0x24a)},'LikeComment':_0x1ec27b(0x197),'LikeCount':parseInt(_0x44547b[0x0][_0x40cac9(0x699)])+0x1},_0x41b695=DocCommentUpdate(_0x36923d,_0x4a3c8b,_0x44547b[0x0]['ID']);}}}}else{var _0x35cee5=$(_0x40cac9(0x381)+_0x19747a)[_0x40cac9(0x340)]();$(_0x40cac9(0x381)+_0x19747a)[_0x40cac9(0x340)](parseInt(_0x35cee5)+0x1),parseInt(_0x35cee5)+0x1>0x0?$(_0x1ec27b(0x517)+_0x19747a)[_0x40cac9(0x247)](_0x40cac9(0x418),_0x40cac9(0x36e)):$(_0x40cac9(0x5d9)+_0x19747a)[_0x1ec27b(0x2ef)](_0x40cac9(0x418),_0x40cac9(0x1f5));var _0x36923d=_0x40cac9(0x661),_0x4a3c8b={'__metadata':{'type':_0x40cac9(0x3c5)+_0x36923d+_0x40cac9(0x3d9)},'LikeComment':_0x40cac9(0x493),'LikeCommentID':_0x19747a[_0x1ec27b(0x62d)](),'Title':$('#FileName')[_0x1ec27b(0x1ca)](),'EmployeeId':parseInt(_spPageContextInfo[_0x40cac9(0x2b0)]),'DocumentId':parseInt(DocumentId),'FileName':$(_0x1ec27b(0x20c))[_0x40cac9(0x340)](),'DocumentTitle':$(_0x40cac9(0x2a5))[_0x40cac9(0x340)](),'FileCategory':$(_0x40cac9(0x2d6))[_0x40cac9(0x340)](),'LibraryURL':CommentSiteURL,'ServerSiteURL':$(_0x40cac9(0x2e6))[_0x40cac9(0x340)](),'LikeCount':0x1,'LibraryName':_0x8a14b3};AddDocComments(_0x36923d,_0x4a3c8b);}});}function formatDateComment(_0xaeeb94){var _0x2d0201=a90_0x13126d,_0x35934f=_0x4ce28e,_0x19b10c=new Date(_0xaeeb94);if(isNaN(_0x19b10c['getTime']()))return _0xaeeb94;else{var _0x2eb8fe=new Array();return _0x2eb8fe[0x0]=_0x35934f(0x49c),_0x2eb8fe[0x1]=_0x35934f(0x52f),_0x2eb8fe[0x2]=_0x35934f(0x6df),_0x2eb8fe[0x3]=_0x35934f(0x43d),_0x2eb8fe[0x4]=_0x35934f(0x2fd),_0x2eb8fe[0x5]=_0x35934f(0x6a7),_0x2eb8fe[0x6]=_0x35934f(0x6d3),_0x2eb8fe[0x7]=_0x35934f(0x402),_0x2eb8fe[0x8]=_0x35934f(0x4da),_0x2eb8fe[0x9]=_0x2d0201(0x552),_0x2eb8fe[0xa]=_0x2d0201(0x3c9),_0x2eb8fe[0xb]=_0x2d0201(0x221),day=_0x19b10c[_0x35934f(0x59a)](),day<0xa&&(day='0'+day),day+'\x20'+_0x2eb8fe[_0x19b10c[_0x35934f(0x480)]()];}}function getTotalViewCount(){var _0x3300e6=_0x4ce28e;getTotalLikes();var _0x59a189='',_0x138086=_0x3300e6(0x6a3)+DocumentId+'\x27\x20and\x20FileName\x20eq\x20\x27'+encodeURIComponent($(_0x3300e6(0x359))[_0x3300e6(0x340)]())+_0x3300e6(0x61c);$[_0x3300e6(0x3a9)](getItemsWithQuery(_0x3300e6(0x661),_0x138086,_spPageContextInfo[_0x3300e6(0x229)]))[_0x3300e6(0x577)](function(_0x44be5f){var _0x4ff38c=a90_0x41e7,_0x5484d9=_0x3300e6;$(_0x5484d9(0x41b))[_0x5484d9(0x340)](_0x44be5f[_0x5484d9(0x4a1)]);if(_0x44be5f[_0x5484d9(0x4a1)]>0x0){for(var _0x1f3262=0x0;_0x1f3262<_0x44be5f['length'];_0x1f3262++){attachment=_spPageContextInfo[_0x5484d9(0x229)]+_0x5484d9(0x415)+escapeProperly(_0x44be5f[_0x1f3262][_0x5484d9(0x6a8)][_0x5484d9(0x4c0)]),_0x59a189=_0x59a189+_0x5484d9(0x5af)+_0x5484d9(0x6d9)+attachment+_0x4ff38c(0x310)+_0x5484d9(0x1bf)+_0x5484d9(0x371)+_0x44be5f[_0x1f3262][_0x5484d9(0x6a8)][_0x5484d9(0x664)]+_0x5484d9(0x242)+_0x4ff38c(0x579)+'</li>';}$(_0x5484d9(0x5e8))[_0x5484d9(0x314)]()[_0x5484d9(0x693)](_0x59a189);}else _0x59a189=_0x59a189+_0x4ff38c(0x213)+_0x5484d9(0x491)+_0x5484d9(0x5a2)+_0x5484d9(0x441)+'</li>',$(_0x5484d9(0x5e8))[_0x5484d9(0x314)]()[_0x5484d9(0x693)](_0x59a189);});}function getTotalLikes(){var _0x32692f=a90_0x13126d,_0x496076=_0x4ce28e,_0x3431ec='',_0x10ece6=_0x496076(0x21d)+DocumentId+_0x32692f(0x417)+encodeURIComponent($('#FileName')[_0x496076(0x340)]())+_0x32692f(0x239);$[_0x496076(0x3a9)](getItemsWithQuery(_0x32692f(0x391),_0x10ece6,_spPageContextInfo[_0x496076(0x229)]))[_0x496076(0x577)](function(_0x3919a9){var _0x448984=_0x32692f,_0x1dc787=_0x496076;$(_0x1dc787(0x61d))[_0x1dc787(0x340)](_0x3919a9[_0x448984(0x1d9)]);if(_0x3919a9[_0x1dc787(0x4a1)]>0x0){for(var _0x854272=0x0;_0x854272<_0x3919a9[_0x1dc787(0x4a1)];_0x854272++){attachment=_spPageContextInfo[_0x1dc787(0x229)]+_0x1dc787(0x415)+escapeProperly(_0x3919a9[_0x854272][_0x1dc787(0x222)]['EMail']),_0x3431ec=_0x3431ec+_0x1dc787(0x5af)+_0x1dc787(0x6d9)+attachment+_0x1dc787(0x497)+_0x448984(0x682)+'<h4>'+_0x3919a9[_0x854272][_0x1dc787(0x222)][_0x448984(0x55a)]+_0x1dc787(0x242)+_0x1dc787(0x441)+_0x1dc787(0x50d);}$(_0x448984(0x17e))[_0x1dc787(0x314)]()[_0x1dc787(0x693)](_0x3431ec);}else _0x3431ec=_0x3431ec+_0x448984(0x213)+_0x448984(0x62a)+_0x1dc787(0x462)+_0x1dc787(0x441)+_0x448984(0x1d8),$(_0x1dc787(0x635))[_0x1dc787(0x314)]()['append'](_0x3431ec);});}function TriggerLikes(){var _0x1557f9=a90_0x13126d,_0x97c9ee=_0x4ce28e,_0x3505f8='?$filter=((Author/EMail\x20eq\x20(\x27'+_spPageContextInfo[_0x97c9ee(0x3fb)]+_0x1557f9(0x1a5)+DocumentId+_0x97c9ee(0x385)+encodeURIComponent($(_0x97c9ee(0x359))[_0x97c9ee(0x340)]())+_0x97c9ee(0x56c);$[_0x97c9ee(0x3a9)](getItemsWithQuery(_0x97c9ee(0x661),_0x3505f8,_spPageContextInfo[_0x1557f9(0x215)]))[_0x1557f9(0x21b)](function(_0x5576e2){var _0xb178f6=_0x1557f9,_0x35b60f=_0x97c9ee,_0x1b0284=_0x35b60f(0x661);if(_0x5576e2[_0x35b60f(0x4a1)]>0x0){if(_0x5576e2[0x0][_0x35b60f(0x2d9)]=='No')var _0x26e52d={'__metadata':{'type':_0x35b60f(0x3c5)+_0x1b0284+_0x35b60f(0x3d9)},'Like':_0x35b60f(0x493),'LikeById':parseInt(_spPageContextInfo[_0x35b60f(0x2b0)])},_0x4e9782=DocCommentUpdate(_0x1b0284,_0x26e52d,_0x5576e2[0x0]['ID']);else{if(_0x5576e2[0x0]['Like']==_0xb178f6(0x197))var _0x26e52d={'__metadata':{'type':_0x35b60f(0x3c5)+_0x1b0284+_0xb178f6(0x24a)},'Like':'No','LikeById':parseInt(_spPageContextInfo[_0x35b60f(0x2b0)])},_0x4e9782=DocCommentUpdate(_0x1b0284,_0x26e52d,_0x5576e2[0x0]['ID']);}var _0x1fcb48=_0x35b60f(0x21d)+DocumentId+_0x35b60f(0x385)+encodeURIComponent($(_0x35b60f(0x359))[_0x35b60f(0x340)]())+_0x35b60f(0x283);$[_0x35b60f(0x3a9)](getItemsWithQuery(_0xb178f6(0x391),_0x1fcb48,_spPageContextInfo[_0x35b60f(0x229)]))[_0x35b60f(0x577)](function(_0x13a9d5){var _0x183854=_0xb178f6,_0x1d6bc8=_0x35b60f;if(_0x13a9d5[_0x1d6bc8(0x4a1)]>0x0){$(_0x1d6bc8(0x61d))[_0x1d6bc8(0x340)](_0x13a9d5[_0x183854(0x1d9)]),$(_0x1d6bc8(0x635))[_0x183854(0x51f)]();var _0x5bd3e1='';for(var _0x24a8e5=0x0;_0x24a8e5<_0x13a9d5[_0x1d6bc8(0x4a1)];_0x24a8e5++){attachment=_spPageContextInfo[_0x1d6bc8(0x229)]+_0x1d6bc8(0x415)+escapeProperly(_0x13a9d5[_0x24a8e5][_0x1d6bc8(0x222)][_0x183854(0x3c1)]),_0x5bd3e1=_0x5bd3e1+_0x1d6bc8(0x5af)+_0x1d6bc8(0x6d9)+attachment+_0x1d6bc8(0x497)+_0x1d6bc8(0x1bf)+_0x183854(0x5c0)+_0x13a9d5[_0x24a8e5][_0x1d6bc8(0x222)][_0x183854(0x55a)]+_0x1d6bc8(0x242)+_0x1d6bc8(0x441)+_0x1d6bc8(0x50d);}$(_0x183854(0x17e))[_0x1d6bc8(0x693)](_0x5bd3e1);}else $(_0x1d6bc8(0x61d))[_0x183854(0x1ca)]('0'),$(_0x1d6bc8(0x635))[_0x1d6bc8(0x314)]();});}$(_0x35b60f(0x397))[_0x35b60f(0x1a0)](_0x35b60f(0x233))==_0x35b60f(0x28a)||$('.like-img')[_0x35b60f(0x1a0)](_0xb178f6(0x3e1))[_0x35b60f(0x3cc)](_0xb178f6(0x4f6))==!![]?$(_0xb178f6(0x582))[_0xb178f6(0x3e0)](_0x35b60f(0x233),'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'):$(_0x35b60f(0x225))[_0x35b60f(0x1a0)](_0x35b60f(0x233),_0x35b60f(0x28a)),$(_0x35b60f(0x416))['hasClass'](_0x35b60f(0x4e1))==!![]&&$(_0x35b60f(0x61d))[_0x35b60f(0x612)](_0x35b60f(0x382));});}function ActiveReplyCtrl(_0x23bfcc){var _0xe28ef9=a90_0x13126d,_0x4b8f48=_0x4ce28e;FileCommentType=_0x4b8f48(0x2e3);var _0x2906e8='?$select=*&$filter=ID\x20eq\x20\x27'+_0x23bfcc+'\x27';$[_0xe28ef9(0x186)](getItemsWithQuery(_0x4b8f48(0x661),_0x2906e8,_spPageContextInfo[_0x4b8f48(0x229)]))[_0x4b8f48(0x577)](function(_0x23be72){var _0x224657=_0xe28ef9,_0x526b1b=_0x4b8f48;_0x23be72[_0x526b1b(0x4a1)]>0x0&&($(_0x224657(0x18f))[_0x526b1b(0x678)](_0x23be72[0x0][_0x526b1b(0x41c)]),$(_0x526b1b(0x459))[_0x526b1b(0x1a0)](_0x526b1b(0x447),_0x23be72[0x0][_0x526b1b(0x41c)]),_0x23be72[0x0][_0x224657(0x1fb)]==_0x526b1b(0x2e3)?$(_0x224657(0x34b))[_0x526b1b(0x340)](_0x23be72[0x0][_0x526b1b(0x5b8)]):$(_0x526b1b(0x35a))[_0x526b1b(0x340)]($(_0x526b1b(0x1c4)+_0x23bfcc)[_0x526b1b(0x340)]()));}),$(_0x4b8f48(0x4c3))[_0x4b8f48(0x6ea)]();}function DeActiveReplyControl(){var _0x70dc3a=a90_0x13126d,_0x395e0e=_0x4ce28e;FileCommentType=_0x395e0e(0x33b),$(_0x70dc3a(0x4ce))[_0x70dc3a(0x39a)](),$(_0x395e0e(0x364))[_0x395e0e(0x314)](),$(_0x395e0e(0x235))[_0x395e0e(0x314)]();}function GetAllLikesComment(_0x1d85ae){var _0x40159b=a90_0x13126d,_0x267b36=_0x4ce28e,_0xc07491=_0x267b36(0x51c)+DocumentId+_0x40159b(0x417)+encodeURIComponent($(_0x267b36(0x359))[_0x267b36(0x340)]())+_0x40159b(0x4b2)+_0x1d85ae+'\x27';$[_0x267b36(0x3a9)](getItemsWithQuery(_0x267b36(0x661),_0xc07491,_spPageContextInfo[_0x267b36(0x229)]))[_0x267b36(0x577)](function(_0x2ef0f8){var _0x5c3eac=_0x40159b,_0x92ccfe=_0x267b36;if(_0x2ef0f8[_0x92ccfe(0x4a1)]>0x0){$(_0x5c3eac(0x5b6))['empty']();var _0x4a7089='';for(var _0x22e321=0x0;_0x22e321<_0x2ef0f8[_0x5c3eac(0x1d9)];_0x22e321++){attachment=_spPageContextInfo[_0x92ccfe(0x229)]+_0x92ccfe(0x415)+escapeProperly(_0x2ef0f8[_0x22e321][_0x92ccfe(0x2f7)][_0x92ccfe(0x4c0)]),_0x4a7089=_0x4a7089+_0x5c3eac(0x213)+_0x92ccfe(0x6d9)+attachment+_0x92ccfe(0x497)+'<div\x20class=\x27like-user-name\x27>'+_0x92ccfe(0x371)+_0x2ef0f8[_0x22e321][_0x92ccfe(0x2f7)][_0x5c3eac(0x55a)]+_0x5c3eac(0x3bb)+_0x5c3eac(0x579)+_0x92ccfe(0x50d);}$(_0x92ccfe(0x37b))[_0x92ccfe(0x693)](_0x4a7089);}else $(_0x92ccfe(0x37b))[_0x92ccfe(0x314)]();$(_0x92ccfe(0x5e4))[_0x92ccfe(0x195)](_0x92ccfe(0x599));});}function DocCommentUpdate(_0x5c1751,_0x1d21ad,_0x3c6e65){var _0xd20abe=a90_0x13126d,_0x47691a=_0x4ce28e,_0x3b389e='';return $[_0x47691a(0x42c)]({'url':_spPageContextInfo[_0x47691a(0x229)]+_0x47691a(0x3e3)+_0x5c1751+_0xd20abe(0x513)+_0x3c6e65+'\x27)','type':_0x47691a(0x1bb),'async':![],'data':JSON[_0x47691a(0x1a4)](_0x1d21ad),'headers':{'Accept':_0x47691a(0x4b9),'Content-Type':_0x47691a(0x4b9),'X-RequestDigest':$(_0xd20abe(0x30d))[_0x47691a(0x419)](),'IF-MATCH':'*','X-HTTP-Method':_0x47691a(0x5c3)},'success':function(_0xcdf8f5){var _0x3ba62a=_0x47691a;console['log'](_0x3ba62a(0x61a)),_0x3b389e=_0xcdf8f5;},'error':function(_0x19be2c){var _0x76150=_0xd20abe,_0x1400e2=_0x47691a;_0x3b389e=_0x19be2c,console[_0x1400e2(0x403)](_0x19be2c),alert(_0x76150(0x387));}}),_0x3b389e;}
+var currentSectionType = '';
+var DMS_Type = '';
+var DMS_Link = '';
+var arrFileFolder = [];
+var arrFilterTable = [];
+var Documentname = '';
+var CheckLibary = '';
+var IsNotpermission = false;
+var IsFullControl = false;
+var IsContributor = false;
+var IsdeleteListItems = false;
+var arrCurrentColumns = [];
+var MyDoctable = '';
+var CopySourceURL = '';
+var Filepath = ""
+var IsStopInheritancePermissions = false;
+var DocumentId = '';
+var SelectedFileServerURL = '';
+var CopyLibrary = '';
+var arrPermission = [];
+var FinalFiles4Upload = [];
+var FinalFoldersUpload = [];
+var FailDueToCheckOut = 0;
+var DocUrlCollection = [];
+var arrCustomCol = [];
+var arrCustomColFilter = [];
+var IntervalId = '';
+var AllApprovers = [];
+var to = [];
+var RequestDigest = $("#__REQUESTDIGEST").val();
+var OldFileName = '';
+var arrMandatoryCols = [];
+var bytesToMegaBytes = bytes => bytes / (1024 ** 2); //Convert bytes to MB
+var TotalSize = 0;
+var finalFiles = [];
+var Tcounter = 0;
+var FileCommentType = "Parent";
+var FileCommentResponse= FileCommentResponse || [];
+var getLatestMsgId = '';
+var ModifyRecId = '';
+var cmntIcon="";
+$(document).ready(function () {
+	//Designer methods starts -- Saurav ---------------------------------------------------------------
+	// Toggle left menu //<!-- DMS left sidebar active toggle -->
+	$("#menuIconBox").click(function () {
+        $("#menuIconBox").toggleClass("menu-icon-active");
+        $(".tab-col").toggleClass("main-menu-panel");
+        $(".deta-col").toggleClass("main-deta-panel");
+    });
+    $(".dms-left-panel-tab").click(function () {
+        $(".dms-left-panel-tab").removeClass("dms-left-panel-tab-active");
+        $(this).addClass("dms-left-panel-tab-active");
+    });
+    $(".panel").click(function () {
+        $(".panel").removeClass("active");
+        $(this).addClass("active");
+    });
+    $(".dms-left-panel-tab-inner").click(function () {
+        $(".dms-left-panel-tab-inner").removeClass("dms-left-panel-tab-active-inner");
+        $(this).addClass("dms-left-panel-tab-active-inner");
+    });
+    //Designer methods Ends -- Saurav -------------------------------------------------------------------
+     $('#expiredon').click(function () {//on 10 March 23
+        $('#expiredats').addClass('activating');
+    });
+
+    $('#forever').click(function () {//on 10 March 23
+        $('#expiredats').removeClass('activating');
+        $("#expiredats").val('');
+    });
+    $(".dms-table-btn").click(function () {
+        $(".dms-table-btn").removeClass("dms-table-btn-active");
+        $(this).addClass("dms-table-btn-active");
+    });
+    userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+    $('.GuestMyDocTab').click(function () {
+        currentSectionType = 'GuestDocuments';
+        $(".advance_setion").hide();
+		$("#DMSTable,#ButtonArea,#SearchArea").show();
+        waitingDialog.show();
+        setTimeout(function () {
+            onloadGetItem();
+        }, 100);
+    });
+    $('#btnAddFolder').click(function () {
+        waitingDialog.show();
+        setTimeout(function () {
+            CreateFolder(this);
+        }, 100);
+    });
+    $('#createWordFile').click(function () {
+    	$("#NewFileExtension").text(".docx");
+    	$("#txtNewFileName").val('');
+    	$("#dms-creat-file").modal("show");
+    	$("#txtAddFileTitle").val('');
+        $("#txtAddFileRef").val('');
+        $("#ddlAddFileCateg").val('-Select-');
+        $("#txtAddFileAuth").val(_spPageContextInfo.userDisplayName);
+        $("#txtAddFileDetails").val('');
+        $("#ddlAddFileSubC").empty().append('<option value="-Select-">-Select-</option>');
+    	if ($('#ddlAddFileCateg option').length == 0) {
+            BindDMSDocumentType();
+        };
+        $(".MandSignAddF").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#astAddFile"+arrMandatoryCols[i]).show();
+            }
+        }
+        //CreatDocfromTemplateWordFile();
+    });
+    $('#createExcelFile').click(function () {
+    	$("#NewFileExtension").text(".xlsx");
+    	$("#txtNewFileName").val('');
+    	$("#dms-creat-file").modal("show");
+    	$("#txtAddFileTitle").val('');
+        $("#txtAddFileRef").val('');
+        $("#ddlAddFileCateg").val('-Select-');
+        $("#txtAddFileAuth").val(_spPageContextInfo.userDisplayName);
+        $("#txtAddFileDetails").val('');
+        $("#ddlAddFileSubC").empty().append('<option value="-Select-">-Select-</option>');
+		$(".MandSignAddF").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#astAddFile"+arrMandatoryCols[i]).show();
+            }
+        }
+
+    	if ($('#ddlAddFileCateg option').length == 0) {
+            BindDMSDocumentType();
+        };
+        //CreatDocfromTemplateExcelFile();
+    });
+    $('#createPPtFile').click(function () {
+    	//$("#NewFileExtension").text(".ppt");
+        //Bhawana
+        $("#NewFileExtension").text(".pptx");
+    	$("#txtNewFileName").val('');
+    	$("#dms-creat-file").modal("show");
+    	$("#txtAddFileTitle").val('');
+        $("#txtAddFileRef").val('');
+        $("#ddlAddFileCateg").val('-Select-');
+        $("#txtAddFileAuth").val(_spPageContextInfo.userDisplayName);
+        $("#txtAddFileDetails").val('');
+        $("#ddlAddFileSubC").empty().append('<option value="-Select-">-Select-</option>');
+        $(".MandSignAddF").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#astAddFile"+arrMandatoryCols[i]).show();
+            }
+        }
+
+    	if ($('#ddlAddFileCateg option').length == 0) {
+            BindDMSDocumentType();
+        };
+        //CreatDocfromTemplatePPTFile();
+    });
+    $('#createTextFile').click(function () {
+        $("#NewFileExtension").text(".txt");
+        $("#txtNewFileName").val('');
+        $("#dms-creat-file").modal("show");
+        $("#txtAddFileTitle").val('');
+        $("#txtAddFileRef").val('');
+        $("#ddlAddFileCateg").val('-Select-');
+        $("#txtAddFileAuth").val(_spPageContextInfo.userDisplayName);
+        $("#txtAddFileDetails").val('');
+        $("#ddlAddFileSubC").empty().append('<option value="-Select-">-Select-</option>');
+        $(".MandSignAddF").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#astAddFile"+arrMandatoryCols[i]).show();
+            }
+        }
+
+        if ($('#ddlAddFileCateg option').length == 0) {
+            BindDMSDocumentType();
+        };
+        //CreatDocfromTemplateNotebook();
+    });
+    $("#ddlAddFileCateg").change(function () {
+        getSubCategory(this.value, "ddlAddFileSubC");
+    });
+
+    $('#btnCreateFiles').click(function () {
+    	if(AddFileValidate() == true){
+	    	waitingDialog.show();
+	        setTimeout(function () {
+	    		CreateOnlineFile();
+	        }, 100);
+	    }
+	    else {
+	    	alert("Kindly fill the mandatory fields.");
+	    	return false;
+	    }
+    });
+    $('#btnDownloadFiles').click(function () {
+        MultipleFileDownload();
+    });
+    $('#btnMultipleDelete').click(function () {
+        MultipleFileFolderDelete();
+    }); 
+    $("#prefix_and_postfix_name").click(function (e) {
+        if(this.checked == true){
+            $("#txtFileTitle").hide();
+            $(".prefix_and_postfix_name").show();
+        }
+        else {
+            $("#txtFileTitle").show();
+            $(".prefix_and_postfix_name").hide();
+        }
+    });
+    $('#chkReplaceVer').click(function () {
+        $("#chkKeepExist").prop("checked", true);
+        $("#chkKeepExist").prop("disabled", "");
+        $("#chkUploadNew").prop("disabled", "");
+        $(".replaceOptions").show();
+        $(".RenameandUpload").hide();
+    });
+    
+    $('#chkNotUpload').click(function () {
+        $("#chkReplaceVer").attr('checked', '');
+        $("#chkKeepExist").prop("checked", false);
+        $("#chkKeepExist").prop("disabled", "disabled");
+        $("#chkUploadNew").prop("disabled", "disabled");
+        $(".replaceOptions").hide();
+        $("#chkUploadNew").prop("checked", false);
+        $(".RenameandUpload").hide();
+    });
+    $('#RenameandUpload').click(function () {
+        $("#chkReplaceVer").attr('checked', '');
+        $("#chkKeepExist").prop("checked", false);
+        $("#chkKeepExist").prop("disabled", "disabled");
+        $("#chkUploadNew").prop("disabled", "disabled");
+        $(".replaceOptions").hide();
+        $("#chkUploadNew").prop("checked", false);
+        $(".RenameandUpload").show();
+    });
+    $('#RenameandUploadFolder').click(function () {
+        if(this.checked){
+            $(".RenameUploadFolder").show();
+        }
+        else {
+            $(".RenameUploadFolder").hide();
+        }
+    });
+    $("#anchFileUpload").click(function (e) {
+        $("#txtFileTitle").addClass('hidemy');
+        if ($('#ddlFileType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        $(".MandSign").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#ast"+arrMandatoryCols[i]).show();
+            }
+        }
+        $("#FileSubType").empty().append('<option value="-Select-">-Select-</option>');
+        $("#prefix_and_postfix_name").prop('checked', false);
+        $("#txtFileTitle").show();
+        $(".prefix_and_postfix_name").hide();
+        $("#txtNamePostfix").val("_Copy");
+        $("#txtTitlePostfix").val("");
+        $("#txtTitlePrefix").val("");
+        $("#txtNamePrefix").val("");
+        $(".forFileOnly").show();
+        $("#chkUploadMail").prop('checked', '');
+        FinalFiles4Upload = [];
+        FinalFoldersUpload = [];
+        FailDueToCheckOut = 0;
+        $("#txtUploadFiles").empty();
+        $("#txtUploadFiles").hide();
+        $("#txtFileTitle").val('');
+        $("#txtdocumentNo").val('');
+        $("#ddlFileType").val("-Select-");
+        $("#FileAuthor").val(_spPageContextInfo.userDisplayName);
+        $("#UploadFileComment").val('');
+        $("#txtUploadFolder").html('');
+        $("#txtUploadFolder").hide();
+        $("#UploadHeader").text("Upload Files");
+        $("#changeProperties").show();
+        $("#changePropertiesFolder").hide();
+        $("#FileUploadControl").show();
+        $("#FolderUploadControl").hide();
+        $("#AttachAttachmentButton").show();
+        $("#btnFolderAttachment").hide();
+        $("#folderPropertyTag").hide();
+    });
+    $("#anchFolderUpload").click(function (e) {
+        if ($('#ddlFileType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        $(".MandSign").hide();
+        if(currentSectionType != "My Documents"){
+            for (var i = 0; i < arrMandatoryCols.length; i++) {
+                $("#ast"+arrMandatoryCols[i]).show();
+            }
+        }
+        $("#FileSubType").empty().append('<option value="-Select-">-Select-</option>');
+        $("#txtNamePostfixFold").val("_Copy");
+        $("#txtFileTitle").show();
+        $(".prefix_and_postfix_name").hide();
+        $(".forFileOnly").hide();
+        $("#chkUploadMail").prop('checked', '');
+        FinalFiles4Upload = [];
+        FinalFoldersUpload = [];
+        $("#txtFileTitle").val('');
+        $("#txtUploadFiles").empty();
+        $("#txtUploadFiles").hide();
+        $("#txtdocumentNo").val('');
+        $("#ddlFileType").val("-Select-");
+        $("#UploadFileComment").val('');
+        $("#chkFolderProp").prop('checked', '');
+        $("#FileAuthor").val(_spPageContextInfo.userDisplayName);
+        $("#txtUploadFolder").html('');
+        $("#txtUploadFolder").hide();
+        $("#UploadHeader").text("Upload Folder");
+        $("#txtFileTitle").val('');
+        $("#txtdocumentNo").val('');
+        $("#ddlFileType").val("-Select-");
+        $("#UploadFileComment").val('');
+        $("#changeProperties").hide();
+        $("#changePropertiesFolder").show();
+        $("#FileUploadControl").hide();
+        $("#FolderUploadControl").show();
+        $("#AttachAttachmentButton").hide();
+        $("#btnFolderAttachment").show();
+        $("#folderPropertyTag").show();
+    });
+    $("#AttachmentUploadField").on('change', function (e) { //Upload new files
+        var finalFiles = [];
+        var fileNum = this.files.length, initial = 0;
+        $.each(this.files, function (idx, elm) {
+            if(finalFiles.filter( vendor => vendor['name'] === elm.name).length == 0){
+                finalFiles[finalFiles.length] = elm;
+            }
+        });
+        if(FinalFiles4Upload.length == 0) {
+            $('#txtUploadFiles').html('');
+            $("#txtUploadFiles").hide();
+        }
+        finalFiles = ReinitializeArray(finalFiles);
+        FinalFiles4Upload = FinalFiles4Upload.concat(finalFiles);
+        var ChangedfileName = '';
+        var Tcounter = $("#txtUploadFiles").find('.NewFileUpload').length;
+        for (initial; initial < finalFiles.length; initial++) {
+        	$("#txtUploadFiles").show();
+            if (finalFiles[initial].name.length > 15) {
+                Tcounter = Tcounter + 1;
+                ChangedfileName = finalFiles[initial].name.substring(0, 15) + "...";
+                $('#txtUploadFiles').append('<div class="NewFileUpload" title="' + finalFiles[initial].name + '" id="file_' + Tcounter + '"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i></span> ' + ChangedfileName + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn DeletePic" style="color:red;"  onclick="removeLine(this.id, \'' + finalFiles[initial].name + '\');" id="file_' + Tcounter + '"" title="remove"></span></div>');
+            }
+            else {
+                $('#txtUploadFiles').append('<div class="NewFileUpload" title="' + finalFiles[initial].name + '" id="file_' + Tcounter + '"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i></span> ' + finalFiles[initial].name + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn DeletePic" style="color:red;"  onclick="removeLine(this.id, \'' + finalFiles[initial].name + '\');" id="file_' + Tcounter + '"" title="remove"></span></div>');
+            }
+        }
+        $("#AttachmentUploadField").val('');
+    });
+    
+    $("#FolderAttachment").on('change', function (e) { //Upload new folders
+        var finalFolder = [];
+        FinalFoldersUpload = [];
+        var fileNum = this.files.length, initial = 0;
+        $.each(this.files, function (idx, elm) {
+            //if(finalFolder.filter( vendor => vendor['name'] === elm.name).length == 0){
+            finalFolder[finalFolder.length] = elm;
+            //}
+        });
+        if(FinalFoldersUpload.length == 0) {
+            $('#txtUploadFolder').html('');
+            $("#txtUploadFolder").hide();
+        }
+        finalFolder = ReinitializeArray(finalFolder);
+        FinalFoldersUpload = FinalFoldersUpload.concat(finalFolder);
+        var ChangedfolderName = '';	  
+        this.files[0].webkitRelativePath.split('/')[0];
+        $("#txtUploadFolder").show();
+        if (this.files[0].webkitRelativePath.split('/')[0].length > 15) {
+            ChangedfolderName = this.files[0].webkitRelativePath.split('/')[0].substring(0, 15) + "...";
+            $('#txtUploadFolder').empty().append('<div class="NewFolderUpload" title="' + this.files[0].webkitRelativePath.split('/')[0] + '"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i></span> ' + ChangedfolderName + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn DeletePic" style="color:red;" onclick="removeLineFolder(this.id, \'' + this.files[0].webkitRelativePath.split('/')[0] + '\');" title="remove"></span></div>');
+        }
+        else {
+            $('#txtUploadFolder').empty().append('<div class="NewFolderUpload" title="' + this.files[0].webkitRelativePath.split('/')[0] + '"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i></span> ' + this.files[0].webkitRelativePath.split('/')[0] + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn DeletePic" style="color:red;" onclick="removeLineFolder(this.id, \'' + this.files[0].webkitRelativePath.split('/')[0] + '\');" title="remove"></span></div>');
+        }
+        $("#FolderAttachment").val('');
+    });
+    
+    $('#AttachAttachmentButton').click(function () {
+        if(AttachmentValidation() == true){
+        	if(checkFileSize() == true){
+            	saveAttachment();
+            }
+            else {
+            	if(confirm('You are trying to upload ' + TotalSize +' MB file(s). It will take couple of minutes to upload. Do you want to continue ?') == true) {
+            		$("#myModalupload").modal("hide");
+            		OpenLargeUpload();
+            	}
+            	else {
+            		$("#myModalupload").modal("hide");
+            		return false
+            	}
+            }
+        }
+        else {
+            alert("Kindly fill mandatory fields.");
+            return false;
+        }
+    });
+    $('#btnFolderAttachment').click(function () {
+        if(FinalFoldersUpload.length > 0){
+            if(AttachmentValidation() == true){
+                waitingDialog.show();
+                setTimeout(function () {
+                    uploadFolder();
+                }, 100);
+            }
+            else {
+                alert("Kindly fill mandatory fields.");
+                return false;
+            }
+        }
+        else {
+            alert("Please select any folder first.");
+            return false;
+        }
+    });
+    $("#btnProperties").click(function () {
+        if(arrFileFolder.length > 0) {
+			$('#txtUpdateValidity').datepicker({
+		        changeMonth: true,
+		        changeYear: true,
+		        minDate: new Date()
+		    });
+		    $('#txtUpdateValidity').datepicker("option", "dateFormat", "MM dd, yy");
+            $("#chkUpdateTitle").prop('checked', '');
+            $("#chkUpdateType").prop('checked', '');
+            $("#chkUpdateRef").prop('checked', '');
+            $("#chkUpdateAuthor").prop('checked', '');
+            $("#chkUpdateDetails").prop('checked', '');
+            $("#txtUpdateTitle").val("");
+            $("#txtUpdateType").val('-Select-');
+            $("#txtUpdateRef").val("");
+            $("#txtUpdateAuthor").val('');
+            $("#txtUpdateDetails").val("");
+	
+            if ($('#txtUpdateType option').length == 0) {
+                BindDMSDocumentType();
+            }
+            $(".customCol").remove();
+            var customCOlq = AddCustomColumns();
+            getSingleFileProperty(arrFileFolder[0].ServerURL, arrFileFolder[0].type, arrFileFolder[0].SiteURL, customCOlq);
+        }
+        else {
+            alert("Please select any file or folder first.");
+            return false;
+        }
+    });
+    $('#btnUpdateProp').click(function (e) {
+        var checkQuery = '';
+        if($('#ColumnBox').find('.customCol').length > 0) {
+            for(var col=0;col<arrCustomCol.length;col++) {
+                checkQuery += '&& $("#'+arrCustomCol[col].chkId+'").prop("checked") == false';
+            }
+        }
+        if(arrFileFolder.length > 0) {
+            $("#btnUpdateProp").attr('disabled', 'disabled');
+            if ($("#chkUpdateTitle").prop('checked') == false && $("#chkUpdateRef").prop('checked') == false && $("#chkUpdateType").prop('checked') == false && $("#chkUpdateSubType").prop('checked') == false && $("#chkUpdateAuthor").prop('checked') == false && $("#chkUpdateValidity").prop('checked') == false && $("#chkUpdateDetails").prop('checked') == false + checkQuery) {
+                $("#btnUpdateProp").prop('disabled', '');
+                alert("Please select any file or folder first.");
+                return false;
+            }
+            else {
+                UpdateFileFolderProperties();
+            }
+        }
+        else if($("#ModalDisplayProperty").css('display') != 'none') {
+            $("#btnUpdateProp").attr('disabled', 'disabled');
+            if ($("#chkUpdateTitle").prop('checked') == false && $("#chkUpdateRef").prop('checked') == false && $("#chkUpdateType").prop('checked') == false && $("#chkUpdateSubType").prop('checked') == false && $("#chkUpdateAuthor").prop('checked') == false && $("#chkUpdateValidity").prop('checked') == false && $("#chkUpdateDetails").prop('checked') == false + checkQuery) {
+                $("#btnUpdateProp").prop('disabled', '');
+                alert("Please select any file or folder first.");
+                return false;
+            }
+            else {
+                UpdateFileProperties();
+            }
+        }
+        else {
+            if($("#ModalDisplayProperty").css('display') != 'none') {
+                $("#btnUpdateProp").attr('disabled', 'disabled');
+                if ($("#chkUpdateTitle").prop('checked') == false && $("#chkUpdateRef").prop('checked') == false && $("#chkUpdateType").prop('checked') == false && $("#chkUpdateSubType").prop('checked') == false && $("#chkUpdateAuthor").prop('checked') == false && $("#chkUpdateValidity").prop('checked') == false && $("#chkUpdateDetails").prop('checked') == false + checkQuery) {
+                    $("#btnUpdateProp").prop('disabled', '');
+                    alert("Please select any file or folder first.");
+                    return false;
+                }
+                else {
+                    UpdateFileProperties();
+                }
+            }
+            else {
+                alert("Please select any file to update.");
+                return false;
+            }
+        }
+    });
+    $("#txtUpdateTitle").keyup(function () {
+        if(this.value.trim() != "") {
+            $("#chkUpdateTitle").prop('checked', 'checked');
+        }
+    });
+    $("#ddlFileType").change(function () {
+        getSubCategory(this.value, "FileSubType");
+    });
+    $("#txtUpdateType").change(function () {
+        if(this.value.trim() != "-Select-") {
+            $("#chkUpdateType").prop('checked', 'checked');
+        }
+        getSubCategory(this.value, "txtUpdateSubType");
+    });
+    $("#ddlFilterDocType").change(function () {
+        if(this.value.trim() == "All") {
+            $("#ddlFilterSubType").empty().append('<option value="All">All</option>');
+        }
+        else{
+            getSubCategory(this.value, "ddlFilterSubType");
+        }
+    });
+    $("#txtUpdateSubType").change(function () {
+        if(this.value.trim() != "-Select-") {
+            $("#chkUpdateSubType").prop('checked', 'checked');
+        }
+    });
+    $("#txtUpdateRef").keyup(function () {
+        if(this.value.trim() != "") {
+            $("#chkUpdateRef").prop('checked', 'checked');
+        }
+    });
+    $("#txtUpdateAuthor").keyup(function () {
+        if(this.value.trim() != "") {
+            $("#chkUpdateAuthor").prop('checked', 'checked');
+        }
+    });
+    $("#txtUpdateValidity").change(function () {
+        if(this.value.trim() != "") {
+            $("#chkUpdateValidity").prop('checked', 'checked');
+        }
+    });
+    $("#txtUpdateDetails").keyup(function () {
+        if(this.value.trim() != "") {
+            $("#chkUpdateDetails").prop('checked', 'checked');
+        }
+    });
+    $('.btnCloseProp').click(function (e) {
+        $(".clearPropBox").val('');
+        $("#txtUpdateType").val('-Select-');
+        $("#txtUpdateSubType").val('-Select-');
+        $(".chkProperty").prop('checked', 'checked');
+        $("#txtUpdateRef").val('');
+        $("#txtUpdateTitle").val('');
+        $("#txtUpdateDetails").val('');
+    });
+    $("#divFilter").click(function () {
+        if ($('#ddlFilterDocType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        $('#FilterModFrom').datepicker("destroy");
+        $('#FilterModTo').datepicker("destroy");
+        $('#FilterModFrom').datepicker();
+        $('#FilterModTo').datepicker();
+        $('#FilterModFrom').datepicker("option", "dateFormat", "MM dd, yy");
+        $('#FilterModTo').datepicker("option", "dateFormat", "MM dd, yy");
+        if(currentSectionType == 'Group Documents') {
+            $(".customColFilter").remove();
+            //AddFilterCustomColumns();
+        }
+        else {
+            $(".customColFilter").remove();
+        }
+    });
+    $("#btnFilterApply").click(function (e) {
+        waitingDialog.show();
+        setTimeout(function () {
+            LibraryFilter();
+        }, 100);
+    });
+    $(".btnFilterClear").click(function (e) {
+        ClearLibraryFilter();
+    });
+    $('#btnDeleteFile').click(function (e) {
+        if (confirm("Are you sure, you want to delete this file?")) {
+            DeleteFileFromSource("DeleteFile");
+        }
+    });
+    $('#btnChangeFileName').click(function (e) {
+        if ($("#txtRenamefile").val().trim() != "") {
+            RenameFile();
+        }
+        else {
+            alert("Please enter the name first.");
+            return false;
+        }
+    });
+    $('#btnPopupNotify').click(function (e) {
+        NotifyEmail();
+    });
+    $('#btnSendNotifyMail').click(function () {
+        SendNotifyEmail();
+    });
+    $("#btnChangeProp").click(function () {
+         //3 April 23
+        $("#txtUpdateValidity").prop('readonly', true)
+        $('#txtUpdateValidity').val('');
+         $('#txtUpdateValidity').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                minDate: new Date()
+            });
+            $('#txtUpdateValidity').datepicker("option", "dateFormat", "MM dd, yy");
+            //
+        if ($('#txtUpdateType option').length == 0) {
+            BindDMSDocumentType();
+        }
+        $(".customCol").remove();
+        var CustomQ = AddCustomColumns();
+        getSingleFileProperty($("#FilePath").text(), 'file', CopySourceURL, CustomQ);
+        //$("#btnUpdateSingleProp").show();
+        //$("#btnUpdateProp").hide();
+        $("#chkUpdateTitle").prop('checked', '');
+        $("#chkUpdateType").prop('checked', '');
+        $("#chkUpdateRef").prop('checked', '');
+        $("#chkUpdateAuthor").prop('checked', '');
+        $("#chkUpdateDetails").prop('checked', '');
+        $("#txtUpdateTitle").val($("#FileTitle").text());
+        $("#txtUpdateRef").val($("#FileReference").text());
+        $("#txtUpdateType").val($("#FileDocType").text());
+        $("#txtUpdateAuthor").val($("#FileAuthorPopup").text());
+        $("#txtUpdateDetails").val($("#FileDetalis").text());
+    });
+    $('button.copyButton').click(function (e) {//Copy the URL
+        e.preventDefault();
+        $(this).siblings('input.linkToCopy').select();
+        document.execCommand("copy");
+    });
+    //Add Approval Process Starts-----------
+    initializePeoplePicker("ApproverName", true);
+    $('#dueDateField').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        minDate: new Date()
+    });
+    $('#dueDateField').datepicker("option", "dateFormat", "MM dd, yy");
+    $('#noDueDate').click(function () {
+        if ($(this).is(':checked')) {
+            $('#dueDateField').prop('disabled', true);
+        }
+        else {
+            $('#dueDateField').prop('disabled', false);
+        }
+    });
+    $('#noAppValidDate').click(function () {
+        if ($(this).is(':checked')) {
+            $('#AppValidDateField').prop('disabled', true);
+            $("#AppValidDateField").val('');
+        }
+        else {
+        	if($("#FileValidityPopup").text() != "" && $("#FileValidityPopup").text() != "null" && $("#FileValidityPopup").text() != null) {
+	        	$("#AppValidDateField").val(moment(new Date($("#FileValidityPopup").text())).format("MMMM DD, YYYY"));
+	        }
+			else {
+				$("#txtUpdateValidity").val('');
+			}
+            $('#AppValidDateField').prop('disabled', false);
+        }
+    });
+    $("#btnAddStep").click(function () {
+    	$("#rdoUserTitan").prop('checked', true);
+    	$("#ddlAllDefinedSteps").hide();
+        $("#ddlAllDefinedSteps").empty();
+        $("#addsuccessor").modal('show');
+        $("#AddEditStepName").val('');
+        $("#SuccessorStepHeader").text("Add Step");
+        $("#chkFooterSign").prop("checked", false);
+        multipleEmailAddress = [];
+        assignUserName = [];
+        EmpIds = [];
+        $("#AddSuccStep").hide();
+        $("#AddEditStep").show();
+        $("#btnChangeApprovers").hide();
+        onChangeTask('ApproverName_TopSpan', 'ApproverName', 'userHTMLBox', 1);
+        if ($("#ddlSign").val() == "Adobe Sign") {
+            $("#OutsideSection").show();
+            $("#UserSection").show();
+            $("#UserTitanSection").hide();
+            $("#RunTimeTitanSection").hide();
+            $("#ddlAllDefinedSteps").hide();
+        	$("#ddlAllDefinedSteps").empty();
+        }
+        else {
+            $("#OutsideSection").hide();
+            $("#UserSection").hide();
+            $("#UserTitanSection").show();
+            $("#RunTimeTitanSection").show();
+            BindAllDefinedSteps("");
+        }
+    });
+    $("#ddlAppStep").change(function () {
+        $("#accordionapprovers").empty();
+        $("#ApprovalStepBox").hide();
+        if (this.value == 'Customize') {
+            $(".PreDefinedTemplatesBox").hide();
+            $('.customizedSteps').show();
+            $(".CustomizeAddStepBox").show();
+        }
+        else {
+            $(".PreDefinedTemplatesBox").show();
+            getPredfinedTemplates();
+            $('.customizedSteps').show();
+            $(".CustomizeAddStepBox").hide();
+        }
+    });
+    $("#ddlSign").change(function () {
+		$("#accordionapprovers").empty();
+        $("#ApprovalStepBox").hide();
+        $("#userselection").prop('checked', 'checked');
+        $("#userbox-1").show();
+        $("#userbox-2").hide();
+        $("#ddlAllDefinedSteps").empty();
+        if ($("#ddlAppStep").val() != 'Customize') {
+            getPredfinedTemplates();
+        }
+        if(this.value == "Adobe Sign"){
+        	$("#ParentFooterSign").hide();
+            $("#chkFooterSign").prop('checked', false);
+        }
+        else {
+            $("#ParentFooterSign").show();
+        }    
+    });
+
+    $(".radioEmp").change(function () {
+        multipleEmailAddress = [];
+        assignUserName = [];
+        EmpIds = [];
+        $(".userBox").hide();
+        if (this.value == 'Outsider') {
+            $("#userbox-1").hide();
+            $("#userbox-2").show();
+            $("#userHTMLBox").empty();
+        }
+        else {
+            $("#userbox-1").show();
+            $("#userbox-2").hide();
+            $("#OutsiderName").val('');
+            $("#OutsiderEmail").val('');
+        }
+    });
+    $(".radioEmpTitanSign").change(function () {
+        if (this.value == 'RunTime') {
+        	$("#ApproverName").hide();
+        	$("#ddlAllDefinedSteps").show();
+        	EmptyPeoplePicker('ApproverName');
+        }
+        else {
+        	$("#ApproverName").show();
+        	$("#ddlAllDefinedSteps").hide();
+        	$("#ddlAllDefinedSteps").empty();
+        }
+    });
+    $("#AddEditStep").click(function () {
+	    if ($.trim($("#AddEditStepName").val()) != "") {
+	        if ($("#userHTMLBox").html() != "") {
+	            if ($("#SuccessorStepHeader").text() == "Edit Step") {
+	                EditAddedStep(multipleEmailAddress, assignUserName, EmpIds);
+	            }
+	            else {
+	                var OtherStepDetails = [];
+	                OtherStepDetails.push({
+	                    ApproverType: "Specific",
+	                    ApproverRole: "",
+	                    ApproverDecidingStep: ""
+	                });
+	                AddMoreStep(multipleEmailAddress, assignUserName, EmpIds, OtherStepDetails);
+	            }
+	        }
+	        else if ($("#rdoRunTimeTitan").prop('checked') == true) {
+	        	var OtherStepDetails = [];
+	            if ($("#ddlAllDefinedSteps").val() != null && $("#ddlAllDefinedSteps").val() != "") {
+	                if ($("#SuccessorStepHeader").text() == "Edit Step") {
+	                    EditAddedStep(multipleEmailAddress, assignUserName, EmpIds);
+	                }
+	                else {
+	                    multipleEmailAddress.push('Runtime');
+	                    EmpIds.push('');
+	                    assignUserName.push($("#ddlAllDefinedSteps").val());
+	                    OtherStepDetails.push({
+	                        ApproverType: "Runtime",
+	                        ApproverRole: "",
+	                        ApproverDecidingStep: $("#ddlAllDefinedSteps").val()
+	                    });
+	                    AddMoreStep(multipleEmailAddress, assignUserName, EmpIds, OtherStepDetails);
+	                }
+	            }
+	            else {
+	                alert("Please enter deciding step name.");
+	                return false;
+	            }
+	        }
+	        else {
+	            if ($.trim($("#OutsiderName").val()) != "" && $.trim($("#OutsiderEmail").val()) && isEmail($("#OutsiderEmail").val()) != false) {
+	                if ($("#SuccessorStepHeader").text() == "Edit Step") {
+	                    EditAddedStep(multipleEmailAddress, assignUserName, EmpIds);
+	                }
+	                else {
+	                    var OtherStepDetails = [];
+	                    OtherStepDetails.push({
+	                        ApproverType: "Specific",
+	                        ApproverRole: "",
+	                        ApproverDecidingStep: ""
+	                    });
+	                    AddMoreStep(multipleEmailAddress, assignUserName, EmpIds, OtherStepDetails);
+	                }
+	            }
+	            else {
+	                alert("Please fill the approver's name or correct the email format.");
+	                return false;
+	            }
+	        }
+	            $(".closeAddEditModal").trigger('click');
+		}
+		else {
+		    alert("Kindly enter the Step Name.");
+		    return false;
+		}
+	});
+    $(".closeAddEditModal").click(function () {
+        $("#AddEditStepName").val("");
+        multipleEmailAddress = [];
+        assignUserName = [];
+        EmpIds = [];
+        $("#userHTMLBox").empty();
+        $("#OutsiderName").val('');
+        $("#OutsiderEmail").val('');
+        $(".userBox").hide();
+    });
+    $('.btnCloseApproval').click(function (e) {
+        ClearAprovalControls();
+        $("#approval-modal").modal('hide');
+    });
+    $('#btnSubmitApproval').click(function (e) {
+        if ($.trim($("#accordionapprovers").html()) == "") {
+            alert("Kindly add approval steps first.");
+            return false;
+        }
+        else {
+            if ($("#noDueDate").prop('checked') == false && $("#dueDateField").val() == '') {
+                alert("Kindly enter due date.");
+                return false;
+            }
+            else if ($("#noAppValidDate").prop('checked') == false && $("#AppValidDateField").val() == '') {
+                alert("Kindly enter validity.");
+                return false;
+            }
+            else if(($("#dueDateField").val() != '' && $("#AppValidDateField").val() != '') && (new Date($("#dueDateField").val()) > new Date($("#AppValidDateField").val()))){
+            	alert("Validity date must be greator than Due date.");
+                return false;
+            }
+            else {
+            	if(ApprovalStartValid() == true) {
+	                $("#overlaysearch").fadeIn();
+	                setTimeout(function () {
+	                    UpdateDocumentStatus();
+	                }, 100);
+	            }
+            }
+        }
+    });
+    $("input[id$='dueDate']").click(function () {
+        $('#dueDateField').removeAttr("disabled");
+    });
+    $('#btnApproval').click(function (e) {
+		$("#approval-modal").modal('show');
+        $("#ParentFooterSign").hide();
+        $("#chkFooterSign").prop('checked', false);
+        FinalFiles4Upload = [];
+        $("#ApprovlUpload").val('');
+        $('#ApprovlUploadBox').html('');
+        $('#AppValidDateField').prop('disabled', true);
+        $("#AppValidDateField").val('');
+        $("#noAppValidDate").prop('checked', true);    
+    });
+
+
+    //Add Approval Process ends-----------
+    $("#starffect").click(function () {
+        if ($("#txtFavorite").text() == "Add to Favorite") {
+            AddFavoriteFile();
+        }
+        else {
+            DeleteFromFavourite();
+        }
+    });
+    $("#btnRenameFile").click(function (e) {
+    	OldFileName = $("#txtRenamefile").val().trim() + $("#txtFileExt").text();
+    });
+    $("#LiAddFolder").click(function () {
+    	$("#AddFolderTitle").val('');
+        $("#ddlAddFolderRef").val('');
+        $("#ddlAddFolderCateg").val('-Select-');
+        $("#ddlAddFolderAuth").val(_spPageContextInfo.userDisplayName);
+        $("#ddlAddFolderDetails").val('');
+        $("#ddlAddFolderSubC").empty().append('<option value="-Select-">-Select-</option>');
+        if ($('#ddlAddFolderCateg option').length == 0) {
+            BindDMSDocumentType();
+        };
+    });
+    $("#ddlAddFolderCateg").change(function () {
+        getSubCategory(this.value, "ddlAddFolderSubC");
+    });
+    //<!-----------------Chat Box starts ---------------------------------------->
+    $("#btnCloseChatBox").click(function(){
+    //5 April 23
+        //waitingDialog.show();
+        //setTimeout(function () {
+             /*var tempDocName = Documentname;
+            if (Documentname=='Documents'== true||Documentname.includes('/Documents') == true) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            */
+           // waitingDialog.hide();
+    	
+        //}, 10000);
+            
+        cmntIcon="";
+            //5 April 23
+  });
+    $("#commentText").emojioneArea({
+        pickerPosition: "right",
+        tonesStyle: "bullet",
+        events: {
+            keyup: function (editor, event) {
+
+            }
+        }
+    });
+    $("#replyHide").click(function () {
+        $("#replyTextarea").hide();
+    });
+    $('#txtDocComments').click(function (e) {
+        GetComments('PageLoad', "");
+    });
+    $('#btnAddComment').click(function (e) {
+        PushRootComment();
+    });
+    $("#CommentFileAttach").on('change', function (e) {
+        FinalFiles4Upload = [];
+        //finalFiles = [];
+        var fileNum = this.files.length, initial = 0;
+        $.each(this.files, function (idx, elm) {
+            finalFiles[finalFiles.length] = elm;
+        });
+
+        RemoveDuplicate = [];
+        var arr = finalFiles.filter(function (el) {
+            if (RemoveDuplicate.indexOf(el.name) == -1) {
+                RemoveDuplicate.push(el.name);
+                return true;
+            }
+            return false;
+        });
+
+        FinalFiles4Upload = ReinitializeArray(arr);
+        $('.NewSelectedAttachment').empty();
+        $('#NewAttachmentFiles').empty();
+        var ChangedfileName = '';
+
+        for (initial; initial < FinalFiles4Upload.length; initial++) {
+            if (RemoveDuplicate[initial].length > 15) {
+                ChangedfileName = RemoveDuplicate[initial].substring(0, 15) + "...";
+                $('#NewAttachmentFiles').append('<div class="comment-upload-chip" title="' + RemoveDuplicate[initial] + '" id="file_' + Tcounter + '"> <span class="comment-box-chip-text-box">' + ChangedfileName + ' </span> <span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="removeLine(this.id);" id="file_' + Tcounter + '"" title="remove"></span></div>');
+            }
+            else {
+                $('#NewAttachmentFiles').append('<div class="comment-upload-chip" title="' + RemoveDuplicate[initial] + '" id="file_' + Tcounter + '"> <span class="comment-box-chip-text-box">' + RemoveDuplicate[initial] + '</span> <span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="removeLine(this.id);" id="file_' + Tcounter + '"" title="remove"></span></div>');
+            }
+            Tcounter = Tcounter + 1;
+        }
+        $("#CommentFileAttach").val('');
+    });
+    //<!-----------------Chat Box ends ---------------------------------------->
+});
+
+//Get Library details - Permissions and Columns to show
+function GetLibarayDetails(obj, url, Title, Folder, Type) {
+    /*GetLibarayRefresh = [];
+    GetLibarayRefresh.push({
+        Obj: obj,
+        Url: url,
+        Title: Title,
+        Folder: Folder,
+        Type: Type
+    });*/
+    //GlobalAnchorObj = obj;
+    waitingDialog.show();// 2 march 23
+    $("#generateBradCumbNew").empty();
+    currentSectionType = Type;
+    DMS_Type = Title;
+    DMS_Link = url;
+    arrFileFolder = [];
+    $(".btnFilterClear").trigger('click');
+    arrFilterTable = [];
+    $(".dms-left-panel-tab-inner").removeClass("dms-left-panel-tab-active-inner");
+    $(obj).siblings().removeClass('dms-left-panel-tab-active-inner');//02 march 23
+    $(obj).addClass('dms-left-panel-tab-active-inner');//02 march 23
+    /*if (DMS_Type != "Add New Library") {//13 April 23
+        $(".headdingLinks").html("");
+        $(".headdingLinks").html(DMS_Type);
+    } else {
+        //return false;
+    }*/
+     if (currentSectionType == "ProjectDocuments"||currentSectionType=="Group Documents") {//02 march 23
+        $(".headdingLinks").html("");
+        $(".headdingLinks").html(DMS_Type);
+    } else {
+        //return false;
+    }
+
+    const UrlLink = DMS_Link.split('/Forms')[0];
+    Documentname = UrlLink.split('/')[UrlLink.split('/').length - 1];
+    CheckLibary = Documentname;
+    SiteUrl = UrlLink.slice(0, UrlLink.lastIndexOf("/"));
+    //var breadcrumb = "javascript:GetSubFoldersChild('" + Documentname + "')";
+    //$(".breadcrumb").html('');
+    //$(".cont_breadcrumbs_1").show();
+    //$(".breadcrumb").append('<li class="breadcrumb-item"><a href="' + breadcrumb + '">' + Documentname + '</a></li>');
+
+    DefaultColumnName = ['Name', 'Title', 'DocumentType', 'DocumentNo', 'Modified', 'Shared', 'ApprovedByOutsider']
+    SetColumnName = [];
+    for (var i = 0; i < DefaultColumnName.length; i++) {
+        SetColumnName.push({
+            'ColumnName': DefaultColumnName[i],
+        });
+    }
+
+    //Get Library permissions for logged_IN users
+    /*
+    if (getListUserEffectivePermissions(SiteUrl, 'SharedDocuments', false, '', 'i:0#.f|membership|' + _spPageContextInfo.userLoginName + '')) {
+        //Do Nothing - Code Written in defined method
+    }
+    else {
+        //Do Nothing
+    }*/
+    //3 March 23 start
+
+    var Query = "";
+     if (currentSectionType == 'ProjectDocuments'||currentSectionType=='Group Documents'){
+        var SharedDocuments = Documentname;
+        if (Documentname == "Shared%20Documents") {
+            SharedDocuments = "Documents";
+        }
+        listTitle = SharedDocuments;
+        Query = "?$select=IsMandatory,Title,ColumnName,ColumnType,DataType,Position,DMS_Type,DMS_Link,Visibility,Id &$top=5000 &$filter=(DMS_Type eq '" + encodeURI(DMS_Type) + "' )&$orderby= Position asc ";
+        if (getListUserEffectivePermissions(SiteUrl, SharedDocuments, false, '', 'i:0#.f|membership|' + _spPageContextInfo.userLoginName + '')) {
+          
+        } else {
+            if(IsNotpermission == false && currentSectionType == 'ProjectDocuments') {
+                ActionBtnControls();
+            }
+        }
+    } 
+    else
+     {
+     
+     /*
+        if (getListUserEffectivePermissions(SiteUrl, 'SharedDocuments', false, '', 'i:0#.f|membership|' + _spPageContextInfo.userLoginName + '')) {
+        //Do Nothing - Code Written in defined method
+            }
+            else {
+                //Do Nothing
+            }
+            
+            */
+    }
+    //3 March 23 end
+
+    //get Columns to show
+    //var Query = "";
+    var SharedDocuments = Documentname;
+    if (Documentname == "Shared%20Documents") {
+        SharedDocuments = "Documents";
+    }
+    listTitle = SharedDocuments;
+    var Visibility = 1;
+    Query = "?$select=*,Title,ColumnName,ColumnType,DataType,Position,DMS_Type,DMS_Link,Visibility,Id &$top=5000 &$filter=DMS_Type eq '" + DMS_Type + "'&$orderby= Position asc ";
+    $.when(getItemsWithQuery("DMSColumnSetting", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (valuesArray) {
+        $('.customTr').remove();
+        $(".checkbox").prop('checked', false);
+        $("#ckbFileName").prop('checked', true);
+        if (valuesArray.length > 0) {
+        	//check the mandatory checkboxes in Settings table
+        	getMandatoryColumns(valuesArray);
+        	valuesArray = valuesArray.filter(function(obj) {
+                return obj.Visibility == true;
+            });
+            valuesArray = getUniqueListBy(valuesArray, "ColumnName");
+            valuesArray.sort(function (a, b) {
+                return a.Position - b.Position
+            });
+
+            var IsfileName = "";
+            SetColumnName = [];
+            var customColumn = "";
+            var DefaultRowcolumn = "";
+            IsfileName = valuesArray.filter(function (filterData) {
+                return filterData.ColumnName == "Name";
+            });
+
+            DefaultRowcolumn = valuesArray.filter(function (filterData) {
+                return filterData.ColumnType == "Default";
+            });
+
+            if (DefaultRowcolumn.length > 0) {
+                DefaultRow(DefaultRowcolumn);
+            }
+
+            customColumn = valuesArray.filter(function (filterData) {
+                return filterData.ColumnType == "Custom";
+            });
+            if (customColumn.length > 0) {
+                addCustomRow(customColumn);
+            }
+
+            if (IsfileName.length == 0) {
+                SetColumnName.push({
+                    'ColumnName': "Name",
+                });
+                for (var i = 0; i < valuesArray.length; i++) {
+                    SetColumnName.push({
+                        'ColumnName': valuesArray[i].ColumnName,
+                        'DataType': valuesArray[i].DataType,
+                    });
+                }
+            } else {
+                for (var i = 0; i < valuesArray.length; i++) {
+                    SetColumnName.push({
+                        'ColumnName': valuesArray[i].ColumnName,
+                        'DataType': valuesArray[i].DataType,
+                    });
+                }
+            }
+            GenrateHtmlGrid(SetColumnName, false, "");
+             waitingDialog.hide();
+        }
+        else {
+            GenrateHtmlGrid(SetColumnName, false, "");
+             waitingDialog.hide();
+        }
+    });
+   // waitingDialog.hide();
+    return null;
+    
+}
+
+function addCustomRow(valuesArray) {
+
+
+    $('.dummyRow').remove();
+    for (var i = 0; i < valuesArray.length; i++) {
+
+        CustomRow = '<tr class="customTr">' +
+            '<td class="vertical-align-middle">' +
+            '<div class="checkbox mt0 checkbox-space-align">' +
+            '<label><input type="checkbox" class="checkbox" value="" id="ckbCustomCol' + i + '" ></label>' +
+            '</div>' +
+            '</td>' +
+            '<td>' + valuesArray[i].ColumnName + '</td>' +
+            '<td>' + valuesArray[i].DataType + '</td>' +
+            '<td style="display:none">Custom</td>' +
+            '<td>' +
+            '<div class="form-group custom-form-group mb0">' +
+            '<select class="form-control numbers" id="ddlCustomCol' + i + '">' +
+
+            '<option>2</option>' +
+            '<option>3</option>' +
+            '<option>4</option>' +
+            '<option>5</option>' +
+            '<option>6</option>' +
+            '<option>7</option>' +
+            '<option>8</option>' +
+            '<option>9</option>' +
+            '<option>10</option>' +
+            '<option>11</option>' +
+            '<option >12</option>' +
+            '<option>13</option>' +
+            '<option>14</option>' +
+            '<option>15</option>' +
+            '<option>16</option>' +
+            '<option>17</option>' +
+
+            '</select>' +
+            '</div>' +
+            '</td>' +
+            '<td><a class="deletecustomTr"   id="' + valuesArray[i].Id + '" href="#">Delete</a></td>' +
+            '</tr>';
+
+        $("#tblColumnsSettings tr:last").before(CustomRow);
+
+        $("#ddlCustomCol" + i + " option:selected").text(valuesArray[i].Position);
+        $("#ckbCustomCol" + i + "").prop('checked', valuesArray[i].Visibility);
+
+    }
+
+}
+
+function DefaultRow(valuesArray) {
+    for (var i = 0; i < valuesArray.length; i++) {
+        if ("Title" == valuesArray[i].ColumnName) {
+            $("#ckbTitle").prop('checked', true);
+        } else if ("Type" == valuesArray[i].ColumnName || "DocumentType" == valuesArray[i].ColumnName) {
+            $("#ckbDocumentType").prop('checked', true);
+        } else if ("Reference" == valuesArray[i].ColumnName || "DocumentNo" == valuesArray[i].ColumnName) {
+            $("#ckbReferenceNumber").prop('checked', true);
+        } else if ("Author" == valuesArray[i].ColumnName) {
+            $("#ckbAuthor").prop('checked', true);
+        } else if ("Details" == valuesArray[i].ColumnName) {
+            $("#ckbDetails").prop('checked', true);
+        } else if ("Modified" == valuesArray[i].ColumnName) {
+            $("#ckbModifiedDate").prop('checked', true);
+        } else if ("Sharing" == valuesArray[i].ColumnName || "Shared" == valuesArray[i].ColumnName) {
+            $("#ckbSharing").prop('checked', true);
+        } else if ("Approval" == valuesArray[i].ColumnName || "ApprovedByOutsider" == valuesArray[i].ColumnName) {
+            $("#ckbApproval").prop('checked', true);
+        } else if ("File Size" == valuesArray[i].ColumnName) {
+            $("#ckbFileSize").prop('checked', true);
+        } else {
+            //$("#ckbTitle").prop('checked', true);
+        }
+    }
+}
+var arrColsPosition = [];
+
+//Bind Columns and data in HTML table
+function GenrateHtmlGrid(results, IsMyfavorate, files) {
+    var html = "";
+    var ColumnName = "";
+    arrColsPosition = [];arrColsPosition.push(0);
+    arrCurrentColumns = results.filter(function(f){return f;});
+    ColumnName += '<th class="text-center border-bottom-0 w-2 nosort">' +
+        '<label class="checkbox-inline hpx-20 "><input type="checkbox" id="selectAllChk" value=""></label>' +
+        '</th>';
+    for (var i = 0; i < results.length; i++) {
+        if (results[i].ColumnName == "DocumentNo") {
+            ColumnName += '<th class="noWidth" data-localize="Reference">Reference</th>';
+        } 
+        else if (results[i].ColumnName == "DocumentType") {
+            ColumnName += '<th class="noWidth" data-localize="Category">Category</th>';
+        } 
+        else if (results[i].ColumnName == "ApprovedByOutsider" || results[i].ColumnName == "ApprovedBy" || results[i].ColumnName == "Approval") {
+        	arrColsPosition.push(i+1);
+            ColumnName += '<th class="noWidth sorting_disabled" data-localize="Approval">Approval</th>';
+        } 
+        else if (results[i].ColumnName == "Sharing") {
+        	arrColsPosition.push(i+1);
+            ColumnName += '<th class="noWidth sorting_disabled" data-localize="Sharing">Sharing</th>';
+        } 
+        else {
+            ColumnName += '<th class="noWidth" data-localize="' + results[i].ColumnName + '">' + results[i].ColumnName + '</th>';
+        }
+    }
+    //table thead bind
+    $("#DMSTable").empty().html('<table class="table-responsive table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table maxwidthmanage" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+    $("#theadItem").html("");
+    $("#theadItem").append(ColumnName);
+    ChangeLabels();//10 April 23
+    var rowCount = 0;
+    $("#groupDocumentGridtbody").html("");
+    var Isdata = false;
+    $.when(getItemsWithQueryUsersDocuments(Documentname, SiteUrl)).done(function(DocumentGroup) {
+        var files = DocumentGroup.Files.results;
+        var folders = DocumentGroup.Folders.results;
+        folders.sort(function(a, b) {
+            var dateA = new Date(a.TimeLastModified),
+                dateB = new Date(b.TimeLastModified);
+            return dateB - dateA;
+        });
+        files.sort(function(a, b) {
+            var dateA = new Date(a.TimeLastModified),
+                dateB = new Date(b.TimeLastModified);
+            return dateB - dateA;
+        });
+        var tabledynamichtml = ""
+        var Icon = "folder.png";
+        var NoFile = false;
+        for (var i = 0; i < folders.length; i++) {
+            rowCount++;
+            if (folders[i].Name != "Forms") {
+                NoFile = true;
+                genrateHtmlgrid(Icon, results, folders[i], rowCount, "folder", "");
+            }
+        }
+        for (var i = 0; i < files.length; i++) {
+            rowCount++;
+            //var FileExtension = files[i].Name.split('.')[1];
+            var FileExtension = files[i].Name.split('.').pop();//Bhawana
+
+            //Icon = "file.png";//21 March 23
+            Icon = FileExtension!=""&&FileExtension!=null?FileExtension.toLowerCase()+".png":"file.png";
+            /*if ("docx" == FileExtension || "doc" == FileExtension) {
+                Icon = "docx.png";
+            } else if ("pdf" == FileExtension) {
+                Icon = "pdf.png";
+            } else if ("jpg" == FileExtension || "psd" == FileExtension || "tiff" == FileExtension || "gif" == FileExtension || "bmp" == FileExtension || "jpeg" == FileExtension || "png" == FileExtension) {
+                Icon = "image-icon.png";
+            } else if ("xlsx" == FileExtension) {
+                Icon = "xlsx.png";
+            } else if ("pptx" == FileExtension) {
+                Icon = "pptx.png";
+            } else if ("txt" == FileExtension) {
+                Icon = "txt.png";
+            } else if ("csv" == FileExtension) {
+                Icon = "CSV.png";
+
+            } else if ("zip" == FileExtension || "rar" == FileExtension || "7z" == FileExtension || "arz" == FileExtension || "cab" == FileExtension || "rpm" == FileExtension || "wim" == FileExtension) {
+                Icon = "ZIP.png";
+
+            } else if ("mp4" == FileExtension || "wmv" == FileExtension || "avi" == FileExtension || "mpeg" == FileExtension || "flv" == FileExtension || "mov" == FileExtension || "wav" == FileExtension || "ogv" == FileExtension) {
+                Icon = "video-files.png";
+
+            } else if ("mp3" == FileExtension || "wma" == FileExtension || "aac" == FileExtension || "pcm" == FileExtension) {
+                Icon = "audio.png";
+            }*/
+            Isdata = true;
+            genrateHtmlgrid(Icon, results, files[i], rowCount, "file", "");
+        }
+        if (files.length == 0 && NoFile == false) {
+            Isdata = false;
+            var tr = $('<tr>');
+            var cell = $("<td colspan='8' style='text-align: center;'>");
+            cell.html("No record found.");
+            tr.append(cell);
+            waitingDialog.hide();
+            $("#groupDocumentGridtbody").append(tr);
+        }
+    });
+    
+    $(".chkFileFolder").click(function() {
+        var Properties = this.value.split(',');
+        if (this.checked == true) {
+            arrFileFolder.push({
+                type: Properties[0].trim(),
+                ServerURL: Properties[1].trim(),
+                DocumentId: Properties[2].trim(),
+                SiteURL: Properties[3].trim(),
+                SelectedLibrary: Properties[4].trim(),
+                FileFolderName: Properties[5].trim(),
+                CopyFileLink: Properties[6].trim(),
+                FileTitle: Properties[7].trim(),
+                FileRef: Properties[8].trim(),
+                FileType: Properties[9].trim(),
+                DocType: Properties[10].trim(),
+                fileFilderInheritance: $(this).data('inherit')
+            });
+        } else {
+            var selected = this.value;
+            arrFileFolder = arrFileFolder.filter(function(obj) {
+                return obj.DocumentId != Properties[2].trim();
+            });
+        }
+    });
+    $("#selectAllChk").click(function(e) {
+        if (this.checked == true) {
+            $('.chkFileFolder').prop("checked", "");
+            $('.chkFileFolder').trigger('click');
+        } else {
+            $('.chkFileFolder').prop("checked", "");
+            arrFileFolder = [];
+        }
+    });
+    if (Isdata) {
+        Tableagination();
+    }
+    else{
+        ActionBtnControls();
+        ChangeLabels();
+    }
+}
+
+//method for pagination of HTML Table
+function Tableagination() {
+    MyDoctable = $('#groupDocumentGrid').DataTable({
+    	//'columnDefs': [{ 'orderable': false, 'targets': arrColsPosition }], // hide sort icon on header of first column //14 March 23
+        "columnDefs": [{ 'orderable': false, 'targets': 0 }],
+        "bPaginate": true,
+        "bJQueryUI": true, // ThemeRoller-stöd
+        "bLengthChange": false,
+        "bFilter": true,
+        "bSort": true,
+        "bInfo": true,
+        "bAutoWidth": true,
+        "responsive": true,
+        "bProcessing": true,
+        "iDisplayLength": 10,
+        "dom": 'Rlfrtip',
+        "colReorder": {
+            'allowReorder': true
+        },
+        "language": {
+            "searchPlaceholder": "Type to find....",
+            "sSearch": ""
+        }
+
+    });
+    $(".nosort").removeClass("sorting");//14 March 23
+    $(".nosort").removeClass("sorting_asc");////14 March 23
+
+    $("#groupDocumentGrid_filter").hide();
+    $('#CustomSearchMyDoc').keyup(function() {
+        MyDoctable.search($(this).val()).draw();
+    });
+    setTimeout(function () {
+    	$(".noWidth").css('width', '');
+    }, 2000);
+    //3 April 23
+    if($('#groupDocumentGridtbody tr')[0] != null) {
+		if($('#groupDocumentGridtbody tr')[0].innerText.indexOf('No record found') != -1) {
+			$("#groupDocumentGrid_paginate").hide();
+			$("#groupDocumentGrid_info").hide();
+		}
+		else {
+			$("#groupDocumentGrid_info").css('display', 'inline-block');
+		}
+	}
+	else {
+		$("#groupDocumentGrid_info").css('display', 'inline-block');
+	}
+    //3 April 23
+    ActionBtnControls();
+    ChangeLabels();
+}
+
+//get And Bind Breadcrumb
+function GetSubFolders(subFolderlLink) {
+    var encodedeUrl = decodeURI(subFolderlLink)
+    var surFoldersArray = new Array();
+    var subFolders = encodedeUrl.split('/');
+    var folderurls = "";
+    for (var subFolderIndex = 0; subFolderIndex < subFolders.length; subFolderIndex++) {
+        if (subFolders[subFolderIndex] == "Documents") {
+            subFolders[subFolderIndex] = "Shared%20Documents";
+        }
+        if (subFolders[subFolderIndex] == CheckLibary || surFoldersArray.length > 0) {
+            folderurls += subFolders[subFolderIndex] + "/";
+            if (subFolders[subFolderIndex] != null && subFolders[subFolderIndex] != "") {
+                surFoldersArray.push(SubFolderProperties(folderurls, subFolders[subFolderIndex]));
+            }
+        }
+    }
+    GenerateFolderNavigation(surFoldersArray);
+}
+
+function SubFolderProperties(folderUrl, folderName) {
+    var folderProperties = [];
+    folderProperties.folderUrl = folderUrl;
+    folderProperties.folderName = folderName;
+    return folderProperties;
+}
+
+//code for Folder-Navigation 
+function GenerateFolderNavigation(surFoldersArray) {
+    var braCummHtml = "";
+    var targetServerRaltiveUrl = "";
+    for (var index = 0; index < surFoldersArray.length; index++) {
+        //if (index != 0)
+        {
+            var targetUrl = "javascript:GetMyDocumentsWithFilesFolder('" + surFoldersArray[index].folderUrl + "')";
+            var targetRootUrl="javascript:ClickRoot('" + surFoldersArray[index].folderUrl + "')";//12 April 23
+            if (index == 0) {
+                //braCummHtml += '<li title="Root" class="mybradcumb first"><a href="' + targetUrl + '">Root</a></li>';
+                braCummHtml += '<li title="Root" class="mybradcumb first"><a href="' + targetRootUrl + '">Root</a></li>';//12 April 23
+            } else {
+                var subfolderLengthCheck = surFoldersArray[index].folderName;
+                if (subfolderLengthCheck.length > 15) {
+                    subfolderLengthCheck = subfolderLengthCheck.substring(0, 14) + "...";
+                }
+
+                if (subfolderLengthCheck.length > 0) {
+                    braCummHtml += '<li title="' + surFoldersArray[index].folderName + '" class="mybradcumb first"><a href="' + targetUrl + '">' + subfolderLengthCheck + '</a></li>';
+                }
+            }
+            if (index == surFoldersArray.length - 1) {
+                targetServerRaltiveUrl = surFoldersArray[index].folderUrl;
+                GetMyDocumentsWithFilesFolder(targetServerRaltiveUrl);
+            }
+        }
+    }
+    var bradCumDiv = $("#generateBradCumbNew");
+    bradCumDiv.html("");
+    bradCumDiv.append(braCummHtml);
+    ClickEventBradCumb();
+}
+
+function GetMyDocumentsWithFilesFolder(folderUrl) {
+   
+    Documentname = folderUrl;
+    GenrateHtmlGrid(SetColumnName, false, "");
+}
+//12 April 23
+function ClickRoot(folderUrll) {
+    if(CheckLibary.includes("Shared%20Documents"))
+    {
+        folderUrll=folderUrll.replace("Shared Documents","Shared%20Documents");
+    }
+    if(folderUrll==CheckLibary+"/")//12 April 23
+    {
+        $("#generateBradCumbNew").html("");
+    }
+    GetMyDocumentsWithFilesFolder(folderUrll);
+}
+
+//Delete all other Navigation when click on predecessor folder.
+function ClickEventBradCumb() {
+    $(".mybradcumb ").unbind().click(function() {
+        $(this).nextAll().remove(".mybradcumb ");
+        //Create Cookies for Target Folder
+    });
+}
+
+//Bind data into Table
+function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction) {
+    if (MethodAction == "") {
+        //Preparing array for Filter
+        arrFilterTable.push({
+            Icon: Icon,
+            ColumnCount: ColumnCount,
+            files: files,
+            rowCount: rowCount,
+            Type: Type
+        });
+    }
+    var currentFilePermission = 'null';
+    var SiteURL = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+    if (DMS_Link == '') {
+        SiteURL = SiteUrl = files.SiteURL;
+        if (files.ServerRelativeUrl.includes("DocumentManagementSystem") == true) {
+            DMS_Type = 'My Documents';
+        } else {
+            DMS_Type = /[^/]*$/.exec(SiteUrl)[0];
+        }
+    }
+    var cusLibURL = "";
+    if(DMS_Link == '') {
+        cusLibURL = files.SiteURL + "/" + files.LibURL;
+    }
+    var SelectedLibrary = '';
+    var CopyFileLink = '';
+    var FileServerRelativeUrl = files.ServerRelativeUrl;
+    if (files.ServerRelativeUrl.indexOf("Shared Documents") != -1) {
+        FileServerRelativeUrl = files.ServerRelativeUrl;
+        files.ServerRelativeUrl = files.ServerRelativeUrl.replace('Shared Documents', "Documents");
+    } else if (files.ServerRelativeUrl.indexOf("Shared%20Documents") != -1) {
+        FileServerRelativeUrl = files.ServerRelativeUrl;
+        files.ServerRelativeUrl = files.ServerRelativeUrl.replace('Shared%20Documents', "Documents");
+    }
+    if (Documentname == "Shared%20Documents") {
+        Documentname = "Documents";
+    }
+    if (files.ServerRelativeUrl.includes("DocumentManagementSystem") == true || files.ServerRelativeUrl.includes("DepartmentalDMS") == true) {
+        if (files.ServerRelativeUrl.includes("DocumentManagementSystem") == true) {
+            SelectedLibrary = "DocumentManagementSystem";
+            CopyFileLink = SiteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + encodeURIComponent(files.ServerRelativeUrl) + "&parent=" + encodeURIComponent(files.ServerRelativeUrl.substr(0, files.ServerRelativeUrl.lastIndexOf("/") + 0));
+        } else {
+            SelectedLibrary = "DepartmentalDMS";
+            CopyFileLink = SiteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + encodeURIComponent(files.ServerRelativeUrl) + "&parent=" + encodeURIComponent(files.ServerRelativeUrl.substr(0, files.ServerRelativeUrl.lastIndexOf("/") + 0));
+        }
+    } else {
+        if (Documentname.indexOf('/') != -1) {
+            SelectedLibrary = Documentname.split('/')[0];
+        } else {
+            SelectedLibrary = Documentname;
+        }
+        var HostName = window.location.origin + files.ServerRelativeUrl.substr(0, files.ServerRelativeUrl.lastIndexOf("/") + 0);
+        CopyFileLink = HostName + "/Forms/AllItems.aspx?id=" + encodeURIComponent(files.ServerRelativeUrl) + "&parent=" + encodeURIComponent(files.ServerRelativeUrl.substr(0, files.ServerRelativeUrl.lastIndexOf("/") + 0));
+    }
+
+    var DocumentId = '';
+    var FileTitle = "";
+    var FileRef = "";
+    var FileType = '';
+    var DocType = '';
+    var Isinherit = '';
+    if (files.ListItemAllFields != undefined) {
+        DocumentId = files.ListItemAllFields.ID;
+        Isinherit = files.ListItemAllFields.HasUniqueRoleAssignments
+        if (files.ListItemAllFields.Title == null || files.ListItemAllFields.Title == undefined || files.ListItemAllFields.Title == "null" || files.ListItemAllFields.Title == "--select--" || files.ListItemAllFields.Title == "-Select-") {
+            files.ListItemAllFields.Title = '';
+        }
+        FileTitle = files.ListItemAllFields.Title ? files.ListItemAllFields.Title : "";
+        FileRef = files.ListItemAllFields.DocumentNo ? files.ListItemAllFields.DocumentNo : "";
+        FileType = files.ListItemAllFields.DocumentType;
+        DocType = files.ListItemAllFields.DocumentType;
+        SubDocType =  files.ListItemAllFields.SubCategory;
+        if (files.ListItemAllFields.DocumentType == null || files.ListItemAllFields.DocumentType == "null" || files.ListItemAllFields.DocumentType == "-Select-" || files.ListItemAllFields.DocumentType == "--select--") {
+            DocType = '';
+        }
+        if (files.ListItemAllFields.SubCategory == null || files.ListItemAllFields.SubCategory == "null" || files.ListItemAllFields.SubCategory == "-Select-" || files.ListItemAllFields.SubCategory == "--select--") {
+            SubDocType = '';
+        }
+    } else {
+        if (files.Title != null && files.Title != undefined && files.Title != "undefined ") {
+            FileTitle = files.Title;
+        }
+        if (files.Title != null && files.Title != undefined && files.Title != "undefined ") {
+            FileRef = files.DocumentNo;
+        }
+        DocType = '';
+        if (files.ItemId != null && files.ItemId != undefined) {
+            DocumentId = files.ItemId;
+        }
+        SubDocType =  files.SubCategory;
+        if (files.SubCategory == null || files.SubCategory == "null" || files.SubCategory == "-Select-" || files.SubCategory == "--select--") {
+            SubDocType = '';
+        }
+    }
+    var checkOutHTML = '';
+    if (files.CheckOutType == "0") {
+        checkOutHTML = '<div class="checkTypeClass" tile="" onmouseover="getcheckOutName(this, \'' + files.ServerRelativeUrl + '\');"><i class="fa fa-lock" style="font-size:24px"></i></div>';
+    }
+    var tr = $('<tr>' +
+        '<td class="text-center">' +
+        '<div class="chexbox_mg">' +
+        '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + files.ServerRelativeUrl + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + files.Name + ', ' + CopyFileLink + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' +
+        '<label for="myCheckboxgd' + rowCount + '">' +
+        '<img onerror="showDefaultIcon(this);" width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '">' + checkOutHTML +
+        '</label>' +
+        '</div>' +
+        '</td>');
+    for (var j = 0; j < ColumnCount.length; j++) {
+        var cell = "";
+        if (ColumnCount[j].ColumnName == "Reference") {
+            ColumnCount[j].ColumnName = "DocumentNo"
+        }
+        /*if (ColumnCount[j].ColumnName == "Author") {
+            ColumnCount[j].ColumnName = "DocumentWrittenBy";
+        }*/
+        if ("Name" == ColumnCount[j].ColumnName) {
+
+            if (Type == "folder") {
+               // var encodeURILink = encodeURI(files.ServerRelativeUrl);
+               // var documentLink = "javascript:GetSubFolders('" + encodeURILink + "')";
+                var encodeURILink = fixedEncodeURIComponent(files.ServerRelativeUrl); //22 feb 23
+                var documentLink = "javascript:GetSubFolders('" + encodeURILink + "')";
+                cell = $('<td class="text-left">' +
+                    //'<a href="' + documentLink + '">' +
+                    //Bhawana
+                    '<a class="dms-table-ellipsis-2" href="' + documentLink + '">' +
+                    '<span class="ml-4 dms-table-ellipsis-2">' + files[ColumnCount[j].ColumnName] + '</span>' +
+                    '</a>' +
+                    '</td>');
+
+            } else {
+            	var NullValue = 'NullValue';
+                 var encodeFileRelURL = fixedEncodeURIComponent(files.ServerRelativeUrl); //.replaceAll("'", "''"));//Bhawana 17 jan 23
+                var fileSerRelURL = fixedEncodeURIComponent(files.ServerRelativeUrl); //.replaceAll("'", "''"));//Bhawana 17 jan 23
+               
+                cell = $('<td class="text-left">' +
+                //Bhawana added class in anchor
+                    '<a class="dms-table-ellipsis-2" href="javascript:void(0);"  data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '"   name="' + files.ServerRelativeUrl + '" onclick="DisplayFileProperty(\'' + SiteUrl + '\', \'' + DMS_Type + '\', \'' + currentFilePermission + '\', \'' + encodeFileRelURL + '\', \'' + Isinherit + '\', \'' + fileSerRelURL + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + cusLibURL + '\');">' +
+                    '<span class="ml-4 dms-table-ellipsis-2">' + files[ColumnCount[j].ColumnName] + '</span>' +
+                    '</a>' +
+                    '</td>');
+
+            }
+        } else if ("Title" == ColumnCount[j].ColumnName) {
+            if (files.ListItemAllFields[ColumnCount[j].ColumnName] == null || files.ListItemAllFields[ColumnCount[j].ColumnName] == undefined || files.ListItemAllFields[ColumnCount[j].ColumnName] == "null" || files.ListItemAllFields[ColumnCount[j].ColumnName] == "--select--" || files.ListItemAllFields[ColumnCount[j].ColumnName] == "-Select-") {
+                files.ListItemAllFields[ColumnCount[j].ColumnName] = '';
+            }
+
+            cell = $('<td class="text-left">' +
+                '<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+
+                '</td>');
+            
+
+        } else if ('Modified By' == ColumnCount[j].ColumnName) {
+            if (Type == "folder") {
+                var ModBy = getModifiedBy(files.ListItemAllFields.EditorId);
+            } else {
+                var ModBy = files.ModifiedBy.Title;
+            }
+            cell = $('<td class="text-left">' +
+                '<div class="dms-table-ellipsis-2">' + ModBy + '</div>' +
+
+            '</td>');
+            
+        } else if ('File Size' == ColumnCount[j].ColumnName) {
+            if (files.ListItemAllFields.FileSizeDisplay == "null" || files.ListItemAllFields.FileSizeDisplay == null || files.ListItemAllFields.FileSizeDisplay == undefined) {
+                files.ListItemAllFields.FileSizeDisplay = '';
+            } else {
+                files.ListItemAllFields.FileSizeDisplay = files.ListItemAllFields.FileSizeDisplay; //+ " KB";
+            }
+            cell = $('<td class="text-left">' +
+                '<div class="dms-table-ellipsis-2">' + bytesToSize(files.ListItemAllFields.FileSizeDisplay) + '</div>' +
+                '</td>');
+        } else if ("ApprovedByOutsider" == ColumnCount[j].ColumnName || "ApprovedBy" == ColumnCount[j].ColumnName) {
+
+            var ApprovedById = "Approval";
+
+            if (files.ListItemAllFields == undefined) {
+                var ApprovedDate = files.ApprovedDate;
+                var DateHTML = '';
+                if (ApprovedDate != null && ApprovedDate != "null" && ApprovedDate != undefined) {
+                    DateHTML = '<span class="ActionDate">' + ShowCommonStandardDateFormat(ApprovedDate) + '</span>';
+                } else {
+                    ApprovedDate = ''
+                }
+                if (files.ApprovalStatus == "Approved") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Approved by ' + files.ApprovedBy + '" style="color: rgb(0, 128, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
+                        DateHTML + '</div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } else if (files.ApprovalStatus == "Reject" || files.ApprovalStatus == "Rejected") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' +
+                        DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } 
+                else if (files.ApprovalStatus == "Cancelled") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' +
+                        DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
+                        '</td>');
+                }
+                else if (files.ApprovalStatus == "Pending") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } else {
+                    cell = $('<td>' +
+                        '</td>');
+                }
+
+            } else if (files.ListItemAllFields['Approval'] != undefined) {
+                var ApprovedDate = files.ListItemAllFields.ApprovedDate;
+                var DateHTML = '';
+                if (ApprovedDate != null && ApprovedDate != "null" && ApprovedDate != undefined) {
+                    DateHTML = '<span class="ActionDate">' + ShowCommonStandardDateFormat(ApprovedDate) + '</span>';
+                } else {
+                    ApprovedDate = ''
+                }
+                if (files.ListItemAllFields[ApprovedById] == "Approved") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Approved by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(0, 128, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
+                        DateHTML + '</div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } else if (files.ListItemAllFields[ApprovedById] == "Reject") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
+                        DateHTML + '</div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } 
+                else if (files.ListItemAllFields[ApprovedById] == "Cancelled") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
+                        DateHTML + '</div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                }
+                else {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                }
+
+            } else {
+                cell = $("<td />");
+            }
+
+
+        } else if (("Modified" == ColumnCount[j].ColumnName || "Modified Date" == ColumnCount[j].ColumnName)) {
+            var Modified = "Modified";
+            cell = $('<td class="text-left">' +
+                '<div class="dms-table-ellipsis-2">' + ShowCommonStandardDateFormat(files.ListItemAllFields[Modified]) + '</div>' +
+                '</td>');
+        } 
+        else if (ColumnCount[j].ColumnName == "DocumentType" || ColumnCount[j].ColumnName == "Category") {
+			cell = $("<td />");
+            if(files.ListItemAllFields['SubCategory'] != null && files.ListItemAllFields['SubCategory'] != "-Select-" && files.ListItemAllFields['SubCategory'] != "null") {
+            	cell.html(SubDocType + " (" +DocType+")");
+            }
+            else {
+            	cell.html(DocType);
+            }
+        }
+        else if ("FileValidity" == ColumnCount[j].ColumnName) {
+        	var VDate = '';
+            if (files.ListItemAllFields[ColumnCount[j].ColumnName] == null || files.ListItemAllFields[ColumnCount[j].ColumnName] == undefined || files.ListItemAllFields[ColumnCount[j].ColumnName] == "null") {
+                VDate = '';
+            }
+            else {
+            	VDate = moment(files.ListItemAllFields[ColumnCount[j].ColumnName]).format('MMM D, YYYY');
+            }
+
+            cell = $('<td class="text-left">' +
+                '<div class="dms-table-ellipsis-2">' + VDate + '</div>' +
+
+                '</td>');
+        }
+        else if (('Shared' == ColumnCount[j].ColumnName || 'Sharing' == ColumnCount[j].ColumnName)) {
+            var HistoryAction = "PageLoad";
+            var EveryonceHTML = '';
+            var ChatBoxHTML = '';
+            //4 April 23
+            if (files.ListItemAllFields == undefined) {
+            	//to Open Chat box
+            	if(Type != "folder"){
+	            	if (files.CommentCount != null && files.CommentCount != "null" && files.CommentCount != 0 && files.CommentCount != "0") {
+	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+	            	else {
+	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+            	}
+            
+                /*if (files.SharedId != null && files.SharedId != "null") {
+                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    if (files.SharedWithUsersId == null && files.AccessLevel == "Everyone") {
+                        cell = $('<td class="text-left" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML +ChatBoxHTML +
+                            '</td>');
+                    } else {
+                        if (files.AccessLevel == "Everyone") {
+                            EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                        }
+                       cell = $('<td class="text-left">' +
+                            '<div class="dms-table-ellipsis-2 shardHist" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' +
+                            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
+                            '</td>');
+
+                    }
+                } else {
+                    if (files.AccessLevel == "Everyone") {
+                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    }
+                    cell = $('<td class="text-left">' + EveryonceHTML +ChatBoxHTML + '</td>');
+                      
+
+                }*/
+                cell = $('<td class="text-left">' +ChatBoxHTML + '</td>');
+            } else if (files.ListItemAllFields.SharedId != null) {
+            	//to Open Chat box
+            	if(Type != "folder"){
+	            	if (files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+	            	else {
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+            	}
+                /*if (files.ListItemAllFields.SharedWithUsersId == null && files.ListItemAllFields.AccessLevel == "Everyone") {
+                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';;
+                    cell = $('<td class="text-left" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML +ChatBoxHTML +
+                        '</td>');
+
+                } else {
+                    if (files.ListItemAllFields.AccessLevel == "Everyone") {
+                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    }
+                    cell = $('<td class="text-left">' +
+                        '<div class="dms-table-ellipsis-2 shardHist" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' +
+                        '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
+                        '</td>');
+                }*/
+                cell = $('<td class="text-left">' +ChatBoxHTML + '</td>');
+            } else
+            {
+            	if(Type != "folder"){
+	            	if (files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+	            	else {
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            	}
+            	}
+                /*if (files.ListItemAllFields.AccessLevel == "Everyone") {
+                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                }*/
+               // cell = $('<td class="text-left">' + EveryonceHTML +ChatBoxHTML +                    '</td>');
+                cell = $('<td class="text-left">'+ChatBoxHTML +
+                    '</td>');
+
+            }
+        } else {
+            cell = $("<td />");
+            if (files.ListItemAllFields[ColumnCount[j].ColumnName] != undefined) {
+                var ApprovedDate = files.ListItemAllFields.ApprovedDate;
+                var DateHTML = '';
+                if (ApprovedDate != null && ApprovedDate != "null" && ApprovedDate != undefined) {
+                    DateHTML = '<span class="ActionDate">' + ShowCommonStandardDateFormat(ApprovedDate) + '</span>';
+                } else {
+                    ApprovedDate = ''
+                }
+                if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Approved") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" title="Approved by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(0, 128, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        DateHTML + '</div>' +
+                        //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
+                        '</td>');
+                } else if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Rejected" || files.ListItemAllFields[ColumnCount[j].ColumnName] == "Reject") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" title="Rejected by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(255, 0, 0);">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        DateHTML + '</div>' +
+                        '</td>');
+                } else if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Pending") {
+                    cell = $('<td class="text-left">' +
+                        '<div class="detail-title ellipsis-2" style="color: rgb(0, 128, 0);" title="Pending">' +
+                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        DateHTML + '</div>' +
+                        '</td>')
+                } else {
+
+                    if (ColumnCount[j].DataType == "Date") {
+                        cell.html(moment(files.ListItemAllFields[ColumnCount[j].ColumnName]).format('MMM D, YYYY'));
+                    } else {
+
+                        cell.html(files.ListItemAllFields[ColumnCount[j].ColumnName]);
+                    }
+                }
+            }
+        }
+        tr.append(cell);
+    }
+    $("#groupDocumentGridtbody").append(tr);
+}
+
+function showDefaultIcon(img)
+{
+ img.src='../SiteAssets/MyDocuments/DMS/assets/images/file.png';
+}
+//get MOdified by User Id
+function getModifiedBy(userid) {
+    var ModBy = '';
+    var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + userid + ")";
+    var requestHeaders = {
+        "accept": "application/json;odata=verbose"
+    };
+    $.ajax({
+        url: requestUri,
+        contentType: "application/json;odata=verbose",
+        headers: requestHeaders,
+        async: false,
+        success: function(data) {
+            ModBy = data.d.Title;
+            $("#CommentModEmail").text(data.d.Email);
+			$("#CommentModEmail").click(function () {
+		        OpenEmail(data.d.Email);
+		    });
+		    $("#CommentModImage").prop('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(data.d.Email));
+        },
+        error: function(result) {
+            console.log(JSON.stringify(result));
+        }
+    });
+    return ModBy;
+}
+
+function bytesToSize(bytes) {
+    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    //bytes=parseInt(bytes);
+    if (bytes == 0) return '';
+    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+    return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+}
+
+//get user permissions on the selected Library
+function getListUserEffectivePermissions(webUrl, listTitle, Isfiles, ItemId, accountName) {
+    try {
+        RequestDigest = $("#__REQUESTDIGEST").val();
+        if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+            $.when(GetFormDigestValue(webUrl)).done(function (GetFormDigestValue) {
+                RequestDigest = GetFormDigestValue
+            });
+        }
+        var endpointUrl = "";
+        if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+            $.when(GetFormDigestValue(webUrl)).done(function(GetFormDigestValue) {
+                RequestDigest = GetFormDigestValue
+            });
+        }
+        if (Isfiles) {
+            endpointUrl = webUrl + "/_api/web/lists/getbytitle('" + listTitle + "')/items('" + ItemId + "')/getusereffectivepermissions(@u)?@u='" + encodeURIComponent(accountName) + "'";
+        } else {
+            endpointUrl = webUrl + "/_api/web/lists/getbytitle('" + listTitle + "')/getusereffectivepermissions(@u)?@u='" + encodeURIComponent(accountName) + "'";
+        }
+        getJson(endpointUrl).done(function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            IsNotpermission = true;
+            parseBasePermissions(data.d.GetUserEffectivePermissions);
+        }).fail(function (error) {
+            IsNotpermission = false;
+            console.log(JSON.stringify(error));
+        });
+    }
+    catch (err) {
+        alert(err);
+    }
+    return IsNotpermission;
+}
+
+function parseBasePermissions(value) {
+    var permissions = new SP.BasePermissions();
+    permissions.initPropertiesFromJson(value);
+    IsFullControl = permissions.has(SP.PermissionKind.manageLists);
+    IsContributor = permissions.has(SP.PermissionKind.addListItems);
+    IsdeleteListItems = permissions.has(SP.PermissionKind.deleteListItems);
+    var permLevels = [];
+    for (var permLevelName in SP.PermissionKind.prototype) {
+        if (SP.PermissionKind.hasOwnProperty(permLevelName)) {
+            var permLevel = SP.PermissionKind.parse(permLevelName);
+            if (permissions.has(permLevel)) {
+                permLevels.push(permLevelName);
+            }
+        }
+    }
+    return permLevels;
+}
+
+/*start json call function*/
+function getJson(url) {
+    return $.ajax({
+        url: url,
+        type: "GET",
+        async: false,
+        contentType: "application/json;odata=verbose",
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest
+        }
+    });
+}
+
+//On click of edit button it will open edit format in Iframe
+function OpenEditIframe(LINK) {
+	var container = $("#File-viewer").empty();
+	clearInterval(IntervalId);
+	if ($("#FileName").text().match(/\.(jpeg|jpg|gif|png)$/) != null) {
+		$('<iframe>', {
+            src: LINK,
+            id: 'iframeFile-viewer',
+            frameborder: 0,
+            scrolling: 'yes',
+            width: '100%',
+            height: '98%'
+        }).appendTo(container);
+	}
+	else {
+		$('<iframe>', {
+            src: LINK,
+            id: 'iframeFile-viewer',
+            frameborder: 0,
+            scrolling: 'yes',
+            width: '100%',
+            height: '98%'
+        }).appendTo(container);
+	}
+	$("#btnApproval").hide();
+	$("#btnDeleteFile").hide();
+	$("#btnMoveFile").hide();
+	$("#btnRenameFile").hide();
+	//$("#btnPopupShare").hide();//4 April 23
+
+	$("#btnPopupLock").hide();
+	$("#btnPopupChangeprop").hide();
+	/*IntervalId = setInterval(function () {
+		$("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+        //Bhawana start
+        //To hide OOTB ribbon in txt file.
+        //$("#iframeFile-viewer").contents().find(".od-TextFileEditor-topBar").remove();
+		$("#iframeFile-viewer").contents().find(".root-74").remove();
+		$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
+		$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove()
+		$("#iframeFile-viewer").contents().find(".od-TextFileEditor-title-bar").remove();
+        //End
+	}, 2000);*/
+    IntervalId = setInterval(function () {
+                $("#iframeFile-viewer").contents().find("button[name=Close].ms-CommandBarItem-link").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=copy-link].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=share].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=overflowButton].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=showProperties].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=fileTitle].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[name=Open].ms-Button--commandBar").remove();        
+	}, 2000);
+
+}
+
+//Open modal for display the file properties //getfilebyserverrelativeurl
+function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelUrl, Isinherit, DiaplayServerRelUrl, rel, Mode,LibUrl,MataDataReq,SharedMsg) {
+    SharedMsg=fixedDecodeURIComponent(SharedMsg);//24 April 23
+    
+    //CopySourceURL = SiteURL;
+    CopySourceURL = CommentSiteURL = SiteURL;//Bhawana
+    if(MataDataReq==true||MataDataReq=='true')
+    {
+        $("#divFileViewerProperties").hide();
+        $("#txtDocComments").hide();
+    }
+    else
+    {
+        $("#divFileViewerProperties").show();
+        $("#txtDocComments").show();
+    }
+    //if (FileServerRelUrl != "NullValue" && $(".headdingLinks").text() != 'Shared with Me' && $(".headdingLinks").text() != 'Shared by Me' && $(".headdingLinks").text() != 'Archive' && $(".headdingLinks").text() != 'Advance Search') {
+    if (FileServerRelUrl != "NullValue" && currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe' && currentSectionType != 'Archive' && currentSectionType != 'Advance Search') {   
+        IsStopInheritancePermissions = Boolean.parse(Isinherit);
+        Filepath = FileServerRelUrl;
+    }
+    $(".chkFileFolder").prop("checked", false);
+    $('#selectAllChk').prop("checked", false);
+    arrFileFolder = [];
+    $("#txtFavorite").text("Add to Favorite");
+    $('.unfillstar').show();
+    $('.fillstar').hide();
+    FavouriteId = '';
+    $(".btnNotSharedTab").show();
+    $("#btnPopupShare").hide();//4 April 23
+    /*6 feb 23
+    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0) {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("Documents", "Shared%20Documents");
+    }*/
+    DiaplayServerRelUrl=fixedDecodeURIComponent(DiaplayServerRelUrl);
+    if (DiaplayServerRelUrl.includes('/Documents/') == true) {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Documents/", "/Shared Documents/");//Bcz we are encoding later
+    }
+    else if (DiaplayServerRelUrl.includes('/Shared%20Documents/') == true)//Bhawana 2 jan 23
+    {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Shared%20Documents/", "/Shared Documents/");//Bcz we are encoding later
+    }
+    $("#modalDownloadBtn").show();
+    $("#divEditView").show();
+    if (CurrentPermission == "Restricted View") {
+        $("#modalDownloadBtn").hide();
+        $("#divEditView").hide();
+    }
+    var tempAction = '';
+    $("#btnDeleteFile").show();
+    $("#btnPopupRename").show();
+    $("#btnPopupLock").show();
+    $("#btnPopupChangeprop").show();
+    $("#btnApproval").show();
+    $(".customColModal").remove();
+    var customColQ = '';
+    customColQ = AddCustomColPopup();
+    var webURL = SiteURL + "/_api/web/GetFileByServerRelativePath(decodedurl='" + fixedEncodeURIComponent(DiaplayServerRelUrl) + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=*, LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
+        "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+   // var webURL = SiteURL + "/_api/web/GetFileByServerRelativeUrl('" + DiaplayServerRelUrl + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select= LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
+     //   "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+    while (customColQ.indexOf("ListItemAllFields/") != -1) {
+        customColQ = customColQ.replace("ListItemAllFields/", "");
+    }
+    customColQ = customColQ.substring(0, customColQ.length - 1);
+    $.ajax({
+        url: webURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var FileValue = data.d.ListItemAllFields;
+            var propertiesServerRelativeUrl = FileValue.ServerRedirectedEmbedUri;
+            DocumentId = data.d.ListItemAllFields.Id;
+            SelectedFileServerURL = tempAction = DiaplayServerRelUrl;
+
+            FileCheckOutBy = getCheckedOutBy();
+            if (_spPageContextInfo.userDisplayName != FileCheckOutBy && FileCheckOutBy != "" && FileCheckOutBy != null) {
+                $("#lockeffect .texthere").text("Unlock");
+                $("#lockeffect").hide();
+                $("#LockStatus").show();
+                $("#LockStatus").text("Locked by: " + FileCheckOutBy);
+                $('#lockeffect .unlock').hide();
+                $('#lockeffect .lock').show();
+                $("#lockeffect").attr("disabled", "disabled");
+                $(".LockDisable").attr("disabled", "disabled");
+                $("#lockeffect").attr("disabled", "disabled");
+                $("#divEditView").hide();
+                $("#btnChangeProp").hide();
+                $("#btnApproval").hide();
+                if (FilePermissions == 'Full Control') {
+                    $("#btnUndoLock").show();
+                }
+            } else {
+                if (_spPageContextInfo.userDisplayName == FileCheckOutBy) {
+                    $("#LockStatus").show();
+                    $("#LockStatus").text("Locked by me");
+                    $("#lockeffect .texthere").text("Unlock");
+                    $(".LockDisable").attr("disabled", "disabled");
+                    $("#btnChangeProp").hide();
+                    $("#btnApproval").hide();
+                } else {
+                    $("#lockeffect .texthere").text("Lock");
+                    $("#LockStatus").hide();
+                    $(".LockDisable").prop("disabled", "");
+                    $("#btnChangeProp").show();
+                    if (CurrentPermission != "Restricted View") {
+                        $("#divEditView").show();
+                    }
+                }
+                $("#lockeffect").prop("disabled", "");
+            }
+
+            if (propertiesServerRelativeUrl == null) {
+                propertiesServerRelativeUrl = window.location.origin + DiaplayServerRelUrl;
+
+                if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true || DiaplayServerRelUrl.includes("DepartmentalDMS") == true) {
+                    if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true) {
+                        CopyLibrary = "DocumentManagementSystem";
+                        $(".txtCopyLink").val(SiteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(DiaplayServerRelUrl,"href") + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                    } else {
+                        CopyLibrary = "DepartmentalDMS";
+                        $(".txtCopyLink").val(SiteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(DiaplayServerRelUrl,"href") + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                    }
+                } else {
+                    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0 || Documentname == undefined || Documentname == '') {
+                        CopyLibrary = "Documents";
+                        Documentname = '';
+                    }
+                    else {
+                        if (Documentname.indexOf('/') != -1) {
+                            CopyLibrary = Documentname.split('/')[0];
+                        } else {
+                            CopyLibrary = Documentname;
+                        }
+                    }
+                    var HostName = window.location.origin + DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0);
+                    $(".txtCopyLink").val(HostName + "/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(DiaplayServerRelUrl,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                }
+            } else {
+                if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true) {
+                    CopyLibrary = "DocumentManagementSystem";
+                } else if (DiaplayServerRelUrl.includes("DepartmentalDMS") == true) {
+                    CopyLibrary = "DepartmentalDMS";
+                } else {
+                    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0 || Documentname == undefined || Documentname == '') {
+                        CopyLibrary = "Documents";
+                        Documentname = '';
+                    }
+                    else {
+                        if (Documentname.indexOf('/') != -1) {
+                            CopyLibrary = Documentname.split('/')[0];
+                        } else {
+                            CopyLibrary = Documentname;
+                        }
+                    }
+                }
+                $(".txtCopyLink").val(propertiesServerRelativeUrl);
+            }
+
+            //$("#DownloadDocs").prop("href", window.location.origin + DiaplayServerRelUrl);            
+            $("#DownloadDocs").prop("href", window.location.origin +"/sites/" +fixedEncodeURIComponent(DiaplayServerRelUrl.split("/sites/")[1],"href"));//18 jan 23
+            $("#DownloadDocs").prop("download",FileValue.FileLeafRef);
+            $("#btnFileFullView").prop("href", propertiesServerRelativeUrl);
+            if (FileValue.FileLeafRef.includes(".pdf") == true||FileValue.FileLeafRef.includes(".dwg") == true)
+             {//to check if it's PDF
+                if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                    tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                }
+                var PDFLINK='';
+                if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+               { 
+               PDFLINK= LibUrl +"/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                propertiesServerRelativeUrl=LibUrl +"/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+            }
+            else
+            {
+                PDFLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                propertiesServerRelativeUrl= DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";          
+            }
+                $(".txtCopyLink").val(PDFLINK);
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                EditFileLink = PDFLINK;
+                $("#btnEditViewFile").click(function () {
+                    OpenEditIframe(PDFLINK);
+                });
+            }
+            else if (FileValue.FileLeafRef.includes(".txt") == true) {//to check if it's txt 
+                if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                    tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                }
+                var txtLINK='';
+                if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+               { 
+               propertiesServerRelativeUrl= LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                txtLINK = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";        
+               }
+               else{
+                propertiesServerRelativeUrl = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";        }
+                $(".txtCopyLink").val(txtLINK);
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                EditFileLink = txtLINK;
+                $("#btnEditViewFile").click(function () {
+                    OpenEditIframe(txtLINK);
+                });
+            }
+            else {
+                if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xlsx" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xls" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "csv") {
+                    propertiesServerRelativeUrl = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
+                    $(".txtCopyLink").val(propertiesServerRelativeUrl);
+                    $("#btnFileFullView").prop("href", propertiesServerRelativeUrl);
+                }
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "docx") {
+                    //Bhawana
+                    if (CurrentPermission == 'Restricted View') 
+                        propertiesServerRelativeUrl=propertiesServerRelativeUrl.replace('interactivepreview', 'default');
+
+                    EditFileLink = propertiesServerRelativeUrl.replace('interactivepreview', 'edit&wdAccPdf=0&wdEmbedFS=1');
+                    $("#btnEditViewFile").click(function () {
+                        OpenEditIframe(EditFileLink);
+                    });
+                }
+                else {
+                    EditFileLink = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
+                    $("#btnEditViewFile").click(function () {
+                        OpenEditIframe(EditFileLink);
+                    });
+                }
+            }
+
+            var container = $("#File-viewer").empty();
+            if (FileValue.FileLeafRef.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+                if (CurrentPermission == 'Restricted View') {
+                    if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                        tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                    }
+                    var ImageLINK='';
+                    if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+                    { 
+                        ImageLINK = LibUrl +"/Forms/AllItems.aspx?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" +fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                                
+                    }
+                    else 
+                    ImageLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                    $(".txtCopyLink").val(ImageLINK);
+                    $('<iframe>', {
+                        src: ImageLINK,
+                        id: 'iframeFile-viewer',
+                        frameborder: 0,
+                        scrolling: 'yes',
+                        width: '100%',
+                        height: '98%'
+                    }).appendTo(container);
+                    $("#btnFileFullView").prop("href", ImageLINK);
+                }
+                else {
+                    $('#File-viewer').html("<div class='FlexingBox'><img class='AdjustingSize' src='" + propertiesServerRelativeUrl + "'/></div>");
+                }
+            }
+            else {
+                var Extension = FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1);//data.d.ListItemAllFields.FileLeafRef.substr(data.d.ListItemAllFields.FileLeafRef.length - 3)
+                if (Extension == "wmv" || Extension == "avi" || Extension == "mp3" || Extension == "mp4" || Extension == "webm" || Extension == "wma" || Extension == "one" || Extension == "tif" || Extension == "tiff" || Extension == "pdf" || Extension == "mov") {
+                    propertiesServerRelativeUrl = $(".txtCopyLink").val();
+                } else if(Extension == "csv" || Extension == "doc" || Extension == "xlx")
+                {
+                propertiesServerRelativeUrl = $(".txtCopyLink").val()+"?web=1"
+                }
+                else {
+                    if (CurrentPermission == 'Restricted View') {
+                        propertiesServerRelativeUrl = EditFileLink;
+                        $(".txtCopyLink").val(EditFileLink);
+                        if (Extension == "pptx") {
+                            propertiesServerRelativeUrl = $(".txtCopyLink").val()
+                        }
+                        $("#btnFileFullView").prop("href", EditFileLink);
+                    }
+                }
+                if (Mode == 'EditMode') {
+                    propertiesServerRelativeUrl = EditFileLink;
+                }
+
+                //Bind File in Iframe
+                $('<iframe>', {
+                    src: propertiesServerRelativeUrl,
+                    id: 'iframeFile-viewer',
+                    frameborder: 0,
+                    scrolling: 'yes',
+                    width: '100%',
+                    height: '98%'
+                }).appendTo(container);
+            }
+            if (FileValue.SecurityLevel == null || FileValue.SecurityLevel == "Private") {
+                if (FileValue.AccessLevel == 'Everyone') {
+                    $('#FileSharing').text("Shared with Everyone");
+                    $(".txtSharingHistoy").show();
+                }
+                else {
+                    FileValue.SecurityLevel = "Not shared";
+                    $('#FileSharing').text(FileValue.SecurityLevel);
+                    $(".txtSharingHistoy").hide();
+                }
+            }
+            else {
+                $('#FileSharing').text("Shared with " + FileValue.SecurityLevel);
+                $(".txtSharingHistoy").show();
+            }
+            //if ($('.headdingLinks').text() == "Shared by Me") {
+                if (currentSectionType == "SharedByMe") {
+                $(".btnNotSharedTab").hide();
+                $(".txtSharingHistoy").show();
+                getSharingInfo(DocumentId);
+                 $("#btnPopupChangeprop").hide();//6 feb 23
+            }
+            else //if ($('.headdingLinks').text() == "Shared with Me") {
+                if (currentSectionType == "SharedWithMe") {
+                $(".btnNotSharedTab").hide();
+                getSingleShareInfo(DocumentId, rel);
+            }            //Custom Column
+            var tempCustom = [];
+            if (customColQ != '') {
+                tempCustom = customColQ.split(',');
+                for (cus = 0; cus < tempCustom.length; cus++) {
+                    if (new Date(FileValue[tempCustom[cus]]) != "Invalid Date") {
+                        if (FileValue[tempCustom[cus]] != null && FileValue[tempCustom[cus]] != "null") {
+                            $("#CustomPopup" + tempCustom[cus]).text(ShowCommonStandardDateFormat(FileValue[tempCustom[cus]]));
+                        }
+                    }
+                    else {
+                        $("#CustomPopup" + tempCustom[cus]).text(FileValue[tempCustom[cus]] ? FileValue[tempCustom[cus]] : "");
+                    }
+                }
+            }
+            //Bhawana
+            //strt
+            $('#FileTitle').text(FileValue.Title ? FileValue.Title : "");
+            $('#CommentFileTitle').text(FileValue.Title ? FileValue.Title : "");
+            if (FileValue.SubCategory != "--select--" && FileValue.SubCategory != null && FileValue.SubCategory != "-Select-") {
+                $('#FileDocSubType').text(FileValue.SubCategory);
+                if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                    $('#FileDocType').text(" (" + FileValue.DocumentType + ")");
+                    $('#CommentFileDocType').text(FileValue.DocumentType);
+                }
+                else {
+                    $('#CommentFileDocType').text('');
+                    $('#FileDocType').text('');
+                }
+            }
+            else {
+                $('#FileDocSubType').text('');
+                if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                    $('#FileDocType').text(FileValue.DocumentType);
+                    $('#CommentFileDocType').text(FileValue.DocumentType);
+                }
+                else {
+                    $('#CommentFileDocType').text('');
+                }
+
+            }
+             $('#CommentFileName').text(FileValue.FileLeafRef);
+            $('#FileLastModified').text( ShowCommonStandardDateFormat(FileValue.Modified));          
+            $('#FileLastModifiedBy').text(GetUserFullName(FileValue.Modified_x0020_By));
+            $('#CommentModify').text($('#FileLastModifiedBy').text());
+            $('#CommentModTime').text($('#FileLastModified').text());
+            $("#CommentModEmail").text("");
+            $("#CommentModEmail").text(FileValue.Modified_x0020_By.split('|')[2]);            
+	        $("#CommentModImage").prop('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileValue.Modified_x0020_By.split('|')[2]));
+            $("#CommentModEmail").click(function () {
+                OpenEmail(FileValue.Modified_x0020_By.split('|')[2]);
+            });
+            //end
+            if(MataDataReq!=true)
+            {
+                $('#FileTitle').text(FileValue.Title ? FileValue.Title : "");
+                if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                    $('#FileDocType').text(FileValue.DocumentType);
+                }
+                $('#FileReference').text(FileValue.DocumentNo ? FileValue.DocumentNo : "");
+                $('#FileAuthorPopup').text(FileValue.DocumentWrittenBy ? FileValue.DocumentWrittenBy : "");
+                $('#FileDetalis').text(FileValue.Details ? FileValue.Details : "");
+                if (FileValue.FileValidity != null && FileValue.FileValidity != "" && FileValue.FileValidity != "null") {
+                    $('#FileValidityPopup').text(moment(FileValue.FileValidity).format('MMM D, YYYY'));
+                }
+                else {
+                    $('#FileValidityPopup').text("");
+                }
+
+            }
+            $("#lblSharingMsg").text(SharedMsg!=undefined&&SharedMsg!=null&&SharedMsg!='undefined'&&SharedMsg!='null'?SharedMsg:"");//6 feb 23            
+            $('#FileReference').text(FileValue.DocumentNo ? FileValue.DocumentNo : "");
+            $('#FileAuthorPopup').text(FileValue.DocumentWrittenBy ? FileValue.DocumentWrittenBy : "");
+            $('#FileDetalis').text(FileValue.Details ? FileValue.Details : "");
+            if (FileValue.FileValidity != null && FileValue.FileValidity != "" && FileValue.FileValidity != "null") {
+                $('#FileValidityPopup').text(moment(FileValue.FileValidity).format('MMM D, YYYY'));
+            }
+            else {
+                $('#FileValidityPopup').text("");
+            }
+            $('#FileApproval').text(FileValue.Approval ? FileValue.Approval : "");
+            $(".FileApprovalPDF").empty();
+            if (FileValue.Approval == "Approved") {
+                FinalApprovalFile('');
+                $(".ApproveSign").show();
+                $(".RejectSign").hide();
+                $("#FileApproval").css('color', 'Green');
+            }
+            else if (FileValue.Approval == "Reject" || FileValue.Approval == "Rejected") {
+                $(".RejectSign").show();
+                $(".ApproveSign").hide();
+                $("#FileApproval").css('color', 'Red');
+            }
+            else {
+                $(".RejectSign").hide();
+                $(".ApproveSign").hide();
+                $("#FileApproval").css('color', 'Black');
+            }
+
+            if (FileValue.Approval != "" && FileValue.Approval != null) {
+                if ($("#btnChangeProp").css('display') != "none") {
+                    //$("#btnApproval").hide();
+                }
+                $(".btnApprovalDetails").show();
+            }
+            else {
+                if ($("#btnChangeProp").css('display') != "none") {
+                    $("#btnApproval").show();
+                }
+                $(".btnApprovalDetails").hide();
+            }
+            $('#FilePath').text(DiaplayServerRelUrl);
+            $('#FileName').text(FileValue.FileLeafRef);
+            $('#txtRenamefile').val(FileValue.FileLeafRef.split('.').slice(0, -1).join('.'));
+            $("#txtFileExt").text("." + FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1));
+            //$('#FileLastModified').text(moment(FileValue.Last_x0020_Modified).format('DD-MM-YYYY HH:MM:SS'));
+            //$('#FileLastModifiedBy').text(GetUserFullName(FileValue.Modified_x0020_By));
+            //$('#FileSize').text(FileValue.FileSizeDisplay + " KB");
+            $('#FileSize').text(bytesToSize(FileValue.FileSizeDisplay));
+            ;
+            $('#LibProject').text(Library);
+            //PermissionsControl(FileValue);
+            /*IntervalId = setInterval(function () {
+                $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+                $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+                $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+                if (Mode == 'EditMode' || Extension == "xlsx") {
+                    $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+                    $("#File-viewer").addClass("hideshare");//6 feb 23
+                }
+                //Bhawana start
+                if (Mode == 'EditMode' || Extension == "txt") {
+	                $("#iframeFile-viewer").contents().find(".root-74").remove();
+					$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
+					$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove()
+				}
+                //End
+            }, 2000);*/
+            IntervalId = setInterval(function () {
+               // $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+              //  $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+              //  $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+              
+              if (Mode == 'NullValue')
+              {
+              $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+               $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+               $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+               $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+
+              
+              }
+                
+                if (Mode == 'EditMode' && Extension == "xlsx") {
+                    $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+                   
+                }
+               if (Mode == 'EditMode' || Extension == "txt") {
+	               // $("#iframeFile-viewer").contents().find(".root-74").remove();
+					//$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
+				//	$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove();
+				$("#iframeFile-viewer").contents().find("button[name=Close].ms-CommandBarItem-link").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=copy-link].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=share].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=overflowButton].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=showProperties].ms-Button--commandBar").remove();
+				$("#iframeFile-viewer").contents().find("button[data-automationid=fileTitle].ms-CommandBarItem-link").remove();
+				
+
+				//var closeButton = document.querySelector('[data-automationid="close"]');
+				
+				}
+                //$("#iframeFile-viewer").contents().find("#Header").remove();
+                //$("#iframeFile-viewer").contents().find("#Ribbon").remove();
+                //$("#iframeFile-viewer").contents().find("#AdditionalBars").remove();
+               
+                
+
+            }, 2000);
+           
+
+             $("#liSahringMsg").hide();//6 feb 23            
+            $('#FileVersion').text(data.d.UIVersionLabel);//Comment on 10 April 23 
+             if (CurrentPermission != "Restricted View") //25 April 23
+             {
+                  GetFileVersion(DiaplayServerRelUrl, SiteURL, FileValue.FileLeafRef, FileValue.Title ? FileValue.Title : "");   
+            }    
+           
+            AddFileViewCount();
+            if (Mode == 'EditMode') {
+                $("#btnApproval").hide();
+                $("#btnDeleteFile").hide();
+                $("#btnMoveFile").hide();
+                $("#btnRenameFile").hide();
+               // $("#btnPopupShare").hide();//4 April 23
+
+                $("#btnPopupLock").hide();
+                $("#btnPopupChangeprop").hide();
+            }
+            else {
+                $("#btnApproval").show();
+                $("#btnMoveFile").show();
+                $("#btnRenameFile").show();
+                //$("#btnPopupShare").show();//4 April 23
+
+                $("#btnPopupLock").show();
+                $("#btnDeleteFile").show();
+                $("#btnPopupChangeprop").show();
+            }
+            //if ($(".headdingLinks").text() == 'Shared with Me' || $(".headdingLinks").text() == 'Shared by Me' || $(".headdingLinks").text() == 'Archive') {
+            if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive') {
+                $(".ShareSectionAct").show();
+                $(".otherSectAct").hide();
+                $(".btnNotSharedTab").hide();
+                $("#liSahringMsg").show();//6 feb 23  
+                //6 feb 23
+                if(MataDataReq!=undefined&&(MataDataReq==true||MataDataReq=='true'))
+                {
+                    $("#divFileViewerProperties").hide();
+                    $("#divFileViewerFileDetails").hide();
+                }
+                else{
+                    $("#divFileViewerProperties").show();
+                    $("#divFileViewerFileDetails").show();
+                }
+                $("#txtDocComments").hide();
+                $("#VerHisParent").hide();
+                $("#AuditHisParent").hide();
+                $("#fileDetailCopyLink").hide();
+                //10 April 23
+                if(CurrentPermission!=undefined&&CurrentPermission!=null&&CurrentPermission!="undefined"&&CurrentPermission!='null')
+                {
+                    if(CurrentPermission=="Full Control"||CurrentPermission=="Contribute")
+                    {
+                        $("#VerHisParent").show();
+                         $("#AuditHisParent").show();
+                    }
+                }
+            
+                //10 April 23
+            }
+            else {
+                $(".ShareSectionAct").hide();
+                $(".otherSectAct").show();
+                $(".btnNotSharedTab").show();
+                $("#btnPopupShare").hide();//4 April 23
+                $("#liSahringMsg").hide();//6 feb 23  
+                //6 feb 23
+                 $("#divFileViewerProperties").show();
+                $("#divFileViewerFileDetails").show();
+                $("#txtDocComments").show();
+                $("#VerHisParent").show();
+                $("#AuditHisParent").show();
+                $("#fileDetailCopyLink").show();
+                 $("#btnChangeProp").show();
+            }
+            if(currentSectionType== "SharedWithMe")//6 feb 23
+            {
+                $('.txtSharingHistoy').hide();
+            }
+            if (currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe' && currentSectionType != 'Archive') {
+                getListUserEffectivePermissions(SiteURL, listTitle, true, DocumentId, 'i:0#.f|membership|' + _spPageContextInfo.userPrincipalName + '');
+                if (IsNotpermission == true) {
+                    if (IsContributor == true && IsFullControl == false) { //Contributor
+                        $("#btnDeleteFile").show();
+                        $("#divEditView").show();
+                        $("#btnPopupRename").show();
+                        $("#btnPopupLock").show();
+                        $("#btnPopupChangeprop").show();
+                        $("#btnApproval").show();
+                    }
+                    else if (IsContributor == false && IsFullControl == false) { //Reader
+                        $("#btnDeleteFile").hide();
+                        $("#divEditView").hide();
+                        $("#btnPopupRename").hide();
+                        $("#btnPopupLock").hide();
+                        $("#btnPopupChangeprop").hide();
+                        $("#btnApproval").hide();
+                    }
+                    if (IsdeleteListItems == true) {
+                        $("#btnDeleteFile").show();
+                    }
+                }
+                else {
+                    if (arrPermission.length > 0) {
+                        if (arrPermission[0].UserContri == true) {
+                            $("#btnDeleteFile").show();
+                            $("#btnPopupRename").show();
+                            if (CurrentPermission != "Restricted View") {
+                                $("#divEditView").show();
+                            }
+                            $("#btnPopupLock").show();
+                            $("#btnPopupChangeprop").show();
+                            $("#btnApproval").show();
+                        }
+                        else if (arrPermission[0].UserReader == true) {
+                            $("#btnDeleteFile").hide();
+                            $("#btnPopupRename").hide();
+                            $("#divEditView").hide();
+                            $("#btnPopupLock").hide();
+                            $("#btnPopupChangeprop").hide();
+                            $("#btnApproval").hide();
+                        }
+                    }
+                }
+            }
+            if (currentSectionType =="ProjectDocuments")
+            {                
+                $("#btnApproval").hide();
+                $("#btnMoveFile").hide();
+                $("#btnRenameFile").hide();
+                //$("#btnPopupShare").hide();//4 April 23
+                $("#btnPopupLock").hide();
+                $("#btnDeleteFile").hide();
+                $("#btnPopupChangeprop").hide();
+                $("#divEditView").hide();
+                $("#btnPopupRename").hide();
+                $("#btnPopupLock").hide();
+               // $("#modalDownloadBtn").hide();
+                 $("#btnPopupNotify").hide();
+                 //31 March 23
+                 if (arrPermission.length > 0 && arrPermission[0].UserRestrict!=null&&arrPermission[0].UserRestrict!='null'&&arrPermission[0].UserRestrict!=undefined&&arrPermission[0].UserRestrict!='undefined'&&arrPermission[0].UserRestrict == true) {
+                            $("#modalDownloadBtn").hide();
+                }
+            }
+            //Hide for all//3 March 23
+            $("#txtDocComments").hide();
+           // $("#VerHisParent").hide();
+           // $("#AuditHisParent").hide();
+            $("#fileDetailCopyLink").hide();
+        },
+        eror: function (data) {
+            $('#ModalDisplayProperty').modal('show');
+            console.log(JSON.stringify(data));
+           // if ($(".headdingLinks").text() == "Shared by Me" || $(".headdingLinks").text() == "Shared with Me" || $(".headdingLinks").text() == "Archive") {
+                if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive'){ 
+                $(".btnNotSharedTab").hide();
+            }
+            else {
+                $(".btnNotSharedTab").show();
+                $("#btnPopupShare").hide();//4 April 23
+            }
+        }
+    }).fail(function (error) {
+        if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0) {
+            alert('Attempted to perform an unauthorized operation');
+        }
+        else {
+            alert(error.responseJSON.error.message.value);
+        }
+        //if ($(".headdingLinks").text() == "Shared by Me" || $(".headdingLinks").text() == "Shared with Me" || $(".headdingLinks").text() == "Archive") {
+            if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive'){ 
+            $(".btnNotSharedTab").hide();
+        }
+        else {
+            $(".btnNotSharedTab").show();
+            $("#btnPopupShare").hide();//4 April 23
+        }
+        return false;
+    });
+}
+function DisplayFileProperty_Old(SiteURL, Library, CurrentPermission, FileServerRelUrl, Isinherit, DiaplayServerRelUrl, rel, Mode,LibUrl) {
+    //CopySourceURL = SiteURL;
+    CopySourceURL = CommentSiteURL = SiteURL;//Bhawana
+    //if (FileServerRelUrl != "NullValue" && $(".headdingLinks").text() != 'Shared with Me' && $(".headdingLinks").text() != 'Shared by Me' && $(".headdingLinks").text() != 'Archive' && $(".headdingLinks").text() != 'Advance Search') {
+        if (FileServerRelUrl != "NullValue" && currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe' && currentSectionType != 'Archive' && currentSectionType != 'Advance Search') {
+            
+        
+        IsStopInheritancePermissions = Boolean.parse(Isinherit);
+        Filepath = FileServerRelUrl;
+    }
+    $(".chkFileFolder").prop("checked", false);
+    $('#selectAllChk').prop("checked", false);
+    arrFileFolder = [];
+    $("#txtFavorite").text("Add to Favorite");
+    $('.unfillstar').show();
+    $('.fillstar').hide();
+    FavouriteId = '';
+    $(".btnNotSharedTab").show();
+    $("#btnPopupShare").hide();//4 April 23
+    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0) {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("Documents", "Shared%20Documents");
+    }
+    $("#modalDownloadBtn").show();
+    $("#divEditView").show();
+    if (CurrentPermission == "Restricted View") {
+        $("#modalDownloadBtn").hide();
+        $("#divEditView").hide();
+    }
+    var tempAction = '';
+    $("#btnDeleteFile").show();
+    $("#btnPopupRename").show();
+    $("#btnPopupLock").show();
+    $("#btnPopupChangeprop").show();
+    $("#btnApproval").show();
+    $(".customColModal").remove();
+    var customColQ = '';
+    customColQ = AddCustomColPopup();
+    var webURL = SiteURL + "/_api/web/GetFileByServerRelativeUrl('" + DiaplayServerRelUrl + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select= LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
+        "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+    while (customColQ.indexOf("ListItemAllFields/") != -1) {
+        customColQ = customColQ.replace("ListItemAllFields/", "");
+    }
+    customColQ = customColQ.substring(0, customColQ.length - 1);
+    $.ajax({
+        url: webURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var FileValue = data.d.ListItemAllFields;
+            var propertiesServerRelativeUrl = FileValue.ServerRedirectedEmbedUri;
+            DocumentId = data.d.ListItemAllFields.Id;
+            SelectedFileServerURL = tempAction = DiaplayServerRelUrl;
+
+            FileCheckOutBy = getCheckedOutBy();
+            if (_spPageContextInfo.userDisplayName != FileCheckOutBy && FileCheckOutBy != "" && FileCheckOutBy != null) {
+                $("#lockeffect .texthere").text("Unlock");
+                $("#lockeffect").hide();
+                $("#LockStatus").show();
+                $("#LockStatus").text("Locked by: " + FileCheckOutBy);
+                $('#lockeffect .unlock').hide();
+                $('#lockeffect .lock').show();
+                $("#lockeffect").attr("disabled", "disabled");
+                $(".LockDisable").attr("disabled", "disabled");
+                $("#lockeffect").attr("disabled", "disabled");
+                $("#divEditView").hide();
+                $("#btnChangeProp").hide();
+                $("#btnApproval").hide();
+                if (FilePermissions == 'Full Control') {
+                    $("#btnUndoLock").show();
+                }
+            } else {
+                if (_spPageContextInfo.userDisplayName == FileCheckOutBy) {
+                    $("#LockStatus").show();
+                    $("#LockStatus").text("Locked by me");
+                    $("#lockeffect .texthere").text("Unlock");
+                    $(".LockDisable").attr("disabled", "disabled");
+                    $("#btnChangeProp").hide();
+                    $("#btnApproval").hide();
+                } else {
+                    $("#lockeffect .texthere").text("Lock");
+                    $("#LockStatus").hide();
+                    $(".LockDisable").prop("disabled", "");
+                    $("#btnChangeProp").show();
+                    if (CurrentPermission != "Restricted View") {
+                        $("#divEditView").show();
+                    }
+                }
+                $("#lockeffect").prop("disabled", "");
+            }
+
+            if (propertiesServerRelativeUrl == null) {
+                propertiesServerRelativeUrl = window.location.origin + DiaplayServerRelUrl;
+
+                if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true || DiaplayServerRelUrl.includes("DepartmentalDMS") == true) {
+                    if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true) {
+                        CopyLibrary = "DocumentManagementSystem";
+                        $(".txtCopyLink").val(SiteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + encodeURIComponent(DiaplayServerRelUrl) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                    } else {
+                        CopyLibrary = "DepartmentalDMS";
+                        $(".txtCopyLink").val(SiteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + encodeURIComponent(DiaplayServerRelUrl) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                    }
+                } else {
+                    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0 || Documentname == undefined || Documentname == '') {
+                        CopyLibrary = "Documents";
+                        Documentname = '';
+                    }
+                    else {
+                        if (Documentname.indexOf('/') != -1) {
+                            CopyLibrary = Documentname.split('/')[0];
+                        } else {
+                            CopyLibrary = Documentname;
+                        }
+                    }
+                    var HostName = window.location.origin + DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0);
+                    $(".txtCopyLink").val(HostName + "/Forms/AllItems.aspx?id=" + encodeURIComponent(DiaplayServerRelUrl) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, DiaplayServerRelUrl.lastIndexOf("/") + 0)));
+                }
+            } else {
+                if (DiaplayServerRelUrl.includes("DocumentManagementSystem") == true) {
+                    CopyLibrary = "DocumentManagementSystem";
+                } else if (DiaplayServerRelUrl.includes("DepartmentalDMS") == true) {
+                    CopyLibrary = "DepartmentalDMS";
+                } else {
+                    if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0 || Documentname == undefined || Documentname == '') {
+                        CopyLibrary = "Documents";
+                        Documentname = '';
+                    }
+                    else {
+                        if (Documentname.indexOf('/') != -1) {
+                            CopyLibrary = Documentname.split('/')[0];
+                        } else {
+                            CopyLibrary = Documentname;
+                        }
+                    }
+                }
+                $(".txtCopyLink").val(propertiesServerRelativeUrl);
+            }
+
+            $("#DownloadDocs").prop("href", window.location.origin + DiaplayServerRelUrl);
+            $("#btnFileFullView").prop("href", propertiesServerRelativeUrl);
+            if (FileValue.FileLeafRef.includes(".pdf") == true) {//to check if it's PDF
+                if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                    tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                }
+                var PDFLINK='';
+                if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+               { 
+               PDFLINK= LibUrl +"/Forms/AllItems.aspx?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                propertiesServerRelativeUrl=LibUrl +"/Forms/AllItems.aspx?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+            }
+            else
+            {
+                PDFLINK = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                propertiesServerRelativeUrl= DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";               
+            }
+                $(".txtCopyLink").val(PDFLINK);
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                EditFileLink = PDFLINK;
+                $("#btnEditViewFile").click(function () {
+                    OpenEditIframe(PDFLINK);
+                });
+            }
+            else if (FileValue.FileLeafRef.includes(".txt") == true) {//to check if it's txt 
+                if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                    tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                }
+                var txtLINK='';
+                if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+               { 
+               propertiesServerRelativeUrl= LibUrl +"/Forms/AllItems.aspx?id="+ encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                txtLINK = LibUrl +"/Forms/AllItems.aspx?id="+ encodeURIComponent(tempAction) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";        
+               }
+               else{
+                propertiesServerRelativeUrl = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                txtLINK = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";        }
+                $(".txtCopyLink").val(txtLINK);
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                EditFileLink = txtLINK;
+                $("#btnEditViewFile").click(function () {
+                    OpenEditIframe(txtLINK);
+                });
+            }
+            else {
+                if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xlsx" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xls" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "csv") {
+                    propertiesServerRelativeUrl = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
+                    $(".txtCopyLink").val(propertiesServerRelativeUrl);
+                    $("#btnFileFullView").prop("href", propertiesServerRelativeUrl);
+                }
+                $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
+                if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "docx") {
+                    EditFileLink = propertiesServerRelativeUrl.replace('interactivepreview', 'edit&wdAccPdf=0&wdEmbedFS=1');
+                    $("#btnEditViewFile").click(function () {
+                        OpenEditIframe(EditFileLink);
+                    });
+                }
+                else {
+                    EditFileLink = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
+                    $("#btnEditViewFile").click(function () {
+                        OpenEditIframe(EditFileLink);
+                    });
+                }
+            }
+
+            var container = $("#File-viewer").empty();
+            if (FileValue.FileLeafRef.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+                if (CurrentPermission == 'Restricted View') {
+                    if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
+                        tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
+                    }
+                    var ImageLINK='';
+                    if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
+                    { 
+                        ImageLINK = LibUrl +"/Forms/AllItems.aspx?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                                
+                    }
+                    else 
+                    ImageLINK = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
+                    $(".txtCopyLink").val(ImageLINK);
+                    $('<iframe>', {
+                        src: ImageLINK,
+                        id: 'iframeFile-viewer',
+                        frameborder: 0,
+                        scrolling: 'yes',
+                        width: '100%',
+                        height: '98%'
+                    }).appendTo(container);
+                    $("#btnFileFullView").prop("href", ImageLINK);
+                }
+                else {
+                    $('#File-viewer').html("<div class='FlexingBox'><img class='AdjustingSize' src='" + propertiesServerRelativeUrl + "'/></div>");
+                }
+            }
+            else {
+                var Extension = FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1);//data.d.ListItemAllFields.FileLeafRef.substr(data.d.ListItemAllFields.FileLeafRef.length - 3)
+                if (Extension == "csv" || Extension == "wmv" || Extension == "avi" || Extension == "mp3" || Extension == "mp4" || Extension == "webm" || Extension == "wma" || Extension == "one" || Extension == "tif" || Extension == "tiff" || Extension == "pdf" || Extension == "mov") {
+                    propertiesServerRelativeUrl = $(".txtCopyLink").val();
+                }
+                else {
+                    if (CurrentPermission == 'Restricted View') {
+                        propertiesServerRelativeUrl = EditFileLink;
+                        $(".txtCopyLink").val(EditFileLink);
+                        if (Extension == "pptx") {
+                            propertiesServerRelativeUrl = $(".txtCopyLink").val()
+                        }
+                        $("#btnFileFullView").prop("href", EditFileLink);
+                    }
+                }
+                if (Mode == 'EditMode') {
+                    propertiesServerRelativeUrl = EditFileLink;
+                }
+
+                //Bind File in Iframe
+                $('<iframe>', {
+                    src: propertiesServerRelativeUrl,
+                    id: 'iframeFile-viewer',
+                    frameborder: 0,
+                    scrolling: 'yes',
+                    width: '100%',
+                    height: '98%'
+                }).appendTo(container);
+            }
+            if (FileValue.SecurityLevel == null || FileValue.SecurityLevel == "Private") {
+                if (FileValue.AccessLevel == 'Everyone') {
+                    $('#FileSharing').text("Shared with Everyone");
+                    $(".txtSharingHistoy").show();
+                }
+                else {
+                    FileValue.SecurityLevel = "Not shared";
+                    $('#FileSharing').text(FileValue.SecurityLevel);
+                    $(".txtSharingHistoy").hide();
+                }
+            }
+            else {
+                $('#FileSharing').text("Shared with " + FileValue.SecurityLevel);
+                $(".txtSharingHistoy").show();
+            }
+            //if ($('.headdingLinks').text() == "Shared by Me") {
+            if (currentSectionType == "SharedByMe") {
+            
+                $(".btnNotSharedTab").hide();
+                $(".txtSharingHistoy").show();
+                getSharingInfo(DocumentId);
+            }
+            else if (currentSectionType == "SharedWithMe") {
+                //if ($('.headdingLinks').text() == "Shared with Me") {
+                $(".btnNotSharedTab").hide();
+                getSingleShareInfo(DocumentId, rel);
+            }            //Custom Column
+            var tempCustom = [];
+            if (customColQ != '') {
+                tempCustom = customColQ.split(',');
+                for (cus = 0; cus < tempCustom.length; cus++) {
+                    if (new Date(FileValue[tempCustom[cus]]) != "Invalid Date") {
+                        if (FileValue[tempCustom[cus]] != null && FileValue[tempCustom[cus]] != "null") {
+                            $("#CustomPopup" + tempCustom[cus]).text(ShowCommonStandardDateFormat(FileValue[tempCustom[cus]]));
+                        }
+                    }
+                    else {
+                        $("#CustomPopup" + tempCustom[cus]).text(FileValue[tempCustom[cus]] ? FileValue[tempCustom[cus]] : "");
+                    }
+                }
+            }
+            //Bhawana
+            //strt
+            $('#FileTitle').text(FileValue.Title ? FileValue.Title : "");
+            $('#CommentFileTitle').text(FileValue.Title ? FileValue.Title : "");
+            if (FileValue.SubCategory != "--select--" && FileValue.SubCategory != null && FileValue.SubCategory != "-Select-") {
+                $('#FileDocSubType').text(FileValue.SubCategory);
+                if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                    $('#FileDocType').text(" (" + FileValue.DocumentType + ")");
+                    $('#CommentFileDocType').text(FileValue.DocumentType);
+                }
+                else {
+                    $('#CommentFileDocType').text('');
+                    $('#FileDocType').text('');
+                }
+            }
+            else {
+                $('#FileDocSubType').text('');
+                if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                    $('#FileDocType').text(FileValue.DocumentType);
+                    $('#CommentFileDocType').text(FileValue.DocumentType);
+                }
+                else {
+                    $('#CommentFileDocType').text('');
+                }
+
+            }
+             $('#CommentFileName').text(FileValue.FileLeafRef);
+            //$('#txtRenamefile').val(FileValue.FileLeafRef.split('.').slice(0, -1).join('.'));
+            //$("#txtFileExt").text("." + FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1));
+           
+            //$('#FileLastModified').text(moment(FileValue.Last_x0020_Modified).format('DD-MM-YYYY HH:MM:SS'));
+           $('#FileLastModified').text( ShowCommonStandardDateFormat(FileValue.Modified));
+            //$('#FileLastModified').text(titanForWork.convertJSONDateAMPMWithDate(FileValue.Last_x0020_Modified));
+            $('#FileLastModifiedBy').text(GetUserFullName(FileValue.Modified_x0020_By));
+            $('#CommentModify').text($('#FileLastModifiedBy').text());
+            $('#CommentModTime').text($('#FileLastModified').text());
+            $("#CommentModEmail").text("");
+            $("#CommentModEmail").text(FileValue.Modified_x0020_By.split('|')[2]);            
+	        $("#CommentModImage").prop('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileValue.Modified_x0020_By.split('|')[2]));
+            $("#CommentModEmail").click(function () {
+                OpenEmail(FileValue.Modified_x0020_By.split('|')[2]);
+            });
+            //end
+            $('#FileTitle').text(FileValue.Title ? FileValue.Title : "");
+            if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                $('#FileDocType').text(FileValue.DocumentType);
+            }
+            $('#FileReference').text(FileValue.DocumentNo ? FileValue.DocumentNo : "");
+            $('#FileAuthorPopup').text(FileValue.DocumentWrittenBy ? FileValue.DocumentWrittenBy : "");
+            $('#FileDetalis').text(FileValue.Details ? FileValue.Details : "");
+            if (FileValue.FileValidity != null && FileValue.FileValidity != "" && FileValue.FileValidity != "null") {
+                $('#FileValidityPopup').text(moment(FileValue.FileValidity).format('MMM D, YYYY'));
+            }
+            else {
+                $('#FileValidityPopup').text("");
+            }
+            $('#FileApproval').text(FileValue.Approval ? FileValue.Approval : "");
+            $(".FileApprovalPDF").empty();
+            if (FileValue.Approval == "Approved") {
+                FinalApprovalFile('');
+                $(".ApproveSign").show();
+                $(".RejectSign").hide();
+                $("#FileApproval").css('color', 'Green');
+            }
+            else if (FileValue.Approval == "Reject" || FileValue.Approval == "Rejected") {
+                $(".RejectSign").show();
+                $(".ApproveSign").hide();
+                $("#FileApproval").css('color', 'Red');
+            }
+            else {
+                $(".RejectSign").hide();
+                $(".ApproveSign").hide();
+                $("#FileApproval").css('color', 'Black');
+            }
+
+            if (FileValue.Approval != "" && FileValue.Approval != null) {
+                if ($("#btnChangeProp").css('display') != "none") {
+                    //$("#btnApproval").hide();
+                }
+                $(".btnApprovalDetails").show();
+            }
+            else {
+                if ($("#btnChangeProp").css('display') != "none") {
+                    $("#btnApproval").show();
+                }
+                $(".btnApprovalDetails").hide();
+            }
+            $('#FilePath').text(DiaplayServerRelUrl);
+            $('#FileName').text(FileValue.FileLeafRef);
+            $('#txtRenamefile').val(FileValue.FileLeafRef.split('.').slice(0, -1).join('.'));
+            $("#txtFileExt").text("." + FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1));
+            //$('#FileLastModified').text(moment(FileValue.Last_x0020_Modified).format('DD-MM-YYYY HH:MM:SS'));
+            //$('#FileLastModifiedBy').text(GetUserFullName(FileValue.Modified_x0020_By));
+            $('#FileSize').text(FileValue.FileSizeDisplay + " KB");
+            $('#LibProject').text(Library);
+            //PermissionsControl(FileValue);
+            IntervalId = setInterval(function () {
+                $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+                $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+                $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+                if (Mode == 'EditMode' || Extension == "xlsx") {
+                    $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+                }
+                //Bhawana start
+                if (Mode == 'EditMode' || Extension == "txt") {
+	                $("#iframeFile-viewer").contents().find(".root-74").remove();
+					$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
+					$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove()
+				}
+                //End
+            }, 2000);
+            //if ($(".headdingLinks").text() == 'Shared with Me' || $(".headdingLinks").text() == 'Shared by Me' || $(".headdingLinks").text() == 'Archive') {
+                if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive') {
+                $(".ShareSectionAct").show();
+                $(".otherSectAct").hide();
+                $(".btnNotSharedTab").hide();
+            }
+            else {
+                $(".ShareSectionAct").hide();
+                $(".otherSectAct").show();
+                $(".btnNotSharedTab").show();
+                $("#btnPopupShare").hide();//4 april 23
+            }
+            if (currentSectionType != 'SharedWithMe' && currentSectionType != 'SharedByMe' && currentSectionType != 'Archive') {
+                getListUserEffectivePermissions(SiteURL, listTitle, true, DocumentId, 'i:0#.f|membership|' + _spPageContextInfo.userPrincipalName + '');
+                if (IsNotpermission == true) {
+                    if (IsContributor == true && IsFullControl == false) { //Contributor
+                        $("#btnDeleteFile").show();
+                        $("#divEditView").show();
+                        $("#btnPopupRename").show();
+                        $("#btnPopupLock").show();
+                        $("#btnPopupChangeprop").show();
+                        $("#btnApproval").show();
+                    }
+                    else if (IsContributor == false && IsFullControl == false) { //Reader
+                        $("#btnDeleteFile").hide();
+                        $("#divEditView").hide();
+                        $("#btnPopupRename").hide();
+                        $("#btnPopupLock").hide();
+                        $("#btnPopupChangeprop").hide();
+                        $("#btnApproval").hide();
+                    }
+                    if (IsdeleteListItems == true) {
+                        $("#btnDeleteFile").show();
+                    }
+                }
+                else {
+                    if (arrPermission.length > 0) {
+                        if (arrPermission[0].UserContri == true) {
+                            $("#btnDeleteFile").show();
+                            $("#btnPopupRename").show();
+                            if (CurrentPermission != "Restricted View") {
+                                $("#divEditView").show();
+                            }
+                            $("#btnPopupLock").show();
+                            $("#btnPopupChangeprop").show();
+                            $("#btnApproval").show();
+                        }
+                        else if (arrPermission[0].UserReader == true) {
+                            $("#btnDeleteFile").hide();
+                            $("#btnPopupRename").hide();
+                            $("#divEditView").hide();
+                            $("#btnPopupLock").hide();
+                            $("#btnPopupChangeprop").hide();
+                            $("#btnApproval").hide();
+                        }
+                    }
+                }
+            }
+           // $('#FileVersion').text(data.d.UIVersionLabel);
+            GetFileVersion(DiaplayServerRelUrl, SiteURL, FileValue.FileLeafRef, FileValue.Title ? FileValue.Title : "");
+            AddFileViewCount();
+            if (Mode == 'EditMode') {
+                $("#btnApproval").hide();
+                $("#btnDeleteFile").hide();
+                $("#btnMoveFile").hide();
+                $("#btnRenameFile").hide();
+                //$("#btnPopupShare").hide();//4 April 23
+
+                $("#btnPopupLock").hide();
+                $("#btnPopupChangeprop").hide();
+            }
+            else {
+                $("#btnApproval").show();
+                $("#btnMoveFile").show();
+                $("#btnRenameFile").show();
+                //$("#btnPopupShare").show();//4 April 23
+
+                $("#btnPopupLock").show();
+                $("#btnDeleteFile").show();
+                $("#btnPopupChangeprop").show();
+            }
+        },
+        eror: function (data) {
+            $('#ModalDisplayProperty').modal('show');
+            console.log(JSON.stringify(data));
+           // if ($(".headdingLinks").text() == "Shared by Me" || $(".headdingLinks").text() == "Shared with Me" || $(".headdingLinks").text() == "Archive") {
+                if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive'){ 
+                $(".btnNotSharedTab").hide();
+            }
+            else {
+                $(".btnNotSharedTab").show();
+                $("#btnPopupShare").hide();//4 April 23
+            }
+        }
+    }).fail(function (error) {
+        if (DiaplayServerRelUrl.search(/\bDocuments\b/) >= 0) {
+            alert('Attempted to perform an unauthorized operation');
+        }
+        else {
+            alert(error.responseJSON.error.message.value);
+        }
+       // if ($(".headdingLinks").text() == "Shared by Me" || $(".headdingLinks").text() == "Shared with Me" || $(".headdingLinks").text() == "Archive") {
+         if (currentSectionType == 'SharedWithMe' || currentSectionType == 'SharedByMe' || currentSectionType == 'Archive'){ 
+            $(".btnNotSharedTab").hide();
+        }
+        else {
+            $(".btnNotSharedTab").show();
+            $("#btnPopupShare").hide();//4 April 23
+        }
+        return false;
+    });
+}
+
+//get sharing Info for 'Shared By Me'
+function getSharingInfo(DocId) {
+    $("#ParentAck").hide();
+    var Query = "?$select=*,Author/Title,SharedUsers/Title&$expand=Author,SharedUsers&$orderby=Created desc&$filter=DocumentID eq '" + DocId + "' and (PermissionStatus ne 'Revoked' or PermissionStatus ne 'Deleted')";
+    $.when(getItemsWithQuery('SharedDocument', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SharingInfo) {
+        if (SharingInfo.length > 0) {
+            currentSharedItemId = '';
+            $("#txtShareBy").text(SharingInfo[SharingInfo.length - 1].Author.Title);
+            $("#txtShareOn").text(ShowCommonStandardDateFormat(SharingInfo[SharingInfo.length - 1].Created));
+            $("#txtSharePermission").text(SharingInfo[SharingInfo.length - 1].PermissionType);
+            $("#ShareTabSharing").text("Shared with " + SharingInfo[SharingInfo.length - 1].SharedUsers.results[0].Title);
+        }
+    });
+}
+//Close DisplayFile Modal
+function Closepopup() {
+    clearInterval(IntervalId);
+    $("#File-viewer").empty();
+    IsNotpermission = false;
+    IsdeleteListItems = false;
+    IsContributor = false;
+    IsFullControl = false;
+}
+
+//to get file version
+
+function GetFileVersion(itemURL, SiteURL, FileName, Title) {
+    //var webURL = SiteURL + "/_api/Web/GetFileByServerRelativeUrl('" + itemURL + "')/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy";
+    //25 April 23
+    var webURL = SiteURL + "/_api/Web/GetFileByServerRelativePath(decodedurl='" + fixedEncodeURIComponent(itemURL) + "')/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy";
+    
+    $.ajax({
+        url: webURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var itemsVersion = data.d.results;
+            //$("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>');
+            $("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Old Versions</a>');//14 March 23
+            $('#btnVerHist').click(function (e) {
+                BindVersionHistory(itemsVersion, FileName, Title, SiteURL);
+            });
+			$("#AuditHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnAuditHist">Audit Trail</a');
+            $('#btnAuditHist').click(function (e) {
+                GetAuditHistory(itemURL, SiteURL, FileName, Title);
+            });
+           /* if (itemsVersion.length > 0) {//uncomment on 10 April 23
+                $('#FileVersion').text(itemsVersion[itemsVersion.length - 1].VersionLabel);
+            }*/
+
+            $('#ModalDisplayProperty').modal('show');
+            checkFavoriteFile();
+        },
+        eror: function (data) {
+            $('#ModalDisplayProperty').modal('show');
+            console.log(JSON.stringify(data));
+        }
+    }).fail(function (error) {
+        if (error.responseJSON.error.message.value == "Access denied.") {
+            $("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>');
+            $('#btnVerHist').click(function (e) {
+                alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+                return false;
+            });
+        }
+        else {
+            console.log(error.responseJSON.error.message.value);
+            checkFavoriteFile();
+        }
+        $('#ModalDisplayProperty').modal('show');
+    });
+    setTimeout(function () {
+        var storing = $(".AdjustingSize").width();
+        if (storing >= 600) {
+            $(".AdjustingSize").css('width', '100%');
+        } else {
+            $(".AdjustingSize").css('width', 'auto');
+        }
+        if ($('#iframeFile-viewer').contents().find('body').html() == "") {
+            $("#File-viewer").empty();
+            var htmlNotAuthorized = '<div class="col-md-12">' +
+                '<div class="panel panel-default shadow2" style="margin:100px;">' +
+                '<div class="panel-body" style="padding:60px;"><div class="row text-center"><br>' +
+                '<span><h2 class="text-center">No preview available. File has been downloaded.</h2></span>';
+            $('#File-viewer').append('<div width="100%" id="viewMyDocuments" style="min-height:750px;padding-top:0px">' + htmlNotAuthorized + '</div>');
+        }
+    }, 2000);
+}
+//get Audit File History
+function GetAuditHistory(itemURL, SiteURL, FileName, Title) {
+    var container = $("#bdyAuditHist").empty();
+    var tempLib = CopyLibrary;
+    if (tempLib == "Shared%20Documents" || tempLib == "Shared Documents") {
+        tempLib = "Documents";
+    }
+    jQuery.ajax(
+    {
+        url: SiteUrl + "/_api/web/lists/getbytitle('" + tempLib + "')?$select=Id",
+        type: "GET",
+        async: false,
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data, textStatus, xhr) {
+            var versionsUrl = SiteUrl + '/_layouts/versions.aspx?list=' + data.d.Id + '&ID=' + DocumentId;
+            $('<iframe>', {
+                src: versionsUrl,
+                id: 'Audit-viewer',
+                frameborder: 0,
+                scrolling: 'yes',
+                width: '100%',
+                height: '98%'
+            }).appendTo(container);
+            $("#AuditHistory").modal('show');
+            setInterval(function () {
+                $("#Audit-viewer").contents().find("#titlerow").remove();
+                $("#Audit-viewer").contents().find(".ms-belltown-anonShow").remove();
+            }, 1000);
+        },
+        error: function (data, textStatus, xhr) {
+            console.error("Error.");
+        }
+    });
+
+}
+
+//Bind The Version History on any selected file.
+function BindVersionHistory(array, FileName, Title, URL) {
+    var Version = '';
+    $("#VerHisFile").text(FileName);
+    $("#VerHisTitle").text(Title);
+    $("#tbdyVerHis").empty();
+    if (array.length > 0) {
+        for (ver = 0; ver < array.length; ver++) {
+            var DownloadURL = URL + "/" + array[ver].Url;
+            /*dateObj = new Date(array[ver].Created);
+            var DateTime = dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds();
+            var H = +DateTime.substr(0, 2);
+            var h = (H % 12) || 12;
+            var ampm = H < 12 ? "AM" : "PM";
+            DateTime = h + DateTime.substr(2, 3) + ampm;*/
+            var FinalDateTime = moment(array[ver].Created).format("DD, MMMM YYYY hh:mm A");
+
+            //get Employee Details
+            var EmpDept = '';
+            var EmpDesg = '';
+            var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(array[ver].CreatedBy.Email);
+            RestQuery = "?$select=LogonName/EMail,Designation,Department/Title,AttachmentFiles&$expand=LogonName,Department,AttachmentFiles&$filter=LogonName/EMail eq '" + array[ver].CreatedBy.Email + "'&$top=5000";
+            $.when(getItemsWithQuery('Employees', RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (Employees) {
+                if (Employees.length > 0) {
+                    EmpDept = Employees[0].Department.Title;
+                    EmpDesg = Employees[0].Designation;
+                    if (Employees[0].AttachmentFiles.results.length > 0) {
+                        employeePicURL = Employees[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                    }
+                }
+            });
+
+            Version += '<tr><td>' + array[ver].VersionLabel + '</td><td><div class="flexingtwo"><img src="' + employeePicURL + '">';
+            Version += '<div class="designationtype"><h3 class="namesection">' + array[ver].CreatedBy.Title + '</h3><span>' + EmpDesg + '</span>'+(EmpDesg!=''?(EmpDept!=''?",":""):"")+'<span>' + EmpDept + '</span></div></div></td>';
+            //Version += '<div class="designationtype"><h3 class="namesection">' + array[ver].CreatedBy.Title + '</h3><span>' + EmpDesg + '</span>, <span>' + EmpDept + '</span></div></div></td>';
+            Version += '<td><span class="datearea">' + FinalDateTime + '</span></td><td><a href="' + DownloadURL + '" class="downloadsec" download="' + $("#VerHisFile").text().substr(0, $("#VerHisFile").text().lastIndexOf(".")) + '">';
+            Version += '<i class="fa fa-download"></i>Download</a></td></tr>';
+        }
+        $("#tbdyVerHis").append(Version);
+    } else {
+        Version += '<tr><td colspan="4"><div style="text-align:center;">No version found.</div></td></tr>';
+        $("#tbdyVerHis").append(Version);
+    }
+    $("#versionhistory").modal('show');
+}
+
+//Check if Document is added to favorite
+function checkFavoriteFile() {
+    var Query = "?$select=*,Id,Title,User/Id,User/EMail&$expand=User&$filter=Category eq 'Document' and FileName eq '" + $("#FileName").text() + "' and User/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+    $.when(getItemsWithQuery('MyFavorites', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (FavResults) {
+        if (FavResults.length > 0) {
+            FavouriteId = FavResults[0].Id;
+            $("#txtFavorite").text("Delete from Favorite");
+            $('.unfillstar').hide();
+            $('.fillstar').show();
+        }
+    });
+}
+
+//Add custom column for Modal
+function AddCustomColPopup(FileValue) {
+    var Columns = '';
+    var Title = '';
+    var customColQ = '';
+    Title = 'Guest Portal Documents';
+    if (Title != "") {
+        var Query = "?$select=*&$top=5&$filter=Title eq '" + Title + "' and DMS_Type eq '" + DMS_Type + "' and ColumnType eq 'Custom' ";
+        $.when(getItemsWithQuery("DMSColumnSetting", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (CustomCols) {
+            if (CustomCols.length > 0) {
+
+                for (var index = 0; index < CustomCols.length; index++) {
+                    customColQ += 'ListItemAllFields/' + CustomCols[index].ColumnName + ",";
+                    Columns = '';
+                    Columns += '<li class="customColModal">';
+                    Columns += '<label class="detail-label">' + CustomCols[index].ColumnName + ':</label>';
+                    Columns += '<div class="detail-title ellipsis-2" id="CustomPopup' + CustomCols[index].ColumnName + '"></div></li>';
+                    $("#PopupPropertyBox").append(Columns);
+                }
+            }
+        });
+    }
+    return customColQ;
+}
+
+//get check out by user name
+function getCheckedOutBy() {
+    var checkOutBy = '';
+    var ServerRelativeUrlofFile = _spPageContextInfo.webAbsoluteUrl + "/_api/web/GetFileByServerRelativeUrl('" + SelectedFileServerURL + "')/CheckedOutByUser/Title"
+    $.ajax({
+        url: ServerRelativeUrlofFile,
+        type: "GET",
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function (data, status, xhr) {
+            checkOutBy = data.d.Title;
+            $("#LockStatus").show();
+            $("#LockStatus").text("Locked by me");
+            $("#lockeffect .texthere").text("Unlock");
+            $('#lockeffect .unlock').show();
+            $('#lockeffect .lock').hide();
+        },
+        error: function (xhr, status, error) {
+            $("#LockStatus").hide();
+            $("#lockeffect .texthere").text("Lock");
+            $('#lockeffect .unlock').hide();
+            $('#lockeffect .lock').show();
+            console.log(SelectedFileServerURL + "Not checked out");
+        }
+    });
+    return checkOutBy;
+}
+
+
+//to get Full name from email
+function GetUserFullName(userName) {
+    var userID = "";
+    var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+    var accountName = userName;
+    $.ajax({
+        url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+            encodeURIComponent(accountName) + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            userID = data.d.Title;
+        },
+        error: function (data) {
+            $('#ModalDisplayProperty').modal('show');
+            console.log(JSON.stringify(data));
+        }
+    });
+    return userID;
+}
+
+//Create folder in selected Library
+function CreateFolder(Action) {
+    var newSubfolderName = $('#txtnewSubFolderName').val().trim();
+    if (newSubfolderName.trim() == '') {
+        alert('Kindly enter folder name.');
+        waitingDialog.hide();
+        return false;
+    }
+    var flagSpecialChar = checkFolderSpecialCharaters(newSubfolderName);
+
+    if (flagSpecialChar == true) {
+        alert('Folder name can not contain the following characters: \n. < > # % @ & * { } ? : ; | \ " \ \ / ~ ` ');
+        waitingDialog.hide();
+        return false;
+    }
+
+    if (newSubfolderName.length < 2) {
+        alert("Folder's length can't be less than 2 character.");
+        waitingDialog.hide();
+        return false;
+    }
+    if (newSubfolderName.length > 100) {
+        alert('100 characters maximum folder length allowed.');
+        waitingDialog.hide();
+        return false;
+    }
+    //check if folder already exists
+    var folderexistcheck = ChekFolderExistOrNot(Documentname, newSubfolderName);
+    if (folderexistcheck == false) {
+        alert('Folder already exists.');
+        waitingDialog.hide();
+        return false;
+    }
+
+    $.when(CreateDMSFolder(Documentname, newSubfolderName, true)).done(function (MainExamListItemTemp) {
+        if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+            if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                libraryName = "DocumentManagementSystem";
+            } else {
+                libraryName = "DepartmentalDMS";
+            }
+        } else {
+            if (Documentname.indexOf('/') != -1) {
+                libraryName = Documentname.split('/')[0];
+            } else {
+                libraryName = Documentname;
+            }
+            //libraryName = "Documents";
+        }
+        Query = "?$select=Id,Author/EMail&$expand=Author&$orderby=Id desc&$Filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+        if (libraryName.search(/\bDocuments\b/) >= 0 || libraryName == "Shared Documents" || libraryName == "Shared%20Documents") {
+            libraryName = "Documents";
+        }
+        $.when(getItemsWithQuery(libraryName, Query, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")))).done(function (DMSFolder) {
+            AddFolderProp(libraryName, DMSFolder[0].Id, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")));
+            waitingDialog.hide();
+            $('#txtnewSubFolderName').val('');
+            $("#dms-creat-folder").modal("hide");
+            var tempDocName = Documentname;
+            if (Documentname.includes('/Documents/') == true) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+        })
+    });
+}
+
+//get metdata of uploaded files
+function AddFolderProp(ListName, currentitemId, webUrl) {
+    var Metadata;
+    if (ListName.search(/\bDocuments\b/) >= 0 || ListName == "Shared Documents" || ListName == "Shared%20Documents") {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(ListName);
+    }
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#AddFolderTitle").val(),
+        DocumentNo: $("#ddlAddFolderRef").val(),
+        DocumentType: $("#ddlAddFolderCateg").val(),
+        DocumentWrittenBy: $("#ddlAddFolderAuth").val(),
+        Details: $("#ddlAddFolderDetails").val(),
+        SubCategory: $("#ddlAddFolderSubC").val()
+    };
+    if ($("#ddlAddFolderSubC").val() == "--select--" || $("#ddlAddFolderSubC").val() == null || $("#ddlAddFolderSubC").val() == "-Select-") {
+        delete Metadata["SubCategory"];
+    }
+    updateFolderFileMetadata(ListName, Metadata, currentitemId, webUrl);
+}
+
+//Validation for FolerName
+function checkFolderSpecialCharaters(string) {
+    var specialChars = "';.<>#%&*{}?:|\"\\/~`";
+    for (i = 0; i < specialChars.length; i++) {
+        if (string.indexOf(specialChars[i]) > -1) {
+            return true
+        }
+    }
+    return false;
+}
+
+//Check folder exists
+function ChekFolderExistOrNot(dmsFolder, newFolderName) {
+    var IsFolderExist = true;
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/GetFolderByServerRelativeUrl('" + dmsFolder + "')?$select=ID,File_x0020_Type&$expand=Folders";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var folders = data.d.Folders.results;
+            for (var i = 0; i < folders.length; i++) {
+                if (folders[i].Name.toLowerCase() == newFolderName.toLowerCase()) {
+                    IsFolderExist = false;
+                }
+            }
+        }, eror: function (data) {
+            waitingDialog.hide();
+            alert(JSON.stringify(data));
+        }
+    });
+    return IsFolderExist;
+}
+
+//Create Folder Inside DMS
+function CreateDMSFolder(newSubfoldersName, newSubFolder, IsModalOpen) {
+    var FolderDetails = [];
+    var currentSiteURL = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+    if(newSubfoldersName.includes('/Documents/') == true) {
+        newSubfoldersName = newSubfoldersName.replace("/Documents/", '/Shared%20Documents/');
+    }
+    else if(newSubfoldersName == "Documents") {
+    	newSubfoldersName = 'Shared%20Documents';
+    }
+    else if(newSubfoldersName.includes('Documents/') == true && (newSubfoldersName.includes('Shared Documents/') == false && newSubfoldersName.includes('Shared%20Documents/') == false)){
+    	newSubfoldersName = newSubfoldersName.replace("Documents/", 'Shared%20Documents/');
+    }
+    if(newSubfoldersName[newSubfoldersName.length - 1] == '/') {
+        var ServerRelativeUrl = newSubfoldersName + newSubFolder;
+    }
+    else {
+        var ServerRelativeUrl = newSubfoldersName + '/' + newSubFolder;
+    }
+    if (currentSiteURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(currentSiteURL)).done(function(GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+
+    $.ajax({
+        url: currentSiteURL + "/_api/web/folders",
+        type: "POST",
+        data: JSON.stringify({
+            '__metadata': { 'type': 'SP.Folder' },
+            'ServerRelativeUrl': ServerRelativeUrl
+        }),
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest
+        }, success: function (response) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            FolderDetails = response.d;
+            if(IsModalOpen == true) {
+                alert('Folder has been created successfully');
+            }
+        },
+        error: function (error) {
+            waitingDialog.hide();
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if(error.responseText.includes("Access denied") == true) {
+                alert("You don't have the required permission to perform this operation.");
+                return false;
+            }
+            else {
+                alert(error.responseText);
+                return false;
+            }
+        }
+    }).fail(function (error) {
+        RequestDigest = $("#__REQUESTDIGEST").val();
+        waitingDialog.hide();
+        console.log(error.responseJSON.error.message.value);
+    });
+    return FolderDetails;
+}
+
+
+//Mandatory column attachment validation
+function AddFileValidate() {
+    var ReturnValue = true;
+    if (currentSectionType != "My Documents") {
+        for (var i = 0; i < arrMandatoryCols.length; i++) {
+            if ("Title" == arrMandatoryCols[i] && $("#txtAddFileTitle").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+            if ("DocumentType" == arrMandatoryCols[i] && $("#ddlAddFileCateg").val() == "-Select-") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Reference" == arrMandatoryCols[i] && $("#txtAddFileRef").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Author" == arrMandatoryCols[i] && $("#txtAddFileAuth").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Details" == arrMandatoryCols[i] && $("#txtAddFileDetails").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+        }
+    }
+    return ReturnValue;
+}
+
+//create document with templates
+function createNewDocument(newDocumentName, ServerURL, docType, templateUrl, FolderServerURL) {
+    var d = new $.Deferred();
+    //var ctx = SP.ClientContext.get_current();
+    var ctx = new SP.ClientContext(SiteUrl);
+    var web = ctx.get_web();
+    var list = web.getList(ServerURL);
+    var folder = web.getFolderByServerRelativeUrl(FolderServerURL);
+    var tempFolderURL = FolderServerURL;
+    var docName = newDocumentName && newDocumentName.length
+                        ? String.format("{0}", newDocumentName)
+                        : String.format("New Document - {0}.docx", new Date().format("yyyy-mm-dd_hhMMss"));
+    /** replace illegal filename characters */
+    docName = docName.replace(/[~#!@£$%^&*()\{\}\\:,<>?/|"]+/gi, '-');
+
+    var docItem = templateUrl && templateUrl.length
+                        ? list.createDocumentFromTemplate(docName, folder, templateUrl)
+                        : list.createDocument(docName, folder, docType || 1);
+    var wfUrl = docItem.getWOPIFrameUrl(SP.Utilities.SPWOPIFrameAction.edit);
+    var docFile = docItem.get_file();
+    ctx.load(list, "DefaultEditFormUrl");
+    ctx.load(docItem, "Id");
+    ctx.load(docFile, "ServerRelativeUrl", "CheckOutType");
+    ctx.executeQueryAsync(onCreateSuccess, onFail);
+    return d.promise();
+
+    function onCreateSuccess() {
+        var wopiUrl = wfUrl.get_value();
+        var docInfo = {
+            documentName: docName,
+            editDocumentPropertiesUrl: String.format("{0}?ID={1}&Source={2}", list.get_defaultEditFormUrl(), docItem.get_id(), _spPageContextInfo.webServerRelativeUrl),
+            fileServerRelativeUrl: docFile.get_serverRelativeUrl(),
+            wopiEditDocumentUrl: Boolean(wopiUrl) ? wopiUrl.replace(/wopiframe\.aspx/gi, "WOPIFrame2.aspx") : "",
+        };
+        var webUrl = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+        var libraryName = "";
+        if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+            if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                libraryName = "DocumentManagementSystem";
+            } else {
+                libraryName = "DepartmentalDMS";
+            }
+        } else {
+            if (Documentname.indexOf('/') != -1) {
+                libraryName = Documentname.split('/')[0];
+            } else {
+                libraryName = Documentname;
+            }
+        }
+        var mainextension = $("#NewFileExtension").text();
+        if(mainextension == ".dotx") {
+            mainextension = ".docx"
+        }
+        var fileServerURL = tempFolderURL + "/" + $("#txtNewFileName").val().trim() + mainextension;
+        $.when(getTargetIDByUrl(webUrl, fileServerURL)).done(function (responsecurrentItemId) {
+            AddFileProp(libraryName, responsecurrentItemId, webUrl, fileServerURL);
+        });
+    }
+    function onFail(c, b) {
+        console.error(b.get_message());
+        alert("Critical Error: " + b.get_message());
+        d.reject("Critical Error: " + b.get_message());
+        waitingDialog.hide();
+    }
+}
+//create file
+function CreateOnlineFile() {
+    var mainextension = $("#NewFileExtension").text();
+    if (mainextension == ".dotx") {
+        mainextension = ".docx"
+    }
+    var newFileName = $('#txtNewFileName').val().trim();
+    var NameOfTheDocFile = $("#txtNewFileName").val().trim() + mainextension;
+
+    if (newFileName.trim() == '') {
+        alert('Kindly enter file name.');
+        waitingDialog.hide();
+        return false;
+    }
+    if (checkSpecialCharaters(NameOfTheDocFile) == true) {
+        NameOfTheDocFile = NameOfTheDocFile.replace(/[&\/\\#,+()$~%'":*?<>{}]/g, '');
+    }
+
+    if (newFileName.length > 30) {
+        alert('30 characters maximum file length allowed.');
+        waitingDialog.hide();
+        return false;
+    }
+    //check if file already exists
+    if (Documentname[Documentname.length - 1] == '/') {
+        var folderName = Documentname;
+    }
+    else {
+        var folderName = Documentname + '/';
+    }
+    var Fileexistcheck = IsNewFileExist(folderName, NameOfTheDocFile, SiteUrl);
+    if (Fileexistcheck == true) {
+        alert('file already exists.');
+        waitingDialog.hide();
+        return false;
+    }
+    var FolderName = Documentname;
+    if (SiteUrl != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(SiteUrl)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+
+    var ListURL = DMS_Link.replace(window.location.origin, '');
+    ListURL = ListURL.replace('/Forms/AllItems.aspx', '');
+
+    var LibraryURL = DMS_Link.split('/Forms')[0];
+    var temp = LibraryURL;
+    if (LibraryURL.includes("Shared%20Documents") == true) {
+        LibraryURL = LibraryURL.replace('Shared%20Documents', 'Shared Documents');
+    }
+    var TemplateURL = _spPageContextInfo.webAbsoluteUrl + '/DocumentManagementSystem/Forms/template' + $("#NewFileExtension").text();
+    var lastWord = ListURL.split("/");
+    FolderName = ListURL.replace(lastWord.slice(-1), '');
+    var FolderName = FolderName + Documentname;
+    if (SiteUrl.includes(_spPageContextInfo.webAbsoluteUrl) == true) {
+        createNewDocument(NameOfTheDocFile, ListURL, 3, TemplateURL, FolderName);
+    }
+    else {
+        if (FolderName.search(/\bDocuments\b/) >= 0) {
+            FolderName = FolderName.replace('Documents', 'Shared Documents');
+        }
+        else if (FolderName.search(/\bShared%20Documents\b/) >= 0) {
+            FolderName = FolderName.replace('Shared%20Documents', 'Shared Documents');
+        }
+        var url = SiteUrl + '/' + "_api/web/GetFolderByServerRelativeUrl('" + FolderName + "')/Files/Add(url='" + NameOfTheDocFile + "', overwrite=true)";
+		if (SiteUrl != _spPageContextInfo.webAbsoluteUrl) {
+	        $.when(GetFormDigestValue(SiteUrl)).done(function (GetFormDigestValue) {
+	            RequestDigest = GetFormDigestValue
+	        });
+	    }
+        $.ajax({
+            'url': url,
+            'method': 'POST',
+            'async': false,
+            'body': "",
+            'headers': {
+                'accept': 'application/json; odata=verbose',
+                'content-type': 'application/json; odata=verbose',
+                'X-RequestDigest': RequestDigest 
+            },
+            success: function (data) {
+                var webUrl = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+                var libraryName = "";
+                if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+                    if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                        libraryName = "DocumentManagementSystem";
+                    } else {
+                        libraryName = "DepartmentalDMS";
+                    }
+                } else {
+                    if (Documentname.indexOf('/') != -1) {
+                        libraryName = Documentname.split('/')[0];
+                    } else {
+                        libraryName = Documentname;
+                    }
+                }
+                $.when(getTargetIDByUrl(webUrl, data.d.ServerRelativeUrl)).done(function (responsecurrentItemId) {
+                    AddFileProp(libraryName, responsecurrentItemId, webUrl, data.d.ServerRelativeUrl);
+                    
+                });
+            }, eror: function (data) {
+                waitingDialog.hide();
+                alert(JSON.stringify(data));
+            }
+        });
+    }
+}
+
+
+//get metdata of uploaded files
+function AddFileProp(ListName, currentitemId, webUrl, fileServerURL) {
+    var Metadata;
+    if (ListName.includes('Documents') == true) {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var tempCopyLib = ListName;
+        if (tempCopyLib.includes('_') == true) {
+            tempCopyLib = tempCopyLib.replace('_', '_x005f_');
+        }
+        if (tempCopyLib.includes('%20') == true) {
+            tempCopyLib = tempCopyLib.replace('%20', '_x0020_');
+        }
+        var ItemType = GetItemTypeForLibraryName(tempCopyLib);
+    }
+   
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtAddFileTitle").val(),
+        DocumentNo: $("#txtAddFileRef").val(),
+        DocumentType: $("#ddlAddFileCateg").val(),
+        DocumentWrittenBy: $("#txtAddFileAuth").val(),
+        Details: $("#txtAddFileDetails").val(),
+        SubCategory: $("#ddlAddFileSubC").val()
+    };
+    if ($("#ddlAddFileSubC").val() == "--select--" || $("#ddlAddFileSubC").val() == null || $("#ddlAddFileSubC").val() == "-Select-") {
+        delete Metadata["SubCategory"];
+    }
+   
+    AddFilePropToLib(ListName, Metadata, currentitemId, webUrl, fileServerURL);
+}
+
+
+//Update metedata in library
+function AddFilePropToLib(ListName, Metadata, ID, webUrl, fileServerURL) {
+	var fileServerURL = fileServerURL;
+    var dfd = $.Deferred();
+    if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(webUrl)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    var tempListName = ListName;
+    if (tempListName == 'Shared%20Documents' || tempListName == 'Shared Documents') {
+        tempListName = "Documents";
+    }
+    var oweburl = webUrl + "/_api/Web/Lists/getByTitle('" + tempListName + "')/Items(" + ID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            var tempDocName = Documentname;
+            if (Documentname.includes('/Documents/') == true || Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            $("#dms-creat-file").modal("hide");
+            waitingDialog.hide();
+            DisplayFileProperty(SiteUrl, currentSectionType, "null", fileServerURL, 'NullValue', fileServerURL, 'NullValue', 'EditMode');
+            //alert('File has been created.');
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            waitingDialog.hide();
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.indexOf('does not exist on type') != -1 || error.responseText.indexOf('The security validation for this page is i') != -1) {
+                var tempDocName = Documentname;
+                if (Documentname.includes('/Documents/') == true) {
+                    tempDocName = "Shared%20Documents";
+                }
+                GetMyDocumentsWithFilesFolder(tempDocName);
+                alert("Required columns does not exists. Kindly contact administrator to activate features.");
+                $("#dms-creat-file").modal('hide');
+            }
+            else {
+                var tempError = '';
+                if (error.responseJSON.error.message.value == undefined) {
+                    tempError = JSON.stringify(error);
+                }
+                else {
+                    tempError = error.responseJSON.error.message.value;
+                }
+                alert(tempError);
+            }
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//get SharePoint data from List
+function getItemsWithQuery(ListName, Query, SiteUrl) {
+    var dfd = $.Deferred();
+    var siteurl = SiteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query;
+    $.ajax({
+        url: siteurl,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+            dfd.resolve(data.d.results);
+            //   console.log();
+        },
+        error: function (error) {
+            //alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//Re-arrange the array
+function ReinitializeArray(arr) {
+    var newArr = [];
+    var count = 0;
+    for (var i = 0; i < arr.length; i++) {
+        newArr[count++] = arr[i];
+    }
+    return newArr;
+}
+
+//Delete files from Uploaded files(locally)
+function removeLine(id, FileName) {
+    var index = id.split('_')[1];
+    $("#" + id).remove();
+    FinalFiles4Upload = FinalFiles4Upload.filter(function (obj) {
+        return obj.name !== FileName;
+    });
+    if (FinalFiles4Upload.length == 0) {
+        $('#txtUploadFiles').html('');
+    }
+    $("#AttachmentUploadField").val('');
+}
+
+//Delete folder from Uploaded folder(locally)
+function removeLineFolder(id, FolderName) {
+    FinalFoldersUpload = [];
+    $('#txtUploadFolder').html('');
+    $("#FolderAttachment").val('');
+}
+
+//Uploading files code starts---------------------------
+
+//Mandatory column attachment validation
+function AttachmentValidation() {
+    var ReturnValue = true;
+    if (currentSectionType != "My Documents") {
+        for (var i = 0; i < arrMandatoryCols.length; i++) {
+            if ("Title" == arrMandatoryCols[i]) {
+                if ($("#prefix_and_postfix_name").prop('checked') == false) {
+                    if ($("#txtFileTitle").val().trim() == "") {
+                        ReturnValue = false;
+                        break;
+                    }
+                }
+            }
+            if ("DocumentType" == arrMandatoryCols[i] && $("#ddlFileType").val() == "-Select-") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Reference" == arrMandatoryCols[i] && $("#txtdocumentNo").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Author" == arrMandatoryCols[i] && $("#FileAuthor").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+            if ("Details" == arrMandatoryCols[i] && $("#UploadFileComment").val().trim() == "") {
+                ReturnValue = false;
+                break;
+            }
+        }
+    }
+    return ReturnValue;
+}
+
+//check Total File size
+function checkFileSize() {
+    TotalSize = 0;
+    for (var k = 0; k < FinalFiles4Upload.length; k++) {
+        TotalSize += parseFloat(bytesToMegaBytes(FinalFiles4Upload[k].size).toFixed(2));
+    }
+    if (TotalSize > 300) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+//to Upload large Files
+function OpenLargeUpload() {
+    var container = $("#bdyUploadFile").empty();
+    $('<iframe>', {
+        src: DMS_Link.replace("AllItems", "Upload"),
+        id: 'LargeUploadFile',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#UploadLarge").modal('show');
+    setInterval(function () {
+        $("#LargeUploadFile").contents().find("#titlerow").remove();
+        $("#LargeUploadFile").contents().find("#suiteBarTop").remove();
+        $("#LargeUploadFile").contents().find("#s4-ribbonrow").remove();
+        $("#LargeUploadFile").contents().find("#DeltaTopNavigation").remove();
+        $("#LargeUploadFile").contents().find("#DeltaSiteLogo").remove();
+        $("#LargeUploadFile").contents().find("#zz12_RootAspMenu").remove();
+        $("#LargeUploadFile").contents().find(".ms-belltown-anonShow").remove();
+        if (currentSectionType == 'My Documents') {
+            $("#LargeUploadFile").contents().find("input:text").val("/" + _spPageContextInfo.userEmail.toLowerCase());
+        }
+        $("#LargeUploadFile").contents().find("input:button").click(function (e) {
+            var countRun = 0;
+            setTimeout(function () {
+                if (countRun == 0) {
+                    $("#UploadLarge").modal('hide');
+                    onloadGetItem();
+                    countRun = 1;
+                }
+            }, 2000);
+        });
+    }, 1000);
+}
+function saveAttachment() {
+    if ($("#RenameandUpload").prop('checked') == true && $("#txtNamePostfix").val().trim() == "") {
+        alert("Kindly enter postfix of file Name.");
+        return false;
+    }
+    if ($("#txtUploadFiles").html().trim() == '') {
+        alert("Please select any file first.");
+        return false;
+    }
+    else {
+        //setTimeout(function () {
+        waitingDialog.show();
+        FailDueToCheckOut = 0;
+        for (var k = 0; k < FinalFiles4Upload.length; k++) {
+            //uploadingFileName = FinalFiles4Upload[k].name;
+            var siteUrl = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+            if (Documentname[Documentname.length - 1] == '/') {
+                var folderName = Documentname;
+            }
+            else {
+                var folderName = Documentname + '/';
+            }
+            UploadFile(folderName, FinalFiles4Upload[k], siteUrl, k);
+        }
+        if (FailDueToCheckOut == FinalFiles4Upload.length) {
+            waitingDialog.hide();
+            alert("Selected file(s) are locked, couldn't be uploaded.");
+            $("#myModalupload").modal('hide');
+        }
+    }
+}
+
+var FailDueToCheckOut = 0;
+//to check the existence of uploaded file(s)
+function UploadFile(folderName, file, webUrl, LoopCount) {
+    var textFileUrLLink = file.name;
+    var arrMetadata = [];
+    if ($('#chkKeepExist').is(':checked') == true) { //Keep Existing metadata
+        if (IsFileCheckout(folderName, textFileUrLLink, webUrl, 'Upload') == true) {
+            FailDueToCheckOut++;
+        }
+        else {
+            arrMetadata = IsFileExist(folderName, textFileUrLLink, webUrl);
+            uploadDocuments(folderName, file, webUrl, arrMetadata, LoopCount);
+        }
+    }
+    else if ($('#chkUploadNew').is(':checked') == true) { //upload new metadata
+        if (IsFileCheckout(folderName, textFileUrLLink, webUrl, 'Upload') == true) {
+            FailDueToCheckOut++;
+        }
+        else {
+            arrMetadata = [];
+            uploadDocuments(folderName, file, webUrl, arrMetadata, LoopCount);
+        }
+    }
+    else if ($('#chkNotUpload').is(':checked') == true) { //Do not upload duplicate particular file
+        arrMetadata = IsFileExist(folderName, textFileUrLLink, webUrl);
+        if (arrMetadata.length == 0) {
+            //No file with this name exists in given path
+            uploadDocuments(folderName, file, webUrl, arrMetadata, LoopCount);
+        }
+        else {
+            if (FinalFiles4Upload.length == (LoopCount + 1 + FailDueToCheckOut)) {
+                if ($('#chkUploadMail').prop('checked') == true) {
+                    EmailProperties(webUrl);
+                }
+                else {
+                    DocUrlCollection = [];
+                    if (FailDueToCheckOut == 0) {
+                        alert("File(s) have been uploaded successfully.");
+                    }
+                    else {
+                        alert(FailDueToCheckOut + " file(s) are locked, couldn't be uploaded.\nOther files(s) have been uploaded successfully.");
+                    }
+                    waitingDialog.hide();
+                    var tempDocName = Documentname;
+                    if (Documentname.includes('/Documents/') == true || Documentname.search(/\bDocuments\b/) >= 0) {
+                        tempDocName = "Shared%20Documents";
+                    }
+                    GetMyDocumentsWithFilesFolder(tempDocName);
+                }
+                $("#myModalupload").modal('hide');
+            }
+            //Do not upload
+        }
+    }
+    else if ($('#RenameandUpload').is(':checked') == true) { //Rename and Upload
+        if (IsFileCheckout(folderName, textFileUrLLink, webUrl, 'Upload') == true) {
+            FailDueToCheckOut++;
+        }
+        else {
+            arrMetadata = IsFileExist(folderName, textFileUrLLink, webUrl);
+
+            uploadDocuments(folderName, file, webUrl, arrMetadata, LoopCount);
+        }
+    }
+    else {
+        //Do Nothing
+    }
+}
+
+//to check if file is checkout by User at the time of - upload, Copy, Move, Share, Delete, Property update 
+function IsFileCheckout(FolderName, FileName, WebURL, Action) {
+    var checkOutBy = '';
+    var serverRelativeURL = "/" + WebURL.substring(WebURL.indexOf('/s') + 1);
+    var Checkpath = serverRelativeURL + "/" + FolderName + FileName;
+    var ServerRelativeUrlofFile = WebURL + "/_api/web/GetFileByServerRelativeUrl('" + Checkpath + "')/CheckedOutByUser/Email"
+    $.ajax({
+        url: ServerRelativeUrlofFile,
+        type: "GET",
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function (data, status, xhr) {
+            if (Action == "Upload") {
+                if (data.d.Email.toLowerCase() == _spPageContextInfo.userEmail.toLowerCase()) {
+                    checkOutBy = false;
+                }
+                else {
+                    checkOutBy = true;
+                }
+            }
+            else {
+                checkOutBy = true;
+            }
+        },
+        error: function (xhr, status, error) {
+            checkOutBy = false;
+        }
+    });
+    return checkOutBy;
+}
+//to check if file exists at given path
+function IsFileExist(FolderName, FileName, WebURL) {
+    var serverRelativeURL = "/" + WebURL.substring(WebURL.indexOf('/s') + 1);
+    var Checkpath = serverRelativeURL + "/" + FolderName + FileName;
+    var arrFileData = [];
+    jQuery.ajax({
+        url: WebURL + "/_api/web/getfilebyserverrelativeurl('" + Checkpath + "')?$expand=ListItemAllFields&$select=*,ListItemAllFields/AccessLevel,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentNo," +
+            "ListItemAllFields/DocumentType,ListItemAllFields/SharedId,ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Title",
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            arrFileData = data.d.ListItemAllFields;
+        },
+        error: function (error) {
+            if (error.status == 404) {
+                console.log(FileName + " file doesnt exist");
+            }
+            else {
+                waitingDialog.hide();
+            }
+        }
+    });
+    return arrFileData;
+}
+
+function uploadDocuments(folderName, file, webUrl, ExistFileMetadata, LoopCount) {
+    url = webUrl + "/_api/contextinfo";
+    var FileNameUpload = '';
+    //var DocUrlCollection = [];
+    $.ajax({
+        url: url,
+        type: "POST",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        contentType: "application/json;odata=verbose",
+        success: function (data) {
+            var digest = data.d.GetContextWebInformation.FormDigestValue;
+            var libraryName = "";
+
+            if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+                if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                    libraryName = "DocumentManagementSystem";
+                    //$(".txtCopyLink").val(SiteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + encodeURIComponent(DMS_Link) + "&parent=" + encodeURIComponent(DMS_Link.substr(0, DMS_Link.lastIndexOf("/") + 0)));
+                } else {
+                    libraryName = "DepartmentalDMS";
+                    //$(".txtCopyLink").val(SiteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + encodeURIComponent(DMS_Link) + "&parent=" + encodeURIComponent(DMS_Link.substr(0, DMS_Link.lastIndexOf("/") + 0)));
+                }
+            } else {
+                if (Documentname.indexOf('/') != -1) {
+                    libraryName = Documentname.split('/')[0];
+                } else {
+                    libraryName = Documentname;
+                }
+                //libraryName = "Documents";
+            }
+
+            var reader = new FileReader();
+            var arrayBuffer;
+
+            reader.onload = function (e) {
+                arrayBuffer = reader.result;
+
+                var targetUrl = _spPageContextInfo.webServerRelativeUrl + "/" + libraryName;
+                var changedFileName = FileNameUpload = file.name;
+                if ($('#RenameandUpload').is(':checked') == true && ExistFileMetadata.length != 0) { //Rename and Upload
+                    changedFileName = file.name.split('.').slice(0, -1).join('.');
+                    changedFileName = $("#txtNamePrefix").val().trim() + changedFileName + $("#txtNamePostfix").val().trim() + "." + file.name.substring(file.name.lastIndexOf('.') + 1);
+                }
+                if (checkSpecialCharaters(changedFileName) == true) {
+                    changedFileName = changedFileName.replace(/[&\/\\#,+()$~%'":*?<>{}]/g, '');
+                }
+                else {
+                    //changedFileName = file.name;
+                }
+                if (folderName.includes('/Documents/') == true) {
+                    //if(folderName.includes('Shared Documents') == false) {
+                    folderName = folderName.replace('Documents', 'Shared Documents');
+                    //}
+                }
+                else {
+                    if (CheckLibary == 'Shared%20Documents' || CheckLibary == 'Shared Documents') {
+                        if (folderName.includes('Shared Documents') == false && folderName.includes('Shared%20Documents') == false) {
+                            folderName = folderName.replace('Documents', 'Shared Documents');
+                        }
+                    }
+                }
+                if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+                    $.when(GetFormDigestValue(webUrl)).done(function (GetFormDigestValue) {
+                        RequestDigest = GetFormDigestValue
+                    });
+                }
+                url = webUrl + "/_api/web/GetFolderByServerRelativeUrl('" + folderName + "')/Files/add(url='" + changedFileName + "',overwrite=true)?@target='" + targetUrl + "'&$expand=ListItemAllFields";
+                try {
+
+                    $.ajax({
+                        url: url,
+                        type: "POST",
+                        data: arrayBuffer,
+                        headers: {
+                            "Accept": "application/json; odata=verbose",
+                            "X-RequestDigest": RequestDigest
+                        },
+                        contentType: "application/json;odata=verbose",
+                        processData: false,
+                        success: function (response) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            var uploadedFileName = response.d.Name
+                            var sharingLink = response.d.ServerRelativeUrl;
+                            var propertiesServerRelativeUrl = '';
+                            propertiesServerRelativeUrl = response.d.ListItemAllFields.ServerRedirectedEmbedUri;
+                            if (propertiesServerRelativeUrl == null || propertiesServerRelativeUrl == "") {
+                                propertiesServerRelativeUrl = encodeURI(response.d.ServerRelativeUrl);
+                            }
+                            if (response.d.Name.includes(".pdf") == false) {//to check if it's PDF
+                                propertiesServerRelativeUrl = propertiesServerRelativeUrl.replace("interactivepreview", "default&mobileredirect=true");
+                            }
+                            DocUrlCollection.push({ FileUrl: propertiesServerRelativeUrl, FileName: response.d.Name });
+                            $.when(getTargetIDByUrl(webUrl, response.d.ServerRelativeUrl)).done(function (responsecurrentItemId) {
+                                updateDocumentProperties(libraryName, responsecurrentItemId, webUrl, ExistFileMetadata, LoopCount, FileNameUpload);
+                            });
+                        },
+                        error: function (errorr) {
+                            waitingDialog.hide();
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            if (errorr.responseText.includes("Access denied") == true) {
+                                alert("You don't have the required permission to upload " + file.name + ".");
+                                return false;
+                            }
+                            else {
+                                alert(errorr.responseText);
+                                return false;
+                            }
+                        }
+                    }).fail(function (error) {
+                        waitingDialog.hide();
+                        RequestDigest = $("#__REQUESTDIGEST").val();
+                        if (error.responseJSON.error.message.value.includes("denied") == true) {
+                            //alert("You don't have the required permission to perform this operation.");
+                            return false;
+                        }
+                        else {
+                            alert(error.responseJSON.error.message.value);
+                            return false;
+                        }
+                    });
+                }
+                catch (error) {
+                    waitingDialog.hide();
+                    RequestDigest = $("#__REQUESTDIGEST").val();
+                    console.log(error);
+                    return false;
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        },
+        error: function (errorr) {
+            waitingDialog.hide();
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (errorr.responseText.includes("Access denied") == true) {
+                alert("You don't have the required permission to upload " + file.name + ".");
+                return false;
+            }
+            else {
+                alert(errorr.responseText);
+                return false;
+            }
+        }
+    });
+}
+
+function getTargetIDByUrl(siteUrl, targetFileUrl) {
+    $.ajax({
+        url: siteUrl + "/_api/Web/GetFileByServerRelativeUrl('" + targetFileUrl + "')/ListItemAllFields",
+        type: 'GET',
+        async: false,
+        headers: { 'accept': 'application/json;odata=verbose' },
+        success: function (responseData) {
+            commonserverRedirectedEmbedUri = responseData.d.ServerRedirectedEmbedUri;
+            if (commonserverRedirectedEmbedUri == null || commonserverRedirectedEmbedUri == "") {
+                commonserverRedirectedEmbedUri = "";
+            }
+            targetRoleDefinitionId = responseData.d.Id;
+        },
+        error: function (errorMessage) {
+            waitingDialog.hide();
+            alert(JSON.stringify(error));
+        }
+    });
+    return targetRoleDefinitionId;
+}
+
+
+//get metdata of uploaded files
+function updateDocumentProperties(ListName, currentitemId, webUrl, arrMetadata, LoopCount, FileName) {
+    var IsDuplicateFile = false;
+    var Metadata;
+    var FileTitleValue = $("#txtFileTitle").val();
+    if ($('#prefix_and_postfix_name').is(':checked') == true && $('#chkKeepExist').is(':checked') == false) { //Rename and Upload Title
+        FileName = FileName.split('.').slice(0, -1).join('.');
+        FileTitleValue = $("#txtTitlePrefix").val().trim() + FileName + $("#txtTitlePostfix").val().trim();
+    }
+    else {
+        if (arrMetadata.length == 0 && $('#prefix_and_postfix_name').is(':checked') == true) {
+            FileName = FileName.split('.').slice(0, -1).join('.');
+            FileTitleValue = $("#txtTitlePrefix").val().trim() + FileName + $("#txtTitlePostfix").val().trim();
+        }
+    }
+    if (ListName.includes('Documents') == true) {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var tempCopyLib = ListName;
+        if (tempCopyLib.includes('_') == true) {
+            tempCopyLib = tempCopyLib.replace('_', '_x005f_');
+        }
+        if (tempCopyLib.includes('%20') == true) {
+            tempCopyLib = tempCopyLib.replace('%20', '_x0020_');
+        }
+        var ItemType = GetItemTypeForLibraryName(tempCopyLib);
+    }
+    if ($('#RenameandUpload').is(':checked') == true || $('#chkUploadNew').is(':checked') == true) {
+        IsDuplicateFile = false;
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Title: FileTitleValue,
+            DocumentNo: $("#txtdocumentNo").val(),
+            DocumentType: $("#ddlFileType").val(),
+            DocumentWrittenBy: $("#FileAuthor").val(),
+            Details: $("#UploadFileComment").val(),
+            SubCategory: $("#FileSubType").val()
+        };
+        if ($("#FileSubType").val() == "--select--" || $("#FileSubType").val() == null || $("#FileSubType").val() == "-Select-") {
+            delete Metadata["SubCategory"];
+        }
+    }
+    else {
+        if ($('#chkKeepExist').is(':checked') == true && arrMetadata.length != 0) {
+            IsDuplicateFile = true;
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+
+                Title: arrMetadata.Title ? arrMetadata.Title : "",
+                DocumentNo: arrMetadata.DocumentNo ? arrMetadata.DocumentNo : "",
+                DocumentType: arrMetadata.DocumentType ? arrMetadata.DocumentType : "",
+                DocumentWrittenBy: arrMetadata.DocumentWrittenBy ? arrMetadata.DocumentWrittenBy : "",
+                //Regarding: arrMetadata.Regarding ? arrMetadata.Regarding : "",
+                Details: arrMetadata.Details ? arrMetadata.Details : "",
+                SubCategory: arrMetadata.SubCategory ? arrMetadata.SubCategory : "",
+                //Department: arrMetadata.Title ? arrMetadata.Title : "",
+                AccessLevel: arrMetadata.AccessLevel ? arrMetadata.AccessLevel : "",
+                SecurityLevel: arrMetadata.SecurityLevel ? arrMetadata.SecurityLevel : "",
+                PermissionLevel: arrMetadata.PermissionLevel ? arrMetadata.PermissionLevel : "",
+                PermissionLevelId: arrMetadata.PermissionLevelId ? arrMetadata.PermissionLevelId : "",
+                Approval: arrMetadata.Approval
+            };
+            if (arrMetadata.SharedId != null) {
+                Metadata.SharedId = { 'results': arrMetadata.SharedId.results };
+            }
+            if (arrMetadata.SubCategory == "--select--" || arrMetadata.SubCategory == null || arrMetadata.SubCategory == "-Select-" || arrMetadata.SubCategory == "") {
+                delete Metadata["SubCategory"];
+            }
+        }
+        else {
+            IsDuplicateFile = false;
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+                Title: FileTitleValue,
+                DocumentNo: $("#txtdocumentNo").val(),
+                DocumentType: $("#ddlFileType").val(),
+                DocumentWrittenBy: $("#FileAuthor").val(),
+                Details: $("#UploadFileComment").val(),
+                SubCategory: $("#FileSubType").val()
+            };
+            if ($("#FileSubType").val() == "--select--" || $("#FileSubType").val() == null || $("#FileSubType").val() == "-Select-") {
+                delete Metadata["SubCategory"];
+            }
+        }
+    }
+
+    updateFileWithID(ListName, Metadata, currentitemId, webUrl, IsDuplicateFile, LoopCount);
+}
+
+
+//Update metedata in library
+function updateFileWithID(ListName, Metadata, ID, webUrl, IsDuplicate, LoopCount) {
+    var dfd = $.Deferred();
+    if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(webUrl)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    var tempListName = ListName;
+    if (tempListName == 'Shared%20Documents' || tempListName == 'Shared Documents') {
+        tempListName = "Documents";
+    }
+    var oweburl = webUrl + "/_api/Web/Lists/getByTitle('" + tempListName + "')/Items(" + ID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if ($('#chkKeepExist').is(':checked') == false) { // if user select to keep existing metadata for duplicate file only
+                var Query = "?$select=ID,DocumentID&$filter=DocumentID eq '" + ID + "' ";
+                $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SharedLInks) {
+                    if (SharedLInks.length > 0) {
+                        for (var index = 0; index < SharedLInks.length; index++) {
+                            DeleteSharedLinks(SharedLInks[index].ID);//delete link
+                        }
+                    }
+                });
+            }
+            if (FinalFiles4Upload.length == (LoopCount + 1 + FailDueToCheckOut)) {
+                if ($('#chkUploadMail').prop('checked') == true) {
+                    EmailProperties(webUrl);
+                }
+                else {
+                    DocUrlCollection = [];
+                    if (FailDueToCheckOut == 0) {
+                        alert("File(s) have been uploaded successfully.");
+                    }
+                    else {
+                        alert(FailDueToCheckOut + " file(s) are locked, couldn't be uploaded.\nOther files(s) have been uploaded successfully.");
+                    }
+                     FinalFiles4Upload=[];//22 March 2023
+                    waitingDialog.hide();
+                    var tempDocName = Documentname;
+                    if (Documentname.includes('/Documents/') == true || Documentname.search(/\bDocuments\b/) >= 0) {
+                        tempDocName = "Shared%20Documents";
+                    }
+                    GetMyDocumentsWithFilesFolder(tempDocName);
+                }
+                $("#myModalupload").modal('hide');
+            }
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            waitingDialog.hide();
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.indexOf('does not exist on type') != -1 || error.responseText.indexOf('The security validation for this page is i') != -1) {
+                var tempDocName = Documentname;
+                if (Documentname.includes('/Documents/') == true) {
+                    tempDocName = "Shared%20Documents";
+                }
+                GetMyDocumentsWithFilesFolder(tempDocName);
+                alert("Required columns does not exists. Kindly contact administrator to activate features.");
+                $("#myModalupload").modal('hide');
+                $("#txtUploadFiles").empty();
+                $("#txtUploadFiles").hide();
+                FinalFiles4Upload = [];
+            }
+            else {
+                var tempError = '';
+                if (error.responseJSON.error.message.value == undefined) {
+                    tempError = JSON.stringify(error);
+                }
+                else {
+                    tempError = error.responseJSON.error.message.value;
+                }
+                alert(tempError);
+            }
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//get the Team memebers email
+function getFromUserEmail() {
+    var arrFrom = [];
+    var Query = "?$select=Title,InternalMembers/EMail,InternalSupervisor/EMail,GroupName/Id,GroupName/Title,Supervisor/EMail&$expand=GroupName,InternalMembers,InternalSupervisor,Supervisor&$filter=Title eq '" + currentClientName  + "' ";
+    $.when(getItemsWithQuery("ClientMaster", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TeamMember) {
+        if (TeamMember[0].GroupName.Title != undefined && TeamMember[0].GroupName.Title != null) {
+            arrFrom.push(TeamMember[0].GroupName.Title);
+        }
+        if (TeamMember[0].InternalSupervisor.EMail != undefined && TeamMember[0].InternalSupervisor.EMail != null) {
+            arrFrom.push(TeamMember[0].InternalSupervisor.EMail);
+        }
+        if (TeamMember[0].Supervisor.EMail != undefined && TeamMember[0].Supervisor.EMail != null) {
+            arrFrom.push(TeamMember[0].Supervisor.EMail);
+        }
+        if (TeamMember[0].InternalMembers.results != undefined && TeamMember[0].InternalMembers.results != null) {
+            for (var i = 0; i < TeamMember[0].InternalMembers.results.length; i++) {
+                arrFrom.push(TeamMember[0].InternalMembers.results[i].EMail);
+            }
+        }
+    });
+    
+    return arrFrom;
+}
+//Send Email when user uploaded the Folder
+function FolderUploadMail() {
+    var UploadDocDesign = '';
+    var FileDocType = '';
+    var FromUserEmails = [];
+    if ($("#ddlFileType").val() != "-Select-") {
+        FileDocType = $("#ddlFileType").val();
+    }
+    var Library = '';
+    Library = '<strong>Guest Client:</strong> ' + currentClientName;
+
+    UploadDocDesign = "Following folder has been uploaded.<br/>";
+    var FromUserEmails = getFromUserEmail();
+    for (var i = 0; i < DocUrlCollection.length; i++) {
+        var FileServerURL = window.location.origin + DocUrlCollection[i].FileUrl;
+        UploadDocDesign = UploadDocDesign + "<div> " + Library + "</div><br/>" +
+        									"<div><strong>Folder Name :</strong>" + DocUrlCollection[i].FileName + "</div>" +
+        									"<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + $("#txtFileTitle").val() + "</div>" +
+                                        	"<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + $("#txtdocumentNo").val() + "</div>" +
+                                            "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + FileDocType + "</div>" +
+                                            "<div><strong>Details:</strong> " + $("#UploadFileComment").val() + "</div><br/>" +
+                                            "<div><strong>Uploaded by:</strong> " + _spPageContextInfo.userDisplayName + "</div>" +
+                                            "<div><strong>Uploaded On:</strong> " + moment(new Date()).format('MMM DD YYYY') + "</div><br/><br/>" +
+                                            "<div><a href=" + FileServerURL + ">Click here</a> to open the folder.</div>" + "<br/><br/>";
+
+
+    }
+    UploadDocDesign += "This is an auto generated email. Please don't reply.";
+    for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+    	if(UploadDocDesign.includes(LabelDefaultLangauge[k].Key) == true){
+    		UploadDocDesign= UploadDocDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+    	}	
+    }
+    var Metadata;
+    Metadata = {
+        'properties': {
+            '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+            'From': _spPageContextInfo.userEmail,
+            'To': { 'results': FromUserEmails },
+            //'CC': { 'results': ccUsers },
+            'Body': UploadDocDesign,
+            'Subject': "A folder has been uploaded."
+        }
+    };
+    var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(Metadata),
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            DocUrlCollection = [];
+        },
+        error: function (xhr, data, error) {
+            waitingDialog.hide();
+            DocUrlCollection = [];
+            var err = JSON.parse(xhr.responseText);
+            var errorType = xhr.status;
+            var errorMessage = err.error.message.value;
+            //alert(errorMessage);
+        }
+    });
+}
+
+//Send Email when user uploaded the document
+function EmailProperties(siteURL) {
+    var UploadDocDesign = '';
+    var FileDocType = '';
+    var FromUserEmails = [];
+    if ($("#ddlFileType").val() != "-Select-") {
+        FileDocType = $("#ddlFileType").val();
+    }
+    var Library = '';
+    if (currentSectionType == 'My Documents') {
+       // Library = '<strong>Library:</strong> My Documents';
+        Library = '<strong>Library:</strong> Common Documents';
+    }
+    else if (currentSectionType == 'Department') {
+        Library = '<strong>Department:</strong> ' + $(".headdingLinks").text();
+    }
+    else if (currentSectionType == 'Group Documents') {
+        Library = '<strong>Group:</strong> ' + $(".headdingLinks").text();
+    }
+    else if (currentSectionType == 'ProjectDocuments') {
+        Library = '<strong>Project:</strong> ' + $(".headdingLinks").text();
+    }
+    else if (currentSectionType == 'GuestDocuments') {
+        Library = '<strong>Guest Client:</strong> ' + $(".headdingLinks").text();
+    }
+    UploadDocDesign = "Following document(s) have been uploaded.<br/><br/>";
+    var FromUserEmails = getFromUserEmail();
+    for (var i = 0; i < DocUrlCollection.length; i++) {
+        var MailLink = '';
+        var FileServerURL = DocUrlCollection[i].FileUrl;
+        if (DocUrlCollection[i].FileName.indexOf("xml") != -1 || DocUrlCollection[i].FileName.indexOf("rar") != -1 || DocUrlCollection[i].FileName.indexOf("png") != -1 || DocUrlCollection[i].FileName.indexOf("jpg") != -1 || DocUrlCollection[i].FileName.indexOf("jpeg") != -1) {
+            if (FileServerURL.includes("DocumentManagementSystem") == true || FileServerURL.includes("DepartmentalDMS") == true) {
+                if (FileServerURL.includes("DocumentManagementSystem") == true) {
+                    MailLink = siteURL + "/DocumentManagementSystem/Forms/AllItems.aspx?id=" + encodeURIComponent(FileServerURL) + "&parent=" + encodeURIComponent(FileServerURL.substr(0, FileServerURL.lastIndexOf("/") + 0));
+                } else {
+                    MailLink = siteURL + "/DepartmentalDMS/Forms/AllItems.aspx?id=" + encodeURIComponent(FileServerURL) + "&parent=" + encodeURIComponent(FileServerURL.substr(0, FileServerURL.lastIndexOf("/") + 0));
+                }
+            } else {
+                var HostName = window.location.origin + FileServerURL.substr(0, FileServerURL.lastIndexOf("/") + 0);
+                MailLink = HostName + "/Forms/AllItems.aspx?id=" + encodeURIComponent(FileServerURL) + "&parent=" + encodeURIComponent(FileServerURL.substr(0, FileServerURL.lastIndexOf("/") + 0));
+            }
+        }
+        else {
+            MailLink = encodeURI(DocUrlCollection[i].FileUrl);
+        }
+        UploadDocDesign = UploadDocDesign + "<div> " + Library + "</div><br/>" +
+        									"<div><strong>File Name :</strong>" + DocUrlCollection[i].FileName + "</div>" +
+        									"<div data-localize='Title'><strong>Title</strong><strong>:</strong> " + $("#txtFileTitle").val() + "</div>" +
+                                        	"<div data-localize='Reference'><strong>Reference</strong><strong>:</strong> " + $("#txtdocumentNo").val() + "</div>" +
+                                            "<div data-localize='Category'><strong>Category</strong><strong>:</strong> " + FileDocType + "</div>" +
+                                            "<div><strong>Details:</strong> " + $("#UploadFileComment").val() + "</div><br/>" +
+                                            "<div><strong>Uploaded by:</strong> " + _spPageContextInfo.userDisplayName + "</div>" +
+                                            "<div><strong>Uploaded On:</strong> " + moment(new Date()).format('MMM DD YYYY') + "</div><br/><br/>" +
+                                            "<div><a href=" + MailLink + ">Click here</a> to open the document.</div>" + "<br/><br/>";
+
+    }
+    UploadDocDesign += "This is an auto generated email. Please don't reply.";
+    for (var k = 0; k < LabelDefaultLangauge.length; k++) {
+        if (UploadDocDesign.includes(LabelDefaultLangauge[k].Key) == true) {
+            UploadDocDesign = UploadDocDesign.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+        }
+    }
+
+    var Metadata;
+    Metadata = {
+        'properties': {
+            '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+            'From': _spPageContextInfo.userEmail,
+            'To': { 'results': FromUserEmails },
+            //'CC': { 'results': ccUsers },
+            'Body': UploadDocDesign,
+            'Subject': "Documents(s) have been uploaded."
+        }
+    };
+    var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(Metadata),
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            DocUrlCollection = [];
+            if (FailDueToCheckOut == 0) {
+                alert("File(s) have been uploaded successfully.");
+            }
+            else {
+                alert(FailDueToCheckOut + " file(s) are locked, couldn't be uploaded.\nOther files(s) have been uploaded successfully.");
+            }
+            FinalFiles4Upload=[];//22 March 2023
+            waitingDialog.hide();
+            var tempDocName = Documentname;
+            if (Documentname.includes('/Documents/') == true || Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+        },
+        error: function (xhr, data, error) {
+            if (FailDueToCheckOut == 0) {
+                alert("File(s) have been uploaded successfully.");
+            }
+            else {
+                alert(FailDueToCheckOut + " file(s) are locked, couldn't be uploaded.\nOther files(s) have been uploaded successfully.");
+            }
+            waitingDialog.hide();
+            var tempDocName = Documentname;
+            if (Documentname.includes('/Documents/') == true || Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            DocUrlCollection = [];
+            var err = JSON.parse(xhr.responseText);
+            var errorType = xhr.status;
+            var errorMessage = err.error.message.value;
+            //alert(errorMessage);
+        }
+    });
+}
+
+//check and replace Special characters
+function checkSpecialCharaters(string) {
+    var specialChars = "<>#%&*{}?:|\"\\/~`'";
+    for (i = 0; i < specialChars.length; i++) {
+        if (string.indexOf(specialChars[i]) > -1) {
+            return true
+        }
+    }
+    return false;
+}
+//Uploading files code ends---------------------------
+
+
+//Uploading folder code starts---------------------------
+
+//Create the folder heirarchy
+function uploadFolder() {
+    var FolderPath = '',
+        arrFolders = [],
+        IsRootFolder = true,
+        IsPermission = true,
+        arrTempFolder = '';
+    DocUrlCollection = [];
+    DocUrlCollection.push({ FileUrl: '', FileName: $('.NewFolderUpload').text().trim() });
+    FinalFiles4Upload = [];
+    if (Documentname.substr(Documentname.length - 1) == '/') {
+        Documentname = Documentname.substring(0, Documentname.length - 1);
+    }
+    //Make the structure of FOlder
+    for (var FolderLevel = 0; FolderLevel < FinalFoldersUpload.length; FolderLevel++) {
+        arrFolders = FinalFoldersUpload[FolderLevel].webkitRelativePath.substr(0, FinalFoldersUpload[FolderLevel].webkitRelativePath.lastIndexOf("/"));
+        arrFolders = checkFolderSpecialCharUpload(arrFolders);
+        for (Folder = 0; Folder < arrFolders.split('/').length; Folder++) {
+            if (Folder == 0) {
+                FolderPath = Documentname;
+            }
+            if (Folder == 0 && FolderLevel == 0) {
+                IsRootFolder = true;
+            }
+            else {
+                IsRootFolder = false;
+            }
+            newSubfolderName = arrFolders.split('/')[Folder];
+            if (checkSpecialCharaters(newSubfolderName) == true) {
+                newSubfolderName = newSubfolderName.replaceAll(/[&\/\\#,+()$~%'":*.?<>{}]/g, '');
+            }
+            //First create a root folder
+            var newSubfolderName = arrFolders.split('/')[Folder];
+            if (IsRootFolder == true) {
+                if (newSubfolderName.length < 2) {
+                    alert("Folder's length can't be less than 2 character.");
+                    waitingDialog.hide();
+                    FinalFiles4Upload = [];
+                    FinalFoldersUpload = [];
+                    $("#txtFileTitle").val('');
+                    $("#txtdocumentNo").val('');
+                    $("#ddlFileType").val("-Select-");
+                    $("#UploadFileComment").val('');
+                    $("#txtUploadFolder").html('');
+                    $("#txtUploadFolder").hide();
+                    $("#myModalupload").modal('hide');
+                    return false;
+                }
+                if (newSubfolderName.length > 200) {
+                    alert('200 characters maximum folder length allowed.');
+                    waitingDialog.hide();
+                    FinalFiles4Upload = [];
+                    FinalFoldersUpload = [];
+                    $("#txtFileTitle").val('');
+                    $("#txtdocumentNo").val('');
+                    $("#ddlFileType").val("-Select-");
+                    $("#UploadFileComment").val('');
+                    $("#txtUploadFolder").html('');
+                    $("#myModalupload").modal('hide');
+                    return false;
+                }
+                //check if folder already exists
+                var folderexistcheck = ChekFolderExistOrNot(FolderPath, newSubfolderName);
+                if (folderexistcheck == false) {
+                    if($("#RenameandUploadFolder").prop('checked') == true){
+                        newSubfolderName = $("#txtNamePrefixFol").val().trim() + newSubfolderName + $("#txtNamePostfixFold").val().trim();
+                    }
+                    else {
+                        alert('Folder already exists.');
+                        waitingDialog.hide();
+                        FinalFiles4Upload = [];
+                        FinalFoldersUpload = [];
+                        $("#txtFileTitle").val('');
+                        $("#txtdocumentNo").val('');
+                        $("#ddlFileType").val("-Select-");
+                        $("#UploadFileComment").val('');
+                        $("#txtUploadFolder").html('');
+                        $("#txtUploadFolder").hide();
+                        $("#myModalupload").modal('hide');
+                        return false;
+                    }
+                }
+                $.when(CreateDMSFolder(FolderPath, newSubfolderName, false)).done(function (MainExamListItemTemp) {//Folder created
+                    if (MainExamListItemTemp.Exists != undefined) {
+                        DocUrlCollection[0].FileName = checkFolderSpecialCharUpload(DocUrlCollection[0].FileName);
+                        DocUrlCollection[0].FileUrl = MainExamListItemTemp.ServerRelativeUrl;
+                        if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+                            if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                                libraryName = "DocumentManagementSystem";
+                            } else {
+                                libraryName = "DepartmentalDMS";
+                            }
+                        } else {
+                            if (Documentname.indexOf('/') != -1) {
+                                libraryName = Documentname.split('/')[0];
+                            } else {
+                                libraryName = Documentname;
+                            }
+                            //libraryName = "Documents";
+                        }
+                        Query = "?$select=Id,Author/EMail&$expand=Author&$orderby=Id desc&$Filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+                        if (libraryName.search(/\bDocuments\b/) >= 0 || libraryName == "Shared Documents"|| libraryName == "Shared%20Documents") {
+                            libraryName = "Documents";
+                        }
+                        $.when(getItemsWithQuery(libraryName, Query, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")))).done(function (DMSFolder) {
+                            updateFolderDocProp(libraryName, DMSFolder[0].Id, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")));
+                        });
+                        FolderPath = FolderPath + "/" + newSubfolderName;
+                    }
+                    else {
+                        IsPermission = false;
+                        FinalFiles4Upload = [];
+                        FinalFoldersUpload = [];
+                        $("#myModalupload").modal('hide')
+                    }
+                });
+            }
+            else {
+                //check if folder already exists
+                //var folderexistcheck = ChekFolderExistOrNot(FolderPath, newSubfolderName);
+                if (folderexistcheck == true) {
+                    $.when(CreateDMSFolder(FolderPath, newSubfolderName, false)).done(function (MainExamListItemTemp) {
+                        if (MainExamListItemTemp.Exists != undefined) {
+                            if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+                                if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                                    libraryName = "DocumentManagementSystem";
+                                } else {
+                                    libraryName = "DepartmentalDMS";
+                                }
+                            } else {
+                                if (Documentname.indexOf('/') != -1) {
+                                    libraryName = Documentname.split('/')[0];
+                                } else {
+                                    libraryName = Documentname;
+                                }
+                                //libraryName = "Documents";
+                            }
+                            if ($("#chkFolderProp").prop('checked') == true) {
+                                if (libraryName.search(/\bDocuments\b/) >= 0 || libraryName == "Shared Documents"|| libraryName == "Shared%20Documents") {
+                                    libraryName = "Documents";
+                                }
+                                Query = "?$select=Id,Author/EMail&$expand=Author&$orderby=Id desc&$Filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' ";
+                                $.when(getItemsWithQuery(libraryName, Query, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")))).done(function (DMSFolder) {
+                                    updateFolderDocProp(libraryName, DMSFolder[0].Id, DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/")));
+                                });
+                            }
+                            FolderPath = FolderPath + "/" + newSubfolderName;
+                        }
+                        else {
+                            IsPermission = false;
+                            FinalFiles4Upload = [];
+                            FinalFoldersUpload = [];
+                            $("#myModalupload").modal('hide')
+                        }
+                    });
+                }
+                else {
+                    FolderPath = FolderPath + "/" + newSubfolderName;
+                }
+            }
+
+        }
+
+    }
+    //Upload the files on the mentioned folder
+    if (IsPermission == true) {
+        var siteUrl = DMS_Link.split('/Forms')[0].substr(0, DMS_Link.split('/Forms')[0].lastIndexOf("/"));
+        if (Documentname[Documentname.length - 1] == '/') {
+            var folderName = Documentname;
+        }
+        else {
+            var folderName = Documentname + '/';
+        }
+        for (var file = 0; file < FinalFoldersUpload.length; file++) {
+            var tempFolder = checkFolderSpecialCharUpload(FinalFoldersUpload[file].webkitRelativePath.substr(0, FinalFoldersUpload[file].webkitRelativePath.lastIndexOf("/")));
+            FolderPath = folderName + tempFolder;
+            uploadFolderDocuments(FolderPath, FinalFoldersUpload[file], siteUrl, file);
+        }
+    }
+}
+
+function uploadFolderDocuments(folderName, file, webUrl, LoopCount) {
+    url = webUrl + "/_api/contextinfo";
+    //var DocUrlCollection = [];
+    $.ajax({
+        url: url,
+        type: "POST",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        contentType: "application/json;odata=verbose",
+        success: function (data) {
+            var digest = data.d.GetContextWebInformation.FormDigestValue;
+            var libraryName = "";
+
+            if (DMS_Link.includes("DocumentManagementSystem") == true || DMS_Link.includes("DepartmentalDMS") == true) {
+                if (DMS_Link.includes("DocumentManagementSystem") == true) {
+                    libraryName = "DocumentManagementSystem";
+                } else {
+                    libraryName = "DepartmentalDMS";
+                }
+            } else {
+                if (Documentname.indexOf('/') != -1) {
+                    libraryName = Documentname.split('/')[0];
+                } else {
+                    libraryName = Documentname;
+                }
+                //libraryName = "Documents";
+            }
+
+            var reader = new FileReader();
+            var arrayBuffer;
+
+            reader.onload = function (e) {
+                arrayBuffer = reader.result;
+
+                var targetUrl = _spPageContextInfo.webServerRelativeUrl + "/" + libraryName;
+                if (checkSpecialCharaters(file.name) == true) {
+                    var changedFileName = file.name.replace(/[&\/\\#,+()$~%'":*?<>{}]/g, '');
+                }
+                else {
+                    var changedFileName = file.name;
+                }
+                /*if (folderName.search(/\bDocuments\b/) >= 0) {
+                    folderName = folderName.replace('Documents', 'Shared Documents');
+                }*/
+                
+                if(folderName.includes('/Documents/') == true) {
+			        folderName= folderName.replace("/Documents/", '/Shared%20Documents/');
+			    }
+			    else if(folderName== "Documents") {
+			    	folderName = 'Shared%20Documents';
+			    }
+			    else if(folderName.includes('Documents/') == true && (folderName.includes('Shared Documents/') == false && folderName.includes('Shared%20Documents/') == false)){
+			    	folderName= folderName.replace("Documents/", 'Shared%20Documents/');
+			    }
+                
+                if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+                    $.when(GetFormDigestValue(webUrl)).done(function(GetFormDigestValue) {
+                        RequestDigest = GetFormDigestValue
+                    });
+                }
+                url = webUrl + "/_api/web/GetFolderByServerRelativeUrl('" + folderName + "')/Files/add(url='" + changedFileName + "',overwrite=true)?@target='" + targetUrl + "'&$expand=ListItemAllFields";
+                try {
+                    $.ajax({
+                        url: url,
+                        type: "POST",
+                        data: arrayBuffer,
+                        headers: {
+                            "Accept": "application/json; odata=verbose",
+                            "X-RequestDigest": RequestDigest
+                        },
+                        contentType: "application/json;odata=verbose",
+                        processData: false,
+                        success: function (response) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            var uploadedFileName = response.d.Name
+                            var sharingLink = response.d.ServerRelativeUrl;
+                            var propertiesServerRelativeUrl = '';
+                            $.when(getTargetIDByUrl(webUrl, response.d.ServerRelativeUrl)).done(function (responsecurrentItemId) {
+                                if($("#chkFolderProp").prop('checked') == true) {
+                                    updateFolderDocProp(libraryName, responsecurrentItemId, webUrl);
+                                }
+                            });
+                            if(FinalFoldersUpload.length == LoopCount + 1) {
+                                FinalFiles4Upload = [];
+                                FinalFoldersUpload = [];
+                                if ($('#chkUploadMail').prop('checked') == true) {
+                                    FolderUploadMail();
+                                }
+                                else {
+                                    DocUrlCollection = [];
+                                }
+                                var tempDocName = Documentname;
+                                if(Documentname.includes('/Documents/') == true) {
+                                    tempDocName = tempDocName.replace("/Documents/", "/Shared%20Documents/");
+                                } 
+                                else if(Documentname == 'Documents') {
+                                    tempDocName = tempDocName.replace("Documents", "Shared%20Documents");
+                                } 
+                                GetMyDocumentsWithFilesFolder(tempDocName);
+                                waitingDialog.hide();
+                                $("#myModalupload").modal('hide');
+                                alert("Folder has been uploaded.");
+                            }
+                        },
+                        error: function (errorr) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            waitingDialog.hide();
+                            alert("Please try again something went wrong.<br/>" + JSON.stringify(errorr));
+                            return false;
+                        }
+                    }).fail(function (error) {
+                        RequestDigest = $("#__REQUESTDIGEST").val();
+                        waitingDialog.hide();
+                        alert(error.responseJSON.error.message.value);
+                        return false;
+                    });
+                }
+                catch (error) {
+                    waitingDialog.hide();
+                    console.log(error);
+                    return false;
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        },
+        error: function (errorr) {
+            waitingDialog.hide();
+            alert("Please try again something went wrong.<br/>" + JSON.stringify(errorr));
+            return false;
+        }
+    });
+}
+
+//get metdata of uploaded files
+function updateFolderDocProp(ListName, currentitemId, webUrl) {
+    var Metadata;
+    if (ListName.search(/\bDocuments\b/) >= 0 || ListName == "Shared Documents"|| ListName == "Shared%20Documents") {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(ListName);
+    }
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtFileTitle").val(),
+        DocumentNo: $("#txtdocumentNo").val(),
+        DocumentType: $("#ddlFileType").val(),
+        DocumentWrittenBy: $("#FileAuthor").val(),
+        Details: $("#UploadFileComment").val()
+    };
+    updateFolderFileMetadata(ListName, Metadata, currentitemId, webUrl);
+}
+
+
+//Update metedata in library
+function updateFolderFileMetadata(ListName, Metadata, ID, webUrl) {
+    var dfd = $.Deferred();
+    if (ListName.search(/\bDocuments\b/) >= 0 || ListName == "Shared Documents"|| ListName == "Shared%20Documents") {
+        ListName = "Documents";
+    }
+    if (webUrl != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(webUrl)).done(function(GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    var oweburl = webUrl + "/_api/Web/Lists/getByTitle('" + ListName + "')/Items(" + ID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            dfd.resolve(true);
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            waitingDialog.hide();
+            if (error.responseText.indexOf('does not exist on type') != -1 || error.responseText.indexOf('The security validation for this page is i') != -1) {
+                alert("Required columns does not exists. Kindly contact administrator to activate features.");
+                $("#myModalupload").modal('hide');
+                $("#txtUploadFiles").empty();
+                $("#txtUploadFiles").hide();
+                FinalFiles4Upload = [];
+                FinalFoldersUpload = [];
+            }
+            else {
+                var tempError = '';
+                if(error.responseJSON.error.message.value == undefined) {
+                    tempError = JSON.stringify(error);
+                }
+                else {
+                    tempError = error.responseJSON.error.message.value;
+                }
+                alert(tempError);
+            }
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+//Validation for FolerName - upload
+function checkFolderSpecialCharUpload(string) {
+    var specialChars = "';.<>#%&*{}?:|\"\\~`()$<>,";
+    for (i = 0; i < specialChars.length; i++) {
+        if (string.indexOf(specialChars[i]) > -1) {
+            string = string.replaceAll(specialChars[i], "");
+        }
+    }
+    return string;
+}
+
+//Uploading folder code ends---------------------------
+
+//Multiple Files download method
+function MultipleFileDownload() {
+    var arrTempFolder = [];
+    var FolderSiteURL = [];
+    if (arrFileFolder.length > 0) {
+        //for (var index = 0; index < arrFileFolder.length; index++) {
+        arrFileFolder.forEach(function (entry, index) {
+            var url = entry.ServerURL;
+            if (entry.type == 'file') {
+                //Extension = entry.FileFolderName.substring(entry.FileFolderName.lastIndexOf('.') + 1);
+                Extension = entry.ServerURL.substring(entry.ServerURL.lastIndexOf('.') + 1);//Bhawana
+                if(url.includes('/Documents/') == true) {
+                    url = url.replace("/Documents/", "/Shared%20Documents/");
+                } 
+                if (Extension.toLowerCase() != "txt" && Extension.toLowerCase() != "png" && Extension.toLowerCase() != "jpeg" && Extension.toLowerCase() != "gif" && Extension.toLowerCase() != "jpg" && Extension.toLowerCase() != "pdf") {
+                	//$.fileDownload(url);
+                	// create the REST API endpoint URL
+var apiUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/GetFileByServerRelativeUrl('" + entry.ServerURL + "')/$value";
+
+// create a new anchor element and set the href and download attributes
+var downloadLink = document.createElement('a');
+downloadLink.href = apiUrl;
+downloadLink.setAttribute('download', entry.FileFolderName);
+document.body.appendChild(downloadLink);
+downloadLink.click();
+
+
+                	
+                }
+                else {
+	                var a = document.createElement("a");
+	                a.setAttribute('href', (window.location.origin + url));
+	                a.setAttribute('download',entry.FileFolderName);
+	                a.setAttribute('target', '_blank');
+	                a.click();
+	            }
+            }
+            else {
+                     downloadSelectedFilesAsZip(arrFileFolder);
+                   return false;
+
+            
+            /*
+                FolderSiteURL = entry.SiteURL;
+                if (entry.ServerURL.search(/\bDocuments\b/) >= 0) {
+                    entry.ServerURL = entry.ServerURL.replace('Documents', 'Shared Documents');
+                }
+                else if (entry.ServerURL.search(/\bShared%20Documents\b/) >= 0) {
+                    entry.ServerURL = entry.ServerURL.replace('Shared%20Documents', 'Shared Documents');
+                }
+
+                var Ownurl = entry.SiteURL + "/_api/Web/GetFolderByServerRelativeUrl('" + entry.ServerURL + "')?$select=ID,EncodedAbsUrl,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields";
+                $.ajax({
+                    url: Ownurl,
+                    headers: { Accept: "application/json;odata=verbose" },
+                    async: true,
+                    success: function (data) {
+                        var files = data.d.Files.results;
+                        for (var file = 0; file < files.length; file++) {
+                            Extension = files[file].Name.substring(files[file].Name.lastIndexOf('.') + 1);
+                        	if(files[file].ServerRelativeUrl.includes('/Documents/') == true) {
+			                    files[file].ServerRelativeUrl = files[file].ServerRelativeUrl.replace("/Documents/", "/Shared%20Documents/");
+			                }
+                            if (Extension.toLowerCase() != "txt" && Extension.toLowerCase() != "png" && Extension.toLowerCase() != "jpeg" && Extension.toLowerCase() != "gif" && Extension.toLowerCase() != "jpg" && Extension.toLowerCase() != "pdf") {
+			                	$.fileDownload(files[file].ServerRelativeUrl);
+			                }
+			                else {
+				                var a = document.createElement("a");
+	                            a.setAttribute('href', window.location.origin + files[file].ServerRelativeUrl);
+	                            a.setAttribute('download', '');
+	                            a.setAttribute('target', '_blank');
+	                            a.click();
+	                        }
+                        }
+                        var folders = data.d.Folders.results;
+                        for (var fold = 0; fold < folders.length; fold++) {
+                            downloadFilesFromFolder(FolderSiteURL, folders[fold].ServerRelativeUrl);
+                        }
+                    }, eror: function (data) {
+                        console.log('error');
+                    }
+                });
+                
+                */
+            }
+            if ((index + 1) == arrFileFolder.length) {
+                //alert("All the file(s)/folder(s) have been downloaded.");
+                $(".chkFileFolder").prop("checked", false);
+                $('#selectAllChk').prop("checked", "");
+                $(".chkShareToMe").prop("checked", false);
+                arrFileFolder = [];
+            }
+        });
+    }
+    else {
+        alert("Please select any file or folder first.");
+        return false;
+    }
+}
+
+//download files from folder
+function downloadFilesFromFolder(SiteURL, ServerURL) {
+    if(ServerURL.includes('Documents') == true && ServerURL != 'Shared%20Documents/' && ServerURL.indexOf("Shared Documents") == -1) {
+        ServerURL = ServerURL.replace('Documents', 'Shared Documents');
+    }
+
+    var Ownurl = SiteURL+ "/_api/Web/GetFolderByServerRelativeUrl('" + ServerURL + "')?$select=ID,EncodedAbsUrl,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) {
+            var files = data.d.Files.results;
+            for (var file = 0; file < files.length; file++) {
+                Extension = files[file].Name.substring(files[file].Name.lastIndexOf('.') + 1);
+            	if(files[file].ServerRelativeUrl.includes('/Documents/') == true) {
+                    files[file].ServerRelativeUrl = files[file].ServerRelativeUrl.replace("/Documents/", "/Shared%20Documents/");
+                }
+            	if (Extension.toLowerCase() != "txt" && Extension.toLowerCase() != "png" && Extension.toLowerCase() != "jpeg" && Extension.toLowerCase() != "gif" && Extension.toLowerCase() != "jpg" && Extension.toLowerCase() != "pdf") {
+                	$.fileDownload(files[file].ServerRelativeUrl);
+                	
+
+                	
+                }
+                else {
+                	var a = document.createElement("a");
+	                a.setAttribute('href', window.location.origin + files[file].ServerRelativeUrl);
+	                a.setAttribute('download', entry.FileFolderName);
+	                a.setAttribute('target', '_blank');
+	                a.click();
+	            }
+            }
+            var folders = data.d.Folders.results;
+            for (var fold = 0; fold < folders.length; fold++) {
+                downloadFilesFromFolder(SiteURL, folders[fold].ServerRelativeUrl);
+            }
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+
+}
+
+//Multiple File and folder delete.
+function MultipleFileFolderDelete() {
+    if (arrFileFolder.length > 0) {
+        if (confirm("Are you sure,you want to delete this file/folder?") == true) {
+            var itemUpdated = 0;
+            FailDueToCheckOut = 0;
+            if(Documentname[Documentname.length - 1] == '/') {
+                var folderName = Documentname;
+            }
+            else {
+                var folderName = Documentname + '/';
+            }
+
+            for (var index = 0; index < arrFileFolder.length; index++) {
+                if (arrFileFolder[index].type == 'file') {
+                    if (IsFileCheckout(folderName, arrFileFolder[index].FileFolderName, arrFileFolder[index].SiteURL, '') != true) {
+                        if(arrFileFolder[index].SelectedLibrary.search(/\bShared%20Documents\b/) >= 0) {
+                            arrFileFolder[index].SelectedLibrary= arrFileFolder[index].SelectedLibrary.replace("Shared%20Documents", 'Documents');
+                        }
+                        if (arrFileFolder[index].SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                            $.when(GetFormDigestValue(arrFileFolder[index].SiteURL)).done(function(GetFormDigestValue) {
+                                RequestDigest = GetFormDigestValue
+                            });
+                        }
+                        $.ajax({
+                            url: arrFileFolder[index].SiteURL + "/_api/web/lists/GetByTitle('" + arrFileFolder[index].SelectedLibrary + "')/items('" + arrFileFolder[index].DocumentId + "')",
+                            type: "POST",
+                            async: false,
+                            headers:
+			                {
+			                    "X-RequestDigest": RequestDigest,
+			                    "IF-MATCH": "*",
+			                    "X-HTTP-Method": "DELETE"
+			                },
+                            success: function (data) {
+                                itemUpdated++;
+                                RequestDigest = $("#__REQUESTDIGEST").val();
+                                if (itemUpdated == arrFileFolder.length) {
+                                    if (FailDueToCheckOut == 0) {
+                                        alert("All the files/folders have been deleted.");
+                                    }
+                                    else {
+                                        alert(FailDueToCheckOut + " files couldn't be deleted because of locked others have been deleted successfully.");
+                                    }
+                                    $(".chkFileFolder").prop("checked", false);
+                                    $('#selectAllChk').prop("checked", false);
+                                    arrFileFolder = [];
+                                    var tempDocName = Documentname;
+                                    if(Documentname.search(/\bDocuments\b/) >= 0) {
+                                        tempDocName = "Shared%20Documents";
+                                    }
+                                    GetMyDocumentsWithFilesFolder(tempDocName);
+                                }
+                                //itemUpdated++;
+                            },
+                            error: function (data) {
+                                RequestDigest = $("#__REQUESTDIGEST").val();
+                                if(data.responseText.includes("Access is denied") == true) {
+                                    alert("You don't have the required permission on "+arrFileFolder[index].FileFolderName+" to perform this operation.");
+                                    return false;
+                                }
+                                else {
+                                    alert(data.responseText);
+                                    return false;
+                                }
+                            }
+                        });
+                    }
+                    else {
+                        FailDueToCheckOut++;
+                        itemUpdated++;
+                        RequestDigest = $("#__REQUESTDIGEST").val();
+                        if (FailDueToCheckOut == arrFileFolder.length) {
+                            waitingDialog.hide();
+                            FailDueToCheckOut = 0;
+                            alert("Selected file(s) are locked, couldn't be deleted.");
+                            $(".chkFileFolder").prop("checked", false);
+                            $('#selectAllChk').prop("checked", false);
+                            arrFileFolder = [];
+                        }
+                        if (itemUpdated == arrFileFolder.length) {
+                            if (FailDueToCheckOut == 0) {
+                                alert("All the files/folders have been deleted.");
+                            }
+                            else {
+                                alert(FailDueToCheckOut + " file(s) are locked, couldn't be deleted.\nOther files(s) have been deleted successfully.");
+                            }
+                            $(".chkFileFolder").prop("checked", false);
+                            $('#selectAllChk').prop("checked", false);
+                            arrFileFolder = [];
+                            var tempDocName = Documentname;
+                            if(Documentname.search(/\bDocuments\b/) >= 0) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            GetMyDocumentsWithFilesFolder(tempDocName);
+                        }
+
+                    }
+                }
+                else { //Folder deletion
+                    if(arrFileFolder[index].ServerURL.search(/\bDocuments\b/) >= 0) {
+                        arrFileFolder[index].ServerURL = arrFileFolder[index].ServerURL.replace('Documents', 'Shared Documents');
+                    }
+                    if (arrFileFolder[index].SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                        $.when(GetFormDigestValue(arrFileFolder[index].SiteURL)).done(function(GetFormDigestValue) {
+                            RequestDigest = GetFormDigestValue
+                        });
+                    }
+                    $.ajax({
+                        url: arrFileFolder[index].SiteURL + "/_api/web/GetFolderByServerRelativeUrl('" + arrFileFolder[index].ServerURL + "')",
+                        method: "POST",
+                        async: false,
+                        headers: {
+                            "X-RequestDigest": RequestDigest,
+                            "IF-MATCH": "*",
+                            "X-HTTP-Method": "DELETE"
+                        },
+                        success: function (data) {
+                            itemUpdated++;
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            var Query = "?$select=ID,DocumentID&$filter=DocumentID eq '" + arrFileFolder[index].DocumentId + "' ";
+                            $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SharedLInks) {
+                                if (SharedLInks.length > 0) {
+                                    for (var index = 0; index < SharedLInks.length; index++) {
+                                        DeleteSharedLinks(SharedLInks[index].ID);//delete link
+                                    }
+                                }
+                            });
+                            
+                            if (itemUpdated == arrFileFolder.length) {
+                                if (FailDueToCheckOut == 0) {
+                                    alert("All the files/folders have been deleted.");
+                                }
+                                else {
+                                    alert(FailDueToCheckOut + " files couldn't be deleted because of locked others have been deleted successfully.");
+                                }
+                                $(".chkFileFolder").prop("checked", false);
+                                $('#selectAllChk').prop("checked", false);
+                                arrFileFolder = [];
+                                var tempDocName = Documentname;
+                                if(Documentname.search(/\bDocuments\b/) >= 0) {
+                                    tempDocName = "Shared%20Documents";
+                                }
+                                GetMyDocumentsWithFilesFolder(tempDocName);
+                            }
+                        },
+                        error: function (data) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            if(data.responseText.includes("Access is denied") == true) {
+                                alert("You don't have the required permission on "+arrFileFolder[index].FileFolderName+" to perform this operation.");
+                                return false;
+                            }
+                            else {
+                                alert(data.responseText);
+                                return false;
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    }
+    else {
+        alert("Please select any file or folder first.");
+        return false;
+    }
+}
+
+//Add custom column for Property Update
+function AddCustomColumns() {
+    var Columns = '';
+    arrCustomCol = [];
+    var customColQ = '';
+    var Title = '';
+
+    Title = 'Guest Portal Documents';
+    var Query = "?$select=*&$top=5&$filter=Title eq '" + Title + "' and DMS_Type eq '" + DMS_Type + "' and ColumnType eq 'Custom' ";
+    $.when(getItemsWithQuery("DMSColumnSetting", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (CustomCols) {
+        if (CustomCols.length > 0) {
+
+            for (var index = 0; index < CustomCols.length; index++) {
+                Columns = '';
+                customColQ += 'ListItemAllFields/' + CustomCols[index].ColumnName + ",";
+                Columns += '<div class="col-sm-6 form-check-box customCol"><div class="form-group custom-form-group">';
+                Columns += '<label>' + CustomCols[index].ColumnName + ':</label>';
+                if (CustomCols[index].DataType == "Text") {
+                    Columns += '<input type="text" class="form-control" maxlength="250" id="Custom' + CustomCols[index].ColumnName + '">';
+                }
+                else if (CustomCols[index].DataType == "Date") {
+                    Columns += '<input type="text" class="form-control CustomDateCol" id="Custom' + CustomCols[index].ColumnName + '">';
+                }
+                else if (CustomCols[index].DataType == "Number") {
+                    Columns += '<input type="number" class="form-control" id="Custom' + CustomCols[index].ColumnName + '">';
+                }
+                Columns += '</div><div class="checkbox ml5 mb0">';
+                Columns += '<label><input type="checkbox" value="" id="chkUpdate' + CustomCols[index].ColumnName + '"></label></div></div>';
+                arrCustomCol.push({
+                    chkId: "chkUpdate" + CustomCols[index].ColumnName,
+                    ColName: CustomCols[index].ColumnName,
+                    controlId: "Custom" + CustomCols[index].ColumnName,
+                    colType: CustomCols[index].DataType
+                });
+                $("#ColumnBox").append(Columns);
+                //var tempVar = CustomCols[index].ColumnName;
+                if (CustomCols[index].DataType == "Date") {
+                    $("#Custom" + CustomCols[index].ColumnName).datepicker("destroy");
+                    $("#Custom" + CustomCols[index].ColumnName).datepicker();
+                    $("#Custom" + CustomCols[index].ColumnName).datepicker("option", "dateFormat", "MM dd, yy");
+                    $("#Custom" + CustomCols[index].ColumnName).change(function () {
+                        if (this.value.trim() != "") {
+                            var tempVar = this.id.replace('Custom', '');
+                            $('#chkUpdate' + tempVar).prop('checked', 'checked');
+                        }
+                    });
+                }
+                else {
+                    $("#Custom" + CustomCols[index].ColumnName).keyup(function () {
+                        if (this.value.trim() != "") {
+                            var tempVar = this.id.replace('Custom', '');
+                            $('#chkUpdate' + tempVar).prop('checked', 'checked');
+                        }
+                    });
+                }
+            }
+        }
+    });
+    return customColQ;
+}
+
+//get single file properties and find it
+function getSingleFileProperty(ServerURL, FileFolderType, FileFolderSite, customColQ) {
+    if (ServerURL.search(/\bDocuments\b/) >= 0) {
+        ServerURL = ServerURL.replace("Documents", "Shared%20Documents");
+    }
+    else if (ServerURL.search(/\bShared Documents\b/) >= 0) {
+        ServerURL = ServerURL.replace("Shared Documents", "Shared%20Documents");
+    }
+    if (FileFolderType == 'file') {
+        var webURL = FileFolderSite + "/_api/web/GetFileByServerRelativeUrl('" + ServerURL + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select= LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
+        "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+    }
+    else {
+        var webURL = FileFolderSite + "/_api/web/GetFolderByServerRelativeUrl('" + ServerURL + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select= LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
+	        "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+    }
+    while (customColQ.indexOf("ListItemAllFields/") != -1) {
+        customColQ = customColQ.replace("ListItemAllFields/", "");
+    }
+    customColQ = customColQ.substring(0, customColQ.length - 1);
+    $.ajax({
+        url: webURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var FileValue = data.d.ListItemAllFields;
+            $("#txtUpdateTitle").val(FileValue.Title ? FileValue.Title : "");
+            if (FileValue.DocumentType != "--select--" && FileValue.DocumentType != null && FileValue.DocumentType != "-Select-") {
+                $("#txtUpdateType").val(FileValue.DocumentType);
+            }
+            $("#txtUpdateRef").val(FileValue.DocumentNo ? FileValue.DocumentNo : "");
+            $("#txtUpdateAuthor").val(FileValue.DocumentWrittenBy);
+            if (FileValue.FileValidity != "" && FileValue.FileValidity != null && FileValue.FileValidity != "null") {
+                $("#txtUpdateValidity").val(moment(new Date(FileValue.FileValidity)).format("MMM DD YYYY"));
+            }
+            $("#txtUpdateDetails").val(FileValue.Details ? FileValue.Details : "");
+            //Custom COlumn
+            var tempCustom = [];
+            if (customColQ != '') {
+                tempCustom = customColQ.split(',');
+                for (cus = 0; cus < tempCustom.length; cus++) {
+                    if (new Date(FileValue[tempCustom[cus]]) != "Invalid Date") {
+                        if (FileValue[tempCustom[cus]] != null && FileValue[tempCustom[cus]] != "null") {
+                            $("#Custom" + tempCustom[cus]).val(moment(new Date(FileValue[tempCustom[cus]])).format("YYYY-MM-DD"));
+                        }
+                    }
+                    else {
+                        $("#Custom" + tempCustom[cus]).val(FileValue[tempCustom[cus]] ? FileValue[tempCustom[cus]] : "");
+                    }
+                }
+            }
+        },
+        eror: function (data) {
+            console.log("Error in getting properties" + JSON.stringify(data));
+        }
+    }).fail(function (error) {
+        alert(error.responseJSON.error.message.value);
+        return false;
+    });
+}
+
+//to update the selected properties of the file
+function UpdateFileFolderProperties() {
+    var dfd = $.Deferred();
+    var currentFileName = '';
+    var tempCopyLib = arrFileFolder[0].SelectedLibrary;
+    if (tempCopyLib.includes('_') == true) {
+        tempCopyLib = tempCopyLib.replace('_', '_x005f_');
+    }
+    if (tempCopyLib.includes('%20') == true) {
+        tempCopyLib = tempCopyLib.replace('%20', '_x0020_');
+    }
+
+    if (tempCopyLib.search(/\bDocuments\b/) >= 0 || tempCopyLib == "Shared Documents" || tempCopyLib == "Shared%20Documents") {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(tempCopyLib);
+    }
+
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtUpdateTitle").val(),
+        DocumentNo: $("#txtUpdateRef").val(),//Reference
+        DocumentType: $("#txtUpdateType").val(),
+        DocumentWrittenBy: $("#txtUpdateAuthor").val(),
+        Details: $("#txtUpdateDetails").val(),
+        SubCategory: $("#txtUpdateSubType").val(),
+        FileValidity: new Date().toISOString()
+    };
+
+    if ($("#chkUpdateTitle").prop('checked') == false) {
+        delete Metadata["Title"];
+    }
+
+    if ($("#chkUpdateRef").prop('checked') == false) {
+        delete Metadata["DocumentNo"];
+    }
+
+    if ($("#chkUpdateType").prop('checked') == false) {
+        delete Metadata["DocumentType"];
+    }
+    if ($("#chkUpdateSubType").prop('checked') == false) {
+        delete Metadata["SubCategory"];
+    }
+    if ($("#chkUpdateAuthor").prop('checked') == false) {
+        delete Metadata["DocumentWrittenBy"];
+    }
+    if ($("#chkUpdateValidity").prop('checked') == true) {
+        Metadata["FileValidity"] = new Date($("#txtUpdateValidity").val()).toISOString();
+    }
+    else {
+        delete Metadata["FileValidity"];
+    }
+    if ($("#chkUpdateDetails").prop('checked') == false) {
+        delete Metadata["Details"];
+    }
+    if ($('#ColumnBox').find('.customCol').length > 0) {
+        for (var col = 0; col < arrCustomCol.length; col++) {
+            if ($("#" + arrCustomCol[col].chkId).prop('checked') == true) {
+                if (arrCustomCol[col].colType == "Text") {
+                    Metadata[arrCustomCol[col].ColName] = $("#" + arrCustomCol[col].controlId).val();
+                }
+                else if (arrCustomCol[col].colType == "Date") {
+                    Metadata[arrCustomCol[col].ColName] = new Date($("#" + arrCustomCol[col].controlId).val()).toISOString();
+                }
+                else if (arrCustomCol[col].colType == "Number") {
+                    Metadata[arrCustomCol[col].ColName] = parseInt($("#" + arrCustomCol[col].controlId).val());
+                }
+            }
+        }
+    }
+    FailDueToCheckOut = 0;
+    if (Documentname[Documentname.length - 1] == '/') {
+        var folderName = Documentname;
+    }
+    else {
+        var folderName = Documentname + '/';
+    }
+    arrFileFolder.forEach(function (entry, index) {
+
+        currentFileName = entry.FileFolderName;
+        if (entry.type == 'file' || entry.type.toLowerCase() == 'folder') {
+            if (IsFileCheckout(folderName, entry.FileFolderName, entry.SiteURL, '') != true && entry.type == 'file') {
+                if (entry.SelectedLibrary == "Shared%20Documents" || entry.SelectedLibrary == "Shared Documents") {
+                    entry.SelectedLibrary = "Documents";
+                }
+                if (entry.SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                    $.when(GetFormDigestValue(entry.SiteURL)).done(function (GetFormDigestValue) {
+                        RequestDigest = GetFormDigestValue
+                    });
+                }
+                $.ajax({
+                    url: entry.SiteURL + "/_api/web/lists/getbytitle('" + entry.SelectedLibrary + "')/items(" + entry.DocumentId + ")",
+                    type: "POST",
+                    async: false,
+                    headers: {
+                        "accept": "application/json;odata=verbose",
+                        "content-type": "application/json;odata=verbose",
+                        "X-RequestDigest": RequestDigest,
+                        "IF-MATCH": "*",             //Overrite the changes in the sharepoint list item
+                        "X-HTTP-Method": "MERGE"      // Specifies the update operation in sharepoint list
+                    },
+                    data: JSON.stringify(Metadata),
+                    success: function (data) {
+                        RequestDigest = $("#__REQUESTDIGEST").val();
+                        if (arrFileFolder.length == (index + 1)) {
+                            $('.btnCloseProp').trigger('click');
+                            if (FailDueToCheckOut == 0) {
+                                alert("Properties have been updated.");
+                            }
+                            else {
+                                alert(FailDueToCheckOut + " file(s) are locked, couldn't be updated.\nOther files(s) have been updated successfully.");
+                            }
+                            $("#ModalDisplayProperty").modal('hide');
+                            $("#btnUpdateProp").prop('disabled', '');
+                            arrFileFolder = [];
+                            $(".clearValue").val('');
+                            $("#txtUpdateType").val('-Select-');
+                            $("#txtUpdateSubType").val('-Select-');
+                            $(".chkFileFolder").prop("checked", "");
+                            var tempDocName = Documentname;
+                            if (Documentname.includes('/Documents/') == true) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            GetMyDocumentsWithFilesFolder(tempDocName);
+                        }
+                        dfd.resolve(data);
+                    },
+                    error: function (error) {
+                        RequestDigest = $("#__REQUESTDIGEST").val();
+                        if (arrFileFolder.length == (index + 1)) {
+                            arrFileFolder = [];
+                        }
+                        if (error.responseText.indexOf('does not exist on type') != -1) {
+                            var tempDocName = Documentname;
+                            if (Documentname.includes('/Documents/') == true) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            FailDueToCheckOut = 0;
+                            if (tempDocName[tempDocName.length - 1] == '/') {
+                                var targetServerRaltiveUrl = tempDocName;
+                            }
+                            else {
+                                var targetServerRaltiveUrl = tempDocName + '/';
+                            }
+                            GetMyDocumentsWithFilesFolder(targetServerRaltiveUrl);
+                            $("#Properties").modal('hide');
+                            alert("Required columns does not exist. Kindly contact administrator.");
+                        }
+                        else if (error.responseText.indexOf("Access is denied") != -1) {
+                            alert("You don't have the required permission on " + currentFileName + " to perform this operation.");
+                        }
+                        else {
+                            var tempError = '';
+                            if (error.responseJSON.error.message.value == undefined) {
+                                tempError = JSON.stringify(error);
+                            }
+                            else {
+                                tempError = error.responseJSON.error.message.value;
+                            }
+                            alert(currentFileName + " - " + tempError);
+                        }
+                        $("#btnUpdateProp").prop('disabled', '');
+                        dfd.reject(error);
+                    }
+                });
+                return dfd.promise();
+            }
+            else {
+                if (entry.type == 'folder') {
+                    if (entry.SelectedLibrary == "Shared%20Documents" || entry.SelectedLibrary == "Shared Documents") {
+                        entry.SelectedLibrary = "Documents";
+                    }
+                    if (entry.SiteURL != _spPageContextInfo.webAbsoluteUrl) {
+                        $.when(GetFormDigestValue(entry.SiteURL)).done(function (GetFormDigestValue) {
+                            RequestDigest = GetFormDigestValue
+                        });
+                    }
+                    $.ajax({
+                        url: entry.SiteURL + "/_api/web/lists/getbytitle('" + entry.SelectedLibrary + "')/items(" + entry.DocumentId + ")",
+                        type: "POST",
+                        async: false,
+                        headers: {
+                            "accept": "application/json;odata=verbose",
+                            "content-type": "application/json;odata=verbose",
+                            "X-RequestDigest": RequestDigest,
+                            "IF-MATCH": "*",             //Overrite the changes in the sharepoint list item
+                            "X-HTTP-Method": "MERGE"      // Specifies the update operation in sharepoint list
+                        },
+                        data: JSON.stringify(Metadata),
+                        success: function (data) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            if (arrFileFolder.length == (index + 1)) {
+                                $('.btnCloseProp').trigger('click');
+                                if (FailDueToCheckOut == 0) {
+                                    alert("Properties have been updated.");
+                                }
+                                else {
+                                    alert(FailDueToCheckOut + " file(s) are locked, couldn't be updated.\nOther files(s) have been updated successfully.");
+                                }
+                                $("#ModalDisplayProperty").modal('hide');
+                                $("#btnUpdateProp").prop('disabled', '');
+                                arrFileFolder = [];
+                                $(".clearValue").val('');
+                                $("#txtUpdateType").val('-Select-');
+                                $("#txtUpdateSubType").val('-Select-');
+                                $(".chkFileFolder").prop("checked", "");
+                                var tempDocName = Documentname;
+                                if (Documentname.includes('/Documents/') == true) {
+                                    tempDocName = "Shared%20Documents";
+                                }
+                                GetMyDocumentsWithFilesFolder(tempDocName);
+                            }
+                            dfd.resolve(data);
+                        },
+                        error: function (error) {
+                            RequestDigest = $("#__REQUESTDIGEST").val();
+                            if (arrFileFolder.length == (index + 1)) {
+                                arrFileFolder = [];
+                            }
+                            if (error.responseText.indexOf('does not exist on type') != -1 || error.responseText.indexOf('The security validation for this page is i') != -1) {
+                                var tempDocName = Documentname;
+                                if (Documentname.includes('/Documents/') == true) {
+                                    tempDocName = "Shared%20Documents";
+                                }
+                                FailDueToCheckOut = 0;
+                                if (tempDocName[tempDocName.length - 1] == '/') {
+                                    var targetServerRaltiveUrl = tempDocName;
+                                }
+                                else {
+                                    var targetServerRaltiveUrl = tempDocName + '/';
+                                }
+                                GetMyDocumentsWithFilesFolder(targetServerRaltiveUrl);
+                                $("#Properties").modal('hide');
+                                alert("Required columns does not exist. Kindly contact administrator.");
+                            }
+                            else if (error.responseText.indexOf("Access is denied") != -1) {
+                                alert("You don't have the required permission on " + currentFileName + " to perform this operation.");
+                            }
+                            else {
+                                var tempError = '';
+                                if (error.responseJSON.error.message.value == undefined) {
+                                    tempError = JSON.stringify(error);
+                                }
+                                else {
+                                    tempError = error.responseJSON.error.message.value;
+                                }
+                                alert(currentFileName + " - " + tempError);
+                            }
+                            $("#btnUpdateProp").prop('disabled', '');
+                            dfd.reject(error);
+                        }
+                    });
+                    return dfd.promise();
+                }
+                else {
+
+                    FailDueToCheckOut++;
+                    if (FailDueToCheckOut == arrFileFolder.length) {
+                        waitingDialog.hide();
+                        FailDueToCheckOut = 0;
+                        $('.btnCloseProp').trigger('click');
+                        alert("Selected file(s) are locked, couldn't be updated.");
+                        $("#ModalDisplayProperty").modal('hide');
+                        $("#btnUpdateProp").prop('disabled', '');
+                        arrFileFolder = [];
+                        $(".clearValue").val('');
+                        $("#txtUpdateType").val('-Select-');
+                        $("#txtUpdateSubType").val('-Select-');
+                        $(".chkFileFolder").prop("checked", "");
+                    }
+                    else {
+                        if (arrFileFolder.length == (index + 1)) {
+                            $('.btnCloseProp').trigger('click');
+                            if (FailDueToCheckOut == 0) {
+                                alert("Properties have been updated.");
+                            }
+                            else {
+                                alert(FailDueToCheckOut + " file(s) are locked, couldn't be updated.\nOther files(s) have been updated successfully.");
+                            }
+                            $("#ModalDisplayProperty").modal('hide');
+                            $("#btnUpdateProp").prop('disabled', '');
+                            arrFileFolder = [];
+                            $(".clearValue").val('');
+                            $("#txtUpdateType").val('-Select-');
+                            $("#txtUpdateSubType").val('-Select-');
+                            $(".chkFileFolder").prop("checked", "");
+                            var tempDocName = Documentname;
+                            if (Documentname.includes('/Documents/') == true) {
+                                tempDocName = "Shared%20Documents";
+                            }
+                            GetMyDocumentsWithFilesFolder(tempDocName);
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            if (arrFileFolder.length == (index + 1)) {
+                $('.btnCloseProp').trigger('click');
+                if (FailDueToCheckOut == 0) {
+                    alert("Properties have been updated.");
+                }
+                else {
+                    alert(FailDueToCheckOut + " file(s) are locked, couldn't be updated.\nOther files(s) have been updated successfully.");
+                }
+                FailDueToCheckOut = 0;
+                $("#ModalDisplayProperty").modal('hide');
+                $("#btnUpdateProp").prop('disabled', '');
+                arrFileFolder = [];
+                $(".chkFileFolder").prop("checked", "");
+                var tempDocName = Documentname;
+                if (Documentname.includes('/Documents/') == true) {
+                    tempDocName = "Shared%20Documents";
+                }
+                if (tempDocName[tempDocName.length - 1] == '/') {
+                    var targetServerRaltiveUrl = tempDocName;
+                }
+                else {
+                    var targetServerRaltiveUrl = tempDocName + '/';
+                }
+                GetMyDocumentsWithFilesFolder(targetServerRaltiveUrl);
+            }
+        }
+
+    });
+}
+
+//to update the selected properties of the file
+function UpdateFileProperties() {
+    var dfd = $.Deferred();
+    if (CopyLibrary.search(/\bDocuments\b/) >= 0) {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else if (CopyLibrary == "Shared Documents" || CopyLibrary == "Shared%20Documents") {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(CopyLibrary);
+    }
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtUpdateTitle").val(),
+        DocumentNo: $("#txtUpdateRef").val(),//Reference
+        DocumentType: $("#txtUpdateType").val(),
+        DocumentWrittenBy: $("#txtUpdateAuthor").val(),
+        Details: $("#txtUpdateDetails").val(),
+        SubCategory: $("#txtUpdateSubType").val(),
+        //FileValidity: new Date($("#txtUpdateValidity").val()).toISOString()
+        FileValidity: new Date().toISOString()//Bhawana
+    };
+    if ($("#chkUpdateTitle").prop('checked') == false) {
+        delete Metadata["Title"];
+    }
+    else {
+        $("#FileTitle").text($("#txtUpdateTitle").val());
+    }
+
+    if ($("#chkUpdateRef").prop('checked') == false) {
+        delete Metadata["DocumentNo"];
+    }
+    else {
+        $("#FileReference").text($("#txtUpdateRef").val());
+    }
+
+    if ($("#chkUpdateType").prop('checked') == false) {
+        delete Metadata["DocumentType"];
+    }
+    else {
+        $("#FileDocType").text("(" + $("#txtUpdateType").val() + ")");
+    }
+    if ($("#chkUpdateSubType").prop('checked') == false) {
+        delete Metadata["SubCategory"];
+    }
+    else {
+        $("#FileDocSubType").text($("#txtUpdateSubType").val());
+    }
+    if ($("#chkUpdateAuthor").prop('checked') == false) {
+        delete Metadata["DocumentWrittenBy"];
+    }
+    else {
+        $("#FileAuthorPopup").text($("#txtUpdateAuthor").val());
+    }
+    if ($("#chkUpdateValidity").prop('checked') == false) {
+        delete Metadata["FileValidity"];
+    }
+    else {
+        $("#FileValidityPopup").text($("#txtUpdateValidity").val());
+    }
+
+    if ($("#chkUpdateDetails").prop('checked') == false) {
+        delete Metadata["Details"];
+    }
+    else {
+        $("#FileDetalis").text($("#txtUpdateDetails").val());
+    }
+    if ($('#ColumnBox').find('.customCol').length > 0) {
+        for (var col = 0; col < arrCustomCol.length; col++) {
+            if ($('#ColumnBox').find('.customCol').length > 0) {
+                for (var col = 0; col < arrCustomCol.length; col++) {
+                    if ($("#" + arrCustomCol[col].chkId).prop('checked') == true) {
+                        if (arrCustomCol[col].colType == "Text") {
+                            Metadata[arrCustomCol[col].ColName] = $("#" + arrCustomCol[col].controlId).val();
+                            $("#CustomPopup" + arrCustomCol[col].ColName).text($("#" + arrCustomCol[col].controlId).val());
+                        }
+                        else if (arrCustomCol[col].colType == "Date") {
+                            Metadata[arrCustomCol[col].ColName] = new Date($("#" + arrCustomCol[col].controlId).val()).toISOString();
+                            $("#CustomPopup" + arrCustomCol[col].ColName).text(titanForWork.convertJSONDateAMPMWithDate(new Date($("#" + arrCustomCol[col].controlId).val()).toISOString()));
+                        }
+                        else if (arrCustomCol[col].colType == "Number") {
+                            Metadata[arrCustomCol[col].ColName] = parseInt($("#" + arrCustomCol[col].controlId).val());
+                            $("#CustomPopup" + arrCustomCol[col].ColName).text($("#" + arrCustomCol[col].controlId).val());
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (CopyLibrary == "Shared%20Documents" || CopyLibrary == "Shared Documents") {
+        CopyLibrary = "Documents";
+    }
+    if (CopySourceURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(CopySourceURL)).done(function (GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    $.ajax({
+        url: CopySourceURL + "/_api/web/lists/getbytitle('" + CopyLibrary + "')/items(" + DocumentId + ")",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "IF-MATCH": "*",             //Overrite the changes in the sharepoint list item
+            "X-HTTP-Method": "MERGE"      // Specifies the update operation in sharepoint list
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            var tempDocName = Documentname;
+            if (Documentname.search(/\bDocuments\b/) >= 0) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);
+            $('.btnCloseProp').trigger('click');
+            alert("Properties have been updated.");
+            $("#btnUpdateProp").prop('disabled', '');
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (error.responseText.indexOf('does not exist on type') != -1) {
+                alert("Required columns does not exists. Kindly contact administrator to activate features.");
+            }
+            else if (error.responseText.indexOf("Access is denied") != -1) {
+                alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+            }
+            else {
+                var tempError = '';
+                if (error.responseJSON.error.message.value == undefined) {
+                    tempError = JSON.stringify(error);
+                }
+                else {
+                    tempError = error.responseJSON.error.message.value;
+                }
+                alert(tempError);
+            }
+            $("#btnUpdateProp").prop('disabled', '');
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//Delete the Shared Folder links
+function DeleteSharedLinks(filesFolderId) {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('SharedDocument')/items('" + filesFolderId + "')",
+        type: "POST",
+        async: false,
+        headers:
+        {
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "DELETE"
+        },
+        success: function (data, status, xhr) {
+            console.log("Shared link has been removed.");
+        },
+        error: function (xhr, status, error) {
+            waitingDialog.hide();
+            console.log(xhr.responseText);
+        }
+    });
+}
+
+//Clear the library filter boxes values
+function ClearLibraryFilter() {
+	$("#FileTypeList").val('All');
+    $("#ddlFilterDocType").val('All');
+    $("#ddlFilterSubType").empty().append('<option value="All">All</option>');
+    $("#txtFilterRefe").val('');
+    $("#txtFilterAuthor").val('');
+    $("#ddlShareFilter").val('All');
+    $("#ddlFilterApprovl").val('All');
+    $("#FilterModFrom").val('');
+    $("#FilterModTo").val('');
+}
+
+//Library Filter method
+function LibraryFilter() {
+    var arrTemp = [],
+		arrSearchExt = [],
+		DocType = '',
+		SubType = '',
+		DocNo = '',
+		FileAuthor = '',
+		Permission = '',
+		Approval = '',
+        customColQuery = '',
+		FileExt = '';
+		
+    var FormattedFromDate = moment($("#FilterModFrom").val()).format("MM/DD/YYYY");;
+    if (FormattedFromDate == "Invalid date" || FormattedFromDate == "Invalid Date") {
+        FormattedFromDate = 'null';
+    }
+    else {
+        FormattedFromDate = new Date(FormattedFromDate);
+    }
+    var FormattedToDate = moment($("#FilterModTo").val()).format("MM/DD/YYYY");;
+    if (FormattedToDate == "Invalid date" || FormattedToDate == "Invalid Date") {
+        FormattedToDate = 'null';
+    }
+    else {
+        FormattedToDate = new Date(FormattedToDate);
+    }
+    arrSearchExt = getFileExtenson();
+    arrTemp = arrFilterTable.filter(function (obj, index) {
+
+        FileExt = obj.files.Name.substring(obj.files.Name.lastIndexOf('.') + 1).toLowerCase();
+        if(obj.files.ListItemAllFields != undefined){ //for other libraries
+            DocType = obj.files.ListItemAllFields.DocumentType;
+            SubType = obj.files.ListItemAllFields.SubCategory;
+            DocNo = obj.files.ListItemAllFields.DocumentNo;//3 March 23
+            FileAuthor = obj.files.ListItemAllFields.DocumentWrittenBy;
+            Permission = obj.files.ListItemAllFields.PermissionLevel;
+            Approval = obj.files.ListItemAllFields.Approval;
+            dt = new Date(obj.files.ListItemAllFields.Modified);
+            ModifiedDate = new Date(moment(dt).format("MM/DD/YYYY"));
+            if(Permission == null) {
+                Permission = 'Not Shared';
+            }
+            //for section which has custom column
+            /*if($('#FilterControlBox').find('.customColFilter').length > 0) {
+                customColQuery = ' &&';
+                for(var col=0;col<arrCustomColFilter.length;col++) {
+                    if (arrCustomColFilter[col].colType == "Text") {
+                        if(obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == null || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == '' || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == "--select--" || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == "-Select-") {
+                            obj.files.ListItemAllFields.arrCustomColFilter[col].ColName = 'null';
+                        }
+                        customColQuery += ($("#"+arrCustomColFilter[col].controlId).val().trim() == "null" ? obj.files.ListItemAllFields.arrCustomColFilter[col].ColName != "null" : (obj.files.ListItemAllFields.arrCustomColFilter[col].ColName.toLowerCase() == $("#"+arrCustomColFilter[col].controlId).val().toLowerCase() || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName.toLowerCase().indexOf($("#"+arrCustomColFilter[col].controlId).val().toLowerCase()) != -1));
+                    }
+                    else if (arrCustomColFilter[col].colType == "Date") {
+                        var FormattedCustomDate = moment($("#"+arrCustomColFilter[col].controlId).val()).format("MM/DD/YYYY");;
+                        if (FormattedCustomDate == "Invalid date" || FormattedCustomDate == "Invalid Date") {
+                            FormattedCustomDate = 'null';
+                        }
+                        var dt = new Date(obj.files.ListItemAllFields.arrCustomColFilter[col].ColName);
+                        CustomDate = moment(dt).format("MM/DD/YYYY");
+                        customColQuery += " &&" + (FormattedCustomDate == "null" ? CustomDate != "null" : CustomDate == FormattedCustomDate );
+
+                    }
+                    else if (arrCustomColFilter[col].colType == "Number") {
+                        if(obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == null || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == '' || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == "--select--" || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName == "-Select-") {
+                            obj.files.ListItemAllFields.arrCustomColFilter[col].ColName = 'null';
+                        }
+                        customColQuery += ($("#"+arrCustomColFilter[col].controlId).val().trim() == "null" ? obj.files.ListItemAllFields.arrCustomColFilter[col].ColName != "null" : (obj.files.ListItemAllFields.arrCustomColFilter[col].ColName.toLowerCase() == $("#"+arrCustomColFilter[col].controlId).val().toLowerCase() || obj.files.ListItemAllFields.arrCustomColFilter[col].ColName.toLowerCase().indexOf($("#"+arrCustomColFilter[col].controlId).val().toLowerCase()) != -1));
+                    }
+                }
+            }*/
+        }
+        else { //For my Favorite
+            IsMyfavorate = true;
+            DocType = obj.files.DocumentType;
+            SubType = obj.files.SubCategory;
+            DocNo = obj.files.DocumentNo;
+            FileAuthor = obj.files.DocumentWrittenBy;
+            Permission = obj.files.PermissionLevel;
+            Approval = obj.files.ApprovalStatus;
+            dt = new Date(obj.files.Modified);
+            ModifiedDate = new Date(moment(dt).format("MM/DD/YYYY"));
+            if(Permission == null) {
+                Permission = 'Not Shared';
+            }
+        }
+        if (DocNo == null || DocNo == '') {
+            DocNo = "null";
+        }
+        if (FileAuthor == null || FileAuthor == '') {
+            FileAuthor = "null";
+        }
+        /*if($("#ddlShareFilter").val() == "Not Shared") {
+            Permission = null;
+        }*/
+        if(DocType == null || DocType == '' || DocType == "--select--" || DocType == "-Select-") {
+            DocType = 'null';
+        }
+        if(SubType == null || SubType == '' || SubType == "--select--" || SubType == "-Select-") {
+            SubType = 'null';
+        }
+        return ($("#FileTypeList").val() == "All" ? FileExt != "" : arrSearchExt.includes(FileExt.toLowerCase()) ) &&
+                ($("#ddlFilterDocType").val() == "All" ? DocType != "" : DocType == $("#ddlFilterDocType").val() ) &&
+                ($("#ddlFilterSubType").val() == "All" ? SubType != "" : SubType == $("#ddlFilterSubType").val() ) &&
+                ($("#txtFilterRefe").val().trim() == "null" ? DocNo != "null" : (DocNo.toLowerCase() == $("#txtFilterRefe").val().toLowerCase() || DocNo.toLowerCase().indexOf($("#txtFilterRefe").val().toLowerCase()) != -1)) &&
+                ($("#txtFilterAuthor").val().trim() == "null" ? FileAuthor != "null" : (FileAuthor.toLowerCase() == $("#txtFilterAuthor").val().toLowerCase() || FileAuthor.toLowerCase().indexOf($("#txtFilterAuthor").val().toLowerCase()) != -1)) &&
+                ($("#ddlShareFilter").val() == "All" ? Permission != "" : Permission == $("#ddlShareFilter").val() ) &&
+                ($("#ddlFilterApprovl").val() == "All" ? Approval != "" : Approval == $("#ddlFilterApprovl").val() ) &&
+                (FormattedFromDate == "null" ? ModifiedDate != "null" : ModifiedDate >= FormattedFromDate ) &&
+                (FormattedToDate == "null" ? ModifiedDate != "null" : ModifiedDate <= FormattedToDate); //+ customColQuery;
+    });   
+        
+    $("#generateBradCumbNew").empty();
+    $("#groupDocumentGridtbody").empty();
+    if(arrTemp.length == 0){
+        $("#groupDocumentGridtbody").append('<tr><td colspan="12" style="text-align:center;">No record found!</td></tr>');
+        waitingDialog.hide();
+        //Tableagination();//3 April 23
+        //3 April 23
+        if($('#groupDocumentGridtbody tr')[0] != null) {
+            if($('#groupDocumentGridtbody tr')[0].innerText.indexOf('No record found') != -1) {
+                $("#groupDocumentGrid_paginate").hide();
+                $("#groupDocumentGrid_info").hide();
+            }
+            else {
+                $("#groupDocumentGrid_info").css('display', 'inline-block');
+            }
+        }
+        else {
+            $("#groupDocumentGrid_info").css('display', 'inline-block');
+        }
+        //3 April 23
+    }
+    else {
+        var ColumnName = '';
+        ColumnName += '<th class="text-center border-bottom-0 w-2 nosort">' +
+        '<label class="checkbox-inline hpx-20"><input type="checkbox" id="selectAllChk" value=""></label>' +
+        '</th>';
+        for (var i = 0; i < arrCurrentColumns.length; i++) {
+            if (arrCurrentColumns[i].ColumnName == "DocumentNo") {
+                ColumnName += '<th><span class="TblHeader" data-localize="Reference">Reference</span></th>';
+	
+            } else if (arrCurrentColumns[i].ColumnName == "DocumentType") {
+                ColumnName += '<th><span class="TblHeader" data-localize="Category">Category</span></th>';
+	
+            } else if (arrCurrentColumns[i].ColumnName == "ApprovedByOutsider" || arrCurrentColumns[i].ColumnName == "ApprovedBy") {
+                ColumnName += '<th class="disableSort" data-localize="Approval">Approval</th>';
+	
+            } else if (arrCurrentColumns[i].ColumnName == "Shared") {
+                ColumnName += '<th class="disableSort" data-localize="Sharing">Sharing</th>';
+            } 
+            else if (arrCurrentColumns[i].ColumnName == "Modified") {
+                ColumnName += '<th><span class="TblHeader" id="dteModified" data-localize="Modified" onclick="SortOnDate(this);">Modified</span></th>';
+            }
+            else {
+                ColumnName += '<th><span class="TblHeader" data-localize="' + arrCurrentColumns[i].ColumnName + '">' + arrCurrentColumns[i].ColumnName + '</span></th>';
+            }
+        }
+        //thead
+        $("#DMSTable").empty().html('<table class="table mb-0 custom-table tablemanager" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+        $("#theadItem").html("");
+        $("#theadItem").append(ColumnName);
+		
+        arrTemp.forEach(function (entry, index) {
+            genrateHtmlgrid(entry.Icon, entry.ColumnCount, entry.files, entry.rowCount, entry.Type, "Filter");
+            if (arrTemp.length == (index + 1)) {
+                waitingDialog.hide();
+            }
+        });
+        $(".chkFileFolder").click(function() {
+            var Properties = this.value.split(',');
+            if (this.checked == true) {
+                arrFileFolder.push({
+                    type: Properties[0].trim(),
+                    ServerURL: Properties[1].trim(),
+                    DocumentId: Properties[2].trim(),
+                    SiteURL: Properties[3].trim(),
+                    SelectedLibrary: Properties[4].trim(),
+                    FileFolderName: Properties[5].trim(),
+                    CopyFileLink: Properties[6].trim(),
+                    FileTitle: Properties[7].trim(),
+                    FileRef: Properties[8].trim(),
+                    FileType: Properties[9].trim(),
+                    DocType: Properties[10].trim(),
+                    fileFilderInheritance: $(this).data('inherit')
+                });
+            } else {
+                var selected = this.value;
+                arrFileFolder = arrFileFolder.filter(function(obj) {
+                    return obj.DocumentId != Properties[2].trim();
+                });
+            }
+        });
+        $("#selectAllChk").click(function(e) {
+            waitingDialog.show();
+            if (this.checked == true) {
+                $('.chkFileFolder').prop("checked", "");
+                $('.chkFileFolder').trigger('click');
+            } else {
+                $('.chkFileFolder').prop("checked", "");
+                arrFileFolder = [];
+            }
+            waitingDialog.hide();
+           
+        });
+        // $("#groupDocumentGrid").append(html);
+        Tableagination();
+    }
+}
+
+//decide the file extension 
+function getFileExtenson(Ext) {
+    var SearchValue = [];
+    if ($("#FileTypeList").val() == "Word") {
+        SearchValue = ["doc", "docx"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "Excel") {
+        SearchValue = ["xlsx", "xlsm", "csv", "xls"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "PowerPoint") {
+        SearchValue = ["pptx", "pptm", "ppt", "ppsm"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "Text") {
+        SearchValue = ["txt"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "PDF") {
+        SearchValue = ["pdf", "ps"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "Image") {
+        SearchValue = ["png", "jpeg", "jpg", "gif", "tiff", "raw", "psd"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "Video") {
+        SearchValue = ["mp4", "mp3", "wmv", "avi", "mkv", "avchd", "webcam"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "HTML") {
+        SearchValue = ["html", "htm"];
+        return SearchValue;
+    }
+    else if ($("#FileTypeList").val() == "Zip") {
+        SearchValue = ["rar", "xml", "zip"];
+        return SearchValue;
+    }
+    else {
+        SearchValue.push('All');
+        return SearchValue;
+    }
+}
+
+//Delete the file in case of 'Delete' and 'Move'
+function DeleteFileFromSource(Action) {
+    if (CopyLibrary == "Shared%20Documents") {
+        CopyLibrary = "Documents";
+    }
+    if (CopySourceURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(CopySourceURL)).done(function(GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    $.ajax({
+        url: CopySourceURL + "/_api/web/lists/GetByTitle('" + CopyLibrary + "')/items('" + DocumentId + "')",
+        type: "POST",
+        async: false,
+        headers:
+        {
+            "X-RequestDigest": RequestDigest,
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "DELETE"
+        },
+        success: function (data, status, xhr) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            $('#ModalDisplayProperty').modal('hide');
+            CopyLibrary = '';
+            CopyDestURL = '';
+            //CopyFolderName = '';
+            if (Action == "DeleteFile") {
+                alert("File has been successfully deleted.");
+                var tempDocName = Documentname;
+                $("#ModalDisplayProperty").modal('hide');
+                if (Documentname.search(/\bDocuments\b/) >= 0) {
+                    tempDocName = "Shared%20Documents";
+                }
+                GetMyDocumentsWithFilesFolder(tempDocName);
+            }
+            else {
+                //alert("File has been successfully moved.");
+            }
+        },
+        error: function (xhr, status, error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            if (xhr.responseText.includes("Access is denied") == true) {
+                alert("You don't have the required permission to perform this operation.");
+                return false;
+            }
+            else {
+                alert(xhr.responseText);
+                return false;
+            }
+        }
+    });
+}
+
+//Add Approval method starts ----------------------------------
+
+//Edit the already added step
+function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
+    var StepCount = $('#LiCount').text();
+    var ApprovalStep = '';
+    var StepName = $("#AddEditStepName").val();
+    var TypeValue = '';
+    var UserValid = true;
+    var ValidCount = 0;
+    var InValidUser = [];
+    if ($("#userselection").prop('checked')) {
+        TypeValue = "userselection";
+        if ($("#ddlSign").val() != "Adobe Sign") {
+            for (var usr = 0; usr < EmpIds.length; usr++) {
+                UserValid = checkUserValid(EmpEmail[usr]);
+                if (UserValid == false) {
+                    InValidUser.push(DisplayNames[usr]);
+                    EmpEmail = EmpEmail.filter(function (obj) {
+                        return obj.toLowerCase() !== EmpEmail[usr].toLowerCase();
+                    });
+                    DisplayNames = DisplayNames.filter(function (obj) {
+                        return obj.toLowerCase() !== DisplayNames[usr].toLowerCase();
+                    });
+                    EmpIds = EmpIds.filter(function (obj) {
+                        return obj != EmpIds[usr];
+                    });
+                }
+            }
+        }
+
+        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+
+        for (var usr = 0; usr < EmpIds.length; usr++) {
+            ValidCount++;
+            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EmpEmail[usr]);
+            ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+            ApprovalStep += '<h4>' + DisplayNames[usr] + '</h4><a href="javascript:void(0);" style="cursor:pointer;" onclick="OpenEmail(\'' + EmpEmail[usr] + '\');">' + EmpEmail[usr] + '</a></div></div>';
+        }
+        ApprovalStep += '</div>';
+    }
+    else {
+        ValidCount++;
+        TypeValue = "outsidesetion";
+        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+
+        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly($("#OutsiderEmail").val());
+        ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+        ApprovalStep += '<h4>' + $("#OutsiderName").val() + '</h4><a href="javascript:void(0);" style="cursor:pointer;" onclick="OpenEmail(\'' + $("#OutsiderEmail").val() + '\');">' + $("#OutsiderEmail").val() + '</a></div></div>';
+        ApprovalStep += '</div>';
+    }
+    multipleEmailAddress = [];
+    assignUserName = [];
+    EmpIds = [];
+    if (ValidCount > 0) {
+        $('.NewStep' + $("#LiCount").text()).empty().html(ApprovalStep);
+        $("#userHTMLBox").empty();
+        $("#AddEditStepName").val('');
+        $(".userBox").hide();
+    }
+    if ($("#ddlSign").val() != "Adobe Sign") {
+        if (InValidUser.length > 0) {
+            alert(InValidUser.join(', ') + " user(s) are not valid.");
+        }
+    }
+}
+
+//to add more Approval step
+function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
+    var StepCount = $('#accordionapprovers .StepClass').length + 1;
+    var ApprovalStep = '';
+    var StepName = $("#AddEditStepName").val();
+    var TypeValue = '';
+    var UserValid = true;
+    var EmptyArray = [];
+    var ValidCount = 0;
+    var InValidUser = [];
+    if (EmpEmail[0] != 'Runtime') {
+        if ($("#userselection").prop('checked')) {
+            EmpIds = EmpIds.filter(function (obj) {
+                return !Number.isNaN(obj);
+            });
+            if ($("#ddlSign").val() != "Adobe Sign") {
+                for (var usr = 0; usr < EmpIds.length; usr++) {
+                    UserValid = checkUserValid(EmpEmail[usr]);
+                    if (UserValid == false) {
+                        InValidUser.push(DisplayNames[usr]);
+                        EmpEmail = EmpEmail.filter(function (obj) {
+                            return obj.toLowerCase() !== EmpEmail[usr].toLowerCase();
+                        });
+                        DisplayNames = DisplayNames.filter(function (obj) {
+                            return obj.toLowerCase() !== DisplayNames[usr].toLowerCase();
+                        });
+                        EmpIds = EmpIds.filter(function (obj) {
+                            return obj != EmpIds[usr];
+                        });
+                    }
+                }
+            }
+
+            TypeValue = "userselection";
+            ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
+            ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
+            ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+            ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+            ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+
+            for (var usr = 0; usr < EmpIds.length; usr++) {
+                ValidCount++;
+                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EmpEmail[usr]);
+                ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+                ApprovalStep += '<h4>' + DisplayNames[usr] + '</h4><a href="javascript:void(0);" style="cursor:pointer;" onclick="OpenEmail(\'' + EmpEmail[usr] + '\');">' + EmpEmail[usr] + '</a></div></div>';
+            }
+            ApprovalStep += '</div></li>';
+        }
+        else {
+            ValidCount++;
+            TypeValue = "outsidesetion";
+            ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
+            ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + $("#OutsiderName").val() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
+            ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">false</span></div>';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+            ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+            ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly($("#OutsiderEmail").val());
+            ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+            ApprovalStep += '<h4>' + $("#OutsiderName").val() + '</h4><a href="javascript:void(0);" style="cursor:pointer;" onclick="OpenEmail(\'' + $("#OutsiderEmail").val() + '\');">' + $("#OutsiderEmail").val() + '</a></div></div>';
+            ApprovalStep += '</div></li>';
+        }
+    }
+    else { //if Step decider is 'RunTime'
+        ValidCount++;
+        TypeValue = "RunTime";
+        if(OtherStepDetails[0].ApproverDecidingStep == "Initiation") {
+            ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
+	        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
+	        ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
+	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+	        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+	        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+	        var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+	        ApprovalStep += '<div class="col-sm-6 flexitem" id="IniApp'+StepCount +'"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+	        ApprovalStep += '<h4>Will be decided by Initiator.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div>';
+	        ApprovalStep += '<div class="InitiatorApp"><button type="button" class="btn custom-btn wpx-87" onclick="DisplayInitiatorApp(\'NewStep' + StepCount + '\', \'' + StepCount + '\', \'' + StepName + '\', \'' + EmptyArray + '\')">Add Approver</button></div>';
+	        
+	        ApprovalStep += '</div></div></li>';
+
+        }
+        else {
+            ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
+	        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
+	        ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
+	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+	        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+	        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+	        var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+	        ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+	        ApprovalStep += '<h4>Will be decided by ' + OtherStepDetails[0].ApproverDecidingStep + ' Approvers.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div></div>';
+	        ApprovalStep += '</div></li>';
+        }
+    }
+    if (ValidCount > 0) {
+        $("#accordionapprovers").append(ApprovalStep);
+        $("#ApprovalStepBox").show();
+        $(".userBox").hide();
+    }
+    if ($("#ddlSign").val() != "Adobe Sign") {
+        if (InValidUser.length > 0) {
+            alert(InValidUser.join(', ') + " user(s) are not valid.");
+        }
+    }
+}
+
+//Display Popup for Approver by Initiator
+function DisplayInitiatorApp(HTMLID, StepCount, StepName, arrEMails) {
+    initializePeoplePicker("pplIniTiatorApp", true);
+    if(arrEMails.length > 0) {
+    	arrEMails = arrEMails.split(',');
+    	for (var user = 0; user < (arrEMails.length) ; user++) {
+    		SetAndResolveOutPeoplePicker('pplIniTiatorApp', arrEMails[user], false);
+    	}
+    }
+    $("#Predefined-Ini-App").modal('show');
+    $("#ParentbtnAddApp").empty().append('<button type="button" class="btn custom-btn wpx-87" id="btnAddApp">Submit</button>');
+    var HTMLId = HTMLID;
+    var StepCount = StepCount;
+    var StepName = StepName;
+    $("#btnAddApp").click(function (e) {
+        AddInitiatorApp(HTMLID, StepCount, StepName, arrEMails);
+    });
+}
+
+//Add Approver by Initiator
+function AddInitiatorApp(HTMLID, StepCount, StepName) {
+    var ApprovalStep = [];
+    var ValidCount = 0;
+    var InValidUser = [];
+    var AppNames = [];
+    var AppEmails = [];
+    var AppEIds = [];
+    var TypeValue = "userselection";
+    getPplUserInfo('pplIniTiatorApp', AppEmails, AppNames, AppEIds);
+    if(AppEmails.length > 0){
+	    for (var usr = 0; usr < AppEmails.length; usr++) {
+	        UserValid = checkUserValid(AppEmails[usr]);
+	        if (UserValid == false) {
+	            InValidUser.push(AppNames[usr]);
+	            AppEmails = AppEmails.filter(function (obj) {
+	                return obj.toLowerCase() !== AppEmails[usr].toLowerCase();
+	            });
+	            AppNames = AppNames.filter(function (obj) {
+	                return obj.toLowerCase() !== AppNames[usr].toLowerCase();
+	            });
+	            AppEIds = AppEIds.filter(function (obj) {
+	                return obj != AppEIds[usr];
+	            });
+	        }
+	    }
+	    ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + AppEmails.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + AppEIds.toString() + '</span><span id="NameStep' + StepCount + '">' + AppNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
+	    ApprovalStep += '<span id="DecideStep' + StepCount + '"></span><span id="AppRoleStep' + StepCount + '"></span><span id="AppTypeStep' + StepCount + '">Specific</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
+	    ApprovalStep += '<div class="dropdown ForCustomizeOnly" style="display:none;"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	    ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
+	    ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
+	    ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
+	
+	    for (var usr = 0; usr < AppEIds.length; usr++) {
+	        ValidCount++;
+	        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(AppEmails[usr]);
+	        ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
+	        ApprovalStep += '<h4>' + AppNames[usr] + '</h4><a href="javascript:void(0);" style="cursor:pointer;" onclick="OpenEmail(\'' + AppEmails[usr] + '\');">' + AppEmails[usr] + '</a></div></div>';
+	    }
+	    ApprovalStep += '<div class="InitiatorApp"><button type="button" class="btn custom-btn wpx-87" onclick="DisplayInitiatorApp(\'NewStep' + StepCount + '\', \'' + StepCount + '\', \'' + StepName + '\', \'' + AppEmails.toString() + '\')">Add Approver</button></div>';
+	    ApprovalStep += '</div>';
+	    $("." + HTMLID).empty().append(ApprovalStep);
+	    $("#Predefined-Ini-App").modal('hide');
+	}
+	else {
+		alert("Kindly enter approvers.");
+		return false;
+	}
+}
+
+//set name in People picker
+function SetAndResolveOutPeoplePicker(controlNameID, LoginNameOrEmail, peoplePickerDisable) {
+    var peoplePickerDiv = $("[id^='" + controlNameID + "']");
+    // Get the people picker object from the page.
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[1].id];
+    peoplePicker.AddUserKeys(LoginNameOrEmail);
+    if (peoplePickerDisable == true) {
+        $('#' + controlNameID + '_TopSpan_EditorInput').attr('disabled', true);
+        $('.sp-peoplepicker-delImage').hide();
+    }
+}
+
+//get user information from people picker
+function getPplUserInfo(PeoplepickerId, AppEmails, AppNames, AppEIds) {
+    // Get the people picker object from the page. 
+    var userIds = [];
+    var uniqueValues = [];
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[PeoplepickerId + "_TopSpan"];
+    if (!peoplePicker.IsEmpty()) {
+        if (peoplePicker.HasInputError) return false; // if any error  
+        else if (!peoplePicker.HasResolvedUsers()) return false; // if any invalid users  
+        else if (peoplePicker.TotalUserCount > 0) {
+            // Get information about all users.  
+            var users = peoplePicker.GetAllUserInfo();
+            var userInfo = '';
+            var promise = '';
+            var UsersID = '';
+            for (var i = 0; i < users.length; i++) {
+                var accountName = users[i].Key;
+                AppEmails.push(users[i].EntityData.Email); AppNames.push(users[i].DisplayText);
+                var userId = GetUserID(accountName);
+                if (uniqueValues.indexOf(userId) == -1) {
+                    AppEIds.push(userId);
+                }
+            }
+            return AppEIds;
+        }
+    } else {
+        return AppEIds;
+    }
+}
+
+//to change the approver names and Step name 
+function EditStep(StepCount) {
+    $("#SuccessorStepHeader").text("Edit Step");
+    $("#LiCount").text(StepCount);
+    var user = '';
+    multipleEmailAddress = [];
+    assignUserName = [];
+    EmpIds = [];
+    multipleEmailAddress = $("#EmailStep" + StepCount).text().split(',');
+    assignUserName = $("#NameStep" + StepCount).text().split(',');
+    EmpIds = $("#EmpIdStep" + StepCount).text().split(',');
+    $("#AddEditStepName").val($("#StepName" + StepCount).text());
+    $("#" + $("#TypeStep" + StepCount).text()).prop("checked", "checked");
+    if ($("#TypeStep" + StepCount).text() == "outsidesetion") {
+        $("#OutsiderName").val(assignUserName[0]);
+        $("#OutsiderEmail").val(multipleEmailAddress[0]);
+        $("#userbox-1").hide();
+        $("#userbox-2").show();
+        $("#userHTMLBox").empty();
+    }
+    else {
+        $("#userbox-1").show();
+        $("#userbox-2").hide();
+        $(".userBox").show();
+        $("#OutsiderName").val('');
+        $("#OutsiderEmail").val('');
+        for (var usr = 0; usr < EmpIds.length ; usr++) {
+            var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(multipleEmailAddress[usr]);
+            user += '<div class="col-sm-6 parentremove">';
+            user += '<div class="employeesection"><span class="crosebox" onclick="removeUserBox(this, \'' + multipleEmailAddress[usr] + '\', \'' + assignUserName[usr] + '\', ' + EmpIds[usr] + ');">';
+            user += '<i class="fa fa-times"></i></span><div class="empoyeeimg"><img src="' + attachment + '" alt="">';
+            user += '</div><div class="employeeinfo"><h3>' + assignUserName[usr] + '</h3>';
+            user += '<span class="employeeemail" style="cursor:pointer;" onclick="OpenEmail(\'' + multipleEmailAddress[usr] + '\');">' + multipleEmailAddress[usr] + '</span></div></div></div>';
+        }
+        $("#userHTMLBox").append(user);
+    }
+
+}
+//to delete the selected step
+function DeleteSeletedStep(StepCount) {
+    $(".NewStep" + StepCount).remove();
+    if ($.trim($("#accordionapprovers").html()) == "") {
+        $("#ApprovalStepBox").hide();
+    }
+}
+//check if user is valid or not
+function checkUserValidOld(Email) {
+    var IsUserValid = false;
+    var RestQuery = "?$select=Status,LogonName/EMail&$expand=LogonName&$filter= Status eq 'Active' and LogonName/EMail eq '" + Email + "'&$top=5000";
+    $.when(getItemsWithQuery("Employees", RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (Employees) {
+        try {
+            if (Employees.length > 0) {
+                IsUserValid = true;
+            }
+        }
+        catch (e) {
+            alert(e);
+        }
+    });
+    return IsUserValid;
+}
+//Bhawana
+function checkUserValid(Email) {
+    var IsUserValid = false;
+    var RestQuery = "?$select=Status,LogonName/EMail&$expand=LogonName&$filter= Status eq 'Active' and LogonName/EMail eq '" + Email + "'&$top=5000";
+    $.when(getItemsWithQuery("Employees", RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (Employees) {
+        try {
+            if (Employees.length > 0) {
+                IsUserValid = true;
+            }
+            else
+            {//
+                RestQuery = "?$select=Status,email&$filter= Status eq 'Active' and email eq '" + Email + "'&$top=5000";
+                $.when(getItemsWithQuery("ExternalUsers", RestQuery, _spPageContextInfo.webAbsoluteUrl)).done(function (ExternalUsers) {
+                    try {
+                        if (ExternalUsers.length > 0) {
+                            IsUserValid = true;
+                        }
+                    }
+                    catch (e) {
+                        alert(e);
+                    }
+                });
+            }//
+        }
+        catch (e) {
+            alert(e);
+        }
+    });
+    return IsUserValid;
+}
+
+//Clear all the control boxes in Approval Popup
+function ClearAprovalControls() {
+    $("#accordionapprovers .removeDiv").remove();
+    $("#userHTMLBox").empty();
+    $("#txtPurpose").val('');
+    $("#ddlPriority").val('Medium');
+    $("#txtNote").val('');
+    $("#noDueDate").prop('checked', 'checked');
+    $("#dueDateField").prop('disabled', 'disabled');
+    $("#dueDateField").val('');
+    $("#ddlSign").val('Adobe Sign');
+    $("#ddlAppStep").val('Customize');
+    $("#ddlAppStep").trigger('change');
+    multipleEmailAddress = [];
+    assignUserName = [];
+    EmpIds = [];
+}
+
+
+//submit the details in 'DocumentApprovalRequests' list
+function AddDocApproval() {
+    var Metadata;
+    var ItemType = GetItemTypeForListName('DocumentApprovalRequests');
+    var FileTitle = $("#FileTitle").text();
+    if (FileTitle == "") {
+        FileTitle = $("#FileName").text();
+    }
+    var NextActionAppId = [];
+    var arrTempApprovers = [];
+    var DueDate = null;
+    var ValidityDate = null;
+    if ($("#noDueDate").prop('checked') == false) {
+        DueDate = GetDateStandardFormat(moment($('#dueDateField').val()).format('DD/MM/YYYY'));
+    }
+    if ($("#noAppValidDate").prop('checked') == false) {
+        ValidityDate = GetDateStandardFormat(moment($('#AppValidDateField').val()).format('DD/MM/YYYY'));
+    }
+    var OriginSection = '';
+    if(CopyLibrary == 'DocumentManagementSystem') {
+        OriginSection = "My-DMS: " + _spPageContextInfo.userDisplayName;
+    }
+    else if(currentSectionType == 'Group Documents'){
+        OriginSection = "Group" + ": " + $(".headdingLinks").text();
+    }
+    else if (currentSectionType == 'Department') {
+        OriginSection = "Department: " + $(".headdingLinks").text();
+    }
+    else if (currentSectionType == 'ProjectDocuments') {
+        OriginSection = "Project: " + $(".headdingLinks").text();
+    }
+    else if(currentSectionType == "GuestDocuments") {
+        OriginSection = "Guest: " + $(".headdingLinks").text();
+    }
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        OriginDMS: CopyLibrary,
+        OriginSection: OriginSection,
+        ApprovalFrom: $(".headdingLinks").text(),
+        LibraryLink: CopySourceURL,
+        DocumentID: DocumentId,
+        FileName: $("#FileName").text(),
+        Title: FileTitle,
+        DocumentType: $("#FileDocType").text(),
+        Reference: $("#FileReference").text(),
+        Purpose: $("#txtPurpose").val(),
+        ApprovalFileTitle: $("#FileTitle").text(),
+        Remarks: $("#txtNote").val(),
+        Priority: $("#ddlPriority").val(),
+        DueDate: DueDate,
+        ApprovalValidity: ValidityDate,
+        SigningApp: $("#ddlSign").val(),
+        ApprovalSteps: $("#ddlAppStep").val(),
+        Status: "Pending",
+        FileServerURL: $("#FilePath").text(),
+        NextActionbyId: {
+            'results': arrTempApprovers
+        },
+        NextActionApprover: '',
+        NextAction: $("#StepName1").text(),
+        ApprovedVersion: $("#FileVersion").text(),
+        ActionByTimeZone: LoggedIn_TimeZone,
+		SubCategory: $("#FileDocSubType").text()
+    };
+
+    if ($("#ddlSign").val() == "E-Sign") {
+        NextActionAppId = $("#EmpIdStep1").text().split(',');
+        if (NextActionAppId[0] == "NA") {
+            arrTempApprovers = [];
+            Metadata["NextActionApprover"] = $("#EmailStep1").text().split(',')[0];
+            delete Metadata["NextActionbyId"];
+            //ApproverType = "Outsider";
+        }
+        else {
+            //ApproverType = "User";
+            NextActionAppId.filter(function (data) {
+                arrTempApprovers.push(parseInt(data));
+            });
+            Metadata["NextActionbyId"].results = arrTempApprovers;
+            delete Metadata["NextActionApprover"];
+        }
+    }
+    else {
+        delete Metadata["NextAction"];
+        delete Metadata["NextActionbyId"];
+        delete Metadata["NextActionApprover"];
+    }
+
+    // Add metedata to defined SP list
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentApprovalRequests')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+        	if(FinalFiles4Upload.length > 0) {
+                UploadSupportedFiles(data.d.ID, 'DocumentApprovalRequests', 'Initiator');
+            }
+            else {
+            	UploadDocAsAttachment(data.d.ID, DocumentId, parseInt($("#FileVersion").text()).toString());
+            }
+        },
+        error: function (error) {
+            $("#overlaysearch").fadeOut();
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+//upload Initiator Supported Files
+function UploadSupportedFiles(ItemId, ListName, Action) {
+    var counter = 0;
+    if (FinalFiles4Upload.length > 0) {
+        $.each(FinalFiles4Upload, function (index, value) {
+            getFileBuffer(value).then(function (buffer) {
+
+                var OrginalFileName = value.name;
+                var ModifiedFileName = OrginalFileName.replace(/[^.a-zA-Z0-9]/ig, "");
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items(" + ItemId + ")/AttachmentFiles/add( FileName='" + ModifiedFileName + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: false,
+                    processData: false,
+                    headers:
+    				{
+    				    "Accept": "application/json;odata=verbose",
+    				    "content-type": "application/json;odata=verbose",
+    				    "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+    				},
+                    success: function (data) {
+                        counter = counter + 1;
+                        if (FinalFiles4Upload.length == counter) {
+                        	if(Action == 'Initiator') {
+                            	UploadDocAsAttachment(ItemId, DocumentId, parseInt($("#FileVersion").text()).toString());
+                            	$('#ApprovlUploadBox').html('');
+                            }
+                            else {
+                            	//Do Nothing
+                            }
+                            $('#UploadBoxCancel').html('');
+                            $('#UploadBoxForward').html('');
+                            $('#UploadBoxReject').html('');
+                            $('#UploadBoxApprove').html('');
+                            finalFiles = [];
+                            FinalFiles4Upload = [];
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText.error);
+                    }
+                });
+            });
+        });
+    }
+}
+//Upload Document library as attachment in 'DocumentApprovalRequests' list
+function UploadDocAsAttachment(UploadItemId, DocId, FileVer) {
+    // Create XHR, Blob and FileReader objects
+    var xhr = new XMLHttpRequest(),
+        blob,
+        fileReader = new FileReader();
+
+    xhr.open("GET", window.location.origin + $("#FilePath").text(), true);
+    // Set the responseType to arraybuffer. "blob" is an option too, rendering manual Blob creation unnecessary, but the support for "blob" is not widespread enough yet
+    xhr.responseType = "arraybuffer";
+    xhr.addEventListener("load", function () {
+        if (xhr.status === 200) {
+            // Create a blob from the response
+            var fileName = $("#FileName").text();
+            fileName = fileName.replace(/[^a-zA-Z0-9-. ]/g, "");    //Remove Special Char
+            fileName = fileName.replace(/\s/g, ""); 
+            var FileExt = fileName.substring(fileName.lastIndexOf('.') + 1);
+            fileName = encodeURI(fileName.split('.').slice(0, -1).join('.').substring(0, 20) + "_" + DocId + "_V" + FileVer + "_" + UploadItemId + "_Original") + "." + FileExt;
+            //blob = new Blob([xhr.response], { type: "image/png" });
+            // onload needed since Google Chrome doesn't support addEventListener for FileReader
+            //fileReader.onload = function (evt) {
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentApprovalRequests')/items('" + UploadItemId + "')/AttachmentFiles/ add(FileName='" + fileName + "')",
+                    method: "POST",
+                    binaryStringRequestBody: true,
+                    data: xhr.response,
+                    processData: false,
+                    headers: {
+                        "ACCEPT": "application/json;odata=verbose",
+                        "X-RequestDigest": $("#__REQUESTDIGEST").val()
+                        //,
+                        //"content-length": fileData.byteLength
+                    },
+                    success: function (data) {
+                        AddApprovalSteps(UploadItemId);
+                    },
+                    error: function (data) {
+                    	AddApprovalSteps(UploadItemId);
+                        alert("Error occured." + data.responseText);
+                    }
+                });
+            //};
+            //fileReader.readAsDataURL(blob);
+        }
+    }, false);
+    // Send XHR
+    xhr.send();
+}
+
+// Add approval steps in the list - 'DocumentApprovalQueue'
+// Add approval steps in the list - 'DocumentApprovalQueue'
+function AddApprovalSteps(ReqID) {
+    var arrTempApprovers = [];
+    var Metadata;
+    var ApproverType = '';
+    var ItemType = GetItemTypeForListName('DocumentApprovalQueue');
+    var currentStepCount = '';
+    $('#accordionapprovers .StepClass').each(function (i) {
+        multipleEmailAddress = [];
+        assignUserName = [];
+        EmpIds = [];
+        currentStepCount = this.classList[2].replace("NewStep", "");
+        multipleEmailAddress = $("#EmailStep" + currentStepCount).text().split(',');
+        assignUserName = $("#NameStep" + currentStepCount).text().split(',');
+        EmpIds = $("#EmpIdStep" + currentStepCount).text().split(',');
+		TypeOfApp = $("#AppTypeStep" + currentStepCount).text();
+		ApproverRole = $("#AppRoleStep" + currentStepCount).text();
+		ApproverDecidingStep = $("#DecideStep" + currentStepCount).text();
+		IsFooterSign = JSON.parse($("#InitialsSign"+currentStepCount).text().toLowerCase());
+        arrTempApprovers = [];
+		if(assignUserName[0] != "will be provided at Runtime") {
+	        if (EmpIds[0] == "NA") {
+	            arrTempApprovers = [];
+	            ApproverType = "Outsider";
+	        }
+	        else {
+	            ApproverType = "User";
+	            EmpIds.filter(function (data) {
+	                arrTempApprovers.push(parseInt(data));
+	            });
+	        }
+	    }
+	    	    
+        if (i == 0) {
+            if ($("#ddlSign").val() == "E-Sign") {
+                Status = "Started";
+            }
+            else {
+                Status = "Pending";
+            }
+        }
+        else {
+            Status = "Not Started";
+        }
+	    
+        AllApprovers = AllApprovers.concat(arrTempApprovers);
+
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            RequestID: ReqID,
+            Title: $("#FileName").text(),
+            Sequence_No: parseInt(i + 1),
+            StepName: $("#StepName" + currentStepCount).text(),
+            ApproversId: { 'results': arrTempApprovers },
+            OriginDMS: CopyLibrary,
+            LibraryLink: CopySourceURL,
+            DocumentID: DocumentId,
+            ApproverType: ApproverType,
+            Status: Status,
+            ApproverRole: ApproverRole,
+            ApproverDecidingStep: ApproverDecidingStep,
+            TypeofApprover: TypeOfApp,
+            PageFooterSign: IsFooterSign 
+        };
+        if(assignUserName[0] == "will be provided at Runtime") {
+        	Metadata["AskApprover"] = true;
+        	Metadata["ApproverForStep"] = $("#StepName" + currentStepCount).text();
+        }
+        else {
+        	Metadata["AskApprover"] = false;
+	        if (EmpIds[0] == "NA") {
+	            Metadata["ApproversEmail"] = multipleEmailAddress[0];
+	            Metadata["ApproversName"] = assignUserName[0];
+	        }
+        }
+        AddApprovalToList('DocumentApprovalQueue', Metadata, i, ReqID);
+    });
+}
+// add metedata in SP list
+function AddApprovalToList(ListName, Metadata, LoopCount, ReqID) {
+    if (ListName == "Shared%20Documents") {
+        ListName = "Documents";
+    }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            if ((LoopCount + 1) == $('#accordionapprovers .StepClass').length) {
+                ClearAprovalControls();
+                //$("#btnApproval").hide();
+                $(".btnApprovalDetails").show();
+                $("#FileApproval").text("Pending");
+                $("#approval-modal").modal('hide');
+                UpdateAllApprovers(ReqID);
+                onloadGetItem();
+                alert("Document has been sent for approval.");
+                dfd.resolve(data);
+            }
+        },
+        error: function (error) {
+            $("#overlaysearch").fadeOut();
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//Validation before starting approval
+function ApprovalStartValid(){
+	var IsReturn = true;
+    var currentStepCount = '';
+    $('#accordionapprovers .StepClass').each(function (i) {
+    	var currentStepCount = this.classList[2].replace("NewStep", "");
+		if(($("#EmpIdStep" + currentStepCount).text() == "" || $("#EmpIdStep" + currentStepCount).text() == "NA" || $("#EmpIdStep" + currentStepCount).text() == "null") && ($("#DecideStep" + currentStepCount).text() == "Initiation")){
+			IsReturn = false;
+		}
+	});
+	if(IsReturn == false){ 
+		alert("Kindly enter approvers first.");
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
+function UpdateDocumentStatus() {
+    var dfd = $.Deferred();
+    if (CopyLibrary.includes('Documents') == true) {
+        var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
+    }
+    else {
+        var ItemType = GetItemTypeForLibraryName(CopyLibrary);
+    }
+
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Approval: "Pending",
+        ApprovedVersion: $("#FileVersion").text()
+    };
+    if (CopyLibrary == "Shared%20Documents") {
+        CopyLibrary = "Documents";
+    }
+    if (CopySourceURL != _spPageContextInfo.webAbsoluteUrl) {
+        $.when(GetFormDigestValue(CopySourceURL)).done(function(GetFormDigestValue) {
+            RequestDigest = GetFormDigestValue
+        });
+    }
+    $.ajax({
+        url: CopySourceURL + "/_api/web/lists/getbytitle('" + CopyLibrary + "')/items(" + DocumentId + ")",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": RequestDigest,
+            "IF-MATCH": "*",             //Overrite the changes in the sharepoint list item
+            "X-HTTP-Method": "MERGE"      // Specifies the update operation in sharepoint list
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            AddDocApproval();
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            RequestDigest = $("#__REQUESTDIGEST").val();
+            $("#overlaysearch").fadeOut();
+            if (error.responseText.includes("Access is denied") == true) {
+                alert("You don't have the required permission on " + $("#FileName").text() + " to perform this operation.");
+            }
+            else {
+                console.log(error.responseText);
+            }
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//Update 'AllApprovers' column while adding steps
+function UpdateAllApprovers(ReqId) {
+    AllApprovers = AllApprovers.filter(function (item, pos) {
+        return AllApprovers.indexOf(item) == pos
+    }); //Remove duplicate elements Azure Array
+
+    var ItemType = GetItemTypeForListName('DocumentApprovalRequests');
+    var fileName = $("#FileName").text();
+    fileName = fileName.replace(/[^a-zA-Z0-9-. ]/g, "");    //Remove Special Char
+    fileName = fileName.replace(/\s/g, "");
+    var FileExt = fileName.substring(fileName.lastIndexOf('.') + 1);
+    FileVer = parseInt($("#FileVersion").text()).toString();
+    fileName = encodeURI(fileName.split('.').slice(0, -1).join('.').substring(0, 20) + "_" + DocumentId + "_V" + FileVer + "_" + ReqId + "_Original") + "." + FileExt;
+
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        FileNameWithPrefix: fileName,
+        AllApproversId: { 'results': AllApprovers }
+    }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentApprovalRequests')/GetItemById('" + ReqId + "')",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            AllApprovers = [];
+            $("#overlaysearch").fadeOut();
+            //$("#addsuccessor").modal('hide');
+        },
+        eror: function (data) {
+            console.log("An error occurred while add all Approvers. " + JSON.stringify(data));
+        }
+    }).fail(function (error) {
+        alert(error.responseJSON.error.message.value);
+    });
+}
+
+//Convert date in format for SP list
+function GetDateStandardFormat(date) {
+    var dateS = ConvertDateFormatToddMMyyyy(date);
+    var startDate = new Date(dateS);
+    var day = 60 * 60 * 24 * 1000;
+    var endDate = new Date(startDate.getTime());
+    var newDate = endDate.toISOString();
+    return newDate;
+}
+
+function ConvertDateFormatToddMMyyyy(date) {
+    var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+    return formatedDate;
+}
+
+function stringToDate(_date, _format, _delimiter) {
+    var formatLowerCase = _format.toLowerCase();
+    var formatItems = formatLowerCase.split(_delimiter);
+    var dateItems = _date.split(_delimiter);
+    var monthIndex = formatItems.indexOf("mm");
+    var dayIndex = formatItems.indexOf("dd");
+    var yearIndex = formatItems.indexOf("yyyy");
+    var month = parseInt(dateItems[monthIndex]);
+    month -= 1;
+    var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+    return formatedDate;
+}
+
+//OpenApproval Histroy on 'Approved', 'Reject', 'Pending' Sign
+function OpenApprovalHistry(DocId, FileName) {
+    DocumentId = DocId;
+    ShowAllAppHistory(FileName);
+}
+//Add Approval method ends ----------------------------------
+
+//----------------------------Renaming the File Starts----------------------------------------------
+function RenameFile() {
+    var webUrl = CopySourceURL; // web url
+    var listTitle = CopyLibrary; //list title
+    var itemId = DocumentId; //list item id
+    var fileName = $('#txtRenamefile').val(); //new file name
+    rename(webUrl, listTitle, itemId, fileName).done(function (item) {
+        $.when(getSharedDocLinks()).done(function (results) {
+        	$.when(getApprovalDocLinks()).done(function (results) {
+	            var tempDocName = Documentname;
+	            if (Documentname.search(/\bDocuments\b/) >= 0) {
+	                tempDocName = "Shared%20Documents";
+	            }
+	            GetMyDocumentsWithFilesFolder(tempDocName);
+	            alert('File has been renamed.');
+	            $("#rename").modal('hide');
+	        	$("#ModalDisplayProperty").modal('hide');
+	        });
+        });
+    }).fail(function (error) {
+        if (error.responseText.includes("Access is denied") == true) {
+            alert("You don't have the required permission to perform this operation.");
+            return false;
+        }
+        else {
+            alert(error.responseText);
+            return false;
+        }
+    });
+}
+
+//get the ApprovalDoc links Id
+function getApprovalDocLinks() {
+    var Query = "?$select=Title,Id,FileServerURL,FileName,DocumentID&$filter=DocumentID eq '" + DocumentId.toString() + "' and FileName eq '" + OldFileName + "'  ";
+    $.when(getItemsWithQuery('DocumentApprovalRequests', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (ApprovalInfo) {
+        if (ApprovalInfo.length > 0) {
+            for (var i = 0; i < ApprovalInfo.length; i++) {
+                updateApprovalLinks(ApprovalInfo[i].Id, ApprovalInfo[i].FileServerURL);
+            }
+        }
+    });
+}
+
+//update the ApprovalDocument URL
+function updateApprovalLinks(UpdateId, DocURL) {
+    var ListName = "DocumentApprovalRequests";
+    var Metadata;
+    var ItemType = GetItemTypeForListName(ListName);
+    var UpdateDocURL = '';
+    UpdateDocURL = DocURL.substr(0, DocURL.lastIndexOf("/")) + "/" + $("#txtRenamefile").val().trim() + $("#txtFileExt").text();
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtRenamefile").val().trim() + $("#txtFileExt").text(),
+        FileName: $("#txtRenamefile").val().trim() + $("#txtFileExt").text(),
+        FileServerURL: UpdateDocURL
+    }
+    $.when(updateItemWithIDItemListDocuments(ListName, Metadata, UpdateId, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
+        var Query = "?$select=Title,Id,RequestID&$filter=RequestID eq '" + UpdateId + "' ";
+        $.when(getItemsWithQuery('DocumentApprovalQueue', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Approvals) {
+            if (Approvals.length > 0) {
+                for (var j = 0; j < Approvals.length; j++) {
+                    var ListName = "DocumentApprovalQueue";
+                    var Metadata;
+                    var ItemType = GetItemTypeForListName(ListName);
+                    Metadata = {
+                        __metadata: {
+                            'type': ItemType
+                        },
+                        Title: $("#txtRenamefile").val().trim() + $("#txtFileExt").text()
+                    }
+                    $.when(updateItemWithIDItemListDocuments(ListName, Metadata, Approvals[j].Id, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
+                        console.log("Approval list link has been updated.");
+                    });
+                }
+            }
+        });
+    });
+}
+
+function rename(webUrl, listTitle, itemId, fileName) {
+    if (listTitle == "Shared%20Documents") {
+        listTitle = "Documents";
+    }
+
+    var endpointUrl = webUrl + "/_api/web/lists/getbytitle('" + listTitle + "')/items(" + itemId + ")";
+    return executeJson(endpointUrl).then(function (data) {
+        var itemPayload = {};
+        itemPayload['__metadata'] = {
+            'type': data.d['__metadata']['type']
+        };
+        //itemPayload['Title'] = fileName;
+        itemPayload['FileLeafRef'] = fileName;
+        var itemUrl = data.d['__metadata']['uri'];
+        var headers = {};
+        headers["X-HTTP-Method"] = "MERGE";
+        headers["If-Match"] = "*";
+        return executeJson(itemUrl, "POST", headers, itemPayload);
+    });
+}
+
+function executeJson(url, method, headers, payload) {
+    headers = headers || {};
+    method = method || 'GET';
+    headers["Accept"] = "application/json;odata=verbose";
+    if (method == "POST") {
+        headers["X-RequestDigest"] = $("#__REQUESTDIGEST").val();
+    }
+    var ajaxOptions = {
+        url: url,
+        type: method,
+        contentType: "application/json;odata=verbose",
+        headers: headers
+    };
+    if (method == "POST") {
+        ajaxOptions.data = JSON.stringify(payload);
+    }
+    return $.ajax(ajaxOptions);
+}
+
+//get the SharedDoc links Id
+function getSharedDocLinks(){
+    var Query = "?$select=Id,DocumentURL,DocumentID&$filter=DocumentID eq '" + DocumentId.toString()  + "' ";
+    $.when(getItemsWithQuery('SharedDocument', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SharingInfo) {
+        if (SharingInfo.length > 0) {
+            for (var i = 0; i < SharingInfo.length; i++) {
+                updateShareLinks(SharingInfo[i].Id, SharingInfo[i].DocumentURL);
+            }
+        }
+    });
+}
+
+//update the SharedDocument URL
+function updateShareLinks(UpdateId, DocURL) {
+    var ListName = "SharedDocument";
+    var Metadata;
+    var ItemType = GetItemTypeForListName(ListName);
+    var UpdateDocURL = '';
+    UpdateDocURL = DocURL.substr(0, DocURL.lastIndexOf("/")) + "/" + $("#txtRenamefile").val().trim() + $("#txtFileExt").text();
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: $("#txtRenamefile").val().trim() + $("#txtFileExt").text(),
+        DocumentURL: UpdateDocURL
+    }
+    $.when(updateItemWithIDItemListDocuments(ListName, Metadata, UpdateId, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
+        console.log("sucessfully URL changed");
+    });
+}
+//----------------------------Renaming the File ends----------------------------------------------
+
+
+//get Unique data in array
+function getUniqueListBy(arr, key) {
+    return [...new Map(arr.map(item => [item[key], item])).values()]
+}
+
+//get SharePoint data from library
+function getItemsWithQueryUsersDocuments(ListName, Siteurl) {
+    var dfd = $.Deferred();
+    var siteurl = Siteurl + "/_api/Web/GetFolderByServerRelativeUrl('" + ListName + "')?$select=ID,EncodedAbsUrl,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields/HasUniqueRoleAssignments,Files/ModifiedBy/Title,Files/ListItemAllFields/HasUniqueRoleAssignments,Folders/ListItemAllFields,Files,Files/ListItemAllFields,Files/ListItemAllFields/FileSizeDisplay&$orderby=Modified desc";
+    $.ajax({
+        url: siteurl,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function(data) {
+            dfd.resolve(data.d);
+            //   console.log();
+        },
+        error: function(error) {
+            //alert(JSON.stringify(error));
+            dfd.reject(error);
+            alert(error.responseJSON.error.message.value);
+        }
+    });
+    return dfd.promise();
+}
+
+//Bind Notify mail popup to sent mail to permitted users
+function NotifyEmail() {
+    var ShareType = [];
+    $("#NotifyHeaderSelect").show();
+    $("#btnSendNotifyMail").show();
+    var ChkCOunt = 1;
+    if (currentSectionType == "GuestDocuments") {
+        var Notifyhtml = '';
+        ChkCOunt = -1;
+        var Query = "?$select=Title,InternalMembers/EMail,InternalMembers/Title,InternalSupervisor/EMail,InternalSupervisor/Title,Supervisor/EMail,Supervisor/Title&$expand=InternalMembers,InternalSupervisor,Supervisor&$filter=Title eq '" + currentClientName + "' ";
+        $.when(getItemsWithQuery("ClientMaster", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TeamMember) {
+            if (TeamMember[0].InternalSupervisor.EMail != undefined && TeamMember[0].InternalSupervisor.EMail != null) {
+                ChkCOunt++;
+                employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TeamMember[0].InternalSupervisor.EMail);
+                Notifyhtml += '<div class="listofemployee" >' +
+                        '<input type="checkbox" name="" Id="checkbox' + ChkCOunt + '" class="checkse chkNotify">' +
+                        '<div class="row">' +
+
+                        '<div class="listimg col-md-2">' +
+                        '<img src="' + employeePicURL + '" alt="">' +
+                        '</div>' +
+                        '<div class="col-sm-10 user_detail_box">' +
+                        '<a href="#" class="emplyeename_new">' + TeamMember[0].InternalSupervisor.Title + '</a>' +
+                        '<div class="emilbox">' +
+                        '<h4>' + TeamMember[0].InternalSupervisor.EMail + '</h4>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+            }
+            if (TeamMember[0].Supervisor.EMail != undefined && TeamMember[0].Supervisor.EMail != null) {
+                employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TeamMember[0].Supervisor.EMail);
+                ChkCOunt++;
+                Notifyhtml += '<div class="listofemployee" >' +
+                        '<input type="checkbox" name="" Id="checkbox' + ChkCOunt + '" class="checkse chkNotify">' +
+                        '<div class="row">' +
+
+                        '<div class="listimg col-md-2">' +
+                        '<img src="' + employeePicURL + '" alt="">' +
+                        '</div>' +
+                        '<div class="col-sm-10 user_detail_box">' +
+                        '<a href="#" class="emplyeename_new">' + TeamMember[0].Supervisor.Title + '</a>' +
+                        '<div class="emilbox">' +
+                        '<h4>' + TeamMember[0].Supervisor.EMail + '</h4>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+            }
+            if (TeamMember[0].InternalMembers.results != undefined && TeamMember[0].InternalMembers.results != null) {
+                for (var i = 0; i < TeamMember[0].InternalMembers.results.length; i++) {
+                    ChkCOunt++;
+                    employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TeamMember[0].InternalMembers.results[i].EMail);
+                    Notifyhtml += '<div class="listofemployee" >' +
+                        '<input type="checkbox" name="" Id="checkbox' + ChkCOunt + '" class="checkse chkNotify">' +
+                        '<div class="row">' +
+                        '<div class="listimg col-md-2">' +
+                        '<img src="' + employeePicURL + '" alt="">' +
+                        '</div>' +
+                        '<div class="col-sm-10 user_detail_box">' +
+                        '<a href="#" class="emplyeename_new">' + TeamMember[0].InternalMembers.results[i].Title + '</a>' +
+                        '<div class="emilbox">' +
+                        '<h4>' + TeamMember[0].InternalMembers.results[i].EMail + '</h4>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+                }
+            }
+        });
+        if (Notifyhtml != '') {
+            $("#divlistofemployee").empty().append(Notifyhtml);
+        }
+        else {
+            $("#NotifyHeaderSelect").hide();
+            $("#btnSendNotifyMail").hide();
+            $("#divlistofemployee").empty().append('<div class="listofemployee">No Employee found.</div>');
+        }
+        $('.coverbox_list').has('#divlistofemployee').removeClass('activing');
+    }
+    else {
+        $("#NotifyHeaderSelect").hide();
+        $("#divlistofemployee").empty().append('<div class="listofemployee" id="NotifyPPlPicker"></div>');
+        $('.coverbox_list').has('#NotifyPPlPicker').addClass('activing');
+        initializePeoplePicker("NotifyPPlPicker", true);
+    }
+    $(".chkNotify").click(function (e) {
+        if (this.checked == false) {
+            $('#checkall').prop("checked", "");
+        }
+    });
+    $("#checkall").click(function (e) {
+        waitingDialog.show();
+        if (this.checked == true) {
+            $('.chkNotify').prop("checked", "");
+            $('.chkNotify').trigger('click');
+        }
+        else {
+            $('.chkNotify').prop("checked", "");
+            to = [];
+        }
+        waitingDialog.hide();
+    });
+}
+
+//Notify mail - Validation
+function SendNotifyEmail() {
+    to = [];
+    if ($("#divlistofemployee").find("#NotifyPPlPicker").length > 0) {
+        to = getUserInformationEmail("NotifyPPlPicker");
+    }
+    else {
+        $(".listofemployee input[type=checkbox]:checked").each(function () {
+            var row = $(this).closest("div")[0];
+            to.push($($(this).closest("div")[0]).find('.emilbox')[0].innerText)
+        });
+    }
+    if (to.length > 0) {
+        processSendEmails();
+    }
+    else {
+        alert("Kindly select any user.");
+        return false;
+    }
+}
+
+//Bind mail structure and send mail
+function processSendEmails() {
+    var body = '<table>' +
+        '<tr>' +
+        '<td colspan="2"><p style="margin:15px 0; padding:0;">Notification from <span>' + _spPageContextInfo.userDisplayName + '</span> regarding the below document</p></td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><p style="margin:0; padding:0;"><b>Name: </b></p></td>' +
+        '<td><p style="margin:0; padding:0;">' + $('#FileName').text() + '</p></td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><p style="margin:0; padding:0;" data-localize="Title"><b>Title</b><b>:</b></p></td>' +
+        '<td><p style="margin:0; padding:0;">' + $('#FileTitle').text() + '</p></td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><p style="margin:0; padding:0;" data-localize="Category"><b>Category </b><b>:</b></p></td>' +
+        '<td><p style="margin:0; padding:0;">' + $('#FileDocType').text() + '</p></td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><p style="margin:0; padding:0;"><b>Message: </b></p></td>' +
+        '<td><p style="margin:0; padding:0;">' + $('#txtMessage').val() + '</p></td>' +
+        '</tr>' +
+        
+        '<tr>' +
+        '<td><a href="' + $('#linkdoc').val() + '">Click here</a> to open the document.</td>' +
+        '</tr>' +
+
+        '</table>' +
+        '<p style="margin:15px 0; padding:0;">This is an auto generated e-mail. Please do not reply.</p>';
+	for(var k = 0; k < LabelDefaultLangauge.length; k++) {
+    	if(body.includes(LabelDefaultLangauge[k].Key) == true){
+    		body = body.replaceAll(LabelDefaultLangauge[k].Key, LabelDefaultLangauge[k].DefaultLanguage);
+    	}	
+    }
+    var subject = "Notification from " + _spPageContextInfo.userDisplayName + " regarding a document";
+    var from = "no-reply@sharepointonline.com"; //_spPageContextInfo.userEmail;
+    var Metadata;
+    Metadata = {
+        'properties': {
+            '__metadata': {
+                'type': 'SP.Utilities.EmailProperties'
+            },
+            'From': from,
+            'To': {
+                'results': to
+            },
+
+            'Body': body,
+            'Subject': subject
+        }
+    };
+    var taMailBody = {
+        properties: {
+            __metadata: {
+                'type': 'SP.Utilities.EmailProperties'
+            },
+            From: "From: no-reply@sharepointonline.com",
+            To: {
+                'results': to
+            },
+            Body: body,
+            Subject: subject,
+        }
+    };
+    var sitetemplateurl = _spPageContextInfo.webAbsoluteUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(taMailBody),
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            alert("Notification has been sent.")
+            $('.checkse').prop('checked', false); // Unchecks it
+            $('#txtMessage').val("");
+            $("#notify").modal("hide");
+        },
+        error: function (err) {
+            alert("SendEmailSharedNotification  " + JSON.stringify(err));
+            return false;
+        }
+    });
+}
+
+//Add to favorite
+function AddFavoriteFile() {
+    var Metadata;
+    Metadata = {
+        __metadata: { 'type': 'SP.Data.MyFavoritesListItem' },
+        'Title': $("#FileName").text(),
+        'Name': $("#FileName").text(),
+        'FileName': $("#FileName").text(),
+        'Category': 'Document',
+        'Link': '',
+        'UserId': _spPageContextInfo.userId,
+        'SiteLink': CopySourceURL,
+        'DMSName': CopyLibrary,
+        'DocumentID': DocumentId,
+        'DocumentLink': $(".txtCopyLink").val(),
+        'Icon': {
+            '__metadata': { 'type': 'SP.FieldUrlValue' },
+            'Description': '',
+            'Url': _spPageContextInfo.webAbsoluteUrl + '/SiteAssets/MyFavorite/Images/fav-document.png'
+        },
+        'Active': true
+    };
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('MyFavorites')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            FavouriteId = data.d.Id;
+            $('.unfillstar').hide();
+            $('.fillstar').show();
+            $("#txtFavorite").text("Delete from Favorite");
+            //alert("Added to favorite.");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+//Delete from Favorite
+function DeleteFromFavourite() {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('MyFavorites')/items(" + FavouriteId + ")",
+        type: "POST",
+        headers: {
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "DELETE"
+        },
+        success: function (data) {
+            $('.unfillstar').show();
+            $('.fillstar').hide();
+            $("#txtFavorite").text("Add to Favorite");
+        },
+        error: function (data) {
+            alert(data.responseJSON.error);
+        }
+    });
+}
+
+//get Request_Digest for different Sites
+function GetFormDigestValue(SiteUrl) {
+    // _spPageContextInfo.webAbsoluteUrl - will give absolute URL of the site where you are running the code.
+    // You can replace this with other site URL where you want to apply the function
+    var dfd = $.Deferred();
+    $.ajax({
+        url: SiteUrl + "/_api/contextinfo",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose"
+        },
+        success: function(data) {
+            var FormDigestValue = data.d.GetContextWebInformation.FormDigestValue;
+            dfd.resolve(FormDigestValue);
+            console.log(FormDigestValue);
+        },
+        error: function(xhr, status, error) {
+            console.log("Failed");
+        }
+    });
+    return dfd.promise();
+}
+
+function GetItemTypeForLibraryName(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "Item";
+}
+function GetItemTypeForListName(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+function ShowCommonStandardDateFormat (datestring) {
+	var date = new Date(datestring);
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+    ];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear() + " " + strTime;
+    /*var dateFormatLocal = datestring.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+    }).split(' ').join('-');
+    return dateFormatLocal;*/
+}
+
+//to make people picker - multiple
+function initializePeoplePicker(peoplePickerElementId) {
+    var schema = {};
+    schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = true;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '280px';
+    this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+
+//bind SubCategories on basis of Category
+function getSubCategory(CategoryName, HTMLID) {
+    if(HTMLID == "txtUpdateSubType" || HTMLID == "FileSubType" || HTMLID == "ddlAddFolderSubC" || HTMLID == "ddlAddFileSubC") {
+        $("#"+HTMLID).empty().append('<option value="-Select-">-Select-</option>');
+    }
+    else {
+        $("#"+HTMLID).empty().append('<option value="All">All</option>');
+    }
+    var Query= "?$select=Title,Category/CatogeryName,Category/CategoryType,Active&$expand=Category&$filter=Category/CategoryType eq 'Document' and Active eq '1' and Category/CatogeryName eq '"+CategoryName+"' ";
+    $.when(getItemsWithQuery('SubCategory', Query, _spPageContextInfo.webAbsoluteUrl)).done(function (SubTypeResults) {
+        if (SubTypeResults.length > 0) {
+            for (var index = 0; index < SubTypeResults.length; index++) {
+                $("#"+HTMLID).append('<option value="' + SubTypeResults[index].Title + '">' + SubTypeResults[index].Title + '</option>');
+            }
+        }
+    });
+}
+
+//check the mandatory checkboxes in Settings table
+function getMandatoryColumns(valuesArray) {
+	arrMandatoryCols = [];
+    for (var i = 0; i < valuesArray.length; i++) {
+        if ("Title" == valuesArray[i].ColumnName && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandTitle").prop('checked', true);
+            arrMandatoryCols.push('Title');
+        }
+        if (("Type" == valuesArray[i].ColumnName || "DocumentType" == valuesArray[i].ColumnName || "Category" == valuesArray[i].ColumnName) && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandDocType").prop('checked', true);
+            arrMandatoryCols.push('DocumentType');
+        }
+        if (("Reference" == valuesArray[i].ColumnName || "DocumentNo" == valuesArray[i].ColumnName) && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandRef").prop('checked', true);
+            arrMandatoryCols.push('Reference');
+        }
+        if ("Author" == valuesArray[i].ColumnName && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandAuthor").prop('checked', true);
+            arrMandatoryCols.push('Author');
+        }
+        if ("Details" == valuesArray[i].ColumnName && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandDetails").prop('checked', true);
+            arrMandatoryCols.push('Details');
+        }
+        if ("FileValidity" == valuesArray[i].ColumnName && valuesArray[i].IsMandatory == true) {
+            $("#ckbMandValidity").prop('checked', true);
+            arrMandatoryCols.push('FileValidity');
+        }
+        else {
+            //Do Nothing;
+        }
+    }
+}
+
+//to check if created file exists or not
+function IsNewFileExist(FolderName, FileName, WebURL) {
+    var serverRelativeURL = "/" + WebURL.substring(WebURL.indexOf('/s') + 1);
+    var Checkpath = serverRelativeURL + "/" + FolderName + FileName;
+    var IsFileExist = false;
+    jQuery.ajax({
+        url: WebURL + "/_api/web/getfilebyserverrelativeurl('" + Checkpath + "')?$expand=ListItemAllFields&$select=*,ListItemAllFields/AccessLevel,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentNo," +
+            "ListItemAllFields/DocumentType,ListItemAllFields/SharedId,ListItemAllFields/DocumentWrittenBy,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Title",
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            IsFileExist = true;
+        },
+        error: function (error) {
+            if (error.status == 404) {
+                console.log(FileName + " file doesnt exist");
+            }
+            else {
+                waitingDialog.hide();
+            }
+        }
+    });
+    return IsFileExist;
+}
+
+/*Chatting methods starts ----------------------*/
+
+//to Open Chat box from Table
+function OpenChatBox(DocId, FileName, Title, Category, ModifyBy, ModifyEmail, ModifyTime, CommentURL,ctrl){
+    cmntIcon=ctrl;//10 April 23
+	DocumentId = DocId;
+	if(Title == "null") {Title = ""}
+	if(Category == "null") {Category = ""}
+	$("#FileName").text(FileName);
+	$("#CommentFileTitle").text(Title);
+	CommentSiteURL = CommentURL;
+	$("#CommentFileName").text(FileName);
+	if(Category == "-Select-" || Category == null || Category == "null"){
+		$("#CommentFileDocType").text('');
+	}
+	else {
+		$("#CommentFileDocType").text(Category);
+	}
+	$("#FileTitle").text(Title);
+	$("#FileDocType").text(Category);
+	if(currentSectionType != 'MyFavorite') {
+		$("#CommentModify").text(getModifiedBy(ModifyBy));
+	}
+	else {
+		$("#CommentModify").text(ModifyBy);
+		$("#CommentModEmail").text(ModifyEmail);
+		$("#CommentModEmail").click(function () {
+	        OpenEmail(ModifyEmail);
+	    });
+	    $("#CommentModImage").prop('src', _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(ModifyEmail));
+	}
+	$("#CommentModTime").text(ShowCommonStandardDateFormat(new Date(ModifyTime)));
+	AddFileViewCount();
+	GetComments('PageLoad', "");
+}
+//Add File View-Count
+function AddFileViewCount() {
+    var listName = "DocumentComments";
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    var Query = "?$select=*,Author/EMail&$expand=Author&$filter=Author/EMail eq '" + _spPageContextInfo.userEmail + "' and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Views eq 'Yes' or Views eq 'No')";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (FilterResult) {
+        if (FilterResult.length > 0) {
+            if (FilterResult[0].Views == "No") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Views': 'Yes', 'ViewsById': parseInt(_spPageContextInfo.userId) };
+                updateItemWithIDItemListDocuments(listName, item, FilterResult[0].ID, _spPageContextInfo.webAbsoluteUrl, false);
+            }
+        }
+        else if (FilterResult.length == 0) {
+            var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 
+                'Title': $("#FileName").text(),
+                'EmployeeId': parseInt(_spPageContextInfo.userId), 
+                'Views': 'Yes', 
+                'ViewsById': parseInt(_spPageContextInfo.userId), 
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            };
+            AddItemToListGroups(listName, item);
+        }
+    });
+}
+
+//to add comments on file
+function PushRootComment() { 
+    var listName="DocumentComments";
+    var comment = $("#FileCommArea .emojionearea-editor").html().trim();
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    if(comment != "") {
+        if(FileCommentType == "Parent") {
+            var item = {
+                '__metadata': { type: 'SP.Data.' + listName + 'ListItem' },
+                'EmployeeId': _spPageContextInfo.userId,
+                'ReplierId': _spPageContextInfo.userId,
+                'Comments': comment,
+                'Initials': "Parent",
+                'ReplyforId': _spPageContextInfo.userId,
+                'Title': $("#FileName").text(),
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            }
+            AddDocComments(listName, item, '0'); 
+            $("#FileCommArea .emojionearea-editor").html(''); 	
+        }
+        else if(FileCommentType == "Reply") {
+            var item = {
+                '__metadata': { type: 'SP.Data.' + listName + 'ListItem' },
+                'EmployeeId': _spPageContextInfo.userId,
+                'ReplierId': _spPageContextInfo.userId,
+                'Comments': comment,
+                'Initials': "Reply",
+                'ReplyTo': $("#replyforuser").text(),
+                'ReplyAgainst': $("#ReplyforMsg").attr('value'),
+                'Title': $("#FileName").text(),
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LibraryName': LibraryName
+            }
+            AddDocComments(listName, item, '0');
+            $("#FileCommArea .emojionearea-editor").html('');
+            FileCommentType = "Parent";
+        }
+        else if (FileCommentType == "Modify") {
+            UpdateEditComment(ModifyRecId);
+        }
+         //6 April 23
+        if(cmntIcon!=""&&cmntIcon!=undefined&&cmntIcon!=null&&cmntIcon!='undefined'&&cmntIcon!='null')
+        $(cmntIcon).find('img:first').prop('src',"../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png");
+    }
+    else {
+        alert("Please type a message to continue.");
+        return false;
+    }
+}
+
+function AddDocComments(listName,item,ControlID) {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+listName+"')/items",
+        type: "POST",
+        contentType: "application/json;odata=verbose",
+        data: JSON.stringify(item),
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) { 	
+            $("#TotalComments").text(parseInt($("#TotalComments").text()) + 1);
+            if(FinalFiles4Upload.length>0) {
+                uploadattachment(data.d.ID);
+                $("#NewAttachmentFiles").empty();
+                $('.emojionearea-editor').empty(); 
+            }
+            else {
+                AutoRefreshComments('GetAll', 'Logged_InUser');
+                $('.emojionearea-editor').empty();
+                FinalFiles4Upload=[];
+                finalFiles = [];
+            }
+            $("#replyTextarea").hide();
+            $("#NewAttachmentFiles").empty();
+            $("#CommentFileAttach").val('');
+            
+        },
+        error: function (data) { 
+            console.log(data); 
+        }
+    });
+}
+
+//Auto refresh the Chat box
+function AutoRefreshComments(Action, Source) {
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('DocumentComments')/Items?$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles&$orderby=Created desc&$top=10&$skipToken=Paged=TRUE%26p_ID=" + getLatestMsgId + "&$filter= (DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    var QueryResult = OccasionExecuteFilter(Ownurl, Action, Source);
+}
+
+//to open file in Iframe
+function previewfile(Action) {
+    ServerSrc = Action.name;
+    if (Action.name == null) {
+        ServerSrc = Action.title;
+    }
+    var docExt = Action.dataset.filename.split('.').pop();
+    if (docExt == 'doc' || docExt == 'docx' || docExt == 'xls' || docExt == 'xlsx' || docExt == 'ppt' || docExt == 'pptx' || docExt == 'pdf') {
+        iframeUrl1 = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/WopiFrame.aspx?sourcedoc=' + Action.dataset.fileurl + '&action=interactivepreview';
+    }
+    else {
+        iframeUrl1 = Action.dataset.fileurl;
+    }
+    /*if (ServerSrc.match(/\.(docx|xlsx)$/) != null) {
+        iframeUrl1 = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/Doc.aspx?sourcedoc=" + ServerSrc + "&action=view&mobileredirect=true";
+    }
+    else {
+        iframeUrl1 = ServerSrc + "?web=1";
+    }*/
+    
+    var container = $("#sign-viewer").empty();
+    $('<iframe>', {
+        src: iframeUrl1,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#AttachmentView").modal("show");
+    setInterval(function () {
+    	$("#iframe-viewer").contents().find("#AppHeaderPanel").hide();
+        $("#iframe-viewer").contents().find("#AppHeaderPanel").remove();
+        if($('#iframe-viewer').contents().find('body').html() == ""){
+            $("#AttachmentView").modal("hide");
+        }
+    }, 3000);
+}
+
+//Preview Image in Iframe
+function previewImage(Action) {
+    src = Action.src + "?web=1";
+    var container = $("#sign-viewer").empty();
+    $('<iframe>', {
+        src: src,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#AttachmentView").modal("show");
+}
+//upload Attachment of the comments
+function uploadattachment(id) {
+    var counter = 0;
+    if (FinalFiles4Upload.length > 0) {
+        $.each(FinalFiles4Upload, function (index, value) {
+            getFileBuffer(value).then(function (buffer) {
+
+                var OrginalFileName = value.name;
+                var ModifiedFileName = OrginalFileName.replace(/[^.a-zA-Z0-9]/ig, "");
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentComments')/items(" + id + ")/AttachmentFiles/add( FileName='" + ModifiedFileName + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: false,
+                    processData: false,
+                    headers:
+    				{
+    				    "Accept": "application/json;odata=verbose",
+    				    "content-type": "application/json;odata=verbose",
+    				    "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+    				},
+                    success: function (data) {
+                        counter = counter + 1;
+                        if (FinalFiles4Upload.length == counter) {
+                            AutoRefreshComments('GetAll', 'Logged_InUser');
+                            finalFiles = [];
+                            FinalFiles4Upload = [];
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText.error);
+                    }
+                });
+            });
+        });
+    }
+}
+
+//get Documents comments list
+function GetComments(Action, Source){
+    getTotalViewCount();
+    Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('DocumentComments')/Items?$select=*,ID,Author/Title,Author/Id,Author/EMail,AttachmentFiles&$expand=Author,AttachmentFiles&$orderby=Created desc&$top=5000&$filter=(DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    var QueryResult = OccasionExecuteFilter(Ownurl, Action, Source);
+}
+
+function OccasionExecuteFilter(_query, Action, Source) {
+    FileCommentResponse = [];
+    var tempURL = '';
+    if(_query.indexOf("$skipToken") != -1) {
+        tempURL = _query;
+    }
+    else {
+        Ownurl = tempURL = _query;
+    }	
+    ReadOccasionComment(Action, Source, tempURL, '');
+}
+
+//get Document commets
+function ReadOccasionComment(Action, Source, URL, IsViewMore) {
+    $.ajax({
+        url: URL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            FileCommentResponse= FileCommentResponse.concat(data.d.results);
+            FileCommentResponse.sort((a, b) => a.ID - b.ID);   
+            
+            if(FileCommentResponse.length > 0){ 
+                if(getLatestMsgId != FileCommentResponse[(FileCommentResponse.length -1)].Id && Action == "GetAll" && $("#hideCommentScroll").scrollTop() < -5 && Source != "Logged_InUser") {
+                    $("#ToastPopup").show();
+                }
+                if(IsViewMore != "ViewMore"){
+                    getLatestMsgId = FileCommentResponse[(FileCommentResponse.length -1)].Id;  
+                }
+            }     
+
+            if(FileCommentResponse.length > 0) {            	
+                if(URL.indexOf("$skipToken") != -1) {
+                    //'skiptoken' substring found
+                    DesignChatting(FileCommentResponse, 'refreshMode');
+                }
+                else {
+                    //no 'skiptoken' substring
+                    DesignChatting(FileCommentResponse, '');
+                }
+            }
+            else {
+                $("#CommentsArea").empty();
+                $("#TotalComments").text('0');
+            }
+            if (data.d.__next) {
+                Ownurl = data.d.__next;
+                $("#seemorebtnGeneral").css("display", "block");
+            }
+            else {
+                if(URL.indexOf("$skipToken") == -1) {
+                    $("#seemorebtnGeneral").css("display", "none");
+                }
+            }
+            /*if(Action != "PageLoad"){
+                AutoRefreshComments('GetAll', 'Logged_InUser');
+            }*/
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+}
+
+function OccasionCommentCount(Action) {
+    if(Action == "GetAll"){
+        UrlCommentTotal = _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('OccasionReplies')/Items?$select=ID&$orderby=Created desc&$top=5000&$filter= (Year eq '"+CurrentYear+"' and EmployeeCode eq '"+EmployeeID+"' and OccasionType  eq '"+OccasionType+"' and (Initials eq 'Parent' or Initials eq 'Reply'))";
+    }
+    OccasionresponseComment= [];
+    ReadOccasionCommentTotal();
+}
+
+//HTML design for Chatting
+function DesignChatting(FileCommentResponse, Mode) {
+    if(Mode == '') {
+        $("#TotalComments").text(FileCommentResponse.length);
+    }
+    var Commenthtmldesign = '';
+    var Attachmnetlist = [];
+    var AttachmnetIDs = [];
+    var CommentLikeValue = 'Like';
+    //$("#CommentsArea").empty();	
+    for (var i = 0; i < FileCommentResponse.length; i++) {
+        var likesCount = FileCommentResponse[i].LikeCount;
+        var DisplayLikeDiv = "inline-block";
+        if (Mode != "refreshMode") {
+            likesCount = checkLikeCommentUser(FileCommentResponse[i].Id);
+            if(likesCount > 0) {
+                CommentLikeValue = 'Unlike';
+                DisplayLikeDiv = "inline-block";
+            }
+            else {
+                likesCount = 0;
+                DisplayLikeDiv = "none";
+            }
+        }
+        else {
+            if(likesCount == null) {
+                likesCount = 0;
+                DisplayLikeDiv = "none";
+            }
+        }
+        var eventDateObj = new Date(FileCommentResponse[i].Created);
+        var Event_time = eventDateObj.toTimeString();
+        var H = +Event_time.substr(0, 2);
+        var h = (H % 12) || 12;
+        var ampm = H < 12 ? " AM" : " PM";
+        Event_time = h + Event_time.substr(2, 3) + ampm;
+        if (FileCommentResponse[i].Initials == "Parent") {
+            if (_spPageContextInfo.userEmail.toLowerCase() == FileCommentResponse[i].Author.EMail.toLowerCase()) {
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span>" +
+	                    								"</div>" +
+	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+	                      									"<div>" +
+	                        									"<div id='editMenuOpen2' class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        									"</div>" +
+	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
+	                          										"<li><a type='button' class='logout' onclick='DeleteComments(" + FileCommentResponse[i].ID + ")' >Delete</a></li>" +
+	                        									"</ul>" +
+	                      									"</div>" +
+	                      									"<div class='my-chat-edit-delete-panel-inside' id='CommentText" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Comments + "</div>" +
+	                    								"</h4>" +
+	                    								"<div class='col-md-12 col-sm-12 p0'>" +
+	                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      									"</div>" +
+	                    								"</div>" +
+	                    								"<div class='clearfix'></div>" +
+	                  								"</div>";
+            }
+            else {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+
+	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='Username" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+	                    									"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+	                      										"<div class='mt-4 my-chat-edit-delete-panel-inside' id='CommentText" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Comments + "</div>" +
+	                      											"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          											"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        										"</div>" +
+	                        										"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          											"<li><button id='messageEdit' type='button' class='btn LikeCmnt" + FileCommentResponse[i].ID + "' data-toggle='collapse' data-target='#messageReplyBox' aria-expanded='false' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</button></li>" +
+	                          											"<li><a class='logout' onclick='ActiveReplyCtrl(" + FileCommentResponse[i].ID + ")'>Reply</a></li>" +
+	                        										"</ul>" +
+	                    									"</h4>" +
+	                    									"<div class='col-md-12 col-sm-12 p0'>" +
+	                      										"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      										"</div>" +
+	                    									"</div>" +
+	                    									"<div class='clearfix'></div>" +
+														"</div>";
+            }
+        }
+        else if (FileCommentResponse[i].Initials == "Reply") {
+            if (_spPageContextInfo.userId == FileCommentResponse[i].AuthorId) {
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
+	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")' >" + likesCount + "</span></span>" +
+	                    								"</div>" +
+	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel others-reply-text-box'>" +
+	                      									"<div class='reply-text-line'>" +
+	                        									"<a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a>" +
+	                        									"<span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
+	                        									"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                        									"</div>" +
+	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
+	                          										"<li><a class='logout' onclick='DeleteComments(" + FileCommentResponse[i].ID + ")'>Delete</a></li>" +
+	                        									"</ul>" +
+	                      									"</div>" +
+	                      									"<div class='mt-14'>" +
+	                        									"<div class='reply-text-box my-chat-edit-delete-panel-inside reply-inside-text-box' id='CommentText" + FileCommentResponse[i].ID + "'>" +
+	                          										"" + FileCommentResponse[i].Comments + "" +
+	                        									"</div>" +
+	                      									"</div>" +
+	                    								"</h4>" +
+	                    								"<div class='col-md-12 col-sm-12 p0'>" +
+	                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+	                      									"</div>" +
+	                    								"</div>" +
+	                    								"<div class='clearfix'></div>" +
+	                  								"</div>";
+
+            }
+            else {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
+                Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext'>" +
+		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+		                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
+		                      									"<div class='reply-text-line'><a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a><span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
+		                      										"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
+		                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>" +
+		                        									"</div>" +
+		                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
+		                          										"<li><a type='button' class='LikeCmnt" + FileCommentResponse[i].ID + "' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</a></li>" +
+		                          										"<li><a type='button' onclick='ActiveReplyCtrl(" + FileCommentResponse[i].ID + ")'>Reply</a></li>" +
+		                        									"</ul>" +
+		                        								"</div>" +
+		                        								"<div class='mt-14'>" +
+			                        								"<div class='reply-text-box my-chat-edit-delete-panel-inside reply-inside-text-box' id='CommentText" + FileCommentResponse[i].ID + "'>" +
+			                          									"" + FileCommentResponse[i].Comments + "" +
+			                        								"</div>" +
+		                      									"</div>" +
+		                    								"</h4>" +
+		                    								"<div class='col-md-12 col-sm-12 p0'>" +
+		                      									"<div class='attachment-badge chip-box' id='Attachmentlist" + FileCommentResponse[i].ID + "'>" +
+		                      									"</div>" +
+		                    								"</div>" +
+		                    								"<div class='clearfix'></div>" +
+	                  									"</div>";
+
+            }
+        }
+
+        if (FileCommentResponse[i].AttachmentFiles.results.length > 0) {
+            AttachmnetIDs.push(FileCommentResponse[i].ID);
+            for (var j = 0; j < FileCommentResponse[i].AttachmentFiles.results.length; j++) {
+                Attachmnetlist.push({
+                    RecordId: FileCommentResponse[i].ID,
+                    FileName: FileCommentResponse[i].AttachmentFiles.results[j].FileName,
+                    ServerRelativeUrl: FileCommentResponse[i].AttachmentFiles.results[j].ServerRelativeUrl,
+                });
+            }
+        }
+
+    }
+    if (Mode == "refreshMode") {
+        $("#CommentsArea").append(Commenthtmldesign);
+    }
+    else {
+        $("#CommentsArea").empty().append(Commenthtmldesign);
+    }
+
+    for (var k = 0; k < AttachmnetIDs.length; k++) {
+        var RecId = AttachmnetIDs[k];
+        var FilterResult = $.grep(Attachmnetlist, function (e) { return e.RecordId == AttachmnetIDs[k]; });
+        var Attachmentdesign = '';
+        $("#Attachmentlist" + RecId).empty();
+        for (var p = 0; p < FilterResult.length; p++) {
+            if (FilterResult[p].FileName.indexOf("docx") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+            else if (FilterResult[p].FileName.indexOf("pdf") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+            else if (FilterResult[p].FileName.indexOf("xlsx") != -1 || FilterResult[p].FileName.indexOf("csv") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+
+            else if (FilterResult[p].FileName.indexOf("jpg") != -1 || FilterResult[p].FileName.indexOf("jpeg") != -1 || FilterResult[p].FileName.indexOf("JPEG") != -1 || FilterResult[p].FileName.indexOf("png") != -1 || FilterResult[p].FileName.indexOf("PNG") != -1) {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + FilterResult[p].ServerRelativeUrl + "' title=" + FilterResult[p].FileName + " onclick='previewImage(this);'></img></div>";
+            }
+            else {
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+            }
+        }
+        $("#Attachmentlist" + RecId).append(Attachmentdesign);
+    }
+}
+//to update any comment of any file
+function EditComment(RecID){
+    FileCommentType="Modify";
+    ModifyRecId = RecID;
+    var Query = "?$filter=ID eq '"+RecID+"'&$select=*,Author/Title,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if(Items.length>0) {
+            $('.emojionearea-editor').html(Items[0].Comments);
+            $("#oldfilename").empty(); 
+            if(Items[0].AttachmentFiles.results.length>0)
+            {
+                var AttachmentDesign ='';
+                for(var y=0; y<Items[0].AttachmentFiles.results.length; y++)
+                {
+                    AttachmentDesign = AttachmentDesign +"<div class='comment-upload-chip "+Items[0].ID+"-"+y+"'><span class='attachment-badge-name comment-box-chip-text-box'><a target='_blank' href='" +Items[0].AttachmentFiles.results[y].ServerRelativeUrl+ "'><span>"+Items[0].AttachmentFiles.results[y].FileName+"</span></a></span><span class='Closebtn' id='Closebtn"+Items[0].ID+"'><i class='fa fa-close "+Items[0].ID+"' style='color:red;' id='"+Items[0].ID+"-"+y+"' value='"+Items[0].AttachmentFiles.results[y].FileName+"' onclick='DeleteAttachment(this.id)'></i></span></div>";    	
+                }
+                $("#oldfilename").append(AttachmentDesign); 
+            } 	
+        }
+        else
+        {
+            $('.emojionearea-editor').empty();    		
+        }
+    });
+}
+//to delete the comment attachement
+function DeleteAttachment(ItemId,filename) 
+{
+    var Dfd = $.Deferred();
+    var dataID = ItemId.split("-");
+    var DocumentName =$("#"+ItemId).attr('value');
+    var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('DocumentComments')/GetItemById(" + dataID[0]+ ")/AttachmentFiles/getByFileName('" + DocumentName+ "')  ";
+    $.ajax({
+        url: Url,
+        type: 'DELETE',
+        contentType: 'application/json;odata=verbose',
+        headers: {
+            'X-RequestDigest': $('#__REQUESTDIGEST').val(),
+            'X-HTTP-Method': 'DELETE',
+            'Accept': 'application/json;odata=verbose'
+        },
+        success: function (data) 
+        {
+            Dfd.resolve(data);
+            $("."+ItemId).hide();
+            $("#"+ItemId).hide();            
+            //TotalCommentsCounts=[];
+            //GetTotalComments();          
+        },
+        error: function (error) 
+        {
+            Dfd.reject(JSON.stringify(error));
+            console.log(error);
+        }
+    });
+    return Dfd.promise();
+}
+
+//Update comment of any user
+function UpdateEditComment(RecID) {
+    var item = {
+        __metadata:{
+            type: "SP.Data.DocumentCommentsListItem"
+        },
+        Comments: $("#FileCommArea .emojionearea-editor").html()
+    }
+    $.when(updateItemWithIDItemListDocuments('DocumentComments', item, RecID, _spPageContextInfo.webAbsoluteUrl, false)).done(function (FilterResult) {
+        if (FinalFiles4Upload.length > 0) {
+            Edituploadattachment(RecID);
+        }
+        else {
+            RetriveUpdateData(RecID);
+        }
+        alert("Comment has been updated.");
+        $("#CommentText" + RecID).html($("#FileCommArea .emojionearea-editor").html());
+        FileCommentType = "Parent";
+        $("#NewAttachmentFiles").empty();
+        $("#oldfilename").empty();
+        $('.emojionearea-editor').empty();
+    });
+}
+
+function Edituploadattachment(id) 
+{	
+    var xRequestDigest = $("#__REQUESTDIGEST").val();	
+    var counter = 0;
+    if(FinalFiles4Upload.length>0)
+    {
+        $.each(FinalFiles4Upload, function(index, value){
+            getFileBuffer(value).then(function (buffer) {                
+                var OrginalFileName = value.name;
+                var ModifiedFileName = OrginalFileName.replace(/[^.a-zA-Z0-9]/ig,"");		  
+                $.ajax({
+                    url: _spPageContextInfo.webAbsoluteUrl+ "/_api/web/lists/getbytitle('DocumentComments')/items(" + id + ")/AttachmentFiles/add( FileName='" + ModifiedFileName + "')",
+                    method: 'POST',
+                    data: buffer,
+                    async: true,
+                    processData: false,
+                    headers: 
+    				{
+    				    "Accept": "application/json;odata=verbose",
+    				    "content-type": "application/json;odata=verbose",
+    				    "X-RequestDigest": xRequestDigest
+    				},
+                    success: function (data)
+                    {
+                        counter  = counter + 1;    					
+                        if(counter == FinalFiles4Upload.length)
+                        {
+                            RetriveUpdateData(id);		    					 
+                        }
+                    },
+                    error: function (data) 
+                    {
+                        console.log(data.responseText.error);
+                    }
+                });
+            });
+        });
+    }	
+}
+
+//To delete the comment
+function DeleteComments(RecordID) {
+    if (confirm('Are you sure to delete this comment ?')) {
+        $.ajax({  
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('DocumentComments')/items("+RecordID+")",  
+            type: "POST",
+            async: true,  
+            headers: {  
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                "IF-MATCH": "*",  
+                "X-HTTP-Method": "DELETE"  
+            },  
+            success: function(data, status, xhr) {  
+                $('#CommentDivRecNo'+RecordID).hide();
+                $("#TotalComments").text(parseInt($("#TotalComments").text()) - 1);
+            },  
+            error: function(xhr, status, error) {  
+                alert(data.responseJSON.error); 
+                return false; 
+            }  
+        });  
+    } 
+}
+
+//bind updated comment
+function RetriveUpdateData(RecID) {
+    var Query = "?$filter=ID eq '" + RecID + "'&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $('#CommentText' + Items[0].ID).html(Items[0].Comment);
+            $("#Attachmentlist" + Items[0].ID).empty();
+            if (Items[0].AttachmentFiles.results.length > 0) {
+                var Attachmentdesign = '';
+                for (var y = 0; y < Items[0].AttachmentFiles.results.length; y++) {
+                    if (Items[0].AttachmentFiles.results[y].FileName.indexOf("docx") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("pdf") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("xlsx") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("csv") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+
+                    else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("jpg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("jpeg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("JPEG") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("png") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("PNG") != -1) {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' title=" + Items[0].AttachmentFiles.results[y].FileName + " onclick='previewImage(this);'></img></div>";
+                    }
+                    else {
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                    }
+                }
+                $("#Attachmentlist" + Items[0].ID).append(Attachmentdesign);
+            }
+        }
+    });
+}
+//to decide text - Unlike or Like
+function checkLikeCommentUser(RecId) {
+    var LikeCount = 0;
+    var Query = "?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter=DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeComment eq 'Yes' and LikeCommentID eq '" + RecId + "' and Author/EMail eq '" + _spPageContextInfo.userEmail + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (FilterResult) {
+        LikeCount = FilterResult.length;
+        if (FilterResult.length > 0) {
+            textValue = "Unlike";
+        }
+    });
+    return LikeCount;
+}
+
+//To add or remove comment like
+function Pushlikeforcomment(RecordID) {
+    var d = new Date();
+    var CurrentYear = d.getFullYear();
+    var LibraryName = CopyLibrary;
+    if($("#ModalDisplayProperty").css('display') == 'none') {
+    	LibraryName = CheckLibary;
+	}
+    var Query = "?$select=*,Author/Title,Author/Id,Author/EMail&$expand=Author&$filter= (Author/EMail eq ('" + _spPageContextInfo.userEmail + "') and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeCommentID eq '" + RecordID + "') and (LikeComment eq 'Yes' or LikeComment eq 'No')";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        if (QueryResult.length > 0) {
+            if (QueryResult[0].LikeComment == "No") {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+                if (parseInt(OldLikes) + 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'Yes', 'LikeCount': parseInt(QueryResult[0].LikeCount) + 1};
+                DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].LikeComment == "Yes") {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) - 1);
+                if (parseInt(OldLikes) - 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'No', 'LikeCount': parseInt(QueryResult[0].LikeCount) - 1};
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].LikeComment == null) {
+                var OldLikes = $("#LikesCount" + RecordID).text();
+                $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+                if (parseInt(OldLikes) + 1 > 0) {
+                    $("#LikeSpan" + RecordID).css("display", "inline-block");
+                }
+                else {
+                    $("#LikeSpan" + RecordID).css("display", "none");
+                }
+                var listName = "DocumentComments";
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'LikeComment': 'Yes', 'LikeCount': parseInt(QueryResult[0].LikeCount) + 1};
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+        }
+        else {
+            var OldLikes = $("#LikesCount" + RecordID).text();
+            $("#LikesCount" + RecordID).text(parseInt(OldLikes) + 1);
+            if (parseInt(OldLikes) + 1 > 0) {
+                $("#LikeSpan" + RecordID).css("display", "inline-block");
+            }
+            else {
+                $("#LikeSpan" + RecordID).css("display", "none");
+            }
+
+            var listName = "DocumentComments";
+            var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 
+                'LikeComment': 'Yes', 
+                'LikeCommentID': RecordID.toString(),
+                'Title': $("#FileName").text(),
+                'EmployeeId': parseInt(_spPageContextInfo.userId), 
+                'DocumentId': parseInt(DocumentId), 
+                'FileName': $("#FileName").text(), 
+                'DocumentTitle': $("#FileTitle").text(), 
+                'FileCategory': $("#FileDocType").text(), 
+                'LibraryURL': CommentSiteURL, 
+                'ServerSiteURL': $("#FilePath").text(),
+                'LikeCount': 1,
+                'LibraryName': LibraryName
+            };
+            AddDocComments(listName, item);
+        }
+    });
+}
+
+function formatDateComment(d) {
+    var date = new Date(d);
+    if (isNaN(date.getTime())) { return d; }
+    else
+    {
+        var month = new Array();
+        month[0] = "Jan";
+        month[1] = "Feb";
+        month[2] = "Mar";
+        month[3] = "Apr";
+        month[4] = "May";
+        month[5] = "Jun";
+        month[6] = "Jul";
+        month[7] = "Aug";
+        month[8] = "Sept";
+        month[9] = "Oct";
+        month[10] = "Nov";
+        month[11] = "Dec";
+        day = date.getDate();
+        if (day < 10) { day = "0" + day; }
+        return day + " " + month[date.getMonth()];
+    }
+}
+
+
+//get Total View Count of any document
+function getTotalViewCount() {
+    getTotalLikes();
+    var Html_Design = '';
+    var Query = "?$filter=DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Views eq 'Yes'&$select=*,ViewsBy/Title,ViewsBy/EMail,ViewsBy/ID&$expand=ViewsBy";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        $("#TotalHits").text(QueryResult.length);
+        if(QueryResult.length > 0) {
+            for(var i=0; i < QueryResult.length; i++) {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryResult[i].ViewsBy.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+	    									"<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='"+attachment+"'></div>"+
+											"<div class='like-user-name'>"+
+											"<h4>"+QueryResult[i].ViewsBy.Title+"</h4>"+
+											"</div>"+
+											"</li>";
+            }
+            $("#ViewHitList").empty().append(Html_Design);
+        }
+        else {
+            Html_Design = Html_Design + "<li class='likes-box'>" +
+	                                           "<div class='comment-reply-user-name' style='width:212px !important;border-radius:3% !important'>"+
+	                                           "<h4>No views!!</h4>"+
+	                                           "</div>"+
+	                                           "</li>";
+            $("#ViewHitList").empty().append(Html_Design);
+        }
+    });
+}
+
+//to get Total likes of any Document
+function getTotalLikes() {
+    var Html_Design = '';
+    var Query = "?$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Like eq 'Yes' &$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TotalLike) {
+        $("#TotalLikes").text(TotalLike.length);
+        if(TotalLike.length > 0) {
+            for(var i=0; i<TotalLike.length; i++){ 		
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TotalLike[i].LikeBy.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+    									"<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='"+attachment+"'></div>"+
+										"<div class='like-user-name'>"+
+										"<h4>"+TotalLike[i].LikeBy.Title+"</h4>"+
+										"</div>"+
+										"</li>";
+            }
+            $("#Likeshitlist").empty().append(Html_Design);
+        }
+        else {
+            Html_Design = Html_Design + "<li class='likes-box'>" +
+	                                       "<div class='comment-reply-user-name' style='width:212px !important;border-radius:3% !important'>"+
+	                                       "<h4>No Likes!!</h4>"+
+	                                       "</div>"+
+	                                       "</li>";
+            $("#Likeshitlist").empty().append(Html_Design);
+        }
+    });
+}
+
+//to like any Document
+function TriggerLikes() {
+    var Query = "?$filter=((Author/EMail eq ('" + _spPageContextInfo.userEmail + "') and DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "') and (Like eq 'Yes' or Like eq 'No'))&$select=*,Author/Title,Author/EMail,Replyfor/Title,Replier/Title,AttachmentFiles&$expand=Author,Replyfor,Replier,AttachmentFiles";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (QueryResult) {
+        var listName = "DocumentComments";
+        if (QueryResult.length > 0) {
+            if (QueryResult[0].Like == "No") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Like': 'Yes', 'LikeById': parseInt(_spPageContextInfo.userId) };
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+            else if (QueryResult[0].Like == "Yes") {
+                var item = { '__metadata': { type: 'SP.Data.' + listName + 'ListItem' }, 'Like': 'No', 'LikeById': parseInt(_spPageContextInfo.userId) };
+                var Res = DocCommentUpdate(listName, item, QueryResult[0].ID);
+            }
+
+            var Query = "?$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and Like eq 'Yes' &$select=LikeBy/Title,LikeBy/EMail,LikeBy/ID&$expand=LikeBy";
+            $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (TotalLike) {
+                if (TotalLike.length > 0) {
+                    $("#TotalLikes").text(TotalLike.length);
+                    $("#Likeshitlist").empty();
+                    var Html_Design = "";
+                    for (var i = 0; i < TotalLike.length; i++) {
+                        attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(TotalLike[i].LikeBy.EMail);
+                        Html_Design = Html_Design + "<li class='likes-box'>" +
+                                                "<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='" + attachment + "'></div>" +
+                                                "<div class='like-user-name'>" +
+                                                "<h4>" + TotalLike[i].LikeBy.Title + "</h4>" +
+                                                "</div>" +
+                                                "</li>";
+                    }
+                    $("#Likeshitlist").append(Html_Design);
+                }
+                else {
+                    $("#TotalLikes").text("0");
+                    $("#Likeshitlist").empty();
+                }
+            });
+        }
+        if ($(".like-img").attr("src") == "../SiteAssets/Biography/Experience/assets/images/like-icon.png" || $(".like-img").attr("src").includes('like-icon.png') == true) {
+            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
+        }
+        else {
+            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon.png");
+        }
+        if ($("#likes").hasClass("active") == true) {
+            $('#TotalLikes').trigger('click');
+        }
+    });
+}
+
+//Open Comment Reply mode
+function ActiveReplyCtrl(ControlId) {
+    FileCommentType = "Reply";
+    var Query = "?$select=*&$filter=ID eq '" + ControlId + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $("#ReplyforMsg").html(Items[0].Comments);
+            $("#ReplyforMsg").attr('value', Items[0].Comments);
+
+            if (Items[0].Initials == "Reply") {
+                $("#replyforuser").text(Items[0].ReplyTo);
+            }
+            else {
+                $("#replyforuser").text($("#Username" + ControlId).text());
+            }
+        }
+    });
+    $("#replyTextarea").show();
+}
+
+//Close Comment Reply mode
+function DeActiveReplyControl() {
+    FileCommentType= "Parent";
+    $("#replyTextarea").hide();
+    $(".emojionearea-editor").empty();
+    $("#NewAttachmentFiles").empty();
+}
+
+//get all the users who likes the comment
+function GetAllLikesComment(RecId) {
+    var Query = "?$select=*,Author/EMail,Author/Title,Author/Id&$expand=Author&$filter= DocumentId eq '" + DocumentId + "' and FileName eq '" + encodeURIComponent($("#FileName").text()) + "' and LikeComment eq 'Yes' and LikeCommentID eq '" + RecId + "'";
+    $.when(getItemsWithQuery("DocumentComments", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (Items) {
+        if (Items.length > 0) {
+            $("#CommentLikeList").empty();
+            var Html_Design = "";
+            for (var i = 0; i < Items.length; i++) {
+                attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Items[i].Author.EMail);
+                Html_Design = Html_Design + "<li class='likes-box'>" +
+                                    "<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='" + attachment + "'></div>" +
+                                    "<div class='like-user-name'>" +
+                                    "<h4>" + Items[i].Author.Title + "</h4>" +
+                                    "</div>" +
+                                    "</li>";
+            }
+            $("#CommentLikeList").append(Html_Design);
+        }
+        else {
+            $("#CommentLikeList").empty();
+        }
+        $("#showInnerLikes").removeClass("show-inner-likes-box-hide");
+    });
+}
+
+//update Document comments list metadata
+function DocCommentUpdate(listName, item, dataid) {
+    var Responce = "";
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + listName + "')/items('" + dataid + "')",
+        type: "POST",
+        async: false,
+        data: JSON.stringify(item),
+        headers:
+        {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE"
+        },
+        success: function (data) {
+            console.log("Done");
+            Responce = data;
+
+        },
+        error: function (data) {
+            Responce = data;
+            console.log(data);
+            alert("An error occurred. Please contact your system administrator / Refresh a WebPage !");
+        }
+    });
+    return Responce;
+}
+/*Chatting methods ends ----------------------*/
+
