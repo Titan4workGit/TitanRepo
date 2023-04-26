@@ -662,7 +662,7 @@ function BindAppInbox(ApprovalResults) {
                 StatusHTML = '';
                 //color decide as per Status
                 if (ApprovalResults[i].Status == "Approved" || ApprovalResults[i].Status == ApprovalResults[i].LastAction + ": Done") {
-                    StatusHTML += '<div class="approveSign"><span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">';
+                    StatusHTML += '<div class="approveSign"><span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">';
                     if (ApprovalResults[i].Status.indexOf(": Done") != -1) {
                         StatusHTML += '<span>' + ApprovalResults[i].Status + '</span></div>';
                     }
@@ -671,15 +671,15 @@ function BindAppInbox(ApprovalResults) {
                     }
                 }
                 else if (ApprovalResults[i].Status == "Reject" || ApprovalResults[i].Status == "Cancelled") {
-                    StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"><span class="rejectDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
+                    StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"><span class="rejectDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
                 }
                 else {
-                    StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
+                    StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
                 }
             }
             else {
                 ApprovalResults[i].Status == "Pending";
-                StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
+                StatusHTML = '<span class="iconboxtbl" onclick="OpenSingleAppHistry(' + ApprovalResults[i].DocumentID + ',' + ApprovalResults[i].Id + ');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
             }
 
             if (ApprovalResults[i].LastActionby.Title != '' && ApprovalResults[i].LastActionby.Title != null) {
@@ -701,7 +701,7 @@ function BindAppInbox(ApprovalResults) {
             DueDate = ApprovalResults[i].DueDate ? ApprovalResults[i].DueDate : "";
             var CreatedDate = ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Created));
             ApprovalIn += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + ApprovalResults[i].Id + '" name="' + ApprovalResults[i].FileServerURL + '" id ="ApprIn' + i + '" class="chkAppIn"><label for="ApprIn' + i + '">';
-            ApprovalIn += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            ApprovalIn += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             ApprovalIn += '<td class="text-left"><a href="javascript:void(0);" id="' + ApprovalResults[i].Id + ApprovalResults[i].DocumentID + '" onclick="OpenApproval(' + ApprovalResults[i].Id + ', \'' + ApprovalResults[i].Author.Title + '\', \'' + ApprovalResults[i].Author.EMail + '\', \'' + escape(ApprovalResults[i].Reference) + '\', \'' + ApprovalResults[i].DocumentType + '\', \'' + escape(ApprovalResults[i].Purpose) + '\', \'' + ApprovalResults[i].Priority + '\', \'' + DueDate + '\', \'' + LastActionName + '\', \'' + LastActionEmail + '\', \'' + CreatedDate + '\', \'' + ApprovalResults[i].DocumentID + '\', \'' + ApprovalResults[i].Modified + '\', \'' + escape(ApprovalResults[i].LibraryLink) + '\', \'' + ApprovalResults[i].FileServerURL + '\', \'' + ApprovalResults[i].Status + '\', \'' + ApprovalResults[i].OriginDMS + '\', \'' + ApprovalResults[i].LibraryLink + '\', \'' + ApprovalResults[i].SigningApp + '\', \'' + ApprovalInOut + '\', \'' + escape(ApprovalResults[i].FileName) + '\', \'' + ApprovalResults[i].ApprovedVersion + '\');">';
             ApprovalIn += '<span class="ml-4 dms-table-ellipsis-2">' + ApprovalResults[i].FileName + '</span></a></td>';
             ApprovalIn += '<td class="text-left"><div class="dms-table-ellipsis-2">' + (ApprovalResults[i].ApprovalFileTitle ? ApprovalResults[i].ApprovalFileTitle : "") + '</div></td>';
@@ -843,7 +843,7 @@ function BindAppOutBox(ApprovalResults) {
                 StatusHTML = '';
                 //color decide as per Status
                 if (ApprovalResults[i].Status == "Approved" || ApprovalResults[i].Status == ApprovalResults[i].LastAction + ": Done") {
-                    StatusHTML += '<div class="approveSign"><span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">';
+                    StatusHTML += '<div class="approveSign"><span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">';
                     if (ApprovalResults[i].Status.indexOf(": Done") != -1) {
                         StatusHTML += '<span>' + ApprovalResults[i].Status + '</span>';
                     }
@@ -852,10 +852,10 @@ function BindAppOutBox(ApprovalResults) {
                     }
                 }
                 else if (ApprovalResults[i].Status == "Reject" || ApprovalResults[i].Status == "Cancelled") {
-                    StatusHTML = '<span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"><span class="rejectDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
+                    StatusHTML = '<span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"><span class="rejectDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
                 }
                 else {
-                    StatusHTML = '<span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
+                    StatusHTML = '<span class="iconboxtbl" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + ApprovalResults[i].DocumentID + ', \'' + ApprovalResults[i].FileName + '\');"><img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"><span class="RequestDate">' + ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Modified)) + '</span></span>'
                 }
 
                 if (ApprovalResults[i].LastActionby.Title != '' && ApprovalResults[i].LastActionby.Title != null) {
@@ -881,7 +881,7 @@ function BindAppOutBox(ApprovalResults) {
                 var CreatedDate = ShowCommonStandardDateFormat(new Date(ApprovalResults[i].Created));
                 ApprovalResults[i].OriginSection = ApprovalResults[i].OriginSection ? ApprovalResults[i].OriginSection : '';
                 ApprovalOut += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + ApprovalResults[i].Id + '" name="' + ApprovalResults[i].FileServerURL + '" id ="ApprOut' + i + '" class="chkAppOut"><label for="ApprOut' + i + '">';
-                ApprovalOut += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                ApprovalOut += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 ApprovalOut += '<td class="text-left"><a href="javascript:void(0);" id="' + ApprovalResults[i].Id + ApprovalResults[i].DocumentID + '" onclick="OpenApproval(' + ApprovalResults[i].Id + ', \'' + ApprovalResults[i].Author.Title + '\', \'' + ApprovalResults[i].Author.EMail + '\', \'' + escape(ApprovalResults[i].Reference) + '\', \'' + ApprovalResults[i].DocumentType + '\', \'' + escape(ApprovalResults[i].Purpose) + '\', \'' + ApprovalResults[i].Priority + '\', \'' + DueDate + '\', \'' + LastActionName + '\', \'' + LastActionEmail + '\', \'' + CreatedDate + '\', \'' + ApprovalResults[i].DocumentID + '\', \'' + ApprovalResults[i].Modified + '\', \'' + escape(ApprovalResults[i].LibraryLink) + '\', \'' + ApprovalResults[i].FileServerURL + '\', \'' + ApprovalResults[i].Status + '\', \'' + ApprovalResults[i].OriginDMS + '\', \'' + escape(ApprovalResults[i].LibraryLink) + '\', \'' + ApprovalResults[i].SigningApp + '\', \'' + ApprovalInOut + '\', \'' + escape(ApprovalResults[i].FileName) + '\', \'' + ApprovalResults[i].ApprovedVersion + '\');">';
                 ApprovalOut += '<span class="ml-4 dms-table-ellipsis-2">' + ApprovalResults[i].FileName + '</span></a></td>';
                 ApprovalOut += '<td class="text-left"><div class="dms-table-ellipsis-2">' + (ApprovalResults[i].ApprovalFileTitle ? ApprovalResults[i].ApprovalFileTitle : "") + '</div></td>';
@@ -1196,7 +1196,7 @@ function BindApprovalHistory(ItemId) {
         currentRequestId = valuesArray[0].Id;
         valuesArray[0].Remarks = valuesArray[0].Remarks ? valuesArray[0].Remarks : '';
         attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(valuesArray[0].Author.EMail);
-        AppHistory += '<li><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-1.png" alt=""></span>';
+        AppHistory += '<li><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-1.png" alt=""></span>';
         AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">Approval Initiation</h3><h3 class="SignType">Signing Type: ' + valuesArray[0].SigningApp + '</h3><span class="date-sec">' + moment(valuesArray[0].Created).format('DD-MMM-YYYY hh:mm A') + '</span><p class="StanderedTimeZone"> ' + (valuesArray[0].ActionByTimeZone ? valuesArray[0].ActionByTimeZone : "") + '</p></div>';
         AppHistory += '<p class="waitsec initialize">Initiated</p><div class="row"><div class="col-sm-6 flexitem"><div class="imgsetion">';
         AppHistory += '<img src="' + attachment + '" alt=""></div><div class="imagecontent">';
@@ -1211,9 +1211,9 @@ function BindApprovalHistory(ItemId) {
         arrayCopy = valuesArray.filter(function (f) { return f; });
         for (var step = 0; step < valuesArray.length; step++) {
             if (valuesArray[step].Status == "Started") {
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle" type="button" style="display:' + Visibility + '" data-toggle="dropdown">';
-                AppHistory += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li style="display:none;"><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\', \'' + valuesArray[step].StepName + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -1246,9 +1246,9 @@ function BindApprovalHistory(ItemId) {
             }
             else if (valuesArray[step].Status == "Pending") {
                 arrayCopy = valuesArray.filter(function (f) { return f; });
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle"  style="display:' + Visibility + '" type="button" data-toggle="dropdown">';
-                AppHistory += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li style="display:none;"><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\', \'' + valuesArray[step].StepName + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -1281,9 +1281,9 @@ function BindApprovalHistory(ItemId) {
 
             else if (valuesArray[step].Status == "Not Started") {
                 arrayCopy = valuesArray.filter(function (f) { return f; });
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle"  style="display:' + Visibility + '" type="button" data-toggle="dropdown">';
-                AppHistory += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\', \'' + valuesArray[step].StepName + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -1301,7 +1301,7 @@ function BindApprovalHistory(ItemId) {
                     }
                 }
                 else if (valuesArray[step].AskApprover == true) {
-                    attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";;
+                    attachment = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";;
                     AppHistory += '<div class="col-sm-6 flexitem">';
                     AppHistory += '<div class="imgsetion"><img src="' + attachment + '" alt=""></div>';
                     AppHistory += '<div class="imagecontent"><h4>Will be decide by ' + valuesArray[step].ApproverDecidingStep + ' Approvers.</h4>';
@@ -1355,7 +1355,7 @@ function BindApprovalHistory(ItemId) {
                         }
                     }
                 }
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt=""></span>';
                 AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">' + valuesArray[step].StepName + '</h3><span class="date-sec">' + moment(valuesArray[step].Modified).format('DD-MMM-YYYY hh:mm A') + '<p> ' + (valuesArray[step].ActionByTimeZone ? valuesArray[step].ActionByTimeZone : "") + '</p></span>';
                 AppHistory += '</div><div class="ForwardLinkBox"><p class="waitsec completed" style="color:#4e9a06">Approved by e-Signed</p>';
                 if (valuesArray[step].Forwarded == true) {
@@ -1400,7 +1400,7 @@ function BindApprovalHistory(ItemId) {
                         }
                     }
                 }
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt=""></span>';
                 AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">' + valuesArray[step].StepName + '</h3><span class="date-sec">' + moment(valuesArray[step].Modified).format('DD-MMM-YYYY hh:mm A') + '<p> ' + (valuesArray[step].ActionByTimeZone ? valuesArray[step].ActionByTimeZone : "") + '</p></span>';
                 AppHistory += '</div><div class="ForwardLinkBox"><p class="waitsec completed" style="color:red">' + StatusHTML + ' by e-Signed</p>'
                 if (valuesArray[step].Forwarded == true) {
@@ -3967,10 +3967,10 @@ function ShowAllAppHistory(FileName) {
                 AppHis += '<td style="text-align:center">' + valuesArray[step].SigningApp + '</td>';
                 AppHis += '<td><div class="bothboxs"><a href="javascript:void(0);">';
                 if (valuesArray[step].Status == "Pending" || valuesArray[step].Status == "Not Started") {
-                    AppHis += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
+                    AppHis += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
                 }
                 else if (valuesArray[step].Status == "Approved") {
-                    AppHis += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
+                    AppHis += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
                     if (valuesArray[step].AttachmentFiles.results.length > 0) {
                         for (var k = 0; k < valuesArray[step].AttachmentFiles.results.length; k++) {
                             Filename = valuesArray[step].AttachmentFiles.results[k].FileName;
@@ -3982,7 +3982,7 @@ function ShowAllAppHistory(FileName) {
                     }
                 }
                 else {//Rejected
-                    AppHis += '<img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
+                    AppHis += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" onclick="BindApprovalHistory(' + valuesArray[step].Id + ');" alt="" style="width: 20px; height: 20px;"></a>';
                 }
                 AppHis += '</div></td></tr>';
             }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 
 <head>
@@ -34,20 +34,26 @@
     <script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
     <script type="text/javascript" src="_layouts/15/autofill.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/dom-to-image.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/css/emojionearea.min.css" />
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/js/emojionearea.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortalCommonMethods.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortalProjectDocs.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortat3Employee.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/MyDMS.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/Approval-IN_Out.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortalSharedDocs.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortalGroupDocs.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/AdvanceSearch.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MasterPageScripts/userActivityNotificationEntry.js"></script>
+    
 	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyTask/assets/xlsx.core.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyTask/assets/tableExport.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/Plugins/jquery.fileDownload.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/ZipFileWithfolder.js"></script>
 
-<style>
+<style type="text/css">
 
 /***yehtana hai****/
 #suiteBarTop{
@@ -55,7 +61,18 @@
 }
 
 /***yehtana hai****/
+#txtAcknoldge{
+	
+	cursor:pointer;
+}
+#txtPendingCount{
+	
+	cursor:pointer;
+}
 
+#txtUpdateValidity{
+	background-color: white!important; 
+}
 
 #SearchResultsGrid{
  min-width:1000px !important;   
@@ -193,6 +210,111 @@
     display:block !important;
 }
 
+.searchproject{
+ border:1px solid #ccc;
+}
+
+.searchproject:focus{
+ outline:none !important;
+ border:1px solid #ccc;
+}
+
+
+.flexingright{
+ justify-content:flex-end;
+-webkit-box-pack:flex-end;
+-webkit-justify-content:flex-end;
+-ms-flex-pack:flex-end;
+justify-content:flex-end;
+
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;	
+
+}
+
+.fa-angle-down.fsizeing{
+
+loat: right;
+position: relative;
+top: 2px;
+font-size: 16px;
+left: 5px;
+
+}
+
+
+/*****file detail popup toggle*****/
+
+.width_managebtn .fa-angle-left,
+.width_managebtn{
+  display: none;
+} 
+
+@media(min-width:1100px){
+
+.posi_relative{
+  position: relative;
+
+}
+
+.widths_ajdusting>.col-md-8,
+.widths_ajdusting>.col-md-4{
+  transition: 0.3s;
+}
+
+.widths_ajdusting.active>.col-md-8{
+  width: 87.33333333%;
+}
+
+.widths_ajdusting.active>.col-md-4{
+  width: 12.66666667%;
+}
+
+.widths_ajdusting.active>.col-md-4 .panel-default.active .collapse.in {
+    display: none;
+}
+
+.width_managebtn, .width_managebtn:active, .width_managebtn:focus {
+    display: block;
+    position: absolute;
+    right: -10px;
+    border-radius: 0 30px 30px 0 !important;
+    color: #fff;
+    font-size: 30px !important;
+    padding: 0;
+    line-height:0;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border: none;
+    min-width: auto;
+    /* height: 30px; */
+    width: 25px;
+    color: #666;
+    background:transparent !important;
+}
+
+.widths_ajdusting.active .width_managebtn .fa-angle-left {
+    display: block;
+    position: relative;
+    right: 4px;
+}
+
+.widths_ajdusting.active .width_managebtn .fa-angle-right{
+ display:none;
+
+}
+
+
+}
+
+/*****file detail popup toggle ed*****/
+
 
 @media(max-width:1008px){
 
@@ -216,13 +338,6 @@
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4345</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">3213bfa1-f22b-4805-94e4-4454752b02fe</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4345, ADMIN-1645029823-4345</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Bhawana Singh</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">434500.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -264,7 +379,7 @@
                                                                         Profile
                                                                     </a>
                                                                 </li>
-                                                                <li id="dark-light-side-opt">
+                                                                <li id="dark-light-side-opt" style="display:none;">
                                                                     <a href="#">
                                                                         <!-- <span class="material-icons">light_mode</span> -->
                                                                         <input type="checkbox" id="dark-theme-btn" onchange="ApplyDarkThemes();">
@@ -301,7 +416,7 @@
                                                     <a class="dms-left-panel-tab" data-toggle="pill" href="#myDocument_tab">
                                                         <div class="d-flex align-items-center side-bar-icon-center">
                                                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Mydms-ico.png" alt="My Documents">
-                                                            <span class="mobile-hide-tabs-name mt3 ml10" data-localize="My Documents">My Documents</span>
+                                                            <span class="mobile-hide-tabs-name mt3 ml10" data-localize="My Documents">Common Documents</span>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -326,14 +441,15 @@
                                                                         <a data-toggle="pill" href="#myDocument_tab" class="dms-left-panel-tab-inner">
                                                                             <div class="d-flex align-items-center" id="tabSharedToMe">
                                                                                 <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared-in-ico.png"
-                                                                                     alt="shared in ico">
-                                                                                <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Shared with Me">Shared with Me</span>
+                                                                                     alt="shared in ico" class="sharewithme_od">
+                                                                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/assets/images/markitting.png" alt="share" class="sharewithme">     
+                                                                                <span class="mobile-hide-tabs-name mt3 ml10 guestTemplateNAV" data-localize="Shared with Me" class="shrwthme">Shared with Me</span>
                                                                             </div>
                                                                         </a>
                                                                     </h4>
                                                                 </div>
                                                             </div>
-                                                            <div class="panel panel-default inner-collapse-panel">
+                                                            <div class="panel panel-default inner-collapse-panel" id="divArchive">
                                                                 <div class="panel-heading">
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="pill" href="#myDocument_tab" class="dms-left-panel-tab-inner">
@@ -345,14 +461,15 @@
                                                                     </h4>
                                                                 </div>
                                                             </div>
-                                                            <div class="panel panel-default">
+                                                            <div class="panel panel-default" style="display:none;">
                                                                 <div class="panel-heading">
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="pill" href="#myDocument_tab" class="dms-left-panel-tab-inner">
                                                                             <div class="d-flex align-items-center" id="tabSharedByMe">
                                                                                 <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared-out-ico.png"
-                                                                                     alt="shared out ico">
-                                                                                <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Shared by Me">Shared by Me</span>
+                                                                                     alt="shared out ico" class="sharewithme_od">
+                                                                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/share-ico.png" alt="share" class="sharewithme">      
+                                                                                <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Shared by Me" class="shrbyme">Shared by Me</span>
                                                                             </div>
                                                                         </a>
                                                                     </h4>
@@ -405,6 +522,109 @@
                                                     </div>
                                                 </div>
                                             </li>
+                                            
+                                            <!-- Project Documents START---->
+                                            <li class="panel HideProjectSection" id="liProjectDocs" style="display:none;">
+                                            <div data-toggle="collapse" data-target="#projectDoc" id="toggleProjBox" data-parent="#accordion" onclick="BindProjects()">
+                                                <a class="dms-left-panel-tab" data-toggle="pill" href="#projectDocuments_tab" per="Project Documents">
+                                                    <div class="d-flex align-items-center side-bar-icon-center">
+                                                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents" />
+                                                        <span class="mobile-hide-tabs-name mt3 ml10 guestTemplateNAV" data-localize="Guest Project Documents">Project Documents</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div data-toggle="collapse" data-target="#projectDoc" data-parent="#accordion" class="section-overlay"></div>
+                                            <div id="projectDoc" class="collapse inner-collapse-panel-mobile">
+                                                <div class=" inner-collapse-panel">
+                                                   <input type="search" class="searchproject" style="width: 90%; min-height: 32px; margin: 2px 5px 1px 5px; border-radius: 3px; display:block;" placeholder="Searching List.." id="serachingse">
+                                                    <div class="panel-group" id="accordioninner4">
+                                                        <!--<div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#projectDocuments_tab" data-toggle="pill" class="dms-left-panel-tab-inner">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents" />
+                                                                            <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Project Documents1">Project Documents1</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#projectDocuments_tab" data-toggle="pill" class="dms-left-panel-tab-inner">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents" />
+                                                                            <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Project Documents2">Project Documents2</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Project Documents END---->
+                                           <!-- Group Documents START---->
+                                          <li class="panel" id="GpDocuments" style="display:none;">
+                                            <div data-toggle="collapse" id="toggleGpBox" data-target="#groupDoc" data-parent="#accordion">
+                                                <a class="dms-left-panel-tab" data-toggle="pill" onclick="MyDocumentEnv()" href="#groupDocuments_tab" per="Group Documents">
+                                                    <div class="d-flex align-items-center side-bar-icon-center">
+                                                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/group-ico.png" alt="Departmental Documents" />
+                                                        <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Group Documents">Group Documents</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div data-toggle="collapse" data-target="#groupDoc" data-parent="#accordion" class="section-overlay"></div>
+
+                                            <div id="groupDoc" class="collapse inner-collapse-panel-mobile">
+                                                <div class=" inner-collapse-panel">
+                                                  <input type="search" class="searchproject" style="width: 95%; min-height: 32px; margin: 2px 5px 1px 5px; border-radius: 3px; display:block;" placeholder="Searching List.." id="group_documentslist">
+                                                    <div class="panel-group" id="accordioninner3">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#groupDocuments_tab" data-toggle="pill" class="dms-left-panel-tab-inner">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/group-ico.png" alt="Group Documents" />
+                                                                            <span class="mobile-hide-tabs-name mt3 ml10">My Group1</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#groupDocuments_tab" data-toggle="pill" class="dms-left-panel-tab-inner">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/group-ico.png" alt="Group Documents" />
+                                                                            <span class="mobile-hide-tabs-name mt3 ml10">My Group2</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <!--<div class="panel panel-default" id="AddNewLibBox">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#" data-toggle="modal" data-target="#add-new-group-dms" class="dms-left-panel-tab-inner">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/add-group.png" alt="add group" />
+                                                                            <span class="mobile-hide-tabs-name mt3 ml10" data-localize="Add New Library">Add New Library</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                           <!-- Group Documents END---->
+                                            
                                             
                                             <li class="panel" id="advanceserach">
                                                 <div data-toggle="collapse" data-target="#advansec" data-parent="#accordion">
@@ -460,14 +680,14 @@
 
                                                         <div class="col-md-3">
                                                             <div class="form-group custom-form-group search-box" style="max-width:220px !important; margin-left:auto;">
-                                                                <input type="text" id="CustomSearchMyDoc" class="form-control" placeholder="Type to find..">
+                                                                <input type="text" id="CustomSearchMyDoc" class="form-control" placeholder="Type to find.." onkeypress="if(event.keyCode==13){return false;};">
                                                             </div>
                                                         </div>
                                                         
 
                                                     </div><!--row ed-->
 
-                                                    <div class="row paddinmanag HeaderArea" id="ButtonArea" style="margin:3px 0 0">
+                                                    <div class="row paddinmanag HeaderArea" id="ButtonArea" style="margin:3px 0 0;display:none;">
 
                                                         <div class="col-md-12">
 
@@ -552,7 +772,7 @@
                                                                         <span data-localize="Properties">Properties</span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown dms-table-btn" id="divShare">
+                                                                <div class="dropdown dms-table-btn" id="divShare" style="display:none;">
                                                                     <button class="btn dropdown-toggle" type="button" data-toggle="modal"
                                                                             data-target="#sharingfile">
                                                                         <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/share.png" alt="share">
@@ -660,21 +880,34 @@
                                                                     
                                                                       </div><!---row ed-->
                                                                       
-                                                                      <div class="row flexingbox">
+                                                                      <div class="row">
                                                                       
-                                                                          <div class="text-center">
-                                                                          
-                                                                            <label class="checkbox-inline">
-                                                                              <input type="checkbox" name="searchopt" checked="checked" id="chkMyLibrary" style="position:relative; top:-2.5px;"> My Document
-                                                                            </label>
-                                                                            
-                                                                            <label class="checkbox-inline">
-                                                                              <input type="checkbox" name="searchopt" id="chkSharedLibrary" style="position:relative; top:-2.5px;"> Shared Document
-                                                                            </label>
-                                                                            
-                                                                         </div>
-                                                                         
-                                                                         <div class="search-deta-btn-panel d-flex btnmang_background">
+                                                                      	 <div class="col-md-6">
+                                                                      		<div class="form-group custom-form-group d-flexing">
+	                                                                      			<span class="combineflxbxsec">
+	                                                                      			  <label>Library</label>
+	                                                                      			</span>
+	                                                                      			<div class="projectesmbox dropdown" style="width:100%;">
+																					  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="border:1px solid #aeaeae; border-radius:0 !important;"><span class="slectbox txtselect">---Select---</span> <span class="fa fa-angle-down fsizeing" style="float:right;"></span></button>
+																					  <div class="dropdown-menu">
+																					    <li>
+																					     <input type="checkbox" style="width:15px; height:15px;"> 
+																					     Select All
+																					    </li>
+																					     <li>
+																					     <input type="checkbox" name="searchopt" id="chkMyLibrary"> 
+																					     My Document
+																					    </li>
+																					    <li>
+																					     <input type="checkbox" name="searchopt" id="chkSharedLibrary"> 
+																					     Share Document 
+																					    </li>
+																					  </div>
+																					</div>
+	                                                                      		</div>
+                                                                      		</div>
+                                                                      
+                                                                         <div class="search-deta-btn-panel d-flex btnmang_background col-md-6 flexingright">
                                                                          
                                                                             <button type="button" class="btn dropdown-toggle" id="btnSearch" value=""><i class="fa fa-search"></i> Search </button>
                                                                             
@@ -970,7 +1203,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close-round" onclick="Closepopup()" data-dismiss="modal"><span class="close-icon">&times;</span></button>
-                    <h4 class="modal-title">File Details</h4>
+                    <h4 class="modal-title" data-localize="File Details">File Details</h4>
                 </div>
                 <div class="modal-body">
                     <div class="detail-view-deta-btn-panel d-flex">
@@ -1013,7 +1246,7 @@
                             </button>
                         </div>
 
-                        <div class="dropdown detail-view-table-btn btnNotSharedTab" id="btnPopupShare">
+                        <div class="dropdown detail-view-table-btn btnNotSharedTab" id="btnPopupShare" style="display:none;">
                             <button class="btn dropdown-toggle LockDisable" type="button" data-toggle="modal" data-target="#sharingfile" id="btnShareFile">
                                 <i class="fa fa-share-square-o"></i>
                                 <span data-localize="Share">Share</span>
@@ -1025,6 +1258,13 @@
                                 <span data-localize="Notify">Notify</span>
                             </button>
                         </div>
+                        <div class="dropdown detail-view-table-btn" id="btnPopupComment">
+	                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#chat_sec">
+	                           <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" alt="comment" />
+	                            <span data-localize="comment">Comment</span>
+	                        </button>
+                    	</div>
+
 
                         <div class="dropdown detail-view-table-btn rightdrag flxajustmt" style="display:none;">
 
@@ -1040,8 +1280,12 @@
                         </div>
                     </div><!--ed of section-->
 
-                    <div class="row">
-                        <div class="col-md-8 col-xs-12 pad_adust_right">
+                    <div class="row widths_ajdusting">
+                        <div class="col-md-8 col-xs-12 pad_adust_right posi_relative">
+                            <button type="button" class="btn btn-default width_managebtn">
+		                      <i class="fa fa-angle-right"></i>
+		                      <i class="fa fa-angle-left"></i>
+		                    </button>
                             <div class="preview-box scrollbar-panel">
                                 <div style="min-height: calc(100vh - 163px) !important; padding: 10px;" id="File-viewer">
                                     <!--img src="assets/images/file-img.png" style="width:100%;"-->
@@ -1050,7 +1294,7 @@
                         </div>
                         <div class="col-md-4 col-xs-12 pad_adust_left">
                             <div class="panel-group mb0" id="accordionsec">
-                                <div class="panel custom-panel panel-default">
+                                <div class="panel custom-panel panel-default active" id="divFileViewerProperties">
                                     <div class="panel-heading detail-panel-link">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordionsec" href="#properties2" aria-expanded="true">
@@ -1085,6 +1329,10 @@
                                                 <li>
                                                     <div class="labelflexing"><label class="detail-label" data-localize="Details">Details</label><label>:</label></div>
                                                     <div class="detail-title ellipsis-2" id="FileDetalis"></div>
+                                                </li>
+                                                <li id="liSahringMsg" style="display:none;">
+                                                    <div class="labelflexing"><label class="detail-label" data-localize="Sahring Msg">Message</label><label>:</label></div>
+                                                    <div class="detail-title ellipsis-2" id="lblSharingMsg"></div>
                                                 </li>
                                             </ul>
                                             <div class="change-properties-pannel btnNotSharedTab" id="btnPopupChangeprop">
@@ -1137,7 +1385,7 @@
                                 </div>
                                 <!--For Sharing docs only ends--->
                                 <!--For other-sections only starts--->
-                                <div class="panel custom-panel panel-default otherSectAct">
+                                <div class="panel custom-panel panel-default otherSectAct" >
                                     <div class="panel-heading detail-panel-link">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordionsec" href="#activities2" aria-expanded="false">
@@ -1149,7 +1397,7 @@
                                     <div id="activities2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="detail-vide-panel scrollbar-panel">
-                                                <li>
+                                                <li style="display:none;">
                                                     <div class="detail-vide-panel-align">
                                                         <div>
                                                             <div class="labelflexing"><label class="detail-label" data-localize="Sharing">Sharing</label><label>:</label></div>
@@ -1193,7 +1441,7 @@
                                 <!--For other-sections only ends--->
 
 
-                                <div class="panel custom-panel panel-default">
+                                <div class="panel custom-panel panel-default" id="divFileViewerFileDetails">
                                     <div class="panel-heading detail-panel-link">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordionsec" href="#file-properties2" aria-expanded="false">
@@ -1275,8 +1523,8 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close close-round" data-dismiss="modal">
-                    <span class="close-icon">×</span>
+                <button type="button" id="btnCloseChatBox"class="close close-round" data-dismiss="modal" id="btnCloseChatBox">
+                    <span class="close-icon">&times;</span>
                 </button>
                 <h4 class="modal-title">Write a Message</h4>
             </div>
@@ -1430,7 +1678,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
                 <h4 class="modal-title">Approvals</h4>
             </div>
             <div class="modal-body">
@@ -2255,7 +2503,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close close-round closeAddEditModal" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <button type="button" class="close close-round closeAddEditModal" data-dismiss="modal"><span class="close-icon">&times;</span></button>
                     <h4 class="modal-title" id="SuccessorStepHeader">Add Step</h4>
                 </div>
 
@@ -2786,7 +3034,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
                     <h4 class="modal-title">Notification to Approvers</h4>
                 </div>
                 <div class="modal-body">
@@ -3076,7 +3324,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close close-round btnClosePopup" data-dismiss="modal">
-                    <span class="close-icon">×</span>
+                    <span class="close-icon">&times;</span>
                 </button>
                 <h4 class="modal-title">Sharing Folders and Files</h4>
             </div>
@@ -3187,7 +3435,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <a class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></a>
+                        <a class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></a>
                         <h4 class="modal-title">My Profile</h4>
                     </div>
                     <div class="modal-body">
@@ -3396,6 +3644,26 @@
 
         })
     })
+
+</script>
+
+
+<!-----detail column width manage by this code------>
+<script>
+
+  
+$(document).ready(function(){
+
+  $('.width_managebtn').click(function(){
+   $('.widths_ajdusting').toggleClass('active');
+     $('.widths_ajdusting.active .panel-title a').attr('aria-expanded',false);
+  });
+ $('.widths_ajdusting .panel-title').click(function(){
+
+    $('.widths_ajdusting').removeClass('active');
+  });
+
+});  
 
 </script>
 

@@ -480,10 +480,10 @@ function SharedWithMeItems(items) {
             }
              //14 April 23
             if (items[i].CommentCount != null && items[i].CommentCount != "null" && items[i].CommentCount != 0 && items[i].CommentCount != "0") {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
             }
             else {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
             }
         }
         else {
@@ -518,7 +518,7 @@ function SharedWithMeItems(items) {
         if ($("#ddlAckFilter").val() == "Acknowledged") {
             if (AckValue.indexOf("Acknowledged") !== -1) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
@@ -529,7 +529,7 @@ function SharedWithMeItems(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
                // sharedWithMeTR += '</div></td></tr>';
                sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
                sharedWithMeTR += '</tr>';
@@ -538,7 +538,7 @@ function SharedWithMeItems(items) {
         else if ($("#ddlAckFilter").val() == "Pending") {
             if (AckValue.search(/\bAcknowledge\b/) >= 0) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
@@ -549,7 +549,7 @@ function SharedWithMeItems(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+               // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
                 //sharedWithMeTR += '</div></td></tr>';
                 sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
                 sharedWithMeTR += '</tr>';
@@ -558,7 +558,7 @@ function SharedWithMeItems(items) {
 
         else {
             sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
             items[i].SharedFileTitle = items[i].SharedFileTitle ? items[i].SharedFileTitle : "";
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].SharedFileTitle + '</div></td>';
@@ -569,7 +569,7 @@ function SharedWithMeItems(items) {
 
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
             sharedWithMeTR += '' + AckValue + '</div></td>';
-           // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+           // sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
            // sharedWithMeTR += '</div></td></tr>';
            sharedWithMeTR += '<td>' + ChatBoxHTML + '</td>';//14 April 23
             sharedWithMeTR += '</tr>';
@@ -727,10 +727,10 @@ function SharedByMeItems(array) {
 
                  //14 April 23
                if (items[0].CommentCount != null && items[0].CommentCount != "null" && items[0].CommentCount != 0 && items[0].CommentCount != "0") {
-                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
                 }
                 else {
-                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
                 }
             }
             else {
@@ -767,21 +767,21 @@ function SharedByMeItems(array) {
                     return (obj.PermissionStatus != "Revoked" && obj.PermissionStatus != "Deleted");
                 });
                 if (IsEveryone.length > 0 && IsEveryone.length == temparray.length) {
-                    ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                    ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
                 }
                 else {
                     if (IsEveryone.length > 0 && IsEveryone.length != items.length) {
-                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')"><img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[0].Id + '\')">';
+                        ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[0].Id + '\')">';
                     }
                     else {
-                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                        ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
                     }
                 }
             }
             else {
-                ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
             }
-            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
             items[0].SharedFileTitle = items[0].SharedFileTitle ? items[0].SharedFileTitle : "";
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[0].SharedFileTitle + '</div></td>';
@@ -789,7 +789,7 @@ function SharedByMeItems(array) {
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
             //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
             if (PermissionStatus == "All revoked") {
-                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"><img src="../SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;"></div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;"></div></td>';
             }
             else {
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '</div></td>';
@@ -914,7 +914,7 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                         sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
                     }
                     ChkCount++;
-                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                     sharedWithMeTR += '<td class="text-left">' + documentLink + '';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
@@ -967,7 +967,7 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                         sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
                     }
                     ChkCount++;
-                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                     sharedWithMeTR += '<td class="text-left">' + documentLink + '';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
@@ -4249,7 +4249,7 @@ function BindProjects() {
                    // id="'+tempTitle + el.Id.toString() +'" 
                     '<a href="javascript:void(0);" onclick="' + GetLib + '" data-toggle="pill" class="dms-left-panel-tab-inner">' +
                     '<div class="d-flex align-items-center">' +
-                    ' <img src="../SiteAssets/MyDocuments/DMS/assets/images/home_ico.png" alt="Project Documents" >' +
+                    ' <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/home_ico.png" alt="Project Documents" >' +
                     ' <span class="mobile-hide-tabs-name mt3 ml10">' + el + '</span>' +
                     ' </div>' +
                     ' </a>' +
@@ -4291,7 +4291,7 @@ function BindProjects() {
                     '<a href="javascript:void(0);" id="'+tempTitle + el.Id.toString() +'" onclick="' + GetLib + '" data-toggle="pill" class="dms-left-panel-tab-inner">' +
                     
                     '<div class="d-flex align-items-center">' +
-                    ' <img src="../SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents">' +
+                    ' <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/project-ico.png" alt="Project Documents">' +
                     ' <span class="mobile-hide-tabs-name mt3 ml10">' + el.Project.ProjectName + '</span>' +
                     ' </div>' +
                     ' </a>' +

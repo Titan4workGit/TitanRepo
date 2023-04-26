@@ -1572,7 +1572,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
         '<div class="chexbox_mg">' +
         '<input type="checkbox" data-FileServerRelativeUrl="' + FileServerRelativeUrl + '" data-inherit="' + Isinherit + '" class="chkFileFolder" value="' + Type + ', ' + files.ServerRelativeUrl + ', ' + DocumentId + ', ' + SiteURL + ', ' + SelectedLibrary + ', ' + files.Name + ', ' + CopyFileLink + ', ' + FileTitle + ', ' + FileRef + ', ' + FileType + ', ' + DocType + ', ' + SubDocType + '" id="myCheckboxgd' + rowCount + '">' +
         '<label for="myCheckboxgd' + rowCount + '">' +
-        '<img onerror="showDefaultIcon(this);" width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '">' + checkOutHTML +
+        '<img onerror="showDefaultIcon(this);" width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '">' + checkOutHTML +
         '</label>' +
         '</div>' +
         '</td>');
@@ -1653,27 +1653,27 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 if (files.ApprovalStatus == "Approved") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Approved by ' + files.ApprovedBy + '" style="color: rgb(0, 128, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
                         DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if (files.ApprovalStatus == "Reject" || files.ApprovalStatus == "Rejected") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' +
-                        DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
+                        DateHTML + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } 
                 else if (files.ApprovalStatus == "Cancelled") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ApprovedBy + '" style="color: rgb(255, 0, 0);">' +
-                        DateHTML + '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
+                        DateHTML + '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#"></div>' +
                         '</td>');
                 }
                 else if (files.ApprovalStatus == "Pending") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.DocId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else {
@@ -1692,14 +1692,14 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 if (files.ListItemAllFields[ApprovedById] == "Approved") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Approved by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(0, 128, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">' +
                         DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if (files.ListItemAllFields[ApprovedById] == "Reject") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Rejected by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
                         DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
@@ -1707,7 +1707,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 else if (files.ListItemAllFields[ApprovedById] == "Cancelled") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" title="Cancelled by ' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '" style="color: rgb(255, 0, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">' +
                         DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
@@ -1715,7 +1715,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 else {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + DocumentId + ', \'' + files.Name + '\');" style="color: rgb(0, 128, 0);" title="Pending">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#"></div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 }
@@ -1762,29 +1762,29 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
             	//to Open Chat box
             	if(Type != "folder"){
 	            	if (files.CommentCount != null && files.CommentCount != "null" && files.CommentCount != 0 && files.CommentCount != "0") {
-	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
 	            	else {
-	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            		ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + files.DocId + '\', \'' + files.Name + '\', \'' + files.Title + '\', \'' + files.DocumentType + '\', \'' + files.ModifiedBy+ '\', \'' + files.ModifiedEmail + '\', \'' + files.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
             	}
                 if (files.SharedId != null && files.SharedId != "null") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                     if (files.SharedWithUsersId == null && files.AccessLevel == "Everyone") {
                         cell = $('<td class="text-left" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML +ChatBoxHTML +
                             '</td>');
                     } else {
                         if (files.AccessLevel == "Everyone") {
-                            EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                            EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                         }
                         cell = $('<td class="text-left">' +
                             '<div class="dms-table-ellipsis-2 shardHist" onclick="GetSharedHistory(\'' + files.DocId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' +
-                            '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
+                            '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
                             '</td>');
                     }
                 } else {
                     if (files.AccessLevel == "Everyone") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                     }
                     cell = $('<td class="text-left">' + EveryonceHTML +ChatBoxHTML +
                         '</td>');
@@ -1793,36 +1793,36 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
             	//to Open Chat box
             	if(Type != "folder"){
 	            	if (files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
-	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
 	            	else {
-	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
             	}
                 if (files.ListItemAllFields.SharedWithUsersId == null && files.ListItemAllFields.AccessLevel == "Everyone") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';;
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';;
                     cell = $('<td class="text-left" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' + EveryonceHTML +ChatBoxHTML +
                         '</td>');
                 } else {
                     if (files.ListItemAllFields.AccessLevel == "Everyone") {
-                        EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                        EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                     }
                     cell = $('<td class="text-left">' +
                         '<div class="dms-table-ellipsis-2 shardHist" onclick="GetSharedHistory(\'' + DocumentId + '\', \'' + files.ServerRelativeUrl + '\', \'' + FileTitle + '\', \'' + FileRef + '\', \'' + files.Name + '\', \'' + Type + '\', \'' + HistoryAction + '\', \'' + currentSharedItemId + '\')">' +
-                        '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
+                        '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;">' + EveryonceHTML + '</div>' +ChatBoxHTML +
                         '</td>');
                 }
             } else {
             	if(Type != "folder"){
 	            	if (files.ListItemAllFields.CommentCount != null && files.ListItemAllFields.CommentCount != "null" && files.ListItemAllFields.CommentCount != 0 && files.ListItemAllFields.CommentCount != "0") {
-	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
 	            	else {
-	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+	            		 ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + DocumentId  + '\', \'' + files.Name + '\', \'' + files.ListItemAllFields.Title + '\', \'' + files.ListItemAllFields.DocumentType + '\', \'' + files.ListItemAllFields.EditorId+ '\', \'' + files.ListItemAllFields.EditorId + '\', \'' + files.ListItemAllFields.Modified + '\', \'' + SiteURL + '\',this)"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
 	            	}
             	}
                 if (files.ListItemAllFields.AccessLevel == "Everyone") {
-                    EveryonceHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
+                    EveryonceHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;">';
                 }
                 cell = $('<td class="text-left">' + EveryonceHTML +ChatBoxHTML +
                     '</td>');
@@ -1840,20 +1840,20 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
                 if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Approved") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" title="Approved by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(0, 128, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
                         DateHTML + '</div>' +
                         //'<div class="dms-table-ellipsis-2">' + files.ListItemAllFields[ColumnCount[j].ColumnName] + '</div>' +
                         '</td>');
                 } else if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Rejected" || files.ListItemAllFields[ColumnCount[j].ColumnName] == "Reject") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" title="Rejected by ' + files.ListItemAllFields["ApprovedByOutsider"] + '" style="color: rgb(255, 0, 0);">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
                         DateHTML + '</div>' +
                         '</td>');
                 } else if (files.ListItemAllFields[ColumnCount[j].ColumnName] == "Pending") {
                     cell = $('<td class="text-left">' +
                         '<div class="detail-title ellipsis-2" style="color: rgb(0, 128, 0);" title="Pending">' +
-                        '<img style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
+                        '<img style="height:17px;" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt="" data-themekey="#" data-target="#approverssec" data-toggle="modal" onclick="OpenApprovalHistry(' + files.ListItemAllFields.ID + ', \'' + files.Name + '\');">' +
                         DateHTML + '</div>' +
                         '</td>')
                 } else {
@@ -1874,7 +1874,7 @@ function genrateHtmlgrid(Icon, ColumnCount, files, rowCount, Type, MethodAction)
 
 function showDefaultIcon(img)
 {
- img.src='../SiteAssets/MyDocuments/DMS/assets/images/file.png';
+ img.src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/file.png';
 }
 //get MOdified by User Id
 function getModifiedBy(userid) {
@@ -5898,7 +5898,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         }
 
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -5915,7 +5915,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         ValidCount++;
         TypeValue = "outsidesetion";
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -5978,7 +5978,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -5997,7 +5997,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + $("#OutsiderName").val() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">false</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -6014,11 +6014,11 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
 	        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
 	        ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
 	        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
 	        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
 	        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
-	        var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+	        var attachment = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
 	        ApprovalStep += '<div class="col-sm-6 flexitem" id="IniApp'+StepCount +'"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
 	        ApprovalStep += '<h4>Will be decided by Initiator.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div>';
 	        ApprovalStep += '<div class="InitiatorApp"><button type="button" class="btn custom-btn wpx-87" onclick="DisplayInitiatorApp(\'NewStep' + StepCount + '\', \'' + StepCount + '\', \'' + StepName + '\', \'' + EmptyArray + '\')">Add Approver</button></div>';
@@ -6030,11 +6030,11 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
 	        ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
 	        ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	        ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
 	        ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
 	        ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
 	        ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
-	        var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+	        var attachment = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
 	        ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
 	        ApprovalStep += '<h4>Will be decided by ' + OtherStepDetails[0].ApproverDecidingStep + ' Approvers.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div></div>';
 	        ApprovalStep += '</div></li>';
@@ -6099,7 +6099,7 @@ function AddInitiatorApp(HTMLID, StepCount, StepName) {
 	    }
 	    ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + AppEmails.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + AppEIds.toString() + '</span><span id="NameStep' + StepCount + '">' + AppNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
 	    ApprovalStep += '<span id="DecideStep' + StepCount + '"></span><span id="AppRoleStep' + StepCount + '"></span><span id="AppTypeStep' + StepCount + '">Specific</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-	    ApprovalStep += '<div class="dropdown ForCustomizeOnly" style="display:none;"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+	    ApprovalStep += '<div class="dropdown ForCustomizeOnly" style="display:none;"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
 	    ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
 	    ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
 	    ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -7502,7 +7502,7 @@ function PushRootComment() {
         }
         //6 April 23
         if(cmntIcon!=""&&cmntIcon!=undefined&&cmntIcon!=null&&cmntIcon!='undefined'&&cmntIcon!='null')
-        $(cmntIcon).find('img:first').prop('src',"../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png");
+        $(cmntIcon).find('img:first').prop('src',"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png");
     }
     else {
         alert("Please type a message to continue.");
@@ -7760,12 +7760,12 @@ function DesignChatting(FileCommentResponse, Mode) {
             if (_spPageContextInfo.userEmail.toLowerCase() == FileCommentResponse[i].Author.EMail.toLowerCase()) {
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
 	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
-	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span>" +
 	                    								"</div>" +
 	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
 	                      									"<div>" +
 	                        									"<div id='editMenuOpen2' class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
-	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
 	                        									"</div>" +
 	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
 	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
@@ -7785,11 +7785,11 @@ function DesignChatting(FileCommentResponse, Mode) {
                 attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
 
-	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='Username" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='Username" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
 	                    									"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
 	                      										"<div class='mt-4 my-chat-edit-delete-panel-inside' id='CommentText" + FileCommentResponse[i].ID + "'>" + FileCommentResponse[i].Comments + "</div>" +
 	                      											"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
-	                          											"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                          											"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
 	                        										"</div>" +
 	                        										"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
 	                          											"<li><button id='messageEdit' type='button' class='btn LikeCmnt" + FileCommentResponse[i].ID + "' data-toggle='collapse' data-target='#messageReplyBox' aria-expanded='false' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</button></li>" +
@@ -7808,14 +7808,14 @@ function DesignChatting(FileCommentResponse, Mode) {
             if (_spPageContextInfo.userId == FileCommentResponse[i].AuthorId) {
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNo" + FileCommentResponse[i].ID + "'>" +
 	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>" +
-	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")' >" + likesCount + "</span></span>" +
+	                      									"<span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")' >" + likesCount + "</span></span>" +
 	                    								"</div>" +
 	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel others-reply-text-box'>" +
 	                      									"<div class='reply-text-line'>" +
 	                        									"<a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a>" +
 	                        									"<span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
 	                        									"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
-	                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
+	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>" +
 	                        									"</div>" +
 	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
 	                          										"<li><a type='button' onclick='EditComment(" + FileCommentResponse[i].ID + ")'>Edit</a></li>" +
@@ -7839,11 +7839,11 @@ function DesignChatting(FileCommentResponse, Mode) {
             else {
                 attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(FileCommentResponse[i].Author.EMail)
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext'>" +
-		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
+		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='" + attachment + "' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500'>" + FileCommentResponse[i].Author.Title + "</span><span class='pl5 pr5'>-</span><span>" + formatDateComment(FileCommentResponse[i].Created) + "</span> at <span> " + Event_time + "</span><span id='LikeSpan" + FileCommentResponse[i].ID + "' style='display:" + DisplayLikeDiv + "'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCount" + FileCommentResponse[i].ID + "' onclick='GetAllLikesComment(" + FileCommentResponse[i].ID + ")'>" + likesCount + "</span></span> </div>" +
 		                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>" +
 		                      									"<div class='reply-text-line'><a href='#' class='comment-reply-user-name-info'>@<span >" + FileCommentResponse[i].ReplyTo + "</span> :</a><span class='replymsg'>" + FileCommentResponse[i].ReplyAgainst + "</span>" +
 		                      										"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>" +
-		                          										"<img src='../SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>" +
+		                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>" +
 		                        									"</div>" +
 		                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>" +
 		                          										"<li><a type='button' class='LikeCmnt" + FileCommentResponse[i].ID + "' onclick='Pushlikeforcomment(" + FileCommentResponse[i].ID + ")'>" + CommentLikeValue + "</a></li>" +
@@ -7892,20 +7892,20 @@ function DesignChatting(FileCommentResponse, Mode) {
         $("#Attachmentlist" + RecId).empty();
         for (var p = 0; p < FilterResult.length; p++) {
             if (FilterResult[p].FileName.indexOf("docx") != -1) {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
             }
             else if (FilterResult[p].FileName.indexOf("pdf") != -1) {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
             }
             else if (FilterResult[p].FileName.indexOf("xlsx") != -1 || FilterResult[p].FileName.indexOf("csv") != -1) {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
             }
 
             else if (FilterResult[p].FileName.indexOf("jpg") != -1 || FilterResult[p].FileName.indexOf("jpeg") != -1 || FilterResult[p].FileName.indexOf("JPEG") != -1 || FilterResult[p].FileName.indexOf("png") != -1 || FilterResult[p].FileName.indexOf("PNG") != -1) {
                 Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + FilterResult[p].ServerRelativeUrl + "' title=" + FilterResult[p].FileName + " onclick='previewImage(this);'></img></div>";
             }
             else {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><span title='" + FilterResult[p].ServerRelativeUrl + "' data-filename='" + FilterResult[p].FileName + "' onclick='previewfile(this);' data-fileurl='" + FilterResult[p].ServerRelativeUrl + "'>" + FilterResult[p].FileName + "</span></span> <span class='chip-icon-box'> <a href='" + FilterResult[p].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
             }
         }
         $("#Attachmentlist" + RecId).append(Attachmentdesign);
@@ -8068,20 +8068,20 @@ function RetriveUpdateData(RecID) {
                 var Attachmentdesign = '';
                 for (var y = 0; y < Items[0].AttachmentFiles.results.length; y++) {
                     if (Items[0].AttachmentFiles.results[y].FileName.indexOf("docx") != -1) {
-                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                     }
                     else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("pdf") != -1) {
-                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                     }
                     else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("xlsx") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("csv") != -1) {
-                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                     }
 
                     else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("jpg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("jpeg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("JPEG") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("png") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("PNG") != -1) {
                         Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' title=" + Items[0].AttachmentFiles.results[y].FileName + " onclick='previewImage(this);'></img></div>";
                     }
                     else {
-                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='../SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                        Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                     }
                 }
                 $("#Attachmentlist" + Items[0].ID).append(Attachmentdesign);
@@ -8307,11 +8307,11 @@ function TriggerLikes() {
                 }
             });
         }
-        if ($(".like-img").attr("src") == "../SiteAssets/Biography/Experience/assets/images/like-icon.png" || $(".like-img").attr("src").includes('like-icon.png') == true) {
-            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
+        if ($(".like-img").attr("src") == "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon.png" || $(".like-img").attr("src").includes('like-icon.png') == true) {
+            $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
         }
         else {
-            $('#like-Img-color').attr('src', "../SiteAssets/Biography/Experience/assets/images/like-icon.png");
+            $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Biography/Experience/assets/images/like-icon.png");
         }
         if ($("#likes").hasClass("active") == true) {
             $('#TotalLikes').trigger('click');

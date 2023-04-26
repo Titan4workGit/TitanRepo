@@ -113,7 +113,7 @@ function GenrateAdSearchGrid(results) {
 
         html += '<tr>' + '<td class="vertical-align-middle w-2 ">' + '<div class="chexbox_mg">' + '<input type="checkbox" class="chkFileFolder" value="'+results[i].Path+'" id="myCheckbox' + i + '" />' +
             '<label for="myCheckbox' + i + '">' +
-            '<img width="30px" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Icon + '" />' +
+            '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Icon + '" />' +
             '</label>' +
 
             '</div>' +

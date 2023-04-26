@@ -37,6 +37,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/dom-to-image.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/css/emojionearea.min.css" />
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/DevelopersCode/DefaultHome/js/emojionearea.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortalCommonMethods.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/GuestPortat4Employee.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/MyDMS4.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGeustPortalTemplate3/CustomJS/Approval-IN_Out.js"></script>
@@ -55,7 +56,17 @@
 }
 
 /***yehtana hai****/
-
+#txtAcknoldge{
+	
+	cursor:pointer;
+}
+#txtPendingCount{
+	
+	cursor:pointer;
+}
+#txtUpdateValidity{
+	background-color: white!important; 
+}
 
 #SearchResultsGrid{
  min-width:1000px !important;   
@@ -216,15 +227,6 @@
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5138</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">3f49dd69-09c5-4e31-b053-d4d9239cb3dd</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5138, ADMIN-1645029823-5138</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Contributors</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Bhawana Singh</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">513800.000000000</mso:Order>
-<mso:SharedWithUsers msdt:dt="string">39;#Contributors</mso:SharedWithUsers>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Bhawana Singh</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -543,7 +545,7 @@
                                                                         <span data-localize="Properties">Properties</span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown dms-table-btn" id="divShare">
+                                                                <div class="dropdown dms-table-btn" id="divShare" style="display:none;">
                                                                     <button class="btn dropdown-toggle" type="button" data-toggle="modal"
                                                                             data-target="#sharingfile">
                                                                         <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/share.png" alt="share">
@@ -1006,7 +1008,7 @@
                             </button>
                         </div>
 
-                        <div class="dropdown detail-view-table-btn btnNotSharedTab" id="btnPopupShare">
+                        <div class="dropdown detail-view-table-btn btnNotSharedTab" id="btnPopupShare" style="display:none;">
                             <button class="btn dropdown-toggle LockDisable" type="button" data-toggle="modal" data-target="#sharingfile" id="btnShareFile">
                                 <i class="fa fa-share-square-o"></i>
                                 <span data-localize="Share">Share</span>
@@ -1018,6 +1020,13 @@
                                 <span data-localize="Notify">Notify</span>
                             </button>
                         </div>
+                        <div class="dropdown detail-view-table-btn" id="btnPopupComment">
+	                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#chat_sec">
+	                           <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" alt="comment" />
+	                            <span data-localize="comment">Comment</span>
+	                        </button>
+                    	</div>
+
 
                         <div class="dropdown detail-view-table-btn rightdrag flxajustmt" style="display:none;">
 
@@ -1146,7 +1155,7 @@
                                     <div id="activities2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="detail-vide-panel scrollbar-panel">
-                                                <li>
+                                                <li style="display:none;">
                                                     <div class="detail-vide-panel-align">
                                                         <div>
                                                             <div class="labelflexing"><label class="detail-label" data-localize="Sharing">Sharing</label><label>:</label></div>
@@ -1272,7 +1281,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close close-round" data-dismiss="modal">
+                <button type="button" class="close close-round" data-dismiss="modal" id="btnCloseChatBox">
                     <span class="close-icon">&times;</span>
                 </button>
                 <h4 class="modal-title">Write a Message</h4>
