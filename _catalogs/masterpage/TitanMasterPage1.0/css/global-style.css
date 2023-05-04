@@ -326,6 +326,14 @@ left:0px;
 
 /* Global css for Dark Mode Theme -----END----- */
 
+#DeltaPlaceHolderMain .ms-webpart-zone.ms-fullWidth
+{
+	display: block !important;
+}
+#DeltaPlaceHolderMain .ms-webpart-cell-horizontal
+{
+	display: block !important;
+}
 
 /* media query start */
 
@@ -940,3 +948,4 @@ left:0px;
   }
 
 }
+
