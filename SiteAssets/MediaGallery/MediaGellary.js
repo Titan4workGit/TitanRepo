@@ -1,1 +1,1597 @@
-var _0x457991=_0x5cbf;(function(_0xa1819f,_0x454708){var _0x6775a9=_0x5cbf,_0x189250=_0xa1819f();while(!![]){try{var _0x36565b=parseInt(_0x6775a9(0x16b))/0x1+parseInt(_0x6775a9(0xf1))/0x2*(-parseInt(_0x6775a9(0x1bf))/0x3)+-parseInt(_0x6775a9(0x160))/0x4+parseInt(_0x6775a9(0x202))/0x5+parseInt(_0x6775a9(0xea))/0x6*(-parseInt(_0x6775a9(0x1d1))/0x7)+parseInt(_0x6775a9(0x1b5))/0x8+-parseInt(_0x6775a9(0x14a))/0x9*(parseInt(_0x6775a9(0x157))/0xa);if(_0x36565b===_0x454708)break;else _0x189250['push'](_0x189250['shift']());}catch(_0x36b577){_0x189250['push'](_0x189250['shift']());}}}(_0xf3fb,0xad09e));var arrItem=[],employeePicURL='',fileLeafRef='',listItem=new Array(),ItemImage=new Array(),downloadFile=new Array(),newArr=new Array(),itemId=0x0,currentDlg='',siteURL='';$(document)['ready'](function(){var _0x2bcadf=_0x5cbf;siteURL=titanForWork['currentCompanyUrl'](Logged_CompanyId),GetCurrentUserRight(),GetMediaGallery(),ChangeLabels(),getEvent();var _0x350c47=window[_0x2bcadf(0x1a8)];userActivityNotificationEntry(_spPageContextInfo[_0x2bcadf(0x128)],_0x350c47),SetCalendar(),$(_0x2bcadf(0xe1))['val'](_spPageContextInfo[_0x2bcadf(0x118)]),$(_0x2bcadf(0x103))['on'](_0x2bcadf(0x195),function(){var _0x6bb5e5=_0x2bcadf;if(isAdmin==![])return alert(_0x6bb5e5(0x1ad)),$(_0x6bb5e5(0x131))['hide'](),![];createFolder();}),$(_0x2bcadf(0x131))['on'](_0x2bcadf(0x195),function(){var _0x5673a4=_0x2bcadf;$('#txtTitle')[_0x5673a4(0x120)](''),$(_0x5673a4(0xe3))[_0x5673a4(0x120)](''),$(_0x5673a4(0xff))['val'](''),$('#txtDescription')[_0x5673a4(0x120)](''),$(_0x5673a4(0x103))['show'](),$('#AllowComments')[_0x5673a4(0x120)](_0x5673a4(0x12f)),$('#btnUpdatefolder')[_0x5673a4(0x199)]();}),$(_0x2bcadf(0x1cc))['on'](_0x2bcadf(0x195),function(){updateFolder();}),$(_0x2bcadf(0x19d))['on']('click',function(){var _0x33c49d=_0x2bcadf,_0x802f42=$(_0x33c49d(0x11e))[_0x33c49d(0x120)]();if(_0x802f42==undefined)return alert(_0x33c49d(0x156)),![];else{_0x802f42=_0x802f42[_0x33c49d(0xda)](','),$(_0x33c49d(0xe3))[_0x33c49d(0x120)](_0x802f42[0x0]),$('#txtLocation')['val'](_0x802f42[0x1]);var _0x5a875e=new Date(_0x802f42[0x2]),_0x56121c=_0x5a875e[_0x33c49d(0x1b0)](_0x33c49d(0x161));_0x5a875e=$[_0x33c49d(0x187)][_0x33c49d(0x1ab)](_0x33c49d(0x161),_0x5a875e),$(_0x33c49d(0x169))[_0x33c49d(0x120)](_0x5a875e);}}),$(_0x2bcadf(0x1d7))['on'](_0x2bcadf(0x195),function(_0x27893d){var _0x4d0231=_0x2bcadf;_0x27893d[_0x4d0231(0x1f6)](),recentUpload(newArr,isAdmin);}),$(_0x2bcadf(0x177))['on']('click',function(_0x102639){var _0x1672f8=_0x2bcadf;_0x102639[_0x1672f8(0x1f6)](),recentAlbum(newArr,isAdmin);}),$(_0x2bcadf(0x17a))['on'](_0x2bcadf(0x195),function(_0x4ae2ae){_0x4ae2ae['preventDefault'](),mostView(newArr,isAdmin);}),$('#mostLiked')['on'](_0x2bcadf(0x195),function(_0x2d380a){_0x2d380a['preventDefault'](),mostLike(newArr,isAdmin);}),$(_0x2bcadf(0x192))['on'](_0x2bcadf(0x195),function(_0x17f0b5){_0x17f0b5['preventDefault'](),mostComments(newArr,isAdmin);}),$(_0x2bcadf(0xe4))['on'](_0x2bcadf(0x195),function(_0x1d1001){var _0x2e3cf8=_0x2bcadf;_0x1d1001['preventDefault']();var _0x4f6905=_0x2e3cf8(0x101),_0xc53f55='<br\x20/>Please\x20wait!!',_0x44ddb9=0xc8,_0x3897a0=0x190;currentDlg=SP['UI'][_0x2e3cf8(0x1ee)]['showWaitScreenWithNoClose'](_0x4f6905,_0xc53f55,_0x44ddb9,_0x3897a0),setTimeout(function(){var _0x124351=_0x2e3cf8;getMoreAlbum(),currentDlg[_0x124351(0x1f0)]();},0x64);});});var isAdmin=![];function GetCurrentUserRight(){var _0x558daf=_0x5cbf,_0x26f159=_spPageContextInfo[_0x558daf(0x1a2)]+_0x558daf(0x1fb)+Logged_CompanyId+_0x558daf(0x10b)+_spPageContextInfo[_0x558daf(0x128)]+_0x558daf(0x145)+Logged_CompanyId+_0x558daf(0x1bd)+Logged_CompanyId+_0x558daf(0x12d)+_spPageContextInfo[_0x558daf(0x128)]+'\x27)';$[_0x558daf(0x172)]({'url':_0x26f159,'method':_0x558daf(0x18a),'headers':{'Accept':_0x558daf(0x1c8)},'async':![],'success':function(_0x5be549){var _0x558d80=_0x558daf,_0x353278=_0x5be549;_0x353278['d']['results'][_0x558d80(0x15d)]>0x0?isAdmin=!![]:$(_0x558d80(0x131))['hide']();},'error':function(_0x42f495){var _0x2bb426=_0x558daf;console[_0x2bb426(0x178)](JSON[_0x2bb426(0xd3)](_0x42f495));}});}function GenerateTableMyCustomerList(){var _0x320c8d=_0x5cbf;sorterTableCustomerList=new TINY['table'][(_0x320c8d(0x154))](_0x320c8d(0x1e7),_0x320c8d(0x162),{'headclass':_0x320c8d(0x129),'ascclass':'asc','descclass':'desc','evenclass':'evenrow','oddclass':_0x320c8d(0xe8),'evenselclass':_0x320c8d(0xf7),'oddselclass':'oddselected','paginate':!![],'size':0x5,'currentid':'currentpageMyCustomer','totalid':_0x320c8d(0x10d),'startingrecid':_0x320c8d(0x185),'endingrecid':_0x320c8d(0x1b1),'totalrecid':_0x320c8d(0x164),'hoverid':_0x320c8d(0x111),'pageddid':_0x320c8d(0x14b),'navid':_0x320c8d(0x1cf),'init':!![]});}function ConvertDateTimeFormat(_0x5c5eca,_0x45e5f4){var _0x5976b8=_0x5cbf;return _0x5c5eca['split'](_0x45e5f4)[0x1]+''+_0x45e5f4+''+_0x5c5eca[_0x5976b8(0xda)](_0x45e5f4)[0x0]+''+_0x45e5f4+''+_0x5c5eca[_0x5976b8(0xda)](_0x45e5f4)[0x2];}function SetCalendar(){var _0xe28c6f=_0x5cbf,_0x42cdda=new Date();today=_0x42cdda[_0xe28c6f(0x1e6)]()+0x1+'\x20'+_0x42cdda[_0xe28c6f(0x104)]()+'\x20'+_0x42cdda[_0xe28c6f(0x174)](),$(_0xe28c6f(0x169))['datepicker']({'defaultDate':0x0,'minDate':'-48m','maxDate':0x0,'dateFormat':_0xe28c6f(0x161)})[_0xe28c6f(0x187)](_0xe28c6f(0x16d),new Date());}var mediaGalleryCounter=0x0,topItems=0xa,arrItems;function GetMediaGallery(){var _0x4dcd72=_0x5cbf,_0x46848e=siteURL+_0x4dcd72(0x18b);$[_0x4dcd72(0x172)]({'url':_0x46848e,'headers':{'Accept':_0x4dcd72(0x1b9)},'async':![],'success':function(_0x5cf9a9){var _0x3c25a7=_0x4dcd72,_0x120a50=_0x5cf9a9['d'][_0x3c25a7(0x1b7)];console['log'](_0x5cf9a9),arrItems=[];var _0x476d75=0x0;$('#galleryFirstImgThumb')[_0x3c25a7(0x114)](),mediaGalleryCounter=0x0;for(var _0x518abb=0x0;_0x518abb<_0x120a50['length'];_0x518abb++){if(_0x120a50[_0x518abb]['Name']!=_0x3c25a7(0x1f7)&&_0x120a50[_0x518abb][_0x3c25a7(0x184)]!='_t'&&_0x120a50[_0x518abb][_0x3c25a7(0x184)]!='_w'){_0x476d75==0x1;var _0x4e5a3c=encodeURI(_0x120a50[_0x518abb][_0x3c25a7(0x1aa)]),_0x503dc0=_0x120a50[_0x518abb][_0x3c25a7(0x184)];arrItems['push']({'encodeURILink':_0x4e5a3c,'folderName':_0x503dc0});var _0x101e42='',_0x16c22e=_0x120a50[_0x518abb][_0x3c25a7(0xed)];}}_0x120a50[_0x3c25a7(0x15d)]>topItems?$(_0x3c25a7(0xe4))[_0x3c25a7(0xe0)]():$(_0x3c25a7(0xe4))[_0x3c25a7(0x199)]();if(_0x476d75==0x0){var _0x53fe47=$(_0x3c25a7(0xf0))[_0x3c25a7(0x205)]();_0x53fe47==''&&(_0x53fe47=_0x3c25a7(0x153));var _0x14f8d8=_0x3c25a7(0x19b)+_0x53fe47+'</h3></div>';$(_0x3c25a7(0x194))[_0x3c25a7(0x121)](_0x14f8d8);}getMoreAlbum();},'eror':function(_0x3e1bb0){var _0x4ca9ed=_0x4dcd72;console[_0x4ca9ed(0x178)](_0x3e1bb0);}});}var y=0x0,x=0x0;function getMoreAlbum(){var _0x314d73=_0x5cbf;y+=0xa,x=y-0xa,$(_0x314d73(0xe4))['show']();arrItems[_0x314d73(0x15d)]<y&&(y=arrItems[_0x314d73(0x15d)],$(_0x314d73(0xe4))[_0x314d73(0x199)]());for(var _0x5ae1c5=x;_0x5ae1c5<y;_0x5ae1c5++){GetMediaGalleryThumbNail(arrItems[_0x5ae1c5][_0x314d73(0x1c9)],arrItems[_0x5ae1c5][_0x314d73(0x1a3)]);}}function GetMediaGalleryThumbNail(_0x18de7d,_0x457895,_0x132bba,_0x4f62b4){var _0x2f421b=_0x5cbf,_0x2ecd7b=siteURL+_0x2f421b(0x148)+_0x18de7d+_0x2f421b(0x112);$[_0x2f421b(0x172)]({'url':_0x2ecd7b,'headers':{'Accept':_0x2f421b(0x1b9)},'async':![],'success':function(_0x1012dd){var _0x445cbd=_0x2f421b,_0xd5bfa2=_0x1012dd['d'][_0x445cbd(0x1e4)][_0x445cbd(0x1b7)],_0x4c29ee='',_0x3cb61f='';mediaGalleryCounter++;var _0x4c9a62=0x0;ItemImage=[],_0x4c9a62=_0xd5bfa2[_0x445cbd(0x15d)];var _0x2c4aae;if(_0x4c9a62>=0x4)for(var _0x10afa0=0x0;_0x10afa0<0x4;_0x10afa0++){_0x4c29ee=encodeURI(_0xd5bfa2[_0x10afa0][_0x445cbd(0x1aa)]),_0x2c4aae=_0x4c29ee[_0x445cbd(0xda)]('.'),_0x2c4aae=_0x2c4aae[_0x2c4aae[_0x445cbd(0x15d)]-0x1],ItemImage['push']({'ImgURL':_0x4c29ee,'ImgType':_0x2c4aae,'imgCount':_0x4c9a62,'Id':itemId});}else{if(_0x4c9a62==0x3)for(var _0x10afa0=0x0;_0x10afa0<0x3;_0x10afa0++){_0x4c29ee=encodeURI(_0xd5bfa2[_0x10afa0]['ServerRelativeUrl']),_0x2c4aae=_0x4c29ee[_0x445cbd(0xda)]('.'),_0x2c4aae=_0x2c4aae[_0x2c4aae['length']-0x1],ItemImage[_0x445cbd(0xd7)]({'ImgURL':_0x4c29ee,'Id':itemId,'imgCount':_0x4c9a62,'ImgType':_0x2c4aae});}else{if(_0x4c9a62==0x2)for(var _0x10afa0=0x0;_0x10afa0<0x2;_0x10afa0++){_0x4c29ee=encodeURI(_0xd5bfa2[_0x10afa0]['ServerRelativeUrl']),_0x2c4aae=_0x4c29ee[_0x445cbd(0xda)]('.'),_0x2c4aae=_0x2c4aae[_0x2c4aae[_0x445cbd(0x15d)]-0x1],ItemImage[_0x445cbd(0xd7)]({'ImgURL':_0x4c29ee,'Id':itemId,'imgCount':_0x4c9a62,'ImgType':_0x2c4aae});}else _0x4c9a62==0x1?(_0x4c29ee=encodeURI(_0xd5bfa2[0x0][_0x445cbd(0x1aa)]),_0x2c4aae=_0x4c29ee[_0x445cbd(0xda)]('.'),_0x2c4aae=_0x2c4aae[_0x2c4aae[_0x445cbd(0x15d)]-0x1],ItemImage['push']({'ImgURL':_0x4c29ee,'Id':itemId,'imgCount':_0x4c9a62,'ImgType':_0x2c4aae})):(_0x4c29ee='',_0x2c4aae=_0x4c29ee[_0x445cbd(0xda)]('.'),_0x2c4aae=_0x2c4aae[_0x2c4aae[_0x445cbd(0x15d)]-0x1],ItemImage[_0x445cbd(0xd7)]({'ImgURL':_0x4c29ee,'Id':itemId,'imgCount':_0x4c9a62,'ImgType':_0x2c4aae}));}}GetFolderDetails(_0x18de7d);var _0x3cb61f=mediaHTML(_0x4c9a62,_0x18de7d);$(_0x445cbd(0x102))[_0x445cbd(0x121)](_0x3cb61f);},'eror':function(_0x10cd20){var _0x7d4784=_0x2f421b;console[_0x7d4784(0x178)](_0x7d4784(0x1df));}});}function createFolder(){var _0x3bd30d=_0x5cbf,_0x450172=$(_0x3bd30d(0x165))[_0x3bd30d(0x120)]();if(_0x450172=='')return alert(_0x3bd30d(0x133)),![];if(_0x450172[_0x3bd30d(0x15d)]>0xfa)return alert(_0x3bd30d(0x1a4)),![];var _0x295316=$(_0x3bd30d(0xe3))['val'](),_0x45733f=$(_0x3bd30d(0xff))[_0x3bd30d(0x120)](),_0x443b61=$(_0x3bd30d(0x1a9))[_0x3bd30d(0x120)]();if(_0x443b61=='')return alert(_0x3bd30d(0x197)),![];var _0x568cbb=$(_0x3bd30d(0x169))[_0x3bd30d(0x120)](),_0x4b4ba4=new Date(_0x568cbb);date=_0x4b4ba4[_0x3bd30d(0x1b0)](_0x3bd30d(0x175));var _0xe68f15=$(_0x3bd30d(0x1ce))['val'](),_0x29473a=siteURL+'/_api/web/folders',_0x2134d9=GetItemTypeForListName(_0x3bd30d(0x146));$[_0x3bd30d(0x172)]({'url':_0x29473a,'async':![],'type':_0x3bd30d(0x139),'data':JSON[_0x3bd30d(0xd3)]({'__metadata':{'type':_0x3bd30d(0x13c)},'ServerRelativeUrl':_0x3bd30d(0x1be)+_0x450172}),'headers':{'accept':_0x3bd30d(0x1b9),'content-type':_0x3bd30d(0x1b9),'X-RequestDigest':$(_0x3bd30d(0x140))[_0x3bd30d(0x120)]()},'success':function(_0x2ae7d5){var _0x169fca=_0x3bd30d,_0x2824c7=_0x2ae7d5['d'][_0x169fca(0x1aa)];alert(_0x169fca(0xdc)),$(_0x169fca(0xf4))[_0x169fca(0x12a)]('hide'),y=0x0,x=0x0,GetFolderDetails(_0x2824c7),addFolderDetails(_0x450172,_0x295316,_0x45733f,_0x443b61,date,_0xe68f15),GetMediaGallery();},'error':function(_0x3e1211){alert(_0x3e1211);}});}var folderId='';function GetFolderDetails(_0x1030a1){var _0x5935be=_0x5cbf;fileLeafRef=_0x1030a1;var _0x5c7c47=siteURL+'/_api/Web/lists/GetByTitle(\x27MediaGallery\x27)/Items?$select=*,File_x0020_Type,Author/Title,Author/EMail,FileRef,FileLeafRef&$expand=Author/Title&$filter=FileRef\x20eq\x20\x27'+_0x1030a1+'\x27';$[_0x5935be(0x172)]({'url':_0x5c7c47,'headers':{'Accept':'application/json;odata=verbose'},'async':![],'success':function(_0x369c0e){var _0x403b51=_0x5935be,_0x13e430=_0x369c0e['d'][_0x403b51(0x1b7)];folderId=_0x13e430[0x0]['Id'],listItem=[],$(_0x403b51(0x1f1))[_0x403b51(0x205)](_0x13e430[0x0]['FileLeafRef']);var _0x35ee8b=_0x13e430[0x0]['FileLeafRef'],_0x3b9667=_0x13e430[0x0][_0x403b51(0xe9)];_0x3b9667==null&&(_0x3b9667='');$('#folderDescription')[_0x403b51(0x205)](_0x3b9667);var _0x299243=_0x13e430[0x0]['Author'][_0x403b51(0xed)];$(_0x403b51(0x142))[_0x403b51(0x205)](_0x299243);var _0x35d8cc=_0x13e430[0x0][_0x403b51(0xdb)][_0x403b51(0x19c)],_0x1e95c4=new Date(_0x13e430[0x0][_0x403b51(0x1d2)]),_0x107913=new Date(_0x13e430[0x0][_0x403b51(0x1d2)]);_0x1e95c4=$[_0x403b51(0x187)][_0x403b51(0x1ab)]('MM\x20dd,\x20yy',_0x1e95c4),$('#txtDate')[_0x403b51(0x120)](_0x1e95c4),$(_0x403b51(0x165))[_0x403b51(0x120)](_0x13e430[0x0]['FileLeafRef']),$(_0x403b51(0x1a9))[_0x403b51(0x120)](_0x3b9667);var _0x1d7320=_0x13e430[0x0][_0x403b51(0x191)];if(_0x1d7320==null||_0x1d7320=='')_0x1d7320=_0x403b51(0x12f);$(_0x403b51(0x1ce))['val'](_0x1d7320),$(_0x403b51(0x1fd))[_0x403b51(0x120)](_0x13e430[0x0][_0x403b51(0xdb)][_0x403b51(0xed)]);var _0x1e95c4=new Date(_0x13e430[0x0]['ImageCreateDate']);_0x1e95c4=$[_0x403b51(0x187)][_0x403b51(0x1ab)](_0x403b51(0x161),_0x1e95c4),$(_0x403b51(0xec))[_0x403b51(0x120)](_0x1e95c4);var _0x41c8f8=_0x13e430[0x0][_0x403b51(0x198)];if(_0x41c8f8==null)_0x41c8f8='';$('#txteventName')[_0x403b51(0x120)](_0x41c8f8);var _0x21b2df=_0x13e430[0x0][_0x403b51(0x1c1)];if(_0x21b2df==null)_0x21b2df='';$('#txtLocation')['val'](_0x21b2df);var _0xd02288=_0x13e430[0x0]['UserDesignation'];if(_0xd02288==null)_0xd02288='';var _0x1373fe=_0x13e430[0x0][_0x403b51(0x1b6)];if(_0x1373fe==null)_0x1373fe='';var _0x3d6417=_0x13e430[0x0]['View'];if(_0x3d6417==null)_0x3d6417=0x0;var _0x17b416=_0x13e430[0x0][_0x403b51(0x191)];_0x17b416==_0x403b51(0x11b)?_0x17b416=![]:_0x17b416=!![];var _0x77635a=_0x13e430[0x0]['Like'];if(_0x77635a==null)_0x77635a=0x0;var _0x3d2412=_0x13e430[0x0][_0x403b51(0x201)];if(_0x3d2412==null)_0x3d2412=0x0;var _0x1e7a42=_0x13e430[0x0][_0x403b51(0x136)];if(_0x1e7a42==null)_0x1e7a42='../SiteAssets/QuestionAnswer/images/user_pic.jpg';listItem[_0x403b51(0xd7)]({'Title':_0x35ee8b,'Description':_0x3b9667,'Author':_0x299243,'Event_Name':_0x41c8f8,'Event_Place':_0x21b2df,'EMail':_0x35d8cc,'designation':_0xd02288,'UserDepartment':_0x1373fe,'Publishing':_0x1e95c4,'Publishing1':_0x107913,'View':_0x3d6417,'Like':_0x77635a,'Comments':_0x3d2412,'AllowComment':_0x17b416,'userImage':_0x1e7a42});},'eror':function(_0x4932ea){var _0x3f2651=_0x5935be;console[_0x3f2651(0x178)]('error');}});}function updateFolder(){var _0x86282f=_0x5cbf,_0x599c04=$('#updateDescription')['val'](),_0x41315a=$(_0x86282f(0x165))['val']();if(_0x41315a=='')return alert(_0x86282f(0x133)),![];if(_0x41315a[_0x86282f(0x15d)]>0xfa)return alert(_0x86282f(0x1a4)),![];var _0x35df29=$(_0x86282f(0xe3))[_0x86282f(0x120)](),_0x298065=$(_0x86282f(0xff))['val'](),_0x5645c8=$(_0x86282f(0x1a9))[_0x86282f(0x120)]();if(_0x5645c8=='')return alert('Please\x20enter\x20description\x20!'),![];var _0x1921d0=$(_0x86282f(0x1ce))['val'](),_0x5f25c7=$(_0x86282f(0x169))['val'](),_0x533f64=new Date(_0x5f25c7);date=_0x533f64['format'](_0x86282f(0x175));var _0x1a6284=siteURL+'/_api/web/GetFolderByServerRelativeUrl(\x27'+fileLeafRef+'\x27)/ListItemAllFields?$select=FileLeafRef',_0x5ca4c7=GetItemTypeForListName(_0x86282f(0x146));$['ajax']({'url':_0x1a6284,'async':![],'type':'POST','data':JSON[_0x86282f(0xd3)]({'__metadata':{'type':_0x86282f(0x1a5)},'FileLeafRef':_0x41315a}),'headers':{'Accept':_0x86282f(0x1b9),'Content-Type':'application/json;odata=verbose','X-RequestDigest':$('#__REQUESTDIGEST')['val'](),'IF-MATCH':'*','X-HTTP-Method':_0x86282f(0x1f9)},'success':function(_0x16cc04){var _0x40248a=_0x86282f,_0x557485=fileLeafRef['split']('MediaGallery'),_0x314a4a=_0x557485[0x0]+'MediaGallery/'+_0x41315a;alert(_0x40248a(0x137)),y=0x0,x=0x0,GetFolderDetails(_0x314a4a),addFolderDetails(_0x41315a,_0x35df29,_0x298065,_0x5645c8,date,_0x1921d0),GetMediaGallery(),$(_0x40248a(0x103))[_0x40248a(0xe0)](),$(_0x40248a(0x1cc))['hide']();},'error':function(_0x139087){var _0x106a68=_0x86282f;alert(_0x139087[_0x106a68(0xd2)]);}});}var employeePicURL=_spPageContextInfo[_0x457991(0x1a2)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_spPageContextInfo[_0x457991(0x1fa)]);function addFolderDetails(_0x4ca027,_0x27ec93,_0x1ab98c,_0x34ce77,_0xcf035c,_0x255f1f){var _0x52f81e=_0x457991,_0x4e8c75=siteURL+'/_api/web/getfolderbyserverrelativeurl(\x27/sites/Titan_2_2_1_DEV/TITAN/MediaGallery/Lakhan\x27)';$[_0x52f81e(0x172)]({'url':siteURL+_0x52f81e(0x116)+folderId+'\x27)','type':_0x52f81e(0x139),'async':![],'data':JSON[_0x52f81e(0xd3)]({'__metadata':{'type':'SP.Data.MediaGalleryItem'},'Title':_0x4ca027,'Description':_0x34ce77,'UserDepartment':Logged_DepartmentName,'Event_Name':_0x27ec93,'Event_Place':_0x1ab98c,'ImageCreateDate':_0xcf035c,'UserDesignation':Logged_Designation,'AllowComment':_0x255f1f,'userImage':employeePicURL}),'headers':{'Accept':_0x52f81e(0x1b9),'Content-Type':_0x52f81e(0x1b9),'X-RequestDigest':$(_0x52f81e(0x140))[_0x52f81e(0x120)](),'IF-MATCH':'*','X-HTTP-Method':'MERGE'},'success':function(_0x24c8e5,_0x39d23c,_0x56fb13){var _0x45eae2=_0x52f81e;console[_0x45eae2(0x178)]('Updated!');},'error':function(_0x5a56cf){alert(_0x5a56cf);}});}function deleteFolder(_0x49729f){var _0x13096f=_0x457991,_0x2b4a63=confirm(_0x13096f(0xeb));_0x2b4a63&&jQuery[_0x13096f(0x172)]({'url':siteURL+'/_api/web/getfolderbyserverrelativeurl(\x27'+_0x49729f+'\x27)','type':_0x13096f(0x11a),'headers':{'Accept':'application/json;odata=verbose','X-RequestDigest':$(_0x13096f(0x140))[_0x13096f(0x120)](),'IF-MATCH':'*'},'success':function(_0x5c5da3){alert('Deleted\x20Successfully\x20!'),x=0x0,y=0x0,GetMediaGallery();},'error':function(_0x5214e8){alert(_0x5214e8);}});}var today=new Date(),CurrentDate=today[_0x457991(0x183)](),eventlength;function getEvent(){var _0x14a696=_0x457991,_0x2cd51c=titanForWork['getQueryStringParameter'](_0x14a696(0x1f3))+_0x14a696(0x1d3);$['ajax']({'url':_0x2cd51c,'headers':{'Accept':_0x14a696(0x1b9)},'async':![],'success':function(_0x181f6a){var _0x5d73a6=_0x14a696,_0x63d5b=_0x181f6a['d'][_0x5d73a6(0x1b7)],_0x440725='';$(_0x5d73a6(0x1d6))[_0x5d73a6(0x114)](),eventlength=_0x63d5b[_0x5d73a6(0x15d)];if(_0x63d5b[_0x5d73a6(0x15d)]>0x0){for(var _0x91ca35=_0x63d5b['length']-0x1;_0x91ca35>=0x0;_0x91ca35--){var _0x5ea9e9=_0x63d5b[_0x91ca35]['Title'],_0x1261b7=_0x63d5b[_0x91ca35]['Id'],_0x464394=new Date(_0x63d5b[_0x91ca35]['EventDate']);_0x464394=$[_0x5d73a6(0x187)][_0x5d73a6(0x1ab)]('dd-M-yy',_0x464394);var _0x3e7f1e=_0x63d5b[_0x91ca35][_0x5d73a6(0x1f8)],_0x12587a=_0x63d5b[_0x91ca35][_0x5d73a6(0xfb)],_0x4f8dd0=[];_0x4f8dd0[_0x5d73a6(0xd7)](_0x5ea9e9,_0x3e7f1e,_0x63d5b[_0x91ca35]['EventDate']);var _0x9cf136=_0x5d73a6(0x14f)+_0x1261b7;_0x440725+='<tr\x20class=\x22eventTBody_tr\x22>',_0x440725+=_0x5d73a6(0x14d),_0x440725+=_0x5d73a6(0x1ae),_0x440725+=_0x5d73a6(0x11c)+_0x4f8dd0+_0x5d73a6(0x1e8)+_0x9cf136+_0x5d73a6(0x1c3),_0x440725+=_0x5d73a6(0x150)+_0x9cf136+'\x22>',_0x440725+='<i\x20class=\x22fa\x20fa-circle-thin\x22\x20aria-hidden=\x22true\x22></i>',_0x440725+=_0x5d73a6(0x123),_0x440725+=_0x5d73a6(0x180),_0x440725+=_0x5d73a6(0x1e3)+_0x464394+_0x5d73a6(0xd6),_0x440725+=_0x5d73a6(0x125),_0x440725+='\x20\x20\x20<td>'+_0x5ea9e9+_0x5d73a6(0x190),_0x440725+='\x20\x20\x20<td>'+_0x3e7f1e+_0x5d73a6(0x190),_0x440725+='\x20\x20\x20<td>'+_0x12587a+_0x5d73a6(0x190),_0x440725+=_0x5d73a6(0x17e);}$(_0x5d73a6(0x1d6))[_0x5d73a6(0x121)](_0x440725),GenerateTableMyCustomerList();}_0x63d5b[_0x5d73a6(0x15d)]==0x0?$(_0x5d73a6(0x14c))['show']():$('#NoRecordFoundclientmaster')[_0x5d73a6(0x199)]();},'error':function(_0x534873){var _0x8bd96f=_0x14a696;console[_0x8bd96f(0x178)](_0x534873);}});}function onlyOne(_0x321bf3){var _0x198773=_0x457991,_0x1e4aa9=document[_0x198773(0x15e)](_0x198773(0x203));_0x1e4aa9[_0x198773(0x18e)](_0x5e1c26=>{var _0x12a28e=_0x198773;if(_0x5e1c26!==_0x321bf3)_0x5e1c26[_0x12a28e(0x171)]=![];});}function mediaHTML(_0x375235,_0x5df8de,_0x590a64,_0x35e883,_0x45e2c8){var _0x322cf7=_0x457991;itemId+=0x1;var _0x46b952=_0x322cf7(0x12e)+_0x5df8de+'&Mode='+listItem[0x0][_0x322cf7(0x191)]+_0x322cf7(0x1dc),_0x1e330e='',_0x1af3f0='',_0x2f763e='',_0x3d1cff='',_0x4c313a='',_0x5eb42c='',_0x3228fe='',_0x45f2ee='',_0x3e4db2='',_0x551ea0='';if(_0x375235==0x1)_0x1af3f0=ItemImage[0x0][_0x322cf7(0xfc)],_0x3228fe=ItemImage[0x0][_0x322cf7(0x10f)];else{if(_0x375235==0x2)_0x1af3f0=ItemImage[0x0][_0x322cf7(0xfc)],_0x3228fe=ItemImage[0x0][_0x322cf7(0x10f)],_0x2f763e=ItemImage[0x1][_0x322cf7(0xfc)],_0x45f2ee=ItemImage[0x1][_0x322cf7(0x10f)];else{if(_0x375235==0x3)_0x1af3f0=ItemImage[0x0][_0x322cf7(0xfc)],_0x3228fe=ItemImage[0x0][_0x322cf7(0x10f)],_0x2f763e=ItemImage[0x1][_0x322cf7(0xfc)],_0x45f2ee=ItemImage[0x1][_0x322cf7(0x10f)],_0x3d1cff=ItemImage[0x2]['ImgURL'],_0x3e4db2=ItemImage[0x2][_0x322cf7(0x10f)];else _0x375235>=0x4?(_0x1af3f0=ItemImage[0x0]['ImgURL'],_0x3228fe=ItemImage[0x0][_0x322cf7(0x10f)],_0x2f763e=ItemImage[0x1][_0x322cf7(0xfc)],_0x45f2ee=ItemImage[0x1]['ImgType'],_0x3d1cff=ItemImage[0x2]['ImgURL'],_0x3e4db2=ItemImage[0x2]['ImgType'],_0x4c313a=ItemImage[0x3][_0x322cf7(0xfc)],_0x551ea0=ItemImage[0x3][_0x322cf7(0x10f)]):(_0x1e330e=ItemImage[0x0][_0x322cf7(0xfc)],_0x5eb42c=ItemImage[0x0][_0x322cf7(0x10f)]);}}newArr[_0x322cf7(0xd7)]({'Title':listItem[0x0]['Title'],'Id':itemId,'Description':listItem[0x0][_0x322cf7(0xe9)],'Author':listItem[0x0]['Author'],'Event_Name':listItem[0x0][_0x322cf7(0x198)],'Event_Place':listItem[0x0]['Event_Place'],'EMail':listItem[0x0][_0x322cf7(0x19c)],'designation':listItem[0x0][_0x322cf7(0x196)],'UserDepartment':listItem[0x0][_0x322cf7(0x1b6)],'Publishing':listItem[0x0][_0x322cf7(0x17c)],'Publishing1':listItem[0x0][_0x322cf7(0x127)],'View':listItem[0x0][_0x322cf7(0x182)],'AllowComment':listItem[0x0]['AllowComment'],'Like':listItem[0x0][_0x322cf7(0x105)],'Comments':listItem[0x0]['Comments'],'userImage':listItem[0x0][_0x322cf7(0x136)],'ImgURL':ItemImage[0x0][_0x322cf7(0xfc)],'imgCount':_0x375235,'img':_0x1e330e,'imgtype':_0x5eb42c,'img1':_0x1af3f0,'imgtype1':_0x3228fe,'img2':_0x2f763e,'imgtype2':_0x45f2ee,'img3':_0x3d1cff,'targetfolderUrl':_0x5df8de,'imgtype3':_0x3e4db2,'img4':_0x4c313a,'imgtype4':_0x551ea0});var _0x7ea7df=listItem[0x0][_0x322cf7(0x1b6)]+'\x20',_0x5400d5='\x20'+listItem[0x0][_0x322cf7(0x196)],_0x90df28='';if(_0x375235==0x0)return _0x90df28+=_0x322cf7(0x1bc),_0x90df28+=_0x322cf7(0x110)+_0x46b952+_0x322cf7(0xee),_0x90df28+=_0x322cf7(0xf3),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/default\x20album.png\x22\x20alt=\x22album\x20img\x20grid\x20default\x22></div></div>',_0x90df28+=_0x322cf7(0x1b4),_0x90df28+=_0x322cf7(0x15c)+_0x46b952+'\x22>'+listItem[0x0][_0x322cf7(0xed)]+_0x322cf7(0x147),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x149),_0x90df28+='<span>'+listItem[0x0][_0x322cf7(0xe9)]+_0x322cf7(0xd6),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x119),_0x90df28+='<div\x20class=\x22col-sm-8\x20col-xs-12\x20album-detail-left\x22>',_0x90df28+=_0x322cf7(0x18f),_0x90df28+='<div\x20class=\x22col-sm-6\x20album-user-image-box\x22>',_0x90df28+=_0x322cf7(0x168)+listItem[0x0][_0x322cf7(0x136)]+_0x322cf7(0x1e9),_0x90df28+=_0x322cf7(0x1a1),_0x90df28+=_0x322cf7(0x15a)+listItem[0x0][_0x322cf7(0xdb)]+_0x322cf7(0xfe),listItem[0x0]['UserDepartment']!=''&&(_0x90df28+='<p\x20class=\x22mb0\x22>'+_0x7ea7df+'|'+_0x5400d5+'\x20</p>'),_0x90df28+='<p\x20class=\x22mb0\x20Emailfont\x22>'+listItem[0x0][_0x322cf7(0x19c)]+_0x322cf7(0xfe),_0x90df28+=_0x322cf7(0x1da),_0x90df28+=_0x322cf7(0x1e0),listItem[0x0][_0x322cf7(0x198)]['length']==0x0&&(listItem[0x0][_0x322cf7(0x198)]=''),listItem[0x0][_0x322cf7(0x198)]!=''&&(_0x90df28+=_0x322cf7(0x1ba)+listItem[0x0][_0x322cf7(0x198)]+_0x322cf7(0x1de)),_0x90df28+='<p\x20class=\x22media-place\x22>Place:\x20<span\x20id=\x22\x22>\x20'+listItem[0x0][_0x322cf7(0x1c1)]+_0x322cf7(0x1d0),_0x90df28+=_0x322cf7(0x1e1)+listItem[0x0][_0x322cf7(0x17c)]+'\x20</span></p>',_0x90df28+=_0x322cf7(0x181),_0x90df28+=_0x322cf7(0x1fe),_0x90df28+=_0x322cf7(0x1c0),_0x90df28+=_0x322cf7(0x100),_0x90df28+=_0x322cf7(0x143),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-icon\x22>',_0x90df28+=_0x322cf7(0x13d),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1c5),_0x90df28+=_0x322cf7(0x188),_0x90df28+=_0x322cf7(0x12b),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0xe6),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x115),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-icon\x22>',_0x90df28+=_0x322cf7(0x130),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>1</div>',_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x1ff),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x16f),_0x90df28+=_0x322cf7(0xef),_0x90df28+='</div></div></div></div>',_0x90df28+=_0x322cf7(0xf9),isAdmin==!![]&&(_0x90df28+=_0x322cf7(0x106)+_0x5df8de+_0x322cf7(0x19f),_0x90df28+=_0x322cf7(0x173),_0x90df28+='<a\x20class=\x27album-delete-btn\x27\x20onclick=\x27deleteFolder(\x22'+_0x5df8de+'\x22);\x27>',_0x90df28+=_0x322cf7(0x166)),_0x90df28+=_0x322cf7(0xf2),_0x90df28;else{if(_0x375235==0x1){_0x90df28+=_0x322cf7(0x186),_0x90df28+='<div\x20class=\x27col-xs-12\x20col-sm-3\x20album-card-left\x27\x20style=\x27cursor:\x20pointer;\x27\x20onclick=\x27openAlbumDetailsPage(\x22'+_0x46b952+'\x22)\x27>',_0x90df28+=_0x322cf7(0xd9);var _0x5b82e7=ItemImage[0x0]['ImgType'];return _0x5b82e7==_0x322cf7(0x159)||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7=='png'||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x0][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x0][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+=_0x322cf7(0x13a)),_0x90df28+=_0x322cf7(0x1da),_0x90df28+=_0x322cf7(0x16e),_0x90df28+='<div\x20class=\x22album-detail-box\x22>',_0x90df28+=_0x322cf7(0xd5),_0x90df28+=_0x322cf7(0x15c)+_0x46b952+_0x322cf7(0x122)+listItem[0x0][_0x322cf7(0xed)]+_0x322cf7(0xfd),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x135)+listItem[0x0][_0x322cf7(0xe9)]+_0x322cf7(0x200),_0x90df28+=_0x322cf7(0x119),_0x90df28+=_0x322cf7(0x19a),_0x90df28+=_0x322cf7(0x18f),_0x90df28+='<div\x20class=\x22col-sm-6\x20album-user-image-box\x22>',_0x90df28+=_0x322cf7(0x168)+listItem[0x0]['userImage']+'\x22\x20data-themekey=\x22#\x22/>',_0x90df28+=_0x322cf7(0x1a1),_0x90df28+='<p\x20class=\x22mb0\x22>'+listItem[0x0][_0x322cf7(0xdb)]+_0x322cf7(0xfe),listItem[0x0][_0x322cf7(0x1b6)]!=''&&(_0x90df28+='<p\x20class=\x22mb0\x22>'+_0x7ea7df+'|\x20'+_0x5400d5+_0x322cf7(0xfe)),_0x90df28+='<p\x20class=\x22mb0\x20Emailfont\x22>'+listItem[0x0][_0x322cf7(0x19c)]+_0x322cf7(0xfe),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1e0),listItem[0x0][_0x322cf7(0x198)]['length']==0x0&&(listItem[0x0]['Event_Name']=''),listItem[0x0][_0x322cf7(0x198)]!=''&&(_0x90df28+='<p\x20class=\x22media-event\x22>Event:\x20<span\x20id=\x22\x22>'+listItem[0x0][_0x322cf7(0x198)]+_0x322cf7(0x10a)),_0x90df28+='<p\x20class=\x22media-place\x22>Place:\x20<span\x20id=\x22\x22>\x20'+listItem[0x0]['Event_Place']+_0x322cf7(0x1d0),_0x90df28+=_0x322cf7(0x1e1)+listItem[0x0][_0x322cf7(0x17c)]+'</span></p>',_0x90df28+=_0x322cf7(0xef),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1fe),_0x90df28+='<div\x20class=\x22album-data-box\x22>',_0x90df28+=_0x322cf7(0x100),_0x90df28+='<div\x20class=\x22album-inner-card-btn-item\x22>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg\x22\x20data-themekey=\x22#\x22/>',_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x152)+_0x375235+'</div>',_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-gap\x22>',_0x90df28+='<span>\x20</span></div>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/visibility-icon.png\x22\x20data-themekey=\x22#\x22/>',_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x182)]+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x1dd),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>'+listItem[0x0]['Like']+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/chat-icon.png\x22\x20data-themekey=\x22#\x22/>',_0x90df28+='</div>',_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>'+listItem[0x0][_0x322cf7(0x1f4)]+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0xf2),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0xf9),_0x90df28+=_0x322cf7(0x14e)+_0x5df8de+_0x322cf7(0x1d5),_0x90df28+=_0x322cf7(0x155),isAdmin==!![]&&(_0x90df28+=_0x322cf7(0x106)+_0x5df8de+_0x322cf7(0x19f),_0x90df28+=_0x322cf7(0x173),_0x90df28+='<a\x20class=\x27album-delete-btn\x27\x20\x20onclick=\x27deleteFolder(\x22'+_0x5df8de+'\x22);\x27><i\x20class=\x27fa\x20fa-trash-o\x27\x20aria-hidden=\x27true\x27></i></a>'),_0x90df28+=_0x322cf7(0xf2),_0x90df28;}}if(_0x375235==0x2){_0x90df28+=_0x322cf7(0x186),_0x90df28+=_0x322cf7(0x110)+_0x46b952+_0x322cf7(0xee),_0x90df28+=_0x322cf7(0x1a0),_0x90df28+='<div\x20class=\x22col-xs-6\x20album-case-half-left\x22>';var _0x5b82e7=ItemImage[0x0][_0x322cf7(0x10f)];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7=='JPG'||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7=='GIF'||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7=='PNG'||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7=='png'||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x0][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x0][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+=_0x322cf7(0x13a));_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x1e5);var _0x5b82e7=ItemImage[0x1]['ImgType'];return _0x5b82e7==_0x322cf7(0x159)||_0x5b82e7=='JPG'||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7=='jpeg'||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x1]['ImgURL']+_0x322cf7(0x108):(_0x90df28+='<video\x20class=\x22video-box\x22\x20width=\x22100%\x22\x20height=\x22100%\x22><source\x20src=\x22'+ItemImage[0x1][_0x322cf7(0xfc)]+'\x22\x20type=\x22video/mp4\x22>\x20Your\x20browser\x20does\x20not\x20support\x20the\x20video\x20tag.</video>',_0x90df28+=_0x322cf7(0x13a)),_0x90df28+=_0x322cf7(0x181),_0x90df28+=_0x322cf7(0x16e),_0x90df28+='<div\x20class=\x22album-detail-box\x22>',_0x90df28+='<div\x20class=\x22album-heading\x22>',_0x90df28+=_0x322cf7(0x15c)+_0x46b952+_0x322cf7(0x122)+listItem[0x0][_0x322cf7(0xed)]+'</a>\x20',_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-info\x22>',_0x90df28+=_0x322cf7(0x109)+listItem[0x0]['Description']+_0x322cf7(0x1d9),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x119),_0x90df28+=_0x322cf7(0x19a),_0x90df28+=_0x322cf7(0x18f),_0x90df28+=_0x322cf7(0x11d),_0x90df28+=_0x322cf7(0x168)+listItem[0x0]['userImage']+_0x322cf7(0x134),_0x90df28+=_0x322cf7(0x1a1),_0x90df28+=_0x322cf7(0x15a)+listItem[0x0]['Author']+_0x322cf7(0xfe),listItem[0x0][_0x322cf7(0x1b6)]!=''&&(_0x90df28+=_0x322cf7(0x15a)+_0x7ea7df+'|\x20'+_0x5400d5+'</p>'),_0x90df28+='<p\x20class=\x22mb0\x20Emailfont\x22>'+listItem[0x0]['EMail']+'</p>',_0x90df28+='</div></div>',_0x90df28+=_0x322cf7(0x1e0),listItem[0x0][_0x322cf7(0x198)][_0x322cf7(0x15d)]!=0x0&&(_0x90df28+=_0x322cf7(0x1ba)+listItem[0x0][_0x322cf7(0x198)]+_0x322cf7(0x10a)),_0x90df28+=_0x322cf7(0x1fc)+listItem[0x0][_0x322cf7(0x1c1)]+'</span></p>',_0x90df28+=_0x322cf7(0x1e1)+listItem[0x0]['Publishing']+_0x322cf7(0x10a),_0x90df28+='</div></div></div>',_0x90df28+='<div\x20class=\x22col-sm-4\x20col-xs-12\x20album-detail-right\x22>',_0x90df28+='<div\x20class=\x22album-data-box\x22>',_0x90df28+=_0x322cf7(0x100),_0x90df28+='<div\x20class=\x22album-inner-card-btn-item\x22>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x13d),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+_0x375235+'</div>',_0x90df28+=_0x322cf7(0x188),_0x90df28+=_0x322cf7(0x12b),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-icon\x22>',_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/visibility-icon.png\x22\x20data-themekey=\x22#\x22>',_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x182)]+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x130),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x105)]+'</div>',_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-gap\x22><span>\x20</span>',_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x1ff),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>'+listItem[0x0][_0x322cf7(0x1f4)]+_0x322cf7(0xef),_0x90df28+='</div></div></div></div></div>',_0x90df28+=_0x322cf7(0xf9),_0x90df28+=_0x322cf7(0x14e)+_0x5df8de+_0x322cf7(0x1d5),_0x90df28+=_0x322cf7(0x1ef),isAdmin==!![]&&(_0x90df28+=_0x322cf7(0x106)+_0x5df8de+'\x22);\x27>',_0x90df28+='<i\x20class=\x22fa\x20fa-pencil-square-o\x22\x20aria-hidden=\x22true\x22></i></a>',_0x90df28+=_0x322cf7(0x18c)+_0x5df8de+_0x322cf7(0x16a)),_0x90df28+='</div></div></div></div>',_0x90df28;}if(_0x375235==0x3){_0x90df28+='<div\x20class=\x22col-xs-12\x20col-sm-12\x20album-col-info\x20album-card\x22>',_0x90df28+=_0x322cf7(0x110)+_0x46b952+_0x322cf7(0xee),_0x90df28+=_0x322cf7(0x1b2),_0x90df28+='<div\x20class=\x22col-xs-6\x20album-case-half-left\x22>';var _0x5b82e7=ItemImage[0x0]['ImgType'];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7=='JPEG'||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x0]['ImgURL']+_0x322cf7(0x108):(_0x90df28+='<video\x20class=\x22video-box\x22\x20width=\x22100%\x22\x20height=\x22100%\x22><source\x20src=\x22'+ItemImage[0x0][_0x322cf7(0xfc)]+'\x22\x20type=\x22video/mp4\x22>\x20Your\x20browser\x20does\x20not\x20support\x20the\x20video\x20tag.</video>',_0x90df28+=_0x322cf7(0x13a));_0x90df28+='</div>',_0x90df28+='<div\x20class=\x22col-xs-6\x20album-case-half-right\x22>',_0x90df28+='<div\x20class=\x22col-xs-12\x20album-case-half-right-row-1\x22>';var _0x5b82e7=ItemImage[0x1][_0x322cf7(0x10f)];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7=='JPG'||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7=='PNG'||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7=='png'||_0x5b82e7=='bmp'?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x1][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x1][_0x322cf7(0xfc)]+'\x22\x20type=\x22video/mp4\x22>\x20Your\x20browser\x20does\x20not\x20support\x20the\x20video\x20tag.</video>',_0x90df28+='<div\x20class=\x22play-icon\x22><i\x20class=\x22fa\x20fa-play\x22></i></div>');_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x117);var _0x5b82e7=ItemImage[0x2][_0x322cf7(0x10f)];return _0x5b82e7==_0x322cf7(0x159)||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7=='jpeg'||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+='<img\x20src=\x22'+ItemImage[0x2][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x2][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+=_0x322cf7(0x13a)),_0x90df28+='</div></div></div></div>',_0x90df28+=_0x322cf7(0x16e),_0x90df28+='<div\x20class=\x22album-detail-box\x22>',_0x90df28+='<div\x20class=\x22album-heading\x22>',_0x90df28+='<a\x20href=\x22'+_0x46b952+_0x322cf7(0x122)+listItem[0x0][_0x322cf7(0xed)]+_0x322cf7(0xfd),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-info\x22>',_0x90df28+=_0x322cf7(0x109)+listItem[0x0]['Description']+_0x322cf7(0x1d9),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x119),_0x90df28+='<div\x20class=\x22col-sm-8\x20col-xs-12\x20album-detail-left\x22>',_0x90df28+='<div\x20class=\x22col-sm-12\x20album-user-info-grid\x22>',_0x90df28+=_0x322cf7(0x11d),_0x90df28+=_0x322cf7(0x168)+listItem[0x0][_0x322cf7(0x136)]+_0x322cf7(0x134),_0x90df28+=_0x322cf7(0x1a1),_0x90df28+='<p\x20class=\x22mb0\x22>'+listItem[0x0]['Author']+_0x322cf7(0xfe),listItem[0x0][_0x322cf7(0x1b6)]!=''&&(_0x90df28+='<p\x20class=\x22mb0\x22>'+_0x7ea7df+'|\x20'+_0x5400d5+'</p>'),_0x90df28+='<p\x20class=\x22mb0\x20Emailfont\x22>'+listItem[0x0][_0x322cf7(0x19c)]+_0x322cf7(0xfe),_0x90df28+=_0x322cf7(0x1da),_0x90df28+=_0x322cf7(0x1e0),listItem[0x0][_0x322cf7(0x198)][_0x322cf7(0x15d)]!=0x0&&(_0x90df28+=_0x322cf7(0x1ba)+listItem[0x0]['Event_Name']+_0x322cf7(0x10a)),_0x90df28+='<p\x20class=\x22media-place\x22>Place:\x20<span\x20id=\x22\x22>'+listItem[0x0]['Event_Place']+_0x322cf7(0x10a),_0x90df28+=_0x322cf7(0x1e1)+listItem[0x0][_0x322cf7(0x17c)]+'\x20</span></p></div></div></div>',_0x90df28+='<div\x20class=\x22col-sm-4\x20col-xs-12\x20album-detail-right\x22>',_0x90df28+=_0x322cf7(0x1c0),_0x90df28+=_0x322cf7(0x100),_0x90df28+=_0x322cf7(0x143),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg\x22\x20data-themekey=\x22#\x22>',_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+_0x375235+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x188),_0x90df28+=_0x322cf7(0x12b),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0xe6),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+listItem[0x0]['View']+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x130),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x152)+listItem[0x0]['Like']+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x1ff),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>'+listItem[0x0][_0x322cf7(0x1f4)]+'</div>',_0x90df28+=_0x322cf7(0x176),_0x90df28+=_0x322cf7(0xf9),_0x90df28+=_0x322cf7(0x113)+_0x5df8de+_0x322cf7(0x1d5),_0x90df28+=_0x322cf7(0x155),isAdmin==!![]&&(_0x90df28+=_0x322cf7(0x106)+_0x5df8de+_0x322cf7(0x19f),_0x90df28+=_0x322cf7(0x173),_0x90df28+=_0x322cf7(0x132)+_0x5df8de+_0x322cf7(0x13f)),_0x90df28+=_0x322cf7(0xf2),_0x90df28;}if(_0x375235>=0x4){_0x90df28+='<div\x20class=\x22col-xs-12\x20col-sm-12\x20album-col-info\x20album-card\x22>',_0x90df28+=_0x322cf7(0x110)+_0x46b952+_0x322cf7(0xee),_0x90df28+=_0x322cf7(0x1ca),_0x90df28+=_0x322cf7(0x1b3),_0x90df28+='<div\x20class=\x22col-xs-12\x20album-case-half-left-row-1\x22>';var _0x5b82e7=ItemImage[0x0][_0x322cf7(0x10f)];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7=='JPEG'||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7=='jfif'||_0x5b82e7=='PNG'||_0x5b82e7=='BMP'||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7=='bmp'?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x0]['ImgURL']+'\x22\x20alt=\x22album\x20img\x20grid\x20case\x201\x22/>':(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x0][_0x322cf7(0xfc)]+'\x22\x20type=\x22video/mp4\x22>\x20Your\x20browser\x20does\x20not\x20support\x20the\x20video\x20tag.</video>',_0x90df28+=_0x322cf7(0x13a));_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1bb);var _0x5b82e7=ItemImage[0x1]['ImgType'];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7=='JPG'||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7=='GIF'||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7=='gif'||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x1]['ImgURL']+_0x322cf7(0x108):(_0x90df28+='<video\x20class=\x22video-box\x22\x20width=\x22100%\x22\x20height=\x22100%\x22><source\x20src=\x22'+ItemImage[0x1][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+=_0x322cf7(0x13a));_0x90df28+=_0x322cf7(0x1da),_0x90df28+=_0x322cf7(0x1e5),_0x90df28+=_0x322cf7(0xdf);var _0x5b82e7=ItemImage[0x2]['ImgType'];_0x5b82e7==_0x322cf7(0x159)||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7==_0x322cf7(0x170)||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+='<img\x20src=\x22'+ItemImage[0x2][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x2][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+=_0x322cf7(0x13a));_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x117);var _0x5b82e7=ItemImage[0x3][_0x322cf7(0x10f)];return _0x5b82e7=='jpg'||_0x5b82e7==_0x322cf7(0x17b)||_0x5b82e7=='JPEG'||_0x5b82e7==_0x322cf7(0x1f5)||_0x5b82e7==_0x322cf7(0x15f)||_0x5b82e7==_0x322cf7(0x1cb)||_0x5b82e7==_0x322cf7(0x179)||_0x5b82e7==_0x322cf7(0x1ec)||_0x5b82e7==_0x322cf7(0x1e2)||_0x5b82e7==_0x322cf7(0xde)||_0x5b82e7==_0x322cf7(0x1d4)?_0x90df28+=_0x322cf7(0x168)+ItemImage[0x3][_0x322cf7(0xfc)]+_0x322cf7(0x108):(_0x90df28+=_0x322cf7(0xf5)+ItemImage[0x3][_0x322cf7(0xfc)]+_0x322cf7(0x124),_0x90df28+='<div\x20class=\x22play-icon\x22><i\x20class=\x22fa\x20fa-play\x22></i></div>'),_0x90df28+='</div></div></div></div>',_0x90df28+=_0x322cf7(0x16e),_0x90df28+=_0x322cf7(0x1c6),_0x90df28+='<div\x20class=\x22album-heading\x22>',_0x90df28+=_0x322cf7(0x15c)+_0x46b952+'\x22>'+listItem[0x0][_0x322cf7(0xed)]+_0x322cf7(0xfd),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x149),_0x90df28+=_0x322cf7(0x109)+listItem[0x0][_0x322cf7(0xe9)]+'</span>\x20',_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22row\x20album-detail-footer\x22>',_0x90df28+='<div\x20class=\x22col-sm-8\x20col-xs-12\x20album-detail-left\x22>',_0x90df28+=_0x322cf7(0x18f),_0x90df28+=_0x322cf7(0x11d),_0x90df28+=_0x322cf7(0x168)+listItem[0x0][_0x322cf7(0x136)]+_0x322cf7(0x134),_0x90df28+='<div\x20class=\x22album-user-image-text\x22>',_0x90df28+=_0x322cf7(0x15a)+listItem[0x0]['Author']+_0x322cf7(0xfe),listItem[0x0][_0x322cf7(0x1b6)]!=''&&(_0x90df28+=_0x322cf7(0x15a)+_0x7ea7df+'|\x20'+_0x5400d5+_0x322cf7(0x189)),_0x90df28+=_0x322cf7(0x107)+listItem[0x0][_0x322cf7(0x19c)]+'</p>',_0x90df28+=_0x322cf7(0x1da),_0x90df28+=_0x322cf7(0x1e0),listItem[0x0][_0x322cf7(0x198)][_0x322cf7(0x15d)]!=0x0&&(_0x90df28+=_0x322cf7(0xe7)+listItem[0x0]['Event_Name']+_0x322cf7(0x10a)),_0x90df28+='<p\x20class=\x22media-place\x22>Place:\x20<span\x20id=\x22\x22>\x20'+listItem[0x0]['Event_Place']+'</span></p>',_0x90df28+='<p\x20class=\x22media-date\x22>Date:\x20<span\x20id=\x22\x22>\x20'+listItem[0x0][_0x322cf7(0x17c)]+_0x322cf7(0x1d0),_0x90df28+=_0x322cf7(0x181),_0x90df28+=_0x322cf7(0x1fe),_0x90df28+='<div\x20class=\x22album-data-box\x22>',_0x90df28+=_0x322cf7(0x100),_0x90df28+=_0x322cf7(0x143),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x13d),_0x90df28+=_0x322cf7(0xef),_0x90df28+='<div\x20class=\x22album-inner-card-btn-panel-count\x22>'+_0x375235+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x188),_0x90df28+='<span>\x20</span></div>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0xe6),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x182)]+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x1cd),_0x90df28+=_0x322cf7(0x130),_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x105)]+_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x144),_0x90df28+=_0x322cf7(0xef),_0x90df28+=_0x322cf7(0x1cd),_0x90df28+='<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/chat-icon.png\x22\x20data-themekey=\x22#\x22>',_0x90df28+='</div>',_0x90df28+=_0x322cf7(0x152)+listItem[0x0][_0x322cf7(0x1f4)]+_0x322cf7(0xef),_0x90df28+='</div></div></div></div></div>',_0x90df28+=_0x322cf7(0xf9),_0x90df28+=_0x322cf7(0x113)+_0x5df8de+_0x322cf7(0x1d5),_0x90df28+=_0x322cf7(0x155),isAdmin==!![]&&(_0x90df28+='<a\x20class=\x27album-edit-btn\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#createNew\x27\x20onclick=\x27editAlbum(\x22'+_0x5df8de+_0x322cf7(0x19f),_0x90df28+=_0x322cf7(0x173),_0x90df28+='<a\x20class=\x27album-delete-btn\x27\x20\x20onclick=\x27deleteFolder(\x22'+_0x5df8de+'\x22);\x27>',_0x90df28+=_0x322cf7(0x151)),_0x90df28+='</div></div></div></div>',_0x90df28;}}function downLoadFile(_0x503f94){var _0x1e8cf1=_0x457991,_0x12b154=siteURL+_0x1e8cf1(0x148)+_0x503f94+_0x1e8cf1(0x112);$[_0x1e8cf1(0x172)]({'url':_0x12b154,'headers':{'Accept':'application/json;odata=verbose'},'async':![],'success':function(_0x2e2077){var _0x48169b=_0x1e8cf1,_0x2e9de1=_0x2e2077['d'][_0x48169b(0x1e4)]['results'];downloadFile=[];var _0xd477d2,_0x334661='';$(_0x48169b(0x1a6))[_0x48169b(0x114)]();for(var _0x4b8f59=0x0;_0x4b8f59<_0x2e9de1[_0x48169b(0x15d)];_0x4b8f59++){thumbNailUrl=encodeURI(_0x2e9de1[_0x4b8f59][_0x48169b(0x1aa)]),downloadFile[_0x48169b(0xd7)](thumbNailUrl);var _0x51a93e=_0x2e9de1[_0x4b8f59][_0x48169b(0x184)];download1(thumbNailUrl,_0x51a93e);}},'eror':function(_0x193f52){var _0x5450a6=_0x1e8cf1;console[_0x5450a6(0x178)](_0x5450a6(0x1a7));}});}function download1(_0x327cde,_0x25751d){var _0x462365=_0x457991,_0x3bc95f=document[_0x462365(0xf8)]('a');_0x3bc95f[_0x462365(0x11f)]=_0x327cde,_0x3bc95f[_0x462365(0xe2)]=_0x25751d,_0x3bc95f[_0x462365(0x17d)]['display']='none';var _0x2961df=new MouseEvent('click',{'view':window,'bubbles':!![],'cancelable':!![]});document[_0x462365(0x1ea)][_0x462365(0x138)](_0x3bc95f),_0x3bc95f[_0x462365(0x141)](_0x2961df),document['body'][_0x462365(0x1d8)](_0x3bc95f),console['log'](_0x462365(0x1c2));}function KeyUpSearch(_0x1fb9af){var _0x154360=_0x457991;try{var _0x55d75f='';$('#galleryFirstImgThumb')[_0x154360(0x114)](),_0x55d75f=$(_0x154360(0x1af))[_0x154360(0x120)]()['trim']();var _0x54cd10=[];_0x55d75f!=''?_0x54cd10=_0x1fb9af['filter'](function(_0x435acb){var _0x39ea85=_0x154360;return(_0x55d75f[_0x39ea85(0x17f)]()=='null'?_0x435acb[_0x39ea85(0xed)]!=_0x39ea85(0x193):_0x435acb[_0x39ea85(0xed)]['toLowerCase']()==_0x55d75f[_0x39ea85(0xdd)]()||_0x435acb['Title']['toLowerCase']()[_0x39ea85(0x10e)](_0x55d75f[_0x39ea85(0xdd)]())!=-0x1)||(_0x55d75f[_0x39ea85(0x17f)]()==_0x39ea85(0x193)?_0x435acb[_0x39ea85(0xe9)]!=_0x39ea85(0x193):_0x435acb[_0x39ea85(0xe9)]['toLowerCase']()==_0x55d75f[_0x39ea85(0xdd)]()||_0x435acb['Description'][_0x39ea85(0xdd)]()[_0x39ea85(0x10e)](_0x55d75f['toLowerCase']())!=-0x1)||(_0x55d75f[_0x39ea85(0x17f)]()==_0x39ea85(0x193)?_0x435acb[_0x39ea85(0x198)]!=_0x39ea85(0x193):_0x435acb[_0x39ea85(0x198)]['toLowerCase']()==_0x55d75f['toLowerCase']()||_0x435acb[_0x39ea85(0x198)][_0x39ea85(0xdd)]()['indexOf'](_0x55d75f[_0x39ea85(0xdd)]())!=-0x1)||(_0x55d75f[_0x39ea85(0x17f)]()==_0x39ea85(0x193)?_0x435acb[_0x39ea85(0x1b6)]!='null':_0x435acb['UserDepartment'][_0x39ea85(0xdd)]()==_0x55d75f[_0x39ea85(0xdd)]()||_0x435acb[_0x39ea85(0x1b6)][_0x39ea85(0xdd)]()[_0x39ea85(0x10e)](_0x55d75f[_0x39ea85(0xdd)]())!=-0x1)||(_0x55d75f['trim']()=='null'?_0x435acb['Event_Place']!=_0x39ea85(0x193):_0x435acb['Event_Place'][_0x39ea85(0xdd)]()==_0x55d75f[_0x39ea85(0xdd)]()||_0x435acb[_0x39ea85(0x1c1)][_0x39ea85(0xdd)]()[_0x39ea85(0x10e)](_0x55d75f[_0x39ea85(0xdd)]())!=-0x1)||(_0x55d75f[_0x39ea85(0x17f)]()==_0x39ea85(0x193)?_0x435acb[_0x39ea85(0xdb)]!=_0x39ea85(0x193):_0x435acb['Author'][_0x39ea85(0xdd)]()==_0x55d75f[_0x39ea85(0xdd)]()||_0x435acb[_0x39ea85(0xdb)]['toLowerCase']()[_0x39ea85(0x10e)](_0x55d75f[_0x39ea85(0xdd)]())!=-0x1);}):_0x54cd10=_0x1fb9af[_0x154360(0x18d)](function(_0xef9532){return _0xef9532;});for(var _0x39679e=0x0;_0x39679e<_0x54cd10[_0x154360(0x15d)];_0x39679e++){var _0x1bb942=sortMediagallery(_0x54cd10,_0x39679e);$(_0x154360(0x102))[_0x154360(0x121)](_0x1bb942);}}catch(_0x595fbc){console[_0x154360(0x178)](_0x595fbc);}}function editAlbum(_0x2f2bb1){var _0x2e9a9c=_0x457991;$(_0x2e9a9c(0x1cc))[_0x2e9a9c(0xe0)](),$(_0x2e9a9c(0x103))[_0x2e9a9c(0x199)](),$(_0x2e9a9c(0x10c))[_0x2e9a9c(0x205)]('Edit\x20Album'),GetFolderDetails(_0x2f2bb1);}function _0xf3fb(){var _0x582d2c=['</a><a\x20class=\x27album-delete-btn\x27\x20\x20onclick=\x27deleteFolder(\x22','filter','forEach','<div\x20class=\x22col-sm-12\x20album-user-info-grid\x22>','</td>','AllowComment','#mostcomment','null','.mediaGalleryTab','click','designation','Please\x20enter\x20description\x20!','Event_Name','hide','<div\x20class=\x22col-sm-8\x20col-xs-12\x20album-detail-left\x22>','<div\x20class=\x22albumNoRecord\x20col-sm-12\x20col-xs-12\x20col-md-12\x22><h3\x20class=\x22top5\x22\x20data-localize=\x22NoRecord_MediaGallery\x22>','EMail','#btnSelect','labelText_Actual','\x22);\x27>','<div\x20class=\x22row\x20album-img-grid-case-2\x22\x20id=\x22album-case-2\x22>','<div\x20class=\x22album-user-image-text\x22>','webAbsoluteUrl','folderName','Album\x20name\x20allow\x20only\x20250\x20char','SP.Data.MediaGalleryItem','.panel-head-hidden-div','downlod\x20img\x20error','location','#txtDescription','ServerRelativeUrl','formatDate','html','Access\x20Denied!','\x09<div\x20class=\x22chexbox_mg\x22>','#txtAlbumSearch','format','endrecordMyCustomer','<div\x20class=\x22row\x20album-img-grid-case-3\x22\x20id=\x22album-case-3\x22>','<div\x20class=\x22col-xs-6\x20album-case-half-left\x22>','<div\x20class=\x22col-xs-12\x20col-sm-9\x20album-card-right\x22><div\x20class=\x22album-detail-box\x22><div\x20class=\x22album-heading\x22>','7362784ApYYRY','UserDepartment','results','find','application/json;odata=verbose','<p\x20class=\x22media-event\x22>Event:\x20<span\x20id=\x22\x22>','<div\x20class=\x22col-xs-12\x20album-case-half-left-row-2\x22>','<div\x20class=\x22col-xs-12\x20col-sm-12\x20album-col-info\x20album-card\x20album-card-default\x22>','\x27\x20and\x20WebPartName\x20eq\x20\x27Media\x27\x20and\x20Scope\x20eq\x20\x27EveryOne\x27))\x20or\x20(CompanyId\x20eq\x20\x27','MediaGallery/','2841897PGWQMN','<div\x20class=\x22album-data-box\x22>','Event_Place','Downloading...','\x22\x20/>','done','<div\x20class=\x22album-inner-card-btn-panel-count\x22>234</div>','<div\x20class=\x22album-detail-box\x22>','getItemsWithQueryItem','application/json;\x20odata=verbose','encodeURILink','<div\x20class=\x22row\x20album-img-grid-case-4\x22\x20id=\x22album-case-4\x22>','jfif','#btnUpdatefolder','<div\x20class=\x22album-inner-card-btn-panel-icon\x22>','#AllowComments','tablenavMyCustomer','\x20</span></p>','7073997AFFpTk','ImageCreateDate','/_api/web/lists/getbytitle(\x27Event\x27)/items?$select=*,Location,Id,Title,Department,EventDate&$orderby\x20Modified\x20desc&$top=100','bmp','\x22);\x27>\x20','#eventTBody','#Recentuploadfile','removeChild','</span>\x20','</div></div>','value','&sourcelocation=../Pages/MediaGalleryNew.aspx','<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/like-icon.png\x22\x20data-themekey=\x22#\x22/>','</span></p>\x20','error','<div\x20class=\x22col-sm-6\x20album-user-details-box\x22>','<p\x20class=\x22media-date\x22>Date:\x20<span\x20id=\x22\x22>\x20','gif','\x09<td><span>','Files','<div\x20class=\x22col-xs-6\x20album-case-half-right\x22>','getMonth','sorterTableCustomerList','\x22\x20onclick=\x22onlyOne(this)\x22\x20id=\x22','\x22data-themekey=\x22#\x22>','body','pushNotification','jpeg','[data-localize]','ModalDialog','<i\x20class=\x22fa\x20fa-download\x22\x20aria-hidden=\x22true\x22></i>','close','#folderTitle','safari','CompanySiteUrl','Comments','GIF','preventDefault','Forms','Location','MERGE','userEmail','/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=ID&$filter=((CompanyId\x20eq\x20\x27','<p\x20class=\x22media-place\x22>Place:\x20<span\x20id=\x22\x22>\x20','#updateCreatedBy','<div\x20class=\x22col-sm-4\x20col-xs-12\x20album-detail-right\x22>','<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/chat-icon.png\x22\x20data-themekey=\x22#\x22>','</span></div>','Comment','5594265PAQVXe','check','?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title\x20eq\x20\x27Workplace\x27\x20','text','responseText','stringify','Recommended\x20to\x20clear\x20the\x20browsing\x20data\x20and\x20cookies\x20for\x20smooth\x20and\x20fast\x20browsing.\x20Please\x20press\x20Ctrl\x20+\x20H\x20to\x20clear\x20cookies.','<div\x20class=\x22album-heading\x22>','</span>','push','data-localize','<div\x20class=\x22album-img-grid-case-1\x22\x20id=\x22album-case-1\x22>','split','Author','Album\x20created\x20successfully\x20!!!','toLowerCase','png','<div\x20class=\x22col-xs-12\x20album-case-half-right-row-1\x22>','show','#txtCreated','download','#txteventName','#seemore','HTMLElement','<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/visibility-icon.png\x22\x20data-themekey=\x22#\x22>','<p\x20class=\x22media-event\x22>Event:\x20<span\x20id=\x22\x22>\x20','oddrow','Description','6bYNwvF','Are\x20you\x20sure\x20to\x20delete\x20this\x20album\x20?','#updateDate','Title','\x22)\x27>','</div>','#langBlankTextMessageMedia','2sQFbPn','</div></div></div></div>','<div\x20class=\x22album-img-grid-default\x22\x20id=\x22album-default-case\x22>','#createNew','<video\x20class=\x22video-box\x22\x20width=\x22100%\x22\x20height=\x22100%\x22><source\x20src=\x22','undefined','evenselected','createElement','<div\x20class=\x22dropdown\x20custom-card-menu\x22>','toString','Department','ImgURL','</a>\x20','</p>','#txtLocation','<div\x20class=\x22album-inner-card-btn-panel\x20album-inner-card-btn-panel-isTab\x22>','Searching...','#galleryFirstImgThumb','#btnSubmit','getDate','Like','<a\x20class=\x27album-edit-btn\x27\x20data-toggle=\x27modal\x27\x20data-target=\x27#createNew\x27\x20onclick=\x27editAlbum(\x22','<p\x20class=\x22mb0\x20Emailfont\x22>','\x22\x20alt=\x22album\x20img\x20grid\x20case\x201\x22/>','<span>','</span></p>','\x27\x20and\x20WebPartName\x20eq\x20\x27Media\x27\x20and\x20ContributorsId\x20eq\x20\x27','#modalHeader','totalpagesMyCustomer','indexOf','ImgType','<div\x20class=\x27col-xs-12\x20col-sm-3\x20album-card-left\x27\x20style=\x27cursor:\x20pointer;\x27\x20onclick=\x27openAlbumDetailsPage(\x22','selectedrowMyCustomer','\x27)?$select=ID,Description,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$top=5000&$orderby=Modified\x20desc','<a\x20class=\x27album-download-btn\x27\x20\x20onclick=\x27downLoadFile(\x22','empty','<div\x20class=\x22album-inner-card-btn-panel-count\x22>3</div>','/_api/web/lists/GetByTitle(\x27MediaGallery\x27)/items(\x27','<div\x20class=\x22col-xs-12\x20album-case-half-right-row-2\x22>','userDisplayName','<div\x20class=\x22row\x20album-detail-footer\x22>','DELETE','Not\x20Allowed','\x09\x09<input\x20type=\x22checkbox\x22\x20name=\x22check\x22\x20class=\x22eventChkList\x22\x20value=\x22','<div\x20class=\x22col-sm-6\x20album-user-image-box\x22>','.eventChkList:checked','href','val','append','\x22\x20>','\x09</label>','\x22\x20type=\x22video/mp4\x22>\x20Your\x20browser\x20does\x20not\x20support\x20the\x20video\x20tag.</video>','\x20\x20</td>','Key','Publishing1','userId','head','modal','<span>\x20</span></div>','button','\x27\x20and\x20WebPartName\x20eq\x20\x27Tech\x20Admin\x27\x20and\x20ContributorsId\x20eq\x20\x27','../Pages/MediaGalleryDetail.aspx?WebAppId=2&FName=','Allowed','<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/like-icon.png\x22\x20data-themekey=\x22#\x22>','#btnCreateNewAlbum','<a\x20class=\x27album-delete-btn\x27\x20\x20onclick=\x27deleteFolder(\x22','Please\x20enter\x20Title!\x20','\x22\x20data-themekey=\x22#\x22>','<div\x20class=\x22album-info\x22><span>','userImage','Album\x20updated\x20successfully\x20!!!','appendChild','POST','<div\x20class=\x22play-icon\x22><i\x20class=\x22fa\x20fa-play\x22></i></div>','lableText_Converted','SP.Folder','<img\x20src=\x22../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg\x22\x20data-themekey=\x22#\x22>','hasClass','\x22);\x27><i\x20class=\x27fa\x20fa-trash-o\x27\x20aria-hidden=\x27true></i></a>','#__REQUESTDIGEST','dispatchEvent','#createdByname','<div\x20class=\x22album-inner-card-btn-item\x22>','<div\x20class=\x22album-inner-card-btn-panel-gap\x22><span>\x20</span>','\x27)\x20or(CompanyId\x20eq\x20\x27','MediaGallery','</a>','/_api/Web/GetFolderByServerRelativeUrl(\x27','<div\x20class=\x22album-info\x22>','9wndiKW','pagedropdownMyCustomer','#NoRecordFoundclientmaster','\x20\x20\x20\x20\x20\x20<td>','<a\x20class=\x27album-download-btn\x27\x20onclick=\x27downLoadFile(\x22','myCheckbox','\x09\x09<label\x20for=\x22','<i\x20class=\x27fa\x20fa-trash-o\x27\x20aria-hidden=\x27true\x27></i></a>','<div\x20class=\x22album-inner-card-btn-panel-count\x22>','Keep\x20watching\x20for\x20upcoming\x20albums','sorter','<i\x20class=\x22fa\x20fa-download\x22\x20aria-hidden=\x22true\x22></i></a>','Please\x20select\x20event','5964890iDZnNK','each','jpg','<p\x20class=\x22mb0\x22>','when','<a\x20href=\x22','length','getElementsByName','PNG','678332SfphrB','MM\x20dd,\x20yy','TempTableClientMaster','attr','totalrecordsMyCustomer','#txtTitle','<i\x20class=\x22fa\x20fa-trash-o\x22\x20aria-hidden=\x22true\x22></i>\x20</a>','Multilingual\x20:\x20','<img\x20src=\x22','#txtDate','\x22);\x27><i\x20class=\x27fa\x20fa-trash-o\x27\x20aria-hidden=\x27true\x27></i></a>','1393507DXDeja','documentMode','setDate','<div\x20class=\x22col-xs-12\x20col-sm-9\x20album-card-right\x22>','<div\x20class=\x22album-inner-card-btn-panel-count\x22>5</div>','JPEG','checked','ajax','<i\x20class=\x22fa\x20fa-pencil-square-o\x22\x20aria-hidden=\x22true\x22></i></a>','getFullYear','MM/dd/yyyy','</div></div></div></div></div>','#RecentAlbumfile','log','BMP','#mostViewFile','JPG','Publishing','style','\x20\x20</tr>','trim','\x09</div></td>','</div></div></div>','View','toISOString','Name','startrecordMyCustomer','<div\x20class=\x22col-xs-12\x20col-sm-12\x20album-col-info\x20album-card\x22>','datepicker','<div\x20class=\x22album-inner-card-btn-panel-gap\x22>','\x20</p>','GET','/_api/Web/lists/GetByTitle(\x27MediaGallery\x27)/rootfolder/folders?$select=*,FileRef,FileLeafRef&$orderby=TimeCreated\x20desc&$top=5000'];_0xf3fb=function(){return _0x582d2c;};return _0xf3fb();}var LabelDefaultLangauge=[],labels=[];function ChangeLabels(){var _0xd7e86a=_0x457991,_0x15f79f='DefaultLanguage';if(LabelDefaultLangauge['length']==0x0){var _0x4bfeee=_0xd7e86a(0x204);$[_0xd7e86a(0x15b)](CommonFunction[_0xd7e86a(0x1c7)]('LabelsSettings',_0x4bfeee))[_0xd7e86a(0x1c4)](function(_0x177d22){var _0x54ea50=_0xd7e86a;try{LabelDefaultLangauge=_0x177d22[_0x54ea50(0x1b7)],SetDMSText(_0x177d22[_0x54ea50(0x1b7)],_0x15f79f);}catch(_0x1dd743){alert(_0x54ea50(0xd4));}});}else SetDMSText(LabelDefaultLangauge,_0x15f79f);}function SetDMSText(_0x5a1684,_0x10f44a){var _0x17e154=_0x457991;labels=[],$[_0x17e154(0x158)](_0x5a1684,function(_0x2e215f,_0x5c95ed){var _0x3e69f1=_0x17e154,_0x13d4d5=_0x5c95ed[_0x3e69f1(0x126)],_0x47471f=_0x5c95ed[_0x10f44a];if(_0x47471f==null||_0x47471f==''||_0x47471f==undefined)_0x47471f=_0x5c95ed['DefaultLanguage'];var _0x25aee6={'labelText_Actual':_0x13d4d5,'lableText_Converted':_0x47471f};labels[_0x3e69f1(0xd7)](_0x25aee6);}),DetectBrowser();}function DetectBrowser(){var _0x247edf=_0x457991,_0x4bd589=/constructor/i['test'](window[_0x247edf(0xe5)])||function(_0x16c113){var _0x541906=_0x247edf;return _0x16c113[_0x541906(0xfa)]()==='[object\x20SafariRemoteNotification]';}(!window[_0x247edf(0x1f2)]||typeof safari!==_0x247edf(0xf6)&&safari[_0x247edf(0x1eb)]),_0x4cb550=![]||!!document[_0x247edf(0x16c)];_0x4bd589||_0x4cb550?ChangeWebPartsHeadings_OldBrowser():ChangeWebPartsHeadings();}function ChangeWebPartsHeadings(){var _0x353e9d=_0x457991;try{$(_0x353e9d(0x1ed))[_0x353e9d(0x158)](function(_0x543fcd,_0x51d0d5){var _0x273674=_0x353e9d;try{var _0x436f18=$(this)[_0x273674(0x163)]('data-localize'),_0x138566=labels['find'](function(_0x3dc705){var _0x2e9c9c=_0x273674;return _0x3dc705['labelText_Actual'][_0x2e9c9c(0x17f)]()===_0x436f18;})['lableText_Converted'];if($(this)[_0x273674(0x1b8)]('a')[_0x273674(0x15d)]>0x0)$(this)['find']('a')[_0x273674(0x1ac)](_0x138566);else{if($(this)[_0x273674(0x1b8)]('b')[_0x273674(0x15d)]>0x0)$(this)[_0x273674(0x1b8)]('b')[_0x273674(0x1ac)](_0x138566);else{if($(this)[_0x273674(0x1b8)]('p')[_0x273674(0x15d)]>0x0)$(this)['find']('p')[_0x273674(0x1ac)](_0x138566);else $(this)[_0x273674(0x13e)](_0x273674(0x12c))?$(this)[_0x273674(0x163)]('value',_0x138566):$(this)['html'](_0x138566);}}}catch(_0x2468ec){console[_0x273674(0x178)](_0x273674(0x167)+_0x436f18+'\x20key\x20not\x20found.'),$(this)[_0x273674(0x163)](_0x273674(0x1db),$(this)[_0x273674(0x120)]());}});}catch(_0x3ebe64){console['log'](_0x353e9d(0x167)+_0x3ebe64);}}function ChangeWebPartsHeadings_OldBrowser(){var _0x43f266=_0x457991;try{$(_0x43f266(0x1ed))['each'](function(_0x5ee38f,_0x500a01){var _0x25404d=_0x43f266;try{var _0x582c5a=$(this)['attr'](_0x25404d(0xd8)),_0x5e71f3=findObjectByKey(labels,_0x582c5a,_0x582c5a);if($(this)[_0x25404d(0x1b8)]('a')[_0x25404d(0x15d)]>0x0)$(this)[_0x25404d(0x1b8)]('a')[_0x25404d(0x1ac)](_0x5e71f3);else{if($(this)['find']('b')['length']>0x0)$(this)[_0x25404d(0x1b8)]('b')['html'](_0x5e71f3);else{if($(this)[_0x25404d(0x1b8)]('p')[_0x25404d(0x15d)]>0x0)$(this)[_0x25404d(0x1b8)]('p')[_0x25404d(0x1ac)](_0x5e71f3);else $(this)['hasClass'](_0x25404d(0x12c))?_0x5e71f3!=null&&_0x5e71f3!=_0x25404d(0x193)&&_0x5e71f3!=''?$(this)['attr'](_0x25404d(0x1db),_0x5e71f3):$(this)[_0x25404d(0x163)](_0x25404d(0x1db),$(this)[_0x25404d(0x120)]()):_0x5e71f3!=null&&_0x5e71f3!=_0x25404d(0x193)&&_0x5e71f3!=''?$(this)['html'](_0x5e71f3):$(this)['html']($(this)[_0x25404d(0x205)]());}}}catch(_0x47be08){console[_0x25404d(0x178)]('Multilingual\x20:\x20'+_0x582c5a+'\x20key\x20not\x20found.'),$(this)[_0x25404d(0x163)](_0x25404d(0x1db),$(this)[_0x25404d(0x120)]());}});}catch(_0x766062){console[_0x43f266(0x178)](_0x43f266(0x167)+_0x766062);}}function _0x5cbf(_0x1f5b3a,_0x2bfafd){var _0xf3fb60=_0xf3fb();return _0x5cbf=function(_0x5cbfbf,_0x4f0d1d){_0x5cbfbf=_0x5cbfbf-0xd2;var _0x497aea=_0xf3fb60[_0x5cbfbf];return _0x497aea;},_0x5cbf(_0x1f5b3a,_0x2bfafd);}function findObjectByKey(_0x21933a,_0x4988ba,_0x5c63cb){var _0x35238d=_0x457991;for(var _0x32a25d=0x0;_0x32a25d<_0x21933a[_0x35238d(0x15d)];_0x32a25d++){if(_0x21933a[_0x32a25d][_0x35238d(0x19e)]==_0x5c63cb)return _0x21933a[_0x32a25d][_0x35238d(0x13b)];}return null;}function openAlbumDetailsPage(_0x302b02){var _0x3f6782=_0x457991;window[_0x3f6782(0x1a8)]['href']=_0x302b02;}
+﻿//var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+var arrItem=[];
+var employeePicURL='';
+var fileLeafRef='';
+var listItem=new Array();
+var ItemImage=new Array();
+var downloadFile=new Array();
+var newArr=new Array();
+var itemId=0;
+var currentDlg='';
+var siteURL='';
+$(document).ready(function(){
+    siteURL=titanForWork.currentCompanyUrl(Logged_CompanyId);
+	GetCurrentUserRight();
+	GetMediaGallery()
+	ChangeLabels();
+	//GetFolderDetails(url)
+	getEvent();
+	var url=window.location;
+	userActivityNotificationEntry(_spPageContextInfo.userId,url)
+
+	SetCalendar();
+	
+	$('#txtCreated').val(_spPageContextInfo.userDisplayName);
+	//$('#txtDate').val();
+	
+	$("#btnSubmit").on("click", function () {
+	 
+	 if(isAdmin==false){
+	   alert('Access Denied!');
+	   $('#btnCreateNewAlbum').hide();
+	   return false;
+	   
+	 }
+	createFolder();
+	});
+	$("#btnCreateNewAlbum").on("click", function () {
+	   
+	   $('#txtTitle').val('');
+	   $('#txteventName').val('');
+	   $('#txtLocation').val('');
+	   //$('#txtDate').val('');
+	   $('#txtDescription').val('');
+	   $('#btnSubmit').show();
+	   $('#AllowComments').val('Allowed');
+	   $('#btnUpdatefolder').hide();	   
+	
+	});	
+	
+	$("#btnUpdatefolder").on("click", function () {
+	  updateFolder();
+	});
+	
+	$("#btnSelect").on("click", function () {
+	  var EventValue=$('.eventChkList:checked').val();
+	  if(EventValue==undefined){
+	    alert('Please select event');
+	    return false;
+	  }
+	  else{
+	      EventValue=EventValue.split(',');
+	      $('#txteventName').val(EventValue[0])
+	      $('#txtLocation').val(EventValue[1])
+	      var Publishing=new Date(EventValue[2]);
+	      var date=Publishing.format('MM dd, yy');
+	      Publishing= $.datepicker.formatDate('MM dd, yy', Publishing);
+	      $('#txtDate').val(Publishing);
+	     }
+	  
+	});
+	
+	$("#Recentuploadfile").on("click", function (e) {
+	  e.preventDefault();
+	  recentUpload(newArr,isAdmin);
+	});
+	$("#RecentAlbumfile").on("click", function (e) {
+	  e.preventDefault();
+	  recentAlbum(newArr,isAdmin);
+	});
+	
+	
+	$("#mostViewFile").on("click", function (e) {
+	  e.preventDefault();
+	  mostView(newArr,isAdmin);
+	});
+	$("#mostLiked").on("click", function (e) {
+	  e.preventDefault();
+	  mostLike(newArr,isAdmin);
+	});
+	$("#mostcomment").on("click", function (e) {
+	 e.preventDefault();
+     mostComments(newArr,isAdmin);
+	});
+	
+	$("#seemore").on("click", function (e) {
+	 e.preventDefault();
+	 var dlgTitle = 'Searching...';
+        var dlgMsg = '<br />Please wait!!';
+        var dlgHeight = 200;
+        var dlgWidth = 400;
+        currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+        setTimeout(function () {
+            getMoreAlbum();
+            currentDlg.close();
+        }, 100);   
+	 
+     
+	});
+
+
+
+
+
+
+});
+var isAdmin=false;
+function GetCurrentUserRight() {
+ var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=ID&$filter=((CompanyId eq '" +Logged_CompanyId+ "' and WebPartName eq 'Media' and ContributorsId eq '"+_spPageContextInfo.userId+"') or(CompanyId eq '" +Logged_CompanyId+ "' and WebPartName eq 'Media' and Scope eq 'EveryOne')) or (CompanyId eq '" +Logged_CompanyId+ "' and WebPartName eq 'Tech Admin' and ContributorsId eq '"+_spPageContextInfo.userId+"')";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function(data) {
+            var response = data;            
+            if(response.d.results.length>0){
+              isAdmin=true;              
+            }
+            else{
+             $('#btnCreateNewAlbum').hide();            
+            }
+        },
+        error: function(data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+    
+}
+
+
+
+
+function GenerateTableMyCustomerList()
+{
+    sorterTableCustomerList = new TINY.table.sorter('sorterTableCustomerList', 'TempTableClientMaster', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 5,
+       // colddid: 'columnsMyCustomer',
+        currentid: 'currentpageMyCustomer',
+        totalid: 'totalpagesMyCustomer',
+        startingrecid: 'startrecordMyCustomer',
+        endingrecid: 'endrecordMyCustomer',
+        totalrecid: 'totalrecordsMyCustomer',
+        hoverid: 'selectedrowMyCustomer',
+        pageddid: 'pagedropdownMyCustomer',
+        navid: 'tablenavMyCustomer',
+        //sortcolumn: 1,//uncomment if you want to sorting on here on page loading by default on column based
+        //sortdir: 1,
+        init: true
+    });
+}
+
+function ConvertDateTimeFormat(date, delimiter) {
+    return date.split(delimiter)[1] + "" + delimiter + "" + date.split(delimiter)[0] + "" + delimiter + "" + date.split(delimiter)[2];
+}
+
+
+
+function SetCalendar()
+{
+    var d = new Date();
+    today = d.getMonth()+1 + ' ' + d.getDate() + ' ' + d.getFullYear();
+    $('#txtDate').datepicker({
+        defaultDate: 0,
+        minDate: "-48m",
+        maxDate:0,
+        dateFormat: 'MM dd, yy',
+    }).datepicker("setDate", new Date()) ;
+}
+
+var mediaGalleryCounter=0;
+var topItems=10;
+var arrItems;
+function GetMediaGallery()
+{
+    var endPointURL = siteURL +"/_api/Web/lists/GetByTitle('MediaGallery')/rootfolder/folders?$select=*,FileRef,FileLeafRef&$orderby=TimeCreated desc&$top=5000";
+ 	//var endPointURL = siteURL +"/_api/Web/lists/GetByTitle('MediaGallery')/rootfolder/folders?$select=*,FileRef,FileLeafRef&$orderby=Like desc";
+    $.ajax({
+        url: endPointURL ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+
+            var folders = data.d.results;
+            console.log(data);
+            arrItems=[];            
+            var counterIndex=0;
+            $('#galleryFirstImgThumb').empty();
+            mediaGalleryCounter=0;
+            for (var i = 0; i < folders.length; i++)
+            {
+	            if(folders[i].Name!="Forms" && folders[i].Name!="_t" && folders[i].Name!="_w")
+	            {
+	              	counterIndex==1;
+	                var encodeURILink = encodeURI(folders[i].ServerRelativeUrl);
+	                var folderName=folders[i].Name;
+	                arrItems.push({
+	                encodeURILink:encodeURILink,
+	                folderName:folderName
+	                });
+	                var albumDescription="";
+	                var Title=folders[i].Title;                    
+	                                   
+	              
+	             }
+	             
+             }
+             if(folders.length>topItems){
+              $('#seemore').show()              
+             }
+             else{
+              $('#seemore').hide() 
+              } 
+             if(counterIndex==0)
+             {
+                var langblankMessage=$('#langBlankTextMessageMedia').text();
+	            if(langblankMessage=="")
+	            {
+	               langblankMessage="Keep watching for upcoming albums";
+	            }
+                var norecord='<div class="albumNoRecord col-sm-12 col-xs-12 col-md-12"><h3 class="top5" data-localize="NoRecord_MediaGallery">'+langblankMessage+'</h3></div>';
+              	//$('gallerySecondImgThumb').append(norecord);
+               	$('.mediaGalleryTab').append(norecord);
+
+             }
+             getMoreAlbum();
+        }, eror: function (data)
+        {
+            console.log(data);
+        }
+    });
+}
+var y=0;
+var x=0
+function getMoreAlbum(){
+  y+=10;
+  x=y-10;
+  $('#seemore').show();
+  if(arrItems.length<y){
+   y=arrItems.length;
+   $('#seemore').hide();   
+  }
+  for(var i=x;i<y;i++){  
+    GetMediaGalleryThumbNail(arrItems[i].encodeURILink,arrItems[i].folderName);
+  }
+ 
+}
+
+function GetMediaGalleryThumbNail(targetfolderUrl,folderName,Author,userImage)
+{
+    //var redirecturl= ""+_spPageContextInfo.webAbsoluteUrl+"/Pages/MediaGallery.aspx?WebAppId="+companyID+"";
+	var endPointURL = siteURL  + "/_api/Web/GetFolderByServerRelativeUrl('" + targetfolderUrl+ "')?$select=ID,Description,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$top=5000&$orderby=Modified desc";
+    $.ajax({
+        url: endPointURL ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+               var files = data.d.Files.results;             
+               
+               var thumbNailUrl="";
+               var menuFolderHTML="";
+               //var folderId=Id;
+               mediaGalleryCounter++;
+               var ImageCount=0; 
+               ItemImage=[];
+               ImageCount=files.length;
+              
+               var extofImage;
+               if(ImageCount >= 4){
+	            for (var i = 0; i < 4; i++)
+	            {
+	               thumbNailUrl=encodeURI(files[i].ServerRelativeUrl)
+	               extofImage=thumbNailUrl.split('.');
+                   extofImage=extofImage[extofImage.length-1]
+	               ItemImage.push({
+	                ImgURL:thumbNailUrl,
+	                ImgType:extofImage,
+	                imgCount:ImageCount,
+	                Id:itemId
+	               })
+	            }
+	            }
+	            else if(ImageCount==3){
+	            for (var i = 0; i < 3; i++)
+	            {
+	               thumbNailUrl=encodeURI(files[i].ServerRelativeUrl)
+	               extofImage=thumbNailUrl.split('.');
+                   extofImage=extofImage[extofImage.length-1]
+	               ItemImage.push({
+	                ImgURL:thumbNailUrl,
+	                Id:itemId,
+	                imgCount:ImageCount,
+	                ImgType:extofImage
+	               })
+	            }
+	            }
+	            else if(ImageCount==2){
+	            for (var i = 0; i < 2; i++)
+	            {
+	               thumbNailUrl=encodeURI(files[i].ServerRelativeUrl)
+	               extofImage=thumbNailUrl.split('.');
+                   extofImage=extofImage[extofImage.length-1]
+	               ItemImage.push({
+	                ImgURL:thumbNailUrl,
+	                Id:itemId,
+	                imgCount:ImageCount,
+	                ImgType:extofImage
+	               })
+
+	            }
+	            }
+	            else if(ImageCount==1){
+                  	            
+	               thumbNailUrl=encodeURI(files[0].ServerRelativeUrl)
+	               extofImage=thumbNailUrl.split('.');
+                   extofImage=extofImage[extofImage.length-1]
+	               ItemImage.push({
+	                ImgURL:thumbNailUrl,
+	                Id:itemId,
+	                imgCount:ImageCount,
+	                ImgType:extofImage
+	               })
+
+	             
+	            }
+	            else{
+                  	            
+	               thumbNailUrl=''//encodeURI(files[].ServerRelativeUrl)
+	               extofImage=thumbNailUrl.split('.');
+                   extofImage=extofImage[extofImage.length-1]
+	               ItemImage.push({
+	                ImgURL:thumbNailUrl,
+	                Id:itemId,
+	                imgCount:ImageCount,
+	                ImgType:extofImage
+	               })	             
+	            }        
+	            
+	            	          
+	               GetFolderDetails(targetfolderUrl);
+	              var menuFolderHTML =mediaHTML(ImageCount,targetfolderUrl);           
+	              $('#galleryFirstImgThumb').append(menuFolderHTML);
+	           
+        }, eror: function (data) {
+
+            console.log('error');
+        }
+    });
+}
+
+
+
+
+function createFolder() {
+
+	var folderName = $("#txtTitle").val();
+	if(folderName==''){
+	   alert('Please enter Title! ');
+	   return false;
+	}
+	if(folderName.length>250){
+	 alert('Album name allow only 250 char');
+	 return false;
+	}
+	var eventName=$("#txteventName").val();
+	/*if(eventName==''){
+	   alert('Please select Event !');
+	   return false
+	}*/
+	var Location=$("#txtLocation").val();
+	/*if(Location==''){
+	   alert('Please select place!');
+	   return false
+	}*/
+
+	var description=$('#txtDescription').val();
+	if(description==''){
+	   alert('Please enter description !');
+	   return false
+	}
+	var txtDate=$('#txtDate').val();
+	var d=new Date(txtDate);
+    date=d.format('MM/dd/yyyy')
+    //date=ConvertDateTimeFormat(Date, '/')
+
+	var allowComment=$('#AllowComments').val();
+	//var siteUrl = _spPageContextInfo.webAbsoluteUrl;
+	var fullUrl = siteURL + "/_api/web/folders";
+	var itemType = GetItemTypeForListName('MediaGallery');
+	$.ajax({
+	url: fullUrl,
+	async: false,
+	type: "POST",
+	data: JSON.stringify({
+	'__metadata': { 'type': 'SP.Folder'},
+	//'Title':'testbylakhan',
+	'ServerRelativeUrl': 'MediaGallery/' + folderName
+	}),
+	headers: {
+	"accept": "application/json;odata=verbose",
+	"content-type": "application/json;odata=verbose",
+	"X-RequestDigest": $("#__REQUESTDIGEST").val()
+	},
+	success: function (data){
+	var targetFileUrl=  data.d.ServerRelativeUrl ;
+	  alert('Album created successfully !!!');
+	  $('#createNew').modal('hide');
+	  y=0;
+      x=0
+
+	  GetFolderDetails(targetFileUrl)	  
+	  addFolderDetails(folderName,eventName,Location,description,date,allowComment);
+	  GetMediaGallery();
+	  
+	},
+	error: function (data){
+	   alert(data);
+	}
+	});
+}
+
+var folderId='';
+
+function GetFolderDetails(targetfolderUrl)
+{ 
+
+  fileLeafRef=targetfolderUrl;
+	var endPointURL = siteURL  + "/_api/Web/lists/GetByTitle('MediaGallery')/Items?$select=*,File_x0020_Type,Author/Title,Author/EMail,FileRef,FileLeafRef&$expand=Author/Title&$filter=FileRef eq '"+targetfolderUrl+"'";
+	
+    $.ajax({
+        url: endPointURL ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {               
+             var folders = data.d.results;              
+             folderId=folders[0].Id;
+             listItem=[];             
+             $('#folderTitle').text(folders[0].FileLeafRef);
+             var Title=folders[0].FileLeafRef;
+             var Description= folders[0].Description;
+             if(Description==null){
+               Description='';
+             }
+             $('#folderDescription').text(Description);
+             var Author=folders[0].Author.Title 
+             $('#createdByname').text(Author); 
+             var AuthorEmail=folders[0].Author.EMail;            
+             var Publishing= new Date(folders[0].ImageCreateDate);
+             var Publishing1= new Date(folders[0].ImageCreateDate);             
+             Publishing= $.datepicker.formatDate('MM dd, yy', Publishing);
+             $('#txtDate').val(Publishing);             
+             $('#txtTitle').val(folders[0].FileLeafRef);
+             $('#txtDescription').val(Description);
+             var AllowComments=folders[0].AllowComment;
+             if(AllowComments==null || AllowComments=='')AllowComments='Allowed';
+             $('#AllowComments').val(AllowComments); 
+             $('#updateCreatedBy').val(folders[0].Author.Title);
+             var Publishing= new Date(folders[0].ImageCreateDate);
+             Publishing= $.datepicker.formatDate('MM dd, yy', Publishing);
+             $('#updateDate').val(Publishing);
+             var EName=folders[0].Event_Name;
+             if(EName==null)EName='';
+             $('#txteventName').val(EName);
+             var EPlace=folders[0].Event_Place
+             if(EPlace==null)EPlace='';
+             $('#txtLocation').val(EPlace);
+             var UserDesignation=folders[0].UserDesignation;
+             if(UserDesignation==null)UserDesignation='';
+             var UserDepartment=folders[0].UserDepartment;
+             if(UserDepartment==null)UserDepartment='';
+             var View=folders[0].View;
+             if(View==null)View=0;
+             var AllowC=folders[0].AllowComment;
+             if(AllowC=='Not Allowed')
+             {
+               AllowC=false;
+             }
+             else
+             {
+               AllowC=true;
+             }
+             var Like=folders[0].Like;
+             if(Like==null)Like=0;
+             var Comment=folders[0].Comment;
+             if(Comment==null)Comment=0;
+             var userImg=folders[0].userImage;
+             if(userImg==null)userImg='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/QuestionAnswer/images/user_pic.jpg';
+             listItem.push({
+	             Title:Title,
+	             Description:Description,
+	             Author:Author,
+	             Event_Name:EName,
+	             Event_Place:EPlace,
+	             EMail:AuthorEmail,
+	             designation:UserDesignation,
+	             UserDepartment:UserDepartment,
+	             Publishing:Publishing,
+	             Publishing1:Publishing1,
+	             View:View,
+	             Like:Like,
+	             Comments:Comment,
+	             AllowComment:AllowC,
+	             userImage:userImg             
+             })          
+
+
+         
+	         
+	    }, eror: function (data)
+        {
+            console.log('error');
+        }
+    });
+}
+ 
+ 
+ function updateFolder() {
+
+	var Description= $("#updateDescription").val();
+    var folderName = $("#txtTitle").val();
+	if(folderName==''){
+	   alert('Please enter Title! ');
+	   return false;
+	}
+	if(folderName.length>250){
+	 alert('Album name allow only 250 char');
+	 return false;
+	}
+	var eventName=$("#txteventName").val();
+	/*if(eventName==''){
+	   alert('Please select Event !');
+	   return false
+	}*/
+	var Location=$("#txtLocation").val();
+	/*if(Location==''){
+	   alert('Please select place!');
+	   return false
+	}*/
+
+	var description=$('#txtDescription').val();
+	if(description==''){
+	   alert('Please enter description !');
+	   return false
+	}
+	var allowComment=$('#AllowComments').val();
+	var txtDate=$('#txtDate').val();
+	var d=new Date(txtDate);
+    date=d.format('MM/dd/yyyy')
+
+	//var siteUrl = _spPageContextInfo.webAbsoluteUrl;
+	//waitingDialog.show()
+	var fullUrl = siteURL + "/_api/web/GetFolderByServerRelativeUrl('"+fileLeafRef+"')/ListItemAllFields?$select=FileLeafRef"
+	var itemType = GetItemTypeForListName('MediaGallery');
+	$.ajax({
+	url: fullUrl,
+	async: false,
+	type: "POST",
+	data: JSON.stringify({
+	'__metadata': { 'type': 'SP.Data.MediaGalleryItem'},	
+	//'ServerRelativeUrl': 'MediaGalleryItem/' + 'Green',
+	'FileLeafRef':folderName
+	
+	
+	}),
+	headers: {
+	"Accept": "application/json;odata=verbose",  
+    "Content-Type": "application/json;odata=verbose",  
+    "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+    "IF-MATCH": "*",  
+    "X-HTTP-Method": "MERGE" 
+    },
+	success: function (data){
+	//var targetFileUrl=  data.d.ServerRelativeUrl ;
+	  var Urlsplit=fileLeafRef.split('MediaGallery');
+	  var targetFileUrl=Urlsplit[0]+'MediaGallery/'+folderName;
+	  
+	  alert('Album updated successfully !!!');
+	  //waitingDialog.hide()
+	  y=0;
+      x=0;
+	  GetFolderDetails(targetFileUrl);
+	  addFolderDetails(folderName,eventName,Location,description,date,allowComment);	  
+	  GetMediaGallery();	  
+	  $('#btnSubmit').show();
+	  $('#btnUpdatefolder').hide();
+	},
+	error: function (data){
+	   alert(data.responseText);
+	}
+	});
+}
+
+
+var employeePicURL=_spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail); 
+function  addFolderDetails(Title,EventName,Location,Description,date,allowComment) {
+   var  testurl=siteURL + "/_api/web/getfolderbyserverrelativeurl('/sites/Titan_2_2_1_DEV/TITAN/MediaGallery/Lakhan')"
+        $.ajax({  
+            url: siteURL  + "/_api/web/lists/GetByTitle('MediaGallery')/items('"+folderId+"')",
+            type: "POST",
+            async:false, 
+            data: JSON.stringify  
+            ({  
+                __metadata:  
+                {  
+                    type: "SP.Data.MediaGalleryItem"
+                      
+                },  
+                Title: Title,
+                Description:Description,
+                UserDepartment:Logged_DepartmentName,
+                Event_Name:EventName,
+                Event_Place:Location,
+                ImageCreateDate:date,
+                UserDesignation:Logged_Designation,
+                AllowComment:allowComment,
+                userImage:employeePicURL
+                  
+            }),  
+            headers:  
+            {  
+                "Accept": "application/json;odata=verbose",  
+                "Content-Type": "application/json;odata=verbose",  
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                "IF-MATCH": "*",  
+                "X-HTTP-Method": "MERGE"  
+            },  
+            success: function(data, status, xhr)  
+            {  
+             console.log('Updated!')
+            },
+            error: function (error)             
+            {
+              alert(error);
+            }
+        });
+    }
+    
+    
+    
+ function  deleteFolder (targetFileUrl) {
+    var deleteConfirmation= confirm("Are you sure to delete this album ?");
+	if(deleteConfirmation)
+	{
+
+        
+        jQuery.ajax({
+            url: siteURL + "/_api/web/getfolderbyserverrelativeurl('" +targetFileUrl+ "')",
+            type: "DELETE",
+            headers: {
+                "Accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(), 
+	        	"IF-MATCH": "*"
+               // "X-HTTP-Method": "DELETE"
+            },
+            success: function (data){
+              alert('Deleted Successfully !');
+              x=0;
+              y=0;
+              GetMediaGallery();
+            
+            },
+            error: function (data){
+             alert(data);
+            }
+        });
+        
+     }
+ }
+var today = new Date();
+var CurrentDate=today.toISOString();
+     
+var eventlength;    
+function getEvent()
+{
+	//var Ownurl = titanForWork.getQueryStringParameter("CompanySiteUrl") + "/_api/web/lists/getbytitle('Event')/items?$filter=ID eq ('"+ globalEventId+"')";  
+    var Ownurl = titanForWork.getQueryStringParameter("CompanySiteUrl") + "/_api/web/lists/getbytitle('Event')/items?$select=*,Location,Id,Title,Department,EventDate&$orderby Modified desc&$top=100";  
+
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) { 
+			 
+            var items = data.d.results; 
+            var tblBody='';            
+            $('#eventTBody').empty();
+            eventlength=items.length;
+            if(items.length>0){
+            for(var i=items.length-1;i>=0;i--){
+	            var eventName=items[i].Title;
+	            var eventId=items[i].Id;	            
+	            var Publishing= new Date(items[i].EventDate);
+                Publishing= $.datepicker.formatDate('dd-M-yy', Publishing);
+
+	            var officeLocation=items[i].Location;
+	            var Department=items[i].Department;
+	            var chck=[];
+	            chck.push(eventName,officeLocation,items[i].EventDate)
+	              var myCheckbox1='myCheckbox'+eventId;          
+			      tblBody+='<tr class="eventTBody_tr">'
+				  tblBody+='      <td>'
+				        tblBody+='	<div class="chexbox_mg">'
+						tblBody+='		<input type="checkbox" name="check" class="eventChkList" value="'+chck+'" onclick="onlyOne(this)" id="'+myCheckbox1+'" />'
+						tblBody+='		<label for="'+myCheckbox1+'">'
+							tblBody+='<i class="fa fa-circle-thin" aria-hidden="true"></i>'
+							tblBody+='	</label>'
+						tblBody+='	</div></td>'
+				        tblBody+='	<td><span>'+Publishing+'</span>'
+				      tblBody+='  </td>'
+				     tblBody+='   <td>'+eventName+'</td>'
+				     tblBody+='   <td>'+officeLocation+'</td>'
+				     tblBody+='   <td>'+Department+'</td>'
+
+				    tblBody+='  </tr>'
+
+			  }
+			$('#eventTBody').append(tblBody);
+			GenerateTableMyCustomerList();  
+		  }
+		  if (items.length == 0) 
+            {
+                $("#NoRecordFoundclientmaster").show();
+            }
+            else
+            {
+            	 $("#NoRecordFoundclientmaster").hide();
+            }            
+        },
+		error: function (data) 
+		{  
+        	console.log(data);  
+		}  
+    }); 
+}    
+
+/*------checkbox--------*/
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false        
+    })  
+    
+}
+
+
+function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
+    itemId+=1;
+   var redirecturl='../Pages/MediaGalleryDetail.aspx?WebAppId=2&FName='+targetfolderUrl+'&Mode='+listItem[0].AllowComment+'&sourcelocation=../Pages/MediaGalleryNew.aspx';
+   var  img='';
+   var img1='';
+   var img2='';
+   var img3='';
+   var img4='';
+   var imgtype=''
+   var imgtype1=''
+   var imgtype2=''
+   var imgtype3=''
+   var imgtype4='';
+   if(ImageCount==1){
+    img1=ItemImage[0].ImgURL;
+    imgtype1=ItemImage[0].ImgType; 
+   }
+   else if(ImageCount==2){
+    img1=ItemImage[0].ImgURL;
+    imgtype1=ItemImage[0].ImgType;
+    img2=ItemImage[1].ImgURL;
+    imgtype2=ItemImage[1].ImgType; 
+   }
+
+  else if(ImageCount==3){
+	 img1=ItemImage[0].ImgURL;
+	 imgtype1=ItemImage[0].ImgType;
+	 img2=ItemImage[1].ImgURL;
+     imgtype2=ItemImage[1].ImgType;
+     img3=ItemImage[2].ImgURL;
+     imgtype3=ItemImage[2].ImgType; 
+   }
+   else if(ImageCount>=4){
+    img1=ItemImage[0].ImgURL;
+    imgtype1=ItemImage[0].ImgType;
+    img2=ItemImage[1].ImgURL;
+	imgtype2=ItemImage[1].ImgType;
+	img3=ItemImage[2].ImgURL;
+    imgtype3=ItemImage[2].ImgType;
+    img4=ItemImage[3].ImgURL;
+    imgtype4=ItemImage[3].ImgType; 
+   }
+   else{
+    img=ItemImage[0].ImgURL;
+    imgtype=ItemImage[0].ImgType;
+   }   
+     
+             newArr.push({
+                 Title:listItem[0].Title,
+                 Id:itemId,
+	             Description:listItem[0].Description,
+	             Author:listItem[0].Author,
+	             Event_Name:listItem[0].Event_Name,
+	             Event_Place:listItem[0].Event_Place,
+	             EMail:listItem[0].EMail,
+	             designation:listItem[0].designation,
+	             UserDepartment:listItem[0].UserDepartment,
+	             Publishing:listItem[0].Publishing,
+	             Publishing1:listItem[0].Publishing1,
+	             View:listItem[0].View,
+	             AllowComment:listItem[0].AllowComment,
+	             Like:listItem[0].Like,
+	             Comments:listItem[0].Comments,
+	             userImage:listItem[0].userImage,
+	             ImgURL:ItemImage[0].ImgURL,
+	             imgCount:ImageCount,
+	             img:img,
+	             imgtype:imgtype,
+	             img1:img1,
+	             imgtype1:imgtype1,
+	             img2:img2,
+	             imgtype2:imgtype2,
+	             img3:img3,
+	             targetfolderUrl:targetfolderUrl,
+	             imgtype3:imgtype3,
+	             img4:img4,
+	             imgtype4:imgtype4          
+   
+            })
+           
+            var department =listItem[0].UserDepartment+' '
+            var designation=' '+ listItem[0].designation;
+            var menuFolderHTML=''
+             if(ImageCount==0){
+                menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card album-card-default">'
+                menuFolderHTML +="<div class='col-xs-12 col-sm-3 album-card-left' style='cursor: pointer;' onclick='openAlbumDetailsPage(\""+redirecturl+"\")'>"
+                menuFolderHTML +='<div class="album-img-grid-default" id="album-default-case">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/default album.png" alt="album img grid default"></div></div>'                                 
+                menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right"><div class="album-detail-box"><div class="album-heading">'        
+                menuFolderHTML +='<a href="'+redirecturl+'">'+listItem[0].Title+'</a>' 
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-info">'
+                menuFolderHTML +='<span>'+listItem[0].Description+'</span>' 
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="row album-detail-footer">'
+                menuFolderHTML +='<div class="col-sm-8 col-xs-12 album-detail-left">'
+                menuFolderHTML +='<div class="col-sm-12 album-user-info-grid">'
+                menuFolderHTML +='<div class="col-sm-6 album-user-image-box">'
+                menuFolderHTML +='<img src="'+listItem[0].userImage+'"data-themekey="#">'
+                menuFolderHTML +='<div class="album-user-image-text">'
+                menuFolderHTML +='<p class="mb0">'+listItem[0].Author+'</p>'
+                if(listItem[0].UserDepartment!=''){
+                 menuFolderHTML +='<p class="mb0">'+department+'|'+designation+' </p>'
+                }
+                menuFolderHTML +='<p class="mb0 Emailfont">'+listItem[0].EMail+'</p>'
+                menuFolderHTML +='</div></div>'                               
+                menuFolderHTML +='<div class="col-sm-6 album-user-details-box">'
+                if(listItem[0].Event_Name.length==0){
+                 listItem[0].Event_Name='';
+                }
+                
+                if(listItem[0].Event_Name!=''){
+                 menuFolderHTML +='<p class="media-event">Event: <span id="">'+listItem[0].Event_Name+'</span></p> '                    
+                }                        
+                menuFolderHTML +='<p class="media-place">Place: <span id=""> '+listItem[0].Event_Place+' </span></p>'
+                menuFolderHTML +='<p class="media-date">Date: <span id=""> '+listItem[0].Publishing+' </span></p>'                           
+                menuFolderHTML +='</div></div></div>'              
+                menuFolderHTML +='<div class="col-sm-4 col-xs-12 album-detail-right">'
+                menuFolderHTML +='<div class="album-data-box">'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
+                menuFolderHTML +='<div class="album-inner-card-btn-item">'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-count">234</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
+                menuFolderHTML +='<span> </span></div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-count">3</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-count">1</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='<div class="album-inner-card-btn-panel-count">5</div>'
+                menuFolderHTML +='</div>'
+                menuFolderHTML +='</div></div></div></div>'	
+                menuFolderHTML +='<div class="dropdown custom-card-menu">'                
+                //menuFolderHTML +='<a class="album-download-btn">' 
+                //menuFolderHTML +='<i class="fa fa-download" aria-hidden="true"></i></a>'
+                if(isAdmin==true){
+                 menuFolderHTML +="<a class='album-edit-btn' data-toggle='modal' data-target='#createNew' onclick='editAlbum(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>'
+                 menuFolderHTML +="<a class='album-delete-btn' onclick='deleteFolder(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-trash-o" aria-hidden="true"></i> </a>'
+                }
+                menuFolderHTML +='</div></div></div></div>'
+                return menuFolderHTML;
+              }
+              else if(ImageCount==1){
+                menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card">'
+				menuFolderHTML +="<div class='col-xs-12 col-sm-3 album-card-left' style='cursor: pointer;' onclick='openAlbumDetailsPage(\""+redirecturl+"\")'>"
+				menuFolderHTML +='<div class="album-img-grid-case-1" id="album-case-1">'
+				var extofImage=ItemImage[0].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='jfif' || extofImage=='GIF' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[0].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[0].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+				
+				menuFolderHTML +='</div></div>'	
+				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
+				menuFolderHTML +='<div class="album-detail-box">'
+				menuFolderHTML +='<div class="album-heading">'
+				menuFolderHTML +='<a href="'+redirecturl+'" >'+listItem[0].Title+'</a> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-info"><span>'+listItem[0].Description+'</span></div>'
+				menuFolderHTML +='<div class="row album-detail-footer">'
+				menuFolderHTML +='<div class="col-sm-8 col-xs-12 album-detail-left">'
+				menuFolderHTML +='<div class="col-sm-12 album-user-info-grid">'
+				menuFolderHTML +='<div class="col-sm-6 album-user-image-box">'
+				menuFolderHTML +='<img src="'+listItem[0].userImage+'" data-themekey="#"/>'
+				menuFolderHTML +='<div class="album-user-image-text">'
+				menuFolderHTML +='<p class="mb0">'+listItem[0].Author+'</p>'
+			   if(listItem[0].UserDepartment!=''){
+				 menuFolderHTML +='<p class="mb0">'+department+'| '+designation +'</p>'
+				}
+				menuFolderHTML +='<p class="mb0 Emailfont">'+listItem[0].EMail+'</p>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-sm-6 album-user-details-box">'
+				if(listItem[0].Event_Name.length==0){
+				 listItem[0].Event_Name='';
+				}
+				if(listItem[0].Event_Name!=''){
+				 menuFolderHTML +='<p class="media-event">Event: <span id="">'+listItem[0].Event_Name+'</span></p>'
+				}
+				menuFolderHTML +='<p class="media-place">Place: <span id=""> '+listItem[0].Event_Place+' </span></p>'
+				menuFolderHTML +='<p class="media-date">Date: <span id=""> '+listItem[0].Publishing+'</span></p>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-sm-4 col-xs-12 album-detail-right">'
+				menuFolderHTML +='<div class="album-data-box">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
+				menuFolderHTML +='<div class="album-inner-card-btn-item">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#"/>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
+				menuFolderHTML +='<span> </span></div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
+				menuFolderHTML +='</div></div></div></div>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="dropdown custom-card-menu">'
+				menuFolderHTML +="<a class='album-download-btn' onclick='downLoadFile(\""+targetfolderUrl+"\");'> "
+				menuFolderHTML +='<i class="fa fa-download" aria-hidden="true"></i></a>'
+				if(isAdmin==true){
+				 menuFolderHTML +="<a class='album-edit-btn' data-toggle='modal' data-target='#createNew' onclick='editAlbum(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>'
+				 menuFolderHTML +="<a class='album-delete-btn'  onclick='deleteFolder(\""+targetfolderUrl+"\");'><i class='fa fa-trash-o' aria-hidden='true'></i></a>"
+				}
+				menuFolderHTML +='</div></div></div></div>'
+                            
+              return menuFolderHTML;
+              
+              }
+              
+              if(ImageCount==2){
+                menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card">'
+				menuFolderHTML +="<div class='col-xs-12 col-sm-3 album-card-left' style='cursor: pointer;' onclick='openAlbumDetailsPage(\""+redirecturl+"\")'>"
+				menuFolderHTML +='<div class="row album-img-grid-case-2" id="album-case-2">'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-left">'
+				var extofImage=ItemImage[0].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[0].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[0].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
+				var extofImage=ItemImage[1].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[1].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[1].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }				
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div></div></div>'
+				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
+				menuFolderHTML +='<div class="album-detail-box">'
+				menuFolderHTML +='<div class="album-heading">'
+				menuFolderHTML +='<a href="'+redirecturl+'" >'+listItem[0].Title+'</a> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-info">'
+				menuFolderHTML +='<span>'+listItem[0].Description+'</span> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="row album-detail-footer">'
+				menuFolderHTML +='<div class="col-sm-8 col-xs-12 album-detail-left">'
+				menuFolderHTML +='<div class="col-sm-12 album-user-info-grid">'
+				menuFolderHTML +='<div class="col-sm-6 album-user-image-box">'
+				menuFolderHTML +='<img src="'+listItem[0].userImage+'" data-themekey="#">'
+				menuFolderHTML +='<div class="album-user-image-text">'
+				menuFolderHTML +='<p class="mb0">'+listItem[0].Author+'</p>'
+				if(listItem[0].UserDepartment!=''){
+				 menuFolderHTML +='<p class="mb0">'+department +'| '+designation+'</p>'
+				}
+				menuFolderHTML +='<p class="mb0 Emailfont">'+listItem[0].EMail+'</p>'
+				menuFolderHTML +='</div></div>'
+				menuFolderHTML +='<div class="col-sm-6 album-user-details-box">'
+				if(listItem[0].Event_Name.length!=0){
+				 menuFolderHTML +='<p class="media-event">Event: <span id="">'+listItem[0].Event_Name+'</span></p>'
+				}
+				menuFolderHTML +='<p class="media-place">Place: <span id=""> '+listItem[0].Event_Place+'</span></p>'
+				menuFolderHTML +='<p class="media-date">Date: <span id=""> '+listItem[0].Publishing+'</span></p>'
+				menuFolderHTML +='</div></div></div>'
+				menuFolderHTML +='<div class="col-sm-4 col-xs-12 album-detail-right">'
+				menuFolderHTML +='<div class="album-data-box">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
+				menuFolderHTML +='<div class="album-inner-card-btn-item">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
+				menuFolderHTML +='<span> </span></div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
+				menuFolderHTML +='</div></div></div></div></div>'
+				menuFolderHTML +='<div class="dropdown custom-card-menu">'
+				menuFolderHTML +="<a class='album-download-btn' onclick='downLoadFile(\""+targetfolderUrl+"\");'> "
+				menuFolderHTML +='<i class="fa fa-download" aria-hidden="true"></i>'
+				if(isAdmin==true){
+				 menuFolderHTML +="<a class='album-edit-btn' data-toggle='modal' data-target='#createNew' onclick='editAlbum(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>'
+				 menuFolderHTML +="</a><a class='album-delete-btn'  onclick='deleteFolder(\""+targetfolderUrl+"\");'><i class='fa fa-trash-o' aria-hidden='true'></i></a>"
+				}
+				menuFolderHTML +='</div></div></div></div>'
+				return menuFolderHTML;
+              
+              }
+              
+              if(ImageCount==3){
+              menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card">'
+				menuFolderHTML +="<div class='col-xs-12 col-sm-3 album-card-left' style='cursor: pointer;' onclick='openAlbumDetailsPage(\""+redirecturl+"\")'>"
+				menuFolderHTML +='<div class="row album-img-grid-case-3" id="album-case-3">'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-left">'
+				var extofImage=ItemImage[0].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[0].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[0].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }				
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-1">'
+				var extofImage=ItemImage[1].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[1].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[1].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-2">'
+				var extofImage=ItemImage[2].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[2].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[2].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div></div></div></div>'
+				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
+				menuFolderHTML +='<div class="album-detail-box">'
+				menuFolderHTML +='<div class="album-heading">'
+				menuFolderHTML +='<a href="'+redirecturl+'" >'+listItem[0].Title+'</a> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-info">'
+				menuFolderHTML +='<span>'+listItem[0].Description+'</span> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="row album-detail-footer">'
+				menuFolderHTML +='<div class="col-sm-8 col-xs-12 album-detail-left">'
+				menuFolderHTML +='<div class="col-sm-12 album-user-info-grid">'
+				menuFolderHTML +='<div class="col-sm-6 album-user-image-box">'
+				menuFolderHTML +='<img src="'+listItem[0].userImage+'" data-themekey="#">'
+				menuFolderHTML +='<div class="album-user-image-text">'
+				menuFolderHTML +='<p class="mb0">'+listItem[0].Author+'</p>'
+				if(listItem[0].UserDepartment!=''){
+				 menuFolderHTML +='<p class="mb0">'+department+'| '+designation+'</p>'
+				}
+				menuFolderHTML +='<p class="mb0 Emailfont">'+listItem[0].EMail+'</p>'
+				menuFolderHTML +='</div></div>'
+				menuFolderHTML +='<div class="col-sm-6 album-user-details-box">'
+				if(listItem[0].Event_Name.length!=0){
+				 menuFolderHTML +='<p class="media-event">Event: <span id="">'+listItem[0].Event_Name+'</span></p>'
+				}
+				menuFolderHTML +='<p class="media-place">Place: <span id="">'+listItem[0].Event_Place+'</span></p>'
+				menuFolderHTML +='<p class="media-date">Date: <span id=""> '+listItem[0].Publishing+' </span></p></div></div></div>'
+				menuFolderHTML +='<div class="col-sm-4 col-xs-12 album-detail-right">'
+				menuFolderHTML +='<div class="album-data-box">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
+				menuFolderHTML +='<div class="album-inner-card-btn-item">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
+				menuFolderHTML +='<span> </span></div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
+				menuFolderHTML +='</div></div></div></div></div>'
+				menuFolderHTML +='<div class="dropdown custom-card-menu">'
+				menuFolderHTML +="<a class='album-download-btn'  onclick='downLoadFile(\""+targetfolderUrl+"\");'> ";
+				menuFolderHTML +='<i class="fa fa-download" aria-hidden="true"></i></a>'
+				if(isAdmin==true){
+				 menuFolderHTML +="<a class='album-edit-btn' data-toggle='modal' data-target='#createNew' onclick='editAlbum(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>'
+				 menuFolderHTML +="<a class='album-delete-btn'  onclick='deleteFolder(\""+targetfolderUrl+"\");'><i class='fa fa-trash-o' aria-hidden='true></i></a>"
+				}
+				menuFolderHTML +='</div></div></div></div>'
+
+               return menuFolderHTML;
+              
+              }
+              
+              if(ImageCount>=4){
+               menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card">'
+				menuFolderHTML +="<div class='col-xs-12 col-sm-3 album-card-left' style='cursor: pointer;' onclick='openAlbumDetailsPage(\""+redirecturl+"\")'>"
+				menuFolderHTML +='<div class="row album-img-grid-case-4" id="album-case-4">'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-left">'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-left-row-1">'
+				var extofImage=ItemImage[0].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[0].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[0].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-left-row-2">'
+				var extofImage=ItemImage[1].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='jfif' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[1].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[1].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div></div>'
+				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-1">'
+				var extofImage=ItemImage[2].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='PNG' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[2].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[2].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-2">'
+				var extofImage=ItemImage[3].ImgType;
+				if(extofImage=='jpg'  || extofImage=='JPG' || extofImage=='JPEG' || extofImage=='GIF' || extofImage=='PNG' || extofImage=='jfif' || extofImage=='BMP' || extofImage=='jpeg' || extofImage=='gif' || extofImage=='png'  ||  extofImage=='bmp')
+		           {
+		             menuFolderHTML +='<img src="'+ItemImage[3].ImgURL+'" alt="album img grid case 1"/>'
+		            }
+		         else{
+		             menuFolderHTML +='<video class="video-box" width="100%" height="100%"><source src="'+ItemImage[3].ImgURL+'" type="video/mp4"> Your browser does not support the video tag.</video>'
+		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
+
+                }
+
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album img grid default">'
+				menuFolderHTML +='</div></div></div></div>'
+				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
+				menuFolderHTML +='<div class="album-detail-box">'
+				menuFolderHTML +='<div class="album-heading">'
+				menuFolderHTML +='<a href="'+redirecturl+'">'+listItem[0].Title+'</a> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-info">'
+				menuFolderHTML +='<span>'+listItem[0].Description+'</span> '
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="row album-detail-footer">'
+				menuFolderHTML +='<div class="col-sm-8 col-xs-12 album-detail-left">'
+				menuFolderHTML +='<div class="col-sm-12 album-user-info-grid">'
+				menuFolderHTML +='<div class="col-sm-6 album-user-image-box">'
+				menuFolderHTML +='<img src="'+listItem[0].userImage+'" data-themekey="#">'
+				menuFolderHTML +='<div class="album-user-image-text">'
+				menuFolderHTML +='<p class="mb0">'+listItem[0].Author+'</p>'
+				if(listItem[0].UserDepartment!=''){
+				 menuFolderHTML +='<p class="mb0">'+department+'| '+designation+' </p>'
+				}
+				menuFolderHTML +='<p class="mb0 Emailfont">'+listItem[0].EMail+'</p>'
+				menuFolderHTML +='</div></div>'
+				menuFolderHTML +='<div class="col-sm-6 album-user-details-box">'
+				if(listItem[0].Event_Name.length!=0){
+				 menuFolderHTML +='<p class="media-event">Event: <span id=""> '+listItem[0].Event_Name+'</span></p>'
+				}
+				menuFolderHTML +='<p class="media-place">Place: <span id=""> '+listItem[0].Event_Place+'</span></p>'
+				menuFolderHTML +='<p class="media-date">Date: <span id=""> '+listItem[0].Publishing+' </span></p>'
+				menuFolderHTML +='</div></div></div>'
+				menuFolderHTML +='<div class="col-sm-4 col-xs-12 album-detail-right">'
+				menuFolderHTML +='<div class="album-data-box">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
+				menuFolderHTML +='<div class="album-inner-card-btn-item">'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
+				menuFolderHTML +='<span> </span></div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='</div>'
+				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
+				menuFolderHTML +='</div></div></div></div></div>'
+				menuFolderHTML +='<div class="dropdown custom-card-menu">'
+				menuFolderHTML +="<a class='album-download-btn'  onclick='downLoadFile(\""+targetfolderUrl+"\");'> "
+				menuFolderHTML +='<i class="fa fa-download" aria-hidden="true"></i></a>'
+				if(isAdmin==true){
+				 menuFolderHTML +="<a class='album-edit-btn' data-toggle='modal' data-target='#createNew' onclick='editAlbum(\""+targetfolderUrl+"\");'>"
+                 menuFolderHTML +='<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>'
+				 menuFolderHTML +="<a class='album-delete-btn'  onclick='deleteFolder(\""+targetfolderUrl+"\");'>";
+				 menuFolderHTML +="<i class='fa fa-trash-o' aria-hidden='true'></i></a>";
+				}
+				menuFolderHTML +='</div></div></div></div>'
+				              
+              
+              return menuFolderHTML;
+              }      
+}
+
+
+function downLoadFile(targetfolderUrl)
+{
+    
+	var endPointURL = siteURL  + "/_api/Web/GetFolderByServerRelativeUrl('" + targetfolderUrl+ "')?$select=ID,Description,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$top=5000&$orderby=Modified desc";
+    $.ajax({
+        url: endPointURL ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+               var files = data.d.Files.results;
+               downloadFile=[];
+               var extofImage;
+               var Imgs ='';
+               //var data = canvas.toDataURL();
+               $('.panel-head-hidden-div').empty();              
+	            for (var i = 0; i < files.length; i++)
+	            {
+	               thumbNailUrl=encodeURI(files[i].ServerRelativeUrl)            
+                   downloadFile.push(thumbNailUrl);                   
+                   var filename=files[i].Name;                  
+                   download1(thumbNailUrl,filename)
+                  
+	            }            	            
+	            
+	           
+        }, eror: function (data) {
+
+            console.log('downlod img error');
+        }
+    });
+}
+
+function download1(img,filename) {
+    var link = document.createElement("a");
+    link.href = img;
+    link.download = filename;
+    link.style.display = "none";
+    var evt = new MouseEvent("click", {
+        "view": window,
+        "bubbles": true,
+        "cancelable": true
+    });
+
+    document.body.appendChild(link);
+    link.dispatchEvent(evt);
+    document.body.removeChild(link);
+    console.log("Downloading...");
+}
+
+//serach by Name, Type, Department, Date, Location, UserName
+function KeyUpSearch(arr) {
+    try {
+        var SearchValue = '';
+        $('#galleryFirstImgThumb').empty();
+        SearchValue = $("#txtAlbumSearch").val().trim();
+        var arrTempFiles = [];
+        if (SearchValue != "") {
+            arrTempFiles = arr.filter(function (data) {
+                return (SearchValue.trim() == "null" ? data.Title != "null" : (data.Title.toLowerCase() == SearchValue.toLowerCase() || data.Title.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1)) ||
+						(SearchValue.trim() == "null" ? data.Description != "null" : (data.Description.toLowerCase() == SearchValue.toLowerCase() || data.Description.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1)) ||
+	                    (SearchValue.trim() == "null" ? data.Event_Name != "null" : (data.Event_Name.toLowerCase() == SearchValue.toLowerCase() || data.Event_Name.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1)) ||
+	                    (SearchValue.trim() == "null" ? data.UserDepartment != "null" : (data.UserDepartment.toLowerCase() == SearchValue.toLowerCase() || data.UserDepartment.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1)) ||
+                    	(SearchValue.trim() == "null" ? data.Event_Place != "null" : (data.Event_Place.toLowerCase() == SearchValue.toLowerCase() || data.Event_Place.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1)) ||
+                        (SearchValue.trim() == "null" ? data.Author != "null" : (data.Author.toLowerCase() == SearchValue.toLowerCase() || data.Author.toLowerCase().indexOf(SearchValue.toLowerCase()) != -1));
+            });
+        }
+        else {
+            arrTempFiles = arr.filter(function (f) { return f; });
+        }
+        for (var i = 0; i < arrTempFiles.length; i++) {
+            var items = sortMediagallery(arrTempFiles, i);
+            $('#galleryFirstImgThumb').append(items);
+
+        }
+    }
+    catch (Error) {
+        console.log(Error);
+    }
+}
+
+
+function editAlbum(filesReaf)
+{
+   $('#btnUpdatefolder').show();
+   $('#btnSubmit').hide();
+   $('#modalHeader').text('Edit Album');
+   GetFolderDetails(filesReaf);
+}
+
+
+
+
+/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'Workplace' ";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}
+
+function openAlbumDetailsPage(link)
+{
+    window.location.href=link;
+}
