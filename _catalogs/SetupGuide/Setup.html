@@ -3380,8 +3380,107 @@ function checkcompanysettings()
 
    }
 
-var setupcompleteno=0;
+
+var setupcompleteno1=0;
 function setupComplete()
+{
+	setupcompleteno1=setupcompleteno1+1;
+	if(setupcompleteno1>30)
+	{
+	
+		$("#TitanBodyMsg").show();   
+			  $("#lblMsg").text("Error Uploading Apps. Please contact Titan Workspace: info@titanworkspace.com");
+				return;
+	
+	}
+	
+	var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	
+	
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+	
+	$("#loader").show();
+			$("#TitanBodyMsg").show();    
+                                              $("#TitanBodySettings").hide();                       
+                                              $("#lblMsg").text("Final Setup on process. Please wait.");
+											  
+	 
+		 
+        //Set completion
+        $.ajax({
+                                              url: "https://titandeployscripts.azurewebsites.net/api/SetAzureApp",                    
+                                              crossDomain: true,
+                                              method:'POST',
+                                              //async: false,
+                                              data: JSON.stringify({
+                                                "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password
+                                              }),
+                                              headers:{'Content-Type': 'application/json'},
+											  timeout: 600000,
+                                              //context: context,
+                                              beforeSend: function()
+                                                    {
+                                                      $("#loader").show();
+                                                    },
+                                              success: function(result){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                                $("#TitanBodySettings").hide();    
+
+												setupComplete2();
+												
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  $("#TitanBody").show();
+                                                  $("#TitanBodyMsg").show(); 
+                                                  $("#lblMsg").text("Setup failed. Try again.");
+                                                  setTimeout(setupComplete2,30000);
+                                              }
+                                            });
+	
+	
+	
+}
+
+var setupcompleteno=0;
+function setupComplete2()
 {
 	setupcompleteno=setupcompleteno+1;
 	if(setupcompleteno>30)
