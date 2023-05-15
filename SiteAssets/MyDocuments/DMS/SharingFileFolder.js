@@ -1118,6 +1118,22 @@ $(document).ready(function () {
         $("#btnChangeFolderName").hide();
     });
     //<!-----------------Chat Box starts ---------------------------------------->
+     $("#btnCloseChatBox").click(function(){
+    //5 April 23
+        //waitingDialog.show();
+        //setTimeout(function () {
+           /*  var tempDocName = Documentname;
+            if (Documentname=='Documents'== true||Documentname.includes('/Documents') == true) {
+                tempDocName = "Shared%20Documents";
+            }
+            GetMyDocumentsWithFilesFolder(tempDocName);*/
+            //waitingDialog.hide();
+    	
+        //}, 4000);
+            
+        cmntIcon="";
+            //5 April 23
+  });
     $("#commentText").emojioneArea({
         pickerPosition: "right",
         tonesStyle: "bullet",
@@ -1177,6 +1193,59 @@ var OldFileName = '';
 //Revoke permission Multiple select
 function RevokeMultiPermission() {
     if (confirm("It will revoke all the permissions applied to file. Are you sure, you want to revoke?")) {
+        //4 April 23
+        $("#txtRevokeMsg").val('');
+        $("#RevokePermission").modal('show');
+        waitingDialog.hide();//4 April 23
+        $(".ParentbtnOpenRevoke").empty().append('<button type="button" class="btn custom-btn mr-8 wpx-87" id="btnOpenRevoke">Submit</button>');
+        $("#btnOpenRevoke").click(function () 
+        {
+            //if (confirm("Are you sure, you want to revoke permission?"))
+             {
+        //4 April 23
+         waitingDialog.show();//4 April 23
+            arrFileFolder.forEach(function (entry, index) {
+                //get All the files with Document Id
+                var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail,DOC_ID/ID,DOC_ID/Title,DOC_ID/DocumentNo,DOC_ID/DocumentType&$orderby=Modified desc&$expand=DOC_ID,SharedUsers,Author&$filter=(DocumentID eq '" + entry.DocumentId + "' and PermissionStatus ne 'Revoked' and PermissionStatus ne 'RevokePending') ";
+                $.when(getItemsWithQuery("SharedDocument", Query, _spPageContextInfo.webAbsoluteUrl)).done(function (items) {
+                    for (var i = 0; i < items.length; i++) {
+                        $("#FilePath").text(items[i].DocumentURL);
+                        CopySourceURL = items[i].SiteURL;
+                        if (items[i].SiteURL == "null" || items[i].SiteURL == null || items[i].SiteURL == "undefined" || items[i].SiteURL == undefined) {
+                            if (items[i].DocumentURL.indexOf("DepartmentalDMS") != -1) {
+                                items[i].SiteURL = window.location.origin + encodeURI(items[i].DocumentURL).split('DepartmentalDMS')[0];
+                            }
+                            else {
+                                items[i].SiteURL = _spPageContextInfo.webAbsoluteUrl;
+                            }
+                        }
+                        if (items[i].SharedGroup == "Organization") {
+                           // RevokeGpPermissionMsg(items[i].SharedUsers.results[0].ID, items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].DocumentURL, items[i].SiteURL);  
+                        revokeGpFile(items[i].SharedUsers.results[0].ID, items[i].ID,  'false',  items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].DocumentURL, items[i].SiteURL);//4 April 23
+ 
+                        }
+                        else {
+                            //RevokePermission(items[i].DocumentID, items[i].DocumentURL, items[i].SharedUsers.results[0].ID, items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].SiteURL, items[i].SharedUserEmail);
+                           // RevokePermissionMsg(items[i].DocumentID, items[i].DocumentURL, items[i].SharedUsers.results[0].ID, items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].SiteURL, items[i].SharedUserEmail);
+                            revokeFile(items[i].DocumentID, items[i].DocumentURL, items[i].SharedUsers.results[0].ID,items[i].ID, 'false', items[i].DocumentType.toLowerCase(), items[i].SharedGroup, items[i].SiteURL, items[i].SharedUserEmail);//4 April 23
+                        }
+                    }
+                });
+                if (arrFileFolder.length == (index + 1)) {
+                    $("#btnRefreshSharedTbl").trigger("click");
+                    alert("All permissions are revoked.");
+                    $(".chkShareToMe").prop('checked', '');
+                    arrFileFolder = [];
+                    waitingDialog.hide();
+                }
+            });
+            }
+        });
+        //$("#btnOpenRevoke").trigger('click');//4 April 23
+        }
+}
+function RevokeMultiPermission_old() {
+    if (confirm("It will revoke all the permissions applied to file. Are you sure, you want to revoke?")) {
         arrFileFolder.forEach(function (entry, index) {
             //get All the files with Document Id
             var Query = "?$select=*,ID,SharedFrom,SharedType,DocumentNo,IsBlock,Details,ServerRedirectedEmbedURL,Title,DocumentURL,DocumentID,DocumentType,SharedGroup,PermissionStatus,PermissionType,SharedUsers/Title,SharedUsers/ID,Author/Title,Author/ID,Author/EMail,DOC_ID/ID,DOC_ID/Title,DOC_ID/DocumentNo,DOC_ID/DocumentType&$orderby=Modified desc&$expand=DOC_ID,SharedUsers,Author&$filter=(DocumentID eq '" + entry.DocumentId + "' and PermissionStatus ne 'Revoked' and PermissionStatus ne 'RevokePending') ";
@@ -1210,7 +1279,6 @@ function RevokeMultiPermission() {
         });
     }
 }
-
 //to show Permission History from Table
 function ShowPermissionHistory(ServerURL, FileOrFolder) {
     $("#FilePath").text(ServerURL);
@@ -1287,7 +1355,7 @@ function GetPermissionHistory(FileOrFolder) {
 
 //Open modal for display the file properties //getfilebyserverrelativeurl
 function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelUrl, Isinherit, DiaplayServerRelUrl, rel, Mode,LibUrl,MataDataReq,ShareMsg) {
-    
+    ShareMsg=fixedDecodeURIComponent(ShareMsg);
     CopySourceURL = CommentSiteURL = SiteURL;
     if (FileServerRelUrl != "NullValue" && Library != "Department: IT" && $(".headdingLinks").text() != 'Shared with Me' && $(".headdingLinks").text() != 'Shared by Me' && $(".headdingLinks").text() != 'Archive') {
         IsStopInheritancePermissions = Boolean.parse(Isinherit);
@@ -1303,15 +1371,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
     $("#btnShare").show();
     FavouriteId = '';
     $(".btnNotSharedTab").show();
-    if (DiaplayServerRelUrl.includes('/Documents/') == true) {
-       // DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Documents/", "/Shared%20Documents/");
-        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Documents/", "/Shared Documents/");//Bcz we are encoding later
-    }
-    else if (DiaplayServerRelUrl.includes('/Shared%20Documents/') == true)//Bhawana 2 jan 23
-    {
-        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Shared%20Documents/", "/Shared Documents/");//Bcz we are encoding later
-   
-    }
+    
     $("#modalDownloadBtn").show();
     $("#divEditView").show();
     if (CurrentPermission == "Restricted View") {
@@ -1340,14 +1400,18 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
     var tempAction = '';
     var customColQ = '';
     customColQ = AddCustomColPopup();
-    //Bhawana added to view special character file
     DiaplayServerRelUrl=fixedDecodeURIComponent(DiaplayServerRelUrl);
-   // var webURL = SiteURL + "/_api/web/GetFileByServerRelativePath(decodedUrl='" + DiaplayServerRelUrl+ "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=*,LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
-       // "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/Titan_Permission,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
+    if (DiaplayServerRelUrl.includes('/Documents/') == true) {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Documents/", "/Shared Documents/");//Bcz we are encoding later
+    }
+    else if (DiaplayServerRelUrl.includes('/Shared%20Documents/') == true)//Bhawana 2 jan 23
+    {
+        DiaplayServerRelUrl = DiaplayServerRelUrl.replace("/Shared%20Documents/", "/Shared Documents/");//Bcz we are encoding later
+   
+    }
+   
    var webURL = SiteURL + "/_api/web/GetFileByServerRelativePath(decodedUrl='" + fixedEncodeURIComponent(DiaplayServerRelUrl) + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=*,LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
         "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/Titan_Permission,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
-    //var webURL = SiteURL + "/_api/web/GetFileByServerRelativeUrl('" + DiaplayServerRelUrl + "')?$expand=ListItemAllFields,Author,Files/Author,Editor&$select=*,LockedByUser,CheckedOutByUser,DocumentWrittenBy,Author/Title,ListItemAllFields/AccessLevel,ListItemAllFields/Id,ListItemAllFields/Department,ListItemAllFields/Details,ListItemAllFields/DocumentType,ListItemAllFields/SubCategory,ListItemAllFields/FileValidity,ListItemAllFields/DocumentNo,ListItemAllFields/FileSizeDisplay,ListItemAllFields/Last_x0020_Modified,ListItemAllFields/Modified,ListItemAllFields/ServerRelativeUrl," + customColQ +
-       // "ListItemAllFields/DocumentWrittenBy,ListItemAllFields/Titan_Permission,ListItemAllFields/PermissionLevel,ListItemAllFields/PermissionLevelId,ListItemAllFields/Regarding,ListItemAllFields/SecurityLevel,ListItemAllFields/Acknowledgement,ListItemAllFields/Title,ListItemAllFields/Approval,ListItemAllFields/FileLeafRef,ListItemAllFields/ServerRedirectedEmbedUri,ListItemAllFields/Modified_x0020_By";
     while (customColQ.indexOf("ListItemAllFields/") != -1) {
         customColQ = customColQ.replace("ListItemAllFields/", "");
     }
@@ -1369,7 +1433,6 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
             if (FileValue.Titan_Permission == undefined || FileValue.Titan_Permission == null || FileValue.Titan_Permission == "null" || FileValue.Titan_Permission == "") {
                 $("#PermHisParent").hide();
             }
-            //FileCheckOutBy = getCheckedOutBy();
             FileCheckOutBy =getCheckedOutByPath();
             if (_spPageContextInfo.userDisplayName != FileCheckOutBy && FileCheckOutBy != "" && FileCheckOutBy != null) {
                 $("#lockeffect .texthere").text("Unlock");
@@ -1404,7 +1467,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                     $("#LockStatus").hide();
                     $(".LockDisable").prop("disabled", "");
                     $("#btnChangeProp").show();
-                    if (CurrentPermission != "Restricted View") {
+                    if (CurrentPermission != "Restricted View"&&CurrentPermission != "Read") {
                         $("#divEditView").show();
                     }
                 }
@@ -1464,16 +1527,14 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 $(".txtCopyLink").val(propertiesServerRelativeUrl);
             }
             var EditFileLink = '';
-            //$("#DownloadDocs").prop("href", window.location.origin + fixedEncodeURIComponent(DiaplayServerRelUrl,"href"));//18 jan 23
-            
+            //$("#DownloadDocs").prop("href", window.location.origin + fixedEncodeURIComponent(DiaplayServerRelUrl,"href"));//18 jan 23            
             $("#DownloadDocs").prop("href", window.location.origin +"/sites/" +fixedEncodeURIComponent(DiaplayServerRelUrl.split("/sites/")[1],"href"));//18 jan 23
             $("#DownloadDocs").prop("download",FileValue.FileLeafRef);//Bhawana added on 3 nov 22 
-            //emailLink= _spPageContextInfo.webAbsoluteUrl + "/Pages/Document.aspx?WebAppId="+Logged_CompanyId+"&Section=SharedWithMe&File="+window.btoa(rel.toString()+DocumentId.toString())+"&undefined=undefined";//Bhawana for mail notify
             if (FileValue.FileLeafRef.includes(".pdf") == true || FileValue.FileLeafRef.includes(".txt") == true) {
             	$("#ParentFullView").empty();
             }
             else {
-	            $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+	            $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
 	            $("#btnFileFullView").click(function () {
 	                if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
 	                    window.open(propertiesServerRelativeUrl, '_blank');
@@ -1481,7 +1542,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
 	            });
 	        }
             //$("#btnFileFullView").prop("href", propertiesServerRelativeUrl);
-            if (FileValue.FileLeafRef.includes(".pdf") == true) {//to check if it's PDF 
+            if (FileValue.FileLeafRef.includes(".pdf") == true|| FileValue.FileLeafRef.includes(".dwg") == true) {//to check if it's PDF 
                 if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
                     tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
                 }
@@ -1503,12 +1564,9 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         var HostNm = window.location.origin + tempAction.substr(0,tempAction.lastIndexOf("/") + 0);
                         PDFLINK = HostNm + "/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
 
-                        //var HostNm = window.location.origin + fixedDecodeURIComponent(FileServerRelUrl).substr(0, fixedDecodeURIComponent(FileServerRelUrl).lastIndexOf("/") + 0);
-                        //PDFLINK = HostNm + "/Forms/AllItems.aspx?id=" + encodeURIComponent(fixedDecodeURIComponent(FileServerRelUrl)) + "&parent=" + encodeURIComponent(fixedDecodeURIComponent(FileServerRelUrl).substr(0, fixedDecodeURIComponent(FileServerRelUrl).lastIndexOf("/") + 0));
                         propertiesServerRelativeUrl=PDFLINK;
                     }
-                }
-                
+                }                
                // var PDFLINK = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";
                 $(".txtCopyLink").val(PDFLINK);
                 $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
@@ -1518,7 +1576,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 });
                 //$("#btnEditViewFile").prop("href", PDFLINK);
             }
-            else if (FileValue.FileLeafRef.includes(".txt") == true) {//to check if it's txt 
+            else if (FileValue.FileLeafRef.includes(".txt") == true||FileValue.FileLeafRef.includes(".EML") == true||FileValue.FileLeafRef.includes(".eml") == true) {//to check if it's txt 
                 if (DiaplayServerRelUrl.search(/\bShared%20Documents\b/) >= 0) {
                     tempAction = DiaplayServerRelUrl.replace('Shared%20Documents', "Shared Documents");
                 }
@@ -1532,7 +1590,8 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                else{
                    if(DMS_Link!="")
                    {
-                   txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                    txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
+                   //txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";
                    propertiesServerRelativeUrl = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                    
 
@@ -1543,9 +1602,6 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         propertiesServerRelativeUrl=txtLINK;
                     }
                }
-               //propertiesServerRelativeUrl = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/")) + "&p=true";//Bhawana singh commented in bug fixing
-                //var txtLINK = DMS_Link + "?id=" + encodeURIComponent(tempAction) + "&parent=" + encodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";//Bhawana Singh
-               
                 $(".txtCopyLink").val(txtLINK);
                 $("#divEditView").empty().append('<a href="javascript:void(0);" id="btnEditViewFile"><button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal"><i class="fa fa-edit"></i><span data-localize="Edit">Edit</span></button></a>');
                 $("#btnEditViewFile").click(function () {
@@ -1558,7 +1614,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xlsx" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "xls" || FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "csv") {
                     propertiesServerRelativeUrl = propertiesServerRelativeUrl.replace('interactivepreview', 'view&wdAccPdf=0&wdEmbedFS=1');
                     $(".txtCopyLink").val(propertiesServerRelativeUrl);
-                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                     $("#btnFileFullView").click(function () {
                         if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                             window.open(propertiesServerRelativeUrl, '_blank');
@@ -1570,9 +1626,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 if (FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1) == "docx") {
                     //Bhawana
                     if (CurrentPermission == 'Restricted View') 
-                        propertiesServerRelativeUrl=propertiesServerRelativeUrl.replace('interactivepreview', 'default');
-
-                    
+                        propertiesServerRelativeUrl=propertiesServerRelativeUrl.replace('interactivepreview', 'default');                    
                     EditFileLink = propertiesServerRelativeUrl.replace('interactivepreview', 'edit&wdAccPdf=0&wdEmbedFS=1');
                     
                     $("#btnEditViewFile").click(function () {
@@ -1620,7 +1674,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         width: '100%',
                         height: '98%'
                     }).appendTo(container);
-                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                    $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                     $("#btnFileFullView").click(function () {
                         if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                             window.open(ImageLINK, '_blank');
@@ -1633,9 +1687,12 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 }
             }
             else {
-                var Extension = FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1);//data.d.ListItemAllFields.FileLeafRef.substr(data.d.ListItemAllFields.FileLeafRef.length - 3)
+                var Extension = FileValue.FileLeafRef.substring(FileValue.FileLeafRef.lastIndexOf('.') + 1);
                 if (Extension == "wmv" || Extension == "avi" || Extension == "mp3" || Extension == "mp4" || Extension == "webm" || Extension == "wma" || Extension == "one" || Extension == "tif" || Extension == "tiff" || Extension == "pdf" || Extension == "mov") {
                     propertiesServerRelativeUrl = $(".txtCopyLink").val();
+                }else if(Extension=="xls")
+                {
+                propertiesServerRelativeUrl +="?web=1"
                 }
                 else {
                     if (CurrentPermission == 'Restricted View') {
@@ -1643,7 +1700,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                         if (Extension == "pptx") {
                             propertiesServerRelativeUrl = $(".txtCopyLink").val()
                         }
-                        $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
+                        $("#ParentFullView").empty().append('<a href="javascript:void(0);" id="btnFileFullView"><button class="btn dropdown-toggle" type="button" id=""><img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View" /><span data-localize="Online View">Online View</span></button></a>');
                         $("#btnFileFullView").click(function () {
                             if (confirm("It will redirect to new tab. Are you sure you want to open?")) {
                                 window.open(EditFileLink, '_blank');
@@ -1795,35 +1852,36 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
             $('#FileSize').text(bytesToSize(FileValue.FileSizeDisplay) + "");
             $('#LibProject').text(Library);
             //PermissionsControl(FileValue);
-            $("#File-viewer").removeClass("hideshare");
             IntervalId = setInterval(function () {
-                $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
-                $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
-                $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+               // $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+              //  $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+              //  $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();
+              
+              if (Mode == 'NullValue')
+              {
+               $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+               $("#iframeFile-viewer").contents().find(".OneUp-commandBar").remove();
+               $("#iframeFile-viewer").contents().find(".AppHeaderPanel").remove();
+               $("#iframeFile-viewer").contents().find(".WACRibbonPanel").remove();              
+              }
                 
-                if (Mode == 'EditMode' || Extension == "xlsx") {
-                    $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
-                    $("#iframeFile-viewer").addClass("hideshare");
-                }
-                if (Mode == 'EditMode' || Extension == "txt") {
-	                $("#iframeFile-viewer").contents().find(".root-74").remove();
-					$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
-					$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove();
-                   // $("#iframeFile-viewer").contents().find(".ms-CommandBar-primaryCommand").addClass("myClass");
-				}
-                //$("#iframeFile-viewer").contents().find("#Header").remove();
-                //$("#iframeFile-viewer").contents().find("#Ribbon").remove();
-                //$("#iframeFile-viewer").contents().find("#AdditionalBars").remove();
-                 if (Extension == "txt") 
-                 {
-                $("#iframeFile-viewer").contents().find(".od-TextFileEditor-breadcrumb").remove();
+            if (Mode == 'EditMode' && Extension == "xlsx") {
+                $("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
                 
-                 }
-                
-                if (Extension == "xlsx") 
-                $("#iframeFile-viewer").addClass("hideshare");
-
-            }, 2000);
+            }
+            if (Mode == 'EditMode' || Extension == "txt") {
+                // $("#iframeFile-viewer").contents().find(".root-74").remove();
+                //$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
+                $("#iframeFile-viewer").contents().find("button[name=Open].ms-CommandBarItem-link").remove();
+                $("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove();
+                $("#iframeFile-viewer").contents().find("button[name=Close].ms-CommandBarItem-link").remove();
+                $("#iframeFile-viewer").contents().find("button[data-automationid=copy-link].ms-Button--commandBar").remove();
+                $("#iframeFile-viewer").contents().find("button[data-automationid=share].ms-Button--commandBar").remove();
+                $("#iframeFile-viewer").contents().find("button[data-automationid=overflowButton].ms-Button--commandBar").remove();
+                $("#iframeFile-viewer").contents().find("button[data-automationid=showProperties].ms-Button--commandBar").remove();
+                $("#iframeFile-viewer").contents().find("button[data-automationid=fileTitle].ms-CommandBarItem-link").remove();
+            }
+              }, 2000);
            
             //show hide buttonson the basis of permissions
             if (Library == 'My Documents') {
@@ -1897,7 +1955,8 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                     }
                 }
             }
-            $('#FileVersion').text(data.d.UIVersionLabel);
+            $('#FileVersion').text(data.d.UIVersionLabel);// on 10 april 23
+            
             GetFileVersion(DiaplayServerRelUrl, SiteURL, FileValue.FileLeafRef, FileValue.Title ? FileValue.Title : "");
             AddFileViewCount();
             if (Mode == 'EditMode') {
@@ -1957,14 +2016,13 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
             {
                 $('.txtSharingHistoy').hide();
             }
-            //Bhawana to hide in teams mobile app
+            // to hide in teams mobile app
             var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
             var my_url = $(location).attr('href');
             var my_custm_val = my_url.slice(-5);
             if((my_custm_val === "?TEAM") && (isMobile)) {
                 if(location.href.split("/").pop().split("?").shift() == "Document.aspx")
                  {
-                    // alert(window.screen.width+","+ window.screen.height);
                      $("#ParentFullView").hide();
                     $("#divEditView").hide();
                  }
@@ -2032,15 +2090,15 @@ function OpenEditIframe(LINK) {
 	$("#btnPopupLock").hide();
 	$("#btnPopupChangeprop").hide();
 	IntervalId = setInterval(function () {
-		$("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
-		//$("#iframeFile-viewer").contents().find(".od-TextFileEditor-topBar").remove();
-		$("#iframeFile-viewer").contents().find(".root-74").remove();
-		$("#iframeFile-viewer").contents().find("button[name=Delete].ms-CommandBarItem-link").remove();
-		$("#iframeFile-viewer").contents().find("button[name=Download].ms-CommandBarItem-link").remove()
-		$("#iframeFile-viewer").contents().find(".od-TextFileEditor-title-bar").remove();
-        $("#iframeFile-viewer").contents().find(".od-TextFileEditor-breadcrumb").remove();
-        
-	}, 2000);
+		//$("#iframeFile-viewer").attr('style', 'min-height: calc(100vh - 104px) !important; height: calc(100vh - 104px) !important;margin-top: -58px;width: 100% !important;');
+		$("#iframeFile-viewer").contents().find("button[name=Close].ms-CommandBarItem-link").remove();
+        $("#iframeFile-viewer").contents().find("button[data-automationid=copy-link].ms-Button--commandBar").remove();
+        $("#iframeFile-viewer").contents().find("button[data-automationid=share].ms-Button--commandBar").remove();
+        $("#iframeFile-viewer").contents().find("button[data-automationid=overflowButton].ms-Button--commandBar").remove();
+        $("#iframeFile-viewer").contents().find("button[data-automationid=showProperties].ms-Button--commandBar").remove();
+        $("#iframeFile-viewer").contents().find("button[data-automationid=fileTitle].ms-Button--commandBar").remove();
+        $("#iframeFile-viewer").contents().find("button[name=Open].ms-Button--commandBar").remove();
+    }, 2000);
 }
 
 //to get permission from 'Titan_Permission' column
@@ -2537,7 +2595,7 @@ function GetUserFullName(userName) {
 //to get file version
 function GetFileVersion(itemURL, SiteURL, FileName, Title) {
    //Bhawana to handle special character
-    var webURL = SiteURL + "/_api/Web/GetFileByServerRelativePath(decodedUrl='" + encodeURIComponent(itemURL) + "')/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy,fields";
+    var webURL = SiteURL + "/_api/Web/GetFileByServerRelativePath(decodedUrl='" + fixedEncodeURIComponent(itemURL) + "')/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy,fields";
    // var webURL = SiteURL + "/_api/Web/GetFileByServerRelativeUrl('" + itemURL + "')/Versions?$select=*,CreatedBy/Title,CreatedBy/EMail&$expand=CreatedBy,fields";
     $.ajax({
         url: webURL,
@@ -2547,7 +2605,8 @@ function GetFileVersion(itemURL, SiteURL, FileName, Title) {
         async: false,
         success: function (data) {
             var itemsVersion = data.d.results;
-            $("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>');
+           // $("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>');
+            $("#VerHisParent").empty().append('<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Old Versions</a>');
             $('#btnVerHist').click(function (e) {
                 BindVersionHistory(itemsVersion, FileName, Title, SiteURL);
             });
@@ -2555,7 +2614,7 @@ function GetFileVersion(itemURL, SiteURL, FileName, Title) {
             $('#btnAuditHist').click(function (e) {
                 GetAuditHistory(itemURL, SiteURL, FileName, Title);
             });
-            /*if (itemsVersion.length > 0) {
+           /* if (itemsVersion.length > 0) {
                 $('#FileVersion').text(itemsVersion[itemsVersion.length - 1].VersionLabel);
             }*/
             $('#ModalDisplayProperty').modal('show');
@@ -2596,6 +2655,7 @@ function GetFileVersion(itemURL, SiteURL, FileName, Title) {
         }
     }, 2000);
 }
+
 
 function BindVersionHistory(array, FileName, Title, URL) {
     var Version = '';
@@ -3813,11 +3873,11 @@ function copyFileMulti() {
     arrFileFolder.forEach(function (entry, index) {
 
         if (fixedDecodeURIComponent(Documentname)[fixedDecodeURIComponent(Documentname).length - 1] == '/') {
-        var folderName = fixedDecodeURIComponent(Documentname);
-    }
-    else {
-        var folderName = fixedDecodeURIComponent(Documentname) + '/';
-    }
+            var folderName = fixedDecodeURIComponent(Documentname);
+        }
+        else {
+            var folderName = fixedDecodeURIComponent(Documentname) + '/';
+        }
         if (entry.type == 'file') {
             if (IsFileCheckout(folderName, entry.FileFolderName, entry.SiteURL, '') != true) {
                 var sourceUrl = entry.SiteURL;//provide source site url
@@ -3920,10 +3980,10 @@ function copyFileMulti() {
                                                         $(".chkFileFolder").prop("checked", "");
                                                         var tempDocName = fixedDecodeURIComponent(Documentname);
                                                         if (fixedDecodeURIComponent(Documentname).includes('/Documents/') == true) {
-                                                            tempDocName = tempDocName.replace("/Documents/", "/Shared%20Documents/");
+                                                            tempDocName = tempDocName.replace("/Documents/", "/Shared Documents/");
                                                         }
                                                         else if (fixedDecodeURIComponent(Documentname) == 'Documents') {
-                                                            tempDocName = tempDocName.replace("Documents", "Shared%20Documents");
+                                                            tempDocName = tempDocName.replace("Documents", "Shared Documents");
                                                         }
                                                         GetMyDocumentsWithFilesFolder(fixedEncodeURIComponent(tempDocName));
                                                         $("#ModalDisplayProperty").modal('hide');
@@ -3966,6 +4026,17 @@ function copyFileMulti() {
                                                 CopyFolderName = '';
                                                 arrFileFolder = [];
                                                 $(".chkFileFolder").prop("checked", "");
+                                                //1 March 23
+                                                var tempDocName = fixedDecodeURIComponent(Documentname);
+                                                if (fixedDecodeURIComponent(Documentname).includes('/Documents/') == true) {
+                                                    tempDocName = tempDocName.replace("/Documents/", "/Shared Documents/");
+                                                }
+                                                else if (fixedDecodeURIComponent(Documentname) == 'Documents') {
+                                                    tempDocName = tempDocName.replace("Documents", "Shared Documents");
+                                                }
+                                                GetMyDocumentsWithFilesFolder(fixedEncodeURIComponent(tempDocName));
+                                                $("#ModalDisplayProperty").modal('hide');
+                                                //
                                             }
                                         }
                                     },
@@ -4099,6 +4170,39 @@ function copyFileMulti() {
                     success: function (data, status, xhr) {
                         ChangeRevokeMessage("Revoked due to file moved", entry.DocumentId, entry.FileFolderName);
                         RequestDigest = $("#__REQUESTDIGEST").val();
+                        //1 march 23
+                        {
+                            if (arrFileFolder.length == (index + 1)) {
+                                $("#Backbtn").trigger('click');
+                                $('input[name="Library"]').attr('checked', false);
+                                $('#copymove').modal('hide');
+                                
+                               // if (IsMoving == true) {
+                                    if (FailDueToCheckOut == 0) {
+                                        alert("Files have been successfully moved.");
+                                    }
+                                    else {
+                                        alert(FailDueToCheckOut + " file(s) are locked, couldn't be moved.\nOther files(s) have been moved successfully.");
+                                    }
+                                    
+                                    var tempDocName = fixedDecodeURIComponent(Documentname);
+                                    if (fixedDecodeURIComponent(Documentname).includes('/Documents/') == true) {
+                                        tempDocName = tempDocName.replace("/Documents/", "/Shared Documents/");
+                                    }
+                                    else if (fixedDecodeURIComponent(Documentname) == 'Documents') {
+                                        tempDocName = tempDocName.replace("Documents", "Shared Documents");
+                                    }
+                                    GetMyDocumentsWithFilesFolder(fixedEncodeURIComponent(tempDocName));//20 jan 23
+                                    waitingDialog.hide();
+                                    $("#ModalDisplayProperty").modal('hide');
+                                //}
+                                FailDueToCheckOut = 0;
+                                CopyDestURL = '';
+                                CopyFolderName = '';
+                                arrFileFolder = [];
+                                $(".chkFileFolder").prop("checked", "");
+                            }
+                        }
                     },
                     error: function (xhr, status, error) {
                         waitingDialog.hide();
@@ -4114,9 +4218,42 @@ function copyFileMulti() {
                 });
 
             }
+            //1 march 23
+            else  if (IsMoving != true)
+            {            
+                if (arrFileFolder.length == (index + 1)) {
+                    $("#Backbtn").trigger('click');
+                    $('input[name="Library"]').attr('checked', false);
+                    $('#copymove').modal('hide');                    
+                    // if (IsMoving != true) {
+                        if (FailDueToCheckOut == 0) {
+                            alert("Files have been successfully copied.");
+                        }
+                        else {
+                            alert(FailDueToCheckOut + " file(s) are locked, couldn't be copied.\nOther files(s) have been copied successfully.");
+                        }
+                        var tempDocName = fixedDecodeURIComponent(Documentname);
+                        if (fixedDecodeURIComponent(Documentname).includes('/Documents/') == true) {
+                            tempDocName = tempDocName.replace("/Documents/", "/Shared Documents/");
+                        }
+                        else if (fixedDecodeURIComponent(Documentname) == 'Documents') {
+                            tempDocName = tempDocName.replace("Documents", "Shared Documents");
+                        }
+                        GetMyDocumentsWithFilesFolder(fixedEncodeURIComponent(tempDocName));//20 jan 23
+                        waitingDialog.hide();
+                        $("#ModalDisplayProperty").modal('hide');
+                    //}
+                    FailDueToCheckOut = 0;
+                    CopyDestURL = '';
+                    CopyFolderName = '';
+                    arrFileFolder = [];
+                    $(".chkFileFolder").prop("checked", "");
+                }
+            } 
+            
         }
         //else
-        {
+        /*{
             if (arrFileFolder.length == (index + 1)) {
                 $("#Backbtn").trigger('click');
                 $('input[name="Library"]').attr('checked', false);
@@ -4155,7 +4292,7 @@ function copyFileMulti() {
                 arrFileFolder = [];
                 $(".chkFileFolder").prop("checked", "");
             }
-        }
+        }*/
     });
 }
 function copyFileMulti_Old() {
@@ -5171,7 +5308,7 @@ function shareFileMulti_Old() {
 					                }
                                     GetMyDocumentsWithFilesFolder(tempDocName);
                                     if (FailDueToCheckOut == 0) {
-                                        alert("File has been shared.");
+                                        alert("File / Folder has been shared.");
                                     }
                                     else {
                                         alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -5201,7 +5338,7 @@ function shareFileMulti_Old() {
 			                }
                             GetMyDocumentsWithFilesFolder(tempDocName);
                             if (FailDueToCheckOut == 0) {
-                                alert("File has been shared.");
+                                alert("File / Folder has been shared.");
                             }
                             else {
                                 alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -5345,7 +5482,7 @@ function shareFileMulti_Old() {
                                         }
                                         GetMyDocumentsWithFilesFolder(tempDocName);
                                         if (FailDueToCheckOut == 0) {
-                                            alert("File has been shared.");
+                                            alert("File / Folder has been shared.");
                                         }
                                         else {
                                             alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -5375,7 +5512,7 @@ function shareFileMulti_Old() {
                                 }
                                 GetMyDocumentsWithFilesFolder(tempDocName);
                                 if (FailDueToCheckOut == 0) {
-                                    alert("File has been shared.");
+                                    alert("File / Folder has been shared.");
                                 }
                                 else {
                                     alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -5414,7 +5551,7 @@ function shareFileMulti_Old() {
                             }
                             GetMyDocumentsWithFilesFolder(tempDocName);
                             if (FailDueToCheckOut == 0) {
-                                alert("File has been shared.");
+                                alert("File / Folder has been shared.");
                             }
                             else {
                                 alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -5594,7 +5731,7 @@ function shareFile() {
                 tempDocName = tempDocName.replace("Documents", "Shared%20Documents");
             }
             GetMyDocumentsWithFilesFolder(tempDocName);
-            alert("File has been shared.");
+            alert("File / Folder has been shared.");
             $("#FileSharing").text("Shared with " + $('#sharewith').val());
             $(".txtSharingHistoy").show();
             $(".btnClosePopup").trigger("click");
@@ -5685,7 +5822,7 @@ function SendEmailSharedNotification(emailProperties) {
             else if (Documentname == 'Documents') {
                 tempDocName = tempDocName.replace("Documents", "Shared%20Documents");
             }
-            GetMyDocumentsWithFilesFolder(tempDocName); alert("File has been shared.");
+            GetMyDocumentsWithFilesFolder(tempDocName); alert("File / Folder has been shared.");
             $("#FileSharing").text("Shared with " + $('#sharewith').val());
             $(".txtSharingHistoy").show();
             $(".btnClosePopup").trigger("click");
@@ -7108,6 +7245,14 @@ function GetSharedHistory(documentid, itemurl, title, documentno, fileName, type
                         userNamecurretn = itemsSharedHistory[index].SharedUsers.results[j].Title
                         userEmail = itemsSharedHistory[index].SharedUserEmail;
                         userEmail = userEmail ? userEmail : "";
+                        //4 May 23
+                        //To handle if sharing is done directly with guest user.
+                        
+                        if(userEmail!=''&&userEmail.search(/#ext/)>=0)
+                        {
+                            userEmail = userEmail.split('#ext')[0];
+                            userEmail = userEmail.replace("_", '@');
+                        }
                         userId = itemsSharedHistory[index].SharedUsers.results[j].Id;
                     }
 
@@ -7794,6 +7939,11 @@ function RevokeGpPermission(GroupId, currentItemId, IsModalOpen, FileFolder, Use
         }
     });
 }
+function RevokeGpPermissionMsg(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL) {
+   
+    revokeGpFile(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL);
+  
+}
 
 //to revoke permission for Group
 function revokeGpFile(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, serverURL, SiteURL) {
@@ -7826,14 +7976,15 @@ function revokeGpFile(GroupId, currentItemId, IsModalOpen, FileFolder, UserOrGro
         success: function (data) {
             RequestDigest = $("#__REQUESTDIGEST").val();
             if (UserOrGroup == "Everyone") {
-                if (Documentname.includes('/') == true) {
-                    var LibraryName = Documentname.split('/')[0];
+                
+                if (fixedDecodeURIComponent(Documentname).includes('/') == true) {
+                    var LibraryName = fixedDecodeURIComponent(Documentname).split('/')[0];
                 }
                 else {
-                    var LibraryName = Documentname;
+                    var LibraryName = fixedDecodeURIComponent(Documentname);
                 }
                 var Metadata;
-                if (ListName.includes('Documents') == true) {
+                if (ListName.includes('/Documents') == true) {
                     var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
                 }
                 else {
@@ -7922,6 +8073,9 @@ function RevokePermission(undefineditemID, itemurl, userId, currentItemId, IsMod
         }
     });
 }
+function RevokePermissionMsg(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail) {
+    revokeFile(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail);
+}
 
 //to revoke permission for USers
 function revokeFile(undefineditemID, itemurl, userId, currentItemId, IsModalOpen, FileFolder, UserOrGroup, SiteURL, UserEmail) {
@@ -7990,14 +8144,14 @@ function DeleateUserPermission(userPrincipleId, itemurl, undefineditemID, curren
         success: function (data) {
             RequestDigest = $("#__REQUESTDIGEST").val();
             if (UserOrGroup == "Everyone") {
-                if (Documentname.includes('/') == true) {
-                    var LibraryName = Documentname.split('/')[0];
+                if (fixedDecodeURIComponent(Documentname).includes('/') == true) {
+                    var LibraryName = fixedDecodeURIComponent(Documentname).split('/')[0];
                 }
                 else {
-                    var LibraryName = Documentname;
+                    var LibraryName = fixedDecodeURIComponent(Documentname);
                 }
                 var Metadata;
-                if (LibraryName.includes('Documents') == true) {
+                if (LibraryName.includes('/Documents') == true) {
                     var ItemType = GetItemTypeForLibraryName('Shared_x0020_Documents');
                 }
                 else {
@@ -8026,7 +8180,8 @@ function DeleateUserPermission(userPrincipleId, itemurl, undefineditemID, curren
             $.when(updateItemWithIDItemListDocuments(ListName, Metadata, currentItemId, _spPageContextInfo.webAbsoluteUrl)).done(function (Result) {
                // SendRevokeEmail(UserOrGroup, currentItemId);//20 feb 23 as mail will trigger from flow
                 $("#RevokePermission").modal('hide');
-                if (IsModalOpen != 'false') {
+                //if (IsModalOpen != 'false')
+                 {
                     alert("permission deleted sucessfully.");
                 }
                 $('#myModalShareHistory').modal('hide');
@@ -8158,15 +8313,19 @@ function RevokeOnCheckBox() {
                                 alert("You are not authorized to revoke " + arraycureent[1].split("/").pop() + " permission.");
                             }
                             else {
-                                revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                                //revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                                revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', arraycureent[5], arraycureent[7], arraycureent[8], arraycureent[9]);//12 May 23
+                                
                             }
                         }
                         else {
-                            revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                           // revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[8], arraycureent[9]);
+                            revokeFile(arraycureent[0], arraycureent[1], arraycureent[2], arraycureent[3], 'false',arraycureent[5], arraycureent[7], arraycureent[8], arraycureent[9]);//12 May 23
                         }
                     }
                     else {
-                        revokeGpFile(arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[1], arraycureent[8]);
+                        //revokeGpFile(arraycureent[2], arraycureent[3], 'false', 'file', arraycureent[7], arraycureent[1], arraycureent[8]);
+                        revokeGpFile(arraycureent[2], arraycureent[3], 'false',arraycureent[5], arraycureent[7], arraycureent[1], arraycureent[8]);//12 May 23
                     }
                 }
                 $("#myModalShareHistory").modal("hide");
@@ -8594,7 +8753,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         }
 
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -8611,7 +8770,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         ValidCount++;
         TypeValue = "outsidesetion";
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -8674,7 +8833,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -8693,7 +8852,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + $("#OutsiderName").val() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">false</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -8710,11 +8869,11 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
-            var attachment = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+            var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
             ApprovalStep += '<div class="col-sm-6 flexitem" id="IniApp' + StepCount + '"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
             ApprovalStep += '<h4>Will be decided by Initiator.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div>';
             ApprovalStep += '<div class="InitiatorApp"><button type="button" class="btn custom-btn wpx-87" onclick="DisplayInitiatorApp(\'NewStep' + StepCount + '\', \'' + StepCount + '\', \'' + StepName + '\', \'' + EmptyArray + '\')">Add Approver</button></div>';
@@ -8726,11 +8885,11 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds, OtherStepDetails) {
             ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
             ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">NA</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">will be provided at Runtime</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
             ApprovalStep += '<span id="DecideStep' + StepCount + '">' + OtherStepDetails[0].ApproverDecidingStep + '</span><span id="AppRoleStep' + StepCount + '">' + OtherStepDetails[0].ApproverRole + '</span><span id="AppTypeStep' + StepCount + '">' + OtherStepDetails[0].ApproverType + '</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+            ApprovalStep += '<div class="dropdown ForCustomizeOnly"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
             ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
             ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
             ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
-            var attachment = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+            var attachment = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
             ApprovalStep += '<div class="col-sm-6 flexitem"><div class="imgsetion"><img src="' + attachment + '" alt=""></div><div class="imagecontent">';
             ApprovalStep += '<h4>Will be decided by ' + OtherStepDetails[0].ApproverDecidingStep + ' Approvers.</h4><a href="javascript:void(0);" style="cursor:pointer;"></a></div></div>';
             ApprovalStep += '</div></li>';
@@ -8795,7 +8954,7 @@ function AddInitiatorApp(HTMLID, StepCount, StepName) {
         }
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + AppEmails.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + AppEIds.toString() + '</span><span id="NameStep' + StepCount + '">' + AppNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span>';
         ApprovalStep += '<span id="DecideStep' + StepCount + '"></span><span id="AppRoleStep' + StepCount + '"></span><span id="AppTypeStep' + StepCount + '">Specific</span><span id="InitialsSign' + StepCount + '">' + $("#chkFooterSign").prop('checked') + '</span></div>';
-        ApprovalStep += '<div class="dropdown ForCustomizeOnly" style="display:none;"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown ForCustomizeOnly" style="display:none;"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -9544,12 +9703,7 @@ function GetDocumentsSharedWithMe(SectionName) {
             $("#divPendingAck").hide();
         }
         ChangeLabels();
-    }).fail(function(){
-		$('.loading_tbl').hide();
-		//waitingDialog.hide(); 
-		
-	});
-	$('.loading_tbl').hide();
+    });
 }
 //Bhawana
 //Bind approval for share
@@ -9643,17 +9797,18 @@ function BindApprovalForShare(items) {
                     SiteURL = items[i].SiteURL;
                 }
                 var NullValue = 'NullValue';
-                documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[i].DocumentURL) + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + items[i].SharedMessage + '\');">' + Title + '</a>';
+                var shareMsgg=(items[i].SharedMessage!=""&&items[i].SharedMessage!=undefined&&items[i].SharedMessage!=null&&items[i].SharedMessage!='null'&&items[i].SharedMessage!='undefined')?fixedEncodeURIComponent(items[i].SharedMessage):"";//24 April 23
+                documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[i].DocumentURL) + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + shareMsgg + '\');">' + Title + '</a>';
                 downloadlink = "<a href='" + fixedEncodeURIComponent(items[i].DocumentURL,"href") + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
             }
             else {
                 documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '">' + Title + '</a>';
             }
             if (items[i].CommentCount != null && items[i].CommentCount != "null" && items[i].CommentCount != 0 && items[i].CommentCount != "0") {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
             }
             else {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
             }
         }
         else {
@@ -9688,7 +9843,7 @@ function BindApprovalForShare(items) {
         if ($("#ddlAckFilter").val() == "Acknowledged") {
             if (AckValue.indexOf("Acknowledged") !== -1) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9699,14 +9854,14 @@ function BindApprovalForShare(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
                 sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
             }
         }
         else if ($("#ddlAckFilter").val() == "Pending") {
             if (AckValue.search(/\bAcknowledge\b/) >= 0) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9717,14 +9872,14 @@ function BindApprovalForShare(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
                 sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
             }
         }
 
         else {
             sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-            sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
             items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9735,7 +9890,7 @@ function BindApprovalForShare(items) {
 
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
             sharedWithMeTR += '' + AckValue + '</div></td>';          
-            sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharingRuleApprovalItem(\''  + items[i].Id + '\')">';//Bhawana
+            sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharingRuleApprovalItem(\''  + items[i].Id + '\')">';//Bhawana
         }
     }
     if (SharedMeTable != '') {
@@ -9764,7 +9919,8 @@ function BindApprovalForShare(items) {
                 FileName: Properties[8].trim(),
                 FileTitle: Properties[9].trim(),
                 LibraryName: Properties[10].trim(),
-                SharedType: Properties[11].trim()
+                SharedType: Properties[11].trim(),
+                FileFolderName:Properties[8].trim()//2 march 23
             });
         }
         else {
@@ -9786,8 +9942,15 @@ function BindApprovalForShare(items) {
         }
         waitingDialog.hide();
     });
+
+    
+
     //TableSharedMePagination();
     Tableagination();
+    //to add checkbox click on header sort//11 May 23
+    $(".sorterHeader").click(function(e){
+        addSelectAllEvent();
+    });
 }
 
 //bind Shared with me Items
@@ -9881,7 +10044,8 @@ function SharedWithMeItems(items) {
                     SiteURL = items[i].SiteURL;
                 }
                 var NullValue = 'NullValue';
-                documentLink = '<a href="javascript:void(0);" id="'+items[i].Id+items[i].DocumentID+'" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[i].DocumentURL) + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + items[i].SharedMessage + '\');">' + Title + '</a>';//Bhawana
+                var shareMsgg=(items[i].SharedMessage!=""&&items[i].SharedMessage!=null&&items[i].SharedMessage!=undefined&&items[i].SharedMessage!='null'&&items[i].SharedMessage!='undefined')?fixedEncodeURIComponent(items[i].SharedMessage):"";
+                documentLink = '<a href="javascript:void(0);" id="'+items[i].Id+items[i].DocumentID+'" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[i].DocumentURL) + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + shareMsgg + '\');">' + Title + '</a>';//Bhawana
                 //documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '" rel="' + items[i].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + items[i].DocumentURL + '\', \'' + items[i].Id + '\', \'' + NullValue + '\', \'' + items[i].LibraryURL + '\');">' + Title + '</a>';
                 downloadlink = "<a href='" + fixedEncodeURIComponent(items[i].DocumentURL,"href") + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
             }
@@ -9889,10 +10053,10 @@ function SharedWithMeItems(items) {
                 documentLink = '<a href="javascript:void(0);" name="' + items[i].DocumentURL + '">' + Title + '</a>';
             }
             if (items[i].CommentCount != null && items[i].CommentCount != "null" && items[i].CommentCount != 0 && items[i].CommentCount != "0") {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
             }
             else {
-                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[i].DocumentID + '\', \'' + items[i].Title + '\', \'' + items[i].SharedFileTitle + '\', \'' + items[i].DocType + '\', \'' + items[i].EditorId + '\', \'' + items[i].EditorId + '\', \'' + items[i].Modified + '\', \'' + items[i].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
             }
         }
         else {
@@ -9910,7 +10074,11 @@ function SharedWithMeItems(items) {
                 tempStatus = "Revoked";
             }
             RunBreadCrumb = true;
-            documentLink += '<a href="javascript:void(0);" rel="' + items[i].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[i].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[i].SiteURL + '\', \'' + items[i].LibraryName + '\', \'' + items[i].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[i].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
+            //documentLink += '<a href="javascript:void(0);" rel="' + items[i].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[i].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[i].SiteURL + '\', \'' + items[i].LibraryName + '\', \'' + items[i].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[i].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
+            //10 May 23
+            var shareMsgg=(items[i].SharedMessage!=""&&items[i].SharedMessage!=null&&items[i].SharedMessage!=undefined&&items[i].SharedMessage!='null'&&items[i].SharedMessage!='undefined')?fixedEncodeURIComponent(items[i].SharedMessage):"";
+            documentLink += '<a href="javascript:void(0);" rel="' + items[i].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[i].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[i].SiteURL + '\', \'' + items[i].LibraryName + '\', \'' + items[i].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[i].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\', \'' + items[i].LibraryURL + '\', \'' + items[i].MetaDataRestricted + '\', \'' + shareMsgg + '\');" class="doc_icon">' + Title + '</a>';
+           
             SourceDocTitle = Title;   //Title For Folder
             sourceDocType = "Folder";
         }
@@ -9927,7 +10095,7 @@ function SharedWithMeItems(items) {
         if ($("#ddlAckFilter").val() == "Acknowledged") {
             if (AckValue.indexOf("Acknowledged") !== -1) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9938,14 +10106,15 @@ function SharedWithMeItems(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
-                sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+                //sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+               // sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+                sharedWithMeTR+='<td class="text-left">' + ChatBoxHTML + '</td></tr>';//on 24 April 23
             }
         }
         else if ($("#ddlAckFilter").val() == "Pending") {
             if (AckValue.search(/\bAcknowledge\b/) >= 0) {
                 sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-                sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                 sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
                 items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9956,14 +10125,15 @@ function SharedWithMeItems(items) {
 
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
                 sharedWithMeTR += '' + AckValue + '</div></td>';
-                sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
-                sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+                //sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+               // sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+                sharedWithMeTR+='<td class="text-left">' + ChatBoxHTML + '</td></tr>';//on 24 April 23
             }
         }
 
         else {
             sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" value="' + items[i].Id + ', ' + items[i].DocumentType + ', ' + items[i].SharedGroup + ', ' + items[i].DocumentID + ', ' + items[i].DocumentURL + ', ' + items[i].SharedUsers.results[0].ID + ', ' + items[i].SiteURL + ', ' + items[i].IsBlock + ', ' + items[i].Title + ', ' + items[i].SharedFileTitle + ', ' + items[i].LibraryName + ', ' + items[i].SharedType + '" id ="ShareToMe' + i + '" class="chkShareToMe"><label for="ShareToMe' + i + '">';
-            sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
             items[i].DOC_ID.Title = items[i].DOC_ID.Title ? items[i].DOC_ID.Title : "";
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[i].DOC_ID.Title + '</div></td>';
@@ -9974,8 +10144,9 @@ function SharedWithMeItems(items) {
 
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '<br>';
             sharedWithMeTR += '' + AckValue + '</div></td>';
-            sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
-            sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+            //sharedWithMeTR += '<td class="text-left"><div class="ShareAction"><img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[i].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[i].Id + '\')">';
+           // sharedWithMeTR += '</div>' + ChatBoxHTML + '</td></tr>';
+            sharedWithMeTR+='<td class="text-left">' + ChatBoxHTML + '</td></tr>';//on 24 April 23
 
         }
     }
@@ -10005,7 +10176,9 @@ function SharedWithMeItems(items) {
                 FileName: Properties[8].trim(),
                 FileTitle: Properties[9].trim(),
                 LibraryName: Properties[10].trim(),
-                SharedType: Properties[11].trim()
+                SharedType: Properties[11].trim(),
+                FileFolderName:Properties[8].trim()//2 march 23
+
             });
         }
         else {
@@ -10027,8 +10200,14 @@ function SharedWithMeItems(items) {
         }
         waitingDialog.hide();
     });
+
+     
     //TableSharedMePagination();
     Tableagination();
+    //to add checkbox click on header sort//11 May 23
+    $(".sorterHeader").click(function(e){
+        addSelectAllEvent();
+    });
 }
 
 
@@ -10133,13 +10312,16 @@ function SharedByMeItems(array) {
                     SiteURL = items[0].SiteURL;
                 }
                 var NullValue = 'NullValue';
-                documentLink = '<a href="javascript:void(0);" name="' + items[0].DocumentURL + '" rel="' + items[0].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[0].DocumentURL) + '\', \'' + items[0].Id + '\', \'' + NullValue + '\', \'' + items[0].LibraryURL + '\', \'' + items[0].MetaDataRestricted + '\', \'' + items[0].SharedMessage + '\');">' + Title + '</a>';
+                var shareMsgg="";
+                if(items[0].SharedMessage!=undefined&&items[0].SharedMessage!=""&&items[0].SharedMessage!=null&&items[0].SharedMessage!='null'&&items[0].SharedMessage!='undefined')
+                 shareMsgg=fixedEncodeURIComponent(items[0].SharedMessage);
+                documentLink = '<a href="javascript:void(0);" name="' + items[0].DocumentURL + '" rel="' + items[0].Id + '" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + DMS_Type + '\', \'' + PermissionStatus + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(items[0].DocumentURL) + '\', \'' + items[0].Id + '\', \'' + NullValue + '\', \'' + items[0].LibraryURL + '\', \'' + items[0].MetaDataRestricted + '\', \'' + shareMsgg + '\');">' + Title + '</a>';
                 downloadlink = "<a href='" + fixedEncodeURIComponent(items[0].DocumentURL,"href") + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
                 if (items[0].CommentCount != null && items[0].CommentCount != "null" && items[0].CommentCount != 0 && items[0].CommentCount != "0") {
-                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/MsgLines.png" style="width:20px; margin:0 2px;"></span>';
                 }
                 else {
-                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
+                    ChatBoxHTML = '<span class="text-left chatBox" data-toggle="modal" data-target="#chat_sec" onclick="OpenChatBox(\'' + items[0].DocumentID + '\', \'' + items[0].Title + '\', \'' + items[0].SharedFileTitle + '\', \'' + items[0].DocType + '\', \'' + items[0].EditorId + '\', \'' + items[0].EditorId + '\', \'' + items[0].Modified + '\', \'' + items[0].SiteURL + '\',this)"><img src="../SiteAssets/MyDocuments/DMS/assets/images/Msg.png" style="width:20px; margin:0 2px;"></span>';
                 }
             }
             else {
@@ -10157,7 +10339,12 @@ function SharedByMeItems(array) {
                     tempStatus = "Revoked";
                 }
                 RunBreadCrumb = true;
-                documentLink += '<a href="javascript:void(0);" rel="' + items[0].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[0].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[0].SiteURL + '\', \'' + items[0].LibraryName + '\', \'' + items[0].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[0].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
+                var shareMsgg="";
+                if(items[0].SharedMessage!=undefined&&items[0].SharedMessage!=""&&items[0].SharedMessage!=null&&items[0].SharedMessage!='null'&&items[0].SharedMessage!='undefined')
+                    shareMsgg=fixedEncodeURIComponent(items[0].SharedMessage);
+                 documentLink += '<a href="javascript:void(0);" rel="' + items[0].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[0].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[0].SiteURL + '\', \'' + items[0].LibraryName + '\', \'' + items[0].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[0].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\', \'' + items[0].LibraryURL + '\', \'' + items[0].MetaDataRestricted + '\', \'' + shareMsgg + '\');" class="doc_icon">' + Title + '</a>';//10 May 23
+               
+               // documentLink += '<a href="javascript:void(0);" rel="' + items[0].Id + '" onclick="GetSharedFolderDocuments(this, \'' + encodeURI(items[0].DocumentURL) + '\', \'' + tempStatus + '\', \'' + items[0].SiteURL + '\', \'' + items[0].LibraryName + '\', \'' + items[0].Title + '\', \'' + DocumentNo + '\', \'' + sourceDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + items[0].IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\');" class="doc_icon">' + Title + '</a>';
                 SourceDocTitle = Title;   //Title For Folder
                 sourceDocType = "Folder";
             }
@@ -10176,21 +10363,21 @@ function SharedByMeItems(array) {
                     return (obj.PermissionStatus != "Revoked" && obj.PermissionStatus != "Deleted" && obj.PermissionStatus != "RevokePending");
                 });
                 if (IsEveryone.length > 0 && IsEveryone.length == temparray.length) {
-                    ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                    ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
                 }
                 else {
                     if (IsEveryone.length > 0 && IsEveryone.length != items.length) {
-                        ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[0].Id + '\')">';
+                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')"><img src="../SiteAssets/MyDocuments/DMS/assets/images/globe.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + items[0].Id + '\')">';
                     }
                     else {
-                        ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                        ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
                     }
                 }
             }
             else {
-                ActionHTML = '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
+                ActionHTML = '<img src="../SiteAssets/MyDocuments/DMS/assets/images/shared.png" style="width:20px; margin:0 2px;" onclick="GetSharedHistory(\'' + items[0].DocumentID + '\', \'' + items[0].DocumentURL + '\', \'' + Title + '\', \'' + DocumentNo + '\', \'' + SourceDocTitle + '\', \'' + DocumentType + '\', \'' + HistoryAction + '\', \'' + array[i].Id + '\')">';
             }
-            sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+            sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
             sharedWithMeTR += '<td class="text-left">' + documentLink + '</td>';
             items[0].DOC_ID.Title = items[0].DOC_ID.Title ? items[0].DOC_ID.Title : "";
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + items[0].DOC_ID.Title + '</div></td>';
@@ -10198,7 +10385,7 @@ function SharedByMeItems(array) {
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sourceDocType + '</div></td>';
             sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
             if (PermissionStatus == "All revoked") {
-                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;"></div></td>';
+                sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"><img src="../SiteAssets/MyDocuments/DMS/assets/images/no_shared.png" style="width:20px; margin:0 2px;"></div></td>';
             }
             else {
                 sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionStatus + '</div></td>';
@@ -10225,7 +10412,8 @@ function SharedByMeItems(array) {
                 FileName: Properties[8].trim(),
                 FileTitle: Properties[9].trim(),
                 LibraryName: Properties[10].trim(),
-                SharedType: Properties[11].trim()
+                SharedType: Properties[11].trim(),
+                FileFolderName:Properties[8].trim()
             });
         }
         else {
@@ -10247,8 +10435,14 @@ function SharedByMeItems(array) {
         }
         waitingDialog.hide();
     });
+
+     
     //TableSharedMePagination();
     Tableagination();
+    //to add checkbox click on header sort//11 May 23
+    $(".sorterHeader").click(function(e){
+        addSelectAllEvent();
+    });
 }
 
 
@@ -10302,7 +10496,221 @@ function TableSharedMePagination() {
 }
 
 //Get all the sub-File/Folder shared with me
-function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+//10 May 23
+function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation,LibUrl,MataDataReq,ShareMsg) {
+    var ChkCount = 1;
+    var ColumnName = "";
+    $("#DMSTable").empty().html('<table class="table mb-0 custom-table tablemanager" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
+    ColumnName += '<th class="text-center border-bottom-0 w-2 disableSort">' +
+        '<label class="checkbox-inline hpx-20"><input type="checkbox" id="selectAllChk" value=""></label><span class="TblHeader hide"></span>' +
+        '</th>';
+    if ($(".headdingLinks").text() == 'Shared by Me') {
+        var SharedMeColNames = ['Name', 'Title', 'Reference', 'Category', 'Shared From', 'Permission', ''];
+    }
+    else {
+        var SharedMeColNames = ['Name', 'Title', 'Reference', 'Category', 'Shared By', 'Shared From', 'Permission', ''];
+    }
+    for (var i = 0; i < SharedMeColNames.length; i++) {
+        if (SharedMeColNames[i] == '') {
+            ColumnName += '<th class="disableSort" data-localize="' + SharedMeColNames[i] + '">' + SharedMeColNames[i] + '<span class="TblHeader hide"></span></th>';
+        }
+        else {
+            ColumnName += '<th><span class="TblHeader" data-localize="' + SharedMeColNames[i] + '">' + SharedMeColNames[i] + '</span></th>';
+        }
+    }
+    $("#theadItem").empty().append(ColumnName);
+    if (SiteURL == "null" || SiteURL == null || SiteURL == "undefined" || SiteURL == undefined) {
+        if (folderUrl.indexOf("DepartmentalDMS") != -1) {
+            SiteURL = window.location.origin + folderUrl.split('DepartmentalDMS')[0];
+        }
+        else {
+            SiteURL = _spPageContextInfo.webAbsoluteUrl;
+        }
+    }
+    var documentLink = '';
+    var sharedWithMeTR = '';
+    var Ownurl = SiteURL + "/_api/Web/GetFolderByServerRelativeUrl('" + folderUrl + "')?$select=ID,File_x0020_Type&$expand=Folders,Folders/ListItemAllFields,Files,Files/ListItemAllFields&$orderby=Modified desc";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var files = data.d.Files.results;
+            var folders = data.d.Folders.results;
+            if (files.length == 0 && folders.length == 0) {
+                waitingDialog.hide();
+                sharedWithMeTR += '<tr><td colspan="12" style="text-align:center;">No file or folder found.</td></tr>';
+                $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+            }
+            else {
+                for (var i = 0; i < folders.length; i++) {
+                    Icon = "folder.png";
+                    var SubfolderUrl = folderUrl + '/' + folders[i].Name;
+                    folders[i].ListItemAllFields.Title = folders[i].ListItemAllFields.Title ? folders[i].ListItemAllFields.Title : '';
+                    var RunBreadCrumb = true;
+                    var BlankValueParam = '';
+                    FileType = "folder";
+                    
+                    //documentLink = '<a href="javascript:void(0);" rel="' + Action.rel + '" onclick="GetSharedFolderDocuments(this, \'' + SubfolderUrl + '\', \'' + PermissionType + '\', \'' + SiteURL + '\', \'' + LibraryName + '\', \'' + ItemTitle + '\', \'' + ItemRef + '\', \'' + ItemDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\')" class="doc_icon">' + folders[i].Name + '</a>';
+                    documentLink = '<a href="javascript:void(0);" rel="' + Action.rel + '" onclick="GetSharedFolderDocuments(this, \'' + SubfolderUrl + '\', \'' + PermissionType + '\', \'' + SiteURL + '\', \'' + LibraryName + '\', \'' + ItemTitle + '\', \'' + ItemRef + '\', \'' + ItemDocType + '\', \'' + sharedBy + '\', \'' + sharedFrom + '\', \'' + IsBlock + '\', \'' + LibraryType + '\', \'' + RunBreadCrumb + '\', \'' + LibUrl+ '\', \'' + MataDataReq+ '\', \'' + ShareMsg+ '\')" class="doc_icon">' + folders[i].Name + '</a>';//10 May 23
+                    
+                    var IsBlockHTML = '<td class="dwnld_cell" style="text-align:center"></td>';
+                    if (IsBlock == "Yes") {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe" disabled="disabled"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    else {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    ChkCount++;
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<td class="text-left">' + documentLink + '';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + folders[i].ListItemAllFields.Title + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">Folder</div></td>';
+                    if ($(".headdingLinks").text() != 'Shared by Me') {
+                        sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+                    }
+                    else {
+                        //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"></div></td>';
+                    }
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionType + '</div></td>';
+                    sharedWithMeTR += IsBlockHTML + '</tr>';
+                }
+                for (var i = 0; i < files.length; i++) {
+                    var FileExtension = "." + files[i].Name.substring(files[i].Name.lastIndexOf('.') + 1);
+                    Icon = "file.png";
+                    if (".docx" == FileExtension || ".doc" == FileExtension) {
+                        Icon = "docx.png";
+                    } else if (".pdf" == FileExtension) {
+                        Icon = "pdf.png";
+                    } else if (".jpg" == FileExtension || ".psd" == FileExtension || ".tiff" == FileExtension || ".gif" == FileExtension || ".bmp" == FileExtension || ".jpeg" == FileExtension || ".png" == FileExtension) {
+                        Icon = "image-icon.png";
+                    } else if (".xlsx" == FileExtension || ".xls" == FileExtension) {
+                        Icon = "xlsx.png";
+                    } else if (".pptx" == FileExtension || ".ppt" == FileExtension) {
+                        Icon = "pptx.png";
+                    } else if (".txt" == FileExtension) {
+                        Icon = "txt.png";
+                    } else if (".csv" == FileExtension) {
+                        Icon = "CSV.png";
+                    } else if (".zip" == FileExtension || ".rar" == FileExtension || ".7z" == FileExtension || ".arz" == FileExtension || ".cab" == FileExtension || ".rpm" == FileExtension || ".wim" == FileExtension) {
+                        Icon = "ZIP.png";
+                    } else if (".mp4" == FileExtension || ".wmv" == FileExtension || ".avi" == FileExtension || ".mpeg" == FileExtension || ".flv" == FileExtension || ".mov" == FileExtension || ".wav" == FileExtension || ".ogv" == FileExtension) {
+                        Icon = "video-files.png";
+                    } else if (".mp3" == FileExtension || ".wma" == FileExtension || ".aac" == FileExtension || ".pcm" == FileExtension) {
+                        Icon = "audio.png";
+                    }else if (".EML" == FileExtension || ".eml" == FileExtension) {
+                    Icon = "eml.png";
+                }
+                    var NullValue = 'NullValue';
+                    documentLink = '<a href="javascript:void(0);" name="' + files[i].ServerRelativeUrl + '" rel="" onclick="DisplayFileProperty(\'' + SiteURL + '\', \'' + LibraryType + '\', \'' + PermissionType + '\', \'' + NullValue + '\', \'' + NullValue + '\', \'' + fixedEncodeURIComponent(files[i].ServerRelativeUrl) + '\', \'' + NullValue + '\', \'' + NullValue + '\' ,\'' + LibUrl+ '\', \'' + MataDataReq+ '\', \'' + ShareMsg+ '\');">' + files[i].Name + '</a>';//10 May 23
+                    downloadlink = "<a href='" + fixedEncodeURIComponent(files[i].ServerRelativeUrl,"href") + "' target='_blank' download><span class='glyphicon glyphicon-download-alt'></span></a>";
+                    var IsBlockHTML = '<td class="dwnld_cell" style="text-align:center"></td>';
+                    var BlankValueParam = '';
+                    FileType = "file";
+                    if (IsBlock == "Yes") {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe" disabled="disabled"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    else {
+                        sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
+                    }
+                    ChkCount++;
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<td class="text-left">' + documentLink + '';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
+                    if (files[i].ListItemAllFields.DocumentType == null || files[i].ListItemAllFields.DocumentType == undefined || files[i].ListItemAllFields.DocumentType == "null" || files[i].ListItemAllFields.DocumentType == "--select--" || files[i].ListItemAllFields.DocumentType == "-Select-") {
+                        files[i].ListItemAllFields.DocumentType = '';
+                    }
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + files[i].ListItemAllFields.DocumentType + '</div></td>';
+                    if ($(".headdingLinks").text() != 'Shared by Me') {
+                        sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedBy + '</div></td>';
+                    }
+                    else {
+                        //sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2"></div></td>';
+                    }
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + sharedFrom + '</div></td>';
+                    sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + PermissionType + '</div></td>';
+                    sharedWithMeTR += IsBlockHTML + '</tr>';
+
+                }
+                if (SharedMeTable != '') {
+                    SharedMeTable.destroy();
+                }
+
+                $("#groupDocumentGridtbody").empty().append(sharedWithMeTR);
+                //TableSharedMePagination();
+                Tableagination();
+                $(".chkShareToMe").click(function () {
+                    var Properties = this.value.split(',');
+                    if (this.checked == true) {
+                        arrFileFolder.push({
+                            SharedItemId: Properties[0].trim(),
+                            type: Properties[1].trim(),
+                            SharedTo: Properties[2].trim(),
+                            DocumentId: Properties[3].trim(),
+                            ServerURL: Properties[4].trim(),
+                            userOrgId: Properties[5].trim(),
+                            SiteURL: Properties[6].trim(),
+                            IsBlock: Properties[7].trim(),
+                            FileName: Properties[8].trim(),
+                            FileTitle: Properties[9].trim(),
+                            LibraryName: Properties[10].trim(),
+                            SharedType: Properties[11].trim(),
+                            FileFolderName:Properties[8].trim()//2 march 23
+                            
+                        });
+                    }
+                    else {
+                        var selected = this.value;
+                        arrFileFolder = arrFileFolder.filter(function (obj) {
+                            return obj.SharedItemId != Properties[0].trim();
+                        });
+                    }
+                });
+                $("#selectAllChk").click(function (e) {
+                    waitingDialog.show();
+                    if (this.checked == true) {
+                        $('.chkShareToMe').prop("checked", "");
+                        $('.chkShareToMe').trigger('click');
+                    }
+                    else {
+                        $('.chkShareToMe').prop("checked", "");
+                        arrFileFolder = [];
+                    }
+                    waitingDialog.hide();
+                });
+                 //to add checkbox click on header sort//11 May 23
+                $(".sorterHeader").click(function(e){
+                    addSelectAllEvent();
+                });
+                waitingDialog.hide();
+                ChangeLabels();
+            }
+        }, eror: function (error) {
+            alert(JSON.stringify(error));
+            waitingDialog.hide();
+        }
+    });
+    if (RunNavigation == true || RunNavigation == "true") {
+        $("#generateBradCumbNew").empty();
+        CheckLibary = LibraryName;
+        //if ($(".headdingLinks").text() == 'Shared with Me' || $(".headdingLinks").text() == 'Shared by Me') {
+        if ($(".headdingLinks").text() == 'Shared with Me' || $(".headdingLinks").text() == 'Shared by Me'|| $(".headdingLinks").text() == 'Archive') {
+
+            //folderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
+            DMS_Type = '';
+            //GetSubShareFolders(folderUrl, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, false);
+            GetSubShareFolders(folderUrl, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, false,LibUrl,MataDataReq,ShareMsg);//10 May 23
+            
+        }
+        else {
+            GetSubFolders(folderUrl);
+        }
+    }
+}
+function GetSharedFolderDocuments_Old(Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
     var ChkCount = 1;
     var ColumnName = "";
     $("#DMSTable").empty().html('<table class="table mb-0 custom-table tablemanager" id="groupDocumentGrid"><thead><tr id="theadItem"></tr></thead><tbody id="groupDocumentGridtbody"></tbody></table>');
@@ -10364,7 +10772,7 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                         sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '" value="' + folders[i].ListItemAllFields.Id + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + folders[i].ServerRelativeUrl + ', ' + BlankValueParam + ', ' + SiteURL + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
                     }
                     ChkCount++;
-                    sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                     sharedWithMeTR += '<td class="text-left">' + documentLink + '';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + folders[i].ListItemAllFields.Title + '</div></td>';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
@@ -10418,7 +10826,7 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                         sharedWithMeTR += '<tr><td class="text-center"><div class="chexbox_mg"><input type="checkbox" name="' + decodeURI(folderUrl) + '"  value="' + BlankValueParam + ', ' + FileType + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + encodeURI(files[i].ServerRelativeUrl) + ', ' + BlankValueParam + ', ' + BlankValueParam + ', ' + IsBlock + ', ' + ItemTitle + ', ' + ItemTitle + ', ' + LibraryName + ', ' + LibraryType + '" id ="ShareToMe' + ChkCount + '" class="chkShareToMe"><label for="ShareToMe' + ChkCount + '">';
                     }
                     ChkCount++;
-                    sharedWithMeTR += '<img width="30px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
+                    sharedWithMeTR += '<img width="30px" src="../SiteAssets/MyDocuments/DMS/assets/images/' + Icon + '" alt="' + Icon + '"></label></div></td>';
                     sharedWithMeTR += '<td class="text-left">' + documentLink + '';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemTitle + '</div></td>';
                     sharedWithMeTR += '<td class="text-left"><div class="dms-table-ellipsis-2">' + ItemRef + '</div></td>';
@@ -10459,7 +10867,9 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                             FileName: Properties[8].trim(),
                             FileTitle: Properties[9].trim(),
                             LibraryName: Properties[10].trim(),
-                            SharedType: Properties[11].trim()
+                            SharedType: Properties[11].trim(),
+                            FileFolderName:Properties[8].trim()//2 march 23
+                            
                         });
                     }
                     else {
@@ -10480,6 +10890,11 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
                         arrFileFolder = [];
                     }
                     waitingDialog.hide();
+                });
+
+                 //to add checkbox click on header sort//11 May 23
+                $(".sorterHeader").click(function(e){
+                    addSelectAllEvent();
                 });
                 waitingDialog.hide();
                 ChangeLabels();
@@ -10503,8 +10918,10 @@ function GetSharedFolderDocuments(Action, folderUrl, PermissionType, SiteURL, Li
     }
 }
 
+
 //get sub-folder/files for Shared Documents/folder
-function GetSubShareFolders(subFolderlLink, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+//10 May 23
+function GetSubShareFolders(subFolderlLink, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation,LibUrl,MataDataReq,ShareMsg) {
     var encodedeUrl = decodeURI(subFolderlLink)
     var surFoldersArray = new Array();
     var subFolders = encodedeUrl.split('/');
@@ -10520,20 +10937,26 @@ function GetSubShareFolders(subFolderlLink, Action, folderUrl, PermissionType, S
             }
         }
     }
-    ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation);
+   // ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation);
+      ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation,LibUrl,MataDataReq,ShareMsg);
+    
 }
 
 function shareTootFolder() {
     if ($(".headdingLinks").text() == 'Shared with Me') {
         $("#tabSharedToMe").trigger("click");
     }
-    else {
+    else if ($(".headdingLinks").text() == 'Archive') //10 May 23
+    {
+        $("#tabArchive").trigger("click");
+    }else  {
         $("#tabSharedByMe").trigger("click");
     }
 }
 
 //code for Folder-Navigation for Shared Documents/folder
-function ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation) {
+//10 May 23 ,LibUrl,MataDataReq,ShareMsg added
+function ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, SiteURL, LibraryName, ItemTitle, ItemRef, ItemDocType, sharedBy, sharedFrom, IsBlock, LibraryType, RunNavigation,LibUrl,MataDataReq,ShareMsg) {
     var braCummHtml = "";
     var targetServerRaltiveUrl = "";
     $(".cont_breadcrumbs_1").show();
@@ -10541,7 +10964,8 @@ function ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, Si
         for (var index = 0; index < surFoldersArray.length; index++) {
             if (index != 0) {
                 var TempfolderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
-                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+               // var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "','" +LibUrl+ "','" +MataDataReq+ "','" +ShareMsg+ "')";//10 May 23
                 if (index == 1) {
                     braCummHtml += '<li title="Root" class="mybradcumb first"><a href="javascript:void(0);" onclick="shareTootFolder();">Root</a></li>';
                 } else {
@@ -10568,7 +10992,9 @@ function ShareFolderNavig(surFoldersArray, Action, folderUrl, PermissionType, Si
                     IsClick = true;
                 }
                 var TempfolderUrl = folderUrl.substr(0, folderUrl.lastIndexOf("/"));
-                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+               // var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "')";
+                var targetUrl = "javascript:GetSharedFolderDocuments('" + Action + "', '" + TempfolderUrl + "', '" + PermissionType + "', '" + SiteURL + "', '" + LibraryName + "', '" + ItemTitle + "', '" + ItemRef + "', '" + ItemDocType + "', '" + sharedBy + "', '" + sharedFrom + "', '" + IsBlock + "', '" + LibraryType + "', '" + RunNavigation + "','" +LibUrl+ "','" +MataDataReq+ "','" +ShareMsg+ "')";//10 May 23
+                
                 if (index == 0) {
                     braCummHtml += '<li title="Root" class="mybradcumb first"><a href="javascript:void(0);" onclick="shareTootFolder();">Root</a></li>';
                 } else {
@@ -11096,7 +11522,7 @@ function shareFileMulti() {
 					                }
                                     GetMyDocumentsWithFilesFolder(tempDocName);
                                     if (FailDueToCheckOut == 0) {
-                                        alert("File has been shared.");
+                                        alert("File / Folder has been shared.");
                                     }
                                     else {
                                         alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -11127,7 +11553,7 @@ function shareFileMulti() {
 			                }
                             GetMyDocumentsWithFilesFolder(tempDocName);
                             if (FailDueToCheckOut == 0) {
-                                alert("File has been shared.");
+                                alert("File / Folder has been shared.");
                             }
                             else {
                                 alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -11272,7 +11698,7 @@ function shareFileMulti() {
                                         }
                                         GetMyDocumentsWithFilesFolder(tempDocName);
                                         if (FailDueToCheckOut == 0) {
-                                            alert("File has been shared.");
+                                            alert("File / Folder has been shared.");
                                         }
                                         else {
                                             alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -11303,7 +11729,7 @@ function shareFileMulti() {
                                 }
                                 GetMyDocumentsWithFilesFolder(tempDocName);
                                 if (FailDueToCheckOut == 0) {
-                                    alert("File has been shared.");
+                                    alert("File / Folder has been shared.");
                                 }
                                 else {
                                     alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -11342,7 +11768,7 @@ function shareFileMulti() {
                             }
                             GetMyDocumentsWithFilesFolder(tempDocName);
                             if (FailDueToCheckOut == 0) {
-                                alert("File has been shared.");
+                                alert("File / Folder has been shared.");
                             }
                             else {
                                 alert(FailDueToCheckOut + " file(s) are locked, couldn't be shared.\nOther files(s) have been shared successfully.");
@@ -11688,3 +12114,157 @@ Metadata = {
             });
             console.log("Sharing approval request has been approved successfully.");
 }
+//to add checkbox click on header sort //11 May 23
+function addSelectAllEvent(){
+    if(currentSectionType=='Reassigned'||currentSectionType=='MyFavorite'||currentSectionType=='My Documents'||currentSectionType=='Department'||currentSectionType=='Group Documents'||currentSectionType=='GuestDocuments'||currentSectionType=='ProjectDocuments')
+    {     arrFileFolder = [];
+        $('#selectAllChk').prop("checked", ""); 
+        $(".chkFileFolder").click(function() {
+            var Properties = this.value.split(',');
+            if (this.checked == true) {
+                arrFileFolder.push({
+                    type: Properties[0].trim(),
+                    ServerURL: decodeURIComponent(Properties[1].trim()),
+                    DocumentId: Properties[2].trim(),
+                    SiteURL: Properties[3].trim(),
+                    SelectedLibrary: Properties[4].trim(),
+                    FileFolderName: decodeURIComponent(Properties[5].trim()),
+                    CopyFileLink: decodeURIComponent(Properties[6].trim()),
+                    FileTitle: Properties[7].trim(),
+                    FileRef: Properties[8].trim(),
+                    FileType: Properties[9].trim(),
+                    DocType: Properties[10].trim(),
+                    fileFilderInheritance: $(this).data('inherit'),
+                    SubCategory: Properties[11].trim()
+                });
+            } else {
+                var selected = this.value;
+                arrFileFolder = arrFileFolder.filter(function(obj) {
+                    return obj.DocumentId != Properties[2].trim();
+                });
+            }
+        });
+        $("#selectAllChk").click(function(e) {
+            waitingDialog.show();
+            arrFileFolder = [];
+            if (this.checked == true) {
+                $('.chkFileFolder').prop("checked", "");
+                $('.chkFileFolder').trigger('click');
+            } else {
+                $('.chkFileFolder').prop("checked", "");
+                arrFileFolder = [];
+            }
+            waitingDialog.hide();
+        });
+
+    }
+    else if(currentSectionType=='ApprovalInbox'){
+        arrAppIds = [];
+        $('#selectAllChk').prop("checked", "");
+         $(".chkAppIn").click(function () {
+            if (this.checked == true) {
+                arrAppIds.push(this.value);
+            }
+            else {
+                var selected = this.value;
+                arrAppIds = arrAppIds.filter(function (obj) {
+                    return obj !== selected;
+                });
+            }
+        });
+
+        $("#selectAllChk").click(function (e) {
+            waitingDialog.show();
+            arrAppIds = [];
+            if (this.checked == true) {
+                $('.chkAppIn').prop("checked", "");
+                $('.chkAppIn').trigger('click');
+            }
+            else {
+                $('.chkAppIn').prop("checked", "");
+                arrAppIds = [];
+            }
+            waitingDialog.hide();
+        });
+
+    }
+    else if(currentSectionType=='ApprovalOutbox'){
+          arrAppIds = [];
+        $('#selectAllChk').prop("checked", "");
+         $(".chkAppOut").click(function () {
+            if (this.checked == true) {
+                arrAppIds.push(this.value);
+            }
+            else {
+                var selected = this.value;
+                arrAppIds = arrAppIds.filter(function (obj) {
+                    return obj !== selected;
+                });
+            }
+        });
+
+        $("#selectAllChk").click(function (e) {
+            waitingDialog.show();
+            arrAppIds = [];
+            if (this.checked == true) {
+                $('.chkAppOut').prop("checked", "");
+                $('.chkAppOut').trigger('click');
+            }
+            else {
+                $('.chkAppOut').prop("checked", "");
+                arrAppIds = [];
+            }
+            waitingDialog.hide();
+        });
+
+    }
+    else if(currentSectionType=='SharedWithMe'||currentSectionType=='SharedByMe'||currentSectionType=='Archive')
+    {  
+         arrFileFolder = [];
+         $('#selectAllChk').prop("checked", "");
+         $(".chkShareToMe").click(function () {
+        var Properties = this.value.split(',');
+        if (this.checked == true) {
+            arrFileFolder.push({
+                SharedItemId: Properties[0].trim(),
+                type: Properties[1].trim(),
+                SharedTo: Properties[2].trim(),
+                DocumentId: Properties[3].trim(),
+                ServerURL: Properties[4].trim(),
+                userOrgId: Properties[5].trim(),
+                SiteURL: Properties[6].trim(),
+                IsBlock: Properties[7].trim(),
+                FileName: Properties[8].trim(),
+                FileTitle: Properties[9].trim(),
+                LibraryName: Properties[10].trim(),
+                SharedType: Properties[11].trim(),
+                FileFolderName:Properties[8].trim()//2 march 23
+
+            });
+        }
+        else {
+            var selected = this.value;
+            arrFileFolder = arrFileFolder.filter(function (obj) {
+                return obj.SharedItemId != Properties[0].trim();
+            });
+        }
+    });
+    $("#selectAllChk").click(function (e) {
+        waitingDialog.show();
+         arrFileFolder = [];
+        if (this.checked == true) {
+            $('.chkShareToMe').prop("checked", "");
+            $('.chkShareToMe').trigger('click');
+        }
+        else {
+            $('.chkShareToMe').prop("checked", "");
+            arrFileFolder = [];
+        }
+        waitingDialog.hide();
+    });
+    }
+}
+ //to add checkbox click on header sort//11 May 23
+/*$(".sorterHeader").click(function(e){
+    addSelectAllEvent();
+});*/
