@@ -1532,7 +1532,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                else{
                    if(DMS_Link!="")
                    {
-                   txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";
+                   txtLINK = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                    propertiesServerRelativeUrl = DMS_Link + "?id=" + fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                    
 
