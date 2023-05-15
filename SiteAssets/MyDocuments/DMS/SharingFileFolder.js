@@ -1585,7 +1585,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                {
                     txtLINK = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                    propertiesServerRelativeUrl = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" +fixedEncodeURIComponent( DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
-               
+                
                }
                else{
                    if(DMS_Link!="")
