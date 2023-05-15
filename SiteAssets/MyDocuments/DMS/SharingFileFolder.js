@@ -1525,7 +1525,7 @@ function DisplayFileProperty(SiteURL, Library, CurrentPermission, FileServerRelU
                 var txtLINK ="";
                 if(LibUrl!='undefined' && LibUrl!=undefined && LibUrl!=null &&LibUrl!='')//Bhawana
                {
-                    txtLINK = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=5";
+                    txtLINK = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" + fixedEncodeURIComponent(DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                    propertiesServerRelativeUrl = LibUrl +"/Forms/AllItems.aspx?id="+ fixedEncodeURIComponent(tempAction,"href") + "&parent=" +fixedEncodeURIComponent( DiaplayServerRelUrl.substr(0, tempAction.lastIndexOf("/"))) + "&p=true";
                
                }
