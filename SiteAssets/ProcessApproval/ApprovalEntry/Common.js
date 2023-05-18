@@ -1,1 +1,1407 @@
-var a417_0x1d0b65=a417_0x6a7d;(function(_0x3b2206,_0x40cceb){var _0x206118=a417_0x6a7d,_0x23a0be=_0x3b2206();while(!![]){try{var _0x4fac00=parseInt(_0x206118(0x1b6))/0x1*(parseInt(_0x206118(0x21e))/0x2)+-parseInt(_0x206118(0x162))/0x3+-parseInt(_0x206118(0x19c))/0x4+-parseInt(_0x206118(0x209))/0x5*(parseInt(_0x206118(0x200))/0x6)+parseInt(_0x206118(0x1f7))/0x7*(-parseInt(_0x206118(0x16f))/0x8)+parseInt(_0x206118(0x1ce))/0x9*(parseInt(_0x206118(0x213))/0xa)+parseInt(_0x206118(0x16a))/0xb*(parseInt(_0x206118(0x1ad))/0xc);if(_0x4fac00===_0x40cceb)break;else _0x23a0be['push'](_0x23a0be['shift']());}catch(_0x5c0d7e){_0x23a0be['push'](_0x23a0be['shift']());}}}(a417_0x41d7,0x8286f),$(document)[a417_0x1d0b65(0x191)](function(){var _0x2f021b=a417_0x1d0b65;jQuery[_0x2f021b(0x218)][_0x2f021b(0x1f6)]=function(_0x3f94dc){var _0x1a0fd8=_0x2f021b,_0x47e82a=new Date(),_0xdaac3=jQuery(_0x1a0fd8(0x211)+_0x47e82a['getDate']()+_0x1a0fd8(0x169));this[_0x1a0fd8(0x173)](_0x3f94dc,_0x47e82a[_0x1a0fd8(0x172)](),_0x47e82a[_0x1a0fd8(0x1b5)](),_0xdaac3);};}));function Displayformattingtools(){var _0x1731e7=a417_0x1d0b65;$('#DisplayfTools')[_0x1731e7(0x189)](_0x1731e7(0x1be))==!![]?($(_0x1731e7(0x1a6))[_0x1731e7(0x17a)](),$(_0x1731e7(0x197))[_0x1731e7(0x17a)]()):($(_0x1731e7(0x196))[_0x1731e7(0x159)](),$(_0x1731e7(0x1ba))[_0x1731e7(0x159)](),$('a[title=\x22Add\x20video\x22]')[_0x1731e7(0x159)](),$(_0x1731e7(0x20a))[_0x1731e7(0x159)](),$('a[title=\x22Add\x20table\x22]')[_0x1731e7(0x159)](),$(_0x1731e7(0x1dc))[_0x1731e7(0x159)](),$(_0x1731e7(0x1a6))[_0x1731e7(0x159)](),$(_0x1731e7(0x185))[_0x1731e7(0x159)](),$(_0x1731e7(0x197))[_0x1731e7(0x159)]());}function a417_0x6a7d(_0x50c992,_0x327019){var _0x41d7e0=a417_0x41d7();return a417_0x6a7d=function(_0x6a7d4b,_0x2c9272){_0x6a7d4b=_0x6a7d4b-0x156;var _0xefeb52=_0x41d7e0[_0x6a7d4b];return _0xefeb52;},a417_0x6a7d(_0x50c992,_0x327019);}function replaceURLWithHTMLLinks(_0x17781){var _0x59f729=a417_0x1d0b65,_0x2c7317=/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;return _0x17781[_0x59f729(0x1c1)](_0x2c7317,'<a\x20href=\x27$1\x27>$1</a>');}var personCols=[],multiDdp=[],AttachDraftCol='';function a417_0x41d7(){var _0x25ff35=['active','removeClass','SPListFilter','Head\x20of\x20the\x20Department','event','/_api/web/lists/getbytitle(\x27ProcessApprovers\x27)/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID\x20eq\x20\x27','\x27\x20disabled=\x27disabled\x27\x20class=\x27dynamicvalfeachcls\x20form-control\x27\x20id=\x27','getFullYear','1jOBMSI','AutoPopulateValue','offset','join','a[title=\x22Add\x20file\x22]','Yes','dynamicvalfeachcls','.sp-peoplepicker-delImage','checked','/_api/web/lists/getbytitle(\x27ApprovalProcessList\x27)/fields?$filter=EntityPropertyName\x20eq\x20\x27','DateOfAnniversary','replace','multiple\x20multiselect-search','outerHeight','hasClass','filter','\x22\x20name=\x22\x22>','</li>','\x20class=\x27dynamicvalfeachcls\x20form-control\x27\x20id=\x27','sites','focus','<option\x20value=\x22','ui-datepicker-close','push','3447TKPwrO','location','\x22\x20class=\x22dynamicvalfeachcls\x09','atob','Draft','map','MM\x20dd,\x20yy','userId','File\x20must\x20be\x20less\x20than\x20100\x20MB','querySelector','Process\x20Steps','disabled','\x27\x20data-original-value=\x27','click','a[title=\x22Show\x20HTML\x20code\x22]','#txtProcessDetails','log','&$filter=LogonName/Id\x20eq\x20\x27','format','#txtProcessFor','trim','Text','Past\x20Date','html','<div\x20class=\x22approve-process-upload-data\x20scrollbar-panel\x22\x20id=\x22Docfilename','\x27\x20>','&$orderby=','function','value','Invalid\x20file,\x20Allowed\x20extensions:\x20','Step','today','\x22\x20style=\x22width:100%;\x20min-width:auto;\x20max-height:300px;\x20margin-bottom:10px;\x22>','\x27\x20class=\x27form-control\x20','Today\x20Only','SPListName','multiselect-select-all','left','Contributors','true','_gotoToday','91WPOwpA','srcElement','\x27\x20and\x20WebPartName\x20eq\x20\x27','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id\x20eq\x20\x27','SPListFilterColumn','slice','href','TemplateName','AttachmentBox','652422IMYIOF','download','OfficeLocation','\x27&$orderby=Created\x20asc','DropdownValues','closest','uniqueSort','change','remove','45QvoXjO','a[title=\x22Add\x20URL\x22]','#txtTempName','getDate','#txtProcessOwner','</option>','#txtProcessPre','\x20multiselect-max-items=\x2710\x27\x20class=\x27form-control\x20','<td><a>','Title,Id,ColumnSequence/Id,ColumnSequence/Title,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID,ColumnSequence&$filter=TemplateID/TemplateName\x20eq\x20\x27','8970TAumsK','lastIndexOf','replaceWith','toLowerCase','SPListSiteAddress','datepicker','\x20class=\x27dynamicvalfeachcls\x20form-control\x20','results','&$filter=','empty','YesNo','76982FEomRN','MultiselectDropdownOptions','portalUrl','setAttribute','<select\x20coltype\x20=\x27','get','\x27\x20class=\x27dynamicvalfeachcls\x20form-control\x20','ColumnType','ManagerLoginName','Prerequisite','<select\x20\x20coltype\x20=\x27','Details','each','indexOf','done','<option>','split','TemplateID','ddpStps','<option\x20value=\x22\x22>\x20--\x20Select\x20--\x20</option>','ColumnName','\x27)/items?$select=Title,Id,','SPClientPeoplePickerDict','DeleteProcessedUser','size','\x22\x20coltype\x20=\x22','Currency','input-sm\x20Cover_PPl\x20','Choices','input-sm','#txtPublishby','top','checkbox','hide','Date','selector','selectedIndex','getElementById','input[name=\x27selector\x27]:checked','application/json;odata=verbose','Users\x20are\x20not\x20available\x20for\x20','webAbsoluteUrl','2728023wWgziR','multiple\x20multiselect-search=\x27true\x27\x20multiselect-select-all=\x27true\x27','reject','Title','Email','pop','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=','</a></td>','27578452IqtUmY','SPListColumn','StepName','Title,Id,ColumnSequence/Id,ColumnSequence/Title,TableColumnID/Id,TableColumnID/Title&$expand=ColumnSequence,TableColumnID&$filter=\x20ColumnSequence/Id\x20eq\x20\x27','val','242056VLVJea','hasAttribute','then','getMonth','_selectDay','Instructions','hasDatepicker','<select\x20','SetEnabledState','\x27\x20and\x20Status\x20eq\x20\x27Active\x27','text','show','getQueryStringParameter','AddUserKeys','/_api/web/lists/getbytitle(\x27ApprovalProcessMaster\x27)/items?$select=*,Id,Title,ProcessType,RequestFor,FileIcon,TemplateName,Active&$filter=ProcessType\x20eq\x20\x27Process\x27\x20and\x20Id\x20eq\x20\x27','#txtProcessInst','SetupIDId','DefaultValue','resolve','_TopSpan','DateValidation','options','.richText-help','destroy','MultipleChoice','Priority','prop','SharePoint\x20List','Past\x20Date\x20included\x20Today','setDate','\x22></div>','css','Yes/No','GET','ready','_TopSpan\x27]','_api/web/lists/getbytitle(\x27','\x22\x20data-original-value\x20=\x20\x22','Future\x20Date','a[title=\x22Add\x20image\x22]','.richText-toolbar','attr','.sp-peoplepicker-editorInput','[id$=\x27','DropdownFrom','292880XLRlDw','find','.sp-peoplepicker-autoFillContainer','/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=ManagerLoginName/Id,ManagerLoginName/Title&$expand=ManagerLoginName&$filter=LogonName/Id\x20eq\x20\x27','length','blob','Future\x20Date\x20included\x20Today','Deferred','#ddpStps','Allowed\x20max\x20file\x20size:\x202\x20MB.','a[title=\x22Remove\x20styles\x22]','ajax','\x27\x20and\x20TableColumnID/Id\x20eq\x20\x27','stringify','DateOfBirth','append','Clear','12nlVxOw'];a417_0x41d7=function(){return _0x25ff35;};return a417_0x41d7();}function SetDatpickerNdropDown(_0x35fc3f,_0x2aae28,_0x303b51,_0x395e15,_0x328fa8,_0x1e198b){var _0x2389df=a417_0x1d0b65;multiDdp=[];if(_0x35fc3f[_0x2389df(0x1a0)]>0x0)for(i=0x0;i<_0x35fc3f[_0x2389df(0x1a0)];i++){if(_0x35fc3f[i][_0x2389df(0x225)]==_0x2389df(0x15a)||_0x35fc3f[i]['ColumnType']=='DueDate'){if(_0x35fc3f[i][_0x2389df(0x183)]!=null&&_0x35fc3f[i][_0x2389df(0x183)]!=undefined&&_0x35fc3f[i]['DateValidation']!=''){if(_0x35fc3f[i][_0x2389df(0x225)]=='DueDate'&&_0x35fc3f[i][_0x2389df(0x180)]!=''&&_0x35fc3f[i]['DefaultValue']!=undefined&&_0x35fc3f[i][_0x2389df(0x180)]!=null){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i][_0x2389df(0x232)];else{var _0x22ef66=$(_0x395e15)[_0x2389df(0x205)]('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i][_0x2389df(0x232)],_0x4b2830=_0x395e15['find'](_0x442d83);_0x442d83=_0x4b2830['selector'],$(_0x442d83)[_0x2389df(0x218)](_0x2389df(0x186)),$(_0x442d83)[_0x2389df(0x1af)](_0x2389df(0x175));}_0x31b3da=$('#'+_0x442d83)[_0x2389df(0x16e)]();var _0x205168=$('#'+_0x442d83)[_0x2389df(0x218)]({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':'Clear','minDate':'+'+_0x35fc3f[i]['DefaultValue'],'onSelect':function(_0x142d1e){var _0x190b21=_0x2389df,_0x3dd1af=$('#'+_0x442d83)[_0x190b21(0x218)]('getDate');},'onClose':function(_0x42407c,_0xb50b9c){var _0x55a286=_0x2389df;$(window[_0x55a286(0x1b2)]['srcElement'])[_0x55a286(0x1c4)](_0x55a286(0x1cc))&&(document[_0x55a286(0x15d)](this['id'])[_0x55a286(0x1ea)]='');}});if((_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i][_0x2389df(0x180)]=='')&&(_0x31b3da==''||_0x31b3da==undefined))$('#'+_0x442d83)[_0x2389df(0x16e)]('');else{if(_0x31b3da!='')$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x31b3da)[_0x2389df(0x1e0)]('LL'));else{var _0x42c891=parseInt(_0x35fc3f[i][_0x2389df(0x180)]);_0x42c891=_0x42c891?_0x42c891:'';const _0x4ca43f=new Date(),_0x9f2787=new Date(_0x4ca43f);_0x9f2787[_0x2389df(0x18c)](_0x9f2787[_0x2389df(0x20c)]()+_0x42c891),console[_0x2389df(0x1de)](_0x9f2787),$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x9f2787)[_0x2389df(0x1e0)]('LL'));}}}else{if(_0x35fc3f[i]['DateValidation']==_0x2389df(0x1f0)){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i][_0x2389df(0x232)];else{var _0x22ef66=$(_0x395e15)['closest']('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i][_0x2389df(0x232)],_0x4b2830=_0x395e15[_0x2389df(0x19d)](_0x442d83);_0x442d83=_0x4b2830['selector'],$(_0x442d83)['datepicker'](_0x2389df(0x186)),$(_0x442d83)[_0x2389df(0x1af)]('hasDatepicker');}$('#'+_0x442d83)['datepicker']({'showButtonPanel':!![],'dateFormat':'MM\x20dd,\x20yy','closeText':_0x2389df(0x1ac),'minDate':_0x2389df(0x1ed),'maxDate':_0x2389df(0x1ed),'onSelect':function(_0x5d637a){var _0x224a7d=_0x2389df,_0x2d98bb=$('#'+_0x442d83)[_0x224a7d(0x218)](_0x224a7d(0x20c));},'onClose':function(_0x334a2d,_0x50f745){var _0x441d63=_0x2389df;$(window['event'][_0x441d63(0x1f8)])[_0x441d63(0x1c4)](_0x441d63(0x1cc))&&(document['getElementById'](this['id'])[_0x441d63(0x1ea)]='');}}),$('#'+_0x442d83)[_0x2389df(0x16e)](moment(new Date())[_0x2389df(0x1e0)]('LL')),AutoFilledCols[_0x2389df(0x1cd)]({'ColName':_0x442d83,'ColValue':moment(new Date())['format']('LL')});}else{if(_0x35fc3f[i][_0x2389df(0x183)]==_0x2389df(0x1e4)){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i][_0x2389df(0x232)];else{var _0x22ef66=$(_0x395e15)['closest']('tr')['attr']('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'],_0x4b2830=_0x395e15[_0x2389df(0x19d)](_0x442d83);_0x442d83=_0x4b2830[_0x2389df(0x15b)];}_0x31b3da=$('#'+_0x442d83)['val'](),$('#'+_0x442d83)[_0x2389df(0x218)]({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':_0x2389df(0x1ac),'maxDate':'-1','onSelect':function(_0x439208){var _0x2ea9ca=_0x2389df,_0x1938da=$('#'+_0x442d83)[_0x2ea9ca(0x218)](_0x2ea9ca(0x20c));},'onClose':function(_0x32807b,_0x18f090){var _0x18e201=_0x2389df;$(window[_0x18e201(0x1b2)][_0x18e201(0x1f8)])[_0x18e201(0x1c4)](_0x18e201(0x1cc))&&(document[_0x18e201(0x15d)](this['id'])[_0x18e201(0x1ea)]='');}});if(_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i][_0x2389df(0x180)]=='')$('#'+_0x442d83)['val']('');else{var _0x42c891=parseInt(_0x35fc3f[i][_0x2389df(0x180)]);_0x42c891=_0x42c891?_0x42c891:'';const _0x14d829=new Date(),_0x3c25c6=new Date(_0x14d829);_0x3c25c6[_0x2389df(0x18c)](_0x3c25c6['getDate']()+_0x42c891),console[_0x2389df(0x1de)](_0x3c25c6),$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x3c25c6)[_0x2389df(0x1e0)]('LL'));}}else{if(_0x35fc3f[i][_0x2389df(0x183)]==_0x2389df(0x18b)){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i]['ColumnName'];else{var _0x22ef66=$(_0x395e15)['closest']('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'],_0x4b2830=_0x395e15[_0x2389df(0x19d)](_0x442d83);_0x442d83=_0x4b2830['selector'],$(_0x442d83)[_0x2389df(0x218)](_0x2389df(0x186)),$(_0x442d83)[_0x2389df(0x1af)](_0x2389df(0x175));}$('#'+_0x442d83)[_0x2389df(0x218)]({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':_0x2389df(0x1ac),'maxDate':'0','onSelect':function(_0x4882ae){var _0x2e12b0=_0x2389df,_0x595e11=$('#'+_0x442d83)[_0x2e12b0(0x218)](_0x2e12b0(0x20c));},'onClose':function(_0x4a21db,_0x2e7ab3){var _0x1ec4f6=_0x2389df;$(window[_0x1ec4f6(0x1b2)][_0x1ec4f6(0x1f8)])[_0x1ec4f6(0x1c4)]('ui-datepicker-close')&&(document[_0x1ec4f6(0x15d)](this['id'])[_0x1ec4f6(0x1ea)]='');}});if(_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i][_0x2389df(0x180)]=='')$('#'+_0x442d83)[_0x2389df(0x16e)]('');else{var _0x42c891=parseInt(_0x35fc3f[i][_0x2389df(0x180)]);_0x42c891=_0x42c891?_0x42c891:'';const _0x150567=new Date(),_0x2b3df9=new Date(_0x150567);_0x2b3df9['setDate'](_0x2b3df9[_0x2389df(0x20c)]()+_0x42c891),console[_0x2389df(0x1de)](_0x2b3df9),$('#'+_0x442d83)['val'](moment(_0x2b3df9)[_0x2389df(0x1e0)]('LL'));}}else{if(_0x35fc3f[i]['DateValidation']==_0x2389df(0x195)){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i][_0x2389df(0x232)];else{var _0x22ef66=$(_0x395e15)[_0x2389df(0x205)]('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'],_0x4b2830=_0x395e15['find'](_0x442d83);_0x442d83=_0x4b2830['selector'],$(_0x442d83)[_0x2389df(0x218)](_0x2389df(0x186)),$(_0x442d83)[_0x2389df(0x1af)]('hasDatepicker');}$('#'+_0x442d83)[_0x2389df(0x218)]({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':_0x2389df(0x1ac),'minDate':'0','onSelect':function(_0x3cd876){var _0x235e2f=_0x2389df,_0xc7fc81=$('#'+_0x442d83)[_0x235e2f(0x218)](_0x235e2f(0x20c));},'onClose':function(_0xf99497,_0x46acc9){var _0x2ba99d=_0x2389df;$(window[_0x2ba99d(0x1b2)][_0x2ba99d(0x1f8)])[_0x2ba99d(0x1c4)](_0x2ba99d(0x1cc))&&(document[_0x2ba99d(0x15d)](this['id'])[_0x2ba99d(0x1ea)]='');}});if(_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i]['DefaultValue']==''){var _0x4add92=$('#'+_0x442d83)[_0x2389df(0x16e)]();_0x4add92=_0x4add92?_0x4add92:'',$('#'+_0x442d83)[_0x2389df(0x16e)](_0x4add92);}else{if(window[_0x2389df(0x1d1)](titanForWork[_0x2389df(0x17b)](_0x2389df(0x1ec)))==_0x2389df(0x1d8)){var _0x4add92=$('#'+_0x442d83)[_0x2389df(0x16e)]();_0x4add92=_0x4add92?_0x4add92:'',$('#'+_0x442d83)[_0x2389df(0x16e)](_0x4add92);}else{var _0x42c891=parseInt(_0x35fc3f[i]['DefaultValue']);_0x42c891=_0x42c891?_0x42c891:'';const _0x5a8b1c=new Date(),_0x3ab5b2=new Date(_0x5a8b1c);_0x3ab5b2['setDate'](_0x3ab5b2['getDate']()+_0x42c891),console[_0x2389df(0x1de)](_0x3ab5b2),$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x3ab5b2)[_0x2389df(0x1e0)]('LL'));}}}else{if(_0x35fc3f[i][_0x2389df(0x183)]==_0x2389df(0x1a2)){if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i][_0x2389df(0x232)];else{var _0x22ef66=$(_0x395e15)[_0x2389df(0x205)]('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'],_0x4b2830=_0x395e15[_0x2389df(0x19d)](_0x442d83);_0x442d83=_0x4b2830[_0x2389df(0x15b)],$(_0x442d83)[_0x2389df(0x1af)]('hasDatepicker');}$('#'+_0x442d83)['datepicker']({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':_0x2389df(0x1ac),'minDate':'0','onSelect':function(_0x49d4da){var _0x10df69=_0x2389df,_0x5eec78=$('#'+_0x442d83)[_0x10df69(0x218)](_0x10df69(0x20c));},'onClose':function(_0x10ec23,_0x5323e3){var _0x17f580=_0x2389df;$(window[_0x17f580(0x1b2)]['srcElement'])[_0x17f580(0x1c4)](_0x17f580(0x1cc))&&(document['getElementById'](this['id'])['value']='');}});if(_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i][_0x2389df(0x180)]=='')$('#'+_0x442d83)[_0x2389df(0x16e)]('');else{var _0x42c891=parseInt(_0x35fc3f[i][_0x2389df(0x180)]);_0x42c891=_0x42c891?_0x42c891:'';const _0x2e23b2=new Date(),_0x3845b8=new Date(_0x2e23b2);_0x3845b8[_0x2389df(0x18c)](_0x3845b8[_0x2389df(0x20c)]()+_0x42c891),console[_0x2389df(0x1de)](_0x3845b8),$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x3845b8)[_0x2389df(0x1e0)]('LL'));}}else{if(_0x2aae28=='')var _0x442d83=_0x35fc3f[i]['ColumnName'];else{var _0x22ef66=$(_0x395e15)['closest']('tr')[_0x2389df(0x198)]('id'),_0x442d83=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'];$(_0x442d83)[_0x2389df(0x218)](_0x2389df(0x186)),$(_0x442d83)[_0x2389df(0x1af)](_0x2389df(0x175));}var _0x31b3da=$('#'+_0x442d83)[_0x2389df(0x16e)]();$('#'+_0x442d83)[_0x2389df(0x218)]({'showButtonPanel':!![],'dateFormat':_0x2389df(0x1d4),'closeText':_0x2389df(0x1ac),'onSelect':function(_0x4dd876){var _0x330432=_0x2389df,_0x4fd0b2=$(this)[_0x330432(0x205)]('tr')[_0x330432(0x1ca)](_0x442d83)[_0x330432(0x218)](_0x330432(0x20c));},'onClose':function(_0x2ece88,_0x3d775d){var _0x3ee5b6=_0x2389df;$(window[_0x3ee5b6(0x1b2)]['srcElement'])[_0x3ee5b6(0x1c4)](_0x3ee5b6(0x1cc))&&(document['getElementById'](this['id'])[_0x3ee5b6(0x1ea)]='');}});if((_0x35fc3f[i][_0x2389df(0x180)]==null||_0x35fc3f[i][_0x2389df(0x180)]=='')&&(_0x31b3da==''||_0x31b3da==undefined))$('#'+_0x442d83)['val']('');else{if(_0x31b3da!='')$('#'+_0x442d83)[_0x2389df(0x16e)](moment(_0x31b3da)[_0x2389df(0x1e0)]('LL'));else{var _0x42c891=parseInt(_0x35fc3f[i]['DefaultValue']);_0x42c891=_0x42c891?_0x42c891:'';const _0x16b11e=new Date(),_0x441499=new Date(_0x16b11e);_0x441499[_0x2389df(0x18c)](_0x441499[_0x2389df(0x20c)]()+_0x42c891),console[_0x2389df(0x1de)](_0x441499),$('#'+_0x442d83)['val'](moment(_0x441499)[_0x2389df(0x1e0)]('LL'));}}}}}}}}}}else{if(_0x35fc3f[i][_0x2389df(0x225)]=='Person'){var _0x333586='';_0xea3955='';if(_0x2aae28=='')var _0x390dac=_0x35fc3f[i][_0x2389df(0x232)];else{debugger;var _0x22ef66=$(_0x395e15)[_0x2389df(0x205)]('tr')[_0x2389df(0x198)]('id'),_0x360634=_0x303b51['split']('_')[0x1],_0x390dac=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i][_0x2389df(0x232)];_0xea3955+=_0x2389df(0x239);}var _0x110777='<div\x20'+_0x333586+'\x20id=\x22'+_0x390dac+_0x2389df(0x1d0)+_0xea3955+_0x2389df(0x194)+_0x35fc3f[i][_0x2389df(0x232)]+_0x2389df(0x237)+_0x35fc3f[i][_0x2389df(0x225)]+_0x2389df(0x18d);$('#'+_0x390dac)[_0x2389df(0x215)](_0x110777),initializePeoplePicker(_0x390dac),personCols[_0x2389df(0x1cd)](_0x390dac);if(window[_0x2389df(0x1cf)][_0x2389df(0x1fd)][_0x2389df(0x22b)]('?')>-0x1){var _0x36789f=window[_0x2389df(0x1d1)](titanForWork['getQueryStringParameter'](_0x2389df(0x1ec)));if(_0x36789f==_0x2389df(0x1d8)||_0x36789f=='Draft'){var _0x16871a='';_0x2aae28==''?_0x16871a=ColumnValueByColumnName(_0x328fa8,_0x35fc3f[i][_0x2389df(0x232)]):_0x16871a=ColumnValueByColumnNameforTable(QueryTableData,_0x35fc3f[i]['ColumnName'],0x0);peoplePickerDiv=$(_0x2389df(0x19a)+_0x390dac+'_TopSpan\x27]');var _0x4a7442=_0x390dac+_0x2389df(0x182),_0x563071=peoplePickerDiv[0x0]?peoplePickerDiv[0x0]['id']:_0x4a7442,_0x54610a=SPClientPeoplePicker['SPClientPeoplePickerDict'][_0x563071];if(_0x16871a['results']!=null){if(_0x16871a['results']['length']>0x0){for(u=0x0;u<_0x16871a[_0x2389df(0x21a)]['length'];u++){var _0x478a93=_spPageContextInfo[_0x2389df(0x161)]+_0x2389df(0x1fa)+_0x16871a[_0x2389df(0x21a)][u]['Id']+_0x2389df(0x178),_0x399857=RequestGetdata(_0x478a93);_0x54610a['AddUserKeys'](_0x399857[0x0]['Email']);}document[_0x2389df(0x1d7)]('#'+_0x390dac)[_0x2389df(0x170)](_0x2389df(0x1d9))==!![]&&($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x199))[_0x2389df(0x159)](),_0x54610a[_0x2389df(0x177)](![])),setTimeout($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x1bd))[_0x2389df(0x208)](),0x3e8);}}else document[_0x2389df(0x1d7)]('#'+_0x390dac)['hasAttribute']('disabled')==!![]&&($('#'+_0x390dac)['find'](_0x2389df(0x199))[_0x2389df(0x159)](),_0x54610a[_0x2389df(0x177)](![]));}else{if(_0x35fc3f[i][_0x2389df(0x180)]=='Initiator'){var _0x478a93=_spPageContextInfo['webAbsoluteUrl']+_0x2389df(0x1fa)+_spPageContextInfo[_0x2389df(0x1d5)]+_0x2389df(0x178),_0x3fda0f=RequestGetdata(_0x478a93);peoplePickerDiv=$(_0x2389df(0x19a)+_0x390dac+_0x2389df(0x192));var _0x54610a=SPClientPeoplePicker[_0x2389df(0x234)][peoplePickerDiv[0x0]['id']];_0x54610a[_0x2389df(0x17c)](_0x3fda0f[0x0][_0x2389df(0x166)]),document[_0x2389df(0x1d7)]('#'+_0x390dac)[_0x2389df(0x170)]('disabled')==!![]&&($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x1bd))[_0x2389df(0x159)](),$('#'+_0x390dac)[_0x2389df(0x19d)]('.sp-peoplepicker-editorInput')['hide'](),_0x54610a['SetEnabledState'](![]),setTimeout($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x1bd))[_0x2389df(0x159)](),0x3e8));}else{if(_0x35fc3f[i][_0x2389df(0x180)]=='Manager'){var _0x478a93=_spPageContextInfo[_0x2389df(0x161)]+_0x2389df(0x19f)+_spPageContextInfo['userId']+_0x2389df(0x178),_0x508490=RequestGetdata(_0x478a93);peoplePickerDiv=$(_0x2389df(0x19a)+_0x390dac+'_TopSpan\x27]');var _0x54610a=SPClientPeoplePicker['SPClientPeoplePickerDict'][peoplePickerDiv[0x0]['id']],_0x45258e=GetUserLogin(_0x508490[0x0][_0x2389df(0x226)]['Id']);_0x54610a[_0x2389df(0x17c)](_0x45258e),document[_0x2389df(0x1d7)]('#'+_0x390dac)[_0x2389df(0x170)]('disabled')==!![]&&($('#'+_0x390dac)[_0x2389df(0x19d)]('.sp-peoplepicker-delImage')[_0x2389df(0x159)](),$('#'+_0x390dac)[_0x2389df(0x19d)]('.sp-peoplepicker-editorInput')[_0x2389df(0x159)](),_0x54610a['SetEnabledState'](![]),setTimeout($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x1bd))[_0x2389df(0x159)](),0x3e8));}else{if(_0x35fc3f[i][_0x2389df(0x180)]=='HOD'){var _0x5892f2=getUserDept(),_0x2f569f=_0x2389df(0x1b1),_0x3de427=[];GetlistData(_0x2389df(0x1b3)+companyIdNavigation+'\x27and\x20Department/DepartmentName\x20eq\x20\x27'+_0x5892f2+_0x2389df(0x1f9)+_0x2f569f+'\x27')['done'](function(_0x252d93){var _0x1f9291=_0x2389df;if(_0x252d93['d'][_0x1f9291(0x21a)][_0x1f9291(0x1a0)]>0x0){var _0x57dff=_0x252d93['d'][_0x1f9291(0x21a)][0x0][_0x1f9291(0x1f4)][_0x1f9291(0x21a)];if(_0x57dff[_0x1f9291(0x1a0)]>0x0)for(b=0x0;b<_0x57dff[_0x1f9291(0x1a0)];b++){var _0x3d1b7f=_spPageContextInfo[_0x1f9291(0x161)]+'/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id\x20eq\x20\x27'+_0x57dff[b]['ID']+_0x1f9291(0x178),_0x456d2e=RequestGetdata(_0x3d1b7f);_0x3de427['push'](_0x456d2e[0x0][_0x1f9291(0x166)]);}else alert(_0x1f9291(0x160)+_0x2f569f);}}),peoplePickerDiv=$(_0x2389df(0x19a)+_0x390dac+_0x2389df(0x192));var _0x54610a=SPClientPeoplePicker[_0x2389df(0x234)][peoplePickerDiv[0x0]['id']];_0x54610a[_0x2389df(0x17c)](_0x3de427[0x0]),document['querySelector']('#'+_0x390dac)[_0x2389df(0x170)](_0x2389df(0x1d9))==!![]&&($('#'+_0x390dac)[_0x2389df(0x19d)]('.sp-peoplepicker-delImage')[_0x2389df(0x159)](),$('#'+_0x390dac)['find']('.sp-peoplepicker-editorInput')[_0x2389df(0x159)](),_0x54610a[_0x2389df(0x177)](![]),setTimeout($('#'+_0x390dac)['find'](_0x2389df(0x1bd))[_0x2389df(0x159)](),0x3e8));}else{peoplePickerDiv=$('[id$=\x27'+_0x390dac+_0x2389df(0x192));var _0x54610a=SPClientPeoplePicker[_0x2389df(0x234)][peoplePickerDiv[0x0]['id']];_0x54610a[_0x2389df(0x235)](),document[_0x2389df(0x1d7)]('#'+_0x390dac)[_0x2389df(0x170)](_0x2389df(0x1d9))==!![]&&($('#'+_0x390dac)['find'](_0x2389df(0x1bd))['hide'](),$('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x199))['hide'](),_0x54610a['SetEnabledState'](![]),setTimeout($('#'+_0x390dac)[_0x2389df(0x19d)](_0x2389df(0x1bd))[_0x2389df(0x159)](),0x3e8));}}}}}}else{if(_0x35fc3f[i][_0x2389df(0x225)]==_0x2389df(0x1e3)&&_0x35fc3f[i]['AutoPopulate']==!![]){if(_0x35fc3f[i]['AutoPopulateOf']!=null){if(_0x35fc3f[i][_0x2389df(0x1b7)]=='Company'||_0x35fc3f[i]['AutoPopulateValue']=='Department'||_0x35fc3f[i][_0x2389df(0x1b7)]==_0x2389df(0x202)){var _0x478a93=_spPageContextInfo['webAbsoluteUrl']+_0x2389df(0x168)+_0x35fc3f[i][_0x2389df(0x1b7)]+'/Title&$expand='+_0x35fc3f[i]['AutoPopulateValue']+_0x2389df(0x1df)+_spPageContextInfo[_0x2389df(0x1d5)]+_0x2389df(0x178),_0x1d6af1=RequestGetdata(_0x478a93);$('#'+_0x35fc3f[i]['ColumnName'])[_0x2389df(0x16e)](_0x1d6af1[0x0][_0x35fc3f[i][_0x2389df(0x1b7)]][_0x2389df(0x165)]);}else{var _0x478a93=_spPageContextInfo[_0x2389df(0x161)]+_0x2389df(0x168)+_0x35fc3f[i][_0x2389df(0x1b7)]+_0x2389df(0x1df)+_spPageContextInfo[_0x2389df(0x1d5)]+_0x2389df(0x178),_0x1d6af1=RequestGetdata(_0x478a93),_0x271cc8=_0x1d6af1['length']>0x0?_0x1d6af1[0x0][_0x35fc3f[i][_0x2389df(0x1b7)]]:'';(_0x35fc3f[i][_0x2389df(0x1b7)]=='JoiningDate'||_0x35fc3f[i][_0x2389df(0x1b7)]==_0x2389df(0x1aa)||_0x35fc3f[i]['AutoPopulateValue']==_0x2389df(0x1c0))&&(_0x271cc8=moment(_0x271cc8)[_0x2389df(0x1e0)]('LL')),$('#'+_0x35fc3f[i][_0x2389df(0x232)])[_0x2389df(0x16e)](_0x271cc8);}}}else{if(_0x35fc3f[i][_0x2389df(0x225)]=='Text'&&_0x35fc3f[i][_0x2389df(0x204)]==!![]){var _0xea3955='',_0x59ef49='',_0xe041a='';if(_0x2aae28==''){var _0x390dac=_0x1c2634=_0x35fc3f[i][_0x2389df(0x232)];_0x59ef49=_0x2389df(0x1bc);}else{_0x59ef49=_0x2389df(0x23b);var _0x22ef66=$(_0x395e15)[_0x2389df(0x205)]('tr')[_0x2389df(0x198)]('id'),_0x1c2634=_0x2aae28+'_'+_0x22ef66+'_'+_0x35fc3f[i]['ColumnName'];_0xe041a=_0x35fc3f[i]['Id'];var _0x4b2830=_0x395e15[_0x2389df(0x19d)]('#'+_0x1c2634),_0x390dac=_0x4b2830[_0x2389df(0x15b)];}var _0x4ff2ce=_0x2aae28?$(_0x390dac)['val']():$('#'+_0x390dac)[_0x2389df(0x16e)](),_0x2a2bc6='';resultdata=[];_0x35fc3f[i][_0x2389df(0x19b)]==_0x2389df(0x18a)?(_0x35fc3f[i][_0x2389df(0x1b0)]==''||_0x35fc3f[i][_0x2389df(0x1b0)]==null?_0x2a2bc6=_spPageContextInfo['appBarParams']['portalUrl']+_0x2389df(0x1c9)+_0x35fc3f[i][_0x2389df(0x217)]+_0x2389df(0x193)+_0x35fc3f[i]['SPListName']+'\x27)/items?$select=Title,Id,'+_0x35fc3f[i][_0x2389df(0x16b)]+'':_0x2a2bc6=_spPageContextInfo['appBarParams'][_0x2389df(0x220)]+_0x2389df(0x1c9)+_0x35fc3f[i]['SPListSiteAddress']+_0x2389df(0x193)+_0x35fc3f[i][_0x2389df(0x1f1)]+_0x2389df(0x233)+_0x35fc3f[i][_0x2389df(0x16b)]+_0x2389df(0x21b)+_0x35fc3f[i][_0x2389df(0x1b0)]+_0x2389df(0x1e8)+_0x35fc3f[i]['SPListSortColumn']+'',resultdata=RequestGetdata(_0x2a2bc6),console[_0x2389df(0x1de)](resultdata)):(_0x35fc3f[i][_0x2389df(0x22f)]!=null?_0x2a2bc6=_0x2389df(0x212)+_0x35fc3f[i][_0x2389df(0x22f)][_0x2389df(0x1fe)]+'\x27\x20and\x20ColumnSequence/Title\x20eq\x20\x27'+_0x35fc3f[i][_0x2389df(0x165)]+'\x27&$orderby=Created\x20asc':_0x2a2bc6=_0x2389df(0x16d)+_0x35fc3f[i][_0x2389df(0x17f)]+_0x2389df(0x1a8)+_0xe041a+_0x2389df(0x203),GetData('/_api/web/lists/getbytitle(\x27ApprovalColumnsDropdown\x27)/items?$select='+_0x2a2bc6+'')[_0x2389df(0x22c)](function(_0x204389){resultdata=_0x204389;}));if(_0x2aae28==''){if(document[_0x2389df(0x1d7)]('#'+_0x390dac)['hasAttribute']('disabled')==!![])var _0x41d506=$('<select\x20disabled=\x27disabled\x27\x20coltype\x20=\x27'+_0x35fc3f[i][_0x2389df(0x225)]+_0x2389df(0x1ef)+_0x59ef49+_0x2389df(0x1da)+_0x35fc3f[i][_0x2389df(0x232)]+'\x27>');else{_0xea3955+=_0x2389df(0x1ae);if(_0x35fc3f[i]['DropdownFrom']==_0x2389df(0x18a)){var _0x1d4f56='';_0x35fc3f[i][_0x2389df(0x187)]==!![]&&(_0x1d4f56=_0x2389df(0x163));var _0x41d506=$(_0x2389df(0x222)+_0x35fc3f[i][_0x2389df(0x225)]+'\x27\x20name=\x27field2\x27\x20id=\x27field2_'+_0x35fc3f[i][_0x2389df(0x232)]+'\x27\x20'+_0x1d4f56+_0x2389df(0x210)+_0x59ef49+'\x20'+_0xea3955+_0x2389df(0x1da)+_0x35fc3f[i][_0x2389df(0x232)]+'\x27>');}else var _0x41d506=$(_0x2389df(0x222)+_0x35fc3f[i][_0x2389df(0x225)]+'\x27\x20class=\x27form-control\x20'+_0x59ef49+'\x20'+_0xea3955+_0x2389df(0x1da)+_0x35fc3f[i][_0x2389df(0x232)]+'\x27>');}}else var _0x41d506=$(_0x2389df(0x228)+_0x35fc3f[i][_0x2389df(0x225)]+_0x2389df(0x1ef)+_0x59ef49+_0x2389df(0x1da)+_0x35fc3f[i][_0x2389df(0x232)]+'\x27>');if(resultdata['length']>0x0){var _0x17139f=_0x35fc3f[i]['SPListColumn'];if(_0x35fc3f[i][_0x2389df(0x1fb)]==''||_0x35fc3f[i][_0x2389df(0x1fb)]==null)$(resultdata)[_0x2389df(0x1d3)](function(_0x59f883,_0x2fa696){var _0x264036=_0x2389df;_0x41d506[_0x264036(0x1ab)]($(_0x264036(0x22d))[_0x264036(0x16e)](_0x2fa696[_0x17139f])[_0x264036(0x1e5)](_0x2fa696[_0x17139f]));});else{_0x41d506[_0x2389df(0x21c)]()['append'](_0x2389df(0x231));var _0x3885bb=_0x390dac,_0x1e873c=_0x35fc3f[i][_0x2389df(0x232)];$('#'+_0x35fc3f[i][_0x2389df(0x1fb)])[_0x2389df(0x207)](function(){var _0x873b37=_0x2389df;let _0x49cf83=this[_0x873b37(0x184)][this[_0x873b37(0x15c)]][_0x873b37(0x1ea)],_0x8b801f=resultdata[_0x873b37(0x1c5)](function(_0x42f873){return _0x42f873[_0x17139f]===_0x49cf83;});_0x8b801f[_0x873b37(0x1a0)]<0xa&&($('#'+_0x1e873c)[_0x873b37(0x17a)](),$('#'+_0x1e873c)['removeAttr'](_0x873b37(0x1c2)),$('#'+_0x1e873c)['removeAttr'](_0x873b37(0x1f2)),$('.'+_0x1e873c)[_0x873b37(0x19d)]('div\x20.multiselect-dropdown')[_0x873b37(0x159)]()),_0x41d506['empty'](),$[_0x873b37(0x22a)](_0x8b801f,function(_0x53c974,_0x342b1f){var _0x24899b=_0x873b37;_0x41d506[_0x24899b(0x1ab)]($(_0x24899b(0x22d))[_0x24899b(0x16e)](_0x342b1f['Title'])[_0x24899b(0x1e5)](_0x342b1f['Title']));});});}}else resultdata['d'][_0x2389df(0x21a)]['length']>0x0&&$(resultdata['d'][_0x2389df(0x21a)])[_0x2389df(0x22a)](function(){var _0x7e32d4=_0x2389df;_0x41d506[_0x7e32d4(0x1ab)]($(_0x7e32d4(0x22d))[_0x7e32d4(0x16e)](this[_0x7e32d4(0x165)])[_0x7e32d4(0x1e5)](this[_0x7e32d4(0x165)]));});_0x35fc3f[i][_0x2389df(0x19b)]==_0x2389df(0x18a)&&multiDdp[_0x2389df(0x1cd)]({'col':_0x35fc3f[i][_0x2389df(0x232)]});_0x41d506[_0x2389df(0x16e)](0x1)[_0x2389df(0x198)]({'id':_0x1c2634,'name':_0x390dac})[_0x2389df(0x207)](function(){var _0x4fa4e7=_0x2389df;typeof _0xea5daf==_0x4fa4e7(0x1e9)&&_0xea5daf();});if(_0x2aae28==''){var _0x180457=$('#'+_0x390dac)[_0x2389df(0x16e)]();$('#'+_0x390dac)[_0x2389df(0x215)](_0x41d506);}else{var _0x180457=_0x4ff2ce;$(_0x390dac)[_0x2389df(0x215)](_0x41d506);}if(window[_0x2389df(0x1cf)][_0x2389df(0x1fd)][_0x2389df(0x22b)]('?')>-0x1){var _0x36789f=window[_0x2389df(0x1d1)](titanForWork[_0x2389df(0x17b)](_0x2389df(0x1ec)));if(_0x36789f=='Process\x20Steps'){_0x2aae28!=''?$(_0x390dac)[_0x2389df(0x16e)](_0x4ff2ce):$('#'+_0x390dac)['val'](_0x4ff2ce);;}else{if(_0x36789f==_0x2389df(0x1d2)){_0x2aae28!=''?$(_0x390dac)['val'](_0x4ff2ce):$('#'+_0x390dac)[_0x2389df(0x16e)](_0x4ff2ce);;}else _0x35fc3f[i][_0x2389df(0x180)]!=''?_0x2aae28==''?$('#'+_0x390dac)[_0x2389df(0x16e)](_0x35fc3f[i][_0x2389df(0x180)]):$(_0x390dac)[_0x2389df(0x16e)](_0x35fc3f[i][_0x2389df(0x180)]):$('#'+_0x390dac)[_0x2389df(0x16e)](resultdata['d'][_0x2389df(0x21a)][0x1][_0x2389df(0x165)]);}}else _0x35fc3f[i][_0x2389df(0x180)]!=''?$('#'+_0x390dac)[_0x2389df(0x16e)](_0x35fc3f[i][_0x2389df(0x180)]):$('#'+_0x390dac)[_0x2389df(0x16e)](resultdata['d']['results'][0x1]['Title']);function _0xea5daf(){var _0x2eb58f=_0x2389df;console[_0x2eb58f(0x1de)]($('#'+_0x390dac)['val']());}}else{if(_0x35fc3f[i]['ColumnType']==_0x2389df(0x238)||_0x35fc3f[i][_0x2389df(0x225)]==_0x2389df(0x188)){if(_0x2aae28=='')var _0x2d0246=_0x35fc3f[i]['ColumnName'];else var _0x360634=_0x303b51[_0x2389df(0x22e)]('_')[0x1],_0x2d0246=_0x2aae28+'_'+_0x360634+'_'+_0x35fc3f[i][_0x2389df(0x232)];var _0x4ff2ce=$('#'+_0x2d0246)[_0x2389df(0x179)](),_0x1b8f67=![];document['querySelector']('#'+_0x2d0246)[_0x2389df(0x170)](_0x2389df(0x1d9))==!![]&&(_0x1b8f67=!![]);var _0x535052=_0x35fc3f[i]['ColumnType'],_0x21e7df=_0x35fc3f[i][_0x2389df(0x180)];GetChoiceValues(_0x2d0246,_0x535052,_0x21e7df,_0x1b8f67,_0x4ff2ce);}else{if(_0x35fc3f[i]['ColumnType']==_0x2389df(0x18f)||_0x35fc3f[i][_0x2389df(0x225)]==_0x2389df(0x21d)){if(_0x2aae28==''){var _0x2d0246=_0x35fc3f[i]['ColumnName'],_0x4ff2ce=$('#'+_0x2d0246)[_0x2389df(0x179)]();_0x4ff2ce==_0x2389df(0x1f5)?_0x4ff2ce=_0x2389df(0x1bb):_0x4ff2ce='No';if(document[_0x2389df(0x1d7)]('#'+_0x2d0246)[_0x2389df(0x170)](_0x2389df(0x1d9))==!![])var _0x41d506=$(_0x2389df(0x222)+_0x35fc3f[i][_0x2389df(0x225)]+_0x2389df(0x1b4)+_0x2d0246+'\x27>');else var _0x41d506=$(_0x2389df(0x222)+_0x35fc3f[i][_0x2389df(0x225)]+_0x2389df(0x224)+_0xea3955+'\x27\x20id=\x27'+_0x2d0246+'\x27>');_0x41d506[_0x2389df(0x1ab)]($(_0x2389df(0x22d))[_0x2389df(0x16e)]('Yes')['html'](_0x2389df(0x1bb))),_0x41d506['append']($(_0x2389df(0x22d))[_0x2389df(0x16e)]('No')[_0x2389df(0x1e5)]('No')),$('#'+_0x2d0246)[_0x2389df(0x215)](_0x41d506),$('#'+_0x2d0246)['val'](_0x35fc3f[i][_0x2389df(0x180)]);if(window[_0x2389df(0x1cf)][_0x2389df(0x1fd)][_0x2389df(0x22b)]('?')>-0x1){var _0x36789f=window[_0x2389df(0x1d1)](titanForWork[_0x2389df(0x17b)](_0x2389df(0x1ec)));_0x36789f==_0x2389df(0x1d8)?$('#'+_0x2d0246)['val'](_0x4ff2ce):_0x35fc3f[i][_0x2389df(0x180)]!=''?$('#'+_0x2d0246)[_0x2389df(0x16e)](_0x35fc3f[i][_0x2389df(0x180)]):$('#'+_0x2d0246)[_0x2389df(0x16e)](resultdata['d'][_0x2389df(0x21a)][0x1][_0x2389df(0x165)]);}}else{var _0x2d0246=_0x2aae28+'_'+_0x35fc3f[i][_0x2389df(0x232)],_0xacd2e1=$('#'+_0x2d0246);_0xacd2e1[_0x2389df(0x223)](0x0)['type']=_0x2389df(0x158);}}else{if(_0x35fc3f[i]['ColumnType']==_0x2389df(0x1ff)){var _0x390dac=_0x1c2634=AttachDraftCol=_0x35fc3f[i][_0x2389df(0x232)];_0x59ef49='dynamicvalfeachcls\x20active';var _0x207365=$('#'+AttachDraftCol)[_0x2389df(0x16e)](),_0x36789f=window[_0x2389df(0x1d1)](titanForWork['getQueryStringParameter'](_0x2389df(0x1ec)));if(_0x36789f==_0x2389df(0x1d2)&&_0x207365!=''){var _0xa74d09=_0x2389df(0x1e6)+_0x390dac+_0x2389df(0x1ee);$('#'+_0x390dac)['replaceWith'](_0xa74d09);}}}}}}}}}$('.Cover_PPl\x20.sp-peoplepicker-topLevel')['on']('keyup',function(){var _0x16f641=_0x2389df;$(this)[_0x16f641(0x18e)]('position','static');var _0x16db94=$(this)[_0x16f641(0x1b8)]()[_0x16f641(0x157)],_0x54c3f4=$(this)[_0x16f641(0x1b8)]()[_0x16f641(0x1f3)];$(this)['find'](_0x16f641(0x19e))[_0x16f641(0x1b8)]({'top':_0x16db94+$(this)[_0x16f641(0x1c3)](),'left':_0x54c3f4});}),multiDdp[_0x2389df(0x1a0)]>0x0&&($[_0x2389df(0x206)](multiDdp),MultiselectDropdown(window[_0x2389df(0x21f)]));}function GetUniqueData(_0x1c3a8e,_0x3be4e3){var _0x479cd8=a417_0x1d0b65,_0x28e9d1=$[_0x479cd8(0x1a3)]();return $[_0x479cd8(0x1a7)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0x1c3a8e,'contentType':_0x479cd8(0x15f),'headers':{'accept':_0x479cd8(0x15f)},'async':![],'success':function(_0x983fb0){var _0x5c6176=_0x479cd8;_0x28e9d1[_0x5c6176(0x181)](_0x983fb0);var _0x37b4c6=_0x983fb0['d']['results'];$[_0x5c6176(0x22a)](_0x37b4c6,function(_0x3cf0b7,_0xa20f10){var _0x6f66a4=_0x5c6176;console[_0x6f66a4(0x1de)](_0xa20f10);});},'error':function(_0x1d17f6){var _0x3a0526=_0x479cd8;_0x28e9d1[_0x3a0526(0x164)](_0x1d17f6);}}),_0x28e9d1['promise']();}function GetChoiceValues(_0x44501f,_0x2fc873,_0x138c05,_0x498e22,_0x314124){var _0x3ee691=a417_0x1d0b65,_0x36887e=$[_0x3ee691(0x1a3)]();return $[_0x3ee691(0x1a7)]({'url':_spPageContextInfo[_0x3ee691(0x161)]+_0x3ee691(0x1bf)+_0x44501f+'\x27','type':_0x3ee691(0x190),'async':![],'headers':{'accept':'application/json;odata=verbose','content-type':_0x3ee691(0x15f)},'success':function(_0x35a97c){var _0x3c647c=_0x3ee691,_0x282a58=_0x35a97c['d'][_0x3c647c(0x21a)][0x0][_0x3c647c(0x23a)][_0x3c647c(0x21a)],_0x4645d4='';_0x498e22==!![]?_0x4645d4='disabled=\x27disabled\x27':classest=_0x3c647c(0x1ae);debugger;if(_0x4645d4=='disabled=\x27disabled\x27')var _0x244c6a=$(_0x3c647c(0x176)+_0x4645d4+_0x3c647c(0x1c8)+_0x44501f+_0x3c647c(0x1e7));else var _0x244c6a=$(_0x3c647c(0x176)+_0x4645d4+_0x3c647c(0x219)+classest+'\x27\x20id=\x27'+_0x44501f+_0x3c647c(0x1e7));for(c=0x0;c<_0x282a58[_0x3c647c(0x1a0)];c++){_0x244c6a[_0x3c647c(0x1ab)]($(_0x3c647c(0x22d))[_0x3c647c(0x16e)](_0x282a58[c])[_0x3c647c(0x1e5)](_0x282a58[c]));}$('#'+_0x44501f)[_0x3c647c(0x215)](_0x244c6a),$('#'+_0x44501f)[_0x3c647c(0x16e)](_0x314124),console[_0x3c647c(0x1de)](_0x35a97c);},'error':function(_0xb1f3c1){var _0x50a43f=_0x3ee691;console['log'](JSON[_0x50a43f(0x1a9)](_0xb1f3c1));}}),_0x36887e['promise']();}function bindUser(_0x1a1698){var _0x48eee7=a417_0x1d0b65;peoplePickerDiv=$('[id$=\x27'+_0x1a1698+'_TopSpan\x27]');var _0x4be2cb=SPClientPeoplePicker[_0x48eee7(0x234)][peoplePickerDiv[0x0]['id']];if(valuefordefault[_0x48eee7(0x21a)][_0x48eee7(0x1a0)]>0x0){for(u=0x0;u<valuefordefault[_0x48eee7(0x21a)][_0x48eee7(0x1a0)];u++){var _0x5b5bf8=_spPageContextInfo[_0x48eee7(0x161)]+'/_api/web/lists/getbytitle(\x27Employees\x27)/items?$select=ManagerLoginName/Id,ManagerLoginName/Title&$expand=ManagerLoginName&$filter=LogonName/Id\x20eq\x20\x27'+valuefordefault[_0x48eee7(0x21a)][u]['Id']+'\x27\x20and\x20Status\x20eq\x20\x27Active\x27',_0x231b74=RequestGetdata(_0x5b5bf8);_0x4be2cb[_0x48eee7(0x17c)](_0x231b74[0x0][_0x48eee7(0x166)]);}document['querySelector']('#'+_0x1a1698)[_0x48eee7(0x170)](_0x48eee7(0x1d9))==!![]&&($('#'+_0x1a1698)[_0x48eee7(0x19d)](_0x48eee7(0x199))['hide'](),_0x4be2cb[_0x48eee7(0x177)](![]));}}function downloadAttach(_0x1473a5,_0xf19331){var _0x268f53=a417_0x1d0b65;fetch(_0x1473a5)[_0x268f53(0x171)](function(_0x27c093){var _0xd478f2=_0x268f53;return _0x27c093[_0xd478f2(0x1a1)]()['then'](_0x1739c0=>{var _0x3951ba=_0xd478f2,_0x5d56a2=document['createElement']('a');_0x5d56a2[_0x3951ba(0x1fd)]=URL['createObjectURL'](_0x1739c0),_0x5d56a2[_0x3951ba(0x221)](_0x3951ba(0x201),_0xf19331),_0x5d56a2[_0x3951ba(0x1db)]();});});}function addDdpStps(_0x4a7ab6){var _0x1368f7=a417_0x1d0b65;if(_0x4a7ab6==_0x1368f7(0x230)){$(_0x1368f7(0x1a4))['empty']();var _0x4c3f50='';_0x4c3f50+='<li><input\x20type=\x22checkbox\x22\x20value=\x22all_select\x22\x20id=\x22selectallopts\x22>All\x20Select</li>';for(i=0x0;i<ApproerSteps[_0x1368f7(0x1a0)];i++){_0x4c3f50+='<li><input\x20type=\x22checkbox\x22\x20class=\x22checkboxallopt\x22\x20\x20value=\x22'+ApproerSteps[i]['Id']+_0x1368f7(0x1c6)+ApproerSteps[i]['StepName']+_0x1368f7(0x1c7);}$(_0x1368f7(0x1a4))[_0x1368f7(0x1ab)](_0x4c3f50);}else{$('#singleStpddp')['empty']();var _0x4c3f50='';singleStpddp;for(i=0x0;i<ApproerSteps[_0x1368f7(0x1a0)];i++){_0x4c3f50+=_0x1368f7(0x1cb)+ApproerSteps[i]['Id']+'\x22>'+ApproerSteps[i][_0x1368f7(0x16c)]+_0x1368f7(0x20e);}$('#singleStpddp')[_0x1368f7(0x1ab)](_0x4c3f50);}}function getExtension(_0x109f3f){var _0x489910=a417_0x1d0b65,_0x23d33b=_0x109f3f[_0x489910(0x22e)](/[\\/]/)['pop'](),_0x3e2c86=_0x23d33b[_0x489910(0x214)]('.');if(_0x23d33b===''||_0x3e2c86<0x1)return'';return _0x23d33b[_0x489910(0x1fc)](_0x3e2c86+0x1);}function ViewProcessDetails(){var _0x47c92d=a417_0x1d0b65,_0x2f2d8b=$(_0x47c92d(0x15e))[_0x47c92d(0x16e)](),_0x3ef893=$('input[name=\x27selector\x27]:checked')[_0x47c92d(0x198)]('templateid');(_0x2f2d8b==null||_0x2f2d8b=='')&&(_0x2f2d8b=window['atob'](titanForWork[_0x47c92d(0x17b)]('RecName')));_0x2f2d8b=_0x2f2d8b[_0x47c92d(0x1e2)](),_0x3ef893=_0x3ef893,_0x3ef893=_0x3ef893?_0x3ef893:window[_0x47c92d(0x1d1)](titanForWork['getQueryStringParameter']('Template'));var _0x9ec44c=_spPageContextInfo[_0x47c92d(0x161)]+_0x47c92d(0x17d)+_0x3ef893+'\x27',_0x1cdb3b=RequestGetdata(_0x9ec44c);console[_0x47c92d(0x1de)](_0x1cdb3b),$('#txtProcessName')['val'](_0x1cdb3b[0x0]['Title']),$(_0x47c92d(0x1e1))[_0x47c92d(0x16e)](_0x1cdb3b[0x0]['RequestFor']),$(_0x47c92d(0x20b))['val'](_0x1cdb3b[0x0]['TemplateName']),$(_0x47c92d(0x20d))[_0x47c92d(0x16e)](_0x1cdb3b[0x0]['ProcessOwner']),$(_0x47c92d(0x156))[_0x47c92d(0x16e)](_0x1cdb3b[0x0]['PublishedBy']),$('#txtPublishOn')[_0x47c92d(0x16e)](_0x1cdb3b[0x0]['PublishedOn']),$(_0x47c92d(0x1dd))[_0x47c92d(0x16e)](_0x1cdb3b[0x0][_0x47c92d(0x229)]),$(_0x47c92d(0x17e))[_0x47c92d(0x16e)](_0x1cdb3b[0x0][_0x47c92d(0x174)]),$(_0x47c92d(0x20f))[_0x47c92d(0x16e)](_0x1cdb3b[0x0][_0x47c92d(0x227)]);}function CheckFileSize(_0x5d4eee){var _0x132b75=a417_0x1d0b65;const _0x517384=(_0x5d4eee[0x0][_0x132b75(0x236)]/0x400/0x400)['toFixed'](0x2);return _0x517384>0x186a0?(alert(_0x132b75(0x1d6)),![]):!![];}function validateFileExtensions(_0x143bc7,_0x255431){var _0x2305d2=a417_0x1d0b65,_0x3ab4e7=$('#'+_0x143bc7)[_0x2305d2(0x16e)](),_0x45255e=_0x3ab4e7['split']('.')[_0x2305d2(0x167)]();if(!returnExtension(_0x45255e)){var _0x23bd84=![],_0x4462bf=[_0x255431],_0x502a59=_0x255431['split'](/[.,!,?]/);console[_0x2305d2(0x1de)](_0x502a59);for(var _0x28f482=0x0;_0x28f482<_0x502a59['length'];_0x28f482++){var _0x3c63fe=_0x502a59[_0x28f482][_0x2305d2(0x1c1)]('\x20','');if(_0x45255e[_0x2305d2(0x216)]()==_0x3c63fe[_0x2305d2(0x216)]()){_0x23bd84=!![];break;}}if(!_0x23bd84)return alert(_0x2305d2(0x1eb)+_0x4462bf[_0x2305d2(0x1b9)](',\x20')+'<br>'+_0x2305d2(0x1a5)),$('#'+_0x143bc7)[_0x2305d2(0x16e)](''),![];return!![];}}
+$(document).ready(function () {   
+	jQuery.datepicker._gotoToday = function(id) {
+	    var today = new Date();
+	    var dateRef = jQuery("<td><a>" + today.getDate() + "</a></td>");
+	    this._selectDay(id, today.getMonth(), today.getFullYear(), dateRef);
+	};	
+	
+})
+
+function Displayformattingtools() {
+    if ($("#DisplayfTools").prop('checked') == true) {
+        $('a[title="Remove styles"]').show();
+        $('.richText-toolbar').show();
+    }
+    else {
+        $('a[title="Add image"]').hide();
+        $('a[title="Add file"]').hide();
+        $('a[title="Add video"]').hide();
+        $('a[title="Add URL"]').hide();
+        $('a[title="Add table"]').hide();
+        $('a[title="Show HTML code"]').hide();
+        $('a[title="Remove styles"]').hide();
+        $('.richText-help').hide();
+        $('.richText-toolbar').hide();
+    }
+}
+function replaceURLWithHTMLLinks(text) {
+    var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a href='$1'>$1</a>"); 
+}
+var personCols = [], multiDdp = [], AttachDraftCol = '';
+function SetDatpickerNdropDown(resultColumns, format, tableId, elem,QueryDataRetResult,tblEdit,PermissionStatus ){
+	multiDdp =[];
+	if(resultColumns.length > 0){
+	for(i=0;i<resultColumns.length;i++){	
+		if(resultColumns[i].ColumnType == 'Date' || resultColumns[i].ColumnType == 'DueDate'){
+			if(resultColumns[i].DateValidation != null && resultColumns[i].DateValidation != undefined && resultColumns[i].DateValidation != ""){      
+				if(resultColumns[i].ColumnType == 'DueDate' && resultColumns[i].DefaultValue != "" && resultColumns[i].DefaultValue != undefined && resultColumns[i].DefaultValue != null){
+	                 if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		             dateId = CurrElem.selector;
+		             $(dateId).datepicker("destroy");
+		             $(dateId).removeClass('hasDatepicker');
+		            }
+		            dateval = $("#"+dateId).val();
+		            var newdateset = $("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						minDate: "+"+resultColumns[i].DefaultValue,					
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					if((resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='') &&  (dateval == '' || dateval == undefined)) {
+						$("#"+dateId).val('');
+					}else{
+						if(dateval != '' ){
+							$("#"+dateId).val(moment(dateval).format('LL'))
+						}else{
+							var iNum = parseInt(resultColumns[i].DefaultValue);
+							iNum = iNum ? iNum : '';
+							const today = new Date()
+							const newDate = new Date(today)
+							newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+							$("#"+dateId).val(moment(newDate).format('LL'))
+						}
+					}
+
+			/*		var iNum = parseInt(resultColumns[i].DefaultValue);
+					iNum = iNum ? iNum : '';
+					Date.prototype.addDays = function(days) {
+					var date = new Date(this.valueOf());
+					date.setDate(date.getDate() + days);
+					return date;
+					}			
+					var date = new Date();	
+					var nd = date.addDays(iNum);
+					var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+					var newdateape = nd.getDate() + "-"+ month[nd.getMonth()] +"-"+nd.getFullYear();			
+					$("#"+resultColumns[i].ColumnName).val(moment(newdateape).format('LL'));
+					AutoFilledCols.push({'ColName' : resultColumns[i].ColumnName , 'ColValue' : newdateape});
+						*/
+				}else{
+				if(resultColumns[i].DateValidation == "Today Only"){
+					if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		             dateId = CurrElem.selector;
+		             $(dateId).datepicker("destroy");
+		             $(dateId).removeClass('hasDatepicker');
+		            }
+		            $("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						minDate: "today",
+						maxDate: "today",					
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					$("#"+dateId).val(moment(new Date()).format('LL'))
+					AutoFilledCols.push({'ColName' : dateId , 'ColValue' : moment(new Date()).format('LL')});
+				}
+				else if(resultColumns[i].DateValidation == "Past Date"){
+					if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		             dateId = CurrElem.selector;
+		           //  $(dateId).datepicker("destroy");
+		           //  $(dateId).removeClass('hasDatepicker');
+		            }
+		            dateval = $("#"+dateId).val();
+		            $("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						maxDate: "-1",				
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					if(resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='' ) {
+					$("#"+dateId).val('');
+					}else{
+					var iNum = parseInt(resultColumns[i].DefaultValue);
+					iNum = iNum ? iNum : '';
+					const today = new Date()
+					const newDate = new Date(today)
+					newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+					$("#"+dateId).val(moment(newDate).format('LL'))
+					}
+				//	AutoFilledCols.push({'ColName' : dateId , 'ColValue' : moment(new Date()).format('LL')});
+				}
+				else if(resultColumns[i].DateValidation == "Past Date included Today"){
+					if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		             dateId = CurrElem.selector;
+		             $(dateId).datepicker("destroy");
+		             $(dateId).removeClass('hasDatepicker');		           
+		            }
+		            $("#"+dateId ).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						maxDate: "0",				
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					if(resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='' ) {
+					$("#"+dateId).val('');
+					}else{
+					var iNum = parseInt(resultColumns[i].DefaultValue);
+					iNum = iNum ? iNum : '';
+					const today = new Date()
+					const newDate = new Date(today)
+					newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+					$("#"+dateId).val(moment(newDate).format('LL'))
+					}
+				//	$("#"+dateId).val(moment(new Date()).format('LL'))
+				}
+            	else if(resultColumns[i].DateValidation == "Future Date"){	
+            		if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		             dateId = CurrElem.selector;
+		             $(dateId).datepicker("destroy");
+		             $(dateId).removeClass('hasDatepicker');
+		            }			
+					$("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						minDate: "0",				
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					if(resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='' ) {
+					var dtval = $("#"+dateId).val()
+					dtval = dtval ? dtval : '';
+					$("#"+dateId).val(dtval);
+					if( dtval == 'Invalid date' ){dtval = '';}
+					}else{
+						if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+							var dtval = $("#"+dateId).val()
+							dtval = dtval ? dtval : '';
+							$("#"+dateId).val(dtval);
+							if( dtval == 'Invalid date' ){dtval = '';}
+						}else{
+							var iNum = parseInt(resultColumns[i].DefaultValue);
+							iNum = iNum ? iNum : '';
+							const today = new Date()
+							const newDate = new Date(today)
+							newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+							$("#"+dateId).val(moment(newDate).format('LL'))
+					 	}					
+					}
+
+				}
+				else if(resultColumns[i].DateValidation == "Future Date included Today"){
+					if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		             var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 		      
+		             dateId =  CurrElem.selector;
+		             $(dateId).removeClass('hasDatepicker');
+		            }
+		            $("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',
+						minDate: "0",				
+						onSelect: function (date) {
+							//Get selected date 
+							 var date2 = $("#"+dateId ).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					});
+					if(resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='' ) {
+					var dtval = $("#"+dateId).val()
+					dtval = dtval ? dtval : '';
+					if( dtval == 'Invalid date' ){dtval = '';}
+					$("#"+dateId).val(dtval);
+					}else{
+						if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+							var dtval = $("#"+dateId).val()
+							dtval = dtval ? dtval : '';
+							if( dtval == 'Invalid date' ){dtval = '';}
+							$("#"+dateId).val(dtval);
+						}else{
+							var iNum = parseInt(resultColumns[i].DefaultValue);
+							iNum = iNum ? iNum : '';
+							const today = new Date()
+							const newDate = new Date(today)
+							newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+							$("#"+dateId).val(moment(newDate).format('LL'))
+					 	}					
+					}
+					//$("#"+dateId).val(moment(new Date()).format('LL'));
+				}			
+				else{
+					if(format == ''){
+		             var dateId = resultColumns[i].ColumnName;   
+		            }else{
+		             var currRowid = $(elem).closest("tr").attr("id");
+		             var dateId = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+		           //  var CurrElem = elem.find(dateId); //$('#'+currRowid).closest("tr").find(dateId); 
+		           //  dateId = CurrElem.selector;
+		             $(dateId).datepicker("destroy");
+		             $(dateId).removeClass('hasDatepicker');		             
+		            }	
+		          	var dateval = $('#'+dateId).val();
+					$("#"+dateId).datepicker({
+						showButtonPanel: true,
+						dateFormat: 'MM dd, yy',
+						closeText: 'Clear',			
+						onSelect: function (date) {							
+							 var date2 = $(this).closest('tr').focus(dateId).datepicker('getDate');
+							 //sets minDate to txt_date_to
+						  	// $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+						 },
+						onClose: function (dateText, inst) {
+							if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+								document.getElementById(this.id).value = '';
+							}
+						}
+					}); 					
+					if((resultColumns[i].DefaultValue == null || resultColumns[i].DefaultValue =='') &&  (dateval == '' || dateval == undefined || dateval == 'Invalid date')) {
+						$("#"+dateId).val('');
+					}else{
+						if(dateval != '' ){
+							$("#"+dateId).val(moment(dateval).format('LL'))
+						}else{
+							var iNum = parseInt(resultColumns[i].DefaultValue);
+							iNum = iNum ? iNum : '';
+							const today = new Date()
+							const newDate = new Date(today)
+							newDate.setDate(newDate.getDate() + iNum);console.log(newDate);
+							$("#"+dateId).val(moment(newDate).format('LL'))
+						}
+					}
+				 }
+			  }					
+			}		   
+		/* $("#"+resultColumns[i].ColumnName).datepicker({
+		        showButtonPanel: true,
+		        dateFormat: 'dd-M-yy',
+		       // closeText: 'Clear',
+		      //  setDate: new Date(),
+		    //	minDate: 0,		   
+		        onSelect: function (date) {
+		            //Get selected date 
+		             var date2 = $("#"+resultColumns[i].ColumnName).datepicker('getDate');
+		             //sets minDate to txt_date_to
+		          // $("#"+resultColumns[i].ColumnName).datepicker('option', 'maxDate', date);
+		         },
+			    onClose: function (dateText, inst) {
+		            if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+		                document.getElementById(this.id).value = '';
+		            }
+		        }
+		    }).datepicker("setDate", new Date());  */
+	      }else if(resultColumns[i].ColumnType == 'Person'){
+	      	var status = ''; classest = '';
+	      	if(format == ''){
+             var ddpLabel = resultColumns[i].ColumnName;   
+            }else{
+            
+             var currRowid = $(elem).closest("tr").attr("id");
+             var tId = tableId.split('_')[1]
+		     var ddpLabel = format+'_'+currRowid +'_'+resultColumns[i].ColumnName; 
+		     classest += 'input-sm Cover_PPl ';		             
+            // var ddpLabel = format+'_'+resultColumns[i].ColumnName;   
+            }
+            if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){
+            	status = "disabled='disabled'"; 
+            }else{
+            	classest += 'active';
+            }
+            
+			var DivPPl = '<div '+status +' id="'+ddpLabel+'" class="dynamicvalfeachcls	'+classest+' '+resultColumns[i].PersonValidation+'" data-original-value = "'+resultColumns[i].ColumnName+'" coltype ="'+resultColumns[i].ColumnType+'"></div>';
+			$('#'+ddpLabel).replaceWith(DivPPl);
+			initializePeoplePicker(ddpLabel,resultColumns[i].PersonValidation);
+			personCols.push(ddpLabel);
+			if(window.location.href.indexOf("?")> -1) 
+    			{
+					var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+					if(Passingtoken == 'Process Steps' || Passingtoken == 'Draft')
+					{ 	
+						//QueryDataRetResult
+						var ColumnValue = '';
+						if(format == ''){
+						ColumnValue = ColumnValueByColumnName(QueryDataRetResult,resultColumns[i].ColumnName);
+						}else{
+						ColumnValue = ColumnValueByColumnNameforTable(QueryTableData,resultColumns[i].ColumnName,0)    								
+						}					
+						peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+						var id = ddpLabel+"_TopSpan";
+						var ppid = peoplePickerDiv[0] ? peoplePickerDiv[0].id : id;
+						var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[ppid];
+						if(ColumnValue.results != null){
+							if(ColumnValue.results.length > 0){													
+							 for(u=0;u<ColumnValue.results.length;u++){
+							 /*	var arr = AllTaskUsersEmployeeuser.filter(function (filterData) {
+								     return filterData.UserId == ColumnValue.results[u].Id;
+								 }); */
+								var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+ColumnValue.results[u].Id+"' and Status eq 'Active'";
+								var arr = RequestGetdata(QueryCheckActive);												
+							 	peoplePicker.AddUserKeys(arr[0].Email);	
+							 }
+							 if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){
+							 //	$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide();
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);						 								 	
+							 }
+							 setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").remove(),1000);
+						 	}	
+						 } else{
+						 if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){							 
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);						 								 	
+							}	
+						 }																		
+					}else{
+						if(resultColumns[i].DefaultValue == 'Initiator'){
+							/*var arrSubApprover = AllTaskUsersEmployeeuser.filter(function (filterData) {
+							     return filterData.UserId == _spPageContextInfo.userId;  //resultColumns[i].Author.Id;
+							 });*/
+							 var cols = resultColumns;
+							 var PopFields = resultColumns[i].PopulatedFieldsId.results;
+							 var IsPopulate = resultColumns[i].AutoPopulate;
+							 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+_spPageContextInfo.userId+"' and Status eq 'Active'";
+							 var arrSubApprover = RequestGetdata(QueryCheckActive);					
+							 peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+							 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+							 peoplePicker.AddUserKeys(arrSubApprover[0].Email);		
+							 if(PopFields.length > 0 ){
+							 	peoplePicker.oldChanged = peoplePicker.OnControlResolvedUserChanged;					 							
+							 	peoplePicker.OnUserResolvedClientScript = function (peoplePickerId, selectedUsersInfo,ddpLabel) {								    
+								    console.log(selectedUsersInfo); if(selectedUsersInfo.length > 0){var userInfo = selectedUsersInfo[0].EntityData.Email;
+								    AutopopulateData(peoplePickerDiv[0].id,cols ,userInfo,PopFields);}
+							   };
+							 }
+							 if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){	
+							 	$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide();															
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);
+							 	setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide(),1000);						
+							 }							 
+							 
+						}else if(resultColumns[i].DefaultValue == 'Manager'){
+						/*	var arrUser = AllTaskUsersEmployeeuser.filter(function (filterData) {
+						     	return filterData.UserId == _spPageContextInfo.userId; //resultColumns[i].Author.Id;
+							});	*/
+							 var Mcols = resultColumns;
+							 var MPopFields = resultColumns[i].PopulatedFieldsId.results;
+							 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=ManagerLoginName/Id,ManagerLoginName/Title&$expand=ManagerLoginName&$filter=LogonName/Id eq '"+_spPageContextInfo.userId+"' and Status eq 'Active'";
+							 var arrUser = RequestGetdata(QueryCheckActive);								
+							 peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+							 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+							 var UserTitle = GetUserLogin(arrUser[0].ManagerLoginName.Id);
+							 peoplePicker.AddUserKeys(UserTitle);							
+							 if(MPopFields.length > 0){
+							 	peoplePicker.oldChanged = peoplePicker.OnControlResolvedUserChanged;					 							
+							 	peoplePicker.OnUserResolvedClientScript = function (peoplePickerId, selectedUsersInfo,ddpLabel) {								    
+								    console.log(selectedUsersInfo);if(selectedUsersInfo.length > 0){ var userInfo = selectedUsersInfo[0].EntityData.Email;
+								    AutopopulateData(peoplePickerDiv[0].id,Mcols ,userInfo,MPopFields);}
+							   };
+							 }
+							if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){
+								$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide()															
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);
+							 	setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide(),1000);
+							 }							
+						}else if(resultColumns[i].DefaultValue == 'Indirect Manager'){
+						/*	var arrUser = AllTaskUsersEmployeeuser.filter(function (filterData) {
+						     	return filterData.UserId == _spPageContextInfo.userId; //resultColumns[i].Author.Id;
+							});	*/
+							 var IMcols = resultColumns;
+							 var IMPopFields = resultColumns[i].PopulatedFieldsId.results;
+							 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=IndirectManager/Id,IndirectManager/Title&$expand=IndirectManager&$filter=LogonName/Id eq '"+_spPageContextInfo.userId+"' and Status eq 'Active'";
+							 var arrUser = RequestGetdata(QueryCheckActive);								
+							 peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+							 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+							 var UserTitle = GetUserLogin(arrUser[0].IndirectManager.Id);
+							 peoplePicker.AddUserKeys(UserTitle);							
+							 if(IMPopFields.length > 0){
+								 peoplePicker.oldChanged = peoplePicker.OnControlResolvedUserChanged;					 							
+								 peoplePicker.OnUserResolvedClientScript = function (peoplePickerId, selectedUsersInfo,ddpLabel) {								    
+								    console.log(selectedUsersInfo); if(selectedUsersInfo.length > 0){var userInfo = selectedUsersInfo[0].EntityData.Email;
+								    AutopopulateData(peoplePickerDiv[0].id,IMcols ,userInfo,IMPopFields);}
+							  	 };
+							 } 
+							 if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){
+								$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide()															
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);
+							 	setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide(),1000);
+							 }												 
+	 
+						}else if(resultColumns[i].DefaultValue == 'HOD'){		
+							var Dept = getUserDept(_spPageContextInfo.userId);
+							var role = 'Head of the Department';
+							var EntityUser = [];							
+					 		GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq '"+role +"'").done(function (USers) {			 
+						  	 if(USers.d.results.length > 0){
+							  	 var nwApprover = USers.d.results[0].Contributors.results;
+							  	 if(nwApprover.length > 0){
+								 	for(b=0; b<nwApprover.length; b++){
+								 	/*	var arrUser = AllTaskUsersEmployeeuser.filter(function (filterData) {
+									     	return filterData.UserId == nwApprover[b].ID; //resultColumns[i].Author.Id;
+										}); */
+										var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+nwApprover[b].ID+"' and Status eq 'Active'";
+							 			var arrSubApprover = RequestGetdata(QueryCheckActive);					
+								 		EntityUser.push(arrSubApprover[0].Email);						
+								    }
+								  }else{
+									 alert('Users are not available for '+ role );
+								  }
+							   }    					  	    		 		 
+							 });
+							 var HODcols = resultColumns;
+							 var HODPopFields = resultColumns[i].PopulatedFieldsId.results;			 	
+							 peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+							 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];				 
+							// var UserTitle = GetUserLogin(arrUser[0].Manager.ID);
+							 peoplePicker.AddUserKeys(EntityUser[0]);
+							 if(HODPopFields.length > 0){
+							 	peoplePicker.oldChanged = peoplePicker.OnControlResolvedUserChanged;					 							
+							 	peoplePicker.OnUserResolvedClientScript = function (peoplePickerId, selectedUsersInfo,ddpLabel) {								    
+								    console.log(selectedUsersInfo); if(selectedUsersInfo.length > 0){var userInfo = selectedUsersInfo[0].EntityData.Email;
+								    AutopopulateData(peoplePickerDiv[0].id,HODcols ,userInfo,HODPopFields);}
+							   };
+							 }	
+							 if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){		
+							 	$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide();													
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);
+							 	 setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide(),1000);
+							 }
+							
+						}else{
+							peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+							var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];	
+							peoplePicker.DeleteProcessedUser();			 
+							if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){		
+							 	$('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide();													
+								$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+							 	peoplePicker.SetEnabledState(false);
+							 	setTimeout($('#'+ddpLabel).find(".sp-peoplepicker-delImage").hide(),1000);					
+							 }	
+							 
+						}
+					
+					}
+				}
+		
+				      	
+	      }
+	      else if(resultColumns[i].ColumnType == 'Text'  && resultColumns[i].AutoPopulate == true ){
+	      	var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+					if(Passingtoken == 'Initiation' )
+					{ 		    				
+			      	if(resultColumns[i].AutoPopulateOf != null)  {
+			      			if(resultColumns[i].AutoPopulateValue == 'Company' || resultColumns[i].AutoPopulateValue == 'Department' || resultColumns[i].AutoPopulateValue == 'OfficeLocation'){
+							var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select="+resultColumns[i].AutoPopulateValue+"/Title&$expand="+resultColumns[i].AutoPopulateValue+"&$filter=LogonName/Id eq '"+_spPageContextInfo.userId+"' and Status eq 'Active'";
+							var	ResultActive = RequestGetdata(QueryCheckActive);	
+							$('#'+resultColumns[i].ColumnName).val(ResultActive[0][resultColumns[i].AutoPopulateValue].Title);				
+							}else{
+							var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select="+resultColumns[i].AutoPopulateValue+"&$filter=LogonName/Id eq '"+_spPageContextInfo.userId+"' and Status eq 'Active'";
+							var	ResultActive = RequestGetdata(QueryCheckActive);	
+							var filterVal = ResultActive.length > 0 ? ResultActive[0][resultColumns[i].AutoPopulateValue] : ''
+							if(resultColumns[i].AutoPopulateValue == 'JoiningDate' || resultColumns[i].AutoPopulateValue == 'DateOfBirth' || resultColumns[i].AutoPopulateValue == 'DateOfAnniversary'){
+							filterVal = moment(filterVal).format('LL')
+							}
+							$('#'+resultColumns[i].ColumnName).val(filterVal);								
+							}
+							$('#'+resultColumns[i].ColumnName).parents(".dynamicdatatexboxes").addClass('AutoFilled');
+							$('#'+resultColumns[i].ColumnName).closest(".form-group").find('.columnnametxt').addClass('AutoFilled');
+							$('#'+resultColumns[i].ColumnName).addClass('AutoFilled');									
+						}
+	      			}
+	      }
+	     /* else if(resultColumns[i].ColumnType == 'Text' && resultColumns[i].TextValidation == 'Link'){
+	      	$('#'+resultColumns[i].ColumnName)
+	      
+	      }*/
+	      	       	      
+	       else if(resultColumns[i].ColumnType == 'Text' && resultColumns[i].DropdownValues == true){
+            var classest = '', classtext = '', tblcolId = '';
+            if(format == ''){
+             var ddpLabel = ddpLbl = resultColumns[i].ColumnName;   
+             classtext = 'dynamicvalfeachcls';
+            }else{
+             classtext = 'input-sm';
+             var currRowid = $(elem).closest("tr").attr("id"); //var tId = tableId.split('_')[1]
+             var ddpLbl = format+'_'+currRowid+'_'+resultColumns[i].ColumnName; 		             
+             tblcolId = resultColumns[i].Id;
+             //var ddpLbl = format+'_'+resultColumns[i].ColumnName;   
+             var CurrElem = elem.find('#'+ddpLbl )
+		     var ddpLabel =  CurrElem.selector;
+            }
+            
+            var DDLVALUE = format ? $(ddpLabel).val() : $("#"+ddpLabel).val();
+            var restquery = ""; resultdata =[];
+            if(resultColumns[i].DropdownFrom == 'SharePoint List'){
+//            	restquery = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+resultColumns[i].SPListName+"')/items?$select=Title,Id,"+resultColumns[i].SPListColumn+"&$filter="+resultColumns[i].SPListFilterColumn+" eq '"+resultColumns[i].SPListFilter+"'&$orderby="+resultColumns[i].SPListSortColumn+"";
+				if(resultColumns[i].SPListFilter == '' || resultColumns[i].SPListFilter == null){
+					restquery = _spPageContextInfo.appBarParams.portalUrl + "sites" +resultColumns[i].SPListSiteAddress + "_api/web/lists/getbytitle('"+resultColumns[i].SPListName+"')/items?$select=Title,Id,"+resultColumns[i].SPListColumn+"";
+	    		}else{
+	    			restquery = _spPageContextInfo.appBarParams.portalUrl +  "sites" +resultColumns[i].SPListSiteAddress + "_api/web/lists/getbytitle('"+resultColumns[i].SPListName+"')/items?$select=Title,Id,"+resultColumns[i].SPListColumn+"&$filter="+resultColumns[i].SPListFilter+"&$orderby="+resultColumns[i].SPListSortColumn+"";	    			
+	    		}
+    				resultdata = RequestGetdata(restquery);
+        			console.log(resultdata);            
+            }else{            
+				if(resultColumns[i].TemplateID != null)  {
+					restquery = "Title,Id,ColumnSequence/Id,ColumnSequence/Title,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID,ColumnSequence&$filter=TemplateID/TemplateName eq '" + resultColumns[i].TemplateID.TemplateName+ "' and ColumnSequence/Title eq '"+resultColumns[i].Title+"'&$orderby=SequenceNo asc, Created asc"; 
+				}else{
+					restquery = "Title,Id,ColumnSequence/Id,ColumnSequence/Title,TableColumnID/Id,TableColumnID/Title&$expand=ColumnSequence,TableColumnID&$filter= ColumnSequence/Id eq '"+resultColumns[i].SetupIDId+"' and TableColumnID/Id eq '"+tblcolId+"'&$orderby=Created asc"; 
+				}
+				GetData("/_api/web/lists/getbytitle('ApprovalColumnsDropdown')/items?$select="+restquery+"").done(function (result) {
+				resultdata = result;
+				});	
+	      	}
+	      	var datatypeval = '';
+	      	if(resultColumns[i].ConditionForVisible != null){
+				datatypeval ="onchange='checkColVisibility(\""+resultColumns[i].ConditionForVisible+"\", \""+resultColumns[i].ColumnName+"\", \""+resultColumns[i].VisibleFieldsId.results+"\");'";
+				//saveclassset += 'hide ';						
+			}
+	      	if(format == ''){
+		      	if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true)
+		      	{
+				 	var select = $("<select disabled='disabled' coltype ='"+resultColumns[i].ColumnType+"' class='form-control "+classtext+"' data-original-value='"+resultColumns[i].ColumnName+"' "+datatypeval+">");			 	
+				}
+				else
+				{	classest += 'active';
+				    if(resultColumns[i].DropdownFrom == 'SharePoint List'){
+				    var addAttr = '';
+				    if(resultColumns[i].MultipleChoice  == true){ //if(resultdata.length > 10){
+				    	addAttr = "multiple multiselect-search='true' multiselect-select-all='true'";
+				    } 
+					var select = $("<select coltype ='"+resultColumns[i].ColumnType+"' name='field2'  id='field2_"+resultColumns[i].ColumnName+"' "+addAttr+" multiselect-max-items='10' class='form-control "+classtext+" "+classest+"' data-original-value='"+resultColumns[i].ColumnName+"' "+datatypeval+">");
+ 
+				    }else{
+					   var select = $("<select coltype ='"+resultColumns[i].ColumnType+"' class='form-control "+classtext+" "+classest+"' data-original-value='"+resultColumns[i].ColumnName+"' "+datatypeval+">");			 	
+					}
+				}
+			}else{
+				var EnD = '';
+				if(PermissionStatus  != ""){
+				var select = $("<select  coltype ='"+resultColumns[i].ColumnType+"' class='form-control "+classtext+"'  "+PermissionStatus +" data-original-value='"+resultColumns[i].ColumnName+"'>");			 	
+				}else{
+				var select = $("<select  coltype ='"+resultColumns[i].ColumnType+"' class='form-control "+classtext+" active' data-original-value='"+resultColumns[i].ColumnName+"'>");			 	
+				}
+				
+			}
+			if(resultdata.length > 0){
+				var Colvalue = resultColumns[i].SPListColumn;
+				//select.prop("multiple multiselect-search", true);				select.prop("multiselect-select-all", true);
+				if(resultColumns[i].SPListFilterColumn == '' || resultColumns[i].SPListFilterColumn  == null)	{		 			 
+				 $(resultdata).map(function (i,value) {				 		
+						select.append($("<option>").val(value[Colvalue]).html(value[Colvalue]));
+				//	  ddlValues.append($("<option></option>").attr("value", this.Id).text(this.Title));
+				 });
+				 }else{
+				 	select.empty().append('<option value=""> -- Select -- </option>');				
+				 	var ddpid = ddpLabel, Currcol = resultColumns[i].ColumnName;
+				    $('#' +resultColumns[i].SPListFilterColumn).change(function () {
+				        let val = this.options[this.selectedIndex].value;				
+				        let filterData = resultdata.filter(function(value) {
+				            return value[Colvalue] === val ;
+				        });	
+				      	if(filterData.length < 10){
+				      		$('#'+Currcol).show();
+				      		$('#'+Currcol).removeAttr('multiple multiselect-search');
+				      		$('#'+Currcol).removeAttr("multiselect-select-all");
+				      		$('.'+Currcol).find('div .multiselect-dropdown').hide();
+				      	}
+				        select.empty();					       
+				        $.each(filterData, function (index, value) {
+				            // Now, fill the second dropdown list with bird names.
+				           select.append($("<option>").val(value.Title).html(value.Title));
+				        });
+				       // 		MultiselectDropdown(window.MultiselectDropdownOptions);
+
+				    });
+				 
+				 }
+			}else if(resultdata.d.results.length > 0){						
+				 	select.empty().append('<option value=""> -- Select -- </option>');				
+				 	$(resultdata.d.results).each(function () {			 
+	             		select.append($("<option>").val(this.Title).html(this.Title));
+				//	  ddlValues.append($("<option></option>").attr("value", this.Id).text(this.Title));
+				 	});
+			 //	}
+			}
+			if(resultColumns[i].DropdownFrom == 'SharePoint List'){
+					multiDdp.push({'col': resultColumns[i].ColumnName});		    
+			}
+			 select.val(1).attr({id: ddpLbl , name: ddpLabel }).change(function(){
+				    if (typeof getShipping == "function") {
+				        getShipping();
+				    }
+				});
+				if(format == ''){
+					var dfval= $("#"+ddpLabel ).val();
+					$("#"+ddpLabel ).replaceWith(select);
+				}else{
+					var dfval= DDLVALUE ; //$("#"+ddpLabel ).val();
+					$(ddpLabel ).replaceWith(select);
+				}
+				
+				if(window.location.href.indexOf("?")> -1) 
+    			{
+    				var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+					if(Passingtoken == 'Process Steps')
+					{
+						if(format != ''){ $(ddpLabel).val(DDLVALUE )}else{ $("#"+ddpLabel).val(DDLVALUE )};
+						//$("#"+ddpLabel ).val(ddval);									
+					}
+					else if(Passingtoken == 'Draft'){
+						if(format != ''){ $(ddpLabel).val(DDLVALUE )}else{ $("#"+ddpLabel).val(DDLVALUE )};
+					}
+					else
+					{
+						if(resultColumns[i].DefaultValue != '')
+						{
+							if(format == ''){
+								$("#"+ddpLabel ).val(resultColumns[i].DefaultValue);	
+							}else{
+								$(ddpLabel ).val(resultColumns[i].DefaultValue);	
+							}
+						}
+						else
+						{
+							$("#"+ddpLabel ).val(resultdata.d.results[1].Title);	
+						}	
+					}
+				}
+				else
+				{
+					if(resultColumns[i].DefaultValue != '')
+					{
+						$("#"+ddpLabel ).val(resultColumns[i].DefaultValue);	
+					}
+					else
+					{
+						$("#"+ddpLabel ).val(resultdata.d.results[1].Title);	
+					}
+									
+				}	
+					function getShipping() {
+				    console.log($("#"+ddpLabel).val());
+				//;}			
+				
+	      	}
+	    } else if(resultColumns[i].ColumnType == 'Currency' || resultColumns[i].ColumnType == 'Priority'){	     
+	      		if(format == ''){
+	             var ddpLabel2 = resultColumns[i].ColumnName;   
+	            }else{
+	            var tId = tableId.split('_')[1]
+	            var ddpLabel2 = format+'_'+tId+'_'+resultColumns[i].ColumnName; 		             
+	             //var ddpLabel2 = format+'_'+resultColumns[i].ColumnName;   
+	            }
+	            var DDLVALUE = $("#"+ddpLabel2).text();
+	            var ddlReadonly=false;
+	            if(document.querySelector('#'+ddpLabel2).hasAttribute('disabled')== true)
+				{
+					ddlReadonly = true;
+				}
+	      		//var ddpLabel2 = resultColumns[i].ColumnName;
+	      		var ddlType = resultColumns[i].ColumnType;
+	      		var defVal = resultColumns[i].DefaultValue;
+	      		GetChoiceValues(ddpLabel2, ddlType, defVal,ddlReadonly,DDLVALUE);
+	      	//	$("#"+ddpLabel2).val(resultColumns[i].DefaultValue);	      
+	      	
+	      	}else if(resultColumns[i].ColumnType == 'Yes/No' || resultColumns[i].ColumnType == 'YesNo'){
+	      		//var ddpLabel2 = resultColumns[i].ColumnName;
+	      		if(format == ''){
+	             	var ddpLabel2 = resultColumns[i].ColumnName;
+	             	var DDLVALUE = $("#"+ddpLabel2).text();
+	             	if(DDLVALUE == 'true'){DDLVALUE = 'Yes';}
+	             	else{DDLVALUE = 'No';}	             	
+	             	if(document.querySelector('#'+ddpLabel2).hasAttribute('disabled')== true)
+	             	{
+	             		var select = $("<select coltype ='"+resultColumns[i].ColumnType+"' disabled='disabled' class='dynamicvalfeachcls form-control' id='"+ddpLabel2+"'>");
+	             	}
+	             	else
+	             	{
+	             		var select = $("<select coltype ='"+resultColumns[i].ColumnType+"' class='dynamicvalfeachcls form-control "+classest+"' id='"+ddpLabel2+"'>");
+	             	}
+		      		select.append($("<option>").val('Yes').html('Yes'));
+		      		select.append($("<option>").val('No').html('No'));
+		      		$("#"+ddpLabel2 ).replaceWith(select);	
+		      		$("#"+ddpLabel2 ).val(resultColumns[i].DefaultValue);  
+		      		
+		      		if(window.location.href.indexOf("?")> -1) 
+    				{
+    					var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+						if(Passingtoken == 'Process Steps')
+						{
+							$("#"+ddpLabel2).val(DDLVALUE);									
+						}
+						else
+						{
+							if(resultColumns[i].DefaultValue != '')
+							{
+								$("#"+ddpLabel2).val(resultColumns[i].DefaultValue);	
+							}
+							else
+							{
+								$("#"+ddpLabel2).val(resultdata.d.results[1].Title);	
+							}	
+						}
+					}
+		      		
+					 
+	            }else{
+		             var ddpLabel2 = format+'_'+resultColumns[i].ColumnName; 
+		             var x = $("#"+ddpLabel2 );
+		             x.get(0).type =  "checkbox";
+					 //document.body.appendChild(x);  
+		          //   $("#"+ddpLabel2 ).setAttribute("type", "checkbox");		             
+	            }	      			
+	      	}else if(resultColumns[i].ColumnType == 'AttachmentBox'){	      	
+	      	 var ddpLabel = ddpLbl = AttachDraftCol = resultColumns[i].ColumnName;                
+             classtext = 'dynamicvalfeachcls active';var ddvval = $('#'+AttachDraftCol).val()//resultColumns[i].DefaultValue;
+             var Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+            /* if(Passingtoken != 'Draft' || ddvval == ''){
+             	$("#"+ddpLabel).prop("type", "file");
+             }else */
+             if(Passingtoken == 'Draft' && ddvval != ''){
+             	var html = '<div class="approve-process-upload-data scrollbar-panel" id="Docfilename'+ddpLabel+'" style="width:100%; min-width:auto; max-height:300px; margin-bottom:10px;">'
+             	$("#"+ddpLabel).replaceWith(html);
+             } 
+             //$("#"+ddpLabel).attr("onchange", validateFileExtensions(ddpLbl, resultColumns[i].DefaultValue));
+			
+	       }
+	   }
+    }
+    $(".Cover_PPl .sp-peoplepicker-topLevel").on("keyup", function(){
+	$(this).css('position','static');
+	var storeTop = $(this).offset().top;
+	var storeLeft = $(this).offset().left;
+	$(this).find('.sp-peoplepicker-autoFillContainer').offset({top:storeTop + $(this).outerHeight(),left:storeLeft})});
+	if(multiDdp.length > 0){
+		$.uniqueSort(multiDdp);
+		MultiselectDropdown(window.MultiselectDropdownOptions);
+	/*	for(d=0;d<multiDdp.length;d++){
+			MultiselectDropdown(window.MultiselectDropdownOptions,multiDdp[d].col);
+			console.log(multiDdp[d].col);alert(multiDdp[d].col);
+		}	*/
+	}
+ }
+ 
+ function GetUniqueData(restURL,column) {
+		var def = $.Deferred();
+		$.ajax({
+			url: _spPageContextInfo.webAbsoluteUrl + restURL,
+			contentType: "application/json;odata=verbose",
+			headers: { "accept": "application/json;odata=verbose" },
+			async:false,
+			success: function (data) {
+				def.resolve(data);
+				var result = data.d.results; // set value of result variable 
+			    $.each(result, function(key, value){
+			        console.log(value);   // access the choice field value
+			    });
+			},
+			error: function (data) {
+				def.reject(data);
+			}
+		});
+
+		return def.promise();
+	}
+
+function GetChoiceValues(val, type, defVal,ddlReadonly,DDLVALUE){
+var def = $.Deferred();
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalProcessList')/fields?$filter=EntityPropertyName eq '"+val+"'", //?$select="+val,
+        type: "GET", 
+        async:false,       
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },        
+        success: function (data) {        
+        	var choiceArray = data.d.results[0].Choices.results;
+        	var status='';
+        	if(ddlReadonly == true)
+        	{
+        		status = "disabled='disabled'";
+        		//var classest = '';
+        	}else{
+        		classest = 'active';
+        	}
+        	
+        	if(status == "disabled='disabled'")
+        	{
+        		var select = $("<select "+status+" class='dynamicvalfeachcls form-control' id='"+val+"' >");		  //coltype ='"+resultColumns[i].ColumnType+"'
+        	}
+        	else
+        	{
+        		var select = $("<select "+status+" class='dynamicvalfeachcls form-control "+classest+"' id='"+val+"' >");	//coltype ='"+resultColumns[i].ColumnType+"'
+        	}
+        //	var option = "<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>"         	
+        	for(c=0;c<choiceArray.length;c++){        		
+        		//option += "<option value='"+choiceArray[i]+"'>"+choiceArray[i]+"</option>";         		
+        		select.append($("<option>").val(choiceArray[c]).html(choiceArray[c]));
+        	}
+        //	$("#ddlDefVal").html(option);
+        	$("#"+val).replaceWith(select);	        	
+			$("#"+val).val(DDLVALUE);		
+			console.log(data);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+    return def.promise();
+
+}
+
+function bindUser(ddpLabel){
+peoplePickerDiv = $("[id$='"+ddpLabel+"_TopSpan']");
+var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+if(valuefordefault.results.length > 0){													
+ for(u=0;u<valuefordefault.results.length;u++){
+ 	/*var arr = AllTaskUsersEmployeeuser.filter(function (filterData) {
+	     return filterData.UserId == valuefordefault.results[u].Id;
+	 });*/
+	 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=ManagerLoginName/Id,ManagerLoginName/Title&$expand=ManagerLoginName&$filter=LogonName/Id eq '"+valuefordefault.results[u].Id+"' and Status eq 'Active'";
+	 var arrUser = RequestGetdata(QueryCheckActive);								
+	 				
+ 	peoplePicker.AddUserKeys(arrUser[0].Email);	
+ }
+ if(document.querySelector('#'+ddpLabel).hasAttribute('disabled')== true){ 
+	$('#'+ddpLabel).find(".sp-peoplepicker-editorInput").hide(); // for hiding input field				
+ 	peoplePicker.SetEnabledState(false);						 								 	
+ }
+}
+}
+
+
+
+
+
+function downloadAttach(url, filename) {
+   // var newUrl = '..'+url;
+    fetch(url).then(function(t) {
+        return t.blob().then((b)=>{
+            var a = document.createElement("a");
+        a.href = URL.createObjectURL(b);
+        a.setAttribute("download", filename);
+        a.click();
+    });
+});
+}
+
+
+
+function addDdpStps(id){
+	if(id == 'ddpStps'){
+		$('#ddpStps').empty();	
+		var ddpStps = '';
+		ddpStps += '<li><input type="checkbox" value="all_select" id="selectallopts">All Select</li>'
+		for(i=0;i<ApproerSteps.length;i++){
+			ddpStps += '<li><input type="checkbox" class="checkboxallopt"  value="'+ApproerSteps[i].Id+'" name="">'+ApproerSteps[i].StepName+'</li>'
+		}
+		$('#ddpStps').append(ddpStps);
+	}else{
+		$('#singleStpddp').empty();	
+		var ddpStps = '';
+		//ddpStps += '<li><input type="checkbox" value="all_select" id="selectallopts">All Select</li>'
+		singleStpddp 
+		for(i=0;i<ApproerSteps.length;i++){
+			ddpStps += '<option value="'+ApproerSteps[i].Id+'">'+ApproerSteps[i].StepName+'</option>'
+		}
+		$('#singleStpddp').append(ddpStps);	
+	}
+}
+
+function getExtension(path) {
+    var basename = path.split(/[\\/]/).pop(),  // extract file name from full path ...
+                                               // (supports `\\` and `/` separators)
+        pos = basename.lastIndexOf(".");       // get last position of `.`
+
+    if (basename === "" || pos < 1)            // if file name is empty or ...
+        return "";                             //  `.` not found (-1) or comes first (0)
+    return basename.slice(pos + 1);            // extract extension ignoring `.`
+}
+
+
+// To view Process's info n details
+
+function ViewProcessDetails(){
+		var templatename = $("input[name='selector']:checked").val();
+		var templateID = $("input[name='selector']:checked").attr('templateid')
+		if(templatename == null || templatename == '')
+		{
+			templatename =	window.atob(titanForWork.getQueryStringParameter('RecName'));
+		}
+		templatename = templatename.trim(); templateID = templateID ;
+		templateID = templateID ? templateID : window.atob(titanForWork.getQueryStringParameter('Template'));
+		var	QueryReq = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=*,Id,Title,ProcessType,RequestFor,FileIcon,TemplateName,Active&$filter=ProcessType eq 'Process' and Id eq '"+templateID+"'"; 		
+		var QueryProcessData = RequestGetdata(QueryReq);
+		console.log(QueryProcessData);
+		$('#txtProcessName').val(QueryProcessData[0].Title);
+		$('#txtProcessFor').val(QueryProcessData[0].RequestFor);
+		$('#txtTempName').val(QueryProcessData[0].TemplateName);
+		$('#txtProcessOwner').val(QueryProcessData[0].ProcessOwner);
+		$('#txtPublishby').val(QueryProcessData[0].PublishedBy);
+		$('#txtPublishOn').val(QueryProcessData[0].PublishedOn);
+		$('#txtProcessDetails').val(QueryProcessData[0].Details);
+		$('#txtProcessInst').val(QueryProcessData[0].Instructions);
+		$('#txtProcessPre').val(QueryProcessData[0].Prerequisite);		
+		
+}
+
+// To check file size
+function CheckFileSize(file){
+			const size = 
+               (file[0].size / 1024 / 1024).toFixed(2);
+          
+            if (size > 100) {
+                alert("File must be less than 100 MB");
+                return false;
+            }else{
+            	return true;
+            }
+}
+
+// validate file exten
+
+function validateFileExtensions(ddp, defval, size){
+      //var file = $('#'+ddp).val();  
+     var file = jQuery('#'+ddp);
+	 var fileName = file[0].files[0].name;
+	  var fileSize = $("#"+ddp)[0].files[0].size;
+	  var ext = fileName.split('.').pop();
+       if(!returnExtension(ext)){
+        var blnValid = false;
+		var validFileExtensions = [defval];		        
+        console.log(fileExt);
+       // $( "input:file").each(function(){
+        if(validFileExtensions.length > 0 ){
+        	if(validFileExtensions[0] != 'null'){
+        	var fileExt =  defval.split(/[.,!,?]/); //new Array();           
+			for (var j = 0; j < fileExt.length; j++) {
+                var sCurExtension = fileExt[j].replace(" ","");
+                if (ext.toLowerCase() == sCurExtension.toLowerCase()) {
+                    blnValid = true;
+                    break;
+                }
+            }       // });
+            var sizetext = '';
+            const Fsize = (fileSize / 1024 / 1024).toFixed(2);          
+            if(parseFloat(Fsize) > parseFloat(size)){
+	         	//var _size = fileSize/1000000 + 'MB';  	        	
+	        	sizetext = "Allowed max file size: "+size+" MB." ;
+	        	alert(sizetext);
+	        	$('#'+ddp).val('');  
+                return false;
+        	}
+        	
+		 	 if (!blnValid) {
+                alert("Invalid file, Allowed extensions: " + validFileExtensions.join(", ") + "\n" + sizetext);
+                $('#'+ddp).val('');  
+                return false;
+             }
+           }
+         }
+      /*  if(fileErrors.length > 0 ){
+            var errorContainer = $("#validation-errors");
+            for(var i=0; i < fileErrors.length; i++){
+              //  errorContainer.append('<label for="title" class="error">* File:'+ file +' do not have a valid format!</label>');
+              alert('Only '+defval+' types are allowed.')
+            }
+            return false;
+        }*/
+        return true;
+    }else{
+	alert(fileName + ' should not be uploaded. This file may be malicious.  Please select another file.');
+	$('#'+ddp).val('');  
+	return false;
+	}
+}    
+    
+function EditAttachment(id, DocName, purpose, remarks, action, col){	
+	//$('#'+col).val(DocName);
+	editFile = DocName;
+	$('#DocPurpose').val(purpose);
+	$('#docRemarks').val(remarks);
+	//setTimeout(function(){$('#EditDoc').show();$('#saveDoc').hide()}, 5000);
+	$('#EditDoc').show();$('#saveDoc').hide();
+	//UpdateDoc(DocName);
+}
+function UpdateDoc(){
+	var fileName = editFile;
+	var extn = getExtension(fileName);
+	if(!returnExtension(extn)){
+	var purpose = $('#DocPurpose').val();				
+	var Remarks = $('#docRemarks').val();
+	var AttachFor = $('#e_Signature_optis').val();
+	var SignOf  = 'All Signatories';
+	var ddpmulstp = $('#ddpStps').val();
+	var	singleslct = $("#single_selecopt").prop("checked") ? 1 : 0;				
+	var SingleStpval = $('#singleStpddp').val();
+	var watermrk = $("#watermark_slect").prop("checked") ? 1 : 0;				
+	var watermrkval = $('#docWatermark').val();
+	//items[items.indexOf(oldValue)] = newValue
+	var editedData = {'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks,'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn, 'attachfor' : AttachFor};
+	AllDocs = AllDocs.map(u => u.filename !== editedData.filename ? u : editedData );
+	SaveApprovalDocs('Edit')
+	}else{
+	alert(fileName + ' should not be uploaded. This file may be malicious.  Please select another file.');
+	return false;
+	}
+}
+
+
+function DeleteColAttachment(Permission, ItemId, FileTitle, col, defval, maxnum) 
+	{  
+		var Dfd = $.Deferred();  
+    	//var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessDocuments')/GetItemById(" + ItemId + ")/AttachmentFiles/getByFileName('" + FileTitle + "')  ";  
+    	var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessDocuments')/GetItemById('" + ItemId + "')";
+    	$.ajax({  
+			url: Url,  
+			type: 'POST',  
+			async: false,
+    	    contentType: 'application/json;odata=verbose',  
+    	    headers: {  
+    	    	'X-RequestDigest': $('#__REQUESTDIGEST').val(),  
+    	    	'X-HTTP-Method': 'DELETE',  
+    	        'Accept': 'application/json;odata=verbose' ,
+                "If-Match": "*"
+
+			},  
+    	    success: function (data) 
+    	    {  
+				Dfd.resolve(data);
+				console.log('Old Signed Image Delete.')  
+				alert('File has been deleted successfully.')
+				//$('#'+col).html("<input type='file' coltype ='AttachmentBox'  class='dynamicvalfeachcls  active form-control 'alue='' id='" + col +"' />");;
+				var ff = 'onchange="validateFileExtensions(\''+col+'\', \''+defval+'\', \''+maxnum+'\');"';
+				if(Permission == ''){
+				var Colhtml = "<input type='file' coltype ='AttachmentBox'  class='dynamicvalfeachcls  active form-control' value='' id='" + col +"' "+ff +" />";
+				}else{
+				var Colhtml = "<input type='file' "+Permission +" coltype ='AttachmentBox'  class='dynamicvalfeachcls form-control' value='' id='" + col +"' "+ff +"/>";
+				}
+				$('.Doc_'+col).parents(".dynamicdatatexboxes").addClass('active');
+				$('.Doc_'+col).closest(".form-group").find('.columnnametxt').addClass('active');
+				$('.Doc_'+col).replaceWith(Colhtml);
+				
+			},  
+        	error: function (error) 
+        	{  
+				Dfd.reject(JSON.stringify(error));  
+        	}  
+		});  
+    	return Dfd.promise();  
+}
+
+
+
+
+
+function RemoveDoc(id, FileName){
+	var index = id.split('_')[1];
+    $("#" + id).remove();
+    AllDocs = AllDocs.filter(function( obj ) {
+        return obj.filename!== FileName;
+    });
+
+    RemoveDuplicate = [];
+    var arr = AllDocs.filter(function (el) {
+        if (RemoveDuplicate.indexOf(el.filename) == -1) {
+            RemoveDuplicate.push(el.filename);
+            return true;
+        }
+        return false;
+    });
+    ApprovalDocs = ReinitializeArray(arr);    
+
+}
+
+function ReinitializeArray(arr) {
+    var newArr = [];
+    var count = 0;
+    for(var i=0; i < arr.length; i++) {
+        newArr[count++] = arr[i];
+    }
+    return newArr;
+}
+
+function GetAllattachments(){
+		ApprovalDoc = [];
+		var RecID = window.atob(titanForWork.getQueryStringParameter('RecNo'));
+		var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessDocuments')/items?$select=*,Author/ID,Author/Title,RequestID/Id,AttachmentFiles&$expand=RequestID,Author,AttachmentFiles&$filter=RequestID/Id eq "+RecID+"";
+		var QueryResult = RequestGetdata(Query);
+		var ApprovalDocfiles = QueryResult.filter(function (filterData) {
+		     return filterData.DocumentType != 'Column Document'
+    	}); 
+		console.log(QueryResult);	
+		$('#tbdyAppDoc').empty();
+		var count = 0;//$('.countingbx').text();
+		//$('.countingbx').text(ApprovalDoc.length);
+		var ApprovalDochtml = '';var stp;
+		
+	for(i=0;i<ApprovalDocfiles.length;i++){
+	var attchments = ApprovalDocfiles[i].AttachmentFiles.results;
+	if(attchments.length > 0){ApprovalDoc.push(ApprovalDocfiles[i]);count++}
+	if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+			stp = window.atob(titanForWork.getQueryStringParameter('StepNo'));//ApprovalDoc[i].Step;
+	}else{	stp = 'Initiation'}
+	var Email = GetUserEmail(ApprovalDocfiles[i].Author.ID);
+	if(ApprovalDocfiles[i].AttachmentFiles.results.length > 0){
+		var extn = getExtension(ApprovalDocfiles[i].AttachmentFiles.results[0].FileName);
+		var Remarks = $(ApprovalDocfiles[i].Remarks).text();console.log(Remarks);
+		var purpose = ApprovalDocfiles[i].Purpose ? ApprovalDocfiles[i].Purpose : '';
+		AllDocs.push({'filename' : ApprovalDocfiles[i].AttachmentFiles.results[0].FileName, 'purpose':purpose, 'Remarks' : Remarks , 'SignOf': '', 'ddpmulstp': '', 'SingleStpval':'', 'singleslct': '', 'watermrk' : ApprovalDocfiles[i].Watermrk ,'watermrkval' : ApprovalDocfiles[i].WatermrkText, 'extn' : extn, 'attachfor' : '', 'Step': ApprovalDocfiles[i].Step, 'StepID':ApprovalDocfiles[i].StepQueueID})
+		var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Email);
+		ApprovalDochtml += '<tr id="Doc_'+i+'"><td><div class="titlewrp">';
+		var extn = extn.toUpperCase();
+		if(extn == 'JPEG' || extn == 'GIF' || extn == 'PNG' || extn == 'JPG'){
+		 	var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/jpg.png';
+		}else if(extn == 'DOC' || extn == 'DOCX'){
+			var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/docx.png';
+		}else if(extn == 'CSV' || extn == 'XLS' || extn == 'XLSX'){
+			var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/excel_file.png';
+		}else if(extn == 'PDF'){
+			var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/pdf.png';
+		}else{
+			var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/file-icon.png';
+		}		
+	    ApprovalDochtml += '<img src="'+path+'">'
+	    //ApprovalDochtml += '<a href="javascript:void(0);" download="'+ApprovalDoc[i].filename+'" onclick="downloadAttach(\'' + ApprovalDoc[i].filename + '\', \'' + ApprovalDoc[i].filename + '\')" class="" style="color:#1d6ec0; display:block; ">
+	    ApprovalDochtml += '<span class="chip-icon-box"> <a href="javascript:void(0);" download="'+attchments[0].FileName+'" name="'+attchments[0].FileName+'" onclick="downloadAttach(\'' + attchments[0].ServerRelativeUrl+ '\', \'' + attchments[0].FileName + '\')"style="color:#333;"><p class="fileName" id="DocName" >'+attchments[0].FileName+'</p></a></span>';  //</a>
+	    ApprovalDochtml += '</div></td>'
+	    ApprovalDochtml += '<td><p class="purpose_text" id="filePurpose">'+purpose+'</p></td>'
+	    ApprovalDochtml += '<td><p class="remarkmultilines" id="fileRemarks">'+Remarks +'</p></td>'
+	    ApprovalDochtml += '<td><div class="flexitem"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="'+ApprovalDocfiles[i].Author.Title+'" src="'+Authorattachment+'" alt="" data-themekey="#"></div></div><div class="imagecontent"><h4>'+ApprovalDocfiles[i].Author.Title+'</h4><a href="#" style="cursor: auto;">'+Email +'</a></div></div></td>'
+	    ApprovalDochtml += '<td>'+ApprovalDocfiles[i].Step+'<br>'+moment(new Date).format('LL')+'</td>'
+		if(stp == ApprovalDocfiles[i].Step){	   
+			 ApprovalDochtml += '<td><button type="button" class="custom-edit-btn"><i class="fa fa-pencil" id="file_'+i+'" data-toggle="modal" data-target="#Approval_doc" onclick="EditAttachment(this.id, \''+ApprovalDocfiles[i].filename+'\',\''+ApprovalDocfiles[i].purpose+'\',\''+Remarks +'\')"></i></button>'	    
+		     ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-trash-o" id="Doc_'+i+'" onclick="RemoveDoc(this.id,\''+ApprovalDocfiles[i].filename + '\')"></i></button></td>'
+	    }else{
+	    	ApprovalDochtml += '<td></td>';
+	    	ApprovalDochtml += '<td></td>';
+	    }
+	    ApprovalDochtml += '</tr> '
+	  }
+    }
+    $('.countingbx').text(count);
+    $('#tbdyAppDoc').append(ApprovalDochtml);
+    $('#Approval_doc').modal('hide');
+
+}
+// get User Email
+function GetUserEmail(Id)
+{
+    var ResultItems=[];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+Id+"'";
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) 
+        { 			
+            ResultItems = data.d.results[0].Email;  
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        	console.log(data); 
+        }  
+    });
+    return ResultItems;
+}
+// get User Id
+function GetUserId(email)
+{
+    var ResultItems=[];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email eq '"+email+"'";
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) 
+        { 			
+            ResultItems = data.d.results[0].LogonName.Id;  
+        },
+        error: function (data) 
+        {  
+            console.log("Error in getdata.");
+        	console.log(data); 
+        }  
+    });
+    return ResultItems;
+}
+
+
+// Column visibility
+
+function checkColVisibility(condition, col, Columns){
+	var colvalue = $('#'+col).val();
+	colvalue= colvalue.trim().toString();
+	var newCondition  = condition.replace(/Value/i,'colvalue');  //condition.find('Value').replaceWith(colvalue);
+	console.log(newCondition);
+	/*if(newCondition){	
+	//if(colvalue == newCondition.split('==')[1].trim()){
+		//alert('yes');
+		var ColArray = Columns.split(",");
+		for(var c=0; c< ColArray.length; c++){
+			$('#'+ColArray[c]).removeClass('hide');//show();
+		}	
+	}else */
+	if(newCondition){
+		//alert('no');
+		var ColArray = Columns.split(",");
+		for(var c=0; c< ColArray.length; c++){
+			$('#'+ColArray[c]).addClass('hide');//hide();
+		}
+	}
+}
+
+// Auto-Populate on fill
+
+function AutopopulateData(PoplePickerId,Columns,selectedUsersInfo, PopulatedFieldsId){
+	//var UserInfo = SPClientPeoplePicker.SPClientPeoplePickerDict[PoplePickerId].GetAllUserInfo();
+	if(selectedUsersInfo.length > 0){
+		var email = selectedUsersInfo;
+		var UserId= GetUserId(email);
+		for(var u=0;u<PopulatedFieldsId.length;u++ ){
+			var resultColumns= $.grep(Columns, function(v) {
+				return v.ID == PopulatedFieldsId[u];
+			});
+			if(resultColumns[0].AutoPopulateOf != null)  {
+				if(resultColumns[0].AutoPopulateValue == 'Company' || resultColumns[0].AutoPopulateValue == 'Department' || resultColumns[0].AutoPopulateValue == 'OfficeLocation'){
+				var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select="+resultColumns[0].AutoPopulateValue+"/Title&$expand="+resultColumns[0].AutoPopulateValue+"&$filter=LogonName/Id eq '"+UserId+"' and Status eq 'Active'";
+				var	ResultActive = RequestGetdata(QueryCheckActive);	
+				$('#'+resultColumns[0].ColumnName).val(ResultActive[0][resultColumns[0].AutoPopulateValue].Title);				
+				}else{
+				var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select="+resultColumns[0].AutoPopulateValue+"&$filter=LogonName/Id eq '"+UserId+"' and Status eq 'Active'";
+				var	ResultActive = RequestGetdata(QueryCheckActive);	
+				var filterVal = ResultActive.length > 0 ? ResultActive[0][resultColumns[0].AutoPopulateValue] : '';
+				if(resultColumns[0].AutoPopulateValue == 'JoiningDate' || resultColumns[0].AutoPopulateValue == 'DateOfBirth' || resultColumns[0].AutoPopulateValue == 'DateOfAnniversary'){
+				filterVal = filterVal ? moment(filterVal).format('LL') : '';
+				}
+				var colId =  $("#"+PopulatedFieldsId[u]).find("input").attr('id');
+				$('#'+resultColumns[0].ColumnName).val(filterVal);				
+				}		
+			}else{
+				if(resultColumns[0].DefaultValue == 'Manager' ){
+				 	 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=ManagerLoginName/Id,ManagerLoginName/Title&$expand=ManagerLoginName&$filter=LogonName/Id eq '"+UserId+"' and Status eq 'Active'";
+					 var arrUser = RequestGetdata(QueryCheckActive);								
+					 peoplePickerDiv = $("[id$='"+resultColumns[0].ColumnName+"_TopSpan']");
+					 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+					 var UserTitle = GetUserLogin(arrUser[0].ManagerLoginName.Id);
+					 peoplePicker.DeleteProcessedUser();
+					 peoplePicker.AddUserKeys(UserTitle);								
+				}else if(resultColumns[0].DefaultValue == 'Indirect Manager'){
+					 var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=IndirectManager/Id,IndirectManager/Title&$expand=IndirectManager&$filter=LogonName/Id eq '"+UserId+"' and Status eq 'Active'";
+					 var arrUser = RequestGetdata(QueryCheckActive);								
+					 peoplePickerDiv = $("[id$='"+resultColumns[0].ColumnName+"_TopSpan']");
+					 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];
+					 var UserTitle = GetUserLogin(arrUser[0].IndirectManager.Id);
+					 peoplePicker.DeleteProcessedUser();
+					 peoplePicker.AddUserKeys(UserTitle);							
+				}else if(resultColumns[0].DefaultValue == 'HOD'){
+					var Dept = getUserDept(UserId);
+					var role = 'Head of the Department';
+					var EntityUser = [];
+			 		GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq '"+role +"'").done(function (USers) {			 
+				  	 if(USers.d.results.length > 0){
+					  	 var nwApprover = USers.d.results[0].Contributors.results;
+					  	 if(nwApprover.length > 0){
+						 	for(b=0; b<nwApprover.length; b++){						 	
+								var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+nwApprover[b].ID+"' and Status eq 'Active'";
+					 			var arrSubApprover = RequestGetdata(QueryCheckActive);					
+						 		EntityUser.push(arrSubApprover[0].Email);						
+						    }
+						  }else{
+							 alert('Users are not available for '+ role );
+						  }
+					   }    					  	    		 		 
+					 });			 	
+					 peoplePickerDiv = $("[id$='"+resultColumns[0].ColumnName+"_TopSpan']");
+					 var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id];				 					
+					 peoplePicker.DeleteProcessedUser();
+					 peoplePicker.AddUserKeys(EntityUser[0]);	
+				}
+			
+			}
+		}
+	}
+}

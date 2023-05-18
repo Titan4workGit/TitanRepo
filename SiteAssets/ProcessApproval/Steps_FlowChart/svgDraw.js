@@ -1,1 +1,465 @@
-function a424_0x38d4(){var _0x584420=['\x22></span><span\x20class=\x22arrow_left\x22></span>','left','\x22><div\x20class=\x22innercontainer\x22>\x20<div\x20class=\x22top_area\x22>\x20<h5>','<li><div\x20class=\x22covernows\x22\x20id=\x22child','</h5>\x20<div\x20class=\x22optionbox\x22>\x20<span\x20class=\x22clickevent\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png\x22\x20style=\x22width:17px;\x22></span>\x20<div\x20class=\x22optionbx\x22>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20</div>\x20</div>\x20</div>\x20<div\x20class=\x22select_userbox\x22>\x20<h5\x20class=\x22subtitle\x22>Selective\x20Users</h5>\x20<div\x20class=\x22row\x22\x20style=\x22padding:5px\x2015px;\x22>\x20<div\x20class=\x22col-md-12\x22>\x20<div\x20class=\x22user_cover\x22>\x20\x20\x20</div>\x20</div>\x20</div><!--row\x20ed--->\x20<div\x20class=\x22menus\x22>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/email.png\x22\x20alt=\x22\x22></button>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/settings.png\x22\x20alt=\x22\x22></button>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/board.png\x22\x20alt=\x22\x22\x20style=\x22width:18px;\x22></button>\x20</div>\x20</div>\x20</div></div><ul\x20id=\x22Parent','TriggerOn','hidding','StepId','hide','toggleClass','append','220947hSVOAk','50934DpNKoR','TID','ajax','<svg\x20id=\x22svg1\x22\x20\x20width=\x221000\x22\x20height=\x221000\x22>','#svg1','On\x20Reject','.workflow','css','StepName','\x22></span><span\x20class=\x22arrow_right\x22></span>','\x22></span><span\x20class=\x22arrow_right\x20increase_point\x22></span>','span.increase_point','125yUBkuH','<span\x20class=\x22left_flow\x20','#initParentNode','3477984RHfRTz','each','#path','<span\x20class=\x22right_flow\x20increase_point\x20','32KwJKhj','attr','outerWidth','next','<li\x20class=\x22remove_upaline\x22><div\x20class=\x22covernows\x22\x20id=\x22child','filter','ready','Initiation','\x22></ul></li>','513569mrxLcM','GET','offset','webAbsoluteUrl','\x22></span>','#ff0000','863436GcKCkI','#Parent','StepType','#child','length','stroke-width','159267hFcQvr','width','active','show','application/json;odata=verbose','outerHeight','\x22></span><span\x20class=\x22arrow_left\x20increase_point\x22></span>','move','<span\x20class=\x22right_flow\x20','.optionbx','draggable','top','<li><a\x20href=\x22#\x22\x20id=\x22child','StepIdId','click','stroke','height','span.right_flow','children','/_api/web/lists/getbytitle(\x27ApprovalStepsConditions\x27)/items?$filter=TemplateID/ID\x20eq\x20\x27','</h5>\x20<div\x20class=\x22optionbox\x22>\x20<span\x20class=\x22clickevent\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png\x22\x20style=\x22width:17px;\x22></span>\x20<div\x20class=\x22optionbx\x22>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20<a\x20href=\x22#\x22>option</a>\x20</div>\x20</div>\x20</div>\x20<div\x20class=\x22select_userbox\x22>\x20<h5\x20class=\x22subtitle\x22>Selective\x20Users</h5>\x20<div\x20class=\x22row\x22\x20style=\x22padding:5px\x2015px;\x22>\x20<div\x20class=\x22col-md-12\x22>\x20<div\x20class=\x22user_cover\x22>\x20\x20</div>\x20</div>\x20</div><!--row\x20ed--->\x20<div\x20class=\x22menus\x22>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/email.png\x22\x20alt=\x22\x22></button>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/settings.png\x22\x20alt=\x22\x22></button>\x20<button\x20type=\x22button\x22><img\x20src=\x22img/board.png\x22\x20alt=\x22\x22\x20style=\x22width:18px;\x22></button>\x20</div>\x20</div>\x20</div></div><ul\x20id=\x22initParentNode\x22></ul></li>','span.left_flow','<path\x20id=\x22path','NextStep','\x27\x20&$select=*,StepId/StepName,NextStep/StepName&$expand=StepId,NextStep','<span\x20class=\x22left_flow\x20increase_point\x20','blue','log','</svg>','removeClass','Action','NextStepId','push','7829946NwbjGd','Complete'];a424_0x38d4=function(){return _0x584420;};return a424_0x38d4();}var a424_0x17a158=a424_0x3e60;(function(_0x58e9a4,_0x4cc186){var _0x3cacfa=a424_0x3e60,_0x4ae403=_0x58e9a4();while(!![]){try{var _0x2294c0=-parseInt(_0x3cacfa(0x102))/0x1+-parseInt(_0x3cacfa(0xfc))/0x2+-parseInt(_0x3cacfa(0x130))/0x3*(parseInt(_0x3cacfa(0xed))/0x4)+-parseInt(_0x3cacfa(0xe6))/0x5*(-parseInt(_0x3cacfa(0x131))/0x6)+parseInt(_0x3cacfa(0xf6))/0x7+parseInt(_0x3cacfa(0xe9))/0x8+parseInt(_0x3cacfa(0x123))/0x9;if(_0x2294c0===_0x4cc186)break;else _0x4ae403['push'](_0x4ae403['shift']());}catch(_0x2b120d){_0x4ae403['push'](_0x4ae403['shift']());}}}(a424_0x38d4,0x6422d),$(document)[a424_0x17a158(0xf3)](function(){getSteps();}));var sortedArr=[];function getSteps(){var _0x5b2cbd=a424_0x17a158;$('.workflow')[_0x5b2cbd(0x11f)](_0x5b2cbd(0x12b)),JSRequest['EnsureSetup']();var _0x37e1d2=JSRequest['QueryString'][_0x5b2cbd(0x132)];$[_0x5b2cbd(0x133)]({'url':_spPageContextInfo[_0x5b2cbd(0xf9)]+_0x5b2cbd(0x115)+_0x37e1d2+_0x5b2cbd(0x11a),'type':_0x5b2cbd(0xf7),'async':![],'headers':{'accept':_0x5b2cbd(0x106),'content-type':_0x5b2cbd(0x106)},'success':function(_0xf9a14c){var _0xbcd7d6=_0x5b2cbd,_0x314096=_0xf9a14c['d']['results'],_0x3ab302='',_0x3a2220='',_0x10c2db=0x0,_0x45e21f=_0xbcd7d6(0x134);for(i=0x0;i<_0x314096[_0xbcd7d6(0x100)];i++){var _0x538b39='';if(_0x314096[i][_0xbcd7d6(0xfe)]=='Initiation'&&_0x10c2db==0x0){var _0x538b39=_0xbcd7d6(0xf1)+_0x314096[i][_0xbcd7d6(0x10f)]+_0xbcd7d6(0x127)+_0x314096[i][_0xbcd7d6(0xfe)]+_0xbcd7d6(0x116);$('#InitialNodeChild')['append'](_0x538b39),_0x10c2db++;var _0x5d9fc2=_0x314096[_0xbcd7d6(0xf2)](_0x2bd5ce=>{var _0x5adbe5=_0xbcd7d6;return _0x2bd5ce[_0x5adbe5(0x10f)]==_0x314096[i][_0x5adbe5(0x121)];});$[_0xbcd7d6(0xea)](_0x5d9fc2,function(_0x376fa5,_0x451a98){var _0x5c2b46=_0xbcd7d6;if($('#Parent'+_0x451a98[_0x5c2b46(0x10f)])[_0x5c2b46(0x100)]<0x1){var _0xb4807e=_0x5c2b46(0x128)+_0x451a98[_0x5c2b46(0x10f)]+_0x5c2b46(0x127)+_0x451a98['StepId'][_0x5c2b46(0x139)]+_0x5c2b46(0x129)+_0x451a98[_0x5c2b46(0x10f)]+_0x5c2b46(0xf5);$('#initParentNode')[_0x5c2b46(0x12f)](_0xb4807e);}});}else{if(_0x314096[i]['StepType']==_0xbcd7d6(0xf4)&&_0x314096[i][_0xbcd7d6(0x10f)]==null){var _0x5d9fc2=_0x314096[_0xbcd7d6(0xf2)](_0xaa4f1a=>{var _0x4ce6de=_0xbcd7d6;return _0xaa4f1a['StepIdId']==_0x314096[i][_0x4ce6de(0x121)];});$['each'](_0x5d9fc2,function(_0x93f827,_0x54a261){var _0x124755=_0xbcd7d6,_0x30e4bf=_0x124755(0x128)+_0x54a261[_0x124755(0x10f)]+_0x124755(0x127)+_0x54a261[_0x124755(0x12c)][_0x124755(0x139)]+_0x124755(0x129)+_0x54a261[_0x124755(0x10f)]+_0x124755(0xf5);$(_0x124755(0xe8))[_0x124755(0x12f)](_0x30e4bf);});}else{if(_0x314096[i][_0xbcd7d6(0x121)]!=null){if($(_0xbcd7d6(0xfd)+_0x314096[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x100)]<0x1){var _0x538b39=_0xbcd7d6(0x128)+_0x314096[i][_0xbcd7d6(0x10f)]+_0xbcd7d6(0x127)+_0x314096[i][_0xbcd7d6(0x12c)][_0xbcd7d6(0x139)]+_0xbcd7d6(0x129)+_0x314096[i][_0xbcd7d6(0x10f)]+_0xbcd7d6(0xf5);$(_0xbcd7d6(0xfd)+_0x314096[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0x538b39),$('#Parent'+_0x314096[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x105)](),$('#Parent'+_0x314096[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12d)]();}else{if($(_0xbcd7d6(0xfd)+_0x314096[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x100)]<0x1){var _0x538b39=_0xbcd7d6(0x128)+_0x314096[i][_0xbcd7d6(0x121)]+_0xbcd7d6(0x127)+_0x314096[i][_0xbcd7d6(0x119)][_0xbcd7d6(0x139)]+_0xbcd7d6(0x129)+_0x314096[i][_0xbcd7d6(0x121)]+'\x22></ul></li>';$('#Parent'+_0x314096[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x105)](),$(_0xbcd7d6(0xfd)+_0x314096[i]['StepIdId'])[_0xbcd7d6(0x12f)](_0x538b39),$(_0xbcd7d6(0xfd)+_0x314096[i][_0xbcd7d6(0x121)])['hide']();}else _0x45e21f+=_0xbcd7d6(0x118)+_0x314096[i]['Id']+'\x22\x20d=\x22M224.5\x20204\x20V371\x20H326.5\x22\x20stroke-width=\x221\x22\x20style=\x22fill:none;\x22\x20marker-end=\x22url(#arrow)\x22></path>',sortedArr[_0xbcd7d6(0x122)](_0x314096[i]);}}else{if(_0x314096[i][_0xbcd7d6(0x120)]==_0xbcd7d6(0x124)){var _0x538b39='<li><div\x20class=\x22covernows\x22\x20id=\x22child'+_0x314096[i][_0xbcd7d6(0x10f)]+'\x22>End</a></div></li>';$(_0xbcd7d6(0xfd)+_0x314096[i][_0xbcd7d6(0x10f)])['append'](_0x538b39);if(_0x314096[i][_0xbcd7d6(0x121)]!=null){}}}}}}_0x45e21f+=_0xbcd7d6(0x11e),$('#svgContainer')[_0xbcd7d6(0x12f)](_0x45e21f);for(i=0x0;i<sortedArr[_0xbcd7d6(0x100)];i++){if(sortedArr[i][_0xbcd7d6(0x121)]!=null){sortedArr[i][_0xbcd7d6(0x12a)]!=null&&sortedArr[i][_0xbcd7d6(0x12a)]==_0xbcd7d6(0x136)?($('#path'+sortedArr[i]['Id'])[_0xbcd7d6(0x138)](_0xbcd7d6(0x111),_0xbcd7d6(0xfb)),dicider='red'):($(_0xbcd7d6(0xeb)+sortedArr[i]['Id'])['css'](_0xbcd7d6(0x111),'#397eab'),dicider=_0xbcd7d6(0x11c));var _0x20d8e6=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0xf8)]()['left'],_0x37e02f=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0xf8)]()[_0xbcd7d6(0x10d)],_0x280c1e=$('#child'+sortedArr[i]['NextStepId'])[_0xbcd7d6(0xf8)]()['left'],_0x180d1b=$('#child'+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0xf8)]()[_0xbcd7d6(0x10d)],_0x5c522d='',_0x3210a5='';if(_0x20d8e6<_0x280c1e){if($(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)]('span.left_flow')[_0xbcd7d6(0x100)]==0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113))['length']==0x0)$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)]('<span\x20class=\x22left_flow\x20'+dicider+_0xbcd7d6(0xfa)),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x10a)+dicider+'\x22></span><span\x20class=\x22arrow_right\x22></span>'),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i]['NextStepId'])[_0xbcd7d6(0x114)]('span.right_flow');else{if($('#child'+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)]('span.left_flow')[_0xbcd7d6(0x100)]==0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117))[_0xbcd7d6(0x100)]>0x0)$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x10a)+dicider+_0xbcd7d6(0xfa)),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x11b)+dicider+_0xbcd7d6(0x108)),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0xe5));else{if($('#child'+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)]('span.left_flow')[_0xbcd7d6(0x100)]>0x0&&$(_0xbcd7d6(0xff)+sortedArr[i]['NextStepId'])[_0xbcd7d6(0x114)]('span.right_flow')[_0xbcd7d6(0x100)]==0x0)$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x10a)+dicider+'\x22></span>'),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xe7)+dicider+_0xbcd7d6(0x125)),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])['children'](_0xbcd7d6(0x113)),_0x3210a5=$('#child'+sortedArr[i][_0xbcd7d6(0x121)])['children']('span.left_flow');else $(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117))['length']>0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])['children'](_0xbcd7d6(0x113))[_0xbcd7d6(0x100)]>0x0&&($(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x11b)+dicider+_0xbcd7d6(0xfa)),$('#child'+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xec)+dicider+_0xbcd7d6(0x13b)),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0xe5)),_0x3210a5=$('#child'+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0xe5)));}}}else{if(_0x20d8e6>_0x280c1e){if($(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117))['length']==0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113))[_0xbcd7d6(0x100)]==0x0)$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)]('<span\x20class=\x22right_flow\x20'+dicider+_0xbcd7d6(0xfa)),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)]('<span\x20class=\x22left_flow\x20'+dicider+_0xbcd7d6(0x125)),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113)),_0x3210a5=$('#child'+sortedArr[i]['NextStepId'])['children'](_0xbcd7d6(0x117));else{if($(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117))['length']==0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113))[_0xbcd7d6(0x100)]>0x0)$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xe7)+dicider+_0xbcd7d6(0xfa)),$('#child'+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x10a)+dicider+_0xbcd7d6(0x13a)),_0x5c522d=$('#child'+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i]['NextStepId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113));else{if($(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0x117))[_0xbcd7d6(0x100)]>0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113))[_0xbcd7d6(0x100)]==0x0)$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x10a)+dicider+_0xbcd7d6(0xfa)),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xe7)+dicider+'\x22></span><span\x20class=\x22arrow_left\x22></span>'),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])['children'](_0xbcd7d6(0x113)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])['children'](_0xbcd7d6(0x117));else $(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x114)]('span.left_flow')['length']>0x0&&$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)](_0xbcd7d6(0x113))[_0xbcd7d6(0x100)]>0x0&&($(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xec)+dicider+'\x22></span>'),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)](_0xbcd7d6(0x11b)+dicider+'\x22></span><span\x20class=\x22arrow_left\x20increase_point\x22></span>'),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x114)](_0xbcd7d6(0xe5)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i]['NextStepId'])['children'](_0xbcd7d6(0xe5)));}}}else $('#child'+sortedArr[i]['StepIdId'])[_0xbcd7d6(0x12f)](_0xbcd7d6(0xe7)+dicider+_0xbcd7d6(0xfa)),$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x12f)]('<span\x20class=\x22left_flow\x20'+dicider+'\x22></span><span\x20class=\x22arrow_left\x22></span>'),_0x5c522d=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x10f)])['children'](_0xbcd7d6(0x117)),_0x3210a5=$(_0xbcd7d6(0xff)+sortedArr[i][_0xbcd7d6(0x121)])[_0xbcd7d6(0x114)]('span.left_flow');}connectElements($(_0xbcd7d6(0x135)),$(_0xbcd7d6(0xeb)+sortedArr[i]['Id']),_0x5c522d,_0x3210a5);}else{var _0x538b39=_0xbcd7d6(0x10e)+sortedArr[i][_0xbcd7d6(0x10f)]+'\x22>End</a><ul\x20id=\x22Parent'+sortedArr[i][_0xbcd7d6(0x10f)]+_0xbcd7d6(0xf5);$(_0xbcd7d6(0xfd)+sortedArr[i][_0xbcd7d6(0x10f)])[_0xbcd7d6(0x12f)](_0x538b39),console['log'](sortedArr[i][_0xbcd7d6(0x121)]),console[_0xbcd7d6(0x11d)](_0x538b39);}}$(_0xbcd7d6(0x137))['addClass'](_0xbcd7d6(0x12b));},'error':function(_0x151ab6){var _0x1fbde4=_0x5b2cbd;console[_0x1fbde4(0x11d)](JSON['stringify'](_0x151ab6));}});}function signum(_0x3631bb){return _0x3631bb<0x0?-0x1:0x1;}function absolute(_0x17f3e5){return _0x17f3e5<0x0?-_0x17f3e5:_0x17f3e5;}function a424_0x3e60(_0x24d513,_0x4a5740){var _0x38d4eb=a424_0x38d4();return a424_0x3e60=function(_0x3e601e,_0x1a116b){_0x3e601e=_0x3e601e-0xe5;var _0x25cd4b=_0x38d4eb[_0x3e601e];return _0x25cd4b;},a424_0x3e60(_0x24d513,_0x4a5740);}var endYC=0x37;function drawPath(_0x4db62e,_0x1605b8,_0x7cfecd,_0x4b8472,_0x53531b,_0x29e33d){var _0x6f6027=a424_0x17a158,_0x4c0607=parseFloat(_0x1605b8[_0x6f6027(0xee)](_0x6f6027(0x101)));if(_0x4db62e[_0x6f6027(0xee)](_0x6f6027(0x112))<_0x29e33d)_0x4db62e[_0x6f6027(0xee)]('height',_0x29e33d);if(_0x4db62e[_0x6f6027(0xee)]('width')<_0x7cfecd+_0x4c0607)_0x4db62e['attr'](_0x6f6027(0x103),_0x7cfecd+_0x4c0607);if(_0x4db62e[_0x6f6027(0xee)](_0x6f6027(0x103))<_0x53531b+_0x4c0607)_0x4db62e[_0x6f6027(0xee)]('width',_0x53531b+_0x4c0607);var _0x33c132=(_0x53531b-_0x7cfecd)*0.15,_0x301070=(_0x29e33d-_0x4b8472)*0.3,_0x1e8311=_0x301070<absolute(_0x33c132)?_0x301070:absolute(_0x33c132),_0x4eb516=0x0,_0x25836b=0x1;_0x7cfecd>_0x53531b&&(_0x4eb516=0x1,_0x25836b=0x0);_0x1605b8[_0x6f6027(0xee)]('d','M'+_0x7cfecd+'\x20'+_0x4b8472+'\x20V'+(_0x29e33d-endYC)+'\x20H'+(_0x53531b+0x14)+'\x20V'+_0x29e33d);if(endYC==0x37)endYC=endYC+0xf;else endYC>0x37&&(endYC=endYC-0xf);}function connectElements(_0x4186ca,_0x61c8b7,_0x182d68,_0x5050b9){var _0x12073e=a424_0x17a158,_0x2469e9=$('#svgContainer');if(_0x182d68[_0x12073e(0xf8)]()[_0x12073e(0x10d)]>_0x5050b9[_0x12073e(0xf8)]()[_0x12073e(0x10d)]){var _0x236d7b=_0x182d68;_0x182d68=_0x5050b9,_0x5050b9=_0x236d7b;}var _0x3f0cc1=_0x2469e9[_0x12073e(0xf8)]()[_0x12073e(0x10d)],_0x200ea5=_0x2469e9['offset']()[_0x12073e(0x126)],_0x119517=_0x182d68[_0x12073e(0xf8)](),_0x185bb0=_0x5050b9['offset'](),_0x52b40d=_0x119517[_0x12073e(0x126)]+_0x182d68[_0x12073e(0xef)]()-_0x200ea5,_0x5a8cc5=_0x119517[_0x12073e(0x10d)]+_0x182d68[_0x12073e(0x107)]()-_0x3f0cc1,_0x4ba1b5=_0x185bb0[_0x12073e(0x126)]+(_0x5050b9[_0x12073e(0xef)]()-0x14)-_0x200ea5,_0x1bdf1d=_0x185bb0['top']+_0x182d68[_0x12073e(0x107)]()-_0x3f0cc1;drawPath(_0x4186ca,_0x61c8b7,_0x52b40d,_0x5a8cc5,_0x4ba1b5,_0x1bdf1d);}$(function(){var _0x2f9c73=a424_0x17a158;$('.clickevent')['on'](_0x2f9c73(0x110),function(){var _0x1e4744=_0x2f9c73;$(this)[_0x1e4744(0xf0)](_0x1e4744(0x10b))[_0x1e4744(0x12e)](_0x1e4744(0x104));}),$('.drgabox')[_0x2f9c73(0x10c)]({'cursor':_0x2f9c73(0x109)});});
+JSRequest.EnsureSetup();
+var CurrTenplateID = Number(JSRequest.QueryString['TID']);
+
+$(document).ready(function() {
+	getPersonCol(CurrTenplateID);GetAllUser();getSteps();
+	 	
+});
+var stepIDForCondition='';
+var processStepType='';
+var sortedArr=[];
+function getSteps(){  
+$(".workflow").removeClass("hidding");
+$("#initParentNode").html('');
+$("#svgContainer").html('');
+sortedArr=[];
+//var tempId=436;		
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl +"/_api/web/lists/getbytitle('ApprovalStepsConditions')/items?$filter=TemplateID/ID eq '"+CurrTenplateID +"' &$select=*,StepId/StepName,NextStep/StepName&$expand=StepId,NextStep",
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results;
+        	var option ='';
+        	var className='';
+        	var initCount=0;
+        	var addPath='<svg id="svg1"  width="1920" height="1000">';
+        	
+                for (i = 0; i < choiceArray.length; i++) {
+                var html='';
+                	if(choiceArray[i].StepType=='Initiation' ){
+                	if($("#Parent"+choiceArray[i].NextStepId).length<1){
+	               		var html='<li class=""><div class="covernows" id="child'+choiceArray[i].NextStepId+'"><div class="innercontainer"> <div class="top_area"> <h5>'+choiceArray[i].NextStep.StepName+'</h5> <div class="dropdown"><input type="hidden" name="stepId" value="'+choiceArray[i].NextStepId+'"> <span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png" style="width:17px;"></span> <div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New Steps</a><a href="#Connection_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png"> Connections</a><a href="#task_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png"> Tasks</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png"> Planner Task</a><a href="#mail_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png"> Email</a><a href="#Next_Process" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png"> Next Process</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png"> Edit</a></div> </div> </div> <div class="select_userbox'+choiceArray[i].Id+'"><h5 id="showInitiator"></h5>  <div class="menus"> <button type="button"><img src="img/email.png" alt=""></button> <button type="button"><img src="img/settings.png" alt=""></button> <button type="button"><img src="img/board.png" alt="" style="width:18px;"></button> </div> </div> </div></div><ul id="Parent'+choiceArray[i].NextStepId+'"></ul></li>'
+                		$("#initParentNode").append(html);
+                		$("#Parent"+choiceArray[i].NextStepId).hide();
+                		getStepID(choiceArray[i].NextStepId,choiceArray[i].Id,choiceArray[i].TemplateIDId);
+                		initCount++;
+                	}
+                		var getStep = choiceArray.filter(val => {
+						    return val.StepIdId==choiceArray[i].NextStepId;
+						});
+						
+							$.each(getStep, function (index, result) {
+								if($("#Parent"+result.StepIdId).length<1){
+									var html='<li style="padding: 20px 25px 0 25px;"><div class="covernows" id="child'+result.StepIdId+'"><div class="innercontainer"> <div class="top_area"> <h5>'+result.StepId.StepName+'</h5> <div class="dropdown"><input type="hidden" name="stepId" value="'+result.StepIdId+'"> <span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png" style="width:17px;"></span> <div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New Steps</a><a href="#Connection_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png"> Connections</a><a href="#task_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png"> Tasks</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png"> Planner Task</a><a href="#mail_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png"> Email</a><a href="#Next_Process" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png"> Next Process</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png"> Edit</a></div> </div> </div> <div class="select_userbox'+result.Id+'">  <div class="menus"> <button type="button"><img src="img/email.png" alt=""></button> <button type="button"><img src="img/settings.png" alt=""></button> <button type="button"><img src="img/board.png" alt="" style="width:18px;"></button> </div> </div> </div></div><ul id="Parent'+result.StepIdId+'"></ul></li>'
+		                			$("#initParentNode").show();
+		                			$("#initParentNode").append(html);
+                					getStepID(result.StepIdId,result.Id,result.TemplateIDId)
+	                			}
+							});
+                	}else if(choiceArray[i].StepType=='Initiation' && choiceArray[i].StepIdId==null){
+                		var getStep = choiceArray.filter(val => {
+						    return val.StepIdId==choiceArray[i].NextStepId;
+						});
+						
+						$.each(getStep, function (index, result) {
+							var html='<li ><div class="covernows" id="child'+result.StepIdId+'"><div class="innercontainer"> <div class="top_area"> <h5>'+result.StepId.StepName+'</h5> <div class="dropdown"><input type="hidden" name="stepId" value="'+result.StepIdId+'"> <span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png" style="width:17px;"></span> <div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New Steps</a><a href="#Connection_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png"> Connections</a><a href="#task_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png"> Tasks</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png"> Planner Task</a><a href="#mail_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png"> Email</a><a href="#Next_Process" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png"> Next Process</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png"> Edit</a></div> </div> </div> <div class="select_userbox'+result.Id+'">  <div class="menus"> <button type="button"><img src="img/email.png" alt=""></button> <button type="button"><img src="img/settings.png" alt=""></button> <button type="button"><img src="img/board.png" alt="" style="width:18px;"></button> </div> </div> </div></div><ul id="Parent'+result.StepIdId+'"></ul></li>'
+                			$("#initParentNode").append(html);
+                			getStepID(result.StepIdId,result.Id,result.TemplateIDId)
+						});//getStepID(choiceArray[i].StepIdId,choiceArray[i].TemplateIDId)
+
+                	}
+
+                	else if(choiceArray[i].NextStepId!=null){
+                		if($("#Parent"+choiceArray[i].StepIdId).length<1){
+	                		var html='<li ><div class="covernows" id="child'+choiceArray[i].StepIdId+'"><div class="innercontainer"> <div class="top_area"> <h5>'+choiceArray[i].StepId.StepName+'</h5> <div class="dropdown"><input type="hidden" name="stepId" value="'+choiceArray[i].StepIdId+'"> <span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png" style="width:17px;"></span> <div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New Steps</a><a href="#Connection_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png"> Connections</a><a href="#task_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png"> Tasks</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png"> Planner Task</a><a href="#mail_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png"> Email</a><a href="#Next_Process" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png"> Next Process</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png"> Edit</a></div> </div> </div> <div class="select_userbox'+choiceArray[i].Id+'">  <div class="menus"> <button type="button"><img src="img/email.png" alt=""></button> <button type="button"><img src="img/settings.png" alt=""></button> <button type="button"><img src="img/board.png" alt="" style="width:18px;"></button> </div> </div> </div></div><ul id="Parent'+choiceArray[i].StepIdId+'"></ul></li>'
+	                		//$("#Parent"+choiceArray[i].PreviousStepId).show();
+	                		$("#Parent"+choiceArray[i].NextStepId).append(html);
+	                		$("#Parent"+choiceArray[i].NextStepId).show();getStepID(choiceArray[i].StepIdId,choiceArray[i].Id,choiceArray[i].TemplateIDId)
+	                		$("#Parent"+choiceArray[i].StepIdId).hide();
+
+                		}else if($("#Parent"+choiceArray[i].NextStepId).length<1){
+                		var html='<li ><div class="covernows" id="child'+choiceArray[i].NextStepId+'"><div class="innercontainer"> <div class="top_area"> <h5>'+choiceArray[i].NextStep.StepName+'</h5> <div class="dropdown"><input type="hidden" name="stepId" value="'+choiceArray[i].NextStepId+'"> <span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png" style="width:17px;"></span> <div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New Steps</a><a href="#Connection_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png"> Connections</a><a href="#task_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png"> Tasks</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png"> Planner Task</a><a href="#mail_modl" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png"> Email</a><a href="#Next_Process" data-toggle="modal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png"> Next Process</a><a href="#"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png"> Edit</a></div> </div> </div> <div class="select_userbox'+choiceArray[i].Id+'">  <div class="menus"> <button type="button"><img src="img/email.png" alt=""></button> <button type="button"><img src="img/settings.png" alt=""></button> <button type="button"><img src="img/board.png" alt="" style="width:18px;"></button> </div> </div> </div></div><ul id="Parent'+choiceArray[i].NextStepId+'"></ul></li>'
+	                		$("#Parent"+choiceArray[i].StepIdId).show();
+	                		$("#Parent"+choiceArray[i].StepIdId).append(html);
+	                		$("#Parent"+choiceArray[i].NextStepId).hide();getStepID(choiceArray[i].NextStepId,choiceArray[i].Id,choiceArray[i].TemplateIDId)
+
+                		}else{
+                			//if(choiceArray[i].TriggerOn!=null && choiceArray[i].TriggerOn=="On Reject"){
+                			//	addPath+='<path id="path'+choiceArray[i].Id+'" d="M224.5 204 V371 H326.5" stroke-width="1" style="fill:none;stroke: #ff0000;" marker-end="url(#arrow)"></path>'
+
+                			//}else{
+                				addPath+='<path id="path'+choiceArray[i].Id+'" d="M224.5 204 V371 H326.5" stroke-width="1" style="fill:none;" marker-end="url(#arrow)"></path>'
+		                	//}
+		                	sortedArr.push(choiceArray[i]);
+                		}
+						
+					
+                	}else if(choiceArray[i].Action=='Complete' ){
+                	//var html='<li><div class="covernows" id="child'+choiceArray[i].StepIdId+'">End</a></div></li>'
+                	//	$("#Parent"+choiceArray[i].StepIdId).append(html);
+
+	                	if(choiceArray[i].NextStepId!=null){
+	                		
+		                }
+
+                  }
+                  	
+                }  
+                addPath+='</svg>';
+                $("#svgContainer").html(addPath);
+                    //if($("ul").has("li").length<= 0) {
+					//	  $("ul").hide();
+					//}else{$("ul").show();}
+					drawFlowPath();
+					
+                    $(".workflow").addClass("hidding");         			
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+function drawFlowPath(){
+for (l = 0; l < sortedArr.length; l++) {
+                	if(sortedArr[l].NextStepId!=null){         		 
+                		if(sortedArr[l].TriggerOn!=null && sortedArr[l].TriggerOn=="On Reject"){
+								$("#path"+sortedArr[l].Id).css("stroke","#ff0000")
+								dicider="red";
+                		}else{
+		                		$("#path"+sortedArr[l].Id).css("stroke","#397eab")
+		                		dicider="blue";
+		                }
+                		var chLeft=$("#child"+sortedArr[l].StepIdId).offset().left;
+                		var chTop=$("#child"+sortedArr[l].StepIdId).offset().top;
+                		var parLeft=$("#child"+sortedArr[l].NextStepId).offset().left;
+                		var parTop=$("#child"+sortedArr[l].NextStepId).offset().top;var chID='';  var parID='';
+                		var leftStep=$("#child" + sortedArr[l].StepIdId).children('span.left_flow').length; 
+                		var	leftNext=$("#child" + sortedArr[l].NextStepId).children('span.right_flow').length;
+                		var rightStep=$("#child" + sortedArr[l].StepIdId).children('span.left_flow').length; 
+                		var rightNext=$("#child" + sortedArr[l].NextStepId).children('span.right_flow').length;       	
+       	
+						if (chLeft>parLeft) {
+							if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length == 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length == 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="left_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="right_flow '+dicider+'"></span><span class="arrow_right"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.left_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.right_flow');
+						
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length == 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length > 0) {
+								
+								
+						
+								$("#child" + sortedArr[l].StepIdId).append('<span class="right_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="left_flow increase_point '+dicider+'"></span><span class="arrow_left increase_point"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.right_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.increase_point');
+						
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length > 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length == 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="right_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="left_flow '+dicider+'"></span><span class="arrow_left"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.right_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.left_flow');
+							
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length > 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length > 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="left_flow increase_point '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="right_flow increase_point '+dicider+'"></span><span class="arrow_right increase_point"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.increase_point');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.increase_point');
+							}
+						}else if (chLeft< parLeft) {
+							if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length == 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length == 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="right_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="left_flow '+dicider+'"></span><span class="arrow_left"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.right_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.left_flow');
+						
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length == 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length > 0) {
+								
+								
+						
+								$("#child" + sortedArr[l].StepIdId).append('<span class="left_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="right_flow '+dicider+'"></span><span class="arrow_right"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.left_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.right_flow');
+						
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length > 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length == 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="right_flow '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="left_flow '+dicider+'"></span><span class="arrow_left"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.right_flow');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.left_flow');
+							
+							}else if ($("#child" + sortedArr[l].StepIdId).children('span.left_flow').length > 0 && $("#child" + sortedArr[l].NextStepId).children('span.right_flow').length > 0) {
+								
+								$("#child" + sortedArr[l].StepIdId).append('<span class="right_flow increase_point '+dicider+'"></span>');
+								$("#child" + sortedArr[l].NextStepId).append('<span class="left_flow increase_point '+dicider+'"></span><span class="arrow_left increase_point"></span>');
+								chID = $("#child" + sortedArr[l].StepIdId).children('span.increase_point');
+								parID = $("#child" + sortedArr[l].NextStepId).children('span.increase_point');
+							}
+						}else{
+							$("#child"+sortedArr[l].StepIdId).append('<span class="left_flow '+dicider+'"></span>');
+                			$("#child"+sortedArr[l].NextStepId).append('<span class="left_flow '+dicider+'"></span><span class="arrow_left"></span>');
+                			chID=$("#child"+sortedArr[l].StepIdId).children('span.left_flow');
+                			parID=$("#child"+sortedArr[l].NextStepId).children('span.left_flow'); 
+						}
+							console.log($("#child"+sortedArr[l].NextStepId).offset());
+							console.log($("#child"+sortedArr[l].NextStepId).offset().left - $(".workflow").offset().left);
+
+	                	 connectElements($("#svg1"), $("#path"+sortedArr[l].Id),chID, parID);
+	                	 
+                	}else{
+                		var html='<li><a href="#" id="child'+sortedArr[l].StepIdId+'">End</a><ul id="Parent'+sortedArr[l].StepIdId+'"></ul></li>'
+                		$("#Parent"+sortedArr[l].StepIdId).append(html);
+                		//console.log(sortedArr[l].NextStepId);console.log(html);
+
+                	}
+                	if(l==sortedArr.length-1){
+                		//	$(".covernows").css("position","relative");
+                	}
+				}
+}
+
+function connectElements(svg, path, start, end) {
+    var svgContainer= $("#svgContainer");
+    var startElem=start;
+    var endElem=end;
+    console.log( start.offset(), startElem.offset());
+
+    // if first element is lower than the second, swap!
+    if(startElem.offset().top > endElem.offset().top){
+        var temp = startElem;
+        startElem = endElem;
+        endElem = temp;
+    }
+
+    // get (top, left) corner coordinates of the svg container   
+    var svgTop  = svgContainer.offset().top;
+    var svgLeft = svgContainer.offset().left;
+
+    // get (top, left) coordinates for the two elements
+    var startCoord = startElem.offset();
+    var endCoord   = endElem.offset();
+    console.log( startCoord , endCoord   );
+
+    // calculate path's start (x,y)  coords
+    // we want the x coordinate to visually result in the element's mid point
+    var startX = startCoord.left + (startElem.outerWidth()) - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+    var startY = startCoord.top  + (startElem.outerHeight()) - svgTop;        // y = top offset + height - svg's top offset
+
+        // calculate path's end (x,y) coords
+    var endX = endCoord.left + (endElem.outerWidth() - 20) - svgLeft;
+    var endY = endCoord.top  + (startElem.outerHeight()) - svgTop;
+    
+   /*   var startX = startCoord.left + (startElem.outerWidth() -120) - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+    var startY = startCoord.top  + (startElem.outerHeight() -35) - svgTop;        // y = top offset + height - svg's top offset
+
+        // calculate path's end (x,y) coords
+    var endX = endCoord.left + (endElem.outerWidth()-120) - svgLeft;
+    var endY = endCoord.top  + (startElem.outerHeight() -35) - svgTop;*/
+
+    // call function for drawing the path
+    drawPath(svg, path, startX, startY, endX, endY);
+    console.log(startX, startY, endX, endY);
+
+}
+
+//helper functions, it turned out chrome doesn't support Math.sgn() 
+var endYC =65;
+function drawPath(svg, path, startX, startY, endX, endY) {
+    // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
+    var stroke =  parseFloat(path.attr("stroke-width"));
+    // check if the svg is big enough to draw the path, if not, set heigh/width
+    if (svg.attr("height") <  endY)                 svg.attr("height", endY);
+    if (svg.attr("width" ) < (startX + stroke) )    svg.attr("width", (startX + stroke));
+    if (svg.attr("width" ) < (endX   + stroke) )    svg.attr("width", (endX   + stroke));
+
+    var deltaX = (endX - startX) * 0.15;
+    var deltaY = (endY - startY) * 0.3;
+    // for further calculations which ever is the shortest distance
+    var delta  =  deltaY < absolute(deltaX) ? deltaY : absolute(deltaX);
+
+    // set sweep-flag (counter/clock-wise)
+    // if start element is closer to the left edge,
+    // draw the first arc counter-clockwise, and the second one clock-wise
+    var arc1 = 0; var arc2 = 1;
+    if (startX > endX) {
+        arc1 = 1;
+        arc2 = 0;
+    }
+    // draw tha pipe-like path
+    // 1. move a bit down, 2. arch,  3. move a bit to the right, 4.arch, 5. move down to the end
+   
+    
+  path.attr("d",  "M"  + startX + " " + startY + " V" + (endY-endYC)+ " H" + (endX+20)+ " V" + (endY))
+ 
+         /*             path.attr("d",  "M"  + startX + " " + startY +
+                    " H"+(startX-55) +" V" + (endY-1)+
+                    " H" + (endX+20))*/
+                   if(endYC ==65){endYC=endYC+15;}else if(endYC >65){endYC=endYC-15;}
+                    
+}
+function signum(x) {
+    return (x < 0) ? -1 : 1;
+}
+function absolute(x) {
+    return (x < 0) ? -x : x;
+}
+
+$(function(){
+
+    $('.new_eventclick').on('click', function(){
+        //$(this).next('.optionbx').toggleClass('active');
+        if($(this).siblings("input[name='stepId']").val()=='null' || $(this).siblings("input[name='stepId']").val()==''){
+        	stepIDForCondition=null;
+        	processStepType="Initiation";
+        	$('#ddlTriggerOn option').removeAttr('selected');
+        	$('#ddlTriggerOn option[value="Approve or Submit"]').attr("selected","selected");
+        	$("#ddlTriggerOn").prop('disabled', false);
+        }else{
+        	stepIDForCondition=Number($(this).siblings("input[name='stepId']").val());
+        	processStepType="Process Steps";
+        	var action=$("#subtitle"+stepIDForCondition).text();
+        	$('#ddlTriggerOn option').removeAttr('selected');
+        	$("#ddlTriggerOn").prop('disabled', true);
+        	if(action=="Edit & Approve" || action=="Review & Sign" || action=="Edit & Sign"){
+        		$('#ddlTriggerOn option[value="Approve or Submit"]').attr("selected","selected");        		
+        	}else{
+        		$('#ddlTriggerOn option[value="On Reject"]').attr("selected","selected");
+        	}
+        }
+    })
+
+    $('.drgabox').draggable({
+        cursor:'move'
+    });
+});
+
+var ApproerSteps = [];
+function getStepID(stpID,stepIdToBind,tempID)
+{
+	//CurrTenplateID = stpID;
+
+	
+	PrTableColumnID=[];
+	InitiatorList=[];
+
+	SavedStpApprovers = [];
+	
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items?$select=*,GroupName/Id,GroupName/Title,Approvers/Id,Approvers/Title,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID,Approvers,GroupName&$filter=ID eq '" + stpID+ "'&$orderby= Sequence_No asc";   
+    $.ajax({  
+    	url: siteURL,
+        headers: {	Accept: "application/json;odata=verbose"  },  
+        async: false,  
+        success: function(data)
+        {  
+        
+        	var items; 
+            var results;  
+            stepitem = data.d.results;        
+            ApproerSteps = stepitem;
+         	//  getGroupNames();
+            // getPersonCol(tempID);            
+            // GetTempDetails(tempID);
+            if(stepitem.length > 0)
+            {            
+             	ViewS(stepitem,stepIdToBind);
+             	SavedstpCount = stepitem.length;
+            } 
+            			
+       	},  
+        error: function(data) 
+        {  
+        	console.log("An error occurred. Please try again.");  
+        }  
+    });
+}
+	
+function ViewS(ApproerSteps,stepIdToBind){
+var StepDiv = '';
+$('.stepbox').empty();
+StpApprovers = [];
+
+for(k=0;k<ApproerSteps.length;k++){
+var m=k+1;var actionReq='';
+if(ApproerSteps[k].ActionRequired=="Edit Data"){actionReq="Edit & Approve";}else{actionReq=ApproerSteps[k].ActionRequired;}
+ StepDiv +=	'<h5 class="subtitle" id="subtitle'+ApproerSteps[k].Id+'">'+actionReq+'</h5>'
+ StepDiv +=	'<div class="row">';
+if(ApproerSteps[k].ApproverType == "Role Based"  || ApproerSteps[k].ApproverType == 'Role' ){
+	if(ApproerSteps[k].ApproversId != null ){
+	  var Approvers = ApproerSteps[k].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-12 col-sm-6 col-xs-12 user_cover"><div class="user_img">'
+ StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="user_detail">'
+ StepDiv +=	'<h4>'+ApproerSteps[k].ApproverRole+'</h4>'
+ StepDiv +=	'</div></div>'
+}
+else if(ApproerSteps[k].ApproverType == "Group"){
+	if(ApproerSteps[k].ApproversId != null ){
+	  var Approvers = ApproerSteps[k].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-12 col-sm-6 col-xs-12 user_cover"><div class="user_img">'
+ StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="user_detail">'
+ StepDiv +=	'<h4>'+ApproerSteps[k].GroupName.Title+'</h4>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[k].ApproverType == "Field"){
+			var result = arrPerson.filter(obj => {
+				return obj.ColumnName === ApproerSteps[k].ColumnName;
+			});console.log(result);
+	if(ApproerSteps[k].ApproversId != null ){
+	  var Approvers = ApproerSteps[k].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-12 col-sm-6 col-xs-12 user_cover"><div class="user_img">'
+ StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="user_detail">'
+ StepDiv +=	'<h4>Column Value of '+result[0].ColumnTitle+'</h4>'
+ StepDiv +=	'</div></div>'
+}else if(ApproerSteps[k].ApproverType == "Runtime"){
+	if(ApproerSteps[k].ApproversId != null ){
+	  var Approvers = ApproerSteps[k].ApproversId.results;
+//	  StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+	}
+ StepDiv +=	'<div class="flexitem col-md-12 col-sm-6 col-xs-12 user_cover"><div class="user_img">'
+ StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
+ StepDiv +=	'</div>'
+ StepDiv +=	'<div class="user_detail">'
+ StepDiv +=	'<h4>'+ApproerSteps[k].ApproverDecidingStep+'</h4>'
+ StepDiv +=	'</div></div>'
+}
+
+else{
+if(ApproerSteps[k].ApproversId != null ){
+	 var Approvers = ApproerSteps[k].ApproversId.results;
+	//    StpApprovers.push({'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers});
+     }
+   if(Approvers.length>=2){StepDiv +='<div class="col-md-12"> <div class="user_cover">'}
+   for(j=0;j<Approvers.length;j++){
+   	var arrSubApprover = AllEmployee.filter(function (filterData) {
+	     return filterData.UserId == Approvers[j];
+	 });
+	 
+	var Authorattachment = '';
+	if(Approvers.length<=2 && arrSubApprover.length>0)
+	{
+		Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + arrSubApprover[0].EMail;
+		StepDiv +='<div class="col-md-6"> <div class="user_cover"> <div class="user_img"> <img title="' + arrSubApprover[0].LoginName + '" src="' + Authorattachment + '" alt="" data-themekey="#"> </div> <div class="user_detail"> <h6>' + arrSubApprover[0].LoginName + '</h6> <a href="#">' + arrSubApprover[0].EMail + '</a> </div> </div> </div>';
+	}else if(Approvers.length>2 && arrSubApprover.length>0)
+	{
+		Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + arrSubApprover[0].EMail;
+		StepDiv +='<div class="user_img"> <img title="' + arrSubApprover[0].LoginName + '" src="' + Authorattachment + '" alt="" data-themekey="#"> </div>';
+	}
+	
+    
+   }if(Approvers.length>=2){StepDiv +='</div> </div>'}
+}
+StepDiv +=	 '<div class="menus"><button type="button"><img src="img/email.png" alt=""></button><button type="button"><img src="img/settings.png" alt=""></button><button type="button"><img src="img/board.png" alt="" style="width:18px;"></button></div></div>';//return false;
+}
+$(".select_userbox"+stepIdToBind).html(StepDiv);
+}
+

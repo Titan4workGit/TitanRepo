@@ -1,3 +1,23 @@
+$( document ).ready(function() {
+	$("#btnAddCon").click(function(){
+		var triggerOn=$('#ddlTriggerOnConn').val();
+        var condition=$('#chbConditionConn').prop('checked');;
+       	var conditionScript=$('#txtConditionScriptConn').val();
+       	var nextStepId=$('#ddlStepNameConn :selected').val();
+       	var item={'__metadata': { type: 'SP.Data.ApprovalStepsConditionsListItem'},
+        	'Title':"Workflow Condition",
+        	'TriggerOn':triggerOn,
+        	'ConditionApplied':condition,
+       		'ConditionScripts':conditionScript,
+       		'NextStepId':nextStepId,     	
+        	'TemplateIDId':	CurrTenplateID,
+        	'StepIdId':stepIDForCondition,
+        	'StepType':processStepType,        				
+        };
+        setStepsConditions(item)
+	});
+});
+
 $(document).ready(function () { 	
     $('.PartialTableChkbox').on('click',function(){
         if($('.PartialTableChkbox:checked').length == $('.PartialTableChkbox').length){
@@ -69,13 +89,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		var rdovalue=$("input[name='optradio']:checked").val();
 		var ApprType =	$("input[type='radio'][name=optionls]:checked").val();
-		var stepName=$("#txtStepName").val();
-		let result = ApproerSteps.filter(obj => {
-			if(obj.StepName!=null){
-				return obj.StepName.toLowerCase()=== stepName.toLowerCase();
-			}
-		})		
-      	if(result.length>0){alert("Duplicate step name!");return false;}	
+			
 		if($("#txtStepName").val()==''){alert("Kindly enter the StepName.");return false;}
 		if(rdovalue=='Role'){
 			if($("#ddlroles").prop('selectedIndex')==0){alert("Please select role.");return false;}
@@ -111,9 +125,7 @@ $(document).ready(function () {
 	        $("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
 	    		yourArray.push($(this).val());
 			});
-			 $("select[name='tblColSetFieldSteps']").each(function(){
-	    		yourArray.push($(this).val());
-			});
+			
 			if($("#ActionReq").val() == 'Review Only')
 			{
 				//ValidationStep=true;
@@ -292,9 +304,7 @@ function AddStep()
 		    yourArray.push({"tblId": $(this).val(), "tblEditScope": "","tblColIds": ""});
 		});
 		$("select[name='tblColSetFieldSteps']").each(function(){
-			if($(this).prop('selectedIndex')>0){
-				yourArray.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
-			}
+			yourArray.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
 		});
 		if(yourArray.length>0||yourArray.length==0)
 		{
@@ -822,9 +832,7 @@ function SaveEditStepInList(StpName,role,StepApprver,GroupName,signPosition,Acti
 			    SelectedNewColumn.push({"tblId": $(this).val(), "tblEditScope": "","tblColIds": ""});
 			});
 			$("select[name='tblColSetFieldSteps']").each(function(){
-				if($(this).prop('selectedIndex')>0){
-					SelectedNewColumn.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
-				}
+				SelectedNewColumn.push({"tblId": $(this).attr('id'), "tblEditScope": $(this).val(),"tblColIds": $(this).siblings(0).val()});
 			});
         	var EditPrTableColumnID=[];
         	EditPrTableColumnID.push({'TemplateID':CurrTenplateID,'EditScope':$("#ActionReq").val(),'StName': $("#txtStepName").val(),'StepType':'Process Steps', 'ColumnNo':SelectedNewColumn})
@@ -1081,15 +1089,14 @@ function getTempID(TempID,Type)
             getGroupNames();
             getPersonCol(TempID);
             
-            GetTempDetails(TempID);
+           // GetTempDetails(TempID);
             if(items.length > 0)
             {            
-             	ViewStepInTemp(items);
+             	//ViewStepInTemp(items);
              	SavedstpCount = items.length;
             } 
             for(i=0;i<ApproerSteps.length;i++)
             {
-            	var filterRestrict = ApproerSteps[i].FilterRestricted ? ApproerSteps[i].FilterRestricted : false;
             	if(ApproerSteps[i].ActionRequired=="Edit & Sign" || ApproerSteps[i].ActionRequired=="Review & Sign"){
             		   	//	$(".stepsOfProc").css("visibility", "hidden");
             	}else{
@@ -1097,23 +1104,23 @@ function getTempID(TempID,Type)
             	}
 				if(ApproerSteps[i].ApproverType == "Role Based" || ApproerSteps[i].ApproverType == "Role")
 				{	
-				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep, 'FilterRestricted': filterRestrict });	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
 			  	}else if(ApproerSteps[i].ApproverType == "Group")
 				{	
-				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep,'FilterRestricted': filterRestrict });	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
 			  	}else if(ApproerSteps[i].ApproverType == "Field")
 				{	
-				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep,'FilterRestricted': filterRestrict });	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
 			  	}else if(ApproerSteps[i].ApproverType == "Runtime")
 				{	
-				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep, 'FilterRestricted': filterRestrict });	
+				 	SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': '', 'StUser': '' , 'UsrID': '', 'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':ApproerSteps[i].GroupName.Id,'sNo':ApproerSteps[i].Sequence_No,'ColName':ApproerSteps[i].ColumnName,'AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});	
 			  	}
 			  	else
 			  	{
 					if(ApproerSteps[i].ApproversId != null )
 					{
 				 		var Approvers = ApproerSteps[i].ApproversId.results;
-				 		SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers,'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep, 'FilterRestricted': filterRestrict });
+				 		SavedStpApprovers.push({'FooterSign':ApproerSteps[i].PageFooterSign,'Stakeholder':ApproerSteps[i].ParallelStakeholder,'ActionReq':ApproerSteps[i].ActionRequired,'StName': ApproerSteps[i].StepName, 'Type': ApproerSteps[i].ApproverType, 'StRole': ApproerSteps[i].ApproverRole, 'StUser': Approvers , 'UsrID': Approvers,'Id':ApproerSteps[i].ID,'SignPosition':ApproerSteps[i].SignaturePosition,'GroupName':'','sNo':ApproerSteps[i].Sequence_No,'ColName':'','AskApprover':ApproerSteps[i].AskApprover,'ApproverForStep':ApproerSteps[i].ApproverForStep,'ApproverDecidingStep':ApproerSteps[i].ApproverDecidingStep});
 			     	}				
 			  	}
 			}			
@@ -1230,76 +1237,6 @@ StepDiv +=	 '</div></li>'
 $('.stepbox').append(StepDiv);
 }
 
-function ViewStep(){
-var StepDiv = '';
-$('#stepboxView').empty();
-//SavedStpApprovers = [];
-for(i=0;i<ApproerSteps.length;i++){
- var m=i+1;
- StepDiv += '<li id="'+ApproerSteps[i].Id+'"><div class="topsec">'
- StepDiv +=	'<h3>'+ApproerSteps[i].StepName+'</h3>' 
- StepDiv += '</div>'
- StepDiv +=	'<div style="clear:both"></div>'
- StepDiv +=	'<span>Action = '+ApproerSteps[i].ActionRequired+'</span>'
- StepDiv +=	'<div class="row">'
-if(ApproerSteps[i].ApproverType == "Role Based"){
-StepDiv +=	'<div class="col-sm-4 flexitem">'	
- StepDiv +=	'<div class="imgsetion">'
- StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
- StepDiv +=	'</div>'
- StepDiv +=	'<div class="imagecontent">'
- StepDiv +=	'<h4>'+ApproerSteps[i].ApproverRole+'</h4>'
- StepDiv +=	'</div></div>' 
-}else if(ApproerSteps[i].ApproverType == "Group"){	
-StepDiv +=	'<div class="col-sm-4 flexitem">'
- StepDiv +=	'<div class="imgsetion">'
- StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
- StepDiv +=	'</div>'
- StepDiv +=	'<div class="imagecontent">'
- StepDiv +=	'<h4>'+ApproerSteps[i].GroupName.Title+'</h4>'
- StepDiv +=	'</div></div>'
-}else if(ApproerSteps[i].ApproverType == "Runtime"){	 
- StepDiv +=	'<span class= "left_mg_pad">Approver Type = Runtime</span>' 
- StepDiv +=	'</div><div class="flexitem step_gap">'
- StepDiv +=	'<div class="col-sm-4 flexitem">'	
- StepDiv +=	'<div class="imgsetion">'
- StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
- StepDiv +=	'</div>' 
- StepDiv +=	'<div class="imagecontent">'
- StepDiv += '<span>Step Name</span><span>Column = ApproverDecidingStep'+ApproerSteps[i].ColumnName+'</span>'
- StepDiv +=	'</div></div>'
-}else if(ApproerSteps[i].ApproverType == "Field"){	 
- StepDiv +=	'<span class ="left_mg_pad">Approver Type = Column Value</span>'
- StepDiv +=	'</div><div class="flexitem step_gap">'
- StepDiv +=	'<div class="col-sm-4 flexitem">'	
- StepDiv +=	'<div class="imgsetion" >'
- StepDiv +=	'<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" data-themekey="#">'
- StepDiv +=	'</div>'
- StepDiv +=	'<div class="imagecontent">'
- var colnm = $('.'+ApproerSteps[i].ColumnName).closest('label').text();
- StepDiv += '<span>'+colnm.trim()+'</span>'
- StepDiv +=	'</div></div>' 
-}
-else{
-	if(ApproerSteps[i].ApproversId != null ){
-		  var Approvers = ApproerSteps[i].ApproversId.results;	 
-	 }	
-   	for(j=0;j<Approvers.length;j++){
-  /* 	var arrSubApprover = AllEmployee.filter(function (filterData) {
-	     return filterData.UserId == Approvers[j];
-	});	*/
-	var QueryCheckActive =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+Approvers[j]+"' and Status eq 'Active'";
-	var arrSubApprover = RequestGetdata(QueryCheckActive);					
-	var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(arrSubApprover[0].Email);
-    StepDiv +=	'<div class="col-sm-4 flexitem">'
-    StepDiv +=	 '<div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="' + arrSubApprover[0].LogonName.Title + '" src="' + Authorattachment + '" alt="" data-themekey="#">';
-    StepDiv +=	 '</div></div><div class="imagecontent"><h4>' + arrSubApprover[0].LogonName.Title + '</h4><a href="#" style="cursor: auto;">'+arrSubApprover[0].Email+'</a></div></div>'; 
-   }
-}
-StepDiv +=	 '</div></li>'
-}
-$('#stepboxView').append(StepDiv);
-}
 
 //Delete list step from sharepoint using API  
 function DeleteEStep(itemID){  
@@ -1532,7 +1469,24 @@ function SetApproversList()
         		    "X-HTTP-Method": "POST" 
         		},
         		success: function (data) 
-        		{
+        		{	
+        			if(data.d!=null){
+        			var triggerOn=$('#ddlTriggerOn').val();
+        			var condition=$('#chbCondition').prop('checked');
+        			var conditionSccript=$('#txtConditionScript').val();
+        				var item={'__metadata': { type: 'SP.Data.ApprovalStepsConditionsListItem'},
+        				'Title':"Workflow Condition",
+        				'TriggerOn':triggerOn,
+        				'ConditionApplied':condition,
+        				'ConditionScripts':conditionSccript,   
+        				'NextStepId':data.d.Id,     	
+        				'TemplateIDId':	CurrTenplateID,
+        				'StepIdId':stepIDForCondition,
+        				'StepType':processStepType,		
+        				};
+
+        				setStepsConditions(item)
+        			}
         			if(data.d.ApproverType=="Runtime"){
         				//ApproverDecStep(StpApprovers[i].ApproverDecStepId,true,data.d.StepName)
         			}
@@ -1565,8 +1519,8 @@ function SetApproversList()
     	}
     	if(sts)
     	{
-    		UpdateApproverStps();getTempID(CurrTenplateID);
-    		alert("Step saved successfully");
+    		UpdateApproverStps();//getTempID(CurrTenplateID);
+    		alert("Approvers saved successfully");
      		$('#adds_stepsection').modal('hide')
     	}
   	}	
@@ -1658,7 +1612,7 @@ function SaveApproverQueue(itemID,SPLCondition,NewSeqNo)
 		 	}
 		 	else if(role == 'Departmental Project Admin')
 		 	{		 
-		 	 	var Dept = getUserDept( _spPageContextInfo.userId);
+		 	 	var Dept = getUserDept();
 		 	 	GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq 'Project'").done(function (USers) {			 
 			 	if(USers.d.results.length > 0)
 			 	{			  	
@@ -1685,7 +1639,7 @@ function SaveApproverQueue(itemID,SPLCondition,NewSeqNo)
 		 	}
 		 	else if(role == 'Head of the Department')
 		 	{
-		 	 	var Dept = getUserDept( _spPageContextInfo.userId);
+		 	 	var Dept = getUserDept();
 		 	 	GetlistData("/_api/web/lists/getbytitle('ProcessApprovers')/items?$select=Department/ID,Department/DepartmentName,WebPartName,Company/ID,Company,Contributors/ID,Contributors/Title&$expand=Company,Contributors,Department&$filter=Company/ID eq '"+companyIdNavigation+"'and Department/DepartmentName eq '"+Dept +"' and WebPartName eq '"+role +"'").done(function (USers) {			 
 			  	 	if(USers.d.results.length > 0)
 			  	 	{
@@ -1833,7 +1787,6 @@ function SaveApproverQueue(itemID,SPLCondition,NewSeqNo)
         AppoverForStep:SavedStpApprovers[i].AppoverForStep,
         ApproverDecidingStep : SavedStpApprovers[i].ApproverDecidingStep,
         StepID : SavedStpApprovers[i].Id.toString(),
-        FilterRestricted : SavedStpApprovers[i].FilterRestricted,
         ApproversId: {
             'results': StpUsers
        	 }                                		                	         
@@ -1917,12 +1870,11 @@ var duplicate_Department = [];
 
 
 var LoggedUserDept = '';
-function getUserDept(user){
+function getUserDept(){
 var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
-var userId = user
     console.log(siteUrl);
     $.ajax({
-        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=Department/Id,Department/DepartmentName&$expand=Department&$filter=LogonName/ID eq '" + userId + "'", 
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=Department/Id,Department/DepartmentName&$expand=Department&$filter=LogonName/ID eq '" + _spPageContextInfo.userId + "'", 
         method: "GET",
         async: false,
         headers: { "Accept": "application/json; odata=verbose" },
@@ -1987,7 +1939,7 @@ success :  function (data)
 		$('.editScope').css("display", "block");
 		//$("input[name=optionls]").prop('checked', false);
 		$("input[name=optionls][value='At Bottom most']").prop('checked', true);
-		$("input[name=optradio][value=Field]").parent().css("display", "initial");
+		//$("input[name=optradio][value=Field]").parent().css("display", "initial");
 		$(".signBox").css("display", "none");
 
 		$("#secActionReq").css("display", "block");
@@ -2442,11 +2394,11 @@ function SetInitiatorList()
 			    });  */
 				//if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}
 				
-				var QueryCheckActive = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=LogonName/Id eq '"+InitiatorList[j]+"' and Status eq 'Active'";
+				var QueryCheckActive = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email eq '"+InitiatorList[j].EntityData.Email+"' and Status eq 'Active'";
 				var arrSubVisaLetters = RequestGetdata(QueryCheckActive);
-				if(arrSubVisaLetters[0].LogonName.Id== InitiatorList[j]){flag=true;}
+				if(arrSubVisaLetters[0].Email == InitiatorList[j].EntityData.Email){flag=true;}
 									
-			    if(arrSubVisaLetters.length==0){userArr.push(arrSubVisaLetters[0].LogonName.Title)}
+			    if(arrSubVisaLetters.length==0){userArr.push(InitiatorList[j].LogonName.Title)}
 		        if(arrSubVisaLetters.length>0){
 		        	StepApprver.push({'Name' : arrSubVisaLetters[0].Email , 'Id': arrSubVisaLetters[0].LogonName.Id})	 
 		        }
@@ -2863,7 +2815,7 @@ function LoadPartialTableSteps(Mode,StepID)
   																"<option value='Add Row'>Add Row</option>"+
   																"<option value='Columns' >Columns</option>"+
 															"</select>";
-															TableHTML = TableHTML + "<button id='Step"+ResultItems[i].Id+"' type='button' class='btn custom-btn new-btnad' style='display:none' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps(this,"+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
+															TableHTML = TableHTML + "<button id='Step"+ResultItems[i].Id+"' type='button' class='btn custom-btn new-btnad' style='display:none' data-toggle='modal' data-target='#editablecolsfild' onclick='LoadPartialtblColSteps("+ResultItems[i].Id+")'><i class='fa fa-ellipsis-h' aria-hidden='true'></i></button></div></td>"
 		           								       	
 	            		        						}
 	            		        						else{
@@ -3016,26 +2968,20 @@ function SetDisplayApprovers(Action)
 
 function SetDisplayPrTable4Approvers(Action)
 {
-	if(Action == 'Edit Data' )
-	{
-		$("#editablefildStepsDIV,.chkAllStack").css("display", "block");
-	}else if(Action == 'Edit Only')
+	if(Action == 'Edit Data' || Action == 'Edit Only')
 	{
 		$("#editablefildStepsDIV").css("display", "block");
-		$(".chkAllStack").css("display", "none");
 	}
 	else if(Action == 'Edit & Sign')
 	{
-		$("#editablefildStepsDIV,.chkAllStack").css("display", "block");
-	}/*else if(Action == 'Review Only')
+		$("#editablefildStepsDIV").css("display", "block");
+	}else if(Action == 'Review Only')
 	{
-		$("#editablefildStepsDIV,.chkAllStack").css("display", "block");
-	}*/
+		$("#editablefildStepsDIV").css("display", "block");
+	}
 	else
 	{
 		$("#editablefildStepsDIV").css("display", "none");
-		$(".chkAllStack").css("display", "block");
-
 	}
 }
 
@@ -3047,19 +2993,13 @@ function SetTableFieldsList()
 	$("input:checkbox[name='PartialTableChkbox']:checked").each(function(){
 		yourArray.push($(this).val());
 	});
-	var drArray=[]
-	$("select[name='tblColSetField']").each(function(){
-		if($(this).prop('selectedIndex')>0){
-			drArray.push($(this).val());
-		}
-	});
 	$("select[name='tblColSetField']").each(function(){
 			//yourArray.push($(this).val());
 			//yourArray.push({"01": $(this).val(), "02": $(this).val()});
 
 		});
 	if(ProcessType="Process"){
-		if(yourArray.length>0 || drArray.length>0)
+		if(yourArray.length>0)
 		{
 			G_TableFieldsList=true;
 			$('#editablefild').modal('hide');
@@ -3079,14 +3019,8 @@ function SetTableFieldsListSteps()
 	$("input:checkbox[name='PartialTableChkboxSteps']:checked").each(function(){
 		yourArray.push($(this).val());
 	});
-	var drArray=[]
-	$("select[name='tblColSetFieldSteps']").each(function(){
-		if($(this).prop('selectedIndex')>0){
-			drArray.push($(this).val());
-		}
-	});
 	if(ProcessType="Process"){
-		if(yourArray.length>0 || drArray.length>0)
+		if(yourArray.length>0)
 		{
 			$('#editablefildSteps').modal('hide');
 		}
@@ -3158,10 +3092,11 @@ $(document).ready(function(){
 			modal.find('.modal-body #editablefildStepsDIV,.colbox,.grpbox,.usrbox,.runbox,#btnEditStep,#PositionOptList').css("display", "none");
 			modal.find('.modal-body .rolbox').css("display", "block");
 			$("input[name=optionls][value='At Bottom most']").prop('checked', true);
+			$("#chbCondition").prop('checked', false);
 			$("#btnAddStep").css("display", "initial");
     		$("#Stepuser").html('');
     		$("input[name=optradio][value=Role]").prop('checked', true);
-    		$("#txtStepName").val('');
+    		$("#txtStepName,#txtConditionScript").val('');
     		$('#chkAllStack').prop('checked',false);
     		initializePeoplePicker('Stepuser', false);	StepCount = 0;	
 		});
@@ -3204,9 +3139,9 @@ $.ajax({
         	var choiceArray = data.d.results;
         	
         	var option = '<option value="Select">--Select--</option>';//"<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
-        	for(i=0;i<choiceArray.length;i++){    console.log(choiceArray[i]);  
-        	arrPerson.push({'ColumnName':choiceArray[i].ColumnName,'ColumnTitle':choiceArray[i].Title});  		
-        		option += "<option value='"+choiceArray[i].ColumnName+"'>"+choiceArray[i].Title+"</option>";         		
+        	for(m=0;m<choiceArray.length;m++){   
+        	arrPerson.push({'ColumnName':choiceArray[m].ColumnName,'ColumnTitle':choiceArray[m].Title});  		
+        		option += "<option value='"+choiceArray[m].ColumnName+"'>"+choiceArray[m].Title+"</option>";         		
         	}
 			$("#ddlPersonColumn").html(option);		
         },
@@ -3215,6 +3150,7 @@ $.ajax({
         }
     });
 }
+var arrPrevSteps=[];
 function getPrevSteps(TempID,st,ID){
 if(st=="Add"){
 	query="(AskApprover eq false) and ";
@@ -3229,15 +3165,15 @@ $.ajax({
         },
         success: function (data) {
         	var choiceArray = data.d.results;
-        	
+        	arrPrevSteps=data.d.results;
         	var option = '<option value="Initiation">Initiation</option>';//"<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
+        	if(st=="Conn"){option = '';}
         	for(i=0;i<choiceArray.length;i++){   
-        	//arrPerson.push({'ColumnName':choiceArray[i].ColumnName,'ColumnTitle':choiceArray[i].Title});  		
         		option += "<option value='"+choiceArray[i].Id+"'>"+choiceArray[i].StepName+"</option>";         		
         	}
 			$("#ddlPreSteps").html(option);		
 			$("#ddlPreSteps option[value='"+ID+"']").remove();
-
+			if(st=="Conn"){$("#ddlStepNameConn").html(option);}
         },
         error: function (error) {
             console.log(JSON.stringify(error));
@@ -3783,4 +3719,28 @@ function RequestGetdata(Query)
         }  
     });
     return ResultItems;
+}
+
+function setStepsConditions(item){
+	$.ajax({
+		url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalStepsConditions')/items",
+		type: "POST",
+		contentType: "application/json;odata=verbose",
+		data: JSON.stringify(item),
+		async: true,
+		headers: 
+		{
+			"Accept": "application/json;odata=verbose",
+			"X-RequestDigest": $("#__REQUESTDIGEST").val()
+		},
+		success: function (data)
+		{	getSteps();		
+			$('#Connection_modl').modal( 'hide' ).data( 'bs.modal', null );			console.log("add success");		
+		},
+		error: function (data)
+		{	
+			console.log(data); 
+		}
+	});
+
 }

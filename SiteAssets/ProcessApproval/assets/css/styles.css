@@ -1222,16 +1222,21 @@ a.linkopts{
 .box_coverinside{
  padding-top:6px;	
 }
+
  
 @media(min-width:992px){
+
+.col-md-2.mag-top{
+ margin:8px 0;	
+}
 
 .linkmag{
   margin-top:12px;
 }
 
 #new_Procesing_tbs .modal-dialog{
-  width:78%;
   margin:5px auto;
+  width:52%;
 }
 
 #new_Procesing_tbs .modal-body{

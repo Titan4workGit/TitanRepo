@@ -5,11 +5,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/css/drag_drop_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/css/gridster.css">
 
-  <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/svgDraw.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/js/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/js/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/ProcessSteps_flow.js?@v1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/TemplateSetup/Approval-Process.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/js/jquery.gridster.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/svgDraw.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/ProcessSetup.js"></script>
 
 <style>
+
+.user_detail h4{
+	font-size:14px;
+}
+body #s4-workspace {
+ overflow: inherit !important;
+}
+body.ms-backgroundImage.modal-open #s4-workspace {
+    overflow: inherit !important;
+}
+
+.gs-resize-handle-both {
+    background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/resize.png);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-position: center;
+    cursor: nw-resize;
+    right:1;
+    bottom:1;
+}
+
+.childbox{
+ height:100%;	
+}
+
+.dragaable .ui-draggable {
+    background: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/iconbox.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 13px;
+}
+.modal button.close-round,
+.modal button.close{
+ min-width:auto !important;
+ background:#fff;
+ color:#333;	
+}
+
+.modal button.close-round:hover,
+.modal button.close:hover{
+ min-width:auto;
+ background:#666;
+ color:#fff;	
+}
+
 /*Now the CSS*/
 * {margin: 0; padding: 0;}
 
@@ -29,11 +81,28 @@
 	float: left; text-align: center;
 	list-style-type: none;
 	position: relative;
-	padding: 20px 25px 0 25px;
-	
+	padding:20px 0px 0 0;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
+}
+.tree li div.covernows{
+  margin-left:25px;
+  margin-right:25px;	
+}
+.optionbx.active{
+ background:#fff !important;	
+}
+
+.optionbx.active a img{
+ width: 16px;
+ opacity: 0.7;	
+}
+.optionbx{
+ z-index:99 !important;	
+}
+.optionbx a{
+  padding:5px 5px;	
 }
 
 /*We will use ::before and ::after to draw the connectors*/
@@ -42,7 +111,8 @@
 	content: '';
 	position: absolute; top: 0; right: 50%;
 	border-top: 2px solid #bdbdbd;
-	width: 50%; height: 20px;
+	width: 50%; 
+	height: 20px;
 }
 .tree li::after{
 	right: auto; left: 50%;
@@ -105,7 +175,7 @@ right connector from last child*/
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     width: 310px;
-    min-height: 80px;
+    height: 120px;
     background: #fff;
     position: relative;
     box-shadow: 1px 1px 3px #b9e3ff;
@@ -136,6 +206,7 @@ right connector from last child*/
   z-index: -10;
   position:absolute;
   opacity:1;
+  width:100%;
 }
 
 svg#svg1 {
@@ -173,7 +244,7 @@ svg#svg1 {
     content: '';
     position: absolute;
     width: 20px;
-    height: 2px;
+    height: 1.5px;
     top: 0px;
     background: #397eab;
     right: -0.2px;
@@ -183,7 +254,7 @@ svg#svg1 {
     content: '';
     position: absolute;
     width: 20px;
-    height: 2px;
+    height: 1.5px;
     top: 0px;
     left: 0px;
     background: #397eab;
@@ -301,7 +372,6 @@ svg#svg1 {
 
 .optionbox {
     position: absolute;
-    z-index: 55;
     right: 2px;
 }
 
@@ -321,7 +391,7 @@ svg#svg1 {
     text-align: left;
     font-size: 11px;
     color: #333;
-    padding: 3px 5px;
+    padding: 5px 5px;
     text-decoration: none;
 }
 
@@ -405,12 +475,13 @@ svg#svg1 {
 
 }
 .drgabox{
-    margin:0 -970px;
+    margin: 0 -3000px -3000px -3000px;
 }
 
 .menus{
     padding:5px 5px; 
     text-align: right;
+    display:none;
 }
 
 .menus button, 
@@ -419,6 +490,7 @@ svg#svg1 {
     border: none !important;
     background: transparent;
     margin:0 2px;
+    display:none !important;
 }
 
 .menus button img{
@@ -468,6 +540,201 @@ ul#InitialNodeChild {
     top: -0.8px;
     left: 0px;
 }
+/***peoplepicker css***/
+#preocessOwner .sp-peoplepicker-topLevel, #preocessOwner .sp-peoplepicker-editorInput {
+    width: 100% !important;
+    border: none !important;
+}
+
+
+/***popup settings*****/
+
+.assigned_datebox{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.assigned_datebox li{
+ font-size:13px;
+ margin-bottom:15px;
+}
+
+.flexbox_two,
+.assigned_datebox li>label{
+   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+
+}
+
+
+.assigned_datebox li select {
+    min-width: 110px;
+    width: 110px;
+    border-radius: 3px;
+    border: 1px solid #cccc;
+    /* height: 34px; */
+    margin-right: 3px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.assigned_datebox li span {
+    min-width: 60px !important;
+    display: inline-block;
+    margin-left: 10px;
+}
+ sup {
+        vertical-align: super;
+        font-size: small;
+    }
+
+.populated_btn{
+  margin-top:22px;
+}    
+
+  
+.checkboxdesng{
+ display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+
+}
+
+.checkboxdesng input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: -0px 0px 0 15px;
+    position: relative;
+    top: -2px;
+}
+
+.checkboxgroup{
+ margin-bottom:12px;	
+}
+
+
+.new_scroll::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.new_scroll::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.new_scroll::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+.height_defainebox {
+    max-height: 73vh;
+    overflow: auto;
+}
+
+#adds_stepsection .modal-dialog{
+ margin-top:4px;	
+}
+
+.assigned_datebox{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.assigned_datebox li{
+ font-size:13px;
+ margin-bottom:15px;
+}
+
+.flexbox_two,
+.assigned_datebox li>label{
+   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+
+}
+
+
+.assigned_datebox li select {
+    min-width: 110px;
+    border-radius: 3px;
+    border: 1px solid #cccc;
+    height: 34px;
+    margin-right:3px;
+}
+
+.assigned_datebox li span {
+    min-width: 60px !important;
+    display: inline-block;
+}
+
+ sup {
+        vertical-align: super;
+        font-size: small;
+    }
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#task_modl .modal-dialog{
+ margin-top:4px;	
+}
+
+.cover_buttons .two_event button:hover{
+ background:#819292;	
+}
+
+
+@media(min-with:768px){
+	
+.pad_right{
+ padding-right:0;	
+}
+.pad_left{
+ padding-left:0;	
+}
+
+.col-sm-4.center_align{
+ text-align:right;	
+}	
+	
+}
+
 
 </style>
 
@@ -476,15 +743,22 @@ ul#InitialNodeChild {
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5200</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">fd30a548-2d18-4f13-99e8-25f3c4c606ec</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5200, ADMIN-1645029823-5200</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Nagnath S Chavan</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">520000.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Nagnath S Chavan</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid" style="padding:0 0;">
 
     <div class="custom-panel">
-      <h1 class="panel-head-text">Process Step</h1>
+      <h1 class="panel-head-text">Process Setup</h1>
       <div class="navareabx"> 
         <ul class="activating" style="display: inline-block;">
           <li class="newitem is-active" data-id="form_design">
@@ -498,9 +772,9 @@ ul#InitialNodeChild {
         </ul>
          
         <ul class="moreopts"> 
-          <li><a href="#" data-toggle="modal" data-target="#access_modl"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/access.png"> Access</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#Appearance_modl"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/appeance.png"> Appearance</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#about_modl"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/about.png"> About</a></li>
+          <li id="tempAccess"><a href="#" data-toggle="modal" data-target="#stepsapprover"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/access.png"> Access</a></li>
+          <li id="appearanceTemp"><a href="#" data-toggle="modal" data-target="#Appearance_modl"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/appeance.png"> Appearance</a></li>
+          <li id="aboutTemp"><a href="#" data-toggle="modal" data-target="#about_modl"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/about.png"> About</a></li>
         </ul> 
       </div><!----topsection ed----->
 
@@ -509,109 +783,226 @@ ul#InitialNodeChild {
           <div class="coverdrag">
             <div class="dragaable">
              
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/text.png"> Text</span>
                 <div class="childbox">
-                  <label>Text</label>
-                  <input type="text" class="form-control">
+                  <label>Lable</label>
+                  
+                  <div class="cover_buttons">
+                    <input type="text" class="form-control">
+                    <span class="two_event">
+                      <button type="button" class="edit_now" data-toggle="modal" data-target="#text_popup">
+                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+                      </button>
+                      <button type="button" class="cancel_now">
+                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+                      </button>
+                    </span>
+                  </div>  
+
                 </div>
               </div>
 
-              <div class="items col-md-12">
+              <div class="multi_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/textarea.png"> Multiline</span>
-                <div class="childbox">
+                <div class="childbox" style="height:80%">
                   <label>Multiline</label>
-                  <textarea class="form-control" style="resize: none"></textarea>
+                  <div class="cover_buttons" style="height:100%;">
+                    <textarea class="form-control" style="resize: none; height:100%; min-height:100% !important; max-height:100% !important; padding-bottom:30px;"></textarea>
+                    <span class="two_event">
+				    <button type="button" class="edit_now" data-toggle="modal" data-target="#multiline_popup">
+				      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+				    </button>
+				    <button type="button" class="cancel_now">
+				      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+				    </button>
+				  </span>
+                  </div>
                 </div>
-
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/dropdown.png"> Dropdown</span>
                 <div class="childbox">
                   <label>Dropdown</label>
-                  <select class="form-control"></select>
+                  <div class="cover_buttons">
+                    <select class="form-control"></select>
+                    <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#dropdown_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+					  </span>
+                  </div>
                 </div>
               </div>
-
-
-              <div class="items col-md-4">
-                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/numbers.png"> Number</span>
+              <div class="drop_items">
+                <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/numbers.png"> Number</span>
                 <div class="childbox">
                   <label>Number</label>
-                  <input type="text" class="form-control" placeholder="">
+                  <div class="cover_buttons">
+                    <input type="text" class="form-control">
+                    <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#number_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+					  </span>                  
+				   </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/checkbox.png"> Checkbox</span>
                 <div class="childbox">
                   <label>Checkbox</label>
                   <div class="switcharea">
                    <span>Prefix</span>
-                   <img src="img/checkbox.png" alt="" style="float: right;position: relative;top: -5px;">
+                   <span class="two_event" style="float: right;position: relative;top: -5px;">
+				    <button type="button" class="edit_now" data-toggle="modal" data-target="#checkbox_popup">
+				      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+				    </button>
+				    <button type="button" class="cancel_now">
+				      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+				    </button>
+				  </span>
+                  <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/checkbox.png" alt="" style="float: right;position: relative;top: -5px;">
                   </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/date.png"> Date</span>
                 <div class="childbox">
                   <label>Date</label>
-                  <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                  <div class="cover_buttons">
+                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                   <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#date_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+					  </span>
+                   </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/due_date.png"> Due Date</span>
                 <div class="childbox">
                   <label>Due Date</label>
-                  <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                  <div class="cover_buttons">
+                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                  	<span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#due_date_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+					  </span>  
+                  </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/doller.png"> Currency</span>
                 <div class="childbox">
                   <label>Currency</label>
-                  <select class="form-control">
-                  </select>
+                  <div class="cover_buttons">
+                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                   	<span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#currency_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  </div>
                 </div>  
               </div>
-
-              <div class="items col-md-4">
+                
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/priority.png"> Priority</span>
                 <div class="childbox">
                   <label>Priority</label>
-                  <input type="text" name="" placeholder="Priority" class="form-control">
+                  <div class="cover_buttons">
+                   <input type="text" name="" placeholder="Priority" class="form-control">
+                   <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#Priority_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+                  </div>
+                  
                 </div>  
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/user.png"> Person</span>
                 <div class="childbox">
                   <label>Person</label>
-                  <input type="text" class="form-control">
+                  <div class="cover_buttons">
+                   <input type="text" name="" placeholder="Person" class="form-control">
+                  <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#person_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/attachment.png"> Attachment</span>
                 <div class="childbox">
                   <label>Attachment</label>
-                  <input type="text" class="form-control" placeholder="Choose File">
+                  <div class="cover_buttons">
+                   <input type="text" class="form-control" placeholder="Choose File">
+                    <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#attachment_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                  <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/numbers.png"> Serial Number</span>
                 <div class="childbox">
                   <label>Serial Number</label>
-                  <input type="number" class="form-control">
+                  <div class="cover_buttons">
+                   <input type="number" name="" placeholder="Serial Number" class="form-control">
+                   <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#serial_no_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon">
                   <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/calculator.png"> Calculated</span>
                   <div class="childbox">
@@ -619,112 +1010,166 @@ ul#InitialNodeChild {
                     <input type="text" placeholder="Define the Formula" class="form-control">
                   </div>
               </div>
-
-              
-
-              <div class="items col-md-4">
-                <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/sum.png"> Sum Value</span>
+              <div class="drop_items">
+                <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/sum.png"> Summerized Value</span>
                 <div class="childbox">
                   <label>Summerized Value</label>
                   <input type="text" placeholder="Define the Formula" class="form-control">
                 </div>
               </div>
               
-               <div class="items col-md-12">
+               <div class="table_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/table.png"> Table</span>
                 <div class="childbox">
-                  <div class="wraptable table-responsive">
-                    <table class="table table-bordered table-condensed clienttable table-hover">
-                      <thead>
-                        <tr>
-                          <th>Column 1</th>
-                          <th>Column 2</th>
-                          <th>Column 3</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>value</td>
-                          <td>value</td>
-                          <td>value</td>
-                        </tr>
-                        <tr>
-                          <td>value</td>
-                          <td>value</td>
-                          <td>value</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <div class="cover_buttons">
+                    <div class="wraptable table-responsive">
+                      <table class="table table-bordered table-condensed clienttable table-hover">
+                        <thead>
+                          <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#table_boxs">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				 </div> 
                 </div>
                 </div>
 
-              
-
-              <div class="items col-md-12">
+              <div class="header_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/header.png"> Header</span>
                 <div class="childbox">
-                  <label class="colorsetdyn">Header</label>
-                  <hr>
+                  <div class="cover_buttons">
+                     <label class="colorsetdyn">Header</label>
+                     <hr>
+                     <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#header_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  	
+				 </div>
                 </div>
               </div>
-
-              
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/QR.png"> QR Code</span>
                 <div class="childbox">
-                  <label>QR Code</label>
-                  <div class="qr_box">
-                    <img src="img/qr_code.png" alt="">
-                  </div>
+                  
+                  <div class="cover_buttons">
+                    <label>QR Code</label>
+                    <div class="qr_box">
+                      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/qr_code.png" alt="">
+                    </div>
+                     <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#Qrcode_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  </div>    
                 </div>
               </div>
               
 
-               <div class="items col-md-4">
+               <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/globe.png"> Link</span>
                 <div class="childbox">
                   <label>Link</label>
-                  <input type="text" placeholder="http://www.info" class="form-control">
+                  <div class="cover_buttons">
+                      <input type="text" placeholder="http://www.info" class="form-control">
+                      <span class="two_event">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#weblink_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  </div>
                 </div>
                </div>
 
                
-              <div class="items col-md-12">
+              <div class="note_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/note.png"> Note</span>
                 <div class="childbox">
                   <label>Note</label>
-                  <div class="notearea"></div>
+                  <div class="cover_buttons" style="height:84%;">
+                    <div class="notearea"></div>
+                    <span class="two_event" style="bottom:-6px;">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#note_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="items col-md-4">
+              <div class="drop_items">
                 <span class="show_only_icon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/switch_icon.png"> Switch</span>
                 <div class="childbox">
                   <label>Switch</label>
                   <div class="switcharea">
                     <span>Prefix</span>
-                    <img src="img/switch.png" alt="">
+                    <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/switch.png" alt="">
                     <span>Sufix</span>
-                  </div>
+                    <span class="two_event" style="float: right;position: relative;top: -2px;">
+					    <button type="button" class="edit_now" data-toggle="modal" data-target="#switch_popup">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil _white.png" alt="">
+					    </button>
+					    <button type="button" class="cancel_now">
+					      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel _white.png" alt="">
+					    </button>
+				  	</span>
+				  </div>
                 </div>
               </div>
-            </div>
+            </div><!---draggable area--->
             <div class="boxleft">
               <div class="headingbox">
                 <div class="leftbx">
-                  <span class="logoarea"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/logo.png" alt=""></span>
+                  <span class="logoarea"><img id="imgPrLogo" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/logo.png" alt=""></span>
                   <div class="lftdetails">
-                    <h3>Process for Tamplate</h3>
-                    <p>Tamplate name</p>
+                    <h3 id="txtPrTitle">Process for Tamplate</h3>
+                    <p id="txtTempName">Tamplate name</p>
                   </div>
                 </div>
                 <div class="righbx">
-                  <h2>Process Name</h2>
+                  <h2 id="txtPrName">Process Name</h2>
                 </div>
               </div>
-            <div id="dropbox">
-            </div>
+            
+				<div id="responsive-grid">
+                 <div class="gridster">
+                    <ul class="listing_grd">
+                    </ul>
+                  </div>
+              </div>	
+                        
             </div>
           </div><!----coverdrag--->
         </div><!------form_design area----->
@@ -734,7 +1179,47 @@ ul#InitialNodeChild {
 					<div id="svgContainer" style="margin:0px;">
 					</div>		
 					<div class="tree" style="margin:0 auto">
-						<ul id="InitialNodeChild">		
+						<ul id="InitialNodeChild">
+							<li class="remove_upaline">
+								<div class="covernows" id="child">
+									<div class="innercontainer">
+										<div class="top_area">
+											<h5>Initiation</h5>
+											<div class="dropdown">
+												<input type="hidden" name="stepId" value="">
+												<span class="dropdown-toggle new_eventclick" data-toggle="dropdown"><img
+														src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/menu.png"
+														style="width:17px;"></span>
+												<div class="dropdown-menu stepOption pull-right"><a href="#adds_stepsection"
+														data-toggle="modal"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/plus.png"> New
+														Steps</a><a href="#Connection_modl" data-toggle="modal"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/connection.png">
+														Connections</a><a href="#task_modl" data-toggle="modal"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/board.png">
+														Tasks</a><a href="#"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/teams.png">
+														Planner Task</a><a href="#mail_modl" data-toggle="modal"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/email.png">
+														Email</a><a href="#Next_Process" data-toggle="modal"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/settings.png">
+														Next Process</a><a href="#"><img
+															src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/Steps_FlowChart/img/edit.png">
+														Edit</a></div>
+											</div>
+										</div>
+										<div class="select_userbox">
+											<h5 id="showInitiator"></h5>
+											<div class="menus">
+												<button type="button"><img src="img/email.png" alt=""></button>
+												<button type="button"><img src="img/settings.png" alt=""></button>
+												<button type="button"><img src="img/board.png" alt="" style="width:18px;"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul id="initParentNode"></ul>
+							</li>		
 						</ul>
 					</div>		
 					<div style="clear:both">
@@ -761,39 +1246,58 @@ ul#InitialNodeChild {
         <h4 class="modal-title">About</h4>
       </div>
       <div class="modal-body">
-        <div class="form-group">
-          <label>Process Name:</label><span class="red_stt">*</span>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label>Tamplate Name:</label><span class="red_stt">*</span>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label>Process For:</label><span class="red_stt">*</span>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
+
+        <div class="row">
+          <div class="col-md-5">
+            <div class="form-group">
+              <label>Process Name:</label><span class="red_stt">*</span>
+              <input type="text" class="form-control" id="txtTitle" oninput="maxLengthCheck(this)" onpaste="return false" maxlength="250">
+            </div>
+            <div class="form-group">
+              <label>Tamplate Name:</label><span class="red_stt">*</span>
+              <input type="text" class="form-control" id="txtTemplate" oninput="maxLengthCheck(this)" onpaste="return false" maxlength="250">
+            </div>            
+            <div class="form-group ">
+							<div class="process-request-check-panal">
+								<label class="required">Process For:</label>
+								<label class="checkbox-inline"><input class="custom-check-f-p-r" type="checkbox" value="" id="chkReqFor" checked="checked">Custom</label>
+							</div>
+							<select class="form-control process-request-dropdown" id="ddlReqFor" maxlength="100" style="display: none;">
+								<option>--Select--</option>
+								<option>Leave Approval</option>										
+							</select>
+							<input type="text" class="form-control process-request-input" placeholder="" name="" id="txtReqFor" style="display: block;" oninput="maxLengthCheck(this)" onpaste="return false" maxlength="250">							
+							
+			</div>
+            <div class="form-group">
+              <label>Process Owner:</label><span class="red_stt">*</span>
+              <div class="form-control" id="preocessOwner"></div>
+            </div>
+          </div><!---col--4--->
+          <div class="col-md-7">
+            <div class="form-group">
           <label>Details:</label>
-          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+          <textarea name="" cols="30"class="form-control" style="min-height: 78px;" id="txtDetails"></textarea>
         </div>
         <div class="form-group">
           <label>Instruction:</label>
-          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+          <textarea name="" cols="30"class="form-control" style="min-height: 78px;" id="txtInstruct"></textarea>
         </div>
         <div class="form-group">
           <label>Prerequisite:</label>
-          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+          <textarea name="" cols="30"class="form-control" style="min-height: 78px;" id="txtPre"></textarea>
+        </div>    
+          </div><!--col--8--->
         </div>
+        
       </div>
       <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
-        <button type="button" class="btn custom-btn">Submit</button>
+        <button type="button" class="btn custom-btn" id="btnSubmitAbo" onclick="setTempDetail('About')">Submit</button>
       </div>
     </div>
 
   </div>
 </div>
-
 <!-- about_modl -->
 <div id="Appearance_modl" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -809,25 +1313,28 @@ ul#InitialNodeChild {
       <div class="modal-body">
         
         <div class="form-group">
-          <label>Page Column:</label>
-          <select class="form-control">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
+          <label>
+            Page Column:
+          </label>
+           <select class="form-control" id="ddlPageColumn">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="selected">3</option>
           </select>
         </div>
+		                
         <div class="form-group">
           <label>process icon:</label>
           <ul class="timelist">
              <li>  
-             <label class="radio">
-              <input type="radio" name="UpdateEmpN" id="test1" value="choose_gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
+             <label class="radio-inline">
+              <input type="radio" name="UpdateEmpN" id="test1" value="Choose from gallery" checked="checked" style="">Choose from gallery</label>
             </li>
             <li>    
-            <label class="radio"><input type="radio" name="UpdateEmpN" id="test2" value="upload_gallary" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
+            <label class="radio-inline"><input type="radio" name="UpdateEmpN" id="test2" value="Upload" style="">Upload</label>
             </li>
           </ul>
-          <div class="slider-panel changemeN widtmagingsbox choose_gallery both_gallery" style="position:relative; margin-bottom:0px !important;">
+          <div class="slider-panel changemeN widtmagingsbox choose_gallery " style="position:relative; margin-bottom:0px !important;">
                 <div id="slider-container" class="slider">
                    <div class="slide slideN image-active">
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/process1.png" alt="process1">
@@ -916,7 +1423,7 @@ ul#InitialNodeChild {
                     <i class="fa fa-angle-right"></i>
                 </div>
            </div>
-           <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none upload_gallary both_gallery" style="display: none;">
+           <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none upload_gallary " >
                 <div class="approve-process-upload-image-box-btn">
                 
                   <div class="form-group custom-form-group">
@@ -930,7 +1437,7 @@ ul#InitialNodeChild {
                     </div>
                     
                     <div class="approve-process-upload-data">
-                      <img src="#" id="blah" alt="your image">
+                      <img src="#" id="blah">
                         <!--<img id="blah" alt="your image" width="100" height="100" />-->
                     </div>
                 </div>
@@ -941,149 +1448,976 @@ ul#InitialNodeChild {
           <label>Appearance:</label>
           <div class="radio_grouop" style="margin-bottom: 5px;">
             <label class="radio-inline">
-              <input type="radio" name="them_setting" value="default" checked>
+              <input type="radio" name="them_setting" value="defaultselect" checked>
               Default
             </label>
             <label class="radio-inline">
-              <input type="radio" name="them_setting" value="theme">
+              <input type="radio" name="them_setting" value="themeselect">
               Theme
             </label>
             <label class="radio-inline">
-              <input type="radio" name="them_setting" value="Customs">
+              <input type="radio" name="them_setting" value="customselect">
               Customs
             </label>
           </div>
 
-          <div class="themsbox theme">
-            <input type="color" name="" class="form-control" style="padding: 0 !important;">
+          <div class="themsbox themeselect">
+            <input type="color" name="" class="form-control" id="txtThm" style="padding: 0 !important;">
           </div>
 
-          <div class="themsbox Customs">
-            <input type="text" class="form-control" placeholder="Customs">
+          <div class="themsbox customselect">
+            <ul class="default_opts">
+	            <li>
+		            <label>Title background</label>
+		            <input type="color" id="clrTitleBack" class="form-control" value="#ffffff">
+	            </li>
+	            <li>
+		            <label>
+		            	Form background
+		            </label>
+		            <input type="color" id="clrFormBack" class="form-control" value="#ffffff">
+	            </li>
+	            <li>
+		             <label>Header line</label>
+		             <input type="color" id="clrHeadLine" class="form-control" value="#ffffff">
+	            </li>
+	            <li>
+	            	<label>Table header</label>
+	            	<input type="color" id="clrTableHead" class="form-control" value="#ffffff">
+	            </li>
+          </ul>
           </div>
         </div>
-        <div class="form-group">
-          <ul class="default_opts">
-            <li>Title background</li>
-            <li>Form background</li>
-            <li>Header line</li>
-            <li>Table header</li>
-          </ul>
-        </div>
-      </div><!---md-bdy--->
+       </div><!---md-bdy--->
       <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
-        <button type="button" class="btn custom-btn">Submit</button>
+        <button type="button" class="btn custom-btn" id="btnSubmitApp" onclick="setTempDetail('Appearance')">Submit</button>
       </div>
     </div>
 
   </div>
 </div>
 <!-----appearance ed---->
+
+<!------Access----->
+<!-- stepsapprover popup start -->
+<div id="stepsapprover" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-lg" style="margin:15px auto !important;">
+   		<!-- Modal content-->
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        		<h4 class="modal-title" id="stpApp">Access</h4>
+      		</div>
+      		<div class="modal-body" style="padding:10px 10px !important;">
+      			<ul class="nav nav-pills" style="display:none">
+			    	<li class="active"><a data-toggle="pill" href="#Initiation" onclick="showSubBtn()">Initiation</a></li>
+			    	<li><a data-toggle="pill" href="#ProcessStep" onclick="hideSubBtn()">Process Steps</a></li>
+			  	</ul>
+			  	<div class="tab-content">
+			    	<div id="Initiation" class="tab-pane in active">
+			    	    
+						<div class="label_flexbox_co">
+							
+				    		<label for="" style="min-width:100px;">Initiator :</label>
+							<div class="checkboxgroup" style="margin-bottom:12px">
+						    	<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Anyone" checked="" onclick="SetDisplayInitiator(this)"> Anyone
+						      	</label>
+								<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Employee" checked="" onclick="SetDisplayInitiator(this)"> Employee
+						      	</label>
+						      	<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Department" onclick="SetDisplayInitiator(this)"> Department
+						      	</label>
+							  	<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Office" onclick="SetDisplayInitiator(this)"> Office
+						      	</label><label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Group" onclick="SetDisplayInitiator(this)"> Group
+						      	</label>
+						      	<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Client" onclick="SetDisplayInitiator(this)"> Client
+						      	</label>
+						      	<label class="radio-inline">
+						         	<input type="radio" name="selectives" data-target="" value="Guest User" checked="" onclick="SetDisplayInitiator(this)"> Guest User
+						      	</label>
+						      	<label class="radio-inline">
+						        	<input type="radio" name="selectives" data-target="" value="Selective" onclick="SetDisplayInitiator(this)"> Selective
+						      	</label>
+						  	</div>
+						 </div> 	
+					  	<div class="peoplepickeboxs">
+					  	
+					  		<div class="label_flexbox_co">
+					  		    <label style="min-width:100px;">User :</label>
+					  		    <div class="combinsections">
+							  		<div class="form-control" id="InitiatorPPL"></div>
+							     	<div id="selectives-Initiator" class="scrollbar-panel" style="overflow:auto;"></div>
+							    </div>	
+					     	</div>
+					     	
+					   	</div>
+					   	<div class="compboxs multi_dropdown_setting" style="display:none">
+				   	       <div class="label_flexbox_co">
+				  		    <label style="min-width:100px;">Company :</label>
+				  		    <div class="combinsections">
+				  		      
+					  		      <div class="dropdown" style="width:100%">
+						  		    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems5">Select</span><span class="caret"></span>
+									</button>
+							     	<ul class="form-control multiselect-ui dropdown-menu" name="" id="ddlCompEmp" multiple="multiple">
+									</ul>
+								  </div>	
+									
+				  		    </div>
+				  		  </div> 
+						</div>
+					   	<div class="deptboxs multi_dropdown_setting" style="display:none">
+					   	   <div class="label_flexbox_co">
+							    <label style="min-width:100px;">Department :</label>
+							    <div class="combinsections">
+							        <div class="dropdown" style="width:100%">
+						  			    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems1">Select</span><span class="caret"></span>
+										</button>
+								     	<ul class="form-control multiselect-ui dropdown-menu" name="" id="ddlDept" multiple="multiple">
+										</ul>
+									</div>
+								</div>
+						   </div>
+						</div>
+					   	<div class="officeboxs multi_dropdown_setting" style="display:none">
+					   	   <div class="label_flexbox_co">
+							    <label style="min-width:100px;">Office :</label>
+							    <div class="combinsections">
+								    <div class="dropdown" style="width:100%">
+						   				<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems2">Select</span><span class="caret"></span>
+										</button>
+								     	<ul class="form-control dropdown-menu" name="" id="ddlOffice">
+										  <option value="Select">Select</option>
+										</ul>
+									</div>	
+								</div>
+							</div>	
+						</div>
+					   	<div class="groupboxs multi_dropdown_setting" style="display:none">
+					   		<div class="label_flexbox_co">
+							    <label style="min-width:100px;">Group :</label>
+							    <div class="combinsections">
+								    <div class="dropdown" style="width:100%">
+										<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems3">Select</span><span class="caret"></span>
+										</button>
+								     	<ul class="form-control dropdown-menu" name="" id="ddlGroup">
+										  <option value="Select">Select</option>
+										</ul>
+									</div>	
+								 </div>
+							</div>
+						</div>
+					   	<div class="clientboxs multi_dropdown_setting" style="display:none">
+						   	  <div class="label_flexbox_co">
+							    <label style="min-width:100px;">Client :</label>
+							    <div class="combinsections">
+								    <div class="dropdown" style="width:100%">
+									    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems4">Select</span><span class="caret"></span>
+										</button>
+								     	<ul class="form-control dropdown-menu" name="" id="ddlClient">
+										  <option value="Select">Select</option>
+										</ul>
+									</div>	
+								</div>
+							</div>		
+					   	</div>
+					   	<div class="editScope">				  
+						  	<div class="twocomb">
+						  	  <label for="" style="min-width:100px;">Edit Scope :</label>
+						  	  	<div class="checkboxgroup">
+							    	<label class="radio-inline">
+							        	<input type="radio" name="scrops" data-target="" value="Full-Form" checked="" class="fullform Partialsec"> Full Form
+							      	</label>
+									<label class="radio-inline">
+							        	<input type="radio" name="scrops" data-target="" value="Partial" class="Partialsec" onclick="LoadPartialTable()"> Partial
+							      	</label>
+							      	<button type="button" class="btn btn-default stepcolms EditablefildBTN" onclick="LoadPartialTable();" data-toggle="modal" data-target="#editablefild"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/set_colums.png"> Set Columns</button>
+							  	</div>
+							</div>
+							<!---twocomb--->
+						</div>
+					</div><!---initiation ed--->
+			    	<div id="ProcessStep" class="tab-pane " style="margin-top:15px;">
+		    	
+			       		<div class="stepingbox">
+							<ul class="stepbox">					
+						
+							</ul>
+						</div>
+										
+			    	</div><!---procestep ed-->
+			    </div>
+			  	<!---tab content ed-->
+				<!---rowlbox--->
+			</div>
+      		<div class="modal-footer" style="text-align:center; border-top:1px solid #ccc;">
+        		<button type="button" class="btn custom-btn" id="btnSubmitStep">Submit</button>
+        		 <button type="button" class="btn custom-btn addstepsboxsec" data-toggle="modal" data-target="#adds_stepsection" id="addStepPopup"><i class="fa fa-plus"></i> Add Step</button>
+			</div>
+    	</div>
+	</div>
+</div>
+
+<!-- stepsapprover start -->
+
 <!------Access----->
 
-<div id="access_modl" class="modal fade" role="dialog">
+<!-- editablefild -->
+<div id="editablefild" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.3)">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close close-round" data-dismiss="modal" class="form-control">
-         <span class="close-icon">&times;</span>
-       </button>
-        <h4 class="modal-title">Access</h4>
+      <div class="modal-body" style="padding:20px !important">
+
+        <div class="table_heightmanage">
+            <table class="table table-bordered table-striped" style="padding:0; margin:0;">
+              <thead>
+                <tr>
+                  <th>Fields</th>
+                  <th>Type</th>
+                  <th>
+                  <label class="checkbox-inline">
+				    <input type="checkbox" value="" id="setEditableSelAll" style="width:17px; height:17px; margin-top:0; position:relative; left:-5px"> Editable
+				  </label>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="TableFieldsList">
+                  <tr>
+                    <td>Column label 1</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 2</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 3</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 4</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
       </div>
-      <div class="modal-body">
-        <div class="row" style="margin-bottom: 12px">
-          <div class="col-md-3">
-            <label>Process Owner:</label>
-          </div>
-          <div class="col-md-9">
-            <input type="text" placeholder="Enter names  or email address..." class="form-control">
-          </div>
-        </div><!---row ed--->
-        <div class="row" style="margin-bottom: 12px">
-          <div class="col-md-3">
-            <label>Initiator:</label>
-          </div>
-          <div class="col-md-9">
-            <div class="gribxall">
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Anyone
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Employee
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Group
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Client
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Department
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Office
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Guest User
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="Initiator_opt">
-                Selective
-              </label>  
-            </div>
-          </div>
-        </div><!---row ed--->
-        <div class="row" style="margin-bottom: 12px">
-          <div class="col-md-3">
-            <div class="form-group">
-            <label>User:</label>
-          </div>
-          </div>
-          <div class="col-md-9">
-             <input type="text" class="form-control" placeholder="Enter names or email address.">
-          </div>
-        </div><!---row ed-->
-        <div class="row">
-          <div class="col-md-3">
-            <label>Edit Scope:</label>
-          </div>
-          <div class="col-md-9">
-            <div class="gribxall">
-              <label class="radio-inline">
-                <input type="radio" name="editscrop_opt">
-                Full Form
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="editscrop_opt">
-                Partial
-              </label>
-            </div>
-          </div>
-        </div><!---row ed--->
+      <div class="modal-footer" style="text-align: center; margin:0; padding:10px;">
+        <a type="button" class="btn custom-btn" onclick="SetTableFieldsList()" style="width:100px;">Set</a>
+        <a type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" style="width:100px;">Close</a>
       </div>
-      <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
-        <button type="button" class="btn custom-btn">Submit</button>
+    </div>
+
+  </div>
+</div>
+<!----editablefild---->  
+
+<div id="editablecolsfild" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.3)">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body" style="padding:20px !important">
+
+        <div class="table_heightmanage">
+            <table class="table table-bordered table-striped" style="padding:0; margin:0;">
+              <thead>
+                <tr>
+                  <th>Fields</th>
+                  <th>
+                  <label class="checkbox-inline">
+				    <input type="checkbox" value="" id="setEditableColSelAll" style="width:17px; height:17px; margin-top:0; position:relative; left:-5px"> Editable
+				  </label>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="TableColsFieldsList">
+                  <tr>
+                    <td>Column label 1</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 2</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 3</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 4</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+      </div>
+      <div class="modal-footer" style="text-align: center; margin:0; padding:10px;">
+        <a type="button" class="btn custom-btn" id="tblAddtblCol" onclick="addtblColumnField(this)" style="width:100px;">Set</a>
+        <a type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" style="width:100px;">Close</a>
       </div>
     </div>
 
   </div>
 </div>
 
-<!------Access----->
 
 <!-------coding area----->
 
+<!-- adds_stepsection -->
+<div id="adds_stepsection" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5);">
+  <div class="modal-dialog modal-md">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Steps</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+           <div class="form-group custom-form-group">
+              <label>Step Name:<span style="color:#ff0000">*</span></label>
+              <input type="text" class="form-control" placeholder="" name="" id="txtStepName" oninput="maxLengthCheck(this)" maxlength="250">
+            </div>
+            <div class="checkboxgroup">
+              <label for="" style="margin-right:10px;">Approver:</label>
+              <label class="radio-inline">
+                    <input type="radio" name="optradio" data-target="rolbox" value="Role" onclick="SetDisplayApprovers(this)" checked="checked"> Role
+                </label>
+              <label class="radio-inline">
+                    <input type="radio" name="optradio" data-target="usrbox" value="User" onclick="SetDisplayApprovers(this)"> User
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" data-target="grpbox" value="Group" onclick="SetDisplayApprovers(this)"> Group
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" data-target="colbox" value="Field" onclick="SetDisplayApprovers(this)"> Column Value
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" data-target="runbox" value="Runtime" onclick="SetDisplayApprovers(this)"> Runtime
+                </label>
+            </div>
+            <div class="form-group custom-form-group rolbox boxse">
+              <label>Role:</label>
+              <select class="form-control" id="ddlroles">
+                <option value="Select">--Select--</option>
+                <option value="Manager">Reporting Manager</option>
+                <option value="Indirect Manager">Indirect Manager</option>
+                <option value="Head of the Department">Head of the Department</option>
+                <option value="Head of the Office">Head of the Office</option>
+                <option value="Project Admin of Department">Project Admin of Department</option>
+                <option value="HR Admin">HR Admin</option>                
+                <option value="Project Admin">Project Admin</option>
+                <option value="Process Admin">Process Admin</option>
+                <option value="Tech Admin">Tech Admin</option>
+                <option value="Initiator">Initiator</option>              
+              </select>
+            </div>
+            <div class="form-group custom-form-group usrbox boxse" style="display: none;">
+              <label>User:</label>
+              <!--  <input type="text" placeholder="Enter names or email addresses.." class="form-control" id="Stepuser">  -->
+              <div class=" form-control" id="Stepuser"></div>
+            </div>
+            <div class="form-group custom-form-group grpbox boxse" style="display: none;">
+              <label>Group:</label>
+              <select class="form-control" id="ddlgroups">
+              </select>
+            </div>
+            <div class="form-group custom-form-group colbox boxse" style="display: none;">
+              <label>Column:</label>
+              <select class="form-control" id="ddlPersonColumn">
+              </select>
+            </div>
+            <div class="form-group custom-form-group runbox boxse" style="display: none;">
+              <label>Steps:</label>
+              <select class="form-control" id="ddlPreSteps">
+              </select>
+            </div>
+            <div class="form-group custom-form-group signBox" style="display: none;">
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="" value="" style="margin-top:1px; width:15px; height:15px"> Signature will show at footer of all pages
+                </label>
+            </div>
+            <div class="form-group custom-form-group" id="secActionReq">
+              <label>Action:</label>
+              <div class="flxingtyp">
+                <select class="form-control" id="ActionReq" onchange="SetDisplayPrTable4Approvers(this.value)">
+                  <option value="Select">--Select--</option>
+                    <option value="Edit Data">Edit & Approve</option>
+                    <option value="Edit & Sign">Edit & Sign</option>
+                    <option value="Edit Only">Edit Only</option>
+                    <option value="Review Only">Review Only</option>
+                    <option value="Review & Sign">Review & Sign</option>
+                  </select>               
+                <div style="margin-left:5px; text-align:right; display:none" id="editablefildStepsDIV">
+                    <a type="button" class="btn btn-default" data-toggle="modal" data-target="#editablefildSteps" onclick="LoadPartialTableSteps();">
+                      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/set_colums.png" style="width:17px;"> Set Columns</a>
+                      <!--<button type="button" class="btn btn-default stepcolm EditableCols" data-toggle="modal" data-target="#editablefild"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/set_colums.png"> Set Columns</button>-->
+            </div>
+              </div>  
+            </div>
+            <div class="form-group custom-form-group" id="">
+              <label class="stepsOfProc">Position of Signature</label>
+              <div class="row stepsOfProc">         
+              <div class="col-md-12" style="margin-bottom:12px; margin-top:7px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="optionls" value="At Bottom most" checked="checked">At Bottom most
+                  </label>
+                </div>
+                </div>  
+                
+                <div class="row flxmags ">
+                   <div class="col-md-3 padlft stepsOfProc">
+                      <label class="radio-inline" style="margin-top:5px; margin-bottom:5px;">
+                      <input type="radio" name="optionls" value="At Bottom of">At Bottom of
+                    </label>
+                  </div>
+                
+                <div class="col-md-4 padrigt stepsOfProc">
+                   <select class="form-control" style="display:none" id="PositionOptList">
+                    <!--<option>Text</option>
+                    <option>Number</option>
+                    <option>Date</option>
+                    <option>DueDate</option>
+                    <option>Currency</option>
+                    <option>Priority</option>
+                    <option>Yes/No</option>
+                    <option>Multiline</option>
+                    <option>CalculatedValue</option>
+                    <option>SummarizedValue</option>
+                     <option>Header</option>
+                     <option>Table</option>
+                     <option>Note</option>-->
+                   </select>
+                </div>
+                
+                  <div class="col-md-3 col-md-offset-2 mt-ajusting" style="text-align: right;">
+                    <!---<button type="button" class="btn custom-btn" id="btnAddStep">Add Step</button>
+                    <button type="button" class="btn custom-btn" id="btnEditStep" style="display:none">Update</button>-->
+                  </div>
+                </div>  
+             </div>
+             <div class="form-group custom-form-group">
+                <label>Trigger On:</label>
+                <select class="form-control" id="ddlTriggerOn">
+                  <option value="Approve or Submit">Approve or Submit</option>
+                  <option value="On Reject">On Reject</option>
+                </select>
+             </div>
+
+             <div class="form-group">
+               <div class="checkboxdesng"><label>Condition Applied?</label> <input type="checkbox" name="" id="chbCondition"></div>
+             </div>
+
+              <div class="form-group">
+                <label>Condition Script</label> 
+                <textarea class="form-control" id="txtConditionScript"></textarea>
+             </div>
+
+             <div class="form-group">
+               <div class="checkboxdesng"><label>This is last step</label> <input type="checkbox" name=""></div>
+             </div>
+
+              
+      </div><!---body-->
+      <div class="modal-footer" style="text-align:center">
+        <!--<button type="button" class="btn custom-btn">Submit</button>-->
+        <button type="button" class="btn custom-btn" id="btnAddStep">Submit</button>
+        <button type="button" class="btn custom-btn" id="" style="display:none">Update</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------adds_stepsection ed ---->
+
+
+<!-- Trigger the modal with a button -->
+
+<!-- Connection_modl -->
+<div id="Connection_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Connection</h4>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+             <label>Step Name:</label><span style="color:#ff0000">*</span>
+            <select class="form-control" id="ddlStepNameConn">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="form-group custom-form-group">
+            <label>Trigger On:</label>
+            <select class="form-control" id="ddlTriggerOnConn">
+              <option value="">Approve or Submit</option>
+              <option value="">On Reject</option>
+            </select>
+         </div>
+         <div class="form-group">
+           <div class="checkboxdesng"><label>Condition Applied?</label> <input type="checkbox" name="" id="chbConditionConn"></div>
+         </div>
+         <div class="form-group">
+            <label>Condition Script</label> 
+            <textarea class="form-control" id="txtConditionScriptConn"></textarea>
+         </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn custom-btn" id="btnAddCon">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------Connection_modl ed------->
+
+
+<div id="task_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Task</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+          <div class="form-group custom-form-group">
+            <label>Task Name:<span style="color:#ff0000">*</span></label>
+            <input type="text" class="form-control" placeholder="" name="">
+          </div>
+          <div class="row">
+            <div class="col-sm-6 pad_right">
+              <label for="">
+                Assign date
+              </label>
+              <ul class="assigned_datebox">
+                <li>
+                  <label class="radio-inline">
+                    <input type="radio" name="assign_date">
+                      <span>Immediate</span> 
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-inline">
+                    <input type="radio" name="assign_date">
+                      <span>After</span> 
+                      <select class="form-control">
+                        <option value="n">n</option>
+                      </select class="form-control">
+                      <span>days</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-inline">
+                    <input type="radio" name="assign_date">
+                      <span>Next </span>
+                      <select class="form-control">
+                        <option value="Monday">Monday</option>
+                      </select>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-inline">
+                    <input type="radio" name="assign_date">
+                      <span>On Date</span> 
+                      <select class="form-control">
+                        <option value="15">15<sup>th</sup></option>
+                      </select>
+                  </label>
+                </li>
+                
+              </ul>
+            </div><!---col6 ed----->
+            <div class="col-sm-6 pad_left">
+              <div class="form-group custom-form-group">
+                <label>Due Date:<span style="color:#ff0000">*</span></label>
+                <div class="flexbox_two">
+                  <input type="text" class="form-control"><label style="margin-left:5px;">days</label>
+                </div>
+            </div>
+            <div class="form-group custom-form-group">
+                 <label>Priority:<span style="color:#ff0000">*</span></label>
+                 <select class="form-control">
+                   <option value="Medium">Medium</option>
+                 </select>
+            </div>
+             <div class="form-group custom-form-group">
+                 <label>Work Type:<span style="color:#ff0000">*</span></label>
+                 <select class="form-control">
+                   <option value="Development">Development</option>
+                 </select>
+            </div>
+            </div><!---col6 ed---->
+          </div><!----row ed--->
+          
+           <div class="row">
+            <div class="col-md-12">
+              <div class="form-group custom-form-group">
+                  <label>Trigger On:</label>
+                  <select class="form-control">
+                    <option value="Select">--select--</option>
+                    <option value="">Approve or Submit</option>
+                    <option value="">On Reject</option>
+                  </select>
+               </div>
+            </div>  
+            <div class="col-md-12">
+                  <div class="checkboxgroup" style="margin-bottom: 12px;">
+                  <label for="" style="margin-right:10px;">Assigned to:</label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_task" data-target="rolbox" value="Role" onclick=""> Role
+                    </label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_task" data-target="usrbox" value="User" checked="checked"> User
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_task" data-target="grpbox" value="Group" onclick=""> Group
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_task" data-target="colbox" value="Field" onclick=""> Column Value
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_task" data-target="runbox" value="Runtime" onclick=""> Runtime
+                    </label>
+                </div>
+                     <div class="form-group custom-form-group rolbox boxse" style="display: none;">
+                        <label>Role:</label>
+                        <select class="form-control" id="">
+                          <option value="Select">Select</option>
+                          <option value="Manager">Reporting Manager</option>
+                          <option value="Indirect Manager">Indirect Manager</option>
+                          <option value="Head of the Department">Head of the Department</option>
+                          <option value="Head of the Office">Head of the Office</option>
+                          <option value="Project Admin of Department">Project Admin of Department</option>
+                          <option value="HR Admin">HR Admin</option>                
+                          <option value="Project Admin">Project Admin</option>
+                          <option value="Process Admin">Process Admin</option>
+                          <option value="Tech Admin">Tech Admin</option>
+                          <option value="Initiator">Initiator</option>              
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group usrbox boxse">
+                        <label>User:</label>
+                        <!--  <input type="text" placeholder="Enter names or email addresses.." class="form-control" id="Stepuser">  -->
+                        <div class=" form-control" id=""></div>
+                      </div>
+                      <div class="form-group custom-form-group grpbox boxse" style="display: none;">
+                        <label>Group:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group colbox boxse" style="display: none;">
+                        <label>Column:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group runbox boxse" style="display: none;">
+                        <label>Steps:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                    
+                      <div class="form-group">
+                        <label>Description</label> 
+                        <textarea class="form-control"></textarea>
+                     </div>
+                     <div class="form-group">
+                       <div class="checkboxdesng"><label>Condition Applied?</label> <input type="checkbox" name=""></div>
+                     </div>
+                     <div class="form-group">
+                        <label>Condition Script</label> 
+                        <textarea class="form-control"></textarea>
+                     </div> 
+            </div><!---col-md--12--->
+           </div>  
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn custom-btn">Add Task</button>
+      </div>
+    </div>
+  </div>
+</div>        
+
+<!------task_modl ed------->
+
+
+<div id="mail_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Mail</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+         <div class="form-group custom-form-group">
+            <label>Mail Subject:</label>
+            <input type="text" class="form-control" placeholder="" name="">
+          </div>
+          <div class="row">
+                        <div class="col-md-12">
+                  <div class="checkboxgroup" style="margin-bottom: 12px;">
+                  <label for="" style="margin-right:10px;">Mail to:</label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_mail" data-target="rolbox" value="Role" onclick=""> Role
+                    </label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_mail" data-target="usrbox" value="User" checked="checked"> User
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_mail" data-target="grpbox" value="Group" onclick=""> Group
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_mail" data-target="colbox" value="Field" onclick=""> Column Value
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_mail" data-target="runbox" value="Runtime" onclick=""> Runtime
+                    </label>
+                </div>
+                     <div class="form-group custom-form-group rolbox boxse" style="display: none;">
+                        <label>Role:</label>
+                        <select class="form-control" id="">
+                          <option value="Select">Select</option>
+                          <option value="Manager">Reporting Manager</option>
+                          <option value="Indirect Manager">Indirect Manager</option>
+                          <option value="Head of the Department">Head of the Department</option>
+                          <option value="Head of the Office">Head of the Office</option>
+                          <option value="Project Admin of Department">Project Admin of Department</option>
+                          <option value="HR Admin">HR Admin</option>                
+                          <option value="Project Admin">Project Admin</option>
+                          <option value="Process Admin">Process Admin</option>
+                          <option value="Tech Admin">Tech Admin</option>
+                          <option value="Initiator">Initiator</option>              
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group usrbox boxse">
+                        <label>User:</label>
+                        <!--  <input type="text" placeholder="Enter names or email addresses.." class="form-control" id="Stepuser">  -->
+                        <div class=" form-control" id=""></div>
+                      </div>
+                      <div class="form-group custom-form-group grpbox boxse" style="display: none;">
+                        <label>Group:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group colbox boxse" style="display: none;">
+                        <label>Column:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group runbox boxse" style="display: none;">
+                        <label>Steps:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                    
+                      <div class="form-group">
+                        <label>Mail body</label> 
+                        <textarea class="form-control"></textarea>
+                     </div>
+                     <div class="form-group custom-form-group">
+                        <label>Trigger On:</label>
+                        <select class="form-control">
+                          <option value="Select">--select--</option>
+                          <option value="">Approve or Submit</option>
+                          <option value="">On Reject</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
+                       <div class="checkboxdesng"><label>Condition Applied?</label> <input type="checkbox" name=""></div>
+                     </div>
+                     <div class="form-group">
+                        <label>Condition Script</label> 
+                        <textarea class="form-control"></textarea>
+                     </div> 
+            </div><!---col-md--12--->
+          </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn custom-btn">Add Task</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<!----mail----> 
+
+
+<div id="Next_Process" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Next Process</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="form-group">
+             <label>Process:</label>
+            <select class="form-control">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="row">
+                <div class="col-md-12">
+                  <div class="checkboxgroup" style="margin-bottom: 12px;">
+                  <label for="" style="margin-right:10px;">Assign to:</label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_process" data-target="rolbox" value="Role" onclick=""> Role
+                    </label>
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio_process" data-target="usrbox" value="User" checked="checked"> User
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_process" data-target="grpbox" value="Group" onclick=""> Group
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_process" data-target="colbox" value="Field" onclick=""> Column Value
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio_process" data-target="runbox" value="Runtime" onclick=""> Runtime
+                    </label>
+                </div>
+                     <div class="form-group custom-form-group rolbox boxse" style="display: none;">
+                        <label>Role:</label>
+                        <select class="form-control" id="">
+                          <option value="Select">Select</option>
+                          <option value="Manager">Reporting Manager</option>
+                          <option value="Indirect Manager">Indirect Manager</option>
+                          <option value="Head of the Department">Head of the Department</option>
+                          <option value="Head of the Office">Head of the Office</option>
+                          <option value="Project Admin of Department">Project Admin of Department</option>
+                          <option value="HR Admin">HR Admin</option>                
+                          <option value="Project Admin">Project Admin</option>
+                          <option value="Process Admin">Process Admin</option>
+                          <option value="Tech Admin">Tech Admin</option>
+                          <option value="Initiator">Initiator</option>              
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group usrbox boxse">
+                        <label>User:</label>
+                        <!--  <input type="text" placeholder="Enter names or email addresses.." class="form-control" id="Stepuser">  -->
+                        <div class=" form-control" id=""></div>
+                      </div>
+                      <div class="form-group custom-form-group grpbox boxse" style="display: none;">
+                        <label>Group:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group colbox boxse" style="display: none;">
+                        <label>Column:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                      <div class="form-group custom-form-group runbox boxse" style="display: none;">
+                        <label>Steps:</label>
+                        <select class="form-control" id="">
+                        </select>
+                      </div>
+                    
+                      <div class="form-group">
+                        <label>Instruction:</label> 
+                        <textarea class="form-control"></textarea>
+                     </div>
+                     <div class="row form-group custom-form-group">
+                        <div class="col-sm-8">
+                          <label>Trigger On:</label>
+                            <select class="form-control">
+                              <option value="Select">--select--</option>
+                              <option value="">Approve or Submit</option>
+                              <option value="">On Reject</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 center_align">
+                          <button type="button" class="btn custom-btn populated_btn">Populated Values</button>
+                        </div>
+
+                     </div>
+                     <div class="form-group">
+                       <div class="checkboxdesng"><label>Condition Applied?</label> <input type="checkbox" name=""></div>
+                     </div>
+                     <div class="form-group">
+                        <label>Condition Script</label> 
+                        <textarea class="form-control"></textarea>
+                     </div> 
+            </div><!---col-md--12--->
+          </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>    
+  </div>
+</div>
+
+<!------next process--->    
+
 
 <!------tabcode---->
+
+<div id="editablefildSteps" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.3);" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body" style="padding:15px !important">
+
+        <div class="table_heightmanage">
+            <table class="table table-bordered table-striped" style="padding:0; margin:0;">
+              <thead>
+                <tr>
+                  <th>Fields</th>
+                  <th>Type</th>
+                  <th style="width:25%;"><label class="checkbox-inline">
+				    <input type="checkbox" value="" id="setEditableSelStepsAll" style="width:17px; height:17px; margin-top:0; position:relative; left:-5px"> Editable
+				  	</label>
+				  </th>
+                </tr>
+              </thead>
+              <tbody id="TableFieldsListSteps">
+                  <tr>
+                    <td>Column label 1</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 2</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 3</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+                  <tr>
+                    <td>Column label 4</td>
+                    <td><input type="checkbox" style="height: 17px; width: 17px;"></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+      </div>
+      <div class="modal-footer" style="text-align: center; margin:0; padding:5px;">
+        <button type="button" class="btn custom-btn" onclick="SetTableFieldsListSteps();" style="width:100px;">Set</button>
+        <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" onclick="ClearTableFieldsListSteps();" style="width:100px;">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <script>
 
 $(window).ready(function(){
@@ -1099,37 +2433,1581 @@ $(window).ready(function(){
 </script>
 <!------tabcode end---->
 
-<script>
-  
-$(function () {
-    $(".dragaable div").draggable({
-        revert: "invalid",
-        helper:"clone",
-        distance: 5,
-        cursor:"move"
-          });
-    $("#dropbox").droppable({
-        accept:'.items',
-        drop: function (event, ui) {
-            var store = ui.draggable.clone();
-            $(this).append(store);
+<script type="text/javascript">
+
+$(document).ready(function () {
+     var outwidth = $('.gridster').innerWidth();
+     var multiply = (outwidth/3 - 15);
+    gridster = $(".gridster ul").gridster({
+        min_cols: 1,
+        max_cols: 3,
+        widget_margins: [4, 4],
+        widget_base_dimensions: [multiply, 80],
+        resize: {
+            enabled: true
         }
-    }).sortable({
-        helper: 'clone',
-        cursor:"move",
-        revert:true,
-        distance: 5,
-        items:".items",
-        connectWith: "#dropbox",
-        stop: function(event, ui) {
-            $(ui.helper).clone(false).removeClass('box ui-draggable ui-draggable-dragging');
-        }
-    });
+    }).data('gridster');
+    var delayOpen;
+    $('.drop_items, .multi_items, .table_items, .header_items, .note_items').draggable({
+      helper:"clone"
+    })
+  $("#responsive-grid").droppable({        
+  accept:'.drop_items, .multi_items, .table_items, .header_items, .note_items',        
+  drop: function (event, ui) {          
+    var store_items = ui.draggable.html();
+    var select_attr = ui.draggable.find('.edit_now').data("target");  
+        $(select_attr).modal({
+          show: 'true'
+      });            
+    
+    if(ui.draggable.hasClass('multi_items')){            
+      gridster.add_widget(`<li class="multi_items">${store_items}</li>`, 3, 2);
+    }
+    else if(ui.draggable.hasClass('table_items')){            
+      gridster.add_widget(`<li class="table_items">${store_items}</li>`, 3, 2);
+    }
+
+    else if(ui.draggable.hasClass('header_items')){            
+      gridster.add_widget(`<li class="header_grid">${store_items}</li>`, 3, 1);
+    }
+
+    else if(ui.draggable.hasClass('note_items')){            
+      gridster.add_widget(`<li class="note_items">${store_items}</li>`, 3, 2);
+    }          
+      
+    else{gridster.add_widget(`<li class="items">${store_items}</li>`, 1, 1);}            
+      
+      if($('ul.listing_grd').children('li').length>=3)
+          {              
+            $('ul.listing_grd').addClass("intro");
+          }
+      }
+          
+    })
+
+    $(document).on("click", ".gridster .cancel_now", function () {
+      var gridster = $(".gridster ul").gridster().data('gridster');
+      gridster.remove_widget($(this).parents('li'));
+
+  });  
    
 });
-
 </script>
+
+
 <!--------------------tab setting----->
+
+
+<!-----drag and drop----->
+<!-- text_popup -->
+<div id="text_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Text Box</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Label:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Validation:</label>
+                <div class="group_validations">
+                  <label class="radio-inline">
+                    <input type="radio" name="Validation_opt" style="margin-right: 10px;">
+                    Char Limit:
+                    <input type="number" class="form-control" style="margin-left: 5px;">
+                  </label>
+                  <label class="radio-inline">
+                     <input type="radio" name="Validation_opt" style="margin-right: 10px;">
+                     Link
+                  </label>
+                  <label class="radio-inline">
+                     <input type="radio" name="Validation_opt" style="margin-right: 10px;">
+                     Email
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="radio-inline">
+                <input type="radio" name="valpts">
+                  Default Value
+                </label>
+                <label class="radio-inline" style="" name="valpts">
+                 <input type="radio">
+                 Populated Value
+                </label>
+                <input type="text" class="form-control" style="margin-top:5px;">
+             </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="or_selectors">
+                <div class="md_with">
+                  <div class="form-group">
+                      <select class="form-control">
+                        <option value="Department">Department</option>
+                        <option value="OfficeLocation">OfficeLocation</option>
+                        <option value="Company">Company</option>
+                        <option value="Designation">Designation</option>
+                        <option value="JoiningDate">JoiningDate</option>
+                        <option value="DateOfBirth">DateOfBirth</option>
+                        <option value="DateOfAnniversary">DateOfAnniversary</option>
+                        <option value="Email">Email</option>
+                        <option value="OtherEMailAddress">OtherEMailAddress</option>
+                        <option value="EmployeeID">EmployeeID</option>
+                        <option value="GroupName">GroupName</option>
+                        <option value="MobileNumber">MobileNumber</option>
+                        <option value="HomePhone">HomePhone</option>
+                        <option value="Gender">Gender</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="sm_with" style="text-align: center;"><label>OR</label></div>
+                <div class="md_with">
+                  <div class="form-group">
+                      <select class="form-control">
+                        <option value="initiator">Initiator</option>
+                        <option value="stakeholder">Stakeholder</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility</label>
+                <textarea name="" id="" class="form-control">
+                </textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable</label>
+              <textarea name="" id="" class="form-control">
+              </textarea>
+              </div>
+            </div>
+      </div>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Dropdown_popup -->
+<div id="dropdown_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Dropdown</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Label:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+               <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="radio-inline">
+                <input type="radio" checked="checked" name="mult_selectionbox" value="given_val">
+                  Given Values
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="mult_selectionbox" value="sharepoint_list">
+                  From SharePoint List
+                </label>
+                <label class="checkbox-inline" style="float: right;">
+                <input type="checkbox">
+                  Multiple Select
+                </label>
+              </div>
+            </div>
+            
+            <div class="col-md-12 given_val hidebox">
+              <div class="plusbox">
+                <input type="text" class="form-control" style="border-radius:3px 0px 0px 3px !important">
+                <button type="button" class="btn custom-btn" style="min-width:auto; height:34px;">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+              <div class="tablecoverbx">
+                <table>
+                    <thead>
+                    <tr>
+                      <th></th>
+                      <th>Default</th>
+                    </tr>
+                  </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="plusbox">
+                            <input type="text" class="form-control" style="border-radius:3px 0px 0px 3px !important">
+                            <button type="button" class="btn link-delete-btn" style="min-width:auto; height:34px;">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                        </td>
+                        <td>
+                          <input type="radio" name="default_opts" class="default_options">
+                        </td>
+                      </tr>
+                    </tbody>  
+                </table>
+              </div>
+            </div><!---col-md-12--->
+            
+            <div class="col-md-12 sharepoint_list hidebox">
+              <div class="form-group">
+                <label>Site Address:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+                <span class="example_viw">Example: /mainsite/subsite/subsite/...</span>   
+              </div>
+              <div class="form-group">
+                <label>List Name:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Column Name:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+                <span class="example_viw">Tip: Column with datatype single line text.</span>   
+              </div>
+              <div class="form-group">
+                <label>Filter:</label>
+                <input type="text" class="form-control">
+                <span class="example_viw">Tip: jQery for Filter.</span>   
+              </div>
+              <div class="form-group">
+                <label>Sort:</label>
+                <input type="text" class="form-control">
+                <span class="example_viw">Tip: jQery for Sort.</span>   
+              </div>
+              <div class="form-group">
+                <label>Default Value:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div><!---sharepoint ed--->
+
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div>
+      </div><!---modal-body--->
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="number_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Number</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Validation:</label>
+                <select class="form-control">
+                  <option value="decimal">Decimal</option>
+                </select>
+                <div class="min_max_suffix">
+                  <div class="suffBx">
+                    <label>Min</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="suffBx">
+                    <label>Max</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="suffBx">
+                    <label>Suffix</label>
+                    <select class="form-control">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12" style="">
+              <button type="button" class="btn custom-btn arrow_botms">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </button>
+              <div class="optional_area">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Sequence:</label><span class="red_col">*</span>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Map column:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div><!----row ed-->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>      
+</div>
+<!-- numer_popup -->
+
+<div id="date_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Date</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Validation:</label>
+                <select class="form-control">
+                  <option value="Any Date">Any Date</option>
+                  <option value="Today only">Today only</option>
+                  <option value="Past Date">Past Date</option>
+                  <option value="Past Date including Today">Past Date including Today</option>
+                  <option value="Future Date">Future Date</option>
+                  <option value="Future Date including Today">Future Date including Today</option>
+                  <option value="Specific Date">Specific Date</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="radio-inline" style="margin-bottom: 12px;">
+                <input type="radio" name="days_selopt">
+                Weekdays
+               </label>
+                <div class="checkbox_grups">
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Mon
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Tue
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Wed
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Thu
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Fri
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Sat
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox">
+                    Sun
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="radio-inline" style="margin-bottom: 12px;">
+                <input type="radio" name="days_selopt">
+                Days of the month
+               </label>
+               <select class="form-control">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                 <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                 <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                 <option value="29">29</option>
+                 <option value="30">30</option>
+                 <option value="31">31</option>
+               </select>
+             </div>
+           </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label> <span style="color:#666; font-size: 12px;">(Today &#177 days)</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12" style="">
+              <button type="button" class="btn custom-btn arrow_botms">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </button>
+              <div class="optional_area">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Sequence:</label><span class="red_col">*</span>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Map column:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---currency_popup----->
+
+<div id="currency_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Currency</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <select class="form-control">
+                  <option value="INR">INR (&#8377;)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Priority_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Priority</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <select class="form-control">
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----Checkbox_popup---->
+<div id="checkbox_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Checkbox</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label>Prefix:</label>
+                  <select class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Sufix:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <select class="form-control">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!----row ed---->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----multiline_popup---->
+<div id="multiline_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Multiline</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="group_tw_op">
+                <label class="radio-inline">
+                  <input type="radio" name="pg_wth">
+                  Page Width
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pg_wth">
+                  Column Width
+                </label>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="group_tw_op">
+                <label style="width: 60px; margin-bottom: 0;">
+                  Height
+                </label>
+                <select class="form-control">
+                  <option value="units_2">unit-2</option>
+                </select>
+               </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12" style="">
+              <button type="button" class="btn custom-btn arrow_botms">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </button>
+              <div class="optional_area" style="display: none;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Sequence:</label><span class="red_col">*</span>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Map column:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---switch---->
+
+<div id="switch_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Switch</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label>Prefix:</label>
+                  <select class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Sufix:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <select class="form-control">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----person------------->
+
+
+<div id="person_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Person</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Validation:</label>
+                <select name="" id="" class="form-control">
+                  <option value="Single">Single</option>
+                  <option value="Multiple">Multiple</option>
+                </select>
+              </div>
+            </div>
+           
+             <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <select class="form-control">
+                  <option value="Anyone" selected="select">Anyone</option>
+                  <option value="Initiator">Initiator</option>
+                  <option value="Manager">Manager</option>
+                  <option value="Indirect Manager">Indirect Manager</option>
+                  <option value="HOD">HOD</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----serial_no_popup_popup---->
+<div id="serial_no_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Serial Number</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label>Prefix:</label>
+                  <select class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Sufix:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Serial Start From:</label>
+                <select class="form-control">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----attachment_popup---->
+<div id="attachment_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Attachment</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tooltip:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+           
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Allowed File Type:</label>
+                <input type="text" name="" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Maximum File size:</label> <span style="font-size:12px; font-weight: 600">(in MB)</span>
+                <input type="text" name="" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <input type="text" name="" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <textarea name="" id="" class="form-control"></textarea>
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+              </div>
+            </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----note_popup----->
+
+<div id="note_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Note</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+           <div class="form-group">
+              <label>Note:</label>
+              <textarea name="" id="" class="form-control"></textarea>
+           </div>
+          </div>
+          <div class="col-md-12">
+            <label class="inline-radio">
+              <input type="radio" name="wth_opts" checked="checked">
+              Page Width
+            </label>
+            <label class="inline-radio">
+              <input type="radio" name="wth_opts">
+              Column Width
+            </label>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group" style="margin-top: 12px;">
+              <label>Condition for visibility:</label>
+            <textarea name="" id="" class="form-control"></textarea>
+            </div>
+          </div>
+        </div><!------row ed------>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----header_popup_popup----->
+
+<div id="header_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Header</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group" style="margin-top: 12px;">
+              <label>Condition for visibility:</label>
+            <textarea name="" id="" class="form-control"></textarea>
+            </div>
+          </div>
+        </div><!------row ed------>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----Qrcode_popup----->
+
+<div id="Qrcode_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">QR code</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Link:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group" style="margin-top: 12px;">
+              <label>Condition for visibility:</label>
+            <textarea name="" id="" class="form-control"></textarea>
+            </div>
+          </div>
+        </div><!------row ed------>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----weblink_popup----->
+
+<div id="weblink_popup" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Web Link</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Label:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Link:</label><span class="red_col">*</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group" style="margin-top: 12px;">
+              <label>Condition for visibility:</label>
+            <textarea name="" id="" class="form-control"></textarea>
+            </div>
+          </div>
+        </div><!------row ed------>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="table_boxs" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" style="margin:3px auto;">
+
+  <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Table</h4>
+      </div>
+      <div class="modal-body">
+          <div class="new_scroll height_defainebox additional_doms" style="max-height:62vh !important;">
+            <table class="table">
+              <thead>
+                  <tr>
+                    <th style="width:5%" style="text-align: center;">Sequence</th>
+                    <th style="width:20%">Label</th>
+                    <th style="width:10%; text-align: center;">Type</th>
+                    <th style="width:10%; text-align: center;">Mandatory</th>
+                    <th style="width:15%; text-align: center;">Default Value</th>
+                    <th style="width:10%; text-align: center;">Validation</th>
+                    <th style="width:20%; text-align: center;">Dropdown</th>
+                    <th style="width:10%; text-align: center;">Action</th>
+                    
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>
+                      <span class="date_dfine ">1</span>
+                    </td>
+                     <td>
+                      <div class="task_dName ellipsis-2">Col 1</div>
+                    </td> 
+                    <td>
+                      <div class="task_OName ellipsis-2">Text</div>
+                    </td> 
+                    <td>
+                      <div class="task_newName ellipsis-2">No</div>
+                    </td>
+                    <td>
+                      <div class="task_newName ellipsis-2"></div>
+                    </td>
+                    <td>
+                       No
+                    </td>
+                    <td></td>
+                    <td>
+                      <a class="custom-edit-btn" href="#">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="custom-edit-btn" href="#">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td> 
+                  </tr>  
+              </tbody>
+            </table>
+          </div>
+          <div style="text-align: right; margin:10px 0 0;">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#table_popup" style="border:1px solid #cccc;">
+              <i class="fa fa-plus"></i> Add Column
+            </button>
+          </div>
+      </div>
+     <div class="modal-footer" style="text-align: center; margin-top:0;">
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- table_boxs Document ed-->
+
+<!-----table_popup----->
+
+<div id="table_popup" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5);">
+  <div class="modal-dialog" style="margin:3px auto;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Column</h4>
+      </div>
+      <div class="modal-body new_scroll height_defainebox">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Sequence:</label><span class="red_col">*</span>
+              <input type="text" class="form-control" placeholder="4">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Tooltip:</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+              <div class="form-group">
+                <label>Label:</label><span class="red_col">*</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Type:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Mandatory:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Default Value:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+             <div class="form-group">
+                <label>Condition for visibility:</label>
+                <input type="text" class="form-control">
+             </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Condition for editable:</label>
+              <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Text Validation:</label>
+                <select class="form-control">
+                    <option selected>---Selec---</option>
+                  </select>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <div class="form-group">
+                <label>Dropdown:</label>
+                <select class="form-control">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+          
+        </div><!------row ed------>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top: 0px;"> 
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- table_boxs st-->
+
 
 <!---snake effect--->
 
@@ -1180,7 +4058,7 @@ $(this).addClass('image-active');
 
 $('input[name="UpdateEmpN"]').click(function(){
 var valstre = $(this).val();
-$('.both_gallery').not('.'+valstre).hide();
+//$('.both_gallery').not('.'+valstre).hide();
 $('.'+valstre).show();
 })
 
@@ -1189,23 +4067,34 @@ $('.'+valstre).show();
 </script>
 
 <script>
-
+var DynamicId='';
+//getPersonCol(CurrTenplateID)
 $(document).ready(function(){
+//$('.thembx').hide();
+$( '.stepOption' ).on( 'click', 'a', function () {
+		var val=$(this).text();getPrevSteps(CurrTenplateID,'Conn','');
+		
+		if(val==" New Steps"){
+			getGroupNames();
+            getPersonCol(CurrTenplateID);LoadPartialTable();getTempID(CurrTenplateID);
+		}else if(val==" Connections"){}
+	});
+$('#tempAccess').click(function(){
+		getTempID(CurrTenplateID,"Initiation");
 
-$('.thembx').hide();
-
+});
 $('input[name="themopts"]').on('click', function(){
 var storevlus = $(this).val();
-$('.thembx').not('.'+storevlus).hide();
+//$('.thembx').not('.'+storevlus).hide();
 $('.'+storevlus).show();
 })
 
 
-$('.themsbox.Customs, .themsbox.theme').hide();
+$('.themsbox.customselect, .themsbox.themeselect').hide();
 $('input[name="them_setting"]').on('click', function(){
 
     var storval = $(this).val();
-    $('.themsbox').not('.'+storval).hide();
+   	$('.themsbox').not('.'+storval).hide();
     $('.'+storval).show();
 
   });
@@ -1215,6 +4104,55 @@ $('input[name="them_setting"]').on('click', function(){
 
 </script>
 
+<script>
 
+$(function(){
+  
+$('input[name="optradio_task"], input[name="optradio_mail"], input[name="optradio_process"]').on('click', function(){
+
+  var attrbutes = $(this).data('target');
+    $('.boxse').not('.'+attrbutes).hide();
+    $('.'+attrbutes).show();
+});
+
+/*$('input[name="optradio"]').on('click', function(){
+
+  var newattr = $(this).data('target');
+    $('.boxse').not('.'+newattr).hide();
+    $('.'+newattr).show();
+});*/
+
+});
+	//$("div.stepOption a").click(function(){
+	
+
+</script>
+
+<script>
+  
+$(function(){
+
+  $('.col-md-12.sharepoint_list').hide();
+
+  $('input[name="mult_selectionbox"]').on('click', function(){
+
+    var store_lisopton = $(this).val();
+
+    $('.hidebox').not('.'+store_lisopton).hide();
+    $('.'+store_lisopton).show();
+
+  });
+  
+ $('.optional_area').hide();
+  $('.arrow_botms').on('click', function(){
+       var selecto = $(this);
+        selecto.each(function(){
+          $(this).next('.optional_area').slideToggle();
+    });
+  }) 
+
+});
+
+</script>
 
 </body>

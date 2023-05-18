@@ -1,1 +1,781 @@
-var a425_0x532a2c=a425_0x402e;(function(_0x404dcb,_0xce5698){var _0xec9a15=a425_0x402e,_0x16997b=_0x404dcb();while(!![]){try{var _0x102946=parseInt(_0xec9a15(0x191))/0x1*(parseInt(_0xec9a15(0x1a1))/0x2)+-parseInt(_0xec9a15(0x16e))/0x3*(-parseInt(_0xec9a15(0x1e4))/0x4)+parseInt(_0xec9a15(0x169))/0x5*(parseInt(_0xec9a15(0x16a))/0x6)+parseInt(_0xec9a15(0x1cd))/0x7*(-parseInt(_0xec9a15(0x171))/0x8)+parseInt(_0xec9a15(0x194))/0x9*(parseInt(_0xec9a15(0x14d))/0xa)+parseInt(_0xec9a15(0x193))/0xb*(-parseInt(_0xec9a15(0x179))/0xc)+-parseInt(_0xec9a15(0x165))/0xd*(parseInt(_0xec9a15(0x1e9))/0xe);if(_0x102946===_0xce5698)break;else _0x16997b['push'](_0x16997b['shift']());}catch(_0x35f051){_0x16997b['push'](_0x16997b['shift']());}}}(a425_0x1745,0xa10db),$(document)[a425_0x532a2c(0x173)](function(){var _0x52d84e=a425_0x532a2c;$(_0x52d84e(0x174))[_0x52d84e(0x1dc)](function(){var _0x5a5c03=_0x52d84e,_0x45651d=$('#txtGrpName')[_0x5a5c03(0x1d7)]();let _0x428846=grpDuplicate['filter'](_0x8641d4=>{var _0x38159b=_0x5a5c03;if(_0x8641d4['Title']!=null)return _0x8641d4[_0x38159b(0x195)]['toLowerCase']()===_0x45651d[_0x38159b(0x168)]();});if(_0x428846[_0x5a5c03(0x164)]>0x0)return alert(_0x5a5c03(0x153)),![];if($[_0x5a5c03(0x1cf)]($('#txtGrpName')[_0x5a5c03(0x1d7)]())!='')addGroup(_0x5a5c03(0x199)),GetGroupUsersGroups(_0x5a5c03(0x199),0x1);else return alert(_0x5a5c03(0x1a6)),![];});}));function addGroup(_0x111837){var _0x1d0b50=a425_0x532a2c;if($[_0x1d0b50(0x1cf)]($(_0x1d0b50(0x1c7))['val']())!=''){var _0x474624,_0x187993=GetItemTypeForListNameDetails(_0x1d0b50(0x1ed));_0x474624={'__metadata':{'type':_0x187993},'Title':$(_0x1d0b50(0x1c7))[_0x1d0b50(0x1d7)]()},_0x111837==_0x1d0b50(0x199)?(AddItemToListGroups(_0x1d0b50(0x1ed),_0x474624),alert(_0x1d0b50(0x156)),$('#txtGrpName')[_0x1d0b50(0x1d7)]('')):updateUserWithIDGroup(_0x1d0b50(0x1ed),_0x474624,itemIdToUpdate,[],'');}}function GetItemTypeForListNameDetails(_0x387da8){var _0x24e8e5=a425_0x532a2c;return'SP.Data.'+_0x387da8[_0x24e8e5(0x19e)](0x0)[_0x24e8e5(0x1d1)]()+_0x387da8['split']('\x20')[_0x24e8e5(0x1c4)]('')['slice'](0x1)+'ListItem';}function AddItemToListGroups(_0x24fba5,_0x5079be){var _0x188d60=a425_0x532a2c,_0x196ce3=$[_0x188d60(0x1e6)]();return $[_0x188d60(0x1ec)]({'url':_spPageContextInfo[_0x188d60(0x1af)]+_0x188d60(0x145)+_0x24fba5+_0x188d60(0x1e1),'type':_0x188d60(0x1d5),'async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x188d60(0x178))[_0x188d60(0x1d7)](),'content-Type':_0x188d60(0x1b0)},'data':JSON[_0x188d60(0x1bf)](_0x5079be),'success':function(_0x5e5a05){var _0x415c00=_0x188d60;_0x196ce3[_0x415c00(0x15a)](_0x5e5a05);},'error':function(_0x25e146){var _0x19b025=_0x188d60;alert(JSON[_0x19b025(0x1bf)](_0x25e146)),_0x196ce3[_0x19b025(0x188)](_0x25e146);}}),_0x196ce3[_0x188d60(0x1a0)]();}function updateUserWithIDGroup(_0x2063ed,_0x4f4822,_0x594a6,_0x4970aa,_0x3cc5be){var _0xcc878f=a425_0x532a2c,_0x2f2f17=$[_0xcc878f(0x1e6)](),_0x38fa48=_spPageContextInfo[_0xcc878f(0x1af)]+_0xcc878f(0x1e5)+_0x2063ed+_0xcc878f(0x140)+_0x594a6+')';return $[_0xcc878f(0x1ec)]({'url':_0x38fa48,'type':_0xcc878f(0x1d5),'async':![],'headers':{'accept':_0xcc878f(0x1b0),'X-RequestDigest':$(_0xcc878f(0x178))['val'](),'content-Type':'application/json;odata=verbose','X-Http-Method':_0xcc878f(0x1d4),'If-Match':'*'},'data':JSON['stringify'](_0x4f4822),'success':function(_0x1c47b4){var _0x5b39ed=_0xcc878f;_0x2f2f17[_0x5b39ed(0x15a)](!![]),_0x4970aa[_0x5b39ed(0x164)]>0x0&&(_0x4970aa[_0x5b39ed(0x164)]>0x1?alert(_0x4970aa['join'](',\x20')+'\x20users\x20are\x20not\x20valid!'):alert(_0x4970aa[_0x5b39ed(0x1c4)](',\x20')+_0x5b39ed(0x163))),updateSpecificGroup(_0x3cc5be);},'error':function(_0x520a50){var _0x1b03b6=_0xcc878f;alert(JSON[_0x1b03b6(0x1bf)](_0x520a50)),_0x2f2f17[_0x1b03b6(0x188)](_0x520a50);}}),_0x2f2f17[_0xcc878f(0x1a0)]();}function getSelectedUsers(_0x4f83fd){var _0x424629=a425_0x532a2c,_0x4ac2b6=$(_0x424629(0x183)+_0x4f83fd)[_0x424629(0x1d0)](),_0x3737bc=[],_0x22c574=_spPageContextInfo[_0x424629(0x1af)]+'/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID\x20asc&$filter=ID\x20eq\x20\x27'+_0x4ac2b6+'\x27';$[_0x424629(0x1ec)]({'url':_0x22c574,'method':_0x424629(0x1da),'headers':{'Accept':_0x424629(0x1b6)},'async':![],'success':function(_0x42d36a){var _0x750871=_0x424629,_0x246d0b=_0x42d36a;if(_0x246d0b['d'][_0x750871(0x1d3)][0x0][_0x750871(0x155)][_0x750871(0x1d3)]!=null)for(var _0x4a0e31=0x0;_0x4a0e31<_0x246d0b['d']['results'][0x0][_0x750871(0x155)][_0x750871(0x1d3)]['length'];_0x4a0e31++){_0x3737bc[_0x750871(0x196)](_0x246d0b['d'][_0x750871(0x1d3)][0x0][_0x750871(0x155)][_0x750871(0x1d3)][_0x4a0e31]['ID']);}var _0x53888d='Updating\x20groups...',_0x37afbb='<br\x20/>Please\x20wait!!',_0x263119=0xc8,_0x1af3b5=0x190;SP[_0x750871(0x182)][_0x750871(0x146)](['strings.js',_0x750871(0x154)],function(){var _0xb6bdc2=_0x750871;currentDlg=SP['UI']['ModalDialog'][_0xb6bdc2(0x1a7)](_0x53888d,_0x37afbb,_0x263119,_0x1af3b5);}),setTimeout(function(){UpdateGpMember(_0x4f83fd,_0x3737bc,_0x4f83fd);},0x64);},'error':function(_0x2917c0){var _0x43cf7f=_0x424629;console[_0x43cf7f(0x185)](JSON[_0x43cf7f(0x1bf)](_0x2917c0));}});}var arrUsers=[],grpDuplicate=[];function GetGroupUsersGroups(_0x1f7b49,_0x4e9017){var _0x204e6e=a425_0x532a2c,_0x576b99='';arrUsers=[],$(_0x204e6e(0x19f))[_0x204e6e(0x17e)]('');var _0x1d4d4c=_spPageContextInfo[_0x204e6e(0x1af)]+_0x204e6e(0x159);$[_0x204e6e(0x1ec)]({'url':_0x1d4d4c,'method':_0x204e6e(0x1da),'headers':{'Accept':_0x204e6e(0x1b6)},'async':![],'success':function(_0x381541){var _0x143df0=_0x204e6e,_0x44364e=_0x381541;grpDuplicate=_0x44364e['d'][_0x143df0(0x1d3)],$(_0x143df0(0x15d))[_0x143df0(0x17e)](''),$(_0x143df0(0x144))[_0x143df0(0x17e)]('');for(var _0x37e117=0x0;_0x37e117<_0x44364e['d']['results']['length'];_0x37e117++){if(_0x37e117!=0x0){}arrUsers[_0x143df0(0x196)]({'ID':_0x37e117,'Users':_0x44364e['d']['results'][_0x37e117][_0x143df0(0x155)][_0x143df0(0x1d3)]}),console['log'](arrUsers);var _0x2b5a88=_0x44364e['d'][_0x143df0(0x1d3)][_0x37e117][_0x143df0(0x195)],_0xfdaa7a=_0x44364e['d'][_0x143df0(0x1d3)][_0x37e117]['ID'],_0x40ad76='';_0x40ad76+=_0x143df0(0x181),_0x40ad76+=_0x143df0(0x1c9)+_0x37e117+_0x143df0(0x17f)+_0x37e117+_0x143df0(0x160)+_0x37e117+'\x22\x20aria-expanded=\x22false\x22>',_0x40ad76+=_0x143df0(0x18d)+_0x37e117+'\x22>'+_0xfdaa7a+_0x143df0(0x1bb)+_0x2b5a88+_0x143df0(0x147)+_0xfdaa7a+',\x20\x27'+_0x2b5a88+_0x143df0(0x1b2),_0x40ad76+=_0x143df0(0x149)+_0x37e117+_0x143df0(0x1db)+_0x37e117+'\x22>',_0x40ad76+=_0x143df0(0x19d),_0x40ad76+=_0x143df0(0x15c)+_0x37e117+_0x143df0(0x198)+_0x37e117+_0x143df0(0x19a)+_0x37e117+_0x143df0(0x1c0)+_0x37e117+_0x143df0(0x1ea)+_0x37e117+_0x143df0(0x1a5),_0x40ad76+=_0x143df0(0x1a4),$(_0x143df0(0x19f))[_0x143df0(0x1a9)](_0x40ad76);var _0x200272='newPeoplePickerControl'+_0x37e117,_0x1d20ae=_0x200272+_0x143df0(0x1e3);SetPeoplePicker_MultiselectGroups1(_0x200272,!![]),$('#'+_0x1d20ae)[_0x143df0(0x1bd)](_0x143df0(0x13c));}currentDlg!=''&&currentDlg[_0x143df0(0x14a)]();if(_0x1f7b49==_0x143df0(0x199)){var _0x3ccf85=_0x44364e['d'][_0x143df0(0x1d3)][_0x143df0(0x164)]-0x1;$('#GroupId'+_0x3ccf85)[_0x143df0(0x167)]('aria-expanded',_0x143df0(0x1c8)),$(_0x143df0(0x1c2)+_0x3ccf85)[_0x143df0(0x1c5)](_0x143df0(0x14f)),$(_0x143df0(0x1dd)+_0x3ccf85)['removeClass'](_0x143df0(0x158)),$(_0x143df0(0x1dd)+_0x3ccf85)[_0x143df0(0x1bd)](_0x143df0(0x1bc)),$('#group'+_0x3ccf85)[_0x143df0(0x167)](_0x143df0(0x17b),_0x143df0(0x1c8));}else $(_0x143df0(0x1c2)+_0x4e9017)['attr'](_0x143df0(0x17b),_0x143df0(0x1c8)),$(_0x143df0(0x1c2)+_0x4e9017)[_0x143df0(0x1c5)](_0x143df0(0x14f)),$(_0x143df0(0x1dd)+_0x4e9017)[_0x143df0(0x1c5)](_0x143df0(0x158)),$(_0x143df0(0x1dd)+_0x4e9017)[_0x143df0(0x1bd)](_0x143df0(0x1bc)),$(_0x143df0(0x1dd)+_0x4e9017)[_0x143df0(0x167)](_0x143df0(0x17b),'true');},'error':function(_0x173244){var _0x5ee9e3=_0x204e6e;console[_0x5ee9e3(0x185)](JSON['stringify'](_0x173244));}});}function DeleteGroup(_0xe62f14,_0x572622){var _0x3ddf01=a425_0x532a2c;if(confirm(_0x3ddf01(0x1c3)+_0x572622+_0x3ddf01(0x16c))){var _0x3b38d7=$['Deferred']();return $[_0x3ddf01(0x1ec)]({'url':_spPageContextInfo[_0x3ddf01(0x1af)]+_0x3ddf01(0x1b8)+_0xe62f14+')','type':_0x3ddf01(0x1d5),'headers':{'accept':_0x3ddf01(0x1b0),'X-RequestDigest':$(_0x3ddf01(0x178))[_0x3ddf01(0x1d7)](),'IF-MATCH':'*','X-HTTP-Method':_0x3ddf01(0x177)},'success':function(_0x211b8e){var _0x312ce3=_0x3ddf01;_0x3b38d7['resolve'](_0x211b8e);var _0x481b8a=_0x312ce3(0x19b),_0x20b848='<br\x20/>Please\x20wait!!',_0x4fdf06=0xc8,_0x131cf0=0x190;SP[_0x312ce3(0x182)][_0x312ce3(0x146)](['strings.js','sp.ui.dialog.js'],function(){currentDlg=SP['UI']['ModalDialog']['showWaitScreenWithNoClose'](_0x481b8a,_0x20b848,_0x4fdf06,_0x131cf0);}),setTimeout(function(){GetGroupUsersGroups('','');},0x64);},'error':function(_0x242ac3){var _0x2ce240=_0x3ddf01;_0x3b38d7[_0x2ce240(0x188)](_0x242ac3);}}),_0x3b38d7['promise']();}}function DeleteUserFromGrp(_0x2f66d2,_0x550b9f){var _0x37423b=a425_0x532a2c;if(confirm(_0x37423b(0x166))){var _0x5a7457=$(_0x37423b(0x183)+_0x550b9f)['text'](),_0x2a88d0=[],_0x3314bf=_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID\x20asc&$filter=ID\x20eq\x20\x27'+_0x5a7457+'\x27';$['ajax']({'url':_0x3314bf,'method':_0x37423b(0x1da),'headers':{'Accept':'application/json;\x20odata=verbose'},'async':![],'success':function(_0x83625f){var _0x2b6aa2=_0x37423b,_0x4a7355=_0x83625f;if(_0x4a7355['d']['results'][0x0][_0x2b6aa2(0x155)][_0x2b6aa2(0x1d3)]!=null)for(var _0x342118=0x0;_0x342118<_0x4a7355['d'][_0x2b6aa2(0x1d3)][0x0][_0x2b6aa2(0x155)][_0x2b6aa2(0x1d3)]['length'];_0x342118++){_0x2a88d0[_0x2b6aa2(0x196)](_0x4a7355['d'][_0x2b6aa2(0x1d3)][0x0]['Approvers'][_0x2b6aa2(0x1d3)][_0x342118]['ID']);}_0x2a88d0['remove'](_0x2f66d2);var _0xdb5a3b=_0x2b6aa2(0x150),_0x578fe9=_0x2b6aa2(0x1d2),_0x168c07=0xc8,_0x2468d8=0x190;SP[_0x2b6aa2(0x182)]['loadMultiple']([_0x2b6aa2(0x1b9),_0x2b6aa2(0x154)],function(){var _0x720cd4=_0x2b6aa2;currentDlg=SP['UI'][_0x720cd4(0x1cc)][_0x720cd4(0x1a7)](_0xdb5a3b,_0x578fe9,_0x168c07,_0x2468d8);}),setTimeout(function(){UpdateGpMember(_0x550b9f,_0x2a88d0,_0x550b9f);},0x64);},'error':function(_0xea0ad8){var _0x4e6d80=_0x37423b;console['log'](JSON[_0x4e6d80(0x1bf)](_0xea0ad8));}});}}function UpdateGpMember(_0x48e0fc,_0x56589c,_0x48e0fc){var _0x4eb636=a425_0x532a2c,_0x2ac90a=$('.itemIDClass'+_0x48e0fc)[_0x4eb636(0x1d0)](),_0x11d196=[],_0x39cfcc=[],_0x1cae4b=[];_0x11d196=getPeopleUserMyGroup(_0x4eb636(0x1d9)+_0x48e0fc);if(_0x11d196['length']==0x0)_0x11d196[_0x4eb636(0x196)](0x0);else for(var _0x46a28a=0x0;_0x46a28a<_0x11d196['length'];_0x46a28a++){var _0x190129=_spPageContextInfo['webAbsoluteUrl']+_0x4eb636(0x18c)+_0x11d196[_0x46a28a]+'\x27';$[_0x4eb636(0x1ec)]({'url':_0x190129,'type':_0x4eb636(0x1da),'async':![],'headers':{'ACCEPT':_0x4eb636(0x1b0)},'success':function(_0x6cf0ed){var _0x4fd1be=_0x4eb636,_0x2ab849=_0x6cf0ed['d'][_0x4fd1be(0x1d3)];if(_0x2ab849[_0x4fd1be(0x164)]>0x0){if(_0x2ab849[0x0][_0x4fd1be(0x143)]==_0x4fd1be(0x18e)&&_0x2ab849[0x0]['PrimaryCompany']=='Primary'){}else{var _0x40229d=_0x4fd1be(0x186)+_0x11d196[_0x46a28a]+_0x4fd1be(0x172);url=_spPageContextInfo[_0x4fd1be(0x1af)]+_0x4fd1be(0x1e8)+_0x40229d,$['ajax']({'url':url,'type':'GET','async':![],'headers':{'ACCEPT':'application/json;odata=verbose'},'success':function(_0x58ce1e){var _0x3bde94=_0x4fd1be,_0x20218c=_0x58ce1e['d'][_0x3bde94(0x1d3)];if(_0x20218c[_0x3bde94(0x164)]>0x0){}else{_0x1cae4b['push'](_0x11d196[_0x46a28a]);var _0x44eb0c=_0x2ab849[0x0][_0x3bde94(0x141)][_0x3bde94(0x18b)]+'\x20'+_0x2ab849[0x0][_0x3bde94(0x141)][_0x3bde94(0x18a)];_0x39cfcc[_0x3bde94(0x196)](_0x44eb0c);}},'error':function(){var _0x2fd696=_0x4fd1be;alert(_0x2fd696(0x189));}});}}else{var _0x40229d=_0x4fd1be(0x186)+_0x11d196[_0x46a28a]+_0x4fd1be(0x172);url=_spPageContextInfo[_0x4fd1be(0x1af)]+_0x4fd1be(0x1e8)+_0x40229d,$[_0x4fd1be(0x1ec)]({'url':url,'type':_0x4fd1be(0x1da),'async':![],'headers':{'ACCEPT':_0x4fd1be(0x1b0)},'success':function(_0x11aa4f){var _0x5d926f=_0x4fd1be,_0x54908e=_0x11aa4f['d'][_0x5d926f(0x1d3)];if(_0x54908e[_0x5d926f(0x164)]>0x0){}else _0x1cae4b[_0x5d926f(0x196)](_0x11d196[_0x46a28a]),_0x39cfcc[_0x5d926f(0x196)](SharedUserName[_0x46a28a]);},'error':function(){var _0x525eb9=_0x4fd1be;alert(_0x525eb9(0x189));}});}$(_0x4fd1be(0x13e))[_0x4fd1be(0x1c5)](_0x4fd1be(0x1a8));},'error':function(){var _0x4b87de=_0x4eb636;alert(_0x4b87de(0x189));}});}_0x11d196=_0x11d196['filter'](function(_0x33aefd){var _0x2fa85b=_0x4eb636;return _0x1cae4b[_0x2fa85b(0x17a)](_0x33aefd)<0x0;}),_0x56589c=_0x56589c[_0x4eb636(0x1e7)](_0x11d196),_0x56589c=_0x56589c[_0x4eb636(0x16f)](function(_0x564c59,_0x12d68e){var _0x9d70a6=_0x4eb636;return _0x56589c[_0x9d70a6(0x17a)](_0x564c59)==_0x12d68e;});var _0x39a468,_0xafb02f=GetItemTypeForListNameDetails('ApproversGroups');_0x39a468={'__metadata':{'type':_0xafb02f},'ApproversId':{'results':_0x56589c}},updateUserWithIDGroup(_0x4eb636(0x1ed),_0x39a468,_0x2ac90a,_0x39cfcc,_0x48e0fc);var _0x2bcfd2=_0x4eb636(0x1d9)+_0x48e0fc;resetPeoplePicker(_0x2bcfd2);}function SetPeoplePicker_MultiselectGroups1(_0x580c5f,_0x2d1a34){var _0x589605=a425_0x532a2c;_0x2d1a34==null&&(_0x2d1a34=![]);var _0x389057={};_0x389057[_0x589605(0x1ba)]='User,SPGroup',_0x389057[_0x589605(0x1ad)]=0xf,_0x389057['ResolvePrincipalSource']=0xf,_0x389057[_0x589605(0x1ce)]=_0x2d1a34,_0x389057[_0x589605(0x184)]=0x32,_0x389057[_0x589605(0x1b1)]=_0x589605(0x15e),SPClientPeoplePicker_InitStandaloneControlWrapper(_0x580c5f,null,_0x389057);}var DynamicId='',grpIndex='',flag1=!![];function toggleClass(_0x38b1f2,_0x3d4b48){var _0x3b87fb=a425_0x532a2c;DynamicId=_0x3b87fb(0x1d9)+_0x3d4b48+_0x3b87fb(0x152),grpIndex=_0x3d4b48,$(_0x3b87fb(0x1c6)+_0x3d4b48)[_0x3b87fb(0x15b)]('activingss'),$('.increase_effect'+_0x3d4b48)[_0x3b87fb(0x15b)](_0x3b87fb(0x1a8)),onChangeSharing1();}function onChangeSharing1(){var _0x10d081=a425_0x532a2c,_0x59c31e=SPClientPeoplePicker[_0x10d081(0x170)][DynamicId],_0x1b6fc0='';_0x59c31e[_0x10d081(0x14b)]=function(_0x2b8c3b,_0x3bde24){var _0x574582=_0x10d081;_0x3bde24[_0x574582(0x164)]>0x0&&getSelectedUsers(grpIndex);};}function updateSpecificGroup(_0x545abf){var _0x419a45=a425_0x532a2c,_0x4f2592=$('.itemIDClass'+_0x545abf)[_0x419a45(0x1d0)](),_0x163990=[],_0x3c74cf=_spPageContextInfo['webAbsoluteUrl']+_0x419a45(0x1be)+_0x4f2592+'\x27';$['ajax']({'url':_0x3c74cf,'method':_0x419a45(0x1da),'headers':{'Accept':_0x419a45(0x1b6)},'async':!![],'success':function(_0x3ed3fd){var _0x249de8=_0x419a45,_0x4c3f92=_0x3ed3fd;console[_0x249de8(0x185)](_0x3ed3fd),$(_0x249de8(0x15d))[_0x249de8(0x17e)](''),$(_0x249de8(0x144))['html']('');for(var _0x35be83=0x0;_0x35be83<_0x4c3f92['d']['results'][_0x249de8(0x164)];_0x35be83++){if(_0x35be83!=0x0){}var _0x457231=_0x4c3f92['d']['results'][_0x35be83][_0x249de8(0x195)],_0x4d1950=_0x4c3f92['d'][_0x249de8(0x1d3)][_0x35be83]['ID'],_0x1e1a9b='';if(_0x4c3f92['d'][_0x249de8(0x1d3)][_0x35be83][_0x249de8(0x155)][_0x249de8(0x1d3)]!=null)for(var _0x43902c=0x0;_0x43902c<_0x4c3f92['d']['results'][_0x35be83]['Approvers']['results'][_0x249de8(0x164)];_0x43902c++){var _0x4ffcd8=_0x4c3f92['d'][_0x249de8(0x1d3)][_0x35be83][_0x249de8(0x155)]['results'][_0x43902c][_0x249de8(0x1d6)],_0x412bb5=_0x4c3f92['d'][_0x249de8(0x1d3)][_0x35be83][_0x249de8(0x155)][_0x249de8(0x1d3)][_0x43902c]['ID'];if(_0x4ffcd8!=null&&_0x4ffcd8!=''){var _0x2ba697=_0x249de8(0x17c)+_0x4ffcd8+'\x27\x20';$[_0x249de8(0x13f)](getItemsWithQueryItems(_0x249de8(0x1a2),_0x2ba697))[_0x249de8(0x1b7)](function(_0x13691a){var _0x2b6102=_0x249de8;UResults=_0x13691a['results'];var _0x26cc8d=UResults[0x0];if(UResults[_0x2b6102(0x164)]>0x0)_0x26cc8d[_0x2b6102(0x1d8)]['results'][_0x2b6102(0x164)]>0x0?attachmentUrl=_0x26cc8d[_0x2b6102(0x1d8)][_0x2b6102(0x1d3)][0x0]['ServerRelativeUrl']:attachmentUrl=_spPageContextInfo[_0x2b6102(0x1af)]+_0x2b6102(0x1ca)+escapeProperly(_0x26cc8d[_0x2b6102(0x141)][_0x2b6102(0x1d6)]),_0x1e1a9b+=_0x2b6102(0x1ac)+attachmentUrl+_0x2b6102(0x1ee),_0x1e1a9b+='<div\x20class=\x22groups-card-body\x22><div\x20class=\x22groups-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22member-name\x20text-ellipsis\x22>'+_0x26cc8d[_0x2b6102(0x141)][_0x2b6102(0x18b)]+'\x20'+_0x26cc8d[_0x2b6102(0x141)][_0x2b6102(0x18a)]+_0x2b6102(0x14c),_0x1e1a9b+=_0x2b6102(0x190)+_0x26cc8d['Designation']+_0x2b6102(0x142)+_0x26cc8d[_0x2b6102(0x176)]['Title']+_0x2b6102(0x13d),_0x1e1a9b+=_0x2b6102(0x1cb)+_0x4ffcd8+'\x22>'+_0x4ffcd8+'</a></p></div>',_0x1e1a9b+=_0x2b6102(0x162)+_0x412bb5+',\x20'+_0x545abf+_0x2b6102(0x1b3),_0x1e1a9b+=_0x2b6102(0x1a4);else{var _0x56fc23=_0x2b6102(0x175)+_0x4ffcd8+_0x2b6102(0x15f);$[_0x2b6102(0x13f)](getItemsWithQueryItems(_0x2b6102(0x1aa),_0x56fc23))[_0x2b6102(0x1b7)](function(_0x5c9d18){var _0x3c279a=_0x2b6102;UResults=_0x5c9d18[_0x3c279a(0x1d3)];var _0x195cfb=UResults[0x0];UResults[_0x3c279a(0x164)]>0x0&&(_0x195cfb[_0x3c279a(0x1d8)][_0x3c279a(0x1d3)][_0x3c279a(0x164)]>0x0?attachmentUrl=_0x195cfb[_0x3c279a(0x1d8)][_0x3c279a(0x1d3)][0x0][_0x3c279a(0x16d)]:attachmentUrl=_spPageContextInfo['webAbsoluteUrl']+_0x3c279a(0x1ca)+escapeProperly(_0x195cfb[_0x3c279a(0x151)]),_0x1e1a9b+='<div\x20class=\x22col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22groups-card\x22><div\x20class=\x22groups-card-head\x22><img\x20src='+attachmentUrl+_0x3c279a(0x1ee),_0x1e1a9b+='<div\x20class=\x22groups-card-body\x22><div\x20class=\x22groups-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22member-name\x20text-ellipsis\x22>'+_0x195cfb[_0x3c279a(0x1e2)][_0x3c279a(0x195)]+'\x20</h3>',_0x1e1a9b+=_0x3c279a(0x190)+_0x195cfb[_0x3c279a(0x1df)]+_0x3c279a(0x142)+_0x195cfb[_0x3c279a(0x1b4)][_0x3c279a(0x195)]+_0x3c279a(0x13d),_0x1e1a9b+=_0x3c279a(0x1cb)+_0x4ffcd8+'\x22>'+_0x4ffcd8+'</a></p></div>',_0x1e1a9b+=_0x3c279a(0x162)+_0x412bb5+',\x20'+_0x545abf+');\x22><button\x20type=\x22button\x22\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22><i\x20class=\x22fa\x20fa-times\x22\x20aria-hidden=\x22true\x22></i></button></div>',_0x1e1a9b+=_0x3c279a(0x1a4));});}});}}_0x1e1a9b+='</div>',$('#idForUpdate'+_0x545abf)[_0x249de8(0x17e)](_0x1e1a9b);var _0x1eb383=_0x249de8(0x1d9)+_0x35be83;}currentDlg!=''&&currentDlg['close']();},'error':function(_0x4b22e7){var _0x31286d=_0x419a45;console['log'](JSON[_0x31286d(0x1bf)](_0x4b22e7));}});}function a425_0x1745(){var _0x13edab=['application/json;odata=verbose','Width','\x27);\x22><i\x20class=\x22fa\x20fa-trash-o\x22></i></button></div><i\x20class=\x22fa\x20fa-chevron-down\x22></i></a></h4></div>',');\x22><button\x20type=\x22button\x22\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22><i\x20class=\x22fa\x20fa-times\x22\x20aria-hidden=\x22true\x22></i></button></div>','Client_Name','i:0#.f|membership|','application/json;\x20odata=verbose','done','/_api/web/lists/GetByTitle(\x27ApproversGroups\x27)/items(','strings.js','PrincipalAccountType','</label><span\x20class=\x22groupName0\x22\x20style=\x22color:\x20black;\x22>','panel-collapse\x20collapse\x20in','addClass','/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID\x20asc&$filter=ID\x20eq\x20\x27','stringify','\x22\x20></i>\x20</button><span\x20id=\x22newPeoplePickerControl','\x27)/items/','#GroupId','Do\x20you\x20want\x20to\x20delete\x20the\x20\x27','join','removeClass','.tottglinbtn','#txtGrpName','true','<a\x20class=\x22panel-title-box\x20collapsed\x22\x20id=\x22GroupId','/_layouts/15/userphoto.aspx?accountname=','<p\x20class=\x22member-email\x20text-ellipsis\x22><a\x20href=\x22mailto:','ModalDialog','1902341CrOlLF','AllowMultipleValues','trim','text','toUpperCase','<br\x20/>Please\x20wait!!','results','PATCH','POST','EMail','val','AttachmentFiles','newPeoplePickerControl','GET','\x22\x20class=\x22panel-collapse\x20collapse\x22\x20aria-expanded=\x22false\x22><div\x20class=\x22panel-body\x22><div\x20class=\x22row\x20group-inner-scroll\x20scrollbar-panel\x22\x20id=\x22idForUpdate','click','#group','SPGroupID','Designation','Failed','\x27)/items','LoginName','_TopSpan_NotificationSpan','1336aRPgDa','/_api/Web/Lists/getByTitle(\x27','Deferred','concat','/_api/web/lists/getbytitle(\x27ExternalUsers\x27)/items/','14GsEUZU','\x22\x20class=\x22form-control\x20increase_effect\x20increase_effect','\x20</h3>','ajax','ApproversGroups','\x20alt=\x22user\x22></div>','suggestion_span','</span></p>','.increase_effect','when','\x27)/Items(','LogonName','</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>','Status','#myTable\x20tbody\x20tr','/_api/web/lists/getbytitle(\x27','loadMultiple','</span><div\x20class=\x22remove-group-btn-box\x22><button\x20type=\x22button\x22\x20class=\x22remove_groupsec\x22\x20onclick=\x22DeleteGroup(','EntityType','<div\x20id=\x22group','close','OnValueChangedClientScript','</h3>','6909970ePeRBV','forEach','collapsed','Updating\x20groups...','email','_TopSpan','Duplicate\x20group\x20name!','sp.ui.dialog.js','Approvers','New\x20group\x20is\x20created','EntityData','panel-collapse\x20collapse','/_api/web/lists/getbytitle(\x27ApproversGroups\x27)/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID\x20asc','resolve','toggleClass','<div\x20class=\x22addeventcircle\x22>\x20<button\x20class=\x22btn\x20custom-btn\x20tottglinbtn','#thbodyControl','321px','\x27&$top=5000',')\x22\x20data-toggle=\x22collapse\x22\x20data-parent=\x22#accordGroup\x22\x20href=\x22#group','apply','<div\x20class=\x22text-right\x22\x20onclick=\x22DeleteUserFromGrp(','\x20user\x20is\x20not\x20valid!','length','27840670fVJepN','Do\x20you\x20want\x20to\x20delete\x20this\x20user?','attr','toLowerCase','10EQOukE','2575686FskfFd','/_api/web/sitegroups/getbyid(','\x27\x20group?','ServerRelativeUrl','6036rpeuiY','filter','SPClientPeoplePickerDict','16IdvJpv','\x27\x20and\x20Status\x20eq\x20\x27Active\x27&$top=5000','ready','#btnAddNewGroup','?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email\x20eq\x20\x27','Department','DELETE','#__REQUESTDIGEST','12YycYYW','indexOf','aria-expanded','?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20LogonName/EMail\x20eq\x20\x27','</a></p></div>','html','\x22\x20onclick=\x22hidePeoplePickers(','System\x20Account','<div\x20class=\x22panel\x20panel-default\x20addGrpUser\x22><div\x20class=\x22panel-heading\x20custom-panel-heading\x22><h4\x20class=\x22panel-title\x22>','SOD','.itemIDClass','MaximumEntitySuggestions','log','?$select=Status,LoginName/Id&$expand=LoginName&$filter=LoginName/Id\x20eq\x20\x27','Users','reject','Error\x20getting\x20the\x20Employee\x20status.','LastName','FirstName','/_api/lists/getbytitle(\x27Employees\x27)/items?$select=LogonName/ID,LogonName/FirstName,LogonName/LastName,Department/DepartmentName,*&$Expand=LogonName,AttachmentFiles,Department&$Filter=LogonName/ID\x20eq\x20\x27','<label\x20style=\x22display:none;\x22\x20class=\x22itemIDClass','Active','siteAbsoluteUrl','<p\x20class=\x22member-deg\x20text-ellipsis\x22><span>','33HIEZNq','#idForUpdate','2090847CyIOUj','9emUKTG','Title','push',')/users','\x22\x20type=\x22button\x22\x20onclick=\x22toggleClass(this\x20,','Add',');\x22>\x20<i\x20class=\x22fa\x20fa-plus\x20tottglinbtn','Deleting\x20group...','<div\x20class=\x22groups-card-body\x22><div\x20class=\x22groups-card-body-info\x20text-ellipsis\x22><h3\x20class=\x22member-name\x20text-ellipsis\x22>','</div><div\x20class=\x22row\x20overflow_sec\x22><div\x20class=\x22col-xs-12\x22><div\x20class=\x22add-menber-dropdown\x22>','charAt','#accordGroup','promise','79594AiYejY','Employees','DisplayText','</div></div></div>','\x22></span>\x20\x20</div>','Kindly\x20enter\x20group\x20name.','showWaitScreenWithNoClose','activingss','append','ExternalUsers','Key','<div\x20class=\x22col-md-4\x20col-sm-6\x20col-xs-12\x22><div\x20class=\x22groups-card\x22><div\x20class=\x22groups-card-head\x22><img\x20src=','SearchPrincipalSource','DeleteProcessedUser','webAbsoluteUrl'];a425_0x1745=function(){return _0x13edab;};return a425_0x1745();}function resetPeoplePicker(_0xdd0c49){var _0x424eef=a425_0x532a2c,_0x360647=this['SPClientPeoplePicker'][_0x424eef(0x170)][_0xdd0c49+_0x424eef(0x152)],_0x4c29e7=_0x360647['GetAllUserInfo']();_0x4c29e7[_0x424eef(0x14e)](function(_0x8c97a1){var _0x3cb0de=_0x424eef;_0x360647[_0x3cb0de(0x1ae)](_0x4c29e7[_0x8c97a1]);});}function hidePeoplePickers(_0x52f0df){var _0xd302c9=a425_0x532a2c;$(_0xd302c9(0x13e))['removeClass'](_0xd302c9(0x1a8)),console[_0xd302c9(0x185)]();var _0x33ab04=$(_0xd302c9(0x192)+_0x52f0df)['html']()[_0xd302c9(0x164)];if(_0x33ab04>0x0)return![];var _0x472395='',_0xe1859f=arrUsers[_0xd302c9(0x16f)](function(_0xa1d5c6){return _0xa1d5c6['ID']==_0x52f0df;});if(_0xe1859f[0x0][_0xd302c9(0x187)]!=undefined)for(var _0xf9c801=0x0;_0xf9c801<_0xe1859f[0x0][_0xd302c9(0x187)][_0xd302c9(0x164)];_0xf9c801++){var _0x362e92=_0xe1859f[0x0][_0xd302c9(0x187)][_0xf9c801][_0xd302c9(0x1d6)],_0x1715f3=_0xe1859f[0x0][_0xd302c9(0x187)][_0xf9c801]['ID'];if(_0x362e92!=null&&_0x362e92!=''){var _0x5271d0='?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20PrimaryCompany\x20eq\x20\x27Primary\x27\x20and\x20LogonName/EMail\x20eq\x20\x27'+_0x362e92+'\x27\x20';$['when'](getItemsWithQueryItems(_0xd302c9(0x1a2),_0x5271d0))[_0xd302c9(0x1b7)](function(_0x353ec0){var _0x155ffd=_0xd302c9;UResults=_0x353ec0[_0x155ffd(0x1d3)];var _0x52cc11=UResults[0x0];if(UResults['length']>0x0)_0x52cc11[_0x155ffd(0x1d8)][_0x155ffd(0x1d3)][_0x155ffd(0x164)]>0x0?attachmentUrl=_0x52cc11['AttachmentFiles']['results'][0x0][_0x155ffd(0x16d)]:attachmentUrl=_spPageContextInfo['webAbsoluteUrl']+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x52cc11[_0x155ffd(0x141)][_0x155ffd(0x1d6)]),_0x472395+=_0x155ffd(0x1ac)+attachmentUrl+_0x155ffd(0x1ee),_0x472395+=_0x155ffd(0x19c)+_0x52cc11['LogonName']['FirstName']+'\x20'+_0x52cc11[_0x155ffd(0x141)]['LastName']+_0x155ffd(0x14c),_0x472395+='<p\x20class=\x22member-deg\x20text-ellipsis\x22><span>'+_0x52cc11[_0x155ffd(0x1df)]+'</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>'+_0x52cc11['Department'][_0x155ffd(0x195)]+'</span></p>',_0x472395+=_0x155ffd(0x1cb)+_0x362e92+'\x22>'+_0x362e92+_0x155ffd(0x17d),_0x472395+=_0x155ffd(0x162)+_0x1715f3+',\x20'+_0x52f0df+');\x22><button\x20type=\x22button\x22\x20class=\x22btn\x20remove-group-btn\x20remove-btn\x20close\x20close-round\x22><i\x20class=\x22fa\x20fa-times\x22\x20aria-hidden=\x22true\x22></i></button></div>',_0x472395+='</div></div></div>';else{var _0x19021f=_0x155ffd(0x175)+_0x362e92+_0x155ffd(0x15f);$['when'](getItemsWithQueryItems('ExternalUsers',_0x19021f))[_0x155ffd(0x1b7)](function(_0x4d70a0){var _0x58f3aa=_0x155ffd;UResults=_0x4d70a0[_0x58f3aa(0x1d3)];var _0x498054=UResults[0x0];UResults[_0x58f3aa(0x164)]>0x0&&(_0x498054[_0x58f3aa(0x1d8)][_0x58f3aa(0x1d3)][_0x58f3aa(0x164)]>0x0?attachmentUrl=_0x498054['AttachmentFiles'][_0x58f3aa(0x1d3)][0x0]['ServerRelativeUrl']:attachmentUrl=_spPageContextInfo['webAbsoluteUrl']+_0x58f3aa(0x1ca)+escapeProperly(_0x498054[_0x58f3aa(0x151)]),_0x472395+=_0x58f3aa(0x1ac)+attachmentUrl+'\x20alt=\x22user\x22></div>',_0x472395+=_0x58f3aa(0x19c)+_0x498054[_0x58f3aa(0x1e2)][_0x58f3aa(0x195)]+_0x58f3aa(0x1eb),_0x472395+=_0x58f3aa(0x190)+_0x498054[_0x58f3aa(0x1df)]+_0x58f3aa(0x142)+_0x498054['Client_Name']['Title']+'</span></p>',_0x472395+=_0x58f3aa(0x1cb)+_0x362e92+'\x22>'+_0x362e92+_0x58f3aa(0x17d),_0x472395+=_0x58f3aa(0x162)+_0x1715f3+',\x20'+_0x52f0df+_0x58f3aa(0x1b3),_0x472395+=_0x58f3aa(0x1a4));});}});}}$(_0xd302c9(0x192)+_0x52f0df)[_0xd302c9(0x17e)](_0x472395);}function getPeopleUserMyGroup(_0x4e72ed){var _0x56863=a425_0x532a2c;SharedUserName=[];var _0x520a17=new Array(),_0x2a79b4=$('[id^=\x27'+_0x4e72ed+'\x27]'),_0x28e280=SPClientPeoplePicker[_0x56863(0x170)][_0x2a79b4[0x1]['id']],_0x493a07=_0x28e280['GetAllUserInfo']();if(_0x493a07['length']>0x0){var _0x136d59=new Array(),_0x115e71=new Array();for(var _0x30a3f3=0x0;_0x30a3f3<_0x493a07[_0x56863(0x164)];_0x30a3f3++){var _0x1be91d=_0x493a07[_0x30a3f3][_0x56863(0x1ab)],_0x155ceb=_0x493a07[_0x30a3f3][_0x56863(0x148)];if(_0x155ceb=='User')_0x520a17['push'](GetUserIdGroup(_0x493a07[_0x30a3f3][_0x56863(0x1ab)])),SharedUserName[_0x56863(0x196)](_0x493a07[_0x30a3f3][_0x56863(0x1a3)]);else{var _0x1be91d=_0x493a07[_0x30a3f3][_0x56863(0x157)][_0x56863(0x1de)],_0x54de8a=new Array();_0x54de8a[_0x56863(0x196)](siteuser(_0x1be91d));var _0xcb36f8=_0x520a17[_0x56863(0x1e7)][_0x56863(0x161)]([],_0x54de8a);_0x520a17=_0x520a17[_0x56863(0x1e7)](_0xcb36f8);}}}return _0x520a17;}function a425_0x402e(_0x4e1ba5,_0x2bdc6f){var _0x1745ae=a425_0x1745();return a425_0x402e=function(_0x402e2f,_0x34fd44){_0x402e2f=_0x402e2f-0x13c;var _0xa4a51f=_0x1745ae[_0x402e2f];return _0xa4a51f;},a425_0x402e(_0x4e1ba5,_0x2bdc6f);}function GetUserIdGroup(_0x35f611){var _0x195c6c=a425_0x532a2c,_0x242c87='',_0x5870b5=_0x195c6c(0x1b5),_0x107da6=_spPageContextInfo[_0x195c6c(0x18f)],_0x3c356f=_0x35f611;return $['ajax']({'url':_0x107da6+'/_api/web/siteusers(@v)?@v=\x27'+encodeURIComponent(_0x3c356f)+'\x27','method':'GET','headers':{'Accept':_0x195c6c(0x1b6)},'async':![],'success':function(_0x22482d){_0x242c87=_0x22482d['d']['Id'];},'error':function(_0xab9743){var _0x4e62fd=_0x195c6c;console[_0x4e62fd(0x185)](JSON['stringify'](_0xab9743));}}),_0x242c87;}function siteuser(_0x389d41){var _0x2194b7=a425_0x532a2c,_0x5ed0da=[];return $[_0x2194b7(0x1ec)]({'url':_spPageContextInfo[_0x2194b7(0x1af)]+_0x2194b7(0x16b)+_0x389d41+_0x2194b7(0x197),'type':_0x2194b7(0x1da),'async':![],'headers':{'Accept':_0x2194b7(0x1b0)},'success':function(_0x38a24e,_0x49e276,_0x4546e4){var _0x3ea785=_0x2194b7,_0x2a830b=_0x38a24e['d'][_0x3ea785(0x1d3)];for(var _0x21aded=0x0;_0x21aded<_0x2a830b[_0x3ea785(0x164)];_0x21aded++){_0x2a830b=$['grep'](_0x2a830b,function(_0x1eb77b){var _0x4daa6f=_0x3ea785;return _0x1eb77b[_0x4daa6f(0x195)]!==_0x4daa6f(0x180);}),_0x2a830b[_0x3ea785(0x164)]>0x0&&_0x5ed0da[_0x3ea785(0x196)](GetUserIdGroups(_0x2a830b[_0x21aded][_0x3ea785(0x1e2)]));}},'error':function(_0x48a472,_0xd1204c,_0x2ec854){var _0x56b76a=_0x2194b7;console[_0x56b76a(0x185)](_0x56b76a(0x1e0));}}),_0x5ed0da;}function getItemsWithQueryItems(_0x14271b,_0x5b94d3){var _0x4df635=a425_0x532a2c;return DeferredObj=$[_0x4df635(0x1e6)](),$[_0x4df635(0x1ec)]({'url':_spPageContextInfo[_0x4df635(0x1af)]+'/_api/web/lists/getbytitle(\x27'+_0x14271b+_0x4df635(0x1c1)+_0x5b94d3,'type':_0x4df635(0x1da),'async':![],'headers':{'ACCEPT':_0x4df635(0x1b0),'X-RequestDigest':$('#__REQUESTDIGEST')[_0x4df635(0x1d7)]()},'success':function(_0x1ac4c0){var _0x16e5ac=_0x4df635;DeferredObj[_0x16e5ac(0x15a)](_0x1ac4c0['d']);},'error':function(_0xde6b5){var _0x1a1643=_0x4df635;DeferredObj[_0x1a1643(0x188)](_0xde6b5);}}),DeferredObj[_0x4df635(0x1a0)]();};
+﻿$(document).ready(function(){
+  $("#btnAddNewGroup").click(function() {
+  var title=$("#txtGrpName").val();
+  	let result = grpDuplicate.filter(obj => {
+					if(obj.Title!=null){
+				  		return obj.Title.toLowerCase()=== title.toLowerCase();
+				  	}
+				})
+	if(result.length>0){alert("Duplicate group name!");return false;}			
+	if ($.trim($("#txtGrpName").val()) != "") {
+			addGroup('Add');
+			GetGroupUsersGroups('Add',1);
+	}else{
+        alert("Kindly enter group name.");
+        return false;
+    }
+			
+});
+
+});
+function addGroup(commandTYpe) {
+    if ($.trim($("#txtGrpName").val()) != "") {
+        var Metadata;
+        var ItemType = GetItemTypeForListNameDetails('ApproversGroups');
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Title: $("#txtGrpName").val(),
+            //LogonUserId: _spPageContextInfo.userId
+        };
+        if (commandTYpe == "Add") {
+            AddItemToListGroups('ApproversGroups', Metadata);
+            alert('New group is created');
+            $("#txtGrpName").val('');
+        } else {
+            updateUserWithIDGroup('ApproversGroups', Metadata, itemIdToUpdate, [], '');
+        }
+    }
+
+}
+
+function GetItemTypeForListNameDetails(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+function AddItemToListGroups(ListName, Metadata) {
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            // console.log(data);
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function updateUserWithIDGroup(ListName, Metadata, ID, arrInvalidUsers, groupIndex) {
+
+    var dfd = $.Deferred();
+    var oweburl = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/getByTitle('" + ListName + "')/Items(" + ID + ")";
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (RESULT) {
+            dfd.resolve(true);
+            if (arrInvalidUsers.length > 0) {
+                if (arrInvalidUsers.length > 1) {
+                    alert(arrInvalidUsers.join(", ") + " users are not valid!");
+                }
+                else{
+                    alert(arrInvalidUsers.join(", ") + " user is not valid!");
+                }
+            }
+            updateSpecificGroup(groupIndex);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+function getSelectedUsers(groupIndex) {
+    var UpdateId = $(".itemIDClass" + groupIndex).text();
+    var arrSavedUsersId = [];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApproversGroups')/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID asc&$filter=ID eq '" + UpdateId + "'";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var response = data;
+            if (response.d.results[0].Approvers.results != null) {
+                for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[0].Approvers.results.length; subGrroupIndex++) {
+                    arrSavedUsersId.push(response.d.results[0].Approvers.results[subGrroupIndex].ID);
+                }
+            }
+            //Loader
+            var dlgTitle = 'Updating groups...';
+            var dlgMsg = '<br />Please wait!!';
+            var dlgHeight = 200;
+            var dlgWidth = 400;
+            SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+                currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+            });
+            setTimeout(function () {
+                UpdateGpMember(groupIndex, arrSavedUsersId, groupIndex);
+            }, 100);
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+var arrUsers=[];
+var grpDuplicate=[];
+function GetGroupUsersGroups(Action, groupCount) {
+    var attachmentUrl = '';arrUsers=[];
+    $('#accordGroup').html('');
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApproversGroups')/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID asc";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var response = data;
+            grpDuplicate=response.d.results;
+            $('#thbodyControl').html('');
+            $('#myTable tbody tr').html('');
+            //DefaultRowGroups1();
+            //your code goes here    
+            //AddMoreGroups();
+            for (var groupIndex = 0; groupIndex < response.d.results.length; groupIndex++) {
+                if (groupIndex != 0) {
+                    //Generate table
+                    //AddRowGroups(); //Add new row
+                    //RemoveRowGroups(); //Remove Event on table row
+                }
+                arrUsers.push({"ID": groupIndex, "Users": response.d.results[groupIndex].Approvers.results});
+                console.log(arrUsers);
+                var groupName = response.d.results[groupIndex].Title;
+                //$('.groupName' + groupIndex).val(groupName);
+                var currentItemID = response.d.results[groupIndex].ID;
+                //$('.itemIDClass' + groupIndex).text(currentItemID);
+                var defaultRows = '';
+                defaultRows += '<div class="panel panel-default addGrpUser"><div class="panel-heading custom-panel-heading"><h4 class="panel-title">';
+                defaultRows += '<a class="panel-title-box collapsed" id="GroupId' + groupIndex + '" onclick="hidePeoplePickers(' + groupIndex + ')" data-toggle="collapse" data-parent="#accordGroup" href="#group' + groupIndex + '" aria-expanded="false">';
+                defaultRows += '<label style="display:none;" class="itemIDClass' + groupIndex + '">' + currentItemID + '</label><span class="groupName0" style="color: black;">' + groupName + '</span><div class="remove-group-btn-box"><button type="button" class="remove_groupsec" onclick="DeleteGroup(' + currentItemID + ', \'' + groupName + '\');"><i class="fa fa-trash-o"></i></button></div><i class="fa fa-chevron-down"></i></a></h4></div>';
+                defaultRows += '<div id="group' + groupIndex + '" class="panel-collapse collapse" aria-expanded="false"><div class="panel-body"><div class="row group-inner-scroll scrollbar-panel" id="idForUpdate' + groupIndex + '">';
+                /*if (response.d.results[groupIndex].Approvers.results != null) {
+                    for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[groupIndex].Approvers.results.length; subGrroupIndex++) {
+                        var userNamecurretn = response.d.results[groupIndex].Approvers.results[subGrroupIndex].EMail;
+                        var GroupUserId = response.d.results[groupIndex].Approvers.results[subGrroupIndex].ID;
+                        if (userNamecurretn != null && userNamecurretn != "") {
+                            //Group User Bind
+                            var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and PrimaryCompany eq 'Primary' and LogonName/EMail eq '" + userNamecurretn + "' ";
+                            $.when(CommonFunction.getItemsWithQueryItem('Employees', Query)).done(function (UserResults) {
+                                UResults = UserResults.results;
+                                var value = UResults[0];
+                                if (UResults.length > 0) {
+                                    if (value.AttachmentFiles.results.length > 0) {
+                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+                                    }
+                                    else {
+                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                                    }
+                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LogonName.FirstName + ' ' + value.LogonName.LastName + '</h3>';
+                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Department.Title + '</span></p>';
+                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + groupIndex + ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+
+                                }
+                                else {
+                                	//External Users
+                                	var Query = "?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email eq '" + userNamecurretn + "'&$top=5000";
+		                            $.when(CommonFunction.getItemsWithQueryItem('ExternalUsers', Query)).done(function (UserResults) {
+		                                UResults = UserResults.results;
+		                                var value = UResults[0];
+		                                if (UResults.length > 0) {
+		                                    if (value.AttachmentFiles.results.length > 0) {
+		                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+		                                    }
+		                                    else {
+		                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.email);
+		                                    }
+		                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+		                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LoginName.Title+ ' </h3>';
+		                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Client_Name.Title + '</span></p>';
+		                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+		                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + groupIndex + ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+		                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+		
+		                                }
+		                            });
+                                }
+                            });
+                            //setPeoplePickerUsersInfoCurrentGroups("newPeoplePickerControl" + groupIndex, response.d.results[groupIndex].SharedUsers.results[subGrroupIndex].UserName);
+                        }
+                    }
+                }*///For loop
+                //Add/Delete memeber to Group
+                defaultRows += '</div><div class="row overflow_sec"><div class="col-xs-12"><div class="add-menber-dropdown">';
+                defaultRows += '<div class="addeventcircle"> <button class="btn custom-btn tottglinbtn'+groupIndex+'" type="button" onclick="toggleClass(this ,'+groupIndex+');"> <i class="fa fa-plus tottglinbtn'+groupIndex+'" ></i> </button><span id="newPeoplePickerControl'+groupIndex+'" class="form-control increase_effect increase_effect'+groupIndex+'"></span>  </div>';
+
+                //defaultRows += '<button type="button" class="btn custom-btn" onclick="openAddMemberPopup(' + groupIndex + ')" data-toggle="dropdown">Add</button><ul id = AddMemberPopup' + groupIndex + ' class="add-menber-menu" style="display:none;">';
+                //defaultRows += '<li><div class="form-group custom-form-group" onchange="getSelectedUsers(' + groupIndex + ')"><span id="newPeoplePickerControl' + groupIndex + '" ></span></div></li>';
+                //defaultRows += '<li class="text-center"><button type="button" class="btn custom-btn" id="addMember' + groupIndex + '" >Submit</button></li></ul></div>';
+               // defaultRows += '</div></div>';
+                defaultRows += '</div></div></div>';
+                $('#accordGroup').append(defaultRows);
+                var PeoplePickerId = "newPeoplePickerControl" + groupIndex;
+                var addCls=PeoplePickerId+"_TopSpan_NotificationSpan";
+                 
+                SetPeoplePicker_MultiselectGroups1(PeoplePickerId, true);$("#"+addCls).addClass("suggestion_span");
+            }
+            if (currentDlg != "") {
+                currentDlg.close();
+            }
+            if(Action == "Add") {
+	            var IdCount = response.d.results.length - 1;
+	            $("#GroupId" + IdCount ).attr('aria-expanded', "true");
+				$("#GroupId" + IdCount ).removeClass('collapsed');
+				$("#group" + IdCount ).removeClass('panel-collapse collapse');
+				$("#group" + IdCount ).addClass('panel-collapse collapse in');
+				$("#group" + IdCount ).attr('aria-expanded', "true");
+			}
+			else{
+	            $("#GroupId" + groupCount).attr('aria-expanded', "true");
+				$("#GroupId" + groupCount).removeClass('collapsed');
+				$("#group" + groupCount).removeClass('panel-collapse collapse');
+				$("#group" + groupCount).addClass('panel-collapse collapse in');
+				$("#group" + groupCount).attr('aria-expanded', "true");
+
+			}
+        },
+        error: function (data) {
+            //currentDlg.close();
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+
+function DeleteGroup(currentGroupItemId, groupName) {
+    if (confirm("Do you want to delete the '" + groupName + "' group?")) {
+        var dfd = $.Deferred();
+
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApproversGroups')/items(" + currentGroupItemId + ")",
+            type: "POST",
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "IF-MATCH": "*",
+                "X-HTTP-Method": "DELETE"
+            },
+            success: function (data) {
+                dfd.resolve(data);
+                //Loader
+                var dlgTitle = 'Deleting group...';
+                var dlgMsg = '<br />Please wait!!';
+                var dlgHeight = 200;
+                var dlgWidth = 400;
+                SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+                    currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+                });
+                setTimeout(function () {
+                    GetGroupUsersGroups('', '');
+                }, 100);
+            },
+            error: function (error) {
+                // alert(JSON.stringify(error));
+                dfd.reject(error);
+            }
+        });
+        return dfd.promise();
+    }
+}
+
+
+function DeleteUserFromGrp(GroupUserId, GroupIdCount) {
+	if (confirm("Do you want to delete this user?")) {
+	    var UpdateId = $(".itemIDClass" + GroupIdCount).text();
+	    var arrSavedUsersId = [];
+	    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApproversGroups')/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID asc&$filter=ID eq '" + UpdateId + "'";
+	    $.ajax({
+	        url: Ownurl,
+	        method: "GET",
+	        headers: {
+	            "Accept": "application/json; odata=verbose"
+	        },
+	        async: false,
+	        success: function (data) {
+	            var response = data;
+	            if (response.d.results[0].Approvers.results != null) {
+	                for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[0].Approvers.results.length; subGrroupIndex++) {
+	                    arrSavedUsersId.push(response.d.results[0].Approvers.results[subGrroupIndex].ID);
+	                }
+	            }
+	            arrSavedUsersId.remove(GroupUserId);
+	            //Loader
+	            var dlgTitle = 'Updating groups...';
+	            var dlgMsg = '<br />Please wait!!';
+	            var dlgHeight = 200;
+	            var dlgWidth = 400;
+	            SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+	                currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+	            });
+	            setTimeout(function () {
+	                UpdateGpMember(GroupIdCount, arrSavedUsersId, GroupIdCount);
+	            }, 100);
+	
+	        },
+	        error: function (data) {
+	            console.log(JSON.stringify(data));
+	        }
+	    });
+	}
+}
+
+function UpdateGpMember(groupIndex, arrSavedUsersId, groupIndex) {
+    var UpdateId = $(".itemIDClass" + groupIndex).text();
+    var sharedUserArrayList = [];
+    var arrInvalidUsers = [];
+    var InvalidUsersId = [];
+    sharedUserArrayList = getPeopleUserMyGroup("newPeoplePickerControl" + groupIndex);
+    if (sharedUserArrayList.length == 0) {
+        sharedUserArrayList.push(0);
+    }
+    else {
+        //Check if the user is valid or not
+        for (var userId = 0; userId < sharedUserArrayList.length; userId++) {
+            var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('Employees')/items?$select=LogonName/ID,LogonName/FirstName,LogonName/LastName,Department/DepartmentName,*&$Expand=LogonName,AttachmentFiles,Department&$Filter=LogonName/ID eq '" + sharedUserArrayList[userId] + "'";
+            $.ajax({
+                url: requestUri,
+                type: "GET",
+                async: false,
+                headers: {
+                    "ACCEPT": "application/json;odata=verbose"
+                },
+                success: function (data) {
+                    var items = data.d.results;
+                    if (items.length > 0) {
+                        if (items[0].Status == "Active" && items[0].PrimaryCompany == 'Primary') {
+                            //User is valid
+                        }
+                        else {
+	                        var Query = "?$select=Status,LoginName/Id&$expand=LoginName&$filter=LoginName/Id eq '" + sharedUserArrayList[userId] + "' and Status eq 'Active'&$top=5000";
+			                url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+			                $.ajax({
+				                url: url,
+				                type: "GET",
+				                async: false,
+				                headers: {
+				                    "ACCEPT": "application/json;odata=verbose"
+				                },
+				                success: function (data) {
+				                    var ExtResults = data.d.results;
+				                    if (ExtResults.length > 0) {
+				                        //User is valid
+				                    }
+                            		else {
+			                            InvalidUsersId.push(sharedUserArrayList[userId]);
+			                            var FullName = items[0].LogonName.FirstName + " " + items[0].LogonName.LastName;
+			                            arrInvalidUsers.push(FullName);
+			                        }
+			                    },
+				                error: function () {
+				                    alert("Error getting the Employee status.");
+				                }
+		                	});
+                        }
+                    }
+                    else {
+	                    var Query = "?$select=Status,LoginName/Id&$expand=LoginName&$filter=LoginName/Id eq '" + sharedUserArrayList[userId] + "' and Status eq 'Active'&$top=5000";
+		                url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ExternalUsers')/items/" + Query;
+		                $.ajax({
+			                url: url,
+			                type: "GET",
+			                async: false,
+			                headers: {
+			                    "ACCEPT": "application/json;odata=verbose"
+			                },
+			                success: function (data) {
+			                    var ExtResults = data.d.results;
+			                    if (ExtResults.length > 0) {
+			                        
+			                    }
+			                    else {
+			                        InvalidUsersId.push(sharedUserArrayList[userId]);
+			                        arrInvalidUsers.push(SharedUserName[userId]);
+			                    }
+		                    },
+			                error: function () {
+			                    alert("Error getting the Employee status.");
+			                }
+	                	});
+                    }	$('.increase_effect').removeClass("activingss");
+
+                },
+                error: function () {
+                    alert("Error getting the Employee status.");
+                }
+            });
+        }
+    }
+    sharedUserArrayList = sharedUserArrayList.filter( function( el ) {
+	  return InvalidUsersId.indexOf( el ) < 0;
+	} );
+    arrSavedUsersId = arrSavedUsersId.concat(sharedUserArrayList);
+    arrSavedUsersId = arrSavedUsersId.filter(function (item, pos) {
+        return arrSavedUsersId.indexOf(item) == pos
+    }); //Remove duplicate elements Array
+
+    var Metadata;
+    var ItemType = GetItemTypeForListNameDetails('ApproversGroups');
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        ApproversId: {
+            'results': arrSavedUsersId
+        }
+    };
+    updateUserWithIDGroup('ApproversGroups', Metadata, UpdateId, arrInvalidUsers, groupIndex);
+    var PeoplePickerId = "newPeoplePickerControl" + groupIndex;
+    resetPeoplePicker(PeoplePickerId);
+
+}
+function SetPeoplePicker_MultiselectGroups1(peoplePickerElementId, allowMultiple) {
+    if (allowMultiple == null) {
+        allowMultiple = false;
+    }
+    var schema = {};
+    schema['PrincipalAccountType'] = 'User,SPGroup';
+    // schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = allowMultiple;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '321px';
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+
+var DynamicId='';
+var grpIndex='';
+var flag1=true;
+function toggleClass(getclass,cname){
+	DynamicId="newPeoplePickerControl"+cname+"_TopSpan";
+	grpIndex=cname;
+	
+	$(".tottglinbtn"+cname).toggleClass('activingss');
+	//$(".increase_effect").removeClass('activingss');
+	
+
+
+    $('.increase_effect'+cname).toggleClass('activingss');
+    onChangeSharing1();
+}
+
+function onChangeSharing1() {
+//	if(DynamicId==""){return false;}
+    var picker = SPClientPeoplePicker.SPClientPeoplePickerDict[DynamicId];
+    var BindUser = '';
+    picker.OnValueChangedClientScript = function (elementId, userInfo) {    
+        if (userInfo.length > 0) {getSelectedUsers(grpIndex);
+		}
+    };
+}
+
+function updateSpecificGroup(grpIndex) {
+    var UpdateId = $(".itemIDClass" + grpIndex).text();
+    var arrSavedUsersId = [];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApproversGroups')/items?$select=ID,Approvers/ID,Approvers/Title,Approvers/EMail,Title&$expand=Approvers&$orderby=ID asc&$filter=ID eq '" + UpdateId + "'";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: true,
+        success: function (data) {
+                        var response = data;console.log(data);
+            $('#thbodyControl').html('');
+            $('#myTable tbody tr').html('');
+            //DefaultRowGroups1();
+            //your code goes here    
+            //AddMoreGroups();
+            for (var groupIndex = 0; groupIndex < response.d.results.length; groupIndex++) {
+                if (groupIndex != 0) {
+                    //Generate table
+                    //AddRowGroups(); //Add new row
+                    //RemoveRowGroups(); //Remove Event on table row
+                }
+                var groupName = response.d.results[groupIndex].Title;
+                //$('.groupName' + groupIndex).val(groupName);
+                var currentItemID = response.d.results[groupIndex].ID;
+                //$('.itemIDClass' + groupIndex).text(currentItemID);
+                var defaultRows = '';
+                //defaultRows += '<div class="panel panel-default addGrpUser"><div class="panel-heading custom-panel-heading"><h4 class="panel-title">';
+                //defaultRows += '<a class="panel-title-box collapsed" id="GroupId' + groupIndex + '" data-toggle="collapse" data-parent="#accordGroup" href="#group' + groupIndex + '" aria-expanded="false">';
+                //defaultRows += '<label style="display:none;" class="itemIDClass' + groupIndex + '">' + currentItemID + '</label><span class="groupName0" style="color: black;">' + groupName + '</span><div class="remove-group-btn-box"><button type="button" class="remove_groupsec" onclick="DeleteGroup(' + currentItemID + ', \'' + groupName + '\');"><i class="fa fa-trash-o"></i></button></div><i class="fa fa-chevron-down"></i></a></h4></div>';
+                if (response.d.results[groupIndex].Approvers.results != null) {
+                    for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[groupIndex].Approvers.results.length; subGrroupIndex++) {
+                        var userNamecurretn = response.d.results[groupIndex].Approvers.results[subGrroupIndex].EMail;
+                        var GroupUserId = response.d.results[groupIndex].Approvers.results[subGrroupIndex].ID;
+                        if (userNamecurretn != null && userNamecurretn != "") {
+                            //Group User Bind
+                            var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and PrimaryCompany eq 'Primary' and LogonName/EMail eq '" + userNamecurretn + "' ";
+                            $.when(getItemsWithQueryItems('Employees', Query)).done(function (UserResults) {
+                                UResults = UserResults.results;
+                                var value = UResults[0];
+                                if (UResults.length > 0) {
+                                    if (value.AttachmentFiles.results.length > 0) {
+                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+                                    }
+                                    else {
+                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                                    }
+                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LogonName.FirstName + ' ' + value.LogonName.LastName + '</h3>';
+                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Department.Title + '</span></p>';
+                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + grpIndex+ ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+
+                                }
+                                else {
+                                	//External Users
+                                	var Query = "?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email eq '" + userNamecurretn + "'&$top=5000";
+		                            $.when(getItemsWithQueryItems('ExternalUsers', Query)).done(function (UserResults) {
+		                                UResults = UserResults.results;
+		                                var value = UResults[0];
+		                                if (UResults.length > 0) {
+		                                    if (value.AttachmentFiles.results.length > 0) {
+		                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+		                                    }
+		                                    else {
+		                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.email);
+		                                    }
+		                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+		                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LoginName.Title+ ' </h3>';
+		                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Client_Name.Title + '</span></p>';
+		                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+		                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + grpIndex+ ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+		                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+		
+		                                }
+		                            });
+                                }
+                            });
+                            //setPeoplePickerUsersInfoCurrentGroups("newPeoplePickerControl" + groupIndex, response.d.results[groupIndex].SharedUsers.results[subGrroupIndex].UserName);
+                        }
+                    }
+                }//For loop
+                //Add/Delete memeber to Group
+                defaultRows += '</div>';
+                //<div class="row"><div class="col-xs-12"><div class="add-menber-dropdown">';
+              //  defaultRows += '<div class="addeventcircle"> <button class="btn custom-btn tottglinbtn'+groupIndex+'" type="button" onclick="toggleClass(this ,'+groupIndex+');"> <i class="fa fa-plus tottglinbtn'+groupIndex+'" ></i> </button><span id="newPeoplePickerControl'+groupIndex+'" class="form-control increase_effect increase_effect'+groupIndex+'"></span>  </div>';
+
+                //defaultRows += '<button type="button" class="btn custom-btn" onclick="openAddMemberPopup(' + groupIndex + ')" data-toggle="dropdown">Add</button><ul id = AddMemberPopup' + groupIndex + ' class="add-menber-menu" style="display:none;">';
+                //defaultRows += '<li><div class="form-group custom-form-group" onchange="getSelectedUsers(' + groupIndex + ')"><span id="newPeoplePickerControl' + groupIndex + '" ></span></div></li>';
+                //defaultRows += '<li class="text-center"><button type="button" class="btn custom-btn" id="addMember' + groupIndex + '" >Submit</button></li></ul></div>';
+               // defaultRows += '</div></div>';
+                $('#idForUpdate'+grpIndex).html(defaultRows);
+                var PeoplePickerId = "newPeoplePickerControl" + groupIndex;
+               // SetPeoplePicker_MultiselectGroups1(PeoplePickerId, true);
+               
+               
+            }
+        //    resetPeoplePicker(PeoplePickerId);
+            if (currentDlg != "") {
+                currentDlg.close();
+            }
+                   },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+function resetPeoplePicker(peoplePickerId) {
+    var peoplePicker = this.SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerId + "_TopSpan"];
+    var usersobject = peoplePicker.GetAllUserInfo();
+    usersobject.forEach(function (index) {
+        peoplePicker.DeleteProcessedUser(usersobject[index]);
+    });
+}
+function hidePeoplePickers(groupIndex){
+	$('.increase_effect').removeClass("activingss");
+	console.log();
+	var htmlCount=$('#idForUpdate'+groupIndex).html().length;
+	if(htmlCount>0){return false;}
+	var defaultRows = '';
+	var filtered = arrUsers.filter(function(x) { return x.ID==groupIndex; });
+	if(filtered[0].Users!= undefined){
+                    for (var subGrroupIndex = 0; subGrroupIndex < filtered[0].Users.length; subGrroupIndex++) {
+                        var userNamecurretn = filtered[0].Users[subGrroupIndex].EMail;
+                        var GroupUserId = filtered[0].Users[subGrroupIndex].ID;
+                        if (userNamecurretn != null && userNamecurretn != "") {
+                            //Group User Bind
+                            var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,Designation,LogonName/EMail,LogonName/FirstName,LogonName/LastName,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and PrimaryCompany eq 'Primary' and LogonName/EMail eq '" + userNamecurretn + "' ";
+                            $.when(getItemsWithQueryItems('Employees', Query)).done(function (UserResults) {
+                                UResults = UserResults.results;
+                                var value = UResults[0];
+                                if (UResults.length > 0) {
+                                    if (value.AttachmentFiles.results.length > 0) {
+                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+                                    }
+                                    else {
+                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                                    }
+                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LogonName.FirstName + ' ' + value.LogonName.LastName + '</h3>';
+                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Department.Title + '</span></p>';
+                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + groupIndex + ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+
+                                }
+                                else {
+                                	//External Users
+                                	var Query = "?$select=AttachmentFiles,LoginName/EMail,email,LoginName/Title,LoginName/Id,Designation,Client_Name/Title&$expand=AttachmentFiles,LoginName,Client_Name&$filter=email eq '" + userNamecurretn + "'&$top=5000";
+		                            $.when(getItemsWithQueryItems('ExternalUsers', Query)).done(function (UserResults) {
+		                                UResults = UserResults.results;
+		                                var value = UResults[0];
+		                                if (UResults.length > 0) {
+		                                    if (value.AttachmentFiles.results.length > 0) {
+		                                        attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+		                                    }
+		                                    else {
+		                                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.email);
+		                                    }
+		                                    defaultRows += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="groups-card"><div class="groups-card-head"><img src=' + attachmentUrl + ' alt="user"></div>';
+		                                    defaultRows += '<div class="groups-card-body"><div class="groups-card-body-info text-ellipsis"><h3 class="member-name text-ellipsis">' + value.LoginName.Title+ ' </h3>';
+		                                    defaultRows += '<p class="member-deg text-ellipsis"><span>' + value.Designation + '</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>' + value.Client_Name.Title + '</span></p>';
+		                                    defaultRows += '<p class="member-email text-ellipsis"><a href="mailto:' + userNamecurretn + '">' + userNamecurretn + '</a></p></div>';
+		                                    defaultRows += '<div class="text-right" onclick="DeleteUserFromGrp(' + GroupUserId + ', ' + groupIndex + ');"><button type="button" class="btn remove-group-btn remove-btn close close-round"><i class="fa fa-times" aria-hidden="true"></i></button></div>';
+		                                    defaultRows += '</div></div></div>'; // class - row group-inner-scroll scrollbar-panel ends here
+		
+		                                }
+		                            });
+                                }
+                            });
+                            //setPeoplePickerUsersInfoCurrentGroups("newPeoplePickerControl" + groupIndex, response.d.results[groupIndex].SharedUsers.results[subGrroupIndex].UserName);
+                        }
+                    }
+          }          
+                    $('#idForUpdate'+groupIndex).html(defaultRows);
+                
+}
+
+function getPeopleUserMyGroup(pickerPickerControlId) {
+    SharedUserName = [];
+    var sharedUserArrayList = new Array();
+    var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+    var users = peoplePicker.GetAllUserInfo();
+    if (users.length > 0) {
+        var allUsersID = new Array();
+
+        var usersEmailIDs = new Array();
+        for (var i = 0; i < users.length; i++) {
+            var grpid = users[i].Key;
+            var autokey = users[i].EntityType;
+            if (autokey == "User") {
+                sharedUserArrayList.push(GetUserIdGroup(users[i].Key));
+                SharedUserName.push(users[i].DisplayText);
+
+            } else {
+                var grpid = users[i].EntityData.SPGroupID;
+                var myArrays = new Array();
+                myArrays.push(siteuser(grpid));
+                var c = sharedUserArrayList.concat.apply([], myArrays);
+                sharedUserArrayList = sharedUserArrayList.concat(c);
+
+            }
+        }
+    }
+    return sharedUserArrayList;
+}
+function GetUserIdGroup(userName) {
+    var userID = "";
+    var prefix = "i:0#.f|membership|";
+    var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+    var accountName = userName; // prefix+userName;       
+    $.ajax({
+        url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+            encodeURIComponent(accountName) + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            userID = data.d.Id;
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+    return userID;
+}
+function siteuser(grpid) {
+    var usergroup = [];
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/sitegroups/getbyid(" + grpid + ")/users",
+        type: "GET",
+        async: false,
+        headers: {
+            // Accept header: Specifies the format for response data from the server.
+            "Accept": "application/json;odata=verbose"
+        },
+        success: function (data, status, xhr) {
+            var dataresults = data.d.results;
+            for (var i = 0; i < dataresults.length; i++) {
+
+                dataresults = $.grep(dataresults, function (a) {
+                    return a.Title !== "System Account";
+                });
+                if (dataresults.length > 0) {
+                    usergroup.push(GetUserIdGroups(dataresults[i].LoginName));
+                    ////accountName = dataresults[i].LoginName;
+                }
+            }
+        },
+        error: function (xhr, status, error) {
+            console.log("Failed");
+        }
+    });
+    return usergroup;
+}
+function getItemsWithQueryItems (ListName, Query) {
+    DeferredObj = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query,
+        type: "GET",
+        async: false,
+        headers: {
+            ACCEPT: "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            DeferredObj.resolve(data.d);
+            //   console.log();
+        },
+        error: function (error) {
+            //alert(JSON.stringify(error));
+            DeferredObj.reject(error);
+        }
+    });
+    return DeferredObj.promise();
+};

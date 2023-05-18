@@ -12,8 +12,8 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/js/jquery.richtext.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/css/richtext.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" integrity="sha512-lOtDAY9KMT1WH9Fx6JSuZLHxjC8wmIBxsNFL6gJPaG7sLIVoSO9yCraWOwqLLX+txsOw0h2cHvcUJlJPvMlotw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.3/jSignature.min.noconflict.js" integrity="sha512-AS0nVfJE1xI9fDwP4viscBQ//7EOmEy7X7Zl1D6pFjw90mDw2IxFGFtThqp+dPoHWxFrrPowFdCQgRP3EAsQQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/JS/DigitalSignature.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/ApprovalEntry/jSignature.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/ApprovalEntry/DigitalSignature.js"></script>
 	
 
 
@@ -29,6 +29,7 @@
 <!--	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'> -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/js/dom-to-image.js"></script>
 	
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
@@ -269,6 +270,14 @@ flex-wrap: wrap;
 
 .skipbox_set{
 margin-top:10px;
+}
+
+.btngroupsetting.text-center{
+ text-align:left !important;	
+}
+
+.btngroupsetting.text-center a[type="button"]{
+  margin-bottom:4px;	
 }
 
 }
@@ -802,6 +811,9 @@ background-color: transparent;
 	height: 98px !important;
 }
 
+#Docfilename{
+ height:auto !important;	
+}
 
 /***june-29-22****/
 .ui-tooltip{
@@ -1249,6 +1261,23 @@ margin:0;
 }
 
 
+#DocfilenameAction{
+ height:auto !important;
+ max-height:105px !important;	
+ margin-left:0 !important;
+}
+
+
+@media(min-width:992px){
+	
+.new_attachmenbtn{
+ font-weight:600;
+ float:left;	
+}	
+	
+}
+
+
 
 @media(max-width:495px){
 
@@ -1396,6 +1425,110 @@ height: 34px;
 	
 }
 
+
+.columnnametxt .input-sm{
+ height:auto !important;
+ min-height:30px;	
+}
+
+
+.loading_now {
+font-size: 20px;
+position: relative;
+color: #c9c9c9;
+letter-spacing: 1px;
+display: inline-block;
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+font-weight: 600;
+}Â .loading_now::before {
+content: attr(data-text);
+position: absolute;
+color: #1b70c7;
+width: 0;
+animation: anmats 3s ease infinite;
+-webkit-animation: anmats 3s ease infinite;
+overflow: hidden;
+}
+
+.round_shap{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 5px  72px 5px 7px;
+    border-radius: 30px;
+    color: #333;
+    position:relative;
+    margin:3px;
+}  
+
+.round_shap:hover{
+  background: #eee;
+}
+
+.round_shap .event_btn{
+  position:absolute;
+  top:4px;
+  right:5px;
+}
+.round_shap .event_btn a {
+    color: #404040 !important;
+    margin: 0 3px;
+    font-size: 12px;
+    position:relative;
+}
+
+.round_shap .event_btn a:before {
+    content: attr(per);
+    position: absolute;
+    background: #333;
+    color: #fbfbfb;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    top: -25px;
+    border-radius: 10px;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+}
+
+.round_shap .event_btn a:hover:before{
+   opacity:1;
+   visibility:visible;
+   
+}
+
+.total_attch_fils .filename {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 13px;
+}
+
+
+Â 
+@keyframes anmats{
+
+0%{
+ width:0;
+}Â Â  
+100%{
+ width:100%;
+}
+Â 
+}Â 
+
+
+
+
 </style>
 
 
@@ -1413,6 +1546,7 @@ height: 34px;
 </head>
 
 <body>
+	<div id="Onloader" style="display:none"><h3 class="loading_now" data-text="Loading...">Â  Loading... </h3></div>
 	<div class="container margin_mg_bothside">
 		<div class="custom-panel" style="display:none">
 			<!-----<div class="panel-head">
@@ -1463,9 +1597,9 @@ height: 34px;
 						  	</li>
 						  	<li>
 						 		<div class="text-right" style="display:none;" id="ForwardTextDiv">
-						 	   		<a href="#forwarding_process" data-toggle="modal" style="font-size:15px; font-weight:600;" onclick="GetForwardHistory()">
-							   			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/forwards.png">							       
-							   			Forwarded
+						 	   		<a href="#forwarding_process" data-toggle="modal" style="" onclick="GetForwardHistory()">
+							   			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user_cile.png" id="ForwardedByImage">							       
+							   			Forwarded By
 						       		</a>
 					    		</div> 
 						  	</li>
@@ -1477,15 +1611,15 @@ height: 34px;
 						    		</a> 
 						    	</div>   
 						  	</li>
-						  	<li class="new-request-top-right-change-Display">
+						  	<!-------<li class="new-request-top-right-change-Display">
 						    	<div>
 						    		<a href="#" onclick="SaveLink()"ss>
 						      			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/star.png" alt="">
 						      			Add to Favorite
 						    		</a>
 						    	</div>    
-						  	</li>
-						  	<li>
+						  	</li>------->
+						  	<li style="display:none;">
 						    	<div>
 						    		<a href="#process_action" data-toggle="modal" onclick="ViewProcessDetails()">
 						       			<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/information.png" alt="">
@@ -1504,7 +1638,6 @@ height: 34px;
 					<!-- Trigger the modal with a button -->
 					<div class="row">
 						<div class="col-md-6">
-							<strong><a href="#" class="" data-toggle="modal" data-target="#additional_document" style="color:#1d6ec0; display:block; text-decoration:none;">Attached Document(s) : <span class="countingbx">0</span></a></strong>
 							<div class="approve-process-upload-image-box-btn">
 								<!---------<div class="form-group custom-form-group">
 										<input type="file" class="form-control approve-process-upload-image-inp" id="attachmentsupload" style="display:none;" name="" multiple >
@@ -1527,10 +1660,11 @@ height: 34px;
 						</div><!---col-md-6-->
 					</div><!--row ed-->	
 						<div class="pl15 pr15 pb15 text-center btnmanage btngroupsetting">
+						    <a href="#" class="new_attachmenbtn" data-toggle="modal" data-target="#additional_document" style="color:#1d6ec0; text-decoration:none; display:inline-block; padding:5px 5px;">Attached Document(s) : <span class="countingbx">0</span></a>
 							<!--	<button type="button" class="btn custom-btn" id="savenewrequest">Submit</button>  -->
-							<a type="button" class="btn custom-btn" id="Approverequest" data-toggle="modal" data-target="#approvalActionModal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/checknow.png"> Approve</a>
 							<a type="button" class="btn custom-btn" id="AttachDocs"data-toggle="modal" data-target="#Approval_doc"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/attachfiles.png"> Attachments</a>
-							<a type="button" class="btn custom-btn" id="savenewDraft"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencil.png"> Save as Draft</a>
+							<a type="button" class="btn custom-btn" id="savenewDraft" style="display:none;"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/pencils.png" style="width:19px !important"> Save as Draft</a>
+							<a type="button" class="btn custom-btn" id="Approverequest" data-toggle="modal" data-target="#approvalActionModal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/checknow.png"> Approve</a>														
 							<a type="button" class="btn custom-btn" id="savenewrequest"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/checknow.png"> Submit</a>
 							<a type="button" class="btn btn-danger" id="Rejectrequest" data-toggle="modal" data-target="#approvalRejectionModal"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/cancel.png"> Reject</a>
 							<a type="button" class="btn custom-btn" id="Forwardrequest"data-toggle="modal" data-target="#forward_stpings" onclick="LoadColumnSignPos()"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/forward.png"> Forward</a>
@@ -1661,7 +1795,9 @@ height: 34px;
 			</div>
 			<div class="modal-footer text-center">
 				<a type="button" id="gettemplatenameid" class="btn custom-btn">New Request</a>
+			    <h2 class="text-right hide" id="loadertext"><a type="text" id="">Loading..... </a></h2>
 			</div>
+			
 		</div>
 	</div>
 </div>
@@ -1760,7 +1896,7 @@ height: 34px;
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close-round" data-dismiss="modal"><span
-                            class="close-icon">×</span></button>
+                            class="close-icon">&times;</span></button>
                     <h4 class="modal-title">Approval</h4>
                 </div>
                 <div class="modal-body pb0">
@@ -1832,19 +1968,15 @@ height: 34px;
                     <div class="checkbox mt0 mb10 SignatureBoxApproved alignmentmang text-center">
                         <label><input type="checkbox" value="" id="ApprovedChkbox">Approved</label>
                     </div>
-                    <div class="form-group custom-form-group">
+                    <!--<div class="form-group custom-form-group">
                     	<div class="wrapingattachments">
-						    <input type="file" name="file" id="supporting_doc_files" class="form-control" multiple >
+						    <input type="file" name="file" id="supporting_doc_files" class="form-control" multiple>
 						    <label for="supporting_doc_files" class="control-label" data-localize="Supporting Document">Supporting Document</label>
 						</div>
-						<div class="approve-process-upload-data scrollbar-panel" id="DocfilenameAction">
-								<!--	<div class="approve-process-upload-data-chip">
-	                            		<i class="fa fa-paperclip"></i>
-	                            		<span>test-img.png</span>
-	                            		<i class="fa fa-times-circle-o"></i>
-	                            	</div>                           -->
-								</div>
-                    </div>
+						<div class="approve-process-upload-data" id="DocfilenameAction">
+							
+						</div>
+                    </div>-->
 
                 </div>
                 <div class="modal-footer text-center">
@@ -1861,7 +1993,7 @@ height: 34px;
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close-round" data-dismiss="modal"><span
-                            class="close-icon">×</span></button>
+                            class="close-icon">&times;</span></button>
                     <h4 class="modal-title">Reject</h4>
                 </div>
                 <div class="modal-body pb0">
@@ -1889,7 +2021,7 @@ height: 34px;
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close-round" data-dismiss="modal"><span
-                            class="close-icon">×</span></button>
+                            class="close-icon">&times;</span></button>
                     <h4 class="modal-title">Review</h4>
                 </div>
                 <div class="modal-body pb0">
@@ -1919,7 +2051,7 @@ height: 34px;
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close-round" data-dismiss="modal"><span
-                            class="close-icon">×</span></button>
+                            class="close-icon">&times;</span></button>
                     <h4 class="modal-title" id="ModelIDText">Approved</h4>
                 </div>
                 <div class="modal-body pb0">
@@ -2004,7 +2136,7 @@ height: 34px;
           <li class="active" id="addstakeholders-LI">
             <a data-toggle="pill" href="#addstakeholders">Add Stakeholders</a>
           </li>
-          <li id="successor_processing-LI">
+          <li id="successor_processing-LI" style="display:none;">
             <a data-toggle="pill" href="#successor_processing">
             Add a Successor Step
             </a>
@@ -2082,13 +2214,13 @@ height: 34px;
           
 			<div class="form-group custom-form-group" style="margin-bottom: 0px; margin-top: 12px;">
 			  <label for="">Remarks:</label>
-			  <textarea name="" cols="10" rows="3" class="form-control" style="min-height: 85px; resize: none;"></textarea>
+			  <textarea id="ForwardStackholderRemarks" name="" cols="10" rows="3" class="form-control" style="min-height: 85px; resize: none;"></textarea>
 			</div>  
 		  	  
            
         </div><!---tab_fist ed-->
         
-          <div id="successor_processing" class="tab-pane fade">
+          <div id="successor_processing" class="tab-pane fade" style="display:none;">
           
           <div class="form-group custom-form-group">
             <label>Step Name:<span class="color:#ff0000">*</span></label>	
@@ -2148,7 +2280,7 @@ height: 34px;
               		</div>
               
               		<div class="teambox" style="margin-bottom: 0px;">
-              			<div class="row fullcoverbox no-gutter" id="ListReturnForwardUser">
+              			<div class="row fullcoverbox no-gutter" id="ListReturnForwardUser" style="padding-top:15px; padding-bottom:15px;">
               	
               			</div>
 					</div><!---teams--->
@@ -2158,7 +2290,7 @@ height: 34px;
             		<label for="">Message:</label>
             		<textarea name="" id="ForwardRetMessage" cols="10" rows="3" class="form-control ForwardRetMessage" style="min-height: 85px; resize: none;"></textarea>
           		</div>
-          		<div class="form-group custom-form-group">
+          		<div class="form-group custom-form-group" style="display:none;">
 	          		<label class="checkbox-inline">
 	            		<input type="checkbox" id="RestrictviewChkbox" style="width:15px; height:15px; margin-top:0;">
 	            		Restrict view to others
@@ -2304,9 +2436,10 @@ height: 34px;
           		<div class="forward_wraping scrollingeffect timlineheight"> 
             		<ul class="forwardlist">
               			<li class="forward_by_section">
-                			<h3 class="forwrad_heading">Forward by</h3>
+              			   <div class="wrapingnow">
+                			<h3 class="forwrad_heading">Forwarded By</h3>
                 			<div class="forward_by row">
-                  				<div class="col-md-8">
+                  				<div class="col-md-12">
                     				<div class="flexitem">
                         				<div class="imgsetion">
                           					<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/ProcessApproval/assets/images/user-circle.png" alt="" id="ForwardbyPhoto">
@@ -2316,7 +2449,12 @@ height: 34px;
                           					<a href="#" id="ForwardbyEmail">priyanshupandey@.com</a>
                         				</div>
                     				</div><!--flexitems--->
-                    				<div class="wraping_only">   
+                    				
+                    				<div class="date_showing" style="margin:5px 0 5px 25px; font-weight:600;">
+                      					<span id="ActionDate">Aug 3 2022</span> <span id="ActionTime">10:45 AM</span>
+                    				</div>
+                    				
+                    				<div class="wraping_only padd_reduce">   
                       					<div class="remarkboxsec">
                         					<span><label for="">Remark</label><label for="">:</label></span>
                         					<div id="ForwardbyRemark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel quos non, et explicabo eaque aspernatur sed libero corrupti natus expedita nesciunt mollitia nobis dolor quasi saepe nisi qui facere?.</div>
@@ -2337,12 +2475,9 @@ height: 34px;
                          				</div>
                         			</div>-->  
                   				</div><!---9col-->
-                  				<div class="col-md-4">
-                    				<div class="date_showing">
-                      					<span id="ActionDate">Aug 3 2022</span> <span id="ActionTime">10:45 AM</span>
-                    				</div>
-                  				</div>
-                			</div><!---forward_by ed--->
+                  			 </div><!---forward_by ed--->
+                			</div><!---wrapingbox---->
+                			
                 			<ul class="forwardlist_child">
                   				<li>
                     				<h3 class="forwrad_heading">Forward to</h3>
@@ -2463,12 +2598,12 @@ height: 34px;
             <table class="table" id="tbAppDocs">
               <thead>
                   <tr>
-                    <th style="width:15%">Document</th>
-                    <th style="width:15%">Purpose</th>
-                    <th style="width:25%">Remaks</th>
-                    <th style="width:15%">Uploaded by</th>
-                    <th style="width:15%">Upload At</th>
-                    <th style="width:10%"></th>
+                    <th style="width:20%; color:#333">Documents</th>
+                    <th style="width:15%; color:#333">Purpose</th>
+                    <th style="width:22%; color:#333">Remaks</th>
+                    <th style="width:20%; color:#333">Uploaded by</th>
+                    <th style="width:15%; color:#333">Step Name</th>
+                    <th style="width:15%"></th>
                   </tr>
               </thead>
               <tbody id="tbdyAppDoc">
@@ -2520,7 +2655,7 @@ height: 34px;
         <button type="button" class="close close-round" data-dismiss="modal">
           <span class="close-icon">&times;</span>
         </button>
-        <h4 class="modal-title">Approval Document</h4>
+        <h4 class="modal-title">Additional Document</h4>
       </div>
       <div class="modal-body">
         
@@ -2545,17 +2680,37 @@ height: 34px;
           </div>
         </div>
 		
-		 <div class="wrapfildsinside mangflexlabel">
+		 <div class="wrapfildsinside mangflexlabel" style="display:none;">
           <label for="">Attach For</label>
           <div class="fieldbx">
             <select id="e_Signature_optis" class="form-control">
               <option value="supporting_document">Supporting Document</option>
-              <option value="required_e_signature">Required_E_Signature</option>
+              <option value="required_e_signature">Required e-signature</option>
             </select>
           </div>
         </div>
-		
-		<div class="action_signaturebx required_e_signature" style="margin-bottom:19px;">
+        
+        <div class="action_signaturebx supporting_document" style="display:none;">
+          <div class="wrapfildsinside mangflexlabel">
+          	<label>Restricted Access</label>
+          	<div class="fieldbx flexing_both">
+          		<input type="checkbox" style="width:17px; height: 17px; margin-top:0;">
+          	</div>
+          </div>
+          
+          <div class="wrapfildsinside mangflexlabel" style="display:none;">
+          	<label>Restricted at</label>
+          	<div class="fieldbx flexing_both">
+          		<select class="form-control" multiselect-search='true' multiselect-select-all='true'>
+		          <option>opt</option>
+		          <option>opt</option>
+		        </select>
+          	</div>
+          </div>
+
+        </div>
+        
+		<div class="action_signaturebx required_e_signature" style="margin-bottom:19px; display:none;">
 		
         <div class="wrapfildsinside">
           <label for="">Signature of</label>
@@ -2628,7 +2783,8 @@ height: 34px;
         
       </div>
       <div class="modal-footer" style="text-align:center; margin-top:5px;">
-        <button type="button" class="btn custom-btn" id="saveDoc" onclick="SaveApprovalDocs()">Submit</button>
+        <button type="button" class="btn custom-btn" id="saveDoc" onclick="SaveApprovalDocs('New')">Submit</button>
+        <button type="button" class="btn custom-btn" id="EditDoc" onclick="UpdateDoc()" style="display:none">Submit</button>
       </div>
     </div>
 
@@ -2711,7 +2867,7 @@ height: 34px;
 		<div class="modal-content">
       		<div class="modal-header">
         		<button type="button" class="close close-round" data-dismiss="modal">
-          			<span class="close-icon">×</span>
+          			<span class="close-icon">&times;</span>
           		</button>
         		<h4 class="modal-title">History</h4>
       		</div>
@@ -2756,10 +2912,10 @@ height: 34px;
 
 
 <script>
-	
+var NewAddedUser=[];	
 var ConditionApplied = false;
 var ActiveBtnStatus='Submit';
-var ActiveSystemIP =0;
+var ActiveSystemIP ='0';
 var SignImage=[];
 var finalImages = [];
 var AskNextApproversARR=[];
@@ -2784,11 +2940,11 @@ $(document).ready(function () {
     		Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
 			if(Passingtoken == 'Process Steps')
 			{
-				var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessQueue')/items?$select=*,Approvers/EMail&$expand=Approvers&$filter=ID eq "+window.atob(titanForWork.getQueryStringParameter('StepID'))+" and Status eq 'Pending'";
+				var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessQueue')/items?$select=*,ForwardedUser/EMail,Approvers/EMail&$expand=ForwardedUser,Approvers&$filter=ID eq "+window.atob(titanForWork.getQueryStringParameter('StepID'))+" and Status eq 'Pending'";
 				var QueryStepIdData = RequestGetdata(QueryDataStep);
 				
 				if(QueryStepIdData.length>0)
-				{	debugger;
+				{	
 					var ExecutionStatus=false;
 					if(QueryStepIdData[0].Approvers.__deferred != undefined)
 					{
@@ -2799,15 +2955,28 @@ $(document).ready(function () {
 					{						
 						for(var m=0; m<QueryStepIdData[0].Approvers.results.length; m++)
 						{
-							if(QueryStepIdData[0].Approvers.results[m].EMail == _spPageContextInfo.userEmail)
+							if(QueryStepIdData[0].Approvers.results[m].EMail == _spPageContextInfo.userEmail )
 							{
 								ExecutionStatus=true;
 								break;
 							}
 						}
-						
-						if(ExecutionStatus == true)
+						if(ExecutionStatus == false)
 						{
+							if(QueryStepIdData[0].Forwarded == true)
+							{
+								for(var m=0; m<QueryStepIdData[0].ForwardedUser.results.length; m++)
+								{
+									if(QueryStepIdData[0].ForwardedUser.results[m].EMail == _spPageContextInfo.userEmail )
+									{
+										ExecutionStatus=true;
+										break;
+									}
+								}								
+							}
+						}						
+						if(ExecutionStatus == true)
+						{//debugger;
 							getDynamicTemplateName();						
     						
     						var temp = window.atob(titanForWork.getQueryStringParameter('Template'));
@@ -2893,15 +3062,25 @@ $(document).ready(function () {
 	});
 
 	$("#gettemplatenameid").click(function () {
+		
+		//$('#overlaysearch').show();
+		$('#loadertext').removeClass('hide');
 		if($("input[name='selector']:checked").attr('templateid') != undefined)
-		{
+		{	
+			setTimeout(function () {		
 			$.when(	PageColomnsDisplay()).then(function(datarespo){
 				CreateLabesDynamically(datarespo);						
 			})					
-			apendlogoandtemplate();
-			
+			apendlogoandtemplate();			
 			AskingNextApprovers();
 			$('#newRequestModal').modal('hide');
+			$('#loadertext').addClass('hide');
+			$('#overlaysearch').hide()
+			}, 100);
+			
+			//$('#Onloader').hide();
+			
+			
 		}
 		else
 		{
@@ -2911,13 +3090,18 @@ $(document).ready(function () {
 	
 	// To Save draft request
 	$("#savenewDraft").click(function () {
+		//$('#overlaysearch').show();
+		setTimeout(function () {		
 		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation' || window.atob(titanForWork.getQueryStringParameter('Step')) == 'Draft')
     		{
 				saverecordDraft();
-		}
+		    }
+		//$('#overlaysearch').hide()
+		}, 100);
 	})				
 	// To Submit request			
 	$("#savenewrequest").click(function () {
+		
 		if(window.location.href.indexOf("?")> -1) 
     	{
     		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation')
@@ -2928,8 +3112,12 @@ $(document).ready(function () {
     				$("#Asking_process_Approvers").modal('show');
     			}
     			else
-    			{
+    			{	//$('#overlaysearch').show();
+    				//setTimeout(function () {		
 					saverecord();
+					//$('#overlaysearch').hide()
+					//}, 100);
+					
 				}    			
     		}
     		else
@@ -2950,8 +3138,12 @@ $(document).ready(function () {
 				}
 				else
 				{
+					//$('#overlaysearch').show();
 					ActiveBtnStatus = 'Submit';
-					saverecord();			
+					//setTimeout(function () {		
+					saverecord();
+					//$('#overlaysearch').hide()
+					//}, 100);			
 				}    			
     		}    			
     	}		
@@ -2961,26 +3153,42 @@ $(document).ready(function () {
 	$("#RejectRequestSubmit").click(function () {
 		ActiveBtnStatus = 'Reject';
 		var RemarkText = $("#RejectApproveRemark").val();
-			RemarkText = RemarkText.trim();
+		RemarkText = RemarkText.trim();
+		//$('#overlaysearch').show();
 		if($("#RejectApproveChkBox").prop('checked') == true)
 		{
-			if(RemarkText.length>0)
+			if(RemarkText.length>15)
 			{
-				saverecord();
+				//$('#overlaysearch').show();
+				//saverecord();
+				//setTimeout(function () {	
+					saverecord();
+				//}, 100);					
+
 			}
 			else
 			{
-				alert("Enter Rejected Remark Message!");
+				alert("Enter your remarks for rejection (at least 5 char)!");	
+				/*setTimeout(function () {	
+					alert("Enter Rejected Remark Message!");
+					$('#overlaysearch').hide()
+					}, 100);					
+				*/
 			}
 		}
 		else
-		{
+		{	
 			alert("Select Rejected Checkbox!");
+			/*setTimeout(function () {	
+			alert("Select Rejected Checkbox!");
+			$('#overlaysearch').hide()
+			}, 100);*/					
 		}
 	});
 		
 	
 	$("#ReviewedRequestSubmit").click(function () {
+		
 		AskNextApproversARR=[];
 		var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessQueue')/items?$select=*,Approvers/Title,Approvers/EMail,ActionTakenby/Title,ActionTakenby/EMail,Author/Title,Author/EMail,AttachmentFiles&$expand=Approvers,ActionTakenby,Author,AttachmentFiles&$filter=RequestID eq '"+window.atob(titanForWork.getQueryStringParameter('RecNo'))+"' and ApproverDecidingStep eq '"+window.atob(titanForWork.getQueryStringParameter('StepNo'))+"'&$orderby=Sequence_No asc";
 		var QueryResult = RequestGetdata(Query);
@@ -3040,7 +3248,7 @@ $(document).ready(function () {
 		{
 			ExStatus = true;
 		}
-		
+		//$('#overlaysearch').show();
 		if(ExStatus == true)
 		{
 			ActiveBtnStatus = 'Reviewed';
@@ -3048,11 +3256,17 @@ $(document).ready(function () {
 				RemarkText = RemarkText.trim();
 			if($("#ReviewedApproveChkBox").prop('checked') == true)
 			{
+				//setTimeout(function () {
 				saverecord();
+				//$('#overlaysearch').hide()
+				//}, 100);					
+
 			}
 			else
-			{
+			{	//setTimeout(function () {
 				alert("Select Reviewed Checkbox!");
+				//$('#overlaysearch').hide()
+				//}, 100);					
 			}
 		}
 	});
@@ -3119,7 +3333,7 @@ $(document).ready(function () {
 		{
 			ExStatus = true;
 		}
-
+		//$('#overlaysearch').show();
 		if(ExStatus == true)
 		{
 			ActiveBtnStatus = 'Edit Data';
@@ -3127,13 +3341,21 @@ $(document).ready(function () {
 				RemarkText = RemarkText.trim();
 			if($("#EditDataApproveChkBox").prop('checked') == true)
 			{
+				//setTimeout(function () {
 				saverecord();
+				//$('#overlaysearch').hide()
+				//}, 100);					
+
 			}
 			else
 			{	
+				//setTimeout(function () {
 				var ChkText = $("#ChkText").text();
 				ChkText = 'Select '+ChkText+' Checkbox!';
 				alert(ChkText);
+				//$('#overlaysearch').hide()
+				//}, 100);					
+
 			}
 		}
 	});
@@ -3278,7 +3500,8 @@ function getDynamicTemplateName()
 
 var ischeckk = false;
 function saverecord() 
-{
+{	
+	//$('#overlaysearch').show();
 	var requiredfileds = [];
 	var nonrequiredfileds =[];
 	var datacreate = "";
@@ -3309,9 +3532,11 @@ function saverecord()
 	    	});	*/
 	    	var QueryCheckActive = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email eq '"+users[j].EntityData.Email+"' and Status eq 'Active'";
 			var arrUSer = RequestGetdata(QueryCheckActive);
-			if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
-		if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
-	    EntityUsers.push(arrUSer[0].UserId)	    
+			if(arrUSer.length > 0){
+				if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
+				if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
+		    	EntityUsers.push(arrUSer[0].LogonName.Id)	    
+	    	}
 		}
 		vval = EntityUsers;
 	}else if(key  == 'Checkbox1' || key  == 'Checkbox2' || key  == 'Checkbox3' || key  == 'Checkbox4'|| key  == 'Checkbox5'){
@@ -3322,7 +3547,10 @@ function saverecord()
 	}
 	if($(this).find(".dynamicvalfeachcls.active").attr('type') == 'file'){
 		var lbl = $(this).find(".columnnametxt.active").attr("alerttext");
-		fileData.push({'filename' : vval,'purpose': lbl,'Remarks' : '', 'SignOf': 'No Signature','col' : key, 'ddpmulstp': '', 'SingleStpval':'', 'singleslct': false, 'watermrk' : false ,'watermrkval' : ''}) ;
+		var fileInput = jQuery('#'+key);
+		if(vval != ''){
+			fileData.push({'filename' : vval,'purpose': lbl,'Remarks' : '', 'SignOf': 'No Signature','col' : key, 'ddpmulstp': '', 'SingleStpval':'', 'singleslct': false, 'watermrk' : false ,'watermrkval' : '','File' : fileInput[0].files[0]}) ;
+		}
 	//	ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval})
 	}
 	if ($(this).find(".columnnametxt.active").attr("mandatorycol") != "true" && vval == "") 
@@ -3407,6 +3635,38 @@ function saverecord()
 		})
 		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation')
     	{
+    	$("#appenddyamicboxes > .dynamicdatatexboxes.AutoFilled").each(function () {
+			var key = $(this).find(".columnnametxt.AutoFilled").attr("value");
+		//	for(i=0;i<AutoFilledCols.length;i++){
+				if(key  == 'ColumnPeople1' || key  == 'ColumnPeople2' || key  == 'ColumnPeople3' || key  == 'ColumnPeople4'|| key  == 'ColumnPeople5'){
+					var EntityUsers= [];
+					var peoplePickerDiv = $("[id$='"+key+"_TopSpan']"); 
+					var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[peoplePickerDiv[0].id]; 
+					var users = peoplePicker.GetAllUserInfo()				
+					for (var j = 0; j < users.length; j++) 
+					{	var flag=false;
+					/*	var arrUSer = AllTaskUsersEmployeeuser.filter(function (filterData) {
+						if(filterData.EMail == users[j].EntityData.Email){flag=true;}
+						return filterData.EMail == users[j].EntityData.Email;
+				    	}); */
+				    var QueryCheckActive = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$select=LogonName/Id,LogonName/Title,Email&$expand=LogonName&$filter=Email eq '"+users[j].EntityData.Email+"' and Status eq 'Active'";
+					var arrUSer = RequestGetdata(QueryCheckActive);
+					if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
+				    
+					if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
+				    EntityUsers.push(arrUSer[0].LogonName.Id)	    
+					}
+					itemProperties[key+'Id'] = {"results": EntityUsers};
+				}else{
+					if(key  == 'Checkbox1' || key  == 'Checkbox2' || key  == 'Checkbox3' || key  == 'Checkbox4'|| key  == 'Checkbox5'){
+					 	itemProperties[key] = $(this).find(".combine_box_adds .dynamicvalfeachcls.AutoFilled").prop('checked')
+					}else
+					//if(key == AutoFilledCols[i].ColName){
+						itemProperties[key] = $(this).find(".dynamicvalfeachcls.AutoFilled").val();
+					//}
+				}
+		//	}		
+		})
 		$("#appenddyamicboxes > .dynamicdatatexboxes:not(.active)").each(function () {
 			var key = $(this).find(".columnnametxt:not(.active)").attr("value");
 			for(i=0;i<AutoFilledCols.length;i++){
@@ -3426,7 +3686,7 @@ function saverecord()
 					if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
 				    
 					if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
-				    EntityUsers.push(arrUSer[0].UserId)	    
+				    EntityUsers.push(arrUSer[0].LogonName.Id)	    
 					}
 					itemProperties[key+'Id'] = {"results": EntityUsers};
 				}else{
@@ -3448,7 +3708,9 @@ function saverecord()
 			for (let i = 0; i < requiredfileds.length; i++) 
 			{
 				alert("Please enter the value for " + requiredfileds[i] + "");
+				$('#overlaysearch').hide();
 				break;
+				
 			}					
 		} 
 		else 
@@ -3457,17 +3719,20 @@ function saverecord()
 			if(window.location.href.indexOf("?")> -1) 
     		{
     			if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation')
-    			{
+    			{	setTimeout(() => {
 					if(isValid){
 					savedata(JSON.stringify(itemProperties),fileData);			    									
 					}
+					}, 100);
 				}
 				else if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps')
 				{
+					setTimeout(() => {
 					if(isValid){
 					var RecId = window.atob(titanForWork.getQueryStringParameter('RecNo'));	    		
-					updateData(itemProperties, RecId);						
+					updateData(itemProperties, RecId,'', fileData);						
 					}
+					}, 100);
 				}
 			}
 		}
@@ -3495,16 +3760,17 @@ function saverecord()
 			//	if ($('#attachmentsupload').val() == "") 
 			//	{
 					var NewlyCreatedItemId = data.d.ID;
-					SubmitTbltcols(NewlyCreatedItemId );
-					if($('#ApprovalDoc').val() != ""){
-						ApprovalDocsUpload(NewlyCreatedItemId, ApprovalDocs, '');
-					}
+					SubmitTbltcols(NewlyCreatedItemId );					
 					if(fileData.length > 0){
-						var file = $('#' + fileData[0].col);
+					/*	var file = $('#' + fileData[0].col);
 						var checkfile = CheckFileSize(file);
 						if(checkfile){
 						ApprovalDocsUpload(NewlyCreatedItemId, fileData, fileData[0].col);
-						}
+						}*/
+						ApprovalDocsUpload(NewlyCreatedItemId, fileData, '');
+					}
+					if(ApprovalDocs.length > 0){
+						ApprovalDocsUpload(NewlyCreatedItemId, AllDocs, '');
 					}
 					if(ischeck ==  false && ischeckk ==  false)
 					{
@@ -3516,14 +3782,19 @@ function saverecord()
 							}
 							else
 							{
-								$.when(SaveApproverQueue(NewlyCreatedItemId)).then(function (ProcessListResult) {							      					   																 								
-									console.log('Queues created');
-								});
+								setTimeout(() => {
+									$.when(SaveApproverQueue(NewlyCreatedItemId)).then(function (ProcessListResult) {							      					   																 								
+										console.log('Queues created');
+									});
+								}, 1000);
+							
 							}
 						}
 						else
-						{
-							alert('The approval request has been submitted successfully.');
+						{//debugger;
+							//alert('The approval request has been submitted successfully.');
+							alert('Data has been submitted successfully.');
+							$('#overlaysearch').hide();
 							window.location.replace("approvals.aspx");
 						}
 					}
@@ -3587,10 +3858,10 @@ var ActiveQueeNo='';
 var NextActiveQueeNo='';
 var ExistingSignedImage='';
 	
-var updateData = function (data,Id,ConditionData) 
+var updateData = function (data,Id,ConditionData,fileData) 
 {
 	Id = parseInt(Id);
-	var ExStatus = '';
+	var ExStatus = true;
 	if(ConditionApplied == true)
 	{
 		ExStatus = AdvanceQueeGenerateProcess(data,Id);
@@ -3620,29 +3891,43 @@ var updateData = function (data,Id,ConditionData)
 				ModifyProcessQueue();
 				
 					
-				if ($('#attachmentsupload').val() == "" && $('#supporting_doc_files').val() == "") 
-				{
+			//	if ($('#attachmentsupload').val() == "" && $('#supporting_doc_files').val() == "") 
+			//	{
 					//var NewlyCreatedItemId = data.d.ID;					
 					UpdateTableData();
+					if(newApprovalDocs.length > 0){
+						ApprovalDocsUpload(Id, newApprovalDocs, '');
+					}
+					if(fileData.length > 0){
+					/*	var file = $('#' + fileData[0].col);
+						var checkfile = CheckFileSize(file);
+						if(checkfile){
+						ApprovalDocsUpload(Id, fileData, fileData[0].col);
+						}*/
+						ApprovalDocsUpload(Id, fileData, '');
+					}
 					if(ischeck ==  false && ischeckk ==  false)
 					{
 						if(SavedStpApprovers.length > 0)
 						{
+							setTimeout(() => {
 							if(AskNextApproversARR.length>0)
 							{
 								SetUpNextAskQueeApprovers();
 							}							
 							console.log(SavedStpApprovers);							
 						 	console.log('Updated');
-						 	alert('The approval request has been updated successfully.');
+						 	$('#overlaysearch').hide();
+						 	alert('Data has been updated successfully.');
 						 	window.location.replace("approvals.aspx");
+						 	}, 1000);
 						}
 					}
-				}
+			//	}
 				
 				if ($('#attachmentsupload').val() == "" && $('#supporting_doc_files').val() == "")
 				return;	
-				Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
+			/*	Passingtoken = window.atob(titanForWork.getQueryStringParameter('Step'));
 				var id = '';
 				if(Passingtoken == 'Initiation')
 				{
@@ -3684,7 +3969,7 @@ var updateData = function (data,Id,ConditionData)
 				{
 					alert("Details are saved successfully.");
 					window.location.replace("approvals.aspx"); //location.reload();
-				}
+				} */
 			},
 			error: function (error) 
 			{
@@ -3694,7 +3979,9 @@ var updateData = function (data,Id,ConditionData)
 	}
 	else
 	{
+		//alert("Details are saved successfully.");
 		alert("Details are saved successfully.");
+		$('#overlaysearch').hide();
 		window.location.replace("approvals.aspx"); 
 	}
 }
@@ -3856,6 +4143,7 @@ var GetImageBuffer = function (SignImage)
 	var ActiveInitiationScope='';
 	function PageColomnsDisplay() 
 	{
+		
 		let promi = $.Deferred();
 		ActiveInitiationScope='';
 		var templatename = $("input[name='selector']:checked").val();
@@ -3894,7 +4182,7 @@ var GetImageBuffer = function (SignImage)
 		arrNumVal = [];mleList=[];AutoFilledCols =[];
 		$('.custom-panel').show();
 		//GetData("/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$select=*,Title,SequenceNo,DefaultValue,ColumnName,ColumnType,Mandatory,DateValidation,NumberValidation,DropdownValues,Active,TemplateID/Id,TemplateID/TemplateName,Author/Title,Author/Id&$expand=TemplateID,Author&$filter= TemplateID/Title eq '" + templatename + "' &$orderby= SequenceNo asc").done(function (plantsdata) {
-		GetData("/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$select=*,Title,SequenceNo,DefaultValue,ColumnName,ColumnType,Mandatory,DateValidation,NumberValidation,DropdownValues,Active,TemplateID/Id,TemplateID/TemplateName,Author/Title,Author/Id&$expand=TemplateID,Author&$filter= TemplateID/ID eq '" + templateID + "' &$orderby= SequenceNo asc").done(function (plantsdata) {
+		GetData("/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$select=*,Title,SequenceNo,DefaultValue,ColumnName,ColumnType,Mandatory,DateValidation,NumberValidation,DropdownValues,Active,TemplateID/Id,TemplateID/TemplateName,Author/Title,Author/Id,VisibleFields/Id,VisibleFields/Title&$expand=TemplateID,VisibleFields,Author&$filter= TemplateID/ID eq '" + templateID + "' &$orderby= SequenceNo asc").done(function (plantsdata) {
 			$("#appenddyamicboxes").empty();
 			$('#Docfilename').empty();			
 			
@@ -3945,7 +4233,7 @@ var GetImageBuffer = function (SignImage)
 				else if(Passingtoken == 'Process Steps')
 				{
 					$("#savenewDraft").css("display", "none");
-					$("#AttachDocs").css("display", "none");
+					//$("#AttachDocs").css("display", "none");
 					var ActionType = window.atob(titanForWork.getQueryStringParameter('ActionType'));					
 					var CurrStepId = window.atob(titanForWork.getQueryStringParameter('StepID'));
 					var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessQueue')/items?$select=StepID&$filter=RequestID eq "+window.atob(titanForWork.getQueryStringParameter('RecNo'))+" and ID eq "+CurrStepId+"&$orderby=Sequence_No asc";
@@ -3958,7 +4246,7 @@ var GetImageBuffer = function (SignImage)
 	    				if(ActionType == 'Forward-Review-Action')
 						{
 							$("#ForwardTextDiv").css("display","inline-block");
-							$(".new-request-top-right-change-Display").css("display", "block");
+							$(".new-request-top-right-change-Display").css("display", "none");
 							$(".new-request-top-right-change-Display-History").css("display", "none");
 							$(".new-request-top-right-change").css("display", "none");
 							$(".new-request-top-right").css("display", "none");
@@ -3970,6 +4258,10 @@ var GetImageBuffer = function (SignImage)
 							$('#Forwardrequest').css("display", "none");
 							$('#Revertrequest').css("display", "none");
 							
+							var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessForward')/items?$select=*,ForwardedBy/Title,ForwardedBy/EMail,ForwardedTo/Title,ForwardedTo/EMail&$expand=ForwardedBy,ForwardedTo&$filter=ApprovalQueueID eq "+window.atob(titanForWork.getQueryStringParameter('StepID'))+"";
+							var QueryStepIdData = RequestGetdata(QueryDataStep);
+							var ForwardUser = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryStepIdData[0].ForwardedBy.EMail);
+							$("#ForwardedByImage").attr("src",ForwardUser);							
 						}
 						else
 						{
@@ -3983,14 +4275,17 @@ var GetImageBuffer = function (SignImage)
 						}
 					}
 					else
-					{					
+					{	if(window.atob(titanForWork.getQueryStringParameter('ActionType')) == 'Forward-Review-Action'){
+						QueryResult = [];
+						}else{
 						var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateEditScope')/items?$select=*,TableColumns/Id,TableColumns/Title&$expand=TableColumns&$filter=TemplateID eq '"+CurrTenplateID+"' and StepID/ID eq '"+QueryStepIdData[0].StepID+"' and StepType eq 'Process Steps'" ;
 						QueryResult = RequestGetdata(Query);
+						}
 					} 
 					if(ActionType == 'Forward-Review-Action')
 					{
 						$("#ForwardTextDiv").css("display","inline-block");
-						$(".new-request-top-right-change-Display").css("display", "block");
+						$(".new-request-top-right-change-Display").css("display", "none");
 						$(".new-request-top-right-change-Display-History").css("display", "none");
 						$(".new-request-top-right-change").css("display", "none");
 						$(".new-request-top-right").css("display", "none");
@@ -4001,6 +4296,12 @@ var GetImageBuffer = function (SignImage)
 						$("#Rejectrequest").css("display", "none");
 						$('#Forwardrequest').css("display", "none");
 						$('#Revertrequest').css("display", "none");
+						$("#AttachDocs").css('display','none');
+						
+						var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessForward')/items?$select=*,ForwardedBy/Title,ForwardedBy/EMail,ForwardedTo/Title,ForwardedTo/EMail&$expand=ForwardedBy,ForwardedTo&$filter=ApprovalQueueID eq "+window.atob(titanForWork.getQueryStringParameter('StepID'))+"";
+						var QueryStepIdData = RequestGetdata(QueryDataStep);
+						var ForwardUser = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryStepIdData[0].ForwardedBy.EMail);
+						$("#ForwardedByImage").attr("src",ForwardUser);
 					}
 					else
 					{
@@ -4050,8 +4351,8 @@ var GetImageBuffer = function (SignImage)
 	
     				
     				$("#Approverequest").css("display", "none");
-    				
-					if(QueryDataRetResult[0].ActionRequired == 'Review Only' || QueryDataRetResult[0].ActionRequired == 'Edit Only')
+    				debugger;
+					if(QueryDataRetResult[0].ActionRequired == 'Review Only' || QueryDataRetResult[0].ActionRequired == ' ')
 					{
 						if(QueryDataRetResult[0].ActionRequired == 'Edit Only')
 						{
@@ -4076,12 +4377,12 @@ var GetImageBuffer = function (SignImage)
 						$('#Revertrequest').css("display", "none");
 						AskingNextQueeApprovers('approvalReviewedModal')
 					}
-					else if(QueryDataRetResult[0].ActionRequired == 'Edit & Sign')
+					else if(QueryDataRetResult[0].ActionRequired == 'Edit & Sign' || QueryDataRetResult[0].ActionRequired == 'Review & Sign' || QueryDataRetResult[0].ActionRequired == 'Review and Sign')
 					{
 						if(ActionType == 'Forward-Review-Action')
 						{	
 							$("#ForwardTextDiv").css("display","inline-block");
-							$(".new-request-top-right-change-Display").css("display", "block");
+							$(".new-request-top-right-change-Display").css("display", "none");
 							$(".new-request-top-right-change-Display-History").css("display", "none");						
 							$("#Approverequest").css("display", "none");
 							$("#savenewrequest").css("display", "none");
@@ -4142,15 +4443,15 @@ var GetImageBuffer = function (SignImage)
     		{
 				$.map(plantsdata.d.results, function (datarepeter) {
 					var FilteredRec = $.grep(QueryResult, function(v) {
-    					return v.ColumnIDId == datarepeter.Id;
+    					return v.ColumnIDId == datarepeter.Id; // && v.EditScope == 'Partial';
 					});
 					
-					var PermissionStatus='';
+					var PermissionStatus='';var VisiblePermissionClass = '';
 					if(ActiveInitiationScope == 'Full-Form' || ActiveInitiationScope == 'Full Form'  && window.atob(titanForWork.getQueryStringParameter('Step')) == 'Initiation')
 					{
-						PermissionStatus='';
+						PermissionStatus='';						
 					}
-					else
+					else if(ActiveInitiationScope == 'Partial')
 					{				
 						if(FilteredRec.length==0)
 						{
@@ -4165,24 +4466,34 @@ var GetImageBuffer = function (SignImage)
 							else
 							{
 								PermissionStatus='disabled="disabled"';
+								//VisiblePermissionClass = 'hide';
 							}							
 						}
-						else						 
-							{
-								PermissionStatus='';
+						else if(FilteredRec.length > 0)
+						{
+							
+							if(FilteredRec[0].EditScope == 'Invisible'){							
+								PermissionStatus = 'disabled="disabled"';	
+								VisiblePermissionClass = 'hide';						
+							}else{
+								PermissionStatus = '';	
 							}
+						}
 					}
+					/*else{
+						PermissionStatus = '';
+						VisiblePermissionClass = 'hide';
+					}*/
 					
 					var dynamictempalte = "";
 					var valuefordefault = "";
 					var valueinMulti = "";
 					var datatypeval = "",classsetnew = "" ;
 					var templatehelptext= "", saveclassset = ""; headerstyle = ""; classset = ""; classRich = "";		
-					if(datarepeter.VisibilityCheck == true){
-						datatypeval ='onchange="checkColVisibility(\''+datarepeter.ConditionForVisible+'\',\''+datarepeter.ColumnName+'\');"';
-						//saveclassset += 'hide ';
-						
-					}
+				/*	if(datarepeter.ConditionForVisible != null){
+						datatypeval ='onchange="checkColVisibility(\''+datarepeter.ConditionForVisible+'\',\''+datarepeter.ColumnName+'\', \''+datarepeter.VisibleFields+'\');"';
+						//saveclassset += 'hide ';						
+					}*/
 					if (datarepeter.DefaultValue != null && datarepeter.DefaultValue != undefined && datarepeter.DefaultValue != "") {
 						valuefordefault += datarepeter.DefaultValue ? datarepeter.DefaultValue : "";
 						AutoFilledCols.push({'ColName' : datarepeter.ColumnName , 'ColValue' : valuefordefault });
@@ -4309,9 +4620,9 @@ var GetImageBuffer = function (SignImage)
 										mleList.push({'col':datarepeter.ColumnName, 'data' : valuefordefault});
 										//$('.richText-editor').html(valuefordefault )
 										//templatehelptext += "<textarea "+PermissionStatus+" class='dynamicvalfeachcls form-control "+ classRich +" "+ classset +"' value='" + valuefordefault + "' rows='5' style='max-height : 100px' id='" + datarepeter.ColumnName + "' coltype ='"+datarepeter.ColumnType+"'></textarea>";
-										templatehelptext += "<div class='dynamicvalfeachcls  form-control "+ classRich +" "+ classset +"' "+PermissionStatus+" style='height:100% !important;min-height : 100px' id='" + datarepeter.ColumnName + "' coltype ='"+datarepeter.ColumnType+"' ></div>";
+										templatehelptext += "<div class='dynamicvalfeachcls form-control "+ classRich +" "+ classset +" ' "+PermissionStatus+" style='height:100% !important;min-height : 100px' id='" + datarepeter.ColumnName + "' coltype ='"+datarepeter.ColumnType+"' ></div>";
 									}else{
-										templatehelptext += "<div class='dynamicvalfeachcls  form-control' "+PermissionStatus+" style='height:100% !important;min-height : 100px'>"+valuefordefault +"</div>";
+										templatehelptext += "<div class='dynamicvalfeachcls form-control ' "+PermissionStatus+" style='height:100% !important;min-height : 100px'>"+valuefordefault +"</div>";
 									}																		
 									//if(valuefordefault != '' ){ $('.richText-editor').val(valuefordefault )}								
 								 } 							 
@@ -4324,10 +4635,58 @@ var GetImageBuffer = function (SignImage)
 							}else if(datarepeter.ColumnType == "QR Code" || datarepeter.ColumnType == "Web Link"){
 								console.log(datarepeter.ColumnType);
 								templatehelptext  += "";	
-							}else if(datarepeter.ColumnType == 'AttachmentBox'){
-								console.log(datarepeter.ColumnType);
-								datatypeval ='onchange="validateFileExtensions(\''+datarepeter.ColumnName+'\',\''+datarepeter.DefaultValue+'\');"';
-								templatehelptext += "<input type='file' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls  " + classset +" form-control "+ datetypevalstop + "' " + datatypeval + " value='' id='" + datarepeter.ColumnName +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
+							}else if(datarepeter.ColumnType == 'AttachmentBox')
+							{//debugger;
+								var PassingStep = window.atob(titanForWork.getQueryStringParameter('Step'));								
+								if(PassingStep == 'Initiation'){
+									console.log(datarepeter.ColumnType);
+									if(PermissionStatus == '')	
+									{
+											classset += 'active';
+									}
+									saveclassset += "dynamicdatatexboxes";
+									datatypeval ='onchange="validateFileExtensions(\''+datarepeter.ColumnName+'\', \''+datarepeter.DefaultValue+'\', \''+datarepeter.MaxNumber+'\');"';
+									templatehelptext += "<input type='file' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls  "+ classset +" "+VisiblePermissionClass+" form-control "+ datetypevalstop + "' " + datatypeval + " value='' id='" + datarepeter.ColumnName +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
+								}else{								
+									var ColDoc = [];								
+									var RecID = window.atob(titanForWork.getQueryStringParameter('RecNo'));								
+									var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessDocuments')/items?$select=*,Author/ID,Author/Title,RequestID/Id,AttachmentFiles&$expand=RequestID,Author,AttachmentFiles&$filter=RequestID/Id eq '"+RecID+"' and ColumnName eq '"+datarepeter.ColumnName+"'";
+									var QueryResultDocs = RequestGetdata(Query);
+									if(QueryResultDocs.length > 0){
+									if(QueryResultDocs[0].AttachmentFiles.results.length > 0){
+										saveclassset += "dynamicdatatexboxes";
+										templatehelptext += '<div class="total_attch_fils Doc_'+datarepeter.ColumnName+'" >'								
+										templatehelptext += '<div class="round_shap">'
+									    templatehelptext += '<span class="filename">'+QueryResultDocs[0].AttachmentFiles.results[0].FileName+'</span>'
+									    templatehelptext += '<div class="event_btn">'
+									    templatehelptext += '<a href="javascript:void(0);" download="'+QueryResultDocs[0].AttachmentFiles.results[0].FileName+'" name="'+QueryResultDocs[0].AttachmentFiles.results[0].FileName+'" onclick="downloadAttach(\'' + QueryResultDocs[0].AttachmentFiles.results[0].ServerRelativeUrl+ '\', \'' + QueryResultDocs[0].AttachmentFiles.results[0].FileName + '\')"per="Download"><i class="fa fa-download"></i></a>'
+									    if(PermissionStatus != ''){	
+									    //templatehelptext += '<label for="upload_'+datarepeter.ColumnName+'" style="display: inline-block;"><a href="javascript:void(0);" per="Upload"><i class="fa fa-upload"></i></a></label>'
+									    //templatehelptext += '<input type="file" name="datafile" style="display:none" id="upload_'+datarepeter.ColumnName+'"class="browse form-control">'
+									    //templatehelptext += '<a href="javascript:void(0);" per="Delete" onclick="DeleteColAttachment(\''+QueryResultDocs[0].Id+'\',\''+QueryResultDocs[0].AttachmentFiles.results[0].FileName+ '\', \''+datarepeter.ColumnName+'\')"><i class="fa fa-times"></i></a>'
+									    }else{
+									    templatehelptext += '<a href="javascript:void(0);" per="Delete" onclick="DeleteColAttachment(\''+PermissionStatus+'\',\''+QueryResultDocs[0].Id+'\',\''+QueryResultDocs[0].AttachmentFiles.results[0].FileName+ '\', \''+datarepeter.ColumnName+'\',\''+datarepeter.DefaultValue+'\',\''+datarepeter.MaxNumber+'\')"><i class="fa fa-times"></i></a>'
+									    }
+									    templatehelptext += '</div> </div> </div>'
+								    }else{
+								    	if(PermissionStatus == '')	
+										{
+												classset += 'active';
+										}
+								    	saveclassset += "dynamicdatatexboxes";
+										datatypeval ='onchange="validateFileExtensions(\''+datarepeter.ColumnName+'\', \''+datarepeter.DefaultValue+'\', \''+datarepeter.MaxNumber+'\');"';
+										templatehelptext += "<input type='file' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls  "+ classset +" "+VisiblePermissionClass+" form-control "+ datetypevalstop + "' " + datatypeval + " value='' id='" + datarepeter.ColumnName +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
+								    }
+								  }else{
+								  if(PermissionStatus == '')	
+										{
+												classset += 'active';
+										}
+								    	saveclassset += "dynamicdatatexboxes";
+										datatypeval ='onchange="validateFileExtensions(\''+datarepeter.ColumnName+'\', \''+datarepeter.DefaultValue+'\', \''+datarepeter.MaxNumber+'\');"';
+										templatehelptext += "<input type='file' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls  "+ classset +" "+VisiblePermissionClass+" form-control "+ datetypevalstop + "' " + datatypeval + " value='' id='" + datarepeter.ColumnName +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
+								  }
+								}
 							}
 							else if(datarepeter.ColumnType == "Checkbox"){								
 								console.log(datarepeter.ColumnType);
@@ -4343,10 +4702,10 @@ var GetImageBuffer = function (SignImage)
 								var suffix = datarepeter.Suffix ? datarepeter.Suffix : '';
 								if(datarepeter.Width == 'Switch'){
 									saveclassset += "dynamicdatatexboxes";
-									templatehelptext  += '<div class="combine_box_adds"><span class="">'+prefix+'</span><label class="switchtoggling"><input type="checkbox" '+PermissionStatus+' coltype ="'+datarepeter.ColumnType+'" class="dynamicvalfeachcls checkbox_widthmange '+ classset +'" value="" data-original-value="'+datarepeter.ColumnName+'"  id="'+datarepeter.ColumnName+'" '+value+'> <span class="clickmange"></span></label><span class="">'+suffix+'</span></div>';
+									templatehelptext  += '<div class="combine_box_adds"><span class="">'+prefix+'</span><label class="switchtoggling"><input type="checkbox" '+PermissionStatus+' coltype ="'+datarepeter.ColumnType+'" class="dynamicvalfeachcls checkbox_widthmange '+ classset +' '+VisiblePermissionClass+'" value="" data-original-value="'+datarepeter.ColumnName+'"  id="'+datarepeter.ColumnName+'" '+value+'> <span class="clickmange"></span></label><span class="">'+suffix+'</span></div>';
 								}else{
 									saveclassset += "dynamicdatatexboxes";
-									templatehelptext  += '<div class="combine_box_adds"><span class="">'+prefix+'</span><input type="checkbox" '+PermissionStatus+' coltype ="'+datarepeter.ColumnType+'" class="dynamicvalfeachcls inline_default_checkbox '+ classset +'" value="" data-original-value="'+datarepeter.ColumnName+'"  id="'+datarepeter.ColumnName+'" '+value+'></div>'; 
+									templatehelptext  += '<div class="combine_box_adds"><span class="">'+prefix+'</span><input type="checkbox" '+PermissionStatus+' coltype ="'+datarepeter.ColumnType+'" class="dynamicvalfeachcls inline_default_checkbox '+ classset +' '+VisiblePermissionClass+'" value="" data-original-value="'+datarepeter.ColumnName+'"  id="'+datarepeter.ColumnName+'" '+value+'></div>'; 
 								}
 	
 							}
@@ -4380,7 +4739,7 @@ var GetImageBuffer = function (SignImage)
 									let t = datarepeter.Title; t=t.replaceAll(' ','')
 									t=t.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
 									coltitle = '_'+t;
-									templatehelptext += "<input type='text' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls	" + classset +" form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + coltitle +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";																								
+									templatehelptext += "<input type='text' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls	" + classset +" "+VisiblePermissionClass+" form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + coltitle +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";																								
 								}else if(datarepeter.ColumnName == 'SummarizedValue'){
 									let t = datarepeter.TableIName; 
 									let d = datarepeter.TableColumnName;d=d.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');d=d.replaceAll(' ','');
@@ -4397,21 +4756,23 @@ var GetImageBuffer = function (SignImage)
 									templatehelptext += "<input type='text' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls	" + classset +" form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + coltitle +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";																								
 									
 								}else{
-								templatehelptext += "<input type='text' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls	" + classset +" form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + coltitle +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
+								templatehelptext += "<input type='text' "+PermissionStatus+"  coltype ='"+datarepeter.ColumnType+"'  class='dynamicvalfeachcls " + classset +" form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + coltitle +"' "+datalimitset +" "+setnumberlimit+" "+urltext+"  />";
 								}
 							}
 							if(datarepeter.ColumnType == "Table"){
 								var tbLedtScope = $.grep(QueryResult, function(v) {
-									return v.ColumnIDId == datarepeter.ID && v.ObjectType == 'Table';
+									return v.ColumnIDId == datarepeter.ID && (v.ObjectType == 'Table' || v.ObjectType == 'Column');
 								});
-								if(tbLedtScope.length != '0')
+								
+							/*	if(tbLedtScope.length != '0')
 									{
 										PermissionStatus = 'disabled="disabled"';
 									}
 								else{	
 										PermissionStatus = '';
-									}					
-						
+									}					*/
+								//if(tbLedtScope.length > 0){}
+								
 								if(datarepeter.DefaultValue == 'Rows' && Passingtoken == 'Initiation'){
 									getTableInitialData(datarepeter.ID,datarepeter.Width,PermissionStatus,tbLedtScope);
 								}else{
@@ -4422,7 +4783,7 @@ var GetImageBuffer = function (SignImage)
 							
 							if (pagenumbers == 1) {
 								if (datarepeter.Mandatory) {
-									dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+									dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 													<div class='form-group custom-form-group' style='"+headerstyle+"'>\
 														<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
 														"+templatehelptext+"\
@@ -4433,9 +4794,9 @@ var GetImageBuffer = function (SignImage)
 									 if(datarepeter.ColumnType == "QR Code" || datarepeter.ColumnType == "Web Link"){
 											dynamictempalte = "";
 										} else{
-														dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+														dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 															<div class='form-group custom-form-group' style='"+headerstyle+"'>\
-																<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+																<label class='columnnametxt "+colorset+" "+ classset +" ' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " :</label>\
 																"+templatehelptext+"\
 															</div>\
 														</div>";
@@ -4444,7 +4805,7 @@ var GetImageBuffer = function (SignImage)
 							}
 							else if (pagenumbers == 2) {
 								if (datarepeter.Mandatory) {
-									dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+									dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 													<div class='form-group custom-form-group' style='"+headerstyle+"'>\
 														<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
 															"+templatehelptext+"\
@@ -4454,9 +4815,9 @@ var GetImageBuffer = function (SignImage)
 										if(datarepeter.ColumnType == "QR Code" || datarepeter.ColumnType == "Web Link"){
 											dynamictempalte = "";
 										} else{
-												dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+												dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 														<div class='form-group custom-form-group' style='"+headerstyle+"'>\
-															<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+															<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " :</label>\
 															"+templatehelptext+"\
 														</div>\
 													</div>";
@@ -4465,7 +4826,7 @@ var GetImageBuffer = function (SignImage)
 							}
 							else if (pagenumbers == 3) {
 								if (datarepeter.Mandatory) {
-									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 													<div class='form-group custom-form-group' style='"+headerstyle+"'>\
 														<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
 															"+templatehelptext+"\
@@ -4475,9 +4836,9 @@ var GetImageBuffer = function (SignImage)
 									if(datarepeter.ColumnType == "QR Code" || datarepeter.ColumnType == "Web Link"){
 											dynamictempalte = "";
 										} else{
-															dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+															dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 															<div class='form-group custom-form-group' style='"+headerstyle+"'>\
-																<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " </label>\
+																<label class='columnnametxt "+colorset+" "+ classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " </label>\
 																"+templatehelptext+"\
 															</div>\
 														</div>";
@@ -4486,7 +4847,7 @@ var GetImageBuffer = function (SignImage)
 							}
 							else {
 								if (datarepeter.Mandatory) {
-									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
 													<div class='form-group custom-form-group' style='"+headerstyle+"'>\
 														<label class='columnnametxt "+colorset+" "+classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
 															"+templatehelptext+"\
@@ -4496,26 +4857,26 @@ var GetImageBuffer = function (SignImage)
 									if(datarepeter.ColumnType == "QR Code" || datarepeter.ColumnType == "Web Link"){
 											dynamictempalte = "";
 										} else{
-														dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +"'>\
-															<div class='form-group custom-form-group' style='"+headerstyle+"'>\
-																<label class='columnnametxt "+colorset+" "+classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
-																"+templatehelptext+"\
-															</div>\
-														</div>";
+										dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 "+saveclassset+" "+classset +" "+VisiblePermissionClass+"' id='"+datarepeter.Id+"'>\
+											<div class='form-group custom-form-group' style='"+headerstyle+"'>\
+												<label class='columnnametxt "+colorset+" "+classset +"' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+												"+templatehelptext+"\
+											</div>\
+										</div>";
 									}
 								}
 							}
 						}
 							
-							$("#appenddyamicboxes").append(dynamictempalte);
-							
-							console.log(valuefordefault);
-							console.log(datarepeter.ColumnName);
-							$(".full").addClass("col-md-12")
-							// remove a class
-							$(".full").removeClass("col-md-4")
-							$(".full").removeClass("col-md-6")
-							selectddrval(datarepeter.ColumnName, valuefordefault);
+						$("#appenddyamicboxes").append(dynamictempalte);
+						
+						console.log(valuefordefault);
+						console.log(datarepeter.ColumnName);
+						$(".full").addClass("col-md-12")
+						// remove a class
+						$(".full").removeClass("col-md-4")
+						$(".full").removeClass("col-md-6")
+						selectddrval(datarepeter.ColumnName, valuefordefault);
 						})
 						$('.stopenterdata').keydown(function (e) {
 							e.preventDefault();
@@ -4523,7 +4884,10 @@ var GetImageBuffer = function (SignImage)
 						});
 						SetCalculateValue();
 						SetSummarizedValue();
-						SetDatpickerNdropDown(resultCol,'','','',QueryDataRetResult);						
+						SetDatpickerNdropDown(resultCol,'','','',QueryDataRetResult);	
+						if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+							GetAllattachments();
+						}					
 					}					
 					if(personCols.length > 0){
 					setTimeout(removeCancel,5000);	
@@ -4707,7 +5071,8 @@ var GetImageBuffer = function (SignImage)
 					
 					}
 				}
-				
+				//$('#overlaysearch').hide();
+				//$('#Onloader').hide();
 			}
 			// this is end or new change code in botla peraiah
 			function selectddrval(idval, appendval){
@@ -4775,9 +5140,10 @@ var GetImageBuffer = function (SignImage)
 
 				return def.promise();
 			}
-			function uploadFileSP(listName, id, fileArray, fileCount, Id) {
+			function uploadFileSP(listName, id, fileArray, fileCount, Id, filename) {
 				//var FilesCount = 0;
 				var deferred = $.Deferred();
+				
 				//	var uploadStatus = "";
 				//var file = fileArray[0];
 				//var getFile = getFileBuffer(file);
@@ -4785,12 +5151,14 @@ var GetImageBuffer = function (SignImage)
 				//	getFile.done(function (buffer, status, xhr) {
 				//var bytes = new Uint8Array(buffer);
 				//var content = new SP.Base64EncodedByteArray();
-
-				var fileInput = jQuery('#'+Id);
+				if(file == null || file == ''){
+					var fileInput = jQuery('#'+Id);
+					var fileName = fileInput[0].files[fileCount].name;
+				}else{
+					var fileName = filename;
+				}
 				//var parts = fileInput[0].value.split('\\');
-				//var fileName = parts[parts.length - 1];
-				var fileName = fileInput[0].files[fileCount].name;
-
+				//var fileName = parts[parts.length - 1];			
 				var queryUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/GetByTitle('" + listName + "')/items(" + id + ")/AttachmentFiles/add(FileName='" + fileName + "')";
 				//var uploadCount = 0;
 				$.ajax({
@@ -4828,7 +5196,7 @@ var GetImageBuffer = function (SignImage)
 			}
 
 
-			function getFileBuffer(i,id) {
+			function getFileBuffer(i,id, file) {
 				var deferred = jQuery.Deferred();
 				var fileInput = jQuery('#'+id);
 				var reader = new FileReader();
@@ -4839,7 +5207,11 @@ var GetImageBuffer = function (SignImage)
 				reader.onerror = function (e) {
 					deferred.reject(e.target.error);
 				}
-				reader.readAsArrayBuffer(fileInput[0].files[i]);
+				if(file == null || file == ''){
+					reader.readAsArrayBuffer(fileInput[0].files[i]);
+				}else{					
+					reader.readAsArrayBuffer(file.File);
+				}
 				return deferred.promise();
 			}
 			var arrFileUpload = [];
@@ -5167,7 +5539,7 @@ function ApprovedRequest()
 	{
 		ExStatus = true;
 	}
-	
+	//$('#overlaysearch').show();
 	ActiveBtnStatus = 'ApprovedSign';
 	if(ExStatus == true)
 	{
@@ -5179,8 +5551,17 @@ function ApprovedRequest()
         		var SignText = $("#SingTextType").val();
         			SignText.trim();
         		if(SignText.length>0)
-        		{    	    	
-        			saverecord();
+        		{   
+        			var node = document.getElementById('SingTextType');
+					domtoimage.toPng(node).then (function (dataUrl) {
+						var ImgUrl = dataUrl;
+						var img = new Image();
+			    		var file = dataURLtoFile(ImgUrl, $("#SingTextType").val().trim() + window.btoa("_AdaptSignature") + ".png");
+			    		SignImage=[];
+			    		SignImage.push(file);
+		    			saverecord();
+					})
+        			//saverecord();
         		}
         		else
         		{
@@ -5191,7 +5572,18 @@ function ApprovedRequest()
         	{
         		if(SignImage.length>0 || SelectedSignImages != '')
         		{
-        			saverecord();
+        			var node = document.getElementById('SignImgPreview');
+					domtoimage.toPng(node).then (function (dataUrl) {
+						var ImgUrl = dataUrl;
+						var img = new Image();
+    					var file = dataURLtoFile(ImgUrl, _spPageContextInfo.userDisplayName + window.btoa("_AdaptSignature") + ".png");
+    					SignImage=[];
+    					SignImage.push(file);
+    					
+    					saverecord();
+    					//Approvedreq(Action);
+					})        			
+        			//saverecord();        			
         		}
         		else
         		{
@@ -5201,13 +5593,28 @@ function ApprovedRequest()
         	else if(ActiveSingTypeRadio == 'SignDraw')
         	{
         		var DrawSingValue = $sigdiv.jSignature('getData', "default");
-        		if(DrawSingValue != "")
+        		var img = new Image();
+    			var file = dataURLtoFile(DrawSingValue, _spPageContextInfo.userDisplayName + window.btoa("_AdaptSignature") + ".png");
+    			SignImage=[];
+    			SignImage.push(file);
+    			
+    			alert(SignImage[0].size);
+        		if(SignImage[0].size>1000)
         		{
         			saverecord();
+        			//setTimeout(function () {
+        			//saverecord();
+        			//$('#overlaysearch').hide()
+					//}, 100);					
+
         		}
         		else
         		{
+        			setTimeout(function () {
         			alert("Please Draw Your Signature.");
+        			//$('#overlaysearch').hide()
+					}, 100);					
+
         		}
         	}				
 		}
@@ -5226,6 +5633,23 @@ function ApprovedRequest()
   			return value != UserId;
 		});
 	}
+
+
+function dataURLtoFile(dataurl, filename) {
+    var arr = dataurl.split(','),
+        mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]), 
+        n = bstr.length, 
+        u8arr = new Uint8Array(n);
+            
+    while(n--){
+        u8arr[n] = bstr.charCodeAt(n);
+    }
+        
+    return new File([u8arr], filename, {type:mime});
+}
+
+
 
 </script>
 		
@@ -5259,13 +5683,14 @@ $(function(){
 });
 
 
-function initializePeoplePicker(peoplePickerElementId) 
+function initializePeoplePicker(peoplePickerElementId,PersonValidation) 
 {
+	var AllowedUser = PersonValidation == 'Single' ? false : true; 
 	var schema = {};
 	schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
 	schema['SearchPrincipalSource'] = 15;
 	schema['ResolvePrincipalSource'] =15;
-	schema['AllowMultipleValues'] = true;
+	schema['AllowMultipleValues'] = AllowedUser;
 	schema['MaximumEntitySuggestions'] =50;
 	schema['Width'] = '280px';
 	this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId,
@@ -5284,7 +5709,6 @@ function initializePeoplePickerStakeholder(peoplePickerElementId)
 	this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId,
 	null, schema);
 }
-
 
 
 function onChangeTask(HTMLID, PplPickerId, UserBoxId) 
@@ -5325,6 +5749,8 @@ function onChangeTask(HTMLID, PplPickerId, UserBoxId)
            				    tempEmail = tempEmail.replace("#ext#@adaptindia.onmicrosoft.com", '');
            	    			tempEmail = tempEmail.replace("_", '@');
            				}
+           				NewAddedUser.push({	Name : userInfo[0].DisplayText,
+           									Email:tempEmail});
            				var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(tempEmail);           
            				var ForwardUserImg='';
             				ForwardUserImg += "<div class='col-md-6 col-sm-6 userBoxParent'>";
@@ -5447,8 +5873,16 @@ function ADDStakeHolder()
 				
 				if(ExStatus == true)
 				{
-					alert('Stakeholders Action Completed.');
-					$('#forward_stpings').modal('hide');
+					if(NewAddedUser.length>0)
+					{
+						GenerateForwardMailDesign()
+					}
+					else
+					{
+						alert('Stakeholders Action Completed.');
+						$('#forward_stpings').modal('hide');
+						window.location.href = titanForWork.getQueryStringParameter('sourcelocation');
+					}
 				}
 				else
 				{
@@ -5713,13 +6147,14 @@ function LoadPartialTableSteps()
 	$("#TableFieldsListSteps").empty();
 	SelectedPrtableSteps=[];
 	var ResultItems=[];
-	var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateID eq '"+CurrTenplateID+"'&$orderby=SequenceNo asc";  
+	//var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateID eq '"+CurrTenplateID+"'&$orderby=SequenceNo asc";  
+	var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateEditScope')/items?$select=*,ColumnID/Title,ColumnID/ID&$expand=ColumnID&$filter=TemplateID eq '"+CurrTenplateID+"' and StepID/StepName eq '"+window.atob(titanForWork.getQueryStringParameter('StepNo'))+"'&$orderby=ColumnID asc";  
     $.ajax({  
        url: Ownurl,  
        headers: { Accept: "application/json;odata=verbose" },  
        async:true,  
        success: function (data) 
-       {
+       {debugger
            ResultItems = data.d.results;
            var TableHTML='';
            //var SignposDesign ='';
@@ -5728,14 +6163,14 @@ function LoadPartialTableSteps()
 			{
 				for(var i=0; i<ResultItems.length; i++)
             	{
-           			if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header")
-           			{
+           			//if(ResultItems[i].ColumnType!="FixedText" && ResultItems[i].ColumnType!="Header")
+           			//{
 
 	               	   	TableHTML = TableHTML +	"<tr>"+
-	           		        						"<td>"+ResultItems[i].Title+"</td>"+
-	           		        						"<td><input type='checkbox' name='PartialTableChkboxSteps' style='height: 17px; width: 17px;' value='"+ResultItems[i].ID+"'></td>"+
+	           		        						"<td>"+ResultItems[i].ColumnID.Title+"</td>"+
+	           		        						"<td><input type='checkbox' name='PartialTableChkboxSteps' style='height: 17px; width: 17px;' value='"+ResultItems[i].ColumnID.ID+"'></td>"+
 	        							       	"</tr>";
-	        		}            
+	        		//}            
 				}
 			}
 						
@@ -5743,7 +6178,7 @@ function LoadPartialTableSteps()
 			$("#TableFieldsListSteps").empty().append(TableHTML);  
         },
         error: function (data) 
-        {  
+        {  debugger
             console.log("Error in getdata.");
         }  
     });
@@ -5781,7 +6216,7 @@ function SetDisplayPrTable4Approvers(Action)
 	{
 		$("#editablefildStepsDIV").css("display", "block");
 	}
-	else if(Action == 'Edit & Sign')
+	else if(Action == 'Edit Sign')
 	{
 		$("#editablefildStepsDIV").css("display", "block");
 	}
@@ -5826,6 +6261,50 @@ function LoadColumnSignPos()
     
     var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessList')/items?$select=*,ForwardedUser/Id,ForwardedUser/Title,ForwardedUser/EMail&$expand=ForwardedUser&$filter=ID eq "+window.atob(titanForWork.getQueryStringParameter('RecNo'))+"";
 	var QueryStepIdData = RequestGetdata(QueryDataStep);
+	
+	if(QueryStepIdData[0].ActionRequired == 'Edit & Sign')
+	{
+		$("#ActionControlDDL").empty();
+		$("#ActionControlDDL").append($("<option></option>").val('Edit & Sign').html('Edit & Sign'));
+		$("#ActionControlDDL").append($("<option></option>").val('Edit & Approve').html('Edit & Approve'));
+		$("#ActionControlDDL").append($("<option></option>").val('Edit Only').html('Edit Only'));
+		$("#ActionControlDDL").append($("<option></option>").val('Review and Sign').html('Review and Sign'));
+		$("#ActionControlDDL").append($("<option></option>").val('Review Only').html('Review Only'));
+		$("#ActionControlDDL").val(QueryStepIdData[0].ActionRequired);
+	}
+	else if(QueryStepIdData[0].ActionRequired == 'Edit & Approve')
+	{
+		$("#ActionControlDDL").empty();
+		$("#ActionControlDDL").append($("<option></option>").val('Edit & Approve').html('Edit & Approve'));
+		$("#ActionControlDDL").append($("<option></option>").val('Edit Only').html('Edit Only'));
+		$("#ActionControlDDL").append($("<option></option>").val('Review Only').html('Review Only'));
+		$("#ActionControlDDL").val(QueryStepIdData[0].ActionRequired);
+	}
+	else if(QueryStepIdData[0].ActionRequired == 'Edit Only')
+	{
+		$("#ActionControlDDL").empty();
+		$("#ActionControlDDL").append($("<option></option>").val('Edit Only').html('Edit Only'));
+		$("#ActionControlDDL").append($("<option></option>").val('Review Only').html('Review Only'));
+		$("#ActionControlDDL").val(QueryStepIdData[0].ActionRequired);
+	}
+	else if(QueryStepIdData[0].ActionRequired == 'Review & Sign' || QueryStepIdData[0].ActionRequired == 'Review and Sign')
+	{
+		$("#ActionControlDDL").empty();
+		$("#ActionControlDDL").append($("<option></option>").val('Review and Sign').html('Review and Sign'));
+		$("#ActionControlDDL").append($("<option></option>").val('Review Only').html('Review Only'));
+		$("#ActionControlDDL").val(QueryStepIdData[0].ActionRequired);
+	}
+	else if(QueryStepIdData[0].ActionRequired == 'Review Only')
+	{
+		$("#ActionControlDDL").empty();
+		$("#ActionControlDDL").append($("<option></option>").val('Review Only').html('Review Only'));
+		$("#ActionControlDDL").val(QueryStepIdData[0].ActionRequired);
+	}
+	else
+	{	
+		$("#ActionControlDDL").empty();
+	}
+	
 	NewForwardRevert=[];
 	if(QueryStepIdData[0].ForwardedUser.__deferred == undefined)
 	{
@@ -6538,6 +7017,7 @@ function SetSummarizedValue(tblID, tblcol, sumValue, lable)
   		}
   		else
   		{
+  			sumValue  = sumValue ? sumValue : 0;
   			$("#SummarizedValue_"+SummarizeFilter[i].tblId+"_"+SummarizeFilter[i].lbl).val(parseFloat(sumValue).toFixed('2'));
   		}
   	}
@@ -6596,7 +7076,10 @@ function SetSummarizedValue(tblID, tblcol, sumValue, lable)
   		}
   		else
   		{
+  			//sumValue  = 0;
+  			if(summarizeValues[i].lbl == tblcol){
   			$("#SummarizedValue_"+summarizeValues[i].tblId+"_"+summarizeValues[i].lbl).val(parseFloat(sumValue).toFixed('2'));
+  			}
   		}
   	}
   	}
@@ -7050,11 +7533,11 @@ function GetForwardHistory()
 	var QueryDataStep =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessForward')/items?$select=*,ForwardedBy/Title,ForwardedBy/EMail,ForwardedTo/Title,ForwardedTo/EMail&$expand=ForwardedBy,ForwardedTo&$filter=ApprovalQueueID eq "+window.atob(titanForWork.getQueryStringParameter('StepID'))+"";
 	var QueryStepIdData = RequestGetdata(QueryDataStep);
 	var Remark = '';
-	if(QueryStepIdData[0].ForwardedRemarks != null){Remark = QueryStepIdData[0].ForwardedRemarks;}
-	
+	//if(QueryStepIdData[0].ForwardedRemarks != null){Remark = QueryStepIdData[0].ForwardedRemarks;}
+	if(QueryStepIdData[QueryStepIdData.length-1].ForwardedRemarks != null){Remark = QueryStepIdData[QueryStepIdData.length-1].ForwardedRemarks;}
 	$("#ForwardbyTitle").text(QueryStepIdData[0].ForwardedBy.Title);
 	$("#ForwardbyEmail").text(QueryStepIdData[0].ForwardedBy.EMail);
-	$("#ForwardbyRemark").text(Remark);
+	$("#ForwardbyRemark").html(Remark);
 	var ForwardUser = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryStepIdData[0].ForwardedBy.EMail);
 	$("#ForwardbyPhoto").attr("src",ForwardUser);
 	
@@ -7076,7 +7559,7 @@ function GetForwardHistory()
 		var ForDesign='';
 		if(x==0)
 		{
-			ForDesign = "<h3 class='forwrad_heading'>Forward to</h3>";
+			ForDesign = "<h3 class='forwrad_heading'>Forwarded To</h3>";
 		}
 		
 		var eventDateObj=new Date(QueryStepIdData[x].Modified);
@@ -7090,50 +7573,57 @@ function GetForwardHistory()
 		
 		var FeedBack='';
 		var FeedBackRemark='';
-		if(QueryStepIdData[x].FeedBack != null){FeedBack=QueryStepIdData[x].FeedBack;}
+		var WaitingFeedBack='';
+		if(QueryStepIdData[x].FeedBack != null)
+		{
+			FeedBack=QueryStepIdData[x].FeedBack;
+		}
+		else
+		{
+			WaitingFeedBack = "style='display: none'";
+			FeedBack = "Waiting for feedback..";
+		}
 		if(QueryStepIdData[x].FeedBackRemarks != null){FeedBackRemark=QueryStepIdData[x].FeedBackRemarks}
 
 		var ForwardUser = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(QueryStepIdData[x].ForwardedTo.EMail);
 		if(QueryStepIdData[x].RestrictViewToOthers == true && QueryStepIdData[x].ForwardedBy.EMail == _spPageContextInfo.userEmail || QueryStepIdData[x].RestrictViewToOthers == false)
 		{
 			Forward2Design = Forward2Design +	"<li>"+ForDesign+
-                    							//"<h3 class='forwrad_heading'>Forward to</h3>"+
-                    							"<div class='forward_to row'>"+
-                      								"<div class='col-md-8'>"+
-                        								"<div class='flexitem'>"+
-                            								"<div class='imgsetion'>"+
-                              									"<img src='"+ForwardUser+"'>"+
-                            								"</div>"+
-                            								"<div class='imagecontent'>"+
-                              									"<h4>"+QueryStepIdData[x].ForwardedTo.Title+"</h4>"+
-                              									"<a href='#'>"+QueryStepIdData[x].ForwardedTo.EMail+"</a>"+
-                            								"</div>"+
-                        								"</div>"+
-                        								"<div class='wraping_only'>"+
-                          									"<div class='remarkboxsec'>"+
-                            									"<span><label for=''>Remark</label><label for=''>:</label></span>"+
-                            									"<p>"+FeedBackRemark+"</p>"+
-                          									"</div>"+
-                        								"</div>"+
-                      								"</div>"+
-                      								"<div class='col-md-4'>"+
-                      	  								"<div class='remarkboxsec'>"+
-                          									"<span>"+
-                          										"<label for=''>Feedback</label>"+
-                          										"<label for=''>:</label>"+
-                          									"</span>"+
-                          									"<p style='margin-left: 3px;'>"+FeedBack+"</p>"+
-                        								"</div>"+
-                        								"<div class='date_gmt_time' style=''>"+
-                          									"<div class='date_secbx'>"+
-                            									"<span class='frwd_date'>"+ActionDate+" </span>"+
-                            									"<span class='frwd_time'> "+Event_time+"</span>"+
-                          									"</div>"+
-                          									//<span>GMT + 5:30 (IST)</span>
-                        								"</div>"+
-                      								"</div>"+
-                   	 							"</div>"+
-                  							"</li>";
+													"<div class='forward_to row'>"+
+														"<div class='col-md-8'>"+
+															"<div class='flexitem'>"+
+																"<div class='imgsetion'>"+
+																	"<img src='"+ForwardUser+"'>"+
+																"</div>"+
+																"<div class='imagecontent'>"+
+																	"<h4>"+QueryStepIdData[x].ForwardedTo.Title+"</h4>"+
+																	"<a href='#'>"+QueryStepIdData[x].ForwardedTo.EMail+"</a>"+
+																"</div>"+
+															"</div>"+
+														"</div>"+
+														"<div class='col-md-4'>"+
+															"<div class='remarkboxsec'>"+
+																"<span "+WaitingFeedBack+">"+
+																	"<label for=''>Feedback</label>"+
+																	"<label for=''>:</label>"+
+																"</span>"+
+																"<p style='margin-left: 3px; font-weight: 800;'>"+FeedBack+"</p>"+
+															"</div>"+
+															"<div class='date_gmt_time'"+WaitingFeedBack+">"+
+																"<div class='date_secbx'>"+
+																	"<span class='frwd_date'>"+ActionDate+" </span>"+
+																	"<span class='frwd_time'>"+Event_time+"</span>"+
+																"</div>"+
+															"</div>"+
+														"</div>"+
+														"<div class='col-md-11 wraping_only' "+WaitingFeedBack+">"+
+															"<div class='remarkboxsec'>"+
+																"<span><label>Remark</label><label>:</label></span>"+
+																"<p>"+FeedBackRemark+"</p>"+
+															"</div>"+
+														"</div>"+
+													"</div>"+                    							
+                  								"</li>";
     	}
 	
 	}
@@ -7169,7 +7659,7 @@ $(function(){
 
 
 $(document).ready(function(){
-	initializePeoplePicker("ForwardUserPicker1"); 
+	initializePeoplePicker("ForwardUserPicker1", 'Single'); 
 	
 	$("#ReturnStakeholderList_TopSpan").keyup(function () {
     	ValidateExistingApprovers('ReturnStakeholderList_TopSpan','ReturnStakeholderList','ListReturnForwardUser')
@@ -7250,6 +7740,7 @@ function initializeAskPeoplePicker(peoplePickerElementId)
 
 function SetNextApprovers()
 {
+	//$('#overlaysearch').show();
 	var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSteps')/items?$select=*,AttachmentFiles&$expand=AttachmentFiles&$filter=TemplateID eq '"+$("input[name='selector']:checked").attr('templateid')+"' and ApproverDecidingStep eq 'Initiation' and AskApprover eq '1'&$orderby=Sequence_No asc";
 	var QueryResult = RequestGetdata(Query);
 	if(QueryResult.length>0)
@@ -7306,10 +7797,14 @@ function SetNextApprovers()
 				}
 			}					
 		}
+		//setTimeout(function () {
 		if(ExStatus == true)
 		{
 			saverecord();
-		}		
+		}
+		//$('#overlaysearch').hide()
+		//}, 100);					
+		
 	}
 }
 
@@ -7483,6 +7978,11 @@ $(document).ready(function(){
   }
 });
 
+$('.modal').on("hidden.bs.modal",function(e){
+	if($('.modal:visible').length){
+		$('body').addClass('modal-open');
+	}
+	});
 // All select option script //
 
   $('#selectallopts').click(function(){
@@ -7523,16 +8023,28 @@ $(document).ready(function(){
 });
 
 
-var ApprovalDocs = [];var AllDocs = [];
-function SaveApprovalDocs(){
-	ApprovalDocs  = [];	
+var ApprovalDocs = [];var AllDocs = [];var editFile = '';
+function SaveApprovalDocs(action){
+	ApprovalDocs  = [];
+	if(action == 'Edit'){
+		$('#EditDoc').show();
+		$('#savedoc').hide();
+		/*var purpose = $('#DocPurpose').val();				
+		var Remarks = $('#docRemarks').val();	
+		var editedData = {'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks};
+		items[items.indexOf(oldValue)] = newValue*/
+
+		
+	} else{
+		$('#EditDoc').hide();
+		$('#savedoc').show();
 	var fileInput = jQuery('#ApprovalDoc');
 	var fileCount = fileInput[0].files.length
 	console.log(fileCount);	
-	var filecountset = 0;
+	var filecountset = 0;var stp = '';var stpId = '';
 //	$('#countingbx').val(fileCount);
 	for (var i = 0; i < fileCount; i++) 
-	{
+	{		
 		var fileName = fileInput[0].files[i].name;
 		var extn = getExtension(fileName);
 		if(!returnExtension(extn)){
@@ -7540,42 +8052,58 @@ function SaveApprovalDocs(){
 		console.log(i);	
 		var purpose = $('#DocPurpose').val();				
 		var Remarks = $('#docRemarks').val();
+		var AttachFor = $('#e_Signature_optis').val();
 		var SignOf  = 'All Signatories';
 		var ddpmulstp = $('#ddpStps').val();
 		var	singleslct = $("#single_selecopt").prop("checked") ? 1 : 0;				
 		var SingleStpval = $('#singleStpddp').val();
 		var watermrk = $("#watermark_slect").prop("checked") ? 1 : 0;				
-		var watermrkval = $('#docWatermark').val();
-		ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn})
-		AllDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn})
+		var watermrkval = $('#docWatermark').val();		
+		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+			stp = window.atob(titanForWork.getQueryStringParameter('StepNo'));
+			stpId = window.atob(titanForWork.getQueryStringParameter('StepID'))
 		}else{
-		alert(fileName + ' extention is invalid, please select another file.');
+			stp = 'Initiation'
+			stpId = 0;
+		}
+		ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn, 'attachfor' : AttachFor, 'Step': stp, 'StepID': stpId, 'File' : fileInput[0].files[i] })
+		AllDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval, 'extn' : extn, 'attachfor' : AttachFor, 'Step': stp, 'StepID': stpId, 'File' : fileInput[0].files[i]})
+		}else{
+		alert(fileName + ' should not be uploaded. This file may be malicious.  Please select another file.');
 		return false;
 		}
+	 }
 	}
-	var RemoveDuplicate = [];	
+	var RemoveDuplicate = [];var newDocs=[];
+	if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+		var CurrStpeId = window.atob(titanForWork.getQueryStringParameter('StepID'));//newDocs=ApprovalDocs;
+	}else{
+		var CurrStpeId = '0';//newDocs=AllDocs;
+	}
+	//var CurrStpeId = window.atob(titanForWork.getQueryStringParameter('StepID'));
 	$.each(AllDocs, function(key, value) {
         var exists = false;
         $.each(RemoveDuplicate, function(k, val2) {
-          if(value.filename == val2.filename){ exists = true }; 
+          if(value.filename == val2.filename && val2.StepID == value.StepID){ exists = true }; 
         });
         if(exists == false && value.filename!= "") { RemoveDuplicate.push(value); }
-      });	        
+     });	        
 	console.log(AllDocs);
-	BindApprovalDoc(RemoveDuplicate);
-	$('#ApprovalDoc').val('');$('#DocPurpose').val('');	$('#docRemarks').val('');			
+	var ApprovalFiles =ReinitializeArray(RemoveDuplicate);    
+	BindApprovalDoc(ApprovalFiles , 'ApprovalDoc', action, stp);
+	$('#ApprovalDoc').val('');
+	$('#DocPurpose').val('');	$('#docRemarks').val('');			
 }
-function BindApprovalDoc(ApprovalDoc){
+var newApprovalDocs = [];
+function BindApprovalDoc(ApprovalDoc, id, action, stp){
+	newApprovalDocs =[];
 	$('#tbdyAppDoc').empty();
 	var count = $('.countingbx').text();
 	$('.countingbx').text(ApprovalDoc.length);
-	var ApprovalDochtml = '';var stp;
-	if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
-	stp = window.atob(titanForWork.getQueryStringParameter('StepNo'));
-	}else{stp = 'Initiation'}
-	for(i=0;i<ApprovalDoc.length;i++){	 
+	var ApprovalDochtml = '';
+	for(i=0;i<ApprovalDoc.length;i++){	 	
 	var Authorattachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail);
-		ApprovalDochtml += '<tr><td><div class="titlewrp">';
+		ApprovalDochtml += '<tr id="Doc_'+i+'"><td><div class="titlewrp">';
 		var extn = ApprovalDoc[i].extn.toUpperCase();
 		if(extn == 'JPEG' || extn == 'GIF' || extn == 'PNG' || extn == 'JPG'){
 		 	var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/jpg.png';
@@ -7589,14 +8117,25 @@ function BindApprovalDoc(ApprovalDoc){
 			var path = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MyDocuments/DMS/assets/images/file-icon.png';
 		}
 	    ApprovalDochtml += '<img src="'+path+'">'
-	    ApprovalDochtml += '<p class="fileName" id="DocName" >'+ApprovalDoc[i].filename+'</p>'
+	    //ApprovalDochtml += '<a href="javascript:void(0);" download="'+ApprovalDoc[i].filename+'" onclick="downloadAttach(\'' + ApprovalDoc[i].filename + '\', \'' + ApprovalDoc[i].filename + '\')" class="" style="color:#1d6ec0; display:block; ">
+	    ApprovalDochtml += '<p class="fileName" id="DocName" >'+ApprovalDoc[i].filename+'</p>';
+	    if(stp == ApprovalDoc[i].Step){	   
+	    ApprovalDochtml += '<span class="fa fa-close fa-lg closeBtn" style="color:red;" onclick="RemoveDoc(this.id,\''+ApprovalDoc[i].filename + '\')" id="Doc_'+i+'" title="remove"></span>';  //</a>
+	    }
 	    ApprovalDochtml += '</div></td>'
 	    ApprovalDochtml += '<td><p class="purpose_text" id="filePurpose">'+ApprovalDoc[i].purpose+'</p></td>'
 	    ApprovalDochtml += '<td><p class="remarkmultilines" id="fileRemarks">'+ApprovalDoc[i].Remarks+'</p></td>'
 	    ApprovalDochtml += '<td><div class="flexitem"><div class="imgsetion"><div class="empoyeeimg" style="float:left;"><img title="'+_spPageContextInfo.userDisplayName+'" src="'+Authorattachment+'" alt="" data-themekey="#"></div></div><div class="imagecontent"><h4>'+_spPageContextInfo.userDisplayName+'</h4><a href="#" style="cursor: auto;">'+_spPageContextInfo.userEmail+'</a></div></div></td>'
-	    ApprovalDochtml += '<td>'+stp+'<br>'+moment(new Date).format('LL')+'</td>'
-	    ApprovalDochtml += '<td><button type="button" class="custom-edit-btn"><i class="fa fa-pencil"></i></button>'
-	    ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-trash-o"></i></button></td></tr> '
+	    ApprovalDochtml += '<td>'+ApprovalDoc[i].Step+'<br>'+moment(new Date).format('LL')+'</td>'
+	    if(stp == ApprovalDoc[i].Step){	
+	    	newApprovalDocs.push(ApprovalDoc[i])   
+		    ApprovalDochtml += '<td><button type="button" class="custom-edit-btn"><i class="fa fa-pencil" id="file_'+i+'" data-toggle="modal" data-target="#Approval_doc" onclick="EditAttachment(this.id, \''+ApprovalDoc[i].filename+'\',\''+ApprovalDoc[i].purpose+'\',\''+ApprovalDoc[i].Remarks+'\',\''+action+'\', \''+id+'\')"></i></button>'
+		    ApprovalDochtml += '<button type="button" class="custom-edit-btn"><i class="fa fa-trash-o" id="Doc_'+i+'" onclick="RemoveDoc(this.id,\''+ApprovalDoc[i].filename + '\')"></i></button></td>'	    
+	    }else{
+	    	ApprovalDochtml += '<td></td>';
+	    	ApprovalDochtml += '<td></td>';
+	    }
+	    ApprovalDochtml += '</tr>';
     }
     $('#tbdyAppDoc').append(ApprovalDochtml);
     $('#Approval_doc').modal('hide');
@@ -7605,7 +8144,8 @@ function BindApprovalDoc(ApprovalDoc){
 
 function ApprovalDocsUpload(ProcessId, docss, checkCol){
 	var dfd = $.Deferred();
-	
+	var DocType = '';
+	var col = '';
 	for(i=0;i< docss.length;i++){
 		var itemProperties = {};
 		itemProperties['Title'] =  "Document Approval"
@@ -7613,12 +8153,28 @@ function ApprovalDocsUpload(ProcessId, docss, checkCol){
 		itemProperties['ColumnName'] =  docss[i].col;
 		itemProperties['Purpose'] = docss[i].purpose;
 		itemProperties['Remarks'] = docss[i].Remarks;
+		if(docss[i].attachfor == 'required_e_signature'){		 
+			DocType = 'Approved Document' 
+		}else if(docss[i].attachfor == 'supporting_document'){
+			DocType = 'Supporting Document';
+		}else{
+			DocType = 'Column Document';
+			col = docss[i].col;
+		}
+		itemProperties['DocumentType'] = DocType;
 		itemProperties['SignatureOf'] = docss[i].SignOf
 		if(docss[i].SignOf == "Selective Steps"){	itemProperties['SelectiveStepsId'] = 734; }
 		itemProperties['SignInFooter'] = docss[i].singleslct ? true : false ;
-		if(docss[i].singleslct == 1){		itemProperties['FooterSignById'] = docss[i].singleslct ? parseInt(docss[i].SingleStpval) : '';		}
+		if(docss[i].singleslct == 1){		itemProperties['FooterSignById'] = docss[i].singleslct ? parseInt(docss[i].SingleStpval) : '';}
 		itemProperties['Watermark'] = docss[i].watermrk ? true : false ;
 		itemProperties['WatermarkText'] = docss[i].watermrk == 1? docss[i].watermrkval : '';
+		if(window.atob(titanForWork.getQueryStringParameter('Step')) == 'Process Steps'){
+			stp = window.atob(titanForWork.getQueryStringParameter('StepNo'));//ApprovalDoc[i].Step;
+			itemProperties['Status'] = 'Pending';
+		}else{	stp = 'Initiation';itemProperties['Status'] = '';}		
+		itemProperties['Step'] = stp ;
+		var CurrstpId = docss[i].StepID ? docss[i].StepID.toString() : '0';
+		itemProperties['StepQueueID'] = CurrstpId; //docss[i].StepID.toString();
 		var itemType = "SP.Data.ApprovalProcessDocumentsListItem";	
 		itemProperties["__metadata"] = { "type": itemType };
 		$.ajax({
@@ -7634,33 +8190,35 @@ function ApprovalDocsUpload(ProcessId, docss, checkCol){
 			data: JSON.stringify(itemProperties),
 				/*where Title is column name and you can add more columns by splitting with ,*/
 			success: function (data){ 
-				if(checkCol == '')	{
+				if(col == '')	{
 				var fileInput = jQuery('#ApprovalDoc');
 				var varId = 'ApprovalDoc';
 				}else{
-				var fileInput = jQuery('#' + checkCol);
-				var varId = checkCol;
+				var fileInput = jQuery('#' + col);
+				var varId = col //checkCol;
 				}
 				var fileCount = fileInput[0].files.length
 				console.log(fileCount);
-				if(fileCount > 0){
+			//	if(fileCount > 0){
 			//	for (var i=0; i < fileCount; i++) 	{				
-					var fileName = fileInput[0].files[i].name;
+					var fileName = docss[i].filename; //fileInput[0].files[i].name;
 					//filecountset++;
-					console.log(i);
-					
-					getFileBuffer(i,varId)
-					.done(function (arrayBuffer, index) {
-						console.log("Success " + index);
-						uploadFileSP("ApprovalProcessDocuments", data.d.Id, arrayBuffer, index, varId);
-					})
-					.fail(function (error) {
-						console.log(error);
-						LogError("uploadFile", error);
-						alert("Error while uploading file for ID" + id);
-					}); 
+					console.log(i);					
+					if(fileName != null){					
+						getFileBuffer(i,varId, docss[i])
+						.done(function (arrayBuffer, index) {
+							console.log("Success " + index);
+							uploadFileSP("ApprovalProcessDocuments", data.d.Id, arrayBuffer, index, varId, fileName);
+						})
+						.fail(function (error) {
+							console.log(error);
+							LogError("uploadFile", error);
+							alert("Error while uploading file for ID" + id);
+						}); 
+					}
 		//	 }
-				}
+		//		}
+		
 			},
 			error: function (error) 
 			{
@@ -8024,7 +8582,9 @@ var UpdatingDataAdvcase = function (data,Id,ConditionData)
 						}							
 						console.log(SavedStpApprovers);							
 					 	console.log('Updated');
-					 	alert('The approval request has been updated successfully.');
+					 	$('#overlaysearch').hide();
+					 	//alert('The approval request has been updated successfully.');
+					 	alert('Data has been updated successfully.');
 					 	window.location.replace("approvals.aspx");
 					}
 				}
@@ -8040,31 +8600,37 @@ var UpdatingDataAdvcase = function (data,Id,ConditionData)
 				var fileInput = jQuery('#supporting_doc_files');
 				id = 'supporting_doc_files';
 			}
-			var fileCount = fileInput[0].files.length;
-			console.log(fileCount);
-			var filecountset = 0;
-			for (var i = 0; i < fileCount; i++) 
+			
+			if(fileInput.prop('files') != undefined)
 			{
-				filecountset++;
-				console.log(i);
-				getFileBuffer(i,id)
-				.done(function (arrayBuffer, index) {
-					console.log("Success " + index);
-					//uploadFileInList(arrayBuffer, id, index);
-					uploadFileSP("ApprovalProcessQueue", StepId, arrayBuffer, index, id);
-				})
-				.fail(function (error) {
-					console.log(error);
-					LogError("uploadFile", error);
-					alert("Error while uploading file for ID" + id);
-				});
-				if (fileCount == filecountset) 
+				var fileCount = fileInput[0].files.length;
+				console.log(fileCount);
+				var filecountset = 0;
+				for (var i = 0; i < fileCount; i++) 
 				{
-					alert("Details are saved successfully.");
-					window.location.replace("approvals.aspx"); //location.reload();
+					filecountset++;
+					console.log(i);
+					getFileBuffer(i,id)
+					.done(function (arrayBuffer, index) {
+						console.log("Success " + index);
+						//uploadFileInList(arrayBuffer, id, index);
+						uploadFileSP("ApprovalProcessQueue", StepId, arrayBuffer, index, id);
+					})
+					.fail(function (error) {
+							console.log(error);
+						LogError("uploadFile", error);
+						alert("Error while uploading file for ID" + id);
+						$('#overlaysearch').hide();
+					});
+					if (fileCount == filecountset) 
+					{
+						alert("Details are saved successfully.");
+						$('#overlaysearch').hide();
+						window.location.replace("approvals.aspx"); //location.reload();
+					}
 				}
 			}
-		},
+		},	
 		error: function (error) 
 		{
 			alert(JSON.stringify(error));
@@ -8308,16 +8874,21 @@ function ModifyProcessQueue()
 	}
 		
 	var ExStatus = UniversalUpdateApprovalProcess(listName,item,ActiveQueeNo,SiteUrl);
-	if(ExStatus == true && ActiveSingTypeRadio == 'SignImage')
+	//if(ExStatus == true && ActiveSingTypeRadio == 'SignImage')
+	if(ExStatus == true)
 	{
-		if(SelectedSignImages != '')
+		if(SignImage.length>0)
+		{
+			uploadattachment(ActiveQueeNo);
+		}
+		/*if(SelectedSignImages != '')
 		{
 			CopySignatureFile();
 		}
 		else
 		{
 			uploadattachment(ActiveQueeNo);
-		}
+		}*/
 	}
 			
 	var SiteUrl = _spPageContextInfo.webAbsoluteUrl+ "/_api/web/lists/GetByTitle('"+listName+"')/items('"+NextActiveQueeNo+"')";
@@ -8729,7 +9300,7 @@ function getdata(Query)
 <script type="text/javascript">
   
 $(function(){
-	$('.action_signaturebx').hide();
+	$('.action_signaturebx.required_e_signature').hide();
   	$('#e_Signature_optis').on('change', function(){
     	var mathclass = $(this).val();
     	$('.action_signaturebx').not('.'+mathclass).hide();
@@ -8775,7 +9346,7 @@ function saverecordDraft()
 			var arrUSer = RequestGetdata(QueryCheckActive);
 			if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
 		if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
-	    	EntityUsers.push(arrUSer[0].UserId)	    
+	    	EntityUsers.push(arrUSer[0].LogonName.Id)	    
 		}
 		vval = EntityUsers;
 	}else if(key  == 'Checkbox1' || key  == 'Checkbox2' || key  == 'Checkbox3' || key  == 'Checkbox4'|| key  == 'Checkbox5'){
@@ -8785,7 +9356,8 @@ function saverecordDraft()
 	}
 	if($(this).find(".dynamicvalfeachcls.active").attr('type') == 'file'){
 		var lbl = $(this).find(".columnnametxt.active").attr("alerttext");
-		fileData.push({'filename' : vval,'purpose': lbl,'Remarks' : '', 'SignOf': 'No Signature','col' : key, 'ddpmulstp': '', 'SingleStpval':'', 'singleslct': false, 'watermrk' : false ,'watermrkval' : ''}) ;
+		var fileInput = jQuery('#'+key);
+		fileData.push({'filename' : vval,'purpose': lbl,'Remarks' : '', 'SignOf': 'No Signature','col' : key, 'ddpmulstp': '', 'SingleStpval':'', 'singleslct': false, 'watermrk' : false ,'watermrkval' : '','File' : fileInput[0].files[0] }) ;
 	//	ApprovalDocs.push({'filename' : fileName, 'purpose':purpose, 'Remarks' : Remarks, 'SignOf': SignOf, 'ddpmulstp': ddpmulstp, 'SingleStpval':SingleStpval, 'singleslct': singleslct, 'watermrk' : watermrk ,'watermrkval' : watermrkval})
 	}
 	if ($(this).find(".columnnametxt.active").attr("mandatorycol") != "true" && vval == "") 
@@ -8891,7 +9463,7 @@ function saverecordDraft()
 						var arrUSer = RequestGetdata(QueryCheckActive);
 						if(arrUSer[0].Email == users[j].EntityData.Email){flag=true;}					
 					if(!flag){alert("Selected user "+users[j].DisplayText+" not in list"); return false;}			    
-				    EntityUsers.push(arrUSer[0].UserId)	    
+				    EntityUsers.push(arrUSer[0].LogonName.Id)	    
 					}
 					itemProperties[key+'Id'] = {"results": EntityUsers};
 				}else{
@@ -8960,15 +9532,16 @@ function saverecordDraft()
 		//		{
 					var NewlyCreatedItemId = data.d.ID;
 					SubmitTbltcols(NewlyCreatedItemId );
-					if($('#ApprovalDoc').val() != ""){
-						ApprovalDocsUpload(NewlyCreatedItemId,ApprovalDocs,'');
+					if(ApprovalDocs.length  > 0){
+						ApprovalDocsUpload(NewlyCreatedItemId,AllDocs,'');
 					}
-					if(fileData.length > 0){
-						var file = $('#' + fileData[0].col);
+					if(fileData.length > 0){					
+					/*	var file = $('#' + fileData[0].col);
 						var checkfile = CheckFileSize(file);
 						if(checkfile){
 						ApprovalDocsUpload(NewlyCreatedItemId,fileData,fileData[0].col);
-						}
+						}*/
+						ApprovalDocsUpload(NewlyCreatedItemId,fileData,'');
 					}
 					if(ischeck ==  false && ischeckk ==  false)
 					{
@@ -9021,15 +9594,16 @@ var updateDraftData = function (data,Id,fileData)
 								
 					var NewlyCreatedItemId = Id;					
 					UpdateTableData();	
-					if($('#ApprovalDoc').val() != ""){
+					if(ApprovalDocs.length > 0){
 						ApprovalDocsUpload(NewlyCreatedItemId,ApprovalDocs,'');
 					}
 					if(fileData.length > 0){
-						var file = $('#' + fileData[0].col);
+					/*	var file = $('#' + fileData[0].col);
 						var checkfile = CheckFileSize(file);
 						if(checkfile){
 						ApprovalDocsUpload(NewlyCreatedItemId,fileData,fileData[0].col);
-						}
+						} */
+						ApprovalDocsUpload(NewlyCreatedItemId,fileData,'');
 					}			
 					if(ischeck ==  false && ischeckk ==  false)
 					{
@@ -9091,19 +9665,88 @@ function SaveLink(){
 }
 
 
-// Column visibility
-
-function checkColVisibility(condition, col)    {
-	if(!condition){
-	alert('yes');
-	}else{
-	alert('no');
-	}
+function GenerateForwardMailDesign()
+{    
+	MailCounter=0;
+	var PageLink = _spPageContextInfo.webAbsoluteUrl +"/Pages/Approvals.aspx";
+   	var from = _spPageContextInfo.userEmail;
+   	
+   	body = "<span><span>"+_spPageContextInfo.userDisplayName+" added you as a new stakeholder regarding the following approval.</span><br><br>"+
+			"<span><strong>Process: </strong><span>Process Approval</span></span><br>"+
+			"<span><strong>Request For: </strong><span>"+$("#titleid").text()+"</span></span><br>"+
+			"<span><strong>Template: </strong><span>"+$("#templatenameid").text()+"</span></span><br>"+
+			//"<span><strong>Priority: </strong><span>"+$("#PriorityText").text()+"</span></span><br>"+
+			//"<span><strong>Due Date: </strong><span>"+$("#DuedateText").text()+"</span></span><br><br>"+
+			"<span><strong>Notify by: </strong><span>"+_spPageContextInfo.userDisplayName+"</span></span><br>"+
+			"<span><strong>Message: </strong><span>"+$("#ForwardStackholderRemarks").val()+"</span></span><br><br>"+
+			"<span><a href='"+PageLink+"'>Click here</a> to open the Approval Dashboard.</span><br><br>"+
+			//"<span><a href='"+_Link+"'>Click here</a> FileLink</span><br><br>"+
+			"<span>This is an auto generated e-mail. Please do not reply.</span><br><br>";    
+	
+			
+   	subject = 'Stakeholder Holder Notification.';
+   	var UserEmail=[];
+   	for(var i=0; i<NewAddedUser.length; i++)
+   	{
+   		//var UserDtls = fnGetUserProps(ApproversListNotify[i]);
+   		//to = UserDtls.d.Email;
+   		UserEmail.push(NewAddedUser[i].Email);
+   	}    
+   	sendEmail(from, UserEmail, body, subject);
 }
+
+
+
+function sendEmail(from, to, body, subject)
+{
+	try{
+		var siteurl = _spPageContextInfo.webServerRelativeUrl;
+    	var urlTemplate = siteurl + "/_api/SP.Utilities.Utility.SendEmail";
+        $.ajax({  
+    		contentType: 'application/json',  
+    		url: urlTemplate,  
+    		type: "POST",
+    		async:false,  
+    		data: JSON.stringify({  
+        		'properties': {  
+            		'__metadata': {  
+                	'type': 'SP.Utilities.EmailProperties'  
+            		},  
+            		'From': from,  
+            		'To': {  
+                		'results': to  
+            		},  
+            		'Body': body,  
+            		'Subject': subject,
+            		  
+        		}  
+    	}),  
+    	headers: {  
+        	"Accept": "application/json;odata=verbose",  
+        	"content-type": "application/json;odata=verbose",  
+        	"X-RequestDigest": $("#__REQUESTDIGEST").val()  
+    	},  
+    	success: function(data) 
+    	{  
+    		alert('Stakeholders Action Completed.');
+			$('#forward_stpings').modal('hide');
+			window.location.href = titanForWork.getQueryStringParameter('sourcelocation');
+		
+    	},  
+    	error: function(err) 
+    	{  
+        	alert('Error in sending Email: ' + JSON.stringify(err));  
+    	}  
+	});
+	}
+    catch (error) 
+    { }
+}
+
+
+
+
  
 </script>
-		
-
 </body>
-
 </html>
