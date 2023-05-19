@@ -440,14 +440,52 @@ input[type="button"].custom-btn:hover{
 
 }
 
+.guest-user-btn-position> a[type="button"]{
+ margin-bottom:5px;	
+}
 
+.form-wizard .nav li.pills-box-info a {
+    padding: 6px 10px 6px 16.5px !important;
+    font-size: 12.5px;
+}
+
+@media (min-width: 1025px) and (max-width: 1222px){
+.guest-user-table .custom-table {
+    min-width: 1320px !important;
+}
+}
+
+@media all and (max-width: 1300px) and (min-width: 992px){
+
+.guest-user-btn-position> a[type="button"] {
+    margin-bottom: 5px;
+    padding: 5px;
+    min-width: 70px !important;
+    font-size: 12px !important;
+}
+	
+}
+
+@media(max-width:767px){
+
+.manage-employees-right-time-box-one, .manage-employees-right-time-box-two {
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid transparent;
+}
+
+.manage-employees-right-top-box .col-xs-6:nth-last-child(2){
+  border-bottom:none;	
+}
+
+	
+}
 
 </style>
 
 	
 		<div class="container" style="padding:0 0">
 			<div class="row">
-				<div class="col-xs-12" style="padding:0 0">
+				<div class="col-xs-12" style="">
 					<div class="tab-content">
 							                <div class="custom-panel custom-panel-box">
 		                    <div class="panel-head">
@@ -472,53 +510,45 @@ input[type="button"].custom-btn:hover{
 		                                
 		                               
                                         <div class="row m-0 manage-employees-right-top-box flexing">
-											<div class="col-xs-2 manage-employees-right-time-box-one">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-one">
 												<div class="text-center" >
 													<h3 class="m-0" id="hInitiated" >0</h3>
 													<p class="m-0">Initiated</p>
 												</div>
 											</div>
-											<div class="col-xs-2 manage-employees-right-time-box-two">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-two">
 												<div class="text-center">
 													<h3 class="m-0 color-green" id="hInvited">0</h3>
 													<p class="m-0">Invited</p>
 												</div>
 											</div>
-											<div class="col-xs-2 manage-employees-right-time-box-two">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-two">
 												<div class="text-center">
 													<h3 class="m-0 text-success" id="hAccepted">0</h3>
 													<p class="m-0">Accepted</p>
 												</div>
 											</div>
-											<div class="col-xs-2 manage-employees-right-time-box-two">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-two">
 												<div class="text-center">
 													<h3 class="m-0 text-danger" id="hInactive">0</h3>
 													<p class="m-0">Inactive</p>
 												</div>
 											</div>
 											
-											<div class="col-xs-2 manage-employees-right-time-box-two">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-two">
 												<div class="text-center">
 													<h3 class="m-0 text-success" id="hActive">0</h3>
 													<p class="m-0">Active</p>
 												</div>
 											</div>
-											<div class="col-xs-2 manage-employees-right-time-box-three">
+											<div class="col-xs-6 col-sm-2 manage-employees-right-time-box-three">
 												<div class="text-center">
 													<h3 class="m-0" id="hAvilableLicenses" ></h3>
 													<p class="m-0">Avilable Licenses</p>
 												</div>
 											</div>
 										</div>
-		                                
-		                                
-		                                
-		                                
-		                                
-		                                
-		                                
-		                                
-		                                
+		                                		                                
 		                            </div>
 		                            <div class="col-md-3 col-sm-12 col-xs-12 guest-user-top-panel-box-istad">
 		                                <div class="text-right guest-user-btn-position">
@@ -542,11 +572,7 @@ input[type="button"].custom-btn:hover{
 		                            <div class="col-xs-12">
 		                                <div class="table-responsive guest-user-table scrollbar-panel">
 		                                    <table  id="TableGrid" class="table mb-0 custom-table">
-		                                      
 		                                    </table>
-		                                    
-		                                    
-		                                    
 		                                </div>
 		                            </div>
 		                        </div>
@@ -1120,8 +1146,8 @@ input[type="button"].custom-btn:hover{
 
 
 
-		<script type="text/javascript" src="../SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/TitanGuestPortalsetting/TitanExternalPortalEntryScreen.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TitanGuestPortalsetting/TitanExternalPortalEntryScreen.js"></script>
 
 		
 
@@ -1137,11 +1163,6 @@ input[type="button"].custom-btn:hover{
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">230200.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>jQuery UI Datepicker - Icon trigger</title></head>
+</head>
